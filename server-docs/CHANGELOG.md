@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-23
 
+### Art history backend live (Phase 1: health check)
+- **App:** `backend/` — Express 5, `GET /v1/health` → `{"status":"ok"}`. Binds `127.0.0.1:3004` only. CORS allows exactly `https://arthistory.piogino.ch`. Host routing: `/v1` only on api host, `/admin` only on admin host (placeholder 503).
+  Loads secrets from `~/.config/arthistory/backend.env` (outside repo; currently empty).
+- **pm2:** process `arthistory-api` from `backend/ecosystem.config.js` (max_memory_restart 300M), `pm2 save` done — the existing `pm2-ubuntu.service` restores it on boot.
+- **pm2-logrotate** installed (server-wide, affects all pm2 apps' logs in `~/.pm2/logs`): max_size 10M, retain 5, compress.
+- **nginx:** `/etc/nginx/sites-available/arthistory` (symlinked in sites-enabled): `api.arthistory.piogino.ch` proxies only `/v1/`; `admin.arthistory.piogino.ch` proxies `/`. Own access/error logs `/var/log/nginx/arthistory-*.log`.
+- **TLS:** certbot cert `api.arthistory.piogino.ch` (SAN: admin.arthistory…), HTTP→HTTPS redirect, auto-renew via `certbot.timer`. Expires 2026-12-22 (renews automatically ~30 days before).
+- **Deploy:** `backend/deploy.sh` (git pull, npm ci, pm2 reload, health probe).
+- **Test page:** `health.html` in the repo root → https://arthistory.piogino.ch/health.html shows the browser CORS round-trip.
+- **Revert:** `pm2 delete arthistory-api && pm2 save`; `sudo rm /etc/nginx/sites-enabled/arthistory && sudo systemctl reload nginx`; `sudo certbot delete --cert-name api.arthistory.piogino.ch`; `pm2 uninstall pm2-logrotate`.
+
 ### Secrets policy: secrets never enter the repo
 - **What:** all credentials (DB passwords, admin login, session secret, API keys) live only in `~/.config/arthistory/*.env` (dir 700, files 600, user `ubuntu`) — outside the git checkout. The app will load `~/.config/arthistory/backend.env`; the repo only has `backend/.env.example` with placeholder names.
   Git hooks (`scripts/githooks/`): `pre-commit` and `pre-push` run `check-secrets.sh`, which blocks secret file names, credential-looking lines/bcrypt hashes, and **any real value present in the secrets files**. `pre-push` re-scans every outgoing commit, so `git commit --no-verify` cannot sneak a secret out. Tested all cases.
