@@ -1,0 +1,16 @@
+# secrets — never commit (repo is PUBLIC)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# runtime / generated
+node_modules/
+logs/
+*.log
+uploads/
+backups/
+*.dump
+*.sql.gz
+.DS_Store
