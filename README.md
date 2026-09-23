@@ -12,5 +12,5 @@ Interactive art history website: map, timelines and influence graph over a curat
 The server checkout at `/var/www/arthistory-api` **is** this repository.
 
 - `scripts/save.sh "message"` — commit, rebase on GitHub, push (the backup).
-- Secrets live only in `backend/.env` on the server (git-ignored). A pre-commit hook blocks `.env` files and credential-looking lines — this repo is public.
+- **Secrets never go in this repo** (it is public). On the server they live in `~/.config/arthistory/backend.env`, outside the checkout. Pre-commit and pre-push hooks block secret files, credential-looking lines and any real value from that file.
 - After cloning elsewhere, enable the hook: `git config core.hooksPath scripts/githooks`.

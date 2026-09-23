@@ -4,7 +4,7 @@ Infomaniak VPS Lite, Satigny CH · Ubuntu 22.04 · public IP 83.228.207.199
 Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest first). Lives in the art_history repo at `/var/www/arthistory-api/server-docs` (symlinked from `~/server-docs`), pushed to GitHub with `scripts/save.sh`.
 
 ## Resources
-2 vCPU · 2 GB RAM (+1 GB swap) · 40 GB disk (upgraded 2026-09-23 from 1 CPU / 20 GB)
+2 vCPU · 4 GB RAM (+1 GB swap) · 60 GB disk (upgraded 2026-09-23 from 1 CPU / 2 GB / 20 GB)
 
 ## Services
 | Project | Path | Runtime | Port (local) | Public hostname | Data |
@@ -27,3 +27,6 @@ Only 22 (SSH), 80, 443 are open. App ports are reachable only via nginx.
 | arthistory.piogino.ch | CNAME | piosteiner.github.io (frontend, GitHub Pages) |
 | api.arthistory.piogino.ch | A | 83.228.207.199 |
 | admin.arthistory.piogino.ch | A | 83.228.207.199 |
+
+## Secrets
+Never in any git repo. Art history project: `~/.config/arthistory/*.env` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
