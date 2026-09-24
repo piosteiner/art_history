@@ -2,6 +2,28 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-09-24
+
+### PostgreSQL 18 + PostGIS 3.6 installed (Phase 2)
+- **What:** added the official PGDG apt repo (`/etc/apt/sources.list.d/pgdg.list`, via `postgresql-common`), installed
+  `postgresql-18` (18.6) and `postgresql-18-postgis-3` (3.6.4). Cluster `18/main`, port 5432, **localhost only**; pg_hba unchanged
+  (local peer, 127.0.0.1/::1 scram-sha-256). ~310 MB disk.
+- **Why PGDG and not Ubuntu's package:** Ubuntu 22.04 ships PostgreSQL 14, end-of-life Nov 2026.
+- **Tuning:** `/etc/postgresql/18/main/conf.d/arthistory.conf` (copy: `server-docs/config/postgresql/arthistory.conf`):
+  shared_buffers 256MB, effective_cache_size 1GB, work_mem 8MB, max_connections 30, jit off, slow-query log ≥ 1 s only.
+- **Roles:** `arthistory_owner` (migrations/DDL), `arthistory_admin` (read/write, no DDL, 30 s timeout),
+  `arthistory_api` (read-only + `default_transaction_read_only`, 5 s timeout). Passwords generated into
+  `~/.config/arthistory/backend.env` and `~/.pgpass` (both 600, outside the repo).
+- **Databases:** `arthistory` (production) and `arthistory_dev`, both owned by arthistory_owner, CONNECT revoked from PUBLIC.
+  Extensions: postgis, pg_trgm, unaccent. Setup is scripted and idempotent: `backend/db/setup.sh <db>`.
+- **Schema:** migrations 001 (core model), 002 (relationship vocabulary, 20 types), 003 (`entity_id()` lookup) applied to both DBs.
+  Design: `backend/docs/data-model.md`. Smoke test: `backend/db/tests/schema_smoke.sql` (10 rule violations rejected, queries verified).
+- **App:** pg pools (api: 5, admin: 3 connections); `/v1/health` now also checks the DB → `{"status":"ok","db":"ok"}`.
+  `deploy.sh` now runs `npm run migrate`. Graceful shutdown closes pools on pm2 reload.
+- **MySQL:** untouched.
+- **Revert:** `pm2 reload` an older commit; `sudo -u postgres dropdb arthistory && sudo -u postgres dropdb arthistory_dev`;
+  `sudo apt purge postgresql-18 postgresql-18-postgis-3` (deletes all Postgres data!); `sudo rm /etc/apt/sources.list.d/pgdg.list`.
+
 ## 2026-09-23
 
 ### Art history backend live (Phase 1: health check)

@@ -5,7 +5,7 @@ set -e
 cd "$(dirname "$0")"
 git pull --ff-only
 npm ci --omit=dev --no-fund --no-audit
-# npm run migrate   # enabled once the database exists
+npm run migrate
 pm2 reload ecosystem.config.js --update-env
 pm2 save >/dev/null
 sleep 2
