@@ -1,0 +1,5 @@
+name: London
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-0.1278, 51.5074]

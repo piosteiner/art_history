@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-24
 
+### Art history read API + content import (Phase 3)
+- **Memory check first:** 2.2 GiB of 3.8 available, swap in use 335 MB but no active swapping (vmstat si/so 0), PSI memory ≈ 0,
+  no OOM kills. Largest consumers are the VS Code server (~430 MB) and Claude Code (~250 MB). No action needed.
+- **API:** `GET /v1/{artists,artworks,places,movements,institutions,patrons}[/:slug]`, `/v1/search`, `/v1/vocabulary`,
+  `/v1/map/{places,presence,<type>/:slug}` (GeoJSON), `/v1/graph/<type>/:slug` (nodes + edges). Reference: `backend/docs/api.md`.
+  Markdown fields served as sanitized HTML (markdown-it + sanitize-html). `Cache-Control: public, max-age=60` + ETag.
+- **Migration 004:** `f_unaccent()` + trigram GIN indexes (accent-insensitive fuzzy search), `range_json()` (date JSON shape),
+  `entity_index` view. Applied to `arthistory_dev` and (via deploy) `arthistory`.
+- **Content:** `content/**/*.yaml` (format: `content/README.md`), starter set of 44 entities around Van Gogh, Gauguin,
+  Hokusai, Hiroshige and Japonisme, 58 relationships. `npm run import` (arthistory_admin role, one transaction, idempotent,
+  `--dry-run`, opt-in `--prune`); `deploy.sh` now runs it after migrations.
+- **New npm deps:** yaml, markdown-it, sanitize-html. `npm test` runs unit tests for the date parser.
+- **Revert:** redeploy the previous commit (`git checkout a32f79d -- backend && pm2 reload arthistory-api`); data can be
+  removed with `DELETE FROM relationships; DELETE FROM artworks; …` as arthistory_admin. Migration 004 is harmless to leave;
+  to drop it as arthistory_owner: `DROP VIEW entity_index; DROP FUNCTION range_json, iso_date; DROP INDEX …_trgm; DROP FUNCTION f_unaccent;
+  DELETE FROM schema_migrations WHERE name = '004_read_api.sql'`.
+
 ### PostgreSQL 18 + PostGIS 3.6 installed (Phase 2)
 - **What:** added the official PGDG apt repo (`/etc/apt/sources.list.d/pgdg.list`, via `postgresql-common`), installed
   `postgresql-18` (18.6) and `postgresql-18-postgis-3` (3.6.4). Cluster `18/main`, port 5432, **localhost only**; pg_hba unchanged

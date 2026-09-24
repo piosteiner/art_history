@@ -4,6 +4,17 @@
 \pset footer off
 BEGIN;
 
+-- Start from an empty slate so imported content can't collide with the sample slugs (all rolled back at the end).
+DELETE FROM relationships;
+DELETE FROM artworks;
+DELETE FROM institutions;
+DELETE FROM artists;
+DELETE FROM patrons;
+UPDATE movements SET parent_id = NULL;
+DELETE FROM movements;
+UPDATE places SET parent_id = NULL;
+DELETE FROM places;
+
 -- Sample data ---------------------------------------------------------------
 INSERT INTO places (slug, name, kind, country_code, location) VALUES
   ('zundert', 'Zundert', 'settlement', 'NL', 'POINT(4.6556 51.4697)'),

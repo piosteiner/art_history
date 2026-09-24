@@ -1,0 +1,20 @@
+name: Utagawa Hiroshige
+sort_name: Hiroshige
+alt_names: [歌川広重, Andō Hiroshige]
+birth: 1797
+death: 1858
+biography_md: Japanese ukiyo-e artist, master of the landscape print (*The Fifty-three Stations of the Tōkaidō*, *One Hundred Famous Views of Edo*).
+relationships:
+  - type: born_in
+    to: place/edo
+    period: 1797
+  - type: lived_in
+    to: place/edo
+  - type: died_in
+    to: place/edo
+    period: 1858
+  - type: associated_with
+    to: movement/ukiyo-e
+  - type: influenced_by
+    to: artist/katsushika-hokusai
+    certainty: probable

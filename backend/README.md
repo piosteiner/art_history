@@ -3,9 +3,11 @@
 Node/Express API (`/v1/...`) and server-rendered admin panel (`/admin/...`) in one pm2 process,
 backed by PostgreSQL + PostGIS. Listens on `127.0.0.1:3004` behind nginx.
 
-Status: Phase 2 done — PostgreSQL schema live; `GET https://api.arthistory.piogino.ch/v1/health` checks the DB.
+Status: Phase 3 done — public read API (entities, search, map GeoJSON, graph) serving the YAML content in `../content/`.
 
-Data model & roles: [docs/data-model.md](docs/data-model.md)
+- Data model & roles: [docs/data-model.md](docs/data-model.md)
+- API reference: [docs/api.md](docs/api.md)
+- Content format & import: [../content/README.md](../content/README.md)
 
 ## Run
 - Production: pm2 process `arthistory-api` (`ecosystem.config.js`). Deploy: `./deploy.sh`.
@@ -17,3 +19,7 @@ Data model & roles: [docs/data-model.md](docs/data-model.md)
 - `npm run migrate -- --status` lists applied/pending migrations.
 - psql: `psql -h localhost -U arthistory_owner arthistory` (passwords come from `~/.pgpass`).
 - First-time setup of a database: `db/setup.sh <dbname>`.
+
+## Content
+- Edit `../content/**/*.yaml`, then `npm run import:dev -- --dry-run` / `npm run import:dev`; `deploy.sh` imports into production.
+- `npm test` — unit tests (`test/`, Node's built-in runner).

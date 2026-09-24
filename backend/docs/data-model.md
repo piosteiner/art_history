@@ -82,6 +82,13 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
 - "Whom did X influence": `WHERE object_type='artist' AND object_id=X AND relationship_type='influenced_by'` (`relationships_object_idx`)
 - Chains: `WITH RECURSIVE … CYCLE object_type, object_id SET is_cycle USING path` — see `db/tests/schema_smoke.sql`.
 
+## Read-API helpers (migration 004)
+- `f_unaccent(text)` — IMMUTABLE wrapper around `unaccent()` so it can be indexed; trigram GIN indexes on
+  `f_unaccent(name)` of every entity table serve `ILIKE '%…%'` and `<%` (word similarity) → accent-insensitive fuzzy search.
+- `range_json(daterange, label)` → `{label, from, to (inclusive), from_year, to_year}` — the API's date shape.
+- `entity_index` view — `UNION ALL` of all six tables as `(type, id, slug, name, period, period_label, kind)`;
+  filters on `type`/`id` are pushed down into each branch, so lookups still use primary keys.
+
 ## Roles & privileges
 | Role | Used by | Can |
 |---|---|---|

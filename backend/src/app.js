@@ -3,6 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const config = require('./config');
 const v1 = require('./routes/v1');
+const { HttpError } = require('./http');
 
 const app = express();
 app.disable('x-powered-by');
@@ -26,6 +27,9 @@ app.use('/admin', onHost(config.adminHost), (req, res) => {
 app.use((req, res) => res.status(404).json({ error: 'not_found' }));
 
 app.use((err, req, res, next) => {
+  if (err instanceof HttpError) return res.status(err.status).json({ error: err.error, message: err.message });
+  // Postgres statement_timeout (5 s for the api role) → tell the client to retry rather than "internal error".
+  if (err.code === '57014') return res.status(503).json({ error: 'timeout' });
   console.error(err);
   res.status(500).json({ error: 'internal_error' });
 });

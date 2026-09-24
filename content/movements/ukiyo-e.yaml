@@ -1,0 +1,12 @@
+name: Ukiyo-e
+alt_names: [浮世絵, pictures of the floating world]
+kind: school
+parent: edo-period
+period: 1650/1900
+period_label: 17th–19th century
+description_md: |
+  Japanese genre of woodblock prints and paintings — landscapes, actors, beauties, tales.
+  Its flat colour and bold composition fed directly into European *Japonisme*.
+relationships:
+  - type: active_in
+    to: place/edo

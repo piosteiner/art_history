@@ -8,7 +8,10 @@
     "start": "node src/server.js",
     "dev": "DB_NAME=arthistory_dev PORT=3005 node --watch src/server.js",
     "migrate": "node scripts/migrate.js",
-    "migrate:dev": "DB_NAME=arthistory_dev node scripts/migrate.js"
+    "migrate:dev": "DB_NAME=arthistory_dev node scripts/migrate.js",
+    "import": "node scripts/import.js",
+    "import:dev": "DB_NAME=arthistory_dev node scripts/import.js",
+    "test": "node --test"
   },
   "engines": {
     "node": ">=22"
@@ -18,6 +21,9 @@
     "dotenv": "^18.0.3",
     "express": "^5.2.1",
     "helmet": "^8.3.0",
-    "pg": "^8.23.0"
+    "markdown-it": "^15.0.2",
+    "pg": "^8.23.0",
+    "sanitize-html": "^2.17.7",
+    "yaml": "^2.9.1"
   }
 }

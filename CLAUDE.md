@@ -21,6 +21,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 
 ## Workflow
 - Dev: `cd backend && npm run dev` (port 3005, DB `arthistory_dev`). Never test against the live process.
+- Content: edit `content/**/*.yaml` → `npm run import:dev` → check on :3005 → commit → deploy.
 - Schema: new `backend/db/migrations/NNN_*.sql` (never edit applied ones) → `npm run migrate:dev` → smoke test
   `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql` → commit → `backend/deploy.sh`.
 - Deploy: `backend/deploy.sh` (pull, npm ci, migrate, pm2 reload, health probe).
@@ -28,8 +29,9 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 ## Status (2026-09-24)
 - ✅ Phase 0 housekeeping, ufw (22/80/443 only) · ✅ Phase 1 health check, nginx, TLS, pm2
 - ✅ Phase 2 PostgreSQL 18 + PostGIS 3.6, roles (owner/admin/api), migrations 001–003
-- ⏭ Phase 3: read API (`/v1/artists`, `/v1/map/…` GeoJSON, `/v1/graph/…`) + git-tracked YAML `content/` + idempotent import script
-- Later: Phase 4 backups (nightly pg_dump + off-server copy), Phase 5 schema-driven admin panel (session auth + nginx basic auth,
+- ✅ Phase 3: read API (entities, search, `/v1/map/…` GeoJSON, `/v1/graph/…`; `backend/docs/api.md`), migration 004,
+  git-tracked YAML `content/` (format: `content/README.md`) + idempotent `npm run import` (run by deploy.sh), `npm test`
+- ⏭ Phase 4 backups (nightly pg_dump + off-server copy), Phase 5 schema-driven admin panel (session auth + nginx basic auth,
   markdown-it + sanitize-html)
 - Open decisions awaiting owner feedback: daterange+label for fuzzy dates; `institutions.place_id` FK; `visited` instead of
   `traveled_to`; year-precision semantics.

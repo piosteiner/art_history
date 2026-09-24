@@ -1,0 +1,10 @@
+name: Post-Impressionism
+kind: movement
+period: 1886/1905
+period_label: c. 1886–1905
+description_md: |
+  Umbrella term (coined by Roger Fry in 1910) for artists who moved beyond Impressionism's naturalism
+  towards expressive colour, structure and symbolism.
+relationships:
+  - type: active_in
+    to: place/france

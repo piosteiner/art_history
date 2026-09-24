@@ -1,0 +1,19 @@
+name: Theo van Gogh
+kind: person
+active: 1880/1890
+active_label: 1880–1890
+notes_md: |
+  Art dealer in Paris (Goupil & Cie, later Boussod, Valadon & Cie) and Vincent's younger brother.
+  Supported Vincent financially for the whole of his career; their correspondence is the main source on his life.
+relationships:
+  - type: born_in
+    to: place/zundert
+    period: 1857-05-01
+  - type: worked_in
+    to: place/paris
+  - type: died_in
+    to: place/utrecht
+    period: 1891-01-25
+  - type: patron_of
+    to: artist/vincent-van-gogh
+    period: 1880/1890

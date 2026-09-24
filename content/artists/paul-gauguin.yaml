@@ -1,0 +1,32 @@
+name: Paul Gauguin
+sort_name: Gauguin, Paul
+birth: 1848-06-07
+death: 1903-05-08
+biography_md: |
+  French painter, former stockbroker. Leading figure of the Pont-Aven school and Synthetism; spent
+  two months with Van Gogh in Arles in 1888 and his last decade in French Polynesia.
+relationships:
+  - type: born_in
+    to: place/paris
+    period: 1848-06-07
+  - type: visited
+    to: place/pont-aven
+    period: 1886
+  - type: lived_in
+    to: place/arles
+    period: 1888-10-23/1888-12-25
+    label: with Van Gogh in the Yellow House
+  - type: lived_in
+    to: place/tahiti
+    period: 1891/1893
+  - type: lived_in
+    to: place/tahiti
+    period: 1895/1901
+  - type: lived_in
+    to: place/atuona
+    period: 1901/1903-05-08
+  - type: died_in
+    to: place/atuona
+    period: 1903-05-08
+  - type: associated_with
+    to: movement/post-impressionism

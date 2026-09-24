@@ -1,0 +1,5 @@
+name: Amsterdam
+kind: settlement
+parent: netherlands
+country_code: NL
+location: [4.9041, 52.3676]

@@ -1,0 +1,13 @@
+title: The Starry Night
+creator: vincent-van-gogh
+created: 1889-06
+kind: painting
+medium: Oil on canvas
+institution: museum-of-modern-art
+description_md: The view from his window at the Saint-Rémy asylum before sunrise, with an imagined village.
+relationships:
+  - type: created_in
+    to: place/saint-remy-de-provence
+    period: 1889-06
+  - type: associated_with
+    to: movement/post-impressionism

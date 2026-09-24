@@ -1,0 +1,12 @@
+name: Japonisme
+kind: movement
+period: 1860/1910
+period_label: c. 1860–1910
+description_md: The wave of Japanese influence on Western art after Japan's ports reopened to trade in the 1850s.
+relationships:
+  - type: influenced_by
+    to: movement/ukiyo-e
+  - type: influenced_by_culture_of
+    to: place/japan
+  - type: active_in
+    to: place/paris
