@@ -9,7 +9,7 @@ Every date is an object (or `null`):
 ```json
 {"label": "20 February 1888–8 May 1889", "from": "1888-02-20", "to": "1889-05-08", "from_year": 1888, "to_year": 1889}
 ```
-`to` is inclusive. BCE years are negative (`-500`); BCE ISO dates start with `-`. Open ends are `null`.
+`to` is inclusive. BCE years are negative (`-500`); BCE ISO dates start with `-`. Open ends are `null` (an ongoing period, "since 1808", has `to` and `to_year` = `null`).
 Show `label` to people, use `from`/`to` for timelines.
 
 ## Entities

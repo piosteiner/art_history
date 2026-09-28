@@ -38,6 +38,10 @@ Historical dates are rarely exact, so every date is a **half-open range** plus a
 | 1760 | `year_range(1760)` → `[1760-01-01, 1761-01-01)` | `1760` |
 | c. 1480 | `year_range(1478, 1482)` | `c. 1480` |
 | 500 BCE | `year_range(-500)` | `500 BCE` |
+| since 1808 (ongoing) | `[1808-01-01,)` — infinite upper bound | `since 1808` |
+
+Open ends are for periods only (relationships, `movements.period`, `patrons.active`), never for births, deaths,
+creation or founding dates. An ongoing period overlaps every later window, which is what "still there" means.
 
 This makes timeline queries plain range operators, backed by GiST indexes:
 `lifespan @> date '1850-01-01'` (alive then), `period && year_range(1860, 1890)` (overlaps).

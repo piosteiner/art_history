@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-28
 
+### Open-ended periods in content ("1808/" = since 1808, still ongoing)
+- **What:** the date parser accepts an open end for periods only — relationship `period`, `movements.period`,
+  `patrons.active` — stored as `[1808-01-01,)` (infinite upper bound), label "since 1808". Births, deaths, creation and
+  founding dates still reject it. No migration (daterange supports it natively); API already returns `to: null`.
+- **Why:** an institution's current location can be a dated `located_in` too, so its map route ends where it is now.
+- **Revert:** redeploy the previous commit (first remove any `…/` periods from `content/`, or the import will fail).
+
 ### Migration 005: location history for institutions that moved
 - **What:** new relationship type `located_in` (institution → place, physical presence, with period).
   `institutions.place_id` stays the current location. `/v1/map/presence` accepts `types=…,institution` (default unchanged).

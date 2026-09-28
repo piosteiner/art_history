@@ -20,7 +20,8 @@ const CONTENT_DIR = process.env.CONTENT_DIR || path.join(__dirname, '..', '..', 
 const DRY_RUN = process.argv.includes('--dry-run');
 const PRUNE = process.argv.includes('--prune');
 
-// Field kinds: text · text[] · json · md · date (→ <col> + <col>_label) · point [lon, lat] · area (GeoJSON)
+// Field kinds: text · text[] · json · md · date (→ <col> + <col>_label) · period (a date that may be open-ended, "1808/")
+//              point [lon, lat] · area (GeoJSON)
 //              ref:<type> (slug → id, may point at any imported or existing entity) · parent (same-table ref, second pass)
 // Order matters: a type may only reference types listed before it (parent refs are resolved afterwards).
 const TYPES = [
@@ -28,13 +29,13 @@ const TYPES = [
     name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', country_code: 'text',
     location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'movement', folder: 'movements', table: 'movements', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', period: 'date',
+    name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', period: 'period',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artist', folder: 'artists', table: 'artists', fields: {
     name: 'text', sort_name: 'text', alt_names: 'text[]', birth: 'date', death: 'date',
     biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'patron', folder: 'patrons', table: 'patrons', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', active: 'date', notes_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+    name: 'text', alt_names: 'text[]', kind: 'text', active: 'period', notes_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', fields: {
     name: 'text', alt_names: 'text[]', kind: 'text', founded: 'date', place: 'ref:place',
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
@@ -85,7 +86,7 @@ function toRow(e) {
 
   for (const key of Object.keys(doc)) {
     if (key === 'relationships' || key === 'slug') continue;
-    if (key.endsWith('_label') && fields[key.slice(0, -'_label'.length)] === 'date') continue;
+    if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;
     if (!fields[key]) fail(file, `unknown field "${key}"`);
   }
   if (doc.slug !== undefined && doc.slug !== e.slug) fail(file, `slug "${doc.slug}" differs from the file name`);
@@ -93,8 +94,8 @@ function toRow(e) {
   for (const [key, kind] of Object.entries(fields)) {
     const v = doc[key] ?? null;
     try {
-      if (kind === 'date') {
-        const d = parseFuzzyDate(v);
+      if (kind === 'date' || kind === 'period') {
+        const d = parseFuzzyDate(v, { openEnd: kind === 'period' });
         put(key, d && d.range, '$::daterange');
         put(`${key}_label`, doc[`${key}_label`] ?? (d && d.label));
       } else if (kind === 'text[]') {
@@ -230,7 +231,7 @@ async function main() {
         const objectId = await idOf(objectType, objectSlug);
         if (objectId === null) { fail(e.file, `${where}: ${rel.to} does not exist`); continue; }
         let period;
-        try { period = parseFuzzyDate(rel.period); } catch (err) { fail(e.file, `${where}: period: ${err.message}`); continue; }
+        try { period = parseFuzzyDate(rel.period, { openEnd: true }); } catch (err) { fail(e.file, `${where}: period: ${err.message}`); continue; }
         const metadata = { ...(rel.metadata || {}), ...(rel.sources ? { sources: rel.sources } : {}) };
 
         const params = [e.type, subjectId, rel.type, objectType, objectId, period && period.range,

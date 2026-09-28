@@ -17,6 +17,13 @@ test('ranges are inclusive at each end\'s precision', () => {
   assert.equal(parseFuzzyDate('1890-05-20/1890-07-29').label, '20 May–29 July 1890');
 });
 
+test('open end ("still ongoing") only when allowed', () => {
+  assert.deepEqual(parseFuzzyDate('1808/', { openEnd: true }), { range: '[1808-01-01,)', label: 'since 1808' });
+  assert.deepEqual(parseFuzzyDate('1886-03/', { openEnd: true }), { range: '[1886-03-01,)', label: 'since March 1886' });
+  assert.throws(() => parseFuzzyDate('1808/'), /only allowed for periods/);
+  assert.throws(() => parseFuzzyDate('/1808', { openEnd: true }), /bad date/);
+});
+
 test('BCE years, and no year 0', () => {
   assert.deepEqual(parseFuzzyDate(-500), { range: '[0500-01-01 BC,0499-01-01 BC)', label: '500 BCE' });
   assert.equal(parseFuzzyDate(-1).range, '[0001-01-01 BC,0001-01-01)');

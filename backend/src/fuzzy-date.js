@@ -6,6 +6,7 @@
 //   1853-03-30      day                  [1853-03-30,1853-03-31)   "30 March 1853"
 //   1886-03/1888-02-20   range, both ends inclusive at their own precision   "March 1886–20 February 1888", "20 May–29 July 1890"
 //   1478/1482       range of years       [1478-01-01,1483-01-01)   "1478–1482"  (write "c. 1480" as the label)
+//   1808/           open end (ongoing)   [1808-01-01,)             "since 1808"  — only with { openEnd: true }
 //
 // There is no year 0: 1 BCE is followed by 1 CE, as in Postgres.
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -57,12 +58,17 @@ function rangeLabel(from, to) {
 }
 
 // → { range: '[1886-03-01,1888-02-21)', label: 'March 1886–20 February 1888' }, or null for null/undefined.
-function parseFuzzyDate(value) {
+// openEnd allows "1808/" (still ongoing: upper bound infinite) — for periods, not for births or creation dates.
+function parseFuzzyDate(value, { openEnd = false } = {}) {
   if (value === null || value === undefined) return null;
   const text = String(value).trim();
   const parts = text.split('/');
   if (parts.length > 2) throw new Error(`bad date "${text}"`);
   const from = parsePoint(parts[0]);
+  if (parts.length === 2 && parts[1] === '') {
+    if (!openEnd) throw new Error(`bad date "${text}": an open end ("…/") is only allowed for periods`);
+    return { range: `[${pgDate(start(from))},)`, label: `since ${pointLabel(from)}` };
+  }
   const to = parts.length === 2 ? parsePoint(parts[1]) : from;
   const lo = start(from);
   const hi = after(to);

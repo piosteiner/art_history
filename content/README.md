@@ -30,6 +30,7 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 | `1886-03/1888-02-20` | from … to, both inclusive | March 1886–20 February 1888 |
 | `1478/1482` + `created_label: c. 1480` | somewhere in those years | c. 1480 |
 | `-500` | 500 BCE (year precision only; there is no year 0) | 500 BCE |
+| `1808/` | from 1808, still ongoing — only for periods (`period`, `active`, relationship `period`) | since 1808 |
 
 ## Fields
 | Folder | Fields (all optional unless marked *) |
@@ -65,5 +66,6 @@ Only **physical presence** types (`born_in`, `died_in`, `lived_in`, `worked_in`,
 as travel routes on the map. Use `influenced_by_culture_of` / `inspired_by_place` for places someone was
 influenced by but never visited.
 
-An institution's `place` is where it is **now**. If it moved, add its earlier locations as `located_in`
-relationships with a `period` (an artwork's `institution` + `housed_at` work the same way).
+An institution's `place` is where it is **now**. If it moved, add every location as a `located_in` relationship
+with a `period` — the current one open-ended (`period: 1808/`), so the map can draw the full route
+(an artwork's `institution` + `housed_at` work the same way).
