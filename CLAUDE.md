@@ -33,5 +33,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   git-tracked YAML `content/` (format: `content/README.md`) + idempotent `npm run import` (run by deploy.sh), `npm test`
 - ⏭ Phase 4 backups (nightly pg_dump + off-server copy), Phase 5 schema-driven admin panel (session auth + nginx basic auth,
   markdown-it + sanitize-html)
-- Open decisions awaiting owner feedback: daterange+label for fuzzy dates; `institutions.place_id` FK; `visited` instead of
-  `traveled_to`; year-precision semantics.
+- Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
+- 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.
+- Open: moved institutions — proposal: keep `institutions.place_id` = current location, add relationship type
+  `located_in` (institution → place, with period) for history, mirroring `current_institution_id` + `housed_at`.
