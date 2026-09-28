@@ -5,6 +5,10 @@ Format: date — what — why — how to revert.
 ## 2026-09-28
 
 ### Admin panel live (Phase 5) — the database is now the source of truth
+- **Incident + rotation (same day):** while testing the login through nginx, curl's `%{redirect_url}` output printed the
+  basic-auth credentials (curl embeds user:password in redirect URLs) into the Claude session log. The basic-auth password
+  was rotated immediately (new htpasswd entry; old one verified rejected with 401). App login password was never shown.
+  Lesson: never print `%{redirect_url}` (or `-v`) for requests made with `-u`/`user =`.
 - **What:** `backend/src/admin/` served at https://admin.arthistory.piogino.ch/admin/ by the existing pm2 process.
   Migration 006: `admin_users` (scrypt hashes), `admin_sessions` (SHA-256 of cookie tokens), `audit_log` + `audit_row()`
   trigger (SECURITY DEFINER) on all content tables; api role can't see these tables, admin role can't write history or
