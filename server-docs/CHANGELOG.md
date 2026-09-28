@@ -5,6 +5,9 @@ Format: date — what — why — how to revert.
 ## 2026-09-28
 
 ### Nightly database backups (Phase 4)
+- **Live:** repo `piosteiner/art_history-backups` created by the owner (verified private: 404 without auth), cloned to
+  `~/backups/arthistory-offsite`; first backup pushed via systemd; restore from a fresh GitHub clone matched production
+  (row counts + entities); a second run correctly skipped the unchanged data. Passphrase is in the owner's password manager.
 - **What:** `scripts/backup.sh` (dump → verify by restoring into a scratch DB and comparing row counts → encrypted off-site
   copy to the private GitHub repo `art_history-backups`, only when the data changed) and `scripts/restore.sh` (always into a
   new database). systemd `arthistory-backup.service` + `.timer` (03:30 UTC, Persistent) in `/etc/systemd/system/`

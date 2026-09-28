@@ -26,13 +26,13 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql` → commit → `backend/deploy.sh`.
 - Deploy: `backend/deploy.sh` (pull, npm ci, migrate, pm2 reload, health probe).
 
-## Status (2026-09-24)
+## Status (2026-09-28)
 - ✅ Phase 0 housekeeping, ufw (22/80/443 only) · ✅ Phase 1 health check, nginx, TLS, pm2
 - ✅ Phase 2 PostgreSQL 18 + PostGIS 3.6, roles (owner/admin/api), migrations 001–003 (+ 005 `located_in`, 2026-09-28)
 - ✅ Phase 3: read API (entities, search, `/v1/map/…` GeoJSON, `/v1/graph/…`; `backend/docs/api.md`), migration 004,
   git-tracked YAML `content/` (format: `content/README.md`) + idempotent `npm run import` (run by deploy.sh), `npm test`
-- 🔧 Phase 4 backups: nightly `scripts/backup.sh` (systemd timer) — dump, restore-verify, gpg-encrypted push to private repo
-  `art_history-backups` (server-docs/README.md → Backups). Waiting for owner to create the repo + deploy key.
+- ✅ Phase 4 backups: nightly `scripts/backup.sh` (systemd timer) — dump, restore-verify, gpg-encrypted push to private repo
+  `art_history-backups` when data changed (server-docs/README.md → Backups). Round trip from GitHub tested 2026-09-28.
 - ⏭ Phase 5 schema-driven admin panel (session auth + nginx basic auth,
   markdown-it + sanitize-html)
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
