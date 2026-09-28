@@ -30,4 +30,29 @@ Only 22 (SSH), 80, 443 are open. App ports are reachable only via nginx.
 | admin.arthistory.piogino.ch | A | 83.228.207.199 |
 
 ## Secrets
-Never in any git repo. Art history project: `~/.config/arthistory/*.env` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
+Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
+
+## Backups (art history database)
+Nightly at ~03:30 UTC, systemd `arthistory-backup.timer` → `scripts/backup.sh` (units: `config/systemd/`):
+1. `pg_dump` of `arthistory` (plain SQL, gzip) → `~/backups/arthistory/arthistory-YYYY-MM-DD.sql.gz`, kept 14 days.
+2. **Verify:** restored into a scratch database (`arthistory_backup_check`), row counts compared with production, dropped.
+3. **Off-site:** only when the data changed — encrypted with gpg (AES256, passphrase in `~/.config/arthistory/backup-passphrase`,
+   **also kept in the owner's password manager**) and pushed to the private GitHub repo `piosteiner/art_history-backups`
+   (clone: `~/backups/arthistory-offsite`, deploy key `~/.ssh/art_history_backups_deploy`, SSH alias `github-art_history-backups`).
+   Every version is in that repo's git history.
+
+Check: `systemctl list-timers arthistory-backup` · `journalctl -u arthistory-backup -n 20` · run now: `sudo systemctl start arthistory-backup`.
+Not backed up (and not needed): the dev database; code, content YAML and docs are in this Git repo. Other projects' databases are not included.
+
+**Restore** (never overwrites — always into a new database):
+```bash
+scripts/restore.sh ~/backups/arthistory/arthistory-2026-09-28.sql.gz arthistory_restored        # local copy
+git -C ~/backups/arthistory-offsite log --oneline                                                # pick a version
+git -C ~/backups/arthistory-offsite show <commit>:arthistory.sql.gz.gpg > /tmp/old.sql.gz.gpg     # HEAD = latest
+scripts/restore.sh /tmp/old.sql.gz.gpg arthistory_restored                                       # off-site copy
+```
+To make it live: `pm2 stop arthistory-api`, then as postgres `ALTER DATABASE arthistory RENAME TO arthistory_broken;
+ALTER DATABASE arthistory_restored RENAME TO arthistory;`, `pm2 start arthistory-api`, check `/v1/health`.
+On a **new server**: install Postgres 18 + PostGIS, clone both repos, run `backend/db/setup.sh arthistory_dev` (creates the
+roles with new passwords + `~/.pgpass`), put the passphrase into `~/.config/arthistory/backup-passphrase` (600), then
+`scripts/restore.sh <file> arthistory` — straight into the production name, since it doesn't exist yet.

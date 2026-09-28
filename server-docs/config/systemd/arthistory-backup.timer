@@ -1,0 +1,12 @@
+# Installed at /etc/systemd/system/arthistory-backup.timer. Status: systemctl list-timers arthistory-backup
+[Unit]
+Description=Nightly art history database backup
+
+[Timer]
+OnCalendar=*-*-* 03:30:00 UTC
+RandomizedDelaySec=10min
+# Run at next boot if the server was off at 03:30
+Persistent=true
+
+[Install]
+WantedBy=timers.target

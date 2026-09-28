@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-28
 
+### Nightly database backups (Phase 4)
+- **What:** `scripts/backup.sh` (dump → verify by restoring into a scratch DB and comparing row counts → encrypted off-site
+  copy to the private GitHub repo `art_history-backups`, only when the data changed) and `scripts/restore.sh` (always into a
+  new database). systemd `arthistory-backup.service` + `.timer` (03:30 UTC, Persistent) in `/etc/systemd/system/`
+  (copies in `config/systemd/`). Local dumps in `~/backups/arthistory` (700, 14 days). New secrets outside the repo:
+  `~/.config/arthistory/backup-passphrase`, deploy key `~/.ssh/art_history_backups_deploy` (+ `github-art_history-backups`
+  host alias in `~/.ssh/config`). `backend/db/setup-database.sql`: default privileges skipped when `-v restore=1`
+  (the dump brings its own; otherwise `schema_migrations` would become readable by admin/api after a restore).
+- **Why:** off-server copy of the data at no cost; GitHub private repo instead of paid storage (owner decision).
+  Dumps are ~12 KB, so the repo stays tiny. Content is also in YAML today, but admin-panel edits (Phase 5) will only live in the DB.
+- **Revert:** `sudo systemctl disable --now arthistory-backup.timer && sudo rm /etc/systemd/system/arthistory-backup.* &&
+  sudo systemctl daemon-reload`; optionally `rm -r ~/backups`, remove the deploy key on GitHub + `~/.ssh/art_history_backups_deploy*`.
+
 ### Open-ended periods in content ("1808/" = since 1808, still ongoing)
 - **What:** the date parser accepts an open end for periods only — relationship `period`, `movements.period`,
   `patrons.active` — stored as `[1808-01-01,)` (infinite upper bound), label "since 1808". Births, deaths, creation and

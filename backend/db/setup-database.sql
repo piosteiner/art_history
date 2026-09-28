@@ -14,6 +14,10 @@ CREATE EXTENSION IF NOT EXISTS unaccent;    -- accent-insensitive search (Dürer
 GRANT USAGE ON SCHEMA public TO arthistory_admin, arthistory_api;
 
 -- Everything arthistory_owner creates later gets these grants automatically.
+-- Skipped when restoring a dump (scripts/restore.sh sets -v restore=1): the dump brings its own default privileges,
+-- applied after its tables exist, so a table whose grants were revoked (schema_migrations) stays revoked.
+\if :{?restore}
+\else
 ALTER DEFAULT PRIVILEGES FOR ROLE arthistory_owner IN SCHEMA public
   GRANT SELECT ON TABLES TO arthistory_api;
 ALTER DEFAULT PRIVILEGES FOR ROLE arthistory_owner IN SCHEMA public
@@ -22,3 +26,4 @@ ALTER DEFAULT PRIVILEGES FOR ROLE arthistory_owner IN SCHEMA public
   GRANT USAGE, SELECT ON SEQUENCES TO arthistory_admin;
 ALTER DEFAULT PRIVILEGES FOR ROLE arthistory_owner IN SCHEMA public
   GRANT EXECUTE ON FUNCTIONS TO arthistory_admin, arthistory_api;
+\endif

@@ -31,7 +31,9 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - ✅ Phase 2 PostgreSQL 18 + PostGIS 3.6, roles (owner/admin/api), migrations 001–003 (+ 005 `located_in`, 2026-09-28)
 - ✅ Phase 3: read API (entities, search, `/v1/map/…` GeoJSON, `/v1/graph/…`; `backend/docs/api.md`), migration 004,
   git-tracked YAML `content/` (format: `content/README.md`) + idempotent `npm run import` (run by deploy.sh), `npm test`
-- ⏭ Phase 4 backups (nightly pg_dump + off-server copy), Phase 5 schema-driven admin panel (session auth + nginx basic auth,
+- 🔧 Phase 4 backups: nightly `scripts/backup.sh` (systemd timer) — dump, restore-verify, gpg-encrypted push to private repo
+  `art_history-backups` (server-docs/README.md → Backups). Waiting for owner to create the repo + deploy key.
+- ⏭ Phase 5 schema-driven admin panel (session auth + nginx basic auth,
   markdown-it + sanitize-html)
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.

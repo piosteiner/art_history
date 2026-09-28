@@ -1,0 +1,13 @@
+# Installed at /etc/systemd/system/arthistory-backup.service (copy kept in server-docs/config/systemd/).
+# Nightly art history database backup — see scripts/backup.sh. Logs: journalctl -u arthistory-backup
+[Unit]
+Description=Art history database backup (pg_dump, verify, encrypted off-site copy)
+After=postgresql.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+ExecStart=/var/www/arthistory/scripts/backup.sh
+Nice=10
+IOSchedulingClass=idle
