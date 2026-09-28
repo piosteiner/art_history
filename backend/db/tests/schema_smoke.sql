@@ -35,6 +35,11 @@ INSERT INTO artists (slug, name, sort_name, birth, birth_label, death, death_lab
 INSERT INTO movements (slug, name, kind, period, period_label) VALUES
   ('japonisme', 'Japonisme', 'movement', year_range(1860, 1910), 'c. 1860–1910');
 
+-- An institution that moved: place_id = where it is now, located_in = where it was before
+INSERT INTO institutions (slug, name, kind, place_id) VALUES ('sample-museum', 'Sample Museum', 'museum', entity_id('place', 'paris'));
+INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label)
+VALUES ('institution', entity_id('institution', 'sample-museum'), 'located_in', 'place', entity_id('place', 'marseille'), year_range(1850, 1899), '1850–1899');
+
 
 INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label) VALUES
   ('artist', entity_id('artist', 'vincent-van-gogh'), 'born_in',  'place', entity_id('place', 'zundert'), daterange('1853-03-30','1853-03-31'), NULL),
@@ -56,6 +61,7 @@ DO $$
 DECLARE
   cases text[][] := ARRAY[
     ['movement as subject of born_in',   $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('movement', entity_id('movement', 'japonisme'), 'born_in', 'place', entity_id('place', 'paris'))$q$],
+    ['artist as subject of located_in', $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'located_in', 'place', entity_id('place', 'paris'))$q$],
     ['non-existent object id',          $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'visited', 'place', 999999)$q$],
     ['symmetric duplicate B↔A',         $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'contemporary_of', 'artist', entity_id('artist', 'vincent-van-gogh'))$q$],
     ['self relationship',               $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'influenced_by', 'artist', entity_id('artist', 'paul-gauguin'))$q$],
@@ -126,6 +132,12 @@ SELECT rt.label, p.name FROM relationships r
 JOIN relationship_types rt ON rt.code = r.relationship_type AND NOT rt.is_physical_presence
 JOIN places p ON p.id = r.object_id
 WHERE r.subject_type = 'artist' AND r.subject_id = entity_id('artist', 'vincent-van-gogh') AND r.object_type = 'place';
+
+\echo '== institution location history (located_in periods, then current place_id):'
+SELECT p.name, r.period_label AS period FROM relationships r JOIN places p ON p.id = r.object_id
+WHERE r.subject_type = 'institution' AND r.subject_id = entity_id('institution', 'sample-museum') AND r.relationship_type = 'located_in'
+UNION ALL
+SELECT p.name, 'now' FROM institutions i JOIN places p ON p.id = i.place_id WHERE i.slug = 'sample-museum';
 
 \echo '== delete Van Gogh → relationships cleaned up in both directions:'
 SELECT count(*) AS edges_before FROM relationships

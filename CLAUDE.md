@@ -28,12 +28,12 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 
 ## Status (2026-09-24)
 - ✅ Phase 0 housekeeping, ufw (22/80/443 only) · ✅ Phase 1 health check, nginx, TLS, pm2
-- ✅ Phase 2 PostgreSQL 18 + PostGIS 3.6, roles (owner/admin/api), migrations 001–003
+- ✅ Phase 2 PostgreSQL 18 + PostGIS 3.6, roles (owner/admin/api), migrations 001–003 (+ 005 `located_in`, 2026-09-28)
 - ✅ Phase 3: read API (entities, search, `/v1/map/…` GeoJSON, `/v1/graph/…`; `backend/docs/api.md`), migration 004,
   git-tracked YAML `content/` (format: `content/README.md`) + idempotent `npm run import` (run by deploy.sh), `npm test`
 - ⏭ Phase 4 backups (nightly pg_dump + off-server copy), Phase 5 schema-driven admin panel (session auth + nginx basic auth,
   markdown-it + sanitize-html)
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.
-- Open: moved institutions — proposal: keep `institutions.place_id` = current location, add relationship type
-  `located_in` (institution → place, with period) for history, mirroring `current_institution_id` + `housed_at`.
+- Decided + built (migration 005): moved institutions — `institutions.place_id` = current location, dated `located_in`
+  relationships = earlier locations (mirrors `current_institution_id` + `housed_at`).

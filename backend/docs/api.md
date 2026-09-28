@@ -46,7 +46,7 @@ subject_types, object_types, description`. `category` is meant for map/graph lay
   `presence` (was physically there) or `association` (e.g. influenced by the culture of Japan — **not** travel),
   plus one `LineString` with `layer: "route"`: the dated presence stops in chronological order.
 - `GET /v1/map/presence?from=1888&to=1889[&types=artist,patron,artwork]` — who/what was physically where during
-  the window (for a timeline slider). Undated links are left out.
+  the window (for a timeline slider); `institution` may be added to `types` (earlier locations via `located_in`). Undated links are left out.
 - `GET /v1/map/places[?from=&to=]` — every place with `presence_count` and `association_count` (in the window).
 
 ## Graph

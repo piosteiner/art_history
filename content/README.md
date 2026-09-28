@@ -61,6 +61,9 @@ Rules the database enforces: the type must allow these entity types (a movement 
 target must exist, no exact duplicates. Symmetric types (`contemporary_of`, `collaborated_with`) need to be
 written in only one of the two files.
 
-Only **physical presence** types (`born_in`, `died_in`, `lived_in`, `worked_in`, `visited`, `created_in`) are drawn
+Only **physical presence** types (`born_in`, `died_in`, `lived_in`, `worked_in`, `visited`, `created_in`, `located_in`) are drawn
 as travel routes on the map. Use `influenced_by_culture_of` / `inspired_by_place` for places someone was
 influenced by but never visited.
+
+An institution's `place` is where it is **now**. If it moved, add its earlier locations as `located_in`
+relationships with a `period` (an artwork's `institution` + `housed_at` work the same way).

@@ -38,7 +38,9 @@ router.get('/presence', async (req, res) => {
   const window = yearWindowRange(req.query);
   if (!window) throw badRequest('from and/or to is required');
   const types = listParam(req.query, 'types') || ['artist', 'patron', 'artwork'];
-  if (!types.every((t) => ['artist', 'patron', 'artwork'].includes(t))) throw badRequest('types: artist, patron, artwork');
+  if (!types.every((t) => ['artist', 'patron', 'artwork', 'institution'].includes(t))) {
+    throw badRequest('types: artist, patron, artwork, institution');
+  }
   // Undated edges are left out: we can't say they overlap the window.
   const { rows } = await apiPool.query(`
     SELECT jsonb_build_object(

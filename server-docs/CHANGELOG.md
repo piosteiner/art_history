@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-28
 
+### Migration 005: location history for institutions that moved
+- **What:** new relationship type `located_in` (institution → place, physical presence, with period).
+  `institutions.place_id` stays the current location. `/v1/map/presence` accepts `types=…,institution` (default unchanged).
+  Smoke test covers it; docs: `backend/docs/data-model.md`, `backend/docs/api.md`, `content/README.md`.
+- **Why:** owner decision — an institution can move, so one place isn't enough. Mirrors
+  `artworks.current_institution_id` + `housed_at`.
+- **Revert:** as arthistory_owner: `DELETE FROM relationships WHERE relationship_type = 'located_in';
+  DELETE FROM relationship_types WHERE code = 'located_in'; DELETE FROM schema_migrations WHERE name = '005_institution_locations.sql'`,
+  then redeploy the previous commit.
+
 ### Checkout renamed: /var/www/arthistory-api → /var/www/arthistory
 - **What:** `mv /var/www/arthistory-api /var/www/arthistory`; `~/server-docs` symlink repointed; pm2 process re-created from
   the new `backend/ecosystem.config.js` (`cwd` updated) and `pm2 save`d. The pm2 process name stays `arthistory-api`

@@ -60,7 +60,7 @@ an artist can have any number of them, each with its own dates.
 Each type declares which entity types it may connect, its inverse label, and two flags:
 
 - `is_physical_presence` — the subject was physically there (`born_in`, `died_in`, `lived_in`, `worked_in`,
-  `visited`, `created_in`). **Only these may be drawn as travel routes.** Non-physical links
+  `visited`, `created_in`, `located_in`). **Only these may be drawn as travel routes.** Non-physical links
   (`inspired_by_place`, `influenced_by_culture_of`, `active_in`) go on a visually distinct layer — e.g. Van Gogh's
   Japonisme traces to Japan without implying he travelled there.
 - `is_symmetric` — `contemporary_of`, `collaborated_with` are stored once in canonical order (A↔B = B↔A).
@@ -74,6 +74,8 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
   symmetric edges normalised.
 - `<table>_delete_relationships` (after delete on each entity table): removes that entity's edges in both directions.
 - Unique `NULLS NOT DISTINCT (subject, type, object, period)` — no exact duplicates; repeats with different periods are fine.
+- Current vs. history: `artworks.current_institution_id` / `institutions.place_id` hold where something is **now**;
+  earlier holdings/locations are dated `housed_at` / `located_in` relationships (migration 005), needed only when it moved.
 - Plain FKs (`creator_id`, `current_institution_id`, `place_id`, `parent_id`) are `ON DELETE RESTRICT`:
   curated data is never removed implicitly.
 
