@@ -21,7 +21,10 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 
 ## Workflow
 - Dev: `cd backend && npm run dev` (port 3005, DB `arthistory_dev`). Never test against the live process.
-- Content: edit `content/**/*.yaml` → `npm run import:dev` → check on :3005 → commit → deploy.
+- Content: the **database is the source of truth** (admin panel, audit_log history). `npm run export` → `content/` YAML
+  snapshot to commit; `npm run import` only for bulk loads (export first — import overwrites). Deploys don't import.
+- Admin panel: `backend/src/admin/`; forms come from `src/content.js` (shared with import/export). Dev login:
+  `npm run admin:user:dev -- <name>`, then http://localhost:3005/admin/.
 - Schema: new `backend/db/migrations/NNN_*.sql` (never edit applied ones) → `npm run migrate:dev` → smoke test
   `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql` → commit → `backend/deploy.sh`.
 - Deploy: `backend/deploy.sh` (pull, npm ci, migrate, pm2 reload, health probe).
@@ -33,8 +36,9 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   git-tracked YAML `content/` (format: `content/README.md`) + idempotent `npm run import` (run by deploy.sh), `npm test`
 - ✅ Phase 4 backups: nightly `scripts/backup.sh` (systemd timer) — dump, restore-verify, gpg-encrypted push to private repo
   `art_history-backups` when data changed (server-docs/README.md → Backups). Round trip from GitHub tested 2026-09-28.
-- ⏭ Phase 5 schema-driven admin panel (session auth + nginx basic auth,
-  markdown-it + sanitize-html)
+- ✅ Phase 5 admin panel (2026-09-28): migration 006 (admin_users, admin_sessions, audit_log trigger), scrypt + Postgres
+  sessions + nginx basic auth, CRUD + relationships + history pages, `npm run export`. Ideas next: one-click undo from
+  audit_log, map picker for coordinates, image handling, nightly auto-export commit.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.
 - Decided + built (migration 005): moved institutions — `institutions.place_id` = current location, dated `located_in`

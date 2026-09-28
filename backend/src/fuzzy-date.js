@@ -9,6 +9,7 @@
 //   1808/           open end (ongoing)   [1808-01-01,)             "since 1808"  — only with { openEnd: true }
 //
 // There is no year 0: 1 BCE is followed by 1 CE, as in Postgres.
+// formatFuzzyDate() goes the other way (stored daterange → the text above), for the admin form and the export.
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
   'August', 'September', 'October', 'November', 'December'];
 
@@ -80,4 +81,53 @@ function parseFuzzyDate(value, { openEnd = false } = {}) {
   };
 }
 
-module.exports = { parseFuzzyDate };
+// Postgres daterange text → the shortest fuzzy-date text that parses back to exactly the same range.
+//   '[1886-03-01,1888-02-21)' → '1886-03/1888-02-20'   '["0500-01-01 BC","0499-01-01 BC")' → '-500'
+//   '[1808-01-01,)' → '1808/'   null → null
+// Each end is written as coarsely as its bound allows, except a whole-year start before a month/day end is
+// written as a month ("1886-01/1886-02", not "1886/1886-02") — same range, closer to what was meant.
+// { coarseStart: true } skips that exception ("1901/1903-05-08"); dateToDoc() picks whichever matches the label.
+const YEAR = 0, MONTH = 1, DAY = 2;
+const prevYear = (y) => (y === 1 ? -1 : y - 1);
+
+function parseBound(text) {
+  const m = /^"?(\d{4,})-(\d{2})-(\d{2})( BC)?"?$/.exec(text);
+  if (!m) throw new Error(`unsupported range bound "${text}"`);
+  const y = Number(m[1]);
+  return { y: m[4] ? -y : y, mo: Number(m[2]), d: Number(m[3]) };
+}
+
+function dayBefore({ y, mo, d }) {
+  if (d > 1) return { y, mo, d: d - 1 };
+  if (mo > 1) return { y, mo: mo - 1, d: daysIn(y, mo - 1) };
+  return { y: prevYear(y), mo: 12, d: 31 };
+}
+
+function pointText(p, precision) {
+  if (precision === YEAR) return String(p.y);
+  const ym = `${p.y}-${pad(p.mo, 2)}`;
+  return precision === MONTH ? ym : `${ym}-${pad(p.d, 2)}`;
+}
+
+function formatFuzzyDate(range, { coarseStart = false } = {}) {
+  if (range === null || range === undefined) return null;
+  const m = /^\[([^,]+),([^,]*)\)$/.exec(String(range));
+  if (!m) throw new Error(`unsupported daterange "${range}"`);
+  const lo = parseBound(m[1]);
+  const coarsest = lo.mo === 1 && lo.d === 1 ? YEAR : lo.d === 1 ? MONTH : DAY;
+  if (m[2] === '') return `${pointText(lo, coarsest)}/`;
+
+  const hi = parseBound(m[2]);
+  let endPrecision, end;
+  if (hi.mo === 1 && hi.d === 1) { endPrecision = YEAR; end = { y: prevYear(hi.y), mo: 12, d: 31 }; }
+  else if (hi.d === 1) { endPrecision = MONTH; end = dayBefore(hi); }
+  else { endPrecision = DAY; end = dayBefore(hi); }
+  const startPrecision = coarsest === YEAR && endPrecision !== YEAR && !coarseStart ? MONTH : coarsest;
+
+  const endText = pointText(end, endPrecision);
+  // Exactly one unit (a year, a month, or a day that happens to be the 1st) → a single value.
+  if (coarsest <= endPrecision && pointText(lo, endPrecision) === endText) return endText;
+  return `${pointText(lo, startPrecision)}/${endText}`;
+}
+
+module.exports = { parseFuzzyDate, formatFuzzyDate };

@@ -15,39 +15,11 @@ const YAML = require('yaml');
 const { Client } = require('pg');
 const config = require('../src/config');
 const { parseFuzzyDate } = require('../src/fuzzy-date');
+const { TYPES, REL_KEYS, toRow } = require('../src/content');
 
 const CONTENT_DIR = process.env.CONTENT_DIR || path.join(__dirname, '..', '..', 'content');
 const DRY_RUN = process.argv.includes('--dry-run');
 const PRUNE = process.argv.includes('--prune');
-
-// Field kinds: text · text[] · json · md · date (→ <col> + <col>_label) · period (a date that may be open-ended, "1808/")
-//              point [lon, lat] · area (GeoJSON)
-//              ref:<type> (slug → id, may point at any imported or existing entity) · parent (same-table ref, second pass)
-// Order matters: a type may only reference types listed before it (parent refs are resolved afterwards).
-const TYPES = [
-  { type: 'place', folder: 'places', table: 'places', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', country_code: 'text',
-    location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
-  { type: 'movement', folder: 'movements', table: 'movements', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', period: 'period',
-    description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
-  { type: 'artist', folder: 'artists', table: 'artists', fields: {
-    name: 'text', sort_name: 'text', alt_names: 'text[]', birth: 'date', death: 'date',
-    biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },
-  { type: 'patron', folder: 'patrons', table: 'patrons', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', active: 'period', notes_md: 'md', wikidata_id: 'text', metadata: 'json' } },
-  { type: 'institution', folder: 'institutions', table: 'institutions', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', founded: 'date', place: 'ref:place',
-    description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
-  { type: 'artwork', folder: 'artworks', table: 'artworks', fields: {
-    title: 'text', alt_titles: 'text[]', creator: 'ref:artist', attribution_label: 'text', created: 'date',
-    kind: 'text', medium: 'text', institution: 'ref:institution', inventory_number: 'text',
-    image_url: 'text', image_source_url: 'text', image_license: 'text', image_credit: 'text',
-    description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
-];
-// YAML key → column where they differ.
-const REF_COLUMNS = { place: 'place_id', creator: 'creator_id', institution: 'current_institution_id' };
-const REL_KEYS = new Set(['type', 'to', 'period', 'period_label', 'label', 'certainty', 'notes_md', 'sources', 'metadata']);
 
 // Collect every problem instead of stopping at the first one.
 const errors = [];
@@ -76,63 +48,18 @@ function loadFiles() {
   return entities;
 }
 
-// YAML doc → { columns: {col: [sqlExpr, value]}, refs: [...], parent, relationships }
-function toRow(e) {
-  const { doc, fields, file } = e;
-  const cols = {};
-  const refs = [];
-  let parent = null;
-  const put = (col, value, expr = '$') => { cols[col] = [expr, value]; };
-
-  for (const key of Object.keys(doc)) {
-    if (key === 'relationships' || key === 'slug') continue;
-    if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;
-    if (!fields[key]) fail(file, `unknown field "${key}"`);
-  }
-  if (doc.slug !== undefined && doc.slug !== e.slug) fail(file, `slug "${doc.slug}" differs from the file name`);
-
-  for (const [key, kind] of Object.entries(fields)) {
-    const v = doc[key] ?? null;
-    try {
-      if (kind === 'date' || kind === 'period') {
-        const d = parseFuzzyDate(v, { openEnd: kind === 'period' });
-        put(key, d && d.range, '$::daterange');
-        put(`${key}_label`, doc[`${key}_label`] ?? (d && d.label));
-      } else if (kind === 'text[]') {
-        if (v !== null && !(Array.isArray(v) && v.every((s) => typeof s === 'string'))) throw new Error('must be a list of strings');
-        put(key, v || []);
-      } else if (kind === 'json') {
-        if (v !== null && (typeof v !== 'object' || Array.isArray(v))) throw new Error('must be a mapping');
-        put(key, JSON.stringify(v || {}), '$::jsonb');
-      } else if (kind === 'point') {
-        if (v === null) put(key, null);
-        else if (Array.isArray(v) && v.length === 2 && v.every(Number.isFinite)
-          && Math.abs(v[0]) <= 180 && Math.abs(v[1]) <= 90) {
-          put(key, `SRID=4326;POINT(${v[0]} ${v[1]})`, '$::geography');
-        } else throw new Error('must be [longitude, latitude]');
-      } else if (kind === 'area') {
-        put(key, v && JSON.stringify(v), 'ST_Multi(ST_GeomFromGeoJSON($))::geography');
-      } else if (kind === 'parent') {
-        parent = v;
-      } else if (kind.startsWith('ref:')) {
-        refs.push({ col: REF_COLUMNS[key], type: kind.slice(4), slug: v });
-      } else {
-        if (v !== null && typeof v !== 'string') throw new Error('must be text');
-        put(key, v);
-      }
-    } catch (err) {
-      fail(file, `${key}: ${err.message}`);
-    }
-  }
-  const relationships = doc.relationships ?? [];
-  if (!Array.isArray(relationships)) fail(file, 'relationships must be a list');
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [] };
+// YAML doc → row (shared with the admin panel: src/content.js), errors reported against the file.
+function toRowOf(e) {
+  const row = toRow(e.doc, e.fields);
+  row.errors.forEach((msg) => fail(e.file, msg));
+  if (e.doc.slug !== undefined && e.doc.slug !== e.slug) fail(e.file, `slug "${e.doc.slug}" differs from the file name`);
+  return row;
 }
 
 async function main() {
   if (!fs.existsSync(CONTENT_DIR)) throw new Error(`content directory not found: ${CONTENT_DIR}`);
   const entities = loadFiles();
-  for (const e of entities) Object.assign(e, toRow(e));
+  for (const e of entities) Object.assign(e, toRowOf(e));
 
   const seen = new Set();
   for (const e of entities) {
@@ -160,6 +87,8 @@ async function main() {
 
   try {
     await client.query('BEGIN');
+    // Recorded in audit_log.source for every row this transaction changes (migration 006).
+    await client.query("SELECT set_config('arthistory.source', 'import', true)");
 
     // 1. Entities, in dependency order. A single statement per row:
     //    INSERT … ON CONFLICT (slug) DO UPDATE … WHERE <something changed> RETURNING (xmax = 0) AS inserted

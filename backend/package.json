@@ -11,7 +11,11 @@
     "migrate:dev": "DB_NAME=arthistory_dev node scripts/migrate.js",
     "import": "node scripts/import.js",
     "import:dev": "DB_NAME=arthistory_dev node scripts/import.js",
-    "test": "node --test"
+    "test": "node --test",
+    "export": "node scripts/export.js",
+    "export:dev": "DB_NAME=arthistory_dev node scripts/export.js",
+    "admin:user": "node scripts/admin-user.js",
+    "admin:user:dev": "DB_NAME=arthistory_dev node scripts/admin-user.js"
   },
   "engines": {
     "node": ">=22"

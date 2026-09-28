@@ -1,0 +1,55 @@
+// Server-rendered HTML without a template engine: html`…` escapes every interpolated value unless it is itself
+// html`…` (or raw()). Arrays are joined. null/undefined/false render as nothing.
+class Html {
+  constructor(s) { this.s = s; }
+  toString() { return this.s; }
+}
+
+const ESC = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+const escape = (v) => String(v).replace(/[&<>"']/g, (c) => ESC[c]);
+
+function render(v) {
+  if (v === null || v === undefined || v === false) return '';
+  if (v instanceof Html) return v.s;
+  if (Array.isArray(v)) return v.map(render).join('');
+  return escape(v);
+}
+
+function html(strings, ...values) {
+  let out = strings[0];
+  values.forEach((v, i) => { out += render(v) + strings[i + 1]; });
+  return new Html(out);
+}
+
+// Trusted HTML only (e.g. output of renderMarkdown, which is sanitized).
+const raw = (s) => new Html(s ?? '');
+
+function layout({ title, user, body, flash, nav = true }) {
+  return html`<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>${title} · Art history admin</title>
+<link rel="stylesheet" href="/admin/static/admin.css">
+</head>
+<body>
+${nav && user ? html`<header class="top">
+  <a class="brand" href="/admin/">Art history admin</a>
+  <nav>
+    <a href="/admin/artists">Artists</a><a href="/admin/artworks">Artworks</a><a href="/admin/places">Places</a>
+    <a href="/admin/movements">Movements</a><a href="/admin/institutions">Institutions</a><a href="/admin/patrons">Patrons</a>
+    <a href="/admin/history">History</a>
+  </nav>
+  <form method="post" action="/admin/logout" class="inline"><span class="muted">${user.username}</span> <button class="link">Log out</button></form>
+</header>` : ''}
+<main>
+${flash ? html`<p class="flash ${flash.kind}">${flash.text}</p>` : ''}
+${body}
+</main>
+</body>
+</html>`;
+}
+
+module.exports = { html, raw, layout, escape };

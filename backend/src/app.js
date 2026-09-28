@@ -3,6 +3,7 @@ const cors = require('cors');
 const helmet = require('helmet');
 const config = require('./config');
 const v1 = require('./routes/v1');
+const admin = require('./admin');
 const { HttpError } = require('./http');
 
 const app = express();
@@ -20,9 +21,7 @@ const onHost = (host) => (req, res, next) =>
 
 app.use('/v1', onHost(config.apiHost), cors({ origin: config.corsOrigin }), v1);
 
-app.use('/admin', onHost(config.adminHost), (req, res) => {
-  res.status(503).type('text').send('Admin panel not built yet.');
-});
+app.use('/admin', onHost(config.adminHost), admin);
 
 app.use((req, res) => res.status(404).json({ error: 'not_found' }));
 

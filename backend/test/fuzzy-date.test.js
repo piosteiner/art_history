@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { parseFuzzyDate } = require('../src/fuzzy-date');
+const { parseFuzzyDate, formatFuzzyDate } = require('../src/fuzzy-date');
 
 test('points at year, month and day precision', () => {
   assert.deepEqual(parseFuzzyDate(1853), { range: '[1853-01-01,1854-01-01)', label: '1853' });
@@ -43,4 +43,31 @@ test('rejects malformed input', () => {
     assert.throws(() => parseFuzzyDate(bad), undefined, bad);
   }
   assert.equal(parseFuzzyDate(null), null);
+});
+
+test('formatFuzzyDate: stored range → shortest text', () => {
+  assert.equal(formatFuzzyDate('[1853-01-01,1854-01-01)'), '1853');
+  assert.equal(formatFuzzyDate('[1888-02-01,1888-03-01)'), '1888-02');
+  assert.equal(formatFuzzyDate('[1853-03-30,1853-03-31)'), '1853-03-30');
+  assert.equal(formatFuzzyDate('[1886-03-01,1888-02-21)'), '1886-03/1888-02-20');
+  assert.equal(formatFuzzyDate('[1886-01-01,1886-03-01)'), '1886-01/1886-02');
+  assert.equal(formatFuzzyDate('[1478-01-01,1483-01-01)'), '1478/1482');
+  assert.equal(formatFuzzyDate('["0500-01-01 BC","0499-01-01 BC")'), '-500');
+  assert.equal(formatFuzzyDate('["0001-01-01 BC",0001-01-01)'), '-1');
+  assert.equal(formatFuzzyDate('[1857-05-01,1857-05-02)'), '1857-05-01');
+  assert.equal(formatFuzzyDate('[1857-01-01,1857-01-02)'), '1857-01-01');
+  assert.equal(formatFuzzyDate('[1886-01-01,1886-02-01)'), '1886-01');
+  assert.equal(formatFuzzyDate('[1808-01-01,)'), '1808/');
+  assert.equal(formatFuzzyDate('[1973-06-01,)'), '1973-06/');
+  assert.equal(formatFuzzyDate(null), null);
+});
+
+test('formatFuzzyDate round-trips through parseFuzzyDate', () => {
+  const unquote = (r) => r.replace(/(\d{4}-\d{2}-\d{2} BC)/g, '"$1"');
+  for (const text of ['1853', '1888-02', '1853-03-30', '1886-03/1888-02-20', '1890-05-20/1890-07-29', '1478/1482',
+    '-500', '-10/10', '1888-12-31', '1888-02-29', '1886-03/1888', '1808/', '1886-03/', '1900-12/1901-01', '1857-05-01', '1857-01-01', '1886-01', '1886-01/1886-02']) {
+    const { range } = parseFuzzyDate(text, { openEnd: true });
+    const back = formatFuzzyDate(unquote(range));
+    assert.equal(parseFuzzyDate(back, { openEnd: true }).range, range, `${text} → ${back}`);
+  }
 });

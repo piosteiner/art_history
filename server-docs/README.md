@@ -16,7 +16,7 @@ Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest 
 | gif-converter | /var/www/gif-converter | Flask/Gunicorn, systemd | 5000 | api.piogino.ch | files |
 | arthistory (pm2: arthistory-api) | /var/www/arthistory/backend | Node/Express, pm2 | 3004 | api.arthistory / admin.arthistory.piogino.ch | PostgreSQL `arthistory` (+ `arthistory_dev`) |
 
-Shared: nginx (reverse proxy, certbot TLS), pm2 as user `ubuntu` (pm2-ubuntu.service).
+Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service).
 Databases (both localhost only): MySQL 8 (:3306, calorie-tracker) · PostgreSQL 18 + PostGIS 3.6 (:5432, art history; tuning in `config/postgresql/`).
 
 ## Firewall (ufw)
@@ -31,6 +31,8 @@ Only 22 (SSH), 80, 443 are open. App ports are reachable only via nginx.
 
 ## Secrets
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
+Admin panel: nginx basic auth `/etc/nginx/arthistory-admin.htpasswd` (root:www-data 640, SHA-512 crypt) + app users in
+the `admin_users` table (scrypt). Both passwords live in the owner's password manager only.
 
 ## Backups (art history database)
 Nightly at ~03:30 UTC, systemd `arthistory-backup.timer` → `scripts/backup.sh` (units: `config/systemd/`):

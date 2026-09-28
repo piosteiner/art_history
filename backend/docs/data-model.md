@@ -99,11 +99,33 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
 | Role | Used by | Can |
 |---|---|---|
 | `arthistory_owner` | `npm run migrate` only | DDL, owns everything |
-| `arthistory_admin` | admin panel pool | SELECT/INSERT/UPDATE/DELETE on content; no DDL, no TRUNCATE, 30 s timeout |
-| `arthistory_api` | public API pool | SELECT only; `default_transaction_read_only`, 5 s timeout |
+| `arthistory_admin` | admin panel pool, import | SELECT/INSERT/UPDATE/DELETE on content; no DDL, no TRUNCATE, 30 s timeout |
+| `arthistory_api` | public API pool, export | SELECT only; `default_transaction_read_only`, 5 s timeout |
 
 New tables get these grants automatically (`ALTER DEFAULT PRIVILEGES` in `db/setup-database.sql`).
-`schema_migrations` is readable by the owner only.
+`schema_migrations` is readable by the owner only. Migration 006 tightens the admin tables:
+
+| Table | api | admin |
+|---|---|---|
+| `admin_users` | — | SELECT, UPDATE of `last_login_at`, `password_hash` only (column privileges); users are created as owner |
+| `admin_sessions` | — | read/write |
+| `audit_log` | — | SELECT only — rows arrive via the trigger, never directly |
+
+## Audit log (migration 006)
+`AFTER INSERT OR UPDATE OR DELETE … FOR EACH ROW` on the six entity tables and `relationships` calls `audit_row()`,
+which stores the whole row before/after as JSONB (`to_jsonb(OLD)`, `to_jsonb(NEW)`), skipping updates that changed
+nothing but `updated_at`. Who and from where come from transaction-local settings the writer sets —
+`set_config('arthistory.user_id', '1', true)`, `set_config('arthistory.source', 'admin', true)` — so a pooled
+connection can't leak them into the next request; untagged changes (psql by hand) are recorded as `sql`.
+`audit_row()` is `SECURITY DEFINER` (runs as the owner): the admin role can add history only by changing data,
+never write, edit or delete history itself. `txid` (`pg_current_xact_id()`) groups the rows of one save.
+
+```sql
+-- What changed in the last save, key by key:
+SELECT k, old_row->k AS before, new_row->k AS after
+FROM audit_log, jsonb_object_keys(new_row) k
+WHERE id = (SELECT max(id) FROM audit_log) AND old_row->k IS DISTINCT FROM new_row->k;
+```
 
 ## Databases
 - `arthistory` — production (pm2 `arthistory-api`, `npm run migrate`)

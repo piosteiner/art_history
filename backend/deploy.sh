@@ -6,7 +6,7 @@ cd "$(dirname "$0")"
 git pull --ff-only
 npm ci --omit=dev --no-fund --no-audit
 npm run migrate
-npm run import        # content/ YAML → DB (idempotent; never prunes)
+# No YAML import since Phase 5: the database is the source of truth (admin panel). `npm run export` for snapshots.
 pm2 reload ecosystem.config.js --update-env
 pm2 save >/dev/null
 sleep 2

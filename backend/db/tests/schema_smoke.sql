@@ -70,7 +70,11 @@ DECLARE
     ['bad slug',                        $q$INSERT INTO places (slug, name, kind, location) VALUES ('Not A Slug', 'x', 'site', 'POINT(0 0)')$q$],
     ['place without coordinates',       $q$INSERT INTO places (slug, name, kind) VALUES ('nowhere', 'Nowhere', 'site')$q$],
     ['admin role tries DDL',            $q$CREATE TABLE hack (i int)$q$],
-    ['admin role tries TRUNCATE',       $q$TRUNCATE artists CASCADE$q$]
+    ['admin role tries TRUNCATE',       $q$TRUNCATE artists CASCADE$q$],
+    ['admin role forges history',       $q$INSERT INTO audit_log (table_name, row_id, action, source) VALUES ('artists', 1, 'delete', 'admin')$q$],
+    ['admin role rewrites history',     $q$UPDATE audit_log SET source = 'x'$q$],
+    ['admin role creates a user',       $q$INSERT INTO admin_users (username, password_hash) VALUES ('eve', 'x')$q$],
+    ['admin role renames a user',       $q$UPDATE admin_users SET username = 'eve'$q$]
   ];
   c text[];
 BEGIN
@@ -145,6 +149,9 @@ WHERE (subject_type = 'artist' AND subject_id = entity_id('artist', 'vincent-van
 DELETE FROM artists WHERE slug = 'vincent-van-gogh';
 SELECT count(*) AS edges_after FROM relationships
 WHERE (subject_type = 'artist' AND subject_id = entity_id('artist', 'vincent-van-gogh')) OR (object_type = 'artist' AND object_id = entity_id('artist', 'vincent-van-gogh'));
+
+\echo '== audit_log: changes made by this test, recorded by the trigger (source sql = not tagged by admin/import):'
+SELECT table_name, action, source, count(*) FROM audit_log WHERE txid = pg_current_xact_id() GROUP BY 1, 2, 3 ORDER BY 1, 2;
 
 \echo '== updated_at trigger:'
 SELECT created_at = updated_at AS same_before FROM artists WHERE slug = 'paul-gauguin';

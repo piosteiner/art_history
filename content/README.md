@@ -1,7 +1,14 @@
 # Content
 
-The curated data behind arthistory.piogino.ch, as plain YAML. Git is the history and the backup;
-`backend/scripts/import.js` loads it into PostgreSQL (idempotent — safe to run any number of times).
+The curated data behind arthistory.piogino.ch, as plain YAML.
+
+**Since Phase 5 (2026-09-28) the database is the source of truth**: content is edited in the admin panel
+(https://admin.arthistory.piogino.ch/admin/), its history is the `audit_log` table, and nightly backups protect it.
+These files are a **snapshot**: `npm run export` writes the database back out here, so git shows a readable diff —
+commit it when you like. Deploys no longer import them.
+
+The import still works for bulk-loading many entities at once (write YAML, then `npm run import`), but it
+overwrites fields of entities it touches — **export first**, so the files match the database, then edit and import.
 
 ```
 content/<folder>/<slug>.yaml     one entity per file; the file name is its slug (lowercase-kebab-case)

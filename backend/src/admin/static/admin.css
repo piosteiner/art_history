@@ -1,0 +1,74 @@
+/* Art history admin — plain, dense, readable. Follows the OS light/dark setting. */
+:root {
+  --bg: #fbfaf7; --fg: #1f1d1a; --muted: #6b665e; --line: #dedad2; --panel: #ffffff;
+  --accent: #7a3e12; --accent-fg: #ffffff; --ok: #1f6b3a; --err: #a4221b; --err-bg: #fbeceb; --ok-bg: #e9f5ec;
+  --code: #f1eee8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171614; --fg: #e9e5de; --muted: #a39d93; --line: #35322d; --panel: #1f1e1b;
+    --accent: #e3a36f; --accent-fg: #1a1208; --ok: #7ccf95; --err: #f08a82; --err-bg: #3a1d1b; --ok-bg: #1b3122;
+    --code: #2a2824;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--accent); }
+main { max-width: 1100px; margin: 0 auto; padding: 16px; }
+h1 { font-size: 1.5rem; margin: .5rem 0 1rem; }
+h2 { font-size: 1.15rem; margin: 2rem 0 .75rem; border-bottom: 1px solid var(--line); padding-bottom: .25rem; }
+.muted { color: var(--muted); }
+code, pre { background: var(--code); border-radius: 4px; padding: 0 .25em; font-size: .9em; }
+pre { padding: .5em; overflow-x: auto; }
+
+.top { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; align-items: center; padding: .6rem 16px;
+  border-bottom: 1px solid var(--line); background: var(--panel); }
+.top .brand { font-weight: 600; text-decoration: none; color: var(--fg); }
+.top nav { display: flex; flex-wrap: wrap; gap: .25rem .9rem; flex: 1; }
+.top nav a { text-decoration: none; }
+form.inline { display: inline; margin: 0; }
+
+.flash { padding: .6rem .8rem; border-radius: 6px; }
+.flash.ok { background: var(--ok-bg); color: var(--ok); }
+.flash.error { background: var(--err-bg); color: var(--err); }
+.errors { background: var(--err-bg); color: var(--err); padding: .6rem 1.5rem; border-radius: 6px; }
+
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: .4rem .5rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 600; color: var(--muted); font-size: .85rem; }
+.table-wrap { overflow-x: auto; }
+
+.bar { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; margin-bottom: 1rem; }
+.bar .grow { flex: 1; }
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .75rem; }
+.card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: .75rem; text-decoration: none; color: var(--fg); }
+.card b { display: block; font-size: 1.4rem; }
+
+dl.fields { display: grid; grid-template-columns: minmax(120px, max-content) 1fr; gap: .35rem 1rem; }
+dl.fields dt { color: var(--muted); }
+dl.fields dd { margin: 0; overflow-wrap: anywhere; }
+.md { max-width: 70ch; }
+
+.form { display: grid; gap: .9rem; max-width: 760px; }
+.field label { display: block; font-weight: 600; margin-bottom: .2rem; }
+.field .hint { color: var(--muted); font-size: .85rem; margin-top: .15rem; }
+.field.has-error input, .field.has-error textarea, .field.has-error select { border-color: var(--err); }
+.row { display: flex; gap: .5rem; flex-wrap: wrap; }
+.row > * { flex: 1; min-width: 140px; }
+input, select, textarea { width: 100%; font: inherit; color: var(--fg); background: var(--panel);
+  border: 1px solid var(--line); border-radius: 6px; padding: .4rem .5rem; }
+textarea { min-height: 5rem; resize: vertical; }
+textarea.md { min-height: 11rem; font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .9rem; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--accent); outline-offset: -1px; }
+
+button, .button { font: inherit; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-fg);
+  border-radius: 6px; padding: .4rem .9rem; cursor: pointer; text-decoration: none; display: inline-block; }
+button.secondary, .button.secondary { background: transparent; color: var(--accent); }
+button.danger { background: var(--err); border-color: var(--err); color: #fff; }
+button.link { background: none; border: none; padding: 0; color: var(--accent); text-decoration: underline; }
+.actions { display: flex; gap: .5rem; flex-wrap: wrap; align-items: center; }
+
+.diff td.old { color: var(--err); }
+.diff td.new { color: var(--ok); }
+.tag { font-size: .8rem; border: 1px solid var(--line); border-radius: 999px; padding: 0 .5rem; color: var(--muted); white-space: nowrap; }
+.login { max-width: 340px; margin: 12vh auto; }

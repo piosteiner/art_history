@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-28
 
+### Admin panel live (Phase 5) — the database is now the source of truth
+- **What:** `backend/src/admin/` served at https://admin.arthistory.piogino.ch/admin/ by the existing pm2 process.
+  Migration 006: `admin_users` (scrypt hashes), `admin_sessions` (SHA-256 of cookie tokens), `audit_log` + `audit_row()`
+  trigger (SECURITY DEFINER) on all content tables; api role can't see these tables, admin role can't write history or
+  create users. nginx: `auth_basic` on the admin server block (`/etc/nginx/arthistory-admin.htpasswd`, root:www-data 640);
+  site config copied to `config/nginx/arthistory`. `deploy.sh` no longer runs `npm run import`; new `npm run export`
+  (DB → content/ YAML) and `npm run admin:user`. Content model moved to `backend/src/content.js` (shared by import,
+  export, admin). Markdown fields are stored without trailing whitespace (import and forms agree).
+- **Why:** owner decision: edit in the admin panel, database = truth, history in Postgres; YAML stays as export/bulk import.
+- **Tested on dev:** login/rate-limit/Origin check, create/edit/delete with validation and friendly DB errors, optimistic
+  locking, relationships add/edit/delete, history; all 44 entities re-saved through their edit forms → 0 audit rows
+  (lossless round trip); export → import --dry-run → all unchanged; smoke test incl. 4 new privilege checks.
+- **Revert:** redeploy commit `1163ad5` (restores the 503 placeholder and the import in deploy.sh); remove the two
+  `auth_basic` lines from `/etc/nginx/sites-available/arthistory` and `sudo systemctl reload nginx`. Migration 006 can stay
+  (harmless); to drop it as arthistory_owner: drop the 7 `*_audit` triggers, `audit_row()`, `audit_log`, `admin_sessions`,
+  `admin_users`, type `audit_action`, and its `schema_migrations` row.
+
 ### Nightly database backups (Phase 4)
 - **Live:** repo `piosteiner/art_history-backups` created by the owner (verified private: 404 without auth), cloned to
   `~/backups/arthistory-offsite`; first backup pushed via systemd; restore from a fresh GitHub clone matched production
