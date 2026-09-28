@@ -3,7 +3,7 @@ module.exports = {
   apps: [{
     name: 'arthistory-api',
     script: 'src/server.js',
-    cwd: '/var/www/arthistory-api/backend',
+    cwd: '/var/www/arthistory/backend',
     instances: 1,
     exec_mode: 'fork',
     autorestart: true,

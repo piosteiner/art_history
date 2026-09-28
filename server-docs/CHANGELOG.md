@@ -2,6 +2,17 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-09-28
+
+### Checkout renamed: /var/www/arthistory-api → /var/www/arthistory
+- **What:** `mv /var/www/arthistory-api /var/www/arthistory`; `~/server-docs` symlink repointed; pm2 process re-created from
+  the new `backend/ecosystem.config.js` (`cwd` updated) and `pm2 save`d. The pm2 process name stays `arthistory-api`
+  (it is the API process), as do the nginx log names. nginx and the Git remote are unaffected.
+- **Why:** the folder holds the whole repo (backend, content, server docs, later the admin panel), not only the API.
+- **Revert:** `pm2 delete arthistory-api && mv /var/www/arthistory /var/www/arthistory-api`, restore `cwd` in
+  `backend/ecosystem.config.js`, `pm2 start backend/ecosystem.config.js && pm2 save`,
+  `ln -sfn /var/www/arthistory-api/server-docs ~/server-docs`.
+
 ## 2026-09-24
 
 ### Art history read API + content import (Phase 3)

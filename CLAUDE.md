@@ -1,6 +1,6 @@
 # Art History — working notes for Claude
 
-Backend + server documentation for https://arthistory.piogino.ch. This checkout (`/var/www/arthistory-api`) is the
+Backend + server documentation for https://arthistory.piogino.ch. This checkout (`/var/www/arthistory`) is the
 public GitHub repo `piosteiner/art_history`, running on the production VPS (Infomaniak, Ubuntu 22.04, 2 vCPU / 4 GB / 60 GB).
 
 ## Rules (from the owner — always follow)
