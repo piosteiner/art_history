@@ -172,6 +172,11 @@ const pageParam = (req) => Math.max(1, Math.min(10000, Number.parseInt(req.query
 // ---------------------------------------------------------------------------------------------------------------
 // Dashboard + global history
 // ---------------------------------------------------------------------------------------------------------------
+// Markdown preview for the editor (src/admin/editor): exactly what the public API will serve for this text.
+router.post('/preview', (req, res) => {
+  res.type('html').send(renderMarkdown(String(req.body.text || '').slice(0, 100000)) || '');
+});
+
 router.get('/', async (req, res) => {
   const counts = Object.fromEntries((await adminPool.query(
     'SELECT type::text, count(*)::int AS n FROM entity_index GROUP BY type')).rows.map((r) => [r.type, r.n]));
@@ -250,7 +255,7 @@ function relForm({ action, types, entities, rel = {}, submit }) {
       <div class="field"><label for="r-cert">Certainty</label><select id="r-cert" name="certainty">
         ${['attested', 'probable', 'possible', 'disputed'].map((c) => html`<option${c === (rel.certainty || 'attested') ? ' selected' : ''}>${c}</option>`)}</select></div>
     </div>
-    <div class="field"><label for="r-notes">Notes</label><textarea id="r-notes" name="notes_md" rows="2">${v('notes_md')}</textarea><div class="hint">${HINTS.md}</div></div>
+    <div class="field"><label for="r-notes">Notes</label><textarea class="md" id="r-notes" name="notes_md" rows="2">${v('notes_md')}</textarea><div class="hint">${HINTS.md}</div></div>
     <div class="field"><label for="r-src">Sources</label><textarea id="r-src" name="sources" rows="2">${(rel.sources || []).join('\n')}</textarea><div class="hint">One per line.</div></div>
     <div class="actions"><button>${submit}</button></div>
   </form>`;

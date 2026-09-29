@@ -35,6 +35,12 @@ server {
     access_log /var/log/nginx/arthistory-admin.access.log;
     error_log  /var/log/nginx/arthistory-admin.error.log warn;
 
+    # Compress what the app sends (gzip is on globally, but only for text/html and not for proxied responses).
+    # The Markdown editor bundle shrinks from ~310 KB to ~100 KB.
+    gzip_proxied any;
+    gzip_vary on;
+    gzip_types text/css application/javascript text/javascript application/json;
+
     # No basic auth (removed 2026-09-29): the app's login is the only one. Failed logins (401 on POST /login in the
     # access log below) are banned by fail2ban, jail arthistory-admin (/etc/fail2ban/jail.d/arthistory.local).
 

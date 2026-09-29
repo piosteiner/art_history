@@ -24,7 +24,9 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - Content: the **database is the source of truth** (admin panel, audit_log history). `npm run export` → `content/` YAML
   snapshot to commit; `npm run import` only for bulk loads (export first — import overwrites). Deploys don't import.
 - Admin panel: `backend/src/admin/`; forms come from `src/content.js` (shared with import/export). Dev login:
-  `npm run admin:user:dev -- <name>`, then http://admin.localhost:3005/ (host-based routing).
+  `npm run admin:user:dev -- <name>`, then http://admin.localhost:3005/ (host-based routing). Markdown editor:
+  `src/admin/editor/` (CodeMirror 6) → `npm run build:admin` → `static/editor.js` (git-ignored; `npm run dev` and
+  `deploy.sh` build it).
 - Schema: new `backend/db/migrations/NNN_*.sql` (never edit applied ones) → `npm run migrate:dev` → smoke test
   `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql` → commit → `backend/deploy.sh`.
 - Deploy: `backend/deploy.sh` (pull, npm ci, migrate, pm2 reload, health probe).

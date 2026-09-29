@@ -6,7 +6,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "DB_NAME=arthistory_dev PORT=3005 node --watch src/server.js",
+    "dev": "npm run build:admin && DB_NAME=arthistory_dev PORT=3005 node --watch src/server.js",
     "migrate": "node scripts/migrate.js",
     "migrate:dev": "DB_NAME=arthistory_dev node scripts/migrate.js",
     "import": "node scripts/import.js",
@@ -15,7 +15,8 @@
     "export": "node scripts/export.js",
     "export:dev": "DB_NAME=arthistory_dev node scripts/export.js",
     "admin:user": "node scripts/admin-user.js",
-    "admin:user:dev": "DB_NAME=arthistory_dev node scripts/admin-user.js"
+    "admin:user:dev": "DB_NAME=arthistory_dev node scripts/admin-user.js",
+    "build:admin": "esbuild src/admin/editor/editor.js --bundle --minify --format=iife --target=es2020 --outfile=src/admin/static/editor.js"
   },
   "engines": {
     "node": ">=22"
@@ -29,5 +30,14 @@
     "pg": "^8.23.0",
     "sanitize-html": "^2.17.7",
     "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@codemirror/commands": "^6.11.1",
+    "@codemirror/lang-markdown": "^6.5.2",
+    "@codemirror/language": "^6.12.4",
+    "@codemirror/state": "^6.7.6",
+    "@codemirror/view": "^6.43.13",
+    "@lezer/highlight": "^1.2.5",
+    "esbuild": "^0.28.2"
   }
 }

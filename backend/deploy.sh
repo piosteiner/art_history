@@ -4,7 +4,9 @@
 set -e
 cd "$(dirname "$0")"
 git pull --ff-only
-npm ci --omit=dev --no-fund --no-audit
+npm ci --no-fund --no-audit          # incl. dev deps: esbuild + CodeMirror for the admin editor bundle
+npm run build:admin                  # src/admin/editor → src/admin/static/editor.js (not in git)
+npm prune --omit=dev --no-fund --no-audit
 npm run migrate
 # No YAML import since Phase 5: the database is the source of truth (admin panel). `npm run export` for snapshots.
 pm2 reload ecosystem.config.js --update-env

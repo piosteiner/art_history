@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-29
 
+### Admin: Markdown editor with live styling; gzip for the admin site
+- **What:** Markdown fields (biography, descriptions, notes incl. relationship notes) use a CodeMirror 6 editor
+  (`backend/src/admin/editor/editor.js`): **bold**/*italic*/headings/links styled in place with dimmed markers, toolbar
+  + Ctrl/⌘ B/I/K, and a Preview rendered by the server (`POST /preview` → same markdown-it + sanitize-html as the API).
+  The textarea stays in the form (hidden, kept in sync) — without JS it still works. Bundle built by esbuild at deploy:
+  `deploy.sh` now runs full `npm ci` → `npm run build:admin` → `npm prune --omit=dev`; the bundle is git-ignored.
+  View page: Markdown values use the full column width like other fields. nginx (admin server block):
+  `gzip_proxied any`, `gzip_vary on`, `gzip_types` for CSS/JS/JSON (editor bundle ~310 KB → ~100 KB on the wire).
+- **Why:** owner wanted to see formatting while typing and a consistent field width.
+- **Tested:** headless Chromium (Playwright, scratch dir): no JS errors, bold/italic/marker styles computed, Ctrl+B,
+  toolbar italic and Ctrl+K produced `**bold** and *italic* [link text](…)` in the textarea and in the DB after Save,
+  Preview shows sanitized HTML and hides the editor, light + dark screenshots.
+- **Revert:** redeploy the previous commit; remove the four gzip lines from the admin server block and reload nginx.
+
 ### Admin panel: login fixed ("Forbidden: cross-site request.") and moved to the root of its host
 - **What:** helmet's default `Referrer-Policy: no-referrer` made browsers send `Origin: null` on the admin's own form
   posts, so `checkOrigin` rejected every login (curl tests set `Origin` by hand and missed it). Now

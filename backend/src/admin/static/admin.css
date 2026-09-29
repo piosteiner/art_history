@@ -47,7 +47,8 @@ th { font-weight: 600; color: var(--muted); font-size: .85rem; }
 dl.fields { display: grid; grid-template-columns: minmax(120px, max-content) 1fr; gap: .35rem 1rem; }
 dl.fields dt { color: var(--muted); }
 dl.fields dd { margin: 0; overflow-wrap: anywhere; }
-.md { max-width: 70ch; }
+.md > :first-child { margin-top: 0; }
+.md > :last-child { margin-bottom: 0; }
 
 .form { display: grid; gap: .9rem; max-width: 760px; }
 .field label { display: block; font-weight: 600; margin-bottom: .2rem; }
@@ -72,3 +73,13 @@ button.link { background: none; border: none; padding: 0; color: var(--accent); 
 .diff td.new { color: var(--ok); }
 .tag { font-size: .8rem; border: 1px solid var(--line); border-radius: 999px; padding: 0 .5rem; color: var(--muted); white-space: nowrap; }
 .login { max-width: 340px; margin: 12vh auto; }
+
+/* Markdown editor (src/admin/editor): toolbar + CodeMirror with live styling + server-rendered preview */
+.md-editor { display: flex; flex-direction: column; }
+.md-toolbar { display: flex; flex-wrap: wrap; gap: .25rem; padding: .3rem; border: 1px solid var(--line); border-bottom: none;
+  border-radius: 6px 6px 0 0; background: var(--code); }
+.md-toolbar .md-spacer { flex: 1; }
+button.md-tool { background: transparent; color: var(--fg); border: 1px solid transparent; padding: .1rem .55rem; font-size: .9rem; }
+button.md-tool:hover { border-color: var(--line); background: var(--panel); }
+.md-toolbar.previewing button.md-tool:not(:last-child) { visibility: hidden; }
+.md-preview { border: 1px solid var(--line); border-radius: 0 0 6px 6px; padding: .5rem .6rem; background: var(--panel); overflow-wrap: anywhere; }

@@ -33,6 +33,7 @@ function layout({ title, user, body, flash, nav = true }) {
 <meta name="robots" content="noindex">
 <title>${title} · Art history admin</title>
 <link rel="stylesheet" href="/static/admin.css">
+<script src="/static/editor.js" defer></script>
 </head>
 <body>
 ${nav && user ? html`<header class="top">
