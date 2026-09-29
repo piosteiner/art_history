@@ -2,7 +2,7 @@
   "name": "arthistory-api",
   "version": "0.1.0",
   "private": true,
-  "description": "Art history API (/v1) and admin panel (/admin)",
+  "description": "Art history API (/v1) and admin panel",
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",

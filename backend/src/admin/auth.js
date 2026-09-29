@@ -1,8 +1,8 @@
 // Admin authentication: scrypt password hashes (Node built-in, no dependency), sessions in Postgres.
 //
 // Cookie: a random 256-bit token. The database stores only its SHA-256 (admin_sessions.token_hash).
-// Cross-site requests: the cookie is SameSite=Strict, and every non-GET request must carry an Origin header
-// of the admin host (checkOrigin). nginx basic auth sits in front of all of this as a second lock.
+// Cross-site requests: the cookie is SameSite=Strict, and every non-GET request must come from the admin host
+// itself — its Origin header, or Sec-Fetch-Site: same-origin if the browser sent no usable Origin (checkOrigin). nginx basic auth sits in front of all of this as a second lock.
 const crypto = require('crypto');
 const { promisify } = require('util');
 const config = require('../config');
@@ -112,8 +112,12 @@ async function loadUser(req, res, next) {
 function checkOrigin(req, res, next) {
   if (req.method === 'GET' || req.method === 'HEAD') return next();
   const expected = config.env === 'production' ? `https://${config.adminHost}` : `${req.protocol}://${req.get('host')}`;
-  if (req.get('origin') !== expected) return res.status(403).type('text').send('Forbidden: cross-site request.');
-  next();
+  const origin = req.get('origin');
+  if (origin === expected) return next();
+  // Fallback: some privacy settings/extensions send "Origin: null" or none. Sec-Fetch-* headers can't be set by page
+  // scripts, and a real cross-site request says cross-site, so "same-origin" here is trustworthy.
+  if ((!origin || origin === 'null') && req.get('sec-fetch-site') === 'same-origin') return next();
+  res.status(403).type('text').send('Forbidden: cross-site request.');
 }
 
 module.exports = { hashPassword, verifyPassword, login, logout, loadUser, checkOrigin };

@@ -117,7 +117,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version }) {
       <div class="hint">${HINTS.slug}</div></div>
     ${Object.entries(t.fields).map(([key, kind]) => fieldInput(key, kind, f, ctx))}
     <div class="actions"><button>${isNew ? 'Create' : 'Save'}</button>
-      <a class="button secondary" href="${isNew ? `/admin/${t.folder}` : `/admin/${t.folder}/${slug}`}">Cancel</a></div>
+      <a class="button secondary" href="${isNew ? `/${t.folder}` : `/${t.folder}/${slug}`}">Cancel</a></div>
   </form>`;
 }
 

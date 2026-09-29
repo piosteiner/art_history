@@ -17,13 +17,15 @@ const dbUrl = (role, pw) => {
   return url.toString();
 };
 
+const env = process.env.NODE_ENV || 'development';
+
 module.exports = {
-  env: process.env.NODE_ENV || 'development',
+  env,
   host: process.env.HOST || '127.0.0.1',
   port: Number(process.env.PORT) || 3004,
   corsOrigin: process.env.CORS_ORIGIN || 'https://arthistory.piogino.ch',
   apiHost: process.env.API_HOST || 'api.arthistory.piogino.ch',
-  adminHost: process.env.ADMIN_HOST || 'admin.arthistory.piogino.ch',
+  adminHost: process.env.ADMIN_HOST || (env === 'production' ? 'admin.arthistory.piogino.ch' : 'admin.localhost'),
   db: {
     name: process.env.DB_NAME || 'arthistory',
     ownerUrl: dbUrl('owner', process.env.DB_OWNER_PASSWORD),

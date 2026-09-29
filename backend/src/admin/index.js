@@ -1,10 +1,10 @@
-// Admin panel (admin.arthistory.piogino.ch/admin/…): server-rendered pages, forms generated from src/content.js.
+// Admin panel (admin.arthistory.piogino.ch/…): server-rendered pages, forms generated from src/content.js.
 // Writes go through arthistory_admin in a transaction tagged with the user, so the audit_log trigger records who.
 //
-//   /admin/                          dashboard: counts + recent changes
-//   /admin/<plural>                  list + search            /admin/<plural>/new        create
-//   /admin/<plural>/<slug>           view + relationships     /admin/<plural>/<slug>/edit · /delete · /history
-//   /admin/relationships/<id>/edit   edit one relationship    /admin/history             all changes
+//   /                          dashboard: counts + recent changes
+//   /<plural>                  list + search            /<plural>/new        create
+//   /<plural>/<slug>           view + relationships     /<plural>/<slug>/edit · /delete · /history
+//   /relationships/<id>/edit   edit one relationship    /history             all changes
 const express = require('express');
 const path = require('path');
 const { adminPool } = require('../db');
@@ -80,29 +80,29 @@ function friendly(err) {
 // ---------------------------------------------------------------------------------------------------------------
 const loginPage = (error) => html`<div class="login"><h1>Art history admin</h1>
   ${error ? html`<p class="flash error">${error}</p>` : ''}
-  <form method="post" action="/admin/login" class="form">
+  <form method="post" action="/login" class="form">
     <div class="field"><label for="u">Username</label><input id="u" name="username" autocomplete="username" required autofocus></div>
     <div class="field"><label for="p">Password</label><input id="p" name="password" type="password" autocomplete="current-password" required></div>
     <div class="actions"><button>Log in</button></div>
   </form></div>`;
 
-router.get('/login', (req, res) => (req.user ? res.redirect('/admin/') : send(req, res, { title: 'Log in', body: loginPage() })));
+router.get('/login', (req, res) => (req.user ? res.redirect('/') : send(req, res, { title: 'Log in', body: loginPage() })));
 
 router.post('/login', async (req, res) => {
   const result = await login(req, res, req.body.username, req.body.password);
   if (result.error) return send(req, res, { title: 'Log in', body: loginPage(result.error), status: 401 });
-  res.redirect(303, '/admin/');
+  res.redirect(303, '/');
 });
 
 router.post('/logout', async (req, res) => {
   await logout(req, res);
-  res.redirect(303, '/admin/login');
+  res.redirect(303, '/login');
 });
 
 // Everything below needs a logged-in user.
 router.use((req, res, next) => {
   if (req.user) return next();
-  if (req.method === 'GET') return res.redirect('/admin/login');
+  if (req.method === 'GET') return res.redirect('/login');
   res.status(401).type('text').send('Not logged in.');
 });
 
@@ -156,7 +156,7 @@ function historyTable(rows, { showWhat = true } = {}) {
     return html`<tr>
       <td><span title="${h.changed_at.toISOString()}">${h.changed_at.toISOString().slice(0, 16).replace('T', ' ')}</span></td>
       <td>${h.username || html`<span class="muted">—</span>`} <span class="tag">${h.source}</span></td>
-      ${showWhat ? html`<td><span class="tag">${h.action}</span> ${h.link ? html`<a href="/admin/${h.link}">${h.what}</a>` : h.what}</td>` : ''}
+      ${showWhat ? html`<td><span class="tag">${h.action}</span> ${h.link ? html`<a href="/${h.link}">${h.what}</a>` : h.what}</td>` : ''}
       <td>${h.action === 'update' ? html`<table>${entries.map(([k, [o, n]]) => html`<tr><th>${k}</th><td class="old">${short(o)}</td><td class="new">${short(n)}</td></tr>`)}</table>`
         : html`<span class="tag">${h.action}</span> <span class="muted">${entries.map(([k, [o, n]]) => `${k}: ${short(o ?? n)}`).join(' · ')}</span>`}</td>
     </tr>`;
@@ -180,17 +180,17 @@ router.get('/', async (req, res) => {
   send(req, res, {
     title: 'Dashboard',
     body: html`<h1>Dashboard</h1>
-      <div class="cards">${TYPES.map((t) => html`<a class="card" href="/admin/${t.folder}"><b>${counts[t.type] || 0}</b>${humanize(t.folder)}</a>`)}
+      <div class="cards">${TYPES.map((t) => html`<a class="card" href="/${t.folder}"><b>${counts[t.type] || 0}</b>${humanize(t.folder)}</a>`)}
         <div class="card"><b>${rels}</b>Relationships</div></div>
       <h2>Recent changes</h2>${historyTable(recent.rows)}
-      <p><a href="/admin/history">All changes →</a></p>`,
+      <p><a href="/history">All changes →</a></p>`,
   });
 });
 
 router.get('/history', async (req, res) => {
   const page = pageParam(req);
   const h = await history(adminPool, 'true', [], { offset: (page - 1) * PAGE });
-  send(req, res, { title: 'History', body: html`<h1>History</h1>${historyTable(h.rows)}${pager('/admin/history', page, h.more)}` });
+  send(req, res, { title: 'History', body: html`<h1>History</h1>${historyTable(h.rows)}${pager('/history', page, h.more)}` });
 });
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -263,8 +263,8 @@ router.get('/relationships/:id/edit', async (req, res) => {
   send(req, res, {
     title: 'Edit relationship',
     body: html`<h1>Edit relationship</h1><p><a href="${found.subjectUrl}">← ${found.subject.name}</a></p>
-      ${relForm({ action: `/admin/relationships/${found.id}`, types, entities, rel: found.rel, submit: 'Save' })}
-      <form method="post" action="/admin/relationships/${found.id}/delete" class="actions" style="margin-top:1.5rem">
+      ${relForm({ action: `/relationships/${found.id}`, types, entities, rel: found.rel, submit: 'Save' })}
+      <form method="post" action="/relationships/${found.id}/delete" class="actions" style="margin-top:1.5rem">
         <button class="danger">Delete this relationship</button></form>`,
   });
 });
@@ -278,7 +278,7 @@ async function relationshipById(db, id) {
   const x = rows[0];
   const rel = (await readRelationships(db, x.type, x.subject_id)).find((r) => r.id === x.id).rel;
   return { id: x.id, metadata: x.metadata, rel, subject: { type: x.type, id: x.subject_id, name: x.name },
-    subjectUrl: `/admin/${BY_TYPE[x.type].folder}/${x.slug}` };
+    subjectUrl: `/${BY_TYPE[x.type].folder}/${x.slug}` };
 }
 
 router.post('/relationships/:id', async (req, res) => {
@@ -296,7 +296,7 @@ router.post('/relationships/:id', async (req, res) => {
     return send(req, res, {
       title: 'Edit relationship', status: 422, flash: { kind: 'error', text: friendly(err) },
       body: html`<h1>Edit relationship</h1><p><a href="${found.subjectUrl}">← ${found.subject.name}</a></p>
-        ${relForm({ action: `/admin/relationships/${found.id}`, types, entities, rel: { ...req.body, sources: String(req.body.sources || '').split('\n') }, submit: 'Save' })}`,
+        ${relForm({ action: `/relationships/${found.id}`, types, entities, rel: { ...req.body, sources: String(req.body.sources || '').split('\n') }, submit: 'Save' })}`,
     });
   }
   res.redirect(303, `${found.subjectUrl}?done=rel-saved#relationships`);
@@ -313,7 +313,7 @@ router.post('/relationships/:id/delete', async (req, res) => {
 // Entities
 // ---------------------------------------------------------------------------------------------------------------
 function notFoundPage(req, res) {
-  send(req, res, { title: 'Not found', status: 404, body: html`<h1>Not found</h1><p><a href="/admin/">Dashboard</a></p>` });
+  send(req, res, { title: 'Not found', status: 404, body: html`<h1>Not found</h1><p><a href="/">Dashboard</a></p>` });
 }
 
 router.param('plural', (req, res, next, plural) => {
@@ -367,12 +367,12 @@ router.get('/:plural', async (req, res) => {
     title: humanize(t.folder),
     body: html`<h1>${humanize(t.folder)}</h1>
       <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name or slug" class="grow" type="search">
-        <button class="secondary">Search</button><a class="button" href="/admin/${t.folder}/new">+ New ${t.type}</a></form>
+        <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a></form>
       ${rows.length ? html`<div class="table-wrap"><table><thead><tr><th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
-        ${rows.slice(0, PAGE).map((r) => html`<tr><td><a href="/admin/${t.folder}/${r.slug}">${r.name}</a></td><td class="muted">${r.slug}</td>
+        ${rows.slice(0, PAGE).map((r) => html`<tr><td><a href="/${t.folder}/${r.slug}">${r.name}</a></td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
-      ${pager(`/admin/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}`,
+      ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}`,
   });
 });
 
@@ -380,7 +380,7 @@ router.get('/:plural/new', async (req, res) => {
   const { t } = req;
   send(req, res, {
     title: `New ${t.type}`,
-    body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: '', f: docToForm({}, t.fields), ctx: await formContext(t), action: `/admin/${t.folder}`, errors: [], isNew: true })}`,
+    body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: '', f: docToForm({}, t.fields), ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true })}`,
   });
 });
 
@@ -446,10 +446,10 @@ router.post('/:plural', async (req, res) => {
     ctx.errorKeys = errorKeysOf(result.errors);
     return send(req, res, {
       title: `New ${t.type}`, status: 422,
-      body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx, action: `/admin/${t.folder}`, errors: result.errors, isNew: true })}`,
+      body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx, action: `/${t.folder}`, errors: result.errors, isNew: true })}`,
     });
   }
-  res.redirect(303, `/admin/${t.folder}/${result.slug}?done=created`);
+  res.redirect(303, `/${t.folder}/${result.slug}?done=created`);
 });
 
 // Display of one field's value on the view page.
@@ -465,8 +465,8 @@ function showValue(t, key, kind, doc) {
   if (kind === 'text[]') return v.join(' · ');
   if (kind === 'point') return html`${v[1]}, ${v[0]} <a href="https://www.openstreetmap.org/?mlat=${v[1]}&mlon=${v[0]}#map=12/${v[1]}/${v[0]}" rel="noopener" target="_blank">map ↗</a>`;
   if (kind === 'json' || kind === 'area') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
-  if (kind === 'parent') return html`<a href="/admin/${t.folder}/${v}">${v}</a>`;
-  if (kind.startsWith('ref:')) return html`<a href="/admin/${BY_TYPE[kind.slice(4)].folder}/${v}">${v}</a>`;
+  if (kind === 'parent') return html`<a href="/${t.folder}/${v}">${v}</a>`;
+  if (kind.startsWith('ref:')) return html`<a href="/${BY_TYPE[kind.slice(4)].folder}/${v}">${v}</a>`;
   if (/_url$/.test(key)) return html`<a href="${v}" rel="noopener" target="_blank">${v}</a>`;
   return v;
 }
@@ -489,11 +489,11 @@ router.get('/:plural/:slug', async (req, res) => {
   const name = e.doc[t.name];
   send(req, res, {
     title: name,
-    body: html`<p class="muted"><a href="/admin/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}</p>
+    body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}</p>
       <div class="bar"><h1 class="grow">${name}</h1>
-        <a class="button" href="/admin/${t.folder}/${e.slug}/edit">Edit</a>
-        <a class="button secondary" href="/admin/${t.folder}/${e.slug}/history">History</a>
-        <a class="button secondary" href="/admin/${t.folder}/${e.slug}/delete">Delete</a></div>
+        <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
+        <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
+        <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name).map(([key, kind]) => {
         const shown = showValue(t, key, kind, e.doc);
         return shown === null ? '' : html`<dt>${humanize(key)}</dt><dd>${shown}</dd>`;
@@ -502,17 +502,17 @@ router.get('/:plural/:slug', async (req, res) => {
       ${outgoing.length ? html`<div class="table-wrap"><table><tbody>${outgoing.map(({ id, to_name: toName, rel }) => {
         const [type, slug] = rel.to.split('/');
         return html`<tr><td>${labels[rel.type] || rel.type}</td>
-          <td><a href="/admin/${BY_TYPE[type].folder}/${slug}">${toName}</a> <span class="tag">${type}</span></td>
+          <td><a href="/${BY_TYPE[type].folder}/${slug}">${toName}</a> <span class="tag">${type}</span></td>
           <td>${rel.period_label || (rel.period ? parseFuzzyDate(String(rel.period), { openEnd: true }).label : '')}</td>
           <td class="muted">${[rel.label, rel.certainty].filter(Boolean).join(' · ')}</td>
-          <td><a href="/admin/relationships/${id}/edit">edit</a></td></tr>`;
+          <td><a href="/relationships/${id}/edit">edit</a></td></tr>`;
       })}</tbody></table></div>` : html`<p class="muted">None yet.</p>`}
       ${incoming.rows.length ? html`<h3>Linked from</h3><div class="table-wrap"><table><tbody>${incoming.rows.map((r) => html`<tr>
-          <td>${r.inverse_label}</td><td><a href="/admin/${BY_TYPE[r.type].folder}/${r.slug}">${r.name}</a> <span class="tag">${r.type}</span></td>
+          <td>${r.inverse_label}</td><td><a href="/${BY_TYPE[r.type].folder}/${r.slug}">${r.name}</a> <span class="tag">${r.type}</span></td>
           <td>${r.period_label || ''}</td><td class="muted">${r.label || ''}</td>
-          <td><a href="/admin/relationships/${r.id}/edit">edit</a></td></tr>`)}</tbody></table></div>` : ''}
+          <td><a href="/relationships/${r.id}/edit">edit</a></td></tr>`)}</tbody></table></div>` : ''}
       <details><summary><b>+ Add relationship</b></summary>
-        ${types.length ? relForm({ action: `/admin/${t.folder}/${e.slug}/relationships`, types, entities, submit: 'Add' })
+        ${types.length ? relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, submit: 'Add' })
           : html`<p class="muted">No relationship types start from ${an(t.type)}; link to it from the other entity.</p>`}
       </details>`,
   });
@@ -532,11 +532,11 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
     const [types, entities] = await Promise.all([relationshipTypes(adminPool, t.type), allEntities(adminPool)]);
     return send(req, res, {
       title: 'Add relationship', status: 422, flash: { kind: 'error', text: friendly(err) },
-      body: html`<h1>Add relationship</h1><p><a href="/admin/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p>
-        ${relForm({ action: `/admin/${t.folder}/${e.slug}/relationships`, types, entities, rel: { ...req.body, sources: String(req.body.sources || '').split('\n') }, submit: 'Add' })}`,
+      body: html`<h1>Add relationship</h1><p><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p>
+        ${relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, rel: { ...req.body, sources: String(req.body.sources || '').split('\n') }, submit: 'Add' })}`,
     });
   }
-  res.redirect(303, `/admin/${t.folder}/${e.slug}?done=rel-added#relationships`);
+  res.redirect(303, `/${t.folder}/${e.slug}?done=rel-added#relationships`);
 });
 
 router.get('/:plural/:slug/edit', async (req, res) => {
@@ -544,7 +544,7 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   const e = await findEntity(t, req.params.slug);
   if (!e) return notFoundPage(req, res);
   const form = entityForm({ t, slug: e.slug, f: docToForm(e.doc, t.fields), ctx: await formContext(t),
-    action: `/admin/${t.folder}/${e.slug}`, errors: [], version: e.version });
+    action: `/${t.folder}/${e.slug}`, errors: [], version: e.version });
   send(req, res, { title: `Edit ${e.doc[t.name]}`, body: html`<h1>Edit ${e.doc[t.name]}</h1>${form}` });
 });
 
@@ -557,10 +557,10 @@ router.post('/:plural/:slug', async (req, res) => {
     const ctx = await formContext(t);
     ctx.errorKeys = errorKeysOf(result.errors);
     const form = entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx,
-      action: `/admin/${t.folder}/${e.slug}`, errors: result.errors, version: req.body.version });
+      action: `/${t.folder}/${e.slug}`, errors: result.errors, version: req.body.version });
     return send(req, res, { title: `Edit ${e.doc[t.name]}`, status: 422, body: html`<h1>Edit ${e.doc[t.name]}</h1>${form}` });
   }
-  res.redirect(303, `/admin/${t.folder}/${result.slug}?done=saved`);
+  res.redirect(303, `/${t.folder}/${result.slug}?done=saved`);
 });
 
 router.get('/:plural/:slug/delete', async (req, res) => {
@@ -582,9 +582,9 @@ router.get('/:plural/:slug/delete', async (req, res) => {
         <div class="table-wrap"><table><tbody>${rows.map((r) => html`<tr><td>${r.subject}</td><td>${r.label}</td><td>${r.object}</td>
           <td class="muted">${r.period_label || ''}</td></tr>`)}</tbody></table></div>` : html`<p>It has no relationships.</p>`}
       <p class="muted">Everything stays in the history, but there is no one-click undo yet.</p>
-      <form method="post" action="/admin/${t.folder}/${e.slug}/delete" class="actions">
+      <form method="post" action="/${t.folder}/${e.slug}/delete" class="actions">
         <button class="danger">Delete${rows.length ? ` with ${rows.length} relationship${rows.length === 1 ? '' : 's'}` : ''}</button>
-        <a class="button secondary" href="/admin/${t.folder}/${e.slug}">Cancel</a></form>`,
+        <a class="button secondary" href="/${t.folder}/${e.slug}">Cancel</a></form>`,
   });
 });
 
@@ -598,10 +598,10 @@ router.post('/:plural/:slug/delete', async (req, res) => {
     return send(req, res, {
       title: `Delete ${e.doc[t.name]}`, status: 409, flash: { kind: 'error', text: friendly(err) },
       body: html`<h1>Can't delete ${e.doc[t.name]}</h1><p>Other records still point to it (see above). Change or delete those first.</p>
-        <p><a href="/admin/${t.folder}/${e.slug}">← back</a></p>`,
+        <p><a href="/${t.folder}/${e.slug}">← back</a></p>`,
     });
   }
-  res.redirect(303, `/admin/${t.folder}?done=deleted`);
+  res.redirect(303, `/${t.folder}?done=deleted`);
 });
 
 router.get('/:plural/:slug/history', async (req, res) => {
@@ -614,16 +614,18 @@ router.get('/:plural/:slug/history', async (req, res) => {
   [t.table, e.id, t.type], { offset: (page - 1) * PAGE });
   send(req, res, {
     title: `History of ${e.doc[t.name]}`,
-    body: html`<p class="muted"><a href="/admin/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p><h1>History</h1>
-      ${historyTable(h.rows)}${pager(`/admin/${t.folder}/${e.slug}/history`, page, h.more)}`,
+    body: html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p><h1>History</h1>
+      ${historyTable(h.rows)}${pager(`/${t.folder}/${e.slug}/history`, page, h.more)}`,
   });
 });
+
+router.use((req, res) => notFoundPage(req, res));
 
 // Errors inside the admin panel → an HTML page, not the API's JSON.
 router.use((err, req, res, next) => {
   console.error(err);
   res.status(500).type('html').send(String(layout({ title: 'Error', user: req.user,
-    body: html`<h1>Something went wrong</h1><p>The error was logged. <a href="/admin/">Back to the dashboard</a></p>` })));
+    body: html`<h1>Something went wrong</h1><p>The error was logged. <a href="/">Back to the dashboard</a></p>` })));
 });
 
 module.exports = router;

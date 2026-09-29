@@ -15,7 +15,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 
 ## Layout
 - `backend/` — Express 5 app, pm2 `arthistory-api`, `127.0.0.1:3004`; nginx → `api.arthistory.piogino.ch` (`/v1/…`) and
-  `admin.arthistory.piogino.ch` (`/admin/…`). Brief/plan: see `backend/README.md`, data model: `backend/docs/data-model.md`.
+  `admin.arthistory.piogino.ch` (panel at the root; old `/admin/…` URLs redirect). Brief/plan: see `backend/README.md`, data model: `backend/docs/data-model.md`.
 - `server-docs/` — server inventory, changelog, config copies.
 - `health.html` — frontend CORS round-trip test page (served by GitHub Pages).
 
@@ -24,7 +24,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - Content: the **database is the source of truth** (admin panel, audit_log history). `npm run export` → `content/` YAML
   snapshot to commit; `npm run import` only for bulk loads (export first — import overwrites). Deploys don't import.
 - Admin panel: `backend/src/admin/`; forms come from `src/content.js` (shared with import/export). Dev login:
-  `npm run admin:user:dev -- <name>`, then http://localhost:3005/admin/.
+  `npm run admin:user:dev -- <name>`, then http://admin.localhost:3005/ (host-based routing).
 - Schema: new `backend/db/migrations/NNN_*.sql` (never edit applied ones) → `npm run migrate:dev` → smoke test
   `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql` → commit → `backend/deploy.sh`.
 - Deploy: `backend/deploy.sh` (pull, npm ci, migrate, pm2 reload, health probe).

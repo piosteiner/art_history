@@ -32,17 +32,17 @@ function layout({ title, user, body, flash, nav = true }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>${title} · Art history admin</title>
-<link rel="stylesheet" href="/admin/static/admin.css">
+<link rel="stylesheet" href="/static/admin.css">
 </head>
 <body>
 ${nav && user ? html`<header class="top">
-  <a class="brand" href="/admin/">Art history admin</a>
+  <a class="brand" href="/">Art history admin</a>
   <nav>
-    <a href="/admin/artists">Artists</a><a href="/admin/artworks">Artworks</a><a href="/admin/places">Places</a>
-    <a href="/admin/movements">Movements</a><a href="/admin/institutions">Institutions</a><a href="/admin/patrons">Patrons</a>
-    <a href="/admin/history">History</a>
+    <a href="/artists">Artists</a><a href="/artworks">Artworks</a><a href="/places">Places</a>
+    <a href="/movements">Movements</a><a href="/institutions">Institutions</a><a href="/patrons">Patrons</a>
+    <a href="/history">History</a>
   </nav>
-  <form method="post" action="/admin/logout" class="inline"><span class="muted">${user.username}</span> <button class="link">Log out</button></form>
+  <form method="post" action="/logout" class="inline"><span class="muted">${user.username}</span> <button class="link">Log out</button></form>
 </header>` : ''}
 <main>
 ${flash ? html`<p class="flash ${flash.kind}">${flash.text}</p>` : ''}

@@ -2,6 +2,21 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-09-29
+
+### Admin panel: login fixed ("Forbidden: cross-site request.") and moved to the root of its host
+- **What:** helmet's default `Referrer-Policy: no-referrer` made browsers send `Origin: null` on the admin's own form
+  posts, so `checkOrigin` rejected every login (curl tests set `Origin` by hand and missed it). Now
+  `Referrer-Policy: same-origin`, and `checkOrigin` also accepts `Sec-Fetch-Site: same-origin` when Origin is null/absent.
+  The panel is now served at https://admin.arthistory.piogino.ch/ instead of `/admin/`; GET `/admin/…` → 301 to `/…`.
+  Routing is by hostname (dev: `ADMIN_HOST` defaults to `admin.localhost`, i.e. http://admin.localhost:3005/). Unknown
+  admin paths get the HTML 404 page. No nginx or DB change; session cookies stay valid (Path=/).
+- **Why:** owner couldn't log in; the `/admin` prefix was redundant on a dedicated admin hostname (it only existed so
+  dev on plain localhost could tell admin from API by path).
+- **Tested on dev:** Origin exact / null + same-origin → accepted; null without Sec-Fetch-Site, cross-site → 403;
+  full login → dashboard → list → logout with a temporary user (deleted afterwards); old URLs redirect; /v1 unaffected.
+- **Revert:** redeploy the previous commit (`ee5f03b`) with `backend/deploy.sh`.
+
 ## 2026-09-28
 
 ### Admin panel live (Phase 5) — the database is now the source of truth
