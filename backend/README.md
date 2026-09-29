@@ -28,7 +28,7 @@ definitions the import/export use, so a form save and a YAML import validate ide
   `SameSite=Strict`, `Secure`; non-GET requests must carry the admin site's `Origin` (or, if the browser sends none,
   `Sec-Fetch-Site: same-origin`); `Referrer-Policy: same-origin` so browsers do send it. Old `/admin/…` URLs 301 to `/…`.
   Dev: http://admin.localhost:3005/ (routing is by hostname; browsers resolve `*.localhost` to 127.0.0.1). 10 failed logins / 15 min per IP.
-  nginx basic auth in front (`/etc/nginx/arthistory-admin.htpasswd`).
+  Every failed login is a 401 on `POST /login`; fail2ban (jail `arthistory-admin`) bans the IP for 1 h after 5 in 10 min.
 - Users: `npm run admin:user -- <name>` (asks for the password; also resets it and logs out that user's sessions).
 - Every write runs in a transaction tagged with the user → the `audit_log` trigger records who changed what
   (History pages). Edits use optimistic locking (the form carries `updated_at`; a concurrent save is refused).

@@ -37,7 +37,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - ✅ Phase 4 backups: nightly `scripts/backup.sh` (systemd timer) — dump, restore-verify, gpg-encrypted push to private repo
   `art_history-backups` when data changed (server-docs/README.md → Backups). Round trip from GitHub tested 2026-09-28.
 - ✅ Phase 5 admin panel (2026-09-28): migration 006 (admin_users, admin_sessions, audit_log trigger), scrypt + Postgres
-  sessions + nginx basic auth, CRUD + relationships + history pages, `npm run export`. Ideas next: one-click undo from
+  sessions (single login; fail2ban jail `arthistory-admin` since 2026-09-29), CRUD + relationships + history pages, `npm run export`. Ideas next: one-click undo from
   audit_log, map picker for coordinates, image handling, nightly auto-export commit.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.

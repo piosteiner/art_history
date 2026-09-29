@@ -2,7 +2,7 @@
 //
 // Cookie: a random 256-bit token. The database stores only its SHA-256 (admin_sessions.token_hash).
 // Cross-site requests: the cookie is SameSite=Strict, and every non-GET request must come from the admin host
-// itself — its Origin header, or Sec-Fetch-Site: same-origin if the browser sent no usable Origin (checkOrigin). nginx basic auth sits in front of all of this as a second lock.
+// itself — its Origin header, or Sec-Fetch-Site: same-origin if the browser sent no usable Origin (checkOrigin). Repeated failed logins (401 on POST /login in the nginx log) are banned at the firewall by fail2ban.
 const crypto = require('crypto');
 const { promisify } = require('util');
 const config = require('../config');
@@ -48,7 +48,7 @@ function setSessionCookie(res, token, maxAgeSeconds) {
   res.setHeader('Set-Cookie', attrs.join('; '));
 }
 
-// Brute-force brake per IP (in memory; one process). nginx basic auth is the first wall anyway.
+// Brute-force brake per IP (in memory; one process). fail2ban blocks the IP at the firewall after 5 failures anyway.
 const attempts = new Map();
 const WINDOW_MS = 15 * 60 * 1000;
 const MAX_ATTEMPTS = 10;

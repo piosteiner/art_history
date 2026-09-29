@@ -1,0 +1,18 @@
+# Art history (see server-docs/CHANGELOG.md). .local files are read after defaults-debian.conf, so they win.
+
+# 5 failed admin logins within 10 minutes → that IP is blocked on ports 80/443 for 1 hour.
+# (The app additionally refuses logins after 10 failures per IP per 15 min.)
+[arthistory-admin]
+enabled  = true
+port     = http,https
+filter   = arthistory-admin
+logpath  = /var/log/nginx/arthistory-admin.access.log
+maxretry = 5
+findtime = 10m
+bantime  = 1h
+ignoreip = 127.0.0.1/8 ::1 83.228.207.199
+
+# Ubuntu enables an SSH jail by default. Off for now: not part of this change (key-only SSH);
+# enable deliberately later if wanted.
+[sshd]
+enabled = false

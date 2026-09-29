@@ -17,6 +17,22 @@ Format: date — what — why — how to revert.
   full login → dashboard → list → logout with a temporary user (deleted afterwards); old URLs redirect; /v1 unaffected.
 - **Revert:** redeploy the previous commit (`ee5f03b`) with `backend/deploy.sh`.
 
+## 2026-09-29
+
+### Admin: single login — nginx basic auth replaced by fail2ban
+- **What:** removed `auth_basic` from the admin server block in `/etc/nginx/sites-available/arthistory` and deleted
+  `/etc/nginx/arthistory-admin.htpasswd` (+ its entries in `~/.config/arthistory/admin-credentials.env`). Installed
+  fail2ban 0.11.2 (apt) with one jail, `arthistory-admin`: filter matches `POST /login` answered with 401 in the admin
+  access log; 5 in 10 min → REJECT on ports 80/443 for 1 h (iptables chain `f2b-arthistory-admin`); server IP exempt.
+  Ubuntu's default `sshd` jail explicitly disabled in `jail.d/arthistory.local` (out of scope; key-only SSH).
+  Copies: `config/fail2ban/`, `config/nginx/arthistory`.
+- **Why:** owner: the browser's basic-auth dialog was clumsy (no logout, poor password-manager support, two passwords).
+  fail2ban keeps the "stop brute force before it matters" role invisibly; the app's own per-IP limit stays as well.
+- **Tested:** filter against sample lines (matches only 401 POSTs to /login), wrong login → 401 logged, manual ban of
+  203.0.113.9 created the REJECT rule, unban removed it.
+- **Revert:** re-add the two `auth_basic` lines (see the 2026-09-28 entry), recreate the htpasswd file
+  (`openssl passwd -6`), `sudo systemctl reload nginx`; `sudo systemctl disable --now fail2ban` or `sudo apt purge fail2ban`.
+
 ## 2026-09-28
 
 ### Admin panel live (Phase 5) — the database is now the source of truth

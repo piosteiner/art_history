@@ -19,8 +19,13 @@ Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest 
 Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service).
 Databases (both localhost only): MySQL 8 (:3306, calorie-tracker) · PostgreSQL 18 + PostGIS 3.6 (:5432, art history; tuning in `config/postgresql/`).
 
-## Firewall (ufw)
+## Firewall (ufw) + fail2ban
 Only 22 (SSH), 80, 443 are open. App ports are reachable only via nginx.
+fail2ban 0.11 (since 2026-09-29), one jail: `arthistory-admin` — 5 failed admin logins (401 on `POST /login` in
+`/var/log/nginx/arthistory-admin.access.log`) within 10 min → IP rejected on 80/443 for 1 h. The server's own IP is exempt.
+Ubuntu's default `sshd` jail is **off** (key-only SSH). Config: `/etc/fail2ban/jail.d/arthistory.local`,
+`/etc/fail2ban/filter.d/arthistory-admin.conf` (copies in `config/fail2ban/`).
+Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-client set arthistory-admin unbanip <ip>`.
 
 ## DNS (managed at Infomaniak)
 | Record | Type | Target |
@@ -31,8 +36,7 @@ Only 22 (SSH), 80, 443 are open. App ports are reachable only via nginx.
 
 ## Secrets
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
-Admin panel: nginx basic auth `/etc/nginx/arthistory-admin.htpasswd` (root:www-data 640, SHA-512 crypt) + app users in
-the `admin_users` table (scrypt). Both passwords live in the owner's password manager only.
+Admin panel: one login — app users in the `admin_users` table (scrypt); the password lives in the owner's password manager only.
 
 ## Backups (art history database)
 Nightly at ~03:30 UTC, systemd `arthistory-backup.timer` → `scripts/backup.sh` (units: `config/systemd/`):
