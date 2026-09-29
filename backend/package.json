@@ -16,7 +16,7 @@
     "export:dev": "DB_NAME=arthistory_dev node scripts/export.js",
     "admin:user": "node scripts/admin-user.js",
     "admin:user:dev": "DB_NAME=arthistory_dev node scripts/admin-user.js",
-    "build:admin": "esbuild src/admin/editor/editor.js --bundle --minify --format=iife --target=es2020 --outfile=src/admin/static/editor.js"
+    "build:admin": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --minify --format=iife --target=es2020 --outdir=src/admin/static --loader:.png=dataurl --loader:.svg=dataurl"
   },
   "engines": {
     "node": ">=22"
@@ -37,7 +37,9 @@
     "@codemirror/language": "^6.12.4",
     "@codemirror/state": "^6.7.6",
     "@codemirror/view": "^6.43.13",
+    "@geoman-io/leaflet-geoman-free": "^2.20.2",
     "@lezer/highlight": "^1.2.5",
-    "esbuild": "^0.28.2"
+    "esbuild": "^0.28.2",
+    "leaflet": "^1.9.4"
   }
 }

@@ -8,6 +8,8 @@
 # runtime / generated
 node_modules/
 backend/src/admin/static/editor.js
+backend/src/admin/static/map.js
+backend/src/admin/static/map.css
 logs/
 *.log
 uploads/

@@ -177,6 +177,36 @@ router.post('/preview', (req, res) => {
   res.type('html').send(renderMarkdown(String(req.body.text || '').slice(0, 100000)) || '');
 });
 
+// Place search for the map picker (src/admin/editor/map.js), proxied to OpenStreetMap's Nominatim so the browser
+// needs no extra CSP exception and we can send the identifying User-Agent its usage policy asks for
+// (https://operations.osmfoundation.org/policies/nominatim/: max 1 request/s, searches only on explicit submit).
+// polygon_geojson + polygon_threshold: the boundary of regions/cities, simplified to ~500 m, as an area suggestion.
+let lastGeocode = 0;
+router.get('/geocode', async (req, res) => {
+  const q = String(req.query.q || '').trim().slice(0, 200);
+  if (!q) return res.json([]);
+  const wait = lastGeocode + 1100 - Date.now();
+  if (wait > 0) await new Promise((r) => setTimeout(r, wait));
+  lastGeocode = Date.now();
+  const url = new URL('https://nominatim.openstreetmap.org/search');
+  url.search = new URLSearchParams({ q, format: 'jsonv2', limit: '5', polygon_geojson: '1', polygon_threshold: '0.005',
+    'accept-language': 'en' });
+  try {
+    const r = await fetch(url, { headers: { 'User-Agent': 'arthistory-admin/1.0 (+https://arthistory.piogino.ch)' },
+      signal: AbortSignal.timeout(8000) });
+    if (!r.ok) throw new Error(`Nominatim ${r.status}`);
+    const hits = await r.json();
+    res.json(hits.map((h) => ({
+      name: h.display_name, lat: Number(h.lat), lon: Number(h.lon),
+      bbox: h.boundingbox ? h.boundingbox.map(Number) : null,  // [south, north, west, east]
+      geojson: h.geojson && /Polygon$/.test(h.geojson.type) ? h.geojson : null,
+    })));
+  } catch (err) {
+    console.warn(`geocode failed: ${err.message}`);
+    res.status(502).json({ error: 'search unavailable' });
+  }
+});
+
 router.get('/', async (req, res) => {
   const counts = Object.fromEntries((await adminPool.query(
     'SELECT type::text, count(*)::int AS n FROM entity_index GROUP BY type')).rows.map((r) => [r.type, r.n]));

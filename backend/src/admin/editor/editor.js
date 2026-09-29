@@ -201,3 +201,9 @@ function enhance(textarea) {
 }
 
 document.querySelectorAll('textarea.md').forEach(enhance);
+
+// The map picker (Leaflet + Geoman, ~200 KB) is only fetched on pages that have one (place forms).
+if (document.querySelector('.map-picker')) {
+  document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: '/static/map.css' }));
+  document.head.append(Object.assign(document.createElement('script'), { src: '/static/map.js' }));
+}

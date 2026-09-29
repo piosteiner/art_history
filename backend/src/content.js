@@ -73,7 +73,12 @@ function toRow(doc, fields) {
           put(key, `SRID=4326;POINT(${v[0]} ${v[1]})`, '$::geography');
         } else throw new Error('must be [longitude, latitude]');
       } else if (kind === 'area') {
-        put(key, v && JSON.stringify(v), 'ST_Multi(ST_GeomFromGeoJSON($))::geography');
+        if (v !== null && !(v && typeof v === 'object' && ['Polygon', 'MultiPolygon'].includes(v.type) && Array.isArray(v.coordinates))) {
+          throw new Error('must be a GeoJSON Polygon or MultiPolygon');
+        }
+        // ST_MakeValid repairs hand-drawn mistakes (a self-crossing "bow tie" becomes two polygons); it returns a valid
+        // input unchanged. ST_CollectionExtract(…, 3) keeps only the polygon parts, ST_Multi makes it a MultiPolygon.
+        put(key, v && JSON.stringify(v), 'ST_Multi(ST_CollectionExtract(ST_MakeValid(ST_GeomFromGeoJSON($)), 3))::geography');
       } else if (kind === 'md') {
         if (v !== null && typeof v !== 'string') throw new Error('must be text');
         // Trailing whitespace is dropped however the text arrives (YAML block scalars end with a newline, forms don't).

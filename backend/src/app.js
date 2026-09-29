@@ -16,6 +16,10 @@ app.use(helmet({
   // helmet's default is no-referrer, which makes browsers send "Origin: null" on same-site form posts —
   // and the admin's checkOrigin needs the real Origin. same-origin still sends nothing to other sites.
   referrerPolicy: { policy: 'same-origin' },
+  // The admin map picker shows OpenStreetMap tiles; everything else stays 'self' (helmet's defaults).
+  contentSecurityPolicy: {
+    directives: { 'img-src': ["'self'", 'data:', 'https://tile.openstreetmap.org'] },
+  },
 }));
 
 // One process, two hostnames: /v1 on the API host (any host in dev), the admin panel at the root of the admin host

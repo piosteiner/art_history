@@ -83,3 +83,15 @@ button.md-tool { background: transparent; color: var(--fg); border: 1px solid tr
 button.md-tool:hover { border-color: var(--line); background: var(--panel); }
 .md-toolbar.previewing button.md-tool:not(:last-child) { visibility: hidden; }
 .md-preview { border: 1px solid var(--line); border-radius: 0 0 6px 6px; padding: .5rem .6rem; background: var(--panel); overflow-wrap: anywhere; }
+
+/* Map picker on place forms (src/admin/editor/map.js; Leaflet + Geoman styles come from static/map.css) */
+.map-picker { margin-top: .5rem; }
+.map-search { display: flex; gap: .5rem; margin-bottom: .4rem; }
+.map-search input { flex: 1; }
+.map-results { font-size: .9rem; }
+.map-result { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; padding: .3rem 0; border-bottom: 1px solid var(--line); }
+.map-result .actions { gap: 1rem; }
+.map-canvas { height: 420px; border: 1px solid var(--line); border-radius: 6px; margin-top: .4rem; z-index: 0; }
+.map-pin { background: var(--accent); border: 3px solid #fff; border-radius: 50%; box-shadow: 0 0 0 1px rgba(0,0,0,.4), 0 1px 4px rgba(0,0,0,.4); }
+.leaflet-container { font: inherit; }
+details > summary { cursor: pointer; }

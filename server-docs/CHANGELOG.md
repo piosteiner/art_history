@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-29
 
+### Admin: map picker for place location and area
+- **What:** place forms show a Leaflet map (OpenStreetMap tiles): click/drag sets the location, Geoman tools draw/edit/cut/
+  remove polygons for the area, and a search box queries OpenStreetMap Nominatim through the app (`GET /geocode`, logged-in
+  only, ≤ 1 request/s, identifying User-Agent per the Nominatim usage policy) — a result can set the location or take over
+  its boundary as the area. Bundle `static/map.js` + `map.css` (esbuild, git-ignored), loaded only on pages with a map.
+  CSP (helmet): `img-src` now also allows `https://tile.openstreetmap.org`. Areas are stored via
+  `ST_Multi(ST_CollectionExtract(ST_MakeValid(…), 3))` so hand-drawn self-intersections are repaired (import too; valid
+  input unchanged — import dry run: all unchanged). New dev deps: leaflet 1.9.4 (BSD-2), @geoman-io/leaflet-geoman-free 2.20.2 (MIT).
+- **Why:** owner: pick locations and draw areas on a map instead of typing coordinates/GeoJSON.
+- **Tested (dev, headless Chromium):** tiles load, click moves the pin (5-decimal inputs), polygon tool → Polygon in the
+  textarea without moving the pin, "Provence-Alpes-Côte d'Azur" outline → MultiPolygon, saved; PostGIS area 31,864 km²
+  (official ≈ 31,400 km²). Bow-tie polygon repaired into two valid polygons; non-polygon GeoJSON rejected.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: Markdown editor with live styling; gzip for the admin site
 - **What:** Markdown fields (biography, descriptions, notes incl. relationship notes) use a CodeMirror 6 editor
   (`backend/src/admin/editor/editor.js`): **bold**/*italic*/headings/links styled in place with dimmed markers, toolbar

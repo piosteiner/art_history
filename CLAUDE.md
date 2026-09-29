@@ -25,8 +25,8 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   snapshot to commit; `npm run import` only for bulk loads (export first — import overwrites). Deploys don't import.
 - Admin panel: `backend/src/admin/`; forms come from `src/content.js` (shared with import/export). Dev login:
   `npm run admin:user:dev -- <name>`, then http://admin.localhost:3005/ (host-based routing). Markdown editor:
-  `src/admin/editor/` (CodeMirror 6) → `npm run build:admin` → `static/editor.js` (git-ignored; `npm run dev` and
-  `deploy.sh` build it).
+  `src/admin/editor/` (CodeMirror 6; map picker = Leaflet + Geoman) → `npm run build:admin` → `static/editor.js`,
+  `map.js`, `map.css` (git-ignored; `npm run dev` and `deploy.sh` build them).
 - Schema: new `backend/db/migrations/NNN_*.sql` (never edit applied ones) → `npm run migrate:dev` → smoke test
   `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql` → commit → `backend/deploy.sh`.
 - Deploy: `backend/deploy.sh` (pull, npm ci, migrate, pm2 reload, health probe).
@@ -40,7 +40,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   `art_history-backups` when data changed (server-docs/README.md → Backups). Round trip from GitHub tested 2026-09-28.
 - ✅ Phase 5 admin panel (2026-09-28): migration 006 (admin_users, admin_sessions, audit_log trigger), scrypt + Postgres
   sessions (single login; fail2ban jail `arthistory-admin` since 2026-09-29), CRUD + relationships + history pages, `npm run export`. Ideas next: one-click undo from
-  audit_log, map picker for coordinates, image handling, nightly auto-export commit.
+  audit_log, image handling, nightly auto-export commit. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.
 - Decided + built (migration 005): moved institutions — `institutions.place_id` = current location, dated `located_in`

@@ -7,7 +7,7 @@ const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.`,
   'text[]': 'One per line.',
   json: 'JSON object, e.g. {"sources": ["…"]}. Leave empty for none.',
-  area: 'GeoJSON Polygon or MultiPolygon (optional outline for regions).',
+  area: 'GeoJSON Polygon or MultiPolygon, [longitude, latitude] pairs (optional outline for regions).',
   date: DATE_HINT,
   period: html`${DATE_HINT} · <code>1808/</code> (since 1808, ongoing)`,
   label: 'Optional display text, e.g. "c. 1480". Empty = generated from the date.',
@@ -74,14 +74,22 @@ function fieldInput(key, kind, f, ctx) {
     return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
       <textarea class="md" id="${id}" name="${name}">${f[key]}</textarea>${hint(HINTS.md)}</div>`;
   }
-  if (kind === 'text[]' || kind === 'json' || kind === 'area') {
+  if (kind === 'area') {
+    // Drawn on the map (see the point field); the raw GeoJSON stays editable for pasting or fine-tuning.
+    return html`<div class="field${err}"><label>${humanize(key)}</label>
+      <details${err ? ' open' : ''}><summary class="muted">Draw it on the map above — or edit the GeoJSON (advanced)</summary>
+      <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[kind])}</details></div>`;
+  }
+  if (kind === 'text[]' || kind === 'json') {
     return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
       <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[kind])}</div>`;
   }
   if (kind === 'point') {
     return html`<div class="field${err}"><label>${humanize(key)}</label>
       <div class="row"><input name="${name}_lon" value="${f[`${key}_lon`]}" placeholder="longitude (east +)" inputmode="decimal" aria-label="longitude">
-      <input name="${name}_lat" value="${f[`${key}_lat`]}" placeholder="latitude (north +)" inputmode="decimal" aria-label="latitude"></div>${hint(HINTS.point)}</div>`;
+      <input name="${name}_lat" value="${f[`${key}_lat`]}" placeholder="latitude (north +)" inputmode="decimal" aria-label="latitude"></div>
+      <div class="map-picker" data-point="${name}"${ctx.areaKey ? html` data-area="f.${ctx.areaKey}"` : ''}></div>
+      <noscript>${hint(HINTS.point)}</noscript></div>`;
   }
   if (kind === 'date' || kind === 'period') {
     return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
@@ -108,6 +116,7 @@ function fieldInput(key, kind, f, ctx) {
 
 // version: the row's updated_at when the form was opened (optimistic locking on save).
 function entityForm({ t, slug, f, ctx, action, errors, isNew, version }) {
+  ctx = { ...ctx, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // the map draws into it
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   <form method="post" action="${action}" class="form">
