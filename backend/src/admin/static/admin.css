@@ -157,3 +157,20 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .wd-table input[type=checkbox], .wd-table input[type=radio], .wd-image input { width: auto; margin-right: .25rem; }
 .wd-image { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
 .wd-image img { max-width: 260px; max-height: 260px; border-radius: 6px; border: 1px solid var(--line); }
+
+/* Data quality (src/admin/quality.js) */
+.tag.qa-error { color: var(--err); border-color: var(--err); }
+.tag.qa-warning { color: var(--accent); border-color: var(--accent); }
+.card.qa-error b { color: var(--err); }
+.card.qa-warning b { color: var(--accent); }
+.card.active { outline: 2px solid var(--accent); }
+.qa-group h2 { display: flex; gap: .5rem; align-items: center; }
+.qa-actions { white-space: nowrap; }
+.qa-ack input { width: 13rem; padding: .2rem .4rem; font-size: .85rem; }
+.qa-ack button { padding: .2rem .6rem; font-size: .85rem; }
+.qa-box { border: 1px solid var(--line); border-radius: 8px; padding: .5rem .8rem; margin: 0 0 1rem; background: var(--panel); }
+.qa-box.has-error { border-color: var(--err); }
+.qa-box ul { margin: .3rem 0; padding-left: 1.1rem; }
+.qa-box li { margin: .2rem 0; }
+.bar select { width: auto; flex: 0 1 auto; }
+.bar .choice input { width: auto; }

@@ -44,7 +44,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - ✅ Phase 5 admin panel (2026-09-28): migration 006 (admin_users, admin_sessions, audit_log trigger), scrypt + Postgres
   sessions (single login; fail2ban jail `arthistory-admin` since 2026-09-29), CRUD + relationships + history pages, `npm run export`. Live collaboration built 2026-09-30:
   presence + drafts (010), shared Yjs working copies per entry with Publish (011) — `src/admin/collab.js`, `editor/collab.js`.
-  Wikidata comparison with review (012, `src/admin/wikidata.js`) built 2026-09-30. Next candidate: data-quality page.
+  Wikidata comparison with review (012, `src/admin/wikidata.js`) built 2026-09-30. Data-quality page (013, view `quality_issues`) built 2026-09-30.
   Ideas later: nightly auto-export commit. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.

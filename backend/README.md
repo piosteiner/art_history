@@ -46,6 +46,8 @@ definitions the import/export use, so a form save and a YAML import validate ide
 - Wikidata (`src/admin/wikidata.js`): compare an entry field by field, take only what is ticked (own values first,
   declined values remembered in `wikidata_reviews`), relationship suggestions, Commons images, missing entries on request.
   `WIKIDATA_BASE` / `COMMONS_BASE` override the API hosts (the e2e tests use a fixture server).
+- Data quality (`/quality`, `src/admin/quality.js`): checks are the SQL view `quality_issues` (migration 013);
+  findings can be marked OK (`quality_acks`). New check = new migration with `CREATE OR REPLACE VIEW` + an entry in CHECKS.
 - Users: `npm run admin:user -- <name>` (asks for the password; also resets it and logs out that user's sessions).
 - Every write runs in a transaction tagged with the user → the `audit_log` trigger records who changed what
   (History pages). Edits use optimistic locking (the form carries `updated_at`; a concurrent save is refused).

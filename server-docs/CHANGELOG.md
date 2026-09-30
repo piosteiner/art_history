@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Admin: data-quality page (migration 013)
+- **What:** view `quality_issues` — one SELECT per check (UNION ALL), severity error/warning/info: presence outside
+  the lifespan, "born/died in" vs birth/death date, artwork outside its creator's life (`>>`/`<<`), people linked who
+  never lived at the same time (`&&` on lifespans), substantial overlapping residences (range intersection `*`),
+  "housed at" before founding, place outside its parent's outline (PostGIS `ST_Covers`), probable duplicates
+  (pg_trgm `similarity`), missing creator/license/relationships/dates/periods/parents/descriptions/Wikidata ids.
+  `quality_acks` remembers findings marked "OK" (with note). Page `/quality` (filters, counts), a box on each entry,
+  dashboard counter, nav link. Runs in ~35 ms on the current data. `src/admin/quality.js`; 2 new e2e tests (36 total).
+- **Why:** owner: find contradictions and gaps before they reach the public map/timeline.
+- **Revert:** redeploy the previous commit; 013 can stay (or as owner: `DROP VIEW quality_issues; DROP TABLE quality_acks`
+  + its schema_migrations row).
+
 ### Wikidata review: explicit decisions everywhere
 - **What:** every differing field, image, reference target and relationship suggestion now offers take / keep mine
   (skip) / **decide later**. Only explicit choices are remembered (`wikidata_reviews`); "decide later" records nothing

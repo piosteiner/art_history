@@ -20,6 +20,7 @@ const { planPage } = require('./revert-ui');
 const { wordDiff, isLongText } = require('./textdiff');
 const drafts = require('./drafts');
 const wikidata = require('./wikidata');
+const quality = require('./quality');
 const { searchPage, reviewPage } = require('./wikidata-ui');
 const collab = require('./collab');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
@@ -368,6 +369,8 @@ router.get('/', async (req, res) => {
     'SELECT type::text, count(*)::int AS n FROM entity_index GROUP BY type')).rows.map((r) => [r.type, r.n]));
   const rels = (await adminPool.query('SELECT count(*)::int AS n FROM relationships')).rows[0].n;
   const recent = await history(adminPool, 'true', [], { limit: 15 });
+  const qaCounts = await quality.counts(adminPool);
+  const qaTotal = (s) => qaCounts.filter((c) => c.severity === s).reduce((n, c) => n + c.n, 0);
   const unpublishedRows = (await adminPool.query(`
     SELECT d.entity_type::text AS type, e.slug, e.name, d.contributors, d.updated_at FROM live_docs d
     JOIN entity_index e ON e.type = d.entity_type AND e.id = d.entity_id
@@ -384,7 +387,8 @@ router.get('/', async (req, res) => {
       ${myDrafts.length ? html`<div class="flash draft"><b>Your unsaved drafts:</b> ${myDrafts.map((d, i) => html`${i ? ' · ' : ''}<a href="/${BY_TYPE[d.type].folder}/${d.slug ? `${d.slug}/edit` : 'new'}?draft=1">${d.name || `new ${d.type}`}</a>
         <span class="muted small">${when(d.updated_at)}</span>`)}</div>` : ''}
       <div class="cards">${TYPES.map((t) => html`<a class="card" href="/${t.folder}"><b>${counts[t.type] || 0}</b>${humanize(t.folder)}</a>`)}
-        <div class="card"><b>${rels}</b>Relationships</div></div>
+        <div class="card"><b>${rels}</b>Relationships</div>
+        <a class="card qa-card" href="/quality"><b>${qaTotal('error')} · ${qaTotal('warning')}</b>Quality: errors · warnings</a></div>
       <h2>Recent changes</h2>${historyTable(recent.rows)}
       <p><a href="/history">All changes →</a></p>`,
   });
@@ -403,6 +407,31 @@ router.get('/lookup', async (req, res) => {
   const types = String(req.query.types || '').split(',').filter((x) => BY_TYPE[x]);
   if (!q || !types.length) return res.json([]);
   res.json(await lookup(adminPool, q, types));
+});
+
+// Data quality (view quality_issues, migration 013; src/admin/quality.js)
+router.get('/quality', async (req, res) => {
+  const filter = {
+    severity: quality.SEVERITIES.includes(req.query.severity) ? req.query.severity : '',
+    check: quality.CHECKS[req.query.check] ? req.query.check : '',
+    type: BY_TYPE[req.query.type] ? req.query.type : '',
+    acked: req.query.acked === '1' ? '1' : '',
+  };
+  const [rows, allCounts] = await Promise.all([
+    quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked }),
+    quality.counts(adminPool)]);
+  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl }) });
+});
+
+// "Mark as OK" / undo — back to where it was clicked (only local paths).
+const backTo = (b) => (typeof b === 'string' && /^\/[a-z0-9/_?=&.%-]*$/i.test(b) && !b.startsWith('//') ? b : '/quality');
+router.post('/quality/ack', async (req, res) => {
+  await quality.ack(adminPool, req.body, req.user.id);
+  res.redirect(303, backTo(req.body.back));
+});
+router.post('/quality/unack', async (req, res) => {
+  await quality.unack(adminPool, req.body);
+  res.redirect(303, backTo(req.body.back));
 });
 
 router.get('/history', async (req, res) => {
@@ -815,6 +844,7 @@ router.get('/:plural/:slug', async (req, res) => {
   ]);
   const labels = Object.fromEntries(types.map((x) => [x.code, x.label]));
   const name = e.doc[t.name];
+  const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
   const pending = await collab.unpublished(t, e.id);
   send(req, res, {
     title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
@@ -825,6 +855,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       ${pending ? unpublishedBanner(t, e, pending, false) : ''}
+      ${quality.entityBox(qa, `/${t.folder}/${e.slug}`)}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name).map(([key, kind]) => {
         const shown = showValue(t, key, kind, e.doc);
         return shown === null ? '' : html`<dt>${humanize(key)}</dt><dd>${shown}</dd>`;
