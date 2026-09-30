@@ -252,10 +252,18 @@ router.get('/history', async (req, res) => {
 // ---------------------------------------------------------------------------------------------------------------
 // Relationships (declared on the subject's page)
 // ---------------------------------------------------------------------------------------------------------------
-async function relationshipTypes(db, subjectType) {
+// Types that start from this entity type (it is the subject). With { reverse: true } also the ones that end at it,
+// as "~code" with the inverse label ("commissioned by"), whose targets are the subject types — so a commission can
+// be entered on the artwork's page. Saving a "~" type swaps subject and object: storage stays canonical.
+// Symmetric types have no reverse entry (they already read both ways).
+async function relationshipTypes(db, entityType, { reverse = false } = {}) {
   const { rows } = await db.query(`
-    SELECT code, label, object_types::text[] AS object_types FROM relationship_types
-    WHERE $1::entity_type = ANY (subject_types) ORDER BY sort_order`, [subjectType]);
+    SELECT code, label, object_types::text[] AS object_types, false AS reverse, sort_order FROM relationship_types
+    WHERE $1::entity_type = ANY (subject_types)
+    UNION ALL
+    SELECT '~' || code, inverse_label, subject_types::text[], true, sort_order FROM relationship_types
+    WHERE $2 AND $1::entity_type = ANY (object_types) AND NOT is_symmetric
+    ORDER BY reverse, sort_order`, [entityType, reverse]);
   return rows;
 }
 
@@ -265,33 +273,41 @@ async function allEntities(db) {
 }
 
 // Form body → validated params for INSERT/UPDATE relationships. Throws UserError.
-async function relFromForm(db, body, subject, keepMetadata = {}) {
+// `entity` is the page the form is on; with a reverse ("~") type it becomes the object and the target the subject.
+async function relFromForm(db, body, entity, keepMetadata = {}, { reverse = false } = {}) {
   const type = String(body.type || '');
-  const types = await relationshipTypes(db, subject.type);
+  const types = await relationshipTypes(db, entity.type, { reverse });
   const rt = types.find((x) => x.code === type);
-  if (!rt) throw new UserError(`"${type}" is not a relationship type for ${an(subject.type)}.`);
+  if (!rt) throw new UserError(`"${type}" is not a relationship type for ${an(entity.type)}.`);
   const m = /^([a-z]+)\/([a-z0-9-]+)$/.exec(String(body.to || '').trim());
   if (!m) throw new UserError('Target must look like place/paris — pick one from the suggestions.');
   if (!rt.object_types.includes(m[1])) throw new UserError(`"${rt.label}" needs ${rt.object_types.map(an).join(' or ')} as target, not ${an(m[1])}.`);
-  const objectId = (await db.query('SELECT entity_id($1, $2) AS id', [m[1], m[2]])).rows[0].id;
-  if (objectId === null) throw new UserError(`${m[0]} does not exist.`);
+  const targetId = (await db.query('SELECT entity_id($1, $2) AS id', [m[1], m[2]])).rows[0].id;
+  if (targetId === null) throw new UserError(`${m[0]} does not exist.`);
+  const [subject, code, objectType, objectId] = rt.reverse
+    ? [{ type: m[1], id: targetId }, type.slice(1), entity.type, entity.id]
+    : [entity, type, m[1], targetId];
   let period = null;
   try { period = parseFuzzyDate(String(body.period || '').trim() || null, { openEnd: true }); } catch (err) { throw new UserError(`Period: ${err.message}`); }
   const opt = (k) => String(body[k] || '').replace(/\r\n/g, '\n').trim() || null;
   const sources = String(body.sources || '').split('\n').map((s) => s.trim()).filter(Boolean);
   const { sources: _old, ...rest } = keepMetadata;
   const certainty = ['attested', 'probable', 'possible', 'disputed'].includes(body.certainty) ? body.certainty : 'attested';
-  return [subject.type, subject.id, type, m[1], objectId, period && period.range,
+  return [subject.type, subject.id, code, objectType, objectId, period && period.range,
     opt('period_label') ?? (period && period.label), opt('label'), certainty, opt('notes_md'),
     JSON.stringify(sources.length ? { ...rest, sources } : rest)];
 }
 
-function relForm({ action, types, entities, rel = {}, submit }) {
+function relForm({ action, types, entities, rel = {}, submit, entityType = 'entity' }) {
   const v = (k) => rel[k] ?? '';
   return html`<form method="post" action="${action}" class="form">
     <div class="row">
       <div class="field"><label for="r-type">Relationship</label>
-        <select id="r-type" name="type" required>${types.map((t) => html`<option value="${t.code}" data-object-types="${t.object_types.join(',')}"${t.code === rel.type ? ' selected' : ''}>${t.label} (${t.object_types.join(', ')})</option>`)}</select></div>
+        <select id="r-type" name="type" required>${[false, true].map((rev) => {
+          const group = types.filter((t) => t.reverse === rev);
+          const options = group.map((t) => html`<option value="${t.code}" data-object-types="${t.object_types.join(',')}"${t.code === rel.type ? ' selected' : ''}>${t.label} (${t.object_types.join(', ')})</option>`);
+          return !group.length ? '' : types.some((t) => t.reverse) ? html`<optgroup label="${rev ? `Towards this ${entityType}` : `From this ${entityType}`}">${options}</optgroup>` : options;
+        })}</select></div>
       <div class="field"><label for="r-to">Target</label>
         <input id="r-to" name="to" value="${v('to')}" list="r-to-list" required placeholder="start typing a name (typos are fine)" autocomplete="off" data-lookup-from="r-type">
         <datalist id="r-to-list">${entities.map((e) => html`<option value="${e.ref}">${e.name}</option>`)}</datalist></div>
@@ -538,7 +554,7 @@ router.get('/:plural/:slug', async (req, res) => {
       FROM relationships r JOIN entity_index s ON s.type = r.subject_type AND s.id = r.subject_id
       JOIN relationship_types rt ON rt.code = r.relationship_type
       WHERE r.object_type = $1 AND r.object_id = $2 ORDER BY rt.sort_order, lower(r.period) NULLS FIRST`, [t.type, e.id]),
-    relationshipTypes(adminPool, t.type),
+    relationshipTypes(adminPool, t.type, { reverse: true }),
     allEntities(adminPool),
   ]);
   const labels = Object.fromEntries(types.map((x) => [x.code, x.label]));
@@ -568,7 +584,7 @@ router.get('/:plural/:slug', async (req, res) => {
           <td>${r.period_label || ''}</td><td class="muted">${r.label || ''}</td>
           <td><a href="/relationships/${r.id}/edit">edit</a></td></tr>`)}</tbody></table></div>` : ''}
       <details><summary><b>+ Add relationship</b></summary>
-        ${types.length ? relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, submit: 'Add' })
+        ${types.length ? relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, submit: 'Add', entityType: t.type })
           : html`<p class="muted">No relationship types start from ${an(t.type)}; link to it from the other entity.</p>`}
       </details>`,
   });
@@ -580,16 +596,16 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   try {
     await withTx(req.user, async (db) => {
-      const p = await relFromForm(db, req.body, { type: t.type, id: e.id });
+      const p = await relFromForm(db, req.body, { type: t.type, id: e.id }, {}, { reverse: true });
       await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period,
         period_label, label, certainty, notes_md, metadata) VALUES ($1, $2, $3, $4, $5, $6::daterange, $7, $8, $9, $10, $11::jsonb)`, p);
     });
   } catch (err) {
-    const [types, entities] = await Promise.all([relationshipTypes(adminPool, t.type), allEntities(adminPool)]);
+    const [types, entities] = await Promise.all([relationshipTypes(adminPool, t.type, { reverse: true }), allEntities(adminPool)]);
     return send(req, res, {
       title: 'Add relationship', status: 422, flash: { kind: 'error', text: friendly(err) },
       body: html`<h1>Add relationship</h1><p><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p>
-        ${relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, rel: { ...req.body, sources: String(req.body.sources || '').split('\n') }, submit: 'Add' })}`,
+        ${relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, rel: { ...req.body, sources: String(req.body.sources || '').split('\n') }, submit: 'Add', entityType: t.type })}`,
     });
   }
   res.redirect(303, `/${t.folder}/${e.slug}?done=rel-added#relationships`);

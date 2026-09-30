@@ -70,8 +70,8 @@ target must exist, no exact duplicates. Symmetric types (`contemporary_of`, `col
 written in only one of the two files.
 
 Only **physical presence** types (`born_in`, `died_in`, `lived_in`, `worked_in`, `visited`, `created_in`, `located_in`) are drawn
-as travel routes on the map. Use `influenced_by_culture_of` / `inspired_by_place` for places someone was
-influenced by but never visited.
+as travel routes on the map. Use `influenced_by_culture_of` for places someone was influenced by but never visited,
+and `depicts` (artwork → place) when a place is what the artwork shows.
 
 An institution's `place` is where it is **now**. If it moved, add every location as a `located_in` relationship
 with a `period` — the current one open-ended (`period: 1808/`), so the map can draw the full route

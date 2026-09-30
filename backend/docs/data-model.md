@@ -65,9 +65,14 @@ Each type declares which entity types it may connect, its inverse label, and two
 
 - `is_physical_presence` — the subject was physically there (`born_in`, `died_in`, `lived_in`, `worked_in`,
   `visited`, `created_in`, `located_in`). **Only these may be drawn as travel routes.** Non-physical links
-  (`inspired_by_place`, `influenced_by_culture_of`, `active_in`) go on a visually distinct layer — e.g. Van Gogh's
+  (`influenced_by_culture_of`, `depicts`, `active_in`) go on a visually distinct layer — e.g. Van Gogh's
   Japonisme traces to Japan without implying he travelled there.
 - `is_symmetric` — `contemporary_of`, `collaborated_with` are stored once in canonical order (A↔B = B↔A).
+- Migration 007: `inspired_by_place` removed (overlapped with `influenced_by_culture_of`); `depicts` (artwork → place:
+  the place is the subject) added; `owned_by`, `commissioned` and `patron_of` also accept institutions (church, guild,
+  museum) and places (a city or state as a public body). A historical polity is better a patron of kind `state`.
+- Every relationship is stored in one direction (subject → object). The admin form also offers the reverse types
+  ("commissioned by" on an artwork's page) and swaps them into canonical order on save.
 
 Query the current list: `SELECT code, label, subject_types, object_types FROM relationship_types ORDER BY sort_order;`
 

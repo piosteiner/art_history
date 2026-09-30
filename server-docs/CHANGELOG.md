@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Migration 007: relationship vocabulary round 2; reverse types in the admin form
+- **What:** `inspired_by_place` removed (unused; overlapped with `influenced_by_culture_of`), `depicts` added (artwork →
+  place, category association), `owned_by` / `commissioned` / `patron_of` widened to institutions and places. Admin
+  "Add relationship" also offers reverse types ("commissioned by", "birthplace of", …) grouped "From / Towards this …",
+  saved in canonical direction. Docs: data-model.md, content/README.md.
+- **Why:** owner feedback on the vocabulary: overlapping place types, owners/commissioners that are cities or
+  churches, and commissions that couldn't be entered from the artwork's page.
+- **Tested (dev):** smoke test; commission by a place entered on the artwork page stored as place → artwork; `depicts`;
+  wrong target types rejected with a readable message.
+- **Revert:** as arthistory_owner: `DELETE FROM relationships WHERE relationship_type = 'depicts'`, delete the `depicts`
+  row, restore the old subject/object types (see migration 002), re-insert `inspired_by_place` from 002, delete the
+  `schema_migrations` row for 007; redeploy the previous commit.
+
 ### Admin: typo-tolerant search everywhere + fuzzy pickers; deploy keeps dev dependencies
 - **What:** one scoring rule for all admin search boxes (`backend/src/admin/match.js`): name prefix > word start >
   substring > pg_trgm `word_similarity` (also with spaces removed: "vangog" → Van Gogh), plus alternative names/titles
