@@ -15,6 +15,8 @@ const { renderMarkdown } = require('../markdown');
 const { html, raw, layout } = require('./html');
 const { login, logout, loadUser, checkOrigin } = require('./auth');
 const { search, resultsPage, lookup } = require('./search');
+const { planChangeSet, planVersion, execute, fingerprint, revertedBy, unconfirmed } = require('./revert');
+const { planPage } = require('./revert-ui');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
 const { docToForm, formToDoc, entityForm, humanize, HINTS } = require('./forms');
 
@@ -34,6 +36,8 @@ router.use(loadUser);
 // Fixed messages for ?done=… after a redirect (never reflect arbitrary text).
 const DONE = {
   created: 'Created.', saved: 'Saved.', deleted: 'Deleted.', unchanged: 'No changes.',
+  reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
+  restored: 'Version restored.',
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
 };
 
@@ -125,6 +129,9 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
   const gone = (typeExpr, idExpr) => `coalesce(${GONE_NAME.replace('$T', () => typeExpr).replace('$I', () => idExpr)}, (${typeExpr}) || ' #' || (${idExpr}))`;
   const { rows } = await db.query(`
     SELECT a.id, a.changed_at, a.action, a.source, a.table_name, a.row_id, u.username,
+           a.txid::text AS txid, a.reverts::text AS reverts, a.restores,
+           (SELECT min(b.changed_at) FROM audit_log b WHERE b.reverts = a.txid) AS reverted_at,
+           (SELECT count(*)::int FROM audit_log c WHERE c.txid = a.txid) AS tx_rows,
            CASE WHEN a.table_name = 'relationships'
              THEN concat_ws(' ', coalesce(s.name, ${gone("r->>'subject_type'", "r->>'subject_id'")}), '—',
                             rt.label, '→', coalesce(o.name, ${gone("r->>'object_type'", "r->>'object_id'")}))
@@ -154,17 +161,26 @@ const short = (v) => {
   return s.length > 160 ? `${s.slice(0, 157)}…` : s;
 };
 
-function historyTable(rows, { showWhat = true } = {}) {
+// restoreFor: { table, rowId } on an entity's history page — its insert/update rows get "restore this version".
+function historyTable(rows, { showWhat = true, restoreFor = null } = {}) {
   if (!rows.length) return html`<p class="muted">No changes recorded yet.</p>`;
-  return html`<div class="table-wrap"><table class="diff"><thead><tr><th>When</th><th>Who</th>${showWhat ? html`<th>What</th>` : ''}<th>Changes</th></tr></thead><tbody>
+  const seenTx = new Set();  // "revert…" once per change set (a delete and its relationships share one txid)
+  return html`<div class="table-wrap"><table class="diff"><thead><tr><th>When</th><th>Who</th>${showWhat ? html`<th>What</th>` : ''}<th>Changes</th><th></th></tr></thead><tbody>
   ${rows.map((h) => {
     const entries = Object.entries(h.diff || {}).filter(([, [o, n]]) => !(h.action !== 'update' && (o ?? n) === null));
+    const firstOfTx = !seenTx.has(h.txid);
+    seenTx.add(h.txid);
+    const canRestore = restoreFor && h.table_name === restoreFor.table && h.row_id === restoreFor.rowId && h.action !== 'delete';
     return html`<tr>
-      <td><span title="${h.changed_at.toISOString()}">${h.changed_at.toISOString().slice(0, 16).replace('T', ' ')}</span></td>
+      <td><span title="${h.changed_at.toISOString()}">${h.changed_at.toISOString().slice(0, 16).replace('T', ' ')}</span>
+        ${h.reverts ? html`<div><span class="tag">↩ revert</span></div>` : ''}${h.restores ? html`<div><span class="tag">↩ restore</span></div>` : ''}
+        ${h.reverted_at ? html`<div class="muted small">reverted ${h.reverted_at.toISOString().slice(0, 10)}</div>` : ''}</td>
       <td>${h.username || html`<span class="muted">—</span>`} <span class="tag">${h.source}</span></td>
       ${showWhat ? html`<td><span class="tag">${h.action}</span> ${h.link ? html`<a href="/${h.link}">${h.what}</a>` : h.what}</td>` : ''}
       <td>${h.action === 'update' ? html`<table>${entries.map(([k, [o, n]]) => html`<tr><th>${k}</th><td class="old">${short(o)}</td><td class="new">${short(n)}</td></tr>`)}</table>`
         : html`<span class="tag">${h.action}</span> <span class="muted">${entries.map(([k, [o, n]]) => `${k}: ${short(o ?? n)}`).join(' · ')}</span>`}</td>
+      <td class="history-actions">${firstOfTx ? html`<a href="/revert/${h.txid}" title="Undo this save${h.tx_rows > 1 ? ` (${h.tx_rows} rows)` : ''}">revert…</a>` : ''}
+        ${canRestore ? html`<a href="/restore/${h.id}" title="Make it look like right after this change">restore this version…</a>` : ''}</td>
     </tr>`;
   })}</tbody></table></div>`;
 }
@@ -174,6 +190,91 @@ const pager = (base, page, more) => html`<div class="actions">
   ${more ? html`<a href="${base}${base.includes('?') ? '&' : '?'}page=${page + 1}">older →</a>` : ''}</div>`;
 
 const pageParam = (req) => Math.max(1, Math.min(10000, Number.parseInt(req.query.page, 10) || 1));
+
+// ---------------------------------------------------------------------------------------------------------------
+// Revert a change set / restore a version (src/admin/revert.js, revert-ui.js)
+// ---------------------------------------------------------------------------------------------------------------
+// One transaction per request: plan → fingerprint → execute every step (with savepoints) → COMMIT only when "Apply"
+// was pressed, the state is unchanged since the preview, everything is confirmed and nothing failed; otherwise
+// ROLLBACK — which makes the same code the dry run. The markers make the audit trigger record what was undone.
+async function runPlan(req, res, kind, id) {
+  const choices = req.method === 'POST' ? req.body : {};
+  const submitted = choices.submitted === '1';
+  const client = await adminPool.connect();
+  try {
+    await client.query('BEGIN');
+    await client.query(`SELECT set_config('arthistory.user_id', $1, true), set_config('arthistory.source', $2, true),
+                               set_config('arthistory.reverts', $3, true), set_config('arthistory.restores', $4, true)`,
+    [String(req.user.id), kind, kind === 'revert' ? id : '', kind === 'restore' ? id : '']);
+    const plan = kind === 'revert' ? await planChangeSet(client, id, choices, submitted) : await planVersion(client, id, choices, submitted);
+    if (!plan || !plan.items.length) {
+      await client.query('ROLLBACK');
+      return notFoundPage(req, res);
+    }
+    const fp = await fingerprint(client, plan.items);
+    const problems = [];
+    let apply = choices.do === 'apply';
+    if (apply && choices.fingerprint !== fp) {
+      problems.push('Something changed since this preview was shown. The plan below is up to date — please check it again.');
+      apply = false;
+    }
+    if (apply && unconfirmed(plan.items).length) {
+      problems.push('Some steps need your confirmation (see below) — confirm them or untick them.');
+      apply = false;
+    }
+    const raw = await execute(client, plan.items);
+    const results = Object.fromEntries(Object.entries(raw).map(([k, r]) => {
+      let message = null;
+      if (!r.ok) { try { message = friendly(r.error); } catch { message = r.error.message; } }
+      return [k, { ok: r.ok, message }];
+    }));
+    const active = plan.items.filter((i) => i.include && i.op !== 'none' && !i.blocked);
+    if (apply && active.length && Object.values(results).every((r) => r.ok)) {
+      await client.query('COMMIT');
+      if (kind === 'restore') {
+        const [item] = plan.items;
+        const { rows } = await adminPool.query(`SELECT slug FROM ${item.table} WHERE id = $1`, [item.rowId]);
+        return res.redirect(303, rows[0] ? `/${item.table}/${rows[0].slug}?done=restored` : '/history?done=restored');
+      }
+      return res.redirect(303, '/history?done=reverted');
+    }
+    // Geography values are stored as hex in the audit log — show them as WKT.
+    const hex = [...new Set(plan.items.flatMap((i) => i.fields).filter((f) => ['location', 'area'].includes(f.name))
+      .flatMap((f) => [f.before, f.after, f.now]).filter((v) => typeof v === 'string'))];
+    const geo = hex.length ? Object.fromEntries((await client.query(
+      'SELECT h, ST_AsText(h::geography) AS wkt FROM unnest($1::text[]) h', [hex])).rows.map((r) => [r.h, r.wkt])) : {};
+    await client.query('ROLLBACK');
+
+    let intro;
+    if (kind === 'revert') {
+      const first = plan.entries[0];
+      const done = await revertedBy(adminPool, id);
+      intro = html`<p>Undo what one save did on <b>${first.changed_at.toISOString().slice(0, 16).replace('T', ' ')}</b>
+        by ${first.username || 'an unknown user'} <span class="tag">${first.source}</span>. Fields changed later are kept unless you choose otherwise.</p>
+        ${done.length ? html`<p class="flash ok">Already reverted on ${done.map((d) => d.at.toISOString().slice(0, 16).replace('T', ' ')).join(', ')} — steps that are already undone show as “nothing to do”.</p>` : ''}`;
+    } else {
+      const e = plan.entry;
+      intro = html`<p>Bring <b>${plan.items[0].label}</b> back to how it was right after the change of
+        <b>${e.changed_at.toISOString().slice(0, 16).replace('T', ' ')}</b> (${e.username || 'unknown user'}). Untick fields to leave them as they are now.
+        Relationships are not touched — revert their changes individually.</p>`;
+    }
+    send(req, res, {
+      title: kind === 'revert' ? 'Revert a change' : 'Restore a version',
+      body: planPage({ title: kind === 'revert' ? 'Revert a change' : 'Restore a version', intro, action: `/${kind}/${id}`,
+        items: plan.items, results, fingerprint: fp, problems, geo, version: kind === 'restore' }),
+    });
+  } catch (err) {
+    await client.query('ROLLBACK').catch(() => {});
+    throw err;
+  } finally {
+    client.release();
+  }
+}
+
+router.get('/revert/:txid', (req, res, next) => (/^\d+$/.test(req.params.txid) ? runPlan(req, res, 'revert', req.params.txid) : next()));
+router.post('/revert/:txid', (req, res, next) => (/^\d+$/.test(req.params.txid) ? runPlan(req, res, 'revert', req.params.txid) : next()));
+router.get('/restore/:id', (req, res, next) => (/^\d+$/.test(req.params.id) ? runPlan(req, res, 'restore', req.params.id) : next()));
+router.post('/restore/:id', (req, res, next) => (/^\d+$/.test(req.params.id) ? runPlan(req, res, 'restore', req.params.id) : next()));
 
 // ---------------------------------------------------------------------------------------------------------------
 // Dashboard + global history
@@ -687,7 +788,7 @@ router.get('/:plural/:slug/history', async (req, res) => {
   send(req, res, {
     title: `History of ${e.doc[t.name]}`,
     body: html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p><h1>History</h1>
-      ${historyTable(h.rows)}${pager(`/${t.folder}/${e.slug}/history`, page, h.more)}`,
+      ${historyTable(h.rows, { restoreFor: { table: t.table, rowId: e.id } })}${pager(`/${t.folder}/${e.slug}/history`, page, h.more)}`,
   });
 });
 

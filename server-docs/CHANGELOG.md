@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Admin: revert changes and restore versions from the history (migration 009)
+- **What:** every history entry has "revert…" (undo one save — all rows of its transaction) and entity history rows have
+  "restore this version…". A preview plans each row: three-way comparison per field (before / after the change / now)
+  with fields changed since defaulting to "keep", deleted rows re-created with their original id (`OVERRIDING SYSTEM
+  VALUE`, values via `jsonb_populate_record`), taken slugs / Wikidata ids, vanished references and relationship ends,
+  and deletions of rows edited since or with newer relationships (need confirmation). Every plan is dry-run in a
+  transaction that is rolled back; applying re-checks a fingerprint of the current state. Reverts are audited with
+  `audit_log.reverts` (txid) / `restores` (entry) and can themselves be reverted. Code: `backend/src/admin/revert.js`,
+  `revert-ui.js`; migration 009 adds the two columns, two indexes and extends `audit_row()`.
+- **Why:** owner wanted undo from the history with proper conflict handling.
+- **Tested (dev):** plain revert, conflict kept / reverted on purpose, deleted place with 3 relationships restored with
+  the same ids, slug taken meanwhile → restored under a new slug, creation with newer relationship refused until
+  confirmed, stale preview refused, restore version, revert of a restore; smoke test and unit tests pass.
+- **Revert:** redeploy the previous commit; 009 can stay (or as owner: restore `audit_row()` from 006, drop the two columns).
+
 ### Migration 008: clearer inverse labels
 - **What:** `member_of` → "has member" (was "member"), `owned_by` → "owner of" (was "owned"), `housed_at` → "holds / held"
   (was "held"). Display text only; codes and data unchanged.

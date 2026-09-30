@@ -125,6 +125,11 @@ connection can't leak them into the next request; untagged changes (psql by hand
 `audit_row()` is `SECURITY DEFINER` (runs as the owner): the admin role can add history only by changing data,
 never write, edit or delete history itself. `txid` (`pg_current_xact_id()`) groups the rows of one save.
 
+Migration 009 adds `reverts` (txid of the change set a revert undid) and `restores` (audit entry an entity was restored
+to), set through `arthistory.reverts` / `arthistory.restores` like the other settings. The admin panel re-creates
+deleted rows from `old_row` with `INSERT … OVERRIDING SYSTEM VALUE SELECT … FROM jsonb_populate_record(NULL::<table>, old_row)`
+— the same id, every column type converted back by Postgres.
+
 ```sql
 -- What changed in the last save, key by key:
 SELECT k, old_row->k AS before, new_row->k AS after

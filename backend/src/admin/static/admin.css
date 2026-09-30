@@ -112,3 +112,21 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .ac-item[aria-selected="true"], .ac-item:hover { background: var(--code); }
 .ac-empty { padding: .35rem .6rem; }
 .ac-chosen:empty { display: none; }
+
+/* Revert / restore (src/admin/revert-ui.js) */
+.history-actions { white-space: nowrap; font-size: .88rem; }
+.history-actions a { display: block; }
+.revert-item { border: 1px solid var(--line); border-radius: 8px; padding: .5rem .8rem .8rem; margin: 0 0 .9rem; background: var(--panel); }
+.revert-item.has-problem { border-color: var(--err); }
+.revert-item legend { padding: 0 .3rem; font-weight: 600; }
+.revert-item legend .muted { font-weight: 400; }
+.revert-fields td, .revert-fields th { font-size: .9rem; }
+.revert-fields tr.rf-conflict { background: color-mix(in srgb, var(--err) 8%, transparent); }
+.revert-fields tr.rf-already { opacity: .6; }
+.choice { white-space: nowrap; margin-right: .6rem; font-weight: 400; }
+.choice input, .revert-item legend input, .warnbox input { width: auto; margin-right: .25rem; }
+.tag.warn { color: var(--err); border-color: var(--err); }
+.tag.ok { color: var(--ok); border-color: var(--ok); }
+.warnbox { background: var(--err-bg); color: var(--err); padding: .4rem .6rem; border-radius: 6px; }
+.err { color: var(--err); }
+.sticky-actions { position: sticky; bottom: 0; background: var(--bg); padding: .7rem 0; border-top: 1px solid var(--line); }
