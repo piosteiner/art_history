@@ -73,4 +73,4 @@ async function rebase(db, t, e, draft) {
   return { form, version: e.version, merged: [...new Set(merged)], conflicts: [...new Set(conflicts)], stale: true, baseKnown: !!base };
 }
 
-module.exports = { getDraft, deleteDraft, rebase, changedFields };
+module.exports = { getDraft, deleteDraft, rebase, changedFields, formKeys };

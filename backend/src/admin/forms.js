@@ -116,18 +116,22 @@ function fieldInput(key, kind, f, ctx) {
 }
 
 // version: the row's updated_at when the form was opened (optimistic locking on save).
-function entityForm({ t, slug, f, ctx, action, errors, isNew, version }) {
+// collab: an existing entry's shared working copy (live step 2) — the browser binds the form to it; Save = Publish.
+// collab: { key: 'artist:12:<epoch>', state: base64 } for a working copy.
+function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null }) {
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
-  <form method="post" action="${action}" class="form" data-draft="1">
+  <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     <div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
       <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? 'e.g. claude-monet' : ''}">
       <div class="hint">${HINTS.slug}</div></div>
     ${Object.entries(t.fields).map(([key, kind]) => fieldInput(key, kind, f, ctx))}
-    <div class="actions"><button>${isNew ? 'Create' : 'Save'}</button>
-      <a class="button secondary" href="${isNew ? `/${t.folder}` : `/${t.folder}/${slug}`}">Cancel</a></div>
+    <div class="actions"><button>${isNew ? 'Create' : collab ? 'Publish' : 'Save'}</button>
+      <a class="button secondary" href="${isNew ? `/${t.folder}` : `/${t.folder}/${slug}`}">${collab ? 'Close' : 'Cancel'}</a>
+      ${collab ? html`<a class="button secondary" href="${action}/discard-changes">Discard unpublished changes…</a>
+        <span class="muted small">Changes are shared live with everyone editing this entry; Publish makes them public.</span>` : ''}</div>
   </form>`;
 }
 

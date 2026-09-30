@@ -12,6 +12,7 @@ const config = require('../config');
 const { adminPool } = require('../db');
 const { userFromRequest, adminOrigin } = require('./auth');
 const { BY_TYPE, SLUG } = require('../content');
+const collab = require('./collab');
 
 const clients = new Set();  // { ws, user: {id, username}, page: {type, slug, id, mode} | null, field, alive }
 let wss = null;
@@ -48,12 +49,14 @@ function attach(server) {
 }
 
 // On shutdown (pm2 reload): tell browsers to reconnect (1012 = service restart) instead of waiting for a timeout.
-function close() {
+async function close() {
+  await collab.flush().catch(() => {});  // working copies to Postgres first
   for (const c of clients) c.ws.close(1012, 'restart');
 }
 
 function connected(ws, user) {
   const c = { ws, user, page: null, field: null, alive: true };
+  c.send = (msg) => send(c, msg);  // collab.js relays through this
   clients.add(c);
   ws.on('pong', () => { c.alive = true; });
   // Strictly in order per connection: after a reconnect the browser sends "hello" and its pending draft back to back,
@@ -65,7 +68,11 @@ function connected(ws, user) {
       send(c, { t: 'error', message: 'The server could not handle that — your changes are still in this page.' });
     });
   });
-  ws.on('close', () => { clients.delete(c); broadcastPresence(); });
+  ws.on('close', () => {
+    clients.delete(c);
+    broadcastPresence();
+    c.queue.then(() => collab.leave(c)).catch((err) => console.error('collab leave failed', err));
+  });
   send(c, { t: 'welcome', user: user.username });
 }
 
@@ -98,6 +105,13 @@ async function handle(c, data) {
       RETURNING updated_at`,
     [c.user.id, c.page.type, c.page.id, JSON.stringify(form), form.version || null]);
     send(c, { t: 'saved', at: rows[0].updated_at, seq: msg.seq });
+  } else if (msg.t === 'doc-join' && c.page && c.page.mode === 'edit' && c.page.id) {
+    // Shared working copy of the entry this page edits (step 2) — sv: the browser's Yjs state vector (base64)
+    await collab.join(c, BY_TYPE[c.page.type], c.page.id, typeof msg.sv === 'string' ? msg.sv : null);
+  } else if (msg.t === 'doc-update' && typeof msg.update === 'string') {
+    collab.update(c, msg.update);
+  } else if (msg.t === 'awareness' && typeof msg.update === 'string') {
+    collab.awareness(c, msg.update);
   } else if (msg.t === 'discard' && c.page && c.page.mode !== 'view') {
     await adminPool.query('DELETE FROM admin_drafts WHERE user_id = $1 AND entity_type = $2 AND entity_id IS NOT DISTINCT FROM $3',
       [c.user.id, c.page.type, c.page.id]);

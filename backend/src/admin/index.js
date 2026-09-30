@@ -19,6 +19,7 @@ const { planChangeSet, planVersion, execute, fingerprint, revertedBy, unconfirme
 const { planPage } = require('./revert-ui');
 const { wordDiff, isLongText } = require('./textdiff');
 const drafts = require('./drafts');
+const collab = require('./collab');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
 const { docToForm, formToDoc, entityForm, humanize, HINTS } = require('./forms');
 
@@ -38,6 +39,8 @@ router.use(loadUser);
 // Fixed messages for ?done=… after a redirect (never reflect arbitrary text).
 const DONE = {
   created: 'Created.', saved: 'Saved.', deleted: 'Deleted.', unchanged: 'No changes.',
+  published: 'Published — the working copy is now the public version.',
+  discarded: 'Unpublished changes discarded — the working copy is back to the published version.',
   reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
   restored: 'Version restored.',
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
@@ -57,6 +60,14 @@ function draftBanner({ draft, changed, restoreUrl, t, slug }) {
     <span class="actions"><a class="button" href="${restoreUrl}">Restore them</a>
     <form method="post" action="/drafts/discard" class="inline"><input type="hidden" name="type" value="${t.type}">
       <input type="hidden" name="slug" value="${slug || ''}"><button class="secondary">Discard</button></form></span></div>`;
+}
+
+// Entry with a working copy that differs from what is published (live step 2).
+function unpublishedBanner(t, e, pending, onEditPage) {
+  const who = pending.contributors.length ? pending.contributors.join(', ') : 'someone';
+  return html`<div class="flash draft"><b>Unpublished changes</b> by ${who} (last ${when(pending.updated_at)}).
+    ${onEditPage ? html`They are shown below — <b>Publish</b> makes them public.`
+    : html`This page shows the published version. <a href="/${t.folder}/${e.slug}/edit">Open the working copy</a>`}</div>`;
 }
 
 function restoredBanner({ draft, rb, t, slug }) {
@@ -255,6 +266,11 @@ async function runPlan(req, res, kind, id) {
     const active = plan.items.filter((i) => i.include && i.op !== 'none' && !i.blocked);
     if (apply && active.length && Object.values(results).every((r) => r.ok)) {
       await client.query('COMMIT');
+      // Entries changed here may have open working copies (live step 2): rebase them, or close them if deleted.
+      for (const item of plan.items.filter((i) => i.table !== 'relationships' && i.include && i.op !== 'none' && !i.blocked)) {
+        const tt = BY_FOLDER[item.table];
+        if (item.op === 'delete') await collab.gone(tt, item.rowId); else await collab.changedElsewhere(tt, item.rowId);
+      }
       if (kind === 'restore') {
         const [item] = plan.items;
         const { rows } = await adminPool.query(`SELECT slug FROM ${item.table} WHERE id = $1`, [item.rowId]);
@@ -343,13 +359,19 @@ router.get('/', async (req, res) => {
     'SELECT type::text, count(*)::int AS n FROM entity_index GROUP BY type')).rows.map((r) => [r.type, r.n]));
   const rels = (await adminPool.query('SELECT count(*)::int AS n FROM relationships')).rows[0].n;
   const recent = await history(adminPool, 'true', [], { limit: 15 });
+  const unpublishedRows = (await adminPool.query(`
+    SELECT d.entity_type::text AS type, e.slug, e.name, d.contributors, d.updated_at FROM live_docs d
+    JOIN entity_index e ON e.type = d.entity_type AND e.id = d.entity_id
+    WHERE d.dirty ORDER BY d.updated_at DESC LIMIT 30`)).rows;
   const myDrafts = (await adminPool.query(`
     SELECT d.entity_type::text AS type, d.updated_at, e.slug, e.name FROM admin_drafts d
     LEFT JOIN entity_index e ON e.type = d.entity_type AND e.id = d.entity_id
-    WHERE d.user_id = $1 AND (d.entity_id IS NULL OR e.id IS NOT NULL) ORDER BY d.updated_at DESC`, [req.user.id])).rows;
+    WHERE d.user_id = $1 AND d.entity_id IS NULL ORDER BY d.updated_at DESC`, [req.user.id])).rows;
   send(req, res, {
     title: 'Dashboard',
     body: html`<h1>Dashboard</h1>
+      ${unpublishedRows.length ? html`<div class="flash draft"><b>Unpublished changes:</b> ${unpublishedRows.map((d, i) => html`${i ? ' · ' : ''}<a href="/${BY_TYPE[d.type].folder}/${d.slug}/edit">${d.name}</a>
+        <span class="muted small">${d.contributors.join(', ')} · ${when(d.updated_at)}</span>`)}</div>` : ''}
       ${myDrafts.length ? html`<div class="flash draft"><b>Your unsaved drafts:</b> ${myDrafts.map((d, i) => html`${i ? ' · ' : ''}<a href="/${BY_TYPE[d.type].folder}/${d.slug ? `${d.slug}/edit` : 'new'}?draft=1">${d.name || `new ${d.type}`}</a>
         <span class="muted small">${when(d.updated_at)}</span>`)}</div>` : ''}
       <div class="cards">${TYPES.map((t) => html`<a class="card" href="/${t.folder}"><b>${counts[t.type] || 0}</b>${humanize(t.folder)}</a>`)}
@@ -710,6 +732,7 @@ router.get('/:plural/:slug', async (req, res) => {
   ]);
   const labels = Object.fromEntries(types.map((x) => [x.code, x.label]));
   const name = e.doc[t.name];
+  const pending = await collab.unpublished(t, e.id);
   send(req, res, {
     title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
     body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}</p>
@@ -717,6 +740,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
+      ${pending ? unpublishedBanner(t, e, pending, false) : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name).map(([key, kind]) => {
         const shown = showValue(t, key, kind, e.doc);
         return shown === null ? '' : html`<dt>${humanize(key)}</dt><dd>${shown}</dd>`;
@@ -766,26 +790,12 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   const { t } = req;
   const e = await findEntity(t, req.params.slug);
   if (!e) return notFoundPage(req, res);
-  const draft = await drafts.getDraft(adminPool, req.user.id, t.type, e.id);
-  let banner = '';
-  let f = docToForm(e.doc, t.fields);
-  let slug = e.slug;
-  let version = e.version;
-  if (draft) {
-    const rb = await drafts.rebase(adminPool, t, e, draft);  // onto what others saved meanwhile
-    const changed = drafts.changedFields(rb.form, t, e);
-    if (!changed.length) {
-      await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);  // nothing unsaved in it (any more)
-    } else if (req.query.draft === '1') {
-      f = formFromBody(rb.form);
-      slug = rb.form.slug || e.slug;
-      version = rb.version;
-      banner = restoredBanner({ draft, rb, t, slug: e.slug });
-    } else {
-      banner = draftBanner({ draft, changed, restoreUrl: `/${t.folder}/${e.slug}/edit?draft=1`, t, slug: e.slug });
-    }
-  }
-  const form = entityForm({ t, slug, f, ctx: await formContext(t), action: `/${t.folder}/${e.slug}`, errors: [], version });
+  // The shared working copy (collab.js): the page shows it even before scripts connect, then stays bound to it.
+  const { form: working, epoch, state } = await collab.currentForm(t, e.id);
+  const pending = await collab.unpublished(t, e.id);
+  const banner = pending ? unpublishedBanner(t, e, pending, true) : '';
+  const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx: await formContext(t),
+    action: `/${t.folder}/${e.slug}`, errors: [], version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state } });
   send(req, res, { title: `Edit ${e.doc[t.name]}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
     body: html`<h1>Edit ${e.doc[t.name]}</h1>${banner}${form}` });
 });
@@ -796,15 +806,49 @@ router.post('/:plural/:slug', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   const result = await saveEntity(req.user, t, req.body, e);
   if (result.errors) {
+    // Refused (validation, or the entry changed elsewhere meanwhile): the working copy is rebased if needed and shown
+    // again with the messages — nothing typed is lost, it is all in the shared copy.
+    await collab.changedElsewhere(t, e.id);
+    const { form: working, epoch, state } = await collab.currentForm(t, e.id);
     const ctx = await formContext(t);
     ctx.errorKeys = errorKeysOf(result.errors);
-    const form = entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx,
-      action: `/${t.folder}/${e.slug}`, errors: result.errors, version: req.body.version });
+    const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
+      action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state } });
     return send(req, res, { title: `Edit ${e.doc[t.name]}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
       body: html`<h1>Edit ${e.doc[t.name]}</h1>${form}` });
   }
-  await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);
-  res.redirect(303, `/${t.folder}/${result.slug}?done=saved`);
+  await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);  // step-1 draft, if any from before
+  await collab.publishedNow(t, e.id, req.user.username);
+  res.redirect(303, `/${t.folder}/${result.slug}?done=published`);
+});
+
+// Discarding resets everyone's working copy, so it is confirmed on a page that lists what would be lost.
+router.get('/:plural/:slug/discard-changes', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  const { form: working } = await collab.currentForm(t, e.id);
+  const changed = drafts.changedFields(working, t, e);
+  const pending = await collab.unpublished(t, e.id);
+  send(req, res, {
+    title: `Discard unpublished changes · ${e.doc[t.name]}`,
+    page: { type: t.type, slug: e.slug, mode: 'view' },
+    body: html`<h1>Discard unpublished changes?</h1>
+      ${changed.length ? html`<p>The working copy of <b>${e.doc[t.name]}</b> differs from the published version in:
+        <b>${changed.join(', ')}</b>${pending && pending.contributors.length ? html` (changes by ${pending.contributors.join(', ')})` : ''}.
+        Discarding resets it to the published version <b>for everyone</b> editing it. This cannot be undone.</p>
+        <form method="post" action="/${t.folder}/${e.slug}/discard-changes" class="actions">
+          <button class="danger">Discard for everyone</button><a class="button secondary" href="/${t.folder}/${e.slug}/edit">Cancel</a></form>`
+      : html`<p>There are no unpublished changes. <a href="/${t.folder}/${e.slug}/edit">Back to the editor</a></p>`}`,
+  });
+});
+
+router.post('/:plural/:slug/discard-changes', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  await collab.discard(t, e.id);
+  res.redirect(303, `/${t.folder}/${e.slug}/edit?done=discarded`);
 });
 
 router.get('/:plural/:slug/delete', async (req, res) => {
@@ -838,6 +882,7 @@ router.post('/:plural/:slug/delete', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   try {
     await withTx(req.user, (db) => db.query(`DELETE FROM ${t.table} WHERE id = $1`, [e.id]));
+    await collab.gone(t, e.id);  // close the working copy for everyone editing it
   } catch (err) {
     return send(req, res, {
       title: `Delete ${e.doc[t.name]}`, status: 409, flash: { kind: 'error', text: friendly(err) },

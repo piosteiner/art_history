@@ -4,6 +4,25 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Admin live connection, step 2: shared working copies with live co-editing (migration 011)
+- **What:** every existing entry has one shared working copy while being edited — a Yjs document (CRDT) on the server
+  (`backend/src/admin/collab.js`), relayed over `/live`, persisted to `live_docs` (bytea state, base version, dirty,
+  contributors). Markdown fields merge character by character with other editors' cursors (y-codemirror.next); short
+  fields sync live (last writer wins). The edit page embeds the copy's state, so editing starts at once and works
+  offline (IndexedDB via y-indexeddb), merging on reconnect; an epoch per copy keeps browsers from mixing lineages.
+  Save → **Publish** (validated + audited as before), after which every editor's copy follows the new version;
+  "Unpublished changes by …" on view/edit pages and the dashboard; "Discard unpublished changes…" with a confirmation
+  page (resets for everyone); reverts/restores rebase open copies, deletions close them. New-entry forms keep step 1's
+  per-user drafts. New runtime deps: yjs 13.6, y-protocols 1.0 (MIT); dev deps y-codemirror.next, y-indexeddb (MIT).
+  Shutdown persists all copies before closing sockets.
+- **Why:** owner: several editors working on the same entry at the same time, nothing lost, drafts internal until published.
+- **Tested (dev, two users in headless Chromium):** simultaneous typing at both ends of a biography converges; short
+  field sync; remote caret; unpublished changes attributed to both; publish by one → the other notified and can publish
+  without conflict; both editing while the server was down → merged after restart; reload shows the copy; discard for
+  everyone; a revert rebases the other user's open copy.
+- **Revert:** redeploy the previous commit (edit pages go back to per-user drafts); 011 can stay (or as owner:
+  `DROP TABLE live_docs` + its schema_migrations row).
+
 ### Admin live connection, step 1: presence + continuously saved drafts (migration 010)
 - **What:** WebSocket `/live` on the admin host, served by the existing pm2 process (`backend/src/admin/live.js`, `ws` 8.22
   MIT; browser side `src/admin/editor/live.js`). Upgrade accepted only on the admin host, only from the admin Origin

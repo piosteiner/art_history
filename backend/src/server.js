@@ -11,11 +11,11 @@ live.attach(server);  // admin panel's WebSocket (/live on the admin host)
 // pm2 reload/stop sends SIGINT: finish in-flight requests, then close DB pools.
 for (const signal of ['SIGINT', 'SIGTERM']) {
   process.on(signal, () => {
-    live.close();  // open WebSockets would otherwise keep server.close() waiting
-    server.close(async () => {
+    // Working copies are persisted first; open WebSockets would otherwise keep server.close() waiting.
+    live.close().finally(() => server.close(async () => {
       await Promise.allSettled([apiPool.end(), adminPool.end()]);
       process.exit(0);
-    });
+    }));
     setTimeout(() => process.exit(1), 5000).unref();
   });
 }

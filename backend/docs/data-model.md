@@ -100,6 +100,12 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
 - `entity_index` view — `UNION ALL` of all six tables as `(type, id, slug, name, period, period_label, kind)`;
   filters on `type`/`id` are pushed down into each branch, so lookups still use primary keys.
 
+## Admin working copies (migrations 010, 011)
+`admin_drafts` holds per-user drafts of *new* entries. `live_docs` holds one shared working copy per existing entry
+being edited: a Yjs document (`state bytea`, the CRDT's binary encoding), the entry version it is based on, whether it
+differs from the published row, and who changed it. Neither is content: not audited, invisible to the API role.
+Publishing goes through the normal save path (validation, optimistic locking, audit log).
+
 ## Roles & privileges
 | Role | Used by | Can |
 |---|---|---|

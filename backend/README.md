@@ -41,7 +41,8 @@ definitions the import/export use, so a form save and a YAML import validate ide
   version…" resets an entity to a past state (`src/admin/revert.js`, `revert-ui.js`, migration 009). Reverts are
   changes too (audit_log.reverts / restores) and can be reverted.
 - Live connection (`src/admin/live.js` + `editor/live.js`, WebSocket `/live`): presence of other users per entry and
-  field, edit forms saved continuously as per-user drafts (`admin_drafts`), restore with rebase onto newer saves.
+  field. Existing entries: one shared working copy per entry (`collab.js` + `editor/collab.js`, Yjs, table `live_docs`),
+  co-edited live with cursors, Publish writes it into the real table. New entries: per-user drafts (`admin_drafts`).
 - Users: `npm run admin:user -- <name>` (asks for the password; also resets it and logs out that user's sessions).
 - Every write runs in a transaction tagged with the user → the `audit_log` trigger records who changed what
   (History pages). Edits use optimistic locking (the form carries `updated_at`; a concurrent save is refused).

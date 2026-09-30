@@ -14,13 +14,19 @@ function el(tag, className, text) {
   return e;
 }
 
+// Returns the connection for other modules (collab.js): { send, on(type, fn), onOpen(fn), isOpen, username, setStatus,
+// enableDrafts(form) }. onOpen handlers run after every (re)connect, right after "hello".
 export function initLive() {
   const body = document.body;
-  if (!body.dataset.live || !('WebSocket' in window)) return;
+  if (!body.dataset.live || !('WebSocket' in window)) return null;
+  const listeners = {};
+  const openHandlers = [];
+  let username = null;
   const page = body.dataset.pageType
     ? { type: body.dataset.pageType, slug: body.dataset.pageSlug || null, mode: body.dataset.pageMode || 'view' }
     : null;
-  const form = document.querySelector('form[data-draft]');
+  let form = document.querySelector('form[data-draft]');
+  const focusForm = document.querySelector('form[data-draft], form[data-collab]');
   const storeKey = page && `ah-draft:${page.type}:${page.slug || 'new'}`;
 
   // --- status indicator & presence bar ------------------------------------------------------------------------
@@ -56,7 +62,8 @@ export function initLive() {
     send(snap === initial ? { t: 'discard', seq } : { t: 'draft', form: JSON.parse(snap), seq });
   }
 
-  if (form && page && page.mode !== 'view') {
+  function enableDrafts(f) {
+    form = f;
     // Baseline right away: the enhancements that ran before this (Markdown editor, pickers) and the map picker (loaded
     // later) never change form values when they start — and a fast typist must not end up in the baseline.
     (() => {
@@ -75,14 +82,18 @@ export function initLive() {
       submitting = true;  // the server deletes the draft once the save succeeds
       safeStore((s) => s.removeItem(storeKey));
     });
-    // Which field am I in? (label text, e.g. "Biography")
+  }
+  if (form && page && page.mode !== 'view') enableDrafts(form);
+
+  // Which field am I in? (label text, e.g. "Biography") — on draft and working-copy forms
+  if (focusForm) {
     let blurTimer = null;
-    form.addEventListener('focusin', (e) => {
+    focusForm.addEventListener('focusin', (e) => {
       clearTimeout(blurTimer);
       const label = e.target.closest('.field')?.querySelector('label');
       send({ t: 'focus', field: label ? label.textContent.trim() : null });
     });
-    form.addEventListener('focusout', () => { blurTimer = setTimeout(() => send({ t: 'focus', field: null }), 300); });
+    focusForm.addEventListener('focusout', () => { blurTimer = setTimeout(() => send({ t: 'focus', field: null }), 300); });
   }
 
   // --- presence -------------------------------------------------------------------------------------------------
@@ -100,7 +111,7 @@ export function initLive() {
     document.querySelectorAll('.presence-tag').forEach((t) => t.remove());
     for (const u of here) {
       if (!u.field) continue;
-      const label = [...document.querySelectorAll('form[data-draft] .field > label')].find((l) => l.textContent.trim() === u.field);
+      const label = [...document.querySelectorAll('form[data-draft] .field > label, form[data-collab] .field > label')].find((l) => l.textContent.trim() === u.field);
       if (label) label.append(el('span', 'tag presence-tag', `${u.user} is here`));
     }
     // Badges in lists and elsewhere: links to entries others are on
@@ -124,6 +135,7 @@ export function initLive() {
       attempt = 0;
       setStatus('Live', 'ok');
       send({ t: 'hello', page });
+      openHandlers.forEach((fn) => fn());
       if (form && initial !== null && !submitting) {
         const pending = safeStore((s) => JSON.parse(s.getItem(storeKey) || 'null'));
         const snap = pending ? pending.snap : snapshot();
@@ -133,7 +145,9 @@ export function initLive() {
     ws.addEventListener('message', (e) => {
       let msg;
       try { msg = JSON.parse(e.data); } catch { return; }
-      if (msg.t === 'presence') showPresence(msg.here || [], msg.all || {});
+      (listeners[msg.t] || []).forEach((fn) => fn(msg));
+      if (msg.t === 'welcome') username = msg.user;
+      else if (msg.t === 'presence') showPresence(msg.here || [], msg.all || {});
       else if (msg.t === 'saved') {
         safeStore((s) => s.removeItem(storeKey));
         setStatus(msg.at ? `Draft saved ${new Date(msg.at).toLocaleTimeString()}` : 'No unsaved changes', 'ok');
@@ -141,11 +155,21 @@ export function initLive() {
     });
     ws.addEventListener('close', (e) => {
       if (e.code === 1008 || e.code === 4401) { setStatus('Not logged in — reload the page', 'warn'); return; }
-      setStatus(form && page && page.mode !== 'view' ? 'Offline — your changes are kept in this browser' : 'Offline — reconnecting…', 'warn');
+      (listeners.close || []).forEach((fn) => fn());
+      setStatus(page && page.mode !== 'view' ? 'Offline — your changes are kept in this browser' : 'Offline — reconnecting…', 'warn');
       const wait = e.code === 1012 ? 500 : RETRY[Math.min(attempt, RETRY.length - 1)];
       attempt += 1;
       setTimeout(connect, wait);
     });
   }
   connect();
+  return {
+    send,
+    isOpen,
+    setStatus,
+    enableDrafts,
+    get username() { return username; },
+    on(type, fn) { (listeners[type] ||= []).push(fn); },
+    onOpen(fn) { openHandlers.push(fn); if (isOpen()) fn(); },
+  };
 }

@@ -63,6 +63,9 @@ function init(box) {
       const ll = latlng.wrap();  // keep longitude within -180…180 after panning around the globe
       lonInput.value = round(ll.lng);
       latInput.value = round(ll.lat);
+      // Tell listeners (the shared working copy, drafts) — setting .value fires no event by itself.
+      lonInput.dispatchEvent(new Event('input', { bubbles: true }));
+      latInput.dispatchEvent(new Event('input', { bubbles: true }));
     }
   }
   function pointFromInputs() {
@@ -96,6 +99,7 @@ function init(box) {
       .map((rings) => rings.map((ring) => ring.map(([x, y]) => [round(x), round(y)])));
     areaInput.value = !polys.length ? ''
       : JSON.stringify(polys.length === 1 ? { type: 'Polygon', coordinates: polys[0] } : { type: 'MultiPolygon', coordinates: polys });
+    areaInput.dispatchEvent(new Event('input', { bubbles: true }));
   }
   function watch(layer) {
     layer.on('pm:edit pm:dragend pm:cut pm:remove', writeArea);

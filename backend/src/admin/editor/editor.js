@@ -14,6 +14,8 @@ import { markdownLanguage } from '@codemirror/lang-markdown';
 import { tags as t } from '@lezer/highlight';
 import { initAutocomplete } from './autocomplete';
 import { initLive } from './live';
+import { yCollab, yUndoManagerKeymap } from 'y-codemirror.next';
+import { startCollab } from './collab';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -122,7 +124,9 @@ async function renderPreview(text) {
   return res.text();  // sanitized HTML from the server
 }
 
-function enhance(textarea) {
+// collab: { ytext, awareness, undoManager } — edit a shared working copy's text (live step 2): the Y.Text is the source,
+// other editors' cursors/selections are drawn, and undo only undoes your own changes.
+function enhance(textarea, collab = null) {
   const wrapper = document.createElement('div');
   wrapper.className = 'md-editor';
   const toolbar = document.createElement('div');
@@ -137,11 +141,11 @@ function enhance(textarea) {
   const view = new EditorView({
     parent: editorBox,
     state: EditorState.create({
-      doc: textarea.value,
+      doc: collab ? collab.ytext.toString() : textarea.value,
       extensions: [
-        history(),
+        collab ? yCollab(collab.ytext, collab.awareness, { undoManager: collab.undoManager }) : history(),
         drawSelection(),
-        keymap.of([...shortcuts, ...defaultKeymap, ...historyKeymap]),
+        keymap.of([...shortcuts, ...defaultKeymap, ...(collab ? yUndoManagerKeymap : historyKeymap)]),
         new LanguageSupport(markdownLanguage),
         syntaxHighlighting(liveStyle),
         EditorView.lineWrapping,
@@ -202,9 +206,16 @@ function enhance(textarea) {
   }
 }
 
-document.querySelectorAll('textarea.md').forEach(enhance);
 initAutocomplete();
-initLive();
+const live = initLive();
+const collabForm = document.querySelector('form[data-collab]');
+if (collabForm && live) {
+  // Existing entry: bind the form to the shared working copy; the Markdown editors are created once it is synced.
+  startCollab(collabForm, live, enhance);
+  document.querySelectorAll('textarea.md').forEach((ta) => { if (!collabForm.contains(ta)) enhance(ta); });
+} else {
+  document.querySelectorAll('textarea.md').forEach((ta) => enhance(ta));
+}
 
 // The map picker (Leaflet + Geoman, ~200 KB) is only fetched on pages that have one (place forms).
 if (document.querySelector('.map-picker')) {
