@@ -47,6 +47,9 @@ function init(box) {
   const map = L.map(mapDiv, { worldCopyJump: true }).setView([48, 8], 4);
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
+    // OSM's tile policy requires a Referer; the admin pages send none to other sites (Referrer-Policy: same-origin,
+    // app.js) and OSM then serves an "Access blocked" tile. For tiles only: send our origin, never the page's path.
+    referrerPolicy: 'strict-origin-when-cross-origin',
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 

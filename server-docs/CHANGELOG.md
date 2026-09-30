@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Fix: OpenStreetMap tiles blocked in the admin map
+- **What:** the map picker's tile layer sets `referrerPolicy: 'strict-origin-when-cross-origin'` on its tile images, so
+  OSM receives `Referer: https://admin.arthistory.piogino.ch/` (origin only). The pages keep `Referrer-Policy: same-origin`.
+- **Why:** OSM's tile policy requires a Referer; since the admin pages send none to other sites (2026-09-29 login fix),
+  browsers got OSM's "Access blocked" tile (served with status 200). Verified: browser-like request without Referer →
+  blocked tile, with our origin → real tile.
+- **Revert:** redeploy the previous commit.
+
 ### Admin live connection, step 2: shared working copies with live co-editing (migration 011)
 - **What:** every existing entry has one shared working copy while being edited — a Yjs document (CRDT) on the server
   (`backend/src/admin/collab.js`), relayed over `/live`, persisted to `live_docs` (bytea state, base version, dirty,
