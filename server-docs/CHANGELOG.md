@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Migration 008: clearer inverse labels
+- **What:** `member_of` → "has member" (was "member"), `owned_by` → "owner of" (was "owned"), `housed_at` → "holds / held"
+  (was "held"). Display text only; codes and data unchanged.
+- **Why:** owner review of all labels: the inverse is what the object's page shows, and these read awkwardly.
+- **Revert:** as arthistory_owner, set the three inverse labels back and delete the `schema_migrations` row for 008.
+
 ### Migration 007: relationship vocabulary round 2; reverse types in the admin form
 - **What:** `inspired_by_place` removed (unused; overlapped with `influenced_by_culture_of`), `depicts` added (artwork →
   place, category association), `owned_by` / `commissioned` / `patron_of` widened to institutions and places. Admin
