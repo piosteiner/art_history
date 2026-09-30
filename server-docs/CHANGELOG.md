@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Admin: typo-tolerant search everywhere + fuzzy pickers; deploy keeps dev dependencies
+- **What:** one scoring rule for all admin search boxes (`backend/src/admin/match.js`): name prefix > word start >
+  substring > pg_trgm `word_similarity` (also with spaces removed: "vangog" → Van Gogh), plus alternative names/titles
+  (0.9×). Used by the list pages (now typo-tolerant, best match first), `/search` (alt names now fuzzy), and the new
+  `GET /lookup` behind the form pickers (`src/admin/editor/autocomplete.js`: creator, institution, place, parent,
+  relationship target — the latter filtered by the relationship type's allowed target types; keyboard + mouse).
+  `deploy.sh` no longer runs `npm prune --omit=dev`: this checkout is also the dev environment, and pruning removed
+  esbuild, breaking the next local build. Dev bundles now go to `src/admin/static-dev/` (served first by the dev
+  server only), so a dev build can never replace the bundles production serves from `static/`.
+- **Why:** owner: all search bars should tolerate typos.
+- **Tested (dev, headless Chromium):** "hokusia" → Hokusai picked with Enter (form not submitted), existing parent shown as
+  "→ France (place)", "lived in" + "pari" → only the place Paris, "influenced by" + "hirosige" → Hiroshige first.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: search across everything
 - **What:** `GET /search` (+ a search box in the admin top bar), `backend/src/admin/search.js`: one query over all six
   entity tables — names (accent-insensitive, typo-tolerant `word_similarity`), alt names/slug/medium/Wikidata id/metadata

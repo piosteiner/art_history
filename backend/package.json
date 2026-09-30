@@ -6,7 +6,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "dev": "npm run build:admin && DB_NAME=arthistory_dev PORT=3005 node --watch src/server.js",
+    "dev": "npm run build:admin:dev && DB_NAME=arthistory_dev PORT=3005 node --watch src/server.js",
     "migrate": "node scripts/migrate.js",
     "migrate:dev": "DB_NAME=arthistory_dev node scripts/migrate.js",
     "import": "node scripts/import.js",
@@ -16,7 +16,8 @@
     "export:dev": "DB_NAME=arthistory_dev node scripts/export.js",
     "admin:user": "node scripts/admin-user.js",
     "admin:user:dev": "DB_NAME=arthistory_dev node scripts/admin-user.js",
-    "build:admin": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --minify --format=iife --target=es2020 --outdir=src/admin/static --loader:.png=dataurl --loader:.svg=dataurl"
+    "build:admin": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --minify --format=iife --target=es2020 --loader:.png=dataurl --loader:.svg=dataurl --outdir=src/admin/static",
+    "build:admin:dev": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --format=iife --target=es2020 --loader:.png=dataurl --loader:.svg=dataurl --sourcemap --outdir=src/admin/static-dev"
   },
   "engines": {
     "node": ">=22"

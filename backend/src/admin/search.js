@@ -2,7 +2,8 @@
 //
 // Unlike the public /v1/search (names only), this finds an entity by
 //   1. its name — accent-insensitive and typo-tolerant (pg_trgm word_similarity), ranked highest
-//   2. other names & identifiers — alt names/titles, sort name, slug, medium, Wikidata id, metadata (ILIKE substring)
+//   2. alternative names/titles and sort name — also typo-tolerant (src/admin/match.js)
+//      other identifiers — slug, medium, Wikidata id, metadata … (ILIKE substring)
 //   3. its text — biography / description / notes, with Postgres full-text search: to_tsvector('english', …) stems
 //      words ("painted" matches "painting"), websearch_to_tsquery understands  "exact phrase", -exclude, a OR b
 // and separately finds relationships by their label, notes and sources.
@@ -12,68 +13,75 @@
 //   CREATE INDEX artists_fts ON artists USING gin (to_tsvector('english', f_unaccent(coalesce(biography_md, ''))));
 // (the query below uses exactly that expression, so the planner would pick it up).
 const { html, raw } = require('./html');
-const { BY_TYPE } = require('../content');
+const { BY_TYPE, TYPES } = require('../content');
+const { THRESHOLD, likeParam, scoreSql, altScoreSql, altSql } = require('./match');
 
 // ts_headline marks hits with these control characters; the page escapes the text, then turns them into <mark>.
 const START = '\u0002';
 const STOP = '\u0003';
 
+// One row per entity, whatever its table, generated from the content model (src/content.js):
+//   name · alt (alternative names/titles + sort name, fuzzy-matched) · other (short text fields, slug, Wikidata id,
+//   metadata — substring-matched) · body (the Markdown text, full-text searched)
+function docsSql() {
+  return TYPES.map((t) => {
+    const entries = Object.entries(t.fields);
+    const shortText = entries.filter(([k, kind]) => kind === 'text' && k !== t.name && k !== 'sort_name').map(([k]) => `t.${k}`);
+    const body = entries.find(([, kind]) => kind === 'md');
+    return `SELECT '${t.type}'::entity_type AS type, t.id, t.slug, t.${t.name} AS name, ${altSql(t, 't') || 'NULL'} AS alt,
+         concat_ws(' · ', ${[...shortText, "nullif(t.metadata, '{}')::text"].join(', ')}) AS other,
+         ${body ? `t.${body[0]}` : 'NULL'} AS body
+    FROM ${t.table} t`;
+  }).join('\n  UNION ALL\n  ');
+}
+
 const ENTITY_SQL = `
-WITH q AS (
-  SELECT f_unaccent($1) AS text,
-         '%' || f_unaccent($2) || '%' AS pattern,                         -- $2 = $1 with LIKE wildcards escaped
-         websearch_to_tsquery('english', f_unaccent($1)) AS tsq
-),
--- One row per entity, whatever its table: name, "other" searchable text, and the long Markdown text.
-docs (type, slug, name, other, body) AS (
-  SELECT 'artist'::entity_type, slug, name,
-         concat_ws(' · ', sort_name, array_to_string(alt_names, ' · '), wikidata_id, nullif(metadata, '{}')::text), biography_md
-    FROM artists
-  UNION ALL
-  SELECT 'artwork', slug, title,
-         concat_ws(' · ', array_to_string(alt_titles, ' · '), attribution_label, medium, kind, inventory_number, wikidata_id,
-                   nullif(metadata, '{}')::text), description_md
-    FROM artworks
-  UNION ALL
-  SELECT 'institution', slug, name,
-         concat_ws(' · ', array_to_string(alt_names, ' · '), kind, website_url, wikidata_id, nullif(metadata, '{}')::text), description_md
-    FROM institutions
-  UNION ALL
-  SELECT 'patron', slug, name,
-         concat_ws(' · ', array_to_string(alt_names, ' · '), kind, wikidata_id, nullif(metadata, '{}')::text), notes_md
-    FROM patrons
-  UNION ALL
-  SELECT 'movement', slug, name,
-         concat_ws(' · ', array_to_string(alt_names, ' · '), wikidata_id, nullif(metadata, '{}')::text), description_md
-    FROM movements
-  UNION ALL
-  SELECT 'place', slug, name,
-         concat_ws(' · ', array_to_string(alt_names, ' · '), country_code, wikidata_id, nullif(metadata, '{}')::text), description_md
-    FROM places
+WITH q AS (SELECT websearch_to_tsquery('english', f_unaccent($1)) AS tsq),
+docs AS (
+  ${docsSql()}
 ),
 scored AS (
   SELECT d.*,
-         CASE WHEN f_unaccent(d.name) ILIKE q.pattern THEN 1
-              ELSE word_similarity(q.text, f_unaccent(d.name)) END   AS name_score,
-         f_unaccent(d.slug || ' · ' || d.other) ILIKE q.pattern      AS other_hit,
-         to_tsvector('english', f_unaccent(coalesce(d.body, '')))   AS body_tsv,
+         ${scoreSql('d.name')} AS name_score,
+         ${altScoreSql('d.alt')} AS alt_score,
+         f_unaccent(d.slug || ' · ' || d.other) ILIKE '%' || f_unaccent($2) || '%' AS other_hit,
+         to_tsvector('english', f_unaccent(coalesce(d.body, ''))) AS body_tsv,
          q.tsq
   FROM docs d, q
 )
 SELECT type::text, slug, name,
-       name_score >= 0.5 AS name_hit,
+       name_score >= ${THRESHOLD} AS name_hit,
+       CASE WHEN alt_score >= ${THRESHOLD} AND name_score < ${THRESHOLD} THEN alt END AS alt,
        CASE WHEN other_hit THEN other END AS other,
        CASE WHEN body_tsv @@ tsq
             THEN ts_headline('english', body, tsq, 'StartSel=${START}, StopSel=${STOP}, MaxWords=30, MinWords=12, MaxFragments=2, FragmentDelimiter=" … "')
        END AS snippet,
-       -- Name hits first, then identifier hits, then text hits by relevance (ts_rank is small, ~0–0.1).
-       greatest(CASE WHEN name_score >= 0.5 THEN name_score ELSE 0 END,
+       -- Names first, then alternative names, identifiers, and text hits by relevance (ts_rank is small, ~0–0.1).
+       greatest(CASE WHEN name_score >= ${THRESHOLD} THEN name_score ELSE 0 END,
+                CASE WHEN alt_score >= ${THRESHOLD} THEN alt_score ELSE 0 END,
                 CASE WHEN other_hit THEN 0.45 ELSE 0 END,
                 CASE WHEN body_tsv @@ tsq THEN 0.2 + ts_rank(body_tsv, tsq) ELSE 0 END) AS score
 FROM scored
-WHERE name_score >= 0.5 OR other_hit OR body_tsv @@ tsq
+WHERE name_score >= ${THRESHOLD} OR alt_score >= ${THRESHOLD} OR other_hit OR body_tsv @@ tsq
 ORDER BY score DESC, name
 LIMIT 100`;
+
+// Picker suggestions (GET /lookup): best name / alternative-name matches of the given types.
+const LOOKUP_SQL = `
+WITH docs AS (
+  ${docsSql()}
+),
+scored AS (
+  SELECT d.type, d.id, d.slug, d.name, d.alt, greatest(${scoreSql('d.name', 'd.alt')},
+         CASE WHEN d.slug ILIKE $2 || '%' THEN 1.05 ELSE 0 END) AS score
+  FROM docs d
+  WHERE d.type = ANY ($3::entity_type[])
+)
+SELECT s.type::text, s.slug, s.name, s.alt, e.period_label, round(s.score::numeric, 2) AS score
+FROM scored s JOIN entity_index e ON e.type = s.type AND e.id = s.id
+WHERE s.score >= ${THRESHOLD}
+ORDER BY s.score DESC, s.name
+LIMIT 12`;
 
 const RELATIONSHIP_SQL = `
 WITH q AS (
@@ -97,7 +105,7 @@ ORDER BY s.name, rt.sort_order
 LIMIT 50`;
 
 async function search(db, q) {
-  const params = [q, q.replace(/[\\%_]/g, '\\$&')];
+  const params = [q, likeParam(q)];
   const [entities, relationships] = await Promise.all([db.query(ENTITY_SQL, params), db.query(RELATIONSHIP_SQL, params)]);
   return { entities: entities.rows, relationships: relationships.rows };
 }
@@ -129,6 +137,7 @@ function resultsPage(q, { entities, relationships }) {
       <div class="search-results">${byType[t].map((e) => html`<div class="search-hit">
         <a href="/${BY_TYPE[t].folder}/${e.slug}">${raw(e.name_hit ? highlight(e.name, q) : html`${e.name}`.toString())}</a>
         <span class="muted">${e.slug}</span>
+        ${e.alt ? html`<div class="muted small">also: ${raw(highlight(e.alt, q))}</div>` : ''}
         ${e.other ? html`<div class="muted small">${raw(highlight(e.other, q))}</div>` : ''}
         ${e.snippet ? html`<div class="small">${raw(marked(e.snippet))}</div>` : ''}
       </div>`)}</div>`)}
@@ -143,4 +152,8 @@ function resultsPage(q, { entities, relationships }) {
     ${q && !total ? html`<p>Nothing found. The name search tolerates typos; text search matches whole words (and their forms).</p>` : ''}`;
 }
 
-module.exports = { search, resultsPage };
+async function lookup(db, q, types) {
+  return (await db.query(LOOKUP_SQL, [q, likeParam(q), types])).rows;
+}
+
+module.exports = { search, resultsPage, lookup };

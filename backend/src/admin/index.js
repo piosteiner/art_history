@@ -7,19 +7,24 @@
 //   /relationships/<id>/edit   edit one relationship    /history             all changes
 const express = require('express');
 const path = require('path');
+const config = require('../config');
 const { adminPool } = require('../db');
 const { TYPES, BY_FOLDER, BY_TYPE, SLUG, toRow, readDocs, readRelationships } = require('../content');
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { renderMarkdown } = require('../markdown');
 const { html, raw, layout } = require('./html');
 const { login, logout, loadUser, checkOrigin } = require('./auth');
-const { search, resultsPage } = require('./search');
+const { search, resultsPage, lookup } = require('./search');
+const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
 const { docToForm, formToDoc, entityForm, humanize, HINTS } = require('./forms');
 
 const router = express.Router();
 const PAGE = 50;
 const an = (word) => `${/^[aeiou]/.test(word) ? 'an' : 'a'} ${word}`;
 
+// Development serves its own bundles first (npm run build:admin:dev → static-dev/): this checkout is also production,
+// and a dev build must never replace the bundles the live site serves from static/.
+if (config.env !== 'production') router.use('/static', express.static(path.join(__dirname, 'static-dev'), { index: false }));
 router.use('/static', express.static(path.join(__dirname, 'static'), { index: false, maxAge: '1h' }));
 router.use((req, res, next) => { res.set('Cache-Control', 'no-store'); next(); });
 router.use(express.urlencoded({ extended: false, limit: '1mb' }));
@@ -230,6 +235,14 @@ router.get('/search', async (req, res) => {
   send(req, res, { title: q ? `Search: ${q}` : 'Search', body: resultsPage(q, results) });
 });
 
+// Suggestions for the pickers in forms (src/admin/editor/autocomplete.js): ?q=…&types=place,artist
+router.get('/lookup', async (req, res) => {
+  const q = String(req.query.q || '').trim().slice(0, 100);
+  const types = String(req.query.types || '').split(',').filter((x) => BY_TYPE[x]);
+  if (!q || !types.length) return res.json([]);
+  res.json(await lookup(adminPool, q, types));
+});
+
 router.get('/history', async (req, res) => {
   const page = pageParam(req);
   const h = await history(adminPool, 'true', [], { offset: (page - 1) * PAGE });
@@ -278,9 +291,9 @@ function relForm({ action, types, entities, rel = {}, submit }) {
   return html`<form method="post" action="${action}" class="form">
     <div class="row">
       <div class="field"><label for="r-type">Relationship</label>
-        <select id="r-type" name="type" required>${types.map((t) => html`<option value="${t.code}"${t.code === rel.type ? ' selected' : ''}>${t.label} (${t.object_types.join(', ')})</option>`)}</select></div>
+        <select id="r-type" name="type" required>${types.map((t) => html`<option value="${t.code}" data-object-types="${t.object_types.join(',')}"${t.code === rel.type ? ' selected' : ''}>${t.label} (${t.object_types.join(', ')})</option>`)}</select></div>
       <div class="field"><label for="r-to">Target</label>
-        <input id="r-to" name="to" value="${v('to')}" list="r-to-list" required placeholder="type a name, pick e.g. place/paris" autocomplete="off">
+        <input id="r-to" name="to" value="${v('to')}" list="r-to-list" required placeholder="start typing a name (typos are fine)" autocomplete="off" data-lookup-from="r-type">
         <datalist id="r-to-list">${entities.map((e) => html`<option value="${e.ref}">${e.name}</option>`)}</datalist></div>
     </div>
     <div class="row">
@@ -394,25 +407,25 @@ router.get('/:plural', async (req, res) => {
   const { t } = req;
   const q = String(req.query.q || '').trim();
   const page = pageParam(req);
-  const params = [];
-  let where = 'true';
-  if (q) {
-    params.push(q);
-    where = `(f_unaccent(t.${t.name}) ILIKE '%' || f_unaccent($1) || '%' OR t.slug ILIKE '%' || $1 || '%')`;
-  }
+  // With a query: typo-tolerant match on name, alternative names and slug, best first (src/admin/match.js).
+  const params = q ? [q, likeParam(q)] : [];
+  const score = q ? `greatest(${scoreSql(`t.${t.name}`, altSql(t, 't'))}, CASE WHEN t.slug ILIKE '%' || $2 || '%' THEN 1.0 ELSE 0 END)` : 'NULL';
   const { rows } = await adminPool.query(`
-    SELECT t.slug, t.${t.name} AS name, t.updated_at,
-           (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
-                                                         OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
-    FROM ${t.table} t WHERE ${where} ORDER BY t.${t.name}
+    SELECT * FROM (
+      SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score,
+             (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
+                                                           OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
+      FROM ${t.table} t) x
+    ${q ? `WHERE score >= ${THRESHOLD} ORDER BY score DESC, name` : 'ORDER BY name'}
     LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [...params, t.type]);
   send(req, res, {
     title: humanize(t.folder),
     body: html`<h1>${humanize(t.folder)}</h1>
-      <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name or slug" class="grow" type="search">
+      <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a></form>
       ${rows.length ? html`<div class="table-wrap"><table><thead><tr><th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
-        ${rows.slice(0, PAGE).map((r) => html`<tr><td><a href="/${t.folder}/${r.slug}">${r.name}</a></td><td class="muted">${r.slug}</td>
+        ${rows.slice(0, PAGE).map((r) => html`<tr><td><a href="/${t.folder}/${r.slug}">${r.name}</a>
+          ${q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
       ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}`,

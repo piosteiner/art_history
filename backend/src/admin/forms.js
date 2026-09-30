@@ -100,7 +100,8 @@ function fieldInput(key, kind, f, ctx) {
   if (kind === 'parent' || kind.startsWith('ref:')) {
     const options = ctx.refs[key] || [];
     return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
-      <input id="${id}" name="${name}" value="${f[key]}" list="${id}-list" placeholder="start typing a name or slug" autocomplete="off">
+      <input id="${id}" name="${name}" value="${f[key]}" list="${id}-list" placeholder="start typing a name (typos are fine)" autocomplete="off"
+        data-lookup="${kind === 'parent' ? ctx.type : kind.slice(4)}">
       <datalist id="${id}-list">${options.map((o) => html`<option value="${o.slug}">${o.name}</option>`)}</datalist>
       ${hint(`Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}</div>`;
   }
@@ -116,7 +117,7 @@ function fieldInput(key, kind, f, ctx) {
 
 // version: the row's updated_at when the form was opened (optimistic locking on save).
 function entityForm({ t, slug, f, ctx, action, errors, isNew, version }) {
-  ctx = { ...ctx, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // the map draws into it
+  ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   <form method="post" action="${action}" class="form">

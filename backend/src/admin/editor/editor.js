@@ -12,6 +12,7 @@ import { syntaxHighlighting, HighlightStyle, LanguageSupport } from '@codemirror
 // Just the Markdown (GFM) grammar — markdown() would also bundle HTML/CSS/JS highlighting for code blocks (~150 KB).
 import { markdownLanguage } from '@codemirror/lang-markdown';
 import { tags as t } from '@lezer/highlight';
+import { initAutocomplete } from './autocomplete';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -201,6 +202,7 @@ function enhance(textarea) {
 }
 
 document.querySelectorAll('textarea.md').forEach(enhance);
+initAutocomplete();
 
 // The map picker (Leaflet + Geoman, ~200 KB) is only fetched on pages that have one (place forms).
 if (document.querySelector('.map-picker')) {

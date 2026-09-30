@@ -26,7 +26,8 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - Admin panel: `backend/src/admin/`; forms come from `src/content.js` (shared with import/export). Dev login:
   `npm run admin:user:dev -- <name>`, then http://admin.localhost:3005/ (host-based routing). Markdown editor:
   `src/admin/editor/` (CodeMirror 6; map picker = Leaflet + Geoman) → `npm run build:admin` → `static/editor.js`,
-  `map.js`, `map.css` (git-ignored; `npm run dev` and `deploy.sh` build them).
+  `map.js`, `map.css` (git-ignored; `deploy.sh` builds them). `npm run dev` builds into `static-dev/` instead — this checkout
+  is also production, so never run `npm run build:admin` by hand without deploying right after.
 - Schema: new `backend/db/migrations/NNN_*.sql` (never edit applied ones) → `npm run migrate:dev` → smoke test
   `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql` → commit → `backend/deploy.sh`.
 - Deploy: `backend/deploy.sh` (pull, npm ci, migrate, pm2 reload, health probe).

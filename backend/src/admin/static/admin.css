@@ -102,3 +102,13 @@ details > summary { cursor: pointer; }
 .search-hit { padding: .45rem 0; border-bottom: 1px solid var(--line); }
 .small { font-size: .88rem; margin-top: .15rem; }
 mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: inherit; border-radius: 2px; padding: 0 .1em; }
+
+/* Pickers (src/admin/editor/autocomplete.js) */
+.ac { position: relative; }
+.ac-list { position: absolute; z-index: 1000; left: 0; right: 0; top: 100%; margin: 2px 0 0; padding: .2rem 0; list-style: none;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 6px 20px rgba(0,0,0,.15);
+  max-height: 320px; overflow-y: auto; }
+.ac-item { padding: .35rem .6rem; cursor: pointer; }
+.ac-item[aria-selected="true"], .ac-item:hover { background: var(--code); }
+.ac-empty { padding: .35rem .6rem; }
+.ac-chosen:empty { display: none; }
