@@ -50,4 +50,6 @@ definitions the import/export use, so a form save and a YAML import validate ide
 ## Content
 - The database is the source of truth. `npm run export` (or `export:dev`) writes it to `../content/` as YAML for a
   readable snapshot in git; `npm run import` still bulk-loads YAML (see `../content/README.md`). Deploys don't import.
-- `npm test` — unit tests (`test/`, Node's built-in runner).
+- `npm test` — unit tests (`test/*.test.js`, Node's built-in runner).
+- `npm run test:e2e` — the admin panel in a headless browser against `arthistory_test` (see `test/e2e/README.md`);
+  `deploy.sh` runs both before touching production.

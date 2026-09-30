@@ -11,13 +11,14 @@
     "migrate:dev": "DB_NAME=arthistory_dev node scripts/migrate.js",
     "import": "node scripts/import.js",
     "import:dev": "DB_NAME=arthistory_dev node scripts/import.js",
-    "test": "node --test",
+    "test": "node --test 'test/*.test.js'",
     "export": "node scripts/export.js",
     "export:dev": "DB_NAME=arthistory_dev node scripts/export.js",
     "admin:user": "node scripts/admin-user.js",
     "admin:user:dev": "DB_NAME=arthistory_dev node scripts/admin-user.js",
     "build:admin": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --minify --format=iife --target=es2020 --loader:.png=dataurl --loader:.svg=dataurl --outdir=src/admin/static",
-    "build:admin:dev": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --format=iife --target=es2020 --loader:.png=dataurl --loader:.svg=dataurl --sourcemap --outdir=src/admin/static-dev"
+    "build:admin:dev": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --format=iife --target=es2020 --loader:.png=dataurl --loader:.svg=dataurl --sourcemap --outdir=src/admin/static-dev",
+    "test:e2e": "playwright test"
   },
   "engines": {
     "node": ">=22"
@@ -44,6 +45,7 @@
     "@codemirror/view": "^6.43.13",
     "@geoman-io/leaflet-geoman-free": "^2.20.2",
     "@lezer/highlight": "^1.2.5",
+    "@playwright/test": "^1.63.0",
     "esbuild": "^0.28.2",
     "leaflet": "^1.9.4",
     "y-codemirror.next": "^0.3.6",

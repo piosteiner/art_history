@@ -30,7 +30,9 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   is also production, so never run `npm run build:admin` by hand without deploying right after.
 - Schema: new `backend/db/migrations/NNN_*.sql` (never edit applied ones) → `npm run migrate:dev` → smoke test
   `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql` → commit → `backend/deploy.sh`.
-- Deploy: `backend/deploy.sh` (pull, npm ci, migrate, pm2 reload, health probe).
+- Tests: `npm test` (unit) + `npm run test:e2e` (Playwright, own DB `arthistory_test`, server :3006; `test/e2e/README.md`).
+  Add an e2e test for every admin feature. Deploy: `backend/deploy.sh` (pull, npm ci, **tests**, build, migrate, pm2 reload,
+  health probe; `--skip-tests` only in emergencies).
 
 ## Status (2026-09-28)
 - ✅ Phase 0 housekeeping, ufw (22/80/443 only) · ✅ Phase 1 health check, nginx, TLS, pm2

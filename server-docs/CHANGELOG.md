@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### End-to-end tests; deploy runs them first
+- **What:** Playwright Test suite for the admin panel (`backend/test/e2e/`, 30 tests: auth/security, entities and
+  relationships, search, history/revert/merge, drafts and live co-editing incl. a server restart, Markdown editor, map
+  picker). Own database `arthistory_test` (created with `db/setup.sh arthistory_test`, reset every run), own server on
+  :3006, users with per-run passwords in the OS temp dir; OSM tiles intercepted. Chromium headless shell in
+  `~/.cache/ms-playwright` (~270 MB). `deploy.sh` now: pull → npm ci → unit + e2e tests → only then build the production
+  bundle, migrate, reload (`--skip-tests` for emergencies). Unit tests limited to `test/*.test.js`.
+  Small app fix found by the tests: a picker whose typed value exactly matches an entry no longer opens its list over
+  the form's buttons.
+- **Why:** the admin panel grew complex (live collaboration, revert/merge); regressions must be caught before production.
+- **Revert:** redeploy the previous commit (deploy.sh without the test step); `sudo -u postgres dropdb arthistory_test`;
+  `rm -r ~/.cache/ms-playwright`.
+
 ### Fix: OpenStreetMap tiles blocked in the admin map
 - **What:** the map picker's tile layer sets `referrerPolicy: 'strict-origin-when-cross-origin'` on its tile images, so
   OSM receives `Referer: https://admin.arthistory.piogino.ch/` (origin only). The pages keep `Referrer-Policy: same-origin`.

@@ -108,7 +108,12 @@ function enhance(input) {
     if (!q) { close(); return; }
     timer = setTimeout(async () => {
       const result = await query(q);
-      if (result) { hits = result; render(); }
+      if (!result) return;
+      // Typed (or pasted) exactly an existing value: that is the choice — no list over the form's buttons.
+      const exact = result.find((h) => valueOf(h) === input.value.trim());
+      if (exact) { showChosen(exact); close(); return; }
+      hits = result;
+      render();
     }, 150);
   });
 

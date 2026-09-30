@@ -45,6 +45,7 @@ function init(box) {
 
   // --- map --------------------------------------------------------------------------------------------------
   const map = L.map(mapDiv, { worldCopyJump: true }).setView([48, 8], 4);
+  mapDiv.leafletMap = map;  // for tests and debugging in the console
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     // OSM's tile policy requires a Referer; the admin pages send none to other sites (Referrer-Policy: same-origin,

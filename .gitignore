@@ -11,6 +11,8 @@ backend/src/admin/static/editor.js
 backend/src/admin/static/map.js
 backend/src/admin/static/map.css
 backend/src/admin/static-dev/
+backend/test/e2e/.results/
+backend/playwright-report/
 logs/
 *.log
 uploads/
