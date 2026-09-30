@@ -19,6 +19,7 @@
 // (daterange, geography, text[], jsonb …) — so no per-type code. Every plan is dry-run first (inside a transaction
 // that is rolled back): what the database would reject is shown before anything is applied.
 const crypto = require('crypto');
+const { merge3 } = require('./textdiff');
 
 const TABLES = ['places', 'movements', 'artists', 'patrons', 'institutions', 'artworks', 'relationships'];
 const IGNORED = new Set(['id', 'created_at', 'updated_at', 'lifespan']);  // never compared or reverted
@@ -80,11 +81,15 @@ function fieldPlan(key, before, after, now, choices) {
     const conflict = !same(now[k], after[k]);
     const already = same(now[k], before[k]);
     const chosen = choices[`f.${key}.${k}`];
+    // A text edited again since: try a word-level three-way merge — undo only this change's words, keep later edits.
+    const merged = conflict && !already && [before[k], after[k], now[k]].every((v) => typeof v === 'string' || v === null)
+      ? merge3(after[k], before[k], now[k]) : null;
     fields.push({
       name: k, before: before[k], after: after[k], now: now[k],
+      merged: merged === null || merged === now[k] ? undefined : merged || null,
       status: already ? 'already' : conflict ? 'conflict' : 'auto',
-      // Conflicts default to keeping the newer value; everything else to reverting. The form's radios override.
-      choice: already ? 'keep' : (chosen || (conflict ? 'keep' : 'revert')),
+      // Conflicts default to merging when that works, else to keeping the newer value; everything else to reverting.
+      choice: already ? 'keep' : (chosen || (conflict ? (merged !== null && merged !== now[k] ? 'merge' : 'keep') : 'revert')),
     });
   }
   return fields;
@@ -172,7 +177,7 @@ async function planChangeSet(db, txid, choices = {}, submitted = false) {
       } else {
         item.op = 'update';
         item.fields = fieldPlan(key, e.old_row, e.new_row, now, choices);
-        if (!item.fields.some((f) => f.choice === 'revert')) item.notes.push('Nothing left to revert here.');
+        if (item.fields.every((f) => f.status === 'already')) item.notes.push('Already undone — nothing left to revert here.');
       }
     } else if (e.action === 'insert') {
       if (!now) { item.op = 'none'; item.notes.push('Already deleted.'); } else {
@@ -239,9 +244,10 @@ async function execute(db, items) {
     await db.query('SAVEPOINT item');
     try {
       if (item.op === 'update') {
-        const cols = item.fields.filter((f) => f.choice === 'revert').map((f) => f.name);
+        const writes = item.fields.filter((f) => f.choice === 'revert' || (f.choice === 'merge' && f.merged !== undefined));
+        const cols = writes.map((f) => f.name);
         if (cols.length) {
-          const json = Object.fromEntries(item.fields.filter((f) => f.choice === 'revert').map((f) => [f.name, f.before]));
+          const json = Object.fromEntries(writes.map((f) => [f.name, f.choice === 'merge' ? f.merged : f.before]));
           await db.query(`UPDATE ${item.table} SET (${cols.join(', ')}) = (SELECT ${cols.join(', ')}
             FROM jsonb_populate_record(NULL::${item.table}, $1::jsonb)) WHERE id = $2`, [JSON.stringify(json), item.rowId]);
         }

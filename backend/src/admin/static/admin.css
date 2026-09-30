@@ -130,3 +130,10 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .warnbox { background: var(--err-bg); color: var(--err); padding: .4rem .6rem; border-radius: 6px; }
 .err { color: var(--err); }
 .sticky-actions { position: sticky; bottom: 0; background: var(--bg); padding: .7rem 0; border-top: 1px solid var(--line); }
+
+/* Word diff for long texts (src/admin/textdiff.js) */
+.wdiff { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.55; }
+.wdiff del { color: var(--err); background: var(--err-bg); text-decoration: line-through; border-radius: 2px; }
+.wdiff ins { color: var(--ok); background: var(--ok-bg); text-decoration: none; border-radius: 2px; }
+.wd-gap { color: var(--muted); padding: 0 .3em; }
+.revert-fields tr.rf-merge td { background: color-mix(in srgb, var(--ok) 6%, transparent); }

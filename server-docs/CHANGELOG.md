@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Admin: word-level diffs for long texts; three-way merge when reverting
+- **What:** history and revert preview show biographies/descriptions/notes (and any text ≥ 80 chars) as a word diff
+  (`backend/src/admin/textdiff.js`, jsdiff 9, BSD-3 — new runtime dependency) with unchanged stretches collapsed.
+  Reverting a text that was edited again since now offers "merge" (default when possible): a word-level three-way merge
+  (diff3 idea) undoes only this change's words and keeps later edits; overlapping edits stay a conflict (keep / revert).
+- **Why:** owner: small edits in long biographies were hard to see; whole-field conflicts forced a choice between
+  losing the later edit and not reverting.
+- **Tested:** unit tests (diff marking/escaping/collapsing, merge incl. overlap and identical edits); on dev a revert of a
+  biography edit with a later edit elsewhere merged correctly (old words back, later edit kept).
+- **Revert:** redeploy the previous commit.
+
 ### Admin: revert changes and restore versions from the history (migration 009)
 - **What:** every history entry has "revert…" (undo one save — all rows of its transaction) and entity history rows have
   "restore this version…". A preview plans each row: three-way comparison per field (before / after the change / now)

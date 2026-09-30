@@ -17,6 +17,7 @@ const { login, logout, loadUser, checkOrigin } = require('./auth');
 const { search, resultsPage, lookup } = require('./search');
 const { planChangeSet, planVersion, execute, fingerprint, revertedBy, unconfirmed } = require('./revert');
 const { planPage } = require('./revert-ui');
+const { wordDiff, isLongText } = require('./textdiff');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
 const { docToForm, formToDoc, entityForm, humanize, HINTS } = require('./forms');
 
@@ -177,7 +178,9 @@ function historyTable(rows, { showWhat = true, restoreFor = null } = {}) {
         ${h.reverted_at ? html`<div class="muted small">reverted ${h.reverted_at.toISOString().slice(0, 10)}</div>` : ''}</td>
       <td>${h.username || html`<span class="muted">—</span>`} <span class="tag">${h.source}</span></td>
       ${showWhat ? html`<td><span class="tag">${h.action}</span> ${h.link ? html`<a href="/${h.link}">${h.what}</a>` : h.what}</td>` : ''}
-      <td>${h.action === 'update' ? html`<table>${entries.map(([k, [o, n]]) => html`<tr><th>${k}</th><td class="old">${short(o)}</td><td class="new">${short(n)}</td></tr>`)}</table>`
+      <td>${h.action === 'update' ? html`<table>${entries.map(([k, [o, n]]) => (isLongText(k, o, n)
+          ? html`<tr><th>${k}</th><td colspan="2">${wordDiff(o, n)}</td></tr>`
+          : html`<tr><th>${k}</th><td class="old">${short(o)}</td><td class="new">${short(n)}</td></tr>`))}</table>`
         : html`<span class="tag">${h.action}</span> <span class="muted">${entries.map(([k, [o, n]]) => `${k}: ${short(o ?? n)}`).join(' · ')}</span>`}</td>
       <td class="history-actions">${firstOfTx ? html`<a href="/revert/${h.txid}" title="Undo this save${h.tx_rows > 1 ? ` (${h.tx_rows} rows)` : ''}">revert…</a>` : ''}
         ${canRestore ? html`<a href="/restore/${h.id}" title="Make it look like right after this change">restore this version…</a>` : ''}</td>
