@@ -13,6 +13,7 @@ const { parseFuzzyDate } = require('../fuzzy-date');
 const { renderMarkdown } = require('../markdown');
 const { html, raw, layout } = require('./html');
 const { login, logout, loadUser, checkOrigin } = require('./auth');
+const { search, resultsPage } = require('./search');
 const { docToForm, formToDoc, entityForm, humanize, HINTS } = require('./forms');
 
 const router = express.Router();
@@ -220,6 +221,13 @@ router.get('/', async (req, res) => {
       <h2>Recent changes</h2>${historyTable(recent.rows)}
       <p><a href="/history">All changes →</a></p>`,
   });
+});
+
+// Search across all entity types and relationships (src/admin/search.js).
+router.get('/search', async (req, res) => {
+  const q = String(req.query.q || '').trim().slice(0, 200);
+  const results = q ? await search(adminPool, q) : { entities: [], relationships: [] };
+  send(req, res, { title: q ? `Search: ${q}` : 'Search', body: resultsPage(q, results) });
 });
 
 router.get('/history', async (req, res) => {

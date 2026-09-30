@@ -34,6 +34,8 @@ definitions the import/export use, so a form save and a YAML import validate ide
   same `renderMarkdown()` as the API. The hidden textarea stays in the form, so saving works without JS too.
 - Place forms: map picker (`src/admin/editor/map.js`, Leaflet + Geoman + OSM tiles, bundled to `static/map.js`/`map.css`):
   click/drag the pin, draw/edit area polygons, search via `GET /geocode` (server-side proxy to OSM Nominatim, 1 req/s).
+- Search: `/search` (top bar) finds entities by name (typo-tolerant), other names/identifiers and full text
+  (Postgres FTS, English stemming, `"phrase"`/`-exclude`/`or`), and relationships by label/notes/sources.
 - Users: `npm run admin:user -- <name>` (asks for the password; also resets it and logs out that user's sessions).
 - Every write runs in a transaction tagged with the user → the `audit_log` trigger records who changed what
   (History pages). Edits use optimistic locking (the form carries `updated_at`; a concurrent save is refused).

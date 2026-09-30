@@ -43,6 +43,7 @@ ${nav && user ? html`<header class="top">
     <a href="/movements">Movements</a><a href="/institutions">Institutions</a><a href="/patrons">Patrons</a>
     <a href="/history">History</a>
   </nav>
+  <form method="get" action="/search" class="inline top-search" role="search"><input type="search" name="q" placeholder="Search everything…" aria-label="Search everything"></form>
   <form method="post" action="/logout" class="inline"><span class="muted">${user.username}</span> <button class="link">Log out</button></form>
 </header>` : ''}
 <main>

@@ -2,6 +2,18 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-09-30
+
+### Admin: search across everything
+- **What:** `GET /search` (+ a search box in the admin top bar), `backend/src/admin/search.js`: one query over all six
+  entity tables — names (accent-insensitive, typo-tolerant `word_similarity`), alt names/slug/medium/Wikidata id/metadata
+  (ILIKE), and biography/description/notes via Postgres full-text search (`to_tsvector('english', …)`,
+  `websearch_to_tsquery`, `ts_rank`, `ts_headline` snippets) — plus relationships by label, notes and sources.
+  No schema change, no new index (sequential scan is milliseconds at this size; the GIN expression index to add later
+  is noted in the file). App change only; deployed with `deploy.sh`.
+- **Why:** owner wanted one search over all content instead of per-type lists.
+- **Revert:** redeploy the previous commit.
+
 ## 2026-09-29
 
 ### Admin: map picker for place location and area
