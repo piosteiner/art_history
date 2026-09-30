@@ -118,10 +118,11 @@ function formatFuzzyDate(range, { coarseStart = false } = {}) {
   if (m[2] === '') return `${pointText(lo, coarsest)}/`;
 
   const hi = parseBound(m[2]);
-  let endPrecision, end;
-  if (hi.mo === 1 && hi.d === 1) { endPrecision = YEAR; end = { y: prevYear(hi.y), mo: 12, d: 31 }; }
-  else if (hi.d === 1) { endPrecision = MONTH; end = dayBefore(hi); }
-  else { endPrecision = DAY; end = dayBefore(hi); }
+  // The end is written as coarsely as its bound allows — but not coarser than the start: [1926-12-01,1927-01-01) is
+  // "1926-12" (December), not "1926-12/1926", although 1927-01-01 is also a year boundary.
+  let endPrecision = hi.mo === 1 && hi.d === 1 ? YEAR : hi.d === 1 ? MONTH : DAY;
+  if (coarsest > endPrecision) endPrecision = Math.min(coarsest, hi.d === 1 ? MONTH : DAY);
+  const end = endPrecision === YEAR ? { y: prevYear(hi.y), mo: 12, d: 31 } : dayBefore(hi);
   const startPrecision = coarsest === YEAR && endPrecision !== YEAR && !coarseStart ? MONTH : coarsest;
 
   const endText = pointText(end, endPrecision);

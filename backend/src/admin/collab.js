@@ -246,4 +246,13 @@ async function unpublished(t, id) {
   return rows[0] || null;
 }
 
-module.exports = { join, update, awareness, leave, currentForm, publishedNow, changedElsewhere, discard, gone, flush, unpublished };
+// Put values into the working copy (e.g. reviewed Wikidata values): shared live with everyone editing, published only
+// when someone presses Publish. `username` is recorded as a contributor of the unpublished changes.
+async function applyForm(t, id, partialForm, username) {
+  const entry = await open(t, id);
+  setForm(entry, partialForm, { user: { username } });
+  await persist(entry);
+  if (!entry.conns.size) { entry.doc.destroy(); entries.delete(entry.key); }
+}
+
+module.exports = { join, update, awareness, leave, currentForm, publishedNow, changedElsewhere, discard, gone, flush, unpublished, applyForm };

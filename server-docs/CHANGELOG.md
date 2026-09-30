@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Admin: compare with Wikidata — reviewed, own values first (migration 012)
+- **What:** "Wikidata…" on every entry and "+ from Wikidata…" on lists (`backend/src/admin/wikidata.js`, `wikidata-ui.js`,
+  `src/wikidata-time.js`). Search → review page field by field (yours | Wikidata | take?): empty fields pre-ticked,
+  differing values never; dates with Wikidata precision/circa/Julian→Gregorian; alternative names as opt-in items;
+  Commons image with license/credit; relationship suggestions (born/died/lived/worked in, student of, movement,
+  studied at, influenced by, created in, depicts, owned/commissioned by) linking our entries by Q-id, by exact name
+  (they get the Q-id) or a similar name (offered only), or creating missing ones (only if ticked). Field values go into
+  the working copy (Publish still needed); new entries prefill the new-entry form. Declined values are remembered in
+  `wikidata_reviews` and folded until Wikidata changes them. Changes are audited with source `wikidata`; the source
+  note "Wikidata Q… (retrieved date)" goes into metadata. Outbound: www.wikidata.org and commons.wikimedia.org APIs
+  (User-Agent identifies the site). CSP img-src adds upload./thumb.wikimedia.org for previews.
+  Also fixed: December dates were written as "1926-12/1926" (now "1926-12").
+- **Why:** owner: faster content entry, but never import blindly, and own edits take priority over Wikidata.
+- **Tested:** unit tests (precisions, Julian, circa, periods); 4 e2e tests against a fixture server (new entry from
+  Wikidata, suggestions link/create/skip + remembered, own value kept + remembered, artwork with creator/collection/image);
+  manually against real Wikidata (Van Gogh, The Starry Night, Arles) on dev.
+- **Revert:** redeploy the previous commit; 012 can stay (or as owner: `DROP TABLE wikidata_reviews` + schema_migrations row).
+
 ### End-to-end tests; deploy runs them first
 - **What:** Playwright Test suite for the admin panel (`backend/test/e2e/`, 30 tests: auth/security, entities and
   relationships, search, history/revert/merge, drafts and live co-editing incl. a server restart, Markdown editor, map

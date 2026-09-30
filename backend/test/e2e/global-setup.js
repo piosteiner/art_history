@@ -5,6 +5,7 @@ const crypto = require('crypto');
 const { execFileSync } = require('child_process');
 const { BACKEND, DB, STATE_DIR, AUTH_FILE, serverEnv } = require('./env');
 const server = require('./server');
+const wikidataFixtures = require('./wikidata-fixtures');
 
 module.exports = async () => {
   const run = (cmd, args, input) => execFileSync(cmd, args, { cwd: BACKEND, env: serverEnv(), input, stdio: ['pipe', 'pipe', 'pipe'] });
@@ -19,6 +20,7 @@ module.exports = async () => {
   }
   fs.writeFileSync(AUTH_FILE, JSON.stringify(auth), { mode: 0o600 });
   run('npm', ['run', '--silent', 'build:admin:dev']);
+  await wikidataFixtures.start();
   await server.stop();  // a leftover from an aborted run
   await server.start();
 };

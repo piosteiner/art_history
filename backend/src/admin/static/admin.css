@@ -148,3 +148,12 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .presence-badge.editing, .presence-tag { color: var(--accent); border-color: var(--accent); }
 .flash.draft { background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--fg); }
 .flash.draft .actions { margin-left: .6rem; display: inline-flex; }
+
+/* Wikidata comparison (src/admin/wikidata-ui.js) */
+.wd-table tr.wd-same td, .wd-table tr.wd-same th { opacity: .55; }
+.wd-table tr.wd-differs, .wd-table tr.wd-more-precise { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+.wd-table tr.wd-declined { opacity: .7; }
+.wd-table .choice { display: inline-block; margin: 0 .8rem .15rem 0; }
+.wd-table input[type=checkbox], .wd-table input[type=radio], .wd-image input { width: auto; margin-right: .25rem; }
+.wd-image { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
+.wd-image img { max-width: 260px; max-height: 260px; border-radius: 6px; border: 1px solid var(--line); }

@@ -19,6 +19,8 @@ const { planChangeSet, planVersion, execute, fingerprint, revertedBy, unconfirme
 const { planPage } = require('./revert-ui');
 const { wordDiff, isLongText } = require('./textdiff');
 const drafts = require('./drafts');
+const wikidata = require('./wikidata');
+const { searchPage, reviewPage } = require('./wikidata-ui');
 const collab = require('./collab');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
 const { docToForm, formToDoc, entityForm, humanize, HINTS } = require('./forms');
@@ -39,6 +41,7 @@ router.use(loadUser);
 // Fixed messages for ?done=… after a redirect (never reflect arbitrary text).
 const DONE = {
   created: 'Created.', saved: 'Saved.', deleted: 'Deleted.', unchanged: 'No changes.',
+  wikidata: 'Wikidata values applied — the field values are in the working copy: check them below and Publish.',
   published: 'Published — the working copy is now the public version.',
   discarded: 'Unpublished changes discarded — the working copy is back to the published version.',
   reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
@@ -47,7 +50,13 @@ const DONE = {
 };
 
 function send(req, res, { title, body, status = 200, flash, page = null }) {
-  if (!flash && DONE[req.query.done]) flash = { kind: 'ok', text: DONE[req.query.done] };
+  if (!flash && DONE[req.query.done]) {
+    // Numbers only from the URL — never reflect free text.
+    const n = (k) => Math.max(0, Number.parseInt(req.query[k], 10) || 0);
+    const extra = req.query.done === 'wikidata' ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
+      n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`].filter(Boolean).join(', ') : '';
+    flash = { kind: 'ok', text: DONE[req.query.done] + (extra ? ` (${extra})` : '') };
+  }
   res.status(status).type('html').send(String(layout({ title, body, user: req.user, flash, page })));
 }
 
@@ -80,12 +89,12 @@ function restoredBanner({ draft, rb, t, slug }) {
 }
 
 // One transaction per save; set_config(…, true) is transaction-local, so the pooled connection forgets it at COMMIT.
-async function withTx(user, fn) {
+async function withTx(user, fn, { source = 'admin' } = {}) {
   const client = await adminPool.connect();
   try {
     await client.query('BEGIN');
-    await client.query("SELECT set_config('arthistory.user_id', $1, true), set_config('arthistory.source', 'admin', true)",
-      [String(user.id)]);
+    await client.query("SELECT set_config('arthistory.user_id', $1, true), set_config('arthistory.source', $2, true)",
+      [String(user.id), source]);
     const result = await fn(client);
     await client.query('COMMIT');
     return result;
@@ -591,7 +600,8 @@ router.get('/:plural', async (req, res) => {
     title: humanize(t.folder),
     body: html`<h1>${humanize(t.folder)}</h1>
       <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search">
-        <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a></form>
+        <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
+        <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a></form>
       ${rows.length ? html`<div class="table-wrap"><table><thead><tr><th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
         ${rows.slice(0, PAGE).map((r) => html`<tr><td><a href="/${t.folder}/${r.slug}">${r.name}</a>
           ${q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
@@ -599,6 +609,79 @@ router.get('/:plural', async (req, res) => {
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
       ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}`,
   });
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+// Wikidata: find the item, review field by field, apply only what was ticked (src/admin/wikidata.js)
+// ---------------------------------------------------------------------------------------------------------------
+const wdLinks = { folderOf: (type) => BY_TYPE[type].folder };
+
+async function wikidataPage(req, res, t, e) {
+  const action = e ? `/${t.folder}/${e.slug}/wikidata` : `/${t.folder}/new/wikidata`;
+  const title = e ? `Compare ${e.doc[t.name]} with Wikidata` : `New ${t.type} from Wikidata`;
+  const page = { type: t.type, slug: e ? e.slug : null, mode: 'view' };
+  const qid = String(req.query.q || (e && !req.query.search && e.doc.wikidata_id) || '').trim().toUpperCase();
+  if (!/^Q[1-9][0-9]*$/.test(qid)) {
+    const q = String(req.query.search ?? (e ? e.doc[t.name] : '')).trim();
+    let results = null;
+    let error = null;
+    if (/^Q[1-9][0-9]*$/i.test(q)) return res.redirect(`${action}?q=${q.toUpperCase()}`);
+    if (q) { try { results = await wikidata.search(q); } catch (err) { error = `Wikidata search failed: ${err.message}`; } }
+    return send(req, res, { title, page, body: searchPage({ title, action, q, results, error }) });
+  }
+  const ours = e ? (await collab.currentForm(t, e.id)).form : {};
+  let plan;
+  try {
+    plan = await wikidata.compare(adminPool, t, qid, ours, e ? { type: t.type, id: e.id } : null);
+  } catch (err) {
+    return send(req, res, { title, page, status: 502, body: searchPage({ title, action, q: qid, results: null, error: `Could not load ${qid}: ${err.message}` }) });
+  }
+  send(req, res, { title, page, body: reviewPage({ title, plan, t: wdLinks, action, isNew: !e }) });
+}
+
+async function wikidataApply(req, res, t, e) {
+  const qid = String(req.body.qid || '');
+  if (!/^Q[1-9][0-9]*$/.test(qid)) return notFoundPage(req, res);
+  const ours = e ? (await collab.currentForm(t, e.id)).form : {};
+  const plan = await wikidata.compare(adminPool, t, qid, ours, e ? { type: t.type, id: e.id } : null);
+  let result;
+  try {
+    result = await withTx(req.user, (db) => wikidata.apply(db, t, e ? { type: t.type, id: e.id } : null, plan, req.body, req.user.id), { source: 'wikidata' });
+  } catch (err) {
+    return send(req, res, { title: 'Wikidata', status: 422, flash: { kind: 'error', text: `Nothing was applied: ${err.message}` },
+      body: reviewPage({ title: 'Wikidata', plan, t: wdLinks, action: req.originalUrl, isNew: !e }) });
+  }
+  // Provenance: the item goes into the sources (metadata) and, if empty, the Wikidata id field.
+  const form = { ...result.form };
+  if (Object.keys(form).length) {
+    let meta = {};
+    try { meta = JSON.parse(ours['f.metadata'] || '{}') || {}; } catch { meta = {}; }
+    const sources = Array.isArray(meta.sources) ? meta.sources : [];
+    if (!sources.some((s) => String(s).startsWith(`Wikidata ${qid}`))) meta.sources = [...sources, wikidata.sourceNote(qid)];
+    form['f.metadata'] = JSON.stringify(meta, null, 2);
+    if (!ours['f.wikidata_id']) form['f.wikidata_id'] = qid;
+  }
+  if (!e) {  // a new entry: prefill the new-entry form (the user's draft), created with "Create"
+    const base = Object.fromEntries(Object.entries(docToForm({}, t.fields)).map(([k, v]) => [`f.${k}`, v]));
+    const slug = wikidata.slugify(plan.label || qid);
+    await adminPool.query(`INSERT INTO admin_drafts (user_id, entity_type, entity_id, form) VALUES ($1, $2, NULL, $3)
+      ON CONFLICT (user_id, entity_type, entity_id) DO UPDATE SET form = EXCLUDED.form, updated_at = now()`,
+    [req.user.id, t.type, JSON.stringify({ slug, ...base, ...form })]);
+    return res.redirect(303, `/${t.folder}/new?draft=1`);
+  }
+  if (Object.keys(form).length) await collab.applyForm(t, e.id, form, req.user.username);
+  res.redirect(303, `/${t.folder}/${e.slug}/edit?done=wikidata&rels=${result.relationships}&created=${result.created.length}`);
+}
+
+router.get('/:plural/new/wikidata', (req, res) => wikidataPage(req, res, req.t, null));
+router.post('/:plural/new/wikidata', (req, res) => wikidataApply(req, res, req.t, null));
+router.get('/:plural/:slug/wikidata', async (req, res) => {
+  const e = await findEntity(req.t, req.params.slug);
+  return e ? wikidataPage(req, res, req.t, e) : notFoundPage(req, res);
+});
+router.post('/:plural/:slug/wikidata', async (req, res) => {
+  const e = await findEntity(req.t, req.params.slug);
+  return e ? wikidataApply(req, res, req.t, e) : notFoundPage(req, res);
 });
 
 router.get('/:plural/new', async (req, res) => {
@@ -738,6 +821,7 @@ router.get('/:plural/:slug', async (req, res) => {
     body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}</p>
       <div class="bar"><h1 class="grow">${name}</h1>
         <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
+        <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Wikidata…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       ${pending ? unpublishedBanner(t, e, pending, false) : ''}
