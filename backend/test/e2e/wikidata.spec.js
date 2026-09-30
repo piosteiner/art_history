@@ -2,31 +2,36 @@
 // Runs against the fixture server (wikidata-fixtures.js): Q100 "Claude Monet", Q104 "Impression, Sunrise" …
 const { test, expect, sql, submitForm } = require('./helpers');
 
-const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form > .actions button')]);
+const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form .sticky-actions button')]);
 const row = (page, text) => page.locator('.wd-table tbody tr', { hasText: text }).first();
 
 test('a new artist from Wikidata: search, review (empty fields pre-ticked), then the form is prefilled', async ({ userA }) => {
   await userA.goto('/artists/new/wikidata?search=monet');
   await Promise.all([userA.waitForNavigation(), userA.click('.search-hit a:has-text("Claude Monet")')]);
-  await expect(row(userA, 'Birth').locator('input[type=checkbox]')).toBeChecked();
-  await expect(userA.locator('input[name="alt.alt_names"][value="Oscar-Claude Monet"]')).toBeChecked();  // English alias
-  await expect(userA.locator('input[name="alt.alt_names"][value="クロード・モネ"]')).not.toBeChecked();  // other languages: opt-in
+  await expect(row(userA, 'Birth').locator('input[value=take]')).toBeChecked();  // empty field: pre-selected
+  await expect(userA.locator('input[name="alt.alt_names"][value="Oscar-Claude Monet"]')).not.toBeChecked();  // names: opt-in
+  await userA.check('input[name="alt.alt_names"][value="Oscar-Claude Monet"]');
   await apply(userA);
   await expect(userA).toHaveURL(/\/artists\/new\?draft=1$/);
   await expect(userA.locator('#f-name')).toHaveValue('Claude Monet');
   await expect(userA.locator('#f-birth')).toHaveValue('1840-11-14');
   await expect(userA.locator('#f-wikidata_id')).toHaveValue('Q100');
   await expect(userA.locator('#f-metadata')).toHaveValue(/Wikidata Q100 \(retrieved/);
+  await expect(userA.locator('#f-alt_names')).toHaveValue('Oscar-Claude Monet');  // only the ticked name
   await submitForm(userA);
   await expect(userA).toHaveURL(/\/artists\/claude-monet\?done=created/);
 });
 
 test('relationship suggestions: link by name, create a missing place, skip — and it is remembered', async ({ userA }) => {
   await userA.goto('/artists/claude-monet/wikidata');  // has Q100 now: goes straight to the comparison
-  await expect(row(userA, 'born in').locator('input[value=link]')).toBeChecked();      // our Paris, same name
-  await expect(row(userA, 'Giverny').locator('input[value=skip]')).toBeChecked();      // missing: offered, not pre-selected
+  // Nothing is decided for you: every suggestion starts at "decide later".
+  await expect(row(userA, 'born in').locator('input[value=later]')).toBeChecked();
+  await expect(row(userA, 'Giverny').locator('input[value=later]')).toBeChecked();
+  await userA.click('[data-wd-set=link]');                                               // quick action: link existing
+  await expect(row(userA, 'born in').locator('input[value=link]')).toBeChecked();       // our Paris, same name
+  await expect(row(userA, 'Giverny').locator('input[value=later]')).toBeChecked();      // no entry of ours: unchanged
   await row(userA, 'Giverny').locator('input[value=create]').check();
-  await expect(row(userA, 'Charles Gleyre').locator('input[value=skip]')).toBeChecked();
+  await row(userA, 'Charles Gleyre').locator('input[value=skip]').check();              // an explicit, remembered skip
   await apply(userA);
   await expect(userA.locator('.flash.ok')).toContainText('created');
   expect(sql("SELECT wikidata_id || ' ' || ST_AsText(location) FROM places WHERE slug = 'giverny'")).toBe('Q101 POINT(1.5339 49.0758)');
@@ -44,15 +49,20 @@ test('relationship suggestions: link by name, create a missing place, skip — a
   await expect(userA.locator('details', { hasText: 'skipped before' })).toContainText('Charles Gleyre');  // remembered
 });
 
-test('own values win: a differing value is never pre-selected, and declining it is remembered', async ({ userA }) => {
+test('own values win: never pre-selected; "decide later" records nothing, "keep mine" is remembered', async ({ userA }) => {
   sql("UPDATE artists SET death = '[1926-12-01,1927-01-01)', death_label = 'December 1926' WHERE slug = 'claude-monet'");  // ours
   await userA.goto('/artists/claude-monet/wikidata');
-  const death = row(userA, 'Death');
-  await expect(death.locator('input[type=checkbox]')).not.toBeChecked();
-  await apply(userA);  // not ticked → declined
+  await expect(row(userA, 'Death').locator('input[value=later]')).toBeChecked();
+  await apply(userA);  // left at "decide later"
+  expect(sql("SELECT count(*) FROM wikidata_reviews WHERE item = 'death'")).toBe('0');
+  await userA.goto('/artists/claude-monet/wikidata');
+  await expect(row(userA, 'Death')).not.toContainText('you kept yours');
+  await row(userA, 'Death').locator('input[value=keep]').check();  // an explicit check of our own value
+  await apply(userA);
   await expect.poll(() => sql("SELECT death_label FROM artists WHERE slug = 'claude-monet'")).toBe('December 1926');
   await userA.goto('/artists/claude-monet/wikidata');
   await expect(row(userA, 'Death')).toContainText('you kept yours');
+  await expect(row(userA, 'Death').locator('input[value=keep]')).toBeChecked();
 });
 
 test('an artwork: creator and collection by name or new, Commons image with license', async ({ userA }) => {
@@ -60,7 +70,7 @@ test('an artwork: creator and collection by name or new, Commons image with lice
   await expect(row(userA, 'Creator').locator('input[value=link]')).toBeChecked();  // our Claude Monet (by Q-id)
   await expect(row(userA, 'Institution').locator('input[value=create]')).toBeVisible();
   await expect(userA.locator('.wd-image')).toContainText('Public domain');
-  await expect(userA.locator('input[name=image]')).toBeChecked();
+  await expect(userA.locator('input[name=image][value=take]')).toBeChecked();  // no image yet: pre-selected
   await row(userA, 'Institution').locator('input[value=create]').check();
   await apply(userA);
   await expect(userA.locator('#f-creator')).toHaveValue('claude-monet');

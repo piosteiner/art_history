@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Wikidata review: explicit decisions everywhere
+- **What:** every differing field, image, reference target and relationship suggestion now offers take / keep mine
+  (skip) / **decide later**. Only explicit choices are remembered (`wikidata_reviews`); "decide later" records nothing
+  and asks again next time. Defaults: empty fields → take; filled fields, suggestions → decide later (quick action:
+  "link where we have it / skip / decide later" for all open suggestions). Alternative names are never pre-ticked
+  (Wikidata aliases are noisy); unticked names are declined only on request. Commons image URLs are stored without
+  tracking parameters; the preview image is no longer lazy-loaded.
+- **Why:** owner: a filled field left unticked was silently remembered as "kept"; checking own data against Wikidata
+  should be a deliberate, remembered decision.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: compare with Wikidata — reviewed, own values first (migration 012)
 - **What:** "Wikidata…" on every entry and "+ from Wikidata…" on lists (`backend/src/admin/wikidata.js`, `wikidata-ui.js`,
   `src/wikidata-time.js`). Search → review page field by field (yours | Wikidata | take?): empty fields pre-ticked,

@@ -67,8 +67,9 @@ async function commonsImage(file) {
   const info = page && page.imageinfo && page.imageinfo[0];
   if (!info) return null;
   const meta = info.extmetadata || {};
+  const clean = (u) => (u ? u.split('?')[0] : u);  // Commons appends tracking parameters (utm_…) — not for our data
   return {
-    image_url: info.thumburl || info.url,
+    image_url: clean(info.thumburl || info.url),
     image_source_url: info.descriptionurl,
     image_license: stripTags(meta.LicenseShortName && meta.LicenseShortName.value) || null,
     image_credit: stripTags(meta.Artist && meta.Artist.value) || null,
@@ -406,14 +407,14 @@ async function createEntry(db, type, doc) {
 }
 
 // → { form: flat form values to put into the working copy / draft, created: [labels], relationships: n }
-// choices: take.<key>=1 (text, date, point), alt.<key>=<name> (repeated), ref.<key>=keep|link|candidate|create,
-//          image=1, rel.<i>=skip|link|candidate|create
+// choices: take.<key>=take|keep|later (text, date, point), alt.<key>=<name> (repeated) + altrest.<key>=later|decline,
+//          ref.<key>=later|keep|link|candidate|create, image=take|keep|later, rel.<i>=later|skip|link|candidate|create
+// Only explicit decisions are remembered: keep/skip/decline → 'declined', taking → 'accepted'; "later" records nothing.
 async function apply(db, t, entity, plan, choices, userId) {
   const form = {};
   const created = [];
-  const has = (k) => choices[k] === '1' || (Array.isArray(choices[k]) && choices[k].includes('1'));
   const decide = async (item, value, taken) => {
-    if (!entity) return;
+    if (!entity || taken === null) return;  // null = decide later
     if (value && typeof value === 'object' && !Array.isArray(value) && 'value' in value) value = value.value;  // dates: the bare value
     await db.query(`INSERT INTO wikidata_reviews (entity_type, entity_id, item, value, decision, decided_by) VALUES ($1, $2, $3, $4, $5, $6)
       ON CONFLICT (entity_type, entity_id, item) DO UPDATE SET value = EXCLUDED.value, decision = EXCLUDED.decision,
@@ -423,13 +424,15 @@ async function apply(db, t, entity, plan, choices, userId) {
     if (row.status === 'same') continue;
     if (row.kind === 'list') {
       const picked = [].concat(choices[`alt.${row.key}`] || []);
-      for (const it of row.items) await decide(`${row.key}:${it.value}`, it.value, picked.includes(it.value));
+      const declineRest = choices[`altrest.${row.key}`] === 'decline';
+      for (const it of row.items) await decide(`${row.key}:${it.value}`, it.value, picked.includes(it.value) ? true : declineRest ? false : null);
       if (picked.length) form[`f.${row.key}`] = [...row.ours, ...row.items.filter((it) => picked.includes(it.value)).map((it) => it.value)].join('\n');
       continue;
     }
     if (row.kind === 'ref') {
       let slug = null;
-      const pick = choices[`ref.${row.key}`] || 'keep';
+      const pick = choices[`ref.${row.key}`] || 'later';
+      if (pick === 'later') continue;
       if (pick === 'link' && row.target) {
         slug = row.target.slug;
         if (row.target.matchedBy === 'name') await linkQid(db, row.target, row.qid);
@@ -440,7 +443,9 @@ async function apply(db, t, entity, plan, choices, userId) {
       if (slug) form[`f.${row.key}`] = slug;
       continue;
     }
-    const taken = has(`take.${row.key}`);
+    const pick = choices[`take.${row.key}`] || 'later';
+    if (pick === 'later') continue;
+    const taken = pick === 'take';
     await decide(row.key, row.value, taken);
     if (!taken) continue;
     if (row.kind === 'point') { form['f.location_lon'] = String(row.value[0]); form['f.location_lat'] = String(row.value[1]); } else if (row.kind === 'date') {
@@ -449,15 +454,17 @@ async function apply(db, t, entity, plan, choices, userId) {
     } else form[`f.${row.key}`] = String(row.value);
   }
   if (plan.image && plan.image.status !== 'same') {
-    const taken = has('image');
-    await decide('image', plan.image.image_url, taken);
+    const pick = choices.image || 'later';
+    const taken = pick === 'take';
+    if (pick !== 'later') await decide('image', plan.image.image_url, taken);
     if (taken) for (const k of ['image_url', 'image_source_url', 'image_license', 'image_credit']) form[`f.${k}`] = plan.image[k] || '';
   }
   let relationships = 0;
   if (entity) {
     for (const [i, s] of plan.suggestions.entries()) {
       if (s.already) continue;
-      const pick = choices[`rel.${i}`] || 'skip';
+      const pick = choices[`rel.${i}`] || 'later';
+      if (pick === 'later') continue;
       let ref = null;
       if (pick === 'link' && s.target) {
         ref = { type: s.target.type, slug: s.target.slug };
