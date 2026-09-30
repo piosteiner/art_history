@@ -24,7 +24,8 @@ function html(strings, ...values) {
 // Trusted HTML only (e.g. output of renderMarkdown, which is sanitized).
 const raw = (s) => new Html(s ?? '');
 
-function layout({ title, user, body, flash, nav = true }) {
+// page: { type, slug, mode } — tells the live connection (editor/live.js) where the user is.
+function layout({ title, user, body, flash, nav = true, page = null }) {
   return html`<!doctype html>
 <html lang="en">
 <head>
@@ -35,7 +36,7 @@ function layout({ title, user, body, flash, nav = true }) {
 <link rel="stylesheet" href="/static/admin.css">
 <script src="/static/editor.js" defer></script>
 </head>
-<body>
+<body${user ? html` data-live="1"` : ''}${page ? html` data-page-type="${page.type}" data-page-slug="${page.slug || ''}" data-page-mode="${page.mode}"` : ''}>
 ${nav && user ? html`<header class="top">
   <a class="brand" href="/">Art history admin</a>
   <nav>

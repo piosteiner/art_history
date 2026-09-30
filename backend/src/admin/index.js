@@ -18,6 +18,7 @@ const { search, resultsPage, lookup } = require('./search');
 const { planChangeSet, planVersion, execute, fingerprint, revertedBy, unconfirmed } = require('./revert');
 const { planPage } = require('./revert-ui');
 const { wordDiff, isLongText } = require('./textdiff');
+const drafts = require('./drafts');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
 const { docToForm, formToDoc, entityForm, humanize, HINTS } = require('./forms');
 
@@ -42,9 +43,29 @@ const DONE = {
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
 };
 
-function send(req, res, { title, body, status = 200, flash }) {
+function send(req, res, { title, body, status = 200, flash, page = null }) {
   if (!flash && DONE[req.query.done]) flash = { kind: 'ok', text: DONE[req.query.done] };
-  res.status(status).type('html').send(String(layout({ title, body, user: req.user, flash })));
+  res.status(status).type('html').send(String(layout({ title, body, user: req.user, flash, page })));
+}
+
+const when = (d) => d.toISOString().slice(0, 16).replace('T', ' ');
+
+// Banner on edit/new pages when this user has an unsaved draft (admin_drafts, written by the live connection).
+function draftBanner({ draft, changed, restoreUrl, t, slug }) {
+  if (!draft || !changed.length) return '';
+  return html`<div class="flash draft">You have <b>unsaved changes</b> from ${when(draft.updated_at)} (${changed.join(', ')}).
+    <span class="actions"><a class="button" href="${restoreUrl}">Restore them</a>
+    <form method="post" action="/drafts/discard" class="inline"><input type="hidden" name="type" value="${t.type}">
+      <input type="hidden" name="slug" value="${slug || ''}"><button class="secondary">Discard</button></form></span></div>`;
+}
+
+function restoredBanner({ draft, rb, t, slug }) {
+  return html`<div class="flash draft">Showing your <b>unsaved changes</b> from ${when(draft.updated_at)} — save to keep them.
+    ${rb.stale ? html`<br>The entry was saved by someone else in the meantime — their changes are included${rb.merged.length
+      ? html` (merged word by word in: ${rb.merged.join(', ')})` : ''}.` : ''}
+    ${rb.conflicts.length ? html`<br><b>Check these fields</b> — both you and someone else changed them; your version is shown: ${rb.conflicts.join(', ')}.` : ''}
+    <form method="post" action="/drafts/discard" class="inline"><input type="hidden" name="type" value="${t.type}">
+      <input type="hidden" name="slug" value="${slug || ''}"><button class="link">Discard my changes</button></form></div>`;
 }
 
 // One transaction per save; set_config(…, true) is transaction-local, so the pooled connection forgets it at COMMIT.
@@ -322,9 +343,15 @@ router.get('/', async (req, res) => {
     'SELECT type::text, count(*)::int AS n FROM entity_index GROUP BY type')).rows.map((r) => [r.type, r.n]));
   const rels = (await adminPool.query('SELECT count(*)::int AS n FROM relationships')).rows[0].n;
   const recent = await history(adminPool, 'true', [], { limit: 15 });
+  const myDrafts = (await adminPool.query(`
+    SELECT d.entity_type::text AS type, d.updated_at, e.slug, e.name FROM admin_drafts d
+    LEFT JOIN entity_index e ON e.type = d.entity_type AND e.id = d.entity_id
+    WHERE d.user_id = $1 AND (d.entity_id IS NULL OR e.id IS NOT NULL) ORDER BY d.updated_at DESC`, [req.user.id])).rows;
   send(req, res, {
     title: 'Dashboard',
     body: html`<h1>Dashboard</h1>
+      ${myDrafts.length ? html`<div class="flash draft"><b>Your unsaved drafts:</b> ${myDrafts.map((d, i) => html`${i ? ' · ' : ''}<a href="/${BY_TYPE[d.type].folder}/${d.slug ? `${d.slug}/edit` : 'new'}?draft=1">${d.name || `new ${d.type}`}</a>
+        <span class="muted small">${when(d.updated_at)}</span>`)}</div>` : ''}
       <div class="cards">${TYPES.map((t) => html`<a class="card" href="/${t.folder}"><b>${counts[t.type] || 0}</b>${humanize(t.folder)}</a>`)}
         <div class="card"><b>${rels}</b>Relationships</div></div>
       <h2>Recent changes</h2>${historyTable(recent.rows)}
@@ -554,10 +581,28 @@ router.get('/:plural', async (req, res) => {
 
 router.get('/:plural/new', async (req, res) => {
   const { t } = req;
+  const draft = await drafts.getDraft(adminPool, req.user.id, t.type, null);
+  const useDraft = draft && req.query.draft === '1';
+  const changed = draft ? Object.keys(draft.form).filter((k) => k.startsWith('f.') && draft.form[k].trim()).map((k) => humanize(k.slice(2).replace(/_(lon|lat|label)$/, ''))) : [];
   send(req, res, {
     title: `New ${t.type}`,
-    body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: '', f: docToForm({}, t.fields), ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true })}`,
+    page: { type: t.type, slug: null, mode: 'new' },
+    body: html`<h1>New ${t.type}</h1>
+      ${useDraft ? restoredBanner({ draft, rb: { stale: false, merged: [], conflicts: [] }, t })
+        : draftBanner({ draft, changed: [...new Set(changed)], restoreUrl: `/${t.folder}/new?draft=1`, t })}
+      ${entityForm({ t, slug: useDraft ? draft.form.slug || '' : '', f: useDraft ? formFromBody(draft.form) : docToForm({}, t.fields),
+        ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true })}`,
   });
+});
+
+// Throw away this user's draft for an entry (or for a new one of this type), then back to the form.
+router.post('/drafts/discard', async (req, res) => {
+  const t = BY_TYPE[req.body.type];
+  if (!t) return notFoundPage(req, res);
+  const slug = String(req.body.slug || '');
+  const e = slug ? await findEntity(t, slug) : null;
+  await drafts.deleteDraft(adminPool, req.user.id, t.type, e ? e.id : null);
+  res.redirect(303, e ? `/${t.folder}/${e.slug}/edit` : `/${t.folder}/new`);
 });
 
 // Shared by create and update: validate, resolve slugs to ids, write. Returns the (possibly new) slug.
@@ -622,9 +667,11 @@ router.post('/:plural', async (req, res) => {
     ctx.errorKeys = errorKeysOf(result.errors);
     return send(req, res, {
       title: `New ${t.type}`, status: 422,
+      page: { type: t.type, slug: null, mode: 'new' },
       body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx, action: `/${t.folder}`, errors: result.errors, isNew: true })}`,
     });
   }
+  await drafts.deleteDraft(adminPool, req.user.id, t.type, null);
   res.redirect(303, `/${t.folder}/${result.slug}?done=created`);
 });
 
@@ -664,7 +711,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const labels = Object.fromEntries(types.map((x) => [x.code, x.label]));
   const name = e.doc[t.name];
   send(req, res, {
-    title: name,
+    title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
     body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}</p>
       <div class="bar"><h1 class="grow">${name}</h1>
         <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
@@ -719,9 +766,28 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   const { t } = req;
   const e = await findEntity(t, req.params.slug);
   if (!e) return notFoundPage(req, res);
-  const form = entityForm({ t, slug: e.slug, f: docToForm(e.doc, t.fields), ctx: await formContext(t),
-    action: `/${t.folder}/${e.slug}`, errors: [], version: e.version });
-  send(req, res, { title: `Edit ${e.doc[t.name]}`, body: html`<h1>Edit ${e.doc[t.name]}</h1>${form}` });
+  const draft = await drafts.getDraft(adminPool, req.user.id, t.type, e.id);
+  let banner = '';
+  let f = docToForm(e.doc, t.fields);
+  let slug = e.slug;
+  let version = e.version;
+  if (draft) {
+    const rb = await drafts.rebase(adminPool, t, e, draft);  // onto what others saved meanwhile
+    const changed = drafts.changedFields(rb.form, t, e);
+    if (!changed.length) {
+      await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);  // nothing unsaved in it (any more)
+    } else if (req.query.draft === '1') {
+      f = formFromBody(rb.form);
+      slug = rb.form.slug || e.slug;
+      version = rb.version;
+      banner = restoredBanner({ draft, rb, t, slug: e.slug });
+    } else {
+      banner = draftBanner({ draft, changed, restoreUrl: `/${t.folder}/${e.slug}/edit?draft=1`, t, slug: e.slug });
+    }
+  }
+  const form = entityForm({ t, slug, f, ctx: await formContext(t), action: `/${t.folder}/${e.slug}`, errors: [], version });
+  send(req, res, { title: `Edit ${e.doc[t.name]}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
+    body: html`<h1>Edit ${e.doc[t.name]}</h1>${banner}${form}` });
 });
 
 router.post('/:plural/:slug', async (req, res) => {
@@ -734,8 +800,10 @@ router.post('/:plural/:slug', async (req, res) => {
     ctx.errorKeys = errorKeysOf(result.errors);
     const form = entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx,
       action: `/${t.folder}/${e.slug}`, errors: result.errors, version: req.body.version });
-    return send(req, res, { title: `Edit ${e.doc[t.name]}`, status: 422, body: html`<h1>Edit ${e.doc[t.name]}</h1>${form}` });
+    return send(req, res, { title: `Edit ${e.doc[t.name]}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
+      body: html`<h1>Edit ${e.doc[t.name]}</h1>${form}` });
   }
+  await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);
   res.redirect(303, `/${t.folder}/${result.slug}?done=saved`);
 });
 
@@ -789,7 +857,7 @@ router.get('/:plural/:slug/history', async (req, res) => {
       ((r->>'subject_type') = $3 AND (r->>'subject_id')::bigint = $2) OR ((r->>'object_type') = $3 AND (r->>'object_id')::bigint = $2)))`,
   [t.table, e.id, t.type], { offset: (page - 1) * PAGE });
   send(req, res, {
-    title: `History of ${e.doc[t.name]}`,
+    title: `History of ${e.doc[t.name]}`, page: { type: t.type, slug: e.slug, mode: 'view' },
     body: html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p><h1>History</h1>
       ${historyTable(h.rows, { restoreFor: { table: t.table, rowId: e.id } })}${pager(`/${t.folder}/${e.slug}/history`, page, h.more)}`,
   });

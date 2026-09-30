@@ -120,7 +120,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version }) {
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
-  <form method="post" action="${action}" class="form">
+  <form method="post" action="${action}" class="form" data-draft="1">
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     <div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
       <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? 'e.g. claude-monet' : ''}">

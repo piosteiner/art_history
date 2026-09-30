@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-09-30
 
+### Admin live connection, step 1: presence + continuously saved drafts (migration 010)
+- **What:** WebSocket `/live` on the admin host, served by the existing pm2 process (`backend/src/admin/live.js`, `ws` 8.22
+  MIT; browser side `src/admin/editor/live.js`). Upgrade accepted only on the admin host, only from the admin Origin
+  (cross-site WebSocket hijacking), only with a valid session; 30 s ping heartbeat; on pm2 reload clients get 1012 and
+  reconnect. Presence ("Also here: …", field tags, list badges). Edit/new forms are snapshotted every 1.5 s into
+  `admin_drafts` (one per user and entry, `UNIQUE NULLS NOT DISTINCT`), kept in localStorage while offline; returning shows
+  "Restore / Discard", and restoring rebases the draft on what others saved meanwhile (three-way per field, word merge
+  for texts, conflicts flagged). Saving deletes the draft. nginx: `location = /live` with Upgrade/Connection headers.
+- **Why:** owner: several editors — see who is where, never lose unsaved work. Step 2 (shared live working copy, Yjs)
+  builds on this connection.
+- **Tested (dev, two users in headless Chromium):** list badge + presence bar with field, draft in DB, presence gone on
+  close, other user's save kept on restore (rebase), typing during a server restart kept locally and saved on
+  reconnect, save deletes the draft. Upgrade rejected without session (401), with foreign Origin (403), other path/host (404).
+  Found and fixed on the way: draft baseline taken too late; hello/draft race after reconnect (messages now in order).
+- **Revert:** redeploy the previous commit; remove the `location = /live` block from the admin server block and reload
+  nginx. Migration 010 can stay (or as owner: `DROP TABLE admin_drafts` + its schema_migrations row).
+
 ### Admin: word-level diffs for long texts; three-way merge when reverting
 - **What:** history and revert preview show biographies/descriptions/notes (and any text ≥ 80 chars) as a word diff
   (`backend/src/admin/textdiff.js`, jsdiff 9, BSD-3 — new runtime dependency) with unchanged stretches collapsed.

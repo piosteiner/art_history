@@ -176,4 +176,11 @@ async function readRelationships(db, type, id) {
   });
 }
 
-module.exports = { TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc };
+// A stored row (to_jsonb of the table, e.g. audit_log.new_row) read back as a doc: jsonb_populate_record turns the JSON
+// into a real row of the table's type, so the same docColumns() expressions (refs → slugs, dates → text …) apply.
+async function docFromJson(db, t, json) {
+  const { rows } = await db.query(`SELECT ${docColumns(t)} FROM jsonb_populate_record(NULL::${t.table}, $1::jsonb) t`, [JSON.stringify(json)]);
+  return rowToDoc(rows[0], t);
+}
+
+module.exports = { TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };

@@ -36,7 +36,7 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 
 ## Secrets
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
-Admin panel: one login — app users in the `admin_users` table (scrypt); the password lives in the owner's password manager only.
+Admin panel: WebSocket `/live` (presence, drafts) proxied by nginx with Upgrade headers. One login — app users in the `admin_users` table (scrypt); the password lives in the owner's password manager only.
 
 ## Backups (art history database)
 Nightly at ~03:30 UTC, systemd `arthistory-backup.timer` → `scripts/backup.sh` (units: `config/systemd/`):

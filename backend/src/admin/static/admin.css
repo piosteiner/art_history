@@ -137,3 +137,14 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .wdiff ins { color: var(--ok); background: var(--ok-bg); text-decoration: none; border-radius: 2px; }
 .wd-gap { color: var(--muted); padding: 0 .3em; }
 .revert-fields tr.rf-merge td { background: color-mix(in srgb, var(--ok) 6%, transparent); }
+
+/* Live connection (src/admin/editor/live.js): status, presence, drafts */
+.live-status { position: fixed; right: 12px; bottom: 10px; z-index: 50; font-size: .8rem; padding: .2rem .6rem;
+  border-radius: 999px; background: var(--panel); border: 1px solid var(--line); color: var(--muted); max-width: 70vw; }
+.live-status.ok { color: var(--ok); }
+.live-status.warn { color: var(--err); border-color: var(--err); }
+.presence-bar { margin: 0 0 .8rem; padding: .35rem .7rem; border-radius: 6px; background: var(--ok-bg); font-size: .9rem; }
+.presence-tag, .presence-badge { margin-left: .4rem; font-weight: 400; }
+.presence-badge.editing, .presence-tag { color: var(--accent); border-color: var(--accent); }
+.flash.draft { background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--fg); }
+.flash.draft .actions { margin-left: .6rem; display: inline-flex; }

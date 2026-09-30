@@ -40,8 +40,9 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - ✅ Phase 4 backups: nightly `scripts/backup.sh` (systemd timer) — dump, restore-verify, gpg-encrypted push to private repo
   `art_history-backups` when data changed (server-docs/README.md → Backups). Round trip from GitHub tested 2026-09-28.
 - ✅ Phase 5 admin panel (2026-09-28): migration 006 (admin_users, admin_sessions, audit_log trigger), scrypt + Postgres
-  sessions (single login; fail2ban jail `arthistory-admin` since 2026-09-29), CRUD + relationships + history pages, `npm run export`. Ideas next: image handling, nightly
-  auto-export commit. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
+  sessions (single login; fail2ban jail `arthistory-admin` since 2026-09-29), CRUD + relationships + history pages, `npm run export`. Live step 1 (presence + drafts,
+  migration 010, WebSocket /live) built 2026-09-30; **next: step 2 = shared live working copy (Yjs), Save → Publish**.
+  Ideas later: image handling, nightly auto-export commit. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.
 - Decided + built (migration 005): moved institutions — `institutions.place_id` = current location, dated `located_in`

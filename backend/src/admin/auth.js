@@ -95,23 +95,29 @@ async function logout(req, res) {
   setSessionCookie(res, '', 0);
 }
 
+// The logged-in user of a request (Express request or the raw HTTP request of a WebSocket upgrade), or null.
+async function userFromRequest(req) {
+  const cookie = readCookie(req, COOKIE);
+  if (!cookie) return null;
+  const { rows } = await adminPool.query(`
+    SELECT u.id, u.username FROM admin_sessions s JOIN admin_users u ON u.id = s.user_id
+    WHERE s.token_hash = $1 AND s.expires_at > now()`, [sha256(cookie)]);
+  return rows[0] || null;
+}
+
 // Middleware: req.user from the session cookie, or null.
 async function loadUser(req, res, next) {
-  req.user = null;
-  const cookie = readCookie(req, COOKIE);
-  if (cookie) {
-    const { rows } = await adminPool.query(`
-      SELECT u.id, u.username FROM admin_sessions s JOIN admin_users u ON u.id = s.user_id
-      WHERE s.token_hash = $1 AND s.expires_at > now()`, [sha256(cookie)]);
-    req.user = rows[0] || null;
-  }
+  req.user = await userFromRequest(req);
   next();
 }
+
+// The only origin allowed to post to the admin site (and to open its live connection).
+const adminOrigin = (req) => (config.env === 'production' ? `https://${config.adminHost}` : `http://${req.headers.host}`);
 
 // Middleware: every state-changing request must come from a page of the admin site itself.
 function checkOrigin(req, res, next) {
   if (req.method === 'GET' || req.method === 'HEAD') return next();
-  const expected = config.env === 'production' ? `https://${config.adminHost}` : `${req.protocol}://${req.get('host')}`;
+  const expected = adminOrigin(req);
   const origin = req.get('origin');
   if (origin === expected) return next();
   // Fallback: some privacy settings/extensions send "Origin: null" or none. Sec-Fetch-* headers can't be set by page
@@ -120,4 +126,4 @@ function checkOrigin(req, res, next) {
   res.status(403).type('text').send('Forbidden: cross-site request.');
 }
 
-module.exports = { hashPassword, verifyPassword, login, logout, loadUser, checkOrigin };
+module.exports = { hashPassword, verifyPassword, login, logout, loadUser, checkOrigin, userFromRequest, adminOrigin };
