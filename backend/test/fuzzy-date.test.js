@@ -74,3 +74,14 @@ test('formatFuzzyDate round-trips through parseFuzzyDate', () => {
     assert.equal(parseFuzzyDate(back, { openEnd: true }).range, range, `${text} → ${back}`);
   }
 });
+
+const { thumbUrl } = require('../src/admin/images');
+test('thumbUrl: Wikimedia thumbnails at the wanted width, other hosts unchanged', () => {
+  const t = 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Great_Wave.jpg/1280px-Great_Wave.jpg';
+  assert.equal(thumbUrl(t, 120), 'https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Great_Wave.jpg/120px-Great_Wave.jpg');
+  assert.equal(thumbUrl('https://upload.wikimedia.org/wikipedia/commons/e/ea/Starry_Night.jpg', 250),
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Starry_Night.jpg/250px-Starry_Night.jpg');
+  assert.equal(thumbUrl('https://upload.wikimedia.org/wikipedia/commons/a/ab/Map.svg', 120), 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Map.svg');
+  assert.equal(thumbUrl('https://www.moma.org/media/starry.jpg', 120), 'https://www.moma.org/media/starry.jpg');
+  assert.equal(thumbUrl(null, 120), null);
+});

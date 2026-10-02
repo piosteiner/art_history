@@ -21,6 +21,7 @@ const { wordDiff, isLongText } = require('./textdiff');
 const drafts = require('./drafts');
 const wikidata = require('./wikidata');
 const quality = require('./quality');
+const { thumbUrl } = require('./images');
 const { searchPage, reviewPage } = require('./wikidata-ui');
 const collab = require('./collab');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
@@ -620,6 +621,7 @@ router.get('/:plural', async (req, res) => {
   const { rows } = await adminPool.query(`
     SELECT * FROM (
       SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score,
+             ${t.fields.image_url ? 't.image_url' : 'NULL'} AS image_url,
              (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
                                                            OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
       FROM ${t.table} t) x
@@ -631,8 +633,10 @@ router.get('/:plural', async (req, res) => {
       <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
         <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a></form>
-      ${rows.length ? html`<div class="table-wrap"><table><thead><tr><th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
-        ${rows.slice(0, PAGE).map((r) => html`<tr><td><a href="/${t.folder}/${r.slug}">${r.name}</a>
+      ${rows.length ? html`<div class="table-wrap"><table${t.fields.image_url ? html` class="with-thumbs"` : ''}><thead><tr>${t.fields.image_url ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
+        ${rows.slice(0, PAGE).map((r) => html`<tr>${t.fields.image_url ? html`<td class="thumb">${r.image_url
+          ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
+          : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>
           ${q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
@@ -856,6 +860,9 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       ${pending ? unpublishedBanner(t, e, pending, false) : ''}
       ${quality.entityBox(qa, `/${t.folder}/${e.slug}`)}
+      ${e.doc.image_url ? html`<figure class="artwork-preview"><a href="${e.doc.image_source_url || e.doc.image_url}" target="_blank" rel="noopener">
+        <img src="${thumbUrl(e.doc.image_url, 500)}" alt="${name}"></a>
+        <figcaption class="muted small">${[e.doc.image_credit, e.doc.image_license].filter(Boolean).join(' · ') || 'no credit / license yet'}</figcaption></figure>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name).map(([key, kind]) => {
         const shown = showValue(t, key, kind, e.doc);
         return shown === null ? '' : html`<dt>${humanize(key)}</dt><dd>${shown}</dd>`;

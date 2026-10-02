@@ -49,3 +49,21 @@ test('map picker: tiles carry our origin as Referer, click sets the location, dr
   }
   await expect(userA.locator('textarea[name="f.area"]')).toHaveValue(/"type":"Polygon"/);
 });
+
+test('artwork list shows 120 px thumbnails, the artwork page a larger preview with credit', async ({ userA }) => {
+  const requested = [];
+  await userA.route(/^https:\/\/(upload|thumb)\.wikimedia\.org\//, (route) => {
+    requested.push(route.request().url().replace(/^.*\//, ''));
+    route.fulfill({ status: 200, contentType: 'image/png', body: PNG });
+  });
+  require('./helpers').sql(`UPDATE artworks SET image_url = 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Great_Wave.jpg',
+    image_license = 'Public domain', image_credit = 'Katsushika Hokusai' WHERE slug = 'the-great-wave-off-kanagawa'`);
+  await userA.goto('/artworks');
+  const row = userA.locator('tr', { hasText: 'The Great Wave off Kanagawa' });
+  await expect(row.locator('td.thumb img')).toHaveAttribute('src', /\/thumb\/b\/b5\/Great_Wave\.jpg\/120px-Great_Wave\.jpg$/);
+  await expect(userA.locator('tr', { hasText: 'Plum Park in Kameido' }).locator('.thumb-empty')).toHaveCount(1);  // no image
+  await userA.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(userA.locator('.artwork-preview img')).toHaveAttribute('src', /500px-Great_Wave\.jpg$/);
+  await expect(userA.locator('.artwork-preview figcaption')).toHaveText('Katsushika Hokusai · Public domain');
+  expect(requested).toEqual(expect.arrayContaining(['120px-Great_Wave.jpg', '500px-Great_Wave.jpg']));
+});

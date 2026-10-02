@@ -2,6 +2,18 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-02
+
+### Admin: artwork thumbnails in the list, preview on the artwork page
+- **What:** the artworks list shows a 120 px thumbnail per row (lazy-loaded; placeholder without image), the artwork
+  page a 500 px preview with credit · license. `backend/src/admin/images.js` turns Wikimedia URLs (stored thumbnails
+  and originals) into the needed standard width (120 px ≈ 6 KB instead of the stored 1280 px); other hosts unchanged.
+  CSP `img-src` now allows any https host (image_url only requires https; scripts/styles/frames stay 'self').
+- **Why:** owner: see the artworks in the list.
+- **Tested:** unit test for the URL conversion; e2e test (Wikimedia intercepted); manually on dev (stored thumbnail
+  and original Commons URL).
+- **Revert:** redeploy the previous commit.
+
 ## 2026-09-30
 
 ### Admin: data-quality page (migration 013)

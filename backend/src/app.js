@@ -18,8 +18,9 @@ app.use(helmet({
   referrerPolicy: { policy: 'same-origin' },
   // The admin map picker shows OpenStreetMap tiles; everything else stays 'self' (helmet's defaults).
   contentSecurityPolicy: {
-    // Wikimedia: artwork images previewed in the Wikidata comparison (and the image field).
-    directives: { 'img-src': ["'self'", 'data:', 'https://tile.openstreetmap.org', 'https://upload.wikimedia.org', 'https://thumb.wikimedia.org'] },
+    // Images from any https host: artwork previews (Wikimedia, museum sites — image_url only requires https).
+    // Scripts, styles, frames etc. stay 'self' (helmet's defaults).
+    directives: { 'img-src': ["'self'", 'data:', 'https:'] },
   },
 }));
 
