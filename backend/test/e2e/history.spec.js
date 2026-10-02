@@ -47,6 +47,18 @@ test('reverting a deletion brings the entity back with its id and relationships'
   expect(after).toBe(before);
 });
 
+test('reverting a deletion brings back the entry\'s images too, in their order', async ({ userA }) => {
+  sql(`INSERT INTO images (artwork_id, position, url, caption) VALUES
+    (entity_id('artwork', 'plum-park-in-kameido'), 0, 'https://example.org/front.jpg', 'Front'),
+    (entity_id('artwork', 'plum-park-in-kameido'), 1, 'https://example.org/back.jpg', 'Back')`);
+  const tx = adminChange("DELETE FROM artworks WHERE slug = 'plum-park-in-kameido'");  // the images go with it (ON DELETE CASCADE)
+  await userA.goto(`/revert/${tx}`);
+  await expect(userA.locator('main')).toContainText('image of Plum Park in Kameido “Back”');
+  await apply(userA);
+  expect(sql(`SELECT string_agg(caption, ',' ORDER BY position) FROM images
+              WHERE artwork_id = entity_id('artwork', 'plum-park-in-kameido')`)).toBe('Front,Back');
+});
+
 test('a preview that went stale is not applied', async ({ userA }) => {
   const tx = adminChange("UPDATE artists SET sort_name = 'S1' WHERE slug = 'katsushika-hokusai'");
   await userA.goto(`/revert/${tx}`);

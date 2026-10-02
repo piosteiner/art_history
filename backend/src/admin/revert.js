@@ -10,7 +10,11 @@
 //                                                       row deleted since → skip, or restore it as it was before
 //   insert         delete the row again                 edited since (confirm), other records pointing at it
 //   delete         re-insert the row with its old id    slug / Wikidata id taken meanwhile, referenced rows gone,
-//                  (OVERRIDING SYSTEM VALUE)             relationship endpoints gone, identical relationship exists
+//                  (OVERRIDING SYSTEM VALUE)             relationship endpoints gone, identical relationship exists,
+//                                                       image's entry gone, same image there again
+//
+// Relationships and images are "dependent" rows: they hang on entities, so they are re-created after and deleted
+// before them.
 //
 // "Restore this version" plans one row: every field back to the state right after the chosen audit entry.
 //
@@ -20,8 +24,12 @@
 // that is rolled back): what the database would reject is shown before anything is applied.
 const crypto = require('crypto');
 const { merge3 } = require('./textdiff');
+const { IMAGE_FK: BY_IMAGE_FK } = require('../content');
 
-const TABLES = ['places', 'movements', 'artists', 'patrons', 'institutions', 'artworks', 'relationships'];
+const TABLES = ['places', 'movements', 'artists', 'patrons', 'institutions', 'artworks', 'relationships', 'images'];
+const DEPENDENT = new Set(['relationships', 'images']);
+// An image row belongs to the entity in whichever of its three foreign keys is set (migration 017).
+const imageOwner = (row) => ['artwork', 'artist', 'institution'].map((type) => ({ type, id: row[`${type}_id`] })).find((o) => o.id != null);
 const IGNORED = new Set(['id', 'created_at', 'updated_at', 'lifespan']);  // never compared or reverted
 // Foreign keys of entity tables (column → referenced table); relationships are checked by their own trigger.
 const FKS = { parent_id: null /* same table */, place_id: 'places', creator_id: 'artists', current_institution_id: 'institutions' };
@@ -47,7 +55,7 @@ async function currentRow(db, table, id) {
 
 // "Van Gogh — lived in → Paris" / "artist Vincent van Gogh"; names of deleted entities from their last audit entry.
 async function describe(db, table, row) {
-  if (table !== 'relationships') return `${table.slice(0, -1)} ${row.name || row.title || row.slug}`;
+  if (!DEPENDENT.has(table)) return `${table.slice(0, -1)} ${row.name || row.title || row.slug}`;
   const name = async (type, id) => {
     const { rows } = await db.query(`
       SELECT coalesce((SELECT name FROM entity_index WHERE type = $1::entity_type AND id = $2),
@@ -56,6 +64,10 @@ async function describe(db, table, row) {
                       $1 || ' #' || $2) AS n`, [type, id]);
     return rows[0].n;
   };
+  if (table === 'images') {
+    const owner = imageOwner(row);
+    return `image of ${await name(owner.type, owner.id)} “${row.caption || String(row.url).replace(/^.*\//, '')}”`;
+  }
   const { rows } = await db.query('SELECT label FROM relationship_types WHERE code = $1', [row.relationship_type]);
   return `${await name(row.subject_type, row.subject_id)} — ${rows[0] ? rows[0].label : row.relationship_type} → ${await name(row.object_type, row.object_id)}`;
 }
@@ -77,7 +89,8 @@ function fieldPlan(key, before, after, now, choices) {
   // before = value to go back to, after = what the change wrote, now = current value
   const fields = [];
   for (const k of Object.keys({ ...before, ...after })) {
-    if (IGNORED.has(k) || same(before[k], after[k])) continue;
+    // columns dropped since (e.g. the single image fields before migration 017) can't be reverted
+    if (IGNORED.has(k) || !(k in now) || same(before[k], after[k])) continue;
     const conflict = !same(now[k], after[k]);
     const already = same(now[k], before[k]);
     const chosen = choices[`f.${key}.${k}`];
@@ -99,7 +112,17 @@ async function planRestore(db, item, row, choices) {
   // Re-insert `row` (a full to_jsonb row) with its old id. Mutates item: json, notes, needs, blocked.
   const json = { ...row };
   const { table } = item;
-  if (table !== 'relationships') {
+  if (table === 'images') {
+    const owner = imageOwner(json);
+    const t = `${owner.type}s`;
+    if (!(await db.query(`SELECT 1 FROM ${t} WHERE id = $1`, [owner.id])).rows.length && !item.plannedIds.has(`${t}:${owner.id}`)) {
+      item.blocked = `its ${owner.type} (#${owner.id}) no longer exists and is not restored here`;
+    }
+    if ((await db.query(`SELECT 1 FROM images WHERE ${owner.type}_id = $1 AND url = $2 AND id <> $3`, [owner.id, json.url, json.id])).rows.length) {
+      item.blocked = 'the same image is there again';
+    }
+  } else if (table !== 'relationships') {
+    if (row.image_url) item.notes.push(`Its image from before multiple images (migration 017) is not restored — add it again: ${row.image_url}`);
     const taken = (await db.query(`SELECT slug FROM ${table} WHERE slug = $1 AND id <> $2`, [json.slug, json.id])).rows.length;
     if (taken) {
       const wanted = String(choices[`slug.${item.key}`] || '').trim();
@@ -142,7 +165,7 @@ async function planDelete(db, item, now, after, changeSetKeys) {
   if (!same({ ...now, updated_at: null }, { ...after, updated_at: null })) {
     item.needs.confirm = 'It has been edited since it was created — deleting it also discards those edits.';
   }
-  if (item.table !== 'relationships') {
+  if (!DEPENDENT.has(item.table)) {
     const type = item.table.slice(0, -1);
     const { rows } = await db.query(`
       SELECT id FROM relationships WHERE (subject_type, subject_id) = ($1::entity_type, $2) OR (object_type, object_id) = ($1::entity_type, $2)`,
@@ -150,6 +173,12 @@ async function planDelete(db, item, now, after, changeSetKeys) {
     const extra = rows.filter((r) => !changeSetKeys.has(`relationships:${r.id}`));
     if (extra.length) {
       item.needs.confirm = `${item.needs.confirm ? `${item.needs.confirm} ` : ''}${extra.length} relationship${extra.length === 1 ? '' : 's'} added since will be deleted with it.`;
+    }
+    if (BY_IMAGE_FK[type]) {
+      const imgs = (await db.query(`SELECT id FROM images WHERE ${type}_id = $1`, [item.rowId])).rows.filter((r) => !changeSetKeys.has(`images:${r.id}`));
+      if (imgs.length) {
+        item.needs.confirm = `${item.needs.confirm ? `${item.needs.confirm} ` : ''}${imgs.length} image${imgs.length === 1 ? '' : 's'} added since will be removed with it.`;
+      }
     }
   }
 }
@@ -177,7 +206,9 @@ async function planChangeSet(db, txid, choices = {}, submitted = false) {
       } else {
         item.op = 'update';
         item.fields = fieldPlan(key, e.old_row, e.new_row, now, choices);
-        if (item.fields.every((f) => f.status === 'already')) item.notes.push('Already undone — nothing left to revert here.');
+        const dropped = Object.keys({ ...e.old_row, ...e.new_row }).filter((k) => !IGNORED.has(k) && !(k in now) && !same(e.old_row[k], e.new_row[k]));
+        if (dropped.length) item.notes.push(`${dropped.join(', ')}: no longer a field of ${e.table_name} (the database changed since, e.g. images became a list) — not reverted.`);
+        if (item.fields.every((f) => f.status === 'already') && !(dropped.length && !item.fields.length)) item.notes.push('Already undone — nothing left to revert here.');
       }
     } else if (e.action === 'insert') {
       if (!now) { item.op = 'none'; item.notes.push('Already deleted.'); } else {
@@ -201,7 +232,7 @@ async function planVersion(db, auditId, choices = {}, submitted = false) {
     SELECT a.id, a.table_name, a.row_id, a.action::text, a.new_row, a.changed_at, u.username
     FROM audit_log a LEFT JOIN admin_users u ON u.id = a.user_id WHERE a.id = $1`, [auditId]);
   const e = rows[0];
-  if (!e || !TABLES.includes(e.table_name) || e.table_name === 'relationships' || !e.new_row) return null;
+  if (!e || !TABLES.includes(e.table_name) || DEPENDENT.has(e.table_name) || !e.new_row) return null;
   const now = await currentRow(db, e.table_name, e.row_id);
   const key = String(e.id);
   const item = {
@@ -216,7 +247,7 @@ async function planVersion(db, auditId, choices = {}, submitted = false) {
     item.op = 'update';
     // Target = that version, "after" = now: every field that differs is offered, ticked by default.
     for (const k of Object.keys(e.new_row)) {
-      if (IGNORED.has(k) || same(e.new_row[k], now[k])) continue;
+      if (IGNORED.has(k) || !(k in now) || same(e.new_row[k], now[k])) continue;
       const chosen = choices[`f.${key}.${k}`];
       item.fields.push({ name: k, before: e.new_row[k], after: now[k], now: now[k], status: 'auto', choice: chosen || 'revert' });
     }
@@ -227,13 +258,13 @@ async function planVersion(db, auditId, choices = {}, submitted = false) {
 
 // ---------------------------------------------------------------------------------------------------------------
 // Execution — the same code for the dry run (then ROLLBACK) and for real. Order matters: re-created entities first,
-// then updates, then re-created relationships (their ends may just have come back), then deletions (relationships
-// before the entities they point at).
+// then updates, then re-created relationships and images (their entities may just have come back), then deletions
+// (relationships and images before the entities they hang on).
 // ---------------------------------------------------------------------------------------------------------------
 const PHASE = (i) => ({
   'restore:entity': 0, 'update:entity': 1, 'update:relationship': 1, 'restore:relationship': 2,
   'delete:relationship': 3, 'delete:entity': 4,
-}[`${i.op}:${i.table === 'relationships' ? 'relationship' : 'entity'}`] ?? 9);
+}[`${i.op}:${DEPENDENT.has(i.table) ? 'relationship' : 'entity'}`] ?? 9);
 
 // Items still waiting for a confirmation are executed by the dry run too (to know whether they would work);
 // applying refuses to start while any included item is unconfirmed (see unconfirmed()).

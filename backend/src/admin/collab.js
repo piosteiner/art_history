@@ -45,8 +45,11 @@ function setForm(entry, form, origin = 'server') {
 }
 
 // Document → form (flat keys, what the browser would post).
+// Only keys the form still has: a copy made before a schema change (e.g. image fields moved to their own table,
+// migration 017) may hold keys that no longer exist — they must not count as unpublished changes.
 function formOf(entry) {
-  const form = { ...entry.doc.getMap('form').toJSON() };
+  const known = new Set(['slug', ...Object.keys(formKeys({}, entry.t, ''))]);
+  const form = Object.fromEntries(Object.entries(entry.doc.getMap('form').toJSON()).filter(([k]) => known.has(k)));
   for (const k of mdKeys(entry.t)) form[k] = entry.doc.getText(k).toString();
   form.version = entry.doc.getMap('meta').get('version') || '';
   return form;

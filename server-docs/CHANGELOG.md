@@ -4,6 +4,26 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-02
 
+### Several images per artwork, artist and institution (migration 017)
+- **What:** new table `images` (url, source_url, license, credit, caption, position) with an exclusive arc
+  (`artwork_id` / `artist_id` / `institution_id`, exactly one set, real FKs with ON DELETE CASCADE), partial indexes
+  per arc, unique (entry, url), audit trigger. The existing single images were moved in as position 0, then the
+  `image_*` columns of artworks/artists/institutions were dropped; the quality view's image check reads `images`.
+  Admin: "Images" section on the entry page — add, edit, remove, ↑ ↓ / make main (saved immediately, audited);
+  the first image is the list thumbnail and the preview. History describes image rows ("image of …"); revert/restore
+  handles them like relationships (a reverted deletion brings its images back; old changes to the dropped columns are
+  listed as not revertible). Wikidata: every P18 file offered on its own (add / skip / later, remembered as
+  `image:<file>`); for new entries after creating them. Public API: `image_url` = main image, detail `images` list.
+  YAML: `images:` list (import upserts by url, removes only with `--prune`). docs: data-model, api, content/README.
+- **Why:** owner: one image is not enough, especially for 3D artworks (front, back, details).
+- **Tested:** migration on dev (data moved, arc check rejects 0 or 2 owners); e2e (add / duplicate refused / make main
+  / reorder / edit / remove / revert, list thumbnail, API; Wikidata 2 images; revert of a deletion restores images);
+  export → import round trip on dev.
+- **Revert:** redeploy the previous commit, then as owner re-add the columns and copy position-0 images back, e.g.
+  `ALTER TABLE artworks ADD COLUMN image_url text, …; UPDATE artworks a SET image_url = i.url, … FROM images i
+  WHERE i.artwork_id = a.id AND i.position = 0;` (same for artists, institutions), re-create the 016 quality view,
+  `DROP TABLE images`. Easier: restore the backup taken right before the deploy.
+
 ### Inventory number only together with the institution (migration 016)
 - **What:** `CHECK (inventory_number IS NULL OR current_institution_id IS NOT NULL) NOT VALID` on artworks — enforced
   for every insert/update from now on; existing rows not yet checked. Quality view: new error check

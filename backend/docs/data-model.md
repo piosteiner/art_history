@@ -116,6 +116,19 @@ depth only with both. `materials text[]` complements the free-text `medium`; its
 not checked the existing ones (one violated it). The quality view lists remaining violations; when none is left,
 `ALTER TABLE … VALIDATE CONSTRAINT` checks all rows once without blocking writes, and the constraint is fully valid.
 
+## Images (migration 017)
+Artworks, artists and institutions can have several images (front, back, detail, installation view …) in one table
+`images (url, source_url, license, credit, caption, position)`. It belongs to exactly one entry through an
+**exclusive arc**: three nullable foreign keys `artwork_id`, `artist_id`, `institution_id` and
+`CHECK (num_nonnulls(artwork_id, artist_id, institution_id) = 1)`. Unlike the generic `relationships` table (any entity
+type, checked by triggers), real foreign keys work here — and `ON DELETE CASCADE` takes an entry's images with it.
+Per arc a partial index `(…_id, position)` serves "the images of this entry, in order", and a partial **unique** index
+`(…_id, url)` keeps the same image from being added twice (the YAML import upserts by it:
+`ON CONFLICT (artwork_id, url) WHERE artwork_id IS NOT NULL` — the predicate selects the partial index).
+`ORDER BY position, id`; the first image is the main one (list thumbnail, preview, the API's `image_url`). The API
+builds the list with `jsonb_agg(jsonb_build_object(…) ORDER BY position, id)`. The former single-image columns
+(014 and earlier) were moved here as position 0 and dropped.
+
 ## Data quality (migration 013)
 `quality_issues` is a view with one `SELECT` per check (`UNION ALL`): `check_id, severity, entity_type, entity_id,
 issue_key, detail`. The date checks are range operators — `&&` overlap, `<<` entirely before, `>>` entirely after,

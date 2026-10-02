@@ -9,23 +9,30 @@ const { badRequest, notFound, intParam, yearWindowRange } = require('../http');
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
+// Images (table images, migration 017): the main image's URL for lists, and the whole ordered list for details.
+// jsonb_agg(… ORDER BY …) builds the JSON array in Postgres, already in the right order.
+const mainImage = (fk) => `(SELECT i.url FROM images i WHERE i.${fk} = t.id ORDER BY i.position, i.id LIMIT 1) AS image_url`;
+const allImages = (fk) => `(SELECT coalesce(jsonb_agg(jsonb_build_object('url', i.url, 'source_url', i.source_url,
+    'license', i.license, 'credit', i.credit, 'caption', i.caption) ORDER BY i.position, i.id), '[]'::jsonb)
+  FROM images i WHERE i.${fk} = t.id) AS images, ${mainImage(fk)}`;
+
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
 // extra list filters (?key=value → SQL with $ placeholder), Markdown columns, default order.
 const ENTITIES = {
   artists: {
     type: 'artist', table: 'artists', name: 'name', period: 't.lifespan',
-    list: 't.sort_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death, t.image_url',
+    list: `t.sort_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death, ${mainImage('artist_id')}`,
     detail: `t.sort_name, t.alt_names, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
-             t.image_url, t.image_source_url, t.image_license, t.image_credit, t.biography_md`,
+             ${allImages('artist_id')}, t.biography_md`,
     md: ['biography_md'],
     order: 'coalesce(t.sort_name, t.name)',
   },
   artworks: {
     type: 'artwork', table: 'artworks', name: 'title', period: 't.created',
-    list: `range_json(t.created, t.created_label) AS created, t.kind,
+    list: `range_json(t.created, t.created_label) AS created, t.kind, ${mainImage('artwork_id')},
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator`,
     detail: `t.alt_titles, t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
-             t.inventory_number, t.image_url, t.image_source_url, t.image_license, t.image_credit, t.description_md,
+             t.inventory_number, ${allImages('artwork_id')}, t.description_md,
              t.materials,
              CASE WHEN t.height_cm IS NOT NULL THEN jsonb_build_object('height_cm', t.height_cm, 'width_cm', t.width_cm,
                'depth_cm', t.depth_cm, 'note', t.dimensions_note,
@@ -60,10 +67,10 @@ const ENTITIES = {
   },
   institutions: {
     type: 'institution', table: 'institutions', name: 'name', period: 't.founded',
-    list: `t.kind, range_json(t.founded, t.founded_label) AS founded, t.image_url,
+    list: `t.kind, range_json(t.founded, t.founded_label) AS founded, ${mainImage('institution_id')},
            (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = t.place_id) AS place`,
     detail: `t.alt_names, t.kind, range_json(t.founded, t.founded_label) AS founded, t.website_url, t.description_md,
-             t.image_url, t.image_source_url, t.image_license, t.image_credit,
+             ${allImages('institution_id')},
              (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', ST_AsGeoJSON(p.location)::jsonb)
                 FROM places p WHERE p.id = t.place_id) AS place`,
     md: ['description_md'],

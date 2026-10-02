@@ -29,9 +29,11 @@ Types (URL segment → `type`): `artists` → artist, `artworks` → artwork, `p
 Artworks also have `materials` (list; filter `?material=bronze`) and `dimensions`
 (`{height_cm, width_cm, depth_cm, note, label: "73.7 × 92.1 cm"}`, `depth_cm` only for objects, `null` without data).
 
-Artworks, artists and institutions carry an `image_url` (https, hotlinked — often Wikimedia Commons; for a smaller
-version replace `/NNNNpx-` in a Commons thumbnail URL with a standard width such as `/250px-`); the detail adds
-`image_source_url`, `image_license`, `image_credit` — show license and credit wherever the image is shown.
+Artworks, artists and institutions carry an `image_url`: the main image (https, hotlinked — often Wikimedia Commons;
+for a smaller version replace `/NNNNpx-` in a Commons thumbnail URL with a standard width such as `/250px-`), `null`
+without images. The detail adds `images`, all of them in order (the first = `image_url`):
+`[{url, source_url, license, credit, caption}]` — e.g. caption "Back view" for a sculpture. Show license and credit
+wherever an image is shown.
 
 ### `GET /v1/<type>/:slug` — detail
 All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:

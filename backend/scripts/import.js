@@ -5,7 +5,7 @@
 //   npm run import                  # production DB
 //   npm run import:dev              # arthistory_dev
 //   npm run import -- --dry-run     # validate + report, then roll back
-//   npm run import -- --prune       # also delete relationships of content entities that are no longer in the YAML
+//   npm run import -- --prune       # also delete relationships (and images) of content entities that are no longer in the YAML
 //
 // Layout: content/<folder>/<slug>.yaml — one entity per file, the file name is its slug.
 // Format and examples: content/README.md
@@ -198,6 +198,39 @@ async function main() {
           await client.query('ROLLBACK TO SAVEPOINT rel');
           fail(e.file, `${where} (${rel.type} → ${rel.to}): ${err.message}`);
         }
+      }
+    }
+
+    // 3b. Images, for files that have an images: list. Identified by (entry, url) — the unique partial indexes of
+    //     migration 017; ON CONFLICT names the index by its columns + predicate. The list order becomes position.
+    for (const e of entities.filter((x) => x.images !== null)) {
+      const entityId = ids.get(`${e.type}/${e.slug}`);
+      if (entityId === undefined) continue;
+      if (!e.imageFk) { fail(e.file, `images: ${e.folder} have no images`); continue; }
+      const fk = e.imageFk;
+      for (const [i, img] of e.images.entries()) {
+        const params = [entityId, i, img.url, img.source_url ?? null, img.license ?? null, img.credit ?? null, img.caption ?? null];
+        try {
+          await client.query('SAVEPOINT img');
+          const { rows } = await client.query(`
+            INSERT INTO images AS x (${fk}, position, url, source_url, license, credit, caption) VALUES ($1, $2, $3, $4, $5, $6, $7)
+            ON CONFLICT (${fk}, url) WHERE ${fk} IS NOT NULL DO UPDATE
+              SET position = EXCLUDED.position, source_url = EXCLUDED.source_url, license = EXCLUDED.license,
+                  credit = EXCLUDED.credit, caption = EXCLUDED.caption
+              WHERE (x.position, x.source_url, x.license, x.credit, x.caption)
+                    IS DISTINCT FROM (EXCLUDED.position, EXCLUDED.source_url, EXCLUDED.license, EXCLUDED.credit, EXCLUDED.caption)
+            RETURNING (xmax = 0) AS inserted`, params);
+          await client.query('RELEASE SAVEPOINT img');
+          count(`images ${!rows.length ? 'unchanged' : rows[0].inserted ? 'inserted' : 'updated'}`);
+        } catch (err) {
+          await client.query('ROLLBACK TO SAVEPOINT img');
+          fail(e.file, `images[${i}]: ${err.message}`);
+        }
+      }
+      if (PRUNE) {
+        const { rowCount } = await client.query(`DELETE FROM images WHERE ${fk} = $1 AND url <> ALL ($2::text[])`,
+          [entityId, e.images.map((img) => img.url)]);
+        if (rowCount) stats['images pruned'] = (stats['images pruned'] || 0) + rowCount;
       }
     }
 

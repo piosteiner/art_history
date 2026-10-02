@@ -66,7 +66,7 @@ test('delete: the confirmation lists relationships; a referenced entity is prote
 
 test('a reverse relationship ("commissioned by") is stored in canonical direction', async ({ userA }) => {
   await userA.goto('/artworks/the-starry-night');
-  await userA.click('details summary');
+  await userA.click('summary:has-text("+ Add relationship")');
   await userA.selectOption('#r-type', '~commissioned');
   await userA.fill('#r-to', 'place/paris');
   await userA.fill('#r-period', '1889');
@@ -78,7 +78,7 @@ test('a reverse relationship ("commissioned by") is stored in canonical directio
 
 test('a relationship with a wrong target type gets a readable message', async ({ userA }) => {
   await userA.goto('/artists/paul-gauguin');
-  await userA.click('details summary');
+  await userA.click('summary:has-text("+ Add relationship")');
   await userA.selectOption('#r-type', 'lived_in');
   await userA.fill('#r-to', 'artist/vincent-van-gogh');
   await userA.keyboard.press('Escape');  // close the "no match" suggestions, as a user would
@@ -95,7 +95,7 @@ test('pickers: typo-tolerant, keyboard selection, filtered by relationship type'
   await expect(userA).toHaveURL(/\/artworks\/new$/);  // Enter picked, did not submit
 
   await userA.goto('/artists/paul-gauguin');
-  await userA.click('details summary');
+  await userA.click('summary:has-text("+ Add relationship")');
   await userA.selectOption('#r-type', 'lived_in');
   await userA.locator('#r-to').pressSequentially('pari', { delay: 20 });
   const items = userA.locator('.ac-list:not([hidden]) .ac-item');

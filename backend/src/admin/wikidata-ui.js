@@ -1,4 +1,5 @@
 // Pages for the Wikidata comparison (logic: wikidata.js). Nothing is pre-selected that would replace a value of yours.
+const { thumbUrl } = require('./images');
 const { html } = require('./html');
 const { humanize } = require('./forms');
 
@@ -68,8 +69,19 @@ function suggestionRow(s, i, t) {
       ${s.declined ? html`<div class="muted small">skipped before</div>` : ''}</td></tr>`;
 }
 
+// One Commons image: add it to the entry's images, skip it (remembered), or decide later.
+function imageChoice(img, i) {
+  const pre = img.declined ? 'skip' : img.suggested ? 'add' : 'later';
+  const radio = (value, label) => html`<label class="choice"><input type="radio" name="img.${i}" value="${value}"${pre === value ? ' checked' : ''}> ${label}</label>`;
+  return html`<div class="wd-image${img.declined ? ' wd-declined' : ''}"><img src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">
+    <div><div><b>${img.file}</b></div><div><b>License:</b> ${img.license || '?'}</div><div><b>Credit:</b> ${img.credit || '?'}</div>
+      <div class="small"><a href="${img.source_url}" target="_blank" rel="noopener">file page ↗</a></div>
+      ${img.status === 'same' ? html`<p class="muted">Already one of ours.</p>`
+        : html`${radio('add', 'add to the images')} ${radio('skip', 'skip')} ${radio('later', 'decide later')}
+          ${img.declined ? html`<div class="muted small">skipped before</div>` : ''}`}</div></div>`;
+}
+
 function reviewPage({ title, plan, t, action, isNew }) {
-  const img = plan.image;
   const fresh = plan.suggestions.filter((s) => !s.declined);
   const declined = plan.suggestions.filter((s) => s.declined);
   return html`<h1>${title}</h1>
@@ -83,16 +95,9 @@ function reviewPage({ title, plan, t, action, isNew }) {
       <h2>Fields</h2>
       <div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Field</th><th>Yours</th><th>Wikidata</th><th>Take?</th></tr></thead>
         <tbody>${plan.rows.map((r) => fieldRow(r, t))}</tbody></table></div>
-      ${img ? html`<h2>Image (Wikimedia Commons)</h2>
-        <div class="wd-image"><img src="${img.image_url}" alt="">
-          <div><div><b>License:</b> ${img.image_license || '?'}</div><div><b>Credit:</b> ${img.image_credit || '?'}</div>
-            <div class="small"><a href="${img.image_source_url}" target="_blank" rel="noopener">file page ↗</a></div>
-            ${img.status === 'same' ? html`<p class="muted">Already this image.</p>` : (() => {
-              const pre = img.declined ? 'keep' : img.status === 'empty' ? 'take' : 'later';
-              const radio = (value, label) => html`<label class="choice"><input type="radio" name="image" value="${value}"${pre === value ? ' checked' : ''}> ${label}</label>`;
-              return html`${radio('take', `use this image, license and credit${img.ours ? ' (replaces yours)' : ''}`)}<br>
-                ${radio('keep', img.ours ? 'keep mine' : 'no image')} ${radio('later', 'decide later')}`;
-            })()}</div></div>` : ''}
+      ${plan.images.length ? html`<h2>Images (Wikimedia Commons)</h2>
+        ${isNew ? html`<p class="muted">${plan.images.length} image${plan.images.length === 1 ? '' : 's'} on Commons — create the entry first, then compare it with Wikidata again to add them.</p>`
+          : html`<div class="wd-images">${plan.images.map((img, i) => imageChoice(img, i))}</div>`}` : ''}
       ${!isNew ? html`<h2>Relationships suggested by Wikidata</h2>
         ${plan.suggestions.length ? html`<p class="actions wd-bulk">Set all open suggestions:
             <button type="button" class="secondary" data-wd-set="link">link where we have it</button>

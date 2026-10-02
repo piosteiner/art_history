@@ -19,30 +19,31 @@ const TYPES = [
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
     name: 'text', sort_name: 'text', alt_names: 'text[]', birth: 'date', death: 'date',
-    image_url: 'text', image_source_url: 'text', image_license: 'text', image_credit: 'text',
     biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'patron', folder: 'patrons', table: 'patrons', name: 'name', fields: {
     name: 'text', alt_names: 'text[]', kind: 'text', active: 'period', notes_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
     name: 'text', alt_names: 'text[]', kind: 'text', founded: 'date', place: 'ref:place',
-    image_url: 'text', image_source_url: 'text', image_license: 'text', image_credit: 'text',
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     title: 'text', alt_titles: 'text[]', creator: 'ref:artist', attribution_label: 'text', created: 'date',
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     institution: 'ref:institution', inventory_number: 'text',
-    image_url: 'text', image_source_url: 'text', image_license: 'text', image_credit: 'text',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
+// Types with images (table images, migration 017): the foreign-key column that points at them.
+const IMAGE_FK = { artwork: 'artwork_id', artist: 'artist_id', institution: 'institution_id' };
+for (const t of TYPES) t.imageFk = IMAGE_FK[t.type] || null;
 const BY_TYPE = Object.fromEntries(TYPES.map((t) => [t.type, t]));
 const BY_FOLDER = Object.fromEntries(TYPES.map((t) => [t.folder, t]));
 
 // YAML key → column where they differ.
 const REF_COLUMNS = { place: 'place_id', creator: 'creator_id', institution: 'current_institution_id' };
 const REL_KEYS = new Set(['type', 'to', 'period', 'period_label', 'label', 'certainty', 'notes_md', 'sources', 'metadata']);
+const IMAGE_KEYS = ['url', 'source_url', 'license', 'credit', 'caption'];
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 
-// doc → { cols: {col: [sqlExpr, value]}, refs: [{col, type, slug}], parent, relationships, errors: ['key: message'] }
+// doc → { cols: {col: [sqlExpr, value]}, refs: [{col, type, slug}], parent, relationships, images, errors: ['key: message'] }
 // sqlExpr uses "$" as the placeholder for its value. Nothing here touches the database.
 function toRow(doc, fields) {
   const cols = {};
@@ -52,7 +53,7 @@ function toRow(doc, fields) {
   const put = (col, value, expr = '$') => { cols[col] = [expr, value]; };
 
   for (const key of Object.keys(doc)) {
-    if (key === 'relationships' || key === 'slug') continue;
+    if (key === 'relationships' || key === 'images' || key === 'slug') continue;
     if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;
     if (!fields[key]) errors.push(`unknown field "${key}"`);
   }
@@ -111,7 +112,24 @@ function toRow(doc, fields) {
   }
   const relationships = doc.relationships ?? [];
   if (!Array.isArray(relationships)) errors.push('relationships must be a list');
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], errors };
+  // images: [{url, source_url, license, credit, caption}] in order (the first is the main image); null = key absent
+  let images = null;
+  if (doc.images !== undefined) {
+    if (!Array.isArray(doc.images)) errors.push('images must be a list');
+    else {
+      images = doc.images;
+      images.forEach((img, i) => {
+        if (!img || typeof img !== 'object' || Array.isArray(img)) { errors.push(`images[${i}]: must be a mapping`); return; }
+        const extra = Object.keys(img).filter((k) => !IMAGE_KEYS.includes(k));
+        if (extra.length) errors.push(`images[${i}]: unknown field(s) ${extra.join(', ')}`);
+        if (typeof img.url !== 'string' || !/^https:\/\/\S+$/.test(img.url)) errors.push(`images[${i}]: url (https://…) is required`);
+        for (const k of IMAGE_KEYS) if (img[k] != null && typeof img[k] !== 'string') errors.push(`images[${i}].${k}: must be text`);
+      });
+      const urls = images.map((img) => img && img.url);
+      if (new Set(urls).size !== urls.length) errors.push('images: the same url twice');
+    }
+  }
+  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, errors };
 }
 
 // Stored date → { value: '1886-03/1888-02-20', label } where label is null when it is just the generated one.
@@ -199,4 +217,13 @@ async function docFromJson(db, t, json) {
   return rowToDoc(rows[0], t);
 }
 
-module.exports = { TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };
+// An entry's images in order (the first is the main image).
+async function readImages(db, type, id) {
+  const fk = IMAGE_FK[type];
+  if (!fk) return [];
+  const { rows } = await db.query(`SELECT id, position, url, source_url, license, credit, caption FROM images
+    WHERE ${fk} = $1 ORDER BY position, id`, [id]);
+  return rows;
+}
+
+module.exports = { IMAGE_FK, IMAGE_KEYS, readImages, TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };

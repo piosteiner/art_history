@@ -156,6 +156,7 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .wd-table .choice { display: inline-block; margin: 0 .8rem .15rem 0; }
 .wd-table input[type=checkbox], .wd-table input[type=radio], .wd-image input { width: auto; margin-right: .25rem; }
 .wd-image { display: flex; gap: 1rem; flex-wrap: wrap; align-items: flex-start; }
+.wd-images { display: grid; gap: 1rem; }
 .wd-image img { max-width: 260px; max-height: 260px; border-radius: 6px; border: 1px solid var(--line); }
 
 /* Data quality (src/admin/quality.js) */
@@ -184,5 +185,13 @@ td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-f
 .image-preview img { display: block; max-width: min(100%, 500px); max-height: 420px; border-radius: 6px; border: 1px solid var(--line); }
 .image-preview figcaption { margin-top: .3rem; }
 .thumbs-artist td.thumb img { object-position: center 20%; }  /* portraits: keep the face in the square */
+/* the "Images" section: all of an entry's images in order, the first one is the main image (migration 017) */
+.image-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
+.image-item { margin: 0; border: 1px solid var(--line); border-radius: 6px; padding: .5rem; }
+.image-item.main { border-color: var(--accent, #555); }
+.image-item img { display: block; width: 100%; height: 150px; object-fit: contain; background: var(--line); border-radius: 4px; }
+.image-item figcaption { margin-top: .4rem; font-size: .9rem; overflow-wrap: anywhere; }
+.image-actions { display: flex; gap: .6rem; flex-wrap: wrap; margin-top: .3rem; align-items: center; }
+.image-edit-preview { max-width: 250px; max-height: 250px; border-radius: 6px; border: 1px solid var(--line); }
 .row.dims { align-items: center; }
 .row.dims .x { flex: 0 0 auto; min-width: 0; color: var(--muted); }

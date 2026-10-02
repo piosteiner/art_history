@@ -56,8 +56,8 @@ test('artwork list shows 120 px thumbnails, the artwork page a larger preview wi
     requested.push(route.request().url().replace(/^.*\//, ''));
     route.fulfill({ status: 200, contentType: 'image/png', body: PNG });
   });
-  require('./helpers').sql(`UPDATE artworks SET image_url = 'https://upload.wikimedia.org/wikipedia/commons/b/b5/Great_Wave.jpg',
-    image_license = 'Public domain', image_credit = 'Katsushika Hokusai' WHERE slug = 'the-great-wave-off-kanagawa'`);
+  require('./helpers').sql(`INSERT INTO images (artwork_id, url, license, credit) VALUES (entity_id('artwork', 'the-great-wave-off-kanagawa'),
+    'https://upload.wikimedia.org/wikipedia/commons/b/b5/Great_Wave.jpg', 'Public domain', 'Katsushika Hokusai')`);
   await userA.goto('/artworks');
   const row = userA.locator('tr', { hasText: 'The Great Wave off Kanagawa' });
   await expect(row.locator('td.thumb img')).toHaveAttribute('src', /\/thumb\/b\/b5\/Great_Wave\.jpg\/120px-Great_Wave\.jpg$/);
@@ -68,20 +68,60 @@ test('artwork list shows 120 px thumbnails, the artwork page a larger preview wi
   expect(requested).toEqual(expect.arrayContaining(['120px-Great_Wave.jpg', '500px-Great_Wave.jpg']));
 });
 
-test('artists and institutions have images too: list thumbnail, page preview, public API', async ({ userA, request }) => {
+test('several images per entry: add, reorder (first = main image), edit, remove — audited, in the API', async ({ userA, request }) => {
   await userA.route(/^https:\/\/(upload|thumb)\.wikimedia\.org\//, (route) => route.fulfill({ status: 200, contentType: 'image/png', body: PNG }));
-  await userA.goto('/institutions/van-gogh-museum/edit');
-  await userA.fill('#f-image_url', 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Van_Gogh_Museum.jpg');
-  await userA.fill('#f-image_license', 'CC BY-SA 4.0');
-  await userA.fill('#f-image_credit', 'Photo: someone');
-  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);  // Publish
-  await userA.goto('/institutions');
-  await expect(userA.locator('tr', { hasText: 'Van Gogh Museum' }).locator('td.thumb img'))
-    .toHaveAttribute('src', /\/thumb\/a\/ab\/Van_Gogh_Museum\.jpg\/120px-Van_Gogh_Museum\.jpg$/);
+  const add = async (fields) => {
+    await userA.goto('/institutions/van-gogh-museum');
+    await userA.click('summary:has-text("+ Add image")');
+    for (const [k, v] of Object.entries(fields)) await userA.fill(`#img-${k}`, v);
+    await Promise.all([userA.waitForNavigation(), userA.click('.image-form button')]);
+    await expect(userA.locator('.flash.ok')).toHaveText('Image added.');
+  };
+  await add({ url: 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Van_Gogh_Museum.jpg', license: 'CC BY-SA 4.0', credit: 'Photo: someone' });
+  await add({ url: 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Entrance.jpg', caption: 'Entrance' });
+  await expect(userA.locator('.image-item')).toHaveCount(2);
+  await expect(userA.locator('.image-item').first()).toContainText('main image');
+  await expect(userA.locator('.image-preview figcaption')).toContainText('Photo: someone · CC BY-SA 4.0');
+
+  // the same image twice is refused with a readable message
+  await userA.click('summary:has-text("+ Add image")');
+  await userA.fill('#img-url', 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Entrance.jpg');
+  await Promise.all([userA.waitForNavigation(), userA.click('.image-form button')]);
+  await expect(userA.locator('.flash.error')).toHaveText("This image is already one of the entry's images.");
+
+  // make the second one the main image → list thumbnail and API follow
   await userA.goto('/institutions/van-gogh-museum');
-  await expect(userA.locator('.image-preview figcaption')).toHaveText('Photo: someone · CC BY-SA 4.0');
+  await Promise.all([userA.waitForNavigation(), userA.locator('.image-item', { hasText: 'Entrance' }).locator('button:has-text("make main")').click()]);
+  await expect(userA.locator('.image-item').first()).toContainText('Entrance');
+  await userA.goto('/institutions');
+  await expect(userA.locator('tr', { hasText: 'Van Gogh Museum' }).locator('td.thumb img')).toHaveAttribute('src', /120px-Entrance\.jpg$/);
   await userA.goto('/artists');
   await expect(userA.locator('table.thumbs-artist .thumb-empty').first()).toBeVisible();  // artists have the column too
-  const api = await request.get('http://127.0.0.1:3006/v1/institutions/van-gogh-museum', { headers: { Host: 'api.localhost' } });
-  expect((await api.json()).image_license).toBe('CC BY-SA 4.0');
+  let api = await (await request.get('http://127.0.0.1:3006/v1/institutions/van-gogh-museum', { headers: { Host: 'api.localhost' } })).json();
+  expect(api.images.map((i) => i.caption)).toEqual(['Entrance', null]);
+  expect(api.images[1].license).toBe('CC BY-SA 4.0');
+  expect(api.image_url).toMatch(/Entrance\.jpg$/);
+
+  // ↓ moves it back; edit the caption; remove it
+  await userA.goto('/institutions/van-gogh-museum');
+  await Promise.all([userA.waitForNavigation(), userA.locator('.image-item').first().locator('button[title="Move later"]').click()]);
+  await expect(userA.locator('.image-item').first()).toContainText('Photo: someone');
+  await userA.locator('.image-item', { hasText: 'Entrance' }).locator('a:has-text("edit")').click();
+  await userA.fill('#img-caption', 'Main entrance');
+  await Promise.all([userA.waitForNavigation(), userA.click('.image-form button')]);
+  await expect(userA.locator('.image-item').nth(1)).toContainText('Main entrance');
+  await userA.locator('.image-item', { hasText: 'Main entrance' }).locator('a:has-text("edit")').click();
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Remove this image")')]);
+  await expect(userA.locator('.flash.ok')).toHaveText('Image removed.');
+  await expect(userA.locator('.image-item')).toHaveCount(1);
+  api = await (await request.get('http://127.0.0.1:3006/v1/institutions/van-gogh-museum', { headers: { Host: 'api.localhost' } })).json();
+  expect(api.images).toHaveLength(1);
+
+  // in the entry's history, and the removal can be reverted
+  await userA.goto('/institutions/van-gogh-museum/history');
+  await expect(userA.locator('table.diff > tbody > tr').first()).toContainText('image of Van Gogh Museum “Main entrance”');
+  await userA.locator('table.diff > tbody > tr').first().locator('a:has-text("revert…")').click();
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Apply")')]);
+  await userA.goto('/institutions/van-gogh-museum');
+  await expect(userA.locator('.image-item')).toHaveCount(2);
 });

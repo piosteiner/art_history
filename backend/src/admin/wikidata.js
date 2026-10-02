@@ -59,6 +59,7 @@ async function search(q) {
   return ((await getJson(url)).search || []).map((r) => ({ id: r.id, label: r.label, description: r.description || '' }));
 }
 
+const MAX_IMAGES = 12;  // P18 statements offered per item (each costs one Commons request)
 const stripTags = (s) => String(s || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
 async function commonsImage(file) {
   const url = `${COMMONS}/w/api.php?${new URLSearchParams({ action: 'query', titles: `File:${file}`, prop: 'imageinfo',
@@ -69,10 +70,11 @@ async function commonsImage(file) {
   const meta = info.extmetadata || {};
   const clean = (u) => (u ? u.split('?')[0] : u);  // Commons appends tracking parameters (utm_…) — not for our data
   return {
-    image_url: clean(info.thumburl || info.url),
-    image_source_url: info.descriptionurl,
-    image_license: stripTags(meta.LicenseShortName && meta.LicenseShortName.value) || null,
-    image_credit: stripTags(meta.Artist && meta.Artist.value) || null,
+    file,
+    url: clean(info.thumburl || info.url),
+    source_url: info.descriptionurl,
+    license: stripTags(meta.LicenseShortName && meta.LicenseShortName.value) || null,
+    credit: stripTags(meta.Artist && meta.Artist.value) || null,
   };
 }
 
@@ -349,14 +351,20 @@ async function compare(db, t, qid, ours, entity) {
     rows.push({ ...scalarRow(key, oursVal, display, w.kind === 'date' ? { value: w.value, label: w.label } : w.value, declined(key, w.value)), kind: w.kind });
   }
 
-  // Image (artworks)
-  let image = null;
-  // P18 "image": an artwork's picture, an artist's portrait, an institution's building — for every type with image fields
-  const file = t.fields.image_url ? firstString(e, 'P18') : null;
-  if (file) {
-    const img = await commonsImage(file).catch(() => null);
-    if (img) image = { ...img, ours: ours['f.image_url'] || '', status: !ours['f.image_url'] ? 'empty' : ours['f.image_url'] === img.image_url ? 'same' : 'differs',
-      declined: declined('image', img.image_url) };
+  // Images: every P18 "image" statement (an artwork's views, an artist's portrait, an institution's building), each
+  // offered on its own. Ours are matched by the Commons file page (our copy may be stored at another width).
+  const images = [];
+  if (t.imageFk) {
+    const files = [...new Set(statements(e, 'P18').map((s) => String(s.mainsnak.datavalue.value)))].slice(0, MAX_IMAGES);
+    const have = entity ? (await db.query(`SELECT url, source_url FROM images WHERE ${t.imageFk} = $1`, [entity.id])).rows : [];
+    for (const file of files) {
+      const img = await commonsImage(file).catch(() => null);
+      if (!img) continue;
+      const same = have.some((h) => h.url === img.url || (h.source_url && h.source_url === img.source_url));
+      images.push({ ...img, item: `image:${file}`, status: same ? 'same' : 'new', declined: declined(`image:${file}`, img.url) });
+    }
+    // the first new one is pre-selected when the entry has no image yet
+    if (entity && !have.length) { const first = images.find((x) => !x.declined); if (first) first.suggested = true; }
   }
 
   // Relationship suggestions
@@ -387,7 +395,7 @@ async function compare(db, t, qid, ours, entity) {
       period: r.period, period_label: r.period_label, already, declined: declined(item, r.qid),
       period_display: r.period_label || (r.period ? parseFuzzyDate(r.period, { openEnd: true }).label : '') });
   }
-  return { qid, label: labelOf(e), description: (e.descriptions && e.descriptions.en && e.descriptions.en.value) || '', rows, image, suggestions };
+  return { qid, label: labelOf(e), description: (e.descriptions && e.descriptions.en && e.descriptions.en.value) || '', rows, images, suggestions };
 }
 
 function scalarRow(key, ours, display, value, declined) {
@@ -449,7 +457,7 @@ async function createEntry(db, type, doc) {
 
 // → { form: flat form values to put into the working copy / draft, created: [labels], relationships: n }
 // choices: take.<key>=take|keep|later (text, date, point), alt.<key>=<name> (repeated) + altrest.<key>=later|decline,
-//          ref.<key>=later|keep|link|candidate|create, image=take|keep|later, rel.<i>=later|skip|link|candidate|create
+//          ref.<key>=later|keep|link|candidate|create, img.<i>=add|skip|later, rel.<i>=later|skip|link|candidate|create
 // Only explicit decisions are remembered: keep/skip/decline → 'declined', taking → 'accepted'; "later" records nothing.
 async function apply(db, t, entity, plan, choices, userId) {
   const form = {};
@@ -496,14 +504,22 @@ async function apply(db, t, entity, plan, choices, userId) {
       form[`f.${row.key}_label`] = row.value.label || '';
     } else form[`f.${row.key}`] = String(row.value);
   }
-  if (plan.image && plan.image.status !== 'same') {
-    const pick = choices.image || 'later';
-    const taken = pick === 'take';
-    if (pick !== 'later') await decide('image', plan.image.image_url, taken);
-    if (taken) for (const k of ['image_url', 'image_source_url', 'image_license', 'image_credit']) form[`f.${k}`] = plan.image[k] || '';
-  }
   let relationships = 0;
+  let images = 0;
   if (entity) {
+    // Images are rows of their own (migration 017): added right away, after the ones we have, in Wikidata's order.
+    for (const [i, img] of plan.images.entries()) {
+      if (img.status === 'same') continue;
+      const pick = choices[`img.${i}`] || 'later';
+      if (pick === 'later') continue;
+      await decide(img.item, img.url, pick === 'add');
+      if (pick !== 'add') continue;
+      const fk = BY_TYPE[entity.type].imageFk;
+      await db.query(`INSERT INTO images (${fk}, position, url, source_url, license, credit)
+        VALUES ($1, (SELECT coalesce(max(position) + 1, 0) FROM images WHERE ${fk} = $1), $2, $3, $4, $5)`,
+      [entity.id, img.url, img.source_url, img.license, img.credit]);
+      images += 1;
+    }
     for (const [i, s] of plan.suggestions.entries()) {
       if (s.already) continue;
       const pick = choices[`rel.${i}`] || 'later';
@@ -532,7 +548,7 @@ async function apply(db, t, entity, plan, choices, userId) {
       relationships += 1;
     }
   }
-  return { form, created, relationships };
+  return { form, created, relationships, images };
 }
 
 module.exports = { search, compare, apply, slugify, sourceNote, SLUG };

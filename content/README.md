@@ -20,7 +20,7 @@ cd backend
 npm run import:dev -- --dry-run   # validate against the dev DB, write nothing
 npm run import:dev                # load into arthistory_dev, check at http://127.0.0.1:3005/v1/…
 npm run import                    # production (deploy.sh does this automatically)
-npm run import -- --prune         # also remove relationships that were deleted from a file
+npm run import -- --prune         # also remove relationships (and images) that were deleted from a file
 ```
 Every problem in every file is reported at once, and nothing is written unless the whole import succeeds.
 A field left out of a file is cleared in the database: the file is the whole truth about its entity.
@@ -44,13 +44,28 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 |---|---|
 | places | `name`*, `kind`* (settlement, building, site, region, country), `location`* `[longitude, latitude]`, `parent` (place slug), `country_code` (ISO, e.g. FR), `alt_names`, `area` (GeoJSON polygon), `description_md` |
 | movements | `name`*, `kind`* (period, movement, school, style), `parent` (movement slug), `period`, `description_md` |
-| artists | `name`*, `sort_name`, `alt_names`, `birth`, `death`, `image_url` (portrait, https, hotlinked), `image_source_url`, `image_license`, `image_credit`, `biography_md` |
+| artists | `name`*, `sort_name`, `alt_names`, `birth`, `death`, `biography_md` |
 | patrons | `name`*, `kind` (person, family, …), `alt_names`, `active`, `notes_md` |
-| institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `image_url` (building, https, hotlinked), `image_source_url`, `image_license`, `image_credit`, `alt_names`, `description_md` |
-| artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `institution` (current holder, slug), `inventory_number`, `image_url` (https, hotlinked), `image_source_url`, `image_license`, `image_credit`, `alt_titles`, `description_md` |
+| institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `alt_names`, `description_md` |
+| artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `institution` (current holder, slug), `inventory_number`, `alt_titles`, `description_md` |
 
 Every entity also takes `wikidata_id` (`Q…`) and `metadata` (free-form mapping). `*_md` fields are Markdown;
 the API serves them as sanitized HTML.
+
+## Images
+Artworks, artists and institutions take a list of images; the first one is the main image. Only `url` is required.
+
+```yaml
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b5/Great_Wave.jpg   # https, hotlinked
+    source_url: https://commons.wikimedia.org/wiki/File:Great_Wave.jpg
+    license: Public domain
+    credit: Katsushika Hokusai
+  - url: https://example.org/back.jpg
+    caption: Back view
+```
+The import matches images by `url` per entry (order and the other fields are updated); images no longer listed are
+removed only with `--prune`. Files without an `images:` key leave the entry's images alone.
 
 ## Relationships
 Listed in the file of the **subject** — the entity the sentence starts with ("Van Gogh *lived in* Arles").

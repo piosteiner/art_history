@@ -5,11 +5,12 @@
 //   /<plural>                  list + search            /<plural>/new        create
 //   /<plural>/<slug>           view + relationships     /<plural>/<slug>/edit · /delete · /history
 //   /relationships/<id>/edit   edit one relationship    /history             all changes
+//   /images/<id>/edit          edit one image           (images are added and reordered on the entry's page)
 const express = require('express');
 const path = require('path');
 const config = require('../config');
 const { adminPool } = require('../db');
-const { TYPES, BY_FOLDER, BY_TYPE, SLUG, toRow, readDocs, readRelationships } = require('../content');
+const { TYPES, BY_FOLDER, BY_TYPE, SLUG, toRow, readDocs, readRelationships, readImages } = require('../content');
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { renderMarkdown } = require('../markdown');
 const { html, raw, layout } = require('./html');
@@ -21,7 +22,9 @@ const { wordDiff, isLongText } = require('./textdiff');
 const drafts = require('./drafts');
 const wikidata = require('./wikidata');
 const quality = require('./quality');
-const { thumbUrl } = require('./images');
+const images = require('./images');
+
+const { thumbUrl } = images;
 const { searchPage, reviewPage } = require('./wikidata-ui');
 const collab = require('./collab');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
@@ -49,6 +52,7 @@ const DONE = {
   reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
   restored: 'Version restored.',
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
+  'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
 };
 
 function send(req, res, { title, body, status = 200, flash, page = null }) {
@@ -56,7 +60,8 @@ function send(req, res, { title, body, status = 200, flash, page = null }) {
     // Numbers only from the URL — never reflect free text.
     const n = (k) => Math.max(0, Number.parseInt(req.query[k], 10) || 0);
     const extra = req.query.done === 'wikidata' ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
-      n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`].filter(Boolean).join(', ') : '';
+      n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`,
+      n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`].filter(Boolean).join(', ') : '';
     flash = { kind: 'ok', text: DONE[req.query.done] + (extra ? ` (${extra})` : '') };
   }
   res.status(status).type('html').send(String(layout({ title, body, user: req.user, flash, page })));
@@ -121,7 +126,10 @@ const RULES = {
 };
 function friendly(err) {
   if (err instanceof UserError) return err.message;
-  if (err.code === '23505') return /slug/.test(err.constraint || '') ? 'That slug is already taken.' : `Duplicate: ${err.detail || err.message}`;
+  if (err.code === '23505') {
+    if (/^images_\w+_url$/.test(err.constraint || '')) return 'This image is already one of the entry\'s images.';
+    return /slug/.test(err.constraint || '') ? 'That slug is already taken.' : `Duplicate: ${err.detail || err.message}`;
+  }
   if (err.code === '23503' || err.code === '23001') {
     const m = /referenced from table "(\w+)"/.exec(err.detail || '');
     return m ? `Still used by ${m[1]} (e.g. an artwork's creator or an institution's place) — change those first.` : `Still in use: ${err.detail || err.message}`;
@@ -181,8 +189,11 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
            CASE WHEN a.table_name = 'relationships'
              THEN concat_ws(' ', coalesce(s.name, ${gone("r->>'subject_type'", "r->>'subject_id'")}), '—',
                             rt.label, '→', coalesce(o.name, ${gone("r->>'object_type'", "r->>'object_id'")}))
+             WHEN a.table_name = 'images'
+             THEN concat_ws(' ', 'image of', coalesce(ie.name, ${gone('ix.type', 'ix.id')}), '“' || coalesce(r->>'caption', regexp_replace(r->>'url', '^.*/', '')) || '”')
              ELSE coalesce(r->>'name', r->>'title', r->>'slug') END AS what,
            CASE WHEN a.table_name = 'relationships' THEN s.type::text || 's/' || s.slug
+                WHEN a.table_name = 'images' THEN ie.type::text || 's/' || ie.slug
                 WHEN a.action <> 'delete' THEN a.table_name || '/' || (r->>'slug') END AS link,
            (SELECT jsonb_object_agg(k, jsonb_build_array(
                      CASE WHEN k IN ('location', 'area') THEN to_jsonb(ST_AsText((a.old_row->>k)::geography)) ELSE a.old_row->k END,
@@ -193,6 +204,11 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
     CROSS JOIN LATERAL (SELECT coalesce(a.new_row, a.old_row) AS r) x
     LEFT JOIN admin_users u ON u.id = a.user_id
     LEFT JOIN relationship_types rt ON a.table_name = 'relationships' AND rt.code = r->>'relationship_type'
+    -- an image row belongs to whichever of its three foreign keys is set (migration 017)
+    LEFT JOIN LATERAL (SELECT CASE WHEN r->>'artwork_id' IS NOT NULL THEN 'artwork'
+                                   WHEN r->>'artist_id' IS NOT NULL THEN 'artist' ELSE 'institution' END AS type,
+                              coalesce(r->>'artwork_id', r->>'artist_id', r->>'institution_id') AS id) ix ON a.table_name = 'images'
+    LEFT JOIN entity_index ie ON a.table_name = 'images' AND ie.type = ix.type::entity_type AND ie.id = ix.id::bigint
     LEFT JOIN entity_index s ON a.table_name = 'relationships' AND s.type = (r->>'subject_type')::entity_type AND s.id = (r->>'subject_id')::bigint
     LEFT JOIN entity_index o ON a.table_name = 'relationships' AND o.type = (r->>'object_type')::entity_type AND o.id = (r->>'object_id')::bigint
     WHERE ${where}
@@ -280,7 +296,7 @@ async function runPlan(req, res, kind, id) {
     if (apply && active.length && Object.values(results).every((r) => r.ok)) {
       await client.query('COMMIT');
       // Entries changed here may have open working copies (live step 2): rebase them, or close them if deleted.
-      for (const item of plan.items.filter((i) => i.table !== 'relationships' && i.include && i.op !== 'none' && !i.blocked)) {
+      for (const item of plan.items.filter((i) => BY_FOLDER[i.table] && i.include && i.op !== 'none' && !i.blocked)) {
         const tt = BY_FOLDER[item.table];
         if (item.op === 'delete') await collab.gone(tt, item.rowId); else await collab.changedElsewhere(tt, item.rowId);
       }
@@ -575,6 +591,50 @@ router.post('/relationships/:id/delete', async (req, res) => {
   res.redirect(303, `${found.subjectUrl}?done=rel-deleted#relationships`);
 });
 
+function imageEditPage(req, res, img, { status = 200, flash, values = img } = {}) {
+  return images.licenses(adminPool).then((licenseList) => send(req, res, {
+    title: 'Edit image', status, flash,
+    body: html`<h1>Edit image</h1><p><a href="${img.entityUrl}#images">← ${img.name}</a></p>
+      <p><img class="image-edit-preview" src="${thumbUrl(img.url, 250)}" alt=""></p>
+      ${images.form({ action: `/images/${img.id}`, img: values, submit: 'Save', licenseList })}
+      <form method="post" action="/images/${img.id}/delete" class="actions" style="margin-top:1.5rem">
+        <button class="danger">Remove this image</button></form>`,
+  }));
+}
+
+router.get('/images/:id/edit', async (req, res) => {
+  const img = await images.byId(adminPool, req.params.id);
+  if (!img) return notFoundPage(req, res);
+  return imageEditPage(req, res, img);
+});
+
+router.post('/images/:id', async (req, res) => {
+  const img = await images.byId(adminPool, req.params.id);
+  if (!img) return notFoundPage(req, res);
+  try {
+    const values = images.fromForm(req.body);
+    await withTx(req.user, (db) => images.update(db, img.id, values));
+  } catch (err) {
+    return imageEditPage(req, res, img, { status: 422, values: req.body,
+      flash: { kind: 'error', text: err instanceof images.ImageError ? err.message : friendly(err) } });
+  }
+  res.redirect(303, `${img.entityUrl}?done=img-saved#images`);
+});
+
+router.post('/images/:id/delete', async (req, res) => {
+  const img = await images.byId(adminPool, req.params.id);
+  if (!img) return notFoundPage(req, res);
+  await withTx(req.user, (db) => db.query('DELETE FROM images WHERE id = $1', [img.id]));
+  res.redirect(303, `${img.entityUrl}?done=img-deleted#images`);
+});
+
+router.post('/images/:id/move', async (req, res) => {
+  const img = await images.byId(adminPool, req.params.id);
+  if (!img) return notFoundPage(req, res);
+  if (['up', 'down', 'first'].includes(req.body.dir)) await withTx(req.user, (db) => images.move(db, img, req.body.dir));
+  res.redirect(303, `${img.entityUrl}?done=img-moved#images`);
+});
+
 // ---------------------------------------------------------------------------------------------------------------
 // Entities
 // ---------------------------------------------------------------------------------------------------------------
@@ -595,7 +655,7 @@ async function formContext(t) {
     FROM pg_attribute a JOIN pg_enum e ON e.enumtypid = a.atttypid
     WHERE a.attrelid = $1::regclass GROUP BY a.attname`, [t.table])).rows.map((r) => [r.attname, r.vals]));
   const suggestions = {};
-  for (const key of ['kind', 'medium', 'image_license']) {
+  for (const key of ['kind', 'medium']) {
     if (t.fields[key] === 'text' && !enums[key]) {
       suggestions[key] = (await adminPool.query(`SELECT DISTINCT ${key} AS v FROM ${t.table} WHERE ${key} IS NOT NULL ORDER BY 1`)).rows.map((r) => r.v);
     }
@@ -623,7 +683,7 @@ router.get('/:plural', async (req, res) => {
   const { rows } = await adminPool.query(`
     SELECT * FROM (
       SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score,
-             ${t.fields.image_url ? 't.image_url' : 'NULL'} AS image_url,
+             ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
              (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
                                                            OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
       FROM ${t.table} t) x
@@ -635,8 +695,8 @@ router.get('/:plural', async (req, res) => {
       <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
         <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a></form>
-      ${rows.length ? html`<div class="table-wrap"><table${t.fields.image_url ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.fields.image_url ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
-        ${rows.slice(0, PAGE).map((r) => html`<tr>${t.fields.image_url ? html`<td class="thumb">${r.image_url
+      ${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
+        ${rows.slice(0, PAGE).map((r) => html`<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>
           ${q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
@@ -705,7 +765,7 @@ async function wikidataApply(req, res, t, e) {
     return res.redirect(303, `/${t.folder}/new?draft=1`);
   }
   if (Object.keys(form).length) await collab.applyForm(t, e.id, form, req.user.username);
-  res.redirect(303, `/${t.folder}/${e.slug}/edit?done=wikidata&rels=${result.relationships}&created=${result.created.length}`);
+  res.redirect(303, `/${t.folder}/${e.slug}/edit?done=wikidata&rels=${result.relationships}&created=${result.created.length}&imgs=${result.images}`);
 }
 
 router.get('/:plural/new/wikidata', (req, res) => wikidataPage(req, res, req.t, null));
@@ -853,6 +913,8 @@ router.get('/:plural/:slug', async (req, res) => {
   const name = e.doc[t.name];
   const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
   const pending = await collab.unpublished(t, e.id);
+  const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
+  const main = imgs[0];
   send(req, res, {
     title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
     body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}</p>
@@ -863,13 +925,15 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       ${pending ? unpublishedBanner(t, e, pending, false) : ''}
       ${quality.entityBox(qa, `/${t.folder}/${e.slug}`)}
-      ${e.doc.image_url ? html`<figure class="image-preview"><a href="${e.doc.image_source_url || e.doc.image_url}" target="_blank" rel="noopener">
-        <img src="${thumbUrl(e.doc.image_url, 500)}" alt="${name}"></a>
-        <figcaption class="muted small">${[e.doc.image_credit, e.doc.image_license].filter(Boolean).join(' · ') || 'no credit / license yet'}</figcaption></figure>` : ''}
+      ${main ? html`<figure class="image-preview"><a href="${main.source_url || main.url}" target="_blank" rel="noopener">
+        <img src="${thumbUrl(main.url, 500)}" alt="${name}"></a>
+        <figcaption class="muted small">${[main.caption, main.credit, main.license].filter(Boolean).join(' · ') || 'no credit / license yet'}
+          ${imgs.length > 1 ? html` · <a href="#images">${imgs.length} images</a>` : ''}</figcaption></figure>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
         const shown = showValue(t, key, kind, e.doc);
         return shown === null ? '' : html`<dt>${humanize(key)}</dt><dd>${shown}</dd>`;
       })}</dl>
+      ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${outgoing.length ? html`<div class="table-wrap"><table><tbody>${outgoing.map(({ id, to_name: toName, rel }) => {
         const [type, slug] = rel.to.split('/');
@@ -909,6 +973,25 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
     });
   }
   res.redirect(303, `/${t.folder}/${e.slug}?done=rel-added#relationships`);
+});
+
+// Images: added here, edited / removed / reordered under /images/<id> (src/admin/images.js). Saved immediately and
+// audited, like relationships.
+router.post('/:plural/:slug/images', async (req, res) => {
+  const { t } = req;
+  const e = t.imageFk && await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  try {
+    const values = images.fromForm(req.body);
+    await withTx(req.user, (db) => images.add(db, t.type, e.id, values));
+  } catch (err) {
+    return send(req, res, {
+      title: 'Add image', status: 422, flash: { kind: 'error', text: err instanceof images.ImageError ? err.message : friendly(err) },
+      body: html`<h1>Add image</h1><p><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p>
+        ${images.form({ action: `/${t.folder}/${e.slug}/images`, img: req.body, submit: 'Add', licenseList: await images.licenses(adminPool) })}`,
+    });
+  }
+  res.redirect(303, `/${t.folder}/${e.slug}?done=img-added#images`);
 });
 
 router.get('/:plural/:slug/edit', async (req, res) => {
@@ -1024,7 +1107,8 @@ router.get('/:plural/:slug/history', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   const page = pageParam(req);
   const h = await history(adminPool, `(a.table_name = $1 AND a.row_id = $2) OR (a.table_name = 'relationships' AND (
-      ((r->>'subject_type') = $3 AND (r->>'subject_id')::bigint = $2) OR ((r->>'object_type') = $3 AND (r->>'object_id')::bigint = $2)))`,
+      ((r->>'subject_type') = $3 AND (r->>'subject_id')::bigint = $2) OR ((r->>'object_type') = $3 AND (r->>'object_id')::bigint = $2)))
+      OR (a.table_name = 'images' AND (r->>($3 || '_id'))::bigint = $2)`,
   [t.table, e.id, t.type], { offset: (page - 1) * PAGE });
   send(req, res, {
     title: `History of ${e.doc[t.name]}`, page: { type: t.type, slug: e.slug, mode: 'view' },

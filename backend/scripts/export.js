@@ -12,7 +12,7 @@ const path = require('path');
 const YAML = require('yaml');
 const { Client } = require('pg');
 const config = require('../src/config');
-const { TYPES, readDocs, readRelationships } = require('../src/content');
+const { TYPES, IMAGE_KEYS, readDocs, readRelationships, readImages } = require('../src/content');
 
 const CONTENT_DIR = process.env.CONTENT_DIR || path.join(__dirname, '..', '..', 'content');
 
@@ -38,6 +38,8 @@ async function main() {
         const rels = (await readRelationships(client, t.type, id)).map((r) => r.rel);
         rels.forEach((rel) => yearsAsNumbers(rel, ['period']));
         if (rels.length) doc.relationships = rels;
+        const imgs = (await readImages(client, t.type, id)).map((img) => Object.fromEntries(IMAGE_KEYS.filter((k) => img[k] !== null).map((k) => [k, img[k]])));
+        if (imgs.length) doc.images = imgs;
         const file = path.join(dir, `${slug}.yaml`);
         // Lists of plain values inline ([a, b]) like the hand-written files; relationships stay one per block.
         const yaml = new YAML.Document(doc, { schema: 'core' });

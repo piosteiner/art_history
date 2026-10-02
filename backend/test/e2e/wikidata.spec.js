@@ -10,6 +10,7 @@ test('a new artist from Wikidata: search, review (empty fields pre-ticked), then
   await Promise.all([userA.waitForNavigation(), userA.click('.search-hit a:has-text("Claude Monet")')]);
   await expect(row(userA, 'Birth').locator('input[value=take]')).toBeChecked();  // empty field: pre-selected
   await expect(userA.locator('input[name="alt.alt_names"][value="Oscar-Claude Monet"]')).not.toBeChecked();  // names: opt-in
+  await expect(userA.locator('main')).toContainText('1 image on Commons — create the entry first');  // images: rows, added later
   await userA.check('input[name="alt.alt_names"][value="Oscar-Claude Monet"]');
   await apply(userA);
   await expect(userA).toHaveURL(/\/artists\/new\?draft=1$/);
@@ -18,7 +19,6 @@ test('a new artist from Wikidata: search, review (empty fields pre-ticked), then
   await expect(userA.locator('#f-wikidata_id')).toHaveValue('Q100');
   await expect(userA.locator('#f-metadata')).toHaveValue(/Wikidata Q100 \(retrieved/);
   await expect(userA.locator('#f-alt_names')).toHaveValue('Oscar-Claude Monet');  // only the ticked name
-  await expect(userA.locator('#f-image_license')).toHaveValue('Public domain');      // the portrait from Commons (P18)
   await submitForm(userA);
   await expect(userA).toHaveURL(/\/artists\/claude-monet\?done=created/);
 });
@@ -33,7 +33,9 @@ test('relationship suggestions: link by name, create a missing place, skip — a
   await expect(row(userA, 'Giverny').locator('input[value=later]')).toBeChecked();      // no entry of ours: unchanged
   await row(userA, 'Giverny').locator('input[value=create]').check();
   await row(userA, 'Charles Gleyre').locator('input[value=skip]').check();              // an explicit, remembered skip
+  await expect(userA.locator('input[name="img.0"][value=add]')).toBeChecked();          // no image yet: the portrait is pre-selected
   await apply(userA);
+  expect(sql("SELECT license || ' / ' || credit FROM images WHERE artist_id = entity_id('artist', 'claude-monet')")).toBe('Public domain / Claude Monet');
   await expect(userA.locator('.flash.ok')).toContainText('created');
   expect(sql("SELECT wikidata_id || ' ' || ST_AsText(location) FROM places WHERE slug = 'giverny'")).toBe('Q101 POINT(1.5339 49.0758)');
   expect(sql("SELECT wikidata_id FROM places WHERE slug = 'paris'")).toBe('Q90');  // linked by name → gets the Q-id
@@ -46,6 +48,7 @@ test('relationship suggestions: link by name, create a missing place, skip — a
 
   await userA.goto('/artists/claude-monet/wikidata');
   await expect(row(userA, 'born in')).toContainText('already there');
+  await expect(userA.locator('.wd-image')).toContainText('Already one of ours');
   await userA.click('details summary:has-text("skipped before")');
   await expect(userA.locator('details', { hasText: 'skipped before' })).toContainText('Charles Gleyre');  // remembered
 });
@@ -66,12 +69,11 @@ test('own values win: never pre-selected; "decide later" records nothing, "keep 
   await expect(row(userA, 'Death').locator('input[value=keep]')).toBeChecked();
 });
 
-test('an artwork: creator and collection by name or new, Commons image with license', async ({ userA }) => {
+test('an artwork: creator and collection by name or new; then its Commons images one by one', async ({ userA, request }) => {
   await userA.goto('/artworks/new/wikidata?q=Q104');
   await expect(row(userA, 'Creator').locator('input[value=link]')).toBeChecked();  // our Claude Monet (by Q-id)
   await expect(row(userA, 'Institution').locator('input[value=create]')).toBeVisible();
-  await expect(userA.locator('.wd-image')).toContainText('Public domain');
-  await expect(userA.locator('input[name=image][value=take]')).toBeChecked();  // no image yet: pre-selected
+  await expect(userA.locator('main')).toContainText('2 images on Commons — create the entry first');
   await row(userA, 'Institution').locator('input[value=create]').check();
   await expect(row(userA, 'Dimensions')).toContainText('48 × 63 cm');               // 630 mm converted
   await expect(row(userA, 'Inventory number')).toContainText('4014 — in the collection of Musée Marmottan Monet');
@@ -82,7 +84,22 @@ test('an artwork: creator and collection by name or new, Commons image with lice
   await expect(userA.locator('#f-materials')).toHaveValue('canvas');
   await expect(userA.locator('#f-creator')).toHaveValue('claude-monet');
   await expect(userA.locator('#f-institution')).toHaveValue(/^musee-marmottan-monet/);
-  await expect(userA.locator('#f-image_license')).toHaveValue('Public domain');
-  await expect(userA.locator('#f-image_credit')).toHaveValue('Claude Monet');
   expect(sql("SELECT wikidata_id FROM institutions WHERE slug LIKE 'musee-marmottan-monet%'")).toBe('Q105');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/artworks\/impression-sunrise\?done=created/);
+
+  // Now the images: each one offered on its own — the first pre-selected (no image yet), the other up to you.
+  await userA.goto('/artworks/impression-sunrise/wikidata');
+  await expect(userA.locator('.wd-image')).toHaveCount(2);
+  await expect(userA.locator('input[name="img.0"][value=add]')).toBeChecked();
+  await expect(userA.locator('input[name="img.1"][value=later]')).toBeChecked();
+  await userA.check('input[name="img.1"][value=add]');
+  await apply(userA);
+  await expect(userA.locator('.flash.ok')).toContainText('2 images added');
+  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/impression-sunrise', { headers: { Host: 'api.localhost' } })).json();
+  expect(api.images.map((i) => i.url)).toEqual(['https://upload.wikimedia.org/test/Monet_-_Impression%2C_Sunrise.jpg',
+    'https://upload.wikimedia.org/test/Impression_Sunrise_back.jpg']);  // Wikidata's order; the first is the main image
+  expect(api.image_url).toBe(api.images[0].url);
+  await userA.goto('/artworks/impression-sunrise/wikidata');
+  await expect(userA.locator('.wd-image', { hasText: 'Already one of ours' })).toHaveCount(2);
 });
