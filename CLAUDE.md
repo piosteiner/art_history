@@ -47,6 +47,8 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Wikidata comparison with review (012, `src/admin/wikidata.js`) built 2026-09-30. Data-quality page (013, view `quality_issues`) built 2026-09-30.
   Ideas later: nightly auto-export commit. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
+- 📌 Open: after the owner fixes The Great Wave's inventory number (no institution), add a migration
+  `ALTER TABLE artworks VALIDATE CONSTRAINT artworks_inventory_needs_institution` (016 added it NOT VALID).
 - 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.
 - Decided + built (migration 005): moved institutions — `institutions.place_id` = current location, dated `located_in`
   relationships = earlier locations (mirrors `current_institution_id` + `housed_at`).

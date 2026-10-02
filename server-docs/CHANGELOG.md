@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-02
 
+### Inventory number only together with the institution (migration 016)
+- **What:** `CHECK (inventory_number IS NULL OR current_institution_id IS NOT NULL) NOT VALID` on artworks — enforced
+  for every insert/update from now on; existing rows not yet checked. Quality view: new error check
+  `inventory_without_institution` (view re-created). Admin: hint at the field, readable message on violation. Wikidata:
+  the inventory number is taken from the statement of the suggested collection (qualifier P195) and shown with it.
+- **Why:** owner: an inventory number only means something within the collection that assigned it.
+- **Open:** production has one such row (The Great Wave, 13695 from Wikidata, no institution) — it can't be published
+  until the institution is set or the number cleared. Then: new migration
+  `ALTER TABLE artworks VALIDATE CONSTRAINT artworks_inventory_needs_institution;`
+- **Revert:** redeploy the previous commit; as owner `ALTER TABLE artworks DROP CONSTRAINT artworks_inventory_needs_institution`.
+
 ### Artworks: dimensions (2D/3D) and materials (migration 015)
 - **What:** `artworks.height_cm/width_cm/depth_cm` (numeric(8,2), depth only with height+width), `dimensions_note`,
   `materials text[]` with a GIN index. Admin form (height × width × optional depth, decimal comma accepted; materials one

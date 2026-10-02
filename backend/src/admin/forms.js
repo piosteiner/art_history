@@ -6,6 +6,7 @@ const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1
 const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.`,
   'text[]': 'One per line.',
+  inventory_number: 'Only together with the institution above — the number belongs to its collection.',
   materials: 'One per line, e.g. oil paint · canvas — or bronze · marble. The "medium" above stays the readable description.',
   json: 'JSON object, e.g. {"sources": ["…"]}. Leave empty for none.',
   area: 'GeoJSON Polygon or MultiPolygon, [longitude, latitude] pairs (optional outline for regions).',
@@ -127,7 +128,7 @@ function fieldInput(key, kind, f, ctx) {
   const list = ctx.suggestions[key];
   return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
     <input id="${id}" name="${name}" value="${f[key]}"${list ? html` list="${id}-list" autocomplete="off"` : ''}>
-    ${list ? html`<datalist id="${id}-list">${list.map((v) => html`<option value="${v}">`)}</datalist>` : ''}</div>`;
+    ${list ? html`<datalist id="${id}-list">${list.map((v) => html`<option value="${v}">`)}</datalist>` : ''}${hint(HINTS[key])}</div>`;
 }
 
 // version: the row's updated_at when the form was opened (optimistic locking on save).

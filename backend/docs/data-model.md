@@ -111,6 +111,11 @@ Publishing goes through the normal save path (validation, optimistic locking, au
 depth only with both. `materials text[]` complements the free-text `medium`; its GIN index serves containment queries
 (`materials @> ARRAY['bronze']`, the API's `?material=`). In YAML and forms: `dimensions: [h, w]` / `[h, w, d]`.
 
+### Constraints added NOT VALID (migration 016)
+`artworks_inventory_needs_institution` was added `NOT VALID`: Postgres enforces it for new and changed rows but has
+not checked the existing ones (one violated it). The quality view lists remaining violations; when none is left,
+`ALTER TABLE … VALIDATE CONSTRAINT` checks all rows once without blocking writes, and the constraint is fully valid.
+
 ## Data quality (migration 013)
 `quality_issues` is a view with one `SELECT` per check (`UNION ALL`): `check_id, severity, entity_type, entity_id,
 issue_key, detail`. The date checks are range operators — `&&` overlap, `<<` entirely before, `>>` entirely after,

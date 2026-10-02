@@ -116,6 +116,8 @@ const RULES = {
   movements_check: 'A movement cannot be its own parent.',
   artists_check: 'Death cannot be before birth.',
   relationships_check: 'An entity cannot be related to itself.',
+  artworks_inventory_needs_institution: 'An inventory number belongs to a collection: set the institution (current holder) too, or leave the number empty.',
+  artworks_dimensions_check: 'Dimensions: height and width go together; a depth only with both.',
 };
 function friendly(err) {
   if (err instanceof UserError) return err.message;

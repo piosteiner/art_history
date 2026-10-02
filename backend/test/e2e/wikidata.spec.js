@@ -74,6 +74,7 @@ test('an artwork: creator and collection by name or new, Commons image with lice
   await expect(userA.locator('input[name=image][value=take]')).toBeChecked();  // no image yet: pre-selected
   await row(userA, 'Institution').locator('input[value=create]').check();
   await expect(row(userA, 'Dimensions')).toContainText('48 × 63 cm');               // 630 mm converted
+  await expect(row(userA, 'Inventory number')).toContainText('4014 — in the collection of Musée Marmottan Monet');
   await userA.check('input[name="alt.materials"][value="canvas"]');                   // materials: opt-in like names
   await apply(userA);
   await expect(userA.locator('input[name="f.dimensions_h"]')).toHaveValue('48');

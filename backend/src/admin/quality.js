@@ -6,6 +6,7 @@ const { BY_TYPE } = require('../content');
 const CHECKS = {
   presence_outside_lifespan: { title: 'Presence outside the lifespan', fix: 'Correct the period of the relationship, or the birth/death date.' },
   birth_death_mismatch: { title: '"Born in" / "died in" dated differently', fix: 'The period of "born in"/"died in" should match the birth/death date.' },
+  inventory_without_institution: { title: 'Inventory number without institution', fix: 'Set the institution whose collection numbered it — or clear the number (it can go into a "housed at" relationship\'s label for a former holder).' },
   artwork_outside_creator_life: { title: 'Artwork dated outside its creator\'s life', fix: 'Check the date and the creator — or mark as OK (e.g. a posthumous cast).' },
   never_alive_together: { title: 'Linked people who never lived at the same time', fix: 'Probably "influenced by" was meant, or a date is wrong.' },
   overlapping_residences: { title: 'Two residences at the same time', fix: 'Correct a period — or mark as OK if both are right (e.g. a summer house).' },

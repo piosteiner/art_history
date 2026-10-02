@@ -128,3 +128,15 @@ test('artwork dimensions (2D and 3D) and materials: form, page, public API with 
   await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
   await expect(userA.locator('dl.fields')).toContainText('25.7 × 37.9 × 2.5 cm');
 });
+
+test('an inventory number needs the institution (readable message, hint in the form)', async ({ userA }) => {
+  await userA.goto('/artworks/plum-park-in-kameido/edit');  // has no institution
+  await expect(userA.locator('#f-inventory_number').locator('..')).toContainText('Only together with the institution');
+  await userA.fill('#f-inventory_number', 'JP 1234');
+  await userA.click('form.form > .actions button');
+  await expect(userA.locator('.errors')).toContainText('An inventory number belongs to a collection: set the institution');
+  await userA.fill('#f-institution', 'van-gogh-museum');
+  await userA.keyboard.press('Escape');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA.locator('dl.fields')).toContainText('JP 1234');
+});

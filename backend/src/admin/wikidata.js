@@ -167,7 +167,14 @@ function fieldsFor(t, e) {
     date('created', 'P571');
     ref('creator', 'artist', 'P170');
     ref('institution', 'institution', 'P195');
-    const inv = statements(e, 'P217')[0]; text('inventory_number', inv && String(inv.mainsnak.datavalue.value));
+    // An inventory number belongs to a collection (qualifier P195): prefer the one of the collection suggested above.
+    const collection = itemIds(e, 'P195')[0];
+    const invs = statements(e, 'P217');
+    const inv = invs.find((s) => ((s.qualifiers || {}).P195 || []).some((q) => q.datavalue && q.datavalue.value.id === collection)) || invs[0];
+    if (inv && 'inventory_number' in t.fields) {
+      const q = ((inv.qualifiers || {}).P195 || [])[0];
+      f.inventory_number = { kind: 'text', value: String(inv.mainsnak.datavalue.value), collectionQid: (q && q.datavalue && q.datavalue.value.id) || collection || null };
+    }
     const [h, w, d] = [lengthCm(e, 'P2048'), lengthCm(e, 'P2049'), lengthCm(e, 'P2610', 'P5524')];
     if (h && w) f.dimensions = { kind: 'dimensions', value: d ? [h, w, d] : [h, w] };
     const materialQids = itemIds(e, 'P186');
@@ -271,7 +278,8 @@ async function compare(db, t, qid, ours, entity) {
   const rels = relsFor(t, e);
   // Everything referenced: our entries with these Q-ids, and Wikidata data for the rest (labels, coordinates …)
   const refQids = [...Object.values(fields).filter((f) => f.ref).map((f) => f.ref.qid), ...rels.map((r) => r.qid),
-    ...(fields.country_code && fields.country_code.qid ? [fields.country_code.qid] : [])];
+    ...(fields.country_code && fields.country_code.qid ? [fields.country_code.qid] : []),
+    ...Object.values(fields).filter((f) => f.collectionQid).map((f) => f.collectionQid)];
   const byQid = await localByQid(db, refQids);
   const light = await getEntities(refQids, { light: true });
   // Not linked by Q-id yet? Maybe we have it under the same name (it gets the Q-id when linked).
@@ -336,7 +344,8 @@ async function compare(db, t, qid, ours, entity) {
         status: !oursPoint ? 'empty' : km < 0.5 ? 'same' : 'differs' });
       continue;
     }
-    const display = w.kind === 'date' ? `${w.label || parseFuzzyDate(w.value, { openEnd: true }).label} (${w.value})` : value;
+    const display = w.kind === 'date' ? `${w.label || parseFuzzyDate(w.value, { openEnd: true }).label} (${w.value})`
+      : w.collectionQid ? `${value} — in the collection of ${labelOf(others[w.collectionQid]) || w.collectionQid}` : value;
     rows.push({ ...scalarRow(key, oursVal, display, w.kind === 'date' ? { value: w.value, label: w.label } : w.value, declined(key, w.value)), kind: w.kind });
   }
 
