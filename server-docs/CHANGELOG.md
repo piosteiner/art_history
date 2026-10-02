@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-02
 
+### Images for artists and institutions (migration 014)
+- **What:** `artists` and `institutions` get `image_url` (https), `image_source_url`, `image_license`, `image_credit`
+  like artworks. Admin: form fields, list thumbnails and page preview (generic for every type with an image; portraits
+  cropped towards the top in the square thumbnail). Wikidata comparison offers P18 (portrait / building) with license and
+  credit for these types too. Public API: `image_url` in lists, all four fields in details (docs/api.md). The quality
+  check "image without license or credit" covers all three tables (view re-created with `CREATE OR REPLACE VIEW`).
+- **Why:** owner: previews for artists and institutions as well.
+- **Revert:** redeploy the previous commit; to drop the columns as owner: `ALTER TABLE artists DROP COLUMN image_url, …`
+  (same for institutions) after re-creating the view from 013.
+
 ### Admin: artwork thumbnails in the list, preview on the artwork page
 - **What:** the artworks list shows a 120 px thumbnail per row (lazy-loaded; placeholder without image), the artwork
   page a 500 px preview with credit · license. `backend/src/admin/images.js` turns Wikimedia URLs (stored thumbnails

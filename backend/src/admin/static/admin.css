@@ -175,11 +175,12 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .bar select { width: auto; flex: 0 1 auto; }
 .bar .choice input { width: auto; }
 
-/* Artwork images: list thumbnails and the preview on the artwork's page (src/admin/images.js) */
+/* Images (artworks, artists, institutions): list thumbnails and the preview on the entry's page (src/admin/images.js) */
 table.with-thumbs td { vertical-align: middle; }
 td.thumb { width: 76px; padding: .25rem .5rem; }
 td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-fit: cover; border-radius: 4px;
   background: var(--code); border: 1px solid var(--line); }
-.artwork-preview { margin: 0 0 1rem; }
-.artwork-preview img { display: block; max-width: min(100%, 500px); max-height: 420px; border-radius: 6px; border: 1px solid var(--line); }
-.artwork-preview figcaption { margin-top: .3rem; }
+.image-preview { margin: 0 0 1rem; }
+.image-preview img { display: block; max-width: min(100%, 500px); max-height: 420px; border-radius: 6px; border: 1px solid var(--line); }
+.image-preview figcaption { margin-top: .3rem; }
+.thumbs-artist td.thumb img { object-position: center 20%; }  /* portraits: keep the face in the square */

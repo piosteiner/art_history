@@ -18,6 +18,7 @@ test('a new artist from Wikidata: search, review (empty fields pre-ticked), then
   await expect(userA.locator('#f-wikidata_id')).toHaveValue('Q100');
   await expect(userA.locator('#f-metadata')).toHaveValue(/Wikidata Q100 \(retrieved/);
   await expect(userA.locator('#f-alt_names')).toHaveValue('Oscar-Claude Monet');  // only the ticked name
+  await expect(userA.locator('#f-image_license')).toHaveValue('Public domain');      // the portrait from Commons (P18)
   await submitForm(userA);
   await expect(userA).toHaveURL(/\/artists\/claude-monet\?done=created/);
 });

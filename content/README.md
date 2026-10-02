@@ -44,9 +44,9 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 |---|---|
 | places | `name`*, `kind`* (settlement, building, site, region, country), `location`* `[longitude, latitude]`, `parent` (place slug), `country_code` (ISO, e.g. FR), `alt_names`, `area` (GeoJSON polygon), `description_md` |
 | movements | `name`*, `kind`* (period, movement, school, style), `parent` (movement slug), `period`, `description_md` |
-| artists | `name`*, `sort_name`, `alt_names`, `birth`, `death`, `biography_md` |
+| artists | `name`*, `sort_name`, `alt_names`, `birth`, `death`, `image_url` (portrait, https, hotlinked), `image_source_url`, `image_license`, `image_credit`, `biography_md` |
 | patrons | `name`*, `kind` (person, family, …), `alt_names`, `active`, `notes_md` |
-| institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `alt_names`, `description_md` |
+| institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `image_url` (building, https, hotlinked), `image_source_url`, `image_license`, `image_credit`, `alt_names`, `description_md` |
 | artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium`, `institution` (current holder, slug), `inventory_number`, `image_url` (https, hotlinked), `image_source_url`, `image_license`, `image_credit`, `alt_titles`, `description_md` |
 
 Every entity also takes `wikidata_id` (`Q…`) and `metadata` (free-form mapping). `*_md` fields are Markdown;

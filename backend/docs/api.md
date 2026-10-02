@@ -26,6 +26,10 @@ Types (URL segment → `type`): `artists` → artist, `artworks` → artwork, `p
 
 → `{"data": [...], "total": 4, "limit": 100, "offset": 0}`
 
+Artworks, artists and institutions carry an `image_url` (https, hotlinked — often Wikimedia Commons; for a smaller
+version replace `/NNNNpx-` in a Commons thumbnail URL with a standard width such as `/250px-`); the detail adds
+`image_source_url`, `image_license`, `image_credit` — show license and credit wherever the image is shown.
+
 ### `GET /v1/<type>/:slug` — detail
 All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - `relationships`: every link in both directions, from this entity's point of view —

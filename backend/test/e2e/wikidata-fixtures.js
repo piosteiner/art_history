@@ -15,6 +15,7 @@ const ENTITIES = {
     aliases: { en: [{ value: 'Oscar-Claude Monet' }] }, descriptions: { en: { value: 'French painter (1840–1926)' } },
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1840-11-14T00:00:00Z', 11))], P570: [stmt(time('+1926-12-05T00:00:00Z', 11))],
       P19: [stmt(item('Q90'))], P20: [stmt(item('Q101'))], P135: [stmt(item('Q102'))], P1066: [stmt(item('Q103'))],
+      P18: [stmt('Claude Monet 1899 Nadar crop.jpg')],
       P937: [stmt(item('Q90'), { P580: time('+1859-00-00T00:00:00Z', 9), P582: time('+1860-00-00T00:00:00Z', 9) })] } },
   Q90: { id: 'Q90', labels: labels('Paris'), descriptions: { en: { value: 'capital of France' } },
     claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 48.8567, longitude: 2.3522, globe: 'http://www.wikidata.org/entity/Q2' })] } },

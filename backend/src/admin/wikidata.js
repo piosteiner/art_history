@@ -311,7 +311,8 @@ async function compare(db, t, qid, ours, entity) {
 
   // Image (artworks)
   let image = null;
-  const file = t.type === 'artwork' ? firstString(e, 'P18') : null;
+  // P18 "image": an artwork's picture, an artist's portrait, an institution's building — for every type with image fields
+  const file = t.fields.image_url ? firstString(e, 'P18') : null;
   if (file) {
     const img = await commonsImage(file).catch(() => null);
     if (img) image = { ...img, ours: ours['f.image_url'] || '', status: !ours['f.image_url'] ? 'empty' : ours['f.image_url'] === img.image_url ? 'same' : 'differs',

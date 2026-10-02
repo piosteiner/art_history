@@ -18,11 +18,13 @@ const TYPES = [
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
     name: 'text', sort_name: 'text', alt_names: 'text[]', birth: 'date', death: 'date',
+    image_url: 'text', image_source_url: 'text', image_license: 'text', image_credit: 'text',
     biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'patron', folder: 'patrons', table: 'patrons', name: 'name', fields: {
     name: 'text', alt_names: 'text[]', kind: 'text', active: 'period', notes_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
     name: 'text', alt_names: 'text[]', kind: 'text', founded: 'date', place: 'ref:place',
+    image_url: 'text', image_source_url: 'text', image_license: 'text', image_credit: 'text',
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     title: 'text', alt_titles: 'text[]', creator: 'ref:artist', attribution_label: 'text', created: 'date',

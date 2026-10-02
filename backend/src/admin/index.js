@@ -633,7 +633,7 @@ router.get('/:plural', async (req, res) => {
       <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
         <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a></form>
-      ${rows.length ? html`<div class="table-wrap"><table${t.fields.image_url ? html` class="with-thumbs"` : ''}><thead><tr>${t.fields.image_url ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
+      ${rows.length ? html`<div class="table-wrap"><table${t.fields.image_url ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.fields.image_url ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
         ${rows.slice(0, PAGE).map((r) => html`<tr>${t.fields.image_url ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>
@@ -860,7 +860,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       ${pending ? unpublishedBanner(t, e, pending, false) : ''}
       ${quality.entityBox(qa, `/${t.folder}/${e.slug}`)}
-      ${e.doc.image_url ? html`<figure class="artwork-preview"><a href="${e.doc.image_source_url || e.doc.image_url}" target="_blank" rel="noopener">
+      ${e.doc.image_url ? html`<figure class="image-preview"><a href="${e.doc.image_source_url || e.doc.image_url}" target="_blank" rel="noopener">
         <img src="${thumbUrl(e.doc.image_url, 500)}" alt="${name}"></a>
         <figcaption class="muted small">${[e.doc.image_credit, e.doc.image_license].filter(Boolean).join(' · ') || 'no credit / license yet'}</figcaption></figure>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name).map(([key, kind]) => {

@@ -14,8 +14,9 @@ const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const ENTITIES = {
   artists: {
     type: 'artist', table: 'artists', name: 'name', period: 't.lifespan',
-    list: 't.sort_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death',
-    detail: 't.sort_name, t.alt_names, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death, t.biography_md',
+    list: 't.sort_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death, t.image_url',
+    detail: `t.sort_name, t.alt_names, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
+             t.image_url, t.image_source_url, t.image_license, t.image_credit, t.biography_md`,
     md: ['biography_md'],
     order: 'coalesce(t.sort_name, t.name)',
   },
@@ -54,9 +55,10 @@ const ENTITIES = {
   },
   institutions: {
     type: 'institution', table: 'institutions', name: 'name', period: 't.founded',
-    list: `t.kind, range_json(t.founded, t.founded_label) AS founded,
+    list: `t.kind, range_json(t.founded, t.founded_label) AS founded, t.image_url,
            (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = t.place_id) AS place`,
     detail: `t.alt_names, t.kind, range_json(t.founded, t.founded_label) AS founded, t.website_url, t.description_md,
+             t.image_url, t.image_source_url, t.image_license, t.image_credit,
              (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', ST_AsGeoJSON(p.location)::jsonb)
                 FROM places p WHERE p.id = t.place_id) AS place`,
     md: ['description_md'],

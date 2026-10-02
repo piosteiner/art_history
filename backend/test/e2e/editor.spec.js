@@ -63,7 +63,25 @@ test('artwork list shows 120 px thumbnails, the artwork page a larger preview wi
   await expect(row.locator('td.thumb img')).toHaveAttribute('src', /\/thumb\/b\/b5\/Great_Wave\.jpg\/120px-Great_Wave\.jpg$/);
   await expect(userA.locator('tr', { hasText: 'Plum Park in Kameido' }).locator('.thumb-empty')).toHaveCount(1);  // no image
   await userA.goto('/artworks/the-great-wave-off-kanagawa');
-  await expect(userA.locator('.artwork-preview img')).toHaveAttribute('src', /500px-Great_Wave\.jpg$/);
-  await expect(userA.locator('.artwork-preview figcaption')).toHaveText('Katsushika Hokusai · Public domain');
+  await expect(userA.locator('.image-preview img')).toHaveAttribute('src', /500px-Great_Wave\.jpg$/);
+  await expect(userA.locator('.image-preview figcaption')).toHaveText('Katsushika Hokusai · Public domain');
   expect(requested).toEqual(expect.arrayContaining(['120px-Great_Wave.jpg', '500px-Great_Wave.jpg']));
+});
+
+test('artists and institutions have images too: list thumbnail, page preview, public API', async ({ userA, request }) => {
+  await userA.route(/^https:\/\/(upload|thumb)\.wikimedia\.org\//, (route) => route.fulfill({ status: 200, contentType: 'image/png', body: PNG }));
+  await userA.goto('/institutions/van-gogh-museum/edit');
+  await userA.fill('#f-image_url', 'https://upload.wikimedia.org/wikipedia/commons/a/ab/Van_Gogh_Museum.jpg');
+  await userA.fill('#f-image_license', 'CC BY-SA 4.0');
+  await userA.fill('#f-image_credit', 'Photo: someone');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);  // Publish
+  await userA.goto('/institutions');
+  await expect(userA.locator('tr', { hasText: 'Van Gogh Museum' }).locator('td.thumb img'))
+    .toHaveAttribute('src', /\/thumb\/a\/ab\/Van_Gogh_Museum\.jpg\/120px-Van_Gogh_Museum\.jpg$/);
+  await userA.goto('/institutions/van-gogh-museum');
+  await expect(userA.locator('.image-preview figcaption')).toHaveText('Photo: someone · CC BY-SA 4.0');
+  await userA.goto('/artists');
+  await expect(userA.locator('table.thumbs-artist .thumb-empty').first()).toBeVisible();  // artists have the column too
+  const api = await request.get('http://127.0.0.1:3006/v1/institutions/van-gogh-museum', { headers: { Host: 'api.localhost' } });
+  expect((await api.json()).image_license).toBe('CC BY-SA 4.0');
 });
