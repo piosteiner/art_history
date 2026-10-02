@@ -106,6 +106,11 @@ being edited: a Yjs document (`state bytea`, the CRDT's binary encoding), the en
 differs from the published row, and who changed it. Neither is content: not audited, invisible to the API role.
 Publishing goes through the normal save path (validation, optimistic locking, audit log).
 
+## Artwork dimensions and materials (migration 015)
+`height_cm`, `width_cm`, `depth_cm` are `numeric(8,2)` (exact decimals) with one rule: height and width come together,
+depth only with both. `materials text[]` complements the free-text `medium`; its GIN index serves containment queries
+(`materials @> ARRAY['bronze']`, the API's `?material=`). In YAML and forms: `dimensions: [h, w]` / `[h, w, d]`.
+
 ## Data quality (migration 013)
 `quality_issues` is a view with one `SELECT` per check (`UNION ALL`): `check_id, severity, entity_type, entity_id,
 issue_key, detail`. The date checks are range operators — `&&` overlap, `<<` entirely before, `>>` entirely after,

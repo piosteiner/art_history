@@ -73,7 +73,12 @@ test('an artwork: creator and collection by name or new, Commons image with lice
   await expect(userA.locator('.wd-image')).toContainText('Public domain');
   await expect(userA.locator('input[name=image][value=take]')).toBeChecked();  // no image yet: pre-selected
   await row(userA, 'Institution').locator('input[value=create]').check();
+  await expect(row(userA, 'Dimensions')).toContainText('48 × 63 cm');               // 630 mm converted
+  await userA.check('input[name="alt.materials"][value="canvas"]');                   // materials: opt-in like names
   await apply(userA);
+  await expect(userA.locator('input[name="f.dimensions_h"]')).toHaveValue('48');
+  await expect(userA.locator('input[name="f.dimensions_w"]')).toHaveValue('63');
+  await expect(userA.locator('#f-materials')).toHaveValue('canvas');
   await expect(userA.locator('#f-creator')).toHaveValue('claude-monet');
   await expect(userA.locator('#f-institution')).toHaveValue(/^musee-marmottan-monet/);
   await expect(userA.locator('#f-image_license')).toHaveValue('Public domain');

@@ -107,6 +107,18 @@ function altNames(e, main) {
   return { primary: p, other: clean(other).filter((n) => !p.includes(n)) };
 }
 
+// Quantities (height P2048, width P2049, depth P2610 / P5524) → centimetres
+const UNIT_CM = { Q174728: 1, Q174789: 0.1, Q11573: 100, Q218593: 2.54, Q3710: 30.48 };  // cm, mm, m, inch, foot
+function lengthCm(e, ...props) {
+  for (const p of props) {
+    const s = statements(e, p)[0];
+    const v = s && s.mainsnak.datavalue.value;
+    const factor = v && UNIT_CM[String(v.unit || '').replace(/^.*\//, '')];
+    if (factor) return Math.round(Number(v.amount) * factor * 100) / 100;
+  }
+  return null;
+}
+
 // P31 "instance of" heuristics
 const HUMAN = 'Q5';
 function placeKind(e) {
@@ -156,6 +168,10 @@ function fieldsFor(t, e) {
     ref('creator', 'artist', 'P170');
     ref('institution', 'institution', 'P195');
     const inv = statements(e, 'P217')[0]; text('inventory_number', inv && String(inv.mainsnak.datavalue.value));
+    const [h, w, d] = [lengthCm(e, 'P2048'), lengthCm(e, 'P2049'), lengthCm(e, 'P2610', 'P5524')];
+    if (h && w) f.dimensions = { kind: 'dimensions', value: d ? [h, w, d] : [h, w] };
+    const materialQids = itemIds(e, 'P186');
+    if (materialQids.length) f.materials = { kind: 'materials', qids: materialQids };
   }
   f.wikidata_id = { kind: 'text', value: e.id };
   return f;
@@ -278,6 +294,21 @@ async function compare(db, t, qid, ours, entity) {
       const offer = (list, primary) => list.filter((n) => !lower.has(n.toLowerCase())).map((n) => ({ value: n, primary }));
       const items = [...offer(w.primary, true), ...offer(w.other, false)].map((it) => ({ ...it, declined: !!declined(`${key}:${it.value}`, it.value) }));
       if (items.length) rows.push({ key, kind: 'list', ours: have, items, preselect: !have.length });
+      continue;
+    }
+    if (w.kind === 'materials') {  // names of the material items (light request), offered like alternative names
+      const names = Object.values(await getEntities(w.qids, { light: true })).map(labelOf).filter(Boolean);
+      const have = oursVal.split('\n').map((s) => s.trim()).filter(Boolean);
+      const lower = new Set(have.map((s) => s.toLowerCase()));
+      const items = names.filter((n) => !lower.has(n.toLowerCase())).map((n) => ({ value: n, primary: false, declined: !!declined(`${key}:${n}`, n) }));
+      if (items.length) rows.push({ key, kind: 'list', ours: have, items, preselect: false });
+      continue;
+    }
+    if (w.kind === 'dimensions') {
+      const mine = ['h', 'w', 'd'].map((x) => ours[`f.dimensions_${x}`]).filter((x) => x !== undefined && x !== '').map(Number);
+      const fmt = (a) => `${a.join(' × ')} cm`;
+      rows.push({ key, kind: 'dimensions', ours: mine.length ? fmt(mine) : '', display: fmt(w.value), value: w.value,
+        status: !mine.length ? 'empty' : same(mine, w.value) ? 'same' : 'differs', declined: declined(key, w.value) });
       continue;
     }
     if (w.kind === 'country') {
@@ -449,7 +480,9 @@ async function apply(db, t, entity, plan, choices, userId) {
     const taken = pick === 'take';
     await decide(row.key, row.value, taken);
     if (!taken) continue;
-    if (row.kind === 'point') { form['f.location_lon'] = String(row.value[0]); form['f.location_lat'] = String(row.value[1]); } else if (row.kind === 'date') {
+    if (row.kind === 'point') { form['f.location_lon'] = String(row.value[0]); form['f.location_lat'] = String(row.value[1]); } else if (row.kind === 'dimensions') {
+      ['h', 'w', 'd'].forEach((x, i) => { form[`f.dimensions_${x}`] = row.value[i] !== undefined ? String(row.value[i]) : ''; });
+    } else if (row.kind === 'date') {
       form[`f.${row.key}`] = row.value.value;
       form[`f.${row.key}_label`] = row.value.label || '';
     } else form[`f.${row.key}`] = String(row.value);

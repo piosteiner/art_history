@@ -824,6 +824,7 @@ function showValue(t, key, kind, doc) {
   }
   if (v === undefined) return null;
   if (kind === 'text[]') return v.join(' · ');
+  if (kind === 'dimensions') return `${v.join(' × ')} cm${doc.dimensions_note ? ` (${doc.dimensions_note})` : ''}`;
   if (kind === 'point') return html`${v[1]}, ${v[0]} <a href="https://www.openstreetmap.org/?mlat=${v[1]}&mlon=${v[0]}#map=12/${v[1]}/${v[0]}" rel="noopener" target="_blank">map ↗</a>`;
   if (kind === 'json' || kind === 'area') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
   if (kind === 'parent') return html`<a href="/${t.folder}/${v}">${v}</a>`;
@@ -863,7 +864,7 @@ router.get('/:plural/:slug', async (req, res) => {
       ${e.doc.image_url ? html`<figure class="image-preview"><a href="${e.doc.image_source_url || e.doc.image_url}" target="_blank" rel="noopener">
         <img src="${thumbUrl(e.doc.image_url, 500)}" alt="${name}"></a>
         <figcaption class="muted small">${[e.doc.image_credit, e.doc.image_license].filter(Boolean).join(' · ') || 'no credit / license yet'}</figcaption></figure>` : ''}
-      <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name).map(([key, kind]) => {
+      <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
         const shown = showValue(t, key, kind, e.doc);
         return shown === null ? '' : html`<dt>${humanize(key)}</dt><dd>${shown}</dd>`;
       })}</dl>

@@ -26,7 +26,12 @@ const ENTITIES = {
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1806-05-02T00:00:00Z', 11))] } },
   Q104: { id: 'Q104', labels: labels('Impression, Sunrise'), descriptions: { en: { value: 'painting by Claude Monet' } },
     claims: { P31: [stmt(item('Q3305213'))], P170: [stmt(item('Q100'))], P571: [stmt(time('+1872-00-00T00:00:00Z', 9))],
-      P195: [stmt(item('Q105'))], P217: [stmt('4014')], P18: [stmt('Monet - Impression, Sunrise.jpg')] } },
+      P195: [stmt(item('Q105'))], P217: [stmt('4014')], P18: [stmt('Monet - Impression, Sunrise.jpg')],
+      P2048: [stmt({ amount: '+48', unit: 'http://www.wikidata.org/entity/Q174728' })],   // 48 cm
+      P2049: [stmt({ amount: '+630', unit: 'http://www.wikidata.org/entity/Q174789' })],  // 630 mm = 63 cm
+      P186: [stmt(item('Q106')), stmt(item('Q107'))] } },
+  Q106: { id: 'Q106', labels: labels('oil paint'), descriptions: { en: { value: 'paint' } }, claims: {} },
+  Q107: { id: 'Q107', labels: labels('canvas'), descriptions: { en: { value: 'fabric' } }, claims: {} },
   Q105: { id: 'Q105', labels: labels('Musée Marmottan Monet'), descriptions: { en: { value: 'art museum in Paris' } }, claims: { P31: [stmt(item('Q207694'))] } },
 };
 

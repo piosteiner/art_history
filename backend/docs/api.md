@@ -26,6 +26,9 @@ Types (URL segment → `type`): `artists` → artist, `artworks` → artwork, `p
 
 → `{"data": [...], "total": 4, "limit": 100, "offset": 0}`
 
+Artworks also have `materials` (list; filter `?material=bronze`) and `dimensions`
+(`{height_cm, width_cm, depth_cm, note, label: "73.7 × 92.1 cm"}`, `depth_cm` only for objects, `null` without data).
+
 Artworks, artists and institutions carry an `image_url` (https, hotlinked — often Wikimedia Commons; for a smaller
 version replace `/NNNNpx-` in a Commons thumbnail URL with a standard width such as `/250px-`); the detail adds
 `image_source_url`, `image_license`, `image_credit` — show license and credit wherever the image is shown.

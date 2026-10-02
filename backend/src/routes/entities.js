@@ -26,6 +26,10 @@ const ENTITIES = {
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator`,
     detail: `t.alt_titles, t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
              t.inventory_number, t.image_url, t.image_source_url, t.image_license, t.image_credit, t.description_md,
+             t.materials,
+             CASE WHEN t.height_cm IS NOT NULL THEN jsonb_build_object('height_cm', t.height_cm, 'width_cm', t.width_cm,
+               'depth_cm', t.depth_cm, 'note', t.dimensions_note,
+               'label', concat_ws(' × ', t.height_cm::float8, t.width_cm::float8, t.depth_cm::float8) || ' cm') END AS dimensions,
              (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
              (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = t.current_institution_id) AS institution`,
     md: ['description_md'],
@@ -33,6 +37,7 @@ const ENTITIES = {
       creator: "t.creator_id = entity_id('artist', $)",
       institution: "t.current_institution_id = entity_id('institution', $)",
       kind: 't.kind = $',
+      material: 't.materials @> ARRAY[$]::text[]',  // GIN index artworks_materials_gin
     },
     order: 'lower(t.created) NULLS LAST, t.title',
   },

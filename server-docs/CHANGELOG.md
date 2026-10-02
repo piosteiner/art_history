@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-02
 
+### Artworks: dimensions (2D/3D) and materials (migration 015)
+- **What:** `artworks.height_cm/width_cm/depth_cm` (numeric(8,2), depth only with height+width), `dimensions_note`,
+  `materials text[]` with a GIN index. Admin form (height × width × optional depth, decimal comma accepted; materials one
+  per line), shown as "73.7 × 92.1 cm (unframed)". Public API: `dimensions` object and `materials`, filter
+  `?material=`. Admin search finds materials. Wikidata comparison: height P2048 / width P2049 / depth P2610·P5524
+  converted to cm (cm, mm, m, inch, foot) and materials P186 as opt-in items. YAML: `dimensions: [h, w(, d)]`.
+- **Why:** owner: artworks need dimensions (incl. 3D objects) and materials.
+- **Tested:** constraint checks on dev; e2e (validation, 2D→3D, page, API + filter; Wikidata 630 mm → 63 cm);
+  export → import round trip unchanged.
+- **Revert:** redeploy the previous commit; as owner `ALTER TABLE artworks DROP CONSTRAINT artworks_dimensions_check,
+  DROP COLUMN height_cm, DROP COLUMN width_cm, DROP COLUMN depth_cm, DROP COLUMN dimensions_note, DROP COLUMN materials`.
+
 ### Images for artists and institutions (migration 014)
 - **What:** `artists` and `institutions` get `image_url` (https), `image_source_url`, `image_license`, `image_credit`
   like artworks. Admin: form fields, list thumbnails and page preview (generic for every type with an image; portraits

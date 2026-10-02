@@ -102,3 +102,29 @@ test('pickers: typo-tolerant, keyboard selection, filtered by relationship type'
   await expect(items.first()).toContainText('Paris');
   await expect(items.filter({ hasText: 'artist' })).toHaveCount(0);  // only places for "lived in"
 });
+
+test('artwork dimensions (2D and 3D) and materials: form, page, public API with material filter', async ({ userA, request }) => {
+  await userA.goto('/artworks/the-great-wave-off-kanagawa/edit');
+  await userA.fill('input[name="f.dimensions_h"]', '25,7');           // decimal comma is fine
+  await userA.fill('input[name="f.dimensions_d"]', '3');              // depth without width → refused
+  await userA.click('form.form > .actions button');
+  await expect(userA.locator('.errors')).toContainText('dimensions: height and width (and optional depth) must be numbers in cm');
+  await userA.fill('input[name="f.dimensions_w"]', '37.9');
+  await userA.fill('input[name="f.dimensions_d"]', '');
+  await userA.fill('#f-materials', 'ink\nwoodblock\npaper');
+  await userA.fill('#f-dimensions_note', 'sheet');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA.locator('dl.fields')).toContainText('25.7 × 37.9 cm (sheet)');
+  await expect(userA.locator('dl.fields')).toContainText('ink · woodblock · paper');
+
+  const api = (path) => request.get(`http://127.0.0.1:3006/v1/${path}`, { headers: { Host: 'api.localhost' } }).then((r) => r.json());
+  const wave = await api('artworks/the-great-wave-off-kanagawa');
+  expect(wave.dimensions).toMatchObject({ height_cm: 25.7, width_cm: 37.9, depth_cm: null, note: 'sheet', label: '25.7 × 37.9 cm' });
+  expect(wave.materials).toEqual(['ink', 'woodblock', 'paper']);
+  expect((await api('artworks?material=woodblock')).data.map((a) => a.slug)).toEqual(['the-great-wave-off-kanagawa']);
+
+  await userA.goto('/artworks/the-great-wave-off-kanagawa/edit');                // 3D: all three
+  await userA.fill('input[name="f.dimensions_d"]', '2.5');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA.locator('dl.fields')).toContainText('25.7 × 37.9 × 2.5 cm');
+});

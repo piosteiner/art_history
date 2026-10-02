@@ -6,6 +6,7 @@ const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1
 const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.`,
   'text[]': 'One per line.',
+  materials: 'One per line, e.g. oil paint · canvas — or bronze · marble. The "medium" above stays the readable description.',
   json: 'JSON object, e.g. {"sources": ["…"]}. Leave empty for none.',
   area: 'GeoJSON Polygon or MultiPolygon, [longitude, latitude] pairs (optional outline for regions).',
   date: DATE_HINT,
@@ -25,6 +26,7 @@ function docToForm(doc, fields) {
     if (kind === 'text[]') f[key] = (v || []).join('\n');
     else if (kind === 'json' || kind === 'area') f[key] = v ? JSON.stringify(v, null, 2) : '';
     else if (kind === 'point') { f[`${key}_lon`] = v ? String(v[0]) : ''; f[`${key}_lat`] = v ? String(v[1]) : ''; }
+    else if (kind === 'dimensions') ['h', 'w', 'd'].forEach((x, i) => { f[`${key}_${x}`] = v && v[i] !== undefined ? String(v[i]) : ''; });
     else if (kind === 'date' || kind === 'period') { f[key] = v ?? ''; f[`${key}_label`] = doc[`${key}_label`] ?? ''; }
     else f[key] = v ?? '';
   }
@@ -46,6 +48,13 @@ function formToDoc(body, fields) {
     } else if (kind === 'json' || kind === 'area') {
       if (!v) continue;
       try { doc[key] = JSON.parse(v); } catch (err) { errors.push(`${key}: not valid JSON (${err.message})`); }
+    } else if (kind === 'dimensions') {
+      // decimal comma accepted (73,7); height and width together, depth optional
+      const [h, w, d] = ['h', 'w', 'd'].map((x) => get(`${key}_${x}`).trim().replace(',', '.'));
+      if (!h && !w && !d) continue;
+      const num = /^\d+(\.\d+)?$/;
+      if (!num.test(h) || !num.test(w) || (d && !num.test(d))) { errors.push(`${key}: height and width (and optional depth) must be numbers in cm`); continue; }
+      doc[key] = d ? [Number(h), Number(w), Number(d)] : [Number(h), Number(w)];
     } else if (kind === 'point') {
       const lon = get(`${key}_lon`).trim();
       const lat = get(`${key}_lat`).trim();
@@ -82,7 +91,13 @@ function fieldInput(key, kind, f, ctx) {
   }
   if (kind === 'text[]' || kind === 'json') {
     return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
-      <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[kind])}</div>`;
+      <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[key] || HINTS[kind])}</div>`;
+  }
+  if (kind === 'dimensions') {
+    const box = (x, label) => html`<input name="${name}_${x}" value="${f[`${key}_${x}`]}" placeholder="${label}" inputmode="decimal" aria-label="${label} in cm">`;
+    return html`<div class="field${err}"><label>${humanize(key)} (cm)</label>
+      <div class="row dims">${box('h', 'height')}<span class="x">×</span>${box('w', 'width')}<span class="x">×</span>${box('d', 'depth (3D only)')}</div>
+      ${hint('Height × width, plus depth for objects (sculptures, vessels). Decimals allowed.')}</div>`;
   }
   if (kind === 'point') {
     return html`<div class="field${err}"><label>${humanize(key)}</label>

@@ -5,6 +5,7 @@
 const { parseFuzzyDate, formatFuzzyDate } = require('./fuzzy-date');
 
 // Field kinds: text · text[] · json · md · date (→ <col> + <col>_label) · period (a date that may be open-ended, "1808/")
+//              dimensions [height, width] or [height, width, depth] in cm (→ height_cm, width_cm, depth_cm)
 //              point [lon, lat] · area (GeoJSON)
 //              ref:<type> (slug → id, may point at any imported or existing entity) · parent (same-table ref, second pass)
 // Order matters: a type may only reference types listed before it (parent refs are resolved afterwards).
@@ -28,7 +29,8 @@ const TYPES = [
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     title: 'text', alt_titles: 'text[]', creator: 'ref:artist', attribution_label: 'text', created: 'date',
-    kind: 'text', medium: 'text', institution: 'ref:institution', inventory_number: 'text',
+    kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
+    institution: 'ref:institution', inventory_number: 'text',
     image_url: 'text', image_source_url: 'text', image_license: 'text', image_credit: 'text',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
@@ -68,6 +70,14 @@ function toRow(doc, fields) {
       } else if (kind === 'json') {
         if (v !== null && (typeof v !== 'object' || Array.isArray(v))) throw new Error('must be a mapping');
         put(key, JSON.stringify(v || {}), '$::jsonb');
+      } else if (kind === 'dimensions') {
+        // [height, width] or [height, width, depth], centimetres, all > 0 — three numeric columns
+        if (v !== null && !(Array.isArray(v) && (v.length === 2 || v.length === 3) && v.every((n) => Number.isFinite(n) && n > 0 && n < 1e6))) {
+          throw new Error('must be [height, width] or [height, width, depth] in cm, all greater than 0');
+        }
+        put('height_cm', v ? v[0] : null, '$::numeric');
+        put('width_cm', v ? v[1] : null, '$::numeric');
+        put('depth_cm', v && v.length === 3 ? v[2] : null, '$::numeric');
       } else if (kind === 'point') {
         if (v === null) put(key, null);
         else if (Array.isArray(v) && v.length === 2 && v.every(Number.isFinite)
@@ -122,6 +132,10 @@ function docColumns(t) {
   for (const [key, kind] of Object.entries(t.fields)) {
     if (kind === 'date' || kind === 'period') cols.push(`t.${key}::text AS ${key}`, `t.${key}_label`);
     else if (kind === 'point') cols.push(`CASE WHEN t.${key} IS NOT NULL THEN jsonb_build_array(ST_X(t.${key}::geometry), ST_Y(t.${key}::geometry)) END AS ${key}`);
+    else if (kind === 'dimensions') {
+      cols.push(`CASE WHEN t.height_cm IS NOT NULL THEN jsonb_build_array(t.height_cm, t.width_cm)
+                   || CASE WHEN t.depth_cm IS NOT NULL THEN jsonb_build_array(t.depth_cm) ELSE '[]'::jsonb END END AS ${key}`);
+    }
     else if (kind === 'area') cols.push(`ST_AsGeoJSON(t.${key})::jsonb AS ${key}`);
     else if (kind === 'parent') cols.push(`(SELECT p.slug FROM ${t.table} p WHERE p.id = t.parent_id) AS ${key}`);
     else if (kind.startsWith('ref:')) cols.push(`(SELECT r.slug FROM ${BY_TYPE[kind.slice(4)].table} r WHERE r.id = t.${REF_COLUMNS[key]}) AS ${key}`);

@@ -184,3 +184,5 @@ td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-f
 .image-preview img { display: block; max-width: min(100%, 500px); max-height: 420px; border-radius: 6px; border: 1px solid var(--line); }
 .image-preview figcaption { margin-top: .3rem; }
 .thumbs-artist td.thumb img { object-position: center 20%; }  /* portraits: keep the face in the square */
+.row.dims { align-items: center; }
+.row.dims .x { flex: 0 0 auto; min-width: 0; color: var(--muted); }
