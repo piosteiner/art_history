@@ -123,8 +123,16 @@ export function mountPickers(
     reset.hidden = GROUPS.every((g) => sel[g].mode === 'all');
   }
 
+  /** Nothing ticked = "none"; every entry ticked = "all" (which also includes entries added later). */
+  function normalize(g: Group, p: Pick): Pick {
+    if (p.mode !== 'some') return p;
+    if (!p.slugs.length) return { mode: 'none' };
+    const all = byGroup.get(g)!.entries;
+    return all.length && all.every((e) => p.slugs.includes(e.slug)) ? { mode: 'all' } : p;
+  }
+
   function set(g: Group, p: Pick) {
-    sel = { ...sel, [g]: p.mode === 'some' && !p.slugs.length ? { mode: 'none' } : p };
+    sel = { ...sel, [g]: normalize(g, p) };
     syncSummaries();
     if (views.get(g)!.chosenFirst) renderList(g);
     else syncChecks(g);
@@ -220,6 +228,10 @@ export function mountPickers(
   };
   document.addEventListener('click', outside);
 
+  // a remembered or shared URL may tick every entry one by one: show (and store) it as "all"
+  const before = JSON.stringify(sel);
+  for (const g of groups) sel = { ...sel, [g.group]: normalize(g.group, sel[g.group]) };
   syncSummaries();
+  if (JSON.stringify(sel) !== before) queueMicrotask(() => onChange(sel));
   return { destroy: () => document.removeEventListener('click', outside) };
 }
