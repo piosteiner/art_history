@@ -1,5 +1,5 @@
 // What the explore page shows: per type all, none or a chosen list. Lives in the URL so views can be shared:
-// #/?artists=vincent-van-gogh,paul-gauguin&movements=none  (a missing parameter means "all").
+// /?artists=vincent-van-gogh,paul-gauguin&movements=none  (a missing parameter means "all").
 import { PLURAL } from './api';
 import type { EntityType } from './types';
 

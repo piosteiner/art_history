@@ -8,6 +8,9 @@ on:
     branches: [main]
     paths: ['frontend/**', '.github/workflows/pages.yml']
   workflow_dispatch:
+  # daily: new or changed content gets its own page (title, preview image) and the tests check the live API
+  schedule:
+    - cron: '17 3 * * *'
 
 permissions:
   contents: read
@@ -53,6 +56,8 @@ jobs:
       - run: npm run build
         env:
           VITE_MAPTILER_KEY: ${{ vars.MAPTILER_KEY }}
+      # one page per entry with its own title/description/preview image, sitemap.xml, robots.txt, 404.html
+      - run: npm run prerender
       - uses: actions/upload-pages-artifact@v5
         with:
           path: frontend/dist

@@ -1,5 +1,5 @@
 // The network around one entry (/v1/graph/<type>/<slug>): who influenced whom, studied where, belonged to which
-// movement, was supported by which patron … laid out with d3-force. #/graph/artists/vincent-van-gogh?depth=2
+// movement, was supported by which patron … laid out with d3-force. /graph/artists/vincent-van-gogh?depth=2
 //   click a node: details and its links in the side panel · double-click: center the network on it
 //   Ctrl/Cmd/middle click: open its page in a new tab · drag nodes · wheel/pinch zooms, drag the background pans
 import { drag } from 'd3-drag';
@@ -10,6 +10,7 @@ import { getGraph, getVocabulary, PLURAL } from '../api';
 import { escape, href, html, link, render, TYPE_LABEL } from '../html';
 import type { Category, GraphEdge, GraphNode, Plural } from '../types';
 import { guard, loading, showError } from './common';
+import { navigate } from '../router';
 
 // place links are map material (presence/association), the API leaves them out of graphs by default
 const GRAPH_CATEGORIES: Category[] = ['influence', 'education', 'collaboration', 'membership', 'patronage', 'provenance', 'polity'];
@@ -29,8 +30,8 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       <p>The network shows who influenced whom, who studied where, belonged to which movement or was supported by which patron.
       Start from any entry: open its page and choose <em>Show the network</em>, or start with one of these:</p>
       <ul class="plain-list">
-        <li>${link('artist', 'vincent-van-gogh', 'Vincent van Gogh')}: <a href="#/graph/artists/vincent-van-gogh?depth=2">network</a></li>
-        <li>${link('movement', 'japonisme', 'Japonisme')}: <a href="#/graph/movements/japonisme?depth=2">network</a></li>
+        <li>${link('artist', 'vincent-van-gogh', 'Vincent van Gogh')}: <a href="/graph/artists/vincent-van-gogh?depth=2">network</a></li>
+        <li>${link('movement', 'japonisme', 'Japonisme')}: <a href="/graph/movements/japonisme?depth=2">network</a></li>
       </ul></section>`);
     return;
   }
@@ -55,7 +56,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     p.set('depth', String(next.depth ?? depth));
     const c = next.categories ?? chosenCats;
     if (c && c.length !== GRAPH_CATEGORIES.length) p.set('categories', c.join(','));
-    location.hash = `#/graph/${plural}/${encodeURIComponent(slug!)}?${p.toString().replace(/%2C/g, ',')}`;
+    navigate(`/graph/${plural}/${encodeURIComponent(slug!)}?${p.toString().replace(/%2C/g, ',')}`);
   }
 
   function draw(rootId: string, nodesIn: GraphNode[], edgesIn: GraphEdge[], truncated: boolean, depthNow: number, cats: Category[]) {
@@ -71,7 +72,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     const usedCats = [...new Set(edges.map((e) => e.category))];
 
     render(main, html`<section class="page graph-page">
-      <p class="crumbs"><a href="#/graph">Network</a> / ${TYPE_LABEL[root.type]}</p>
+      <p class="crumbs"><a href="/graph">Network</a> / ${TYPE_LABEL[root.type]}</p>
       <h1>Network around ${link(root.type, root.slug, root.name)}</h1>
       <div class="graph-controls">
         <div class="seg" role="group" aria-label="Depth">
@@ -214,7 +215,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       })
       .on('dblclick', (ev: MouseEvent, n) => {
         ev.preventDefault();
-        if (n !== root) location.hash = `#/graph/${PLURAL[n.type]}/${encodeURIComponent(n.slug)}?depth=${depthNow}${chosenCats ? `&categories=${chosenCats.join(',')}` : ''}`;
+        if (n !== root) navigate(`/graph/${PLURAL[n.type]}/${encodeURIComponent(n.slug)}?depth=${depthNow}${chosenCats ? `&categories=${chosenCats.join(',')}` : ''}`);
       });
     svg.on('click', (ev: MouseEvent) => {
       if (ev.target === svgEl) {
@@ -231,7 +232,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       render(info, html`<h2>${n.name}</h2>
         <p class="muted">${TYPE_LABEL[n.type]}${n.kind ? ` · ${n.kind}` : ''}${n.period ? ` · ${n.period.label}` : ''}</p>
         <p class="graph-actions"><a class="button-link" href="${href(n.type, n.slug)}">Open page</a>
-          ${n !== root ? html`<a class="button-link" href="#/graph/${PLURAL[n.type]}/${encodeURIComponent(n.slug)}?depth=${String(depthNow)}">Center the network here</a>` : ''}</p>
+          ${n !== root ? html`<a class="button-link" href="/graph/${PLURAL[n.type]}/${encodeURIComponent(n.slug)}?depth=${String(depthNow)}">Center the network here</a>` : ''}</p>
         <ul class="plain-list graph-links">${mine.map((e) => {
           const s = e.source as Node, t = e.target as Node;
           return html`<li class="cat-${e.category}"><i class="line swatch"></i>

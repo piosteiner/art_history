@@ -1,7 +1,7 @@
 import './style.css';
 import { mountThemeToggle } from './theme';
 import { html, PLURAL_LABEL, render } from './html';
-import { parse, start, type Cleanup, type Route } from './router';
+import { currentRoute, start, type Cleanup, type Route } from './router';
 import { mountSearch } from './search';
 import type { Plural } from './types';
 import { detail } from './views/detail';
@@ -13,10 +13,10 @@ const NAV: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institut
 
 const main = document.getElementById('app')!;
 const nav = document.getElementById('nav')!;
-render(nav, html`<a href="#/">Explore</a><a href="#/graph">Network</a>${NAV.map((p) => html`<a href="#/${p}">${PLURAL_LABEL[p]}</a>`)}`);
+render(nav, html`<a href="/">Explore</a><a href="/graph">Network</a>${NAV.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}`);
 mountSearch(document.getElementById('search')!);
 // switching between light and dark re-renders the page so the maps load the matching base map
-mountThemeToggle(document.getElementById('theme')!, () => onRoute(parse(location.hash)));
+mountThemeToggle(document.getElementById('theme')!, () => onRoute(currentRoute()));
 
 let cleanup: Cleanup;
 
@@ -25,7 +25,7 @@ function onRoute(route: Route) {
   cleanup = undefined;
   document.title = 'Art History';
   const section = route.name === 'list' || route.name === 'detail' ? route.plural : route.name === 'explore' ? '' : route.name === 'graph' ? 'graph' : null;
-  nav.querySelectorAll('a').forEach((a) => a.classList.toggle('current', a.getAttribute('href') === `#/${section ?? '-'}`));
+  nav.querySelectorAll('a').forEach((a) => a.classList.toggle('current', a.getAttribute('href') === `/${section ?? '-'}`));
   window.scrollTo(0, 0);
 
   switch (route.name) {
@@ -44,7 +44,7 @@ function onRoute(route: Route) {
       cleanup = graph(main, route.plural, route.slug, route.params);
       break;
     case 'not-found':
-      render(main, html`<section class="page"><h1>Not found</h1><p><a href="#/">Back to the start</a></p></section>`);
+      render(main, html`<section class="page"><h1>Not found</h1><p><a href="/">Back to the start</a></p></section>`);
   }
 }
 

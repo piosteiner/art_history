@@ -167,12 +167,12 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const facts = v.facts.filter(([, value]) => value);
       const hasMap = e.type === 'place' ? !!e.location : true;
       render(main, html`<article class="page detail detail-${e.type}">
-        <p class="crumbs"><a href="#/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
+        <p class="crumbs"><a href="/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
         <h1>${v.title}</h1>
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
         <p class="detail-actions">
-          ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="#/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
-          ${e.type !== 'place' ? html`<a class="button-link" href="#/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
+          ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
+          ${e.type !== 'place' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
         </p>
         <div class="detail-grid">
           <div class="detail-main">

@@ -7,7 +7,7 @@ export function loading(main: HTMLElement) {
 
 export function showError(el: HTMLElement, err: unknown) {
   if (err instanceof ApiError && err.status === 404) {
-    render(el, html`<section class="page"><h1>Not found</h1><p>${err.message}.</p><p><a href="#/">Back to the start</a></p></section>`);
+    render(el, html`<section class="page"><h1>Not found</h1><p>${err.message}.</p><p><a href="/">Back to the start</a></p></section>`);
     return;
   }
   console.error(err);
@@ -17,6 +17,6 @@ export function showError(el: HTMLElement, err: unknown) {
 
 /** Ignores results of a view the user has already navigated away from. */
 export function guard() {
-  const startHash = location.hash;
-  return () => location.hash === startHash;
+  const start = location.pathname + location.search;
+  return () => location.pathname + location.search === start;
 }

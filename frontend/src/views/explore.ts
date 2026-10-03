@@ -2,7 +2,7 @@
 // - no time window, nothing chosen individually → every place, sized by its number of links
 // - no time window, entries chosen             → their routes and places, one colour per entry
 // - a time window on the timeline              → who/what of the selection was physically where
-// The state lives in the URL (#/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
+// The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
 import { getEntityMap, getPlacesMap, getPresence, listEntities, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { href, html, render } from '../html';
@@ -36,7 +36,7 @@ function remembered(): URLSearchParams | null {
 }
 
 export function explore(main: HTMLElement, params: URLSearchParams) {
-  // an empty #/ brings back the last view
+  // a plain / brings back the last view
   if (![...params.keys()].length) {
     const last = remembered();
     if (last && [...last.keys()].length) {

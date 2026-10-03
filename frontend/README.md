@@ -8,6 +8,7 @@ cd frontend
 npm install
 npm run dev      # http://localhost:5173, /v1 is proxied to the live API (it only sends CORS headers for the real site)
 npm run build    # type-check + build into dist/
+npm run prerender  # after build: per-entry pages, sitemap (reads the live API)
 npm test         # browser tests (Playwright) against the dev server → live API; locally: PW_CHANNEL=msedge npm test
 ```
 
@@ -19,7 +20,8 @@ map uses OpenFreeMap (free, no key).
 |---|---|
 | `src/api.ts` | the **only** module that calls `fetch`; one function per endpoint, responses cached in memory |
 | `src/types.ts` | response shapes, taken from real responses |
-| `src/router.ts` | hash routes: `#/` explore, `#/artists` list, `#/artists/vincent-van-gogh` detail (Pages has no SPA fallback) |
+| `src/router.ts` | path routes with the History API: `/` explore (state in the query), `/artists`, `/artists/vincent-van-gogh`, `/graph/…`; own links are handled without reloads, Ctrl/middle click still opens tabs; old `#/…` links are converted |
+| `scripts/prerender.mjs` | after the build: one page per entry (`/artists/vincent-van-gogh/index.html`) with its own title, description, preview image (Open Graph) and schema.org data, list pages, `sitemap.xml`, `robots.txt`, and `404.html` = the app shell for addresses without a page (network views, entries newer than the last build) |
 | `src/html.ts` | `html\`\`` template that escapes values; `trusted()` only for the API's sanitized `*_html` fields; image figure with credit + licence |
 | `src/map.ts` | MapLibre setup; one entity's presence stops + route + associations, all places, presence in a time window |
 | `src/catalog.ts` | one search for pickers, list pages and the header: accent-insensitive, every word must match the name, the details or a hidden field (type, birthplace, nationality, made in …); matches are highlighted and a hidden field that matched is named ("Type: **wood**block print"). List pages and the header add the API's typo-tolerant name matches as "Similar names". Also the sort options with section headings per type (remembered per type) |
@@ -38,7 +40,7 @@ never on the route. Don't hard-code relationship type lists.
 
 ## Deploy
 Push to `main` (changes under `frontend/`) → `.github/workflows/pages.yml` runs the browser tests, builds and publishes
-to GitHub Pages; failing tests stop the deploy (the report is attached to the run). The tests use the live, curated
+to GitHub Pages (also daily at 03:17 UTC, so new content gets its page and preview); failing tests stop the deploy (the report is attached to the run). The tests use the live, curated
 content but check behaviour, not exact numbers (fixed points: Van Gogh, The Great Wave, woodblock prints).
 The repository's Pages source must be **GitHub Actions**; the MapTiler key is the repository variable `MAPTILER_KEY`
 (restrict it to `arthistory.piogino.ch` and `localhost` in the MapTiler dashboard; it is public in the bundle anyway).

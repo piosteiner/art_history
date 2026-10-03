@@ -4,6 +4,7 @@
 import { listEntities, search } from './api';
 import { entries, explain, matches, type Entry, type Match } from './catalog';
 import { href, html, render, TYPE_LABEL, type Html } from './html';
+import { navigate, ROUTE_EVENT } from './router';
 import type { EntityType, Plural } from './types';
 
 const PLURALS: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'patrons', 'places'];
@@ -104,7 +105,7 @@ export function mountSearch(root: HTMLElement) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const hit = hits[active] ?? hits[0];
-    if (hit) location.hash = href(hit.type, hit.slug);
+    if (hit) navigate(href(hit.type, hit.slug));
   });
 
   results.addEventListener('click', (e) => {
@@ -113,7 +114,7 @@ export function mountSearch(root: HTMLElement) {
   document.addEventListener('click', (e) => {
     if (!root.contains(e.target as Node)) close();
   });
-  window.addEventListener('hashchange', () => {
+  window.addEventListener(ROUTE_EVENT, () => {
     close();
     input.value = '';
   });

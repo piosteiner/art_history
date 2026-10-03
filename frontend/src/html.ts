@@ -38,7 +38,7 @@ export function render(el: Element, content: Html) {
 
 export const href = (type: EntityType | Plural, slug?: string) => {
   const plural = (type in PLURAL ? PLURAL[type as EntityType] : type) as Plural;
-  return slug ? `#/${plural}/${encodeURIComponent(slug)}` : `#/${plural}`;
+  return slug ? `/${plural}/${encodeURIComponent(slug)}` : `/${plural}`;
 };
 
 export const link = (type: EntityType | Plural, slug: string, name: string) =>
