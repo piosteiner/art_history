@@ -18,7 +18,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   `admin.arthistory.piogino.ch` (panel at the root; old `/admin/…` URLs redirect). Brief/plan: see `backend/README.md`, data model: `backend/docs/data-model.md`.
 - `server-docs/` — server inventory, changelog, config copies.
 - `frontend/` — public site (Vite + TypeScript + MapLibre), built and published to GitHub Pages by
-  `.github/workflows/pages.yml`; `fetch` only in `frontend/src/api.ts`. Not deployed by `backend/deploy.sh`; see `frontend/README.md`.
+  `.github/workflows/pages.yml` (runs `npm test` = Playwright smoke tests first); `fetch` only in `frontend/src/api.ts`. Not deployed by `backend/deploy.sh`; see `frontend/README.md`.
 - `health.html` — frontend CORS round-trip test page (now also in `frontend/public/`, served from there once Pages builds via Actions).
 
 ## Workflow

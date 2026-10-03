@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "playwright test"
   },
   "dependencies": {
     "d3-drag": "^3.0.0",
@@ -16,6 +17,7 @@
     "maplibre-gl": "^6.11.2"
   },
   "devDependencies": {
+    "@playwright/test": "^1.63.0",
     "@types/d3-drag": "^3.0.7",
     "@types/d3-force": "^3.0.10",
     "@types/d3-selection": "^3.0.12",

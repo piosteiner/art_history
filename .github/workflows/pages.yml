@@ -1,4 +1,4 @@
-# Builds frontend/ and publishes it to GitHub Pages (https://arthistory.piogino.ch).
+# Tests and builds frontend/, then publishes it to GitHub Pages (https://arthistory.piogino.ch).
 # Requires Settings → Pages → Source: "GitHub Actions". Optional repository variable MAPTILER_KEY
 # (Settings → Secrets and variables → Actions → Variables); without it the map uses OpenFreeMap tiles.
 name: Frontend → GitHub Pages
@@ -32,6 +32,15 @@ jobs:
           cache: npm
           cache-dependency-path: frontend/package-lock.json
       - run: npm ci
+      # browser tests against the live API (through the dev server's proxy); a failure stops the deploy
+      - run: npx playwright install --with-deps chromium
+      - run: npm test
+      - uses: actions/upload-artifact@v7
+        if: failure()
+        with:
+          name: playwright-report
+          path: frontend/playwright-report
+          retention-days: 7
       - run: npm run build
         env:
           VITE_MAPTILER_KEY: ${{ vars.MAPTILER_KEY }}

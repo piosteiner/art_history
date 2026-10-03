@@ -8,6 +8,7 @@ cd frontend
 npm install
 npm run dev      # http://localhost:5173, /v1 is proxied to the live API (it only sends CORS headers for the real site)
 npm run build    # type-check + build into dist/
+npm test         # browser tests (Playwright) against the dev server → live API; locally: PW_CHANNEL=msedge npm test
 ```
 
 Optional: copy `.env.example` to `.env.local` and set `VITE_MAPTILER_KEY` for MapTiler tiles. Without a key the
@@ -23,8 +24,11 @@ map uses OpenFreeMap (free, no key).
 | `src/map.ts` | MapLibre setup; one entity's presence stops + route + associations, all places, presence in a time window |
 | `src/catalog.ts` | one search for pickers, list pages and the header: accent-insensitive, every word must match the name, the details or a hidden field (type, birthplace, nationality, made in …); matches are highlighted and a hidden field that matched is named ("Type: **wood**block print"). List pages and the header add the API's typo-tolerant name matches as "Similar names". Also the sort options with section headings per type (remembered per type) |
 | `src/selection.ts`, `src/picker.ts` | explore page: per type all / none / chosen entries ("Show" dropdowns); stored in the URL (`#/?artists=a,b&movements=none&from=1888&to=1889`) and remembered in localStorage |
-| `src/timeline.ts` | SVG timeline of lifespans/periods; drag to pick a window, click a bar to use its span |
-| `src/views/` | explore (map + timeline), list, detail (all six types) |
+| `src/timeline.ts` | SVG timeline of lifespans/periods: window by dragging across the bars, clicking a bar or typing from/to years; zoom (− / + / Fit, Ctrl+wheel, pinch, keys) and pan (◀ ▶, dragging the year axis, sideways wheel, arrow keys) |
+| `src/views/graph.ts` | network graph (`#/graph/<type>/<slug>?depth=&categories=`) with d3-force: click = details, double-click = recenter, Ctrl+click = new tab |
+| `src/theme.ts` | Auto / Light / Dark toggle (follows the system by default); maps use the matching base map |
+| `tests/` | Playwright smoke tests (desktop + phone); run in the Pages workflow before every deploy |
+| `src/views/` | explore (map + timeline), list, detail (all types), graph |
 | `public/` | copied as is: `CNAME`, `health.html` (CORS round-trip check) |
 
 ## Map rule
@@ -33,7 +37,9 @@ Presence (was physically there) and association (e.g. influenced by the culture 
 never on the route. Don't hard-code relationship type lists.
 
 ## Deploy
-Push to `main` (changes under `frontend/`) → `.github/workflows/pages.yml` builds and publishes to GitHub Pages.
+Push to `main` (changes under `frontend/`) → `.github/workflows/pages.yml` runs the browser tests, builds and publishes
+to GitHub Pages; failing tests stop the deploy (the report is attached to the run). The tests use the live, curated
+content but check behaviour, not exact numbers (fixed points: Van Gogh, The Great Wave, woodblock prints).
 The repository's Pages source must be **GitHub Actions**; the MapTiler key is the repository variable `MAPTILER_KEY`
 (restrict it to `arthistory.piogino.ch` and `localhost` in the MapTiler dashboard; it is public in the bundle anyway).
 
@@ -55,5 +61,4 @@ the timeline; at most 24 drawn). Time window → presence in the window, limited
   they need a server-side `sort=` parameter (name, born, died, country, date, …) with paging, and search-as-you-type.
 
 ## Next
-Graph view (`/v1/graph/…`, d3-force or Cytoscape). Missing API features go to the backend as a written request
-rather than client-side stitching.
+Missing API features go to the backend as a written request rather than client-side stitching.

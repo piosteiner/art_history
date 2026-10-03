@@ -14,6 +14,8 @@ backend/src/admin/static-dev/
 backend/test/e2e/.results/
 backend/playwright-report/
 frontend/dist/
+frontend/test-results/
+frontend/playwright-report/
 logs/
 *.log
 uploads/
