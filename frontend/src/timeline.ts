@@ -150,7 +150,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     const ticks: string[] = [];
     for (let t = Math.ceil(v0 / step) * step; t <= v1; t += step) {
       ticks.push(`<line class="tick" x1="${x(t)}" x2="${x(t)}" y1="${AXIS_H - 4}" y2="${height}"/>
-        <text class="tick-label" x="${x(t)}" y="${AXIS_H - 10}">${yearLabel(t)}</text>`);
+        ${x(t) - labelW() < 16 ? '' : `<text class="tick-label" x="${x(t)}" y="${AXIS_H - 10}">${yearLabel(t)}</text>`}`); // too close to the edge: would be cut in half
     }
 
     const groups = new Set<string>();
