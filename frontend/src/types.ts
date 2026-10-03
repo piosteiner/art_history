@@ -66,7 +66,11 @@ interface DetailBase {
 
 // ---- list items ----------------------------------------------------------------------------------
 
-export interface ArtistItem { slug: string; name: string; sort_name: string | null; birth: DateRange | null; death: DateRange | null; image_url: string | null }
+export interface ArtistItem {
+  slug: string; name: string; sort_name: string | null; birth: DateRange | null; death: DateRange | null; image_url: string | null;
+  /** Requested from the backend (place of the `born_in` relationship); absent until it is delivered. */
+  birth_place?: { slug: string; name: string; country_code: string | null } | null;
+}
 export interface ArtworkItem { slug: string; title: string; created: DateRange | null; kind: string | null; image_url: string | null; creator: Ref | null }
 export interface PlaceItem { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem { slug: string; name: string; kind: string | null; period: DateRange | null }

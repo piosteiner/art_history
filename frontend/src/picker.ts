@@ -1,17 +1,22 @@
-// One dropdown per type ("Artists · 2 of 14"): All / None, a filter box and a checklist of entries.
+// One dropdown per type ("Artists · 2 of 14"): search, sort with section headings, All / None,
+// add or remove everything a search shows, "chosen first", and a checklist of entries.
+import { matches, saveSort, savedSort, sortEntries, sortOptions, type Entry, type SortOption } from './catalog';
 import { html, render } from './html';
 import { ALL, GROUPS, type Group, type Pick, type Selection } from './selection';
-
-export interface PickItem {
-  slug: string;
-  name: string;
-  meta?: string; // dates or kind, shown small next to the name
-}
+import type { Plural } from './types';
 
 export interface PickerGroup {
   group: Group;
+  plural: Plural;
   label: string;
-  items: PickItem[];
+  entries: Entry[];
+}
+
+interface View {
+  query: string;
+  sort: string;
+  chosenFirst: boolean;
+  options: SortOption[];
 }
 
 const countLabel = (p: Pick, total: number) =>
@@ -25,58 +30,130 @@ export function mountPickers(
 ) {
   let sel: Selection = structuredClone(initial);
   const byGroup = new Map(groups.map((g) => [g.group, g]));
+  const views = new Map<Group, View>(groups.map((g) => {
+    const options = sortOptions(g.plural, g.entries);
+    return [g.group, { query: '', sort: savedSort(g.plural, options), chosenFirst: false, options }];
+  }));
 
   render(root, html`<div class="pickers">
     <span class="pickers-label">Show</span>
-    ${groups.map((g) => html`<details class="pick" data-group="${g.group}">
-      <summary><span class="pick-name">${g.label}</span> <span class="pick-count"></span></summary>
-      <div class="pick-panel">
-        <div class="pick-actions">
-          <button type="button" data-act="all">All</button>
-          <button type="button" data-act="none">None</button>
+    ${groups.map((g) => {
+      const v = views.get(g.group)!;
+      return html`<details class="pick" data-group="${g.group}">
+        <summary><span class="pick-name">${g.label}</span> <span class="pick-count"></span></summary>
+        <div class="pick-panel">
+          <div class="pick-tools">
+            <input type="search" class="pick-search" placeholder="Search ${g.label.toLowerCase()}…" aria-label="Search ${g.label.toLowerCase()}" autocomplete="off">
+            <select class="pick-sort" aria-label="Sort ${g.label.toLowerCase()}">
+              ${v.options.map((o) => html`<option value="${o.id}" ${o.id === v.sort ? html`selected` : ''}>${o.label}</option>`)}
+            </select>
+          </div>
+          <div class="pick-actions">
+            <button type="button" data-act="all">All</button>
+            <button type="button" data-act="none">None</button>
+            <button type="button" data-act="add-shown" hidden></button>
+            <button type="button" data-act="remove-shown" hidden>Remove shown</button>
+            <label class="pick-first"><input type="checkbox" class="pick-chosen-first"> chosen first</label>
+          </div>
+          <p class="pick-info muted" aria-live="polite"></p>
+          <ul class="pick-list"></ul>
         </div>
-        ${g.items.length > 8 ? html`<input type="search" class="pick-filter" placeholder="Filter…" aria-label="Filter ${g.label.toLowerCase()}">` : ''}
-        <ul class="pick-list">${g.items.map((it) => html`<li data-name="${it.name.toLowerCase()}">
-          <label><input type="checkbox" value="${it.slug}"> <span>${it.name}</span>${it.meta ? html` <span class="muted">${it.meta}</span>` : ''}</label>
-          <button type="button" class="pick-only" data-only="${it.slug}" title="Show only ${it.name}">only</button>
-        </li>`)}${g.items.length ? '' : html`<li class="muted">No entries yet.</li>`}</ul>
-      </div>
-    </details>`)}
+      </details>`;
+    })}
     <button type="button" class="link-button pickers-reset" hidden>Show everything</button>
   </div>`);
 
   const reset = root.querySelector<HTMLButtonElement>('.pickers-reset')!;
+  const detailsOf = (g: Group) => root.querySelector<HTMLDetailsElement>(`details.pick[data-group="${g}"]`)!;
+  const isChosen = (g: Group, slug: string) => {
+    const p = sel[g];
+    return p.mode === 'all' || (p.mode === 'some' && p.slugs.includes(slug));
+  };
 
-  /** Reflects `sel` in the summaries and checkboxes. */
-  function sync() {
-    for (const details of root.querySelectorAll<HTMLDetailsElement>('details.pick')) {
-      const g = details.dataset.group as Group;
-      const p = sel[g];
-      details.querySelector('.pick-count')!.textContent = countLabel(p, byGroup.get(g)!.items.length);
-      details.classList.toggle('pick-filtered', p.mode !== 'all');
-      details.querySelectorAll<HTMLInputElement>('input[type=checkbox]').forEach((cb) => {
-        cb.checked = p.mode === 'all' || (p.mode === 'some' && p.slugs.includes(cb.value));
-      });
+  /** The entries a group's search lets through, in its sort order (chosen ones first if asked). */
+  function visible(g: Group) {
+    const v = views.get(g)!;
+    const list = sortEntries(byGroup.get(g)!.entries.filter((e) => matches(e, v.query)), v.sort);
+    if (!v.chosenFirst || sel[g].mode === 'all') return { chosenPart: [], rest: list };
+    return { chosenPart: list.filter((e) => isChosen(g, e.slug)), rest: list.filter((e) => !isChosen(g, e.slug)) };
+  }
+
+  function renderList(g: Group) {
+    const v = views.get(g)!;
+    const d = detailsOf(g);
+    const total = byGroup.get(g)!.entries.length;
+    const { chosenPart, rest } = visible(g);
+    const shown = chosenPart.length + rest.length;
+    const item = (e: Entry) => html`<li class="pick-item">
+      <label><input type="checkbox" value="${e.slug}"> <span>${e.name}</span>${e.meta ? html` <span class="muted">${e.meta}</span>` : ''}</label>
+      <button type="button" class="pick-only" data-only="${e.slug}" title="Show only ${e.name}">only</button>
+    </li>`;
+    let last = '';
+    const withHeadings = rest.map((e) => {
+      const h = e.sorts[v.sort]?.heading ?? '';
+      const head = h !== last ? html`<li class="pick-heading" aria-hidden="true">${h}</li>` : '';
+      last = h;
+      return html`${head}${item(e)}`;
+    });
+    render(d.querySelector('.pick-list')!, html`
+      ${chosenPart.length ? html`<li class="pick-heading pick-heading-chosen" aria-hidden="true">Chosen</li>${chosenPart.map(item)}` : ''}
+      ${withHeadings}
+      ${!total ? html`<li class="muted">No entries yet.</li>` : !shown ? html`<li class="muted">No matches for “${v.query}”.</li>` : ''}`);
+    d.querySelector('.pick-info')!.textContent = v.query ? `${shown} of ${total} match` : `${total} ${total === 1 ? 'entry' : 'entries'}`;
+    const add = d.querySelector<HTMLButtonElement>('[data-act="add-shown"]')!;
+    const remove = d.querySelector<HTMLButtonElement>('[data-act="remove-shown"]')!;
+    add.hidden = remove.hidden = !v.query || !shown;
+    add.textContent = `Add the ${shown} shown`;
+    syncChecks(g);
+  }
+
+  function syncChecks(g: Group) {
+    detailsOf(g).querySelectorAll<HTMLInputElement>('.pick-list input[type=checkbox]').forEach((cb) => {
+      cb.checked = isChosen(g, cb.value);
+    });
+  }
+
+  function syncSummaries() {
+    for (const g of groups) {
+      const d = detailsOf(g.group);
+      const p = sel[g.group];
+      d.querySelector('.pick-count')!.textContent = countLabel(p, g.entries.length);
+      d.classList.toggle('pick-filtered', p.mode !== 'all');
     }
     reset.hidden = GROUPS.every((g) => sel[g].mode === 'all');
   }
 
   function set(g: Group, p: Pick) {
-    sel = { ...sel, [g]: p };
-    sync();
+    sel = { ...sel, [g]: p.mode === 'some' && !p.slugs.length ? { mode: 'none' } : p };
+    syncSummaries();
+    if (views.get(g)!.chosenFirst) renderList(g);
+    else syncChecks(g);
     onChange(sel);
   }
 
+  const allSlugs = (g: Group) => byGroup.get(g)!.entries.map((e) => e.slug);
+  const current = (g: Group) => (sel[g].mode === 'all' ? allSlugs(g) : sel[g].mode === 'some' ? (sel[g] as { slugs: string[] }).slugs : []);
+
+  function toggle(g: Group, slug: string, on: boolean) {
+    const now = current(g);
+    if (on) set(g, { mode: 'some', slugs: now.includes(slug) ? now : [...now, slug] });
+    else set(g, { mode: 'some', slugs: now.filter((s) => s !== slug) });
+  }
+
   root.addEventListener('change', (e) => {
-    const cb = e.target as HTMLInputElement;
-    if (cb.type !== 'checkbox') return;
-    const details = cb.closest<HTMLDetailsElement>('details.pick')!;
-    const g = details.dataset.group as Group;
-    const checked = [...details.querySelectorAll<HTMLInputElement>('input[type=checkbox]:checked')].map((c) => c.value);
-    // keep earlier picks first, so colours on the map stay put when more are added
-    const before = sel[g].mode === 'some' ? (sel[g] as { slugs: string[] }).slugs : [];
-    const slugs = [...before.filter((s) => checked.includes(s)), ...checked.filter((s) => !before.includes(s))];
-    set(g, slugs.length ? { mode: 'some', slugs } : { mode: 'none' });
+    const t = e.target as HTMLElement;
+    const g = t.closest<HTMLDetailsElement>('details.pick')?.dataset.group as Group | undefined;
+    if (!g) return;
+    if (t instanceof HTMLSelectElement && t.classList.contains('pick-sort')) {
+      views.get(g)!.sort = t.value;
+      saveSort(byGroup.get(g)!.plural, t.value);
+      renderList(g);
+    } else if (t instanceof HTMLInputElement && t.classList.contains('pick-chosen-first')) {
+      views.get(g)!.chosenFirst = t.checked;
+      renderList(g);
+    } else if (t instanceof HTMLInputElement && t.type === 'checkbox') {
+      toggle(g, t.value, t.checked);
+    }
   });
 
   root.addEventListener('click', (e) => {
@@ -84,37 +161,65 @@ export function mountPickers(
     if (!btn) return;
     if (btn === reset) {
       sel = structuredClone(ALL);
-      sync();
+      syncSummaries();
+      groups.forEach((g) => renderList(g.group));
       onChange(sel);
       return;
     }
     const g = btn.closest<HTMLDetailsElement>('details.pick')?.dataset.group as Group | undefined;
     if (!g) return;
-    if (btn.dataset.act === 'all') set(g, { mode: 'all' });
-    else if (btn.dataset.act === 'none') set(g, { mode: 'none' });
-    else if (btn.dataset.only) set(g, { mode: 'some', slugs: [btn.dataset.only] });
+    const { chosenPart, rest } = visible(g);
+    const shownSlugs = [...chosenPart, ...rest].map((x) => x.slug);
+    switch (btn.dataset.act) {
+      case 'all': return set(g, { mode: 'all' });
+      case 'none': return set(g, { mode: 'none' });
+      case 'add-shown': {
+        if (sel[g].mode === 'all') return;
+        const now = current(g);
+        return set(g, { mode: 'some', slugs: [...now, ...shownSlugs.filter((s) => !now.includes(s))] });
+      }
+      case 'remove-shown':
+        return set(g, { mode: 'some', slugs: current(g).filter((s) => !shownSlugs.includes(s)) });
+    }
+    if (btn.dataset.only) set(g, { mode: 'some', slugs: [btn.dataset.only] });
   });
 
   root.addEventListener('input', (e) => {
     const input = e.target as HTMLInputElement;
-    if (!input.classList.contains('pick-filter')) return;
-    const q = input.value.trim().toLowerCase();
-    input.closest('details')!.querySelectorAll<HTMLLIElement>('.pick-list li[data-name]').forEach((li) => {
-      li.hidden = !!q && !li.dataset.name!.includes(q);
-    });
+    if (!input.classList.contains('pick-search')) return;
+    const g = input.closest<HTMLDetailsElement>('details.pick')!.dataset.group as Group;
+    views.get(g)!.query = input.value.trim();
+    renderList(g);
   });
 
-  // one panel open at a time; clicking elsewhere closes it
+  root.addEventListener('keydown', (e) => {
+    const input = e.target as HTMLElement;
+    const d = input.closest<HTMLDetailsElement>('details.pick');
+    if (!d) return;
+    if (e.key === 'Escape') {
+      d.open = false;
+      d.querySelector('summary')!.focus();
+    } else if (e.key === 'Enter' && input.classList.contains('pick-search')) {
+      // Enter ticks (or unticks) the first match
+      e.preventDefault();
+      const first = d.querySelector<HTMLInputElement>('.pick-list input[type=checkbox]');
+      if (first) toggle(d.dataset.group as Group, first.value, !first.checked);
+    }
+  });
+
+  // one panel open at a time, search focused; clicking elsewhere closes it
   root.addEventListener('toggle', (e) => {
     const opened = e.target as HTMLDetailsElement;
-    if (opened.open) root.querySelectorAll<HTMLDetailsElement>('details.pick[open]').forEach((d) => d !== opened && (d.open = false));
+    if (!opened.open) return;
+    root.querySelectorAll<HTMLDetailsElement>('details.pick[open]').forEach((d) => d !== opened && (d.open = false));
+    renderList(opened.dataset.group as Group);
+    opened.querySelector<HTMLInputElement>('.pick-search')!.focus({ preventScroll: true });
   }, true);
   const outside = (e: MouseEvent) => {
     if (!root.contains(e.target as Node)) root.querySelectorAll<HTMLDetailsElement>('details.pick[open]').forEach((d) => (d.open = false));
   };
   document.addEventListener('click', outside);
 
-  sync();
+  syncSummaries();
   return { destroy: () => document.removeEventListener('click', outside) };
 }
-

@@ -21,6 +21,7 @@ map uses OpenFreeMap (free, no key).
 | `src/router.ts` | hash routes: `#/` explore, `#/artists` list, `#/artists/vincent-van-gogh` detail (Pages has no SPA fallback) |
 | `src/html.ts` | `html\`\`` template that escapes values; `trusted()` only for the API's sanitized `*_html` fields; image figure with credit + licence |
 | `src/map.ts` | MapLibre setup; one entity's presence stops + route + associations, all places, presence in a time window |
+| `src/catalog.ts` | search (accent-insensitive, every word must match name or details) and sort options with section headings per type; the chosen sort is remembered per type, shared by pickers and list pages |
 | `src/selection.ts`, `src/picker.ts` | explore page: per type all / none / chosen entries ("Show" dropdowns); stored in the URL (`#/?artists=a,b&movements=none&from=1888&to=1889`) and remembered in localStorage |
 | `src/timeline.ts` | SVG timeline of lifespans/periods; drag to pick a window, click a bar to use its span |
 | `src/views/` | explore (map + timeline), list, detail (all six types) |
@@ -41,10 +42,15 @@ Nothing chosen individually → every place (sized by links). Entries chosen →
 the timeline; at most 24 drawn). Time window → presence in the window, limited to the selection.
 
 ## Wishes for the backend
+- **Artist birth place in lists** (for the "Country of birth" sort, which stays hidden until the data is there):
+  `GET /v1/artists` items (and the detail) get `birth_place: {slug, name, country_code} | null`: the place of the
+  artist's earliest `born_in` relationship; `country_code` from that place or, if empty, its nearest ancestor that has
+  one. The frontend type already declares it (`ArtistItem.birth_place`).
 - `GET /v1/map/presence?…&entities=artist/vincent-van-gogh,patron/theo-van-gogh`: today the frontend filters single
   picks out of the full window response, which grows with the library.
 - `GET /v1/map/routes?entities=…`: several entities' map data in one request (today one request per chosen entry).
-- Lists beyond 500 entries: the pickers load `limit=500` per type; with more, they need search-as-you-type instead.
+- Lists beyond 500 entries: pickers and list pages load `limit=500` per type and sort in the browser; beyond that
+  they need a server-side `sort=` parameter (name, born, died, country, date, …) with paging, and search-as-you-type.
 
 ## Next
 Graph view (`/v1/graph/…`, d3-force or Cytoscape). Missing API features go to the backend as a written request

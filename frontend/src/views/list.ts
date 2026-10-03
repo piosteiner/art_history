@@ -2,6 +2,7 @@ import { listEntities } from '../api';
 import { dateLabel, href, html, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { ItemByPlural, Plural } from '../types';
 import { guard, showError } from './common';
+import { entries, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
 
 type AnyItem = ItemByPlural[Plural];
 
@@ -59,29 +60,61 @@ function card(plural: Plural, item: AnyItem): Html {
 export function list(main: HTMLElement, plural: Plural) {
   render(main, html`<section class="page">
     <h1>${PLURAL_LABEL[plural]}</h1>
-    <input class="filter" type="search" placeholder="Filter ${PLURAL_LABEL[plural].toLowerCase()}…" aria-label="Filter">
+    <div class="list-tools">
+      <input class="filter" type="search" placeholder="Search ${PLURAL_LABEL[plural].toLowerCase()}…" aria-label="Search">
+      <label class="list-sort" hidden>Sort <select aria-label="Sort"></select></label>
+    </div>
     <p class="muted" id="count"></p>
     <ul class="cards" id="items"></ul>
   </section>`);
   const items = main.querySelector<HTMLElement>('#items')!;
   const count = main.querySelector<HTMLElement>('#count')!;
   const filter = main.querySelector<HTMLInputElement>('.filter')!;
+  const sortLabel = main.querySelector<HTMLLabelElement>('.list-sort')!;
+  const sortSelect = sortLabel.querySelector('select')!;
   const current = guard();
+
+  let sort = '';
+  let shown: Entry<AnyItem>[] = [];
+
+  function draw() {
+    let last = '';
+    render(items, shown.length
+      ? html`${sortEntries(shown, sort).map((e) => {
+          const h = e.sorts[sort]?.heading ?? '';
+          const head = h !== last ? html`<li class="cards-heading">${h}</li>` : '';
+          last = h;
+          return html`${head}${card(plural, e.item)}`;
+        })}`
+      : html`<li class="muted">Nothing found.</li>`);
+  }
 
   let request = 0;
   async function load(q: string) {
     const mine = ++request;
     try {
+      // the API search is typo-tolerant ("hokusia"); sorting happens here
       const res = await listEntities(plural, { q, limit: 500 });
       if (mine !== request || !current()) return;
+      shown = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
+      if (!sort) {
+        const options = sortOptions(plural, shown);
+        sort = savedSort(plural, options);
+        render(sortSelect, html`${options.map((o) => html`<option value="${o.id}" ${o.id === sort ? html`selected` : ''}>${o.label}</option>`)}`);
+        sortLabel.hidden = options.length < 2;
+      }
       count.textContent = `${res.total} ${res.total === 1 ? 'entry' : 'entries'}${res.total > res.data.length ? `, showing ${res.data.length}` : ''}`;
-      render(items, res.data.length
-        ? html`${res.data.map((item) => card(plural, item))}`
-        : html`<li class="muted">Nothing found.</li>`);
+      draw();
     } catch (err) {
       showError(items, err);
     }
   }
+
+  sortSelect.addEventListener('change', () => {
+    sort = sortSelect.value;
+    saveSort(plural, sort);
+    draw();
+  });
 
   let timer: number | undefined;
   filter.addEventListener('input', () => {
@@ -91,4 +124,3 @@ export function list(main: HTMLElement, plural: Plural) {
   load('');
   return () => clearTimeout(timer);
 }
-

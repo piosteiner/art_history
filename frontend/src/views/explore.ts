@@ -4,7 +4,8 @@
 // - a time window on the timeline              → who/what of the selection was physically where
 // The state lives in the URL (#/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
 import { getEntityMap, getPlacesMap, getPresence, listEntities, PLURAL } from '../api';
-import { href, html, render, spanLabel } from '../html';
+import { entries } from '../catalog';
+import { href, html, render } from '../html';
 import { COLORS, createMap, PALETTE, showPlaces, showPresence, showSelection, type ColoredEntityMap } from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
@@ -199,10 +200,10 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       if (!main.contains(timelineEl)) return;
       lists = l;
       const groups: PickerGroup[] = [
-        { group: 'artist', label: 'Artists', items: l.artists.map((a) => ({ slug: a.slug, name: a.name, meta: spanLabel(a.birth, a.death).replace(/ – /, '–') })) },
-        { group: 'artwork', label: 'Artworks', items: l.artworks.map((a) => ({ slug: a.slug, name: a.title, meta: [a.creator?.name, a.created?.label].filter(Boolean).join(', ') })) },
-        { group: 'movement', label: 'Movements', items: l.movements.map((m) => ({ slug: m.slug, name: m.name, meta: m.period?.label })) },
-        { group: 'patron', label: 'Patrons', items: l.patrons.map((p) => ({ slug: p.slug, name: p.name, meta: p.active?.label })) },
+        { group: 'artist', plural: 'artists', label: 'Artists', entries: entries('artists', l.artists) },
+        { group: 'artwork', plural: 'artworks', label: 'Artworks', entries: entries('artworks', l.artworks) },
+        { group: 'movement', plural: 'movements', label: 'Movements', entries: entries('movements', l.movements) },
+        { group: 'patron', plural: 'patrons', label: 'Patrons', entries: entries('patrons', l.patrons) },
       ];
       pickers = mountPickers(pickersEl, groups, sel, (next) => {
         sel = next;
