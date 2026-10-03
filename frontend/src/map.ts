@@ -5,7 +5,7 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 // MapLibre 6 loads its worker from a separate module; let Vite bundle it and tell MapLibre where it is.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { html, href, type Html } from './html';
-import type { EntityMap, PlacesMap, PresenceMap, StopFeature } from './types';
+import type { EntityMap, EntityType, PlacesMap, PresenceMap, StopFeature } from './types';
 
 setWorkerUrl(workerUrl);
 
@@ -159,12 +159,15 @@ export function showPoint(map: MapLibre, coords: [number, number], name: string)
 
 // ---- every place ---------------------------------------------------------------------------------
 
+// The explore map shows one of three overlays at a time; switching removes the others' layers.
 const PLACE_LAYERS = ['places-circles'];
-const PRESENCE_LAYERS = ['presence-circles', 'presence-counts'];
+const SELECTION_LAYERS = ['sel-route', 'sel-association', 'sel-presence'];
+const OVERLAY_LAYERS = [...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
+const clearOverlays = (map: MapLibre) => removeLayers(map, OVERLAY_LAYERS);
 
 export function showPlaces(map: MapLibre, fc: PlacesMap) {
   whenReady(map, () => {
-    removeLayers(map, [...PRESENCE_LAYERS, ...PLACE_LAYERS]);
+    clearOverlays(map);
     setData(map, 'places', fc as unknown as GeoJSON.FeatureCollection);
     const total: ExpressionSpecification = ['+', ['get', 'presence_count'], ['get', 'association_count']];
     map.addLayer({
@@ -210,7 +213,7 @@ export function showPresence(map: MapLibre, fc: PresenceMap) {
     })),
   };
   whenReady(map, () => {
-    removeLayers(map, [...PRESENCE_LAYERS, ...PLACE_LAYERS]);
+    clearOverlays(map);
     setData(map, 'presence', grouped);
     map.addLayer({
       id: 'presence-circles', type: 'circle', source: 'presence',
@@ -233,3 +236,60 @@ function bindPresencePopups(map: MapLibre) {
       </li>`)}</ul></div>`;
   })}`);
 }
+
+// ---- several chosen entities, one colour each -----------------------------------------------------
+
+export interface ColoredEntityMap {
+  fc: EntityMap;
+  color: string;
+}
+
+/**
+ * The routes and places of several entities at once, each in its own colour. Same encoding as a single
+ * entity: filled dots + line = physically there, in date order; hollow rings = association, not travel.
+ */
+export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
+  const tag = (item: ColoredEntityMap, f: EntityMap['features'][number]) => ({
+    ...f,
+    properties: { ...f.properties, color: item.color, entity: item.fc.entity },
+  }) as unknown as GeoJSON.Feature;
+  const routes = items.flatMap((i) => i.fc.features.filter((f) => f.properties.layer === 'route').map((f) => tag(i, f)));
+  const stops = items.flatMap((i) => i.fc.features.filter((f) => f.geometry.type === 'Point').map((f) => tag(i, f)));
+  whenReady(map, () => {
+    clearOverlays(map);
+    setData(map, 'sel-routes', { type: 'FeatureCollection', features: routes });
+    setData(map, 'sel-stops', { type: 'FeatureCollection', features: stops });
+    map.addLayer({
+      id: 'sel-route', type: 'line', source: 'sel-routes',
+      layout: { 'line-join': 'round', 'line-cap': 'round' },
+      paint: { 'line-color': ['get', 'color'], 'line-width': 2.5, 'line-opacity': 0.75 },
+    });
+    map.addLayer({
+      id: 'sel-association', type: 'circle', source: 'sel-stops',
+      filter: ['==', ['get', 'layer'], 'association'],
+      paint: { 'circle-radius': 9, 'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': ['get', 'color'], 'circle-stroke-width': 2.5 },
+    });
+    map.addLayer({
+      id: 'sel-presence', type: 'circle', source: 'sel-stops',
+      filter: ['==', ['get', 'layer'], 'presence'],
+      paint: { 'circle-radius': 6, 'circle-color': ['get', 'color'], 'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5 },
+    });
+    once(map, 'selection', () => popupOnClick(map, ['sel-presence', 'sel-association'], (features) => html`${(features ?? []).map((f) => {
+      const p = f.properties;
+      const entity = prop<{ type: EntityType; slug: string; name: string }>(p.entity);
+      const place = prop<{ slug: string; name: string }>(p.place);
+      const period = prop<{ label: string } | null>(p.period);
+      return html`<div class="popup-row">
+        <i class="dot" style="background:${p.color}"></i> <a href="${href(entity.type, entity.slug)}">${entity.name}</a>
+        ${p.label} <a href="${href('place', place.slug)}">${place.name}</a>${period ? html` · ${period.label}` : ''}
+        ${p.note ? html`<br><em>${p.note}</em>` : ''}
+        ${p.layer === 'association' ? html`<br><span class="tag tag-association">association, not travel</span>` : ''}
+      </div>`;
+    })}`));
+    const presence = stops.filter((f) => f.properties?.layer === 'presence');
+    fit(map, (presence.length ? presence : stops).map((f) => (f.geometry as GeoJSON.Point).coordinates as [number, number]));
+  });
+}
+
+/** Distinguishable colours for chosen entities (map routes and their timeline bars). */
+export const PALETTE = ['#b4462b', '#2f6f73', '#c08a1e', '#3d6fb6', '#8a4f9e', '#5e8c3a', '#c2577f', '#6b5b45'];

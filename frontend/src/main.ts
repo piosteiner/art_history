@@ -26,7 +26,7 @@ function onRoute(route: Route) {
 
   switch (route.name) {
     case 'explore':
-      cleanup = explore(main);
+      cleanup = explore(main, route.params);
       break;
     case 'list':
       document.title = `${PLURAL_LABEL[route.plural]} · Art History`;

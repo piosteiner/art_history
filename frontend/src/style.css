@@ -143,3 +143,46 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
   .facts dd { margin-bottom: .5rem; }
 }
 .link-button { font: inherit; color: var(--link); background: none; border: 0; padding: 0; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+
+/* explore: what to show */
+.pickers-wrap { margin: .2rem 0 .8rem; }
+.pickers { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem .5rem; }
+.pickers-label { font-size: .85rem; color: var(--muted); margin-right: .2rem; }
+.pick { position: relative; }
+.pick summary {
+  list-style: none; cursor: pointer; user-select: none; font-size: .9rem;
+  padding: .3rem .75rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface);
+}
+.pick summary::-webkit-details-marker { display: none; }
+.pick summary::after { content: '▾'; margin-left: .35rem; color: var(--muted); font-size: .75rem; }
+.pick[open] summary, .pick summary:hover { border-color: var(--accent); }
+.pick-count { color: var(--muted); }
+.pick-filtered summary { background: #f6e7e2; border-color: #e3b9ab; }
+.pick-filtered .pick-count { color: var(--accent); font-weight: 600; }
+.pick-panel {
+  position: absolute; z-index: 20; top: calc(100% + 6px); left: 0; width: min(340px, calc(100vw - 32px));
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 8px 24px rgb(0 0 0 / .12); padding: .6rem;
+}
+.pick-actions { display: flex; gap: .4rem; margin-bottom: .5rem; }
+.pick-actions button, .pick-only {
+  font: inherit; font-size: .82rem; padding: .15rem .6rem; border: 1px solid var(--line);
+  background: var(--bg); border-radius: 999px; cursor: pointer; color: var(--text);
+}
+.pick-actions button:hover, .pick-only:hover { border-color: var(--accent); }
+.pick-filter { width: 100%; font: inherit; font-size: .9rem; padding: .3rem .55rem; border: 1px solid var(--line); border-radius: 6px; margin-bottom: .4rem; }
+.pick-list { list-style: none; margin: 0; padding: 0; max-height: 300px; overflow-y: auto; }
+.pick-list li { display: flex; align-items: center; gap: .4rem; padding: .15rem 0; }
+.pick-list label { flex: 1; display: flex; gap: .4rem; align-items: baseline; cursor: pointer; font-size: .92rem; min-width: 0; }
+.pick-list label .muted { font-size: .78rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pick-list input { flex: none; accent-color: var(--accent); }
+.pick-only { visibility: hidden; font-size: .72rem; padding: 0 .45rem; }
+.pick-list li:hover .pick-only, .pick-only:focus { visibility: visible; }
+@media (hover: none) { .pick-only { visibility: visible; } }
+.legend-key { flex-basis: 100%; }
+@media (max-width: 640px) {
+  /* panels span the picker row instead of hanging off their button past the screen edge */
+  .pickers { position: relative; }
+  .pick { position: static; }
+  .pick-panel { left: 0; right: 0; width: auto; }
+}

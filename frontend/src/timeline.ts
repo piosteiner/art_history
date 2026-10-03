@@ -8,11 +8,14 @@ export interface TimelineRow {
   href: string;
   from: DateRange | null;
   to: DateRange | null; // same object as `from` for single ranges (a movement's period)
+  color?: string; // matches the entity's colour on the map when it was picked individually
 }
 
 export interface TimelineOptions {
   /** Called with whole years (inclusive) when a window is selected, or null when it is cleared. */
   onWindow?: (window: { from: number; to: number } | null) => void;
+  /** Window to start with (e.g. from the URL); not reported through onWindow. */
+  initialWindow?: { from: number; to: number } | null;
 }
 
 const NOW = new Date().getFullYear();
@@ -46,8 +49,9 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     .sort((a, b) => a.group.localeCompare(b.group) || a.start - b.start);
 
   if (!spans.length) {
-    container.innerHTML = '<p class="muted">No dated entries yet.</p>';
-    return;
+    container.classList.remove('timeline');
+    container.innerHTML = '<p class="muted">Nothing selected for the timeline.</p>';
+    return { setWindow: () => {}, destroy: () => {} };
   }
 
   const min = Math.floor(Math.min(...spans.map((s) => s.start)) / 10) * 10;
@@ -79,7 +83,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
   const status = container.querySelector<HTMLElement>('.timeline-window')!;
   const clear = container.querySelector<HTMLButtonElement>('.timeline-clear')!;
 
-  let windowSel: { from: number; to: number } | null = null;
+  let windowSel: { from: number; to: number } | null = opts.initialWindow ?? null;
 
   function draw() {
     const width = Math.max(container.clientWidth, 480);
@@ -106,7 +110,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
       const w = Math.max(x(s.end) - x1, 3);
       return `${heading}
         <a href="${escape(s.href)}"><text class="row-label" x="${LABEL_W - 8}" y="${s.y + 14}">${escape(s.label)}</text></a>
-        <rect class="bar bar-${escape(s.group.toLowerCase())}${s.open ? ' bar-open' : ''}" data-i="${i}"
+        <rect class="bar bar-${escape(s.group.toLowerCase())}${s.open ? ' bar-open' : ''}" data-i="${i}"${s.color ? ` style="fill:${escape(s.color)};opacity:.9"` : ''}
           x="${x1}" y="${s.y + 3}" width="${w}" height="${ROW - 8}" rx="3">
           <title>${escape(s.label)}: ${escape(s.from === s.to || !s.to ? s.from?.label ?? '' : `${s.from?.label ?? '?'} – ${s.to.label}`)}</title>
         </rect>`;
@@ -152,7 +156,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
   }
 
   clear.onclick = () => setWindow(null, true);
-  draw();
+  setWindow(windowSel, false);
   const ro = new ResizeObserver(() => draw());
   ro.observe(container);
   return {
