@@ -2,15 +2,15 @@ import { listEntities } from '../api';
 import { countryName, countryText, dateLabel, href, html, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { ItemByPlural, Plural } from '../types';
 import { guard, showError } from './common';
-import { entries, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
+import { entries, explain, highlight, matches, queryWords, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
 
 type AnyItem = ItemByPlural[Plural];
 
-/** One row of a list: name, a date line, a detail line and an optional thumbnail. */
-function card(plural: Plural, item: AnyItem): Html {
+/** What a card shows: name, a date line, a detail line and an optional thumbnail. */
+function cardParts(plural: Plural, item: AnyItem) {
   let name = '';
   let date = '';
-  let detail: Html | string = '';
+  let detail = '';
   let image: string | null = null;
   switch (plural) {
     case 'artists': {
@@ -51,13 +51,23 @@ function card(plural: Plural, item: AnyItem): Html {
       break;
     }
   }
+  return { name, date, detail, image };
+}
+
+/**
+ * One card. While searching, the matched words are highlighted and `why` names the hidden field that matched
+ * ("Born in: Zundert").
+ */
+function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null): Html {
+  const { name, date, detail, image } = cardParts(plural, item);
   return html`<li class="card">
     <a class="card-link" href="${href(plural, item.slug)}">
       ${image ? html`<img class="card-img" src="${thumb(image, 250)}" alt="" loading="lazy">` : html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
       <span class="card-text">
-        <span class="card-name">${name}</span>
-        ${date ? html`<span class="card-date">${date}</span>` : ''}
-        ${detail ? html`<span class="card-detail">${detail}</span>` : ''}
+        <span class="card-name">${highlight(name, words)}</span>
+        ${date ? html`<span class="card-date">${highlight(date, words)}</span>` : ''}
+        ${detail ? html`<span class="card-detail">${highlight(detail, words)}</span>` : ''}
+        ${why ? html`<span class="card-why">${why}</span>` : ''}
       </span>
     </a>
   </li>`;
@@ -81,40 +91,63 @@ export function list(main: HTMLElement, plural: Plural) {
   const current = guard();
 
   let sort = '';
-  let shown: Entry<AnyItem>[] = [];
+  let all: Entry<AnyItem>[] = [];
+  let similar: Entry<AnyItem>[] = []; // typo-tolerant name matches from the API that the field search missed
+  let query = '';
 
   function draw() {
+    const words = queryWords(query);
+    const hits = query ? all.filter((e) => matches(e, query)) : all;
     let last = '';
-    render(items, shown.length
-      ? html`${sortEntries(shown, sort).map((e) => {
-          const h = e.sorts[sort]?.heading ?? '';
-          const head = h !== last ? html`<li class="cards-heading">${h}</li>` : '';
-          last = h;
-          return html`${head}${card(plural, e.item)}`;
-        })}`
-      : html`<li class="muted">Nothing found.</li>`);
+    const row = (e: Entry<AnyItem>) => {
+      const p = cardParts(plural, e.item);
+      return card(plural, e.item, words, query ? explain(e, query, `${p.date} ${p.detail}`).why : null);
+    };
+    render(items, html`
+      ${sortEntries(hits, sort).map((e) => {
+        const h = e.sorts[sort]?.heading ?? '';
+        const head = h !== last ? html`<li class="cards-heading">${h}</li>` : '';
+        last = h;
+        return html`${head}${row(e)}`;
+      })}
+      ${similar.length ? html`<li class="cards-heading cards-heading-similar">Similar names</li>${similar.map((e) => card(plural, e.item))}` : ''}
+      ${!hits.length && !similar.length ? html`<li class="muted">Nothing found for “${query}”.</li>` : ''}`);
+    const total = all.length;
+    count.textContent = query
+      ? `${hits.length} of ${total} match${similar.length ? `, ${similar.length} similar ${similar.length === 1 ? 'name' : 'names'}` : ''}`
+      : `${total} ${total === 1 ? 'entry' : 'entries'}`;
   }
 
+  // same search as the explore pickers: every word in name, details or hidden fields (type, birthplace …)
   let request = 0;
-  async function load(q: string) {
+  async function search(q: string) {
+    query = q;
+    similar = [];
+    draw();
+    if (q.length < 3) return;
     const mine = ++request;
     try {
-      // the API search is typo-tolerant ("hokusia"); sorting happens here
-      const res = await listEntities(plural, { q, limit: 500 });
-      if (mine !== request || !current()) return;
-      shown = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
-      if (!sort) {
-        const options = sortOptions(plural, shown);
-        sort = savedSort(plural, options);
-        render(sortSelect, html`${options.map((o) => html`<option value="${o.id}" ${o.id === sort ? html`selected` : ''}>${o.label}</option>`)}`);
-        sortLabel.hidden = options.length < 2;
-      }
-      count.textContent = `${res.total} ${res.total === 1 ? 'entry' : 'entries'}${res.total > res.data.length ? `, showing ${res.data.length}` : ''}`;
-      draw();
-    } catch (err) {
-      showError(items, err);
+      const res = await listEntities(plural, { q, limit: 20 });
+      if (mine !== request || !current() || query !== q) return;
+      const local = new Set(all.filter((e) => matches(e, q)).map((e) => e.slug));
+      similar = entries(plural, res.data as ItemByPlural[typeof plural][]).filter((e) => !local.has(e.slug)) as Entry<AnyItem>[];
+      if (similar.length) draw();
+    } catch {
+      /* the field search above still stands */
     }
   }
+
+  listEntities(plural, { limit: 500 })
+    .then((res) => {
+      if (!current()) return;
+      all = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
+      const options = sortOptions(plural, all);
+      sort = savedSort(plural, options);
+      render(sortSelect, html`${options.map((o) => html`<option value="${o.id}" ${o.id === sort ? html`selected` : ''}>${o.label}</option>`)}`);
+      sortLabel.hidden = options.length < 2;
+      search(filter.value.trim());
+    })
+    .catch((err) => showError(items, err));
 
   sortSelect.addEventListener('change', () => {
     sort = sortSelect.value;
@@ -125,8 +158,7 @@ export function list(main: HTMLElement, plural: Plural) {
   let timer: number | undefined;
   filter.addEventListener('input', () => {
     clearTimeout(timer);
-    timer = window.setTimeout(() => load(filter.value.trim()), 200);
+    timer = window.setTimeout(() => search(filter.value.trim()), 150);
   });
-  load('');
   return () => clearTimeout(timer);
 }

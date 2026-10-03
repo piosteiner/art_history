@@ -216,3 +216,16 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .cards-heading:first-child { margin-top: 0; }
 .today { color: var(--muted); }
 .today a { color: inherit; }
+
+/* why a search matched */
+mark { background: #f6dd8f; color: inherit; border-radius: 2px; padding: 0 1px; }
+.pick-text { display: flex; flex-direction: column; min-width: 0; }
+.pick-line { display: flex; flex-wrap: wrap; column-gap: .4rem; align-items: baseline; min-width: 0; }
+.pick-line .muted { font-size: .78rem; }
+.pick-link { color: var(--text); text-decoration: none; }
+.pick-link:hover { color: var(--link); text-decoration: underline; }
+.pick-why, .card-why, .hit-why { font-size: .76rem; color: var(--muted); font-style: italic; }
+.card-why { margin-top: .1rem; }
+.hit-why { display: block; }
+.hit-heading, .cards-heading-similar { color: var(--muted); }
+.hit-heading { font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; padding: .45rem .8rem .15rem; border-top: 1px solid var(--line); }

@@ -1,18 +1,27 @@
-// Search and sort for lists of entries (explore pickers and list pages share it).
-// Each entry gets a folded search text and, per sort option, a value plus a section heading.
-import { countryName, countryText, polityText, spanLabel } from './html';
-import type { Country, DateRange, ItemByPlural, Plural, PolityLink } from './types';
+// Search and sort for lists of entries (explore pickers, list pages and the header search share it).
+// Each entry has a name and a meta line that are shown, labelled fields that are searchable but not shown
+// (type, birthplace, nationality …), and per sort option a value plus a section heading.
+import { countryName, countryText, html, polityText, spanLabel, type Html } from './html';
+import type { Country, DateRange, EntityType, ItemByPlural, Plural, PolityLink } from './types';
 
 export interface SortValue {
   value: string | number | null; // null sorts last
   heading: string; // section heading in the sorted list ("G", "19th century", "Netherlands")
 }
 
+/** Searchable text that isn't on screen; shown as the reason when the search matched it ("Type: woodblock print"). */
+export interface Field {
+  label: string;
+  text: string;
+}
+
 export interface Entry<T = unknown> {
+  type: EntityType;
   slug: string;
   name: string;
   meta: string; // shown small next to the name
-  search: string; // folded text the search matches against
+  fields: Field[];
+  search: string; // folded text of name, meta and fields
   sorts: Record<string, SortValue>;
   item: T;
 }
@@ -25,10 +34,78 @@ export interface SortOption {
 /** Lowercase without accents: "Dürer" → "durer", "Shin-Ōhashi" → "shin-ohashi". */
 export const fold = (s: string) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 
+export const queryWords = (query: string) => fold(query).split(/\s+/).filter(Boolean);
+
 /** Every word of the query must appear somewhere in the entry. */
 export function matches(entry: Entry, query: string) {
-  const words = fold(query).split(/\s+/).filter(Boolean);
-  return words.every((w) => entry.search.includes(w));
+  return queryWords(query).every((w) => entry.search.includes(w));
+}
+
+// ---- why an entry matched ------------------------------------------------------------------------
+
+/** `text` with every occurrence of the (folded) words wrapped in <mark>, accent-insensitive. */
+export function highlight(text: string, words: string[]): Html {
+  if (!words.length || !text) return html`${text}`;
+  // fold character by character, remembering where each folded character came from
+  let folded = '';
+  const origin: number[] = [];
+  [...text].reduce((pos, ch) => {
+    const f = fold(ch);
+    for (let k = 0; k < f.length; k++) origin.push(pos);
+    folded += f;
+    return pos + ch.length;
+  }, 0);
+  const ranges: [number, number][] = [];
+  for (const w of words) {
+    for (let i = folded.indexOf(w); i >= 0; i = folded.indexOf(w, i + w.length)) {
+      const start = origin[i];
+      const last = origin[i + w.length - 1];
+      ranges.push([start, last + (text.codePointAt(last)! > 0xffff ? 2 : 1)]);
+    }
+  }
+  if (!ranges.length) return html`${text}`;
+  ranges.sort((a, b) => a[0] - b[0]);
+  const merged: [number, number][] = [];
+  for (const r of ranges) {
+    const prev = merged[merged.length - 1];
+    if (prev && r[0] <= prev[1]) prev[1] = Math.max(prev[1], r[1]);
+    else merged.push([...r]);
+  }
+  let pos = 0;
+  const parts: Html[] = [];
+  for (const [a, b] of merged) {
+    parts.push(html`${text.slice(pos, a)}<mark>${text.slice(a, b)}</mark>`);
+    pos = b;
+  }
+  parts.push(html`${text.slice(pos)}`);
+  return html`${parts}`;
+}
+
+export interface Match {
+  name: Html;
+  meta: Html;
+  /** The hidden fields that explain the match, highlighted; empty when name or meta already show it. */
+  why: Html | null;
+  /** For ranking across types: 3 = the name starts with the query, 2 = name contains it, 1 = elsewhere. */
+  score: number;
+}
+
+/** `shown`: other text already on screen for this entry (a list card shows more than name + meta). */
+export function explain(entry: Entry, query: string, shown = ''): Match {
+  const words = queryWords(query);
+  const visible = fold(`${entry.name} ${entry.meta} ${shown}`);
+  const hidden = words.filter((w) => !visible.includes(w));
+  const reasons = entry.fields.filter((f) => hidden.some((w) => fold(f.text).includes(w)));
+  const name = fold(entry.name);
+  const q = words.join(' ');
+  return {
+    name: highlight(entry.name, words),
+    meta: highlight(entry.meta, words),
+    why: reasons.length
+      ? html`${reasons.map((f, i) => html`${i ? ' · ' : ''}${f.label}: ${highlight(f.text, words)}`)}`
+      : null,
+    score: name.startsWith(q) ? 3 : words.every((w) => name.includes(w)) ? 2 : 1,
+  };
 }
 
 // ---- headings ------------------------------------------------------------------------------------
@@ -50,7 +127,6 @@ export function century(year: number | null | undefined) {
   return year > 0 ? `${ordinal(Math.floor((year - 1) / 100) + 1)} century` : `${ordinal(Math.floor(-year / 100) + 1)} century BCE`;
 }
 
-
 /** Titles sort without a leading article: "The Starry Night" under S. */
 const titleKey = (t: string) => t.replace(/^(the|a|an)\s+/i, '');
 
@@ -66,11 +142,16 @@ const byText = (v: string | null | undefined, unknown: string): SortValue =>
 
 // ---- per type --------------------------------------------------------------------------------
 
-type Builder<P extends Plural> = (item: ItemByPlural[P]) => Omit<Entry<ItemByPlural[P]>, 'item' | 'search'> & { extra?: string[] };
+/** Fields without text are dropped, so builders can list them unconditionally. */
+const fields = (...list: [string, string | null | undefined | false][]): Field[] =>
+  list.filter(([, t]) => t).map(([label, text]) => ({ label, text: text as string }));
+
+type Built<T> = Omit<Entry<T>, 'item' | 'search' | 'type'>;
 
 interface TypeCatalog<P extends Plural> {
+  type: EntityType;
   sorts: SortOption[];
-  build: Builder<P>;
+  build: (item: ItemByPlural[P]) => Built<ItemByPlural[P]>;
 }
 
 // Today's country (from the entry's place) and the polities it is linked to, for search and sort.
@@ -80,12 +161,13 @@ const located = (e: { country: Country | null; polities: PolityLink[] }, rel: Po
     // the earliest link decides the sort position (polities come in time order)
     polity: links.length ? { value: fold(links[0].name), heading: links[0].name } : { value: null, heading: 'Not recorded' },
     country: byText(countryText(e.country), 'Country unknown'),
-    words: [countryText(e.country) ?? '', ...links.map((p) => polityText(p, e.country))],
+    polities: links.map((p) => polityText(p, e.country)).join(', '),
   };
 };
 
 const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
   artists: {
+    type: 'artist',
     sorts: [
       { id: 'name', label: 'Name (surname) A–Z' },
       { id: 'born', label: 'Birth year' },
@@ -97,12 +179,17 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(a, 'nationality');
       return {
         slug: a.slug, name: a.name, meta: spanLabel(a.birth, a.death).replace(' – ', '–'),
-        extra: [a.sort_name ?? '', a.birth_place?.name ?? '', ...l.words],
+        fields: fields(
+          ['Filed as', a.sort_name !== a.name && a.sort_name],
+          ['Born in', [a.birth_place?.name, countryText(a.country)].filter(Boolean).join(', ')],
+          ['Nationality', l.polities],
+        ),
         sorts: { name: byName(a.sort_name ?? a.name), born: byYear(a.birth), died: byYear(a.death, 'to'), country: l.country, nationality: l.polity },
       };
     },
   },
   artworks: {
+    type: 'artwork',
     sorts: [
       { id: 'title', label: 'Title A–Z' },
       { id: 'date', label: 'Date' },
@@ -115,7 +202,11 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(a, 'created_in_polity');
       return {
         slug: a.slug, name: a.title, meta: [a.creator?.name, a.created?.label].filter(Boolean).join(', '),
-        extra: [a.kind ?? '', ...l.words],
+        fields: fields(
+          ['Type', a.kind],
+          ['Made in', [a.country?.place?.name, countryText(a.country)].filter(Boolean).join(', ')],
+          ['State', l.polities],
+        ),
         sorts: {
           title: byName(titleKey(a.title)), date: byYear(a.created), artist: byText(a.creator?.name, 'Artist unknown'),
           kind: byText(a.kind, 'Other'), country: l.country, polity: l.polity,
@@ -124,17 +215,19 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     },
   },
   movements: {
+    type: 'movement',
     sorts: [
       { id: 'name', label: 'Name A–Z' },
       { id: 'start', label: 'Start year' },
       { id: 'kind', label: 'Kind' },
     ],
     build: (m) => ({
-      slug: m.slug, name: m.name, meta: m.period?.label ?? '', extra: [m.kind ?? ''],
+      slug: m.slug, name: m.name, meta: m.period?.label ?? '', fields: fields(['Kind', m.kind]),
       sorts: { name: byName(m.name), start: byYear(m.period), kind: byText(m.kind, 'Other') },
     }),
   },
   patrons: {
+    type: 'patron',
     sorts: [
       { id: 'name', label: 'Name A–Z' },
       { id: 'start', label: 'Active from' },
@@ -145,23 +238,30 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     build: (p) => {
       const l = located(p, 'nationality');
       return {
-        slug: p.slug, name: p.name, meta: p.active?.label ?? '', extra: [p.kind ?? '', p.birth_place?.name ?? '', ...l.words],
+        slug: p.slug, name: p.name, meta: p.active?.label ?? '',
+        fields: fields(
+          ['Kind', p.kind],
+          ['Born in', [p.birth_place?.name, countryText(p.country)].filter(Boolean).join(', ')],
+          ['Nationality', l.polities],
+        ),
         sorts: { name: byName(p.name), start: byYear(p.active), kind: byText(p.kind, 'Other'), country: l.country, nationality: l.polity },
       };
     },
   },
   places: {
+    type: 'place',
     sorts: [
       { id: 'name', label: 'Name A–Z' },
       { id: 'country', label: 'Country' },
       { id: 'kind', label: 'Kind' },
     ],
     build: (p) => ({
-      slug: p.slug, name: p.name, meta: [p.kind, countryName(p.country_code)].filter(Boolean).join(' · '),
+      slug: p.slug, name: p.name, meta: [p.kind, countryName(p.country_code)].filter(Boolean).join(' · '), fields: [],
       sorts: { name: byName(p.name), country: byText(countryName(p.country_code), 'Country unknown'), kind: byText(p.kind, 'Other') },
     }),
   },
   institutions: {
+    type: 'institution',
     sorts: [
       { id: 'name', label: 'Name A–Z' },
       { id: 'founded', label: 'Founding year' },
@@ -172,33 +272,34 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(i, 'located_in_polity');
       return {
         slug: i.slug, name: i.name, meta: [i.kind, i.founded ? `founded ${i.founded.label}` : ''].filter(Boolean).join(' · '),
-        extra: l.words,
+        fields: fields(
+          ['Location', [i.country?.place?.name, countryText(i.country)].filter(Boolean).join(', ')],
+          ['Historically in', l.polities],
+        ),
         sorts: { name: byName(i.name), founded: byYear(i.founded), kind: byText(i.kind, 'Other'), country: l.country },
       };
     },
   },
   polities: {
+    type: 'polity',
     sorts: [
       { id: 'name', label: 'Name A–Z' },
       { id: 'start', label: 'Start year' },
       { id: 'kind', label: 'Kind' },
     ],
-    build: (p) => {
-      const today = p.country_codes.map((c) => countryName(c) ?? c);
-      return {
-        slug: p.slug, name: p.name, meta: [p.period?.label, p.kind].filter(Boolean).join(' · '),
-        extra: today,
-        sorts: { name: byName(p.name), start: byYear(p.period), kind: byText(p.kind, 'Other') },
-      };
-    },
+    build: (p) => ({
+      slug: p.slug, name: p.name, meta: [p.period?.label, p.kind].filter(Boolean).join(' · '),
+      fields: fields(['Territory today', p.country_codes.map((c) => countryName(c) ?? c).join(', ')]),
+      sorts: { name: byName(p.name), start: byYear(p.period), kind: byText(p.kind, 'Other') },
+    }),
   },
 };
 
 export function entries<P extends Plural>(plural: P, items: ItemByPlural[P][]): Entry<ItemByPlural[P]>[] {
   const cat = CATALOG[plural] as unknown as TypeCatalog<P>;
   return items.map((item) => {
-    const { extra = [], ...e } = cat.build(item);
-    return { ...e, item, search: fold([e.name, e.meta, ...extra].join(' ')) };
+    const e = cat.build(item);
+    return { ...e, type: cat.type, item, search: fold([e.name, e.meta, ...e.fields.map((f) => f.text)].join(' ')) };
   });
 }
 

@@ -21,7 +21,7 @@ map uses OpenFreeMap (free, no key).
 | `src/router.ts` | hash routes: `#/` explore, `#/artists` list, `#/artists/vincent-van-gogh` detail (Pages has no SPA fallback) |
 | `src/html.ts` | `html\`\`` template that escapes values; `trusted()` only for the API's sanitized `*_html` fields; image figure with credit + licence |
 | `src/map.ts` | MapLibre setup; one entity's presence stops + route + associations, all places, presence in a time window |
-| `src/catalog.ts` | search (accent-insensitive, every word must match name or details) and sort options with section headings per type; the chosen sort is remembered per type, shared by pickers and list pages |
+| `src/catalog.ts` | one search for pickers, list pages and the header: accent-insensitive, every word must match the name, the details or a hidden field (type, birthplace, nationality, made in …); matches are highlighted and a hidden field that matched is named ("Type: **wood**block print"). List pages and the header add the API's typo-tolerant name matches as "Similar names". Also the sort options with section headings per type (remembered per type) |
 | `src/selection.ts`, `src/picker.ts` | explore page: per type all / none / chosen entries ("Show" dropdowns); stored in the URL (`#/?artists=a,b&movements=none&from=1888&to=1889`) and remembered in localStorage |
 | `src/timeline.ts` | SVG timeline of lifespans/periods; drag to pick a window, click a bar to use its span |
 | `src/views/` | explore (map + timeline), list, detail (all six types) |

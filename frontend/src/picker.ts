@@ -1,7 +1,7 @@
 // One dropdown per type ("Artists · 2 of 14"): search, sort with section headings, All / None,
 // add or remove everything a search shows, "chosen first", and a checklist of entries.
-import { matches, saveSort, savedSort, sortEntries, sortOptions, type Entry, type SortOption } from './catalog';
-import { html, render } from './html';
+import { explain, matches, saveSort, savedSort, sortEntries, sortOptions, type Entry, type SortOption } from './catalog';
+import { href, html, render } from './html';
 import { ALL, GROUPS, type Group, type Pick, type Selection } from './selection';
 import type { Plural } from './types';
 
@@ -84,10 +84,19 @@ export function mountPickers(
     const total = byGroup.get(g)!.entries.length;
     const { chosenPart, rest } = visible(g);
     const shown = chosenPart.length + rest.length;
-    const item = (e: Entry) => html`<li class="pick-item">
-      <label><input type="checkbox" value="${e.slug}"> <span>${e.name}</span>${e.meta ? html` <span class="muted">${e.meta}</span>` : ''}</label>
-      <button type="button" class="pick-only" data-only="${e.slug}" title="Show only ${e.name}">only</button>
-    </li>`;
+    // the name is a real link: a click ticks the box, Ctrl/Cmd/middle click or "open in new tab" opens the entry
+    const item = (e: Entry) => {
+      const m = v.query ? explain(e, v.query) : null;
+      return html`<li class="pick-item">
+        <label><input type="checkbox" value="${e.slug}">
+          <span class="pick-text">
+            <span class="pick-line"><a class="pick-link" href="${href(e.type, e.slug)}">${m ? m.name : e.name}</a>${e.meta ? html` <span class="muted">${m ? m.meta : e.meta}</span>` : ''}</span>
+            ${m?.why ? html`<span class="pick-why">${m.why}</span>` : ''}
+          </span>
+        </label>
+        <button type="button" class="pick-only" data-only="${e.slug}" title="Show only ${e.name}">only</button>
+      </li>`;
+    };
     let last = '';
     const withHeadings = rest.map((e) => {
       const h = e.sorts[v.sort]?.heading ?? '';
@@ -165,6 +174,14 @@ export function mountPickers(
   });
 
   root.addEventListener('click', (e) => {
+    const a = (e.target as Element).closest<HTMLAnchorElement>('a.pick-link');
+    if (a) {
+      if (e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return; // the browser opens it in a new tab/window
+      e.preventDefault();
+      const cb = a.closest('li')!.querySelector<HTMLInputElement>('input[type=checkbox]')!;
+      toggle(a.closest<HTMLDetailsElement>('details.pick')!.dataset.group as Group, cb.value, !cb.checked);
+      return;
+    }
     const btn = (e.target as Element).closest<HTMLButtonElement>('button');
     if (!btn) return;
     if (btn === reset) {
