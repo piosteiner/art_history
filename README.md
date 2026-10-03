@@ -4,7 +4,7 @@ Interactive art history website: map, timelines and influence graph over a curat
 
 | Part | Where | Hosting |
 |---|---|---|
-| Frontend | *(to come)* | GitHub Pages → https://arthistory.piogino.ch |
+| Frontend | [`frontend/`](frontend/) | GitHub Pages (built by `.github/workflows/pages.yml`) → https://arthistory.piogino.ch |
 | Backend API + admin | [`backend/`](backend/) | VPS, `/var/www/arthistory/backend` → https://api.arthistory.piogino.ch, https://admin.arthistory.piogino.ch |
 | Server documentation | [`server-docs/`](server-docs/) | inventory + changelog of every server change |
 

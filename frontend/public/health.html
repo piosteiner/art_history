@@ -1,0 +1,14 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>API health check</title>
+<meta name="robots" content="noindex">
+<style>body{font:16px system-ui,sans-serif;margin:3rem auto;max-width:36rem;padding:0 1rem}#r{padding:1rem;border-radius:6px;background:#eee}</style>
+<h1>Backend round-trip check</h1>
+<p>Calls <code>https://api.arthistory.piogino.ch/v1/health</code> from this origin (cross-origin, CORS).</p>
+<div id="r">checking…</div>
+<script>
+fetch('https://api.arthistory.piogino.ch/v1/health')
+  .then(r => r.json())
+  .then(j => { r.textContent = '✅ ' + JSON.stringify(j) + ' — HTTPS + CORS OK'; r.style.background = '#d7f5dd'; })
+  .catch(e => { r.textContent = '❌ ' + e; r.style.background = '#fbd9d9'; });
+</script>

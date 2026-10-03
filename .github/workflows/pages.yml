@@ -1,0 +1,50 @@
+# Builds frontend/ and publishes it to GitHub Pages (https://arthistory.piogino.ch).
+# Requires Settings → Pages → Source: "GitHub Actions". Optional repository variable MAPTILER_KEY
+# (Settings → Secrets and variables → Actions → Variables); without it the map uses OpenFreeMap tiles.
+name: Frontend → GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ['frontend/**', '.github/workflows/pages.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run build
+        env:
+          VITE_MAPTILER_KEY: ${{ vars.MAPTILER_KEY }}
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: frontend/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

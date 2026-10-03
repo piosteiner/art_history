@@ -17,7 +17,9 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - `backend/` — Express 5 app, pm2 `arthistory-api`, `127.0.0.1:3004`; nginx → `api.arthistory.piogino.ch` (`/v1/…`) and
   `admin.arthistory.piogino.ch` (panel at the root; old `/admin/…` URLs redirect). Brief/plan: see `backend/README.md`, data model: `backend/docs/data-model.md`.
 - `server-docs/` — server inventory, changelog, config copies.
-- `health.html` — frontend CORS round-trip test page (served by GitHub Pages).
+- `frontend/` — public site (Vite + TypeScript + MapLibre), built and published to GitHub Pages by
+  `.github/workflows/pages.yml`; `fetch` only in `frontend/src/api.ts`. Not deployed by `backend/deploy.sh`; see `frontend/README.md`.
+- `health.html` — frontend CORS round-trip test page (now also in `frontend/public/`, served from there once Pages builds via Actions).
 
 ## Workflow
 - Dev: `cd backend && npm run dev` (port 3005, DB `arthistory_dev`). Never test against the live process.
