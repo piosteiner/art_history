@@ -38,6 +38,8 @@ export function createMap(container: HTMLElement): MapLibre {
     cooperativeGestures: false,
   });
   map.addControl(new NavigationControl({ showCompass: false }), 'top-right');
+  // development only: lets browser tests find places on screen (map.project); not in the production build
+  if (import.meta.env.DEV) ((window as unknown as { __maps?: MapLibre[] }).__maps ??= []).push(map);
   return map;
 }
 
@@ -66,11 +68,15 @@ function removeLayers(map: MapLibre, ids: string[]) {
 
 /** Click popups listing every feature under the pointer (several links can share one place). */
 function popupOnClick(map: MapLibre, layers: string[], content: (features: MapLayerMouseEvent['features']) => Html) {
+  // one handler for the whole group: a click on overlapping layers opens one popup, not one per layer
+  map.on('click', (e) => {
+    const present = layers.filter((l) => map.getLayer(l));
+    if (!present.length) return;
+    const features = map.queryRenderedFeatures(e.point, { layers: present });
+    if (!features.length) return;
+    new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(content(features).value).addTo(map);
+  });
   for (const layer of layers) {
-    map.on('click', layer, (e) => {
-      const features = map.queryRenderedFeatures(e.point, { layers });
-      new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(content(features).value).addTo(map);
-    });
     map.on('mouseenter', layer, () => (map.getCanvas().style.cursor = 'pointer'));
     map.on('mouseleave', layer, () => (map.getCanvas().style.cursor = ''));
   }
@@ -209,7 +215,7 @@ export function showPoint(map: MapLibre, coords: [number, number], name: string)
 // ---- every place ---------------------------------------------------------------------------------
 
 // The explore map shows one of three overlays at a time; switching removes the others' layers.
-const PLACE_LAYERS = ['places-circles'];
+const PLACE_LAYERS = ['places-areas', 'places-circles'];
 const SELECTION_LAYERS = ['sel-route', 'sel-arrows', 'sel-association', 'sel-presence'];
 const OVERLAY_LAYERS = [...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
 const clearOverlays = (map: MapLibre) => removeLayers(map, OVERLAY_LAYERS);
@@ -219,12 +225,23 @@ export function showPlaces(map: MapLibre, fc: PlacesMap) {
     clearOverlays(map);
     setData(map, 'places', fc as unknown as GeoJSON.FeatureCollection);
     const total: ExpressionSpecification = ['+', ['get', 'presence_count'], ['get', 'association_count']];
+    const color: ExpressionSpecification = ['case', ['>', ['get', 'presence_count'], 0], COLORS.place, ['>', ['get', 'association_count'], 0], COLORS.association, COLORS.empty];
+    const radius: ExpressionSpecification = ['interpolate', ['linear'], total, 0, 4, 10, 14];
+    const isArea: ExpressionSpecification = ['in', ['get', 'kind'], ['literal', ['country', 'region', 'empire', 'continent']]];
+    // countries and regions are rings underneath, so a city inside them (Edo in Japan) stays visible and clickable
     map.addLayer({
-      id: 'places-circles', type: 'circle', source: 'places',
+      id: 'places-areas', type: 'circle', source: 'places', filter: isArea,
       paint: {
-        'circle-radius': ['interpolate', ['linear'], total, 0, 4, 10, 14],
-        'circle-color': ['case', ['>', ['get', 'presence_count'], 0], COLORS.place, ['>', ['get', 'association_count'], 0], COLORS.association, COLORS.empty],
-        'circle-opacity': 0.8,
+        'circle-radius': ['interpolate', ['linear'], total, 0, 11, 10, 24], 'circle-color': 'rgba(0,0,0,0)',
+        'circle-stroke-color': color, 'circle-stroke-width': 2.5, 'circle-stroke-opacity': 0.85,
+      },
+    });
+    map.addLayer({
+      id: 'places-circles', type: 'circle', source: 'places', filter: ['!', isArea],
+      // smaller circles drawn last (on top), so a big one never hides a small neighbour
+      layout: { 'circle-sort-key': ['-', 0, total] },
+      paint: {
+        'circle-radius': radius, 'circle-color': color, 'circle-opacity': 0.85,
         'circle-stroke-color': '#fff', 'circle-stroke-width': 1,
       },
     });
@@ -233,11 +250,18 @@ export function showPlaces(map: MapLibre, fc: PlacesMap) {
 }
 
 function bindPlacesPopups(map: MapLibre) {
-  popupOnClick(map, PLACE_LAYERS, (features) => html`${(features ?? []).slice(0, 1).map((f) => {
-    const p = f.properties;
-    return html`<div class="popup-row"><strong><a href="${href('place', p.slug)}">${p.name}</a></strong><br>
-      ${p.presence_count} presence · ${p.association_count} association</div>`;
-  })}`);
+  // everything at the clicked spot (a city and its country), places before countries, each once
+  popupOnClick(map, PLACE_LAYERS, (features) => {
+    const seen = new Set<string>();
+    const rows = (features ?? [])
+      .filter((f) => !seen.has(f.properties.slug) && seen.add(f.properties.slug))
+      .sort((a, b) => Number(a.layer.id === 'places-areas') - Number(b.layer.id === 'places-areas'));
+    return html`${rows.map((f) => {
+      const p = f.properties;
+      return html`<div class="popup-row"><strong><a href="${href('place', p.slug)}">${p.name}</a></strong>${p.kind ? html` <span class="muted">${p.kind}</span>` : ''}<br>
+        ${p.presence_count} presence · ${p.association_count} association</div>`;
+    })}`;
+  });
 }
 
 // ---- presence in a time window ----------------------------------------------------------------

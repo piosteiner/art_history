@@ -115,7 +115,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     showPlaces(map, fc);
     render(legend, html`<span><i class="dot" style="background:${COLORS.place}"></i>someone or something was there</span>
       <span><i class="dot" style="background:${COLORS.association}"></i>associations only (e.g. influence)</span>
-      <span><i class="dot" style="background:${COLORS.empty}"></i>no links yet</span>`);
+      <span><i class="dot" style="background:${COLORS.empty}"></i>no links yet</span>
+      <span><i class="ring" style="border-color:${COLORS.place}"></i>ring = country or region</span>`);
     status.textContent = isDefault(sel)
       ? `${fc.features.length} places. Size = number of links. Pick entries above to see their routes.`
       : `${fc.features.length} places, counting all entries. Pick single entries above to see their routes, or a time window to filter.`;
