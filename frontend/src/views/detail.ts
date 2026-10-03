@@ -1,5 +1,6 @@
 // Detail page for all six entity types: facts, images with credits, long text, relationships by category, map.
-import { getEntity, getEntityMap } from '../api';
+import { getEntity, getEntityMap, PLURAL } from '../api';
+import { GROUPS, type Group } from '../selection';
 import {
   countryLink, countryName, dateLabel, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
   wireImageFallbacks, type Html,
@@ -169,6 +170,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         <p class="crumbs"><a href="#/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
         <h1>${v.title}</h1>
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
+        ${GROUPS.includes(e.type as Group) ? html`<p class="detail-actions"><a class="button-link" href="#/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a></p>` : ''}
         <div class="detail-grid">
           <div class="detail-main">
             ${v.images.length ? html`<div class="gallery">${v.images.map((img) => figure(img, v.title))}</div>` : ''}

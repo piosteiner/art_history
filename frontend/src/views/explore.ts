@@ -166,6 +166,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   // ---- timeline + pickers (need the entry lists) ---------------------------------------------------
 
   let timeline: ReturnType<typeof renderTimeline> | undefined;
+  let timelineView: { from: number; to: number } | null = null; // zoom survives redraws when the picks change
   let lists: Awaited<ReturnType<typeof loadLists>> | undefined;
 
   function loadLists() {
@@ -189,6 +190,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     ];
     timeline = renderTimeline(timelineEl, rows, {
       initialWindow: win,
+      initialView: timelineView,
+      onView: (v) => (timelineView = v),
       onWindow: (w) => {
         win = w;
         persist();
