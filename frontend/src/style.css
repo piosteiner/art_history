@@ -90,6 +90,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .bar:hover { opacity: 1; }
 .bar-movements { fill: var(--place); opacity: .55; }
 .bar-patrons { fill: var(--association); opacity: .7; }
+.bar-polities { fill: #8a7a5c; opacity: .45; }
 .bar-open { opacity: .4; }
 .window { fill: var(--accent); opacity: .1; stroke: var(--accent); stroke-opacity: .5; }
 
@@ -213,3 +214,5 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
   font: 600 1.05rem var(--serif); color: var(--text);
 }
 .cards-heading:first-child { margin-top: 0; }
+.today { color: var(--muted); }
+.today a { color: inherit; }

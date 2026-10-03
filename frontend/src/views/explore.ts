@@ -171,8 +171,10 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   function loadLists() {
     return Promise.all([
       listEntities('artists', LIST), listEntities('artworks', LIST),
-      listEntities('movements', LIST), listEntities('patrons', LIST),
-    ]).then(([artists, artworks, movements, patrons]) => ({ artists: artists.data, artworks: artworks.data, movements: movements.data, patrons: patrons.data }));
+      listEntities('movements', LIST), listEntities('polities', LIST), listEntities('patrons', LIST),
+    ]).then(([artists, artworks, movements, polities, patrons]) => ({
+      artists: artists.data, artworks: artworks.data, movements: movements.data, polities: polities.data, patrons: patrons.data,
+    }));
   }
 
   function drawTimeline() {
@@ -180,6 +182,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     timeline?.destroy();
     const keep = <T extends { slug: string }>(type: EntityType, items: T[]) => items.filter((i) => includes(sel, type, i.slug));
     const rows: TimelineRow[] = [
+      ...keep('polity', lists.polities).map((p) => ({ group: 'Polities', label: p.name, href: href('polity', p.slug), from: p.period, to: p.period, color: colorOf.get('polity', p.slug) })),
       ...keep('movement', lists.movements).map((m) => ({ group: 'Movements', label: m.name, href: href('movement', m.slug), from: m.period, to: m.period, color: colorOf.get('movement', m.slug) })),
       ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), from: a.birth, to: a.death, color: colorOf.get('artist', a.slug) })),
       ...keep('patron', lists.patrons).map((p) => ({ group: 'Patrons', label: p.name, href: href('patron', p.slug), from: p.active, to: p.active, color: colorOf.get('patron', p.slug) })),
@@ -203,6 +206,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
         { group: 'artist', plural: 'artists', label: 'Artists', entries: entries('artists', l.artists) },
         { group: 'artwork', plural: 'artworks', label: 'Artworks', entries: entries('artworks', l.artworks) },
         { group: 'movement', plural: 'movements', label: 'Movements', entries: entries('movements', l.movements) },
+        { group: 'polity', plural: 'polities', label: 'Polities', entries: entries('polities', l.polities) },
         { group: 'patron', plural: 'patrons', label: 'Patrons', entries: entries('patrons', l.patrons) },
       ];
       pickers = mountPickers(pickersEl, groups, sel, (next) => {

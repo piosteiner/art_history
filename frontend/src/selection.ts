@@ -3,13 +3,15 @@
 import { PLURAL } from './api';
 import type { EntityType } from './types';
 
-export type Group = Extract<EntityType, 'artist' | 'artwork' | 'movement' | 'patron'>;
-export const GROUPS: Group[] = ['artist', 'artwork', 'movement', 'patron'];
+export type Group = Extract<EntityType, 'artist' | 'artwork' | 'movement' | 'polity' | 'patron'>;
+export const GROUPS: Group[] = ['artist', 'artwork', 'movement', 'polity', 'patron'];
 
 export type Pick = { mode: 'all' } | { mode: 'none' } | { mode: 'some'; slugs: string[] };
 export type Selection = Record<Group, Pick>;
 
-export const ALL: Selection = { artist: { mode: 'all' }, artwork: { mode: 'all' }, movement: { mode: 'all' }, patron: { mode: 'all' } };
+export const ALL: Selection = {
+  artist: { mode: 'all' }, artwork: { mode: 'all' }, movement: { mode: 'all' }, polity: { mode: 'all' }, patron: { mode: 'all' },
+};
 
 const isGroup = (t: string): t is Group => (GROUPS as string[]).includes(t);
 

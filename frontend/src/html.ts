@@ -1,6 +1,6 @@
 // Tiny HTML templating: interpolated values are escaped unless they are already Html (from html`` or trusted()).
 import { PLURAL } from './api';
-import type { DateRange, EntityType, Image, Plural } from './types';
+import type { Country, DateRange, EntityType, Image, Plural, PolityLink } from './types';
 
 export class Html {
   constructor(readonly value: string) {}
@@ -82,10 +82,50 @@ export function wireImageFallbacks(root: Element) {
 
 export const TYPE_LABEL: Record<EntityType, string> = {
   artist: 'Artist', artwork: 'Artwork', place: 'Place',
-  movement: 'Movement', institution: 'Institution', patron: 'Patron',
+  movement: 'Movement', institution: 'Institution', patron: 'Patron', polity: 'Polity',
 };
 
 export const PLURAL_LABEL: Record<Plural, string> = {
   artists: 'Artists', artworks: 'Artworks', places: 'Places',
-  movements: 'Movements', institutions: 'Institutions', patrons: 'Patrons',
+  movements: 'Movements', institutions: 'Institutions', patrons: 'Patrons', polities: 'Polities',
+};
+
+// ---- countries and polities ----------------------------------------------------------------------
+
+const regionNames = (() => {
+  try {
+    return new Intl.DisplayNames(['en'], { type: 'region' });
+  } catch {
+    return null;
+  }
+})();
+/** "JP" → "Japan" (the browser's English region names). */
+export const countryName = (code: string | null | undefined) => (code ? regionNames?.of(code.toUpperCase()) ?? code : null);
+
+/** Today's country as text: the name of its place entry, else the region name for the code. */
+export const countryText = (c: Country | null | undefined) => (c ? c.name ?? countryName(c.code) : null);
+
+/** Today's country, linked to its place entry when there is one. */
+export const countryLink = (c: Country | null | undefined) =>
+  c ? (c.slug ? link('place', c.slug, countryText(c)!) : html`${countryText(c)}`) : null;
+
+/**
+ * A polity together with today's country, as the API docs ask: "Soviet Union (today Ukraine)".
+ * The "today" part is left out when the polity's name already says it ("Kingdom of the Netherlands").
+ */
+const fold = (s: string) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+const todayPart = (p: PolityLink, today: Country | null | undefined) => {
+  const now = countryText(today);
+  return now && !fold(p.name).includes(fold(now)) ? now : null;
+};
+
+export function polityWithToday(p: PolityLink, today: Country | null | undefined, withPeriod = true) {
+  const now = todayPart(p, today);
+  return html`${link('polity', p.slug, p.name)}${withPeriod && p.period ? html` <span class="muted">${p.period.label}</span>` : ''}${now ? html` <span class="today">(today ${countryLink(today)})</span>` : ''}`;
+}
+
+/** Plain-text version for search and sort headings. */
+export const polityText = (p: PolityLink, today: Country | null | undefined) => {
+  const now = todayPart(p, today);
+  return now ? `${p.name} (today ${now})` : p.name;
 };

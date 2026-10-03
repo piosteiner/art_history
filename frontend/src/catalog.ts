@@ -1,7 +1,7 @@
 // Search and sort for lists of entries (explore pickers and list pages share it).
 // Each entry gets a folded search text and, per sort option, a value plus a section heading.
-import { spanLabel } from './html';
-import type { DateRange, ItemByPlural, Plural } from './types';
+import { countryName, countryText, polityText, spanLabel } from './html';
+import type { Country, DateRange, ItemByPlural, Plural, PolityLink } from './types';
 
 export interface SortValue {
   value: string | number | null; // null sorts last
@@ -50,14 +50,6 @@ export function century(year: number | null | undefined) {
   return year > 0 ? `${ordinal(Math.floor((year - 1) / 100) + 1)} century` : `${ordinal(Math.floor(-year / 100) + 1)} century BCE`;
 }
 
-const regionNames = (() => {
-  try {
-    return new Intl.DisplayNames(['en'], { type: 'region' });
-  } catch {
-    return null;
-  }
-})();
-export const countryName = (code: string | null | undefined) => (code ? regionNames?.of(code.toUpperCase()) ?? code : null);
 
 /** Titles sort without a leading article: "The Starry Night" under S. */
 const titleKey = (t: string) => t.replace(/^(the|a|an)\s+/i, '');
@@ -81,24 +73,34 @@ interface TypeCatalog<P extends Plural> {
   build: Builder<P>;
 }
 
+// Today's country (from the entry's place) and the polities it is linked to, for search and sort.
+const located = (e: { country: Country | null; polities: PolityLink[] }, rel: PolityLink['relationship']) => {
+  const links = e.polities.filter((p) => p.relationship === rel);
+  return {
+    // the earliest link decides the sort position (polities come in time order)
+    polity: links.length ? { value: fold(links[0].name), heading: links[0].name } : { value: null, heading: 'Not recorded' },
+    country: byText(countryText(e.country), 'Country unknown'),
+    words: [countryText(e.country) ?? '', ...links.map((p) => polityText(p, e.country))],
+  };
+};
+
 const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
   artists: {
     sorts: [
       { id: 'name', label: 'Name (surname) A–Z' },
       { id: 'born', label: 'Birth year' },
       { id: 'died', label: 'Death year' },
-      { id: 'country', label: 'Country of birth' }, // offered only once the API delivers birth places
+      { id: 'country', label: 'Country of birth (today)' },
+      { id: 'nationality', label: 'Nationality' },
     ],
-    build: (a) => ({
-      slug: a.slug, name: a.name, meta: spanLabel(a.birth, a.death).replace(' – ', '–'),
-      extra: [a.sort_name ?? '', countryName(a.birth_place?.country_code) ?? '', a.birth_place?.name ?? ''],
-      sorts: {
-        name: byName(a.sort_name ?? a.name),
-        born: byYear(a.birth),
-        died: byYear(a.death, 'to'),
-        country: byText(countryName(a.birth_place?.country_code), 'Country unknown'),
-      },
-    }),
+    build: (a) => {
+      const l = located(a, 'nationality');
+      return {
+        slug: a.slug, name: a.name, meta: spanLabel(a.birth, a.death).replace(' – ', '–'),
+        extra: [a.sort_name ?? '', a.birth_place?.name ?? '', ...l.words],
+        sorts: { name: byName(a.sort_name ?? a.name), born: byYear(a.birth), died: byYear(a.death, 'to'), country: l.country, nationality: l.polity },
+      };
+    },
   },
   artworks: {
     sorts: [
@@ -106,17 +108,20 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       { id: 'date', label: 'Date' },
       { id: 'artist', label: 'Artist' },
       { id: 'kind', label: 'Type' },
+      { id: 'country', label: 'Country of origin (today)' },
+      { id: 'polity', label: 'Made in (state, dynasty…)' },
     ],
-    build: (a) => ({
-      slug: a.slug, name: a.title, meta: [a.creator?.name, a.created?.label].filter(Boolean).join(', '),
-      extra: [a.kind ?? ''],
-      sorts: {
-        title: byName(titleKey(a.title)),
-        date: byYear(a.created),
-        artist: byText(a.creator?.name, 'Artist unknown'),
-        kind: byText(a.kind, 'Other'),
-      },
-    }),
+    build: (a) => {
+      const l = located(a, 'created_in_polity');
+      return {
+        slug: a.slug, name: a.title, meta: [a.creator?.name, a.created?.label].filter(Boolean).join(', '),
+        extra: [a.kind ?? '', ...l.words],
+        sorts: {
+          title: byName(titleKey(a.title)), date: byYear(a.created), artist: byText(a.creator?.name, 'Artist unknown'),
+          kind: byText(a.kind, 'Other'), country: l.country, polity: l.polity,
+        },
+      };
+    },
   },
   movements: {
     sorts: [
@@ -134,11 +139,16 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       { id: 'name', label: 'Name A–Z' },
       { id: 'start', label: 'Active from' },
       { id: 'kind', label: 'Kind' },
+      { id: 'country', label: 'Country of birth (today)' },
+      { id: 'nationality', label: 'Nationality' },
     ],
-    build: (p) => ({
-      slug: p.slug, name: p.name, meta: p.active?.label ?? '', extra: [p.kind ?? ''],
-      sorts: { name: byName(p.name), start: byYear(p.active), kind: byText(p.kind, 'Other') },
-    }),
+    build: (p) => {
+      const l = located(p, 'nationality');
+      return {
+        slug: p.slug, name: p.name, meta: p.active?.label ?? '', extra: [p.kind ?? '', p.birth_place?.name ?? '', ...l.words],
+        sorts: { name: byName(p.name), start: byYear(p.active), kind: byText(p.kind, 'Other'), country: l.country, nationality: l.polity },
+      };
+    },
   },
   places: {
     sorts: [
@@ -156,11 +166,31 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       { id: 'name', label: 'Name A–Z' },
       { id: 'founded', label: 'Founding year' },
       { id: 'kind', label: 'Kind' },
+      { id: 'country', label: 'Country' },
     ],
-    build: (i) => ({
-      slug: i.slug, name: i.name, meta: [i.kind, i.founded ? `founded ${i.founded.label}` : ''].filter(Boolean).join(' · '),
-      sorts: { name: byName(i.name), founded: byYear(i.founded), kind: byText(i.kind, 'Other') },
-    }),
+    build: (i) => {
+      const l = located(i, 'located_in_polity');
+      return {
+        slug: i.slug, name: i.name, meta: [i.kind, i.founded ? `founded ${i.founded.label}` : ''].filter(Boolean).join(' · '),
+        extra: l.words,
+        sorts: { name: byName(i.name), founded: byYear(i.founded), kind: byText(i.kind, 'Other'), country: l.country },
+      };
+    },
+  },
+  polities: {
+    sorts: [
+      { id: 'name', label: 'Name A–Z' },
+      { id: 'start', label: 'Start year' },
+      { id: 'kind', label: 'Kind' },
+    ],
+    build: (p) => {
+      const today = p.country_codes.map((c) => countryName(c) ?? c);
+      return {
+        slug: p.slug, name: p.name, meta: [p.period?.label, p.kind].filter(Boolean).join(' · '),
+        extra: today,
+        sorts: { name: byName(p.name), start: byYear(p.period), kind: byText(p.kind, 'Other') },
+      };
+    },
   },
 };
 

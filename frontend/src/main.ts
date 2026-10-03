@@ -7,7 +7,7 @@ import { detail } from './views/detail';
 import { explore } from './views/explore';
 import { list } from './views/list';
 
-const NAV: Plural[] = ['artists', 'artworks', 'movements', 'institutions', 'patrons', 'places'];
+const NAV: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'patrons', 'places'];
 
 const main = document.getElementById('app')!;
 const nav = document.getElementById('nav')!;

@@ -1,9 +1,9 @@
 // Response shapes of https://api.arthistory.piogino.ch/v1 (reference: backend/docs/api.md).
 
 /** Plural URL segment of an entity type (`/v1/artists/…`). */
-export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'patrons';
+export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'patrons' | 'polities';
 /** Singular `type` field inside responses. */
-export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'patron';
+export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'patron' | 'polity';
 
 /** Every date is one of these or null. `to` is inclusive; open ends are null; BCE years are negative. */
 export interface DateRange {
@@ -41,7 +41,7 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance';
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity';
 
 export interface Relationship {
   type: string;
@@ -64,26 +64,57 @@ interface DetailBase {
   relationships: Relationship[];
 }
 
+// ---- countries and polities ---------------------------------------------------------------------
+
+/**
+ * Today's country, derived from the entry's place (birthplace, place of creation, location) or, without a place,
+ * from its polities when they all lie in one modern country. `name`/`slug` come from the country's place entry.
+ */
+export interface Country {
+  code: string;
+  name: string | null;
+  slug: string | null;
+  source: 'place' | 'polity';
+  place: Ref | null;
+}
+
+/** A dated link to a polity (state, empire, dynasty); entered by hand, not derived from places. */
+export interface PolityLink {
+  slug: string; name: string; kind: string | null;
+  relationship: 'nationality' | 'created_in_polity' | 'located_in_polity';
+  period: DateRange | null; // of the link (e.g. nationality 1880–1917)
+  polity_period: DateRange | null; // when the polity existed
+  country_codes: string[];
+}
+
+interface Located {
+  country: Country | null;
+  polities: PolityLink[];
+}
+
+export interface BirthPlace { slug: string; name: string; country_code: string | null }
+
 // ---- list items ----------------------------------------------------------------------------------
 
-export interface ArtistItem {
+export interface ArtistItem extends Located {
   slug: string; name: string; sort_name: string | null; birth: DateRange | null; death: DateRange | null; image_url: string | null;
-  /** Requested from the backend (place of the `born_in` relationship); absent until it is delivered. */
-  birth_place?: { slug: string; name: string; country_code: string | null } | null;
+  birth_place: BirthPlace | null;
 }
-export interface ArtworkItem { slug: string; title: string; created: DateRange | null; kind: string | null; image_url: string | null; creator: Ref | null }
+export interface ArtworkItem extends Located { slug: string; title: string; created: DateRange | null; kind: string | null; image_url: string | null; creator: Ref | null }
 export interface PlaceItem { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem { slug: string; name: string; kind: string | null; period: DateRange | null }
-export interface InstitutionItem { slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null }
-export interface PatronItem { slug: string; name: string; kind: string | null; active: DateRange | null }
+export interface InstitutionItem extends Located { slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null }
+export interface PatronItem extends Located { slug: string; name: string; kind: string | null; active: DateRange | null; birth_place: BirthPlace | null }
+export interface PolityItem { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[] }
 
 // ---- details -------------------------------------------------------------------------------------
 
 export interface ArtworkSummary { slug: string; title: string; created: DateRange | null; kind?: string | null; creator?: Ref | null }
 export type KindRef = Ref & { kind?: string | null; period?: DateRange | null };
 
-export interface Artist extends DetailBase {
+export interface Artist extends DetailBase, Located {
   type: 'artist';
+  birth_place: BirthPlace | null;
   name: string; sort_name: string | null; alt_names: string[];
   birth: DateRange | null; death: DateRange | null;
   biography_html: string | null;
@@ -93,7 +124,7 @@ export interface Artist extends DetailBase {
 
 export interface Dimensions { height_cm: number | null; width_cm: number | null; depth_cm: number | null; note: string | null; label: string | null }
 
-export interface Artwork extends DetailBase {
+export interface Artwork extends DetailBase, Located {
   type: 'artwork';
   title: string; alt_titles: string[]; attribution_label: string | null;
   created: DateRange | null; kind: string | null; medium: string | null; inventory_number: string | null;
@@ -118,7 +149,7 @@ export interface Movement extends DetailBase {
   ancestors: KindRef[]; children: KindRef[];
 }
 
-export interface Institution extends DetailBase {
+export interface Institution extends DetailBase, Located {
   type: 'institution';
   name: string; alt_names: string[]; kind: string | null; founded: DateRange | null; website_url: string | null;
   description_html: string | null;
@@ -127,21 +158,29 @@ export interface Institution extends DetailBase {
   artworks: ArtworkSummary[];
 }
 
-export interface Patron extends DetailBase {
+export interface Patron extends DetailBase, Located {
   type: 'patron';
+  birth_place: BirthPlace | null;
   name: string; alt_names: string[]; kind: string | null; active: DateRange | null;
   notes_html: string | null;
 }
 
-export type Entity = Artist | Artwork | Place | Movement | Institution | Patron;
+export interface Polity extends DetailBase {
+  type: 'polity';
+  name: string; alt_names: string[]; kind: string | null; period: DateRange | null; country_codes: string[];
+  description_html: string | null;
+  ancestors: KindRef[]; children: KindRef[];
+}
+
+export type Entity = Artist | Artwork | Place | Movement | Institution | Patron | Polity;
 
 export interface ItemByPlural {
   artists: ArtistItem; artworks: ArtworkItem; places: PlaceItem;
-  movements: MovementItem; institutions: InstitutionItem; patrons: PatronItem;
+  movements: MovementItem; institutions: InstitutionItem; patrons: PatronItem; polities: PolityItem;
 }
 export interface DetailByPlural {
   artists: Artist; artworks: Artwork; places: Place;
-  movements: Movement; institutions: Institution; patrons: Patron;
+  movements: Movement; institutions: Institution; patrons: Patron; polities: Polity;
 }
 
 // ---- search, vocabulary --------------------------------------------------------------------------

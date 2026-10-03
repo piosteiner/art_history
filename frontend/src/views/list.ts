@@ -1,5 +1,5 @@
 import { listEntities } from '../api';
-import { dateLabel, href, html, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
+import { countryName, countryText, dateLabel, href, html, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { ItemByPlural, Plural } from '../types';
 import { guard, showError } from './common';
 import { entries, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
@@ -16,12 +16,13 @@ function card(plural: Plural, item: AnyItem): Html {
     case 'artists': {
       const a = item as ItemByPlural['artists'];
       [name, date, image] = [a.name, spanLabel(a.birth, a.death), a.image_url];
+      detail = countryText(a.country) ?? '';
       break;
     }
     case 'artworks': {
       const a = item as ItemByPlural['artworks'];
       [name, date, image] = [a.title, dateLabel(a.created), a.image_url];
-      detail = html`${a.kind ?? ''}${a.kind && a.creator ? ' · ' : ''}${a.creator ? a.creator.name : ''}`;
+      detail = [a.kind, a.creator?.name, countryText(a.country)].filter(Boolean).join(' · ');
       break;
     }
     case 'places': {
@@ -36,12 +37,17 @@ function card(plural: Plural, item: AnyItem): Html {
     }
     case 'institutions': {
       const i = item as ItemByPlural['institutions'];
-      [name, date, detail, image] = [i.name, i.founded ? `founded ${i.founded.label}` : '', i.kind ?? '', i.image_url];
+      [name, date, detail, image] = [i.name, i.founded ? `founded ${i.founded.label}` : '', [i.kind, countryText(i.country)].filter(Boolean).join(' · '), i.image_url];
       break;
     }
     case 'patrons': {
       const p = item as ItemByPlural['patrons'];
-      [name, date, detail] = [p.name, p.active ? `active ${p.active.label}` : '', p.kind ?? ''];
+      [name, date, detail] = [p.name, p.active ? `active ${p.active.label}` : '', [p.kind, countryText(p.country)].filter(Boolean).join(' · ')];
+      break;
+    }
+    case 'polities': {
+      const p = item as ItemByPlural['polities'];
+      [name, date, detail] = [p.name, dateLabel(p.period), [p.kind, p.country_codes.map((c) => countryName(c) ?? c).join(', ')].filter(Boolean).join(' · ')];
       break;
     }
   }

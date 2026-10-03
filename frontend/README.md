@@ -37,15 +37,17 @@ Push to `main` (changes under `frontend/`) → `.github/workflows/pages.yml` bui
 The repository's Pages source must be **GitHub Actions**; the MapTiler key is the repository variable `MAPTILER_KEY`
 (restrict it to `arthistory.piogino.ch` and `localhost` in the MapTiler dashboard; it is public in the bundle anyway).
 
+## Countries and polities
+`country` = today's country (from the entry's place), `polities` = dated, hand-entered links (nationality, made in,
+historically in). Shown together as "Soviet Union 1922–1991 (today Ukraine)" (`polityWithToday` in `src/html.ts`); the
+"today" part is dropped when the polity's name already contains it ("Kingdom of the Netherlands"). Without polities the
+detail shows "Country of birth / of origin". Sorts by country and nationality appear once any entry has the data.
+
 ## Explore page
 Nothing chosen individually → every place (sized by links). Entries chosen → their routes, one colour each (same colour on
 the timeline; at most 24 drawn). Time window → presence in the window, limited to the selection.
 
 ## Wishes for the backend
-- **Artist birth place in lists** (for the "Country of birth" sort, which stays hidden until the data is there):
-  `GET /v1/artists` items (and the detail) get `birth_place: {slug, name, country_code} | null`: the place of the
-  artist's earliest `born_in` relationship; `country_code` from that place or, if empty, its nearest ancestor that has
-  one. The frontend type already declares it (`ArtistItem.birth_place`).
 - `GET /v1/map/presence?…&entities=artist/vincent-van-gogh,patron/theo-van-gogh`: today the frontend filters single
   picks out of the full window response, which grows with the library.
 - `GET /v1/map/routes?entities=…`: several entities' map data in one request (today one request per chosen entry).

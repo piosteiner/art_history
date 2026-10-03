@@ -1,16 +1,17 @@
 // Detail page for all six entity types: facts, images with credits, long text, relationships by category, map.
 import { getEntity, getEntityMap } from '../api';
 import {
-  dateLabel, figure, html, link, PLURAL_LABEL, render, spanLabel, trusted, TYPE_LABEL, wireImageFallbacks, type Html,
+  countryLink, countryName, dateLabel, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
+  wireImageFallbacks, type Html,
 } from '../html';
 import { COLORS, createMap, showEntity, showPoint } from '../map';
-import type { ArtworkSummary, Category, DetailByPlural, Entity, Image, KindRef, Plural, Relationship } from '../types';
+import type { ArtworkSummary, Category, Country, DetailByPlural, Entity, Image, KindRef, Plural, PolityLink, Relationship } from '../types';
 import { guard, loading, showError } from './common';
 
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
 const CATEGORY_ORDER: Category[] = [
-  'presence', 'association', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'provenance',
+  'presence', 'association', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'provenance',
 ];
 const CATEGORY_LABEL: Record<string, string> = {
   presence: 'Places (physically there)',
@@ -21,7 +22,18 @@ const CATEGORY_LABEL: Record<string, string> = {
   membership: 'Membership',
   patronage: 'Patronage',
   provenance: 'Provenance',
+  polity: 'States and nationality',
 };
+
+/**
+ * Polity rows ("Soviet Union 1922–1991 (today Ukraine)") for one kind of link; null when there are none.
+ * Without polities, today's country stands on its own under `fallback`.
+ */
+function polityFacts(e: { country: Country | null; polities: PolityLink[] }, rel: PolityLink['relationship'], label: string, fallback: string): Fact[] {
+  const links = e.polities.filter((p) => p.relationship === rel);
+  if (links.length) return [[label, html`${links.map((p, i) => html`${i ? html`<br>` : ''}${polityWithToday(p, e.country)}`)}`]];
+  return [[fallback, e.country ? html`${countryLink(e.country)}${e.country.place && e.country.source === 'place' ? html` <span class="muted">(${e.country.place.name})</span>` : ''}` : null]];
+}
 
 const refs = (type: Parameters<typeof link>[0], items: KindRef[]) =>
   items.length ? html`${items.map((r, i) => html`${i ? ', ' : ''}${link(type, r.slug, r.name)}`)}` : null;
@@ -37,7 +49,11 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
     case 'artist':
       return {
         title: e.name, subtitle: spanLabel(e.birth, e.death), text: e.biography_html, images: e.images,
-        facts: [['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)], ['Also known as', alt(e.alt_names)]],
+        facts: [
+          ['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)],
+          ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
+          ['Also known as', alt(e.alt_names)],
+        ],
         extra: e.artworks.length ? [html`<section><h2>Artworks</h2>${artworkList(e.artworks, false)}</section>`] : [],
       };
     case 'artwork':
@@ -52,6 +68,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Medium', e.medium],
           ['Materials', e.materials.length ? e.materials.join(', ') : null],
           ['Dimensions', e.dimensions?.label ? [e.dimensions.label, e.dimensions.note].filter(Boolean).join(' — ') : null],
+          ...polityFacts(e, 'created_in_polity', 'Made in', 'Country of origin'),
           ['Collection', e.institution ? link('institution', e.institution.slug, e.institution.name) : null],
           ['Inventory no.', e.inventory_number],
           ['Also known as', alt(e.alt_titles)],
@@ -86,7 +103,8 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
         title: e.name, subtitle: [e.kind, e.place?.name].filter(Boolean).join(' · '), text: e.description_html, images: e.images,
         facts: [
           ['Founded', dateLabel(e.founded)],
-          ['Location', e.place ? link('place', e.place.slug, e.place.name) : null],
+          ['Location', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country ? html`, ${countryLink(e.country)}` : ''}` : null],
+          ...(e.polities.some((p) => p.relationship === 'located_in_polity') ? polityFacts(e, 'located_in_polity', 'Historically in', '') : []),
           ['Website', e.website_url ? html`<a href="${e.website_url}" target="_blank" rel="noopener">${e.website_url.replace(/^https?:\/\/(www\.)?/, '')}</a>` : null],
           ['Also known as', alt(e.alt_names)],
         ],
@@ -96,7 +114,19 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
       return {
         title: e.name, subtitle: [e.kind, e.active ? `active ${e.active.label}` : null].filter(Boolean).join(' · '),
         text: e.notes_html, images: [],
-        facts: [['Active', dateLabel(e.active)], ['Also known as', alt(e.alt_names)]],
+        facts: [['Active', dateLabel(e.active)], ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'), ['Also known as', alt(e.alt_names)]],
+        extra: [],
+      };
+    case 'polity':
+      return {
+        title: e.name, subtitle: [e.kind, e.period?.label].filter(Boolean).join(' · '), text: e.description_html, images: [],
+        facts: [
+          ['Existed', dateLabel(e.period)],
+          ['Territory today', e.country_codes.length ? e.country_codes.map((c) => countryName(c) ?? c).join(', ') : null],
+          ['Part of', refs('polity', [...e.ancestors].reverse())],
+          ['Includes', refs('polity', e.children)],
+          ['Also known as', alt(e.alt_names)],
+        ],
         extra: [],
       };
   }
@@ -146,7 +176,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             ${facts.length ? html`<dl class="facts">${facts.map(([k, value]) => html`<dt>${k}</dt><dd>${value}</dd>`)}</dl>` : ''}
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
-            ${relationshipSections(e.relationships)}
+            ${relationshipSections(e.type === 'polity' ? e.relationships : e.relationships.filter((r) => r.category !== 'polity'))}
           </div>
           ${hasMap ? html`<aside class="detail-side">
             <div class="map map-small" id="map"></div>

@@ -8,7 +8,7 @@ export type Route =
   | { name: 'detail'; plural: Plural; slug: string }
   | { name: 'not-found' };
 
-const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'patrons'];
+const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'patrons', 'polities'];
 const isPlural = (s: string): s is Plural => (PLURALS as string[]).includes(s);
 
 export function parse(hash: string): Route {
