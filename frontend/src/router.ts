@@ -6,6 +6,7 @@ export type Route =
   | { name: 'explore'; params: URLSearchParams }
   | { name: 'list'; plural: Plural }
   | { name: 'detail'; plural: Plural; slug: string }
+  | { name: 'graph'; plural?: Plural; slug?: string; params: URLSearchParams }
   | { name: 'not-found' };
 
 const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'patrons', 'polities'];
@@ -15,6 +16,11 @@ export function parse(hash: string): Route {
   const [path, query = ''] = hash.replace(/^#\/?/, '').split('?');
   const parts = path.split('/').filter(Boolean).map(decodeURIComponent);
   if (!parts.length) return { name: 'explore', params: new URLSearchParams(query) };
+  if (parts[0] === 'graph') {
+    const [, p, s, ...more] = parts;
+    if (more.length || (p && !isPlural(p))) return { name: 'not-found' };
+    return { name: 'graph', plural: p as Plural | undefined, slug: s, params: new URLSearchParams(query) };
+  }
   const [first, slug, ...rest] = parts;
   if (!isPlural(first) || rest.length) return { name: 'not-found' };
   return slug ? { name: 'detail', plural: first, slug } : { name: 'list', plural: first };

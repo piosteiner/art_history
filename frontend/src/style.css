@@ -318,3 +318,51 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
   :root:not([data-theme="light"]) .maplibregl-ctrl-attrib a { color: var(--muted); }
   :root:not([data-theme="light"]) .maplibregl-ctrl-icon { filter: invert(1); }
 }
+
+/* network graph */
+:root { --c-influence: #b4462b; --c-education: #3d6fb6; --c-collaboration: #5e8c3a; --c-membership: #8a8172;
+  --c-patronage: #8a4f9e; --c-provenance: #a0702a; --c-polity: var(--polity);
+  --n-artist: #b4462b; --n-artwork: #c08a1e; --n-movement: #2f6f73; --n-institution: #3d6fb6; --n-patron: #8a4f9e;
+  --n-polity: var(--polity); --n-place: #8a8172; }
+.detail-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.graph-controls { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; align-items: center; margin: .4rem 0 .4rem; }
+.seg { display: inline-flex; align-items: center; gap: .3rem; font-size: .88rem; }
+.seg button {
+  font: inherit; padding: .15rem .6rem; min-width: 2rem; border: 1px solid var(--line); background: var(--bg);
+  color: var(--text); border-radius: 999px; cursor: pointer;
+}
+.seg button.on, .seg button:hover { border-color: var(--accent); }
+.seg button.on { background: var(--picked-bg); font-weight: 600; }
+.graph-cats { display: flex; flex-wrap: wrap; gap: .3rem .8rem; font-size: .85rem; }
+.graph-cats label { display: inline-flex; align-items: center; gap: .3rem; cursor: pointer; }
+.swatch { display: inline-block; width: 16px; height: 3px; border-radius: 2px; background: var(--cat); }
+.cat-influence { --cat: var(--c-influence); } .cat-education { --cat: var(--c-education); }
+.cat-collaboration { --cat: var(--c-collaboration); } .cat-membership { --cat: var(--c-membership); }
+.cat-patronage { --cat: var(--c-patronage); } .cat-provenance { --cat: var(--c-provenance); } .cat-polity { --cat: var(--c-polity); }
+.graph-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 1rem; align-items: start; }
+@media (max-width: 860px) { .graph-wrap { grid-template-columns: minmax(0, 1fr); } }
+svg.graph {
+  width: 100%; height: min(70vh, 640px); background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); cursor: grab; touch-action: none; display: block;
+}
+svg.graph:active { cursor: grabbing; }
+.edge { stroke: var(--cat); stroke-width: 1.8; stroke-opacity: .75; }
+.edge.uncertain { stroke-dasharray: 5 4; }
+.arrowhead { fill: var(--cat); }
+.node circle { fill: var(--n); stroke: var(--surface); stroke-width: 2; }
+.node.root circle { stroke: var(--text); stroke-width: 2.5; }
+.node.selected circle { stroke: var(--accent); stroke-width: 3; }
+.node text { font-size: 12px; fill: var(--text); paint-order: stroke; stroke: var(--surface); stroke-width: 3px; stroke-linejoin: round; pointer-events: none; }
+.node.root text { font-weight: 700; font-size: 13px; }
+.node { cursor: pointer; }
+.node.faded, .edge.faded { opacity: .15; }
+.node-artist { --n: var(--n-artist); } .node-artwork { --n: var(--n-artwork); } .node-movement { --n: var(--n-movement); }
+.node-institution { --n: var(--n-institution); } .node-patron { --n: var(--n-patron); } .node-polity { --n: var(--n-polity); }
+.node-place { --n: var(--n-place); }
+.legend .dot[class*="node-"] { background: var(--n); }
+.legend .line.swatch { width: 18px; }
+.graph-info { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: .8rem 1rem; font-size: .92rem; }
+.graph-info h2 { margin: 0 0 .2rem; font-size: 1.15rem; }
+.graph-info .muted { margin: 0 0 .6rem; }
+.graph-actions { display: flex; flex-wrap: wrap; gap: .4rem; }
+.graph-links li { font-size: .88rem; }
