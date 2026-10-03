@@ -1,0 +1,4 @@
+# Shell scripts must keep LF endings, also in Windows checkouts (core.autocrlf): with CRLF the shebang
+# becomes "/bin/bash\r" and Git (e.g. GitHub Desktop) cannot run the secret-scan hooks.
+*.sh             text eol=lf
+scripts/githooks/* text eol=lf
