@@ -17,6 +17,9 @@ const TYPES = [
   { type: 'movement', folder: 'movements', table: 'movements', name: 'name', fields: {
     name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', period: 'period',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+  { type: 'polity', folder: 'polities', table: 'polities', name: 'name', fields: {
+    name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', period: 'period', country_codes: 'text[]',
+    description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
     name: 'text', sort_name: 'text', alt_names: 'text[]', birth: 'date', death: 'date',
     biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },

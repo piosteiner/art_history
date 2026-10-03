@@ -6,6 +6,7 @@ const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1
 const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.`,
   'text[]': 'One per line.',
+  country_codes: 'Modern countries on its territory, ISO codes, one per line (e.g. CN for the Han dynasty; UA, RU, BY … for the USSR). Shown as "today …" only for entries without a place.',
   inventory_number: 'Only together with the institution above — the number belongs to its collection.',
   materials: 'One per line, e.g. oil paint · canvas — or bronze · marble. The "medium" above stays the readable description.',
   json: 'JSON object, e.g. {"sources": ["…"]}. Leave empty for none.',

@@ -119,10 +119,10 @@ async function main() {
         await client.query('RELEASE SAVEPOINT entity');
         if (rows.length) {
           ids.set(`${e.type}/${e.slug}`, rows[0].id);
-          count(`${e.type}s ${rows[0].inserted ? 'inserted' : 'updated'}`);
+          count(`${e.folder} ${rows[0].inserted ? 'inserted' : 'updated'}`);
         } else {
           await idOf(e.type, e.slug);
-          count(`${e.type}s unchanged`);
+          count(`${e.folder} unchanged`);
         }
       } catch (err) {
         await client.query('ROLLBACK TO SAVEPOINT entity');

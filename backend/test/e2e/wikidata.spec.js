@@ -103,3 +103,14 @@ test('an artwork: creator and collection by name or new; then its Commons images
   await userA.goto('/artworks/impression-sunrise/wikidata');
   await expect(userA.locator('.wd-image', { hasText: 'Already one of ours' })).toHaveCount(2);
 });
+
+test('nationality from Wikidata (P27): the polity is created on request, with its ISO code', async ({ userA }) => {
+  await userA.goto('/artists/claude-monet/wikidata');
+  await expect(row(userA, 'nationality').locator('input[value=later]')).toBeChecked();
+  await row(userA, 'nationality').locator('input[value=create]').check();
+  await apply(userA);
+  expect(sql("SELECT name || ' ' || array_to_string(country_codes, ',') || ' ' || wikidata_id || ' ' || lower(period)::text FROM polities WHERE slug = 'france'"))
+    .toBe('France FR Q108 1792-09-21');
+  expect(sql(`SELECT count(*) FROM relationships WHERE relationship_type = 'nationality'
+              AND subject_id = entity_id('artist', 'claude-monet') AND object_id = entity_id('polity', 'france')`)).toBe('1');
+});

@@ -36,7 +36,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Add an e2e test for every admin feature. Deploy: `backend/deploy.sh` (pull, npm ci, **tests**, build, migrate, pm2 reload,
   health probe; `--skip-tests` only in emergencies).
 
-## Status (2026-09-28)
+## Status (2026-10-03)
 - ✅ Phase 0 housekeeping, ufw (22/80/443 only) · ✅ Phase 1 health check, nginx, TLS, pm2
 - ✅ Phase 2 PostgreSQL 18 + PostGIS 3.6, roles (owner/admin/api), migrations 001–003 (+ 005 `located_in`, 2026-09-28)
 - ✅ Phase 3: read API (entities, search, `/v1/map/…` GeoJSON, `/v1/graph/…`; `backend/docs/api.md`), migration 004,
@@ -48,6 +48,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   presence + drafts (010), shared Yjs working copies per entry with Publish (011) — `src/admin/collab.js`, `editor/collab.js`.
   Wikidata comparison with review (012, `src/admin/wikidata.js`) built 2026-09-30. Data-quality page (013, view `quality_issues`) built 2026-09-30.
   Several images per artwork/artist/institution (017, table `images`, exclusive arc; `src/admin/images.js`) built 2026-10-02.
+  Polities + derived countries (018/019: `polities`, `nationality`, `entity_country()`; API `country`/`polities`/`birth_place`) built 2026-10-03.
   Ideas later: nightly auto-export commit. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Open: after the owner fixes The Great Wave's inventory number (no institution), add a migration

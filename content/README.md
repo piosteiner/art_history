@@ -12,7 +12,7 @@ overwrites fields of entities it touches — **export first**, so the files matc
 
 ```
 content/<folder>/<slug>.yaml     one entity per file; the file name is its slug (lowercase-kebab-case)
-  places/  movements/  artists/  patrons/  institutions/  artworks/
+  places/  movements/  polities/  artists/  patrons/  institutions/  artworks/
 ```
 
 ```bash
@@ -44,6 +44,7 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 |---|---|
 | places | `name`*, `kind`* (settlement, building, site, region, country), `location`* `[longitude, latitude]`, `parent` (place slug), `country_code` (ISO, e.g. FR), `alt_names`, `area` (GeoJSON polygon), `description_md` |
 | movements | `name`*, `kind`* (period, movement, school, style), `parent` (movement slug), `period`, `description_md` |
+| polities | `name`*, `kind` (empire, kingdom, dynasty, republic, …), `parent` (polity slug, e.g. Western Han ⊂ Han dynasty), `period` (when it existed; `1922/` = still exists), `country_codes` (modern countries on its territory, ISO: `[RU, UA, BY]`), `alt_names`, `description_md` |
 | artists | `name`*, `sort_name`, `alt_names`, `birth`, `death`, `biography_md` |
 | patrons | `name`*, `kind` (person, family, …), `alt_names`, `active`, `notes_md` |
 | institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `alt_names`, `description_md` |

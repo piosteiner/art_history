@@ -24,9 +24,12 @@
 // that is rolled back): what the database would reject is shown before anything is applied.
 const crypto = require('crypto');
 const { merge3 } = require('./textdiff');
-const { IMAGE_FK: BY_IMAGE_FK } = require('../content');
+const { IMAGE_FK: BY_IMAGE_FK, BY_TYPE, BY_FOLDER } = require('../content');
 
-const TABLES = ['places', 'movements', 'artists', 'patrons', 'institutions', 'artworks', 'relationships', 'images'];
+const TABLES = ['places', 'movements', 'polities', 'artists', 'patrons', 'institutions', 'artworks', 'relationships', 'images'];
+// table → type and back (polities ↔ polity: not always + 's')
+const typeOf = (table) => BY_FOLDER[table].type;
+const tableOf = (type) => BY_TYPE[type].table;
 const DEPENDENT = new Set(['relationships', 'images']);
 // An image row belongs to the entity in whichever of its three foreign keys is set (migration 017).
 const imageOwner = (row) => ['artwork', 'artist', 'institution'].map((type) => ({ type, id: row[`${type}_id`] })).find((o) => o.id != null);
@@ -55,12 +58,12 @@ async function currentRow(db, table, id) {
 
 // "Van Gogh — lived in → Paris" / "artist Vincent van Gogh"; names of deleted entities from their last audit entry.
 async function describe(db, table, row) {
-  if (!DEPENDENT.has(table)) return `${table.slice(0, -1)} ${row.name || row.title || row.slug}`;
+  if (!DEPENDENT.has(table)) return `${typeOf(table)} ${row.name || row.title || row.slug}`;
   const name = async (type, id) => {
     const { rows } = await db.query(`
       SELECT coalesce((SELECT name FROM entity_index WHERE type = $1::entity_type AND id = $2),
                       (SELECT coalesce(old_row->>'name', old_row->>'title') FROM audit_log
-                        WHERE table_name = $1 || 's' AND row_id = $2 AND old_row IS NOT NULL ORDER BY id DESC LIMIT 1),
+                        WHERE table_name = entity_table($1::entity_type) AND row_id = $2 AND old_row IS NOT NULL ORDER BY id DESC LIMIT 1),
                       $1 || ' #' || $2) AS n`, [type, id]);
     return rows[0].n;
   };
@@ -114,7 +117,7 @@ async function planRestore(db, item, row, choices) {
   const { table } = item;
   if (table === 'images') {
     const owner = imageOwner(json);
-    const t = `${owner.type}s`;
+    const t = tableOf(owner.type);
     if (!(await db.query(`SELECT 1 FROM ${t} WHERE id = $1`, [owner.id])).rows.length && !item.plannedIds.has(`${t}:${owner.id}`)) {
       item.blocked = `its ${owner.type} (#${owner.id}) no longer exists and is not restored here`;
     }
@@ -128,7 +131,7 @@ async function planRestore(db, item, row, choices) {
       const wanted = String(choices[`slug.${item.key}`] || '').trim();
       item.needs.slug = { taken: json.slug, value: wanted || `${json.slug}-restored` };
       json.slug = item.needs.slug.value;
-      item.notes.push(`The slug “${row.slug}” now belongs to another ${table.slice(0, -1)} — restored under a new slug.`);
+      item.notes.push(`The slug “${row.slug}” now belongs to another ${typeOf(table)} — restored under a new slug.`);
     }
     if (json.wikidata_id && (await db.query(`SELECT 1 FROM ${table} WHERE wikidata_id = $1 AND id <> $2`, [json.wikidata_id, json.id])).rows.length) {
       item.notes.push(`Wikidata id ${json.wikidata_id} now belongs to another record — left empty.`);
@@ -144,7 +147,7 @@ async function planRestore(db, item, row, choices) {
     }
   } else {
     for (const side of ['subject', 'object']) {
-      const t = `${json[`${side}_type`]}s`;
+      const t = tableOf(json[`${side}_type`]);
       const id = json[`${side}_id`];
       if (!(await db.query(`SELECT 1 FROM ${t} WHERE id = $1`, [id])).rows.length && !item.plannedIds.has(`${t}:${id}`)) {
         item.blocked = `its ${side} (${json[`${side}_type`]} #${id}) no longer exists and is not restored here`;
@@ -166,7 +169,7 @@ async function planDelete(db, item, now, after, changeSetKeys) {
     item.needs.confirm = 'It has been edited since it was created — deleting it also discards those edits.';
   }
   if (!DEPENDENT.has(item.table)) {
-    const type = item.table.slice(0, -1);
+    const type = typeOf(item.table);
     const { rows } = await db.query(`
       SELECT id FROM relationships WHERE (subject_type, subject_id) = ($1::entity_type, $2) OR (object_type, object_id) = ($1::entity_type, $2)`,
     [type, item.rowId]);

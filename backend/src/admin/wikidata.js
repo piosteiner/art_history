@@ -159,6 +159,12 @@ function fieldsFor(t, e) {
     ref('parent', 'place', 'P131');
     f.country_code = { kind: 'country', qid: itemIds(e, 'P17')[0] || null };
   }
+  if (t.type === 'polity') {
+    // existed: inception/dissolution (P571/P576) or start/end time (P580/P582); ISO code (P297) only for modern states
+    const start = firstTime(e, 'P571', 'P580'); const end = firstTime(e, 'P576', 'P582');
+    if (start) f.period = { kind: 'date', value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: null };  // no end = still exists
+    text('country_codes', firstString(e, 'P297'));
+  }
   if (t.type === 'institution') { date('founded', 'P571'); ref('place', 'place', 'P131'); text('website_url', firstString(e, 'P856')); }
   if (t.type === 'movement') {
     const start = firstTime(e, 'P580', 'P571'); const end = firstTime(e, 'P582', 'P576');
@@ -189,10 +195,13 @@ function fieldsFor(t, e) {
 // Relationship suggestions: { type (our code, "~code" = the other side is the subject), prop, qid, period?, period_label? }
 const REL_PROPS = {
   artist: [['P19', 'born_in'], ['P20', 'died_in'], ['P551', 'lived_in'], ['P937', 'worked_in'], ['P1066', 'student_of'],
-    ['P802', '~student_of'], ['P135', 'associated_with'], ['P463', 'member_of'], ['P69', 'studied_at'], ['P737', 'influenced_by']],
-  patron: [['P19', 'born_in'], ['P20', 'died_in'], ['P551', 'lived_in']],
-  artwork: [['P1071', 'created_in'], ['P180', 'depicts'], ['P135', 'associated_with'], ['P88', '~commissioned'], ['P127', 'owned_by']],
+    ['P802', '~student_of'], ['P135', 'associated_with'], ['P463', 'member_of'], ['P69', 'studied_at'], ['P737', 'influenced_by'],
+    ['P27', 'nationality']],  // country of citizenship, often dated (Russian Empire until 1917 …)
+  patron: [['P19', 'born_in'], ['P20', 'died_in'], ['P551', 'lived_in'], ['P27', 'nationality']],
+  artwork: [['P1071', 'created_in'], ['P180', 'depicts'], ['P135', 'associated_with'], ['P88', '~commissioned'], ['P127', 'owned_by'],
+    ['P495', 'created_in_polity']],  // country of origin
   movement: [['P495', 'active_in']],
+  polity: [],
   institution: [],
   place: [],
 };
@@ -263,6 +272,11 @@ function newEntryDoc(type, e) {
   if (type === 'artist') { const b = firstTime(e, 'P569'); const d = firstTime(e, 'P570'); if (b) doc.birth = b.value; if (d) doc.death = d.value; }
   if (type === 'movement') { const s = firstTime(e, 'P580', 'P571'); if (s) doc.period = s.value; doc.kind = 'movement'; }
   if (type === 'institution') { const f = firstTime(e, 'P571'); if (f) doc.founded = f.value; }
+  if (type === 'polity') {
+    const s = firstTime(e, 'P571', 'P580'); const x = firstTime(e, 'P576', 'P582');
+    if (s) doc.period = `${s.value.split('/')[0]}/${x ? x.value.split('/').pop() : ''}`;
+    const iso = firstString(e, 'P297'); if (iso && /^[A-Z]{2}$/.test(iso)) doc.country_codes = [iso];
+  }
   if (type === 'patron' && itemIds(e, 'P31').includes(HUMAN)) doc.kind = 'person';
   return doc[t.name] ? doc : null;
 }
@@ -287,8 +301,9 @@ async function compare(db, t, qid, ours, entity) {
   // Not linked by Q-id yet? Maybe we have it under the same name (it gets the Q-id when linked).
   const byName = await localByName(db, Object.fromEntries(refQids.filter((id) => !byQid[id]).map((id) => [id, labelOf(light[id])])));
   const localFor = (qid, allowed) => byQid[qid] || (byName[qid] || []).find((r) => !allowed || allowed.includes(r.type)) || null;
-  // Full data only for what we still don't have (needed to offer it as a new entry), and the country (ISO code).
-  const missing = refQids.filter((id) => !byQid[id] && !byName[id]);
+  // Full data for everything not linked by Q-id (needed to offer it as a new entry — a name match may be of another
+  // type: Wikidata's "France" as a polity vs. our place "France"), and the country (ISO code).
+  const missing = refQids.filter((id) => !byQid[id]);
   const others = { ...light, ...(await getEntities([...missing, ...(fields.country_code && fields.country_code.qid ? [fields.country_code.qid] : [])])) };
   const reviews = entity ? Object.fromEntries((await db.query(
     'SELECT item, value, decision, decided_at FROM wikidata_reviews WHERE entity_type = $1 AND entity_id = $2', [entity.type, entity.id])).rows

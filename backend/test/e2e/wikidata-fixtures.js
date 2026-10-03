@@ -15,7 +15,7 @@ const ENTITIES = {
     aliases: { en: [{ value: 'Oscar-Claude Monet' }] }, descriptions: { en: { value: 'French painter (1840–1926)' } },
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1840-11-14T00:00:00Z', 11))], P570: [stmt(time('+1926-12-05T00:00:00Z', 11))],
       P19: [stmt(item('Q90'))], P20: [stmt(item('Q101'))], P135: [stmt(item('Q102'))], P1066: [stmt(item('Q103'))],
-      P18: [stmt('Claude Monet 1899 Nadar crop.jpg')],
+      P18: [stmt('Claude Monet 1899 Nadar crop.jpg')], P27: [stmt(item('Q108'))],
       P937: [stmt(item('Q90'), { P580: time('+1859-00-00T00:00:00Z', 9), P582: time('+1860-00-00T00:00:00Z', 9) })] } },
   Q90: { id: 'Q90', labels: labels('Paris'), descriptions: { en: { value: 'capital of France' } },
     claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 48.8567, longitude: 2.3522, globe: 'http://www.wikidata.org/entity/Q2' })] } },
@@ -30,6 +30,8 @@ const ENTITIES = {
       P2048: [stmt({ amount: '+48', unit: 'http://www.wikidata.org/entity/Q174728' })],   // 48 cm
       P2049: [stmt({ amount: '+630', unit: 'http://www.wikidata.org/entity/Q174789' })],  // 630 mm = 63 cm
       P186: [stmt(item('Q106')), stmt(item('Q107'))] } },
+  Q108: { id: 'Q108', labels: labels('France'), descriptions: { en: { value: 'country in Western Europe' } },
+    claims: { P31: [stmt(item('Q6256'))], P297: [stmt('FR')], P571: [stmt(time('+1792-09-21T00:00:00Z', 11))] } },
   Q106: { id: 'Q106', labels: labels('oil paint'), descriptions: { en: { value: 'paint' } }, claims: {} },
   Q107: { id: 'Q107', labels: labels('canvas'), descriptions: { en: { value: 'fabric' } }, claims: {} },
   Q105: { id: 'Q105', labels: labels('Musée Marmottan Monet'), descriptions: { en: { value: 'art museum in Paris' } }, claims: { P31: [stmt(item('Q207694'))] } },

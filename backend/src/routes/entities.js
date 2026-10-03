@@ -1,4 +1,4 @@
-// GET /v1/<plural>          list + search + time filter   (artists, artworks, places, movements, institutions, patrons)
+// GET /v1/<plural>          list + search + time filter   (artists, artworks, places, movements, institutions, patrons, polities)
 // GET /v1/<plural>/:slug    full record + all relationships in both directions + type-specific extras
 //
 // Public keys are slugs; internal ids never leave the API.
@@ -16,21 +16,36 @@ const allImages = (fk) => `(SELECT coalesce(jsonb_agg(jsonb_build_object('url', 
     'license', i.license, 'credit', i.credit, 'caption', i.caption) ORDER BY i.position, i.id), '[]'::jsonb)
   FROM images i WHERE i.${fk} = t.id) AS images, ${mainImage(fk)}`;
 
+// Countries and polities (migration 019). country = today's country, derived from the entry's place (birthplace,
+// place of creation, location); polities = the dated links to polities (nationality, created in, located in).
+const countryCols = (type) => `entity_country('${type}', t.id) AS country, entity_polities('${type}', t.id) AS polities`;
+// The birthplace with its country code, for people.
+const birthPlace = (type) => `(SELECT jsonb_build_object('slug', pl.slug, 'name', pl.name, 'country_code', place_country(pl.id)->>'code')
+  FROM places pl WHERE pl.id = entity_home_place('${type}', t.id)) AS birth_place`;
+const countryFilters = (type) => ({
+  country: `entity_country('${type}', t.id)->>'code' = upper($)`,
+  polity: `EXISTS (SELECT 1 FROM relationships r WHERE (r.subject_type, r.subject_id) = ('${type}', t.id)
+             AND r.object_type = 'polity' AND r.object_id = entity_id('polity', $))`,
+});
+
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
 // extra list filters (?key=value → SQL with $ placeholder), Markdown columns, default order.
 const ENTITIES = {
   artists: {
     type: 'artist', table: 'artists', name: 'name', period: 't.lifespan',
-    list: `t.sort_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death, ${mainImage('artist_id')}`,
+    list: `t.sort_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death, ${mainImage('artist_id')},
+           ${birthPlace('artist')}, ${countryCols('artist')}`,
     detail: `t.sort_name, t.alt_names, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
-             ${allImages('artist_id')}, t.biography_md`,
+             ${allImages('artist_id')}, t.biography_md, ${birthPlace('artist')}, ${countryCols('artist')}`,
     md: ['biography_md'],
+    filters: countryFilters('artist'),
     order: 'coalesce(t.sort_name, t.name)',
   },
   artworks: {
     type: 'artwork', table: 'artworks', name: 'title', period: 't.created',
     list: `range_json(t.created, t.created_label) AS created, t.kind, ${mainImage('artwork_id')},
-           (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator`,
+           (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
+           ${countryCols('artwork')}`,
     detail: `t.alt_titles, t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
              t.inventory_number, ${allImages('artwork_id')}, t.description_md,
              t.materials,
@@ -38,13 +53,15 @@ const ENTITIES = {
                'depth_cm', t.depth_cm, 'note', t.dimensions_note,
                'label', concat_ws(' × ', t.height_cm::float8, t.width_cm::float8, t.depth_cm::float8) || ' cm') END AS dimensions,
              (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
-             (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = t.current_institution_id) AS institution`,
+             (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = t.current_institution_id) AS institution,
+             ${countryCols('artwork')}`,
     md: ['description_md'],
     filters: {
       creator: "t.creator_id = entity_id('artist', $)",
       institution: "t.current_institution_id = entity_id('institution', $)",
       kind: 't.kind = $',
       material: 't.materials @> ARRAY[$]::text[]',  // GIN index artworks_materials_gin
+      ...countryFilters('artwork'),
     },
     order: 'lower(t.created) NULLS LAST, t.title',
   },
@@ -68,23 +85,42 @@ const ENTITIES = {
   institutions: {
     type: 'institution', table: 'institutions', name: 'name', period: 't.founded',
     list: `t.kind, range_json(t.founded, t.founded_label) AS founded, ${mainImage('institution_id')},
-           (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = t.place_id) AS place`,
+           (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = t.place_id) AS place,
+           ${countryCols('institution')}`,
     detail: `t.alt_names, t.kind, range_json(t.founded, t.founded_label) AS founded, t.website_url, t.description_md,
              ${allImages('institution_id')},
              (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', ST_AsGeoJSON(p.location)::jsonb)
-                FROM places p WHERE p.id = t.place_id) AS place`,
+                FROM places p WHERE p.id = t.place_id) AS place, ${countryCols('institution')}`,
     md: ['description_md'],
-    filters: { kind: 't.kind = $' },
+    filters: { kind: 't.kind = $', ...countryFilters('institution') },
     order: 't.name',
   },
   patrons: {
     type: 'patron', table: 'patrons', name: 'name', period: 't.active',
-    list: 't.kind, range_json(t.active, t.active_label) AS active',
-    detail: 't.alt_names, t.kind, range_json(t.active, t.active_label) AS active, t.notes_md',
+    list: `t.kind, range_json(t.active, t.active_label) AS active, ${birthPlace('patron')}, ${countryCols('patron')}`,
+    detail: `t.alt_names, t.kind, range_json(t.active, t.active_label) AS active, t.notes_md, ${birthPlace('patron')}, ${countryCols('patron')}`,
     md: ['notes_md'],
+    filters: { kind: 't.kind = $', ...countryFilters('patron') },
     order: 't.name',
   },
+  polities: {
+    type: 'polity', table: 'polities', name: 'name', period: 't.period',
+    list: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes',
+    detail: 't.alt_names, t.kind, range_json(t.period, t.period_label) AS period, t.country_codes, t.description_md',
+    md: ['description_md'],
+    filters: { kind: 't.kind = $', country: 't.country_codes @> ARRAY[upper($)]' },  // GIN index polities_country_gin
+    order: 'lower(t.period) NULLS LAST, t.name',
+  },
 };
+
+// Country names for codes we have no country place for (Tahiti → PF → "French Polynesia"): ICU's English names.
+const regionNames = new Intl.DisplayNames(['en'], { type: 'region' });
+function nameCountry(row) {
+  if (row.country && row.country.code && !row.country.name) {
+    try { row.country.name = regionNames.of(row.country.code); } catch { row.country.name = row.country.code; }
+  }
+  return row;
+}
 
 // Everything connected to one entity, in both directions. The label is read from the entity's point of view:
 // Van Gogh "lived in" Arles, Arles is "home of" Van Gogh.
@@ -133,6 +169,12 @@ const EXTRAS = {
     ancestors: (await apiPool.query(ancestorsSql('places'), [id])).rows,
     children: (await apiPool.query('SELECT slug, name, kind FROM places WHERE parent_id = $1 ORDER BY name', [id])).rows,
     institutions: (await apiPool.query('SELECT slug, name, kind FROM institutions WHERE place_id = $1 ORDER BY name', [id])).rows,
+  }),
+  polity: async (id) => ({
+    ancestors: (await apiPool.query(ancestorsSql('polities'), [id])).rows,
+    children: (await apiPool.query(`
+      SELECT slug, name, kind, range_json(period, period_label) AS period
+      FROM polities WHERE parent_id = $1 ORDER BY lower(period) NULLS LAST, name`, [id])).rows,
   }),
   movement: async (id) => ({
     ancestors: (await apiPool.query(ancestorsSql('movements'), [id])).rows,
@@ -188,7 +230,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       LIMIT ${p(limit)} OFFSET ${p(offset)}`, params);
 
     const total = rows.length ? Number(rows[0].total) : 0;
-    rows.forEach((r) => delete r.total);
+    rows.forEach((r) => { delete r.total; nameCountry(r); });
     res.json({ data: rows, total, limit, offset });
   });
 
@@ -204,7 +246,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => r.rows.map((x) => renderMd(x, ['notes_md']))),
       EXTRAS[e.type] ? EXTRAS[e.type](id) : {},
     ]);
-    res.json({ type: e.type, ...renderMd(entity, e.md), ...extras, relationships });
+    res.json({ type: e.type, ...nameCountry(renderMd(entity, e.md)), ...extras, relationships });
   });
 }
 

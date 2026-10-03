@@ -4,6 +4,25 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-03
 
+### Polities and countries (migrations 018, 019)
+- **What:** new entity type `polity` (table `polities`: period, kind, parent, `country_codes` ISO list) with
+  relationship types `nationality` (artist/patron), `created_in_polity` (artwork), `located_in_polity` (institution).
+  SQL functions `place_country`, `entity_home_place`, `entity_country`, `entity_polities`, `entity_table`;
+  `entity_exists`/`entity_id`/`entity_index` know the new type; quality view re-created (+ check
+  `outside_polity_period`, polities in the completeness checks). Public API: `country` (today, derived from places),
+  `polities` and (artists, patrons) `birth_place` in lists and details; filters `?country=`, `?polity=`; endpoint
+  `/v1/polities`. Admin: Polities section (nav, forms, search, history, revert). Wikidata: P27 → nationality, P495 →
+  created in (polity), polity period P571/P576 and ISO code P297; name matches of another type no longer skip the full
+  fetch. YAML folder `content/polities/`.
+- **Why:** frontend needs countries (sorting/grouping); owner: historical polities (USSR, Han dynasty) shown together
+  with the country today ("Soviet Union (today Ukraine)").
+- **Tested:** smoke test (inherited codes, polity fallback, code check, quality check); e2e 45 passing (polity form,
+  nationality link, API fields and filters, Wikidata P27 creating a polity).
+- **Revert:** redeploy the previous commit; as owner: `DROP FUNCTION entity_country, entity_polities, entity_home_place,
+  place_country, entity_table; DELETE FROM relationship_types WHERE category = 'polity'` (after deleting those
+  relationships), re-create 017's quality view and 004's `entity_index`, `DROP TABLE polities`. The enum value
+  `polity` can stay (removing enum values isn't supported).
+
 ### Git hooks run under GitHub Desktop (`scripts/githooks/`, `.gitattributes`)
 - **What:** `pre-commit` and `pre-push` start with `#!/bin/sh` (they were already POSIX); `pre-push` runs
   `check-secrets.sh` with `bash` if available, else `sh`. `check-secrets.sh` uses pipes instead of here-strings

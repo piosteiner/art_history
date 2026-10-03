@@ -122,6 +122,8 @@ const RULES = {
   artists_check: 'Death cannot be before birth.',
   relationships_check: 'An entity cannot be related to itself.',
   artworks_inventory_needs_institution: 'An inventory number belongs to a collection: set the institution (current holder) too, or leave the number empty.',
+  polities_country_codes_check: 'Country codes: two capital letters each (ISO 3166, e.g. CN, UA), one per line.',
+  polities_check: 'A polity cannot be part of itself.',
   artworks_dimensions_check: 'Dimensions: height and width go together; a depth only with both.',
 };
 function friendly(err) {
@@ -176,9 +178,9 @@ router.use((req, res, next) => {
 const HIDDEN_KEYS = ['id', 'created_at', 'updated_at', 'lifespan'];
 
 // `where` is SQL on alias a (audit_log) and r (the row as jsonb). Geography values are shown as WKT.
-// A deleted entity's name comes from its last recorded version (table name = type + 's').
+// A deleted entity's name comes from its last recorded version (its table: entity_table(), migration 019).
 const GONE_NAME = `(SELECT coalesce(x.old_row->>'name', x.old_row->>'title') FROM audit_log x
-  WHERE x.table_name = ($T) || 's' AND x.row_id = ($I)::bigint AND x.old_row IS NOT NULL ORDER BY x.id DESC LIMIT 1)`;
+  WHERE x.table_name = entity_table(($T)::entity_type) AND x.row_id = ($I)::bigint AND x.old_row IS NOT NULL ORDER BY x.id DESC LIMIT 1)`;
 async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
   const gone = (typeExpr, idExpr) => `coalesce(${GONE_NAME.replace('$T', () => typeExpr).replace('$I', () => idExpr)}, (${typeExpr}) || ' #' || (${idExpr}))`;
   const { rows } = await db.query(`

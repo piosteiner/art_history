@@ -10,6 +10,8 @@ DELETE FROM artworks;
 DELETE FROM institutions;
 DELETE FROM artists;
 DELETE FROM patrons;
+UPDATE polities SET parent_id = NULL;
+DELETE FROM polities;
 UPDATE movements SET parent_id = NULL;
 DELETE FROM movements;
 UPDATE places SET parent_id = NULL;
@@ -142,6 +144,37 @@ SELECT p.name, r.period_label AS period FROM relationships r JOIN places p ON p.
 WHERE r.subject_type = 'institution' AND r.subject_id = entity_id('institution', 'sample-museum') AND r.relationship_type = 'located_in'
 UNION ALL
 SELECT p.name, 'now' FROM institutions i JOIN places p ON p.id = i.place_id WHERE i.slug = 'sample-museum';
+
+\echo '== polities (019): nationality in sequence, "USSR (today Ukraine)", Han dynasty → CN without a place:'
+INSERT INTO places (slug, name, kind, country_code, location) VALUES
+  ('ukraine', 'Ukraine', 'country', 'UA', 'POINT(31.17 48.38)');
+INSERT INTO places (slug, name, kind, parent_id, location) VALUES      -- no code of its own: inherited from Ukraine
+  ('kyiv', 'Kyiv', 'settlement', entity_id('place', 'ukraine'), 'POINT(30.52 50.45)');
+INSERT INTO polities (slug, name, kind, period, period_label, country_codes) VALUES
+  ('russian-empire', 'Russian Empire', 'empire', '[1721-01-01,1917-09-15)', '1721–1917', '{RU,UA,BY,FI,PL}'),
+  ('ussr', 'Soviet Union', 'federation', '[1922-12-30,1991-12-27)', '1922–1991', '{RU,UA,BY,KZ}'),
+  ('han-dynasty', 'Han dynasty', 'dynasty', '[0206-01-01 BC,0221-01-01)', '206 BCE–220 CE', '{CN}');
+INSERT INTO artists (slug, name, birth, birth_label) VALUES ('sample-painter', 'Sample Painter', year_range(1879), '1879');
+INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period) VALUES
+  ('artist', entity_id('artist', 'sample-painter'), 'born_in', 'place', entity_id('place', 'kyiv'), year_range(1879)),
+  ('artist', entity_id('artist', 'sample-painter'), 'nationality', 'polity', entity_id('polity', 'russian-empire'), year_range(1879, 1917)),
+  ('artist', entity_id('artist', 'sample-painter'), 'nationality', 'polity', entity_id('polity', 'ussr'), year_range(1922, 1935));
+SELECT p->>'name' || ' (today ' || (entity_country('artist', a.id)->>'name') || ')' AS shown
+FROM artists a, jsonb_array_elements(entity_polities('artist', a.id)) p WHERE a.slug = 'sample-painter';
+INSERT INTO artworks (slug, title) VALUES ('sample-bronze', 'Sample bronze');
+INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+VALUES ('artwork', entity_id('artwork', 'sample-bronze'), 'created_in_polity', 'polity', entity_id('polity', 'han-dynasty'));
+SELECT entity_country('artwork', entity_id('artwork', 'sample-bronze')) ->> 'code' = 'CN' AS han_bronze_today_cn,
+       entity_country('artwork', entity_id('artwork', 'sample-bronze')) ->> 'source' AS source;
+SAVEPOINT bad_code;
+\set ON_ERROR_STOP off
+INSERT INTO polities (slug, name, country_codes) VALUES ('bad', 'Bad', '{ukr}');  -- must fail: not an ISO alpha-2 code
+\set ON_ERROR_STOP on
+ROLLBACK TO SAVEPOINT bad_code;
+SELECT check_id, detail FROM quality_issues WHERE check_id = 'outside_polity_period';  -- none yet
+INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period)
+VALUES ('artist', entity_id('artist', 'sample-painter'), 'nationality', 'polity', entity_id('polity', 'ussr'), year_range(1900, 1905));
+SELECT check_id, detail FROM quality_issues WHERE check_id = 'outside_polity_period';  -- USSR in 1900: flagged
 
 \echo '== delete Van Gogh → relationships cleaned up in both directions:'
 SELECT count(*) AS edges_before FROM relationships

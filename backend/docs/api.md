@@ -14,7 +14,7 @@ Show `label` to people, use `from`/`to` for timelines.
 
 ## Entities
 Types (URL segment → `type`): `artists` → artist, `artworks` → artwork, `places` → place, `movements` → movement,
-`institutions` → institution, `patrons` → patron.
+`institutions` → institution, `patrons` → patron, `polities` → polity.
 
 ### `GET /v1/<type>` — list
 | Param | |
@@ -34,6 +34,27 @@ for a smaller version replace `/NNNNpx-` in a Commons thumbnail URL with a stand
 without images. The detail adds `images`, all of them in order (the first = `image_url`):
 `[{url, source_url, license, credit, caption}]` — e.g. caption "Back view" for a sculpture. Show license and credit
 wherever an image is shown.
+
+### Countries and polities (artists, artworks, institutions, patrons)
+Two different things, both in lists and details:
+- `country` — the country **today**, derived from the entry's place: an artist's / patron's birthplace, where an
+  artwork was created, where an institution is. A place without its own ISO code inherits the nearest parent's
+  (Zundert → Netherlands). Without a place, it comes from the linked polities if they all lie in one modern country
+  (a Han dynasty bronze → China).
+  `{code: "NL", name: "Netherlands", slug: "netherlands"|null, source: "place"|"polity", place: {slug, name}|null}` or `null`.
+  `slug` is the country's place entry if there is one.
+- `polities` — the dated links to polities (states, empires, dynasties), in time order:
+  `[{slug, name, kind, relationship: "nationality"|"created_in_polity"|"located_in_polity", period, polity_period, country_codes}]`.
+  Nationality is entered by hand (an art-historical attribution) — not derived from the birthplace.
+- Artists and patrons also have `birth_place: {slug, name, country_code}` (or `null`).
+
+Show both together as e.g. **"Soviet Union (today Ukraine)"**: the polity's `name` + `country.name`. Don't derive "today"
+from a polity's `country_codes` when there are several (the USSR covers 15 countries) — `country` already did the right thing.
+Filters: `?country=NL` (today's country, ISO code) and `?polity=<slug>`.
+
+Polities (`/v1/polities`): `kind`, `period` (when it existed), `country_codes` (modern countries on its territory;
+filter `?country=UA`); the detail adds `ancestors` / `children` (Western Han ⊂ Han dynasty) and, as relationships,
+everyone and everything linked to it ("nationality of" …).
 
 ### `GET /v1/<type>/:slug` — detail
 All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:

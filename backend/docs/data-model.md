@@ -129,6 +129,21 @@ Per arc a partial index `(…_id, position)` serves "the images of this entry, i
 builds the list with `jsonb_agg(jsonb_build_object(…) ORDER BY position, id)`. The former single-image columns
 (014 and earlier) were moved here as position 0 and dropped.
 
+## Polities and countries (migrations 018, 019)
+"Which country is it in today?" and "which polity did it belong to?" are kept apart:
+- **Today** is derived, never entered: `place_country(place_id)` walks up `parent_id` with a recursive CTE that stops at
+  the first place with a `country_code`; `entity_home_place()` picks the place that counts (birthplace, place of
+  creation, an institution's location); `entity_country()` combines them, with the linked polities' `country_codes` as
+  fallback when they name exactly one country (`HAVING count(DISTINCT code) = 1`).
+- **Polities** (`polities`: states, empires, kingdoms, dynasties) are an entity type with a `period` (when they existed)
+  and `country_codes text[]` (ISO codes of the modern countries on their territory; one `CHECK` validates the whole
+  array through `array_to_string(…) ~ regex`; GIN index for `@>`). Links are ordinary dated relationships:
+  `nationality` (artist/patron), `created_in_polity` (artwork), `located_in_polity` (institution) — category
+  `polity`, not physical presence, so never drawn as travel. The quality check `outside_polity_period` reports links
+  whose period cannot overlap the polity's (`NOT (r.period && p.period)`).
+- Adding the type needed two migrations: `ALTER TYPE … ADD VALUE` (018) can't be used in the transaction that adds it.
+  `entity_table(type)` maps a type to its table (`polity` → `polities`, not type + "s").
+
 ## Data quality (migration 013)
 `quality_issues` is a view with one `SELECT` per check (`UNION ALL`): `check_id, severity, entity_type, entity_id,
 issue_key, detail`. The date checks are range operators — `&&` overlap, `<<` entirely before, `>>` entirely after,
