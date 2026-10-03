@@ -10,7 +10,8 @@ import type { EntityMap, EntityType, PlacesMap, PresenceMap, StopFeature } from 
 
 setWorkerUrl(workerUrl);
 
-const KEY = import.meta.env.VITE_MAPTILER_KEY as string | undefined;
+// trimmed: a space or line break pasted along with the key makes MapTiler refuse it (403)
+const KEY = (import.meta.env.VITE_MAPTILER_KEY as string | undefined)?.trim() || undefined;
 // MapTiler "dataviz" is a muted base map made for overlays. Without a key: OpenFreeMap (free, no key).
 const style = () => {
   const dark = isDark();
