@@ -1,13 +1,16 @@
-#!/bin/bash
+#!/bin/sh
+# POSIX sh on purpose: GitHub Desktop's bundled Git has sh but no bash.
 # Re-scan every commit being pushed (catches commits made with --no-verify).
 z=0000000000000000000000000000000000000000
+# check-secrets.sh needs bash; GitHub Desktop's sh.exe is bash in POSIX mode, which runs it too.
+shell=$(command -v bash || echo sh)
 while read -r lref lsha rref rsha; do
   [ "$lsha" = "$z" ] && continue
   if [ "$rsha" = "$z" ]; then base=$(git rev-list "$lsha" --not --remotes | tail -1); base="${base:+$base^}"
   else base="$rsha"; fi
   [ -z "$base" ] && continue
   for c in $(git rev-list "$base..$lsha" 2>/dev/null || git rev-list "$lsha" --not --remotes); do
-    "$(dirname "$0")/check-secrets.sh" "$c^!" || { echo "  in commit $(git log -1 --format='%h %s' "$c")"; exit 1; }
+    "$shell" "$(dirname "$0")/check-secrets.sh" "$c^!" || { echo "  in commit $(git log -1 --format='%h %s' "$c")"; exit 1; }
   done
 done
 exit 0

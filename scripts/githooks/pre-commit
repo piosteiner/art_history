@@ -1,4 +1,5 @@
-#!/bin/bash
+#!/bin/sh
+# POSIX sh on purpose: GitHub Desktop's bundled Git has sh but no bash.
 # Blocks commits that would leak secrets into this PUBLIC repo.
 # Bypass (only if you are sure): git commit --no-verify
 staged=$(git diff --cached --name-only --diff-filter=ACM)

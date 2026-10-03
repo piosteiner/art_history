@@ -2,6 +2,20 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-03
+
+### Git hooks run under GitHub Desktop (`scripts/githooks/`, `.gitattributes`)
+- **What:** `pre-commit` and `pre-push` start with `#!/bin/sh` (they were already POSIX); `pre-push` runs
+  `check-secrets.sh` with `bash` if available, else `sh`. `check-secrets.sh` uses pipes instead of here-strings
+  (`<<<`). New `.gitattributes` keeps LF endings for `*.sh` and the hooks.
+- **Why:** on a Windows checkout GitHub Desktop failed with "cannot spawn scripts/githooks/pre-push": CRLF made the
+  shebang `/bin/bash\r`, and its bundled Git has `sh` but no `bash`. Its bash also cannot create temp files for large
+  here-strings, so the credential check silently passed big diffs; with pipes it doesn't need temp files.
+  On the VPS nothing changes in behaviour (`/bin/sh` = dash runs the hooks, `bash` runs the scanner).
+- **Tested:** with GitHub Desktop's Git and PATH: real push passes; a 20 000-line diff with a fake password and a
+  commit adding `backend/.env` are both blocked; same results in Git Bash.
+- **Revert:** `git revert` the commit (Windows users then need `git config core.autocrlf false` or Git Bash to push).
+
 ## 2026-10-02
 
 ### Several images per artwork, artist and institution (migration 017)

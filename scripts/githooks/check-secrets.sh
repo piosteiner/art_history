@@ -3,6 +3,8 @@
 # Usage: check-secrets.sh <git diff args...>   (e.g. --cached, or A..B)
 # Checks: (1) secret-looking file names, (2) credential-looking lines,
 #         (3) any real value from the server-side secrets file(s).
+# No here-strings (<<<): they need a temp file, which GitHub Desktop's Git cannot always create — the
+# check would then fail silently. Pipes need none.
 SECRETS_DIR="${ARTHISTORY_SECRETS_DIR:-$HOME/.config/arthistory}"
 fail=0
 
@@ -16,7 +18,7 @@ done < <(git diff --name-only --diff-filter=ACMR "$@")
 
 added=$(git diff -U0 --diff-filter=ACMR "$@" -- . ':!*.example' ':!scripts/githooks/*' | grep -E '^\+[^+]' || true)
 
-if grep -iqE '(password|passwd|secret|api_?key|token|private_?key)[A-Za-z_]*\s*[=:]\s*["'"'"']?[A-Za-z0-9/+_\-]{8,}|-----BEGIN [A-Z ]*PRIVATE KEY|\$2[aby]\$[0-9]{2}\$' <<<"$added"; then
+if printf '%s\n' "$added" | grep -iqE '(password|passwd|secret|api_?key|token|private_?key)[A-Za-z_]*\s*[=:]\s*["'"'"']?[A-Za-z0-9/+_\-]{8,}|-----BEGIN [A-Z ]*PRIVATE KEY|\$2[aby]\$[0-9]{2}\$'; then
   echo "✗ changes contain a credential-looking line (password/token/key/bcrypt hash)"; fail=1
 fi
 
@@ -27,7 +29,7 @@ for envf in "$SECRETS_DIR"/*.env; do
     val="${val%\"}"; val="${val#\"}"; val="${val%\'}"; val="${val#\'}"
     [ ${#val} -lt 6 ] && continue
     case "$val" in localhost|127.0.0.1|production|development|true|false) continue ;; esac
-    if grep -qF -- "$val" <<<"$added"; then
+    if printf '%s\n' "$added" | grep -qF -- "$val"; then
       echo "✗ changes contain the real value of $key from $(basename "$envf")"; fail=1
     fi
   done < "$envf"
