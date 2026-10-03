@@ -3,7 +3,7 @@ import { getEntity, getEntityMap, PLURAL } from '../api';
 import { GROUPS, type Group } from '../selection';
 import {
   countryLink, countryName, dateLabel, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
-  wireImageFallbacks, type Html,
+  wireImageFallbacks, wireLightbox, type Html,
 } from '../html';
 import { COLORS, createMap, showEntity, showPoint } from '../map';
 import type { ArtworkSummary, Category, Country, DetailByPlural, Entity, Image, KindRef, Plural, PolityLink, Relationship } from '../types';
@@ -187,6 +187,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         </div>
       </article>`);
       wireImageFallbacks(main);
+      wireLightbox(main);
       if (!hasMap) return;
 
       const mapEl = main.querySelector<HTMLElement>('#map')!;

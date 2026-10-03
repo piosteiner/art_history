@@ -1,6 +1,7 @@
 import './style.css';
+import { mountThemeToggle } from './theme';
 import { html, PLURAL_LABEL, render } from './html';
-import { start, type Cleanup, type Route } from './router';
+import { parse, start, type Cleanup, type Route } from './router';
 import { mountSearch } from './search';
 import type { Plural } from './types';
 import { detail } from './views/detail';
@@ -13,6 +14,8 @@ const main = document.getElementById('app')!;
 const nav = document.getElementById('nav')!;
 render(nav, html`<a href="#/">Explore</a>${NAV.map((p) => html`<a href="#/${p}">${PLURAL_LABEL[p]}</a>`)}`);
 mountSearch(document.getElementById('search')!);
+// switching between light and dark re-renders the page so the maps load the matching base map
+mountThemeToggle(document.getElementById('theme')!, () => onRoute(parse(location.hash)));
 
 let cleanup: Cleanup;
 

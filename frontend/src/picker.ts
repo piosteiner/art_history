@@ -2,7 +2,7 @@
 // add or remove everything a search shows, "chosen first", and a checklist of entries.
 import { explain, matches, saveSort, savedSort, sortEntries, sortOptions, type Entry, type SortOption } from './catalog';
 import { href, html, render } from './html';
-import { ALL, GROUPS, type Group, type Pick, type Selection } from './selection';
+import { ALL, GROUPS, includes, type Group, type Pick, type Selection } from './selection';
 import type { Plural } from './types';
 
 export interface PickerGroup {
@@ -20,7 +20,7 @@ interface View {
 }
 
 const countLabel = (p: Pick, total: number) =>
-  p.mode === 'all' ? 'all' : p.mode === 'none' ? 'none' : `${p.slugs.length} of ${total}`;
+  p.mode === 'all' ? 'all' : p.mode === 'none' ? 'none' : p.mode === 'by-artists' ? 'by chosen artists' : `${p.slugs.length} of ${total}`;
 
 export function mountPickers(
   root: HTMLElement,
@@ -51,6 +51,7 @@ export function mountPickers(
           <div class="pick-actions">
             <button type="button" data-act="all">All</button>
             <button type="button" data-act="none">None</button>
+            ${g.group === 'artwork' ? html`<button type="button" data-act="by-artists" title="Follows the Artists selection, also when you change it later">By chosen artists</button>` : ''}
             <button type="button" data-act="add-shown" hidden></button>
             <button type="button" data-act="remove-shown" hidden>Remove shown</button>
             <label class="pick-first"><input type="checkbox" class="pick-chosen-first"> chosen first</label>
@@ -65,10 +66,9 @@ export function mountPickers(
 
   const reset = root.querySelector<HTMLButtonElement>('.pickers-reset')!;
   const detailsOf = (g: Group) => root.querySelector<HTMLDetailsElement>(`details.pick[data-group="${g}"]`)!;
-  const isChosen = (g: Group, slug: string) => {
-    const p = sel[g];
-    return p.mode === 'all' || (p.mode === 'some' && p.slugs.includes(slug));
-  };
+  // an artwork's artist, for the "by chosen artists" mode
+  const creators = new Map((byGroup.get('artwork')?.entries ?? []).map((e) => [e.slug, (e.item as { creator?: { slug: string } | null }).creator?.slug]));
+  const isChosen = (g: Group, slug: string) => includes(sel, g, slug, (a) => creators.get(a));
 
   /** The entries a group's search lets through, in its sort order (chosen ones first if asked). */
   function visible(g: Group) {
@@ -143,13 +143,22 @@ export function mountPickers(
   function set(g: Group, p: Pick) {
     sel = { ...sel, [g]: normalize(g, p) };
     syncSummaries();
-    if (views.get(g)!.chosenFirst) renderList(g);
-    else syncChecks(g);
+    // "by chosen artists" follows the artist picks, so those ticks change too
+    const affected = g === 'artist' && sel.artwork.mode === 'by-artists' ? [g, 'artwork' as Group] : [g];
+    for (const a of affected) {
+      if (!byGroup.has(a)) continue;
+      if (views.get(a)!.chosenFirst) renderList(a);
+      else syncChecks(a);
+    }
     onChange(sel);
   }
 
   const allSlugs = (g: Group) => byGroup.get(g)!.entries.map((e) => e.slug);
-  const current = (g: Group) => (sel[g].mode === 'all' ? allSlugs(g) : sel[g].mode === 'some' ? (sel[g] as { slugs: string[] }).slugs : []);
+  const current = (g: Group) => {
+    const p = sel[g];
+    if (p.mode === 'some') return p.slugs;
+    return p.mode === 'none' ? [] : allSlugs(g).filter((s) => isChosen(g, s));
+  };
 
   function toggle(g: Group, slug: string, on: boolean) {
     const now = current(g);
@@ -198,6 +207,7 @@ export function mountPickers(
     switch (btn.dataset.act) {
       case 'all': return set(g, { mode: 'all' });
       case 'none': return set(g, { mode: 'none' });
+      case 'by-artists': return set(g, { mode: 'by-artists' });
       case 'add-shown': {
         if (sel[g].mode === 'all') return;
         const now = current(g);

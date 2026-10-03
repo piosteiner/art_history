@@ -5,15 +5,19 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 // MapLibre 6 loads its worker from a separate module; let Vite bundle it and tell MapLibre where it is.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { html, href, type Html } from './html';
+import { isDark } from './theme';
 import type { EntityMap, EntityType, PlacesMap, PresenceMap, StopFeature } from './types';
 
 setWorkerUrl(workerUrl);
 
 const KEY = import.meta.env.VITE_MAPTILER_KEY as string | undefined;
 // MapTiler "dataviz" is a muted base map made for overlays. Without a key: OpenFreeMap (free, no key).
-const STYLE = KEY
-  ? `https://api.maptiler.com/maps/dataviz/style.json?key=${encodeURIComponent(KEY)}`
-  : 'https://tiles.openfreemap.org/styles/positron';
+const style = () => {
+  const dark = isDark();
+  return KEY
+    ? `https://api.maptiler.com/maps/${dark ? 'dataviz-dark' : 'dataviz'}/style.json?key=${encodeURIComponent(KEY)}`
+    : `https://tiles.openfreemap.org/styles/${dark ? 'dark' : 'positron'}`;
+};
 
 export const COLORS = {
   presence: '#b4462b',
@@ -26,7 +30,7 @@ export const COLORS = {
 export function createMap(container: HTMLElement): MapLibre {
   const map = new MapLibre({
     container,
-    style: STYLE,
+    style: style(),
     center: [60, 45], // between Europe and East Asia, the project's scope
     zoom: 1.6,
     attributionControl: { compact: true },
@@ -82,6 +86,49 @@ function once(map: MapLibre, key: string, fn: () => void) {
   }
 }
 
+/** A chevron drawn on a canvas (no sprite or font needed); SDF so each route can tint it in its own colour. */
+function ensureArrow(map: MapLibre) {
+  if (map.hasImage('route-arrow')) return;
+  const size = 24;
+  const c = document.createElement('canvas');
+  c.width = c.height = size;
+  const g = c.getContext('2d')!;
+  g.strokeStyle = '#000';
+  g.lineWidth = 3.5;
+  g.lineCap = g.lineJoin = 'round';
+  g.beginPath();
+  g.moveTo(8, 5);
+  g.lineTo(16, 12);
+  g.lineTo(8, 19);
+  g.stroke();
+  map.addImage('route-arrow', { width: size, height: size, data: new Uint8Array(g.getImageData(0, 0, size, size).data.buffer) }, { sdf: true });
+}
+
+/** Arrows along a route layer's lines, pointing in travel (date) order. */
+function addArrows(map: MapLibre, id: string, source: string, color: ExpressionSpecification | string) {
+  ensureArrow(map);
+  map.addLayer({
+    id, type: 'symbol', source,
+    layout: {
+      'symbol-placement': 'line', 'symbol-spacing': 140, 'icon-image': 'route-arrow', 'icon-size': 0.95,
+      'icon-rotation-alignment': 'map', 'icon-allow-overlap': true, 'icon-ignore-placement': true,
+    },
+    paint: { 'icon-color': color, 'icon-opacity': 0.9 },
+  });
+}
+
+/** Numbers the dated presence stops in date order (the route's order) as `stop` / `stops` properties. */
+function numberStops<T extends { properties: { layer: string; period: { from_year: number | null; from: string | null } | null } }>(stops: T[]) {
+  const dated = stops
+    .filter((f) => f.properties.layer === 'presence' && f.properties.period?.from_year != null)
+    .sort((a, b) => a.properties.period!.from_year! - b.properties.period!.from_year! || (a.properties.period!.from ?? '').localeCompare(b.properties.period!.from ?? ''));
+  return stops.map((f) => {
+    const i = dated.indexOf(f);
+    return i < 0 ? f : { ...f, properties: { ...f.properties, stop: i + 1, stops: dated.length } };
+  });
+}
+const stopLabel = (p: Record<string, unknown>) => (p.stop ? html`<span class="tag">stop ${p.stop as number} of ${p.stops as number}</span> ` : '');
+
 // MapLibre flattens nested properties to JSON strings.
 const prop = <T>(v: unknown): T => (typeof v === 'string' && /^[[{]/.test(v) ? JSON.parse(v) : v) as T;
 
@@ -92,7 +139,7 @@ const prop = <T>(v: unknown): T => (typeof v === 'string' && /^[[{]/.test(v) ? J
  * of Japan) are hollow rings in another colour and never part of the route: no travel is implied.
  */
 export function showEntity(map: MapLibre, fc: EntityMap) {
-  const stops = fc.features.filter((f): f is StopFeature => f.geometry.type === 'Point');
+  const stops = numberStops(fc.features.filter((f): f is StopFeature => f.geometry.type === 'Point'));
   const route = fc.features.filter((f) => f.properties.layer === 'route');
   whenReady(map, () => {
     setData(map, 'entity-route', { type: 'FeatureCollection', features: route as GeoJSON.Feature[] });
@@ -102,6 +149,7 @@ export function showEntity(map: MapLibre, fc: EntityMap) {
       layout: { 'line-join': 'round', 'line-cap': 'round' },
       paint: { 'line-color': COLORS.route, 'line-width': 2.5, 'line-opacity': 0.75 },
     });
+    addArrows(map, 'entity-arrows', 'entity-route', COLORS.route);
     map.addLayer({
       id: 'entity-association', type: 'circle', source: 'entity-stops',
       filter: ['==', ['get', 'layer'], 'association'],
@@ -124,7 +172,7 @@ export function showEntity(map: MapLibre, fc: EntityMap) {
       const period = prop<{ label: string } | null>(p.period);
       return html`<div class="popup-row">
         <strong><a href="${href('place', place.slug)}">${place.name}</a></strong><br>
-        ${p.label}${period ? html` · ${period.label}` : ''}
+        ${stopLabel(p)}${p.label}${period ? html` · ${period.label}` : ''}
         ${p.note ? html`<br><em>${p.note}</em>` : ''}
         ${p.layer === 'association' ? html`<br><span class="tag tag-association">association, not travel</span>` : ''}
       </div>`;
@@ -161,7 +209,7 @@ export function showPoint(map: MapLibre, coords: [number, number], name: string)
 
 // The explore map shows one of three overlays at a time; switching removes the others' layers.
 const PLACE_LAYERS = ['places-circles'];
-const SELECTION_LAYERS = ['sel-route', 'sel-association', 'sel-presence'];
+const SELECTION_LAYERS = ['sel-route', 'sel-arrows', 'sel-association', 'sel-presence'];
 const OVERLAY_LAYERS = [...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
 const clearOverlays = (map: MapLibre) => removeLayers(map, OVERLAY_LAYERS);
 
@@ -254,7 +302,7 @@ export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
     properties: { ...f.properties, color: item.color, entity: item.fc.entity },
   }) as unknown as GeoJSON.Feature;
   const routes = items.flatMap((i) => i.fc.features.filter((f) => f.properties.layer === 'route').map((f) => tag(i, f)));
-  const stops = items.flatMap((i) => i.fc.features.filter((f) => f.geometry.type === 'Point').map((f) => tag(i, f)));
+  const stops = items.flatMap((i) => numberStops(i.fc.features.filter((f): f is StopFeature => f.geometry.type === 'Point')).map((f) => tag(i, f)));
   whenReady(map, () => {
     clearOverlays(map);
     setData(map, 'sel-routes', { type: 'FeatureCollection', features: routes });
@@ -264,6 +312,7 @@ export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
       layout: { 'line-join': 'round', 'line-cap': 'round' },
       paint: { 'line-color': ['get', 'color'], 'line-width': 2.5, 'line-opacity': 0.75 },
     });
+    addArrows(map, 'sel-arrows', 'sel-routes', ['get', 'color']);
     map.addLayer({
       id: 'sel-association', type: 'circle', source: 'sel-stops',
       filter: ['==', ['get', 'layer'], 'association'],
@@ -281,7 +330,7 @@ export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
       const period = prop<{ label: string } | null>(p.period);
       return html`<div class="popup-row">
         <i class="dot" style="background:${p.color}"></i> <a href="${href(entity.type, entity.slug)}">${entity.name}</a>
-        ${p.label} <a href="${href('place', place.slug)}">${place.name}</a>${period ? html` · ${period.label}` : ''}
+        ${stopLabel(p)}${p.label} <a href="${href('place', place.slug)}">${place.name}</a>${period ? html` · ${period.label}` : ''}
         ${p.note ? html`<br><em>${p.note}</em>` : ''}
         ${p.layer === 'association' ? html`<br><span class="tag tag-association">association, not travel</span>` : ''}
       </div>`;

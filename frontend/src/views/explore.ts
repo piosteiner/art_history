@@ -154,7 +154,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const fc = await getPresence(w.from, w.to, [...types]);
     if (stale()) return;
     // the API filters by type; single picks are filtered here (backend wish: an `entities=` parameter)
-    const features = fc.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug));
+    const features = fc.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, creatorOf));
     showPresence(map, { ...fc, features });
     const who = new Set(features.map((f) => `${f.properties.entity.type}/${f.properties.entity.slug}`));
     const where = new Set(features.map((f) => f.properties.place.slug));
@@ -164,6 +164,10 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   }
 
   // ---- timeline + pickers (need the entry lists) ---------------------------------------------------
+
+  // an artwork's artist, for "works by the chosen artists" (known once the lists are loaded)
+  const creators = new Map<string, string>();
+  const creatorOf = (artwork: string) => creators.get(artwork);
 
   let timeline: ReturnType<typeof renderTimeline> | undefined;
   let timelineView: { from: number; to: number } | null = null; // zoom survives redraws when the picks change
@@ -205,6 +209,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     .then((l) => {
       if (!main.contains(timelineEl)) return;
       lists = l;
+      l.artworks.forEach((a) => a.creator && creators.set(a.slug, a.creator.slug));
+      if (sel.artwork.mode === 'by-artists' && win) updateMap();
       const groups: PickerGroup[] = [
         { group: 'artist', plural: 'artists', label: 'Artists', entries: entries('artists', l.artists) },
         { group: 'artwork', plural: 'artworks', label: 'Artworks', entries: entries('artworks', l.artworks) },

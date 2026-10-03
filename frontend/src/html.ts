@@ -61,7 +61,7 @@ export function figure(img: Image, alt: string, width = 500) {
   const small = thumb(img.url, width);
   const credit = [img.credit, img.license].filter(Boolean).join(' · ');
   return html`<figure class="figure">
-    <img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async"
+    <img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async" data-full="${img.url}"
       ${small !== img.url ? html`data-fallback="${img.url}"` : ''}>
     <figcaption>
       ${img.caption ? html`<span class="caption">${img.caption}</span>` : ''}
@@ -77,6 +77,26 @@ export function wireImageFallbacks(root: Element) {
       const original = img.dataset.fallback;
       if (original && img.src !== original) img.src = original;
     }, { once: true });
+  });
+}
+
+/** Click an image in a figure to see it large (with its credit); click, × or Esc closes it. */
+export function wireLightbox(root: Element) {
+  root.querySelectorAll<HTMLImageElement>('.figure img[data-full]').forEach((img) => {
+    img.addEventListener('click', () => {
+      const dialog = document.createElement('dialog');
+      dialog.className = 'lightbox';
+      const caption = img.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
+      // the caption was built by figure() above from escaped values, so reusing its markup is safe
+      dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close">×</button>
+        <figure><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}"><figcaption>${caption}</figcaption></figure>`;
+      dialog.addEventListener('click', (e) => {
+        if (!(e.target as Element).closest('figcaption a')) dialog.close();
+      });
+      dialog.addEventListener('close', () => dialog.remove());
+      document.body.append(dialog);
+      dialog.showModal();
+    });
   });
 }
 
