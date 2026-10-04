@@ -6,12 +6,12 @@
 import { getEntityMap, getPlacesMap, getPresence, listEntities, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { href, html, render } from '../html';
-import { COLORS, createMap, PALETTE, showPlaces, showPresence, showSelection, type ColoredEntityMap } from '../map';
+import { COLORS, createMap, PALETTE, showPlaces, showPresence, showSelection, TYPE_COLORS, type ColoredEntityMap } from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
-import { chosen, includes, isDefault, parseSelection, writeSelection, type Selection } from '../selection';
+import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
 import { renderTimeline, type TimelineRow } from '../timeline';
-import type { EntityType, Plural } from '../types';
+import type { EntityType, Plural, PresenceMap } from '../types';
 import { showError } from './common';
 
 const STORAGE_KEY = 'arthistory:explore';
@@ -109,17 +109,35 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     }
   }
 
+  // Start map without single picks or a time window: every place plus the routes of everything selected, from all
+  // dated presence links (one request; /v1/map/presence fails below year -4713, PostgreSQL's oldest date).
+  const ALL_TIME = { from: -3000, to: new Date().getFullYear() + 1 };
   async function overview(stale: () => boolean) {
-    const fc = await getPlacesMap();
+    const types = (['artist', 'patron', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
+    const [places, all] = await Promise.all([
+      getPlacesMap(),
+      types.length ? getPresence(ALL_TIME.from, ALL_TIME.to, [...types]) : Promise.resolve({ type: 'FeatureCollection', features: [] } as PresenceMap),
+    ]);
     if (stale()) return;
-    showPlaces(map, fc);
-    render(legend, html`<span><i class="dot" style="background:${COLORS.place}"></i>someone or something was there</span>
+    const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, creatorOf)).map((f) => f.properties);
+    const where = new Map(places.features.map((f) => [f.properties.slug, f.geometry.coordinates] as const));
+    showPlaces(map, places, rows, (slug) => where.get(slug));
+    // legend: only kinds that actually have a route (an entry with dated stops at two or more places)
+    const placesOf = new Map<string, Set<string>>();
+    for (const r of rows) {
+      if (r.period?.from_year == null) continue;
+      const key = `${r.entity.type}/${r.entity.slug}`;
+      placesOf.set(key, (placesOf.get(key) ?? new Set()).add(r.place.slug));
+    }
+    const kinds = types.filter((t) => [...placesOf].some(([k, p]) => k.startsWith(`${t}/`) && p.size > 1));
+    render(legend, html`${kinds.map((t) => html`<span><i class="line" style="background:${TYPE_COLORS[t]}"></i>${({ artist: 'artists', patron: 'patrons', artwork: 'artworks' })[t]}’ routes, in date order</span>`)}
+      <span><i class="dot" style="background:${COLORS.place}"></i>someone or something of the selection was there</span>
       <span><i class="dot" style="background:${COLORS.association}"></i>associations only (e.g. influence)</span>
-      <span><i class="dot" style="background:${COLORS.empty}"></i>no links yet</span>
-      <span><i class="ring" style="border-color:${COLORS.place}"></i>ring = country or region</span>`);
-    status.textContent = isDefault(sel)
-      ? `${fc.features.length} places. Size = number of links. Pick entries above to see their routes.`
-      : `${fc.features.length} places, counting all entries. Pick single entries above to see their routes, or a time window to filter.`;
+      <span><i class="ring" style="border-color:${COLORS.place}"></i>country or region</span>`);
+    const entries = new Set(rows.map((r) => `${r.entity.type}/${r.entity.slug}`)).size;
+    status.textContent = rows.length
+      ? `${entries} ${entries === 1 ? 'entry' : 'entries'} at ${new Set(rows.map((r) => r.place.slug)).size} places. Click a place to see what happened there; hover or click a route to follow it.`
+      : 'Nothing in the selection has dated places yet.';
   }
 
   async function routes(stale: () => boolean) {

@@ -164,3 +164,29 @@ test('privacy page from the footer; the site sets no cookies', async ({ page, co
   await expect(page.locator('main')).toContainText('info@piogino.ch');
   expect(await context.cookies()).toEqual([]); // the image stand-in offers a cookie (fixtures.ts): it must be refused
 });
+
+test('start map: routes of the selection, a place lists what happened there', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('#map-status')).toContainText('Click a place to see what happened there');
+  // the dev build exposes the map (window.__maps) so the test can click a known place
+  await page.waitForFunction(() => {
+    const m = (window as unknown as { __maps?: { getSource(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
+    return !!m?.getSource('ov-routes') && m.querySourceFeatures('ov-routes').length > 0; // drawn, not just added
+  });
+  const routes = await page.evaluate(() => (window as unknown as { __maps: { querySourceFeatures(id: string): { properties: { name: string } }[] }[] }).__maps.at(-1)!
+    .querySourceFeatures('ov-routes').map((f) => f.properties.name));
+  expect(routes).toContain('Vincent van Gogh');
+  const pt = await page.evaluate(() => {
+    const m = (window as unknown as { __maps: { jumpTo(o: object): void; project(c: [number, number]): { x: number; y: number }; getCanvas(): HTMLCanvasElement }[] }).__maps.at(-1)!;
+    m.jumpTo({ center: [2.35, 48.86], zoom: 6 });
+    const p = m.project([2.3522, 48.8566]);
+    const r = m.getCanvas().getBoundingClientRect();
+    return { x: r.left + p.x, y: r.top + p.y };
+  });
+  await page.waitForTimeout(500);
+  await page.mouse.click(pt.x, pt.y);
+  const popup = page.locator('.maplibregl-popup:not(.hover-tip)');
+  await expect(popup).toContainText('Paris');
+  await expect(popup.locator('.popup-events a', { hasText: 'Vincent van Gogh' })).toBeVisible();
+  await expect(popup).toContainText('lived in');
+});

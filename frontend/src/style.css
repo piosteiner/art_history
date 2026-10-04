@@ -388,3 +388,14 @@ main { min-height: 60vh; }
   .privacy-table td { display: block; border: 0; padding: .15rem 0; }
   .privacy-table td:first-child { font-weight: 600; }
 }
+
+/* start map: what happened at a place, route names on hover */
+.popup-events li { margin: .15rem 0; }
+.popup-events .dot { width: 8px; height: 8px; margin-right: .2rem; }
+.popup-note { font-size: .82rem; color: var(--muted); font-style: italic; }
+.popup-row .popup-note { margin-top: .3rem; }
+.maplibregl-popup-content ol.popup-list { padding-left: 1.3rem; }
+.hover-tip .maplibregl-popup-content { padding: .25rem .55rem; font-size: .82rem; font-weight: 600; pointer-events: none; }
+.hover-tip .maplibregl-popup-tip { display: none; }
+.maplibregl-popup-content { max-height: 320px; overflow-y: auto; }
+.popup-events { list-style: none; padding-left: 0; }

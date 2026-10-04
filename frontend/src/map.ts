@@ -212,56 +212,149 @@ export function showPoint(map: MapLibre, coords: [number, number], name: string)
   });
 }
 
-// ---- every place ---------------------------------------------------------------------------------
+// ---- every place, with the selection's routes ----------------------------------------------------
 
 // The explore map shows one of three overlays at a time; switching removes the others' layers.
 const PLACE_LAYERS = ['places-areas', 'places-circles'];
+const OVERVIEW_LAYERS = ['ov-routes', 'ov-arrows', 'ov-route-hover'];
 const SELECTION_LAYERS = ['sel-route', 'sel-arrows', 'sel-association', 'sel-presence'];
-const OVERLAY_LAYERS = [...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
+const OVERLAY_LAYERS = [...OVERVIEW_LAYERS, ...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
 const clearOverlays = (map: MapLibre) => removeLayers(map, OVERLAY_LAYERS);
 
-export function showPlaces(map: MapLibre, fc: PlacesMap) {
+/** Route colours on the start map: one per kind of entry (with hundreds of entries, one per entry wouldn't tell apart). */
+export const TYPE_COLORS: Partial<Record<EntityType, string>> = { artist: '#b4462b', patron: '#8a4f9e', artwork: '#c08a1e' };
+
+type PresenceRow = PresenceMap['features'][number]['properties'];
+const rowKey = (r: PresenceRow) => `${r.entity.type}/${r.entity.slug}`;
+const byDate = (a: PresenceRow, b: PresenceRow) =>
+  (a.period?.from_year ?? 1e9) - (b.period?.from_year ?? 1e9) || (a.period?.from ?? '').localeCompare(b.period?.from ?? '');
+
+/** What happened at a place, in date order: "Vincent van Gogh · lived in · 1888–1889 · the Yellow House". */
+function placeRows(rows: PresenceRow[]) {
+  return html`<ul class="popup-list popup-events">${[...rows].sort(byDate).map((r) => html`<li>
+    <i class="dot" style="background:${TYPE_COLORS[r.entity.type] ?? COLORS.presence}"></i>
+    <a href="${href(r.entity.type, r.entity.slug)}">${r.entity.name}</a>
+    <span class="muted">${r.label}${r.period ? ` · ${r.period.label}` : ''}</span>
+    ${r.note ? html`<div class="popup-note">${r.note}</div>` : ''}
+  </li>`)}</ul>`;
+}
+
+/**
+ * Every place, sized by what the current selection did there, plus one route per selected entry through its dated
+ * presence stops (the same stops as its own map, from /v1/map/presence). Click a place: what happened there.
+ * Hover a route: it is highlighted and named; click it: its stops in date order.
+ */
+export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined) {
+  const atPlace = new Map<string, PresenceRow[]>();
+  for (const r of presence) atPlace.set(r.place.slug, [...(atPlace.get(r.place.slug) ?? []), r]);
+  const fc: GeoJSON.FeatureCollection = {
+    type: 'FeatureCollection',
+    features: places.features.map((f) => {
+      const rows = atPlace.get(f.properties.slug) ?? [];
+      return { ...f, properties: { ...f.properties, count: rows.length, rows: JSON.stringify(rows) } } as unknown as GeoJSON.Feature;
+    }),
+  };
+  // one line per entry: its dated stops in date order, repeated stays at the same place merged
+  const perEntity = new Map<string, PresenceRow[]>();
+  for (const r of presence) perEntity.set(rowKey(r), [...(perEntity.get(rowKey(r)) ?? []), r]);
+  const routes: GeoJSON.Feature[] = [];
+  for (const [key, rows] of perEntity) {
+    const stops = rows.filter((r) => r.period?.from_year != null).sort(byDate)
+      .filter((r, i, all) => i === 0 || r.place.slug !== all[i - 1].place.slug);
+    const line = stops.map((r) => coords(r.place.slug)).filter((c): c is [number, number] => !!c);
+    if (line.length < 2) continue;
+    const e = rows[0].entity;
+    routes.push({
+      type: 'Feature', geometry: { type: 'LineString', coordinates: line },
+      properties: {
+        key, name: e.name, type: e.type, slug: e.slug, color: TYPE_COLORS[e.type] ?? COLORS.route,
+        stops: JSON.stringify(stops.map((s) => ({ place: s.place.name, slug: s.place.slug, label: s.label, period: s.period?.label ?? '' }))),
+      },
+    });
+  }
+
   whenReady(map, () => {
     clearOverlays(map);
-    setData(map, 'places', fc as unknown as GeoJSON.FeatureCollection);
-    const total: ExpressionSpecification = ['+', ['get', 'presence_count'], ['get', 'association_count']];
-    const color: ExpressionSpecification = ['case', ['>', ['get', 'presence_count'], 0], COLORS.place, ['>', ['get', 'association_count'], 0], COLORS.association, COLORS.empty];
-    const radius: ExpressionSpecification = ['interpolate', ['linear'], total, 0, 4, 10, 14];
+    setData(map, 'places', fc);
+    setData(map, 'ov-routes', { type: 'FeatureCollection', features: routes });
+    map.addLayer({
+      id: 'ov-routes', type: 'line', source: 'ov-routes',
+      layout: { 'line-join': 'round', 'line-cap': 'round' },
+      paint: { 'line-color': ['get', 'color'], 'line-width': 2, 'line-opacity': 0.45 },
+    });
+    addArrows(map, 'ov-arrows', 'ov-routes', ['get', 'color']);
+    map.addLayer({
+      id: 'ov-route-hover', type: 'line', source: 'ov-routes', filter: ['==', ['get', 'key'], ''],
+      layout: { 'line-join': 'round', 'line-cap': 'round' },
+      paint: { 'line-color': ['get', 'color'], 'line-width': 4.5, 'line-opacity': 0.95 },
+    });
+    const count: ExpressionSpecification = ['get', 'count'];
+    const color: ExpressionSpecification = ['case', ['>', count, 0], COLORS.place, ['>', ['get', 'association_count'], 0], COLORS.association, COLORS.empty];
     const isArea: ExpressionSpecification = ['in', ['get', 'kind'], ['literal', ['country', 'region', 'empire', 'continent']]];
     // countries and regions are rings underneath, so a city inside them (Edo in Japan) stays visible and clickable
     map.addLayer({
       id: 'places-areas', type: 'circle', source: 'places', filter: isArea,
       paint: {
-        'circle-radius': ['interpolate', ['linear'], total, 0, 11, 10, 24], 'circle-color': 'rgba(0,0,0,0)',
+        'circle-radius': ['interpolate', ['linear'], ['+', count, ['get', 'association_count']], 0, 11, 10, 24], 'circle-color': 'rgba(0,0,0,0)',
         'circle-stroke-color': color, 'circle-stroke-width': 2.5, 'circle-stroke-opacity': 0.85,
       },
     });
     map.addLayer({
       id: 'places-circles', type: 'circle', source: 'places', filter: ['!', isArea],
       // smaller circles drawn last (on top), so a big one never hides a small neighbour
-      layout: { 'circle-sort-key': ['-', 0, total] },
+      layout: { 'circle-sort-key': ['-', 0, count] },
       paint: {
-        'circle-radius': radius, 'circle-color': color, 'circle-opacity': 0.85,
+        'circle-radius': ['interpolate', ['linear'], count, 0, 4, 10, 14], 'circle-color': color, 'circle-opacity': 0.9,
         'circle-stroke-color': '#fff', 'circle-stroke-width': 1,
       },
     });
-    once(map, 'places', () => bindPlacesPopups(map));
+    once(map, 'places', () => bindOverview(map));
   });
 }
 
-function bindPlacesPopups(map: MapLibre) {
-  // everything at the clicked spot (a city and its country), places before countries, each once
-  popupOnClick(map, PLACE_LAYERS, (features) => {
+function bindOverview(map: MapLibre) {
+  // a place under the pointer wins over a route passing through it
+  popupOnClick(map, [...PLACE_LAYERS, 'ov-routes'], (features) => {
+    const all = features ?? [];
+    const placeHits = all.filter((f) => PLACE_LAYERS.includes(f.layer.id));
+    if (!placeHits.length) {
+      const seenRoutes = new Set<string>();
+      return html`${all.filter((f) => !seenRoutes.has(f.properties.key) && seenRoutes.add(f.properties.key)).slice(0, 4).map((f) => {
+        const p = f.properties;
+        const stops = prop<{ place: string; slug: string; label: string; period: string }[]>(p.stops);
+        return html`<div class="popup-row"><strong><a href="${href(p.type, p.slug)}">${p.name}</a></strong> <span class="muted">${stops.length} stops</span>
+          <ol class="popup-list">${stops.map((s) => html`<li><a href="${href('place', s.slug)}">${s.place}</a> <span class="muted">${s.label}${s.period ? ` · ${s.period}` : ''}</span></li>`)}</ol></div>`;
+      })}`;
+    }
     const seen = new Set<string>();
-    const rows = (features ?? [])
+    const rows = placeHits
       .filter((f) => !seen.has(f.properties.slug) && seen.add(f.properties.slug))
       .sort((a, b) => Number(a.layer.id === 'places-areas') - Number(b.layer.id === 'places-areas'));
     return html`${rows.map((f) => {
       const p = f.properties;
-      return html`<div class="popup-row"><strong><a href="${href('place', p.slug)}">${p.name}</a></strong>${p.kind ? html` <span class="muted">${p.kind}</span>` : ''}<br>
-        ${p.presence_count} presence · ${p.association_count} association</div>`;
+      const events = prop<PresenceRow[]>(p.rows);
+      const assoc = Number(p.association_count);
+      return html`<div class="popup-row"><strong><a href="${href('place', p.slug)}">${p.name}</a></strong>${p.kind ? html` <span class="muted">${p.kind}</span>` : ''}
+        ${events.length ? placeRows(events) : html`<div class="muted">Nobody and nothing in the current selection was here (with a date).</div>`}
+        ${assoc ? html`<div class="popup-note"><a href="${href('place', p.slug)}">${assoc} ${assoc === 1 ? 'association' : 'associations'}</a> (influence, depictions …), not travel</div>` : ''}</div>`;
     })}`;
   });
+  // hovering a route highlights it and names it
+  const tip = new Popup({ closeButton: false, closeOnClick: false, className: 'hover-tip', offset: 10 });
+  const unhover = () => {
+    if (map.getLayer('ov-route-hover')) map.setFilter('ov-route-hover', ['==', ['get', 'key'], '']);
+    tip.remove();
+  };
+  map.on('mousemove', 'ov-routes', (e) => {
+    const f = e.features?.[0];
+    // over a place the place matters (its popup lists the routes passing through anyway)
+    const onPlace = map.queryRenderedFeatures(e.point, { layers: PLACE_LAYERS.filter((l) => map.getLayer(l)) }).length > 0;
+    if (!f || onPlace) return unhover();
+    map.setFilter('ov-route-hover', ['==', ['get', 'key'], f.properties.key]);
+    tip.setLngLat(e.lngLat).setHTML(html`${f.properties.name}`.value).addTo(map);
+  });
+  map.on('mouseleave', 'ov-routes', unhover);
+  map.on('click', () => tip.remove());
 }
 
 // ---- presence in a time window ----------------------------------------------------------------
@@ -304,9 +397,7 @@ function bindPresencePopups(map: MapLibre) {
   popupOnClick(map, ['presence-circles'], (features) => html`${(features ?? []).slice(0, 1).map((f) => {
     const rows = JSON.parse(f.properties.rows as string) as PresenceMap['features'][number]['properties'][];
     return html`<div class="popup-row"><strong><a href="${href('place', f.properties.slug)}">${f.properties.name}</a></strong>
-      <ul class="popup-list">${rows.map((r) => html`<li>
-        <a href="${href(r.entity.type, r.entity.slug)}">${r.entity.name}</a> ${r.label}${r.period ? html` · ${r.period.label}` : ''}
-      </li>`)}</ul></div>`;
+      ${placeRows(rows)}</div>`;
   })}`);
 }
 
