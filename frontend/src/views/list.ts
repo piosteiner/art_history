@@ -62,7 +62,7 @@ function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | n
   const { name, date, detail, image } = cardParts(plural, item);
   return html`<li class="card">
     <a class="card-link" href="${href(plural, item.slug)}">
-      ${image ? html`<img class="card-img" src="${thumb(image, 250)}" alt="" loading="lazy">` : html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
+      ${image ? html`<img class="card-img" src="${thumb(image, 250)}" alt="" loading="lazy" crossorigin="anonymous">` : html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
       <span class="card-text">
         <span class="card-name">${highlight(name, words)}</span>
         ${date ? html`<span class="card-date">${highlight(date, words)}</span>` : ''}

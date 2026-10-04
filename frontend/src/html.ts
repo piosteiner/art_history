@@ -1,4 +1,5 @@
 // Tiny HTML templating: interpolated values are escaped unless they are already Html (from html`` or trusted()).
+// Images load with crossorigin="anonymous": Wikimedia then neither receives nor sets cookies (the site stays cookie-free).
 import { PLURAL } from './api';
 import type { Country, DateRange, EntityType, Image, Plural, PolityLink } from './types';
 
@@ -61,7 +62,7 @@ export function figure(img: Image, alt: string, width = 500) {
   const small = thumb(img.url, width);
   const credit = [img.credit, img.license].filter(Boolean).join(' · ');
   return html`<figure class="figure">
-    <img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async" data-full="${img.url}"
+    <img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async" crossorigin="anonymous" data-full="${img.url}"
       ${small !== img.url ? html`data-fallback="${img.url}"` : ''}>
     <figcaption>
       ${img.caption ? html`<span class="caption">${img.caption}</span>` : ''}
@@ -89,7 +90,7 @@ export function wireLightbox(root: Element) {
       const caption = img.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
       // the caption was built by figure() above from escaped values, so reusing its markup is safe
       dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close">×</button>
-        <figure><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}"><figcaption>${caption}</figcaption></figure>`;
+        <figure><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}" crossorigin="anonymous"><figcaption>${caption}</figcaption></figure>`;
       dialog.addEventListener('click', (e) => {
         if (!(e.target as Element).closest('figcaption a')) dialog.close();
       });
