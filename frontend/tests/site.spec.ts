@@ -154,3 +154,12 @@ test('links navigate without reloading; back returns', async ({ page }) => {
   await page.goBack();
   await expect(page.locator('h1')).toHaveText('Artists');
 });
+
+test('privacy page from the footer; the site sets no cookies', async ({ page, context }) => {
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.figure img')).toBeVisible();
+  await page.locator('.site-footer a', { hasText: 'Privacy' }).click();
+  await expect(page.locator('h1')).toHaveText('Privacy');
+  await expect(page.locator('main')).toContainText('info@piogino.ch');
+  expect(await context.cookies()).toEqual([]); // also none from Wikimedia images or MapTiler
+});

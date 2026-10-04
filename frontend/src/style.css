@@ -366,3 +366,25 @@ svg.graph:active { cursor: grabbing; }
 .graph-info .muted { margin: 0 0 .6rem; }
 .graph-actions { display: flex; flex-wrap: wrap; gap: .4rem; }
 .graph-links li { font-size: .88rem; }
+
+/* footer and privacy page */
+.site-footer {
+  max-width: 1200px; margin: 0 auto; padding: 1.2rem 16px 2rem; border-top: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; gap: .3rem 1.2rem; font-size: .82rem; color: var(--muted);
+}
+.site-footer a { color: var(--muted); }
+main { min-height: 60vh; }
+.prose-page { max-width: 46rem; }
+.prose-page h2 { margin-top: 1.8em; }
+.prose-page ul { padding-left: 1.2rem; }
+.prose-page code { font-size: .88em; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 0 .3em; }
+.table-wrap { overflow-x: auto; }
+.privacy-table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+.privacy-table th, .privacy-table td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--line); }
+.privacy-table th { font-weight: 600; color: var(--muted); font-size: .82rem; }
+@media (max-width: 640px) {
+  .privacy-table thead { display: none; }
+  .privacy-table tr { display: block; padding: .5rem 0; border-bottom: 1px solid var(--line); }
+  .privacy-table td { display: block; border: 0; padding: .15rem 0; }
+  .privacy-table td:first-child { font-weight: 600; }
+}

@@ -33,6 +33,12 @@ map uses OpenFreeMap (free, no key).
 | `src/views/` | explore (map + timeline), list, detail (all types), graph |
 | `public/` | copied as is: `CNAME`, `health.html` (CORS round-trip check) |
 
+## Privacy
+`/privacy` (`src/views/privacy.ts`, Swiss FADP Art. 19 / FMG Art. 45c): the site sets **no cookies** (images load
+with `crossorigin="anonymous"`, so Wikimedia neither gets nor sets cookies; MapLibre fetches MapTiler without them) and
+only keeps preferences in localStorage (`arthistory:*`). When a third-party service, a stored value or the API's
+log retention (14 days) changes, update that page and its date. No consent banner is needed while this holds.
+
 ## Map rule
 Presence (was physically there) and association (e.g. influenced by the culture of Japan) come from the API's
 `properties.layer`: presence = filled dots joined by the `route` line, association = hollow rings in another colour,

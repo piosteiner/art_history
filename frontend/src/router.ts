@@ -8,6 +8,7 @@ export type Route =
   | { name: 'list'; plural: Plural }
   | { name: 'detail'; plural: Plural; slug: string }
   | { name: 'graph'; plural?: Plural; slug?: string; params: URLSearchParams }
+  | { name: 'privacy' }
   | { name: 'not-found' };
 
 const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'patrons', 'polities'];
@@ -17,6 +18,7 @@ export function parse(pathname: string, search: string): Route {
   const parts = pathname.split('/').filter(Boolean).map(decodeURIComponent);
   const query = new URLSearchParams(search);
   if (!parts.length || (parts.length === 1 && parts[0] === 'index.html')) return { name: 'explore', params: query };
+  if (parts.length === 1 && parts[0] === 'privacy') return { name: 'privacy' };
   if (parts[0] === 'graph') {
     const [, p, s, ...more] = parts;
     if (more.length || (p && !isPlural(p))) return { name: 'not-found' };

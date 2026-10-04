@@ -1,7 +1,7 @@
 // Phone layout: nothing wider than the screen, the timeline window can be typed instead of dragged.
 import { expect, test } from '@playwright/test';
 
-for (const path of ['/', '/artists/vincent-van-gogh', '/artworks', '/graph/artists/vincent-van-gogh?depth=2']) {
+for (const path of ['/', '/artists/vincent-van-gogh', '/artworks', '/graph/artists/vincent-van-gogh?depth=2', '/privacy']) {
   test(`no sideways scrolling on ${path}`, async ({ page }) => {
     await page.goto(path);
     await page.waitForLoadState('networkidle');

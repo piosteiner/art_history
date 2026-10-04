@@ -145,6 +145,13 @@ for (const plural of PLURALS) {
   console.log(`${plural}: ${items.length} pages`);
 }
 
+await write('privacy/index.html', page(template, {
+  title: 'Privacy · Art History', url: `${SITE}/privacy/`,
+  description: 'Privacy statement of Art History: no cookies, no analytics, no tracking; which services see your IP address and what is stored in your browser.',
+  body: '<article class="page"><h1>Privacy</h1><p>No cookies, no analytics, no advertising, no tracking. The full statement loads with the page.</p></article>',
+}));
+urls.push(`${SITE}/privacy/`);
+
 // the start page gets the site description and preview tags; 404.html is the app shell for everything else
 await write('index.html', page(template, { title: 'Art History', description: SITE_DESCRIPTION, url: `${SITE}/` }));
 await write('404.html', page(template, { title: 'Art History', description: SITE_DESCRIPTION, noindex: true }));

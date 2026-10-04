@@ -8,6 +8,7 @@ import { detail } from './views/detail';
 import { explore } from './views/explore';
 import { graph } from './views/graph';
 import { list } from './views/list';
+import { privacy } from './views/privacy';
 
 const NAV: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'patrons', 'places'];
 
@@ -42,6 +43,9 @@ function onRoute(route: Route) {
     case 'graph':
       document.title = 'Network · Art History';
       cleanup = graph(main, route.plural, route.slug, route.params);
+      break;
+    case 'privacy':
+      privacy(main);
       break;
     case 'not-found':
       render(main, html`<section class="page"><h1>Not found</h1><p><a href="/">Back to the start</a></p></section>`);
