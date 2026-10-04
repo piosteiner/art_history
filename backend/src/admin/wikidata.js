@@ -10,6 +10,7 @@
 // Wikidata API: https://www.wikidata.org/w/api.php (wbgetentities, wbsearchentities); images: Wikimedia Commons API.
 // Base URLs are configurable (WIKIDATA_BASE, COMMONS_BASE) so the end-to-end tests can serve fixtures.
 const { BY_TYPE, TYPES, SLUG, toRow } = require('../content');
+const autocreate = require('./autocreate');
 const { fromStatement, periodOf } = require('../wikidata-time');
 const { parseFuzzyDate } = require('../fuzzy-date');
 
@@ -184,7 +185,7 @@ function fieldsFor(t, e) {
       f.inventory_number = { kind: 'text', value: String(inv.mainsnak.datavalue.value), collectionQid: (q && q.datavalue && q.datavalue.value.id) || collection || null };
     }
     const [h, w, d] = [lengthCm(e, 'P2048'), lengthCm(e, 'P2049'), lengthCm(e, 'P2610', 'P5524')];
-    if (h && w) f.dimensions = { kind: 'dimensions', value: d ? [h, w, d] : [h, w] };
+    if (h) f.dimensions = { kind: 'dimensions', value: [h, w, w && d].filter(Boolean) };  // height alone is fine
     const materialQids = itemIds(e, 'P186');
     if (materialQids.length) f.materials = { kind: 'materials', qids: materialQids };
   }
@@ -331,7 +332,7 @@ async function compare(db, t, qid, ours, entity) {
     }
     if (w.kind === 'dimensions') {
       const mine = ['h', 'w', 'd'].map((x) => ours[`f.dimensions_${x}`]).filter((x) => x !== undefined && x !== '').map(Number);
-      const fmt = (a) => `${a.join(' × ')} cm`;
+      const fmt = (a) => `${a.join(' × ')} cm${a.length === 1 ? ' (height)' : ''}`;
       rows.push({ key, kind: 'dimensions', ours: mine.length ? fmt(mine) : '', display: fmt(w.value), value: w.value,
         status: !mine.length ? 'empty' : same(mine, w.value) ? 'same' : 'differs', declined: declined(key, w.value) });
       continue;
@@ -456,7 +457,7 @@ async function linkQid(db, target, qid) {
 }
 
 // Create a missing target from Wikidata (inside the caller's transaction) → its slug.
-async function createEntry(db, type, doc) {
+async function createEntry(db, type, doc, from = null, userId = null) {
   const t = BY_TYPE[type];
   const existing = (await db.query(`SELECT slug FROM ${t.table} WHERE wikidata_id = $1`, [doc.wikidata_id])).rows[0];
   if (existing) return existing.slug;  // created a moment ago for another suggestion
@@ -466,7 +467,8 @@ async function createEntry(db, type, doc) {
   const names = Object.keys(row.cols);
   const values = [slug];
   const exprs = names.map((c) => { values.push(row.cols[c][1]); return row.cols[c][0].replace('$', () => `$${values.length}`); });
-  await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')})`, values);
+  const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
+  await autocreate.flag(db, type, rows[0].id, from, userId);  // a minimal entry: "to complete" until edited
   return slug;
 }
 
@@ -502,7 +504,7 @@ async function apply(db, t, entity, plan, choices, userId) {
         if (row.target.matchedBy === 'name') await linkQid(db, row.target, row.qid);
       }
       if (pick === 'candidate' && row.candidate) { slug = row.candidate.slug; await linkQid(db, row.candidate, row.qid); }
-      if (pick === 'create' && row.create) { slug = await createEntry(db, row.create.type, row.create.doc); created.push(`${row.create.type} ${row.create.doc[BY_TYPE[row.create.type].name]}`); }
+      if (pick === 'create' && row.create) { slug = await createEntry(db, row.create.type, row.create.doc, entity, userId); created.push(`${row.create.type} ${row.create.doc[BY_TYPE[row.create.type].name]}`); }
       await decide(row.key, row.qid, !!slug);
       if (slug) form[`f.${row.key}`] = slug;
       continue;
@@ -547,7 +549,7 @@ async function apply(db, t, entity, plan, choices, userId) {
         ref = { type: s.candidate.type, slug: s.candidate.slug };
         await linkQid(db, s.candidate, s.qid);
       } else if (pick === 'create' && s.create) {
-        ref = { type: s.create.type, slug: await createEntry(db, s.create.type, s.create.doc) };
+        ref = { type: s.create.type, slug: await createEntry(db, s.create.type, s.create.doc, entity, userId) };
         created.push(`${s.create.type} ${s.name}`);
       }
       await decide(s.item, s.qid, !!ref);

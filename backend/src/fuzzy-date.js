@@ -8,6 +8,13 @@
 //   1478/1482       range of years       [1478-01-01,1483-01-01)   "1478–1482"  (write "c. 1480" as the label)
 //   1808/           open end (ongoing)   [1808-01-01,)             "since 1808"  — only with { openEnd: true }
 //
+// Written out (case-insensitive), for dates known only roughly — the label is the text itself:
+//   13th century                 1201–1300 (the strict count, as Wikidata: the 1st century is 1–100)
+//   early / mid / late 13th c.   first / middle / last third: 1201–1233, 1234–1266, 1267–1300
+//   first half of the 13th century · second half of the 13th century      1201–1250 · 1251–1300
+//   13th–14th century            1201–1400          5th century BCE        500–401 BCE
+//   1880s                        1880–1889 (decades; "1200s" is ambiguous — write "13th century" or 1200/1299)
+//
 // There is no year 0: 1 BCE is followed by 1 CE, as in Postgres.
 // formatFuzzyDate() goes the other way (stored daterange → the text above), for the admin form and the export.
 const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July',
@@ -17,7 +24,7 @@ const POINT = /^(-?\d{1,4})(?:-(\d{2})(?:-(\d{2}))?)?$/;
 
 function parsePoint(text) {
   const m = POINT.exec(text);
-  if (!m) throw new Error(`bad date "${text}" (expected YYYY, YYYY-MM, YYYY-MM-DD, or A/B)`);
+  if (!m) throw new Error(`bad date "${text}" (expected YYYY, YYYY-MM, YYYY-MM-DD, A/B, or e.g. "13th century", "late 13th century", "1880s")`);
   const [y, mo, d] = [Number(m[1]), m[2] && Number(m[2]), m[3] && Number(m[3])];
   if (y === 0) throw new Error(`bad date "${text}": there is no year 0 (use -1 for 1 BCE)`);
   if (mo !== undefined && (mo < 1 || mo > 12)) throw new Error(`bad month in "${text}"`);
@@ -58,11 +65,45 @@ function rangeLabel(from, to) {
   return `${pointLabel(from, !sameYear)}–${pointLabel(to)}`;
 }
 
+const ordinal = (n) => `${n}${n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th'}`;
+const CENTURY = /^(?:(early|mid|late|first half of(?: the)?|second half of(?: the)?)\s+)?(\d{1,2})(?:st|nd|rd|th)(?:\s*[-–]\s*(\d{1,2})(?:st|nd|rd|th))?\s+(?:century|c\.?)(?:\s+(bce|bc|ce|ad))?$/i;
+const DECADE = /^(\d{2,3}0)s$/;
+
+// Written-out forms → { from, to (years, signed), label } or null when the text isn't one.
+function parseWords(text) {
+  const dm = DECADE.exec(text);
+  if (dm) {
+    const y = Number(dm[1]);
+    if (y % 100 === 0) throw new Error(`"${text}" is ambiguous: write "${ordinal(y / 100 + 1)} century" or ${y}/${y + 99}`);
+    return { from: y, to: y + 9, label: text };
+  }
+  const m = CENTURY.exec(text.replace(/\s+/g, ' ').trim());
+  if (!m) return null;
+  const part = m[1] ? m[1].toLowerCase().replace(/ of$/, ' of the') : null;
+  const [c1, c2] = [Number(m[2]), Number(m[3] || m[2])];
+  const bce = m[4] && /^bc/i.test(m[4]);
+  if (c1 < 1 || c2 < c1 || (bce && m[3])) throw new Error(`bad century "${text}"${bce && m[3] ? ' (write BCE ranges as years, e.g. -500/-301)' : ''}`);
+  if (part && m[3]) throw new Error(`bad century "${text}": early/mid/late only with a single century`);
+  // signed first and last year of a century: 13th = 1201..1300; 5th BCE = -500..-401
+  const span = (c) => (bce ? [-c * 100, -(c - 1) * 100 - 1] : [(c - 1) * 100 + 1, c * 100]);
+  let [from] = span(c1);
+  let [, to] = span(c2);
+  if (part) {
+    const cut = { early: [0, 32], mid: [33, 65], late: [66, 99], 'first half of the': [0, 49], 'second half of the': [50, 99] }[part];
+    // offsets within the 100 years (no year 0 inside a century, so plain addition works on both sides of it)
+    [from, to] = [from + cut[0], from + cut[1]];
+  }
+  const label = `${part ? `${part} ` : ''}${ordinal(c1)}${m[3] ? `–${ordinal(c2)}` : ''} century${bce ? ' BCE' : ''}`;
+  return { from, to, label };
+}
+
 // → { range: '[1886-03-01,1888-02-21)', label: 'March 1886–20 February 1888' }, or null for null/undefined.
 // openEnd allows "1808/" (still ongoing: upper bound infinite) — for periods, not for births or creation dates.
 function parseFuzzyDate(value, { openEnd = false } = {}) {
   if (value === null || value === undefined) return null;
   const text = String(value).trim();
+  const words = parseWords(text);
+  if (words) return { range: `[${pgDate(start({ y: words.from }))},${pgDate(after({ y: words.to }))})`, label: words.label };
   const parts = text.split('/');
   if (parts.length > 2) throw new Error(`bad date "${text}"`);
   const from = parsePoint(parts[0]);

@@ -32,6 +32,24 @@ test('BCE years, and no year 0', () => {
   assert.throws(() => parseFuzzyDate('-500-03'), /year-precision/);
 });
 
+test('centuries and decades written out, with the text as label', () => {
+  assert.deepEqual(parseFuzzyDate('13th century'), { range: '[1201-01-01,1301-01-01)', label: '13th century' });
+  assert.deepEqual(parseFuzzyDate('Late 13th c.'), { range: '[1267-01-01,1301-01-01)', label: 'late 13th century' });
+  assert.equal(parseFuzzyDate('early 13th century').range, '[1201-01-01,1234-01-01)');
+  assert.equal(parseFuzzyDate('mid 13th century').range, '[1234-01-01,1267-01-01)');
+  assert.deepEqual(parseFuzzyDate('first half of 13th century'), { range: '[1201-01-01,1251-01-01)', label: 'first half of the 13th century' });
+  assert.equal(parseFuzzyDate('second half of the 13th century').range, '[1251-01-01,1301-01-01)');
+  assert.deepEqual(parseFuzzyDate('13th–14th century'), { range: '[1201-01-01,1401-01-01)', label: '13th–14th century' });
+  assert.deepEqual(parseFuzzyDate('1st century'), { range: '[0001-01-01,0101-01-01)', label: '1st century' });
+  assert.deepEqual(parseFuzzyDate('5th century BCE'), { range: '[0500-01-01 BC,0400-01-01 BC)', label: '5th century BCE' });
+  assert.equal(parseFuzzyDate('late 1st century BC').range, '[0034-01-01 BC,0001-01-01)');  // 34–1 BCE
+  assert.deepEqual(parseFuzzyDate('21st century', { openEnd: true }).label, '21st century');
+  assert.deepEqual(parseFuzzyDate('1880s'), { range: '[1880-01-01,1890-01-01)', label: '1880s' });
+  assert.throws(() => parseFuzzyDate('1200s'), /ambiguous/);
+  assert.throws(() => parseFuzzyDate('early 13th–14th century'), /single century/);
+  assert.throws(() => parseFuzzyDate('0th century'), /bad century/);
+});
+
 test('leap years (proleptic Gregorian, like Postgres)', () => {
   assert.equal(parseFuzzyDate('1888-02-29').range, '[1888-02-29,1888-03-01)');
   assert.throws(() => parseFuzzyDate('1900-02-29'), /bad day/);

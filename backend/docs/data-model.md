@@ -107,8 +107,8 @@ differs from the published row, and who changed it. Neither is content: not audi
 Publishing goes through the normal save path (validation, optimistic locking, audit log).
 
 ## Artwork dimensions and materials (migration 015)
-`height_cm`, `width_cm`, `depth_cm` are `numeric(8,2)` (exact decimals) with one rule: height and width come together,
-depth only with both. `materials text[]` complements the free-text `medium`; its GIN index serves containment queries
+`height_cm`, `width_cm`, `depth_cm` are `numeric(8,2)` (exact decimals) with one rule (migration 020): each value only
+together with the ones before it — height alone (a sculpture), height × width, or all three. `materials text[]` complements the free-text `medium`; its GIN index serves containment queries
 (`materials @> ARRAY['bronze']`, the API's `?material=`). In YAML and forms: `dimensions: [h, w]` / `[h, w, d]`.
 
 ### Constraints added NOT VALID (migration 016)
@@ -143,6 +143,13 @@ builds the list with `jsonb_agg(jsonb_build_object(…) ORDER BY position, id)`.
   whose period cannot overlap the polity's (`NOT (r.period && p.period)`).
 - Adding the type needed two migrations: `ALTER TYPE … ADD VALUE` (018) can't be used in the transaction that adds it.
   `entity_table(type)` maps a type to its table (`polity` → `polities`, not type + "s").
+
+## Auto-created entries (migration 021)
+A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
+revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the
+entry being saved, who, when) until it is next published or marked complete; the quality view lists them
+(`auto_created`, warning), the admin list shows "to complete". The generic delete trigger
+`delete_entity_relationships()` also removes the row — one `CREATE OR REPLACE FUNCTION` covers every entity table.
 
 ## Data quality (migration 013)
 `quality_issues` is a view with one `SELECT` per check (`UNION ALL`): `check_id, severity, entity_type, entity_id,

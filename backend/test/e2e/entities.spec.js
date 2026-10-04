@@ -108,7 +108,7 @@ test('artwork dimensions (2D and 3D) and materials: form, page, public API with 
   await userA.fill('input[name="f.dimensions_h"]', '25,7');           // decimal comma is fine
   await userA.fill('input[name="f.dimensions_d"]', '3');              // depth without width → refused
   await userA.click('form.form > .actions button');
-  await expect(userA.locator('.errors')).toContainText('dimensions: height and width (and optional depth) must be numbers in cm');
+  await expect(userA.locator('.errors')).toContainText('dimensions: numbers in cm — height alone, height × width, or height × width × depth');
   await userA.fill('input[name="f.dimensions_w"]', '37.9');
   await userA.fill('input[name="f.dimensions_d"]', '');
   await userA.fill('#f-materials', 'ink\nwoodblock\npaper');
@@ -139,4 +139,94 @@ test('an inventory number needs the institution (readable message, hint in the f
   await userA.keyboard.press('Escape');
   await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
   await expect(userA.locator('dl.fields')).toContainText('JP 1234');
+});
+
+test('a sculpture with only a height: a hint in the form, "(height)" on the page and in the API', async ({ userA, request }) => {
+  await userA.goto('/artworks/plum-park-in-kameido/edit');
+  const hint = userA.locator('.dims-height-only');
+  await expect(hint).toBeHidden();
+  await userA.fill('input[name="f.dimensions_h"]', '50');
+  await expect(hint).toBeVisible();                                  // only the height filled in
+  await userA.fill('input[name="f.dimensions_w"]', '20');
+  await expect(hint).toBeHidden();
+  await userA.fill('input[name="f.dimensions_w"]', '');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA.locator('dl.fields')).toContainText('50 cm (height)');
+  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/plum-park-in-kameido', { headers: { Host: 'api.localhost' } })).json();
+  expect(api.dimensions).toMatchObject({ height_cm: 50, width_cm: null, depth_cm: null, label: '50 cm (height)' });
+  await userA.goto('/artworks/plum-park-in-kameido/edit');
+  await expect(userA.locator('input[name="f.dimensions_h"]')).toHaveValue('50');
+  await userA.fill('input[name="f.dimensions_h"]', '');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+});
+
+test('dates by century: "13th century", "late 13th century" — kept as written, a range in the API', async ({ userA, request }) => {
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-slug', 'test-reliquary');
+  await userA.fill('#f-title', 'Test reliquary');
+  await userA.fill('#f-created', 'late 13th century');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/artworks\/test-reliquary\?done=created/);
+  await expect(userA.locator('dl.fields')).toContainText('late 13th century');
+  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/test-reliquary', { headers: { Host: 'api.localhost' } })).json();
+  expect(api.created).toEqual({ label: 'late 13th century', from: '1267-01-01', to: '1300-12-31', from_year: 1267, to_year: 1300 });
+  await userA.goto('/artworks/test-reliquary/edit');
+  await expect(userA.locator('#f-created')).toHaveValue('late 13th century');  // shown as written, not 1267/1300
+  sql("DELETE FROM artworks WHERE slug = 'test-reliquary'");
+});
+
+test('a new artist / institution typed into an artwork is created and marked "to complete"', async ({ userA }) => {
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-slug', 'test-melencolia');
+  await userA.fill('#f-title', 'Melencolia I');
+  await userA.fill('#f-creator', 'Albrecht Dürer');
+  await userA.keyboard.press('Escape');
+  await userA.fill('#f-institution', 'Kupferstichkabinett Berlin');
+  await userA.keyboard.press('Escape');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/artworks\/test-melencolia\?done=created&auto=2/);
+  await expect(userA.locator('.flash.ok')).toContainText('2 new entries were created');
+  expect(sql("SELECT a.slug || ' ' || i.slug FROM artworks w JOIN artists a ON a.id = w.creator_id JOIN institutions i ON i.id = w.current_institution_id WHERE w.slug = 'test-melencolia'"))
+    .toBe('albrecht-durer kupferstichkabinett-berlin');
+
+  await userA.goto('/artists');
+  await expect(userA.locator('tr', { hasText: 'Albrecht Dürer' }).locator('.tag.warn')).toHaveText('to complete');
+  await userA.goto('/artists/albrecht-durer');
+  await expect(userA.locator('.auto-banner')).toContainText('while adding Melencolia I');
+  await userA.goto('/quality?check=auto_created');
+  await expect(userA.locator('main')).toContainText('Albrecht Dürer');
+
+  // Publishing the artist removes the mark; the institution is marked complete by hand.
+  await userA.goto('/artists/albrecht-durer/edit');
+  await userA.fill('#f-birth', '1471-05-21');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA.locator('.auto-banner')).toHaveCount(0);
+  await userA.goto('/institutions/kupferstichkabinett-berlin');
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("remove the mark")')]);
+  await expect(userA.locator('.flash.ok')).toHaveText('Marked as complete.');
+  expect(sql('SELECT count(*) FROM auto_created')).toBe('0');
+});
+
+test('typing a name: an exact name links the existing artist, a near miss asks first', async ({ userA }) => {
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-slug', 'test-print');
+  await userA.fill('#f-title', 'Test print');
+  await userA.fill('#f-creator', 'utagawa hiroshige');               // the exact name (case doesn't matter)
+  await userA.keyboard.press('Escape');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/artworks\/test-print\?done=created$/);  // nothing new created
+  expect(sql("SELECT a.slug FROM artworks w JOIN artists a ON a.id = w.creator_id WHERE w.slug = 'test-print'")).toBe('utagawa-hiroshige');
+
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-slug', 'test-print-2');
+  await userA.fill('#f-title', 'Test print 2');
+  await userA.fill('#f-creator', 'Katsushika Hokusa');               // a typo of an existing artist
+  await userA.keyboard.press('Escape');
+  await userA.click('form.form > .actions button');
+  await expect(userA.locator('.errors')).toContainText('did you mean Katsushika Hokusai (katsushika-hokusai)?');
+  expect(sql("SELECT count(*) FROM artists WHERE name = 'Katsushika Hokusa'")).toBe('0');
+  await userA.check('input[name="new.creator"]');                     // really a different person: create anyway
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/done=created&auto=1/);
+  sql("DELETE FROM artworks WHERE slug IN ('test-print', 'test-print-2'); DELETE FROM artists WHERE name = 'Katsushika Hokusa'");
 });

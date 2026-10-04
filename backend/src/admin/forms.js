@@ -2,7 +2,8 @@
 // YAML file), which then goes through the same toRow() validation as the import.
 const { html } = require('./html');
 
-const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1853-03-30</code> · <code>1886-03/1888-02-20</code> (from/to, inclusive)`;
+const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1853-03-30</code> · <code>1886-03/1888-02-20</code> (from/to, inclusive)
+  · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
 const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.`,
   'text[]': 'One per line.',
@@ -55,8 +56,10 @@ function formToDoc(body, fields) {
       const [h, w, d] = ['h', 'w', 'd'].map((x) => get(`${key}_${x}`).trim().replace(',', '.'));
       if (!h && !w && !d) continue;
       const num = /^\d+(\.\d+)?$/;
-      if (!num.test(h) || !num.test(w) || (d && !num.test(d))) { errors.push(`${key}: height and width (and optional depth) must be numbers in cm`); continue; }
-      doc[key] = d ? [Number(h), Number(w), Number(d)] : [Number(h), Number(w)];
+      if (!num.test(h) || (w && !num.test(w)) || (d && !num.test(d)) || (d && !w)) {
+        errors.push(`${key}: numbers in cm — height alone, height × width, or height × width × depth`); continue;
+      }
+      doc[key] = [h, w, d].filter(Boolean).map(Number);
     } else if (kind === 'point') {
       const lon = get(`${key}_lon`).trim();
       const lat = get(`${key}_lat`).trim();
@@ -99,7 +102,8 @@ function fieldInput(key, kind, f, ctx) {
     const box = (x, label) => html`<input name="${name}_${x}" value="${f[`${key}_${x}`]}" placeholder="${label}" inputmode="decimal" aria-label="${label} in cm">`;
     return html`<div class="field${err}"><label>${humanize(key)} (cm)</label>
       <div class="row dims">${box('h', 'height')}<span class="x">×</span>${box('w', 'width')}<span class="x">×</span>${box('d', 'depth (3D only)')}</div>
-      ${hint('Height × width, plus depth for objects (sculptures, vessels). Decimals allowed.')}</div>`;
+      ${hint('Height × width, plus depth for objects. Height alone is fine (e.g. a sculpture). Decimals allowed.')}
+      <div class="hint dims-height-only">Height only — shown as “50 cm (height)”.</div></div>`;
   }
   if (kind === 'point') {
     return html`<div class="field${err}"><label>${humanize(key)}</label>
@@ -116,11 +120,16 @@ function fieldInput(key, kind, f, ctx) {
   }
   if (kind === 'parent' || kind.startsWith('ref:')) {
     const options = ctx.refs[key] || [];
+    const target = kind === 'parent' ? ctx.type : kind.slice(4);
+    const canCreate = ['artist', 'institution'].includes(target) && kind !== 'parent';  // src/admin/autocreate.js
+    const confirm = (ctx.confirmNew || {})[key];
     return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
       <input id="${id}" name="${name}" value="${f[key]}" list="${id}-list" placeholder="start typing a name (typos are fine)" autocomplete="off"
         data-lookup="${kind === 'parent' ? ctx.type : kind.slice(4)}">
       <datalist id="${id}-list">${options.map((o) => html`<option value="${o.slug}">${o.name}</option>`)}</datalist>
-      ${hint(`Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}</div>`;
+      ${confirm ? html`<label class="choice"><input type="checkbox" name="new.${key}" value="1"> create a new ${target} “${confirm}” anyway</label>` : ''}
+      ${hint(canCreate ? `Pick from the list — or type the name of a new ${target}: it is created with the save and marked “to complete”. Empty = none.`
+        : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}</div>`;
   }
   if (ctx.enums[key]) {
     return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>

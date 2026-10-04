@@ -11,6 +11,10 @@ Every date is an object (or `null`):
 ```
 `to` is inclusive. BCE years are negative (`-500`); BCE ISO dates start with `-`. Open ends are `null` (an ongoing period, "since 1808", has `to` and `to_year` = `null`).
 Show `label` to people, use `from`/`to` for timelines.
+Dates may be as coarse as a century: "13th century" is `from: 1201-01-01, to: 1300-12-31`, "late 13th century"
+1267–1300, "1880s" a decade. On a timeline draw the whole span (e.g. a faded bar) rather than a point, and sort by
+`from` (or the midpoint); the `?from=&to=` filters match any overlap, so a century-dated work appears in every
+window inside its century.
 
 ## Entities
 Types (URL segment → `type`): `artists` → artist, `artworks` → artwork, `places` → place, `movements` → movement,
@@ -27,7 +31,8 @@ Types (URL segment → `type`): `artists` → artist, `artworks` → artwork, `p
 → `{"data": [...], "total": 4, "limit": 100, "offset": 0}`
 
 Artworks also have `materials` (list; filter `?material=bronze`) and `dimensions`
-(`{height_cm, width_cm, depth_cm, note, label: "73.7 × 92.1 cm"}`, `depth_cm` only for objects, `null` without data).
+(`{height_cm, width_cm, depth_cm, note, label: "73.7 × 92.1 cm"}`, `depth_cm` only for objects; a height alone —
+a sculpture — has `width_cm: null` and `label: "50 cm (height)"`; `null` without data).
 
 Artworks, artists and institutions carry an `image_url`: the main image (https, hotlinked — often Wikimedia Commons;
 for a smaller version replace `/NNNNpx-` in a Commons thumbnail URL with a standard width such as `/250px-`), `null`

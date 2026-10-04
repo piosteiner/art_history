@@ -10,7 +10,8 @@ const express = require('express');
 const path = require('path');
 const config = require('../config');
 const { adminPool } = require('../db');
-const { TYPES, BY_FOLDER, BY_TYPE, SLUG, toRow, readDocs, readRelationships, readImages } = require('../content');
+const { TYPES, BY_FOLDER, BY_TYPE, SLUG, REF_COLUMNS, toRow, readDocs, readRelationships, readImages } = require('../content');
+const autocreate = require('./autocreate');
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { renderMarkdown } = require('../markdown');
 const { html, raw, layout } = require('./html');
@@ -52,6 +53,7 @@ const DONE = {
   reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
   restored: 'Version restored.',
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
+  'auto-done': 'Marked as complete.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
 };
 
@@ -62,7 +64,8 @@ function send(req, res, { title, body, status = 200, flash, page = null }) {
     const extra = req.query.done === 'wikidata' ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
       n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`,
       n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`].filter(Boolean).join(', ') : '';
-    flash = { kind: 'ok', text: DONE[req.query.done] + (extra ? ` (${extra})` : '') };
+    const auto = n('auto') ? ` ${n('auto') === 1 ? 'A new entry was' : `${n('auto')} new entries were`} created for what you typed — marked “to complete” (see the links below and the Quality page).` : '';
+    flash = { kind: 'ok', text: DONE[req.query.done] + (extra ? ` (${extra})` : '') + auto };
   }
   res.status(status).type('html').send(String(layout({ title, body, user: req.user, flash, page })));
 }
@@ -124,7 +127,7 @@ const RULES = {
   artworks_inventory_needs_institution: 'An inventory number belongs to a collection: set the institution (current holder) too, or leave the number empty.',
   polities_country_codes_check: 'Country codes: two capital letters each (ISO 3166, e.g. CN, UA), one per line.',
   polities_check: 'A polity cannot be part of itself.',
-  artworks_dimensions_check: 'Dimensions: height and width go together; a depth only with both.',
+  artworks_dimensions_check: 'Dimensions: height alone, height × width, or height × width × depth.',
 };
 function friendly(err) {
   if (err instanceof UserError) return err.message;
@@ -667,7 +670,7 @@ async function formContext(t) {
     const target = kind === 'parent' ? t : kind.startsWith('ref:') ? BY_TYPE[kind.slice(4)] : null;
     if (target) refs[key] = (await adminPool.query(`SELECT slug, ${target.name} AS name FROM ${target.table} ORDER BY 2`)).rows;
   }
-  return { enums, suggestions, refs, errorKeys: new Set() };
+  return { enums, suggestions, refs, errorKeys: new Set(), confirmNew: {} };
 }
 
 async function findEntity(t, slug) {
@@ -686,6 +689,7 @@ router.get('/:plural', async (req, res) => {
     SELECT * FROM (
       SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
+             EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${params.length + 1}::entity_type AND ac.entity_id = t.id) AS to_complete,
              (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
                                                            OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
       FROM ${t.table} t) x
@@ -700,7 +704,7 @@ router.get('/:plural', async (req, res) => {
       ${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
         ${rows.slice(0, PAGE).map((r) => html`<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
-          : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>
+          : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
           ${q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
@@ -813,13 +817,20 @@ async function saveEntity(user, t, body, existing) {
   const { doc, errors } = formToDoc(body, t.fields);
   if (!SLUG.test(slug)) errors.push('slug: lowercase letters, digits and single hyphens only');
   if (!doc[t.name]) errors.push(`${t.name}: required`);
+  // A creator / institution typed as a new name becomes a new (flagged) entry — src/admin/autocreate.js
+  const auto = await autocreate.resolveRefs(adminPool, t, doc, body);
+  errors.push(...auto.errors);
   const row = toRow(doc, t.fields);
   errors.push(...row.errors);
-  if (errors.length) return { errors };
+  if (errors.length) return { errors, confirm: auto.confirm };
 
+  let created = [];
   try {
     await withTx(user, async (db) => {
       const idOf = async (type, s) => (await db.query('SELECT entity_id($1, $2) AS id', [type, s])).rows[0].id;
+      const newSlugs = await autocreate.create(db, auto.creates);
+      for (const [key, s] of newSlugs) row.refs.find((r) => r.col === REF_COLUMNS[key]).slug = s;
+      created = auto.creates;
       for (const r of row.refs) {
         const id = r.slug === null ? null : await idOf(r.type, r.slug);
         if (r.slug !== null && id === null) throw new UserError(`${r.type} "${r.slug}" does not exist.`);
@@ -835,9 +846,12 @@ async function saveEntity(user, t, body, existing) {
       const values = [slug];
       const exprs = names.map((c) => { values.push(row.cols[c][1]); return row.cols[c][0].replace('$', () => `$${values.length}`); });
       if (!existing) {
-        await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')})`, values);
+        const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
+        for (const c of created) await autocreate.flag(db, c.type, c.id, { type: t.type, id: rows[0].id }, user.id);
         return;
       }
+      for (const c of created) await autocreate.flag(db, c.type, c.id, { type: t.type, id: existing.id }, user.id);
+      await autocreate.unflag(db, t.type, existing.id);  // published by someone: no longer "to complete"
       // Optimistic locking: only if nobody saved this row since the form was opened.
       values.push(existing.id, String(body.version || ''));
       const { rowCount } = await db.query(`
@@ -848,7 +862,7 @@ async function saveEntity(user, t, body, existing) {
   } catch (err) {
     return { errors: [friendly(err)] };
   }
-  return { slug };
+  return { slug, created };
 }
 
 // Re-show a rejected form with exactly what was typed.
@@ -867,6 +881,7 @@ router.post('/:plural', async (req, res) => {
   if (result.errors) {
     const ctx = await formContext(t);
     ctx.errorKeys = errorKeysOf(result.errors);
+    ctx.confirmNew = result.confirm || {};
     return send(req, res, {
       title: `New ${t.type}`, status: 422,
       page: { type: t.type, slug: null, mode: 'new' },
@@ -874,7 +889,7 @@ router.post('/:plural', async (req, res) => {
     });
   }
   await drafts.deleteDraft(adminPool, req.user.id, t.type, null);
-  res.redirect(303, `/${t.folder}/${result.slug}?done=created`);
+  res.redirect(303, `/${t.folder}/${result.slug}?done=created${result.created.length ? `&auto=${result.created.length}` : ''}`);
 });
 
 // Display of one field's value on the view page.
@@ -888,7 +903,7 @@ function showValue(t, key, kind, doc) {
   }
   if (v === undefined) return null;
   if (kind === 'text[]') return v.join(' · ');
-  if (kind === 'dimensions') return `${v.join(' × ')} cm${doc.dimensions_note ? ` (${doc.dimensions_note})` : ''}`;
+  if (kind === 'dimensions') return `${v.join(' × ')} cm${v.length === 1 ? ' (height)' : ''}${doc.dimensions_note ? ` (${doc.dimensions_note})` : ''}`;
   if (kind === 'point') return html`${v[1]}, ${v[0]} <a href="https://www.openstreetmap.org/?mlat=${v[1]}&mlon=${v[0]}#map=12/${v[1]}/${v[0]}" rel="noopener" target="_blank">map ↗</a>`;
   if (kind === 'json' || kind === 'area') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
   if (kind === 'parent') return html`<a href="/${t.folder}/${v}">${v}</a>`;
@@ -916,6 +931,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
+  const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
   const main = imgs[0];
   send(req, res, {
     title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
@@ -926,6 +942,13 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       ${pending ? unpublishedBanner(t, e, pending, false) : ''}
+      ${autoFlag ? html`<div class="flash warn auto-banner"><b>To complete:</b> created automatically
+        ${autoFlag.from ? html`while adding <a href="/${BY_TYPE[autoFlag.from.type].folder}/${autoFlag.from.slug}">${autoFlag.from.name}</a>` : ''}
+        on ${autoFlag.created_at.toISOString().slice(0, 10)} — it has little more than a name.
+        <a class="button" href="/${t.folder}/${e.slug}/edit">Fill in the details</a>
+        <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Compare with Wikidata…</a>
+        <form method="post" action="/${t.folder}/${e.slug}/auto-done" class="inline"><button class="link">it's complete — remove the mark</button></form>
+        <div class="muted small">The mark goes away by itself when the entry is next published.</div></div>` : ''}
       ${quality.entityBox(qa, `/${t.folder}/${e.slug}`)}
       ${main ? html`<figure class="image-preview"><a href="${main.source_url || main.url}" target="_blank" rel="noopener">
         <img src="${thumbUrl(main.url, 500)}" alt="${name}"></a>
@@ -977,6 +1000,14 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
   res.redirect(303, `/${t.folder}/${e.slug}?done=rel-added#relationships`);
 });
 
+router.post('/:plural/:slug/auto-done', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  await autocreate.unflag(adminPool, t.type, e.id);
+  res.redirect(303, `/${t.folder}/${e.slug}?done=auto-done`);
+});
+
 // Images: added here, edited / removed / reordered under /images/<id> (src/admin/images.js). Saved immediately and
 // audited, like relationships.
 router.post('/:plural/:slug/images', async (req, res) => {
@@ -1022,6 +1053,7 @@ router.post('/:plural/:slug', async (req, res) => {
     const { form: working, epoch, state } = await collab.currentForm(t, e.id);
     const ctx = await formContext(t);
     ctx.errorKeys = errorKeysOf(result.errors);
+    ctx.confirmNew = result.confirm || {};
     const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
       action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state } });
     return send(req, res, { title: `Edit ${e.doc[t.name]}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
@@ -1029,7 +1061,7 @@ router.post('/:plural/:slug', async (req, res) => {
   }
   await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);  // step-1 draft, if any from before
   await collab.publishedNow(t, e.id, req.user.username);
-  res.redirect(303, `/${t.folder}/${result.slug}?done=published`);
+  res.redirect(303, `/${t.folder}/${result.slug}?done=published${result.created.length ? `&auto=${result.created.length}` : ''}`);
 });
 
 // Discarding resets everyone's working copy, so it is confirmed on a page that lists what would be lost.

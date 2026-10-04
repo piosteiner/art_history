@@ -2,6 +2,26 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-04
+
+### New creators/institutions from the artwork form, century dates, height-only dimensions (migrations 020, 021)
+- **What:** typing a name that doesn't exist into an artwork's creator or institution creates a minimal artist /
+  institution with the save (exact names link the existing entry; a near miss asks "did you mean …?" with a
+  "create anyway" tick). New table `auto_created` flags them (and entries the Wikidata comparison creates) until
+  published or marked complete: banner on the entry, "to complete" in lists, quality check `auto_created` (view
+  re-created; the generic delete trigger also clears the flag). Dates: `13th century`, `early/mid/late …`,
+  `first/second half of the …`, `13th–14th century`, `… BCE`, decades `1880s` (src/fuzzy-date.js; shown as written).
+  Dimensions: height alone allowed (constraint replaced in 020), shown as "50 cm (height)" with a form hint (CSS
+  `:has()`), Wikidata heights without width taken.
+- **Why:** owner: refusing an unknown artist/institution was a dead end; artworks from the 13th century; sculptures
+  measured by height only.
+- **Tested:** unit (century parsing, 19 passing); smoke test; e2e 49 passing (auto-create, exact name, near miss,
+  marks; century date round trip; height only).
+- **Revert:** redeploy the previous commit; as owner `DROP TABLE auto_created`, re-create 019's quality view and 001's
+  `delete_entity_relationships()`; restore the old dimensions rule only after rows with a height alone are fixed:
+  `ALTER TABLE artworks DROP CONSTRAINT artworks_dimensions_check, ADD CONSTRAINT artworks_dimensions_check CHECK
+  ((height_cm IS NULL) = (width_cm IS NULL) AND (depth_cm IS NULL OR height_cm IS NOT NULL))`.
+
 ## 2026-10-03
 
 ### Polities and countries (migrations 018, 019)
