@@ -64,14 +64,15 @@ hover = highlight + name, click = stops). Clicking a place lists what happened t
 the timeline; at most 24 drawn). Time window → presence in the window, limited to the selection.
 
 ## Crossed paths
- finds pairs at the same place with overlapping dates in the dated presence links (left out: a
-work with its own artist, two works). Shown under the explore map (, respects the pickers and the
+`src/encounters.ts` finds pairs at the same place with overlapping dates in the dated presence links (left out: a
+work with its own artist, two works). Shown under the explore map (`src/crossings.ts`; respects the pickers and the
 time window), as a yellow halo on the map, in place popups ("At the same time here") and on artist / patron / artwork /
 place pages. Overlaps based on year-only or "c." dates are marked "possibly".
 
 ## Wishes for the backend
-- **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise):   = a self-join of presence links on  with  (daterange overlap, GiST index) and
-   as the overlap; today the browser does this over the full presence list.
+- **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise): `GET /v1/encounters?from=&to=&types=`
+  = a self-join of presence links on `place_id` with `a.period && b.period` (daterange overlap, GiST index) and
+  `a.period * b.period` as the overlap; today the browser does this over the full presence list.
 - **Artwork provenance on the map:** artworks only have `created_in` as presence today; where a work was kept later
   (`housed_at` an institution, `owned_by` a patron, dated) and where it is now (its institution's place) are not map
   data, so an artwork's journey can't be drawn. Wish: include them in `/v1/map/artworks/:slug` and `/v1/map/presence`
