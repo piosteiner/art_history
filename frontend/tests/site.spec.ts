@@ -1,6 +1,7 @@
 // Smoke tests against the live, curated content (via the dev proxy). They check behaviour, not exact numbers,
 // so adding entries in the admin panel doesn't break them. Fixed points: Van Gogh, The Great Wave, woodblock prints.
-import { expect, test, type Page } from '@playwright/test';
+import type { Page } from '@playwright/test';
+import { expect, test } from './fixtures';
 
 const noErrors = (page: Page) => {
   const errors: string[] = [];
@@ -161,5 +162,5 @@ test('privacy page from the footer; the site sets no cookies', async ({ page, co
   await page.locator('.site-footer a', { hasText: 'Privacy' }).click();
   await expect(page.locator('h1')).toHaveText('Privacy');
   await expect(page.locator('main')).toContainText('info@piogino.ch');
-  expect(await context.cookies()).toEqual([]); // also none from Wikimedia images or MapTiler
+  expect(await context.cookies()).toEqual([]); // the image stand-in offers a cookie (fixtures.ts): it must be refused
 });

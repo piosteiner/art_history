@@ -9,7 +9,8 @@ export default defineConfig({
   timeout: 45_000,
   expect: { timeout: 15_000 },
   retries: process.env.CI ? 1 : 0,
-  reporter: process.env.CI ? [['list'], ['html', { open: 'never' }]] : 'list',
+  // in CI also 'github': failures become annotations on the run, readable without signing in
+  reporter: process.env.CI ? [['list'], ['github'], ['html', { open: 'never' }]] : 'list',
   use: {
     baseURL: `http://localhost:${PORT}/`,
     trace: 'retain-on-failure',
