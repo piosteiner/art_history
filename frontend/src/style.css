@@ -399,3 +399,19 @@ main { min-height: 60vh; }
 .hover-tip .maplibregl-popup-tip { display: none; }
 .maplibregl-popup-content { max-height: 320px; overflow-y: auto; }
 .popup-events { list-style: none; padding-left: 0; }
+
+/* crossed paths */
+.encounters { margin: .2rem 0 1.2rem; padding: .8rem 1rem; background: var(--surface); border: 1px solid var(--line); border-left: 4px solid #e0a800; border-radius: var(--radius); }
+.encounters h2, .crossed h2 { margin: 0 0 .5rem; font-size: 1.1rem; }
+.encounters h2 .small { font-family: var(--sans); font-weight: 400; margin-left: .3rem; }
+.encounters-list { list-style: none; padding: 0; margin: 0; display: grid; gap: .55rem; }
+.encounters .encounters-list { grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.encounter { font-size: .92rem; line-height: 1.45; }
+.encounter-head { font-size: .88rem; }
+.encounter.approximate { opacity: .85; }
+.encounter-actions { display: flex; gap: .8rem; font-size: .82rem; margin-top: .15rem; }
+.encounter-map { margin-left: .4rem; }
+.crossed .encounters-list li { padding: .35rem 0; border-bottom: 1px solid var(--line); }
+.popup-encounters { margin-top: .5rem; padding-top: .4rem; border-top: 1px dashed var(--line); }
+.popup-subhead { font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: #b38600; margin-bottom: .2rem; }
+.popup-encounters .encounter { font-size: .85rem; }

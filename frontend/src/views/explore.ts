@@ -6,12 +6,14 @@
 import { getEntityMap, getPlacesMap, getPresence, listEntities, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { href, html, render } from '../html';
-import { COLORS, createMap, PALETTE, showPlaces, showPresence, showSelection, TYPE_COLORS, type ColoredEntityMap } from '../map';
+import { compareUrl, encounterLine } from '../crossings';
+import { findEncounters, type Encounter, type Stay } from '../encounters';
+import { COLORS, createMap, focusEncounter, PALETTE, showEncounters, showPlaces, showPresence, showSelection, TYPE_COLORS, type ColoredEntityMap } from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
 import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
 import { renderTimeline, type TimelineRow } from '../timeline';
-import type { EntityType, Plural, PresenceMap } from '../types';
+import type { EntityType, Plural, PresenceMap, StopProps } from '../types';
 import { showError } from './common';
 
 const STORAGE_KEY = 'arthistory:explore';
@@ -58,12 +60,49 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       <div class="legend" id="legend"></div>
     </div>
     <p class="map-status muted" id="map-status"></p>
+    <section class="encounters" id="encounters" hidden aria-live="polite"></section>
     <div id="timeline"></div>
   </section>`);
 
   const map = createMap(main.querySelector<HTMLElement>('#map')!);
   const status = main.querySelector<HTMLElement>('#map-status')!;
   const legend = main.querySelector<HTMLElement>('#legend')!;
+  const encountersEl = main.querySelector<HTMLElement>('#encounters')!;
+
+  // ---- crossed paths: entries at the same place at the same time, listed under the map ----
+  const SHOW_FIRST = 6;
+  let crossed: Encounter[] = [];
+  let crossedCoords: (slug: string) => [number, number] | undefined = () => undefined;
+  let showAllCrossed = false;
+  function crossings(stays: Stay[], coords: (slug: string) => [number, number] | undefined) {
+    crossed = findEncounters(stays, { creatorOf, window: win });
+    crossedCoords = coords;
+    showEncounters(map, crossed, coords);
+    drawCrossings();
+  }
+  function drawCrossings() {
+    encountersEl.hidden = !crossed.length;
+    if (!crossed.length) return;
+    const shown = showAllCrossed ? crossed : crossed.slice(0, SHOW_FIRST);
+    render(encountersEl, html`<h2>Crossed paths <span class="muted small">at the same place at the same time, marked with a yellow halo on the map${win ? ` · ${win.from === win.to ? win.from : `${win.from}–${win.to}`}` : ''}</span></h2>
+      <ul class="encounters-list">${shown.map((e, i) => encounterLine(e, { actions: html`<div class="encounter-actions">
+        <button type="button" class="link-button" data-encounter="${String(i)}">show on the map</button>
+        <a href="${compareUrl(e)}">only these two →</a></div>` }))}</ul>
+      ${crossed.length > SHOW_FIRST ? html`<button type="button" class="link-button" data-crossed-all>${showAllCrossed ? 'show fewer' : `show all ${crossed.length}`}</button>` : ''}`);
+  }
+  encountersEl.addEventListener('click', (ev) => {
+    const b = (ev.target as Element).closest<HTMLButtonElement>('button');
+    if (!b) return;
+    if (b.dataset.crossedAll !== undefined) {
+      showAllCrossed = !showAllCrossed;
+      return drawCrossings();
+    }
+    const e = crossed[Number(b.dataset.encounter)];
+    if (e) {
+      focusEncounter(map, e, crossedCoords);
+      main.querySelector('#map')!.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
   const timelineEl = main.querySelector<HTMLElement>('#timeline')!;
   const pickersEl = main.querySelector<HTMLElement>('#pickers')!;
 
@@ -122,6 +161,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, creatorOf)).map((f) => f.properties);
     const where = new Map(places.features.map((f) => [f.properties.slug, f.geometry.coordinates] as const));
     showPlaces(map, places, rows, (slug) => where.get(slug));
+    crossings(rows, (slug) => where.get(slug));
     // legend: only kinds that actually have a route (an entry with dated stops at two or more places)
     const placesOf = new Map<string, Set<string>>();
     for (const r of rows) {
@@ -149,6 +189,14 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const items: ColoredEntityMap[] = maps.flatMap((fc, i) =>
       fc ? [{ fc, color: colorOf.get(shown[i].type, shown[i].slug) ?? PALETTE[0] }] : []);
     showSelection(map, items);
+    const at = new Map<string, [number, number]>();
+    const stays: Stay[] = items.flatMap((i) => i.fc.features.flatMap((f) => {
+      if (f.geometry.type !== 'Point' || f.properties.layer !== 'presence') return [];
+      const p = f.properties as StopProps;
+      at.set(p.place.slug, f.geometry.coordinates as [number, number]);
+      return [{ entity: i.fc.entity, place: p.place, label: p.label, period: p.period, note: p.note }];
+    }));
+    crossings(stays, (slug) => at.get(slug));
     const withPlaces = items.filter((i) => i.fc.features.some((f) => f.geometry.type === 'Point'));
     render(legend, html`${items.map((i) => html`<span><i class="dot" style="background:${i.color}"></i>
         <a href="${href(i.fc.entity.type, i.fc.entity.slug)}">${i.fc.entity.name}</a></span>`)}
@@ -175,6 +223,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     // the API filters by type; single picks are filtered here (backend wish: an `entities=` parameter)
     const features = fc.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, creatorOf));
     showPresence(map, { ...fc, features });
+    const at = new Map(features.map((f) => [f.properties.place.slug, f.geometry.coordinates] as const));
+    crossings(features.map((f) => f.properties), (slug) => at.get(slug));
     const who = new Set(features.map((f) => `${f.properties.entity.type}/${f.properties.entity.slug}`));
     const where = new Set(features.map((f) => f.properties.place.slug));
     status.textContent = features.length
@@ -229,7 +279,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       if (!main.contains(timelineEl)) return;
       lists = l;
       l.artworks.forEach((a) => a.creator && creators.set(a.slug, a.creator.slug));
-      if (sel.artwork.mode === 'by-artists' && win) updateMap();
+      updateMap(); // now artworks' artists are known: crossed paths leave out a work with its own artist, "by chosen artists" works
       const groups: PickerGroup[] = [
         { group: 'artist', plural: 'artists', label: 'Artists', entries: entries('artists', l.artists) },
         { group: 'artwork', plural: 'artworks', label: 'Artworks', entries: entries('artworks', l.artworks) },

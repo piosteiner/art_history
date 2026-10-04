@@ -1,5 +1,7 @@
 // Detail page for all six entity types: facts, images with credits, long text, relationships by category, map.
-import { getEntity, getEntityMap, PLURAL } from '../api';
+import { getEntity, getEntityMap, getPresence, listEntities, PLURAL } from '../api';
+import { compareUrl, crossedLine, encounterLine } from '../crossings';
+import { encounterKeys, findEncounters } from '../encounters';
 import { GROUPS, type Group } from '../selection';
 import {
   countryLink, countryName, dateLabel, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
@@ -154,6 +156,29 @@ function relationshipSections(rels: Relationship[]): Html {
   </section>`)}`;
 }
 
+/**
+ * Who this entry crossed paths with (same place, overlapping dates), or for a place: who met there. Uses all dated
+ * presence links (one request, shared with the start map) and the artworks list (to leave out a work and its artist).
+ */
+function crossedPaths(el: HTMLElement, type: string, slug: string, current: () => boolean) {
+  Promise.all([getPresence(-3000, new Date().getFullYear() + 1), listEntities('artworks', { limit: 500 })])
+    .then(([presence, artworks]) => {
+      if (!current() || !el.isConnected) return;
+      const creators = new Map(artworks.data.map((a) => [a.slug, a.creator?.slug]));
+      const all = findEncounters(presence.features.map((f) => f.properties), { creatorOf: (a) => creators.get(a) });
+      const self = `${type}/${slug}`;
+      const mine = type === 'place'
+        ? all.filter((x) => x.place.slug === slug)
+        : all.filter((x) => encounterKeys(x).includes(self));
+      if (!mine.length) return;
+      el.hidden = false;
+      render(el, html`<h2>${type === 'place' ? 'Crossed paths here' : 'Crossed paths'}</h2>
+        <p class="muted small">${type === 'place' ? 'People and works here at the same time.' : 'At the same place at the same time, from the dated places on this site.'}</p>
+        <ul class="plain-list encounters-list">${mine.map((x) => (type === 'place' ? encounterLine(x, { withPlace: false, actions: html`<div class="encounter-actions"><a href="${compareUrl(x)}">both on the map →</a></div>` }) : crossedLine(x, self)))}</ul>`);
+    })
+    .catch(() => { /* optional section: leave it out when the data can't be loaded */ });
+}
+
 export function detail(main: HTMLElement, plural: Plural, slug: string) {
   loading(main);
   const current = guard();
@@ -181,6 +206,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             ${facts.length ? html`<dl class="facts">${facts.map(([k, value]) => html`<dt>${k}</dt><dd>${value}</dd>`)}</dl>` : ''}
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
+            <section id="crossed" class="crossed" hidden></section>
             ${relationshipSections(e.type === 'polity' ? e.relationships : e.relationships.filter((r) => r.category !== 'polity'))}
           </div>
           ${hasMap ? html`<aside class="detail-side">
@@ -191,6 +217,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       </article>`);
       wireImageFallbacks(main);
       wireLightbox(main);
+      if (['artist', 'patron', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
       if (!hasMap) return;
 
       const mapEl = main.querySelector<HTMLElement>('#map')!;

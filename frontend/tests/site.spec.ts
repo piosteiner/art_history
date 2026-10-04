@@ -190,3 +190,18 @@ test('start map: routes of the selection, a place lists what happened there', as
   await expect(popup.locator('.popup-events a', { hasText: 'Vincent van Gogh' })).toBeVisible();
   await expect(popup).toContainText('lived in');
 });
+
+test('crossed paths: listed under the map, on detail pages, and "only these two"', async ({ page }) => {
+  // fixed point in the curated content: Gauguin and Van Gogh both lived in Arles in late 1888
+  await page.goto('/');
+  const list = page.locator('#encounters');
+  const arles = list.locator('.encounter', { hasText: 'Arles' }).filter({ hasText: 'Paul Gauguin' }).filter({ hasText: 'Vincent van Gogh' });
+  await expect(arles).toContainText('1888');
+  await arles.getByRole('link', { name: 'only these two →' }).click();
+  await expect(page).toHaveURL(/artists=paul-gauguin,vincent-van-gogh&from=1888&to=1888/);
+  await expect(page.locator('#map-status')).toContainText('in 1888');
+
+  await page.goto('/artists/paul-gauguin');
+  await expect(page.locator('#crossed')).toContainText('Vincent van Gogh');
+  await expect(page.locator('#crossed')).toContainText('Arles');
+});

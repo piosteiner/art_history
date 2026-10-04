@@ -5,6 +5,8 @@ import 'maplibre-gl/dist/maplibre-gl.css';
 // MapLibre 6 loads its worker from a separate module; let Vite bundle it and tell MapLibre where it is.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { html, href, type Html } from './html';
+import { encounterLine } from './crossings';
+import { encounterKeys, type Encounter } from './encounters';
 import { isDark } from './theme';
 import type { EntityMap, EntityType, PlacesMap, PresenceMap, StopFeature } from './types';
 
@@ -21,6 +23,7 @@ const style = () => {
 };
 
 export const COLORS = {
+  encounter: '#e0a800', // places where paths crossed
   presence: '#b4462b',
   route: '#b4462b',
   association: '#5b4fbf',
@@ -218,7 +221,7 @@ export function showPoint(map: MapLibre, coords: [number, number], name: string)
 const PLACE_LAYERS = ['places-areas', 'places-circles'];
 const OVERVIEW_LAYERS = ['ov-routes', 'ov-arrows', 'ov-route-hover'];
 const SELECTION_LAYERS = ['sel-route', 'sel-arrows', 'sel-association', 'sel-presence'];
-const OVERLAY_LAYERS = [...OVERVIEW_LAYERS, ...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
+const OVERLAY_LAYERS = ['enc-halo', ...OVERVIEW_LAYERS, ...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
 const clearOverlays = (map: MapLibre) => removeLayers(map, OVERLAY_LAYERS);
 
 /** Route colours on the start map: one per kind of entry (with hundreds of entries, one per entry wouldn't tell apart). */
@@ -336,6 +339,7 @@ function bindOverview(map: MapLibre) {
       const assoc = Number(p.association_count);
       return html`<div class="popup-row"><strong><a href="${href('place', p.slug)}">${p.name}</a></strong>${p.kind ? html` <span class="muted">${p.kind}</span>` : ''}
         ${events.length ? placeRows(events) : html`<div class="muted">Nobody and nothing in the current selection was here (with a date).</div>`}
+        ${encountersHere(map, p.slug)}
         ${assoc ? html`<div class="popup-note"><a href="${href('place', p.slug)}">${assoc} ${assoc === 1 ? 'association' : 'associations'}</a> (influence, depictions …), not travel</div>` : ''}</div>`;
     })}`;
   });
@@ -397,8 +401,53 @@ function bindPresencePopups(map: MapLibre) {
   popupOnClick(map, ['presence-circles'], (features) => html`${(features ?? []).slice(0, 1).map((f) => {
     const rows = JSON.parse(f.properties.rows as string) as PresenceMap['features'][number]['properties'][];
     return html`<div class="popup-row"><strong><a href="${href('place', f.properties.slug)}">${f.properties.name}</a></strong>
-      ${placeRows(rows)}</div>`;
+      ${placeRows(rows)}${encountersHere(map, f.properties.slug)}</div>`;
   })}`);
+}
+
+// ---- crossed paths: places where two entries were at the same time ---------------------------------
+
+const encountersOf = new WeakMap<MapLibre, Encounter[]>();
+
+/** A soft halo under every place where paths crossed; the place popups then list who met there. */
+export function showEncounters(map: MapLibre, list: Encounter[], coords: (slug: string) => [number, number] | undefined) {
+  encountersOf.set(map, list);
+  const seen = new Set<string>();
+  const features: GeoJSON.Feature[] = [];
+  for (const e of list) {
+    const c = coords(e.place.slug);
+    if (!c || seen.has(e.place.slug)) continue;
+    seen.add(e.place.slug);
+    features.push({ type: 'Feature', geometry: { type: 'Point', coordinates: c }, properties: { slug: e.place.slug } });
+  }
+  whenReady(map, () => {
+    setData(map, 'enc', { type: 'FeatureCollection', features });
+    if (map.getLayer('enc-halo')) return;
+    const below = ['places-areas', 'places-circles', 'presence-circles', 'sel-association', 'sel-presence'].find((l) => map.getLayer(l));
+    map.addLayer({
+      id: 'enc-halo', type: 'circle', source: 'enc',
+      paint: {
+        'circle-radius': 21, 'circle-color': COLORS.encounter, 'circle-opacity': 0.2, 'circle-blur': 0.4,
+        'circle-stroke-color': COLORS.encounter, 'circle-stroke-width': 1.5, 'circle-stroke-opacity': 0.75,
+      },
+    }, below);
+  });
+}
+
+/** Flies to an encounter and highlights both routes (on the start map). */
+export function focusEncounter(map: MapLibre, e: Encounter, coords: (slug: string) => [number, number] | undefined) {
+  const c = coords(e.place.slug);
+  if (c) map.flyTo({ center: c, zoom: Math.max(map.getZoom(), 6), duration: 900 });
+  if (map.getLayer('ov-route-hover')) map.setFilter('ov-route-hover', ['in', ['get', 'key'], ['literal', encounterKeys(e)]]);
+}
+
+/** "At the same time here" for a place popup. */
+function encountersHere(map: MapLibre, slug: string) {
+  const here = (encountersOf.get(map) ?? []).filter((e) => e.place.slug === slug);
+  return here.length
+    ? html`<div class="popup-encounters"><div class="popup-subhead">At the same time here</div>
+        <ul class="popup-list encounters-list">${here.map((e) => encounterLine(e, { withPlace: false }))}</ul></div>`
+    : '';
 }
 
 // ---- several chosen entities, one colour each -----------------------------------------------------
