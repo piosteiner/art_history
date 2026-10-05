@@ -1,0 +1,17 @@
+name: Katsushika Hokusai
+sort_name: Hokusai
+alt_names: [葛飾北斎]
+birth: 1760
+death: 1849
+biography_md: Japanese ukiyo-e painter and printmaker, best known for the series *Thirty-six Views of Mount Fuji*.
+relationships:
+  - type: born_in
+    to: place/edo
+    period: 1760
+  - type: lived_in
+    to: place/edo
+  - type: died_in
+    to: place/edo
+    period: 1849
+  - type: associated_with
+    to: movement/ukiyo-e

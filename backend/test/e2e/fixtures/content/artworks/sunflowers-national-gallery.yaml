@@ -1,0 +1,11 @@
+title: Sunflowers
+creator: vincent-van-gogh
+created: 1888-08
+kind: painting
+medium: Oil on canvas
+institution: national-gallery-london
+description_md: One of the series painted to decorate the Yellow House for Gauguin's arrival.
+relationships:
+  - type: created_in
+    to: place/arles
+    period: 1888-08

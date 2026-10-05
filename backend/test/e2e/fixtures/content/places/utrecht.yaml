@@ -1,0 +1,5 @@
+name: Utrecht
+kind: settlement
+parent: netherlands
+country_code: NL
+location: [5.1214, 52.0907]

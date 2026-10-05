@@ -1,0 +1,64 @@
+name: Vincent van Gogh
+sort_name: Gogh, Vincent van
+birth: 1853-03-30
+death: 1890-07-29
+biography_md: |
+  Dutch painter whose roughly ten-year career produced some 860 oil paintings, most of them in his last two years.
+  In Paris he discovered Impressionism and collected hundreds of Japanese woodblock prints; in Arles and
+  Saint-Rémy he developed the saturated colour and expressive brushwork that made him a founder of modern art.
+relationships:
+  - type: born_in
+    to: place/zundert
+    period: 1853-03-30
+  - type: worked_in
+    to: place/london
+    period: 1873/1875
+    label: art dealer at Goupil & Cie
+  - type: lived_in
+    to: place/the-hague
+    period: 1881-12/1883-09
+  - type: lived_in
+    to: place/nuenen
+    period: 1883-12/1885-11
+  - type: lived_in
+    to: place/antwerp
+    period: 1885-11/1886-02
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-antwerp
+    period: 1886-01/1886-02
+  - type: lived_in
+    to: place/paris
+    period: 1886-03/1888-02
+    label: with his brother Theo in Montmartre
+  - type: lived_in
+    to: place/arles
+    period: 1888-02-20/1889-05-08
+    label: the Yellow House
+  - type: lived_in
+    to: place/saint-remy-de-provence
+    period: 1889-05-08/1890-05-16
+    label: asylum of Saint-Paul-de-Mausole
+  - type: lived_in
+    to: place/auvers-sur-oise
+    period: 1890-05-20/1890-07-29
+  - type: died_in
+    to: place/auvers-sur-oise
+    period: 1890-07-29
+  - type: influenced_by_culture_of
+    to: place/japan
+    period: 1886/1890
+    label: collected ukiyo-e prints; never travelled to Japan
+  - type: influenced_by
+    to: artist/utagawa-hiroshige
+    period: 1887
+    label: painted copies of prints from One Hundred Famous Views of Edo
+  - type: influenced_by
+    to: artist/katsushika-hokusai
+    certainty: probable
+    notes_md: Praised *The Great Wave* in a letter to Theo (1888).
+  - type: associated_with
+    to: movement/post-impressionism
+  - type: associated_with
+    to: movement/japonisme
+  - type: contemporary_of
+    to: artist/paul-gauguin

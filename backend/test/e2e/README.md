@@ -11,7 +11,7 @@ npx playwright show-trace test/e2e/.results/<…>/trace.zip   # what the browser
 ```
 
 - **Isolated:** database `arthistory_test` (created once with `db/setup.sh arthistory_test`), reset before every run
-  (`reset.sql`) and filled from `content/`; server on port 3006; two users with passwords generated per run (stored in
+  (`reset.sql`) and filled from the frozen sample `fixtures/content/` (not the live `content/` snapshot); server on port 3006; two users with passwords generated per run (stored in
   the OS temp dir, never in the repo). Dev (`arthistory_dev`, :3005) and production are never touched.
 - **Offline:** OpenStreetMap tiles are intercepted and answered with a blank image.
 - **deploy.sh runs them** before migrating/reloading production; a failure stops the deploy

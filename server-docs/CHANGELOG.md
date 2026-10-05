@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### E2E tests use their own sample content
+- **What:** `backend/test/e2e/fixtures/content/` — a frozen copy of `content/` (as of migration 022) imported by
+  `global-setup.js` instead of the live snapshot.
+- **Why:** the content snapshot committed after migration 022 (real data: new institutions, The Great Wave's image …)
+  made 9 specs fail and `deploy.sh` stop (production untouched). Exporting real content must never break deploys.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: name fields at full width, inline reading panel
 - **What:** name / other-name inputs full width; language · role · Add reading · remove in a compact line below; each
   other name in its own box. "Add reading" opens a small panel under the field (Enter adds, Esc cancels) instead of

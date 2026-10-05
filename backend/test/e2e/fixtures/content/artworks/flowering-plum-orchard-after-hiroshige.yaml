@@ -1,0 +1,15 @@
+title: Flowering Plum Orchard (after Hiroshige)
+creator: vincent-van-gogh
+created: 1887
+kind: painting
+medium: Oil on canvas
+institution: van-gogh-museum
+relationships:
+  - type: created_in
+    to: place/paris
+    period: 1887
+  - type: influenced_by
+    to: artwork/plum-park-in-kameido
+    label: painted copy
+  - type: associated_with
+    to: movement/japonisme

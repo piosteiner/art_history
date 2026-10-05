@@ -1,0 +1,14 @@
+title: The Great Wave off Kanagawa
+alt_titles: [Kanagawa oki nami ura, 神奈川沖浪裏]
+creator: katsushika-hokusai
+created: 1830/1832
+created_label: c. 1831
+kind: woodblock print
+medium: Woodblock print, ink and colour on paper
+description_md: From *Thirty-six Views of Mount Fuji*. Printed in large editions; impressions survive in many museums.
+relationships:
+  - type: created_in
+    to: place/edo
+    period: 1830/1832
+  - type: associated_with
+    to: movement/ukiyo-e
