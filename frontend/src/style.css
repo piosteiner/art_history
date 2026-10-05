@@ -430,3 +430,4 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .route-key.on { font-weight: 600; }
 .route-key .line { width: 18px; height: 4px; }
 .legend-key .dot, .legend-key .ring { vertical-align: middle; }
+.dim-part { color: var(--muted); }

@@ -8,7 +8,7 @@ import {
   wireImageFallbacks, wireLightbox, type Html,
 } from '../html';
 import { COLORS, createMap, showEntity, showPoint } from '../map';
-import type { ArtworkSummary, Category, Country, DetailByPlural, Entity, Image, KindRef, Plural, PolityLink, Relationship } from '../types';
+import type { ArtworkSummary, Category, Country, DetailByPlural, Dimensions, Entity, Image, KindRef, PartDimensions, Plural, PolityLink, Relationship } from '../types';
 import { guard, loading, showError } from './common';
 
 type Fact = [label: string, value: Html | string | null | undefined | false];
@@ -37,6 +37,15 @@ function polityFacts(e: { country: Country | null; polities: PolityLink[] }, rel
   const links = e.polities.filter((p) => p.relationship === rel);
   if (links.length) return [[label, html`${links.map((p, i) => html`${i ? html`<br>` : ''}${polityWithToday(p, e.country)}`)}`]];
   return [[fallback, e.country ? html`${countryLink(e.country)}${e.country.place && e.country.source === 'place' ? html` <span class="muted">(${e.country.place.name})</span>` : ''}` : null]];
+}
+
+/** "24.5 × 36.8 cm (image)" for the work itself, then one line per further measured part ("Mount: 180 × 95.5 cm"). */
+function dimensionsFact(main: Dimensions | null, parts: PartDimensions[]) {
+  const first = main?.label ? html`${main.label}${main.note ? html` <span class="muted">(${main.note})</span>` : ''}` : null;
+  const rest = parts.filter((p) => p.label);
+  if (!first && !rest.length) return null;
+  const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
+  return html`${first ?? ''}${rest.map((p, i) => html`${first || i ? html`<br>` : ''}<span class="dim-part">${cap(p.part)}:</span> ${p.label}`)}`;
 }
 
 const refs = (type: Parameters<typeof link>[0], items: KindRef[]) =>
@@ -70,7 +79,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Type', e.kind],
           ['Medium', e.medium],
           ['Materials', e.materials.length ? e.materials.join(', ') : null],
-          ['Dimensions', e.dimensions?.label ? [e.dimensions.label, e.dimensions.note].filter(Boolean).join(' — ') : null],
+          ['Dimensions', dimensionsFact(e.dimensions, e.other_dimensions ?? [])],
           ...polityFacts(e, 'created_in_polity', 'Made in', 'Country of origin'),
           ['Collection', e.institution ? link('institution', e.institution.slug, e.institution.name) : null],
           ['Inventory no.', e.inventory_number],

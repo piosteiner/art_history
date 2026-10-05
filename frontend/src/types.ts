@@ -158,12 +158,15 @@ export interface Artist extends DetailBase, Located, Named {
 }
 
 export interface Dimensions { height_cm: number | null; width_cm: number | null; depth_cm: number | null; note: string | null; label: string | null }
+/** A further measured part next to the work itself: mount, frame, sheet, base … */
+export interface PartDimensions { part: string; height_cm: number | null; width_cm: number | null; depth_cm: number | null; label: string }
 
 export interface Artwork extends DetailBase, Located, Titled {
   type: 'artwork';
   title: string; alt_titles: string[]; attribution_label: string | null;
   created: DateRange | null; kind: string | null; medium: string | null; inventory_number: string | null;
   materials: string[]; dimensions: Dimensions | null;
+  other_dimensions?: PartDimensions[]; // detail only; empty list when there are none
   description_html: string | null;
   images: Image[]; image_url: string | null;
   creator: Ref | null; institution: Ref | null;

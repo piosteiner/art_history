@@ -270,3 +270,22 @@ test('years typed while the map is still loading are kept (slow API)', async ({ 
   await page.locator('.timeline-form button[type=submit]').click();
   await expect(page.locator('#map-status')).toContainText('1830–1850', { timeout: 20_000 });
 });
+
+test('artwork dimensions: the work itself (with note), then one line per further measured part', async ({ page }) => {
+  // no artwork has further measurements yet: add some to the Great Wave's response
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.dimensions = { ...body.dimensions, note: 'image' };
+    body.other_dimensions = [
+      { part: 'mount', height_cm: 180, width_cm: 95.5, depth_cm: null, label: '180 × 95.5 cm' },
+      { part: 'frame', height_cm: 190, width_cm: 105.5, depth_cm: 6, label: '190 × 105.5 × 6 cm' },
+    ];
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const dims = page.locator('.facts dd').filter({ hasText: 'cm' }).first();
+  await expect(dims).toContainText('25.7 × 37.9 cm (image)');
+  await expect(dims).toContainText('Mount: 180 × 95.5 cm');
+  await expect(dims).toContainText('Frame: 190 × 105.5 × 6 cm');
+});
