@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Admin: materials suggested from the medium, terms used before clickable
+- **What:** `backend/src/admin/editor/materials.js`: under the materials list, chips "From the medium" (known
+  materials and terms in use found in the medium text, plus a few synonyms: oil → oil paint, gilt → gold leaf; in the
+  order of the medium) and "Used before"; a click adds the term, typing stays possible.
+- **Why:** owner: keep materials for filtering, but without typing everything twice.
+- **Tested:** e2e 60 passing.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: unpublished changes marked per field
 - **What:** the edit page carries the published values (`data-published`); `backend/src/admin/editor/unpublished.js`
   outlines every field the shared working copy changes, tags it "unpublished", shows "Published: …" and a count at

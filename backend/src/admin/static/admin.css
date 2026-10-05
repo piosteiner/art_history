@@ -230,3 +230,10 @@ td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-f
 .published-value { font-style: italic; overflow-wrap: anywhere; }
 .unpublished-summary { margin: 0 0 1rem; color: var(--accent); font-weight: 600; }
 .unpublished-summary[hidden] { display: none; }
+
+/* materials: click to add, from the medium or from terms used before (src/admin/editor/materials.js) */
+.material-suggestions { display: grid; gap: .3rem; margin-top: .35rem; }
+.chips { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; }
+button.chip { padding: .1rem .55rem; font-size: .85rem; border-radius: 999px; background: transparent; color: var(--fg); border: 1px solid var(--line); }
+button.chip:hover { border-color: var(--accent); color: var(--accent); }
+button.chip.suggested { border-color: var(--accent); color: var(--accent); }

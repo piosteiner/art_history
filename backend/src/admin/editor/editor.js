@@ -20,6 +20,7 @@ import { initWikidataBulk } from './wikidata-bulk';
 import { initSlug } from './slug';
 import { initNames } from './names';
 import { initUnpublished } from './unpublished';
+import { initMaterials } from './materials';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -216,6 +217,7 @@ function enhance(textarea, collab = null) {
 
 initAutocomplete();
 initNames();
+initMaterials();
 initSlug();
 initWikidataBulk();
 const live = initLive();

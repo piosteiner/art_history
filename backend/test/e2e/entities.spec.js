@@ -278,10 +278,33 @@ test('object type, medium and materials are named and explained; materials in us
   await expect(field('f-kind')).toContainText('What sort of object it is');
   await expect(field('f-medium')).toContainText('worded like a museum label');
   await expect(field('f-materials')).toContainText('no techniques');
-  await expect(field('f-materials')).toContainText('Used so far: ink · paper');
+  const usedBefore = field('f-materials').locator('.chips', { hasText: 'Used before' });
+  await expect(usedBefore.locator('button.chip', { hasText: /^\+ ink$/ })).toHaveCount(1);
+  await expect(usedBefore.locator('button.chip', { hasText: /^\+ paper$/ })).toHaveCount(1);
   await userA.goto('/places/arles/edit');
   await expect(userA.locator('label[for="f-kind"]')).toHaveText('Kind of place');
   await userA.goto('/artworks/plum-park-in-kameido');
   await expect(userA.locator('dl.fields dt', { hasText: 'Object type' })).toBeVisible();
+  sql("UPDATE artworks SET materials = '{}' WHERE slug = 'plum-park-in-kameido'");
+});
+
+test('materials: suggested from the medium and from terms used before, added with a click; typing still works', async ({ userA }) => {
+  sql("UPDATE artworks SET materials = '{bronze}' WHERE slug = 'plum-park-in-kameido'");
+  await userA.goto('/artworks/the-starry-night/edit');
+  const ta = userA.locator('#f-materials');
+  const suggested = userA.locator('.chips', { hasText: 'From the medium' }).locator('button.chip');
+  await userA.fill('#f-medium', 'Ink and colour on silk, gilt frame');
+  await expect(suggested).toHaveText(['+ ink', '+ silk', '+ gold leaf']);   // colour is not a material; gilt → gold leaf
+  await userA.fill('#f-medium', 'Oil on canvas');
+  await expect(suggested).toHaveText(['+ oil paint', '+ canvas']);
+  await suggested.first().click();
+  await expect(ta).toHaveValue('oil paint');
+  await expect(suggested).toHaveText(['+ canvas']);                           // what is in the list isn't offered again
+  await userA.locator('.chips', { hasText: 'Used before' }).locator('button.chip', { hasText: 'bronze' }).click();
+  await ta.press('End');
+  await ta.pressSequentially('\nwood', { delay: 10 });                         // typed by hand
+  await expect(ta).toHaveValue('oil paint\nbronze\nwood');
+  await userA.goto('/artworks/the-starry-night/discard-changes');
+  await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
   sql("UPDATE artworks SET materials = '{}' WHERE slug = 'plum-park-in-kameido'");
 });

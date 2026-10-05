@@ -38,7 +38,7 @@ const LABELS = {
 const TYPE_HINTS = {
   'artwork.kind': 'What sort of object it is, in a word or two: painting, woodblock print, hanging scroll, sculpture, vase. Pick a term from the list so works group together.',
   'artwork.medium': html`For people to read: one line, worded like a museum label and shown exactly as written — <i>Oil on canvas</i> · <i>Woodblock print; ink and colour on paper</i> · <i>Bronze, lost-wax cast</i>.`,
-  'artwork.materials': 'For filtering: the individual materials, one per line, lowercase and singular — ink · paper · bronze · silk. Substances and supports only, no techniques ("woodblock print" belongs in object type / medium).',
+  'artwork.materials': 'For filtering: the individual materials, one per line, lowercase and singular — ink · paper · bronze · silk. Substances and supports only, no techniques ("woodblock print" belongs in object type / medium). Type them, or click a suggestion below.',
   'place.kind': 'settlement (city, town, village) · building · site (archaeological site, landscape) · region · country',
   'movement.kind': 'period (Edo period) · movement (Impressionism) · school (Ukiyo-e, Rinpa) · style',
   'institution.kind': 'museum · academy · temple · church · gallery · library … — pick a term from the list',
@@ -148,8 +148,8 @@ function fieldInput(key, kind, f, ctx) {
   }
   if (kind === 'text[]' || kind === 'json') {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
-      <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(typeHint || HINTS[key] || HINTS[kind])}
-      ${used && used.length ? html`<div class="hint">Used so far: ${used.join(' · ')}</div>` : ''}</div>`;
+      <textarea id="${id}" name="${name}" rows="3"${key === 'materials' ? html` data-suggest-from="f-medium" data-used="${JSON.stringify(used || [])}"` : ''}>${f[key]}</textarea>${hint(typeHint || HINTS[key] || HINTS[kind])}
+      ${used && used.length ? html`<div class="hint used-terms">Used so far: ${used.join(' · ')}</div>` : ''}</div>`;
   }
   if (kind === 'dimensions') {
     const box = (x, label) => html`<input name="${name}_${x}" value="${f[`${key}_${x}`]}" placeholder="${label}" inputmode="decimal" aria-label="${label} in cm">`;
