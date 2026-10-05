@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Admin: name fields at full width, inline reading panel
+- **What:** name / other-name inputs full width; language · role · Add reading · remove in a compact line below; each
+  other name in its own box. "Add reading" opens a small panel under the field (Enter adds, Esc cancels) instead of
+  the browser's prompt.
+- **Why:** owner: the row layout was cramped and the popup clumsy.
+- **Tested:** e2e (panel, Enter doesn't submit, message without a selection).
+- **Revert:** redeploy the previous commit.
+
 ### Names in several languages: furigana, language tags, translations, romanizations (migration 022)
 - **What:** every entity table: `<name>_lang`, `<name>_ruby` (furigana markup, name stays plain), `names jsonb`
   ([{text, lang, role}] — original / translation / romanization / alternative; replaces `alt_names`/`alt_titles`, moved

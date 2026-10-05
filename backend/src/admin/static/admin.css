@@ -202,12 +202,23 @@ td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-f
 .dims-height-only { display: none; }
 .field:has(.dims input[name$="_h"]:not(:placeholder-shown)):has(.dims input[name$="_w"]:placeholder-shown):has(.dims input[name$="_d"]:placeholder-shown) .dims-height-only { display: block; }
 
-/* names in several languages (src/admin/editor/names.js): language inputs, furigana preview, other-names rows */
-.lang-input { max-width: 9rem; }
+/* names in several languages (src/admin/editor/names.js): the name at full width, below it a compact line with
+   language · role · Add reading · remove; the reading panel opens under the field */
+.name-meta { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; margin-top: .35rem; }
+.name-meta > * { width: auto; flex: 0 0 auto; }
+.name-meta .lang-input { width: 10rem; }
+.name-meta select { width: 10rem; }
+.name-meta button.small, .reading-panel button.small { padding: .25rem .7rem; font-size: .88rem; }
+.name-meta .n-remove { margin-left: auto; }
+.reading-panel { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; margin-top: .4rem; padding: .45rem .6rem;
+  border: 1px solid var(--line); border-radius: 6px; background: var(--panel); }
+.reading-panel[hidden] { display: none; }
+.reading-panel .reading-input { width: 14rem; }
+.reading-panel b { font-size: 1.15rem; }
 .ruby-preview { font-size: 1.5rem; line-height: 2.4; margin-top: .2rem; }
+.ruby-preview[hidden] { display: none; }
 .ruby-preview rt { font-size: .5em; color: var(--muted, inherit); }
-.add-reading { white-space: nowrap; }
-.names-editor { display: grid; gap: .4rem; }
-.names-row .row { align-items: center; }
-.names-row select { width: auto; }
+.names-editor { display: grid; gap: .6rem; }
+.names-editor > button { justify-self: start; }
+.names-row { padding: .55rem .6rem; border: 1px solid var(--line); border-radius: 6px; }
 .reading-note:empty { display: none; }

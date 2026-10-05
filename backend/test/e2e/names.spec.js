@@ -11,12 +11,19 @@ test('a Japanese title: furigana by "Add reading", language, romanization and tr
   await userA.fill('input[name="f.title_lang"]', 'JA');
   // furigana: select 神奈川, press the button, type the reading
   await title.evaluate((el) => el.setSelectionRange(0, 3));
-  userA.once('dialog', (d) => d.accept('かながわ'));
   await userA.click('.name-field .add-reading');
+  const panel = userA.locator('.name-field .reading-panel');
+  await expect(panel).toContainText('Reading for 神奈川');               // inline, no browser popup
+  await panel.locator('.reading-input').fill('かながわ');
+  await panel.locator('.reading-input').press('Enter');                 // Enter adds (and doesn't submit)
+  await expect(panel).toBeHidden();
   await expect(title).toHaveValue('{神奈川|かながわ}沖浪裏');
   await expect(userA.locator('.name-field .ruby-preview rt')).toHaveText('かながわ');
+  await expect(userA).toHaveURL(/\/artworks\/new$/);
   await userA.click('.name-field .add-reading');                      // nothing selected
-  await expect(userA.locator('.name-field .reading-note')).toHaveText('Select the kanji first.');
+  await expect(panel.locator('.reading-note')).toHaveText('Select the kanji in the field first, then press “Add reading”.');
+  await panel.locator('button:has-text("OK")').click();
+  await expect(panel).toBeHidden();
 
   // other names as rows; the slug follows the romanization (the title has no Latin letters)
   const rows = userA.locator('.names-row');

@@ -106,8 +106,8 @@ function fieldInput(key, kind, f, ctx) {
   if (kind === 'name') {
     // the browser adds the "Add reading" button and the furigana preview (editor/names.js)
     return html`<div class="field name-field${err}"><label for="${id}">${humanize(key)}</label>
-      <div class="row"><input id="${id}" name="${name}" value="${f[key]}" class="grow" data-ruby lang="${f[`${key}_lang`] || ''}">
-      <input name="${name}_lang" value="${f[`${key}_lang`]}" placeholder="language" aria-label="${humanize(key)} language" class="lang-input" list="lang-list" autocomplete="off"></div>
+      <input id="${id}" name="${name}" value="${f[key]}" data-ruby lang="${f[`${key}_lang`] || ''}">
+      <div class="name-meta"><input name="${name}_lang" value="${f[`${key}_lang`]}" placeholder="language" aria-label="${humanize(key)} language" class="lang-input" list="lang-list" autocomplete="off"></div>
       <div class="ruby-preview" hidden></div>${hint(HINTS.name)}
       <datalist id="lang-list">${LANGS.map(([v, l]) => html`<option value="${v}">${l}</option>`)}</datalist></div>`;
   }
