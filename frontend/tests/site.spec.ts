@@ -216,3 +216,12 @@ test('names in several languages: lang, original with furigana, search by other 
   await page.fill('.filter', 'かながわ'); // a reading, not part of any displayed title
   await expect(page.locator('.card', { hasText: 'The Great Wave off Kanagawa' })).toBeVisible();
 });
+
+test('people (formerly patrons): page, roles, old /patrons/ addresses redirect', async ({ page }) => {
+  await page.goto('/patrons/theo-van-gogh');
+  await expect(page).toHaveURL(/\/people\/theo-van-gogh$/);
+  await expect(page.locator('h1')).toHaveText('Theo van Gogh');
+  await expect(page.locator('.facts')).toContainText('patron'); // role derived from "patron of"
+  await page.goto('/people');
+  await expect(page.locator('h1')).toHaveText('People');
+});

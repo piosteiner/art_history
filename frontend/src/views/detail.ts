@@ -4,7 +4,7 @@ import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { GROUPS, type Group } from '../selection';
 import {
-  countryLink, countryName, dateLabel, displayName, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
+  countryLink, countryName, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
   wireImageFallbacks, wireLightbox, type Html,
 } from '../html';
 import { COLORS, createMap, showEntity, showPoint } from '../map';
@@ -14,7 +14,7 @@ import { guard, loading, showError } from './common';
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
 const CATEGORY_ORDER: Category[] = [
-  'presence', 'association', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'provenance',
+  'presence', 'association', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance',
 ];
 const CATEGORY_LABEL: Record<string, string> = {
   presence: 'Places (physically there)',
@@ -24,6 +24,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   collaboration: 'Collaboration',
   membership: 'Membership',
   patronage: 'Patronage',
+  depiction: 'Depictions',
   provenance: 'Provenance',
   polity: 'States and nationality',
 };
@@ -112,11 +113,19 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
         ],
         extra: e.artworks.length ? [html`<section><h2>Artworks in the collection</h2>${artworkList(e.artworks, true)}</section>`] : [],
       };
-    case 'patron':
+    case 'person':
       return {
-        title: e.name, subtitle: [e.kind, e.active ? `active ${e.active.label}` : null].filter(Boolean).join(' · '),
-        text: e.notes_html, images: [],
-        facts: [['Active', dateLabel(e.active)], ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'), ['Also known as', otherNames(e)]],
+        title: e.name, subtitle: [personDates(e), personWhat(e)].filter(Boolean).join(' · '),
+        text: e.description_html, images: [],
+        facts: [
+          ['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)],
+          ['Active', e.birth || e.death ? '' : dateLabel(e.active)],
+          ['Kind', e.kind && e.kind !== 'person' ? e.kind : null],
+          ['Occupations', e.occupations.length ? e.occupations.join(', ') : null],
+          ['Roles', e.roles.length ? e.roles.map((r) => ROLE_LABEL[r] ?? r).join(', ') : null],
+          ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
+          ['Also known as', otherNames(e)],
+        ],
         extra: [],
       };
     case 'polity':
@@ -217,7 +226,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       </article>`);
       wireImageFallbacks(main);
       wireLightbox(main);
-      if (['artist', 'patron', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
+      if (['artist', 'person', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
       if (!hasMap) return;
 
       const mapEl = main.querySelector<HTMLElement>('#map')!;

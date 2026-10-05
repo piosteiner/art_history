@@ -152,7 +152,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   // dated presence links (one request; /v1/map/presence fails below year -4713, PostgreSQL's oldest date).
   const ALL_TIME = { from: -3000, to: new Date().getFullYear() + 1 };
   async function overview(stale: () => boolean) {
-    const types = (['artist', 'patron', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
+    const types = (['artist', 'person', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
     const [places, all] = await Promise.all([
       getPlacesMap(),
       types.length ? getPresence(ALL_TIME.from, ALL_TIME.to, [...types]) : Promise.resolve({ type: 'FeatureCollection', features: [] } as PresenceMap),
@@ -170,7 +170,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       placesOf.set(key, (placesOf.get(key) ?? new Set()).add(r.place.slug));
     }
     const kinds = types.filter((t) => [...placesOf].some(([k, p]) => k.startsWith(`${t}/`) && p.size > 1));
-    render(legend, html`${kinds.map((t) => html`<span><i class="line" style="background:${TYPE_COLORS[t]}"></i>${({ artist: 'artists', patron: 'patrons', artwork: 'artworks' })[t]}’ routes, in date order</span>`)}
+    render(legend, html`${kinds.map((t) => html`<span><i class="line" style="background:${TYPE_COLORS[t]}"></i>${({ artist: 'artists’', person: 'people’s', artwork: 'artworks’' })[t]} routes, in date order</span>`)}
       <span><i class="dot" style="background:${COLORS.place}"></i>someone or something of the selection was there</span>
       <span><i class="dot" style="background:${COLORS.association}"></i>associations only (e.g. influence)</span>
       <span><i class="ring" style="border-color:${COLORS.place}"></i>country or region</span>`);
@@ -210,12 +210,12 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   }
 
   async function presence(w: NonNullable<Window>, stale: () => boolean) {
-    const types = (['artist', 'patron', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
+    const types = (['artist', 'person', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
     const span = w.from === w.to ? `${w.from}` : `${w.from}–${w.to}`;
     render(legend, html`<span><i class="dot" style="background:${COLORS.presence}"></i>physically there in ${span}</span>`);
     if (!types.length) {
       showPresence(map, { type: 'FeatureCollection', features: [] });
-      status.textContent = 'Artists, patrons and artworks are all hidden, so there is nothing to place on the map.';
+      status.textContent = 'Artists, people and artworks are all hidden, so there is nothing to place on the map.';
       return;
     }
     const fc = await getPresence(w.from, w.to, [...types]);
@@ -245,9 +245,9 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   function loadLists() {
     return Promise.all([
       listEntities('artists', LIST), listEntities('artworks', LIST),
-      listEntities('movements', LIST), listEntities('polities', LIST), listEntities('patrons', LIST),
-    ]).then(([artists, artworks, movements, polities, patrons]) => ({
-      artists: artists.data, artworks: artworks.data, movements: movements.data, polities: polities.data, patrons: patrons.data,
+      listEntities('movements', LIST), listEntities('polities', LIST), listEntities('people', LIST),
+    ]).then(([artists, artworks, movements, polities, people]) => ({
+      artists: artists.data, artworks: artworks.data, movements: movements.data, polities: polities.data, people: people.data,
     }));
   }
 
@@ -259,7 +259,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       ...keep('polity', lists.polities).map((p) => ({ group: 'Polities', label: p.name, href: href('polity', p.slug), from: p.period, to: p.period, color: colorOf.get('polity', p.slug) })),
       ...keep('movement', lists.movements).map((m) => ({ group: 'Movements', label: m.name, href: href('movement', m.slug), from: m.period, to: m.period, color: colorOf.get('movement', m.slug) })),
       ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), from: a.birth, to: a.death, color: colorOf.get('artist', a.slug) })),
-      ...keep('patron', lists.patrons).map((p) => ({ group: 'Patrons', label: p.name, href: href('patron', p.slug), from: p.active, to: p.active, color: colorOf.get('patron', p.slug) })),
+      ...keep('person', lists.people).map((p) => ({ group: 'People', label: p.name, href: href('person', p.slug), from: p.birth ?? p.active, to: p.birth || p.death ? p.death : p.active, color: colorOf.get('person', p.slug) })),
     ];
     timeline = renderTimeline(timelineEl, rows, {
       initialWindow: win,
@@ -285,7 +285,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
         { group: 'artwork', plural: 'artworks', label: 'Artworks', entries: entries('artworks', l.artworks) },
         { group: 'movement', plural: 'movements', label: 'Movements', entries: entries('movements', l.movements) },
         { group: 'polity', plural: 'polities', label: 'Polities', entries: entries('polities', l.polities) },
-        { group: 'patron', plural: 'patrons', label: 'Patrons', entries: entries('patrons', l.patrons) },
+        { group: 'person', plural: 'people', label: 'People', entries: entries('people', l.people) },
       ];
       pickers = mountPickers(pickersEl, groups, sel, (next) => {
         sel = next;

@@ -63,6 +63,11 @@ patron and artwork through its dated presence stops (one `/v1/map/presence` requ
 hover = highlight + name, click = stops). Clicking a place lists what happened there (who, what, when, note). Entries chosen → their routes, one colour each (same colour on
 the timeline; at most 24 drawn). Time window → presence in the window, limited to the selection.
 
+## People
+Formerly patrons (API migration 024): `/people`, type `person`, with kind, occupations, life dates (else `active`)
+and derived `roles` (patron, owner, depicted). Old `/patrons/…` addresses and `patrons=` in explore links are converted.
+The graph has the category `depiction` (`depicts_person`).
+
 ## Names in several languages
 The display name (`name`, artworks `title`) may be the original or a translation: elements showing a name get
 `lang` (`*_lang`, each `names` entry's lang); detail pages add the original (`names` role `original`, with `ruby_html` furigana)
@@ -87,7 +92,7 @@ place pages. Overlaps based on year-only or "c." dates are marked "possibly".
   "since …").
 - **Bug:** `/v1/map/presence?from=-5000` answers `internal_error` (PostgreSQL dates start at 4713 BC); clamp or
   return `bad_request`. The frontend uses -3000.
-- `GET /v1/map/presence?…&entities=artist/vincent-van-gogh,patron/theo-van-gogh`: today the frontend filters single
+- `GET /v1/map/presence?…&entities=artist/vincent-van-gogh,person/theo-van-gogh`: today the frontend filters single
   picks out of the full window response, which grows with the library.
 - `GET /v1/map/routes?entities=…`: several entities' map data in one request (today one request per chosen entry).
 - Lists beyond 500 entries: pickers and list pages load `limit=500` per type and sort in the browser; beyond that

@@ -225,7 +225,7 @@ const OVERLAY_LAYERS = ['enc-halo', ...OVERVIEW_LAYERS, ...PLACE_LAYERS, 'presen
 const clearOverlays = (map: MapLibre) => removeLayers(map, OVERLAY_LAYERS);
 
 /** Route colours on the start map: one per kind of entry (with hundreds of entries, one per entry wouldn't tell apart). */
-export const TYPE_COLORS: Partial<Record<EntityType, string>> = { artist: '#b4462b', patron: '#8a4f9e', artwork: '#c08a1e' };
+export const TYPE_COLORS: Partial<Record<EntityType, string>> = { artist: '#b4462b', person: '#8a4f9e', artwork: '#c08a1e' };
 
 type PresenceRow = PresenceMap['features'][number]['properties'];
 const rowKey = (r: PresenceRow) => `${r.entity.type}/${r.entity.slug}`;

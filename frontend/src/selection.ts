@@ -3,15 +3,15 @@
 import { PLURAL } from './api';
 import type { EntityType } from './types';
 
-export type Group = Extract<EntityType, 'artist' | 'artwork' | 'movement' | 'polity' | 'patron'>;
-export const GROUPS: Group[] = ['artist', 'artwork', 'movement', 'polity', 'patron'];
+export type Group = Extract<EntityType, 'artist' | 'artwork' | 'movement' | 'polity' | 'person'>;
+export const GROUPS: Group[] = ['artist', 'artwork', 'movement', 'polity', 'person'];
 
 /** `by-artists` (artworks only): the works of whichever artists are selected — follows the artist picker. */
 export type Pick = { mode: 'all' } | { mode: 'none' } | { mode: 'some'; slugs: string[] } | { mode: 'by-artists' };
 export type Selection = Record<Group, Pick>;
 
 export const ALL: Selection = {
-  artist: { mode: 'all' }, artwork: { mode: 'all' }, movement: { mode: 'all' }, polity: { mode: 'all' }, patron: { mode: 'all' },
+  artist: { mode: 'all' }, artwork: { mode: 'all' }, movement: { mode: 'all' }, polity: { mode: 'all' }, person: { mode: 'all' },
 };
 
 const isGroup = (t: string): t is Group => (GROUPS as string[]).includes(t);
@@ -19,7 +19,8 @@ const isGroup = (t: string): t is Group => (GROUPS as string[]).includes(t);
 export function parseSelection(params: URLSearchParams): Selection {
   const sel = { ...ALL };
   for (const g of GROUPS) {
-    const v = params.get(PLURAL[g]);
+    // "patrons=" in links and remembered views from before patrons became people
+    const v = params.get(PLURAL[g]) ?? (g === 'person' ? params.get('patrons') : null);
     if (v === null || v === 'all') continue;
     if (v === 'by-artists' && g === 'artwork') {
       sel[g] = { mode: 'by-artists' };
@@ -35,6 +36,7 @@ export function parseSelection(params: URLSearchParams): Selection {
 export function writeSelection(sel: Selection, params: URLSearchParams) {
   for (const g of GROUPS) {
     const p = sel[g];
+    if (g === 'person') params.delete('patrons');
     if (p.mode === 'all') params.delete(PLURAL[g]);
     else params.set(PLURAL[g], p.mode === 'some' ? p.slugs.join(',') : p.mode);
   }

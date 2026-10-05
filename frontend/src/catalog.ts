@@ -1,7 +1,7 @@
 // Search and sort for lists of entries (explore pickers, list pages and the header search share it).
 // Each entry has a name and a meta line that are shown, labelled fields that are searchable but not shown
 // (type, birthplace, nationality …), and per sort option a value plus a section heading.
-import { countryName, countryText, html, polityText, spanLabel, type Html } from './html';
+import { countryName, countryText, html, personDates, polityText, ROLE_LABEL, spanLabel, type Html } from './html';
 import type { Country, DateRange, EntityType, ItemByPlural, NameEntry, Plural, PolityLink } from './types';
 
 export interface SortValue {
@@ -229,25 +229,33 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       sorts: { name: byName(m.name), start: byYear(m.period), kind: byText(m.kind, 'Other') },
     }),
   },
-  patrons: {
-    type: 'patron',
+  people: {
+    type: 'person',
     sorts: [
       { id: 'name', label: 'Name A–Z' },
-      { id: 'start', label: 'Active from' },
+      { id: 'start', label: 'Birth year (or active from)' },
       { id: 'kind', label: 'Kind' },
+      { id: 'occupation', label: 'Occupation' },
+      { id: 'role', label: 'Role (patron, owner, depicted)' },
       { id: 'country', label: 'Country of birth (today)' },
       { id: 'nationality', label: 'Nationality' },
     ],
     build: (p) => {
       const l = located(p, 'nationality');
       return {
-        slug: p.slug, name: p.name, meta: p.active?.label ?? '',
+        slug: p.slug, name: p.name, meta: personDates(p).replace(' – ', '–'),
         fields: fields(
           ['Kind', p.kind],
+          ['Occupations', p.occupations.join(', ')],
+          ['Roles', p.roles.map((r) => ROLE_LABEL[r] ?? r).join(', ')],
           ['Born in', [p.birth_place?.name, countryText(p.country)].filter(Boolean).join(', ')],
           ['Nationality', l.polities],
         ),
-        sorts: { name: byName(p.name), start: byYear(p.active), kind: byText(p.kind, 'Other'), country: l.country, nationality: l.polity },
+        sorts: {
+          name: byName(p.name), start: byYear(p.birth ?? p.active), kind: byText(p.kind, 'Other'),
+          occupation: byText(p.occupations[0], 'Occupation unknown'), role: byText(p.roles[0] ? ROLE_LABEL[p.roles[0]] ?? p.roles[0] : null, 'No role recorded'),
+          country: l.country, nationality: l.polity,
+        },
       };
     },
   },

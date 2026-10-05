@@ -13,10 +13,10 @@ import { guard, loading, showError } from './common';
 import { navigate } from '../router';
 
 // place links are map material (presence/association), the API leaves them out of graphs by default
-const GRAPH_CATEGORIES: Category[] = ['influence', 'education', 'collaboration', 'membership', 'patronage', 'provenance', 'polity'];
+const GRAPH_CATEGORIES: Category[] = ['influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance', 'polity'];
 const CATEGORY_LABEL: Record<string, string> = {
   influence: 'Influence', education: 'Education', collaboration: 'Collaboration', membership: 'Movements & groups',
-  patronage: 'Patronage', provenance: 'Collections', polity: 'States & nationality',
+  patronage: 'Patronage', depiction: 'Depictions', provenance: 'Collections', polity: 'States & nationality',
 };
 
 type Node = GraphNode & SimulationNodeDatum & { degree: number };
@@ -27,7 +27,7 @@ const radius = (n: Node) => (n.depth === 0 ? 13 : 6 + Math.min(n.degree, 8));
 export function graph(main: HTMLElement, plural: Plural | undefined, slug: string | undefined, params: URLSearchParams) {
   if (!plural || !slug) {
     render(main, html`<section class="page"><h1>Network</h1>
-      <p>The network shows who influenced whom, who studied where, belonged to which movement or was supported by which patron.
+      <p>The network shows who influenced whom, who studied where, belonged to which movement, was supported by which patron or appears in which work.
       Start from any entry: open its page and choose <em>Show the network</em>, or start with one of these:</p>
       <ul class="plain-list">
         <li>${link('artist', 'vincent-van-gogh', 'Vincent van Gogh')}: <a href="/graph/artists/vincent-van-gogh?depth=2">network</a></li>

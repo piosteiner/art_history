@@ -1,9 +1,9 @@
 // Response shapes of https://api.arthistory.piogino.ch/v1 (reference: backend/docs/api.md).
 
 /** Plural URL segment of an entity type (`/v1/artists/…`). */
-export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'patrons' | 'polities';
+export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities';
 /** Singular `type` field inside responses. */
-export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'patron' | 'polity';
+export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity';
 
 /** Every date is one of these or null. `to` is inclusive; open ends are null; BCE years are negative. */
 export interface DateRange {
@@ -41,7 +41,7 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity';
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction';
 
 export interface Relationship {
   type: string;
@@ -132,7 +132,14 @@ export interface ArtworkItem extends Located, Titled { slug: string; title: stri
 export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
 export interface InstitutionItem extends Located, Named { slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null }
-export interface PatronItem extends Located, Named { slug: string; name: string; kind: string | null; active: DateRange | null; birth_place: BirthPlace | null }
+/** Derived from relationships: commissioned / patron of, owner of an artwork, depicted in an artwork. */
+export type PersonRole = 'patron' | 'owner' | 'depicted';
+/** Everyone relevant who isn't an artist, also groups (family, dynasty, religious order …). */
+export interface PersonItem extends Located, Named {
+  slug: string; name: string; kind: string | null; occupations: string[];
+  birth: DateRange | null; death: DateRange | null; active: DateRange | null; // active: groups, or when the lifespan is unknown
+  roles: PersonRole[]; birth_place: BirthPlace | null;
+}
 export interface PolityItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[] }
 
 // ---- details -------------------------------------------------------------------------------------
@@ -186,11 +193,12 @@ export interface Institution extends DetailBase, Located, Named {
   artworks: ArtworkSummary[];
 }
 
-export interface Patron extends DetailBase, Located, Named {
-  type: 'patron';
+export interface Person extends DetailBase, Located, Named {
+  type: 'person';
   birth_place: BirthPlace | null;
-  name: string; alt_names: string[]; kind: string | null; active: DateRange | null;
-  notes_html: string | null;
+  name: string; alt_names: string[]; kind: string | null; occupations: string[];
+  birth: DateRange | null; death: DateRange | null; active: DateRange | null; roles: PersonRole[];
+  description_html: string | null;
 }
 
 export interface Polity extends DetailBase, Named {
@@ -200,15 +208,15 @@ export interface Polity extends DetailBase, Named {
   ancestors: KindRef[]; children: KindRef[];
 }
 
-export type Entity = Artist | Artwork | Place | Movement | Institution | Patron | Polity;
+export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity;
 
 export interface ItemByPlural {
   artists: ArtistItem; artworks: ArtworkItem; places: PlaceItem;
-  movements: MovementItem; institutions: InstitutionItem; patrons: PatronItem; polities: PolityItem;
+  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem;
 }
 export interface DetailByPlural {
   artists: Artist; artworks: Artwork; places: Place;
-  movements: Movement; institutions: Institution; patrons: Patron; polities: Polity;
+  movements: Movement; institutions: Institution; people: Person; polities: Polity;
 }
 
 // ---- search, vocabulary --------------------------------------------------------------------------

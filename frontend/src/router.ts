@@ -11,7 +11,7 @@ export type Route =
   | { name: 'privacy' }
   | { name: 'not-found' };
 
-const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'patrons', 'polities'];
+const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'people', 'polities'];
 const isPlural = (s: string): s is Plural => (PLURALS as string[]).includes(s);
 
 export function parse(pathname: string, search: string): Route {
@@ -72,6 +72,8 @@ function interceptLinks(e: MouseEvent) {
 export function start(onRoute: (route: Route) => void) {
   // old addresses (#/artists/vincent-van-gogh) keep working
   if (location.hash.startsWith('#/')) history.replaceState(null, '', location.hash.slice(1) || '/');
+  // patrons became people (API migration 024): /patrons/theo-van-gogh → /people/theo-van-gogh
+  if (/^\/patrons(\/|$)/.test(location.pathname)) history.replaceState(null, '', location.pathname.replace(/^\/patrons/, '/people') + location.search);
   onRouteHandler = onRoute;
   window.addEventListener('popstate', run);
   document.addEventListener('click', interceptLinks);

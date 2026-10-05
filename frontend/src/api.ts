@@ -37,7 +37,7 @@ function get<T>(path: string, params: Params = {}): Promise<T> {
 
 export const PLURAL: Record<EntityType, Plural> = {
   artist: 'artists', artwork: 'artworks', place: 'places',
-  movement: 'movements', institution: 'institutions', patron: 'patrons', polity: 'polities',
+  movement: 'movements', institution: 'institutions', person: 'people', polity: 'polities',
 };
 
 export interface ListParams extends Params {

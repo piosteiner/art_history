@@ -1,5 +1,5 @@
 import { listEntities } from '../api';
-import { countryName, countryText, dateLabel, displayName, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
+import { countryName, countryText, dateLabel, displayName, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
@@ -44,9 +44,9 @@ function cardParts(plural: Plural, item: AnyItem) {
       [name, date, detail, image] = [i.name, i.founded ? `founded ${i.founded.label}` : '', [i.kind, countryText(i.country)].filter(Boolean).join(' · '), i.image_url];
       break;
     }
-    case 'patrons': {
-      const p = item as ItemByPlural['patrons'];
-      [name, date, detail] = [p.name, p.active ? `active ${p.active.label}` : '', [p.kind, countryText(p.country)].filter(Boolean).join(' · ')];
+    case 'people': {
+      const p = item as ItemByPlural['people'];
+      [name, date, detail] = [p.name, personDates(p), [personWhat(p), countryText(p.country)].filter(Boolean).join(' · ')];
       break;
     }
     case 'polities': {
@@ -135,7 +135,8 @@ export function list(main: HTMLElement, plural: Plural) {
       const res = await listEntities(plural, { q, limit: 20 });
       if (mine !== request || !current() || query !== q) return;
       const local = new Set(all.filter((e) => matches(e, q)).map((e) => e.slug));
-      similar = entries(plural, res.data as ItemByPlural[typeof plural][]).filter((e) => !local.has(e.slug)) as Entry<AnyItem>[];
+      // typo-tolerant matches only when nothing matched as typed (otherwise mostly noise, see search.ts)
+      similar = local.size ? [] : entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
       if (similar.length) draw();
     } catch {
       /* the field search above still stands */

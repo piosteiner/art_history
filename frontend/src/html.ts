@@ -103,13 +103,26 @@ export function wireLightbox(root: Element) {
 
 export const TYPE_LABEL: Record<EntityType, string> = {
   artist: 'Artist', artwork: 'Artwork', place: 'Place',
-  movement: 'Movement', institution: 'Institution', patron: 'Patron', polity: 'Polity',
+  movement: 'Movement', institution: 'Institution', person: 'Person', polity: 'Polity',
 };
 
 export const PLURAL_LABEL: Record<Plural, string> = {
   artists: 'Artists', artworks: 'Artworks', places: 'Places',
-  movements: 'Movements', institutions: 'Institutions', patrons: 'Patrons', polities: 'Polities',
+  movements: 'Movements', institutions: 'Institutions', people: 'People', polities: 'Polities',
 };
+
+// ---- people -------------------------------------------------------------------------------------
+
+export const ROLE_LABEL: Record<string, string> = { patron: 'patron', owner: 'owner of artworks', depicted: 'depicted in artworks' };
+
+/** "30 March 1853 – 29 July 1890", else "active 1880–1890" (groups, or lifespan unknown). */
+export const personDates = (p: { birth: DateRange | null; death: DateRange | null; active: DateRange | null }) =>
+  p.birth || p.death ? spanLabel(p.birth, p.death) : p.active ? `active ${p.active.label}` : '';
+
+/** "poet, diplomat · patron" — occupations and the roles derived from relationships. */
+export const personWhat = (p: { kind: string | null; occupations: string[]; roles: string[] }) =>
+  [p.occupations.join(', '), p.roles.map((r) => ROLE_LABEL[r] ?? r).join(', '), p.kind && p.kind !== 'person' ? p.kind : '']
+    .filter(Boolean).join(' · ');
 
 // ---- countries and polities ----------------------------------------------------------------------
 

@@ -10,9 +10,9 @@ import { fileURLToPath } from 'node:url';
 const SITE = 'https://arthistory.piogino.ch';
 const API = process.env.API_BASE ?? 'https://api.arthistory.piogino.ch/v1';
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
-const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'patrons', 'places'];
-const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', institutions: 'Institution', patrons: 'Patron', places: 'Place' };
-const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', institutions: 'Institutions', patrons: 'Patrons', places: 'Places' };
+const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places'];
+const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', institutions: 'Institution', people: 'Person', places: 'Place' };
+const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', institutions: 'Institutions', people: 'People', places: 'Places' };
 const SITE_DESCRIPTION = 'Artists, artworks, movements and museums on a map, a timeline and an influence graph.';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -75,7 +75,7 @@ function describe(plural, e) {
     movements: [e.kind, e.period?.label],
     polities: [e.kind, e.period?.label],
     institutions: [e.kind, e.place?.name && country ? `${e.place.name}, ${country}` : e.place?.name, e.founded ? `founded ${e.founded.label}` : ''],
-    patrons: [e.kind, e.active ? `active ${e.active.label}` : ''],
+    people: [e.birth || e.death ? dateSpan(e.birth, e.death) : e.active ? `active ${e.active.label}` : '', (e.occupations ?? []).join(', '), (e.roles ?? []).join(', ')],
     places: [e.kind, e.ancestors?.length ? e.ancestors.map((a) => a.name).reverse().join(', ') : ''],
   }[plural].filter(Boolean);
   const long = text(e.biography_html ?? e.description_html ?? e.notes_html);

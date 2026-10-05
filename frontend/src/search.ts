@@ -7,7 +7,7 @@ import { href, html, langAttr, render, TYPE_LABEL, type Html } from './html';
 import { navigate, ROUTE_EVENT } from './router';
 import type { EntityType, Plural } from './types';
 
-const PLURALS: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'patrons', 'places'];
+const PLURALS: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places'];
 const MAX = 20;
 
 interface Hit {
@@ -73,7 +73,9 @@ export function mountSearch(root: HTMLElement) {
       .sort((a, b) => b.m.score - a.m.score || a.e.name.localeCompare(b.e.name, 'en', { numeric: true }))
       .slice(0, MAX);
     const seen = new Set(local.map(({ e }) => `${e.type}/${e.slug}`));
-    const extra = fuzzy.filter((h) => !seen.has(`${h.type}/${h.slug}`)).slice(0, Math.max(0, MAX - local.length));
+    // the API's fuzzy matches only help when nothing matched as typed ("hokusia"); otherwise they are noise
+    // ("theo" also scores every "The …" title about as high as a real typo)
+    const extra = local.length ? [] : fuzzy.filter((h) => !seen.has(`${h.type}/${h.slug}`)).slice(0, MAX);
     hits = [
       ...local.map(({ e, m }) => toHit(e, m)),
       ...extra.map((h) => ({ type: h.type, slug: h.slug, name: html`${h.name}`, meta: [h.kind, h.period?.label].filter(Boolean).join(' · '), why: null })),
