@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Admin: unpublished changes marked per field
+- **What:** the edit page carries the published values (`data-published`); `backend/src/admin/editor/unpublished.js`
+  outlines every field the shared working copy changes, tags it "unpublished", shows "Published: …" and a count at
+  the top; re-checked on every edit (also remote and Markdown edits — the editor fires `md-change`) and refetched from
+  `/<type>/<slug>/published.json` when someone publishes or reverts. The entry page's banner names the fields.
+- **Why:** owner: no way to see which changes were unpublished.
+- **Tested:** e2e 59 passing (mark, unmark, published value, Markdown, other editor, banner, clearing after publish).
+- **Revert:** redeploy the previous commit.
+
 ### Admin: field names and explanations per entry type
 - **What:** `LABELS` / `TYPE_HINTS` in `backend/src/admin/forms.js`: an artwork's `kind` is shown as "Object type",
   places/institutions/polities/people get "Kind of …"; short explanations for object type vs. medium vs. materials and

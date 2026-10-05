@@ -201,7 +201,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
-  <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}>
+  <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     <div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
       <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"

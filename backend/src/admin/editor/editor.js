@@ -19,6 +19,7 @@ import { startCollab } from './collab';
 import { initWikidataBulk } from './wikidata-bulk';
 import { initSlug } from './slug';
 import { initNames } from './names';
+import { initUnpublished } from './unpublished';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -156,7 +157,11 @@ function enhance(textarea, collab = null) {
         placeholder(textarea.placeholder || 'Write here — Markdown styling appears as you type.'),
         EditorView.contentAttributes.of({ 'aria-label': textarea.getAttribute('aria-label') || textarea.id || 'Markdown', spellcheck: 'true' }),
         // Keep the hidden textarea current: the form posts it as before.
-        EditorView.updateListener.of((u) => { if (u.docChanged) textarea.value = u.state.doc.toString(); }),
+        EditorView.updateListener.of((u) => {
+          if (!u.docChanged) return;
+          textarea.value = u.state.doc.toString();
+          textarea.dispatchEvent(new Event('md-change', { bubbles: true }));  // for editor/unpublished.js
+        }),
       ],
     }),
   });
@@ -218,6 +223,7 @@ const collabForm = document.querySelector('form[data-collab]');
 if (collabForm && live) {
   // Existing entry: bind the form to the shared working copy; the Markdown editors are created once it is synced.
   startCollab(collabForm, live, enhance);
+  initUnpublished(collabForm, live);
   document.querySelectorAll('textarea.md').forEach((ta) => { if (!collabForm.contains(ta)) enhance(ta); });
 } else {
   document.querySelectorAll('textarea.md').forEach((ta) => enhance(ta));

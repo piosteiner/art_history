@@ -222,3 +222,11 @@ td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-f
 .names-editor > button { justify-self: start; }
 .names-row { padding: .55rem .6rem; border: 1px solid var(--line); border-radius: 6px; }
 .reading-note:empty { display: none; }
+
+/* unpublished changes in the shared working copy (src/admin/editor/unpublished.js) */
+.field.unpublished { outline: 2px solid color-mix(in srgb, var(--accent) 75%, transparent); outline-offset: 6px; border-radius: 3px; }
+.field.unpublished > label::after { content: 'unpublished'; margin-left: .5rem; padding: 0 .4rem; border-radius: 999px; font-size: .75rem;
+  font-weight: 600; color: var(--accent-fg); background: var(--accent); vertical-align: middle; }
+.published-value { font-style: italic; overflow-wrap: anywhere; }
+.unpublished-summary { margin: 0 0 1rem; color: var(--accent); font-weight: 600; }
+.unpublished-summary[hidden] { display: none; }

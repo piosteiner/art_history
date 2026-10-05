@@ -83,11 +83,22 @@ function draftBanner({ draft, changed, restoreUrl, t, slug }) {
 }
 
 // Entry with a working copy that differs from what is published (live step 2).
+// pending.fields: labels of the fields the working copy changes (unpublishedFields())
 function unpublishedBanner(t, e, pending, onEditPage) {
   const who = pending.contributors.length ? pending.contributors.join(', ') : 'someone';
-  return html`<div class="flash draft"><b>Unpublished changes</b> by ${who} (last ${when(pending.updated_at)}).
-    ${onEditPage ? html`They are shown below — <b>Publish</b> makes them public.`
+  const what = pending.fields && pending.fields.length ? html` in <b>${pending.fields.join(', ')}</b>` : '';
+  return html`<div class="flash draft unpublished-banner"><b>Unpublished changes</b>${what} by ${who} (last ${when(pending.updated_at)}).
+    ${onEditPage ? html`They are marked below — <b>Publish</b> makes them public.`
     : html`This page shows the published version. <a href="/${t.folder}/${e.slug}/edit">Open the working copy</a>`}</div>`;
+}
+
+// Which fields the shared working copy changes compared with the published entry (labels, in form order).
+async function unpublishedFields(t, e) {
+  const { form } = await collab.currentForm(t, e.id);
+  const published = drafts.formKeys(e.doc, t, e.slug);
+  const norm = (v) => String(v ?? '').replace(/\r\n/g, '\n').trim();
+  const keys = Object.keys(published).filter((k) => k in form && norm(form[k]) !== norm(published[k]));
+  return [...new Set(keys.map((k) => (k === 'slug' ? 'Slug' : fieldLabel(t.type, k.slice(2).replace(/_(lon|lat|label|lang|h|w|d)$/, '')))))];
 }
 
 function restoredBanner({ draft, rb, t, slug }) {
@@ -957,7 +968,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Wikidata…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
-      ${pending ? unpublishedBanner(t, e, pending, false) : ''}
+      ${pending ? unpublishedBanner(t, e, { ...pending, fields: await unpublishedFields(t, e) }, false) : ''}
       ${autoFlag ? html`<div class="flash warn auto-banner"><b>To complete:</b> created automatically
         ${autoFlag.from ? html`while adding <a href="/${BY_TYPE[autoFlag.from.type].folder}/${autoFlag.from.slug}">${autoFlag.from.name}</a>` : ''}
         on ${autoFlag.created_at.toISOString().slice(0, 10)} — it has little more than a name.
@@ -1019,6 +1030,14 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
   res.redirect(303, `/${t.folder}/${e.slug}?done=rel-added#relationships`);
 });
 
+// The published values as form keys — the edit page refetches them when someone else publishes or reverts.
+router.get('/:plural/:slug/published.json', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return res.status(404).json({ error: 'not_found' });
+  res.json(drafts.formKeys(e.doc, t, e.slug));
+});
+
 router.post('/:plural/:slug/auto-done', async (req, res) => {
   const { t } = req;
   const e = await findEntity(t, req.params.slug);
@@ -1053,9 +1072,11 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   // The shared working copy (collab.js): the page shows it even before scripts connect, then stays bound to it.
   const { form: working, epoch, state } = await collab.currentForm(t, e.id);
   const pending = await collab.unpublished(t, e.id);
-  const banner = pending ? unpublishedBanner(t, e, pending, true) : '';
+  const banner = pending ? unpublishedBanner(t, e, { ...pending, fields: await unpublishedFields(t, e) }, true) : '';
+  // published: the public values, so the browser can mark every field the working copy changes (editor/unpublished.js)
   const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx: await formContext(t),
-    action: `/${t.folder}/${e.slug}`, errors: [], version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state } });
+    action: `/${t.folder}/${e.slug}`, errors: [], version: working.version,
+    collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) } });
   send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
     body: html`<h1>Edit ${e.name}</h1>${banner}${form}` });
 });
@@ -1073,8 +1094,9 @@ router.post('/:plural/:slug', async (req, res) => {
     const ctx = await formContext(t);
     ctx.errorKeys = errorKeysOf(result.errors);
     ctx.confirmNew = result.confirm || {};
+    const published = drafts.formKeys((await findEntity(t, e.slug) || e).doc, t, e.slug);
     const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
-      action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state } });
+      action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state, published } });
     return send(req, res, { title: `Edit ${e.name}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
       body: html`<h1>Edit ${e.name}</h1>${form}` });
   }

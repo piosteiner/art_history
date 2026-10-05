@@ -107,3 +107,40 @@ test('a revert while someone edits rebases their working copy', async ({ userA, 
   await expect(userB.locator('.collab-notice').last()).toContainText('changed elsewhere');
   await expect(userB.locator('input[name="f.death_label"]')).not.toHaveValue('died 8 May 1903 (e2e)');
 });
+
+test('unpublished changes are marked per field, also for others; publishing clears the marks', async ({ userA, userB }) => {
+  await userA.goto('/artists/utagawa-hiroshige/edit');
+  await liveReady(userA);
+  const field = (page, id) => page.locator('.field', { has: page.locator(`#${id}`) });
+  await expect(userA.locator('.field.unpublished')).toHaveCount(0);
+  const before = await userA.locator('#f-sort_name').inputValue();
+  await userA.fill('#f-sort_name', 'Hiroshige (changed)');
+  await expect(field(userA, 'f-sort_name')).toHaveClass(/unpublished/);
+  await expect(field(userA, 'f-sort_name').locator('.published-value')).toHaveText(`Published: ${before}`);
+  await expect(userA.locator('.unpublished-summary')).toHaveText(/^1 field with unpublished changes/);
+  await userA.fill('#f-sort_name', before);                          // back to the published value: no mark
+  await expect(field(userA, 'f-sort_name')).not.toHaveClass(/unpublished/);
+
+  // a Markdown edit is marked too, and another editor sees it
+  const cm = userA.locator('.md-editor .cm-content').first();
+  await cm.click();
+  await userA.keyboard.press('Control+End');
+  await userA.keyboard.type(' Unpublished sentence.');
+  await expect(field(userA, 'f-biography_md')).toHaveClass(/unpublished/);
+  await userB.goto('/artists/utagawa-hiroshige/edit');
+  await liveReady(userB);
+  await expect(field(userB, 'f-biography_md')).toHaveClass(/unpublished/);
+  // the entry page names the field (the working copy is saved to the database shortly after an edit)
+  await expect.poll(async () => {
+    await userB.goto('/artists/utagawa-hiroshige');
+    return (await userB.locator('.unpublished-banner').allTextContents()).join(' ');  // no waiting: polled
+  }, { timeout: 10000 }).toContain('in Biography');
+
+  // B publishes from a fresh edit page; A's marks go away without reloading
+  await userB.goto('/artists/utagawa-hiroshige/edit');
+  await liveReady(userB);
+  await Promise.all([userB.waitForNavigation(), userB.click('form.form > .actions button')]);
+  await expect(userB).toHaveURL(/done=published/);
+  await expect(userA.locator('.field.unpublished')).toHaveCount(0);
+  await expect(userA.locator('.unpublished-summary')).toBeHidden();
+});
