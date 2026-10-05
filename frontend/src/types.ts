@@ -87,6 +87,34 @@ export interface PolityLink {
   country_codes: string[];
 }
 
+/** One name of an entry besides its display name; `lang` is BCP 47 ("ja", "zh-Hant", "ja-Latn"), may be null. */
+export interface NameEntry {
+  text: string;
+  lang: string | null;
+  role: 'original' | 'translation' | 'romanization' | 'alternative';
+  ruby_html: string | null; // with furigana, escaped and safe to insert
+  reading: string | null;
+}
+
+/** Display name (`name`) with its language, furigana and other names; `search_text`: further words it is found by. */
+interface Named {
+  name_lang?: string | null;
+  name_ruby_html?: string | null;
+  name_reading?: string | null;
+  names?: NameEntry[];
+  sort_key?: string;
+  search_text?: string | null;
+}
+/** The same for artworks, whose display name is `title`. */
+interface Titled {
+  title_lang?: string | null;
+  title_ruby_html?: string | null;
+  title_reading?: string | null;
+  names?: NameEntry[];
+  sort_key?: string;
+  search_text?: string | null;
+}
+
 interface Located {
   country: Country | null;
   polities: PolityLink[];
@@ -96,23 +124,23 @@ export interface BirthPlace { slug: string; name: string; country_code: string |
 
 // ---- list items ----------------------------------------------------------------------------------
 
-export interface ArtistItem extends Located {
+export interface ArtistItem extends Located, Named {
   slug: string; name: string; sort_name: string | null; birth: DateRange | null; death: DateRange | null; image_url: string | null;
   birth_place: BirthPlace | null;
 }
-export interface ArtworkItem extends Located { slug: string; title: string; created: DateRange | null; kind: string | null; image_url: string | null; creator: Ref | null }
-export interface PlaceItem { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
-export interface MovementItem { slug: string; name: string; kind: string | null; period: DateRange | null }
-export interface InstitutionItem extends Located { slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null }
-export interface PatronItem extends Located { slug: string; name: string; kind: string | null; active: DateRange | null; birth_place: BirthPlace | null }
-export interface PolityItem { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[] }
+export interface ArtworkItem extends Located, Titled { slug: string; title: string; created: DateRange | null; kind: string | null; image_url: string | null; creator: Ref | null }
+export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
+export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
+export interface InstitutionItem extends Located, Named { slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null }
+export interface PatronItem extends Located, Named { slug: string; name: string; kind: string | null; active: DateRange | null; birth_place: BirthPlace | null }
+export interface PolityItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[] }
 
 // ---- details -------------------------------------------------------------------------------------
 
 export interface ArtworkSummary { slug: string; title: string; created: DateRange | null; kind?: string | null; creator?: Ref | null }
 export type KindRef = Ref & { kind?: string | null; period?: DateRange | null };
 
-export interface Artist extends DetailBase, Located {
+export interface Artist extends DetailBase, Located, Named {
   type: 'artist';
   birth_place: BirthPlace | null;
   name: string; sort_name: string | null; alt_names: string[];
@@ -124,7 +152,7 @@ export interface Artist extends DetailBase, Located {
 
 export interface Dimensions { height_cm: number | null; width_cm: number | null; depth_cm: number | null; note: string | null; label: string | null }
 
-export interface Artwork extends DetailBase, Located {
+export interface Artwork extends DetailBase, Located, Titled {
   type: 'artwork';
   title: string; alt_titles: string[]; attribution_label: string | null;
   created: DateRange | null; kind: string | null; medium: string | null; inventory_number: string | null;
@@ -134,7 +162,7 @@ export interface Artwork extends DetailBase, Located {
   creator: Ref | null; institution: Ref | null;
 }
 
-export interface Place extends DetailBase {
+export interface Place extends DetailBase, Named {
   type: 'place';
   name: string; alt_names: string[]; kind: string | null; country_code: string | null;
   location: PointGeometry | null; area: unknown | null;
@@ -142,14 +170,14 @@ export interface Place extends DetailBase {
   ancestors: KindRef[]; children: KindRef[]; institutions: KindRef[];
 }
 
-export interface Movement extends DetailBase {
+export interface Movement extends DetailBase, Named {
   type: 'movement';
   name: string; alt_names: string[]; kind: string | null; period: DateRange | null;
   description_html: string | null;
   ancestors: KindRef[]; children: KindRef[];
 }
 
-export interface Institution extends DetailBase, Located {
+export interface Institution extends DetailBase, Located, Named {
   type: 'institution';
   name: string; alt_names: string[]; kind: string | null; founded: DateRange | null; website_url: string | null;
   description_html: string | null;
@@ -158,14 +186,14 @@ export interface Institution extends DetailBase, Located {
   artworks: ArtworkSummary[];
 }
 
-export interface Patron extends DetailBase, Located {
+export interface Patron extends DetailBase, Located, Named {
   type: 'patron';
   birth_place: BirthPlace | null;
   name: string; alt_names: string[]; kind: string | null; active: DateRange | null;
   notes_html: string | null;
 }
 
-export interface Polity extends DetailBase {
+export interface Polity extends DetailBase, Named {
   type: 'polity';
   name: string; alt_names: string[]; kind: string | null; period: DateRange | null; country_codes: string[];
   description_html: string | null;

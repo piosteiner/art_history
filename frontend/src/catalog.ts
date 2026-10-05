@@ -2,7 +2,7 @@
 // Each entry has a name and a meta line that are shown, labelled fields that are searchable but not shown
 // (type, birthplace, nationality …), and per sort option a value plus a section heading.
 import { countryName, countryText, html, polityText, spanLabel, type Html } from './html';
-import type { Country, DateRange, EntityType, ItemByPlural, Plural, PolityLink } from './types';
+import type { Country, DateRange, EntityType, ItemByPlural, NameEntry, Plural, PolityLink } from './types';
 
 export interface SortValue {
   value: string | number | null; // null sorts last
@@ -13,12 +13,15 @@ export interface SortValue {
 export interface Field {
   label: string;
   text: string;
+  /** What the search matches for this field when it is more than `text` (readings, romanized kana). */
+  match?: string;
 }
 
 export interface Entry<T = unknown> {
   type: EntityType;
   slug: string;
   name: string;
+  lang: string | null; // language of the name, for lang="…"
   meta: string; // shown small next to the name
   fields: Field[];
   search: string; // folded text of name, meta and fields
@@ -95,7 +98,7 @@ export function explain(entry: Entry, query: string, shown = ''): Match {
   const words = queryWords(query);
   const visible = fold(`${entry.name} ${entry.meta} ${shown}`);
   const hidden = words.filter((w) => !visible.includes(w));
-  const reasons = entry.fields.filter((f) => hidden.some((w) => fold(f.text).includes(w)));
+  const reasons = entry.fields.filter((f) => hidden.some((w) => fold(f.match ?? f.text).includes(w)));
   const name = fold(entry.name);
   const q = words.join(' ');
   return {
@@ -146,7 +149,7 @@ const byText = (v: string | null | undefined, unknown: string): SortValue =>
 const fields = (...list: [string, string | null | undefined | false][]): Field[] =>
   list.filter(([, t]) => t).map(([label, text]) => ({ label, text: text as string }));
 
-type Built<T> = Omit<Entry<T>, 'item' | 'search' | 'type'>;
+type Built<T> = Omit<Entry<T>, 'item' | 'search' | 'type' | 'lang'>;
 
 interface TypeCatalog<P extends Plural> {
   type: EntityType;
@@ -299,7 +302,23 @@ export function entries<P extends Plural>(plural: P, items: ItemByPlural[P][]): 
   const cat = CATALOG[plural] as unknown as TypeCatalog<P>;
   return items.map((item) => {
     const e = cat.build(item);
-    return { ...e, type: cat.type, item, search: fold([e.name, e.meta, ...e.fields.map((f) => f.text)].join(' ')) };
+    const named = item as { names?: NameEntry[]; search_text?: string | null; sort_key?: string; sort_name?: string | null; name_lang?: string | null; title_lang?: string | null; name_reading?: string | null; title_reading?: string | null };
+    // other names (original, translations …), their readings and the API's search_text (kana in Latin letters …):
+    // all searchable, shown as the reason when the match came from them ("Other names: 神奈川沖浪裏")
+    const names = named.names ?? [];
+    if (names.length || named.search_text) {
+      e.fields.push({
+        label: 'Other names', text: names.map((n) => n.text).join(' · ') || e.name,
+        match: [...names.flatMap((n) => [n.text, n.reading ?? '']), named.name_reading ?? named.title_reading ?? '', named.search_text ?? ''].join(' '),
+      });
+    }
+    // sort by the API's sort_key (the romanization for names in other scripts); artists keep sort_name first
+    const first = cat.sorts[0].id;
+    if (named.sort_key && !(plural === 'artists' && named.sort_name)) {
+      e.sorts[first] = byName(plural === 'artworks' ? titleKey(named.sort_key) : named.sort_key);
+    }
+    const lang = named.title_lang ?? named.name_lang ?? null;
+    return { ...e, lang, type: cat.type, item, search: fold([e.name, e.meta, ...e.fields.map((x) => x.match ?? x.text)].join(' ')) };
   });
 }
 

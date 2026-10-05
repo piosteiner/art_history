@@ -63,6 +63,13 @@ patron and artwork through its dated presence stops (one `/v1/map/presence` requ
 hover = highlight + name, click = stops). Clicking a place lists what happened there (who, what, when, note). Entries chosen → their routes, one colour each (same colour on
 the timeline; at most 24 drawn). Time window → presence in the window, limited to the selection.
 
+## Names in several languages
+The display name (`name`, artworks `title`) may be the original or a translation: elements showing a name get
+`lang` (`*_lang`, each `names` entry's lang); detail pages add the original (`names` role `original`, with `ruby_html` furigana)
+and its romanization below the title; cards show the original small. Search in pickers, list pages and the header
+also matches all `names`, readings and the API's `search_text` (shown as "Other names: …"); name sorts use `sort_key`
+(artists: `sort_name` first). Nothing is romanized in the frontend.
+
 ## Crossed paths
 `src/encounters.ts` finds pairs at the same place with overlapping dates in the dated presence links (left out: a
 work with its own artist, two works). Shown under the explore map (`src/crossings.ts`; respects the pickers and the

@@ -4,7 +4,7 @@ import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { GROUPS, type Group } from '../selection';
 import {
-  countryLink, countryName, dateLabel, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
+  countryLink, countryName, dateLabel, displayName, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
   wireImageFallbacks, wireLightbox, type Html,
 } from '../html';
 import { COLORS, createMap, showEntity, showPoint } from '../map';
@@ -47,7 +47,6 @@ const artworkList = (works: ArtworkSummary[], withCreator: boolean) => html`<ul 
 </li>`)}</ul>`;
 
 function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; text: string | null; images: Image[]; extra: Html[] } {
-  const alt = (names: string[]) => (names.length ? names.join(' · ') : null);
   switch (e.type) {
     case 'artist':
       return {
@@ -55,7 +54,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
         facts: [
           ['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)],
           ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
-          ['Also known as', alt(e.alt_names)],
+          ['Also known as', otherNames(e)],
         ],
         extra: e.artworks.length ? [html`<section><h2>Artworks</h2>${artworkList(e.artworks, false)}</section>`] : [],
       };
@@ -74,7 +73,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ...polityFacts(e, 'created_in_polity', 'Made in', 'Country of origin'),
           ['Collection', e.institution ? link('institution', e.institution.slug, e.institution.name) : null],
           ['Inventory no.', e.inventory_number],
-          ['Also known as', alt(e.alt_titles)],
+          ['Also known as', otherNames(e)],
         ],
         extra: [],
       };
@@ -86,7 +85,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Includes', refs('place', e.children)],
           ['Institutions', refs('institution', e.institutions)],
           ['Coordinates', e.location ? `${e.location.coordinates[1].toFixed(4)}, ${e.location.coordinates[0].toFixed(4)}` : null],
-          ['Also known as', alt(e.alt_names)],
+          ['Also known as', otherNames(e)],
         ],
         extra: [],
       };
@@ -97,7 +96,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Period', dateLabel(e.period)],
           ['Part of', refs('movement', [...e.ancestors].reverse())],
           ['Includes', refs('movement', e.children)],
-          ['Also known as', alt(e.alt_names)],
+          ['Also known as', otherNames(e)],
         ],
         extra: [],
       };
@@ -109,7 +108,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Location', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country ? html`, ${countryLink(e.country)}` : ''}` : null],
           ...(e.polities.some((p) => p.relationship === 'located_in_polity') ? polityFacts(e, 'located_in_polity', 'Historically in', '') : []),
           ['Website', e.website_url ? html`<a href="${e.website_url}" target="_blank" rel="noopener">${e.website_url.replace(/^https?:\/\/(www\.)?/, '')}</a>` : null],
-          ['Also known as', alt(e.alt_names)],
+          ['Also known as', otherNames(e)],
         ],
         extra: e.artworks.length ? [html`<section><h2>Artworks in the collection</h2>${artworkList(e.artworks, true)}</section>`] : [],
       };
@@ -117,7 +116,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
       return {
         title: e.name, subtitle: [e.kind, e.active ? `active ${e.active.label}` : null].filter(Boolean).join(' · '),
         text: e.notes_html, images: [],
-        facts: [['Active', dateLabel(e.active)], ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'), ['Also known as', alt(e.alt_names)]],
+        facts: [['Active', dateLabel(e.active)], ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'), ['Also known as', otherNames(e)]],
         extra: [],
       };
     case 'polity':
@@ -128,7 +127,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Territory today', e.country_codes.length ? e.country_codes.map((c) => countryName(c) ?? c).join(', ') : null],
           ['Part of', refs('polity', [...e.ancestors].reverse())],
           ['Includes', refs('polity', e.children)],
-          ['Also known as', alt(e.alt_names)],
+          ['Also known as', otherNames(e)],
         ],
         extra: [],
       };
@@ -193,7 +192,8 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const hasMap = e.type === 'place' ? !!e.location : true;
       render(main, html`<article class="page detail detail-${e.type}">
         <p class="crumbs"><a href="/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
-        <h1>${v.title}</h1>
+        <h1${langAttr(displayName(e).lang)}>${displayName(e).ruby ? trusted(displayName(e).ruby) : v.title}</h1>
+        ${originalLine(e)}
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
         <p class="detail-actions">
           ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}

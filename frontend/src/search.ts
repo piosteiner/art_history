@@ -3,7 +3,7 @@
 // (/v1/search, "hokusia" → Hokusai) for whatever the field search missed.
 import { listEntities, search } from './api';
 import { entries, explain, matches, type Entry, type Match } from './catalog';
-import { href, html, render, TYPE_LABEL, type Html } from './html';
+import { href, html, langAttr, render, TYPE_LABEL, type Html } from './html';
 import { navigate, ROUTE_EVENT } from './router';
 import type { EntityType, Plural } from './types';
 
@@ -14,6 +14,7 @@ interface Hit {
   type: EntityType;
   slug: string;
   name: Html;
+  lang?: string | null;
   meta: Html | string;
   why: Html | null;
 }
@@ -52,7 +53,7 @@ export function mountSearch(root: HTMLElement) {
     render(results, hits.length
       ? html`${hits.map((h, i) => html`${i === similarFrom ? html`<li class="hit-heading" aria-hidden="true">Similar names</li>` : ''}
         <li role="option" aria-selected="${String(i === active)}" class="${i === active ? 'active' : ''}">
-          <a href="${href(h.type, h.slug)}"><span class="hit-name">${h.name}</span>
+          <a href="${href(h.type, h.slug)}"><span class="hit-name"${langAttr(h.lang)}>${h.name}</span>
           <span class="hit-meta">${TYPE_LABEL[h.type]}${h.meta ? html` · ${h.meta}` : ''}</span>
           ${h.why ? html`<span class="hit-why">${h.why}</span>` : ''}</a>
         </li>`)}`
@@ -121,5 +122,5 @@ export function mountSearch(root: HTMLElement) {
 }
 
 function toHit(e: Entry, m: Match): Hit {
-  return { type: e.type, slug: e.slug, name: m.name, meta: m.meta, why: m.why };
+  return { type: e.type, slug: e.slug, name: m.name, lang: e.lang, meta: m.meta, why: m.why };
 }

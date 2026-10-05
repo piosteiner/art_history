@@ -1,5 +1,9 @@
 import { listEntities } from '../api';
-import { countryName, countryText, dateLabel, href, html, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
+import { countryName, countryText, dateLabel, displayName, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
+import type { NameEntry } from '../types';
+
+/** The original-language name, shown small on the card ("神奈川沖浪裏"). */
+const original = (item: unknown) => (item as { names?: NameEntry[] }).names?.find((n) => n.role === 'original');
 import type { ItemByPlural, Plural } from '../types';
 import { guard, showError } from './common';
 import { entries, explain, highlight, matches, queryWords, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
@@ -64,7 +68,8 @@ function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | n
     <a class="card-link" href="${href(plural, item.slug)}">
       ${image ? html`<img class="card-img" src="${thumb(image, 250)}" alt="" loading="lazy" crossorigin="anonymous">` : html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
       <span class="card-text">
-        <span class="card-name">${highlight(name, words)}</span>
+        <span class="card-name"${langAttr(displayName(item as never).lang)}>${highlight(name, words)}</span>
+        ${original(item) ? html`<span class="card-original"${langAttr(original(item)!.lang)}>${highlight(original(item)!.text, words)}</span>` : ''}
         ${date ? html`<span class="card-date">${highlight(date, words)}</span>` : ''}
         ${detail ? html`<span class="card-detail">${highlight(detail, words)}</span>` : ''}
         ${why ? html`<span class="card-why">${why}</span>` : ''}
@@ -101,7 +106,7 @@ export function list(main: HTMLElement, plural: Plural) {
     let last = '';
     const row = (e: Entry<AnyItem>) => {
       const p = cardParts(plural, e.item);
-      return card(plural, e.item, words, query ? explain(e, query, `${p.date} ${p.detail}`).why : null);
+      return card(plural, e.item, words, query ? explain(e, query, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null);
     };
     render(items, html`
       ${sortEntries(hits, sort).map((e) => {

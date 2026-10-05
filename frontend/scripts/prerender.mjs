@@ -56,6 +56,13 @@ async function pool(items, n, fn) {
   return results;
 }
 
+// names in several languages: lang="…" on names, the original as a second line (ruby_html is escaped by the API)
+const langOf = (lang) => (lang ? ` lang="${esc(lang)}"` : '');
+const originalOf = (e) => {
+  const o = e.names?.find((n) => n.role === 'original');
+  return o ? `<p class="original-name"${langOf(o.lang)}>${o.ruby_html ?? esc(o.text)}</p>` : '';
+};
+
 const dateSpan = (a, b) => (a || b ? `${a?.label ?? '?'} – ${b?.label ?? '?'}` : '');
 
 /** Title, one-line summary and image for an entry (from its detail). */
@@ -130,7 +137,7 @@ for (const plural of PLURALS) {
       title: `${d.name} · Art History`, description: d.description, url, type: 'article',
       image: d.image ? thumb(d.image.url) : null, imageAlt: d.image?.caption ?? d.name,
       ld: jsonLd(plural, e, d, url),
-      body: `<article class="page"><p class="crumbs"><a href="/${plural}">${esc(LIST_LABEL[plural])}</a></p><h1>${esc(d.name)}</h1><p class="subtitle">${esc(d.summary)}</p>${d.long ? `<p>${esc(d.long)}</p>` : ''}</article>`,
+      body: `<article class="page"><p class="crumbs"><a href="/${plural}">${esc(LIST_LABEL[plural])}</a></p><h1${langOf(e.title_lang ?? e.name_lang)}>${esc(d.name)}</h1>${originalOf(e)}<p class="subtitle">${esc(d.summary)}</p>${d.long ? `<p>${esc(d.long)}</p>` : ''}</article>`,
     }));
     urls.push(url);
     pages++;

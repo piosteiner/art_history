@@ -205,3 +205,14 @@ test('crossed paths: listed under the map, on detail pages, and "only these two"
   await expect(page.locator('#crossed')).toContainText('Vincent van Gogh');
   await expect(page.locator('#crossed')).toContainText('Arles');
 });
+
+test('names in several languages: lang, original with furigana, search by other names and readings', async ({ page }) => {
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('h1')).toHaveAttribute('lang', 'en');
+  const original = page.locator('.original-name [lang="ja"]');
+  await expect(original).toContainText('神奈川');
+  await expect(original.locator('ruby rt').first()).toHaveText('かながわ'); // furigana
+  await page.goto('/artworks');
+  await page.fill('.filter', 'かながわ'); // a reading, not part of any displayed title
+  await expect(page.locator('.card', { hasText: 'The Great Wave off Kanagawa' })).toBeVisible();
+});

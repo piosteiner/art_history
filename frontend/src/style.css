@@ -415,3 +415,9 @@ main { min-height: 60vh; }
 .popup-encounters { margin-top: .5rem; padding-top: .4rem; border-top: 1px dashed var(--line); }
 .popup-subhead { font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: #b38600; margin-bottom: .2rem; }
 .popup-encounters .encounter { font-size: .85rem; }
+
+/* names in several languages */
+.original-name { font-size: 1.35rem; margin: .1rem 0 .6rem; line-height: 2.1; color: var(--text); }
+.original-name .romanization { font-size: .95rem; color: var(--muted); font-style: italic; margin-left: .5rem; }
+ruby rt { font-size: .5em; color: var(--muted); }
+.card-original { font-size: .85rem; color: var(--muted); }

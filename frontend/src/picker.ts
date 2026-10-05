@@ -1,7 +1,7 @@
 // One dropdown per type ("Artists · 2 of 14"): search, sort with section headings, All / None,
 // add or remove everything a search shows, "chosen first", and a checklist of entries.
 import { explain, matches, saveSort, savedSort, sortEntries, sortOptions, type Entry, type SortOption } from './catalog';
-import { href, html, render } from './html';
+import { href, html, langAttr, render } from './html';
 import { ALL, GROUPS, includes, type Group, type Pick, type Selection } from './selection';
 import type { Plural } from './types';
 
@@ -90,7 +90,7 @@ export function mountPickers(
       return html`<li class="pick-item">
         <label><input type="checkbox" value="${e.slug}">
           <span class="pick-text">
-            <span class="pick-line"><a class="pick-link" href="${href(e.type, e.slug)}">${m ? m.name : e.name}</a>${e.meta ? html` <span class="muted">${m ? m.meta : e.meta}</span>` : ''}</span>
+            <span class="pick-line"><a class="pick-link"${langAttr(e.lang)} href="${href(e.type, e.slug)}">${m ? m.name : e.name}</a>${e.meta ? html` <span class="muted">${m ? m.meta : e.meta}</span>` : ''}</span>
             ${m?.why ? html`<span class="pick-why">${m.why}</span>` : ''}
           </span>
         </label>

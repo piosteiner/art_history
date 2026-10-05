@@ -1,7 +1,7 @@
 // Tiny HTML templating: interpolated values are escaped unless they are already Html (from html`` or trusted()).
 // Images load with crossorigin="anonymous": Wikimedia then neither receives nor sets cookies (the site stays cookie-free).
 import { PLURAL } from './api';
-import type { Country, DateRange, EntityType, Image, Plural, PolityLink } from './types';
+import type { Country, DateRange, EntityType, Image, NameEntry, Plural, PolityLink } from './types';
 
 export class Html {
   constructor(readonly value: string) {}
@@ -150,3 +150,43 @@ export const polityText = (p: PolityLink, today: Country | null | undefined) => 
   const now = todayPart(p, today);
   return now ? `${p.name} (today ${now})` : p.name;
 };
+
+// ---- names in several languages (API: "Names in several languages") ------------------------------
+
+type Nameable = {
+  name?: string; title?: string;
+  name_lang?: string | null; title_lang?: string | null;
+  name_ruby_html?: string | null; title_ruby_html?: string | null;
+  names?: NameEntry[];
+};
+
+/** lang="…" for an element showing a name; nothing when the language is unknown. */
+export const langAttr = (lang: string | null | undefined) => (lang ? html` lang="${lang}"` : '');
+
+/** The display name (title for artworks): text, language and furigana (safe HTML from the API) if any. */
+export function displayName(e: Nameable) {
+  return {
+    text: (e.title ?? e.name) as string,
+    lang: e.title_lang ?? e.name_lang ?? null,
+    ruby: e.title_ruby_html ?? e.name_ruby_html ?? null,
+  };
+}
+
+/** A name inside its own element with lang, with furigana when the API sends them. */
+export const nameSpan = (text: string, lang: string | null | undefined, ruby?: string | null, cls = '') =>
+  html`<span${cls ? html` class="${cls}"` : ''}${langAttr(lang)}>${ruby ? trusted(ruby) : text}</span>`;
+
+/** The original-language name as a second line ("神奈川沖浪裏" with furigana), with its romanization next to it. */
+export function originalLine(e: Nameable) {
+  const original = e.names?.find((n) => n.role === 'original');
+  if (!original) return null;
+  const roman = e.names?.find((n) => n.role === 'romanization');
+  return html`<p class="original-name">${nameSpan(original.text, original.lang, original.ruby_html)}${roman
+    ? html` <span class="romanization"${langAttr(roman.lang?.includes('-') ? roman.lang : roman.lang ? `${roman.lang}-Latn` : null)}>${roman.text}</span>` : ''}</p>`;
+}
+
+/** Translations and other names (not the original or its romanization, shown above), each with its lang. */
+export function otherNames(e: Nameable) {
+  const rest = (e.names ?? []).filter((n) => n.role !== 'original' && n.role !== 'romanization');
+  return rest.length ? html`${rest.map((n, i) => html`${i ? ' · ' : ''}${nameSpan(n.text, n.lang, n.ruby_html)}`)}` : null;
+}
