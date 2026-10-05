@@ -30,10 +30,11 @@ function scoreSql(nameExpr, altExpr = null) {
   return altExpr ? `greatest(${name}, ${altScoreSql(altExpr)})` : name;
 }
 
-// SQL for an entity table's alternative names as one string (alias.alt_names / alt_titles, plus an artist's sort name).
+// SQL for an entity's other names as one string: translations, romanizations, alternatives with their furigana
+// readings (names_text(), migration 022), the main name's reading, plus an artist's sort name.
 function altSql(t, alias) {
-  const listKey = Object.keys(t.fields).find((k) => t.fields[k] === 'text[]');
-  const parts = [listKey && `array_to_string(${alias}.${listKey}, ' · ')`, t.fields.sort_name && `${alias}.sort_name`].filter(Boolean);
+  const parts = [t.fields.names === 'names' && `names_text(${alias}.names)`, `ruby_reading(${alias}.${t.name}_ruby)`,
+    t.fields.sort_name && `${alias}.sort_name`].filter(Boolean);
   return parts.length ? `nullif(concat_ws(' · ', ${parts.join(', ')}), '')` : null;
 }
 

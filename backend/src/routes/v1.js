@@ -38,11 +38,13 @@ router.get('/search', async (req, res) => {
   const q = typeof req.query.q === 'string' ? req.query.q.trim().slice(0, 100) : '';
   if (q.length < 2) return res.json({ data: [] });
   const { rows } = await apiPool.query(`
-    SELECT type, slug, name, kind, range_json(period, period_label) AS period,
-           round(word_similarity(f_unaccent($1), f_unaccent(name))::numeric, 2) AS score
+    SELECT type, slug, name, kind, range_json(period, period_label) AS period, sort_key,
+           round(greatest(word_similarity(f_unaccent($1), f_unaccent(name)),
+                          0.9 * word_similarity(f_unaccent($1), f_unaccent(coalesce(names_text(names), ''))))::numeric, 2) AS score
     FROM entity_index
     WHERE f_unaccent(name) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(name)
-    ORDER BY score DESC, name
+       OR f_unaccent(coalesce(names_text(names), '')) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(coalesce(names_text(names), ''))
+    ORDER BY score DESC, sort_key
     LIMIT 20`, [q, `%${q.replace(/[\\%_]/g, '\\$&')}%`]);
   res.json({ data: rows });
 });

@@ -26,10 +26,9 @@ const STOP = '\u0003';
 function docsSql() {
   return TYPES.map((t) => {
     const entries = Object.entries(t.fields);
-    const altKey = entries.find(([, kind]) => kind === 'text[]');
-    const shortText = [...entries.filter(([k, kind]) => kind === 'text' && k !== t.name && k !== 'sort_name').map(([k]) => `t.${k}`),
-      // further lists (an artwork's materials) are searchable text too; the first list is the alternative names
-      ...entries.filter(([k, kind]) => kind === 'text[]' && (!altKey || k !== altKey[0])).map(([k]) => `array_to_string(t.${k}, ' · ')`)];
+    const shortText = [...entries.filter(([k, kind]) => kind === 'text' && k !== 'sort_name').map(([k]) => `t.${k}`),
+      // lists (an artwork's materials) are searchable text too; other names are in alt (altSql)
+      ...entries.filter(([, kind]) => kind === 'text[]').map(([k]) => `array_to_string(t.${k}, ' · ')`)];
     const body = entries.find(([, kind]) => kind === 'md');
     return `SELECT '${t.type}'::entity_type AS type, t.id, t.slug, t.${t.name} AS name, ${altSql(t, 't') || 'NULL'} AS alt,
          concat_ws(' · ', ${[...shortText, "nullif(t.metadata, '{}')::text"].join(', ')}) AS other,

@@ -10,6 +10,7 @@
 // Wikidata API: https://www.wikidata.org/w/api.php (wbgetentities, wbsearchentities); images: Wikimedia Commons API.
 // Base URLs are configurable (WIKIDATA_BASE, COMMONS_BASE) so the end-to-end tests can serve fixtures.
 const { BY_TYPE, TYPES, SLUG, toRow } = require('../content');
+const nameUtil = require('../names');
 const autocreate = require('./autocreate');
 const { fromStatement, periodOf } = require('../wikidata-time');
 const { parseFuzzyDate } = require('../fuzzy-date');
@@ -97,17 +98,31 @@ function coords(e) {
   return [Math.round(longitude * 1e5) / 1e5, Math.round(latitude * 1e5) / 1e5];
 }
 // Alternative names: English aliases and the native name first (pre-ticked for an empty list), then other languages.
+// Other names, as form lines "text | lang | role" (src/names.js):
+//   primary  English aliases (alternative) · native name P1559 and title P1476 (original, with their language) ·
+//            Revised Hepburn P2125 (ja-Latn, romanization)
+//   other    labels in further languages (translation; "original" in the language of the title / native name)
 function altNames(e, main) {
-  const primary = new Set([...((e.aliases && e.aliases.en) || []).map((a) => a.value),
-    ...statements(e, 'P1559').map((s) => s.mainsnak.datavalue.value.text)]);
-  const other = new Set();
+  const seen = new Set([String(main || '').toLowerCase()]);
+  const line = (text, lang, role) => [text, lang || (role !== 'alternative' ? '' : null), role !== 'alternative' ? role : null]
+    .filter((p) => p !== null).join(' | ');
+  const take = (list, text, lang, role) => {
+    if (!text || seen.has(text.toLowerCase())) return;
+    seen.add(text.toLowerCase());
+    list.push(line(text, lang, role));
+  };
+  const primary = [];
+  const originals = [...statements(e, 'P1476'), ...statements(e, 'P1559')].map((s) => s.mainsnak.datavalue.value);
+  for (const o of originals) take(primary, o.text, nameUtil.normLang(o.language), 'original');
+  for (const s of statements(e, 'P2125')) take(primary, String(s.mainsnak.datavalue.value), 'ja-Latn', 'romanization');
+  for (const a of (e.aliases && e.aliases.en) || []) take(primary, a.value, null, 'alternative');
+  const originalLangs = new Set(originals.map((o) => nameUtil.normLang(o.language)));
+  const other = [];
   for (const lang of LANGS) {
     const l = e.labels && e.labels[lang];
-    if (l) other.add(l.value);
+    if (l) take(other, l.value, lang, originalLangs.has(lang) ? 'original' : 'translation');
   }
-  const clean = (set) => [...set].filter((n) => n && n !== main);
-  const p = clean(primary);
-  return { primary: p, other: clean(other).filter((n) => !p.includes(n)) };
+  return { primary, other };
 }
 
 // Quantities (height P2048, width P2049, depth P2610 / P5524) → centimetres
@@ -142,9 +157,13 @@ function fieldsFor(t, e) {
   const name = labelOf(e);
   const f = {};
   const nameKey = t.name;
-  if (name) f[nameKey] = { kind: 'text', value: name };
-  const listKey = Object.keys(t.fields).find((k) => t.fields[k] === 'text[]');
-  if (listKey) f[listKey] = { kind: 'list', ...altNames(e, name) };
+  // An artwork's title in its original language (P1476, with its language) is preferred over the English label;
+  // the label is then offered as a translation among the other names.
+  const original = t.type === 'artwork' && statements(e, 'P1476').map((s) => s.mainsnak.datavalue.value).find((v) => v && v.text);
+  const main = original ? original.text : name;
+  if (main) f[nameKey] = { kind: 'text', value: main };
+  if (original && nameUtil.langOk(nameUtil.normLang(original.language))) f[`${nameKey}_lang`] = { kind: 'text', value: nameUtil.normLang(original.language) };
+  if (t.fields.names === 'names') f.names = { kind: 'list', ...altNames(e, main) };
   const date = (key, ...props) => { const v = firstTime(e, ...props); if (v && key in t.fields) f[key] = { kind: 'date', value: v.value, label: v.label }; };
   const ref = (key, type, prop) => { const id = itemIds(e, prop)[0]; if (id && key in t.fields) f[key] = { kind: 'ref', ref: { type, qid: id } }; };
   const text = (key, value) => { if (value && key in t.fields) f[key] = { kind: 'text', value }; };
@@ -226,11 +245,10 @@ async function localByName(db, labels) {
   const pairs = Object.entries(labels).filter(([, l]) => l);
   if (!pairs.length) return {};
   const parts = TYPES.map((t) => {
-    const alt = Object.keys(t.fields).find((k) => t.fields[k] === 'text[]');
     return `SELECT '${t.type}' AS type, x.slug, x.${t.name} AS name, x.wikidata_id, q.qid FROM ${t.table} x
       JOIN unnest($1::text[], $2::text[]) AS q(qid, label) ON x.wikidata_id IS NULL
        AND (lower(f_unaccent(x.${t.name})) = lower(f_unaccent(q.label))
-         ${alt ? `OR lower(f_unaccent(q.label)) = ANY (SELECT lower(f_unaccent(a)) FROM unnest(x.${alt}) a)` : ''})`;
+         OR lower(f_unaccent(q.label)) = ANY (SELECT lower(f_unaccent(ruby_plain(n->>'text'))) FROM jsonb_array_elements(x.names) n))`;
   });
   const { rows } = await db.query(parts.join(' UNION ALL '), [pairs.map(([q]) => q), pairs.map(([, l]) => l)]);
   const out = {};
@@ -313,11 +331,14 @@ async function compare(db, t, qid, ours, entity) {
 
   const rows = [];
   for (const [key, w] of Object.entries(fields)) {
-    const oursVal = ours[`f.${key}`] ?? '';
+    // the main name is compared without its furigana markup ({神奈川|かながわ}… = 神奈川…)
+    const oursVal = key === t.name ? nameUtil.plain(ours[`f.${key}`] ?? '') : ours[`f.${key}`] ?? '';
     if (w.kind === 'list') {
       const have = oursVal.split('\n').map((s) => s.trim()).filter(Boolean);
-      const lower = new Set(have.map((s) => s.toLowerCase()));
-      const offer = (list, primary) => list.filter((n) => !lower.has(n.toLowerCase())).map((n) => ({ value: n, primary }));
+      // compare by the name itself (the part before " | "), furigana stripped
+      const textOf = (line) => nameUtil.plain(nameUtil.splitLine(line)[0]).toLowerCase();
+      const lower = new Set(have.map(textOf));
+      const offer = (list, primary) => list.filter((n) => !lower.has(textOf(n))).map((n) => ({ value: n, primary }));
       const items = [...offer(w.primary, true), ...offer(w.other, false)].map((it) => ({ ...it, declined: !!declined(`${key}:${it.value}`, it.value) }));
       if (items.length) rows.push({ key, kind: 'list', ours: have, items, preselect: !have.length });
       continue;

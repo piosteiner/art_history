@@ -9,16 +9,17 @@ test('a new artist from Wikidata: search, review (empty fields pre-ticked), then
   await userA.goto('/artists/new/wikidata?search=monet');
   await Promise.all([userA.waitForNavigation(), userA.click('.search-hit a:has-text("Claude Monet")')]);
   await expect(row(userA, 'Birth').locator('input[value=take]')).toBeChecked();  // empty field: pre-selected
-  await expect(userA.locator('input[name="alt.alt_names"][value="Oscar-Claude Monet"]')).not.toBeChecked();  // names: opt-in
+  await expect(userA.locator('input[name="alt.names"][value="Oscar-Claude Monet"]')).not.toBeChecked();  // names: opt-in
   await expect(userA.locator('main')).toContainText('1 image on Commons — create the entry first');  // images: rows, added later
-  await userA.check('input[name="alt.alt_names"][value="Oscar-Claude Monet"]');
+  await expect(userA.locator('input[name="alt.names"][value="クロード・モネ | ja | translation"]')).toBeVisible();  // labels: with language
+  await userA.check('input[name="alt.names"][value="Oscar-Claude Monet"]');
   await apply(userA);
   await expect(userA).toHaveURL(/\/artists\/new\?draft=1$/);
   await expect(userA.locator('#f-name')).toHaveValue('Claude Monet');
   await expect(userA.locator('#f-birth')).toHaveValue('1840-11-14');
   await expect(userA.locator('#f-wikidata_id')).toHaveValue('Q100');
   await expect(userA.locator('#f-metadata')).toHaveValue(/Wikidata Q100 \(retrieved/);
-  await expect(userA.locator('#f-alt_names')).toHaveValue('Oscar-Claude Monet');  // only the ticked name
+  await expect(userA.locator('#f-names')).toHaveValue('Oscar-Claude Monet');  // only the ticked name
   await submitForm(userA);
   await expect(userA).toHaveURL(/\/artists\/claude-monet\?done=created/);
 });
@@ -78,10 +79,16 @@ test('an artwork: creator and collection by name or new; then its Commons images
   await expect(row(userA, 'Dimensions')).toContainText('48 × 63 cm');               // 630 mm converted
   await expect(row(userA, 'Inventory number')).toContainText('4014 — in the collection of Musée Marmottan Monet');
   await userA.check('input[name="alt.materials"][value="canvas"]');                   // materials: opt-in like names
+  // the original-language title (P1476) is the title; the English label is offered as a translation
+  await expect(row(userA, 'Title')).toContainText('Impression, soleil levant');
+  await userA.check('input[name="alt.names"][value="Impression, Sunrise | en | translation"]');
   await apply(userA);
   await expect(userA.locator('input[name="f.dimensions_h"]')).toHaveValue('48');
   await expect(userA.locator('input[name="f.dimensions_w"]')).toHaveValue('63');
   await expect(userA.locator('#f-materials')).toHaveValue('canvas');
+  await expect(userA.locator('#f-title')).toHaveValue('Impression, soleil levant');
+  await expect(userA.locator('input[name="f.title_lang"]')).toHaveValue('fr');
+  await expect(userA.locator('#f-names')).toHaveValue('Impression, Sunrise | en | translation');
   await expect(userA.locator('#f-creator')).toHaveValue('claude-monet');
   await expect(userA.locator('#f-institution')).toHaveValue(/^musee-marmottan-monet/);
   expect(sql("SELECT wikidata_id FROM institutions WHERE slug LIKE 'musee-marmottan-monet%'")).toBe('Q105');

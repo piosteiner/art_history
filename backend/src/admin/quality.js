@@ -21,6 +21,7 @@ const CHECKS = {
   presence_without_period: { title: 'Presence without a date', fix: 'Add a period so it appears on the timeline and the travel route.' },
   place_without_parent: { title: 'Place without parent', fix: 'Set the region/country it belongs to.' },
   missing_description: { title: 'No description', fix: 'Write a short description or biography.' },
+  missing_romanization: { title: 'Name without romanization', fix: 'Add one under "Other names" (e.g. Kanagawa-oki nami ura | ja-Latn | romanization) — it is used for sorting, search and the slug.' },
   no_wikidata_id: { title: 'No Wikidata id', fix: 'Use "Wikidata…" on the entry to find and link it.' },
 };
 const SEVERITIES = ['error', 'warning', 'info'];

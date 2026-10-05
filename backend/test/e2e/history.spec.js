@@ -62,7 +62,7 @@ test('reverting a deletion brings back the entry\'s images too, in their order',
 test('a preview that went stale is not applied', async ({ userA }) => {
   const tx = adminChange("UPDATE artists SET sort_name = 'S1' WHERE slug = 'katsushika-hokusai'");
   await userA.goto(`/revert/${tx}`);
-  adminChange("UPDATE artists SET alt_names = '{Hokusai}' WHERE slug = 'katsushika-hokusai'");  // meanwhile
+  adminChange(`UPDATE artists SET names = '[{"text": "Hokusai", "role": "alternative"}]' WHERE slug = 'katsushika-hokusai'`);  // meanwhile
   await userA.click('button[value=apply]');
   await expect(userA.locator('.flash.error')).toContainText('Something changed since this preview was shown');
   expect(sql("SELECT sort_name FROM artists WHERE slug = 'katsushika-hokusai'")).toBe('S1');

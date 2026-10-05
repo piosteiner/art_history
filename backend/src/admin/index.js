@@ -12,6 +12,7 @@ const config = require('../config');
 const { adminPool } = require('../db');
 const { TYPES, BY_FOLDER, BY_TYPE, SLUG, REF_COLUMNS, toRow, readDocs, readRelationships, readImages } = require('../content');
 const autocreate = require('./autocreate');
+const names = require('../names');
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { renderMarkdown } = require('../markdown');
 const { html, raw, layout } = require('./html');
@@ -675,7 +676,8 @@ async function formContext(t) {
 
 async function findEntity(t, slug) {
   if (!SLUG.test(slug)) return null;
-  return (await readDocs(adminPool, t, 't.slug = $1', [slug]))[0] || null;
+  const e = (await readDocs(adminPool, t, 't.slug = $1', [slug]))[0];
+  return e ? { ...e, name: names.plain(e.doc[t.name]) } : null;  // e.name: plain text (the doc keeps the furigana markup)
 }
 
 router.get('/:plural', async (req, res) => {
@@ -688,12 +690,13 @@ router.get('/:plural', async (req, res) => {
   const { rows } = await adminPool.query(`
     SELECT * FROM (
       SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score,
+             name_sort_key(t.${t.name}, t.names) AS sort_key,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
              EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${params.length + 1}::entity_type AND ac.entity_id = t.id) AS to_complete,
              (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
                                                            OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
       FROM ${t.table} t) x
-    ${q ? `WHERE score >= ${THRESHOLD} ORDER BY score DESC, name` : 'ORDER BY name'}
+    ${q ? `WHERE score >= ${THRESHOLD} ORDER BY score DESC, sort_key` : 'ORDER BY lower(f_unaccent(sort_key))'}
     LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [...params, t.type]);
   send(req, res, {
     title: humanize(t.folder),
@@ -705,7 +708,7 @@ router.get('/:plural', async (req, res) => {
         ${rows.slice(0, PAGE).map((r) => html`<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
-          ${q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
+          ${r.sort_key !== r.name ? html`<div class="muted small">${r.sort_key}</div>` : q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
       ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}`,
@@ -719,11 +722,11 @@ const wdLinks = { folderOf: (type) => BY_TYPE[type].folder };
 
 async function wikidataPage(req, res, t, e) {
   const action = e ? `/${t.folder}/${e.slug}/wikidata` : `/${t.folder}/new/wikidata`;
-  const title = e ? `Compare ${e.doc[t.name]} with Wikidata` : `New ${t.type} from Wikidata`;
+  const title = e ? `Compare ${e.name} with Wikidata` : `New ${t.type} from Wikidata`;
   const page = { type: t.type, slug: e ? e.slug : null, mode: 'view' };
   const qid = String(req.query.q || (e && !req.query.search && e.doc.wikidata_id) || '').trim().toUpperCase();
   if (!/^Q[1-9][0-9]*$/.test(qid)) {
-    const q = String(req.query.search ?? (e ? e.doc[t.name] : '')).trim();
+    const q = String(req.query.search ?? (e ? e.name : '')).trim();
     let results = null;
     let error = null;
     if (/^Q[1-9][0-9]*$/i.test(q)) return res.redirect(`${action}?q=${q.toUpperCase()}`);
@@ -903,6 +906,11 @@ function showValue(t, key, kind, doc) {
   }
   if (v === undefined) return null;
   if (kind === 'text[]') return v.join(' · ');
+  if (kind === 'names') {
+    return html`<ul class="names-list">${v.map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)).map((n) => html`<li>
+      <span${n.lang ? html` lang="${n.lang}"` : ''}>${names.hasRuby(n.text) ? raw(names.rubyHtml(n.text)) : n.text}</span>
+      ${n.lang ? html`<span class="tag">${n.lang}</span>` : ''} <span class="muted small">${n.role}</span></li>`)}</ul>`;
+  }
   if (kind === 'dimensions') return `${v.join(' × ')} cm${v.length === 1 ? ' (height)' : ''}${doc.dimensions_note ? ` (${doc.dimensions_note})` : ''}`;
   if (kind === 'point') return html`${v[1]}, ${v[0]} <a href="https://www.openstreetmap.org/?mlat=${v[1]}&mlon=${v[0]}#map=12/${v[1]}/${v[0]}" rel="noopener" target="_blank">map ↗</a>`;
   if (kind === 'json' || kind === 'area') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;
@@ -927,7 +935,7 @@ router.get('/:plural/:slug', async (req, res) => {
     allEntities(adminPool),
   ]);
   const labels = Object.fromEntries(types.map((x) => [x.code, x.label]));
-  const name = e.doc[t.name];
+  const name = e.name;
   const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
@@ -954,6 +962,9 @@ router.get('/:plural/:slug', async (req, res) => {
         <img src="${thumbUrl(main.url, 500)}" alt="${name}"></a>
         <figcaption class="muted small">${[main.caption, main.credit, main.license].filter(Boolean).join(' · ') || 'no credit / license yet'}
           ${imgs.length > 1 ? html` · <a href="#images">${imgs.length} images</a>` : ''}</figcaption></figure>` : ''}
+      ${names.hasRuby(e.doc[t.name]) || e.doc[`${t.name}_lang`] ? html`<p class="main-name"${e.doc[`${t.name}_lang`] ? html` lang="${e.doc[`${t.name}_lang`]}"` : ''}>
+        ${names.hasRuby(e.doc[t.name]) ? raw(names.rubyHtml(e.doc[t.name])) : name}
+        ${e.doc[`${t.name}_lang`] ? html` <span class="tag" lang="en">${e.doc[`${t.name}_lang`]}</span>` : ''}</p>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
         const shown = showValue(t, key, kind, e.doc);
         return shown === null ? '' : html`<dt>${humanize(key)}</dt><dd>${shown}</dd>`;
@@ -993,7 +1004,7 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
     const [types, entities] = await Promise.all([relationshipTypes(adminPool, t.type, { reverse: true }), allEntities(adminPool)]);
     return send(req, res, {
       title: 'Add relationship', status: 422, flash: { kind: 'error', text: friendly(err) },
-      body: html`<h1>Add relationship</h1><p><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p>
+      body: html`<h1>Add relationship</h1><p><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>
         ${relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, rel: { ...req.body, sources: String(req.body.sources || '').split('\n') }, submit: 'Add', entityType: t.type })}`,
     });
   }
@@ -1020,7 +1031,7 @@ router.post('/:plural/:slug/images', async (req, res) => {
   } catch (err) {
     return send(req, res, {
       title: 'Add image', status: 422, flash: { kind: 'error', text: err instanceof images.ImageError ? err.message : friendly(err) },
-      body: html`<h1>Add image</h1><p><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p>
+      body: html`<h1>Add image</h1><p><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>
         ${images.form({ action: `/${t.folder}/${e.slug}/images`, img: req.body, submit: 'Add', licenseList: await images.licenses(adminPool) })}`,
     });
   }
@@ -1037,8 +1048,8 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   const banner = pending ? unpublishedBanner(t, e, pending, true) : '';
   const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx: await formContext(t),
     action: `/${t.folder}/${e.slug}`, errors: [], version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state } });
-  send(req, res, { title: `Edit ${e.doc[t.name]}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
-    body: html`<h1>Edit ${e.doc[t.name]}</h1>${banner}${form}` });
+  send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
+    body: html`<h1>Edit ${e.name}</h1>${banner}${form}` });
 });
 
 router.post('/:plural/:slug', async (req, res) => {
@@ -1056,8 +1067,8 @@ router.post('/:plural/:slug', async (req, res) => {
     ctx.confirmNew = result.confirm || {};
     const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
       action: `/${t.folder}/${e.slug}`, errors: result.errors, version: working.version, collab: { key: `${t.type}:${e.id}:${epoch}`, state } });
-    return send(req, res, { title: `Edit ${e.doc[t.name]}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
-      body: html`<h1>Edit ${e.doc[t.name]}</h1>${form}` });
+    return send(req, res, { title: `Edit ${e.name}`, status: 422, page: { type: t.type, slug: e.slug, mode: 'edit' },
+      body: html`<h1>Edit ${e.name}</h1>${form}` });
   }
   await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);  // step-1 draft, if any from before
   await collab.publishedNow(t, e.id, req.user.username);
@@ -1073,10 +1084,10 @@ router.get('/:plural/:slug/discard-changes', async (req, res) => {
   const changed = drafts.changedFields(working, t, e);
   const pending = await collab.unpublished(t, e.id);
   send(req, res, {
-    title: `Discard unpublished changes · ${e.doc[t.name]}`,
+    title: `Discard unpublished changes · ${e.name}`,
     page: { type: t.type, slug: e.slug, mode: 'view' },
     body: html`<h1>Discard unpublished changes?</h1>
-      ${changed.length ? html`<p>The working copy of <b>${e.doc[t.name]}</b> differs from the published version in:
+      ${changed.length ? html`<p>The working copy of <b>${e.name}</b> differs from the published version in:
         <b>${changed.join(', ')}</b>${pending && pending.contributors.length ? html` (changes by ${pending.contributors.join(', ')})` : ''}.
         Discarding resets it to the published version <b>for everyone</b> editing it. This cannot be undone.</p>
         <form method="post" action="/${t.folder}/${e.slug}/discard-changes" class="actions">
@@ -1105,8 +1116,8 @@ router.get('/:plural/:slug/delete', async (req, res) => {
     WHERE (r.subject_type, r.subject_id) = ($1, $2) OR (r.object_type, r.object_id) = ($1, $2)
     ORDER BY rt.sort_order, s.name`, [t.type, e.id]);
   send(req, res, {
-    title: `Delete ${e.doc[t.name]}`,
-    body: html`<h1>Delete ${e.doc[t.name]}?</h1>
+    title: `Delete ${e.name}`,
+    body: html`<h1>Delete ${e.name}?</h1>
       ${rows.length ? html`<p>This also deletes <b>${rows.length}</b> relationship${rows.length === 1 ? '' : 's'}, including ones
         entered on other entities' pages:</p>
         <div class="table-wrap"><table><tbody>${rows.map((r) => html`<tr><td>${r.subject}</td><td>${r.label}</td><td>${r.object}</td>
@@ -1127,8 +1138,8 @@ router.post('/:plural/:slug/delete', async (req, res) => {
     await collab.gone(t, e.id);  // close the working copy for everyone editing it
   } catch (err) {
     return send(req, res, {
-      title: `Delete ${e.doc[t.name]}`, status: 409, flash: { kind: 'error', text: friendly(err) },
-      body: html`<h1>Can't delete ${e.doc[t.name]}</h1><p>Other records still point to it (see above). Change or delete those first.</p>
+      title: `Delete ${e.name}`, status: 409, flash: { kind: 'error', text: friendly(err) },
+      body: html`<h1>Can't delete ${e.name}</h1><p>Other records still point to it (see above). Change or delete those first.</p>
         <p><a href="/${t.folder}/${e.slug}">← back</a></p>`,
     });
   }
@@ -1145,8 +1156,8 @@ router.get('/:plural/:slug/history', async (req, res) => {
       OR (a.table_name = 'images' AND (r->>($3 || '_id'))::bigint = $2)`,
   [t.table, e.id, t.type], { offset: (page - 1) * PAGE });
   send(req, res, {
-    title: `History of ${e.doc[t.name]}`, page: { type: t.type, slug: e.slug, mode: 'view' },
-    body: html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.doc[t.name]}</a></p><h1>History</h1>
+    title: `History of ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' },
+    body: html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p><h1>History</h1>
       ${historyTable(h.rows, { restoreFor: { table: t.table, rowId: e.id } })}${pager(`/${t.folder}/${e.slug}/history`, page, h.more)}`,
   });
 });

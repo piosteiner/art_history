@@ -3,8 +3,11 @@
 //   { name: 'Vincent van Gogh', birth: '1853-03-30', alt_names: [...], relationships: [{ type, to, period, … }] }
 // toRow() turns a doc into validated SQL column values; readDocs() reads rows back into docs.
 const { parseFuzzyDate, formatFuzzyDate } = require('./fuzzy-date');
+const names = require('./names');
 
-// Field kinds: text · text[] · json · md · date (→ <col> + <col>_label) · period (a date that may be open-ended, "1808/")
+// Field kinds: name (the main name: plain text in <col>, furigana markup in <col>_ruby, language in <col>_lang; the
+//                    doc holds the markup version and <key>_lang) · names (other names [{text, lang, role}], jsonb)
+//              text · text[] · json · md · date (→ <col> + <col>_label) · period (a date that may be open-ended, "1808/")
 //              dimensions [height], [height, width] or [height, width, depth] in cm (→ height_cm, width_cm, depth_cm)
 //              point [lon, lat] · area (GeoJSON)
 //              ref:<type> (slug → id, may point at any imported or existing entity) · parent (same-table ref, second pass)
@@ -12,24 +15,24 @@ const { parseFuzzyDate, formatFuzzyDate } = require('./fuzzy-date');
 // `name` is the column that names an entity (artworks have a title).
 const TYPES = [
   { type: 'place', folder: 'places', table: 'places', name: 'name', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', country_code: 'text',
+    name: 'name', names: 'names', kind: 'text', parent: 'parent', country_code: 'text',
     location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'movement', folder: 'movements', table: 'movements', name: 'name', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', period: 'period',
+    name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'polity', folder: 'polities', table: 'polities', name: 'name', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', parent: 'parent', period: 'period', country_codes: 'text[]',
+    name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period', country_codes: 'text[]',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
-    name: 'text', sort_name: 'text', alt_names: 'text[]', birth: 'date', death: 'date',
+    name: 'name', sort_name: 'text', names: 'names', birth: 'date', death: 'date',
     biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'patron', folder: 'patrons', table: 'patrons', name: 'name', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', active: 'period', notes_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+    name: 'name', names: 'names', kind: 'text', active: 'period', notes_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
-    name: 'text', alt_names: 'text[]', kind: 'text', founded: 'date', place: 'ref:place',
+    name: 'name', names: 'names', kind: 'text', founded: 'date', place: 'ref:place',
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
-    title: 'text', alt_titles: 'text[]', creator: 'ref:artist', attribution_label: 'text', created: 'date',
+    title: 'name', names: 'names', creator: 'ref:artist', attribution_label: 'text', created: 'date',
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     institution: 'ref:institution', inventory_number: 'text',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
@@ -45,6 +48,7 @@ const REF_COLUMNS = { place: 'place_id', creator: 'creator_id', institution: 'cu
 const REL_KEYS = new Set(['type', 'to', 'period', 'period_label', 'label', 'certainty', 'notes_md', 'sources', 'metadata']);
 const IMAGE_KEYS = ['url', 'source_url', 'license', 'credit', 'caption'];
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+const LEGACY_ALT = ['alt_names', 'alt_titles'];  // before migration 022: plain lists → names with role "alternative"
 
 // doc → { cols: {col: [sqlExpr, value]}, refs: [{col, type, slug}], parent, relationships, images, errors: ['key: message'] }
 // sqlExpr uses "$" as the placeholder for its value. Nothing here touches the database.
@@ -58,6 +62,8 @@ function toRow(doc, fields) {
   for (const key of Object.keys(doc)) {
     if (key === 'relationships' || key === 'images' || key === 'slug') continue;
     if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;
+    if (key.endsWith('_lang') && fields[key.slice(0, -'_lang'.length)] === 'name') continue;
+    if (LEGACY_ALT.includes(key) && fields.names === 'names') continue;  // older YAML: alt_names / alt_titles
     if (!fields[key]) errors.push(`unknown field "${key}"`);
   }
 
@@ -68,6 +74,20 @@ function toRow(doc, fields) {
         const d = parseFuzzyDate(v, { openEnd: kind === 'period' });
         put(key, d && d.range, '$::daterange');
         put(`${key}_label`, doc[`${key}_label`] ?? (d && d.label));
+      } else if (kind === 'name') {
+        if (v !== null && typeof v !== 'string') throw new Error('must be text');
+        const err = v && names.rubyError(v);
+        if (err) throw new Error(err);
+        const markup = v === null ? null : v.trim();
+        put(key, markup === null ? null : names.plain(markup));
+        put(`${key}_ruby`, markup && names.hasRuby(markup) ? markup : null);
+        const lang = names.normLang(doc[`${key}_lang`]);
+        if (lang && !names.langOk(lang)) throw new Error(`language "${doc[`${key}_lang`]}" is not a language code (e.g. en, ja, zh-Hant)`);
+        put(`${key}_lang`, lang);
+      } else if (kind === 'names') {
+        const list = v ?? LEGACY_ALT.map((k) => doc[k]).find((x) => x != null) ?? [];
+        if (!Array.isArray(list)) throw new Error('must be a list');
+        put(key, JSON.stringify(list.map((n, i) => { try { return names.normName(n); } catch (err) { throw new Error(`[${i}] ${err.message}`); } })), '$::jsonb');
       } else if (kind === 'text[]') {
         if (v !== null && !(Array.isArray(v) && v.every((s) => typeof s === 'string'))) throw new Error('must be a list of strings');
         put(key, v || []);
@@ -154,6 +174,7 @@ function docColumns(t) {
   const cols = ['t.id', 't.slug', 't.updated_at::text AS version'];
   for (const [key, kind] of Object.entries(t.fields)) {
     if (kind === 'date' || kind === 'period') cols.push(`t.${key}::text AS ${key}`, `t.${key}_label`);
+    else if (kind === 'name') cols.push(`coalesce(t.${key}_ruby, t.${key}) AS ${key}`, `t.${key}_lang`);
     else if (kind === 'point') cols.push(`CASE WHEN t.${key} IS NOT NULL THEN jsonb_build_array(ST_X(t.${key}::geometry), ST_Y(t.${key}::geometry)) END AS ${key}`);
     else if (kind === 'dimensions') {
       // [h], [h, w] or [h, w, d]: jsonb_strip_nulls doesn't touch arrays, so drop the trailing NULLs by filtering
@@ -179,6 +200,9 @@ function rowToDoc(row, t) {
       if (d.label !== null) doc[`${key}_label`] = d.label;
       continue;
     }
+    if (kind === 'name' && row[`${key}_lang`]) doc[`${key}_lang`] = row[`${key}_lang`];
+    // names: a plain alternative stays a plain string in YAML (as the old lists were)
+    if (kind === 'names') v = Array.isArray(v) && v.length ? v.map((n) => (n.role === 'alternative' && !n.lang ? n.text : n)) : null;
     if (kind === 'text[]' && Array.isArray(v) && !v.length) v = null;
     if (kind === 'json' && v && !Object.keys(v).length) v = null;
     if (v !== null && v !== undefined) doc[key] = v;

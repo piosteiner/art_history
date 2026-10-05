@@ -31,10 +31,9 @@ async function resolveRefs(db, t, doc, body) {
     const target = BY_TYPE[type];
     if (SLUG.test(v) && (await db.query('SELECT entity_id($1, $2) AS id', [type, v])).rows[0].id !== null) continue;
     const name = nameFrom(v);
-    const alt = Object.keys(target.fields).find((k) => target.fields[k] === 'text[]');
     const exact = (await db.query(`SELECT slug FROM ${target.table} x
       WHERE lower(f_unaccent(x.${target.name})) = lower(f_unaccent($1))
-         ${alt ? `OR lower(f_unaccent($1)) = ANY (SELECT lower(f_unaccent(a)) FROM unnest(x.${alt}) a)` : ''}`, [name])).rows;
+         OR lower(f_unaccent($1)) = ANY (SELECT lower(f_unaccent(ruby_plain(n->>'text'))) FROM jsonb_array_elements(x.names) n)`, [name])).rows;
     if (exact.length === 1) { doc[key] = exact[0].slug; continue; }
     if (!exact.length && body[`new.${key}`] !== '1') {
       const { rows } = await db.query(`

@@ -4,6 +4,26 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Names in several languages: furigana, language tags, translations, romanizations (migration 022)
+- **What:** every entity table: `<name>_lang`, `<name>_ruby` (furigana markup, name stays plain), `names jsonb`
+  ([{text, lang, role}] — original / translation / romanization / alternative; replaces `alt_names`/`alt_titles`, moved
+  in as alternative with history triggers off), SQL functions `ruby_plain`, `ruby_reading`, `lang_tag_ok`,
+  `names_valid`, `names_text`, `name_sort_key`, trigram index per table, `entity_index` + `names`/`sort_key`, quality
+  check `missing_romanization`. `src/names.js` (shared server/browser). Admin: language next to the name, "Add
+  reading" button + live ruby preview, other names as rows (textarea underneath for no-JS/drafts/live copies),
+  lists sorted by romanization, search over all names; slug follows the romanization when the title has no Latin
+  letters. Wikidata: labels as tagged translations, P1559/P1476 as original (artworks: P1476 offered as the title
+  with its language), P2125 Hepburn as romanization. API: `<name>_lang`, `<name>_ruby_html`, `<name>_reading`,
+  `names`, `sort_key`; `alt_names`/`alt_titles` kept (plain). YAML: `names:` (old `alt_*` keys still import).
+- **Why:** owner: original-language titles with translations; furigana for Japanese; romanized titles for
+  non-Latin scripts — for every entity type.
+- **Tested:** unit 22 passing (markup, tags, lines); smoke test; e2e (reading button, rows, slug from romanization,
+  API fields, search, validation; Wikidata P1476 + tagged labels).
+- **Revert:** redeploy the previous commit; as owner per table `ALTER TABLE … ADD COLUMN alt_names text[] NOT NULL
+  DEFAULT '{}'` (artworks `alt_titles`), `UPDATE … SET alt_names = ARRAY(SELECT ruby_plain(n->>'text') FROM
+  jsonb_array_elements(names) n)`, then drop `names`, `<name>_lang`, `<name>_ruby`; re-create 021's quality view
+  and 019's `entity_index`. Easier: restore the backup taken right before the deploy.
+
 ### Admin: static files linked with a content hash
 - **What:** `backend/src/admin/assets.js` — `admin.css`, `editor.js`, `map.js`, `map.css` are linked as
   `/static/<file>?v=<SHA-256 prefix>` (rehashed when the file changes); the map files' URLs reach the bundle via

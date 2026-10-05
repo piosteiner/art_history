@@ -47,16 +47,35 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 ## Fields
 | Folder | Fields (all optional unless marked *) |
 |---|---|
-| places | `name`*, `kind`* (settlement, building, site, region, country), `location`* `[longitude, latitude]`, `parent` (place slug), `country_code` (ISO, e.g. FR), `alt_names`, `area` (GeoJSON polygon), `description_md` |
+| places | `name`*, `kind`* (settlement, building, site, region, country), `location`* `[longitude, latitude]`, `parent` (place slug), `country_code` (ISO, e.g. FR), `names`, `area` (GeoJSON polygon), `description_md` |
 | movements | `name`*, `kind`* (period, movement, school, style), `parent` (movement slug), `period`, `description_md` |
-| polities | `name`*, `kind` (empire, kingdom, dynasty, republic, …), `parent` (polity slug, e.g. Western Han ⊂ Han dynasty), `period` (when it existed; `1922/` = still exists), `country_codes` (modern countries on its territory, ISO: `[RU, UA, BY]`), `alt_names`, `description_md` |
-| artists | `name`*, `sort_name`, `alt_names`, `birth`, `death`, `biography_md` |
-| patrons | `name`*, `kind` (person, family, …), `alt_names`, `active`, `notes_md` |
-| institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `alt_names`, `description_md` |
-| artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `institution` (current holder, slug), `inventory_number`, `alt_titles`, `description_md` |
+| polities | `name`*, `kind` (empire, kingdom, dynasty, republic, …), `parent` (polity slug, e.g. Western Han ⊂ Han dynasty), `period` (when it existed; `1922/` = still exists), `country_codes` (modern countries on its territory, ISO: `[RU, UA, BY]`), `names`, `description_md` |
+| artists | `name`*, `sort_name`, `names`, `birth`, `death`, `biography_md` |
+| patrons | `name`*, `kind` (person, family, …), `names`, `active`, `notes_md` |
+| institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `names`, `description_md` |
+| artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `institution` (current holder, slug), `inventory_number`, `names`, `description_md` |
 
 Every entity also takes `wikidata_id` (`Q…`) and `metadata` (free-form mapping). `*_md` fields are Markdown;
 the API serves them as sanitized HTML.
+
+## Names in several languages
+Every entry's main name (`title` for artworks, `name` for the rest) can carry furigana and a language; other names
+go in `names`, each with a language and a role (`original`, `translation`, `romanization`, `alternative` — the default).
+
+```yaml
+title: "{神奈川|かながわ}{沖|おき}{浪裏|なみうら}"   # furigana: {kanji|reading}
+title_lang: ja                                     # BCP 47: ja, en, zh-Hant …
+names:
+  - text: Kanagawa-oki nami ura
+    lang: ja-Latn                                  # romanized = the language in Latin script (ja-Latn, zh-Latn-pinyin)
+    role: romanization
+  - text: The Great Wave off Kanagawa
+    lang: en
+    role: translation
+  - Great Wave                                     # plain text = an alternative name
+```
+The romanization is what lists sort by. Files from before (with `alt_names` / `alt_titles` lists) still import:
+those become alternative names.
 
 ## Images
 Artworks, artists and institutions take a list of images; the first one is the main image. Only `url` is required.

@@ -201,3 +201,13 @@ td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-f
 /* dimensions: a note when only the height is filled in (pure CSS — :has() and :placeholder-shown, no script) */
 .dims-height-only { display: none; }
 .field:has(.dims input[name$="_h"]:not(:placeholder-shown)):has(.dims input[name$="_w"]:placeholder-shown):has(.dims input[name$="_d"]:placeholder-shown) .dims-height-only { display: block; }
+
+/* names in several languages (src/admin/editor/names.js): language inputs, furigana preview, other-names rows */
+.lang-input { max-width: 9rem; }
+.ruby-preview { font-size: 1.5rem; line-height: 2.4; margin-top: .2rem; }
+.ruby-preview rt { font-size: .5em; color: var(--muted, inherit); }
+.add-reading { white-space: nowrap; }
+.names-editor { display: grid; gap: .4rem; }
+.names-row .row { align-items: center; }
+.names-row select { width: auto; }
+.reading-note:empty { display: none; }

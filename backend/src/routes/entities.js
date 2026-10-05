@@ -5,6 +5,7 @@
 const express = require('express');
 const { apiPool } = require('../db');
 const { renderMarkdown } = require('../markdown');
+const names = require('../names');
 const { badRequest, notFound, intParam, yearWindowRange } = require('../http');
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -28,25 +29,42 @@ const countryFilters = (type) => ({
              AND r.object_type = 'polity' AND r.object_id = entity_id('polity', $))`,
 });
 
+// Names in several languages (migration 022): language and furigana of the main name, the other names with their
+// roles, the sort key (romanization first) — in lists and details. alt_names / alt_titles stay as plain lists for
+// clients written before.
+const nameCols = (col, alt) => `t.${col}_lang, t.${col}_ruby, t.names, name_sort_key(t.${col}, t.names) AS sort_key,
+  (SELECT coalesce(jsonb_agg(ruby_plain(n->>'text')), '[]'::jsonb) FROM jsonb_array_elements(t.names) n) AS ${alt}`;
+// raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, ruby_html, reading}]
+function shapeNames(row, col) {
+  if (!('names' in row)) return row;
+  const markup = row[`${col}_ruby`];
+  delete row[`${col}_ruby`];
+  row[`${col}_ruby_html`] = markup ? names.rubyHtml(markup) : null;
+  row[`${col}_reading`] = markup ? names.reading(markup) : null;
+  row.names = row.names.map((n) => ({ text: names.plain(n.text), lang: n.lang || null, role: n.role,
+    ruby_html: names.rubyHtml(n.text), reading: names.hasRuby(n.text) ? names.reading(n.text) : null }));
+  return row;
+}
+
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
 // extra list filters (?key=value → SQL with $ placeholder), Markdown columns, default order.
 const ENTITIES = {
   artists: {
-    type: 'artist', table: 'artists', name: 'name', period: 't.lifespan',
+    type: 'artist', table: 'artists', alt: 'alt_names', name: 'name', period: 't.lifespan',
     list: `t.sort_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death, ${mainImage('artist_id')},
            ${birthPlace('artist')}, ${countryCols('artist')}`,
-    detail: `t.sort_name, t.alt_names, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
+    detail: `t.sort_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
              ${allImages('artist_id')}, t.biography_md, ${birthPlace('artist')}, ${countryCols('artist')}`,
     md: ['biography_md'],
     filters: countryFilters('artist'),
-    order: 'coalesce(t.sort_name, t.name)',
+    order: 'coalesce(t.sort_name, name_sort_key(t.name, t.names))',
   },
   artworks: {
-    type: 'artwork', table: 'artworks', name: 'title', period: 't.created',
+    type: 'artwork', table: 'artworks', alt: 'alt_titles', name: 'title', period: 't.created',
     list: `range_json(t.created, t.created_label) AS created, t.kind, ${mainImage('artwork_id')},
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
            ${countryCols('artwork')}`,
-    detail: `t.alt_titles, t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
+    detail: `t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
              t.inventory_number, ${allImages('artwork_id')}, t.description_md,
              t.materials,
              CASE WHEN t.height_cm IS NOT NULL THEN jsonb_build_object('height_cm', t.height_cm, 'width_cm', t.width_cm,
@@ -64,53 +82,53 @@ const ENTITIES = {
       material: 't.materials @> ARRAY[$]::text[]',  // GIN index artworks_materials_gin
       ...countryFilters('artwork'),
     },
-    order: 'lower(t.created) NULLS LAST, t.title',
+    order: 'lower(t.created) NULLS LAST, name_sort_key(t.title, t.names)',
   },
   places: {
-    type: 'place', table: 'places', name: 'name', period: null,
+    type: 'place', table: 'places', alt: 'alt_names', name: 'name', period: null,
     list: `t.kind, t.country_code, ST_AsGeoJSON(t.location)::jsonb AS location`,
-    detail: `t.alt_names, t.kind, t.country_code, ST_AsGeoJSON(t.location)::jsonb AS location,
+    detail: `t.kind, t.country_code, ST_AsGeoJSON(t.location)::jsonb AS location,
              ST_AsGeoJSON(t.area)::jsonb AS area, t.description_md`,
     md: ['description_md'],
     filters: { kind: 't.kind::text = $', country: 't.country_code = upper($)' },
-    order: 't.name',
+    order: 'name_sort_key(t.name, t.names)',
   },
   movements: {
-    type: 'movement', table: 'movements', name: 'name', period: 't.period',
+    type: 'movement', table: 'movements', alt: 'alt_names', name: 'name', period: 't.period',
     list: 't.kind, range_json(t.period, t.period_label) AS period',
-    detail: 't.alt_names, t.kind, range_json(t.period, t.period_label) AS period, t.description_md',
+    detail: 't.kind, range_json(t.period, t.period_label) AS period, t.description_md',
     md: ['description_md'],
     filters: { kind: 't.kind::text = $' },
-    order: 'lower(t.period) NULLS LAST, t.name',
+    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.names)',
   },
   institutions: {
-    type: 'institution', table: 'institutions', name: 'name', period: 't.founded',
+    type: 'institution', table: 'institutions', alt: 'alt_names', name: 'name', period: 't.founded',
     list: `t.kind, range_json(t.founded, t.founded_label) AS founded, ${mainImage('institution_id')},
            (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = t.place_id) AS place,
            ${countryCols('institution')}`,
-    detail: `t.alt_names, t.kind, range_json(t.founded, t.founded_label) AS founded, t.website_url, t.description_md,
+    detail: `t.kind, range_json(t.founded, t.founded_label) AS founded, t.website_url, t.description_md,
              ${allImages('institution_id')},
              (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', ST_AsGeoJSON(p.location)::jsonb)
                 FROM places p WHERE p.id = t.place_id) AS place, ${countryCols('institution')}`,
     md: ['description_md'],
     filters: { kind: 't.kind = $', ...countryFilters('institution') },
-    order: 't.name',
+    order: 'name_sort_key(t.name, t.names)',
   },
   patrons: {
-    type: 'patron', table: 'patrons', name: 'name', period: 't.active',
+    type: 'patron', table: 'patrons', alt: 'alt_names', name: 'name', period: 't.active',
     list: `t.kind, range_json(t.active, t.active_label) AS active, ${birthPlace('patron')}, ${countryCols('patron')}`,
-    detail: `t.alt_names, t.kind, range_json(t.active, t.active_label) AS active, t.notes_md, ${birthPlace('patron')}, ${countryCols('patron')}`,
+    detail: `t.kind, range_json(t.active, t.active_label) AS active, t.notes_md, ${birthPlace('patron')}, ${countryCols('patron')}`,
     md: ['notes_md'],
     filters: { kind: 't.kind = $', ...countryFilters('patron') },
-    order: 't.name',
+    order: 'name_sort_key(t.name, t.names)',
   },
   polities: {
-    type: 'polity', table: 'polities', name: 'name', period: 't.period',
+    type: 'polity', table: 'polities', alt: 'alt_names', name: 'name', period: 't.period',
     list: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes',
-    detail: 't.alt_names, t.kind, range_json(t.period, t.period_label) AS period, t.country_codes, t.description_md',
+    detail: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes, t.description_md',
     md: ['description_md'],
     filters: { kind: 't.kind = $', country: 't.country_codes @> ARRAY[upper($)]' },  // GIN index polities_country_gin
-    order: 'lower(t.period) NULLS LAST, t.name',
+    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.names)',
   },
 };
 
@@ -212,7 +230,10 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       // Both are served by the trigram GIN index on f_unaccent(name).
       const like = p(`%${q.replace(/[\\%_]/g, '\\$&')}%`);
       const term = p(q);
-      where.push(`(f_unaccent(t.${e.name}) ILIKE f_unaccent(${like}) OR f_unaccent(${term}) <% f_unaccent(t.${e.name}))`);
+      // …also in the other names and readings (GIN index <table>_names_trgm): "kanagawa oki", "große Welle", "かながわ"
+      const alt = `f_unaccent(coalesce(names_text(t.names), '') || ' ' || coalesce(ruby_reading(t.${e.name}_ruby), ''))`;
+      where.push(`(f_unaccent(t.${e.name}) ILIKE f_unaccent(${like}) OR f_unaccent(${term}) <% f_unaccent(t.${e.name})
+                   OR ${alt} ILIKE f_unaccent(${like}) OR f_unaccent(${term}) <% ${alt})`);
       rank = `word_similarity(f_unaccent(${term}), f_unaccent(t.${e.name})) DESC, `;
     }
     if (window) where.push(`${e.period} && ${p(window)}::daterange`);
@@ -224,21 +245,21 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     }
 
     const { rows } = await apiPool.query(`
-      SELECT t.slug, t.${e.name}, ${e.list}, count(*) OVER () AS total
+      SELECT t.slug, t.${e.name}, ${nameCols(e.name, e.alt)}, ${e.list}, count(*) OVER () AS total
       FROM ${e.table} t
       ${where.length ? `WHERE ${where.join(' AND ')}` : ''}
       ORDER BY ${rank}${e.order}
       LIMIT ${p(limit)} OFFSET ${p(offset)}`, params);
 
     const total = rows.length ? Number(rows[0].total) : 0;
-    rows.forEach((r) => { delete r.total; nameCountry(r); });
+    rows.forEach((r) => { delete r.total; nameCountry(shapeNames(r, e.name)); });
     res.json({ data: rows, total, limit, offset });
   });
 
   router.get(`/${plural}/:slug`, async (req, res) => {
     if (!SLUG.test(req.params.slug)) throw notFound(`no ${e.type} "${req.params.slug}"`);
     const { rows } = await apiPool.query(`
-      SELECT t.id, t.slug, t.${e.name}, ${e.detail}, t.wikidata_id, t.metadata, t.updated_at
+      SELECT t.id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt)}, ${e.detail}, t.wikidata_id, t.metadata, t.updated_at
       FROM ${e.table} t WHERE t.slug = $1`, [req.params.slug]);
     if (!rows.length) throw notFound(`no ${e.type} "${req.params.slug}"`);
     const { id, ...entity } = rows[0];
@@ -247,7 +268,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => r.rows.map((x) => renderMd(x, ['notes_md']))),
       EXTRAS[e.type] ? EXTRAS[e.type](id) : {},
     ]);
-    res.json({ type: e.type, ...nameCountry(renderMd(entity, e.md)), ...extras, relationships });
+    res.json({ type: e.type, ...nameCountry(shapeNames(renderMd(entity, e.md), e.name)), ...extras, relationships });
   });
 }
 

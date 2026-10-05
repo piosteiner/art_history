@@ -1,12 +1,23 @@
 // Entity forms, driven by the field kinds in src/content.js. A submitted form becomes a doc (the same shape as a
 // YAML file), which then goes through the same toRow() validation as the import.
 const { html } = require('./html');
+const names = require('../names');
+
+// Language tags offered in the pickers (any BCP 47 tag can be typed).
+const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'Italian'], ['nl', 'Dutch'], ['es', 'Spanish'],
+  ['ja', 'Japanese'], ['ja-Latn', 'Japanese, romanized (Hepburn)'], ['zh', 'Chinese'], ['zh-Hant', 'Chinese, traditional'],
+  ['zh-Latn-pinyin', 'Chinese, pinyin'], ['ko', 'Korean'], ['ko-Latn', 'Korean, romanized'], ['ru', 'Russian'], ['ru-Latn', 'Russian, romanized'],
+  ['ar', 'Arabic'], ['fa', 'Persian'], ['el', 'Greek'], ['la', 'Latin']];
 
 const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1853-03-30</code> · <code>1886-03/1888-02-20</code> (from/to, inclusive)
   · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
 const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.`,
   'text[]': 'One per line.',
+  names: html`One per line: <code>name | language | role</code> — role: original, translation, romanization or alternative
+    (the default). E.g. <code>Kanagawa-oki nami ura | ja-Latn | romanization</code> · <code>The Great Wave off Kanagawa | en | translation</code>.
+    Furigana work here too.`,
+  name: html`Furigana: <code>{神奈川|かながわ}</code> — or select kanji and press “Add reading”. Language: e.g. <code>ja</code>, <code>en</code>, <code>zh-Hant</code>.`,
   country_codes: 'Modern countries on its territory, ISO codes, one per line (e.g. CN for the Han dynasty; UA, RU, BY … for the USSR). Shown as "today …" only for entries without a place.',
   inventory_number: 'Only together with the institution above — the number belongs to its collection.',
   materials: 'One per line, e.g. oil paint · canvas — or bronze · marble. The "medium" above stays the readable description.',
@@ -27,6 +38,8 @@ function docToForm(doc, fields) {
   for (const [key, kind] of Object.entries(fields)) {
     const v = doc[key];
     if (kind === 'text[]') f[key] = (v || []).join('\n');
+    else if (kind === 'name') { f[key] = v ?? ''; f[`${key}_lang`] = doc[`${key}_lang`] ?? ''; }
+    else if (kind === 'names') f[key] = names.namesToLines((v || []).map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)));
     else if (kind === 'json' || kind === 'area') f[key] = v ? JSON.stringify(v, null, 2) : '';
     else if (kind === 'point') { f[`${key}_lon`] = v ? String(v[0]) : ''; f[`${key}_lat`] = v ? String(v[1]) : ''; }
     else if (kind === 'dimensions') ['h', 'w', 'd'].forEach((x, i) => { f[`${key}_${x}`] = v && v[i] !== undefined ? String(v[i]) : ''; });
@@ -43,7 +56,13 @@ function formToDoc(body, fields) {
   const get = (k) => String(body[`f.${k}`] ?? '').replace(/\r\n/g, '\n');
   for (const [key, kind] of Object.entries(fields)) {
     const v = get(key).trim();
-    if (kind === 'md') {
+    if (kind === 'name') {
+      if (v) doc[key] = v;
+      const lang = get(`${key}_lang`).trim();
+      if (lang) doc[`${key}_lang`] = lang;
+    } else if (kind === 'names') {
+      try { const list = names.linesToNames(get(key)); if (list.length) doc[key] = list; } catch (err) { errors.push(`${key}: ${err.message}`); }
+    } else if (kind === 'md') {
       if (v) doc[key] = get(key).replace(/\s+$/, '');
     } else if (kind === 'text[]') {
       const items = v.split('\n').map((s) => s.trim()).filter(Boolean);
@@ -84,6 +103,19 @@ function fieldInput(key, kind, f, ctx) {
   const err = ctx.errorKeys.has(key) ? ' has-error' : '';
   const hint = (h) => (h ? html`<div class="hint">${h}</div>` : '');
 
+  if (kind === 'name') {
+    // the browser adds the "Add reading" button and the furigana preview (editor/names.js)
+    return html`<div class="field name-field${err}"><label for="${id}">${humanize(key)}</label>
+      <div class="row"><input id="${id}" name="${name}" value="${f[key]}" class="grow" data-ruby lang="${f[`${key}_lang`] || ''}">
+      <input name="${name}_lang" value="${f[`${key}_lang`]}" placeholder="language" aria-label="${humanize(key)} language" class="lang-input" list="lang-list" autocomplete="off"></div>
+      <div class="ruby-preview" hidden></div>${hint(HINTS.name)}
+      <datalist id="lang-list">${LANGS.map(([v, l]) => html`<option value="${v}">${l}</option>`)}</datalist></div>`;
+  }
+  if (kind === 'names') {
+    // a plain textarea (works without script); the browser turns it into rows (editor/names.js)
+    return html`<div class="field${err}"><label for="${id}">Other names, translations, romanizations</label>
+      <textarea id="${id}" name="${name}" rows="3" data-names>${f[key]}</textarea>${hint(HINTS.names)}</div>`;
+  }
   if (kind === 'md') {
     return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
       <textarea class="md" id="${id}" name="${name}">${f[key]}</textarea>${hint(HINTS.md)}</div>`;
@@ -162,4 +194,4 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   </form>`;
 }
 
-module.exports = { docToForm, formToDoc, entityForm, humanize, HINTS };
+module.exports = { docToForm, formToDoc, entityForm, humanize, HINTS, LANGS };

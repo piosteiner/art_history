@@ -40,6 +40,18 @@ without images. The detail adds `images`, all of them in order (the first = `ima
 `[{url, source_url, license, credit, caption}]` — e.g. caption "Back view" for a sculpture. Show license and credit
 wherever an image is shown.
 
+### Names in several languages (every type)
+- `<name>` (`name`, artworks: `title`) — plain text, as before. `<name>_lang` — its language (BCP 47: `ja`, `en`, `zh-Hant`) or `null`.
+- `<name>_ruby_html` — the name with furigana as `<ruby>神奈川<rp>(</rp><rt>かながわ</rt><rp>)</rp></ruby>…` (escaped, safe
+  to insert), `null` without; `<name>_reading` — the full reading (`かながわおきなみうら`).
+- `names` — other names in order: `[{text, lang, role, ruby_html, reading}]`, role = `original` | `translation` |
+  `romanization` | `alternative`. A romanization's lang is the language in Latin script (`ja-Latn`, `zh-Latn-pinyin`).
+- `sort_key` — what to sort by: the first romanization, else the name. List results are ordered by it (artists:
+  `sort_name` first).
+- `alt_names` / `alt_titles` — all other names as plain strings (unchanged, for older clients).
+Set `lang` on elements showing a name (`<h1 lang="ja">`) so the right font and pronunciation are used. `?q=` and
+`/v1/search` also match other names and readings ("kanagawa oki", "Under the Wave", "かながわ").
+
 ### Countries and polities (artists, artworks, institutions, patrons)
 Two different things, both in lists and details:
 - `country` — the country **today**, derived from the entry's place: an artist's / patron's birthplace, where an

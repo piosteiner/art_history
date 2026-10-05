@@ -9,7 +9,7 @@ test('a polity: country codes are checked, then it can be created', async ({ use
   await userA.goto('/polities/new');
   await userA.fill('#f-slug', 'ussr');
   await userA.fill('#f-name', 'Soviet Union');
-  await userA.fill('#f-alt_names', 'USSR');
+  await userA.locator('.names-row .n-text').first().fill('USSR');
   await userA.fill('#f-period', '1922-12-30/1991-12-26');
   await userA.fill('#f-country_codes', 'RU\nukr');
   await submitForm(userA);

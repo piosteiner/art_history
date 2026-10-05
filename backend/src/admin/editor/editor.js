@@ -18,6 +18,7 @@ import { yCollab, yUndoManagerKeymap } from 'y-codemirror.next';
 import { startCollab } from './collab';
 import { initWikidataBulk } from './wikidata-bulk';
 import { initSlug } from './slug';
+import { initNames } from './names';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -209,6 +210,7 @@ function enhance(textarea, collab = null) {
 }
 
 initAutocomplete();
+initNames();
 initSlug();
 initWikidataBulk();
 const live = initLive();

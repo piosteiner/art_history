@@ -144,6 +144,16 @@ builds the list with `jsonb_agg(jsonb_build_object(…) ORDER BY position, id)`.
 - Adding the type needed two migrations: `ALTER TYPE … ADD VALUE` (018) can't be used in the transaction that adds it.
   `entity_table(type)` maps a type to its table (`polity` → `polities`, not type + "s").
 
+## Names and languages (migration 022)
+Each entity table has `<name>_lang` (BCP 47, `CHECK lang_tag_ok()`), `<name>_ruby` (the name with furigana markup
+`{base|reading}`; the name column itself stays plain, kept in step by `CHECK ruby_plain(<name>_ruby) = <name>`) and
+`names jsonb` — other names `[{text, lang, role}]`, validated by `CHECK names_valid(names)` (a SQL function over
+`jsonb_array_elements`). A jsonb column rather than a child table because names belong to the entry: saved,
+versioned, reverted, co-edited and exported with it. `names_text()` flattens them (with readings) for search; an
+expression GIN index `f_unaccent(names_text(names)) gin_trgm_ops` serves trigram matching. `name_sort_key()` picks the
+first romanization for sorting; `entity_index` exposes `names` and `sort_key`. Functions called from index
+expressions are schema-qualified inside each other: since Postgres 17, index builds run with a restricted search_path.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the
