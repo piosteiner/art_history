@@ -71,6 +71,12 @@ Formerly patrons (API migration 024): `/people`, type `person`, with kind, occup
 and derived `roles` (patron, owner, depicted). Old `/patrons/…` addresses and `patrons=` in explore links are converted.
 The graph has the category `depiction` (`depicts_person`).
 
+## Glossary
+`/glossary` (A–Z with letter headings, category buttons, also as `?category=`) and `/glossary/<slug>` (definition as lead, text,
+images, related terms, "Used in"). Links in any `*_html` (`a.glossary-link`) get a popover from the detail's `glossary` map
+(`src/glossary.ts`: hover/focus; on touch the first tap shows it, "Read more" navigates); `missing` terms become plain
+dimmed text, never dead links.
+
 ## Names in several languages
 The display name (`name`, artworks `title`) may be the original or a translation: elements showing a name get
 `lang` (`*_lang`, each `names` entry's lang); detail pages add the original (`names` role `original`, with `ruby_html` furigana)

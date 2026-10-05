@@ -103,12 +103,12 @@ export function wireLightbox(root: Element) {
 
 export const TYPE_LABEL: Record<EntityType, string> = {
   artist: 'Artist', artwork: 'Artwork', place: 'Place',
-  movement: 'Movement', institution: 'Institution', person: 'Person', polity: 'Polity',
+  movement: 'Movement', institution: 'Institution', person: 'Person', polity: 'Polity', term: 'Term',
 };
 
 export const PLURAL_LABEL: Record<Plural, string> = {
   artists: 'Artists', artworks: 'Artworks', places: 'Places',
-  movements: 'Movements', institutions: 'Institutions', people: 'People', polities: 'Polities',
+  movements: 'Movements', institutions: 'Institutions', people: 'People', polities: 'Polities', glossary: 'Glossary',
 };
 
 // ---- people -------------------------------------------------------------------------------------

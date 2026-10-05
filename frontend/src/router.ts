@@ -11,7 +11,7 @@ export type Route =
   | { name: 'privacy' }
   | { name: 'not-found' };
 
-const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'people', 'polities'];
+const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'people', 'polities', 'glossary'];
 const isPlural = (s: string): s is Plural => (PLURALS as string[]).includes(s);
 
 export function parse(pathname: string, search: string): Route {

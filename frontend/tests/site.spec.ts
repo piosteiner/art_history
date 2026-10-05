@@ -289,3 +289,57 @@ test('artwork dimensions: the work itself (with note), then one line per further
   await expect(dims).toContainText('Mount: 180 × 95.5 cm');
   await expect(dims).toContainText('Frame: 190 × 105.5 × 6 cm');
 });
+
+// ---- glossary (the live glossary may still be empty: the tests bring two sample terms) ----
+const TERMS = {
+  'woodblock-print': { name: 'Woodblock print', category: 'technique', definition: 'A print made from a carved block of wood.' },
+  torii: { name: 'Torii', category: 'architecture', definition: 'A traditional gate at the entrance of a Shinto shrine.' },
+};
+async function sampleGlossary(page: Page) {
+  const item = (slug: keyof typeof TERMS) => ({ slug, ...TERMS[slug], image_url: null, names: [], sort_key: TERMS[slug].name, search_text: '' });
+  await page.route(/\/v1\/glossary\?/, (r) => r.fulfill({ json: { data: [item('torii'), item('woodblock-print')], total: 2, limit: 500, offset: 0 } }));
+  await page.route(/\/v1\/glossary\/woodblock-print$/, (r) => r.fulfill({ json: {
+    type: 'term', slug: 'woodblock-print', ...TERMS['woodblock-print'], alt_names: [], names: [], description_html: '<p>Used for ukiyo-e.</p>',
+    images: [], image_url: null, wikidata_id: null, metadata: {}, updated_at: '', glossary: {},
+    used_in: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave off Kanagawa' }],
+    relationships: [{ type: 'related_term', direction: 'mutual', label: 'related to', category: 'glossary', is_physical_presence: false,
+      entity: { type: 'term', slug: 'torii', name: 'Torii' }, period: null, note: null, certainty: 'attested', notes_html: null }],
+  } }));
+  // the Great Wave's description links one real and one missing term
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.description_html = '<p>A <a href="/glossary/woodblock-print" class="glossary-link" data-term="woodblock-print">woodblock print</a> '
+      + 'with a <a href="/glossary/bokashi" class="glossary-link missing" data-term="bokashi">bokashi</a> sky.</p>';
+    body.glossary = { 'woodblock-print': TERMS['woodblock-print'] };
+    await route.fulfill({ response: res, json: body });
+  });
+}
+
+test('glossary: A–Z with category buttons, term page with definition, related terms and "used in"', async ({ page }) => {
+  await sampleGlossary(page);
+  await page.goto('/glossary');
+  await expect(page.locator('.card')).toHaveCount(2);
+  await expect(page.locator('.cards-heading').first()).toHaveText('T'); // letter headings
+  await page.locator('#categories button', { hasText: 'technique' }).click();
+  await expect(page).toHaveURL(/\/glossary\?category=technique$/);
+  await expect(page.locator('.card')).toHaveCount(1);
+  await expect(page.locator('.card')).toContainText('A print made from a carved block of wood.');
+  await page.locator('.card-link').click();
+  await expect(page.locator('h1')).toHaveText('Woodblock print');
+  await expect(page.locator('.lead')).toHaveText('A print made from a carved block of wood.');
+  await expect(page.locator('main')).toContainText('Related terms');
+  await expect(page.locator('main a', { hasText: 'The Great Wave off Kanagawa' })).toBeVisible(); // used in
+});
+
+test('glossary links in texts: popover with the definition; a missing term is plain text', async ({ page }) => {
+  await sampleGlossary(page);
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const linkEl = page.locator('.prose a.glossary-link');
+  await linkEl.hover();
+  await expect(page.locator('.glossary-popover')).toContainText('A print made from a carved block of wood.');
+  await expect(page.locator('.prose a[data-term="bokashi"]')).toHaveCount(0); // no dead link
+  await expect(page.locator('.prose .glossary-missing')).toHaveText('bokashi');
+  await page.locator('.glossary-popover a').click();
+  await expect(page).toHaveURL(/\/glossary\/woodblock-print$/);
+});

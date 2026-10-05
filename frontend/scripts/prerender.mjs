@@ -10,9 +10,9 @@ import { fileURLToPath } from 'node:url';
 const SITE = 'https://arthistory.piogino.ch';
 const API = process.env.API_BASE ?? 'https://api.arthistory.piogino.ch/v1';
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
-const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places'];
-const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', institutions: 'Institution', people: 'Person', places: 'Place' };
-const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', institutions: 'Institutions', people: 'People', places: 'Places' };
+const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places', 'glossary'];
+const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', institutions: 'Institution', people: 'Person', places: 'Place', glossary: 'Term' };
+const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', institutions: 'Institutions', people: 'People', places: 'Places', glossary: 'Glossary' };
 const SITE_DESCRIPTION = 'Artists, artworks, movements and museums on a map, a timeline and an influence graph.';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -77,8 +77,9 @@ function describe(plural, e) {
     institutions: [e.kind, e.place?.name && country ? `${e.place.name}, ${country}` : e.place?.name, e.founded ? `founded ${e.founded.label}` : ''],
     people: [e.birth || e.death ? dateSpan(e.birth, e.death) : e.active ? `active ${e.active.label}` : '', (e.occupations ?? []).join(', '), (e.roles ?? []).join(', ')],
     places: [e.kind, e.ancestors?.length ? e.ancestors.map((a) => a.name).reverse().join(', ') : ''],
+    glossary: [e.category],
   }[plural].filter(Boolean);
-  const long = text(e.biography_html ?? e.description_html ?? e.notes_html);
+  const long = [e.definition, text(e.biography_html ?? e.description_html ?? e.notes_html)].filter(Boolean).join(' ');
   const summary = `${TYPE_LABEL[plural]}${facts.length ? ` · ${facts.join(' · ')}` : ''}`;
   return { name, summary, description: clip(long ? `${summary}. ${long}` : summary), long, image: e.images?.[0] ?? null };
 }

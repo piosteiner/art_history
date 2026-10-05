@@ -10,11 +10,12 @@ import {
 import { COLORS, createMap, showEntity, showPoint } from '../map';
 import type { ArtworkSummary, Category, Country, DetailByPlural, Dimensions, Entity, Image, KindRef, PartDimensions, Plural, PolityLink, Relationship } from '../types';
 import { guard, loading, showError } from './common';
+import { wireGlossary } from '../glossary';
 
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
 const CATEGORY_ORDER: Category[] = [
-  'presence', 'association', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance',
+  'glossary', 'presence', 'association', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance',
 ];
 const CATEGORY_LABEL: Record<string, string> = {
   presence: 'Places (physically there)',
@@ -27,6 +28,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   depiction: 'Depictions',
   provenance: 'Provenance',
   polity: 'States and nationality',
+  glossary: 'Related terms',
 };
 
 /**
@@ -56,7 +58,7 @@ const artworkList = (works: ArtworkSummary[], withCreator: boolean) => html`<ul 
   ${withCreator && w.creator ? html` · ${link('artist', w.creator.slug, w.creator.name)}` : ''}
 </li>`)}</ul>`;
 
-function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; text: string | null; images: Image[]; extra: Html[] } {
+function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; text: string | null; images: Image[]; extra: Html[]; lead?: string | null } {
   switch (e.type) {
     case 'artist':
       return {
@@ -137,6 +139,15 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
         ],
         extra: [],
       };
+    case 'term':
+      return {
+        title: e.name, subtitle: `Glossary · ${e.category}`, lead: e.definition, text: e.description_html, images: e.images,
+        facts: [['Category', html`<a href="/glossary?category=${e.category}">${e.category}</a>`], ['Also known as', otherNames(e)]],
+        extra: e.used_in.length
+          ? [html`<section><h2>Used in</h2><p class="muted small">Entries whose texts mention this term.</p><ul class="plain-list">${e.used_in.map((u) =>
+            html`<li>${link(u.type, u.slug, u.name)} <span class="muted">${TYPE_LABEL[u.type]}</span></li>`)}</ul></section>`]
+          : [],
+      };
     case 'polity':
       return {
         title: e.name, subtitle: [e.kind, e.period?.label].filter(Boolean).join(' · '), text: e.description_html, images: [],
@@ -207,7 +218,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const v = factsFor(e);
       document.title = `${v.title} · Art History`;
       const facts = v.facts.filter(([, value]) => value);
-      const hasMap = e.type === 'place' ? !!e.location : true;
+      const hasMap = e.type === 'place' ? !!e.location : e.type !== 'term';
       render(main, html`<article class="page detail detail-${e.type}">
         <p class="crumbs"><a href="/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
         <h1${langAttr(displayName(e).lang)}>${displayName(e).ruby ? trusted(displayName(e).ruby) : v.title}</h1>
@@ -215,11 +226,12 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
         <p class="detail-actions">
           ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
-          ${e.type !== 'place' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
+          ${e.type !== 'place' && e.type !== 'term' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
         </p>
         <div class="detail-grid">
           <div class="detail-main">
             ${v.images.length ? html`<div class="gallery">${v.images.map((img) => figure(img, v.title))}</div>` : ''}
+            ${v.lead ? html`<p class="lead">${v.lead}</p>` : ''}
             ${v.text ? html`<div class="prose">${trusted(v.text)}</div>` : ''}
             ${facts.length ? html`<dl class="facts">${facts.map(([k, value]) => html`<dt>${k}</dt><dd>${value}</dd>`)}</dl>` : ''}
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
@@ -235,6 +247,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       </article>`);
       wireImageFallbacks(main);
       wireLightbox(main);
+      wireGlossary(main, e.glossary);
       if (['artist', 'person', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
       if (!hasMap) return;
 

@@ -431,3 +431,22 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .route-key .line { width: 18px; height: 4px; }
 .legend-key .dot, .legend-key .ring { vertical-align: middle; }
 .dim-part { color: var(--muted); }
+
+/* glossary */
+.category-filter { display: flex; flex-wrap: wrap; gap: .35rem; margin: .5rem 0 .2rem; }
+.category-filter button {
+  font: inherit; font-size: .88rem; padding: .2rem .7rem; border: 1px solid var(--line); background: var(--surface);
+  color: var(--text); border-radius: 999px; cursor: pointer; text-transform: capitalize;
+}
+.category-filter button:hover, .category-filter button.on { border-color: var(--accent); }
+.category-filter button.on { background: var(--picked-bg); font-weight: 600; }
+.lead { font-size: 1.15rem; max-width: 42rem; margin: 0 0 1rem; font-family: var(--serif); }
+.glossary-link { text-decoration-style: dotted; text-decoration-thickness: 1.5px; }
+.glossary-missing { color: var(--muted); border-bottom: 1px dotted var(--line); cursor: help; }
+.glossary-popover {
+  position: absolute; z-index: 50; max-width: min(320px, calc(100vw - 16px)); padding: .65rem .8rem; font-size: .9rem;
+  background: var(--surface); color: var(--text); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+}
+.glossary-popover p { margin: .35rem 0 .45rem; }
+.glossary-popover-head .tag { text-transform: capitalize; }
+.glossary-popover a { font-size: .85rem; }

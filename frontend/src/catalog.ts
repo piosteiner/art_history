@@ -291,6 +291,18 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       };
     },
   },
+  glossary: {
+    type: 'term',
+    sorts: [
+      { id: 'name', label: 'A–Z' },
+      { id: 'category', label: 'Category' },
+    ],
+    build: (t) => ({
+      slug: t.slug, name: t.name, meta: t.category,
+      fields: fields(['Definition', t.definition]),
+      sorts: { name: byName(t.name), category: byText(t.category, 'Other') },
+    }),
+  },
   polities: {
     type: 'polity',
     sorts: [

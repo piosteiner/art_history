@@ -1,9 +1,9 @@
 // Response shapes of https://api.arthistory.piogino.ch/v1 (reference: backend/docs/api.md).
 
 /** Plural URL segment of an entity type (`/v1/artists/…`). */
-export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities';
+export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities' | 'glossary';
 /** Singular `type` field inside responses. */
-export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity';
+export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity' | 'term';
 
 /** Every date is one of these or null. `to` is inclusive; open ends are null; BCE years are negative. */
 export interface DateRange {
@@ -41,7 +41,7 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction';
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary';
 
 export interface Relationship {
   type: string;
@@ -62,7 +62,12 @@ interface DetailBase {
   metadata: Record<string, unknown>;
   updated_at: string;
   relationships: Relationship[];
+  /** The glossary terms this entry's texts link (<a class="glossary-link" data-term=…>), for popovers. */
+  glossary?: Record<string, GlossaryHint>;
 }
+
+export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
+export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'other';
 
 // ---- countries and polities ---------------------------------------------------------------------
 
@@ -140,6 +145,7 @@ export interface PersonItem extends Located, Named {
   birth: DateRange | null; death: DateRange | null; active: DateRange | null; // active: groups, or when the lifespan is unknown
   roles: PersonRole[]; birth_place: BirthPlace | null;
 }
+export interface TermItem extends Named { slug: string; name: string; category: TermCategory; definition: string | null; image_url: string | null }
 export interface PolityItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[] }
 
 // ---- details -------------------------------------------------------------------------------------
@@ -211,15 +217,24 @@ export interface Polity extends DetailBase, Named {
   ancestors: KindRef[]; children: KindRef[];
 }
 
-export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity;
+export interface Term extends DetailBase, Named {
+  type: 'term';
+  name: string; alt_names: string[]; category: TermCategory; definition: string | null;
+  description_html: string | null;
+  images: Image[]; image_url: string | null;
+  /** Entries whose texts link this term. */
+  used_in: { type: EntityType; slug: string; name: string }[];
+}
+
+export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Term;
 
 export interface ItemByPlural {
   artists: ArtistItem; artworks: ArtworkItem; places: PlaceItem;
-  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem;
+  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem; glossary: TermItem;
 }
 export interface DetailByPlural {
   artists: Artist; artworks: Artwork; places: Place;
-  movements: Movement; institutions: Institution; people: Person; polities: Polity;
+  movements: Movement; institutions: Institution; people: Person; polities: Polity; glossary: Term;
 }
 
 // ---- search, vocabulary --------------------------------------------------------------------------

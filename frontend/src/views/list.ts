@@ -49,6 +49,11 @@ function cardParts(plural: Plural, item: AnyItem) {
       [name, date, detail] = [p.name, personDates(p), [personWhat(p), countryText(p.country)].filter(Boolean).join(' · ')];
       break;
     }
+    case 'glossary': {
+      const t = item as ItemByPlural['glossary'];
+      [name, date, detail, image] = [t.name, t.category, t.definition ?? '', t.image_url];
+      break;
+    }
     case 'polities': {
       const p = item as ItemByPlural['polities'];
       [name, date, detail] = [p.name, dateLabel(p.period), [p.kind, p.country_codes.map((c) => countryName(c) ?? c).join(', ')].filter(Boolean).join(' · ')];
@@ -85,6 +90,7 @@ export function list(main: HTMLElement, plural: Plural) {
       <input class="filter" type="search" placeholder="Search ${PLURAL_LABEL[plural].toLowerCase()}…" aria-label="Search">
       <label class="list-sort" hidden>Sort <select aria-label="Sort"></select></label>
     </div>
+    <div class="category-filter" id="categories" hidden role="group" aria-label="Category"></div>
     <p class="muted" id="count"></p>
     <ul class="cards" id="items"></ul>
   </section>`);
@@ -99,10 +105,30 @@ export function list(main: HTMLElement, plural: Plural) {
   let all: Entry<AnyItem>[] = [];
   let similar: Entry<AnyItem>[] = []; // typo-tolerant name matches from the API that the field search missed
   let query = '';
+  // glossary: one category at a time (`?category=technique`); "All" shows every term
+  let category = plural === 'glossary' ? new URLSearchParams(location.search).get('category') : null;
+  const categoriesEl = main.querySelector<HTMLElement>('#categories')!;
+  function drawCategories() {
+    const counts = new Map<string, number>();
+    for (const e of all) { const c = (e.item as { category?: string }).category ?? 'other'; counts.set(c, (counts.get(c) ?? 0) + 1); }
+    if (category && !counts.has(category)) category = null;
+    categoriesEl.hidden = counts.size < 2 && !category;
+    render(categoriesEl, html`<button type="button" data-category="" class="${category ? '' : 'on'}" aria-pressed="${String(!category)}">All <span class="muted">${String(all.length)}</span></button>
+      ${[...counts].sort(([a], [b]) => a.localeCompare(b)).map(([c, n]) => html`<button type="button" data-category="${c}" class="${c === category ? 'on' : ''}" aria-pressed="${String(c === category)}">${c} <span class="muted">${String(n)}</span></button>`)}`);
+  }
+  categoriesEl.addEventListener('click', (ev) => {
+    const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-category]');
+    if (!b) return;
+    category = b.dataset.category || null;
+    history.replaceState(null, '', `/glossary${category ? `?category=${encodeURIComponent(category)}` : ''}`);
+    drawCategories();
+    draw();
+  });
 
   function draw() {
     const words = queryWords(query);
-    const hits = query ? all.filter((e) => matches(e, query)) : all;
+    const pool = category ? all.filter((e) => (e.item as { category?: string }).category === category) : all;
+    const hits = query ? pool.filter((e) => matches(e, query)) : pool;
     let last = '';
     const row = (e: Entry<AnyItem>) => {
       const p = cardParts(plural, e.item);
@@ -116,8 +142,8 @@ export function list(main: HTMLElement, plural: Plural) {
         return html`${head}${row(e)}`;
       })}
       ${similar.length ? html`<li class="cards-heading cards-heading-similar">Similar names</li>${similar.map((e) => card(plural, e.item))}` : ''}
-      ${!hits.length && !similar.length ? html`<li class="muted">Nothing found for “${query}”.</li>` : ''}`);
-    const total = all.length;
+      ${!hits.length && !similar.length ? html`<li class="muted">${query ? `Nothing found for “${query}”.` : 'No entries yet.'}</li>` : ''}`);
+    const total = pool.length;
     count.textContent = query
       ? `${hits.length} of ${total} match${similar.length ? `, ${similar.length} similar ${similar.length === 1 ? 'name' : 'names'}` : ''}`
       : `${total} ${total === 1 ? 'entry' : 'entries'}`;
@@ -147,6 +173,7 @@ export function list(main: HTMLElement, plural: Plural) {
     .then((res) => {
       if (!current()) return;
       all = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
+      if (plural === 'glossary') drawCategories();
       const options = sortOptions(plural, all);
       sort = savedSort(plural, options);
       render(sortSelect, html`${options.map((o) => html`<option value="${o.id}" ${o.id === sort ? html`selected` : ''}>${o.label}</option>`)}`);

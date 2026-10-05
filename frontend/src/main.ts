@@ -10,7 +10,7 @@ import { graph } from './views/graph';
 import { list } from './views/list';
 import { privacy } from './views/privacy';
 
-const NAV: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places'];
+const NAV: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places', 'glossary'];
 
 const main = document.getElementById('app')!;
 const nav = document.getElementById('nav')!;
