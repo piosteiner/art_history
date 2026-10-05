@@ -1,4 +1,4 @@
-// GET /v1/<plural>          list + search + time filter   (artists, artworks, places, movements, institutions, patrons, polities)
+// GET /v1/<plural>          list + search + time filter   (artists, artworks, places, movements, institutions, people, polities)
 // GET /v1/<plural>/:slug    full record + all relationships in both directions + type-specific extras
 //
 // Public keys are slugs; internal ids never leave the API.
@@ -48,6 +48,15 @@ function shapeNames(row, col) {
     ruby_html: names.rubyHtml(n.text), reading: names.hasRuby(n.text) ? names.reading(n.text) : null }));
   return row;
 }
+
+// A person's roles, from their relationships (a patron is someone who commissioned or supported, not a type):
+// patron · owner (of an artwork) · depicted (in an artwork). Sorted text[]; ?role=patron filters with @>.
+const ROLES = `ARRAY(SELECT DISTINCT x.role FROM relationships r JOIN relationship_types rt ON rt.code = r.relationship_type,
+    LATERAL (VALUES (CASE WHEN (r.subject_type, r.subject_id) = ('person', t.id) AND rt.category = 'patronage' THEN 'patron'
+                          WHEN (r.object_type, r.object_id) = ('person', t.id) AND r.relationship_type = 'owned_by' THEN 'owner'
+                          WHEN (r.object_type, r.object_id) = ('person', t.id) AND r.relationship_type = 'depicts_person' THEN 'depicted' END)) x(role)
+  WHERE x.role IS NOT NULL AND ((r.subject_type, r.subject_id) = ('person', t.id) OR (r.object_type, r.object_id) = ('person', t.id))
+  ORDER BY 1)`;
 
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
 // extra list filters (?key=value → SQL with $ placeholder), Markdown columns, default order.
@@ -117,12 +126,14 @@ const ENTITIES = {
     filters: { kind: 't.kind = $', ...countryFilters('institution') },
     order: 'name_sort_key(t.name, t.name_ruby, t.names)',
   },
-  patrons: {
-    type: 'patron', table: 'patrons', alt: 'alt_names', name: 'name', period: 't.active',
-    list: `t.kind, range_json(t.active, t.active_label) AS active, ${birthPlace('patron')}, ${countryCols('patron')}`,
-    detail: `t.kind, range_json(t.active, t.active_label) AS active, t.notes_md, ${birthPlace('patron')}, ${countryCols('patron')}`,
-    md: ['notes_md'],
-    filters: { kind: 't.kind = $', ...countryFilters('patron') },
+  people: {
+    type: 'person', table: 'people', alt: 'alt_names', name: 'name', period: 'coalesce(t.lifespan, t.active)',
+    list: `t.kind, t.occupations, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
+           range_json(t.active, t.active_label) AS active, ${ROLES} AS roles, ${birthPlace('person')}, ${countryCols('person')}`,
+    detail: `t.kind, t.occupations, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
+             range_json(t.active, t.active_label) AS active, ${ROLES} AS roles, t.description_md, ${birthPlace('person')}, ${countryCols('person')}`,
+    md: ['description_md'],
+    filters: { kind: 't.kind = $', occupation: 't.occupations @> ARRAY[$]::text[]', role: `${ROLES} @> ARRAY[$]::text[]`, ...countryFilters('person') },
     order: 'name_sort_key(t.name, t.name_ruby, t.names)',
   },
   polities: {

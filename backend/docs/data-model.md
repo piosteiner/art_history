@@ -15,7 +15,7 @@ erDiagram
     relationships }o--|| ANY_ENTITY : "object (type, id)"
 ```
 
-`ANY_ENTITY` = artists · artworks · institutions · patrons · movements · places.
+`ANY_ENTITY` = artists · artworks · institutions · people (patrons before 024) · movements · places · polities.
 
 ## Entity tables
 One table per entity type, each with its own columns. Shared conventions:
@@ -40,7 +40,7 @@ Historical dates are rarely exact, so every date is a **half-open range** plus a
 | 500 BCE | `year_range(-500)` | `500 BCE` |
 | since 1808 (ongoing) | `[1808-01-01,)` — infinite upper bound | `since 1808` |
 
-Open ends are for periods only (relationships, `movements.period`, `patrons.active`), never for births, deaths,
+Open ends are for periods only (relationships, `movements.period`, `people.active`), never for births, deaths,
 creation or founding dates. An ongoing period overlaps every later window, which is what "still there" means.
 
 This makes timeline queries plain range operators, backed by GiST indexes:
@@ -70,7 +70,7 @@ Each type declares which entity types it may connect, its inverse label, and two
 - `is_symmetric` — `contemporary_of`, `collaborated_with` are stored once in canonical order (A↔B = B↔A).
 - Migration 007: `inspired_by_place` removed (overlapped with `influenced_by_culture_of`); `depicts` (artwork → place:
   the place is the subject) added; `owned_by`, `commissioned` and `patron_of` also accept institutions (church, guild,
-  museum) and places (a city or state as a public body). A historical polity is better a patron of kind `state`.
+  museum) and places (a city or state as a public body). A state is a polity (migration 019).
 - Every relationship is stored in one direction (subject → object). The admin form also offers the reverse types
   ("commissioned by" on an artwork's page) and swaps them into canonical order on save.
 
@@ -138,7 +138,7 @@ builds the list with `jsonb_agg(jsonb_build_object(…) ORDER BY position, id)`.
 - **Polities** (`polities`: states, empires, kingdoms, dynasties) are an entity type with a `period` (when they existed)
   and `country_codes text[]` (ISO codes of the modern countries on their territory; one `CHECK` validates the whole
   array through `array_to_string(…) ~ regex`; GIN index for `@>`). Links are ordinary dated relationships:
-  `nationality` (artist/patron), `created_in_polity` (artwork), `located_in_polity` (institution) — category
+  `nationality` (artist/person), `created_in_polity` (artwork), `located_in_polity` (institution) — category
   `polity`, not physical presence, so never drawn as travel. The quality check `outside_polity_period` reports links
   whose period cannot overlap the polity's (`NOT (r.period && p.period)`).
 - Adding the type needed two migrations: `ALTER TYPE … ADD VALUE` (018) can't be used in the transaction that adds it.
@@ -160,6 +160,16 @@ consonant with `regexp_replace`. `name_alt_text(ruby, names)` = everything besid
 (other names, readings, romaji long and short); the `<table>_alt_trgm` indexes are on exactly that expression, which
 the queries repeat so the planner can use them. `name_sort_key(name, ruby, names)`: the name when it has Latin
 letters, else its romanization, else the romaji of its reading.
+
+## People (migration 024)
+Patrons became `people`: everyone relevant who isn't an artist (poets, rulers, monks, sitters) and groups (`kind`:
+family, dynasty, religious order, guild). Rule: whoever made art is an artist. "Patron" is a role — the patronage
+relationships. `ALTER TYPE entity_type RENAME VALUE 'patron' TO 'person'` renamed the type everywhere at once (enum
+columns store the label's internal number); text copies were updated by hand (function bodies, the delete trigger's
+argument, `audit_log` JSON, quality acknowledgements). New: `birth`/`death` + generated `lifespan` (as artists),
+`occupations text[]` (GIN), `notes_md` → `description_md`; relationship `depicts_person` (artwork → person/artist,
+category `depiction`, in the graph); people may also be `influenced_by`, `collaborated_with`, `associated_with`, and
+teachers (`student_of`).
 
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a

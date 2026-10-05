@@ -51,6 +51,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Polities + derived countries (018/019: `polities`, `nationality`, `entity_country()`; API `country`/`polities`/`birth_place`) built 2026-10-03.
   Auto-created creators/institutions (021 `auto_created`, `src/admin/autocreate.js`), century dates, height-only dimensions (020) built 2026-10-04.
   Names in several languages (022: `<name>_lang`, `<name>_ruby` furigana `{漢字|かんじ}`, `names jsonb` with roles; `src/names.js`) built 2026-10-05.
+  People instead of patrons (024: enum value renamed, `people`, roles from relationships, `depicts_person`) built 2026-10-05.
   Ideas later: nightly auto-export commit. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Open: after the owner fixes The Great Wave's inventory number (no institution), add a migration

@@ -12,7 +12,7 @@ overwrites fields of entities it touches — **export first**, so the files matc
 
 ```
 content/<folder>/<slug>.yaml     one entity per file; the file name is its slug (lowercase-kebab-case)
-  places/  movements/  polities/  artists/  patrons/  institutions/  artworks/
+  places/  movements/  polities/  artists/  people/  institutions/  artworks/
 ```
 
 ```bash
@@ -51,7 +51,7 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 | movements | `name`*, `kind`* (period, movement, school, style), `parent` (movement slug), `period`, `description_md` |
 | polities | `name`*, `kind` (empire, kingdom, dynasty, republic, …), `parent` (polity slug, e.g. Western Han ⊂ Han dynasty), `period` (when it existed; `1922/` = still exists), `country_codes` (modern countries on its territory, ISO: `[RU, UA, BY]`), `names`, `description_md` |
 | artists | `name`*, `sort_name`, `names`, `birth`, `death`, `biography_md` |
-| patrons | `name`*, `kind` (person, family, …), `names`, `active`, `notes_md` |
+| people | `name`*, `kind` (person, family, dynasty, religious order, guild …), `occupations` (list: poet, monk, emperor …), `birth`, `death`, `active` (groups), `names`, `description_md` — everyone relevant who isn't an artist (whoever made art is an artist); "patron" is a role: `commissioned` / `patron_of` relationships. Older files in `patrons/` (with `notes_md`) still import |
 | institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `names`, `description_md` |
 | artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `institution` (current holder, slug), `inventory_number`, `names`, `description_md` |
 
@@ -98,7 +98,7 @@ Listed in the file of the **subject** — the entity the sentence starts with ("
 ```yaml
 relationships:
   - type: lived_in              # a code from the vocabulary — GET /v1/vocabulary
-    to: place/arles             # <type>/<slug>: artist, artwork, institution, patron, movement, place
+    to: place/arles             # <type>/<slug>: artist, artwork, institution, person, movement, place, polity
     period: 1888-02-20/1889-05-08
     label: the Yellow House     # short qualifier shown next to the link
     certainty: attested         # attested (default) · probable · possible · disputed

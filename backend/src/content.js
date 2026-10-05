@@ -26,8 +26,11 @@ const TYPES = [
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
     name: 'name', sort_name: 'text', names: 'names', birth: 'date', death: 'date',
     biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },
-  { type: 'patron', folder: 'patrons', table: 'patrons', name: 'name', fields: {
-    name: 'name', names: 'names', kind: 'text', active: 'period', notes_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+  // people: everyone relevant who isn't an artist (poets, rulers, monks, sitters …) and groups (families, orders);
+  // "patron" is a role from the relationships commissioned / patron of (migration 024)
+  { type: 'person', folder: 'people', table: 'people', name: 'name', fields: {
+    name: 'name', names: 'names', kind: 'text', occupations: 'text[]', birth: 'date', death: 'date', active: 'period',
+    description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', founded: 'date', place: 'ref:place',
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },

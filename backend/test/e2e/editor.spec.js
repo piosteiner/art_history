@@ -5,7 +5,7 @@ const { test, expect, liveReady } = require('./helpers');
 const PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=', 'base64');
 
 test('Markdown: shortcuts, live styling, and a preview rendered like the website', async ({ userA }) => {
-  await userA.goto('/patrons/theo-van-gogh/edit');
+  await userA.goto('/people/theo-van-gogh/edit');
   await liveReady(userA);
   const cm = userA.locator('.md-editor .cm-content').first();
   await cm.click();
@@ -17,7 +17,7 @@ test('Markdown: shortcuts, live styling, and a preview rendered like the website
   await userA.keyboard.type(' <script>x</script>');
   const boldSpan = userA.locator('.cm-line span', { hasText: /^bold$/ });
   await expect(boldSpan).toHaveCSS('font-weight', '700');
-  await expect(userA.locator('#f-notes_md')).toHaveValue(/Test: \*\*bold\*\* <script>x<\/script>$/);
+  await expect(userA.locator('#f-description_md')).toHaveValue(/Test: \*\*bold\*\* <script>x<\/script>$/);
   await userA.click('.md-toolbar button:has-text("Preview")');
   await expect(userA.locator('.md-preview strong')).toHaveText('bold');
   await expect(userA.locator('.md-preview')).toContainText('<script>x</script>');  // escaped, shown as text

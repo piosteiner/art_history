@@ -648,6 +648,9 @@ function notFoundPage(req, res) {
   send(req, res, { title: 'Not found', status: 404, body: html`<h1>Not found</h1><p><a href="/">Dashboard</a></p>` });
 }
 
+// Patrons became people (migration 024): old admin links keep working.
+router.get(/^\/patrons(\/.*)?$/, (req, res) => res.redirect(301, req.originalUrl.replace(/^\/patrons/, '/people')));
+
 router.param('plural', (req, res, next, plural) => {
   req.t = BY_FOLDER[plural];
   if (!req.t) return notFoundPage(req, res);

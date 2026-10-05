@@ -9,7 +9,7 @@ DELETE FROM relationships;
 DELETE FROM artworks;
 DELETE FROM institutions;
 DELETE FROM artists;
-DELETE FROM patrons;
+DELETE FROM people;
 UPDATE polities SET parent_id = NULL;
 DELETE FROM polities;
 UPDATE movements SET parent_id = NULL;

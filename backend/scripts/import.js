@@ -28,10 +28,12 @@ const fail = (file, msg) => errors.push(`${file}: ${msg}`);
 function loadFiles() {
   const entities = [];
   for (const t of TYPES) {
-    const dir = path.join(CONTENT_DIR, t.folder);
+    // patrons/ before migration 024 = people/ (their notes_md is now description_md)
+    for (const folder of t.type === 'person' ? ['people', 'patrons'] : [t.folder]) {
+    const dir = path.join(CONTENT_DIR, folder);
     if (!fs.existsSync(dir)) continue;
     for (const name of fs.readdirSync(dir).filter((f) => f.endsWith('.yaml')).sort()) {
-      const file = `${t.folder}/${name}`;
+      const file = `${folder}/${name}`;
       const slug = name.slice(0, -'.yaml'.length);
       let doc;
       try {
@@ -42,7 +44,9 @@ function loadFiles() {
         continue;
       }
       if (!doc || typeof doc !== 'object' || Array.isArray(doc)) { fail(file, 'must be a mapping'); continue; }
+      if (folder === 'patrons' && doc.notes_md !== undefined && doc.description_md === undefined) { doc.description_md = doc.notes_md; delete doc.notes_md; }
       entities.push({ ...t, file, slug, doc });
+    }
     }
   }
   return entities;

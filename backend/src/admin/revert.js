@@ -26,7 +26,7 @@ const crypto = require('crypto');
 const { merge3 } = require('./textdiff');
 const { IMAGE_FK: BY_IMAGE_FK, BY_TYPE, BY_FOLDER } = require('../content');
 
-const TABLES = ['places', 'movements', 'polities', 'artists', 'patrons', 'institutions', 'artworks', 'relationships', 'images'];
+const TABLES = ['places', 'movements', 'polities', 'artists', 'people', 'institutions', 'artworks', 'relationships', 'images'];
 // table → type and back (polities ↔ polity: not always + 's')
 const typeOf = (table) => BY_FOLDER[table].type;
 const tableOf = (type) => BY_TYPE[type].table;

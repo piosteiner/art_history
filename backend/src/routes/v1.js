@@ -49,6 +49,14 @@ router.get('/search', async (req, res) => {
   res.json({ data: rows });
 });
 
+// Patrons became people (migration 024): old URLs keep working — /v1/patrons…, /v1/map/patrons/…, /v1/graph/patrons/…
+router.use((req, res, next) => {
+  const m = /^(\/(?:map\/|graph\/)?)patrons(\/.*)?$/.exec(req.path);
+  if (!m) return next();
+  const query = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
+  return res.redirect(301, `${req.baseUrl}${m[1]}people${m[2] || ''}${query}`);
+});
+
 router.use('/map', map);
 router.use('/graph', graph);
 router.use(entities);

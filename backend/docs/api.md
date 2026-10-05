@@ -18,7 +18,8 @@ window inside its century.
 
 ## Entities
 Types (URL segment → `type`): `artists` → artist, `artworks` → artwork, `places` → place, `movements` → movement,
-`institutions` → institution, `patrons` → patron, `polities` → polity.
+`institutions` → institution, `people` → person, `polities` → polity. (`/v1/patrons…` — before migration 024 — answers
+with a 301 to `/v1/people…`, also under `/map/` and `/graph/`.)
 
 ### `GET /v1/<type>` — list
 | Param | |
@@ -40,6 +41,14 @@ without images. The detail adds `images`, all of them in order (the first = `ima
 `[{url, source_url, license, credit, caption}]` — e.g. caption "Back view" for a sculpture. Show license and credit
 wherever an image is shown.
 
+### People
+Everyone relevant who isn't an artist, and groups: `kind` (person, family, dynasty, religious order …),
+`occupations` (list), `birth`, `death`, `active` (groups), `description_html`, `birth_place`, `country`, `polities`,
+and **`roles`** — derived from relationships: `patron` (commissioned / patron of), `owner` (of an artwork),
+`depicted` (in an artwork). Filters: `?role=patron`, `?occupation=poet`, `?kind=`, `?country=`; `from`/`to` use the
+lifespan (else the active period). Depictions: relationship `depicts_person` (artwork → person or artist, label
+"depicts" / "depicted in", category `depiction`, part of the graph).
+
 ### Names in several languages (every type)
 - `<name>` (`name`, artworks: `title`) — plain text, as before. `<name>_lang` — its language (BCP 47: `ja`, `en`, `zh-Hant`) or `null`.
 - `<name>_ruby_html` — the name with furigana as `<ruby>神奈川<rp>(</rp><rt>かながわ</rt><rp>)</rp></ruby>…` (escaped, safe
@@ -57,9 +66,9 @@ Set `lang` on elements showing a name (`<h1 lang="ja">`) so the right font and p
 `/v1/search` also match other names and readings ("kanagawa oki", "Under the Wave", "かながわ"), and kana readings typed
 in Latin letters (Hepburn, long vowels either way: "utagawa", "toukyou" or "tokyo").
 
-### Countries and polities (artists, artworks, institutions, patrons)
+### Countries and polities (artists, artworks, institutions, people)
 Two different things, both in lists and details:
-- `country` — the country **today**, derived from the entry's place: an artist's / patron's birthplace, where an
+- `country` — the country **today**, derived from the entry's place: an artist's / person's birthplace, where an
   artwork was created, where an institution is. A place without its own ISO code inherits the nearest parent's
   (Zundert → Netherlands). Without a place, it comes from the linked polities if they all lie in one modern country
   (a Han dynasty bronze → China).
@@ -68,7 +77,7 @@ Two different things, both in lists and details:
 - `polities` — the dated links to polities (states, empires, dynasties), in time order:
   `[{slug, name, kind, relationship: "nationality"|"created_in_polity"|"located_in_polity", period, polity_period, country_codes}]`.
   Nationality is entered by hand (an art-historical attribution) — not derived from the birthplace.
-- Artists and patrons also have `birth_place: {slug, name, country_code}` (or `null`).
+- Artists and people also have `birth_place: {slug, name, country_code}` (or `null`).
 
 Show both together as e.g. **"Soviet Union (today Ukraine)"**: the polity's `name` + `country.name`. Don't derive "today"
 from a polity's `country_codes` when there are several (the USSR covers 15 countries) — `country` already did the right thing.
@@ -97,7 +106,7 @@ subject_types, object_types, description`. `category` is meant for map/graph lay
 - `GET /v1/map/<type>/:slug` — one entity's places. Point features with `properties.layer`:
   `presence` (was physically there) or `association` (e.g. influenced by the culture of Japan — **not** travel),
   plus one `LineString` with `layer: "route"`: the dated presence stops in chronological order.
-- `GET /v1/map/presence?from=1888&to=1889[&types=artist,patron,artwork]` — who/what was physically where during
+- `GET /v1/map/presence?from=1888&to=1889[&types=artist,person,artwork]` — who/what was physically where during
   the window (for a timeline slider); `institution` may be added to `types` (earlier locations via `located_in`). Undated links are left out.
 - `GET /v1/map/places[?from=&to=]` — every place with `presence_count` and `association_count` (in the window).
 

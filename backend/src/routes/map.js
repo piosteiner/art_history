@@ -37,9 +37,10 @@ router.get('/places', async (req, res) => {
 router.get('/presence', async (req, res) => {
   const window = yearWindowRange(req.query);
   if (!window) throw badRequest('from and/or to is required');
-  const types = listParam(req.query, 'types') || ['artist', 'patron', 'artwork'];
-  if (!types.every((t) => ['artist', 'patron', 'artwork', 'institution'].includes(t))) {
-    throw badRequest('types: artist, patron, artwork, institution');
+  // "patron" is the old name of "person" (migration 024), still accepted
+  const types = (listParam(req.query, 'types') || ['artist', 'person', 'artwork']).map((t) => (t === 'patron' ? 'person' : t));
+  if (!types.every((t) => ['artist', 'person', 'artwork', 'institution'].includes(t))) {
+    throw badRequest('types: artist, person, artwork, institution');
   }
   // Undated edges are left out: we can't say they overlap the window.
   const { rows } = await apiPool.query(`

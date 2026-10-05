@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Patrons become People (migration 024)
+- **What:** `ALTER TYPE entity_type RENAME VALUE 'patron' TO 'person'`, table `patrons` → `people` (constraints,
+  indexes, triggers renamed; delete trigger re-created with 'person'); `notes_md` → `description_md`; new `birth`,
+  `death`, generated `lifespan`, `occupations text[]`; functions naming the type re-created; `entity_index` period =
+  lifespan else active; `audit_log` (table name, relationship JSON, notes_md key) and `quality_acks` keys updated.
+  Vocabulary: `depicts_person` (artwork → person/artist, category depiction); people allowed in influenced_by,
+  collaborated_with, associated_with, as teachers in student_of. API `/v1/people` with `roles` (patron/owner/depicted),
+  filters role/occupation; `/v1/patrons…` 301 → `/v1/people…`; `types=patron` still accepted. Admin "People",
+  `/patrons…` redirects. Wikidata: birth/death, occupations (P106), P180 humans → depicts_person, artists vs people by
+  occupation. YAML `people/` (old `patrons/` still imports). E2E fixtures moved.
+- **Why:** owner: people depicted (Hagiwara Sakutarō in Onchi Kōshirō's portrait), rulers, monks; patron as a role.
+- **Tested:** smoke test; e2e 57 passing; legacy `patrons/` import dry run.
+- **Revert:** restore the backup taken right before the deploy (renames + data updates; a hand revert would need the
+  inverse of every step).
+
 ### API: `search_text` on every entry
 - **What:** lists and details carry `search_text` = `name_alt_text()` (other names, readings, romaji of kana).
 - **Why:** the frontend filters loaded lists itself; this way "utagawa" finds うたがわ there too, without a second

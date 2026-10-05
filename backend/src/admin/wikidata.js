@@ -171,10 +171,17 @@ function fieldsFor(t, e) {
   const ref = (key, type, prop) => { const id = itemIds(e, prop)[0]; if (id && key in t.fields) f[key] = { kind: 'ref', ref: { type, qid: id } }; };
   const text = (key, value) => { if (value && key in t.fields) f[key] = { kind: 'text', value }; };
   if (t.type === 'artist') { date('birth', 'P569'); date('death', 'P570'); }
-  if (t.type === 'patron') {
-    const start = firstTime(e, 'P2031', 'P569'); const end = firstTime(e, 'P2032', 'P570');
-    if (start || end) f.active = { kind: 'date', value: `${start ? start.value.split('/')[0] : ''}${end ? `/${end.value.split('/').pop()}` : ''}`.replace(/^\//, ''), label: null };
-    text('kind', itemIds(e, 'P31').includes(HUMAN) ? 'person' : null);
+  if (t.type === 'person') {
+    if (itemIds(e, 'P31').includes(HUMAN)) {
+      date('birth', 'P569'); date('death', 'P570');
+      text('kind', 'person');
+    } else {  // a family, an order, a guild: when it was active
+      const start = firstTime(e, 'P571', 'P2031'); const end = firstTime(e, 'P576', 'P2032');
+      if (start) f.active = { kind: 'date', value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: null };
+    }
+    // occupations (P106): the items' names, offered one by one like materials
+    const occ = itemIds(e, 'P106');
+    if (occ.length) f.occupations = { kind: 'materials', qids: occ };
   }
   if (t.type === 'place') {
     const c = coords(e); if (c) f.location = { kind: 'point', value: c };
@@ -220,8 +227,9 @@ const REL_PROPS = {
   artist: [['P19', 'born_in'], ['P20', 'died_in'], ['P551', 'lived_in'], ['P937', 'worked_in'], ['P1066', 'student_of'],
     ['P802', '~student_of'], ['P135', 'associated_with'], ['P463', 'member_of'], ['P69', 'studied_at'], ['P737', 'influenced_by'],
     ['P27', 'nationality']],  // country of citizenship, often dated (Russian Empire until 1917 …)
-  patron: [['P19', 'born_in'], ['P20', 'died_in'], ['P551', 'lived_in'], ['P27', 'nationality']],
-  artwork: [['P1071', 'created_in'], ['P180', 'depicts'], ['P135', 'associated_with'], ['P88', '~commissioned'], ['P127', 'owned_by'],
+  person: [['P19', 'born_in'], ['P20', 'died_in'], ['P551', 'lived_in'], ['P27', 'nationality'], ['P737', 'influenced_by']],
+  // P180 "depicts" → a place (depicts) or a human (depicts_person); targetType() keeps each to its kind of target
+  artwork: [['P1071', 'created_in'], ['P180', 'depicts'], ['P180', 'depicts_person'], ['P135', 'associated_with'], ['P88', '~commissioned'], ['P127', 'owned_by'],
     ['P495', 'created_in_polity']],  // country of origin
   movement: [['P495', 'active_in']],
   polity: [],
@@ -277,9 +285,18 @@ async function localByQid(db, qids) {
 }
 
 // Which of our types a missing target would become.
+// Humans only become artists or people, and nothing else becomes one of those. A human is an artist when an
+// occupation says so (painter, printmaker …) — the rule: whoever made art is an artist, everyone else a person.
+const ARTIST_OCCUPATIONS = ['Q1028181', 'Q483501', 'Q1281618', 'Q11569986', 'Q33231', 'Q329439', 'Q1925963', 'Q3391743', 'Q15296811', 'Q10862983'];
 function targetType(allowed, e) {
+  const human = itemIds(e, 'P31').includes(HUMAN);
+  if (human) {
+    const artist = itemIds(e, 'P106').some((o) => ARTIST_OCCUPATIONS.includes(o));
+    if (allowed.includes('artist') && (artist || !allowed.includes('person'))) return 'artist';
+    return allowed.includes('person') ? 'person' : null;
+  }
+  allowed = allowed.filter((a) => a !== 'artist' && a !== 'person');
   if (allowed.length === 1) return allowed[0];
-  if (itemIds(e, 'P31').includes(HUMAN)) return allowed.includes('artist') ? 'artist' : allowed.includes('patron') ? 'patron' : null;
   if (isInstitutionLike(e) && allowed.includes('institution')) return 'institution';
   if (isMovementLike(e) && allowed.includes('movement')) return 'movement';
   if (coords(e) && allowed.includes('place')) return 'place';
@@ -299,7 +316,12 @@ function newEntryDoc(type, e) {
     if (s) doc.period = `${s.value.split('/')[0]}/${x ? x.value.split('/').pop() : ''}`;
     const iso = firstString(e, 'P297'); if (iso && /^[A-Z]{2}$/.test(iso)) doc.country_codes = [iso];
   }
-  if (type === 'patron' && itemIds(e, 'P31').includes(HUMAN)) doc.kind = 'person';
+  if (type === 'person') {
+    if (itemIds(e, 'P31').includes(HUMAN)) {
+      doc.kind = 'person';
+      const b = firstTime(e, 'P569'); const d = firstTime(e, 'P570'); if (b) doc.birth = b.value; if (d) doc.death = d.value;
+    }
+  }
   return doc[t.name] ? doc : null;
 }
 const describeDoc = (type, doc) => [type, doc.birth && `born ${doc.birth}`, doc.death && `died ${doc.death}`,
@@ -346,7 +368,7 @@ async function compare(db, t, qid, ours, entity) {
       if (items.length) rows.push({ key, kind: 'list', ours: have, items, preselect: !have.length });
       continue;
     }
-    if (w.kind === 'materials') {  // names of the material items (light request), offered like alternative names
+    if (w.kind === 'materials') {  // names of items (materials, occupations — light request), offered like alternative names
       const names = Object.values(await getEntities(w.qids, { light: true })).map(labelOf).filter(Boolean);
       const have = oursVal.split('\n').map((s) => s.trim()).filter(Boolean);
       const lower = new Set(have.map((s) => s.toLowerCase()));
