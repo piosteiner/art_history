@@ -195,6 +195,7 @@ function fieldsFor(t, e) {
     if (start) f.period = { kind: 'date', value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: null };  // no end = still exists
     text('country_codes', firstString(e, 'P297'));
   }
+  if (t.type === 'term') text('definition', e.descriptions && e.descriptions.en && e.descriptions.en.value);
   if (t.type === 'institution') { date('founded', 'P571'); ref('place', 'place', 'P131'); text('website_url', firstString(e, 'P856')); }
   if (t.type === 'movement') {
     const start = firstTime(e, 'P580', 'P571'); const end = firstTime(e, 'P582', 'P576');
@@ -233,6 +234,7 @@ const REL_PROPS = {
     ['P495', 'created_in_polity']],  // country of origin
   movement: [['P495', 'active_in']],
   polity: [],
+  term: [],
   institution: [],
   place: [],
 };

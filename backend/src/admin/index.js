@@ -15,7 +15,7 @@ const autocreate = require('./autocreate');
 const names = require('../names');
 const dimensionsLib = require('../dimensions');
 const { parseFuzzyDate } = require('../fuzzy-date');
-const { renderMarkdown } = require('../markdown');
+const { renderMarkdown, glossaryNames } = require('../markdown');
 const { html, raw, layout } = require('./html');
 const { login, logout, loadUser, checkOrigin } = require('./auth');
 const { search, resultsPage, lookup } = require('./search');
@@ -223,9 +223,9 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
     LEFT JOIN admin_users u ON u.id = a.user_id
     LEFT JOIN relationship_types rt ON a.table_name = 'relationships' AND rt.code = r->>'relationship_type'
     -- an image row belongs to whichever of its three foreign keys is set (migration 017)
-    LEFT JOIN LATERAL (SELECT CASE WHEN r->>'artwork_id' IS NOT NULL THEN 'artwork'
-                                   WHEN r->>'artist_id' IS NOT NULL THEN 'artist' ELSE 'institution' END AS type,
-                              coalesce(r->>'artwork_id', r->>'artist_id', r->>'institution_id') AS id) ix ON a.table_name = 'images'
+    LEFT JOIN LATERAL (SELECT CASE WHEN r->>'artwork_id' IS NOT NULL THEN 'artwork' WHEN r->>'artist_id' IS NOT NULL THEN 'artist'
+                                   WHEN r->>'glossary_id' IS NOT NULL THEN 'term' ELSE 'institution' END AS type,
+                              coalesce(r->>'artwork_id', r->>'artist_id', r->>'institution_id', r->>'glossary_id') AS id) ix ON a.table_name = 'images'
     LEFT JOIN entity_index ie ON a.table_name = 'images' AND ie.type = ix.type::entity_type AND ie.id = ix.id::bigint
     LEFT JOIN entity_index s ON a.table_name = 'relationships' AND s.type = (r->>'subject_type')::entity_type AND s.id = (r->>'subject_id')::bigint
     LEFT JOIN entity_index o ON a.table_name = 'relationships' AND o.type = (r->>'object_type')::entity_type AND o.id = (r->>'object_id')::bigint
@@ -367,8 +367,8 @@ router.post('/restore/:id', (req, res, next) => (/^\d+$/.test(req.params.id) ? r
 // Dashboard + global history
 // ---------------------------------------------------------------------------------------------------------------
 // Markdown preview for the editor (src/admin/editor): exactly what the public API will serve for this text.
-router.post('/preview', (req, res) => {
-  res.type('html').send(renderMarkdown(String(req.body.text || '').slice(0, 100000)) || '');
+router.post('/preview', async (req, res) => {
+  res.type('html').send(renderMarkdown(String(req.body.text || '').slice(0, 100000), { terms: await glossaryNames(adminPool) }) || '');
 });
 
 // Place search for the map picker (src/admin/editor/map.js), proxied to OpenStreetMap's Nominatim so the browser
@@ -916,9 +916,10 @@ router.post('/:plural', async (req, res) => {
 });
 
 // Display of one field's value on the view page.
-function showValue(t, key, kind, doc) {
+// glossary: slug → name, for [[links]] in Markdown (loaded by the page)
+function showValue(t, key, kind, doc, glossary = new Map()) {
   const v = doc[key];
-  if (kind === 'md') return v ? html`<div class="md">${raw(renderMarkdown(v))}</div>` : null;
+  if (kind === 'md') return v ? html`<div class="md">${raw(renderMarkdown(v, { terms: glossary }))}</div>` : null;
   if (kind === 'date' || kind === 'period') {
     if (v === undefined) return doc[`${key}_label`] || null;
     const generated = parseFuzzyDate(v, { openEnd: kind === 'period' }).label;
@@ -961,6 +962,11 @@ router.get('/:plural/:slug', async (req, res) => {
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
+  const glossaryMap = await glossaryNames(adminPool);
+  // a glossary term: the entries whose texts link it
+  const usedIn = t.type === 'term' ? (await adminPool.query(`
+    SELECT e.type::text AS type, e.slug, e.name FROM glossary_links l JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
+    WHERE l.term_slug = $1 AND NOT (e.type = 'term' AND e.id = $2) ORDER BY e.sort_key`, [e.slug, e.id])).rows : null;
   const main = imgs[0];
   send(req, res, {
     title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
@@ -987,9 +993,11 @@ router.get('/:plural/:slug', async (req, res) => {
         ${names.hasRuby(e.doc[t.name]) ? raw(names.rubyHtml(e.doc[t.name])) : name}
         ${e.doc[`${t.name}_lang`] ? html` <span class="tag" lang="en">${e.doc[`${t.name}_lang`]}</span>` : ''}</p>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
-        const shown = showValue(t, key, kind, e.doc);
+        const shown = showValue(t, key, kind, e.doc, glossaryMap);
         return shown === null ? '' : html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown}</dd>`;
       })}</dl>
+      ${usedIn ? html`<h2 id="used-in">Used in</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`
+        : html`<p class="muted">No text links it yet — write <code>[[${e.slug}]]</code> in a description.</p>`}` : ''}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${outgoing.length ? html`<div class="table-wrap"><table><tbody>${outgoing.map(({ id, to_name: toName, rel }) => {
@@ -1185,8 +1193,8 @@ router.get('/:plural/:slug/history', async (req, res) => {
   const page = pageParam(req);
   const h = await history(adminPool, `(a.table_name = $1 AND a.row_id = $2) OR (a.table_name = 'relationships' AND (
       ((r->>'subject_type') = $3 AND (r->>'subject_id')::bigint = $2) OR ((r->>'object_type') = $3 AND (r->>'object_id')::bigint = $2)))
-      OR (a.table_name = 'images' AND (r->>($3 || '_id'))::bigint = $2)`,
-  [t.table, e.id, t.type], { offset: (page - 1) * PAGE });
+      OR (a.table_name = 'images' AND (r->>$4)::bigint = $2)`,
+  [t.table, e.id, t.type, t.imageFk || '-'], { offset: (page - 1) * PAGE });
   send(req, res, {
     title: `History of ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' },
     body: html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p><h1>History</h1>

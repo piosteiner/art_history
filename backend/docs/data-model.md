@@ -174,6 +174,14 @@ argument, `audit_log` JSON, quality acknowledgements). New: `birth`/`death` + ge
 category `depiction`, in the graph); people may also be `influenced_by`, `collaborated_with`, `associated_with`, and
 teachers (`student_of`).
 
+## Glossary (migrations 026, 027)
+Table `glossary` (entity type `term`; `entity_table('term')` = glossary): name fields as everywhere, `category`
+(enum `term_category` — a fixed list, extended with `ALTER TYPE … ADD VALUE`), `definition` (≤ 500 characters),
+`description_md`; images (a fourth arm `glossary_id` of the exclusive arc); `related_term` (symmetric). Texts link
+terms with `[[slug]]` / `[[slug|words]]` (a markdown-it inline rule in `src/markdown.js`). The view `glossary_links`
+finds every link with `regexp_matches(…, 'g')` over all Markdown columns (relationship notes count for their subject):
+"used in" and the quality check `broken_glossary_link` read it — computed when asked, so always current.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the

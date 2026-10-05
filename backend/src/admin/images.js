@@ -36,8 +36,9 @@ async function byId(db, id) {
   const { rows } = await db.query(`
     SELECT i.*, e.type::text AS type, e.slug, e.name FROM images i
     JOIN entity_index e ON (e.type, e.id) = (CASE WHEN i.artwork_id IS NOT NULL THEN 'artwork'
-                                                  WHEN i.artist_id IS NOT NULL THEN 'artist' ELSE 'institution' END::entity_type,
-                                             coalesce(i.artwork_id, i.artist_id, i.institution_id))
+                                                  WHEN i.artist_id IS NOT NULL THEN 'artist'
+         WHEN i.glossary_id IS NOT NULL THEN 'term' ELSE 'institution' END::entity_type,
+                                             coalesce(i.artwork_id, i.artist_id, i.institution_id, i.glossary_id))
     WHERE i.id = $1`, [id]);
   if (!rows.length) return null;
   return { ...rows[0], entityUrl: `/${BY_TYPE[rows[0].type].folder}/${rows[0].slug}` };

@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Glossary with [[links]] from texts (migrations 026, 027)
+- **What:** entity type `term`, table `glossary` (name fields, category enum, short definition, description, images,
+  `related_term`); view `glossary_links`; quality check `broken_glossary_link`; quality view re-created (with 024's
+  names). `src/markdown.js` renders `[[slug]]` / `[[slug|words]]` as `a.glossary-link[data-term]` → `/glossary/<slug>`.
+  Admin "Glossary" (category select, definition, "used in"), `[[` completion in the Markdown editor
+  (`@codemirror/autocomplete`, dev dependency). API `/v1/glossary`, `used_in`, and `glossary` (linked terms with
+  definitions) in every detail. YAML `glossary/`.
+- **Why:** owner: own glossary for techniques, architectural elements … instead of external links; browsable online.
+- **Tested:** unit 24 (link rendering); smoke test; e2e 65 passing.
+- **Revert:** redeploy the previous commit; as owner drop `glossary_links`, re-create 022's quality view, remove the
+  `glossary_id` arm from images (after deleting such rows), `DROP TABLE glossary; DROP TYPE term_category`.
+
 ### Further measurements per artwork: mount, frame, sheet … (migration 025)
 - **What:** `artworks.other_dimensions jsonb` `[{part, cm: [h, w, d]}]` with `CHECK other_dimensions_valid()`;
   `src/dimensions.js`; admin "Further measurements" rows (part with suggestions + h × w × d, paste and unit conversion

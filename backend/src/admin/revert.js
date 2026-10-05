@@ -26,13 +26,13 @@ const crypto = require('crypto');
 const { merge3 } = require('./textdiff');
 const { IMAGE_FK: BY_IMAGE_FK, BY_TYPE, BY_FOLDER } = require('../content');
 
-const TABLES = ['places', 'movements', 'polities', 'artists', 'people', 'institutions', 'artworks', 'relationships', 'images'];
+const TABLES = ['places', 'movements', 'polities', 'artists', 'people', 'institutions', 'glossary', 'artworks', 'relationships', 'images'];
 // table → type and back (polities ↔ polity: not always + 's')
 const typeOf = (table) => BY_FOLDER[table].type;
 const tableOf = (type) => BY_TYPE[type].table;
 const DEPENDENT = new Set(['relationships', 'images']);
 // An image row belongs to the entity in whichever of its three foreign keys is set (migration 017).
-const imageOwner = (row) => ['artwork', 'artist', 'institution'].map((type) => ({ type, id: row[`${type}_id`] })).find((o) => o.id != null);
+const imageOwner = (row) => Object.entries(BY_IMAGE_FK).map(([type, fk]) => ({ type, id: row[fk], fk })).find((o) => o.id != null);
 const IGNORED = new Set(['id', 'created_at', 'updated_at', 'lifespan']);  // never compared or reverted
 // Foreign keys of entity tables (column → referenced table); relationships are checked by their own trigger.
 const FKS = { parent_id: null /* same table */, place_id: 'places', creator_id: 'artists', current_institution_id: 'institutions' };
@@ -121,7 +121,7 @@ async function planRestore(db, item, row, choices) {
     if (!(await db.query(`SELECT 1 FROM ${t} WHERE id = $1`, [owner.id])).rows.length && !item.plannedIds.has(`${t}:${owner.id}`)) {
       item.blocked = `its ${owner.type} (#${owner.id}) no longer exists and is not restored here`;
     }
-    if ((await db.query(`SELECT 1 FROM images WHERE ${owner.type}_id = $1 AND url = $2 AND id <> $3`, [owner.id, json.url, json.id])).rows.length) {
+    if ((await db.query(`SELECT 1 FROM images WHERE ${owner.fk} = $1 AND url = $2 AND id <> $3`, [owner.id, json.url, json.id])).rows.length) {
       item.blocked = 'the same image is there again';
     }
   } else if (table !== 'relationships') {
@@ -178,7 +178,7 @@ async function planDelete(db, item, now, after, changeSetKeys) {
       item.needs.confirm = `${item.needs.confirm ? `${item.needs.confirm} ` : ''}${extra.length} relationship${extra.length === 1 ? '' : 's'} added since will be deleted with it.`;
     }
     if (BY_IMAGE_FK[type]) {
-      const imgs = (await db.query(`SELECT id FROM images WHERE ${type}_id = $1`, [item.rowId])).rows.filter((r) => !changeSetKeys.has(`images:${r.id}`));
+      const imgs = (await db.query(`SELECT id FROM images WHERE ${BY_IMAGE_FK[type]} = $1`, [item.rowId])).rows.filter((r) => !changeSetKeys.has(`images:${r.id}`));
       if (imgs.length) {
         item.needs.confirm = `${item.needs.confirm ? `${item.needs.confirm} ` : ''}${imgs.length} image${imgs.length === 1 ? '' : 's'} added since will be removed with it.`;
       }

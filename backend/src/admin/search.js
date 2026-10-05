@@ -125,7 +125,7 @@ function highlight(text, q) {
 function resultsPage(q, { entities, relationships }) {
   const byType = {};
   for (const e of entities) (byType[e.type] ||= []).push(e);
-  const order = ['artist', 'artwork', 'place', 'movement', 'institution', 'person', 'polity'].filter((t) => byType[t]);
+  const order = ['artist', 'artwork', 'place', 'movement', 'institution', 'person', 'polity', 'term'].filter((t) => byType[t]);
   const total = entities.length + relationships.length;
   return html`<h1>Search</h1>
     <form class="bar" method="get" action="/search">

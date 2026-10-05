@@ -51,6 +51,16 @@ and **`roles`** — derived from relationships: `patron` (commissioned / patron 
 lifespan (else the active period). Depictions: relationship `depicts_person` (artwork → person or artist, label
 "depicts" / "depicted in", category `depiction`, part of the graph).
 
+### Glossary (`/v1/glossary`, type `term`)
+`name` (+ the name fields below), `category` (technique · architecture · material · iconography · style · format ·
+other; filter `?category=`), `definition` (short, plain text), `description_html`, `images`/`image_url`, related
+terms as relationships (`related_term`), and in the detail `used_in: [{type, slug, name}]` — the entries whose texts
+link the term. Lists sort A–Z by `sort_key`.
+
+**Links in texts:** every `*_html` may contain `<a href="/glossary/<slug>" class="glossary-link" data-term="<slug>">`
+(class `glossary-link missing` when the term doesn't exist yet). Every detail response has `glossary`: the terms its
+texts link, `{<slug>: {name, category, definition}}` — enough for a tooltip without another request.
+
 ### Names in several languages (every type)
 - `<name>` (`name`, artworks: `title`) — plain text, as before. `<name>_lang` — its language (BCP 47: `ja`, `en`, `zh-Hant`) or `null`.
 - `<name>_ruby_html` — the name with furigana as `<ruby>神奈川<rp>(</rp><rt>かながわ</rt><rp>)</rp></ruby>…` (escaped, safe

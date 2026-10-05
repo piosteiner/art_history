@@ -12,6 +12,7 @@ import { syntaxHighlighting, HighlightStyle, LanguageSupport } from '@codemirror
 // Just the Markdown (GFM) grammar — markdown() would also bundle HTML/CSS/JS highlighting for code blocks (~150 KB).
 import { markdownLanguage } from '@codemirror/lang-markdown';
 import { tags as t } from '@lezer/highlight';
+import { autocompletion } from '@codemirror/autocomplete';
 import { initAutocomplete } from './autocomplete';
 import { initLive } from './live';
 import { yCollab, yUndoManagerKeymap } from 'y-codemirror.next';
@@ -130,6 +131,28 @@ async function renderPreview(text) {
   return res.text();  // sanitized HTML from the server
 }
 
+// Glossary links: typing "[[" followed by a few letters lists matching terms (the same typo-tolerant /lookup as the
+// pickers); picking one writes [[slug]]. filter: false — the server already ranked them, and the typed text
+// ("[[contra") wouldn't match the labels ("Contrapposto") by CodeMirror's own filter.
+async function glossaryCompletions(context) {
+  const m = context.matchBefore(/\[\[[^\[\]|\n]*$/);
+  if (!m) return null;
+  const q = m.text.slice(2).trim();
+  if (!q) return { from: m.from, options: [], filter: false };
+  let hits = [];
+  try {
+    const res = await fetch(`/lookup?types=term&q=${encodeURIComponent(q)}`, { headers: { Accept: 'application/json' } });
+    if (res.ok) hits = await res.json();
+  } catch { return null; }
+  const after = context.state.sliceDoc(context.pos, context.pos + 2);  // "]]" already typed after the cursor?
+  return {
+    from: m.from,
+    to: after === ']]' ? context.pos + 2 : context.pos,
+    filter: false,
+    options: hits.map((h) => ({ label: h.name, detail: h.slug, type: 'text', apply: `[[${h.slug}]]` })),
+  };
+}
+
 // collab: { ytext, awareness, undoManager } — edit a shared working copy's text (live step 2): the Y.Text is the source,
 // other editors' cursors/selections are drawn, and undo only undoes your own changes.
 function enhance(textarea, collab = null) {
@@ -155,6 +178,7 @@ function enhance(textarea, collab = null) {
         new LanguageSupport(markdownLanguage),
         syntaxHighlighting(liveStyle),
         EditorView.lineWrapping,
+        autocompletion({ override: [glossaryCompletions], icons: false }),
         theme,
         placeholder(textarea.placeholder || 'Write here — Markdown styling appears as you type.'),
         EditorView.contentAttributes.of({ 'aria-label': textarea.getAttribute('aria-label') || textarea.id || 'Markdown', spellcheck: 'true' }),

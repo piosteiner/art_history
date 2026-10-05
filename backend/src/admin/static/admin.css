@@ -248,3 +248,10 @@ button.chip.suggested { border-color: var(--accent); color: var(--accent); }
 .dimset-row { padding: .55rem .6rem; border: 1px solid var(--line); border-radius: 6px; display: grid; gap: .4rem; }
 .dimset-row .d-part { width: 16rem; }
 .dimset-row .name-meta { margin-top: 0; justify-content: space-between; }
+
+/* glossary: links in previews and pages, the [[ completion list (CodeMirror autocomplete) */
+.md a.glossary-link { text-decoration: underline dotted; text-underline-offset: 3px; }
+.md a.glossary-link.missing { color: var(--err); }
+.cm-tooltip-autocomplete { background: var(--panel); border: 1px solid var(--line); color: var(--fg); }
+.cm-tooltip-autocomplete ul li[aria-selected] { background: var(--accent); color: var(--accent-fg); }
+.cm-completionDetail { margin-left: .6rem; opacity: .7; font-style: normal; }

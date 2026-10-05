@@ -14,6 +14,7 @@ const CHECKS = {
   held_before_founded: { title: 'Held before the institution was founded', fix: 'Check the period of "housed at" and the founding date.' },
   outside_parent_area: { title: 'Place outside its parent region', fix: 'Check the coordinates, the parent, or the parent\'s outline.' },
   possible_duplicate: { title: 'Possible duplicates', fix: 'If it is the same thing: move the relationships to one entry and delete the other.' },
+  broken_glossary_link: { title: 'Link to a missing glossary term', fix: 'Create the term in the Glossary (with this slug) — or correct the [[link]] in the text.' },
   artwork_without_creator: { title: 'Artwork without creator', fix: 'Add the creator — or an attribution such as "Workshop of …" / "Anonymous".' },
   image_without_license: { title: 'Image without license or credit', fix: 'Add license and credit (e.g. via Wikidata/Commons) before the image is shown publicly.' },
   no_relationships: { title: 'Not connected to anything', fix: 'Add relationships — unconnected entries don\'t appear on the map or in the graph.' },

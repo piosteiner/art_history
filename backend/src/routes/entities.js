@@ -1,10 +1,10 @@
-// GET /v1/<plural>          list + search + time filter   (artists, artworks, places, movements, institutions, people, polities)
+// GET /v1/<plural>          list + search + time filter   (artists, artworks, places, movements, institutions, people, polities, glossary)
 // GET /v1/<plural>/:slug    full record + all relationships in both directions + type-specific extras
 //
 // Public keys are slugs; internal ids never leave the API.
 const express = require('express');
 const { apiPool } = require('../db');
-const { renderMarkdown } = require('../markdown');
+const { renderMarkdown, glossaryNames } = require('../markdown');
 const names = require('../names');
 const { badRequest, notFound, intParam, yearWindowRange } = require('../http');
 
@@ -142,6 +142,14 @@ const ENTITIES = {
     filters: { kind: 't.kind = $', occupation: 't.occupations @> ARRAY[$]::text[]', role: `${ROLES} @> ARRAY[$]::text[]`, ...countryFilters('person') },
     order: 'name_sort_key(t.name, t.name_ruby, t.names)',
   },
+  glossary: {
+    type: 'term', table: 'glossary', alt: 'alt_names', name: 'name', period: null,
+    list: `t.category, t.definition, ${mainImage('glossary_id')}`,
+    detail: `t.category, t.definition, t.description_md, ${allImages('glossary_id')}`,
+    md: ['description_md'],
+    filters: { category: 't.category::text = $' },
+    order: 'lower(f_unaccent(name_sort_key(t.name, t.name_ruby, t.names)))',
+  },
   polities: {
     type: 'polity', table: 'polities', alt: 'alt_names', name: 'name', period: 't.period',
     list: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes',
@@ -215,6 +223,13 @@ const EXTRAS = {
       SELECT slug, name, kind, range_json(period, period_label) AS period
       FROM polities WHERE parent_id = $1 ORDER BY lower(period) NULLS LAST, name`, [id])).rows,
   }),
+  // a glossary term: where texts link it ("used in"), from the view glossary_links
+  term: async (id) => ({
+    used_in: (await apiPool.query(`
+      SELECT e.type::text AS type, e.slug, e.name FROM glossary_links l
+      JOIN glossary g ON g.slug = l.term_slug JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
+      WHERE g.id = $1 AND NOT (e.type = 'term' AND e.id = $1) ORDER BY e.sort_key`, [id])).rows,
+  }),
   movement: async (id) => ({
     ancestors: (await apiPool.query(ancestorsSql('movements'), [id])).rows,
     children: (await apiPool.query(`
@@ -223,9 +238,10 @@ const EXTRAS = {
   }),
 };
 
-function renderMd(row, fields) {
+// env: { terms (glossary names for [[slug]]), used (collects the linked slugs) } — see src/markdown.js
+function renderMd(row, fields, env = {}) {
   for (const f of fields) {
-    row[f.replace(/_md$/, '_html')] = renderMarkdown(row[f]);
+    row[f.replace(/_md$/, '_html')] = renderMarkdown(row[f], env);
     delete row[f];
   }
   return row;
@@ -284,11 +300,17 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     if (!rows.length) throw notFound(`no ${e.type} "${req.params.slug}"`);
     const { id, ...entity } = rows[0];
 
+    const env = { terms: await glossaryNames(apiPool), used: new Set() };
     const [relationships, extras] = await Promise.all([
-      apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => r.rows.map((x) => renderMd(x, ['notes_md']))),
+      apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => r.rows.map((x) => renderMd(x, ['notes_md'], env))),
       EXTRAS[e.type] ? EXTRAS[e.type](id) : {},
     ]);
-    res.json({ type: e.type, ...nameCountry(shapeNames(renderMd(entity, e.md), e.name)), ...extras, relationships });
+    const body = nameCountry(shapeNames(renderMd(entity, e.md, env), e.name));
+    // the glossary terms its texts link, with their short definitions — for tooltips without further requests
+    const glossary = env.used.size ? Object.fromEntries((await apiPool.query(
+      'SELECT slug, name, category::text AS category, definition FROM glossary WHERE slug = ANY ($1) ORDER BY name', [[...env.used]])).rows
+      .map(({ slug, ...rest }) => [slug, rest])) : {};
+    res.json({ type: e.type, ...body, ...extras, relationships, glossary });
   });
 }
 

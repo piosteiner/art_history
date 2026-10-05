@@ -13,7 +13,8 @@ const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'It
 const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1853-03-30</code> · <code>1886-03/1888-02-20</code> (from/to, inclusive)
   · <code>c. 1755</code> (±5 years) · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
 const HINTS = {
-  md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.`,
+  md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.
+    Glossary: <code>[[contrapposto]]</code> or <code>[[contrapposto|the pose]]</code> — type <code>[[</code> to pick a term.`,
   'text[]': 'One per line.',
   names: html`One per line: <code>name | language | role</code> — role: original, translation, romanization or alternative
     (the default). E.g. <code>Kanagawa-oki nami ura | ja-Latn | romanization</code> · <code>The Great Wave off Kanagawa | en | translation</code>.
@@ -33,7 +34,8 @@ const HINTS = {
 // Field names and explanations per entry type, where one word means different things ("kind" of an artwork vs. of a
 // place) or two fields are easily confused (an artwork's object type, medium and materials).
 const LABELS = {
-  'artwork.kind': 'Object type', 'artwork.other_dimensions': 'Further measurements', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
+  'artwork.kind': 'Object type', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
+  'term.definition': 'Short definition', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
   'polity.kind': 'Kind of polity', 'person.kind': 'Kind (person or group)', 'movement.kind': 'Kind',
 };
 const TYPE_HINTS = {
@@ -45,6 +47,9 @@ const TYPE_HINTS = {
   'institution.kind': 'museum · academy · temple · church · gallery · library … — pick a term from the list',
   'person.kind': 'person — or a group: family · dynasty · religious order · guild',
   'polity.kind': 'empire · kingdom · dynasty · republic · shogunate …',
+  'term.category': 'technique · architecture · material · iconography · style · format · other — what the glossary is browsed by',
+  'term.definition': 'One or two sentences (max. 500 characters): shown as a tooltip wherever a text links the term, and in the A–Z list. Plain text.',
+  'term.description_md': html`The full explanation (Markdown). Link other terms with <code>[[slug]]</code> or <code>[[slug|own words]]</code>.`,
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
@@ -149,7 +154,7 @@ function fieldInput(key, kind, f, ctx) {
   }
   if (kind === 'md') {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
-      <textarea class="md" id="${id}" name="${name}">${f[key]}</textarea>${hint(HINTS.md)}</div>`;
+      <textarea class="md" id="${id}" name="${name}">${f[key]}</textarea>${hint(typeHint || HINTS.md)}</div>`;
   }
   if (kind === 'area') {
     // Drawn on the map (see the point field); the raw GeoJSON stays editable for pasting or fine-tuning.
@@ -198,6 +203,10 @@ function fieldInput(key, kind, f, ctx) {
   if (ctx.enums[key]) {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
       <select id="${id}" name="${name}">${ctx.enums[key].map((v) => html`<option${v === f[key] ? ' selected' : ''}>${v}</option>`)}</select>${hint(typeHint)}</div>`;
+  }
+  if (key === 'definition') {
+    return html`<div class="field${err}"><label for="${id}">${label}</label>
+      <textarea id="${id}" name="${name}" rows="2" maxlength="500">${f[key]}</textarea>${hint(typeHint)}</div>`;
   }
   const list = ctx.suggestions[key];
   return html`<div class="field${err}"><label for="${id}">${label}</label>

@@ -36,6 +36,9 @@ const TYPES = [
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', founded: 'date', place: 'ref:place',
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
+  // the glossary (migration 027): terms that texts link with [[slug]]; category is a fixed list (enum term_category)
+  { type: 'term', folder: 'glossary', table: 'glossary', name: 'name', fields: {
+    name: 'name', names: 'names', category: 'text', definition: 'text', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     title: 'name', names: 'names', creator: 'ref:artist', attribution_label: 'text', created: 'date',
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
@@ -44,7 +47,7 @@ const TYPES = [
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
 // Types with images (table images, migration 017): the foreign-key column that points at them.
-const IMAGE_FK = { artwork: 'artwork_id', artist: 'artist_id', institution: 'institution_id' };
+const IMAGE_FK = { artwork: 'artwork_id', artist: 'artist_id', institution: 'institution_id', term: 'glossary_id' };
 for (const t of TYPES) t.imageFk = IMAGE_FK[t.type] || null;
 const BY_TYPE = Object.fromEntries(TYPES.map((t) => [t.type, t]));
 const BY_FOLDER = Object.fromEntries(TYPES.map((t) => [t.folder, t]));
