@@ -59,7 +59,9 @@ detail shows "Country of birth / of origin". Sorts by country and nationality ap
 
 ## Explore page
 Nothing chosen individually → every place, sized by what the *selection* did there, plus a route per selected artist,
-patron and artwork through its dated presence stops (one `/v1/map/presence` request over all time, coloured by type;
+patron and artwork through its dated presence stops (one `/v1/map/presence` request over all time; one colour per route
+from a 12-colour palette in a stable order, named in the legend (hover/click highlights), same colour on the timeline
+and in popups;
 hover = highlight + name, click = stops). Clicking a place lists what happened there (who, what, when, note). Entries chosen → their routes, one colour each (same colour on
 the timeline; at most 24 drawn). Time window → presence in the window, limited to the selection, plus the routes through
 the stops inside the window. A remembered view (time window, picks) says so above the map, with "Start fresh".

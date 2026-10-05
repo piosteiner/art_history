@@ -239,3 +239,18 @@ test('a remembered time window: routes still drawn, the page says so, "Start fre
   await expect(page.locator('#restored')).toBeHidden();
   await expect(page.locator('#map-status')).toContainText('Click a place to see what happened there');
 });
+
+test('each displayed route has its own colour, named in the legend', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('#legend .route-key', { hasText: 'Vincent van Gogh' })).toBeVisible();
+  await page.waitForFunction(() => {
+    const m = (window as unknown as { __maps?: { querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
+    return !!m && m.querySourceFeatures('ov-routes').length > 1;
+  });
+  const colours = await page.evaluate(() => {
+    const m = (window as unknown as { __maps: { querySourceFeatures(id: string): { properties: { key: string; color: string } }[] }[] }).__maps.at(-1)!;
+    return Object.fromEntries(m.querySourceFeatures('ov-routes').map((f) => [f.properties.key, f.properties.color]));
+  });
+  const values = Object.values(colours);
+  expect(new Set(values).size).toBe(values.length); // no two routes share a colour (up to 12)
+});

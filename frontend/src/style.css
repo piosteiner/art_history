@@ -423,3 +423,10 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .card-original { font-size: .85rem; color: var(--muted); }
 .restored { font-size: .88rem; margin: 0 0 .6rem; padding: .35rem .7rem; background: var(--picked-bg); border-radius: var(--radius); display: inline-block; }
 .restored[hidden] { display: none; }
+
+/* route legend: one name per route, hover/focus highlights it, click keeps it highlighted */
+.route-key { cursor: pointer; border-radius: 999px; padding: .05rem .45rem .05rem .2rem; color: var(--text); }
+.route-key:hover, .route-key:focus-visible, .route-key.on { background: var(--picked-bg); outline: none; }
+.route-key.on { font-weight: 600; }
+.route-key .line { width: 18px; height: 4px; }
+.legend-key .dot, .legend-key .ring { vertical-align: middle; }

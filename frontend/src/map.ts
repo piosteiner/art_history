@@ -235,9 +235,12 @@ const byDate = (a: PresenceRow, b: PresenceRow) =>
   (a.period?.from_year ?? 1e9) - (b.period?.from_year ?? 1e9) || (a.period?.from ?? '').localeCompare(b.period?.from ?? '');
 
 /** What happened at a place, in date order: "Vincent van Gogh · lived in · 1888–1889 · the Yellow House". */
-function placeRows(rows: PresenceRow[]) {
+/** The colour of each displayed route ("artist/vincent-van-gogh" → colour), for popup dots. */
+const routeColorsOf = new WeakMap<MapLibre, Map<string, string>>();
+
+function placeRows(rows: PresenceRow[], colors?: Map<string, string>) {
   return html`<ul class="popup-list popup-events">${[...rows].sort(byDate).map((r) => html`<li>
-    <i class="dot" style="background:${TYPE_COLORS[r.entity.type] ?? COLORS.presence}"></i>
+    <i class="dot" style="background:${colors?.get(rowKey(r)) ?? TYPE_COLORS[r.entity.type] ?? COLORS.presence}"></i>
     <a href="${href(r.entity.type, r.entity.slug)}">${r.entity.name}</a>
     <span class="muted">${r.label}${r.period ? ` · ${r.period.label}` : ''}</span>
     ${r.note ? html`<div class="popup-note">${r.note}</div>` : ''}
@@ -249,7 +252,7 @@ function placeRows(rows: PresenceRow[]) {
  * presence stops (the same stops as its own map, from /v1/map/presence). Click a place: what happened there.
  * Hover a route: it is highlighted and named; click it: its stops in date order.
  */
-export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined) {
+export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined): RouteInfo[] {
   const atPlace = new Map<string, PresenceRow[]>();
   for (const r of presence) atPlace.set(r.place.slug, [...(atPlace.get(r.place.slug) ?? []), r]);
   const fc: GeoJSON.FeatureCollection = {
@@ -260,6 +263,7 @@ export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceR
     }),
   };
   const routes = buildRoutes(presence, coords);
+  const info = routeInfo(map, routes);
 
   whenReady(map, () => {
     clearOverlays(map);
@@ -288,6 +292,7 @@ export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceR
     once(map, 'places', () => bindOverview(map));
     once(map, 'routes', () => bindRoutes(map));
   });
+  return info;
 }
 
 function bindOverview(map: MapLibre) {
@@ -301,7 +306,7 @@ function bindOverview(map: MapLibre) {
       const events = prop<PresenceRow[]>(p.rows);
       const assoc = Number(p.association_count);
       return html`<div class="popup-row"><strong><a href="${href('place', p.slug)}">${p.name}</a></strong>${p.kind ? html` <span class="muted">${p.kind}</span>` : ''}
-        ${events.length ? placeRows(events) : html`<div class="muted">Nobody and nothing in the current selection was here (with a date).</div>`}
+        ${events.length ? placeRows(events, routeColorsOf.get(map)) : html`<div class="muted">Nobody and nothing in the current selection was here (with a date).</div>`}
         ${encountersHere(map, p.slug)}
         ${assoc ? html`<div class="popup-note"><a href="${href('place', p.slug)}">${assoc} ${assoc === 1 ? 'association' : 'associations'}</a> (influence, depictions …), not travel</div>` : ''}</div>`;
     })}`;
@@ -313,12 +318,22 @@ function bindOverview(map: MapLibre) {
 /** Layers whose features win over a route passing underneath (their popup opens, the route stays quiet). */
 const ROUTE_BLOCKERS = [...PLACE_LAYERS, 'presence-circles'];
 
-/** One line per entry through its dated stops in date order (repeated stays at the same place merged). */
+/** A displayed route, for the legend and the timeline colours. */
+export interface RouteInfo { key: string; name: string; type: EntityType; slug: string; color: string }
+
+const TYPE_ORDER: Partial<Record<EntityType, number>> = { artist: 0, person: 1, artwork: 2 };
+
+/**
+ * One line per entry through its dated stops in date order (repeated stays at the same place merged). Each route gets
+ * its own colour, in a stable order (artists, people, artworks; by name), so the same selection always looks the same.
+ */
 function buildRoutes(presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined): GeoJSON.Feature[] {
   const perEntity = new Map<string, PresenceRow[]>();
   for (const r of presence) perEntity.set(rowKey(r), [...(perEntity.get(rowKey(r)) ?? []), r]);
   const routes: GeoJSON.Feature[] = [];
-  for (const [key, rows] of perEntity) {
+  const ordered = [...perEntity].sort(([, a], [, b]) =>
+    (TYPE_ORDER[a[0].entity.type] ?? 9) - (TYPE_ORDER[b[0].entity.type] ?? 9) || a[0].entity.name.localeCompare(b[0].entity.name));
+  for (const [key, rows] of ordered) {
     const stops = rows.filter((r) => r.period?.from_year != null).sort(byDate)
       .filter((r, i, all) => i === 0 || r.place.slug !== all[i - 1].place.slug);
     const line = stops.map((r) => coords(r.place.slug)).filter((c): c is [number, number] => !!c);
@@ -327,12 +342,23 @@ function buildRoutes(presence: PresenceRow[], coords: (slug: string) => [number,
     routes.push({
       type: 'Feature', geometry: { type: 'LineString', coordinates: line },
       properties: {
-        key, name: e.name, type: e.type, slug: e.slug, color: TYPE_COLORS[e.type] ?? COLORS.route,
+        key, name: e.name, type: e.type, slug: e.slug, color: PALETTE[routes.length % PALETTE.length],
         stops: JSON.stringify(stops.map((st) => ({ place: st.place.name, slug: st.place.slug, label: st.label, period: st.period?.label ?? '' }))),
       },
     });
   }
   return routes;
+}
+
+function routeInfo(map: MapLibre, routes: GeoJSON.Feature[]): RouteInfo[] {
+  const info = routes.map((r) => r.properties as RouteInfo);
+  routeColorsOf.set(map, new Map(info.map((i) => [i.key, i.color])));
+  return info;
+}
+
+/** Highlights one route (or several, or none) — for the legend under the map. */
+export function highlightRoute(map: MapLibre, keys: string[]) {
+  if (map.getLayer('ov-route-hover')) map.setFilter('ov-route-hover', ['in', ['get', 'key'], ['literal', keys]]);
 }
 
 /** Route lines with arrows and a highlight layer; call after clearOverlays, before the place circles. */
@@ -341,7 +367,7 @@ function addRouteLayers(map: MapLibre, routes: GeoJSON.Feature[]) {
   map.addLayer({
     id: 'ov-routes', type: 'line', source: 'ov-routes',
     layout: { 'line-join': 'round', 'line-cap': 'round' },
-    paint: { 'line-color': ['get', 'color'], 'line-width': 2, 'line-opacity': 0.45 },
+    paint: { 'line-color': ['get', 'color'], 'line-width': 2.6, 'line-opacity': 0.8 }, // own colour per route: strong enough to follow
   });
   addArrows(map, 'ov-arrows', 'ov-routes', ['get', 'color']);
   map.addLayer({
@@ -385,9 +411,10 @@ function bindRoutes(map: MapLibre) {
  * Groups presence features by place: one circle per place, sized by how many people/works were there; plus each
  * entry's route through its stops inside the window.
  */
-export function showPresence(map: MapLibre, fc: PresenceMap) {
+export function showPresence(map: MapLibre, fc: PresenceMap): RouteInfo[] {
   const at = new Map(fc.features.map((x) => [x.properties.place.slug, x.geometry.coordinates] as const));
   const routes = buildRoutes(fc.features.map((x) => x.properties), (slug) => at.get(slug));
+  const info = routeInfo(map, routes);
   const byPlace = new Map<string, { coords: [number, number]; name: string; slug: string; rows: PresenceMap['features'] }>();
   for (const f of fc.features) {
     const key = f.properties.place.slug;
@@ -420,13 +447,14 @@ export function showPresence(map: MapLibre, fc: PresenceMap) {
     once(map, 'presence', () => bindPresencePopups(map));
     once(map, 'routes', () => bindRoutes(map));
   });
+  return info;
 }
 
 function bindPresencePopups(map: MapLibre) {
   popupOnClick(map, ['presence-circles'], (features) => html`${(features ?? []).slice(0, 1).map((f) => {
     const rows = JSON.parse(f.properties.rows as string) as PresenceMap['features'][number]['properties'][];
     return html`<div class="popup-row"><strong><a href="${href('place', f.properties.slug)}">${f.properties.name}</a></strong>
-      ${placeRows(rows)}${encountersHere(map, f.properties.slug)}</div>`;
+      ${placeRows(rows, routeColorsOf.get(map))}${encountersHere(map, f.properties.slug)}</div>`;
   })}`);
 }
 
@@ -531,4 +559,7 @@ export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
 }
 
 /** Distinguishable colours for chosen entities (map routes and their timeline bars). */
-export const PALETTE = ['#b4462b', '#2f6f73', '#c08a1e', '#3d6fb6', '#8a4f9e', '#5e8c3a', '#c2577f', '#6b5b45'];
+export const PALETTE = [
+  '#e15759', '#4e79a7', '#f28e2b', '#59a14f', '#b07aa1', '#d4a514',
+  '#2f9e9a', '#ff7fa0', '#9c755f', '#3b4fa0', '#c2256c', '#7fb800',
+];

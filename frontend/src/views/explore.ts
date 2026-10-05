@@ -8,7 +8,7 @@ import { entries } from '../catalog';
 import { href, html, render } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
-import { COLORS, createMap, focusEncounter, PALETTE, showEncounters, showPlaces, showPresence, showSelection, TYPE_COLORS, type ColoredEntityMap } from '../map';
+import { COLORS, createMap, focusEncounter, highlightRoute, PALETTE, showEncounters, showPlaces, showPresence, showSelection, type ColoredEntityMap, type RouteInfo } from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
 import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
@@ -128,10 +128,50 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       reset() {
         index = new Map(chosen(sel).map((c, i) => [`${c.type}/${c.slug}`, PALETTE[i % PALETTE.length]]));
       },
-      get: (type: EntityType, slug: string) => index.get(`${type}/${slug}`),
+      get: (type: EntityType, slug: string) => index.get(`${type}/${slug}`) ?? routeColors.get(`${type}/${slug}`),
     };
   })();
   colorOf.reset();
+
+  // ---- routes on the start map / in a time window: one colour each, named in the legend ----
+  let routeColors = new Map<string, string>();
+  const LEGEND_FIRST = 12;
+  let legendAll = false;
+  let lastRoutes: RouteInfo[] = [];
+  /** Keeps the colours and redraws the timeline when they changed (its bars use the same colours). */
+  function useRoutes(info: RouteInfo[]) {
+    lastRoutes = info;
+    const next = new Map(info.map((i) => [i.key, i.color]));
+    const changed = next.size !== routeColors.size || [...next].some(([k, c]) => routeColors.get(k) !== c);
+    routeColors = next;
+    if (changed) drawTimeline();
+  }
+  const routeLegend = () => {
+    const shown = legendAll ? lastRoutes : lastRoutes.slice(0, LEGEND_FIRST);
+    return html`${shown.map((r) => html`<span class="route-key" data-route="${r.key}" tabindex="0" title="Highlight ${r.name}'s route"><i class="line" style="background:${r.color}"></i>${r.name}</span>`)}
+      ${lastRoutes.length > LEGEND_FIRST ? html`<button type="button" class="link-button" data-legend-all>${legendAll ? 'fewer' : `+ ${lastRoutes.length - LEGEND_FIRST} more`}</button>` : ''}`;
+  };
+  // hover or focus a name: its route stands out; click: stays highlighted until clicked again
+  let pinned: string | null = null;
+  const routeKeyOf = (ev: Event) => (ev.target as Element).closest<HTMLElement>('[data-route]')?.dataset.route ?? null;
+  const showRoute = (key: string | null) => {
+    highlightRoute(map, key ? [key] : pinned ? [pinned] : []);
+    legend.querySelectorAll<HTMLElement>('[data-route]').forEach((el) => el.classList.toggle('on', el.dataset.route === (key ?? pinned)));
+  };
+  legend.addEventListener('mouseover', (ev) => { const k = routeKeyOf(ev); if (k) showRoute(k); });
+  legend.addEventListener('mouseout', (ev) => { if (routeKeyOf(ev)) showRoute(null); });
+  legend.addEventListener('focusin', (ev) => { const k = routeKeyOf(ev); if (k) showRoute(k); });
+  legend.addEventListener('click', (ev) => {
+    if ((ev.target as Element).closest('[data-legend-all]')) {
+      legendAll = !legendAll;
+      return redrawLegend();
+    }
+    const k = routeKeyOf(ev);
+    if (!k) return;
+    pinned = pinned === k ? null : k;
+    showRoute(null);
+  });
+  let redrawLegend = () => {};
 
   function persist() {
     const p = new URLSearchParams();
@@ -176,20 +216,14 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     if (stale()) return;
     const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, creatorOf)).map((f) => f.properties);
     const where = new Map(places.features.map((f) => [f.properties.slug, f.geometry.coordinates] as const));
-    showPlaces(map, places, rows, (slug) => where.get(slug));
+    useRoutes(showPlaces(map, places, rows, (slug) => where.get(slug)));
     crossings(rows, (slug) => where.get(slug));
-    // legend: only kinds that actually have a route (an entry with dated stops at two or more places)
-    const placesOf = new Map<string, Set<string>>();
-    for (const r of rows) {
-      if (r.period?.from_year == null) continue;
-      const key = `${r.entity.type}/${r.entity.slug}`;
-      placesOf.set(key, (placesOf.get(key) ?? new Set()).add(r.place.slug));
-    }
-    const kinds = types.filter((t) => [...placesOf].some(([k, p]) => k.startsWith(`${t}/`) && p.size > 1));
-    render(legend, html`${kinds.map((t) => html`<span><i class="line" style="background:${TYPE_COLORS[t]}"></i>${({ artist: 'artists’', person: 'people’s', artwork: 'artworks’' })[t]} routes, in date order</span>`)}
-      <span><i class="dot" style="background:${COLORS.place}"></i>someone or something of the selection was there</span>
-      <span><i class="dot" style="background:${COLORS.association}"></i>associations only (e.g. influence)</span>
-      <span><i class="ring" style="border-color:${COLORS.place}"></i>country or region</span>`);
+    pinned = null;
+    redrawLegend = () => render(legend, html`${routeLegend()}
+      <span class="legend-key"><i class="dot" style="background:${COLORS.place}"></i> someone or something of the selection was there ·
+        <i class="dot" style="background:${COLORS.association}"></i> associations only ·
+        <i class="ring" style="border-color:${COLORS.place}"></i> country or region · lines = routes in date order</span>`);
+    redrawLegend();
     const entries = new Set(rows.map((r) => `${r.entity.type}/${r.entity.slug}`)).size;
     status.textContent = rows.length
       ? `${entries} ${entries === 1 ? 'entry' : 'entries'} at ${new Set(rows.map((r) => r.place.slug)).size} places. Click a place to see what happened there; hover or click a route to follow it.`
@@ -197,6 +231,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   }
 
   async function routes(stale: () => boolean) {
+    useRoutes([]);
     const picks = chosen(sel);
     const shown = picks.slice(0, MAX_ROUTES);
     const maps = await Promise.all(shown.map((c) =>
@@ -228,10 +263,12 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   async function presence(w: NonNullable<Window>, stale: () => boolean) {
     const types = (['artist', 'person', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
     const span = w.from === w.to ? `${w.from}` : `${w.from}–${w.to}`;
-    render(legend, html`<span><i class="dot" style="background:${COLORS.presence}"></i>physically there in ${span}</span>
-      <span><i class="line" style="background:${TYPE_COLORS.artist}"></i>routes through the stops in ${span}, in date order</span>`);
+    pinned = null;
+    redrawLegend = () => render(legend, html`${routeLegend()}
+      <span class="legend-key"><i class="dot" style="background:${COLORS.presence}"></i> physically there in ${span} · lines = routes through the stops in ${span}, in date order</span>`);
     if (!types.length) {
-      showPresence(map, { type: 'FeatureCollection', features: [] });
+      useRoutes(showPresence(map, { type: 'FeatureCollection', features: [] }));
+      redrawLegend();
       status.textContent = 'Artists, people and artworks are all hidden, so there is nothing to place on the map.';
       return;
     }
@@ -239,7 +276,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     if (stale()) return;
     // the API filters by type; single picks are filtered here (backend wish: an `entities=` parameter)
     const features = fc.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, creatorOf));
-    showPresence(map, { ...fc, features });
+    useRoutes(showPresence(map, { ...fc, features }));
+    redrawLegend();
     const at = new Map(features.map((f) => [f.properties.place.slug, f.geometry.coordinates] as const));
     crossings(features.map((f) => f.properties), (slug) => at.get(slug));
     const who = new Set(features.map((f) => `${f.properties.entity.type}/${f.properties.entity.slug}`));
