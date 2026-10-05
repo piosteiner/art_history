@@ -9,9 +9,9 @@ relationships:
   - type: born_in
     to: place/paris
     period: 1848-06-07
-  - type: visited
-    to: place/pont-aven
-    period: 1886
+  - type: died_in
+    to: place/atuona
+    period: 1903-05-08
   - type: lived_in
     to: place/arles
     period: 1888-10-23/1888-12-25
@@ -25,8 +25,10 @@ relationships:
   - type: lived_in
     to: place/atuona
     period: 1901/1903-05-08
-  - type: died_in
-    to: place/atuona
-    period: 1903-05-08
+  - type: visited
+    to: place/pont-aven
+    period: 1886
+  - type: contemporary_of
+    to: artist/vincent-van-gogh
   - type: associated_with
     to: movement/post-impressionism
