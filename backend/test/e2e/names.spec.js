@@ -85,6 +85,9 @@ test('kana readings are found in Latin letters; lists sort by the title (romaniz
   expect((await api(request, '/places?q=hokkaido')).data.map((x) => x.slug)).toContain('test-hokkaido');
   expect((await api(request, '/search?q=hokkaidou')).data.map((x) => x.slug)).toContain('test-hokkaido');
   expect((await api(request, '/places/test-hokkaido')).sort_key).toBe('hokkaidou');  // no romanization: from the reading
+  // for filtering in the browser: the same search text the database uses
+  expect((await api(request, '/places/test-hokkaido')).search_text).toBe('ほっかいどう · hokkaidou hokkaido');
+  expect((await api(request, '/places?limit=500')).data.find((p) => p.slug === 'test-hokkaido').search_text).toContain('hokkaido');
 
   // An English title sorts by itself, even with a romanization among the other names.
   sql(`INSERT INTO artworks (slug, title, names) VALUES ('test-english-title', 'Zebra in the Snow',
