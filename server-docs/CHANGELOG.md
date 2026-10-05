@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### API: `search_text` on every entry
+- **What:** lists and details carry `search_text` = `name_alt_text()` (other names, readings, romaji of kana).
+- **Why:** the frontend filters loaded lists itself; this way "utagawa" finds うたがわ there too, without a second
+  Hepburn implementation in the browser.
+- **Revert:** redeploy the previous commit.
+
 ### Kana readings searchable in Latin letters; sorting by the title (migration 023)
 - **What:** SQL `kana_romaji()` (Hepburn), `romaji_short()`, `name_alt_text()` (search text: other names, readings,
   romaji long + short) with new `<table>_alt_trgm` indexes (replacing `<table>_names_trgm`), `name_sort_key(name, ruby,

@@ -50,6 +50,9 @@ wherever an image is shown.
   for a name in another script its romanization, else its furigana reading in Latin letters (歌川広重 → Utagawa
   Hiroshige / utagawahiroshige). List results are ordered by it (artists: `sort_name` first).
 - `alt_names` / `alt_titles` — all other names as plain strings (unchanged, for older clients).
+- `search_text` — everything the entry is found by besides its name: other names, furigana readings, kana readings in
+  Latin letters (Hepburn, long vowels both ways: "ほっかいどう · hokkaidou hokkaido"); `""` if none. For filtering
+  already loaded lists in the browser — append it to the text you match against; don't romanize client-side.
 Set `lang` on elements showing a name (`<h1 lang="ja">`) so the right font and pronunciation are used. `?q=` and
 `/v1/search` also match other names and readings ("kanagawa oki", "Under the Wave", "かながわ"), and kana readings typed
 in Latin letters (Hepburn, long vowels either way: "utagawa", "toukyou" or "tokyo").

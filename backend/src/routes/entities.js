@@ -32,7 +32,10 @@ const countryFilters = (type) => ({
 // Names in several languages (migration 022): language and furigana of the main name, the other names with their
 // roles, the sort key (romanization first) — in lists and details. alt_names / alt_titles stay as plain lists for
 // clients written before.
+// search_text: what the database searches besides the name (other names, readings, kana in Latin letters, long and
+// short — name_alt_text(), migration 023), for clients that filter loaded lists themselves.
 const nameCols = (col, alt) => `t.${col}_lang, t.${col}_ruby, t.names, name_sort_key(t.${col}, t.${col}_ruby, t.names) AS sort_key,
+  coalesce(name_alt_text(t.${col}_ruby, t.names), '') AS search_text,
   (SELECT coalesce(jsonb_agg(ruby_plain(n->>'text')), '[]'::jsonb) FROM jsonb_array_elements(t.names) n) AS ${alt}`;
 // raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, ruby_html, reading}]
 function shapeNames(row, col) {
