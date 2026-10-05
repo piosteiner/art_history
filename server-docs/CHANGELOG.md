@@ -2,6 +2,17 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-05
+
+### Admin: slug cleaned as you type, follows the title on new entries
+- **What:** `backend/src/admin/editor/slug.js` (in the editor bundle): typed slugs become lowercase, spaces → hyphens,
+  accents dropped (Dürer → durer), other characters removed; a trailing hyphen is dropped when leaving the field. On a
+  new entry the slug is generated from the name/title as you type until the slug is edited by hand (clearing it hands
+  it back). Existing entries: cleaned, never regenerated (slugs stay stable). The server's checks are unchanged.
+- **Why:** owner: no manual slug typing ("Pine Trees in the Snow" → pine-trees-in-the-snow).
+- **Tested:** e2e 50 passing (follow / manual / clear / existing entry; pattern check still refuses a script-set value).
+- **Revert:** redeploy the previous commit.
+
 ## 2026-10-04
 
 ### New creators/institutions from the artwork form, century dates, height-only dimensions (migrations 020, 021)

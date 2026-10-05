@@ -16,7 +16,7 @@ const HINTS = {
   period: html`${DATE_HINT} · <code>1808/</code> (since 1808, ongoing)`,
   label: 'Optional display text, e.g. "c. 1480". Empty = generated from the date.',
   point: 'Decimal degrees. Tip: right-click a spot in OpenStreetMap → "Show address" shows its coordinates.',
-  slug: 'Lowercase, digits and hyphens: used in URLs. Keep stable once published.',
+  slug: 'Lowercase, digits and hyphens: used in URLs (typed text is converted). Keep stable once published.',
 };
 
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
@@ -151,7 +151,8 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     <div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
-      <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? 'e.g. claude-monet' : ''}">
+      <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"
+        autocapitalize="none" spellcheck="false"${isNew ? html` data-slug-from="f-${t.name}"` : ''}>
       <div class="hint">${HINTS.slug}</div></div>
     ${Object.entries(t.fields).map(([key, kind]) => fieldInput(key, kind, f, ctx))}
     <div class="actions"><button>${isNew ? 'Create' : collab ? 'Publish' : 'Save'}</button>

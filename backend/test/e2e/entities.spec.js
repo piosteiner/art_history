@@ -1,9 +1,9 @@
 // Creating, editing, deleting entities; relationships (incl. reverse types); pickers.
 const { test, expect, sql, submitForm } = require('./helpers');
 
-test('the browser itself refuses an invalid slug; the server checks it too', async ({ userA }) => {
+test('the browser refuses an invalid slug (pattern) — typed ones are cleaned first; the server checks it too', async ({ userA }) => {
   await userA.goto('/artists/new');
-  await userA.fill('#f-slug', 'Bad Slug');
+  await userA.locator('#f-slug').evaluate((el) => { el.value = 'Bad Slug'; });  // set by a script: not cleaned
   await userA.click('form.form > .actions button');
   await expect(userA).toHaveURL(/\/artists\/new$/);  // not submitted (pattern attribute)
   expect(await userA.locator('#f-slug').evaluate((el) => el.validity.patternMismatch)).toBe(true);
@@ -229,4 +229,43 @@ test('typing a name: an exact name links the existing artist, a near miss asks f
   await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
   await expect(userA).toHaveURL(/done=created&auto=1/);
   sql("DELETE FROM artworks WHERE slug IN ('test-print', 'test-print-2'); DELETE FROM artists WHERE name = 'Katsushika Hokusa'");
+});
+
+// Types at the end of a field (Playwright puts the caret at the start when it focuses a filled input again).
+async function typeAtEnd(page, selector, text) {
+  await page.locator(selector).focus();
+  await page.keyboard.press('End');
+  await page.keyboard.type(text, { delay: 10 });
+}
+
+test('slug: typed text is cleaned as you type; a new entry\'s slug follows the title until edited', async ({ userA }) => {
+  await userA.goto('/artworks/new');
+  const slug = userA.locator('#f-slug');
+  await typeAtEnd(userA, '#f-title', 'Pine Trees in the Snow');
+  await expect(slug).toHaveValue('pine-trees-in-the-snow');
+  await typeAtEnd(userA, '#f-title', ' — Dürer!');
+  await expect(slug).toHaveValue('pine-trees-in-the-snow-durer');
+
+  await slug.fill('');
+  await slug.pressSequentially('My Own Slug', { delay: 10 });         // typed by hand: cleaned, and kept
+  await expect(slug).toHaveValue('my-own-slug');
+  await typeAtEnd(userA, '#f-title', ' again');
+  await expect(slug).toHaveValue('my-own-slug');
+  await slug.fill('');                                                // cleared: follows the title again
+  await typeAtEnd(userA, '#f-title', '!');
+  await expect(slug).toHaveValue('pine-trees-in-the-snow-durer-again');
+
+  await typeAtEnd(userA, '#f-slug', '-');                 // a trailing hyphen is dropped when leaving the field
+  await userA.locator('#f-kind').focus();
+  await expect(slug).toHaveValue('pine-trees-in-the-snow-durer-again');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/artworks\/pine-trees-in-the-snow-durer-again\?done=created/);
+
+  await userA.goto('/artworks/pine-trees-in-the-snow-durer-again/edit');  // existing entry: slug no longer follows
+  await typeAtEnd(userA, '#f-title', ' x');
+  await expect(slug).toHaveValue('pine-trees-in-the-snow-durer-again');
+  await typeAtEnd(userA, '#f-slug', ' Two');               // …but is still cleaned
+  await expect(slug).toHaveValue('pine-trees-in-the-snow-durer-again-two');
+  sql("DELETE FROM artworks WHERE slug = 'pine-trees-in-the-snow-durer-again'");
+  sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
 });
