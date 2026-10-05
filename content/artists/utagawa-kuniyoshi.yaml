@@ -1,4 +1,8 @@
 name: Utagawa Kuniyoshi
+names:
+  - lang: ja
+    role: original
+    text: "{歌川|うたがわ}{国芳|くによし}"
 birth: 1798-01-01
 death: 1861-04-14
 wikidata_id: Q317736

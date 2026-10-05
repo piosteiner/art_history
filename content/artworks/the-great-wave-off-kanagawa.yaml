@@ -1,5 +1,12 @@
+title_lang: en
 title: The Great Wave off Kanagawa
-names: [Kanagawa oki nami ura, 神奈川沖浪裏]
+names:
+  - lang: ja
+    role: original
+    text: "{神奈川|かながわ}{沖浪裏|おきなみうら}"
+  - lang: ja
+    role: romanization
+    text: kanagawa oki nami ura
 creator: katsushika-hokusai
 created: 1830/1832
 created_label: c. 1831
