@@ -46,11 +46,13 @@ wherever an image is shown.
   to insert), `null` without; `<name>_reading` — the full reading (`かながわおきなみうら`).
 - `names` — other names in order: `[{text, lang, role, ruby_html, reading}]`, role = `original` | `translation` |
   `romanization` | `alternative`. A romanization's lang is the language in Latin script (`ja-Latn`, `zh-Latn-pinyin`).
-- `sort_key` — what to sort by: the first romanization, else the name. List results are ordered by it (artists:
-  `sort_name` first).
+- `sort_key` — what to sort by: the name itself when it has Latin letters (also when it is an English translation);
+  for a name in another script its romanization, else its furigana reading in Latin letters (歌川広重 → Utagawa
+  Hiroshige / utagawahiroshige). List results are ordered by it (artists: `sort_name` first).
 - `alt_names` / `alt_titles` — all other names as plain strings (unchanged, for older clients).
 Set `lang` on elements showing a name (`<h1 lang="ja">`) so the right font and pronunciation are used. `?q=` and
-`/v1/search` also match other names and readings ("kanagawa oki", "Under the Wave", "かながわ").
+`/v1/search` also match other names and readings ("kanagawa oki", "Under the Wave", "かながわ"), and kana readings typed
+in Latin letters (Hepburn, long vowels either way: "utagawa", "toukyou" or "tokyo").
 
 ### Countries and polities (artists, artworks, institutions, patrons)
 Two different things, both in lists and details:

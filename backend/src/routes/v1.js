@@ -40,10 +40,10 @@ router.get('/search', async (req, res) => {
   const { rows } = await apiPool.query(`
     SELECT type, slug, name, kind, range_json(period, period_label) AS period, sort_key,
            round(greatest(word_similarity(f_unaccent($1), f_unaccent(name)),
-                          0.9 * word_similarity(f_unaccent($1), f_unaccent(coalesce(names_text(names), ''))))::numeric, 2) AS score
+                          0.9 * word_similarity(f_unaccent($1), f_unaccent(coalesce(alt_text, ''))))::numeric, 2) AS score
     FROM entity_index
     WHERE f_unaccent(name) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(name)
-       OR f_unaccent(coalesce(names_text(names), '')) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(coalesce(names_text(names), ''))
+       OR f_unaccent(coalesce(alt_text, '')) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(coalesce(alt_text, ''))
     ORDER BY score DESC, sort_key
     LIMIT 20`, [q, `%${q.replace(/[\\%_]/g, '\\$&')}%`]);
   res.json({ data: rows });

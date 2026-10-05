@@ -32,7 +32,7 @@ const countryFilters = (type) => ({
 // Names in several languages (migration 022): language and furigana of the main name, the other names with their
 // roles, the sort key (romanization first) — in lists and details. alt_names / alt_titles stay as plain lists for
 // clients written before.
-const nameCols = (col, alt) => `t.${col}_lang, t.${col}_ruby, t.names, name_sort_key(t.${col}, t.names) AS sort_key,
+const nameCols = (col, alt) => `t.${col}_lang, t.${col}_ruby, t.names, name_sort_key(t.${col}, t.${col}_ruby, t.names) AS sort_key,
   (SELECT coalesce(jsonb_agg(ruby_plain(n->>'text')), '[]'::jsonb) FROM jsonb_array_elements(t.names) n) AS ${alt}`;
 // raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, ruby_html, reading}]
 function shapeNames(row, col) {
@@ -57,7 +57,7 @@ const ENTITIES = {
              ${allImages('artist_id')}, t.biography_md, ${birthPlace('artist')}, ${countryCols('artist')}`,
     md: ['biography_md'],
     filters: countryFilters('artist'),
-    order: 'coalesce(t.sort_name, name_sort_key(t.name, t.names))',
+    order: 'coalesce(t.sort_name, name_sort_key(t.name, t.name_ruby, t.names))',
   },
   artworks: {
     type: 'artwork', table: 'artworks', alt: 'alt_titles', name: 'title', period: 't.created',
@@ -82,7 +82,7 @@ const ENTITIES = {
       material: 't.materials @> ARRAY[$]::text[]',  // GIN index artworks_materials_gin
       ...countryFilters('artwork'),
     },
-    order: 'lower(t.created) NULLS LAST, name_sort_key(t.title, t.names)',
+    order: 'lower(t.created) NULLS LAST, name_sort_key(t.title, t.title_ruby, t.names)',
   },
   places: {
     type: 'place', table: 'places', alt: 'alt_names', name: 'name', period: null,
@@ -91,7 +91,7 @@ const ENTITIES = {
              ST_AsGeoJSON(t.area)::jsonb AS area, t.description_md`,
     md: ['description_md'],
     filters: { kind: 't.kind::text = $', country: 't.country_code = upper($)' },
-    order: 'name_sort_key(t.name, t.names)',
+    order: 'name_sort_key(t.name, t.name_ruby, t.names)',
   },
   movements: {
     type: 'movement', table: 'movements', alt: 'alt_names', name: 'name', period: 't.period',
@@ -99,7 +99,7 @@ const ENTITIES = {
     detail: 't.kind, range_json(t.period, t.period_label) AS period, t.description_md',
     md: ['description_md'],
     filters: { kind: 't.kind::text = $' },
-    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.names)',
+    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.name_ruby, t.names)',
   },
   institutions: {
     type: 'institution', table: 'institutions', alt: 'alt_names', name: 'name', period: 't.founded',
@@ -112,7 +112,7 @@ const ENTITIES = {
                 FROM places p WHERE p.id = t.place_id) AS place, ${countryCols('institution')}`,
     md: ['description_md'],
     filters: { kind: 't.kind = $', ...countryFilters('institution') },
-    order: 'name_sort_key(t.name, t.names)',
+    order: 'name_sort_key(t.name, t.name_ruby, t.names)',
   },
   patrons: {
     type: 'patron', table: 'patrons', alt: 'alt_names', name: 'name', period: 't.active',
@@ -120,7 +120,7 @@ const ENTITIES = {
     detail: `t.kind, range_json(t.active, t.active_label) AS active, t.notes_md, ${birthPlace('patron')}, ${countryCols('patron')}`,
     md: ['notes_md'],
     filters: { kind: 't.kind = $', ...countryFilters('patron') },
-    order: 'name_sort_key(t.name, t.names)',
+    order: 'name_sort_key(t.name, t.name_ruby, t.names)',
   },
   polities: {
     type: 'polity', table: 'polities', alt: 'alt_names', name: 'name', period: 't.period',
@@ -128,7 +128,7 @@ const ENTITIES = {
     detail: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes, t.description_md',
     md: ['description_md'],
     filters: { kind: 't.kind = $', country: 't.country_codes @> ARRAY[upper($)]' },  // GIN index polities_country_gin
-    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.names)',
+    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.name_ruby, t.names)',
   },
 };
 
@@ -230,8 +230,8 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       // Both are served by the trigram GIN index on f_unaccent(name).
       const like = p(`%${q.replace(/[\\%_]/g, '\\$&')}%`);
       const term = p(q);
-      // …also in the other names and readings (GIN index <table>_names_trgm): "kanagawa oki", "große Welle", "かながわ"
-      const alt = `f_unaccent(coalesce(names_text(t.names), '') || ' ' || coalesce(ruby_reading(t.${e.name}_ruby), ''))`;
+      // …also in the other names and readings, kana readings in Latin letters too: "kanagawa oki", "große Welle", "utagawa"
+      const alt = `f_unaccent(coalesce(name_alt_text(t.${e.name}_ruby, t.names), ''))`;  // index <table>_alt_trgm
       where.push(`(f_unaccent(t.${e.name}) ILIKE f_unaccent(${like}) OR f_unaccent(${term}) <% f_unaccent(t.${e.name})
                    OR ${alt} ILIKE f_unaccent(${like}) OR f_unaccent(${term}) <% ${alt})`);
       rank = `word_similarity(f_unaccent(${term}), f_unaccent(t.${e.name})) DESC, `;

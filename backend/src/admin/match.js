@@ -31,9 +31,10 @@ function scoreSql(nameExpr, altExpr = null) {
 }
 
 // SQL for an entity's other names as one string: translations, romanizations, alternatives with their furigana
-// readings (names_text(), migration 022), the main name's reading, plus an artist's sort name.
+// readings, the main name's reading, kana readings in Latin letters (name_alt_text(), migrations 022/023 — the
+// expression of the <table>_alt_trgm index), plus an artist's sort name.
 function altSql(t, alias) {
-  const parts = [t.fields.names === 'names' && `names_text(${alias}.names)`, `ruby_reading(${alias}.${t.name}_ruby)`,
+  const parts = [`name_alt_text(${alias}.${t.name}_ruby, ${alias}.names)`,
     t.fields.sort_name && `${alias}.sort_name`].filter(Boolean);
   return parts.length ? `nullif(concat_ws(' · ', ${parts.join(', ')}), '')` : null;
 }

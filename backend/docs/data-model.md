@@ -154,6 +154,13 @@ expression GIN index `f_unaccent(names_text(names)) gin_trgm_ops` serves trigram
 first romanization for sorting; `entity_index` exposes `names` and `sort_key`. Functions called from index
 expressions are schema-qualified inside each other: since Postgres 17, index builds run with a restricted search_path.
 
+Migration 023: `kana_romaji()` (PL/pgSQL, IMMUTABLE) turns kana into Hepburn — katakana → hiragana with `translate()`,
+two-character syllables before single ones (`FOREACH … SLICE 1` over a constant array of pairs), っ doubling the next
+consonant with `regexp_replace`. `name_alt_text(ruby, names)` = everything besides the name an entry is found by
+(other names, readings, romaji long and short); the `<table>_alt_trgm` indexes are on exactly that expression, which
+the queries repeat so the planner can use them. `name_sort_key(name, ruby, names)`: the name when it has Latin
+letters, else its romanization, else the romaji of its reading.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the

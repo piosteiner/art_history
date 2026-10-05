@@ -33,6 +33,8 @@ const ENTITIES = {
       P186: [stmt(item('Q106')), stmt(item('Q107'))] } },
   Q108: { id: 'Q108', labels: labels('France'), descriptions: { en: { value: 'country in Western Europe' } },
     claims: { P31: [stmt(item('Q6256'))], P297: [stmt('FR')], P571: [stmt(time('+1792-09-21T00:00:00Z', 11))] } },
+  Q109: { id: 'Q109', labels: labels('The Great Wave', { ja: '神奈川沖浪裏' }), descriptions: { en: { value: 'woodblock print' } },
+    claims: { P31: [stmt(item('Q3305213'))], P1476: [stmt({ text: '神奈川沖浪裏', language: 'ja' })], P2125: [stmt('Kanagawa-oki nami ura')] } },
   Q106: { id: 'Q106', labels: labels('oil paint'), descriptions: { en: { value: 'paint' } }, claims: {} },
   Q107: { id: 'Q107', labels: labels('canvas'), descriptions: { en: { value: 'fabric' } }, claims: {} },
   Q105: { id: 'Q105', labels: labels('Musée Marmottan Monet'), descriptions: { en: { value: 'art museum in Paris' } }, claims: { P31: [stmt(item('Q207694'))] } },

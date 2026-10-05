@@ -121,3 +121,10 @@ test('nationality from Wikidata (P27): the polity is created on request, with it
   expect(sql(`SELECT count(*) FROM relationships WHERE relationship_type = 'nationality'
               AND subject_id = entity_id('artist', 'claude-monet') AND object_id = entity_id('polity', 'france')`)).toBe('1');
 });
+
+test('a Japanese original title stays among the other names; the English label is the title', async ({ userA }) => {
+  await userA.goto('/artworks/new/wikidata?q=Q109');
+  await expect(row(userA, 'Title')).toContainText('The Great Wave');
+  await expect(userA.locator('input[name="alt.names"][value="神奈川沖浪裏 | ja | original"]')).toBeVisible();
+  await expect(userA.locator('input[name="alt.names"][value="Kanagawa-oki nami ura | ja-Latn | romanization"]')).toBeVisible();
+});

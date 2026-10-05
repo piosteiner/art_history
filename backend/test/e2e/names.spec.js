@@ -76,3 +76,19 @@ test('names are checked: furigana braces and language codes', async ({ userA }) 
   await userA.goto('/places/edo/discard-changes');                        // reset the shared working copy
   await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
 });
+
+test('kana readings are found in Latin letters; lists sort by the title (romanization only for non-Latin titles)', async ({ userA, request }) => {
+  sql(`INSERT INTO places (slug, name, name_ruby, name_lang, kind, location)
+       VALUES ('test-hokkaido', '北海道', '{北海道|ほっかいどう}', 'ja', 'region', 'POINT(142.8 43.2)')`);
+  await userA.goto('/places?q=hokkaido');                               // ほっかいどう → hokkaidou / hokkaido
+  await expect(userA.locator('tr', { hasText: '北海道' })).toBeVisible();
+  expect((await api(request, '/places?q=hokkaido')).data.map((x) => x.slug)).toContain('test-hokkaido');
+  expect((await api(request, '/search?q=hokkaidou')).data.map((x) => x.slug)).toContain('test-hokkaido');
+  expect((await api(request, '/places/test-hokkaido')).sort_key).toBe('hokkaidou');  // no romanization: from the reading
+
+  // An English title sorts by itself, even with a romanization among the other names.
+  sql(`INSERT INTO artworks (slug, title, names) VALUES ('test-english-title', 'Zebra in the Snow',
+       '[{"text": "Aaa romanized", "lang": "ja-Latn", "role": "romanization"}]')`);
+  expect((await api(request, '/artworks/test-english-title')).sort_key).toBe('Zebra in the Snow');
+  sql("DELETE FROM places WHERE slug = 'test-hokkaido'; DELETE FROM artworks WHERE slug = 'test-english-title'");
+});

@@ -159,7 +159,10 @@ function fieldsFor(t, e) {
   const nameKey = t.name;
   // An artwork's title in its original language (P1476, with its language) is preferred over the English label;
   // the label is then offered as a translation among the other names.
-  const original = t.type === 'artwork' && statements(e, 'P1476').map((s) => s.mainsnak.datavalue.value).find((v) => v && v.text);
+  // Only in Latin script (English, French, German …): a Japanese title stays among the other names as "original",
+  // the English label is the title (the owner's convention).
+  const original = t.type === 'artwork' && statements(e, 'P1476').map((s) => s.mainsnak.datavalue.value)
+    .find((v) => v && v.text && /[A-Za-zÀ-ɏ]/.test(v.text));
   const main = original ? original.text : name;
   if (main) f[nameKey] = { kind: 'text', value: main };
   if (original && nameUtil.langOk(nameUtil.normLang(original.language))) f[`${nameKey}_lang`] = { kind: 'text', value: nameUtil.normLang(original.language) };

@@ -690,7 +690,7 @@ router.get('/:plural', async (req, res) => {
   const { rows } = await adminPool.query(`
     SELECT * FROM (
       SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score,
-             name_sort_key(t.${t.name}, t.names) AS sort_key,
+             name_sort_key(t.${t.name}, t.${t.name}_ruby, t.names) AS sort_key,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
              EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${params.length + 1}::entity_type AND ac.entity_id = t.id) AS to_complete,
              (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)

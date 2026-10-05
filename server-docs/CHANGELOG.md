@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Kana readings searchable in Latin letters; sorting by the title (migration 023)
+- **What:** SQL `kana_romaji()` (Hepburn), `romaji_short()`, `name_alt_text()` (search text: other names, readings,
+  romaji long + short) with new `<table>_alt_trgm` indexes (replacing `<table>_names_trgm`), `name_sort_key(name, ruby,
+  names)` — the title when it has Latin letters, else its romanization, else the romaji of its furigana; `entity_index`
+  gets `alt_text`. Admin list search, API `?q=` and `/v1/search` use them. Wikidata: an original title (P1476) becomes
+  the title only in Latin script; a Japanese one is offered as "original" among the other names.
+- **Why:** owner: 歌川 with reading うたがわ wasn't found by "utagawa"; English titles for Japanese works must sort by
+  the English title.
+- **Tested:** smoke test; e2e 55 passing (hokkaido/hokkaidou, sort keys, Wikidata Japanese title).
+- **Revert:** redeploy the previous commit; re-create 022's `name_sort_key(text, jsonb)`, `entity_index` and
+  `<table>_names_trgm` indexes, then drop the 023 functions.
+
 ### E2E tests use their own sample content
 - **What:** `backend/test/e2e/fixtures/content/` — a frozen copy of `content/` (as of migration 022) imported by
   `global-setup.js` instead of the live snapshot.
