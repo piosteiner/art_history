@@ -125,3 +125,12 @@ test('several images per entry: add, reorder (first = main image), edit, remove 
   await userA.goto('/institutions/van-gogh-museum');
   await expect(userA.locator('.image-item')).toHaveCount(2);
 });
+
+test('static files are linked with a content hash, so a deploy is never hidden by the browser cache', async ({ userA }) => {
+  await userA.goto('/');
+  const src = await userA.locator('script[src*="editor.js"]').getAttribute('src');
+  expect(src).toMatch(/^\/static\/editor\.js\?v=[0-9a-f]{10}$/);
+  expect(await userA.locator('link[href*="admin.css"]').getAttribute('href')).toMatch(/^\/static\/admin\.css\?v=[0-9a-f]{10}$/);
+  expect(await userA.locator('body').getAttribute('data-map-js')).toMatch(/^\/static\/map\.js\?v=[0-9a-f]{10}$/);
+  expect((await userA.request.get(src)).status()).toBe(200);
+});

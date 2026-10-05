@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Admin: static files linked with a content hash
+- **What:** `backend/src/admin/assets.js` — `admin.css`, `editor.js`, `map.js`, `map.css` are linked as
+  `/static/<file>?v=<SHA-256 prefix>` (rehashed when the file changes); the map files' URLs reach the bundle via
+  `data-map-js` / `data-map-css` on `<body>`.
+- **Why:** after the slug deploy the browser kept the old `editor.js` (cached for 1 h) until a hard refresh.
+- **Tested:** e2e 51 passing (hashed URLs present and served).
+- **Revert:** redeploy the previous commit.
+
 ### Admin: slug cleaned as you type, follows the title on new entries
 - **What:** `backend/src/admin/editor/slug.js` (in the editor bundle): typed slugs become lowercase, spaces → hyphens,
   accents dropped (Dürer → durer), other characters removed; a trailing hyphen is dropped when leaving the field. On a

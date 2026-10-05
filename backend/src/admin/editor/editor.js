@@ -223,6 +223,7 @@ if (collabForm && live) {
 
 // The map picker (Leaflet + Geoman, ~200 KB) is only fetched on pages that have one (place forms).
 if (document.querySelector('.map-picker')) {
-  document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: '/static/map.css' }));
-  document.head.append(Object.assign(document.createElement('script'), { src: '/static/map.js' }));
+  // versioned URLs from the page (src/admin/assets.js), so a new deploy is never served from the browser cache
+  document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: document.body.dataset.mapCss || '/static/map.css' }));
+  document.head.append(Object.assign(document.createElement('script'), { src: document.body.dataset.mapJs || '/static/map.js' }));
 }
