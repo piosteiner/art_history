@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Admin: paste a dimensions line; inches / mm / m converted
+- **What:** `backend/src/admin/editor/dims.js`: pasting "139.38 × 85.09", "139,4 x 85,1 cm", "54 7/8 × 33 1/2 in.",
+  "1394 × 851 mm" … into a dimensions box fills height/width/depth (unit dropped; metric part preferred when both are
+  given); other units converted to cm (2 decimals) with a notice and "keep the original in the note"; a unit typed
+  into one box is converted when leaving it.
+- **Why:** owner: copying dimensions from museum pages.
+- **Tested:** e2e 62 passing.
+- **Revert:** redeploy the previous commit.
+
 ### Dates: "c. 1755" / "ca." / "circa" (±5 years)
 - **What:** `backend/src/fuzzy-date.js` accepts circa dates (also ranges and BCE) as ±`CIRCA_YEARS` (5), label "c. 1755",
   shown as written in forms; Wikidata's circa qualifier on a year gives the same value. Form hint, docs.

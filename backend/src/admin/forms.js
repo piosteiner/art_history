@@ -155,7 +155,7 @@ function fieldInput(key, kind, f, ctx) {
     const box = (x, label) => html`<input name="${name}_${x}" value="${f[`${key}_${x}`]}" placeholder="${label}" inputmode="decimal" aria-label="${label} in cm">`;
     return html`<div class="field${err}"><label>${label} (cm)</label>
       <div class="row dims">${box('h', 'height')}<span class="x">×</span>${box('w', 'width')}<span class="x">×</span>${box('d', 'depth (3D only)')}</div>
-      ${hint('Height × width, plus depth for objects. Height alone is fine (e.g. a sculpture). Decimals allowed.')}
+      ${hint('Height × width, plus depth for objects. Height alone is fine (e.g. a sculpture). Decimals allowed. Paste a whole line ("139.4 × 85.1 cm", "54 7/8 × 33 1/2 in.") to fill all boxes — inches and mm are converted.')}
       <div class="hint dims-height-only">Height only — shown as “50 cm (height)”.</div></div>`;
   }
   if (kind === 'point') {

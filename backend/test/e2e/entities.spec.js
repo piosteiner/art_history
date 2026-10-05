@@ -322,3 +322,33 @@ test('circa dates: "ca. 1755" is c. 1755 = 1750–1760, kept as written', async 
   await expect(userA.locator('#f-created')).toHaveValue('c. 1755');
   sql("DELETE FROM artworks WHERE slug = 'test-circa'");
 });
+
+test('dimensions: a pasted line fills the boxes; inches and mm are converted with a notice', async ({ userA }) => {
+  await userA.goto('/artworks/plum-park-in-kameido/edit');
+  const box = (x) => userA.locator(`input[name="f.dimensions_${x}"]`);
+  const paste = (x, text) => box(x).evaluate((el, t) => {
+    const data = new DataTransfer();
+    data.setData('text/plain', t);
+    el.dispatchEvent(new ClipboardEvent('paste', { clipboardData: data, bubbles: true, cancelable: true }));
+  }, text);
+  await paste('h', '139.38 × 85.09');
+  await expect(box('h')).toHaveValue('139.38');
+  await expect(box('w')).toHaveValue('85.09');
+  await expect(userA.locator('.dims-notice')).toBeHidden();               // centimetres: nothing to say
+  await paste('h', '139.4 × 85.1 cm (54 7/8 × 33 1/2 in.)');              // the metric part is taken
+  await expect(box('w')).toHaveValue('85.1');
+  await paste('w', '54 7/8 × 33 1/2 in.');
+  await expect(box('h')).toHaveValue('139.38');
+  await expect(box('w')).toHaveValue('85.09');
+  await expect(userA.locator('.dims-notice')).toContainText('Converted from inches: 54 7/8 × 33 1/2 in. → 139.38 × 85.09 cm');
+  await userA.click('text=Keep the original in the note');
+  await expect(userA.locator('#f-dimensions_note')).toHaveValue('54 7/8 × 33 1/2 in.');
+  await box('d').fill('2 in');                                              // typed with a unit: converted on leaving
+  await box('d').blur();
+  await expect(box('d')).toHaveValue('5.08');
+  await paste('h', '1394 × 851 mm');
+  await expect(box('h')).toHaveValue('139.4');
+  await expect(box('d')).toHaveValue('');                                    // a whole line replaces all three
+  await userA.goto('/artworks/plum-park-in-kameido/discard-changes');
+  await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
+});

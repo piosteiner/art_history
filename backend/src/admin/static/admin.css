@@ -237,3 +237,7 @@ td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-f
 button.chip { padding: .1rem .55rem; font-size: .85rem; border-radius: 999px; background: transparent; color: var(--fg); border: 1px solid var(--line); }
 button.chip:hover { border-color: var(--accent); color: var(--accent); }
 button.chip.suggested { border-color: var(--accent); color: var(--accent); }
+
+/* dimensions: notice after converting pasted inches / mm (src/admin/editor/dims.js) */
+.dims-notice { color: var(--accent); }
+.dims-notice[hidden] { display: none; }
