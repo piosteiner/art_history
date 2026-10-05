@@ -36,54 +36,107 @@ export function parseDimensions(text) {
 
 const fmt = (n) => String(n);
 
-export function initDims() {
-  document.querySelectorAll('.row.dims').forEach((row) => {
-    const inputs = ['h', 'w', 'd'].map((x) => row.querySelector(`input[name$="_${x}"]`));
-    if (inputs.some((i) => !i)) return;
-    const note = document.querySelector('input[name="f.dimensions_note"]');
-    const notice = Object.assign(document.createElement('div'), { className: 'hint dims-notice', hidden: true });
-    row.after(notice);
-
-    const fill = (values, from = 0) => {
-      values.forEach((v, i) => { if (inputs[from + i]) inputs[from + i].value = fmt(v); });
-      if (from === 0) for (let i = values.length; i < 3; i += 1) inputs[i].value = '';  // a whole line replaces all three
-      for (const i of inputs) i.dispatchEvent(new Event('input', { bubbles: true }));  // drafts, live copy, the hint
-    };
-    const tell = (parsed) => {
-      notice.replaceChildren();
-      if (parsed.unit === 'cm') { notice.hidden = true; return; }
-      const name = { in: 'inches', mm: 'millimetres', m: 'metres' }[parsed.unit];
-      notice.append(`Converted from ${name}: ${parsed.original} → ${parsed.values.join(' × ')} cm. `);
-      if (note) {
-        const keep = Object.assign(document.createElement('button'), { type: 'button', className: 'link small', textContent: 'Keep the original in the note' });
-        keep.addEventListener('click', () => {
-          note.value = note.value.trim() ? `${note.value.trim()}; ${parsed.original}` : parsed.original;
-          note.dispatchEvent(new Event('input', { bubbles: true }));
-          keep.remove();
-        });
-        notice.append(keep);
-      }
-      notice.hidden = false;
-    };
-
-    inputs.forEach((input, index) => {
-      input.addEventListener('paste', (e) => {
-        const text = (e.clipboardData || window.clipboardData).getData('text');
-        const parsed = parseDimensions(text);
-        // a plain single number pastes normally; anything with ×, a unit or several numbers is handled here
-        if (!parsed || (parsed.values.length === 1 && !unitOf(text) && /^\s*[\d.,]+\s*$/.test(text))) return;
-        e.preventDefault();
-        fill(parsed.values, parsed.values.length === 1 ? index : 0);
-        tell(parsed);
+// Paste and unit conversion for one group of height/width/depth inputs; notice shows conversions; note (optional) is
+// where "keep the original" writes.
+function attach(inputs, notice, note) {
+  const fill = (values, from = 0) => {
+    values.forEach((v, i) => { if (inputs[from + i]) inputs[from + i].value = fmt(v); });
+    if (from === 0) for (let i = values.length; i < 3; i += 1) inputs[i].value = '';  // a whole line replaces all three
+    for (const i of inputs) i.dispatchEvent(new Event('input', { bubbles: true }));  // drafts, live copy, the hint
+  };
+  const tell = (parsed) => {
+    notice.replaceChildren();
+    if (parsed.unit === 'cm') { notice.hidden = true; return; }
+    const name = { in: 'inches', mm: 'millimetres', m: 'metres' }[parsed.unit];
+    notice.append(`Converted from ${name}: ${parsed.original} → ${parsed.values.join(' × ')} cm. `);
+    if (note) {
+      const keep = Object.assign(document.createElement('button'), { type: 'button', className: 'link small', textContent: 'Keep the original in the note' });
+      keep.addEventListener('click', () => {
+        note.value = note.value.trim() ? `${note.value.trim()}; ${parsed.original}` : parsed.original;
+        note.dispatchEvent(new Event('input', { bubbles: true }));
+        keep.remove();
       });
-      // typed with a unit ("21 in"): converted when leaving the box
-      input.addEventListener('change', () => {
-        if (!unitOf(input.value)) return;
-        const parsed = parseDimensions(input.value);
-        if (!parsed || parsed.values.length !== 1) return;
-        fill(parsed.values, index);
-        tell(parsed);
-      });
+      notice.append(keep);
+    }
+    notice.hidden = false;
+  };
+  inputs.forEach((input, index) => {
+    input.addEventListener('paste', (e) => {
+      const text = (e.clipboardData || window.clipboardData).getData('text');
+      const parsed = parseDimensions(text);
+      // a plain single number pastes normally; anything with ×, a unit or several numbers is handled here
+      if (!parsed || (parsed.values.length === 1 && !unitOf(text) && /^\s*[\d.,]+\s*$/.test(text))) return;
+      e.preventDefault();
+      fill(parsed.values, parsed.values.length === 1 ? index : 0);
+      tell(parsed);
+    });
+    // typed with a unit ("21 in"): converted when leaving the box
+    input.addEventListener('change', () => {
+      if (!unitOf(input.value)) return;
+      const parsed = parseDimensions(input.value);
+      if (!parsed || parsed.values.length !== 1) return;
+      fill(parsed.values, index);
+      tell(parsed);
     });
   });
+}
+
+const el = (tag, props = {}, ...children) => { const e = Object.assign(document.createElement(tag), props); e.append(...children); return e; };
+
+// Further measurements: the textarea (one "part | h × w × d" per line — what forms, drafts and the live copy see) shown
+// as rows of part + three boxes; rows write back into it, outside changes redraw the rows.
+function initSets(ta) {
+  const rows = el('div', { className: 'dimset-rows' });
+  const add = el('button', { type: 'button', className: 'secondary small', textContent: '+ Add a measurement' });
+  const box = el('div', { className: 'dimset-editor' }, rows, add);
+  ta.hidden = true;
+  ta.after(box);
+  const parse = (text) => text.split('\n').map((l) => l.trim()).filter(Boolean).map((l) => {
+    const [part, nums = ''] = l.split('|').map((x) => x.trim());
+    return { part, cm: nums.split(/\s*[×xX*]\s*/).filter(Boolean) };
+  });
+  const write = () => {
+    const lines = [...rows.children].map((r) => {
+      const part = r.querySelector('.d-part').value.trim();
+      const cm = [...r.querySelectorAll('.d-num')].map((i) => i.value.trim()).filter(Boolean);
+      return part || cm.length ? `${part} | ${cm.join(' × ')}` : null;
+    }).filter(Boolean);
+    const text = lines.join('\n');
+    if (text !== ta.value) { ta.value = text; ta.dispatchEvent(new Event('input', { bubbles: true })); }
+  };
+  const row = (s = { part: '', cm: [] }) => {
+    const part = el('input', { className: 'd-part', value: s.part, placeholder: 'part: mount, frame …', autocomplete: 'off' });
+    part.setAttribute('list', 'part-list');
+    part.setAttribute('aria-label', 'part');
+    const nums = ['height', 'width', 'depth'].map((label, i) => {
+      const n = el('input', { className: 'd-num', value: s.cm[i] || '', placeholder: label, inputMode: 'decimal' });
+      n.setAttribute('aria-label', `${label} in cm`);
+      return n;
+    });
+    const remove = el('button', { type: 'button', className: 'link small', textContent: 'remove' });
+    const notice = el('div', { className: 'hint dims-notice', hidden: true });
+    const r = el('div', { className: 'dimset-row' },
+      el('div', { className: 'name-meta' }, part, remove),
+      el('div', { className: 'row dims' }, nums[0], el('span', { className: 'x', textContent: '×' }), nums[1], el('span', { className: 'x', textContent: '×' }), nums[2]),
+      notice);
+    attach(nums, notice, null);
+    for (const x of [part, ...nums]) { x.addEventListener('input', write); x.addEventListener('change', write); }
+    remove.addEventListener('click', () => { r.remove(); write(); });
+    return r;
+  };
+  const render = () => rows.replaceChildren(...parse(ta.value).map(row));
+  add.addEventListener('click', () => { const r = row(); rows.append(r); r.querySelector('.d-part').focus(); });
+  ta.addEventListener('change', render);  // from outside: another editor, a restored draft
+  render();
+}
+
+export function initDims() {
+  document.querySelectorAll('.field > .row.dims').forEach((row) => {
+    const inputs = ['h', 'w', 'd'].map((x) => row.querySelector(`input[name$="_${x}"]`));
+    if (inputs.some((i) => !i)) return;
+    const notice = Object.assign(document.createElement('div'), { className: 'hint dims-notice', hidden: true });
+    row.after(notice);
+    attach(inputs, notice, document.querySelector('input[name="f.dimensions_note"]'));
+  });
+  document.querySelectorAll('textarea[data-dimsets]').forEach(initSets);
 }

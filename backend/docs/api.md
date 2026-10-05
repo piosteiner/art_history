@@ -33,7 +33,9 @@ with a 301 to `/v1/people…`, also under `/map/` and `/graph/`.)
 
 Artworks also have `materials` (list; filter `?material=bronze`) and `dimensions`
 (`{height_cm, width_cm, depth_cm, note, label: "73.7 × 92.1 cm"}`, `depth_cm` only for objects; a height alone —
-a sculpture — has `width_cm: null` and `label: "50 cm (height)"`; `null` without data).
+a sculpture — has `width_cm: null` and `label: "50 cm (height)"`; `null` without data). `dimensions` are the work itself;
+`other_dimensions` lists further measured parts in the same shape plus `part`:
+`[{part: "mount", height_cm: 180, width_cm: 95.5, depth_cm: null, label: "180 × 95.5 cm"}]` (empty list if none).
 
 Artworks, artists and institutions carry an `image_url`: the main image (https, hotlinked — often Wikimedia Commons;
 for a smaller version replace `/NNNNpx-` in a Commons thumbnail URL with a standard width such as `/250px-`), `null`

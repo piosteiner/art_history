@@ -4,11 +4,13 @@
 // toRow() turns a doc into validated SQL column values; readDocs() reads rows back into docs.
 const { parseFuzzyDate, formatFuzzyDate } = require('./fuzzy-date');
 const names = require('./names');
+const dimensions = require('./dimensions');
 
 // Field kinds: name (the main name: plain text in <col>, furigana markup in <col>_ruby, language in <col>_lang; the
 //                    doc holds the markup version and <key>_lang) · names (other names [{text, lang, role}], jsonb)
 //              text · text[] · json · md · date (→ <col> + <col>_label) · period (a date that may be open-ended, "1808/")
 //              dimensions [height], [height, width] or [height, width, depth] in cm (→ height_cm, width_cm, depth_cm)
+//              dimsets: further measurements [{part, cm: [h, w, d]}] (jsonb; src/dimensions.js)
 //              point [lon, lat] · area (GeoJSON)
 //              ref:<type> (slug → id, may point at any imported or existing entity) · parent (same-table ref, second pass)
 // Order matters: a type may only reference types listed before it (parent refs are resolved afterwards).
@@ -37,6 +39,7 @@ const TYPES = [
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     title: 'name', names: 'names', creator: 'ref:artist', attribution_label: 'text', created: 'date',
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
+    other_dimensions: 'dimsets',
     institution: 'ref:institution', inventory_number: 'text',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
@@ -91,6 +94,10 @@ function toRow(doc, fields) {
         const list = v ?? LEGACY_ALT.map((k) => doc[k]).find((x) => x != null) ?? [];
         if (!Array.isArray(list)) throw new Error('must be a list');
         put(key, JSON.stringify(list.map((n, i) => { try { return names.normName(n); } catch (err) { throw new Error(`[${i}] ${err.message}`); } })), '$::jsonb');
+      } else if (kind === 'dimsets') {
+        const list = v ?? [];
+        if (!Array.isArray(list)) throw new Error('must be a list of {part, cm}');
+        put(key, JSON.stringify(list.map((s, i) => dimensions.normSet(s, i))), '$::jsonb');
       } else if (kind === 'text[]') {
         if (v !== null && !(Array.isArray(v) && v.every((s) => typeof s === 'string'))) throw new Error('must be a list of strings');
         put(key, v || []);
@@ -206,7 +213,7 @@ function rowToDoc(row, t) {
     if (kind === 'name' && row[`${key}_lang`]) doc[`${key}_lang`] = row[`${key}_lang`];
     // names: a plain alternative stays a plain string in YAML (as the old lists were)
     if (kind === 'names') v = Array.isArray(v) && v.length ? v.map((n) => (n.role === 'alternative' && !n.lang ? n.text : n)) : null;
-    if (kind === 'text[]' && Array.isArray(v) && !v.length) v = null;
+    if ((kind === 'text[]' || kind === 'dimsets') && Array.isArray(v) && !v.length) v = null;
     if (kind === 'json' && v && !Object.keys(v).length) v = null;
     if (v !== null && v !== undefined) doc[key] = v;
   }

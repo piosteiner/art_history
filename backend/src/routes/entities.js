@@ -83,6 +83,12 @@ const ENTITIES = {
                'depth_cm', t.depth_cm, 'note', t.dimensions_note,
                'label', concat_ws(' × ', t.height_cm::float8, t.width_cm::float8, t.depth_cm::float8) || ' cm'
                         || CASE WHEN t.width_cm IS NULL THEN ' (height)' ELSE '' END) END AS dimensions,
+             -- further measurements (migration 025): mount, frame … in the same shape as dimensions, plus the part
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('part', e->>'part', 'height_cm', (e->'cm'->>0)::numeric,
+                       'width_cm', (e->'cm'->>1)::numeric, 'depth_cm', (e->'cm'->>2)::numeric,
+                       'label', (SELECT string_agg(x, ' × ' ORDER BY i) FROM jsonb_array_elements_text(e->'cm') WITH ORDINALITY AS c(x, i)) || ' cm'
+                                || CASE WHEN jsonb_array_length(e->'cm') = 1 THEN ' (height)' ELSE '' END) ORDER BY o), '[]'::jsonb)
+                FROM jsonb_array_elements(t.other_dimensions) WITH ORDINALITY AS d(e, o)) AS other_dimensions,
              (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
              (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = t.current_institution_id) AS institution,
              ${countryCols('artwork')}`,

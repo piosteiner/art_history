@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Further measurements per artwork: mount, frame, sheet … (migration 025)
+- **What:** `artworks.other_dimensions jsonb` `[{part, cm: [h, w, d]}]` with `CHECK other_dimensions_valid()`;
+  `src/dimensions.js`; admin "Further measurements" rows (part with suggestions + h × w × d, paste and unit conversion
+  as for the main dimensions; main dimensions now labelled "the work itself"); entry page; API `other_dimensions`
+  (same shape as `dimensions` + `part`); YAML `other_dimensions`.
+- **Why:** owner: mounted works have two measurements.
+- **Tested:** e2e 63 passing.
+- **Revert:** redeploy the previous commit; as owner `ALTER TABLE artworks DROP COLUMN other_dimensions;
+  DROP FUNCTION other_dimensions_valid`.
+
 ### Admin: paste a dimensions line; inches / mm / m converted
 - **What:** `backend/src/admin/editor/dims.js`: pasting "139.38 × 85.09", "139,4 x 85,1 cm", "54 7/8 × 33 1/2 in.",
   "1394 × 851 mm" … into a dimensions box fills height/width/depth (unit dropped; metric part preferred when both are

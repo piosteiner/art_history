@@ -13,6 +13,7 @@ const { adminPool } = require('../db');
 const { TYPES, BY_FOLDER, BY_TYPE, SLUG, REF_COLUMNS, toRow, readDocs, readRelationships, readImages } = require('../content');
 const autocreate = require('./autocreate');
 const names = require('../names');
+const dimensionsLib = require('../dimensions');
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { renderMarkdown } = require('../markdown');
 const { html, raw, layout } = require('./html');
@@ -925,6 +926,7 @@ function showValue(t, key, kind, doc) {
   }
   if (v === undefined) return null;
   if (kind === 'text[]') return v.join(' · ');
+  if (kind === 'dimsets') return html`<ul class="names-list">${v.map((s) => html`<li><b>${s.part}</b>: ${dimensionsLib.label(s.cm)}</li>`)}</ul>`;
   if (kind === 'names') {
     return html`<ul class="names-list">${v.map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)).map((n) => html`<li>
       <span${n.lang ? html` lang="${n.lang}"` : ''}>${names.hasRuby(n.text) ? raw(names.rubyHtml(n.text)) : n.text}</span>

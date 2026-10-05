@@ -54,7 +54,7 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 | artists | `name`*, `sort_name`, `names`, `birth`, `death`, `biography_md` |
 | people | `name`*, `kind` (person, family, dynasty, religious order, guild …), `occupations` (list: poet, monk, emperor …), `birth`, `death`, `active` (groups), `names`, `description_md` — everyone relevant who isn't an artist (whoever made art is an artist); "patron" is a role: `commissioned` / `patron_of` relationships. Older files in `patrons/` (with `notes_md`) still import |
 | institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `names`, `description_md` |
-| artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `institution` (current holder, slug), `inventory_number`, `names`, `description_md` |
+| artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `other_dimensions` (further parts: `[{part: mount, cm: [180, 95.5]}]`), `institution` (current holder, slug), `inventory_number`, `names`, `description_md` |
 
 Every entity also takes `wikidata_id` (`Q…`) and `metadata` (free-form mapping). `*_md` fields are Markdown;
 the API serves them as sanitized HTML.

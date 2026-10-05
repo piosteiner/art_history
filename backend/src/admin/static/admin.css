@@ -241,3 +241,10 @@ button.chip.suggested { border-color: var(--accent); color: var(--accent); }
 /* dimensions: notice after converting pasted inches / mm (src/admin/editor/dims.js) */
 .dims-notice { color: var(--accent); }
 .dims-notice[hidden] { display: none; }
+
+/* further measurements: one box per part (src/admin/editor/dims.js) */
+.dimset-editor { display: grid; gap: .6rem; }
+.dimset-editor > button { justify-self: start; }
+.dimset-row { padding: .55rem .6rem; border: 1px solid var(--line); border-radius: 6px; display: grid; gap: .4rem; }
+.dimset-row .d-part { width: 16rem; }
+.dimset-row .name-meta { margin-top: 0; justify-content: space-between; }

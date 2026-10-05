@@ -352,3 +352,42 @@ test('dimensions: a pasted line fills the boxes; inches and mm are converted wit
   await userA.goto('/artworks/plum-park-in-kameido/discard-changes');
   await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
 });
+
+test('further measurements (mount, frame): rows with paste and conversion, on the page and in the API', async ({ userA, request }) => {
+  await userA.goto('/artworks/plum-park-in-kameido/edit');
+  await userA.click('text=+ Add a measurement');
+  const row = userA.locator('.dimset-row').first();
+  await row.locator('.d-part').fill('mount');
+  await row.locator('.d-num').first().evaluate((el) => {
+    const data = new DataTransfer();
+    data.setData('text/plain', '70 7/8 × 37 5/8 in.');
+    el.dispatchEvent(new ClipboardEvent('paste', { clipboardData: data, bubbles: true, cancelable: true }));
+  });
+  await expect(row.locator('.d-num').nth(0)).toHaveValue('180.02');
+  await expect(row.locator('.d-num').nth(1)).toHaveValue('95.57');
+  await expect(row.locator('.dims-notice')).toContainText('Converted from inches');
+  await userA.click('text=+ Add a measurement');
+  const frame = userA.locator('.dimset-row').nth(1);
+  await frame.locator('.d-part').fill('frame');
+  await frame.locator('.d-num').nth(0).fill('190');
+  await frame.locator('.d-num').nth(1).fill('105,5');
+  await frame.locator('.d-num').nth(2).fill('6');
+  await expect(userA.locator('#f-other_dimensions')).toHaveValue('mount | 180.02 × 95.57\nframe | 190 × 105,5 × 6');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA.locator('dl.fields')).toContainText('mount: 180.02 × 95.57 cm');
+  await expect(userA.locator('dl.fields')).toContainText('frame: 190 × 105.5 × 6 cm');
+  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/plum-park-in-kameido', { headers: { Host: 'api.localhost' } })).json();
+  expect(api.other_dimensions).toEqual([
+    { part: 'mount', height_cm: 180.02, width_cm: 95.57, depth_cm: null, label: '180.02 × 95.57 cm' },
+    { part: 'frame', height_cm: 190, width_cm: 105.5, depth_cm: 6, label: '190 × 105.5 × 6 cm' }]);
+
+  // checked like the main dimensions: a part is needed
+  await userA.goto('/artworks/plum-park-in-kameido/edit');
+  await expect(userA.locator('.dimset-row')).toHaveCount(2);                  // drawn again from the saved lines
+  await userA.locator('.dimset-row').nth(1).locator('.d-part').fill('');
+  await userA.click('form.form > .actions button');
+  await expect(userA.locator('.errors')).toContainText('needs a part');
+  sql("UPDATE artworks SET other_dimensions = '[]' WHERE slug = 'plum-park-in-kameido'");
+  await userA.goto('/artworks/plum-park-in-kameido/discard-changes');
+  await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
+});

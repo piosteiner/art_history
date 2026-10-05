@@ -111,6 +111,9 @@ Publishing goes through the normal save path (validation, optimistic locking, au
 together with the ones before it — height alone (a sculpture), height × width, or all three. `materials text[]` complements the free-text `medium`; its GIN index serves containment queries
 (`materials @> ARRAY['bronze']`, the API's `?material=`). In YAML and forms: `dimensions: [h, w]` / `[h, w, d]`.
 
+Further measurements (migration 025): `other_dimensions jsonb` `[{part, cm: [h, w, d]}]` — mount, frame, sheet,
+overall … — validated by `CHECK other_dimensions_valid()`; the main columns stay the work itself.
+
 ### Constraints added NOT VALID (migration 016)
 `artworks_inventory_needs_institution` was added `NOT VALID`: Postgres enforces it for new and changed rows but has
 not checked the existing ones (one violated it). The quality view lists remaining violations; when none is left,

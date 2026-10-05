@@ -2,6 +2,7 @@
 // YAML file), which then goes through the same toRow() validation as the import.
 const { html } = require('./html');
 const names = require('../names');
+const dimensions = require('../dimensions');
 
 // Language tags offered in the pickers (any BCP 47 tag can be typed).
 const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'Italian'], ['nl', 'Dutch'], ['es', 'Spanish'],
@@ -32,7 +33,7 @@ const HINTS = {
 // Field names and explanations per entry type, where one word means different things ("kind" of an artwork vs. of a
 // place) or two fields are easily confused (an artwork's object type, medium and materials).
 const LABELS = {
-  'artwork.kind': 'Object type', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
+  'artwork.kind': 'Object type', 'artwork.other_dimensions': 'Further measurements', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
   'polity.kind': 'Kind of polity', 'person.kind': 'Kind (person or group)', 'movement.kind': 'Kind',
 };
 const TYPE_HINTS = {
@@ -56,6 +57,7 @@ function docToForm(doc, fields) {
     const v = doc[key];
     if (kind === 'text[]') f[key] = (v || []).join('\n');
     else if (kind === 'name') { f[key] = v ?? ''; f[`${key}_lang`] = doc[`${key}_lang`] ?? ''; }
+    else if (kind === 'dimsets') f[key] = dimensions.setsToLines(v);
     else if (kind === 'names') f[key] = names.namesToLines((v || []).map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)));
     else if (kind === 'json' || kind === 'area') f[key] = v ? JSON.stringify(v, null, 2) : '';
     else if (kind === 'point') { f[`${key}_lon`] = v ? String(v[0]) : ''; f[`${key}_lat`] = v ? String(v[1]) : ''; }
@@ -77,6 +79,8 @@ function formToDoc(body, fields) {
       if (v) doc[key] = v;
       const lang = get(`${key}_lang`).trim();
       if (lang) doc[`${key}_lang`] = lang;
+    } else if (kind === 'dimsets') {
+      try { const list = dimensions.linesToSets(get(key)); if (list.length) doc[key] = list; } catch (err) { errors.push(`${key}: ${err.message}`); }
     } else if (kind === 'names') {
       try { const list = names.linesToNames(get(key)); if (list.length) doc[key] = list; } catch (err) { errors.push(`${key}: ${err.message}`); }
     } else if (kind === 'md') {
@@ -131,6 +135,13 @@ function fieldInput(key, kind, f, ctx) {
       <div class="ruby-preview" hidden></div>${hint(HINTS.name)}
       <datalist id="lang-list">${LANGS.map(([v, l]) => html`<option value="${v}">${l}</option>`)}</datalist></div>`;
   }
+  if (kind === 'dimsets') {
+    // a plain textarea (one "part | h × w × d" per line); the browser shows it as rows (editor/dims.js)
+    return html`<div class="field${err}"><label for="${id}">Further measurements (cm)</label>
+      <textarea id="${id}" name="${name}" rows="2" data-dimsets>${f[key]}</textarea>
+      <datalist id="part-list">${dimensions.PARTS.map((p) => html`<option value="${p}">`)}</datalist>
+      ${hint(html`Optional — other parts measured separately: mount, frame, sheet, overall, with base … One per line: <code>mount | 180 × 95.5</code>. The dimensions above are the work itself.`)}</div>`;
+  }
   if (kind === 'names') {
     // a plain textarea (works without script); the browser turns it into rows (editor/names.js)
     return html`<div class="field${err}"><label for="${id}">Other names, translations, romanizations</label>
@@ -153,7 +164,7 @@ function fieldInput(key, kind, f, ctx) {
   }
   if (kind === 'dimensions') {
     const box = (x, label) => html`<input name="${name}_${x}" value="${f[`${key}_${x}`]}" placeholder="${label}" inputmode="decimal" aria-label="${label} in cm">`;
-    return html`<div class="field${err}"><label>${label} (cm)</label>
+    return html`<div class="field${err}"><label>${label} (cm) — the work itself</label>
       <div class="row dims">${box('h', 'height')}<span class="x">×</span>${box('w', 'width')}<span class="x">×</span>${box('d', 'depth (3D only)')}</div>
       ${hint('Height × width, plus depth for objects. Height alone is fine (e.g. a sculpture). Decimals allowed. Paste a whole line ("139.4 × 85.1 cm", "54 7/8 × 33 1/2 in.") to fill all boxes — inches and mm are converted.')}
       <div class="hint dims-height-only">Height only — shown as “50 cm (height)”.</div></div>`;
