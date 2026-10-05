@@ -269,3 +269,19 @@ test('slug: typed text is cleaned as you type; a new entry\'s slug follows the t
   sql("DELETE FROM artworks WHERE slug = 'pine-trees-in-the-snow-durer-again'");
   sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
 });
+
+test('object type, medium and materials are named and explained; materials in use are listed', async ({ userA }) => {
+  sql("UPDATE artworks SET kind = 'woodblock print', materials = '{ink,paper}' WHERE slug = 'plum-park-in-kameido'");
+  await userA.goto('/artworks/the-starry-night/edit');
+  const field = (id) => userA.locator('.field', { has: userA.locator(`#${id}`) });
+  await expect(field('f-kind').locator('label')).toHaveText('Object type');
+  await expect(field('f-kind')).toContainText('What sort of object it is');
+  await expect(field('f-medium')).toContainText('worded like a museum label');
+  await expect(field('f-materials')).toContainText('no techniques');
+  await expect(field('f-materials')).toContainText('Used so far: ink · paper');
+  await userA.goto('/places/arles/edit');
+  await expect(userA.locator('label[for="f-kind"]')).toHaveText('Kind of place');
+  await userA.goto('/artworks/plum-park-in-kameido');
+  await expect(userA.locator('dl.fields dt', { hasText: 'Object type' })).toBeVisible();
+  sql("UPDATE artworks SET materials = '{}' WHERE slug = 'plum-park-in-kameido'");
+});

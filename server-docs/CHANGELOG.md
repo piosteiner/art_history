@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Admin: field names and explanations per entry type
+- **What:** `LABELS` / `TYPE_HINTS` in `backend/src/admin/forms.js`: an artwork's `kind` is shown as "Object type",
+  places/institutions/polities/people get "Kind of …"; short explanations for object type vs. medium vs. materials and
+  every kind field; materials and occupations list the terms already in use. API field names unchanged.
+- **Why:** owner: kind / medium / materials were easy to confuse.
+- **Tested:** e2e 58 passing.
+- **Revert:** redeploy the previous commit.
+
 ### Patrons become People (migration 024)
 - **What:** `ALTER TYPE entity_type RENAME VALUE 'patron' TO 'person'`, table `patrons` → `people` (constraints,
   indexes, triggers renamed; delete trigger re-created with 'person'); `notes_md` → `description_md`; new `birth`,

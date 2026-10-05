@@ -30,7 +30,7 @@ const { thumbUrl } = images;
 const { searchPage, reviewPage } = require('./wikidata-ui');
 const collab = require('./collab');
 const { THRESHOLD, likeParam, scoreSql, altSql } = require('./match');
-const { docToForm, formToDoc, entityForm, humanize, HINTS } = require('./forms');
+const { docToForm, formToDoc, entityForm, humanize, fieldLabel, HINTS } = require('./forms');
 
 const router = express.Router();
 const PAGE = 50;
@@ -669,12 +669,17 @@ async function formContext(t) {
       suggestions[key] = (await adminPool.query(`SELECT DISTINCT ${key} AS v FROM ${t.table} WHERE ${key} IS NOT NULL ORDER BY 1`)).rows.map((r) => r.v);
     }
   }
+  // lists whose terms should repeat exactly (the API filters by them): show what is already in use
+  const used = {};
+  for (const key of ['materials', 'occupations']) {
+    if (t.fields[key] === 'text[]') used[key] = (await adminPool.query(`SELECT DISTINCT unnest(${key}) AS v FROM ${t.table} ORDER BY 1 LIMIT 200`)).rows.map((r) => r.v);
+  }
   const refs = {};
   for (const [key, kind] of Object.entries(t.fields)) {
     const target = kind === 'parent' ? t : kind.startsWith('ref:') ? BY_TYPE[kind.slice(4)] : null;
     if (target) refs[key] = (await adminPool.query(`SELECT slug, ${target.name} AS name FROM ${target.table} ORDER BY 2`)).rows;
   }
-  return { enums, suggestions, refs, errorKeys: new Set(), confirmNew: {} };
+  return { enums, suggestions, refs, used, errorKeys: new Set(), confirmNew: {} };
 }
 
 async function findEntity(t, slug) {
@@ -970,7 +975,7 @@ router.get('/:plural/:slug', async (req, res) => {
         ${e.doc[`${t.name}_lang`] ? html` <span class="tag" lang="en">${e.doc[`${t.name}_lang`]}</span>` : ''}</p>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
         const shown = showValue(t, key, kind, e.doc);
-        return shown === null ? '' : html`<dt>${humanize(key)}</dt><dd>${shown}</dd>`;
+        return shown === null ? '' : html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown}</dd>`;
       })}</dl>
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       <h2 id="relationships">Relationships</h2>

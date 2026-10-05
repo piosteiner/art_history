@@ -20,7 +20,6 @@ const HINTS = {
   name: html`Furigana: <code>{神奈川|かながわ}</code> — or select kanji and press “Add reading”. Language: e.g. <code>ja</code>, <code>en</code>, <code>zh-Hant</code>.`,
   country_codes: 'Modern countries on its territory, ISO codes, one per line (e.g. CN for the Han dynasty; UA, RU, BY … for the USSR). Shown as "today …" only for entries without a place.',
   inventory_number: 'Only together with the institution above — the number belongs to its collection.',
-  materials: 'One per line, e.g. oil paint · canvas — or bronze · marble. The "medium" above stays the readable description.',
   json: 'JSON object, e.g. {"sources": ["…"]}. Leave empty for none.',
   area: 'GeoJSON Polygon or MultiPolygon, [longitude, latitude] pairs (optional outline for regions).',
   date: DATE_HINT,
@@ -30,7 +29,25 @@ const HINTS = {
   slug: 'Lowercase, digits and hyphens: used in URLs (typed text is converted). Keep stable once published.',
 };
 
+// Field names and explanations per entry type, where one word means different things ("kind" of an artwork vs. of a
+// place) or two fields are easily confused (an artwork's object type, medium and materials).
+const LABELS = {
+  'artwork.kind': 'Object type', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
+  'polity.kind': 'Kind of polity', 'person.kind': 'Kind (person or group)', 'movement.kind': 'Kind',
+};
+const TYPE_HINTS = {
+  'artwork.kind': 'What sort of object it is, in a word or two: painting, woodblock print, hanging scroll, sculpture, vase. Pick a term from the list so works group together.',
+  'artwork.medium': html`For people to read: one line, worded like a museum label and shown exactly as written — <i>Oil on canvas</i> · <i>Woodblock print; ink and colour on paper</i> · <i>Bronze, lost-wax cast</i>.`,
+  'artwork.materials': 'For filtering: the individual materials, one per line, lowercase and singular — ink · paper · bronze · silk. Substances and supports only, no techniques ("woodblock print" belongs in object type / medium).',
+  'place.kind': 'settlement (city, town, village) · building · site (archaeological site, landscape) · region · country',
+  'movement.kind': 'period (Edo period) · movement (Impressionism) · school (Ukiyo-e, Rinpa) · style',
+  'institution.kind': 'museum · academy · temple · church · gallery · library … — pick a term from the list',
+  'person.kind': 'person — or a group: family · dynasty · religious order · guild',
+  'polity.kind': 'empire · kingdom · dynasty · republic · shogunate …',
+  'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
+};
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
+const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || humanize(key);
 
 // doc → the string values the inputs show.
 function docToForm(doc, fields) {
@@ -98,6 +115,9 @@ function formToDoc(body, fields) {
 
 // ctx: { enums: {key: [values]}, suggestions: {key: [values]}, refs: {key: [{slug, name}]}, errorKeys: Set }
 function fieldInput(key, kind, f, ctx) {
+  const label = fieldLabel(ctx.type, key);
+  const typeHint = TYPE_HINTS[`${ctx.type}.${key}`];
+  const used = (ctx.used || {})[key];  // terms already in use (materials, occupations): reuse the same word
   const name = `f.${key}`;
   const id = `f-${key}`;
   const err = ctx.errorKeys.has(key) ? ' has-error' : '';
@@ -105,9 +125,9 @@ function fieldInput(key, kind, f, ctx) {
 
   if (kind === 'name') {
     // the browser adds the "Add reading" button and the furigana preview (editor/names.js)
-    return html`<div class="field name-field${err}"><label for="${id}">${humanize(key)}</label>
+    return html`<div class="field name-field${err}"><label for="${id}">${label}</label>
       <input id="${id}" name="${name}" value="${f[key]}" data-ruby lang="${f[`${key}_lang`] || ''}">
-      <div class="name-meta"><input name="${name}_lang" value="${f[`${key}_lang`]}" placeholder="language" aria-label="${humanize(key)} language" class="lang-input" list="lang-list" autocomplete="off"></div>
+      <div class="name-meta"><input name="${name}_lang" value="${f[`${key}_lang`]}" placeholder="language" aria-label="${label} language" class="lang-input" list="lang-list" autocomplete="off"></div>
       <div class="ruby-preview" hidden></div>${hint(HINTS.name)}
       <datalist id="lang-list">${LANGS.map(([v, l]) => html`<option value="${v}">${l}</option>`)}</datalist></div>`;
   }
@@ -117,37 +137,38 @@ function fieldInput(key, kind, f, ctx) {
       <textarea id="${id}" name="${name}" rows="3" data-names>${f[key]}</textarea>${hint(HINTS.names)}</div>`;
   }
   if (kind === 'md') {
-    return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
+    return html`<div class="field${err}"><label for="${id}">${label}</label>
       <textarea class="md" id="${id}" name="${name}">${f[key]}</textarea>${hint(HINTS.md)}</div>`;
   }
   if (kind === 'area') {
     // Drawn on the map (see the point field); the raw GeoJSON stays editable for pasting or fine-tuning.
-    return html`<div class="field${err}"><label>${humanize(key)}</label>
+    return html`<div class="field${err}"><label>${label}</label>
       <details${err ? ' open' : ''}><summary class="muted">Draw it on the map above — or edit the GeoJSON (advanced)</summary>
       <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[kind])}</details></div>`;
   }
   if (kind === 'text[]' || kind === 'json') {
-    return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
-      <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(HINTS[key] || HINTS[kind])}</div>`;
+    return html`<div class="field${err}"><label for="${id}">${label}</label>
+      <textarea id="${id}" name="${name}" rows="3">${f[key]}</textarea>${hint(typeHint || HINTS[key] || HINTS[kind])}
+      ${used && used.length ? html`<div class="hint">Used so far: ${used.join(' · ')}</div>` : ''}</div>`;
   }
   if (kind === 'dimensions') {
     const box = (x, label) => html`<input name="${name}_${x}" value="${f[`${key}_${x}`]}" placeholder="${label}" inputmode="decimal" aria-label="${label} in cm">`;
-    return html`<div class="field${err}"><label>${humanize(key)} (cm)</label>
+    return html`<div class="field${err}"><label>${label} (cm)</label>
       <div class="row dims">${box('h', 'height')}<span class="x">×</span>${box('w', 'width')}<span class="x">×</span>${box('d', 'depth (3D only)')}</div>
       ${hint('Height × width, plus depth for objects. Height alone is fine (e.g. a sculpture). Decimals allowed.')}
       <div class="hint dims-height-only">Height only — shown as “50 cm (height)”.</div></div>`;
   }
   if (kind === 'point') {
-    return html`<div class="field${err}"><label>${humanize(key)}</label>
+    return html`<div class="field${err}"><label>${label}</label>
       <div class="row"><input name="${name}_lon" value="${f[`${key}_lon`]}" placeholder="longitude (east +)" inputmode="decimal" aria-label="longitude">
       <input name="${name}_lat" value="${f[`${key}_lat`]}" placeholder="latitude (north +)" inputmode="decimal" aria-label="latitude"></div>
       <div class="map-picker" data-point="${name}"${ctx.areaKey ? html` data-area="f.${ctx.areaKey}"` : ''}></div>
       <noscript>${hint(HINTS.point)}</noscript></div>`;
   }
   if (kind === 'date' || kind === 'period') {
-    return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
+    return html`<div class="field${err}"><label for="${id}">${label}</label>
       <div class="row"><input id="${id}" name="${name}" value="${f[key]}" placeholder="date">
-      <input name="${name}_label" value="${f[`${key}_label`]}" placeholder="label (optional)" aria-label="${humanize(key)} label"></div>
+      <input name="${name}_label" value="${f[`${key}_label`]}" placeholder="label (optional)" aria-label="${label} label"></div>
       ${hint(HINTS[kind])}</div>`;
   }
   if (kind === 'parent' || kind.startsWith('ref:')) {
@@ -155,7 +176,7 @@ function fieldInput(key, kind, f, ctx) {
     const target = kind === 'parent' ? ctx.type : kind.slice(4);
     const canCreate = ['artist', 'institution'].includes(target) && kind !== 'parent';  // src/admin/autocreate.js
     const confirm = (ctx.confirmNew || {})[key];
-    return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
+    return html`<div class="field${err}"><label for="${id}">${label}</label>
       <input id="${id}" name="${name}" value="${f[key]}" list="${id}-list" placeholder="start typing a name (typos are fine)" autocomplete="off"
         data-lookup="${kind === 'parent' ? ctx.type : kind.slice(4)}">
       <datalist id="${id}-list">${options.map((o) => html`<option value="${o.slug}">${o.name}</option>`)}</datalist>
@@ -164,13 +185,13 @@ function fieldInput(key, kind, f, ctx) {
         : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}</div>`;
   }
   if (ctx.enums[key]) {
-    return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
-      <select id="${id}" name="${name}">${ctx.enums[key].map((v) => html`<option${v === f[key] ? ' selected' : ''}>${v}</option>`)}</select></div>`;
+    return html`<div class="field${err}"><label for="${id}">${label}</label>
+      <select id="${id}" name="${name}">${ctx.enums[key].map((v) => html`<option${v === f[key] ? ' selected' : ''}>${v}</option>`)}</select>${hint(typeHint)}</div>`;
   }
   const list = ctx.suggestions[key];
-  return html`<div class="field${err}"><label for="${id}">${humanize(key)}</label>
+  return html`<div class="field${err}"><label for="${id}">${label}</label>
     <input id="${id}" name="${name}" value="${f[key]}"${list ? html` list="${id}-list" autocomplete="off"` : ''}>
-    ${list ? html`<datalist id="${id}-list">${list.map((v) => html`<option value="${v}">`)}</datalist>` : ''}${hint(HINTS[key])}</div>`;
+    ${list ? html`<datalist id="${id}-list">${list.map((v) => html`<option value="${v}">`)}</datalist>` : ''}${hint(typeHint || HINTS[key])}</div>`;
 }
 
 // version: the row's updated_at when the form was opened (optimistic locking on save).
@@ -194,4 +215,4 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   </form>`;
 }
 
-module.exports = { docToForm, formToDoc, entityForm, humanize, HINTS, LANGS };
+module.exports = { docToForm, formToDoc, entityForm, humanize, fieldLabel, HINTS, LANGS };
