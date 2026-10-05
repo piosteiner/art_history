@@ -12,6 +12,7 @@ export interface TimelineRow {
   from: DateRange | null;
   to: DateRange | null; // same object as `from` for single ranges (a movement's period)
   color?: string; // matches the entity's colour on the map when it was picked individually
+  key?: string; // "artist/vincent-van-gogh", for colorFor
 }
 
 export type YearWindow = { from: number; to: number };
@@ -24,6 +25,8 @@ export interface TimelineOptions {
   /** Zoom/pan to start with, e.g. kept from before the rows changed; reported through onView. */
   initialView?: { from: number; to: number } | null;
   onView?: (view: { from: number; to: number }) => void;
+  /** Colour of a bar without its own `color` (e.g. its route on the map); asked on every repaint, see redraw(). */
+  colorFor?: (row: TimelineRow) => string | undefined;
 }
 
 const NOW = new Date().getFullYear();
@@ -62,7 +65,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
   if (!spans.length) {
     container.classList.remove('timeline');
     container.innerHTML = '<p class="muted">Nothing selected for the timeline.</p>';
-    return { setWindow: () => {}, destroy: () => {} };
+    return { setWindow: () => {}, redraw: () => {}, destroy: () => {} };
   }
 
   const min = Math.floor(Math.min(...spans.map((s) => s.start)) / 10) * 10;
@@ -165,7 +168,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
       if (s.end < v0 || s.start > v1) return;
       const x1 = x(s.start);
       const w = Math.max(x(s.end) - x1, 3);
-      bars.push(`<rect class="bar bar-${escape(s.group.toLowerCase())}${s.open ? ' bar-open' : ''}" data-i="${i}"${s.color ? ` style="fill:${escape(s.color)};opacity:.9"` : ''}
+      bars.push(`<rect class="bar bar-${escape(s.group.toLowerCase())}${s.open ? ' bar-open' : ''}" data-i="${i}"${(s.color ?? opts.colorFor?.(s)) ? ` style="fill:${escape((s.color ?? opts.colorFor?.(s))!)};opacity:.9"` : ''}
           x="${x1}" y="${s.y + 3}" width="${w}" height="${ROW - 8}" rx="3">
           <title>${escape(s.label)}: ${escape(s.from === s.to || !s.to ? s.from?.label ?? '' : `${s.from?.label ?? '?'} – ${s.to.label}`)}</title>
         </rect>`);
@@ -294,6 +297,8 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
   ro.observe(container);
   return {
     setWindow: (w: YearWindow | null) => setWindow(w, true),
+    /** Repaints (e.g. new colours) without rebuilding the controls, so half-typed years stay. */
+    redraw: () => draw(),
     destroy: () => ro.disconnect(),
   };
 }

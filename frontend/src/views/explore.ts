@@ -144,7 +144,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const next = new Map(info.map((i) => [i.key, i.color]));
     const changed = next.size !== routeColors.size || [...next].some(([k, c]) => routeColors.get(k) !== c);
     routeColors = next;
-    if (changed) drawTimeline();
+    if (changed) timeline?.redraw(); // repaint only: a rebuild would wipe years being typed
   }
   const routeLegend = () => {
     const shown = legendAll ? lastRoutes : lastRoutes.slice(0, LEGEND_FIRST);
@@ -311,14 +311,15 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     timeline?.destroy();
     const keep = <T extends { slug: string }>(type: EntityType, items: T[]) => items.filter((i) => includes(sel, type, i.slug));
     const rows: TimelineRow[] = [
-      ...keep('polity', lists.polities).map((p) => ({ group: 'Polities', label: p.name, href: href('polity', p.slug), from: p.period, to: p.period, color: colorOf.get('polity', p.slug) })),
-      ...keep('movement', lists.movements).map((m) => ({ group: 'Movements', label: m.name, href: href('movement', m.slug), from: m.period, to: m.period, color: colorOf.get('movement', m.slug) })),
-      ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), from: a.birth, to: a.death, color: colorOf.get('artist', a.slug) })),
-      ...keep('person', lists.people).map((p) => ({ group: 'People', label: p.name, href: href('person', p.slug), from: p.birth ?? p.active, to: p.birth || p.death ? p.death : p.active, color: colorOf.get('person', p.slug) })),
+      ...keep('polity', lists.polities).map((p) => ({ group: 'Polities', label: p.name, href: href('polity', p.slug), key: `polity/${p.slug}`, from: p.period, to: p.period, color: colorOf.get('polity', p.slug) })),
+      ...keep('movement', lists.movements).map((m) => ({ group: 'Movements', label: m.name, href: href('movement', m.slug), key: `movement/${m.slug}`, from: m.period, to: m.period, color: colorOf.get('movement', m.slug) })),
+      ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), key: `artist/${a.slug}`, from: a.birth, to: a.death, color: colorOf.get('artist', a.slug) })),
+      ...keep('person', lists.people).map((p) => ({ group: 'People', label: p.name, href: href('person', p.slug), key: `person/${p.slug}`, from: p.birth ?? p.active, to: p.birth || p.death ? p.death : p.active, color: colorOf.get('person', p.slug) })),
     ];
     timeline = renderTimeline(timelineEl, rows, {
       initialWindow: win,
       initialView: timelineView,
+      colorFor: (r) => (r.key ? routeColors.get(r.key) : undefined),
       onView: (v) => (timelineView = v),
       onWindow: (w) => {
         win = w;

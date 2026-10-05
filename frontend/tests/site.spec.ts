@@ -254,3 +254,19 @@ test('each displayed route has its own colour, named in the legend', async ({ pa
   const values = Object.values(colours);
   expect(new Set(values).size).toBe(values.length); // no two routes share a colour (up to 12)
 });
+
+test('years typed while the map is still loading are kept (slow API)', async ({ page }) => {
+  // the start map's presence data arrives late, as on a slow connection; meanwhile the user types a window
+  await page.route(/\/v1\/map\/presence\?/, async (route) => {
+    await new Promise((r) => setTimeout(r, 2500));
+    await route.continue();
+  });
+  await page.goto('/');
+  await page.fill('input[name=from]', '1830');
+  await page.fill('input[name=to]', '1850');
+  // the routes arrive and recolour the timeline: the typed years must survive
+  await expect(page.locator('#map-status')).toContainText('Click a place', { timeout: 20_000 });
+  await expect(page.locator('input[name=from]')).toHaveValue('1830');
+  await page.locator('.timeline-form button[type=submit]').click();
+  await expect(page.locator('#map-status')).toContainText('1830–1850', { timeout: 20_000 });
+});
