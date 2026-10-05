@@ -11,7 +11,7 @@ Every date is an object (or `null`):
 ```
 `to` is inclusive. BCE years are negative (`-500`); BCE ISO dates start with `-`. Open ends are `null` (an ongoing period, "since 1808", has `to` and `to_year` = `null`).
 Show `label` to people, use `from`/`to` for timelines.
-Dates may be as coarse as a century: "13th century" is `from: 1201-01-01, to: 1300-12-31`, "late 13th century"
+"c. 1755" (also from Wikidata's "circa") is 1750–1760: ±5 years. Dates may be as coarse as a century: "13th century" is `from: 1201-01-01, to: 1300-12-31`, "late 13th century"
 1267–1300, "1880s" a decade. On a timeline draw the whole span (e.g. a faded bar) rather than a point, and sort by
 `from` (or the midpoint); the `?from=&to=` filters match any overlap, so a century-dated work appears in every
 window inside its century.

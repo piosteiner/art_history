@@ -27,7 +27,7 @@ test('Julian dates are converted to the Gregorian calendar', () => {
 test('circa and earliest/latest qualifiers', () => {
   const circa = { mainsnak: { datavalue: { value: t('+1480-00-00T00:00:00Z', 9) } },
     qualifiers: { P1480: [{ datavalue: { value: { id: 'Q5727902' } } }] } };
-  assert.deepEqual(fromStatement(circa), { value: '1480', label: 'c. 1480' });
+  assert.deepEqual(fromStatement(circa), { value: 'c. 1480', label: null });  // ±5 years, as typed in the admin
   const range = { mainsnak: { datavalue: { value: t('+1480-00-00T00:00:00Z', 9) } },
     qualifiers: { P1319: [{ datavalue: { value: t('+1478-00-00T00:00:00Z', 9) } }], P1326: [{ datavalue: { value: t('+1482-00-00T00:00:00Z', 9) } }] } };
   assert.deepEqual(fromStatement(range), { value: '1478/1482', label: 'c. 1480' });

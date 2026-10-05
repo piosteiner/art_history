@@ -308,3 +308,17 @@ test('materials: suggested from the medium and from terms used before, added wit
   await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
   sql("UPDATE artworks SET materials = '{}' WHERE slug = 'plum-park-in-kameido'");
 });
+
+test('circa dates: "ca. 1755" is c. 1755 = 1750–1760, kept as written', async ({ userA, request }) => {
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-title', 'Test circa');
+  await userA.fill('#f-created', 'ca. 1755');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/artworks\/test-circa\?done=created/);
+  await expect(userA.locator('dl.fields')).toContainText('c. 1755');
+  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/test-circa', { headers: { Host: 'api.localhost' } })).json();
+  expect(api.created).toEqual({ label: 'c. 1755', from: '1750-01-01', to: '1760-12-31', from_year: 1750, to_year: 1760 });
+  await userA.goto('/artworks/test-circa/edit');
+  await expect(userA.locator('#f-created')).toHaveValue('c. 1755');
+  sql("DELETE FROM artworks WHERE slug = 'test-circa'");
+});

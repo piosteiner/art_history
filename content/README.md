@@ -38,6 +38,7 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 | `1478/1482` + `created_label: c. 1480` | somewhere in those years | c. 1480 |
 | `-500` | 500 BCE (year precision only; there is no year 0) | 500 BCE |
 | `1808/` | from 1808, still ongoing — only for periods (`period`, `active`, relationship `period`) | since 1808 |
+| `c. 1755` · `ca. 1755` · `circa 1755` | 1750–1760 (±5 years); also `c. 1755–1760`, `c. 500 BCE` | c. 1755 |
 | `13th century` · `13th c.` | 1201–1300 (strict count, as Wikidata) | 13th century |
 | `early` / `mid` / `late 13th century` | first / middle / last third: 1201–1233 · 1234–1266 · 1267–1300 | late 13th century |
 | `first half of the 13th century` · `second half …` | 1201–1250 · 1251–1300 | as written |

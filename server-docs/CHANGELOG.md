@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-05
 
+### Dates: "c. 1755" / "ca." / "circa" (±5 years)
+- **What:** `backend/src/fuzzy-date.js` accepts circa dates (also ranges and BCE) as ±`CIRCA_YEARS` (5), label "c. 1755",
+  shown as written in forms; Wikidata's circa qualifier on a year gives the same value. Form hint, docs.
+- **Why:** owner: "ca. 1755" was refused; the ±5 convention was pinned since 2026-09-28.
+- **Tested:** unit 23 passing; e2e.
+- **Revert:** redeploy the previous commit (stored ranges stay as they are).
+
 ### Admin: materials suggested from the medium, terms used before clickable
 - **What:** `backend/src/admin/editor/materials.js`: under the materials list, chips "From the medium" (known
   materials and terms in use found in the medium text, plus a few synonyms: oil → oil paint, gilt → gold leaf; in the

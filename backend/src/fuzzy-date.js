@@ -14,6 +14,8 @@
 //   first half of the 13th century · second half of the 13th century      1201–1250 · 1251–1300
 //   13th–14th century            1201–1400          5th century BCE        500–401 BCE
 //   1880s                        1880–1889 (decades; "1200s" is ambiguous — write "13th century" or 1200/1299)
+//   c. 1755 · ca. 1755 · circa 1755        1750–1760: ± CIRCA_YEARS (5) — the owner's convention (2026-10-05)
+//   c. 1755–1760 · c. 500 BCE              1750–1765 · 505–495 BCE
 //
 // There is no year 0: 1 BCE is followed by 1 CE, as in Postgres.
 // formatFuzzyDate() goes the other way (stored daterange → the text above), for the admin form and the export.
@@ -24,7 +26,7 @@ const POINT = /^(-?\d{1,4})(?:-(\d{2})(?:-(\d{2}))?)?$/;
 
 function parsePoint(text) {
   const m = POINT.exec(text);
-  if (!m) throw new Error(`bad date "${text}" (expected YYYY, YYYY-MM, YYYY-MM-DD, A/B, or e.g. "13th century", "late 13th century", "1880s")`);
+  if (!m) throw new Error(`bad date "${text}" (expected YYYY, YYYY-MM, YYYY-MM-DD, A/B, or e.g. "c. 1755", "13th century", "late 13th century", "1880s")`);
   const [y, mo, d] = [Number(m[1]), m[2] && Number(m[2]), m[3] && Number(m[3])];
   if (y === 0) throw new Error(`bad date "${text}": there is no year 0 (use -1 for 1 BCE)`);
   if (mo !== undefined && (mo < 1 || mo > 12)) throw new Error(`bad month in "${text}"`);
@@ -68,9 +70,30 @@ function rangeLabel(from, to) {
 const ordinal = (n) => `${n}${n % 100 >= 11 && n % 100 <= 13 ? 'th' : ['th', 'st', 'nd', 'rd'][n % 10] || 'th'}`;
 const CENTURY = /^(?:(early|mid|late|first half of(?: the)?|second half of(?: the)?)\s+)?(\d{1,2})(?:st|nd|rd|th)(?:\s*[-–]\s*(\d{1,2})(?:st|nd|rd|th))?\s+(?:century|c\.?)(?:\s+(bce|bc|ce|ad))?$/i;
 const DECADE = /^(\d{2,3}0)s$/;
+// "c. 1755" covers this many years on either side. One place to change it (stored ranges keep their old width).
+const CIRCA_YEARS = 5;
+const CIRCA = /^(?:circa|ca\.?|c\.)\s*(\d{1,4})(?:\s*(?:[-–\/]|to)\s*(\d{1,4}))?(?:\s+(bce|bc|ce|ad))?$/i;
+// n years later (or earlier, n < 0) — skipping the year 0, which doesn't exist
+function shiftYear(y, n) {
+  let r = y + n;
+  if (y > 0 && r <= 0) r -= 1;
+  if (y < 0 && r >= 0) r += 1;
+  return r;
+}
 
 // Written-out forms → { from, to (years, signed), label } or null when the text isn't one.
 function parseWords(text) {
+  const cm = CIRCA.exec(text.replace(/\s+/g, ' ').trim());
+  if (cm) {
+    const bce = cm[3] && /^bc/i.test(cm[3]);
+    const [a, b] = [Number(cm[1]), Number(cm[2] || cm[1])].map((y) => (bce ? -y : y));
+    if (!a || !b) throw new Error(`bad date "${text}": there is no year 0`);
+    const [lo, hi] = bce ? [Math.min(a, b), Math.max(a, b)] : [a, b];
+    if (hi < lo) throw new Error(`bad date "${text}": end is before start`);
+    const era = bce ? ' BCE' : '';
+    const label = cm[2] ? `c. ${Number(cm[1])}–${Number(cm[2])}${era}` : `c. ${Number(cm[1])}${era}`;
+    return { from: shiftYear(lo, -CIRCA_YEARS), to: shiftYear(hi, CIRCA_YEARS), label };
+  }
   const dm = DECADE.exec(text);
   if (dm) {
     const y = Number(dm[1]);
@@ -172,4 +195,4 @@ function formatFuzzyDate(range, { coarseStart = false } = {}) {
   return `${pointText(lo, startPrecision)}/${endText}`;
 }
 
-module.exports = { parseFuzzyDate, formatFuzzyDate };
+module.exports = { parseFuzzyDate, formatFuzzyDate, CIRCA_YEARS };

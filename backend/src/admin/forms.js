@@ -10,7 +10,7 @@ const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'It
   ['ar', 'Arabic'], ['fa', 'Persian'], ['el', 'Greek'], ['la', 'Latin']];
 
 const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1853-03-30</code> · <code>1886-03/1888-02-20</code> (from/to, inclusive)
-  · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
+  · <code>c. 1755</code> (±5 years) · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
 const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.`,
   'text[]': 'One per line.',

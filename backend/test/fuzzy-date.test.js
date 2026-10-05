@@ -50,6 +50,16 @@ test('centuries and decades written out, with the text as label', () => {
   assert.throws(() => parseFuzzyDate('0th century'), /bad century/);
 });
 
+test('circa: ±5 years, the label as written', () => {
+  assert.deepEqual(parseFuzzyDate('c. 1755'), { range: '[1750-01-01,1761-01-01)', label: 'c. 1755' });
+  for (const t of ['ca. 1755', 'circa 1755', 'c.1755', 'Ca 1755', 'CIRCA  1755']) assert.equal(parseFuzzyDate(t).range, '[1750-01-01,1761-01-01)', t);
+  assert.deepEqual(parseFuzzyDate('c. 1755–1760'), { range: '[1750-01-01,1766-01-01)', label: 'c. 1755–1760' });
+  assert.equal(parseFuzzyDate('ca. 1755-1760').label, 'c. 1755–1760');
+  assert.deepEqual(parseFuzzyDate('c. 500 BCE'), { range: '[0505-01-01 BC,0494-01-01 BC)', label: 'c. 500 BCE' });
+  assert.equal(parseFuzzyDate('c. 3').range, '[0003-01-01 BC,0009-01-01)');   // 3 BCE … 8 CE: no year 0
+  assert.throws(() => parseFuzzyDate('c. 1760–1755'), /end is before start/);
+});
+
 test('leap years (proleptic Gregorian, like Postgres)', () => {
   assert.equal(parseFuzzyDate('1888-02-29').range, '[1888-02-29,1888-03-01)');
   assert.throws(() => parseFuzzyDate('1900-02-29'), /bad day/);
@@ -57,7 +67,7 @@ test('leap years (proleptic Gregorian, like Postgres)', () => {
 });
 
 test('rejects malformed input', () => {
-  for (const bad of ['c. 1480', '1888-13', '1888-02-30', '1890/1880', '1/2/3', '18880', '']) {
+  for (const bad of ['c 1480 x', '1888-13', '1888-02-30', '1890/1880', '1/2/3', '18880', '']) {
     assert.throws(() => parseFuzzyDate(bad), undefined, bad);
   }
   assert.equal(parseFuzzyDate(null), null);

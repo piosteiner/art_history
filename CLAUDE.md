@@ -56,6 +56,6 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Open: after the owner fixes The Great Wave's inventory number (no institution), add a migration
   `ALTER TABLE artworks VALIDATE CONSTRAINT artworks_inventory_needs_institution` (016 added it NOT VALID).
-- 📌 Pinned: shorthand for "c. YYYY" — owner floated ±5 years; today authors write an explicit range + `_label`.
+- Decided + built (2026-10-05): "c. YYYY" / "ca." / "circa" = ±5 years (`CIRCA_YEARS` in `src/fuzzy-date.js`), label as written; Wikidata circa on a year the same.
 - Decided + built (migration 005): moved institutions — `institutions.place_id` = current location, dated `located_in`
   relationships = earlier locations (mirrors `current_institution_id` + `housed_at`).

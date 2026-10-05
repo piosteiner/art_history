@@ -65,6 +65,12 @@ function fromStatement(stmt) {
     return { value, label: main ? `c. ${label(main)}` : null };
   }
   if (!main) return null;
+  // circa on a year: the same "c. 1755" as typed in the admin (± CIRCA_YEARS, src/fuzzy-date.js); finer precisions
+  // keep their own range and just get the label
+  if (circa && /^-?\d{1,4}$/.test(main.value)) {
+    const y = Number(main.value);
+    return { value: y < 0 ? `c. ${-y} BCE` : `c. ${y}`, label: null };
+  }
   return circa ? { value: main.value, label: `c. ${label(main)}` } : main;
 }
 
