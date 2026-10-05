@@ -421,3 +421,5 @@ main { min-height: 60vh; }
 .original-name .romanization { font-size: .95rem; color: var(--muted); font-style: italic; margin-left: .5rem; }
 ruby rt { font-size: .5em; color: var(--muted); }
 .card-original { font-size: .85rem; color: var(--muted); }
+.restored { font-size: .88rem; margin: 0 0 .6rem; padding: .35rem .7rem; background: var(--picked-bg); border-radius: var(--radius); display: inline-block; }
+.restored[hidden] { display: none; }

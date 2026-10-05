@@ -39,10 +39,12 @@ function remembered(): URLSearchParams | null {
 
 export function explore(main: HTMLElement, params: URLSearchParams) {
   // a plain / brings back the last view
+  let restored = false;
   if (![...params.keys()].length) {
     const last = remembered();
     if (last && [...last.keys()].length) {
       params = last;
+      restored = true;
       replaceQuery(params);
     }
   }
@@ -54,6 +56,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       <h1>Art history on a map and a timeline</h1>
       <p>Where artists were born, lived and travelled, where their works were made and where they are now. Choose what to show, then pick a time window on the timeline to see who was where.</p>
     </div>
+    <p class="restored" id="restored" hidden></p>
     <div id="pickers" class="pickers-wrap"><p class="muted small">Loading entries…</p></div>
     <div class="map-wrap">
       <div class="map" id="map"></div>
@@ -68,6 +71,19 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   const status = main.querySelector<HTMLElement>('#map-status')!;
   const legend = main.querySelector<HTMLElement>('#legend')!;
   const encountersEl = main.querySelector<HTMLElement>('#encounters')!;
+
+  // a remembered view (time window, picks) must not look like the default start page
+  const restoredEl = main.querySelector<HTMLElement>('#restored')!;
+  if (restored) {
+    const w = readWindow(params);
+    const parts = [w ? `time window ${w.from === w.to ? w.from : `${w.from}–${w.to}`}` : '', [...params.keys()].some((k) => k !== 'from' && k !== 'to') ? 'your selection' : '']
+      .filter(Boolean).join(' and ');
+    render(restoredEl, html`Showing your last view (${parts}). <a href="/" data-fresh>Start fresh</a>`);
+    restoredEl.hidden = false;
+    restoredEl.querySelector('[data-fresh]')!.addEventListener('click', () => {
+      try { localStorage.removeItem(STORAGE_KEY); } catch { /* no storage */ }
+    });
+  }
 
   // ---- crossed paths: entries at the same place at the same time, listed under the map ----
   const SHOW_FIRST = 6;
@@ -212,7 +228,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   async function presence(w: NonNullable<Window>, stale: () => boolean) {
     const types = (['artist', 'person', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
     const span = w.from === w.to ? `${w.from}` : `${w.from}–${w.to}`;
-    render(legend, html`<span><i class="dot" style="background:${COLORS.presence}"></i>physically there in ${span}</span>`);
+    render(legend, html`<span><i class="dot" style="background:${COLORS.presence}"></i>physically there in ${span}</span>
+      <span><i class="line" style="background:${TYPE_COLORS.artist}"></i>routes through the stops in ${span}, in date order</span>`);
     if (!types.length) {
       showPresence(map, { type: 'FeatureCollection', features: [] });
       status.textContent = 'Artists, people and artworks are all hidden, so there is nothing to place on the map.';

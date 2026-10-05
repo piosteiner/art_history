@@ -225,3 +225,17 @@ test('people (formerly patrons): page, roles, old /patrons/ addresses redirect',
   await page.goto('/people');
   await expect(page.locator('h1')).toHaveText('People');
 });
+
+test('a remembered time window: routes still drawn, the page says so, "Start fresh" resets', async ({ page }) => {
+  await page.goto('/privacy');
+  await page.evaluate(() => localStorage.setItem('arthistory:explore', 'from=1856&to=1907'));
+  await page.goto('/');
+  await expect(page.locator('#restored')).toContainText('time window 1856–1907');
+  await page.waitForFunction(() => {
+    const m = (window as unknown as { __maps?: { getSource(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
+    return !!m?.getSource('ov-routes') && m.querySourceFeatures('ov-routes').length > 0;
+  });
+  await page.locator('[data-fresh]').click();
+  await expect(page.locator('#restored')).toBeHidden();
+  await expect(page.locator('#map-status')).toContainText('Click a place to see what happened there');
+});

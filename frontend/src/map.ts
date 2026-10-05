@@ -70,13 +70,15 @@ function removeLayers(map: MapLibre, ids: string[]) {
 }
 
 /** Click popups listing every feature under the pointer (several links can share one place). */
-function popupOnClick(map: MapLibre, layers: string[], content: (features: MapLayerMouseEvent['features']) => Html) {
+function popupOnClick(map: MapLibre, layers: string[], content: (features: MapLayerMouseEvent['features']) => Html, unless: string[] = []) {
   // one handler for the whole group: a click on overlapping layers opens one popup, not one per layer
   map.on('click', (e) => {
     const present = layers.filter((l) => map.getLayer(l));
     if (!present.length) return;
     const features = map.queryRenderedFeatures(e.point, { layers: present });
     if (!features.length) return;
+    const blockers = unless.filter((l) => map.getLayer(l));
+    if (blockers.length && map.queryRenderedFeatures(e.point, { layers: blockers }).length) return; // that group's popup opens instead
     new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(content(features).value).addTo(map);
   });
   for (const layer of layers) {
@@ -257,40 +259,12 @@ export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceR
       return { ...f, properties: { ...f.properties, count: rows.length, rows: JSON.stringify(rows) } } as unknown as GeoJSON.Feature;
     }),
   };
-  // one line per entry: its dated stops in date order, repeated stays at the same place merged
-  const perEntity = new Map<string, PresenceRow[]>();
-  for (const r of presence) perEntity.set(rowKey(r), [...(perEntity.get(rowKey(r)) ?? []), r]);
-  const routes: GeoJSON.Feature[] = [];
-  for (const [key, rows] of perEntity) {
-    const stops = rows.filter((r) => r.period?.from_year != null).sort(byDate)
-      .filter((r, i, all) => i === 0 || r.place.slug !== all[i - 1].place.slug);
-    const line = stops.map((r) => coords(r.place.slug)).filter((c): c is [number, number] => !!c);
-    if (line.length < 2) continue;
-    const e = rows[0].entity;
-    routes.push({
-      type: 'Feature', geometry: { type: 'LineString', coordinates: line },
-      properties: {
-        key, name: e.name, type: e.type, slug: e.slug, color: TYPE_COLORS[e.type] ?? COLORS.route,
-        stops: JSON.stringify(stops.map((s) => ({ place: s.place.name, slug: s.place.slug, label: s.label, period: s.period?.label ?? '' }))),
-      },
-    });
-  }
+  const routes = buildRoutes(presence, coords);
 
   whenReady(map, () => {
     clearOverlays(map);
     setData(map, 'places', fc);
-    setData(map, 'ov-routes', { type: 'FeatureCollection', features: routes });
-    map.addLayer({
-      id: 'ov-routes', type: 'line', source: 'ov-routes',
-      layout: { 'line-join': 'round', 'line-cap': 'round' },
-      paint: { 'line-color': ['get', 'color'], 'line-width': 2, 'line-opacity': 0.45 },
-    });
-    addArrows(map, 'ov-arrows', 'ov-routes', ['get', 'color']);
-    map.addLayer({
-      id: 'ov-route-hover', type: 'line', source: 'ov-routes', filter: ['==', ['get', 'key'], ''],
-      layout: { 'line-join': 'round', 'line-cap': 'round' },
-      paint: { 'line-color': ['get', 'color'], 'line-width': 4.5, 'line-opacity': 0.95 },
-    });
+    addRouteLayers(map, routes);
     const count: ExpressionSpecification = ['get', 'count'];
     const color: ExpressionSpecification = ['case', ['>', count, 0], COLORS.place, ['>', ['get', 'association_count'], 0], COLORS.association, COLORS.empty];
     const isArea: ExpressionSpecification = ['in', ['get', 'kind'], ['literal', ['country', 'region', 'empire', 'continent']]];
@@ -312,25 +286,14 @@ export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceR
       },
     });
     once(map, 'places', () => bindOverview(map));
+    once(map, 'routes', () => bindRoutes(map));
   });
 }
 
 function bindOverview(map: MapLibre) {
-  // a place under the pointer wins over a route passing through it
-  popupOnClick(map, [...PLACE_LAYERS, 'ov-routes'], (features) => {
-    const all = features ?? [];
-    const placeHits = all.filter((f) => PLACE_LAYERS.includes(f.layer.id));
-    if (!placeHits.length) {
-      const seenRoutes = new Set<string>();
-      return html`${all.filter((f) => !seenRoutes.has(f.properties.key) && seenRoutes.add(f.properties.key)).slice(0, 4).map((f) => {
-        const p = f.properties;
-        const stops = prop<{ place: string; slug: string; label: string; period: string }[]>(p.stops);
-        return html`<div class="popup-row"><strong><a href="${href(p.type, p.slug)}">${p.name}</a></strong> <span class="muted">${stops.length} stops</span>
-          <ol class="popup-list">${stops.map((s) => html`<li><a href="${href('place', s.slug)}">${s.place}</a> <span class="muted">${s.label}${s.period ? ` · ${s.period}` : ''}</span></li>`)}</ol></div>`;
-      })}`;
-    }
+  popupOnClick(map, PLACE_LAYERS, (features) => {
     const seen = new Set<string>();
-    const rows = placeHits
+    const rows = (features ?? [])
       .filter((f) => !seen.has(f.properties.slug) && seen.add(f.properties.slug))
       .sort((a, b) => Number(a.layer.id === 'places-areas') - Number(b.layer.id === 'places-areas'));
     return html`${rows.map((f) => {
@@ -343,7 +306,62 @@ function bindOverview(map: MapLibre) {
         ${assoc ? html`<div class="popup-note"><a href="${href('place', p.slug)}">${assoc} ${assoc === 1 ? 'association' : 'associations'}</a> (influence, depictions …), not travel</div>` : ''}</div>`;
     })}`;
   });
-  // hovering a route highlights it and names it
+}
+
+// ---- routes (start map and time window) ----------------------------------------------------------
+
+/** Layers whose features win over a route passing underneath (their popup opens, the route stays quiet). */
+const ROUTE_BLOCKERS = [...PLACE_LAYERS, 'presence-circles'];
+
+/** One line per entry through its dated stops in date order (repeated stays at the same place merged). */
+function buildRoutes(presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined): GeoJSON.Feature[] {
+  const perEntity = new Map<string, PresenceRow[]>();
+  for (const r of presence) perEntity.set(rowKey(r), [...(perEntity.get(rowKey(r)) ?? []), r]);
+  const routes: GeoJSON.Feature[] = [];
+  for (const [key, rows] of perEntity) {
+    const stops = rows.filter((r) => r.period?.from_year != null).sort(byDate)
+      .filter((r, i, all) => i === 0 || r.place.slug !== all[i - 1].place.slug);
+    const line = stops.map((r) => coords(r.place.slug)).filter((c): c is [number, number] => !!c);
+    if (line.length < 2) continue;
+    const e = rows[0].entity;
+    routes.push({
+      type: 'Feature', geometry: { type: 'LineString', coordinates: line },
+      properties: {
+        key, name: e.name, type: e.type, slug: e.slug, color: TYPE_COLORS[e.type] ?? COLORS.route,
+        stops: JSON.stringify(stops.map((st) => ({ place: st.place.name, slug: st.place.slug, label: st.label, period: st.period?.label ?? '' }))),
+      },
+    });
+  }
+  return routes;
+}
+
+/** Route lines with arrows and a highlight layer; call after clearOverlays, before the place circles. */
+function addRouteLayers(map: MapLibre, routes: GeoJSON.Feature[]) {
+  setData(map, 'ov-routes', { type: 'FeatureCollection', features: routes });
+  map.addLayer({
+    id: 'ov-routes', type: 'line', source: 'ov-routes',
+    layout: { 'line-join': 'round', 'line-cap': 'round' },
+    paint: { 'line-color': ['get', 'color'], 'line-width': 2, 'line-opacity': 0.45 },
+  });
+  addArrows(map, 'ov-arrows', 'ov-routes', ['get', 'color']);
+  map.addLayer({
+    id: 'ov-route-hover', type: 'line', source: 'ov-routes', filter: ['==', ['get', 'key'], ''],
+    layout: { 'line-join': 'round', 'line-cap': 'round' },
+    paint: { 'line-color': ['get', 'color'], 'line-width': 4.5, 'line-opacity': 0.95 },
+  });
+}
+
+/** Hover a route: highlighted and named; click it: its stops in date order (unless a place is under the pointer). */
+function bindRoutes(map: MapLibre) {
+  popupOnClick(map, ['ov-routes'], (features) => {
+    const seenRoutes = new Set<string>();
+    return html`${(features ?? []).filter((f) => !seenRoutes.has(f.properties.key) && seenRoutes.add(f.properties.key)).slice(0, 4).map((f) => {
+      const p = f.properties;
+      const stops = prop<{ place: string; slug: string; label: string; period: string }[]>(p.stops);
+      return html`<div class="popup-row"><strong><a href="${href(p.type, p.slug)}">${p.name}</a></strong> <span class="muted">${stops.length} stops</span>
+        <ol class="popup-list">${stops.map((st) => html`<li><a href="${href('place', st.slug)}">${st.place}</a> <span class="muted">${st.label}${st.period ? ` · ${st.period}` : ''}</span></li>`)}</ol></div>`;
+    })}`;
+  }, ROUTE_BLOCKERS);
   const tip = new Popup({ closeButton: false, closeOnClick: false, className: 'hover-tip', offset: 10 });
   const unhover = () => {
     if (map.getLayer('ov-route-hover')) map.setFilter('ov-route-hover', ['==', ['get', 'key'], '']);
@@ -352,7 +370,7 @@ function bindOverview(map: MapLibre) {
   map.on('mousemove', 'ov-routes', (e) => {
     const f = e.features?.[0];
     // over a place the place matters (its popup lists the routes passing through anyway)
-    const onPlace = map.queryRenderedFeatures(e.point, { layers: PLACE_LAYERS.filter((l) => map.getLayer(l)) }).length > 0;
+    const onPlace = map.queryRenderedFeatures(e.point, { layers: ROUTE_BLOCKERS.filter((l) => map.getLayer(l)) }).length > 0;
     if (!f || onPlace) return unhover();
     map.setFilter('ov-route-hover', ['==', ['get', 'key'], f.properties.key]);
     tip.setLngLat(e.lngLat).setHTML(html`${f.properties.name}`.value).addTo(map);
@@ -363,8 +381,13 @@ function bindOverview(map: MapLibre) {
 
 // ---- presence in a time window ----------------------------------------------------------------
 
-/** Groups presence features by place: one circle per place, sized by how many people/works were there. */
+/**
+ * Groups presence features by place: one circle per place, sized by how many people/works were there; plus each
+ * entry's route through its stops inside the window.
+ */
 export function showPresence(map: MapLibre, fc: PresenceMap) {
+  const at = new Map(fc.features.map((x) => [x.properties.place.slug, x.geometry.coordinates] as const));
+  const routes = buildRoutes(fc.features.map((x) => x.properties), (slug) => at.get(slug));
   const byPlace = new Map<string, { coords: [number, number]; name: string; slug: string; rows: PresenceMap['features'] }>();
   for (const f of fc.features) {
     const key = f.properties.place.slug;
@@ -384,6 +407,7 @@ export function showPresence(map: MapLibre, fc: PresenceMap) {
   };
   whenReady(map, () => {
     clearOverlays(map);
+    addRouteLayers(map, routes);
     setData(map, 'presence', grouped);
     map.addLayer({
       id: 'presence-circles', type: 'circle', source: 'presence',
@@ -394,6 +418,7 @@ export function showPresence(map: MapLibre, fc: PresenceMap) {
       },
     });
     once(map, 'presence', () => bindPresencePopups(map));
+    once(map, 'routes', () => bindRoutes(map));
   });
 }
 
