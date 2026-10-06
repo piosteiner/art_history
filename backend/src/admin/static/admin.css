@@ -255,3 +255,8 @@ button.chip.suggested { border-color: var(--accent); color: var(--accent); }
 .cm-tooltip-autocomplete { background: var(--panel); border: 1px solid var(--line); color: var(--fg); }
 .cm-tooltip-autocomplete ul li[aria-selected] { background: var(--accent); color: var(--accent-fg); }
 .cm-completionDetail { margin-left: .6rem; opacity: .7; font-style: normal; }
+
+/* image search (src/admin/imagesearch.js) */
+.find-results { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1rem; }
+.find-item img { height: 170px; }
+.source-tabs { display: flex; gap: 1rem; flex-wrap: wrap; }

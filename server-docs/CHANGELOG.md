@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Admin: find freely licensed images (Commons, Met, Art Institute of Chicago, Cleveland)
+- **What:** `backend/src/admin/imagesearch.js` + page `/<type>/<slug>/images/find` ("Find images…" in the Images
+  section): searches Wikimedia Commons files (only with a licence statement), the Met (v1.1 search — `/v1/search` was
+  retired by the Met on 2026-10-01 — public-domain objects, web-sized image), the Art Institute of Chicago (public
+  domain, IIIF) and Cleveland (CC0); "Add" stores url, source page, licence and credit and returns to the results.
+  Outgoing requests identify the site (User-Agent, AIC-User-Agent). Bases configurable for the tests.
+- **Why:** owner: many artworks have no Wikidata item; only explicitly released photos are legally safe (Swiss law
+  also protects simple photographs).
+- **Tested:** e2e 66 passing (fixtures for all four sources).
+- **Revert:** redeploy the previous commit.
+
 ### Wikidata: images for new entries are saved with Create
 - **What:** the review of a new entry offers its Commons images (first pre-selected when it has none); the picks travel
   with the new-entry form (hidden `wd.images`, kept in the draft), are shown there, and are inserted by `saveEntity`

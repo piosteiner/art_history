@@ -99,7 +99,9 @@ function section({ t, e, images, licenseList }) {
         <div class="image-actions">${i > 0 ? moveBtn(img, 'up', '↑', 'Move earlier') : ''}${i < images.length - 1 ? moveBtn(img, 'down', '↓', 'Move later') : ''}
           ${i > 0 ? moveBtn(img, 'first', 'make main', 'Make this the main image') : ''}<a href="/images/${img.id}/edit">edit</a></div></figcaption>
     </figure>`)}</div>` : html`<p class="muted">None yet.</p>`}
-    <details><summary><b>+ Add image</b></summary>${form({ action: `${base}/images`, submit: 'Add', licenseList })}
+    <p class="actions"><a class="button secondary" href="${base}/images/find">Find images…</a>
+      <span class="muted small">Wikimedia Commons and open-access museums (Met, Art Institute of Chicago, Cleveland) — licence and credit filled in.</span></p>
+    <details><summary><b>+ Add image by address</b></summary>${form({ action: `${base}/images`, submit: 'Add', licenseList })}
       <p class="muted small">Tip: "Wikidata…" offers an item's Commons images with license and credit filled in.</p></details>`;
 }
 

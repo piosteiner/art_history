@@ -72,7 +72,7 @@ test('several images per entry: add, reorder (first = main image), edit, remove 
   await userA.route(/^https:\/\/(upload|thumb)\.wikimedia\.org\//, (route) => route.fulfill({ status: 200, contentType: 'image/png', body: PNG }));
   const add = async (fields) => {
     await userA.goto('/institutions/van-gogh-museum');
-    await userA.click('summary:has-text("+ Add image")');
+    await userA.click('summary:has-text("+ Add image by address")');
     for (const [k, v] of Object.entries(fields)) await userA.fill(`#img-${k}`, v);
     await Promise.all([userA.waitForNavigation(), userA.click('.image-form button')]);
     await expect(userA.locator('.flash.ok')).toHaveText('Image added.');
@@ -84,7 +84,7 @@ test('several images per entry: add, reorder (first = main image), edit, remove 
   await expect(userA.locator('.image-preview figcaption')).toContainText('Photo: someone · CC BY-SA 4.0');
 
   // the same image twice is refused with a readable message
-  await userA.click('summary:has-text("+ Add image")');
+  await userA.click('summary:has-text("+ Add image by address")');
   await userA.fill('#img-url', 'https://upload.wikimedia.org/wikipedia/commons/c/cd/Entrance.jpg');
   await Promise.all([userA.waitForNavigation(), userA.click('.image-form button')]);
   await expect(userA.locator('.flash.error')).toHaveText("This image is already one of the entry's images.");

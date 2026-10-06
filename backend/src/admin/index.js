@@ -26,6 +26,7 @@ const drafts = require('./drafts');
 const wikidata = require('./wikidata');
 const quality = require('./quality');
 const images = require('./images');
+const imagesearch = require('./imagesearch');
 
 const { thumbUrl } = images;
 const { searchPage, reviewPage } = require('./wikidata-ui');
@@ -1088,7 +1089,51 @@ router.post('/:plural/:slug/images', async (req, res) => {
         ${images.form({ action: `/${t.folder}/${e.slug}/images`, img: req.body, submit: 'Add', licenseList: await images.licenses(adminPool) })}`,
     });
   }
+  // from the image search: back to the results (only that page of this entry — never an arbitrary address)
+  const back = String(req.body.back || '');
+  if (back.startsWith(`/${t.folder}/${e.slug}/images/find?`)) return res.redirect(303, `${back}&done=img-added`);
   res.redirect(303, `/${t.folder}/${e.slug}?done=img-added#images`);
+});
+
+// Find freely licensed images (Wikimedia Commons, Met, Art Institute of Chicago, Cleveland — src/admin/imagesearch.js).
+router.get('/:plural/:slug/images/find', async (req, res) => {
+  const { t } = req;
+  const e = t.imageFk && await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  const source = imagesearch.SOURCES[req.query.source] ? req.query.source : 'commons';
+  // default search: the name, for an artwork with its creator ("The Great Wave off Kanagawa Hokusai")
+  let q = String(req.query.q ?? '').trim().slice(0, 200);
+  if (!req.query.q) {
+    const creator = t.type === 'artwork' && e.doc.creator
+      ? (await adminPool.query('SELECT name FROM artists WHERE slug = $1', [e.doc.creator])).rows[0] : null;
+    q = [e.name, creator && creator.name].filter(Boolean).join(' ');
+  }
+  const { results, error } = await imagesearch.find(source, q);
+  const have = new Set((await readImages(adminPool, t.type, e.id)).map((i) => i.url));
+  const self = `/${t.folder}/${e.slug}/images/find?${new URLSearchParams({ source, q })}`;
+  send(req, res, {
+    title: `Find images · ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' },
+    body: html`<p class="muted"><a href="/${t.folder}/${e.slug}#images">← ${e.name}</a></p><h1>Find images</h1>
+      <p class="muted">Only freely usable images are shown — public domain / CC0, or with a free licence on Commons.
+        Licence, credit and source are added with the image.</p>
+      <form method="get" action="/${t.folder}/${e.slug}/images/find" class="bar">
+        <input type="search" name="q" value="${q}" class="grow" aria-label="search">
+        <select name="source" aria-label="where">${Object.entries(imagesearch.SOURCES).map(([k, s]) => html`<option value="${k}"${k === source ? ' selected' : ''}>${s.name}</option>`)}</select>
+        <button>Search</button></form>
+      <p class="source-tabs">${Object.entries(imagesearch.SOURCES).map(([k, s]) => (k === source ? html`<b>${s.name}</b>`
+        : html`<a href="/${t.folder}/${e.slug}/images/find?${new URLSearchParams({ source: k, q })}">${s.name}</a>`))}</p>
+      ${error ? html`<p class="flash error">${error}</p>` : ''}
+      ${!error && !results.length ? html`<p class="muted">Nothing found here — try another source or fewer words (e.g. only the artist).</p>` : ''}
+      <div class="find-results">${results.map((r) => html`<figure class="image-item find-item">
+        <a href="${r.source_url || r.url}" target="_blank" rel="noopener"><img src="${r.thumb}" alt="" loading="lazy" decoding="async"></a>
+        <figcaption><b>${r.title || ''}</b>${r.by ? html`<div class="small">${r.by}</div>` : ''}
+          <div class="muted small">${[r.credit, r.license].filter(Boolean).join(' · ')}</div>
+          ${have.has(r.url) ? html`<div class="tag">added ✓</div>` : html`<form method="post" action="/${t.folder}/${e.slug}/images">
+            <input type="hidden" name="url" value="${r.url}"><input type="hidden" name="source_url" value="${r.source_url || ''}">
+            <input type="hidden" name="license" value="${r.license || ''}"><input type="hidden" name="credit" value="${r.credit || ''}">
+            <input type="hidden" name="back" value="${self}"><button class="small">Add</button></form>`}
+        </figcaption></figure>`)}</div>`,
+  });
 });
 
 router.get('/:plural/:slug/edit', async (req, res) => {

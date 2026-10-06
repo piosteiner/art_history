@@ -57,6 +57,30 @@ function handle(req, res) {
     return json({ search: Object.values(ENTITIES).filter((e) => e.labels.en.value.toLowerCase().includes(q))
       .map((e) => ({ id: e.id, label: e.labels.en.value, description: e.descriptions.en.value })) });
   }
+  // image search (src/admin/imagesearch.js): Commons file search, the Met, Art Institute of Chicago, Cleveland
+  if (url.pathname === '/w/api.php' && p.get('generator') === 'search') {
+    const meta = (lic, artist) => ({ LicenseShortName: { value: lic }, Artist: { value: artist }, ObjectName: { value: 'Plum Park in Kameido' } });
+    return json({ query: { pages: {
+      1: { index: 1, title: 'File:Hiroshige plum park.jpg', imageinfo: [{ mime: 'image/jpeg', thumburl: 'https://upload.wikimedia.org/test/plum-park.jpg?utm=x',
+        descriptionurl: 'https://commons.wikimedia.org/wiki/File:Hiroshige_plum_park.jpg', extmetadata: meta('Public domain', '<a>Hiroshige</a>') }] },
+      2: { index: 2, title: 'File:No licence.jpg', imageinfo: [{ mime: 'image/jpeg', thumburl: 'https://upload.wikimedia.org/test/nolicence.jpg',
+        descriptionurl: 'https://commons.wikimedia.org/wiki/File:No_licence.jpg', extmetadata: {} }] } } } });  // left out: no licence
+  }
+  if (url.pathname === '/public/collection/v1.1/search') return json({ total: 2, objectIDs: [1, 2] });
+  if (url.pathname.startsWith('/public/collection/v1/objects/')) {
+    const id = Number(url.pathname.split('/').pop());
+    return json(id === 1
+      ? { objectID: 1, isPublicDomain: true, primaryImage: 'https://images.metmuseum.org/test/original.jpg', primaryImageSmall: 'https://images.metmuseum.org/test/web-large.jpg',
+        objectURL: 'https://www.metmuseum.org/art/collection/search/1', title: 'Plum Garden at Kameido', artistDisplayName: 'Utagawa Hiroshige', objectDate: '1857' }
+      : { objectID: 2, isPublicDomain: false, primaryImage: 'https://images.metmuseum.org/test/restricted.jpg', title: 'Not free' });  // left out
+  }
+  if (url.pathname === '/api/v1/artworks/search') {
+    return json({ config: { iiif_url: 'https://www.artic.edu/iiif/2' }, data: [{ id: 7, title: 'Plum Estate, Kameido', artist_display: 'Utagawa Hiroshige\nJapanese', date_display: '1857', image_id: 'abc', is_public_domain: true }] });
+  }
+  if (url.pathname === '/api/artworks/') {
+    return json({ data: [{ title: 'Kameido Plum', url: 'https://clevelandart.org/art/1', share_license_status: 'CC0', creation_date: '1857',
+      creators: [{ description: 'Hiroshige (Japanese)' }], images: { web: { url: 'https://openaccess-cdn.clevelandart.org/test/web.jpg' } } }] });
+  }
   if (url.pathname === '/w/api.php' && p.get('action') === 'query') {  // Commons imageinfo, per file
     const file = p.get('titles').replace(/^File:/, '').replace(/ /g, '_');
     return json({ query: { pages: { 1: { imageinfo: [{ thumburl: `https://upload.wikimedia.org/test/${encodeURIComponent(file)}`,

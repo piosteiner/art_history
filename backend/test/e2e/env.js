@@ -16,5 +16,6 @@ module.exports = {
   PID_FILE: path.join(STATE_DIR, 'server.pid'),
   // Wikidata/Commons point at the fixture server (wikidata-fixtures.js), never at the real sites.
   serverEnv: () => ({ ...process.env, DB_NAME: 'arthistory_test', PORT: String(PORT), NODE_ENV: 'development',
-    WIKIDATA_BASE: 'http://127.0.0.1:3007', COMMONS_BASE: 'http://127.0.0.1:3007' }),
+    WIKIDATA_BASE: 'http://127.0.0.1:3007', COMMONS_BASE: 'http://127.0.0.1:3007',
+    MET_BASE: 'http://127.0.0.1:3007', AIC_BASE: 'http://127.0.0.1:3007', CLEVELAND_BASE: 'http://127.0.0.1:3007' }),
 };
