@@ -670,8 +670,9 @@ router.param('plural', (req, res, next, plural) => {
   next();
 });
 
-// Everything a form needs from the database: enum choices, suggestions from existing values, ref targets.
-async function formContext(t) {
+// Everything a form needs from the database: enum choices, suggestions from existing values, ref targets;
+// for an existing artwork (id) also its co-creators, named under the creator field.
+async function formContext(t, id = null) {
   const enums = Object.fromEntries((await adminPool.query(`
     SELECT a.attname, array_agg(e.enumlabel::text ORDER BY e.enumsortorder) AS vals
     FROM pg_attribute a JOIN pg_enum e ON e.enumtypid = a.atttypid
@@ -692,7 +693,10 @@ async function formContext(t) {
     const target = kind === 'parent' ? t : kind.startsWith('ref:') ? BY_TYPE[kind.slice(4)] : null;
     if (target) refs[key] = (await adminPool.query(`SELECT slug, ${target.name} AS name FROM ${target.table} ORDER BY 2`)).rows;
   }
-  return { enums, suggestions, refs, used, errorKeys: new Set(), confirmNew: {} };
+  const coCreators = t.type === 'artwork' && id !== null ? (await adminPool.query(`
+    SELECT a.name, r.label FROM relationships r JOIN artists a ON a.id = r.object_id
+    WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = $1 ORDER BY a.name`, [id])).rows : [];
+  return { enums, suggestions, refs, used, coCreators, errorKeys: new Set(), confirmNew: {} };
 }
 
 async function findEntity(t, slug) {
@@ -959,6 +963,30 @@ function showValue(t, key, kind, doc, glossary = new Map()) {
   return v;
 }
 
+// An artwork's creators in one place: the creator field (main creator) and the co_creator relationships
+// (migration 028) — each with its part, certainty and an edit link — plus a short form to add one.
+function creatorsRow(e, main, coCreators) {
+  if (!main && !coCreators.length) return '';
+  return html`<dt id="creators">Creator${coCreators.length ? 's' : ''}</dt><dd class="creators">
+    ${main ? html`<a href="/artists/${main.slug}">${main.name}</a>` : html`<span class="muted">no main creator</span>`}
+    ${coCreators.map(({ id, to_name: toName, rel }) => html`<div>+ <a href="/artists/${rel.to.split('/')[1]}">${toName}</a>
+      <span class="muted">${[rel.label, rel.certainty !== 'attested' && rel.certainty].filter(Boolean).join(' · ')}</span>
+      <a class="small" href="/relationships/${id}/edit">edit</a></div>`)}
+    <details class="add-co-creator"><summary class="small">+ Add co-creator</summary>
+      <form method="post" action="/artworks/${e.slug}/relationships?from=creators" class="form">
+        <select id="cc-type" name="type" hidden><option value="co_creator" data-object-types="artist" selected>co-creator</option></select>
+        <div class="row">
+          <div class="field"><label for="cc-to">Artist</label>
+            <input id="cc-to" name="to" required placeholder="start typing a name" autocomplete="off" data-lookup-from="cc-type"></div>
+          <div class="field"><label for="cc-label">Part</label><input id="cc-label" name="label" placeholder="optional, e.g. landscape, figures"></div>
+          <div class="field"><label for="cc-cert">Certainty</label><select id="cc-cert" name="certainty">
+            ${['attested', 'probable', 'possible', 'disputed'].map((c) => html`<option>${c}</option>`)}</select></div>
+        </div>
+        <div class="hint">Period, notes and sources: <i>edit</i> after adding. The main creator is the Creator field (Edit).</div>
+        <div class="actions"><button>Add</button></div>
+      </form></details></dd>`;
+}
+
 router.get('/:plural/:slug', async (req, res) => {
   const { t } = req;
   const e = await findEntity(t, req.params.slug);
@@ -974,6 +1002,11 @@ router.get('/:plural/:slug', async (req, res) => {
     allEntities(adminPool),
   ]);
   const labels = Object.fromEntries(types.map((x) => [x.code, x.label]));
+  // an artwork's further creators are shown with the creator (creatorsRow), not among the relationships
+  const coCreators = outgoing.filter((o) => o.rel.type === 'co_creator');
+  const otherRels = outgoing.filter((o) => o.rel.type !== 'co_creator');
+  const mainCreator = t.type === 'artwork' && e.doc.creator
+    ? (await adminPool.query('SELECT slug, name FROM artists WHERE slug = $1', [e.doc.creator])).rows[0] : null;
   const name = e.name;
   const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
   const pending = await collab.unpublished(t, e.id);
@@ -1010,6 +1043,7 @@ router.get('/:plural/:slug', async (req, res) => {
         ${names.hasRuby(e.doc[t.name]) ? raw(names.rubyHtml(e.doc[t.name])) : name}
         ${e.doc[`${t.name}_lang`] ? html` <span class="tag" lang="en">${e.doc[`${t.name}_lang`]}</span>` : ''}</p>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
+        if (t.type === 'artwork' && key === 'creator') return creatorsRow(e, mainCreator, coCreators);
         const shown = showValue(t, key, kind, e.doc, glossaryMap);
         return shown === null ? '' : html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown}</dd>`;
       })}</dl>
@@ -1017,7 +1051,7 @@ router.get('/:plural/:slug', async (req, res) => {
         : html`<p class="muted">No text links it yet — write <code>[[${e.slug}]]</code> in a description.</p>`}` : ''}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       <h2 id="relationships">Relationships</h2>
-      ${outgoing.length ? html`<div class="table-wrap"><table><tbody>${outgoing.map(({ id, to_name: toName, rel }) => {
+      ${otherRels.length ? html`<div class="table-wrap"><table><tbody>${otherRels.map(({ id, to_name: toName, rel }) => {
         const [type, slug] = rel.to.split('/');
         return html`<tr><td>${labels[rel.type] || rel.type}</td>
           <td><a href="/${BY_TYPE[type].folder}/${slug}">${toName}</a> <span class="tag">${type}</span></td>
@@ -1054,7 +1088,7 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
         ${relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, rel: { ...req.body, sources: String(req.body.sources || '').split('\n') }, submit: 'Add', entityType: t.type })}`,
     });
   }
-  res.redirect(303, `/${t.folder}/${e.slug}?done=rel-added#relationships`);
+  res.redirect(303, `/${t.folder}/${e.slug}?done=rel-added#${req.query.from === 'creators' ? 'creators' : 'relationships'}`);  // back to where it was added
 });
 
 // The published values as form keys — the edit page refetches them when someone else publishes or reverts.
@@ -1145,7 +1179,7 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   const pending = await collab.unpublished(t, e.id);
   const banner = pending ? unpublishedBanner(t, e, { ...pending, fields: await unpublishedFields(t, e) }, true) : '';
   // published: the public values, so the browser can mark every field the working copy changes (editor/unpublished.js)
-  const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx: await formContext(t),
+  const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx: await formContext(t, e.id),
     action: `/${t.folder}/${e.slug}`, errors: [], version: working.version,
     collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) } });
   send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
@@ -1162,7 +1196,7 @@ router.post('/:plural/:slug', async (req, res) => {
     // again with the messages — nothing typed is lost, it is all in the shared copy.
     await collab.changedElsewhere(t, e.id);
     const { form: working, epoch, state } = await collab.currentForm(t, e.id);
-    const ctx = await formContext(t);
+    const ctx = await formContext(t, e.id);
     ctx.errorKeys = errorKeysOf(result.errors);
     ctx.confirmNew = result.confirm || {};
     const published = drafts.formKeys((await findEntity(t, e.slug) || e).doc, t, e.slug);

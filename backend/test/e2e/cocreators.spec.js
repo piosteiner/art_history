@@ -9,14 +9,20 @@ const api = async (request, path) => (await request.get(`${API}${path}`, { heade
 test('a co-creator added on the artwork page appears in creators, on the artist and in the creator filter', async ({ userA, request }) => {
   sql(`INSERT INTO artists (slug, name) VALUES ('test-rubens', 'Test Rubens'), ('test-brueghel', 'Test Brueghel');
        INSERT INTO artworks (slug, title, creator_id) VALUES ('test-garden-of-eden', 'Test Garden of Eden', entity_id('artist', 'test-rubens'))`);
+  // added next to the creator, shown there (not among the relationships), named under the creator field when editing
   await userA.goto('/artworks/test-garden-of-eden');
-  await userA.click('summary:has-text("+ Add relationship")');
-  await userA.selectOption('#r-type', 'co_creator');
-  await userA.fill('#r-to', 'artist/test-brueghel');
-  await userA.keyboard.press('Escape');
-  await userA.fill('#r-label', 'landscape');
-  await Promise.all([userA.waitForNavigation(), userA.click('form[action$="/relationships"] button:has-text("Add")')]);
-  await expect(userA).toHaveURL(/done=rel-added/);
+  await userA.click('summary:has-text("+ Add co-creator")');
+  await userA.fill('#cc-to', 'Test Brue');
+  await userA.locator('.ac-list li', { hasText: 'Test Brueghel' }).click();
+  await expect(userA.locator('#cc-to')).toHaveValue('artist/test-brueghel');
+  await userA.fill('#cc-label', 'landscape');
+  await Promise.all([userA.waitForNavigation(), userA.click('.add-co-creator button:has-text("Add")')]);
+  await expect(userA).toHaveURL(/done=rel-added#creators/);
+  await expect(userA.locator('dd.creators')).toContainText('Test Rubens');
+  await expect(userA.locator('dd.creators')).toContainText('+ Test Brueghel landscape');
+  await expect(userA.locator('#relationships ~ .table-wrap')).toHaveCount(0);  // nothing else is linked
+  await userA.goto('/artworks/test-garden-of-eden/edit');
+  await expect(userA.locator('.field', { has: userA.locator('#f-creator') })).toContainText('Co-creators: Test Brueghel (landscape)');
   await userA.goto('/artists/test-brueghel');
   await expect(userA.locator('tr', { hasText: 'Test Garden of Eden' })).toContainText('co-creator of');
 

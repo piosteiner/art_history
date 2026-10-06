@@ -123,7 +123,7 @@ function formToDoc(body, fields) {
   return { doc, errors };
 }
 
-// ctx: { enums: {key: [values]}, suggestions: {key: [values]}, refs: {key: [{slug, name}]}, errorKeys: Set }
+// ctx: { enums: {key: [values]}, suggestions: {key: [values]}, refs: {key: [{slug, name}]}, coCreators: [{name, label}], errorKeys: Set }
 function fieldInput(key, kind, f, ctx) {
   const label = fieldLabel(ctx.type, key);
   const typeHint = TYPE_HINTS[`${ctx.type}.${key}`];
@@ -199,7 +199,10 @@ function fieldInput(key, kind, f, ctx) {
       <datalist id="${id}-list">${options.map((o) => html`<option value="${o.slug}">${o.name}</option>`)}</datalist>
       ${confirm ? html`<label class="choice"><input type="checkbox" name="new.${key}" value="1"> create a new ${target} “${confirm}” anyway</label>` : ''}
       ${hint(canCreate ? `Pick from the list — or type the name of a new ${target}: it is created with the save and marked “to complete”. Empty = none.`
-        : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}</div>`;
+        : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}
+      ${key === 'creator' ? hint(ctx.coCreators && ctx.coCreators.length
+        ? html`The main creator. Co-creators: ${ctx.coCreators.map((c, i) => html`${i ? ', ' : ''}<b>${c.name}</b>${c.label ? ` (${c.label})` : ''}`)} — changed on the artwork's page.`
+        : 'The main creator. Further creators: “+ Add co-creator” on the artwork\'s page.') : ''}</div>`;
   }
   if (ctx.enums[key]) {
     return html`<div class="field${err}"><label for="${id}">${label}</label>

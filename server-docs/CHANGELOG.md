@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Admin: co-creators next to the creator
+- **What:** an artwork's page shows all creators in one row (main creator, then co-creators with part, certainty and
+  an edit link) with a short "+ Add co-creator" form (artist, part, certainty); co-creators are no longer repeated in
+  the relationships table. The edit form names them under the creator field. No schema change.
+- **Why:** owner: creators were split between a field and the relationship list, which felt redundant. The data
+  model stays as it is (main creator = column, co-creators = relationships, graph edge derived), so nothing is stored twice.
+- **Tested:** e2e 67 passing (`cocreators.spec.js` now adds through the new form).
+- **Revert:** redeploy the previous commit.
+
 ### Main creator in the network graph (migration 029)
 - **What:** `relationship_types.derived` + vocabulary entry `creator` (artwork → artist, category `collaboration`,
   derived); view `graph_edges` = relationships + one edge per `artworks.creator_id`; `/v1/graph` walks the view;
