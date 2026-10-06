@@ -6,6 +6,7 @@ const express = require('express');
 const { apiPool } = require('../db');
 const { renderMarkdown, linkNames } = require('../markdown');
 const names = require('../names');
+const bibliography = require('../bibliography');
 const { badRequest, notFound, intParam, yearWindowRange } = require('../http');
 
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -167,6 +168,19 @@ const ENTITIES = {
     filters: { category: 't.category::text = $' },
     order: 'lower(f_unaccent(name_sort_key(t.name, t.name_ruby, t.names)))',
   },
+  // the bibliography (migration 036); siglum and the full citation are added in JS (src/bibliography.js)
+  bibliography: {
+    type: 'source', table: 'bibliography', alt: 'alt_names', name: 'name', period: null,
+    list: `t.kind, t.subtitle, t.authors, t.year, t.reading_status, range_json(t.read_on, t.read_on_label) AS read_on, t.primary_source`,
+    detail: `t.kind, t.subtitle, t.authors, t.editors, t.compilers, t.container, t.container_editors, t.volume, t.issue, t.issue_date,
+             t.volumes_total, t.edition, t.original_year, t.series, t.thesis, t.place, t.publisher, t.year, t.pages, t.pages_are_columns,
+             t.catalogue_number, t.exhibition, t.url, range_json(t.accessed, t.accessed_label) AS accessed, t.uploader,
+             range_json(t.uploaded, t.uploaded_label) AS uploaded, t.date_text, t.archive, t.shelfmark, t.isbn, t.doi,
+             t.primary_source, t.reading_status, range_json(t.read_on, t.read_on_label) AS read_on, t.description_md`,
+    md: ['description_md'],
+    filters: { kind: 't.kind::text = $', status: 't.reading_status::text = $', author: "t.authors::text ILIKE '%' || $ || '%'" },
+    order: "lower(f_unaccent(coalesce(t.authors[1], t.name))), t.year",
+  },
   polities: {
     type: 'polity', table: 'polities', alt: 'alt_names', name: 'name', period: 't.period',
     list: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes',
@@ -327,6 +341,15 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
 
     const total = rows.length ? Number(rows[0].total) : 0;
     rows.forEach((r) => { delete r.total; nameCountry(shapeNames(r, e.name)); });
+    if (e.type === 'source') {
+      // siglum + full citation (KHIST guide), and how much of it has been read
+      const sources = await bibliography.loadCatalogue(apiPool);
+      for (const r of rows) Object.assign(r, { siglum: sources.get(r.slug).siglum, citation: sources.get(r.slug).full });
+      const { rows: [stats] } = await apiPool.query(`SELECT count(*)::int AS total,
+          count(*) FILTER (WHERE reading_status = 'read')::int AS read, count(*) FILTER (WHERE reading_status = 'reading')::int AS reading,
+          count(*) FILTER (WHERE reading_status = 'to_read')::int AS to_read FROM bibliography`);
+      return res.json({ data: rows, total, limit, offset, stats });
+    }
     res.json({ data: rows, total, limit, offset });
   });
 
@@ -350,7 +373,8 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     ]);
     // [[links]] show the linked entries' names: looked up for exactly the links in these texts
     const steps = extras.provenance || [];
-    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md)]), used: new Set() };
+    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md)]),
+      used: new Set(), cited: new Set() };
     const relationships = rels.map((x) => renderMd(x, ['notes_md'], env));
     steps.forEach((p) => renderMd(p, ['notes_md'], env));
     const body = nameCountry(shapeNames(renderMd(entity, e.md, env), e.name));
@@ -359,7 +383,14 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     const glossary = env.used.size ? Object.fromEntries((await apiPool.query(
       'SELECT slug, name, category::text AS category, definition FROM glossary WHERE slug = ANY ($1) ORDER BY name', [[...env.used]])).rows
       .map(({ slug, ...rest }) => [slug, rest])) : {};
-    res.json({ type: e.type, ...body, ...extras, relationships, glossary });
+    // the sources its texts cite (footnotes): siglum and full citation, e.g. for popovers
+    const cited = env.names.sources ? Object.fromEntries([...env.cited].filter((s) => env.names.sources.has(s))
+      .map((s) => [s, { siglum: env.names.sources.get(s).siglum, citation: env.names.sources.get(s).full }])) : {};
+    if (e.type === 'source') {
+      const own = (await bibliography.loadCatalogue(apiPool)).get(entity.slug);
+      Object.assign(body, { siglum: own.siglum, citation: own.full });
+    }
+    res.json({ type: e.type, ...body, ...extras, relationships, glossary, bibliography: cited });
   });
 }
 

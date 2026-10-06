@@ -12,7 +12,7 @@ overwrites fields of entities it touches — **export first**, so the files matc
 
 ```
 content/<folder>/<slug>.yaml     one entity per file; the file name is its slug (lowercase-kebab-case)
-  places/  movements/  polities/  artists/  people/  institutions/  glossary/  artworks/
+  places/  movements/  polities/  artists/  people/  institutions/  glossary/  bibliography/  artworks/
 ```
 
 ```bash
@@ -55,6 +55,7 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 | people | `name`*, `kind` (person, family, dynasty, religious order, guild …), `occupations` (list: poet, monk, emperor …), `birth`, `death`, `active` (groups), `names`, `description_md` — everyone relevant who isn't an artist (whoever made art is an artist); "patron" is a role: `commissioned` / `patron_of` relationships. Older files in `patrons/` (with `notes_md`) still import |
 | institutions | `name`*, `kind` (museum, academy, theatre, temple …), `founded`, `place` (the city, place slug), `location` `[lon, lat]` (the exact spot), `address`, `website_url`, `names`, `description_md` |
 | glossary | `name`* (the term), `category` (technique, architecture, material, iconography, style, format, other), `definition` (1–2 sentences, plain text, max. 500), `names`, `description_md` |
+| bibliography | `name`* (title), `kind` (book, catalogue, chapter, article, lexicon_entry, catalogue_entry, web, video, archival, other), `subtitle`, `authors`/`editors`/`compilers` (lists, "Surname, Given"), `container`, `container_editors`, `volume`, `issue`, `issue_date`, `volumes_total`, `edition`, `original_year`, `series`, `thesis`, `place`, `publisher`, `year`, `pages`, `pages_are_columns`, `catalogue_number`, `exhibition`, `url`, `accessed`, `uploader`, `uploaded`, `date_text`, `archive`, `shelfmark`, `isbn`, `doi`, `siglum` (override), `primary_source`, `reading_status` (to_read, reading, read), `read_on`, `description_md` (notes) |
 | artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `other_dimensions` (further parts: `[{part: mount, cm: [180, 95.5]}]`), `location` / `area` (only works that don't move: buildings, gardens, bridges …), `institution` (current holder, slug), `inventory_number`, `names`, `description_md` |
 
 Artworks also take `provenance`: the owners in order (ownership is not a relationship since migration 031) —
@@ -75,6 +76,13 @@ provenance:
 
 Every entity also takes `wikidata_id` (`Q…`) and `metadata` (free-form mapping). `*_md` fields are Markdown;
 the API serves them as sanitized HTML.
+
+## Citations
+In any `*_md` text, after the guide of the Kunsthistorisches Institut, Universität Zürich:
+`[[source/busch-1993|55]]` → a footnote "Busch 1993, S. 55." (a bare number becomes "S. …"; anything else stays as
+written: `|bes. S. 55`, `|Abb. 32`); adjacent citations → one footnote ("…, und …"); an own footnote:
+`^[Vgl. [[source/busch-1993|bes. S. 55]].]`; the same source as at the end of the previous footnote → "Ebd.". After the
+text: the footnotes and the full entries of everything cited ("Literatur", primary sources as "Quellen").
 
 ## Glossary links
 In any `*_md` text: `[[contrapposto]]` links the glossary term with that slug (shown with its name),

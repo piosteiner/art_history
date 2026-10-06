@@ -260,3 +260,15 @@ button.chip.suggested { border-color: var(--accent); color: var(--accent); }
 .find-results { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 1rem; }
 .find-item img { height: 170px; }
 .source-tabs { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+/* bibliography: footnotes and the list of sources in previews and pages (src/markdown.js), the citation of a source */
+.md sup.fn-ref a { text-decoration: none; padding: 0 .1em; }
+.md section.footnotes { border-top: 1px solid var(--line); margin-top: 1rem; padding-top: .4rem; font-size: .88rem; }
+.md section.footnotes ol { padding-left: 1.4rem; margin: .2rem 0; }
+.md section.bibliography { font-size: .88rem; }
+.md section.bibliography h4 { margin: .8rem 0 .3rem; }
+.md ul.source-list { list-style: none; padding-left: 0; }
+.md ul.source-list li { margin-bottom: .3rem; padding-left: 1.2rem; text-indent: -1.2rem; }
+.md .missing, .md a.missing { color: var(--err); }
+.citation { font-size: 1.05rem; line-height: 1.5; padding: .6rem .8rem; border-left: 3px solid var(--accent); background: var(--panel); }
+.form .field[hidden] { display: none; }

@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Bibliography with citations after the KHIST guide (migrations 035, 036)
+- **What:** entity type `source`, table `bibliography` (kinds book … archival, all parts of a reference, reading status);
+  `src/bibliography.js` (full entries and sigla after the Leitfaden of the Kunsthistorisches Institut UZH 2021 §§ 8–9,
+  German abbreviations; `CITATION_LANG=en` switches to English ones); `src/markdown.js`: `[[source/slug|page]]` →
+  footnotes with short references, adjacent ones combined, own notes `^[…]`, "Ebd.", list "Literatur"/"Quellen".
+  `content_links` and the quality view re-created (sources needn't have relationships). Admin "Bibliography" (fields
+  per kind, generated citation on the page, sigla and reading statistics in the list, `[[source/` completion).
+  API `/v1/bibliography` (siglum, citation, stats), `bibliography` map in every detail.
+- **Why:** owner: cite sources properly without retyping them; browse what has been read.
+- **Tested:** unit 30 (the guide's examples reproduced exactly; footnotes, ebd.); smoke test; e2e 79 passing.
+- **Revert:** redeploy the previous commit; as owner re-create 031's `content_links` and 034's quality view,
+  `DROP TABLE bibliography; DROP TYPE source_kind, reading_status` (the enum value `source` can stay).
+
 ### Exact locations without extra places: institutions and immovable artworks (migration 034)
 - **What:** `institutions.location` + `address`; `artworks.location` + `area` (immovable works); view `site_geo`;
   presence relationships may point at institutions; `depicts` at artworks; new `houses` (building → institution);

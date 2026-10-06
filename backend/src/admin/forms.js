@@ -15,7 +15,8 @@ const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1
   · <code>c. 1755</code> (±5 years) · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
 const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.
-    Links: type <code>[[</code> and a name to pick any entry — <code>[[artist/katsushika-hokusai]]</code>, a glossary term <code>[[contrapposto]]</code>; own words after <code>|</code>: <code>[[contrapposto|the pose]]</code>.`,
+    Links: type <code>[[</code> and a name to pick any entry — <code>[[artist/katsushika-hokusai]]</code>, a glossary term <code>[[contrapposto]]</code>; own words after <code>|</code>: <code>[[contrapposto|the pose]]</code>.
+    Cite: <code>[[source/busch-1993|55]]</code> → footnote "Busch 1993, S. 55."; own footnote: <code>^[Vgl. [[source/busch-1993|bes. S. 55]].]</code>`,
   'text[]': 'One per line.',
   names: html`One per line: <code>name | language | role</code> — role: original, translation, romanization or alternative
     (the default). E.g. <code>Kanagawa-oki nami ura | ja-Latn | romanization</code> · <code>The Great Wave off Kanagawa | en | translation</code>.
@@ -38,7 +39,16 @@ const LABELS = {
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
   'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
-  'term.definition': 'Short definition', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
+  'term.definition': 'Short definition',
+  'source.name': 'Title', 'source.kind': 'Kind of source', 'source.names': 'Other titles (translations …)',
+  'source.container': 'Appeared in', 'source.container_editors': 'Editors of that volume', 'source.volume': 'Volume (Jahrgang / Bd.)',
+  'source.issue': 'Issue (Nr.)', 'source.issue_date': 'Issue date', 'source.volumes_total': 'Number of volumes',
+  'source.original_year': 'Year of the first edition', 'source.thesis': 'Thesis note', 'source.place': 'Place of publication',
+  'source.year': 'Year', 'source.pages': 'Pages', 'source.pages_are_columns': 'Columns instead of pages',
+  'source.catalogue_number': 'Catalogue number', 'source.exhibition': 'Exhibition', 'source.accessed': 'Last accessed',
+  'source.uploader': 'Uploaded by', 'source.uploaded': 'Upload date', 'source.date_text': 'Date', 'source.archive': 'Archive / collection',
+  'source.shelfmark': 'Shelfmark (Signatur)', 'source.siglum': 'Short reference (override)', 'source.primary_source': 'Primary source (Quelle)',
+  'source.reading_status': 'Reading status', 'source.read_on': 'Finished reading', 'source.description_md': 'Notes', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
   'polity.kind': 'Kind of polity', 'person.kind': 'Kind (person or group)', 'movement.kind': 'Kind',
 };
 const TYPE_HINTS = {
@@ -59,6 +69,24 @@ const TYPE_HINTS = {
   'term.category': 'technique · architecture · material · iconography · style · format · other — what the glossary is browsed by',
   'term.definition': 'One or two sentences (max. 500 characters): shown as a tooltip wherever a text links the term, and in the A–Z list. Plain text.',
   'term.description_md': html`The full explanation (Markdown). Link other terms with <code>[[slug]]</code> or <code>[[slug|own words]]</code>, other entries with <code>[[type/slug]]</code>.`,
+  'source.kind': 'Decides how the citation is put together (KHIST guide): book, exhibition catalogue, chapter in a volume, journal article, lexicon or catalogue entry, website, video, archival source.',
+  'source.authors': html`One per line, <b>Surname, Given names</b>: <code>Busch, Werner</code>. More than three are cited as “… u. a.”.`,
+  'source.editors': 'hrsg. von — one per line, Surname, Given names.',
+  'source.compilers': 'Bearb. (catalogues, editions) — one per line, Surname, Given names.',
+  'source.subtitle': 'Shown after the title with a full stop: "Titel. Untertitel".',
+  'source.container': 'The volume, journal, lexicon, exhibition catalogue or website it appeared in.',
+  'source.issue_date': 'e.g. Mai 1972 — shown in the parenthesis instead of the year: Artforum 10 (Mai 1972).',
+  'source.volumes_total': 'e.g. 4 → "4 Bde."',
+  'source.thesis': 'e.g. Diss. masch. — written before the place: "Diss. masch. Hamburg 1924".',
+  'source.place': 'e.g. München, or Stuttgart und Teufen.',
+  'source.year': 'Also a span: 1955–1989.',
+  'source.pages': 'The page range of the part: 190–221.',
+  'source.pages_are_columns': 'Lexicons often count columns: "Sp. 1209–1210".',
+  'source.exhibition': 'Place: institution — e.g. Paris: Bibliothèque Nationale.',
+  'source.date_text': 'Letters, events, conference talks: e.g. 30.09.1913.',
+  'source.siglum': 'Leave empty: generated from surnames and year (Busch 1993, Kimpel und Suckale 1995, Kat. Paris 2007, Jacobsen 1992a).',
+  'source.primary_source': 'Letters, documents, historical texts — listed apart as “Quellen”.',
+  'source.description_md': 'Your own notes: what it says, what it is good for. Not part of the citation.',
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
@@ -72,6 +100,7 @@ function docToForm(doc, fields) {
     if (kind === 'text[]') f[key] = (v || []).join('\n');
     else if (kind === 'name') { f[key] = v ?? ''; f[`${key}_lang`] = doc[`${key}_lang`] ?? ''; }
     else if (kind === 'dimsets') f[key] = dimensions.setsToLines(v);
+    else if (kind === 'bool') f[key] = v ? 'yes' : '';
     else if (kind === 'names') f[key] = names.namesToLines((v || []).map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)));
     else if (kind === 'json' || kind === 'area') f[key] = v ? JSON.stringify(v, null, 2) : '';
     else if (kind === 'point') { f[`${key}_lon`] = v ? String(v[0]) : ''; f[`${key}_lat`] = v ? String(v[1]) : ''; }
@@ -93,6 +122,8 @@ function formToDoc(body, fields) {
       if (v) doc[key] = v;
       const lang = get(`${key}_lang`).trim();
       if (lang) doc[`${key}_lang`] = lang;
+    } else if (kind === 'bool') {
+      if (v === 'yes') doc[key] = true;
     } else if (kind === 'dimsets') {
       try { const list = dimensions.linesToSets(get(key)); if (list.length) doc[key] = list; } catch (err) { errors.push(`${key}: ${err.message}`); }
     } else if (kind === 'names') {
@@ -148,6 +179,11 @@ function fieldInput(key, kind, f, ctx) {
       <div class="name-meta"><input name="${name}_lang" value="${f[`${key}_lang`]}" placeholder="language" aria-label="${label} language" class="lang-input" list="lang-list" autocomplete="off"></div>
       <div class="ruby-preview" hidden></div>${hint(HINTS.name)}
       <datalist id="lang-list">${LANGS.map(([v, l]) => html`<option value="${v}">${l}</option>`)}</datalist></div>`;
+  }
+  if (kind === 'bool') {
+    return html`<div class="field${err}"><label for="${id}">${label}</label>
+      <select id="${id}" name="${name}" class="short"><option value=""${f[key] ? '' : ' selected'}>no</option><option value="yes"${f[key] ? ' selected' : ''}>yes</option></select>
+      ${hint(typeHint)}</div>`;
   }
   if (kind === 'dimsets') {
     // a plain textarea (one "part | h × w × d" per line); the browser shows it as rows (editor/dims.js)

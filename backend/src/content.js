@@ -39,6 +39,15 @@ const TYPES = [
   // the glossary (migration 027): terms that texts link with [[slug]]; category is a fixed list (enum term_category)
   { type: 'term', folder: 'glossary', table: 'glossary', name: 'name', fields: {
     name: 'name', names: 'names', category: 'text', definition: 'text', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+  // the bibliography (migration 036): cited in texts with [[source/slug|S. 45]] (src/bibliography.js, src/markdown.js)
+  { type: 'source', folder: 'bibliography', table: 'bibliography', name: 'name', fields: {
+    kind: 'text', name: 'name', subtitle: 'text', names: 'names', authors: 'text[]', editors: 'text[]', compilers: 'text[]',
+    container: 'text', container_editors: 'text[]', volume: 'text', issue: 'text', issue_date: 'text', volumes_total: 'text',
+    edition: 'text', original_year: 'text', series: 'text', thesis: 'text', place: 'text', publisher: 'text', year: 'text',
+    pages: 'text', pages_are_columns: 'bool', catalogue_number: 'text', exhibition: 'text', url: 'text', accessed: 'date',
+    uploader: 'text', uploaded: 'date', date_text: 'text', archive: 'text', shelfmark: 'text', isbn: 'text', doi: 'text',
+    siglum: 'text', primary_source: 'bool', reading_status: 'text', read_on: 'date',
+    description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     title: 'name', names: 'names', creator: 'ref:artist', attribution_label: 'text', created: 'date',
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
@@ -103,6 +112,9 @@ function toRow(doc, fields) {
         const list = v ?? LEGACY_ALT.map((k) => doc[k]).find((x) => x != null) ?? [];
         if (!Array.isArray(list)) throw new Error('must be a list');
         put(key, JSON.stringify(list.map((n, i) => { try { return names.normName(n); } catch (err) { throw new Error(`[${i}] ${err.message}`); } })), '$::jsonb');
+      } else if (kind === 'bool') {
+        // true / false in YAML; "yes" from forms (a select, so live working copies can carry it)
+        put(key, v === true || v === 'yes' || v === 'true');
       } else if (kind === 'dimsets') {
         const list = v ?? [];
         if (!Array.isArray(list)) throw new Error('must be a list of {part, cm}');
@@ -249,6 +261,7 @@ function rowToDoc(row, t) {
     if (kind === 'names') v = Array.isArray(v) && v.length ? v.map((n) => (n.role === 'alternative' && !n.lang ? n.text : n)) : null;
     if ((kind === 'text[]' || kind === 'dimsets') && Array.isArray(v) && !v.length) v = null;
     if (kind === 'json' && v && !Object.keys(v).length) v = null;
+    if (kind === 'bool' && !v) v = null;
     if (v !== null && v !== undefined) doc[key] = v;
   }
   return doc;

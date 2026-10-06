@@ -23,6 +23,7 @@ import { initNames } from './names';
 import { initUnpublished } from './unpublished';
 import { initMaterials } from './materials';
 import { initDims } from './dims';
+import { initSourceForm } from './sourceform';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -135,7 +136,7 @@ async function renderPreview(text) {
 // typo-tolerant /lookup as the pickers); "[[artist/hoku" narrows to one type. Picking one writes [[type/slug]] — a
 // glossary term the short [[slug]] (src/markdown.js). filter: false — the server already ranked them, and the typed
 // text ("[[hoku") wouldn't match the labels ("Katsushika Hokusai") by CodeMirror's own filter.
-const LINK_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term'];
+const LINK_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source'];
 async function entryCompletions(context) {
   const m = context.matchBefore(/\[\[[^\[\]|\n]*$/);
   if (!m) return null;
@@ -254,6 +255,7 @@ initAutocomplete();
 initNames();
 initMaterials();
 initDims();
+initSourceForm();
 initSlug();
 initWikidataBulk();
 const live = initLive();

@@ -250,6 +250,14 @@ join edges to it, so a presence at an institution is drawn at the venue and coun
 institution). Rule of thumb: designed works → artworks; organisations and venues → institutions; plain locations and
 natural features → places — and no duplicates.
 
+## Bibliography (migrations 035, 036)
+Table `bibliography` (entity type `source`): the name fields, enums `source_kind` and `reading_status`, authors /
+editors / compilers as `text[]` ("Surname, Given"), the parts of a reference as plain columns. Citations are text
+links `[[source/slug|page]]`, so `content_links` (extended) gives "cited in" and the `broken_link` check for free.
+Formatting is application code (`src/bibliography.js`, after the KHIST guide): sigla are disambiguated across the
+whole bibliography (a/b), which a per-row SQL function couldn't do; `src/markdown.js` cuts footnotes out before
+markdown-it and puts them back numbered.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the

@@ -59,6 +59,21 @@ and **`roles`** — derived from relationships: `patron` (commissioned / patron 
 lifespan (else the active period). Depictions: relationship `depicts_person` (artwork → person or artist, label
 "depicts" / "depicted in", category `depiction`, part of the graph).
 
+### Bibliography (`/v1/bibliography`, type `source`)
+Sources cited in texts, formatted after the guide of the Kunsthistorisches Institut, UZH: `siglum` (the short reference,
+"Busch 1993", "Kimpel und Suckale 1995", "Kat. Paris 2007", "Jacobsen 1992a") and `citation` (the full entry, HTML with
+italic titles). Fields: `kind`, `authors`, `subtitle`, `year`, … (see `content/README.md`), `reading_status`
+(`to_read`/`reading`/`read`), `read_on`, `primary_source`; the detail adds every field, `description_html` (notes) and
+`mentioned_in` (the entries citing it). The list has `stats: {total, read, reading, to_read}`; filters `?kind=`,
+`?status=read`, `?author=`.
+
+**Citations in texts:** `*_html` may end with `<section class="footnotes"><ol class="footnote-list">…</ol></section>`
+(numbered notes; references in the text as `<sup class="fn-ref" id="…"><a href="#…">1</a></sup>`, each note with a back
+link `a.fn-back`) and `<section class="bibliography">` (`<h4>Literatur</h4>` / `<h4>Quellen</h4>` with
+`ul.source-list > li > span.siglum + full entry`). Short references are `a.source-link[data-source]` →
+`/bibliography/<slug>`. Every detail response has `bibliography: {<slug>: {siglum, citation}}` for the sources its texts
+cite (popovers). The ids are unique per text, so several texts on one page don't clash.
+
 ### Glossary (`/v1/glossary`, type `term`)
 `name` (+ the name fields below), `category` (technique · architecture · material · iconography · style · format ·
 other; filter `?category=`), `definition` (short, plain text), `description_html`, `images`/`image_url`, related

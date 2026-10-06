@@ -42,7 +42,7 @@ ${nav && user ? html`<header class="top">
   <a class="brand" href="/">Art history admin</a>
   <nav>
     <a href="/artists">Artists</a><a href="/artworks">Artworks</a><a href="/places">Places</a>
-    <a href="/movements">Movements</a><a href="/institutions">Institutions</a><a href="/people">People</a><a href="/polities">Polities</a><a href="/glossary">Glossary</a>
+    <a href="/movements">Movements</a><a href="/institutions">Institutions</a><a href="/people">People</a><a href="/polities">Polities</a><a href="/glossary">Glossary</a><a href="/bibliography">Bibliography</a>
     <a href="/history">History</a><a href="/quality">Quality</a>
   </nav>
   <form method="get" action="/search" class="inline top-search" role="search"><input type="search" name="q" placeholder="Search everything…" aria-label="Search everything"></form>

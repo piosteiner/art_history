@@ -29,6 +29,7 @@ const images = require('./images');
 const provenance = require('./provenance');
 const imagesearch = require('./imagesearch');
 const placefinder = require('./placefinder');
+const bibliography = require('../bibliography');
 
 const { thumbUrl } = images;
 const { searchPage, reviewPage } = require('./wikidata-ui');
@@ -777,14 +778,21 @@ router.get('/:plural', async (req, res) => {
              name_sort_key(t.${t.name}, t.${t.name}_ruby, t.names) AS sort_key,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
              EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${params.length + 1}::entity_type AND ac.entity_id = t.id) AS to_complete,
+             ${t.type === 'source' ? 't.reading_status::text' : 'NULL'} AS status,
              (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
                                                            OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
       FROM ${t.table} t) x
     ${q ? `WHERE score >= ${THRESHOLD} ORDER BY score DESC, sort_key` : 'ORDER BY lower(f_unaccent(sort_key))'}
     LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [...params, t.type]);
+  // the bibliography: short references and how much has been read
+  const sources = t.type === 'source' ? await bibliography.loadCatalogue(adminPool) : null;
+  const stats = sources ? (await adminPool.query(`SELECT count(*)::int AS total,
+      count(*) FILTER (WHERE reading_status = 'read')::int AS read, count(*) FILTER (WHERE reading_status = 'reading')::int AS reading,
+      count(*) FILTER (WHERE reading_status = 'to_read')::int AS to_read FROM bibliography`)).rows[0] : null;
   send(req, res, {
     title: humanize(t.folder),
     body: html`<h1>${humanize(t.folder)}</h1>
+      ${stats ? html`<p class="muted">${stats.total} sources — <b>${stats.read}</b> read · ${stats.reading} reading · ${stats.to_read} to read</p>` : ''}
       <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
         <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a>
@@ -793,6 +801,7 @@ router.get('/:plural', async (req, res) => {
         ${rows.slice(0, PAGE).map((r) => html`<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
+          ${sources && sources.get(r.slug) ? html`<div class="small">${sources.get(r.slug).siglum}${r.status ? html` <span class="tag">${r.status.replace('_', ' ')}</span>` : ''}</div>` : ''}
           ${r.sort_key !== r.name ? html`<div class="muted small">${r.sort_key}</div>` : q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
@@ -1128,6 +1137,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const provSteps = t.type === 'artwork' ? await provenance.read(adminPool, e.id) : [];
   const boundary = t.type === 'place' && e.doc.boundary_code
     ? (await adminPool.query('SELECT code, name FROM boundaries WHERE code = $1', [e.doc.boundary_code])).rows[0] : null;
+  const citation = t.type === 'source' ? (await bibliography.loadCatalogue(adminPool)).get(e.slug) : null;
   const linkMap = await linkNames(adminPool, [...Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]),
     ...provSteps.map((p) => p.notes_md)]);
   // the entries whose texts [[link]] this one (view content_links, migration 030) — for a term: where it is used
@@ -1152,6 +1162,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <form method="post" action="/${t.folder}/${e.slug}/auto-done" class="inline"><button class="link">it's complete — remove the mark</button></form>
         <div class="muted small">The mark goes away by itself when the entry is next published.</div></div>` : ''}
       ${quality.entityBox(qa, `/${t.folder}/${e.slug}`)}
+      ${citation ? html`<p class="citation"><b>${citation.siglum}:</b> ${raw(citation.full)}</p>` : ''}
       ${main ? html`<figure class="image-preview"><a href="${main.source_url || main.url}" target="_blank" rel="noopener">
         <img src="${thumbUrl(main.url, 500)}" alt="${name}"></a>
         <figcaption class="muted small">${[main.caption, main.credit, main.license].filter(Boolean).join(' · ') || 'no credit / license yet'}
