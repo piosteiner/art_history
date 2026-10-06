@@ -83,7 +83,7 @@ test('a relationship with a wrong target type gets a readable message', async ({
   await userA.fill('#r-to', 'artist/vincent-van-gogh');
   await userA.keyboard.press('Escape');  // close the "no match" suggestions, as a user would
   await userA.click('form[action$="/relationships"] button:has-text("Add")');
-  await expect(userA.locator('.flash.error')).toHaveText(/"lived in" needs a place as target, not an artist/);
+  await expect(userA.locator('.flash.error')).toHaveText(/"lived in" needs a place or an institution as target, not an artist/);
 });
 
 test('pickers: typo-tolerant, keyboard selection, filtered by relationship type', async ({ userA }) => {

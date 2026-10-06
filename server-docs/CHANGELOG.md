@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Exact locations without extra places: institutions and immovable artworks (migration 034)
+- **What:** `institutions.location` + `address`; `artworks.location` + `area` (immovable works); view `site_geo`;
+  presence relationships may point at institutions; `depicts` at artworks; new `houses` (building → institution);
+  quality info check `institution_without_place` (nearest settlement suggested). Map routes use `site_geo` (features:
+  `institution`/`artwork` and the city as `place`); new `/v1/map/sites`. Admin: map picker for institutions and
+  artworks, labels/hints (the city vs the exact spot; immovable works only), object type suggestions (building,
+  garden, bridge …). Wikidata: an institution's P625/P6375 become its own location/address, P131 its city — the
+  building-place creation from earlier today is replaced (no such places existed); artworks take P625.
+- **Why:** owner: the Kunsthaus belongs at its exact spot without a fake "Kunsthaus" place; Cabaret Voltaire vs
+  Schauspielhaus (same city ≠ same venue); museums whose buildings are artworks (Tokyo National Museum).
+- **Tested:** smoke test; e2e 77 passing.
+- **Revert:** redeploy the previous commit; as owner drop `site_geo`, re-create 033's quality view, restore the
+  vocabulary rows, `DELETE FROM relationship_types WHERE code = 'houses'` (after its relationships), drop the new columns.
+
 ### Quality: "outside its parent region" with a 5 km tolerance (migration 033)
 - **What:** the check uses `ST_DWithin(outline, point, 5000)` instead of `ST_Covers`.
 - **Why:** New York lay 2 km outside the simplified Natural Earth coastline of the USA — a false alarm.

@@ -25,6 +25,7 @@ const CHECKS = {
   missing_description: { title: 'No description', fix: 'Write a short description or biography.' },
   parent_suggestion: { title: 'Parent suggested from the map', fix: 'The place lies inside the outline of another place — set it as the parent.' },
   boundary_available: { title: 'Outline available', fix: 'Set the boundary code (ISO, e.g. JP or JP-13) — the outline and marker then come from Natural Earth.' },
+  institution_without_place: { title: 'Institution without its city', fix: 'Set the place (the city) — a nearby one is suggested when the institution has an exact location.' },
   missing_romanization: { title: 'Name without romanization', fix: 'Add one under "Other names" (e.g. Kanagawa-oki nami ura | ja-Latn | romanization) — it is used for sorting, search and the slug.' },
   no_wikidata_id: { title: 'No Wikidata id', fix: 'Use "Wikidata…" on the entry to find and link it.' },
 };

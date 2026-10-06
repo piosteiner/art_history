@@ -57,6 +57,8 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Main creator in the graph (029: derived vocabulary type `creator`, view `graph_edges`) built 2026-10-06.
   [[type/slug]] links to any entry with `[[` completion, backlinks (030: view `content_links`, check `broken_link`) built 2026-10-06.
   Provenance (031: table `provenance`, view `provenance_periods` with implied ends, view `edges` = stored + derived edges; `owned_by` derived) built 2026-10-06; frontend shows it (Provenance section, implied ends, dashed graph edges) since 2026-10-06.
+  Place geometry from Natural Earth (032/033: `boundaries`, `place_geo`, `npm run boundaries`, place finder) built 2026-10-06.
+  Sites (034: institution/artwork `location`, `site_geo`, presence at institutions, `houses`, `/v1/map/sites`) built 2026-10-06 — frontend still to use it.
   Ideas later: nightly auto-export commit. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Open: after the owner fixes The Great Wave's inventory number (no institution), add a migration

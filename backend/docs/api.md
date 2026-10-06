@@ -73,6 +73,18 @@ texts link, `{<slug>: {name, category, definition}}` — enough for a tooltip wi
 the website's own address. Every detail response except a term's also has **`mentioned_in`** `[{type, slug, name}]`:
 the entries whose texts link this one (backlinks). A term has the same thing as `used_in`.
 
+### Sites: institutions and immovable artworks (migration 034)
+- Institutions: `location` (their own point, GeoJSON, or `null`), `address`; `place` stays the city.
+- Artworks that don't move (buildings, gardens, bridges …): `location` and/or `area` — where they stand.
+- Relationship `houses` (artwork → institution, dated; category `architecture`): a building and the institution it
+  houses — the institution's page lists it as "housed in". `depicts` may point at an immovable artwork.
+- Presence relationships (`lived_in`, `worked_in`, `visited`) may point at an institution. Map features
+  (`/v1/map/presence`, `/v1/map/<type>/:slug`) then carry `institution: {slug, name}` and `place` = the city it is in;
+  the point is the institution's own, else its city's. **Encounters:** same `institution` and overlapping periods =
+  could have met there; only the same `place` = were in the same city at the same time.
+- `GET /v1/map/sites` — institutions and immovable artworks with an exact location of their own
+  (`properties: {type, slug, name, kind, address, place}`).
+
 ### Places: geometry
 `location` (GeoJSON Point) is where to put the marker and `area` (MultiPolygon or `null`) the outline — the place's
 own, or derived (migration 032): a country or region with only a `boundary_code` (`JP`, `JP-13`) gets the

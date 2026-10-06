@@ -167,8 +167,6 @@ async function settlementOf(qids) {
   }
   return qids[0];
 }
-// "Heimplatz 1, 8001 Zürich" → "Heimplatz 1" (the street part; postcode and town are the parent place)
-const streetOf = (address) => (address ? address.split(/,\s*(?:[A-Z]{1,3}-)?\d{4,5}\b/)[0].trim() || null : null);
 
 // --- what we take from Wikidata, per type ------------------------------------------------------------------------
 // Fields: key → { kind: 'text'|'list'|'date'|'point'|'ref', value, label?, ref?: {type, qid} }
@@ -220,14 +218,14 @@ function fieldsFor(t, e) {
   if (t.type === 'term') text('definition', e.descriptions && e.descriptions.en && e.descriptions.en.value);
   if (t.type === 'institution') {
     date('founded', 'P571');
-    // Its place: the exact building when Wikidata has coordinates (P625, address P6375), inside the settlement that
-    // P131 leads to — P131 is often a city district (Kunsthaus Zürich: "Kreis 1" and Zürich).
+    // Its place is the city: the settlement P131 leads to — P131 is often a city district (Kunsthaus Zürich: "Kreis 1"
+    // and Zürich). The exact spot is the institution's own: coordinates (P625) and street address (P6375), migration 034.
     const p131 = itemIds(e, 'P131');
+    if (p131.length) f.place = { kind: 'ref', ref: { type: 'place', qid: p131[0] }, p131 };
     const c = coords(e);
-    if (p131.length || c) {
-      f.place = { kind: 'ref', ref: { type: 'place', qid: p131[0] || null }, p131,
-        building: c ? { location: c, address: firstText(e, 'P6375'), label: labelOf(e), qid: e.id } : null };
-    }
+    if (c) f.location = { kind: 'point', value: c };
+    const address = firstText(e, 'P6375');
+    if (address) f.address = { kind: 'text', value: address };
     text('website_url', firstString(e, 'P856'));
   }
   if (t.type === 'movement') {
@@ -249,6 +247,9 @@ function fieldsFor(t, e) {
     }
     const [h, w, d] = [lengthCm(e, 'P2048'), lengthCm(e, 'P2049'), lengthCm(e, 'P2610', 'P5524')];
     if (h) f.dimensions = { kind: 'dimensions', value: [h, w, w && d].filter(Boolean) };  // height alone is fine
+    // buildings, bridges, gardens … have coordinates: where the work stands (migration 034)
+    const c = coords(e);
+    if (c) f.location = { kind: 'point', value: c };
     const materialQids = itemIds(e, 'P186');
     if (materialQids.length) f.materials = { kind: 'materials', qids: materialQids };
   }
@@ -377,7 +378,7 @@ async function compare(db, t, qid, ours, entity) {
   if (!e || e.missing !== undefined) throw new Error(`${qid} was not found on Wikidata`);
   const fields = fieldsFor(t, e);
   for (const w of Object.values(fields)) if (w.p131 && w.p131.length) w.ref.qid = await settlementOf(w.p131);
-  if (fields.place && !fields.place.ref.qid) delete fields.place.ref;  // coordinates but no P131: only the building
+  if (fields.place && !fields.place.ref.qid) delete fields.place;  // P131 led to no settlement
   const rels = relsFor(t, e);
   // Everything referenced: our entries with these Q-ids, and Wikidata data for the rest (labels, coordinates …)
   const refQids = [...Object.values(fields).filter((f) => f.ref).map((f) => f.ref.qid), ...rels.map((r) => r.qid),
@@ -430,32 +431,6 @@ async function compare(db, t, qid, ours, entity) {
       const c = w.qid && others[w.qid];
       const iso = c && firstString(c, 'P297');
       if (iso) rows.push(scalarRow(key, oursVal, iso, iso, declined(key, iso)));
-      continue;
-    }
-    if (w.kind === 'ref' && w.building) {
-      // The exact place: a building place we have within 100 m (PostGIS ST_DWithin on geography = metres; <-> orders
-      // by distance, served by the GiST index) — else a new one at Wikidata's coordinates, named by its street address,
-      // inside the settlement (ours, or created with it).
-      const b = w.building;
-      const near = (await db.query(`
-        SELECT 'place' AS type, slug, name FROM places
-        WHERE kind = 'building' AND ST_DWithin(location, ST_SetSRID(ST_MakePoint($1, $2), 4326)::geography, 100)
-        ORDER BY location <-> ST_SetSRID(ST_MakePoint($1, $2), 4326)::geography LIMIT 1`, b.location)).rows[0];
-      const city = w.ref ? localFor(w.ref.qid, ['place']) : null;
-      const cityItem = w.ref ? others[w.ref.qid] : null;
-      const cityDoc = !city && cityItem ? newEntryDoc('place', cityItem) : null;
-      const cityName = city ? city.name : labelOf(cityItem);
-      const name = streetOf(b.address) || `${b.label} (building)`;
-      const create = {
-        type: 'place', sourceQid: b.qid,
-        doc: { name, kind: 'building', location: b.location, ...(city ? { parent: city.slug } : {}) },
-        parentCreate: cityDoc ? { type: 'place', doc: cityDoc } : null,
-        parentLink: city && city.matchedBy === 'name' ? { target: city, qid: w.ref.qid } : null,
-        describe: `building place “${name}” at ${b.location[1]}, ${b.location[0]}${cityName ? ` in ${cityName}${cityDoc ? ' (also new)' : ''}` : ''}`,
-      };
-      rows.push({ key, kind: 'ref', ours: oursVal, qid: b.qid, target: near ? { ...near, matchedBy: 'location' } : null, candidate: null, create,
-        wikiLabel: `${b.address || b.label} — exact location${cityName ? `, in ${cityName}` : ''}`, value: near ? near.slug : null,
-        declined: declined(key, b.qid), status: near && near.slug === oursVal ? 'same' : !oursVal ? 'empty' : 'differs' });
       continue;
     }
     if (w.kind === 'ref') {

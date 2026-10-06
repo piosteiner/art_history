@@ -53,9 +53,9 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 | polities | `name`*, `kind` (empire, kingdom, dynasty, republic, …), `parent` (polity slug, e.g. Western Han ⊂ Han dynasty), `period` (when it existed; `1922/` = still exists), `country_codes` (modern countries on its territory, ISO: `[RU, UA, BY]`), `names`, `description_md` |
 | artists | `name`*, `sort_name`, `names`, `birth`, `death`, `biography_md` |
 | people | `name`*, `kind` (person, family, dynasty, religious order, guild …), `occupations` (list: poet, monk, emperor …), `birth`, `death`, `active` (groups), `names`, `description_md` — everyone relevant who isn't an artist (whoever made art is an artist); "patron" is a role: `commissioned` / `patron_of` relationships. Older files in `patrons/` (with `notes_md`) still import |
-| institutions | `name`*, `kind` (museum, academy, …), `founded`, `place` (place slug), `website_url`, `names`, `description_md` |
+| institutions | `name`*, `kind` (museum, academy, theatre, temple …), `founded`, `place` (the city, place slug), `location` `[lon, lat]` (the exact spot), `address`, `website_url`, `names`, `description_md` |
 | glossary | `name`* (the term), `category` (technique, architecture, material, iconography, style, format, other), `definition` (1–2 sentences, plain text, max. 500), `names`, `description_md` |
-| artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `other_dimensions` (further parts: `[{part: mount, cm: [180, 95.5]}]`), `institution` (current holder, slug), `inventory_number`, `names`, `description_md` |
+| artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `other_dimensions` (further parts: `[{part: mount, cm: [180, 95.5]}]`), `location` / `area` (only works that don't move: buildings, gardens, bridges …), `institution` (current holder, slug), `inventory_number`, `names`, `description_md` |
 
 Artworks also take `provenance`: the owners in order (ownership is not a relationship since migration 031) —
 ```yaml

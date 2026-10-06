@@ -96,6 +96,8 @@ const ENTITIES = {
              (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
              artwork_creators(t.id) AS creators,  -- main creator + co-creators (migration 028)
              (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = t.current_institution_id) AS institution,
+             -- where it stands (immovable works only, migration 034)
+             ST_AsGeoJSON(t.location)::jsonb AS location, ST_AsGeoJSON(t.area)::jsonb AS area,
              ${countryCols('artwork')}`,
     md: ['description_md'],
     filters: {
@@ -135,9 +137,11 @@ const ENTITIES = {
   institutions: {
     type: 'institution', table: 'institutions', alt: 'alt_names', name: 'name', period: 't.founded',
     list: `t.kind, range_json(t.founded, t.founded_label) AS founded, ${mainImage('institution_id')},
+           ST_AsGeoJSON(t.location)::jsonb AS location,
            (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = t.place_id) AS place,
            ${countryCols('institution')}`,
     detail: `t.kind, range_json(t.founded, t.founded_label) AS founded, t.website_url, t.description_md,
+             ST_AsGeoJSON(t.location)::jsonb AS location, t.address,
              ${allImages('institution_id')},
              (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = p.id))
                 FROM places p WHERE p.id = t.place_id) AS place, ${countryCols('institution')}`,

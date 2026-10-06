@@ -241,6 +241,15 @@ centroid) and an `outline` (own area → boundary) — a view because a stored g
 table. Map, API and the checks read it; `parent_suggestion` finds the smallest outline containing a parentless place
 (`ST_Covers` … `ORDER BY ST_Area`), `boundary_available` countries/regions that could have an outline.
 
+## Sites (migration 034)
+Institutions have an optional `location` point and `address` (their `place_id` stays the city); immovable artworks an
+optional `location` and `area`. The view `site_geo (type, id, marker, outline, place_id)` gives a map point for
+places, institutions (own point, else the city's) and located artworks, with the city each counts for — the map routes
+join edges to it, so a presence at an institution is drawn at the venue and counted for its city. Vocabulary:
+`lived_in`/`worked_in`/`visited` → place or institution, `depicts` → place or artwork, new `houses` (artwork →
+institution). Rule of thumb: designed works → artworks; organisations and venues → institutions; plain locations and
+natural features → places — and no duplicates.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the

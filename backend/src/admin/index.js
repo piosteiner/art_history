@@ -737,6 +737,11 @@ async function formContext(t, id = null) {
       suggestions[key] = (await adminPool.query(`SELECT DISTINCT ${key} AS v FROM ${t.table} WHERE ${key} IS NOT NULL ORDER BY 1`)).rows.map((r) => r.v);
     }
   }
+  // object types of immovable works, offered even before they are used (migration 034)
+  if (t.type === 'artwork') {
+    suggestions.kind = [...new Set([...suggestions.kind, 'building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate',
+      'monument', 'tower', 'mural'])].sort();
+  }
   // lists whose terms should repeat exactly (the API filters by them): show what is already in use
   const used = {};
   for (const key of ['materials', 'occupations']) {

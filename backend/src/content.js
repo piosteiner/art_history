@@ -34,7 +34,7 @@ const TYPES = [
     name: 'name', names: 'names', kind: 'text', occupations: 'text[]', birth: 'date', death: 'date', active: 'period',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
-    name: 'name', names: 'names', kind: 'text', founded: 'date', place: 'ref:place',
+    name: 'name', names: 'names', kind: 'text', founded: 'date', place: 'ref:place', location: 'point', address: 'text',
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
   // the glossary (migration 027): terms that texts link with [[slug]]; category is a fixed list (enum term_category)
   { type: 'term', folder: 'glossary', table: 'glossary', name: 'name', fields: {
@@ -44,6 +44,7 @@ const TYPES = [
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     other_dimensions: 'dimsets',
     institution: 'ref:institution', inventory_number: 'text',
+    location: 'point', area: 'area',  // only for works that don't move: buildings, gardens, bridges … (migration 034)
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
 // Types with images (table images, migration 017): the foreign-key column that points at them.

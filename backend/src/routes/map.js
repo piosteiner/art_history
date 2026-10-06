@@ -3,6 +3,11 @@
 // GET /v1/map/places?from=&to=            every place, with how many relationships touch it (in the time window)
 // GET /v1/map/presence?from=&to=&types=   who was physically where, overlapping the window (timeline slider)
 // GET /v1/map/<plural>/:slug              one entity's places + its travel route (physical presence only)
+// GET /v1/map/sites                       institutions and immovable artworks with an exact location of their own
+//
+// A location is a place, an institution (its own point, else its city's) or an immovable artwork (view site_geo,
+// migration 034). Features carry the city it counts for as "place", and the institution / artwork when there is one:
+// two people at the same institution at the same time could have met; in the same place, they were in the same city.
 const express = require('express');
 const { apiPool } = require('../db');
 const { badRequest, notFound, yearWindowRange, listParam } = require('../http');
@@ -13,6 +18,15 @@ const router = express.Router();
 // A place's marker (view place_geo, migration 032): its point, else its boundary's label point, else a point inside
 // its own outline.
 const MARKER = '(SELECT g.marker FROM place_geo g WHERE g.id = p.id)';
+
+// Joins for an edge's object as a location: s = site_geo row, o = the object's name, c = the city it counts for.
+const SITE_JOINS = `
+    JOIN site_geo s ON (s.type, s.id) = (r.object_type, r.object_id)
+    JOIN entity_index o ON (o.type, o.id) = (r.object_type, r.object_id)
+    LEFT JOIN places c ON c.id = s.place_id`;
+const SITE_PROPS = `'place', CASE WHEN c.id IS NOT NULL THEN jsonb_build_object('slug', c.slug, 'name', c.name) END,
+        'institution', CASE WHEN r.object_type = 'institution' THEN jsonb_build_object('slug', o.slug, 'name', o.name) END,
+        'artwork', CASE WHEN r.object_type = 'artwork' THEN jsonb_build_object('slug', o.slug, 'name', o.name) END`;
 
 router.get('/places', async (req, res) => {
   const window = yearWindowRange(req.query);
@@ -47,17 +61,17 @@ router.get('/presence', async (req, res) => {
   const { rows } = await apiPool.query(`
     SELECT jsonb_build_object(
       'type', 'Feature',
-      'geometry', ST_AsGeoJSON(${MARKER})::jsonb,
+      'geometry', ST_AsGeoJSON(s.marker)::jsonb,
       'properties', jsonb_build_object(
         'entity', jsonb_build_object('type', e.type, 'slug', e.slug, 'name', e.name),
-        'place', jsonb_build_object('slug', p.slug, 'name', p.name),
+        ${SITE_PROPS},
         'relationship', rt.code, 'label', rt.label, 'note', r.label, 'certainty', r.certainty,
         'period', range_json(r.period, r.period_label))) AS feature
     FROM edges r  -- stored + derived (provenance: kept_in), migration 031
     JOIN relationship_types rt ON rt.code = r.relationship_type AND rt.is_physical_presence
-    JOIN places p ON p.id = r.object_id
+    ${SITE_JOINS}
     JOIN entity_index e ON e.type = r.subject_type AND e.id = r.subject_id
-    WHERE r.object_type = 'place' AND r.subject_type = ANY ($2::entity_type[]) AND r.period && $1::daterange
+    WHERE r.subject_type = ANY ($2::entity_type[]) AND r.period && $1::daterange AND s.marker IS NOT NULL
     ORDER BY lower(r.period), e.name`, [window, types]);
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
@@ -72,19 +86,21 @@ router.get('/:plural/:slug', async (req, res) => {
   const { rows: [result] } = await apiPool.query(`
     WITH stops AS (
       SELECT r.period, rt.code, rt.label, rt.category, rt.is_physical_presence, r.period_label, r.label AS note,
-             r.certainty, p.slug, p.name, ${MARKER} AS point
+             r.certainty, o.name, s.marker AS point, jsonb_build_object(${SITE_PROPS}) AS site
       FROM edges r  -- stored + derived (provenance: kept_in), migration 031
       JOIN relationship_types rt ON rt.code = r.relationship_type
-      JOIN places p ON p.id = r.object_id
-      WHERE r.subject_type = $1 AND r.subject_id = $2 AND r.object_type = 'place'
+      ${SITE_JOINS}
+      WHERE r.subject_type = $1 AND r.subject_id = $2 AND s.marker IS NOT NULL
+        AND (r.object_type = 'place'                                              -- every link to a place, as before
+             OR r.object_type = 'institution' AND rt.is_physical_presence          -- was at an institution
+             OR r.object_type = 'artwork' AND r.relationship_type = 'depicts')     -- shows an immovable work
     )
     SELECT
       coalesce(jsonb_agg(jsonb_build_object(
         'type', 'Feature',
         'geometry', ST_AsGeoJSON(point)::jsonb,
-        'properties', jsonb_build_object(
+        'properties', site || jsonb_build_object(
           'layer', CASE WHEN is_physical_presence THEN 'presence' ELSE 'association' END,
-          'place', jsonb_build_object('slug', slug, 'name', name),
           'relationship', code, 'label', label, 'category', category, 'note', note, 'certainty', certainty,
           'period', range_json(period, period_label)))
         ORDER BY lower(period) NULLS LAST, name), '[]') AS stops,
@@ -100,6 +116,22 @@ router.get('/:plural/:slug', async (req, res) => {
     features.push({ type: 'Feature', geometry: result.route, properties: { layer: 'route' } });
   }
   res.json({ type: 'FeatureCollection', entity: { type: e.type, ...entity }, features });
+});
+
+// Institutions and immovable artworks with an exact location of their own (migration 034).
+router.get('/sites', async (req, res) => {
+  const { rows } = await apiPool.query(`
+    SELECT jsonb_build_object('type', 'Feature', 'geometry', ST_AsGeoJSON(x.geom)::jsonb,
+      'properties', jsonb_build_object('type', x.type, 'slug', x.slug, 'name', x.name, 'kind', x.kind, 'address', x.address,
+        'place', (SELECT jsonb_build_object('slug', c.slug, 'name', c.name) FROM places c WHERE c.id = x.place_id))) AS feature
+    FROM (
+      SELECT 'institution' AS type, i.slug, i.name, i.kind, i.address, i.location AS geom, i.place_id
+      FROM institutions i WHERE i.location IS NOT NULL
+      UNION ALL
+      SELECT 'artwork', a.slug, a.title, a.kind, NULL, coalesce(a.area, a.location), entity_home_place('artwork', a.id)
+      FROM artworks a WHERE a.location IS NOT NULL OR a.area IS NOT NULL
+    ) x ORDER BY x.name`);
+  res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
 
 module.exports = router;

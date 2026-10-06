@@ -35,16 +35,22 @@ const HINTS = {
 // Field names and explanations per entry type, where one word means different things ("kind" of an artwork vs. of a
 // place) or two fields are easily confused (an artwork's object type, medium and materials).
 const LABELS = {
-  'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
+  'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
+  'institution.location': 'Exact location', 'institution.place': 'Place (city)',
+  'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
   'term.definition': 'Short definition', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
   'polity.kind': 'Kind of polity', 'person.kind': 'Kind (person or group)', 'movement.kind': 'Kind',
 };
 const TYPE_HINTS = {
-  'artwork.kind': 'What sort of object it is, in a word or two: painting, woodblock print, hanging scroll, sculpture, vase. Pick a term from the list so works group together.',
   'artwork.medium': html`For people to read: one line, worded like a museum label and shown exactly as written — <i>Oil on canvas</i> · <i>Woodblock print; ink and colour on paper</i> · <i>Bronze, lost-wax cast</i>.`,
   'artwork.materials': 'For filtering: the individual materials, one per line, lowercase and singular — ink · paper · bronze · silk. Substances and supports only, no techniques ("woodblock print" belongs in object type / medium). Type them, or click a suggestion below.',
   'place.boundary_code': html`ISO code of a country (<code>JP</code>) or region (<code>JP-13</code> Tokyo, <code>FR-IDF</code>) — the outline and
     the marker then come from Natural Earth, no point or drawing needed. Countries get it from their country code automatically.`,
+  'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location.',
+  'institution.address': 'Street address, as written locally, e.g. Heimplatz 1, 8001 Zürich.',
+  'artwork.location': 'Only for works that don’t move — buildings, gardens, bridges, temple halls, monuments, murals. Paintings, prints and sculptures in collections: leave empty (they are where their institution is).',
+  'artwork.kind': html`What sort of object it is, in a word or two: painting, woodblock print, hanging scroll, sculpture, vase — or building, garden,
+    bridge, temple hall … Pick a term from the list so works group together. A building that houses an institution: link them with <i>houses</i>.`,
   'place.kind': 'settlement (city, town, village) · building · site (archaeological site, landscape) · region · country',
   'movement.kind': 'period (Edo period) · movement (Impressionism) · school (Ukiyo-e, Rinpa) · style',
   'institution.kind': 'museum · academy · temple · church · gallery · library … — pick a term from the list',
@@ -182,7 +188,7 @@ function fieldInput(key, kind, f, ctx) {
       <div class="row"><input name="${name}_lon" value="${f[`${key}_lon`]}" placeholder="longitude (east +)" inputmode="decimal" aria-label="longitude">
       <input name="${name}_lat" value="${f[`${key}_lat`]}" placeholder="latitude (north +)" inputmode="decimal" aria-label="latitude"></div>
       <div class="map-picker" data-point="${name}"${ctx.areaKey ? html` data-area="f.${ctx.areaKey}"` : ''}></div>
-      <noscript>${hint(HINTS.point)}</noscript></div>`;
+      ${hint(typeHint)}<noscript>${hint(HINTS.point)}</noscript></div>`;
   }
   if (kind === 'date' || kind === 'period') {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
