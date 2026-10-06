@@ -54,7 +54,17 @@ export interface Relationship {
   note: string | null;
   certainty: string | null;
   notes_html: string | null;
+  /** Computed, not entered: from the provenance (owned_by, kept_in, transferred_to). */
+  derived?: boolean;
+  /** Where the period's end comes from (provenance); `implied` = only by the next owner's acquisition. */
+  end_basis?: EndBasis | null;
 }
+
+/** recorded: a source gives the end · implied: the next acquisition · ongoing: still there · unknown: nothing after it. */
+export type EndBasis = 'recorded' | 'implied' | 'ongoing' | 'unknown';
+
+/** An entry whose texts [[link]] this one (backlink). */
+export interface EntryRef { type: EntityType; slug: string; name: string }
 
 interface DetailBase {
   slug: string;
@@ -64,6 +74,8 @@ interface DetailBase {
   relationships: Relationship[];
   /** The glossary terms this entry's texts link (<a class="glossary-link" data-term=…>), for popovers. */
   glossary?: Record<string, GlossaryHint>;
+  /** Entries whose texts link this one (every type except terms, which have `used_in`). */
+  mentioned_in?: EntryRef[];
 }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
@@ -133,7 +145,12 @@ export interface ArtistItem extends Located, Named {
   slug: string; name: string; sort_name: string | null; birth: DateRange | null; death: DateRange | null; image_url: string | null;
   birth_place: BirthPlace | null;
 }
-export interface ArtworkItem extends Located, Titled { slug: string; title: string; created: DateRange | null; kind: string | null; image_url: string | null; creator: Ref | null }
+/** One of an artwork's makers; the main creator comes first. `role`: "landscape", "figures" … */
+export interface CreatorRef extends Ref { main: boolean; role: string | null; certainty: string | null }
+export interface ArtworkItem extends Located, Titled {
+  slug: string; title: string; created: DateRange | null; kind: string | null; image_url: string | null;
+  creator: Ref | null; creators?: CreatorRef[];
+}
 export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
 export interface InstitutionItem extends Located, Named { slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null }
@@ -150,7 +167,8 @@ export interface PolityItem extends Named { slug: string; name: string; kind: st
 
 // ---- details -------------------------------------------------------------------------------------
 
-export interface ArtworkSummary { slug: string; title: string; created: DateRange | null; kind?: string | null; creator?: Ref | null }
+/** In an artist's `artworks`, `co_creator: true` marks works they made together with the main creator. */
+export interface ArtworkSummary { slug: string; title: string; created: DateRange | null; kind?: string | null; creator?: Ref | null; co_creator?: boolean; role?: string | null }
 export type KindRef = Ref & { kind?: string | null; period?: DateRange | null };
 
 export interface Artist extends DetailBase, Located, Named {
@@ -175,7 +193,28 @@ export interface Artwork extends DetailBase, Located, Titled {
   other_dimensions?: PartDimensions[]; // detail only; empty list when there are none
   description_html: string | null;
   images: Image[]; image_url: string | null;
-  creator: Ref | null; institution: Ref | null;
+  creator: Ref | null; creators?: CreatorRef[]; institution: Ref | null;
+  provenance?: ProvenanceStep[];
+}
+
+export type AcquisitionMethod =
+  | 'creation' | 'commission' | 'inheritance' | 'purchase' | 'auction' | 'gift' | 'bequest' | 'exchange'
+  | 'confiscation' | 'forced_sale' | 'restitution' | 'unknown';
+
+/** One owner in an artwork's provenance, as recorded; `period` is computed (its end per `end_basis`). */
+export interface ProvenanceStep {
+  position: number;
+  owner: EntryRef | null; // an entry on this site, else only described:
+  owner_label: string | null; owner_name: string | null;
+  acquired: DateRange | null; ended: DateRange | null;
+  method: AcquisitionMethod | null;
+  /** The handover from the previous owner is documented (false: possibly someone in between). */
+  direct: boolean;
+  label: string | null; certainty: string | null;
+  place: Ref | null;
+  period: DateRange | null; end_basis: EndBasis | null;
+  notes_html: string | null;
+  sources: string[] | null;
 }
 
 export interface Place extends DetailBase, Named {
@@ -223,7 +262,7 @@ export interface Term extends DetailBase, Named {
   description_html: string | null;
   images: Image[]; image_url: string | null;
   /** Entries whose texts link this term. */
-  used_in: { type: EntityType; slug: string; name: string }[];
+  used_in: EntryRef[];
 }
 
 export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Term;
@@ -245,6 +284,8 @@ export interface RelationshipType {
   code: string; label: string; inverse_label: string | null; category: Category;
   is_physical_presence: boolean; is_symmetric: boolean;
   subject_types: EntityType[]; object_types: EntityType[]; description: string | null;
+  /** Computed, never entered: `creator` (graph only), `owned_by`, `kept_in`, `transferred_to` (provenance). */
+  derived?: boolean;
 }
 
 // ---- map (GeoJSON, [longitude, latitude]) --------------------------------------------------------
@@ -279,5 +320,9 @@ export interface PlacesMap { type: 'FeatureCollection'; features: Feature<PointG
 // ---- graph ---------------------------------------------------------------------------------------
 
 export interface GraphNode { id: string; type: EntityType; slug: string; name: string; kind: string | null; depth: number; period: DateRange | null }
-export interface GraphEdge { source: string; target: string; type: string; label: string; category: Category; symmetric: boolean; certainty: string | null; note: string | null; period: DateRange | null }
+export interface GraphEdge {
+  source: string; target: string; type: string; label: string; category: Category; symmetric: boolean;
+  certainty: string | null; note: string | null; period: DateRange | null;
+  derived?: boolean; end_basis?: EndBasis | null;
+}
 export interface Graph { root: string; depth: number; types: string[]; truncated: boolean; nodes: GraphNode[]; edges: GraphEdge[] }

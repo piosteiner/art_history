@@ -4,13 +4,15 @@ import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { GROUPS, type Group } from '../selection';
 import {
-  countryLink, countryName, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
+  countryLink, countryName, creatorsOf, dateLabel, displayName, impliedEnd, personDates, personWhat, ROLE_LABEL, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
   wireImageFallbacks, wireLightbox, type Html,
 } from '../html';
 import { COLORS, createMap, showEntity, showPoint } from '../map';
-import type { ArtworkSummary, Category, Country, DetailByPlural, Dimensions, Entity, Image, KindRef, PartDimensions, Plural, PolityLink, Relationship } from '../types';
+import type {
+  Artwork, ArtworkSummary, Category, Country, DetailByPlural, Dimensions, Entity, EntryRef, Image, KindRef, PartDimensions, Plural, PolityLink, ProvenanceStep, Relationship,
+} from '../types';
 import { guard, loading, showError } from './common';
-import { wireGlossary } from '../glossary';
+import { wireTextLinks } from '../glossary';
 
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
@@ -56,7 +58,69 @@ const refs = (type: Parameters<typeof link>[0], items: KindRef[]) =>
 const artworkList = (works: ArtworkSummary[], withCreator: boolean) => html`<ul class="plain-list">${works.map((w) => html`<li>
   ${link('artwork', w.slug, w.title)}${w.created ? html` <span class="muted">${w.created.label}</span>` : ''}
   ${withCreator && w.creator ? html` · ${link('artist', w.creator.slug, w.creator.name)}` : ''}
+  ${w.co_creator ? html`<span class="tag">co-creator${w.role ? ` · ${w.role}` : ''}</span>` : ''}
 </li>`)}</ul>`;
+
+const uncertain = (certainty: string | null | undefined) => (certainty && certainty !== 'attested' ? html`<span class="tag">${certainty}</span>` : '');
+
+/**
+ * Who made it, one per line: the main creator first, then co-creators with their part ("landscape").
+ * An attribution ("Workshop of Rubens") stands instead of the main creator's name, linked to the creator;
+ * without a creator it stands on its own.
+ */
+function creatorsFact(e: Artwork): Html | string | null {
+  const all = creatorsOf(e);
+  const lines = all.map((c) => html`${link('artist', c.slug, c.main && e.attribution_label ? e.attribution_label : c.name)}${c.role ? html` <span class="muted">(${c.role})</span>` : ''}${uncertain(c.certainty)}`);
+  if (e.attribution_label && !all.some((c) => c.main)) lines.unshift(html`${e.attribution_label}`);
+  return lines.length ? html`${lines.map((l, i) => html`${i ? html`<br>` : ''}${l}`)}` : null;
+}
+
+const METHOD_LABEL: Record<string, string> = { forced_sale: 'forced sale' };
+
+/**
+ * The owners in order, as recorded. A period whose end is only implied by the next acquisition is marked; a handover
+ * that isn't documented as direct gets a dashed connector ("possibly other owners in between").
+ */
+function provenanceSection(steps: ProvenanceStep[]): Html | null {
+  if (!steps.length) return null;
+  const host = (url: string) => {
+    try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return 'source'; }
+  };
+  return html`<section class="provenance">
+    <h2>Provenance</h2>
+    <p class="muted small">Owners in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between.</p>
+    <ol class="provenance-list">${steps.map((s, i) => {
+      const owner = s.owner
+        ? html`${link(s.owner.type, s.owner.slug, s.owner.name)}${s.owner_label && s.owner_label !== s.owner.name ? html` <span class="muted">(${s.owner_label})</span>` : ''}`
+        : html`${s.owner_label ?? s.owner_name ?? 'Unknown owner'}`;
+      const how = [s.method && s.method !== 'unknown' ? html`${METHOD_LABEL[s.method] ?? s.method}` : null, s.label ? html`${s.label}` : null,
+        s.place ? html`in ${link('place', s.place.slug, s.place.name)}` : null].filter((x): x is Html => !!x);
+      return html`<li class="provenance-step${i && !s.direct ? ' undocumented' : ''}">
+        ${i && !s.direct ? html`<div class="provenance-gap">handover not documented</div>` : ''}
+        <div class="provenance-owner">${owner}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}</div>
+        ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
+        ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
+        ${s.sources?.length ? html`<div class="provenance-sources">Sources: ${s.sources.map((u, j) => html`${j ? ', ' : ''}${/^https?:\/\//.test(u)
+          ? html`<a href="${u}" target="_blank" rel="noopener">${host(u)}</a>` : u}`)}</div>` : ''}
+      </li>`;
+    })}</ol>
+  </section>`;
+}
+
+/** Backlinks: the entries whose texts link this one. */
+const backlinks = (title: string, hint: string, refs: EntryRef[] | undefined) => (refs?.length
+  ? html`<section class="backlinks"><h2>${title}</h2><p class="muted small">${hint}</p><ul class="plain-list">${refs.map((u) =>
+    html`<li>${link(u.type, u.slug, u.name)} <span class="muted">${TYPE_LABEL[u.type]}</span></li>`)}</ul></section>`
+  : null);
+
+/**
+ * Relationships listed elsewhere on the page: an artwork's co-creators (under Artist) and its owners and places
+ * from the provenance (under Provenance); an artist's co-created works (under Artworks).
+ */
+function shownElsewhere(e: Entity, r: Relationship) {
+  if (r.type === 'co_creator') return e.type === 'artwork' || e.type === 'artist';
+  return e.type === 'artwork' && !!r.derived && (r.type === 'owned_by' || r.type === 'kept_in');
+}
 
 function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; text: string | null; images: Image[]; extra: Html[]; lead?: string | null } {
   switch (e.type) {
@@ -70,13 +134,15 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
         ],
         extra: e.artworks.length ? [html`<section><h2>Artworks</h2>${artworkList(e.artworks, false)}</section>`] : [],
       };
-    case 'artwork':
+    case 'artwork': {
+      const coCreators = creatorsOf(e).filter((c) => !c.main);
+      const byline = [e.creator ? e.attribution_label ?? e.creator.name : e.attribution_label, ...coCreators.map((c) => c.name)];
       return {
         title: e.title,
-        subtitle: [e.creator?.name ?? e.attribution_label, e.created?.label].filter(Boolean).join(', '),
+        subtitle: [...byline, e.created?.label].filter(Boolean).join(', '),
         text: e.description_html, images: e.images,
         facts: [
-          ['Artist', e.creator ? link('artist', e.creator.slug, e.creator.name) : e.attribution_label],
+          [creatorsOf(e).length > 1 ? 'Artists' : 'Artist', creatorsFact(e)],
           ['Date', dateLabel(e.created)],
           ['Type', e.kind],
           ['Medium', e.medium],
@@ -87,8 +153,9 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Inventory no.', e.inventory_number],
           ['Also known as', otherNames(e)],
         ],
-        extra: [],
+        extra: [provenanceSection(e.provenance ?? [])].filter((x): x is Html => !!x),
       };
+    }
     case 'place':
       return {
         title: e.name, subtitle: [e.kind, e.country_code].filter(Boolean).join(' · '), text: e.description_html, images: [],
@@ -143,10 +210,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
       return {
         title: e.name, subtitle: `Glossary · ${e.category}`, lead: e.definition, text: e.description_html, images: e.images,
         facts: [['Category', html`<a href="/glossary?category=${e.category}">${e.category}</a>`], ['Also known as', otherNames(e)]],
-        extra: e.used_in.length
-          ? [html`<section><h2>Used in</h2><p class="muted small">Entries whose texts mention this term.</p><ul class="plain-list">${e.used_in.map((u) =>
-            html`<li>${link(u.type, u.slug, u.name)} <span class="muted">${TYPE_LABEL[u.type]}</span></li>`)}</ul></section>`]
-          : [],
+        extra: [backlinks('Used in', 'Entries whose texts mention this term.', e.used_in)].filter((x): x is Html => !!x),
       };
     case 'polity':
       return {
@@ -176,8 +240,8 @@ function relationshipSections(rels: Relationship[]): Html {
     <ul class="rel-list">${groups.get(cat)!.sort(byDate).map((r) => html`<li>
       <span class="rel-label">${r.label}</span>
       ${link(r.entity.type, r.entity.slug, r.entity.name)}
-      ${r.period ? html`<span class="muted">${r.period.label}</span>` : ''}
-      ${r.certainty && r.certainty !== 'attested' ? html`<span class="tag">${r.certainty}</span>` : ''}
+      ${r.period ? html`<span class="muted">${r.period.label}</span>` : ''}${impliedEnd(r.end_basis)}
+      ${uncertain(r.certainty)}
       ${r.note ? html`<div class="rel-note">${r.note}</div>` : ''}
       ${r.notes_html ? html`<div class="rel-note">${trusted(r.notes_html)}</div>` : ''}
     </li>`)}</ul>
@@ -192,8 +256,8 @@ function crossedPaths(el: HTMLElement, type: string, slug: string, current: () =
   Promise.all([getPresence(-3000, new Date().getFullYear() + 1), listEntities('artworks', { limit: 500 })])
     .then(([presence, artworks]) => {
       if (!current() || !el.isConnected) return;
-      const creators = new Map(artworks.data.map((a) => [a.slug, a.creator?.slug]));
-      const all = findEncounters(presence.features.map((f) => f.properties), { creatorOf: (a) => creators.get(a) });
+      const artists = new Map(artworks.data.map((a) => [a.slug, creatorsOf(a).map((c) => c.slug)]));
+      const all = findEncounters(presence.features.map((f) => f.properties), { artistsOf: (a) => artists.get(a) });
       const self = `${type}/${slug}`;
       const mine = type === 'place'
         ? all.filter((x) => x.place.slug === slug)
@@ -237,7 +301,8 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
             <section id="crossed" class="crossed" hidden></section>
-            ${relationshipSections(e.type === 'polity' ? e.relationships : e.relationships.filter((r) => r.category !== 'polity'))}
+            ${relationshipSections(e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r)))}
+            ${backlinks('Mentioned in', 'Entries whose texts link to this one.', e.mentioned_in)}
           </div>
           ${hasMap ? html`<aside class="detail-side">
             <div class="map map-small" id="map"></div>
@@ -247,7 +312,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       </article>`);
       wireImageFallbacks(main);
       wireLightbox(main);
-      wireGlossary(main, e.glossary);
+      wireTextLinks(main, e.glossary);
       if (['artist', 'person', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
       if (!hasMap) return;
 

@@ -71,7 +71,9 @@ function describe(plural, e) {
   const country = e.country?.name ?? null;
   const facts = {
     artists: [dateSpan(e.birth, e.death), e.birth_place ? `born in ${e.birth_place.name}${country && country !== e.birth_place.name ? `, ${country}` : ''}` : ''],
-    artworks: [e.creator?.name ?? e.attribution_label, e.created?.label, e.kind, e.institution ? e.institution.name : ''],
+    // an attribution ("Workshop of Rubens") stands instead of the creator's name; then any co-creators
+    artworks: [[e.creator ? e.attribution_label ?? e.creator.name : e.attribution_label,
+      ...(e.creators ?? []).filter((c) => !c.main).map((c) => c.name)].filter(Boolean).join(', '), e.created?.label, e.kind, e.institution ? e.institution.name : ''],
     movements: [e.kind, e.period?.label],
     polities: [e.kind, e.period?.label],
     institutions: [e.kind, e.place?.name && country ? `${e.place.name}, ${country}` : e.place?.name, e.founded ? `founded ${e.founded.label}` : ''],
@@ -88,7 +90,11 @@ function jsonLd(plural, e, d, url) {
   const base = { '@context': 'https://schema.org', name: d.name, url, description: d.description };
   if (d.image) base.image = thumb(d.image.url);
   if (plural === 'artists') return { ...base, '@type': 'Person', birthDate: e.birth?.from ?? undefined, deathDate: e.death?.to ?? undefined, birthPlace: e.birth_place?.name };
-  if (plural === 'artworks') return { ...base, '@type': 'VisualArtwork', creator: e.creator ? { '@type': 'Person', name: e.creator.name, url: `${SITE}/artists/${e.creator.slug}/` } : undefined, dateCreated: e.created?.label, artMedium: e.medium ?? undefined, artform: e.kind ?? undefined };
+  if (plural === 'artworks') {
+    // main creator and co-creators (API `creators`; `creator` alone from older responses)
+    const makers = (e.creators ?? (e.creator ? [e.creator] : [])).map((c) => ({ '@type': 'Person', name: c.name, url: `${SITE}/artists/${c.slug}/` }));
+    return { ...base, '@type': 'VisualArtwork', creator: makers.length > 1 ? makers : makers[0], dateCreated: e.created?.label, artMedium: e.medium ?? undefined, artform: e.kind ?? undefined };
+  }
   if (plural === 'places') return { ...base, '@type': 'Place', geo: e.location ? { '@type': 'GeoCoordinates', longitude: e.location.coordinates[0], latitude: e.location.coordinates[1] } : undefined };
   if (plural === 'institutions') return { ...base, '@type': e.kind === 'museum' ? 'Museum' : 'Organization', foundingDate: e.founded?.label };
   return null;

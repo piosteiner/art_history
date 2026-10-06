@@ -5,7 +5,7 @@
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
 import { getEntityMap, getPlacesMap, getPresence, listEntities, PLURAL } from '../api';
 import { entries } from '../catalog';
-import { href, html, render } from '../html';
+import { creatorsOf, href, html, render } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
 import { COLORS, createMap, focusEncounter, highlightRoute, PALETTE, showEncounters, showPlaces, showPresence, showSelection, type ColoredEntityMap, type RouteInfo } from '../map';
@@ -91,7 +91,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   let crossedCoords: (slug: string) => [number, number] | undefined = () => undefined;
   let showAllCrossed = false;
   function crossings(stays: Stay[], coords: (slug: string) => [number, number] | undefined) {
-    crossed = findEncounters(stays, { creatorOf, window: win });
+    crossed = findEncounters(stays, { artistsOf, window: win });
     crossedCoords = coords;
     showEncounters(map, crossed, coords);
     drawCrossings();
@@ -214,7 +214,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       types.length ? getPresence(ALL_TIME.from, ALL_TIME.to, [...types]) : Promise.resolve({ type: 'FeatureCollection', features: [] } as PresenceMap),
     ]);
     if (stale()) return;
-    const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, creatorOf)).map((f) => f.properties);
+    const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, artistsOf)).map((f) => f.properties);
     const where = new Map(places.features.map((f) => [f.properties.slug, f.geometry.coordinates] as const));
     useRoutes(showPlaces(map, places, rows, (slug) => where.get(slug)));
     crossings(rows, (slug) => where.get(slug));
@@ -275,7 +275,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const fc = await getPresence(w.from, w.to, [...types]);
     if (stale()) return;
     // the API filters by type; single picks are filtered here (backend wish: an `entities=` parameter)
-    const features = fc.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, creatorOf));
+    const features = fc.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, artistsOf));
     useRoutes(showPresence(map, { ...fc, features }));
     redrawLegend();
     const at = new Map(features.map((f) => [f.properties.place.slug, f.geometry.coordinates] as const));
@@ -289,9 +289,9 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
 
   // ---- timeline + pickers (need the entry lists) ---------------------------------------------------
 
-  // an artwork's artist, for "works by the chosen artists" (known once the lists are loaded)
-  const creators = new Map<string, string>();
-  const creatorOf = (artwork: string) => creators.get(artwork);
+  // an artwork's artists (main creator and co-creators), for "works by the chosen artists" (known once the lists are loaded)
+  const artists = new Map<string, string[]>();
+  const artistsOf = (artwork: string) => artists.get(artwork);
 
   let timeline: ReturnType<typeof renderTimeline> | undefined;
   let timelineView: { from: number; to: number } | null = null; // zoom survives redraws when the picks change
@@ -334,7 +334,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     .then((l) => {
       if (!main.contains(timelineEl)) return;
       lists = l;
-      l.artworks.forEach((a) => a.creator && creators.set(a.slug, a.creator.slug));
+      l.artworks.forEach((a) => artists.set(a.slug, creatorsOf(a).map((c) => c.slug)));
       updateMap(); // now artworks' artists are known: crossed paths leave out a work with its own artist, "by chosen artists" works
       const groups: PickerGroup[] = [
         { group: 'artist', plural: 'artists', label: 'Artists', entries: entries('artists', l.artists) },

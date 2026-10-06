@@ -1,5 +1,6 @@
 // The network around one entry (/v1/graph/<type>/<slug>): who influenced whom, studied where, belonged to which
-// movement, was supported by which patron … laid out with d3-force. /graph/artists/vincent-van-gogh?depth=2
+// movement, was supported by which patron, made which work, owned it after whom (provenance) … laid out with d3-force.
+// /graph/artists/vincent-van-gogh?depth=2
 //   click a node: details and its links in the side panel · double-click: center the network on it
 //   Ctrl/Cmd/middle click: open its page in a new tab · drag nodes · wheel/pinch zooms, drag the background pans
 import { drag } from 'd3-drag';
@@ -7,7 +8,7 @@ import { forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY
 import { select } from 'd3-selection';
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom';
 import { getGraph, getVocabulary, PLURAL } from '../api';
-import { escape, href, html, link, render, TYPE_LABEL } from '../html';
+import { escape, href, html, impliedEnd, link, render, TYPE_LABEL } from '../html';
 import type { Category, GraphEdge, GraphNode, Plural } from '../types';
 import { guard, loading, showError } from './common';
 import { navigate } from '../router';
@@ -27,7 +28,8 @@ const radius = (n: Node) => (n.depth === 0 ? 13 : 6 + Math.min(n.degree, 8));
 export function graph(main: HTMLElement, plural: Plural | undefined, slug: string | undefined, params: URLSearchParams) {
   if (!plural || !slug) {
     render(main, html`<section class="page"><h1>Network</h1>
-      <p>The network shows who influenced whom, who studied where, belonged to which movement, was supported by which patron or appears in which work.
+      <p>The network shows who influenced whom, who studied where, belonged to which movement, was supported by which patron, made or appears in which work,
+      and which collectors, dealers and museums owned a work one after another.
       Start from any entry: open its page and choose <em>Show the network</em>, or start with one of these:</p>
       <ul class="plain-list">
         <li>${link('artist', 'vincent-van-gogh', 'Vincent van Gogh')}: <a href="/graph/artists/vincent-van-gogh?depth=2">network</a></li>
@@ -90,7 +92,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
         </div>
       </div>
       <p class="muted small">${nodes.length} entries, ${edges.length} links${truncated ? ' (cut off at 500 entries: choose fewer steps or kinds of links)' : ''}.
-        Click an entry for details, double-click to center the network on it; dashed = not certain; arrows point from the subject (“Van Gogh → influenced by → Hokusai”).</p>
+        Click an entry for details, double-click to center the network on it; dashed = not certain, faded and dashed = end of the period only implied; arrows point from the subject (“Van Gogh → influenced by → Hokusai”).</p>
       <div class="graph-wrap">
         <svg class="graph" role="img" aria-label="Network graph"></svg>
         <aside class="graph-info" aria-live="polite"></aside>
@@ -110,7 +112,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       markerWidth="7" markerHeight="7" orient="auto"><path d="M0,-4L8,0L0,4" class="arrowhead"/></marker>`).join(''));
     const viewport = svg.append('g');
     const linkSel = viewport.append('g').attr('class', 'edges').selectAll('line').data(edges).join('line')
-      .attr('class', (e) => `edge cat-${e.category}${e.certainty && e.certainty !== 'attested' ? ' uncertain' : ''}`)
+      .attr('class', (e) => `edge cat-${e.category}${e.certainty && e.certainty !== 'attested' ? ' uncertain' : ''}${e.end_basis === 'implied' ? ' implied' : ''}`)
       .attr('marker-end', (e) => (e.symmetric ? null : `url(#arrow-${e.category})`));
     const nodeSel = viewport.append('g').attr('class', 'nodes').selectAll<SVGAElement, Node>('a').data(nodes).join((enter) => enter.append<SVGAElement>('a'))
       .attr('href', (n) => href(n.type, n.slug))
@@ -118,7 +120,8 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
     nodeSel.append('circle').attr('r', radius);
     nodeSel.append('text').attr('dx', (n) => radius(n) + 4).attr('dy', '0.35em').text((n) => n.name);
     nodeSel.append('title').text((n) => `${n.name} (${TYPE_LABEL[n.type]}${n.period ? `, ${n.period.label}` : ''})`);
-    linkSel.append('title').text((e) => `${byId.get(e.source as string)?.name} ${e.label} ${byId.get(e.target as string)?.name}${e.certainty && e.certainty !== 'attested' ? ` (${e.certainty})` : ''}`);
+    linkSel.append('title').text((e) => `${byId.get(e.source as string)?.name} ${e.label} ${byId.get(e.target as string)?.name}${e.period ? ` ${e.period.label}` : ''}`
+      + `${e.end_basis === 'implied' ? ' (end implied)' : ''}${e.certainty && e.certainty !== 'attested' ? ` (${e.certainty})` : ''}`);
 
     root.fx = width / 2;
     root.fy = height / 2;
@@ -237,7 +240,7 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
           const s = e.source as Node, t = e.target as Node;
           return html`<li class="cat-${e.category}"><i class="line swatch"></i>
             ${s === n ? 'this' : link(s.type, s.slug, s.name)} <span class="muted">${e.label}</span> ${t === n ? 'this' : link(t.type, t.slug, t.name)}
-            ${e.period ? html` <span class="muted">${e.period.label}</span>` : ''}${e.certainty && e.certainty !== 'attested' ? html` <span class="tag">${e.certainty}</span>` : ''}
+            ${e.period ? html` <span class="muted">${e.period.label}</span>` : ''}${impliedEnd(e.end_basis)}${e.certainty && e.certainty !== 'attested' ? html` <span class="tag">${e.certainty}</span>` : ''}
             ${e.note ? html`<div class="rel-note">${e.note}</div>` : ''}</li>`;
         })}</ul>`);
     }

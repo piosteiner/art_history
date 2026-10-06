@@ -1,9 +1,9 @@
 // One dropdown per type ("Artists · 2 of 14"): search, sort with section headings, All / None,
 // add or remove everything a search shows, "chosen first", and a checklist of entries.
 import { explain, matches, saveSort, savedSort, sortEntries, sortOptions, type Entry, type SortOption } from './catalog';
-import { href, html, langAttr, render } from './html';
+import { creatorsOf, href, html, langAttr, render } from './html';
 import { ALL, GROUPS, includes, type Group, type Pick, type Selection } from './selection';
-import type { Plural } from './types';
+import type { ArtworkItem, Plural } from './types';
 
 export interface PickerGroup {
   group: Group;
@@ -66,9 +66,9 @@ export function mountPickers(
 
   const reset = root.querySelector<HTMLButtonElement>('.pickers-reset')!;
   const detailsOf = (g: Group) => root.querySelector<HTMLDetailsElement>(`details.pick[data-group="${g}"]`)!;
-  // an artwork's artist, for the "by chosen artists" mode
-  const creators = new Map((byGroup.get('artwork')?.entries ?? []).map((e) => [e.slug, (e.item as { creator?: { slug: string } | null }).creator?.slug]));
-  const isChosen = (g: Group, slug: string) => includes(sel, g, slug, (a) => creators.get(a));
+  // an artwork's artists, for the "by chosen artists" mode
+  const artists = new Map((byGroup.get('artwork')?.entries ?? []).map((e) => [e.slug, creatorsOf(e.item as ArtworkItem).map((c) => c.slug)]));
+  const isChosen = (g: Group, slug: string) => includes(sel, g, slug, (a) => artists.get(a));
 
   /** The entries a group's search lets through, in its sort order (chosen ones first if asked). */
   function visible(g: Group) {

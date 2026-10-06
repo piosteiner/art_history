@@ -75,7 +75,20 @@ The graph has the category `depiction` (`depicts_person`).
 `/glossary` (A–Z with letter headings, category buttons, also as `?category=`) and `/glossary/<slug>` (definition as lead, text,
 images, related terms, "Used in"). Links in any `*_html` (`a.glossary-link`) get a popover from the detail's `glossary` map
 (`src/glossary.ts`: hover/focus; on touch the first tap shows it, "Read more" navigates); `missing` terms become plain
-dimmed text, never dead links.
+dimmed text, never dead links. Links to other entries (`a.entry-link`, `[[type/slug]]` in the admin, migration 030) go to
+the site's own addresses and are followed by the router; `missing` ones become dimmed text too. Every detail page lists
+its backlinks (`mentioned_in`) as "Mentioned in", a term's as "Used in".
+
+## Creators and provenance
+- Several creators (migration 028): `creators` (main first). The artwork page shows them one per line with their part
+  ("(landscape)") and uncertainty; an `attribution_label` ("Workshop of Rubens") stands instead of the main creator's
+  name, linked to the creator. Artist pages tag co-created works; cards, pickers ("by chosen artists") and crossed paths
+  count every creator (`creatorsOf()` in `src/html.ts`). `co_creator` relationships aren't repeated under Collaboration.
+- Provenance (migration 031): "Provenance" on artwork pages — owners in order with method, place, notes and sources;
+  a period whose end is only implied by the next acquisition (`end_basis: implied`) gets an "end implied" tag, a
+  handover not documented as direct a dashed rail with "handover not documented". The derived `owned_by` / `kept_in`
+  relationships aren't repeated below it; on owners' pages they carry the same tag. In the graph, implied edges are
+  dashed and faded. The artwork's map route includes its `kept_in` stops without frontend changes.
 
 ## Names in several languages
 The display name (`name`, artworks `title`) may be the original or a translation: elements showing a name get
@@ -94,11 +107,8 @@ place pages. Overlaps based on year-only or "c." dates are marked "possibly".
 - **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise): `GET /v1/encounters?from=&to=&types=`
   = a self-join of presence links on `place_id` with `a.period && b.period` (daterange overlap, GiST index) and
   `a.period * b.period` as the overlap; today the browser does this over the full presence list.
-- **Artwork provenance on the map:** artworks only have `created_in` as presence today; where a work was kept later
-  (`housed_at` an institution, `owned_by` a patron, dated) and where it is now (its institution's place) are not map
-  data, so an artwork's journey can't be drawn. Wish: include them in `/v1/map/artworks/:slug` and `/v1/map/presence`
-  as presence stops at the institution's / owner's place (with the provenance period; the current location undated or
-  "since …").
+- **`end_basis` on map stops:** `/v1/map/…` features don't carry `end_basis` yet, so a `kept_in` stop whose end is
+  only implied can't be drawn differently on the map (the detail page and the graph do mark it).
 - **Bug:** `/v1/map/presence?from=-5000` answers `internal_error` (PostgreSQL dates start at 4713 BC); clamp or
   return `bad_request`. The frontend uses -3000.
 - `GET /v1/map/presence?…&entities=artist/vincent-van-gogh,person/theo-van-gogh`: today the frontend filters single

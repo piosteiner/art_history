@@ -1,7 +1,7 @@
 // Tiny HTML templating: interpolated values are escaped unless they are already Html (from html`` or trusted()).
 // Images load with crossorigin="anonymous": Wikimedia then neither receives nor sets cookies (the site stays cookie-free).
 import { PLURAL } from './api';
-import type { Country, DateRange, EntityType, Image, NameEntry, Plural, PolityLink } from './types';
+import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, Plural, PolityLink, Ref } from './types';
 
 export class Html {
   constructor(readonly value: string) {}
@@ -110,6 +110,20 @@ export const PLURAL_LABEL: Record<Plural, string> = {
   artists: 'Artists', artworks: 'Artworks', places: 'Places',
   movements: 'Movements', institutions: 'Institutions', people: 'People', polities: 'Polities', glossary: 'Glossary',
 };
+
+// ---- creators and provenance ---------------------------------------------------------------------
+
+/** All of an artwork's makers, the main creator first (`creator` alone where `creators` isn't sent). */
+export const creatorsOf = (a: { creator?: Ref | null; creators?: CreatorRef[] }): CreatorRef[] =>
+  a.creators ?? (a.creator ? [{ ...a.creator, main: true, role: null, certainty: null }] : []);
+
+/** "Rubens, Jan Brueghel the Elder" — for cards and subtitles. */
+export const creatorNames = (a: { creator?: Ref | null; creators?: CreatorRef[] }) =>
+  creatorsOf(a).map((c) => c.name).join(', ');
+
+/** A period whose end is only implied by the next owner's acquisition: say so next to the dates. */
+export const impliedEnd = (basis: EndBasis | null | undefined) =>
+  basis === 'implied' ? html`<span class="tag tag-implied" title="Not recorded: the end is implied by the next owner's acquisition">end implied</span>` : '';
 
 // ---- people -------------------------------------------------------------------------------------
 

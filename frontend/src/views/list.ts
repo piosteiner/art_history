@@ -1,5 +1,5 @@
 import { listEntities } from '../api';
-import { countryName, countryText, dateLabel, displayName, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
+import { countryName, countryText, creatorNames, dateLabel, displayName, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
@@ -26,7 +26,7 @@ function cardParts(plural: Plural, item: AnyItem) {
     case 'artworks': {
       const a = item as ItemByPlural['artworks'];
       [name, date, image] = [a.title, dateLabel(a.created), a.image_url];
-      detail = [a.kind, a.creator?.name, countryText(a.country)].filter(Boolean).join(' · ');
+      detail = [a.kind, creatorNames(a), countryText(a.country)].filter(Boolean).join(' · ');
       break;
     }
     case 'places': {

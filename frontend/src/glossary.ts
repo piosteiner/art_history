@@ -2,6 +2,8 @@
 // A real term gets a popover with its name, category and short definition (from the detail's `glossary` map, so no
 // further request): on hover or keyboard focus; on touch the first tap opens it and the link inside navigates.
 // A term that doesn't exist yet (class "missing") becomes plain, slightly dimmed text instead of a dead link.
+// Links to other entries (<a href="/artists/<slug>" class="entry-link" data-entry="artist/<slug>">) are ordinary
+// links the router follows; a missing entry becomes dimmed text the same way.
 import { html } from './html';
 import { ROUTE_EVENT } from './router';
 import type { GlossaryHint } from './types';
@@ -46,17 +48,17 @@ function show(a: HTMLAnchorElement, hint: GlossaryHint) {
   popover.style.top = `${r.bottom + window.scrollY + 6}px`;
 }
 
-/** Turns the glossary links inside `root` into popovers (or plain text for missing terms). */
-export function wireGlossary(root: Element, terms: Record<string, GlossaryHint> | undefined) {
+/** Turns the links inside `root`'s texts into popovers (glossary terms) or plain text (missing terms and entries). */
+export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint> | undefined) {
+  root.querySelectorAll<HTMLAnchorElement>('a.glossary-link.missing, a.entry-link.missing').forEach((a) => {
+    const term = a.classList.contains('glossary-link');
+    const span = document.createElement('span');
+    span.className = term ? 'glossary-missing' : 'entry-missing';
+    span.title = term ? 'Not in the glossary yet' : 'Not on this site yet';
+    span.textContent = a.textContent;
+    a.replaceWith(span);
+  });
   root.querySelectorAll<HTMLAnchorElement>('a.glossary-link').forEach((a) => {
-    if (a.classList.contains('missing')) {
-      const span = document.createElement('span');
-      span.className = 'glossary-missing';
-      span.title = 'Not in the glossary yet';
-      span.textContent = a.textContent;
-      a.replaceWith(span);
-      return;
-    }
     const hint = terms?.[a.dataset.term ?? ''];
     if (!hint) return; // a plain link to the term page still works
     // A tap also fires (emulated) hover and focus, which open the popover before the click arrives; so whether this

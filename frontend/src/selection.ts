@@ -44,15 +44,12 @@ export function writeSelection(sel: Selection, params: URLSearchParams) {
 
 /**
  * Whether an entity of any type passes the selection (types without a picker always do).
- * `creatorOf` gives an artwork's artist, for the "works by the chosen artists" mode.
+ * `artistsOf` gives an artwork's artists (main creator and co-creators), for the "works by the chosen artists" mode.
  */
-export function includes(sel: Selection, type: EntityType, slug: string, creatorOf?: (artwork: string) => string | null | undefined): boolean {
+export function includes(sel: Selection, type: EntityType, slug: string, artistsOf?: (artwork: string) => string[] | undefined): boolean {
   if (!isGroup(type)) return true;
   const p = sel[type];
-  if (p.mode === 'by-artists') {
-    const artist = creatorOf?.(slug);
-    return !!artist && includes(sel, 'artist', artist);
-  }
+  if (p.mode === 'by-artists') return (artistsOf?.(slug) ?? []).some((artist) => includes(sel, 'artist', artist));
   return p.mode === 'all' || (p.mode === 'some' && p.slugs.includes(slug));
 }
 

@@ -67,8 +67,8 @@ export function duration(n: number) {
 }
 
 export interface FindOptions {
-  /** An artwork's artist: their pair isn't an encounter. */
-  creatorOf?: (artwork: string) => string | null | undefined;
+  /** An artwork's artists (main creator and co-creators): their pairs aren't encounters. */
+  artistsOf?: (artwork: string) => string[] | undefined;
   /** Only overlaps within these years (inclusive), clipped to them. */
   window?: { from: number; to: number } | null;
 }
@@ -91,7 +91,7 @@ export function findEncounters(stays: Stay[], opts: FindOptions = {}): Encounter
         // two works made in the same place say nothing about a relationship (their artists' stays do)
         if (x.stay.entity.type === 'artwork' && y.stay.entity.type === 'artwork') continue;
         const [art, other] = x.stay.entity.type === 'artwork' ? [x.stay, y.stay] : [y.stay, x.stay];
-        if (art.entity.type === 'artwork' && other.entity.type === 'artist' && opts.creatorOf?.(art.entity.slug) === other.entity.slug) continue;
+        if (art.entity.type === 'artwork' && other.entity.type === 'artist' && opts.artistsOf?.(art.entity.slug)?.includes(other.entity.slug)) continue;
         let from = Math.max(x.r[0], y.r[0]);
         let to = Math.min(x.r[1], y.r[1]);
         if (win) [from, to] = [Math.max(from, win[0]), Math.min(to, win[1])];

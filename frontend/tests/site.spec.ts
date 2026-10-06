@@ -332,6 +332,120 @@ test('glossary: A–Z with category buttons, term page with definition, related 
   await expect(page.locator('main a', { hasText: 'The Great Wave off Kanagawa' })).toBeVisible(); // used in
 });
 
+// ---- co-creators, [[links]] to entries, provenance (migrations 028–031; the live content may not have examples yet,
+// so the tests change the live responses) ----
+async function patch(page: Page, url: RegExp, change: (body: Record<string, unknown>) => void) {
+  await page.route(url, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    change(body);
+    await route.fulfill({ response: res, json: body });
+  });
+}
+const GREAT_WAVE = /\/v1\/artworks\/the-great-wave-off-kanagawa$/;
+
+test('several creators: attribution instead of the name, co-creators with their part; not repeated below', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    const main = b.creator as { slug: string; name: string };
+    b.attribution_label = 'Workshop of Hokusai';
+    b.creators = [{ ...main, main: true, role: null, certainty: 'attested' },
+      { slug: 'katsushika-oi', name: 'Katsushika Ōi', main: false, role: 'colouring', certainty: 'possible' }];
+    (b.relationships as unknown[]).push({ type: 'co_creator', direction: 'outgoing', label: 'co-creator', category: 'collaboration',
+      is_physical_presence: false, entity: { type: 'artist', slug: 'katsushika-oi', name: 'Katsushika Ōi' }, period: null, note: 'colouring',
+      certainty: 'possible', notes_html: null, derived: false, end_basis: null });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const facts = page.locator('.facts');
+  await expect(facts.locator('dt', { hasText: /^Artists$/ })).toBeVisible();
+  await expect(facts.locator('a', { hasText: 'Workshop of Hokusai' })).toHaveAttribute('href', /^\/artists\//);
+  await expect(facts).toContainText('Katsushika Ōi (colouring)');
+  await expect(facts.locator('.tag', { hasText: 'possible' })).toBeVisible();
+  await expect(page.locator('.subtitle')).toContainText('Workshop of Hokusai, Katsushika Ōi');
+  await expect(page.locator('.rel-list', { hasText: 'Katsushika Ōi' })).toHaveCount(0);
+});
+
+test('an artist page marks co-created works', async ({ page }) => {
+  await patch(page, /\/v1\/artists\/vincent-van-gogh$/, (b) => {
+    (b.artworks as unknown[]).push({ slug: 'a-shared-work', title: 'A shared work', created: null, kind: null, co_creator: true, role: 'landscape' });
+  });
+  await page.goto('/artists/vincent-van-gogh');
+  await expect(page.locator('li', { hasText: 'A shared work' }).locator('.tag')).toHaveText('co-creator · landscape');
+});
+
+test('[[links]] to entries navigate, a missing one is plain text; "mentioned in" lists backlinks', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.description_html = '<p>Admired by <a href="/artists/vincent-van-gogh" class="entry-link" data-entry="artist/vincent-van-gogh">Van Gogh</a> '
+      + 'and <a href="/people/nobody-yet" class="entry-link missing" data-entry="person/nobody-yet">someone</a>.</p>';
+    b.mentioned_in = [{ type: 'movement', slug: 'japonisme', name: 'Japonisme' }];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.prose .entry-missing')).toHaveText('someone');
+  await expect(page.locator('.prose a[data-entry="person/nobody-yet"]')).toHaveCount(0);
+  await expect(page.locator('.backlinks')).toContainText('Mentioned in');
+  await expect(page.locator('.backlinks a', { hasText: 'Japonisme' })).toHaveAttribute('href', '/movements/japonisme');
+  await page.locator('.prose a.entry-link').click();
+  await expect(page.locator('h1')).toHaveText('Vincent van Gogh');
+});
+
+const step = (position: number, owner: { type: string; slug: string; name: string } | null, extra: Record<string, unknown>) => ({
+  position, owner, owner_label: null, owner_name: owner?.name ?? null, acquired: null, ended: null, method: 'purchase', direct: false,
+  label: null, certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: null, ...extra,
+});
+const year = (y: number, to: number | null = y) => ({ label: to === null ? `since ${y}` : to === y ? `${y}` : `${y}–${to}`, from: `${y}-01-01`, to: to === null ? null : `${to}-12-31`, from_year: y, to_year: to });
+
+test('provenance: owners in order, implied ends and undocumented handovers marked, not repeated below', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [
+      step(0, { type: 'person', slug: 'first-owner', name: 'First Owner' }, { method: 'inheritance', label: 'estate', period: year(1926, 1952), end_basis: 'recorded',
+        place: { slug: 'paris', name: 'Paris' }, sources: ['https://collection.example.org/item/1'] }),
+      step(1, null, { owner_label: 'Private collection, Zürich', period: year(1952), end_basis: 'implied' }),
+      step(2, { type: 'institution', slug: 'some-museum', name: 'Some Museum' }, { method: 'gift', direct: true, period: year(1952, null), end_basis: 'ongoing' }),
+    ];
+    (b.relationships as unknown[]).push({ type: 'owned_by', direction: 'outgoing', label: 'owned by', category: 'provenance', is_physical_presence: false,
+      entity: { type: 'person', slug: 'first-owner', name: 'First Owner' }, period: year(1926, 1952), note: null, certainty: 'attested', notes_html: null,
+      derived: true, end_basis: 'recorded' });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const steps = page.locator('.provenance-step');
+  await expect(steps).toHaveCount(3);
+  await expect(steps.nth(0)).toContainText('First Owner');
+  await expect(steps.nth(0).locator('.provenance-how')).toContainText('inheritance · estate · in Paris');
+  await expect(steps.nth(0).locator('.provenance-sources a')).toHaveText('collection.example.org');
+  await expect(steps.nth(0)).not.toHaveClass(/undocumented/); // the first owner has no handover before it
+  await expect(steps.nth(1)).toHaveClass(/undocumented/);
+  await expect(steps.nth(1)).toContainText('Private collection, Zürich');
+  await expect(steps.nth(1).locator('.tag-implied')).toBeVisible();
+  await expect(steps.nth(2)).not.toHaveClass(/undocumented/);
+  await expect(steps.nth(2)).toContainText('since 1952');
+  await expect(page.locator('.rel-list', { hasText: 'First Owner' })).toHaveCount(0); // under Provenance only
+});
+
+test('an owner\'s page and the network mark periods whose end is only implied', async ({ page }) => {
+  await patch(page, /\/v1\/people\/theo-van-gogh$/, (b) => {
+    (b.relationships as unknown[]).push({ type: 'owned_by', direction: 'incoming', label: 'owner of', category: 'provenance', is_physical_presence: false,
+      entity: { type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave off Kanagawa' }, period: year(1890), note: null,
+      certainty: 'attested', notes_html: null, derived: true, end_basis: 'implied' });
+  });
+  await page.goto('/people/theo-van-gogh');
+  await expect(page.locator('.rel-list li', { hasText: 'The Great Wave off Kanagawa' }).locator('.tag-implied')).toBeVisible();
+
+  const node = (type: string, slug: string, name: string, depth: number) => ({ id: `${type}/${slug}`, type, slug, name, kind: null, depth, period: null });
+  await page.route(/\/v1\/graph\/people\/theo-van-gogh\?/, (r) => r.fulfill({ json: {
+    root: 'person/theo-van-gogh', depth: 2, types: [], truncated: false,
+    nodes: [node('person', 'theo-van-gogh', 'Theo van Gogh', 0), node('artwork', 'the-great-wave-off-kanagawa', 'The Great Wave off Kanagawa', 1),
+      node('institution', 'some-museum', 'Some Museum', 1)],
+    edges: [
+      { source: 'artwork/the-great-wave-off-kanagawa', target: 'person/theo-van-gogh', type: 'owned_by', label: 'owned by', category: 'provenance',
+        symmetric: false, certainty: 'attested', note: null, period: year(1890), derived: true, end_basis: 'implied' },
+      { source: 'artwork/the-great-wave-off-kanagawa', target: 'institution/some-museum', type: 'owned_by', label: 'owned by', category: 'provenance',
+        symmetric: false, certainty: 'attested', note: null, period: year(1890, null), derived: true, end_basis: 'ongoing' },
+    ],
+  } }));
+  await page.goto('/graph/people/theo-van-gogh?depth=2');
+  await expect(page.locator('.edge')).toHaveCount(2);
+  await expect(page.locator('.edge.implied')).toHaveCount(1);
+});
+
 test('glossary links in texts: popover with the definition; a missing term is plain text', async ({ page }) => {
   await sampleGlossary(page);
   await page.goto('/artworks/the-great-wave-off-kanagawa');
