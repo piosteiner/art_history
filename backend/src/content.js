@@ -56,6 +56,11 @@ const BY_FOLDER = Object.fromEntries(TYPES.map((t) => [t.folder, t]));
 const REF_COLUMNS = { place: 'place_id', creator: 'creator_id', institution: 'current_institution_id' };
 const REL_KEYS = new Set(['type', 'to', 'period', 'period_label', 'label', 'certainty', 'notes_md', 'sources', 'metadata']);
 const IMAGE_KEYS = ['url', 'source_url', 'license', 'credit', 'caption'];
+// A provenance step in YAML (migration 031): owner "type/slug" and/or owner_label, dates as fuzzy text, place = slug.
+const PROVENANCE_KEYS = ['owner', 'owner_label', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
+  'place', 'label', 'certainty', 'notes_md', 'sources'];
+const ACQUISITION_METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
+  'confiscation', 'forced_sale', 'restitution', 'unknown'];
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const LEGACY_ALT = ['alt_names', 'alt_titles'];  // before migration 022: plain lists → names with role "alternative"
 
@@ -69,7 +74,7 @@ function toRow(doc, fields) {
   const put = (col, value, expr = '$') => { cols[col] = [expr, value]; };
 
   for (const key of Object.keys(doc)) {
-    if (key === 'relationships' || key === 'images' || key === 'slug') continue;
+    if (key === 'relationships' || key === 'images' || key === 'provenance' || key === 'slug') continue;
     if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;
     if (key.endsWith('_lang') && fields[key.slice(0, -'_lang'.length)] === 'name') continue;
     if (LEGACY_ALT.includes(key) && fields.names === 'names') continue;  // older YAML: alt_names / alt_titles
@@ -165,7 +170,32 @@ function toRow(doc, fields) {
       if (new Set(urls).size !== urls.length) errors.push('images: the same url twice');
     }
   }
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, errors };
+  // provenance (artworks): [{owner, acquired, method, …}] in order; null = key absent. Owners/places are looked up
+  // by the importer; here only the shape is checked.
+  let provenance = null;
+  if (doc.provenance !== undefined) {
+    if (!fields.creator) errors.push('provenance: only artworks have a provenance');
+    else if (!Array.isArray(doc.provenance)) errors.push('provenance must be a list');
+    else {
+      provenance = doc.provenance;
+      provenance.forEach((st, i) => {
+        const at = `provenance[${i}]`;
+        if (!st || typeof st !== 'object' || Array.isArray(st)) { errors.push(`${at}: must be a mapping`); return; }
+        const extra = Object.keys(st).filter((k) => !PROVENANCE_KEYS.includes(k));
+        if (extra.length) errors.push(`${at}: unknown field(s) ${extra.join(', ')}`);
+        if (!st.owner && !st.owner_label) errors.push(`${at}: owner (type/slug) or owner_label is required`);
+        if (st.owner && !/^(artist|person|institution|place)\/[a-z0-9]+(-[a-z0-9]+)*$/.test(st.owner)) errors.push(`${at}.owner: must look like person/michel-monet`);
+        if (st.method !== undefined && !ACQUISITION_METHODS.includes(st.method)) errors.push(`${at}.method: one of ${ACQUISITION_METHODS.join(', ')}`);
+        if (st.certainty !== undefined && !['attested', 'probable', 'possible', 'disputed'].includes(st.certainty)) errors.push(`${at}.certainty: attested, probable, possible or disputed`);
+        if (st.direct !== undefined && typeof st.direct !== 'boolean') errors.push(`${at}.direct: true or false`);
+        if (st.place !== undefined && !SLUG.test(String(st.place))) errors.push(`${at}.place: a place slug`);
+        for (const k of ['acquired', 'ended']) {
+          try { parseFuzzyDate(st[k] ?? null); } catch (err) { errors.push(`${at}.${k}: ${err.message}`); }
+        }
+      });
+    }
+  }
+  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, errors };
 }
 
 // Stored date → { value: '1886-03/1888-02-20', label } where label is null when it is just the generated one.
@@ -269,4 +299,36 @@ async function readImages(db, type, id) {
   return rows;
 }
 
-module.exports = { IMAGE_FK, IMAGE_KEYS, readImages, TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };
+// An artwork's provenance in doc shape (as written in its YAML file), in order.
+async function readProvenance(db, artworkId) {
+  const { rows } = await db.query(`
+    SELECT o.type::text || '/' || o.slug AS owner, p.owner_label, p.acquired::text AS acquired, p.acquired_label,
+           p.ended::text AS ended, p.ended_label, p.method::text AS method, p.direct, l.slug AS place, p.label,
+           p.certainty::text AS certainty, p.notes_md, p.metadata
+    FROM provenance p
+    LEFT JOIN entity_index o ON (o.type, o.id) = (CASE WHEN p.owner_artist_id IS NOT NULL THEN 'artist' WHEN p.owner_person_id IS NOT NULL THEN 'person'
+                                                       WHEN p.owner_institution_id IS NOT NULL THEN 'institution' ELSE 'place' END::entity_type,
+                                                  coalesce(p.owner_artist_id, p.owner_person_id, p.owner_institution_id, p.owner_place_id))
+    LEFT JOIN places l ON l.id = p.location_id
+    WHERE p.artwork_id = $1 ORDER BY p.position`, [artworkId]);
+  return rows.map((r) => {
+    const st = {};
+    if (r.owner) st.owner = r.owner;
+    if (r.owner_label) st.owner_label = r.owner_label;
+    for (const k of ['acquired', 'ended']) {
+      const d = dateToDoc(r[k], r[`${k}_label`], false);
+      if (d.value !== null) st[k] = d.value;
+      if (d.label !== null) st[`${k}_label`] = d.label;
+    }
+    if (r.method !== 'unknown') st.method = r.method;
+    if (r.direct) st.direct = true;
+    if (r.place) st.place = r.place;
+    if (r.label) st.label = r.label;
+    if (r.certainty !== 'attested') st.certainty = r.certainty;
+    if (r.notes_md) st.notes_md = r.notes_md;
+    if (r.metadata && r.metadata.sources) st.sources = r.metadata.sources;
+    return st;
+  });
+}
+
+module.exports = { IMAGE_FK, IMAGE_KEYS, PROVENANCE_KEYS, readImages, readProvenance, TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };

@@ -13,7 +13,7 @@
 //                  (OVERRIDING SYSTEM VALUE)             relationship endpoints gone, identical relationship exists,
 //                                                       image's entry gone, same image there again
 //
-// Relationships and images are "dependent" rows: they hang on entities, so they are re-created after and deleted
+// Relationships, images and provenance steps are "dependent" rows: they hang on entities, so they are re-created after and deleted
 // before them.
 //
 // "Restore this version" plans one row: every field back to the state right after the chosen audit entry.
@@ -26,11 +26,13 @@ const crypto = require('crypto');
 const { merge3 } = require('./textdiff');
 const { IMAGE_FK: BY_IMAGE_FK, BY_TYPE, BY_FOLDER } = require('../content');
 
-const TABLES = ['places', 'movements', 'polities', 'artists', 'people', 'institutions', 'glossary', 'artworks', 'relationships', 'images'];
+const TABLES = ['places', 'movements', 'polities', 'artists', 'people', 'institutions', 'glossary', 'artworks', 'relationships', 'images', 'provenance'];
 // table → type and back (polities ↔ polity: not always + 's')
 const typeOf = (table) => BY_FOLDER[table].type;
 const tableOf = (type) => BY_TYPE[type].table;
-const DEPENDENT = new Set(['relationships', 'images']);
+const DEPENDENT = new Set(['relationships', 'images', 'provenance']);
+// A provenance step's owner: whichever arm of its owner arc is set (migration 031).
+const PROV_OWNER = { owner_artist_id: 'artists', owner_person_id: 'people', owner_institution_id: 'institutions', owner_place_id: 'places', location_id: 'places' };
 // An image row belongs to the entity in whichever of its three foreign keys is set (migration 017).
 const imageOwner = (row) => Object.entries(BY_IMAGE_FK).map(([type, fk]) => ({ type, id: row[fk], fk })).find((o) => o.id != null);
 const IGNORED = new Set(['id', 'created_at', 'updated_at', 'lifespan']);  // never compared or reverted
@@ -70,6 +72,11 @@ async function describe(db, table, row) {
   if (table === 'images') {
     const owner = imageOwner(row);
     return `image of ${await name(owner.type, owner.id)} “${row.caption || String(row.url).replace(/^.*\//, '')}”`;
+  }
+  if (table === 'provenance') {
+    const arm = ['artist', 'person', 'institution', 'place'].find((x) => row[`owner_${x}_id`] != null);
+    const owner = arm ? await name(arm, row[`owner_${arm}_id`]) : row.owner_label;
+    return `provenance of ${await name('artwork', row.artwork_id)} — ${owner}${row.acquired_label ? `, ${row.acquired_label}` : ''}`;
   }
   const { rows } = await db.query('SELECT label FROM relationship_types WHERE code = $1', [row.relationship_type]);
   return `${await name(row.subject_type, row.subject_id)} — ${rows[0] ? rows[0].label : row.relationship_type} → ${await name(row.object_type, row.object_id)}`;
@@ -124,6 +131,21 @@ async function planRestore(db, item, row, choices) {
     if ((await db.query(`SELECT 1 FROM images WHERE ${owner.fk} = $1 AND url = $2 AND id <> $3`, [owner.id, json.url, json.id])).rows.length) {
       item.blocked = 'the same image is there again';
     }
+  } else if (table === 'provenance') {
+    if (!(await db.query('SELECT 1 FROM artworks WHERE id = $1', [json.artwork_id])).rows.length && !item.plannedIds.has(`artworks:${json.artwork_id}`)) {
+      item.blocked = `its artwork (#${json.artwork_id}) no longer exists and is not restored here`;
+    }
+    for (const [col, refTable] of Object.entries(PROV_OWNER)) {
+      if (json[col] == null) continue;
+      if (!(await db.query(`SELECT 1 FROM ${refTable} WHERE id = $1`, [json[col]])).rows.length && !item.plannedIds.has(`${refTable}:${json[col]}`)) {
+        item.blocked = `its ${col === 'location_id' ? 'place' : 'owner'} (#${json[col]}) no longer exists and is not restored here`;
+      }
+    }
+    // its place in the chain may be taken by a step added since: then it goes to the end
+    if ((await db.query('SELECT 1 FROM provenance WHERE artwork_id = $1 AND position = $2 AND id <> $3', [json.artwork_id, json.position, json.id])).rows.length) {
+      json.position = (await db.query('SELECT coalesce(max(position) + 1, 0) AS p FROM provenance WHERE artwork_id = $1', [json.artwork_id])).rows[0].p;
+      item.notes.push('Its position in the provenance is taken by another step now — restored at the end; reorder it on the artwork page.');
+    }
   } else if (table !== 'relationships') {
     if (row.image_url) item.notes.push(`Its image from before multiple images (migration 017) is not restored — add it again: ${row.image_url}`);
     const taken = (await db.query(`SELECT slug FROM ${table} WHERE slug = $1 AND id <> $2`, [json.slug, json.id])).rows.length;
@@ -176,6 +198,12 @@ async function planDelete(db, item, now, after, changeSetKeys) {
     const extra = rows.filter((r) => !changeSetKeys.has(`relationships:${r.id}`));
     if (extra.length) {
       item.needs.confirm = `${item.needs.confirm ? `${item.needs.confirm} ` : ''}${extra.length} relationship${extra.length === 1 ? '' : 's'} added since will be deleted with it.`;
+    }
+    if (type === 'artwork') {
+      const steps = (await db.query('SELECT id FROM provenance WHERE artwork_id = $1', [item.rowId])).rows.filter((r) => !changeSetKeys.has(`provenance:${r.id}`));
+      if (steps.length) {
+        item.needs.confirm = `${item.needs.confirm ? `${item.needs.confirm} ` : ''}${steps.length} provenance step${steps.length === 1 ? '' : 's'} added since will be removed with it.`;
+      }
     }
     if (BY_IMAGE_FK[type]) {
       const imgs = (await db.query(`SELECT id FROM images WHERE ${BY_IMAGE_FK[type]} = $1`, [item.rowId])).rows.filter((r) => !changeSetKeys.has(`images:${r.id}`));

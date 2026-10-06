@@ -230,7 +230,7 @@ const REL_PROPS = {
     ['P27', 'nationality']],  // country of citizenship, often dated (Russian Empire until 1917 …)
   person: [['P19', 'born_in'], ['P20', 'died_in'], ['P551', 'lived_in'], ['P27', 'nationality'], ['P737', 'influenced_by']],
   // P180 "depicts" → a place (depicts) or a human (depicts_person); targetType() keeps each to its kind of target
-  artwork: [['P1071', 'created_in'], ['P180', 'depicts'], ['P180', 'depicts_person'], ['P135', 'associated_with'], ['P88', '~commissioned'], ['P127', 'owned_by'],
+  artwork: [['P1071', 'created_in'], ['P180', 'depicts'], ['P180', 'depicts_person'], ['P135', 'associated_with'], ['P88', '~commissioned'],  // P127 owned by: ownership is the provenance (031)
     ['P495', 'created_in_polity']],  // country of origin
   movement: [['P495', 'active_in']],
   polity: [],

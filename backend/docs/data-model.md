@@ -149,6 +149,30 @@ graph walks this view instead of the table. Postgres pushes a `WHERE object_id =
 `UNION ALL` view, so each branch still uses its own index. Derived types can't be stored (trigger
 `relationships_not_derived`) and the admin form doesn't offer them, so the creator is entered in one place only.
 
+## Provenance (migration 031)
+Sources record **events** ("bought 1952", "gift 1952"), not ownership periods. Typing an event into a period field
+would claim too much: a year means the whole year, and the end of an ownership is usually only *implied* by the next
+acquisition. So the table `provenance` stores what the sources say, one step per owner in order (`position`, a
+`DEFERRABLE INITIALLY DEFERRED` unique key so reordering can renumber inside a transaction): the owner (an exclusive
+arc of four foreign keys — artist, person, institution, place — and/or `owner_label` "Private collection, Paris"),
+`acquired`, `method` (enum `acquisition_method`), `direct` (handover documented, the AAM convention "; vs ."),
+`location_id` (where the work was), an optional recorded `ended`, certainty, notes, sources.
+
+The view `provenance_periods` computes the chain with **window functions** over `PARTITION BY artwork_id ORDER BY
+position`: `lead(acquired)` gives the next acquisition (the implied end), `lag()` the previous owner (for transfers and
+the gap check). `end_basis` records where each end comes from: `recorded` · `implied` · `ongoing` (the last owner is
+the current institution → open-ended range) · `unknown` (only the acquisition range — nothing invented).
+
+The site stays focused on relationships: the view **`edges`** (replacing 029's `graph_edges`) is the stored
+relationships plus derived ones — the main creator, and per step `owned_by`, `kept_in` (presence → the artwork's map
+route) and `transferred_to` (previous → next owner). Graph, map, entity pages and the admin "Linked from" read it.
+`owned_by` is therefore derived now (the existing rows moved into `provenance`); `relationships_not_derived` refuses
+stored derived types. A filter on the owner can't be pushed below the window functions (they partition by artwork),
+so `edges` computes the provenance part for the whole table on each query — fine at this size; the people role
+`owner` asks `provenance` directly (index `provenance_person_idx`). Quality checks: `provenance_gap_1933_1945` (an
+undocumented change of owner whose gap overlaps 30 Jan 1933 – 8 May 1945: `daterange && daterange`),
+`provenance_forced_transfer` (confiscation / forced sale without a later restitution), `provenance_last_owner`.
+
 ## Polities and countries (migrations 018, 019)
 "Which country is it in today?" and "which polity did it belong to?" are kept apart:
 - **Today** is derived, never entered: `place_country(place_id)` walks up `parent_id` with a recursive CTE that stops at

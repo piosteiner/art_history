@@ -51,12 +51,16 @@ function shapeNames(row, col) {
 
 // A person's roles, from their relationships (a patron is someone who commissioned or supported, not a type):
 // patron · owner (of an artwork) · depicted (in an artwork). Sorted text[]; ?role=patron filters with @>.
-const ROLES = `ARRAY(SELECT DISTINCT x.role FROM relationships r JOIN relationship_types rt ON rt.code = r.relationship_type,
-    LATERAL (VALUES (CASE WHEN (r.subject_type, r.subject_id) = ('person', t.id) AND rt.category = 'patronage' THEN 'patron'
-                          WHEN (r.object_type, r.object_id) = ('person', t.id) AND r.relationship_type = 'owned_by' THEN 'owner'
-                          WHEN (r.object_type, r.object_id) = ('person', t.id) AND r.relationship_type = 'depicts_person' THEN 'depicted' END)) x(role)
-  WHERE x.role IS NOT NULL AND ((r.subject_type, r.subject_id) = ('person', t.id) OR (r.object_type, r.object_id) = ('person', t.id))
-  ORDER BY 1)`;
+// "owner" comes from the provenance (031), asked directly: a filter on the owner can't be pushed through the window
+// functions of provenance_periods (they are partitioned by artwork), but here the index provenance_person_idx serves it.
+const ROLES = `ARRAY(SELECT x.role FROM (
+    SELECT CASE WHEN (r.subject_type, r.subject_id) = ('person', t.id) AND rt.category = 'patronage' THEN 'patron'
+                WHEN (r.object_type, r.object_id) = ('person', t.id) AND r.relationship_type = 'depicts_person' THEN 'depicted' END
+    FROM relationships r JOIN relationship_types rt ON rt.code = r.relationship_type
+    WHERE (r.subject_type, r.subject_id) = ('person', t.id) OR (r.object_type, r.object_id) = ('person', t.id)
+    UNION
+    SELECT 'owner' FROM provenance pv WHERE pv.owner_person_id = t.id) x(role)
+  WHERE x.role IS NOT NULL ORDER BY 1)`;
 
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
 // extra list filters (?key=value → SQL with $ placeholder), Markdown columns, default order.
@@ -184,8 +188,9 @@ const RELATIONSHIPS_SQL = `
          jsonb_build_object('type', o.type, 'slug', o.slug, 'name', o.name,
                             'period', range_json(o.period, o.period_label)) AS entity,
          range_json(r.period, r.period_label) AS period,
-         r.label AS note, r.certainty, r.notes_md
-  FROM relationships r
+         r.label AS note, r.certainty, r.notes_md,
+         r.source <> 'relationship' AS derived, r.end_basis  -- derived: the creator field or the provenance (031)
+  FROM edges r
   JOIN relationship_types rt ON rt.code = r.relationship_type
   -- the "other" end: object for outgoing edges, subject for incoming ones
   JOIN entity_index o ON (o.type, o.id) = (
@@ -215,6 +220,18 @@ const EXTRAS = {
                             AND r.object_type = 'artist' AND r.object_id = $1 LIMIT 1) co ON w.creator_id IS DISTINCT FROM $1
       WHERE w.creator_id = $1 OR co.role IS NOT NULL
       ORDER BY lower(w.created) NULLS LAST, w.title`, [id])).rows,
+  }),
+  // the provenance (031): the steps as recorded, plus the computed period and where its end comes from
+  artwork: async (id) => ({
+    provenance: (await apiPool.query(`
+      SELECT p.position,
+             CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'name', o.name) END AS owner,
+             p.owner_label, p.owner_name, range_json(p.acquired, p.acquired_label) AS acquired, range_json(p.ended, p.ended_label) AS ended,
+             p.method, p.direct, p.label, p.certainty,
+             (SELECT jsonb_build_object('slug', l.slug, 'name', l.name) FROM places l WHERE l.id = p.location_id) AS place,
+             range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.metadata->'sources' AS sources
+      FROM provenance_periods p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
+      WHERE p.artwork_id = $1 ORDER BY p.position`, [id])).rows,
   }),
   institution: async (id) => ({
     artworks: (await apiPool.query(`
@@ -322,8 +339,10 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
         ORDER BY x.sort_key`, [e.type, entity.slug, id]).then((r) => r.rows.map(({ sort_key: _, ...m }) => m)),
     ]);
     // [[links]] show the linked entries' names: looked up for exactly the links in these texts
-    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md)]), used: new Set() };
+    const steps = extras.provenance || [];
+    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md)]), used: new Set() };
     const relationships = rels.map((x) => renderMd(x, ['notes_md'], env));
+    steps.forEach((p) => renderMd(p, ['notes_md'], env));
     const body = nameCountry(shapeNames(renderMd(entity, e.md, env), e.name));
     if (mentionedIn) body.mentioned_in = mentionedIn;
     // the glossary terms its texts link, with their short definitions — for tooltips without further requests

@@ -57,6 +57,22 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 | glossary | `name`* (the term), `category` (technique, architecture, material, iconography, style, format, other), `definition` (1–2 sentences, plain text, max. 500), `names`, `description_md` |
 | artworks | `title`*, `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `other_dimensions` (further parts: `[{part: mount, cm: [180, 95.5]}]`), `institution` (current holder, slug), `inventory_number`, `names`, `description_md` |
 
+Artworks also take `provenance`: the owners in order (ownership is not a relationship since migration 031) —
+```yaml
+provenance:
+  - owner: person/michel-monet        # artist/…, person/…, institution/… or place/…; or only owner_label
+    acquired: 1926
+    method: inheritance               # creation, commission, inheritance, purchase, auction, gift, bequest, exchange,
+                                      # confiscation, forced_sale, restitution, unknown (default)
+    place: sorel-moussel              # where the work was (place slug)
+    ended: 1952                       # only if a source says so — otherwise the next acquisition implies the end
+  - owner: person/emil-georg-buhrle
+    acquired: 1952
+    method: purchase
+    direct: true                      # handover documented as direct (default false)
+    label: via …                      # also owner_label, certainty, notes_md, sources (list)
+```
+
 Every entity also takes `wikidata_id` (`Q…`) and `metadata` (free-form mapping). `*_md` fields are Markdown;
 the API serves them as sanitized HTML.
 

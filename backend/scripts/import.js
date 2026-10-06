@@ -5,7 +5,7 @@
 //   npm run import                  # production DB
 //   npm run import:dev              # arthistory_dev
 //   npm run import -- --dry-run     # validate + report, then roll back
-//   npm run import -- --prune       # also delete relationships (and images) of content entities that are no longer in the YAML
+//   npm run import -- --prune       # also delete relationships (and images, provenance steps) of content entities that are no longer in the YAML
 //
 // Layout: content/<folder>/<slug>.yaml — one entity per file, the file name is its slug.
 // Format and examples: content/README.md
@@ -235,6 +235,61 @@ async function main() {
         const { rowCount } = await client.query(`DELETE FROM images WHERE ${fk} = $1 AND url <> ALL ($2::text[])`,
           [entityId, e.images.map((img) => img.url)]);
         if (rowCount) stats['images pruned'] = (stats['images pruned'] || 0) + rowCount;
+      }
+    }
+
+    // 3c. Provenance (migration 031), for artwork files with a provenance: list. A step is identified by its
+    //     position in the chain; a changed step is updated in place (only when something differs, so an unchanged
+    //     import writes nothing to the history).
+    const PROV_COLS = ['owner_artist_id', 'owner_person_id', 'owner_institution_id', 'owner_place_id', 'owner_label',
+      'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct', 'location_id', 'label', 'certainty', 'notes_md', 'metadata'];
+    const PROV_CASTS = { acquired: '::daterange', ended: '::daterange', method: '::acquisition_method', certainty: '::certainty', metadata: '::jsonb' };
+    for (const e of entities.filter((x) => x.provenance !== null && x.provenance !== undefined)) {
+      const artworkId = ids.get(`${e.type}/${e.slug}`);
+      if (artworkId === undefined) continue;
+      for (const [i, st] of e.provenance.entries()) {
+        const where = `provenance[${i}]`;
+        const v = Object.fromEntries(PROV_COLS.map((c) => [c, null]));
+        if (st.owner) {
+          const [type, slug] = st.owner.split('/');
+          const id = await idOf(type, slug);
+          if (id === null) { fail(e.file, `${where}: ${st.owner} does not exist`); continue; }
+          v[`owner_${type}_id`] = id;
+        }
+        if (st.place) {
+          v.location_id = await idOf('place', String(st.place));
+          if (v.location_id === null) { fail(e.file, `${where}: place ${st.place} does not exist`); continue; }
+        }
+        for (const k of ['acquired', 'ended']) {
+          const d = parseFuzzyDate(st[k] ?? null);
+          v[k] = d && d.range;
+          v[`${k}_label`] = d ? st[`${k}_label`] ?? d.label : null;
+        }
+        Object.assign(v, { owner_label: st.owner_label ?? null, method: st.method ?? 'unknown', direct: st.direct === true,
+          label: st.label ?? null, certainty: st.certainty ?? 'attested', notes_md: st.notes_md ?? null,
+          metadata: JSON.stringify(st.sources ? { sources: st.sources } : {}) });
+        const params = [artworkId, i, ...PROV_COLS.map((c) => v[c])];
+        const vals = PROV_COLS.map((c, j) => `$${j + 3}${PROV_CASTS[c] || ''}`);
+        try {
+          await client.query('SAVEPOINT prov');
+          const upd = await client.query(`
+            UPDATE provenance SET (${PROV_COLS.join(', ')}) = (${vals.join(', ')})
+            WHERE artwork_id = $1 AND position = $2 AND (${PROV_COLS.join(', ')}) IS DISTINCT FROM (${vals.join(', ')})`, params);
+          if (upd.rowCount) count('provenance updated');
+          else if ((await client.query('SELECT 1 FROM provenance WHERE artwork_id = $1 AND position = $2', [artworkId, i])).rows.length) count('provenance unchanged');
+          else {
+            await client.query(`INSERT INTO provenance (artwork_id, position, ${PROV_COLS.join(', ')}) VALUES ($1, $2, ${vals.join(', ')})`, params);
+            count('provenance inserted');
+          }
+          await client.query('RELEASE SAVEPOINT prov');
+        } catch (err) {
+          await client.query('ROLLBACK TO SAVEPOINT prov');
+          fail(e.file, `${where}: ${err.message}`);
+        }
+      }
+      if (PRUNE) {
+        const { rowCount } = await client.query('DELETE FROM provenance WHERE artwork_id = $1 AND position >= $2', [artworkId, e.provenance.length]);
+        if (rowCount) stats['provenance pruned'] = (stats['provenance pruned'] || 0) + rowCount;
       }
     }
 

@@ -184,6 +184,25 @@ SELECT jsonb_path_query_array(artwork_creators(entity_id('artwork', 'sample-bron
        = '["paul-gauguin", "vincent-van-gogh"]' AS main_first,
        artwork_creators(entity_id('artwork', 'sample-bronze')) -> 1 ->> 'role' = 'base' AS role_from_label;
 
+\echo '== provenance (031): periods from acquisitions — recorded / implied by the next / ongoing; derived edges:'
+INSERT INTO provenance (artwork_id, position, owner_artist_id, acquired, acquired_label, ended, ended_label, method) VALUES
+  (entity_id('artwork', 'sample-bronze'), 0, entity_id('artist', 'paul-gauguin'), year_range(1890), '1890', year_range(1895), '1895', 'creation');
+INSERT INTO provenance (artwork_id, position, owner_label, acquired, acquired_label, method) VALUES
+  (entity_id('artwork', 'sample-bronze'), 1, 'Private collection, Paris', year_range(1895), '1895', 'purchase');
+INSERT INTO provenance (artwork_id, position, owner_institution_id, acquired, acquired_label, method, direct) VALUES
+  (entity_id('artwork', 'sample-bronze'), 2, entity_id('institution', 'sample-museum'), year_range(1920), '1920', 'gift', true);
+UPDATE artworks SET current_institution_id = entity_id('institution', 'sample-museum') WHERE slug = 'sample-bronze';
+SELECT position, owner_name, period_label, end_basis FROM provenance_periods
+WHERE artwork_id = entity_id('artwork', 'sample-bronze') ORDER BY position;   -- 1890–1895 recorded · 1895–1920 implied · since 1920 ongoing
+SELECT relationship_type, period_label FROM edges WHERE source = 'provenance' AND subject_type = 'artwork'
+  AND subject_id = entity_id('artwork', 'sample-bronze') ORDER BY 1, 2;        -- owned_by for the two owners that are entries
+SAVEPOINT stored_derived;
+\set ON_ERROR_STOP off
+INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+VALUES ('artwork', entity_id('artwork', 'sample-bronze'), 'owned_by', 'institution', entity_id('institution', 'sample-museum'));  -- must fail: derived
+\set ON_ERROR_STOP on
+ROLLBACK TO SAVEPOINT stored_derived;
+
 \echo '== delete Van Gogh → relationships cleaned up in both directions:'
 SELECT count(*) AS edges_before FROM relationships
 WHERE (subject_type = 'artist' AND subject_id = entity_id('artist', 'vincent-van-gogh')) OR (object_type = 'artist' AND object_id = entity_id('artist', 'vincent-van-gogh'));

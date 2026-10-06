@@ -26,6 +26,7 @@ const drafts = require('./drafts');
 const wikidata = require('./wikidata');
 const quality = require('./quality');
 const images = require('./images');
+const provenance = require('./provenance');
 const imagesearch = require('./imagesearch');
 
 const { thumbUrl } = images;
@@ -58,6 +59,7 @@ const DONE = {
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
   'auto-done': 'Marked as complete.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
+  'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
 };
 
 function send(req, res, { title, body, status = 200, flash, page = null }) {
@@ -141,6 +143,9 @@ const RULES = {
   artworks_inventory_needs_institution: 'An inventory number belongs to a collection: set the institution (current holder) too, or leave the number empty.',
   polities_country_codes_check: 'Country codes: two capital letters each (ISO 3166, e.g. CN, UA), one per line.',
   polities_check: 'A polity cannot be part of itself.',
+  provenance_check: 'Provenance: one owner — an entry or a description, not both kinds of entry at once.',
+  provenance_check1: 'Provenance: pick an owner or describe them.',
+  provenance_check2: 'Provenance: the end lies before the acquisition.',
   artworks_dimensions_check: 'Dimensions: height alone, height × width, or height × width × depth.',
 };
 function friendly(err) {
@@ -151,6 +156,7 @@ function friendly(err) {
   }
   if (err.code === '23503' || err.code === '23001') {
     const m = /referenced from table "(\w+)"/.exec(err.detail || '');
+    if (m && m[1] === 'provenance') return 'Still named in the provenance of an artwork (as owner or place) — change those steps first.';
     return m ? `Still used by ${m[1]} (e.g. an artwork's creator or an institution's place) — change those first.` : `Still in use: ${err.detail || err.message}`;
   }
   if (err.code === '23514') return RULES[err.constraint] || `Not allowed by the rule "${err.constraint}".`;
@@ -210,9 +216,13 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
                             rt.label, '→', coalesce(o.name, ${gone("r->>'object_type'", "r->>'object_id'")}))
              WHEN a.table_name = 'images'
              THEN concat_ws(' ', 'image of', coalesce(ie.name, ${gone('ix.type', 'ix.id')}), '“' || coalesce(r->>'caption', regexp_replace(r->>'url', '^.*/', '')) || '”')
+             WHEN a.table_name = 'provenance'
+             THEN concat_ws(' ', 'provenance of', coalesce(pa.name, ${gone("'artwork'", "r->>'artwork_id'")}), '—',
+                            coalesce(po.name, r->>'owner_label', 'owner #' || px.id), nullif(r->>'acquired_label', ''))
              ELSE coalesce(r->>'name', r->>'title', r->>'slug') END AS what,
            CASE WHEN a.table_name = 'relationships' THEN s.type::text || 's/' || s.slug
                 WHEN a.table_name = 'images' THEN ie.type::text || 's/' || ie.slug
+                WHEN a.table_name = 'provenance' THEN 'artworks/' || pa.slug
                 WHEN a.action <> 'delete' THEN a.table_name || '/' || (r->>'slug') END AS link,
            (SELECT jsonb_object_agg(k, jsonb_build_array(
                      CASE WHEN k IN ('location', 'area') THEN to_jsonb(ST_AsText((a.old_row->>k)::geography)) ELSE a.old_row->k END,
@@ -228,6 +238,13 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
                                    WHEN r->>'glossary_id' IS NOT NULL THEN 'term' ELSE 'institution' END AS type,
                               coalesce(r->>'artwork_id', r->>'artist_id', r->>'institution_id', r->>'glossary_id') AS id) ix ON a.table_name = 'images'
     LEFT JOIN entity_index ie ON a.table_name = 'images' AND ie.type = ix.type::entity_type AND ie.id = ix.id::bigint
+    -- a provenance step (031): its artwork, and its owner from whichever arm of the owner arc is set
+    LEFT JOIN entity_index pa ON a.table_name = 'provenance' AND pa.type = 'artwork' AND pa.id = (r->>'artwork_id')::bigint
+    LEFT JOIN LATERAL (SELECT CASE WHEN r->>'owner_artist_id' IS NOT NULL THEN 'artist' WHEN r->>'owner_person_id' IS NOT NULL THEN 'person'
+                                   WHEN r->>'owner_institution_id' IS NOT NULL THEN 'institution' ELSE 'place' END AS type,
+                              coalesce(r->>'owner_artist_id', r->>'owner_person_id', r->>'owner_institution_id', r->>'owner_place_id') AS id) px
+      ON a.table_name = 'provenance'
+    LEFT JOIN entity_index po ON a.table_name = 'provenance' AND po.type = px.type::entity_type AND po.id = px.id::bigint
     LEFT JOIN entity_index s ON a.table_name = 'relationships' AND s.type = (r->>'subject_type')::entity_type AND s.id = (r->>'subject_id')::bigint
     LEFT JOIN entity_index o ON a.table_name = 'relationships' AND o.type = (r->>'object_type')::entity_type AND o.id = (r->>'object_id')::bigint
     WHERE ${where}
@@ -655,6 +672,50 @@ router.post('/images/:id/move', async (req, res) => {
   res.redirect(303, `${img.entityUrl}?done=img-moved#images`);
 });
 
+// Provenance steps: added on the artwork's page, edited / removed / reordered under /provenance/<id> (src/admin/provenance.js).
+function provenanceEditPage(req, res, step, { status = 200, flash, values = provenance.formValues(step) } = {}) {
+  send(req, res, {
+    title: 'Edit provenance step', status, flash,
+    body: html`<h1>Edit provenance step</h1><p><a href="${step.artworkUrl}#provenance">← ${step.artwork_title}</a></p>
+      ${provenance.form({ action: `/provenance/${step.id}`, step: values, submit: 'Save' })}
+      <form method="post" action="/provenance/${step.id}/delete" class="actions" style="margin-top:1.5rem">
+        <button class="danger">Remove this step</button></form>`,
+  });
+}
+const stepFromBody = (body) => ({ ...body, direct: body.direct === '1', sources: String(body.sources || '').split('\n') });
+
+router.get('/provenance/:id/edit', async (req, res) => {
+  const step = await provenance.byId(adminPool, req.params.id);
+  if (!step) return notFoundPage(req, res);
+  provenanceEditPage(req, res, step);
+});
+
+router.post('/provenance/:id', async (req, res) => {
+  const step = await provenance.byId(adminPool, req.params.id);
+  if (!step) return notFoundPage(req, res);
+  try {
+    await withTx(req.user, async (db) => provenance.update(db, step.id, await provenance.fromForm(db, req.body, step.metadata)));
+  } catch (err) {
+    return provenanceEditPage(req, res, step, { status: 422, values: stepFromBody(req.body),
+      flash: { kind: 'error', text: err instanceof provenance.ProvenanceError ? err.message : friendly(err) } });
+  }
+  res.redirect(303, `${step.artworkUrl}?done=prov-saved#provenance`);
+});
+
+router.post('/provenance/:id/delete', async (req, res) => {
+  const step = await provenance.byId(adminPool, req.params.id);
+  if (!step) return notFoundPage(req, res);
+  await withTx(req.user, (db) => provenance.remove(db, step));
+  res.redirect(303, `${step.artworkUrl}?done=prov-deleted#provenance`);
+});
+
+router.post('/provenance/:id/move', async (req, res) => {
+  const step = await provenance.byId(adminPool, req.params.id);
+  if (!step) return notFoundPage(req, res);
+  if (['up', 'down'].includes(req.body.dir)) await withTx(req.user, (db) => provenance.move(db, step, req.body.dir));
+  res.redirect(303, `${step.artworkUrl}?done=prov-moved#provenance`);
+});
+
 // ---------------------------------------------------------------------------------------------------------------
 // Entities
 // ---------------------------------------------------------------------------------------------------------------
@@ -994,11 +1055,18 @@ router.get('/:plural/:slug', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   const [outgoing, incoming, types, entities] = await Promise.all([
     readRelationships(adminPool, t.type, e.id),
+    // links towards this entry, plus the derived ones from it (view edges, 031: provenance, the creator field) —
+    // except an artwork's own derived edges, which its creator row and Provenance section show
     adminPool.query(`
-      SELECT r.id, s.type::text AS type, s.slug, s.name, rt.inverse_label, r.period_label, r.label
-      FROM relationships r JOIN entity_index s ON s.type = r.subject_type AND s.id = r.subject_id
-      JOIN relationship_types rt ON rt.code = r.relationship_type
-      WHERE r.object_type = $1 AND r.object_id = $2 ORDER BY rt.sort_order, lower(r.period) NULLS FIRST`, [t.type, e.id]),
+      SELECT r.id, r.source, r.provenance_id, s.type::text AS type, s.slug, s.name,
+             CASE WHEN (r.object_type, r.object_id) = ($1::entity_type, $2) THEN rt.inverse_label ELSE rt.label END AS inverse_label,
+             r.period_label, r.label, r.end_basis
+      FROM edges r JOIN relationship_types rt ON rt.code = r.relationship_type
+      JOIN entity_index s ON (s.type, s.id) = (CASE WHEN (r.object_type, r.object_id) = ($1::entity_type, $2) THEN r.subject_type ELSE r.object_type END,
+                                               CASE WHEN (r.object_type, r.object_id) = ($1::entity_type, $2) THEN r.subject_id ELSE r.object_id END)
+      WHERE (r.object_type = $1 AND r.object_id = $2)
+         OR (r.subject_type = $1 AND r.subject_id = $2 AND r.source <> 'relationship' AND r.subject_type <> 'artwork')
+      ORDER BY rt.sort_order, lower(r.period) NULLS FIRST`, [t.type, e.id]),
     relationshipTypes(adminPool, t.type, { reverse: true }),
     allEntities(adminPool),
   ]);
@@ -1013,7 +1081,9 @@ router.get('/:plural/:slug', async (req, res) => {
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
-  const linkMap = await linkNames(adminPool, Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]));
+  const provSteps = t.type === 'artwork' ? await provenance.read(adminPool, e.id) : [];
+  const linkMap = await linkNames(adminPool, [...Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]),
+    ...provSteps.map((p) => p.notes_md)]);
   // the entries whose texts [[link]] this one (view content_links, migration 030) — for a term: where it is used
   const usedIn = (await adminPool.query(`
     SELECT DISTINCT e.type::text AS type, e.slug, e.name, e.sort_key FROM content_links l JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
@@ -1051,6 +1121,7 @@ router.get('/:plural/:slug', async (req, res) => {
       ${t.type === 'term' || usedIn.length ? html`<h2 id="used-in">${t.type === 'term' ? 'Used in' : 'Mentioned in'}</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`
         : html`<p class="muted">No text links it yet — write <code>[[${e.slug}]]</code> in a description.</p>`}` : ''}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
+      ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${otherRels.length ? html`<div class="table-wrap"><table><tbody>${otherRels.map(({ id, to_name: toName, rel }) => {
         const [type, slug] = rel.to.split('/');
@@ -1062,8 +1133,10 @@ router.get('/:plural/:slug', async (req, res) => {
       })}</tbody></table></div>` : html`<p class="muted">None yet.</p>`}
       ${incoming.rows.length ? html`<h3>Linked from</h3><div class="table-wrap"><table><tbody>${incoming.rows.map((r) => html`<tr>
           <td>${r.inverse_label}</td><td><a href="/${BY_TYPE[r.type].folder}/${r.slug}">${r.name}</a> <span class="tag">${r.type}</span></td>
-          <td>${r.period_label || ''}</td><td class="muted">${r.label || ''}</td>
-          <td><a href="/relationships/${r.id}/edit">edit</a></td></tr>`)}</tbody></table></div>` : ''}
+          <td>${r.period_label || ''}${r.end_basis === 'implied' ? html` <span class="tag implied">end implied</span>` : ''}</td><td class="muted">${r.label || ''}</td>
+          <td>${r.source === 'provenance' ? html`<a href="/provenance/${r.provenance_id}/edit" title="from the provenance">provenance</a>`
+            : r.source === 'creator' ? html`<a href="/artworks/${r.slug}/edit" title="the artwork's creator field">creator field</a>`
+            : html`<a href="/relationships/${r.id}/edit">edit</a>`}</td></tr>`)}</tbody></table></div>` : ''}
       <details><summary><b>+ Add relationship</b></summary>
         ${types.length ? relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, submit: 'Add', entityType: t.type })
           : html`<p class="muted">No relationship types start from ${an(t.type)}; link to it from the other entity.</p>`}
@@ -1128,6 +1201,23 @@ router.post('/:plural/:slug/images', async (req, res) => {
   const back = String(req.body.back || '');
   if (back.startsWith(`/${t.folder}/${e.slug}/images/find?`)) return res.redirect(303, `${back}&done=img-added`);
   res.redirect(303, `/${t.folder}/${e.slug}?done=img-added#images`);
+});
+
+router.post('/:plural/:slug/provenance', async (req, res) => {
+  const { t } = req;
+  const e = t.type === 'artwork' && await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  try {
+    await withTx(req.user, async (db) => provenance.add(db, e.id, await provenance.fromForm(db, req.body)));
+  } catch (err) {
+    return send(req, res, {
+      title: 'Add provenance step', status: 422,
+      flash: { kind: 'error', text: err instanceof provenance.ProvenanceError ? err.message : friendly(err) },
+      body: html`<h1>Add provenance step</h1><p><a href="/${t.folder}/${e.slug}#provenance">← ${e.name}</a></p>
+        ${provenance.form({ action: `/${t.folder}/${e.slug}/provenance`, step: stepFromBody(req.body), submit: 'Add' })}`,
+    });
+  }
+  res.redirect(303, `/${t.folder}/${e.slug}?done=prov-added#provenance`);
 });
 
 // Find freely licensed images (Wikimedia Commons, Met, Art Institute of Chicago, Cleveland — src/admin/imagesearch.js).
@@ -1289,7 +1379,9 @@ router.get('/:plural/:slug/history', async (req, res) => {
   const page = pageParam(req);
   const h = await history(adminPool, `(a.table_name = $1 AND a.row_id = $2) OR (a.table_name = 'relationships' AND (
       ((r->>'subject_type') = $3 AND (r->>'subject_id')::bigint = $2) OR ((r->>'object_type') = $3 AND (r->>'object_id')::bigint = $2)))
-      OR (a.table_name = 'images' AND (r->>$4)::bigint = $2)`,
+      OR (a.table_name = 'images' AND (r->>$4)::bigint = $2)
+      OR (a.table_name = 'provenance' AND (($3 = 'artwork' AND (r->>'artwork_id')::bigint = $2) OR (r->>('owner_' || $3 || '_id'))::bigint = $2
+                                            OR ($3 = 'place' AND (r->>'location_id')::bigint = $2)))`,
   [t.table, e.id, t.type, t.imageFk || '-'], { offset: (page - 1) * PAGE });
   send(req, res, {
     title: `History of ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' },

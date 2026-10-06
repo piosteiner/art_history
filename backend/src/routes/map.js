@@ -52,7 +52,7 @@ router.get('/presence', async (req, res) => {
         'place', jsonb_build_object('slug', p.slug, 'name', p.name),
         'relationship', rt.code, 'label', rt.label, 'note', r.label, 'certainty', r.certainty,
         'period', range_json(r.period, r.period_label))) AS feature
-    FROM relationships r
+    FROM edges r  -- stored + derived (provenance: kept_in), migration 031
     JOIN relationship_types rt ON rt.code = r.relationship_type AND rt.is_physical_presence
     JOIN places p ON p.id = r.object_id
     JOIN entity_index e ON e.type = r.subject_type AND e.id = r.subject_id
@@ -72,7 +72,7 @@ router.get('/:plural/:slug', async (req, res) => {
     WITH stops AS (
       SELECT r.period, rt.code, rt.label, rt.category, rt.is_physical_presence, r.period_label, r.label AS note,
              r.certainty, p.slug, p.name, ${MARKER} AS point
-      FROM relationships r
+      FROM edges r  -- stored + derived (provenance: kept_in), migration 031
       JOIN relationship_types rt ON rt.code = r.relationship_type
       JOIN places p ON p.id = r.object_id
       WHERE r.subject_type = $1 AND r.subject_id = $2 AND r.object_type = 'place'

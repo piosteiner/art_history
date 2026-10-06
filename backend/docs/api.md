@@ -114,10 +114,27 @@ everyone and everything linked to it ("nationality of" …).
 ### `GET /v1/<type>/:slug` — detail
 All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - `relationships`: every link in both directions, from this entity's point of view —
-  `{type, direction: outgoing|incoming|mutual, label, category, is_physical_presence, entity: {type, slug, name, period}, period, note, certainty, notes_html}`.
-  (Van Gogh: "lived in" Arles; Arles: "home of" Van Gogh.)
+  `{type, direction: outgoing|incoming|mutual, label, category, is_physical_presence, entity: {type, slug, name, period}, period, note, certainty, notes_html, derived, end_basis}`.
+  (Van Gogh: "lived in" Arles; Arles: "home of" Van Gogh.) `derived: true` = computed from the provenance
+  (`owned_by`, `kept_in`, `transferred_to`, see below); `end_basis` says where its period's end comes from.
+  The main creator is not repeated here (it's in `creator` / `artworks`).
 - artist: `artworks` (including co-created ones: `co_creator: true`, `role`) · institution: `artworks`, `place` · artwork: `creator`, `creators`, `attribution_label`, `institution` ·
   place: `ancestors` (Arles → France), `children`, `institutions` · movement: `ancestors`, `children`.
+
+### Provenance (artworks)
+The detail of an artwork has **`provenance`**: its owners in order, as the sources record them —
+`[{position, owner: {type, slug, name} | null, owner_label, owner_name, acquired, ended, method, direct, label, certainty,
+place: {slug, name} | null, period, end_basis, notes_html, sources}]`.
+- `acquired` / `ended` are dates (`ended` only when a source records it); `method`: creation · commission · inheritance ·
+  purchase · auction · gift · bequest · exchange · confiscation · forced_sale · restitution · unknown;
+  `direct`: the handover from the previous owner is documented (false = possibly someone in between).
+- `period` is **computed**: from the acquisition to … — `end_basis` says what:
+  `recorded` (the step's own `ended`) · `implied` (the next owner's acquisition — show it differently, e.g. "(implied)")
+  · `ongoing` (the current holder: open end) · `unknown` (nothing after it: only the acquisition, no invented end).
+- Each step also appears as derived relationships: `owned_by` (artwork → owner), `kept_in` (artwork → place, category
+  `presence`: part of the artwork's **route on the map**), `transferred_to` (previous owner → next owner, category
+  `provenance`, label = the method; certainty `possible` when not documented as direct). People who owned something
+  have the role `owner`.
 
 ## Search
 `GET /v1/search?q=edo` — top 20 matches across all types: `{type, slug, name, kind, period, score}`.
@@ -125,12 +142,15 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 ## Vocabulary
 `GET /v1/vocabulary` — relationship types: `code, label, inverse_label, category, is_physical_presence, is_symmetric,
 subject_types, object_types, description, derived`. `category` is meant for map/graph layers and legends. `derived: true`
-= computed from a field, only in the graph (`creator`: an artwork's main creator); never in an entry's `relationships`.
+= computed, never entered as a relationship: `creator` (an artwork's main creator, graph only), `owned_by`, `kept_in`,
+`transferred_to` (from the provenance).
 
 ## Map (GeoJSON, `[longitude, latitude]`)
 - `GET /v1/map/<type>/:slug` — one entity's places. Point features with `properties.layer`:
   `presence` (was physically there) or `association` (e.g. influenced by the culture of Japan — **not** travel),
   plus one `LineString` with `layer: "route"`: the dated presence stops in chronological order.
+  An artwork's stops include `kept_in` (where it was with each owner, from the provenance) — its journey from owner
+  to owner.
 - `GET /v1/map/presence?from=1888&to=1889[&types=artist,person,artwork]` — who/what was physically where during
   the window (for a timeline slider); `institution` may be added to `types` (earlier locations via `located_in`). Undated links are left out.
 - `GET /v1/map/places[?from=&to=]` — every place with `presence_count` and `association_count` (in the window).
@@ -139,7 +159,10 @@ subject_types, object_types, description, derived`. `category` is meant for map/
 `GET /v1/graph/<type>/:slug?depth=2&types=influenced_by,student_of` — the network around an entity, following
 links both ways up to `depth` (1–4) hops. Default `types`: everything except place links (those are map material).
 → `{root, depth, types, truncated, nodes: [{id: "artist/…", type, slug, name, kind, depth, period}],
-edges: [{source, target, type, label, category, symmetric, certainty, note, period}]}` — `id`/`source`/`target`
+edges: [{source, target, type, label, category, symmetric, certainty, note, period, derived, end_basis}]}` — `id`/`source`/`target`
 match, ready for d3-force or similar. At most 500 nodes (`truncated: true` beyond that).
 An artwork's main creator is an edge of type `creator` (artwork → artist, category `collaboration`, label "creator"),
 further creators `co_creator` — so artists and their works are connected in the network.
+The provenance adds `owned_by` and `transferred_to` edges (collector ↔ dealer ↔ museum); `end_basis: "implied"` marks a
+period whose end is only implied by the next acquisition (draw it dashed/faded). The category `provenance` can be
+switched off like any other.

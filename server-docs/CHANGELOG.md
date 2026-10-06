@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Provenance (migration 031)
+- **What:** table `provenance` (artwork, position, owner as exclusive arc artist/person/institution/place or
+  description, acquired, method enum `acquisition_method`, documented-direct flag, place, optional recorded end,
+  certainty, notes, sources). View `provenance_periods` computes each owner's period with window functions (`lead`/`lag`)
+  and marks its end recorded / implied / ongoing / unknown. View `edges` (replaces `graph_edges`) = relationships +
+  derived `creator`, `owned_by`, `kept_in` (map route), `transferred_to`; read by the graph, map, entity pages, admin.
+  `owned_by` became derived (the one existing row — Bührle — moved into `provenance`); Wikidata no longer suggests
+  P127 as `owned_by`. Quality checks `provenance_gap_1933_1945`, `provenance_forced_transfer`, `provenance_last_owner`.
+  Admin: "Provenance" section on artworks (add / edit / reorder / remove; history + revert). API: artwork `provenance`,
+  `derived` / `end_basis` on relationships and graph edges, owner role from provenance. YAML: `provenance:` per artwork.
+- **Why:** owner: provenance sources record events whose durations are only implied — store what is recorded, compute
+  the rest and mark it; ownership feeds the network and the artwork's route on the map.
+- **Frontend to-do:** show `provenance` on artwork pages (mark `end_basis: implied` and `direct: false`); draw
+  derived edges with `end_basis: implied` dashed/faded; the map route of artworks now has `kept_in` stops;
+  new derived types `kept_in`, `transferred_to` (categories `presence`, `provenance`) come via `/v1/vocabulary`.
+- **Tested:** migration on a restored copy of production; schema smoke test; unit 25, e2e 71 passing (new `provenance.spec.js`).
+- **Revert:** redeploy the previous commit, then as owner: move provenance steps back into `owned_by` relationships if
+  any were added, `DROP VIEW edges, provenance_periods; DROP TABLE provenance; DROP TYPE acquisition_method;` re-create
+  029's `graph_edges` and 030's `content_links` / `quality_issues`, `DELETE FROM relationship_types WHERE code IN
+  ('kept_in', 'transferred_to'); UPDATE relationship_types SET derived = false WHERE code = 'owned_by';`
+  `DELETE FROM schema_migrations WHERE name = '031_provenance.sql';`
+
 ### [[links]] to any entry, with completion (migration 030)
 - **What:** `[[type/slug]]` / `[[type/slug|own words]]` link artists, artworks, places … in every Markdown text (bare
   `[[slug]]` stays a glossary term). `src/markdown.js` renders `<a class="entry-link" data-entry="type/slug">` to the site's
