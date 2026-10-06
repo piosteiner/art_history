@@ -134,3 +134,31 @@ test('a Japanese original title stays among the other names; the English label i
   await expect(userA.locator('input[name="alt.names"][value="神奈川沖浪裏 | ja | original"]')).toBeVisible();
   await expect(userA.locator('input[name="alt.names"][value="Kanagawa-oki nami ura | ja-Latn | romanization"]')).toBeVisible();
 });
+
+test('an institution gets its exact place: a building at the coordinates, in the city — not the city district', async ({ userA }) => {
+  // Q110: P131 = Kreis 1 (a district) and Zurich; coordinates and street address → a new building place in Zurich
+  await userA.goto('/institutions/new/wikidata?q=Q110');
+  const place = row(userA, 'Place');
+  await expect(place).toContainText('Heimplatz 1, 8001 Zürich — exact location, in Zurich');
+  await expect(place).not.toContainText('Kreis 1');
+  await expect(place).toContainText('building place “Heimplatz 1” at 47.37028, 8.54806 in Zurich (also new)');
+  await place.locator('input[value=create]').check();
+  await apply(userA);
+  await expect(userA.locator('#f-place')).toHaveValue('heimplatz-1');
+  expect(sql(`SELECT b.kind || ' ' || ST_AsText(b.location) || ' in ' || c.name || ' ' || c.kind || ' ' || c.wikidata_id || ' / ' || (b.metadata->'sources'->>0 LIKE 'Wikidata Q110 %')
+              FROM places b JOIN places c ON c.id = b.parent_id WHERE b.slug = 'heimplatz-1'`))
+    .toBe('building POINT(8.54806 47.37028) in Zurich settlement Q112 / true');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/institutions\/kunsthaus-test\?done=created/);
+
+  // another institution 30 m away: the same building is offered (and pre-selected for an empty field)
+  await userA.goto('/institutions/new/wikidata?q=Q114');
+  await expect(row(userA, 'Place').locator('input[value=link]')).toBeChecked();
+  await expect(row(userA, 'Place')).toContainText('Heimplatz 1');
+
+  // without coordinates: the settlement P131 leads to (Kreis 1 → Zurich), which we have now
+  await userA.goto('/institutions/new/wikidata?q=Q113');
+  await expect(row(userA, 'Place')).toContainText('Zurich');
+  await expect(row(userA, 'Place').locator('input[value=link]')).toBeChecked();
+  sql("DELETE FROM institutions WHERE slug = 'kunsthaus-test'");
+});

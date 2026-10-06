@@ -37,6 +37,19 @@ const ENTITIES = {
     claims: { P31: [stmt(item('Q3305213'))], P1476: [stmt({ text: '神奈川沖浪裏', language: 'ja' })], P2125: [stmt('Kanagawa-oki nami ura')] } },
   Q106: { id: 'Q106', labels: labels('oil paint'), descriptions: { en: { value: 'paint' } }, claims: {} },
   Q107: { id: 'Q107', labels: labels('canvas'), descriptions: { en: { value: 'fabric' } }, claims: {} },
+  // exact places (institutions): P131 names a city district and the city; P625 + P6375 give the building
+  Q110: { id: 'Q110', labels: labels('Kunsthaus Test'), descriptions: { en: { value: 'art museum in Zurich' } },
+    claims: { P31: [stmt(item('Q207694'))], P131: [stmt(item('Q111')), stmt(item('Q112'))],
+      P625: [stmt({ latitude: 47.37028, longitude: 8.54806, globe: 'http://www.wikidata.org/entity/Q2' })], P6375: [stmt({ text: 'Heimplatz 1, 8001 Zürich', language: 'de' })] } },
+  Q111: { id: 'Q111', labels: labels('Kreis 1'), descriptions: { en: { value: 'district of Zurich' } },
+    claims: { P31: [stmt(item('Q19644586'))], P131: [stmt(item('Q112'))], P625: [stmt({ latitude: 47.37, longitude: 8.54, globe: 'http://www.wikidata.org/entity/Q2' })] } },
+  Q112: { id: 'Q112', labels: labels('Zurich'), descriptions: { en: { value: 'city in Switzerland' } },
+    claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 47.37444, longitude: 8.54111, globe: 'http://www.wikidata.org/entity/Q2' })] } },
+  Q113: { id: 'Q113', labels: labels('District Gallery Test'), descriptions: { en: { value: 'gallery' } },  // no coordinates: the settlement
+    claims: { P31: [stmt(item('Q1007870'))], P131: [stmt(item('Q111'))] } },
+  Q114: { id: 'Q114', labels: labels('Kunsthaus Library Test'), descriptions: { en: { value: 'library in the Kunsthaus' } },  // same building, 30 m
+    claims: { P31: [stmt(item('Q7075'))], P131: [stmt(item('Q111'))],
+      P625: [stmt({ latitude: 47.37050, longitude: 8.54830, globe: 'http://www.wikidata.org/entity/Q2' })] } },
   Q105: { id: 'Q105', labels: labels('Musée Marmottan Monet'), descriptions: { en: { value: 'art museum in Paris' } }, claims: { P31: [stmt(item('Q207694'))] } },
 };
 

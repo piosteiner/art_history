@@ -89,6 +89,8 @@ function statements(e, prop) {
 }
 const itemIds = (e, prop) => [...new Set(statements(e, prop).map((s) => s.mainsnak.datavalue.value.id).filter(Boolean))];
 const firstString = (e, prop) => { const s = statements(e, prop)[0]; return s ? String(s.mainsnak.datavalue.value) : null; };
+// monolingual text (street address P6375, title P1476): { text, language } → the text
+const firstText = (e, prop) => { const s = statements(e, prop)[0]; const v = s && s.mainsnak.datavalue.value; return v ? (typeof v === 'object' ? v.text : String(v)) || null : null; };
 const firstTime = (e, ...props) => { for (const p of props) { const s = statements(e, p)[0]; const v = s && fromStatement(s); if (v) return v; } return null; };
 function coords(e) {
   const s = statements(e, 'P625')[0];
@@ -151,6 +153,23 @@ const isInstitutionLike = (e) => itemIds(e, 'P31').some((id) => ['Q33506', 'Q207
   'Q1030034', 'Q7075', 'Q4830453', 'Q163740', 'Q1497649', 'Q18810687', 'Q2668072'].includes(id));
 const isMovementLike = (e) => itemIds(e, 'P31').some((id) => ['Q968159', 'Q1792644', 'Q4692', 'Q2198855', 'Q17537576'].includes(id));
 
+// The settlement among "located in" (P131) items, walking upwards: Kreis 1 → Zürich. Several values at one level
+// (Kunsthaus: Kreis 1 and Zürich) → the settlement among them; none → their P131 in turn (up to 4 levels).
+// A country counts when no settlement comes first; nothing found → the first item as it was.
+async function settlementOf(qids) {
+  let level = qids;
+  for (let depth = 0; depth < 4 && level.length; depth += 1) {
+    const items = await getEntities(level);
+    const hit = level.find((q) => items[q] && placeKind(items[q]) === 'settlement')
+      || level.find((q) => items[q] && placeKind(items[q]) === 'country');
+    if (hit) return hit;
+    level = [...new Set(level.flatMap((q) => itemIds(items[q], 'P131')))];
+  }
+  return qids[0];
+}
+// "Heimplatz 1, 8001 Zürich" → "Heimplatz 1" (the street part; postcode and town are the parent place)
+const streetOf = (address) => (address ? address.split(/,\s*(?:[A-Z]{1,3}-)?\d{4,5}\b/)[0].trim() || null : null);
+
 // --- what we take from Wikidata, per type ------------------------------------------------------------------------
 // Fields: key → { kind: 'text'|'list'|'date'|'point'|'ref', value, label?, ref?: {type, qid} }
 function fieldsFor(t, e) {
@@ -186,7 +205,10 @@ function fieldsFor(t, e) {
   if (t.type === 'place') {
     const c = coords(e); if (c) f.location = { kind: 'point', value: c };
     f.kind = { kind: 'text', value: placeKind(e) };
-    ref('parent', 'place', 'P131');
+    // a building or site lies in a settlement, not in a city district: P131 is resolved upwards (settlementOf)
+    if (['building', 'site'].includes(placeKind(e)) && itemIds(e, 'P131').length) {
+      f.parent = { kind: 'ref', ref: { type: 'place', qid: itemIds(e, 'P131')[0] }, p131: itemIds(e, 'P131') };
+    } else ref('parent', 'place', 'P131');
     f.country_code = { kind: 'country', qid: itemIds(e, 'P17')[0] || null };
   }
   if (t.type === 'polity') {
@@ -196,7 +218,18 @@ function fieldsFor(t, e) {
     text('country_codes', firstString(e, 'P297'));
   }
   if (t.type === 'term') text('definition', e.descriptions && e.descriptions.en && e.descriptions.en.value);
-  if (t.type === 'institution') { date('founded', 'P571'); ref('place', 'place', 'P131'); text('website_url', firstString(e, 'P856')); }
+  if (t.type === 'institution') {
+    date('founded', 'P571');
+    // Its place: the exact building when Wikidata has coordinates (P625, address P6375), inside the settlement that
+    // P131 leads to — P131 is often a city district (Kunsthaus Zürich: "Kreis 1" and Zürich).
+    const p131 = itemIds(e, 'P131');
+    const c = coords(e);
+    if (p131.length || c) {
+      f.place = { kind: 'ref', ref: { type: 'place', qid: p131[0] || null }, p131,
+        building: c ? { location: c, address: firstText(e, 'P6375'), label: labelOf(e), qid: e.id } : null };
+    }
+    text('website_url', firstString(e, 'P856'));
+  }
   if (t.type === 'movement') {
     const start = firstTime(e, 'P580', 'P571'); const end = firstTime(e, 'P582', 'P576');
     if (start) f.period = { kind: 'date', value: end ? `${start.value.split('/')[0]}/${end.value.split('/').pop()}` : start.value, label: null };
@@ -343,6 +376,8 @@ async function compare(db, t, qid, ours, entity) {
   const e = entities[qid];
   if (!e || e.missing !== undefined) throw new Error(`${qid} was not found on Wikidata`);
   const fields = fieldsFor(t, e);
+  for (const w of Object.values(fields)) if (w.p131 && w.p131.length) w.ref.qid = await settlementOf(w.p131);
+  if (fields.place && !fields.place.ref.qid) delete fields.place.ref;  // coordinates but no P131: only the building
   const rels = relsFor(t, e);
   // Everything referenced: our entries with these Q-ids, and Wikidata data for the rest (labels, coordinates …)
   const refQids = [...Object.values(fields).filter((f) => f.ref).map((f) => f.ref.qid), ...rels.map((r) => r.qid),
@@ -395,6 +430,32 @@ async function compare(db, t, qid, ours, entity) {
       const c = w.qid && others[w.qid];
       const iso = c && firstString(c, 'P297');
       if (iso) rows.push(scalarRow(key, oursVal, iso, iso, declined(key, iso)));
+      continue;
+    }
+    if (w.kind === 'ref' && w.building) {
+      // The exact place: a building place we have within 100 m (PostGIS ST_DWithin on geography = metres; <-> orders
+      // by distance, served by the GiST index) — else a new one at Wikidata's coordinates, named by its street address,
+      // inside the settlement (ours, or created with it).
+      const b = w.building;
+      const near = (await db.query(`
+        SELECT 'place' AS type, slug, name FROM places
+        WHERE kind = 'building' AND ST_DWithin(location, ST_SetSRID(ST_MakePoint($1, $2), 4326)::geography, 100)
+        ORDER BY location <-> ST_SetSRID(ST_MakePoint($1, $2), 4326)::geography LIMIT 1`, b.location)).rows[0];
+      const city = w.ref ? localFor(w.ref.qid, ['place']) : null;
+      const cityItem = w.ref ? others[w.ref.qid] : null;
+      const cityDoc = !city && cityItem ? newEntryDoc('place', cityItem) : null;
+      const cityName = city ? city.name : labelOf(cityItem);
+      const name = streetOf(b.address) || `${b.label} (building)`;
+      const create = {
+        type: 'place', sourceQid: b.qid,
+        doc: { name, kind: 'building', location: b.location, ...(city ? { parent: city.slug } : {}) },
+        parentCreate: cityDoc ? { type: 'place', doc: cityDoc } : null,
+        parentLink: city && city.matchedBy === 'name' ? { target: city, qid: w.ref.qid } : null,
+        describe: `building place “${name}” at ${b.location[1]}, ${b.location[0]}${cityName ? ` in ${cityName}${cityDoc ? ' (also new)' : ''}` : ''}`,
+      };
+      rows.push({ key, kind: 'ref', ours: oursVal, qid: b.qid, target: near ? { ...near, matchedBy: 'location' } : null, candidate: null, create,
+        wikiLabel: `${b.address || b.label} — exact location${cityName ? `, in ${cityName}` : ''}`, value: near ? near.slug : null,
+        declined: declined(key, b.qid), status: near && near.slug === oursVal ? 'same' : !oursVal ? 'empty' : 'differs' });
       continue;
     }
     if (w.kind === 'ref') {
@@ -511,17 +572,21 @@ async function linkQid(db, target, qid) {
 }
 
 // Create a missing target from Wikidata (inside the caller's transaction) → its slug.
-async function createEntry(db, type, doc, from = null, userId = null) {
+// sourceQid: the item the data comes from when it isn't the entry's own (a building place from an institution's item).
+async function createEntry(db, type, doc, from = null, userId = null, sourceQid = null) {
   const t = BY_TYPE[type];
-  const existing = (await db.query(`SELECT slug FROM ${t.table} WHERE wikidata_id = $1`, [doc.wikidata_id])).rows[0];
-  if (existing) return existing.slug;  // created a moment ago for another suggestion
-  const row = toRow({ ...doc, metadata: { sources: [sourceNote(doc.wikidata_id)] } }, t.fields);
+  if (doc.wikidata_id) {
+    const existing = (await db.query(`SELECT slug FROM ${t.table} WHERE wikidata_id = $1`, [doc.wikidata_id])).rows[0];
+    if (existing) return existing.slug;  // created a moment ago for another suggestion
+  }
+  const row = toRow({ ...doc, metadata: { sources: [sourceNote(doc.wikidata_id || sourceQid)] } }, t.fields);
   if (row.errors.length) throw new Error(`${type} "${doc[t.name]}": ${row.errors.join('; ')}`);
   const slug = await freeSlug(db, t, doc[t.name]);
   const names = Object.keys(row.cols);
   const values = [slug];
   const exprs = names.map((c) => { values.push(row.cols[c][1]); return row.cols[c][0].replace('$', () => `$${values.length}`); });
   const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
+  if (row.parent) await db.query(`UPDATE ${t.table} SET parent_id = (SELECT id FROM ${t.table} WHERE slug = $2) WHERE id = $1`, [rows[0].id, row.parent]);
   await autocreate.flag(db, type, rows[0].id, from, userId);  // a minimal entry: "to complete" until edited
   return slug;
 }
@@ -558,7 +623,17 @@ async function apply(db, t, entity, plan, choices, userId) {
         if (row.target.matchedBy === 'name') await linkQid(db, row.target, row.qid);
       }
       if (pick === 'candidate' && row.candidate) { slug = row.candidate.slug; await linkQid(db, row.candidate, row.qid); }
-      if (pick === 'create' && row.create) { slug = await createEntry(db, row.create.type, row.create.doc, entity, userId); created.push(`${row.create.type} ${row.create.doc[BY_TYPE[row.create.type].name]}`); }
+      if (pick === 'create' && row.create) {
+        const doc = { ...row.create.doc };
+        // a building place: its settlement first (new, or ours recognised by name → gets the Q-id)
+        if (row.create.parentCreate) {
+          doc.parent = await createEntry(db, 'place', row.create.parentCreate.doc, entity, userId);
+          created.push(`place ${row.create.parentCreate.doc.name}`);
+        }
+        if (row.create.parentLink) await linkQid(db, row.create.parentLink.target, row.create.parentLink.qid);
+        slug = await createEntry(db, row.create.type, doc, entity, userId, row.create.sourceQid);
+        created.push(`${row.create.type} ${doc[BY_TYPE[row.create.type].name]}`);
+      }
       await decide(row.key, row.qid, !!slug);
       if (slug) form[`f.${row.key}`] = slug;
       continue;
