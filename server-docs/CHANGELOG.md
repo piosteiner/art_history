@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Wikidata: exact places for institutions (no schema change)
+- **What:** `src/admin/wikidata.js` — an institution with coordinates (P625) is offered a **building** place: an
+  existing building of ours within 100 m (PostGIS `ST_DWithin`, nearest by `<->`), or a new one named by its street
+  address (P6375, monolingual text → "Heimplatz 1") at the exact point, inside the settlement. "Located in" (P131) is
+  resolved upwards to a settlement (`settlementOf`: Kreis 1 → Zürich; several values → the settlement among them),
+  also for the parent of a compared building/site. The settlement is created with it when missing, or linked by name
+  (gets the Q-id). `createEntry` now sets a new place's parent. Fixtures Q110–Q114 + e2e test.
+- **Why:** owner: Wikidata's P131 for the Kunsthaus Zürich is the city district "Kreis 1" — exact places wanted.
+- **Tested:** against live Wikidata (Q685038 → "Heimplatz 1" at 47.37028, 8.54806 in Zurich); unit 25, e2e 72 passing.
+- **Revert:** redeploy the previous commit.
+
 ### Provenance (migration 031)
 - **What:** table `provenance` (artwork, position, owner as exclusive arc artist/person/institution/place or
   description, acquired, method enum `acquisition_method`, documented-direct flag, place, optional recorded end,
