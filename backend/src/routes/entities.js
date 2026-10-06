@@ -196,7 +196,8 @@ const RELATIONSHIPS_SQL = `
   JOIN entity_index o ON (o.type, o.id) = (
          CASE WHEN r.subject_type = $1 AND r.subject_id = $2 THEN r.object_type ELSE r.subject_type END,
          CASE WHEN r.subject_type = $1 AND r.subject_id = $2 THEN r.object_id   ELSE r.subject_id   END)
-  WHERE (r.subject_type = $1 AND r.subject_id = $2) OR (r.object_type = $1 AND r.object_id = $2)
+  -- the creator edges are left out: the artwork's creator / creators and the artist's artworks already list them
+  WHERE ((r.subject_type = $1 AND r.subject_id = $2) OR (r.object_type = $1 AND r.object_id = $2)) AND r.source <> 'creator'
   ORDER BY rt.sort_order, lower(r.period) NULLS LAST, o.name`;
 
 // Hierarchy upwards (Arles → France), a recursive CTE over parent_id.
