@@ -457,3 +457,49 @@ test('glossary links in texts: popover with the definition; a missing term is pl
   await page.locator('.glossary-popover a').click();
   await expect(page).toHaveURL(/\/glossary\/woodblock-print$/);
 });
+
+// ---- exact locations (API migration 034); the live data has none yet, so the tests bring a sample ----
+const ZH = { slug: 'zurich', name: 'Zürich' };
+const KUNSTHAUS = { slug: 'kunsthaus-zurich', name: 'Kunsthaus Zürich' };
+const KH_POINT: [number, number] = [8.5481, 47.3702];
+function stay(entity: { type: string; slug: string; name: string }, from: string, to: string) {
+  return {
+    type: 'Feature', geometry: { type: 'Point', coordinates: KH_POINT },
+    properties: {
+      relationship: 'worked_in', label: 'worked at', place: ZH, institution: KUNSTHAUS, artwork: null, entity, note: null, certainty: 'attested',
+      period: { label: `${from}–${to}`, from: `${from}-01-01`, to: `${to}-12-31`, from_year: Number(from), to_year: Number(to) },
+    },
+  };
+}
+async function sampleVenues(page: Page) {
+  await page.route(/\/v1\/map\/presence\?/, (r) => r.fulfill({ json: { type: 'FeatureCollection', features: [
+    stay({ type: 'artist', slug: 'claude-monet', name: 'Claude Monet' }, '1910', '1912'),
+    stay({ type: 'person', slug: 'theo-van-gogh', name: 'Theo van Gogh' }, '1911', '1915'),
+  ] } }));
+  await page.route(/\/v1\/map\/sites$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', features: [
+    { type: 'Feature', geometry: { type: 'Point', coordinates: KH_POINT },
+      properties: { type: 'institution', ...KUNSTHAUS, kind: 'museum', address: 'Heimplatz 1, 8001 Zürich', place: ZH } },
+  ] } }));
+}
+
+test('same institution at the same time: "could have met there"; the museums layer has a switch', async ({ page }) => {
+  await sampleVenues(page);
+  await page.goto('/');
+  const item = page.locator('#encounters .encounter').first();
+  await expect(item).toContainText('Kunsthaus Zürich');
+  await expect(item).toContainText('could have met there');
+  await expect(page.locator('#sites-toggle')).toContainText('Museums and sites (1)');
+});
+
+test('institution page: address and its own point', async ({ page }) => {
+  await page.route(/\/v1\/institutions\/kunsthaus-zurich$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.address = 'Heimplatz 1, 8001 Zürich';
+    body.location = { type: 'Point', coordinates: KH_POINT };
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/institutions/kunsthaus-zurich');
+  await expect(page.locator('.facts')).toContainText('Heimplatz 1, 8001 Zürich');
+  await expect(page.locator('#legend')).toContainText('its building');
+});

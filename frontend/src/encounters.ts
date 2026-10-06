@@ -8,7 +8,16 @@ export interface Stay {
   label: string; // "lived in"
   period: DateRange | null;
   note?: string | null;
+  /** The exact venue (migration 034): an institution or an immovable artwork; `place` is then its city. */
+  institution?: Ref | null;
+  artwork?: Ref | null;
+  /** The point on the map ([lng, lat]): the venue's own, else the city's. */
+  point?: [number, number];
 }
+
+export type Venue = { type: 'institution' | 'artwork'; slug: string; name: string };
+const venueOf = (s: Stay): Venue | null =>
+  s.institution ? { type: 'institution', ...s.institution } : s.artwork ? { type: 'artwork', ...s.artwork } : null;
 
 export interface Encounter {
   place: Ref;
@@ -20,6 +29,10 @@ export interface Encounter {
   days: number;
   /** At least one of the dates is only known to the year (or "c."): the overlap is possible, not certain. */
   approximate: boolean;
+  /** Both at the same institution or building: they could have met there. Null: only the same city at the same time. */
+  venue: Venue | null;
+  /** Where to mark it: the venue's point (null without a venue: use the city's). */
+  point: [number, number] | null;
 }
 
 const DAY = 86_400_000;
@@ -102,12 +115,14 @@ export function findEncounters(stays: Stay[], opts: FindOptions = {}): Encounter
         if (seen.has(id)) continue;
         seen.add(id);
         const approximate = coarse(x.stay.period!) || coarse(y.stay.period!);
-        out.push({ place: x.stay.place, a, b, from, to, days: to - from, approximate, when: describe(from, to, approximate) });
+        const vx = venueOf(x.stay), vy = venueOf(y.stay);
+        const venue = vx && vy && vx.type === vy.type && vx.slug === vy.slug ? vx : null;
+        out.push({ place: x.stay.place, a, b, from, to, days: to - from, approximate, when: describe(from, to, approximate), venue, point: venue ? x.stay.point ?? null : null });
       }
     }
   }
-  // certain ones first, then in date order
-  return out.sort((p, q) => Number(p.approximate) - Number(q.approximate) || p.from - q.from);
+  // could have met (same venue) before same city; certain before possible; then in date order
+  return out.sort((p, q) => Number(!p.venue) - Number(!q.venue) || Number(p.approximate) - Number(q.approximate) || p.from - q.from);
 }
 
 /** The entries an encounter is about, as route keys ("artist/vincent-van-gogh"). */

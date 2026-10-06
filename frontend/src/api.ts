@@ -1,7 +1,7 @@
 // The only module that talks to the backend. Everything else calls these functions, never fetch().
 import type {
   DetailByPlural, EntityMap, EntityType, Graph, ItemByPlural, List, PlacesMap, Plural,
-  PresenceMap, RelationshipType, SearchHit,
+  PresenceMap, RelationshipType, SearchHit, SitesMap,
 } from './types';
 
 // In development the Vite server proxies /v1 (the API only allows CORS from the production origin).
@@ -65,6 +65,9 @@ export const getPresence = (from: number, to: number, types?: EntityType[]) =>
   get<PresenceMap>('/map/presence', { from, to, types: types?.join(',') });
 
 export const getPlacesMap = (from?: number, to?: number) => get<PlacesMap>('/map/places', { from, to });
+
+/** Institutions and immovable artworks with an exact location of their own (a museum layer). */
+export const getSites = () => get<SitesMap>('/map/sites');
 
 export const getGraph = (plural: Plural, slug: string, depth = 1, types?: string[]) =>
   get<Graph>(`/graph/${plural}/${encodeURIComponent(slug)}`, { depth, types: types?.join(',') });

@@ -3,12 +3,12 @@
 // - no time window, entries chosen             → their routes and places, one colour per entry
 // - a time window on the timeline              → who/what of the selection was physically where
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
-import { getEntityMap, getPlacesMap, getPresence, listEntities, PLURAL } from '../api';
+import { getEntityMap, getPlacesMap, getPresence, getSites, listEntities, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, render } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
-import { COLORS, createMap, focusEncounter, highlightRoute, PALETTE, showEncounters, showPlaces, showPresence, showSelection, type ColoredEntityMap, type RouteInfo } from '../map';
+import { COLORS, createMap, focusEncounter, highlightRoute, PALETTE, showEncounters, showPlaces, showPresence, showSelection, showSites, type ColoredEntityMap, type RouteInfo } from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
 import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
@@ -62,6 +62,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       <div class="map" id="map"></div>
       <div class="legend" id="legend"></div>
     </div>
+    <label class="sites-toggle" id="sites-toggle" hidden><input type="checkbox" checked> <span></span></label>
     <p class="map-status muted" id="map-status"></p>
     <section class="encounters" id="encounters" hidden aria-live="polite"></section>
     <div id="timeline"></div>
@@ -71,6 +72,17 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   const status = main.querySelector<HTMLElement>('#map-status')!;
   const legend = main.querySelector<HTMLElement>('#legend')!;
   const encountersEl = main.querySelector<HTMLElement>('#encounters')!;
+
+  // museums and sites with their own location (institutions, buildings): a layer of its own, switchable
+  const sitesToggle = main.querySelector<HTMLLabelElement>('#sites-toggle')!;
+  getSites().then((fc) => {
+    if (!fc.features.length || !main.contains(sitesToggle)) return;
+    sitesToggle.hidden = false;
+    sitesToggle.querySelector('span')!.innerHTML = html`<i class="dot" style="background:${COLORS.site}"></i> Museums and sites (${String(fc.features.length)})`.value;
+    const box = sitesToggle.querySelector('input')!;
+    showSites(map, fc, box.checked);
+    box.addEventListener('change', () => showSites(map, fc, box.checked));
+  }).catch(() => { /* optional layer */ });
 
   // a remembered view (time window, picks) must not look like the default start page
   const restoredEl = main.querySelector<HTMLElement>('#restored')!;
@@ -214,7 +226,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       types.length ? getPresence(ALL_TIME.from, ALL_TIME.to, [...types]) : Promise.resolve({ type: 'FeatureCollection', features: [] } as PresenceMap),
     ]);
     if (stale()) return;
-    const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, artistsOf)).map((f) => f.properties);
+    const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, artistsOf))
+      .map((f) => ({ ...f.properties, point: f.geometry.coordinates }));
     const where = new Map(places.features.map((f) => [f.properties.slug, f.geometry.coordinates] as const));
     useRoutes(showPlaces(map, places, rows, (slug) => where.get(slug)));
     crossings(rows, (slug) => where.get(slug));
@@ -245,7 +258,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       if (f.geometry.type !== 'Point' || f.properties.layer !== 'presence') return [];
       const p = f.properties as StopProps;
       at.set(p.place.slug, f.geometry.coordinates as [number, number]);
-      return [{ entity: i.fc.entity, place: p.place, label: p.label, period: p.period, note: p.note }];
+      return [{ entity: i.fc.entity, place: p.place, label: p.label, period: p.period, note: p.note, institution: p.institution, artwork: p.artwork, point: f.geometry.coordinates as [number, number] }];
     }));
     crossings(stays, (slug) => at.get(slug));
     const withPlaces = items.filter((i) => i.fc.features.some((f) => f.geometry.type === 'Point'));
@@ -279,7 +292,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     useRoutes(showPresence(map, { ...fc, features }));
     redrawLegend();
     const at = new Map(features.map((f) => [f.properties.place.slug, f.geometry.coordinates] as const));
-    crossings(features.map((f) => f.properties), (slug) => at.get(slug));
+    crossings(features.map((f) => ({ ...f.properties, point: f.geometry.coordinates })), (slug) => at.get(slug));
     const who = new Set(features.map((f) => `${f.properties.entity.type}/${f.properties.entity.slug}`));
     const where = new Set(features.map((f) => f.properties.place.slug));
     status.textContent = features.length

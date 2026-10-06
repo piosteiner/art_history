@@ -469,3 +469,9 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .glossary-popover p { margin: .35rem 0 .45rem; }
 .glossary-popover-head .tag { text-transform: capitalize; }
 .glossary-popover a { font-size: .85rem; }
+
+/* exact locations: museums and sites layer, buildings in the graph */
+.sites-toggle { display: inline-flex; align-items: center; gap: .35rem; font-size: .85rem; color: var(--muted); margin: .3rem 0 0; cursor: pointer; }
+.sites-toggle[hidden] { display: none; }
+:root { --c-architecture: #3b4fa0; }
+.cat-architecture { --cat: var(--c-architecture); }

@@ -41,7 +41,7 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary';
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture';
 
 export interface Relationship {
   type: string;
@@ -153,7 +153,10 @@ export interface ArtworkItem extends Located, Titled {
 }
 export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
-export interface InstitutionItem extends Located, Named { slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null }
+export interface InstitutionItem extends Located, Named {
+  slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null;
+  location?: PointGeometry | null; // its own point (migration 034); else only its city's
+}
 /** Derived from relationships: commissioned / patron of, owner of an artwork, depicted in an artwork. */
 export type PersonRole = 'patron' | 'owner' | 'depicted';
 /** Everyone relevant who isn't an artist, also groups (family, dynasty, religious order …). */
@@ -188,6 +191,8 @@ export interface PartDimensions { part: string; height_cm: number | null; width_
 export interface Artwork extends DetailBase, Located, Titled {
   type: 'artwork';
   title: string; alt_titles: string[]; attribution_label: string | null;
+  /** Where an immovable work stands (a building, garden, bridge …): point and/or outline (migration 034). */
+  location?: PointGeometry | null; area?: GeoJSON.Geometry | null;
   created: DateRange | null; kind: string | null; medium: string | null; inventory_number: string | null;
   materials: string[]; dimensions: Dimensions | null;
   other_dimensions?: PartDimensions[]; // detail only; empty list when there are none
@@ -238,6 +243,7 @@ export interface Institution extends DetailBase, Located, Named {
   description_html: string | null;
   images: Image[]; image_url: string | null;
   place: (Ref & { location: PointGeometry | null }) | null;
+  location?: PointGeometry | null; address?: string | null;
   artworks: ArtworkSummary[];
 }
 
@@ -297,6 +303,8 @@ export interface StopProps {
   layer: 'presence' | 'association';
   relationship: string; label: string; category: Category;
   place: Ref; period: DateRange | null; note: string | null; certainty: string | null;
+  /** The exact venue when the link points at an institution or an immovable artwork; `place` is then its city. */
+  institution?: Ref | null; artwork?: Ref | null;
 }
 export type StopFeature = Feature<PointGeometry, StopProps>;
 export type RouteFeature = Feature<LineStringGeometry, { layer: 'route' }>;
@@ -311,8 +319,13 @@ export interface PresenceProps {
   relationship: string; label: string; place: Ref;
   entity: { type: EntityType; slug: string; name: string };
   period: DateRange | null; note: string | null; certainty: string | null;
+  institution?: Ref | null; artwork?: Ref | null; // the exact venue, see StopProps
 }
 export interface PresenceMap { type: 'FeatureCollection'; features: Feature<PointGeometry, PresenceProps>[] }
+
+/** Institutions and immovable artworks with an exact location of their own (`/v1/map/sites`). */
+export interface SiteProps { type: 'institution' | 'artwork'; slug: string; name: string; kind: string | null; address: string | null; place: Ref | null }
+export interface SitesMap { type: 'FeatureCollection'; features: Feature<GeoJSON.Geometry, SiteProps>[] }
 
 export interface PlaceCountProps { slug: string; name: string; kind: string | null; country_code: string | null; presence_count: number; association_count: number }
 export interface PlacesMap { type: 'FeatureCollection'; features: Feature<PointGeometry, PlaceCountProps>[] }

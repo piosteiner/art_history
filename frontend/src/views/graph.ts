@@ -14,10 +14,10 @@ import { guard, loading, showError } from './common';
 import { navigate } from '../router';
 
 // place links are map material (presence/association), the API leaves them out of graphs by default
-const GRAPH_CATEGORIES: Category[] = ['influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance', 'polity'];
+const GRAPH_CATEGORIES: Category[] = ['influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance', 'architecture', 'polity'];
 const CATEGORY_LABEL: Record<string, string> = {
   influence: 'Influence', education: 'Education', collaboration: 'Collaboration', membership: 'Movements & groups',
-  patronage: 'Patronage', depiction: 'Depictions', provenance: 'Collections', polity: 'States & nationality',
+  patronage: 'Patronage', depiction: 'Depictions', provenance: 'Collections', architecture: 'Buildings', polity: 'States & nationality',
 };
 
 type Node = GraphNode & SimulationNodeDatum & { degree: number };

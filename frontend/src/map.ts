@@ -4,11 +4,11 @@ import type { ExpressionSpecification, GeoJSONSource, MapLayerMouseEvent } from 
 import 'maplibre-gl/dist/maplibre-gl.css';
 // MapLibre 6 loads its worker from a separate module; let Vite bundle it and tell MapLibre where it is.
 import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
-import { html, href, type Html } from './html';
+import { html, href, link, type Html } from './html';
 import { encounterLine } from './crossings';
 import { encounterKeys, type Encounter } from './encounters';
 import { isDark } from './theme';
-import type { EntityMap, EntityType, PlacesMap, PresenceMap, StopFeature } from './types';
+import type { EntityMap, EntityType, PlacesMap, PresenceMap, SiteProps, SitesMap, StopFeature } from './types';
 
 setWorkerUrl(workerUrl);
 
@@ -23,6 +23,7 @@ const style = () => {
 };
 
 export const COLORS = {
+  site: '#3b4fa0', // museums, institutions and buildings with their own location
   encounter: '#e0a800', // places where paths crossed
   presence: '#b4462b',
   route: '#b4462b',
@@ -141,6 +142,13 @@ function numberStops<T extends { properties: { layer: string; period: { from_yea
 }
 const stopLabel = (p: Record<string, unknown>) => (p.stop ? html`<span class="tag">stop ${p.stop as number} of ${p.stops as number}</span> ` : '');
 
+/** "Kunsthaus Zürich, " before the city in stop popups (features carry institution / artwork, migration 034). */
+function venueLink(p: Record<string, unknown>) {
+  const inst = prop<{ slug: string; name: string } | null>(p.institution ?? null);
+  const art = prop<{ slug: string; name: string } | null>(p.artwork ?? null);
+  return inst ? html`${link('institution', inst.slug, inst.name)}, ` : art ? html`${link('artwork', art.slug, art.name)}, ` : '';
+}
+
 // MapLibre flattens nested properties to JSON strings.
 const prop = <T>(v: unknown): T => (typeof v === 'string' && /^[[{]/.test(v) ? JSON.parse(v) : v) as T;
 
@@ -183,7 +191,7 @@ export function showEntity(map: MapLibre, fc: EntityMap) {
       const place = prop<{ slug: string; name: string }>(p.place);
       const period = prop<{ label: string } | null>(p.period);
       return html`<div class="popup-row">
-        <strong><a href="${href('place', place.slug)}">${place.name}</a></strong><br>
+        <strong>${venueLink(p)}<a href="${href('place', place.slug)}">${place.name}</a></strong><br>
         ${stopLabel(p)}${p.label}${period ? html` · ${period.label}` : ''}
         ${p.note ? html`<br><em>${p.note}</em>` : ''}
         ${p.layer === 'association' ? html`<br><span class="tag tag-association">association, not travel</span>` : ''}
@@ -229,7 +237,13 @@ const clearOverlays = (map: MapLibre) => removeLayers(map, OVERLAY_LAYERS);
 /** Route colours on the start map: one per kind of entry (with hundreds of entries, one per entry wouldn't tell apart). */
 export const TYPE_COLORS: Partial<Record<EntityType, string>> = { artist: '#b4462b', person: '#8a4f9e', artwork: '#c08a1e' };
 
-type PresenceRow = PresenceMap['features'][number]['properties'];
+type PresenceRow = PresenceMap['features'][number]['properties'] & { point?: [number, number] };
+/** "institution/kunsthaus-zurich" for a stay at a venue, else the city's slug: one stop or circle per key. */
+const whereKey = (r: { place: { slug: string }; institution?: { slug: string } | null; artwork?: { slug: string } | null }) =>
+  r.institution ? `institution/${r.institution.slug}` : r.artwork ? `artwork/${r.artwork.slug}` : r.place.slug;
+/** "at Goupil & Cie" when a stay is at a venue (the city is the popup's heading). */
+const atVenue = (r: { institution?: { slug: string; name: string } | null; artwork?: { slug: string; name: string } | null }) =>
+  r.institution ? html` at ${link('institution', r.institution.slug, r.institution.name)}` : r.artwork ? html` at ${link('artwork', r.artwork.slug, r.artwork.name)}` : '';
 const rowKey = (r: PresenceRow) => `${r.entity.type}/${r.entity.slug}`;
 const byDate = (a: PresenceRow, b: PresenceRow) =>
   (a.period?.from_year ?? 1e9) - (b.period?.from_year ?? 1e9) || (a.period?.from ?? '').localeCompare(b.period?.from ?? '');
@@ -238,10 +252,10 @@ const byDate = (a: PresenceRow, b: PresenceRow) =>
 /** The colour of each displayed route ("artist/vincent-van-gogh" → colour), for popup dots. */
 const routeColorsOf = new WeakMap<MapLibre, Map<string, string>>();
 
-function placeRows(rows: PresenceRow[], colors?: Map<string, string>) {
+function placeRows(rows: PresenceRow[], colors?: Map<string, string>, venueInHeading = false) {
   return html`<ul class="popup-list popup-events">${[...rows].sort(byDate).map((r) => html`<li>
     <i class="dot" style="background:${colors?.get(rowKey(r)) ?? TYPE_COLORS[r.entity.type] ?? COLORS.presence}"></i>
-    <a href="${href(r.entity.type, r.entity.slug)}">${r.entity.name}</a>
+    <a href="${href(r.entity.type, r.entity.slug)}">${r.entity.name}</a>${venueInHeading ? '' : atVenue(r)}
     <span class="muted">${r.label}${r.period ? ` · ${r.period.label}` : ''}</span>
     ${r.note ? html`<div class="popup-note">${r.note}</div>` : ''}
   </li>`)}</ul>`;
@@ -335,15 +349,15 @@ function buildRoutes(presence: PresenceRow[], coords: (slug: string) => [number,
     (TYPE_ORDER[a[0].entity.type] ?? 9) - (TYPE_ORDER[b[0].entity.type] ?? 9) || a[0].entity.name.localeCompare(b[0].entity.name));
   for (const [key, rows] of ordered) {
     const stops = rows.filter((r) => r.period?.from_year != null).sort(byDate)
-      .filter((r, i, all) => i === 0 || r.place.slug !== all[i - 1].place.slug);
-    const line = stops.map((r) => coords(r.place.slug)).filter((c): c is [number, number] => !!c);
+      .filter((r, i, all) => i === 0 || whereKey(r) !== whereKey(all[i - 1]));
+    const line = stops.map((r) => r.point ?? coords(r.place.slug)).filter((c): c is [number, number] => !!c);
     if (line.length < 2) continue;
     const e = rows[0].entity;
     routes.push({
       type: 'Feature', geometry: { type: 'LineString', coordinates: line },
       properties: {
         key, name: e.name, type: e.type, slug: e.slug, color: PALETTE[routes.length % PALETTE.length],
-        stops: JSON.stringify(stops.map((st) => ({ place: st.place.name, slug: st.place.slug, label: st.label, period: st.period?.label ?? '' }))),
+        stops: JSON.stringify(stops.map((st) => ({ place: st.institution?.name ?? st.artwork?.name ?? st.place.name, slug: st.place.slug, label: st.label, period: st.period?.label ?? '' }))),
       },
     });
   }
@@ -413,12 +427,15 @@ function bindRoutes(map: MapLibre) {
  */
 export function showPresence(map: MapLibre, fc: PresenceMap): RouteInfo[] {
   const at = new Map(fc.features.map((x) => [x.properties.place.slug, x.geometry.coordinates] as const));
-  const routes = buildRoutes(fc.features.map((x) => x.properties), (slug) => at.get(slug));
+  const routes = buildRoutes(fc.features.map((x) => ({ ...x.properties, point: x.geometry.coordinates })), (slug) => at.get(slug));
   const info = routeInfo(map, routes);
-  const byPlace = new Map<string, { coords: [number, number]; name: string; slug: string; rows: PresenceMap['features'] }>();
+  type Group = { coords: [number, number]; name: string; slug: string; venue: { type: string; slug: string; name: string } | null; rows: PresenceMap['features'] };
+  const byPlace = new Map<string, Group>();
   for (const f of fc.features) {
-    const key = f.properties.place.slug;
-    if (!byPlace.has(key)) byPlace.set(key, { coords: f.geometry.coordinates, name: f.properties.place.name, slug: key, rows: [] });
+    const key = whereKey(f.properties);
+    const p = f.properties;
+    const venue = p.institution ? { type: 'institution', ...p.institution } : p.artwork ? { type: 'artwork', ...p.artwork } : null;
+    if (!byPlace.has(key)) byPlace.set(key, { coords: f.geometry.coordinates, name: p.place.name, slug: p.place.slug, venue, rows: [] });
     byPlace.get(key)!.rows.push(f);
   }
   const grouped: GeoJSON.FeatureCollection = {
@@ -427,7 +444,7 @@ export function showPresence(map: MapLibre, fc: PresenceMap): RouteInfo[] {
       type: 'Feature',
       geometry: { type: 'Point', coordinates: g.coords },
       properties: {
-        slug: g.slug, name: g.name, count: g.rows.length,
+        slug: g.slug, name: g.name, count: g.rows.length, venue: g.venue ? JSON.stringify(g.venue) : '',
         rows: JSON.stringify(g.rows.map((r) => r.properties)),
       },
     })),
@@ -453,8 +470,9 @@ export function showPresence(map: MapLibre, fc: PresenceMap): RouteInfo[] {
 function bindPresencePopups(map: MapLibre) {
   popupOnClick(map, ['presence-circles'], (features) => html`${(features ?? []).slice(0, 1).map((f) => {
     const rows = JSON.parse(f.properties.rows as string) as PresenceMap['features'][number]['properties'][];
-    return html`<div class="popup-row"><strong><a href="${href('place', f.properties.slug)}">${f.properties.name}</a></strong>
-      ${placeRows(rows, routeColorsOf.get(map))}${encountersHere(map, f.properties.slug)}</div>`;
+    const venue = f.properties.venue ? JSON.parse(f.properties.venue as string) as { type: EntityType; slug: string; name: string } : null;
+    return html`<div class="popup-row"><strong>${venue ? html`${link(venue.type, venue.slug, venue.name)}, ` : ''}<a href="${href('place', f.properties.slug)}">${f.properties.name}</a></strong>
+      ${placeRows(rows, routeColorsOf.get(map), !!venue)}${encountersHere(map, f.properties.slug, venue ? `${venue.type}/${venue.slug}` : null)}</div>`;
   })}`);
 }
 
@@ -468,9 +486,10 @@ export function showEncounters(map: MapLibre, list: Encounter[], coords: (slug: 
   const seen = new Set<string>();
   const features: GeoJSON.Feature[] = [];
   for (const e of list) {
-    const c = coords(e.place.slug);
-    if (!c || seen.has(e.place.slug)) continue;
-    seen.add(e.place.slug);
+    const c = e.point ?? coords(e.place.slug);
+    const key = e.venue ? `${e.venue.type}/${e.venue.slug}` : e.place.slug;
+    if (!c || seen.has(key)) continue;
+    seen.add(key);
     features.push({ type: 'Feature', geometry: { type: 'Point', coordinates: c }, properties: { slug: e.place.slug } });
   }
   whenReady(map, () => {
@@ -489,18 +508,67 @@ export function showEncounters(map: MapLibre, list: Encounter[], coords: (slug: 
 
 /** Flies to an encounter and highlights both routes (on the start map). */
 export function focusEncounter(map: MapLibre, e: Encounter, coords: (slug: string) => [number, number] | undefined) {
-  const c = coords(e.place.slug);
-  if (c) map.flyTo({ center: c, zoom: Math.max(map.getZoom(), 6), duration: 900 });
+  const c = e.point ?? coords(e.place.slug);
+  if (c) map.flyTo({ center: c, zoom: Math.max(map.getZoom(), e.point ? 12 : 6), duration: 900 });
   if (map.getLayer('ov-route-hover')) map.setFilter('ov-route-hover', ['in', ['get', 'key'], ['literal', encounterKeys(e)]]);
 }
 
-/** "At the same time here" for a place popup. */
-function encountersHere(map: MapLibre, slug: string) {
-  const here = (encountersOf.get(map) ?? []).filter((e) => e.place.slug === slug);
+/** "At the same time here" for a popup: a city's (all of them) or a venue's (only those who could have met there). */
+function encountersHere(map: MapLibre, slug: string, venueKey: string | null = null) {
+  const here = (encountersOf.get(map) ?? []).filter((e) => (venueKey ? !!e.venue && `${e.venue.type}/${e.venue.slug}` === venueKey : e.place.slug === slug));
   return here.length
     ? html`<div class="popup-encounters"><div class="popup-subhead">At the same time here</div>
         <ul class="popup-list encounters-list">${here.map((e) => encounterLine(e, { withPlace: false }))}</ul></div>`
     : '';
+}
+
+/** An entry's own location (an institution's building, where an immovable work stands): outline or point. */
+export function showOwnSite(map: MapLibre, geometry: GeoJSON.Geometry, name: string, fitToIt: boolean) {
+  whenReady(map, () => {
+    setData(map, 'own-site', { type: 'FeatureCollection', features: [{ type: 'Feature', geometry, properties: { name } }] });
+    const isArea: ExpressionSpecification = ['in', ['geometry-type'], ['literal', ['Polygon', 'MultiPolygon']]];
+    map.addLayer({ id: 'own-site-area', type: 'fill', source: 'own-site', filter: isArea, paint: { 'fill-color': COLORS.site, 'fill-opacity': 0.25 } });
+    map.addLayer({ id: 'own-site-line', type: 'line', source: 'own-site', filter: isArea, paint: { 'line-color': COLORS.site, 'line-width': 2 } });
+    map.addLayer({
+      id: 'own-site-point', type: 'circle', source: 'own-site', filter: ['==', ['geometry-type'], 'Point'],
+      paint: { 'circle-radius': 7, 'circle-color': COLORS.site, 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 },
+    });
+    if (!fitToIt) return;
+    const coords: [number, number][] = [];
+    const walk = (c: unknown): void => { if (typeof (c as number[])[0] === 'number') coords.push(c as [number, number]); else (c as unknown[]).forEach(walk); };
+    if ('coordinates' in geometry) walk(geometry.coordinates);
+    fit(map, coords, 15);
+  });
+}
+
+// ---- museums and sites: institutions and immovable artworks with an exact location ---------------
+
+const SITE_LAYERS = ['sites-area', 'sites-outline', 'sites-points'];
+
+/** Institutions (squares) and immovable artworks (outline where they stand, else a point); stays under the overlays. */
+export function showSites(map: MapLibre, fc: SitesMap, visible = true) {
+  whenReady(map, () => {
+    setData(map, 'sites', fc as unknown as GeoJSON.FeatureCollection);
+    if (!map.getLayer('sites-points')) {
+      const isArea: ExpressionSpecification = ['in', ['geometry-type'], ['literal', ['Polygon', 'MultiPolygon']]];
+      map.addLayer({ id: 'sites-area', type: 'fill', source: 'sites', filter: isArea, paint: { 'fill-color': COLORS.site, 'fill-opacity': 0.18 } });
+      map.addLayer({ id: 'sites-outline', type: 'line', source: 'sites', filter: isArea, paint: { 'line-color': COLORS.site, 'line-width': 1.5 } });
+      map.addLayer({
+        id: 'sites-points', type: 'circle', source: 'sites', filter: ['==', ['geometry-type'], 'Point'],
+        paint: {
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 3, 12, 7], 'circle-color': COLORS.site,
+          'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5,
+        },
+      });
+      popupOnClick(map, SITE_LAYERS, (features) => {
+        const p = (features ?? [])[0]?.properties as unknown as SiteProps & { place: string };
+        const place = prop<{ slug: string; name: string } | null>(p.place ?? null);
+        return html`<div class="popup-row"><strong>${link(p.type, p.slug, p.name)}</strong> <span class="muted">${p.kind ?? (p.type === 'artwork' ? 'building or site' : 'institution')}</span>
+          ${p.address ? html`<div>${p.address}</div>` : ''}${place ? html`<div class="muted">${link('place', place.slug, place.name)}</div>` : ''}</div>`;
+      }, ['places-circles', 'presence-circles', 'sel-presence', 'sel-association']);
+    }
+    for (const id of SITE_LAYERS) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');
+  });
 }
 
 // ---- several chosen entities, one colour each -----------------------------------------------------
@@ -548,7 +616,7 @@ export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
       const period = prop<{ label: string } | null>(p.period);
       return html`<div class="popup-row">
         <i class="dot" style="background:${p.color}"></i> <a href="${href(entity.type, entity.slug)}">${entity.name}</a>
-        ${stopLabel(p)}${p.label} <a href="${href('place', place.slug)}">${place.name}</a>${period ? html` · ${period.label}` : ''}
+        ${stopLabel(p)}${p.label} ${venueLink(p)}<a href="${href('place', place.slug)}">${place.name}</a>${period ? html` · ${period.label}` : ''}
         ${p.note ? html`<br><em>${p.note}</em>` : ''}
         ${p.layer === 'association' ? html`<br><span class="tag tag-association">association, not travel</span>` : ''}
       </div>`;

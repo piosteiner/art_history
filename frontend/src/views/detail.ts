@@ -7,7 +7,7 @@ import {
   countryLink, countryName, creatorsOf, dateLabel, displayName, impliedEnd, personDates, personWhat, ROLE_LABEL, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
   wireImageFallbacks, wireLightbox, type Html,
 } from '../html';
-import { COLORS, createMap, showEntity, showPoint } from '../map';
+import { COLORS, createMap, showEntity, showOwnSite, showPoint } from '../map';
 import type {
   Artwork, ArtworkSummary, Category, Country, DetailByPlural, Dimensions, Entity, EntryRef, Image, KindRef, PartDimensions, Plural, PolityLink, ProvenanceStep, Relationship,
 } from '../types';
@@ -17,7 +17,7 @@ import { wireTextLinks } from '../glossary';
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
 const CATEGORY_ORDER: Category[] = [
-  'glossary', 'presence', 'association', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance',
+  'glossary', 'presence', 'association', 'architecture', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance',
 ];
 const CATEGORY_LABEL: Record<string, string> = {
   presence: 'Places (physically there)',
@@ -31,6 +31,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   provenance: 'Provenance',
   polity: 'States and nationality',
   glossary: 'Related terms',
+  architecture: 'Buildings',
 };
 
 /**
@@ -184,6 +185,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
         title: e.name, subtitle: [e.kind, e.place?.name].filter(Boolean).join(' · '), text: e.description_html, images: e.images,
         facts: [
           ['Founded', dateLabel(e.founded)],
+          ['Address', e.address],
           ['Location', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country ? html`, ${countryLink(e.country)}` : ''}` : null],
           ...(e.polities.some((p) => p.relationship === 'located_in_polity') ? polityFacts(e, 'located_in_polity', 'Historically in', '') : []),
           ['Website', e.website_url ? html`<a href="${e.website_url}" target="_blank" rel="noopener">${e.website_url.replace(/^https?:\/\/(www\.)?/, '')}</a>` : null],
@@ -328,6 +330,13 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         .then((fc) => {
           if (!current()) return;
           const stops = fc.features.filter((f) => f.geometry.type === 'Point');
+          // an institution's own point, or where an immovable artwork stands
+          const own = e.type === 'institution' ? e.location ?? null : e.type === 'artwork' ? e.area ?? e.location ?? null : null;
+          if (own) showOwnSite(map, own, v.title, !stops.length);
+          if (!stops.length && own) {
+            render(legend, html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>`);
+            return;
+          }
           if (!stops.length) {
             main.querySelector('.detail-side')?.remove();
             map.remove();
@@ -341,6 +350,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             ${layers.has('presence') ? html`<span><i class="dot" style="background:${COLORS.presence}"></i>was there</span>` : ''}
             ${fc.features.some((f) => f.properties.layer === 'route') ? html`<span><i class="line" style="background:${COLORS.route}"></i>route, in date order</span>` : ''}
             ${layers.has('association') ? html`<span><i class="ring" style="border-color:${COLORS.association}"></i>association (not travel)</span>` : ''}
+            ${own ? html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>` : ''}
             ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}`);
           legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {
             const btn = ev.currentTarget as HTMLButtonElement;

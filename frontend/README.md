@@ -97,6 +97,13 @@ and its romanization below the title; cards show the original small. Search in p
 also matches all `names`, readings and the API's `search_text` (shown as "Other names: …"); name sorts use `sort_key`
 (artists: `sort_name` first). Nothing is romanized in the frontend.
 
+## Exact locations (API migration 034)
+Stays at an institution or an immovable artwork carry `institution` / `artwork` and `place` = the city: routes and
+time-window circles use the venue's own point (one circle per venue), popups name it. Crossed paths at the same venue =
+"could have met there" (listed first, halo at the venue), same city only = "in the same city at the same time".
+`/v1/map/sites` is the switchable "Museums and sites" layer on the start map; institution pages show the address and
+their own point, immovable artworks where they stand; `houses` appears as "Buildings" (also a graph filter).
+
 ## Crossed paths
 `src/encounters.ts` finds pairs at the same place with overlapping dates in the dated presence links (left out: a
 work with its own artist, two works). Shown under the explore map (`src/crossings.ts`; respects the pickers and the
