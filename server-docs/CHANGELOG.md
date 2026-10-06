@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Several creators per artwork (migration 028)
+- **What:** relationship type `co_creator` (artwork → artist, category `collaboration`; label = their part, certainty =
+  how sure); SQL function `artwork_creators(id)`; API: artworks have `creators` `[{slug, name, main, role, certainty}]`
+  (list + detail), an artist's `artworks` include co-created ones (`co_creator`, `role`), `?creator=` matches
+  co-creators too (list filters may now use their value more than once). Wikidata: creators (P170) after the first
+  are suggested as co-creators. `creator_id` stays the main creator. Docs: `backend/docs/api.md`, `data-model.md`.
+- **Why:** owner: collaborations (Rubens + Brueghel) are rare but exist; relationships reuse the admin form, history,
+  YAML and graph without new code.
+- **Frontend to-do** (not done here):
+  1. Artwork detail/subtitle: with a creator *and* an `attribution_label`, show the label linked to the creator
+     ("Workshop of Rubens" → Rubens page); at the moment the label only appears when there is no creator.
+  2. Show all of `creators` (e.g. "Rubens and Jan Brueghel the Elder (landscape)"; mark `certainty` ≠ attested);
+     on artist pages mark co-created works (`co_creator: true`, `role`).
+- **Tested:** schema smoke test (co-creator section), unit 24, e2e 67 passing (new `cocreators.spec.js`).
+- **Revert:** redeploy the previous commit, then
+  `DELETE FROM relationships WHERE relationship_type = 'co_creator'; DELETE FROM relationship_types WHERE code = 'co_creator';
+  DROP FUNCTION artwork_creators(bigint); DELETE FROM schema_migrations WHERE name = '028_co_creators.sql';` (as owner).
+
 ### Admin: find freely licensed images (Commons, Met, Art Institute of Chicago, Cleveland)
 - **What:** `backend/src/admin/imagesearch.js` + page `/<type>/<slug>/images/find` ("Find images…" in the Images
   section): searches Wikimedia Commons files (only with a licence statement), the Met (v1.1 search — `/v1/search` was

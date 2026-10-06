@@ -27,7 +27,7 @@ with a 301 to `/v1/people…`, also under `/map/` and `/graph/`.)
 | `q` | name/title search: accent-insensitive, substring or fuzzy (`durer`, `hokusia`) |
 | `from`, `to` | years; entities whose lifespan / creation / period overlaps (not for places) |
 | `limit` (1–500, default 100), `offset` | paging; the response has `total` |
-| artworks: `creator`, `institution` (slugs), `kind` · places: `kind`, `country` (ISO code) · movements, institutions: `kind` | filters |
+| artworks: `creator` (main creator or co-creator), `institution` (slugs), `kind` · places: `kind`, `country` (ISO code) · movements, institutions: `kind` | filters |
 
 → `{"data": [...], "total": 4, "limit": 100, "offset": 0}`
 
@@ -36,6 +36,14 @@ Artworks also have `materials` (list; filter `?material=bronze`) and `dimensions
 a sculpture — has `width_cm: null` and `label: "50 cm (height)"`; `null` without data). `dimensions` are the work itself;
 `other_dimensions` lists further measured parts in the same shape plus `part`:
 `[{part: "mount", height_cm: 180, width_cm: 95.5, depth_cm: null, label: "180 × 95.5 cm"}]` (empty list if none).
+
+Artworks: who made it. `creator` `{slug, name}` is the main creator (`null` if unknown). **`creators`** lists all of
+them, the main one first: `[{slug, name, main, role, certainty}]`. Further creators (rare: Rubens painted the figures,
+Jan Brueghel the landscape) are relationships `co_creator` (artwork → artist, labels "co-creator" / "co-creator of",
+category `collaboration`, in the graph); `role` is that relationship's note ("landscape"), `certainty` attested ·
+probable · possible · disputed. `attribution_label` (detail only) is free text: "Workshop of Rubens", "Attributed to …",
+"Anonymous". With a creator it qualifies the creator; show it **instead of** the name, linked to the creator
+("Workshop of Rubens" → Rubens). Without a creator, show it on its own.
 
 Artworks, artists and institutions carry an `image_url`: the main image (https, hotlinked — often Wikimedia Commons;
 for a smaller version replace `/NNNNpx-` in a Commons thumbnail URL with a standard width such as `/250px-`), `null`
@@ -104,7 +112,7 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - `relationships`: every link in both directions, from this entity's point of view —
   `{type, direction: outgoing|incoming|mutual, label, category, is_physical_presence, entity: {type, slug, name, period}, period, note, certainty, notes_html}`.
   (Van Gogh: "lived in" Arles; Arles: "home of" Van Gogh.)
-- artist: `artworks` · institution: `artworks`, `place` · artwork: `creator`, `institution` ·
+- artist: `artworks` (including co-created ones: `co_creator: true`, `role`) · institution: `artworks`, `place` · artwork: `creator`, `creators`, `attribution_label`, `institution` ·
   place: `ancestors` (Arles → France), `children`, `institutions` · movement: `ancestors`, `children`.
 
 ## Search

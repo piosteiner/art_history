@@ -75,7 +75,7 @@ const ENTITIES = {
     type: 'artwork', table: 'artworks', alt: 'alt_titles', name: 'title', period: 't.created',
     list: `range_json(t.created, t.created_label) AS created, t.kind, ${mainImage('artwork_id')},
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
-           ${countryCols('artwork')}`,
+           artwork_creators(t.id) AS creators, ${countryCols('artwork')}`,
     detail: `t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
              t.inventory_number, ${allImages('artwork_id')}, t.description_md,
              t.materials,
@@ -90,11 +90,15 @@ const ENTITIES = {
                                 || CASE WHEN jsonb_array_length(e->'cm') = 1 THEN ' (height)' ELSE '' END) ORDER BY o), '[]'::jsonb)
                 FROM jsonb_array_elements(t.other_dimensions) WITH ORDINALITY AS d(e, o)) AS other_dimensions,
              (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
+             artwork_creators(t.id) AS creators,  -- main creator + co-creators (migration 028)
              (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = t.current_institution_id) AS institution,
              ${countryCols('artwork')}`,
     md: ['description_md'],
     filters: {
-      creator: "t.creator_id = entity_id('artist', $)",
+      // main creator or co-creator (migration 028)
+      creator: `(t.creator_id = entity_id('artist', $) OR EXISTS (SELECT 1 FROM relationships r
+                 WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = t.id
+                   AND r.object_type = 'artist' AND r.object_id = entity_id('artist', $)))`,
       institution: "t.current_institution_id = entity_id('institution', $)",
       kind: 't.kind = $',
       material: 't.materials @> ARRAY[$]::text[]',  // GIN index artworks_materials_gin
@@ -203,8 +207,14 @@ const ancestorsSql = (table) => `
 const EXTRAS = {
   artist: async (id) => ({
     artworks: (await apiPool.query(`
-      SELECT slug, title, range_json(created, created_label) AS created, kind
-      FROM artworks WHERE creator_id = $1 ORDER BY lower(created) NULLS LAST, title`, [id])).rows,
+      SELECT w.slug, w.title, range_json(w.created, w.created_label) AS created, w.kind,
+             co.role IS NOT NULL AS co_creator, co.label AS role
+      FROM artworks w
+      LEFT JOIN LATERAL (SELECT 'co' AS role, r.label FROM relationships r
+                          WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = w.id
+                            AND r.object_type = 'artist' AND r.object_id = $1 LIMIT 1) co ON w.creator_id IS DISTINCT FROM $1
+      WHERE w.creator_id = $1 OR co.role IS NOT NULL
+      ORDER BY lower(w.created) NULLS LAST, w.title`, [id])).rows,
   }),
   institution: async (id) => ({
     artworks: (await apiPool.query(`
@@ -277,7 +287,8 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       const v = req.query[key];
       if (v === undefined || v === '') continue;
       if (typeof v !== 'string' || v.length > 100) throw badRequest(`${key}: invalid value`);
-      where.push(sql.replace('$', () => p(v)));
+      const ph = p(v);  // one parameter, used wherever the filter says $
+      where.push(sql.replaceAll('$', () => ph));
     }
 
     const { rows } = await apiPool.query(`

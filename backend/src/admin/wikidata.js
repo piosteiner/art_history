@@ -248,6 +248,12 @@ function relsFor(t, e) {
       if (!out.some((r) => r.type === type && r.qid === qid)) out.push({ type, prop, qid, period: p ? p.value : null, period_label: p ? p.label : null });
     }
   }
+  // several creators (P170): the first becomes the creator field, the others co-creators (migration 028)
+  if (t.type === 'artwork') {
+    for (const qid of itemIds(e, 'P170').slice(1)) {
+      if (!out.some((r) => r.type === 'co_creator' && r.qid === qid)) out.push({ type: 'co_creator', prop: 'P170', qid, period: null, period_label: null });
+    }
+  }
   return out;
 }
 

@@ -132,6 +132,17 @@ Per arc a partial index `(…_id, position)` serves "the images of this entry, i
 builds the list with `jsonb_agg(jsonb_build_object(…) ORDER BY position, id)`. The former single-image columns
 (014 and earlier) were moved here as position 0 and dropped.
 
+## Several creators (migration 028)
+`artworks.creator_id` is the **main** creator: a real foreign key, used by the quality checks (dated outside the
+creator's life) and the Wikidata comparison. The rare further creators are relationships `co_creator` (artwork → artist)
+rather than a separate join table `artwork_creators(artwork_id, artist_id, role)`. That table would treat all creators
+alike and have real foreign keys, but every part of the system that handles relationships (admin form, history,
+YAML, graph) would need new code for it. A relationship already carries what a co-creator needs: `label` = their part
+("landscape"), `certainty` = how sure the attribution is, `period` if they worked at different times.
+`artwork_creators(id)` (SQL function, `STABLE`) joins both sources into one ordered `jsonb` list for the API. The
+`?creator=` filter is `creator_id = x OR EXISTS (co_creator relationship)`. Free-text qualifiers ("Workshop of …",
+"Attributed to …") stay in `attribution_label`.
+
 ## Polities and countries (migrations 018, 019)
 "Which country is it in today?" and "which polity did it belong to?" are kept apart:
 - **Today** is derived, never entered: `place_country(place_id)` walks up `parent_id` with a recursive CTE that stops at

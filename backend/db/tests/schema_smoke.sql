@@ -176,6 +176,14 @@ INSERT INTO relationships (subject_type, subject_id, relationship_type, object_t
 VALUES ('artist', entity_id('artist', 'sample-painter'), 'nationality', 'polity', entity_id('polity', 'ussr'), year_range(1900, 1905));
 SELECT check_id, detail FROM quality_issues WHERE check_id = 'outside_polity_period';  -- USSR in 1900: flagged
 
+\echo '== several creators (028): main creator first, then co-creators with their part:'
+UPDATE artworks SET creator_id = entity_id('artist', 'paul-gauguin') WHERE slug = 'sample-bronze';
+INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, label, certainty)
+VALUES ('artwork', entity_id('artwork', 'sample-bronze'), 'co_creator', 'artist', entity_id('artist', 'vincent-van-gogh'), 'base', 'probable');
+SELECT jsonb_path_query_array(artwork_creators(entity_id('artwork', 'sample-bronze')), '$[*].slug')
+       = '["paul-gauguin", "vincent-van-gogh"]' AS main_first,
+       artwork_creators(entity_id('artwork', 'sample-bronze')) -> 1 ->> 'role' = 'base' AS role_from_label;
+
 \echo '== delete Van Gogh → relationships cleaned up in both directions:'
 SELECT count(*) AS edges_before FROM relationships
 WHERE (subject_type = 'artist' AND subject_id = entity_id('artist', 'vincent-van-gogh')) OR (object_type = 'artist' AND object_id = entity_id('artist', 'vincent-van-gogh'));
