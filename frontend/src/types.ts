@@ -1,9 +1,9 @@
 // Response shapes of https://api.arthistory.piogino.ch/v1 (reference: backend/docs/api.md).
 
 /** Plural URL segment of an entity type (`/v1/artists/…`). */
-export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities' | 'glossary';
+export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities' | 'glossary' | 'bibliography';
 /** Singular `type` field inside responses. */
-export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity' | 'term';
+export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity' | 'term' | 'source';
 
 /** Every date is one of these or null. `to` is inclusive; open ends are null; BCE years are negative. */
 export interface DateRange {
@@ -74,9 +74,14 @@ interface DetailBase {
   relationships: Relationship[];
   /** The glossary terms this entry's texts link (<a class="glossary-link" data-term=…>), for popovers. */
   glossary?: Record<string, GlossaryHint>;
+  /** The sources this entry's texts cite in footnotes (a.source-link[data-source]). */
+  bibliography?: Record<string, SourceHint>;
   /** Entries whose texts link this one (every type except terms, which have `used_in`). */
   mentioned_in?: EntryRef[];
 }
+
+/** A cited source, for popovers on short references: siglum ("Busch 1993") and the full citation (HTML, italic titles). */
+export interface SourceHint { siglum: string; citation: string }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
 export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'other';
@@ -164,6 +169,13 @@ export interface PersonItem extends Located, Named {
   slug: string; name: string; kind: string | null; occupations: string[];
   birth: DateRange | null; death: DateRange | null; active: DateRange | null; // active: groups, or when the lifespan is unknown
   roles: PersonRole[]; birth_place: BirthPlace | null;
+}
+export type ReadingStatus = 'to_read' | 'reading' | 'read';
+/** A source of the bibliography (formatted after the KHIST UZH guide). */
+export interface SourceItem extends Named {
+  slug: string; name: string; siglum: string; citation: string; kind: string | null; subtitle: string | null;
+  authors: string[] | null; year: string | number | null; reading_status: ReadingStatus | null; read_on: DateRange | null;
+  primary_source: boolean | null;
 }
 export interface TermItem extends Named { slug: string; name: string; category: TermCategory; definition: string | null; image_url: string | null }
 export interface PolityItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[] }
@@ -271,15 +283,21 @@ export interface Term extends DetailBase, Named {
   used_in: EntryRef[];
 }
 
-export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Term;
+export interface Source extends DetailBase, Named, Omit<SourceItem, 'slug'> {
+  type: 'source';
+  description_html: string | null; // the notes
+  url?: string | null; isbn?: string | null; doi?: string | null;
+}
+
+export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Term | Source;
 
 export interface ItemByPlural {
   artists: ArtistItem; artworks: ArtworkItem; places: PlaceItem;
-  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem; glossary: TermItem;
+  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem; glossary: TermItem; bibliography: SourceItem;
 }
 export interface DetailByPlural {
   artists: Artist; artworks: Artwork; places: Place;
-  movements: Movement; institutions: Institution; people: Person; polities: Polity; glossary: Term;
+  movements: Movement; institutions: Institution; people: Person; polities: Polity; glossary: Term; bibliography: Source;
 }
 
 // ---- search, vocabulary --------------------------------------------------------------------------

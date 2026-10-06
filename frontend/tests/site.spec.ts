@@ -503,3 +503,60 @@ test('institution page: address and its own point', async ({ page }) => {
   await expect(page.locator('.facts')).toContainText('Heimplatz 1, 8001 Zürich');
   await expect(page.locator('#legend')).toContainText('its building');
 });
+
+// ---- bibliography and footnotes (the live bibliography may still be empty: the tests bring two sample sources) ----
+const BUSCH = { slug: 'busch-1993', siglum: 'Busch 1993', citation: 'Werner Busch, <i>Das sentimentalische Bild</i>, München 1993.' };
+const KAT = { slug: 'kat-paris-2007', siglum: 'Kat. Paris 2007', citation: '<i>Hokusai</i>, hg. von X, Ausst.-Kat. Paris 2007.' };
+async function sampleBibliography(page: Page) {
+  const item = (s: typeof BUSCH, status: string, year: number) => ({ ...s, name: s.siglum, kind: 'monograph', subtitle: null, authors: ['Werner Busch'], year,
+    reading_status: status, read_on: null, primary_source: false, names: [], sort_key: s.siglum, search_text: '' });
+  await page.route(/\/v1\/bibliography\?/, (r) => r.fulfill({ json: { data: [item(BUSCH, 'read', 1993), item(KAT, 'to_read', 2007)], total: 2, limit: 500, offset: 0,
+    stats: { total: 2, read: 1, reading: 0, to_read: 1 } } }));
+  await page.route(/\/v1\/bibliography\/busch-1993$/, (r) => r.fulfill({ json: { type: 'source', ...item(BUSCH, 'read', 1993), description_html: '<p>Read for the chapter on Romanticism.</p>',
+    wikidata_id: null, metadata: {}, updated_at: '', relationships: [], glossary: {}, bibliography: {},
+    mentioned_in: [{ type: 'artwork', slug: 'the-great-wave-off-kanagawa', name: 'The Great Wave off Kanagawa' }] } }));
+  // the Great Wave's description with a footnote citing Busch, as the backend renders it
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.description_html = '<p>The wave became an icon.<sup class="fn-ref" id="nabc123-r1"><a href="#nabc123-n1">1</a></sup></p>'
+      + '<section class="footnotes"><ol class="footnote-list"><li id="nabc123-n1"><a href="/bibliography/busch-1993" class="source-link" data-source="busch-1993">Busch 1993</a>, S. 12. '
+      + '<a href="#nabc123-r1" class="fn-back" title="back to the text">↩</a></li></ol></section>'
+      + `<section class="bibliography"><h4>Literatur</h4><ul class="source-list"><li id="nabc123-s-busch-1993"><span class="siglum">Busch 1993:</span> ${BUSCH.citation}</li></ul></section>`;
+    body.bibliography = { 'busch-1993': { siglum: BUSCH.siglum, citation: BUSCH.citation } };
+    await route.fulfill({ response: res, json: body });
+  });
+}
+
+test('bibliography: A–Z by short reference with reading statistics and status filter; source page', async ({ page }) => {
+  await sampleBibliography(page);
+  await page.goto('/bibliography');
+  await expect(page.locator('#stats')).toHaveText('1 read · 0 reading · 1 to read');
+  await expect(page.locator('.card')).toHaveCount(2);
+  await page.locator('#categories button', { hasText: 'to read' }).click();
+  await expect(page).toHaveURL(/\/bibliography\?status=to_read$/);
+  await expect(page.locator('.card')).toHaveCount(1);
+  await page.locator('#categories button', { hasText: 'All' }).click();
+  await page.locator('.card-link', { hasText: 'Busch 1993' }).click();
+  await expect(page.locator('h1')).toHaveText('Busch 1993');
+  await expect(page.locator('.lead.citation i')).toHaveText('Das sentimentalische Bild'); // italic title
+  await expect(page.locator('main')).toContainText('Cited in');
+  await expect(page.locator('main a', { hasText: 'The Great Wave off Kanagawa' })).toBeVisible();
+});
+
+test('footnotes in texts: popovers for the note and the source; the jump keeps the page', async ({ page }) => {
+  await sampleBibliography(page);
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await page.locator('.prose sup.fn-ref a').hover();
+  await expect(page.locator('.popover-note')).toContainText('Busch 1993, S. 12');
+  await page.locator('.prose .footnote-list a.source-link').hover();
+  await expect(page.locator('.popover-source i')).toHaveText('Das sentimentalische Bild');
+  // clicking the number jumps to the note within the page (no re-render)
+  await page.evaluate(() => document.querySelector('h1')!.setAttribute('data-marker', '1')); // a re-render would replace it
+  await page.locator('.prose sup.fn-ref a').click();
+  await expect(page).toHaveURL(/#nabc123-n1$/);
+  await page.waitForTimeout(500);
+  await expect(page.locator('h1')).toHaveAttribute('data-marker', '1');
+  await expect(page.locator('h1')).toHaveText('The Great Wave off Kanagawa');
+  await expect(page.locator('#nabc123-n1')).toBeVisible();
+});

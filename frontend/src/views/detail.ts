@@ -13,6 +13,7 @@ import type {
 } from '../types';
 import { guard, loading, showError } from './common';
 import { wireTextLinks } from '../glossary';
+import { STATUS_LABEL } from '../catalog';
 
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
@@ -123,7 +124,7 @@ function shownElsewhere(e: Entity, r: Relationship) {
   return e.type === 'artwork' && !!r.derived && (r.type === 'owned_by' || r.type === 'kept_in');
 }
 
-function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; text: string | null; images: Image[]; extra: Html[]; lead?: string | null } {
+function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; text: string | null; images: Image[]; extra: Html[]; lead?: string | null; leadHtml?: string | null } {
   switch (e.type) {
     case 'artist':
       return {
@@ -208,6 +209,20 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
         ],
         extra: [],
       };
+    case 'source':
+      return {
+        title: e.siglum || e.name, subtitle: ['Bibliography', e.kind, e.primary_source ? 'primary source' : null].filter(Boolean).join(' · '),
+        leadHtml: e.citation, text: e.description_html, images: [],
+        facts: [
+          ['Authors', e.authors?.length ? e.authors.join(', ') : null],
+          ['Year', e.year != null ? String(e.year) : null],
+          ['Reading status', e.reading_status ? html`${STATUS_LABEL[e.reading_status]}${e.read_on ? html` <span class="muted">(${e.read_on.label})</span>` : ''}` : null],
+          ['ISBN', e.isbn],
+          ['DOI', e.doi ? html`<a href="https://doi.org/${e.doi}" target="_blank" rel="noopener">${e.doi}</a>` : null],
+          ['Online', e.url ? html`<a href="${e.url}" target="_blank" rel="noopener">${e.url.replace(/^https?:\/\/(www\.)?/, '')}</a>` : null],
+        ],
+        extra: [],
+      };
     case 'term':
       return {
         title: e.name, subtitle: `Glossary · ${e.category}`, lead: e.definition, text: e.description_html, images: e.images,
@@ -284,7 +299,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const v = factsFor(e);
       document.title = `${v.title} · Art History`;
       const facts = v.facts.filter(([, value]) => value);
-      const hasMap = e.type === 'place' ? !!e.location : e.type !== 'term';
+      const hasMap = e.type === 'place' ? !!e.location : e.type !== 'term' && e.type !== 'source';
       render(main, html`<article class="page detail detail-${e.type}">
         <p class="crumbs"><a href="/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
         <h1${langAttr(displayName(e).lang)}>${displayName(e).ruby ? trusted(displayName(e).ruby) : v.title}</h1>
@@ -292,19 +307,22 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
         <p class="detail-actions">
           ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
-          ${e.type !== 'place' && e.type !== 'term' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
+          ${e.type !== 'place' && e.type !== 'term' && e.type !== 'source' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
         </p>
         <div class="detail-grid">
           <div class="detail-main">
             ${v.images.length ? html`<div class="gallery">${v.images.map((img) => figure(img, v.title))}</div>` : ''}
             ${v.lead ? html`<p class="lead">${v.lead}</p>` : ''}
+            ${v.leadHtml ? html`<p class="lead citation">${trusted(v.leadHtml)}</p>` : ''}
             ${v.text ? html`<div class="prose">${trusted(v.text)}</div>` : ''}
             ${facts.length ? html`<dl class="facts">${facts.map(([k, value]) => html`<dt>${k}</dt><dd>${value}</dd>`)}</dl>` : ''}
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
             <section id="crossed" class="crossed" hidden></section>
             ${relationshipSections(e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r)))}
-            ${backlinks('Mentioned in', 'Entries whose texts link to this one.', e.mentioned_in)}
+            ${e.type === 'source'
+              ? backlinks('Cited in', 'Entries whose texts cite this source.', e.mentioned_in)
+              : backlinks('Mentioned in', 'Entries whose texts link to this one.', e.mentioned_in)}
           </div>
           ${hasMap ? html`<aside class="detail-side">
             <div class="map map-small" id="map"></div>
@@ -314,7 +332,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       </article>`);
       wireImageFallbacks(main);
       wireLightbox(main);
-      wireTextLinks(main, e.glossary);
+      wireTextLinks(main, e.glossary, e.bibliography);
       if (['artist', 'person', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
       if (!hasMap) return;
 

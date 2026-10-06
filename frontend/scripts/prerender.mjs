@@ -10,9 +10,9 @@ import { fileURLToPath } from 'node:url';
 const SITE = 'https://arthistory.piogino.ch';
 const API = process.env.API_BASE ?? 'https://api.arthistory.piogino.ch/v1';
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
-const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places', 'glossary'];
-const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', institutions: 'Institution', people: 'Person', places: 'Place', glossary: 'Term' };
-const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', institutions: 'Institutions', people: 'People', places: 'Places', glossary: 'Glossary' };
+const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
+const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', institutions: 'Institution', people: 'Person', places: 'Place', glossary: 'Term', bibliography: 'Source' };
+const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', institutions: 'Institutions', people: 'People', places: 'Places', glossary: 'Glossary', bibliography: 'Bibliography' };
 const SITE_DESCRIPTION = 'Artists, artworks, movements and museums on a map, a timeline and an influence graph.';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -67,7 +67,7 @@ const dateSpan = (a, b) => (a || b ? `${a?.label ?? '?'} – ${b?.label ?? '?'}`
 
 /** Title, one-line summary and image for an entry (from its detail). */
 function describe(plural, e) {
-  const name = e.name ?? e.title;
+  const name = e.siglum ?? e.name ?? e.title; // a source is known by its short reference
   const country = e.country?.name ?? null;
   const facts = {
     artists: [dateSpan(e.birth, e.death), e.birth_place ? `born in ${e.birth_place.name}${country && country !== e.birth_place.name ? `, ${country}` : ''}` : ''],
@@ -80,8 +80,9 @@ function describe(plural, e) {
     people: [e.birth || e.death ? dateSpan(e.birth, e.death) : e.active ? `active ${e.active.label}` : '', (e.occupations ?? []).join(', '), (e.roles ?? []).join(', ')],
     places: [e.kind, e.ancestors?.length ? e.ancestors.map((a) => a.name).reverse().join(', ') : ''],
     glossary: [e.category],
+    bibliography: [e.kind, e.year],
   }[plural].filter(Boolean);
-  const long = [e.definition, text(e.biography_html ?? e.description_html ?? e.notes_html)].filter(Boolean).join(' ');
+  const long = [e.definition, text(e.citation), text(e.biography_html ?? e.description_html ?? e.notes_html)].filter(Boolean).join(' ');
   const summary = `${TYPE_LABEL[plural]}${facts.length ? ` · ${facts.join(' · ')}` : ''}`;
   return { name, summary, description: clip(long ? `${summary}. ${long}` : summary), long, image: e.images?.[0] ?? null };
 }

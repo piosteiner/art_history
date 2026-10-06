@@ -145,6 +145,8 @@ const byText = (v: string | null | undefined, unknown: string): SortValue =>
 
 // ---- per type --------------------------------------------------------------------------------
 
+export const STATUS_LABEL: Record<string, string> = { read: 'read', reading: 'reading', to_read: 'to read' };
+
 /** Fields without text are dropped, so builders can list them unconditionally. */
 const fields = (...list: [string, string | null | undefined | false][]): Field[] =>
   list.filter(([, t]) => t).map(([label, text]) => ({ label, text: text as string }));
@@ -290,6 +292,23 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
         sorts: { name: byName(i.name), founded: byYear(i.founded), kind: byText(i.kind, 'Other'), country: l.country },
       };
     },
+  },
+  bibliography: {
+    type: 'source',
+    sorts: [
+      { id: 'siglum', label: 'Short reference A–Z' },
+      { id: 'year', label: 'Year' },
+      { id: 'status', label: 'Reading status' },
+      { id: 'kind', label: 'Kind' },
+    ],
+    build: (s) => ({
+      slug: s.slug, name: s.siglum || s.name, meta: [s.kind, s.year].filter(Boolean).join(' · '),
+      fields: fields(['Citation', s.citation.replace(/<[^>]+>/g, '')], ['Authors', (s.authors ?? []).join(', ')]),
+      sorts: {
+        siglum: byName(s.siglum || s.name), year: { value: Number(String(s.year ?? '').match(/-?\d+/)?.[0] ?? NaN) || null, heading: s.year ? String(s.year) : 'Year unknown' },
+        status: byText(STATUS_LABEL[s.reading_status ?? ''] ?? null, 'Not recorded'), kind: byText(s.kind, 'Other'),
+      },
+    }),
   },
   glossary: {
     type: 'term',

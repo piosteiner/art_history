@@ -90,6 +90,12 @@ its backlinks (`mentioned_in`) as "Mentioned in", a term's as "Used in".
   relationships aren't repeated below it; on owners' pages they carry the same tag. In the graph, implied edges are
   dashed and faded. The artwork's map route includes its `kept_in` stops without frontend changes.
 
+## Bibliography and footnotes
+`/bibliography` (A–Z by short reference, reading statistics, filter by reading status `?status=`) and `/bibliography/<slug>`
+(citation, notes, "Cited in"). In any `*_html`: footnote numbers `sup.fn-ref` and short references `a.source-link` get popovers
+(the note's text; the citation from the detail's `bibliography` map), `src/glossary.ts`. Footnote jumps (`#…-n1`) only change
+the hash: the router leaves them to the browser (no re-render); targets have `scroll-margin-top` for the sticky header.
+
 ## Names in several languages
 The display name (`name`, artworks `title`) may be the original or a translation: elements showing a name get
 `lang` (`*_lang`, each `names` entry's lang); detail pages add the original (`names` role `original`, with `ruby_html` furigana)

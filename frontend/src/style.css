@@ -475,3 +475,20 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .sites-toggle[hidden] { display: none; }
 :root { --c-architecture: #3b4fa0; }
 .cat-architecture { --cat: var(--c-architecture); }
+
+/* citations: footnotes and source lists at the end of texts (KHIST UZH style), the citation on a source page */
+.prose sup.fn-ref { font-size: .72em; line-height: 0; margin-left: .05em; }
+.prose sup.fn-ref a { text-decoration: none; padding: 0 .1em; }
+.prose [id], .facts [id] { scroll-margin-top: 90px; } /* footnote jumps land below the sticky header */
+.prose section.footnotes { margin-top: 1.4rem; padding-top: .6rem; border-top: 1px solid var(--line); font-size: .88rem; color: var(--muted); }
+.prose .footnote-list { padding-left: 1.4rem; margin: 0; }
+.prose .footnote-list li { margin: .25rem 0; }
+.prose .footnote-list li:target, .prose sup.fn-ref:target { background: var(--mark); border-radius: 3px; }
+.prose a.fn-back { text-decoration: none; margin-left: .2rem; }
+.prose section.bibliography { margin-top: 1rem; font-size: .88rem; }
+.prose section.bibliography h4 { font: 600 .78rem var(--sans); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin: .8rem 0 .3rem; }
+.prose .source-list { list-style: none; padding: 0; margin: 0; }
+.prose .source-list li { margin: .3rem 0; padding-left: 1.4rem; text-indent: -1.4rem; }
+.prose .source-list .siglum { font-weight: 600; }
+.lead.citation { font-family: var(--sans); font-size: 1.02rem; }
+.popover-source .citation, .popover-note p { font-size: .88rem; }

@@ -6,7 +6,7 @@ import type { NameEntry } from '../types';
 const original = (item: unknown) => (item as { names?: NameEntry[] }).names?.find((n) => n.role === 'original');
 import type { ItemByPlural, Plural } from '../types';
 import { guard, showError } from './common';
-import { entries, explain, highlight, matches, queryWords, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
+import { entries, explain, highlight, STATUS_LABEL, matches, queryWords, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
 
 type AnyItem = ItemByPlural[Plural];
 
@@ -47,6 +47,11 @@ function cardParts(plural: Plural, item: AnyItem) {
     case 'people': {
       const p = item as ItemByPlural['people'];
       [name, date, detail] = [p.name, personDates(p), [personWhat(p), countryText(p.country)].filter(Boolean).join(' · ')];
+      break;
+    }
+    case 'bibliography': {
+      const s = item as ItemByPlural['bibliography'];
+      [name, date, detail] = [s.siglum || s.name, s.reading_status ? STATUS_LABEL[s.reading_status] : '', s.citation.replace(/<[^>]+>/g, '')];
       break;
     }
     case 'glossary': {
@@ -90,7 +95,8 @@ export function list(main: HTMLElement, plural: Plural) {
       <input class="filter" type="search" placeholder="Search ${PLURAL_LABEL[plural].toLowerCase()}…" aria-label="Search">
       <label class="list-sort" hidden>Sort <select aria-label="Sort"></select></label>
     </div>
-    <div class="category-filter" id="categories" hidden role="group" aria-label="Category"></div>
+    <p class="muted small" id="stats"></p>
+    <div class="category-filter" id="categories" hidden role="group" aria-label="Filter"></div>
     <p class="muted" id="count"></p>
     <ul class="cards" id="items"></ul>
   </section>`);
@@ -105,29 +111,33 @@ export function list(main: HTMLElement, plural: Plural) {
   let all: Entry<AnyItem>[] = [];
   let similar: Entry<AnyItem>[] = []; // typo-tolerant name matches from the API that the field search missed
   let query = '';
-  // glossary: one category at a time (`?category=technique`); "All" shows every term
-  let category = plural === 'glossary' ? new URLSearchParams(location.search).get('category') : null;
+  // one value of a field at a time: glossary by category (`?category=technique`), bibliography by reading status
+  // (`?status=read`); "All" shows everything
+  const FILTER = ({ glossary: { field: 'category', param: 'category' }, bibliography: { field: 'reading_status', param: 'status' } } as Record<string, { field: string; param: string }>)[plural];
+  const fieldOf = (e: Entry<AnyItem>) => String((e.item as unknown as Record<string, unknown>)[FILTER?.field ?? ''] ?? 'other');
+  const labelOf = (v: string) => (plural === 'bibliography' ? STATUS_LABEL[v] ?? v : v);
+  let category = FILTER ? new URLSearchParams(location.search).get(FILTER.param) : null;
   const categoriesEl = main.querySelector<HTMLElement>('#categories')!;
   function drawCategories() {
     const counts = new Map<string, number>();
-    for (const e of all) { const c = (e.item as { category?: string }).category ?? 'other'; counts.set(c, (counts.get(c) ?? 0) + 1); }
+    for (const e of all) { const c = fieldOf(e); counts.set(c, (counts.get(c) ?? 0) + 1); }
     if (category && !counts.has(category)) category = null;
     categoriesEl.hidden = counts.size < 2 && !category;
     render(categoriesEl, html`<button type="button" data-category="" class="${category ? '' : 'on'}" aria-pressed="${String(!category)}">All <span class="muted">${String(all.length)}</span></button>
-      ${[...counts].sort(([a], [b]) => a.localeCompare(b)).map(([c, n]) => html`<button type="button" data-category="${c}" class="${c === category ? 'on' : ''}" aria-pressed="${String(c === category)}">${c} <span class="muted">${String(n)}</span></button>`)}`);
+      ${[...counts].sort(([a], [b]) => a.localeCompare(b)).map(([c, n]) => html`<button type="button" data-category="${c}" class="${c === category ? 'on' : ''}" aria-pressed="${String(c === category)}">${labelOf(c)} <span class="muted">${String(n)}</span></button>`)}`);
   }
   categoriesEl.addEventListener('click', (ev) => {
     const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-category]');
     if (!b) return;
     category = b.dataset.category || null;
-    history.replaceState(null, '', `/glossary${category ? `?category=${encodeURIComponent(category)}` : ''}`);
+    history.replaceState(null, '', `/${plural}${category ? `?${FILTER!.param}=${encodeURIComponent(category)}` : ''}`);
     drawCategories();
     draw();
   });
 
   function draw() {
     const words = queryWords(query);
-    const pool = category ? all.filter((e) => (e.item as { category?: string }).category === category) : all;
+    const pool = category ? all.filter((e) => fieldOf(e) === category) : all;
     const hits = query ? pool.filter((e) => matches(e, query)) : pool;
     let last = '';
     const row = (e: Entry<AnyItem>) => {
@@ -173,7 +183,9 @@ export function list(main: HTMLElement, plural: Plural) {
     .then((res) => {
       if (!current()) return;
       all = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
-      if (plural === 'glossary') drawCategories();
+      if (FILTER) drawCategories();
+      const stats = (res as unknown as { stats?: { total: number; read: number; reading: number; to_read: number } }).stats;
+      if (stats && stats.total) render(main.querySelector('#stats')!, html`${String(stats.read)} read · ${String(stats.reading)} reading · ${String(stats.to_read)} to read`);
       const options = sortOptions(plural, all);
       sort = savedSort(plural, options);
       render(sortSelect, html`${options.map((o) => html`<option value="${o.id}" ${o.id === sort ? html`selected` : ''}>${o.label}</option>`)}`);

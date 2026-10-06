@@ -11,7 +11,7 @@ export type Route =
   | { name: 'privacy' }
   | { name: 'not-found' };
 
-const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'people', 'polities', 'glossary'];
+const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'people', 'polities', 'glossary', 'bibliography'];
 const isPlural = (s: string): s is Plural => (PLURALS as string[]).includes(s);
 
 export function parse(pathname: string, search: string): Route {
@@ -35,7 +35,9 @@ export const currentRoute = () => parse(location.pathname, location.search);
 export const ROUTE_EVENT = 'arthistory:route';
 
 let onRouteHandler: ((route: Route) => void) | undefined;
+let rendered = ''; // pathname + search of the page on screen
 function run() {
+  rendered = location.pathname + location.search;
   onRouteHandler?.(currentRoute());
   window.dispatchEvent(new Event(ROUTE_EVENT));
 }
@@ -75,7 +77,8 @@ export function start(onRoute: (route: Route) => void) {
   // patrons became people (API migration 024): /patrons/theo-van-gogh → /people/theo-van-gogh
   if (/^\/patrons(\/|$)/.test(location.pathname)) history.replaceState(null, '', location.pathname.replace(/^\/patrons/, '/people') + location.search);
   onRouteHandler = onRoute;
-  window.addEventListener('popstate', run);
+  // back/forward to another page re-renders; a jump within the page (footnotes: #…-n1) is the browser's to scroll
+  window.addEventListener('popstate', () => location.pathname + location.search !== rendered && run());
   document.addEventListener('click', interceptLinks);
   run();
 }

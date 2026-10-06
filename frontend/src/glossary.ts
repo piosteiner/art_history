@@ -1,12 +1,13 @@
-// Glossary links inside the API's texts (*_html): <a href="/glossary/<slug>" class="glossary-link" data-term="<slug>">.
-// A real term gets a popover with its name, category and short definition (from the detail's `glossary` map, so no
-// further request): on hover or keyboard focus; on touch the first tap opens it and the link inside navigates.
-// A term that doesn't exist yet (class "missing") becomes plain, slightly dimmed text instead of a dead link.
-// Links to other entries (<a href="/artists/<slug>" class="entry-link" data-entry="artist/<slug>">) are ordinary
-// links the router follows; a missing entry becomes dimmed text the same way.
-import { html } from './html';
+// Links inside the API's texts (*_html), with popovers that need no further request:
+// - glossary terms <a class="glossary-link" data-term> → name, category, definition (the detail's `glossary` map);
+// - short references <a class="source-link" data-source> → the full citation (the detail's `bibliography` map);
+// - footnote numbers <sup class="fn-ref"><a href="#…"> → the footnote's text (from the same page).
+// Popovers open on hover or keyboard focus; on touch the first tap opens one, the second follows the link.
+// A term or entry that doesn't exist yet (class "missing") becomes plain, slightly dimmed text instead of a dead link;
+// links to other entries (a.entry-link) are ordinary links the router follows.
+import { html, trusted, type Html } from './html';
 import { ROUTE_EVENT } from './router';
-import type { GlossaryHint } from './types';
+import type { GlossaryHint, SourceHint } from './types';
 
 let popover: HTMLElement | null = null;
 let current: HTMLAnchorElement | null = null;
@@ -25,21 +26,19 @@ const hideSoon = () => {
   hideTimer = window.setTimeout(hide, 180); // time to move the pointer into the popover
 };
 
-function show(a: HTMLAnchorElement, hint: GlossaryHint) {
+function show(a: HTMLAnchorElement, content: Html, kind: string) {
   if (current === a && popover) return;
   hide();
   current = a;
   popover = document.createElement('div');
-  popover.className = 'glossary-popover';
-  popover.id = 'glossary-popover';
+  popover.className = `glossary-popover popover-${kind}`;
+  popover.id = 'text-popover';
   popover.setAttribute('role', 'tooltip');
-  popover.innerHTML = html`<div class="glossary-popover-head"><strong>${hint.name}</strong> <span class="tag">${hint.category}</span></div>
-    ${hint.definition ? html`<p>${hint.definition}</p>` : ''}
-    <a href="${a.getAttribute('href')!}">Read more in the glossary →</a>`.value;
+  popover.innerHTML = content.value;
   popover.addEventListener('mouseenter', () => clearTimeout(hideTimer));
   popover.addEventListener('mouseleave', hideSoon);
   document.body.append(popover);
-  a.setAttribute('aria-describedby', 'glossary-popover');
+  a.setAttribute('aria-describedby', 'text-popover');
   // below the link, kept on screen
   const r = a.getBoundingClientRect();
   const w = popover.offsetWidth;
@@ -48,8 +47,35 @@ function show(a: HTMLAnchorElement, hint: GlossaryHint) {
   popover.style.top = `${r.bottom + window.scrollY + 6}px`;
 }
 
-/** Turns the links inside `root`'s texts into popovers (glossary terms) or plain text (missing terms and entries). */
-export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint> | undefined) {
+/** Hover / focus / first tap shows `content`; a second tap (touch) or a click (mouse) follows the link. */
+function attach(a: HTMLAnchorElement, content: () => Html, kind: string) {
+  // A tap also fires (emulated) hover and focus, which open the popover before the click arrives; so whether this
+  // tap is the first one is decided when the finger touches down.
+  let touch = false;
+  let openAtTouch = false;
+  a.addEventListener('pointerdown', (e) => {
+    touch = e.pointerType !== 'mouse';
+    openAtTouch = current === a && !!popover;
+  });
+  a.addEventListener('pointerenter', (e) => {
+    if (e.pointerType !== 'mouse') return;
+    clearTimeout(hideTimer);
+    show(a, content(), kind);
+  });
+  a.addEventListener('pointerleave', (e) => e.pointerType === 'mouse' && hideSoon());
+  a.addEventListener('focus', () => show(a, content(), kind));
+  a.addEventListener('blur', hideSoon);
+  a.addEventListener('click', (e) => {
+    if (touch && !openAtTouch) {
+      e.preventDefault();
+      show(a, content(), kind);
+    }
+    touch = false;
+  });
+}
+
+/** Wires the links inside `root`'s texts: popovers for terms, sources and footnotes; plain text for missing ones. */
+export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint> | undefined, sources?: Record<string, SourceHint>) {
   root.querySelectorAll<HTMLAnchorElement>('a.glossary-link.missing, a.entry-link.missing').forEach((a) => {
     const term = a.classList.contains('glossary-link');
     const span = document.createElement('span');
@@ -61,30 +87,28 @@ export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint>
   root.querySelectorAll<HTMLAnchorElement>('a.glossary-link').forEach((a) => {
     const hint = terms?.[a.dataset.term ?? ''];
     if (!hint) return; // a plain link to the term page still works
-    // A tap also fires (emulated) hover and focus, which open the popover before the click arrives; so whether this
-    // tap is the first one is decided when the finger touches down.
-    let touch = false;
-    let openAtTouch = false;
-    a.addEventListener('pointerdown', (e) => {
-      touch = e.pointerType !== 'mouse';
-      openAtTouch = current === a && !!popover;
-    });
-    a.addEventListener('pointerenter', (e) => {
-      if (e.pointerType !== 'mouse') return;
-      clearTimeout(hideTimer);
-      show(a, hint);
-    });
-    a.addEventListener('pointerleave', (e) => e.pointerType === 'mouse' && hideSoon());
-    a.addEventListener('focus', () => show(a, hint));
-    a.addEventListener('blur', hideSoon);
-    a.addEventListener('click', (e) => {
-      // touch: the first tap shows the definition; the "Read more" link in the popover navigates
-      if (touch && !openAtTouch) {
-        e.preventDefault();
-        show(a, hint);
-      }
-      touch = false;
-    });
+    attach(a, () => html`<div class="glossary-popover-head"><strong>${hint.name}</strong> <span class="tag">${hint.category}</span></div>
+      ${hint.definition ? html`<p>${hint.definition}</p>` : ''}
+      <a href="${a.getAttribute('href')!}">Read more in the glossary →</a>`, 'term');
+  });
+  // short references ("Busch 1993", "Ebd."): the full citation (HTML with italic titles, escaped by the API)
+  root.querySelectorAll<HTMLAnchorElement>('a.source-link').forEach((a) => {
+    const s = sources?.[a.dataset.source ?? ''];
+    if (!s) return;
+    attach(a, () => html`<div class="glossary-popover-head"><strong>${s.siglum}</strong></div>
+      <p class="citation">${trusted(s.citation)}</p>
+      <a href="${a.getAttribute('href')!}">In the bibliography →</a>`, 'source');
+  });
+  // footnote numbers: the footnote's text, so readers needn't jump down and back
+  root.querySelectorAll<HTMLAnchorElement>('sup.fn-ref > a[href^="#"]').forEach((a) => {
+    const note = root.querySelector(`[id="${CSS.escape(a.getAttribute('href')!.slice(1))}"]`);
+    if (!note) return;
+    attach(a, () => {
+      const copy = note.cloneNode(true) as Element;
+      copy.querySelectorAll('a.fn-back').forEach((b) => b.remove());
+      // the note was rendered from the API's sanitized HTML on this page, so reusing its markup is safe
+      return html`<div class="glossary-popover-head"><strong>Note ${a.textContent ?? ''}</strong></div><p>${trusted(copy.innerHTML)}</p>`;
+    }, 'note');
   });
 }
 
