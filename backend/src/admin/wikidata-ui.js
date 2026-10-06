@@ -96,8 +96,8 @@ function reviewPage({ title, plan, t, action, isNew }) {
       <div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Field</th><th>Yours</th><th>Wikidata</th><th>Take?</th></tr></thead>
         <tbody>${plan.rows.map((r) => fieldRow(r, t))}</tbody></table></div>
       ${plan.images.length ? html`<h2>Images (Wikimedia Commons)</h2>
-        ${isNew ? html`<p class="muted">${plan.images.length} image${plan.images.length === 1 ? '' : 's'} on Commons — create the entry first, then compare it with Wikidata again to add them.</p>`
-          : html`<div class="wd-images">${plan.images.map((img, i) => imageChoice(img, i))}</div>`}` : ''}
+        ${isNew ? html`<p class="muted">The images you add are saved together with the entry when you press Create.</p>` : ''}
+        <div class="wd-images">${plan.images.map((img, i) => imageChoice(img, i))}</div>` : ''}
       ${!isNew ? html`<h2>Relationships suggested by Wikidata</h2>
         ${plan.suggestions.length ? html`<p class="actions wd-bulk">Set all open suggestions:
             <button type="button" class="secondary" data-wd-set="link">link where we have it</button>

@@ -2,6 +2,16 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-06
+
+### Wikidata: images for new entries are saved with Create
+- **What:** the review of a new entry offers its Commons images (first pre-selected when it has none); the picks travel
+  with the new-entry form (hidden `wd.images`, kept in the draft), are shown there, and are inserted by `saveEntity`
+  in the same transaction as the entry (validated like the image form).
+- **Why:** owner: images were only available on a second comparison after creating the entry.
+- **Tested:** e2e 65 passing.
+- **Revert:** redeploy the previous commit.
+
 ## 2026-10-05
 
 ### Glossary with [[links]] from texts (migrations 026, 027)

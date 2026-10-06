@@ -790,7 +790,8 @@ async function wikidataApply(req, res, t, e) {
     const slug = wikidata.slugify(plan.label || qid);
     await adminPool.query(`INSERT INTO admin_drafts (user_id, entity_type, entity_id, form) VALUES ($1, $2, NULL, $3)
       ON CONFLICT (user_id, entity_type, entity_id) DO UPDATE SET form = EXCLUDED.form, updated_at = now()`,
-    [req.user.id, t.type, JSON.stringify({ slug, ...base, ...form })]);
+    [req.user.id, t.type, JSON.stringify({ slug, ...base, ...form,
+      ...(result.pendingImages.length ? { 'wd.images': JSON.stringify(result.pendingImages) } : {}) })]);
     return res.redirect(303, `/${t.folder}/new?draft=1`);
   }
   if (Object.keys(form).length) await collab.applyForm(t, e.id, form, req.user.username);
@@ -820,7 +821,8 @@ router.get('/:plural/new', async (req, res) => {
       ${useDraft ? restoredBanner({ draft, rb: { stale: false, merged: [], conflicts: [] }, t })
         : draftBanner({ draft, changed: [...new Set(changed)], restoreUrl: `/${t.folder}/new?draft=1`, t })}
       ${entityForm({ t, slug: useDraft ? draft.form.slug || '' : '', f: useDraft ? formFromBody(draft.form) : docToForm({}, t.fields),
-        ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true })}`,
+        ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true,
+        pendingImages: useDraft ? draft.form['wd.images'] : null })}`,
   });
 });
 
@@ -870,6 +872,8 @@ async function saveEntity(user, t, body, existing) {
       const exprs = names.map((c) => { values.push(row.cols[c][1]); return row.cols[c][0].replace('$', () => `$${values.length}`); });
       if (!existing) {
         const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
+        // images picked in the Wikidata review of this new entry (wd.images): saved together with it
+        for (const img of pendingImagesOf(t, body)) await images.add(db, t.type, rows[0].id, img);
         for (const c of created) await autocreate.flag(db, c.type, c.id, { type: t.type, id: rows[0].id }, user.id);
         return;
       }
@@ -886,6 +890,17 @@ async function saveEntity(user, t, body, existing) {
     return { errors: [friendly(err)] };
   }
   return { slug, created };
+}
+
+// wd.images (JSON from the Wikidata review of a new entry) → value lists for images.add(); checked like the form.
+function pendingImagesOf(t, body) {
+  if (!t.imageFk || !body['wd.images']) return [];
+  let list;
+  try { list = JSON.parse(String(body['wd.images'])); } catch { return []; }
+  if (!Array.isArray(list)) return [];
+  return list.slice(0, 20).flatMap((img) => {
+    try { return [images.fromForm({ url: img.url, source_url: img.source_url, license: img.license, credit: img.credit })]; } catch { return []; }
+  });
 }
 
 // Re-show a rejected form with exactly what was typed.
@@ -908,7 +923,8 @@ router.post('/:plural', async (req, res) => {
     return send(req, res, {
       title: `New ${t.type}`, status: 422,
       page: { type: t.type, slug: null, mode: 'new' },
-      body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx, action: `/${t.folder}`, errors: result.errors, isNew: true })}`,
+      body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx, action: `/${t.folder}`,
+        errors: result.errors, isNew: true, pendingImages: req.body['wd.images'] })}`,
     });
   }
   await drafts.deleteDraft(adminPool, req.user.id, t.type, null);

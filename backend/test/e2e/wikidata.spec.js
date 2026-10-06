@@ -10,7 +10,8 @@ test('a new artist from Wikidata: search, review (empty fields pre-ticked), then
   await Promise.all([userA.waitForNavigation(), userA.click('.search-hit a:has-text("Claude Monet")')]);
   await expect(row(userA, 'Birth').locator('input[value=take]')).toBeChecked();  // empty field: pre-selected
   await expect(userA.locator('input[name="alt.names"][value="Oscar-Claude Monet"]')).not.toBeChecked();  // names: opt-in
-  await expect(userA.locator('main')).toContainText('1 image on Commons — create the entry first');  // images: rows, added later
+  await expect(userA.locator('input[name="img.0"][value=add]')).toBeChecked();  // images are offered for new entries too
+  await userA.check('input[name="img.0"][value=later]');                         // (this one is added in the next test)
   await expect(userA.locator('input[name="alt.names"][value="クロード・モネ | ja | translation"]')).toBeVisible();  // labels: with language
   await userA.check('input[name="alt.names"][value="Oscar-Claude Monet"]');
   await apply(userA);
@@ -74,7 +75,10 @@ test('an artwork: creator and collection by name or new; then its Commons images
   await userA.goto('/artworks/new/wikidata?q=Q104');
   await expect(row(userA, 'Creator').locator('input[value=link]')).toBeChecked();  // our Claude Monet (by Q-id)
   await expect(row(userA, 'Institution').locator('input[value=create]')).toBeVisible();
-  await expect(userA.locator('main')).toContainText('2 images on Commons — create the entry first');
+  // images for a new entry: picked now, saved together with it on Create
+  await expect(userA.locator('main')).toContainText('saved together with the entry when you press Create');
+  await expect(userA.locator('input[name="img.0"][value=add]')).toBeChecked();   // no image yet: the first pre-selected
+  await expect(userA.locator('input[name="img.1"][value=later]')).toBeChecked();
   await row(userA, 'Institution').locator('input[value=create]').check();
   await expect(row(userA, 'Dimensions')).toContainText('48 × 63 cm');               // 630 mm converted
   await expect(row(userA, 'Inventory number')).toContainText('4014 — in the collection of Musée Marmottan Monet');
@@ -92,17 +96,19 @@ test('an artwork: creator and collection by name or new; then its Commons images
   await expect(userA.locator('#f-creator')).toHaveValue('claude-monet');
   await expect(userA.locator('#f-institution')).toHaveValue(/^musee-marmottan-monet/);
   expect(sql("SELECT wikidata_id FROM institutions WHERE slug LIKE 'musee-marmottan-monet%'")).toBe('Q105');
+  await expect(userA.locator('.pending-images img')).toHaveCount(1);              // shown on the form, not saved yet
   await submitForm(userA);
   await expect(userA).toHaveURL(/\/artworks\/impression-sunrise\?done=created/);
+  await expect(userA.locator('.image-item')).toHaveCount(1);                     // saved with the entry
 
-  // Now the images: each one offered on its own — the first pre-selected (no image yet), the other up to you.
+  // the other one later, from the comparison of the existing entry
   await userA.goto('/artworks/impression-sunrise/wikidata');
   await expect(userA.locator('.wd-image')).toHaveCount(2);
-  await expect(userA.locator('input[name="img.0"][value=add]')).toBeChecked();
+  await expect(userA.locator('.wd-image').first()).toContainText('Already one of ours');
   await expect(userA.locator('input[name="img.1"][value=later]')).toBeChecked();
   await userA.check('input[name="img.1"][value=add]');
   await apply(userA);
-  await expect(userA.locator('.flash.ok')).toContainText('2 images added');
+  await expect(userA.locator('.flash.ok')).toContainText('1 image added');
   const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/impression-sunrise', { headers: { Host: 'api.localhost' } })).json();
   expect(api.images.map((i) => i.url)).toEqual(['https://upload.wikimedia.org/test/Monet_-_Impression%2C_Sunrise.jpg',
     'https://upload.wikimedia.org/test/Impression_Sunrise_back.jpg']);  // Wikidata's order; the first is the main image

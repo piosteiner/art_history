@@ -428,7 +428,7 @@ async function compare(db, t, qid, ours, entity) {
       images.push({ ...img, item: `image:${file}`, status: same ? 'same' : 'new', declined: declined(`image:${file}`, img.url) });
     }
     // the first new one is pre-selected when the entry has no image yet
-    if (entity && !have.length) { const first = images.find((x) => !x.declined); if (first) first.suggested = true; }
+    if (!have.length) { const first = images.find((x) => !x.declined); if (first) first.suggested = true; }
   }
 
   // Relationship suggestions
@@ -571,6 +571,14 @@ async function apply(db, t, entity, plan, choices, userId) {
   }
   let relationships = 0;
   let images = 0;
+  // A new entry doesn't exist yet: the picked images travel with its form and are added when it is created
+  // (wd.images, saveEntity in index.js).
+  const pendingImages = [];
+  if (!entity) {
+    for (const [i, img] of plan.images.entries()) {
+      if (choices[`img.${i}`] === 'add') pendingImages.push({ url: img.url, source_url: img.source_url, license: img.license, credit: img.credit });
+    }
+  }
   if (entity) {
     // Images are rows of their own (migration 017): added right away, after the ones we have, in Wikidata's order.
     for (const [i, img] of plan.images.entries()) {
@@ -613,7 +621,7 @@ async function apply(db, t, entity, plan, choices, userId) {
       relationships += 1;
     }
   }
-  return { form, created, relationships, images };
+  return { form, created, relationships, images, pendingImages };
 }
 
 module.exports = { search, compare, apply, slugify, sourceNote, SLUG };

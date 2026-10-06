@@ -2,6 +2,7 @@
 // YAML file), which then goes through the same toRow() validation as the import.
 const { html } = require('./html');
 const names = require('../names');
+const { thumbUrl } = require('./images');
 const dimensions = require('../dimensions');
 
 // Language tags offered in the pickers (any BCP 47 tag can be typed).
@@ -217,12 +218,21 @@ function fieldInput(key, kind, f, ctx) {
 // version: the row's updated_at when the form was opened (optimistic locking on save).
 // collab: an existing entry's shared working copy (live step 2) — the browser binds the form to it; Save = Publish.
 // collab: { key: 'artist:12:<epoch>', state: base64 } for a working copy.
-function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null }) {
+// pendingImages: JSON of images picked in the Wikidata review of a new entry — kept in a hidden field (and so in the
+// draft) and saved with the entry on Create.
+function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null }) {
+  let pending = [];
+  try { pending = pendingImages ? JSON.parse(pendingImages) : []; } catch { pending = []; }
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
+    ${pending.length ? html`<input type="hidden" name="wd.images" value="${pendingImages}">
+      <div class="field pending-images"><label>Images from Wikidata</label>
+        <div class="image-list">${pending.map((img) => html`<figure class="image-item"><img src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">
+          <figcaption class="muted small">${[img.credit, img.license].filter(Boolean).join(' · ')}</figcaption></figure>`)}</div>
+        <div class="hint">Added with the entry when you press Create.</div></div>` : ''}
     <div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
       <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"
         autocapitalize="none" spellcheck="false"${isNew ? html` data-slug-from="f-${t.name}"` : ''}>
