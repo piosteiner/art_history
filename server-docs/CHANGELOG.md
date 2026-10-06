@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Quality: "outside its parent region" with a 5 km tolerance (migration 033)
+- **What:** the check uses `ST_DWithin(outline, point, 5000)` instead of `ST_Covers`.
+- **Why:** New York lay 2 km outside the simplified Natural Earth coastline of the USA — a false alarm.
+- **Revert:** redeploy the previous commit (re-create 032's quality view).
+
 ### Places without hand-made geometry: Natural Earth boundaries, derived markers, place finder (migration 032)
 - **What:** table `boundaries` (Natural Earth, public domain: 237 countries, 4313 first-level regions; loaded by
   `npm run boundaries`), `places.boundary_code` (FK; countries filled by a trigger from `country_code`), geometry rule
