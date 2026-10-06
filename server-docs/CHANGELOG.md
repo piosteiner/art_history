@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Series and other wholes: parts of artworks; publishers (migration 037)
+- **What:** `artworks.parent_id`, `part_number`, generated `part_sort`, `parts_count`; trigger `no_parent_cycle()`
+  on artworks, places, movements, polities; relationship `published`; quality info check `part_missing_data`.
+  Admin: "Part of" / "Number in it" / "Number of parts", a part's line ("No. 21 of 46 in …", previous/next), a whole's
+  "Parts" grid with missing numbers, "add a part" and "+ New part" (prefilled). API: `part_of`, `part_number`,
+  `previous_part`, `next_part`, `parts`, filter `?part_of=`. Wikidata: P179 + P1545.
+- **Why:** owner: prints in series like the Thirty-six Views of Mount Fuji.
+- **Tested:** smoke test; e2e 80 passing.
+- **Revert:** redeploy the previous commit; as owner drop the four triggers and `no_parent_cycle()`, the new columns,
+  and the `published` type (after its relationships); re-create 036's quality view.
+
 ### Bibliography with citations after the KHIST guide (migrations 035, 036)
 - **What:** entity type `source`, table `bibliography` (kinds book … archival, all parts of a reference, reading status);
   `src/bibliography.js` (full entries and sigla after the Leitfaden of the Kunsthistorisches Institut UZH 2021 §§ 8–9,

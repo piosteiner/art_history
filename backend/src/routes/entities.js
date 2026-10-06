@@ -80,9 +80,10 @@ const ENTITIES = {
     type: 'artwork', table: 'artworks', alt: 'alt_titles', name: 'title', period: 't.created',
     list: `range_json(t.created, t.created_label) AS created, t.kind, ${mainImage('artwork_id')},
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
+           (SELECT jsonb_build_object('slug', w.slug, 'title', w.title) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
            artwork_creators(t.id) AS creators, ${countryCols('artwork')}`,
     detail: `t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
-             t.inventory_number, ${allImages('artwork_id')}, t.description_md,
+             t.inventory_number, ${allImages('artwork_id')}, t.description_md, t.parts_count,
              t.materials,
              CASE WHEN t.height_cm IS NOT NULL THEN jsonb_build_object('height_cm', t.height_cm, 'width_cm', t.width_cm,
                'depth_cm', t.depth_cm, 'note', t.dimensions_note,
@@ -109,6 +110,7 @@ const ENTITIES = {
       institution: "t.current_institution_id = entity_id('institution', $)",
       kind: 't.kind = $',
       material: 't.materials @> ARRAY[$]::text[]',  // GIN index artworks_materials_gin
+      part_of: "t.parent_id = entity_id('artwork', $)",  // the parts of a series / album …
       ...countryFilters('artwork'),
     },
     order: 'lower(t.created) NULLS LAST, name_sort_key(t.title, t.title_ruby, t.names)',
@@ -247,6 +249,29 @@ const EXTRAS = {
   }),
   // the provenance (031): the steps as recorded, plus the computed period and where its end comes from
   artwork: async (id) => ({
+    // series and other wholes (migration 037): what it is part of (the chain upwards, nearest first), its neighbours,
+    // and — for a whole — its parts in order
+    part_of: (await apiPool.query(`
+      WITH RECURSIVE up AS (
+        SELECT w.id, w.parent_id, 1 AS depth FROM artworks a JOIN artworks w ON w.id = a.parent_id WHERE a.id = $1
+        UNION ALL
+        SELECT w.id, w.parent_id, up.depth + 1 FROM up JOIN artworks w ON w.id = up.parent_id WHERE up.depth < 10
+      ) SELECT w.slug, w.title, w.kind, w.parts_count FROM up JOIN artworks w ON w.id = up.id ORDER BY up.depth`, [id])).rows,
+    ...(await apiPool.query(`
+      WITH me AS (SELECT parent_id, part_number, part_sort, title FROM artworks WHERE id = $1),
+      sib AS (SELECT a.id, a.slug, a.title, a.part_number,
+                     row_number() OVER (ORDER BY a.part_sort NULLS LAST, a.part_number, a.title) AS n
+              FROM artworks a, me WHERE a.parent_id = me.parent_id)
+      SELECT (SELECT part_number FROM me) AS part_number,
+             (SELECT jsonb_build_object('slug', p.slug, 'title', p.title, 'part_number', p.part_number) FROM sib p, sib s
+                WHERE s.id = $1 AND p.n = s.n - 1) AS previous_part,
+             (SELECT jsonb_build_object('slug', p.slug, 'title', p.title, 'part_number', p.part_number) FROM sib p, sib s
+                WHERE s.id = $1 AND p.n = s.n + 1) AS next_part`, [id])).rows[0],
+    parts: (await apiPool.query(`
+      SELECT a.slug, a.title, a.part_number, a.kind, range_json(a.created, a.created_label) AS created,
+             (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url,
+             (SELECT count(*)::int FROM artworks c WHERE c.parent_id = a.id) AS parts
+      FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, a.title`, [id])).rows,
     provenance: (await apiPool.query(`
       SELECT p.position,
              CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'name', o.name) END AS owner,

@@ -258,6 +258,12 @@ Formatting is application code (`src/bibliography.js`, after the KHIST guide): s
 whole bibliography (a/b), which a per-row SQL function couldn't do; `src/markdown.js` cuts footnotes out before
 markdown-it and puts them back numbered.
 
+## Series (migration 037)
+`artworks.parent_id` (+ `part_number`, `parts_count`): the parent pattern of places and movements for wholes and
+parts. `part_sort` is a STORED generated column — the first number in `part_number` — so "No. 21" sorts after "3". A
+trigger function `no_parent_cycle()` (dynamic SQL with a recursive CTE and `CYCLE … SET … USING`) refuses loops on
+every table with `parent_id`.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the

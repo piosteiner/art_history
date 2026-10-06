@@ -133,6 +133,9 @@ test('a Japanese original title stays among the other names; the English label i
   await expect(row(userA, 'Title')).toContainText('The Great Wave');
   await expect(userA.locator('input[name="alt.names"][value="神奈川沖浪裏 | ja | original"]')).toBeVisible();
   await expect(userA.locator('input[name="alt.names"][value="Kanagawa-oki nami ura | ja-Latn | romanization"]')).toBeVisible();
+  // part of a series (P179) with its number (P1545)
+  await expect(row(userA, 'Parent')).toContainText('Thirty-six Views of Mount Fuji');
+  await expect(row(userA, 'Part number')).toContainText('1');
 });
 
 test('an institution: its place is the city (not the district), its exact spot and address are its own', async ({ userA }) => {

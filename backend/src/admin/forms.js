@@ -38,6 +38,7 @@ const HINTS = {
 const LABELS = {
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
+  'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
   'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
   'term.definition': 'Short definition',
   'source.name': 'Title', 'source.kind': 'Kind of source', 'source.names': 'Other titles (translations …)',
@@ -58,6 +59,9 @@ const TYPE_HINTS = {
     the marker then come from Natural Earth, no point or drawing needed. Countries get it from their country code automatically.`,
   'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location.',
   'institution.address': 'Street address, as written locally, e.g. Heimplatz 1, 8001 Zürich.',
+  'artwork.parent': 'The series, album, triptych or altarpiece it belongs to — an artwork of its own (object type series, album …). Empty = none.',
+  'artwork.part_number': 'Its place in the whole: 21 · left panel · plate 3 · leaf 12. A number in it sorts the parts.',
+  'artwork.parts_count': 'Only for a whole (series, album …): how many parts it has, e.g. 46 — pages then show “No. 21 of 46”.',
   'artwork.location': 'Only for works that don’t move — buildings, gardens, bridges, temple halls, monuments, murals. Paintings, prints and sculptures in collections: leave empty (they are where their institution is).',
   'artwork.kind': html`What sort of object it is, in a word or two: painting, woodblock print, hanging scroll, sculpture, vase — or building, garden,
     bridge, temple hall … Pick a term from the list so works group together. A building that houses an institution: link them with <i>houses</i>.`,
@@ -243,9 +247,9 @@ function fieldInput(key, kind, f, ctx) {
         data-lookup="${kind === 'parent' ? ctx.type : kind.slice(4)}">
       <datalist id="${id}-list">${options.map((o) => html`<option value="${o.slug}">${o.name}</option>`)}</datalist>
       ${confirm ? html`<label class="choice"><input type="checkbox" name="new.${key}" value="1"> create a new ${target} “${confirm}” anyway</label>` : ''}
-      ${hint(canCreate ? `Pick from the list — or type the name of a new ${target}: it is created with the save and marked “to complete”. Empty = none.`
+      ${hint(typeHint || (canCreate ? `Pick from the list — or type the name of a new ${target}: it is created with the save and marked “to complete”. Empty = none.`
         : placeParent ? 'Pick from the list — or type a country or region name (Japan, Provence-Alpes-Côte d’Azur): it is created with its outline. Empty = none.'
-          : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}
+          : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`))}
       ${key === 'creator' ? hint(ctx.coCreators && ctx.coCreators.length
         ? html`The main creator. Co-creators: ${ctx.coCreators.map((c, i) => html`${i ? ', ' : ''}<b>${c.name}</b>${c.label ? ` (${c.label})` : ''}`)} — changed on the artwork's page.`
         : 'The main creator. Further creators: “+ Add co-creator” on the artwork\'s page.') : ''}</div>`;

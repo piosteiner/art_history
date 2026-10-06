@@ -139,6 +139,9 @@ class UserError extends Error {}
 const RULES = {
   places_check: 'A place needs coordinates, an outline, or a boundary code (a country JP, a region JP-13).',
   places_check1: 'A place cannot be its own parent.',
+  parent_cycle: 'That would make it part of itself (through its parents) — check "Part of" / "Parent".',
+  artworks_parent_check: 'An artwork cannot be part of itself.',
+  artworks_parts_count_check: 'Number of parts: a whole number above 0.',
   movements_check: 'A movement cannot be its own parent.',
   artists_check: 'Death cannot be before birth.',
   relationships_check: 'An entity cannot be related to itself.',
@@ -741,7 +744,7 @@ async function formContext(t, id = null) {
   // object types of immovable works, offered even before they are used (migration 034)
   if (t.type === 'artwork') {
     suggestions.kind = [...new Set([...suggestions.kind, 'building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate',
-      'monument', 'tower', 'mural'])].sort();
+      'monument', 'tower', 'mural', 'series', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'])].sort();
   }
   // lists whose terms should repeat exactly (the API filters by them): show what is already in use
   const used = {};
@@ -927,6 +930,14 @@ router.post('/places/new/find', async (req, res) => {
   res.redirect(303, '/places/new?draft=1');
 });
 
+// A new part of a series / album …: "+ New part" links to /artworks/new?part_of=<slug> — prefilled with the whole and
+// its creator (the part may still differ).
+async function newDocFrom(t, query) {
+  if (t.type !== 'artwork' || !SLUG.test(String(query.part_of || ''))) return {};
+  const w = await findEntity(t, String(query.part_of));
+  return w ? { parent: w.slug, ...(w.doc.creator ? { creator: w.doc.creator } : {}) } : {};
+}
+
 router.get('/:plural/new', async (req, res) => {
   const { t } = req;
   const draft = await drafts.getDraft(adminPool, req.user.id, t.type, null);
@@ -938,7 +949,7 @@ router.get('/:plural/new', async (req, res) => {
     body: html`<h1>New ${t.type}</h1>
       ${useDraft ? restoredBanner({ draft, rb: { stale: false, merged: [], conflicts: [] }, t })
         : draftBanner({ draft, changed: [...new Set(changed)], restoreUrl: `/${t.folder}/new?draft=1`, t })}
-      ${entityForm({ t, slug: useDraft ? draft.form.slug || '' : '', f: useDraft ? formFromBody(draft.form) : docToForm({}, t.fields),
+      ${entityForm({ t, slug: useDraft ? draft.form.slug || '' : '', f: useDraft ? formFromBody(draft.form) : docToForm(await newDocFrom(t, req.query), t.fields),
         ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true,
         pendingImages: useDraft ? draft.form['wd.images'] : null })}`,
   });
@@ -1137,6 +1148,8 @@ router.get('/:plural/:slug', async (req, res) => {
   const provSteps = t.type === 'artwork' ? await provenance.read(adminPool, e.id) : [];
   const boundary = t.type === 'place' && e.doc.boundary_code
     ? (await adminPool.query('SELECT code, name FROM boundaries WHERE code = $1', [e.doc.boundary_code])).rows[0] : null;
+  // series and other wholes (migration 037)
+  const series = t.type === 'artwork' ? await seriesOf(e) : null;
   const citation = t.type === 'source' ? (await bibliography.loadCatalogue(adminPool)).get(e.slug) : null;
   const linkMap = await linkNames(adminPool, [...Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]),
     ...provSteps.map((p) => p.notes_md)]);
@@ -1163,6 +1176,9 @@ router.get('/:plural/:slug', async (req, res) => {
         <div class="muted small">The mark goes away by itself when the entry is next published.</div></div>` : ''}
       ${quality.entityBox(qa, `/${t.folder}/${e.slug}`)}
       ${citation ? html`<p class="citation"><b>${citation.siglum}:</b> ${raw(citation.full)}</p>` : ''}
+      ${series && series.whole ? html`<p class="part-of">${series.number ? html`<b>${/^\d+$/.test(series.number) ? `No. ${series.number}` : series.number}</b>
+        ${series.whole.parts_count && /^\d+$/.test(series.number) ? `of ${series.whole.parts_count} ` : ''}in ` : 'Part of '}<a href="/artworks/${series.whole.slug}">${series.whole.title}</a>
+        ${series.prev ? html` · <a href="/artworks/${series.prev.slug}">← ${series.prev.title}</a>` : ''}${series.next ? html` · <a href="/artworks/${series.next.slug}">${series.next.title} →</a>` : ''}</p>` : ''}
       ${main ? html`<figure class="image-preview"><a href="${main.source_url || main.url}" target="_blank" rel="noopener">
         <img src="${thumbUrl(main.url, 500)}" alt="${name}"></a>
         <figcaption class="muted small">${[main.caption, main.credit, main.license].filter(Boolean).join(' · ') || 'no credit / license yet'}
@@ -1179,6 +1195,16 @@ router.get('/:plural/:slug', async (req, res) => {
       })}</dl>
       ${t.type === 'term' || usedIn.length ? html`<h2 id="used-in">${t.type === 'term' ? 'Used in' : 'Mentioned in'}</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`
         : html`<p class="muted">No text links it yet — write <code>[[${e.slug}]]</code> in a description.</p>`}` : ''}
+      ${series && (series.parts.length || series.isWhole) ? html`<h2 id="parts">Parts</h2>
+        <p class="muted">${series.parts.length}${e.doc.parts_count ? ` of ${e.doc.parts_count}` : ''} entered${series.missing.length ? ` — missing numbers: ${series.missing.join(', ')}` : ''}</p>
+        <div class="image-list parts-list">${series.parts.map((p) => html`<figure class="image-item"><a href="/artworks/${p.slug}">${p.image_url
+          ? html`<img src="${thumbUrl(p.image_url, 250)}" alt="" loading="lazy">` : html`<span class="thumb-empty"></span>`}</a>
+          <figcaption>${p.part_number ? html`<b>${p.part_number}</b> · ` : ''}<a href="/artworks/${p.slug}">${p.title}</a></figcaption></figure>`)}</div>` : ''}
+      ${t.type === 'artwork' ? html`<details${series && series.isWhole ? ' open' : ''}><summary><b>+ Add a part</b> <span class="muted small">(for a series, album, triptych …)</span></summary>
+        <form method="post" action="/artworks/${e.slug}/parts" class="form bar">
+          <input name="part" placeholder="an existing artwork (slug)" list="part-candidates" class="grow" aria-label="artwork" data-lookup="artwork" autocomplete="off">
+          <input name="part_number" placeholder="number, e.g. 21" aria-label="number" class="short">
+          <button>Add</button> <a class="button secondary" href="/artworks/new?part_of=${e.slug}">+ New part</a></form></details>` : ''}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap }) : ''}
       <h2 id="relationships">Relationships</h2>
@@ -1238,6 +1264,54 @@ router.post('/:plural/:slug/auto-done', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   await autocreate.unflag(adminPool, t.type, e.id);
   res.redirect(303, `/${t.folder}/${e.slug}?done=auto-done`);
+});
+
+// Series and other wholes (migration 037): what an artwork is part of, its neighbours, its parts; numbers 1…parts_count
+// that no part has yet.
+async function seriesOf(e) {
+  const { rows: parts } = await adminPool.query(`
+    SELECT a.slug, a.title, a.part_number, a.part_sort,
+           (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url
+    FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, a.title`, [e.id]);
+  const { rows: [me] } = await adminPool.query(`
+    SELECT w.slug, w.title, w.parts_count, a.part_number FROM artworks a LEFT JOIN artworks w ON w.id = a.parent_id WHERE a.id = $1`, [e.id]);
+  let prev = null;
+  let next = null;
+  if (me.slug) {
+    const { rows: sib } = await adminPool.query(`
+      SELECT a.slug, a.title FROM artworks a WHERE a.parent_id = (SELECT parent_id FROM artworks WHERE id = $1)
+      ORDER BY a.part_sort NULLS LAST, a.part_number, a.title`, [e.id]);
+    const at = sib.findIndex((s) => s.slug === e.slug);
+    prev = sib[at - 1] || null;
+    next = sib[at + 1] || null;
+  }
+  const have = new Set(parts.map((p) => Number(p.part_sort)).filter(Number.isFinite));
+  const count = Number(e.doc.parts_count) || 0;
+  const missing = count && count <= 500 ? [...Array(count).keys()].map((n) => n + 1).filter((n) => !have.has(n)) : [];
+  return { parts, isWhole: !!count || /^(series|album|diptych|triptych|polyptych|altarpiece|set)$/.test(e.doc.kind || ''),
+    whole: me.slug ? { slug: me.slug, title: me.title, parts_count: me.parts_count } : null, number: me.part_number, prev, next,
+    missing: missing.length > 30 ? [...missing.slice(0, 30), '…'] : missing };
+}
+
+// An existing artwork becomes a part of this one (with its number); audited like any change.
+router.post('/artworks/:slug/parts', async (req, res) => {
+  const t = BY_TYPE.artwork;
+  const e = await findEntity(t, req.params.slug);
+  const part = await findEntity(t, String(req.body.part || '').trim());
+  if (!e) return notFoundPage(req, res);
+  if (!part) {
+    return send(req, res, { title: 'Add a part', status: 422, flash: { kind: 'error', text: 'Pick an existing artwork (its slug) — or use “+ New part”.' },
+      body: html`<p><a href="/artworks/${e.slug}#parts">← ${e.name}</a></p>` });
+  }
+  try {
+    await withTx(req.user, (db) => db.query('UPDATE artworks SET parent_id = $1, part_number = $2 WHERE id = $3',
+      [e.id, String(req.body.part_number || '').trim() || null, part.id]));
+  } catch (err) {
+    return send(req, res, { title: 'Add a part', status: 422, flash: { kind: 'error', text: friendly(err) },
+      body: html`<p><a href="/artworks/${e.slug}#parts">← ${e.name}</a></p>` });
+  }
+  await collab.changedElsewhere(t, part.id);  // its working copy, if open, takes the new values
+  res.redirect(303, `/artworks/${e.slug}?done=saved#parts`);
 });
 
 // Images: added here, edited / removed / reordered under /images/<id> (src/admin/images.js). Saved immediately and

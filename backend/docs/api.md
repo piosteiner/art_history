@@ -59,6 +59,14 @@ and **`roles`** — derived from relationships: `patron` (commissioned / patron 
 lifespan (else the active period). Depictions: relationship `depicts_person` (artwork → person or artist, label
 "depicts" / "depicted in", category `depiction`, part of the graph).
 
+### Series and other wholes (migration 037)
+An artwork can be part of another artwork — a print of a series, a panel of a triptych or altarpiece, a leaf of an
+album. A part: `part_of` (the chain of wholes upwards, nearest first: `[{slug, title, kind, parts_count}]`),
+`part_number` ("21", "left panel"), `previous_part` / `next_part` (`{slug, title, part_number}` or `null`). A whole:
+`parts_count` (how many parts it has, may be `null`) and `parts` in order (`[{slug, title, part_number, kind, created,
+image_url, parts}]` — `parts` > 0 for a sub-series). Lists carry `part_of: {slug, title}` and `part_number`; filter
+`?part_of=<slug>`. Relationship `published` (person/institution → artwork, category `publication`): the publisher.
+
 ### Bibliography (`/v1/bibliography`, type `source`)
 Sources cited in texts, formatted after the guide of the Kunsthistorisches Institut, UZH: `siglum` (the short reference,
 "Busch 1993", "Kimpel und Suckale 1995", "Kat. Paris 2007", "Jacobsen 1992a") and `citation` (the full entry, HTML with

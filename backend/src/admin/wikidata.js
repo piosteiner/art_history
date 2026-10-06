@@ -247,6 +247,13 @@ function fieldsFor(t, e) {
     }
     const [h, w, d] = [lengthCm(e, 'P2048'), lengthCm(e, 'P2049'), lengthCm(e, 'P2610', 'P5524')];
     if (h) f.dimensions = { kind: 'dimensions', value: [h, w, w && d].filter(Boolean) };  // height alone is fine
+    // part of a series (P179), with its number there (qualifier P1545 "series ordinal") — migration 037
+    const series = statements(e, 'P179')[0];
+    if (series && series.mainsnak.datavalue.value.id) {
+      f.parent = { kind: 'ref', ref: { type: 'artwork', qid: series.mainsnak.datavalue.value.id } };
+      const no = ((series.qualifiers || {}).P1545 || [])[0];
+      if (no && no.datavalue) f.part_number = { kind: 'text', value: String(no.datavalue.value) };
+    }
     // buildings, bridges, gardens … have coordinates: where the work stands (migration 034)
     const c = coords(e);
     if (c) f.location = { kind: 'point', value: c };
