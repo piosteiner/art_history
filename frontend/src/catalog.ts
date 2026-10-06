@@ -200,6 +200,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       { id: 'date', label: 'Date' },
       { id: 'artist', label: 'Artist' },
       { id: 'kind', label: 'Type' },
+      { id: 'series', label: 'Series' },
       { id: 'country', label: 'Country of origin (today)' },
       { id: 'polity', label: 'Made in (state, dynasty…)' },
     ],
@@ -211,8 +212,13 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
           ['Type', a.kind],
           ['Made in', [a.country?.place?.name, countryText(a.country)].filter(Boolean).join(', ')],
           ['State', l.polities],
+          ['Series', a.part_of ? `${a.part_of.title}${a.part_number ? ` (no. ${a.part_number})` : ''}` : null],
         ),
         sorts: {
+          // grouped under the series title, in number order (zero-padded so 3 comes before 21)
+          series: a.part_of
+            ? { value: fold(`${a.part_of.title} ${String(a.part_number ?? '').padStart(6, '0')}`), heading: a.part_of.title }
+            : { value: null, heading: 'Not in a series' },
           title: byName(titleKey(a.title)), date: byYear(a.created), artist: byText(a.creator?.name, 'Artist unknown'),
           kind: byText(a.kind, 'Other'), country: l.country, polity: l.polity,
         },

@@ -492,3 +492,19 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .prose .source-list .siglum { font-weight: 600; }
 .lead.citation { font-family: var(--sans); font-size: 1.02rem; }
 .popover-source .citation, .popover-note p { font-size: .88rem; }
+
+/* series and other wholes */
+.series-line { margin: -.6rem 0 .6rem; font-size: 1rem; }
+.part-nav { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin: 0 0 1rem; font-size: .9rem; }
+.part-nav a { text-decoration: none; padding: .3rem .7rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); max-width: 48%; }
+.part-nav a:hover { border-color: var(--accent); }
+.part-next { margin-left: auto; text-align: right; }
+.parts-grid { list-style: none; padding: 0; margin: .6rem 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: .7rem; }
+.part-card { display: flex; flex-direction: column; gap: .15rem; text-decoration: none; color: var(--text); padding: .45rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); height: 100%; }
+.part-card:hover { border-color: var(--accent); color: var(--text); }
+.part-card img, .part-img-empty { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; background: var(--bg); display: block; }
+.part-img-empty { background: repeating-linear-gradient(45deg, var(--bg), var(--bg) 6px, var(--line) 6px, var(--line) 7px); }
+.part-number { font-size: .78rem; font-weight: 600; color: var(--accent); }
+.part-title { font-size: .9rem; line-height: 1.3; }
+:root { --c-publication: #7f6a00; }
+.cat-publication { --cat: var(--c-publication); }

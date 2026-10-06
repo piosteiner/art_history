@@ -90,6 +90,11 @@ its backlinks (`mentioned_in`) as "Mentioned in", a term's as "Used in".
   relationships aren't repeated below it; on owners' pages they carry the same tag. In the graph, implied edges are
   dashed and faded. The artwork's map route includes its `kept_in` stops without frontend changes.
 
+## Series and other wholes (API migration 037)
+A part's page: "No. 21 of 36 in <whole>" (the chain upwards) and previous/next links; a whole's page: a grid of its parts.
+Artwork cards show "No. 21 · <series>"; sort "Series" (series title, then the number); `/artworks?part_of=<slug>` lists one
+whole's parts. `published` appears as "Publication" (also a graph filter, "Publishers"). `src/series.ts`.
+
 ## Bibliography and footnotes
 `/bibliography` (A–Z by short reference, reading statistics, filter by reading status `?status=`) and `/bibliography/<slug>`
 (citation, notes, "Cited in"). In any `*_html`: footnote numbers `sup.fn-ref` and short references `a.source-link` get popovers

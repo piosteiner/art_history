@@ -560,3 +560,44 @@ test('footnotes in texts: popovers for the note and the source; the jump keeps t
   await expect(page.locator('h1')).toHaveText('The Great Wave off Kanagawa');
   await expect(page.locator('#nabc123-n1')).toBeVisible();
 });
+
+// ---- series and other wholes (API migration 037); the live data has no series yet, so the tests bring one ----
+const SERIES = { slug: 'thirty-six-views-of-mount-fuji', title: 'Thirty-six Views of Mount Fuji', kind: 'print series', parts_count: 36 };
+async function sampleSeries(page: Page) {
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    Object.assign(body, {
+      part_of: [SERIES], part_number: '21',
+      previous_part: { slug: 'south-wind-clear-sky', title: 'South Wind, Clear Sky', part_number: '20' },
+      next_part: { slug: 'shower-below-the-summit', title: 'Shower Below the Summit', part_number: '22' },
+      parts_count: null, parts: [],
+    });
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.route(/\/v1\/artworks\/thirty-six-views-of-mount-fuji$/, async (route) => {
+    const base = { type: 'artwork', slug: SERIES.slug, title: SERIES.title, alt_titles: [], attribution_label: null, created: null, kind: 'print series',
+      medium: null, inventory_number: null, materials: [], dimensions: null, other_dimensions: [], description_html: null, images: [], image_url: null,
+      creator: { slug: 'katsushika-hokusai', name: 'Katsushika Hokusai' }, institution: null, wikidata_id: null, metadata: {}, updated_at: '',
+      relationships: [], country: null, polities: [], names: [], part_of: [], part_number: null, previous_part: null, next_part: null, parts_count: 36,
+      parts: [
+        { slug: 'south-wind-clear-sky', title: 'South Wind, Clear Sky', part_number: '20', kind: 'woodblock print', created: null, image_url: null, parts: 0 },
+        { slug: 'the-great-wave-off-kanagawa', title: 'The Great Wave off Kanagawa', part_number: '21', kind: 'woodblock print', created: { label: 'c. 1831' }, image_url: null, parts: 0 },
+      ] };
+    await route.fulfill({ json: base });
+  });
+  await page.route(/\/v1\/map\/artworks\/thirty-six-views-of-mount-fuji$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', entity: { type: 'artwork', slug: SERIES.slug, name: SERIES.title }, features: [] } }));
+}
+
+test('series: "No. 21 of 36 in …" with previous/next; the series page shows its parts', async ({ page }) => {
+  await sampleSeries(page);
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.series-line')).toHaveText(/No\. 21\s+of 36 in\s+Thirty-six Views of Mount Fuji/);
+  await expect(page.locator('.part-nav .part-prev')).toContainText('South Wind, Clear Sky');
+  await expect(page.locator('.part-nav .part-next')).toContainText('Shower Below the Summit');
+  await page.locator('.series-line a').click();
+  await expect(page.locator('h1')).toHaveText('Thirty-six Views of Mount Fuji');
+  await expect(page.locator('.parts h2')).toContainText('2 of 36');
+  await expect(page.locator('.parts-grid .part-card')).toHaveCount(2);
+  await expect(page.locator('.parts-grid .part-card').nth(1)).toContainText('No. 21');
+});

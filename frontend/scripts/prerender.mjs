@@ -72,7 +72,7 @@ function describe(plural, e) {
   const facts = {
     artists: [dateSpan(e.birth, e.death), e.birth_place ? `born in ${e.birth_place.name}${country && country !== e.birth_place.name ? `, ${country}` : ''}` : ''],
     // an attribution ("Workshop of Rubens") stands instead of the creator's name; then any co-creators
-    artworks: [[e.creator ? e.attribution_label ?? e.creator.name : e.attribution_label,
+    artworks: [e.part_of?.length ? `${e.part_number ? `No. ${e.part_number} in` : "Part of"} ${e.part_of[0].title}` : "", [e.creator ? e.attribution_label ?? e.creator.name : e.attribution_label,
       ...(e.creators ?? []).filter((c) => !c.main).map((c) => c.name)].filter(Boolean).join(', '), e.created?.label, e.kind, e.institution ? e.institution.name : ''],
     movements: [e.kind, e.period?.label],
     polities: [e.kind, e.period?.label],

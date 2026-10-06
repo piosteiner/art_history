@@ -60,7 +60,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Place geometry from Natural Earth (032/033: `boundaries`, `place_geo`, `npm run boundaries`, place finder) built 2026-10-06.
   Sites (034: institution/artwork `location`, `site_geo`, presence at institutions, `houses`, `/v1/map/sites`) built 2026-10-06; frontend uses it since 2026-10-06 (venues on the map, "could have met there", museums layer).
   Bibliography (035/036: `bibliography`, `[[source/slug|S.]]` footnotes after the KHIST UZH guide, `src/bibliography.js`) built 2026-10-06; frontend shows it since 2026-10-06 (/bibliography, footnote and source popovers).
-  Series (037: `artworks.parent_id` + `part_number`/`parts_count`, `no_parent_cycle()`, `published`) built 2026-10-06 — frontend still to show it.
+  Series (037: `artworks.parent_id` + `part_number`/`parts_count`, `no_parent_cycle()`, `published`) built 2026-10-06; frontend shows it since 2026-10-06 ("No. 21 of 36 in …", previous/next, parts grid, ?part_of=).
   Ideas later: impressions vs. design for prints; nightly auto-export commit; ISBN/DOI lookup for sources. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Open: after the owner fixes The Great Wave's inventory number (no institution), add a migration

@@ -1,5 +1,6 @@
 import { listEntities } from '../api';
-import { countryName, countryText, creatorNames, dateLabel, displayName, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
+import { partLabel } from '../series';
+import { countryName, countryText, creatorNames, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
@@ -26,7 +27,7 @@ function cardParts(plural: Plural, item: AnyItem) {
     case 'artworks': {
       const a = item as ItemByPlural['artworks'];
       [name, date, image] = [a.title, dateLabel(a.created), a.image_url];
-      detail = [a.kind, creatorNames(a), countryText(a.country)].filter(Boolean).join(' · ');
+      detail = [a.part_of ? [partLabel(a.part_number), a.part_of.title].filter(Boolean).join(' · ') : '', a.kind, creatorNames(a), countryText(a.country)].filter(Boolean).join(' · ');
       break;
     }
     case 'places': {
@@ -117,6 +118,8 @@ export function list(main: HTMLElement, plural: Plural) {
   const fieldOf = (e: Entry<AnyItem>) => String((e.item as unknown as Record<string, unknown>)[FILTER?.field ?? ''] ?? 'other');
   const labelOf = (v: string) => (plural === 'bibliography' ? STATUS_LABEL[v] ?? v : v);
   let category = FILTER ? new URLSearchParams(location.search).get(FILTER.param) : null;
+  // artworks: the parts of one whole (`?part_of=<slug>`, linked from the series page), in their order
+  const partOf = plural === 'artworks' ? new URLSearchParams(location.search).get('part_of') : null;
   const categoriesEl = main.querySelector<HTMLElement>('#categories')!;
   function drawCategories() {
     const counts = new Map<string, number>();
@@ -137,7 +140,8 @@ export function list(main: HTMLElement, plural: Plural) {
 
   function draw() {
     const words = queryWords(query);
-    const pool = category ? all.filter((e) => fieldOf(e) === category) : all;
+    const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf) : all;
+    const pool = category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole;
     const hits = query ? pool.filter((e) => matches(e, query)) : pool;
     let last = '';
     const row = (e: Entry<AnyItem>) => {
@@ -184,6 +188,11 @@ export function list(main: HTMLElement, plural: Plural) {
       if (!current()) return;
       all = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
       if (FILTER) drawCategories();
+      if (partOf) {
+        const whole = all.find((x) => x.slug === partOf);
+        render(main.querySelector('#stats')!, html`Parts of ${whole ? link('artwork', partOf, whole.name) : partOf} · <a href="/artworks">all artworks</a>`);
+        if (sortSelect.querySelector('option[value=series]')) { sort = 'series'; sortSelect.value = 'series'; }
+      }
       const stats = (res as unknown as { stats?: { total: number; read: number; reading: number; to_read: number } }).stats;
       if (stats && stats.total) render(main.querySelector('#stats')!, html`${String(stats.read)} read · ${String(stats.reading)} reading · ${String(stats.to_read)} to read`);
       const options = sortOptions(plural, all);

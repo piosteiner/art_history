@@ -13,12 +13,13 @@ import type {
 } from '../types';
 import { guard, loading, showError } from './common';
 import { wireTextLinks } from '../glossary';
+import { partNav, partsGrid, seriesLine } from '../series';
 import { STATUS_LABEL } from '../catalog';
 
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
 const CATEGORY_ORDER: Category[] = [
-  'glossary', 'presence', 'association', 'architecture', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'depiction', 'provenance',
+  'glossary', 'presence', 'association', 'architecture', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'publication', 'depiction', 'provenance',
 ];
 const CATEGORY_LABEL: Record<string, string> = {
   presence: 'Places (physically there)',
@@ -33,6 +34,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   polity: 'States and nationality',
   glossary: 'Related terms',
   architecture: 'Buildings',
+  publication: 'Publication',
 };
 
 /**
@@ -155,7 +157,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Inventory no.', e.inventory_number],
           ['Also known as', otherNames(e)],
         ],
-        extra: [provenanceSection(e.provenance ?? [])].filter((x): x is Html => !!x),
+        extra: [partsGrid(e), provenanceSection(e.provenance ?? [])].filter((x): x is Html => !!x),
       };
     }
     case 'place':
@@ -305,6 +307,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         <h1${langAttr(displayName(e).lang)}>${displayName(e).ruby ? trusted(displayName(e).ruby) : v.title}</h1>
         ${originalLine(e)}
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
+        ${e.type === 'artwork' ? html`${seriesLine(e)}${partNav(e)}` : ''}
         <p class="detail-actions">
           ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
           ${e.type !== 'place' && e.type !== 'term' && e.type !== 'source' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}

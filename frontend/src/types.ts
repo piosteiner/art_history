@@ -1,4 +1,5 @@
 // Response shapes of https://api.arthistory.piogino.ch/v1 (reference: backend/docs/api.md).
+import type { PartRef, SiblingRef, WholeRef } from './series';
 
 /** Plural URL segment of an entity type (`/v1/artists/…`). */
 export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities' | 'glossary' | 'bibliography';
@@ -41,7 +42,7 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture';
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication';
 
 export interface Relationship {
   type: string;
@@ -155,6 +156,8 @@ export interface CreatorRef extends Ref { main: boolean; role: string | null; ce
 export interface ArtworkItem extends Located, Titled {
   slug: string; title: string; created: DateRange | null; kind: string | null; image_url: string | null;
   creator: Ref | null; creators?: CreatorRef[];
+  /** Series (migration 037): the nearest whole and the position in it. */
+  part_of?: { slug: string; title: string } | null; part_number?: string | null;
 }
 export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
@@ -208,6 +211,10 @@ export interface Artwork extends DetailBase, Located, Titled {
   created: DateRange | null; kind: string | null; medium: string | null; inventory_number: string | null;
   materials: string[]; dimensions: Dimensions | null;
   other_dimensions?: PartDimensions[]; // detail only; empty list when there are none
+  /** Series (migration 037): a part has the chain of wholes and its neighbours; a whole has its parts in order. */
+  part_of?: WholeRef[]; part_number?: string | null;
+  previous_part?: SiblingRef | null; next_part?: SiblingRef | null;
+  parts_count?: number | null; parts?: PartRef[];
   description_html: string | null;
   images: Image[]; image_url: string | null;
   creator: Ref | null; creators?: CreatorRef[]; institution: Ref | null;
