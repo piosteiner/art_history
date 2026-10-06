@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Main creator in the network graph (migration 029)
+- **What:** `relationship_types.derived` + vocabulary entry `creator` (artwork → artist, category `collaboration`,
+  derived); view `graph_edges` = relationships + one edge per `artworks.creator_id`; `/v1/graph` walks the view;
+  trigger `relationships_not_derived` rejects storing derived types; the admin relationship form hides them;
+  `/v1/vocabulary` returns `derived`.
+- **Why:** owner: an artwork's network must show its artist (only co-creators were edges so far).
+- **Frontend:** nothing needed (new edges use the existing category `collaboration`; the type comes from
+  `/v1/vocabulary`, so the category filter includes it).
+- **Tested:** e2e 67 passing (`cocreators.spec.js` extended: graph edges, form, trigger).
+- **Revert:** redeploy the previous commit, then as owner: `DROP VIEW graph_edges; DROP TRIGGER relationships_not_derived
+  ON relationships; DROP FUNCTION relationships_not_derived(); DELETE FROM relationship_types WHERE code = 'creator';
+  ALTER TABLE relationship_types DROP COLUMN derived; DELETE FROM schema_migrations WHERE name = '029_graph_creator_edges.sql';`
+
 ### Several creators per artwork (migration 028)
 - **What:** relationship type `co_creator` (artwork → artist, category `collaboration`; label = their part, certainty =
   how sure); SQL function `artwork_creators(id)`; API: artworks have `creators` `[{slug, name, main, role, certainty}]`

@@ -40,7 +40,7 @@ a sculpture — has `width_cm: null` and `label: "50 cm (height)"`; `null` witho
 Artworks: who made it. `creator` `{slug, name}` is the main creator (`null` if unknown). **`creators`** lists all of
 them, the main one first: `[{slug, name, main, role, certainty}]`. Further creators (rare: Rubens painted the figures,
 Jan Brueghel the landscape) are relationships `co_creator` (artwork → artist, labels "co-creator" / "co-creator of",
-category `collaboration`, in the graph); `role` is that relationship's note ("landscape"), `certainty` attested ·
+category `collaboration`; the main creator is the derived graph edge `creator`); `role` is that relationship's note ("landscape"), `certainty` attested ·
 probable · possible · disputed. `attribution_label` (detail only) is free text: "Workshop of Rubens", "Attributed to …",
 "Anonymous". With a creator it qualifies the creator; show it **instead of** the name, linked to the creator
 ("Workshop of Rubens" → Rubens). Without a creator, show it on its own.
@@ -120,7 +120,8 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 
 ## Vocabulary
 `GET /v1/vocabulary` — relationship types: `code, label, inverse_label, category, is_physical_presence, is_symmetric,
-subject_types, object_types, description`. `category` is meant for map/graph layers and legends.
+subject_types, object_types, description, derived`. `category` is meant for map/graph layers and legends. `derived: true`
+= computed from a field, only in the graph (`creator`: an artwork's main creator); never in an entry's `relationships`.
 
 ## Map (GeoJSON, `[longitude, latitude]`)
 - `GET /v1/map/<type>/:slug` — one entity's places. Point features with `properties.layer`:
@@ -136,3 +137,5 @@ links both ways up to `depth` (1–4) hops. Default `types`: everything except p
 → `{root, depth, types, truncated, nodes: [{id: "artist/…", type, slug, name, kind, depth, period}],
 edges: [{source, target, type, label, category, symmetric, certainty, note, period}]}` — `id`/`source`/`target`
 match, ready for d3-force or similar. At most 500 nodes (`truncated: true` beyond that).
+An artwork's main creator is an edge of type `creator` (artwork → artist, category `collaboration`, label "creator"),
+further creators `co_creator` — so artists and their works are connected in the network.

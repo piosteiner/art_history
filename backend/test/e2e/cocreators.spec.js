@@ -1,5 +1,6 @@
 // Several creators (migration 028): the main creator stays the creator field, further ones are co_creator
 // relationships artwork → artist; the API lists all in `creators`, the artist page and ?creator= include co-created works.
+// Both are edges in the graph; the main creator's are derived (migration 029).
 const { test, expect, sql } = require('./helpers');
 
 const API = 'http://127.0.0.1:3006/v1';
@@ -31,5 +32,16 @@ test('a co-creator added on the artwork page appears in creators, on the artist 
   for (const slug of ['test-rubens', 'test-brueghel']) {
     expect((await api(request, `/artworks?creator=${slug}`)).data.map((x) => x.slug)).toEqual(['test-garden-of-eden']);
   }
+  // the graph has both: the main creator (derived from the column, migration 029) and the co-creator
+  const g = await api(request, '/graph/artworks/test-garden-of-eden?depth=1');
+  expect(g.edges.map((e) => [e.type, e.target]).sort()).toEqual([['co_creator', 'artist/test-brueghel'], ['creator', 'artist/test-rubens']]);
+  const fromArtist = await api(request, '/graph/artists/test-rubens?depth=1&types=creator');
+  expect(fromArtist.nodes.map((n) => n.id)).toContain('artwork/test-garden-of-eden');
+  // …but "creator" is not a relationship one can enter
+  await userA.goto('/artworks/test-garden-of-eden');
+  await expect(userA.locator('#r-type option[value="creator"]')).toHaveCount(0);
+  expect(() => sql(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+    VALUES ('artwork', entity_id('artwork', 'test-garden-of-eden'), 'creator', 'artist', entity_id('artist', 'test-brueghel'))`)).toThrow(/derived/);
+
   sql("DELETE FROM artworks WHERE slug = 'test-garden-of-eden'; DELETE FROM artists WHERE slug IN ('test-rubens', 'test-brueghel')");
 });

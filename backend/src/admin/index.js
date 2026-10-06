@@ -484,14 +484,14 @@ router.get('/history', async (req, res) => {
 // Types that start from this entity type (it is the subject). With { reverse: true } also the ones that end at it,
 // as "~code" with the inverse label ("commissioned by"), whose targets are the subject types — so a commission can
 // be entered on the artwork's page. Saving a "~" type swaps subject and object: storage stays canonical.
-// Symmetric types have no reverse entry (they already read both ways).
+// Symmetric types have no reverse entry (they already read both ways). Derived types (the creator, 029) are columns.
 async function relationshipTypes(db, entityType, { reverse = false } = {}) {
   const { rows } = await db.query(`
     SELECT code, label, object_types::text[] AS object_types, false AS reverse, sort_order FROM relationship_types
-    WHERE $1::entity_type = ANY (subject_types)
+    WHERE $1::entity_type = ANY (subject_types) AND NOT derived
     UNION ALL
     SELECT '~' || code, inverse_label, subject_types::text[], true, sort_order FROM relationship_types
-    WHERE $2 AND $1::entity_type = ANY (object_types) AND NOT is_symmetric
+    WHERE $2 AND $1::entity_type = ANY (object_types) AND NOT is_symmetric AND NOT derived
     ORDER BY reverse, sort_order`, [entityType, reverse]);
   return rows;
 }

@@ -143,6 +143,12 @@ YAML, graph) would need new code for it. A relationship already carries what a c
 `?creator=` filter is `creator_id = x OR EXISTS (co_creator relationship)`. Free-text qualifiers ("Workshop of …",
 "Attributed to …") stay in `attribution_label`.
 
+**In the graph (migration 029):** the main creator is a vocabulary entry with `derived = true`. The view `graph_edges`
+returns the stored relationships `UNION ALL` one computed edge per `artworks.creator_id`, in the same columns, and the
+graph walks this view instead of the table. Postgres pushes a `WHERE object_id = …` into both branches of a
+`UNION ALL` view, so each branch still uses its own index. Derived types can't be stored (trigger
+`relationships_not_derived`) and the admin form doesn't offer them, so the creator is entered in one place only.
+
 ## Polities and countries (migrations 018, 019)
 "Which country is it in today?" and "which polity did it belong to?" are kept apart:
 - **Today** is derived, never entered: `place_country(place_id)` walks up `parent_id` with a recursive CTE that stops at

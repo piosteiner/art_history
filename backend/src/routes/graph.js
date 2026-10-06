@@ -29,6 +29,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const found = await apiPool.query(`SELECT id FROM ${e.table} WHERE slug = $1`, [req.params.slug]);
   if (!found.rows.length) throw notFound(`no ${e.type} "${req.params.slug}"`);
 
+  // graph_edges (migration 029) = the stored relationships + each artwork's main creator (artworks.creator_id).
   // Breadth-first walk. A recursive CTE may reference itself only once, so both directions go into a
   // LATERAL subquery. UNION (not UNION ALL) drops rows already produced, and the depth cap guarantees termination
   // even in cyclic data (A influenced B influenced A). min(depth) per node = its distance from the start.
@@ -39,10 +40,10 @@ router.get('/:plural/:slug', async (req, res) => {
       SELECT n.type, n.id, w.depth + 1
       FROM walk w
       CROSS JOIN LATERAL (
-        SELECT r.object_type, r.object_id FROM relationships r
+        SELECT r.object_type, r.object_id FROM graph_edges r
          WHERE r.subject_type = w.type AND r.subject_id = w.id AND r.relationship_type = ANY ($4)
         UNION ALL
-        SELECT r.subject_type, r.subject_id FROM relationships r
+        SELECT r.subject_type, r.subject_id FROM graph_edges r
          WHERE r.object_type = w.type AND r.object_id = w.id AND r.relationship_type = ANY ($4)
       ) AS n (type, id)
       WHERE w.depth < $3
@@ -62,7 +63,7 @@ router.get('/:plural/:slug', async (req, res) => {
                 'type', rt.code, 'label', rt.label, 'category', rt.category, 'symmetric', rt.is_symmetric,
                 'certainty', r.certainty, 'note', r.label, 'period', range_json(r.period, r.period_label))
               ORDER BY rt.sort_order, s.name), '[]')
-         FROM relationships r
+         FROM graph_edges r
          JOIN relationship_types rt ON rt.code = r.relationship_type
          JOIN nodes n1 ON n1.type = r.subject_type AND n1.id = r.subject_id
          JOIN nodes n2 ON n2.type = r.object_type  AND n2.id = r.object_id

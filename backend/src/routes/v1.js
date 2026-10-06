@@ -28,7 +28,7 @@ router.get('/health', async (req, res) => {
 router.get('/vocabulary', async (req, res) => {
   const { rows } = await apiPool.query(`
     SELECT code, label, inverse_label, category, is_physical_presence, is_symmetric,
-           subject_types::text[] AS subject_types, object_types::text[] AS object_types, description
+           subject_types::text[] AS subject_types, object_types::text[] AS object_types, description, derived
     FROM relationship_types ORDER BY sort_order`);
   res.json({ data: rows });
 });

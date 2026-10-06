@@ -54,6 +54,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   People instead of patrons (024: enum value renamed, `people`, roles from relationships, `depicts_person`) built 2026-10-05.
   Glossary (026/027: `glossary`, `[[slug]]` links in Markdown, view `glossary_links`, `/v1/glossary`) built 2026-10-05.
   Several creators (028: relationship `co_creator`, `artwork_creators()`, API `creators`) built 2026-10-06 — frontend still to show them (CHANGELOG).
+  Main creator in the graph (029: derived vocabulary type `creator`, view `graph_edges`) built 2026-10-06.
   Ideas later: nightly auto-export commit. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Open: after the owner fixes The Great Wave's inventory number (no institution), add a migration
