@@ -35,7 +35,7 @@ const HINTS = {
 // Field names and explanations per entry type, where one word means different things ("kind" of an artwork vs. of a
 // place) or two fields are easily confused (an artwork's object type, medium and materials).
 const LABELS = {
-  'artwork.kind': 'Object type', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
+  'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
   'term.definition': 'Short definition', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
   'polity.kind': 'Kind of polity', 'person.kind': 'Kind (person or group)', 'movement.kind': 'Kind',
 };
@@ -43,6 +43,8 @@ const TYPE_HINTS = {
   'artwork.kind': 'What sort of object it is, in a word or two: painting, woodblock print, hanging scroll, sculpture, vase. Pick a term from the list so works group together.',
   'artwork.medium': html`For people to read: one line, worded like a museum label and shown exactly as written — <i>Oil on canvas</i> · <i>Woodblock print; ink and colour on paper</i> · <i>Bronze, lost-wax cast</i>.`,
   'artwork.materials': 'For filtering: the individual materials, one per line, lowercase and singular — ink · paper · bronze · silk. Substances and supports only, no techniques ("woodblock print" belongs in object type / medium). Type them, or click a suggestion below.',
+  'place.boundary_code': html`ISO code of a country (<code>JP</code>) or region (<code>JP-13</code> Tokyo, <code>FR-IDF</code>) — the outline and
+    the marker then come from Natural Earth, no point or drawing needed. Countries get it from their country code automatically.`,
   'place.kind': 'settlement (city, town, village) · building · site (archaeological site, landscape) · region · country',
   'movement.kind': 'period (Edo period) · movement (Impressionism) · school (Ukiyo-e, Rinpa) · style',
   'institution.kind': 'museum · academy · temple · church · gallery · library … — pick a term from the list',
@@ -192,6 +194,7 @@ function fieldInput(key, kind, f, ctx) {
     const options = ctx.refs[key] || [];
     const target = kind === 'parent' ? ctx.type : kind.slice(4);
     const canCreate = ['artist', 'institution'].includes(target) && kind !== 'parent';  // src/admin/autocreate.js
+    const placeParent = kind === 'parent' && target === 'place';
     const confirm = (ctx.confirmNew || {})[key];
     return html`<div class="field${err}"><label for="${id}">${label}</label>
       <input id="${id}" name="${name}" value="${f[key]}" list="${id}-list" placeholder="start typing a name (typos are fine)" autocomplete="off"
@@ -199,7 +202,8 @@ function fieldInput(key, kind, f, ctx) {
       <datalist id="${id}-list">${options.map((o) => html`<option value="${o.slug}">${o.name}</option>`)}</datalist>
       ${confirm ? html`<label class="choice"><input type="checkbox" name="new.${key}" value="1"> create a new ${target} “${confirm}” anyway</label>` : ''}
       ${hint(canCreate ? `Pick from the list — or type the name of a new ${target}: it is created with the save and marked “to complete”. Empty = none.`
-        : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}
+        : placeParent ? 'Pick from the list — or type a country or region name (Japan, Provence-Alpes-Côte d’Azur): it is created with its outline. Empty = none.'
+          : `Slug of the ${kind === 'parent' ? 'parent' : kind.slice(4)}. Empty = none.`)}
       ${key === 'creator' ? hint(ctx.coCreators && ctx.coCreators.length
         ? html`The main creator. Co-creators: ${ctx.coCreators.map((c, i) => html`${i ? ', ' : ''}<b>${c.name}</b>${c.label ? ` (${c.label})` : ''}`)} — changed on the artwork's page.`
         : 'The main creator. Further creators: “+ Add co-creator” on the artwork\'s page.') : ''}</div>`;

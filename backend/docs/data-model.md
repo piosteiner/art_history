@@ -231,6 +231,16 @@ all the same way, and `glossary_links` is now `content_links WHERE target_type =
 Backlinks ("mentioned in") read `content_links`. The view scans every text on each call, which is fine at this size.
 If it gets slow, it can become a `MATERIALIZED VIEW` refreshed by a trigger, or a links table kept up to date on save.
 
+## Place geometry (migration 032)
+`boundaries` (reference data, `scripts/boundaries.js`): Natural Earth countries and first-level regions by ISO code,
+`geography(MultiPolygon)` with a GiST index, plus a label point. `places.boundary_code` references it; the rule
+"a place needs geometry" is `CHECK (location IS NOT NULL OR area IS NOT NULL OR boundary_code IS NOT NULL)`; a BEFORE
+trigger fills `boundary_code` for countries from `country_code`. The view `place_geo` gives every place a `marker`
+(own point → boundary label point → `ST_PointOnSurface(area)`, a point guaranteed *inside* the shape, unlike a
+centroid) and an `outline` (own area → boundary) — a view because a stored generated column can't read another
+table. Map, API and the checks read it; `parent_suggestion` finds the smallest outline containing a parentless place
+(`ST_Covers` … `ORDER BY ST_Area`), `boundary_available` countries/regions that could have an outline.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the

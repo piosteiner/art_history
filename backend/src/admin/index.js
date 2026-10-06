@@ -28,6 +28,7 @@ const quality = require('./quality');
 const images = require('./images');
 const provenance = require('./provenance');
 const imagesearch = require('./imagesearch');
+const placefinder = require('./placefinder');
 
 const { thumbUrl } = images;
 const { searchPage, reviewPage } = require('./wikidata-ui');
@@ -135,7 +136,7 @@ async function withTx(user, fn, { source = 'admin' } = {}) {
 // Postgres error → a sentence for the form. Constraint names come from the schema (e.g. places_slug_key).
 class UserError extends Error {}
 const RULES = {
-  places_check: 'A place needs coordinates (or an area).',
+  places_check: 'A place needs coordinates, an outline, or a boundary code (a country JP, a region JP-13).',
   places_check1: 'A place cannot be its own parent.',
   movements_check: 'A movement cannot be its own parent.',
   artists_check: 'Death cannot be before birth.',
@@ -154,6 +155,7 @@ function friendly(err) {
     if (/^images_\w+_url$/.test(err.constraint || '')) return 'This image is already one of the entry\'s images.';
     return /slug/.test(err.constraint || '') ? 'That slug is already taken.' : `Duplicate: ${err.detail || err.message}`;
   }
+  if (err.constraint === 'places_boundary_code_fkey') return 'Unknown boundary code — use an ISO code like JP (a country) or JP-13 (a region).';
   if (err.code === '23503' || err.code === '23001') {
     const m = /referenced from table "(\w+)"/.exec(err.detail || '');
     if (m && m[1] === 'provenance') return 'Still named in the provenance of an artwork (as owner or place) — change those steps first.';
@@ -394,21 +396,11 @@ router.post('/preview', async (req, res) => {
 // needs no extra CSP exception and we can send the identifying User-Agent its usage policy asks for
 // (https://operations.osmfoundation.org/policies/nominatim/: max 1 request/s, searches only on explicit submit).
 // polygon_geojson + polygon_threshold: the boundary of regions/cities, simplified to ~500 m, as an area suggestion.
-let lastGeocode = 0;
 router.get('/geocode', async (req, res) => {
   const q = String(req.query.q || '').trim().slice(0, 200);
   if (!q) return res.json([]);
-  const wait = lastGeocode + 1100 - Date.now();
-  if (wait > 0) await new Promise((r) => setTimeout(r, wait));
-  lastGeocode = Date.now();
-  const url = new URL('https://nominatim.openstreetmap.org/search');
-  url.search = new URLSearchParams({ q, format: 'jsonv2', limit: '5', polygon_geojson: '1', polygon_threshold: '0.005',
-    'accept-language': 'en' });
   try {
-    const r = await fetch(url, { headers: { 'User-Agent': 'arthistory-admin/1.0 (+https://arthistory.piogino.ch)' },
-      signal: AbortSignal.timeout(8000) });
-    if (!r.ok) throw new Error(`Nominatim ${r.status}`);
-    const hits = await r.json();
+    const hits = await placefinder.nominatim({ q, limit: '5', polygon_geojson: '1', polygon_threshold: '0.005' });
     res.json(hits.map((h) => ({
       name: h.display_name, lat: Number(h.lat), lon: Number(h.lon),
       bbox: h.boundingbox ? h.boundingbox.map(Number) : null,  // [south, north, west, east]
@@ -790,7 +782,8 @@ router.get('/:plural', async (req, res) => {
     body: html`<h1>${humanize(t.folder)}</h1>
       <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
-        <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a></form>
+        <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a>
+        ${t.type === 'place' ? html`<a class="button secondary" href="/places/new/find">+ find a place…</a>` : ''}</form>
       ${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
         ${rows.slice(0, PAGE).map((r) => html`<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
@@ -876,6 +869,50 @@ router.post('/:plural/:slug/wikidata', async (req, res) => {
   return e ? wikidataApply(req, res, req.t, e) : notFoundPage(req, res);
 });
 
+// Find a place and fill the new-place form from it (src/admin/placefinder.js, migration 032).
+router.get('/places/new/find', async (req, res) => {
+  const q = String(req.query.q || '').trim().slice(0, 200);
+  let hits = [];
+  let error = null;
+  if (q) { try { hits = await placefinder.candidates(q); } catch (err) { error = `Place search failed: ${err.message}`; } }
+  send(req, res, {
+    title: 'Find a place', page: { type: 'place', slug: null, mode: 'new' },
+    body: html`<p class="muted"><a href="/places">Places</a></p><h1>New place from a search</h1>
+      <p class="muted">Pick the place: its name (also in other languages), kind and country are filled in; countries and
+        regions get their outline from Natural Earth, smaller places a point (Wikidata's when there is an item); the
+        parent is found from what we already have. You check the form and press Create.</p>
+      <form method="get" action="/places/new/find" class="bar"><input type="search" name="q" value="${q}" class="grow" aria-label="place"
+        placeholder="e.g. Arles · Kyoto · Saitama Prefecture · Louvre"><button>Search</button></form>
+      ${error ? html`<p class="flash error">${error}</p>` : ''}
+      ${q && !error && !hits.length ? html`<p class="muted">Nothing found.</p>` : ''}
+      <div class="table-wrap"><table class="place-hits"><tbody>${hits.map((h) => html`<tr>
+        <td><b>${h.name}</b> <span class="tag">${h.kind}</span>${h.country_code ? html` <span class="tag">${h.country_code}</span>` : ''}
+          <div class="muted small">${h.label}</div></td>
+        <td><form method="post" action="/places/new/find"><input type="hidden" name="pick" value="${JSON.stringify(h)}">
+          <button class="small">Use this</button></form></td></tr>`)}</tbody></table></div>
+      <p class="muted small">Search: © OpenStreetMap contributors (Nominatim) — used for finding only.</p>`,
+  });
+});
+
+router.post('/places/new/find', async (req, res) => {
+  let pick;
+  try { pick = JSON.parse(String(req.body.pick || '')); } catch { pick = null; }
+  if (!pick || typeof pick !== 'object') return res.redirect(303, '/places/new/find');
+  let draft;
+  try {
+    draft = await placefinder.draftFor(adminPool, pick, wikidata.coordsOf, wikidata.slugify);
+  } catch (err) {
+    return send(req, res, { title: 'Find a place', status: 422, flash: { kind: 'error', text: `That result can't be used: ${err.message}` },
+      body: html`<p><a href="/places/new/find">← search again</a></p>` });
+  }
+  const t = BY_TYPE.place;
+  const base = Object.fromEntries(Object.entries(docToForm({}, t.fields)).map(([k, v]) => [`f.${k}`, v]));
+  await adminPool.query(`INSERT INTO admin_drafts (user_id, entity_type, entity_id, form) VALUES ($1, 'place', NULL, $2)
+    ON CONFLICT (user_id, entity_type, entity_id) DO UPDATE SET form = EXCLUDED.form, updated_at = now()`,
+  [req.user.id, JSON.stringify({ ...base, ...draft.form })]);
+  res.redirect(303, '/places/new?draft=1');
+});
+
 router.get('/:plural/new', async (req, res) => {
   const { t } = req;
   const draft = await drafts.getDraft(adminPool, req.user.id, t.type, null);
@@ -921,7 +958,9 @@ async function saveEntity(user, t, body, existing) {
     await withTx(user, async (db) => {
       const idOf = async (type, s) => (await db.query('SELECT entity_id($1, $2) AS id', [type, s])).rows[0].id;
       const newSlugs = await autocreate.create(db, auto.creates);
-      for (const [key, s] of newSlugs) row.refs.find((r) => r.col === REF_COLUMNS[key]).slug = s;
+      for (const [key, s] of newSlugs) {
+        if (key === 'parent') row.parent = s; else row.refs.find((r) => r.col === REF_COLUMNS[key]).slug = s;
+      }
       created = auto.creates;
       for (const r of row.refs) {
         const id = r.slug === null ? null : await idOf(r.type, r.slug);
@@ -1082,6 +1121,8 @@ router.get('/:plural/:slug', async (req, res) => {
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
   const provSteps = t.type === 'artwork' ? await provenance.read(adminPool, e.id) : [];
+  const boundary = t.type === 'place' && e.doc.boundary_code
+    ? (await adminPool.query('SELECT code, name FROM boundaries WHERE code = $1', [e.doc.boundary_code])).rows[0] : null;
   const linkMap = await linkNames(adminPool, [...Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]),
     ...provSteps.map((p) => p.notes_md)]);
   // the entries whose texts [[link]] this one (view content_links, migration 030) — for a term: where it is used
@@ -1115,7 +1156,9 @@ router.get('/:plural/:slug', async (req, res) => {
         ${e.doc[`${t.name}_lang`] ? html` <span class="tag" lang="en">${e.doc[`${t.name}_lang`]}</span>` : ''}</p>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
         if (t.type === 'artwork' && key === 'creator') return creatorsRow(e, mainCreator, coCreators);
-        const shown = showValue(t, key, kind, e.doc, linkMap);
+        const shown = key === 'boundary_code' && boundary
+          ? html`${boundary.code} — ${boundary.name} <span class="muted">(outline and marker from Natural Earth)</span>`
+          : showValue(t, key, kind, e.doc, linkMap);
         return shown === null ? '' : html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown}</dd>`;
       })}</dl>
       ${t.type === 'term' || usedIn.length ? html`<h2 id="used-in">${t.type === 'term' ? 'Used in' : 'Mentioned in'}</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`

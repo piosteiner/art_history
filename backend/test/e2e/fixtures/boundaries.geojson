@@ -1,0 +1,221 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "properties": {
+    "ISO_A2_EH": "JP",
+    "NAME": "Japan",
+    "LABEL_X": 138.25,
+    "LABEL_Y": 36.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       129,
+       30
+      ],
+      [
+       146,
+       30
+      ],
+      [
+       146,
+       46
+      ],
+      [
+       129,
+       46
+      ],
+      [
+       129,
+       30
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "ISO_A2_EH": "IT",
+    "NAME": "Italy",
+    "LABEL_X": 12.5,
+    "LABEL_Y": 42.8
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       6.6,
+       36.6
+      ],
+      [
+       18.5,
+       36.6
+      ],
+      [
+       18.5,
+       47.1
+      ],
+      [
+       6.6,
+       47.1
+      ],
+      [
+       6.6,
+       36.6
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "ISO_A2_EH": "FR",
+    "NAME": "France",
+    "LABEL_X": 2.2,
+    "LABEL_Y": 46.2
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       -4.8,
+       42.3
+      ],
+      [
+       8.2,
+       42.3
+      ],
+      [
+       8.2,
+       51.1
+      ],
+      [
+       -4.8,
+       51.1
+      ],
+      [
+       -4.8,
+       42.3
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "ISO_A2_EH": "NL",
+    "NAME": "Netherlands",
+    "LABEL_X": 5.3,
+    "LABEL_Y": 52.1
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       3.3,
+       50.7
+      ],
+      [
+       7.2,
+       50.7
+      ],
+      [
+       7.2,
+       53.6
+      ],
+      [
+       3.3,
+       53.6
+      ],
+      [
+       3.3,
+       50.7
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "iso_3166_2": "JP-26",
+    "name": "Kyoto",
+    "longitude": 135.5,
+    "latitude": 35.3
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       135.0,
+       34.7
+      ],
+      [
+       136.1,
+       34.7
+      ],
+      [
+       136.1,
+       35.8
+      ],
+      [
+       135.0,
+       35.8
+      ],
+      [
+       135.0,
+       34.7
+      ]
+     ]
+    ]
+   }
+  },
+  {
+   "type": "Feature",
+   "properties": {
+    "iso_3166_2": "JP-14",
+    "name": "Kanagawa",
+    "longitude": 139.35,
+    "latitude": 35.4
+   },
+   "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+     [
+      [
+       138.9,
+       35.1
+      ],
+      [
+       139.8,
+       35.1
+      ],
+      [
+       139.8,
+       35.7
+      ],
+      [
+       138.9,
+       35.7
+      ],
+      [
+       138.9,
+       35.1
+      ]
+     ]
+    ]
+   }
+  }
+ ]
+}

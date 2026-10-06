@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### Places without hand-made geometry: Natural Earth boundaries, derived markers, place finder (migration 032)
+- **What:** table `boundaries` (Natural Earth, public domain: 237 countries, 4313 first-level regions; loaded by
+  `npm run boundaries`), `places.boundary_code` (FK; countries filled by a trigger from `country_code`), geometry rule
+  now point OR area OR boundary code, view `place_geo` (marker/outline, own or derived), quality view re-created
+  (`outside_parent_area` via place_geo; new info checks `parent_suggestion`, `boundary_available`). API places:
+  `location`/`area` = what to draw, `boundary_code`, `geometry_source`; map routes use `place_geo`. Admin: "+ find a
+  place…" (`src/admin/placefinder.js`: Nominatim for finding only — 1 req/s shared with the map picker — kind, names,
+  country/boundary code, point from Wikidata when there is an item, parent by `ST_Covers` or a Natural Earth region
+  created with it); typing a country/region name as a place's parent creates it with its outline.
+- **Why:** owner: setting a point for Japan or Paris by hand was counterintuitive.
+- **Tested:** smoke test; e2e 75 passing (fixture boundaries and Nominatim). Licences: Natural Earth public domain;
+  OSM outlines (ODbL) deliberately not stored.
+- **Revert:** redeploy the previous commit; as owner `DROP VIEW place_geo`, re-create 031's quality view, restore
+  `places_check` as `location IS NOT NULL OR area IS NOT NULL` (after giving code-only places a point),
+  `ALTER TABLE places DROP COLUMN boundary_code; DROP TABLE boundaries; DROP FUNCTION places_default_boundary CASCADE`.
+
 ### Wikidata: exact places for institutions (no schema change)
 - **What:** `src/admin/wikidata.js` — an institution with coordinates (P625) is offered a **building** place: an
   existing building of ours within 100 m (PostGIS `ST_DWithin`, nearest by `<->`), or a new one named by its street

@@ -17,7 +17,7 @@ const dimensions = require('./dimensions');
 // `name` is the column that names an entity (artworks have a title).
 const TYPES = [
   { type: 'place', folder: 'places', table: 'places', name: 'name', fields: {
-    name: 'name', names: 'names', kind: 'text', parent: 'parent', country_code: 'text',
+    name: 'name', names: 'names', kind: 'text', parent: 'parent', country_code: 'text', boundary_code: 'text',
     location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'movement', folder: 'movements', table: 'movements', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period',

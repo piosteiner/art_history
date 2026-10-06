@@ -73,6 +73,12 @@ texts link, `{<slug>: {name, category, definition}}` — enough for a tooltip wi
 the website's own address. Every detail response except a term's also has **`mentioned_in`** `[{type, slug, name}]`:
 the entries whose texts link this one (backlinks). A term has the same thing as `used_in`.
 
+### Places: geometry
+`location` (GeoJSON Point) is where to put the marker and `area` (MultiPolygon or `null`) the outline — the place's
+own, or derived (migration 032): a country or region with only a `boundary_code` (`JP`, `JP-13`) gets the
+**Natural Earth** outline (public domain) and its label point; a place with only an outline gets a point inside it.
+The detail says which: `geometry_source: {location: "own"|"derived", area: "own"|"boundary"|null}`.
+
 ### Names in several languages (every type)
 - `<name>` (`name`, artworks: `title`) — plain text, as before. `<name>_lang` — its language (BCP 47: `ja`, `en`, `zh-Hant`) or `null`.
 - `<name>_ruby_html` — the name with furigana as `<ruby>神奈川<rp>(</rp><rt>かながわ</rt><rp>)</rp></ruby>…` (escaped, safe

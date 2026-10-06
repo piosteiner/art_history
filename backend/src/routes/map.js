@@ -10,8 +10,9 @@ const { ENTITIES } = require('./entities');
 
 const router = express.Router();
 
-// A place's marker: its point, or a point inside its outline for regions stored as areas only.
-const MARKER = 'coalesce(p.location, ST_PointOnSurface(p.area::geometry)::geography)';
+// A place's marker (view place_geo, migration 032): its point, else its boundary's label point, else a point inside
+// its own outline.
+const MARKER = '(SELECT g.marker FROM place_geo g WHERE g.id = p.id)';
 
 router.get('/places', async (req, res) => {
   const window = yearWindowRange(req.query);

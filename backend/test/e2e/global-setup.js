@@ -12,6 +12,8 @@ module.exports = async () => {
   const run = (cmd, args, input) => execFileSync(cmd, args, { cwd: BACKEND, env: serverEnv(), input, stdio: ['pipe', 'pipe', 'pipe'] });
   run('node', ['scripts/migrate.js']);
   run('psql', ['-X', '-q', '-h', 'localhost', '-U', 'arthistory_owner', '-d', DB, '-v', 'ON_ERROR_STOP=1', '-f', 'test/e2e/reset.sql']);
+  // country/region outlines (migration 032): a few rectangles instead of the 40 MB Natural Earth files
+  run('node', ['scripts/boundaries.js', '--file', 'test/e2e/fixtures/boundaries.geojson']);
   execFileSync('node', ['scripts/import.js'], { cwd: BACKEND, env: { ...serverEnv(), CONTENT_DIR: `${BACKEND}/test/e2e/fixtures/content` }, stdio: ['pipe', 'pipe', 'pipe'] });
   fs.mkdirSync(STATE_DIR, { recursive: true });
   const auth = {};

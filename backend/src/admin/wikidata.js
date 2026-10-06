@@ -705,4 +705,10 @@ async function apply(db, t, entity, plan, choices, userId) {
   return { form, created, relationships, images, pendingImages };
 }
 
-module.exports = { search, compare, apply, slugify, sourceNote, SLUG };
+// A place's coordinates from its Wikidata item (P625), [lon, lat] or null — for the place finder.
+async function coordsOf(qid) {
+  const e = (await getEntities([qid]))[qid];
+  return e && e.missing === undefined ? coords(e) : null;
+}
+
+module.exports = { search, compare, apply, slugify, sourceNote, SLUG, coordsOf };

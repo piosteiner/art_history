@@ -23,6 +23,8 @@ const CHECKS = {
   presence_without_period: { title: 'Presence without a date', fix: 'Add a period so it appears on the timeline and the travel route.' },
   place_without_parent: { title: 'Place without parent', fix: 'Set the region/country it belongs to.' },
   missing_description: { title: 'No description', fix: 'Write a short description or biography.' },
+  parent_suggestion: { title: 'Parent suggested from the map', fix: 'The place lies inside the outline of another place — set it as the parent.' },
+  boundary_available: { title: 'Outline available', fix: 'Set the boundary code (ISO, e.g. JP or JP-13) — the outline and marker then come from Natural Earth.' },
   missing_romanization: { title: 'Name without romanization', fix: 'Add one under "Other names" (e.g. Kanagawa-oki nami ura | ja-Latn | romanization) — it is used for sorting, search and the slug.' },
   no_wikidata_id: { title: 'No Wikidata id', fix: 'Use "Wikidata…" on the entry to find and link it.' },
 };

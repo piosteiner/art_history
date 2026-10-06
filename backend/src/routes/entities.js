@@ -112,9 +112,14 @@ const ENTITIES = {
   },
   places: {
     type: 'place', table: 'places', alt: 'alt_names', name: 'name', period: null,
-    list: `t.kind, t.country_code, ST_AsGeoJSON(t.location)::jsonb AS location`,
-    detail: `t.kind, t.country_code, ST_AsGeoJSON(t.location)::jsonb AS location,
-             ST_AsGeoJSON(t.area)::jsonb AS area, t.description_md`,
+    // location / area: what to draw — own point and outline, else derived (view place_geo, migration 032):
+    // a country with only its code gets the Natural Earth outline and label point
+    list: `t.kind, t.country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location`,
+    detail: `t.kind, t.country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location,
+             (SELECT ST_AsGeoJSON(g.outline)::jsonb FROM place_geo g WHERE g.id = t.id) AS area,
+             (SELECT jsonb_build_object('location', CASE WHEN t.location IS NOT NULL THEN 'own' ELSE 'derived' END,
+                                        'area', g.outline_source) FROM place_geo g WHERE g.id = t.id) AS geometry_source,
+             t.description_md`,
     md: ['description_md'],
     filters: { kind: 't.kind::text = $', country: 't.country_code = upper($)' },
     order: 'name_sort_key(t.name, t.name_ruby, t.names)',
@@ -134,7 +139,7 @@ const ENTITIES = {
            ${countryCols('institution')}`,
     detail: `t.kind, range_json(t.founded, t.founded_label) AS founded, t.website_url, t.description_md,
              ${allImages('institution_id')},
-             (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', ST_AsGeoJSON(p.location)::jsonb)
+             (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = p.id))
                 FROM places p WHERE p.id = t.place_id) AS place, ${countryCols('institution')}`,
     md: ['description_md'],
     filters: { kind: 't.kind = $', ...countryFilters('institution') },

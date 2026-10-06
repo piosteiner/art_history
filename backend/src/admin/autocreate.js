@@ -6,6 +6,8 @@
 //   the exact name of an entry          that entry (accent- and case-insensitive, also other names)
 //   a name close to an existing one     refused once with "did you mean …?" — a "create new" tick creates it anyway
 //   anything else                       a new entry with that name, created in the same transaction as the save
+// A place's parent works the same way when the name is a country or region Natural Earth knows (migration 032): the
+// new place gets its kind, country code and boundary code — and so its outline — from there.
 const { BY_TYPE, SLUG } = require('../content');
 
 const AUTO_TYPES = new Set(['artist', 'institution']);  // types that need nothing but a name
@@ -25,9 +27,9 @@ const nameFrom = (v) => (SLUG.test(v) ? v.split('-').map((w) => w.charAt(0).toUp
 async function resolveRefs(db, t, doc, body) {
   const out = { creates: [], errors: [], confirm: {} };
   for (const [key, kind] of Object.entries(t.fields)) {
-    const type = kind.startsWith('ref:') ? kind.slice(4) : null;
+    const type = kind.startsWith('ref:') ? kind.slice(4) : kind === 'parent' && t.type === 'place' ? 'place' : null;
     const v = typeof doc[key] === 'string' ? doc[key].trim() : '';
-    if (!type || !AUTO_TYPES.has(type) || !v) continue;
+    if (!type || !(AUTO_TYPES.has(type) || type === 'place') || !v) continue;
     const target = BY_TYPE[type];
     if (SLUG.test(v) && (await db.query('SELECT entity_id($1, $2) AS id', [type, v])).rows[0].id !== null) continue;
     const name = nameFrom(v);
@@ -46,7 +48,16 @@ async function resolveRefs(db, t, doc, body) {
       }
     }
     if (exact.length > 1) { out.errors.push(`${key}: several ${type}s are called "${name}" — pick one from the list.`); continue; }
-    out.creates.push({ key, type, name });
+    let extra = {};
+    if (type === 'place') {
+      // only countries and regions Natural Earth knows (a place needs geometry); the same country first
+      const { rows: b } = await db.query(`
+        SELECT code, name, level, country_code FROM boundaries WHERE lower(f_unaccent(name)) = lower(f_unaccent($1))
+        ORDER BY (country_code = $2) DESC NULLS LAST, level LIMIT 1`, [name, doc.country_code || null]);
+      if (!b.length) { out.errors.push(`${key}: no place "${name}" yet — pick one from the list, or create it first (or use "+ find a place…").`); continue; }
+      extra = { kind: b[0].level === 0 ? 'country' : 'region', country_code: b[0].country_code, boundary_code: b[0].code };
+    }
+    out.creates.push({ key, type, name, extra });
     doc[key] = slugify(name);  // placeholder that passes validation; the real (free) slug is set when it is created
   }
   return out;
@@ -59,7 +70,9 @@ async function create(db, creates) {
   for (const c of creates) {
     const t = BY_TYPE[c.type];
     const slug = await freeSlug(db, t, c.name);
-    const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${t.name}) VALUES ($1, $2) RETURNING id`, [slug, c.name]);
+    const extra = Object.entries(c.extra || {});  // a place: kind, country_code, boundary_code
+    const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${t.name}${extra.map(([k]) => `, ${k}`).join('')})
+      VALUES ($1, $2${extra.map((_, i) => `, $${i + 3}`).join('')}) RETURNING id`, [slug, c.name, ...extra.map(([, v]) => v)]);
     slugs.set(c.key, slug);
     c.id = rows[0].id;
     c.slug = slug;

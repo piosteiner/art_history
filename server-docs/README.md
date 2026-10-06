@@ -38,6 +38,13 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
 Admin panel: WebSocket `/live` (presence, drafts) proxied by nginx with Upgrade headers. One login — app users in the `admin_users` table (scrypt); the password lives in the owner's password manager only.
 
+## Reference data (art history database)
+- `boundaries` — country and first-level region outlines from **Natural Earth** (public domain; 50m countries,
+  10m admin-1, simplified ~1 km), loaded by `cd backend && npm run boundaries` (as owner; idempotent upsert, downloads
+  ~44 MB from github.com/nvkelso/natural-earth-vector). Not part of migrations or YAML; included in the database
+  backup. Re-run after a fresh database setup, or to update the data. Dev: `npm run boundaries:dev`; tests load
+  `test/e2e/fixtures/boundaries.geojson`.
+
 ## Backups (art history database)
 Nightly at ~03:30 UTC, systemd `arthistory-backup.timer` → `scripts/backup.sh` (units: `config/systemd/`):
 1. `pg_dump` of `arthistory` (plain SQL, gzip) → `~/backups/arthistory/arthistory-YYYY-MM-DD.sql.gz`, kept 14 days.

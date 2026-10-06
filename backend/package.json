@@ -18,7 +18,9 @@
     "admin:user:dev": "DB_NAME=arthistory_dev node scripts/admin-user.js",
     "build:admin": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --minify --format=iife --target=es2020 --loader:.png=dataurl --loader:.svg=dataurl --outdir=src/admin/static",
     "build:admin:dev": "esbuild src/admin/editor/editor.js src/admin/editor/map.js --bundle --format=iife --target=es2020 --loader:.png=dataurl --loader:.svg=dataurl --sourcemap --outdir=src/admin/static-dev",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "boundaries": "node scripts/boundaries.js",
+    "boundaries:dev": "DB_NAME=arthistory_dev node scripts/boundaries.js"
   },
   "engines": {
     "node": ">=22"

@@ -48,7 +48,7 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 ## Fields
 | Folder | Fields (all optional unless marked *) |
 |---|---|
-| places | `name`*, `kind`* (settlement, building, site, region, country), `location`* `[longitude, latitude]`, `parent` (place slug), `country_code` (ISO, e.g. FR), `names`, `area` (GeoJSON polygon), `description_md` |
+| places | `name`*, `kind`* (settlement, building, site, region, country), `location` `[longitude, latitude]`, `parent` (place slug), `country_code` (ISO, e.g. FR), `boundary_code` (ISO country `JP` or region `JP-13`: outline from Natural Earth), `names`, `area` (GeoJSON polygon), `description_md` — needs `location`, `area` or `boundary_code` (countries get theirs from `country_code`) |
 | movements | `name`*, `kind`* (period, movement, school, style), `parent` (movement slug), `period`, `description_md` |
 | polities | `name`*, `kind` (empire, kingdom, dynasty, republic, …), `parent` (polity slug, e.g. Western Han ⊂ Han dynasty), `period` (when it existed; `1922/` = still exists), `country_codes` (modern countries on its territory, ISO: `[RU, UA, BY]`), `names`, `description_md` |
 | artists | `name`*, `sort_name`, `names`, `birth`, `death`, `biography_md` |

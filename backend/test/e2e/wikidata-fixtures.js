@@ -35,6 +35,8 @@ const ENTITIES = {
     claims: { P31: [stmt(item('Q6256'))], P297: [stmt('FR')], P571: [stmt(time('+1792-09-21T00:00:00Z', 11))] } },
   Q109: { id: 'Q109', labels: labels('The Great Wave', { ja: '神奈川沖浪裏' }), descriptions: { en: { value: 'woodblock print' } },
     claims: { P31: [stmt(item('Q3305213'))], P1476: [stmt({ text: '神奈川沖浪裏', language: 'ja' })], P2125: [stmt('Kanagawa-oki nami ura')] } },
+  Q34600: { id: 'Q34600', labels: labels('Kyoto'), descriptions: { en: { value: 'city in Japan' } },
+    claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 35.0117, longitude: 135.7683, globe: 'http://www.wikidata.org/entity/Q2' })] } },
   Q106: { id: 'Q106', labels: labels('oil paint'), descriptions: { en: { value: 'paint' } }, claims: {} },
   Q107: { id: 'Q107', labels: labels('canvas'), descriptions: { en: { value: 'fabric' } }, claims: {} },
   // exact places (institutions): P131 names a city district and the city; P625 + P6375 give the building
@@ -78,6 +80,16 @@ function handle(req, res) {
         descriptionurl: 'https://commons.wikimedia.org/wiki/File:Hiroshige_plum_park.jpg', extmetadata: meta('Public domain', '<a>Hiroshige</a>') }] },
       2: { index: 2, title: 'File:No licence.jpg', imageinfo: [{ mime: 'image/jpeg', thumburl: 'https://upload.wikimedia.org/test/nolicence.jpg',
         descriptionurl: 'https://commons.wikimedia.org/wiki/File:No_licence.jpg', extmetadata: {} }] } } } });  // left out: no licence
+  }
+  // Nominatim (src/admin/placefinder.js): a city and a prefecture in Japan
+  if (url.pathname === '/search') {
+    const kyoto = { lat: '35.0116', lon: '135.7681', category: 'boundary', type: 'administrative', addresstype: 'city', name: 'Kyoto',
+      display_name: 'Kyoto, Kyoto Prefecture, Japan', address: { city: 'Kyoto', 'ISO3166-2-lvl4': 'JP-26', country_code: 'jp' },
+      extratags: { wikidata: 'Q34600' }, namedetails: { name: '京都市', 'name:en': 'Kyoto', 'name:ja': '京都市', 'name:fr': 'Kyōto' } };
+    const pref = { lat: '35.25', lon: '135.44', category: 'boundary', type: 'administrative', addresstype: 'province', name: 'Kyoto Prefecture',
+      display_name: 'Kyoto Prefecture, Japan', address: { province: 'Kyoto Prefecture', 'ISO3166-2-lvl4': 'JP-26', country_code: 'jp' },
+      extratags: {}, namedetails: { name: '京都府', 'name:en': 'Kyoto Prefecture', 'name:ja': '京都府' } };
+    return json(/prefecture/i.test(p.get('q') || '') ? [pref] : [kyoto, pref]);
   }
   if (url.pathname === '/public/collection/v1.1/search') return json({ total: 2, objectIDs: [1, 2] });
   if (url.pathname.startsWith('/public/collection/v1/objects/')) {
