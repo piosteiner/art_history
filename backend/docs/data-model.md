@@ -199,6 +199,14 @@ terms with `[[slug]]` / `[[slug|words]]` (a markdown-it inline rule in `src/mark
 finds every link with `regexp_matches(…, 'g')` over all Markdown columns (relationship notes count for their subject):
 "used in" and the quality check `broken_glossary_link` read it — computed when asked, so always current.
 
+Links to any entry (migration 030): `[[type/slug]]` / `[[type/slug|words]]` (`[[artist/katsushika-hokusai]]`); a bare
+`[[slug]]` stays a glossary term. The view `content_links (entity_type, entity_id, target_type, target_slug)` finds them
+all the same way, and `glossary_links` is now `content_links WHERE target_type = 'term'` (same columns, so
+`CREATE OR REPLACE VIEW` could redefine it under the quality view that depends on it). `target_type` is text, not
+`entity_type`: a typo like `artsit` must become a quality finding (`broken_link`), not a cast error for the whole view.
+Backlinks ("mentioned in") read `content_links`. The view scans every text on each call, which is fine at this size.
+If it gets slow, it can become a `MATERIALIZED VIEW` refreshed by a trigger, or a links table kept up to date on save.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the

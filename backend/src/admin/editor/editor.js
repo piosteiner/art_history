@@ -131,17 +131,22 @@ async function renderPreview(text) {
   return res.text();  // sanitized HTML from the server
 }
 
-// Glossary links: typing "[[" followed by a few letters lists matching terms (the same typo-tolerant /lookup as the
-// pickers); picking one writes [[slug]]. filter: false — the server already ranked them, and the typed text
-// ("[[contra") wouldn't match the labels ("Contrapposto") by CodeMirror's own filter.
-async function glossaryCompletions(context) {
+// [[links]] to entries, as in Obsidian: typing "[[" and a few letters lists matching entries of every type (the same
+// typo-tolerant /lookup as the pickers); "[[artist/hoku" narrows to one type. Picking one writes [[type/slug]] — a
+// glossary term the short [[slug]] (src/markdown.js). filter: false — the server already ranked them, and the typed
+// text ("[[hoku") wouldn't match the labels ("Katsushika Hokusai") by CodeMirror's own filter.
+const LINK_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term'];
+async function entryCompletions(context) {
   const m = context.matchBefore(/\[\[[^\[\]|\n]*$/);
   if (!m) return null;
-  const q = m.text.slice(2).trim();
+  let q = m.text.slice(2).trim();
+  let types = LINK_TYPES;
+  const typed = /^([a-z]+)\/(.*)$/.exec(q);
+  if (typed && LINK_TYPES.includes(typed[1])) { types = [typed[1]]; q = typed[2].trim(); }
   if (!q) return { from: m.from, options: [], filter: false };
   let hits = [];
   try {
-    const res = await fetch(`/lookup?types=term&q=${encodeURIComponent(q)}`, { headers: { Accept: 'application/json' } });
+    const res = await fetch(`/lookup?types=${types.join(',')}&q=${encodeURIComponent(q)}`, { headers: { Accept: 'application/json' } });
     if (res.ok) hits = await res.json();
   } catch { return null; }
   const after = context.state.sliceDoc(context.pos, context.pos + 2);  // "]]" already typed after the cursor?
@@ -149,7 +154,12 @@ async function glossaryCompletions(context) {
     from: m.from,
     to: after === ']]' ? context.pos + 2 : context.pos,
     filter: false,
-    options: hits.map((h) => ({ label: h.name, detail: h.slug, type: 'text', apply: `[[${h.slug}]]` })),
+    options: hits.map((h) => ({
+      label: h.name,
+      detail: [h.type === 'term' ? 'glossary' : h.type, h.period_label].filter(Boolean).join(' · '),
+      type: 'text',
+      apply: h.type === 'term' ? `[[${h.slug}]]` : `[[${h.type}/${h.slug}]]`,
+    })),
   };
 }
 
@@ -178,7 +188,7 @@ function enhance(textarea, collab = null) {
         new LanguageSupport(markdownLanguage),
         syntaxHighlighting(liveStyle),
         EditorView.lineWrapping,
-        autocompletion({ override: [glossaryCompletions], icons: false }),
+        autocompletion({ override: [entryCompletions], icons: false }),
         theme,
         placeholder(textarea.placeholder || 'Write here — Markdown styling appears as you type.'),
         EditorView.contentAttributes.of({ 'aria-label': textarea.getAttribute('aria-label') || textarea.id || 'Markdown', spellcheck: 'true' }),

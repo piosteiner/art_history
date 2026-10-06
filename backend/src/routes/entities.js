@@ -4,7 +4,7 @@
 // Public keys are slugs; internal ids never leave the API.
 const express = require('express');
 const { apiPool } = require('../db');
-const { renderMarkdown, glossaryNames } = require('../markdown');
+const { renderMarkdown, linkNames } = require('../markdown');
 const names = require('../names');
 const { badRequest, notFound, intParam, yearWindowRange } = require('../http');
 
@@ -311,12 +311,21 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     if (!rows.length) throw notFound(`no ${e.type} "${req.params.slug}"`);
     const { id, ...entity } = rows[0];
 
-    const env = { terms: await glossaryNames(apiPool), used: new Set() };
-    const [relationships, extras] = await Promise.all([
-      apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => r.rows.map((x) => renderMd(x, ['notes_md'], env))),
+    const [rels, extras, mentionedIn] = await Promise.all([
+      apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => r.rows),
       EXTRAS[e.type] ? EXTRAS[e.type](id) : {},
+      // backlinks: the entries whose texts [[link]] this one (view content_links, migration 030); a term has used_in
+      e.type === 'term' ? null : apiPool.query(`
+        SELECT DISTINCT x.type::text AS type, x.slug, x.name, x.sort_key FROM content_links l
+        JOIN entity_index x ON (x.type, x.id) = (l.entity_type, l.entity_id)
+        WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (x.type = $1::entity_type AND x.id = $3)
+        ORDER BY x.sort_key`, [e.type, entity.slug, id]).then((r) => r.rows.map(({ sort_key: _, ...m }) => m)),
     ]);
+    // [[links]] show the linked entries' names: looked up for exactly the links in these texts
+    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md)]), used: new Set() };
+    const relationships = rels.map((x) => renderMd(x, ['notes_md'], env));
     const body = nameCountry(shapeNames(renderMd(entity, e.md, env), e.name));
+    if (mentionedIn) body.mentioned_in = mentionedIn;
     // the glossary terms its texts link, with their short definitions — for tooltips without further requests
     const glossary = env.used.size ? Object.fromEntries((await apiPool.query(
       'SELECT slug, name, category::text AS category, definition FROM glossary WHERE slug = ANY ($1) ORDER BY name', [[...env.used]])).rows

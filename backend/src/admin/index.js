@@ -15,7 +15,7 @@ const autocreate = require('./autocreate');
 const names = require('../names');
 const dimensionsLib = require('../dimensions');
 const { parseFuzzyDate } = require('../fuzzy-date');
-const { renderMarkdown, glossaryNames } = require('../markdown');
+const { renderMarkdown, linkNames } = require('../markdown');
 const { html, raw, layout } = require('./html');
 const { login, logout, loadUser, checkOrigin } = require('./auth');
 const { search, resultsPage, lookup } = require('./search');
@@ -369,7 +369,8 @@ router.post('/restore/:id', (req, res, next) => (/^\d+$/.test(req.params.id) ? r
 // ---------------------------------------------------------------------------------------------------------------
 // Markdown preview for the editor (src/admin/editor): exactly what the public API will serve for this text.
 router.post('/preview', async (req, res) => {
-  res.type('html').send(renderMarkdown(String(req.body.text || '').slice(0, 100000), { terms: await glossaryNames(adminPool) }) || '');
+  const text = String(req.body.text || '').slice(0, 100000);
+  res.type('html').send(renderMarkdown(text, { names: await linkNames(adminPool, [text]) }) || '');
 });
 
 // Place search for the map picker (src/admin/editor/map.js), proxied to OpenStreetMap's Nominatim so the browser
@@ -937,10 +938,10 @@ router.post('/:plural', async (req, res) => {
 });
 
 // Display of one field's value on the view page.
-// glossary: slug → name, for [[links]] in Markdown (loaded by the page)
-function showValue(t, key, kind, doc, glossary = new Map()) {
+// links: "type/slug" → name, for [[links]] in Markdown (loaded by the page, linkNames)
+function showValue(t, key, kind, doc, links = new Map()) {
   const v = doc[key];
-  if (kind === 'md') return v ? html`<div class="md">${raw(renderMarkdown(v, { terms: glossary }))}</div>` : null;
+  if (kind === 'md') return v ? html`<div class="md">${raw(renderMarkdown(v, { names: links }))}</div>` : null;
   if (kind === 'date' || kind === 'period') {
     if (v === undefined) return doc[`${key}_label`] || null;
     const generated = parseFuzzyDate(v, { openEnd: kind === 'period' }).label;
@@ -1012,11 +1013,11 @@ router.get('/:plural/:slug', async (req, res) => {
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
-  const glossaryMap = await glossaryNames(adminPool);
-  // a glossary term: the entries whose texts link it
-  const usedIn = t.type === 'term' ? (await adminPool.query(`
-    SELECT e.type::text AS type, e.slug, e.name FROM glossary_links l JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
-    WHERE l.term_slug = $1 AND NOT (e.type = 'term' AND e.id = $2) ORDER BY e.sort_key`, [e.slug, e.id])).rows : null;
+  const linkMap = await linkNames(adminPool, Object.entries(t.fields).filter(([, k]) => k === 'md').map(([key]) => e.doc[key]));
+  // the entries whose texts [[link]] this one (view content_links, migration 030) — for a term: where it is used
+  const usedIn = (await adminPool.query(`
+    SELECT DISTINCT e.type::text AS type, e.slug, e.name, e.sort_key FROM content_links l JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
+    WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (e.type = $1::entity_type AND e.id = $3) ORDER BY e.sort_key`, [t.type, e.slug, e.id])).rows;
   const main = imgs[0];
   send(req, res, {
     title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
@@ -1044,10 +1045,10 @@ router.get('/:plural/:slug', async (req, res) => {
         ${e.doc[`${t.name}_lang`] ? html` <span class="tag" lang="en">${e.doc[`${t.name}_lang`]}</span>` : ''}</p>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
         if (t.type === 'artwork' && key === 'creator') return creatorsRow(e, mainCreator, coCreators);
-        const shown = showValue(t, key, kind, e.doc, glossaryMap);
+        const shown = showValue(t, key, kind, e.doc, linkMap);
         return shown === null ? '' : html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown}</dd>`;
       })}</dl>
-      ${usedIn ? html`<h2 id="used-in">Used in</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`
+      ${t.type === 'term' || usedIn.length ? html`<h2 id="used-in">${t.type === 'term' ? 'Used in' : 'Mentioned in'}</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`
         : html`<p class="muted">No text links it yet — write <code>[[${e.slug}]]</code> in a description.</p>`}` : ''}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       <h2 id="relationships">Relationships</h2>

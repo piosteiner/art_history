@@ -67,7 +67,11 @@ link the term. Lists sort A–Z by `sort_key`.
 
 **Links in texts:** every `*_html` may contain `<a href="/glossary/<slug>" class="glossary-link" data-term="<slug>">`
 (class `glossary-link missing` when the term doesn't exist yet). Every detail response has `glossary`: the terms its
-texts link, `{<slug>: {name, category, definition}}` — enough for a tooltip without another request.
+texts link, `{<slug>: {name, category, definition}}` — enough for a tooltip without another request. Links to other entries
+(migration 030) are `<a href="/<plural>/<slug>" class="entry-link" data-entry="<type>/<slug>">` (e.g. `/artists/katsushika-hokusai`,
+`data-entry="artist/katsushika-hokusai"`; class `entry-link missing` when the entry doesn't exist), and the `href` is
+the website's own address. Every detail response except a term's also has **`mentioned_in`** `[{type, slug, name}]`:
+the entries whose texts link this one (backlinks). A term has the same thing as `used_in`.
 
 ### Names in several languages (every type)
 - `<name>` (`name`, artworks: `title`) — plain text, as before. `<name>_lang` — its language (BCP 47: `ja`, `en`, `zh-Hant`) or `null`.

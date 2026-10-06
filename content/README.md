@@ -62,7 +62,9 @@ the API serves them as sanitized HTML.
 
 ## Glossary links
 In any `*_md` text: `[[contrapposto]]` links the glossary term with that slug (shown with its name),
-`[[contrapposto|the pose]]` with your own words. Links to terms that don't exist yet are listed on the Quality page.
+`[[contrapposto|the pose]]` with your own words. Any other entry: `[[type/slug]]`, e.g. `[[artist/katsushika-hokusai]]`,
+`[[artwork/the-great-wave|the Wave]]` (types: artist, artwork, institution, person, movement, place, polity, term).
+Links to entries that don't exist (yet) are listed on the Quality page.
 
 ## Names in several languages
 Every entry's main name (`title` for artworks, `name` for the rest) can carry furigana and a language; other names

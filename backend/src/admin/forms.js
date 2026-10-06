@@ -15,7 +15,7 @@ const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1
   · <code>c. 1755</code> (±5 years) · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
 const HINTS = {
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.
-    Glossary: <code>[[contrapposto]]</code> or <code>[[contrapposto|the pose]]</code> — type <code>[[</code> to pick a term.`,
+    Links: type <code>[[</code> and a name to pick any entry — <code>[[artist/katsushika-hokusai]]</code>, a glossary term <code>[[contrapposto]]</code>; own words after <code>|</code>: <code>[[contrapposto|the pose]]</code>.`,
   'text[]': 'One per line.',
   names: html`One per line: <code>name | language | role</code> — role: original, translation, romanization or alternative
     (the default). E.g. <code>Kanagawa-oki nami ura | ja-Latn | romanization</code> · <code>The Great Wave off Kanagawa | en | translation</code>.
@@ -50,7 +50,7 @@ const TYPE_HINTS = {
   'polity.kind': 'empire · kingdom · dynasty · republic · shogunate …',
   'term.category': 'technique · architecture · material · iconography · style · format · other — what the glossary is browsed by',
   'term.definition': 'One or two sentences (max. 500 characters): shown as a tooltip wherever a text links the term, and in the A–Z list. Plain text.',
-  'term.description_md': html`The full explanation (Markdown). Link other terms with <code>[[slug]]</code> or <code>[[slug|own words]]</code>.`,
+  'term.description_md': html`The full explanation (Markdown). Link other terms with <code>[[slug]]</code> or <code>[[slug|own words]]</code>, other entries with <code>[[type/slug]]</code>.`,
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());

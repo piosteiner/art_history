@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-06
 
+### [[links]] to any entry, with completion (migration 030)
+- **What:** `[[type/slug]]` / `[[type/slug|own words]]` link artists, artworks, places … in every Markdown text (bare
+  `[[slug]]` stays a glossary term). `src/markdown.js` renders `<a class="entry-link" data-entry="type/slug">` to the site's
+  address and loads only the linked names (`linkNames`). View `content_links`, and `glossary_links` re-defined on top of
+  it; quality check `broken_link` (quality view re-created). Admin: typing `[[` in the editor suggests entries of every
+  type (`[[place/…` narrows the type), "Mentioned in" on every entry. API: `mentioned_in` on every detail except terms.
+- **Why:** owner: link any content like in Obsidian, with suggestions while typing.
+- **Frontend to-do:** style `a.entry-link` (and `.missing`, as for glossary links). The links already point at the
+  site's own pages. Optionally show `mentioned_in` ("Mentioned in") on detail pages.
+- **Tested:** unit 25, e2e 69 passing (new `links.spec.js`), schema smoke test.
+- **Revert:** redeploy the previous commit, then as owner re-run 027's `CREATE OR REPLACE VIEW quality_issues …` and
+  `glossary_links` definitions, `DROP VIEW content_links;`, `DELETE FROM schema_migrations WHERE name = '030_entry_links.sql';`
+  (texts with `[[type/slug]]` would then show as plain text).
+
 ### Admin: co-creators next to the creator
 - **What:** an artwork's page shows all creators in one row (main creator, then co-creators with part, certainty and
   an edit link) with a short "+ Add co-creator" form (artist, part, certainty); co-creators are no longer repeated in
