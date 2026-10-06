@@ -3,6 +3,7 @@
 const { test, expect, sql } = require('./helpers');
 
 test('find images: four sources, only free ones, one click adds with licence and credit', async ({ userA, request }) => {
+  sql("DELETE FROM images WHERE artwork_id = entity_id('artwork', 'plum-park-in-kameido')");  // other specs add some
   await userA.goto('/artworks/plum-park-in-kameido');
   await userA.click('a:has-text("Find images…")');
   await expect(userA.locator('main input[name=q]')).toHaveValue('Plum Park in Kameido Utagawa Hiroshige');  // title + artist
