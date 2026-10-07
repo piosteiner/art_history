@@ -1,6 +1,6 @@
 // The only module that talks to the backend. Everything else calls these functions, never fetch().
 import type {
-  DetailByPlural, EntityMap, EntityType, Graph, ItemByPlural, List, PlacesMap, Plural,
+  DetailByPlural, EntryHint, EntityMap, EntityType, Graph, ItemByPlural, List, PlacesMap, Plural,
   PresenceMap, RelationshipType, SearchHit, SitesMap,
 } from './types';
 
@@ -71,3 +71,7 @@ export const getSites = () => get<SitesMap>('/map/sites');
 
 export const getGraph = (plural: Plural, slug: string, depth = 1, types?: string[]) =>
   get<Graph>(`/graph/${plural}/${encodeURIComponent(slug)}`, { depth, types: types?.join(',') });
+
+/** Previews of any entries ("artist/paul-gauguin", "term/contrapposto" …; at most 100 per call); missing ones are left out. */
+export const getPreviews = (refs: string[]) =>
+  get<{ data: Record<string, EntryHint> }>('/previews', { refs: refs.join(',') }).then((r) => r.data);

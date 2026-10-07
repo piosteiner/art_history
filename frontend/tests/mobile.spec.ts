@@ -39,3 +39,19 @@ test('an artwork without a free image: the link to its museum page is near the t
   await expect(top).toBeInViewport();
   await expect(page.locator('.detail-actions .web-accessed')).toHaveText('link accessed 7 October 2026');
 });
+
+test('previews on an entry page: the first tap on a link shows it, the second follows it', async ({ page }) => {
+  await page.route(/\/v1\/previews\?/, (r) => {
+    const refs = new URL(r.request().url()).searchParams.get('refs')!.split(',');
+    r.fulfill({ json: { data: Object.fromEntries(refs.map((ref) => [ref, { type: ref.split('/')[0], slug: ref.split('/')[1],
+      name: ref, subtitle: null, image_url: null, excerpt: `About ${ref}.` }])) } });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const museum = page.locator('.facts a[href="/institutions/metropolitan-museum-of-art"]');
+  await page.waitForLoadState('networkidle');
+  await museum.tap();
+  await expect(page.locator('.popover-entry')).toContainText('About institution/metropolitan-museum-of-art.');
+  await expect(page).toHaveURL(/\/artworks\/the-great-wave-off-kanagawa$/);
+  await museum.tap();
+  await expect(page).toHaveURL(/\/institutions\/metropolitan-museum-of-art$/);
+});

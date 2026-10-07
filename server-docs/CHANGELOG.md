@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Frontend: previews on every internal link (no server change)
+- **What:** `src/previews.ts` — the popover of `[[links]]` on all links to entries (fields, relationship lists, map
+  popups, graph panel), from `GET /v1/previews`: links collected by a MutationObserver on `#app` as views render, unknown
+  ones fetched in one request per 100 (a detail's `entries` count as known); one document-level listener for hover
+  (250 ms pause), focus and tap (entry pages only: first tap shows, second follows). Not on header, breadcrumbs,
+  previous/next, buttons, list cards, explore pickers, the page's own link.
+- **Why:** owner: previews like Wikipedia's for all entries, not only `[[links]]`.
+- **Tested:** e2e new desktop + phone tests passing; full suite 46/47 (the failing test, "picker names", passes alone —
+  timing under load).
+- **Revert:** revert the commit (Pages republishes).
+
 ### API: `GET /v1/previews` — previews of any internal links in one request
 - **What:** `previewsOf(refs)` (from 040's `entryPreviews`) exposed as `/v1/previews?refs=type/slug,…` (max. 100, all
   types; missing entries left out).

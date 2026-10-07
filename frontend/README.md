@@ -79,6 +79,13 @@ dimmed text, never dead links. Links to other entries (`a.entry-link`, `[[type/s
 the site's own addresses and are followed by the router; `missing` ones become dimmed text too. Every detail page lists
 its backlinks (`mentioned_in`) as "Mentioned in", a term's as "Used in".
 
+**Previews on links**, like Wikipedia's (name, type, subtitle, opening sentences, image on the right): `a.entry-link` from
+the detail's `entries` map (`src/glossary.ts`); every other internal link (fields, relationships, map popups, the graph
+panel) from `GET /v1/previews` (`src/previews.ts`: a MutationObserver on `#app` collects the links as views render and
+fetches what isn't known in one request per 100). Mouse: after a 250 ms pause; keyboard: on focus; touch: on entry pages
+the first tap shows it. Not on the header, breadcrumbs, previous/next, buttons, list cards, the explore pickers or the
+page's own link.
+
 ## Creators and provenance
 - Several creators (migration 028): `creators` (main first). The artwork page shows them one per line with their part
   ("(landscape)") and uncertainty; an `attribution_label` ("Workshop of Rubens") stands instead of the main creator's

@@ -471,6 +471,38 @@ test('an owner\'s page and the network mark periods whose end is only implied', 
   await expect(page.locator('.edge.implied')).toHaveCount(1);
 });
 
+// GET /v1/previews answered locally: every asked-for ref gets a preview named after it
+async function samplePreviews(page: Page, asked: string[][] = []) {
+  await page.route(/\/v1\/previews\?/, (r) => {
+    const refs = new URL(r.request().url()).searchParams.get('refs')!.split(',');
+    asked.push(refs);
+    r.fulfill({ json: { data: Object.fromEntries(refs.map((ref) => {
+      const [type, slug] = ref.split('/');
+      return [ref, { type, slug, name: `Preview of ${slug}`, subtitle: 'a subtitle', image_url: null, excerpt: `Excerpt about ${slug}.` }];
+    })) } });
+  });
+  return asked;
+}
+
+test('previews on every internal link: fields and relationships, fetched together; not the breadcrumbs', async ({ page }) => {
+  const asked = await samplePreviews(page);
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect.poll(() => asked.length).toBeGreaterThan(0);
+  expect(asked[0].length).toBeGreaterThan(1); // the page's links in one request
+  expect(asked.flat()).not.toContain('artwork/the-great-wave-off-kanagawa'); // not the page itself
+  const museum = page.locator('.facts a[href="/institutions/metropolitan-museum-of-art"]');
+  await museum.hover();
+  const pop = page.locator('.popover-entry');
+  await expect(pop).toContainText('Excerpt about metropolitan-museum-of-art.');
+  await page.mouse.move(5, 5);
+  await expect(pop).toHaveCount(0);
+  await page.locator('.crumbs a').hover();
+  await page.waitForTimeout(500);
+  await expect(pop).toHaveCount(0);
+  await museum.focus(); // keyboard
+  await expect(pop).toContainText('Preview of metropolitan-museum-of-art');
+});
+
 test('glossary links in texts: popover with the definition; a missing term is plain text', async ({ page }) => {
   await sampleGlossary(page);
   await page.goto('/artworks/the-great-wave-off-kanagawa');

@@ -13,6 +13,7 @@ import type {
 } from '../types';
 import { guard, loading, showError } from './common';
 import { wireTextLinks } from '../glossary';
+import { knownPreviews } from '../previews';
 import { partNav, partsGrid, seriesLine } from '../series';
 import { STATUS_LABEL } from '../catalog';
 
@@ -354,6 +355,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       </article>`);
       wireImageFallbacks(main);
       wireLightbox(main);
+      knownPreviews(e.entries);
       wireTextLinks(main, e.glossary, e.bibliography, e.entries);
       if (['artist', 'person', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
       if (!hasMap) return;

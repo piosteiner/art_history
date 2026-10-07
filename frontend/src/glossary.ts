@@ -15,6 +15,12 @@ let popover: HTMLElement | null = null;
 let current: HTMLAnchorElement | null = null;
 let hideTimer: number | undefined;
 
+/** The link whose popover is open, if any. */
+export const openFor = () => (popover ? current : null);
+
+/** Keeps the popover open while the pointer moves into it (previews.ts opens its own after a delay). */
+export const keepOpen = () => clearTimeout(hideTimer);
+
 function hide() {
   clearTimeout(hideTimer);
   popover?.remove();
@@ -23,12 +29,12 @@ function hide() {
   current = null;
 }
 
-const hideSoon = () => {
+export const hideSoon = () => {
   clearTimeout(hideTimer);
   hideTimer = window.setTimeout(hide, 180); // time to move the pointer into the popover
 };
 
-function show(a: HTMLAnchorElement, content: Html, kind: string) {
+export function show(a: HTMLAnchorElement, content: Html, kind: string) {
   if (current === a && popover) return;
   hide();
   current = a;
@@ -82,7 +88,7 @@ function attach(a: HTMLAnchorElement, content: () => Html, kind: string) {
 }
 
 /** A linked entry's preview: the text on the left, the main image on the right (above it on narrow screens). */
-function entryPreview(e: EntryHint, href: string) {
+export function entryPreview(e: EntryHint, href: string) {
   return html`<div class="popover-text">
       <div class="glossary-popover-head"><strong>${e.name}</strong> <span class="tag">${TYPE_LABEL[e.type]}</span></div>
       ${e.subtitle ? html`<div class="popover-subtitle">${e.subtitle}</div>` : ''}
