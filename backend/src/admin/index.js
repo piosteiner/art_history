@@ -718,7 +718,17 @@ router.post('/provenance/:id/move', async (req, res) => {
 // ---------------------------------------------------------------------------------------------------------------
 // Entities
 // ---------------------------------------------------------------------------------------------------------------
-function notFoundPage(req, res) {
+// An old slug (migration 041) in an entry's address → the same page at its current slug; otherwise "Not found".
+async function notFoundPage(req, res) {
+  const t = req.t;
+  if (req.method === 'GET' && t && req.params.slug && SLUG.test(req.params.slug)) {
+    const moved = (await adminPool.query(`SELECT x.slug FROM slug_history h JOIN ${t.table} x ON x.id = h.entity_id
+      WHERE h.entity_type = $1 AND h.old_slug = $2`, [t.type, req.params.slug])).rows[0];
+    if (moved) return res.redirect(301, req.originalUrl.replace(`/${t.folder}/${req.params.slug}`, `/${t.folder}/${moved.slug}`));
+  }
+  return notFoundPageNow(req, res);
+}
+function notFoundPageNow(req, res) {
   send(req, res, { title: 'Not found', status: 404, body: html`<h1>Not found</h1><p><a href="/">Dashboard</a></p>` });
 }
 

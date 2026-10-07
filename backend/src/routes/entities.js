@@ -415,7 +415,16 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     const { rows } = await apiPool.query(`
       SELECT t.id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt)}, ${e.detail}, t.wikidata_id, t.metadata, t.updated_at
       FROM ${e.table} t WHERE t.slug = $1`, [req.params.slug]);
-    if (!rows.length) throw notFound(`no ${e.type} "${req.params.slug}"`);
+    if (!rows.length) {
+      // an old slug (migration 041): permanently moved to the entry's current address
+      const moved = await apiPool.query(`SELECT x.slug FROM slug_history h JOIN ${e.table} x ON x.id = h.entity_id
+        WHERE h.entity_type = $1 AND h.old_slug = $2`, [e.type, req.params.slug]);
+      if (moved.rows.length) {
+        const query = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
+        return res.redirect(301, `${req.baseUrl}/${plural}/${moved.rows[0].slug}${query}`);
+      }
+      throw notFound(`no ${e.type} "${req.params.slug}"`);
+    }
     const { id, ...entity } = rows[0];
 
     const [rels, extras, mentionedIn] = await Promise.all([

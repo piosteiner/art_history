@@ -45,7 +45,9 @@ export function initSlug() {
     return pick ? slugify(plain(pick[0])) : '';
   };
   // Following the title until the slug is typed by hand (a prefilled slug that matches the title still follows).
-  let follow = !slug.value || slug.value === source();
+  // An existing entry's slug is part of its public address: it follows only once the field has been emptied by hand
+  // (the old address then redirects, migration 041).
+  let follow = slug.dataset.slugExisting ? false : !slug.value || slug.value === source();
   slug.addEventListener('input', (e) => { if (e.isTrusted) follow = slug.value === ''; });
   for (const x of [from, others].filter(Boolean)) x.addEventListener('input', () => { if (follow) set(source()); });
 }

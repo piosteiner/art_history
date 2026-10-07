@@ -30,7 +30,7 @@ const HINTS = {
   period: html`${DATE_HINT} · <code>1808/</code> (since 1808, ongoing)`,
   label: 'Optional display text, e.g. "c. 1480". Empty = generated from the date.',
   point: 'Decimal degrees. Tip: right-click a spot in OpenStreetMap → "Show address" shows its coordinates.',
-  slug: 'Lowercase, digits and hyphens: used in URLs (typed text is converted). Keep stable once published.',
+  slug: 'Lowercase, digits and hyphens: used in URLs (typed text is converted). New entries: made from the title. To make it anew later, empty the field — it then follows the title, and the old address redirects to the new one.',
 };
 
 // Field names and explanations per entry type, where one word means different things ("kind" of an artwork vs. of a
@@ -388,7 +388,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
   const slugField = html`<div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
       <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"
-        autocapitalize="none" spellcheck="false"${isNew ? html` data-slug-from="f-${t.name}"` : ''}>
+        autocapitalize="none" spellcheck="false" data-slug-from="f-${t.name}"${isNew ? '' : html` data-slug-existing="1"`}>
       <div class="hint">${HINTS.slug}</div></div>`;
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}

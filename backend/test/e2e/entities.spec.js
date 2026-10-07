@@ -392,3 +392,26 @@ test('further measurements (mount, frame): rows with paste and conversion, on th
   await userA.goto('/artworks/plum-park-in-kameido/discard-changes');
   await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
 });
+
+test('an existing entry: an emptied slug follows the title; the old address redirects (admin and API)', async ({ userA, request }) => {
+  await userA.goto('/artworks/plum-park-in-kameido/edit');
+  const slug = userA.locator('#f-slug');
+  await typeAtEnd(userA, '#f-title', ' Test');
+  await expect(slug).toHaveValue('plum-park-in-kameido');                    // not touched: stays (public address)
+  await slug.fill('');                                                       // emptied on purpose: now it follows
+  await typeAtEnd(userA, '#f-title', 's');
+  await expect(slug).toHaveValue('plum-park-in-kameido-tests');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/artworks\/plum-park-in-kameido-tests\?done=published/);
+
+  await userA.goto('/artworks/plum-park-in-kameido/history');               // old address, any page below it
+  await expect(userA).toHaveURL(/\/artworks\/plum-park-in-kameido-tests\/history$/);
+  const old = await request.get('http://127.0.0.1:3006/v1/artworks/plum-park-in-kameido', { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
+  expect(old.status()).toBe(301);
+  expect(old.headers().location).toBe('/v1/artworks/plum-park-in-kameido-tests');
+
+  // back to the old slug: it is the entry's own again, nothing redirects in a circle
+  sql(`UPDATE artworks SET slug = 'plum-park-in-kameido', title = 'Plum Park in Kameido' WHERE slug = 'plum-park-in-kameido-tests'`);
+  expect(sql(`SELECT string_agg(old_slug, ',') FROM slug_history WHERE entity_type = 'artwork'`)).toBe('plum-park-in-kameido-tests');
+  sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
+});

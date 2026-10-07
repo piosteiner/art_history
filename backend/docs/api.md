@@ -165,6 +165,8 @@ filter `?country=UA`); the detail adds `ancestors` / `children` (Western Han ⊂
 everyone and everything linked to it ("nationality of" …).
 
 ### `GET /v1/<type>/:slug` — detail
+An entry's former slug answers with **301** to its current address (migration 041) — follow redirects.
+
 All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - `relationships`: every link in both directions, from this entity's point of view —
   `{type, direction: outgoing|incoming|mutual, label, category, is_physical_presence, entity: {type, slug, name, period}, period, note, certainty, notes_html, derived, end_basis}`.

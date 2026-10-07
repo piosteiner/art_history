@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Changing a slug: emptied slugs follow the title; old addresses redirect (migration 041)
+- **What:** table `slug_history` filled by `AFTER UPDATE OF slug` triggers on every entity table (an INSERT releases
+  a slug that is in use again; deleting an entry removes its old slugs); API detail and admin pages answer an old slug
+  with a 301 to the current one. Admin (`editor/slug.js`): on an existing entry the slug follows the title once the
+  field has been emptied by hand.
+- **Why:** owner: emptying the slug of an existing entry didn't regenerate it.
+- **Tested:** smoke test; e2e 95 passing. **Revert:** redeploy the previous commit; as owner drop the triggers,
+  `record_slug_change()`, `release_old_slug()`, `slug_history`, and restore 021's `delete_entity_relationships()`.
+
 ### Admin: the slug back right before the title / name
 - **What:** `sectionsOf()` places the slug row immediately before the row with the title/name (removed from
   "Identifiers").
