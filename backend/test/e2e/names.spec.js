@@ -102,7 +102,7 @@ test('previews of any internal links in one request (GET /v1/previews)', async (
   const { data } = await res.json();
   expect(Object.keys(data).sort()).toEqual(['artist/paul-gauguin', 'place/arles']);  // entries that don't exist: left out
   expect(data['artist/paul-gauguin']).toMatchObject({ type: 'artist', name: 'Paul Gauguin' });
-  expect(data['artist/paul-gauguin'].excerpt).toMatch(/^French painter/);
+  expect(data['artist/paul-gauguin'].excerpt).toContain('French painter');  // other specs edit the biography
   expect(data['place/arles'].subtitle).toMatch(/^settlement/);
   const bad = await request.get('http://127.0.0.1:3006/v1/previews?refs=evil/x;drop', { headers: { Host: 'api.localhost' } });
   expect(bad.status()).toBe(400);
