@@ -205,7 +205,7 @@ router.use((req, res, next) => {
 // ---------------------------------------------------------------------------------------------------------------
 // History (audit_log) — shared by the dashboard, the global page and each entity
 // ---------------------------------------------------------------------------------------------------------------
-const HIDDEN_KEYS = ['id', 'created_at', 'updated_at', 'lifespan'];
+const HIDDEN_KEYS = ['id', 'created_at', 'updated_at', 'lifespan', 'web_url_accessed'];  // the last follows web_url (trigger, 039)
 
 // `where` is SQL on alias a (audit_log) and r (the row as jsonb). Geography values are shown as WKT.
 // A deleted entity's name comes from its last recorded version (its table: entity_table(), migration 019).
@@ -1147,6 +1147,8 @@ router.get('/:plural/:slug', async (req, res) => {
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
   const provSteps = t.type === 'artwork' ? await provenance.read(adminPool, e.id) : [];
+  const webAccessed = t.type === 'artwork' && e.doc.web_url
+    ? (await adminPool.query("SELECT to_char(web_url_accessed, 'FMDD FMMonth YYYY') AS d FROM artworks WHERE id = $1", [e.id])).rows[0].d : null;
   const boundary = t.type === 'place' && e.doc.boundary_code
     ? (await adminPool.query('SELECT code, name FROM boundaries WHERE code = $1', [e.doc.boundary_code])).rows[0] : null;
   // series and other wholes (migration 037)
@@ -1192,6 +1194,8 @@ router.get('/:plural/:slug', async (req, res) => {
         const shown = key === 'boundary_code' && boundary
           ? html`${boundary.code} — ${boundary.name} <span class="muted">(outline and marker from Natural Earth)</span>`
           : showValue(t, key, kind, e.doc, linkMap);
+        // the web page with the day the link was added (set by the database, migration 039)
+        if (key === 'web_url' && shown !== null && webAccessed) return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown} <span class="muted small">· added ${webAccessed}</span></dd>`;
         return shown === null ? '' : html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown}</dd>`;
       })}</dl>
       ${t.type === 'term' || usedIn.length ? html`<h2 id="used-in">${t.type === 'term' ? 'Used in' : 'Mentioned in'}</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`

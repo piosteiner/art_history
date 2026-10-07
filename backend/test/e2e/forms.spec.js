@@ -1,5 +1,5 @@
 // Form details: the slug follows the title and is cleaned as you type — also with a draft banner on the page (its
-// hidden "slug" input once caught the script); the series fields behind a button; an artwork's web page (migration 038).
+// hidden "slug" input once caught the script); the series fields behind a button; an artwork's web page (migrations 038, 039).
 const { test, expect, sql, submitForm, liveReady } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
@@ -46,6 +46,13 @@ test('an artwork\'s web page: saved, checked, in the API; the images section poi
   await submitForm(userA);
   await expect(userA.locator('dl.fields')).toContainText('https://www.brooklynmuseum.org/opencollection/objects/121664');
   await expect(userA.locator('#images ~ p.muted').first()).toContainText('the site links the work\'s web page instead');
-  expect((await api(request, '/artworks/plum-park-in-kameido')).web_url).toBe('https://www.brooklynmuseum.org/opencollection/objects/121664');
+  const w = await api(request, '/artworks/plum-park-in-kameido');
+  expect(w.web_url).toBe('https://www.brooklynmuseum.org/opencollection/objects/121664');
+  // the day the link was added, set by the database (migration 039) — kept when the entry is saved again unchanged
+  const today = sql('SELECT current_date::text');
+  expect(w.web_url_accessed).toBe(today);
+  await expect(userA.locator('dl.fields')).toContainText(`added ${sql("SELECT to_char(current_date, 'FMDD FMMonth YYYY')")}`);
+  sql("UPDATE artworks SET web_url_accessed = '2001-02-03' WHERE slug = 'plum-park-in-kameido'");  // refused: kept by the trigger
+  expect(sql("SELECT web_url_accessed::text FROM artworks WHERE slug = 'plum-park-in-kameido'")).toBe(today);
   sql("UPDATE artworks SET web_url = NULL WHERE slug = 'plum-park-in-kameido'");
 });

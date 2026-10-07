@@ -35,7 +35,7 @@ const DEPENDENT = new Set(['relationships', 'images', 'provenance']);
 const PROV_OWNER = { owner_artist_id: 'artists', owner_person_id: 'people', owner_institution_id: 'institutions', owner_place_id: 'places', location_id: 'places' };
 // An image row belongs to the entity in whichever of its three foreign keys is set (migration 017).
 const imageOwner = (row) => Object.entries(BY_IMAGE_FK).map(([type, fk]) => ({ type, id: row[fk], fk })).find((o) => o.id != null);
-const IGNORED = new Set(['id', 'created_at', 'updated_at', 'lifespan']);  // never compared or reverted
+const IGNORED = new Set(['id', 'created_at', 'updated_at', 'lifespan', 'web_url_accessed']);  // never compared or reverted (the last: set by a trigger, 039)
 // Foreign keys of entity tables (column → referenced table); relationships are checked by their own trigger.
 const FKS = { parent_id: null /* same table */, place_id: 'places', creator_id: 'artists', current_institution_id: 'institutions' };
 

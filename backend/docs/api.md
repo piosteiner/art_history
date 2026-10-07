@@ -165,6 +165,8 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 ### Web page (artworks)
 `web_url` (detail): the work's page at the museum or collection that holds it, or another good page about it (migration
 038). Link it on the artwork page — most of all when `images` is empty: then it is the way to see the work.
+`web_url_accessed` (`YYYY-MM-DD`, migration 039): the day the link was added or last changed — set by the database,
+shown like a citation's "accessed on …".
 
 ### Provenance (artworks)
 The detail of an artwork has **`provenance`**: its owners in order, as the sources record them —

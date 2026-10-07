@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Artwork web page: the day the link was added (migration 039)
+- **What:** `artworks.web_url_accessed` (date), kept by the BEFORE trigger `artworks_web_url_accessed`
+  (`set_web_url_accessed()`): today on a new or changed link, unchanged on a resave, NULL without a link; a manual
+  value is ignored. Existing links backfilled from audit_log (the change that set the current link). Admin shows
+  "· added 7 October 2026"; API detail `web_url_accessed`; hidden from history diffs and revert (follows `web_url`).
+- **Why:** owner: show when a link was added — museum pages move; like "accessed on" in a citation.
+- **Frontend to-do** (not done here): on the artwork page, a prominent link near the top/image —
+  "View at <institution name, else the link's domain> ↗" with "link accessed 7 October 2026" in small type.
+  When `images` is empty, show it in place of the image (a panel: "No free image — see the work at … ↗").
+  Open in a new tab (`rel="noopener"`).
+- **Tested:** trigger cases on dev (add / resave / remove); e2e 83 passing (forms.spec: date in admin and API, manual value refused).
+- **Revert:** redeploy the previous commit; `DROP TRIGGER artworks_web_url_accessed ON artworks; DROP FUNCTION
+  set_web_url_accessed(); ALTER TABLE artworks DROP COLUMN web_url_accessed;`
+  `DELETE FROM schema_migrations WHERE name = '039_web_url_accessed.sql';`
+
 ### Admin: slug fixed with draft banners; series fields behind a button; artwork web page (migration 038)
 - **What:** (1) `editor/slug.js` found its field with `querySelector('input[name=slug]')` — the first match, which is
   the hidden input of the "unsaved changes — Discard" banners (`index.js` draftBanner / unpublished banner). With a
