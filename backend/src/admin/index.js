@@ -799,11 +799,11 @@ router.get('/:plural', async (req, res) => {
     title: humanize(t.folder),
     body: html`<h1>${humanize(t.folder)}</h1>
       ${stats ? html`<p class="muted">${stats.total} sources — <b>${stats.read}</b> read · ${stats.reading} reading · ${stats.to_read} to read</p>` : ''}
-      <form class="bar" method="get"><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search">
+      <form class="bar" method="get" data-live><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search" autocomplete="off">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
         <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a>
         ${t.type === 'place' ? html`<a class="button secondary" href="/places/new/find">+ find a place…</a>` : ''}</form>
-      ${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
+      <div data-live-results="list">${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
         ${rows.slice(0, PAGE).map((r) => html`<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
@@ -811,7 +811,7 @@ router.get('/:plural', async (req, res) => {
           ${r.sort_key !== r.name ? html`<div class="muted small">${r.sort_key}</div>` : q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
-      ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}`,
+      ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}</div>`,
   });
 });
 
@@ -1430,11 +1430,11 @@ router.get('/:plural/:slug/images/find', async (req, res) => {
     body: html`<p class="muted"><a href="/${t.folder}/${e.slug}#images">← ${e.name}</a></p><h1>Find images</h1>
       <p class="muted">Only freely usable images are shown — public domain / CC0, or with a free licence on Commons.
         Licence, credit and source are added with the image.</p>
-      <form method="get" action="/${t.folder}/${e.slug}/images/find" class="bar">
+      <form method="get" action="/${t.folder}/${e.slug}/images/find" class="bar" data-live="change">
         <input type="search" name="q" value="${q}" class="grow" aria-label="search">
         <select name="source" aria-label="where">${Object.entries(imagesearch.SOURCES).map(([k, s]) => html`<option value="${k}"${k === source ? ' selected' : ''}>${s.name}</option>`)}</select>
         <button>Search</button></form>
-      <p class="source-tabs">${Object.entries(imagesearch.SOURCES).map(([k, s]) => (k === source ? html`<b>${s.name}</b>`
+      <div data-live-results="images">      <p class="source-tabs">${Object.entries(imagesearch.SOURCES).map(([k, s]) => (k === source ? html`<b>${s.name}</b>`
         : html`<a href="/${t.folder}/${e.slug}/images/find?${new URLSearchParams({ source: k, q })}">${s.name}</a>`))}</p>
       ${error ? html`<p class="flash error">${error}</p>` : ''}
       ${!error && !results.length ? html`<p class="muted">Nothing found here — try another source or fewer words (e.g. only the artist).</p>` : ''}
@@ -1446,7 +1446,7 @@ router.get('/:plural/:slug/images/find', async (req, res) => {
             <input type="hidden" name="url" value="${r.url}"><input type="hidden" name="source_url" value="${r.source_url || ''}">
             <input type="hidden" name="license" value="${r.license || ''}"><input type="hidden" name="credit" value="${r.credit || ''}">
             <input type="hidden" name="back" value="${self}"><button class="small">Add</button></form>`}
-        </figcaption></figure>`)}</div>`,
+        </figcaption></figure>`)}</div></div>`,
   });
 });
 

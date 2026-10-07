@@ -8,12 +8,12 @@ const fmt = (v) => (v === null || v === undefined || v === '' ? html`<span class
 function searchPage({ title, action, q, results, error }) {
   return html`<h1>${title}</h1>
     <p>Which Wikidata item is it? Search by name, or enter its id (e.g. <code>Q5582</code>).</p>
-    <form class="bar" method="get" action="${action}"><input name="search" value="${q}" class="grow" type="search" autofocus>
+    <form class="bar" method="get" action="${action}" data-live data-live-delay="450" data-live-min="2"><input name="search" value="${q}" class="grow" type="search" autofocus autocomplete="off">
       <button>Search Wikidata</button></form>
-    ${error ? html`<p class="flash error">${error}</p>` : ''}
+    <div data-live-results="wikidata">${error ? html`<p class="flash error">${error}</p>` : ''}
     ${results ? (results.length ? html`<div class="search-results">${results.map((r) => html`<div class="search-hit">
         <a href="${action}?q=${r.id}"><b>${r.label}</b></a> <span class="tag">${r.id}</span>
-        <div class="muted small">${r.description}</div></div>`)}</div>` : html`<p class="muted">Nothing found.</p>`) : ''}`;
+        <div class="muted small">${r.description}</div></div>`)}</div>` : html`<p class="muted">Nothing found.</p>`) : ''}</div>`;
 }
 
 function fieldRow(r, t) {

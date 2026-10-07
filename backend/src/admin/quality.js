@@ -80,22 +80,22 @@ function page({ rows, allCounts, filter, back }) {
   const groups = {};
   for (const r of rows) (groups[r.check_id] ||= []).push(r);
   return html`<h1>Data quality</h1>
-    <div class="cards">${SEVERITIES.map((s) => html`<a class="card qa-${s}${filter.severity === s ? ' active' : ''}" href="${q({ severity: filter.severity === s ? '' : s, check: '' })}">
+    <div class="cards" data-live-results="cards">${SEVERITIES.map((s) => html`<a class="card qa-${s}${filter.severity === s ? ' active' : ''}" href="${q({ severity: filter.severity === s ? '' : s, check: '' })}">
       <b>${total(s)}</b>${SEVERITY_TEXT[s]}</a>`)}</div>
-    <form class="bar" method="get" action="/quality">
+    <form class="bar" method="get" action="/quality" data-live>
       <select name="severity"><option value="">all levels</option>${SEVERITIES.map((s) => html`<option${filter.severity === s ? ' selected' : ''}>${s}</option>`)}</select>
       <select name="check"><option value="">all checks</option>${Object.entries(CHECKS).map(([id, c]) => html`<option value="${id}"${filter.check === id ? ' selected' : ''}>${c.title}</option>`)}</select>
       <select name="type"><option value="">all types</option>${Object.keys(BY_TYPE).map((t) => html`<option${filter.type === t ? ' selected' : ''}>${t}</option>`)}</select>
       <label class="choice"><input type="checkbox" name="acked" value="1"${filter.acked ? ' checked' : ''}> show only entries marked OK</label>
       <button class="secondary">Filter</button></form>
-    ${!rows.length ? html`<p class="flash ok">${filter.acked ? 'Nothing marked as OK here.' : 'Nothing found — all clear for this filter.'}</p>` : ''}
+    <div data-live-results="quality">${!rows.length ? html`<p class="flash ok">${filter.acked ? 'Nothing marked as OK here.' : 'Nothing found — all clear for this filter.'}</p>` : ''}
     ${Object.entries(groups).map(([id, list]) => html`<section class="qa-group">
       <h2><span class="tag qa-${list[0].severity}">${list[0].severity}</span> ${CHECKS[id] ? CHECKS[id].title : id} <span class="muted">(${list.length})</span></h2>
       ${CHECKS[id] ? html`<p class="muted small">${CHECKS[id].fix}</p>` : ''}
       <div class="table-wrap"><table><tbody>${list.map((r) => html`<tr>
         <td><a href="${link(r)}">${r.name}</a> <span class="tag">${r.type}</span></td><td>${r.detail}
           ${r.acked_at ? html`<div class="muted small">OK’d by ${r.acked_by || '?'} on ${r.acked_at.toISOString().slice(0, 10)}${r.note ? ` — ${r.note}` : ''}</div>` : ''}</td>
-        <td class="qa-actions">${ackForm(r, back, !!r.acked_at)}</td></tr>`)}</tbody></table></div></section>`)}`;
+        <td class="qa-actions">${ackForm(r, back, !!r.acked_at)}</td></tr>`)}</tbody></table></div></section>`)}</div>`;
 }
 
 // Box on an entity page: its errors and warnings (info only as a count).

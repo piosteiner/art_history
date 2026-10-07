@@ -128,10 +128,10 @@ function resultsPage(q, { entities, relationships }) {
   const order = ['artist', 'artwork', 'place', 'movement', 'institution', 'person', 'polity', 'term', 'source'].filter((t) => byType[t]);
   const total = entities.length + relationships.length;
   return html`<h1>Search</h1>
-    <form class="bar" method="get" action="/search">
-      <input name="q" value="${q}" type="search" class="grow" placeholder="Name, alternative name, text, Wikidata id…" autofocus>
+    <form class="bar" method="get" action="/search" data-live data-live-min="2">
+      <input name="q" value="${q}" type="search" class="grow" placeholder="Name, alternative name, text, Wikidata id…" autofocus autocomplete="off">
       <button>Search</button></form>
-    <p class="muted">${q ? `${total} result${total === 1 ? '' : 's'} for “${q}”` : ''}
+    <div data-live-results="search"><p class="muted">${q ? `${total} result${total === 1 ? '' : 's'} for “${q}”` : ''}
       ${q ? html` · tips: <code>"exact phrase"</code>, <code>-exclude</code>, <code>monet or manet</code>` : ''}</p>
     ${order.length ? html`<p class="actions">${order.map((t) => html`<a href="#r-${t}">${BY_TYPE[t].folder} (${byType[t].length})</a>`)}
       ${relationships.length ? html`<a href="#r-relationships">relationships (${relationships.length})</a>` : ''}</p>` : ''}
@@ -151,7 +151,7 @@ function resultsPage(q, { entities, relationships }) {
         ${r.details ? html`<div class="muted small">${raw(highlight(r.details, q))}</div>` : ''}
         ${r.snippet ? html`<div class="small">${raw(r.snippet.includes(START) ? marked(r.snippet) : highlight(r.snippet, q))}</div>` : ''}
       </div>`)}</div>` : ''}
-    ${q && !total ? html`<p>Nothing found. The name search tolerates typos; text search matches whole words (and their forms).</p>` : ''}`;
+    ${q && !total ? html`<p>Nothing found. The name search tolerates typos; text search matches whole words (and their forms).</p>` : ''}</div>`;
 }
 
 async function lookup(db, q, types) {

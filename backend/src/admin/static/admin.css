@@ -288,3 +288,14 @@ details.field-group > summary { display: inline-block; list-style: none; }
 details.field-group > summary::-webkit-details-marker { display: none; }
 details.field-group[open] > summary { margin-bottom: 0.5rem; }
 details.field-group[open] { border-left: 3px solid var(--line); padding-left: 0.75rem; }
+
+/* live search (src/admin/editor/livesearch.js): the header's dropdown */
+.top-search { position: relative; }
+.top-search-list { position: absolute; top: 100%; right: 0; z-index: 50; min-width: 22rem; max-width: 90vw; margin-top: .25rem;
+  background: var(--panel); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 6px 18px rgb(0 0 0 / .18); }
+.top-search-list[hidden] { display: none; }
+.top-search-list a { display: flex; justify-content: space-between; gap: .8rem; padding: .4rem .7rem; color: var(--fg); text-decoration: none; }
+.top-search-list a:hover, .top-search-list a.active { background: var(--accent); color: var(--accent-fg); }
+.top-search-list a.all { border-top: 1px solid var(--line); color: var(--accent); }
+.top-search-list a.all:hover, .top-search-list a.all.active { color: var(--accent-fg); }
+.live-status-search[hidden] { display: none; }

@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Admin: live search in the search bars
+- **What:** `backend/src/admin/editor/livesearch.js`: `form[data-live]` re-fetches the page in the background as you type
+  (debounced, older requests aborted) and swaps its `[data-live-results]` regions; the address bar follows. On: entry
+  lists, the full search page, the quality filters, the Wikidata search (450 ms). The image search updates on a
+  source change only; the place search stays on Enter (OSM's usage policy forbids search-as-you-type). The header
+  "Search everything" shows a dropdown of matches (/lookup, keyboard, Enter = full search page).
+- **Why:** owner: live search/filter in all search bars.
+- **Tested:** e2e 93 passing (livesearch.spec: no page load, address, dropdown).
+- **Revert:** redeploy the previous commit.
+
 ### Frontend: previews on every internal link (no server change)
 - **What:** `src/previews.ts` — the popover of `[[links]]` on all links to entries (fields, relationship lists, map
   popups, graph panel), from `GET /v1/previews`: links collected by a MutationObserver on `#app` as views render, unknown
