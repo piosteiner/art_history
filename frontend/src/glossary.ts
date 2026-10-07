@@ -1,13 +1,15 @@
 // Links inside the API's texts (*_html), with popovers that need no further request:
 // - glossary terms <a class="glossary-link" data-term> → name, category, definition (the detail's `glossary` map);
 // - short references <a class="source-link" data-source> → the full citation (the detail's `bibliography` map);
-// - footnote numbers <sup class="fn-ref"><a href="#…"> → the footnote's text (from the same page).
+// - footnote numbers <sup class="fn-ref"><a href="#…"> → the footnote's text (from the same page);
+// - other entries <a class="entry-link" data-entry="type/slug"> → name, subtitle, the text's opening and the main image,
+//   like Wikipedia's page previews (the detail's `entries` map).
 // Popovers open on hover or keyboard focus; on touch the first tap opens one, the second follows the link.
 // A term or entry that doesn't exist yet (class "missing") becomes plain, slightly dimmed text instead of a dead link;
-// links to other entries (a.entry-link) are ordinary links the router follows.
-import { html, trusted, type Html } from './html';
+// a click on a link to another entry (a.entry-link) is an ordinary link the router follows.
+import { html, thumb, trusted, TYPE_LABEL, type Html } from './html';
 import { ROUTE_EVENT } from './router';
-import type { GlossaryHint, SourceHint } from './types';
+import type { EntryHint, GlossaryHint, SourceHint } from './types';
 
 let popover: HTMLElement | null = null;
 let current: HTMLAnchorElement | null = null;
@@ -35,6 +37,11 @@ function show(a: HTMLAnchorElement, content: Html, kind: string) {
   popover.id = 'text-popover';
   popover.setAttribute('role', 'tooltip');
   popover.innerHTML = content.value;
+  // a preview image that doesn't load: the text alone
+  popover.querySelectorAll('img').forEach((img) => img.addEventListener('error', () => {
+    img.closest('.popover-image')?.remove();
+    popover?.classList.remove('has-image');
+  }));
   popover.addEventListener('mouseenter', () => clearTimeout(hideTimer));
   popover.addEventListener('mouseleave', hideSoon);
   document.body.append(popover);
@@ -74,8 +81,20 @@ function attach(a: HTMLAnchorElement, content: () => Html, kind: string) {
   });
 }
 
-/** Wires the links inside `root`'s texts: popovers for terms, sources and footnotes; plain text for missing ones. */
-export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint> | undefined, sources?: Record<string, SourceHint>) {
+/** A linked entry's preview: the text on the left, the main image on the right (above it on narrow screens). */
+function entryPreview(e: EntryHint, href: string) {
+  return html`<div class="popover-text">
+      <div class="glossary-popover-head"><strong>${e.name}</strong> <span class="tag">${TYPE_LABEL[e.type]}</span></div>
+      ${e.subtitle ? html`<div class="popover-subtitle">${e.subtitle}</div>` : ''}
+      ${e.excerpt ? html`<p>${e.excerpt}</p>` : ''}
+      <a href="${href}">Open →</a>
+    </div>
+    ${e.image_url ? html`<div class="popover-image"><img src="${thumb(e.image_url, 330)}" alt="" decoding="async"></div>` : ''}`;
+}
+
+/** Wires the links inside `root`'s texts: popovers for terms, entries, sources and footnotes; plain text for missing ones. */
+export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint> | undefined, sources?: Record<string, SourceHint>,
+  entries?: Record<string, EntryHint>) {
   root.querySelectorAll<HTMLAnchorElement>('a.glossary-link.missing, a.entry-link.missing').forEach((a) => {
     const term = a.classList.contains('glossary-link');
     const span = document.createElement('span');
@@ -90,6 +109,11 @@ export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint>
     attach(a, () => html`<div class="glossary-popover-head"><strong>${hint.name}</strong> <span class="tag">${hint.category}</span></div>
       ${hint.definition ? html`<p>${hint.definition}</p>` : ''}
       <a href="${a.getAttribute('href')!}">Read more in the glossary →</a>`, 'term');
+  });
+  root.querySelectorAll<HTMLAnchorElement>('a.entry-link').forEach((a) => {
+    const hint = entries?.[a.dataset.entry ?? ''];
+    if (!hint) return;
+    attach(a, () => entryPreview(hint, a.getAttribute('href')!), hint.image_url ? 'entry has-image' : 'entry');
   });
   // short references ("Busch 1993", "Ebd."): the full citation (HTML with italic titles, escaped by the API)
   root.querySelectorAll<HTMLAnchorElement>('a.source-link').forEach((a) => {

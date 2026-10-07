@@ -62,6 +62,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Bibliography (035/036: `bibliography`, `[[source/slug|S.]]` footnotes after the KHIST UZH guide, `src/bibliography.js`) built 2026-10-06; frontend shows it since 2026-10-06 (/bibliography, footnote and source popovers).
   Series (037: `artworks.parent_id` + `part_number`/`parts_count`, `no_parent_cycle()`, `published`) built 2026-10-06; frontend shows it since 2026-10-06 ("No. 21 of 36 in …", previous/next, parts grid, ?part_of=).
   Artwork web page (038: `artworks.web_url`, Wikidata P973; 039: `web_url_accessed` set by trigger) built 2026-10-07; frontend links it since 2026-10-07 ("View at … ↗" + accessed date, panel without image).
+  Hover previews of [[type/slug]] links like Wikipedia's (040: view `entry_previews`, API `entries`, `markdown.previewText`) built 2026-10-07.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
   Ideas later: impressions vs. design for prints; nightly auto-export commit; ISBN/DOI lookup for sources. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).

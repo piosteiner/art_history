@@ -387,6 +387,31 @@ test('[[links]] to entries navigate, a missing one is plain text; "mentioned in"
   await expect(page.locator('h1')).toHaveText('Vincent van Gogh');
 });
 
+test('[[links]] to entries: a preview on hover (name, subtitle, excerpt); an image that fails leaves the text', async ({ page }) => {
+  await page.route('https://images.example.org/**', (r) => r.fulfill({ status: 404 }));
+  await patch(page, GREAT_WAVE, (b) => {
+    b.description_html = '<p>Admired by <a href="/artists/vincent-van-gogh" class="entry-link" data-entry="artist/vincent-van-gogh">Van Gogh</a> '
+      + 'in <a href="/places/arles" class="entry-link" data-entry="place/arles">Arles</a>.</p>';
+    b.entries = {
+      'artist/vincent-van-gogh': { type: 'artist', slug: 'vincent-van-gogh', name: 'Vincent van Gogh', subtitle: '1853–1890',
+        image_url: 'https://images.example.org/van-gogh.jpg', excerpt: 'Dutch Post-Impressionist painter.' },
+      'place/arles': { type: 'place', slug: 'arles', name: 'Arles', subtitle: 'settlement · Provence', image_url: null, excerpt: null },
+    };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await page.locator('.prose a[data-entry="artist/vincent-van-gogh"]').hover();
+  const pop = page.locator('.popover-entry');
+  await expect(pop).toContainText('Vincent van Gogh');
+  await expect(pop.locator('.popover-subtitle')).toHaveText('1853–1890');
+  await expect(pop).toContainText('Dutch Post-Impressionist painter.');
+  await expect(pop.locator('.popover-image')).toHaveCount(0); // the image 404s: text only
+  await expect(pop).not.toHaveClass(/has-image/);
+  await page.locator('.prose a[data-entry="place/arles"]').hover();
+  await expect(pop.locator('.popover-subtitle')).toHaveText('settlement · Provence');
+  await pop.getByRole('link', { name: 'Open →' }).click();
+  await expect(page).toHaveURL(/\/places\/arles$/);
+});
+
 const step = (position: number, owner: { type: string; slug: string; name: string } | null, extra: Record<string, unknown>) => ({
   position, owner, owner_label: null, owner_name: owner?.name ?? null, acquired: null, ended: null, method: 'purchase', direct: false,
   label: null, certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: null, ...extra,

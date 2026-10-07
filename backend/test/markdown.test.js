@@ -1,6 +1,6 @@
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { renderMarkdown } = require('../src/markdown');
+const { renderMarkdown, previewText } = require('../src/markdown');
 
 test('glossary links: [[slug]] with the term name, [[slug|words]], missing terms marked, code untouched', () => {
   const names = new Map([['term/contrapposto', 'Contrapposto'], ['term/ukiyo-e', 'Ukiyo-e']]);
@@ -24,4 +24,18 @@ test('entry links: [[type/slug]] to any entry, own words, missing marked, unknow
   assert.match(out, /\[\[artsit\/x\]\]/);
   assert.deepEqual([...used], ['ukiyo-e']);
   assert.match(renderMarkdown('[[person/hagiwara-sakutaro]] [[polity/ussr]] [[place/paris]]'), /href="\/people\/hagiwara-sakutaro".*href="\/polities\/ussr".*href="\/places\/paris"/);
+});
+
+test('previewText: first paragraph as plain text, links as names, no footnotes, cut after a sentence', () => {
+  const names = new Map([['artist/katsushika-hokusai', 'Katsushika Hokusai']]);
+  assert.equal(previewText('## Life\n\n- a list\n\nBorn in *Edo*, [[artist/katsushika-hokusai|he]] met [[artist/katsushika-hokusai]] ^[A note.] [[source/clark-2017|45]]. Then more.', { names }),
+    'Born in Edo, he met Katsushika Hokusai. Then more.');
+  assert.equal(previewText('Wave & boats <b>x</b>.'), 'Wave & boats <b>x</b>.');  // plain text, unescaped (the frontend escapes)
+  const first = 'The first sentence is long enough to be kept on its own, so the excerpt ends right after it.';
+  assert.equal(previewText(`${first} ${'word '.repeat(80)}`), first);
+  const words = previewText('A. ' + 'word '.repeat(100));  // the only sentence end comes too early: cut at a word
+  assert.match(words, /^A\. word( word)* …$/);
+  assert.ok(words.length <= 302);
+  assert.equal(previewText(null), null);
+  assert.equal(previewText('# Only a heading'), null);
 });

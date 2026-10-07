@@ -77,12 +77,17 @@ interface DetailBase {
   glossary?: Record<string, GlossaryHint>;
   /** The sources this entry's texts cite in footnotes (a.source-link[data-source]). */
   bibliography?: Record<string, SourceHint>;
+  /** Previews of the other entries its texts link (a.entry-link[data-entry="type/slug"]), for popovers. */
+  entries?: Record<string, EntryHint>;
   /** Entries whose texts link this one (every type except terms, which have `used_in`). */
   mentioned_in?: EntryRef[];
 }
 
 /** A cited source, for popovers on short references: siglum ("Busch 1993") and the full citation (HTML, italic titles). */
 export interface SourceHint { siglum: string; citation: string }
+
+/** A linked entry, for a Wikipedia-style preview: subtitle = dates, maker, kind or where; excerpt = its text's opening. */
+export interface EntryHint { type: EntityType; slug: string; name: string; subtitle: string | null; image_url: string | null; excerpt: string | null }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
 export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'other';

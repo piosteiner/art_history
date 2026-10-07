@@ -4,7 +4,7 @@
 // Public keys are slugs; internal ids never leave the API.
 const express = require('express');
 const { apiPool } = require('../db');
-const { renderMarkdown, linkNames } = require('../markdown');
+const { renderMarkdown, linkNames, firstParagraph, previewText } = require('../markdown');
 const names = require('../names');
 const bibliography = require('../bibliography');
 const { badRequest, notFound, intParam, yearWindowRange } = require('../http');
@@ -323,6 +323,22 @@ function renderMd(row, fields, env = {}) {
   return row;
 }
 
+// Previews of the entries a page's texts [[link]] (view entry_previews, migration 040), for hover popovers like
+// Wikipedia's: {"artist/katsushika-hokusai": {type, name, subtitle, image_url, excerpt}}. Only existing entries
+// (names has them), not terms or sources — those have their own maps (glossary, bibliography). The excerpts' own
+// links read as names too: one more linkNames() over their first paragraphs.
+async function entryPreviews(linked) {
+  const refs = [...linked.keys()].filter((r) => !r.startsWith('term/') && !r.startsWith('source/'));
+  if (!refs.length) return {};
+  // two parallel arrays, unnest()ed into (type, slug) pairs: a row comparison the planner can join on
+  const { rows } = await apiPool.query(`
+    SELECT p.type::text AS type, p.slug, p.name, p.subtitle, p.image_url, p.text_md FROM entry_previews p
+    WHERE (p.type, p.slug) IN (SELECT * FROM unnest($1::entity_type[], $2::text[]))`,
+  [refs.map((r) => r.split('/')[0]), refs.map((r) => r.split('/')[1])]);
+  const env = { names: await linkNames(apiPool, rows.map((r) => firstParagraph(r.text_md))) };
+  return Object.fromEntries(rows.map(({ text_md, ...r }) => [`${r.type}/${r.slug}`, { ...r, excerpt: previewText(text_md, env) }]));
+}
+
 const router = express.Router();
 
 for (const [plural, e] of Object.entries(ENTITIES)) {
@@ -411,11 +427,12 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     // the sources its texts cite (footnotes): siglum and full citation, e.g. for popovers
     const cited = env.names.sources ? Object.fromEntries([...env.cited].filter((s) => env.names.sources.has(s))
       .map((s) => [s, { siglum: env.names.sources.get(s).siglum, citation: env.names.sources.get(s).full }])) : {};
+    const entries = await entryPreviews(env.names);
     if (e.type === 'source') {
       const own = (await bibliography.loadCatalogue(apiPool)).get(entity.slug);
       Object.assign(body, { siglum: own.siglum, citation: own.full });
     }
-    res.json({ type: e.type, ...body, ...extras, relationships, glossary, bibliography: cited });
+    res.json({ type: e.type, ...body, ...extras, relationships, glossary, bibliography: cited, entries });
   });
 }
 

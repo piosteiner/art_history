@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Previews of linked entries on hover, like Wikipedia's (migration 040)
+- **What:** view `entry_previews` (one row per entry of every type: name, subtitle from dates / maker / kind / city,
+  main image, the text to cut the preview from; a term's is its definition). The detail API adds `entries`
+  `{"type/slug": {type, slug, name, subtitle, image_url, excerpt}}` for the `[[type/slug]]` links in its texts (one
+  query, `(type, slug) IN unnest(…)`); `markdown.previewText()` makes the excerpt (first paragraph, links as names,
+  footnotes dropped, cut after a sentence ≤ 300 chars). Frontend: `a.entry-link` gets a popover like the glossary's —
+  name, type, subtitle, excerpt, "Open →", the image on the right (on top on phones; dropped when it fails to load).
+- **Why:** owner: hover previews for all `[[…]]` links, not only glossary terms.
+- **Tested:** unit 31 passing (new `previewText` test); frontend e2e new test passing, one unrelated failure
+  ("remembered time window", fails without this change too). Migration not yet run on a database when written.
+- **Revert:** redeploy the previous commit, then `DROP VIEW entry_previews;` (nothing else depends on it).
+
 ### Admin: the city of an exact location is found (and created) when saving (no schema change)
 - **What:** `placefinder.cityAt()` — our settlement whose outline contains the point (PostGIS `ST_Covers`, no request);
   else Nominatim: a reverse lookup names the city in its address (at city zoom the object may be a borough —

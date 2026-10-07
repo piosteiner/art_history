@@ -93,7 +93,13 @@ link the term. Lists sort A–Z by `sort_key`.
 texts link, `{<slug>: {name, category, definition}}` — enough for a tooltip without another request. Links to other entries
 (migration 030) are `<a href="/<plural>/<slug>" class="entry-link" data-entry="<type>/<slug>">` (e.g. `/artists/katsushika-hokusai`,
 `data-entry="artist/katsushika-hokusai"`; class `entry-link missing` when the entry doesn't exist), and the `href` is
-the website's own address. Every detail response except a term's also has **`mentioned_in`** `[{type, slug, name}]`:
+the website's own address. Every detail response has **`entries`** for those links (migration 040, view
+`entry_previews`): `{"<type>/<slug>": {type, slug, name, subtitle, image_url, excerpt}}` — a Wikipedia-style preview
+without another request. `subtitle`: dates, maker, kind or where (artist "1760–1849", artwork "Katsushika Hokusai,
+c. 1831 · woodblock print", institution "museum · Paris · founded 1793", place "settlement · Provence"); `excerpt`: the
+first paragraph of its text as plain text (links as names, no footnotes), cut after a sentence within ~300 characters,
+or `null`; `image_url`: the main image or `null`. Only existing entries; terms and sources are in `glossary`/`bibliography`.
+Every detail response except a term's also has **`mentioned_in`** `[{type, slug, name}]`:
 the entries whose texts link this one (backlinks). A term has the same thing as `used_in`.
 
 ### Sites: institutions and immovable artworks (migration 034)

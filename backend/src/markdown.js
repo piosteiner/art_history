@@ -158,6 +158,27 @@ function renderWithNotes(text, env) {
 const renderMarkdown = (text, env = {}) => (text
   ? sanitizeHtml(/\^\[|\[\[source\//.test(text) ? renderWithNotes(text, env) : md.render(text, env), SANITIZE) : null);
 
+// A text's opening as plain text, for previews of [[links]] (migration 040): the first paragraph (not a heading, list
+// or quote), rendered so links read as names (env.names — linkNames() over firstParagraph()s), without footnote
+// numbers; cut after the last full sentence within `max` characters, else at a word with "…".
+const firstParagraph = (text) => (text || '').split(/\n[ \t]*\n/).map((p) => p.trim())
+  .find((p) => p && !/^(#|[-*+>|]\s|\d+[.)]\s|```|---)/.test(p)) || '';
+const ENTITIES = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&nbsp;': ' ' };
+function previewText(text, env = {}, max = 300) {
+  const para = firstParagraph(text);
+  if (!para) return null;
+  const html = renderMarkdown(para, { names: env.names });
+  // nonTextTags: dropped with their content — footnote numbers (sup) and the notes themselves (section)
+  const plain = sanitizeHtml(html, { allowedTags: [], allowedAttributes: {},
+    nonTextTags: ['script', 'style', 'textarea', 'option', 'noscript', 'sup', 'section'] })
+    .replace(/&(amp|lt|gt|quot|#39|nbsp);/g, (m) => ENTITIES[m]).replace(/\s+/g, ' ').replace(/ ([.,;:!?)])/g, '$1').trim();  // "famous [1]." → "famous."
+  if (plain.length <= max) return plain || null;
+  const cut = plain.slice(0, max);
+  const sentence = cut.match(/^.*[.!?…](?=\s)/s);  // greedy: the last sentence end inside the limit
+  if (sentence && sentence[0].length >= max / 4) return sentence[0];
+  return `${cut.replace(/\s+\S*$/, '').replace(/[,;:–—-]$/, '')} …`;
+}
+
 // The names of the entries some texts link to: Map "type/slug" → name (only those, looked up in one query).
 async function linkNames(db, texts) {
   const refs = new Set();
@@ -175,4 +196,4 @@ async function linkNames(db, texts) {
   return names;
 }
 
-module.exports = { renderMarkdown, linkNames };
+module.exports = { renderMarkdown, linkNames, firstParagraph, previewText };

@@ -354,7 +354,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       </article>`);
       wireImageFallbacks(main);
       wireLightbox(main);
-      wireTextLinks(main, e.glossary, e.bibliography);
+      wireTextLinks(main, e.glossary, e.bibliography, e.entries);
       if (['artist', 'person', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
       if (!hasMap) return;
 

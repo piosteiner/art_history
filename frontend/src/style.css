@@ -505,6 +505,19 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .lead.citation { font-family: var(--sans); font-size: 1.02rem; }
 .popover-source .citation, .popover-note p { font-size: .88rem; }
 
+/* previews of linked entries (like Wikipedia's): text left, image right; image on top on narrow screens */
+.popover-entry { max-width: min(340px, calc(100vw - 16px)); }
+.popover-entry.has-image { display: flex; max-width: min(500px, calc(100vw - 16px)); padding: 0; overflow: hidden; }
+.popover-entry.has-image .popover-text { flex: 1 1 0; min-width: 0; padding: .65rem .8rem; }
+.popover-entry .popover-image { flex: 0 0 38%; background: var(--bg); }
+.popover-entry .popover-image img { display: block; width: 100%; height: 100%; max-height: 230px; object-fit: cover; }
+.popover-subtitle { color: var(--muted); font-size: .82rem; margin-top: .1rem; }
+.popover-entry p { line-height: 1.45; }
+@media (max-width: 480px) {
+  .popover-entry.has-image { flex-direction: column-reverse; }
+  .popover-entry .popover-image img { height: auto; max-height: 160px; }
+}
+
 /* series and other wholes */
 .series-line { margin: -.6rem 0 .6rem; font-size: 1rem; }
 .part-nav { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin: 0 0 1rem; font-size: .9rem; }
