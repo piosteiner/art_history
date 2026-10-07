@@ -102,6 +102,12 @@ or `null`; `image_url`: the main image or `null`. Only existing entries; terms a
 Every detail response except a term's also has **`mentioned_in`** `[{type, slug, name}]`:
 the entries whose texts link this one (backlinks). A term has the same thing as `used_in`.
 
+**`GET /v1/previews?refs=artist/paul-gauguin,place/arles,term/contrapposto`** — the same previews for *any* entries
+(max. 100 refs, all types incl. terms and sources), as `{data: {"type/slug": {type, slug, name, subtitle, image_url,
+excerpt}}}`; entries that don't exist are left out. For popovers on every internal link of a page — fields
+(artist, collection, country), relationships, lists, map popups: collect the page's `/artists/…`, `/places/…` …
+links, ask once, show on hover. Cached 60 s like the rest of the API.
+
 ### Sites: institutions and immovable artworks (migration 034)
 - Institutions: `location` (their own point, GeoJSON, or `null`), `address`; `place` stays the city.
 - Artworks that don't move (buildings, gardens, bridges …): `location` and/or `area` — where they stand.

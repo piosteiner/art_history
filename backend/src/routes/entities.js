@@ -328,7 +328,11 @@ function renderMd(row, fields, env = {}) {
 // (names has them), not terms or sources — those have their own maps (glossary, bibliography). The excerpts' own
 // links read as names too: one more linkNames() over their first paragraphs.
 async function entryPreviews(linked) {
-  const refs = [...linked.keys()].filter((r) => !r.startsWith('term/') && !r.startsWith('source/'));
+  return previewsOf([...linked.keys()].filter((r) => !r.startsWith('term/') && !r.startsWith('source/')));
+}
+
+// Previews for a list of "type/slug" refs — the texts' links above, and GET /v1/previews for any internal link.
+async function previewsOf(refs) {
   if (!refs.length) return {};
   // two parallel arrays, unnest()ed into (type, slug) pairs: a row comparison the planner can join on
   const { rows } = await apiPool.query(`
@@ -340,6 +344,18 @@ async function entryPreviews(linked) {
 }
 
 const router = express.Router();
+
+// GET /v1/previews?refs=artist/paul-gauguin,place/arles,term/contrapposto — previews of any entries (max. 100), for
+// hover popovers on every internal link of a page (fields, relationships, lists, map popups): one request per page.
+// Entries that don't exist are left out. Same shape as a detail's `entries`.
+const PREVIEW_TYPES = new Set(['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source']);
+router.get('/previews', async (req, res) => {
+  const refs = [...new Set(String(req.query.refs || '').split(',').map((r) => r.trim()).filter(Boolean))];
+  if (refs.length > 100) throw badRequest('at most 100 refs');
+  const bad = refs.filter((r) => !/^[a-z]+\/[a-z0-9]+(-[a-z0-9]+)*$/.test(r) || !PREVIEW_TYPES.has(r.split('/')[0]));
+  if (bad.length) throw badRequest(`not "type/slug": ${bad.slice(0, 3).join(', ')}`);
+  res.json({ data: await previewsOf(refs) });
+});
 
 for (const [plural, e] of Object.entries(ENTITIES)) {
   router.get(`/${plural}`, async (req, res) => {

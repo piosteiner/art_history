@@ -95,3 +95,15 @@ test('kana readings are found in Latin letters; lists sort by the title (romaniz
   expect((await api(request, '/artworks/test-english-title')).sort_key).toBe('Zebra in the Snow');
   sql("DELETE FROM places WHERE slug = 'test-hokkaido'; DELETE FROM artworks WHERE slug = 'test-english-title'");
 });
+
+test('previews of any internal links in one request (GET /v1/previews)', async ({ request }) => {
+  const res = await request.get('http://127.0.0.1:3006/v1/previews?refs=artist/paul-gauguin,place/arles,artist/nobody-here',
+    { headers: { Host: 'api.localhost' } });
+  const { data } = await res.json();
+  expect(Object.keys(data).sort()).toEqual(['artist/paul-gauguin', 'place/arles']);  // entries that don't exist: left out
+  expect(data['artist/paul-gauguin']).toMatchObject({ type: 'artist', name: 'Paul Gauguin' });
+  expect(data['artist/paul-gauguin'].excerpt).toMatch(/^French painter/);
+  expect(data['place/arles'].subtitle).toMatch(/^settlement/);
+  const bad = await request.get('http://127.0.0.1:3006/v1/previews?refs=evil/x;drop', { headers: { Host: 'api.localhost' } });
+  expect(bad.status()).toBe(400);
+});

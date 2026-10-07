@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### API: `GET /v1/previews` — previews of any internal links in one request
+- **What:** `previewsOf(refs)` (from 040's `entryPreviews`) exposed as `/v1/previews?refs=type/slug,…` (max. 100, all
+  types; missing entries left out).
+- **Why:** owner: previews on every internal link (fields, relationships, lists), not only on [[links]] in texts.
+- **Tested:** e2e (names.spec). **Revert:** redeploy the previous commit.
+
 ### Previews of linked entries on hover, like Wikipedia's (migration 040)
 - **What:** view `entry_previews` (one row per entry of every type: name, subtitle from dates / maker / kind / city,
   main image, the text to cut the preview from; a term's is its definition). The detail API adds `entries`
