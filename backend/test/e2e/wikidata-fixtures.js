@@ -84,6 +84,21 @@ function handle(req, res) {
       2: { index: 2, title: 'File:No licence.jpg', imageinfo: [{ mime: 'image/jpeg', thumburl: 'https://upload.wikimedia.org/test/nolicence.jpg',
         descriptionurl: 'https://commons.wikimedia.org/wiki/File:No_licence.jpg', extmetadata: {} }] } } } });  // left out: no licence
   }
+  // Nominatim reverse (placefinder.cityAt): like Manhattan for the Guggenheim, the object at city zoom is a district
+  // (Yukinoshita) and only the address names the city (Kamakura); far north: nothing there
+  if (url.pathname === '/reverse') {
+    if (Number(p.get('lat')) > 80) return json({ error: 'Unable to geocode' });
+    return json({ lat: '35.326', lon: '139.556', category: 'boundary', type: 'administrative', addresstype: 'suburb', name: 'Yukinoshita',
+      display_name: 'Yukinoshita, Kamakura, Kanagawa Prefecture, Japan',
+      address: { suburb: 'Yukinoshita', city: 'Kamakura', 'ISO3166-2-lvl4': 'JP-14', country_code: 'jp' }, extratags: {}, namedetails: { name: '雪ノ下' } });
+  }
+  // the city searched by name and country (placefinder.cityAt)
+  if (url.pathname === '/search' && p.get('city')) {
+    if (p.get('city') !== 'Kamakura' || p.get('countrycodes') !== 'jp') return json([]);
+    return json([{ lat: '35.3192', lon: '139.5467', category: 'boundary', type: 'administrative', addresstype: 'city', name: 'Kamakura',
+      display_name: 'Kamakura, Kanagawa Prefecture, Japan', address: { city: 'Kamakura', 'ISO3166-2-lvl4': 'JP-14', country_code: 'jp' },
+      extratags: { wikidata: 'Q200250' }, namedetails: { name: '鎌倉市', 'name:en': 'Kamakura', 'name:ja': '鎌倉市' } }]);
+  }
   // Nominatim (src/admin/placefinder.js): a city and a prefecture in Japan
   if (url.pathname === '/search') {
     const kyoto = { lat: '35.0116', lon: '135.7681', category: 'boundary', type: 'administrative', addresstype: 'city', name: 'Kyoto',

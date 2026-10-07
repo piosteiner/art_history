@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Admin: the city of an exact location is found (and created) when saving (no schema change)
+- **What:** `placefinder.cityAt()` — our settlement whose outline contains the point (PostGIS `ST_Covers`, no request);
+  else Nominatim: a reverse lookup names the city in its address (at city zoom the object may be a borough —
+  Manhattan for the Guggenheim), the city itself is then searched by name and country; that city among ours (same
+  Wikidata id, or same name within 50 km, `ST_DWithin`); else a new place drafted like the place finder's (names,
+  Wikidata point, parent: our place containing it, else the Natural Earth region, created with it). `saveEntity`:
+  an institution with a location and no place gets its city; a work that doesn't move (location/area changed, no
+  place of creation) gets `created_in` the city, dated like the work. Not marked "to complete"; the save message says
+  so ("Its city was set from the location — 1 new place created"). Lookup failures only mean no city.
+  `wikidata.createEntry` got a `flag` option. Fixtures: Nominatim `/reverse` and city search; `city.spec.js`.
+- **Why:** owner: entering the Guggenheim shouldn't mean entering New York by hand.
+- **Tested:** live Nominatim dry run (Guggenheim → New York Q60 in New York State; Kunsthaus → Zurich Q72); unit 30, e2e 89 passing.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: entry forms in sections (no schema change)
 - **What:** `src/admin/forms.js` SECTIONS — every type's form in sections with slim titles (e.g. artwork: Title and
   names · Who and when · Object · Where it is · Description · Identifiers) and a line of jump links; short fields in

@@ -72,7 +72,9 @@ function send(req, res, { title, body, status = 200, flash, page = null }) {
       n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`,
       n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`].filter(Boolean).join(', ') : '';
     const auto = n('auto') ? ` ${n('auto') === 1 ? 'A new entry was' : `${n('auto')} new entries were`} created for what you typed — marked “to complete” (see the links below and the Quality page).` : '';
-    flash = { kind: 'ok', text: DONE[req.query.done] + (extra ? ` (${extra})` : '') + auto };
+    // the city of an exact location, set by itself (saveEntity → cityFor): found among ours, or created
+    const city = req.query.city === '1' ? ` Its city was set from the location${n('places') ? ` — ${n('places')} new place${n('places') === 1 ? '' : 's'} created (OpenStreetMap / Wikidata, Natural Earth)` : ''}.` : '';
+    flash = { kind: 'ok', text: DONE[req.query.done] + (extra ? ` (${extra})` : '') + auto + city };
   }
   res.status(status).type('html').send(String(layout({ title, body, user: req.user, flash, page })));
 }
@@ -975,6 +977,10 @@ async function saveEntity(user, t, body, existing) {
   // A creator / institution typed as a new name becomes a new (flagged) entry — src/admin/autocreate.js
   const auto = await autocreate.resolveRefs(adminPool, t, doc, body);
   errors.push(...auto.errors);
+  // The city of an exact location, so it needn't be entered by hand (placefinder.cityAt): an institution with a point
+  // but no place gets its city; a work that doesn't move gets "created in" that city. Ours if we have it, else created.
+  const city = errors.length ? null : await cityFor(t, doc, existing);
+  if (city && city.slug && t.type === 'institution') doc.place = city.slug;
   const row = toRow(doc, t.fields);
   errors.push(...row.errors);
   if (errors.length) return { errors, confirm: auto.confirm };
@@ -988,22 +994,38 @@ async function saveEntity(user, t, body, existing) {
         if (key === 'parent') row.parent = s; else row.refs.find((r) => r.col === REF_COLUMNS[key]).slug = s;
       }
       created = auto.creates;
-      for (const r of row.refs) {
-        const id = r.slug === null ? null : await idOf(r.type, r.slug);
-        if (r.slug !== null && id === null) throw new UserError(`${r.type} "${r.slug}" does not exist.`);
-        row.cols[r.col] = ['$', id];
-      }
       if (t.fields.parent) {
         const id = row.parent === null ? null : await idOf(t.type, row.parent);
         if (row.parent !== null && id === null) throw new UserError(`parent ${t.type} "${row.parent}" does not exist.`);
         if (existing && id === existing.id) throw new UserError('An entity cannot be its own parent.');
         row.cols.parent_id = ['$', id];
       }
+      if (city && city.draft) {  // a new city (and its region, from Natural Earth, if we don't have that either)
+        const parentSlugs = await autocreate.create(db, city.creates);
+        if (parentSlugs.has('parent')) city.doc.parent = parentSlugs.get('parent');
+        city.slug = await wikidata.createEntry(db, 'place', city.doc, null, user.id, city.doc.wikidata_id || null, false);
+        city.created = 1 + city.creates.length;
+        if (t.type === 'institution') row.refs.find((r) => r.col === 'place_id').slug = city.slug;
+      }
+      for (const r of row.refs) {
+        const id = r.slug === null ? null : await idOf(r.type, r.slug);
+        if (r.slug !== null && id === null) throw new UserError(`${r.type} "${r.slug}" does not exist.`);
+        row.cols[r.col] = ['$', id];
+      }
       const names = Object.keys(row.cols);
       const values = [slug];
       const exprs = names.map((c) => { values.push(row.cols[c][1]); return row.cols[c][0].replace('$', () => `$${values.length}`); });
+      // an artwork that doesn't move: "created in" its city, dated like the work (unless it has a place of creation)
+      const createdIn = async (id) => {
+        if (!city || !city.slug || t.type !== 'artwork') return;
+        await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label)
+          SELECT 'artwork', w.id, 'created_in', 'place', entity_id('place', $2), w.created, w.created_label FROM artworks w
+          WHERE w.id = $1 AND NOT EXISTS (SELECT 1 FROM relationships r WHERE r.subject_type = 'artwork' AND r.subject_id = w.id
+                                           AND r.relationship_type = 'created_in' AND r.object_type = 'place')`, [id, city.slug]);
+      };
       if (!existing) {
         const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
+        await createdIn(rows[0].id);
         // images picked in the Wikidata review of this new entry (wd.images): saved together with it
         for (const img of pendingImagesOf(t, body)) await images.add(db, t.type, rows[0].id, img);
         for (const c of created) await autocreate.flag(db, c.type, c.id, { type: t.type, id: rows[0].id }, user.id);
@@ -1017,11 +1039,40 @@ async function saveEntity(user, t, body, existing) {
         UPDATE ${t.table} SET slug = $1, ${names.map((c, i) => `${c} = ${exprs[i]}`).join(', ')}
         WHERE id = $${values.length - 1} AND updated_at::text = $${values.length}`, values);
       if (!rowCount) throw new UserError('Someone saved this record while you were editing. Open it again to see their changes, then redo yours.');
+      await createdIn(existing.id);
     });
   } catch (err) {
     return { errors: [friendly(err)] };
   }
-  return { slug, created };
+  return { slug, created, city: city && city.slug ? { created: city.created || 0 } : null };
+}
+
+// Does this save need a city looked up, and which one? (see saveEntity) → null | { slug } | { draft …, doc, creates }
+// Lookup failures (no network, open sea) only mean no city: the save goes on, the quality hint stays.
+async function cityFor(t, doc, existing) {
+  let at = null;
+  if (t.type === 'institution' && doc.location && !doc.place) at = doc.location;
+  if (t.type === 'artwork' && (doc.location || doc.area)) {
+    const before = existing ? existing.doc : {};
+    const moved = JSON.stringify([doc.location, doc.area]) !== JSON.stringify([before.location, before.area]);
+    const hasPlace = existing && (await adminPool.query(`SELECT 1 FROM relationships WHERE subject_type = 'artwork' AND subject_id = $1
+      AND relationship_type = 'created_in' AND object_type = 'place'`, [existing.id])).rows.length;
+    if (moved && !hasPlace) {
+      at = doc.location || (await adminPool.query(`SELECT array[ST_X(p), ST_Y(p)] AS xy
+        FROM (SELECT ST_PointOnSurface(ST_GeomFromGeoJSON($1)) AS p) x`, [JSON.stringify(doc.area)])).rows[0].xy;
+    }
+  }
+  if (!at) return null;
+  let city;
+  try { city = await placefinder.cityAt(adminPool, at, wikidata.coordsOf, wikidata.slugify); } catch { return null; }
+  if (!city || city.slug) return city;
+  // a new place: the place finder's draft as a doc; a parent region we don't have yet comes from Natural Earth
+  const placeT = BY_TYPE.place;
+  const { doc: placeDoc, errors } = formToDoc(city.draft.form, placeT.fields);
+  if (errors.length) return null;
+  const parent = await autocreate.resolveRefs(adminPool, placeT, placeDoc, {});
+  if (parent.errors.length) delete placeDoc.parent;
+  return { draft: city.draft, doc: placeDoc, creates: parent.errors.length ? [] : parent.creates };
 }
 
 // wd.images (JSON from the Wikidata review of a new entry) → value lists for images.add(); checked like the form.
@@ -1060,7 +1111,7 @@ router.post('/:plural', async (req, res) => {
     });
   }
   await drafts.deleteDraft(adminPool, req.user.id, t.type, null);
-  res.redirect(303, `/${t.folder}/${result.slug}?done=created${result.created.length ? `&auto=${result.created.length}` : ''}`);
+  res.redirect(303, `/${t.folder}/${result.slug}?done=created${result.created.length ? `&auto=${result.created.length}` : ''}${result.city ? `&city=1${result.city.created ? `&places=${result.city.created}` : ''}` : ''}`);
 });
 
 // Display of one field's value on the view page.
@@ -1436,7 +1487,7 @@ router.post('/:plural/:slug', async (req, res) => {
   }
   await drafts.deleteDraft(adminPool, req.user.id, t.type, e.id);  // step-1 draft, if any from before
   await collab.publishedNow(t, e.id, req.user.username);
-  res.redirect(303, `/${t.folder}/${result.slug}?done=published${result.created.length ? `&auto=${result.created.length}` : ''}`);
+  res.redirect(303, `/${t.folder}/${result.slug}?done=published${result.created.length ? `&auto=${result.created.length}` : ''}${result.city ? `&city=1${result.city.created ? `&places=${result.city.created}` : ''}` : ''}`);
 });
 
 // Discarding resets everyone's working copy, so it is confirmed on a page that lists what would be lost.

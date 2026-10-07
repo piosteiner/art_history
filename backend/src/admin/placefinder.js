@@ -11,11 +11,11 @@ const NOMINATIM = process.env.NOMINATIM_BASE || 'https://nominatim.openstreetmap
 const UA = 'arthistory-admin/1.0 (+https://arthistory.piogino.ch)';
 let last = 0;
 
-async function nominatim(params) {
+async function nominatim(params, endpoint = '/search') {
   const wait = last + 1100 - Date.now();
   if (wait > 0) await new Promise((r) => setTimeout(r, wait));
   last = Date.now();
-  const url = new URL('/search', NOMINATIM);
+  const url = new URL(endpoint, NOMINATIM);
   url.search = new URLSearchParams({ format: 'jsonv2', 'accept-language': 'en', ...params });
   const res = await fetch(url, { headers: { 'User-Agent': UA }, signal: AbortSignal.timeout(10000) });
   if (!res.ok) throw new Error(`Nominatim ${res.status}`);
@@ -40,24 +40,26 @@ const LANGS = ['en', 'ja', 'zh', 'ko', 'fr', 'de', 'it', 'nl', 'es', 'ru', 'pt']
 // → [{ label, name, kind, country_code, region_codes, lat, lon, wikidata, names: "lines" }]
 async function candidates(q) {
   const hits = await nominatim({ q, limit: '8', addressdetails: '1', extratags: '1', namedetails: '1' });
-  return hits.map((h) => {
-    const a = h.address || {};
-    const nd = h.namedetails || {};
-    const cc = (a.country_code || '').toUpperCase() || null;
-    const name = nd['name:en'] || nd.name || h.name || String(h.display_name).split(',')[0];
-    const own = COUNTRY_LANG[cc];
-    const lines = [];
-    for (const lang of LANGS) {
-      const v = nd[`name:${lang}`];
-      if (v && v !== name && !lines.some((l) => l.startsWith(`${v} |`))) lines.push(`${v} | ${lang} | ${lang === own ? 'original' : 'translation'}`);
-    }
-    return {
-      label: h.display_name, name, kind: kindOf(h), country_code: /^[A-Z]{2}$/.test(cc || '') ? cc : null,
-      region_codes: ['ISO3166-2-lvl4', 'ISO3166-2-lvl3', 'ISO3166-2-lvl5', 'ISO3166-2-lvl6'].map((k) => a[k]).filter(Boolean),
-      lat: Number(h.lat), lon: Number(h.lon), wikidata: /^Q\d+$/.test((h.extratags || {}).wikidata || '') ? h.extratags.wikidata : null,
-      names: lines.join('\n'),
-    };
-  });
+  return hits.map(toCandidate);
+}
+// a Nominatim hit → a candidate (what the place finder lists and draftFor() takes)
+function toCandidate(h) {
+  const a = h.address || {};
+  const nd = h.namedetails || {};
+  const cc = (a.country_code || '').toUpperCase() || null;
+  const name = nd['name:en'] || nd.name || h.name || String(h.display_name).split(',')[0];
+  const own = COUNTRY_LANG[cc];
+  const lines = [];
+  for (const lang of LANGS) {
+    const v = nd[`name:${lang}`];
+    if (v && v !== name && !lines.some((l) => l.startsWith(`${v} |`))) lines.push(`${v} | ${lang} | ${lang === own ? 'original' : 'translation'}`);
+  }
+  return {
+    label: h.display_name, name, kind: kindOf(h), country_code: /^[A-Z]{2}$/.test(cc || '') ? cc : null,
+    region_codes: ['ISO3166-2-lvl4', 'ISO3166-2-lvl3', 'ISO3166-2-lvl5', 'ISO3166-2-lvl6'].map((k) => a[k]).filter(Boolean),
+    lat: Number(h.lat), lon: Number(h.lon), wikidata: /^Q\d+$/.test((h.extratags || {}).wikidata || '') ? h.extratags.wikidata : null,
+    names: lines.join('\n'),
+  };
 }
 
 // A picked candidate (as posted back by the page, so re-checked here) → the new-place form (flat keys), plus what
@@ -104,4 +106,41 @@ async function draftFor(db, c, coordsOf, slugify) {
   return { form, boundary, parent };
 }
 
-module.exports = { nominatim, candidates, draftFor };
+// ---------------------------------------------------------------------------------------------------------------
+// The city of an exact location (an institution's building, a work that doesn't move), so it needn't be entered by
+// hand. In order: our settlement whose outline contains the point (no request at all) · else OpenStreetMap: a
+// reverse lookup names the city in its address (the object found at city zoom may be a borough — Manhattan — so
+// the city itself is then searched by name and country) · that city among ours (same Wikidata id, or same name
+// within 50 km) · else a new place drafted like the place finder's (draftFor: names, Wikidata point, parent region).
+// → { slug, name } of ours | { draft: {form, parent}, name } to create | null (nothing found: the quality hint stays).
+const CITY_TYPES = ['city', 'town', 'village', 'municipality'];
+async function cityCandidate(lon, lat) {
+  const r = await nominatim({ lat: String(lat), lon: String(lon), zoom: '10', addressdetails: '1', extratags: '1', namedetails: '1' }, '/reverse');
+  const a = (r && r.address) || {};
+  const city = a.city || a.town || a.village || a.municipality;
+  if (!city) return null;
+  const cc = (a.country_code || '').toLowerCase();
+  if (CITY_TYPES.includes(r.addresstype) && (r.name === city || ((r.namedetails || {})['name:en'] === city))) return toCandidate(r);
+  const hits = await nominatim({ city, countrycodes: cc, featureType: 'settlement', limit: '1', addressdetails: '1', extratags: '1', namedetails: '1' });
+  return hits.length ? { ...toCandidate(hits[0]), kind: 'settlement' } : null;
+}
+
+async function cityAt(db, [lon, lat], coordsOf, slugify) {
+  const point = 'ST_SetSRID(ST_MakePoint($1, $2), 4326)::geography';
+  const inside = (await db.query(`
+    SELECT p.slug, p.name FROM places p JOIN place_geo g ON g.id = p.id
+    WHERE p.kind = 'settlement' AND g.outline IS NOT NULL AND ST_Covers(g.outline, ${point})
+    ORDER BY ST_Area(g.outline) LIMIT 1`, [lon, lat])).rows[0];
+  if (inside) return inside;
+  const c = await cityCandidate(lon, lat);
+  if (!c) return null;
+  const ours = (await db.query(`
+    SELECT p.slug, p.name FROM places p JOIN place_geo g ON g.id = p.id
+    WHERE p.wikidata_id = $3
+       OR (p.kind = 'settlement' AND lower(f_unaccent(p.name)) = lower(f_unaccent($4)) AND ST_DWithin(g.marker, ${point}, 50000))
+    ORDER BY (p.wikidata_id = $3) DESC NULLS LAST LIMIT 1`, [lon, lat, c.wikidata, c.name])).rows[0];
+  if (ours) return ours;
+  return { draft: await draftFor(db, { ...c, kind: 'settlement' }, coordsOf, slugify), name: c.name };
+}
+
+module.exports = { nominatim, candidates, draftFor, cityAt };

@@ -556,7 +556,8 @@ async function linkQid(db, target, qid) {
 
 // Create a missing target from Wikidata (inside the caller's transaction) → its slug.
 // sourceQid: the item the data comes from when it isn't the entry's own (a building place from an institution's item).
-async function createEntry(db, type, doc, from = null, userId = null, sourceQid = null) {
+// flag = false: complete enough not to be marked "to complete" (a city found from a location, src/admin/index.js).
+async function createEntry(db, type, doc, from = null, userId = null, sourceQid = null, flag = true) {
   const t = BY_TYPE[type];
   if (doc.wikidata_id) {
     const existing = (await db.query(`SELECT slug FROM ${t.table} WHERE wikidata_id = $1`, [doc.wikidata_id])).rows[0];
@@ -570,7 +571,7 @@ async function createEntry(db, type, doc, from = null, userId = null, sourceQid 
   const exprs = names.map((c) => { values.push(row.cols[c][1]); return row.cols[c][0].replace('$', () => `$${values.length}`); });
   const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
   if (row.parent) await db.query(`UPDATE ${t.table} SET parent_id = (SELECT id FROM ${t.table} WHERE slug = $2) WHERE id = $1`, [rows[0].id, row.parent]);
-  await autocreate.flag(db, type, rows[0].id, from, userId);  // a minimal entry: "to complete" until edited
+  if (flag) await autocreate.flag(db, type, rows[0].id, from, userId);  // a minimal entry: "to complete" until edited
   return slug;
 }
 
@@ -694,4 +695,4 @@ async function coordsOf(qid) {
   return e && e.missing === undefined ? coords(e) : null;
 }
 
-module.exports = { search, compare, apply, slugify, sourceNote, SLUG, coordsOf };
+module.exports = { search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry };
