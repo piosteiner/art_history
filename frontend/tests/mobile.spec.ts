@@ -25,3 +25,17 @@ test('pickers fit on the screen', async ({ page }) => {
   const width = page.viewportSize()!.width;
   expect(panel!.x + panel!.width).toBeLessThanOrEqual(width);
 });
+
+test('an artwork without a free image: the link to its museum page is near the top, above the map', async ({ page }) => {
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    Object.assign(body, { web_url: 'https://www.metmuseum.org/art/collection/search/45434', web_url_accessed: '2026-10-07', images: [], image_url: null });
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const top = page.locator('.detail-actions a.web-link');
+  await expect(top).toBeVisible();
+  await expect(top).toBeInViewport();
+  await expect(page.locator('.detail-actions .web-accessed')).toHaveText('link accessed 7 October 2026');
+});

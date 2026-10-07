@@ -126,6 +126,21 @@ function shownElsewhere(e: Entity, r: Relationship) {
   return e.type === 'artwork' && !!r.derived && (r.type === 'owned_by' || r.type === 'kept_in');
 }
 
+// The work's own page elsewhere (the museum's object page …): the way to see it when we have no free image.
+// Named after the holding institution, else the site's domain; "accessed" like a citation (the link may move).
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+function webPage(e: Entity): { url: string; where: string; accessed: string | null } | null {
+  if (e.type !== 'artwork' || !e.web_url || !/^https?:\/\//.test(e.web_url)) return null;
+  let host = e.web_url;
+  try { host = new URL(e.web_url).hostname.replace(/^www\./, ''); } catch { /* keep the link as written */ }
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(e.web_url_accessed ?? '');
+  return { url: e.web_url, where: e.institution?.name ?? host, accessed: m ? `${Number(m[3])} ${MONTHS[Number(m[2]) - 1]} ${m[1]}` : null };
+}
+function webPageLink(w: { url: string; where: string; accessed: string | null }) {
+  return html`<a class="button-link web-link" href="${w.url}" target="_blank" rel="noopener">View at ${w.where} ↗</a>`;
+}
+const accessedNote = (w: { accessed: string | null }) => (w.accessed ? html`<span class="muted small web-accessed">link accessed ${w.accessed}</span>` : '');
+
 function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; text: string | null; images: Image[]; extra: Html[]; lead?: string | null; leadHtml?: string | null } {
   switch (e.type) {
     case 'artist':
@@ -301,6 +316,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const v = factsFor(e);
       document.title = `${v.title} · Art History`;
       const facts = v.facts.filter(([, value]) => value);
+      const web = webPage(e);
       const hasMap = e.type === 'place' ? !!e.location : e.type !== 'term' && e.type !== 'source';
       render(main, html`<article class="page detail detail-${e.type}">
         <p class="crumbs"><a href="/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
@@ -309,12 +325,15 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
         ${e.type === 'artwork' ? html`${seriesLine(e)}${partNav(e)}` : ''}
         <p class="detail-actions">
+          ${web ? html`<span class="web-top${v.images.length ? '' : ' narrow-only'}">${webPageLink(web)}${accessedNote(web)}</span>` : ''}
           ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
           ${e.type !== 'place' && e.type !== 'term' && e.type !== 'source' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
         </p>
         <div class="detail-grid">
           <div class="detail-main">
-            ${v.images.length ? html`<div class="gallery">${v.images.map((img) => figure(img, v.title))}</div>` : ''}
+            ${v.images.length ? html`<div class="gallery">${v.images.map((img) => figure(img, v.title))}</div>`
+              : web ? html`<div class="web-panel"><p>There is no freely licensed image of this work we can show here.</p>
+                  <p>${webPageLink(web)}</p>${web.accessed ? html`<p>${accessedNote(web)}</p>` : ''}</div>` : ''}
             ${v.lead ? html`<p class="lead">${v.lead}</p>` : ''}
             ${v.leadHtml ? html`<p class="lead citation">${trusted(v.leadHtml)}</p>` : ''}
             ${v.text ? html`<div class="prose">${trusted(v.text)}</div>` : ''}

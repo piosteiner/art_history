@@ -219,6 +219,8 @@ export interface Artwork extends DetailBase, Located, Titled {
   images: Image[]; image_url: string | null;
   creator: Ref | null; creators?: CreatorRef[]; institution: Ref | null;
   provenance?: ProvenanceStep[];
+  /** The work's page at its museum / collection (migration 038) and the day the link was added (039, YYYY-MM-DD). */
+  web_url?: string | null; web_url_accessed?: string | null;
 }
 
 export type AcquisitionMethod =

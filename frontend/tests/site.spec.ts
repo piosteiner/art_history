@@ -601,3 +601,38 @@ test('series: "No. 21 of 36 in …" with previous/next; the series page shows it
   await expect(page.locator('.parts-grid .part-card')).toHaveCount(2);
   await expect(page.locator('.parts-grid .part-card').nth(1)).toContainText('No. 21');
 });
+
+// ---- an artwork's web page (API migrations 038/039; no live artwork has one yet: the tests add it) ----
+async function withWebPage(page: Page, change: (body: Record<string, unknown>) => void) {
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.web_url = 'https://www.metmuseum.org/art/collection/search/45434';
+    body.web_url_accessed = '2026-10-07';
+    change(body);
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+}
+
+test('artwork web page: a prominent link at the top, named after the collection, with the day it was accessed', async ({ page }) => {
+  await withWebPage(page, (body) => { body.institution = { slug: 'metropolitan-museum-of-art', name: 'The Metropolitan Museum of Art' }; });
+  const link = page.locator('.detail-actions a.web-link');
+  await expect(link).toHaveText('View at The Metropolitan Museum of Art ↗');
+  await expect(link).toHaveAttribute('href', 'https://www.metmuseum.org/art/collection/search/45434');
+  await expect(link).toHaveAttribute('target', '_blank');
+  await expect(page.locator('.detail-actions .web-accessed')).toHaveText('link accessed 7 October 2026');
+  await expect(page.locator('.web-panel')).toHaveCount(0);  // there are images: no panel
+});
+
+test('artwork web page without a free image: shown in place of the image, named after the domain', async ({ page }) => {
+  await withWebPage(page, (body) => { body.images = []; body.image_url = null; body.institution = null; });
+  const panel = page.locator('.web-panel');
+  await expect(panel).toContainText('no freely licensed image');
+  await expect(panel.locator('a.web-link')).toHaveText('View at metmuseum.org ↗');
+  await expect(panel).toContainText('link accessed 7 October 2026');
+  // not twice on a wide screen; on a narrow one the map comes first, so the link is also at the top
+  const top = page.locator('.detail-actions a.web-link');
+  if ((page.viewportSize()?.width ?? 1200) > 860) await expect(top).toBeHidden();
+  else await expect(top).toBeVisible();
+});

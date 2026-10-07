@@ -4,13 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Frontend: an artwork's web page, prominent (API migrations 038/039)
+- **What:** `frontend/src/views/detail.ts` — "View at <collection, else the link's domain> ↗" with "link accessed
+  7 October 2026" in the artwork's actions row; without images a panel in place of the gallery ("no freely licensed
+  image … View at … ↗"), and on narrow screens (map first) the link at the top as well. Styles `.web-link`,
+  `.web-top`, `.web-panel`; types `web_url`, `web_url_accessed`. Tests: two desktop (site.spec), one phone (mobile.spec).
+- **Why:** owner: the link to the work prominently, with the day it was added — the way to see works without a free image.
+- **Revert:** revert the commit (GitHub Pages republishes).
+
 ### Artwork web page: the day the link was added (migration 039)
 - **What:** `artworks.web_url_accessed` (date), kept by the BEFORE trigger `artworks_web_url_accessed`
   (`set_web_url_accessed()`): today on a new or changed link, unchanged on a resave, NULL without a link; a manual
   value is ignored. Existing links backfilled from audit_log (the change that set the current link). Admin shows
   "· added 7 October 2026"; API detail `web_url_accessed`; hidden from history diffs and revert (follows `web_url`).
 - **Why:** owner: show when a link was added — museum pages move; like "accessed on" in a citation.
-- **Frontend to-do** (not done here): on the artwork page, a prominent link near the top/image —
+- **Frontend** (done the same day, see above): on the artwork page, a prominent link near the top/image —
   "View at <institution name, else the link's domain> ↗" with "link accessed 7 October 2026" in small type.
   When `images` is empty, show it in place of the image (a panel: "No free image — see the work at … ↗").
   Open in a new tab (`rel="noopener"`).
