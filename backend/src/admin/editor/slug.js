@@ -47,7 +47,11 @@ export function initSlug() {
   // Following the title until the slug is typed by hand (a prefilled slug that matches the title still follows).
   // An existing entry's slug is part of its public address: it follows only once the field has been emptied by hand
   // (the old address then redirects, migration 041).
-  let follow = slug.dataset.slugExisting ? false : !slug.value || slug.value === source();
+  // An empty slug (also one already emptied in the shared working copy) can't be saved anyway — it follows.
+  let follow = slug.dataset.slugExisting ? !slug.value : !slug.value || slug.value === source();
   slug.addEventListener('input', (e) => { if (e.isTrusted) follow = slug.value === ''; });
-  for (const x of [from, others].filter(Boolean)) x.addEventListener('input', () => { if (follow) set(source()); });
+  // checked when the title changes, not only on load: the shared working copy may fill in an emptied slug later
+  for (const x of [from, others].filter(Boolean)) {
+    x.addEventListener('input', () => { if (follow || !slug.value) { follow = true; set(source()); } });
+  }
 }

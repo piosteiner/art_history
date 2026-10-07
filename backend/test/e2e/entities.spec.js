@@ -404,6 +404,16 @@ test('an existing entry: an emptied slug follows the title; the old address redi
   await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
   await expect(userA).toHaveURL(/\/artworks\/plum-park-in-kameido-tests\?done=published/);
 
+  // a working copy whose slug was emptied earlier: on opening the page, it follows the title right away
+  await userA.goto('/artworks/plum-park-in-kameido-tests/edit');
+  await userA.locator('#f-slug').fill('');
+  await userA.goto('/artworks/plum-park-in-kameido-tests/edit');
+  await expect(userA.locator('#f-slug')).toHaveValue('');
+  await typeAtEnd(userA, '#f-title', '!');
+  await expect(userA.locator('#f-slug')).toHaveValue('plum-park-in-kameido-tests');
+  await userA.goto('/artworks/plum-park-in-kameido-tests/discard-changes');
+  await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
+
   await userA.goto('/artworks/plum-park-in-kameido/history');               // old address, any page below it
   await expect(userA).toHaveURL(/\/artworks\/plum-park-in-kameido-tests\/history$/);
   const old = await request.get('http://127.0.0.1:3006/v1/artworks/plum-park-in-kameido', { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
