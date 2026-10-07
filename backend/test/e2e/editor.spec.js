@@ -134,3 +134,11 @@ test('static files are linked with a content hash, so a deploy is never hidden b
   expect(await userA.locator('body').getAttribute('data-map-js')).toMatch(/^\/static\/map\.js\?v=[0-9a-f]{10}$/);
   expect((await userA.request.get(src)).status()).toBe(200);
 });
+
+test('the slug comes right before the title or name it is made from', async ({ userA }) => {
+  for (const [url, nameId] of [['/artworks/new', 'f-title'], ['/artists/new', 'f-name'], ['/bibliography/new', 'f-name']]) {
+    await userA.goto(url);
+    const order = await userA.evaluate(() => [...document.querySelectorAll('form.form [id^="f-"]')].map((e) => e.id));
+    expect(order.indexOf('f-slug'), url).toBe(order.indexOf(nameId) - 1);
+  }
+});

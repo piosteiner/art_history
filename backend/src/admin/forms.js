@@ -278,7 +278,7 @@ const g = (summary, keys, hint = '', openForKinds = []) => ({ group: { summary, 
 const IMMOVABLE = ['building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate', 'monument', 'tower', 'mural'];
 const WHOLES = ['series', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'];
 const METADATA = g('Metadata (JSON)…', ['metadata'], 'Free-form extras — sources noted by the Wikidata comparison end up here.');
-const IDS = (...more) => ({ title: 'Identifiers', id: 'ids', rows: [['slug'], ...more, ['wikidata_id'], METADATA] });
+const IDS = (...more) => ({ title: 'Identifiers', id: 'ids', rows: [...more, ['wikidata_id'], METADATA] });
 const SECTIONS = {
   artwork: [
     { title: 'Title and names', id: 'names', rows: [['title'], ['names']] },
@@ -365,6 +365,12 @@ function sectionsOf(t) {
   const list = (SECTIONS[t.type] || [IDS()]).map((sec) => ({ ...sec, rows: sec.rows
     .map((r) => (r.group ? { group: { ...r.group, keys: r.group.keys.filter((k) => t.fields[k]) } } : r.filter((k) => k === 'slug' || t.fields[k])))
     .filter((r) => (r.group ? r.group.keys.length : r.length)) })).filter((sec) => sec.rows.length);
+  // the slug right before the title / name — it is made from it (editor/slug.js) and shown as you type it
+  const at = list.find((sec) => sec.rows.some((r) => !r.group && r.includes(t.name))) || list[0];
+  if (at) {
+    const row = at.rows.findIndex((r) => !r.group && r.includes(t.name));
+    at.rows = [...at.rows.slice(0, Math.max(row, 0)), ['slug'], ...at.rows.slice(Math.max(row, 0))];
+  }
   const placed = new Set(list.flatMap((sec) => sec.rows.flatMap((r) => (r.group ? r.group.keys : r))));
   const rest = Object.keys(t.fields).filter((k) => !placed.has(k));
   if (rest.length) list.splice(list.length - 1, 0, { title: 'More', id: 'more', rows: rest.map((k) => [k]) });

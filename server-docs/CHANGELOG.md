@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Admin: the slug back right before the title / name
+- **What:** `sectionsOf()` places the slug row immediately before the row with the title/name (removed from
+  "Identifiers").
+- **Why:** owner: the slug is made from the title, so it belongs next to it.
+- **Tested:** e2e (editor.spec). **Revert:** redeploy the previous commit.
+
 ### Admin: live search in the search bars
 - **What:** `backend/src/admin/editor/livesearch.js`: `form[data-live]` re-fetches the page in the background as you type
   (debounced, older requests aborted) and swaps its `[data-live-results]` regions; the address bar follows. On: entry

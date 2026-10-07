@@ -68,8 +68,8 @@ test('forms in sections: titles and jump links, short fields in pairs, every fie
   expect(b.x).toBeGreaterThan(a.x + 200);
   // the hints are shown without clicking anything
   await expect(userA.locator('.field', { has: userA.locator('#f-medium') }).locator('.hint')).toBeVisible();
-  // the slug is with the identifiers now, still following the title
-  await expect(userA.locator('#sec-ids #f-slug')).toHaveCount(1);
+  // the slug right before the title it is made from (owner, 2026-10-07)
+  await expect(userA.locator('#sec-names #f-slug')).toHaveCount(1);
   // no field twice, none lost
   const names = await userA.locator('form.form [name^="f."]').evaluateAll((els) => els.map((e) => e.name).filter((n) => !/_(lon|lat|label|lang|h|w|d)$/.test(n)));
   expect(new Set(names).size).toBe(names.length);
