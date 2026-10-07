@@ -142,6 +142,7 @@ const RULES = {
   parent_cycle: 'That would make it part of itself (through its parents) — check "Part of" / "Parent".',
   artworks_parent_check: 'An artwork cannot be part of itself.',
   artworks_parts_count_check: 'Number of parts: a whole number above 0.',
+  artworks_web_url_check: 'Web page: a link starting with https:// (or http://), without spaces.',
   movements_check: 'A movement cannot be its own parent.',
   artists_check: 'Death cannot be before birth.',
   relationships_check: 'An entity cannot be related to itself.',

@@ -237,6 +237,7 @@ function fieldsFor(t, e) {
     date('created', 'P571');
     ref('creator', 'artist', 'P170');
     ref('institution', 'institution', 'P195');
+    text('web_url', firstString(e, 'P973'));  // "described at URL" — usually the museum's page of the work (038)
     // An inventory number belongs to a collection (qualifier P195): prefer the one of the collection suggested above.
     const collection = itemIds(e, 'P195')[0];
     const invs = statements(e, 'P217');

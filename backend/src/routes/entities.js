@@ -83,7 +83,7 @@ const ENTITIES = {
            (SELECT jsonb_build_object('slug', w.slug, 'title', w.title) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
            artwork_creators(t.id) AS creators, ${countryCols('artwork')}`,
     detail: `t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
-             t.inventory_number, ${allImages('artwork_id')}, t.description_md, t.parts_count,
+             t.inventory_number, t.web_url, ${allImages('artwork_id')}, t.description_md, t.parts_count,
              t.materials,
              CASE WHEN t.height_cm IS NOT NULL THEN jsonb_build_object('height_cm', t.height_cm, 'width_cm', t.width_cm,
                'depth_cm', t.depth_cm, 'note', t.dimensions_note,

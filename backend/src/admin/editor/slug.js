@@ -9,7 +9,8 @@ const clean = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().re
 const slugify = (s) => clean(s).replace(/-$/, '').slice(0, 80);
 
 export function initSlug() {
-  const slug = document.querySelector('input[name=slug]');
+  // by id: banners above the form ("unsaved changes — Discard") carry hidden inputs named slug too
+  const slug = document.getElementById('f-slug');
   if (!slug) return;
   const set = (value) => {
     if (slug.value === value) return;

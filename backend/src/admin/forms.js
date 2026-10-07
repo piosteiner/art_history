@@ -38,7 +38,7 @@ const HINTS = {
 const LABELS = {
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
-  'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
+  'artwork.web_url': 'Web page', 'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
   'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
   'term.definition': 'Short definition',
   'source.name': 'Title', 'source.kind': 'Kind of source', 'source.names': 'Other titles (translations …)',
@@ -59,6 +59,7 @@ const TYPE_HINTS = {
     the marker then come from Natural Earth, no point or drawing needed. Countries get it from their country code automatically.`,
   'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location.',
   'institution.address': 'Street address, as written locally, e.g. Heimplatz 1, 8001 Zürich.',
+  'artwork.web_url': 'The work’s page at the museum or collection that holds it — or another good page about it (the artist’s, a catalogue). The site links it: the way to see the work when we have no free image.',
   'artwork.parent': 'The series, album, triptych or altarpiece it belongs to — an artwork of its own (object type series, album …). Empty = none.',
   'artwork.part_number': 'Its place in the whole: 21 · left panel · plate 3 · leaf 12. A number in it sorts the parts.',
   'artwork.parts_count': 'Only for a whole (series, album …): how many parts it has, e.g. 46 — pages then show “No. 21 of 46”.',
@@ -268,6 +269,19 @@ function fieldInput(key, kind, f, ctx) {
     ${list ? html`<datalist id="${id}-list">${list.map((v) => html`<option value="${v}">`)}</datalist>` : ''}${hint(typeHint || HINTS[key])}</div>`;
 }
 
+// Fields that most entries don't need, behind a button: an artwork's series fields (migration 037). A <details>
+// element — works without scripts; open from the start when one of them has a value (or an error).
+const GROUPS = {
+  artwork: { keys: ['parent', 'part_number', 'parts_count'], summary: 'Part of a series…',
+    hint: 'For a print from a series, a panel of a triptych, a leaf of an album — or for the whole itself (its number of parts).' },
+};
+function fieldGroup(g, t, f, ctx) {
+  const open = g.keys.some((k) => String(f[k] ?? '').trim() !== '' || ctx.errorKeys.has(k));
+  return html`<details class="field-group" id="group-${g.keys[0]}"${open ? ' open' : ''}><summary class="button secondary">${g.summary}</summary>
+    <div class="hint">${g.hint}</div>
+    ${g.keys.map((k) => fieldInput(k, t.fields[k], f, ctx))}</details>`;
+}
+
 // version: the row's updated_at when the form was opened (optimistic locking on save).
 // collab: an existing entry's shared working copy (live step 2) — the browser binds the form to it; Save = Publish.
 // collab: { key: 'artist:12:<epoch>', state: base64 } for a working copy.
@@ -290,7 +304,8 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
       <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"
         autocapitalize="none" spellcheck="false"${isNew ? html` data-slug-from="f-${t.name}"` : ''}>
       <div class="hint">${HINTS.slug}</div></div>
-    ${Object.entries(t.fields).map(([key, kind]) => fieldInput(key, kind, f, ctx))}
+    ${Object.entries(t.fields).filter(([key]) => !(GROUPS[t.type] && GROUPS[t.type].keys.includes(key) && key !== GROUPS[t.type].keys[0]))
+      .map(([key, kind]) => (GROUPS[t.type] && key === GROUPS[t.type].keys[0] ? fieldGroup(GROUPS[t.type], t, f, ctx) : fieldInput(key, kind, f, ctx)))}
     <div class="actions"><button>${isNew ? 'Create' : collab ? 'Publish' : 'Save'}</button>
       <a class="button secondary" href="${isNew ? `/${t.folder}` : `/${t.folder}/${slug}`}">${collab ? 'Close' : 'Cancel'}</a>
       ${collab ? html`<a class="button secondary" href="${action}/discard-changes">Discard unpublished changes…</a>

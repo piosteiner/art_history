@@ -52,7 +52,7 @@ const TYPES = [
     title: 'name', names: 'names', parent: 'parent', part_number: 'text', parts_count: 'text', creator: 'ref:artist', attribution_label: 'text', created: 'date',
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     other_dimensions: 'dimsets',
-    institution: 'ref:institution', inventory_number: 'text',
+    institution: 'ref:institution', inventory_number: 'text', web_url: 'text',  // its page at the museum (038)
     location: 'point', area: 'area',  // only for works that don't move: buildings, gardens, bridges … (migration 034)
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];

@@ -92,6 +92,9 @@ function section({ t, e, images, licenseList }) {
   const moveBtn = (img, dir, label, title) => html`<form method="post" action="/images/${img.id}/move" class="inline">
     <input type="hidden" name="dir" value="${dir}"><button class="link" title="${title}">${label}</button></form>`;
   return html`<h2 id="images">Images</h2>
+    ${!images.length && t.type === 'artwork' ? html`<p class="muted small">${e.doc.web_url
+      ? html`No image here — the site links the work's <a href="${e.doc.web_url}" target="_blank" rel="noopener">web page</a> instead.`
+      : html`No free image? Add the work's page at its museum as <a href="${base}/edit#f-web_url">Web page</a> — the site links it instead.`}</p>` : ''}
     ${images.length ? html`<div class="image-list">${images.map((img, i) => html`<figure class="image-item${i === 0 ? ' main' : ''}">
       <a href="${img.source_url || img.url}" target="_blank" rel="noopener"><img src="${thumbUrl(img.url, 250)}" alt="${img.caption || ''}" loading="lazy" decoding="async"></a>
       <figcaption>${i === 0 ? html`<span class="tag">main image</span> ` : ''}${img.caption || ''}

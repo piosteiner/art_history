@@ -162,6 +162,10 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - artist: `artworks` (including co-created ones: `co_creator: true`, `role`) · institution: `artworks`, `place` · artwork: `creator`, `creators`, `attribution_label`, `institution` ·
   place: `ancestors` (Arles → France), `children`, `institutions` · movement: `ancestors`, `children`.
 
+### Web page (artworks)
+`web_url` (detail): the work's page at the museum or collection that holds it, or another good page about it (migration
+038). Link it on the artwork page — most of all when `images` is empty: then it is the way to see the work.
+
 ### Provenance (artworks)
 The detail of an artwork has **`provenance`**: its owners in order, as the sources record them —
 `[{position, owner: {type, slug, name} | null, owner_label, owner_name, acquired, ended, method, direct, label, certainty,

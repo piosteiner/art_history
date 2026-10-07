@@ -272,3 +272,9 @@ button.chip.suggested { border-color: var(--accent); color: var(--accent); }
 .md .missing, .md a.missing { color: var(--err); }
 .citation { font-size: 1.05rem; line-height: 1.5; padding: .6rem .8rem; border-left: 3px solid var(--accent); background: var(--panel); }
 .form .field[hidden] { display: none; }
+/* optional field groups behind a button (forms.js GROUPS: an artwork's series fields) */
+details.field-group { margin: 0.25rem 0 1rem; }
+details.field-group > summary { display: inline-block; list-style: none; }
+details.field-group > summary::-webkit-details-marker { display: none; }
+details.field-group[open] > summary { margin-bottom: 0.5rem; }
+details.field-group[open] { border-left: 3px solid var(--line); padding-left: 0.75rem; }

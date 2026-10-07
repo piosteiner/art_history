@@ -8,6 +8,7 @@ test('a series with numbered parts: new and existing parts, order, neighbours, m
   await userA.goto('/artworks/new');
   await userA.fill('#f-title', 'Thirty-six Views Test');
   await userA.fill('#f-kind', 'series');
+  await userA.click('summary:has-text("Part of a series")');  // the series fields are behind a button
   await userA.fill('#f-parts_count', '46');
   await userA.fill('#f-creator', 'katsushika-hokusai');
   await userA.keyboard.press('Escape');
@@ -18,6 +19,7 @@ test('a series with numbered parts: new and existing parts, order, neighbours, m
 
   // a new part: prefilled with the series and its creator
   await userA.click('a:has-text("+ New part")');
+  await expect(userA.locator('#group-parent')).toHaveAttribute('open', '');  // prefilled → open
   await expect(userA.locator('#f-parent')).toHaveValue('thirty-six-views-test');
   await expect(userA.locator('#f-creator')).toHaveValue('katsushika-hokusai');
   await userA.fill('#f-title', 'Print Twenty-one');

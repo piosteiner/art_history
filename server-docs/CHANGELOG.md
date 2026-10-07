@@ -2,6 +2,23 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-07
+
+### Admin: slug fixed with draft banners; series fields behind a button; artwork web page (migration 038)
+- **What:** (1) `editor/slug.js` found its field with `querySelector('input[name=slug]')` — the first match, which is
+  the hidden input of the "unsaved changes — Discard" banners (`index.js` draftBanner / unpublished banner). With a
+  draft (saved continuously, so nearly always) the slug neither followed the title nor was cleaned. Now
+  `getElementById('f-slug')`. (2) An artwork's "Part of", "Number in it", "Number of parts" sit in a `<details>`
+  behind "Part of a series…" (`forms.js` GROUPS), open when one has a value. (3) `artworks.web_url` (CHECK http(s)):
+  the work's page at its museum/collection — admin field "Web page", API detail `web_url`, Wikidata P973 suggestion,
+  hint in an artwork's empty Images section.
+- **Why:** owner: slug generation "doesn't work anymore"; series fields rarely needed; a link to the work when there is
+  no free image.
+- **Frontend to-do:** link `web_url` on artwork pages ("View at the museum ↗"), prominently when `images` is empty.
+- **Tested:** the slug test fails with the old selector and passes with the fix; unit 30, e2e 83 passing.
+- **Revert:** redeploy the previous commit; `ALTER TABLE artworks DROP COLUMN web_url;`
+  `DELETE FROM schema_migrations WHERE name = '038_artwork_web_url.sql';`
+
 ## 2026-10-06
 
 ### Series and other wholes: parts of artworks; publishers (migration 037)
