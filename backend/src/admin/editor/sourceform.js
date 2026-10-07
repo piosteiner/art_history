@@ -30,6 +30,10 @@ export function initSourceForm() {
       if (!key || !show) { field.hidden = false; continue; }  // "other": everything
       field.hidden = !COMMON.includes(key) && !show.includes(key);
     }
+    // a section (forms.js SECTIONS) whose fields are all hidden hides with them, title included
+    for (const sec of document.querySelectorAll('form.form .form-section')) {
+      sec.hidden = ![...sec.querySelectorAll('.field')].some((f) => !f.hidden);
+    }
   };
   kind.addEventListener('change', update);
   update();

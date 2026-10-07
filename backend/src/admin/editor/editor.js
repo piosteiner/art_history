@@ -257,6 +257,19 @@ initMaterials();
 initDims();
 initSourceForm();
 initSlug();
+// A map inside a closed section (forms.js: "Where it stands…") was laid out at zero size: opening the section tells
+// Leaflet to measure again (it listens to window resize).
+for (const d of document.querySelectorAll('details.field-group')) d.addEventListener('toggle', () => window.dispatchEvent(new Event('resize')));
+// Typing an object type that needs a group opens it: "building" → Where it stands, "series" → Part of a series.
+const kindInput = document.getElementById('f-kind');
+if (kindInput) {
+  kindInput.addEventListener('input', () => {
+    const kind = kindInput.value.trim().toLowerCase();
+    for (const d of document.querySelectorAll('details.field-group[data-open-for-kind]')) {
+      if (d.dataset.openForKind.split('|').includes(kind)) d.open = true;
+    }
+  });
+}
 initWikidataBulk();
 const live = initLive();
 const collabForm = document.querySelector('form[data-collab]');

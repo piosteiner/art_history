@@ -17,6 +17,7 @@ test('create with validation errors, then correctly', async ({ userA }) => {
   await userA.goto('/artists/new');
   await userA.fill('#f-slug', 'claude-monet');
   await userA.fill('#f-birth', '1840-13');
+  await userA.click('summary:has-text("Metadata")');  // behind a button (forms.js SECTIONS)
   await userA.fill('#f-metadata', '{broken');
   await submitForm(userA);
   const errors = userA.locator('.errors li');

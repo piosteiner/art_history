@@ -52,7 +52,17 @@ dl.fields dd { margin: 0; overflow-wrap: anywhere; }
 .md > :first-child { margin-top: 0; }
 .md > :last-child { margin-bottom: 0; }
 
-.form { display: grid; gap: .9rem; max-width: 760px; }
+.form { display: grid; gap: .9rem; max-width: 980px; }
+/* entry forms in sections (forms.js SECTIONS): a slim title, short fields in pairs on wide screens */
+.form-nav { color: var(--muted); margin: -.4rem 0 0; }
+.form-nav a { color: var(--muted); text-decoration: none; }
+.form-nav a:hover { color: var(--accent); text-decoration: underline; }
+.form-section { display: grid; gap: .9rem; scroll-margin-top: 1rem; }
+.form-section-title { font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .07em; color: var(--muted);
+  margin: .7rem 0 -.2rem; padding-bottom: .2rem; border-bottom: 1px solid var(--line); }
+.form-section[hidden] { display: none; }
+.field-pair { display: grid; gap: .9rem 1.4rem; }
+@media (min-width: 900px) { .field-pair { grid-template-columns: 1fr 1fr; align-items: start; } }
 .field label { display: block; font-weight: 600; margin-bottom: .2rem; }
 .field .hint { color: var(--muted); font-size: .85rem; margin-top: .15rem; }
 .field.has-error input, .field.has-error textarea, .field.has-error select { border-color: var(--err); }

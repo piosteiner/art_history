@@ -50,6 +50,7 @@ test('a building is an artwork that stands somewhere and houses an institution; 
   await userA.goto('/artworks/new');
   await userA.fill('#f-title', 'Honkan');
   await userA.fill('#f-kind', 'building');
+  await expect(userA.locator('#group-location')).toHaveAttribute('open', '');  // a building: "Where it stands" opens
   await userA.fill('#f-created', '1937/1938');
   await userA.fill('input[name="f.location_lon"]', '139.7765');
   await userA.fill('input[name="f.location_lat"]', '35.7188');

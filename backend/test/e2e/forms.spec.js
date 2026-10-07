@@ -56,3 +56,44 @@ test('an artwork\'s web page: saved, checked, in the API; the images section poi
   expect(sql("SELECT web_url_accessed::text FROM artworks WHERE slug = 'plum-park-in-kameido'")).toBe(today);
   sql("UPDATE artworks SET web_url = NULL WHERE slug = 'plum-park-in-kameido'");
 });
+
+test('forms in sections: titles and jump links, short fields in pairs, every field once, hints stay visible', async ({ userA }) => {
+  await userA.setViewportSize({ width: 1280, height: 900 });
+  await userA.goto('/artworks/new');
+  await expect(userA.locator('.form-section-title')).toHaveText(['Title and names', 'Who and when', 'Object', 'Where it is', 'Description', 'Identifiers']);
+  await expect(userA.locator('.form-nav a')).toHaveCount(6);
+  // creator and attribution side by side
+  const [a, b] = await Promise.all(['#f-creator', '#f-attribution_label'].map((s) => userA.locator(s).boundingBox()));
+  expect(Math.abs(a.y - b.y)).toBeLessThan(5);
+  expect(b.x).toBeGreaterThan(a.x + 200);
+  // the hints are shown without clicking anything
+  await expect(userA.locator('.field', { has: userA.locator('#f-medium') }).locator('.hint')).toBeVisible();
+  // the slug is with the identifiers now, still following the title
+  await expect(userA.locator('#sec-ids #f-slug')).toHaveCount(1);
+  // no field twice, none lost
+  const names = await userA.locator('form.form [name^="f."]').evaluateAll((els) => els.map((e) => e.name).filter((n) => !/_(lon|lat|label|lang|h|w|d)$/.test(n)));
+  expect(new Set(names).size).toBe(names.length);
+  expect(names).toEqual(expect.arrayContaining(['f.title', 'f.creator', 'f.web_url', 'f.parent', 'f.area', 'f.metadata', 'f.wikidata_id']));
+});
+
+test('a map in a closed group works once it is opened (Leaflet measures again)', async ({ userA }) => {
+  await userA.setViewportSize({ width: 1280, height: 900 });
+  await userA.goto('/artworks/new');
+  await userA.click('summary:has-text("Where it stands")');
+  const map = userA.locator('#group-location .leaflet-container');
+  await expect(map).toBeVisible();
+  const box = await map.boundingBox();
+  expect(box.width).toBeGreaterThan(300);
+  await expect.poll(() => map.evaluate((el) => el.querySelectorAll('.leaflet-tile-loaded, .leaflet-tile').length)).toBeGreaterThan(0);
+  await userA.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+  await expect(userA.locator('input[name="f.location_lon"]')).not.toHaveValue('');
+});
+
+test('bibliography: a section whose fields the kind of source doesn\'t use is hidden, title and all', async ({ userA }) => {
+  await userA.goto('/bibliography/new');
+  await userA.selectOption('#f-kind', 'archival');
+  await expect(userA.locator('#sec-container')).toBeHidden();          // "Appeared in": nothing for an archival source
+  await expect(userA.locator('#sec-online')).toBeVisible();            // archive, shelfmark
+  await userA.selectOption('#f-kind', 'article');
+  await expect(userA.locator('#sec-container')).toBeVisible();
+});

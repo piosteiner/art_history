@@ -269,17 +269,106 @@ function fieldInput(key, kind, f, ctx) {
     ${list ? html`<datalist id="${id}-list">${list.map((v) => html`<option value="${v}">`)}</datalist>` : ''}${hint(typeHint || HINTS[key])}</div>`;
 }
 
-// Fields that most entries don't need, behind a button: an artwork's series fields (migration 037). A <details>
-// element — works without scripts; open from the start when one of them has a value (or an error).
-const GROUPS = {
-  artwork: { keys: ['parent', 'part_number', 'parts_count'], summary: 'Part of a series…',
-    hint: 'For a print from a series, a panel of a triptych, a leaf of an album — or for the whole itself (its number of parts).' },
+// The form in sections with slim titles: rows of one field or a pair (side by side on wide screens), and groups that
+// most entries don't need behind a button (<details>: no script needed; open from the start when one of their fields
+// has a value or an error). The hints stay visible everywhere — clean input the first time saves revisiting entries.
+// Every field of a type appears once; one not placed here lands in "More" (so a new field is never lost).
+const g = (summary, keys, hint = '', openForKinds = []) => ({ group: { summary, keys, hint, openForKinds } });
+// object types that open a group as soon as they are typed (editor.js): works that don't move, and wholes
+const IMMOVABLE = ['building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate', 'monument', 'tower', 'mural'];
+const WHOLES = ['series', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'];
+const METADATA = g('Metadata (JSON)…', ['metadata'], 'Free-form extras — sources noted by the Wikidata comparison end up here.');
+const IDS = (...more) => ({ title: 'Identifiers', id: 'ids', rows: [['slug'], ...more, ['wikidata_id'], METADATA] });
+const SECTIONS = {
+  artwork: [
+    { title: 'Title and names', id: 'names', rows: [['title'], ['names']] },
+    { title: 'Who and when', id: 'who', rows: [['creator', 'attribution_label'], ['created'],
+      g('Part of a series…', ['parent', 'part_number', 'parts_count'],
+        'For a print from a series, a panel of a triptych, a leaf of an album — or for the whole itself (its number of parts).', WHOLES)] },
+    { title: 'Object', id: 'object', rows: [['kind', 'medium'], ['materials'], ['dimensions'], ['dimensions_note'], ['other_dimensions']] },
+    { title: 'Where it is', id: 'where', rows: [['institution', 'inventory_number'], ['web_url'],
+      g('Where it stands (buildings, gardens, monuments)…', ['location', 'area'], 'Only for works that don’t move.', IMMOVABLE)] },
+    { title: 'Description', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
+  artist: [
+    { title: 'Name', id: 'names', rows: [['name'], ['sort_name'], ['names']] },
+    { title: 'Life', id: 'life', rows: [['birth', 'death']] },
+    { title: 'Biography', id: 'text', rows: [['biography_md']] },
+    IDS(),
+  ],
+  person: [
+    { title: 'Name', id: 'names', rows: [['name'], ['names']] },
+    { title: 'Who', id: 'who', rows: [['kind', 'occupations']] },
+    { title: 'Dates', id: 'life', rows: [['birth', 'death'], ['active']] },
+    { title: 'Description', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
+  institution: [
+    { title: 'Name', id: 'names', rows: [['name'], ['names']] },
+    { title: 'About', id: 'about', rows: [['kind', 'founded'], ['website_url']] },
+    { title: 'Where it is', id: 'where', rows: [['place', 'address'], g('Exact location on the map…', ['location'], 'The building itself — puts the institution on the map.')] },
+    { title: 'Description', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
+  place: [
+    { title: 'Name', id: 'names', rows: [['name'], ['names']] },
+    { title: 'Kind and position', id: 'kind', rows: [['kind', 'parent'], ['country_code', 'boundary_code']] },
+    { title: 'On the map', id: 'map', rows: [['location'], ['area']] },
+    { title: 'Description', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
+  movement: [
+    { title: 'Name', id: 'names', rows: [['name'], ['names']] },
+    { title: 'Kind and period', id: 'kind', rows: [['kind', 'parent'], ['period']] },
+    { title: 'Description', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
+  polity: [
+    { title: 'Name', id: 'names', rows: [['name'], ['names']] },
+    { title: 'Kind and period', id: 'kind', rows: [['kind', 'parent'], ['period'], ['country_codes']] },
+    { title: 'Description', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
+  term: [
+    { title: 'Term', id: 'names', rows: [['name'], ['names']] },
+    { title: 'Definition', id: 'definition', rows: [['category'], ['definition']] },
+    { title: 'Description', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
+  // the bibliography: which fields show depends on the kind of source (editor/sourceform.js); a section whose fields
+  // are all hidden hides with them
+  source: [
+    { title: 'What it is', id: 'what', rows: [['kind'], ['name'], ['subtitle'], ['names']] },
+    { title: 'People', id: 'people', rows: [['authors', 'editors'], ['compilers']] },
+    { title: 'Appeared in', id: 'container', rows: [['container', 'container_editors'], ['volume', 'issue'], ['issue_date', 'volumes_total'],
+      ['catalogue_number', 'exhibition'], ['pages', 'pages_are_columns']] },
+    { title: 'Publication', id: 'publication', rows: [['place', 'publisher'], ['year', 'original_year'], ['edition', 'series'], ['thesis']] },
+    { title: 'Online, video, archive', id: 'online', rows: [['url', 'accessed'], ['uploader', 'uploaded'], ['date_text'], ['archive', 'shelfmark']] },
+    { title: 'References and reading', id: 'reading', rows: [['isbn', 'doi'], ['siglum', 'primary_source'], ['reading_status', 'read_on']] },
+    { title: 'Notes', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
 };
-function fieldGroup(g, t, f, ctx) {
-  const open = g.keys.some((k) => String(f[k] ?? '').trim() !== '' || ctx.errorKeys.has(k));
-  return html`<details class="field-group" id="group-${g.keys[0]}"${open ? ' open' : ''}><summary class="button secondary">${g.summary}</summary>
-    <div class="hint">${g.hint}</div>
-    ${g.keys.map((k) => fieldInput(k, t.fields[k], f, ctx))}</details>`;
+
+// Does the form hold something for this key? (point → key_lon/key_lat, date → key_label …; '{}' is an empty mapping)
+const hasValue = (f, key) => Object.keys(f).some((k) => (k === key || k.startsWith(`${key}_`)) && !['', '{}'].includes(String(f[k] ?? '').trim()));
+function fieldGroup(grp, t, f, ctx, render) {
+  const open = grp.keys.some((k) => hasValue(f, k) || ctx.errorKeys.has(k));
+  return html`<details class="field-group" id="group-${grp.keys[0]}"${open ? ' open' : ''}${grp.openForKinds && grp.openForKinds.length ? html` data-open-for-kind="${grp.openForKinds.join('|')}"` : ''}><summary class="button secondary">${grp.summary}</summary>
+    ${grp.hint ? html`<div class="hint">${grp.hint}</div>` : ''}
+    ${grp.keys.filter((k) => t.fields[k]).map(render)}</details>`;
+}
+
+// The sections of a type with every field placed exactly once (unplaced fields → "More", before Identifiers).
+function sectionsOf(t) {
+  const list = (SECTIONS[t.type] || [IDS()]).map((sec) => ({ ...sec, rows: sec.rows
+    .map((r) => (r.group ? { group: { ...r.group, keys: r.group.keys.filter((k) => t.fields[k]) } } : r.filter((k) => k === 'slug' || t.fields[k])))
+    .filter((r) => (r.group ? r.group.keys.length : r.length)) })).filter((sec) => sec.rows.length);
+  const placed = new Set(list.flatMap((sec) => sec.rows.flatMap((r) => (r.group ? r.group.keys : r))));
+  const rest = Object.keys(t.fields).filter((k) => !placed.has(k));
+  if (rest.length) list.splice(list.length - 1, 0, { title: 'More', id: 'more', rows: rest.map((k) => [k]) });
+  return list;
 }
 
 // version: the row's updated_at when the form was opened (optimistic locking on save).
@@ -291,6 +380,10 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   let pending = [];
   try { pending = pendingImages ? JSON.parse(pendingImages) : []; } catch { pending = []; }
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
+  const slugField = html`<div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
+      <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"
+        autocapitalize="none" spellcheck="false"${isNew ? html` data-slug-from="f-${t.name}"` : ''}>
+      <div class="hint">${HINTS.slug}</div></div>`;
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
@@ -300,12 +393,14 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
         <div class="image-list">${pending.map((img) => html`<figure class="image-item"><img src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">
           <figcaption class="muted small">${[img.credit, img.license].filter(Boolean).join(' · ')}</figcaption></figure>`)}</div>
         <div class="hint">Added with the entry when you press Create.</div></div>` : ''}
-    <div class="field${ctx.errorKeys.has('slug') ? ' has-error' : ''}"><label for="f-slug">Slug</label>
-      <input id="f-slug" name="slug" value="${slug}" required pattern="[a-z0-9]+(-[a-z0-9]+)*" placeholder="${isNew ? `filled in from the ${t.name} — e.g. pine-trees-in-the-snow` : ''}"
-        autocapitalize="none" spellcheck="false"${isNew ? html` data-slug-from="f-${t.name}"` : ''}>
-      <div class="hint">${HINTS.slug}</div></div>
-    ${Object.entries(t.fields).filter(([key]) => !(GROUPS[t.type] && GROUPS[t.type].keys.includes(key) && key !== GROUPS[t.type].keys[0]))
-      .map(([key, kind]) => (GROUPS[t.type] && key === GROUPS[t.type].keys[0] ? fieldGroup(GROUPS[t.type], t, f, ctx) : fieldInput(key, kind, f, ctx)))}
+
+    ${(() => {
+      const one = (key) => (key === 'slug' ? slugField : fieldInput(key, t.fields[key], f, ctx));
+      const sections = sectionsOf(t);
+      return html`${sections.length > 2 ? html`<nav class="form-nav small" aria-label="Sections">${sections.map((sec, i) => html`${i ? ' · ' : ''}<a href="#sec-${sec.id}">${sec.title}</a>`)}</nav>` : ''}
+        ${sections.map((sec) => html`<section class="form-section" id="sec-${sec.id}"><h2 class="form-section-title">${sec.title}</h2>
+          ${sec.rows.map((r) => (r.group ? fieldGroup(r.group, t, f, ctx, one) : r.length > 1 ? html`<div class="field-pair">${r.map(one)}</div>` : one(r[0])))}</section>`)}`;
+    })()}
     <div class="actions"><button>${isNew ? 'Create' : collab ? 'Publish' : 'Save'}</button>
       <a class="button secondary" href="${isNew ? `/${t.folder}` : `/${t.folder}/${slug}`}">${collab ? 'Close' : 'Cancel'}</a>
       ${collab ? html`<a class="button secondary" href="${action}/discard-changes">Discard unpublished changes…</a>

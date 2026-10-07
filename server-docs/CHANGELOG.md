@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-07
 
+### Admin: entry forms in sections (no schema change)
+- **What:** `src/admin/forms.js` SECTIONS — every type's form in sections with slim titles (e.g. artwork: Title and
+  names · Who and when · Object · Where it is · Description · Identifiers) and a line of jump links; short fields in
+  pairs on screens ≥ 900 px; rarely needed groups behind a button, open when they hold a value or an error:
+  series, an artwork's "Where it stands" (also opened by typing an immovable object type; series by a whole's type),
+  an institution's exact location, Metadata. Slug moved to Identifiers (still follows the title). Unplaced fields land
+  in "More". Bibliography: a section whose fields the kind hides is hidden too. Opening a group re-measures its map.
+  All hints stay visible (owner: clean input first time matters more than length).
+- **Why:** owner: many fields; easier to read and fill, all on one page, not much longer.
+- **Effect:** artwork form 3237 → 2522 px, institution 2087 → 1550 px (1280 px wide window).
+- **Tested:** unit 30, e2e 86 passing (forms.spec: sections, pairs, map in an opened group, bibliography sections).
+- **Revert:** redeploy the previous commit.
+
 ### Frontend: an artwork's web page, prominent (API migrations 038/039)
 - **What:** `frontend/src/views/detail.ts` — "View at <collection, else the link's domain> ↗" with "link accessed
   7 October 2026" in the artwork's actions row; without images a panel in place of the gallery ("no freely licensed
