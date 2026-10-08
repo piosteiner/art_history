@@ -231,6 +231,12 @@ all the same way, and `glossary_links` is now `content_links WHERE target_type =
 Backlinks ("mentioned in") read `content_links`. The view scans every text on each call, which is fine at this size.
 If it gets slow, it can become a `MATERIALIZED VIEW` refreshed by a trigger, or a links table kept up to date on save.
 
+Links keep the slug as text, so they follow renames (migration 042): `current_links(md)` replaces links to an old slug
+(`slug_history`, 041) with the current one — called by `record_slug_change()` for every Markdown column (view
+`markdown_columns`) in the rename's transaction (history source `slug rename`), and by a `BEFORE INSERT OR UPDATE OF
+<column>` trigger on each, so a stale working copy saved later is corrected. Why not ids in the text (`[[artist:42]]`)?
+Ids differ between databases (dev/test/prod, YAML snapshots match by slug) and make the raw text unreadable.
+
 ## Place geometry (migration 032)
 `boundaries` (reference data, `scripts/boundaries.js`): Natural Earth countries and first-level regions by ISO code,
 `geography(MultiPolygon)` with a GiST index, plus a label point. `places.boundary_code` references it; the rule

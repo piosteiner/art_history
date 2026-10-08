@@ -2,6 +2,21 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-08
+
+### [[links]] follow slug changes (migration 042)
+- **What:** `current_links(md)` rewrites every `[[type/old-slug…]]` (own words and pages kept; `[[old-term]]` without
+  type too) to the entry's current slug via `slug_history`. Used (1) by `record_slug_change()`: a rename rewrites
+  all Markdown columns (view `markdown_columns`) in the same transaction, history source `slug rename`; (2) by
+  `BEFORE INSERT OR UPDATE OF <md column>` triggers (`correct_old_links()`), so a stale working copy or an old YAML
+  snapshot saved later doesn't bring the old slug back. The migration corrected existing texts once.
+  `linkNames()` resolves old slugs too, so the editor preview of an unsaved working copy doesn't show them as missing.
+- **Why:** owner: links store the slug as text — after a rename they broke, and once a new entry took the old slug
+  they would silently point at it.
+- **Tested:** smoke test; rolled-back rename on dev; e2e (entities.spec). **Revert:** redeploy the previous commit; as
+  owner drop the `*_old_links` triggers, `correct_old_links()`, `current_links()`, view `markdown_columns`, and restore
+  041's `record_slug_change()` (texts already rewritten stay rewritten — they are correct).
+
 ## 2026-10-07
 
 ### Changing a slug: emptied slugs follow the title; old addresses redirect (migration 041)

@@ -425,3 +425,24 @@ test('an existing entry: an emptied slug follows the title; the old address redi
   expect(sql(`SELECT string_agg(old_slug, ',') FROM slug_history WHERE entity_type = 'artwork'`)).toBe('plum-park-in-kameido-tests');
   sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
 });
+
+test('a renamed slug: [[links]] in every text follow it; a stale text saved later is corrected', async ({ userA }) => {
+  const before = sql(`SELECT translate(encode(convert_to(description_md, 'UTF8'), 'base64'), E'\\n', '') FROM movements WHERE slug = 'post-impressionism'`);  // exact, trailing newline too
+  sql(`UPDATE movements SET description_md = 'Seen in [[artwork/the-starry-night|the Night]] and [[artwork/the-starry-night]].' WHERE slug = 'post-impressionism'`);
+  await userA.goto('/artworks/the-starry-night/edit');
+  await userA.locator('#f-slug').fill('starry-night');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/artworks\/starry-night\?done=published/);
+  expect(sql(`SELECT description_md FROM movements WHERE slug = 'post-impressionism'`))
+    .toBe('Seen in [[artwork/starry-night|the Night]] and [[artwork/starry-night]].');
+  await userA.goto('/movements/post-impressionism/history');                 // its own change, by the same person
+  await expect(userA.locator('.tag', { hasText: 'slug rename' })).toHaveCount(1);
+
+  // a working copy from before the rename, published afterwards: the old slug doesn't come back
+  sql(`UPDATE movements SET description_md = 'Again [[artwork/the-starry-night]].' WHERE slug = 'post-impressionism'`);
+  expect(sql(`SELECT description_md FROM movements WHERE slug = 'post-impressionism'`)).toBe('Again [[artwork/starry-night]].');
+
+  sql(`UPDATE artworks SET slug = 'the-starry-night' WHERE slug = 'starry-night'`);
+  sql(`UPDATE movements SET description_md = convert_from(decode('${before}', 'base64'), 'UTF8') WHERE slug = 'post-impressionism'`);
+  sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
+});

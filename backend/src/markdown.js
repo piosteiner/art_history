@@ -191,6 +191,16 @@ async function linkNames(db, texts) {
     SELECT type::text || '/' || slug AS ref, name FROM entity_index
     WHERE type::text || '/' || slug = ANY ($1)`, [[...refs]]);
   const names = new Map(rows.map((r) => [r.ref, r.name]));
+  // a link to an old slug (a working copy from before a rename; saving corrects it, migration 042) isn't missing:
+  // the old address redirects
+  const old = [...refs].filter((r) => !names.has(r));
+  if (old.length) {
+    const { rows: renamed } = await db.query(`
+      SELECT h.entity_type::text || '/' || h.old_slug AS ref, e.name FROM slug_history h
+      JOIN entity_index e ON e.type = h.entity_type AND e.id = h.entity_id
+      WHERE h.entity_type::text || '/' || h.old_slug = ANY ($1)`, [old]);
+    for (const r of renamed) names.set(r.ref, r.name);
+  }
   // citations: the whole bibliography (sigla are disambiguated across it — "Jacobsen 1992a"; it is small)
   if ([...refs].some((r) => r.startsWith('source/'))) names.sources = await bibliography.loadCatalogue(db);
   return names;
