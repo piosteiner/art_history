@@ -122,6 +122,17 @@ time-window circles use the venue's own point (one circle per venue), popups nam
 `/v1/map/sites` is the switchable "Museums and sites" layer on the start map; institution pages show the address and
 their own point, immovable artworks where they stand; `houses` appears as "Buildings" (also a graph filter).
 
+## Events (API migration 047)
+`/events` (cards with date, kind, place; filter buttons by kind, `?kind=trial`) and `/events/<slug>`: date, kind, place,
+"part of" and its parts in time order; "Participants" with their role ("Some Official (fire commissioner)"), "What it
+concerns", "Works depicting it"; the map shows the area it covered or its spot (event colour), else only its city;
+"Show on the map and timeline" opens the start page with the event's years as the window. Elsewhere a participation
+reads "took part in … (defendant)", and a person's map popups name the event at a stop ("The Bührle trial, Lausanne").
+Start page: an **Events** layer (switchable, on top of everything, a dot in the middle of an area so it shows on a
+world map; events known only by their city sit a little off the city's dot) that follows the time window
+("Events (1 in 1960–1980)"), and an "Events" group on the timeline while the layer is on. Graph: event nodes and the
+`event` category (took part in, concerns). Prerendered pages and schema.org `Event` data for `/events/<slug>`.
+
 ## Crossed paths
 `src/encounters.ts` finds pairs at the same place with overlapping dates in the dated presence links (left out: a
 work with its own artist, two works). Shown under the explore map (`src/crossings.ts`; respects the pickers and the

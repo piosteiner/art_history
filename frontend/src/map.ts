@@ -8,7 +8,7 @@ import { html, href, link, type Html } from './html';
 import { encounterLine } from './crossings';
 import { encounterKeys, type Encounter } from './encounters';
 import { isDark } from './theme';
-import type { EntityMap, EntityType, PlacesMap, PresenceMap, SiteProps, SitesMap, StopFeature } from './types';
+import type { EntityMap, EntityType, EventMapProps, EventsMap, PlacesMap, PresenceMap, SiteProps, SitesMap, StopFeature } from './types';
 
 setWorkerUrl(workerUrl);
 
@@ -30,6 +30,7 @@ export const COLORS = {
   association: '#5b4fbf',
   place: '#2f6f73',
   empty: '#9aa3a8',
+  event: '#d4237a', // events: fires, trials, auctions, exhibitions
 };
 
 export function createMap(container: HTMLElement): MapLibre {
@@ -78,6 +79,9 @@ function popupOnClick(map: MapLibre, layers: string[], content: (features: MapLa
     if (!present.length) return;
     const features = map.queryRenderedFeatures(e.point, { layers: present });
     if (!features.length) return;
+    // events lie on top of everything (a city's event next to the city's own marker): their popup opens instead
+    const events = layers.some((l) => EVENT_LAYERS.includes(l)) ? [] : EVENT_LAYERS.filter((l) => map.getLayer(l));
+    if (events.length && map.queryRenderedFeatures(e.point, { layers: events }).length) return;
     const blockers = unless.filter((l) => map.getLayer(l));
     if (blockers.length && map.queryRenderedFeatures(e.point, { layers: blockers }).length) return; // that group's popup opens instead
     new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(content(features).value).addTo(map);
@@ -142,11 +146,16 @@ function numberStops<T extends { properties: { layer: string; period: { from_yea
 }
 const stopLabel = (p: Record<string, unknown>) => (p.stop ? html`<span class="tag">stop ${p.stop as number} of ${p.stops as number}</span> ` : '');
 
-/** "Kunsthaus Zürich, " before the city in stop popups (features carry institution / artwork, migration 034). */
+/**
+ * "Kunsthaus Zürich, " before the city in stop popups (features carry institution / artwork, migration 034); an event
+ * someone took part in or a work depicts (047) the same way: "The Bührle trial, Lausanne".
+ */
 function venueLink(p: Record<string, unknown>) {
   const inst = prop<{ slug: string; name: string } | null>(p.institution ?? null);
   const art = prop<{ slug: string; name: string } | null>(p.artwork ?? null);
-  return inst ? html`${link('institution', inst.slug, inst.name)}, ` : art ? html`${link('artwork', art.slug, art.name)}, ` : '';
+  const event = prop<{ slug: string; name: string } | null>(p.event ?? null);
+  return event ? html`${link('event', event.slug, event.name)}, ` : inst ? html`${link('institution', inst.slug, inst.name)}, `
+    : art ? html`${link('artwork', art.slug, art.name)}, ` : '';
 }
 
 // MapLibre flattens nested properties to JSON strings.
@@ -522,16 +531,16 @@ function encountersHere(map: MapLibre, slug: string, venueKey: string | null = n
     : '';
 }
 
-/** An entry's own location (an institution's building, where an immovable work stands): outline or point. */
-export function showOwnSite(map: MapLibre, geometry: GeoJSON.Geometry, name: string, fitToIt: boolean) {
+/** An entry's own location (an institution's building, where an immovable work stands, where an event happened): outline or point. */
+export function showOwnSite(map: MapLibre, geometry: GeoJSON.Geometry, name: string, fitToIt: boolean, color = COLORS.site) {
   whenReady(map, () => {
     setData(map, 'own-site', { type: 'FeatureCollection', features: [{ type: 'Feature', geometry, properties: { name } }] });
     const isArea: ExpressionSpecification = ['in', ['geometry-type'], ['literal', ['Polygon', 'MultiPolygon']]];
-    map.addLayer({ id: 'own-site-area', type: 'fill', source: 'own-site', filter: isArea, paint: { 'fill-color': COLORS.site, 'fill-opacity': 0.25 } });
-    map.addLayer({ id: 'own-site-line', type: 'line', source: 'own-site', filter: isArea, paint: { 'line-color': COLORS.site, 'line-width': 2 } });
+    map.addLayer({ id: 'own-site-area', type: 'fill', source: 'own-site', filter: isArea, paint: { 'fill-color': color, 'fill-opacity': 0.25 } });
+    map.addLayer({ id: 'own-site-line', type: 'line', source: 'own-site', filter: isArea, paint: { 'line-color': color, 'line-width': 2 } });
     map.addLayer({
       id: 'own-site-point', type: 'circle', source: 'own-site', filter: ['==', ['geometry-type'], 'Point'],
-      paint: { 'circle-radius': 7, 'circle-color': COLORS.site, 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 },
+      paint: { 'circle-radius': 7, 'circle-color': color, 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 },
     });
     if (!fitToIt) return;
     const coords: [number, number][] = [];
@@ -569,6 +578,61 @@ export function showSites(map: MapLibre, fc: SitesMap, visible = true) {
     }
     for (const id of SITE_LAYERS) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');
   });
+}
+
+// ---- events: fires, trials, auctions, exhibitions (migration 047) --------------------------------
+
+const EVENT_LAYERS = ['events-area', 'events-outline', 'events-points', 'events-places'];
+
+const overlaps = (p: EventMapProps['period'], w: { from: number; to: number }) =>
+  !!p && (p.from_year ?? -Infinity) <= w.to && (p.to_year ?? Infinity) >= w.from;
+
+/**
+ * Events with a position: their area (burned districts), else their spot, else their city's marker — those are moved
+ * a little off the city's own dot, so both can be clicked. With a time window, only the events overlapping it; on
+ * top of every other layer. Returns how many are shown.
+ */
+export function showEvents(map: MapLibre, fc: EventsMap, opts: { visible: boolean; window: { from: number; to: number } | null }) {
+  const features = opts.window ? fc.features.filter((f) => overlaps(f.properties.period, opts.window!)) : fc.features;
+  // an area is too small to see on a world map: a dot in the middle of its bounding box too
+  const centres = features.filter((f) => f.geometry.type === 'Polygon' || f.geometry.type === 'MultiPolygon').map((f) => {
+    const xs: number[] = [];
+    const ys: number[] = [];
+    const walk = (c: unknown): void => { if (typeof (c as number[])[0] === 'number') { xs.push((c as number[])[0]); ys.push((c as number[])[1]); } else (c as unknown[]).forEach(walk); };
+    walk((f.geometry as GeoJSON.Polygon | GeoJSON.MultiPolygon).coordinates);
+    const centre: [number, number] = [(Math.min(...xs) + Math.max(...xs)) / 2, (Math.min(...ys) + Math.max(...ys)) / 2];
+    return { ...f, geometry: { type: 'Point', coordinates: centre } };
+  });
+  whenReady(map, () => {
+    setData(map, 'events', { type: 'FeatureCollection', features: [...features, ...centres] as unknown as GeoJSON.Feature[] });
+    if (!map.getLayer('events-points')) {
+      const isArea: ExpressionSpecification = ['in', ['geometry-type'], ['literal', ['Polygon', 'MultiPolygon']]];
+      map.addLayer({ id: 'events-area', type: 'fill', source: 'events', filter: isArea, paint: { 'fill-color': COLORS.event, 'fill-opacity': 0.22 } });
+      map.addLayer({ id: 'events-outline', type: 'line', source: 'events', filter: isArea, paint: { 'line-color': COLORS.event, 'line-width': 1.5 } });
+      // exact spots; events known only by their city a little off the city's own dot (translate can't vary per feature)
+      const paint = {
+        'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 4, 12, 8] as ExpressionSpecification, 'circle-color': COLORS.event,
+        'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5,
+      };
+      const isPoint: ExpressionSpecification = ['==', ['geometry-type'], 'Point'];
+      map.addLayer({ id: 'events-points', type: 'circle', source: 'events', filter: ['all', isPoint, ['!=', ['get', 'precision'], 'place']], paint });
+      map.addLayer({ id: 'events-places', type: 'circle', source: 'events', filter: ['all', isPoint, ['==', ['get', 'precision'], 'place']],
+        paint: { ...paint, 'circle-translate': [9, -9] } });
+      popupOnClick(map, EVENT_LAYERS, (found) => html`${(found ?? []).slice(0, 5).map((f) => {
+        const p = f.properties as unknown as EventMapProps & { place: string; period: string };
+        const place = prop<{ slug: string; name: string } | null>(p.place ?? null);
+        const period = prop<{ label: string } | null>(p.period ?? null);
+        return html`<div class="popup-row"><strong>${link('event', p.slug, p.name)}</strong>${p.kind ? html` <span class="tag">${p.kind}</span>` : ''}
+          ${period || place ? html`<div class="muted">${[period?.label, place?.name].filter(Boolean).join(' · ')}</div>` : ''}</div>`;
+      })}`, []);
+    }
+    // on top: overlays are re-added when the data changes
+    for (const id of EVENT_LAYERS) {
+      map.moveLayer(id);
+      map.setLayoutProperty(id, 'visibility', opts.visible ? 'visible' : 'none');
+    }
+  });
+  return features.length;
 }
 
 // ---- several chosen entities, one colour each -----------------------------------------------------

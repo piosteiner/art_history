@@ -117,6 +117,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .bar-movements { fill: var(--place); opacity: .55; }
 .bar-people { fill: var(--association); opacity: .7; }
 .bar-polities { fill: var(--polity); opacity: .45; }
+.bar-events { fill: #d4237a; opacity: .7; }
 .bar-open { opacity: .4; }
 .window { fill: var(--accent); opacity: .1; stroke: var(--accent); stroke-opacity: .5; }
 
@@ -353,7 +354,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 :root { --c-influence: #b4462b; --c-education: #3d6fb6; --c-collaboration: #5e8c3a; --c-membership: #8a8172;
   --c-patronage: #8a4f9e; --c-depiction: #c2577f; --c-provenance: #a0702a; --c-polity: var(--polity);
   --n-artist: #b4462b; --n-artwork: #c08a1e; --n-movement: #2f6f73; --n-institution: #3d6fb6; --n-person: #8a4f9e;
-  --n-polity: var(--polity); --n-place: #8a8172; }
+  --n-polity: var(--polity); --n-place: #8a8172; --c-event: #d4237a; --n-event: #d4237a; }
 .detail-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
 .graph-controls { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; align-items: center; margin: .4rem 0 .4rem; }
 .seg { display: inline-flex; align-items: center; gap: .3rem; font-size: .88rem; }
@@ -368,7 +369,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .swatch { display: inline-block; width: 16px; height: 3px; border-radius: 2px; background: var(--cat); }
 .cat-influence { --cat: var(--c-influence); } .cat-education { --cat: var(--c-education); }
 .cat-collaboration { --cat: var(--c-collaboration); } .cat-membership { --cat: var(--c-membership); }
-.cat-patronage { --cat: var(--c-patronage); } .cat-depiction { --cat: var(--c-depiction); } .cat-provenance { --cat: var(--c-provenance); } .cat-polity { --cat: var(--c-polity); }
+.cat-patronage { --cat: var(--c-patronage); } .cat-depiction { --cat: var(--c-depiction); } .cat-provenance { --cat: var(--c-provenance); } .cat-polity { --cat: var(--c-polity); } .cat-event { --cat: var(--c-event); }
 .graph-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 1rem; align-items: start; }
 @media (max-width: 860px) { .graph-wrap { grid-template-columns: minmax(0, 1fr); } }
 svg.graph {
@@ -389,7 +390,7 @@ svg.graph:active { cursor: grabbing; }
 .node.faded, .edge.faded { opacity: .15; }
 .node-artist { --n: var(--n-artist); } .node-artwork { --n: var(--n-artwork); } .node-movement { --n: var(--n-movement); }
 .node-institution { --n: var(--n-institution); } .node-person { --n: var(--n-person); } .node-polity { --n: var(--n-polity); }
-.node-place { --n: var(--n-place); }
+.node-place { --n: var(--n-place); } .node-event { --n: var(--n-event); }
 .legend .dot[class*="node-"] { background: var(--n); }
 .legend .line.swatch { width: 18px; }
 .graph-info { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: .8rem 1rem; font-size: .92rem; }
@@ -485,6 +486,8 @@ ruby rt { font-size: .5em; color: var(--muted); }
 /* exact locations: museums and sites layer, buildings in the graph */
 .sites-toggle { display: inline-flex; align-items: center; gap: .35rem; font-size: .85rem; color: var(--muted); margin: .3rem 0 0; cursor: pointer; }
 .sites-toggle[hidden] { display: none; }
+.layer-toggles { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
+.rel-role { color: var(--muted); }
 :root { --c-architecture: #3b4fa0; }
 .cat-architecture { --cat: var(--c-architecture); }
 

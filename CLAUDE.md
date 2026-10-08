@@ -67,7 +67,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Old slugs redirect (041) and [[links]] follow slug changes (042: `current_links()`, rewritten on rename and on save) built 2026-10-07/08.
   Images for people (043: `images.person_id`; generated `images.entity_type`/`entity_id`) built 2026-10-08.
   Duplicates (044: unique inventory/boundary, `dup_score()` evidence weighing, check on Create + live box, "not the same" in quality_acks, `merge_entries()` + merge page) built 2026-10-08.
-  Events (046/047: `events`, `participated_in` with role, `concerns`, `depicts` → event, `/v1/events`, `/v1/map/events`) built 2026-10-08; frontend not yet.
+  Events (046/047: `events`, `participated_in` with role, `concerns`, `depicts` → event, `/v1/events`, `/v1/map/events`) built 2026-10-08; frontend shows them since 2026-10-08 (list, page, map layer, timeline, graph).
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
   Ideas later: impressions vs. design for prints; nightly auto-export commit; ISBN/DOI lookup for sources. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).

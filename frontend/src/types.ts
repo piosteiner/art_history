@@ -2,9 +2,9 @@
 import type { PartRef, SiblingRef, WholeRef } from './series';
 
 /** Plural URL segment of an entity type (`/v1/artists/…`). */
-export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities' | 'glossary' | 'bibliography';
+export type Plural = 'artists' | 'artworks' | 'places' | 'movements' | 'institutions' | 'people' | 'polities' | 'events' | 'glossary' | 'bibliography';
 /** Singular `type` field inside responses. */
-export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity' | 'term' | 'source';
+export type EntityType = 'artist' | 'artwork' | 'place' | 'movement' | 'institution' | 'person' | 'polity' | 'event' | 'term' | 'source';
 
 /** Every date is one of these or null. `to` is inclusive; open ends are null; BCE years are negative. */
 export interface DateRange {
@@ -42,7 +42,7 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication';
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication' | 'event';
 
 export interface Relationship {
   type: string;
@@ -187,6 +187,12 @@ export interface SourceItem extends Named {
 }
 export interface TermItem extends Named { slug: string; name: string; category: TermCategory; definition: string | null; image_url: string | null }
 export interface PolityItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null; country_codes: string[] }
+/** Something that happened: a fire, a trial, an auction, an exhibition (migration 047). */
+export interface EventItem extends Located, Named {
+  slug: string; name: string; kind: string | null; period: DateRange | null; place: Ref | null;
+  part_of: Ref | null; image_url: string | null;
+  location?: PointGeometry | null; // exact spot, else a point inside the area
+}
 
 // ---- details -------------------------------------------------------------------------------------
 
@@ -288,6 +294,17 @@ export interface Polity extends DetailBase, Named {
   ancestors: KindRef[]; children: KindRef[];
 }
 
+export interface Event extends DetailBase, Located, Named {
+  type: 'event';
+  name: string; alt_names: string[]; kind: string | null; period: DateRange | null;
+  place: (Ref & { location?: PointGeometry | null }) | null;
+  part_of: Ref | null; parts: KindRef[];
+  /** Exact spot and/or drawn area (e.g. the burned districts). */
+  location: PointGeometry | null; area: GeoJSON.Geometry | null;
+  description_html: string | null;
+  images: Image[]; image_url: string | null;
+}
+
 export interface Term extends DetailBase, Named {
   type: 'term';
   name: string; alt_names: string[]; category: TermCategory; definition: string | null;
@@ -303,15 +320,15 @@ export interface Source extends DetailBase, Named, Omit<SourceItem, 'slug'> {
   url?: string | null; isbn?: string | null; doi?: string | null;
 }
 
-export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Term | Source;
+export type Entity = Artist | Artwork | Place | Movement | Institution | Person | Polity | Event | Term | Source;
 
 export interface ItemByPlural {
   artists: ArtistItem; artworks: ArtworkItem; places: PlaceItem;
-  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem; glossary: TermItem; bibliography: SourceItem;
+  movements: MovementItem; institutions: InstitutionItem; people: PersonItem; polities: PolityItem; events: EventItem; glossary: TermItem; bibliography: SourceItem;
 }
 export interface DetailByPlural {
   artists: Artist; artworks: Artwork; places: Place;
-  movements: Movement; institutions: Institution; people: Person; polities: Polity; glossary: Term; bibliography: Source;
+  movements: Movement; institutions: Institution; people: Person; polities: Polity; events: Event; glossary: Term; bibliography: Source;
 }
 
 // ---- search, vocabulary --------------------------------------------------------------------------
@@ -337,6 +354,8 @@ export interface StopProps {
   place: Ref; period: DateRange | null; note: string | null; certainty: string | null;
   /** The exact venue when the link points at an institution or an immovable artwork; `place` is then its city. */
   institution?: Ref | null; artwork?: Ref | null;
+  /** An event it took part in or depicts (an `association` stop at the event's position). */
+  event?: Ref | null;
 }
 export type StopFeature = Feature<PointGeometry, StopProps>;
 export type RouteFeature = Feature<LineStringGeometry, { layer: 'route' }>;
@@ -360,6 +379,10 @@ export interface SiteProps { type: 'institution' | 'artwork'; slug: string; name
 export interface SitesMap { type: 'FeatureCollection'; features: Feature<GeoJSON.Geometry, SiteProps>[] }
 
 export interface PlaceCountProps { slug: string; name: string; kind: string | null; country_code: string | null; presence_count: number; association_count: number }
+/** Events with a position (`/v1/map/events`): area, else exact spot, else the place's marker. */
+export interface EventMapProps { slug: string; name: string; kind: string | null; period: DateRange | null; place: Ref | null; precision: 'area' | 'spot' | 'place' }
+export interface EventsMap { type: 'FeatureCollection'; features: Feature<GeoJSON.Geometry, EventMapProps>[] }
+
 export interface PlacesMap { type: 'FeatureCollection'; features: Feature<PointGeometry, PlaceCountProps>[] }
 
 // ---- graph ---------------------------------------------------------------------------------------

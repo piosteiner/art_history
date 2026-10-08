@@ -10,9 +10,9 @@ import { fileURLToPath } from 'node:url';
 const SITE = 'https://arthistory.piogino.ch';
 const API = process.env.API_BASE ?? 'https://api.arthistory.piogino.ch/v1';
 const DIST = fileURLToPath(new URL('../dist/', import.meta.url));
-const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
-const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', institutions: 'Institution', people: 'Person', places: 'Place', glossary: 'Term', bibliography: 'Source' };
-const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', institutions: 'Institutions', people: 'People', places: 'Places', glossary: 'Glossary', bibliography: 'Bibliography' };
+const PLURALS = ['artists', 'artworks', 'movements', 'polities', 'events', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
+const TYPE_LABEL = { artists: 'Artist', artworks: 'Artwork', movements: 'Movement', polities: 'Polity', events: 'Event', institutions: 'Institution', people: 'Person', places: 'Place', glossary: 'Term', bibliography: 'Source' };
+const LIST_LABEL = { artists: 'Artists', artworks: 'Artworks', movements: 'Movements', polities: 'Polities', events: 'Events', institutions: 'Institutions', people: 'People', places: 'Places', glossary: 'Glossary', bibliography: 'Bibliography' };
 const SITE_DESCRIPTION = 'Artists, artworks, movements and museums on a map, a timeline and an influence graph.';
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
@@ -76,6 +76,7 @@ function describe(plural, e) {
       ...(e.creators ?? []).filter((c) => !c.main).map((c) => c.name)].filter(Boolean).join(', '), e.created?.label, e.kind, e.institution ? e.institution.name : ''],
     movements: [e.kind, e.period?.label],
     polities: [e.kind, e.period?.label],
+    events: [e.kind, e.period?.label, e.place?.name && country ? `${e.place.name}, ${country}` : e.place?.name],
     institutions: [e.kind, e.place?.name && country ? `${e.place.name}, ${country}` : e.place?.name, e.founded ? `founded ${e.founded.label}` : ''],
     people: [e.birth || e.death ? dateSpan(e.birth, e.death) : e.active ? `active ${e.active.label}` : '', (e.occupations ?? []).join(', '), (e.roles ?? []).join(', ')],
     places: [e.kind, e.ancestors?.length ? e.ancestors.map((a) => a.name).reverse().join(', ') : ''],
@@ -98,6 +99,8 @@ function jsonLd(plural, e, d, url) {
   }
   if (plural === 'places') return { ...base, '@type': 'Place', geo: e.location ? { '@type': 'GeoCoordinates', longitude: e.location.coordinates[0], latitude: e.location.coordinates[1] } : undefined };
   if (plural === 'institutions') return { ...base, '@type': e.kind === 'museum' ? 'Museum' : 'Organization', foundingDate: e.founded?.label };
+  if (plural === 'events') return { ...base, '@type': 'Event', startDate: e.period?.from ?? undefined, endDate: e.period?.to ?? undefined,
+    location: e.place ? { '@type': 'Place', name: e.place.name, url: `${SITE}/places/${e.place.slug}/` } : undefined };
   return null;
 }
 

@@ -3,17 +3,17 @@
 // - no time window, entries chosen             → their routes and places, one colour per entry
 // - a time window on the timeline              → who/what of the selection was physically where
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
-import { getEntityMap, getPlacesMap, getPresence, getSites, listEntities, PLURAL } from '../api';
+import { getEntityMap, getEventsMap, getPlacesMap, getPresence, getSites, listEntities, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, render } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
-import { COLORS, createMap, focusEncounter, highlightRoute, PALETTE, showEncounters, showPlaces, showPresence, showSelection, showSites, type ColoredEntityMap, type RouteInfo } from '../map';
+import { COLORS, createMap, focusEncounter, highlightRoute, PALETTE, showEncounters, showEvents, showPlaces, showPresence, showSelection, showSites, type ColoredEntityMap, type RouteInfo } from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
 import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
 import { renderTimeline, type TimelineRow } from '../timeline';
-import type { EntityType, Plural, PresenceMap, StopProps } from '../types';
+import type { EntityType, EventsMap, Plural, PresenceMap, StopProps } from '../types';
 import { showError } from './common';
 
 const STORAGE_KEY = 'arthistory:explore';
@@ -62,7 +62,10 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       <div class="map" id="map"></div>
       <div class="legend" id="legend"></div>
     </div>
-    <label class="sites-toggle" id="sites-toggle" hidden><input type="checkbox" checked> <span></span></label>
+    <div class="layer-toggles">
+      <label class="sites-toggle" id="sites-toggle" hidden><input type="checkbox" checked> <span></span></label>
+      <label class="sites-toggle" id="events-toggle" hidden><input type="checkbox" checked> <span></span></label>
+    </div>
     <p class="map-status muted" id="map-status"></p>
     <section class="encounters" id="encounters" hidden aria-live="polite"></section>
     <div id="timeline"></div>
@@ -83,6 +86,28 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     showSites(map, fc, box.checked);
     box.addEventListener('change', () => showSites(map, fc, box.checked));
   }).catch(() => { /* optional layer */ });
+
+  // events (fires, trials, auctions …): a layer of their own on top, following the time window; also on the timeline
+  const eventsToggle = main.querySelector<HTMLLabelElement>('#events-toggle')!;
+  const eventsBox = eventsToggle.querySelector('input')!;
+  let events: EventsMap | null = null;
+  function drawEvents() {
+    if (!events?.features.length) return;
+    const shown = showEvents(map, events, { visible: eventsBox.checked, window: win });
+    const span = win ? ` in ${win.from === win.to ? win.from : `${win.from}–${win.to}`}` : '';
+    eventsToggle.querySelector('span')!.innerHTML = html`<i class="dot" style="background:${COLORS.event}"></i> Events (${String(shown)}${span})`.value;
+  }
+  getEventsMap().then((fc) => {
+    if (!fc.features.length || !main.contains(eventsToggle)) return;
+    events = fc;
+    eventsToggle.hidden = false;
+    drawEvents();
+    drawTimeline();
+  }).catch(() => { /* optional layer */ });
+  eventsBox.addEventListener('change', () => {
+    drawEvents();
+    drawTimeline();
+  });
 
   // a remembered view (time window, picks) must not look like the default start page
   const restoredEl = main.querySelector<HTMLElement>('#restored')!;
@@ -214,6 +239,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     } catch (err) {
       if (!stale()) showError(status, err);
     }
+    if (!stale()) drawEvents(); // the overlays were re-added: events back on top, filtered by the window
   }
 
   // Start map without single picks or a time window: every place plus the routes of everything selected, from all
@@ -328,6 +354,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       ...keep('movement', lists.movements).map((m) => ({ group: 'Movements', label: m.name, href: href('movement', m.slug), key: `movement/${m.slug}`, from: m.period, to: m.period, color: colorOf.get('movement', m.slug) })),
       ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), key: `artist/${a.slug}`, from: a.birth, to: a.death, color: colorOf.get('artist', a.slug) })),
       ...keep('person', lists.people).map((p) => ({ group: 'People', label: p.name, href: href('person', p.slug), key: `person/${p.slug}`, from: p.birth ?? p.active, to: p.birth || p.death ? p.death : p.active, color: colorOf.get('person', p.slug) })),
+      ...(events && eventsBox.checked ? events.features.filter((f) => f.properties.period)
+        .map((f) => ({ group: 'Events', label: f.properties.name, href: href('event', f.properties.slug), from: f.properties.period, to: f.properties.period })) : []),
     ];
     timeline = renderTimeline(timelineEl, rows, {
       initialWindow: win,

@@ -1,4 +1,4 @@
-// Detail page for all six entity types: facts, images with credits, long text, relationships by category, map.
+// Detail page for every entity type: facts, images with credits, long text, relationships by category, map.
 import { getEntity, getEntityMap, getPresence, listEntities, PLURAL } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
@@ -19,8 +19,9 @@ import { STATUS_LABEL } from '../catalog';
 
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
-const CATEGORY_ORDER: Category[] = [
-  'glossary', 'presence', 'association', 'architecture', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'publication', 'depiction', 'provenance',
+// categories, plus the relationship types an event's page groups by (participated_in, concerns)
+const CATEGORY_ORDER: (Category | 'participated_in' | 'concerns')[] = [
+  'glossary', 'presence', 'association', 'event', 'participated_in', 'concerns', 'architecture', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'publication', 'depiction', 'provenance',
 ];
 const CATEGORY_LABEL: Record<string, string> = {
   presence: 'Places (physically there)',
@@ -36,6 +37,10 @@ const CATEGORY_LABEL: Record<string, string> = {
   glossary: 'Related terms',
   architecture: 'Buildings',
   publication: 'Publication',
+  event: 'Events',
+  // on an event's page its links are split by type (relationshipSections)
+  participated_in: 'Participants',
+  concerns: 'What it concerns',
 };
 
 /**
@@ -247,6 +252,20 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
         facts: [['Category', html`<a href="/glossary?category=${e.category}">${e.category}</a>`], ['Also known as', otherNames(e)]],
         extra: [backlinks('Used in', 'Entries whose texts mention this term.', e.used_in)].filter((x): x is Html => !!x),
       };
+    case 'event':
+      return {
+        title: e.name, subtitle: [e.kind, e.period?.label, e.place?.name].filter(Boolean).join(' · '), text: e.description_html, images: e.images,
+        facts: [
+          ['Date', dateLabel(e.period)],
+          ['Kind', e.kind],
+          ['Place', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country && e.country.name !== e.place.name ? html`, ${countryLink(e.country)}` : ''}` : null],
+          ['Part of', e.part_of ? link('event', e.part_of.slug, e.part_of.name) : null],
+          ['Also known as', otherNames(e)],
+        ],
+        // the parts in time order (the API sorts them): "Day 1 · fire · 2 March 1657"
+        extra: e.parts.length ? [html`<section class="event-parts"><h2>Parts</h2><ul class="plain-list">${e.parts.map((p) => html`<li>
+          ${link('event', p.slug, p.name)}${p.kind ? html` <span class="tag">${p.kind}</span>` : ''}${p.period ? html` <span class="muted">${p.period.label}</span>` : ''}</li>`)}</ul></section>`] : [],
+      };
     case 'polity':
       return {
         title: e.name, subtitle: [e.kind, e.period?.label].filter(Boolean).join(' · '), text: e.description_html, images: [],
@@ -262,22 +281,30 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
   }
 }
 
-function relationshipSections(rels: Relationship[]): Html {
+/**
+ * Relationships grouped by category. On an event's page its own links are split by type — "Participants" (with their
+ * role: "defendant", "judge"), "What it concerns" — and the label every row would repeat is left out; elsewhere a
+ * participation reads "took part in The Bührle trial (defendant)".
+ */
+function relationshipSections(rels: Relationship[], pageType?: string): Html {
+  const keyOf = (r: Relationship) => (pageType === 'event' && r.category === 'event' ? r.type : r.category);
   const groups = new Map<string, Relationship[]>();
-  for (const r of rels) groups.set(r.category, [...(groups.get(r.category) ?? []), r]);
+  for (const r of rels) groups.set(keyOf(r), [...(groups.get(keyOf(r)) ?? []), r]);
   const order = [...groups.keys()].sort(
     (a, b) => (CATEGORY_ORDER.indexOf(a as Category) + 1 || 99) - (CATEGORY_ORDER.indexOf(b as Category) + 1 || 99),
   );
   const byDate = (a: Relationship, b: Relationship) =>
     (a.period?.from ?? '9999').localeCompare(b.period?.from ?? '9999');
+  const role = (r: Relationship) => r.type === 'participated_in' && !!r.note;
+  const heading = (cat: string) => (pageType === 'event' && cat === 'depiction' ? 'Works depicting it' : CATEGORY_LABEL[cat] ?? cat);
   return html`${order.map((cat) => html`<section class="rel-group rel-${cat}">
-    <h2>${CATEGORY_LABEL[cat] ?? cat}</h2>
+    <h2>${heading(cat)}</h2>
     <ul class="rel-list">${groups.get(cat)!.sort(byDate).map((r) => html`<li>
-      <span class="rel-label">${r.label}</span>
-      ${link(r.entity.type, r.entity.slug, r.entity.name)}
+      ${cat === r.type || (pageType === 'event' && cat === 'depiction') ? '' : html`<span class="rel-label">${r.label}</span>`}
+      ${link(r.entity.type, r.entity.slug, r.entity.name)}${role(r) ? html` <span class="rel-role">(${r.note})</span>` : ''}
       ${r.period ? html`<span class="muted">${r.period.label}</span>` : ''}${impliedEnd(r.end_basis)}
       ${uncertain(r.certainty)}
-      ${r.note ? html`<div class="rel-note">${r.note}</div>` : ''}
+      ${r.note && !role(r) ? html`<div class="rel-note">${r.note}</div>` : ''}
       ${r.notes_html ? html`<div class="rel-note">${trusted(r.notes_html)}</div>` : ''}
     </li>`)}</ul>
   </section>`)}`;
@@ -318,7 +345,9 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       document.title = `${v.title} · Art History`;
       const facts = v.facts.filter(([, value]) => value);
       const web = webPage(e);
-      const hasMap = e.type === 'place' ? !!e.location : e.type !== 'term' && e.type !== 'source';
+      const hasMap = e.type === 'place' ? !!e.location : e.type === 'event' ? !!(e.area ?? e.location ?? e.place?.location) : e.type !== 'term' && e.type !== 'source';
+      // an event on the start map: its years as the time window (the events layer follows it)
+      const eventWindow = e.type === 'event' && e.period ? [e.period.from_year ?? e.period.to_year, e.period.to_year ?? e.period.from_year] : null;
       render(main, html`<article class="page detail detail-${e.type}">
         <p class="crumbs"><a href="/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
         <h1${langAttr(displayName(e).lang)}>${displayName(e).ruby ? trusted(displayName(e).ruby) : v.title}</h1>
@@ -328,6 +357,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         <p class="detail-actions">
           ${web ? html`<span class="web-top${v.images.length ? '' : ' narrow-only'}">${webPageLink(web)}${accessedNote(web)}</span>` : ''}
           ${GROUPS.includes(e.type as Group) ? html`<a class="button-link" href="/?${PLURAL[e.type]}=${encodeURIComponent(e.slug)}">Show on the map and timeline →</a>` : ''}
+          ${eventWindow?.[0] != null ? html`<a class="button-link" href="/?from=${String(eventWindow[0])}&to=${String(eventWindow[1])}">Show on the map and timeline →</a>` : ''}
           ${e.type !== 'place' && e.type !== 'term' && e.type !== 'source' ? html`<a class="button-link" href="/graph/${plural}/${encodeURIComponent(e.slug)}?depth=2">Show the network →</a>` : ''}
         </p>
         <div class="detail-grid">
@@ -342,7 +372,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
             <section id="crossed" class="crossed" hidden></section>
-            ${relationshipSections(e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r)))}
+            ${relationshipSections(e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r)), e.type)}
             ${e.type === 'source'
               ? backlinks('Cited in', 'Entries whose texts cite this source.', e.mentioned_in)
               : backlinks('Mentioned in', 'Entries whose texts link to this one.', e.mentioned_in)}
@@ -366,6 +396,16 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       cleanup = () => map.remove();
       if (e.type === 'place') {
         showPoint(map, e.location!.coordinates, e.name);
+        return;
+      }
+      if (e.type === 'event') {
+        // where it happened: the drawn area or exact spot, else only its city
+        const own = e.area ?? e.location;
+        if (own) showOwnSite(map, own, e.name, true, COLORS.event);
+        else showPoint(map, e.place!.location!.coordinates, e.place!.name);
+        render(legend, own
+          ? html`<span><i class="dot" style="background:${COLORS.event}"></i>${e.area ? 'the area it covered' : 'where it happened'}</span>`
+          : html`<span><i class="dot" style="background:${COLORS.place}"></i>${e.place!.name} (no exact location recorded)</span>`);
         return;
       }
       getEntityMap(plural as Exclude<Plural, 'places'>, slug)

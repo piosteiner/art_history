@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Frontend: events on the public site (no server change)
+- **What:** type `event` everywhere: nav, router, header search, list page (`/events`, kind filter), detail page (date,
+  place, part of / parts, participants with roles, concerns, works depicting it, map of its area / spot / city, link to
+  the start page with its years), start page layer `/v1/map/events` (toggle, time window, centre dots for areas) and
+  timeline group, graph category and node colour, event stops in map popups, prerender + schema.org `Event`.
+- **Why:** owner: backend migrations 046/047 added events; show them on the site.
+- **Tested:** 3 new e2e tests with sample events (none live yet); full suite 49/50 — "picker names" (new tab) failed once
+  under load, passes alone 3×; `vite build` ok.
+- **Revert:** revert the commit (Pages republishes).
+
 ### Events: a new entry type (migrations 046, 047)
 - **What:** enum value `event` (046); table `events` (kind, parent_id, period, place_id, location, area, names,
   description, Wikidata, images via `images.event_id`), triggers like every entity table; event branches in

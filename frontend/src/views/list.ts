@@ -60,6 +60,11 @@ function cardParts(plural: Plural, item: AnyItem) {
       [name, date, detail, image] = [t.name, t.category, t.definition ?? '', t.image_url];
       break;
     }
+    case 'events': {
+      const e = item as ItemByPlural['events'];
+      [name, date, detail, image] = [e.name, dateLabel(e.period), [e.kind, e.place?.name, countryText(e.country), e.part_of ? `part of ${e.part_of.name}` : ''].filter(Boolean).join(' · '), e.image_url];
+      break;
+    }
     case 'polities': {
       const p = item as ItemByPlural['polities'];
       [name, date, detail] = [p.name, dateLabel(p.period), [p.kind, p.country_codes.map((c) => countryName(c) ?? c).join(', ')].filter(Boolean).join(' · ')];
@@ -113,8 +118,9 @@ export function list(main: HTMLElement, plural: Plural) {
   let similar: Entry<AnyItem>[] = []; // typo-tolerant name matches from the API that the field search missed
   let query = '';
   // one value of a field at a time: glossary by category (`?category=technique`), bibliography by reading status
-  // (`?status=read`); "All" shows everything
-  const FILTER = ({ glossary: { field: 'category', param: 'category' }, bibliography: { field: 'reading_status', param: 'status' } } as Record<string, { field: string; param: string }>)[plural];
+  // (`?status=read`), events by kind (`?kind=trial`); "All" shows everything
+  const FILTER = ({ glossary: { field: 'category', param: 'category' }, bibliography: { field: 'reading_status', param: 'status' },
+    events: { field: 'kind', param: 'kind' } } as Record<string, { field: string; param: string }>)[plural];
   const fieldOf = (e: Entry<AnyItem>) => String((e.item as unknown as Record<string, unknown>)[FILTER?.field ?? ''] ?? 'other');
   const labelOf = (v: string) => (plural === 'bibliography' ? STATUS_LABEL[v] ?? v : v);
   let category = FILTER ? new URLSearchParams(location.search).get(FILTER.param) : null;

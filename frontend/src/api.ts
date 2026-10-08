@@ -1,7 +1,7 @@
 // The only module that talks to the backend. Everything else calls these functions, never fetch().
 import type {
   DetailByPlural, EntryHint, EntityMap, EntityType, Graph, ItemByPlural, List, PlacesMap, Plural,
-  PresenceMap, RelationshipType, SearchHit, SitesMap,
+  EventsMap, PresenceMap, RelationshipType, SearchHit, SitesMap,
 } from './types';
 
 // In development the Vite server proxies /v1 (the API only allows CORS from the production origin).
@@ -37,7 +37,7 @@ function get<T>(path: string, params: Params = {}): Promise<T> {
 
 export const PLURAL: Record<EntityType, Plural> = {
   artist: 'artists', artwork: 'artworks', place: 'places',
-  movement: 'movements', institution: 'institutions', person: 'people', polity: 'polities', term: 'glossary', source: 'bibliography',
+  movement: 'movements', institution: 'institutions', person: 'people', polity: 'polities', event: 'events', term: 'glossary', source: 'bibliography',
 };
 
 export interface ListParams extends Params {
@@ -65,6 +65,9 @@ export const getPresence = (from: number, to: number, types?: EntityType[]) =>
   get<PresenceMap>('/map/presence', { from, to, types: types?.join(',') });
 
 export const getPlacesMap = (from?: number, to?: number) => get<PlacesMap>('/map/places', { from, to });
+
+/** Every event with a position (area, else exact spot, else its place's marker), for the events layer. */
+export const getEventsMap = () => get<EventsMap>('/map/events');
 
 /** Institutions and immovable artworks with an exact location of their own (a museum layer). */
 export const getSites = () => get<SitesMap>('/map/sites');

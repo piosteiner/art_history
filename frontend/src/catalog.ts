@@ -316,6 +316,23 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       },
     }),
   },
+  events: {
+    type: 'event',
+    sorts: [
+      { id: 'date', label: 'Date' },
+      { id: 'name', label: 'Name A–Z' },
+      { id: 'kind', label: 'Kind' },
+      { id: 'country', label: 'Country' },
+    ],
+    build: (e) => ({
+      slug: e.slug, name: e.name, meta: [e.kind, e.period?.label, e.place?.name].filter(Boolean).join(' · '),
+      fields: fields(
+        ['Where', [e.place?.name, countryText(e.country)].filter(Boolean).join(', ')],
+        ['Part of', e.part_of?.name],
+      ),
+      sorts: { date: byYear(e.period), name: byName(e.name), kind: byText(e.kind, 'Other'), country: byText(countryText(e.country), 'Country unknown') },
+    }),
+  },
   glossary: {
     type: 'term',
     sorts: [

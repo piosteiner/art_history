@@ -693,3 +693,71 @@ test('artwork web page without a free image: shown in place of the image, named 
   if ((page.viewportSize()?.width ?? 1200) > 860) await expect(top).toBeHidden();
   else await expect(top).toBeVisible();
 });
+
+// ---- events (API migration 047); the live data has none yet, so the tests bring samples ----
+const yr = (from: string, to: string, label: string) => ({ label, from, to, from_year: Number(from.slice(0, 4)), to_year: Number(to.slice(0, 4)) });
+const FIRE_PERIOD = yr('1657-03-02', '1657-03-04', '2 March–4 March 1657');
+const EDO = { slug: 'edo', name: 'Edo', location: { type: 'Point', coordinates: [139.76, 35.68] } };
+const FIRE = {
+  type: 'event', slug: 'great-fire-of-meireki', name: 'Great Fire of Meireki', name_lang: 'en', names: [], alt_names: [],
+  kind: 'fire', period: FIRE_PERIOD, place: EDO, part_of: null, country: null, polities: [],
+  parts: [{ slug: 'first-day', name: 'First day', kind: 'fire', period: yr('1657-03-02', '1657-03-02', '2 March 1657') }],
+  location: null, area: { type: 'MultiPolygon', coordinates: [[[[139.74, 35.67], [139.78, 35.67], [139.78, 35.70], [139.74, 35.67]]]] },
+  description_html: '<p>A fire that destroyed much of Edo.</p>', images: [], image_url: null, wikidata_id: null, metadata: {}, updated_at: '2026-10-08',
+  relationships: [
+    { type: 'participated_in', direction: 'incoming', label: 'participants', category: 'event', is_physical_presence: false,
+      entity: { type: 'person', slug: 'some-official', name: 'Some Official' }, period: null, note: 'fire commissioner', certainty: 'attested', notes_html: null },
+    { type: 'concerns', direction: 'outgoing', label: 'concerns', category: 'event', is_physical_presence: false,
+      entity: { type: 'place', slug: 'edo', name: 'Edo' }, period: null, note: null, certainty: 'attested', notes_html: null },
+    { type: 'depicts', direction: 'incoming', label: 'depicted in', category: 'depiction', is_physical_presence: false,
+      entity: { type: 'artwork', slug: 'meireki-fire-scroll', name: 'Meireki fire handscroll' }, period: null, note: null, certainty: 'attested', notes_html: null },
+  ],
+  glossary: {}, bibliography: {}, entries: {}, mentioned_in: [],
+};
+const TRIAL = { slug: 'buehrle-trial', name: 'Bührle trial', kind: 'trial', period: yr('1970-01-01', '1970-12-31', '1970'),
+  place: { slug: 'lausanne', name: 'Lausanne' }, part_of: null, image_url: null, country: null, polities: [], names: [], location: null };
+
+test('an event page: date, place, parts, participants with their role, what it concerns, works depicting it, its area', async ({ page }) => {
+  await page.route(/\/v1\/events\/great-fire-of-meireki$/, (r) => r.fulfill({ json: FIRE }));
+  await page.goto('/events/great-fire-of-meireki');
+  await expect(page.locator('h1')).toHaveText('Great Fire of Meireki');
+  await expect(page.locator('.subtitle')).toHaveText('fire · 2 March–4 March 1657 · Edo');
+  await expect(page.locator('.facts')).toContainText('2 March–4 March 1657');
+  await expect(page.locator('.facts a[href="/places/edo"]')).toBeVisible();
+  await expect(page.locator('.event-parts a[href="/events/first-day"]')).toBeVisible();
+  const participants = page.locator('.rel-group', { has: page.getByRole('heading', { name: 'Participants' }) });
+  await expect(participants).toContainText('Some Official (fire commissioner)');
+  await expect(participants.locator('.rel-label')).toHaveCount(0); // not "participants" on every row
+  await expect(page.getByRole('heading', { name: 'What it concerns' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Works depicting it' })).toBeVisible();
+  await expect(page.locator('#legend')).toContainText('the area it covered');
+  await expect(page.locator('a.button-link', { hasText: 'Show on the map and timeline' })).toHaveAttribute('href', '/?from=1657&to=1657');
+});
+
+test('events list: cards with date and place, filter by kind', async ({ page }) => {
+  const fireItem = { ...FIRE, location: null, relationships: undefined, parts: undefined };
+  await page.route(/\/v1\/events\?/, (r) => r.fulfill({ json: { data: [fireItem, TRIAL], total: 2, limit: 500, offset: 0 } }));
+  await page.goto('/events');
+  await expect(page.locator('.card')).toHaveCount(2);
+  await expect(page.locator('.card', { hasText: 'Bührle trial' })).toContainText('Lausanne');
+  await page.locator('#categories button', { hasText: 'trial' }).click();
+  await expect(page.locator('.card')).toHaveCount(1);
+  await expect(page).toHaveURL(/\/events\?kind=trial$/);
+});
+
+test('explore: an events layer that follows the time window, and events on the timeline', async ({ page }) => {
+  await page.route(/\/v1\/map\/events$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', features: [
+    { type: 'Feature', geometry: FIRE.area, properties: { type: 'event', slug: FIRE.slug, name: FIRE.name, kind: 'fire', period: FIRE_PERIOD, place: { slug: 'edo', name: 'Edo' }, precision: 'area' } },
+    { type: 'Feature', geometry: { type: 'Point', coordinates: [6.63, 46.52] }, properties: { type: 'event', slug: TRIAL.slug, name: TRIAL.name, kind: 'trial', period: TRIAL.period, place: TRIAL.place, precision: 'place' } },
+  ] } }));
+  await page.goto('/');
+  const toggle = page.locator('#events-toggle');
+  await expect(toggle).toContainText('Events (2)');
+  await expect(page.locator('#timeline')).toContainText('Bührle trial');
+  await page.fill('input[name=from]', '1960');
+  await page.fill('input[name=to]', '1980');
+  await page.locator('.timeline-form button[type=submit]').click();
+  await expect(toggle).toContainText('Events (1 in 1960–1980)');
+  await toggle.locator('input').uncheck();
+  await expect(page.locator('#timeline')).not.toContainText('Bührle trial');
+});

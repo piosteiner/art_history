@@ -11,7 +11,7 @@ import { graph } from './views/graph';
 import { list } from './views/list';
 import { privacy } from './views/privacy';
 
-const NAV: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
+const NAV: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'events', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
 
 const main = document.getElementById('app')!;
 const nav = document.getElementById('nav')!;
