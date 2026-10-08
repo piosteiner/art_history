@@ -44,6 +44,7 @@ export function initLive() {
   let lastSent = null;
   let submitting = false;
   let seq = 0;
+  let acked = 0;  // the last draft message the server confirmed ("saved")
   const safeStore = (fn) => { try { return fn(window.localStorage); } catch { return null; } };
 
   let ws = null;
@@ -78,9 +79,17 @@ export function initLive() {
         if (snap !== lastSent) sendDraft(snap);
       }, 1500);
     })();
-    form.addEventListener('submit', () => {
+    form.addEventListener('submit', (e) => {
+      if (submitting) return;  // the second pass, after the wait below
       submitting = true;  // the server deletes the draft once the save succeeds
       safeStore((s) => s.removeItem(storeKey));
+      // A draft sent a moment ago travels on the websocket, the save on its own request: stored after the save had
+      // deleted the draft, it would come back as an "unsaved draft". So wait (at most 1 s) for its confirmation first.
+      if (!isOpen() || acked >= seq) return;
+      e.preventDefault();
+      const started = Date.now();
+      const go = () => (acked >= seq || Date.now() - started > 1000 ? form.requestSubmit(e.submitter || undefined) : setTimeout(go, 50));
+      go();
     });
   }
   if (form && page && page.mode !== 'view') enableDrafts(form);
@@ -149,6 +158,7 @@ export function initLive() {
       if (msg.t === 'welcome') username = msg.user;
       else if (msg.t === 'presence') showPresence(msg.here || [], msg.all || {});
       else if (msg.t === 'saved') {
+        acked = Math.max(acked, msg.seq || 0);
         safeStore((s) => s.removeItem(storeKey));
         setStatus(msg.at ? `Draft saved ${new Date(msg.at).toLocaleTimeString()}` : 'No unsaved changes', 'ok');
       } else if (msg.t === 'error') setStatus(msg.message, 'warn');

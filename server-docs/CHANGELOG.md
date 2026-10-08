@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Admin: a draft sent just before Create no longer comes back
+- **What:** `editor/live.js`: on submit, if the last draft message isn't confirmed yet, the form waits for the
+  server's "saved" (at most 1 s) and then submits.
+- **Why:** drafts go over the websocket, the save over its own request; a draft stored after the save had deleted it
+  reappeared as "unsaved draft" (seen as a flaky e2e test, live.spec, under load).
+- **Revert:** redeploy the previous commit.
+
 ### Frontend fix: a map popup no longer opens a link preview on top of itself (no server change)
 - **What:** popovers (`src/glossary.ts`, `src/previews.ts`) open on focus only right after a key press (`byKeyboard()`).
   MapLibre focuses a popup's first link when a click opens it; that focus opened the preview at once.
