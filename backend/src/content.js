@@ -58,6 +58,7 @@ const TYPES = [
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     other_dimensions: 'dimsets',
     institution: 'ref:institution', inventory_number: 'text', web_url: 'text',  // its page at the museum (038)
+    on_loan: 'bool', on_loan_since: 'date',  // lent to the institution where it is; the owner is in the provenance (048)
     location: 'point', area: 'area',  // only for works that don't move: buildings, gardens, bridges … (migration 034)
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
@@ -71,6 +72,8 @@ const BY_FOLDER = Object.fromEntries(TYPES.map((t) => [t.folder, t]));
 const REF_COLUMNS = { place: 'place_id', creator: 'creator_id', institution: 'current_institution_id' };
 const REL_KEYS = new Set(['type', 'to', 'period', 'period_label', 'label', 'certainty', 'notes_md', 'sources', 'metadata']);
 const IMAGE_KEYS = ['url', 'source_url', 'license', 'credit', 'caption'];
+// A further number of an artwork in YAML (migration 048): whose it is — an institution or a catalogue (source) slug — or a label.
+const NUMBER_KEYS = ['number', 'institution', 'source', 'label'];
 // A provenance step in YAML (migration 031): owner "type/slug" and/or owner_label, dates as fuzzy text, place = slug.
 const PROVENANCE_KEYS = ['owner', 'owner_label', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
   'place', 'label', 'certainty', 'notes_md', 'sources'];
@@ -213,7 +216,26 @@ function toRow(doc, fields) {
       });
     }
   }
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, errors };
+  // numbers (artworks, 048): [{number, institution | source, label}] in order; null = key absent
+  let numbers = null;
+  if (doc.numbers !== undefined) {
+    if (!fields.creator) errors.push('numbers: only artworks have further numbers');
+    else if (!Array.isArray(doc.numbers)) errors.push('numbers must be a list');
+    else {
+      numbers = doc.numbers;
+      numbers.forEach((n, i) => {
+        const at = `numbers[${i}]`;
+        if (!n || typeof n !== 'object' || Array.isArray(n)) { errors.push(`${at}: must be a mapping`); return; }
+        const extra = Object.keys(n).filter((k) => !NUMBER_KEYS.includes(k));
+        if (extra.length) errors.push(`${at}: unknown field(s) ${extra.join(', ')}`);
+        if (n.number === undefined || n.number === null || String(n.number).trim() === '') errors.push(`${at}: number is required`);
+        if (n.institution && n.source) errors.push(`${at}: institution or source, not both`);
+        if (!n.institution && !n.source && !n.label) errors.push(`${at}: say whose number it is (institution, source or label)`);
+        for (const k of ['institution', 'source']) if (n[k] !== undefined && !SLUG.test(String(n[k]))) errors.push(`${at}.${k}: a slug`);
+      });
+    }
+  }
+  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, errors };
 }
 
 // Stored date → { value: '1886-03/1888-02-20', label } where label is null when it is just the generated one.
@@ -318,6 +340,15 @@ async function readImages(db, type, id) {
   return rows;
 }
 
+// An artwork's further numbers in doc shape (as written in its YAML file), in order.
+async function readNumbers(db, artworkId) {
+  const { rows } = await db.query(`
+    SELECT n.number, i.slug AS institution, b.slug AS source, n.label FROM artwork_numbers n
+    LEFT JOIN institutions i ON i.id = n.institution_id LEFT JOIN bibliography b ON b.id = n.source_id
+    WHERE n.artwork_id = $1 ORDER BY n.position, n.id`, [artworkId]);
+  return rows.map((r) => Object.fromEntries(Object.entries(r).filter(([, v]) => v !== null)));
+}
+
 // An artwork's provenance in doc shape (as written in its YAML file), in order.
 async function readProvenance(db, artworkId) {
   const { rows } = await db.query(`
@@ -350,4 +381,4 @@ async function readProvenance(db, artworkId) {
   });
 }
 
-module.exports = { IMAGE_FK, IMAGE_KEYS, PROVENANCE_KEYS, readImages, readProvenance, TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };
+module.exports = { IMAGE_FK, IMAGE_KEYS, NUMBER_KEYS, PROVENANCE_KEYS, readImages, readProvenance, readNumbers, TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };

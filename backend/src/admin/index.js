@@ -29,6 +29,7 @@ const duplicates = require('./duplicates');
 const crypto = require('crypto');
 const images = require('./images');
 const provenance = require('./provenance');
+const numbers = require('./numbers');
 const imagesearch = require('./imagesearch');
 const placefinder = require('./placefinder');
 const bibliography = require('../bibliography');
@@ -63,6 +64,7 @@ const DONE = {
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
   'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
+  'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
 };
 
@@ -151,6 +153,10 @@ const RULES = {
   artists_check: 'Death cannot be before birth.',
   relationships_check: 'An entity cannot be related to itself.',
   artworks_inventory_needs_institution: 'An inventory number belongs to a collection: set the institution (current holder) too, or leave the number empty.',
+  artworks_loan_needs_institution: 'On loan: set the institution it is lent to (where it is now) — the owner goes into the provenance.',
+  artworks_loan_since_needs_loan: '“On loan since” only for a work on loan — tick “on loan” or leave the date empty.',
+  artwork_numbers_check: 'A number belongs either to an institution or to a catalogue — not both.',
+  artwork_numbers_check1: 'Say whose number it is: an institution, a catalogue (source), or a note such as “Lugt”.',
   polities_country_codes_check: 'Country codes: two capital letters each (ISO 3166, e.g. CN, UA), one per line.',
   polities_check: 'A polity cannot be part of itself.',
   events_check: 'An event cannot be part of itself.',
@@ -166,6 +172,7 @@ function friendly(err) {
     if (err.constraint === 'artworks_inventory_unique') return 'inventory_number: another artwork in this collection has this inventory number — the same object? (Merge… on its page)';
     if (err.constraint === 'places_boundary_unique') return 'boundary_code: another place has this outline already — the same place?';
     if (/_wikidata_id_key$/.test(err.constraint || '')) return 'wikidata_id: another entry is linked to this Wikidata item — the same thing?';
+    if (err.constraint === 'institution_number_unique') return `inventory_number: ${err.message} — the same object? (Merge… on its page)`;
     return /slug/.test(err.constraint || '') ? 'That slug is already taken.' : `Duplicate: ${err.detail || err.message}`;
   }
   if (err.constraint === 'places_boundary_code_fkey') return 'Unknown boundary code — use an ISO code like JP (a country) or JP-13 (a region).';
@@ -231,13 +238,15 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
                             rt.label, '→', coalesce(o.name, ${gone("r->>'object_type'", "r->>'object_id'")}))
              WHEN a.table_name = 'images'
              THEN concat_ws(' ', 'image of', coalesce(ie.name, ${gone('ix.type', 'ix.id')}), '“' || coalesce(r->>'caption', regexp_replace(r->>'url', '^.*/', '')) || '”')
+             WHEN a.table_name = 'artwork_numbers'
+             THEN concat_ws(' ', 'number', r->>'number', 'of', coalesce(pa.name, ${gone("'artwork'", "r->>'artwork_id'")}))
              WHEN a.table_name = 'provenance'
              THEN concat_ws(' ', 'provenance of', coalesce(pa.name, ${gone("'artwork'", "r->>'artwork_id'")}), '—',
                             coalesce(po.name, r->>'owner_label', 'owner #' || px.id), nullif(r->>'acquired_label', ''))
              ELSE coalesce(r->>'name', r->>'title', r->>'slug') END AS what,
            CASE WHEN a.table_name = 'relationships' THEN s.type::text || 's/' || s.slug
                 WHEN a.table_name = 'images' THEN ie.type::text || 's/' || ie.slug
-                WHEN a.table_name = 'provenance' THEN 'artworks/' || pa.slug
+                WHEN a.table_name IN ('provenance', 'artwork_numbers') THEN 'artworks/' || pa.slug
                 WHEN a.action <> 'delete' THEN a.table_name || '/' || (r->>'slug') END AS link,
            (SELECT jsonb_object_agg(k, jsonb_build_array(
                      CASE WHEN k IN ('location', 'area') THEN to_jsonb(ST_AsText((a.old_row->>k)::geography)) ELSE a.old_row->k END,
@@ -255,7 +264,7 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
                               coalesce(r->>'entity_id', r->>'artwork_id', r->>'artist_id', r->>'institution_id', r->>'glossary_id') AS id) ix ON a.table_name = 'images'
     LEFT JOIN entity_index ie ON a.table_name = 'images' AND ie.type = ix.type::entity_type AND ie.id = ix.id::bigint
     -- a provenance step (031): its artwork, and its owner from whichever arm of the owner arc is set
-    LEFT JOIN entity_index pa ON a.table_name = 'provenance' AND pa.type = 'artwork' AND pa.id = (r->>'artwork_id')::bigint
+    LEFT JOIN entity_index pa ON a.table_name IN ('provenance', 'artwork_numbers') AND pa.type = 'artwork' AND pa.id = (r->>'artwork_id')::bigint
     LEFT JOIN LATERAL (SELECT CASE WHEN r->>'owner_artist_id' IS NOT NULL THEN 'artist' WHEN r->>'owner_person_id' IS NOT NULL THEN 'person'
                                    WHEN r->>'owner_institution_id' IS NOT NULL THEN 'institution' ELSE 'place' END AS type,
                               coalesce(r->>'owner_artist_id', r->>'owner_person_id', r->>'owner_institution_id', r->>'owner_place_id') AS id) px
@@ -676,6 +685,27 @@ router.post('/images/:id/move', async (req, res) => {
   if (!img) return notFoundPage(req, res);
   if (['up', 'down', 'first'].includes(req.body.dir)) await withTx(req.user, (db) => images.move(db, img, req.body.dir));
   res.redirect(303, `${img.entityUrl}?done=img-moved#images`);
+});
+
+// Further numbers of an artwork (src/admin/numbers.js): added on its page, removed one by one.
+router.post('/artworks/:slug/numbers', async (req, res) => {
+  const e = await findEntity(BY_TYPE.artwork, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  try {
+    await withTx(req.user, (db) => numbers.add(db, e.id, req.body));
+  } catch (err) {
+    const text = numbers.errorText(err) || friendly(err);
+    return send(req, res, { title: 'Add a number', status: 422, flash: { kind: 'error', text },
+      body: html`<p><a href="/artworks/${e.slug}#numbers">← ${e.name}</a></p>${numbers.section({ e, numbers: await numbers.list(adminPool, e.id), values: req.body })}` });
+  }
+  res.redirect(303, `/artworks/${e.slug}?done=num-added#numbers`);
+});
+
+router.post('/numbers/:id/delete', async (req, res) => {
+  const n = await numbers.byId(adminPool, req.params.id);
+  if (!n) return notFoundPage(req, res);
+  await withTx(req.user, (db) => numbers.remove(db, n.id));
+  res.redirect(303, `/artworks/${n.artwork_slug}?done=num-deleted#numbers`);
 });
 
 // Provenance steps: added on the artwork's page, edited / removed / reordered under /provenance/<id> (src/admin/provenance.js).
@@ -1245,6 +1275,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
   const provSteps = t.type === 'artwork' ? await provenance.read(adminPool, e.id) : [];
+  const nums = t.type === 'artwork' ? await numbers.list(adminPool, e.id) : [];
   const webAccessed = t.type === 'artwork' && e.doc.web_url
     ? (await adminPool.query("SELECT to_char(web_url_accessed, 'FMDD FMMonth YYYY') AS d FROM artworks WHERE id = $1", [e.id])).rows[0].d : null;
   const boundary = t.type === 'place' && e.doc.boundary_code
@@ -1310,6 +1341,7 @@ router.get('/:plural/:slug', async (req, res) => {
           <input name="part_number" placeholder="number, e.g. 21" aria-label="number" class="short">
           <button>Add</button> <a class="button secondary" href="/artworks/new?part_of=${e.slug}">+ New part</a></form></details>` : ''}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
+      ${t.type === 'artwork' ? numbers.section({ e, numbers: nums }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${otherRels.length ? html`<div class="table-wrap"><table><tbody>${otherRels.map(({ id, to_name: toName, rel }) => {
@@ -1653,7 +1685,9 @@ router.get('/:plural/:slug/history', async (req, res) => {
       ((r->>'subject_type') = $3 AND (r->>'subject_id')::bigint = $2) OR ((r->>'object_type') = $3 AND (r->>'object_id')::bigint = $2)))
       OR (a.table_name = 'images' AND (r->>$4)::bigint = $2)
       OR (a.table_name = 'provenance' AND (($3 = 'artwork' AND (r->>'artwork_id')::bigint = $2) OR (r->>('owner_' || $3 || '_id'))::bigint = $2
-                                            OR ($3 = 'place' AND (r->>'location_id')::bigint = $2)))`,
+                                            OR ($3 = 'place' AND (r->>'location_id')::bigint = $2)))
+      OR (a.table_name = 'artwork_numbers' AND (($3 = 'artwork' AND (r->>'artwork_id')::bigint = $2) OR ($3 = 'institution' AND (r->>'institution_id')::bigint = $2)
+                                                 OR ($3 = 'source' AND (r->>'source_id')::bigint = $2)))`,
   [t.table, e.id, t.type, t.imageFk || '-'], { offset: (page - 1) * PAGE });
   send(req, res, {
     title: `History of ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' },

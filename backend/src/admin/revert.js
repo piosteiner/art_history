@@ -26,11 +26,11 @@ const crypto = require('crypto');
 const { merge3 } = require('./textdiff');
 const { IMAGE_FK: BY_IMAGE_FK, BY_TYPE, BY_FOLDER } = require('../content');
 
-const TABLES = ['places', 'movements', 'polities', 'artists', 'people', 'institutions', 'glossary', 'bibliography', 'events', 'artworks', 'relationships', 'images', 'provenance'];
+const TABLES = ['places', 'movements', 'polities', 'artists', 'people', 'institutions', 'glossary', 'bibliography', 'events', 'artworks', 'relationships', 'images', 'provenance', 'artwork_numbers'];
 // table → type and back (polities ↔ polity: not always + 's')
 const typeOf = (table) => BY_FOLDER[table].type;
 const tableOf = (type) => BY_TYPE[type].table;
-const DEPENDENT = new Set(['relationships', 'images', 'provenance']);
+const DEPENDENT = new Set(['relationships', 'images', 'provenance', 'artwork_numbers']);
 // A provenance step's owner: whichever arm of its owner arc is set (migration 031).
 const PROV_OWNER = { owner_artist_id: 'artists', owner_person_id: 'people', owner_institution_id: 'institutions', owner_place_id: 'places', location_id: 'places' };
 // An image row belongs to the entity in whichever of its three foreign keys is set (migration 017).
@@ -73,6 +73,7 @@ async function describe(db, table, row) {
     const owner = imageOwner(row);
     return `image of ${await name(owner.type, owner.id)} “${row.caption || String(row.url).replace(/^.*\//, '')}”`;
   }
+  if (table === 'artwork_numbers') return `number ${row.number} of ${await name('artwork', row.artwork_id)}`;
   if (table === 'provenance') {
     const arm = ['artist', 'person', 'institution', 'place'].find((x) => row[`owner_${x}_id`] != null);
     const owner = arm ? await name(arm, row[`owner_${arm}_id`]) : row.owner_label;
@@ -145,6 +146,13 @@ async function planRestore(db, item, row, choices) {
     if ((await db.query('SELECT 1 FROM provenance WHERE artwork_id = $1 AND position = $2 AND id <> $3', [json.artwork_id, json.position, json.id])).rows.length) {
       json.position = (await db.query('SELECT coalesce(max(position) + 1, 0) AS p FROM provenance WHERE artwork_id = $1', [json.artwork_id])).rows[0].p;
       item.notes.push('Its position in the provenance is taken by another step now — restored at the end; reorder it on the artwork page.');
+    }
+  } else if (table === 'artwork_numbers') {
+    for (const [col, refTable] of [['artwork_id', 'artworks'], ['institution_id', 'institutions'], ['source_id', 'bibliography']]) {
+      if (json[col] == null) continue;
+      if (!(await db.query(`SELECT 1 FROM ${refTable} WHERE id = $1`, [json[col]])).rows.length && !item.plannedIds.has(`${refTable}:${json[col]}`)) {
+        item.blocked = `its ${col.replace('_id', '')} (#${json[col]}) no longer exists and is not restored here`;
+      }
     }
   } else if (table !== 'relationships') {
     if (row.image_url) item.notes.push(`Its image from before multiple images (migration 017) is not restored — add it again: ${row.image_url}`);

@@ -189,6 +189,14 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - artist: `artworks` (including co-created ones: `co_creator: true`, `role`) · institution: `artworks`, `place` · artwork: `creator`, `creators`, `attribution_label`, `institution` ·
   place: `ancestors` (Arles → France), `children`, `institutions` · movement: `ancestors`, `children`.
 
+### Numbers and loans (artworks, migration 048)
+`inventory_number` is the number of the institution where the work is now (`institution`). The detail adds `numbers`:
+further numbers in order — `[{number, label, institution: {slug, name} | null, source: {slug, name} | null}]`: the
+owner's inventory number when the work is on loan, former inventory numbers (`label`), catalogue raisonné numbers
+(`source` = the catalogue in the bibliography). `on_loan` (list and detail): the work is lent to (deposited at) that
+institution; the owner — the lender — is the last step of the provenance. `on_loan_since` (detail): a date range or `null`.
+Show it like a credit line: "Foundation E.G. Bührle Collection, on permanent loan to the Kunsthaus Zürich since 2021".
+
 ### Web page (artworks)
 `web_url` (detail): the work's page at the museum or collection that holds it, or another good page about it (migration
 038). Link it on the artwork page — most of all when `images` is empty: then it is the way to see the work.

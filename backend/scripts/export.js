@@ -12,7 +12,7 @@ const path = require('path');
 const YAML = require('yaml');
 const { Client } = require('pg');
 const config = require('../src/config');
-const { TYPES, IMAGE_KEYS, readDocs, readRelationships, readImages, readProvenance } = require('../src/content');
+const { TYPES, IMAGE_KEYS, readDocs, readRelationships, readImages, readProvenance, readNumbers } = require('../src/content');
 
 const CONTENT_DIR = process.env.CONTENT_DIR || path.join(__dirname, '..', '..', 'content');
 
@@ -44,6 +44,8 @@ async function main() {
           const steps = await readProvenance(client, id);
           steps.forEach((st) => yearsAsNumbers(st, ['acquired', 'ended']));
           if (steps.length) doc.provenance = steps;
+          const nums = await readNumbers(client, id);
+          if (nums.length) doc.numbers = nums;
         }
         const file = path.join(dir, `${slug}.yaml`);
         // Lists of plain values inline ([a, b]) like the hand-written files; relationships stay one per block.

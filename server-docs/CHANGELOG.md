@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Artworks: further numbers and loans (migration 048)
+- **What:** table `artwork_numbers` (number + institution / bibliography source / label; history, revert, merge);
+  `institution_number_free()` + triggers on `artworks` and `artwork_numbers`: an institution's number once across both
+  (advisory lock); catalogue numbers unique per source. `artworks.on_loan`, `on_loan_since`(+label); quality:
+  `provenance_last_owner` skips loans, new `loan_owner`. `dup_facts.numbers` (`artwork_number_keys()`), `dup_score`:
+  any shared number +100, two numbers in one catalogue −100; `merge_entries` keeps shared numbers once and the
+  duplicate's main number as a further one. Admin: "Further numbers" section on artwork pages, loan fields in the
+  form. API: `numbers`, `on_loan`, `on_loan_since`. YAML: `numbers:`, `on_loan`, `on_loan_since`.
+- **Why:** owner: Bührle works — Kunsthaus "BU 0099" and the Foundation's "99", catalogue raisonné numbers, and the
+  Foundation (owner) vs the Kunsthaus (holder since 2021).
+- **Tested:** smoke test; e2e (numbers.spec). Note: while checking syntax, `require('./scripts/import.js')` ran the
+  import against production once; it failed before writing (columns not there yet) and rolled back — verified in
+  audit_log that nothing was written.
+- **Revert:** redeploy the previous commit; as owner drop `artwork_numbers` and the two triggers/functions, the three
+  `artworks` columns, and re-create 047's `dup_facts`, `dup_maybe`, `dup_score`, `quality_issues` and 044's `merge_entries`.
+
 ### Frontend: the menu in the admin panel's groups (no server change)
 - **What:** Explore · Network | Artworks · Artists · People · Institutions | Events · Movements · Places · Polities |
   Glossary · Bibliography (`src/main.ts` NAV, `span.nav-group` with a dividing line; no lines below 1000 px, where groups wrap).

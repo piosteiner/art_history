@@ -293,6 +293,46 @@ async function main() {
       }
     }
 
+    // 3d. Further numbers of artworks (migration 048), for files with a numbers: list. A number is identified by
+    //     (number, institution / source); the list order becomes position. Unchanged ones write nothing.
+    for (const e of entities.filter((x) => x.numbers !== null && x.numbers !== undefined)) {
+      const artworkId = ids.get(`${e.type}/${e.slug}`);
+      if (artworkId === undefined) continue;
+      const kept = [];
+      for (const [i, n] of e.numbers.entries()) {
+        const where = `numbers[${i}]`;
+        const instId = n.institution ? await idOf('institution', n.institution) : null;
+        const srcId = n.source ? await idOf('source', n.source) : null;
+        if ((n.institution && instId === null) || (n.source && srcId === null)) { fail(e.file, `${where}: ${n.institution || n.source} does not exist`); continue; }
+        try {
+          await client.query('SAVEPOINT num');
+          const params = [artworkId, String(n.number), instId, srcId, n.label ?? null, i];
+          const { rows } = await client.query(`SELECT id, label, position FROM artwork_numbers WHERE artwork_id = $1 AND number = $2
+            AND institution_id IS NOT DISTINCT FROM $3 AND source_id IS NOT DISTINCT FROM $4`, params.slice(0, 4));
+          if (rows.length) {
+            kept.push(rows[0].id);
+            if (rows[0].label !== params[4] || rows[0].position !== i) {
+              await client.query('UPDATE artwork_numbers SET label = $2, position = $3 WHERE id = $1', [rows[0].id, params[4], i]);
+              count('numbers updated');
+            } else count('numbers unchanged');
+          } else {
+            const ins = await client.query(`INSERT INTO artwork_numbers (artwork_id, number, institution_id, source_id, label, position)
+              VALUES ($1, $2, $3, $4, $5, $6) RETURNING id`, params);
+            kept.push(ins.rows[0].id);
+            count('numbers inserted');
+          }
+          await client.query('RELEASE SAVEPOINT num');
+        } catch (err) {
+          await client.query('ROLLBACK TO SAVEPOINT num');
+          fail(e.file, `${where}: ${err.message}`);
+        }
+      }
+      if (PRUNE) {
+        const { rowCount } = await client.query('DELETE FROM artwork_numbers WHERE artwork_id = $1 AND id <> ALL ($2::bigint[])', [artworkId, kept]);
+        if (rowCount) stats['numbers pruned'] = (stats['numbers pruned'] || 0) + rowCount;
+      }
+    }
+
     // 4. Optional: relationships a content entity used to declare but no longer does.
     //    (Edges whose subject is NOT in content/ — e.g. added via the admin panel — are never touched.)
     if (PRUNE && !errors.length) {

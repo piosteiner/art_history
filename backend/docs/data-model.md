@@ -286,6 +286,17 @@ in the transaction that adds it), then the table and an event branch in every vi
 `entity_id`, `entity_home_place`), the per-table triggers, a sixth image arm — the generated `images.entity_type` /
 `entity_id` changed in place with `ALTER COLUMN … SET EXPRESSION` (PostgreSQL 17+).
 
+## Numbers and loans (migration 048)
+`artworks.inventory_number` is the number of the institution where the work is now (`current_institution_id`, as
+decided with 005); further numbers are rows of `artwork_numbers` (number + an institution, a bibliography source for a
+catalogue raisonné, or a label). An institution gives each number once — across the main and the further numbers, so a
+unique index can't express it (it covers one table): `institution_number_free()`, called by BEFORE triggers on both
+tables, with `pg_advisory_xact_lock(hashtextextended(…))` so two concurrent saves of the same number serialize.
+Catalogue numbers are unique per catalogue by a plain partial unique index. `on_loan` / `on_loan_since`: the holder is
+not the owner on purpose (a Dauerleihgabe); the quality check `provenance_last_owner` skips loans, `loan_owner` asks
+for the lender. Duplicates weigh every number (`artwork_number_keys()` → `dup_facts.numbers`, `&&` overlap); a merge
+keeps shared numbers once and the duplicate's main number as a further one.
+
 ## Duplicates (migration 044)
 Four layers, all in SQL so the create form, the live box and the quality page agree:
 1. **Hard rules** — partial unique indexes: `artworks (current_institution_id, lower(btrim(inventory_number)))` (an

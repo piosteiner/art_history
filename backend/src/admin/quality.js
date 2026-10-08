@@ -28,6 +28,7 @@ const CHECKS = {
   institution_without_place: { title: 'Institution without its city', fix: 'Set the place (the city) — a nearby one is suggested when the institution has an exact location.' },
   missing_romanization: { title: 'Name without romanization', fix: 'Add one under "Other names" (e.g. Kanagawa-oki nami ura | ja-Latn | romanization) — it is used for sorting, search and the slug.' },
   event_without_place: { title: 'Event without a place', fix: 'Set its place (the city), or an exact spot or area — otherwise it can\'t appear on the map.' },
+  loan_owner: { title: 'On loan — but who lent it?', fix: 'Add the owner (the lender) as the last step of the provenance — the institution where it is now only holds it.' },
   no_wikidata_id: { title: 'No Wikidata id', fix: 'Use "Wikidata…" on the entry to find and link it.' },
 };
 const SEVERITIES = ['error', 'warning', 'info'];

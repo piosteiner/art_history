@@ -46,6 +46,11 @@ async function fromUniqueViolation(db, t, err, doc) {
     q = [`SELECT w.id::text, w.slug, w.title AS name FROM artworks w JOIN institutions i ON i.id = w.current_institution_id
           WHERE i.slug = $1 AND lower(btrim(w.inventory_number)) = lower(btrim($2))`, [doc.institution, doc.inventory_number],
     'same inventory number in the same collection'];
+  } else if (err.constraint === 'institution_number_unique' && doc.institution && doc.inventory_number) {
+    q = [`SELECT w.id::text, w.slug, w.title AS name FROM artworks w JOIN institutions i ON i.slug = $1
+          WHERE (w.current_institution_id = i.id AND lower(btrim(w.inventory_number)) = lower(btrim($2)))
+             OR EXISTS (SELECT 1 FROM artwork_numbers n WHERE n.artwork_id = w.id AND n.institution_id = i.id AND lower(btrim(n.number)) = lower(btrim($2)))`,
+    [doc.institution, doc.inventory_number], 'same inventory number in the same collection'];
   } else if (err.constraint === 'places_boundary_unique') {
     q = ['SELECT id::text, slug, name FROM places WHERE boundary_code = $1', [doc.boundary_code], 'same outline (boundary code)'];
   }
