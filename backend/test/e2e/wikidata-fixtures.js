@@ -55,6 +55,8 @@ const ENTITIES = {
   Q114: { id: 'Q114', labels: labels('Kunsthaus Library Test'), descriptions: { en: { value: 'library in the Kunsthaus' } },  // same building, 30 m
     claims: { P31: [stmt(item('Q7075'))], P131: [stmt(item('Q111'))],
       P625: [stmt({ latitude: 47.37050, longitude: 8.54830, globe: 'http://www.wikidata.org/entity/Q2' })] } },
+  Q122: { id: 'Q122', labels: labels('Hans Wendland Test'), descriptions: { en: { value: 'German art dealer' } },  // a person (not an artist)
+    claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1880-01-01T00:00:00Z', 9))], P18: [stmt('Hans Adolf Wendland.jpg')] } },
   Q105: { id: 'Q105', labels: labels('Musée Marmottan Monet'), descriptions: { en: { value: 'art museum in Paris' } }, claims: { P31: [stmt(item('Q207694'))] } },
 };
 

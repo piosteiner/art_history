@@ -155,9 +155,9 @@ const ENTITIES = {
   people: {
     type: 'person', table: 'people', alt: 'alt_names', name: 'name', period: 'coalesce(t.lifespan, t.active)',
     list: `t.kind, t.occupations, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
-           range_json(t.active, t.active_label) AS active, ${ROLES} AS roles, ${birthPlace('person')}, ${countryCols('person')}`,
+           range_json(t.active, t.active_label) AS active, ${ROLES} AS roles, ${birthPlace('person')}, ${countryCols('person')}, ${mainImage('person_id')}`,
     detail: `t.kind, t.occupations, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
-             range_json(t.active, t.active_label) AS active, ${ROLES} AS roles, t.description_md, ${birthPlace('person')}, ${countryCols('person')}`,
+             range_json(t.active, t.active_label) AS active, ${ROLES} AS roles, t.description_md, ${birthPlace('person')}, ${countryCols('person')}, ${allImages('person_id')}`,
     md: ['description_md'],
     filters: { kind: 't.kind = $', occupation: 't.occupations @> ARRAY[$]::text[]', role: `${ROLES} @> ARRAY[$]::text[]`, ...countryFilters('person') },
     order: 'name_sort_key(t.name, t.name_ruby, t.names)',

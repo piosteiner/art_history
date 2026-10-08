@@ -65,6 +65,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Hover previews of [[type/slug]] links like Wikipedia's (040: view `entry_previews`, API `entries`, `markdown.previewText`) built 2026-10-07;
   on every internal link since 2026-10-07 (`/v1/previews`, frontend `src/previews.ts`).
   Old slugs redirect (041) and [[links]] follow slug changes (042: `current_links()`, rewritten on rename and on save) built 2026-10-07/08.
+  Images for people (043: `images.person_id`; generated `images.entity_type`/`entity_id`) built 2026-10-08.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
   Ideas later: impressions vs. design for prints; nightly auto-export commit; ISBN/DOI lookup for sources. Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).

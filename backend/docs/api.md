@@ -45,7 +45,7 @@ probable · possible · disputed. `attribution_label` (detail only) is free text
 "Anonymous". With a creator it qualifies the creator; show it **instead of** the name, linked to the creator
 ("Workshop of Rubens" → Rubens). Without a creator, show it on its own.
 
-Artworks, artists and institutions carry an `image_url`: the main image (https, hotlinked — often Wikimedia Commons;
+Artworks, artists, institutions and people (since 2026-10-08) carry an `image_url`: the main image (https, hotlinked — often Wikimedia Commons;
 for a smaller version replace `/NNNNpx-` in a Commons thumbnail URL with a standard width such as `/250px-`), `null`
 without images. The detail adds `images`, all of them in order (the first = `image_url`):
 `[{url, source_url, license, credit, caption}]` — e.g. caption "Back view" for a sculpture. Show license and credit

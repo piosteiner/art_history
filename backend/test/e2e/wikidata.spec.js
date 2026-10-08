@@ -162,3 +162,22 @@ test('an institution: its place is the city (not the district), its exact spot a
   await expect(row(userA, 'Place').locator('input[value=link]')).toBeChecked();
   sql("DELETE FROM institutions WHERE slug = 'kunsthaus-test'");
 });
+
+test('a person: the Wikidata portrait is offered and saved with the new entry; in the API and the previews', async ({ userA, request }) => {
+  await userA.goto('/people/new/wikidata?q=Q122');
+  await expect(userA.locator('input[name="img.0"][value=add]')).toBeChecked();   // no image yet: pre-selected
+  await apply(userA);
+  await expect(userA.locator('.pending-images img')).toHaveCount(1);
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/people\/hans-wendland-test\?done=created/);
+  await expect(userA.locator('.image-item')).toHaveCount(1);
+  const h = { headers: { Host: 'api.localhost' } };
+  const api = await (await request.get('http://127.0.0.1:3006/v1/people/hans-wendland-test', h)).json();
+  expect(api.images.map((i) => i.url)).toEqual(['https://upload.wikimedia.org/test/Hans_Adolf_Wendland.jpg']);
+  const list = await (await request.get('http://127.0.0.1:3006/v1/people?q=wendland', h)).json();
+  expect(list.data[0].image_url).toBe(api.image_url);
+  const prev = await (await request.get('http://127.0.0.1:3006/v1/previews?refs=person/hans-wendland-test', h)).json();
+  expect(JSON.stringify(prev)).toContain('Hans_Adolf_Wendland.jpg');
+  expect(sql("SELECT entity_type || '/' || entity_id FROM images WHERE person_id IS NOT NULL"))   // generated columns (043)
+    .toBe('person/' + sql("SELECT id FROM people WHERE slug = 'hans-wendland-test'"));
+});

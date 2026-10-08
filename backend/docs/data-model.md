@@ -128,6 +128,10 @@ type, checked by triggers), real foreign keys work here — and `ON DELETE CASCA
 Per arc a partial index `(…_id, position)` serves "the images of this entry, in order", and a partial **unique** index
 `(…_id, url)` keeps the same image from being added twice (the YAML import upserts by it:
 `ON CONFLICT (artwork_id, url) WHERE artwork_id IS NOT NULL` — the predicate selects the partial index).
+Arms added later: `glossary_id` (027), `person_id` (043). Since 043 the owner is also stored as two **generated columns**
+`entity_type`/`entity_id` (`GENERATED ALWAYS AS (CASE … END) STORED`), so queries join `entity_index` on
+`(i.entity_type, i.entity_id)` instead of repeating the CASE over the arms; the literals are typed
+(`'artwork'::entity_type`) because a generated column's expression must be immutable.
 `ORDER BY position, id`; the first image is the main one (list thumbnail, preview, the API's `image_url`). The API
 builds the list with `jsonb_agg(jsonb_build_object(…) ORDER BY position, id)`. The former single-image columns
 (014 and earlier) were moved here as position 0 and dropped.

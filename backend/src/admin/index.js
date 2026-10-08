@@ -242,10 +242,11 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
     CROSS JOIN LATERAL (SELECT coalesce(a.new_row, a.old_row) AS r) x
     LEFT JOIN admin_users u ON u.id = a.user_id
     LEFT JOIN relationship_types rt ON a.table_name = 'relationships' AND rt.code = r->>'relationship_type'
-    -- an image row belongs to whichever of its three foreign keys is set (migration 017)
-    LEFT JOIN LATERAL (SELECT CASE WHEN r->>'artwork_id' IS NOT NULL THEN 'artwork' WHEN r->>'artist_id' IS NOT NULL THEN 'artist'
-                                   WHEN r->>'glossary_id' IS NOT NULL THEN 'term' ELSE 'institution' END AS type,
-                              coalesce(r->>'artwork_id', r->>'artist_id', r->>'institution_id', r->>'glossary_id') AS id) ix ON a.table_name = 'images'
+    -- an image row belongs to whichever of its foreign keys is set (migration 017); rows logged since 043 say it
+    -- themselves (entity_type/entity_id), older ones are read from the keys (people had no images before 043)
+    LEFT JOIN LATERAL (SELECT coalesce(r->>'entity_type', CASE WHEN r->>'artwork_id' IS NOT NULL THEN 'artwork' WHEN r->>'artist_id' IS NOT NULL THEN 'artist'
+                                   WHEN r->>'glossary_id' IS NOT NULL THEN 'term' ELSE 'institution' END) AS type,
+                              coalesce(r->>'entity_id', r->>'artwork_id', r->>'artist_id', r->>'institution_id', r->>'glossary_id') AS id) ix ON a.table_name = 'images'
     LEFT JOIN entity_index ie ON a.table_name = 'images' AND ie.type = ix.type::entity_type AND ie.id = ix.id::bigint
     -- a provenance step (031): its artwork, and its owner from whichever arm of the owner arc is set
     LEFT JOIN entity_index pa ON a.table_name = 'provenance' AND pa.type = 'artwork' AND pa.id = (r->>'artwork_id')::bigint

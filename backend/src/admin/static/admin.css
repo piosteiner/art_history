@@ -196,7 +196,7 @@ td.thumb img, .thumb-empty { display: block; width: 64px; height: 64px; object-f
 .image-preview { margin: 0 0 1rem; }
 .image-preview img { display: block; max-width: min(100%, 500px); max-height: 420px; border-radius: 6px; border: 1px solid var(--line); }
 .image-preview figcaption { margin-top: .3rem; }
-.thumbs-artist td.thumb img { object-position: center 20%; }  /* portraits: keep the face in the square */
+.thumbs-artist td.thumb img, .thumbs-person td.thumb img { object-position: center 20%; }  /* portraits: keep the face in the square */
 /* the "Images" section: all of an entry's images in order, the first one is the main image (migration 017) */
 .image-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1rem; margin-bottom: 1rem; }
 .image-item { margin: 0; border: 1px solid var(--line); border-radius: 6px; padding: .5rem; }

@@ -57,7 +57,7 @@ const TYPES = [
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
 // Types with images (table images, migration 017): the foreign-key column that points at them.
-const IMAGE_FK = { artwork: 'artwork_id', artist: 'artist_id', institution: 'institution_id', term: 'glossary_id' };
+const IMAGE_FK = { artwork: 'artwork_id', artist: 'artist_id', institution: 'institution_id', term: 'glossary_id', person: 'person_id' };
 for (const t of TYPES) t.imageFk = IMAGE_FK[t.type] || null;
 const BY_TYPE = Object.fromEntries(TYPES.map((t) => [t.type, t]));
 const BY_FOLDER = Object.fromEntries(TYPES.map((t) => [t.folder, t]));

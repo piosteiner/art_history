@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Images for people (migration 043)
+- **What:** `images.person_id` (fifth arm of the exclusive arc, partial indexes like the others); generated
+  columns `images.entity_type`/`entity_id` replace the CASE over the arms in the quality view, `images.js` and the
+  history page. People get the image section, image search, Wikidata P18 images, list thumbnails; API `image_url`
+  (list) / `images` (detail) for people; `entry_previews` shows a person's main image.
+- **Why:** owner: the Wikidata comparison for Hans Wendland didn't offer his portrait — people had no images at all.
+- **Tested:** smoke test; e2e (wikidata.spec: a person's portrait from Wikidata, API, previews). **Revert:** redeploy the
+  previous commit; as owner delete person images, drop `entity_type`/`entity_id`/`person_id`, restore 027's
+  `images_check`, and re-create 040's `entry_previews` and 037's `quality_issues`.
+
 ### [[links]] follow slug changes (migration 042)
 - **What:** `current_links(md)` rewrites every `[[type/old-slug…]]` (own words and pages kept; `[[old-term]]` without
   type too) to the entry's current slug via `slug_history`. Used (1) by `record_slug_change()`: a rename rewrites
