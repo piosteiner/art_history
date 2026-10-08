@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Data: the three Bührle works — at the Kunsthaus, on loan, owner in the provenance
+- **What (prod, by hand, source `sql`):** *Le garçon au gilet rouge*, *Tournesols sur un fauteuil*, *La Route de
+  Saint-Germain près de Marly*: institution Foundation E.G. Bührle Collection → Kunsthaus Zürich (the BU numbers are
+  the Kunsthaus's), on loan since 2021; further numbers: the Foundation's Inv.-Nr. (18, 46, 99) and the catalogue
+  raisonné number with a label (Rewald 658, Wildenstein 602, Brame/Lorenceau 204); provenance from the Kunsthaus pages:
+  Emil Georg Bührle (purchase 1948 / 1952 / 1953) → Nachlass (28.11.1956) → Foundation (gift, 1960), each citing the
+  page. Kunsthaus: kind museum, place Zürich; Foundation: kind foundation, place Zürich.
+- **Why:** owner: holder and owner were mixed up (the Foundation as institution with the Kunsthaus's numbers).
+- **Revert:** from the history (one change set), or by hand.
+
 ### Artworks: further numbers and loans (migration 048)
 - **What:** table `artwork_numbers` (number + institution / bibliography source / label; history, revert, merge);
   `institution_number_free()` + triggers on `artworks` and `artwork_numbers`: an institution's number once across both
