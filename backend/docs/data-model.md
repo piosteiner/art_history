@@ -274,6 +274,29 @@ parts. `part_sort` is a STORED generated column — the first number in `part_nu
 trigger function `no_parent_cycle()` (dynamic SQL with a recursive CTE and `CYCLE … SET … USING`) refuses loops on
 every table with `parent_id`.
 
+## Duplicates (migration 044)
+Four layers, all in SQL so the create form, the live box and the quality page agree:
+1. **Hard rules** — partial unique indexes: `artworks (current_institution_id, lower(btrim(inventory_number)))` (an
+   inventory number identifies an object within its collection) and `places (boundary_code)`; with the existing
+   unique `wikidata_id` per table.
+2. **Evidence, not names alone** — `dup_facts` (a view: one row per entry, the same columns for every type) and
+   `dup_score(a dup_facts, b dup_facts, OUT score, OUT reasons)`: name similarity (pg_trgm over every name incl.
+   translations, `dup_names()`/`names_similarity()`), plus/minus points per type — creator, dates (`&&` on ranges),
+   dimensions (1 cm/2 % same, 3 cm/5 % different), collection, inventory number, series part, life dates, place kind,
+   distance (`ST_Distance` on geography), city, website host, DOI/ISBN/year/authors. A view's row type can be a
+   function argument, which is what makes `dup_score(a, b)` work on rows of the view. `dup_maybe()` is the cheap
+   prefilter. ≥ 50 shown (quality check `possible_duplicate`, live box), ≥ 70 Create asks first. The check runs
+   *inside* the save: the new row is inserted, `duplicate_candidates(type, id)` compares it, and an unconfirmed hit
+   rolls the transaction back (the live box does the same and always rolls back — one code path, no second copy
+   of the rules in JavaScript).
+3. **"Not the same"** — stored as the quality acknowledgement of the pair (`quality_acks`, key
+   `dup:<smaller id>:<larger id>`); `duplicate_candidates()` leaves acknowledged pairs out.
+4. **Merge** — `merge_entries(type, keep_id, dup_id) → jsonb`: relationships (doubles and self-links dropped), every
+   foreign key to the table (found in `pg_constraint`, so later tables are covered), images and provenance appended,
+   bookkeeping; deletes the duplicate, its slug → `slug_history` (redirect), `[[links]]` rewritten (042); empty fields
+   of the kept entry filled in groups (a date with its label, all dimensions, institution with inventory number), the
+   duplicate's names become other names. History source `merge`; the admin's preview runs it and rolls back.
+
 ## Auto-created entries (migration 021)
 A creator or institution typed into an artwork form as a new name is created with the save (same transaction, so a
 revert removes both); entries the Wikidata comparison creates too. Each gets a row in `auto_created` (type, id, the

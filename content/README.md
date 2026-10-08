@@ -89,6 +89,7 @@ In any `*_md` text: `[[contrapposto]]` links the glossary term with that slug (s
 `[[contrapposto|the pose]]` with your own words. Any other entry: `[[type/slug]]`, e.g. `[[artist/katsushika-hokusai]]`,
 `[[artwork/the-great-wave|the Wave]]` (types: artist, artwork, institution, person, movement, place, polity, term).
 Links to entries that don't exist (yet) are listed on the Quality page.
+An inventory number can exist only once per institution, and a boundary code only once (the import refuses a second).
 When an entry's slug changes, every link to it is rewritten to the new slug (a text imported with an old slug is
 corrected on the way in).
 

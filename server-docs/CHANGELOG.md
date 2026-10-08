@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Duplicates: hard rules, evidence-based warnings, "not the same", merge (migration 044)
+- **What:** unique indexes `artworks_inventory_unique` (institution + inventory number) and `places_boundary_unique`;
+  view `dup_facts`, functions `dup_names`, `names_similarity`, `dup_maybe`, `dup_score`, `duplicate_candidates`; the
+  quality check `possible_duplicate` now weighs evidence (names, creator, dates, dimensions, places, identifiers)
+  instead of name similarity alone. Admin: live "Already here?" box on new-entry forms (`POST /:plural/new/duplicates`,
+  `editor/duplicates.js`, a rolled-back insert); Create stops at score ≥ 70 until each candidate is ticked "it's a
+  different one" (stored in `quality_acks`); unique-index hits shown as "already exists". `merge_entries()` + page
+  `/:plural/:slug/merge` (preview = rolled-back run), "Merge…" on entry pages and on quality rows, "Not the same" there.
+- **Why:** owner: duplicate places (Oslo) and, with growing data, duplicate artworks — names alone can't decide
+  ("Untitled").
+- **Tested:** smoke test; rolled-back scoring/merge cases on dev; e2e 103 passing (new duplicates.spec).
+  **Revert:** redeploy the previous commit; as owner drop `merge_entries`, `json_empty`, `duplicate_candidates`,
+  `dup_score`, `dup_maybe`, re-create 043's `quality_issues`, then drop `dup_facts`, `names_similarity`, `dup_names`
+  and the two indexes. Merges themselves are reverted from the history.
+
 ### Places: no second "Oslo" — cities that are their own region go into the country
 - **What:** `placefinder.draftFor()` never takes a place or Natural Earth region with the same name as the new place
   as its parent (Oslo, Berlin, Vienna, Hamburg are cities and counties/states at once). `autocreate`: a region

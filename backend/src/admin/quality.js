@@ -13,7 +13,7 @@ const CHECKS = {
   overlapping_residences: { title: 'Two residences at the same time', fix: 'Correct a period — or mark as OK if both are right (e.g. a summer house).' },
   held_before_founded: { title: 'Held before the institution was founded', fix: 'Check the period of "housed at" and the founding date.' },
   outside_parent_area: { title: 'Place outside its parent region', fix: 'Check the coordinates, the parent, or the parent\'s outline.' },
-  possible_duplicate: { title: 'Possible duplicates', fix: 'If it is the same thing: move the relationships to one entry and delete the other.' },
+  possible_duplicate: { title: 'Possible duplicates', fix: 'Weighed by names and evidence (creator, dates, dimensions, places, identifiers). The same thing: Merge… into the better entry. Two things: Not the same — remembered for good.' },
   broken_link: { title: 'Link to a missing entry', fix: 'Correct the [[type/slug]] link in the text (type [[ and a name to pick one) — the entry may have been renamed or deleted.' },
   broken_glossary_link: { title: 'Link to a missing glossary term', fix: 'Create the term in the Glossary (with this slug) — or correct the [[link]] in the text.' },
   artwork_without_creator: { title: 'Artwork without creator', fix: 'Add the creator — or an attribution such as "Workshop of …" / "Anonymous".' },
@@ -68,7 +68,13 @@ function ackForm(r, back, acked) {
   return acked
     ? html`<form method="post" action="/quality/unack" class="inline"><input type="hidden" name="check_id" value="${r.check_id}">
         <input type="hidden" name="issue_key" value="${r.issue_key}"><input type="hidden" name="back" value="${back}">
-        <button class="link">undo “OK”</button></form>`
+        <button class="link">undo “${r.check_id === 'possible_duplicate' ? 'not the same' : 'OK'}”</button></form>`
+    // a duplicate pair: "not the same" (the same acknowledgement — duplicate_candidates() leaves the pair out) or merge
+    : r.check_id === 'possible_duplicate'
+      ? html`<a class="button secondary" href="/${BY_TYPE[r.type].folder}/${r.slug}/merge?pair=${r.issue_key}">Merge…</a>
+        <form method="post" action="/quality/ack" class="inline qa-ack"><input type="hidden" name="check_id" value="${r.check_id}">
+        <input type="hidden" name="issue_key" value="${r.issue_key}"><input type="hidden" name="back" value="${back}">
+        <input type="hidden" name="note" value="not the same"><button class="secondary">Not the same</button></form>`
     : html`<form method="post" action="/quality/ack" class="inline qa-ack"><input type="hidden" name="check_id" value="${r.check_id}">
         <input type="hidden" name="issue_key" value="${r.issue_key}"><input type="hidden" name="back" value="${back}">
         <input name="note" placeholder="why it is right (optional)" aria-label="note"><button class="secondary">Mark as OK</button></form>`;

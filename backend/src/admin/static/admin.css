@@ -299,3 +299,8 @@ details.field-group[open] { border-left: 3px solid var(--line); padding-left: 0.
 .top-search-list a.all { border-top: 1px solid var(--line); color: var(--accent); }
 .top-search-list a.all:hover, .top-search-list a.all.active { color: var(--accent-fg); }
 .live-status-search[hidden] { display: none; }
+
+/* duplicates (src/admin/duplicates.js) */
+.dup-box ul, .dup-confirm ul { margin: .4rem 0; padding-left: 1.2rem; }
+.dup-confirm label.choice { display: block; margin-top: .2rem; }
+.merge-summary li { margin: .3rem 0; }

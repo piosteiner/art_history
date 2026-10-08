@@ -25,6 +25,7 @@ import { initMaterials } from './materials';
 import { initDims } from './dims';
 import { initSourceForm } from './sourceform';
 import { initLiveSearch } from './livesearch';
+import { initDuplicates } from './duplicates';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -258,6 +259,7 @@ initMaterials();
 initDims();
 initSourceForm();
 initLiveSearch();
+initDuplicates();
 initSlug();
 // A map inside a closed section (forms.js: "Where it stands…") was laid out at zero size: opening the section tells
 // Leaflet to measure again (it listens to window resize).

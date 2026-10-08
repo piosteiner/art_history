@@ -4,6 +4,7 @@ const { html } = require('./html');
 const names = require('../names');
 const { thumbUrl } = require('./images');
 const dimensions = require('../dimensions');
+const duplicates = require('./duplicates');
 
 // Language tags offered in the pickers (any BCP 47 tag can be typed).
 const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'Italian'], ['nl', 'Dutch'], ['es', 'Spanish'],
@@ -394,6 +395,8 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
+    ${isNew && ctx.duplicates ? duplicates.confirmBox(t, ctx.duplicates) : ''}
+    ${isNew ? html`<div class="dup-live" data-dup-url="${action}/new/duplicates" aria-live="polite"></div>` : ''}
     ${pending.length ? html`<input type="hidden" name="wd.images" value="${pendingImages}">
       <div class="field pending-images"><label>Images from Wikidata</label>
         <div class="image-list">${pending.map((img) => html`<figure class="image-item"><img src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">

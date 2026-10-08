@@ -25,6 +25,8 @@ const { wordDiff, isLongText } = require('./textdiff');
 const drafts = require('./drafts');
 const wikidata = require('./wikidata');
 const quality = require('./quality');
+const duplicates = require('./duplicates');
+const crypto = require('crypto');
 const images = require('./images');
 const provenance = require('./provenance');
 const imagesearch = require('./imagesearch');
@@ -59,7 +61,7 @@ const DONE = {
   reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
   restored: 'Version restored.',
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
-  'auto-done': 'Marked as complete.',
+  'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
 };
@@ -160,6 +162,9 @@ function friendly(err) {
   if (err instanceof UserError) return err.message;
   if (err.code === '23505') {
     if (/^images_\w+_url$/.test(err.constraint || '')) return 'This image is already one of the entry\'s images.';
+    if (err.constraint === 'artworks_inventory_unique') return 'inventory_number: another artwork in this collection has this inventory number — the same object? (Merge… on its page)';
+    if (err.constraint === 'places_boundary_unique') return 'boundary_code: another place has this outline already — the same place?';
+    if (/_wikidata_id_key$/.test(err.constraint || '')) return 'wikidata_id: another entry is linked to this Wikidata item — the same thing?';
     return /slug/.test(err.constraint || '') ? 'That slug is already taken.' : `Duplicate: ${err.detail || err.message}`;
   }
   if (err.constraint === 'places_boundary_code_fkey') return 'Unknown boundary code — use an ISO code like JP (a country) or JP-13 (a region).';
@@ -980,20 +985,24 @@ router.post('/drafts/discard', async (req, res) => {
 });
 
 // Shared by create and update: validate, resolve slugs to ids, write. Returns the (possibly new) slug.
-async function saveEntity(user, t, body, existing) {
-  const slug = String(body.slug || '').trim();
+// A new entry is compared with the existing ones right after its INSERT, in the same transaction (duplicates.js,
+// migration 044): likely duplicates roll it back and ask. probe: the same path for the live box while typing — no
+// creating of other entries, no city lookup, unknown references left out, and always rolled back → { probe: [...] }.
+async function saveEntity(user, t, body, existing, { probe = false } = {}) {
+  const slug = probe ? `dup-probe-${crypto.randomBytes(6).toString('hex')}` : String(body.slug || '').trim();
   const { doc, errors } = formToDoc(body, t.fields);
   if (!SLUG.test(slug)) errors.push('slug: lowercase letters, digits and single hyphens only');
   if (!doc[t.name]) errors.push(`${t.name}: required`);
   // A creator / institution typed as a new name becomes a new (flagged) entry — src/admin/autocreate.js
-  const auto = await autocreate.resolveRefs(adminPool, t, doc, body);
+  const auto = probe ? { creates: [], errors: [], confirm: {} } : await autocreate.resolveRefs(adminPool, t, doc, body);
   errors.push(...auto.errors);
   // The city of an exact location, so it needn't be entered by hand (placefinder.cityAt): an institution with a point
   // but no place gets its city; a work that doesn't move gets "created in" that city. Ours if we have it, else created.
-  const city = errors.length ? null : await cityFor(t, doc, existing);
+  const city = errors.length || probe ? null : await cityFor(t, doc, existing);
   if (city && city.slug && t.type === 'institution') doc.place = city.slug;
   const row = toRow(doc, t.fields);
   errors.push(...row.errors);
+  if (probe && errors.length) return { probe: [] };  // half-typed (a date like "18…"): nothing to compare yet
   if (errors.length) return { errors, confirm: auto.confirm };
 
   let created = [];
@@ -1007,7 +1016,7 @@ async function saveEntity(user, t, body, existing) {
       created = auto.creates;
       if (t.fields.parent) {
         const id = row.parent === null ? null : await idOf(t.type, row.parent);
-        if (row.parent !== null && id === null) throw new UserError(`parent ${t.type} "${row.parent}" does not exist.`);
+        if (row.parent !== null && id === null && !probe) throw new UserError(`parent ${t.type} "${row.parent}" does not exist.`);
         if (existing && id === existing.id) throw new UserError('An entity cannot be its own parent.');
         row.cols.parent_id = ['$', id];
       }
@@ -1020,7 +1029,7 @@ async function saveEntity(user, t, body, existing) {
       }
       for (const r of row.refs) {
         const id = r.slug === null ? null : await idOf(r.type, r.slug);
-        if (r.slug !== null && id === null) throw new UserError(`${r.type} "${r.slug}" does not exist.`);
+        if (r.slug !== null && id === null && !probe) throw new UserError(`${r.type} "${r.slug}" does not exist.`);
         row.cols[r.col] = ['$', id];
       }
       const names = Object.keys(row.cols);
@@ -1036,6 +1045,7 @@ async function saveEntity(user, t, body, existing) {
       };
       if (!existing) {
         const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
+        await duplicates.checkNew(db, t, rows[0].id, body, user.id, { probe });
         await createdIn(rows[0].id);
         // images picked in the Wikidata review of this new entry (wd.images): saved together with it
         for (const img of pendingImagesOf(t, body)) await images.add(db, t.type, rows[0].id, img);
@@ -1053,6 +1063,14 @@ async function saveEntity(user, t, body, existing) {
       await createdIn(existing.id);
     });
   } catch (err) {
+    if (err instanceof duplicates.Probe) return { probe: err.candidates };
+    if (err instanceof duplicates.Found) {
+      return { errors: ['This may already exist — see the box above the form.'], duplicates: err.candidates };
+    }
+    // the same Wikidata item, inventory number or outline: certainly the same → shown like a duplicate
+    const same = !existing && await duplicates.fromUniqueViolation(adminPool, t, err, doc).catch(() => null);
+    if (probe) return { probe: same ? [same] : [] };
+    if (same) return { errors: ['This already exists — see the box above the form.'], duplicates: [same] };
     return { errors: [friendly(err)] };
   }
   return { slug, created, city: city && city.slug ? { created: city.created || 0 } : null };
@@ -1112,6 +1130,12 @@ function errorKeysOf(errors) {
   return new Set(errors.map((e) => (/^([a-z_]+):/.exec(e) || [])[1]).filter(Boolean));
 }
 
+// The live duplicate box of the new-entry form (editor/duplicates.js): the form as typed, compared and rolled back.
+router.post('/:plural/new/duplicates', async (req, res) => {
+  const result = await saveEntity(req.user, req.t, req.body, null, { probe: true });
+  res.type('html').send(String(duplicates.liveBox(req.t, result.probe || [])));
+});
+
 router.post('/:plural', async (req, res) => {
   const { t } = req;
   const result = await saveEntity(req.user, t, req.body, null);
@@ -1119,6 +1143,7 @@ router.post('/:plural', async (req, res) => {
     const ctx = await formContext(t);
     ctx.errorKeys = errorKeysOf(result.errors);
     ctx.confirmNew = result.confirm || {};
+    ctx.duplicates = result.duplicates || null;
     return send(req, res, {
       title: `New ${t.type}`, status: 422,
       page: { type: t.type, slug: null, mode: 'new' },
@@ -1235,6 +1260,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Wikidata…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
+        <a class="button secondary" href="/${t.folder}/${e.slug}/merge">Merge…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       ${pending ? unpublishedBanner(t, e, { ...pending, fields: await unpublishedFields(t, e) }, false) : ''}
       ${autoFlag ? html`<div class="flash warn auto-banner"><b>To complete:</b> created automatically
@@ -1533,6 +1559,41 @@ router.post('/:plural/:slug/discard-changes', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   await collab.discard(t, e.id);
   res.redirect(303, `/${t.folder}/${e.slug}/edit?done=discarded`);
+});
+
+// Merge a duplicate into another entry (merge_entries, migration 044): pick → preview (rolled back) → merge.
+// ?pair=dup:<id>:<id> (from the quality page) picks the other one of the pair.
+router.get('/:plural/:slug/merge', async (req, res) => {
+  const { t } = req;
+  const dup = await findEntity(t, req.params.slug);
+  if (!dup) return notFoundPage(req, res);
+  let intoSlug = String(req.query.into || '').trim();
+  const pair = /^dup:(\d+):(\d+)$/.exec(String(req.query.pair || ''));
+  if (!intoSlug && pair) {
+    const other = pair[1] === String(dup.id) ? pair[2] : pair[1];
+    intoSlug = (await adminPool.query(`SELECT slug FROM ${t.table} WHERE id = $1`, [other])).rows[0]?.slug || '';
+  }
+  const keep = intoSlug ? await findEntity(t, intoSlug) : null;
+  const found = await duplicates.candidates(adminPool, t.type, dup.id);
+  let preview = null;
+  let error = intoSlug && !keep ? `No ${t.type} "${intoSlug}".` : null;
+  if (keep) ({ result: preview, error } = await duplicates.runMerge(adminPool, req.user, t, keep.id, dup.id, { preview: true }));
+  send(req, res, { title: `Merge ${dup.name}`, page: { type: t.type, slug: dup.slug, mode: 'merge' },
+    body: duplicates.mergePage({ t, dup, keep: preview ? keep : null, found, preview, error }) });
+});
+
+router.post('/:plural/:slug/merge', async (req, res) => {
+  const { t } = req;
+  const dup = await findEntity(t, req.params.slug);
+  const keep = await findEntity(t, String(req.body.into || ''));
+  if (!dup || !keep) return notFoundPage(req, res);
+  const { error } = await duplicates.runMerge(adminPool, req.user, t, keep.id, dup.id, { preview: false });
+  if (error) {
+    return send(req, res, { title: `Merge ${dup.name}`, status: 409,
+      body: duplicates.mergePage({ t, dup, keep: null, found: [], preview: null, error }) });
+  }
+  await collab.gone(t, dup.id);  // close the duplicate's working copy for everyone editing it
+  res.redirect(303, `/${t.folder}/${keep.slug}?done=merged`);
 });
 
 router.get('/:plural/:slug/delete', async (req, res) => {
