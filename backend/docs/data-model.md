@@ -282,7 +282,8 @@ Four layers, all in SQL so the create form, the live box and the quality page ag
 2. **Evidence, not names alone** — `dup_facts` (a view: one row per entry, the same columns for every type) and
    `dup_score(a dup_facts, b dup_facts, OUT score, OUT reasons)`: name similarity (pg_trgm over every name incl.
    translations, `dup_names()`/`names_similarity()`), plus/minus points per type — creator, dates (`&&` on ranges),
-   dimensions (1 cm/2 % same, 3 cm/5 % different), collection, inventory number, series part, life dates, place kind,
+   dimensions (1 cm/2 % same, 3 cm/5 % different), collection, inventory number (the same: +100; two different
+   ones in the same collection: −100, 045), series part, life dates, place kind,
    distance (`ST_Distance` on geography), city, website host, DOI/ISBN/year/authors. A view's row type can be a
    function argument, which is what makes `dup_score(a, b)` work on rows of the view. `dup_maybe()` is the cheap
    prefilter. ≥ 50 shown (quality check `possible_duplicate`, live box), ≥ 70 Create asks first. The check runs

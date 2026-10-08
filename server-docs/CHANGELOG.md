@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Duplicates: different inventory numbers in one collection count against (migration 045); Vienna cleaned up
+- **What:** `dup_score()` re-created with one more rule: same institution, two different inventory numbers → −100.
+  Data (prod, by hand, source `sql`): Austria created (country AT, outline from Natural Earth); Vienna moved into it;
+  the region "Wien" (AT-9) — the same city-and-state pattern as Oslo, from before that fix — deleted.
+- **Why:** the first run of the new check flagged Monet's two water lily panels at the Kunsthaus (same size, dates,
+  painter; 1952/0010 vs 1952/0064) — two objects. And Vienna/Wien.
+- **Tested:** e2e (duplicates.spec). **Revert:** redeploy the previous commit and re-create 044's `dup_score`; the data
+  change from the history pages.
+
 ### Duplicates: hard rules, evidence-based warnings, "not the same", merge (migration 044)
 - **What:** unique indexes `artworks_inventory_unique` (institution + inventory number) and `places_boundary_unique`;
   view `dup_facts`, functions `dup_names`, `names_similarity`, `dup_maybe`, `dup_score`, `duplicate_candidates`; the
