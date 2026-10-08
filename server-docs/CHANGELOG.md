@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Admin: reorder provenance steps by drag and drop
+- **What:** `editor/sortable.js` (generic: `[data-sortable=url]`, `.sort-item`, `.drag-handle`; pointer events, so
+  mouse, pen and touch alike; keyboard ↑/↓ on the focused handle); the provenance table has one `<tbody>` per step
+  and a ⠿ handle; `POST /artworks/:slug/provenance/order` (ids, checked against the steps) → `provenance.reorder()`;
+  the page reloads so periods are recomputed. The ↑/↓ buttons are gone (the route stays).
+- **Why:** owner: the arrows were finicky.
+- **Revert:** redeploy the previous commit.
+
 ### Frontend: sources for facts — markers and citation popovers (no server change)
 - **What:** `src/cite.ts` + `views/detail.ts` (`withSources`, `FIELD_FACT`): markers P/L/M/D/W/T after fact rows,
   relationships and provenance steps; popover with the citations best first (link to the exact page / Wikidata item,

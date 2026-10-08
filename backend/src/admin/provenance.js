@@ -126,6 +126,16 @@ async function move(db, step, dir) {
   await renumber(db, step.artwork_id, ids);
 }
 
+// A new order from the page (drag and drop): the same steps, in the order given — else nothing changes.
+async function reorder(db, artworkId, ids) {
+  const now = await orderedIds(db, artworkId);
+  const want = ids.map(Number);
+  if (want.length !== now.length || [...want].sort((a, b) => a - b).join() !== [...now].sort((a, b) => a - b).join()) {
+    throw new ProvenanceError('The provenance changed meanwhile — reload the page and try again.');
+  }
+  await renumber(db, artworkId, want);
+}
+
 async function remove(db, step) {
   await db.query('DELETE FROM provenance WHERE id = $1', [step.id]);
   await renumber(db, step.artwork_id, await orderedIds(db, step.artwork_id));
@@ -177,14 +187,15 @@ function form({ action, step = {}, submit }) {
 }
 
 // The "Provenance" section of an artwork's page: the chain in order, with the computed periods; between two steps
-// "↓" (documented direct) or "⋮ gap" (not documented); reorder, edit, add.
+// "↓" (documented direct) or "⋮ gap" (not documented); reorder by dragging the handle (editor/sortable.js), edit, add.
+// One <tbody> per step (its transfer line and its row), so a step moves as one.
 function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
-  const moveBtn = (s, dir, label) => html`<form method="post" action="/provenance/${s.id}/move" class="inline">
-    <input type="hidden" name="dir" value="${dir}"><button class="link" title="Move ${dir === 'up' ? 'earlier' : 'later'}">${label}</button></form>`;
   return html`<h2 id="provenance">Provenance</h2>
-    ${steps.length ? html`<div class="table-wrap"><table class="provenance"><tbody>${steps.map((s, i) => html`
-      ${i > 0 ? html`<tr class="transfer muted small"><td></td><td colspan="6">${s.direct ? '↓ passed on directly' : '⋮ not documented as direct'}</td></tr>` : ''}
-      <tr><td>${i + 1}.</td>
+    ${steps.length ? html`<div class="table-wrap"><table class="provenance" data-sortable="/artworks/${e.slug}/provenance/order">${steps.map((s, i) => html`
+      <tbody class="sort-item" data-sort-id="${s.id}">
+      ${i > 0 ? html`<tr class="transfer muted small"><td></td><td></td><td colspan="6">${s.direct ? '↓ passed on directly' : '⋮ not documented as direct'}</td></tr>` : ''}
+      <tr><td class="drag-cell">${steps.length > 1 ? html`<button type="button" class="drag-handle" title="Drag to reorder (or focus and use ↑ ↓)" aria-label="Move step ${i + 1}: drag, or arrow keys">⠿</button>` : ''}</td>
+        <td>${i + 1}.</td>
         <td>${s.owner_slug ? html`<a href="/${BY_TYPE[s.owner_type].folder}/${s.owner_slug}">${s.owner_name}</a>` : s.owner_label}</td>
         <td>${[methodLabel(s.method) !== 'unknown' && methodLabel(s.method), s.acquired_label].filter(Boolean).join(', ') || html`<span class="muted">undated</span>`}
           ${s.label ? html`<div class="muted small">${s.label}</div>` : ''}</td>
@@ -193,10 +204,10 @@ function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
           ${s.certainty !== 'attested' ? html` <span class="muted">· ${s.certainty}</span>` : ''}
           ${s.notes_md ? html`<div class="md small">${raw(renderMarkdown(s.notes_md, { names }))}</div>` : ''}</td>
         <td>${marker ? marker(cites[s.id], { provenance: s.id }, back) : ''}</td>
-        <td class="nowrap">${i > 0 ? moveBtn(s, 'up', '↑') : ''}${i < steps.length - 1 ? moveBtn(s, 'down', '↓') : ''}
-          <a href="/provenance/${s.id}/edit">edit</a></td></tr>`)}</tbody></table></div>`
+        <td class="nowrap"><a href="/provenance/${s.id}/edit">edit</a></td></tr></tbody>`)}</table></div>
+      ${steps.length > 1 ? html`<p class="muted small">Drag ⠿ to change the order — the periods are recomputed.</p>` : ''}`
     : html`<p class="muted">None yet. The owners in order, as the sources record them: when each acquired the work and how.</p>`}
     <details><summary><b>+ Add provenance step</b></summary>${form({ action: `/artworks/${e.slug}/provenance`, submit: 'Add' })}</details>`;
 }
 
-module.exports = { ProvenanceError, METHODS, fromForm, byId, formValues, add, update, move, remove, read, form, section };
+module.exports = { ProvenanceError, METHODS, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section };

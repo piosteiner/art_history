@@ -340,3 +340,13 @@ details.cite > summary::-webkit-details-marker { display: none; }
 .cite-panel .cite-add { display: flex; flex-wrap: wrap; gap: .3rem; }
 .cite-panel .cite-add input { width: auto; flex: 1 1 8rem; }
 .cite-panel .cite-add input.short { flex: 0 1 7rem; }
+
+/* drag-and-drop ordering (editor/sortable.js): the provenance */
+.drag-cell { width: 1.6rem; padding-right: 0; }
+.drag-handle { cursor: grab; touch-action: none; user-select: none; background: none; border: 0; padding: .1rem .25rem;
+  color: var(--muted); font-size: 1.1rem; line-height: 1; border-radius: 4px; }
+.drag-handle:hover, .drag-handle:focus-visible { color: var(--fg); background: color-mix(in srgb, var(--accent) 18%, transparent); }
+.sort-item.dragging { opacity: .85; }
+.sort-item.dragging td { background: color-mix(in srgb, var(--accent) 12%, var(--panel)); }
+.sort-item.dragging .drag-handle { cursor: grabbing; }
+.sort-saving { opacity: .6; pointer-events: none; }

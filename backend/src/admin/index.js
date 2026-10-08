@@ -778,6 +778,20 @@ router.post('/provenance/:id/delete', async (req, res) => {
   res.redirect(303, `${step.artworkUrl}?done=prov-deleted#provenance`);
 });
 
+// A new order of an artwork's provenance (drag and drop, editor/sortable.js): ids=3,1,2 → 204, or 409 with a message.
+router.post('/artworks/:slug/provenance/order', async (req, res) => {
+  const e = await findEntity(BY_TYPE.artwork, req.params.slug);
+  if (!e) return res.status(404).type('text').send('not found');
+  const ids = String(req.body.ids || '').split(',').filter((x) => /^\d+$/.test(x));
+  try {
+    await withTx(req.user, (db) => provenance.reorder(db, e.id, ids));
+  } catch (err) {
+    if (err instanceof provenance.ProvenanceError) return res.status(409).type('text').send(err.message);
+    throw err;
+  }
+  res.status(204).end();
+});
+
 router.post('/provenance/:id/move', async (req, res) => {
   const step = await provenance.byId(adminPool, req.params.id);
   if (!step) return notFoundPage(req, res);

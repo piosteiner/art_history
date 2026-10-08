@@ -107,9 +107,34 @@ test('reorder and remove steps; an undocumented change of owner across 1933–19
 
   await userA.goto('/artworks/test-bassin');
   const rows = userA.locator('table.provenance tr:not(.transfer)');
-  await rows.nth(2).locator('button[title="Move earlier"]').click();
-  await expect(userA).toHaveURL(/done=prov-moved/);
+  const order = () => sql(`SELECT string_agg(coalesce(owner_label, (SELECT name FROM entity_index e WHERE (e.type, e.id) IN
+      (('person', owner_person_id), ('institution', owner_institution_id)))), ' > ' ORDER BY position) FROM provenance WHERE artwork_id = entity_id('artwork', 'test-bassin')`);
+  // drag the third step's handle up, onto the second step (pointer events, as with a mouse or a finger)
+  const handle = rows.nth(2).locator('.drag-handle');
+  await handle.scrollIntoViewIfNeeded();   // the pointer works on what is on screen
+  const box = await handle.boundingBox();
+  const target = await rows.nth(1).boundingBox();
+  await userA.mouse.move(box.x + box.width / 2, box.y + box.height / 2);
+  await userA.mouse.down();
+  await userA.mouse.move(box.x + box.width / 2, target.y + target.height / 2 - 4, { steps: 8 });  // onto the upper half of step 2
+  await userA.mouse.up();
+  await expect.poll(order).toBe('Private collection, Berlin > Test Kunsthaus > Test Emil Bührle');
   await expect(rows.nth(1)).toContainText('Test Kunsthaus');
+  // the keyboard: the handle focused, ↓ moves it back down
+  await rows.nth(1).locator('.drag-handle').focus();
+  await userA.keyboard.press('ArrowDown');
+  await expect.poll(order).toBe('Private collection, Berlin > Test Emil Bührle > Test Kunsthaus');
+  await userA.waitForLoadState('load');
+  await expect(rows.nth(2).locator('.drag-handle')).toBeFocused();           // focus kept after the reload
+  // and once more by dragging, so the steps are as the rest of this test expects
+  await rows.nth(2).locator('.drag-handle').scrollIntoViewIfNeeded();
+  const h2 = await rows.nth(2).locator('.drag-handle').boundingBox();
+  const t1 = await rows.nth(1).boundingBox();
+  await userA.mouse.move(h2.x + h2.width / 2, h2.y + h2.height / 2);
+  await userA.mouse.down();
+  await userA.mouse.move(h2.x + h2.width / 2, t1.y + t1.height / 2 - 4, { steps: 8 });
+  await userA.mouse.up();
+  await expect.poll(order).toBe('Private collection, Berlin > Test Kunsthaus > Test Emil Bührle');
   await userA.goto('/quality?check=provenance_last_owner');
   await expect(userA.locator('main')).toContainText('the provenance ends with Test Emil Bührle, but the work is at Test Kunsthaus');
 
