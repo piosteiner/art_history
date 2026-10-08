@@ -617,6 +617,11 @@ async function apply(db, t, entity, plan, choices, userId) {
       ON CONFLICT (entity_type, entity_id, item) DO UPDATE SET value = EXCLUDED.value, decision = EXCLUDED.decision,
         decided_by = EXCLUDED.decided_by, decided_at = now()`, [entity.type, entity.id, item, JSON.stringify(value), taken ? 'accepted' : 'declined', userId]);
   };
+  // values Wikidata agrees with (049): cited right away — the published value is Wikidata's too
+  if (entity) {
+    const agreed = plan.rows.filter((row) => row.status === 'same').map((row) => row.key);
+    if (agreed.length) await citations.citeAgreeing(db, entity.type, entity.id, plan.qid, agreed, userId);
+  }
   for (const row of plan.rows) {
     if (row.status === 'same') continue;
     if (row.kind === 'list') {

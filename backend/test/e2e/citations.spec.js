@@ -66,3 +66,13 @@ test('an existing entry compared with Wikidata: pending in the working copy, cit
   await expect(userA.locator('#relationships + .table-wrap summary .cite-badge.cite-database').first()).toHaveText('W');
   sql("DELETE FROM live_docs WHERE entity_type = 'artist'");
 });
+
+test('values Wikidata agrees with are cited when comparing — nothing to take, but now with a source', async ({ userA }) => {
+  sql(`DELETE FROM artists WHERE slug IN ('claude-monet', 'claude-monet-cite');
+       INSERT INTO artists (slug, name, wikidata_id, birth, birth_label) VALUES ('claude-monet-cite', 'Claude Monet', 'Q100', '[1840-11-14,1840-11-15)', '14 November 1840')`);
+  await userA.goto('/artists/claude-monet-cite/wikidata');
+  await apply(userA);
+  // birth: the same as ours → cited and settled at once; death (empty here, taken) waits for Publish
+  expect(cites('artist', 'claude-monet-cite')).toBe('birth:Q100:false death:Q100:true');
+  sql("DELETE FROM live_docs WHERE entity_type = 'artist'");
+});

@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Sources: values Wikidata agrees with are cited when comparing
+- **What:** `wikidata.apply` → `citations.citeAgreeing()`: fields where Wikidata has the same value get a (settled)
+  Wikidata citation, unless one exists — so entries entered before (e.g. from YAML) get sources by comparing them.
+- **Why:** owner's example (The Starry Night): its values match Wikidata but had no source.
+- **Revert:** redeploy the previous commit.
+
 ### Sources for facts: citations per field and relationship (migration 049)
 - **What:** enum `source_reliability`, `bibliography.reliability` (+ `source_reliability()`), table `citable_fields`
   (data), view `entity_rows`, `field_value()`, table `citations` (field / relationship / provenance step ← bibliography

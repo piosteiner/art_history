@@ -120,6 +120,17 @@ async function citeAllFromWikidata(db, type, id, qid, userId = null) {
     WHERE f.entity_type = $1::entity_type AND field_value(er.r, f.cols) IS NOT NULL`, [type, id, qid, userId]);
 }
 
+// Fields where Wikidata has the same value as we do: cited as they are (unless Wikidata is cited there already).
+async function citeAgreeing(db, type, id, qid, fields, userId = null) {
+  if (!/^Q\d+$/.test(qid || '')) return;
+  await db.query(`INSERT INTO citations (entity_type, entity_id, field, wikidata_item, wikidata_property, accessed, cited_value, created_by)
+    SELECT f.entity_type, er.id, f.field, $3, f.wikidata_property, current_date, field_value(er.r, f.cols), $4
+    FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
+    WHERE f.entity_type = $1::entity_type AND f.field = ANY ($5::text[]) AND field_value(er.r, f.cols) IS NOT NULL
+      AND NOT EXISTS (SELECT 1 FROM citations c WHERE (c.entity_type, c.entity_id, c.field) = (f.entity_type, er.id, f.field)
+                                                 AND c.wikidata_item = $3)`, [type, id, qid, userId, fields]);
+}
+
 async function citeRelationshipFromWikidata(db, relId, qid, property) {
   await db.query(`INSERT INTO citations (relationship_id, wikidata_item, wikidata_property, accessed) VALUES ($1, $2, $3, current_date)`,
     [relId, qid, /^P\d+$/.test(property || '') ? property : null]);
@@ -159,4 +170,4 @@ function marker(cites = [], target, back) {
 }
 
 module.exports = { CitationError, citableFields, forEntity, forRelationships, add, byId, remove, pendingFromWikidata, settle,
-  citeAllFromWikidata, citeRelationshipFromWikidata, marker };
+  citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker };
