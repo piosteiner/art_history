@@ -163,6 +163,8 @@ export interface ArtworkItem extends Located, Titled {
   creator: Ref | null; creators?: CreatorRef[];
   /** Series (migration 037): the nearest whole and the position in it. */
   part_of?: { slug: string; title: string } | null; part_number?: string | null;
+  /** Lent to (deposited at) `institution`; the owner is the provenance's last step (migration 048). */
+  on_loan?: boolean;
 }
 export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
@@ -232,7 +234,14 @@ export interface Artwork extends DetailBase, Located, Titled {
   provenance?: ProvenanceStep[];
   /** The work's page at its museum / collection (migration 038) and the day the link was added (039, YYYY-MM-DD). */
   web_url?: string | null; web_url_accessed?: string | null;
+  /** Further numbers besides `inventory_number` (migration 048): the owner's, former ones, catalogue raisonné numbers. */
+  numbers?: ArtworkNumber[];
+  /** Lent to (deposited at) `institution` — since when; the lender is the provenance's last owner. */
+  on_loan?: boolean; on_loan_since?: DateRange | null;
 }
+
+/** "18" at the Foundation E.G. Bührle Collection, "658" in Rewald's catalogue raisonné … */
+export interface ArtworkNumber { number: string; label: string | null; institution: Ref | null; source: Ref | null }
 
 export type AcquisitionMethod =
   | 'creation' | 'commission' | 'inheritance' | 'purchase' | 'auction' | 'gift' | 'bequest' | 'exchange'

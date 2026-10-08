@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Frontend: loans and further numbers on the artwork page (no server change)
+- **What:** "Collection" as a credit line when `on_loan`: the provenance's last owner, "on loan to the <institution> since
+  <on_loan_since>" ("Foundation E.G. Bührle Collection, on loan to the Kunsthaus Zürich since 2021"; "the" left out
+  before names starting with "The"). Under "Inventory no." (now with its institution in brackets when there are more)
+  one row per `numbers` entry: its `label`, else "Inventory no." (with the institution) or "Catalogue no." (with the
+  source, linked). `src/views/detail.ts` collectionFact/numberFacts.
+- **Why:** owner: backend migration 048 (numbers, on_loan, on_loan_since).
+- **Tested:** e2e test with a sample loan; checked live on le-garcon-au-gilet-rouge.
+- **Revert:** revert the commit.
+
 ### Data: the three Bührle works — at the Kunsthaus, on loan, owner in the provenance
 - **What (prod, by hand, source `sql`):** *Le garçon au gilet rouge*, *Tournesols sur un fauteuil*, *La Route de
   Saint-Germain près de Marly*: institution Foundation E.G. Bührle Collection → Kunsthaus Zürich (the BU numbers are

@@ -412,6 +412,32 @@ test('[[links]] to entries: a preview on hover (name, subtitle, excerpt); an ima
   await expect(page).toHaveURL(/\/places\/arles$/);
 });
 
+test('a work on loan: credit line with the lender from the provenance; further numbers under the inventory number', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.institution = { slug: 'kunsthaus-zurich', name: 'Kunsthaus Zürich' };
+    b.inventory_number = 'BU 0018';
+    b.on_loan = true;
+    b.on_loan_since = { label: '2021', from: '2021-01-01', to: '2021-12-31', from_year: 2021, to_year: 2021 };
+    b.provenance = [{ position: 0, owner: { type: 'institution', slug: 'foundation-e-g-buhrle-collection', name: 'Foundation E.G. Bührle Collection' },
+      owner_label: null, owner_name: 'Foundation E.G. Bührle Collection', acquired: null, ended: null, method: 'gift', direct: true, label: null,
+      certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: null }];
+    b.numbers = [
+      { number: '18', label: null, institution: { slug: 'foundation-e-g-buhrle-collection', name: 'Foundation E.G. Bührle Collection' }, source: null },
+      { number: '658', label: 'Rewald (catalogue raisonné)', institution: null, source: null },
+      { number: 'W 12', label: null, institution: null, source: { slug: 'rewald-1996', name: 'Rewald 1996' } },
+    ];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const facts = page.locator('.facts');
+  await expect(facts.locator('dt', { hasText: 'Collection' }).locator('+ dd'))
+    .toHaveText('Foundation E.G. Bührle Collection, on loan to the Kunsthaus Zürich since 2021');
+  await expect(facts.locator('dd a[href="/institutions/foundation-e-g-buhrle-collection"]').first()).toBeVisible();
+  await expect(facts).toContainText('BU 0018 (Kunsthaus Zürich)');
+  await expect(facts).toContainText('18 (Foundation E.G. Bührle Collection)');
+  await expect(facts.locator('dt', { hasText: 'Rewald (catalogue raisonné)' }).locator('+ dd')).toHaveText('658');
+  await expect(facts.locator('dt', { hasText: 'Catalogue no.' }).locator('+ dd a[href="/bibliography/rewald-1996"]')).toBeVisible();
+});
+
 const step = (position: number, owner: { type: string; slug: string; name: string } | null, extra: Record<string, unknown>) => ({
   position, owner, owner_label: null, owner_name: owner?.name ?? null, acquired: null, ended: null, method: 'purchase', direct: false,
   label: null, certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: null, ...extra,

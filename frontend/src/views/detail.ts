@@ -87,6 +87,39 @@ function creatorsFact(e: Artwork): Html | string | null {
 
 const METHOD_LABEL: Record<string, string> = { forced_sale: 'forced sale' };
 
+/** "the Kunsthaus Zürich", but "The Metropolitan Museum of Art" as it is. */
+const withArticle = (name: string) => (/^the\s/i.test(name) ? '' : 'the ');
+
+/**
+ * Where the work is, as a credit line: the holding institution, or — on loan — the lender (the provenance's last owner)
+ * "Foundation E.G. Bührle Collection, on loan to the Kunsthaus Zürich since 2021" (migration 048).
+ */
+function collectionFact(e: Artwork): Html | null {
+  if (!e.institution) return null;
+  const holder = link('institution', e.institution.slug, e.institution.name);
+  if (!e.on_loan) return holder;
+  const last = e.provenance?.at(-1);
+  const owner = last?.owner ? link(last.owner.type, last.owner.slug, last.owner.name) : last?.owner_label ?? last?.owner_name ?? null;
+  const since = e.on_loan_since ? html` since ${e.on_loan_since.label}` : '';
+  return owner
+    ? html`${owner}, on loan to ${withArticle(e.institution.name)}${holder}${since}`
+    : html`On loan to ${withArticle(e.institution.name)}${holder}${since}`;
+}
+
+/**
+ * The inventory number of the institution where it is, then the further numbers, each with whose number it is:
+ * "Inventory no. 18 (Foundation E.G. Bührle Collection)", "Rewald (catalogue raisonné) 658".
+ */
+function numberFacts(e: Artwork): Fact[] {
+  const more = e.numbers ?? [];
+  const whose = (i: { slug: string; name: string } | null, type: 'institution' | 'source') => (i ? html` <span class="muted">(${link(type, i.slug, i.name)})</span>` : '');
+  return [
+    ['Inventory no.', e.inventory_number ? html`${e.inventory_number}${more.length ? whose(e.institution, 'institution') : ''}` : null],
+    ...more.map((n): Fact => [n.label ?? (n.source ? 'Catalogue no.' : n.institution ? 'Inventory no.' : 'Number'),
+      html`${n.number}${whose(n.institution, 'institution')}${whose(n.source, 'source')}`]),
+  ];
+}
+
 /**
  * The owners in order, as recorded. A period whose end is only implied by the next acquisition is marked; a handover
  * that isn't documented as direct gets a dashed connector ("possibly other owners in between").
@@ -174,8 +207,8 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ['Materials', e.materials.length ? e.materials.join(', ') : null],
           ['Dimensions', dimensionsFact(e.dimensions, e.other_dimensions ?? [])],
           ...polityFacts(e, 'created_in_polity', 'Made in', 'Country of origin'),
-          ['Collection', e.institution ? link('institution', e.institution.slug, e.institution.name) : null],
-          ['Inventory no.', e.inventory_number],
+          ['Collection', collectionFact(e)],
+          ...numberFacts(e),
           ['Also known as', otherNames(e)],
         ],
         extra: [partsGrid(e), provenanceSection(e.provenance ?? [])].filter((x): x is Html => !!x),
