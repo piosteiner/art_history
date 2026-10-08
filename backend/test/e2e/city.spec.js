@@ -39,6 +39,19 @@ test('an institution with an exact location gets its city — created the first 
   expect(sql("SELECT p.slug FROM institutions i JOIN places p ON p.id = i.place_id WHERE i.slug = 'test-kamakura-library'")).toBe('kamakura');
 });
 
+test('only the country given: narrowed down to the city at the location (which lies in that country)', async ({ userA }) => {
+  await userA.goto('/institutions/new');
+  await userA.fill('#f-name', 'Test Kamakura Hall');
+  await userA.fill('#f-place', 'japan');
+  await userA.click('summary:has-text("Exact location on the map")');
+  await userA.fill('input[name="f.location_lon"]', '139.5520');
+  await userA.fill('input[name="f.location_lat"]', '35.3230');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/institutions\/test-kamakura-hall\?done=created&city=1/);
+  expect(sql(`SELECT p.slug || ' in ' || par.slug FROM institutions i JOIN places p ON p.id = i.place_id
+              JOIN places par ON par.id = p.parent_id WHERE i.slug = 'test-kamakura-hall'`)).toBe('kamakura in japan');
+});
+
 test('a work that doesn\'t move gets "created in" its city, dated like the work', async ({ userA }) => {
   await userA.goto('/artworks/new');
   await userA.fill('#f-title', 'Test Great Buddha Hall');
