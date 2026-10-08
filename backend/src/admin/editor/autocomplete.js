@@ -122,7 +122,7 @@ function enhance(input) {
     if (e.key === 'ArrowDown') { e.preventDefault(); highlight(Math.min(active + 1, hits.length - 1)); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); highlight(Math.max(active - 1, 0)); }
     else if (e.key === 'Enter' && active >= 0) { e.preventDefault(); pick(active); }  // pick, don't submit the form
-    else if (e.key === 'Escape') { e.preventDefault(); close(); }
+    else if (e.key === 'Escape' && !list.hidden) { e.preventDefault(); close(); }  // an open list only: else Esc is the page's (closing a dialog)
   });
   input.addEventListener('blur', () => setTimeout(close, 100));
   if (typeSelect) typeSelect.addEventListener('change', () => { if (!list.hidden) input.dispatchEvent(new Event('input')); });

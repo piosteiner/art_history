@@ -203,7 +203,7 @@ function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
         <td>${s.period_label || ''}${END_BASIS[s.end_basis] ? html` <span class="tag ${s.end_basis}">${END_BASIS[s.end_basis]}</span>` : ''}
           ${s.certainty !== 'attested' ? html` <span class="muted">· ${s.certainty}</span>` : ''}
           ${s.notes_md ? html`<div class="md small">${raw(renderMarkdown(s.notes_md, { names }))}</div>` : ''}</td>
-        <td>${marker ? marker(cites[s.id], { provenance: s.id }, back) : ''}</td>
+        <td>${marker ? marker(cites[s.id], { provenance: s.id, label: `step ${i + 1} (${s.owner_slug ? s.owner_name : s.owner_label})` }, back) : ''}</td>
         <td class="nowrap"><a href="/provenance/${s.id}/edit">edit</a></td></tr></tbody>`)}</table></div>
       ${steps.length > 1 ? html`<p class="muted small">Drag ⠿ to change the order — the periods are recomputed.</p>` : ''}`
     : html`<p class="muted">None yet. The owners in order, as the sources record them: when each acquired the work and how.</p>`}

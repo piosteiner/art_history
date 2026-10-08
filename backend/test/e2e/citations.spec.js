@@ -25,16 +25,16 @@ test('a new entry from Wikidata: its values are cited (W); a museum source added
   expect(cites('artist', 'claude-monet')).toBe('birth:Q100:false');
   const birth = userA.locator('dt:has-text("Birth") + dd');
   await expect(birth.locator('summary .cite-badge.cite-database')).toHaveText('W');
-  await expect(userA.locator('dt:has-text("Death") + dd summary .cite-badge.cite-none')).toHaveText('?');
+  await expect(userA.locator('dt:has-text("Death") + dd summary .cite-badge.cite-none')).toHaveText('+');
   expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
     .toBe('no source: death · only Wikidata / databases: birth');
 
   // the museum's website as a source for the death date: an institution (M); the field is then well sourced
   sql(`INSERT INTO bibliography (slug, kind, name, url) VALUES ('van-gogh-museum-website-test', 'web', 'Van Gogh Museum: Collection', 'https://www.vangoghmuseum.nl/')`);
-  await userA.locator('dt:has-text("Death") + dd details.cite summary').click();
+  await userA.locator('dt:has-text("Death") + dd details.cite > summary').click();
   const form = userA.locator('dt:has-text("Death") + dd .cite-add');
   await form.locator('input[name=source]').fill('van-gogh-museum-website-test');
-  await userA.keyboard.press('Escape');
+  await form.locator('.cite-more summary').click();
   await form.locator('input[name=accessed]').fill('2026-10-08');
   await Promise.all([userA.waitForNavigation(), form.locator('button').click()]);
   await expect(userA).toHaveURL(/done=cite-added/);
@@ -107,4 +107,40 @@ test('free-text sources are citations (T); the API gives every fact its sources,
   const lived = v.relationships.find((r) => r.type === 'lived_in' && r.sources.length);
   expect(lived.sources).toEqual([{ kind: 'text', reliability: null, text: 'Letter 577', locator: null, url: null, accessed: null, note: null, outdated: false }]);
   sql(`DELETE FROM citations WHERE relationship_id = ${relId} OR source_id = entity_id('source', 'van-gogh-museum-website-test')`);
+});
+
+test('paste a link: the website becomes a source (once), the page and today are recorded; the dialog is not cut off', async ({ userA }) => {
+  sql("DELETE FROM bibliography WHERE slug = 'collection-test-museum'");
+  await userA.goto('/artists/vincent-van-gogh');
+  const birth = userA.locator('dt:has-text("Birth") + dd');
+  await birth.locator('details.cite > summary').click();
+  const dialog = birth.locator('.cite-panel');
+  await expect(dialog).toBeInViewport({ ratio: 1 });                         // fixed in the middle, whole
+  await expect(dialog).toContainText('Sources of “Birth”');
+  await dialog.locator('input[name=url]').fill('https://www.test-museum.org/collection/item/1');
+  await dialog.locator('.cite-more summary').click();
+  await dialog.locator('input[name=site]').fill('Collection Test Museum');
+  await Promise.all([userA.waitForNavigation(), dialog.locator('button:has-text("Add source")').click()]);
+  await expect(userA).toHaveURL(/done=cite-added/);
+  expect(sql(`SELECT kind || ' ' || reliability || ' ' || url FROM bibliography WHERE slug = 'collection-test-museum'`))
+    .toBe('web institution https://www.test-museum.org/');
+  expect(sql(`SELECT url || ' ' || (accessed = current_date) FROM citations WHERE source_id = entity_id('source', 'collection-test-museum')`))
+    .toBe('https://www.test-museum.org/collection/item/1 true');
+  await expect(birth.locator('details.cite > summary .cite-badge.cite-institution')).toHaveText('M');
+
+  // another page of the same site (without www): the same source, no second one
+  const death = userA.locator('dt:has-text("Death") + dd');
+  await death.locator('details.cite > summary').click();
+  await death.locator('.cite-panel input[name=url]').fill('https://test-museum.org/collection/item/2');
+  await Promise.all([userA.waitForNavigation(), death.locator('.cite-panel button:has-text("Add source")').click()]);
+  expect(sql(`SELECT count(*) FROM bibliography WHERE url LIKE '%test-museum.org%'`)).toBe('1');
+  expect(sql(`SELECT count(*) FROM citations WHERE source_id = entity_id('source', 'collection-test-museum')`)).toBe('2');
+
+  // in the relationships table too: whole and on top
+  const rel = userA.locator('#relationships + .table-wrap details.cite').first();
+  await rel.locator(':scope > summary').click();
+  await expect(rel.locator('.cite-panel')).toBeInViewport({ ratio: 1 });
+  await userA.keyboard.press('Escape');
+  await expect(rel.locator('.cite-panel')).toBeHidden();
+  sql(`DELETE FROM citations WHERE source_id = entity_id('source', 'collection-test-museum'); DELETE FROM bibliography WHERE slug = 'collection-test-museum'`);
 });

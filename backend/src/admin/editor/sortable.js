@@ -80,3 +80,15 @@ function setup(box) {
     timer = setTimeout(() => save(item.dataset.sortId), 800);              // several presses, one save
   });
 }
+
+// The sources dialogs (src/admin/citations.js): one open at a time; Esc and "close" close it.
+export function initCiteDialogs() {
+  const closeAll = (except) => document.querySelectorAll('details.cite[open]').forEach((d) => { if (d !== except) d.open = false; });
+  document.addEventListener('toggle', (e) => { if (e.target.matches && e.target.matches('details.cite') && e.target.open) closeAll(e.target); }, true);
+  // Esc: not when something inside used it already (an autocomplete list closes first)
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !e.defaultPrevented) closeAll(null); });
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.cite-close');
+    if (btn) { e.preventDefault(); btn.closest('details.cite').open = false; }
+  });
+}

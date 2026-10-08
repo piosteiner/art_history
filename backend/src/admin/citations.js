@@ -71,16 +71,19 @@ async function add(db, body, userId) {
   const text = (k) => String(body[k] ?? '').trim() || null;
   const sourceSlug = text('source');
   const free = text('text');
-  if (!sourceSlug && !free) throw new CitationError('Source: pick one from the bibliography (create it there first, e.g. the museum’s page as a website) — or describe it in words.');
+  const url = text('url');
+  if (url && !/^https?:\/\/[^\s/]+\.[^\s]+$/.test(url)) throw new CitationError('Link: a web address (https://…).');
+  if (!sourceSlug && !free && !url) throw new CitationError('Paste the link of the page, pick a source of the bibliography — or describe the source in words.');
   let sourceId = null;
   if (sourceSlug) {
     sourceId = (await db.query('SELECT entity_id($1, $2) AS id', ['source', sourceSlug])).rows[0].id;
     if (sourceId === null) throw new CitationError(`Source “${sourceSlug}” does not exist — pick one from the suggestions.`);
+  } else if (url && !free) {
+    sourceId = await websiteSource(db, url, text('site'));
   }
-  const accessed = text('accessed');
+  let accessed = text('accessed');
   if (accessed && !/^\d{4}-\d{2}-\d{2}$/.test(accessed)) throw new CitationError('Accessed: a date like 2026-10-08.');
-  const url = text('url');
-  if (url && !/^https?:\/\/\S+$/.test(url)) throw new CitationError('Page: a web address (https://…).');
+  if (url && !accessed) accessed = new Date().toISOString().slice(0, 10);  // a web page: consulted today
   const common = [sourceId, sourceId ? null : free, text('locator'), text('note'), accessed, url, userId];
   for (const [key, col] of [['relationship', 'relationship_id'], ['provenance', 'provenance_id']]) {
     if (!text(key)) continue;
@@ -102,6 +105,23 @@ async function byId(db, id) {
   return (await db.query('SELECT * FROM citations WHERE id = $1', [id])).rows[0] || null;
 }
 async function remove(db, id) { await db.query('DELETE FROM citations WHERE id = $1', [id]); }
+
+// A pasted link → the bibliography source of its website: ours for that host if we have one (kind web, its url on
+// the same host), else a new one — named as given, else after the host — reliability "institution" (a museum's or
+// collection's site; change it on the source if not).
+async function websiteSource(db, url, site) {
+  const host = new URL(url).hostname.replace(/^www\./, '');
+  const { rows } = await db.query(`SELECT id FROM bibliography WHERE kind = 'web' AND url IS NOT NULL
+    AND regexp_replace(substring(url FROM '^https?://([^/:]+)'), '^www\.', '') = $1 ORDER BY id LIMIT 1`, [host]);
+  if (rows.length) return rows[0].id;
+  const name = (site || host).slice(0, 200);
+  const base = name.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 70) || 'website';
+  let slug = base;
+  for (let i = 2; (await db.query('SELECT 1 FROM bibliography WHERE slug = $1', [slug])).rows.length; i += 1) slug = `${base}-${i}`;
+  const ins = await db.query(`INSERT INTO bibliography (slug, kind, name, siglum, url, reliability) VALUES ($1, 'web', $2, $2, $3, 'institution') RETURNING id`,
+    [slug, name, `${new URL(url).protocol}//${new URL(url).host}/`]);
+  return ins.rows[0].id;
+}
 
 // ── Wikidata ──────────────────────────────────────────────────────────────────────────────────────────────────
 // The fields a Wikidata application took (wikidata.apply → cites: [{field, form}]), as citations to be settled:
@@ -174,11 +194,13 @@ function marker(cites = [], target, back) {
   const kinds = [...new Set(cites.filter((c) => !c.pending && !c.outdated).map(kindOf))];
   const outdated = cites.some((c) => c.outdated);
   const pending = cites.some((c) => c.pending);
-  const label = kinds.length ? kinds.map((k) => html`<span class="cite-badge cite-${k}" title="${BADGE_TITLE[k]}">${BADGE[k]}</span>`)
-    : html`<span class="cite-badge cite-none" title="no source yet">?</span>`;
-  return html`<details class="cite"><summary aria-label="sources">${label}${outdated ? html`<span class="cite-badge cite-outdated" title="changed since cited">!</span>` : ''}${pending ? html`<span class="cite-badge cite-pending" title="from Wikidata, not published yet">…</span>` : ''}</summary>
-    <div class="cite-panel">
-      ${cites.length ? html`<ul>${cites.map((c) => html`<li><span class="cite-badge cite-${kindOf(c)}">${BADGE[kindOf(c)]}</span>
+  const label = kinds.length ? kinds.map((k) => html`<span class="cite-badge cite-${k}" title="${BADGE_TITLE[k]} — click to see or add sources">${BADGE[k]}</span>`)
+    : html`<span class="cite-badge cite-none" title="no source yet — click to add one">+</span>`;
+  const what = target.label || 'this';
+  return html`<details class="cite"><summary aria-label="sources of ${what}">${label}${outdated ? html`<span class="cite-badge cite-outdated" title="changed since cited">!</span>` : ''}${pending ? html`<span class="cite-badge cite-pending" title="from Wikidata, not published yet">…</span>` : ''}</summary>
+    <div class="cite-panel" role="dialog" aria-label="Sources of ${what}">
+      <div class="cite-head"><b>Sources of ${what}</b><button type="button" class="link cite-close" aria-label="close">close ✕</button></div>
+      ${cites.length ? html`<ul>${cites.map((c) => html`<li><span class="cite-badge cite-${kindOf(c)}" title="${BADGE_TITLE[kindOf(c)]}">${BADGE[kindOf(c)]}</span>
         ${c.wikidata_item ? html`<a href="https://www.wikidata.org/wiki/${c.wikidata_item}" target="_blank" rel="noopener">${c.source_text}</a>`
           : c.source_slug ? html`<a href="/bibliography/${c.source_slug}">${c.source_text}</a>` : html`<span>${c.source_text}</span>`}
         ${c.url ? html` <a class="small" href="${c.url}" target="_blank" rel="noopener">page ↗</a>` : ''}
@@ -193,14 +215,19 @@ function marker(cites = [], target, back) {
           : target.provenance ? html`<input type="hidden" name="provenance" value="${target.provenance}">`
           : html`<input type="hidden" name="type" value="${target.type}"><input type="hidden" name="id" value="${target.id}"><input type="hidden" name="field" value="${target.field}">`}
         <input type="hidden" name="back" value="${back}">
-        <input name="source" data-lookup="source" autocomplete="off" placeholder="source (bibliography)" aria-label="source">
-        <input name="locator" placeholder="page, no. …" aria-label="page or number" class="short">
-        <input name="url" type="url" placeholder="the exact page (https://…)" aria-label="exact page">
-        <input name="accessed" type="date" aria-label="accessed (websites)" class="short" title="accessed (websites)">
-        <input name="note" placeholder="note (optional)" aria-label="note">
-        <button class="secondary">Add source</button>
-        <input name="text" placeholder="… or in words, if it isn't in the bibliography yet" aria-label="source in words">
-        <div class="hint">A museum page, a catalogue raisonné, a book — best as an entry of the <a href="/bibliography/new">bibliography</a> (then it counts as a source); in words it stays a note (T).</div>
+        <div class="field"><label>Add a source — paste the link of the page</label>
+          <input name="url" type="url" placeholder="https://www.vangoghmuseum.nl/en/collection/…" aria-label="link of the page">
+          <div class="hint">The website becomes a source of the bibliography (or the one we have for that site is used) — with this page and today's date.</div></div>
+        <div class="field"><label>… or a source of the bibliography</label>
+          <input name="source" data-lookup="source" autocomplete="off" placeholder="start typing: Busch 1993, Kunsthaus …" aria-label="source of the bibliography">
+          <div class="hint">Books, catalogues raisonnés, articles: <a href="/bibliography/new" target="_blank" rel="noopener">create it in the bibliography</a> first.</div></div>
+        <div class="field-pair"><div class="field"><label>Page, catalogue no.</label><input name="locator" placeholder="45 · Kat.-Nr. 12" aria-label="page or number"></div>
+          <div class="field"><label>Note</label><input name="note" placeholder="optional" aria-label="note"></div></div>
+        <details class="cite-more"><summary class="small muted">more: website name, accessed date, a source in words</summary>
+          <div class="field-pair"><div class="field"><label>Name of the website (new ones)</label><input name="site" placeholder="e.g. Van Gogh Museum, Collection" aria-label="name of the website"></div>
+            <div class="field"><label>Accessed</label><input name="accessed" type="date" aria-label="accessed"></div></div>
+          <div class="field"><label>Or in words (stays a note: T)</label><input name="text" placeholder="e.g. letter to Theo, 1888" aria-label="source in words"></div></details>
+        <div class="actions"><button>Add source</button></div>
       </form></div></details>`;
 }
 

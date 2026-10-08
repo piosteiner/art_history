@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Admin: adding sources made usable — a dialog, visible markers, paste a link
+- **What:** the sources panel is a centred dialog (position: fixed — inside tables it was cut off at the right edge;
+  backdrop click, Esc and "close" close it; one at a time); missing sources show an orange "+", a legend under the
+  fields explains the markers; adding a source: paste the page's link → the website's bibliography source is found by
+  host or created (kind web, reliability institution, named as given or after the host), the citation keeps the page
+  and today's date; or pick a bibliography source; page/no. and note; more: website name, accessed, free text.
+  Autocomplete lists claim Esc only while open.
+- **Why:** owner: only the automatic Wikidata citations worked — no source had been added by hand (the logs showed no
+  attempt reaching the server).
+- **Revert:** redeploy the previous commit.
+
 ### Admin: Quality and History back in line with the menu
 - **What:** the tools group follows the other three groups (separator line, normal link colour) instead of sitting
   muted at the far right.

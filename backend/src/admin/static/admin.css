@@ -332,12 +332,21 @@ details.cite > summary::-webkit-details-marker { display: none; }
 .cite-outdated { color: var(--bg); background: var(--err); border-color: var(--err); }
 .cite-pending { border-style: dotted; }
 .cite-warn { color: var(--err); }
-.cite-panel { position: absolute; z-index: 40; margin-top: .3rem; padding: .6rem .7rem; max-width: min(34rem, 92vw);
-  background: var(--panel); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,.25); }
-.cite-panel ul { margin: 0 0 .5rem; padding-left: 1rem; }
-.cite-panel .cite-add { display: flex; flex-wrap: wrap; gap: .3rem; }
-.cite-panel .cite-add input { width: auto; flex: 1 1 8rem; }
-.cite-panel .cite-add input.short { flex: 0 1 7rem; }
+/* the sources of a value: a dialog in the middle of the screen (position: fixed — no table cuts it off); the
+   dimmed backdrop is the summary's ::after, so a click beside the dialog closes it like the summary itself */
+details.cite > summary { cursor: pointer; }
+details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-index: 60; background: rgba(0, 0, 0, .5); cursor: default; }
+.cite-panel { position: fixed; z-index: 61; left: 50%; top: 12vh; transform: translateX(-50%); width: min(38rem, calc(100vw - 32px));
+  max-height: 76vh; overflow: auto; padding: .9rem 1rem; background: var(--panel); color: var(--fg); text-align: left;
+  border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 10px 40px rgba(0,0,0,.45); white-space: normal; font-size: .95rem; }
+.cite-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: .5rem; }
+.cite-panel ul { margin: 0 0 .8rem; padding-left: 1.1rem; }
+.cite-panel li { margin: .25rem 0; }
+.cite-panel .cite-add { border-top: 1px solid var(--line); padding-top: .7rem; }
+.cite-more > summary { cursor: pointer; margin: .3rem 0; }
+.cite-badge.cite-none { color: var(--accent); border-color: var(--accent); }
+.cite-legend { margin-top: -.4rem; }
+.cite-legend .cite-badge { margin: 0 .1rem; }
 
 /* drag-and-drop ordering (editor/sortable.js): the provenance */
 .drag-cell { width: 1.6rem; padding-right: 0; }

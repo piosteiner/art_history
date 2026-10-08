@@ -1331,7 +1331,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const cites = await citations.forEntity(adminPool, t.type, e.id);
   const citable = (await citations.citableFields(adminPool))[t.type] || {};
   const here = `/${t.folder}/${e.slug}`;
-  const mark = (key) => (key in citable ? citations.marker(cites[key], { type: t.type, id: e.id, field: key }, here) : '');
+  const mark = (key) => (key in citable ? citations.marker(cites[key], { type: t.type, id: e.id, field: key, label: `“${fieldLabel(t.type, key)}”` }, here) : '');
   const webAccessed = t.type === 'artwork' && e.doc.web_url
     ? (await adminPool.query("SELECT to_char(web_url_accessed, 'FMDD FMMonth YYYY') AS d FROM artworks WHERE id = $1", [e.id])).rows[0].d : null;
   const boundary = t.type === 'place' && e.doc.boundary_code
@@ -1386,6 +1386,11 @@ router.get('/:plural/:slug', async (req, res) => {
         // dates and dimensions are shown under their own key; the label column belongs to the value before it
         return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown} ${mark(key)}</dd>`;
       })}</dl>
+      ${Object.keys(citable).length ? html`<p class="cite-legend muted small">Sources: click a marker —
+        <span class="cite-badge cite-none">+</span> none yet · <span class="cite-badge cite-database">W</span> Wikidata ·
+        <span class="cite-badge cite-institution">M</span> museum / institution · <span class="cite-badge cite-scholarly">L</span> literature ·
+        <span class="cite-badge cite-primary">P</span> primary source · <span class="cite-badge cite-text">T</span> a note in words ·
+        <span class="cite-badge cite-outdated">!</span> changed since cited</p>` : ''}
       ${t.type === 'term' || usedIn.length ? html`<h2 id="used-in">${t.type === 'term' ? 'Used in' : 'Mentioned in'}</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`
         : html`<p class="muted">No text links it yet — write <code>[[${e.slug}]]</code> in a description.</p>`}` : ''}
       ${series && (series.parts.length || series.isWhole) ? html`<h2 id="parts">Parts</h2>
@@ -1411,13 +1416,13 @@ router.get('/:plural/:slug', async (req, res) => {
           <td><a href="/${BY_TYPE[type].folder}/${slug}">${toName}</a> <span class="tag">${type}</span></td>
           <td>${rel.period_label || (rel.period ? parseFuzzyDate(String(rel.period), { openEnd: true }).label : '')}</td>
           <td class="muted">${[rel.label, rel.certainty].filter(Boolean).join(' · ')}</td>
-          <td>${citations.marker(relCites[id], { relationship: id }, `${here}#relationships`)}</td>
+          <td>${citations.marker(relCites[id], { relationship: id, label: `“${labels[rel.type] || rel.type} ${toName}”` }, `${here}#relationships`)}</td>
           <td><a href="/relationships/${id}/edit">edit</a></td></tr>`;
       })}</tbody></table></div>` : html`<p class="muted">None yet.</p>`}
       ${incoming.rows.length ? html`<h3>Linked from</h3><div class="table-wrap"><table><tbody>${incoming.rows.map((r) => html`<tr>
           <td>${r.inverse_label}</td><td><a href="/${BY_TYPE[r.type].folder}/${r.slug}">${r.name}</a> <span class="tag">${r.type}</span></td>
           <td>${r.period_label || ''}${r.end_basis === 'implied' ? html` <span class="tag implied">end implied</span>` : ''}</td><td class="muted">${r.label || ''}</td>
-          <td>${r.source === 'relationship' ? citations.marker(relCites[r.id], { relationship: r.id }, `${here}#relationships`) : ''}</td>
+          <td>${r.source === 'relationship' ? citations.marker(relCites[r.id], { relationship: r.id, label: `“${r.inverse_label} ${r.name}”` }, `${here}#relationships`) : ''}</td>
           <td>${r.source === 'provenance' ? html`<a href="/provenance/${r.provenance_id}/edit" title="from the provenance">provenance</a>`
             : r.source === 'creator' ? html`<a href="/artworks/${r.slug}/edit" title="the artwork's creator field">creator field</a>`
             : html`<a href="/relationships/${r.id}/edit">edit</a>`}</td></tr>`)}</tbody></table></div>` : ''}`;
