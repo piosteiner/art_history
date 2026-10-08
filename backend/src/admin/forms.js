@@ -57,7 +57,7 @@ const TYPE_HINTS = {
   'artwork.materials': 'For filtering: the individual materials, one per line, lowercase and singular — ink · paper · bronze · silk. Substances and supports only, no techniques ("woodblock print" belongs in object type / medium). Type them, or click a suggestion below.',
   'place.boundary_code': html`ISO code of a country (<code>JP</code>) or region (<code>JP-13</code> Tokyo, <code>FR-IDF</code>) — the outline and
     the marker then come from Natural Earth, no point or drawing needed. Countries get it from their country code automatically.`,
-  'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location. With an exact location you can leave it empty — the city is found (and created if needed) when you save.',
+  'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location. With an exact location you can leave it empty or give just the country — the city is found (and created inside the country if needed) when you save.',
   'institution.address': 'Street address, as written locally, e.g. Heimplatz 1, 8001 Zürich.',
   'artwork.web_url': 'The work’s page at the museum or collection that holds it — or another good page about it (the artist’s, a catalogue). The site links it: the way to see the work when we have no free image.',
   'artwork.parent': 'The series, album, triptych or altarpiece it belongs to — an artwork of its own (object type series, album …). Empty = none.',

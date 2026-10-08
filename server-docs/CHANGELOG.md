@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Admin: an institution's country or region is narrowed down to its city
+- **What:** `cityFor()` also looks up the city at an institution's exact location when its place is only a country or
+  region (kind `country`/`region`), not just when it is empty. A new city is created inside the country (parent by
+  outline), so Munch Museum → Oslo → Norway. Hint of the place field updated.
+- **Why:** owner: the Munch Museum, saved with place "Norway", skipped the city.
+- **Tested:** e2e (city.spec). **Revert:** redeploy the previous commit.
+
 ### Images for people (migration 043)
 - **What:** `images.person_id` (fifth arm of the exclusive arc, partial indexes like the others); generated
   columns `images.entity_type`/`entity_id` replace the CASE over the arms in the quality view, `images.js` and the

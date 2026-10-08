@@ -16,7 +16,7 @@ async function newInstitution(page, name, [lon, lat]) {
 test.afterAll(() => {
   sql(`DELETE FROM relationships WHERE subject_type = 'artwork' AND subject_id = entity_id('artwork', 'test-great-buddha-hall');
        DELETE FROM artworks WHERE slug = 'test-great-buddha-hall';
-       DELETE FROM institutions WHERE slug IN ('test-kamakura-museum', 'test-kamakura-library', 'test-arctic-station');
+       DELETE FROM institutions WHERE slug IN ('test-kamakura-museum', 'test-kamakura-library', 'test-arctic-station', 'test-kamakura-hall');
        DELETE FROM places WHERE slug = 'kamakura'`);
 });
 

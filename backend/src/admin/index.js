@@ -1062,7 +1062,12 @@ async function saveEntity(user, t, body, existing) {
 // Lookup failures (no network, open sea) only mean no city: the save goes on, the quality hint stays.
 async function cityFor(t, doc, existing) {
   let at = null;
-  if (t.type === 'institution' && doc.location && !doc.place) at = doc.location;
+  // an institution's place is its city: none given, or only a country / region ("Norway" for the Munch Museum) →
+  // the city at its point, which is created inside that country if we don't have it (Oslo → Norway)
+  if (t.type === 'institution' && doc.location && (!doc.place
+      || (await adminPool.query(`SELECT 1 FROM places WHERE slug = $1 AND kind IN ('country', 'region')`, [doc.place])).rows.length)) {
+    at = doc.location;
+  }
   if (t.type === 'artwork' && (doc.location || doc.area)) {
     const before = existing ? existing.doc : {};
     const moved = JSON.stringify([doc.location, doc.area]) !== JSON.stringify([before.location, before.area]);
