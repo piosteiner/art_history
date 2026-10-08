@@ -59,6 +59,24 @@ export interface Relationship {
   derived?: boolean;
   /** Where the period's end comes from (provenance); `implied` = only by the next owner's acquisition. */
   end_basis?: EndBasis | null;
+  /** Where this link comes from (migration 049). */
+  sources?: Citation[];
+}
+
+/**
+ * Where a fact comes from (migrations 049/050): an entry of the bibliography (`source`), a Wikidata statement, or a note
+ * in words (`text`, not verified). `text` is the short form to show ("Busch 1993, S. 45", "Wikidata, Q45585, P2048").
+ */
+export interface Citation {
+  kind: 'source' | 'wikidata' | 'text';
+  /** database (Wikidata, aggregators) < institution (museum) < scholarly (literature) < primary (archive); null for text. */
+  reliability: 'database' | 'institution' | 'scholarly' | 'primary' | null;
+  text: string;
+  source?: { slug: string; siglum: string } | null;
+  wikidata?: { item: string; property: string | null; url: string } | null;
+  locator: string | null; url: string | null; accessed: string | null; note: string | null;
+  /** The value changed after the source was cited. */
+  outdated: boolean;
 }
 
 /** recorded: a source gives the end · implied: the next acquisition · ongoing: still there · unknown: nothing after it. */
@@ -81,6 +99,8 @@ interface DetailBase {
   entries?: Record<string, EntryHint>;
   /** Entries whose texts link this one (every type except terms, which have `used_in`). */
   mentioned_in?: EntryRef[];
+  /** Where its fields come from: {birth: [...], created: [...], institution: [...] …}; no key without citations. */
+  sources?: Record<string, Citation[]>;
 }
 
 /** A cited source, for popovers on short references: siglum ("Busch 1993") and the full citation (HTML, italic titles). */
@@ -260,7 +280,8 @@ export interface ProvenanceStep {
   place: Ref | null;
   period: DateRange | null; end_basis: EndBasis | null;
   notes_html: string | null;
-  sources: string[] | null;
+  /** Citations (migration 049); before that, plain URLs. */
+  sources: (Citation | string)[] | null;
 }
 
 export interface Place extends DetailBase, Named {

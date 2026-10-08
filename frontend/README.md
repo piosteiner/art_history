@@ -133,6 +133,14 @@ world map; events known only by their city sit a little off the city's dot) that
 ("Events (1 in 1960–1980)"), and an "Events" group on the timeline while the layer is on. Graph: event nodes and the
 `event` category (took part in, concerns). Prerendered pages and schema.org `Event` data for `/events/<slug>`.
 
+## Sources for facts (API migrations 049/050)
+`src/cite.ts`: after a sourced value (fact rows, relationships, provenance steps) a small marker with one letter per kind
+of source, the most reliable first — P primary · L literature · M museum/collection · D other database · W Wikidata ·
+T a note in words. Hover, keyboard focus or a tap opens the citations: short form linked to the exact page (or the
+Wikidata item), accessed date, the full reference from the detail's `bibliography`, the note. `outdated` citations get
+no marker and are listed last, muted ("value changed since"). Which row shows which field: `FIELD_FACT` in
+`views/detail.ts`; a sourced field without a row gets one of its own.
+
 ## Crossed paths
 `src/encounters.ts` finds pairs at the same place with overlapping dates in the dated presence links (left out: a
 work with its own artist, two works). Shown under the explore map (`src/crossings.ts`; respects the pickers and the

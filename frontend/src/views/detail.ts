@@ -9,13 +9,14 @@ import {
 } from '../html';
 import { COLORS, createMap, showEntity, showOwnSite, showPoint } from '../map';
 import type {
-  Artwork, ArtworkSummary, Category, Country, DetailByPlural, Dimensions, Entity, EntryRef, Image, KindRef, PartDimensions, Plural, PolityLink, ProvenanceStep, Relationship,
+  Artwork, Citation, EntityType, SourceHint, ArtworkSummary, Category, Country, DetailByPlural, Dimensions, Entity, EntryRef, Image, KindRef, PartDimensions, Plural, PolityLink, ProvenanceStep, Relationship,
 } from '../types';
 import { guard, loading, showError } from './common';
 import { wireTextLinks } from '../glossary';
 import { knownPreviews } from '../previews';
 import { partNav, partsGrid, seriesLine } from '../series';
 import { STATUS_LABEL } from '../catalog';
+import { cite, resetCitations, wireCitations } from '../cite';
 
 type Fact = [label: string, value: Html | string | null | undefined | false];
 
@@ -124,11 +125,8 @@ function numberFacts(e: Artwork): Fact[] {
  * The owners in order, as recorded. A period whose end is only implied by the next acquisition is marked; a handover
  * that isn't documented as direct gets a dashed connector ("possibly other owners in between").
  */
-function provenanceSection(steps: ProvenanceStep[]): Html | null {
+function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>): Html | null {
   if (!steps.length) return null;
-  const host = (url: string) => {
-    try { return new URL(url).hostname.replace(/^www\./, ''); } catch { return 'source'; }
-  };
   return html`<section class="provenance">
     <h2>Provenance</h2>
     <p class="muted small">Owners in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between.</p>
@@ -140,11 +138,9 @@ function provenanceSection(steps: ProvenanceStep[]): Html | null {
         s.place ? html`in ${link('place', s.place.slug, s.place.name)}` : null].filter((x): x is Html => !!x);
       return html`<li class="provenance-step${i && !s.direct ? ' undocumented' : ''}">
         ${i && !s.direct ? html`<div class="provenance-gap">handover not documented</div>` : ''}
-        <div class="provenance-owner">${owner}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}</div>
+        <div class="provenance-owner">${owner}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${cite(s.sources, bibliography)}</div>
         ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
         ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
-        ${s.sources?.length ? html`<div class="provenance-sources">Sources: ${s.sources.map((u, j) => html`${j ? ', ' : ''}${/^https?:\/\//.test(u)
-          ? html`<a href="${u}" target="_blank" rel="noopener">${host(u)}</a>` : u}`)}</div>` : ''}
       </li>`;
     })}</ol>
   </section>`;
@@ -211,7 +207,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
           ...numberFacts(e),
           ['Also known as', otherNames(e)],
         ],
-        extra: [partsGrid(e), provenanceSection(e.provenance ?? [])].filter((x): x is Html => !!x),
+        extra: [partsGrid(e), provenanceSection(e.provenance ?? [], e.bibliography)].filter((x): x is Html => !!x),
       };
     }
     case 'place':
@@ -319,7 +315,41 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
  * role: "defendant", "judge"), "What it concerns" — and the label every row would repeat is left out; elsewhere a
  * participation reads "took part in The Bührle trial (defendant)".
  */
-function relationshipSections(rels: Relationship[], pageType?: string): Html {
+// Which fact row shows which field's sources (the API's `sources` keys); the first row with one of the labels.
+const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
+  artist: { birth: ['Born'], death: ['Died'] },
+  artwork: { creator: ['Artist', 'Artists'], created: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
+    dimensions: ['Dimensions'], institution: ['Collection'], inventory_number: ['Inventory no.'] },
+  institution: { founded: ['Founded'], address: ['Address', 'Location'], location: ['Address', 'Location'], place: ['Location'] },
+  person: { birth: ['Born', 'Active'], death: ['Died'], kind: ['Kind'], occupations: ['Occupations'] },
+  place: { parent: ['Part of'], location: ['Coordinates'] },
+  movement: { period: ['Period'], parent: ['Part of'] },
+  polity: { period: ['Existed'], country_codes: ['Territory today'], parent: ['Part of'] },
+  event: { period: ['Date'], kind: ['Kind'], place: ['Place'], location: ['Place'], area: ['Place'], parent: ['Part of'] },
+};
+
+/**
+ * Fact rows with their sources' markers. A sourced field without a row of its own (a place's kind) gets a row:
+ * its value when it is plain text, under its name.
+ */
+function withSources(e: Entity, facts: Fact[]): Fact[] {
+  const by = new Map<number, Citation[]>();
+  const extra: Fact[] = [];
+  for (const [field, list] of Object.entries(e.sources ?? {})) {
+    const labels = FIELD_FACT[e.type]?.[field] ?? [];
+    const i = facts.findIndex(([label]) => labels.includes(label));
+    if (i >= 0) by.set(i, [...(by.get(i) ?? []), ...list]);
+    else {
+      const value = (e as unknown as Record<string, unknown>)[field];
+      const text = typeof value === 'string' ? value : Array.isArray(value) && value.every((x) => typeof x === 'string') ? value.join(', ') : '';
+      const marker = cite(list, e.bibliography);
+      if (marker) extra.push([field.charAt(0).toUpperCase() + field.slice(1).replace(/_/g, ' '), html`${text}${marker}`]);
+    }
+  }
+  return [...facts.map(([label, value], i): Fact => (by.has(i) ? [label, html`${value || ''}${cite(by.get(i), e.bibliography)}`] : [label, value])), ...extra];
+}
+
+function relationshipSections(rels: Relationship[], pageType?: string, bibliography?: Record<string, SourceHint>): Html {
   const keyOf = (r: Relationship) => (pageType === 'event' && r.category === 'event' ? r.type : r.category);
   const groups = new Map<string, Relationship[]>();
   for (const r of rels) groups.set(keyOf(r), [...(groups.get(keyOf(r)) ?? []), r]);
@@ -336,7 +366,7 @@ function relationshipSections(rels: Relationship[], pageType?: string): Html {
       ${cat === r.type || (pageType === 'event' && cat === 'depiction') ? '' : html`<span class="rel-label">${r.label}</span>`}
       ${link(r.entity.type, r.entity.slug, r.entity.name)}${role(r) ? html` <span class="rel-role">(${r.note})</span>` : ''}
       ${r.period ? html`<span class="muted">${r.period.label}</span>` : ''}${impliedEnd(r.end_basis)}
-      ${uncertain(r.certainty)}
+      ${uncertain(r.certainty)}${cite(r.sources, bibliography)}
       ${r.note && !role(r) ? html`<div class="rel-note">${r.note}</div>` : ''}
       ${r.notes_html ? html`<div class="rel-note">${trusted(r.notes_html)}</div>` : ''}
     </li>`)}</ul>
@@ -374,9 +404,10 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
   getEntity(plural, slug)
     .then((e: DetailByPlural[Plural]) => {
       if (!current()) return;
+      resetCitations();
       const v = factsFor(e);
       document.title = `${v.title} · Art History`;
-      const facts = v.facts.filter(([, value]) => value);
+      const facts = withSources(e, v.facts.filter(([, value]) => value));
       const web = webPage(e);
       const hasMap = e.type === 'place' ? !!e.location : e.type === 'event' ? !!(e.area ?? e.location ?? e.place?.location) : e.type !== 'term' && e.type !== 'source';
       // an event on the start map: its years as the time window (the events layer follows it)
@@ -405,7 +436,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
             <section id="crossed" class="crossed" hidden></section>
-            ${relationshipSections(e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r)), e.type)}
+            ${relationshipSections(e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r)), e.type, e.bibliography)}
             ${e.type === 'source'
               ? backlinks('Cited in', 'Entries whose texts cite this source.', e.mentioned_in)
               : backlinks('Mentioned in', 'Entries whose texts link to this one.', e.mentioned_in)}
@@ -420,6 +451,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       wireLightbox(main);
       knownPreviews(e.entries);
       wireTextLinks(main, e.glossary, e.bibliography, e.entries);
+      wireCitations(main);
       if (['artist', 'person', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
       if (!hasMap) return;
 

@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Frontend: sources for facts — markers and citation popovers (no server change)
+- **What:** `src/cite.ts` + `views/detail.ts` (`withSources`, `FIELD_FACT`): markers P/L/M/D/W/T after fact rows,
+  relationships and provenance steps; popover with the citations best first (link to the exact page / Wikidata item,
+  accessed date, full reference from `bibliography`, note), outdated ones muted and without marker. Replaces the
+  provenance "Sources:" line (it rendered the new citation objects wrongly since migration 049). Popovers
+  (`glossary.ts` `show`) now work on any element; a click inside the opening element no longer closes it.
+- **Why:** owner: backend migrations 049–051 (sources per field, relationship, provenance step).
+- **Tested:** new e2e test (order, outdated, full reference, text note), provenance test with a citation; full suite 52/52;
+  checked live on la-route-de-saint-germain-pres-de-marly (W on fields, M on the Bührle step).
+- **Revert:** revert the commit.
+
 ### Sources: 33 wrong Wikidata citations from the backfill removed (migration 051)
 - **What:** 049's backfill cited every field of entries carrying a "Wikidata Q… (retrieved …)" note — also values
   changed by hand later (e.g. the Bührle works' institution and loan). 051 keeps a backfilled field citation only if

@@ -442,13 +442,45 @@ const step = (position: number, owner: { type: string; slug: string; name: strin
   position, owner, owner_label: null, owner_name: owner?.name ?? null, acquired: null, ended: null, method: 'purchase', direct: false,
   label: null, certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: null, ...extra,
 });
+/** A citation (API migration 049) with defaults for what a test doesn't care about. */
+const cited = (c: Record<string, unknown>) => ({ kind: 'wikidata', reliability: 'database', text: 'Wikidata', source: null, wikidata: null, locator: null,
+  url: null, accessed: null, note: null, outdated: false, ...c });
+
+test('sources for facts: markers by kind, best first; the citations in a popover with the full reference; outdated ones muted', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    const wd = (p: string, extra = {}) => cited({ text: `Wikidata, Q252485, ${p}`, wikidata: { item: 'Q252485', property: p, url: 'https://www.wikidata.org/wiki/Q252485' }, accessed: '2026-10-08', ...extra });
+    b.sources = {
+      created: [wd('P571'), cited({ kind: 'source', reliability: 'scholarly', text: 'Busch 1993, S. 45', source: { slug: 'busch-1993', siglum: 'Busch 1993' } })],
+      medium: [wd('P186', { outdated: true })], // changed since: no marker
+      kind: [cited({ kind: 'text', reliability: null, text: 'Label in the exhibition, 2019', note: 'seen on site' })],
+    };
+    b.bibliography = { ...(b.bibliography as object), 'busch-1993': { siglum: 'Busch 1993', citation: 'Busch, Werner: <i>Das sentimentalische Bild</i>, München 1993.' } };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const facts = page.locator('.facts');
+  const date = facts.locator('dt', { hasText: 'Date' }).locator('+ dd');
+  await expect(date.locator('.cite-ref')).toHaveText('LW'); // literature before Wikidata
+  await expect(facts.locator('dt', { hasText: 'Medium' }).locator('+ dd .cite-ref')).toHaveCount(0);
+  await expect(facts.locator('dt', { hasText: 'Type' }).locator('+ dd .cite-ref')).toHaveText('T');
+  await date.locator('.cite-ref').hover();
+  const pop = page.locator('.popover-cite');
+  await expect(pop.locator('.cite-item').first()).toContainText('Busch 1993, S. 45');
+  await expect(pop.locator('.cite-item').first()).toContainText('Das sentimentalische Bild');
+  await expect(pop.locator('.cite-item').nth(1).locator('a')).toHaveAttribute('href', 'https://www.wikidata.org/wiki/Q252485');
+  await page.mouse.move(5, 5);
+  await expect(pop).toHaveCount(0);
+  // keyboard: Tab onto the marker opens it; the popover of a marker is reachable by click too
+  await facts.locator('dt', { hasText: 'Type' }).locator('+ dd .cite-ref').click();
+  await expect(pop).toContainText('seen on site');
+});
+
 const year = (y: number, to: number | null = y) => ({ label: to === null ? `since ${y}` : to === y ? `${y}` : `${y}–${to}`, from: `${y}-01-01`, to: to === null ? null : `${to}-12-31`, from_year: y, to_year: to });
 
 test('provenance: owners in order, implied ends and undocumented handovers marked, not repeated below', async ({ page }) => {
   await patch(page, GREAT_WAVE, (b) => {
     b.provenance = [
       step(0, { type: 'person', slug: 'first-owner', name: 'First Owner' }, { method: 'inheritance', label: 'estate', period: year(1926, 1952), end_basis: 'recorded',
-        place: { slug: 'paris', name: 'Paris' }, sources: ['https://collection.example.org/item/1'] }),
+        place: { slug: 'paris', name: 'Paris' }, sources: [cited({ kind: 'source', reliability: 'institution', text: 'Some Museum, collection online', url: 'https://collection.example.org/item/1', source: { slug: 'some-museum-online', siglum: 'Some Museum, collection online' } })] }),
       step(1, null, { owner_label: 'Private collection, Zürich', period: year(1952), end_basis: 'implied' }),
       step(2, { type: 'institution', slug: 'some-museum', name: 'Some Museum' }, { method: 'gift', direct: true, period: year(1952, null), end_basis: 'ongoing' }),
     ];
@@ -461,7 +493,9 @@ test('provenance: owners in order, implied ends and undocumented handovers marke
   await expect(steps).toHaveCount(3);
   await expect(steps.nth(0)).toContainText('First Owner');
   await expect(steps.nth(0).locator('.provenance-how')).toContainText('inheritance · estate · in Paris');
-  await expect(steps.nth(0).locator('.provenance-sources a')).toHaveText('collection.example.org');
+  await expect(steps.nth(0).locator('.cite-ref')).toHaveText('M'); // a museum's database
+  await steps.nth(0).locator('.cite-ref').hover();
+  await expect(page.locator('.popover-cite .cite-body > a').first()).toHaveAttribute('href', 'https://collection.example.org/item/1');
   await expect(steps.nth(0)).not.toHaveClass(/undocumented/); // the first owner has no handover before it
   await expect(steps.nth(1)).toHaveClass(/undocumented/);
   await expect(steps.nth(1)).toContainText('Private collection, Zürich');

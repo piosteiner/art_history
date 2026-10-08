@@ -12,7 +12,7 @@ import { ROUTE_EVENT } from './router';
 import type { EntryHint, GlossaryHint, SourceHint } from './types';
 
 let popover: HTMLElement | null = null;
-let current: HTMLAnchorElement | null = null;
+let current: HTMLElement | null = null;
 let hideTimer: number | undefined;
 
 // Focus opens a popover only when it comes from the keyboard (Tab …): a map popup moves focus to its first link when a
@@ -41,7 +41,7 @@ export const hideSoon = () => {
   hideTimer = window.setTimeout(hide, 180); // time to move the pointer into the popover
 };
 
-export function show(a: HTMLAnchorElement, content: Html, kind: string) {
+export function show(a: HTMLElement, content: Html, kind: string) {
   if (current === a && popover) return;
   hide();
   current = a;
@@ -151,7 +151,7 @@ export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint>
 
 document.addEventListener('keydown', (e) => e.key === 'Escape' && hide());
 document.addEventListener('click', (e) => {
-  if (popover && !popover.contains(e.target as Node) && e.target !== current) hide();
+  if (popover && !popover.contains(e.target as Node) && !current?.contains(e.target as Node)) hide();
 });
 window.addEventListener('scroll', () => popover && hideSoon(), { passive: true });
 window.addEventListener(ROUTE_EVENT, hide);

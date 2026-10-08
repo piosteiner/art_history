@@ -182,8 +182,6 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .provenance-gap { font-size: .8rem; color: var(--muted); font-style: italic; margin-bottom: .2rem; }
 .provenance-how { font-size: .9rem; color: var(--muted); }
 .provenance-how::first-letter { text-transform: uppercase; }
-.provenance-sources { font-size: .8rem; }
-.provenance-sources a { color: var(--muted); }
 
 @media (max-width: 640px) {
   .site-header { position: static; }
@@ -539,3 +537,21 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .part-title { font-size: .9rem; line-height: 1.3; }
 :root { --c-publication: #7f6a00; }
 .cat-publication { --cat: var(--c-publication); }
+
+/* sources for facts (API 049/050): letter markers after a value, the citations in a popover */
+.cite-ref {
+  display: inline-flex; gap: 1px; margin-left: .3rem; padding: 0; border: 0; background: none; cursor: pointer;
+  vertical-align: super; line-height: 1; font: inherit; font-size: .62rem;
+}
+.cite-kind {
+  display: inline-block; min-width: 1.15em; padding: .1em .2em; border: 1px solid var(--line); border-radius: 3px;
+  color: var(--muted); font: 600 .62rem/1 var(--sans); text-align: center; letter-spacing: 0;
+}
+.cite-ref:hover .cite-kind, .cite-ref:focus-visible .cite-kind { border-color: var(--accent); color: var(--text); }
+.popover-cite { max-width: min(380px, calc(100vw - 16px)); }
+.cite-list { list-style: none; margin: .35rem 0 0; padding: 0; }
+.cite-item { display: flex; gap: .45rem; align-items: baseline; margin: .3rem 0; font-size: .86rem; line-height: 1.4; }
+.cite-item .cite-kind { flex: none; font-size: .66rem; }
+.cite-body { min-width: 0; overflow-wrap: anywhere; }
+.cite-full, .cite-note { display: block; margin-top: .15rem; color: var(--muted); font-size: .82rem; }
+.cite-item.outdated { opacity: .55; }
