@@ -54,7 +54,8 @@ const TYPES = [
     siglum: 'text', primary_source: 'bool', reliability: 'text', reading_status: 'text', read_on: 'date',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
-    title: 'name', names: 'names', parent: 'parent', part_number: 'text', parts_count: 'text', creator: 'ref:artist', attribution_label: 'text', created: 'date',
+    // title_status: is the title a translation, and whose (052)
+    title: 'name', title_status: 'text', names: 'names', parent: 'parent', part_number: 'text', parts_count: 'text', creator: 'ref:artist', attribution_label: 'text', created: 'date',
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     other_dimensions: 'dimsets',
     institution: 'ref:institution', inventory_number: 'text', web_url: 'text',  // its page at the museum (038)

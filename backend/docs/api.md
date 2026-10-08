@@ -205,6 +205,13 @@ Where each fact comes from. The detail has `sources`: `{field: [citation]}` for 
 - `outdated: true`: the value changed after the source was cited — show it muted or not at all.
 Fields without citations have no key in `sources`.
 
+### Translations: official, common or own (migration 052)
+Every `names` item has `status`: for a translation `official` (the holding institution's or a publisher's — usually
+with a source in `sources.names`), `common` (in use in the literature or on Wikidata) or `own` (the author's own),
+`null` for the other roles. Artworks also have `title_status` (list and detail): `null` = the title is in its original
+language; otherwise the title itself is such a translation (English titles of Japanese prints), its source in
+`sources.title_status`. Convention: show own translations in [square brackets]; prefer an official title.
+
 ### Numbers and loans (artworks, migration 048)
 `inventory_number` is the number of the institution where the work is now (`institution`). The detail adds `numbers`:
 further numbers in order — `[{number, label, institution: {slug, name} | null, source: {slug, name} | null}]`: the

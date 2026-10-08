@@ -1259,8 +1259,9 @@ function showValue(t, key, kind, doc, links = new Map()) {
   if (kind === 'names') {
     return html`<ul class="names-list">${v.map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)).map((n) => html`<li>
       <span${n.lang ? html` lang="${n.lang}"` : ''}>${names.hasRuby(n.text) ? raw(names.rubyHtml(n.text)) : n.text}</span>
-      ${n.lang ? html`<span class="tag">${n.lang}</span>` : ''} <span class="muted small">${n.role}</span></li>`)}</ul>`;
+      ${n.lang ? html`<span class="tag">${n.lang}</span>` : ''} <span class="muted small">${n.role === 'translation' ? `${n.status === 'own' ? 'own' : n.status || 'common'} translation` : n.role}</span></li>`)}</ul>`;
   }
+  if (key === 'title_status') return `${v === 'own' ? 'own' : v} translation${v === 'own' ? ' — shown in [square brackets]' : ''}`;
   if (kind === 'dimensions') return `${v.join(' × ')} cm${v.length === 1 ? ' (height)' : ''}${doc.dimensions_note ? ` (${doc.dimensions_note})` : ''}`;
   if (kind === 'point') return html`${v[1]}, ${v[0]} <a href="https://www.openstreetmap.org/?mlat=${v[1]}&mlon=${v[0]}#map=12/${v[1]}/${v[0]}" rel="noopener" target="_blank">map ↗</a>`;
   if (kind === 'json' || kind === 'area') return html`<pre>${JSON.stringify(v, null, 2)}</pre>`;

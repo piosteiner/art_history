@@ -20,7 +20,8 @@ const HINTS = {
     Cite: <code>[[source/busch-1993|55]]</code> → footnote "Busch 1993, S. 55."; own footnote: <code>^[Vgl. [[source/busch-1993|bes. S. 55]].]</code>`,
   'text[]': 'One per line.',
   names: html`One per line: <code>name | language | role</code> — role: original, translation, romanization or alternative
-    (the default). E.g. <code>Kanagawa-oki nami ura | ja-Latn | romanization</code> · <code>The Great Wave off Kanagawa | en | translation</code>.
+    (the default). E.g. <code>Kanagawa-oki nami ura | ja-Latn | romanization</code> · <code>The Great Wave off Kanagawa | en | translation, official</code>.
+    A translation is <b>official</b> (the holding institution’s — cite it), <b>common</b> (in use; the default) or <b>own</b> (yours).
     Furigana work here too.`,
   name: html`Furigana: <code>{神奈川|かながわ}</code> — or select kanji and press “Add reading”. Language: e.g. <code>ja</code>, <code>en</code>, <code>zh-Hant</code>.`,
   country_codes: 'Modern countries on its territory, ISO codes, one per line (e.g. CN for the Han dynasty; UA, RU, BY … for the USSR). Shown as "today …" only for entries without a place.',
@@ -39,6 +40,7 @@ const HINTS = {
 const LABELS = {
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
+  'artwork.title_status': 'Title is a translation',
   'artwork.web_url': 'Web page', 'artwork.institution': 'Institution (where it is now)', 'artwork.on_loan': 'On loan there',
   'artwork.on_loan_since': 'On loan since', 'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
   'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
@@ -63,6 +65,7 @@ const TYPE_HINTS = {
     the marker then come from Natural Earth, no point or drawing needed. Countries get it from their country code automatically.`,
   'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location. With an exact location you can leave it empty or give just the country — the city is found (and created inside the country if needed) when you save.',
   'institution.address': 'Street address, as written locally, e.g. Heimplatz 1, 8001 Zürich.',
+  'artwork.title_status': html`Empty when the title is in its original language. A translation (an English title for a Japanese print): <b>official</b> — the holding institution’s or a publisher’s (add the source with the marker on the page) · <b>common</b> — in use in the literature or on Wikidata · <b>own</b> — yours (shown in [square brackets]). The same for translations among the other names: the second menu next to “translation”.`,
   'artwork.inventory_number': 'Only together with the institution above — the number belongs to its collection, as it publishes it (Kunsthaus: BU 0099). The owner’s number, former numbers and catalogue raisonné numbers: “Further numbers” on the artwork’s page.',
   'artwork.on_loan': 'Yes: lent to (deposited at) the institution above — the owner stays someone else; record the owner (the lender) in the provenance. A permanent loan (Dauerleihgabe) is a loan too.',
   'artwork.on_loan_since': 'Since when it is there on loan, e.g. 2021.',
@@ -296,7 +299,7 @@ const METADATA = g('Metadata (JSON)…', ['metadata'], 'Free-form extras — sou
 const IDS = (...more) => ({ title: 'Identifiers', id: 'ids', rows: [...more, ['wikidata_id'], METADATA] });
 const SECTIONS = {
   artwork: [
-    { title: 'Title and names', id: 'names', rows: [['title'], ['names']] },
+    { title: 'Title and names', id: 'names', rows: [['title'], ['title_status'], ['names']] },
     { title: 'Who and when', id: 'who', rows: [['creator', 'attribution_label'], ['created'],
       g('Part of a series…', ['parent', 'part_number', 'parts_count'],
         'For a print from a series, a panel of a triptych, a leaf of an album — or for the whole itself (its number of parts).', WHOLES)] },

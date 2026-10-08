@@ -38,7 +38,8 @@ const countryFilters = (type) => ({
 const nameCols = (col, alt) => `t.${col}_lang, t.${col}_ruby, t.names, name_sort_key(t.${col}, t.${col}_ruby, t.names) AS sort_key,
   coalesce(name_alt_text(t.${col}_ruby, t.names), '') AS search_text,
   (SELECT coalesce(jsonb_agg(ruby_plain(n->>'text')), '[]'::jsonb) FROM jsonb_array_elements(t.names) n) AS ${alt}`;
-// raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, ruby_html, reading}]
+// raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, status, ruby_html, reading}]
+// status: a translation's standing — official · common · own (052); null for the other roles
 function shapeNames(row, col) {
   if (!('names' in row)) return row;
   const markup = row[`${col}_ruby`];
@@ -46,6 +47,7 @@ function shapeNames(row, col) {
   row[`${col}_ruby_html`] = markup ? names.rubyHtml(markup) : null;
   row[`${col}_reading`] = markup ? names.reading(markup) : null;
   row.names = row.names.map((n) => ({ text: names.plain(n.text), lang: n.lang || null, role: n.role,
+    status: n.role === 'translation' ? n.status || 'common' : null,
     ruby_html: names.rubyHtml(n.text), reading: names.hasRuby(n.text) ? names.reading(n.text) : null }));
   return row;
 }
@@ -78,11 +80,11 @@ const ENTITIES = {
   },
   artworks: {
     type: 'artwork', table: 'artworks', alt: 'alt_titles', name: 'title', period: 't.created',
-    list: `range_json(t.created, t.created_label) AS created, t.kind, ${mainImage('artwork_id')},
+    list: `range_json(t.created, t.created_label) AS created, t.kind, t.title_status, ${mainImage('artwork_id')},
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
            (SELECT jsonb_build_object('slug', w.slug, 'title', w.title) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
            artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')}`,
-    detail: `t.attribution_label, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
+    detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
              t.inventory_number, t.on_loan, range_json(t.on_loan_since, t.on_loan_since_label) AS on_loan_since,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('number', n.number, 'label', n.label,
                        'institution', (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = n.institution_id),

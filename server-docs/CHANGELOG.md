@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Translations: official, common or own (migration 052)
+- **What:** names entries may carry `status` (official | common | own; common is the default and not stored; only on
+  role translation — `names_valid()` re-created to say so); line syntax `text | lang | translation, own`; enum
+  `translation_status`, `artworks.title_status` (the title itself is a translation); citable fields `title_status` and
+  `names` (an official translation gets a source), `weakly_sourced` asks only where something claims to be official;
+  info check `title_translation` (a held work whose title is a common / own translation). Admin: "Title is a
+  translation" select, a second menu next to "translation" in the names editor; Wikidata sets `common` for an English
+  label over a title in another script. API: `names[].status`, `title_status`.
+- **Why:** owner: whose translation a title is matters (official vs. own).
+- **Tested:** unit tests (names), e2e 114 passing (new translations.spec); dry run on prod (rolled back).
+- **Revert:** redeploy the previous commit; as owner drop the column, the enum, the two citable fields (and their
+  citations), re-create 022's `names_valid` and 049's `quality_issues`.
+
 ### Admin: adding sources made usable — a dialog, visible markers, paste a link
 - **What:** the sources panel is a centred dialog (position: fixed — inside tables it was cut off at the right edge;
   backdrop click, Esc and "close" close it; one at a time); missing sources show an orange "+", a legend under the

@@ -13,6 +13,9 @@
 // In forms one per line: "text | lang | role" — lang and role optional ("Hokusai" alone = an alternative name).
 const GROUP = /\{([^{}|]+)\|([^{}|]+)\}/g;
 const ROLES = ['original', 'translation', 'romanization', 'alternative'];
+// A translation's standing (migration 052): official (the holding institution's, a publisher's — cite it), common (in
+// use: literature, Wikidata — the default, not stored), own (yours; shown in [brackets] by convention).
+const STATUSES = ['official', 'common', 'own'];
 const LANG = /^[a-z]{2,3}(-[A-Z][a-z]{3})?(-(?:[A-Z]{2}|\d{3}))?(-[a-z0-9]{5,8})*$/;
 
 const plain = (s) => String(s ?? '').replace(GROUP, '$1');
@@ -44,11 +47,11 @@ function normLang(tag) {
 }
 const langOk = (tag) => LANG.test(tag);
 
-// One stored name {text, lang?, role} ← a doc value: a string (an alternative name) or a mapping. Throws on errors.
+// One stored name {text, lang?, role, status?} ← a doc value: a string (an alternative name) or a mapping. Throws on errors.
 function normName(v) {
   if (typeof v === 'string') v = { text: v };
   if (!v || typeof v !== 'object' || Array.isArray(v)) throw new Error('each name must be text or {text, lang, role}');
-  const extra = Object.keys(v).filter((k) => !['text', 'lang', 'role'].includes(k));
+  const extra = Object.keys(v).filter((k) => !['text', 'lang', 'role', 'status'].includes(k));
   if (extra.length) throw new Error(`unknown key(s) ${extra.join(', ')}`);
   const text = String(v.text ?? '').trim();
   if (!text) throw new Error('a name needs a text');
@@ -56,9 +59,16 @@ function normName(v) {
   if (err) throw new Error(`"${text}": ${err}`);
   const lang = normLang(v.lang);
   if (lang && !langOk(lang)) throw new Error(`"${v.lang}" is not a language code (e.g. en, ja, ja-Latn, zh-Latn-pinyin)`);
-  const role = v.role ? String(v.role).trim().toLowerCase() : 'alternative';
+  // "translation, own" — the role with a translation's status after a comma (form lines)
+  const [roleText, statusText] = String(v.role ?? '').split(',').map((x) => x.trim().toLowerCase());
+  const role = roleText || 'alternative';
   if (!ROLES.includes(role)) throw new Error(`role "${v.role}": one of ${ROLES.join(', ')}`);
-  return lang ? { text, lang, role } : { text, role };
+  const status = String(v.status ?? statusText ?? '').trim().toLowerCase() || null;
+  if (status && !STATUSES.includes(status)) throw new Error(`"${status}": a translation is official, common or own`);
+  if (status && role !== 'translation') throw new Error(`"${text}": only a translation is official, common or own`);
+  const out = lang ? { text, lang, role } : { text, role };
+  if (status && status !== 'common') out.status = status;  // common is the default
+  return out;
 }
 
 // Form lines "text | lang | role" ↔ names.
@@ -81,8 +91,9 @@ function linesToNames(text) {
     return normName({ text: t, lang: lang || null, role: role || null });
   });
 }
-const namesToLines = (names) => (names || []).map((n) => [n.text, n.lang || (n.role !== 'alternative' ? '' : null), n.role !== 'alternative' ? n.role : null]
+const namesToLines = (names) => (names || []).map((n) => [n.text, n.lang || (n.role !== 'alternative' ? '' : null),
+  n.role !== 'alternative' ? `${n.role}${n.status && n.status !== 'common' ? `, ${n.status}` : ''}` : null]
   .filter((p) => p !== null).join(' | ')).join('\n');
 
-module.exports = { ROLES, plain, reading, hasRuby, rubyError, rubyHtml, normLang, langOk, normName, linesToNames,
+module.exports = { ROLES, STATUSES, plain, reading, hasRuby, rubyError, rubyHtml, normLang, langOk, normName, linesToNames,
   namesToLines, splitLine };

@@ -5,7 +5,7 @@
 //  textarea[data-names]   stays the form field (one "text | lang | role" per line — what the server, the drafts and the
 //                         shared working copy see) and is shown as rows; edits in the rows are written back into it,
 //                         changes arriving in it (another editor, a restored draft) redraw the rows.
-import { ROLES, plain, hasRuby, namesToLines, splitLine } from '../../names';
+import { ROLES, STATUSES, plain, hasRuby, namesToLines, splitLine } from '../../names';
 
 const GROUP = /\{([^{}|]+)\|([^{}|]+)\}/g;
 const el = (tag, props = {}, ...children) => { const e = Object.assign(document.createElement(tag), props); e.append(...children); return e; };
@@ -113,16 +113,18 @@ function initNamesEditor(ta) {
   ta.after(box);
 
   const parse = (text) => text.split('\n').map((l) => l.trim()).filter(Boolean).map((l) => {
-    const [t, lang, role] = splitLine(l);
-    return { text: t || '', lang: lang || '', role: (role || 'alternative').toLowerCase() };
+    const [t, lang, roleText] = splitLine(l);
+    const [role, status] = String(roleText || 'alternative').split(',').map((x) => x.trim().toLowerCase());
+    return { text: t || '', lang: lang || '', role: role || 'alternative', status: status || 'common' };
   });
   const write = () => {
     const list = [...rows.children].map((r) => ({ text: r.querySelector('.n-text').value.trim(), lang: r.querySelector('.n-lang').value.trim(),
-      role: r.querySelector('.n-role').value })).filter((n) => n.text);
+      role: r.querySelector('.n-role').value, status: r.querySelector('.n-role').value === 'translation' ? r.querySelector('.n-status').value : null }))
+      .filter((n) => n.text);
     const text = namesToLines(list.map((n) => ({ ...n, lang: n.lang || null })));
     if (text !== ta.value) { ta.value = text; ta.dispatchEvent(new Event('input', { bubbles: true })); }
   };
-  const row = (n = { text: '', lang: '', role: 'alternative' }) => {
+  const row = (n = { text: '', lang: '', role: 'alternative', status: 'common' }) => {
     const text = el('input', { className: 'n-text', value: n.text, placeholder: 'name' });
     text.setAttribute('aria-label', 'name');
     const lang = el('input', { className: 'n-lang lang-input', value: n.lang, placeholder: 'language', autocomplete: 'off' });
@@ -130,16 +132,22 @@ function initNamesEditor(ta) {
     lang.setAttribute('aria-label', 'language');
     const role = el('select', { className: 'n-role' }, ...ROLES.map((r) => el('option', { value: r, textContent: r, selected: r === n.role })));
     role.setAttribute('aria-label', 'role');
+    // a translation: whose — official (the institution's), common (in use), own (yours)
+    const status = el('select', { className: 'n-status', title: 'official: the holding institution’s or a publisher’s (cite it) · common: in use (literature, Wikidata) · own: your translation' },
+      ...STATUSES.map((x) => el('option', { value: x, textContent: x === 'own' ? 'own translation' : x, selected: x === (n.status || 'common') })));
+    status.setAttribute('aria-label', 'which translation');
+    status.hidden = n.role !== 'translation';
     const remove = el('button', { type: 'button', className: 'link small n-remove', textContent: 'remove' });
     const preview = el('div', { className: 'ruby-preview', hidden: true });
-    const meta = el('div', { className: 'name-meta' }, lang, role);
+    const meta = el('div', { className: 'name-meta' }, lang, role, status);
     const r = el('div', { className: 'names-row' }, text, meta);
     const [button, panel] = readingButton(text, preview, () => lang.value.trim());
     meta.append(button, remove);
     r.append(panel, preview);
     remove.addEventListener('click', () => { r.remove(); write(); });
     for (const x of [text, lang, role]) x.addEventListener('input', write);
-    role.addEventListener('change', write);
+    role.addEventListener('change', () => { status.hidden = role.value !== 'translation'; write(); });
+    status.addEventListener('change', write);
     text.addEventListener('change', write);
     return r;
   };

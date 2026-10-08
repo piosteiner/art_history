@@ -189,6 +189,10 @@ function fieldsFor(t, e) {
   const main = original ? original.text : name;
   if (main) f[nameKey] = { kind: 'text', value: main };
   if (original && nameUtil.langOk(nameUtil.normLang(original.language))) f[`${nameKey}_lang`] = { kind: 'text', value: nameUtil.normLang(original.language) };
+  // the English label as the title of a work whose title is in another script (a Japanese print): a translation, in
+  // common use (Wikidata) — official only once an institution's use is cited (052)
+  const foreignTitle = t.type === 'artwork' && !original && statements(e, 'P1476').some((s) => s.mainsnak.datavalue && s.mainsnak.datavalue.value.text);
+  if (foreignTitle && 'title_status' in t.fields) f.title_status = { kind: 'text', value: 'common' };
   if (t.fields.names === 'names') f.names = { kind: 'list', ...altNames(e, main) };
   const date = (key, ...props) => { const v = firstTime(e, ...props); if (v && key in t.fields) f[key] = { kind: 'date', value: v.value, label: v.label }; };
   const ref = (key, type, prop) => { const id = itemIds(e, prop)[0]; if (id && key in t.fields) f[key] = { kind: 'ref', ref: { type, qid: id } }; };

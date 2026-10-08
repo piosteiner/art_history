@@ -53,7 +53,7 @@ test('a Japanese title: furigana by "Add reading", language, romanization and tr
   expect(w.title_reading).toBe('かながわ沖浪裏');
   expect(w.sort_key).toBe('Kanagawa-oki nami ura');
   expect(w.alt_titles).toEqual(['Kanagawa-oki nami ura', 'Under the Wave off Kanagawa']);  // as before, plain
-  expect(w.names[1]).toEqual({ text: 'Under the Wave off Kanagawa', lang: 'en', role: 'translation', ruby_html: null, reading: null });
+  expect(w.names[1]).toEqual({ text: 'Under the Wave off Kanagawa', lang: 'en', role: 'translation', status: 'common', ruby_html: null, reading: null });  // status: 052
   expect((await api(request, '/artworks?q=kanagawa oki')).data.map((x) => x.slug)).toContain('test-kanagawa');
   expect((await api(request, '/search?q=under the wave')).data.map((x) => x.slug)).toContain('test-kanagawa');
 

@@ -28,3 +28,15 @@ test('name lines ↔ names, readings with "|" inside braces stay intact', () => 
   assert.deepEqual(n.linesToNames(n.namesToLines(list)), list);
   assert.throws(() => n.linesToNames('X | en | nickname'), /role "nickname"/);
 });
+
+test('a translation is official, common (the default, not stored) or own — written after the role', () => {
+  const list = n.linesToNames('The Great Wave off Kanagawa | en | translation, official\nDie große Welle | de | translation, common\n[Under the wave] | en | translation, own');
+  assert.deepEqual(list, [
+    { text: 'The Great Wave off Kanagawa', lang: 'en', role: 'translation', status: 'official' },
+    { text: 'Die große Welle', lang: 'de', role: 'translation' },
+    { text: '[Under the wave]', lang: 'en', role: 'translation', status: 'own' }]);
+  assert.equal(n.namesToLines(list), 'The Great Wave off Kanagawa | en | translation, official\nDie große Welle | de | translation\n[Under the wave] | en | translation, own');
+  assert.deepEqual(n.normName({ text: 'X', role: 'translation', status: 'own' }), { text: 'X', role: 'translation', status: 'own' });
+  assert.throws(() => n.linesToNames('X | ja | original, own'), /only a translation/);
+  assert.throws(() => n.linesToNames('X | en | translation, mine'), /official, common or own/);
+});
