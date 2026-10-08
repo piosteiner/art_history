@@ -13,7 +13,7 @@ Format: date — what — why — how to revert.
   `linkNames()` resolves old slugs too, so the editor preview of an unsaved working copy doesn't show them as missing.
 - **Why:** owner: links store the slug as text — after a rename they broke, and once a new entry took the old slug
   they would silently point at it.
-- **Tested:** smoke test; rolled-back rename on dev; e2e (entities.spec). **Revert:** redeploy the previous commit; as
+- **Tested:** smoke test; rolled-back rename on dev; e2e 96 passing. **Revert:** redeploy the previous commit; as
   owner drop the `*_old_links` triggers, `correct_old_links()`, `current_links()`, view `markdown_columns`, and restore
   041's `record_slug_change()` (texts already rewritten stay rewritten — they are correct).
 

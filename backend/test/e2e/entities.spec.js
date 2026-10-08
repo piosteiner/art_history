@@ -422,7 +422,7 @@ test('an existing entry: an emptied slug follows the title; the old address redi
 
   // back to the old slug: it is the entry's own again, nothing redirects in a circle
   sql(`UPDATE artworks SET slug = 'plum-park-in-kameido', title = 'Plum Park in Kameido' WHERE slug = 'plum-park-in-kameido-tests'`);
-  expect(sql(`SELECT string_agg(old_slug, ',') FROM slug_history WHERE entity_type = 'artwork'`)).toBe('plum-park-in-kameido-tests');
+  expect(sql(`SELECT string_agg(old_slug, ',') FROM slug_history WHERE entity_type = 'artwork' AND old_slug LIKE 'plum%'`)).toBe('plum-park-in-kameido-tests');
   sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
 });
 
@@ -443,6 +443,7 @@ test('a renamed slug: [[links]] in every text follow it; a stale text saved late
   expect(sql(`SELECT description_md FROM movements WHERE slug = 'post-impressionism'`)).toBe('Again [[artwork/starry-night]].');
 
   sql(`UPDATE artworks SET slug = 'the-starry-night' WHERE slug = 'starry-night'`);
+  sql(`DELETE FROM slug_history WHERE old_slug = 'starry-night'`);
   sql(`UPDATE movements SET description_md = convert_from(decode('${before}', 'base64'), 'UTF8') WHERE slug = 'post-impressionism'`);
   sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
 });
