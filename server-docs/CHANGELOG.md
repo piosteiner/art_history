@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Events: a new entry type (migrations 046, 047)
+- **What:** enum value `event` (046); table `events` (kind, parent_id, period, place_id, location, area, names,
+  description, Wikidata, images via `images.event_id`), triggers like every entity table; event branches in
+  `entity_index`, `content_links`, `markdown_columns`, `entry_previews`, `dup_facts` (+ `dup_score` distance rule),
+  `site_geo`, `quality_issues` (+ check `event_without_place`), `entity_exists`/`entity_id`/`entity_home_place`;
+  `images.entity_type`/`entity_id` re-expressed with `ALTER COLUMN … SET EXPRESSION`. Relationship types: `depicts`
+  widened to events, new `participated_in` (role in label) and `concerns`. Admin: Events in the menu, form (kind
+  suggestions, map picker), `[[event/…]]` links, Wikidata (P585/P580/P582, P276, P625, P361; P710 participants,
+  P921 concerns; events recognised as targets of "depicts"). API `/v1/events`, `/v1/map/events`, events on an
+  entity's map; previews.
+- **Why:** owner: events such as the Great Fire of Meireki (depicted on a handscroll) and the Bührle trial (Lausanne,
+  1970) as context — the glossary has no time or place.
+- **Tested:** smoke test; e2e 106 passing (new events.spec). **Revert:** redeploy the previous commit; as owner drop
+  table `events` (CASCADE drops `images.event_id`), restore the views/functions from 036/040/042/043/044/045 and the
+  two relationship types (delete `participated_in`, `concerns`; `depicts` without event). The enum value stays
+  (Postgres can't drop one) — harmless.
+
 ### Duplicates: different inventory numbers in one collection count against (migration 045); Vienna cleaned up
 - **What:** `dup_score()` re-created with one more rule: same institution, two different inventory numbers → −100.
   Data (prod, by hand, source `sql`): Austria created (country AT, outline from Natural Earth); Vienna moved into it;

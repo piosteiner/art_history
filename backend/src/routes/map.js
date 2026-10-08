@@ -4,6 +4,7 @@
 // GET /v1/map/presence?from=&to=&types=   who was physically where, overlapping the window (timeline slider)
 // GET /v1/map/<plural>/:slug              one entity's places + its travel route (physical presence only)
 // GET /v1/map/sites                       institutions and immovable artworks with an exact location of their own
+// GET /v1/map/events                      events: their area, spot or place (047)
 //
 // A location is a place, an institution (its own point, else its city's) or an immovable artwork (view site_geo,
 // migration 034). Features carry the city it counts for as "place", and the institution / artwork when there is one:
@@ -26,7 +27,8 @@ const SITE_JOINS = `
     LEFT JOIN places c ON c.id = s.place_id`;
 const SITE_PROPS = `'place', CASE WHEN c.id IS NOT NULL THEN jsonb_build_object('slug', c.slug, 'name', c.name) END,
         'institution', CASE WHEN r.object_type = 'institution' THEN jsonb_build_object('slug', o.slug, 'name', o.name) END,
-        'artwork', CASE WHEN r.object_type = 'artwork' THEN jsonb_build_object('slug', o.slug, 'name', o.name) END`;
+        'artwork', CASE WHEN r.object_type = 'artwork' THEN jsonb_build_object('slug', o.slug, 'name', o.name) END,
+        'event', CASE WHEN r.object_type = 'event' THEN jsonb_build_object('slug', o.slug, 'name', o.name) END`;
 
 router.get('/places', async (req, res) => {
   const window = yearWindowRange(req.query);
@@ -93,7 +95,8 @@ router.get('/:plural/:slug', async (req, res) => {
       WHERE r.subject_type = $1 AND r.subject_id = $2 AND s.marker IS NOT NULL
         AND (r.object_type = 'place'                                              -- every link to a place, as before
              OR r.object_type = 'institution' AND rt.is_physical_presence          -- was at an institution
-             OR r.object_type = 'artwork' AND r.relationship_type = 'depicts')     -- shows an immovable work
+             OR r.object_type = 'artwork' AND r.relationship_type = 'depicts'      -- shows an immovable work
+             OR r.object_type = 'event')                                            -- took part in, depicts (047)
     )
     SELECT
       coalesce(jsonb_agg(jsonb_build_object(
@@ -131,6 +134,20 @@ router.get('/sites', async (req, res) => {
       SELECT 'artwork', a.slug, a.title, a.kind, NULL, coalesce(a.area, a.location), entity_home_place('artwork', a.id)
       FROM artworks a WHERE a.location IS NOT NULL OR a.area IS NOT NULL
     ) x ORDER BY x.name`);
+  res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
+});
+
+// Events (migration 047): the area it covered, else its exact spot, else the marker of its place — with the period,
+// so a client can filter the map by time.
+router.get('/events', async (req, res) => {
+  const { rows } = await apiPool.query(`
+    SELECT jsonb_build_object('type', 'Feature', 'geometry', ST_AsGeoJSON(coalesce(v.area, v.location, g.marker))::jsonb,
+      'properties', jsonb_build_object('type', 'event', 'slug', v.slug, 'name', v.name, 'kind', v.kind,
+        'period', range_json(v.period, v.period_label), 'precision', CASE WHEN v.area IS NOT NULL THEN 'area' WHEN v.location IS NOT NULL THEN 'spot' ELSE 'place' END,
+        'place', (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = v.place_id))) AS feature
+    FROM events v LEFT JOIN place_geo g ON g.id = v.place_id
+    WHERE coalesce(v.area, v.location, g.marker) IS NOT NULL
+    ORDER BY lower(v.period) NULLS LAST, v.name`);
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
 

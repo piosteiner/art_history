@@ -8,7 +8,7 @@
 //                           outside services several times per search — the image search).
 // The header's "Search everything": a dropdown with the best matches of every type (/lookup); Enter = the full page.
 const FOLDER = { artist: 'artists', artwork: 'artworks', institution: 'institutions', person: 'people', movement: 'movements',
-  place: 'places', polity: 'polities', term: 'glossary', source: 'bibliography' };
+  place: 'places', polity: 'polities', term: 'glossary', source: 'bibliography', event: 'events' };
 
 function liveForm(form) {
   const typing = form.dataset.live !== 'change';

@@ -274,6 +274,18 @@ parts. `part_sort` is a STORED generated column — the first number in `part_nu
 trigger function `no_parent_cycle()` (dynamic SQL with a recursive CTE and `CYCLE … SET … USING`) refuses loops on
 every table with `parent_id`.
 
+## Events (migrations 046, 047)
+A type of its own rather than glossary terms: a term is a concept without time and place; an event happened at a time
+(`period`, fuzzy like every date, GiST-indexed for "what happened while …"), in a place (`place_id`, the city; plus an
+optional exact `location` or covered `area`, like immovable artworks), possibly `parent_id` → a larger event
+(`no_parent_cycle()` as for series and movements). Everything else is relationships: `depicts` (artwork → event, an
+existing type widened), `participated_in` (artist/person/institution → event, the role in `label`), `concerns` (event →
+anything it is about). Adding a type meant: the enum value in its own migration (046 — a new enum value can't be used
+in the transaction that adds it), then the table and an event branch in every view over all types (`entity_index`,
+`content_links`, `entry_previews`, `dup_facts`, `site_geo`, `quality_issues`), the CASE functions (`entity_exists`,
+`entity_id`, `entity_home_place`), the per-table triggers, a sixth image arm — the generated `images.entity_type` /
+`entity_id` changed in place with `ALTER COLUMN … SET EXPRESSION` (PostgreSQL 17+).
+
 ## Duplicates (migration 044)
 Four layers, all in SQL so the create form, the live box and the quality page agree:
 1. **Hard rules** — partial unique indexes: `artworks (current_institution_id, lower(btrim(inventory_number)))` (an

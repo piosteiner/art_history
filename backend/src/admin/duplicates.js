@@ -98,6 +98,7 @@ const MOVED_LABELS = {
   'artworks.parent_id': 'parts of the series', 'images.artwork_id': 'images', 'images.artist_id': 'images', 'images.person_id': 'images',
   'images.institution_id': 'images', 'images.glossary_id': 'images', 'institutions.place_id': 'institutions (in this place)',
   'places.parent_id': 'places inside it', 'movements.parent_id': 'sub-movements', 'polities.parent_id': 'polities inside it',
+  'events.parent_id': 'parts of the event', 'events.place_id': 'events (that happened here)', 'images.event_id': 'images',
   'provenance.artwork_id': 'provenance steps', 'provenance.owner_artist_id': 'provenance steps (as owner)',
   'provenance.owner_person_id': 'provenance steps (as owner)', 'provenance.owner_institution_id': 'provenance steps (as owner)',
   'provenance.owner_place_id': 'provenance steps (as owner)', 'provenance.location_id': 'provenance steps (as place)',

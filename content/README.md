@@ -54,6 +54,7 @@ Historical dates are fuzzy, so each one is a range at the precision you know. Th
 | artists | `name`*, `sort_name`, `names`, `birth`, `death`, `biography_md` |
 | people | `name`*, `kind` (person, family, dynasty, religious order, guild …), `occupations` (list: poet, monk, emperor …), `birth`, `death`, `active` (groups), `names`, `description_md` — everyone relevant who isn't an artist (whoever made art is an artist); "patron" is a role: `commissioned` / `patron_of` relationships. Older files in `patrons/` (with `notes_md`) still import |
 | institutions | `name`*, `kind` (museum, academy, theatre, temple …), `founded`, `place` (the city, place slug), `location` `[lon, lat]` (the exact spot), `address`, `website_url`, `names`, `description_md` |
+| events | `name`*, `kind` (fire, trial, exhibition, auction …), `parent` (event slug: part of a larger event), `period`, `place` (place slug: the city), `location` `[lon, lat]` (the exact spot), `area` (GeoJSON: the area it covered), `names`, `description_md` |
 | glossary | `name`* (the term), `category` (technique, architecture, material, iconography, style, format, other), `definition` (1–2 sentences, plain text, max. 500), `names`, `description_md` |
 | bibliography | `name`* (title), `kind` (book, catalogue, chapter, article, lexicon_entry, catalogue_entry, web, video, archival, other), `subtitle`, `authors`/`editors`/`compilers` (lists, "Surname, Given"), `container`, `container_editors`, `volume`, `issue`, `issue_date`, `volumes_total`, `edition`, `original_year`, `series`, `thesis`, `place`, `publisher`, `year`, `pages`, `pages_are_columns`, `catalogue_number`, `exhibition`, `url`, `accessed`, `uploader`, `uploaded`, `date_text`, `archive`, `shelfmark`, `isbn`, `doi`, `siglum` (override), `primary_source`, `reading_status` (to_read, reading, read), `read_on`, `description_md` (notes) |
 | artworks | `title`*, `parent` (the series / album / triptych it is part of, artwork slug), `part_number` (21, left panel …), `parts_count` (of a whole), `creator` (artist slug), `attribution_label`, `created`, `kind`, `medium` (readable, e.g. Oil on canvas), `materials` (list), `dimensions` (`[height]`, `[height, width]` or `[height, width, depth]` in cm), `dimensions_note`, `other_dimensions` (further parts: `[{part: mount, cm: [180, 95.5]}]`), `location` / `area` (only works that don't move: buildings, gardens, bridges …), `institution` (current holder, slug), `inventory_number`, `web_url` (its page at the museum / collection — linked on the site, above all when there is no free image), `names`, `description_md` |
@@ -133,7 +134,7 @@ Listed in the file of the **subject** — the entity the sentence starts with ("
 ```yaml
 relationships:
   - type: lived_in              # a code from the vocabulary — GET /v1/vocabulary
-    to: place/arles             # <type>/<slug>: artist, artwork, institution, person, movement, place, polity
+    to: place/arles             # <type>/<slug>: artist, artwork, institution, person, movement, place, polity, event
     period: 1888-02-20/1889-05-08
     label: the Yellow House     # short qualifier shown next to the link
     certainty: attested         # attested (default) · probable · possible · disputed
@@ -146,7 +147,9 @@ written in only one of the two files.
 
 Only **physical presence** types (`born_in`, `died_in`, `lived_in`, `worked_in`, `visited`, `created_in`, `located_in`) are drawn
 as travel routes on the map. Use `influenced_by_culture_of` for places someone was influenced by but never visited,
-and `depicts` (artwork → place) when a place is what the artwork shows.
+and `depicts` (artwork → place) when a place is what the artwork shows — or an event (artwork → event).
+Events: `participated_in` (artist / person / institution → event; the role in `label`: defendant, judge, lender …),
+`concerns` (event → what it is about).
 
 An institution's `place` is where it is **now**. If it moved, add every location as a `located_in` relationship
 with a `period` — the current one open-ended (`period: 1808/`), so the map can draw the full route

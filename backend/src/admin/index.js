@@ -153,6 +153,7 @@ const RULES = {
   artworks_inventory_needs_institution: 'An inventory number belongs to a collection: set the institution (current holder) too, or leave the number empty.',
   polities_country_codes_check: 'Country codes: two capital letters each (ISO 3166, e.g. CN, UA), one per line.',
   polities_check: 'A polity cannot be part of itself.',
+  events_check: 'An event cannot be part of itself.',
   provenance_check: 'Provenance: one owner — an entry or a description, not both kinds of entry at once.',
   provenance_check1: 'Provenance: pick an owner or describe them.',
   provenance_check2: 'Provenance: the end lies before the acquisition.',
@@ -764,6 +765,11 @@ async function formContext(t, id = null) {
   if (t.type === 'artwork') {
     suggestions.kind = [...new Set([...suggestions.kind, 'building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate',
       'monument', 'tower', 'mural', 'series', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'])].sort();
+  }
+  // kinds of events, offered before they are used (migration 047)
+  if (t.type === 'event') {
+    suggestions.kind = [...new Set([...suggestions.kind, 'fire', 'earthquake', 'flood', 'war', 'battle', 'siege', 'revolution', 'trial',
+      'exhibition', 'auction', 'sale', 'theft', 'restitution', 'festival', 'ceremony', 'coronation', 'founding', 'treaty', 'journey'])].sort();
   }
   // lists whose terms should repeat exactly (the API filters by them): show what is already in use
   const used = {};

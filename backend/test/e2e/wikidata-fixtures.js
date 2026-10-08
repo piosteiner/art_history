@@ -57,6 +57,11 @@ const ENTITIES = {
       P625: [stmt({ latitude: 47.37050, longitude: 8.54830, globe: 'http://www.wikidata.org/entity/Q2' })] } },
   Q122: { id: 'Q122', labels: labels('Hans Wendland Test'), descriptions: { en: { value: 'German art dealer' } },  // a person (not an artist)
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1880-01-01T00:00:00Z', 9))], P18: [stmt('Hans Adolf Wendland.jpg')] } },
+  Q123: { id: 'Q123', labels: labels('Great Fire of Meireki', { ja: '明暦の大火' }), descriptions: { en: { value: 'fire in Edo, 1657' } },
+    claims: { P31: [stmt(item('Q168983'))], P580: [stmt(time('+1657-03-02T00:00:00Z', 11))], P582: [stmt(time('+1657-03-04T00:00:00Z', 11))],
+      P276: [stmt(item('Q124'))], P710: [stmt(item('Q100'))] } },
+  Q124: { id: 'Q124', labels: labels('Edo'), descriptions: { en: { value: 'former name of Tokyo' } },
+    claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 35.6895, longitude: 139.6917, globe: 'http://www.wikidata.org/entity/Q2' })] } },
   Q105: { id: 'Q105', labels: labels('Musée Marmottan Monet'), descriptions: { en: { value: 'art museum in Paris' } }, claims: { P31: [stmt(item('Q207694'))] } },
 };
 

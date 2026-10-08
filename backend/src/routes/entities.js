@@ -183,6 +183,25 @@ const ENTITIES = {
     filters: { kind: 't.kind::text = $', status: 't.reading_status::text = $', author: "t.authors::text ILIKE '%' || $ || '%'" },
     order: "lower(f_unaccent(coalesce(t.authors[1], t.name))), t.year",
   },
+  // events (migration 047): when, where (city; exact spot or area), part of a larger event, its parts
+  events: {
+    type: 'event', table: 'events', alt: 'alt_names', name: 'name', period: 't.period',
+    list: `t.kind, range_json(t.period, t.period_label) AS period, ${mainImage('event_id')},
+           (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = t.place_id) AS place,
+           (SELECT jsonb_build_object('slug', w.slug, 'name', w.name) FROM events w WHERE w.id = t.parent_id) AS part_of,
+           ST_AsGeoJSON(coalesce(t.location, ST_PointOnSurface(t.area::geometry)::geography))::jsonb AS location, ${countryCols('event')}`,
+    detail: `t.kind, range_json(t.period, t.period_label) AS period, t.description_md, ${allImages('event_id')},
+             ST_AsGeoJSON(t.location)::jsonb AS location, ST_AsGeoJSON(t.area)::jsonb AS area,
+             (SELECT jsonb_build_object('slug', p.slug, 'name', p.name, 'location', (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = p.id))
+                FROM places p WHERE p.id = t.place_id) AS place,
+             (SELECT jsonb_build_object('slug', w.slug, 'name', w.name) FROM events w WHERE w.id = t.parent_id) AS part_of,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', c.slug, 'name', c.name, 'kind', c.kind, 'period', range_json(c.period, c.period_label))
+                ORDER BY lower(c.period) NULLS LAST, c.name), '[]'::jsonb) FROM events c WHERE c.parent_id = t.id) AS parts,
+             ${countryCols('event')}`,
+    md: ['description_md'],
+    filters: { kind: 't.kind = $', place: "t.place_id = entity_id('place', $)", part_of: "t.parent_id = entity_id('event', $)", ...countryFilters('event') },
+    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.name_ruby, t.names)',
+  },
   polities: {
     type: 'polity', table: 'polities', alt: 'alt_names', name: 'name', period: 't.period',
     list: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes',
@@ -348,7 +367,7 @@ const router = express.Router();
 // GET /v1/previews?refs=artist/paul-gauguin,place/arles,term/contrapposto — previews of any entries (max. 100), for
 // hover popovers on every internal link of a page (fields, relationships, lists, map popups): one request per page.
 // Entries that don't exist are left out. Same shape as a detail's `entries`.
-const PREVIEW_TYPES = new Set(['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source']);
+const PREVIEW_TYPES = new Set(['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'event', 'term', 'source']);
 router.get('/previews', async (req, res) => {
   const refs = [...new Set(String(req.query.refs || '').split(',').map((r) => r.trim()).filter(Boolean))];
   if (refs.length > 100) throw badRequest('at most 100 refs');

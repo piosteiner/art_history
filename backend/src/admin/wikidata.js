@@ -151,6 +151,11 @@ function placeKind(e) {
 }
 const isInstitutionLike = (e) => itemIds(e, 'P31').some((id) => ['Q33506', 'Q207694', 'Q3918', 'Q2385804', 'Q1664720', 'Q43229', 'Q16970',
   'Q1030034', 'Q7075', 'Q4830453', 'Q163740', 'Q1497649', 'Q18810687', 'Q2668072'].includes(id));
+// An event (migration 047): a point in time (P585), or an instance of a common kind of event — occurrence, event,
+// disaster, fire, earthquake, war, battle, trial, legal case, exhibition, auction, festival, ceremony.
+const EVENT_CLASSES = ['Q1190554', 'Q1656682', 'Q3839081', 'Q168983', 'Q7944', 'Q198', 'Q178561', 'Q8016240', 'Q2334719',
+  'Q464980', 'Q2761147', 'Q132241', 'Q2627975', 'Q645883', 'Q1150070', 'Q107637', 'Q3241045'];
+const isEventLike = (e) => statements(e, 'P585').length > 0 || itemIds(e, 'P31').some((id) => EVENT_CLASSES.includes(id));
 const isMovementLike = (e) => itemIds(e, 'P31').some((id) => ['Q968159', 'Q1792644', 'Q4692', 'Q2198855', 'Q17537576'].includes(id));
 
 // The settlement among "located in" (P131) items, walking upwards: Kreis 1 → Zürich. Several values at one level
@@ -233,6 +238,18 @@ function fieldsFor(t, e) {
     if (start) f.period = { kind: 'date', value: end ? `${start.value.split('/')[0]}/${end.value.split('/').pop()}` : start.value, label: null };
     ref('parent', 'movement', 'P361');
   }
+  if (t.type === 'event') {
+    // when: a point in time (P585), else start/end (P580/P582); where: location (P276), else "located in" (P131) —
+    // resolved upwards to the settlement like an institution's place; the spot itself (P625); part of (P361)
+    const at = firstTime(e, 'P585');
+    const start = at || firstTime(e, 'P580', 'P571'); const end = at ? null : firstTime(e, 'P582', 'P576');
+    if (start) f.period = { kind: 'date', value: end ? `${start.value.split('/')[0]}/${end.value.split('/').pop()}` : start.value, label: null };
+    const where = itemIds(e, 'P276').length ? itemIds(e, 'P276') : itemIds(e, 'P131');
+    if (where.length) f.place = { kind: 'ref', ref: { type: 'place', qid: where[0] }, p131: where };
+    const c = coords(e);
+    if (c) f.location = { kind: 'point', value: c };
+    ref('parent', 'event', 'P361');
+  }
   if (t.type === 'artwork') {
     date('created', 'P571');
     ref('creator', 'artist', 'P170');
@@ -275,6 +292,8 @@ const REL_PROPS = {
   artwork: [['P1071', 'created_in'], ['P180', 'depicts'], ['P180', 'depicts_person'], ['P135', 'associated_with'], ['P88', '~commissioned'],  // P127 owned by: ownership is the provenance (031)
     ['P495', 'created_in_polity']],  // country of origin
   movement: [['P495', 'active_in']],
+  // participants (P710) took part in it; "main subject" (P921) is what it concerns
+  event: [['P710', '~participated_in'], ['P921', 'concerns']],
   polity: [],
   term: [],
   institution: [],
@@ -349,6 +368,7 @@ function targetType(allowed, e) {
   if (allowed.length === 1) return allowed[0];
   if (isInstitutionLike(e) && allowed.includes('institution')) return 'institution';
   if (isMovementLike(e) && allowed.includes('movement')) return 'movement';
+  if (isEventLike(e) && allowed.includes('event')) return 'event';
   if (coords(e) && allowed.includes('place')) return 'place';
   return null;
 }
@@ -361,6 +381,10 @@ function newEntryDoc(type, e) {
   if (type === 'artist') { const b = firstTime(e, 'P569'); const d = firstTime(e, 'P570'); if (b) doc.birth = b.value; if (d) doc.death = d.value; }
   if (type === 'movement') { const s = firstTime(e, 'P580', 'P571'); if (s) doc.period = s.value; doc.kind = 'movement'; }
   if (type === 'institution') { const f = firstTime(e, 'P571'); if (f) doc.founded = f.value; }
+  if (type === 'event') {
+    const at = firstTime(e, 'P585', 'P580'); if (at) doc.period = at.value;
+    const c = coords(e); if (c) doc.location = c;
+  }
   if (type === 'polity') {
     const s = firstTime(e, 'P571', 'P580'); const x = firstTime(e, 'P576', 'P582');
     if (s) doc.period = `${s.value.split('/')[0]}/${x ? x.value.split('/').pop() : ''}`;

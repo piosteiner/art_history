@@ -51,6 +51,8 @@ const LABELS = {
   'source.uploader': 'Uploaded by', 'source.uploaded': 'Upload date', 'source.date_text': 'Date', 'source.archive': 'Archive / collection',
   'source.shelfmark': 'Shelfmark (Signatur)', 'source.siglum': 'Short reference (override)', 'source.primary_source': 'Primary source (Quelle)',
   'source.reading_status': 'Reading status', 'source.read_on': 'Finished reading', 'source.description_md': 'Notes', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
+  'event.kind': 'Kind of event', 'event.parent': 'Part of', 'event.period': 'When', 'event.place': 'Place (city or region)',
+  'event.location': 'Exact spot', 'event.area': 'Area it covered',
   'polity.kind': 'Kind of polity', 'person.kind': 'Kind (person or group)', 'movement.kind': 'Kind',
 };
 const TYPE_HINTS = {
@@ -72,6 +74,13 @@ const TYPE_HINTS = {
   'institution.kind': 'museum · academy · temple · church · gallery · library … — pick a term from the list',
   'person.kind': 'person — or a group: family · dynasty · religious order · guild',
   'polity.kind': 'empire · kingdom · dynasty · republic · shogunate …',
+  'event.kind': 'fire · earthquake · war · battle · trial · exhibition · auction · festival · founding … — pick a term from the list',
+  'event.parent': 'A larger event it belongs to (a battle in a war, a session of a trial). Empty = none.',
+  'event.period': html`As exact as known: <code>1657-03-02/1657-03-04</code> (2–4 March 1657) · <code>1970</code> · <code>c. 1600</code>. The label shows it as written.`,
+  'event.place': 'Where it happened: the city (Edo, Lausanne) — or a region or country for something larger.',
+  'event.location': 'Only if there is one spot: the building of a trial, an exhibition or an auction.',
+  'event.area': 'Optional: the area it covered — the burned districts, a battlefield.',
+  'event.description_md': html`What happened and why it matters here. Link people, works and places with <code>[[type/slug]]</code>; who took part (and as what), what it depicts or concerns: relationships below.`,
   'term.category': 'technique · architecture · material · iconography · style · format · other — what the glossary is browsed by',
   'term.definition': 'One or two sentences (max. 500 characters): shown as a tooltip wherever a text links the term, and in the A–Z list. Plain text.',
   'term.description_md': html`The full explanation (Markdown). Link other terms with <code>[[slug]]</code> or <code>[[slug|own words]]</code>, other entries with <code>[[type/slug]]</code>.`,
@@ -328,6 +337,13 @@ const SECTIONS = {
   polity: [
     { title: 'Name', id: 'names', rows: [['name'], ['names']] },
     { title: 'Kind and period', id: 'kind', rows: [['kind', 'parent'], ['period'], ['country_codes']] },
+    { title: 'Description', id: 'text', rows: [['description_md']] },
+    IDS(),
+  ],
+  event: [
+    { title: 'Name', id: 'names', rows: [['name'], ['names']] },
+    { title: 'What and when', id: 'when', rows: [['kind', 'parent'], ['period']] },
+    { title: 'Where', id: 'where', rows: [['place'], g('Exact spot or area on the map…', ['location', 'area'], 'For the map: where exactly, or the area it covered.')] },
     { title: 'Description', id: 'text', rows: [['description_md']] },
     IDS(),
   ],

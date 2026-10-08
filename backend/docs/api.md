@@ -18,7 +18,7 @@ window inside its century.
 
 ## Entities
 Types (URL segment → `type`): `artists` → artist, `artworks` → artwork, `places` → place, `movements` → movement,
-`institutions` → institution, `people` → person, `polities` → polity. (`/v1/patrons…` — before migration 024 — answers
+`institutions` → institution, `people` → person, `polities` → polity, `events` → event (since 2026-10-08). (`/v1/patrons…` — before migration 024 — answers
 with a 301 to `/v1/people…`, also under `/map/` and `/graph/`.)
 
 ### `GET /v1/<type>` — list
@@ -66,6 +66,19 @@ album. A part: `part_of` (the chain of wholes upwards, nearest first: `[{slug, t
 `parts_count` (how many parts it has, may be `null`) and `parts` in order (`[{slug, title, part_number, kind, created,
 image_url, parts}]` — `parts` > 0 for a sub-series). Lists carry `part_of: {slug, title}` and `part_number`; filter
 `?part_of=<slug>`. Relationship `published` (person/institution → artwork, category `publication`): the publisher.
+
+### Events (`/v1/events`, type `event`, migration 047)
+Something that happened: the Great Fire of Meireki, a trial, an auction, an exhibition. List and detail carry `kind`
+(fire, trial, exhibition, auction …), `period` (a date range like every other: `{from, to, label, from_year, to_year}`),
+`place` (`{slug, name}` — the city; in the detail with its `location` marker), `part_of` (`{slug, name}` of the larger
+event or `null`), `country`/`polities` (from the place), `image_url`; the list also a `location` point (exact spot,
+else a point inside the area, else `null`). The detail adds `description_html`, `images`, `location` (GeoJSON point or
+`null`), `area` (GeoJSON MultiPolygon or `null` — e.g. the burned districts), `parts` (`[{slug, name, kind, period}]`,
+in time order) and `relationships`. Filters: `kind`, `place` (place slug), `part_of` (event slug), `country`,
+`from`/`to` (overlapping the window). Sorted by date.
+Relationships: an artwork `depicts` an event; artists, people, institutions `participated_in` it (the role —
+defendant, judge, lender, organiser — in the relationship's `label`); an event `concerns` artists, artworks,
+institutions, people, movements, places, polities. Links in texts: `[[event/slug]]`.
 
 ### Bibliography (`/v1/bibliography`, type `source`)
 Sources cited in texts, formatted after the guide of the Kunsthistorisches Institut, UZH: `siglum` (the short reference,
@@ -215,6 +228,10 @@ subject_types, object_types, description, derived`. `category` is meant for map/
 - `GET /v1/map/presence?from=1888&to=1889[&types=artist,person,artwork]` — who/what was physically where during
   the window (for a timeline slider); `institution` may be added to `types` (earlier locations via `located_in`). Undated links are left out.
 - `GET /v1/map/places[?from=&to=]` — every place with `presence_count` and `association_count` (in the window).
+- `GET /v1/map/events` — every event with a position: its area, else its exact spot, else its place's marker
+  (`properties.precision`: `area` · `spot` · `place`), with `slug`, `name`, `kind`, `period`, `place`. An entity's own
+  map (`/v1/map/<type>/:slug`) includes the events it took part in or depicts, as `association` stops with
+  `properties.event`.
 
 ## Graph
 `GET /v1/graph/<type>/:slug?depth=2&types=influenced_by,student_of` — the network around an entity, following
