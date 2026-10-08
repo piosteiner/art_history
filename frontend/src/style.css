@@ -59,6 +59,9 @@ h2 { font-size: 1.25rem; margin: 1.6em 0 .5em; }
 }
 .brand { font: 600 1.25rem var(--serif); color: var(--text); text-decoration: none; }
 .nav { display: flex; flex-wrap: wrap; gap: .2rem .9rem; font-size: .95rem; }
+.nav .nav-group { display: flex; flex-wrap: wrap; gap: .2rem .9rem; }
+.nav .nav-group + .nav-group { border-left: 1px solid var(--line); padding-left: .9rem; }
+@media (max-width: 1000px) { .nav .nav-group + .nav-group { border-left: 0; padding-left: 0; } } /* groups may wrap: no lines */
 .nav a { color: var(--muted); text-decoration: none; padding: .15rem 0; border-bottom: 2px solid transparent; }
 .nav a:hover, .nav a.current { color: var(--text); border-bottom-color: var(--accent); }
 .search { margin-left: auto; position: relative; flex: 0 1 300px; min-width: 200px; }

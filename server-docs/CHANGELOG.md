@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Frontend: the menu in the admin panel's groups (no server change)
+- **What:** Explore · Network | Artworks · Artists · People · Institutions | Events · Movements · Places · Polities |
+  Glossary · Bibliography (`src/main.ts` NAV, `span.nav-group` with a dividing line; no lines below 1000 px, where groups wrap).
+- **Why:** owner: the site should follow the admin menu's structure.
+- **Revert:** revert the commit.
+
 ### Admin: the menu grouped — collection · context · reference · tools
 - **What:** `html.js` menu in groups (Artworks, Artists, People, Institutions | Events, Movements, Places, Polities |
   Glossary, Bibliography | Quality, History on the right, muted), thin lines between groups; the menu has its own row

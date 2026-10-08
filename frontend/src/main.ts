@@ -11,11 +11,17 @@ import { graph } from './views/graph';
 import { list } from './views/list';
 import { privacy } from './views/privacy';
 
-const NAV: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'events', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
+// The same groups as the admin panel's menu: the collection · context (when and where) · reference
+const NAV: { title: string; plurals: Plural[] }[] = [
+  { title: 'The collection: works and who made, owned and kept them', plurals: ['artworks', 'artists', 'people', 'institutions'] },
+  { title: 'Context: when and where', plurals: ['events', 'movements', 'places', 'polities'] },
+  { title: 'Reference', plurals: ['glossary', 'bibliography'] },
+];
 
 const main = document.getElementById('app')!;
 const nav = document.getElementById('nav')!;
-render(nav, html`<a href="/">Explore</a><a href="/graph">Network</a>${NAV.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}`);
+render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph">Network</a></span>
+  ${NAV.map((g) => html`<span class="nav-group" title="${g.title}">${g.plurals.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}</span>`)}`);
 mountSearch(document.getElementById('search')!);
 watchLinks(main); // previews on the internal links of every page
 // switching between light and dark re-renders the page so the maps load the matching base map
