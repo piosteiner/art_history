@@ -1,6 +1,6 @@
 // The bibliography form shows the fields a kind of source uses (the rest stays in the form, hidden — switching the
 // kind back loses nothing). Which fields: the citation patterns of the KHIST guide (src/bibliography.js).
-const COMMON = ['kind', 'name', 'subtitle', 'names', 'authors', 'year', 'url', 'isbn', 'doi', 'siglum', 'primary_source',
+const COMMON = ['kind', 'name', 'subtitle', 'names', 'authors', 'year', 'url', 'isbn', 'doi', 'siglum', 'primary_source', 'reliability',
   'reading_status', 'read_on', 'description_md', 'wikidata_id', 'metadata'];
 const BY_KIND = {
   book: ['editors', 'compilers', 'edition', 'original_year', 'series', 'volumes_total', 'thesis', 'place', 'publisher'],

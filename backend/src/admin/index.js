@@ -30,6 +30,7 @@ const crypto = require('crypto');
 const images = require('./images');
 const provenance = require('./provenance');
 const numbers = require('./numbers');
+const citations = require('./citations');
 const imagesearch = require('./imagesearch');
 const placefinder = require('./placefinder');
 const bibliography = require('../bibliography');
@@ -64,6 +65,7 @@ const DONE = {
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
   'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
+  'cite-added': 'Source added.', 'cite-deleted': 'Source removed.',
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
 };
@@ -238,6 +240,8 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
                             rt.label, '→', coalesce(o.name, ${gone("r->>'object_type'", "r->>'object_id'")}))
              WHEN a.table_name = 'images'
              THEN concat_ws(' ', 'image of', coalesce(ie.name, ${gone('ix.type', 'ix.id')}), '“' || coalesce(r->>'caption', regexp_replace(r->>'url', '^.*/', '')) || '”')
+             WHEN a.table_name = 'citations'
+             THEN concat_ws(' ', 'source for', coalesce(r->>'field', 'a relationship'), coalesce('— Wikidata ' || (r->>'wikidata_item'), ''))
              WHEN a.table_name = 'artwork_numbers'
              THEN concat_ws(' ', 'number', r->>'number', 'of', coalesce(pa.name, ${gone("'artwork'", "r->>'artwork_id'")}))
              WHEN a.table_name = 'provenance'
@@ -687,6 +691,30 @@ router.post('/images/:id/move', async (req, res) => {
   res.redirect(303, `${img.entityUrl}?done=img-moved#images`);
 });
 
+// Sources for facts (src/admin/citations.js): added and removed from the markers next to values; back to the page.
+// back to the entry page (a local path, maybe with #anchor), with ?done= before the anchor
+const citeBack = (b, done) => {
+  const url = typeof b === 'string' && /^\/[a-z][a-z0-9/_.-]*(#[a-z-]+)?$/i.test(b) ? b : '/';
+  const [path, hash] = url.split('#');
+  return `${path}?done=${done}${hash ? `#${hash}` : ''}`;
+};
+router.post('/citations', async (req, res) => {
+  try {
+    await withTx(req.user, (db) => citations.add(db, req.body, req.user.id));
+  } catch (err) {
+    const text = err instanceof citations.CitationError ? err.message : friendly(err);
+    return send(req, res, { title: 'Add a source', status: 422, flash: { kind: 'error', text },
+      body: html`<p><a href="${citeBack(req.body.back, 'cite-failed').replace(/\?done=cite-failed/, '')}">← back</a></p>` });
+  }
+  res.redirect(303, citeBack(req.body.back, 'cite-added'));
+});
+router.post('/citations/:id/delete', async (req, res) => {
+  const c = await citations.byId(adminPool, req.params.id);
+  if (!c) return notFoundPage(req, res);
+  await withTx(req.user, (db) => citations.remove(db, c.id));
+  res.redirect(303, citeBack(req.body.back, 'cite-deleted'));
+});
+
 // Further numbers of an artwork (src/admin/numbers.js): added on its page, removed one by one.
 router.post('/artworks/:slug/numbers', async (req, res) => {
   const e = await findEntity(BY_TYPE.artwork, req.params.slug);
@@ -923,10 +951,13 @@ async function wikidataApply(req, res, t, e) {
     await adminPool.query(`INSERT INTO admin_drafts (user_id, entity_type, entity_id, form) VALUES ($1, $2, NULL, $3)
       ON CONFLICT (user_id, entity_type, entity_id) DO UPDATE SET form = EXCLUDED.form, updated_at = now()`,
     [req.user.id, t.type, JSON.stringify({ slug, ...base, ...form,
-      ...(result.pendingImages.length ? { 'wd.images': JSON.stringify(result.pendingImages) } : {}) })]);
+      ...(result.pendingImages.length ? { 'wd.images': JSON.stringify(result.pendingImages) } : {}),
+      ...(result.cites.length ? { 'wd.cite': JSON.stringify({ qid, cites: result.cites }) } : {}) })]);
     return res.redirect(303, `/${t.folder}/new?draft=1`);
   }
   if (Object.keys(form).length) await collab.applyForm(t, e.id, form, req.user.username);
+  // the values in the working copy came from Wikidata: citations, settled when published (049)
+  if (result.cites.length) await withTx(req.user, (db) => citations.pendingFromWikidata(db, t.type, e.id, qid, result.cites, req.user.id), { source: 'wikidata' });
   res.redirect(303, `/${t.folder}/${e.slug}/edit?done=wikidata&rels=${result.relationships}&created=${result.created.length}&imgs=${result.images}`);
 }
 
@@ -1006,7 +1037,7 @@ router.get('/:plural/new', async (req, res) => {
         : draftBanner({ draft, changed: [...new Set(changed)], restoreUrl: `/${t.folder}/new?draft=1`, t })}
       ${entityForm({ t, slug: useDraft ? draft.form.slug || '' : '', f: useDraft ? formFromBody(draft.form) : docToForm(await newDocFrom(t, req.query), t.fields),
         ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true,
-        pendingImages: useDraft ? draft.form['wd.images'] : null })}`,
+        pendingImages: useDraft ? draft.form['wd.images'] : null, pendingCites: useDraft ? draft.form['wd.cite'] : null })}`,
   });
 });
 
@@ -1082,6 +1113,7 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
       if (!existing) {
         const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
         await duplicates.checkNew(db, t, rows[0].id, body, user.id, { probe });
+        await citations.settle(db, t.type, rows[0].id, body, user.id);
         await createdIn(rows[0].id);
         // images picked in the Wikidata review of this new entry (wd.images): saved together with it
         for (const img of pendingImagesOf(t, body)) await images.add(db, t.type, rows[0].id, img);
@@ -1096,6 +1128,7 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
         UPDATE ${t.table} SET slug = $1, ${names.map((c, i) => `${c} = ${exprs[i]}`).join(', ')}
         WHERE id = $${values.length - 1} AND updated_at::text = $${values.length}`, values);
       if (!rowCount) throw new UserError('Someone saved this record while you were editing. Open it again to see their changes, then redo yours.');
+      await citations.settle(db, t.type, existing.id, body, user.id);
       await createdIn(existing.id);
     });
   } catch (err) {
@@ -1184,7 +1217,7 @@ router.post('/:plural', async (req, res) => {
       title: `New ${t.type}`, status: 422,
       page: { type: t.type, slug: null, mode: 'new' },
       body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx, action: `/${t.folder}`,
-        errors: result.errors, isNew: true, pendingImages: req.body['wd.images'] })}`,
+        errors: result.errors, isNew: true, pendingImages: req.body['wd.images'], pendingCites: req.body['wd.cite'] })}`,
     });
   }
   await drafts.deleteDraft(adminPool, req.user.id, t.type, null);
@@ -1220,10 +1253,10 @@ function showValue(t, key, kind, doc, links = new Map()) {
 
 // An artwork's creators in one place: the creator field (main creator) and the co_creator relationships
 // (migration 028) — each with its part, certainty and an edit link — plus a short form to add one.
-function creatorsRow(e, main, coCreators) {
+function creatorsRow(e, main, coCreators, marker = '') {
   if (!main && !coCreators.length) return '';
   return html`<dt id="creators">Creator${coCreators.length ? 's' : ''}</dt><dd class="creators">
-    ${main ? html`<a href="/artists/${main.slug}">${main.name}</a>` : html`<span class="muted">no main creator</span>`}
+    ${main ? html`<a href="/artists/${main.slug}">${main.name}</a> ${marker}` : html`<span class="muted">no main creator</span>`}
     ${coCreators.map(({ id, to_name: toName, rel }) => html`<div>+ <a href="/artists/${rel.to.split('/')[1]}">${toName}</a>
       <span class="muted">${[rel.label, rel.certainty !== 'attested' && rel.certainty].filter(Boolean).join(' · ')}</span>
       <a class="small" href="/relationships/${id}/edit">edit</a></div>`)}
@@ -1276,6 +1309,10 @@ router.get('/:plural/:slug', async (req, res) => {
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
   const provSteps = t.type === 'artwork' ? await provenance.read(adminPool, e.id) : [];
   const nums = t.type === 'artwork' ? await numbers.list(adminPool, e.id) : [];
+  const cites = await citations.forEntity(adminPool, t.type, e.id);
+  const citable = (await citations.citableFields(adminPool))[t.type] || {};
+  const here = `/${t.folder}/${e.slug}`;
+  const mark = (key) => (key in citable ? citations.marker(cites[key], { type: t.type, id: e.id, field: key }, here) : '');
   const webAccessed = t.type === 'artwork' && e.doc.web_url
     ? (await adminPool.query("SELECT to_char(web_url_accessed, 'FMDD FMMonth YYYY') AS d FROM artworks WHERE id = $1", [e.id])).rows[0].d : null;
   const boundary = t.type === 'place' && e.doc.boundary_code
@@ -1320,13 +1357,15 @@ router.get('/:plural/:slug', async (req, res) => {
         ${names.hasRuby(e.doc[t.name]) ? raw(names.rubyHtml(e.doc[t.name])) : name}
         ${e.doc[`${t.name}_lang`] ? html` <span class="tag" lang="en">${e.doc[`${t.name}_lang`]}</span>` : ''}</p>` : ''}
       <dl class="fields">${Object.entries(t.fields).filter(([k]) => k !== t.name && !(k === 'dimensions_note' && e.doc.dimensions)).map(([key, kind]) => {
-        if (t.type === 'artwork' && key === 'creator') return creatorsRow(e, mainCreator, coCreators);
+        if (t.type === 'artwork' && key === 'creator') return creatorsRow(e, mainCreator, coCreators, mark('creator'));
         const shown = key === 'boundary_code' && boundary
           ? html`${boundary.code} — ${boundary.name} <span class="muted">(outline and marker from Natural Earth)</span>`
           : showValue(t, key, kind, e.doc, linkMap);
         // the web page with the day the link was added (set by the database, migration 039)
         if (key === 'web_url' && shown !== null && webAccessed) return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown} <span class="muted small">· added ${webAccessed}</span></dd>`;
-        return shown === null ? '' : html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown}</dd>`;
+        if (shown === null) return '';
+        // dates and dimensions are shown under their own key; the label column belongs to the value before it
+        return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown} ${mark(key)}</dd>`;
       })}</dl>
       ${t.type === 'term' || usedIn.length ? html`<h2 id="used-in">${t.type === 'term' ? 'Used in' : 'Mentioned in'}</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`
         : html`<p class="muted">No text links it yet — write <code>[[${e.slug}]]</code> in a description.</p>`}` : ''}
@@ -1344,20 +1383,25 @@ router.get('/:plural/:slug', async (req, res) => {
       ${t.type === 'artwork' ? numbers.section({ e, numbers: nums }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap }) : ''}
       <h2 id="relationships">Relationships</h2>
-      ${otherRels.length ? html`<div class="table-wrap"><table><tbody>${otherRels.map(({ id, to_name: toName, rel }) => {
+      ${await (async () => {
+        const relCites = await citations.forRelationships(adminPool, [...otherRels.map((x) => x.id), ...incoming.rows.filter((r) => r.source === 'relationship').map((r) => r.id)]);
+        return html`${otherRels.length ? html`<div class="table-wrap"><table><tbody>${otherRels.map(({ id, to_name: toName, rel }) => {
         const [type, slug] = rel.to.split('/');
         return html`<tr><td>${labels[rel.type] || rel.type}</td>
           <td><a href="/${BY_TYPE[type].folder}/${slug}">${toName}</a> <span class="tag">${type}</span></td>
           <td>${rel.period_label || (rel.period ? parseFuzzyDate(String(rel.period), { openEnd: true }).label : '')}</td>
           <td class="muted">${[rel.label, rel.certainty].filter(Boolean).join(' · ')}</td>
+          <td>${citations.marker(relCites[id], { relationship: id }, `${here}#relationships`)}</td>
           <td><a href="/relationships/${id}/edit">edit</a></td></tr>`;
       })}</tbody></table></div>` : html`<p class="muted">None yet.</p>`}
       ${incoming.rows.length ? html`<h3>Linked from</h3><div class="table-wrap"><table><tbody>${incoming.rows.map((r) => html`<tr>
           <td>${r.inverse_label}</td><td><a href="/${BY_TYPE[r.type].folder}/${r.slug}">${r.name}</a> <span class="tag">${r.type}</span></td>
           <td>${r.period_label || ''}${r.end_basis === 'implied' ? html` <span class="tag implied">end implied</span>` : ''}</td><td class="muted">${r.label || ''}</td>
+          <td>${r.source === 'relationship' ? citations.marker(relCites[r.id], { relationship: r.id }, `${here}#relationships`) : ''}</td>
           <td>${r.source === 'provenance' ? html`<a href="/provenance/${r.provenance_id}/edit" title="from the provenance">provenance</a>`
             : r.source === 'creator' ? html`<a href="/artworks/${r.slug}/edit" title="the artwork's creator field">creator field</a>`
-            : html`<a href="/relationships/${r.id}/edit">edit</a>`}</td></tr>`)}</tbody></table></div>` : ''}
+            : html`<a href="/relationships/${r.id}/edit">edit</a>`}</td></tr>`)}</tbody></table></div>` : ''}`;
+      })()}
       <details><summary><b>+ Add relationship</b></summary>
         ${types.length ? relForm({ action: `/${t.folder}/${e.slug}/relationships`, types, entities, submit: 'Add', entityType: t.type })
           : html`<p class="muted">No relationship types start from ${an(t.type)}; link to it from the other entity.</p>`}

@@ -9,6 +9,7 @@
 // Wikidata's; empty fields are pre-ticked; a declined value is remembered and folded away until Wikidata changes it.
 // Wikidata API: https://www.wikidata.org/w/api.php (wbgetentities, wbsearchentities); images: Wikimedia Commons API.
 // Base URLs are configurable (WIKIDATA_BASE, COMMONS_BASE) so the end-to-end tests can serve fixtures.
+const citations = require('./citations');
 const { BY_TYPE, TYPES, SLUG, toRow } = require('../content');
 const nameUtil = require('../names');
 const autocreate = require('./autocreate');
@@ -528,7 +529,7 @@ async function compare(db, t, qid, ours, entity) {
     const ref = target ? `${target.type}/${target.slug}` : null;
     const already = ref && existing.some((x) => x.relationship_type === v.code && (reverse ? x.subj === ref : x.obj === ref));
     const item = `rel:${r.type}:${r.qid}`;
-    suggestions.push({ item, type: r.type, label: reverse ? v.inverse_label : v.label, qid: r.qid, targetType: type,
+    suggestions.push({ item, type: r.type, prop: r.prop, label: reverse ? v.inverse_label : v.label, qid: r.qid, targetType: type,
       target, candidate, name: target ? target.name : labelOf(we) || r.qid, create: doc ? { type, doc, describe: describeDoc(type, doc) } : null,
       period: r.period, period_label: r.period_label, already, declined: declined(item, r.qid),
       period_display: r.period_label || (r.period ? parseFuzzyDate(r.period, { openEnd: true }).label : '') });
@@ -595,6 +596,7 @@ async function createEntry(db, type, doc, from = null, userId = null, sourceQid 
   const exprs = names.map((c) => { values.push(row.cols[c][1]); return row.cols[c][0].replace('$', () => `$${values.length}`); });
   const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
   if (row.parent) await db.query(`UPDATE ${t.table} SET parent_id = (SELECT id FROM ${t.table} WHERE slug = $2) WHERE id = $1`, [rows[0].id, row.parent]);
+  await citations.citeAllFromWikidata(db, type, rows[0].id, doc.wikidata_id || sourceQid, userId);  // where its values came from (049)
   if (flag) await autocreate.flag(db, type, rows[0].id, from, userId);  // a minimal entry: "to complete" until edited
   return slug;
 }
@@ -606,6 +608,8 @@ async function createEntry(db, type, doc, from = null, userId = null, sourceQid 
 async function apply(db, t, entity, plan, choices, userId) {
   const form = {};
   const created = [];
+  const cites = [];  // fields taken from Wikidata: [{field, form}] — the form values that came from it (citations, 049)
+  const took = (field, keys) => cites.push({ field, form: Object.fromEntries(keys.map((k) => [k, form[k]])) });
   const decide = async (item, value, taken) => {
     if (!entity || taken === null) return;  // null = decide later
     if (value && typeof value === 'object' && !Array.isArray(value) && 'value' in value) value = value.value;  // dates: the bare value
@@ -619,7 +623,7 @@ async function apply(db, t, entity, plan, choices, userId) {
       const picked = [].concat(choices[`alt.${row.key}`] || []);
       const declineRest = choices[`altrest.${row.key}`] === 'decline';
       for (const it of row.items) await decide(`${row.key}:${it.value}`, it.value, picked.includes(it.value) ? true : declineRest ? false : null);
-      if (picked.length) form[`f.${row.key}`] = [...row.ours, ...row.items.filter((it) => picked.includes(it.value)).map((it) => it.value)].join('\n');
+      if (picked.length) { form[`f.${row.key}`] = [...row.ours, ...row.items.filter((it) => picked.includes(it.value)).map((it) => it.value)].join('\n'); took(row.key, [`f.${row.key}`]); }
       continue;
     }
     if (row.kind === 'ref') {
@@ -643,7 +647,7 @@ async function apply(db, t, entity, plan, choices, userId) {
         created.push(`${row.create.type} ${doc[BY_TYPE[row.create.type].name]}`);
       }
       await decide(row.key, row.qid, !!slug);
-      if (slug) form[`f.${row.key}`] = slug;
+      if (slug) { form[`f.${row.key}`] = slug; took(row.key, [`f.${row.key}`]); }
       continue;
     }
     const pick = choices[`take.${row.key}`] || 'later';
@@ -651,12 +655,17 @@ async function apply(db, t, entity, plan, choices, userId) {
     const taken = pick === 'take';
     await decide(row.key, row.value, taken);
     if (!taken) continue;
-    if (row.kind === 'point') { form['f.location_lon'] = String(row.value[0]); form['f.location_lat'] = String(row.value[1]); } else if (row.kind === 'dimensions') {
+    if (row.kind === 'point') {
+      form['f.location_lon'] = String(row.value[0]); form['f.location_lat'] = String(row.value[1]);
+      took(row.key, ['f.location_lon', 'f.location_lat']);
+    } else if (row.kind === 'dimensions') {
       ['h', 'w', 'd'].forEach((x, i) => { form[`f.dimensions_${x}`] = row.value[i] !== undefined ? String(row.value[i]) : ''; });
+      took(row.key, ['f.dimensions_h', 'f.dimensions_w', 'f.dimensions_d']);
     } else if (row.kind === 'date') {
       form[`f.${row.key}`] = row.value.value;
       form[`f.${row.key}_label`] = row.value.label || '';
-    } else form[`f.${row.key}`] = String(row.value);
+      took(row.key, [`f.${row.key}`]);
+    } else { form[`f.${row.key}`] = String(row.value); took(row.key, [`f.${row.key}`]); }
   }
   let relationships = 0;
   let images = 0;
@@ -703,14 +712,15 @@ async function apply(db, t, entity, plan, choices, userId) {
       const other = (await db.query('SELECT entity_id($1, $2) AS id', [ref.type, ref.slug])).rows[0].id;
       const [st, si, ot, oi] = reverse ? [ref.type, other, entity.type, entity.id] : [entity.type, entity.id, ref.type, other];
       const period = s.period ? parseFuzzyDate(s.period, { openEnd: true }) : null;
-      await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label, metadata)
-        VALUES ($1, $2, $3, $4, $5, $6::daterange, $7, $8::jsonb) ON CONFLICT DO NOTHING`,
+      const ins = await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label, metadata)
+        VALUES ($1, $2, $3, $4, $5, $6::daterange, $7, $8::jsonb) ON CONFLICT DO NOTHING RETURNING id`,
       [st, si, s.type.replace('~', ''), ot, oi, period && period.range, s.period_label || (period && period.label),
         JSON.stringify({ sources: [sourceNote(plan.qid)] })]);
+      if (ins.rows.length) await citations.citeRelationshipFromWikidata(db, ins.rows[0].id, plan.qid, s.prop);
       relationships += 1;
     }
   }
-  return { form, created, relationships, images, pendingImages };
+  return { form, created, relationships, images, pendingImages, cites };
 }
 
 // A place's coordinates from its Wikidata item (P625), [lon, lat] or null — for the place finder.

@@ -51,7 +51,7 @@ const TYPES = [
     edition: 'text', original_year: 'text', series: 'text', thesis: 'text', place: 'text', publisher: 'text', year: 'text',
     pages: 'text', pages_are_columns: 'bool', catalogue_number: 'text', exhibition: 'text', url: 'text', accessed: 'date',
     uploader: 'text', uploaded: 'date', date_text: 'text', archive: 'text', shelfmark: 'text', isbn: 'text', doi: 'text',
-    siglum: 'text', primary_source: 'bool', reading_status: 'text', read_on: 'date',
+    siglum: 'text', primary_source: 'bool', reliability: 'text', reading_status: 'text', read_on: 'date',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     title: 'name', names: 'names', parent: 'parent', part_number: 'text', parts_count: 'text', creator: 'ref:artist', attribution_label: 'text', created: 'date',

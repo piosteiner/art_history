@@ -319,3 +319,23 @@ details.field-group[open] { border-left: 3px solid var(--line); padding-left: 0.
 .dup-box ul, .dup-confirm ul { margin: .4rem 0; padding-left: 1.2rem; }
 .dup-confirm label.choice { display: block; margin-top: .2rem; }
 .merge-summary li { margin: .3rem 0; }
+
+/* sources for facts (src/admin/citations.js): W database · M institution · L literature · P primary · ? none */
+details.cite { display: inline-block; vertical-align: baseline; }
+details.cite > summary { list-style: none; cursor: pointer; display: inline-flex; gap: 2px; }
+details.cite > summary::-webkit-details-marker { display: none; }
+.cite-badge { display: inline-block; min-width: 1.15em; padding: 0 .25em; border-radius: 3px; font-size: .7rem; line-height: 1.35;
+  font-weight: 600; text-align: center; border: 1px solid var(--line); color: var(--muted); }
+.cite-database { color: var(--fg); background: color-mix(in srgb, var(--muted) 18%, transparent); }
+.cite-institution { color: var(--accent-fg); background: var(--accent); border-color: var(--accent); }
+.cite-scholarly, .cite-primary { color: var(--bg); background: var(--ok); border-color: var(--ok); }
+.cite-none { border-style: dashed; }
+.cite-outdated { color: var(--bg); background: var(--err); border-color: var(--err); }
+.cite-pending { border-style: dotted; }
+.cite-warn { color: var(--err); }
+.cite-panel { position: absolute; z-index: 40; margin-top: .3rem; padding: .6rem .7rem; max-width: min(34rem, 92vw);
+  background: var(--panel); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 4px 16px rgba(0,0,0,.25); }
+.cite-panel ul { margin: 0 0 .5rem; padding-left: 1rem; }
+.cite-panel .cite-add { display: flex; flex-wrap: wrap; gap: .3rem; }
+.cite-panel .cite-add input { width: auto; flex: 1 1 8rem; }
+.cite-panel .cite-add input.short { flex: 0 1 7rem; }

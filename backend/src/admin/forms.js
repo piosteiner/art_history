@@ -50,7 +50,7 @@ const LABELS = {
   'source.year': 'Year', 'source.pages': 'Pages', 'source.pages_are_columns': 'Columns instead of pages',
   'source.catalogue_number': 'Catalogue number', 'source.exhibition': 'Exhibition', 'source.accessed': 'Last accessed',
   'source.uploader': 'Uploaded by', 'source.uploaded': 'Upload date', 'source.date_text': 'Date', 'source.archive': 'Archive / collection',
-  'source.shelfmark': 'Shelfmark (Signatur)', 'source.siglum': 'Short reference (override)', 'source.primary_source': 'Primary source (Quelle)',
+  'source.shelfmark': 'Shelfmark (Signatur)', 'source.siglum': 'Short reference (override)', 'source.primary_source': 'Primary source (Quelle)', 'source.reliability': 'Reliability as a source',
   'source.reading_status': 'Reading status', 'source.read_on': 'Finished reading', 'source.description_md': 'Notes', 'place.kind': 'Kind of place', 'institution.kind': 'Kind of institution',
   'event.kind': 'Kind of event', 'event.parent': 'Part of', 'event.period': 'When', 'event.place': 'Place (city or region)',
   'event.location': 'Exact spot', 'event.area': 'Area it covered',
@@ -105,6 +105,7 @@ const TYPE_HINTS = {
   'source.date_text': 'Letters, events, conference talks: e.g. 30.09.1913.',
   'source.siglum': 'Leave empty: generated from surnames and year (Busch 1993, Kimpel und Suckale 1995, Kat. Paris 2007, Jacobsen 1992a).',
   'source.primary_source': 'Letters, documents, historical texts — listed apart as “Quellen”.',
+  'source.reliability': 'How far a fact cited from it can be trusted. Empty = from the kind: website → institution, literature → scholarly, archival / primary → primary. Set “database” for aggregators (RKD, Getty ULAN …), “scholarly” for a catalogue raisonné online.',
   'source.description_md': 'Your own notes: what it says, what it is good for. Not part of the citation.',
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
@@ -366,7 +367,7 @@ const SECTIONS = {
       ['catalogue_number', 'exhibition'], ['pages', 'pages_are_columns']] },
     { title: 'Publication', id: 'publication', rows: [['place', 'publisher'], ['year', 'original_year'], ['edition', 'series'], ['thesis']] },
     { title: 'Online, video, archive', id: 'online', rows: [['url', 'accessed'], ['uploader', 'uploaded'], ['date_text'], ['archive', 'shelfmark']] },
-    { title: 'References and reading', id: 'reading', rows: [['isbn', 'doi'], ['siglum', 'primary_source'], ['reading_status', 'read_on']] },
+    { title: 'References and reading', id: 'reading', rows: [['isbn', 'doi'], ['siglum', 'primary_source'], ['reliability'], ['reading_status', 'read_on']] },
     { title: 'Notes', id: 'text', rows: [['description_md']] },
     IDS(),
   ],
@@ -403,7 +404,7 @@ function sectionsOf(t) {
 // collab: { key: 'artist:12:<epoch>', state: base64 } for a working copy.
 // pendingImages: JSON of images picked in the Wikidata review of a new entry — kept in a hidden field (and so in the
 // draft) and saved with the entry on Create.
-function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null }) {
+function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null, pendingCites = null }) {
   let pending = [];
   try { pending = pendingImages ? JSON.parse(pendingImages) : []; } catch { pending = []; }
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
@@ -417,6 +418,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     ${isNew && ctx.duplicates ? duplicates.confirmBox(t, ctx.duplicates) : ''}
     ${isNew ? html`<div class="dup-live" data-dup-url="${action}/new/duplicates" aria-live="polite"></div>` : ''}
+    ${isNew && pendingCites ? html`<input type="hidden" name="wd.cite" value="${pendingCites}">` : ''}
     ${pending.length ? html`<input type="hidden" name="wd.images" value="${pendingImages}">
       <div class="field pending-images"><label>Images from Wikidata</label>
         <div class="image-list">${pending.map((img) => html`<figure class="image-item"><img src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">

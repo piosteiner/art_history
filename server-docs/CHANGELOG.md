@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Sources for facts: citations per field and relationship (migration 049)
+- **What:** enum `source_reliability`, `bibliography.reliability` (+ `source_reliability()`), table `citable_fields`
+  (data), view `entity_rows`, `field_value()`, table `citations` (field / relationship / provenance step ← bibliography
+  source or Wikidata item, locator, accessed, cited value, pending), views `citation_status`, `field_sourcing`; quality
+  checks `citation_outdated`, `weakly_sourced`; `merge_entries` moves citations; deleting an entry also deletes its
+  citations and its `wikidata_reviews` (orphans removed). Backfill from Wikidata notes and accepted reviews (213 on
+  prod in the dry run). Admin: source markers next to values and relationships (W / M / L / P / ? / !), add and remove
+  sources there; Wikidata comparison and new-from-Wikidata cite automatically (pending until published); source form:
+  "Reliability as a source".
+- **Why:** owner: transparency — where each fact comes from, so weak sources (Wikidata) can be replaced by better
+  ones (museum, catalogue raisonné) later.
+- **Tested:** smoke test; migration dry run on prod (rolled back); e2e 110 passing (new citations.spec).
+- **Revert:** redeploy the previous commit; as owner drop `citations`, `citation_status`, `field_sourcing`,
+  `entity_rows`, `citable_fields`, `field_value`, `source_reliability()`, the column and the enum; re-create 048's
+  `quality_issues`, `merge_entries` and 041's `delete_entity_relationships`.
+
 ### Frontend: loans and further numbers on the artwork page (no server change)
 - **What:** "Collection" as a credit line when `on_loan`: the provenance's last owner, "on loan to the <institution> since
   <on_loan_since>" ("Foundation E.G. Bührle Collection, on loan to the Kunsthaus Zürich since 2021"; "the" left out

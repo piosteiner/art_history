@@ -286,6 +286,21 @@ in the transaction that adds it), then the table and an event branch in every vi
 `entity_id`, `entity_home_place`), the per-table triggers, a sixth image arm — the generated `images.entity_type` /
 `entity_id` changed in place with `ALTER COLUMN … SET EXPRESSION` (PostgreSQL 17+).
 
+## Sources for facts (migration 049)
+`citations`: this value is supported by this source — a field of an entry (`entity_type`, `entity_id`, `field`, from
+the table `citable_fields`, which also names each field's columns and Wikidata property), a relationship or a
+provenance step (real foreign keys, ON DELETE CASCADE); the source is a bibliography entry or a Wikidata item (exactly
+one: CHECK `num_nonnulls() = 1`). `cited_value` = `field_value(row, cols)` when cited; the view `citation_status`
+compares it with the current value (`outdated`) and gives each citation a `reliability` (enum `source_reliability`:
+database < institution < scholarly < primary — enums compare in declaration order, so `max()` is "the best source";
+a bibliography entry's from its kind unless set in `bibliography.reliability`). `field_sourcing`: every field with a
+value and its best still-valid citation → quality checks `weakly_sourced` (info, per entry) and `citation_outdated`.
+`entity_rows` gives every entry as `to_jsonb(row)`, so fields are read generically. Wikidata cites itself: values taken
+in a comparison become `pending` citations (the form values expected) and are settled by `saveEntity` on publish; a
+new entry carries them in the form (`wd.cite`); relationships and auto-created entries are cited at once. The
+migration backfilled what demonstrably came from Wikidata (the "Wikidata Q… (retrieved …)" notes, accepted
+`wikidata_reviews`).
+
 ## Numbers and loans (migration 048)
 `artworks.inventory_number` is the number of the institution where the work is now (`current_institution_id`, as
 decided with 005); further numbers are rows of `artwork_numbers` (number + an institution, a bibliography source for a
