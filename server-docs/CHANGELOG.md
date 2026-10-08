@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Admin: a bright text cursor in dark mode
+- **What:** CSS token `--caret` (dark in light mode, `#fffaf2` in dark mode) for `caret-color` of inputs and text areas,
+  and for CodeMirror's own drawn cursor (`.cm-cursor`, 2px) in the Markdown editor.
+- **Why:** owner: the cursor was dark and hard to see on the dark admin pages (CodeMirror draws a black one by default).
+- **Revert:** redeploy the previous commit.
+
 ### Frontend: events on the public site (no server change)
 - **What:** type `event` everywhere: nav, router, header search, list page (`/events`, kind filter), detail page (date,
   place, part of / parts, participants with roles, concerns, works depicting it, map of its area / spot / city, link to

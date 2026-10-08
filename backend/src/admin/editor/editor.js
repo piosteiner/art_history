@@ -47,7 +47,9 @@ const theme = EditorView.theme({
   '&': { background: 'var(--panel)', color: 'var(--fg)', border: '1px solid var(--line)', borderRadius: '0 0 6px 6px' },
   '&.cm-focused': { outline: '2px solid var(--accent)', outlineOffset: '-1px' },
   '.cm-scroller': { fontFamily: 'inherit', lineHeight: '1.55', minHeight: 'var(--md-min-height, 11rem)', maxHeight: '70vh' },
-  '.cm-content': { padding: '.5rem .6rem', caretColor: 'var(--fg)' },
+  '.cm-content': { padding: '.5rem .6rem', caretColor: 'var(--caret)' },
+  // drawSelection() draws its own cursor (black by default — invisible on the dark background)
+  '.cm-cursor, .cm-dropCursor': { borderLeft: '2px solid var(--caret)' },
   '.cm-line': { padding: '0' },
   '.cm-placeholder': { color: 'var(--muted)' },
   '&.cm-focused .cm-selectionBackground, .cm-selectionBackground': { background: 'color-mix(in srgb, var(--accent) 25%, transparent)' },
