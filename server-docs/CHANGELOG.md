@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Sources: 33 wrong Wikidata citations from the backfill removed (migration 051)
+- **What:** 049's backfill cited every field of entries carrying a "Wikidata Q… (retrieved …)" note — also values
+  changed by hand later (e.g. the Bührle works' institution and loan). 051 keeps a backfilled field citation only if
+  an accepted Wikidata decision backs it or the value is unchanged since the entry was created from Wikidata; 33 of 209
+  removed (dry run on prod first).
+- **Why:** found checking the live API after step 2.
+- **Revert:** redeploy the previous commit (the removed rows are in audit_log, restorable from the history).
+
 ### Sources, step 2: free text as citations, sources in the API and the YAML (migration 050)
 - **What:** `citations.text` (free text, no reliability) and `citations.url` (the exact page of a website source); the
   relationship and provenance "Sources" boxes write text citations (no more `metadata.sources`); existing lines
