@@ -499,7 +499,15 @@ test('previews on every internal link: fields and relationships, fetched togethe
   await page.locator('.crumbs a').hover();
   await page.waitForTimeout(500);
   await expect(pop).toHaveCount(0);
-  await museum.focus(); // keyboard
+  // focus moved by a script after a click (a map popup focuses its first link): no preview
+  await page.locator('h1').click();
+  await museum.evaluate((a: HTMLElement) => a.focus());
+  await page.waitForTimeout(500);
+  await expect(pop).toHaveCount(0);
+  // keyboard: Tab onto the link opens it
+  await museum.evaluate((a: HTMLElement) => a.blur());
+  await page.locator('.facts a').first().evaluate((a: HTMLElement) => a.focus());
+  while (!(await museum.evaluate((a) => a === document.activeElement))) await page.keyboard.press('Tab');
   await expect(pop).toContainText('Preview of metropolitan-museum-of-art');
 });
 

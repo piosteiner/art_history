@@ -15,6 +15,13 @@ let popover: HTMLElement | null = null;
 let current: HTMLAnchorElement | null = null;
 let hideTimer: number | undefined;
 
+// Focus opens a popover only when it comes from the keyboard (Tab …): a map popup moves focus to its first link when a
+// click opens it, and that mustn't open a preview on top. Keyboard focus always follows a key press.
+let lastKey = 0;
+document.addEventListener('keydown', () => (lastKey = Date.now()), true);
+/** The current focus change was made with the keyboard. */
+export const byKeyboard = () => Date.now() - lastKey < 1000;
+
 /** The link whose popover is open, if any. */
 export const openFor = () => (popover ? current : null);
 
@@ -76,7 +83,7 @@ function attach(a: HTMLAnchorElement, content: () => Html, kind: string) {
     show(a, content(), kind);
   });
   a.addEventListener('pointerleave', (e) => e.pointerType === 'mouse' && hideSoon());
-  a.addEventListener('focus', () => show(a, content(), kind));
+  a.addEventListener('focus', () => byKeyboard() && show(a, content(), kind));
   a.addEventListener('blur', hideSoon);
   a.addEventListener('click', (e) => {
     if (touch && !openAtTouch) {

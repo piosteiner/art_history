@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Frontend fix: a map popup no longer opens a link preview on top of itself (no server change)
+- **What:** popovers (`src/glossary.ts`, `src/previews.ts`) open on focus only right after a key press (`byKeyboard()`).
+  MapLibre focuses a popup's first link when a click opens it; that focus opened the preview at once.
+- **Why:** owner: clicking a place on the start map showed the place's preview over the popup.
+- **Tested:** e2e regression (click, then focus by script → no preview; Tab → preview); full suite 50/50.
+- **Revert:** revert the commit.
+
 ### Admin: a bright text cursor in dark mode
 - **What:** CSS token `--caret` (dark in light mode, `#fffaf2` in dark mode) for `caret-color` of inputs and text areas,
   and for CodeMirror's own drawn cursor (`.cm-cursor`, 2px) in the Markdown editor.

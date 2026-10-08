@@ -5,10 +5,11 @@
 // Not on: the header, breadcrumbs, previous/next, buttons, list cards and the explore pickers (they show the same
 // already, and a popover would cover the next rows), the page itself,
 // and links that have their own popover ([[links]], citations, footnotes).
-// Mouse: opens after a short pause, so moving across a list doesn't flash popovers. Keyboard: on focus. Touch, on an
+// Mouse: opens after a short pause, so moving across a list doesn't flash popovers. Keyboard: on focus (only after a
+// key press — focus moved there by a script, like a map popup's first link, opens nothing). Touch, on an
 // entry's page only: the first tap opens the preview, the second follows the link (lists and maps: one tap navigates).
 import { getPreviews, PLURAL } from './api';
-import { entryPreview, hideSoon, keepOpen, openFor, show } from './glossary';
+import { byKeyboard, entryPreview, hideSoon, keepOpen, openFor, show } from './glossary';
 import type { EntityType, EntryHint } from './types';
 
 const TYPE_OF = Object.fromEntries(Object.entries(PLURAL).map(([type, plural]) => [plural, type])) as Record<string, EntityType>;
@@ -87,7 +88,8 @@ document.addEventListener('focusin', (e) => {
   if (Date.now() - lastTouch < 800) return; // a tap focuses too; the click decides
   const a = e.target as HTMLAnchorElement;
   const ref = refOf(a);
-  if (ref) load([ref]).then(() => document.activeElement === a && open(a, ref));
+  // keyboard focus only: a map popup focuses its first link when a click opens it, which mustn't open a preview too
+  if (ref && byKeyboard()) load([ref]).then(() => document.activeElement === a && open(a, ref));
 });
 document.addEventListener('focusout', (e) => { if (openFor() === e.target) hideSoon(); });
 document.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') lastTouch = Date.now(); }, true);
