@@ -56,6 +56,12 @@ async function resolveRefs(db, t, doc, body) {
         ORDER BY (country_code = $2) DESC NULLS LAST, level LIMIT 1`, [name, doc.country_code || null]);
       if (!b.length) { out.errors.push(`${key}: no place "${name}" yet — pick one from the list, or create it first (or use "+ find a place…").`); continue; }
       extra = { kind: b[0].level === 0 ? 'country' : 'region', country_code: b[0].country_code, boundary_code: b[0].code };
+      // a region goes into its country, when we have that (Oslo the county → Norway)
+      if (b[0].level > 0) {
+        const { rows: country } = await db.query(`SELECT id FROM places WHERE kind = 'country' AND (boundary_code = $1 OR country_code = $1)
+          ORDER BY (boundary_code = $1) DESC NULLS LAST LIMIT 1`, [b[0].country_code]);
+        if (country.length) extra.parent_id = country[0].id;
+      }
     }
     out.creates.push({ key, type, name, extra });
     doc[key] = slugify(name);  // placeholder that passes validation; the real (free) slug is set when it is created
@@ -70,7 +76,7 @@ async function create(db, creates) {
   for (const c of creates) {
     const t = BY_TYPE[c.type];
     const slug = await freeSlug(db, t, c.name);
-    const extra = Object.entries(c.extra || {});  // a place: kind, country_code, boundary_code
+    const extra = Object.entries(c.extra || {});  // a place: kind, country_code, boundary_code (+ parent_id of a region)
     const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${t.name}${extra.map(([k]) => `, ${k}`).join('')})
       VALUES ($1, $2${extra.map((_, i) => `, $${i + 3}`).join('')}) RETURNING id`, [slug, c.name, ...extra.map(([, v]) => v)]);
     slugs.set(c.key, slug);

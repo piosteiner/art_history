@@ -48,6 +48,14 @@ test('place finder: a city with its point from Wikidata, names, and the parent f
   expect((await api(request, '/places/kyoto')).wikidata_id).toBe('Q34600');
 });
 
+test('a city that is its own region (Oslo, Berlin): not put into the same-named region, but into the country', async ({ userA }) => {
+  sql("INSERT INTO places (slug, name, kind, boundary_code, country_code) VALUES ('kyoto-region-test', 'Kyoto', 'region', 'JP-26', 'JP')");
+  await userA.goto('/places/new/find?q=Kyoto');
+  await Promise.all([userA.waitForNavigation(), userA.locator('.place-hits tr', { hasText: 'Kyoto, Kyoto Prefecture' }).locator('button').click()]);
+  await expect(userA.locator('#f-parent')).toHaveValue('japan');   // not kyoto-region-test, although its outline is smaller
+  sql("DELETE FROM places WHERE slug = 'kyoto-region-test'");
+});
+
 test('place finder: a prefecture gets its outline; a parent region typed by name is created with its outline', async ({ userA, request }) => {
   await userA.goto('/places/new/find?q=Kyoto+Prefecture');
   await Promise.all([userA.waitForNavigation(), userA.locator('.place-hits button').first().click()]);
@@ -69,8 +77,10 @@ test('place finder: a prefecture gets its outline; a parent region typed by name
   await expect(userA).toHaveURL(/\/places\/hakone\?done=created&auto=1/);
   expect(sql("SELECT kind || ' ' || boundary_code || ' ' || country_code FROM places WHERE slug = 'kanagawa'")).toBe('region JP-14 JP');
   expect(sql("SELECT p.slug FROM places c JOIN places p ON p.id = c.parent_id WHERE c.slug = 'hakone'")).toBe('kanagawa');
+  expect(sql("SELECT p.slug FROM places c JOIN places p ON p.id = c.parent_id WHERE c.slug = 'kanagawa'")).toBe('japan');  // the region in its country
 
-  // the quality page suggests parents from the map
+  // the quality page suggests parents from the map (for a region without one)
+  sql("UPDATE places SET parent_id = NULL WHERE slug = 'kanagawa'");
   await userA.goto('/quality?check=parent_suggestion');
   await expect(userA.locator('main')).toContainText('lies inside');
   sql("DELETE FROM places WHERE slug IN ('hakone', 'kyoto', 'kyoto-prefecture'); DELETE FROM places WHERE slug = 'kanagawa'");

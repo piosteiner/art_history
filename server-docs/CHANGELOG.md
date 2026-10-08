@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Places: no second "Oslo" — cities that are their own region go into the country
+- **What:** `placefinder.draftFor()` never takes a place or Natural Earth region with the same name as the new place
+  as its parent (Oslo, Berlin, Vienna, Hamburg are cities and counties/states at once). `autocreate`: a region
+  created from Natural Earth gets its country as parent when we have it. Data (prod, by hand): Norway got
+  `country_code`/`boundary_code` `NO` (it had no outline, so nothing was found inside it); the auto-created region
+  "Oslo" (NO-03) deleted; the city `oslo-2` → `oslo`, parent Norway (Munch Museum stays in it).
+- **Why:** owner: saving the Munch Museum created two Oslos.
+- **Tested:** e2e (places.spec, city.spec). **Revert:** redeploy the previous commit; the data change is in audit_log
+  (source `sql`) and can be reverted from the history pages.
+
 ### Admin: an institution's country or region is narrowed down to its city
 - **What:** `cityFor()` also looks up the city at an institution's exact location when its place is only a country or
   region (kind `country`/`region`), not just when it is empty. A new city is created inside the country (parent by

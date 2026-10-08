@@ -81,22 +81,25 @@ async function draftFor(db, c, coordsOf, slugify) {
   let point = null;
   if (!boundary) point = (c.wikidata && await coordsOf(c.wikidata).catch(() => null)) || [Math.round(lon * 1e5) / 1e5, Math.round(lat * 1e5) / 1e5];
   // the parent: our smallest place whose outline contains the spot …
+  // — never one of the same name: a city that is its own state or county (Oslo, Berlin, Vienna, Hamburg) goes right
+  // into the country, instead of into a second "Oslo" (the region)
   const at = point || [lon, lat];
+  const name = String(c.name || '').trim().slice(0, 200);
   const { rows: inside } = await db.query(`
     SELECT p.slug, p.name FROM places p JOIN place_geo g ON g.id = p.id
     WHERE g.outline IS NOT NULL AND ST_Covers(g.outline, ST_SetSRID(ST_MakePoint($1, $2), 4326)::geography)
-      AND p.boundary_code IS DISTINCT FROM $3
-    ORDER BY ST_Area(g.outline) LIMIT 1`, [at[0], at[1], boundary ? boundary.code : null]);
+      AND p.boundary_code IS DISTINCT FROM $3 AND lower(f_unaccent(p.name)) <> lower(f_unaccent($4))
+    ORDER BY ST_Area(g.outline) LIMIT 1`, [at[0], at[1], boundary ? boundary.code : null, name]);
   let parent = inside[0] ? { slug: inside[0].slug, name: inside[0].name, isNew: false } : null;
   // … else the Natural Earth region / country it lies in (region for a town, country for a region) — created with it
   if (!parent && kind !== 'country') {
     const { rows } = await db.query(`
       SELECT b.code, b.name FROM boundaries b
       WHERE ST_Covers(b.geom, ST_SetSRID(ST_MakePoint($1, $2), 4326)::geography) AND b.code IS DISTINCT FROM $3
-        AND b.level <= $4 ORDER BY b.level DESC LIMIT 1`, [at[0], at[1], boundary ? boundary.code : null, kind === 'region' ? 0 : 1]);
+        AND b.level <= $4 AND lower(f_unaccent(b.name)) <> lower(f_unaccent($5))
+      ORDER BY b.level DESC LIMIT 1`, [at[0], at[1], boundary ? boundary.code : null, kind === 'region' ? 0 : 1, name]);
     if (rows[0]) parent = { slug: null, name: rows[0].name, isNew: true, code: rows[0].code };
   }
-  const name = String(c.name || '').trim().slice(0, 200);
   const form = {
     slug: slugify(name), 'f.name': name, 'f.kind': kind, 'f.country_code': cc || '', 'f.boundary_code': boundary ? boundary.code : '',
     'f.location_lon': point ? String(point[0]) : '', 'f.location_lat': point ? String(point[1]) : '',
