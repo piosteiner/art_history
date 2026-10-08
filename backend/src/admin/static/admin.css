@@ -27,19 +27,17 @@ pre { padding: .5em; overflow-x: auto; }
 .top .brand { font-weight: 600; text-decoration: none; color: var(--fg); }
 .top nav { display: flex; flex-wrap: wrap; gap: .25rem .9rem; flex: 1; }
 .top nav a { text-decoration: none; }
-/* menu groups: collection · context · reference, the tools to the right; a thin line between groups */
+/* menu groups: collection · context · reference · tools; a thin line between groups */
 /* the menu on its own row under title, search and login: one line on a desktop screen */
 .top nav { column-gap: .75rem; flex-basis: 100%; order: 3; }
 .top .top-search { margin-left: auto; }
 .top nav .nav-group { display: flex; flex-wrap: wrap; gap: .25rem .75rem; }
 .top nav .nav-group + .nav-group { border-left: 1px solid var(--line); padding-left: .75rem; }
-.top nav .nav-tools { margin-left: auto; }
-.top nav .nav-tools a { color: var(--muted); }
+/* the tools (Quality, History) follow as the fourth group, like the others */
 @media (max-width: 760px) {  /* phones: the menu below the title, groups as rows without lines */
   .top nav { flex-direction: column; gap: .3rem; }
   .top .top-search { margin-left: 0; }
   .top nav .nav-group + .nav-group { border-left: 0; padding-left: 0; }
-  .top nav .nav-tools { margin-left: 0; }
 }
 form.inline { display: inline; margin: 0; }
 

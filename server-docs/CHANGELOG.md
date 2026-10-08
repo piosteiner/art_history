@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Admin: Quality and History back in line with the menu
+- **What:** the tools group follows the other three groups (separator line, normal link colour) instead of sitting
+  muted at the far right.
+- **Why:** owner: too far away and barely visible.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: reorder provenance steps by drag and drop
 - **What:** `editor/sortable.js` (generic: `[data-sortable=url]`, `.sort-item`, `.drag-handle`; pointer events, so
   mouse, pen and touch alike; keyboard ↑/↓ on the focused handle); the provenance table has one `<tbody>` per step
