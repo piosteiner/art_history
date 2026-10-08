@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Admin: the menu grouped — collection · context · reference · tools
+- **What:** `html.js` menu in groups (Artworks, Artists, People, Institutions | Events, Movements, Places, Polities |
+  Glossary, Bibliography | Quality, History on the right, muted), thin lines between groups; the menu has its own row
+  under title, search and login (one line on desktop); on phones the groups stack as rows.
+- **Why:** owner: the menu looked unsorted.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: a draft sent just before Create no longer comes back
 - **What:** `editor/live.js`: on submit, if the last draft message isn't confirmed yet, the form waits for the
   server's "saved" (at most 1 s) and then submits.
