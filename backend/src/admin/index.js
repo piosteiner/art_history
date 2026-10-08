@@ -559,9 +559,9 @@ async function relFromForm(db, body, entity, keepMetadata = {}, { reverse = fals
   const sources = String(body.sources || '').split('\n').map((s) => s.trim()).filter(Boolean);
   const { sources: _old, ...rest } = keepMetadata;
   const certainty = ['attested', 'probable', 'possible', 'disputed'].includes(body.certainty) ? body.certainty : 'attested';
-  return [subject.type, subject.id, code, objectType, objectId, period && period.range,
-    opt('period_label') ?? (period && period.label), opt('label'), certainty, opt('notes_md'),
-    JSON.stringify(sources.length ? { ...rest, sources } : rest)];
+  // the "Sources" lines are free-text citations now (050), not metadata: returned beside the column values
+  return Object.assign([subject.type, subject.id, code, objectType, objectId, period && period.range,
+    opt('period_label') ?? (period && period.label), opt('label'), certainty, opt('notes_md'), JSON.stringify(rest)], { sources });
 }
 
 function relForm({ action, types, entities, rel = {}, submit, entityType = 'entity' }) {
@@ -589,7 +589,7 @@ function relForm({ action, types, entities, rel = {}, submit, entityType = 'enti
         ${['attested', 'probable', 'possible', 'disputed'].map((c) => html`<option${c === (rel.certainty || 'attested') ? ' selected' : ''}>${c}</option>`)}</select></div>
     </div>
     <div class="field"><label for="r-notes">Notes</label><textarea class="md" id="r-notes" name="notes_md" rows="2">${v('notes_md')}</textarea><div class="hint">${HINTS.md}</div></div>
-    <div class="field"><label for="r-src">Sources</label><textarea id="r-src" name="sources" rows="2">${(rel.sources || []).join('\n')}</textarea><div class="hint">One per line.</div></div>
+    <div class="field"><label for="r-src">Sources</label><textarea id="r-src" name="sources" rows="2">${(rel.sources || []).filter((s) => typeof s === 'string').join('\n')}</textarea><div class="hint">In words, one per line. Sources of the bibliography: the marker next to the relationship on the entry's page.</div></div>
     <div class="actions"><button>${submit}</button></div>
   </form>`;
 }
@@ -628,6 +628,7 @@ router.post('/relationships/:id', async (req, res) => {
       await db.query(`UPDATE relationships SET relationship_type = $3, object_type = $4, object_id = $5, period = $6::daterange,
         period_label = $7, label = $8, certainty = $9, notes_md = $10, metadata = $11::jsonb
         WHERE id = $12 AND subject_type = $1 AND subject_id = $2`, [...p, found.id]);
+      await citations.syncText(db, { relationship: found.id }, p.sources);
     });
   } catch (err) {
     const [types, entities] = await Promise.all([relationshipTypes(adminPool, found.subject.type), allEntities(adminPool)]);
@@ -758,7 +759,11 @@ router.post('/provenance/:id', async (req, res) => {
   const step = await provenance.byId(adminPool, req.params.id);
   if (!step) return notFoundPage(req, res);
   try {
-    await withTx(req.user, async (db) => provenance.update(db, step.id, await provenance.fromForm(db, req.body, step.metadata)));
+    await withTx(req.user, async (db) => {
+      const values = await provenance.fromForm(db, req.body, step.metadata);
+      await provenance.update(db, step.id, values);
+      await citations.syncText(db, { provenance: step.id }, values.sources);
+    });
   } catch (err) {
     return provenanceEditPage(req, res, step, { status: 422, values: stepFromBody(req.body),
       flash: { kind: 'error', text: err instanceof provenance.ProvenanceError ? err.message : friendly(err) } });
@@ -1381,7 +1386,8 @@ router.get('/:plural/:slug', async (req, res) => {
           <button>Add</button> <a class="button secondary" href="/artworks/new?part_of=${e.slug}">+ New part</a></form></details>` : ''}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? numbers.section({ e, numbers: nums }) : ''}
-      ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap }) : ''}
+      ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap,
+        cites: await citations.forProvenance(adminPool, provSteps.map((s) => s.id)), marker: citations.marker, back: `${here}#provenance` }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${await (async () => {
         const relCites = await citations.forRelationships(adminPool, [...otherRels.map((x) => x.id), ...incoming.rows.filter((r) => r.source === 'relationship').map((r) => r.id)]);
@@ -1416,8 +1422,9 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
   try {
     await withTx(req.user, async (db) => {
       const p = await relFromForm(db, req.body, { type: t.type, id: e.id }, {}, { reverse: true });
-      await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period,
-        period_label, label, certainty, notes_md, metadata) VALUES ($1, $2, $3, $4, $5, $6::daterange, $7, $8, $9, $10, $11::jsonb)`, p);
+      const { rows } = await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period,
+        period_label, label, certainty, notes_md, metadata) VALUES ($1, $2, $3, $4, $5, $6::daterange, $7, $8, $9, $10, $11::jsonb) RETURNING id`, [...p]);
+      await citations.syncText(db, { relationship: rows[0].id }, p.sources);
     });
   } catch (err) {
     const [types, entities] = await Promise.all([relationshipTypes(adminPool, t.type, { reverse: true }), allEntities(adminPool)]);
@@ -1521,7 +1528,10 @@ router.post('/:plural/:slug/provenance', async (req, res) => {
   const e = t.type === 'artwork' && await findEntity(t, req.params.slug);
   if (!e) return notFoundPage(req, res);
   try {
-    await withTx(req.user, async (db) => provenance.add(db, e.id, await provenance.fromForm(db, req.body)));
+    await withTx(req.user, async (db) => {
+      const values = await provenance.fromForm(db, req.body);
+      await citations.syncText(db, { provenance: await provenance.add(db, e.id, values) }, values.sources);
+    });
   } catch (err) {
     return send(req, res, {
       title: 'Add provenance step', status: 422,

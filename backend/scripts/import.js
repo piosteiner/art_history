@@ -16,6 +16,7 @@ const { Client } = require('pg');
 const config = require('../src/config');
 const { parseFuzzyDate } = require('../src/fuzzy-date');
 const { TYPES, REL_KEYS, toRow } = require('../src/content');
+const { importCitations } = require('../src/citations-io');
 
 const CONTENT_DIR = process.env.CONTENT_DIR || path.join(__dirname, '..', '..', 'content');
 const DRY_RUN = process.argv.includes('--dry-run');
@@ -165,7 +166,7 @@ async function main() {
         if (objectId === null) { fail(e.file, `${where}: ${rel.to} does not exist`); continue; }
         let period;
         try { period = parseFuzzyDate(rel.period, { openEnd: true }); } catch (err) { fail(e.file, `${where}: period: ${err.message}`); continue; }
-        const metadata = { ...(rel.metadata || {}), ...(rel.sources ? { sources: rel.sources } : {}) };
+        const metadata = { ...(rel.metadata || {}) };  // its sources are citations (050), added below
 
         const params = [e.type, subjectId, rel.type, objectType, objectId, period && period.range,
           rel.period_label ?? (period && period.label), rel.label ?? null, rel.certainty ?? 'attested',
@@ -185,6 +186,7 @@ async function main() {
                     IS DISTINCT FROM (EXCLUDED.period_label, EXCLUDED.label, EXCLUDED.certainty, EXCLUDED.notes_md, EXCLUDED.metadata)
             RETURNING id, (xmax = 0) AS inserted`, params);
           await client.query('RELEASE SAVEPOINT rel');
+          let relId = rows.length ? rows[0].id : null;
           if (rows.length) {
             keep.add(rows[0].id);
             count(`relationships ${rows[0].inserted ? 'inserted' : 'updated'}`);
@@ -196,8 +198,10 @@ async function main() {
                 AND ((subject_type, subject_id, object_type, object_id) = ($1, $2, $4, $5)
                   OR (subject_type, subject_id, object_type, object_id) = ($4, $5, $1, $2))`, params.slice(0, 6));
             found.rows.forEach((r) => keep.add(r.id));
+            relId = found.rows.length ? found.rows[0].id : null;
             count('relationships unchanged');
           }
+          if (relId && rel.sources !== undefined) await importCitations(client, { relationship: relId }, rel.sources);
         } catch (err) {
           await client.query('ROLLBACK TO SAVEPOINT rel');
           fail(e.file, `${where} (${rel.type} → ${rel.to}): ${err.message}`);
@@ -267,7 +271,7 @@ async function main() {
         }
         Object.assign(v, { owner_label: st.owner_label ?? null, method: st.method ?? 'unknown', direct: st.direct === true,
           label: st.label ?? null, certainty: st.certainty ?? 'attested', notes_md: st.notes_md ?? null,
-          metadata: JSON.stringify(st.sources ? { sources: st.sources } : {}) });
+          metadata: '{}' });  // its sources are citations (050), added below
         const params = [artworkId, i, ...PROV_COLS.map((c) => v[c])];
         const vals = PROV_COLS.map((c, j) => `$${j + 3}${PROV_CASTS[c] || ''}`);
         try {
@@ -281,6 +285,10 @@ async function main() {
             await client.query(`INSERT INTO provenance (artwork_id, position, ${PROV_COLS.join(', ')}) VALUES ($1, $2, ${vals.join(', ')})`, params);
             count('provenance inserted');
           }
+          if (st.sources !== undefined) {
+            const step = (await client.query('SELECT id FROM provenance WHERE artwork_id = $1 AND position = $2', [artworkId, i])).rows[0];
+            await importCitations(client, { provenance: step.id }, st.sources);
+          }
           await client.query('RELEASE SAVEPOINT prov');
         } catch (err) {
           await client.query('ROLLBACK TO SAVEPOINT prov');
@@ -290,6 +298,23 @@ async function main() {
       if (PRUNE) {
         const { rowCount } = await client.query('DELETE FROM provenance WHERE artwork_id = $1 AND position >= $2', [artworkId, e.provenance.length]);
         if (rowCount) stats['provenance pruned'] = (stats['provenance pruned'] || 0) + rowCount;
+      }
+    }
+
+    // 3e. Sources of fields (citations, 049/050), for files with a sources: mapping field → list.
+    for (const e of entities.filter((x) => x.sources)) {
+      const entityId = ids.get(`${e.type}/${e.slug}`);
+      if (entityId === undefined) continue;
+      for (const [field, list] of Object.entries(e.sources)) {
+        try {
+          await client.query('SAVEPOINT cite');
+          await importCitations(client, { type: e.type, id: entityId, field }, list);
+          await client.query('RELEASE SAVEPOINT cite');
+          count('sources imported');
+        } catch (err) {
+          await client.query('ROLLBACK TO SAVEPOINT cite');
+          fail(e.file, `sources.${field}: ${err.message}`);
+        }
       }
     }
 

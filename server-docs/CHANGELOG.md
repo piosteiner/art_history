@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-08
 
+### Sources, step 2: free text as citations, sources in the API and the YAML (migration 050)
+- **What:** `citations.text` (free text, no reliability) and `citations.url` (the exact page of a website source); the
+  relationship and provenance "Sources" boxes write text citations (no more `metadata.sources`); existing lines
+  converted: Wikidata notes → Wikidata citations, Kunsthaus object pages → new source "Kunsthaus Zürich, Sammlung
+  online" (bibliography, web, institution) with url and accessed date, the rest → text; `metadata.sources` removed.
+  Markers on provenance steps; the add form takes a page url or a source in words. SQL `text_sources()`,
+  `citation_doc()`, `citation_docs()`, `field_citation_docs()`. API: `sources` per field, relationship (derived ones:
+  their provenance step's) and provenance step; full references in `bibliography`. YAML: `sources:` per entry and on
+  relationships / provenance steps, export and import (`src/citations-io.js`). Fixed on the way: the YAML import
+  rejected `numbers:` (048) as an unknown field.
+- **Why:** owner: step 2 of sources for facts.
+- **Tested:** migration dry run on prod (rolled back); YAML round trip on dev; e2e 112 passing.
+- **Revert:** redeploy the previous commit; the converted lines are citations now (`text_sources()` lists them per
+  row) — as owner drop the functions and the two columns after copying texts back into metadata if needed.
+
 ### Sources: values Wikidata agrees with are cited when comparing
 - **What:** `wikidata.apply` → `citations.citeAgreeing()`: fields where Wikidata has the same value get a (settled)
   Wikidata citation, unless one exists — so entries entered before (e.g. from YAML) get sources by comparing them.

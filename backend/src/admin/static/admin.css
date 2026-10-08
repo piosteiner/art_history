@@ -330,6 +330,7 @@ details.cite > summary::-webkit-details-marker { display: none; }
 .cite-institution { color: var(--accent-fg); background: var(--accent); border-color: var(--accent); }
 .cite-scholarly, .cite-primary { color: var(--bg); background: var(--ok); border-color: var(--ok); }
 .cite-none { border-style: dashed; }
+.cite-text { font-style: italic; }
 .cite-outdated { color: var(--bg); background: var(--err); border-color: var(--err); }
 .cite-pending { border-style: dotted; }
 .cite-warn { color: var(--err); }

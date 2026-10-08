@@ -128,6 +128,29 @@ images:
 The import matches images by `url` per entry (order and the other fields are updated); images no longer listed are
 removed only with `--prune`. Files without an `images:` key leave the entry's images alone.
 
+## Sources
+Where a fact comes from (citations, migrations 049/050) — per field of an entry, and on every relationship and
+provenance step (`sources:` there). Each item is a line of text (a note), a source of the bibliography or Wikidata:
+
+```yaml
+sources:
+  dimensions:
+    - source: van-gogh-museum-collection   # a bibliography slug
+      url: https://www.vangoghmuseum.nl/…  # the exact page (optional)
+      accessed: 2026-10-08
+  created:
+    - wikidata: Q45585
+      property: P571
+      accessed: 2026-10-08
+    - source: faille-1970
+      locator: "F 612"                     # page, catalogue number
+relationships:
+  - type: lived_in
+    to: place/arles
+    sources: [Letter 577]                  # in words
+```
+The import adds missing ones (lines of text replace the old lines); the export writes them all.
+
 ## Relationships
 Listed in the file of the **subject** — the entity the sentence starts with ("Van Gogh *lived in* Arles").
 

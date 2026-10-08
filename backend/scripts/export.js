@@ -47,6 +47,9 @@ async function main() {
           const nums = await readNumbers(client, id);
           if (nums.length) doc.numbers = nums;
         }
+        // where its facts come from (citations, 049/050): {field: [line | {source, locator …} | {wikidata …}]}
+        const cited = (await client.query('SELECT field_citation_docs($1, $2) AS s', [t.type, id])).rows[0].s;
+        if (cited) doc.sources = cited;
         const file = path.join(dir, `${slug}.yaml`);
         // Lists of plain values inline ([a, b]) like the hand-written files; relationships stay one per block.
         const yaml = new YAML.Document(doc, { schema: 'core' });

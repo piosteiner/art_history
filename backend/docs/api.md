@@ -189,6 +189,22 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - artist: `artworks` (including co-created ones: `co_creator: true`, `role`) · institution: `artworks`, `place` · artwork: `creator`, `creators`, `attribution_label`, `institution` ·
   place: `ancestors` (Arles → France), `children`, `institutions` · movement: `ancestors`, `children`.
 
+### Sources for facts (every detail, migrations 049/050)
+Where each fact comes from. The detail has `sources`: `{field: [citation]}` for its fields (`birth`, `created`,
+`dimensions`, `institution`, `place` … — the doc keys), every item of `relationships` and of `provenance` has
+`sources: [citation]` (a derived relationship — owned by, kept in — has its provenance step's). A citation:
+`{kind, reliability, text, source?, wikidata?, locator, url, accessed, note, outdated}`
+- `kind`: `source` (an entry of the bibliography: `source: {slug, siglum}`; its full reference is in the response's
+  `bibliography` map, like the sources its texts cite), `wikidata` (`wikidata: {item, property, url}`), `text`
+  (a note in words, not verified).
+- `reliability`: `database` (Wikidata, aggregators) < `institution` (museum, collection database) < `scholarly`
+  (catalogue raisonné, literature) < `primary` (archive, letters); `null` for `text`. Show the best one, weaker ones as
+  "also".
+- `text`: the short form to show — "Busch 1993, S. 45", "Kunsthaus Zürich, Sammlung online", "Wikidata, Q45585, P2048".
+- `url`: the exact page (an object page of a museum website source); `accessed`: `YYYY-MM-DD`.
+- `outdated: true`: the value changed after the source was cited — show it muted or not at all.
+Fields without citations have no key in `sources`.
+
 ### Numbers and loans (artworks, migration 048)
 `inventory_number` is the number of the institution where the work is now (`institution`). The detail adds `numbers`:
 further numbers in order — `[{number, label, institution: {slug, name} | null, source: {slug, name} | null}]`: the

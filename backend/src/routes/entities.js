@@ -238,7 +238,8 @@ const RELATIONSHIPS_SQL = `
                             'period', range_json(o.period, o.period_label)) AS entity,
          range_json(r.period, r.period_label) AS period,
          r.label AS note, r.certainty, r.notes_md,
-         r.source <> 'relationship' AS derived, r.end_basis  -- derived: the creator field or the provenance (031)
+         r.source <> 'relationship' AS derived, r.end_basis,  -- derived: the creator field or the provenance (031)
+         CASE WHEN r.source = 'relationship' THEN r.id END AS _rel_id, r.provenance_id AS _prov_id  -- for their sources
   FROM edges r
   JOIN relationship_types rt ON rt.code = r.relationship_type
   -- the "other" end: object for outgoing edges, subject for incoming ones
@@ -302,7 +303,7 @@ const EXTRAS = {
              p.owner_label, p.owner_name, range_json(p.acquired, p.acquired_label) AS acquired, range_json(p.ended, p.ended_label) AS ended,
              p.method, p.direct, p.label, p.certainty,
              (SELECT jsonb_build_object('slug', l.slug, 'name', l.name) FROM places l WHERE l.id = p.location_id) AS place,
-             range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.metadata->'sources' AS sources
+             range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.id AS _prov_id
       FROM provenance_periods p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
       WHERE p.artwork_id = $1 ORDER BY p.position`, [id])).rows,
   }),
@@ -481,6 +482,38 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       const own = (await bibliography.loadCatalogue(apiPool)).get(entity.slug);
       Object.assign(body, { siglum: own.siglum, citation: own.full });
     }
+    // Sources for facts (citations, 049/050): of its fields, its relationships, its provenance steps — each as
+    // { kind, reliability, text, source?, wikidata?, locator, url, accessed, note, outdated }; the full references of the
+    // bibliography sources among them join the `bibliography` map (like those its texts cite).
+    const catalogue = await bibliography.loadCatalogue(apiPool);
+    const { rows: citeRows } = await apiPool.query(`
+      SELECT c.*, b.kind::text AS source_kind FROM citation_status c LEFT JOIN bibliography b ON b.id = c.source_id
+      WHERE c.pending IS NULL AND ((c.entity_type = $1 AND c.entity_id = $2) OR c.relationship_id = ANY ($3::bigint[])
+                                   OR c.provenance_id = ANY ($4::bigint[]))
+      ORDER BY c.reliability DESC NULLS LAST, c.id`,
+    [e.type, id, rels.map((r) => r._rel_id).filter(Boolean), [...rels.map((r) => r._prov_id), ...steps.map((p) => p._prov_id)].filter(Boolean)]);
+    const shape = (c) => {
+      const out = { kind: c.wikidata_item ? 'wikidata' : c.source_id ? 'source' : 'text', reliability: c.reliability };
+      if (c.wikidata_item) {
+        out.text = `Wikidata, ${c.wikidata_item}${c.wikidata_property ? `, ${c.wikidata_property}` : ''}`;
+        out.wikidata = { item: c.wikidata_item, property: c.wikidata_property, url: `https://www.wikidata.org/wiki/${c.wikidata_item}` };
+      } else if (c.source_id) {
+        const s = catalogue.get(c.source_slug);
+        out.text = [s ? s.siglum : c.source_text, bibliography.locator(c.locator, c.source_kind)].filter(Boolean).join(', ');
+        out.source = { slug: c.source_slug, siglum: s ? s.siglum : null };
+        if (s) cited[c.source_slug] = { siglum: s.siglum, citation: s.full };
+      } else out.text = c.text;
+      Object.assign(out, { locator: c.locator, url: c.url, accessed: c.accessed ? c.accessed.toISOString().slice(0, 10) : null,
+        note: c.note, outdated: !!c.outdated });
+      return out;
+    };
+    const group = (pick) => (list) => list.reduce((acc, c) => { (acc[pick(c)] ||= []).push(shape(c)); return acc; }, {});
+    const byField = group((c) => c.field)(citeRows.filter((c) => c.entity_id !== null));
+    const byRel = group((c) => c.relationship_id)(citeRows.filter((c) => c.relationship_id !== null));
+    const byProv = group((c) => c.provenance_id)(citeRows.filter((c) => c.provenance_id !== null));
+    relationships.forEach((r) => { r.sources = (r._rel_id ? byRel[r._rel_id] : r._prov_id ? byProv[r._prov_id] : null) || []; delete r._rel_id; delete r._prov_id; });
+    steps.forEach((p) => { p.sources = byProv[p._prov_id] || []; delete p._prov_id; });
+    body.sources = byField;
     res.json({ type: e.type, ...body, ...extras, relationships, glossary, bibliography: cited, entries });
   });
 }

@@ -719,8 +719,7 @@ async function apply(db, t, entity, plan, choices, userId) {
       const period = s.period ? parseFuzzyDate(s.period, { openEnd: true }) : null;
       const ins = await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label, metadata)
         VALUES ($1, $2, $3, $4, $5, $6::daterange, $7, $8::jsonb) ON CONFLICT DO NOTHING RETURNING id`,
-      [st, si, s.type.replace('~', ''), ot, oi, period && period.range, s.period_label || (period && period.label),
-        JSON.stringify({ sources: [sourceNote(plan.qid)] })]);
+      [st, si, s.type.replace('~', ''), ot, oi, period && period.range, s.period_label || (period && period.label), '{}']);
       if (ins.rows.length) await citations.citeRelationshipFromWikidata(db, ins.rows[0].id, plan.qid, s.prop);
       relationships += 1;
     }

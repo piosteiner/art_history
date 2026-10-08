@@ -9,6 +9,7 @@ const cites = (type, slug) => sql(`SELECT string_agg(field || ':' || coalesce(wi
 
 test.afterAll(() => {
   sql(`DELETE FROM artists WHERE slug IN ('claude-monet-cite', 'claude-monet');
+       DELETE FROM citations WHERE source_id = entity_id('source', 'van-gogh-museum-website-test');
        DELETE FROM bibliography WHERE slug = 'van-gogh-museum-website-test';
        DELETE FROM places WHERE wikidata_id IN ('Q101') AND slug LIKE 'giverny%'`);
 });
@@ -75,4 +76,35 @@ test('values Wikidata agrees with are cited when comparing — nothing to take, 
   // birth: the same as ours → cited and settled at once; death (empty here, taken) waits for Publish
   expect(cites('artist', 'claude-monet-cite')).toBe('birth:Q100:false death:Q100:true');
   sql("DELETE FROM live_docs WHERE entity_type = 'artist'");
+});
+
+test('free-text sources are citations (T); the API gives every fact its sources, with the full reference', async ({ userA, request }) => {
+  const api = async (path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+  // the "Sources" box of a relationship: lines → free-text citations
+  const relId = sql(`SELECT r.id FROM relationships r WHERE r.subject_type = 'artist' AND r.subject_id = entity_id('artist', 'vincent-van-gogh')
+                     AND r.relationship_type = 'lived_in' ORDER BY r.id LIMIT 1`);
+  await userA.goto(`/relationships/${relId}/edit`);
+  await userA.fill('#r-src', 'Letter 577\nNaifeh/Smith 2011');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form button:has-text("Save")')]);
+  expect(sql(`SELECT string_agg(text, ' | ' ORDER BY id) FROM citations WHERE relationship_id = ${relId}`)).toBe('Letter 577 | Naifeh/Smith 2011');
+  await userA.goto(`/relationships/${relId}/edit`);
+  await expect(userA.locator('#r-src')).toHaveValue('Letter 577\nNaifeh/Smith 2011');
+  await userA.fill('#r-src', 'Letter 577');                               // a line removed: its citation goes
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form button:has-text("Save")')]);
+  expect(sql(`SELECT string_agg(text, ' | ') FROM citations WHERE relationship_id = ${relId}`)).toBe('Letter 577');
+
+  // a bibliography source with the exact page, for a field
+  sql(`INSERT INTO bibliography (slug, kind, name, siglum, url) VALUES ('van-gogh-museum-website-test', 'web', 'Collection', 'Van Gogh Museum, Collection', 'https://www.vangoghmuseum.nl/')
+         ON CONFLICT (slug) DO UPDATE SET siglum = EXCLUDED.siglum;
+       INSERT INTO citations (entity_type, entity_id, field, source_id, url, accessed, cited_value)
+       SELECT 'artist', a.id, 'birth', entity_id('source', 'van-gogh-museum-website-test'), 'https://www.vangoghmuseum.nl/en/about/knowledge-and-research',
+              '2026-10-08', field_value(to_jsonb(a), '{birth,birth_label}') FROM artists a WHERE a.slug = 'vincent-van-gogh'`);
+  const v = await api('/artists/vincent-van-gogh');
+  expect(v.sources.birth).toEqual([{ kind: 'source', reliability: 'institution', text: 'Van Gogh Museum, Collection',
+    source: { slug: 'van-gogh-museum-website-test', siglum: 'Van Gogh Museum, Collection' }, locator: null,
+    url: 'https://www.vangoghmuseum.nl/en/about/knowledge-and-research', accessed: '2026-10-08', note: null, outdated: false }]);
+  expect(v.bibliography['van-gogh-museum-website-test'].citation).toContain('Collection');
+  const lived = v.relationships.find((r) => r.type === 'lived_in' && r.sources.length);
+  expect(lived.sources).toEqual([{ kind: 'text', reliability: null, text: 'Letter 577', locator: null, url: null, accessed: null, note: null, outdated: false }]);
+  sql(`DELETE FROM citations WHERE relationship_id = ${relId} OR source_id = entity_id('source', 'van-gogh-museum-website-test')`);
 });

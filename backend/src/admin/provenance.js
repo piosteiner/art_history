@@ -58,10 +58,11 @@ async function fromForm(db, body, keepMetadata = {}) {
   v.label = text('label');
   v.certainty = CERTAINTY.includes(body.certainty) ? body.certainty : 'attested';
   v.notes_md = text('notes_md');
+  // the "Sources" lines are free-text citations now (050): returned beside the column values
   const sources = String(body.sources || '').split('\n').map((s) => s.trim()).filter(Boolean);
   const { sources: _old, ...rest } = keepMetadata;
-  v.metadata = JSON.stringify(sources.length ? { ...rest, sources } : rest);
-  return COLS.map((c) => v[c]);
+  v.metadata = JSON.stringify(rest);
+  return Object.assign(COLS.map((c) => v[c]), { sources });
 }
 
 // One step with its artwork, for the edit page and the redirect back.
@@ -71,7 +72,7 @@ async function byId(db, id) {
     SELECT p.*, w.slug AS artwork_slug, w.title AS artwork_title,
            (SELECT o.type::text || '/' || o.slug FROM entity_index o
              WHERE (o.type, o.id) = (pp.owner_type, pp.owner_id)) AS owner_ref,
-           (SELECT slug FROM places WHERE id = p.location_id) AS location_slug
+           (SELECT slug FROM places WHERE id = p.location_id) AS location_slug, text_sources(NULL, p.id) AS text_sources
     FROM provenance p JOIN artworks w ON w.id = p.artwork_id JOIN provenance_periods pp ON pp.id = p.id
     WHERE p.id = $1`, [id]);
   if (!rows.length) return null;
@@ -87,15 +88,16 @@ function formValues(step) {
     acquired: acquired.value || '', acquired_label: acquired.label || '',
     ended: ended.value || '', ended_label: ended.label || '',
     method: step.method, direct: step.direct, location: step.location_slug || '', label: step.label || '',
-    certainty: step.certainty, notes_md: step.notes_md || '', sources: (step.metadata && step.metadata.sources) || [],
+    certainty: step.certainty, notes_md: step.notes_md || '', sources: step.text_sources || [],
   };
 }
 
 async function add(db, artworkId, values) {
   // appended at the end of the chain
-  await db.query(`INSERT INTO provenance (artwork_id, position, ${COLS.join(', ')})
+  const { rows } = await db.query(`INSERT INTO provenance (artwork_id, position, ${COLS.join(', ')})
     VALUES ($1, (SELECT coalesce(max(position) + 1, 0) FROM provenance WHERE artwork_id = $1),
-            ${COLS.map((c, i) => `$${i + 2}${CASTS[c] || ''}`).join(', ')})`, [artworkId, ...values]);
+            ${COLS.map((c, i) => `$${i + 2}${CASTS[c] || ''}`).join(', ')}) RETURNING id`, [artworkId, ...values]);
+  return rows[0].id;
 }
 
 async function update(db, id, values) {
@@ -176,12 +178,12 @@ function form({ action, step = {}, submit }) {
 
 // The "Provenance" section of an artwork's page: the chain in order, with the computed periods; between two steps
 // "↓" (documented direct) or "⋮ gap" (not documented); reorder, edit, add.
-function section({ e, steps, names }) {
+function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
   const moveBtn = (s, dir, label) => html`<form method="post" action="/provenance/${s.id}/move" class="inline">
     <input type="hidden" name="dir" value="${dir}"><button class="link" title="Move ${dir === 'up' ? 'earlier' : 'later'}">${label}</button></form>`;
   return html`<h2 id="provenance">Provenance</h2>
     ${steps.length ? html`<div class="table-wrap"><table class="provenance"><tbody>${steps.map((s, i) => html`
-      ${i > 0 ? html`<tr class="transfer muted small"><td></td><td colspan="5">${s.direct ? '↓ passed on directly' : '⋮ not documented as direct'}</td></tr>` : ''}
+      ${i > 0 ? html`<tr class="transfer muted small"><td></td><td colspan="6">${s.direct ? '↓ passed on directly' : '⋮ not documented as direct'}</td></tr>` : ''}
       <tr><td>${i + 1}.</td>
         <td>${s.owner_slug ? html`<a href="/${BY_TYPE[s.owner_type].folder}/${s.owner_slug}">${s.owner_name}</a>` : s.owner_label}</td>
         <td>${[methodLabel(s.method) !== 'unknown' && methodLabel(s.method), s.acquired_label].filter(Boolean).join(', ') || html`<span class="muted">undated</span>`}
@@ -190,6 +192,7 @@ function section({ e, steps, names }) {
         <td>${s.period_label || ''}${END_BASIS[s.end_basis] ? html` <span class="tag ${s.end_basis}">${END_BASIS[s.end_basis]}</span>` : ''}
           ${s.certainty !== 'attested' ? html` <span class="muted">· ${s.certainty}</span>` : ''}
           ${s.notes_md ? html`<div class="md small">${raw(renderMarkdown(s.notes_md, { names }))}</div>` : ''}</td>
+        <td>${marker ? marker(cites[s.id], { provenance: s.id }, back) : ''}</td>
         <td class="nowrap">${i > 0 ? moveBtn(s, 'up', '↑') : ''}${i < steps.length - 1 ? moveBtn(s, 'down', '↓') : ''}
           <a href="/provenance/${s.id}/edit">edit</a></td></tr>`)}</tbody></table></div>`
     : html`<p class="muted">None yet. The owners in order, as the sources record them: when each acquired the work and how.</p>`}

@@ -92,7 +92,7 @@ function toRow(doc, fields) {
   const put = (col, value, expr = '$') => { cols[col] = [expr, value]; };
 
   for (const key of Object.keys(doc)) {
-    if (key === 'relationships' || key === 'images' || key === 'provenance' || key === 'slug') continue;
+    if (['relationships', 'images', 'provenance', 'numbers', 'sources', 'slug'].includes(key)) continue;  // their own parts, below
     if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;
     if (key.endsWith('_lang') && fields[key.slice(0, -'_lang'.length)] === 'name') continue;
     if (LEGACY_ALT.includes(key) && fields.names === 'names') continue;  // older YAML: alt_names / alt_titles
@@ -216,6 +216,21 @@ function toRow(doc, fields) {
       });
     }
   }
+  // sources (049/050): {field: [line | {source, locator, url, accessed, note} | {wikidata, property, accessed}]}
+  let sources = null;
+  if (doc.sources !== undefined && doc.sources !== null) {
+    if (typeof doc.sources !== 'object' || Array.isArray(doc.sources)) errors.push('sources must be a mapping field → list');
+    else {
+      sources = doc.sources;
+      for (const [field, list] of Object.entries(sources)) {
+        if (!Array.isArray(list)) { errors.push(`sources.${field}: must be a list`); continue; }
+        list.forEach((c, i) => {
+          if (typeof c === 'string') return;
+          if (!c || typeof c !== 'object' || (!c.source && !c.wikidata)) errors.push(`sources.${field}[${i}]: a line of text, {source: slug, …} or {wikidata: Q…, …}`);
+        });
+      }
+    }
+  }
   // numbers (artworks, 048): [{number, institution | source, label}] in order; null = key absent
   let numbers = null;
   if (doc.numbers !== undefined) {
@@ -235,7 +250,7 @@ function toRow(doc, fields) {
       });
     }
   }
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, errors };
+  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, sources, errors };
 }
 
 // Stored date → { value: '1886-03/1888-02-20', label } where label is null when it is just the generated one.
@@ -304,7 +319,8 @@ async function readDocs(db, t, where = 'true', params = []) {
 async function readRelationships(db, type, id) {
   const { rows } = await db.query(`
     SELECT r.id, r.relationship_type AS type, o.type::text || '/' || o.slug AS "to", o.name AS to_name,
-           r.period::text AS period, r.period_label, r.label, r.certainty::text AS certainty, r.notes_md, r.metadata
+           r.period::text AS period, r.period_label, r.label, r.certainty::text AS certainty, r.notes_md, r.metadata,
+           citation_docs(r.id, NULL) AS sources
     FROM relationships r JOIN entity_index o ON o.type = r.object_type AND o.id = r.object_id
     JOIN relationship_types rt ON rt.code = r.relationship_type
     WHERE r.subject_type = $1 AND r.subject_id = $2
@@ -317,8 +333,9 @@ async function readRelationships(db, type, id) {
     if (r.label !== null) rel.label = r.label;
     if (r.certainty !== 'attested') rel.certainty = r.certainty;
     if (r.notes_md !== null) rel.notes_md = r.notes_md;
-    const { sources, ...rest } = r.metadata || {};
-    if (sources !== undefined) rel.sources = sources;
+    // its sources are citations (050): free text as lines, the others as {source, locator …} / {wikidata, property …}
+    if (r.sources) rel.sources = r.sources;
+    const { sources: _legacy, ...rest } = r.metadata || {};
     if (Object.keys(rest).length) rel.metadata = rest;
     return { id: r.id, to_name: r.to_name, rel };
   });
@@ -354,7 +371,7 @@ async function readProvenance(db, artworkId) {
   const { rows } = await db.query(`
     SELECT o.type::text || '/' || o.slug AS owner, p.owner_label, p.acquired::text AS acquired, p.acquired_label,
            p.ended::text AS ended, p.ended_label, p.method::text AS method, p.direct, l.slug AS place, p.label,
-           p.certainty::text AS certainty, p.notes_md, p.metadata
+           p.certainty::text AS certainty, p.notes_md, p.metadata, citation_docs(NULL, p.id) AS sources
     FROM provenance p
     LEFT JOIN entity_index o ON (o.type, o.id) = (CASE WHEN p.owner_artist_id IS NOT NULL THEN 'artist' WHEN p.owner_person_id IS NOT NULL THEN 'person'
                                                        WHEN p.owner_institution_id IS NOT NULL THEN 'institution' ELSE 'place' END::entity_type,
@@ -376,7 +393,7 @@ async function readProvenance(db, artworkId) {
     if (r.label) st.label = r.label;
     if (r.certainty !== 'attested') st.certainty = r.certainty;
     if (r.notes_md) st.notes_md = r.notes_md;
-    if (r.metadata && r.metadata.sources) st.sources = r.metadata.sources;
+    if (r.sources) st.sources = r.sources;  // citations (050)
     return st;
   });
 }
