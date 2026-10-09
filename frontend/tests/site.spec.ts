@@ -860,3 +860,17 @@ test('explore: an events layer that follows the time window, and events on the t
   await toggle.locator('input').uncheck();
   await expect(page.locator('#timeline')).not.toContainText('Bührle trial');
 });
+
+test('full screen map: legend and layer switches come along, the button leaves it again', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('#map-status')).toContainText('places');
+  const wrap = page.locator('.map-wrap');
+  await page.click('.maplibregl-ctrl-fullscreen');
+  // headless browsers may refuse the Fullscreen API; then MapLibre fills the window itself
+  await expect.poll(() => wrap.evaluate((el) => document.fullscreenElement === el || el.classList.contains('maplibregl-pseudo-fullscreen'))).toBe(true);
+  const box = (await page.locator('#map').boundingBox())!;
+  expect(box.height).toBeGreaterThan(page.viewportSize()!.height * 0.5);
+  await expect(wrap.locator('#legend .route-key').first()).toBeVisible();
+  await page.click('.maplibregl-ctrl-shrink');
+  await expect.poll(() => wrap.evaluate((el) => document.fullscreenElement === el || el.classList.contains('maplibregl-pseudo-fullscreen'))).toBe(false);
+});

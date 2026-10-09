@@ -61,10 +61,10 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     <div class="map-wrap">
       <div class="map" id="map"></div>
       <div class="legend" id="legend"></div>
-    </div>
-    <div class="layer-toggles">
-      <label class="sites-toggle" id="sites-toggle" hidden><input type="checkbox" checked> <span></span></label>
-      <label class="sites-toggle" id="events-toggle" hidden><input type="checkbox" checked> <span></span></label>
+      <div class="layer-toggles">
+        <label class="sites-toggle" id="sites-toggle" hidden><input type="checkbox" checked> <span></span></label>
+        <label class="sites-toggle" id="events-toggle" hidden><input type="checkbox" checked> <span></span></label>
+      </div>
     </div>
     <p class="map-status muted" id="map-status"></p>
     <section class="encounters" id="encounters" hidden aria-live="polite"></section>

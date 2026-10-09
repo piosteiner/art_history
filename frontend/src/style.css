@@ -92,6 +92,14 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .map-wrap { position: relative; }
 .map { height: min(62vh, 560px); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: var(--map-bg); }
 .map-small { height: 360px; }
+/* full screen (button on the map): the map fills the screen, legend and layer switches stay underneath */
+.map-wrap:fullscreen, .detail-side:fullscreen, .map-wrap.maplibregl-pseudo-fullscreen, .detail-side.maplibregl-pseudo-fullscreen {
+  display: flex; flex-direction: column; background: var(--bg); padding: .5rem; box-sizing: border-box;
+}
+.map-wrap:fullscreen .map, .detail-side:fullscreen .map, .maplibregl-pseudo-fullscreen .map { flex: 1 1 auto; height: auto; min-height: 0; }
+.map-wrap:fullscreen .legend, .detail-side:fullscreen .legend, .maplibregl-pseudo-fullscreen .legend,
+.map-wrap:fullscreen .layer-toggles, .maplibregl-pseudo-fullscreen .layer-toggles { flex: none; max-height: 30vh; overflow-y: auto; }
+.maplibregl-pseudo-fullscreen { height: 100dvh !important; } /* mobile browser bars */
 .map-status { min-height: 1.5em; font-size: .9rem; margin: .4rem 0 1rem; }
 .legend { display: flex; flex-wrap: wrap; gap: .3rem 1rem; font-size: .82rem; color: var(--muted); margin-top: .4rem; }
 .legend span { display: inline-flex; align-items: center; gap: .35rem; }

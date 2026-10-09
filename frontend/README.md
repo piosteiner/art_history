@@ -64,7 +64,8 @@ from a 12-colour palette in a stable order, named in the legend (hover/click hig
 and in popups;
 hover = highlight + name, click = stops). Clicking a place lists what happened there (who, what, when, note). Entries chosen → their routes, one colour each (same colour on
 the timeline; at most 24 drawn). Time window → presence in the window, limited to the selection, plus the routes through
-the stops inside the window. A remembered view (time window, picks) says so above the map, with "Start fresh".
+the stops inside the window. The full-screen button on the map (every map) enlarges the map together with its legend and layer
+switches (`createMap(container, fullscreen)`; on iPhone, without a Fullscreen API, it fills the window). A remembered view (time window, picks) says so above the map, with "Start fresh".
 
 ## People
 Formerly patrons (API migration 024): `/people`, type `person`, with kind, occupations, life dates (else `active`)

@@ -1,5 +1,5 @@
 // MapLibre setup and the three kinds of map content: one entity's places, all places, presence in a time window.
-import { LngLatBounds, Map as MapLibre, NavigationControl, Popup, setWorkerUrl } from 'maplibre-gl';
+import { FullscreenControl, LngLatBounds, Map as MapLibre, NavigationControl, Popup, setWorkerUrl } from 'maplibre-gl';
 import type { ExpressionSpecification, GeoJSONSource, MapLayerMouseEvent } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 // MapLibre 6 loads its worker from a separate module; let Vite bundle it and tell MapLibre where it is.
@@ -33,7 +33,8 @@ export const COLORS = {
   event: '#d4237a', // events: fires, trials, auctions, exhibitions
 };
 
-export function createMap(container: HTMLElement): MapLibre {
+/** `fullscreen`: what the full-screen button enlarges — by default the map's parent, so its legend and layer switches come along. */
+export function createMap(container: HTMLElement, fullscreen: HTMLElement | null = container.parentElement): MapLibre {
   const map = new MapLibre({
     container,
     style: style(),
@@ -43,6 +44,8 @@ export function createMap(container: HTMLElement): MapLibre {
     cooperativeGestures: false,
   });
   map.addControl(new NavigationControl({ showCompass: false }), 'top-right');
+  // the Fullscreen API where there is one; elsewhere (iPhone) MapLibre fills the window instead (.maplibregl-pseudo-fullscreen)
+  map.addControl(new FullscreenControl(fullscreen ? { container: fullscreen } : {}), 'top-right');
   // development only: lets browser tests find places on screen (map.project); not in the production build
   if (import.meta.env.DEV) ((window as unknown as { __maps?: MapLibre[] }).__maps ??= []).push(map);
   return map;
