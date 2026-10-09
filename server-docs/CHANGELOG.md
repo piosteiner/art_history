@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Fix: Change type failed for artists and into places / movements (migration 056)
+- **What:** `convert_entry` re-created with `array_append(cols, '…')` instead of `cols || '…'` (Postgres read the
+  untyped literal as an array: "malformed array literal"). Nothing had changed when it failed (rolled back).
+- **Why:** owner: changing Andrew W. Mellon and Robert Sterling Clark from artists to people failed. 055's tests only
+  covered institution → person.
+- **Tested:** dry run of both real conversions on prod (rolled back: everything comes along, nothing dropped); e2e
+  (types.spec: artist → person, institution → movement).
+- **Revert:** redeploy the previous commit (055's function returns).
+
 ### The wrong kind of entry: warned, and moved to another type (migration 055)
 - **What:** `type_doubt()` (name heuristic) → hint in the live box of new entries and quality check `type_doubtful`;
   `wikidata.typesOf()` (a Wikidata item's class) → a warning on the review page with the way to the right type, and a

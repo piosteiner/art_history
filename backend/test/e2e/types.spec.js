@@ -62,3 +62,17 @@ test('change type: an institution becomes a person — preview, relationships an
   expect(old.status()).toBe(301);
   expect(old.headers().location).toBe('/v1/people/henry-clay-frick');
 });
+
+test('change type from an artist (biography → description) and into a movement (needs a kind) — the cases 055 got wrong', async ({ userA }) => {
+  sql(`INSERT INTO artists (slug, name, biography_md, birth, birth_label) VALUES ('andrew-w-mellon-test', 'Andrew W. Mellon', 'Banker and collector.', '[1855-03-24,1855-03-25)', '24 March 1855');
+       INSERT INTO institutions (slug, name) VALUES ('group-test', 'Group Test')`);
+  await userA.goto('/artists/andrew-w-mellon-test/convert?to=person');
+  await expect(userA.locator('.merge-summary')).toContainText('description_md');
+  await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
+  await expect(userA).toHaveURL(/\/people\/andrew-w-mellon-test\?done=converted/);
+  expect(sql("SELECT description_md || ' · ' || birth_label FROM people WHERE slug = 'andrew-w-mellon-test'")).toBe('Banker and collector. · 24 March 1855');
+  await userA.goto('/institutions/group-test/convert?to=movement');
+  await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
+  await expect(userA).toHaveURL(/\/movements\/group-test\?done=converted/);
+  sql("DELETE FROM people WHERE slug = 'andrew-w-mellon-test'; DELETE FROM movements WHERE slug = 'group-test'");
+});
