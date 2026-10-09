@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Admin: the quick select of sources remembers the exact page
+- **What:** `citations.recentSources()` returns one chip per source *and page* (`DISTINCT ON (source_id, url)`, the
+  latest citation of each); the chip sends that citation's id (`pick`) and `citations.add()` copies its source and
+  page (a page typed now wins; accessed = today). Chips of web sources show the end of the page's address
+  ("…/item/752012").
+- **Why:** owner: a chip of the Kunsthaus collection cited the website, not the object's page.
+- **Tested:** e2e 120 passing (citations.spec: a page chip cites the same page).
+- **Revert:** redeploy the previous commit.
+
 ### Fix: menus of optional values always saved their first value (title status, a source's reliability / reading status)
 - **What:** enum menus of nullable columns get an empty first choice (`formContext` → `enumsNullable`; for the title
   "original — not a translation"); readable names for the title statuses; label "Title: original or translation".

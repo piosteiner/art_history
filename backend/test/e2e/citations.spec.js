@@ -224,3 +224,25 @@ test('without reloading: a source added stays in the quick select of the other f
   expect(await userA.evaluate(() => window.notReloaded)).toBe(true);
   sql(`DELETE FROM citations WHERE source_id = entity_id('source', 'quick-test-catalogue'); DELETE FROM bibliography WHERE slug = 'quick-test-catalogue'`);
 });
+
+test('the quick select remembers the exact page: a museum object page is one chip, and cites that page again', async ({ userA }) => {
+  sql(`DELETE FROM citations WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'paul-gauguin');
+       DELETE FROM citations WHERE url LIKE 'https://collection.chip-museum.org/%'; DELETE FROM bibliography WHERE url LIKE 'https://collection.chip-museum.org/%'`);
+  await userA.goto('/artists/paul-gauguin');
+  const dialog = (label) => userA.locator(`dt:has-text("${label}") + dd details.cite`);
+  await dialog('Birth').locator('> summary').click();
+  await dialog('Birth').locator('input[name=url]').fill('https://collection.chip-museum.org/de/collection/item/752012/');
+  await dialog('Birth').locator('.cite-submit').click();
+  await expect(dialog('Birth').locator('.cite-status')).toHaveText('Source added.');
+  await userA.keyboard.press('Escape');
+  // in the other dialogs: a chip with the page's end, not just the website
+  await dialog('Death').locator('> summary').click();
+  const chip = dialog('Death').locator('.cite-chip', { hasText: 'item/752012' });
+  await expect(chip).toContainText('collection.chip-museum.org');
+  await chip.click();
+  await expect(dialog('Death').locator('.cite-status')).toHaveText('Source added.');
+  expect(sql(`SELECT string_agg(field || ' ' || url, ', ' ORDER BY field) FROM citations
+              WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'paul-gauguin')`))
+    .toBe('birth https://collection.chip-museum.org/de/collection/item/752012/, death https://collection.chip-museum.org/de/collection/item/752012/');
+  sql(`DELETE FROM citations WHERE url LIKE 'https://collection.chip-museum.org/%'; DELETE FROM bibliography WHERE url LIKE 'https://collection.chip-museum.org/%'`);
+});

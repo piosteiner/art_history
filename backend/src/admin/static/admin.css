@@ -383,3 +383,4 @@ body.sorting, body.sorting * { cursor: grabbing !important; user-select: none; }
 .cite-chip-scholarly, .cite-chip-primary { border-left: 4px solid var(--ok); }
 .cite-also { display: flex; flex-wrap: wrap; gap: .1rem .9rem; margin: .3rem 0 .5rem; }
 .cite-also > div { flex-basis: 100%; }
+.cite-chip-page { color: var(--muted); font-size: .8em; }

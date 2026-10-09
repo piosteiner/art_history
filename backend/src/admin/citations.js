@@ -82,9 +82,16 @@ async function syncText(db, target, lines) {
 async function add(db, body, userId, { pending = null, pendingByField = null } = {}) {
   const text = (k) => String(body[k] ?? '').trim() || null;
   // the source: a quick-select chip (button name=source) or the field — both arrive as "source"; the chosen one wins
-  const sourceSlug = [].concat(body.source ?? []).map((x) => String(x).trim()).filter(Boolean).pop() || null;
+  let sourceSlug = [].concat(body.source ?? []).map((x) => String(x).trim()).filter(Boolean).pop() || null;
   const free = text('text');
-  const url = text('url');
+  let url = text('url');
+  // a quick-select chip: a recent citation — the same source and the same page (a page typed now wins)
+  if (/^\d+$/.test(String(body.pick || ''))) {
+    const { rows } = await db.query(`SELECT b.slug, c.url FROM citations c JOIN bibliography b ON b.id = c.source_id WHERE c.id = $1`, [body.pick]);
+    if (!rows.length) throw new CitationError('That source is not in the list any more — pick it again in the field.');
+    sourceSlug = rows[0].slug;
+    if (!url) url = rows[0].url;
+  }
   if (url && !/^https?:\/\/[^\s/]+\.[^\s]+$/.test(url)) throw new CitationError('Link: a web address (https://…).');
   if (!sourceSlug && !free && !url) throw new CitationError('Paste the link of the page, pick a source of the bibliography — or describe the source in words.');
   let sourceId = null;
@@ -210,22 +217,34 @@ async function citeRelationshipFromWikidata(db, relId, qid, property) {
 // The sources used recently — by this user anywhere, and on this entry by anyone — for the quick select in every
 // dialog: one click adds one. → [{slug, label, reliability}]
 async function recentSources(db, userId, type = null, id = null) {
+  // One chip per source *and page*: a website source (a museum's online collection) is cited with the object's page
+  // (url) — the chip brings that page back, not just the website. DISTINCT ON keeps the latest citation of each
+  // (source, page); `pick` is its id — the chip sends it, the server copies source and page from it.
   const { rows } = await db.query(`
-    SELECT b.slug, coalesce(b.siglum, b.name) AS label, source_reliability(b)::text AS reliability
-    FROM bibliography b
-    JOIN (SELECT source_id, max(created_at) AS last, bool_or(entity_type = $2::entity_type AND entity_id = $3) AS here
-            FROM citations WHERE source_id IS NOT NULL AND (created_by = $1 OR (entity_type = $2::entity_type AND entity_id = $3))
-           GROUP BY source_id) c ON c.source_id = b.id
-    ORDER BY c.here DESC NULLS LAST, c.last DESC LIMIT 10`, [userId, type, id]);
+    SELECT x.pick, x.url, b.slug, coalesce(b.siglum, b.name) AS label, source_reliability(b)::text AS reliability
+    FROM (SELECT DISTINCT ON (c.source_id, coalesce(c.url, '')) c.id AS pick, c.source_id, c.url, c.created_at,
+                 (c.entity_type = $2::entity_type AND c.entity_id = $3) AS here
+            FROM citations c WHERE c.source_id IS NOT NULL AND (c.created_by = $1 OR (c.entity_type = $2::entity_type AND c.entity_id = $3))
+           ORDER BY c.source_id, coalesce(c.url, ''), c.created_at DESC) x
+    JOIN bibliography b ON b.id = x.source_id
+    ORDER BY x.here DESC NULLS LAST, x.created_at DESC LIMIT 12`, [userId, type, id]);
   if (!rows.length) return rows;
   const sigla = await catalogueOf(db);  // the generated short references ("Busch 1993") where no own one is set
   return rows.map((r) => ({ ...r, label: (sigla.get(r.slug) || {}).siglum || r.label }));
 }
+// "collection.kunsthaus.ch/…/item/752012" — the end of a page's address, enough to tell the pages of one site apart
+const pageOf = (url) => {
+  try {
+    const u = new URL(url);
+    const parts = u.pathname.split('/').filter(Boolean);
+    return parts.length ? `…/${parts.slice(-2).join('/')}` : u.host;
+  } catch { return url; }
+};
 async function catalogueOf(db) { return require('../bibliography').loadCatalogue(db); }  // lazy: bibliography.js is only needed here
 
 function recentChips(recent = []) {
   return html`<div class="cite-recent">${recent.length ? html`<span class="small muted">Used recently — one click adds it (with the page no. above):</span>
-    ${recent.map((r) => html`<button class="cite-chip cite-chip-${r.reliability}" name="source" value="${r.slug}" title="${BADGE_TITLE[r.reliability] || ''}">${r.label}</button>`)}` : ''}</div>`;
+    ${recent.map((r) => html`<button class="cite-chip cite-chip-${r.reliability}" name="pick" value="${r.pick}" title="${r.url ? `${r.url} — ` : ''}${BADGE_TITLE[r.reliability] || ''}">${r.label}${r.url ? html` <span class="cite-chip-page">${pageOf(r.url)}</span>` : ''}</button>`)}` : ''}</div>`;
 }
 
 // Next to a value: one badge per kind of source (W M L P), "+" when there is none; a click opens the dialog with the
