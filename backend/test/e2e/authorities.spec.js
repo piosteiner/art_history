@@ -5,11 +5,9 @@ const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v
 const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form .sticky-actions button')]);
 
 test.afterAll(() => {
+  // (deleting the artist deletes its relationships too — the generic delete trigger)
   sql(`DELETE FROM artists WHERE slug = 'claude-monet-gnd'; DELETE FROM entry_identifiers;
        DELETE FROM citations WHERE source_id = entity_id('source', 'gnd'); DELETE FROM live_docs WHERE entity_type = 'artist';
-       DELETE FROM relationships WHERE id IN (SELECT r.id FROM relationships r WHERE 'vincent-van-gogh' IN
-         ((SELECT slug FROM artists WHERE id = r.subject_id AND r.subject_type = 'artist'), (SELECT slug FROM artists WHERE id = r.object_id AND r.object_type = 'artist'))
-         AND r.relationship_type = 'collaborated_with' AND NOT EXISTS (SELECT 1 FROM artists a WHERE a.slug = 'claude-monet-gnd'));
        DELETE FROM bibliography WHERE slug = 'gnd'`);  // the comparison created it in this (emptied) test database
 });
 
