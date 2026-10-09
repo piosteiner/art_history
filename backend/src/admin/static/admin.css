@@ -368,3 +368,18 @@ details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-
 .sort-placeholder td { padding: 0; border: 2px dashed color-mix(in srgb, var(--accent) 60%, transparent); border-radius: 6px;
   background: color-mix(in srgb, var(--accent) 7%, transparent); }
 body.sorting, body.sorting * { cursor: grabbing !important; user-select: none; }
+
+/* the sources dialog: status line, quick-select chips, "also for" */
+.cite-status:empty { display: none; }
+.cite-status { margin: -.2rem 0 .5rem; }
+.cite-ok { color: var(--ok); }
+.cite-recent { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; margin: .4rem 0 .6rem; }
+.cite-recent:empty { display: none; }
+.cite-recent > span { flex-basis: 100%; }
+.cite-chip { font-size: .85rem; padding: .15rem .55rem; border-radius: 999px; background: var(--code); color: var(--fg);
+  border: 1px solid var(--line); cursor: pointer; }
+.cite-chip:hover, .cite-chip:focus-visible { border-color: var(--accent); }
+.cite-chip-institution { border-left: 4px solid var(--accent); }
+.cite-chip-scholarly, .cite-chip-primary { border-left: 4px solid var(--ok); }
+.cite-also { display: flex; flex-wrap: wrap; gap: .1rem .9rem; margin: .3rem 0 .5rem; }
+.cite-also > div { flex-basis: 100%; }

@@ -24,13 +24,24 @@ async function citableFields(db) {
   return fieldsCache;
 }
 
+// A bibliography source's short form, as cited on the site (KHIST): "Busch 1993, S. 45" — siglum and locator.
+async function shortForms(db, rows) {
+  if (!rows.some((r) => r.source_slug)) return rows;
+  const bib = require('../bibliography');
+  const cat = await bib.loadCatalogue(db);
+  return rows.map((r) => {
+    const s = r.source_slug && cat.get(r.source_slug);
+    return s ? { ...r, source_text: [s.siglum, bib.locator(r.locator, s.kind)].filter(Boolean).join(', ') } : r;
+  });
+}
+
 // An entry's citations, by field; and those of its relationships, by relationship id.
 async function forEntity(db, type, id) {
   const { rows } = await db.query(`SELECT c.id, c.field, c.reliability, c.source_text, c.source_slug, c.locator, c.note, c.accessed,
       c.wikidata_item, c.url, c.outdated, c.pending IS NOT NULL AS pending FROM citation_status c
     WHERE c.entity_type = $1 AND c.entity_id = $2 ORDER BY c.reliability DESC NULLS LAST, c.id`, [type, id]);
   const byField = {};
-  for (const r of rows) (byField[r.field] ||= []).push(r);
+  for (const r of await shortForms(db, rows)) (byField[r.field] ||= []).push(r);
   return byField;
 }
 async function forRelationships(db, ids) {
@@ -39,7 +50,7 @@ async function forRelationships(db, ids) {
       c.accessed, c.wikidata_item, c.url, false AS outdated, false AS pending FROM citation_status c
     WHERE c.relationship_id = ANY ($1::bigint[]) ORDER BY c.reliability DESC NULLS LAST, c.id`, [ids]);
   const byRel = {};
-  for (const r of rows) (byRel[r.relationship_id] ||= []).push(r);
+  for (const r of await shortForms(db, rows)) (byRel[r.relationship_id] ||= []).push(r);
   return byRel;
 }
 async function forProvenance(db, ids) {
@@ -48,7 +59,7 @@ async function forProvenance(db, ids) {
       c.accessed, c.wikidata_item, c.url, false AS outdated, false AS pending FROM citation_status c
     WHERE c.provenance_id = ANY ($1::bigint[]) ORDER BY c.reliability DESC NULLS LAST, c.id`, [ids]);
   const byStep = {};
-  for (const r of rows) (byStep[r.provenance_id] ||= []).push(r);
+  for (const r of await shortForms(db, rows)) (byStep[r.provenance_id] ||= []).push(r);
   return byStep;
 }
 
@@ -68,9 +79,10 @@ async function syncText(db, target, lines) {
 // Add a citation from the form on an entry's page: target (type + id + field, or relationship id), a source of the
 // bibliography (slug), page/locator, note. The value is recorded as it is now — unless `pending` (the edit page: the
 // field's form values in the working copy differ from the published ones): then it waits for them to be published.
-async function add(db, body, userId, { pending = null } = {}) {
+async function add(db, body, userId, { pending = null, pendingByField = null } = {}) {
   const text = (k) => String(body[k] ?? '').trim() || null;
-  const sourceSlug = text('source');
+  // the source: a quick-select chip (button name=source) or the field — both arrive as "source"; the chosen one wins
+  const sourceSlug = [].concat(body.source ?? []).map((x) => String(x).trim()).filter(Boolean).pop() || null;
   const free = text('text');
   const url = text('url');
   if (url && !/^https?:\/\/[^\s/]+\.[^\s]+$/.test(url)) throw new CitationError('Link: a web address (https://…).');
@@ -92,13 +104,19 @@ async function add(db, body, userId, { pending = null } = {}) {
       [text(key), ...common]);
     return;
   }
-  const { rowCount } = await db.query(`
-    INSERT INTO citations (entity_type, entity_id, field, source_id, text, locator, note, accessed, url, created_by, cited_value, pending)
-    SELECT f.entity_type, er.id, f.field, $4, $5, $6, $7, $8, $9, $10, CASE WHEN $11::jsonb IS NULL THEN field_value(er.r, f.cols) END, $11::jsonb
-    FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
-    WHERE f.entity_type = $1::entity_type AND f.field = $3`,
-  [text('type'), text('id'), text('field'), ...common, pending ? JSON.stringify(pending) : null]);
-  if (!rowCount) throw new CitationError('That field takes no source.');
+  // the field — and the others ticked under "also for" (one museum page backs the date, the size, the medium …)
+  const fields = [...new Set([text('field'), ...[].concat(body.also ?? []).map(String)].filter(Boolean))];
+  for (const field of fields) {
+    const waiting = pendingByField ? pendingByField[field] || null : field === text('field') ? pending : null;
+    const { rowCount } = await db.query(`
+      INSERT INTO citations (entity_type, entity_id, field, source_id, text, locator, note, accessed, url, created_by, cited_value, pending)
+      SELECT f.entity_type, er.id, f.field, $4, $5, $6, $7, $8, $9, $10, CASE WHEN $11::jsonb IS NULL THEN field_value(er.r, f.cols) END, $11::jsonb
+      FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
+      WHERE f.entity_type = $1::entity_type AND f.field = $3`,
+    [text('type'), text('id'), field, ...common, waiting ? JSON.stringify(waiting) : null]);
+    if (!rowCount) throw new CitationError(`“${field}” takes no source.`);
+  }
+  return fields;
 }
 
 async function byId(db, id) {
@@ -189,20 +207,44 @@ async function citeRelationshipFromWikidata(db, relId, qid, property) {
 }
 
 // ── display ─────────────────────────────────────────────────────────────────────────────────────────────────────
-// Next to a value: one badge per kind of source (W M L P), "?" when there is none; a click opens the list and a form
-// to add one. target: { type, id, field } or { relationship }.
-// edit: on the edit page — rendered after the entry's form (forms can't nest); editor/sortable.js puts a button with
-// the same badges next to the field's label, and fills `expect` with the field's form values on submit.
-function marker(cites = [], target, back, { edit = false } = {}) {
+// The sources used recently — by this user anywhere, and on this entry by anyone — for the quick select in every
+// dialog: one click adds one. → [{slug, label, reliability}]
+async function recentSources(db, userId, type = null, id = null) {
+  const { rows } = await db.query(`
+    SELECT b.slug, coalesce(b.siglum, b.name) AS label, source_reliability(b)::text AS reliability
+    FROM bibliography b
+    JOIN (SELECT source_id, max(created_at) AS last, bool_or(entity_type = $2::entity_type AND entity_id = $3) AS here
+            FROM citations WHERE source_id IS NOT NULL AND (created_by = $1 OR (entity_type = $2::entity_type AND entity_id = $3))
+           GROUP BY source_id) c ON c.source_id = b.id
+    ORDER BY c.here DESC NULLS LAST, c.last DESC LIMIT 10`, [userId, type, id]);
+  if (!rows.length) return rows;
+  const sigla = await catalogueOf(db);  // the generated short references ("Busch 1993") where no own one is set
+  return rows.map((r) => ({ ...r, label: (sigla.get(r.slug) || {}).siglum || r.label }));
+}
+async function catalogueOf(db) { return require('../bibliography').loadCatalogue(db); }  // lazy: bibliography.js is only needed here
+
+function recentChips(recent = []) {
+  return html`<div class="cite-recent">${recent.length ? html`<span class="small muted">Used recently — one click adds it (with the page no. above):</span>
+    ${recent.map((r) => html`<button class="cite-chip cite-chip-${r.reliability}" name="source" value="${r.slug}" title="${BADGE_TITLE[r.reliability] || ''}">${r.label}</button>`)}` : ''}</div>`;
+}
+
+// Next to a value: one badge per kind of source (W M L P), "+" when there is none; a click opens the dialog with the
+// list and a form to add one. target: { type, id, field } or { relationship } or { provenance }, with its label.
+// key / label (data-cite-*): which marker it is, so the page can replace just this one after an add or a remove
+// (editor/sortable.js — no reload). edit: on the edit page (rendered after the entry's form; a button with the same
+// badges goes next to the field's label, and `expect` gets the field's form values on submit).
+const keyOf = (target) => (target.relationship ? `rel:${target.relationship}` : target.provenance ? `prov:${target.provenance}` : `field:${target.field}`);
+function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
   const kinds = [...new Set(cites.filter((c) => !c.pending && !c.outdated).map(kindOf))];
   const outdated = cites.some((c) => c.outdated);
   const pending = cites.some((c) => c.pending);
   const label = kinds.length ? kinds.map((k) => html`<span class="cite-badge cite-${k}" title="${BADGE_TITLE[k]} — click to see or add sources">${BADGE[k]}</span>`)
     : html`<span class="cite-badge cite-none" title="no source yet — click to add one">+</span>`;
   const what = target.label || 'this';
-  return html`<details class="cite${edit ? ' cite-edit' : ''}"${edit ? html` data-cite-field="${target.field}"` : ''}><summary aria-label="sources of ${what}">${label}${outdated ? html`<span class="cite-badge cite-outdated" title="changed since cited">!</span>` : ''}${pending ? html`<span class="cite-badge cite-pending" title="not published yet — becomes a citation when the value is published">…</span>` : ''}</summary>
+  return html`<details class="cite${edit ? ' cite-edit' : ''}" data-cite-key="${keyOf(target)}" data-cite-label="${what}"${edit ? html` data-cite-field="${target.field}" data-cite-edit="1"` : ''}><summary aria-label="sources of ${what}">${label}${outdated ? html`<span class="cite-badge cite-outdated" title="changed since cited">!</span>` : ''}${pending ? html`<span class="cite-badge cite-pending" title="not published yet — becomes a citation when the value is published">…</span>` : ''}</summary>
     <div class="cite-panel" role="dialog" aria-label="Sources of ${what}">
       <div class="cite-head"><b>Sources of ${what}</b><button type="button" class="link cite-close" aria-label="close">close ✕</button></div>
+      <div class="cite-status small" aria-live="polite"></div>
       ${cites.length ? html`<ul>${cites.map((c) => html`<li><span class="cite-badge cite-${kindOf(c)}" title="${BADGE_TITLE[kindOf(c)]}">${BADGE[kindOf(c)]}</span>
         ${c.wikidata_item ? html`<a href="https://www.wikidata.org/wiki/${c.wikidata_item}" target="_blank" rel="noopener">${c.source_text}</a>`
           : c.source_slug ? html`<a href="/bibliography/${c.source_slug}">${c.source_text}</a>` : html`<span>${c.source_text}</span>`}
@@ -211,7 +253,7 @@ function marker(cites = [], target, back, { edit = false } = {}) {
         ${c.note ? html`<div class="small">${c.note}</div>` : ''}
         ${c.outdated ? html`<div class="small cite-warn">The value changed since — does the source still support it?</div>` : ''}
         ${c.pending ? html`<div class="small muted">In the working copy — becomes a citation when published.</div>` : ''}
-        <form method="post" action="/citations/${c.id}/delete" class="inline"><input type="hidden" name="back" value="${back}"><button class="link small">remove</button></form></li>`)}</ul>`
+        <form method="post" action="/citations/${c.id}/delete" class="inline cite-remove"><input type="hidden" name="back" value="${back}"><button class="link small">remove</button></form></li>`)}</ul>`
       : html`<p class="small muted">No source yet.</p>`}
       <form method="post" action="/citations" class="form cite-add">
         ${target.relationship ? html`<input type="hidden" name="relationship" value="${target.relationship}">`
@@ -227,13 +269,15 @@ function marker(cites = [], target, back, { edit = false } = {}) {
           <div class="hint">Books, catalogues raisonnés, articles: <a href="/bibliography/new" target="_blank" rel="noopener">create it in the bibliography</a> first.</div></div>
         <div class="field-pair"><div class="field"><label>Page, catalogue no.</label><input name="locator" placeholder="45 · Kat.-Nr. 12" aria-label="page or number"></div>
           <div class="field"><label>Note</label><input name="note" placeholder="optional" aria-label="note"></div></div>
+        ${recentChips(recent)}
+        ${target.field ? html`<div class="cite-also" hidden></div>` : ''}
         <details class="cite-more"><summary class="small muted">more: website name, accessed date, a source in words</summary>
           <div class="field-pair"><div class="field"><label>Name of the website (new ones)</label><input name="site" placeholder="e.g. Van Gogh Museum, Collection" aria-label="name of the website"></div>
             <div class="field"><label>Accessed</label><input name="accessed" type="date" aria-label="accessed"></div></div>
           <div class="field"><label>Or in words (stays a note: T)</label><input name="text" placeholder="e.g. letter to Theo, 1888" aria-label="source in words"></div></details>
-        <div class="cite-actions"><button>Add source</button></div>
+        <div class="cite-actions"><button class="cite-submit">Add source</button></div>
       </form></div></details>`;
 }
 
 module.exports = { CitationError, citableFields, forEntity, forRelationships, forProvenance, syncText, add, byId, remove, pendingFromWikidata, settle,
-  citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker };
+  citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, recentSources, recentChips, keyOf };

@@ -699,33 +699,71 @@ const citeBack = (b, done) => {
   const [path, hash] = url.split('#');
   return `${path}?done=${done}${hash ? `#${hash}` : ''}`;
 };
+// Called by the page script (editor/sortable.js) — "X-Requested-With: fetch": answered with JSON, the page updates in
+// place: { markers: {key: html}, recent: html } or { error }. Without script: the form posts and the page reloads.
+const wantsJson = (req) => req.get('X-Requested-With') === 'fetch';
+
+// The markers the page asks to have back (refresh: [{key, label, edit, type, id}]) — rendered anew from the database.
+async function freshMarkers(req, refresh) {
+  const out = {};
+  const list = Array.isArray(refresh) ? refresh.slice(0, 40) : [];
+  const ent = list.find((r) => BY_TYPE[r.type] && /^\d+$/.test(String(r.id)));
+  const recent = await citations.recentSources(adminPool, req.user.id, ent ? ent.type : null, ent ? ent.id : null);
+  const back = typeof req.body.back === 'string' ? req.body.back : '/';
+  const fields = ent ? await citations.forEntity(adminPool, ent.type, ent.id) : {};
+  const relIds = list.map((r) => /^rel:(\d+)$/.exec(r.key)).filter(Boolean).map((m) => m[1]);
+  const provIds = list.map((r) => /^prov:(\d+)$/.exec(r.key)).filter(Boolean).map((m) => m[1]);
+  const rels = await citations.forRelationships(adminPool, relIds);
+  const provs = await citations.forProvenance(adminPool, provIds);
+  for (const r of list) {
+    const label = String(r.label || '').slice(0, 200);
+    let m;
+    if ((m = /^field:([a-z_]+)$/.exec(r.key)) && ent) {
+      out[r.key] = String(citations.marker(fields[m[1]], { type: ent.type, id: ent.id, field: m[1], label }, back, { edit: !!r.edit, recent }));
+    } else if ((m = /^rel:(\d+)$/.exec(r.key))) {
+      out[r.key] = String(citations.marker(rels[m[1]], { relationship: m[1], label }, back, { recent }));
+    } else if ((m = /^prov:(\d+)$/.exec(r.key))) {
+      out[r.key] = String(citations.marker(provs[m[1]], { provenance: m[1], label }, back, { recent }));
+    }
+  }
+  return { markers: out, recent: String(citations.recentChips(recent)) };
+}
+const refreshOf = (req) => { try { return JSON.parse(String(req.body.refresh || '[]')); } catch { return []; } };
+
 router.post('/citations', async (req, res) => {
   try {
-    // from the edit page: the field's values in the working copy (expect). Different from the published ones → the
-    // citation is for the new value and waits for it to be published (settled by saveEntity); the same → as usual.
-    let pending = null;
+    // from the edit page: each field's values in the working copy (expect: {field: {f.…: value}}). Different from the
+    // published ones → the citation is for the new value and waits for it to be published (settled by saveEntity).
+    let pendingByField = null;
     const t = BY_TYPE[req.body.type];
     if (req.body.expect && t && /^\d+$/.test(String(req.body.id || ''))) {
       let expect = {};
       try { expect = JSON.parse(String(req.body.expect)) || {}; } catch { expect = {}; }
-      expect = Object.fromEntries(Object.entries(expect).filter(([k, v]) => /^f\.[a-z_]+$/.test(k) && typeof v === 'string'));
       const e = (await readDocs(adminPool, t, 't.id = $1', [req.body.id]))[0];
       const published = e ? drafts.formKeys(e.doc, t, e.slug) : {};
       const norm = (v) => String(v ?? '').replace(/\r\n/g, '\n').trim();
-      if (Object.keys(expect).length && Object.entries(expect).some(([k, v]) => norm(v) !== norm(published[k]))) pending = expect;
+      pendingByField = {};
+      for (const [field, values] of Object.entries(expect)) {
+        if (!/^[a-z_]+$/.test(field) || !values || typeof values !== 'object') continue;
+        const v = Object.fromEntries(Object.entries(values).filter(([k, x]) => /^f\.[a-z_]+$/.test(k) && typeof x === 'string'));
+        if (Object.keys(v).length && Object.entries(v).some(([k, x]) => norm(x) !== norm(published[k]))) pendingByField[field] = v;
+      }
     }
-    await withTx(req.user, (db) => citations.add(db, req.body, req.user.id, { pending }));
+    await withTx(req.user, (db) => citations.add(db, req.body, req.user.id, { pendingByField }));
   } catch (err) {
     const text = err instanceof citations.CitationError ? err.message : friendly(err);
+    if (wantsJson(req)) return res.status(422).json({ error: text });
     return send(req, res, { title: 'Add a source', status: 422, flash: { kind: 'error', text },
       body: html`<p><a href="${citeBack(req.body.back, 'cite-failed').replace(/\?done=cite-failed/, '')}">← back</a></p>` });
   }
+  if (wantsJson(req)) return res.json(await freshMarkers(req, refreshOf(req)));
   res.redirect(303, citeBack(req.body.back, 'cite-added'));
 });
 router.post('/citations/:id/delete', async (req, res) => {
   const c = await citations.byId(adminPool, req.params.id);
-  if (!c) return notFoundPage(req, res);
+  if (!c) return wantsJson(req) ? res.status(404).json({ error: 'That source is gone already — reload the page.' }) : notFoundPage(req, res);
   await withTx(req.user, (db) => citations.remove(db, c.id));
+  if (wantsJson(req)) return res.json(await freshMarkers(req, refreshOf(req)));
   res.redirect(303, citeBack(req.body.back, 'cite-deleted'));
 });
 
@@ -1345,7 +1383,8 @@ router.get('/:plural/:slug', async (req, res) => {
   const cites = await citations.forEntity(adminPool, t.type, e.id);
   const citable = (await citations.citableFields(adminPool))[t.type] || {};
   const here = `/${t.folder}/${e.slug}`;
-  const mark = (key) => (key in citable ? citations.marker(cites[key], { type: t.type, id: e.id, field: key, label: `“${fieldLabel(t.type, key)}”` }, here) : '');
+  const recent = await citations.recentSources(adminPool, req.user.id, t.type, e.id);
+  const mark = (key) => (key in citable ? citations.marker(cites[key], { type: t.type, id: e.id, field: key, label: `“${fieldLabel(t.type, key)}”` }, here, { recent }) : '');
   const webAccessed = t.type === 'artwork' && e.doc.web_url
     ? (await adminPool.query("SELECT to_char(web_url_accessed, 'FMDD FMMonth YYYY') AS d FROM artworks WHERE id = $1", [e.id])).rows[0].d : null;
   const boundary = t.type === 'place' && e.doc.boundary_code
@@ -1420,7 +1459,8 @@ router.get('/:plural/:slug', async (req, res) => {
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? numbers.section({ e, numbers: nums }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap,
-        cites: await citations.forProvenance(adminPool, provSteps.map((s) => s.id)), marker: citations.marker, back: `${here}#provenance` }) : ''}
+        cites: await citations.forProvenance(adminPool, provSteps.map((s) => s.id)),
+        marker: (c, target, back) => citations.marker(c, target, back, { recent }), back: `${here}#provenance` }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${await (async () => {
         const relCites = await citations.forRelationships(adminPool, [...otherRels.map((x) => x.id), ...incoming.rows.filter((r) => r.source === 'relationship').map((r) => r.id)]);
@@ -1430,13 +1470,13 @@ router.get('/:plural/:slug', async (req, res) => {
           <td><a href="/${BY_TYPE[type].folder}/${slug}">${toName}</a> <span class="tag">${type}</span></td>
           <td>${rel.period_label || (rel.period ? parseFuzzyDate(String(rel.period), { openEnd: true }).label : '')}</td>
           <td class="muted">${[rel.label, rel.certainty].filter(Boolean).join(' · ')}</td>
-          <td>${citations.marker(relCites[id], { relationship: id, label: `“${labels[rel.type] || rel.type} ${toName}”` }, `${here}#relationships`)}</td>
+          <td>${citations.marker(relCites[id], { relationship: id, label: `“${labels[rel.type] || rel.type} ${toName}”` }, `${here}#relationships`, { recent })}</td>
           <td><a href="/relationships/${id}/edit">edit</a></td></tr>`;
       })}</tbody></table></div>` : html`<p class="muted">None yet.</p>`}
       ${incoming.rows.length ? html`<h3>Linked from</h3><div class="table-wrap"><table><tbody>${incoming.rows.map((r) => html`<tr>
           <td>${r.inverse_label}</td><td><a href="/${BY_TYPE[r.type].folder}/${r.slug}">${r.name}</a> <span class="tag">${r.type}</span></td>
           <td>${r.period_label || ''}${r.end_basis === 'implied' ? html` <span class="tag implied">end implied</span>` : ''}</td><td class="muted">${r.label || ''}</td>
-          <td>${r.source === 'relationship' ? citations.marker(relCites[r.id], { relationship: r.id, label: `“${r.inverse_label} ${r.name}”` }, `${here}#relationships`) : ''}</td>
+          <td>${r.source === 'relationship' ? citations.marker(relCites[r.id], { relationship: r.id, label: `“${r.inverse_label} ${r.name}”` }, `${here}#relationships`, { recent }) : ''}</td>
           <td>${r.source === 'provenance' ? html`<a href="/provenance/${r.provenance_id}/edit" title="from the provenance">provenance</a>`
             : r.source === 'creator' ? html`<a href="/artworks/${r.slug}/edit" title="the artwork's creator field">creator field</a>`
             : html`<a href="/relationships/${r.id}/edit">edit</a>`}</td></tr>`)}</tbody></table></div>` : ''}`;
@@ -1630,18 +1670,19 @@ router.get('/:plural/:slug/edit', async (req, res) => {
     action: `/${t.folder}/${e.slug}`, errors: [], version: working.version,
     collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) } });
   send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
-    body: html`<h1>Edit ${e.name}</h1>${banner}${form}${await citeDialogs(t, e)}` });
+    body: html`<h1>Edit ${e.name}</h1>${banner}${form}${await citeDialogs(t, e, req.user)}` });
 });
 
 // The sources of the fields on the edit page: one dialog per citable field, after the form (forms can't nest);
 // editor/sortable.js shows each one's badges next to the field's label.
-async function citeDialogs(t, e) {
+async function citeDialogs(t, e, user) {
   const citable = (await citations.citableFields(adminPool))[t.type] || {};
   if (!Object.keys(citable).length) return '';
   const cites = await citations.forEntity(adminPool, t.type, e.id);
+  const recent = await citations.recentSources(adminPool, user.id, t.type, e.id);
   const back = `/${t.folder}/${e.slug}/edit`;
   return html`<div class="cite-dialogs">${Object.keys(citable).map((field) => citations.marker(cites[field],
-    { type: t.type, id: e.id, field, label: `“${fieldLabel(t.type, field)}”` }, back, { edit: true }))}</div>`;
+    { type: t.type, id: e.id, field, label: `“${fieldLabel(t.type, field)}”` }, back, { edit: true, recent }))}</div>`;
 }
 
 router.post('/:plural/:slug', async (req, res) => {

@@ -26,7 +26,8 @@ import { initDims } from './dims';
 import { initSourceForm } from './sourceform';
 import { initLiveSearch } from './livesearch';
 import { initDuplicates } from './duplicates';
-import { initSortable, initCiteDialogs, initCiteTriggers } from './sortable';
+import { initSortable } from './sortable';
+import { initCiteDialogs, initCiteTriggers } from './cites';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([

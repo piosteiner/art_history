@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Admin: sources without reloading, quick select of recent sources, "also for" several fields
+- **What:** `editor/cites.js` (dialogs moved out of `sortable.js`): add / remove via fetch (`X-Requested-With: fetch`) —
+  the server answers with the affected markers rendered anew (`freshMarkers()`), they replace the old ones and the
+  dialog stays open; without script the forms still post and reload. Quick select: chips of the sources used recently
+  by the user and those cited on this entry (`citations.recentSources()`), one click adds one (with the page typed);
+  refreshed in every dialog after an add. "Also for": checkboxes of the entry's other fields with a value — one source
+  for several fields at once (`citations.add` loops; on the edit page `expect` per field). The dialog shows the KHIST
+  short form ("Wildenstein 1964, S. 12") like the API.
+- **Why:** owner: the page reloaded after every source; a source just added should be quick to reuse.
+- **Tested:** e2e 118 passing (citations.spec: no reload, chips, also-for, remove in place).
+- **Revert:** redeploy the previous commit.
+
 ### Tests: log in once per run instead of once per test (4:48 → 3:45)
 - **What:** `test/e2e/global-setup.js` logs both test users in once and stores their sessions
   (`$TMPDIR/arthistory-e2e/session-<user>.json`); the `userA` / `userB` fixtures start each test in a fresh browser

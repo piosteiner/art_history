@@ -36,8 +36,8 @@ test('a new entry from Wikidata: its values are cited (W); a museum source added
   await form.locator('input[name=source]').fill('van-gogh-museum-website-test');
   await form.locator('.cite-more summary').click();
   await form.locator('input[name=accessed]').fill('2026-10-08');
-  await Promise.all([userA.waitForNavigation(), form.locator('button').click()]);
-  await expect(userA).toHaveURL(/done=cite-added/);
+  await form.locator('.cite-submit').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);   // in place, no reload
   await expect(userA.locator('dt:has-text("Death") + dd summary .cite-badge.cite-institution')).toHaveText('M');
   expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
     .toBe('only Wikidata / databases: birth');
@@ -120,8 +120,9 @@ test('paste a link: the website becomes a source (once), the page and today are 
   await dialog.locator('input[name=url]').fill('https://www.test-museum.org/collection/item/1');
   await dialog.locator('.cite-more summary').click();
   await dialog.locator('input[name=site]').fill('Collection Test Museum');
-  await Promise.all([userA.waitForNavigation(), dialog.locator('button:has-text("Add source")').click()]);
-  await expect(userA).toHaveURL(/done=cite-added/);
+  await dialog.locator('.cite-submit').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);   // in place, no reload
+  await userA.keyboard.press('Escape');
   expect(sql(`SELECT kind || ' ' || reliability || ' ' || url FROM bibliography WHERE slug = 'collection-test-museum'`))
     .toBe('web institution https://www.test-museum.org/');
   expect(sql(`SELECT url || ' ' || (accessed = current_date) FROM citations WHERE source_id = entity_id('source', 'collection-test-museum')`))
@@ -132,7 +133,9 @@ test('paste a link: the website becomes a source (once), the page and today are 
   const death = userA.locator('dt:has-text("Death") + dd');
   await death.locator('details.cite > summary').click();
   await death.locator('.cite-panel input[name=url]').fill('https://test-museum.org/collection/item/2');
-  await Promise.all([userA.waitForNavigation(), death.locator('.cite-panel button:has-text("Add source")').click()]);
+  await death.locator('.cite-panel .cite-submit').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);   // in place, no reload
+  await userA.keyboard.press('Escape');
   expect(sql(`SELECT count(*) FROM bibliography WHERE url LIKE '%test-museum.org%'`)).toBe('1');
   expect(sql(`SELECT count(*) FROM citations WHERE source_id = entity_id('source', 'collection-test-museum')`)).toBe('2');
 
@@ -159,8 +162,9 @@ test('on the edit page: sources next to the labels; for a changed value the cita
   await expect(birthDialog).toBeInViewport({ ratio: 1 });
   await birthDialog.locator('input[name=text]').evaluate((el) => { el.closest('details.cite-more').open = true; });
   await birthDialog.locator('input[name=text]').fill('Letter 1');
-  await Promise.all([userA.waitForNavigation(), birthDialog.locator('button:has-text("Add source")').click()]);
-  await expect(userA).toHaveURL(/\/artists\/vincent-van-gogh\/edit\?done=cite-added/);
+  await birthDialog.locator('.cite-submit').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);   // in place, no reload
+  await userA.keyboard.press('Escape');
   expect(sql(`SELECT (pending IS NULL)::text || ' ' || (cited_value IS NOT NULL)::text FROM citations WHERE text = 'Letter 1'`)).toBe('true true');
   await expect(userA.locator('.label-row:has(label[for="f-birth"]) .cite-trigger .cite-text')).toHaveText('T');
 
@@ -172,7 +176,9 @@ test('on the edit page: sources next to the labels; for a changed value the cita
   const deathDialog = userA.locator('details.cite-edit[data-cite-field="death"] .cite-panel');
   await deathDialog.locator('input[name=text]').evaluate((el) => { el.closest('details.cite-more').open = true; });
   await deathDialog.locator('input[name=text]').fill('Letter 2');
-  await Promise.all([userA.waitForNavigation(), deathDialog.locator('button:has-text("Add source")').click()]);
+  await deathDialog.locator('.cite-submit').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);   // in place, no reload
+  await userA.keyboard.press('Escape');
   expect(sql(`SELECT pending::text FROM citations WHERE text = 'Letter 2'`)).toContain('1890-07-30');
   await expect(userA.locator('.label-row:has(label[for="f-death"]) .cite-trigger .cite-pending')).toBeVisible();
   await expect(userA.locator('#f-death')).toHaveValue('1890-07-30');           // the working copy kept the change
@@ -181,4 +187,40 @@ test('on the edit page: sources next to the labels; for a changed value the cita
   expect(sql(`SELECT (pending IS NULL)::text || ' ' || (cited_value IS NOT NULL)::text FROM citations WHERE text = 'Letter 2'`)).toBe('true true');
   sql(`UPDATE artists SET death = '[1890-07-29,1890-07-30)', death_label = '29 July 1890' WHERE slug = 'vincent-van-gogh';  -- as imported
        DELETE FROM citations WHERE text IN ('Letter 1', 'Letter 2'); DELETE FROM live_docs WHERE entity_type = 'artist'`);
+});
+
+test('without reloading: a source added stays in the quick select of the other fields; "also for" cites several at once', async ({ userA }) => {
+  sql(`DELETE FROM citations WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'paul-gauguin');
+       DELETE FROM citations WHERE source_id = entity_id('source', 'quick-test-catalogue'); DELETE FROM bibliography WHERE slug = 'quick-test-catalogue';
+       INSERT INTO bibliography (slug, kind, name, authors, year) VALUES ('quick-test-catalogue', 'book', 'Gauguin catalogue', '{"Wildenstein, Georges"}', '1964')`);
+  await userA.goto('/artists/paul-gauguin');
+  await userA.evaluate(() => { window.notReloaded = true; });
+  const dialog = (label) => userA.locator(`dt:has-text("${label}") + dd details.cite`);
+  await dialog('Birth').locator('> summary').click();
+  await dialog('Birth').locator('input[name=source]').fill('quick-test-catalogue');
+  await dialog('Birth').locator('input[name=locator]').fill('12');
+  await expect(dialog('Birth').locator('.cite-also label')).toHaveText(['Death']);    // the other fields with a marker
+  await dialog('Birth').locator('.cite-also input[value=death]').check();
+  await dialog('Birth').locator('.cite-submit').click();
+  await expect(dialog('Birth').locator('.cite-status')).toHaveText('Source added to 2 fields.');
+  expect(await userA.evaluate(() => window.notReloaded)).toBe(true);               // the page was not reloaded
+  await expect(dialog('Birth')).toHaveAttribute('open', '');                         // the dialog stays open
+  await expect(dialog('Birth').locator('li')).toContainText('Wildenstein 1964, S. 12');
+  await expect(dialog('Death').locator('> summary .cite-scholarly')).toHaveText('L'); // the other marker updated too
+  expect(sql(`SELECT string_agg(field || ' ' || locator, ', ' ORDER BY field) FROM citations WHERE source_id = entity_id('source', 'quick-test-catalogue')`))
+    .toBe('birth 12, death 12');
+  // the source is in the quick select of every dialog now: one click (with a page) adds it to a relationship
+  await userA.keyboard.press('Escape');
+  const rel = userA.locator('#relationships + .table-wrap details.cite').first();
+  await rel.locator('> summary').click();
+  await rel.locator('input[name=locator]').fill('88');
+  await rel.locator('.cite-chip', { hasText: 'Wildenstein 1964' }).click();
+  await expect(rel.locator('.cite-status')).toHaveText('Source added.');
+  await expect(rel.locator('li')).toContainText('Wildenstein 1964, S. 88');
+  // removing: in place too
+  await rel.locator('form.cite-remove button').click();
+  await expect(rel.locator('.cite-status')).toHaveText('Source removed.');
+  await expect(rel.locator('> summary .cite-none')).toHaveText('+');
+  expect(await userA.evaluate(() => window.notReloaded)).toBe(true);
+  sql(`DELETE FROM citations WHERE source_id = entity_id('source', 'quick-test-catalogue'); DELETE FROM bibliography WHERE slug = 'quick-test-catalogue'`);
 });
