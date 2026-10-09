@@ -103,6 +103,20 @@ function handle(req, res) {
       professionOrOccupation: [{ id: 'https://d-nb.info/gnd/4037220-0', label: 'Maler' }],
       professionalRelationship: [{ id: 'https://d-nb.info/gnd/118583174', label: 'Gogh, Vincent van' }] });
   }
+  // SIKART (src/admin/sikart.js, 057): Ferdinand Hodler's record, shortened; the search knows two Hodlers
+  const hodler = { '@id': 'sik:person-4000055', 'sikapi:preferred_name': 'Hodler, Ferdinand',
+    'sikapi:note_biographical_data': '∗ 14.3.1853 Bern,\n† 19.5.1918 Genf', 'sikapi:short_biography': 'Maler, Zeichner',
+    'sikapi:has_hometown': 'sik:place-1', 'sikapi:has_citizenship': 'sik:place-2',
+    'sikapi:same_as': ['http://d-nb.info/gnd/118551884', 'http://viaf.org/viaf/59113932'] };
+  if (url.pathname.startsWith('/sik/sikapi:RetrievePerson/')) {
+    if (!url.pathname.includes('sik:person-4000055/')) { res.writeHead(404); return res.end('{}'); }
+    return json({ '@graph': [hodler, { '@id': 'sik:place-1', 'sikapi:label': 'Gurzelen (BE)' }, { '@id': 'sik:place-2', 'sikapi:label': 'Genf' }] });
+  }
+  if (url.pathname === '/sik/sikapi:SearchPersons/') {
+    if (!/hodler/i.test(p.get('q') || '')) return json({ '@graph': [] });
+    return json({ '@graph': [hodler, { '@id': 'sik:person-4000056', 'sikapi:preferred_name': 'Hodler, Hector',
+      'sikapi:note_biographical_data': '∗ 1.12.1887 Genf,\n† 31.3.1920 Leysin', 'sikapi:short_biography': 'Maler' }] });
+  }
   // Nominatim reverse (placefinder.cityAt): like Manhattan for the Guggenheim, the object at city zoom is a district
   // (Yukinoshita) and only the address names the city (Kamakura); far north: nothing there
   if (url.pathname === '/reverse') {

@@ -96,8 +96,10 @@ async function ensureSource(db) {
     ON CONFLICT (slug) DO NOTHING`);
 }
 
-async function apply(db, t, entity, plan, choices, citations) {
-  await ensureSource(db);
+// opts: source (the bibliography slug the values are cited with), byNameGets (the authority a target found by name gets
+// its number of — the GND: its own records name targets by GND number)
+async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', byNameGets = 'gnd', ensure = ensureSource } = {}) {
+  await ensure(db);
   const form = {};
   const cites = [];
   for (const row of plan.rows) {
@@ -113,9 +115,9 @@ async function apply(db, t, entity, plan, choices, citations) {
     const other = (await db.query('SELECT entity_id($1, $2) AS id', [s.target.type, s.target.slug])).rows[0].id;
     const ins = await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
       VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING RETURNING id`, [t.type, entity.id, s.type, s.target.type, other]);
-    if (ins.rows.length) await citations.citeRelationshipFromSource(db, ins.rows[0].id, 'gnd', plan.url);
+    if (ins.rows.length) await citations.citeRelationshipFromSource(db, ins.rows[0].id, source, plan.url);
     // found by its name: now it gets its GND number too, so the next comparison finds it exactly
-    if (!s.target.by_id) {
+    if (!s.target.by_id && byNameGets === 'gnd' && s.ref.id) {
       // a savepoint: in a transaction a failed statement can't just be caught — it would abort the whole save
       await db.query('SAVEPOINT gndid');
       try {
@@ -126,7 +128,19 @@ async function apply(db, t, entity, plan, choices, citations) {
     }
     relationships += 1;
   }
-  return { form, cites, agreed, relationships };
+  // numbers the record knows (SIKART: its GND and VIAF numbers) — ticked ones become reference records
+  let ids = 0;
+  for (const x of plan.ids || []) {
+    if (x.status === 'same' || choices[`idf.${x.code}`] !== 'take') continue;
+    await db.query('SAVEPOINT idf');
+    try {
+      await db.query(`INSERT INTO entry_identifiers (entity_type, entity_id, authority, value) VALUES ($1, $2, $3, $4)
+        ON CONFLICT (entity_type, entity_id, authority) DO UPDATE SET value = EXCLUDED.value`, [t.type, entity.id, x.code, x.value]);
+      await db.query('RELEASE SAVEPOINT idf');
+      ids += 1;
+    } catch { await db.query('ROLLBACK TO SAVEPOINT idf'); }
+  }
+  return { form, cites, agreed, relationships, ids };
 }
 
-module.exports = { fetchRecord, compare, apply, recordUrl, natural };
+module.exports = { fetchRecord, compare, apply, recordUrl, natural, ourEntry, ensureSource };

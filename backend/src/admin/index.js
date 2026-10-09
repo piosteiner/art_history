@@ -33,6 +33,7 @@ const numbers = require('./numbers');
 const citations = require('./citations');
 const identifiers = require('./identifiers');
 const gnd = require('./gnd');
+const sikart = require('./sikart');
 const imagesearch = require('./imagesearch');
 const placefinder = require('./placefinder');
 const bibliography = require('../bibliography');
@@ -68,7 +69,7 @@ const DONE = {
   'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
   converted: 'Type changed — everything that could come along is here; the old address leads here.',
-  'gnd-applied': 'GND comparison applied — agreeing values are cited.', 'id-added': 'Reference record added.', 'id-deleted': 'Reference record removed.', gnd: 'GND values applied — the field values are in the working copy: check them below and Publish.',
+  'gnd-applied': 'Comparison applied — agreeing values are cited.', 'id-added': 'Reference record added.', 'id-deleted': 'Reference record removed.', gnd: 'Values applied — the field values are in the working copy: check them below and Publish.',
   'cite-added': 'Source added.', 'cite-deleted': 'Source removed.',
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
@@ -794,6 +795,7 @@ router.post('/:plural/:slug/identifiers', async (req, res) => {
     return send(req, res, { title: 'Add a reference record', status: 422, flash: { kind: 'error', text },
       body: html`<p><a href="/${t.folder}/${e.slug}#reference-records">← ${e.name}</a></p>` });
   }
+  if (req.body.next === 'sikart') return res.redirect(303, `/${t.folder}/${e.slug}/sikart`);  // picked in the SIKART search
   res.redirect(303, `/${t.folder}/${e.slug}?done=id-added#reference-records`);
 });
 router.post('/identifiers/:id/delete', async (req, res) => {
@@ -804,65 +806,102 @@ router.post('/identifiers/:id/delete', async (req, res) => {
   res.redirect(303, `/${BY_TYPE[row.entity_type].folder}/${rows[0].slug}?done=id-deleted#reference-records`);
 });
 
-// Comparison with the GND (src/admin/gnd.js, 053): for an entry with a GND number. Like the Wikidata comparison: field
-// values into the working copy (cited with the GND when published), relationships created at once (cited), values
-// that agree cited as they are.
-async function gndPlan(t, e) {
-  const id = (await identifiers.list(adminPool, t.type, e.id)).find((x) => x.code === 'gnd');
-  if (!id) return { error: 'This entry has no GND number yet — add it under “Reference records”.' };
-  try { return { plan: await gnd.compare(adminPool, t, e, e.doc, id.value) }; } catch (err) { return { error: `The GND record could not be read: ${err.message}` }; }
+// Comparison with an authority file — the GND (src/admin/gnd.js, 053) and SIKART (src/admin/sikart.js, 057): for an
+// entry with that number. Like the Wikidata comparison: field values into the working copy (cited when published),
+// relationships created at once (cited), values that agree cited as they are; numbers the record knows (SIKART: GND,
+// VIAF) offered as reference records.
+const COMPARE = {
+  gnd: { name: 'the GND', short: 'GND', source: 'gnd', types: ['artist', 'person', 'institution'],
+    plan: (t, e, id) => gnd.compare(adminPool, t, e, e.doc, id), opts: { source: 'gnd', byNameGets: 'gnd', ensure: gnd.ensureSource } },
+  sikart: { name: 'SIKART', short: 'SIKART', source: 'sikart', types: ['artist', 'person'],
+    plan: (t, e, id) => sikart.compare(adminPool, t, e, e.doc, id, gnd.ourEntry), opts: { source: 'sikart', byNameGets: null, ensure: sikart.ensureSource } },
+};
+async function comparePlan(t, e, code) {
+  const id = (await identifiers.list(adminPool, t.type, e.id)).find((x) => x.code === code);
+  if (!id) return { missing: true };
+  try { return { plan: await COMPARE[code].plan(t, e, id.value) }; } catch (err) { return { error: `The ${COMPARE[code].short} record could not be read: ${err.message}` }; }
 }
-function gndPage(t, e, plan) {
+function comparePage(t, e, plan, code) {
+  const c = COMPARE[code];
   const choice = (name, value, label, checked) => html`<label class="choice"><input type="radio" name="${name}" value="${value}"${checked ? ' checked' : ''}> ${label}</label>`;
   return html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>
-    <h1>Compare with the GND</h1>
-    <p><a href="${plan.url}" target="_blank" rel="noopener">GND ${plan.gnd} ↗</a> — <b>${plan.info.name}</b>${plan.info.occupations.length ? html` · <span class="muted">${plan.info.occupations.join(', ')}</span>` : ''}</p>
-    <p class="muted small">Taken values are cited with the source “GND” and this record; values that agree are cited as they are.
+    <h1>Compare with ${c.name}</h1>
+    <p><a href="${plan.url}" target="_blank" rel="noopener">${c.short} ${plan.gnd} ↗</a> — <b>${plan.info.name}</b>${plan.info.occupations.length ? html` · <span class="muted">${plan.info.occupations.join(', ')}</span>` : ''}</p>
+    <p class="muted small">Taken values are cited with the source “${c.short}” and this record; values that agree are cited as they are.
       Field values go into the working copy — check them and Publish.</p>
-    <form method="post" action="/${t.folder}/${e.slug}/gnd" class="wd-form">
+    <form method="post" action="/${t.folder}/${e.slug}/${code}" class="wd-form">
       <h2>Fields</h2>
-      ${plan.rows.length ? html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Field</th><th>Yours</th><th>GND</th><th>Take?</th></tr></thead><tbody>
+      ${plan.rows.length ? html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Field</th><th>Yours</th><th>${c.short}</th><th>Take?</th></tr></thead><tbody>
         ${plan.rows.map((r) => html`<tr><td>${fieldLabel(t.type, r.key)}</td><td>${r.ours || html`<span class="muted">(empty)</span>`}</td>
           <td>${r.label || r.theirs}${r.key !== 'place' ? html` <span class="muted small">(${r.theirs})</span>` : ''}</td>
           <td>${r.status === 'same' ? html`<span class="muted">the same — cited</span>` : r.status === 'missing' ? html`<span class="muted">not among our places</span>`
-            : html`${choice(`take.${r.key}`, 'take', 'take the GND’s', r.status === 'new')} ${choice(`take.${r.key}`, 'keep', r.status === 'new' ? 'leave empty' : 'keep mine', r.status !== 'new')}`}</td></tr>`)}
+            : html`${choice(`take.${r.key}`, 'take', `take ${c.short}’s`, r.status === 'new')} ${choice(`take.${r.key}`, 'keep', r.status === 'new' ? 'leave empty' : 'keep mine', r.status !== 'new')}`}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing to compare.</p>`}
-      <h2>Relationships suggested by the GND</h2>
-      ${plan.rels.length ? html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Relationship</th><th>GND</th><th>Ours</th><th>Add?</th></tr></thead><tbody>
-        ${plan.rels.map((s) => html`<tr><td>${s.label}</td><td>${s.ref.label}</td>
-          <td>${s.target ? html`<a href="/${BY_TYPE[s.target.type].folder}/${s.target.slug}">${s.target.name}</a>${s.target.by_id ? '' : html` <span class="muted small">(same name)</span>`}` : html`<span class="muted">not in our database</span>`}</td>
-          <td>${s.already ? html`<span class="muted">have it</span>` : s.target ? html`<label class="choice"><input type="checkbox" name="rel.${s.i}" value="add"> add</label>` : ''}</td></tr>`)}
+      <h2>Relationships suggested by ${c.short}</h2>
+      ${plan.rels.length ? html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Relationship</th><th>${c.short}</th><th>Ours</th><th>Add?</th></tr></thead><tbody>
+        ${plan.rels.map((x) => html`<tr><td>${x.label}</td><td>${x.ref.label}</td>
+          <td>${x.target ? html`<a href="/${BY_TYPE[x.target.type].folder}/${x.target.slug}">${x.target.name}</a>${x.target.by_id ? '' : html` <span class="muted small">(same name)</span>`}` : html`<span class="muted">not in our database</span>`}</td>
+          <td>${x.already ? html`<span class="muted">have it</span>` : x.target ? html`<label class="choice"><input type="checkbox" name="rel.${x.i}" value="add"> add</label>` : ''}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">None.</p>`}
-      ${plan.info.variants.length ? html`<p class="muted small">Other names in the GND: ${plan.info.variants.join(' · ')}</p>` : ''}
+      ${plan.ids && plan.ids.length ? html`<h2>Reference records ${c.short} knows</h2><div class="table-wrap"><table class="diff wd-table wd-ids"><tbody>
+        ${plan.ids.map((x) => html`<tr><td>${x.name}</td><td>${x.ours || html`<span class="muted">(none)</span>`}</td><td>${x.value}</td>
+          <td>${x.status === 'same' ? html`<span class="muted">the same</span>` : html`<label class="choice"><input type="checkbox" name="idf.${x.code}" value="take"${x.status === 'new' ? ' checked' : ''}> ${x.status === 'new' ? 'add' : 'replace yours'}</label>`}</td></tr>`)}
+      </tbody></table></div>` : ''}
+      ${plan.info.variants.length ? html`<p class="muted small">${code === 'gnd' ? 'Other names in the GND: ' : ''}${plan.info.variants.join(' · ')}</p>` : ''}
       <div class="actions sticky-actions"><button>Apply selected</button><a class="button secondary" href="/${t.folder}/${e.slug}">Cancel</a></div>
     </form>`;
 }
-router.get('/:plural/:slug/gnd', async (req, res) => {
-  const { t } = req;
-  const e = await findEntity(t, req.params.slug);
-  if (!e) return notFoundPage(req, res);
-  const { plan, error } = await gndPlan(t, e);
-  if (error) return send(req, res, { title: 'GND', status: 422, flash: { kind: 'error', text: error }, body: html`<p><a href="/${t.folder}/${e.slug}#reference-records">← ${e.name}</a></p>` });
-  send(req, res, { title: `GND: ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' }, body: gndPage(t, e, plan) });
-});
-router.post('/:plural/:slug/gnd', async (req, res) => {
-  const { t } = req;
-  const e = await findEntity(t, req.params.slug);
-  if (!e) return notFoundPage(req, res);
-  const { plan, error } = await gndPlan(t, e);
-  if (error) return send(req, res, { title: 'GND', status: 422, flash: { kind: 'error', text: error }, body: html`<p><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>` });
-  const result = await withTx(req.user, async (db) => {
-    const r = await gnd.apply(db, t, e, plan, req.body, citations);
-    if (r.agreed.length) await citations.citeAgreeingSource(db, t.type, e.id, 'gnd', plan.url, r.agreed, req.user.id);
-    return r;
-  }, { source: 'gnd' });
-  if (Object.keys(result.form).length) {
-    await collab.applyForm(t, e.id, result.form, req.user.username);
-    await withTx(req.user, (db) => citations.pendingFromSource(db, t.type, e.id, 'gnd', plan.url, result.cites, req.user.id), { source: 'gnd' });
-    return res.redirect(303, `/${t.folder}/${e.slug}/edit?done=gnd&rels=${result.relationships}`);
-  }
-  res.redirect(303, `/${t.folder}/${e.slug}?done=gnd-applied&rels=${result.relationships}`);
-});
+// SIKART without a number yet: the people of that name in SIKART — "this one" adds the number and compares
+function sikartSearchPage(t, e, q, hits, error) {
+  return html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p><h1>Find ${e.name} in SIKART</h1>
+    <form method="get" action="/${t.folder}/${e.slug}/sikart" class="bar"><input name="q" value="${q}" class="grow" aria-label="name">
+      <button class="secondary">Search</button></form>
+    ${error ? html`<p class="flash error">${error}</p>` : !hits.length ? html`<p class="muted">Nobody of that name in SIKART.</p>`
+      : html`<div class="table-wrap"><table class="sikart-hits"><tbody>${hits.map((h) => html`<tr>
+        <td><b>${h.name}</b><div class="small muted">${h.note.replace(/\n/g, ' ')}</div>${h.short ? html`<div class="small">${h.short}</div>` : ''}</td>
+        <td><a href="${h.url}" target="_blank" rel="noopener">${h.id} ↗</a></td>
+        <td><form method="post" action="/${t.folder}/${e.slug}/identifiers"><input type="hidden" name="authority" value="sikart">
+          <input type="hidden" name="value" value="${h.id}"><input type="hidden" name="next" value="sikart"><button>This one</button></form></td></tr>`)}
+      </tbody></table></div>`}`;
+}
+for (const code of Object.keys(COMPARE)) {
+  router.get(`/:plural/:slug/${code}`, async (req, res) => {
+    const { t } = req;
+    const e = await findEntity(t, req.params.slug);
+    if (!e || !COMPARE[code].types.includes(t.type)) return notFoundPage(req, res);
+    const { plan, error, missing } = await comparePlan(t, e, code);
+    if (missing && code === 'sikart') {
+      const q = String(req.query.q || e.name);
+      let hits = []; let err = null;
+      try { hits = await sikart.search(q); } catch (x) { err = `SIKART could not be searched: ${x.message}`; }
+      return send(req, res, { title: `SIKART: ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' }, body: sikartSearchPage(t, e, q, hits, err) });
+    }
+    if (missing || error) {
+      return send(req, res, { title: COMPARE[code].short, status: 422, flash: { kind: 'error', text: error || `This entry has no ${COMPARE[code].short} number yet — add it under “Reference records”.` },
+        body: html`<p><a href="/${t.folder}/${e.slug}#reference-records">← ${e.name}</a></p>` });
+    }
+    send(req, res, { title: `${COMPARE[code].short}: ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' }, body: comparePage(t, e, plan, code) });
+  });
+  router.post(`/:plural/:slug/${code}`, async (req, res) => {
+    const { t } = req;
+    const e = await findEntity(t, req.params.slug);
+    if (!e || !COMPARE[code].types.includes(t.type)) return notFoundPage(req, res);
+    const { plan, error, missing } = await comparePlan(t, e, code);
+    if (missing || error) return send(req, res, { title: COMPARE[code].short, status: 422, flash: { kind: 'error', text: error || 'No number.' }, body: html`<p><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>` });
+    const { source } = COMPARE[code];
+    const result = await withTx(req.user, async (db) => {
+      const r = await gnd.apply(db, t, e, plan, req.body, citations, COMPARE[code].opts);
+      if (r.agreed.length) await citations.citeAgreeingSource(db, t.type, e.id, source, plan.url, r.agreed, req.user.id);
+      return r;
+    }, { source });
+    if (Object.keys(result.form).length) {
+      await collab.applyForm(t, e.id, result.form, req.user.username);
+      await withTx(req.user, (db) => citations.pendingFromSource(db, t.type, e.id, source, plan.url, result.cites, req.user.id), { source });
+      return res.redirect(303, `/${t.folder}/${e.slug}/edit?done=gnd&rels=${result.relationships}`);
+    }
+    res.redirect(303, `/${t.folder}/${e.slug}?done=gnd-applied&rels=${result.relationships}`);
+  });
+}
 
 // Further numbers of an artwork (src/admin/numbers.js): added on its page, removed one by one.
 router.post('/artworks/:slug/numbers', async (req, res) => {

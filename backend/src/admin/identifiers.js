@@ -25,7 +25,7 @@ function numberFrom(code, text) {
   const last = u.pathname.split('/').filter(Boolean).pop() || '';
   if (code === 'gnd') return (/(?:^|[=:])nid=?([0-9X-]+)/i.exec(decodeURIComponent(q('query') || '')) || [])[1] || (u.hostname.endsWith('d-nb.info') || u.hostname.endsWith('lobid.org') ? last.replace(/\.json$/, '') : t);
   if (code === 'ulan') return q('subjectid') || (/(500\d{6})/.exec(t) || [])[1] || t;
-  if (code === 'sikart') return q('id') || (/(\d{6,10})/.exec(t) || [])[1] || t;
+  if (code === 'sikart') return (/person-(\d+)/.exec(t) || [])[1] || q('id') || (/(\d{6,10})/.exec(t) || [])[1] || t;  // recherche.sik-isea.ch/sik:person-4000055/…
   return last || t;
 }
 
@@ -79,6 +79,8 @@ function section({ t, e, ids, available }) {
       <form method="post" action="/identifiers/${x.id}/delete" class="inline"><button class="link small">remove</button></form></li>`)}</ul>` : ''}
     ${gnd ? html`<p><a class="button secondary" href="/${t.folder}/${e.slug}/gnd">Compare with the GND…</a>
       <span class="muted small">dates, places, occupations and relationships from the Deutsche Nationalbibliothek's record — cited as the source</span></p>` : ''}
+    ${['artist', 'person'].includes(t.type) ? html`<p><a class="button secondary" href="/${t.folder}/${e.slug}/sikart">${ids.some((x) => x.code === 'sikart') ? 'Compare with SIKART…' : 'Find in SIKART…'}</a>
+      <span class="muted small">the lexicon of the Swiss Institute for Art Research (SIK-ISEA): life data, places, Heimatort, GND and VIAF — cited as the source</span></p>` : ''}
     ${available.length ? html`<details><summary class="button secondary">+ Add a reference record</summary>
       <form method="post" action="/${t.folder}/${e.slug}/identifiers" class="form bar">
         <select name="authority" aria-label="authority">${available.map((a) => html`<option value="${a.code}">${a.name}</option>`)}</select>

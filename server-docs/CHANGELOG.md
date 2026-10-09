@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Admin: SIKART (SIK-ISEA) — portal links, find by name, compare (migration 057)
+- **What:** 057 points SIKART reference records at the new research portal (`recherche.sik-isea.ch/sik:person-{id}/in/sikart`)
+  and adds the bibliography source `sikart` (scholarly). Pasted portal or old sikart.ch links give the number.
+  `src/admin/sikart.js` reads one record from the portal's API (`api.recherche.sik-isea.ch`, `SIKART_BASE`): birth/death
+  and places parsed from the biographical note, GND/VIAF numbers, Heimatort/citizenship (shown only). The GND comparison
+  page in index.js is now shared (`COMPARE`): "Compare with SIKART…" takes dates (cited), adds born/died-in relationships
+  to our places (cited), and GND/VIAF as reference records; "Find in SIKART…" (no number yet) searches by name, "This one"
+  stores the number and opens the comparison. Artists and people only.
+- **Why:** owner: integrate the SIK-ISEA research portal. Facts only — the portal publishes no terms for its API, so
+  lexicon texts and images stay links; requests are single records on demand.
+- **Revert:** `UPDATE authorities SET name = 'SIKART', url_template = 'https://www.sikart.ch/KuenstlerInnen.aspx?id={id}' WHERE code = 'sikart';`
+  (the `sikart` source can stay, or delete it with its citations); revert the commit.
+- **Tested:** unit (`test/sikart.test.js`), e2e (`sikart.spec`, fixtures for search and record), live record of Ferdinand Hodler
+  read through the module; dry run on prod (rolled back).
+
 ### Admin: the fields an error is about are marked in red — also for the database's rules
 - **What:** `RULE_FIELDS` (index.js): which fields each database rule concerns (inventory number ↔ institution, loan,
   dimensions, parent …) — `errorKeysOf` marks them like "field: message" errors. A thicker red frame and red label;
