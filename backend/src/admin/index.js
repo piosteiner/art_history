@@ -879,10 +879,13 @@ router.param('plural', (req, res, next, plural) => {
 // Everything a form needs from the database: enum choices, suggestions from existing values, ref targets;
 // for an existing artwork (id) also its co-creators, named under the creator field.
 async function formContext(t, id = null) {
-  const enums = Object.fromEntries((await adminPool.query(`
-    SELECT a.attname, array_agg(e.enumlabel::text ORDER BY e.enumsortorder) AS vals
+  const enumRows = (await adminPool.query(`
+    SELECT a.attname, a.attnotnull, array_agg(e.enumlabel::text ORDER BY e.enumsortorder) AS vals
     FROM pg_attribute a JOIN pg_enum e ON e.enumtypid = a.atttypid
-    WHERE a.attrelid = $1::regclass GROUP BY a.attname`, [t.table])).rows.map((r) => [r.attname, r.vals]));
+    WHERE a.attrelid = $1::regclass GROUP BY a.attname, a.attnotnull`, [t.table])).rows;
+  const enums = Object.fromEntries(enumRows.map((r) => [r.attname, r.vals]));
+  // a column that may be empty gets an empty choice — else the menu always sends its first value (052's title_status)
+  const enumsNullable = new Set(enumRows.filter((r) => !r.attnotnull).map((r) => r.attname));
   const suggestions = {};
   for (const key of ['kind', 'medium']) {
     if (t.fields[key] === 'text' && !enums[key]) {
@@ -912,7 +915,7 @@ async function formContext(t, id = null) {
   const coCreators = t.type === 'artwork' && id !== null ? (await adminPool.query(`
     SELECT a.name, r.label FROM relationships r JOIN artists a ON a.id = r.object_id
     WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = $1 ORDER BY a.name`, [id])).rows : [];
-  return { enums, suggestions, refs, used, coCreators, errorKeys: new Set(), confirmNew: {} };
+  return { enums, enumsNullable, suggestions, refs, used, coCreators, errorKeys: new Set(), confirmNew: {} };
 }
 
 async function findEntity(t, slug) {

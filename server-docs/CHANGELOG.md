@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Fix: menus of optional values always saved their first value (title status, a source's reliability / reading status)
+- **What:** enum menus of nullable columns get an empty first choice (`formContext` → `enumsNullable`; for the title
+  "original — not a translation"); readable names for the title statuses; label "Title: original or translation".
+  Data (prod, by hand, source `sql`): `title_status` emptied for the two artworks the bug had set to "official"
+  (*Das Jungfraumassiv von Mürren aus*, *La Route de Saint-Germain près de Marly* — original-language titles); the
+  reliability of *galerie-das-20-jahrhunderts* emptied (derived again: website → institution; it had become
+  "database").
+- **Why:** owner: the title could not be set back to "original". A `<select>` without an empty option sends its first
+  value — since 049 (reliability) and 052 (title status) every save set them.
+- **Tested:** e2e (translations.spec: saving leaves both empty).
+- **Revert:** redeploy the previous commit.
+
 ### Admin: sources without reloading, quick select of recent sources, "also for" several fields
 - **What:** `editor/cites.js` (dialogs moved out of `sortable.js`): add / remove via fetch (`X-Requested-With: fetch`) —
   the server answers with the affected markers rendered anew (`freshMarkers()`), they replace the old ones and the

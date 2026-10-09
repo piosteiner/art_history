@@ -40,7 +40,7 @@ const HINTS = {
 const LABELS = {
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
-  'artwork.title_status': 'Title is a translation',
+  'artwork.title_status': 'Title: original or translation',
   'artwork.web_url': 'Web page', 'artwork.institution': 'Institution (where it is now)', 'artwork.on_loan': 'On loan there',
   'artwork.on_loan_since': 'On loan since', 'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
   'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
@@ -112,6 +112,10 @@ const TYPE_HINTS = {
   'source.description_md': 'Your own notes: what it says, what it is good for. Not part of the citation.',
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
+// The empty choice of a menu whose column may be empty, and readable names of some values.
+const EMPTY_CHOICE = { 'artwork.title_status': 'original — not a translation' };
+const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', 'artwork.title_status.common': 'common translation',
+  'artwork.title_status.own': 'own translation' };
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
 const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || humanize(key);
 
@@ -275,7 +279,7 @@ function fieldInput(key, kind, f, ctx) {
   }
   if (ctx.enums[key]) {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
-      <select id="${id}" name="${name}">${ctx.enums[key].map((v) => html`<option${v === f[key] ? ' selected' : ''}>${v}</option>`)}</select>${hint(typeHint)}</div>`;
+      <select id="${id}" name="${name}">${ctx.enumsNullable && ctx.enumsNullable.has(key) ? html`<option value=""${!f[key] ? ' selected' : ''}>${EMPTY_CHOICE[`${ctx.type}.${key}`] || '—'}</option>` : ''}${ctx.enums[key].map((v) => html`<option value="${v}"${v === f[key] ? ' selected' : ''}>${ENUM_LABELS[`${ctx.type}.${key}.${v}`] || v}</option>`)}</select>${hint(typeHint)}</div>`;
   }
   if (key === 'definition') {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
