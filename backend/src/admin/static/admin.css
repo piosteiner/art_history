@@ -353,9 +353,6 @@ details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-
 .drag-handle { cursor: grab; touch-action: none; user-select: none; background: none; border: 0; padding: .1rem .25rem;
   color: var(--muted); font-size: 1.1rem; line-height: 1; border-radius: 4px; }
 .drag-handle:hover, .drag-handle:focus-visible { color: var(--fg); background: color-mix(in srgb, var(--accent) 18%, transparent); }
-.sort-item.dragging { opacity: .85; }
-.sort-item.dragging td { background: color-mix(in srgb, var(--accent) 12%, var(--panel)); }
-.sort-item.dragging .drag-handle { cursor: grabbing; }
 .sort-saving { opacity: .6; pointer-events: none; }
 
 /* the edit page: the sources dialogs after the form, opened by a button next to each field's label */
@@ -364,3 +361,10 @@ details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-
 .label-row { display: flex; align-items: baseline; gap: .35rem; }
 .label-row > label { margin-bottom: .2rem; }
 .cite-actions { margin-top: .6rem; }
+
+/* dragging (editor/sortable.js): the floating copy and the gap where it lands */
+.sort-ghost { position: fixed; z-index: 70; margin: 0; pointer-events: none; background: var(--panel); border-collapse: collapse;
+  box-shadow: 0 8px 28px rgba(0,0,0,.4); border: 1px solid var(--accent); border-radius: 4px; opacity: .97; }
+.sort-placeholder td { padding: 0; border: 2px dashed color-mix(in srgb, var(--accent) 60%, transparent); border-radius: 6px;
+  background: color-mix(in srgb, var(--accent) 7%, transparent); }
+body.sorting, body.sorting * { cursor: grabbing !important; user-select: none; }

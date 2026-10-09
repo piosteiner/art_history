@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Admin: real drag and drop for provenance steps (floating copy + placeholder)
+- **What:** `editor/sortable.js`: the dragged step stays in place (hidden), a floating copy of its row follows the
+  pointer and a dashed placeholder moves through the list; release = the step takes the placeholder's place; Esc
+  cancels. Pointer listeners on the window — moving the captured element itself had lost the pointer after one place
+  in Firefox. Tests in Chromium and Firefox (`sortable.spec.js`, `sortable.firefox.spec.js`, cases in
+  `sortable-cases.js`).
+- **Server:** Playwright's Firefox (v1543) downloaded to `~/.cache/ms-playwright/firefox-1543` for the e2e tests
+  (no system packages). Remove: `rm -rf ~/.cache/ms-playwright/firefox-*` and delete `sortable.firefox.spec.js`.
+- **Why:** owner: an item could only be moved one place.
+- **Revert:** redeploy the previous commit.
+
 ### Admin: source markers on the edit page too
 - **What:** the edit page renders each citable field's sources dialog after the form (forms can't nest);
   `editor/sortable.js` (`initCiteTriggers`) puts a button with the same badges next to the field's label (in a

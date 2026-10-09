@@ -37,35 +37,74 @@ function setup(box) {
     }
   } catch { /* storage off */ }
 
+  // Dragging: the item stays where it is (hidden) while a floating copy follows the pointer and a placeholder of the
+  // same height shows where it will land — the other items make room. The listeners are on the window, not on the
+  // handle: nothing that is being moved holds the pointer (moving a captured element loses the capture in Firefox).
+  // Esc cancels.
   box.addEventListener('pointerdown', (e) => {
     const handle = e.target.closest('.drag-handle');
     if (!handle || e.button !== 0) return;
     e.preventDefault();
+    if (handle.hasPointerCapture && handle.hasPointerCapture(e.pointerId)) handle.releasePointerCapture(e.pointerId);
     const item = handle.closest('.sort-item');
-    item.classList.add('dragging');
-    handle.setPointerCapture(e.pointerId);
+    const home = item.nextElementSibling;
+    const rect = item.getBoundingClientRect();
+    const row = handle.closest('tr');                                   // the item's main row (the one with the handle)
+    const rowRect = row.getBoundingClientRect();
+    const offset = e.clientY - rowRect.top;
+
+    // the floating copy: a table of its own with the main row's cells at their current widths
+    const ghost = box.cloneNode(false);
+    ghost.removeAttribute('data-sortable');
+    ghost.classList.add('sort-ghost');
+    const copy = document.createElement('tbody');
+    const rowCopy = row.cloneNode(true);
+    [...row.cells].forEach((td, k) => { rowCopy.cells[k].style.width = `${td.getBoundingClientRect().width}px`; });
+    copy.append(rowCopy);
+    ghost.append(copy);
+    Object.assign(ghost.style, { left: `${rowRect.left}px`, top: `${rowRect.top}px`, width: `${rowRect.width}px` });
+    document.body.append(ghost);
+
+    // the gap where it would land
+    const gap = document.createElement('tbody');
+    gap.className = 'sort-placeholder';
+    gap.innerHTML = `<tr><td colspan="99" style="height:${rect.height}px"></td></tr>`;
+    box.insertBefore(gap, item);
+    item.hidden = true;
+    document.body.classList.add('sorting');
+
     const move = (ev) => {
-      // the item goes before the first other item whose middle is below the pointer — the middle of its main row
-      // (the one with the handle), not of the whole item: a step's "passed on directly" line above it doesn't count
-      const before = items().filter((i) => i !== item).find((o) => {
+      ghost.style.top = `${ev.clientY - offset}px`;
+      // the gap goes before the first other item whose middle (of its main row, the one with the handle) is below
+      // the pointer — not counting a step's "passed on directly" line above it
+      const before = items().filter((i) => i !== item && !i.hidden).find((o) => {
         const main = o.querySelector('.drag-handle');
         const r = (main ? main.closest('tr') || o : o).getBoundingClientRect();
         return ev.clientY < r.top + r.height / 2;
       });
-      if (before) { if (item.nextElementSibling !== before) box.insertBefore(item, before); } else if (box.lastElementChild !== item) box.appendChild(item);
+      if (before) { if (gap.nextElementSibling !== before) box.insertBefore(gap, before); } else if (box.lastElementChild !== gap) box.append(gap);
       if (ev.clientY < 60) window.scrollBy(0, -12);                     // near the edges: scroll along
       else if (ev.clientY > window.innerHeight - 60) window.scrollBy(0, 12);
     };
-    const end = () => {
-      handle.removeEventListener('pointermove', move);
-      handle.removeEventListener('pointerup', end);
-      handle.removeEventListener('pointercancel', end);
-      item.classList.remove('dragging');
-      save();
+    const finish = (commit) => {
+      window.removeEventListener('pointermove', move);
+      window.removeEventListener('pointerup', up);
+      window.removeEventListener('pointercancel', cancel);
+      window.removeEventListener('keydown', key, true);
+      box.insertBefore(item, commit ? gap : home);
+      gap.remove();
+      ghost.remove();
+      item.hidden = false;
+      document.body.classList.remove('sorting');
+      if (commit) save();
     };
-    handle.addEventListener('pointermove', move);
-    handle.addEventListener('pointerup', end);
-    handle.addEventListener('pointercancel', end);
+    const up = () => finish(true);
+    const cancel = () => finish(false);
+    const key = (ev) => { if (ev.key === 'Escape') { ev.preventDefault(); ev.stopPropagation(); finish(false); } };
+    window.addEventListener('pointermove', move);
+    window.addEventListener('pointerup', up);
+    window.addEventListener('pointercancel', cancel);
+    window.addEventListener('keydown', key, true);
   });
 
   box.addEventListener('keydown', (e) => {
