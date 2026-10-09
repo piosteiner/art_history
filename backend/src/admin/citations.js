@@ -66,8 +66,9 @@ async function syncText(db, target, lines) {
 }
 
 // Add a citation from the form on an entry's page: target (type + id + field, or relationship id), a source of the
-// bibliography (slug), page/locator, note. The value is recorded as it is now.
-async function add(db, body, userId) {
+// bibliography (slug), page/locator, note. The value is recorded as it is now — unless `pending` (the edit page: the
+// field's form values in the working copy differ from the published ones): then it waits for them to be published.
+async function add(db, body, userId, { pending = null } = {}) {
   const text = (k) => String(body[k] ?? '').trim() || null;
   const sourceSlug = text('source');
   const free = text('text');
@@ -92,11 +93,11 @@ async function add(db, body, userId) {
     return;
   }
   const { rowCount } = await db.query(`
-    INSERT INTO citations (entity_type, entity_id, field, source_id, text, locator, note, accessed, url, created_by, cited_value)
-    SELECT f.entity_type, er.id, f.field, $4, $5, $6, $7, $8, $9, $10, field_value(er.r, f.cols)
+    INSERT INTO citations (entity_type, entity_id, field, source_id, text, locator, note, accessed, url, created_by, cited_value, pending)
+    SELECT f.entity_type, er.id, f.field, $4, $5, $6, $7, $8, $9, $10, CASE WHEN $11::jsonb IS NULL THEN field_value(er.r, f.cols) END, $11::jsonb
     FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
     WHERE f.entity_type = $1::entity_type AND f.field = $3`,
-  [text('type'), text('id'), text('field'), ...common]);
+  [text('type'), text('id'), text('field'), ...common, pending ? JSON.stringify(pending) : null]);
   if (!rowCount) throw new CitationError('That field takes no source.');
 }
 
@@ -190,14 +191,16 @@ async function citeRelationshipFromWikidata(db, relId, qid, property) {
 // ── display ─────────────────────────────────────────────────────────────────────────────────────────────────────
 // Next to a value: one badge per kind of source (W M L P), "?" when there is none; a click opens the list and a form
 // to add one. target: { type, id, field } or { relationship }.
-function marker(cites = [], target, back) {
+// edit: on the edit page — rendered after the entry's form (forms can't nest); editor/sortable.js puts a button with
+// the same badges next to the field's label, and fills `expect` with the field's form values on submit.
+function marker(cites = [], target, back, { edit = false } = {}) {
   const kinds = [...new Set(cites.filter((c) => !c.pending && !c.outdated).map(kindOf))];
   const outdated = cites.some((c) => c.outdated);
   const pending = cites.some((c) => c.pending);
   const label = kinds.length ? kinds.map((k) => html`<span class="cite-badge cite-${k}" title="${BADGE_TITLE[k]} — click to see or add sources">${BADGE[k]}</span>`)
     : html`<span class="cite-badge cite-none" title="no source yet — click to add one">+</span>`;
   const what = target.label || 'this';
-  return html`<details class="cite"><summary aria-label="sources of ${what}">${label}${outdated ? html`<span class="cite-badge cite-outdated" title="changed since cited">!</span>` : ''}${pending ? html`<span class="cite-badge cite-pending" title="from Wikidata, not published yet">…</span>` : ''}</summary>
+  return html`<details class="cite${edit ? ' cite-edit' : ''}"${edit ? html` data-cite-field="${target.field}"` : ''}><summary aria-label="sources of ${what}">${label}${outdated ? html`<span class="cite-badge cite-outdated" title="changed since cited">!</span>` : ''}${pending ? html`<span class="cite-badge cite-pending" title="not published yet — becomes a citation when the value is published">…</span>` : ''}</summary>
     <div class="cite-panel" role="dialog" aria-label="Sources of ${what}">
       <div class="cite-head"><b>Sources of ${what}</b><button type="button" class="link cite-close" aria-label="close">close ✕</button></div>
       ${cites.length ? html`<ul>${cites.map((c) => html`<li><span class="cite-badge cite-${kindOf(c)}" title="${BADGE_TITLE[kindOf(c)]}">${BADGE[kindOf(c)]}</span>
@@ -215,6 +218,7 @@ function marker(cites = [], target, back) {
           : target.provenance ? html`<input type="hidden" name="provenance" value="${target.provenance}">`
           : html`<input type="hidden" name="type" value="${target.type}"><input type="hidden" name="id" value="${target.id}"><input type="hidden" name="field" value="${target.field}">`}
         <input type="hidden" name="back" value="${back}">
+        ${edit ? html`<input type="hidden" name="expect" value="">` : ''}
         <div class="field"><label>Add a source — paste the link of the page</label>
           <input name="url" type="url" placeholder="https://www.vangoghmuseum.nl/en/collection/…" aria-label="link of the page">
           <div class="hint">The website becomes a source of the bibliography (or the one we have for that site is used) — with this page and today's date.</div></div>
@@ -227,7 +231,7 @@ function marker(cites = [], target, back) {
           <div class="field-pair"><div class="field"><label>Name of the website (new ones)</label><input name="site" placeholder="e.g. Van Gogh Museum, Collection" aria-label="name of the website"></div>
             <div class="field"><label>Accessed</label><input name="accessed" type="date" aria-label="accessed"></div></div>
           <div class="field"><label>Or in words (stays a note: T)</label><input name="text" placeholder="e.g. letter to Theo, 1888" aria-label="source in words"></div></details>
-        <div class="actions"><button>Add source</button></div>
+        <div class="cite-actions"><button>Add source</button></div>
       </form></div></details>`;
 }
 

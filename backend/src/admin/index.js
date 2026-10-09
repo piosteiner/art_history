@@ -701,7 +701,20 @@ const citeBack = (b, done) => {
 };
 router.post('/citations', async (req, res) => {
   try {
-    await withTx(req.user, (db) => citations.add(db, req.body, req.user.id));
+    // from the edit page: the field's values in the working copy (expect). Different from the published ones → the
+    // citation is for the new value and waits for it to be published (settled by saveEntity); the same → as usual.
+    let pending = null;
+    const t = BY_TYPE[req.body.type];
+    if (req.body.expect && t && /^\d+$/.test(String(req.body.id || ''))) {
+      let expect = {};
+      try { expect = JSON.parse(String(req.body.expect)) || {}; } catch { expect = {}; }
+      expect = Object.fromEntries(Object.entries(expect).filter(([k, v]) => /^f\.[a-z_]+$/.test(k) && typeof v === 'string'));
+      const e = (await readDocs(adminPool, t, 't.id = $1', [req.body.id]))[0];
+      const published = e ? drafts.formKeys(e.doc, t, e.slug) : {};
+      const norm = (v) => String(v ?? '').replace(/\r\n/g, '\n').trim();
+      if (Object.keys(expect).length && Object.entries(expect).some(([k, v]) => norm(v) !== norm(published[k]))) pending = expect;
+    }
+    await withTx(req.user, (db) => citations.add(db, req.body, req.user.id, { pending }));
   } catch (err) {
     const text = err instanceof citations.CitationError ? err.message : friendly(err);
     return send(req, res, { title: 'Add a source', status: 422, flash: { kind: 'error', text },
@@ -1617,8 +1630,19 @@ router.get('/:plural/:slug/edit', async (req, res) => {
     action: `/${t.folder}/${e.slug}`, errors: [], version: working.version,
     collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) } });
   send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
-    body: html`<h1>Edit ${e.name}</h1>${banner}${form}` });
+    body: html`<h1>Edit ${e.name}</h1>${banner}${form}${await citeDialogs(t, e)}` });
 });
+
+// The sources of the fields on the edit page: one dialog per citable field, after the form (forms can't nest);
+// editor/sortable.js shows each one's badges next to the field's label.
+async function citeDialogs(t, e) {
+  const citable = (await citations.citableFields(adminPool))[t.type] || {};
+  if (!Object.keys(citable).length) return '';
+  const cites = await citations.forEntity(adminPool, t.type, e.id);
+  const back = `/${t.folder}/${e.slug}/edit`;
+  return html`<div class="cite-dialogs">${Object.keys(citable).map((field) => citations.marker(cites[field],
+    { type: t.type, id: e.id, field, label: `“${fieldLabel(t.type, field)}”` }, back, { edit: true }))}</div>`;
+}
 
 router.post('/:plural/:slug', async (req, res) => {
   const { t } = req;

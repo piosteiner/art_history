@@ -144,3 +144,41 @@ test('paste a link: the website becomes a source (once), the page and today are 
   await expect(rel.locator('.cite-panel')).toBeHidden();
   sql(`DELETE FROM citations WHERE source_id = entity_id('source', 'collection-test-museum'); DELETE FROM bibliography WHERE slug = 'collection-test-museum'`);
 });
+
+test('on the edit page: sources next to the labels; for a changed value the citation waits for Publish', async ({ userA }) => {
+  const { liveReady } = require('./helpers');
+  sql("DELETE FROM citations WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'vincent-van-gogh'); DELETE FROM live_docs WHERE entity_type = 'artist'");
+  await userA.goto('/artists/vincent-van-gogh/edit');
+  await liveReady(userA);
+  const birthLabel = userA.locator('.label-row:has(label[for="f-birth"])');   // the label and its sources button
+  await expect(birthLabel.locator('.cite-trigger .cite-none')).toHaveText('+');
+  await expect(userA.locator('label[for="f-birth"]')).toHaveText('Birth');      // the label itself unchanged
+  // an unchanged value: cited at once
+  await birthLabel.locator('.cite-trigger').click();
+  const birthDialog = userA.locator('details.cite-edit[data-cite-field="birth"] .cite-panel');
+  await expect(birthDialog).toBeInViewport({ ratio: 1 });
+  await birthDialog.locator('input[name=text]').evaluate((el) => { el.closest('details.cite-more').open = true; });
+  await birthDialog.locator('input[name=text]').fill('Letter 1');
+  await Promise.all([userA.waitForNavigation(), birthDialog.locator('button:has-text("Add source")').click()]);
+  await expect(userA).toHaveURL(/\/artists\/vincent-van-gogh\/edit\?done=cite-added/);
+  expect(sql(`SELECT (pending IS NULL)::text || ' ' || (cited_value IS NOT NULL)::text FROM citations WHERE text = 'Letter 1'`)).toBe('true true');
+  await expect(userA.locator('.label-row:has(label[for="f-birth"]) .cite-trigger .cite-text')).toHaveText('T');
+
+  // a changed value: the citation is for the new one — pending until published
+  await liveReady(userA);
+  await userA.fill('#f-death', '1890-07-30');
+  await expect.poll(() => sql(`SELECT dirty::text FROM live_docs WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'vincent-van-gogh')`)).toBe('true');
+  await userA.locator('.label-row:has(label[for="f-death"]) .cite-trigger').click();
+  const deathDialog = userA.locator('details.cite-edit[data-cite-field="death"] .cite-panel');
+  await deathDialog.locator('input[name=text]').evaluate((el) => { el.closest('details.cite-more').open = true; });
+  await deathDialog.locator('input[name=text]').fill('Letter 2');
+  await Promise.all([userA.waitForNavigation(), deathDialog.locator('button:has-text("Add source")').click()]);
+  expect(sql(`SELECT pending::text FROM citations WHERE text = 'Letter 2'`)).toContain('1890-07-30');
+  await expect(userA.locator('.label-row:has(label[for="f-death"]) .cite-trigger .cite-pending')).toBeVisible();
+  await expect(userA.locator('#f-death')).toHaveValue('1890-07-30');           // the working copy kept the change
+  await submitForm(userA);                                                       // Publish
+  await expect(userA).toHaveURL(/\/artists\/vincent-van-gogh\?done=published/);
+  expect(sql(`SELECT (pending IS NULL)::text || ' ' || (cited_value IS NOT NULL)::text FROM citations WHERE text = 'Letter 2'`)).toBe('true true');
+  sql(`UPDATE artists SET death = '[1890-07-29,1890-07-30)', death_label = '29 July 1890' WHERE slug = 'vincent-van-gogh';  -- as imported
+       DELETE FROM citations WHERE text IN ('Letter 1', 'Letter 2'); DELETE FROM live_docs WHERE entity_type = 'artist'`);
+});

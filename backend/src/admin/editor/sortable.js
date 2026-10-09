@@ -92,3 +92,32 @@ export function initCiteDialogs() {
     if (btn) { e.preventDefault(); btn.closest('details.cite').open = false; }
   });
 }
+
+// The edit page (src/admin/index.js → citeDialogs): each field's sources dialog sits after the form; a button with the
+// same badges goes next to the field's label. On adding a source, `expect` gets the field's values as they are in
+// the form now — the server then knows whether the citation is for the published value or for a new one.
+export function initCiteTriggers() {
+  const main = document.querySelector('form.form[data-collab], form.form[data-draft]');
+  if (!main) return;
+  const valuesOf = (field) => Object.fromEntries([...new FormData(main)]
+    .filter(([k, v]) => typeof v === 'string' && (k === `f.${field}` || k.startsWith(`f.${field}_`))));
+  document.querySelectorAll('details.cite-edit[data-cite-field]').forEach((d) => {
+    const field = d.dataset.citeField;
+    const input = [...main.elements].find((el) => el.name === `f.${field}` || (el.name || '').startsWith(`f.${field}_`));
+    const label = input && input.closest('.field') && input.closest('.field').querySelector('label');
+    if (!label) return;  // a field this form doesn't show
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'cite-trigger';
+    btn.innerHTML = d.querySelector(':scope > summary').innerHTML;  // the badges, rendered (and escaped) by the server
+    btn.setAttribute('aria-label', `sources of ${label.textContent.trim()}`);
+    btn.addEventListener('click', (e) => { e.preventDefault(); d.open = true; });
+    // next to the label, not inside it: the label's text (and what a screen reader announces) stays the field's name
+    const row = document.createElement('div');
+    row.className = 'label-row';
+    label.before(row);
+    row.append(label, btn);
+    const add = d.querySelector('form.cite-add');
+    add.addEventListener('submit', () => { add.elements.expect.value = JSON.stringify(valuesOf(field)); });
+  });
+}

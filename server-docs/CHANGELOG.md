@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Admin: source markers on the edit page too
+- **What:** the edit page renders each citable field's sources dialog after the form (forms can't nest);
+  `editor/sortable.js` (`initCiteTriggers`) puts a button with the same badges next to the field's label (in a
+  `.label-row`, the label itself unchanged) and, on adding a source, sends the field's current form values (`expect`).
+  `POST /citations`: unchanged from the published values → cited at once; changed in the working copy → a pending
+  citation (`citations.add(…, {pending})`), settled when published (as Wikidata's).
+- **Why:** owner: sources while editing, not only on the entry's page.
+- **Tested:** e2e 115 passing (citations.spec: edit page, unchanged → cited, changed → pending → published).
+- **Revert:** redeploy the previous commit.
+
 ### Frontend: translation status — own ones in [brackets], official ones preferred and marked (no server change)
 - **What:** `src/html.ts` `displayName` (official translation in the title's language preferred to a common/own title;
   own → [brackets]), `otherNames` (brackets, "official" tag, the replaced title listed), `titleStatusLine`; artwork page
