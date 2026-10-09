@@ -1,7 +1,7 @@
 // Search and sort for lists of entries (explore pickers, list pages and the header search share it).
 // Each entry has a name and a meta line that are shown, labelled fields that are searchable but not shown
 // (type, birthplace, nationality …), and per sort option a value plus a section heading.
-import { countryName, countryText, creatorNames, html, personDates, polityText, ROLE_LABEL, spanLabel, type Html } from './html';
+import { countryName, countryText, creatorNames, displayName, html, personDates, polityText, ROLE_LABEL, spanLabel, type Html } from './html';
 import type { Country, DateRange, EntityType, ItemByPlural, NameEntry, Plural, PolityLink } from './types';
 
 export interface SortValue {
@@ -207,7 +207,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     build: (a) => {
       const l = located(a, 'created_in_polity');
       return {
-        slug: a.slug, name: a.title, meta: [creatorNames(a), a.created?.label].filter(Boolean).join(', '),
+        slug: a.slug, name: displayName(a).text, meta: [creatorNames(a), a.created?.label].filter(Boolean).join(', '),
         fields: fields(
           ['Type', a.kind],
           ['Made in', [a.country?.place?.name, countryText(a.country)].filter(Boolean).join(', ')],

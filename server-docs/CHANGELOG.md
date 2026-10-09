@@ -2,6 +2,17 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-09
+
+### Frontend: translation status — own ones in [brackets], official ones preferred and marked (no server change)
+- **What:** `src/html.ts` `displayName` (official translation in the title's language preferred to a common/own title;
+  own → [brackets]), `otherNames` (brackets, "official" tag, the replaced title listed), `titleStatusLine`; artwork page
+  line under the heading with the source marker; `sources.names` on "Also known as"; cards/search/prerender use the
+  same title. Test "picker names" gets 15 s for its new tab (failed three times under load).
+- **Why:** owner: backend migration 052 (names[].status, title_status).
+- **Tested:** two new e2e tests; full suite 54/54; `vite build` ok. Live data has only `common` translations so far.
+- **Revert:** revert the commit.
+
 ## 2026-10-08
 
 ### Translations: official, common or own (migration 052)

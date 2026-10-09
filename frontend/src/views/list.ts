@@ -26,7 +26,7 @@ function cardParts(plural: Plural, item: AnyItem) {
     }
     case 'artworks': {
       const a = item as ItemByPlural['artworks'];
-      [name, date, image] = [a.title, dateLabel(a.created), a.image_url];
+      [name, date, image] = [displayName(a).text, dateLabel(a.created), a.image_url];
       detail = [a.part_of ? [partLabel(a.part_number), a.part_of.title].filter(Boolean).join(' · ') : '', a.kind, creatorNames(a), countryText(a.country)].filter(Boolean).join(' · ');
       break;
     }

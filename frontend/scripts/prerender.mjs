@@ -66,8 +66,16 @@ const originalOf = (e) => {
 const dateSpan = (a, b) => (a || b ? `${a?.label ?? '?'} – ${b?.label ?? '?'}` : '');
 
 /** Title, one-line summary and image for an entry (from its detail). */
+/** An artwork's title as the site shows it (src/html.ts displayName): an official translation preferred, an own one in [brackets]. */
+function shownTitle(e) {
+  if (!e.title) return null;
+  const official = e.title_status && e.title_status !== 'official'
+    ? e.names?.find((n) => n.role === 'translation' && n.status === 'official' && (n.lang ?? null) === (e.title_lang ?? null)) : null;
+  return official ? official.text : e.title_status === 'own' ? `[${e.title}]` : e.title;
+}
+
 function describe(plural, e) {
-  const name = e.siglum ?? e.name ?? e.title; // a source is known by its short reference
+  const name = e.siglum ?? e.name ?? shownTitle(e); // a source is known by its short reference
   const country = e.country?.name ?? null;
   const facts = {
     artists: [dateSpan(e.birth, e.death), e.birth_place ? `born in ${e.birth_place.name}${country && country !== e.birth_place.name ? `, ${country}` : ''}` : ''],

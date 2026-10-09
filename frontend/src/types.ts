@@ -142,7 +142,10 @@ export interface NameEntry {
   role: 'original' | 'translation' | 'romanization' | 'alternative';
   ruby_html: string | null; // with furigana, escaped and safe to insert
   reading: string | null;
+  /** For a translation (migration 052): official (institution, publisher) · common (in use) · own (the author's); else null. */
+  status?: TranslationStatus | null;
 }
+export type TranslationStatus = 'official' | 'common' | 'own';
 
 /** Display name (`name`) with its language, furigana and other names; `search_text`: further words it is found by. */
 interface Named {
@@ -155,6 +158,8 @@ interface Named {
 }
 /** The same for artworks, whose display name is `title`. */
 interface Titled {
+  /** null: the title is in its original language; else it is itself a translation of this status (migration 052). */
+  title_status?: TranslationStatus | null;
   title_lang?: string | null;
   title_ruby_html?: string | null;
   title_reading?: string | null;

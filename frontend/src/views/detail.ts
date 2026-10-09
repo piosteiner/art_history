@@ -4,7 +4,7 @@ import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { GROUPS, type Group } from '../selection';
 import {
-  countryLink, countryName, creatorsOf, dateLabel, displayName, impliedEnd, personDates, personWhat, ROLE_LABEL, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
+  titleStatusLine, countryLink, countryName, creatorsOf, dateLabel, displayName, impliedEnd, personDates, personWhat, ROLE_LABEL, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
   wireImageFallbacks, wireLightbox, type Html,
 } from '../html';
 import { COLORS, createMap, showEntity, showOwnSite, showPoint } from '../map';
@@ -192,7 +192,7 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
       const coCreators = creatorsOf(e).filter((c) => !c.main);
       const byline = [e.creator ? e.attribution_label ?? e.creator.name : e.attribution_label, ...coCreators.map((c) => c.name)];
       return {
-        title: e.title,
+        title: displayName(e).text, // an official translation preferred, an own one in [brackets]
         subtitle: [...byline, e.created?.label].filter(Boolean).join(', '),
         text: e.description_html, images: e.images,
         facts: [
@@ -316,6 +316,8 @@ function factsFor(e: Entity): { title: string; subtitle: string; facts: Fact[]; 
  * participation reads "took part in The Bührle trial (defendant)".
  */
 // Which fact row shows which field's sources (the API's `sources` keys); the first row with one of the labels.
+// `names` (its translations, migration 052) on "Also known as" for every type; `title_status` beside the heading.
+const NAMES_FACT: Record<string, string[]> = { names: ['Also known as'] };
 const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
   artist: { birth: ['Born'], death: ['Died'] },
   artwork: { creator: ['Artist', 'Artists'], created: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
@@ -336,7 +338,8 @@ function withSources(e: Entity, facts: Fact[]): Fact[] {
   const by = new Map<number, Citation[]>();
   const extra: Fact[] = [];
   for (const [field, list] of Object.entries(e.sources ?? {})) {
-    const labels = FIELD_FACT[e.type]?.[field] ?? [];
+    if (field === 'title_status') continue; // shown beside the heading
+    const labels = FIELD_FACT[e.type]?.[field] ?? NAMES_FACT[field] ?? [];
     const i = facts.findIndex(([label]) => labels.includes(label));
     if (i >= 0) by.set(i, [...(by.get(i) ?? []), ...list]);
     else {
@@ -416,6 +419,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         <p class="crumbs"><a href="/${plural}">${PLURAL_LABEL[plural]}</a> / ${TYPE_LABEL[e.type]}</p>
         <h1${langAttr(displayName(e).lang)}>${displayName(e).ruby ? trusted(displayName(e).ruby) : v.title}</h1>
         ${originalLine(e)}
+        ${titleStatusLine(e) ? html`<p class="title-status muted small">${titleStatusLine(e)}${cite(e.sources?.[displayName(e).swapped ? 'names' : 'title_status'], e.bibliography)}</p>` : ''}
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
         ${e.type === 'artwork' ? html`${seriesLine(e)}${partNav(e)}` : ''}
         <p class="detail-actions">

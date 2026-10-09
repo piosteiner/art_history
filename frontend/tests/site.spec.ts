@@ -64,7 +64,7 @@ test('picker names: click ticks, Ctrl+click opens the entry in a new tab', async
   await vg.locator('.pick-link').click();
   await expect(vg.locator('input')).not.toBeChecked();
   const [tab] = await Promise.all([context.waitForEvent('page'), vg.locator('.pick-link').click({ modifiers: ['ControlOrMeta'] })]);
-  await expect(tab).toHaveURL(/\/artists\/vincent-van-gogh$/);
+  await expect(tab).toHaveURL(/\/artists\/vincent-van-gogh$/, { timeout: 15_000 }); // a new tab loads slowly in a busy run
 });
 
 test('artist detail: facts, relationships, map, links to explore and network', async ({ page }) => {
@@ -436,6 +436,37 @@ test('a work on loan: credit line with the lender from the provenance; further n
   await expect(facts).toContainText('18 (Foundation E.G. Bührle Collection)');
   await expect(facts.locator('dt', { hasText: 'Rewald (catalogue raisonné)' }).locator('+ dd')).toHaveText('658');
   await expect(facts.locator('dt', { hasText: 'Catalogue no.' }).locator('+ dd a[href="/bibliography/rewald-1996"]')).toBeVisible();
+});
+
+const tr = (text: string, lang: string, status: string | null) => ({ text, lang, role: 'translation', status, ruby_html: null, reading: null });
+
+test('translations: an official title preferred to a common one, with its source; the common one under "Also known as"', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.title_status = 'common';
+    b.names = [...(b.names as unknown[]), tr('Under the Wave off Kanagawa', 'en', 'official')];
+    b.sources = { names: [cited({ kind: 'source', reliability: 'institution', text: 'The Met, collection online', url: 'https://www.metmuseum.org/art/collection/search/45434' })] };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('h1')).toHaveText('Under the Wave off Kanagawa');
+  await expect(page.locator('.title-status')).toContainText('Official English title');
+  await expect(page.locator('.title-status .cite-ref')).toHaveText('M');
+  const aka = page.locator('.facts dt', { hasText: 'Also known as' }).locator('+ dd');
+  await expect(aka).toContainText('The Great Wave off Kanagawa');
+  await expect(aka).not.toContainText('Under the Wave');
+  await expect(page).toHaveTitle(/^Under the Wave off Kanagawa/);
+});
+
+test('translations: an own title and own names in [brackets], official ones marked', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.title_status = 'own';
+    b.names = [...(b.names as unknown[]), tr('Die große Welle vor Kanagawa', 'de', 'official'), tr('La Grande Vague', 'fr', 'own')];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('h1')).toHaveText('[The Great Wave off Kanagawa]');
+  await expect(page.locator('.title-status')).toHaveText('Own English translation of the title');
+  const aka = page.locator('.facts dt', { hasText: 'Also known as' }).locator('+ dd');
+  await expect(aka).toContainText('Die große Welle vor Kanagawa official');
+  await expect(aka).toContainText('[La Grande Vague]');
 });
 
 const step = (position: number, owner: { type: string; slug: string; name: string } | null, extra: Record<string, unknown>) => ({

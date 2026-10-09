@@ -133,6 +133,14 @@ world map; events known only by their city sit a little off the city's dot) that
 ("Events (1 in 1960–1980)"), and an "Events" group on the timeline while the layer is on. Graph: event nodes and the
 `event` category (took part in, concerns). Prerendered pages and schema.org `Event` data for `/events/<slug>`.
 
+## Translations (API migration 052)
+Own translations in [square brackets] everywhere a name is shown (heading, cards, search, "Also known as");
+official ones get an "official" tag. An artwork whose title is itself a common or own translation shows an official
+translation in the same language instead (the stored title moves to "Also known as"); a title in its original
+language stays the heading. Under the heading: "Official English title" / "Own English translation of the title" with
+the source marker (`sources.title_status`, or `sources.names` for a preferred official translation). `displayName`,
+`otherNames`, `titleStatusLine` in `src/html.ts`; the same rule in `scripts/prerender.mjs`.
+
 ## Sources for facts (API migrations 049/050)
 `src/cite.ts`: after a sourced value (fact rows, relationships, provenance steps) a small marker with one letter per kind
 of source, the most reliable first — P primary · L literature · M museum/collection · D other database · W Wikidata ·

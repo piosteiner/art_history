@@ -1,7 +1,7 @@
 // Tiny HTML templating: interpolated values are escaped unless they are already Html (from html`` or trusted()).
 // Images load with crossorigin="anonymous": Wikimedia then neither receives nor sets cookies (the site stays cookie-free).
 import { PLURAL } from './api';
-import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, Plural, PolityLink, Ref } from './types';
+import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, Plural, PolityLink, Ref, TranslationStatus } from './types';
 
 export class Html {
   constructor(readonly value: string) {}
@@ -182,6 +182,7 @@ export const polityText = (p: PolityLink, today: Country | null | undefined) => 
 
 type Nameable = {
   name?: string; title?: string;
+  title_status?: TranslationStatus | null;
   name_lang?: string | null; title_lang?: string | null;
   name_ruby_html?: string | null; title_ruby_html?: string | null;
   names?: NameEntry[];
@@ -190,14 +191,38 @@ type Nameable = {
 /** lang="…" for an element showing a name; nothing when the language is unknown. */
 export const langAttr = (lang: string | null | undefined) => (lang ? html` lang="${lang}"` : '');
 
-/** The display name (title for artworks): text, language and furigana (safe HTML from the API) if any. */
+/** An own translation in [square brackets] (the art-history convention); official and common ones as they are. */
+export const translated = (text: string, status: TranslationStatus | null | undefined) => (status === 'own' ? `[${text}]` : text);
+
+/**
+ * The official translation to show instead of an artwork's title, when the title is itself a common or own translation
+ * and an official one exists in the same language (migration 052). A title in its original language stays.
+ */
+function officialInstead(e: Nameable): NameEntry | null {
+  if (!e.title || !e.title_status || e.title_status === 'official') return null;
+  return e.names?.find((n) => n.role === 'translation' && n.status === 'official' && (n.lang ?? null) === (e.title_lang ?? null)) ?? null;
+}
+
+/**
+ * The display name (title for artworks): text, language and furigana (safe HTML from the API) if any; an official
+ * translation preferred to a common or own one, an own one in [brackets]. `status`: the shown title's, if a translation.
+ */
 export function displayName(e: Nameable) {
+  const official = officialInstead(e);
+  if (official) return { text: official.text, lang: official.lang, ruby: null, status: 'official' as TranslationStatus, swapped: true };
+  const status = e.title ? e.title_status ?? null : null;
+  const ruby = e.title_ruby_html ?? e.name_ruby_html ?? null;
   return {
-    text: (e.title ?? e.name) as string,
+    text: translated((e.title ?? e.name) as string, status),
     lang: e.title_lang ?? e.name_lang ?? null,
-    ruby: e.title_ruby_html ?? e.name_ruby_html ?? null,
+    ruby: ruby && status === 'own' ? `[${ruby}]` : ruby,
+    status, swapped: false,
   };
 }
+
+const STATUS_HINT: Record<TranslationStatus, string> = {
+  official: 'official translation (the holding institution or a publisher)', common: 'translation in common use', own: 'own translation',
+};
 
 /** A name inside its own element with lang, with furigana when the API sends them. */
 export const nameSpan = (text: string, lang: string | null | undefined, ruby?: string | null, cls = '') =>
@@ -213,7 +238,24 @@ export function originalLine(e: Nameable) {
 }
 
 /** Translations and other names (not the original or its romanization, shown above), each with its lang. */
+// Own translations in [brackets], official ones marked; when an official translation is shown as the title, the
+// stored title is listed here instead.
 export function otherNames(e: Nameable) {
-  const rest = (e.names ?? []).filter((n) => n.role !== 'original' && n.role !== 'romanization');
-  return rest.length ? html`${rest.map((n, i) => html`${i ? ' · ' : ''}${nameSpan(n.text, n.lang, n.ruby_html)}`)}` : null;
+  const official = officialInstead(e);
+  const rest: Pick<NameEntry, 'text' | 'lang' | 'ruby_html' | 'status'>[] = [
+    ...(official ? [{ text: e.title!, lang: e.title_lang ?? null, ruby_html: e.title_ruby_html ?? null, status: e.title_status ?? null }] : []),
+    ...(e.names ?? []).filter((n) => n.role !== 'original' && n.role !== 'romanization' && n !== official),
+  ];
+  return rest.length ? html`${rest.map((n, i) => html`${i ? ' · ' : ''}${n.status ? html`<span title="${STATUS_HINT[n.status]}">${
+    nameSpan(translated(n.text, n.status), n.lang, n.ruby_html && n.status === 'own' ? `[${n.ruby_html}]` : n.ruby_html)}</span>` : nameSpan(n.text, n.lang, n.ruby_html)}${
+    n.status === 'official' ? html` <span class="tag">official</span>` : ''}`)}` : null;
+}
+
+/** "Official English title" / "Own translation" under an artwork's heading, when the title is a translation (not "common"). */
+export function titleStatusLine(e: Nameable) {
+  const d = displayName(e);
+  if (d.status !== 'official' && d.status !== 'own') return null;
+  let language = '';
+  try { language = d.lang ? new Intl.DisplayNames(['en'], { type: 'language' }).of(d.lang.split('-')[0]) ?? '' : ''; } catch { /* unknown code */ }
+  return d.status === 'official' ? `Official ${language ? `${language} ` : ''}title` : `Own ${language ? `${language} ` : ''}translation of the title`;
 }
