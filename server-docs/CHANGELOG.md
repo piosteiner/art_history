@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Relationship "founded" / "founded by" (migration 054)
+- **What:** relationship type `founded` (artist, person, institution → institution, movement; category membership;
+  co-founders: one relationship each, label "co-founder"); the Wikidata comparison suggests founders from P112
+  ("founded by") on institutions and movements. Tests: `reset.sql` now also empties the tables that point at entries
+  by (type, id) — `entry_identifiers`, `citations`, `slug_history`, `wikidata_reviews`, `auto_created`,
+  `quality_acks` (and `events`): with ids restarting at 1, old rows had attached to new entries.
+- **Why:** owner: Thomas Gilcrease founded the Gilcrease Museum.
+- **Tested:** e2e 123 passing (founded.spec).
+- **Revert:** redeploy the previous commit; as owner `DELETE FROM relationship_types WHERE code = 'founded'` (after
+  deleting such relationships).
+
 ### Authority files: reference records and a GND comparison (migration 053)
 - **What:** tables `authorities` (ULAN, GND, VIAF, SIKART, RKD, Library of Congress — url template, number pattern,
   Wikidata property, entity types) and `entry_identifiers` (UNIQUE (authority, value): a number names one entry;

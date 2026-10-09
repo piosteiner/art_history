@@ -297,12 +297,12 @@ const REL_PROPS = {
   // P180 "depicts" → a place (depicts) or a human (depicts_person); targetType() keeps each to its kind of target
   artwork: [['P1071', 'created_in'], ['P180', 'depicts'], ['P180', 'depicts_person'], ['P135', 'associated_with'], ['P88', '~commissioned'],  // P127 owned by: ownership is the provenance (031)
     ['P495', 'created_in_polity']],  // country of origin
-  movement: [['P495', 'active_in']],
+  movement: [['P495', 'active_in'], ['P112', '~founded']],  // P112 founded by (054)
   // participants (P710) took part in it; "main subject" (P921) is what it concerns
   event: [['P710', '~participated_in'], ['P921', 'concerns']],
   polity: [],
   term: [],
-  institution: [],
+  institution: [['P112', '~founded']],  // founded by (054): the founders, people or institutions
   place: [],
 };
 function relsFor(t, e) {

@@ -45,7 +45,8 @@ const ENTITIES = {
   Q107: { id: 'Q107', labels: labels('canvas'), descriptions: { en: { value: 'fabric' } }, claims: {} },
   // exact places (institutions): P131 names a city district and the city; P625 + P6375 give the building
   Q110: { id: 'Q110', labels: labels('Kunsthaus Test'), descriptions: { en: { value: 'art museum in Zurich' } },
-    claims: { P31: [stmt(item('Q207694'))], P131: [stmt(item('Q111')), stmt(item('Q112'))],
+    // P112: founded by (054)
+    claims: { P31: [stmt(item('Q207694'))], P112: [stmt(item('Q100'))], P131: [stmt(item('Q111')), stmt(item('Q112'))],
       P625: [stmt({ latitude: 47.37028, longitude: 8.54806, globe: 'http://www.wikidata.org/entity/Q2' })], P6375: [stmt({ text: 'Heimplatz 1, 8001 Zürich', language: 'de' })] } },
   Q111: { id: 'Q111', labels: labels('Kreis 1'), descriptions: { en: { value: 'district of Zurich' } },
     claims: { P31: [stmt(item('Q19644586'))], P131: [stmt(item('Q112'))], P625: [stmt({ latitude: 47.37, longitude: 8.54, globe: 'http://www.wikidata.org/entity/Q2' })] } },
