@@ -28,6 +28,7 @@ import { initLiveSearch } from './livesearch';
 import { initDuplicates } from './duplicates';
 import { initSortable } from './sortable';
 import { initCiteDialogs, initCiteTriggers } from './cites';
+import { initErrorFields } from './errors';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -267,6 +268,7 @@ initDuplicates();
 initSortable();
 initCiteDialogs();
 initCiteTriggers();
+initErrorFields();
 initSlug();
 // A map inside a closed section (forms.js: "Where it stands…") was laid out at zero size: opening the section tells
 // Leaflet to measure again (it listens to window resize).

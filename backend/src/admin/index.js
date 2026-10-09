@@ -1391,8 +1391,22 @@ function formFromBody(body) {
   for (const [k, v] of Object.entries(body)) if (k.startsWith('f.')) f[k.slice(2)] = v;
   return f;
 }
+// The fields a message is about: "birth: bad month" names its field; a database rule's message (RULES) doesn't — so
+// which fields each rule concerns is said here, and those fields are marked in red too.
+const RULE_FIELDS = {
+  places_check: ['location', 'area', 'boundary_code'], places_check1: ['parent'], parent_cycle: ['parent'],
+  artworks_parent_check: ['parent'], artworks_parts_count_check: ['parts_count'], artworks_web_url_check: ['web_url'],
+  movements_check: ['parent'], artists_check: ['birth', 'death'], polities_check: ['parent'], events_check: ['parent'],
+  artworks_inventory_needs_institution: ['inventory_number', 'institution'], artworks_loan_needs_institution: ['on_loan', 'institution'],
+  artworks_loan_since_needs_loan: ['on_loan', 'on_loan_since'], polities_country_codes_check: ['country_codes'],
+  artworks_dimensions_check: ['dimensions'],
+};
+const FIELDS_OF_MESSAGE = new Map(Object.entries(RULE_FIELDS).filter(([c]) => RULES[c]).map(([c, f]) => [RULES[c], f]));
 function errorKeysOf(errors) {
-  return new Set(errors.map((e) => (/^([a-z_]+):/.exec(e) || [])[1]).filter(Boolean));
+  return new Set(errors.flatMap((e) => {
+    const m = /^([a-z_]+):/.exec(e);
+    return m ? [m[1]] : FIELDS_OF_MESSAGE.get(e) || [];
+  }));
 }
 
 // The live duplicate box of the new-entry form (editor/duplicates.js): the form as typed, compared and rolled back.

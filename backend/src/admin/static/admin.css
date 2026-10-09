@@ -78,7 +78,10 @@ dl.fields dd { margin: 0; overflow-wrap: anywhere; }
 @media (min-width: 900px) { .field-pair { grid-template-columns: 1fr 1fr; align-items: start; } }
 .field label { display: block; font-weight: 600; margin-bottom: .2rem; }
 .field .hint { color: var(--muted); font-size: .85rem; margin-top: .15rem; }
-.field.has-error input, .field.has-error textarea, .field.has-error select { border-color: var(--err); }
+/* a field the error messages are about: a clear red frame and label (the first one gets the focus, editor/errors.js) */
+.field.has-error input, .field.has-error textarea, .field.has-error select { border: 2px solid var(--err); box-shadow: 0 0 0 3px color-mix(in srgb, var(--err) 18%, transparent); }
+.field.has-error > label, .field.has-error .label-row > label { color: var(--err); }
+.error-fields a { color: var(--err); }
 .row { display: flex; gap: .5rem; flex-wrap: wrap; }
 .row > * { flex: 1; min-width: 140px; }
 input, select, textarea { width: 100%; font: inherit; color: var(--fg); background: var(--panel);

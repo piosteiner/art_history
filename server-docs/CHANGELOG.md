@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Admin: the fields an error is about are marked in red — also for the database's rules
+- **What:** `RULE_FIELDS` (index.js): which fields each database rule concerns (inventory number ↔ institution, loan,
+  dimensions, parent …) — `errorKeysOf` marks them like "field: message" errors. A thicker red frame and red label;
+  "Marked in red: …" links under the messages; `editor/errors.js` opens a collapsed group, scrolls to the first marked
+  field and focuses it.
+- **Why:** owner: an error message should show where the field is.
+- **Tested:** e2e (errors.spec).
+- **Revert:** redeploy the previous commit.
+
 ### Fix: Change type failed for artists and into places / movements (migration 056)
 - **What:** `convert_entry` re-created with `array_append(cols, '…')` instead of `cols || '…'` (Postgres read the
   untyped literal as an array: "malformed array literal"). Nothing had changed when it failed (rolled back).

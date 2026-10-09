@@ -421,6 +421,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
       <div class="hint">${HINTS.slug}</div></div>`;
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
+  ${ctx.errorKeys && ctx.errorKeys.size ? html`<p class="small error-fields">Marked in red: ${[...ctx.errorKeys].filter((k) => k === 'slug' || t.fields[k]).map((k, i) => html`${i ? ' · ' : ''}<a href="#f-${k}" data-error-field="${k}">${k === 'slug' ? 'Slug' : fieldLabel(t.type, k)}</a>`)}</p>` : ''}
   <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     ${isNew && ctx.duplicates ? duplicates.confirmBox(t, ctx.duplicates) : ''}
