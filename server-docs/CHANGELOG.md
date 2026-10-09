@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Authority files: reference records and a GND comparison (migration 053)
+- **What:** tables `authorities` (ULAN, GND, VIAF, SIKART, RKD, Library of Congress — url template, number pattern,
+  Wikidata property, entity types) and `entry_identifiers` (UNIQUE (authority, value): a number names one entry;
+  trigger `check_identifier()`), merge and delete handle them; bibliography source `gnd` (institution). Admin:
+  "Reference records" on entry pages (number or the record's link — the number is taken from it); the Wikidata
+  comparison brings the numbers (also for new entries, `wd.ids`); a number another entry has = certain duplicate.
+  "Compare with the GND" (`src/admin/gnd.js`, lobid.org): birth/death, founded/city; relationships born/died/worked in,
+  collaborated with — matched by GND number or name (a target found by name gets the number); taken values cited with
+  the GND and the record, agreeing values cited at once. API `identifiers`; YAML `identifiers:`.
+- **Why:** owner: integrate Getty ULAN and the DNB. Getty's data services refused requests from this server (403) —
+  ULAN is links only for now.
+- **Tested:** dry run on prod (rolled back); live lobid record of Kandinsky read through the module; e2e (authorities.spec).
+- **Revert:** redeploy the previous commit; as owner drop `entry_identifiers`, `authorities`, `check_identifier()`,
+  re-create 049's `delete_entity_relationships` and `merge_entries`; the `gnd` source stays unless deleted.
+
 ### Admin: the quick select of sources remembers the exact page
 - **What:** `citations.recentSources()` returns one chip per source *and page* (`DISTINCT ON (source_id, url)`, the
   latest citation of each); the chip sends that citation's id (`pick`) and `citations.add()` copies its source and

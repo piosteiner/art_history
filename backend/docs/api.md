@@ -189,6 +189,11 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - artist: `artworks` (including co-created ones: `co_creator: true`, `role`) · institution: `artworks`, `place` · artwork: `creator`, `creators`, `attribution_label`, `institution` ·
   place: `ancestors` (Arles → France), `children`, `institutions` · movement: `ancestors`, `children`.
 
+### Reference records (every detail, migration 053)
+`identifiers`: the entry's numbers in authority files, `[{authority, name, value, url}]` — `ulan` (Getty ULAN), `gnd`
+(Deutsche Nationalbibliothek), `viaf`, `sikart` (Swiss Institute for Art Research), `rkd` (RKDartists), `lc` (Library
+of Congress); `url` is the record's page. Show them as "Reference records" / "Normdaten" links.
+
 ### Sources for facts (every detail, migrations 049/050)
 Where each fact comes from. The detail has `sources`: `{field: [citation]}` for its fields (`birth`, `created`,
 `dimensions`, `institution`, `place` … — the doc keys), every item of `relationships` and of `provenance` has

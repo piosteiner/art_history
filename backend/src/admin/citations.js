@@ -162,6 +162,31 @@ async function pendingFromWikidata(db, type, id, qid, cites, userId) {
   }
 }
 
+// The same for a bibliography source with the record's page (the GND comparison, 053): pending until published.
+async function pendingFromSource(db, type, id, sourceSlug, url, cites, userId) {
+  const fields = (await citableFields(db))[type] || {};
+  const src = (await db.query("SELECT entity_id('source', $1) AS id", [sourceSlug])).rows[0].id;
+  if (!src) return;
+  for (const c of cites.filter((x) => x.field in fields)) {
+    await db.query('DELETE FROM citations WHERE entity_type = $1 AND entity_id = $2 AND field = $3 AND pending IS NOT NULL AND source_id = $4', [type, id, c.field, src]);
+    await db.query(`INSERT INTO citations (entity_type, entity_id, field, source_id, url, accessed, pending, created_by)
+      VALUES ($1, $2, $3, $4, $5, current_date, $6, $7)`, [type, id, c.field, src, url, JSON.stringify(c.form), userId]);
+  }
+}
+// Fields where that source agrees with our value: cited as they are (unless it is cited there already).
+async function citeAgreeingSource(db, type, id, sourceSlug, url, fieldNames, userId) {
+  await db.query(`INSERT INTO citations (entity_type, entity_id, field, source_id, url, accessed, cited_value, created_by)
+    SELECT f.entity_type, er.id, f.field, b.id, $4, current_date, field_value(er.r, f.cols), $5
+    FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2 JOIN bibliography b ON b.slug = $3
+    WHERE f.entity_type = $1::entity_type AND f.field = ANY ($6::text[]) AND field_value(er.r, f.cols) IS NOT NULL
+      AND NOT EXISTS (SELECT 1 FROM citations c WHERE (c.entity_type, c.entity_id, c.field) = (f.entity_type, er.id, f.field) AND c.source_id = b.id)`,
+  [type, id, sourceSlug, url, userId, fieldNames]);
+}
+async function citeRelationshipFromSource(db, relId, sourceSlug, url) {
+  await db.query(`INSERT INTO citations (relationship_id, source_id, url, accessed) SELECT $1, b.id, $3, current_date FROM bibliography b WHERE b.slug = $2`,
+    [relId, sourceSlug, url]);
+}
+
 const sameForm = (expected, body) => Object.entries(expected).every(([k, v]) => String(body[k] ?? '').trim() === String(v ?? '').trim());
 
 // After a save (saveEntity): pending citations of this entry whose expected values were published are settled (the
@@ -299,4 +324,5 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
 }
 
 module.exports = { CitationError, citableFields, forEntity, forRelationships, forProvenance, syncText, add, byId, remove, pendingFromWikidata, settle,
+  pendingFromSource, citeAgreeingSource, citeRelationshipFromSource,
   citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, recentSources, recentChips, keyOf };

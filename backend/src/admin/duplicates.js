@@ -51,6 +51,13 @@ async function fromUniqueViolation(db, t, err, doc) {
           WHERE (w.current_institution_id = i.id AND lower(btrim(w.inventory_number)) = lower(btrim($2)))
              OR EXISTS (SELECT 1 FROM artwork_numbers n WHERE n.artwork_id = w.id AND n.institution_id = i.id AND lower(btrim(n.number)) = lower(btrim($2)))`,
     [doc.institution, doc.inventory_number], 'same inventory number in the same collection'];
+  } else if (err.constraint === 'entry_identifiers_unique') {
+    // "Key (authority, value)=(gnd, 118559737) already exists": that number's entry
+    const m = /\(authority, value\)=\(([a-z]+), ([^)]+)\)/.exec(err.detail || '');
+    if (m) {
+      q = [`SELECT e.id::text, e.slug, e.name FROM entry_identifiers i JOIN entity_index e ON (e.type, e.id) = (i.entity_type, i.entity_id)
+            WHERE i.authority = $1 AND i.value = $2`, [m[1], m[2]], `the same ${m[1].toUpperCase()} number`];
+    }
   } else if (err.constraint === 'places_boundary_unique') {
     q = ['SELECT id::text, slug, name FROM places WHERE boundary_code = $1', [doc.boundary_code], 'same outline (boundary code)'];
   }

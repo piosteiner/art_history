@@ -411,7 +411,7 @@ function sectionsOf(t) {
 // collab: { key: 'artist:12:<epoch>', state: base64 } for a working copy.
 // pendingImages: JSON of images picked in the Wikidata review of a new entry — kept in a hidden field (and so in the
 // draft) and saved with the entry on Create.
-function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null, pendingCites = null }) {
+function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = null, pendingImages = null, pendingCites = null, pendingIds = null }) {
   let pending = [];
   try { pending = pendingImages ? JSON.parse(pendingImages) : []; } catch { pending = []; }
   ctx = { ...ctx, type: t.type, areaKey: Object.keys(t.fields).find((k) => t.fields[k] === 'area') };  // map draws into areaKey
@@ -426,6 +426,8 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
     ${isNew && ctx.duplicates ? duplicates.confirmBox(t, ctx.duplicates) : ''}
     ${isNew ? html`<div class="dup-live" data-dup-url="${action}/new/duplicates" aria-live="polite"></div>` : ''}
     ${isNew && pendingCites ? html`<input type="hidden" name="wd.cite" value="${pendingCites}">` : ''}
+    ${isNew && pendingIds ? html`<input type="hidden" name="wd.ids" value="${pendingIds}">
+      <div class="field"><label>Reference records from Wikidata</label><div class="hint">${(() => { try { return JSON.parse(pendingIds).map((x) => `${x.authority.toUpperCase()} ${x.value}`).join(' · '); } catch { return ''; } })()} — added with the entry when you press Create.</div></div>` : ''}
     ${pending.length ? html`<input type="hidden" name="wd.images" value="${pendingImages}">
       <div class="field pending-images"><label>Images from Wikidata</label>
         <div class="image-list">${pending.map((img) => html`<figure class="image-item"><img src="${thumbUrl(img.url, 250)}" alt="" loading="lazy">

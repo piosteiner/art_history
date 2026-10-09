@@ -98,6 +98,12 @@ function reviewPage({ title, plan, t, action, isNew }) {
       ${plan.images.length ? html`<h2>Images (Wikimedia Commons)</h2>
         ${isNew ? html`<p class="muted">The images you add are saved together with the entry when you press Create.</p>` : ''}
         <div class="wd-images">${plan.images.map((img, i) => imageChoice(img, i))}</div>` : ''}
+      ${plan.identifiers && plan.identifiers.length ? html`<h2>Reference records (authority files)</h2>
+        <div class="table-wrap"><table class="diff wd-table wd-ids"><thead><tr><th>Authority</th><th>Yours</th><th>Wikidata</th><th>Take?</th></tr></thead>
+          <tbody>${plan.identifiers.map((x) => html`<tr><td>${x.name}</td><td>${x.ours || html`<span class="muted">(none)</span>`}</td>
+            <td><a href="${x.url}" target="_blank" rel="noopener">${x.value} ↗</a></td>
+            <td>${x.status === 'same' ? html`<span class="muted">the same</span>`
+              : html`<label class="choice"><input type="checkbox" name="idf.${x.code}" value="take"${x.status === 'new' ? ' checked' : ''}> ${x.status === 'new' ? 'add' : 'replace yours'}</label>`}</td></tr>`)}</tbody></table></div>` : ''}
       ${!isNew ? html`<h2>Relationships suggested by Wikidata</h2>
         ${plan.suggestions.length ? html`<p class="actions wd-bulk">Set all open suggestions:
             <button type="button" class="secondary" data-wd-set="link">link where we have it</button>

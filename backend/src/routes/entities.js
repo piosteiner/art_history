@@ -516,6 +516,11 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     relationships.forEach((r) => { r.sources = (r._rel_id ? byRel[r._rel_id] : r._prov_id ? byProv[r._prov_id] : null) || []; delete r._rel_id; delete r._prov_id; });
     steps.forEach((p) => { p.sources = byProv[p._prov_id] || []; delete p._prov_id; });
     body.sources = byField;
+    // its numbers in authority files (053), with the links to the records
+    body.identifiers = (await apiPool.query(`
+      SELECT a.code AS authority, a.name, i.value, replace(a.url_template, '{id}', i.value) AS url
+      FROM entry_identifiers i JOIN authorities a ON a.code = i.authority
+      WHERE i.entity_type = $1 AND i.entity_id = $2 ORDER BY a.position`, [e.type, id])).rows;
     res.json({ type: e.type, ...body, ...extras, relationships, glossary, bibliography: cited, entries });
   });
 }

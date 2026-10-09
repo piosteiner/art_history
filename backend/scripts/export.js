@@ -47,6 +47,9 @@ async function main() {
           const nums = await readNumbers(client, id);
           if (nums.length) doc.numbers = nums;
         }
+        // its numbers in authority files (053)
+        const ids = (await client.query('SELECT authority, value FROM entry_identifiers WHERE entity_type = $1 AND entity_id = $2 ORDER BY authority', [t.type, id])).rows;
+        if (ids.length) doc.identifiers = Object.fromEntries(ids.map((r) => [r.authority, r.value]));
         // where its facts come from (citations, 049/050): {field: [line | {source, locator …} | {wikidata …}]}
         const cited = (await client.query('SELECT field_citation_docs($1, $2) AS s', [t.type, id])).rows[0].s;
         if (cited) doc.sources = cited;

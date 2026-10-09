@@ -16,6 +16,7 @@ const ENTITIES = {
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1840-11-14T00:00:00Z', 11))], P570: [stmt(time('+1926-12-05T00:00:00Z', 11))],
       P19: [stmt(item('Q90'))], P20: [stmt(item('Q101'))], P135: [stmt(item('Q102'))], P1066: [stmt(item('Q103'))],
       P18: [stmt('Claude Monet 1899 Nadar crop.jpg')], P27: [stmt(item('Q108'))],
+      P227: [stmt('118583123')], P245: [stmt('500018666')],  // GND, ULAN (053)
       P937: [stmt(item('Q90'), { P580: time('+1859-00-00T00:00:00Z', 9), P582: time('+1860-00-00T00:00:00Z', 9) })] } },
   Q90: { id: 'Q90', labels: labels('Paris'), descriptions: { en: { value: 'capital of France' } },
     claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 48.8567, longitude: 2.3522, globe: 'http://www.wikidata.org/entity/Q2' })] } },
@@ -90,6 +91,16 @@ function handle(req, res) {
         descriptionurl: 'https://commons.wikimedia.org/wiki/File:Hiroshige_plum_park.jpg', extmetadata: meta('Public domain', '<a>Hiroshige</a>') }] },
       2: { index: 2, title: 'File:No licence.jpg', imageinfo: [{ mime: 'image/jpeg', thumburl: 'https://upload.wikimedia.org/test/nolicence.jpg',
         descriptionurl: 'https://commons.wikimedia.org/wiki/File:No_licence.jpg', extmetadata: {} }] } } } });  // left out: no licence
+  }
+  // lobid.org: GND records (src/admin/gnd.js, 053) — Claude Monet's, shortened
+  const gnd = /^\/gnd\/([0-9X-]+)\.json$/.exec(url.pathname);
+  if (gnd) {
+    if (gnd[1] !== '118583123') { res.writeHead(404); return res.end('{}'); }
+    return json({ gndIdentifier: '118583123', preferredName: 'Monet, Claude', variantName: ['Monet, Oscar-Claude'],
+      dateOfBirth: ['1840-11-14'], dateOfDeath: ['1926-12-05'],
+      placeOfBirth: [{ id: 'https://d-nb.info/gnd/4044660-8', label: 'Paris' }], placeOfDeath: [{ id: 'https://d-nb.info/gnd/4021477-1', label: 'Giverny' }],
+      professionOrOccupation: [{ id: 'https://d-nb.info/gnd/4037220-0', label: 'Maler' }],
+      professionalRelationship: [{ id: 'https://d-nb.info/gnd/118583174', label: 'Gogh, Vincent van' }] });
   }
   // Nominatim reverse (placefinder.cityAt): like Manhattan for the Guggenheim, the object at city zoom is a district
   // (Yukinoshita) and only the address names the city (Kamakura); far north: nothing there

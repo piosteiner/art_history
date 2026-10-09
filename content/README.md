@@ -131,6 +131,10 @@ images:
 The import matches images by `url` per entry (order and the other fields are updated); images no longer listed are
 removed only with `--prune`. Files without an `images:` key leave the entry's images alone.
 
+## Reference records
+Numbers in authority files: `identifiers: {gnd: '118559737', ulan: '500021093', viaf: '…', sikart: '…', rkd: '…', lc: '…'}`
+— checked by the database (format, and one number per entry).
+
 ## Sources
 Where a fact comes from (citations, migrations 049/050) — per field of an entry, and on every relationship and
 provenance step (`sources:` there). Each item is a line of text (a note), a source of the bibliography or Wikidata:

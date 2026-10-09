@@ -286,6 +286,15 @@ in the transaction that adds it), then the table and an event branch in every vi
 `entity_id`, `entity_home_place`), the per-table triggers, a sixth image arm — the generated `images.entity_type` /
 `entity_id` changed in place with `ALTER COLUMN … SET EXPRESSION` (PostgreSQL 17+).
 
+## Authority files (migration 053)
+`authorities` (data: code, name, url template, number pattern, Wikidata property, entity types) and `entry_identifiers`
+(entity, authority, value): one number per authority per entry, and `UNIQUE (authority, value)` — a number names one
+entry, so the same GND or ULAN number on two entries is refused (a duplicate). A trigger checks the number against the
+authority's pattern and that the authority records this type of entry. The Wikidata comparison brings the numbers
+(P245, P227, P214, P781, P650, P244). The GND's open data (lobid.org, CC0) is compared like Wikidata
+(`src/admin/gnd.js`): taken values are cited with the bibliography source `gnd` (reliability institution) and the
+record's page. Getty's data services refused requests from this server (403) — ULAN numbers are links only.
+
 ## Sources for facts (migration 049)
 `citations`: this value is supported by this source — a field of an entry (`entity_type`, `entity_id`, `field`, from
 the table `citable_fields`, which also names each field's columns and Wikidata property), a relationship or a

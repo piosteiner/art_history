@@ -301,6 +301,25 @@ async function main() {
       }
     }
 
+    // 3f. Numbers in authority files (053), for files with an identifiers: mapping — set (or replaced) per authority.
+    for (const e of entities.filter((x) => x.identifiers)) {
+      const entityId = ids.get(`${e.type}/${e.slug}`);
+      if (entityId === undefined) continue;
+      for (const [authority, value] of Object.entries(e.identifiers)) {
+        try {
+          await client.query('SAVEPOINT idf');
+          const { rowCount } = await client.query(`INSERT INTO entry_identifiers (entity_type, entity_id, authority, value) VALUES ($1, $2, $3, $4)
+            ON CONFLICT (entity_type, entity_id, authority) DO UPDATE SET value = EXCLUDED.value WHERE entry_identifiers.value IS DISTINCT FROM EXCLUDED.value`,
+          [e.type, entityId, authority, value]);
+          await client.query('RELEASE SAVEPOINT idf');
+          count(rowCount ? 'identifiers set' : 'identifiers unchanged');
+        } catch (err) {
+          await client.query('ROLLBACK TO SAVEPOINT idf');
+          fail(e.file, `identifiers.${authority}: ${err.message}`);
+        }
+      }
+    }
+
     // 3e. Sources of fields (citations, 049/050), for files with a sources: mapping field → list.
     for (const e of entities.filter((x) => x.sources)) {
       const entityId = ids.get(`${e.type}/${e.slug}`);

@@ -93,7 +93,7 @@ function toRow(doc, fields) {
   const put = (col, value, expr = '$') => { cols[col] = [expr, value]; };
 
   for (const key of Object.keys(doc)) {
-    if (['relationships', 'images', 'provenance', 'numbers', 'sources', 'slug'].includes(key)) continue;  // their own parts, below
+    if (['relationships', 'images', 'provenance', 'numbers', 'sources', 'identifiers', 'slug'].includes(key)) continue;  // their own parts, below
     if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;
     if (key.endsWith('_lang') && fields[key.slice(0, -'_lang'.length)] === 'name') continue;
     if (LEGACY_ALT.includes(key) && fields.names === 'names') continue;  // older YAML: alt_names / alt_titles
@@ -251,7 +251,13 @@ function toRow(doc, fields) {
       });
     }
   }
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, sources, errors };
+  // identifiers (053): {gnd: '118559737', ulan: '500021093'} — numbers in authority files (checked by the database)
+  let identifiers = null;
+  if (doc.identifiers !== undefined && doc.identifiers !== null) {
+    if (typeof doc.identifiers !== 'object' || Array.isArray(doc.identifiers)) errors.push('identifiers must be a mapping authority → number');
+    else identifiers = Object.fromEntries(Object.entries(doc.identifiers).map(([k, v]) => [k, String(v)]));
+  }
+  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, sources, identifiers, errors };
 }
 
 // Stored date → { value: '1886-03/1888-02-20', label } where label is null when it is just the generated one.

@@ -31,6 +31,8 @@ const images = require('./images');
 const provenance = require('./provenance');
 const numbers = require('./numbers');
 const citations = require('./citations');
+const identifiers = require('./identifiers');
+const gnd = require('./gnd');
 const imagesearch = require('./imagesearch');
 const placefinder = require('./placefinder');
 const bibliography = require('../bibliography');
@@ -65,6 +67,7 @@ const DONE = {
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
   'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
+  'gnd-applied': 'GND comparison applied — agreeing values are cited.', 'id-added': 'Reference record added.', 'id-deleted': 'Reference record removed.', gnd: 'GND values applied — the field values are in the working copy: check them below and Publish.',
   'cite-added': 'Source added.', 'cite-deleted': 'Source removed.',
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
@@ -74,7 +77,7 @@ function send(req, res, { title, body, status = 200, flash, page = null }) {
   if (!flash && DONE[req.query.done]) {
     // Numbers only from the URL — never reflect free text.
     const n = (k) => Math.max(0, Number.parseInt(req.query[k], 10) || 0);
-    const extra = req.query.done === 'wikidata' ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
+    const extra = ['wikidata', 'gnd', 'gnd-applied'].includes(req.query.done) ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
       n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`,
       n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`].filter(Boolean).join(', ') : '';
     const auto = n('auto') ? ` ${n('auto') === 1 ? 'A new entry was' : `${n('auto')} new entries were`} created for what you typed — marked “to complete” (see the links below and the Quality page).` : '';
@@ -174,6 +177,7 @@ function friendly(err) {
     if (err.constraint === 'artworks_inventory_unique') return 'inventory_number: another artwork in this collection has this inventory number — the same object? (Merge… on its page)';
     if (err.constraint === 'places_boundary_unique') return 'boundary_code: another place has this outline already — the same place?';
     if (/_wikidata_id_key$/.test(err.constraint || '')) return 'wikidata_id: another entry is linked to this Wikidata item — the same thing?';
+    if (err.constraint === 'entry_identifiers_unique') return `Reference record: ${err.detail || err.message} — another entry has this number (the same thing twice?).`;
     if (err.constraint === 'institution_number_unique') return `inventory_number: ${err.message} — the same object? (Merge… on its page)`;
     return /slug/.test(err.constraint || '') ? 'That slug is already taken.' : `Duplicate: ${err.detail || err.message}`;
   }
@@ -767,6 +771,88 @@ router.post('/citations/:id/delete', async (req, res) => {
   res.redirect(303, citeBack(req.body.back, 'cite-deleted'));
 });
 
+// Reference records (authority files, src/admin/identifiers.js): added on an entry's page, removed one by one.
+router.post('/:plural/:slug/identifiers', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  try {
+    await withTx(req.user, (db) => identifiers.add(db, t.type, e.id, req.body));
+  } catch (err) {
+    const text = err instanceof identifiers.IdentifierError ? err.message : friendly(err);
+    return send(req, res, { title: 'Add a reference record', status: 422, flash: { kind: 'error', text },
+      body: html`<p><a href="/${t.folder}/${e.slug}#reference-records">← ${e.name}</a></p>` });
+  }
+  res.redirect(303, `/${t.folder}/${e.slug}?done=id-added#reference-records`);
+});
+router.post('/identifiers/:id/delete', async (req, res) => {
+  const row = await identifiers.byId(adminPool, req.params.id);
+  if (!row) return notFoundPage(req, res);
+  const { rows } = await adminPool.query('SELECT slug FROM entity_index WHERE type = $1 AND id = $2', [row.entity_type, row.entity_id]);
+  await withTx(req.user, (db) => identifiers.remove(db, row.id));
+  res.redirect(303, `/${BY_TYPE[row.entity_type].folder}/${rows[0].slug}?done=id-deleted#reference-records`);
+});
+
+// Comparison with the GND (src/admin/gnd.js, 053): for an entry with a GND number. Like the Wikidata comparison: field
+// values into the working copy (cited with the GND when published), relationships created at once (cited), values
+// that agree cited as they are.
+async function gndPlan(t, e) {
+  const id = (await identifiers.list(adminPool, t.type, e.id)).find((x) => x.code === 'gnd');
+  if (!id) return { error: 'This entry has no GND number yet — add it under “Reference records”.' };
+  try { return { plan: await gnd.compare(adminPool, t, e, e.doc, id.value) }; } catch (err) { return { error: `The GND record could not be read: ${err.message}` }; }
+}
+function gndPage(t, e, plan) {
+  const choice = (name, value, label, checked) => html`<label class="choice"><input type="radio" name="${name}" value="${value}"${checked ? ' checked' : ''}> ${label}</label>`;
+  return html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>
+    <h1>Compare with the GND</h1>
+    <p><a href="${plan.url}" target="_blank" rel="noopener">GND ${plan.gnd} ↗</a> — <b>${plan.info.name}</b>${plan.info.occupations.length ? html` · <span class="muted">${plan.info.occupations.join(', ')}</span>` : ''}</p>
+    <p class="muted small">Taken values are cited with the source “GND” and this record; values that agree are cited as they are.
+      Field values go into the working copy — check them and Publish.</p>
+    <form method="post" action="/${t.folder}/${e.slug}/gnd" class="wd-form">
+      <h2>Fields</h2>
+      ${plan.rows.length ? html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Field</th><th>Yours</th><th>GND</th><th>Take?</th></tr></thead><tbody>
+        ${plan.rows.map((r) => html`<tr><td>${fieldLabel(t.type, r.key)}</td><td>${r.ours || html`<span class="muted">(empty)</span>`}</td>
+          <td>${r.label || r.theirs}${r.key !== 'place' ? html` <span class="muted small">(${r.theirs})</span>` : ''}</td>
+          <td>${r.status === 'same' ? html`<span class="muted">the same — cited</span>` : r.status === 'missing' ? html`<span class="muted">not among our places</span>`
+            : html`${choice(`take.${r.key}`, 'take', 'take the GND’s', r.status === 'new')} ${choice(`take.${r.key}`, 'keep', r.status === 'new' ? 'leave empty' : 'keep mine', r.status !== 'new')}`}</td></tr>`)}
+      </tbody></table></div>` : html`<p class="muted">Nothing to compare.</p>`}
+      <h2>Relationships suggested by the GND</h2>
+      ${plan.rels.length ? html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Relationship</th><th>GND</th><th>Ours</th><th>Add?</th></tr></thead><tbody>
+        ${plan.rels.map((s) => html`<tr><td>${s.label}</td><td>${s.ref.label}</td>
+          <td>${s.target ? html`<a href="/${BY_TYPE[s.target.type].folder}/${s.target.slug}">${s.target.name}</a>${s.target.by_id ? '' : html` <span class="muted small">(same name)</span>`}` : html`<span class="muted">not in our database</span>`}</td>
+          <td>${s.already ? html`<span class="muted">have it</span>` : s.target ? html`<label class="choice"><input type="checkbox" name="rel.${s.i}" value="add"> add</label>` : ''}</td></tr>`)}
+      </tbody></table></div>` : html`<p class="muted">None.</p>`}
+      ${plan.info.variants.length ? html`<p class="muted small">Other names in the GND: ${plan.info.variants.join(' · ')}</p>` : ''}
+      <div class="actions sticky-actions"><button>Apply selected</button><a class="button secondary" href="/${t.folder}/${e.slug}">Cancel</a></div>
+    </form>`;
+}
+router.get('/:plural/:slug/gnd', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  const { plan, error } = await gndPlan(t, e);
+  if (error) return send(req, res, { title: 'GND', status: 422, flash: { kind: 'error', text: error }, body: html`<p><a href="/${t.folder}/${e.slug}#reference-records">← ${e.name}</a></p>` });
+  send(req, res, { title: `GND: ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' }, body: gndPage(t, e, plan) });
+});
+router.post('/:plural/:slug/gnd', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  const { plan, error } = await gndPlan(t, e);
+  if (error) return send(req, res, { title: 'GND', status: 422, flash: { kind: 'error', text: error }, body: html`<p><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>` });
+  const result = await withTx(req.user, async (db) => {
+    const r = await gnd.apply(db, t, e, plan, req.body, citations);
+    if (r.agreed.length) await citations.citeAgreeingSource(db, t.type, e.id, 'gnd', plan.url, r.agreed, req.user.id);
+    return r;
+  }, { source: 'gnd' });
+  if (Object.keys(result.form).length) {
+    await collab.applyForm(t, e.id, result.form, req.user.username);
+    await withTx(req.user, (db) => citations.pendingFromSource(db, t.type, e.id, 'gnd', plan.url, result.cites, req.user.id), { source: 'gnd' });
+    return res.redirect(303, `/${t.folder}/${e.slug}/edit?done=gnd&rels=${result.relationships}`);
+  }
+  res.redirect(303, `/${t.folder}/${e.slug}?done=gnd-applied&rels=${result.relationships}`);
+});
+
 // Further numbers of an artwork (src/admin/numbers.js): added on its page, removed one by one.
 router.post('/artworks/:slug/numbers', async (req, res) => {
   const e = await findEntity(BY_TYPE.artwork, req.params.slug);
@@ -1025,6 +1111,7 @@ async function wikidataApply(req, res, t, e) {
       ON CONFLICT (user_id, entity_type, entity_id) DO UPDATE SET form = EXCLUDED.form, updated_at = now()`,
     [req.user.id, t.type, JSON.stringify({ slug, ...base, ...form,
       ...(result.pendingImages.length ? { 'wd.images': JSON.stringify(result.pendingImages) } : {}),
+      ...(result.pendingIds.length ? { 'wd.ids': JSON.stringify(result.pendingIds) } : {}),
       ...(result.cites.length ? { 'wd.cite': JSON.stringify({ qid, cites: result.cites }) } : {}) })]);
     return res.redirect(303, `/${t.folder}/new?draft=1`);
   }
@@ -1110,7 +1197,8 @@ router.get('/:plural/new', async (req, res) => {
         : draftBanner({ draft, changed: [...new Set(changed)], restoreUrl: `/${t.folder}/new?draft=1`, t })}
       ${entityForm({ t, slug: useDraft ? draft.form.slug || '' : '', f: useDraft ? formFromBody(draft.form) : docToForm(await newDocFrom(t, req.query), t.fields),
         ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true,
-        pendingImages: useDraft ? draft.form['wd.images'] : null, pendingCites: useDraft ? draft.form['wd.cite'] : null })}`,
+        pendingImages: useDraft ? draft.form['wd.images'] : null, pendingCites: useDraft ? draft.form['wd.cite'] : null,
+        pendingIds: useDraft ? draft.form['wd.ids'] : null })}`,
   });
 });
 
@@ -1187,6 +1275,15 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
         const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
         await duplicates.checkNew(db, t, rows[0].id, body, user.id, { probe });
         await citations.settle(db, t.type, rows[0].id, body, user.id);
+        // reference records picked in the Wikidata review of this new entry (wd.ids, 053) — a number another entry
+        // has already makes this a certain duplicate (unique violation → duplicates.fromUniqueViolation)
+        let pendingIds = [];
+        try { pendingIds = JSON.parse(String(body['wd.ids'] || '[]')); } catch { pendingIds = []; }
+        for (const x of Array.isArray(pendingIds) ? pendingIds.slice(0, 10) : []) {
+          if (x && typeof x.authority === 'string' && typeof x.value === 'string') {
+            await db.query('INSERT INTO entry_identifiers (entity_type, entity_id, authority, value) VALUES ($1, $2, $3, $4)', [t.type, rows[0].id, x.authority, x.value]);
+          }
+        }
         await createdIn(rows[0].id);
         // images picked in the Wikidata review of this new entry (wd.images): saved together with it
         for (const img of pendingImagesOf(t, body)) await images.add(db, t.type, rows[0].id, img);
@@ -1290,7 +1387,7 @@ router.post('/:plural', async (req, res) => {
       title: `New ${t.type}`, status: 422,
       page: { type: t.type, slug: null, mode: 'new' },
       body: html`<h1>New ${t.type}</h1>${entityForm({ t, slug: req.body.slug, f: formFromBody(req.body), ctx, action: `/${t.folder}`,
-        errors: result.errors, isNew: true, pendingImages: req.body['wd.images'], pendingCites: req.body['wd.cite'] })}`,
+        errors: result.errors, isNew: true, pendingImages: req.body['wd.images'], pendingCites: req.body['wd.cite'], pendingIds: req.body['wd.ids'] })}`,
     });
   }
   await drafts.deleteDraft(adminPool, req.user.id, t.type, null);
@@ -1459,6 +1556,11 @@ router.get('/:plural/:slug', async (req, res) => {
           <input name="part" placeholder="an existing artwork (slug)" list="part-candidates" class="grow" aria-label="artwork" data-lookup="artwork" autocomplete="off">
           <input name="part_number" placeholder="number, e.g. 21" aria-label="number" class="short">
           <button>Add</button> <a class="button secondary" href="/artworks/new?part_of=${e.slug}">+ New part</a></form></details>` : ''}
+      ${await (async () => {
+        const ids = await identifiers.list(adminPool, t.type, e.id);
+        const available = identifiers.forType(await identifiers.authorities(adminPool), t.type).filter((a) => !ids.some((x) => x.code === a.code));
+        return identifiers.forType(await identifiers.authorities(adminPool), t.type).length ? identifiers.section({ t, e, ids, available }) : '';
+      })()}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? numbers.section({ e, numbers: nums }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap,

@@ -10,6 +10,7 @@
 // Wikidata API: https://www.wikidata.org/w/api.php (wbgetentities, wbsearchentities); images: Wikimedia Commons API.
 // Base URLs are configurable (WIKIDATA_BASE, COMMONS_BASE) so the end-to-end tests can serve fixtures.
 const citations = require('./citations');
+const identifiers = require('./identifiers');
 const { BY_TYPE, TYPES, SLUG, toRow } = require('../content');
 const nameUtil = require('../names');
 const autocreate = require('./autocreate');
@@ -538,7 +539,16 @@ async function compare(db, t, qid, ours, entity) {
       period: r.period, period_label: r.period_label, already, declined: declined(item, r.qid),
       period_display: r.period_label || (r.period ? parseFuzzyDate(r.period, { openEnd: true }).label : '') });
   }
-  return { qid, label: labelOf(e), description: (e.descriptions && e.descriptions.en && e.descriptions.en.value) || '', rows, images, suggestions };
+  // the entry's numbers in authority files (053), as Wikidata records them: ULAN P245, GND P227, VIAF P214 …
+  const ids = [];
+  const have = entity ? await identifiers.list(db, t.type, entity.id) : [];
+  for (const a of identifiers.forType(await identifiers.authorities(db), t.type)) {
+    const value = a.wikidata_property && firstString(e, a.wikidata_property);
+    if (!value || !new RegExp(a.pattern).test(value)) continue;
+    const ours = (have.find((x) => x.code === a.code) || {}).value || null;
+    ids.push({ code: a.code, name: a.name, value, url: identifiers.urlOf(a, value), ours, status: ours === value ? 'same' : ours ? 'differs' : 'new' });
+  }
+  return { qid, label: labelOf(e), description: (e.descriptions && e.descriptions.en && e.descriptions.en.value) || '', rows, images, suggestions, identifiers: ids };
 }
 
 function scalarRow(key, ours, display, value, declined) {
@@ -728,7 +738,23 @@ async function apply(db, t, entity, plan, choices, userId) {
       relationships += 1;
     }
   }
-  return { form, created, relationships, images, pendingImages, cites };
+  // reference records (053): ticked numbers — added now to an existing entry, after Create to a new one (wd.ids)
+  const pendingIds = [];
+  let ids = 0;
+  for (const x of plan.identifiers || []) {
+    if (x.status === 'same' || choices[`idf.${x.code}`] !== 'take') continue;
+    if (!entity) { pendingIds.push({ authority: x.code, value: x.value }); continue; }
+    try {
+      await db.query('SAVEPOINT idf');
+      await identifiers.add(db, entity.type, entity.id, { authority: x.code, value: x.value });
+      await db.query('RELEASE SAVEPOINT idf');
+      ids += 1;
+    } catch (err) {
+      await db.query('ROLLBACK TO SAVEPOINT idf');
+      created.push(`(not added: ${err.message})`);
+    }
+  }
+  return { form, created, relationships, images, pendingImages, cites, pendingIds, ids };
 }
 
 // A place's coordinates from its Wikidata item (P625), [lon, lat] or null — for the place finder.
