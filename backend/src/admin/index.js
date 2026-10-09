@@ -67,6 +67,7 @@ const DONE = {
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',
   'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
+  converted: 'Type changed — everything that could come along is here; the old address leads here.',
   'gnd-applied': 'GND comparison applied — agreeing values are cited.', 'id-added': 'Reference record added.', 'id-deleted': 'Reference record removed.', gnd: 'GND values applied — the field values are in the working copy: check them below and Publish.',
   'cite-added': 'Source added.', 'cite-deleted': 'Source removed.',
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
@@ -703,6 +704,16 @@ const citeBack = (b, done) => {
   const [path, hash] = url.split('#');
   return `${path}?done=${done}${hash ? `#${hash}` : ''}`;
 };
+// A Wikidata item of another kind than the entry's type (055): a warning, with the way to the right type — for a new
+// entry its Wikidata page in the right type, for an existing one "Change type…".
+const anOf = (x) => (/^[aeiou]/.test(x) ? `an ${x}` : `a ${x}`);
+function typeWarning(t, types, qid, e) {
+  const fit = types.filter((x) => BY_TYPE[x]);
+  return html`<div class="flash warn type-warning"><b>Wikidata says this is ${fit.map(anOf).join(' or ')}, not ${anOf(t.type)}.</b>
+    ${e ? html`If so: <a href="/${t.folder}/${e.slug}/convert?to=${fit[0]}">Change type…</a>`
+      : html`Create it as ${fit.map((x, i) => html`${i ? ' or ' : ''}<a href="/${BY_TYPE[x].folder}/new/wikidata?q=${qid}">${anOf(x)}</a>`)} instead?`}</div>`;
+}
+
 // Called by the page script (editor/sortable.js) — "X-Requested-With: fetch": answered with JSON, the page updates in
 // place: { markers: {key: html}, recent: html } or { error }. Without script: the form posts and the page reloads.
 const wantsJson = (req) => req.get('X-Requested-With') === 'fetch';
@@ -946,6 +957,10 @@ async function notFoundPage(req, res) {
     const moved = (await adminPool.query(`SELECT x.slug FROM slug_history h JOIN ${t.table} x ON x.id = h.entity_id
       WHERE h.entity_type = $1 AND h.old_slug = $2`, [t.type, req.params.slug])).rows[0];
     if (moved) return res.redirect(301, req.originalUrl.replace(`/${t.folder}/${req.params.slug}`, `/${t.folder}/${moved.slug}`));
+    // moved to another type (055): /institutions/henry-clay-frick → /people/henry-clay-frick
+    const other = (await adminPool.query(`SELECT m.new_type::text AS type, e.slug FROM entry_moves m
+      JOIN entity_index e ON (e.type, e.id) = (m.new_type, m.new_id) WHERE m.old_type = $1 AND m.old_slug = $2`, [t.type, req.params.slug])).rows[0];
+    if (other) return res.redirect(301, req.originalUrl.replace(`/${t.folder}/${req.params.slug}`, `/${BY_TYPE[other.type].folder}/${other.slug}`));
   }
   return notFoundPageNow(req, res);
 }
@@ -1079,7 +1094,10 @@ async function wikidataPage(req, res, t, e) {
   } catch (err) {
     return send(req, res, { title, page, status: 502, body: searchPage({ title, action, q: qid, results: null, error: `Could not load ${qid}: ${err.message}` }) });
   }
-  send(req, res, { title, page, body: reviewPage({ title, plan, t: wdLinks, action, isNew: !e }) });
+  // the item's class says it is something else (a human, created as an institution — 055)
+  const types = await wikidata.typesOf(qid).catch(() => null);
+  const wrong = types && !types.includes(t.type) ? typeWarning(t, types, qid, e) : '';
+  send(req, res, { title, page, body: html`${wrong}${reviewPage({ title, plan, t: wdLinks, action, isNew: !e })}` });
 }
 
 async function wikidataApply(req, res, t, e) {
@@ -1232,6 +1250,14 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
   errors.push(...row.errors);
   if (probe && errors.length) return { probe: [] };  // half-typed (a date like "18…"): nothing to compare yet
   if (errors.length) return { errors, confirm: auto.confirm };
+  // a new entry with a Wikidata item of another kind (a human as an institution, 055): asked once — "type.ok" confirms
+  if (!existing && !probe && doc.wikidata_id && body['type.ok'] !== '1') {
+    const types = await wikidata.typesOf(doc.wikidata_id).catch(() => null);
+    if (types && !types.includes(t.type)) {
+      return { errors: [`Wikidata says ${doc.wikidata_id} is ${types.filter((x) => BY_TYPE[x]).map(anOf).join(' or ')}, not ${anOf(t.type)} — see the box above the form.`],
+        typeCheck: { qid: doc.wikidata_id, types } };
+    }
+  }
 
   let created = [];
   try {
@@ -1372,7 +1398,10 @@ function errorKeysOf(errors) {
 // The live duplicate box of the new-entry form (editor/duplicates.js): the form as typed, compared and rolled back.
 router.post('/:plural/new/duplicates', async (req, res) => {
   const result = await saveEntity(req.user, req.t, req.body, null, { probe: true });
-  res.type('html').send(String(duplicates.liveBox(req.t, result.probe || [])));
+  // and whether the name fits the type (055): "Henry Clay Frick" as an institution
+  const name = String(req.body[`f.${req.t.name}`] || '').trim();
+  const doubt = name ? (await adminPool.query('SELECT type_doubt($1, $2) AS d', [req.t.type, name])).rows[0].d : null;
+  res.type('html').send(String(html`${doubt ? html`<div class="flash warn type-warning">“${name}”: ${doubt}</div>` : ''}${duplicates.liveBox(req.t, result.probe || [])}`));
 });
 
 router.post('/:plural', async (req, res) => {
@@ -1383,6 +1412,8 @@ router.post('/:plural', async (req, res) => {
     ctx.errorKeys = errorKeysOf(result.errors);
     ctx.confirmNew = result.confirm || {};
     ctx.duplicates = result.duplicates || null;
+    ctx.typeCheck = result.typeCheck ? html`${typeWarning(t, result.typeCheck.types, result.typeCheck.qid, null)}
+      <label class="choice"><input type="checkbox" name="type.ok" value="1"> it really is ${anOf(t.type)} — create it</label>` : null;
     return send(req, res, {
       title: `New ${t.type}`, status: 422,
       page: { type: t.type, slug: null, mode: 'new' },
@@ -1507,6 +1538,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Wikidata…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/merge">Merge…</a>
+        ${CONVERTIBLE.includes(t.type) ? html`<a class="button secondary" href="/${t.folder}/${e.slug}/convert">Change type…</a>` : ''}
         <a class="button secondary" href="/${t.folder}/${e.slug}/delete">Delete</a></div>
       ${pending ? unpublishedBanner(t, e, { ...pending, fields: await unpublishedFields(t, e) }, false) : ''}
       ${autoFlag ? html`<div class="flash warn auto-banner"><b>To complete:</b> created automatically
@@ -1876,6 +1908,69 @@ router.post('/:plural/:slug/merge', async (req, res) => {
   }
   await collab.gone(t, dup.id);  // close the duplicate's working copy for everyone editing it
   res.redirect(303, `/${t.folder}/${keep.slug}?done=merged`);
+});
+
+// Change an entry's type (convert_entry, migration 055): pick the type → preview (rolled back) → change. The entry
+// moves to the other table; old addresses and [[links]] follow.
+const CONVERTIBLE = ['artist', 'person', 'institution', 'movement', 'place', 'polity', 'event', 'term'];
+async function runConvert(user, t, e, to, { preview }) {
+  const client = await adminPool.connect();
+  try {
+    await client.query('BEGIN');
+    await client.query("SELECT set_config('arthistory.user_id', $1, true), set_config('arthistory.source', 'admin', true)", [String(user.id)]);
+    const { rows } = await client.query('SELECT convert_entry($1, $2, $3) AS r', [t.type, e.id, to]);
+    await client.query(preview ? 'ROLLBACK' : 'COMMIT');
+    return { result: rows[0].r };
+  } catch (err) {
+    await client.query('ROLLBACK').catch(() => {});
+    if (['P0001', '23503', '23505', '23514', '23502'].includes(err.code)) return { error: err.message };
+    throw err;
+  } finally {
+    client.release();
+  }
+}
+function convertPage({ t, e, to, preview, error, doubt }) {
+  const targets = CONVERTIBLE.filter((x) => x !== t.type);
+  return html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>
+    <h1>Change the type of ${e.name}</h1>
+    <p>For an entry created as the wrong kind — a person entered as an institution. It moves to the other kind with
+      everything both have; what can't come along is listed below before anything changes. Old addresses and [[links]]
+      lead to it. Revertable from the history.</p>
+    ${doubt ? html`<p class="flash warn">${doubt}</p>` : ''}
+    ${error ? html`<p class="flash error">${error}</p>` : ''}
+    <form method="get" action="/${t.folder}/${e.slug}/convert" class="bar">
+      <label for="to">From ${anOf(t.type)} to</label>
+      <select id="to" name="to">${targets.map((x) => html`<option value="${x}"${x === to ? ' selected' : ''}>${anOf(x)}</option>`)}</select>
+      <button class="secondary">Preview</button></form>
+    ${preview ? html`<section><h2>What happens</h2><ul class="merge-summary">
+      <li>Comes along: ${preview.kept.filter((k) => !['metadata', 'slug'].includes(k)).join(', ')}${preview.slug !== e.slug ? html` — new address /${BY_TYPE[to].folder}/${preview.slug}` : ''}.</li>
+      ${preview.lost.length ? html`<li><b>Not kept</b> (${anOf(to)} has no such field): ${preview.lost.join(', ')} — still in the history.</li>` : ''}
+      ${preview.dropped_relationships.length ? html`<li><b>Relationships ${anOf(to)} can't have</b> (removed): ${preview.dropped_relationships.join(' · ')}</li>` : html`<li>All relationships come along.</li>`}
+      ${Object.entries(preview.dropped).map(([k, n]) => html`<li><b>Removed:</b> ${n} ${k}</li>`)}
+      ${preview.texts ? html`<li>${preview.texts} text${preview.texts > 1 ? 's' : ''} with [[links]] to it rewritten.</li>` : ''}</ul>
+      <form method="post" action="/${t.folder}/${e.slug}/convert" class="actions"><input type="hidden" name="to" value="${to}">
+        <button class="danger">Make ${e.name} ${anOf(to)}</button></form></section>` : ''}`;
+}
+router.get('/:plural/:slug/convert', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e) return notFoundPage(req, res);
+  const doubt = (await adminPool.query('SELECT type_doubt($1, $2) AS d', [t.type, e.name])).rows[0].d;
+  const to = CONVERTIBLE.includes(req.query.to) && req.query.to !== t.type ? req.query.to : null;
+  if (!CONVERTIBLE.includes(t.type)) {
+    return send(req, res, { title: 'Change type', body: html`<p class="flash warn">${humanize(t.folder)} can't change their type.</p><p><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>` });
+  }
+  const { result: preview, error } = to ? await runConvert(req.user, t, e, to, { preview: true }) : {};
+  send(req, res, { title: `Change type: ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' }, body: convertPage({ t, e, to, preview, error, doubt }) });
+});
+router.post('/:plural/:slug/convert', async (req, res) => {
+  const { t } = req;
+  const e = await findEntity(t, req.params.slug);
+  if (!e || !CONVERTIBLE.includes(req.body.to)) return notFoundPage(req, res);
+  const { result, error } = await runConvert(req.user, t, e, req.body.to, { preview: false });
+  if (error) return send(req, res, { title: 'Change type', status: 409, body: convertPage({ t, e, to: req.body.to, preview: null, error }) });
+  await collab.gone(t, e.id);
+  res.redirect(303, `/${BY_TYPE[result.to].folder}/${result.slug}?done=converted`);
 });
 
 router.get('/:plural/:slug/delete', async (req, res) => {

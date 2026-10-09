@@ -424,6 +424,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     ${isNew && ctx.duplicates ? duplicates.confirmBox(t, ctx.duplicates) : ''}
+    ${isNew && ctx.typeCheck ? html`<div class="type-check">${ctx.typeCheck}</div>` : ''}
     ${isNew ? html`<div class="dup-live" data-dup-url="${action}/new/duplicates" aria-live="polite"></div>` : ''}
     ${isNew && pendingCites ? html`<input type="hidden" name="wd.cite" value="${pendingCites}">` : ''}
     ${isNew && pendingIds ? html`<input type="hidden" name="wd.ids" value="${pendingIds}">

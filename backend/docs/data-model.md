@@ -286,6 +286,17 @@ in the transaction that adds it), then the table and an event branch in every vi
 `entity_id`, `entity_home_place`), the per-table triggers, a sixth image arm — the generated `images.entity_type` /
 `entity_id` changed in place with `ALTER COLUMN … SET EXPRESSION` (PostgreSQL 17+).
 
+## The wrong kind of entry (migration 055)
+`type_doubt(type, name)` — a guess from the name (an institution with a person's name and no word of an institution;
+a person / artist whose name has one) for the live box and the quality check `type_doubtful`; the admin also checks a
+Wikidata item's class (`wikidata.typesOf`: human → artist/person …) on the review page and on Create.
+`convert_entry(type, id, new_type)` moves an entry to another table: the columns both tables have (via
+`pg_attribute`), relationships the new type may have (others removed and listed), image and provenance arms, sources
+of fields both have, reference records the authority keeps for the new type; refused while something only the old
+type can be points at it (an institution's artworks). `entry_moves` keeps old type + slug → the new entry: admin
+and API redirect; `[[old_type/slug]]` links are rewritten. History source `convert`; the admin previews in a
+rolled-back transaction.
+
 ## Authority files (migration 053)
 `authorities` (data: code, name, url template, number pattern, Wikidata property, entity types) and `entry_identifiers`
 (entity, authority, value): one number per authority per entry, and `UNIQUE (authority, value)` — a number names one

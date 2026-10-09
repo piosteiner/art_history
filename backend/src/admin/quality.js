@@ -28,6 +28,7 @@ const CHECKS = {
   institution_without_place: { title: 'Institution without its city', fix: 'Set the place (the city) — a nearby one is suggested when the institution has an exact location.' },
   missing_romanization: { title: 'Name without romanization', fix: 'Add one under "Other names" (e.g. Kanagawa-oki nami ura | ja-Latn | romanization) — it is used for sorting, search and the slug.' },
   event_without_place: { title: 'Event without a place', fix: 'Set its place (the city), or an exact spot or area — otherwise it can\'t appear on the map.' },
+  type_doubtful: { title: 'Perhaps the wrong kind of entry', fix: 'If it is: “Change type…” on its page moves it (a person entered as an institution) — with its relationships, images and sources. Otherwise: Mark as OK.' },
   title_translation: { title: 'Title is not an official translation', fix: 'Look up the title the holding institution uses (its online collection); if it has one, use it, set “official translation” and cite the page with the marker.' },
   loan_owner: { title: 'On loan — but who lent it?', fix: 'Add the owner (the lender) as the last step of the provenance — the institution where it is now only holds it.' },
   citation_outdated: { title: 'Changed since cited', fix: 'The value changed after the source was cited: check the source still says so — remove the citation, or cite the source of the new value.' },

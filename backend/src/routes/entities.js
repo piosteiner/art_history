@@ -450,6 +450,13 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
         const query = req.originalUrl.includes('?') ? req.originalUrl.slice(req.originalUrl.indexOf('?')) : '';
         return res.redirect(301, `${req.baseUrl}/${plural}/${moved.rows[0].slug}${query}`);
       }
+      // moved to another type (055): answered with the new address
+      const other = await apiPool.query(`SELECT m.new_type::text AS type, x.slug FROM entry_moves m
+        JOIN entity_index x ON (x.type, x.id) = (m.new_type, m.new_id) WHERE m.old_type = $1 AND m.old_slug = $2`, [e.type, req.params.slug]);
+      if (other.rows.length) {
+        const plural2 = Object.keys(ENTITIES).find((k) => ENTITIES[k].type === other.rows[0].type);
+        if (plural2) return res.redirect(301, `${req.baseUrl}/${plural2}/${other.rows[0].slug}`);
+      }
       throw notFound(`no ${e.type} "${req.params.slug}"`);
     }
     const { id, ...entity } = rows[0];

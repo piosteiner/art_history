@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### The wrong kind of entry: warned, and moved to another type (migration 055)
+- **What:** `type_doubt()` (name heuristic) → hint in the live box of new entries and quality check `type_doubtful`;
+  `wikidata.typesOf()` (a Wikidata item's class) → a warning on the review page with the way to the right type, and a
+  confirmation on Create (`type.ok`). `convert_entry()` + table `entry_moves`; admin "Change type…" (preview =
+  rolled-back run), redirects of old addresses in admin and API, [[links]] rewritten.
+- **Why:** owner: Henry Clay Frick was created as an institution (Wikidata Q93709 is a human); the only entry the
+  heuristic flags on production.
+- **Tested:** dry run on prod (rolled back); e2e (types.spec).
+- **Revert:** redeploy the previous commit; as owner drop `convert_entry`, `entry_moves`, `type_doubt` and re-create
+  052's `quality_issues`. Conversions are reverted from the history.
+
 ### Relationship "founded" / "founded by" (migration 054)
 - **What:** relationship type `founded` (artist, person, institution → institution, movement; category membership;
   co-founders: one relationship each, label "co-founder"); the Wikidata comparison suggests founders from P112

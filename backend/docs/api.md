@@ -189,6 +189,10 @@ All fields (Markdown already rendered to sanitized HTML as `*_html`), plus:
 - artist: `artworks` (including co-created ones: `co_creator: true`, `role`) · institution: `artworks`, `place` · artwork: `creator`, `creators`, `attribution_label`, `institution` ·
   place: `ancestors` (Arles → France), `children`, `institutions` · movement: `ancestors`, `children`.
 
+### Moved entries (migration 055)
+An entry whose type was changed (an institution that is a person) answers its old address with a 301 to the new
+one: `/v1/institutions/henry-clay-frick` → `/v1/people/henry-clay-frick`.
+
 ### Reference records (every detail, migration 053)
 `identifiers`: the entry's numbers in authority files, `[{authority, name, value, url}]` — `ulan` (Getty ULAN), `gnd`
 (Deutsche Nationalbibliothek), `viaf`, `sikart` (Swiss Institute for Art Research), `rkd` (RKDartists), `lc` (Library

@@ -757,10 +757,29 @@ async function apply(db, t, entity, plan, choices, userId) {
   return { form, created, relationships, images, pendingImages, cites, pendingIds, ids };
 }
 
+// Which of our types a Wikidata item can be (055): a human is an artist or a person, a museum an institution …;
+// null when its class says nothing we know. Used to warn when an entry is created as something else.
+const ARTWORK_CLASSES = ['Q3305213', 'Q11060274', 'Q860861', 'Q93184', 'Q125191', 'Q18761202', 'Q15123870', 'Q15709879', 'Q179700', 'Q2668072'];
+const POLITY_CLASSES = ['Q6256', 'Q3024240', 'Q7275', 'Q48349', 'Q417175', 'Q3624078', 'Q1250464', 'Q164950', 'Q1371288'];
+const GROUP_CLASSES = ['Q8436', 'Q13417114', 'Q164950', 'Q2088357', 'Q4830453'];
+async function typesOf(qid) {
+  const e = (await getEntities([qid]))[qid];
+  if (!e || e.missing !== undefined) return null;
+  const p31 = itemIds(e, 'P31');
+  if (p31.includes(HUMAN)) return ['artist', 'person'];
+  if (isInstitutionLike(e)) return ['institution', 'place', 'artwork'];  // a museum building is also a place / a work
+  if (isEventLike(e)) return ['event'];
+  if (isMovementLike(e)) return ['movement'];
+  if (p31.some((id) => ARTWORK_CLASSES.includes(id)) || statements(e, 'P170').length) return ['artwork'];
+  if (p31.some((id) => POLITY_CLASSES.includes(id))) return ['polity', 'place'];
+  if (p31.some((id) => GROUP_CLASSES.includes(id))) return ['person', 'institution'];
+  return null;
+}
+
 // A place's coordinates from its Wikidata item (P625), [lon, lat] or null — for the place finder.
 async function coordsOf(qid) {
   const e = (await getEntities([qid]))[qid];
   return e && e.missing === undefined ? coords(e) : null;
 }
 
-module.exports = { search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry };
+module.exports = { search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf };
