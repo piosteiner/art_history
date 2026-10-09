@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-09
 
+### Tests: log in once per run instead of once per test (4:48 → 3:45)
+- **What:** `test/e2e/global-setup.js` logs both test users in once and stores their sessions
+  (`$TMPDIR/arthistory-e2e/session-<user>.json`); the `userA` / `userB` fixtures start each test in a fresh browser
+  context with that session (`helpers.js` → `asUser`) instead of the login form (scrypt on purpose: ~0.9 s per test).
+  The logout test logs in itself (it ends its session). Two tests that relied on starting at the dashboard now open it.
+- **Why:** owner: the 117 e2e tests took 4.8 min; ~1 min of it was logging in.
+- **Revert:** revert the commit.
+
 ### Admin: real drag and drop for provenance steps (floating copy + placeholder)
 - **What:** `editor/sortable.js`: the dragged step stays in place (hidden), a floating copy of its row follows the
   pointer and a dashed placeholder moves through the list; release = the step takes the placeholder's place; Esc

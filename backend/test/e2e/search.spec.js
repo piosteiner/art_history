@@ -7,6 +7,7 @@ const topSearch = async (page, q) => {
 };
 
 test('top-bar search: typo, alternative name, word forms, relationship label', async ({ userA }) => {
+  await userA.goto('/');  // the search bar is in the header of every page
   await topSearch(userA, 'hokusia');
   await expect(userA.locator('.search-hit a').first()).toHaveText('Katsushika Hokusai');
 

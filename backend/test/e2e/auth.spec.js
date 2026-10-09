@@ -1,6 +1,6 @@
 // Login, logout, and the protections around them (cross-site posts, the live WebSocket).
 const WebSocket = require('ws');
-const { test, expect } = require('./helpers');
+const { test, expect, login } = require('./helpers');
 const { BASE, PORT } = require('./env');
 
 test('logged out: pages redirect to the login, posts are refused', async ({ page, request }) => {
@@ -18,13 +18,16 @@ test('wrong password is rejected with a message', async ({ page }) => {
   await expect(page.locator('.flash.error')).toHaveText(/Wrong username or password/);
 });
 
-test('login, dashboard, logout', async ({ userA }) => {
+test('login, dashboard, logout', async ({ browser }) => {
+  // its own login: logging out ends the session, so not the shared one of the other tests (helpers.js)
+  const userA = await login(browser, 'tester');
   await expect(userA.locator('h1')).toHaveText('Dashboard');
   await expect(userA.locator('.card').first()).toBeVisible();
   await userA.click('form[action="/logout"] button');
   await expect(userA).toHaveURL(/\/login$/);
   await userA.goto('/');
   await expect(userA).toHaveURL(/\/login$/);
+  await userA.context().close();
 });
 
 test('a post from another site is refused even with a valid session', async ({ userA }) => {

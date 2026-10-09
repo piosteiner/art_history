@@ -13,6 +13,8 @@ module.exports = {
   BACKEND,
   STATE_DIR,
   AUTH_FILE: path.join(STATE_DIR, 'auth.json'),
+  // the users' sessions, logged in once per run by global-setup.js (cookies only — never in the repo)
+  sessionFile: (user) => path.join(STATE_DIR, `session-${user}.json`),
   PID_FILE: path.join(STATE_DIR, 'server.pid'),
   // Wikidata/Commons point at the fixture server (wikidata-fixtures.js), never at the real sites.
   serverEnv: () => ({ ...process.env, DB_NAME: 'arthistory_test', PORT: String(PORT), NODE_ENV: 'development',

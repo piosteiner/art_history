@@ -4,7 +4,8 @@
 const fs = require('fs');
 const crypto = require('crypto');
 const { execFileSync } = require('child_process');
-const { BACKEND, DB, STATE_DIR, AUTH_FILE, serverEnv } = require('./env');
+const { request } = require('@playwright/test');
+const { BACKEND, BASE, DB, STATE_DIR, AUTH_FILE, serverEnv, sessionFile } = require('./env');
 const server = require('./server');
 const wikidataFixtures = require('./wikidata-fixtures');
 
@@ -26,4 +27,13 @@ module.exports = async () => {
   await wikidataFixtures.start();
   await server.stop();  // a leftover from an aborted run
   await server.start();
+  // Log both users in once: every test starts a fresh browser context with this session (helpers.js) instead of going
+  // through the login form — which hashes the password with scrypt on purpose and took ~0.9 s per test.
+  for (const user of ['tester', 'tester2']) {
+    const http = await request.newContext({ baseURL: BASE });
+    const res = await http.post('/login', { form: { username: user, password: auth[user] }, headers: { Origin: BASE }, maxRedirects: 0 });
+    if (res.status() !== 303 && res.status() !== 302) throw new Error(`login of ${user} for the test sessions failed: ${res.status()}`);
+    await http.storageState({ path: sessionFile(user) });
+    await http.dispose();
+  }
 };

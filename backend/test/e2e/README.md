@@ -26,3 +26,8 @@ npx playwright show-trace test/e2e/.results/<…>/trace.zip   # what the browser
 | `history` | conflicts kept, restore version, word-level merge, restoring a deletion with its id, stale previews, diffs |
 | `live` | presence, drafts of new entries, co-editing convergence, publish, offline merge across a restart, discard, rebase |
 | `editor` | Markdown shortcuts/styling/preview (escaping), map picker (Referer, click, polygon) |
+
+**Logged in once per run.** `global-setup.js` logs `tester` and `tester2` in and stores the sessions; the `userA` / `userB`
+fixtures start every test in a fresh browser context with them (no login form per test). A test that logs out must
+use `login(browser, user)` from `helpers.js` — logging out ends a session, and the shared one is used by every other test.
+A fresh context starts on a blank page: open the page you need first (`await userA.goto('/')`).

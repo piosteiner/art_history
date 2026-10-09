@@ -5,7 +5,7 @@
 const fs = require('fs');
 const { execFileSync } = require('child_process');
 const { test: base, expect } = require('@playwright/test');
-const { AUTH_FILE, DB, BASE } = require('./env');
+const { AUTH_FILE, DB, BASE, sessionFile } = require('./env');
 
 const sql = (q) => execFileSync('psql', ['-X', '-h', 'localhost', '-U', 'arthistory_owner', '-d', DB, '-Atc', q]).toString().trim();
 
@@ -31,15 +31,25 @@ async function login(browser, user) {
   return page;
 }
 
+// A logged-in user: a fresh browser context (own cookies, storage, pages) with the session global-setup.js logged in
+// once per run — no login form per test. A test that logs out uses login() instead: it would end the shared session.
+async function asUser(browser, user) {
+  const context = await browser.newContext({ baseURL: BASE, storageState: sessionFile(user) });
+  const page = await context.newPage();
+  page.jsErrors = [];
+  page.on('pageerror', (e) => page.jsErrors.push(e.message));
+  return page;
+}
+
 const test = base.extend({
   userA: async ({ browser }, use) => {
-    const page = await login(browser, 'tester');
+    const page = await asUser(browser, 'tester');
     await use(page);
     expect(page.jsErrors, 'script errors on the page').toEqual([]);
     await page.context().close();
   },
   userB: async ({ browser }, use) => {
-    const page = await login(browser, 'tester2');
+    const page = await asUser(browser, 'tester2');
     await use(page);
     expect(page.jsErrors, 'script errors on the page').toEqual([]);
     await page.context().close();
