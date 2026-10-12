@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Fix: deploy tests crowded out the live site's database connections
+- **What:** pool sizes configurable (`DB_ADMIN_POOL_MAX`, `DB_API_POOL_MAX`; production keeps 3 / 5); the e2e test
+  servers run with 2 / 2 (`test/e2e/env.js`). Role limits raised (`sudo -u postgres psql`): `arthistory_admin` and
+  `arthistory_api` CONNECTION LIMIT 10 → 16 (also in `db/setup-roles.sql`). `max_connections` stays 30.
+- **Why:** at 14:55 a deploy's tests failed and the live admin logged "too many connections for role
+  arthistory_admin": since today two test servers run side by side, each with an admin pool and the quality listener
+  (058), all on the same role as production (limit 10). Measured after the fix, a full run peaks at 7/16 admin,
+  4/16 api, 13/30 connections in all.
+- **Revert:** `ALTER ROLE arthistory_admin CONNECTION LIMIT 10; ALTER ROLE arthistory_api CONNECTION LIMIT 10;` (as
+  postgres) and revert the commit — or run the tests one at a time (`E2E_WORKERS=1`).
+
 ### Admin: image search in Rijksmuseum, Europeana, Smithsonian, Japan Search; Japan Search on the Enrich page
 - **What:** `imagesearch.js`: four more sources, each only with reusable rights — Rijksmuseum (search API → Linked Art
   object → visual item → digital object, only "downloadbaar", IIIF resized), Europeana (`reusability=open`: CC0, PDM,

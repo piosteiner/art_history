@@ -10,8 +10,10 @@ BEGIN
 END $$;
 
 ALTER ROLE arthistory_owner NOSUPERUSER NOCREATEDB NOCREATEROLE CONNECTION LIMIT 5;
-ALTER ROLE arthistory_admin NOSUPERUSER NOCREATEDB NOCREATEROLE CONNECTION LIMIT 10;
-ALTER ROLE arthistory_api   NOSUPERUSER NOCREATEDB NOCREATEROLE CONNECTION LIMIT 10;
+-- admin/api: production (admin pool 3 + quality listener 1; api 5), dev (the same) and two e2e test servers (2 + 1; 2)
+-- at once — within max_connections = 30 (server-docs/config/postgresql/arthistory.conf) when dev isn't running too.
+ALTER ROLE arthistory_admin NOSUPERUSER NOCREATEDB NOCREATEROLE CONNECTION LIMIT 16;
+ALTER ROLE arthistory_api   NOSUPERUSER NOCREATEDB NOCREATEROLE CONNECTION LIMIT 16;
 
 -- Public API: a runaway query (e.g. deep recursive CTE) is cut off; writes are refused even if a grant slips.
 ALTER ROLE arthistory_api SET statement_timeout = '5s';
