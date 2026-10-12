@@ -25,7 +25,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
 - Dev: `cd backend && npm run dev` (port 3005, DB `arthistory_dev`). Never test against the live process.
 - Content: the **database is the source of truth** (admin panel, audit_log history). `npm run export` → `content/` YAML
   snapshot to commit; `npm run import` only for bulk loads (export first — import overwrites). Deploys don't import.
-- Admin panel: `backend/src/admin/`; forms come from `src/content.js` (shared with import/export). Dev login:
+- Admin panel: `backend/src/admin/` — pages in `routes/*.js` (mounted in order by `index.js`), shared helpers in `core.js`; forms come from `src/content.js` (shared with import/export). Dev login:
   `npm run admin:user:dev -- <name>`, then http://admin.localhost:3005/ (host-based routing). Markdown editor:
   `src/admin/editor/` (CodeMirror 6; map picker = Leaflet + Geoman) → `npm run build:admin` → `static/editor.js`,
   `map.js`, `map.css` (git-ignored; `deploy.sh` builds them). `npm run dev` builds into `static-dev/` instead — this checkout

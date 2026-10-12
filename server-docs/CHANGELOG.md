@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Admin: index.js split into route files (no change in behaviour)
+- **What:** `src/admin/index.js` (2,100 lines, 67 routes) → `index.js` (middleware, login, mounting order, error page),
+  `core.js` (shared: `send`, `withTx`, `friendly`, history tables, relationship forms, `findEntity`, `notFoundPage`,
+  `pluralParam`, `formContext` …) and `routes/` — revert, dashboard, relationships, citations, compare, provenance,
+  wikidata, entries, tools — mounted in the old order. Each route file registers `router.param('plural', pluralParam)`
+  (param handlers don't reach sub-routers). Imports generated from what each file uses, checked with ESLint `no-undef`.
+- **Why:** owner: easier and safer changes.
+- **Revert:** revert the commit.
+- **Tested:** full unit + e2e suite (128).
+
 ### Tests: end-to-end specs in two workers, each on its own database and server
 - **What:** created the databases `arthistory_test_1` and `arthistory_test_2` (`db/setup.sh`, owner `arthistory_owner`).
   `test/e2e/env.js` gives each Playwright worker a shard (database + server port: :3006, :3008, :3009); `global-setup.js`
