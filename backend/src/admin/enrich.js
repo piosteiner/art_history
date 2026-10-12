@@ -15,6 +15,7 @@ const { html } = require('./html');
 const wikidata = require('./wikidata');
 const authority = require('./authority');
 const metagrid = require('./metagrid');
+const japansearch = require('./japansearch');
 const collab = require('./collab');
 const citations = require('./citations');
 const { fieldRow, suggestionRow, imageChoice } = require('./wikidata-ui');
@@ -33,11 +34,11 @@ async function load(t, e) {
   const wd = qid
     ? wikidata.compare(adminPool, t, qid, ours, { type: t.type, id: e.id }).then((plan) => ({ plan }), (err) => ({ error: `Wikidata ${qid} could not be read: ${err.message}` }))
     : Promise.resolve({ missing: true });
-  const [wikidataRes, types, mg, ...auth] = await Promise.all([wd, qid ? wikidata.typesOf(qid).catch(() => null) : null,
-    ['artist', 'person'].includes(t.type) ? metagrid.find(adminPool, t, e) : null,
+  const [wikidataRes, types, mg, jp, ...auth] = await Promise.all([wd, qid ? wikidata.typesOf(qid).catch(() => null) : null,
+    ['artist', 'person'].includes(t.type) ? metagrid.find(adminPool, t, e) : null, japansearch.find(t, ours),
     ...AUTH.map((c) => authority.plan(t, e, c))]);
   const sources = { wikidata: wikidataRes, ...Object.fromEntries(AUTH.map((c, i) => [c, auth[i]])) };
-  return { ours, qid, sources, merged: mergedRows(t, ours, sources), types, metagrid: mg };
+  return { ours, qid, sources, merged: mergedRows(t, ours, sources), types, metagrid: mg, japan: jp };
 }
 
 // The date fields offered by two or more sources → [{ key, ours, groups: [{ range, label, value, offers: [{src, status}] }] }]
@@ -119,7 +120,7 @@ function page(t, e, data) {
     <h1>Enrich ${e.name}</h1>
     ${types && !types.includes(t.type) ? typeWarning(t, types, qid, e) : ''}
     <ul class="enrich-sources">${['wikidata', ...AUTH].map((c) => sourceLine(t, e, c, sources[c]))}</ul>
-    ${!wd && !auth.length && !(data.metagrid && (data.metagrid.exact || data.metagrid.candidates.length))
+    ${!wd && !auth.length && !data.japan && !(data.metagrid && (data.metagrid.exact || data.metagrid.candidates.length))
       ? html`<p class="flash warn">No source to compare with yet — link the entry on Wikidata or add a GND / SIKART number first.</p>` : html`
     <p class="muted small">One review for every source. Taken values are cited with their source — a value several sources agree on, with each of
       them. Your own values are never replaced unless you choose so; field values go into the working copy — check them and Publish.
@@ -153,6 +154,7 @@ function page(t, e, data) {
               : html`<label class="choice"><input type="checkbox" name="idf.${x.code}" value="take"${x.status === 'new' ? ' checked' : ''}> ${x.status === 'new' ? 'add' : 'replace yours'}</label>`}</td></tr>`)}</tbody></table></div>` : ''}
         ${auth.map((code) => (authIds(code).ids.length ? html`<h3>Known to ${NAMES[code]}</h3>${authority.idsTable(authIds(code), { prefix: `${code}:` })}` : ''))}` : ''}
       ${metagrid.section(data.metagrid)}
+      ${japansearch.section(data.japan)}
       <div class="actions sticky-actions"><button>Apply selected</button><a class="button secondary" href="/${t.folder}/${e.slug}">Cancel</a></div>
     </form>`}`;
 }
@@ -192,6 +194,9 @@ async function apply(t, e, data, body, user) {
   const form = {};
   for (const code of [...AUTH].reverse()) if (results[code] && results[code].form) Object.assign(form, results[code].form);
   if (results.wikidata) Object.assign(form, wikidata.withProvenance(results.wikidata.form, ours, qid));
+  // the reading from Japan Search, on top of the names as they are now (Wikidata may have added some)
+  const reading = japansearch.apply(data.japan, body, form['f.names'] ?? ours['f.names']);
+  if (reading !== null) form['f.names'] = reading;
   // each citation waits for the value that actually went into the working copy
   const settled = (cites) => cites.map((c) => ({ ...c, form: Object.fromEntries(Object.keys(c.form).map((k) => [k, form[k] ?? c.form[k]])) }));
   if (Object.keys(form).length) {

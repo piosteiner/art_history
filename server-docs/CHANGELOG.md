@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Admin: image search in Rijksmuseum, Europeana, Smithsonian, Japan Search; Japan Search on the Enrich page
+- **What:** `imagesearch.js`: four more sources, each only with reusable rights — Rijksmuseum (search API → Linked Art
+  object → visual item → digital object, only "downloadbaar", IIIF resized), Europeana (`reusability=open`: CC0, PDM,
+  CC BY, CC BY-SA), Smithsonian Open Access (CC0 media), Japan Search (PDM, CC0, CC BY, CC BY-SA). Europeana and the
+  Smithsonian take `EUROPEANA_KEY` / `SMITHSONIAN_KEY` from `~/.config/arthistory/backend.env` (free; demo keys until
+  then — placeholders in `backend/.env.example`). `japansearch.js`: on the Enrich page of an artwork with a Japanese
+  title, the impressions in Japanese collections (holder, rights, link — never taken as ours) and the reading offered
+  as furigana word by word.
+- **Why:** owner: more art databases.
+- **Revert:** revert the commit.
+- **Tested:** live (Nachtwacht in the Rijksmuseum, Hodler in Europeana, Hokusai in the Smithsonian and Japan Search; the
+  reading of 名所江戸百景 亀戸梅屋舗); e2e `imagesearch.spec` (only free records of each), `japansearch.spec`.
+
 ### Admin: new bibliography entries from an ISBN or DOI
 - **What:** `src/admin/booklookup.js` + `GET /bibliography/new/lookup?id=…` (box on the new-source form): an ISBN →
   Open Library (`/api/books?jscmd=data`), a DOI → Crossref (`/works/<doi>`): kind, title, subtitle, authors/editors as

@@ -176,6 +176,39 @@ function handle(req, res) {
     return json({ message: { type: 'journal-article', title: ['The Sarcophagi of Ravenna'], author: [{ given: 'Marion', family: 'Lawrence' }],
       'container-title': ['The Art Bulletin'], volume: '27', issue: '2', page: '123-140', issued: { 'date-parts': [[1945, 6]] }, publisher: 'JSTOR' } });
   }
+  // more image sources (src/admin/imagesearch.js): each with one free record and one that isn't (left out)
+  if (url.pathname === '/rijks/search/collection') {
+    return json({ orderedItems: [{ id: 'http://127.0.0.1:3007/rijksid/1' }, { id: 'http://127.0.0.1:3007/rijksid/2' }] });
+  }
+  if (url.pathname.startsWith('/rijksid/')) {
+    const I = 'http://127.0.0.1:3007/rijksid';
+    const nodes = {
+      '/rijksid/1': { shows: [{ id: `${I}/v1` }], identified_by: [{ type: 'Identifier', content: 'RP-P-1956-741' }, { type: 'Name', content: 'Pruimenboomgaard te Kameido' }] },
+      '/rijksid/v1': { digitally_shown_by: [{ id: `${I}/d1` }] },
+      '/rijksid/d1': { referred_to_by: [{ content: 'downloadbaar' }], access_point: [{ id: 'https://iiif.micr.io/TEST/full/max/0/default.jpg' }] },
+      '/rijksid/2': { shows: [{ id: `${I}/v2` }], identified_by: [{ type: 'Name', content: 'Not downloadable' }] },
+      '/rijksid/v2': { digitally_shown_by: [{ id: `${I}/d2` }] },
+      '/rijksid/d2': { referred_to_by: [{ content: 'zichtbaar' }], access_point: [{ id: 'https://iiif.micr.io/NOPE/full/max/0/default.jpg' }] },
+    };
+    return nodes[url.pathname] ? json(nodes[url.pathname]) : (res.writeHead(404), res.end('{}'));
+  }
+  if (url.pathname === '/europeana/record/v2/search.json') {
+    return json({ items: [
+      { title: ['Kameido plum garden'], rights: ['http://creativecommons.org/licenses/by-sa/4.0/'], edmIsShownBy: ['https://europeana.example/full.jpg'],
+        edmPreview: ['https://api.europeana.eu/thumbnail/test.jpg'], edmIsShownAt: ['https://museum.example/object/1'], dataProvider: ['Museum für Asiatische Kunst'] },
+      { title: ['In copyright'], rights: ['http://rightsstatements.org/vocab/InC/1.0/'], edmIsShownBy: ['https://europeana.example/nope.jpg'] }] });
+  }
+  if (url.pathname === '/si/openaccess/api/v1.0/search') {
+    const row = (title, access) => ({ title, content: { descriptiveNonRepeating: { record_link: 'https://collections.si.edu/1', data_source: 'Freer Gallery of Art',
+      online_media: { media: [{ type: 'Images', content: `https://ids.si.edu/${title.length}.jpg`, thumbnail: `https://ids.si.edu/${title.length}-t.jpg`, usage: { access } }] } } } });
+    return json({ response: { rows: [row('Plum Estate, Kameido', 'CC0'), row('Restricted print', 'usage conditions apply')] } });
+  }
+  if (url.pathname === '/jps/api/item/search/jps-cross') {
+    const item = (id, rights) => ({ id, common: { title: '名所江戸百景 亀戸梅屋舗', titleYomi: 'めいしょえどひゃっけい かめいどうめやしき', contentsRightsType: rights,
+      contentsUrl: [`https://colbase.example/${id}.jpg`], thumbnailUrl: [`https://colbase.example/${id}-t.jpg`], linkUrl: `https://colbase.example/items/${id}`,
+      provider: 'Tokyo National Museum', contributor: ['歌川広重'] } });
+    return json({ hit: 2, list: [item('tnm-1', 'pdm'), item('tnm-2', 'ccbyncsa')] });
+  }
   // Nominatim reverse (placefinder.cityAt): like Manhattan for the Guggenheim, the object at city zoom is a district
   // (Yukinoshita) and only the address names the city (Kamakura); far north: nothing there
   if (url.pathname === '/reverse') {

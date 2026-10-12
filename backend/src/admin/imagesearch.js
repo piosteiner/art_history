@@ -6,14 +6,25 @@
 //   met        Metropolitan Museum: search → objects; only isPublicDomain (CC0) with a primary image
 //   aic        Art Institute of Chicago: search with is_public_domain; images through its IIIF server
 //   cleveland  Cleveland Museum of Art: open-access API with cc0 and has_image
+//   rijks      Rijksmuseum: search API → Linked Art object → visual item → digital object (IIIF), only "downloadbaar"
+//   europeana  Europeana (museums and archives across Europe): reusability=open (CC0, PDM, CC BY, CC BY-SA)
+//   smithsonian Smithsonian Open Access: CC0 images only
+//   japan      Japan Search (national portal: ColBase, Ritsumeikan ARC …): public domain, CC0, CC BY, CC BY-SA only
 //
-// Base URLs are configurable (COMMONS_BASE, MET_BASE, AIC_BASE, CLEVELAND_BASE) so the end-to-end tests can serve
-// fixtures. Why not the museum websites' images directly: in Switzerland even simple photos are protected (50 years),
+// Europeana and the Smithsonian want an API key (free): EUROPEANA_KEY, SMITHSONIAN_KEY in the server's env file —
+// without one their demo keys are used (rate-limited, meant for trying out).
+// Base URLs are configurable (COMMONS_BASE, MET_BASE, AIC_BASE, CLEVELAND_BASE, RIJKS_BASE, EUROPEANA_BASE,
+// SMITHSONIAN_BASE, JAPANSEARCH_BASE) so the end-to-end tests can serve fixtures. Why not the museum websites' images directly: in Switzerland even simple photos are protected (50 years),
 // so only explicitly released photos (CC0 / public domain / free licence) are offered.
 const COMMONS = process.env.COMMONS_BASE || 'https://commons.wikimedia.org';
 const MET = process.env.MET_BASE || 'https://collectionapi.metmuseum.org';
 const AIC = process.env.AIC_BASE || 'https://api.artic.edu';
 const CLEVELAND = process.env.CLEVELAND_BASE || 'https://openaccess-api.clevelandart.org';
+const RIJKS = process.env.RIJKS_BASE || 'https://data.rijksmuseum.nl';
+const RIJKS_ID = process.env.RIJKS_ID_BASE || 'https://id.rijksmuseum.nl';
+const EUROPEANA = process.env.EUROPEANA_BASE || 'https://api.europeana.eu';
+const SMITHSONIAN = process.env.SMITHSONIAN_BASE || 'https://api.si.edu';
+const JAPANSEARCH = process.env.JAPANSEARCH_BASE || 'https://jpsearch.go.jp';
 const UA = 'arthistory-admin/1.0 (https://arthistory.piogino.ch)';
 const LIMIT = 16;
 
@@ -22,6 +33,10 @@ const SOURCES = {
   met: { name: 'Metropolitan Museum', search: met },
   aic: { name: 'Art Institute of Chicago', search: aic },
   cleveland: { name: 'Cleveland Museum of Art', search: cleveland },
+  rijks: { name: 'Rijksmuseum', search: rijks },
+  europeana: { name: 'Europeana', search: europeana },
+  smithsonian: { name: 'Smithsonian', search: smithsonian },
+  japan: { name: 'Japan Search', search: japan },
 };
 
 async function getJson(url, headers = {}) {
@@ -79,6 +94,78 @@ async function cleveland(q) {
     url: a.images.web.url, thumb: a.images.web.url, source_url: a.url, license: 'Public domain (CC0)',
     credit: 'Cleveland Museum of Art', title: a.title,
     by: [a.creators && a.creators[0] && a.creators[0].description, a.creation_date].filter(Boolean).join(', ') || null }));
+}
+
+// Rijksmuseum: the search gives object ids; each object → its visual item → its digital object (three requests each,
+// so only the first eight). The IIIF address is resized for the page (1200 px) and the thumbnail (400 px).
+async function rijks(q) {
+  const ld = (id) => getJson(id, { Accept: 'application/ld+json' });
+  let found = await getJson(`${RIJKS}/search/collection?${new URLSearchParams({ title: q, imageAvailable: 'true' })}`, { Accept: 'application/ld+json' });
+  if (!(found.orderedItems || []).length) found = await getJson(`${RIJKS}/search/collection?${new URLSearchParams({ creator: q, imageAvailable: 'true' })}`, { Accept: 'application/ld+json' });
+  const ids = (found.orderedItems || []).map((x) => x.id).filter((id) => String(id).startsWith(`${RIJKS_ID}/`)).slice(0, 8);
+  const one = async (id) => {
+    const o = await ld(id);
+    const visual = ((o.shows || [])[0] || {}).id;
+    if (!visual || !visual.startsWith(`${RIJKS_ID}/`)) return null;
+    const digital = (((await ld(visual)).digitally_shown_by || [])[0] || {}).id;
+    if (!digital || !digital.startsWith(`${RIJKS_ID}/`)) return null;
+    const d = await ld(digital);
+    const free = (d.referred_to_by || []).some((x) => x.content === 'downloadbaar');
+    const iiif = ((d.access_point || [])[0] || {}).id;
+    if (!free || !iiif) return null;
+    const names = (o.identified_by || []).filter((x) => x.type === 'Name');
+    const number = ((o.identified_by || []).find((x) => x.type === 'Identifier') || {}).content;
+    const title = (names.find((x) => (x.language || []).some((l) => /english|300388277/i.test(`${l._label || ''} ${l.id || ''}`))) || names[1] || names[0] || {}).content;
+    return { url: iiif.replace('/full/max/', '/full/1200,/'), thumb: iiif.replace('/full/max/', '/full/400,/'),
+      source_url: number ? `https://www.rijksmuseum.nl/en/collection/${number}` : id, license: 'Public domain (Rijksmuseum)', credit: 'Rijksmuseum, Amsterdam',
+      title: title || number || '', by: null };
+  };
+  return (await Promise.all(ids.map((id) => one(id).catch(() => null)))).filter(Boolean);
+}
+
+// Europeana: only reusable rights (reusability=open), the full image (edmIsShownBy) or else the preview
+const RIGHTS = [[/publicdomain\/mark/, 'Public domain (PDM)'], [/publicdomain\/zero/, 'CC0'], [/licenses\/by-sa\/([\d.]+)/, 'CC BY-SA $1'], [/licenses\/by\/([\d.]+)/, 'CC BY $1']];
+const rightsLabel = (uri) => { for (const [re, label] of RIGHTS) { const m = re.exec(uri || ''); if (m) return label.replace('$1', m[1] || ''); } return null; };
+async function europeana(q) {
+  const data = await getJson(`${EUROPEANA}/record/v2/search.json?${new URLSearchParams({ wskey: process.env.EUROPEANA_KEY || 'api2demo', query: q,
+    reusability: 'open', media: 'true', qf: 'TYPE:IMAGE', rows: String(LIMIT), profile: 'rich' })}`);
+  return (data.items || []).flatMap((it) => {
+    const license = rightsLabel((it.rights || [])[0]);
+    const url = (it.edmIsShownBy || [])[0] || (it.edmPreview || [])[0];
+    if (!license || !url) return [];
+    return [{ url, thumb: (it.edmPreview || [])[0] || url, source_url: (it.edmIsShownAt || [])[0] || it.guid, license,
+      credit: (it.dataProvider || [])[0] || 'Europeana', title: (it.title || [])[0] || '', by: [(it.dcCreator || [])[0], (it.year || [])[0]].filter(Boolean).join(', ') || null }];
+  });
+}
+
+// Smithsonian Open Access: CC0 media of the objects found
+async function smithsonian(q) {
+  const data = await getJson(`${SMITHSONIAN}/openaccess/api/v1.0/search?${new URLSearchParams({ q: `${q} AND online_media_type:"Images"`, rows: String(LIMIT),
+    api_key: process.env.SMITHSONIAN_KEY || 'DEMO_KEY' })}`);
+  return (((data.response || {}).rows) || []).flatMap((r) => {
+    const c = r.content || {};
+    const dnr = c.descriptiveNonRepeating || {};
+    const media = (((dnr.online_media || {}).media) || []).find((m) => m.type === 'Images' && (m.usage || {}).access === 'CC0');
+    if (!media || !media.content) return [];
+    const name = ((c.freetext || {}).name || [])[0];
+    return [{ url: media.content, thumb: media.thumbnail || media.content, source_url: dnr.record_link || dnr.guid, license: 'Public domain (CC0)',
+      credit: dnr.data_source || 'Smithsonian Institution', title: r.title || (dnr.title || {}).content || '', by: name ? name.content : null }];
+  });
+}
+
+// Japan Search: the national portal; only records whose content is public domain or under CC0 / CC BY / CC BY-SA
+const JP_RIGHTS = { pdm: 'Public domain (PDM)', cc0: 'CC0', ccby: 'CC BY', ccbysa: 'CC BY-SA' };
+async function japan(q) {
+  const data = await getJson(`${JAPANSEARCH}/api/item/search/jps-cross?${new URLSearchParams({ keyword: q, size: String(LIMIT * 2), 'f-contents': 'thumb' })}`);
+  return (data.list || []).flatMap((it) => {
+    const c = it.common || {};
+    const license = JP_RIGHTS[c.contentsRightsType];
+    const url = (c.contentsUrl || [])[0] || (c.thumbnailUrl || [])[0];
+    if (!license || !url) return [];
+    return [{ url, thumb: (c.thumbnailUrl || [])[0] || url, source_url: c.linkUrl || `https://jpsearch.go.jp/item/${it.id}`, license,
+      credit: require('./japansearch').holder(c.provider) || 'Japan Search',
+      title: [c.title, c.titleYomi && `(${c.titleYomi})`].filter(Boolean).join(' '), by: [(c.contributor || [])[0], (c.temporal || [])[0]].filter(Boolean).join(', ') || null }];
+  }).slice(0, LIMIT);
 }
 
 // https only (images must be https, migration 017); never throws — an unreachable source is an error message

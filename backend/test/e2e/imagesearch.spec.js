@@ -32,3 +32,21 @@ test('find images: four sources, only free ones, one click adds with licence and
   expect(api.images[1].source_url).toBe('https://www.metmuseum.org/art/collection/search/1');
   sql("DELETE FROM images WHERE artwork_id = entity_id('artwork', 'plum-park-in-kameido')");
 });
+
+test('find images: Rijksmuseum, Europeana, Smithsonian, Japan Search — only free records', async ({ userA }) => {
+  await userA.goto('/artworks/plum-park-in-kameido/images/find?q=Kameido&source=rijks');
+  const items = userA.locator('.find-item');
+  await expect(items).toHaveCount(1);                                         // the one not "downloadbaar" left out
+  await expect(items.locator('img')).toHaveAttribute('src', 'https://iiif.micr.io/TEST/full/400,/0/default.jpg');
+  await expect(items).toContainText('Rijksmuseum, Amsterdam');
+  await userA.click('.source-tabs a:has-text("Europeana")');
+  await expect(items).toHaveCount(1);
+  await expect(items).toContainText('Museum für Asiatische Kunst · CC BY-SA 4.0');
+  await userA.click('.source-tabs a:has-text("Smithsonian")');
+  await expect(items).toHaveCount(1);
+  await expect(items).toContainText('Freer Gallery of Art · Public domain (CC0)');
+  await userA.click('.source-tabs a:has-text("Japan Search")');
+  await expect(items).toHaveCount(1);                                         // the CC BY-NC-SA one left out
+  await expect(items).toContainText('Tokyo National Museum · Public domain (PDM)');
+  await expect(items).toContainText('名所江戸百景 亀戸梅屋舗');
+});
