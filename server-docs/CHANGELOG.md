@@ -2,6 +2,20 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-12
+
+### Admin: GND/SIKART comparison — every item a choice, ticked by default; missing places created from OpenStreetMap
+- **What:** on "Compare with the GND/SIKART" every row has its own tick: agreeing values (`cite.<field>`, ticked: cited),
+  relationships (ticked), reference records (ticked when new). A place the record names that we don't have — by GND
+  number or name — is looked up in OpenStreetMap (`placefinder.settlementByName`, Nominatim, settlements): ours under
+  another name ("Genf" → our Geneva, by Wikidata id or name within 50 km) or offered as a new place, created on Apply like
+  the city found on save (`createPlaceFrom` in index.js: names, Wikidata point, parent region). With the GND, a created
+  place gets its GND number. No migration.
+- **Why:** owner: Hodler's places of birth and death (Bern, Genf) could not be taken, and items could not be chosen one by one.
+- **Revert:** revert the commit (places created meanwhile stay — ordinary entries).
+- **Tested:** e2e (`sikart.spec`: Genf → new Geneva with Q71, an agreeing value unticked → not cited; `authorities.spec`:
+  defaults ticked, Giverny not found); live Nominatim for Genf, Giverny, Gurzelen.
+
 ## 2026-10-09
 
 ### Admin: SIKART (SIK-ISEA) — portal links, find by name, compare (migration 057)

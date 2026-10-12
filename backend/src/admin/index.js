@@ -814,8 +814,23 @@ const COMPARE = {
   gnd: { name: 'the GND', short: 'GND', source: 'gnd', types: ['artist', 'person', 'institution'],
     plan: (t, e, id) => gnd.compare(adminPool, t, e, e.doc, id), opts: { source: 'gnd', byNameGets: 'gnd', ensure: gnd.ensureSource } },
   sikart: { name: 'SIKART', short: 'SIKART', source: 'sikart', types: ['artist', 'person'],
-    plan: (t, e, id) => sikart.compare(adminPool, t, e, e.doc, id, gnd.ourEntry), opts: { source: 'sikart', byNameGets: null, ensure: sikart.ensureSource } },
+    plan: (t, e, id) => sikart.compare(adminPool, t, e, e.doc, id, gnd.placeTarget), opts: { source: 'sikart', byNameGets: null, ensure: sikart.ensureSource } },
 };
+// A place found in OpenStreetMap (placefinder.settlementByName) → created like the city found on save: the place
+// finder's draft (names, Wikidata point, parent region — from Natural Earth if we don't have it) → its slug
+async function createPlaceFrom(db, c, user) {
+  const placeT = BY_TYPE.place;
+  const draft = await placefinder.draftFor(db, c, wikidata.coordsOf, wikidata.slugify);
+  const { doc, errors } = formToDoc(draft.form, placeT.fields);
+  if (errors.length) throw new UserError(`The place ${c.name}: ${errors.join('; ')}`);
+  const parent = await autocreate.resolveRefs(db, placeT, doc, {});
+  if (parent.errors.length) delete doc.parent;
+  else {
+    const slugs = await autocreate.create(db, parent.creates);
+    if (slugs.has('parent')) doc.parent = slugs.get('parent');
+  }
+  return wikidata.createEntry(db, 'place', doc, null, user.id, doc.wikidata_id || null, false);
+}
 async function comparePlan(t, e, code) {
   const id = (await identifiers.list(adminPool, t.type, e.id)).find((x) => x.code === code);
   if (!id) return { missing: true };
@@ -827,21 +842,25 @@ function comparePage(t, e, plan, code) {
   return html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>
     <h1>Compare with ${c.name}</h1>
     <p><a href="${plan.url}" target="_blank" rel="noopener">${c.short} ${plan.gnd} ↗</a> — <b>${plan.info.name}</b>${plan.info.occupations.length ? html` · <span class="muted">${plan.info.occupations.join(', ')}</span>` : ''}</p>
-    <p class="muted small">Taken values are cited with the source “${c.short}” and this record; values that agree are cited as they are.
-      Field values go into the working copy — check them and Publish.</p>
+    <p class="muted small">Everything is ticked — untick what you don't want. Taken values are cited with the source “${c.short}” and this record;
+      values that agree are cited as they are. Field values go into the working copy — check them and Publish. Places we don't have are
+      looked up in OpenStreetMap and created with their names, position and region.</p>
     <form method="post" action="/${t.folder}/${e.slug}/${code}" class="wd-form">
       <h2>Fields</h2>
       ${plan.rows.length ? html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Field</th><th>Yours</th><th>${c.short}</th><th>Take?</th></tr></thead><tbody>
         ${plan.rows.map((r) => html`<tr><td>${fieldLabel(t.type, r.key)}</td><td>${r.ours || html`<span class="muted">(empty)</span>`}</td>
-          <td>${r.label || r.theirs}${r.key !== 'place' ? html` <span class="muted small">(${r.theirs})</span>` : ''}</td>
-          <td>${r.status === 'same' ? html`<span class="muted">the same — cited</span>` : r.status === 'missing' ? html`<span class="muted">not among our places</span>`
+          <td>${r.label || r.theirs}${r.key !== 'place' ? html` <span class="muted small">(${r.theirs})</span>` : r.create ? html` <span class="muted small">— new place: ${r.create.label}</span>` : ''}</td>
+          <td>${r.status === 'same' ? html`<label class="choice"><input type="checkbox" name="cite.${r.key}" value="cite" checked> the same — cite it</label>`
+            : r.status === 'missing' ? html`<span class="muted">not among our places</span>`
             : html`${choice(`take.${r.key}`, 'take', `take ${c.short}’s`, r.status === 'new')} ${choice(`take.${r.key}`, 'keep', r.status === 'new' ? 'leave empty' : 'keep mine', r.status !== 'new')}`}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing to compare.</p>`}
       <h2>Relationships suggested by ${c.short}</h2>
       ${plan.rels.length ? html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Relationship</th><th>${c.short}</th><th>Ours</th><th>Add?</th></tr></thead><tbody>
         ${plan.rels.map((x) => html`<tr><td>${x.label}</td><td>${x.ref.label}</td>
-          <td>${x.target ? html`<a href="/${BY_TYPE[x.target.type].folder}/${x.target.slug}">${x.target.name}</a>${x.target.by_id ? '' : html` <span class="muted small">(same name)</span>`}` : html`<span class="muted">not in our database</span>`}</td>
-          <td>${x.already ? html`<span class="muted">have it</span>` : x.target ? html`<label class="choice"><input type="checkbox" name="rel.${x.i}" value="add"> add</label>` : ''}</td></tr>`)}
+          <td>${x.target ? html`<a href="/${BY_TYPE[x.target.type].folder}/${x.target.slug}">${x.target.name}</a>${x.target.by_id ? '' : html` <span class="muted small">(${x.target.name === x.ref.label ? 'same name' : 'found by OpenStreetMap'})</span>`}`
+            : x.create ? html`<span class="muted">not in our database —</span> new place <b>${x.create.name}</b> <span class="muted small">(${x.create.label}, OpenStreetMap)</span>`
+            : html`<span class="muted">not in our database, not found in OpenStreetMap</span>`}</td>
+          <td>${x.already ? html`<span class="muted">have it</span>` : x.target || x.create ? html`<label class="choice"><input type="checkbox" name="rel.${x.i}" value="add" checked> ${x.create ? 'create the place and add' : 'add'}</label>` : ''}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">None.</p>`}
       ${plan.ids && plan.ids.length ? html`<h2>Reference records ${c.short} knows</h2><div class="table-wrap"><table class="diff wd-table wd-ids"><tbody>
         ${plan.ids.map((x) => html`<tr><td>${x.name}</td><td>${x.ours || html`<span class="muted">(none)</span>`}</td><td>${x.value}</td>
@@ -890,16 +909,16 @@ for (const code of Object.keys(COMPARE)) {
     if (missing || error) return send(req, res, { title: COMPARE[code].short, status: 422, flash: { kind: 'error', text: error || 'No number.' }, body: html`<p><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>` });
     const { source } = COMPARE[code];
     const result = await withTx(req.user, async (db) => {
-      const r = await gnd.apply(db, t, e, plan, req.body, citations, COMPARE[code].opts);
+      const r = await gnd.apply(db, t, e, plan, req.body, citations, { ...COMPARE[code].opts, createPlace: (d, c) => createPlaceFrom(d, c, req.user) });
       if (r.agreed.length) await citations.citeAgreeingSource(db, t.type, e.id, source, plan.url, r.agreed, req.user.id);
       return r;
     }, { source });
     if (Object.keys(result.form).length) {
       await collab.applyForm(t, e.id, result.form, req.user.username);
       await withTx(req.user, (db) => citations.pendingFromSource(db, t.type, e.id, source, plan.url, result.cites, req.user.id), { source });
-      return res.redirect(303, `/${t.folder}/${e.slug}/edit?done=gnd&rels=${result.relationships}`);
+      return res.redirect(303, `/${t.folder}/${e.slug}/edit?done=gnd&rels=${result.relationships}&created=${result.created.length}`);
     }
-    res.redirect(303, `/${t.folder}/${e.slug}?done=gnd-applied&rels=${result.relationships}`);
+    res.redirect(303, `/${t.folder}/${e.slug}?done=gnd-applied&rels=${result.relationships}&created=${result.created.length}`);
   });
 }
 

@@ -65,7 +65,7 @@ async function search(q) {
 }
 
 // The comparison, in the shape of the GND one: { url, rows, rels, ids, info }
-async function compare(db, t, entity, doc, id, ourEntry) {
+async function compare(db, t, entity, doc, id, placeTarget) {
   const r = await retrieve(id);
   const rows = [];
   for (const key of ['birth', 'death']) {
@@ -82,9 +82,10 @@ async function compare(db, t, entity, doc, id, ourEntry) {
   for (const [key, type, label] of [['birth', 'born_in', 'born in'], ['death', 'died_in', 'died in']]) {
     const place = r.life[key] && r.life[key].place;
     if (!place) continue;
-    const target = await ourEntry(db, ['place'], { label: place.replace(/\s*\([A-Z]{2}\)$/, '') });
+    // "Gurzelen (BE)": the canton is SIKART's addition, not part of the name
+    const { target, create } = await placeTarget(db, { label: place.replace(/\s*\([A-Z]{2}\)$/, '') });
     const already = !!target && existing.some((x) => x.relationship_type === type && x.other === `place/${target.slug}`);
-    rels.push({ i: rels.length, type, label, ref: { label: place }, target, already });
+    rels.push({ i: rels.length, type, label, ref: { label: place }, target, create, already });
   }
   // its numbers elsewhere: GND, VIAF — new reference records for this entry
   const have = (await db.query('SELECT authority, value FROM entry_identifiers WHERE entity_type = $1 AND entity_id = $2', [t.type, entity.id])).rows;

@@ -61,12 +61,12 @@ test('Wikidata brings the numbers; the GND comparison: agreeing values cited, ot
   await userA.goto('/artists/claude-monet-gnd');
   await Promise.all([userA.waitForNavigation(), userA.click('a:has-text("Compare with the GND…")')]);
   const row = (text) => userA.locator('.wd-table tbody tr', { hasText: text }).first();
-  await expect(row('Birth')).toContainText('the same — cited');
+  await expect(row('Birth').locator('input[name="cite.birth"]')).toBeChecked();   // the same: cited unless unticked
   await expect(row('Death').locator('input[value=take]')).toBeChecked();
   await expect(row('born in')).toContainText('Paris');
-  await expect(row('died in')).toContainText('not in our database');                // Giverny: not one of ours
-  await row('born in').locator('input[value=add]').check();
-  await row('collaborated with').locator('input[value=add]').check();
+  await expect(row('died in')).toContainText('not found in OpenStreetMap');        // Giverny: not one of ours, nor found
+  await expect(row('born in').locator('input[value=add]')).toBeChecked();            // ticked by default
+  await expect(row('collaborated with').locator('input[value=add]')).toBeChecked();
   await apply(userA);
   await expect(userA).toHaveURL(/\/artists\/claude-monet-gnd\/edit\?done=gnd/);
   await expect(userA.locator('#f-death')).toHaveValue('1926-12-05');

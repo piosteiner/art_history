@@ -137,13 +137,29 @@ async function cityAt(db, [lon, lat], coordsOf, slugify) {
   if (inside) return inside;
   const c = await cityCandidate(lon, lat);
   if (!c) return null;
-  const ours = (await db.query(`
-    SELECT p.slug, p.name FROM places p JOIN place_geo g ON g.id = p.id
-    WHERE p.wikidata_id = $3
-       OR (p.kind = 'settlement' AND lower(f_unaccent(p.name)) = lower(f_unaccent($4)) AND ST_DWithin(g.marker, ${point}, 50000))
-    ORDER BY (p.wikidata_id = $3) DESC NULLS LAST LIMIT 1`, [lon, lat, c.wikidata, c.name])).rows[0];
+  const ours = await ourSettlement(db, c);
   if (ours) return ours;
   return { draft: await draftFor(db, { ...c, kind: 'settlement' }, coordsOf, slugify), name: c.name };
 }
 
-module.exports = { nominatim, candidates, draftFor, cityAt };
+// a candidate among our places: the same Wikidata item, or a settlement of that name within 50 km
+async function ourSettlement(db, c) {
+  return (await db.query(`
+    SELECT p.slug, p.name FROM places p JOIN place_geo g ON g.id = p.id
+    WHERE p.wikidata_id = $3
+       OR (p.kind = 'settlement' AND lower(f_unaccent(p.name)) = lower(f_unaccent($4))
+           AND ST_DWithin(g.marker, ST_SetSRID(ST_MakePoint($1, $2), 4326)::geography, 50000))
+    ORDER BY (p.wikidata_id = $3) DESC NULLS LAST LIMIT 1`, [c.lon, c.lat, c.wikidata, c.name])).rows[0] || null;
+}
+
+// A town named by an authority file ("Genf", "Giverny") that we don't have under that name: OpenStreetMap finds it —
+// → { ours: {slug, name} } (we have it under another name: Geneva) | { candidate } (a new place to create) | null
+async function settlementByName(db, name) {
+  const hits = await nominatim({ q: name, featureType: 'settlement', limit: '1', addressdetails: '1', extratags: '1', namedetails: '1' });
+  if (!hits.length) return null;
+  const c = { ...toCandidate(hits[0]), kind: 'settlement' };
+  const ours = await ourSettlement(db, c);
+  return ours ? { ours } : { candidate: c };
+}
+
+module.exports = { nominatim, candidates, draftFor, cityAt, settlementByName };

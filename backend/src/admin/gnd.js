@@ -7,6 +7,7 @@
 // Base URL configurable (LOBID_BASE) so the end-to-end tests can serve fixtures.
 // ---------------------------------------------------------------------------------------------------------------
 const { parseFuzzyDate } = require('../fuzzy-date');
+const placefinder = require('./placefinder');
 
 const LOBID = process.env.LOBID_BASE || 'https://lobid.org';
 const recordUrl = (gnd) => `https://d-nb.info/gnd/${gnd}`;
@@ -40,6 +41,16 @@ async function ourEntry(db, types, ref) {
     ORDER BY e.name LIMIT 1`, [names, types])).rows[0] || null;
 }
 
+// A place named by an authority file: ours (by GND number or name) · else OpenStreetMap: ours under another name
+// ("Genf" → Geneva) or a new place to create → { target } | { create: candidate } | {}
+async function placeTarget(db, ref) {
+  const target = await ourEntry(db, ['place'], ref);
+  if (target) return { target };
+  const found = await placefinder.settlementByName(db, ref.label).catch(() => null);
+  if (!found) return {};
+  return found.ours ? { target: { type: 'place', ...found.ours, by_id: false } } : { create: found.candidate };
+}
+
 const FIELDS = {
   artist: [['birth', 'dateOfBirth'], ['death', 'dateOfDeath']],
   person: [['birth', 'dateOfBirth'], ['death', 'dateOfDeath']],
@@ -66,10 +77,10 @@ async function compare(db, t, entity, doc, gnd) {
     rows.push({ key, ours, theirs: String(v), label: theirs.label, status: same ? 'same' : ours ? 'differs' : 'new' });
   }
   if (t.type === 'institution' && (r.placeOfBusiness || []).length) {
-    const target = await ourEntry(db, ['place'], r.placeOfBusiness[0]);
+    const { target, create } = await placeTarget(db, r.placeOfBusiness[0]);
     const ours = doc.place || null;
-    rows.push({ key: 'place', ours, theirs: r.placeOfBusiness[0].label, target, ref: r.placeOfBusiness[0],
-      status: target && ours === target.slug ? 'same' : !target ? 'missing' : ours ? 'differs' : 'new' });
+    rows.push({ key: 'place', ours, theirs: r.placeOfBusiness[0].label, target, create, ref: r.placeOfBusiness[0],
+      status: target && ours === target.slug ? 'same' : !target && !create ? 'missing' : ours ? 'differs' : 'new' });
   }
   const { rows: existing } = await db.query(`SELECT r.relationship_type, o.type::text || '/' || o.slug AS other FROM relationships r
     JOIN entity_index o ON (o.type, o.id) = (r.object_type, r.object_id) WHERE r.subject_type = $1 AND r.subject_id = $2`, [t.type, entity.id]);
@@ -77,9 +88,9 @@ async function compare(db, t, entity, doc, gnd) {
   const rels = [];
   for (const [prop, type, types] of RELS[t.type] || []) {
     for (const ref of r[prop] || []) {
-      const target = await ourEntry(db, types, ref);
+      const { target, create } = types.includes('place') ? await placeTarget(db, ref) : { target: await ourEntry(db, types, ref) };
       const already = !!target && existing.some((x) => x.relationship_type === type && x.other === `${target.type}/${target.slug}`);
-      rels.push({ i: rels.length, type, label: vocab[type] || type, ref, target, already });
+      rels.push({ i: rels.length, type, label: vocab[type] || type, ref, target, create, already });
     }
   }
   const info = { name: r.preferredName, occupations: (r.professionOrOccupation || []).map((x) => x.label),
@@ -97,35 +108,52 @@ async function ensureSource(db) {
 }
 
 // opts: source (the bibliography slug the values are cited with), byNameGets (the authority a target found by name gets
-// its number of — the GND: its own records name targets by GND number)
-async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', byNameGets = 'gnd', ensure = ensureSource } = {}) {
+// its number of — the GND: its own records name targets by GND number), createPlace(db, candidate) → slug (a place
+// found in OpenStreetMap, created when ticked)
+// choices: take.<key>=take|keep (fields), cite.<key>=cite (agreeing fields), rel.<i>=add, idf.<code>=take
+async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', byNameGets = 'gnd', ensure = ensureSource, createPlace } = {}) {
   await ensure(db);
   const form = {};
   const cites = [];
+  const created = [];
+  // a new place once, even when it is the place of birth and of death
+  const madePlaces = new Map();
+  const placeFrom = async (c, ref) => {
+    if (!madePlaces.has(c.label)) {
+      const slug = await createPlace(db, c);
+      madePlaces.set(c.label, slug);
+      created.push(c.name);
+      await giveNumber({ type: 'place', slug, by_id: false }, ref);
+    }
+    return madePlaces.get(c.label);
+  };
+  // found by its name (or new): it gets its GND number too, so the next comparison finds it exactly
+  const giveNumber = async (target, ref) => {
+    if (target.by_id || byNameGets !== 'gnd' || !ref || !ref.id) return;
+    // a savepoint: in a transaction a failed statement can't just be caught — it would abort the whole save
+    await db.query('SAVEPOINT gndid');
+    try {
+      await db.query(`INSERT INTO entry_identifiers (entity_type, entity_id, authority, value) VALUES ($1, entity_id($1, $2), 'gnd', $3)
+        ON CONFLICT DO NOTHING`, [target.type, target.slug, idOf(ref.id)]);
+      await db.query('RELEASE SAVEPOINT gndid');
+    } catch { await db.query('ROLLBACK TO SAVEPOINT gndid'); }
+  };
   for (const row of plan.rows) {
     if (row.status === 'same' || row.status === 'missing' || choices[`take.${row.key}`] !== 'take') continue;
-    if (row.key === 'place') form['f.place'] = row.target.slug;
+    if (row.key === 'place') form['f.place'] = row.target ? row.target.slug : await placeFrom(row.create, row.ref);
     else { form[`f.${row.key}`] = row.theirs; form[`f.${row.key}_label`] = ''; }
     cites.push({ field: row.key, form: { [`f.${row.key}`]: form[`f.${row.key}`] } });
   }
-  const agreed = plan.rows.filter((row) => row.status === 'same').map((row) => row.key);
+  const agreed = plan.rows.filter((row) => row.status === 'same' && choices[`cite.${row.key}`] === 'cite').map((row) => row.key);
   let relationships = 0;
   for (const s of plan.rels) {
-    if (s.already || !s.target || choices[`rel.${s.i}`] !== 'add') continue;
+    if (s.already || (!s.target && !s.create) || choices[`rel.${s.i}`] !== 'add') continue;
+    if (!s.target) s.target = { type: 'place', slug: await placeFrom(s.create, s.ref), by_id: true };
     const other = (await db.query('SELECT entity_id($1, $2) AS id', [s.target.type, s.target.slug])).rows[0].id;
     const ins = await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
       VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING RETURNING id`, [t.type, entity.id, s.type, s.target.type, other]);
     if (ins.rows.length) await citations.citeRelationshipFromSource(db, ins.rows[0].id, source, plan.url);
-    // found by its name: now it gets its GND number too, so the next comparison finds it exactly
-    if (!s.target.by_id && byNameGets === 'gnd' && s.ref.id) {
-      // a savepoint: in a transaction a failed statement can't just be caught — it would abort the whole save
-      await db.query('SAVEPOINT gndid');
-      try {
-        await db.query(`INSERT INTO entry_identifiers (entity_type, entity_id, authority, value) VALUES ($1, $2, 'gnd', $3)
-          ON CONFLICT DO NOTHING`, [s.target.type, other, idOf(s.ref.id)]);
-        await db.query('RELEASE SAVEPOINT gndid');
-      } catch { await db.query('ROLLBACK TO SAVEPOINT gndid'); }
-    }
+    await giveNumber(s.target, s.ref);
     relationships += 1;
   }
   // numbers the record knows (SIKART: its GND and VIAF numbers) — ticked ones become reference records
@@ -140,7 +168,7 @@ async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', 
       ids += 1;
     } catch { await db.query('ROLLBACK TO SAVEPOINT idf'); }
   }
-  return { form, cites, agreed, relationships, ids };
+  return { form, cites, agreed, relationships, ids, created };
 }
 
-module.exports = { fetchRecord, compare, apply, recordUrl, natural, ourEntry, ensureSource };
+module.exports = { fetchRecord, compare, apply, recordUrl, natural, ourEntry, placeTarget, ensureSource };

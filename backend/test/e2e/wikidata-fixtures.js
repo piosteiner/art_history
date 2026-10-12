@@ -132,6 +132,13 @@ function handle(req, res) {
       display_name: 'Kamakura, Kanagawa Prefecture, Japan', address: { city: 'Kamakura', 'ISO3166-2-lvl4': 'JP-14', country_code: 'jp' },
       extratags: { wikidata: 'Q200250' }, namedetails: { name: '鎌倉市', 'name:en': 'Kamakura', 'name:ja': '鎌倉市' } }]);
   }
+  // a town named by an authority file (placefinder.settlementByName): "Genf" is Geneva; Giverny isn't found
+  if (url.pathname === '/search' && p.get('featureType') === 'settlement') {
+    if (p.get('q') !== 'Genf') return json([]);
+    return json([{ lat: '46.2017', lon: '6.1469', category: 'boundary', type: 'administrative', addresstype: 'city', name: 'Genève',
+      display_name: 'Geneva, Switzerland', address: { city: 'Geneva', 'ISO3166-2-lvl4': 'CH-GE', country_code: 'ch' },
+      extratags: { wikidata: 'Q71' }, namedetails: { name: 'Genève', 'name:en': 'Geneva', 'name:de': 'Genf', 'name:fr': 'Genève' } }]);
+  }
   // Nominatim (src/admin/placefinder.js): a city and a prefecture in Japan
   if (url.pathname === '/search') {
     const kyoto = { lat: '35.0116', lon: '135.7681', category: 'boundary', type: 'administrative', addresstype: 'city', name: 'Kyoto',
