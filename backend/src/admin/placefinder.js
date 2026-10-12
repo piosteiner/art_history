@@ -7,11 +7,19 @@
 //
 // Nominatim's usage policy: at most 1 request per second, an identifying User-Agent — nominatim() keeps both and is
 // shared with the map picker's /geocode. NOMINATIM_BASE is configurable for the end-to-end tests.
+const { memo } = require('./remember');
+
 const NOMINATIM = process.env.NOMINATIM_BASE || 'https://nominatim.openstreetmap.org';
 const UA = 'arthistory-admin/1.0 (+https://arthistory.piogino.ch)';
 let last = 0;
+// the same question within 15 minutes: the remembered answer, no request (src/admin/remember.js)
+const remember = memo();
 
-async function nominatim(params, endpoint = '/search') {
+function nominatim(params, endpoint = '/search') {
+  const key = `${endpoint}?${new URLSearchParams(Object.entries(params).sort())}`;
+  return remember(key, () => nominatimFresh(params, endpoint));
+}
+async function nominatimFresh(params, endpoint) {
   const wait = last + 1100 - Date.now();
   if (wait > 0) await new Promise((r) => setTimeout(r, wait));
   last = Date.now();

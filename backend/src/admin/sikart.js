@@ -7,11 +7,15 @@
 // Base URL configurable (SIKART_BASE) so the end-to-end tests can serve fixtures.
 // ---------------------------------------------------------------------------------------------------------------
 const { parseFuzzyDate } = require('../fuzzy-date');
+const { memo } = require('./remember');
 
 const API = process.env.SIKART_BASE || 'https://api.recherche.sik-isea.ch/api/v1/graphs/sik/data';
 const recordUrl = (id) => `https://recherche.sik-isea.ch/sik:person-${id}/in/sikart`;
 
-async function get(path) {
+// remembered for 15 minutes: Apply uses the record the page showed (src/admin/remember.js)
+const remember = memo();
+const get = (path) => remember(path, () => getFresh(path));
+async function getFresh(path) {
   const res = await fetch(`${API}/${path}`, {
     headers: { Accept: 'application/ld+json, application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database; one record on request)' },
     signal: AbortSignal.timeout(15000),

@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Admin: answers of outside services remembered for 15 minutes
+- **What:** `src/admin/remember.js` (`memo()`: per process, in memory, concurrent requests share one fetch, failures not
+  kept, at most 500 entries). Used by Wikidata (replaces its own 10-minute cache), the GND (lobid), SIKART and Nominatim.
+- **Why:** owner: Apply of a comparison fetched the record again — slower, and it could differ from what was reviewed.
+  Our own values are still read fresh on Apply.
+- **Revert:** revert the commit.
+- **Tested:** unit (`test/remember.test.js`), e2e sikart/authorities/wikidata/city/places.
+
 ### Admin: index.js split into route files (no change in behaviour)
 - **What:** `src/admin/index.js` (2,100 lines, 67 routes) → `index.js` (middleware, login, mounting order, error page),
   `core.js` (shared: `send`, `withTx`, `friendly`, history tables, relationship forms, `findEntity`, `notFoundPage`,

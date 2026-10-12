@@ -8,12 +8,16 @@
 // ---------------------------------------------------------------------------------------------------------------
 const { parseFuzzyDate } = require('../fuzzy-date');
 const placefinder = require('./placefinder');
+const { memo } = require('./remember');
 
 const LOBID = process.env.LOBID_BASE || 'https://lobid.org';
 const recordUrl = (gnd) => `https://d-nb.info/gnd/${gnd}`;
 const idOf = (uri) => String(uri || '').split('/').pop();
 
-async function fetchRecord(gnd) {
+// remembered for 15 minutes: Apply uses the record the page showed (src/admin/remember.js)
+const remember = memo();
+const fetchRecord = (gnd) => remember(gnd, () => fetchFresh(gnd));
+async function fetchFresh(gnd) {
   const res = await fetch(`${LOBID}/gnd/${encodeURIComponent(gnd)}.json`, {
     headers: { Accept: 'application/json', 'User-Agent': 'arthistory.piogino.ch admin (research database)' },
     signal: AbortSignal.timeout(15000),

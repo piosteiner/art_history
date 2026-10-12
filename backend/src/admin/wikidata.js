@@ -17,23 +17,22 @@ const autocreate = require('./autocreate');
 const { fromStatement, periodOf } = require('../wikidata-time');
 const { parseFuzzyDate } = require('../fuzzy-date');
 
+const { memo } = require('./remember');
+
 const WIKIDATA = process.env.WIKIDATA_BASE || 'https://www.wikidata.org';
 const COMMONS = process.env.COMMONS_BASE || 'https://commons.wikimedia.org';
 const UA = 'arthistory-admin/1.0 (+https://arthistory.piogino.ch)';
 const LANGS = ['en', 'nl', 'fr', 'de', 'it', 'es', 'ja', 'zh', 'ko', 'ru'];  // alternative names are offered from these
 const Q = /^Q[1-9][0-9]*$/;
 
-// --- HTTP with a small cache ------------------------------------------------------------------------------------
-const cache = new Map();  // url → { at, data }
-async function getJson(url) {
-  const hit = cache.get(url);
-  if (hit && Date.now() - hit.at < 10 * 60 * 1000) return hit.data;
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) });
-  if (!res.ok) throw new Error(`${new URL(url).host} answered ${res.status}`);
-  const data = await res.json();
-  cache.set(url, { at: Date.now(), data });
-  if (cache.size > 500) cache.delete(cache.keys().next().value);
-  return data;
+// --- HTTP, remembered for 15 minutes (src/admin/remember.js) -----------------------------------------------------
+const remember = memo();
+function getJson(url) {
+  return remember(url, async () => {
+    const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' }, signal: AbortSignal.timeout(20000) });
+    if (!res.ok) throw new Error(`${new URL(url).host} answered ${res.status}`);
+    return res.json();
+  });
 }
 
 // light: only English labels/descriptions (cheap for many ids). Otherwise with all statements — big entities
