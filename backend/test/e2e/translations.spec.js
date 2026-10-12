@@ -1,7 +1,7 @@
 // Translations of titles and names: official, common or own (migration 052).
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test.afterAll(() => {
   sql(`UPDATE artworks SET title_status = NULL, names = '[]', current_institution_id = NULL WHERE slug = 'the-great-wave-off-kanagawa';

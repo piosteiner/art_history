@@ -1,7 +1,7 @@
 // Events (migration 047): a type of its own — when, where, part of; depicted, taken part in (with a role), concerned.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test.afterAll(() => {
   sql(`DELETE FROM events WHERE slug IN ('great-fire-of-meireki', 'great-fire-of-meireki-2', 'edo-fires-test');

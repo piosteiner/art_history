@@ -1,8 +1,8 @@
 // The glossary (migration 027): terms with a category and short definition, [[links]] in texts with completion in the
 // editor, "used in", the public API with definitions for tooltips, and the check for links to missing terms.
-const { test, expect, sql, liveReady, submitForm } = require('./helpers');
+const { test, expect, sql, liveReady, submitForm, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('a term, linked from a biography with [[ completion; used in; API with the definition', async ({ userA, request }) => {
   await userA.goto('/glossary/new');

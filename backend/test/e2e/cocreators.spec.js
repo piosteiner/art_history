@@ -1,9 +1,8 @@
 // Several creators (migration 028): the main creator stays the creator field, further ones are co_creator
 // relationships artwork → artist; the API lists all in `creators`, the artist page and ?creator= include co-created works.
 // Both are edges in the graph; the main creator's are derived (migration 029).
-const { test, expect, sql } = require('./helpers');
+const { test, expect, sql, API } = require('./helpers');
 
-const API = 'http://127.0.0.1:3006/v1';
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('a co-creator added on the artwork page appears in creators, on the artist and in the creator filter', async ({ userA, request }) => {

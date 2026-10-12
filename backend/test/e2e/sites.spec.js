@@ -1,9 +1,9 @@
 // Exact locations without extra places (migration 034): institutions with their own point, presence at institutions
 // ("same institution" vs "same city"), buildings as artworks that house institutions, immovable artworks on the map,
 // "depicts" pointing at an immovable artwork.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API: API_BASE } = require('./helpers');
 
-const API = (path) => `http://127.0.0.1:3006/v1${path}`;
+const API = (path) => `${API_BASE}${path}`;
 const api = async (request, path) => (await request.get(API(path), { headers: { Host: 'api.localhost' } })).json();
 const addRel = async (page, type, to, period) => {
   await page.click('summary:has-text("+ Add relationship")');

@@ -1,6 +1,6 @@
 // Wikidata: nothing without review, own values first, remembered decisions, relationship suggestions, new entries.
 // Runs against the fixture server (wikidata-fixtures.js): Q100 "Claude Monet", Q104 "Impression, Sunrise" …
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
 const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form .sticky-actions button')]);
 const row = (page, text) => page.locator('.wd-table tbody tr', { hasText: text }).first();
@@ -109,7 +109,7 @@ test('an artwork: creator and collection by name or new; then its Commons images
   await userA.check('input[name="img.1"][value=add]');
   await apply(userA);
   await expect(userA.locator('.flash.ok')).toContainText('1 image added');
-  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/impression-sunrise', { headers: { Host: 'api.localhost' } })).json();
+  const api = await (await request.get(`${API}/artworks/impression-sunrise`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.images.map((i) => i.url)).toEqual(['https://upload.wikimedia.org/test/Monet_-_Impression%2C_Sunrise.jpg',
     'https://upload.wikimedia.org/test/Impression_Sunrise_back.jpg']);  // Wikidata's order; the first is the main image
   expect(api.image_url).toBe(api.images[0].url);
@@ -172,11 +172,11 @@ test('a person: the Wikidata portrait is offered and saved with the new entry; i
   await expect(userA).toHaveURL(/\/people\/hans-wendland-test\?done=created/);
   await expect(userA.locator('.image-item')).toHaveCount(1);
   const h = { headers: { Host: 'api.localhost' } };
-  const api = await (await request.get('http://127.0.0.1:3006/v1/people/hans-wendland-test', h)).json();
+  const api = await (await request.get(`${API}/people/hans-wendland-test`, h)).json();
   expect(api.images.map((i) => i.url)).toEqual(['https://upload.wikimedia.org/test/Hans_Adolf_Wendland.jpg']);
-  const list = await (await request.get('http://127.0.0.1:3006/v1/people?q=wendland', h)).json();
+  const list = await (await request.get(`${API}/people?q=wendland`, h)).json();
   expect(list.data[0].image_url).toBe(api.image_url);
-  const prev = await (await request.get('http://127.0.0.1:3006/v1/previews?refs=person/hans-wendland-test', h)).json();
+  const prev = await (await request.get(`${API}/previews?refs=person/hans-wendland-test`, h)).json();
   expect(JSON.stringify(prev)).toContain('Hans_Adolf_Wendland.jpg');
   expect(sql("SELECT entity_type || '/' || entity_id FROM images WHERE person_id IS NOT NULL"))   // generated columns (043)
     .toBe('person/' + sql("SELECT id FROM people WHERE slug = 'hans-wendland-test'"));

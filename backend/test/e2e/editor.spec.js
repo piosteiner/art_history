@@ -1,5 +1,5 @@
 // Markdown editor (live styling, shortcuts, server preview) and the map picker (without depending on OSM).
-const { test, expect, liveReady } = require('./helpers');
+const { test, expect, liveReady, API, BASE } = require('./helpers');
 
 // 1×1 transparent PNG — stands in for OpenStreetMap tiles, so the test needs no internet and never loads OSM.
 const PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=', 'base64');
@@ -39,7 +39,7 @@ test('map picker: tiles carry our origin as Referer, click sets the location, dr
   const lonBefore = await userA.inputValue('input[name="f.location_lon"]');
   await map.click(at(60, -40));
   await expect(userA.locator('input[name="f.location_lon"]')).not.toHaveValue(lonBefore);
-  expect([...referers]).toEqual([expect.stringMatching(/^http:\/\/admin\.localhost:3006\/$/)]);
+  expect([...referers]).toEqual([`${BASE}/`]);
 
   await userA.click('.leaflet-pm-icon-polygon');
   // Below the tool's action bar (Finish / Remove last vertex / Cancel), which opens to the right of the button.
@@ -97,7 +97,7 @@ test('several images per entry: add, reorder (first = main image), edit, remove 
   await expect(userA.locator('tr', { hasText: 'Van Gogh Museum' }).locator('td.thumb img')).toHaveAttribute('src', /120px-Entrance\.jpg$/);
   await userA.goto('/artists');
   await expect(userA.locator('table.thumbs-artist .thumb-empty').first()).toBeVisible();  // artists have the column too
-  let api = await (await request.get('http://127.0.0.1:3006/v1/institutions/van-gogh-museum', { headers: { Host: 'api.localhost' } })).json();
+  let api = await (await request.get(`${API}/institutions/van-gogh-museum`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.images.map((i) => i.caption)).toEqual(['Entrance', null]);
   expect(api.images[1].license).toBe('CC BY-SA 4.0');
   expect(api.image_url).toMatch(/Entrance\.jpg$/);
@@ -114,7 +114,7 @@ test('several images per entry: add, reorder (first = main image), edit, remove 
   await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Remove this image")')]);
   await expect(userA.locator('.flash.ok')).toHaveText('Image removed.');
   await expect(userA.locator('.image-item')).toHaveCount(1);
-  api = await (await request.get('http://127.0.0.1:3006/v1/institutions/van-gogh-museum', { headers: { Host: 'api.localhost' } })).json();
+  api = await (await request.get(`${API}/institutions/van-gogh-museum`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.images).toHaveLength(1);
 
   // in the entry's history, and the removal can be reverted

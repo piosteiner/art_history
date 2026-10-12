@@ -5,18 +5,22 @@ turned into permanent tests.
 
 ```bash
 cd backend
-npm run test:e2e              # all specs (~1–2 min)
+npm run test:e2e              # all specs (~3 min, two workers)
+E2E_WORKERS=1 npm run test:e2e  # one after another (~4 min)
 npx playwright test history   # one spec file
 npx playwright show-trace test/e2e/.results/<…>/trace.zip   # what the browser saw in a failed test
 ```
 
-- **Isolated:** database `arthistory_test` (created once with `db/setup.sh arthistory_test`), reset before every run
-  (`reset.sql`) and filled from the frozen sample `fixtures/content/` (not the live `content/` snapshot); server on port 3006; two users with passwords generated per run (stored in
-  the OS temp dir, never in the repo). Dev (`arthistory_dev`, :3005) and production are never touched.
+- **Isolated:** each worker has its own shard (`env.js`): database `arthistory_test` + server :3006, `arthistory_test_1` +
+  :3008 (`arthistory_test_2` + :3009 for a third) — created once with `db/setup.sh <name>`, reset before every run
+  (`reset.sql`) and filled from the frozen sample `fixtures/content/` (not the live `content/` snapshot); two users with
+  passwords generated per run (stored in the OS temp dir, never in the repo). Dev (`arthistory_dev`, :3005) and
+  production are never touched. The fixture server (:3007) is shared. Use `API` / `BASE` from `helpers.js` — never a port.
 - **Offline:** OpenStreetMap tiles are intercepted and answered with a blank image.
 - **deploy.sh runs them** before migrating/reloading production; a failure stops the deploy
   (`deploy.sh --skip-tests` for emergencies only).
-- Specs share one database and run one after another; each uses its own entries so they don't interfere.
+- Spec files run side by side (two workers); the tests of one file in order, on one shard. Which files share a shard
+  changes from run to run — each spec still cleans up its own entries.
 
 | Spec | Covers |
 |---|---|

@@ -1,8 +1,7 @@
 // Provenance (migration 031): steps entered on the artwork page; periods computed (end recorded / implied / ongoing);
 // derived edges owned_by / kept_in / transferred_to in the graph, the map route, the owner's page and roles; checks.
-const { test, expect, sql } = require('./helpers');
+const { test, expect, sql, API } = require('./helpers');
 
-const API = 'http://127.0.0.1:3006/v1';
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 async function addStep(page, { owner, method, acquired, place, direct }) {

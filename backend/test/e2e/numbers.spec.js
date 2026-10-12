@@ -1,7 +1,7 @@
 // Further numbers of an artwork and loans (migration 048, src/admin/numbers.js).
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const addNumber = async (page, slug, { number, institution = '', source = '', label = '' }) => {
   await page.goto(`/artworks/${slug}`);
   await page.click('#numbers summary:has-text("+ Add a number")');

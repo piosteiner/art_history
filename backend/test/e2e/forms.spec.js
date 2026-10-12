@@ -1,8 +1,8 @@
 // Form details: the slug follows the title and is cleaned as you type — also with a draft banner on the page (its
 // hidden "slug" input once caught the script); the series fields behind a button; an artwork's web page (migrations 038, 039).
-const { test, expect, sql, submitForm, liveReady } = require('./helpers');
+const { test, expect, sql, submitForm, liveReady, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('slug: follows the title and is cleaned while a draft banner is shown', async ({ userA }) => {
   await userA.goto('/artworks/new');

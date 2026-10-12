@@ -1,8 +1,8 @@
 // The bibliography (migration 036): sources typed in once, cited with [[source/slug|page]] — footnotes with short
 // references, "ebd.", a list of full entries after the KHIST guide; reading status; the public API.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('a source: the form shows the fields of its kind; the citation is generated', async ({ userA }) => {
   await userA.goto('/bibliography/new');

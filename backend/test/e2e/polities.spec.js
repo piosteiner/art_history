@@ -1,8 +1,7 @@
 // Polities and countries (migration 019): a polity entry, nationality links, today's country derived from places,
 // the public API (country, birth_place, polities, filters) and the quality check for links outside a polity's existence.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const API = 'http://127.0.0.1:3006/v1';
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('a polity: country codes are checked, then it can be created', async ({ userA }) => {

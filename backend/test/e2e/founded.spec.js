@@ -1,7 +1,7 @@
 // "founded" / "founded by" (migration 054): a person founds an institution; Wikidata's P112 suggests the founders.
-const { test, expect, sql } = require('./helpers');
+const { test, expect, sql, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test.afterAll(() => sql(`DELETE FROM relationships WHERE relationship_type = 'founded'; DELETE FROM institutions WHERE slug = 'kunsthaus-founded-test'`));
 

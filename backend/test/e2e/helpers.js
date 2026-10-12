@@ -5,7 +5,7 @@
 const fs = require('fs');
 const { execFileSync } = require('child_process');
 const { test: base, expect } = require('@playwright/test');
-const { AUTH_FILE, DB, BASE, sessionFile } = require('./env');
+const { AUTH_FILE, DB, BASE, API, sessionFile } = require('./env');
 
 const sql = (q) => execFileSync('psql', ['-X', '-h', 'localhost', '-U', 'arthistory_owner', '-d', DB, '-Atc', q]).toString().trim();
 
@@ -42,6 +42,8 @@ async function asUser(browser, user) {
 }
 
 const test = base.extend({
+  // this worker's own test server (env.js: one shard per worker) — for page.goto('/…') and request
+  baseURL: async ({}, use) => { await use(BASE); },
   userA: async ({ browser }, use) => {
     const page = await asUser(browser, 'tester');
     await use(page);
@@ -64,4 +66,4 @@ async function submitForm(page) {
   await Promise.all([page.waitForNavigation(), page.click('form.form > .actions button')]);
 }
 
-module.exports = { test, expect, sql, adminChange, login, liveReady, submitForm };
+module.exports = { test, expect, sql, adminChange, login, liveReady, submitForm, API, BASE };

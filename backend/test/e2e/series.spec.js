@@ -1,8 +1,8 @@
 // Series and other wholes (migration 037): a whole with its numbered parts, new parts prefilled, existing artworks
 // added, order and neighbours, the loop guard, publishers, the public API.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('a series with numbered parts: new and existing parts, order, neighbours, missing numbers, API', async ({ userA, request }) => {
   await userA.goto('/artworks/new');

@@ -1,8 +1,8 @@
 // Places without hand-made geometry (migration 032): boundaries from Natural Earth (fixtures: rectangles), markers
 // derived in the view place_geo, the place finder (Nominatim fixtures), parents found and created automatically.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('a country needs only its code: outline and marker come from the boundary', async ({ userA, request }) => {
   await userA.goto('/places/new');

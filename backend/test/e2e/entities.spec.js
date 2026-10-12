@@ -1,5 +1,5 @@
 // Creating, editing, deleting entities; relationships (incl. reverse types); pickers.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API, BASE } = require('./helpers');
 
 test('the browser refuses an invalid slug (pattern) — typed ones are cleaned first; the server checks it too', async ({ userA }) => {
   await userA.goto('/artists/new');
@@ -8,7 +8,7 @@ test('the browser refuses an invalid slug (pattern) — typed ones are cleaned f
   await expect(userA).toHaveURL(/\/artists\/new$/);  // not submitted (pattern attribute)
   expect(await userA.locator('#f-slug').evaluate((el) => el.validity.patternMismatch)).toBe(true);
   // Without the browser's check (e.g. a script posting directly), the server refuses it as well.
-  const res = await userA.request.post('/artists', { headers: { Origin: 'http://admin.localhost:3006' }, form: { slug: 'Bad Slug', 'f.name': 'X' } });
+  const res = await userA.request.post('/artists', { headers: { Origin: BASE }, form: { slug: 'Bad Slug', 'f.name': 'X' } });
   expect(res.status()).toBe(422);
   expect(await res.text()).toContain('slug: lowercase letters, digits and single hyphens only');
 });
@@ -118,7 +118,7 @@ test('artwork dimensions (2D and 3D) and materials: form, page, public API with 
   await expect(userA.locator('dl.fields')).toContainText('25.7 × 37.9 cm (sheet)');
   await expect(userA.locator('dl.fields')).toContainText('ink · woodblock · paper');
 
-  const api = (path) => request.get(`http://127.0.0.1:3006/v1/${path}`, { headers: { Host: 'api.localhost' } }).then((r) => r.json());
+  const api = (path) => request.get(`${API}/${path}`, { headers: { Host: 'api.localhost' } }).then((r) => r.json());
   const wave = await api('artworks/the-great-wave-off-kanagawa');
   expect(wave.dimensions).toMatchObject({ height_cm: 25.7, width_cm: 37.9, depth_cm: null, note: 'sheet', label: '25.7 × 37.9 cm' });
   expect(wave.materials).toEqual(['ink', 'woodblock', 'paper']);
@@ -153,7 +153,7 @@ test('a sculpture with only a height: a hint in the form, "(height)" on the page
   await userA.fill('input[name="f.dimensions_w"]', '');
   await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
   await expect(userA.locator('dl.fields')).toContainText('50 cm (height)');
-  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/plum-park-in-kameido', { headers: { Host: 'api.localhost' } })).json();
+  const api = await (await request.get(`${API}/artworks/plum-park-in-kameido`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.dimensions).toMatchObject({ height_cm: 50, width_cm: null, depth_cm: null, label: '50 cm (height)' });
   await userA.goto('/artworks/plum-park-in-kameido/edit');
   await expect(userA.locator('input[name="f.dimensions_h"]')).toHaveValue('50');
@@ -169,7 +169,7 @@ test('dates by century: "13th century", "late 13th century" — kept as written,
   await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
   await expect(userA).toHaveURL(/\/artworks\/test-reliquary\?done=created/);
   await expect(userA.locator('dl.fields')).toContainText('late 13th century');
-  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/test-reliquary', { headers: { Host: 'api.localhost' } })).json();
+  const api = await (await request.get(`${API}/artworks/test-reliquary`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.created).toEqual({ label: 'late 13th century', from: '1267-01-01', to: '1300-12-31', from_year: 1267, to_year: 1300 });
   await userA.goto('/artworks/test-reliquary/edit');
   await expect(userA.locator('#f-created')).toHaveValue('late 13th century');  // shown as written, not 1267/1300
@@ -317,7 +317,7 @@ test('circa dates: "ca. 1755" is c. 1755 = 1750–1760, kept as written', async 
   await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
   await expect(userA).toHaveURL(/\/artworks\/test-circa\?done=created/);
   await expect(userA.locator('dl.fields')).toContainText('c. 1755');
-  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/test-circa', { headers: { Host: 'api.localhost' } })).json();
+  const api = await (await request.get(`${API}/artworks/test-circa`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.created).toEqual({ label: 'c. 1755', from: '1750-01-01', to: '1760-12-31', from_year: 1750, to_year: 1760 });
   await userA.goto('/artworks/test-circa/edit');
   await expect(userA.locator('#f-created')).toHaveValue('c. 1755');
@@ -377,7 +377,7 @@ test('further measurements (mount, frame): rows with paste and conversion, on th
   await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
   await expect(userA.locator('dl.fields')).toContainText('mount: 180.02 × 95.57 cm');
   await expect(userA.locator('dl.fields')).toContainText('frame: 190 × 105.5 × 6 cm');
-  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/plum-park-in-kameido', { headers: { Host: 'api.localhost' } })).json();
+  const api = await (await request.get(`${API}/artworks/plum-park-in-kameido`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.other_dimensions).toEqual([
     { part: 'mount', height_cm: 180.02, width_cm: 95.57, depth_cm: null, label: '180.02 × 95.57 cm' },
     { part: 'frame', height_cm: 190, width_cm: 105.5, depth_cm: 6, label: '190 × 105.5 × 6 cm' }]);
@@ -416,7 +416,7 @@ test('an existing entry: an emptied slug follows the title; the old address redi
 
   await userA.goto('/artworks/plum-park-in-kameido/history');               // old address, any page below it
   await expect(userA).toHaveURL(/\/artworks\/plum-park-in-kameido-tests\/history$/);
-  const old = await request.get('http://127.0.0.1:3006/v1/artworks/plum-park-in-kameido', { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
+  const old = await request.get(`${API}/artworks/plum-park-in-kameido`, { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
   expect(old.status()).toBe(301);
   expect(old.headers().location).toBe('/v1/artworks/plum-park-in-kameido-tests');
 

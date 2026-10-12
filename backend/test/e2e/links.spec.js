@@ -1,8 +1,8 @@
 // [[links]] to any entry (migration 030): completion in the editor across all types, "Mentioned in" (backlinks),
 // the rendered link in the API, and the check for links to missing entries.
-const { test, expect, sql, liveReady } = require('./helpers');
+const { test, expect, sql, liveReady, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('[[ completes entries of every type; the link is shown, rendered by the API and listed as a backlink', async ({ userA, request }) => {
   await userA.goto('/artists/paul-gauguin/edit');

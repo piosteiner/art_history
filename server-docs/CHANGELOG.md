@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Tests: end-to-end specs in two workers, each on its own database and server
+- **What:** created the databases `arthistory_test_1` and `arthistory_test_2` (`db/setup.sh`, owner `arthistory_owner`).
+  `test/e2e/env.js` gives each Playwright worker a shard (database + server port: :3006, :3008, :3009); `global-setup.js`
+  prepares them side by side; specs use `API`/`BASE` from `helpers.js` instead of a fixed port. Default 2 workers
+  (`E2E_WORKERS`, max 3); the tests use the minified admin bundle (`build:admin:test`).
+- **Why:** owner: faster test runs (every deploy runs them). Full suite 4.4 → 3.2 min. With 2 CPUs the run is CPU-bound:
+  3 workers were no faster than 2.
+- **Revert:** `E2E_WORKERS=1` (one after another, one database), or revert the commit;
+  `sudo -u postgres dropdb arthistory_test_1` / `arthistory_test_2`.
+
 ### Admin: GND/SIKART comparison — every item a choice, ticked by default; missing places created from OpenStreetMap
 - **What:** on "Compare with the GND/SIKART" every row has its own tick: agreeing values (`cite.<field>`, ticked: cited),
   relationships (ticked), reference records (ticked when new). A place the record names that we don't have — by GND

@@ -1,8 +1,8 @@
 // Names in several languages (migration 022): furigana with "Add reading", language tags, other names with roles,
 // sorting and search by romanization, the slug from the romanization, the public API.
-const { test, expect, sql } = require('./helpers');
+const { test, expect, sql, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('a Japanese title: furigana by "Add reading", language, romanization and translation as rows', async ({ userA, request }) => {
   await userA.goto('/artworks/new');
@@ -97,13 +97,13 @@ test('kana readings are found in Latin letters; lists sort by the title (romaniz
 });
 
 test('previews of any internal links in one request (GET /v1/previews)', async ({ request }) => {
-  const res = await request.get('http://127.0.0.1:3006/v1/previews?refs=artist/paul-gauguin,place/arles,artist/nobody-here',
+  const res = await request.get(`${API}/previews?refs=artist/paul-gauguin,place/arles,artist/nobody-here`,
     { headers: { Host: 'api.localhost' } });
   const { data } = await res.json();
   expect(Object.keys(data).sort()).toEqual(['artist/paul-gauguin', 'place/arles']);  // entries that don't exist: left out
   expect(data['artist/paul-gauguin']).toMatchObject({ type: 'artist', name: 'Paul Gauguin' });
   expect(data['artist/paul-gauguin'].excerpt).toContain('French painter');  // other specs edit the biography
   expect(data['place/arles'].subtitle).toMatch(/^settlement/);
-  const bad = await request.get('http://127.0.0.1:3006/v1/previews?refs=evil/x;drop', { headers: { Host: 'api.localhost' } });
+  const bad = await request.get(`${API}/previews?refs=evil/x;drop`, { headers: { Host: 'api.localhost' } });
   expect(bad.status()).toBe(400);
 });

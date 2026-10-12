@@ -1,13 +1,15 @@
 // End-to-end tests of the admin panel in a real (headless) browser: npm run test:e2e
-// They run against their own database (arthistory_test, reset before every run) and their own server on port 3006,
+// They run against their own databases (arthistory_test, _1, _2, reset before every run) and their own servers (:3006, :3008, :3009),
 // never against dev or production data. deploy.sh runs them before touching production. Details: test/e2e/README.md
 const { defineConfig } = require('@playwright/test');
-const { BASE } = require('./test/e2e/env');
+const { BASE, WORKERS } = require('./test/e2e/env');
 
 module.exports = defineConfig({
   testDir: 'test/e2e',
   testMatch: '*.spec.js',
-  workers: 1,               // one shared database and server: specs run one after another
+  // spec files side by side, each worker on its own database and server (test/e2e/env.js: shards; E2E_WORKERS=1 for
+  // one after another); the tests of one file still run in order
+  workers: WORKERS,
   fullyParallel: false,
   timeout: 60000,
   expect: { timeout: 8000 },

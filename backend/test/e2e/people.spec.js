@@ -1,8 +1,7 @@
 // People (migration 024): everyone relevant who isn't an artist; patron is a role from relationships; depictions;
 // birth/death and occupations; old /patrons addresses redirect.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const API = 'http://127.0.0.1:3006/v1';
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 test('a person with life dates and occupations, depicted in an artwork; roles in the API', async ({ userA, request }) => {

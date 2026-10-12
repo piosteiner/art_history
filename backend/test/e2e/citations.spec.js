@@ -1,6 +1,6 @@
 // Sources for facts (migration 049, src/admin/citations.js): Wikidata cites itself, sources are added at the value,
 // a changed value shows its citations as outdated, the quality page lists what has no good source.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
 const apply = (page) => Promise.all([page.waitForNavigation(), page.click('.wd-form .sticky-actions button')]);
 const row = (page, text) => page.locator('.wd-table tbody tr', { hasText: text }).first();
@@ -79,7 +79,7 @@ test('values Wikidata agrees with are cited when comparing — nothing to take, 
 });
 
 test('free-text sources are citations (T); the API gives every fact its sources, with the full reference', async ({ userA, request }) => {
-  const api = async (path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+  const api = async (path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
   // the "Sources" box of a relationship: lines → free-text citations
   const relId = sql(`SELECT r.id FROM relationships r WHERE r.subject_type = 'artist' AND r.subject_id = entity_id('artist', 'vincent-van-gogh')
                      AND r.relationship_type = 'lived_in' ORDER BY r.id LIMIT 1`);

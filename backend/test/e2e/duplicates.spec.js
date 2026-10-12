@@ -1,6 +1,6 @@
 // Duplicates (migration 044, src/admin/duplicates.js): hard rules, evidence instead of names alone, "not the same"
 // remembered, and merging.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
 test.afterAll(() => {
   sql(`DELETE FROM quality_acks WHERE check_id = 'possible_duplicate';
@@ -102,7 +102,7 @@ test('merge: preview, then everything moves to the kept entry; the old address a
   expect(sql("SELECT description_md FROM movements WHERE slug = 'japonisme'")).toBe('Painted by [[artist/vincent-van-gogh|him]].');
   expect(sql("SELECT names::text FROM artists WHERE slug = 'vincent-van-gogh'")).toContain('Vincent Willem van Gogh');
   expect(sql("SELECT source FROM audit_log WHERE table_name = 'artists' AND action = 'delete' ORDER BY id DESC LIMIT 1")).toBe('merge');
-  const old = await request.get('http://127.0.0.1:3006/v1/artists/vincent-van-gogh-dup', { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
+  const old = await request.get(`${API}/artists/vincent-van-gogh-dup`, { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
   expect(old.status()).toBe(301);
   sql(`UPDATE movements SET description_md = convert_from(decode('${text}', 'base64'), 'UTF8') WHERE slug = 'japonisme';
        UPDATE artists SET names = '[]' WHERE slug = 'vincent-van-gogh'`);

@@ -1,6 +1,6 @@
 // Finding freely licensed images for an entry without a Wikidata item (src/admin/imagesearch.js), against fixtures
 // standing in for Wikimedia Commons, the Met, the Art Institute of Chicago and Cleveland (wikidata-fixtures.js).
-const { test, expect, sql } = require('./helpers');
+const { test, expect, sql, API } = require('./helpers');
 
 test('find images: four sources, only free ones, one click adds with licence and credit', async ({ userA, request }) => {
   sql("DELETE FROM images WHERE artwork_id = entity_id('artwork', 'plum-park-in-kameido')");  // other specs add some
@@ -25,7 +25,7 @@ test('find images: four sources, only free ones, one click adds with licence and
   await userA.click('.source-tabs a:has-text("Cleveland Museum of Art")');
   await expect(userA.locator('.find-item')).toContainText('Cleveland Museum of Art · Public domain (CC0)');
 
-  const api = await (await request.get('http://127.0.0.1:3006/v1/artworks/plum-park-in-kameido', { headers: { Host: 'api.localhost' } })).json();
+  const api = await (await request.get(`${API}/artworks/plum-park-in-kameido`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.images.map((i) => [i.url, i.license, i.credit])).toEqual([
     ['https://upload.wikimedia.org/test/plum-park.jpg', 'Public domain', 'Hiroshige'],
     ['https://images.metmuseum.org/test/web-large.jpg', 'Public domain (CC0)', 'The Metropolitan Museum of Art']]);

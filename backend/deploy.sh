@@ -13,7 +13,7 @@ git pull --ff-only
 npm ci --no-fund --no-audit          # incl. dev deps: esbuild, CodeMirror, Leaflet, Playwright
 
 if [ "$1" != "--skip-tests" ]; then
-  # Unit tests, then the admin panel in a real browser against its own database (arthistory_test) and server (:3006).
+  # Unit tests, then the admin panel in a real browser against their own databases and servers (two workers side by side: arthistory_test :3006, arthistory_test_1 :3008).
   if ! npm test --silent || ! npm run --silent test:e2e; then
     echo "✗ tests failed — production was not touched (still running $PREVIOUS)."
     echo "  The checkout is now at $(git rev-parse --short HEAD); fix and deploy again, or go back: git checkout $PREVIOUS"

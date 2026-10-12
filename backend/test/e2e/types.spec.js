@@ -1,7 +1,7 @@
 // The wrong kind of entry (migration 055): noticed while typing, from Wikidata's class, on the quality page — and moved.
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const api = (request, path) => request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
+const api = (request, path) => request.get(`${API}${path}`, { headers: { Host: 'api.localhost' }, maxRedirects: 0 });
 
 test.afterAll(() => sql(`DELETE FROM people WHERE slug LIKE 'henry-clay-frick%'; DELETE FROM institutions WHERE slug LIKE 'henry-clay-frick%' OR slug IN ('claude-monet', 'frick-collection-test');
                          DELETE FROM entry_moves`));

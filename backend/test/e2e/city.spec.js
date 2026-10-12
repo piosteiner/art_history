@@ -1,8 +1,8 @@
 // The city of an exact location, found and if needed created when saving (placefinder.cityAt, saveEntity → cityFor):
 // Nominatim fixtures (wikidata-fixtures.js: the reverse lookup gives a district, the address names Kamakura).
-const { test, expect, sql, submitForm } = require('./helpers');
+const { test, expect, sql, submitForm, API } = require('./helpers');
 
-const api = async (request, path) => (await request.get(`http://127.0.0.1:3006/v1${path}`, { headers: { Host: 'api.localhost' } })).json();
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
 async function newInstitution(page, name, [lon, lat]) {
   await page.goto('/institutions/new');
