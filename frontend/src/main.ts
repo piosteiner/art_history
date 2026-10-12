@@ -6,8 +6,7 @@ import { watchLinks } from './previews';
 import { mountSearch } from './search';
 import type { Plural } from './types';
 import { detail } from './views/detail';
-import { explore } from './views/explore';
-import { graph } from './views/graph';
+import { loading, showError } from './views/common';
 import { list } from './views/list';
 import { privacy } from './views/privacy';
 
@@ -29,6 +28,31 @@ mountThemeToggle(document.getElementById('theme')!, () => onRoute(currentRoute()
 
 let cleanup: Cleanup;
 
+// The map (MapLibre, ~1 MB) and the network (d3) load only on the pages that show them: text pages stay light.
+// A view module that loads after the user has moved on is not shown; its cleanup runs with the route's.
+function lazyView(load: () => Promise<() => Cleanup>): Cleanup {
+  let cancelled = false;
+  let inner: Cleanup;
+  loading(main);
+  load()
+    .then((view) => { if (!cancelled) inner = view(); })
+    .catch((err) => { if (!cancelled) showError(main, err); });
+  return () => {
+    cancelled = true;
+    if (typeof inner === 'function') inner();
+  };
+}
+
+// After a deploy, an open tab may ask for a chunk that no longer exists: reload once to get the new build.
+window.addEventListener('vite:preloadError', (e) => {
+  try {
+    if (sessionStorage.getItem('arthistory:reloaded') === location.href) return;
+    sessionStorage.setItem('arthistory:reloaded', location.href);
+  } catch { /* no storage: reload anyway, the browser stops loops itself */ }
+  e.preventDefault();
+  location.reload();
+});
+
 function onRoute(route: Route) {
   if (typeof cleanup === 'function') cleanup();
   cleanup = undefined;
@@ -39,7 +63,7 @@ function onRoute(route: Route) {
 
   switch (route.name) {
     case 'explore':
-      cleanup = explore(main, route.params);
+      cleanup = lazyView(() => import('./views/explore').then((m) => () => m.explore(main, route.params)));
       break;
     case 'list':
       document.title = `${PLURAL_LABEL[route.plural]} · Art History`;
@@ -50,7 +74,7 @@ function onRoute(route: Route) {
       break;
     case 'graph':
       document.title = 'Network · Art History';
-      cleanup = graph(main, route.plural, route.slug, route.params);
+      cleanup = lazyView(() => import('./views/graph').then((m) => () => m.graph(main, route.plural, route.slug, route.params)));
       break;
     case 'privacy':
       privacy(main);

@@ -7,7 +7,7 @@ import {
   titleStatusLine, countryLink, countryName, creatorsOf, dateLabel, displayName, impliedEnd, personDates, personWhat, ROLE_LABEL, langAttr, originalLine, otherNames, figure, html, link, PLURAL_LABEL, polityWithToday, render, spanLabel, trusted, TYPE_LABEL,
   wireImageFallbacks, wireLightbox, type Html,
 } from '../html';
-import { COLORS, createMap, showEntity, showOwnSite, showPoint } from '../map';
+import { COLORS } from '../colors';
 import type {
   Artwork, Citation, EntityType, SourceHint, ArtworkSummary, Category, Country, DetailByPlural, Dimensions, Entity, EntryRef, Image, KindRef, PartDimensions, Plural, PolityLink, ProvenanceStep, Relationship,
 } from '../types';
@@ -461,58 +461,62 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
 
       const mapEl = main.querySelector<HTMLElement>('#map')!;
       const legend = main.querySelector<HTMLElement>('#legend')!;
-      const map = createMap(mapEl);
-      cleanup = () => map.remove();
-      if (e.type === 'place') {
-        showPoint(map, e.location!.coordinates, e.name);
-        return;
-      }
-      if (e.type === 'event') {
-        // where it happened: the drawn area or exact spot, else only its city
-        const own = e.area ?? e.location;
-        if (own) showOwnSite(map, own, e.name, true, COLORS.event);
-        else showPoint(map, e.place!.location!.coordinates, e.place!.name);
-        render(legend, own
-          ? html`<span><i class="dot" style="background:${COLORS.event}"></i>${e.area ? 'the area it covered' : 'where it happened'}</span>`
-          : html`<span><i class="dot" style="background:${COLORS.place}"></i>${e.place!.name} (no exact location recorded)</span>`);
-        return;
-      }
-      getEntityMap(plural as Exclude<Plural, 'places'>, slug)
-        .then((fc) => {
-          if (!current()) return;
-          const stops = fc.features.filter((f) => f.geometry.type === 'Point');
-          // an institution's own point, or where an immovable artwork stands
-          const own = e.type === 'institution' ? e.location ?? null : e.type === 'artwork' ? e.area ?? e.location ?? null : null;
-          if (own) showOwnSite(map, own, v.title, !stops.length);
-          if (!stops.length && own) {
-            render(legend, html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>`);
-            return;
-          }
-          if (!stops.length) {
-            main.querySelector('.detail-side')?.remove();
-            map.remove();
-            cleanup = undefined;
-            return;
-          }
-          const view = showEntity(map, fc);
-          const layers = new Set(stops.map((f) => f.properties.layer));
-          const both = layers.has('presence') && layers.has('association');
-          render(legend, html`
-            ${layers.has('presence') ? html`<span><i class="dot" style="background:${COLORS.presence}"></i>was there</span>` : ''}
-            ${fc.features.some((f) => f.properties.layer === 'route') ? html`<span><i class="line" style="background:${COLORS.route}"></i>route, in date order</span>` : ''}
-            ${layers.has('association') ? html`<span><i class="ring" style="border-color:${COLORS.association}"></i>association (not travel)</span>` : ''}
-            ${own ? html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>` : ''}
-            ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}`);
-          legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {
-            const btn = ev.currentTarget as HTMLButtonElement;
-            const all = btn.dataset.fit === 'all';
-            if (all) view.fitAll();
-            else view.fitPresence();
-            btn.dataset.fit = all ? 'presence' : 'all';
-            btn.textContent = all ? 'zoom to the route' : 'show associations';
-          });
-        })
-        .catch((err) => showError(legend, err));
+      // MapLibre loads only for pages with a map (terms and sources have none)
+      import('../map').then(({ createMap, showEntity, showOwnSite, showPoint }) => {
+        if (!current()) return;
+        const map = createMap(mapEl);
+        cleanup = () => map.remove();
+        if (e.type === 'place') {
+          showPoint(map, e.location!.coordinates, e.name);
+          return;
+        }
+        if (e.type === 'event') {
+          // where it happened: the drawn area or exact spot, else only its city
+          const own = e.area ?? e.location;
+          if (own) showOwnSite(map, own, e.name, true, COLORS.event);
+          else showPoint(map, e.place!.location!.coordinates, e.place!.name);
+          render(legend, own
+            ? html`<span><i class="dot" style="background:${COLORS.event}"></i>${e.area ? 'the area it covered' : 'where it happened'}</span>`
+            : html`<span><i class="dot" style="background:${COLORS.place}"></i>${e.place!.name} (no exact location recorded)</span>`);
+          return;
+        }
+        getEntityMap(plural as Exclude<Plural, 'places'>, slug)
+          .then((fc) => {
+            if (!current()) return;
+            const stops = fc.features.filter((f) => f.geometry.type === 'Point');
+            // an institution's own point, or where an immovable artwork stands
+            const own = e.type === 'institution' ? e.location ?? null : e.type === 'artwork' ? e.area ?? e.location ?? null : null;
+            if (own) showOwnSite(map, own, v.title, !stops.length);
+            if (!stops.length && own) {
+              render(legend, html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>`);
+              return;
+            }
+            if (!stops.length) {
+              main.querySelector('.detail-side')?.remove();
+              map.remove();
+              cleanup = undefined;
+              return;
+            }
+            const view = showEntity(map, fc);
+            const layers = new Set(stops.map((f) => f.properties.layer));
+            const both = layers.has('presence') && layers.has('association');
+            render(legend, html`
+              ${layers.has('presence') ? html`<span><i class="dot" style="background:${COLORS.presence}"></i>was there</span>` : ''}
+              ${fc.features.some((f) => f.properties.layer === 'route') ? html`<span><i class="line" style="background:${COLORS.route}"></i>route, in date order</span>` : ''}
+              ${layers.has('association') ? html`<span><i class="ring" style="border-color:${COLORS.association}"></i>association (not travel)</span>` : ''}
+              ${own ? html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>` : ''}
+              ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}`);
+            legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {
+              const btn = ev.currentTarget as HTMLButtonElement;
+              const all = btn.dataset.fit === 'all';
+              if (all) view.fitAll();
+              else view.fitPresence();
+              btn.dataset.fit = all ? 'presence' : 'all';
+              btn.textContent = all ? 'zoom to the route' : 'show associations';
+            });
+          })
+          .catch((err) => showError(legend, err));
+      }).catch((err) => current() && showError(legend, err));
     })
     .catch((err) => current() && showError(main, err));
 

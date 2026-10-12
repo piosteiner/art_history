@@ -7,7 +7,10 @@ import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url';
 import { html, href, link, type Html } from './html';
 import { encounterLine } from './crossings';
 import { encounterKeys, type Encounter } from './encounters';
+import { COLORS, PALETTE } from './colors';
 import { isDark } from './theme';
+
+export { COLORS, PALETTE };
 import type { EntityMap, EntityType, EventMapProps, EventsMap, PlacesMap, PresenceMap, SiteProps, SitesMap, StopFeature } from './types';
 
 setWorkerUrl(workerUrl);
@@ -22,16 +25,6 @@ const style = () => {
     : `https://tiles.openfreemap.org/styles/${dark ? 'dark' : 'positron'}`;
 };
 
-export const COLORS = {
-  site: '#3b4fa0', // museums, institutions and buildings with their own location
-  encounter: '#e0a800', // places where paths crossed
-  presence: '#b4462b',
-  route: '#b4462b',
-  association: '#5b4fbf',
-  place: '#2f6f73',
-  empty: '#9aa3a8',
-  event: '#d4237a', // events: fires, trials, auctions, exhibitions
-};
 
 /** `fullscreen`: what the full-screen button enlarges — by default the map's parent, so its legend and layer switches come along. */
 export function createMap(container: HTMLElement, fullscreen: HTMLElement | null = container.parentElement): MapLibre {
@@ -692,9 +685,3 @@ export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
     fit(map, (presence.length ? presence : stops).map((f) => (f.geometry as GeoJSON.Point).coordinates as [number, number]));
   });
 }
-
-/** Distinguishable colours for chosen entities (map routes and their timeline bars). */
-export const PALETTE = [
-  '#e15759', '#4e79a7', '#f28e2b', '#59a14f', '#b07aa1', '#d4a514',
-  '#2f9e9a', '#ff7fa0', '#9c755f', '#3b4fa0', '#c2256c', '#7fb800',
-];
