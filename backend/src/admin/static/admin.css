@@ -387,3 +387,20 @@ body.sorting, body.sorting * { cursor: grabbing !important; user-select: none; }
 .cite-also { display: flex; flex-wrap: wrap; gap: .1rem .9rem; margin: .3rem 0 .5rem; }
 .cite-also > div { flex-basis: 100%; }
 .cite-chip-page { color: var(--muted); font-size: .8em; }
+
+/* Enrich (enrich.js) and the Quality queue (quality.js, routes/queue.js) */
+.enrich-sources { margin: .3rem 0 1rem; padding-left: 1.1rem; }
+.enrich-sources li { margin: .15rem 0; }
+.enrich-merged td > div { margin: .15rem 0; }
+.enrich-same { color: var(--muted); }
+.flash.inline { display: inline-block; padding: .1rem .5rem; }
+.queue-bar { display: flex; flex-wrap: wrap; gap: .6rem; align-items: flex-start; margin: .4rem 0 1rem; padding: .7rem .9rem;
+  background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; }
+.queue-bar .small > div { margin-top: .2rem; }
+details.qa-folded > summary { cursor: pointer; list-style: none; }
+details.qa-folded > summary::-webkit-details-marker { display: none; }
+details.qa-folded > summary h2 { display: inline; }
+details.qa-folded > summary h2::after { content: ' ▸'; color: var(--muted); }
+details.qa-folded[open] > summary h2::after { content: ' ▾'; }
+.qa-tools { margin: .3rem 0 .6rem; }
+.queue-bar > .grow { flex: 1 1 20rem; }

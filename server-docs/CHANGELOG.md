@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Admin: Enrich page and the Quality queue
+- **What:** *Enrich…* (`/<type>/<slug>/enrich`, `src/admin/enrich.js`): Wikidata, the GND and SIKART on one page, one Apply in
+  one transaction (audit source `enrich`). Date fields several sources give are one row (grouped by date range); the
+  picked value is cited by every source that gives it. The rest per source with its usual controls; a relationship two
+  sources suggest is created once and cited by both (`gnd.apply` looks for it with any period first); numbers Wikidata
+  offers too are offered once. Sources without a number link to "Find on Wikidata…" / "Find in SIKART…". GND/SIKART
+  comparison logic and tables moved to `src/admin/authority.js` (shared). Buttons: "Enrich…" on every entry and on
+  "to complete" entries.
+  *Quality queue* (`quality.js`, `routes/queue.js`): info groups folded; "Work through these →" per group → the entry
+  with a queue bar (its findings of that check, how to fix, **Next issue →**, Back to the list) → `/quality/next`;
+  "Enrich…" on rows of checks it helps with. Batch pages: `/quality/batch/wikidata` (best Wikidata hits per entry
+  without an id, exact names pre-selected, linked in one go) and `/quality/batch/cite` (weakly sourced entries with a
+  GND/SIKART number: agreeing values cited in one go).
+- **Why:** owner: one pass instead of three per entry; work through the findings without going back to the list.
+- **Revert:** revert the commit (no migration).
+- **Tested:** e2e `enrich.spec` (Wikidata + GND: one row per date, cited by both; one relationship cited by both; no
+  source), `queue.spec` (folded, next, end of list, both batch pages) + full suite.
+
 ### Admin: data-quality findings stored, refreshed after changes (migration 058)
 - **What:** the checks view is now `quality_issues_live`; `quality_issues` is a table with the last result,
   updated by `refresh_quality()` (only changed rows). A deferred constraint trigger on every content table bumps the

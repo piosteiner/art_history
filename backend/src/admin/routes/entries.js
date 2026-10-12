@@ -437,6 +437,7 @@ router.get('/:plural/:slug', async (req, res) => {
     body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}</p>
       <div class="bar"><h1 class="grow">${name}</h1>
         <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
+        <a class="button secondary" href="/${t.folder}/${e.slug}/enrich" title="Wikidata, the GND and SIKART on one page">Enrich…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Wikidata…</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/history">History</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/merge">Merge…</a>
@@ -447,10 +448,11 @@ router.get('/:plural/:slug', async (req, res) => {
         ${autoFlag.from ? html`while adding <a href="/${BY_TYPE[autoFlag.from.type].folder}/${autoFlag.from.slug}">${autoFlag.from.name}</a>` : ''}
         on ${autoFlag.created_at.toISOString().slice(0, 10)} — it has little more than a name.
         <a class="button" href="/${t.folder}/${e.slug}/edit">Fill in the details</a>
-        <a class="button secondary" href="/${t.folder}/${e.slug}/wikidata">Compare with Wikidata…</a>
+        <a class="button secondary" href="/${t.folder}/${e.slug}/enrich">Enrich…</a>
         <form method="post" action="/${t.folder}/${e.slug}/auto-done" class="inline"><button class="link">it's complete — remove the mark</button></form>
         <div class="muted small">The mark goes away by itself when the entry is next published.</div></div>` : ''}
-      ${quality.entityBox(qa, `/${t.folder}/${e.slug}`)}
+      ${req.query.queue ? quality.queueBar(t, e, req.query.queue, qa) : ''}
+      ${quality.entityBox(qa, req.query.queue ? req.originalUrl : `/${t.folder}/${e.slug}`)}
       ${citation ? html`<p class="citation"><b>${citation.siglum}:</b> ${raw(citation.full)}</p>` : ''}
       ${series && series.whole ? html`<p class="part-of">${series.number ? html`<b>${/^\d+$/.test(series.number) ? `No. ${series.number}` : series.number}</b>
         ${series.whole.parts_count && /^\d+$/.test(series.number) ? `of ${series.whole.parts_count} ` : ''}in ` : 'Part of '}<a href="/artworks/${series.whole.slug}">${series.whole.title}</a>

@@ -143,6 +143,61 @@ async function counts(db, { live = false } = {}) {
 
 const link = (r) => `/${BY_TYPE[r.type].folder}/${r.slug}`;
 
+// ---------------------------------------------------------------------------------------------------------------
+// The queue: work through the findings of a filter entry by entry. The entry page shows a bar (queueBar) with "Next
+// issue →" → /quality/next, which opens the next entry of the same filter, in the order of the list. An entry whose
+// finding was fixed or marked OK has left the list — the position (pos) then already points at the next one.
+// ---------------------------------------------------------------------------------------------------------------
+const FILTER_KEYS = ['severity', 'check', 'type'];
+// a filter from the address (only known values) → { severity, check, type }
+function filterOf(query) {
+  return {
+    severity: SEVERITIES.includes(query.severity) ? query.severity : '',
+    check: CHECKS[query.check] ? query.check : '',
+    type: BY_TYPE[query.type] ? query.type : '',
+  };
+}
+const filterQuery = (f, extra = {}) => new URLSearchParams(Object.entries({ ...f, ...extra }).filter(([k, v]) => v !== '' && v !== undefined && (FILTER_KEYS.includes(k) || k in extra))).toString();
+
+// the entries of a filter, each once, in the list's order
+async function queue(db, filter) {
+  const rows = await issues(db, filter);
+  const seen = new Set();
+  return rows.filter((r) => { const k = `${r.type}/${r.slug}`; if (seen.has(k)) return false; seen.add(k); return true; });
+}
+// after: "type/slug" of the entry just seen; pos: its position then → the next entry (with its position) or null
+async function next(db, filter, after, pos) {
+  const list = await queue(db, filter);
+  const i = list.findIndex((r) => `${r.type}/${r.slug}` === after);
+  const n = i >= 0 ? i + 1 : Math.max(0, pos);
+  return n < list.length ? { ...list[n], pos: n, total: list.length } : null;
+}
+// The address of an entry in the queue
+const queueLink = (r, filter, pos) => `${link(r)}?queue=${encodeURIComponent(filterQuery(filter, { pos: String(pos) }))}`;
+
+// The bar on an entry page opened from the queue (?queue=…); rows: this entry's findings
+function queueBar(t, e, queueParam, rows) {
+  const q = new URLSearchParams(String(queueParam || ''));
+  const filter = filterOf(Object.fromEntries(q));
+  const pos = Math.max(0, Number.parseInt(q.get('pos'), 10) || 0);
+  const mine = rows.filter((r) => (!filter.check || r.check_id === filter.check) && (!filter.severity || r.severity === filter.severity));
+  const title = filter.check ? CHECKS[filter.check].title : filter.severity ? SEVERITY_TEXT[filter.severity] : 'All findings';
+  return html`<div class="queue-bar"><div class="grow"><b>Quality queue:</b> ${title}${filter.type ? html` · ${filter.type}` : ''} · No. ${pos + 1}
+      ${mine.length ? html`<div class="small">${mine.map((r) => html`<div><span class="tag qa-${r.severity}">${r.severity}</span> ${(CHECKS[r.check_id] || {}).title || r.check_id}: ${r.detail}</div>`)}</div>`
+        : html`<div class="small cite-ok">Done here — nothing left of this filter.</div>`}
+      ${filter.check && CHECKS[filter.check].fix ? html`<div class="muted small">${CHECKS[filter.check].fix}</div>` : ''}</div>
+    <a class="button" href="/quality/next?${filterQuery(filter, { after: `${t.type}/${e.slug}`, pos: String(pos) })}">Next issue →</a>
+    <a class="button secondary" href="/quality?${filterQuery(filter)}">Back to the list</a></div>`;
+}
+
+// batch pages for some checks (routes/queue.js)
+const BATCH = {
+  no_wikidata_id: { href: '/quality/batch/wikidata', label: 'Find Wikidata items for these…' },
+  weakly_sourced: { href: '/quality/batch/cite', label: 'Cite where the GND or SIKART agrees…' },
+};
+// checks the Enrich page helps with
+const ENRICH = ['weakly_sourced', 'no_wikidata_id', 'artist_missing_dates', 'missing_romanization', 'institution_without_place', 'auto_created'];
+
 function ackForm(r, back, acked) {
   return acked
     ? html`<form method="post" action="/quality/unack" class="inline"><input type="hidden" name="check_id" value="${r.check_id}">
@@ -174,13 +229,25 @@ function page({ rows, allCounts, filter, back }) {
       <label class="choice"><input type="checkbox" name="acked" value="1"${filter.acked ? ' checked' : ''}> show only entries marked OK</label>
       <button class="secondary">Filter</button></form>
     <div data-live-results="quality">${!rows.length ? html`<p class="flash ok">${filter.acked ? 'Nothing marked as OK here.' : 'Nothing found — all clear for this filter.'}</p>` : ''}
-    ${Object.entries(groups).map(([id, list]) => html`<section class="qa-group">
-      <h2><span class="tag qa-${list[0].severity}">${list[0].severity}</span> ${CHECKS[id] ? CHECKS[id].title : id} <span class="muted">(${list.length})</span></h2>
-      ${CHECKS[id] ? html`<p class="muted small">${CHECKS[id].fix}</p>` : ''}
-      <div class="table-wrap"><table><tbody>${list.map((r) => html`<tr>
-        <td><a href="${link(r)}">${r.name}</a> <span class="tag">${r.type}</span></td><td>${r.detail}
-          ${r.acked_at ? html`<div class="muted small">OK’d by ${r.acked_by || '?'} on ${r.acked_at.toISOString().slice(0, 10)}${r.note ? ` — ${r.note}` : ''}</div>` : ''}</td>
-        <td class="qa-actions">${ackForm(r, back, !!r.acked_at)}</td></tr>`)}</tbody></table></div></section>`)}</div>`;
+    ${Object.entries(groups).map(([id, list]) => {
+      // the queue of this group: the page's filter narrowed to this check — positions among its entries
+      const qf = { ...filterOf(filter), check: id };
+      const order = [];
+      for (const r of list) if (!order.includes(`${r.type}/${r.slug}`)) order.push(`${r.type}/${r.slug}`);
+      const posOf = (r) => order.indexOf(`${r.type}/${r.slug}`);
+      const head = html`<h2><span class="tag qa-${list[0].severity}">${list[0].severity}</span> ${CHECKS[id] ? CHECKS[id].title : id} <span class="muted">(${list.length})</span></h2>`;
+      const body = html`${CHECKS[id] ? html`<p class="muted small">${CHECKS[id].fix}</p>` : ''}
+        ${!filter.acked ? html`<p class="actions qa-tools"><a class="button" href="${queueLink(list[0], qf, 0)}">Work through these →</a>
+          ${BATCH[id] ? html`<a class="button secondary" href="${BATCH[id].href}${filter.type ? `?type=${filter.type}` : ''}">${BATCH[id].label}</a>` : ''}</p>` : ''}
+        <div class="table-wrap"><table><tbody>${list.map((r) => html`<tr>
+          <td><a href="${filter.acked ? link(r) : queueLink(r, qf, posOf(r))}">${r.name}</a> <span class="tag">${r.type}</span></td><td>${r.detail}
+            ${r.acked_at ? html`<div class="muted small">OK’d by ${r.acked_by || '?'} on ${r.acked_at.toISOString().slice(0, 10)}${r.note ? ` — ${r.note}` : ''}</div>` : ''}</td>
+          <td class="qa-actions">${ENRICH.includes(id) && !filter.acked ? html`<a class="button secondary" href="${link(r)}/enrich">Enrich…</a> ` : ''}${ackForm(r, back, !!r.acked_at)}</td></tr>`)}</tbody></table></div>`;
+      // completeness hints (info) folded away unless asked for: the errors and warnings first
+      return list[0].severity === 'info' && filter.severity !== 'info' && !filter.check
+        ? html`<details class="qa-group qa-folded"><summary>${head}</summary>${body}</details>`
+        : html`<section class="qa-group">${head}${body}</section>`;
+    })}</div>`;
 }
 
 // Box on an entity page: its errors and warnings (info only as a count).
@@ -207,4 +274,5 @@ async function unack(db, { check_id: checkId, issue_key: issueKey }) {
   await db.query('DELETE FROM quality_acks WHERE check_id = $1 AND issue_key = $2', [checkId, issueKey]);
 }
 
-module.exports = { CHECKS, SEVERITIES, issues, counts, page, entityBox, ack, unack, start, stop, current, isFresh, refresh };
+module.exports = { CHECKS, SEVERITIES, issues, counts, page, entityBox, ack, unack, start, stop, current, isFresh, refresh,
+  filterOf, filterQuery, queue, next, queueLink, queueBar };

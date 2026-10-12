@@ -52,7 +52,7 @@ async function placeTarget(db, ref) {
   if (target) return { target };
   const found = await placefinder.settlementByName(db, ref.label).catch(() => null);
   if (!found) return {};
-  return found.ours ? { target: { type: 'place', ...found.ours, by_id: false } } : { create: found.candidate };
+  return found.ours ? { target: { type: 'place', ...found.ours, by_id: false, via: 'osm' } } : { create: found.candidate };
 }
 
 const FIELDS = {
@@ -154,11 +154,18 @@ async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', 
     if (s.already || (!s.target && !s.create) || choices[`rel.${s.i}`] !== 'add') continue;
     if (!s.target) s.target = { type: 'place', slug: await placeFrom(s.create, s.ref), by_id: true };
     const other = (await db.query('SELECT entity_id($1, $2) AS id', [s.target.type, s.target.slug])).rows[0].id;
-    const ins = await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
-      VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING RETURNING id`, [t.type, entity.id, s.type, s.target.type, other]);
-    if (ins.rows.length) await citations.citeRelationshipFromSource(db, ins.rows[0].id, source, plan.url);
+    const key = [t.type, entity.id, s.type, s.target.type, other];
+    // there already, with or without a period (another source of the Enrich page added it a moment ago): this source
+    // cites it too, no second one
+    const have = (await db.query(`SELECT id FROM relationships WHERE subject_type = $1 AND subject_id = $2
+      AND relationship_type = $3 AND object_type = $4 AND object_id = $5 ORDER BY period IS NULL DESC LIMIT 1`, key)).rows[0];
+    // (a symmetric type may be stored the other way round: then the insert finds it and does nothing)
+    const ins = have ? [] : (await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+      VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING RETURNING id`, key)).rows;
+    const relId = have ? have.id : ins.length ? ins[0].id : null;
+    if (relId) await citations.citeRelationshipFromSource(db, relId, source, plan.url);
     await giveNumber(s.target, s.ref);
-    relationships += 1;
+    if (ins.length) relationships += 1;
   }
   // numbers the record knows (SIKART: its GND and VIAF numbers) — ticked ones become reference records
   let ids = 0;

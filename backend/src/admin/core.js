@@ -26,7 +26,9 @@ const DONE = {
   'auto-done': 'Marked as complete.', merged: 'Merged — the other entry is gone; its address leads here.',
   'img-added': 'Image added.', 'img-saved': 'Image saved.', 'img-deleted': 'Image removed.', 'img-moved': 'Order changed.',
   converted: 'Type changed — everything that could come along is here; the old address leads here.',
-  'gnd-applied': 'Comparison applied — agreeing values are cited.', 'id-added': 'Reference record added.', 'id-deleted': 'Reference record removed.', gnd: 'Values applied — the field values are in the working copy: check them below and Publish.',
+  'gnd-applied': 'Comparison applied — agreeing values are cited.',
+  'queue-done': 'That was the last one of this list.', cited: 'Cited.',
+  enrich: 'Applied — the field values are in the working copy: check them below and Publish.', 'enrich-applied': 'Applied — agreeing values are cited.', 'id-added': 'Reference record added.', 'id-deleted': 'Reference record removed.', gnd: 'Values applied — the field values are in the working copy: check them below and Publish.',
   'cite-added': 'Source added.', 'cite-deleted': 'Source removed.',
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
@@ -36,9 +38,10 @@ function send(req, res, { title, body, status = 200, flash, page = null }) {
   if (!flash && DONE[req.query.done]) {
     // Numbers only from the URL — never reflect free text.
     const n = (k) => Math.max(0, Number.parseInt(req.query[k], 10) || 0);
-    const extra = ['wikidata', 'gnd', 'gnd-applied'].includes(req.query.done) ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
+    const extra = ['wikidata', 'gnd', 'gnd-applied', 'enrich', 'enrich-applied'].includes(req.query.done) ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
       n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`,
-      n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`].filter(Boolean).join(', ') : '';
+      n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`].filter(Boolean).join(', ')
+      : req.query.done === 'cited' ? `${n('n')} value${n('n') === 1 ? '' : 's'}` : '';
     const auto = n('auto') ? ` ${n('auto') === 1 ? 'A new entry was' : `${n('auto')} new entries were`} created for what you typed — marked “to complete” (see the links below and the Quality page).` : '';
     // the city of an exact location, set by itself (saveEntity → cityFor): found among ours, or created
     const city = req.query.city === '1' ? ` Its city was set from the location${n('places') ? ` — ${n('places')} new place${n('places') === 1 ? '' : 's'} created (OpenStreetMap / Wikidata, Natural Earth)` : ''}.` : '';

@@ -756,6 +756,20 @@ async function apply(db, t, entity, plan, choices, userId) {
   return { form, created, relationships, images, pendingImages, cites, pendingIds, ids };
 }
 
+// The form values taken from Wikidata, plus where they came from: the item goes into the sources (metadata) and, if
+// empty, the Wikidata id field. ours: the entry's form values (working copy).
+function withProvenance(taken, ours, qid) {
+  const form = { ...taken };
+  if (!Object.keys(form).length) return form;
+  let meta = {};
+  try { meta = JSON.parse(ours['f.metadata'] || '{}') || {}; } catch { meta = {}; }
+  const sources = Array.isArray(meta.sources) ? meta.sources : [];
+  if (!sources.some((s) => String(s).startsWith(`Wikidata ${qid}`))) meta.sources = [...sources, sourceNote(qid)];
+  form['f.metadata'] = JSON.stringify(meta, null, 2);
+  if (!ours['f.wikidata_id']) form['f.wikidata_id'] = qid;
+  return form;
+}
+
 // Which of our types a Wikidata item can be (055): a human is an artist or a person, a museum an institution …;
 // null when its class says nothing we know. Used to warn when an entry is created as something else.
 const ARTWORK_CLASSES = ['Q3305213', 'Q11060274', 'Q860861', 'Q93184', 'Q125191', 'Q18761202', 'Q15123870', 'Q15709879', 'Q179700', 'Q2668072'];
@@ -781,4 +795,5 @@ async function coordsOf(qid) {
   return e && e.missing === undefined ? coords(e) : null;
 }
 
-module.exports = { search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf };
+module.exports = {
+  withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf };

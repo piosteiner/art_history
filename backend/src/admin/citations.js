@@ -183,8 +183,9 @@ async function citeAgreeingSource(db, type, id, sourceSlug, url, fieldNames, use
   [type, id, sourceSlug, url, userId, fieldNames]);
 }
 async function citeRelationshipFromSource(db, relId, sourceSlug, url) {
-  await db.query(`INSERT INTO citations (relationship_id, source_id, url, accessed) SELECT $1, b.id, $3, current_date FROM bibliography b WHERE b.slug = $2`,
-    [relId, sourceSlug, url]);
+  // (not twice: the Enrich page may offer the same relationship from two sources)
+  await db.query(`INSERT INTO citations (relationship_id, source_id, url, accessed) SELECT $1, b.id, $3, current_date FROM bibliography b
+    WHERE b.slug = $2 AND NOT EXISTS (SELECT 1 FROM citations c WHERE c.relationship_id = $1 AND c.source_id = b.id)`, [relId, sourceSlug, url]);
 }
 
 const sameForm = (expected, body) => Object.entries(expected).every(([k, v]) => String(body[k] ?? '').trim() === String(v ?? '').trim());

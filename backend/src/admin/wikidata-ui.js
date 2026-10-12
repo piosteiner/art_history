@@ -118,4 +118,4 @@ function reviewPage({ title, plan, t, action, isNew }) {
     </form>`;
 }
 
-module.exports = { searchPage, reviewPage };
+module.exports = { searchPage, reviewPage, fieldRow, suggestionRow, imageChoice };

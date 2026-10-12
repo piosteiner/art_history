@@ -58,16 +58,7 @@ async function wikidataApply(req, res, t, e) {
     return send(req, res, { title: 'Wikidata', status: 422, flash: { kind: 'error', text: `Nothing was applied: ${err.message}` },
       body: reviewPage({ title: 'Wikidata', plan, t: wdLinks, action: req.originalUrl, isNew: !e }) });
   }
-  // Provenance: the item goes into the sources (metadata) and, if empty, the Wikidata id field.
-  const form = { ...result.form };
-  if (Object.keys(form).length) {
-    let meta = {};
-    try { meta = JSON.parse(ours['f.metadata'] || '{}') || {}; } catch { meta = {}; }
-    const sources = Array.isArray(meta.sources) ? meta.sources : [];
-    if (!sources.some((s) => String(s).startsWith(`Wikidata ${qid}`))) meta.sources = [...sources, wikidata.sourceNote(qid)];
-    form['f.metadata'] = JSON.stringify(meta, null, 2);
-    if (!ours['f.wikidata_id']) form['f.wikidata_id'] = qid;
-  }
+  const form = wikidata.withProvenance(result.form, ours, qid);
   if (!e) {  // a new entry: prefill the new-entry form (the user's draft), created with "Create"
     const base = Object.fromEntries(Object.entries(docToForm({}, t.fields)).map(([k, v]) => [`f.${k}`, v]));
     const slug = wikidata.slugify(plan.label || qid);
