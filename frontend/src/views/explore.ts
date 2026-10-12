@@ -127,7 +127,14 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   let crossed: Encounter[] = [];
   let crossedCoords: (slug: string) => [number, number] | undefined = () => undefined;
   let showAllCrossed = false;
+  // they need each artwork's artists (a work with its own artist is no encounter): held back until the lists are in
+  let artistsKnown = false;
+  let pendingCrossings: Parameters<typeof crossings> | null = null;
   function crossings(stays: Stay[], coords: (slug: string) => [number, number] | undefined) {
+    if (!artistsKnown) {
+      pendingCrossings = [stays, coords];
+      return;
+    }
     crossed = findEncounters(stays, { artistsOf, window: win });
     crossedCoords = coords;
     showEncounters(map, crossed, coords);
@@ -376,7 +383,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       if (!main.contains(timelineEl)) return;
       lists = l;
       l.artworks.forEach((a) => artists.set(a.slug, creatorsOf(a).map((c) => c.slug)));
-      updateMap(); // now artworks' artists are known: crossed paths leave out a work with its own artist, "by chosen artists" works
+      artistsReady();
       const groups: PickerGroup[] = [
         { group: 'artist', plural: 'artists', label: 'Artists', entries: entries('artists', l.artists) },
         { group: 'artwork', plural: 'artworks', label: 'Artworks', entries: entries('artworks', l.artworks) },
@@ -396,9 +403,20 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     .catch((err) => {
       showError(pickersEl, err);
       showError(timelineEl, err);
+      artistsReady(); // crossed paths without the artists rather than none
     });
 
-  updateMap();
+  /** The artworks' artists are known: "works by the chosen artists" can be drawn, crossed paths listed. */
+  function artistsReady() {
+    artistsKnown = true;
+    if (sel.artwork.mode === 'by-artists') return updateMap(); // the map itself waited for them
+    if (pendingCrossings) crossings(...pendingCrossings);
+    pendingCrossings = null;
+  }
+
+  // drawn at once, without waiting for the entry lists — unless the selection itself needs them
+  if (sel.artwork.mode !== 'by-artists') updateMap();
+  else status.textContent = 'Loading…';
 
   return () => {
     pickers?.destroy();
