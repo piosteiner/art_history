@@ -572,3 +572,8 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+/* explore: what the view is limited to, above the map */
+.view-chips { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0 0 .6rem; }
+.chip { font: inherit; font-size: .85rem; padding: .2rem .65rem; border: 1px solid var(--line); border-radius: 999px; background: var(--picked-bg); color: var(--text); cursor: pointer; }
+.chip:hover { border-color: var(--muted); }

@@ -58,6 +58,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     </div>
     <p class="restored" id="restored" hidden></p>
     <div id="pickers" class="pickers-wrap"><p class="muted small">Loading entries…</p></div>
+    <div class="view-chips" id="chips" hidden></div>
     <div class="map-wrap">
       <div class="map" id="map"></div>
       <div class="legend" id="legend"></div>
@@ -217,7 +218,25 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   });
   let redrawLegend = () => {};
 
+  // ---- the time window, above the map: on a phone the timeline that set it is far below; ✕ clears it ----
+  // (the picks are named by the pickers' own buttons right above)
+  const chipsEl = main.querySelector<HTMLElement>('#chips')!;
+  function drawChips() {
+    chipsEl.hidden = !win;
+    if (!win) return;
+    const span = win.from === win.to ? String(win.from) : `${win.from}–${win.to}`;
+    render(chipsEl, html`<button type="button" class="chip" title="Show all times again" aria-label="Remove the time window ${span}">Time window ${span} <span aria-hidden="true">✕</span></button>`);
+  }
+  chipsEl.addEventListener('click', (ev) => {
+    if (!(ev.target as Element).closest('.chip')) return;
+    if (timeline) return timeline.setWindow(null); // reports back through onWindow
+    win = null;
+    persist();
+    updateMap();
+  });
+
   function persist() {
+    drawChips();
     const p = new URLSearchParams();
     writeSelection(sel, p);
     if (win) {
@@ -411,6 +430,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     pendingCrossings = null;
   }
 
+  drawChips();
   // drawn at once, without waiting for the entry lists — unless the selection itself needs them
   if (sel.artwork.mode !== 'by-artists') updateMap();
   else status.textContent = 'Loading…';

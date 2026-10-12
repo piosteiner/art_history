@@ -1007,3 +1007,18 @@ test('timeline: changing the picks replaces its rows, zoom and half-typed years 
   await expect(page.locator('.timeline-svg')).toBeVisible();
   await expect(page.locator('input[name=from]')).toHaveValue('1850');
 });
+
+test('explore: the time window is named above the map; ✕ clears it', async ({ page }) => {
+  await page.goto('/?artists=vincent-van-gogh&from=1888&to=1889');
+  const chip = page.locator('#chips .chip');
+  await expect(chip).toHaveText(/Time window 1888–1889/);
+  await chip.click();
+  await expect(page).not.toHaveURL(/from=/);
+  await expect(page).toHaveURL(/artists=vincent-van-gogh/); // the picks stay
+  await expect(page.locator('input[name=from]')).toHaveValue('');
+  await expect(page.locator('#chips')).toBeHidden();
+  await page.fill('input[name=from]', '1890');
+  await page.fill('input[name=to]', '1890');
+  await page.press('input[name=to]', 'Enter');
+  await expect(chip).toHaveText(/Time window 1890/);
+});
