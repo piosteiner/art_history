@@ -59,7 +59,6 @@ function onRoute(route: Route) {
   document.title = 'Art History';
   const section = route.name === 'list' || route.name === 'detail' ? route.plural : route.name === 'explore' ? '' : route.name === 'graph' ? 'graph' : null;
   nav.querySelectorAll('a').forEach((a) => a.classList.toggle('current', a.getAttribute('href') === `/${section ?? '-'}`));
-  window.scrollTo(0, 0);
 
   switch (route.name) {
     case 'explore':

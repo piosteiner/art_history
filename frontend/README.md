@@ -20,7 +20,7 @@ map uses OpenFreeMap (free, no key).
 |---|---|
 | `src/api.ts` | the **only** module that calls `fetch`; one function per endpoint, responses cached in memory |
 | `src/types.ts` | response shapes, taken from real responses |
-| `src/router.ts` | path routes with the History API: `/` explore (state in the query), `/artists`, `/artists/vincent-van-gogh`, `/graph/…`; own links are handled without reloads, Ctrl/middle click still opens tabs; old `#/…` links are converted |
+| `src/router.ts` | path routes with the History API: `/` explore (state in the query), `/artists`, `/artists/vincent-van-gogh`, `/graph/…`; own links are handled without reloads, Ctrl/middle click still opens tabs; old `#/…` links are converted; each history entry keeps its scroll position (back/forward and reload return there once the view has grown tall enough) |
 | `scripts/prerender.mjs` | after the build: one page per entry (`/artists/vincent-van-gogh/index.html`) with its own title, description, preview image (Open Graph) and schema.org data, list pages, `sitemap.xml`, `robots.txt`, and `404.html` = the app shell for addresses without a page (network views, entries newer than the last build) |
 | `src/html.ts` | `html\`\`` template that escapes values; `trusted()` only for the API's sanitized `*_html` fields; image figure with credit + licence |
 | `src/map.ts` | MapLibre setup; one entity's presence stops + route + associations, all places, presence in a time window |

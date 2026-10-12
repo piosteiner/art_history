@@ -1,4 +1,5 @@
 import { listAll, listEntities } from '../api';
+import { replaceUrl } from '../router';
 import { partLabel } from '../series';
 import { countryName, countryText, creatorNames, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
@@ -139,7 +140,7 @@ export function list(main: HTMLElement, plural: Plural) {
     const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-category]');
     if (!b) return;
     category = b.dataset.category || null;
-    history.replaceState(null, '', `/${plural}${category ? `?${FILTER!.param}=${encodeURIComponent(category)}` : ''}`);
+    replaceUrl(`/${plural}${category ? `?${FILTER!.param}=${encodeURIComponent(category)}` : ''}`);
     drawCategories();
     draw();
   });

@@ -908,3 +908,20 @@ test('lists beyond 500 entries: the rest is fetched with offset, nothing is cut 
   await expect(page.locator('.card-name', { hasText: 'Zz paged term' })).toBeVisible();
   await expect(page.locator('#count')).toHaveText(`${firstCount + 1} entries`);
 });
+
+test('back to a list returns to where the reader was; a new page starts at the top', async ({ page }) => {
+  await page.goto('/artworks');
+  await expect(page.locator('.card').nth(10)).toBeVisible();
+  const target = await page.evaluate(() => Math.min(800, document.documentElement.scrollHeight - innerHeight));
+  expect(target).toBeGreaterThan(200);
+  await page.mouse.wheel(0, target);
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(target - 5);
+  // a card in the middle of the screen (clicking a locator would first scroll it into view)
+  await page.evaluate(() => ([...document.querySelectorAll<HTMLElement>('.card-link')]
+    .find((a) => { const r = a.getBoundingClientRect(); return r.top > 100 && r.bottom < innerHeight; }))!.click());
+  await expect(page.locator('.detail h1')).toBeVisible();
+  expect(await page.evaluate(() => scrollY)).toBe(0);
+  await page.goBack();
+  await expect(page.locator('.card').nth(10)).toBeVisible();
+  await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(target - 5);
+});

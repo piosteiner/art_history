@@ -36,14 +36,55 @@ export const ROUTE_EVENT = 'arthistory:route';
 
 let onRouteHandler: ((route: Route) => void) | undefined;
 let rendered = ''; // pathname + search of the page on screen
-function run() {
+/** Renders the current address; `scroll`: where the reader was on it (back/forward, reload), else the top. */
+function run(scroll?: number) {
   rendered = location.pathname + location.search;
+  stopRestoring();
+  window.scrollTo(0, 0);
   onRouteHandler?.(currentRoute());
   window.dispatchEvent(new Event(ROUTE_EVENT));
+  if (scroll) restoreScroll(scroll);
+}
+
+// ---- scroll positions: each history entry keeps its own, so back/forward returns to where the reader was ----------
+if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; // the browser's would jump before the view is drawn
+let saveTimer: number | undefined;
+let restoring: (() => void) | null = null;
+function saveScroll() {
+  clearTimeout(saveTimer);
+  if (!restoring) history.replaceState({ ...history.state, scroll: window.scrollY }, '');
+}
+window.addEventListener('scroll', () => {
+  clearTimeout(saveTimer);
+  saveTimer = window.setTimeout(saveScroll, 200); // browsers limit how often replaceState may be called
+}, { passive: true });
+
+/** Views render once their data is in: scroll as soon as the page is tall enough, until the reader scrolls (≤ 4 s). */
+function restoreScroll(y: number) {
+  const reached = () => {
+    window.scrollTo(0, y);
+    return Math.abs(window.scrollY - y) < 2;
+  };
+  if (reached()) return;
+  const grows = new ResizeObserver(() => reached() && stopRestoring());
+  const timer = window.setTimeout(() => stopRestoring(), 4000);
+  const USER = ['wheel', 'touchstart', 'keydown', 'mousedown'] as const;
+  restoring = () => {
+    grows.disconnect();
+    clearTimeout(timer);
+    USER.forEach((t) => window.removeEventListener(t, stopRestoring));
+  };
+  grows.observe(document.body);
+  USER.forEach((t) => window.addEventListener(t, stopRestoring, { passive: true }));
+}
+function stopRestoring() {
+  restoring?.();
+  restoring = null;
 }
 
 /** Goes to an address inside the site without reloading the page. */
 export function navigate(url: string, { replace = false } = {}) {
+  if (!replace) saveScroll(); // the page being left keeps its position for "back"
   if (replace) history.replaceState(null, '', url);
   else history.pushState(null, '', url);
   run();
@@ -52,7 +93,12 @@ export function navigate(url: string, { replace = false } = {}) {
 /** Updates the explore query without a navigation (no re-render, no new history entry). */
 export function replaceQuery(params: URLSearchParams) {
   const qs = params.toString().replace(/%2C/g, ',');
-  history.replaceState(null, '', `/${qs ? `?${qs}` : ''}`);
+  replaceUrl(`/${qs ? `?${qs}` : ''}`);
+}
+
+/** Changes the address of the page on screen (filters in the query), keeping its scroll position for back/forward. */
+export function replaceUrl(url: string) {
+  history.replaceState(history.state, '', url);
 }
 
 /** A view renders into `main` and may return a cleanup function (maps, observers). */
@@ -78,7 +124,7 @@ export function start(onRoute: (route: Route) => void) {
   if (/^\/patrons(\/|$)/.test(location.pathname)) history.replaceState(null, '', location.pathname.replace(/^\/patrons/, '/people') + location.search);
   onRouteHandler = onRoute;
   // back/forward to another page re-renders; a jump within the page (footnotes: #…-n1) is the browser's to scroll
-  window.addEventListener('popstate', () => location.pathname + location.search !== rendered && run());
+  window.addEventListener('popstate', () => location.pathname + location.search !== rendered && run(history.state?.scroll));
   document.addEventListener('click', interceptLinks);
-  run();
+  run(history.state?.scroll); // a reload keeps the position too
 }
