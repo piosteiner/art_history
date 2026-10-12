@@ -162,8 +162,10 @@ async function ourSettlement(db, c) {
 
 // A town named by an authority file ("Genf", "Giverny") that we don't have under that name: OpenStreetMap finds it —
 // → { ours: {slug, name} } (we have it under another name: Geneva) | { candidate } (a new place to create) | null
-async function settlementByName(db, name) {
-  const hits = await nominatim({ q: name, featureType: 'settlement', limit: '1', addressdetails: '1', extratags: '1', namedetails: '1' });
+// country: an ISO code when the record says where ("안산" is in Korea, not Anshan in China)
+async function settlementByName(db, name, country = null) {
+  const hits = await nominatim({ q: name, featureType: 'settlement', limit: '1', addressdetails: '1', extratags: '1', namedetails: '1',
+    ...(/^[a-z]{2}$/.test(country || '') ? { countrycodes: country } : {}) });
   if (!hits.length) return null;
   const c = { ...toCandidate(hits[0]), kind: 'settlement' };
   const ours = await ourSettlement(db, c);

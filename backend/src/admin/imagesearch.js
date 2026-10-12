@@ -10,6 +10,8 @@
 //   europeana  Europeana (museums and archives across Europe): reusability=open (CC0, PDM, CC BY, CC BY-SA)
 //   smithsonian Smithsonian Open Access: CC0 images only
 //   japan      Japan Search (national portal: ColBase, Ritsumeikan ARC …): public domain, CC0, CC BY, CC BY-SA only
+//   smk        SMK – Statens Museum for Kunst, Copenhagen: open API, public-domain works with images (IIIF)
+//   dimu       DigitaltMuseum (about 300 Norwegian and Swedish museums): only records with a free licence
 //
 // Europeana and the Smithsonian want an API key (free): EUROPEANA_KEY, SMITHSONIAN_KEY in the server's env file —
 // without one their demo keys are used (rate-limited, meant for trying out).
@@ -25,6 +27,9 @@ const RIJKS_ID = process.env.RIJKS_ID_BASE || 'https://id.rijksmuseum.nl';
 const EUROPEANA = process.env.EUROPEANA_BASE || 'https://api.europeana.eu';
 const SMITHSONIAN = process.env.SMITHSONIAN_BASE || 'https://api.si.edu';
 const JAPANSEARCH = process.env.JAPANSEARCH_BASE || 'https://jpsearch.go.jp';
+const SMK = process.env.SMK_BASE || 'https://api.smk.dk';
+const DIMU = process.env.DIMU_BASE || 'https://api.dimu.org';
+const DIMU_MEDIA = process.env.DIMU_MEDIA_BASE || 'https://mm.dimu.org';
 const UA = 'arthistory-admin/1.0 (https://arthistory.piogino.ch)';
 const LIMIT = 16;
 
@@ -37,6 +42,8 @@ const SOURCES = {
   europeana: { name: 'Europeana', search: europeana },
   smithsonian: { name: 'Smithsonian', search: smithsonian },
   japan: { name: 'Japan Search', search: japan },
+  smk: { name: 'SMK (Copenhagen)', search: smk },
+  dimu: { name: 'DigitaltMuseum', search: dimu },
 };
 
 async function getJson(url, headers = {}) {
@@ -165,6 +172,39 @@ async function japan(q) {
     return [{ url, thumb: (c.thumbnailUrl || [])[0] || url, source_url: c.linkUrl || `https://jpsearch.go.jp/item/${it.id}`, license,
       credit: require('./japansearch').holder(c.provider) || 'Japan Search',
       title: [c.title, c.titleYomi && `(${c.titleYomi})`].filter(Boolean).join(' '), by: [(c.contributor || [])[0], (c.temporal || [])[0]].filter(Boolean).join(', ') || null }];
+  }).slice(0, LIMIT);
+}
+
+// SMK: public-domain works with an image; the IIIF server's 1200 px version, else its own thumbnail
+async function smk(q) {
+  const data = await getJson(`${SMK}/api/v1/art/search/?${new URLSearchParams({ keys: q, offset: '0', rows: String(LIMIT),
+    filters: '[has_image:true],[public_domain:true]' })}`);
+  return (data.items || []).filter((it) => it.public_domain && (it.image_iiif_id || it.image_thumbnail)).map((it) => {
+    const p = (it.production || [])[0] || {};
+    const title = ((it.titles || []).find((x) => /engelsk|english/i.test(x.language || '')) || (it.titles || [])[0] || {}).title;
+    return { url: it.image_iiif_id ? `${it.image_iiif_id}/full/1200,/0/default.jpg` : it.image_thumbnail,
+      thumb: it.image_iiif_id ? `${it.image_iiif_id}/full/400,/0/default.jpg` : it.image_thumbnail,
+      source_url: it.frontend_url || `https://open.smk.dk/artwork/image/${it.object_number}`, license: 'Public domain (PDM)', credit: 'SMK – Statens Museum for Kunst',
+      title: title || it.object_number, by: [p.creator, ((it.production_date || [])[0] || {}).period].filter(Boolean).join(', ') || null };
+  });
+}
+
+// DigitaltMuseum: the licence is part of each search hit ("CC by-sa", "CC pdm", "CC CC0 1.0" …) — only free ones;
+// images from its media server. Its demo key is meant for trying out (DIMU_KEY for an own one).
+const DIMU_LICENSES = { 'CC pdm': 'Public domain (PDM)', 'CC CC0 1.0': 'CC0', 'CC by': 'CC BY', 'CC by-sa': 'CC BY-SA' };
+const DIMU_OWNERS = { 'NMK-B': 'Nasjonalmuseet', 'NMK-A': 'Nasjonalmuseet', 'NMK-D': 'Nasjonalmuseet', 'NF': 'Norsk Folkemuseum', 'MUH': 'Munchmuseet',
+  'OB': 'Oslo Museum', 'NM': 'Nationalmuseum, Stockholm', 'S-NM': 'Nationalmuseum, Stockholm' };
+async function dimu(q) {
+  const data = await getJson(`${DIMU}/api/solr/select?${new URLSearchParams([['q', q], ['wt', 'json'], ['rows', String(LIMIT * 3)],
+    ['api.key', process.env.DIMU_KEY || 'demo'], ['fq', 'artifact.hasPictures:true'], ['fq', 'artifact.type:(Thing OR Fineart OR Photograph)']])}`);
+  return (((data.response || {}).docs) || []).flatMap((d) => {
+    const license = DIMU_LICENSES[(d['artifact.ingress.license'] || [])[0]];
+    const media = d['artifact.defaultMediaIdentifier'];
+    if (!license || !media) return [];
+    const owner = d['identifier.owner'] || '';
+    return [{ url: `${DIMU_MEDIA}/image/${media}?dimension=1200x1200`, thumb: `${DIMU_MEDIA}/image/${media}?dimension=400x400`,
+      source_url: `https://digitaltmuseum.no/${d['artifact.uniqueId']}`, license, credit: DIMU_OWNERS[owner] || owner || 'DigitaltMuseum',
+      title: d['artifact.ingress.title'] || '', by: [d['artifact.ingress.producer'], d['artifact.ingress.production.fromYear']].filter(Boolean).join(', ') || null }];
   }).slice(0, LIMIT);
 }
 

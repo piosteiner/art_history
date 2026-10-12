@@ -26,6 +26,7 @@ function comparePage(t, e, p, code) {
     <form method="post" action="/${t.folder}/${e.slug}/${code}" class="wd-form">
       <h2>Fields</h2>
       ${authority.fieldsTable(t, p, code)}
+      ${p.names && p.names.length ? html`<h2>Other names in ${c.short}</h2>${authority.namesTable(p)}` : ''}
       <h2>Relationships suggested by ${c.short}</h2>
       ${authority.relsTable(p, code)}
       ${p.ids && p.ids.length ? html`<h2>Reference records ${c.short} knows</h2>${authority.idsTable(p)}` : ''}

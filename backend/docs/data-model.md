@@ -313,7 +313,10 @@ created on Apply like a city found on save; every item is ticked by default and 
 059 adds `bnf`, `idref`, `hls`, `dodis`, `fotoch` to `authorities`. Persons are also compared with RKD (`rkd.js`,
 CIDOC-CRM birth/death events whose places carry their Wikidata item), the Library of Congress (`lc.js`, EDTF dates)
 and the BnF (`bnf.js`, SPARQL) — each reader produces one record shape that `records.js` turns into the comparison.
-Metagrid (`metagrid.js`) finds the numbers by name: the Enrich page adds them as reference records. Without a SIKART number, "Find in SIKART…" searches by name. Facts
+Metagrid (`metagrid.js`) finds the numbers by name: the Enrich page adds them as reference records.
+060 adds `kulturnav` and `nlk`; their readers (`kulturnav.js`, `nlk.js`) use the same record shape, which can carry
+other names (offered as checkboxes, appended to `names`). ArCo (`arco.js`) lists the works Italy's national catalogue
+has for a person (by Wikidata item) — information only. Without a SIKART number, "Find in SIKART…" searches by name. Facts
 only — SIKART's lexicon texts and images are linked, not copied (no published terms for the API).
 
 ## Sources for facts (migration 049)

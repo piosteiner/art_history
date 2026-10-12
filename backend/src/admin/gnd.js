@@ -55,7 +55,7 @@ async function placeTarget(db, ref) {
   }
   const target = await ourEntry(db, ['place'], ref);
   if (target) return { target };
-  const found = await placefinder.settlementByName(db, ref.label).catch(() => null);
+  const found = await placefinder.settlementByName(db, ref.label, ref.country || null).catch(() => null);
   if (!found) return {};
   return found.ours ? { target: { type: 'place', ...found.ours, by_id: false, via: 'osm' } } : { create: found.candidate };
 }
@@ -184,7 +184,9 @@ async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', 
       ids += 1;
     } catch { await db.query('ROLLBACK TO SAVEPOINT idf'); }
   }
-  return { form, cites, agreed, relationships, ids, created };
+  // other names ticked (records.js: NLK's Korean names …) → lines for the names field ("text | lang | role")
+  const addNames = (plan.names || []).filter((n) => choices[`name.${n.i}`] === 'take').map((n) => [n.text, n.lang, n.role].join(' | '));
+  return { form, cites, agreed, relationships, ids, created, addNames };
 }
 
 module.exports = { fetchRecord, compare, apply, recordUrl, natural, ourEntry, placeTarget, ensureSource };

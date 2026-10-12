@@ -75,6 +75,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Enrich page (Wikidata + GND + SIKART in one review, `src/admin/enrich.js`, `authority.js`) and Quality queue (next issue, batch Wikidata / GND citing, `routes/queue.js`) built 2026-10-12.
   More sources (059: Metagrid numbers by name; LC, BnF, RKD compared like the GND — `records.js`, `lc.js`, `bnf.js`, `rkd.js`, `metagrid.js`) built 2026-10-12.
   Image search also in Rijksmuseum, Europeana, Smithsonian, Japan Search (keys `EUROPEANA_KEY`, `SMITHSONIAN_KEY` in backend.env); Japan Search readings on Enrich (`japansearch.js`) built 2026-10-12.
+  KulturNav, NLK (names offered), ArCo (works in Italy) on Enrich; SMK, DigitaltMuseum image search (060) built 2026-10-12.
   Quality findings stored (058: table `quality_issues` refreshed after commits via LISTEN/NOTIFY; **checks live in the view `quality_issues_live` — change that one**) built 2026-10-12.
   SIKART (057: portal links, "Find in SIKART…" by name, compare like the GND — `src/admin/sikart.js`, source `sikart`) built 2026-10-09.
   Wrong type: `type_doubt()`, Wikidata class check, `convert_entry()` + `entry_moves` redirects (055) built 2026-10-09.

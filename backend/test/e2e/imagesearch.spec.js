@@ -50,3 +50,14 @@ test('find images: Rijksmuseum, Europeana, Smithsonian, Japan Search — only fr
   await expect(items).toContainText('Tokyo National Museum · Public domain (PDM)');
   await expect(items).toContainText('名所江戸百景 亀戸梅屋舗');
 });
+
+test('find images: SMK and DigitaltMuseum — only public-domain / free-licence records', async ({ userA }) => {
+  await userA.goto('/artworks/plum-park-in-kameido/images/find?q=Hammershoi&source=smk');
+  const items = userA.locator('.find-item');
+  await expect(items).toHaveCount(1);
+  await expect(items.locator('img')).toHaveAttribute('src', 'https://iip.smk.dk/iiif/jp2/TEST.jp2/full/400,/0/default.jpg');
+  await expect(items).toContainText('SMK – Statens Museum for Kunst · Public domain (PDM)');
+  await userA.click('.source-tabs a:has-text("DigitaltMuseum")');
+  await expect(items).toHaveCount(1);                                         // no NC licence, no record without one
+  await expect(items).toContainText('Munchmuseet · CC BY-SA');
+});

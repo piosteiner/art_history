@@ -17,12 +17,15 @@ const sikart = require('./sikart');
 const placefinder = require('./placefinder');
 const { formToDoc, fieldLabel } = require('./forms');
 const { UserError } = require('./core');
+const collab = require('./collab');
 
-// The sources of the bibliography the comparisons cite (059 created those of lc, bnf, rkd — again if deleted)
+// The sources of the bibliography the comparisons cite (059/060 created these — again if deleted)
 const SOURCE_ROWS = {
   lc: ['Library of Congress Name Authority File', 'LCNAF', 'https://id.loc.gov/authorities/names.html', 'institution', 'Library of Congress'],
   bnf: ['data.bnf.fr', 'BnF', 'https://data.bnf.fr/', 'institution', 'Bibliothèque nationale de France'],
   rkd: ['RKDartists', 'RKD', 'https://rkd.nl/', 'scholarly', 'RKD – Nederlands Instituut voor Kunstgeschiedenis'],
+  kulturnav: ['KulturNav', 'KulturNav', 'https://kulturnav.org/', 'institution', 'Kulturnav / Arts Council Norway'],
+  nlk: ['National Library of Korea Linked Open Data', 'NLK', 'https://lod.nl.go.kr/', 'institution', 'National Library of Korea'],
 };
 const ensureRow = (slug) => (db) => db.query(`INSERT INTO bibliography (slug, kind, name, siglum, url, reliability, container)
   VALUES ($1, 'web', $2, $3, $4, $5, $6) ON CONFLICT (slug) DO NOTHING`, [slug, ...SOURCE_ROWS[slug]]);
@@ -39,6 +42,8 @@ const SOURCES = {
   rkd: person(require('./rkd'), 'rkd', 'RKD'),
   lc: { ...person(require('./lc'), 'lc', 'the Library of Congress'), short: 'LC' },
   bnf: { ...person(require('./bnf'), 'bnf', 'the BnF'), short: 'BnF' },
+  kulturnav: person(require('./kulturnav'), 'kulturnav', 'KulturNav'),
+  nlk: { ...person(require('./nlk'), 'nlk', 'the National Library of Korea'), short: 'NLK' },
 };
 
 // A place found in OpenStreetMap (placefinder.settlementByName) → created like the city found on save: the place
@@ -69,7 +74,17 @@ async function plan(t, e, code) {
 async function apply(db, t, e, code, p, choices, user) {
   const r = await gnd.apply(db, t, e, p, choices, citations, { ...SOURCES[code].opts, createPlace: (d, c) => createPlaceFrom(d, c, user) });
   if (r.agreed.length) await citations.citeAgreeingSource(db, t.type, e.id, SOURCES[code].source, p.url, r.agreed, user.id);
+  // ticked other names: added to the names of the working copy (the Enrich page combines several sources' itself)
+  if (r.addNames.length) r.form['f.names'] = withNames((await collab.currentForm(t, e.id)).form['f.names'], r.addNames);
   return r;
+}
+
+// names text + new lines (a name already there — by its text — isn't added twice)
+function withNames(text, lines) {
+  const have = String(text || '').split('\n').map((l) => l.trim()).filter(Boolean);
+  const textOf = (l) => l.split('|')[0].trim().toLowerCase();
+  for (const l of lines) if (!have.some((h) => textOf(h) === textOf(l))) have.push(l);
+  return have.join('\n');
 }
 
 // The choices of one source in a form with several: "gnd:take.birth" → "take.birth"
@@ -96,6 +111,14 @@ function fieldsTable(t, p, code, { prefix = '', skip = [] } = {}) {
   </tbody></table></div>`;
 }
 
+// the record's other names we don't have — ticked ones are added to the entry's names
+function namesTable(p, { prefix = '' } = {}) {
+  if (!p.names || !p.names.length) return '';
+  return html`<div class="table-wrap"><table class="diff wd-table wd-names"><tbody>${p.names.map((n) => html`<tr>
+    <td><label class="choice"><input type="checkbox" name="${prefix}name.${n.i}" value="take"${n.preselect ? ' checked' : ''}> <b>${n.text}</b></label></td>
+    <td><span class="tag">${n.lang}</span> <span class="muted small">${n.role}</span></td></tr>`)}</tbody></table></div>`;
+}
+
 function relsTable(p, code, { prefix = '' } = {}) {
   const c = SOURCES[code];
   if (!p.rels.length) return html`<p class="muted">None.</p>`;
@@ -119,4 +142,4 @@ function idsTable(p, { prefix = '' } = {}) {
 const recordLine = (p, code) => html`<a href="${p.url}" target="_blank" rel="noopener">${SOURCES[code].short} ${p.gnd} ↗</a> — <b>${p.info.name}</b>${p.info.occupations.length ? html` · <span class="muted">${p.info.occupations.join(', ')}</span>` : ''}`;
 const variantsLine = (p, code) => (p.info.variants.length ? html`<p class="muted small">${code === 'gnd' ? 'Other names in the GND: ' : ''}${p.info.variants.join(' · ')}</p>` : '');
 
-module.exports = { SOURCES, plan, apply, choicesOf, createPlaceFrom, fieldsTable, relsTable, idsTable, recordLine, variantsLine };
+module.exports = { SOURCES, plan, apply, choicesOf, createPlaceFrom, fieldsTable, relsTable, idsTable, namesTable, withNames, recordLine, variantsLine };

@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Admin: KulturNav, National Library of Korea, ArCo on the Enrich page; SMK and DigitaltMuseum in the image search (migration 060)
+- **What:** 060 adds the authorities `kulturnav` (P1248) and `nlk` (P5034) with bibliography sources. Readers
+  `kulturnav.js` (persons: birth/death by the day with places, VIAF/ULAN/LC) and `nlk.js` (lod.nl.go.kr SPARQL: years,
+  birthplace — "경기도 안산" → 안산시 in Korea —, Korean name and hanja/art names) → `records.js`, which now also offers
+  **other names** (ticked ones appended to the names; the Enrich page merges those of all sources with Wikidata's and
+  the Japan Search reading). Place lookups take a country hint (OpenStreetMap otherwise found 안산 = Anshan, China).
+  `arco.js`: Italy's Catalogo generale (dati.beniculturali.it, CC BY) — the works it catalogues for a person, found
+  through the Wikidata item; information only. `imagesearch.js`: SMK (public domain, IIIF) and DigitaltMuseum (only CC0 /
+  PDM / CC BY / CC BY-SA; `DIMU_KEY`, demo key until then).
+- **Not built (unreachable from this server):** Prado and Biblioteca Nacional de España, Gallica, Finna (bot
+  protection), Taiwan's National Palace Museum (no answer), Korea's e-museum (needs a data.go.kr key), Paris Musées
+  (needs an account token), Fondazione Zeri (502 all day).
+- **Why:** owner: more countries' databases.
+- **Revert:** delete the `kulturnav`/`nlk` identifiers and authorities, the two bibliography rows if uncited,
+  `DELETE FROM schema_migrations WHERE name = '060_nordic_korean_authorities.sql'`; revert the commit.
+- **Tested:** live (Munch in KulturNav, Kim Hong-do in the NLK, Canova's 180 works in ArCo, Hammershøi at SMK, Munch in
+  DigitaltMuseum); e2e `enrich-world.spec`, `imagesearch.spec`.
+
 ### Fix: deploy tests crowded out the live site's database connections
 - **What:** pool sizes configurable (`DB_ADMIN_POOL_MAX`, `DB_API_POOL_MAX`; production keeps 3 / 5); the e2e test
   servers run with 2 / 2 (`test/e2e/env.js`). Role limits raised (`sudo -u postgres psql`): `arthistory_admin` and

@@ -209,6 +209,45 @@ function handle(req, res) {
       provider: 'Tokyo National Museum', contributor: ['歌川広重'] } });
     return json({ hit: 2, list: [item('tnm-1', 'pdm'), item('tnm-2', 'ccbyncsa')] });
   }
+  // KulturNav (src/admin/kulturnav.js): Edvard Munch, shortened
+  if (url.pathname === '/kulturnav/fad5b908-b64d-4feb-ac06-c175ea1f5128.json') {
+    const ev = (time, place) => [{ value: { properties: { 'event.time': [{ value: time }],
+      'event.placeReference': [{ value: { properties: { 'placeReference.placeString': [{ value: { '*': place } }] } } }] } } }];
+    return json({ caption: { '*': 'Munch, Edvard (1863 - 1944)' }, properties: { 'entity.name': [{ value: { '*': 'Munch, Edvard' } }],
+      'person.birth': ev('18631212-D', 'Løten, Hedmark (Norge)'), 'person.death': ev('19440123-D', 'Oslo (fylke), Oslo (Norge)'),
+      'entity.sameAs': [{ value: 'http://viaf.org/viaf/61624802' }, { value: 'http://vocab.getty.edu/ulan/500032949-agent' }, { value: 'http://id.loc.gov/authorities/names/n79006348' }] } });
+  }
+  // the National Library of Korea (src/admin/nlk.js): Kim Hong-do
+  if (url.pathname === '/nlk/sparql') {
+    if (!/KAC200207547/.test(p.get('query') || '')) return json({ results: { bindings: [] } });
+    const b = (pp, o) => ({ p: { value: pp }, o: { value: o } });
+    return json({ results: { bindings: [b('http://www.w3.org/2004/02/skos/core#prefLabel', '김홍도'), b('http://lod.nl.go.kr/ontology/birthYear', '1745'),
+      b('http://schema.org/birthPlace', '경기도 안산'), b('http://www.w3.org/2004/02/skos/core#altLabel', '金弘道'), b('http://www.w3.org/2004/02/skos/core#altLabel', '檀園'),
+      b('http://www.w3.org/2004/02/skos/core#altLabel', 'Kim, Hongdo'), b('http://schema.org/jobTitle', '화가(미술가)[畵家]'),
+      b('http://www.w3.org/2002/07/owl#sameAs', 'http://viaf.org/viaf/122299485')] } });
+  }
+  // ArCo (src/admin/arco.js): Canova's works in the Italian catalogue
+  if (url.pathname === '/arco/sparql') {
+    const q = p.get('query') || '';
+    if (!/Q5547>/.test(q)) return json({ results: { bindings: [] } });
+    if (/COUNT\(/.test(q)) return json({ results: { bindings: [{ n: { value: '180' } }] } });
+    const w = (id, l) => ({ w: { value: `https://w3id.org/arco/resource/HistoricOrArtisticProperty/${id}` }, l: { value: l } });
+    return json({ results: { bindings: [w('0800404054', "Maria Luigia d'Asburgo in veste di Concordia (scultura) di Canova Antonio"),
+      w('0800404054', "Maria Luigia d'Asburgo in veste di Concordia (scultura) by Canova Antonio"), w('0500073378-1', 'Felicità (rilievo) by Canova Antonio')] } });
+  }
+  // SMK and DigitaltMuseum (src/admin/imagesearch.js)
+  if (url.pathname === '/smk/api/v1/art/search/') {
+    return json({ found: 2, items: [
+      { object_number: 'KMS3352', titles: [{ title: 'Ida in an Interior', language: 'engelsk' }], public_domain: true,
+        image_iiif_id: 'https://iip.smk.dk/iiif/jp2/TEST.jp2', frontend_url: 'https://open.smk.dk/artwork/image/KMS3352',
+        production: [{ creator: 'Hammershøi, Vilhelm' }], production_date: [{ period: '1907' }] },
+      { object_number: 'KMS9999', titles: [{ title: 'Not free' }], public_domain: false, image_thumbnail: 'https://example.org/t.jpg' }] });
+  }
+  if (url.pathname === '/dimu/api/solr/select') {
+    const doc = (id, lic, title) => ({ 'artifact.uniqueId': id, 'identifier.owner': 'MUH', 'artifact.ingress.title': title,
+      'artifact.ingress.license': lic ? [lic] : undefined, 'artifact.defaultMediaIdentifier': `m${id}`, 'artifact.ingress.producer': 'Munch, Inger' });
+    return json({ response: { numFound: 3, docs: [doc('1', 'CC by-sa', 'Bilde'), doc('2', 'CC by-nc-nd', 'Not free'), doc('3', null, 'No licence')] } });
+  }
   // Nominatim reverse (placefinder.cityAt): like Manhattan for the Guggenheim, the object at city zoom is a district
   // (Yukinoshita) and only the address names the city (Kamakura); far north: nothing there
   if (url.pathname === '/reverse') {
