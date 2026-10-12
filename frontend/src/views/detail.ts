@@ -403,6 +403,13 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
   loading(main);
   const current = guard();
   let cleanup: (() => void) | undefined;
+  let observer: IntersectionObserver | undefined;
+  // started together with the entry rather than after it: one round trip less (terms and sources have no map,
+  // places and events show their own point; the route data is for the others)
+  const mapModule = plural === 'glossary' || plural === 'bibliography' ? null : import('../map');
+  const mapData = mapModule && plural !== 'places' && plural !== 'events' ? getEntityMap(plural, slug) : null;
+  mapModule?.catch(() => {}); // handled where they are used; no unhandled rejection when the entry fails first
+  mapData?.catch(() => {});
 
   getEntity(plural, slug)
     .then((e: DetailByPlural[Plural]) => {
@@ -439,7 +446,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             ${facts.length ? html`<dl class="facts">${facts.map(([k, value]) => html`<dt>${k}</dt><dd>${value}</dd>`)}</dl>` : ''}
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
-            <section id="crossed" class="crossed" hidden></section>
+            <div id="crossed-anchor"></div><section id="crossed" class="crossed" hidden></section>
             ${relationshipSections(e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r)), e.type, e.bibliography)}
             ${e.type === 'source'
               ? backlinks('Cited in', 'Entries whose texts cite this source.', e.mentioned_in)
@@ -456,13 +463,21 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       knownPreviews(e.entries);
       wireTextLinks(main, e.glossary, e.bibliography, e.entries);
       wireCitations(main);
-      if (['artist', 'person', 'artwork', 'place'].includes(e.type)) crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
+      // all-time presence + the artworks list is a heavy download: only once the section is about to come into view
+      if (['artist', 'person', 'artwork', 'place'].includes(e.type)) {
+        observer = new IntersectionObserver((seen) => {
+          if (!seen.some((x) => x.isIntersecting)) return;
+          observer?.disconnect();
+          crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
+        }, { rootMargin: '800px 0px' });
+        observer.observe(main.querySelector('#crossed-anchor')!);
+      }
       if (!hasMap) return;
 
       const mapEl = main.querySelector<HTMLElement>('#map')!;
       const legend = main.querySelector<HTMLElement>('#legend')!;
       // MapLibre loads only for pages with a map (terms and sources have none)
-      import('../map').then(({ createMap, showEntity, showOwnSite, showPoint }) => {
+      mapModule!.then(({ createMap, showEntity, showOwnSite, showPoint }) => {
         if (!current()) return;
         const map = createMap(mapEl);
         cleanup = () => map.remove();
@@ -480,7 +495,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             : html`<span><i class="dot" style="background:${COLORS.place}"></i>${e.place!.name} (no exact location recorded)</span>`);
           return;
         }
-        getEntityMap(plural as Exclude<Plural, 'places'>, slug)
+        mapData!
           .then((fc) => {
             if (!current()) return;
             const stops = fc.features.filter((f) => f.geometry.type === 'Point');
@@ -520,5 +535,8 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
     })
     .catch((err) => current() && showError(main, err));
 
-  return () => cleanup?.();
+  return () => {
+    observer?.disconnect();
+    cleanup?.();
+  };
 }
