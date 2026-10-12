@@ -28,7 +28,7 @@ map uses OpenFreeMap (free, no key).
 | `src/selection.ts`, `src/picker.ts` | explore page: per type all / none / chosen entries ("Show" dropdowns); stored in the URL (`#/?artists=a,b&movements=none&from=1888&to=1889`) and remembered in localStorage |
 | `src/timeline.ts` | SVG timeline of lifespans/periods: window by dragging across the bars, clicking a bar or typing from/to years; zoom (− / + / Fit, Ctrl+wheel, pinch, keys) and pan (◀ ▶, dragging the year axis, sideways wheel, arrow keys) |
 | `src/views/graph.ts` | network graph (`#/graph/<type>/<slug>?depth=&categories=`) with d3-force: click = details, double-click = recenter, Ctrl+click = new tab |
-| `src/theme.ts` | Auto / Light / Dark toggle (follows the system by default); maps use the matching base map |
+| `src/theme.ts` | Auto / Light / Dark toggle (follows the system by default); maps swap to the matching base map in place (`THEME_EVENT`; `src/map.ts` carries its sources and layers into the new style), the page isn't re-rendered |
 | `tests/` | Playwright smoke tests (desktop + phone); run in the Pages workflow before every deploy |
 | `src/views/` | explore (map + timeline), list, detail (all types), graph |
 | `public/` | copied as is: `CNAME`, `health.html` (CORS round-trip check) |

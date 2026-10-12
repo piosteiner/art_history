@@ -925,3 +925,28 @@ test('back to a list returns to where the reader was; a new page starts at the t
   await expect(page.locator('.card').nth(10)).toBeVisible();
   await expect.poll(() => page.evaluate(() => scrollY)).toBeGreaterThan(target - 5);
 });
+
+test('switching to dark keeps the page: only the base map changes, the overlays stay', async ({ page }) => {
+  const errors = noErrors(page);
+  await page.emulateMedia({ colorScheme: 'light' });
+  await page.goto('/');
+  await expect(page.locator('#map-status')).toContainText('places');
+  type W = { __maps: { getStyle(): { layers: { id: string; paint?: unknown }[] } | undefined; hasImage(id: string): boolean }[] };
+  const arrows = () => page.evaluate(() => (window as unknown as W).__maps.at(-1)!.hasImage('route-arrow'));
+  const overlays = () => page.evaluate(() => (window as unknown as W).__maps.at(-1)!.getStyle()?.layers.filter((l) => /^(places|ov-)/.test(l.id)).length ?? 0); // no style while one loads
+  // the base map's first layer (its background): another colour in the dark style
+  const baseName = () => page.evaluate(() => JSON.stringify((window as unknown as W).__maps.at(-1)!.getStyle()?.layers[0].paint ?? null));
+  await expect.poll(overlays).toBeGreaterThan(0);
+  const before = { name: await baseName(), overlays: await overlays(), arrows: await arrows() };
+  expect(before.arrows).toBe(true); // the start map has routes
+  await page.fill('input[name=from]', '1890'); // typed, not yet applied: a re-render would lose it
+  const toggle = page.locator('.theme-toggle');
+  await toggle.click(); // light (no change from the system)
+  await toggle.click(); // dark
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect.poll(baseName).not.toBe(before.name);
+  await expect.poll(overlays).toBe(before.overlays);
+  await expect.poll(arrows).toBe(before.arrows); // the routes' arrows are drawn again for the new style
+  await expect(page.locator('input[name=from]')).toHaveValue('1890');
+  expect(errors).toEqual([]);
+});

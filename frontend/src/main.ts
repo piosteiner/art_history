@@ -1,7 +1,7 @@
 import './style.css';
 import { mountThemeToggle } from './theme';
 import { html, PLURAL_LABEL, render } from './html';
-import { currentRoute, start, type Cleanup, type Route } from './router';
+import { start, type Cleanup, type Route } from './router';
 import { watchLinks } from './previews';
 import { mountSearch } from './search';
 import type { Plural } from './types';
@@ -23,8 +23,8 @@ render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph"
   ${NAV.map((g) => html`<span class="nav-group" title="${g.title}">${g.plurals.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}</span>`)}`);
 mountSearch(document.getElementById('search')!);
 watchLinks(main); // previews on the internal links of every page
-// switching between light and dark re-renders the page so the maps load the matching base map
-mountThemeToggle(document.getElementById('theme')!, () => onRoute(currentRoute()));
+// light/dark: the page stays, maps swap their base map (THEME_EVENT in src/map.ts)
+mountThemeToggle(document.getElementById('theme')!);
 
 let cleanup: Cleanup;
 

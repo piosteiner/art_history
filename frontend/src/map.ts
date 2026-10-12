@@ -8,7 +8,7 @@ import { html, href, link, type Html } from './html';
 import { encounterLine } from './crossings';
 import { encounterKeys, type Encounter } from './encounters';
 import { COLORS, PALETTE } from './colors';
-import { isDark } from './theme';
+import { isDark, THEME_EVENT } from './theme';
 
 export { COLORS, PALETTE };
 import type { EntityMap, EntityType, EventMapProps, EventsMap, PlacesMap, PresenceMap, SiteProps, SitesMap, StopFeature } from './types';
@@ -41,14 +41,46 @@ export function createMap(container: HTMLElement, fullscreen: HTMLElement | null
   map.addControl(new FullscreenControl(fullscreen ? { container: fullscreen } : {}), 'top-right');
   // development only: lets browser tests find places on screen (map.project); not in the production build
   if (import.meta.env.DEV) ((window as unknown as { __maps?: MapLibre[] }).__maps ??= []).push(map);
+  map.on('style.load', () => styled.add(map));
+  // a new base style (light/dark) comes without our images: the route arrows are drawn again when asked for
+  map.setMissingStyleImageResolver((id) => { if (id === 'route-arrow') ensureArrow(map); });
+  live.add(map);
   return map;
 }
 
-/** Runs `fn` once the style is ready (immediately if it already is). */
+const styled = new WeakSet<MapLibre>(); // maps whose (current) style has loaded
+const live = new Set<MapLibre>(); // maps on the page, for theme switches
+const ownSources = new WeakMap<MapLibre, Set<string>>(); // the overlay sources we added (not the base map's)
+
+/** Runs `fn` once the style is ready (immediately if it already is; again-loading after a theme switch counts). */
 export function whenReady(map: MapLibre, fn: () => void) {
-  if (map.isStyleLoaded()) fn();
-  else map.once('load', fn);
+  if (styled.has(map)) fn();
+  else map.once('style.load', fn);
 }
+
+/**
+ * Light ↔ dark: the base map changes under the overlays. Our sources (with their current data) and layers are carried
+ * into the new style, so the page, its popups, highlights and the map's position all stay.
+ */
+function restyle() {
+  for (const map of live) {
+    if (!map.getContainer().isConnected) {
+      live.delete(map); // removed with its page
+      continue;
+    }
+    const ours = ownSources.get(map) ?? new Set();
+    styled.delete(map);
+    map.setStyle(style(), {
+      diff: false,
+      transformStyle: (prev, next) => prev ? {
+        ...next,
+        sources: { ...next.sources, ...Object.fromEntries(Object.entries(prev.sources).filter(([id]) => ours.has(id))) },
+        layers: [...next.layers, ...prev.layers.filter((l) => 'source' in l && ours.has(l.source as string))],
+      } : next,
+    });
+  }
+}
+window.addEventListener(THEME_EVENT, restyle);
 
 function fit(map: MapLibre, coords: [number, number][], maxZoom = 6) {
   if (!coords.length) return;
@@ -60,7 +92,10 @@ function fit(map: MapLibre, coords: [number, number][], maxZoom = 6) {
 function setData(map: MapLibre, id: string, data: GeoJSON.FeatureCollection) {
   const src = map.getSource(id) as GeoJSONSource | undefined;
   if (src) src.setData(data);
-  else map.addSource(id, { type: 'geojson', data });
+  else {
+    map.addSource(id, { type: 'geojson', data });
+    ownSources.set(map, (ownSources.get(map) ?? new Set()).add(id));
+  }
 }
 
 function removeLayers(map: MapLibre, ids: string[]) {

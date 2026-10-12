@@ -25,8 +25,12 @@ function apply() {
 }
 apply();
 
-/** A header button cycling Auto → Light → Dark; `onChange` re-renders the page so maps switch style too. */
-export function mountThemeToggle(root: HTMLElement, onChange: () => void) {
+/** Fired on `window` when the page turns light or dark; maps (src/map.ts) switch their base map. */
+export const THEME_EVENT = 'arthistory:theme';
+const onChange = () => window.dispatchEvent(new Event(THEME_EVENT));
+
+/** A header button cycling Auto → Light → Dark. */
+export function mountThemeToggle(root: HTMLElement) {
   const btn = document.createElement('button');
   btn.type = 'button';
   btn.className = 'theme-toggle';
