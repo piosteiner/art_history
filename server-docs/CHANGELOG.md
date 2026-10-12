@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Admin: new bibliography entries from an ISBN or DOI
+- **What:** `src/admin/booklookup.js` + `GET /bibliography/new/lookup?id=…` (box on the new-source form): an ISBN →
+  Open Library (`/api/books?jscmd=data`), a DOI → Crossref (`/works/<doi>`): kind, title, subtitle, authors/editors as
+  "Surname, Given", container, volume, issue, pages, place, publisher, year, ISBN/DOI → the new-entry form (draft), slug
+  "surname-year"; where it came from in metadata.sources. An ISBN/DOI already in the bibliography opens that entry.
+- **Why:** on the "ideas later" list; owner asked for it with the other databases.
+- **Revert:** revert the commit.
+- **Tested:** live (a book by ISBN; an article and a lexicon entry by DOI); e2e `booklookup.spec`.
+
 ### Admin: Metagrid, the Library of Congress, the BnF and RKD on the Enrich page (migration 059)
 - **What:** 059 adds the authorities `bnf` (P268), `idref` (P269), `hls` (P902), `dodis` (P701), `fotoch`; RKD's
   links point at rkd.nl/en/explore; bibliography sources `lc`, `bnf` (institution) and `rkd` (scholarly).

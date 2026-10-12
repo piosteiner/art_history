@@ -98,6 +98,9 @@ router.get('/:plural/new', async (req, res) => {
     title: `New ${t.type}`,
     page: { type: t.type, slug: null, mode: 'new' },
     body: html`<h1>New ${t.type}</h1>
+      ${t.type === 'source' ? html`<form method="get" action="/bibliography/new/lookup" class="bar" id="lookup">
+        <input name="id" class="grow" placeholder="ISBN or DOI — fills in the form (Open Library, Crossref)" aria-label="ISBN or DOI" required>
+        <button class="secondary">Fill in</button></form>` : ''}
       ${useDraft ? restoredBanner({ draft, rb: { stale: false, merged: [], conflicts: [] }, t })
         : draftBanner({ draft, changed: [...new Set(changed)], restoreUrl: `/${t.folder}/new?draft=1`, t })}
       ${entityForm({ t, slug: useDraft ? draft.form.slug || '' : '', f: useDraft ? formFromBody(draft.form) : docToForm(await newDocFrom(t, req.query), t.fields),

@@ -28,7 +28,8 @@ function shard(i) {
     serverEnv: () => ({ ...process.env, DB_NAME: DB, PORT: String(PORT), NODE_ENV: 'development',
       WIKIDATA_BASE: FIXTURES, COMMONS_BASE: FIXTURES, MET_BASE: FIXTURES, NOMINATIM_BASE: FIXTURES, AIC_BASE: FIXTURES,
       CLEVELAND_BASE: FIXTURES, LOBID_BASE: FIXTURES, SIKART_BASE: `${FIXTURES}/sik`,
-      METAGRID_BASE: `${FIXTURES}/metagrid`, LC_BASE: `${FIXTURES}/lc`, BNF_BASE: `${FIXTURES}/bnf`, RKD_BASE: `${FIXTURES}/rkd` }),
+      METAGRID_BASE: `${FIXTURES}/metagrid`, LC_BASE: `${FIXTURES}/lc`, BNF_BASE: `${FIXTURES}/bnf`, RKD_BASE: `${FIXTURES}/rkd`,
+      OPENLIBRARY_BASE: `${FIXTURES}/openlibrary`, CROSSREF_BASE: `${FIXTURES}/crossref` }),
   };
 }
 

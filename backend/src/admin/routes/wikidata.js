@@ -9,6 +9,7 @@ const citations = require('../citations');
 const placefinder = require('../placefinder');
 const { searchPage, reviewPage } = require('../wikidata-ui');
 const collab = require('../collab');
+const booklookup = require('../booklookup');
 const { docToForm } = require('../forms');
 const { send, withTx, typeWarning, notFoundPage, findEntity, pluralParam } = require('../core');
 
@@ -75,6 +76,29 @@ async function wikidataApply(req, res, t, e) {
   if (result.cites.length) await withTx(req.user, (db) => citations.pendingFromWikidata(db, t.type, e.id, qid, result.cites, req.user.id), { source: 'wikidata' });
   res.redirect(303, `/${t.folder}/${e.slug}/edit?done=wikidata&rels=${result.relationships}&created=${result.created.length}&imgs=${result.images}`);
 }
+
+// A new bibliography entry from its ISBN or DOI (src/admin/booklookup.js): fills the new-entry form (the user's draft)
+router.get('/bibliography/new/lookup', async (req, res) => {
+  const t = BY_TYPE.source;
+  const text = String(req.query.id || '').trim();
+  const back = (msg, status = 422) => send(req, res, { title: 'New source', status, flash: { kind: 'error', text: msg },
+    body: html`<p><a href="/bibliography/new#lookup">← New source</a></p>` });
+  let found;
+  try { found = await booklookup.lookup(text); } catch (err) { return back(err.message); }
+  if (!found) return back(`Nothing found for ${text}.`, 404);
+  // already in the bibliography? then that one
+  const [col, value] = Object.entries(found.key)[0];
+  const have = (await adminPool.query(`SELECT slug FROM bibliography WHERE regexp_replace(lower(${col}), '[^0-9a-z./x]', '', 'g') = $1`,
+    [String(value).toLowerCase().replace(/[^0-9a-z./x]/g, '')])).rows[0];
+  if (have) return res.redirect(303, `/bibliography/${have.slug}?done=source-exists`);
+  const doc = { ...found.doc, metadata: { sources: [`${found.source.name}: ${found.source.url} (retrieved ${new Date().toISOString().slice(0, 10)})`] } };
+  const form = Object.fromEntries(Object.entries(docToForm(doc, t.fields)).map(([k, v]) => [`f.${k}`, v]));
+  const who = (doc.authors || doc.editors || [doc.name])[0] || 'source';
+  const slug = wikidata.slugify(`${String(who).split(',')[0]} ${doc.year || ''}`);
+  await adminPool.query(`INSERT INTO admin_drafts (user_id, entity_type, entity_id, form) VALUES ($1, $2, NULL, $3)
+    ON CONFLICT (user_id, entity_type, entity_id) DO UPDATE SET form = EXCLUDED.form, updated_at = now()`, [req.user.id, t.type, JSON.stringify({ slug, ...form })]);
+  res.redirect(303, '/bibliography/new?draft=1&done=looked-up');
+});
 
 router.get('/:plural/new/wikidata', (req, res) => wikidataPage(req, res, req.t, null));
 router.post('/:plural/new/wikidata', (req, res) => wikidataApply(req, res, req.t, null));

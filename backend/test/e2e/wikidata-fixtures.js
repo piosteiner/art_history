@@ -165,6 +165,17 @@ function handle(req, res) {
     if (!n) { res.writeHead(404); return res.end('[]'); }
     return json([{ '@id': `${R}${url.pathname.slice(4)}`, ...n }]);
   }
+  // Open Library and Crossref (src/admin/booklookup.js): a book by ISBN, an article by DOI
+  if (url.pathname === '/openlibrary/api/books') {
+    if (p.get('bibkeys') !== 'ISBN:9783775723107') return json({});
+    return json({ 'ISBN:9783775723107': { title: 'Ferdinand Hodler', subtitle: 'Landschaften', authors: [{ name: 'Oskar Bätschmann' }, { name: 'Paul Müller' }],
+      publishers: [{ name: 'Hatje Cantz' }], publish_places: [{ name: 'Ostfildern' }], publish_date: '2008', url: 'https://openlibrary.org/books/OL1M' } });
+  }
+  if (url.pathname.startsWith('/crossref/works/')) {
+    if (decodeURIComponent(url.pathname.slice('/crossref/works/'.length)) !== '10.2307/3046992') { res.writeHead(404); return res.end('{}'); }
+    return json({ message: { type: 'journal-article', title: ['The Sarcophagi of Ravenna'], author: [{ given: 'Marion', family: 'Lawrence' }],
+      'container-title': ['The Art Bulletin'], volume: '27', issue: '2', page: '123-140', issued: { 'date-parts': [[1945, 6]] }, publisher: 'JSTOR' } });
+  }
   // Nominatim reverse (placefinder.cityAt): like Manhattan for the Guggenheim, the object at city zoom is a district
   // (Yukinoshita) and only the address names the city (Kamakura); far north: nothing there
   if (url.pathname === '/reverse') {
