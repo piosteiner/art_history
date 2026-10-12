@@ -874,3 +874,21 @@ test('full screen map: legend and layer switches come along, the button leaves i
   await page.click('.maplibregl-ctrl-shrink');
   await expect.poll(() => wrap.evaluate((el) => document.fullscreenElement === el || el.classList.contains('maplibregl-pseudo-fullscreen'))).toBe(false);
 });
+
+test('a prerendered page stays on screen until the app replaces it: no "Loading…" flash', async ({ page }) => {
+  await page.route('**/artists/vincent-van-gogh', async (route) => {
+    const res = await route.fetch();
+    const body = (await res.text()).replace('<main id="app"></main>',
+      '<main id="app"><article class="page" data-prerendered><h1>Vincent van Gogh</h1><p class="subtitle">prerendered</p></article></main>');
+    await route.fulfill({ response: res, body });
+  });
+  await page.addInitScript(() => {
+    new MutationObserver(() => {
+      if (document.querySelector('#app .loading')) (window as unknown as { sawLoading: boolean }).sawLoading = true;
+    }).observe(document, { childList: true, subtree: true });
+  });
+  await page.goto('/artists/vincent-van-gogh');
+  await expect(page.locator('.detail h1')).toHaveText('Vincent van Gogh');
+  await expect(page.locator('.subtitle')).not.toHaveText('prerendered');
+  expect(await page.evaluate(() => (window as unknown as { sawLoading?: boolean }).sawLoading ?? false)).toBe(false);
+});

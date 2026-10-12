@@ -112,7 +112,7 @@ function jsonLd(plural, e, d, url) {
   return null;
 }
 
-/** The built index.html with this page's head tags and a readable body for crawlers. */
+/** The built index.html with this page's head tags and a readable body for crawlers (`data-prerendered`: the app keeps it on screen until its own page is ready). */
 function page(template, { title, description, url, image, imageAlt, type = 'website', body = '', ld = null, noindex = false }) {
   const head = [
     `<title>${esc(title)}</title>`,
@@ -156,7 +156,7 @@ for (const plural of PLURALS) {
       title: `${d.name} · Art History`, description: d.description, url, type: 'article',
       image: d.image ? thumb(d.image.url) : null, imageAlt: d.image?.caption ?? d.name,
       ld: jsonLd(plural, e, d, url),
-      body: `<article class="page"><p class="crumbs"><a href="/${plural}">${esc(LIST_LABEL[plural])}</a></p><h1${langOf(e.title_lang ?? e.name_lang)}>${esc(d.name)}</h1>${originalOf(e)}<p class="subtitle">${esc(d.summary)}</p>${d.long ? `<p>${esc(d.long)}</p>` : ''}</article>`,
+      body: `<article class="page" data-prerendered><p class="crumbs"><a href="/${plural}">${esc(LIST_LABEL[plural])}</a></p><h1${langOf(e.title_lang ?? e.name_lang)}>${esc(d.name)}</h1>${originalOf(e)}<p class="subtitle">${esc(d.summary)}</p>${d.long ? `<p>${esc(d.long)}</p>` : ''}</article>`,
     }));
     urls.push(url);
     pages++;
@@ -165,7 +165,7 @@ for (const plural of PLURALS) {
   await write(`${plural}/index.html`, page(template, {
     title: `${LIST_LABEL[plural]} · Art History`, url: listUrl,
     description: `${LIST_LABEL[plural]} in the Art History collection: ${items.slice(0, 8).map((i) => i.name ?? i.title).join(', ')}${items.length > 8 ? ' …' : ''}`,
-    body: `<section class="page"><h1>${esc(LIST_LABEL[plural])}</h1><ul>${items.map((i) => `<li><a href="/${plural}/${esc(i.slug)}">${esc(i.name ?? i.title)}</a></li>`).join('')}</ul></section>`,
+    body: `<section class="page" data-prerendered><h1>${esc(LIST_LABEL[plural])}</h1><ul>${items.map((i) => `<li><a href="/${plural}/${esc(i.slug)}">${esc(i.name ?? i.title)}</a></li>`).join('')}</ul></section>`,
   }));
   urls.push(listUrl);
   console.log(`${plural}: ${items.length} pages`);

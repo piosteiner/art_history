@@ -2,6 +2,12 @@ import { ApiError } from '../api';
 import { html, render } from '../html';
 
 export function loading(main: HTMLElement) {
+  // the page as prerendered (scripts/prerender.mjs) stays until the view replaces it: no "Loading…" flash on first load
+  const prerendered = main.querySelector(':scope > [data-prerendered]');
+  if (prerendered) {
+    prerendered.removeAttribute('data-prerendered');
+    return;
+  }
   render(main, html`<p class="muted loading">Loading…</p>`);
 }
 
