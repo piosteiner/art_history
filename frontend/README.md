@@ -34,7 +34,7 @@ map uses OpenFreeMap (free, no key).
 | `src/views/graph.ts` | network graph (`#/graph/<type>/<slug>?depth=&categories=`) with d3-force: click = details, double-click = recenter, Ctrl+click = new tab |
 | `src/theme.ts` | Auto / Light / Dark toggle (follows the system by default); maps swap to the matching base map in place (`THEME_EVENT`; `src/map.ts` carries its sources and layers into the new style), the page isn't re-rendered |
 | `tests/` | Playwright smoke tests (desktop + phone); run in the Pages workflow before every deploy |
-| `src/views/` | explore (map + timeline), list, detail (all types), graph |
+| `src/views/` | explore (map + timeline), list, detail (all types: `detail.ts` the page, `detail-facts.ts` the fact rows per type and their sources, `detail-sections.ts` provenance, relationships, backlinks, crossed paths), graph |
 | `public/` | copied as is: `CNAME`, `health.html` (CORS round-trip check) |
 
 ## Privacy
@@ -158,7 +158,7 @@ of source, the most reliable first — P primary · L literature · M museum/col
 T a note in words. Hover, keyboard focus or a tap opens the citations: short form linked to the exact page (or the
 Wikidata item), accessed date, the full reference from the detail's `bibliography`, the note. `outdated` citations get
 no marker and are listed last, muted ("value changed since"). Which row shows which field: `FIELD_FACT` in
-`views/detail.ts`; a sourced field without a row gets one of its own.
+`views/detail-facts.ts`; a sourced field without a row gets one of its own.
 
 ## Crossed paths
 `src/encounters.ts` finds pairs at the same place with overlapping dates in the dated presence links (left out: a

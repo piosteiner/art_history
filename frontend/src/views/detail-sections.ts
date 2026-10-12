@@ -1,0 +1,127 @@
+// Detail pages: the sections below the facts — provenance, relationships by category, backlinks, crossed paths.
+import { getPresence, listAll } from '../api';
+import { compareUrl, crossedLine, encounterLine } from '../crossings';
+import { encounterKeys, findEncounters } from '../encounters';
+import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
+import type { SourceHint, Category, Entity, EntryRef, ProvenanceStep, Relationship } from '../types';
+import { cite } from '../cite';
+
+// categories, plus the relationship types an event's page groups by (participated_in, concerns)
+const CATEGORY_ORDER: (Category | 'participated_in' | 'concerns')[] = [
+  'glossary', 'presence', 'association', 'event', 'participated_in', 'concerns', 'architecture', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'publication', 'depiction', 'provenance',
+];
+const CATEGORY_LABEL: Record<string, string> = {
+  presence: 'Places (physically there)',
+  association: 'Associations',
+  influence: 'Influence',
+  education: 'Education',
+  collaboration: 'Collaboration',
+  membership: 'Membership',
+  patronage: 'Patronage',
+  depiction: 'Depictions',
+  provenance: 'Provenance',
+  polity: 'States and nationality',
+  glossary: 'Related terms',
+  architecture: 'Buildings',
+  publication: 'Publication',
+  event: 'Events',
+  // on an event's page its links are split by type (relationshipSections)
+  participated_in: 'Participants',
+  concerns: 'What it concerns',
+};
+
+export const uncertain = (certainty: string | null | undefined) => (certainty && certainty !== 'attested' ? html`<span class="tag">${certainty}</span>` : '');
+
+const METHOD_LABEL: Record<string, string> = { forced_sale: 'forced sale' };
+
+/**
+ * The owners in order, as recorded. A period whose end is only implied by the next acquisition is marked; a handover
+ * that isn't documented as direct gets a dashed connector ("possibly other owners in between").
+ */
+export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>): Html | null {
+  if (!steps.length) return null;
+  return html`<section class="provenance">
+    <h2>Provenance</h2>
+    <p class="muted small">Owners in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between.</p>
+    <ol class="provenance-list">${steps.map((s, i) => {
+      const owner = s.owner
+        ? html`${link(s.owner.type, s.owner.slug, s.owner.name)}${s.owner_label && s.owner_label !== s.owner.name ? html` <span class="muted">(${s.owner_label})</span>` : ''}`
+        : html`${s.owner_label ?? s.owner_name ?? 'Unknown owner'}`;
+      const how = [s.method && s.method !== 'unknown' ? html`${METHOD_LABEL[s.method] ?? s.method}` : null, s.label ? html`${s.label}` : null,
+        s.place ? html`in ${link('place', s.place.slug, s.place.name)}` : null].filter((x): x is Html => !!x);
+      return html`<li class="provenance-step${i && !s.direct ? ' undocumented' : ''}">
+        ${i && !s.direct ? html`<div class="provenance-gap">handover not documented</div>` : ''}
+        <div class="provenance-owner">${owner}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${cite(s.sources, bibliography)}</div>
+        ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
+        ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
+      </li>`;
+    })}</ol>
+  </section>`;
+}
+
+/** Backlinks: the entries whose texts link this one. */
+export const backlinks = (title: string, hint: string, refs: EntryRef[] | undefined) => (refs?.length
+  ? html`<section class="backlinks"><h2>${title}</h2><p class="muted small">${hint}</p><ul class="plain-list">${refs.map((u) =>
+    html`<li>${link(u.type, u.slug, u.name)} <span class="muted">${TYPE_LABEL[u.type]}</span></li>`)}</ul></section>`
+  : null);
+
+/**
+ * Relationships listed elsewhere on the page: an artwork's co-creators (under Artist) and its owners and places
+ * from the provenance (under Provenance); an artist's co-created works (under Artworks).
+ */
+export function shownElsewhere(e: Entity, r: Relationship) {
+  if (r.type === 'co_creator') return e.type === 'artwork' || e.type === 'artist';
+  return e.type === 'artwork' && !!r.derived && (r.type === 'owned_by' || r.type === 'kept_in');
+}
+
+/**
+ * Relationships grouped by category. On an event's page its own links are split by type — "Participants" (with their
+ * role: "defendant", "judge"), "What it concerns" — and the label every row would repeat is left out; elsewhere a
+ * participation reads "took part in The Bührle trial (defendant)".
+ */
+export function relationshipSections(rels: Relationship[], pageType?: string, bibliography?: Record<string, SourceHint>): Html {
+  const keyOf = (r: Relationship) => (pageType === 'event' && r.category === 'event' ? r.type : r.category);
+  const groups = new Map<string, Relationship[]>();
+  for (const r of rels) groups.set(keyOf(r), [...(groups.get(keyOf(r)) ?? []), r]);
+  const order = [...groups.keys()].sort(
+    (a, b) => (CATEGORY_ORDER.indexOf(a as Category) + 1 || 99) - (CATEGORY_ORDER.indexOf(b as Category) + 1 || 99),
+  );
+  const byDate = (a: Relationship, b: Relationship) =>
+    (a.period?.from ?? '9999').localeCompare(b.period?.from ?? '9999');
+  const role = (r: Relationship) => r.type === 'participated_in' && !!r.note;
+  const heading = (cat: string) => (pageType === 'event' && cat === 'depiction' ? 'Works depicting it' : CATEGORY_LABEL[cat] ?? cat);
+  return html`${order.map((cat) => html`<section class="rel-group rel-${cat}">
+    <h2>${heading(cat)}</h2>
+    <ul class="rel-list">${groups.get(cat)!.sort(byDate).map((r) => html`<li>
+      ${cat === r.type || (pageType === 'event' && cat === 'depiction') ? '' : html`<span class="rel-label">${r.label}</span>`}
+      ${link(r.entity.type, r.entity.slug, r.entity.name)}${role(r) ? html` <span class="rel-role">(${r.note})</span>` : ''}
+      ${r.period ? html`<span class="muted">${r.period.label}</span>` : ''}${impliedEnd(r.end_basis)}
+      ${uncertain(r.certainty)}${cite(r.sources, bibliography)}
+      ${r.note && !role(r) ? html`<div class="rel-note">${r.note}</div>` : ''}
+      ${r.notes_html ? html`<div class="rel-note">${trusted(r.notes_html)}</div>` : ''}
+    </li>`)}</ul>
+  </section>`)}`;
+}
+
+/**
+ * Who this entry crossed paths with (same place, overlapping dates), or for a place: who met there. Uses all dated
+ * presence links (one request, shared with the start map) and the artworks list (to leave out a work and its artist).
+ */
+export function crossedPaths(el: HTMLElement, type: string, slug: string, current: () => boolean) {
+  Promise.all([getPresence(-3000, new Date().getFullYear() + 1), listAll('artworks')])
+    .then(([presence, artworks]) => {
+      if (!current() || !el.isConnected) return;
+      const artists = new Map(artworks.data.map((a) => [a.slug, creatorsOf(a).map((c) => c.slug)]));
+      const all = findEncounters(presence.features.map((f) => f.properties), { artistsOf: (a) => artists.get(a) });
+      const self = `${type}/${slug}`;
+      const mine = type === 'place'
+        ? all.filter((x) => x.place.slug === slug)
+        : all.filter((x) => encounterKeys(x).includes(self));
+      if (!mine.length) return;
+      el.hidden = false;
+      render(el, html`<h2>${type === 'place' ? 'Crossed paths here' : 'Crossed paths'}</h2>
+        <p class="muted small">${type === 'place' ? 'People and works here at the same time.' : 'At the same place at the same time, from the dated places on this site.'}</p>
+        <ul class="plain-list encounters-list">${mine.map((x) => (type === 'place' ? encounterLine(x, { withPlace: false, actions: html`<div class="encounter-actions"><a href="${compareUrl(x)}">both on the map →</a></div>` }) : crossedLine(x, self)))}</ul>`);
+    })
+    .catch(() => { /* optional section: leave it out when the data can't be loaded */ });
+}
