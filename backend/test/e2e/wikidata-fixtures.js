@@ -117,6 +117,54 @@ function handle(req, res) {
     return json({ '@graph': [hodler, { '@id': 'sik:person-4000056', 'sikapi:preferred_name': 'Hodler, Hector',
       'sikapi:note_biographical_data': '∗ 1.12.1887 Genf,\n† 31.3.1920 Leysin', 'sikapi:short_biography': 'Maler' }] });
   }
+  // Metagrid (src/admin/metagrid.js): two Hodlers — Ferdinand with his numbers (no GND: that one belongs to other tests)
+  if (url.pathname === '/metagrid/search') {
+    if (!/hodler/i.test(p.get('query') || '')) return json({ concordances: [] });
+    const res = (slug, id, uri, b = '1853-03-14', d = '1918-05-19', first = 'Ferdinand') => ({ _type: 'person', identifier: id, provider: { slug },
+      link: { rel: 'resource', uri }, metadata: { first_name: first, last_name: 'Hodler', birth_date: b, death_date: d } });
+    return json({ concordances: [
+      { id: 'mgHector', name: 'Hector Hodler 1887-12-01 1920-03-31', resources: [res('hls-dhs-dss', '009999', 'https://hls-dhs-dss.ch/de/articles/009999/', '1887-12-01', '1920-03-31', 'Hector')] },
+      { id: 'mgFerdinand', name: 'Ferdinand Hodler 1853-03-14 1918-05-19', resources: [
+        res('sikart', '4000055', 'http://www.sikart.ch/kuenstlerinnen.aspx?id=4000055'), res('loc', 'n50031263', 'http://id.loc.gov/authorities/names/n50031263'),
+        res('hls-dhs-dss', '019084', 'https://hls-dhs-dss.ch/de/articles/019084/'), res('dodis', '13383', 'https://dodis.ch/P13383'),
+        res('burgerbibliothek', '19590', 'https://archives-quickaccess.ch/bbb/person/19590')] }] });
+  }
+  // the Library of Congress (src/admin/lc.js): Hodler's record, shortened
+  if (url.pathname === '/lc/authorities/names/n50031263.json') {
+    const M = 'http://www.loc.gov/mads/rdf/v1#';
+    return json([
+      { '@id': 'http://id.loc.gov/authorities/names/n50031263', [`${M}authoritativeLabel`]: [{ '@value': 'Hodler, Ferdinand, 1853-1918' }],
+        [`${M}hasCloseExternalAuthority`]: [{ '@id': 'http://viaf.org/viaf/41848532' }] },
+      { '@id': 'http://id.loc.gov/rwo/agents/n50031263', [`${M}birthDate`]: [{ '@value': '1853-03-14' }], [`${M}deathDate`]: [{ '@value': '1918-05-19' }],
+        [`${M}birthPlace`]: [{ '@id': 'http://id.loc.gov/rwo/agents/n79065374' }], [`${M}deathPlace`]: [{ '@id': 'http://id.loc.gov/rwo/agents/n81018331' }] },
+      { '@id': 'http://id.loc.gov/rwo/agents/n79065374', [`${M}authoritativeLabel`]: [{ '@value': 'Bern (Switzerland)' }] },
+      { '@id': 'http://id.loc.gov/rwo/agents/n81018331', [`${M}authoritativeLabel`]: [{ '@value': 'Geneva (Switzerland)' }] }]);
+  }
+  // the BnF (src/admin/bnf.js): the SPARQL answer for Hodler — only "the year" of death, as BnF sometimes has
+  if (url.pathname === '/bnf/sparql') {
+    if (!/cb119454480#about/.test(p.get('query') || '')) return json({ results: { bindings: [] } });
+    const b = (pp, o) => ({ p: { value: pp }, o: { value: o } });
+    return json({ results: { bindings: [b('http://xmlns.com/foaf/0.1/name', 'Ferdinand Hodler'), b('http://vocab.org/bio/0.1/birth', '1853-03-14'),
+      b('http://vocab.org/bio/0.1/death', '1918'), b('http://rdvocab.info/ElementsGr2/placeOfBirth', 'Berne'),
+      b('http://rdvocab.info/ElementsGr2/biographicalInformation', 'Peintre, dessinateur et sculpteur'),
+      b('http://www.w3.org/2002/07/owl#sameAs', 'http://www.idref.fr/027405397/id')] } });
+  }
+  // RKD (src/admin/rkd.js): the person, its birth event, time-span and place (Bern, with its Wikidata item)
+  if (url.pathname.startsWith('/rkd/')) {
+    const R = 'http://127.0.0.1:3007/rkd';
+    const C = 'http://www.cidoc-crm.org/cidoc-crm/';
+    const nodes = {
+      '/rkd/artists/38688': { [`${C}P98i_was_born`]: [{ '@id': `${R}/genid/born` }], 'http://www.w3.org/2000/01/rdf-schema#label': [{ '@value': 'Hodler, Ferdinand' }],
+        'https://linked.art/ns/terms/equivalent': [{ '@id': 'http://viaf.org/viaf/41848532' }, { '@id': 'http://vocab.getty.edu/ulan/500027184' }] },
+      '/rkd/genid/born': { [`${C}P4_has_time-span`]: [{ '@id': `${R}/genid/ts` }], [`${C}P7_took_place_at`]: [{ '@id': `${R}/thesaurus/355` }] },
+      '/rkd/genid/ts': { [`${C}P82a_begin_of_the_begin`]: [{ '@value': '1853-03-14' }], [`${C}P82b_end_of_the_end`]: [{ '@value': '1853-03-14' }] },
+      '/rkd/thesaurus/355': { 'http://www.w3.org/2004/02/skos/core#prefLabel': [{ '@value': 'Bern (city)', '@language': 'en' }],
+        'http://www.w3.org/2004/02/skos/core#exactMatch': [{ '@id': 'https://www.wikidata.org/entity/Q70' }] },
+    };
+    const n = nodes[url.pathname];
+    if (!n) { res.writeHead(404); return res.end('[]'); }
+    return json([{ '@id': `${R}${url.pathname.slice(4)}`, ...n }]);
+  }
   // Nominatim reverse (placefinder.cityAt): like Manhattan for the Guggenheim, the object at city zoom is a district
   // (Yukinoshita) and only the address names the city (Kamakura); far north: nothing there
   if (url.pathname === '/reverse') {

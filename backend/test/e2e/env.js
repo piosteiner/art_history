@@ -24,10 +24,11 @@ function shard(i) {
     LOG_FILE: path.join(STATE_DIR, `server-${i}.log`),
     // the users' sessions, logged in once per run by global-setup.js (cookies only — never in the repo)
     sessionFile: (user) => path.join(STATE_DIR, `session-${i}-${user}.json`),
-    // Wikidata, Commons, museums, Nominatim, lobid, SIKART point at the fixture server, never at the real sites.
+    // Wikidata, Commons, museums, Nominatim, lobid, SIKART, Metagrid, LC, BnF, RKD point at the fixture server, never at the real sites.
     serverEnv: () => ({ ...process.env, DB_NAME: DB, PORT: String(PORT), NODE_ENV: 'development',
       WIKIDATA_BASE: FIXTURES, COMMONS_BASE: FIXTURES, MET_BASE: FIXTURES, NOMINATIM_BASE: FIXTURES, AIC_BASE: FIXTURES,
-      CLEVELAND_BASE: FIXTURES, LOBID_BASE: FIXTURES, SIKART_BASE: `${FIXTURES}/sik` }),
+      CLEVELAND_BASE: FIXTURES, LOBID_BASE: FIXTURES, SIKART_BASE: `${FIXTURES}/sik`,
+      METAGRID_BASE: `${FIXTURES}/metagrid`, LC_BASE: `${FIXTURES}/lc`, BNF_BASE: `${FIXTURES}/bnf`, RKD_BASE: `${FIXTURES}/rkd` }),
   };
 }
 

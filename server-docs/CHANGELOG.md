@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Admin: Metagrid, the Library of Congress, the BnF and RKD on the Enrich page (migration 059)
+- **What:** 059 adds the authorities `bnf` (P268), `idref` (P269), `hls` (P902), `dodis` (P701), `fotoch`; RKD's
+  links point at rkd.nl/en/explore; bibliography sources `lc`, `bnf` (institution) and `rkd` (scholarly).
+  `src/admin/metagrid.js`: the person searched by name in Metagrid (api.metagrid.ch); a concordance containing one of
+  our numbers is taken as the same person, otherwise candidates (same dates first, one alone pre-selected); ticked
+  numbers → reference records; other databases listed as links. `src/admin/records.js`: a person's record → the GND-
+  shaped comparison (dates, born/died in — places also by Wikidata id —, numbers); used by SIKART and the new readers
+  `lc.js` (id.loc.gov JSON-LD, EDTF dates), `bnf.js` (data.bnf.fr SPARQL), `rkd.js` (data.rkd.nl, CIDOC-CRM: about
+  seven requests per person, remembered). All in `authority.SOURCES` → Enrich compares them and has `/…/lc`, `/…/bnf`,
+  `/…/rkd` pages like the GND's.
+- **Why:** owner: more databases, Swiss ones above all; Metagrid fills the numbers the comparisons need.
+- **Revert:** `DELETE FROM authorities WHERE code IN ('bnf','idref','hls','dodis','fotoch')` (after deleting their
+  `entry_identifiers`), the three bibliography rows if uncited, `DELETE FROM schema_migrations WHERE name = '059_more_authorities.sql'`; revert the commit.
+- **Tested:** live reads for Hodler (LC, BnF, RKD, Metagrid: 8 of our authorities in his concordance); e2e
+  `enrich-more.spec` (Metagrid pick → 4 numbers; SIKART + RKD + LC + BnF: birth cited by all four, death by the two that
+  agree, one born-in cited by three).
+
 ### Admin: Enrich page and the Quality queue
 - **What:** *Enrich…* (`/<type>/<slug>/enrich`, `src/admin/enrich.js`): Wikidata, the GND and SIKART on one page, one Apply in
   one transaction (audit source `enrich`). Date fields several sources give are one row (grouped by date range); the

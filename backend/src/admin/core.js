@@ -40,7 +40,8 @@ function send(req, res, { title, body, status = 200, flash, page = null }) {
     const n = (k) => Math.max(0, Number.parseInt(req.query[k], 10) || 0);
     const extra = ['wikidata', 'gnd', 'gnd-applied', 'enrich', 'enrich-applied'].includes(req.query.done) ? [n('rels') && `${n('rels')} relationship${n('rels') === 1 ? '' : 's'} added`,
       n('created') && `${n('created')} new entr${n('created') === 1 ? 'y' : 'ies'} created`,
-      n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`].filter(Boolean).join(', ')
+      n('imgs') && `${n('imgs')} image${n('imgs') === 1 ? '' : 's'} added`,
+      n('ids') && `${n('ids')} reference record${n('ids') === 1 ? '' : 's'} added — Enrich again to compare with them`].filter(Boolean).join(', ')
       : req.query.done === 'cited' ? `${n('n')} value${n('n') === 1 ? '' : 's'}` : '';
     const auto = n('auto') ? ` ${n('auto') === 1 ? 'A new entry was' : `${n('auto')} new entries were`} created for what you typed — marked “to complete” (see the links below and the Quality page).` : '';
     // the city of an exact location, set by itself (saveEntity → cityFor): found among ours, or created

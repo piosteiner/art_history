@@ -8,6 +8,7 @@
 // ---------------------------------------------------------------------------------------------------------------
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { memo } = require('./remember');
+const { personPlan } = require('./records');
 
 const API = process.env.SIKART_BASE || 'https://api.recherche.sik-isea.ch/api/v1/graphs/sik/data';
 const recordUrl = (id) => `https://recherche.sik-isea.ch/sik:person-${id}/in/sikart`;
@@ -68,37 +69,18 @@ async function search(q) {
       note: x['sikapi:note_biographical_data'] || '', short: x['sikapi:short_biography'] || '', url: recordUrl(x['@id'].slice('sik:person-'.length)) }));
 }
 
-// The comparison, in the shape of the GND one: { url, rows, rels, ids, info }
+// The comparison, in the shape of the GND one (records.js): dates and places from the biographical note, its GND and
+// VIAF numbers; Heimatort and citizenship shown, not stored
 async function compare(db, t, entity, doc, id, placeTarget) {
   const r = await retrieve(id);
-  const rows = [];
-  for (const key of ['birth', 'death']) {
-    const v = r.life[key];
-    if (!v) continue;
-    const theirs = parseFuzzyDate(v.value);
-    const ours = doc[key] || null;
-    const same = ours !== null && (() => { try { return parseFuzzyDate(String(ours)).range === theirs.range; } catch { return false; } })();
-    rows.push({ key, ours, theirs: v.value, label: theirs.label, status: same ? 'same' : ours ? 'differs' : 'new' });
-  }
-  const { rows: existing } = await db.query(`SELECT r.relationship_type, o.type::text || '/' || o.slug AS other FROM relationships r
-    JOIN entity_index o ON (o.type, o.id) = (r.object_type, r.object_id) WHERE r.subject_type = $1 AND r.subject_id = $2`, [t.type, entity.id]);
-  const rels = [];
-  for (const [key, type, label] of [['birth', 'born_in', 'born in'], ['death', 'died_in', 'died in']]) {
-    const place = r.life[key] && r.life[key].place;
-    if (!place) continue;
-    // "Gurzelen (BE)": the canton is SIKART's addition, not part of the name
-    const { target, create } = await placeTarget(db, { label: place.replace(/\s*\([A-Z]{2}\)$/, '') });
-    const already = !!target && existing.some((x) => x.relationship_type === type && x.other === `place/${target.slug}`);
-    rels.push({ i: rels.length, type, label, ref: { label: place }, target, create, already });
-  }
-  // its numbers elsewhere: GND, VIAF — new reference records for this entry
-  const have = (await db.query('SELECT authority, value FROM entry_identifiers WHERE entity_type = $1 AND entity_id = $2', [t.type, entity.id])).rows;
-  const ids = [['gnd', 'GND', r.gnd], ['viaf', 'VIAF', r.viaf]].filter(([, , v]) => v).map(([code, name, value]) => {
-    const ours = (have.find((h) => h.authority === code) || {}).value || null;
-    return { code, name, value, ours, status: ours === value ? 'same' : ours ? 'differs' : 'new' };
-  });
-  return { gnd: id, url: r.url, rows, rels, ids, info: { name: r.name, occupations: r.short ? [r.short] : [],
-    variants: [r.hometown && `Heimatort: ${r.hometown}`, r.citizenship && `Bürgerrecht: ${r.citizenship}`, r.note && `SIKART: ${r.note.replace(/\n/g, ' ')}`].filter(Boolean) } };
+  return personPlan(db, t, entity, doc, {
+    id, url: r.url, name: r.name, short: r.short,
+    birth: r.life.birth && r.life.birth.value, death: r.life.death && r.life.death.value,
+    birthPlace: r.life.birth && r.life.birth.place ? { label: r.life.birth.place } : null,
+    deathPlace: r.life.death && r.life.death.place ? { label: r.life.death.place } : null,
+    ids: { gnd: r.gnd, viaf: r.viaf },
+    variants: [r.hometown && `Heimatort: ${r.hometown}`, r.citizenship && `Bürgerrecht: ${r.citizenship}`, r.note && `SIKART: ${r.note.replace(/\n/g, ' ')}`],
+  }, placeTarget);
 }
 
 async function ensureSource(db) {

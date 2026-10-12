@@ -309,7 +309,11 @@ SIKART (SIK-ISEA, migration 057: link to the research portal `recherche.sik-isea
 `sikart`, reliability scholarly) is compared the same way (`src/admin/sikart.js`, the portal's API, one record on
 request): birth and death with their places from the biographical note, its GND and VIAF numbers as reference records;
 Heimatort and citizenship are shown, not stored. In both comparisons a place we don't have is looked up in OpenStreetMap (settlements) and
-created on Apply like a city found on save; every item is ticked by default and can be unticked. Without a SIKART number, "Find in SIKART…" searches by name. Facts
+created on Apply like a city found on save; every item is ticked by default and can be unticked.
+059 adds `bnf`, `idref`, `hls`, `dodis`, `fotoch` to `authorities`. Persons are also compared with RKD (`rkd.js`,
+CIDOC-CRM birth/death events whose places carry their Wikidata item), the Library of Congress (`lc.js`, EDTF dates)
+and the BnF (`bnf.js`, SPARQL) — each reader produces one record shape that `records.js` turns into the comparison.
+Metagrid (`metagrid.js`) finds the numbers by name: the Enrich page adds them as reference records. Without a SIKART number, "Find in SIKART…" searches by name. Facts
 only — SIKART's lexicon texts and images are linked, not copied (no published terms for the API).
 
 ## Sources for facts (migration 049)

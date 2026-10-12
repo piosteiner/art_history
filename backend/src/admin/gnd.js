@@ -48,6 +48,11 @@ async function ourEntry(db, types, ref) {
 // A place named by an authority file: ours (by GND number or name) · else OpenStreetMap: ours under another name
 // ("Genf" → Geneva) or a new place to create → { target } | { create: candidate } | {}
 async function placeTarget(db, ref) {
+  // a record that names the place's Wikidata item (RKD): exactly ours
+  if (ref.qid) {
+    const byQid = (await db.query("SELECT 'place' AS type, slug, name, true AS by_id FROM places WHERE wikidata_id = $1", [ref.qid])).rows[0];
+    if (byQid) return { target: byQid };
+  }
   const target = await ourEntry(db, ['place'], ref);
   if (target) return { target };
   const found = await placefinder.settlementByName(db, ref.label).catch(() => null);

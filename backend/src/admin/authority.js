@@ -18,11 +18,27 @@ const placefinder = require('./placefinder');
 const { formToDoc, fieldLabel } = require('./forms');
 const { UserError } = require('./core');
 
+// The sources of the bibliography the comparisons cite (059 created those of lc, bnf, rkd — again if deleted)
+const SOURCE_ROWS = {
+  lc: ['Library of Congress Name Authority File', 'LCNAF', 'https://id.loc.gov/authorities/names.html', 'institution', 'Library of Congress'],
+  bnf: ['data.bnf.fr', 'BnF', 'https://data.bnf.fr/', 'institution', 'Bibliothèque nationale de France'],
+  rkd: ['RKDartists', 'RKD', 'https://rkd.nl/', 'scholarly', 'RKD – Nederlands Instituut voor Kunstgeschiedenis'],
+};
+const ensureRow = (slug) => (db) => db.query(`INSERT INTO bibliography (slug, kind, name, siglum, url, reliability, container)
+  VALUES ($1, 'web', $2, $3, $4, $5, $6) ON CONFLICT (slug) DO NOTHING`, [slug, ...SOURCE_ROWS[slug]]);
+// a person's record read by lc.js / bnf.js / rkd.js, compared like SIKART's (records.js)
+const person = (mod, code, name) => ({ name, short: name, source: code, types: ['artist', 'person'],
+  plan: (t, e, id) => mod.compare(adminPool, t, e, e.doc, id, gnd.placeTarget), opts: { source: code, byNameGets: null, ensure: ensureRow(code) } });
+
+// in this order on the Enrich page
 const SOURCES = {
   gnd: { name: 'the GND', short: 'GND', source: 'gnd', types: ['artist', 'person', 'institution'],
     plan: (t, e, id) => gnd.compare(adminPool, t, e, e.doc, id), opts: { source: 'gnd', byNameGets: 'gnd', ensure: gnd.ensureSource } },
   sikart: { name: 'SIKART', short: 'SIKART', source: 'sikart', types: ['artist', 'person'],
     plan: (t, e, id) => sikart.compare(adminPool, t, e, e.doc, id, gnd.placeTarget), opts: { source: 'sikart', byNameGets: null, ensure: sikart.ensureSource } },
+  rkd: person(require('./rkd'), 'rkd', 'RKD'),
+  lc: { ...person(require('./lc'), 'lc', 'the Library of Congress'), short: 'LC' },
+  bnf: { ...person(require('./bnf'), 'bnf', 'the BnF'), short: 'BnF' },
 };
 
 // A place found in OpenStreetMap (placefinder.settlementByName) → created like the city found on save: the place

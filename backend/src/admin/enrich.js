@@ -14,14 +14,15 @@ const { parseFuzzyDate } = require('../fuzzy-date');
 const { html } = require('./html');
 const wikidata = require('./wikidata');
 const authority = require('./authority');
+const metagrid = require('./metagrid');
 const collab = require('./collab');
 const citations = require('./citations');
 const { fieldRow, suggestionRow, imageChoice } = require('./wikidata-ui');
 const { fieldLabel } = require('./forms');
 const { withTx, typeWarning } = require('./core');
 
-const AUTH = ['gnd', 'sikart'];
-const NAMES = { wikidata: 'Wikidata', gnd: 'GND', sikart: 'SIKART' };
+const AUTH = Object.keys(authority.SOURCES);  // gnd, sikart, rkd, lc, bnf
+const NAMES = { wikidata: 'Wikidata', ...Object.fromEntries(AUTH.map((c) => [c, authority.SOURCES[c].short])) };
 const wdLinks = { folderOf: (type) => BY_TYPE[type].folder };
 const rangeOf = (text) => { try { return text ? parseFuzzyDate(String(text)).range : null; } catch { return null; } };
 
@@ -32,10 +33,11 @@ async function load(t, e) {
   const wd = qid
     ? wikidata.compare(adminPool, t, qid, ours, { type: t.type, id: e.id }).then((plan) => ({ plan }), (err) => ({ error: `Wikidata ${qid} could not be read: ${err.message}` }))
     : Promise.resolve({ missing: true });
-  const [wikidataRes, gnd, sikart, types] = await Promise.all([wd, authority.plan(t, e, 'gnd'), authority.plan(t, e, 'sikart'),
-    qid ? wikidata.typesOf(qid).catch(() => null) : null]);
-  const sources = { wikidata: wikidataRes, gnd, sikart };
-  return { ours, qid, sources, merged: mergedRows(t, ours, sources), types };
+  const [wikidataRes, types, mg, ...auth] = await Promise.all([wd, qid ? wikidata.typesOf(qid).catch(() => null) : null,
+    ['artist', 'person'].includes(t.type) ? metagrid.find(adminPool, t, e) : null,
+    ...AUTH.map((c) => authority.plan(t, e, c))]);
+  const sources = { wikidata: wikidataRes, ...Object.fromEntries(AUTH.map((c, i) => [c, auth[i]])) };
+  return { ours, qid, sources, merged: mergedRows(t, ours, sources), types, metagrid: mg };
 }
 
 // The date fields offered by two or more sources → [{ key, ours, groups: [{ range, label, value, offers: [{src, status}] }] }]
@@ -94,7 +96,8 @@ function sourceLine(t, e, code, res) {
   if (res.missing) {
     if (code === 'wikidata') return html`<li><b>Wikidata:</b> <span class="muted">not linked —</span> <a href="/${t.folder}/${e.slug}/wikidata">Find on Wikidata…</a></li>`;
     if (code === 'sikart') return authority.SOURCES.sikart.types.includes(t.type) ? html`<li><b>SIKART:</b> <span class="muted">no number —</span> <a href="/${t.folder}/${e.slug}/sikart">Find in SIKART…</a></li>` : '';
-    return authority.SOURCES.gnd.types.includes(t.type) ? html`<li><b>GND:</b> <span class="muted">no number — Wikidata and SIKART often know it (Reference records below)</span></li>` : '';
+    if (code === 'gnd') return authority.SOURCES.gnd.types.includes(t.type) ? html`<li><b>GND:</b> <span class="muted">no number — Wikidata and Metagrid often know it</span></li>` : '';
+    return '';  // RKD, LC, BnF: compared when the entry has their number
   }
   if (code === 'wikidata') return html`<li><b>Wikidata:</b> <a href="https://www.wikidata.org/wiki/${res.plan.qid}" target="_blank" rel="noopener">${res.plan.qid} ↗</a> — <b>${res.plan.label}</b> <span class="muted">${res.plan.description}</span></li>`;
   return html`<li><b>${name}:</b> ${authority.recordLine(res.plan, code)}</li>`;
@@ -116,7 +119,8 @@ function page(t, e, data) {
     <h1>Enrich ${e.name}</h1>
     ${types && !types.includes(t.type) ? typeWarning(t, types, qid, e) : ''}
     <ul class="enrich-sources">${['wikidata', ...AUTH].map((c) => sourceLine(t, e, c, sources[c]))}</ul>
-    ${!wd && !auth.length ? html`<p class="flash warn">No source to compare with yet — link the entry on Wikidata or add a GND / SIKART number first.</p>` : html`
+    ${!wd && !auth.length && !(data.metagrid && (data.metagrid.exact || data.metagrid.candidates.length))
+      ? html`<p class="flash warn">No source to compare with yet — link the entry on Wikidata or add a GND / SIKART number first.</p>` : html`
     <p class="muted small">One review for every source. Taken values are cited with their source — a value several sources agree on, with each of
       them. Your own values are never replaced unless you choose so; field values go into the working copy — check them and Publish.
       Relationships, new places and reference records are created when you apply.</p>
@@ -148,6 +152,7 @@ function page(t, e, data) {
             <td>${x.status === 'same' ? html`<span class="muted">the same</span>`
               : html`<label class="choice"><input type="checkbox" name="idf.${x.code}" value="take"${x.status === 'new' ? ' checked' : ''}> ${x.status === 'new' ? 'add' : 'replace yours'}</label>`}</td></tr>`)}</tbody></table></div>` : ''}
         ${auth.map((code) => (authIds(code).ids.length ? html`<h3>Known to ${NAMES[code]}</h3>${authority.idsTable(authIds(code), { prefix: `${code}:` })}` : ''))}` : ''}
+      ${metagrid.section(data.metagrid)}
       <div class="actions sticky-actions"><button>Apply selected</button><a class="button secondary" href="/${t.folder}/${e.slug}">Cancel</a></div>
     </form>`}`;
 }
@@ -180,11 +185,12 @@ async function apply(t, e, data, body, user) {
     const out = {};
     if (sources.wikidata.plan) out.wikidata = await wikidata.apply(db, t, { type: t.type, id: e.id }, sources.wikidata.plan, choices.wikidata, user.id);
     for (const code of AUTH) if (sources[code].plan) out[code] = await authority.apply(db, t, e, code, sources[code].plan, choices[code], user);
+    out.metagrid = await metagrid.apply(db, t, e, data.metagrid, body);
     return out;
   }, { source: 'enrich' });
   // the working copy: Wikidata's values last — for a value several sources agree on, its text and label win
   const form = {};
-  for (const code of [...AUTH].reverse()) if (results[code]) Object.assign(form, results[code].form);
+  for (const code of [...AUTH].reverse()) if (results[code] && results[code].form) Object.assign(form, results[code].form);
   if (results.wikidata) Object.assign(form, wikidata.withProvenance(results.wikidata.form, ours, qid));
   // each citation waits for the value that actually went into the working copy
   const settled = (cites) => cites.map((c) => ({ ...c, form: Object.fromEntries(Object.keys(c.form).map((k) => [k, form[k] ?? c.form[k]])) }));

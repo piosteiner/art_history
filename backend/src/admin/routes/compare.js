@@ -66,7 +66,7 @@ router.post('/:plural/:slug/enrich', async (req, res) => {
     return send(req, res, { title: `Enrich: ${e.name}`, status: 422, flash: { kind: 'error', text: `Nothing was applied: ${err.message}` },
       page: { type: t.type, slug: e.slug, mode: 'view' }, body: enrich.page(t, e, data) });
   }
-  const counts = `rels=${r.relationships}&created=${r.created}&imgs=${r.images}`;
+  const counts = `rels=${r.relationships}&created=${r.created}&imgs=${r.images}&ids=${r.ids}`;
   if (Object.keys(r.form).length) return res.redirect(303, `/${t.folder}/${e.slug}/edit?done=enrich&${counts}`);
   res.redirect(303, `/${t.folder}/${e.slug}?done=enrich-applied&${counts}`);
 });
