@@ -28,6 +28,42 @@ mountThemeToggle(document.getElementById('theme')!);
 
 let cleanup: Cleanup;
 
+// "Skip to content": focus the page area without adding #app to the address
+main.tabIndex = -1;
+document.querySelector('.skip-link')?.addEventListener('click', (e) => {
+  e.preventDefault();
+  const h1 = main.querySelector<HTMLElement>('h1');
+  if (h1 && !h1.hasAttribute('tabindex')) h1.tabIndex = -1;
+  (h1 ?? main).focus();
+});
+
+/**
+ * After a navigation inside the site, focus goes to the new page's heading (once it has rendered), so keyboard and
+ * screen reader users start there instead of on a link that is gone. Not on the first load, and not when the reader
+ * has already moved focus somewhere else.
+ */
+let headingWatch: MutationObserver | undefined;
+function focusHeading() {
+  headingWatch?.disconnect();
+  const before = document.activeElement;
+  const done = () => {
+    const h1 = main.querySelector<HTMLElement>('h1');
+    if (!h1) return false;
+    const now = document.activeElement;
+    if (now === before || !now || now === document.body || !now.isConnected) {
+      if (!h1.hasAttribute('tabindex')) h1.tabIndex = -1;
+      h1.focus({ preventScroll: true });
+    }
+    return true;
+  };
+  if (done()) return;
+  const watch = new MutationObserver(() => done() && watch.disconnect());
+  headingWatch = watch;
+  watch.observe(main, { childList: true, subtree: true });
+  setTimeout(() => watch.disconnect(), 5000);
+}
+let firstRoute = true;
+
 // The map (MapLibre, ~1 MB) and the network (d3) load only on the pages that show them: text pages stay light.
 // A view module that loads after the user has moved on is not shown; its cleanup runs with the route's.
 function lazyView(load: () => Promise<() => Cleanup>): Cleanup {
@@ -59,6 +95,9 @@ function onRoute(route: Route) {
   document.title = 'Art History';
   const section = route.name === 'list' || route.name === 'detail' ? route.plural : route.name === 'explore' ? '' : route.name === 'graph' ? 'graph' : null;
   nav.querySelectorAll('a').forEach((a) => a.classList.toggle('current', a.getAttribute('href') === `/${section ?? '-'}`));
+
+  if (!firstRoute) queueMicrotask(focusHeading); // after the view's first render
+  firstRoute = false;
 
   switch (route.name) {
     case 'explore':

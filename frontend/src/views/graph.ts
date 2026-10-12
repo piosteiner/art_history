@@ -6,6 +6,7 @@
 import { drag } from 'd3-drag';
 import { forceCollide, forceLink, forceManyBody, forceSimulation, forceX, forceY, type SimulationLinkDatum, type SimulationNodeDatum } from 'd3-force';
 import { select } from 'd3-selection';
+import { reducedMotion } from '../theme';
 import { zoom, zoomIdentity, type ZoomBehavior } from 'd3-zoom';
 import { getGraph, getVocabulary, PLURAL } from '../api';
 import { escape, href, html, impliedEnd, link, render, TYPE_LABEL } from '../html';
@@ -132,13 +133,14 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       .force('collide', forceCollide<Node>().radius((n) => radius(n) + 26).strength(0.9))
       .force('x', forceX(width / 2).strength(0.04))
       .force('y', forceY(height / 2).strength(0.06))
-      .on('tick', () => {
-        linkSel
-          .attr('x1', (e) => (e.source as Node).x!).attr('y1', (e) => (e.source as Node).y!)
-          .attr('x2', (e) => endX(e)).attr('y2', (e) => endY(e));
-        nodeSel.attr('transform', (n) => `translate(${n.x},${n.y})`);
-      })
+      .on('tick', draw)
       .on('end', () => fit());
+    function draw() {
+      linkSel
+        .attr('x1', (e) => (e.source as Node).x!).attr('y1', (e) => (e.source as Node).y!)
+        .attr('x2', (e) => endX(e)).attr('y2', (e) => endY(e));
+      nodeSel.attr('transform', (n) => `translate(${n.x},${n.y})`);
+    }
 
     // lines stop at the target's edge so the arrowhead stays visible
     const shorten = (e: Edge) => {
@@ -160,6 +162,13 @@ export function graph(main: HTMLElement, plural: Plural | undefined, slug: strin
       const [x0, x1, y0, y1] = [Math.min(...xs) - 40, Math.max(...xs) + 160, Math.min(...ys) - 40, Math.max(...ys) + 40];
       const k = Math.min(width / (x1 - x0), height / (y1 - y0), 1); // never enlarge beyond 100 %
       svg.call(zoomer.transform, zoomIdentity.translate(width / 2 - k * (x0 + x1) / 2, height / 2 - k * (y0 + y1) / 2).scale(k));
+    }
+    // less motion: the layout is computed at once and shown finished (dragging still moves nodes)
+    if (reducedMotion()) {
+      sim.stop();
+      sim.tick(Math.ceil(Math.log(sim.alphaMin()) / Math.log(1 - sim.alphaDecay())));
+      draw();
+      fit();
     }
     main.querySelector('.graph-controls')!.addEventListener('click', (e) => {
       const b = (e.target as Element).closest<HTMLButtonElement>('button');

@@ -950,3 +950,29 @@ test('switching to dark keeps the page: only the base map changes, the overlays 
   await expect(page.locator('input[name=from]')).toHaveValue('1890');
   expect(errors).toEqual([]);
 });
+
+test('accessibility: after a navigation the new heading has focus; skip link; the network without animation', async ({ page }) => {
+  await page.goto('/artists');
+  await expect(page.locator('.card').first()).toBeVisible();
+  // first load: focus stays where the browser puts it
+  expect(await page.evaluate(() => document.activeElement?.tagName)).toBe('BODY');
+  await page.locator('.card-link').first().click();
+  await expect(page.locator('.detail h1')).toBeFocused();
+
+  await page.goto('/artists');
+  await page.keyboard.press('Tab');
+  await expect(page.locator('.skip-link')).toBeFocused();
+  await expect(page.locator('.skip-link')).toBeInViewport();
+  await page.keyboard.press('Enter');
+  await expect(page.locator('#app h1')).toBeFocused();
+  expect(page.url()).not.toContain('#app');
+
+  await page.emulateMedia({ reducedMotion: 'reduce' });
+  await page.goto('/graph/artists/vincent-van-gogh');
+  await expect(page.locator('g.nodes a').first()).toBeVisible();
+  // laid out at once: positions don't change any more
+  const pos = () => page.evaluate(() => [...document.querySelectorAll('g.nodes a')].slice(0, 5).map((n) => n.getAttribute('transform')).join('|'));
+  const first = await pos();
+  await page.waitForTimeout(300);
+  expect(await pos()).toBe(first);
+});

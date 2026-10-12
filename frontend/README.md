@@ -39,6 +39,12 @@ with `crossorigin="anonymous"`, so Wikimedia neither gets nor sets cookies; MapL
 only keeps preferences in localStorage (`arthistory:*`). When a third-party service, a stored value or the API's
 log retention (14 days) changes, update that page and its date. No consent banner is needed while this holds.
 
+## Accessibility
+After a navigation inside the site, focus moves to the new page's `<h1>` once it has rendered (not on the first load,
+not if the reader has moved focus meanwhile); "Skip to content" is the first Tab stop. With the system's reduced
+motion setting there is no smooth scrolling or CSS animation and the network is shown laid out (MapLibre's flights
+follow the setting by themselves). `reducedMotion()` in `src/theme.ts`.
+
 ## Map rule
 Presence (was physically there) and association (e.g. influenced by the culture of Japan) come from the API's
 `properties.layer`: presence = filled dots joined by the `route` line, association = hollow rings in another colour,

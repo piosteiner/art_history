@@ -17,6 +17,9 @@ function stored(): Choice {
 
 let choice = stored();
 
+/** The reader asked for less motion (system setting): no smooth scrolling, the network laid out without animation. */
+export const reducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 export const isDark = () => (choice === 'auto' ? media.matches : choice === 'dark');
 
 function apply() {

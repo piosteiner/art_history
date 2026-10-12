@@ -12,6 +12,7 @@ import { COLORS, createMap, focusEncounter, highlightRoute, PALETTE, showEncount
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
 import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
+import { reducedMotion } from '../theme';
 import { renderTimeline, type TimelineRow } from '../timeline';
 import type { EntityType, EventsMap, Plural, PresenceMap, StopProps } from '../types';
 import { showError } from './common';
@@ -159,7 +160,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const e = crossed[Number(b.dataset.encounter)];
     if (e) {
       focusEncounter(map, e, crossedCoords);
-      main.querySelector('#map')!.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      main.querySelector('#map')!.scrollIntoView({ behavior: reducedMotion() ? 'auto' : 'smooth', block: 'center' });
     }
   });
   const timelineEl = main.querySelector<HTMLElement>('#timeline')!;

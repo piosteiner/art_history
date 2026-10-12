@@ -563,3 +563,11 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .cite-body { min-width: 0; overflow-wrap: anywhere; }
 .cite-full, .cite-note { display: block; margin-top: .15rem; color: var(--muted); font-size: .82rem; }
 .cite-item.outdated { opacity: .55; }
+
+/* accessibility: skip link (visible when focused), headings focused after a navigation need no ring, less motion */
+.skip-link { position: absolute; left: 16px; top: -3rem; z-index: 1000; padding: .5rem .8rem; background: var(--bg); color: var(--text); border: 2px solid currentColor; border-radius: 6px; }
+.skip-link:focus { top: .5rem; }
+h1[tabindex="-1"]:focus, #app:focus { outline: none; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
+}
