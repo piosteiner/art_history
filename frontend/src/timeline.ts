@@ -50,7 +50,8 @@ function decimalYear(d: DateRange | null, edge: 'from' | 'to'): number | null {
 
 const yearLabel = (t: number) => (t < 0 ? `${-t} BCE` : String(t));
 
-export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts: TimelineOptions = {}) {
+/** Bars with decimal years, stacked by group: the timeline's extent (`min`–`max`) and height. */
+function layout(rows: TimelineRow[]) {
   const spans = rows
     .map((r) => {
       const start = decimalYear(r.from, 'from') ?? decimalYear(r.to, 'from');
@@ -61,17 +62,12 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     })
     .filter((r): r is typeof r & { start: number; end: number } => r.start !== null && r.end !== null)
     .sort((a, b) => a.group.localeCompare(b.group) || a.start - b.start);
-
-  if (!spans.length) {
-    container.classList.remove('timeline');
-    container.innerHTML = '<p class="muted">Nothing selected for the timeline.</p>';
-    return { setWindow: () => {}, redraw: () => {}, destroy: () => {} };
-  }
+  if (!spans.length) return { min: 0, max: MIN_SPAN, placed: [], height: 0 };
 
   const min = Math.floor(Math.min(...spans.map((s) => s.start)) / 10) * 10;
   const max = Math.max(Math.ceil(Math.max(...spans.map((s) => s.end)) / 10) * 10, min + MIN_SPAN);
 
-  // layout: groups stacked, rows inside
+  // groups stacked, rows inside
   let y = AXIS_H + 6;
   let lastGroup = '';
   const placed = spans.map((s) => {
@@ -84,11 +80,15 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     y += ROW;
     return row;
   });
-  const height = y + 8;
+  return { min, max, placed, height: y + 8 };
+}
+
+export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts: TimelineOptions = {}) {
+  let { min, max, placed, height } = layout(rows);
   const clipId = `tl-clip-${Math.random().toString(36).slice(2)}`;
 
   container.classList.add('timeline');
-  container.innerHTML = `<div class="timeline-bar">
+  container.innerHTML = `<p class="muted timeline-empty" hidden>Nothing selected for the timeline.</p><div class="timeline-bar">
       <form class="timeline-form" novalidate>
         <label>From <input type="number" name="from" step="1" inputmode="numeric" placeholder="year"></label>
         <label>to <input type="number" name="to" step="1" inputmode="numeric" placeholder="year"></label>
@@ -112,6 +112,8 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
   const toInput = form.elements.namedItem('to') as HTMLInputElement;
   const clear = container.querySelector<HTMLButtonElement>('.timeline-clear')!;
   const viewLabel = container.querySelector<HTMLElement>('.timeline-view')!;
+  const empty = container.querySelector<HTMLElement>('.timeline-empty')!;
+  const parts = [container.querySelector<HTMLElement>('.timeline-bar')!, container.querySelector<HTMLElement>('.timeline-hint')!, svg];
 
   let windowSel: YearWindow | null = opts.initialWindow ?? null;
   let v0 = min; // visible range in (decimal) years
@@ -142,6 +144,10 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
   const pan = (share: number) => setView(v0 + (v1 - v0) * share, v1 + (v1 - v0) * share);
 
   function draw() {
+    // nothing to show: only the note (the controls come back with the rows, typed years and all)
+    empty.hidden = placed.length > 0;
+    parts.forEach((el) => el.toggleAttribute('hidden', !placed.length));
+    if (!placed.length) return;
     const width = svgWidth();
     const plotW = plotWidth();
     svg.setAttribute('viewBox', `0 0 ${width} ${height}`);
@@ -299,6 +305,13 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     setWindow: (w: YearWindow | null) => setWindow(w, true),
     /** Repaints (e.g. new colours) without rebuilding the controls, so half-typed years stay. */
     redraw: () => draw(),
+    /** New rows (the selection changed): same controls, window and typed years; a zoomed view stays where it was. */
+    setRows(next: TimelineRow[]) {
+      const zoomed = v0 > min + 0.01 || v1 < max - 0.01;
+      ({ min, max, placed, height } = layout(next));
+      if (zoomed) setView(v0, v1);
+      else setView(min, max);
+    },
     destroy: () => ro.disconnect(),
   };
 }

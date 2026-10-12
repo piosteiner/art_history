@@ -340,7 +340,6 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
   const artistsOf = (artwork: string) => artists.get(artwork);
 
   let timeline: ReturnType<typeof renderTimeline> | undefined;
-  let timelineView: { from: number; to: number } | null = null; // zoom survives redraws when the picks change
   let lists: Awaited<ReturnType<typeof loadLists>> | undefined;
 
   function loadLists() {
@@ -351,9 +350,9 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     }));
   }
 
+  /** Built once; when the picks or the events layer change only its rows are replaced (zoom and typed years stay). */
   function drawTimeline() {
     if (!lists) return;
-    timeline?.destroy();
     const keep = <T extends { slug: string }>(type: EntityType, items: T[]) => items.filter((i) => includes(sel, type, i.slug));
     const rows: TimelineRow[] = [
       ...keep('polity', lists.polities).map((p) => ({ group: 'Polities', label: p.name, href: href('polity', p.slug), key: `polity/${p.slug}`, from: p.period, to: p.period, color: colorOf.get('polity', p.slug) })),
@@ -363,11 +362,10 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       ...(events && eventsBox.checked ? events.features.filter((f) => f.properties.period)
         .map((f) => ({ group: 'Events', label: f.properties.name, href: href('event', f.properties.slug), from: f.properties.period, to: f.properties.period })) : []),
     ];
+    if (timeline) return timeline.setRows(rows);
     timeline = renderTimeline(timelineEl, rows, {
       initialWindow: win,
-      initialView: timelineView,
       colorFor: (r) => (r.key ? routeColors.get(r.key) : undefined),
-      onView: (v) => (timelineView = v),
       onWindow: (w) => {
         win = w;
         persist();

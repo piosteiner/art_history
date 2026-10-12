@@ -976,3 +976,34 @@ test('accessibility: after a navigation the new heading has focus; skip link; th
   await page.waitForTimeout(300);
   expect(await pos()).toBe(first);
 });
+
+test('timeline: changing the picks replaces its rows, zoom and half-typed years stay; none selected shows a note', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.locator('.row-label').first()).toBeVisible();
+  await page.locator('.timeline-svg').focus();
+  await page.keyboard.press('+');
+  const view = await page.locator('.timeline-view').textContent();
+  expect(view).toContain('showing');
+  await page.fill('input[name=from]', '1850'); // not applied
+  const rows = await page.locator('.row-label').count();
+
+  const movements = page.locator('details[data-group=movement]');
+  await movements.locator('summary').click();
+  await movements.locator('[data-act=none]').click();
+  await expect.poll(() => page.locator('.row-label').count()).toBeLessThan(rows);
+  await expect(page.locator('input[name=from]')).toHaveValue('1850');
+  await expect(page.locator('.timeline-view')).toContainText('showing');
+
+  for (const g of ['artist', 'artwork', 'polity', 'person']) {
+    const d = page.locator(`details[data-group=${g}]`);
+    await d.locator('summary').click();
+    await d.locator('[data-act=none]').click();
+  }
+  if (await page.locator('#events-toggle').isVisible()) await page.locator('#events-toggle input').uncheck();
+  await expect(page.locator('.timeline-empty')).toBeVisible();
+  await expect(page.locator('.timeline-svg')).toBeHidden();
+  if ((await movements.getAttribute('open')) === null) await movements.locator('summary').click();
+  await movements.locator('[data-act=all]').click();
+  await expect(page.locator('.timeline-svg')).toBeVisible();
+  await expect(page.locator('input[name=from]')).toHaveValue('1850');
+});

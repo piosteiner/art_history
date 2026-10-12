@@ -463,7 +463,6 @@ main { min-height: 60vh; }
 ruby rt { font-size: .5em; color: var(--muted); }
 .card-original { font-size: .85rem; color: var(--muted); }
 .restored { font-size: .88rem; margin: 0 0 .6rem; padding: .35rem .7rem; background: var(--picked-bg); border-radius: var(--radius); display: inline-block; }
-.restored[hidden] { display: none; }
 
 /* route legend: one name per route, hover/focus highlights it, click keeps it highlighted */
 .route-key { cursor: pointer; border-radius: 999px; padding: .05rem .45rem .05rem .2rem; color: var(--text); }
@@ -494,7 +493,6 @@ ruby rt { font-size: .5em; color: var(--muted); }
 
 /* exact locations: museums and sites layer, buildings in the graph */
 .sites-toggle { display: inline-flex; align-items: center; gap: .35rem; font-size: .85rem; color: var(--muted); margin: .3rem 0 0; cursor: pointer; }
-.sites-toggle[hidden] { display: none; }
 .layer-toggles { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
 .rel-role { color: var(--muted); }
 :root { --c-architecture: #3b4fa0; }
@@ -563,6 +561,9 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .cite-body { min-width: 0; overflow-wrap: anywhere; }
 .cite-full, .cite-note { display: block; margin-top: .15rem; color: var(--muted); font-size: .82rem; }
 .cite-item.outdated { opacity: .55; }
+
+/* `hidden` always hides, also where a rule sets display (flex bars, toggles) */
+[hidden] { display: none !important; }
 
 /* accessibility: skip link (visible when focused), headings focused after a navigation need no ring, less motion */
 .skip-link { position: absolute; left: 16px; top: -3rem; z-index: 1000; padding: .5rem .8rem; background: var(--bg); color: var(--text); border: 2px solid currentColor; border-radius: 6px; }
