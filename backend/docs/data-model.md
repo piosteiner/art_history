@@ -369,12 +369,23 @@ entry being saved, who, when) until it is next published or marked complete; the
 (`auto_created`, warning), the admin list shows "to complete". The generic delete trigger
 `delete_entity_relationships()` also removes the row — one `CREATE OR REPLACE FUNCTION` covers every entity table.
 
-## Data quality (migration 013)
-`quality_issues` is a view with one `SELECT` per check (`UNION ALL`): `check_id, severity, entity_type, entity_id,
+## Data quality (migrations 013, 058)
+`quality_issues_live` is a view with one `SELECT` per check (`UNION ALL`): `check_id, severity, entity_type, entity_id,
 issue_key, detail`. The date checks are range operators — `&&` overlap, `<<` entirely before, `>>` entirely after,
 `*` intersection — so fuzzy dates only count as a contradiction when they cannot overlap at all. Place outlines use
 PostGIS `ST_Covers(parent.area, child.location)`; duplicates `similarity()` from pg_trgm. Findings confirmed as correct
 go into `quality_acks (check_id, issue_key)` and are filtered out with a `LEFT JOIN … WHERE a.check_id IS NULL`.
+
+**Stored result (058).** Computing every check took ~1 s (one entry ~0.3 s: a filter can't be pushed into every
+branch), so pages read the table `quality_issues` (same columns, primary key `(check_id, issue_key)`), which
+`refresh_quality()` (SECURITY DEFINER, advisory lock) brings up to date by writing only what changed: DELETE gone
+findings, `INSERT … ON CONFLICT DO UPDATE … WHERE … IS DISTINCT FROM` the rest. Not a materialized view: since
+PostgreSQL 17 those are built with `search_path = pg_catalog, pg_temp`, and functions the checks call name tables
+without `public.`. A deferred constraint trigger `quality_changed` on every content table fires at commit: `nextval()`
+of the sequence `quality_changes` (non-transactional, no lock — writers never queue) and `NOTIFY quality_changed`. The
+server LISTENs and refreshes 0.5 s later (`src/admin/quality.js`); `quality_fresh()` compares the sequence with the
+value the last refresh saw — the Quality page and dashboard wait for a refresh when behind, an entry page computes its
+own checks live meanwhile. **A migration that changes a check replaces `quality_issues_live`.**
 
 ## Roles & privileges
 | Role | Used by | Can |

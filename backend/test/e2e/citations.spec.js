@@ -26,7 +26,7 @@ test('a new entry from Wikidata: its values are cited (W); a museum source added
   const birth = userA.locator('dt:has-text("Birth") + dd');
   await expect(birth.locator('summary .cite-badge.cite-database')).toHaveText('W');
   await expect(userA.locator('dt:has-text("Death") + dd summary .cite-badge.cite-none')).toHaveText('+');
-  expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
     .toBe('no source: death · only Wikidata / databases: birth');
 
   // the museum's website as a source for the death date: an institution (M); the field is then well sourced
@@ -39,12 +39,12 @@ test('a new entry from Wikidata: its values are cited (W); a museum source added
   await form.locator('.cite-submit').click();
   await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);   // in place, no reload
   await expect(userA.locator('dt:has-text("Death") + dd summary .cite-badge.cite-institution')).toHaveText('M');
-  expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'weakly_sourced' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
     .toBe('only Wikidata / databases: birth');
 
   // the birth date changes: Wikidata's citation no longer matches it
   sql("UPDATE artists SET birth = '[1840-01-01,1841-01-01)', birth_label = '1840' WHERE slug = 'claude-monet'");
-  expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'citation_outdated' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'citation_outdated' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`))
     .toBe('birth changed since it was cited (Wikidata Q100, P569)');
   await userA.reload();
   await expect(userA.locator('dt:has-text("Birth") + dd summary .cite-badge.cite-outdated')).toBeVisible();

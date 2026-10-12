@@ -171,10 +171,10 @@ SAVEPOINT bad_code;
 INSERT INTO polities (slug, name, country_codes) VALUES ('bad', 'Bad', '{ukr}');  -- must fail: not an ISO alpha-2 code
 \set ON_ERROR_STOP on
 ROLLBACK TO SAVEPOINT bad_code;
-SELECT check_id, detail FROM quality_issues WHERE check_id = 'outside_polity_period';  -- none yet
+SELECT check_id, detail FROM quality_issues_live WHERE check_id = 'outside_polity_period';  -- none yet
 INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period)
 VALUES ('artist', entity_id('artist', 'sample-painter'), 'nationality', 'polity', entity_id('polity', 'ussr'), year_range(1900, 1905));
-SELECT check_id, detail FROM quality_issues WHERE check_id = 'outside_polity_period';  -- USSR in 1900: flagged
+SELECT check_id, detail FROM quality_issues_live WHERE check_id = 'outside_polity_period';  -- USSR in 1900: flagged
 
 \echo '== several creators (028): main creator first, then co-creators with their part:'
 UPDATE artworks SET creator_id = entity_id('artist', 'paul-gauguin') WHERE slug = 'sample-bronze';

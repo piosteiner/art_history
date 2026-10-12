@@ -1,7 +1,10 @@
-// Data quality (the checks themselves are the SQL view quality_issues, migration 013).
-// This module: what each check means and how to fix it, the /quality page, the box on entity pages, acknowledgements.
+// Data quality (the checks themselves are the SQL view quality_issues_live, migrations 013 … 058).
+// This module: what each check means and how to fix it, the /quality page, the box on entity pages, acknowledgements,
+// and keeping the stored result (table quality_issues, 058) up to date.
+const { Client } = require('pg');
 const { html } = require('./html');
 const { BY_TYPE } = require('../content');
+const config = require('../config');
 
 const CHECKS = {
   presence_outside_lifespan: { title: 'Presence outside the lifespan', fix: 'Correct the period of the relationship, or the birth/death date.' },
@@ -38,8 +41,78 @@ const CHECKS = {
 const SEVERITIES = ['error', 'warning', 'info'];
 const SEVERITY_TEXT = { error: 'Errors — contradictions', warning: 'Warnings — probably a problem', info: 'Info — incomplete' };
 
-// Findings with names, filtered; acknowledged ones only when asked for.
-async function issues(db, { severity, check, type, entity, acked = false } = {}) {
+// ---------------------------------------------------------------------------------------------------------------
+// The stored result (migration 058). Every change bumps a counter and sends NOTIFY quality_changed at its commit;
+// this process LISTENs and calls refresh_quality() half a second later (several saves in a row: one refresh). One
+// refresh at a time; a change during it → once more right after. A page that must be exact waits (current()).
+// ---------------------------------------------------------------------------------------------------------------
+let running = null;  // the refresh in progress (a promise)
+let again = false;   // a change came in while it ran
+let timer = null;
+let pool = null;     // the admin pool (start())
+
+function refresh() {
+  if (running) { again = true; return running; }
+  running = (async () => {
+    try {
+      do { again = false; await pool.query('SELECT refresh_quality()'); } while (again);
+    } catch (err) {
+      console.error('quality: refresh failed —', err.message);
+    } finally { running = null; }
+  })();
+  return running;
+}
+const refreshSoon = () => { clearTimeout(timer); timer = setTimeout(refresh, 500); };
+
+// Is the stored result up to date? Not: refresh now (or join the one running) and wait — at most `wait` ms; false =
+// still not (the caller then computes the checks live, as before 058).
+async function current(db, { wait = 5000 } = {}) {
+  const fresh = async () => (await db.query('SELECT quality_fresh() AS f')).rows[0].f === true;
+  if (await fresh()) return true;
+  if (!pool) return false;
+  let timeout;
+  const late = new Promise((resolve) => { timeout = setTimeout(resolve, wait, false); });
+  const done = refresh().then(fresh);
+  try { return await Promise.race([done, late]); } finally { clearTimeout(timeout); }
+}
+const isFresh = async (db) => (await db.query('SELECT quality_fresh() AS f')).rows[0].f === true;
+
+// LISTEN on a connection of its own (a pooled one goes back to the pool); reconnects after an outage and refreshes
+// then — a change during it sent its notice to nobody.
+let listener = null;
+let stopped = false;
+async function listen() {
+  const client = new Client({ connectionString: config.db.adminUrl, application_name: 'arthistory-quality' });
+  client.on('notification', refreshSoon);
+  const retry = () => { if (listener === client) listener = null; if (!stopped) setTimeout(listen, 5000).unref(); };
+  client.on('error', (err) => { console.error('quality: listener —', err.message); client.end().catch(() => {}); });
+  client.on('end', retry);
+  try {
+    await client.connect();
+    await client.query('LISTEN quality_changed');
+    listener = client;
+    refreshSoon();
+  } catch (err) {
+    console.error('quality: cannot listen —', err.message);
+    client.end().catch(() => {});
+  }
+}
+// on server start (src/server.js): also brings the result up to date after a deploy (a migration may change checks)
+function start(adminPool) {
+  pool = adminPool;
+  stopped = false;
+  return listen();
+}
+async function stop() {
+  stopped = true;
+  clearTimeout(timer);
+  if (listener) await listener.end().catch(() => {});
+  if (running) await running;
+}
+
+// Findings with names, filtered; acknowledged ones only when asked for. live: computed now (quality_issues_live) —
+// when the stored result is behind and couldn't be brought up to date in time.
+async function issues(db, { severity, check, type, entity, acked = false, live = false } = {}) {
   const where = ['true'];
   const params = [];
   const p = (v) => { params.push(v); return `$${params.length}`; };
@@ -51,7 +124,7 @@ async function issues(db, { severity, check, type, entity, acked = false } = {})
   const { rows } = await db.query(`
     SELECT q.check_id, q.severity, q.entity_type::text AS type, q.issue_key, q.detail, e.slug, e.name,
            a.note, a.acked_at, u.username AS acked_by
-    FROM quality_issues q
+    FROM ${live ? 'quality_issues_live' : 'quality_issues'} q
     JOIN entity_index e ON e.type = q.entity_type AND e.id = q.entity_id
     LEFT JOIN quality_acks a ON a.check_id = q.check_id AND a.issue_key = q.issue_key
     LEFT JOIN admin_users u ON u.id = a.acked_by
@@ -60,9 +133,9 @@ async function issues(db, { severity, check, type, entity, acked = false } = {})
   return rows;
 }
 
-async function counts(db) {
+async function counts(db, { live = false } = {}) {
   const { rows } = await db.query(`
-    SELECT q.severity, q.check_id, count(*)::int AS n FROM quality_issues q
+    SELECT q.severity, q.check_id, count(*)::int AS n FROM ${live ? 'quality_issues_live' : 'quality_issues'} q
     LEFT JOIN quality_acks a ON a.check_id = q.check_id AND a.issue_key = q.issue_key
     WHERE a.check_id IS NULL GROUP BY 1, 2`);
   return rows;
@@ -134,4 +207,4 @@ async function unack(db, { check_id: checkId, issue_key: issueKey }) {
   await db.query('DELETE FROM quality_acks WHERE check_id = $1 AND issue_key = $2', [checkId, issueKey]);
 }
 
-module.exports = { CHECKS, SEVERITIES, issues, counts, page, entityBox, ack, unack };
+module.exports = { CHECKS, SEVERITIES, issues, counts, page, entityBox, ack, unack, start, stop, current, isFresh, refresh };

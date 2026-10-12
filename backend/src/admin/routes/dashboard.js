@@ -47,7 +47,7 @@ router.get('/', async (req, res) => {
     'SELECT type::text, count(*)::int AS n FROM entity_index GROUP BY type')).rows.map((r) => [r.type, r.n]));
   const rels = (await adminPool.query('SELECT count(*)::int AS n FROM relationships')).rows[0].n;
   const recent = await history(adminPool, 'true', [], { limit: 15 });
-  const qaCounts = await quality.counts(adminPool);
+  const qaCounts = await quality.counts(adminPool, { live: !(await quality.current(adminPool)) });
   const qaTotal = (s) => qaCounts.filter((c) => c.severity === s).reduce((n, c) => n + c.n, 0);
   const unpublishedRows = (await adminPool.query(`
     SELECT d.entity_type::text AS type, e.slug, e.name, d.contributors, d.updated_at FROM live_docs d
@@ -87,7 +87,7 @@ router.get('/lookup', async (req, res) => {
   res.json(await lookup(adminPool, q, types));
 });
 
-// Data quality (view quality_issues, migration 013; src/admin/quality.js)
+// Data quality (checks: view quality_issues_live, migration 013; stored result: quality_issues, 058; src/admin/quality.js)
 router.get('/quality', async (req, res) => {
   const filter = {
     severity: quality.SEVERITIES.includes(req.query.severity) ? req.query.severity : '',
@@ -95,9 +95,11 @@ router.get('/quality', async (req, res) => {
     type: BY_TYPE[req.query.type] ? req.query.type : '',
     acked: req.query.acked === '1' ? '1' : '',
   };
+  // the stored result (058) — brought up to date first if a change is not in it yet
+  const live = !(await quality.current(adminPool));
   const [rows, allCounts] = await Promise.all([
-    quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked }),
-    quality.counts(adminPool)]);
+    quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked, live }),
+    quality.counts(adminPool, { live })]);
   send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl }) });
 });
 

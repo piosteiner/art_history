@@ -87,6 +87,6 @@ test('Wikidata brings the numbers; the GND comparison: agreeing values cited, ot
   expect(sql("SELECT value FROM entry_identifiers WHERE authority = 'gnd' AND entity_id = entity_id('artist', 'vincent-van-gogh') AND entity_type = 'artist'"))
     .toBe('118583174');
   // GND counts as an institution's source: these fields are no longer "only Wikidata or nothing"
-  expect(sql(`SELECT coalesce(detail, '') FROM quality_issues WHERE check_id = 'weakly_sourced' AND entity_type = 'artist'
+  expect(sql(`SELECT coalesce(detail, '') FROM quality_issues_live WHERE check_id = 'weakly_sourced' AND entity_type = 'artist'
               AND entity_id = entity_id('artist', 'claude-monet-gnd')`)).toBe('');
 });

@@ -113,6 +113,6 @@ test('different inventory numbers in one collection: two objects, however alike 
        ('wl-test-a', 'Le Bassin aux nymphéas, le soir', entity_id('artist', 'vincent-van-gogh'), entity_id('institution', 'museum-of-modern-art'), '1952/0064', 200, 600),
        ('wl-test-b', 'Le Bassin aux nymphéas avec iris', entity_id('artist', 'vincent-van-gogh'), entity_id('institution', 'museum-of-modern-art'), '1952/0010', 200, 600)`);
   expect(sql(`SELECT count(*) FROM duplicate_candidates('artwork', entity_id('artwork', 'wl-test-a'))`)).toBe('0');
-  expect(sql(`SELECT count(*) FROM quality_issues WHERE check_id = 'possible_duplicate' AND detail LIKE '%nymphéas%'`)).toBe('0');
+  expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'possible_duplicate' AND detail LIKE '%nymphéas%'`)).toBe('0');
   sql("DELETE FROM artworks WHERE slug IN ('wl-test-a', 'wl-test-b')");
 });

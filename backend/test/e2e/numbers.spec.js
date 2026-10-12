@@ -63,12 +63,12 @@ test('a loan: the owner is someone else on purpose — the quality page asks for
   const sun = await api(request, '/artworks/sunflowers-national-gallery');
   expect(sun.on_loan).toBe(true);
   expect(sun.on_loan_since).toMatchObject({ from_year: 2021 });
-  expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'loan_owner' AND entity_id = entity_id('artwork', 'sunflowers-national-gallery')`))
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'loan_owner' AND entity_id = entity_id('artwork', 'sunflowers-national-gallery')`))
     .toContain('the provenance names no owner');
   // the lender as the last owner: no question left, and "the last owner isn't the holder" is not raised for a loan
   sql(`INSERT INTO provenance (artwork_id, position, owner_label, acquired, acquired_label)
        VALUES (entity_id('artwork', 'sunflowers-national-gallery'), 99, 'Lender Test', '[1960-01-01,1961-01-01)', '1960')`);
-  expect(sql(`SELECT count(*) FROM quality_issues WHERE check_id IN ('loan_owner', 'provenance_last_owner')
+  expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id IN ('loan_owner', 'provenance_last_owner')
               AND entity_id = entity_id('artwork', 'sunflowers-national-gallery')`)).toBe('0');
   sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
 });

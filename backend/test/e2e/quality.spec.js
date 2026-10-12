@@ -1,6 +1,6 @@
-// Data quality: contradictions are found (view quality_issues), shown on /quality and on the entry, and can be
+// Data quality: contradictions are found (view quality_issues_live), shown on /quality and on the entry, and can be
 // marked as OK (remembered, hidden, shown again on request, undoable).
-const { test, expect, adminChange } = require('./helpers');
+const { test, expect, adminChange, sql } = require('./helpers');
 
 test('a contradiction appears on /quality and on the entry; "Mark as OK" hides it until undone', async ({ userA }) => {
   adminChange("UPDATE artworks SET created = year_range(1895), created_label = '1895' WHERE slug = 'sunflowers-national-gallery'");
@@ -8,6 +8,9 @@ test('a contradiction appears on /quality and on the entry; "Mark as OK" hides i
   const group = userA.locator('.qa-group', { hasText: 'Artwork dated outside its creator' });
   await expect(group).toContainText('created 1895, but Vincent van Gogh died 29 July 1890');
   await expect(userA.locator('.card.qa-error b')).not.toHaveText('0');
+  // the page brought the stored result (058) up to date before showing it: the finding is in the table
+  expect(sql("SELECT quality_fresh()")).toBe('t');
+  expect(sql("SELECT count(*) FROM quality_issues WHERE check_id = 'artwork_outside_creator_life' AND detail LIKE 'created 1895%'")).toBe('1');
 
   await userA.goto('/artworks/sunflowers-national-gallery');
   const box = userA.locator('.qa-box');

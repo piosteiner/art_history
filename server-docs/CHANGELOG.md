@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-12
 
+### Admin: data-quality findings stored, refreshed after changes (migration 058)
+- **What:** the checks view is now `quality_issues_live`; `quality_issues` is a table with the last result,
+  updated by `refresh_quality()` (only changed rows). A deferred constraint trigger on every content table bumps the
+  sequence `quality_changes` and sends `NOTIFY quality_changed` at commit; the server LISTENs (own connection,
+  `arthistory-quality`) and refreshes 0.5 s later, and once at start. The Quality page and dashboard wait for a pending
+  refresh (max 5 s, else computed live); an entry page reads the table, or its own checks live while a refresh is due.
+  Not a materialized view: PG 17+ builds those with a restricted search_path, which our functions don't survive.
+- **Why:** owner: faster pages. Quality page / dashboard ~1 s → a few ms; entry page −0.3 s. Refresh ~0.45 s, in the
+  background.
+- **Revert:** drop the triggers `quality_changed` (all tables), the functions `quality_changed()`, `refresh_quality()`,
+  `quality_fresh()`, the tables `quality_issues`, `quality_refresh`, the sequence `quality_changes`; then
+  `ALTER VIEW quality_issues_live RENAME TO quality_issues;` `DELETE FROM schema_migrations WHERE name = '058_quality_stored.sql';`
+  and revert the commit.
+- **Tested:** dry run on prod (534 = 534 findings, triggers on 24 tables); dev: fresh → change → stale → refresh → fresh,
+  admin role can't write the table; e2e quality (page brought up to date before showing) + full suite.
+
 ### Admin: answers of outside services remembered for 15 minutes
 - **What:** `src/admin/remember.js` (`memo()`: per process, in memory, concurrent requests share one fetch, failures not
   kept, at most 500 entries). Used by Wikidata (replaces its own 10-minute cache), the GND (lobid), SIKART and Nominatim.

@@ -72,6 +72,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Sources for facts (049: `citations`, `citable_fields`, `citation_status`, Wikidata cites itself, markers on entry pages) built 2026-10-08; step 2 (050: free text as citations, `sources` in API and YAML) built 2026-10-08.
   Translation status (052: names[].status official/common/own, `artworks.title_status`) built 2026-10-08.
   Authority files (053: `authorities`, `entry_identifiers` unique per number, GND comparison via lobid.org `src/admin/gnd.js`) built 2026-10-09; ULAN links only (Getty API 403).
+  Quality findings stored (058: table `quality_issues` refreshed after commits via LISTEN/NOTIFY; **checks live in the view `quality_issues_live` — change that one**) built 2026-10-12.
   SIKART (057: portal links, "Find in SIKART…" by name, compare like the GND — `src/admin/sikart.js`, source `sikart`) built 2026-10-09.
   Wrong type: `type_doubt()`, Wikidata class check, `convert_entry()` + `entry_moves` redirects (055) built 2026-10-09.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.

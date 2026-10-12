@@ -406,7 +406,8 @@ router.get('/:plural/:slug', async (req, res) => {
   const mainCreator = t.type === 'artwork' && e.doc.creator
     ? (await adminPool.query('SELECT slug, name FROM artists WHERE slug = $1', [e.doc.creator])).rows[0] : null;
   const name = e.name;
-  const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
+  // the stored result — or, right after a change not in it yet, this entry's checks computed now (no waiting)
+  const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id }, live: !(await quality.isFresh(adminPool)) });
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);

@@ -37,7 +37,7 @@ test('change type: an institution becomes a person — preview, relationships an
          ('person', entity_id('person', 'theo-van-gogh'), 'patron_of', 'institution', entity_id('institution', 'henry-clay-frick'));
        UPDATE institutions SET description_md = 'Founded by [[institution/henry-clay-frick|Frick]].' WHERE slug = 'frick-collection-test'`);
   // the quality page has noticed
-  expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'type_doubtful' AND entity_type = 'institution'
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'type_doubtful' AND entity_type = 'institution'
               AND entity_id = entity_id('institution', 'henry-clay-frick')`)).toContain('looks like a person');
 
   await userA.goto('/institutions/henry-clay-frick');

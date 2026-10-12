@@ -58,7 +58,7 @@ test('an event: created with dates and place, depicted by an artwork, a person t
   expect(prev.data['event/great-fire-of-meireki'].subtitle).toBe('fire · Edo · 2 March–4 March 1657');
 
   // the quality page: connected (a place, a whole) — not "not connected to anything"
-  expect(sql(`SELECT count(*) FROM quality_issues WHERE check_id = 'no_relationships' AND entity_type = 'event'`)).toBe('0');
+  expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'no_relationships' AND entity_type = 'event'`)).toBe('0');
 });
 
 test('an event from Wikidata: dates from start/end, place from "location"; then participants suggested', async ({ userA }) => {

@@ -30,13 +30,13 @@ test('the title as an official translation with its source; other names with the
   await expect(userA.locator('dl.fields .names-list')).toContainText('own translation');
 
   // held by an institution, the title only a common translation: worth looking up the institution's
-  expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'title_translation' AND entity_type = 'artwork'
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'title_translation' AND entity_type = 'artwork'
               AND entity_id = entity_id('artwork', 'the-great-wave-off-kanagawa')`)).toContain('is a common translation — does');
   // made official: then it wants a source (the institution's page) — and the hint is gone
   sql("UPDATE artworks SET title_status = 'official' WHERE slug = 'the-great-wave-off-kanagawa'");
-  expect(sql(`SELECT count(*) FROM quality_issues WHERE check_id = 'title_translation' AND entity_type = 'artwork'
+  expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'title_translation' AND entity_type = 'artwork'
               AND entity_id = entity_id('artwork', 'the-great-wave-off-kanagawa')`)).toBe('0');
-  expect(sql(`SELECT detail FROM quality_issues WHERE check_id = 'weakly_sourced' AND entity_type = 'artwork'
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'weakly_sourced' AND entity_type = 'artwork'
               AND entity_id = entity_id('artwork', 'the-great-wave-off-kanagawa')`)).toContain('title_status');
   await userA.goto('/artworks/the-great-wave-off-kanagawa');
   await expect(userA.locator('dt:has-text("Title: original or translation") + dd details.cite > summary .cite-none')).toBeVisible();
