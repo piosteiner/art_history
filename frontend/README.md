@@ -167,8 +167,10 @@ place pages. Overlaps based on year-only or "c." dates are marked "possibly".
 - `GET /v1/map/presence?…&entities=artist/vincent-van-gogh,person/theo-van-gogh`: today the frontend filters single
   picks out of the full window response, which grows with the library.
 - `GET /v1/map/routes?entities=…`: several entities' map data in one request (today one request per chosen entry).
-- Lists beyond 500 entries: pickers and list pages load `limit=500` per type and sort in the browser; beyond that
-  they need a server-side `sort=` parameter (name, born, died, country, date, …) with paging, and search-as-you-type.
+- Large lists: pickers, list pages and the header search load every entry of a type (`listAll` in `src/api.ts`: pages of
+  500, the rest in parallel once `total` says there are more) and sort and search in the browser. When that gets slow
+  they need a server-side `sort=` parameter (name, born, died, country, date, …) with paging, and search-as-you-type
+  with the field matching of `src/catalog.ts` (type, birthplace, nationality …).
 
 ## Next
 Missing API features go to the backend as a written request rather than client-side stitching.

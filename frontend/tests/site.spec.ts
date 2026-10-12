@@ -892,3 +892,19 @@ test('a prerendered page stays on screen until the app replaces it: no "Loadingâ
   await expect(page.locator('.subtitle')).not.toHaveText('prerendered');
   expect(await page.evaluate(() => (window as unknown as { sawLoading?: boolean }).sawLoading ?? false)).toBe(false);
 });
+
+test('lists beyond 500 entries: the rest is fetched with offset, nothing is cut off', async ({ page }) => {
+  let firstCount = 0;
+  await page.route(/\/v1\/glossary\?limit=500$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    firstCount = body.data.length;
+    await route.fulfill({ json: { ...body, total: firstCount + 1 } });
+  });
+  await page.route(/\/v1\/glossary\?limit=500&offset=\d+$/, (route) => route.fulfill({
+    json: { data: [{ slug: 'zz-paged-term', name: 'Zz paged term', category: 'technique', definition: 'from the second page', image_url: null }], total: firstCount + 1, limit: 500, offset: firstCount },
+  }));
+  await page.goto('/glossary');
+  await expect(page.locator('.card-name', { hasText: 'Zz paged term' })).toBeVisible();
+  await expect(page.locator('#count')).toHaveText(`${firstCount + 1} entries`);
+});

@@ -1,4 +1,4 @@
-import { listEntities } from '../api';
+import { listAll, listEntities } from '../api';
 import { partLabel } from '../series';
 import { countryName, countryText, creatorNames, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
@@ -189,7 +189,7 @@ export function list(main: HTMLElement, plural: Plural) {
     }
   }
 
-  listEntities(plural, { limit: 500 })
+  listAll(plural)
     .then((res) => {
       if (!current()) return;
       all = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];

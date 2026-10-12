@@ -3,7 +3,7 @@
 // - no time window, entries chosen             → their routes and places, one colour per entry
 // - a time window on the timeline              → who/what of the selection was physically where
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
-import { getEntityMap, getEventsMap, getPlacesMap, getPresence, getSites, listEntities, PLURAL } from '../api';
+import { getEntityMap, getEventsMap, getPlacesMap, getPresence, getSites, listAll, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, render } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
@@ -18,7 +18,6 @@ import { showError } from './common';
 
 const STORAGE_KEY = 'arthistory:explore';
 const MAX_ROUTES = 24; // one request each; beyond that, use a time window
-const LIST = { limit: 500 } as const;
 
 type Window = { from: number; to: number } | null;
 
@@ -345,8 +344,7 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
 
   function loadLists() {
     return Promise.all([
-      listEntities('artists', LIST), listEntities('artworks', LIST),
-      listEntities('movements', LIST), listEntities('polities', LIST), listEntities('people', LIST),
+      listAll('artists'), listAll('artworks'), listAll('movements'), listAll('polities'), listAll('people'),
     ]).then(([artists, artworks, movements, polities, people]) => ({
       artists: artists.data, artworks: artworks.data, movements: movements.data, polities: polities.data, people: people.data,
     }));

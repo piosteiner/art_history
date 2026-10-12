@@ -49,6 +49,22 @@ export const getHealth = () => get<{ status: string; db: string }>('/health');
 export const listEntities = <P extends Plural>(plural: P, params: ListParams = {}) =>
   get<List<ItemByPlural[P]>>(`/${plural}`, params);
 
+const PAGE = 500; // the API's largest `limit`
+
+/**
+ * Every entry of a type: the first page of 500 and, when `total` says there are more, the rest in parallel.
+ * Pickers, list pages and the header search sort and filter in the browser, so they need the whole list
+ * (backend wish: server-side sort and search with paging, see README).
+ */
+export const listAll = async <P extends Plural>(plural: P): Promise<List<ItemByPlural[P]>> => {
+  const first = await listEntities(plural, { limit: PAGE });
+  if (first.total <= first.data.length) return first;
+  const offsets: number[] = [];
+  for (let o = first.data.length; o < first.total; o += PAGE) offsets.push(o); // after what came back
+  const rest = await Promise.all(offsets.map((offset) => listEntities(plural, { limit: PAGE, offset })));
+  return { ...first, data: [...first.data, ...rest.flatMap((r) => r.data)], limit: first.total };
+};
+
 export const getEntity = <P extends Plural>(plural: P, slug: string) =>
   get<DetailByPlural[P]>(`/${plural}/${encodeURIComponent(slug)}`);
 

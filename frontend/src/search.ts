@@ -1,7 +1,7 @@
 // Header search across all types: the same field search as the pickers and list pages (name, details and hidden
 // fields such as type or birthplace, with the reason shown), plus the API's typo-tolerant name matches
 // (/v1/search, "hokusia" → Hokusai) for whatever the field search missed.
-import { listEntities, search } from './api';
+import { listAll, search } from './api';
 import { entries, explain, matches, type Entry, type Match } from './catalog';
 import { href, html, langAttr, render, TYPE_LABEL, type Html } from './html';
 import { navigate, ROUTE_EVENT } from './router';
@@ -20,9 +20,9 @@ interface Hit {
 }
 
 let library: Promise<Entry[]> | undefined;
-/** Every entry of every type (≤ 500 per type), loaded once on first use; the API caches the lists. */
+/** Every entry of every type, loaded once on first use; the API caches the lists. */
 const loadLibrary = () =>
-  (library ??= Promise.all(PLURALS.map((p) => listEntities(p, { limit: 500 }).then((r) => entries(p, r.data as never) as Entry[])))
+  (library ??= Promise.all(PLURALS.map((p) => listAll(p).then((r) => entries(p, r.data as never) as Entry[])))
     .then((lists) => lists.flat())
     .catch((err) => {
       library = undefined;

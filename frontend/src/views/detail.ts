@@ -1,5 +1,5 @@
 // Detail page for every entity type: facts, images with credits, long text, relationships by category, map.
-import { getEntity, getEntityMap, getPresence, listEntities, PLURAL } from '../api';
+import { getEntity, getEntityMap, getPresence, listAll, PLURAL } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { GROUPS, type Group } from '../selection';
@@ -381,7 +381,7 @@ function relationshipSections(rels: Relationship[], pageType?: string, bibliogra
  * presence links (one request, shared with the start map) and the artworks list (to leave out a work and its artist).
  */
 function crossedPaths(el: HTMLElement, type: string, slug: string, current: () => boolean) {
-  Promise.all([getPresence(-3000, new Date().getFullYear() + 1), listEntities('artworks', { limit: 500 })])
+  Promise.all([getPresence(-3000, new Date().getFullYear() + 1), listAll('artworks')])
     .then(([presence, artworks]) => {
       if (!current() || !el.isConnected) return;
       const artists = new Map(artworks.data.map((a) => [a.slug, creatorsOf(a).map((c) => c.slug)]));
