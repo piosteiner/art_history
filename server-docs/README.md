@@ -38,7 +38,20 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
 Admin panel: WebSocket `/live` (presence, drafts) proxied by nginx with Upgrade headers. One login — app users in the `admin_users` table (scrypt); the password lives in the owner's password manager only.
 
-## Reference data (art history database)
+## API keys for outside data (open to-do)
+Sources of the admin panel's image search that need a key of our own — without it the source is not offered
+(`src/admin/imagesearch.js`). Keys go into `~/.config/arthistory/backend.env` (never into the repo), then
+`pm2 reload arthistory-api`. Status 2026-10-13: **none applied for yet** — the owner will apply later.
+
+| Source | What it adds | Where to apply | Variable | Notes |
+|---|---|---|---|---|
+| Europeana | images from European museums and archives (open licences only) | https://pro.europeana.eu/page/get-api | `EUROPEANA_KEY` | ask for a **Project key** (production use, free) — Personal keys are "non-production" only (terms of use, API section) |
+| Smithsonian Open Access | CC0 images from the Smithsonian museums | https://api.data.gov/signup/ | `SMITHSONIAN_KEY` | instant, free; the DEMO_KEY is for exploring only |
+| DigitaltMuseum | ~300 Norwegian and Swedish museums | KulturIT support portal, via https://dok.digitaltmuseum.org/en/api | `DIMU_KEY` | keys only for museums/organisations with an agreement — ask whether a research project qualifies; "demo" is for testing only |
+| Paris Musées | CC0 images of the 14 Paris city museums | https://apicollections.parismusees.paris.fr/ (account → token) | — | not built yet: needs the token first |
+| National Museum of Korea (e-museum) | Korean collections | https://www.data.go.kr/ (open API "e뮤지엄", in Korean) | — | not built yet: needs the key first |
+
+
 - `boundaries` — country and first-level region outlines from **Natural Earth** (public domain; 50m countries,
   10m admin-1, simplified ~1 km), loaded by `cd backend && npm run boundaries` (as owner; idempotent upsert, downloads
   ~44 MB from github.com/nvkelso/natural-earth-vector). Not part of migrations or YAML; included in the database

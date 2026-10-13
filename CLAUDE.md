@@ -82,6 +82,10 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
   Ideas later: impressions vs. design for prints; nightly auto-export commit; ISBN/DOI lookup for sources built 2026-10-12 (`booklookup.js`: Open Library, Crossref). Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
+- 📌 Open (raise this whenever we review improvements): API keys the owner hasn't applied for yet — Europeana (*Project*
+  key), Smithsonian, DigitaltMuseum (museums only — ask), Paris Musées and Korea's e-museum (not built until keys exist).
+  Where to apply and what each adds: `server-docs/README.md` → "API keys for outside data". Without keys the image search
+  skips those sources.
 - 📌 Open: after the owner fixes The Great Wave's inventory number (no institution), add a migration
   `ALTER TABLE artworks VALIDATE CONSTRAINT artworks_inventory_needs_institution` (016 added it NOT VALID).
 - Decided + built (2026-10-05): "c. YYYY" / "ca." / "circa" = ±5 years (`CIRCA_YEARS` in `src/fuzzy-date.js`), label as written; Wikidata circa on a year the same.
