@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-13
 
+### Fix: no dates, no lifespan (migration 065)
+- **What:** the generated `lifespan` of artists and people is NULL when birth and death are both missing (was the
+  unbounded range `(,)`). `ALTER COLUMN … SET EXPRESSION`; GiST indexes rebuilt.
+- **Why:** reported by the frontend instance: `relationships[].entity.period` came as an object full of nulls for
+  undated people (72 entries, mostly from the Bührle import) — the frontend's API-types test, run before every Pages
+  deploy, failed. Also semantic: `(,)` overlapped every period, so range checks treated such people as everyone's
+  contemporaries.
+- **Revert:** `ALTER TABLE artists/people ALTER COLUMN lifespan SET EXPRESSION AS (daterange(lower(birth), upper(death)))`.
+- **Tested:** dry run on prod (0 unbounded left, dated people unchanged); e2e `people.spec` + full suite.
+
 ### Data: 20 works of the Bührle Collection with their Kunsthaus provenance (import, production)
 - **What:** 20 works picked at random (seed 20261013) from the Kunsthaus Zürich online collection's Bührle search (198
   with BU numbers; the 3 we had left out): BU 0003, 0014, 0016, 0030, 0033, 0037, 0061, 0063, 0079, 0096, 0117, 0121,

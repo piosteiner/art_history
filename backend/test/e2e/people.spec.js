@@ -53,3 +53,15 @@ test('a patron is a person with patronage relationships; old /patrons addresses 
   await expect(userA).toHaveURL(/\/people\/theo-van-gogh$/);
   await expect(userA.locator('dl.fields')).toContainText('Art dealer in Paris');      // notes_md → description_md
 });
+
+test('a person without dates has no lifespan: period null in the API, also as the other end of a relationship (065)', async ({ request }) => {
+  sql(`DELETE FROM people WHERE slug = 'test-undated-dealer';
+       INSERT INTO people (slug, name) VALUES ('test-undated-dealer', 'Test Undated Dealer');
+       INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+       VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'collaborated_with', 'person', entity_id('person', 'test-undated-dealer'))`);
+  expect(sql("SELECT lifespan IS NULL FROM people WHERE slug = 'test-undated-dealer'")).toBe('t');
+  const g = await (await request.get(`${API}/artists/paul-gauguin`, { headers: { Host: 'api.localhost' } })).json();
+  const rel = g.relationships.find((r) => r.entity.slug === 'test-undated-dealer');
+  expect(rel.entity.period).toBeNull();
+  sql("DELETE FROM people WHERE slug = 'test-undated-dealer'");
+});
