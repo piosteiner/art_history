@@ -45,6 +45,9 @@ const SOURCES = {
   smk: { name: 'SMK (Copenhagen)', search: smk },
   dimu: { name: 'DigitaltMuseum', search: dimu },
 };
+// DigitaltMuseum gives keys only to museums and organisations with an agreement; its "demo" key is for testing only —
+// so the source is offered only with a key of our own (DIMU_KEY)
+if (!process.env.DIMU_KEY) delete SOURCES.dimu;
 
 async function getJson(url, headers = {}) {
   const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json', ...headers }, signal: AbortSignal.timeout(15000) });
@@ -190,13 +193,13 @@ async function smk(q) {
 }
 
 // DigitaltMuseum: the licence is part of each search hit ("CC by-sa", "CC pdm", "CC CC0 1.0" …) — only free ones;
-// images from its media server. Its demo key is meant for trying out (DIMU_KEY for an own one).
+// images from its media server. Needs DIMU_KEY (see SOURCES).
 const DIMU_LICENSES = { 'CC pdm': 'Public domain (PDM)', 'CC CC0 1.0': 'CC0', 'CC by': 'CC BY', 'CC by-sa': 'CC BY-SA' };
 const DIMU_OWNERS = { 'NMK-B': 'Nasjonalmuseet', 'NMK-A': 'Nasjonalmuseet', 'NMK-D': 'Nasjonalmuseet', 'NF': 'Norsk Folkemuseum', 'MUH': 'Munchmuseet',
   'OB': 'Oslo Museum', 'NM': 'Nationalmuseum, Stockholm', 'S-NM': 'Nationalmuseum, Stockholm' };
 async function dimu(q) {
   const data = await getJson(`${DIMU}/api/solr/select?${new URLSearchParams([['q', q], ['wt', 'json'], ['rows', String(LIMIT * 3)],
-    ['api.key', process.env.DIMU_KEY || 'demo'], ['fq', 'artifact.hasPictures:true'], ['fq', 'artifact.type:(Thing OR Fineart OR Photograph)']])}`);
+    ['api.key', process.env.DIMU_KEY], ['fq', 'artifact.hasPictures:true'], ['fq', 'artifact.type:(Thing OR Fineart OR Photograph)']])}`);
   return (((data.response || {}).docs) || []).flatMap((d) => {
     const license = DIMU_LICENSES[(d['artifact.ingress.license'] || [])[0]];
     const media = d['artifact.defaultMediaIdentifier'];

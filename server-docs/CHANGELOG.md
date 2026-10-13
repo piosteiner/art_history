@@ -2,6 +2,15 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-13
+
+### Admin: DigitaltMuseum in the image search only with an own API key
+- **What:** `imagesearch.js` offers DigitaltMuseum only when `DIMU_KEY` is set (no fallback to the "demo" key any more).
+- **Why:** owner noticed: DigitaltMuseum gives keys only to museums/organisations with an agreement, and its API docs say
+  the "demo" key is for testing — not for a site's everyday use. Europeana carries much of the Norwegian/Swedish museum
+  content too.
+- **Revert:** revert the commit (or set `DIMU_KEY` in `~/.config/arthistory/backend.env` once a key is granted).
+
 ## 2026-10-12
 
 ### Admin: KulturNav, National Library of Korea, ArCo on the Enrich page; SMK and DigitaltMuseum in the image search (migration 060)
