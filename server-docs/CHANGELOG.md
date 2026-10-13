@@ -4,6 +4,26 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-13
 
+### Data: 20 works of the Bührle Collection with their Kunsthaus provenance (import, production)
+- **What:** 20 works picked at random (seed 20261013) from the Kunsthaus Zürich online collection's Bührle search (198
+  with BU numbers; the 3 we had left out): BU 0003, 0014, 0016, 0030, 0033, 0037, 0061, 0063, 0079, 0096, 0117, 0121,
+  0123, 0136, 0140, 0145, 0152, 0172, P.11, P.19. Read from the collection's Solr index (`/solr/published`:
+  `provenance_ss`) and item pages (footnotes per line, dimensions, catalogue raisonné); parsed by a one-off script
+  (dates incl. "frühestens ab"/"spätestens ab"/"mindestens bis"/"höchstens bis", roles Kunsthändler/Sammler/Auktion/
+  Vermittler, methods incl. Beschlagnahme/Verwahrung/Restitution, "wohl" → probable, joint holders, estates, heirs,
+  prices with German/Swiss thousands separators), reviewed line by line, loaded in one transaction (audit source
+  `import`, user pio). Per work: creator/attribution ("Workshop of", "Circle of", "Swabia [Ulm?]"), date, kind,
+  medium, dimensions, BU inventory number at the Kunsthaus on loan since 2021, the foundation's number and the
+  catalogue raisonné as further numbers, fields cited with the Kunsthaus record; 177 provenance steps, each cited with
+  the record and its footnote (≤ 400 characters). Created, "to complete": 12 artists, 58 people, 19 institutions (33
+  with a Wikidata id — accepted only when name and birth year agree); 14 places via OpenStreetMap (Venice, Bern,
+  Basel, Lucerne, Geneva, Brussels, Budapest …, with parent regions where missing).
+- **Why:** owner: provenance and relationships for 20 random Bührle works, like Tournesols sur un fauteuil.
+- **Review:** the quality checks flag 3 undocumented changes of owner 1933–1945 among them; 56 new entries without a
+  Wikidata id → Quality → "Find Wikidata items for these…"; all new entries → Enrich.
+- **Revert:** History → the change set (source import) → Revert; or delete the 20 artworks (BU numbers above) and the
+  entries created with them (`auto_created.created_at` 2026-10-13).
+
 ### Provenance: period labels as they read (migration 064); Tournesols sur un fauteuil entered
 - **What:** 064 — a step with an undated acquisition but a recorded end: period `(,end]`, "until 17 November 1928"
   (was blank); acquired within a span ("between 1901 and 28 October 1904", "… or earlier"): "until <end>"; the
