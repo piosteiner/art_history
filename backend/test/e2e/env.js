@@ -34,7 +34,7 @@ function shard(i) {
       RIJKS_BASE: `${FIXTURES}/rijks`, RIJKS_ID_BASE: `${FIXTURES}/rijksid`, EUROPEANA_BASE: `${FIXTURES}/europeana`,
       SMITHSONIAN_BASE: `${FIXTURES}/si`, JAPANSEARCH_BASE: `${FIXTURES}/jps`, KULTURNAV_BASE: `${FIXTURES}/kulturnav`,
       NLK_BASE: `${FIXTURES}/nlk`, ARCO_BASE: `${FIXTURES}/arco`, SMK_BASE: `${FIXTURES}/smk`, DIMU_BASE: `${FIXTURES}/dimu`,
-      DIMU_KEY: 'test' }),
+      DIMU_KEY: 'test', EUROPEANA_KEY: 'test', SMITHSONIAN_KEY: 'test' }),
   };
 }
 

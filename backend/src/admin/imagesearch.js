@@ -13,8 +13,8 @@
 //   smk        SMK – Statens Museum for Kunst, Copenhagen: open API, public-domain works with images (IIIF)
 //   dimu       DigitaltMuseum (about 300 Norwegian and Swedish museums): only records with a free licence
 //
-// Europeana and the Smithsonian want an API key (free): EUROPEANA_KEY, SMITHSONIAN_KEY in the server's env file —
-// without one their demo keys are used (rate-limited, meant for trying out).
+// Europeana (a Project key), the Smithsonian and DigitaltMuseum need an API key of our own: EUROPEANA_KEY,
+// SMITHSONIAN_KEY, DIMU_KEY in the server's env file — without one the source isn't offered.
 // Base URLs are configurable (COMMONS_BASE, MET_BASE, AIC_BASE, CLEVELAND_BASE, RIJKS_BASE, EUROPEANA_BASE,
 // SMITHSONIAN_BASE, JAPANSEARCH_BASE) so the end-to-end tests can serve fixtures. Why not the museum websites' images directly: in Switzerland even simple photos are protected (50 years),
 // so only explicitly released photos (CC0 / public domain / free licence) are offered.
@@ -45,9 +45,12 @@ const SOURCES = {
   smk: { name: 'SMK (Copenhagen)', search: smk },
   dimu: { name: 'DigitaltMuseum', search: dimu },
 };
-// DigitaltMuseum gives keys only to museums and organisations with an agreement; its "demo" key is for testing only —
-// so the source is offered only with a key of our own (DIMU_KEY)
-if (!process.env.DIMU_KEY) delete SOURCES.dimu;
+// Sources with an API key are offered only with a key of our own: their demo keys are for testing, not for a live
+// site — DigitaltMuseum gives keys only to museums/organisations with an agreement; Europeana's production use needs a
+// (free) Project key, its Personal keys are for non-production use; api.data.gov's DEMO_KEY is for exploring.
+for (const [source, key] of [['dimu', 'DIMU_KEY'], ['europeana', 'EUROPEANA_KEY'], ['smithsonian', 'SMITHSONIAN_KEY']]) {
+  if (!process.env[key]) delete SOURCES[source];
+}
 
 async function getJson(url, headers = {}) {
   const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json', ...headers }, signal: AbortSignal.timeout(15000) });
@@ -137,7 +140,7 @@ async function rijks(q) {
 const RIGHTS = [[/publicdomain\/mark/, 'Public domain (PDM)'], [/publicdomain\/zero/, 'CC0'], [/licenses\/by-sa\/([\d.]+)/, 'CC BY-SA $1'], [/licenses\/by\/([\d.]+)/, 'CC BY $1']];
 const rightsLabel = (uri) => { for (const [re, label] of RIGHTS) { const m = re.exec(uri || ''); if (m) return label.replace('$1', m[1] || ''); } return null; };
 async function europeana(q) {
-  const data = await getJson(`${EUROPEANA}/record/v2/search.json?${new URLSearchParams({ wskey: process.env.EUROPEANA_KEY || 'api2demo', query: q,
+  const data = await getJson(`${EUROPEANA}/record/v2/search.json?${new URLSearchParams({ wskey: process.env.EUROPEANA_KEY, query: q,
     reusability: 'open', media: 'true', qf: 'TYPE:IMAGE', rows: String(LIMIT), profile: 'rich' })}`);
   return (data.items || []).flatMap((it) => {
     const license = rightsLabel((it.rights || [])[0]);
@@ -151,7 +154,7 @@ async function europeana(q) {
 // Smithsonian Open Access: CC0 media of the objects found
 async function smithsonian(q) {
   const data = await getJson(`${SMITHSONIAN}/openaccess/api/v1.0/search?${new URLSearchParams({ q: `${q} AND online_media_type:"Images"`, rows: String(LIMIT),
-    api_key: process.env.SMITHSONIAN_KEY || 'DEMO_KEY' })}`);
+    api_key: process.env.SMITHSONIAN_KEY })}`);
   return (((data.response || {}).rows) || []).flatMap((r) => {
     const c = r.content || {};
     const dnr = c.descriptiveNonRepeating || {};

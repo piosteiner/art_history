@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-13
 
+### Admin: Europeana and Smithsonian in the image search only with own API keys too
+- **What:** like DigitaltMuseum: no fallback to the demo keys (`api2demo`, `DEMO_KEY`); the source appears once
+  `EUROPEANA_KEY` / `SMITHSONIAN_KEY` is set in `~/.config/arthistory/backend.env`.
+- **Why:** Europeana's terms of use (API section): Personal API keys are "for individual, non-production use", Project
+  keys for production — this site needs a (free) Project key; api.data.gov's DEMO_KEY is for exploring before signing up.
+  Content use was already as the terms ask: only open rights statements, with licence, credit and source link.
+- **Revert:** revert the commit.
+
 ### Admin: DigitaltMuseum in the image search only with an own API key
 - **What:** `imagesearch.js` offers DigitaltMuseum only when `DIMU_KEY` is set (no fallback to the "demo" key any more).
 - **Why:** owner noticed: DigitaltMuseum gives keys only to museums/organisations with an agreement, and its API docs say
