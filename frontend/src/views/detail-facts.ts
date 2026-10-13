@@ -3,7 +3,7 @@ import {
   countryLink, countryName, creatorsOf, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, spanLabel, type Html,
 } from '../html';
 import type {
-  Artwork, Citation, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, PolityLink,
+  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, PolityLink,
 } from '../types';
 import { partsGrid } from '../series';
 import { STATUS_LABEL } from '../catalog';
@@ -41,13 +41,27 @@ const artworkList = (works: ArtworkSummary[], withCreator: boolean) => html`<ul 
 </li>`)}</ul>`;
 
 /**
+ * Does the attribution name the creator itself ("Workshop of Rubens", "Rembrandt and workshop")? Else it is only the
+ * qualifier ("Workshop of", "Circle of", "Attributed to" — as the Kunsthaus gives them) and the name goes after it.
+ */
+const namesCreator = (label: string, name: string) => {
+  const words = new Set(label.toLowerCase().split(/[^\p{L}]+/u));
+  return name.toLowerCase().split(/[^\p{L}]+/u).some((w) => w.length >= 4 && words.has(w));
+};
+/** "Workshop of Francisco Goya" from the qualifier "Workshop of"; a label naming the creator as it is. */
+const attributed = (label: string, name: string) => (namesCreator(label, name) ? label : `${label} ${name}`);
+
+/**
  * Who made it, one per line: the main creator first, then co-creators with their part ("landscape").
- * An attribution ("Workshop of Rubens") stands instead of the main creator's name, linked to the creator;
- * without a creator it stands on its own.
+ * An attribution ("Workshop of Rubens") stands instead of the main creator's name, linked to the creator — a bare
+ * qualifier ("Workshop of") before the linked name; without a creator it stands on its own.
  */
 function creatorsFact(e: Artwork): Html | string | null {
   const all = creatorsOf(e);
-  const lines = all.map((c) => html`${link('artist', c.slug, c.main && e.attribution_label ? e.attribution_label : c.name)}${c.role ? html` <span class="muted">(${c.role})</span>` : ''}${uncertain(c.certainty)}`);
+  const label = e.attribution_label;
+  const name = (c: CreatorRef) => (!c.main || !label ? link('artist', c.slug, c.name)
+    : namesCreator(label, c.name) ? link('artist', c.slug, label) : html`${label} ${link('artist', c.slug, c.name)}`);
+  const lines = all.map((c) => html`${name(c)}${c.role ? html` <span class="muted">(${c.role})</span>` : ''}${uncertain(c.certainty)}`);
   if (e.attribution_label && !all.some((c) => c.main)) lines.unshift(html`${e.attribution_label}`);
   return lines.length ? html`${lines.map((l, i) => html`${i ? html`<br>` : ''}${l}`)}` : null;
 }
@@ -114,7 +128,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
       };
     case 'artwork': {
       const coCreators = creatorsOf(e).filter((c) => !c.main);
-      const byline = [e.creator ? e.attribution_label ?? e.creator.name : e.attribution_label, ...coCreators.map((c) => c.name)];
+      const byline = [e.creator ? (e.attribution_label ? attributed(e.attribution_label, e.creator.name) : e.creator.name) : e.attribution_label, ...coCreators.map((c) => c.name)];
       return {
         title: displayName(e).text, // an official translation preferred, an own one in [brackets]
         subtitle: [...byline, e.created?.label].filter(Boolean).join(', '),
@@ -239,8 +253,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
 const NAMES_FACT: Record<string, string[]> = { names: ['Also known as'] };
 const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
   artist: { birth: ['Born'], death: ['Died'] },
-  artwork: { creator: ['Artist', 'Artists'], created: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
-    dimensions: ['Dimensions'], institution: ['Collection'], inventory_number: ['Inventory no.'] },
+  artwork: { creator: ['Artist', 'Artists'], attribution_label: ['Artist', 'Artists'], created: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
+    dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'] },
   institution: { founded: ['Founded'], address: ['Address', 'Location'], location: ['Address', 'Location'], place: ['Location'] },
   person: { birth: ['Born', 'Active'], death: ['Died'], kind: ['Kind'], occupations: ['Occupations'] },
   place: { parent: ['Part of'], location: ['Coordinates'] },

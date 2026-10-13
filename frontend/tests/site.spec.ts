@@ -364,6 +364,22 @@ test('several creators: attribution instead of the name, co-creators with their 
   await expect(page.locator('.rel-list', { hasText: 'Katsushika Ōi' })).toHaveCount(0);
 });
 
+test('a bare qualifier as attribution ("Workshop of") goes before the linked name; its sources on the Artist row', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.attribution_label = 'Workshop of';
+    b.on_loan = true;
+    b.sources = { ...(b.sources as object), attribution_label: [cited({ text: 'Wikidata, Q1, P1' })], on_loan: [cited({ text: 'Wikidata, Q1, P2' })] };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const facts = page.locator('.facts');
+  const artist = facts.locator('dt', { hasText: /^Artist$/ }).locator('+ dd');
+  await expect(artist).toContainText('Workshop of Katsushika Hokusai');
+  await expect(artist.locator('a')).toHaveText('Katsushika Hokusai');
+  await expect(artist.locator('.cite-ref')).toHaveCount(1); // creator and attribution_label: one marker
+  await expect(page.locator('.subtitle')).toContainText('Workshop of Katsushika Hokusai');
+  await expect(facts.locator('dt', { hasText: /Attribution label|On loan/ })).toHaveCount(0);
+});
+
 test('an artist page marks co-created works', async ({ page }) => {
   await patch(page, /\/v1\/artists\/vincent-van-gogh$/, (b) => {
     (b.artworks as unknown[]).push({ slug: 'a-shared-work', title: 'A shared work', created: null, kind: null, co_creator: true, role: 'landscape' });
