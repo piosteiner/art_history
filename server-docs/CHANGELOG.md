@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-13
 
+### Provenance: period labels as they read (migration 064); Tournesols sur un fauteuil entered
+- **What:** 064 — a step with an undated acquisition but a recorded end: period `(,end]`, "until 17 November 1928"
+  (was blank); acquired within a span ("between 1901 and 28 October 1904", "… or earlier"): "until <end>"; the
+  implied artist line before such a step: "1901 – by 28 October 1904".
+  Data (production, as SQL in one transaction, audit source `sql`, user pio): Tournesols sur un fauteuil (BU 0046)
+  now has the Kunsthaus Zürich provenance — 11 new steps before the 3 recorded (Vollard as dealer, 200 FRF; Léo and
+  Gertrude Stein jointly; Vollard again by exchange; whereabouts unknown; Halvorsen; Galerie Thannhauser, ca. USD
+  18,000; Josef Stránský and his estate; Wildenstein & Co.; Sam Salz; Oskar Homolka "26 March 1952 or later";
+  Walter Feilchenfeldt sen.), each cited with the Kunsthaus record and its footnote's reference; Bührle's estate as
+  Bührle in the role estate; the loan as the implied last line. Created, "to complete" (with Wikidata ids):
+  8 people, Galerie Thannhauser, Wildenstein & Co.; places Berlin, Los Angeles.
+  Noted on the Feilchenfeldt step: the Kunsthaus names Walter Feilchenfeldt (*1939), but the dealer in 1952 was his
+  father (1894–1953; Wikidata Q2544162 vs. Q107177051).
+- **Why:** owner: the Tournesols provenance as the first complete example of the model.
+- **Revert:** 064: restore the views from 063. Data: revert the change set in History (source sql), or delete the
+  11 steps (positions 0–10) and the created entries.
+
 ### Provenance: roles, joint owners, prices, one-sided dates, the artist and the loan as implied lines (migration 063)
 - **What:** enum `holder_role` + `provenance.role`; table `provenance_co_owners` (+ view `provenance_co_owners_x`,
   audited, quality trigger); `price`, `price_currency`, `price_note`; `held_by` (derived) for agents/custodians,
