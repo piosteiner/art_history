@@ -63,7 +63,9 @@ const ROLES = `ARRAY(SELECT x.role FROM (
     FROM relationships r JOIN relationship_types rt ON rt.code = r.relationship_type
     WHERE (r.subject_type, r.subject_id) = ('person', t.id) OR (r.object_type, r.object_id) = ('person', t.id)
     UNION
-    SELECT 'owner' FROM provenance pv WHERE pv.owner_person_id = t.id) x(role)
+    SELECT CASE WHEN pv.method = 'commission' THEN 'patron' ELSE 'owner' END FROM provenance pv WHERE pv.owner_person_id = t.id
+    UNION
+    SELECT 'owner' FROM provenance_co_owners c WHERE c.owner_person_id = t.id) x(role)
   WHERE x.role IS NOT NULL ORDER BY 1)`;
 
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
@@ -275,7 +277,9 @@ const EXTRAS = {
       WHERE w.creator_id = $1 OR co.role IS NOT NULL
       ORDER BY lower(w.created) NULLS LAST, ${sortKey('artwork', 'w', 'title')}`, [id])).rows,
   }),
-  // the provenance (031): the steps as recorded, plus the computed period and where its end comes from
+  // the provenance (031, 063): the chain as it is read — kind "creation" (implied: the artist, from the creator and the
+  // date), "step" (recorded), "loan" (implied: on loan at the current institution) — each with its computed period and
+  // where its end comes from, the holder's role, joint owners and the price
   artwork: async (id) => ({
     // series and other wholes (migration 037): what it is part of (the chain upwards, nearest first), its neighbours,
     // and — for a whole — its parts in order
@@ -301,13 +305,17 @@ const EXTRAS = {
              (SELECT count(*)::int FROM artworks c WHERE c.parent_id = a.id) AS parts
       FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [id])).rows,
     provenance: (await apiPool.query(`
-      SELECT p.position,
+      SELECT p.kind, p.kind <> 'step' AS implied, p.position,
              CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'name', o.name) END AS owner,
-             p.owner_label, p.owner_name, range_json(p.acquired, p.acquired_label) AS acquired, range_json(p.ended, p.ended_label) AS ended,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('type', c.owner_type, 'slug', x.slug, 'name', x.name) ORDER BY c.position), '[]')
+                FROM provenance_co_owners_x c JOIN entity_index x ON (x.type, x.id) = (c.owner_type, c.owner_id)
+               WHERE c.provenance_id = p.id) AS co_owners,
+             p.role, p.owner_label, p.owner_name, range_json(p.acquired, p.acquired_label) AS acquired, range_json(p.ended, p.ended_label) AS ended,
              p.method, p.direct, p.label, p.certainty,
+             CASE WHEN p.price IS NOT NULL THEN jsonb_build_object('amount', p.price, 'currency', p.price_currency, 'note', p.price_note) END AS price,
              (SELECT jsonb_build_object('slug', l.slug, 'name', l.name) FROM places l WHERE l.id = p.location_id) AS place,
              range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.id AS _prov_id
-      FROM provenance_periods p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
+      FROM provenance_chain p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
       WHERE p.artwork_id = $1 ORDER BY p.position`, [id])).rows,
   }),
   institution: async (id) => ({

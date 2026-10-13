@@ -504,7 +504,7 @@ router.get('/:plural/:slug', async (req, res) => {
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? numbers.section({ e, numbers: nums }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap,
-        cites: await citations.forProvenance(adminPool, provSteps.map((s) => s.id)),
+        cites: await citations.forProvenance(adminPool, provSteps.filter((s) => s.id).map((s) => s.id)),
         marker: (c, target, back) => citations.marker(c, target, back, { recent }), back: `${here}#provenance` }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${await (async () => {

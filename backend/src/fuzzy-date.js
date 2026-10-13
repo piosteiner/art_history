@@ -7,6 +7,12 @@
 //   1886-03/1888-02-20   range, both ends inclusive at their own precision   "March 1886–20 February 1888", "20 May–29 July 1890"
 //   1478/1482       range of years       [1478-01-01,1483-01-01)   "1478–1482"  (write "c. 1480" as the label)
 //   1808/           open end (ongoing)   [1808-01-01,)             "since 1808"  — only with { openEnd: true }
+//   26 March 1952 · March 1952          written out: the same as 1952-03-26 · 1952-03 (the labels parse back)
+//   1952-03-26 or later                 [1952-03-26,)  "26 March 1952 or later" — a moment known only from below:
+//                                       also "not before …", "at the earliest …" (provenance: "frühestens ab")
+//   1904-10-28 or earlier               (,1904-10-29)  "28 October 1904 or earlier" — known only from above:
+//                                       also "by …", "at the latest …" ("spätestens"; "mindestens bis" is "or later")
+//   after 1952 · before 1928            [1953-01-01,) · (,1928-01-01)  the named date itself excluded
 //
 // Written out (case-insensitive), for dates known only roughly — the label is the text itself:
 //   13th century                 1201–1300 (the strict count, as Wikidata: the 1st century is 1–100)
@@ -120,11 +126,47 @@ function parseWords(text) {
   return { from, to, label };
 }
 
+// "26 March 1952", "March 1952" → "1952-03-26", "1952-03" (else the text as it is)
+function isoOf(text) {
+  const m = /^(?:(\d{1,2})\s+)?([A-Za-z]+)\s+(\d{1,4})$/.exec(text.trim());
+  const mo = m ? MONTHS.findIndex((x) => x.toLowerCase() === m[2].toLowerCase()) + 1 : 0;
+  if (!m || !mo) return text.trim();
+  return `${m[3]}-${pad(mo, 2)}${m[1] ? `-${pad(Number(m[1]), 2)}` : ''}`;
+}
+// inclusive: "1952-03-26 or later", "not before …", "at the earliest …" · "… or earlier", "by …", "at the latest …"
+const LATER = /^(?:not before|at the earliest)\s+(.+)$|^(.+?)\s+or later$/i;
+const EARLIER = /^(?:by|at the latest)\s+(.+)$|^(.+?)\s+or earlier$/i;
+// exclusive: "after 1952" = from 1953 on, "before 1928" = up to 1927
+const AFTER = /^after\s+(.+)$/i;
+const BEFORE = /^before\s+(.+)$/i;
+
 // → { range: '[1886-03-01,1888-02-21)', label: 'March 1886–20 February 1888' }, or null for null/undefined.
 // openEnd allows "1808/" (still ongoing: upper bound infinite) — for periods, not for births or creation dates.
 function parseFuzzyDate(value, { openEnd = false } = {}) {
   if (value === null || value === undefined) return null;
-  const text = String(value).trim();
+  const raw = String(value).trim();
+  // a moment known only from one side (provenance: "at the earliest from", "at least until"): an open range
+  const later = LATER.exec(raw);
+  if (later) {
+    const p = parseFuzzyDate(later[1] || later[2]);
+    return { range: `${p.range.split(',')[0]},)`, label: `${p.label} or later` };
+  }
+  const earlier = EARLIER.exec(raw);
+  if (earlier) {
+    const p = parseFuzzyDate(earlier[1] || earlier[2]);
+    return { range: `(,${p.range.split(',')[1]}`, label: `${p.label} or earlier` };
+  }
+  const afterIt = AFTER.exec(raw);
+  if (afterIt) {
+    const p = parseFuzzyDate(afterIt[1]);
+    return { range: `[${p.range.split(',')[1].replace(')', '')},)`, label: `after ${p.label}` };
+  }
+  const beforeIt = BEFORE.exec(raw);
+  if (beforeIt) {
+    const p = parseFuzzyDate(beforeIt[1]);
+    return { range: `(,${p.range.split(',')[0].replace('[', '')})`, label: `before ${p.label}` };
+  }
+  const text = raw.split('/').map(isoOf).join('/');
   const words = parseWords(text);
   if (words) return { range: `[${pgDate(start({ y: words.from }))},${pgDate(after({ y: words.to }))})`, label: words.label };
   const parts = text.split('/');
@@ -175,6 +217,9 @@ function pointText(p, precision) {
 
 function formatFuzzyDate(range, { coarseStart = false } = {}) {
   if (range === null || range === undefined) return null;
+  // known only from above: "… or earlier" (the day before the exclusive upper bound)
+  const below = /^\(,([^,]+)\)$/.exec(String(range));
+  if (below) return `${pointText(dayBefore(parseBound(below[1])), DAY)} or earlier`;
   const m = /^\[([^,]+),([^,]*)\)$/.exec(String(range));
   if (!m) throw new Error(`unsupported daterange "${range}"`);
   const lo = parseBound(m[1]);

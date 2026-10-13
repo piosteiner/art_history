@@ -76,8 +76,11 @@ const IMAGE_KEYS = ['url', 'source_url', 'license', 'credit', 'caption'];
 // A further number of an artwork in YAML (migration 048): whose it is — an institution or a catalogue (source) slug — or a label.
 const NUMBER_KEYS = ['number', 'institution', 'source', 'label'];
 // A provenance step in YAML (migration 031): owner "type/slug" and/or owner_label, dates as fuzzy text, place = slug.
-const PROVENANCE_KEYS = ['owner', 'owner_label', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
-  'place', 'label', 'certainty', 'notes_md', 'sources'];
+// 063: role (owner · dealer · agent · estate · custodian), co_owners ["person/gertrude-stein", …], price {amount,
+// currency, note}.
+const PROVENANCE_KEYS = ['owner', 'owner_label', 'co_owners', 'role', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
+  'place', 'label', 'certainty', 'price', 'notes_md', 'sources'];
+const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian'];
 const ACQUISITION_METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
   'confiscation', 'forced_sale', 'restitution', 'unknown'];
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -211,6 +214,13 @@ function toRow(doc, fields) {
         if (st.certainty !== undefined && !['attested', 'probable', 'possible', 'disputed'].includes(st.certainty)) errors.push(`${at}.certainty: attested, probable, possible or disputed`);
         if (st.direct !== undefined && typeof st.direct !== 'boolean') errors.push(`${at}.direct: true or false`);
         if (st.place !== undefined && !SLUG.test(String(st.place))) errors.push(`${at}.place: a place slug`);
+        if (st.role !== undefined && !HOLDER_ROLES.includes(st.role)) errors.push(`${at}.role: one of ${HOLDER_ROLES.join(', ')}`);
+        if (st.co_owners !== undefined && (!Array.isArray(st.co_owners) || st.co_owners.some((c) => !/^(artist|person|institution)\/[a-z0-9]+(-[a-z0-9]+)*$/.test(c)))) {
+          errors.push(`${at}.co_owners: a list like [person/gertrude-stein]`);
+        }
+        if (st.price !== undefined && (!st.price || typeof st.price !== 'object' || typeof st.price.amount !== 'number' || !/^[A-Z]{3}$/.test(st.price.currency || ''))) {
+          errors.push(`${at}.price: {amount: 18000, currency: USD, note: ca.}`);
+        }
         for (const k of ['acquired', 'ended']) {
           try { parseFuzzyDate(st[k] ?? null); } catch (err) { errors.push(`${at}.${k}: ${err.message}`); }
         }
@@ -266,11 +276,12 @@ function toRow(doc, fields) {
 function dateToDoc(range, label, openEnd) {
   const value = formatFuzzyDate(range);
   if (value === null) return { value: null, label: label ?? null };
-  // Written as "13th century" (or "late 13th century", "1880s"): the label is the text, so show it as the value.
-  try { if (label && parseFuzzyDate(label, { openEnd }).range.replace(/"/g, '') === String(range).replace(/"/g, '')) return { value: label, label: null }; } catch { /* not such a text */ }
+  // the ISO text first ("1840-11-14", not its label "14 November 1840" — both parse since 063) …
   for (const text of [value, formatFuzzyDate(range, { coarseStart: true })]) {
-    if (label === parseFuzzyDate(text, { openEnd }).label) return { value: text, label: null };
+    try { if (label === parseFuzzyDate(text, { openEnd }).label) return { value: text, label: null }; } catch { /* "…/" without openEnd */ }
   }
+  // … else written as "13th century" ("late 13th century", "1880s", "26 March 1952 or later"): the label is the text
+  try { if (label && parseFuzzyDate(label, { openEnd }).range.replace(/"/g, '') === String(range).replace(/"/g, '')) return { value: label, label: null }; } catch { /* not such a text */ }
   return { value, label };
 }
 
@@ -378,7 +389,10 @@ async function readProvenance(db, artworkId) {
   const { rows } = await db.query(`
     SELECT o.type::text || '/' || o.slug AS owner, p.owner_label, p.acquired::text AS acquired, p.acquired_label,
            p.ended::text AS ended, p.ended_label, p.method::text AS method, p.direct, l.slug AS place, p.label,
-           p.certainty::text AS certainty, p.notes_md, p.metadata, citation_docs(NULL, p.id) AS sources
+           p.certainty::text AS certainty, p.notes_md, p.metadata, citation_docs(NULL, p.id) AS sources,
+           p.role::text AS role, p.price, p.price_currency, p.price_note,
+           (SELECT array_agg(x.type::text || '/' || x.slug ORDER BY c.position) FROM provenance_co_owners_x c
+              JOIN entity_index x ON (x.type, x.id) = (c.owner_type, c.owner_id) WHERE c.provenance_id = p.id) AS co_owners
     FROM provenance p
     LEFT JOIN entity_index o ON (o.type, o.id) = (CASE WHEN p.owner_artist_id IS NOT NULL THEN 'artist' WHEN p.owner_person_id IS NOT NULL THEN 'person'
                                                        WHEN p.owner_institution_id IS NOT NULL THEN 'institution' ELSE 'place' END::entity_type,
@@ -389,6 +403,8 @@ async function readProvenance(db, artworkId) {
     const st = {};
     if (r.owner) st.owner = r.owner;
     if (r.owner_label) st.owner_label = r.owner_label;
+    if (r.co_owners && r.co_owners.length) st.co_owners = r.co_owners;
+    if (r.role && r.role !== 'owner') st.role = r.role;
     for (const k of ['acquired', 'ended']) {
       const d = dateToDoc(r[k], r[`${k}_label`], false);
       if (d.value !== null) st[k] = d.value;
@@ -399,6 +415,7 @@ async function readProvenance(db, artworkId) {
     if (r.place) st.place = r.place;
     if (r.label) st.label = r.label;
     if (r.certainty !== 'attested') st.certainty = r.certainty;
+    if (r.price !== null) st.price = { amount: Number(r.price), currency: r.price_currency, ...(r.price_note ? { note: r.price_note } : {}) };
     if (r.notes_md) st.notes_md = r.notes_md;
     if (r.sources) st.sources = r.sources;  // citations (050)
     return st;

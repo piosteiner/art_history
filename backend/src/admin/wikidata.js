@@ -15,6 +15,7 @@ const { BY_TYPE, TYPES, SLUG, toRow } = require('../content');
 const nameUtil = require('../names');
 const autocreate = require('./autocreate');
 const { pickedTarget } = require('./targets');
+const provenance = require('./provenance');
 const { fromStatement, periodOf } = require('../wikidata-time');
 const { parseFuzzyDate } = require('../fuzzy-date');
 
@@ -513,9 +514,10 @@ async function compare(db, t, qid, ours, entity) {
 
   // Relationship suggestions
   const vocab = Object.fromEntries((await db.query('SELECT code, label, inverse_label, subject_types::text[] AS s, object_types::text[] AS o FROM relationship_types')).rows.map((r) => [r.code, r]));
+  // (edges: the stored relationships and the derived ones — a commission is in the provenance since 063)
   const existing = entity ? (await db.query(`
     SELECT relationship_type, subject_type::text || '/' || s.slug AS subj, object_type::text || '/' || o.slug AS obj
-    FROM relationships r JOIN entity_index s ON s.type = r.subject_type AND s.id = r.subject_id
+    FROM edges r JOIN entity_index s ON s.type = r.subject_type AND s.id = r.subject_id
     JOIN entity_index o ON o.type = r.object_type AND o.id = r.object_id
     WHERE (r.subject_type, r.subject_id) = ($1::entity_type, $2) OR (r.object_type, r.object_id) = ($1::entity_type, $2)`, [entity.type, entity.id])).rows : [];
   const suggestions = [];
@@ -742,6 +744,16 @@ async function apply(db, t, entity, plan, choices, userId) {
       }
       await decide(s.item, s.qid, !!ref);
       if (!ref) continue;
+      // "commissioned by" (P88): the first step of the provenance (063), cited with the item — not a relationship
+      if (s.type === '~commissioned' && entity.type === 'artwork') {
+        const owner = (await db.query('SELECT entity_id($1, $2) AS id', [ref.type, ref.slug])).rows[0].id;
+        const stepId = await provenance.addCommission(db, entity.id, ref.type, owner);
+        if (stepId) {
+          await db.query(`INSERT INTO citations (provenance_id, wikidata_item, wikidata_property, accessed) VALUES ($1, $2, 'P88', current_date)`, [stepId, plan.qid]);
+          relationships += 1;
+        }
+        continue;
+      }
       const other = (await db.query('SELECT entity_id($1, $2) AS id', [ref.type, ref.slug])).rows[0].id;
       const [st, si, ot, oi] = reverse ? [ref.type, other, entity.type, entity.id] : [entity.type, entity.id, ref.type, other];
       const period = s.period ? parseFuzzyDate(s.period, { openEnd: true }) : null;

@@ -65,16 +65,19 @@ test('delete: the confirmation lists relationships; a referenced entity is prote
   expect(sql("SELECT count(*) FROM artists WHERE slug = 'claude-monet'")).toBe('0');
 });
 
-test('a reverse relationship ("commissioned by") is stored in canonical direction', async ({ userA }) => {
+test('a reverse relationship ("published by") is stored in canonical direction', async ({ userA }) => {
   await userA.goto('/artworks/the-starry-night');
   await userA.click('summary:has-text("+ Add relationship")');
-  await userA.selectOption('#r-type', '~commissioned');
-  await userA.fill('#r-to', 'place/paris');
+  // (a commission is the provenance's first step since 063 — not offered as a relationship)
+  await expect(userA.locator('#r-type option[value="~commissioned"]')).toHaveCount(0);
+  await userA.selectOption('#r-type', '~published');
+  await userA.fill('#r-to', 'institution/museum-of-modern-art');
   await userA.fill('#r-period', '1889');
   await Promise.all([userA.waitForNavigation(), userA.click('form[action$="/relationships"] button:has-text("Add")')]);
   await expect(userA).toHaveURL(/done=rel-added/);
-  expect(sql(`SELECT subject_type || '→' || object_type FROM relationships WHERE relationship_type = 'commissioned'
-              AND object_id = entity_id('artwork', 'the-starry-night')`)).toBe('place→artwork');
+  expect(sql(`SELECT subject_type || '→' || object_type FROM relationships WHERE relationship_type = 'published'
+              AND object_id = entity_id('artwork', 'the-starry-night')`)).toBe('institution→artwork');
+  sql("DELETE FROM relationships WHERE relationship_type = 'published' AND object_id = entity_id('artwork', 'the-starry-night')");
 });
 
 test('a relationship with a wrong target type gets a readable message', async ({ userA }) => {

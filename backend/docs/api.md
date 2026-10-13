@@ -236,9 +236,20 @@ Show it like a credit line: "Foundation E.G. Bührle Collection, on permanent lo
 shown like a citation's "accessed on …".
 
 ### Provenance (artworks)
-The detail of an artwork has **`provenance`**: its owners in order, as the sources record them —
-`[{position, owner: {type, slug, name} | null, owner_label, owner_name, acquired, ended, method, direct, label, certainty,
-place: {slug, name} | null, period, end_basis, notes_html, sources}]`.
+The detail of an artwork has **`provenance`**: its holders in order, as the sources record them, read as a chain —
+`[{kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,
+acquired, ended, method, direct, label, certainty, price: {amount, currency, note} | null, place: {slug, name} | null,
+period, end_basis, notes_html, sources}]`.
+- `kind` (063): `creation` — **implied** first line, the artist from the creation date (computed from the creator and
+  `created`; absent when the first step is a creation or commission, or names the artist) · `step` — recorded ·
+  `loan` — **implied** last line, the current institution as custodian when the work is on loan (`on_loan`,
+  `on_loan_since`). `implied: true` for the computed lines: no `sources`, show them differently (e.g. in italics).
+- `role` (063): `owner` · `dealer` (bought it to sell) · `agent` (held on consignment, did not own it) · `estate`
+  (the owner's estate: write "Estate of …") · `custodian` (held without owning: a loan, a deposit).
+  `co_owners`: further owners of the same step ("Léo and Gertrude Stein"). `price`: `{amount: 18000, currency: "USD",
+  note: "ca."}` (ISO 4217 currency; old ones like FRF, DEM too) or `null`.
+- Dates known only from one side are open ranges with a label saying so: "26 March 1952 or later" (`to` is `null`),
+  "28 October 1904 or earlier" (`from` is `null`), "after 1952", "before 1928".
 - `acquired` / `ended` are dates (`ended` only when a source records it); `method`: creation · commission · inheritance ·
   purchase · auction · gift · bequest · exchange · confiscation · forced_sale · restitution · unknown;
   `direct`: the handover from the previous owner is documented (false = possibly someone in between).
@@ -248,7 +259,8 @@ place: {slug, name} | null, period, end_basis, notes_html, sources}]`.
 - Each step also appears as derived relationships: `owned_by` (artwork → owner), `kept_in` (artwork → place, category
   `presence`: part of the artwork's **route on the map**), `transferred_to` (previous owner → next owner, category
   `provenance`, label = the method; certainty `possible` when not documented as direct). People who owned something
-  have the role `owner`.
+  have the role `owner`. Joint owners have their own `owned_by`; agents and custodians a `held_by` instead; a step with
+  the method `commission` also gives `commissioned` (owner → artwork; the patron's role `patron`).
 
 ## Search
 `GET /v1/search?q=edo` — top 20 matches across all types: `{type, slug, name, kind, period, score}`.
@@ -257,7 +269,7 @@ place: {slug, name} | null, period, end_basis, notes_html, sources}]`.
 `GET /v1/vocabulary` — relationship types: `code, label, inverse_label, category, is_physical_presence, is_symmetric,
 subject_types, object_types, description, derived`. `category` is meant for map/graph layers and legends. `derived: true`
 = computed, never entered as a relationship: `creator` (an artwork's main creator, graph only), `owned_by`, `kept_in`,
-`transferred_to` (from the provenance).
+`transferred_to`, `held_by`, `commissioned` (from the provenance — a commission is the provenance's first step).
 
 ## Map (GeoJSON, `[longitude, latitude]`)
 - `GET /v1/map/<type>/:slug` — one entity's places. Point features with `properties.layer`:

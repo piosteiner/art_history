@@ -113,3 +113,16 @@ test('thumbUrl: Wikimedia thumbnails at the wanted width, other hosts unchanged'
   assert.equal(thumbUrl('https://www.moma.org/media/starry.jpg', 120), 'https://www.moma.org/media/starry.jpg');
   assert.equal(thumbUrl(null, 120), null);
 });
+
+test('dates known from one side, and written-out dates (063, provenance)', () => {
+  const p = (s) => { const r = parseFuzzyDate(s); return [r.range, r.label]; };
+  assert.deepStrictEqual(p('26 March 1952'), ['[1952-03-26,1952-03-27)', '26 March 1952']);
+  assert.deepStrictEqual(p('March 1952'), ['[1952-03-01,1952-04-01)', 'March 1952']);
+  assert.deepStrictEqual(p('1952-03-26 or later'), ['[1952-03-26,)', '26 March 1952 or later']);
+  assert.deepStrictEqual(p('at the earliest 26 March 1952'), ['[1952-03-26,)', '26 March 1952 or later']);
+  assert.deepStrictEqual(p('by 1904-10-28'), ['(,1904-10-29)', '28 October 1904 or earlier']);
+  assert.deepStrictEqual(p('after 1952'), ['[1953-01-01,)', 'after 1952']);
+  assert.deepStrictEqual(p('before 1928'), ['(,1928-01-01)', 'before 1928']);
+  assert.deepStrictEqual(p('1901/28 October 1904'), ['[1901-01-01,1904-10-29)', '1901–28 October 1904']);
+  assert.strictEqual(formatFuzzyDate('(,1904-10-29)'), '1904-10-28 or earlier');
+});

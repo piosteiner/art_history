@@ -246,8 +246,10 @@ async function main() {
     //     position in the chain; a changed step is updated in place (only when something differs, so an unchanged
     //     import writes nothing to the history).
     const PROV_COLS = ['owner_artist_id', 'owner_person_id', 'owner_institution_id', 'owner_place_id', 'owner_label',
-      'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct', 'location_id', 'label', 'certainty', 'notes_md', 'metadata'];
-    const PROV_CASTS = { acquired: '::daterange', ended: '::daterange', method: '::acquisition_method', certainty: '::certainty', metadata: '::jsonb' };
+      'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct', 'location_id', 'label', 'certainty', 'notes_md', 'metadata',
+      'role', 'price', 'price_currency', 'price_note'];
+    const PROV_CASTS = { acquired: '::daterange', ended: '::daterange', method: '::acquisition_method', certainty: '::certainty', metadata: '::jsonb',
+      role: '::holder_role', price: '::numeric' };
     for (const e of entities.filter((x) => x.provenance !== null && x.provenance !== undefined)) {
       const artworkId = ids.get(`${e.type}/${e.slug}`);
       if (artworkId === undefined) continue;
@@ -271,7 +273,9 @@ async function main() {
         }
         Object.assign(v, { owner_label: st.owner_label ?? null, method: st.method ?? 'unknown', direct: st.direct === true,
           label: st.label ?? null, certainty: st.certainty ?? 'attested', notes_md: st.notes_md ?? null,
-          metadata: '{}' });  // its sources are citations (050), added below
+          metadata: '{}',  // its sources are citations (050), added below
+          role: st.role ?? 'owner', price: st.price ? st.price.amount : null, price_currency: st.price ? st.price.currency : null,
+          price_note: st.price ? st.price.note ?? null : null });
         const params = [artworkId, i, ...PROV_COLS.map((c) => v[c])];
         const vals = PROV_COLS.map((c, j) => `$${j + 3}${PROV_CASTS[c] || ''}`);
         try {
@@ -285,9 +289,22 @@ async function main() {
             await client.query(`INSERT INTO provenance (artwork_id, position, ${PROV_COLS.join(', ')}) VALUES ($1, $2, ${vals.join(', ')})`, params);
             count('provenance inserted');
           }
-          if (st.sources !== undefined) {
-            const step = (await client.query('SELECT id FROM provenance WHERE artwork_id = $1 AND position = $2', [artworkId, i])).rows[0];
-            await importCitations(client, { provenance: step.id }, st.sources);
+          const step = (await client.query('SELECT id FROM provenance WHERE artwork_id = $1 AND position = $2', [artworkId, i])).rows[0];
+          if (st.sources !== undefined) await importCitations(client, { provenance: step.id }, st.sources);
+          // joint owners (063): as listed — replaced only when they differ
+          const want = [];
+          for (const ref of st.co_owners || []) {
+            const [type, slug] = ref.split('/');
+            const cid = await idOf(type, slug);
+            if (cid === null) throw new Error(`co-owner ${ref} does not exist`);
+            want.push({ type, id: cid });
+          }
+          const have = (await client.query('SELECT owner_type::text AS type, owner_id AS id FROM provenance_co_owners_x WHERE provenance_id = $1 ORDER BY position', [step.id])).rows;
+          if (JSON.stringify(have) !== JSON.stringify(want)) {
+            await client.query('DELETE FROM provenance_co_owners WHERE provenance_id = $1', [step.id]);
+            for (const [k, c] of want.entries()) {
+              await client.query(`INSERT INTO provenance_co_owners (provenance_id, position, owner_${c.type}_id) VALUES ($1, $2, $3)`, [step.id, k, c.id]);
+            }
           }
           await client.query('RELEASE SAVEPOINT prov');
         } catch (err) {

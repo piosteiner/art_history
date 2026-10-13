@@ -407,3 +407,7 @@ details.qa-folded[open] > summary h2::after { content: ' ▾'; }
 .rel-other { display: inline-flex; align-items: center; gap: .3rem; flex-wrap: wrap; }
 .rel-other .ac { display: inline-block; }
 input.rel-picker { width: 13rem; padding: .15rem .4rem; }
+/* provenance: implied lines (the artist first, a loan last — view provenance_chain) */
+table.provenance tbody.implied td { font-style: italic; color: var(--muted); }
+table.provenance tbody.implied a { color: inherit; }
+.tag.implied { font-style: normal; border-style: dashed; }

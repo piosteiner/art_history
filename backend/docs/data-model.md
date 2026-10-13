@@ -177,6 +177,20 @@ so `edges` computes the provenance part for the whole table on each query — fi
 undocumented change of owner whose gap overlaps 30 Jan 1933 – 8 May 1945: `daterange && daterange`),
 `provenance_forced_transfer` (confiscation / forced sale without a later restitution), `provenance_last_owner`.
 
+
+**Roles, joint owners, prices, the chain as read (063).** `provenance.role` (enum `holder_role`): owner · dealer ·
+agent (on consignment — held, not owned) · estate (the owner's estate: the person stays linked) · custodian (held
+without owning: deposit, loan). `provenance_co_owners`: further owners of a step (an exclusive arc like the step's
+owner; view `provenance_co_owners_x` reads it as (type, id)). `price` + `price_currency` (ISO 4217) + `price_note`.
+Derived edges: `owned_by` for owners, dealers, estates and every joint owner; `held_by` for agents and custodians;
+`commissioned` (owner → artwork) from a step with the method `commission` — a commission is the provenance's first
+step, no longer a relationship (Wikidata's P88 adds such a step). The lender's step is `ongoing` while the work is on
+loan. **`provenance_chain`** is the provenance as it is read: an implied first line "the artist" from `creator_id` and
+`created` (not when the first step is a creation or commission or names the artist; it lasts until the first
+acquisition only when that is documented as direct), the recorded steps, and an implied last line for a loan (the
+current institution as custodian, from `on_loan_since`). Implied lines are computed, never stored. Dates known from
+one side only are open ranges: "26 March 1952 or later" = `[1952-03-26,)`, "28 October 1904 or earlier" =
+`(,1904-10-29)` (`src/fuzzy-date.js`).
 ## Polities and countries (migrations 018, 019)
 "Which country is it in today?" and "which polity did it belong to?" are kept apart:
 - **Today** is derived, never entered: `place_country(place_id)` walks up `parent_id` with a recursive CTE that stops at

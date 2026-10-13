@@ -25,6 +25,11 @@ const ENTITIES = {
   Q102: { id: 'Q102', labels: labels('Impressionism'), descriptions: { en: { value: 'art movement' } }, claims: { P31: [stmt(item('Q968159'))] } },
   Q103: { id: 'Q103', labels: labels('Charles Gleyre'), descriptions: { en: { value: 'Swiss painter' } },
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1806-05-02T00:00:00Z', 11))] } },
+  // an altarpiece "commissioned by" (P88) a patron — the commission becomes the provenance's first step (063)
+  Q130: { id: 'Q130', labels: labels('Test Altarpiece'), descriptions: { en: { value: 'painting' } },
+    claims: { P31: [stmt(item('Q3305213'))], P571: [stmt(time('+1480-00-00T00:00:00Z', 9))], P88: [stmt(item('Q131'))] } },
+  Q131: { id: 'Q131', labels: labels('Test Patron Portinari'), descriptions: { en: { value: 'merchant and banker' } },
+    claims: { P31: [stmt(item('Q5'))] } },
   Q104: { id: 'Q104', labels: labels('Impression, Sunrise'), descriptions: { en: { value: 'painting by Claude Monet' } },
     claims: { P31: [stmt(item('Q3305213'))], P170: [stmt(item('Q100'))], P571: [stmt(time('+1872-00-00T00:00:00Z', 9))],
       P1476: [stmt({ text: 'Impression, soleil levant', language: 'fr' })],

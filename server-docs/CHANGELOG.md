@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-13
 
+### Provenance: roles, joint owners, prices, one-sided dates, the artist and the loan as implied lines (migration 063)
+- **What:** enum `holder_role` + `provenance.role`; table `provenance_co_owners` (+ view `provenance_co_owners_x`,
+  audited, quality trigger); `price`, `price_currency`, `price_note`; `held_by` (derived) for agents/custodians,
+  `commissioned` now derived from a provenance step with the method commission (none were stored); the lender's step is
+  ongoing during a loan; view `provenance_chain` = implied first line (the artist, from creator + creation date) +
+  recorded steps + implied loan line. Admin: role, joint owners (3 pickers), price on the step form; the chain on the
+  artwork page (implied lines in italics, not editable). API: `provenance[]` gains `kind`, `implied`, `role`,
+  `co_owners`, `price` (docs/api.md). YAML: `role`, `co_owners`, `price`. Fuzzy dates: "26 March 1952",
+  "… or later" / "not before" / "at the earliest", "… or earlier" / "by" / "at the latest", "after …", "before …"
+  (open ranges). Wikidata P88 "commissioned by" → the first provenance step (cited P88), not a relationship.
+- **Why:** owner: provenance vs. relationships, going through the Kunsthaus provenance of "Tournesols sur un
+  fauteuil" (17 lines: dealers, an estate, two owners at once, prices, "at the earliest"/"at least until", a loan).
+- **Known limit:** "revert/restore from history" doesn't restore a step's joint owners (the table isn't in revert.js
+  yet); "Change type…" refuses an entry that is a joint owner (it says so).
+- **Revert:** drop the view `provenance_chain`, restore `edges` and `provenance_periods` (definitions before 063),
+  `DROP VIEW provenance_co_owners_x; DROP TABLE provenance_co_owners;` drop the columns role, price, price_currency,
+  price_note and `TYPE holder_role`; `DELETE FROM relationship_types WHERE code = 'held_by'`;
+  `UPDATE relationship_types SET derived = false WHERE code = 'commissioned'`; revert the commit.
+- **Tested:** dry run on prod (Tournesols: implied artist + 3 steps + implied loan); e2e `provenance-roles.spec`, unit
+  tests for the dates, full suite.
+
 ### Fix: stored quality findings keyed per entry (migration 062)
 - **What:** `quality_issues` primary key (check_id, issue_key) → (check_id, issue_key, entity_type, entity_id);
   `refresh_quality()` takes each finding once (DISTINCT ON) and matches on all four.
