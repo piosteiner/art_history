@@ -149,7 +149,7 @@ router.get('/:plural/:slug/delete', async (req, res) => {
     JOIN entity_index s ON s.type = r.subject_type AND s.id = r.subject_id
     JOIN entity_index o ON o.type = r.object_type AND o.id = r.object_id
     WHERE (r.subject_type, r.subject_id) = ($1, $2) OR (r.object_type, r.object_id) = ($1, $2)
-    ORDER BY rt.sort_order, s.name`, [t.type, e.id]);
+    ORDER BY rt.sort_order, s.name COLLATE sort_natural`, [t.type, e.id]);
   send(req, res, {
     title: `Delete ${e.name}`,
     body: html`<h1>Delete ${e.name}?</h1>

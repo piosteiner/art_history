@@ -1,6 +1,7 @@
 // Admin panel — Entries: list, new, create, view, edit, save — relationships, images, provenance and parts added on the page.
 // Mounted by src/admin/index.js in a fixed order; shared helpers in src/admin/core.js.
 const express = require('express');
+const { keyExpr, sortKey } = require('../../sortkey');
 const { adminPool } = require('../../db');
 const { BY_TYPE, SLUG, REF_COLUMNS, toRow, readRelationships, readImages } = require('../../content');
 const autocreate = require('../autocreate');
@@ -47,14 +48,14 @@ router.get('/:plural', async (req, res) => {
   const { rows } = await adminPool.query(`
     SELECT * FROM (
       SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score,
-             name_sort_key(t.${t.name}, t.${t.name}_ruby, t.names) AS sort_key,
+             ${keyExpr(t.type, 't', t.name)} AS sort_key,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
              EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${params.length + 1}::entity_type AND ac.entity_id = t.id) AS to_complete,
              ${t.type === 'source' ? 't.reading_status::text' : 'NULL'} AS status,
              (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
                                                            OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
       FROM ${t.table} t) x
-    ${q ? `WHERE score >= ${THRESHOLD} ORDER BY score DESC, sort_key` : 'ORDER BY lower(f_unaccent(sort_key))'}
+    ${q ? `WHERE score >= ${THRESHOLD} ORDER BY score DESC, sort_key COLLATE sort_natural` : 'ORDER BY sort_key COLLATE sort_natural'}
     LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [...params, t.type]);
   // the bibliography: short references and how much has been read
   const sources = t.type === 'source' ? await bibliography.loadCatalogue(adminPool) : null;
@@ -74,7 +75,7 @@ router.get('/:plural', async (req, res) => {
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
           ${sources && sources.get(r.slug) ? html`<div class="small">${sources.get(r.slug).siglum}${r.status ? html` <span class="tag">${r.status.replace('_', ' ')}</span>` : ''}</div>` : ''}
-          ${r.sort_key !== r.name ? html`<div class="muted small">${r.sort_key}</div>` : q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
+          ${!/[A-Za-zÀ-ɏ]/.test(r.name) && r.sort_key !== r.name ? html`<div class="muted small">${r.sort_key}</div>` : q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
       ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}</div>`,
@@ -432,8 +433,8 @@ router.get('/:plural/:slug', async (req, res) => {
     ...provSteps.map((p) => p.notes_md)]);
   // the entries whose texts [[link]] this one (view content_links, migration 030) — for a term: where it is used
   const usedIn = (await adminPool.query(`
-    SELECT DISTINCT e.type::text AS type, e.slug, e.name, e.sort_key FROM content_links l JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
-    WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (e.type = $1::entity_type AND e.id = $3) ORDER BY e.sort_key`, [t.type, e.slug, e.id])).rows;
+    SELECT DISTINCT e.type::text AS type, e.slug, e.name, e.sort_key COLLATE sort_natural AS sort_key FROM content_links l JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
+    WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (e.type = $1::entity_type AND e.id = $3) ORDER BY sort_key`, [t.type, e.slug, e.id])).rows;
   const main = imgs[0];
   send(req, res, {
     title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
@@ -576,7 +577,7 @@ async function seriesOf(e) {
   const { rows: parts } = await adminPool.query(`
     SELECT a.slug, a.title, a.part_number, a.part_sort,
            (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url
-    FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, a.title`, [e.id]);
+    FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [e.id]);
   const { rows: [me] } = await adminPool.query(`
     SELECT w.slug, w.title, w.parts_count, a.part_number FROM artworks a LEFT JOIN artworks w ON w.id = a.parent_id WHERE a.id = $1`, [e.id]);
   let prev = null;
@@ -584,7 +585,7 @@ async function seriesOf(e) {
   if (me.slug) {
     const { rows: sib } = await adminPool.query(`
       SELECT a.slug, a.title FROM artworks a WHERE a.parent_id = (SELECT parent_id FROM artworks WHERE id = $1)
-      ORDER BY a.part_sort NULLS LAST, a.part_number, a.title`, [e.id]);
+      ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [e.id]);
     const at = sib.findIndex((s) => s.slug === e.slug);
     prev = sib[at - 1] || null;
     next = sib[at + 1] || null;

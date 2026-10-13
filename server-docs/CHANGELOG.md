@@ -4,6 +4,32 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-13
 
+### Fix: stored quality findings keyed per entry (migration 062)
+- **What:** `quality_issues` primary key (check_id, issue_key) → (check_id, issue_key, entity_type, entity_id);
+  `refresh_quality()` takes each finding once (DISTINCT ON) and matches on all four.
+- **Why:** a possible duplicate is one finding on both entries (two rows, same issue_key): since 058 the refresh failed
+  ("ON CONFLICT DO UPDATE command cannot affect row a second time") whenever two entries looked alike — pages then
+  waited 5 s and computed the checks live. Production had no such pair yet; a test run did. Acks stay per
+  (check_id, issue_key). Regression test in `quality.spec`.
+- **Revert:** revert the commit; `ALTER TABLE quality_issues DROP CONSTRAINT quality_issues_pkey, ADD PRIMARY KEY (check_id, issue_key)`
+  (fails while a duplicate pair is stored) and the 058 version of `refresh_quality()`.
+
+### Sorting: titles without their leading article, natural order (migration 061)
+- **What:** `strip_article(key, lang)` (the title's language picks the articles: en, de, fr, it, es, pt, nl; without a
+  language only unambiguous ones — not English "I", not "de"/"des"; elided L'/un'/'t too) and
+  `entry_sort_key(type, name, ruby, names, lang)` — articles dropped for titles (artworks, institutions, movements,
+  events, sources, glossary), kept for people and places ("Le Corbusier", "La Paz"). `entity_index.sort_key` uses it.
+  ICU collation `sort_natural` (`und-u-kn`: accents with their letter, case-insensitive order, "No. 2" before "No. 10")
+  instead of the database's byte order (C.UTF-8) — applied at the queries (`src/sortkey.js`: API lists, related lists,
+  search, map, graph, admin lists, pickers, quality). The admin list shows the sort key under a name only when it is a
+  romanization. The API's `sort_key` (used by the frontend for its lists) carries the new key.
+- **Why:** owner: ignore articles in sorting; byte order put "Zürich" before "abbey" and "Édouard" after "Zurbarán".
+- **Revert:** restore the view `entity_index` with `name_sort_key(...)` (its definition before 061) and
+  `DROP FUNCTION entry_sort_key(entity_type, text, text, jsonb, text), strip_article(text, text); DROP COLLATION sort_natural;`
+  (without CASCADE — entity_index has dependent views); revert the commit.
+- **Also:** dev's views `entity_index`, `provenance_periods`, `edges`, `quality_issues_live` were dropped by a mistaken
+  `DROP … CASCADE` while re-applying 061 on dev, and recreated from production's schema (`pg_dump --schema-only -t …`).
+
 ### Admin: more control over the comparisons' suggestions (GND, SIKART, RKD, LC, BnF, KulturNav, NLK, Wikidata)
 - **What:** each relationship suggestion has its own choice: add · create (a place found in OpenStreetMap; **a new
   artist or person** we don't have — minimal, "to complete", with the record's GND number) · **another of ours**

@@ -3,6 +3,7 @@
 //
 // Public keys are slugs; internal ids never leave the API.
 const express = require('express');
+const { keyExpr, sortKey, natural } = require('../sortkey');
 const { apiPool } = require('../db');
 const { renderMarkdown, linkNames, firstParagraph, previewText } = require('../markdown');
 const names = require('../names');
@@ -35,7 +36,7 @@ const countryFilters = (type) => ({
 // clients written before.
 // search_text: what the database searches besides the name (other names, readings, kana in Latin letters, long and
 // short — name_alt_text(), migration 023), for clients that filter loaded lists themselves.
-const nameCols = (col, alt) => `t.${col}_lang, t.${col}_ruby, t.names, name_sort_key(t.${col}, t.${col}_ruby, t.names) AS sort_key,
+const nameCols = (col, alt, type) => `t.${col}_lang, t.${col}_ruby, t.names, ${keyExpr(type, 't', col)} AS sort_key,
   coalesce(name_alt_text(t.${col}_ruby, t.names), '') AS search_text,
   (SELECT coalesce(jsonb_agg(ruby_plain(n->>'text')), '[]'::jsonb) FROM jsonb_array_elements(t.names) n) AS ${alt}`;
 // raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, status, ruby_html, reading}]
@@ -76,7 +77,7 @@ const ENTITIES = {
              ${allImages('artist_id')}, t.biography_md, ${birthPlace('artist')}, ${countryCols('artist')}`,
     md: ['biography_md'],
     filters: countryFilters('artist'),
-    order: 'coalesce(t.sort_name, name_sort_key(t.name, t.name_ruby, t.names))',
+    order: `coalesce(t.sort_name, ${keyExpr('artist', 't', 'name')}) COLLATE sort_natural`,
   },
   artworks: {
     type: 'artwork', table: 'artworks', alt: 'alt_titles', name: 'title', period: 't.created',
@@ -120,7 +121,7 @@ const ENTITIES = {
       part_of: "t.parent_id = entity_id('artwork', $)",  // the parts of a series / album …
       ...countryFilters('artwork'),
     },
-    order: 'lower(t.created) NULLS LAST, name_sort_key(t.title, t.title_ruby, t.names)',
+    order: `lower(t.created) NULLS LAST, ${sortKey('artwork', 't', 'title')}`,
   },
   places: {
     type: 'place', table: 'places', alt: 'alt_names', name: 'name', period: null,
@@ -134,7 +135,7 @@ const ENTITIES = {
              t.description_md`,
     md: ['description_md'],
     filters: { kind: 't.kind::text = $', country: 't.country_code = upper($)' },
-    order: 'name_sort_key(t.name, t.name_ruby, t.names)',
+    order: `${sortKey('place', 't', 'name')}`,
   },
   movements: {
     type: 'movement', table: 'movements', alt: 'alt_names', name: 'name', period: 't.period',
@@ -142,7 +143,7 @@ const ENTITIES = {
     detail: 't.kind, range_json(t.period, t.period_label) AS period, t.description_md',
     md: ['description_md'],
     filters: { kind: 't.kind::text = $' },
-    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.name_ruby, t.names)',
+    order: `lower(t.period) NULLS LAST, ${sortKey('movement', 't', 'name')}`,
   },
   institutions: {
     type: 'institution', table: 'institutions', alt: 'alt_names', name: 'name', period: 't.founded',
@@ -157,7 +158,7 @@ const ENTITIES = {
                 FROM places p WHERE p.id = t.place_id) AS place, ${countryCols('institution')}`,
     md: ['description_md'],
     filters: { kind: 't.kind = $', ...countryFilters('institution') },
-    order: 'name_sort_key(t.name, t.name_ruby, t.names)',
+    order: `${sortKey('institution', 't', 'name')}`,
   },
   people: {
     type: 'person', table: 'people', alt: 'alt_names', name: 'name', period: 'coalesce(t.lifespan, t.active)',
@@ -167,7 +168,7 @@ const ENTITIES = {
              range_json(t.active, t.active_label) AS active, ${ROLES} AS roles, t.description_md, ${birthPlace('person')}, ${countryCols('person')}, ${allImages('person_id')}`,
     md: ['description_md'],
     filters: { kind: 't.kind = $', occupation: 't.occupations @> ARRAY[$]::text[]', role: `${ROLES} @> ARRAY[$]::text[]`, ...countryFilters('person') },
-    order: 'name_sort_key(t.name, t.name_ruby, t.names)',
+    order: `${sortKey('person', 't', 'name')}`,
   },
   glossary: {
     type: 'term', table: 'glossary', alt: 'alt_names', name: 'name', period: null,
@@ -175,7 +176,7 @@ const ENTITIES = {
     detail: `t.category, t.definition, t.description_md, ${allImages('glossary_id')}`,
     md: ['description_md'],
     filters: { category: 't.category::text = $' },
-    order: 'lower(f_unaccent(name_sort_key(t.name, t.name_ruby, t.names)))',
+    order: `${sortKey('term', 't', 'name')}`,
   },
   // the bibliography (migration 036); siglum and the full citation are added in JS (src/bibliography.js)
   bibliography: {
@@ -188,7 +189,7 @@ const ENTITIES = {
              t.primary_source, t.reading_status, range_json(t.read_on, t.read_on_label) AS read_on, t.description_md`,
     md: ['description_md'],
     filters: { kind: 't.kind::text = $', status: 't.reading_status::text = $', author: "t.authors::text ILIKE '%' || $ || '%'" },
-    order: "lower(f_unaccent(coalesce(t.authors[1], t.name))), t.year",
+    order: `coalesce(t.authors[1], ${keyExpr('source', 't')}) COLLATE sort_natural, t.year`,
   },
   // events (migration 047): when, where (city; exact spot or area), part of a larger event, its parts
   events: {
@@ -203,11 +204,11 @@ const ENTITIES = {
                 FROM places p WHERE p.id = t.place_id) AS place,
              (SELECT jsonb_build_object('slug', w.slug, 'name', w.name) FROM events w WHERE w.id = t.parent_id) AS part_of,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', c.slug, 'name', c.name, 'kind', c.kind, 'period', range_json(c.period, c.period_label))
-                ORDER BY lower(c.period) NULLS LAST, c.name), '[]'::jsonb) FROM events c WHERE c.parent_id = t.id) AS parts,
+                ORDER BY lower(c.period) NULLS LAST, ${sortKey('event', 'c')}), '[]'::jsonb) FROM events c WHERE c.parent_id = t.id) AS parts,
              ${countryCols('event')}`,
     md: ['description_md'],
     filters: { kind: 't.kind = $', place: "t.place_id = entity_id('place', $)", part_of: "t.parent_id = entity_id('event', $)", ...countryFilters('event') },
-    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.name_ruby, t.names)',
+    order: `lower(t.period) NULLS LAST, ${sortKey('event', 't', 'name')}`,
   },
   polities: {
     type: 'polity', table: 'polities', alt: 'alt_names', name: 'name', period: 't.period',
@@ -215,7 +216,7 @@ const ENTITIES = {
     detail: 't.kind, range_json(t.period, t.period_label) AS period, t.country_codes, t.description_md',
     md: ['description_md'],
     filters: { kind: 't.kind = $', country: 't.country_codes @> ARRAY[upper($)]' },  // GIN index polities_country_gin
-    order: 'lower(t.period) NULLS LAST, name_sort_key(t.name, t.name_ruby, t.names)',
+    order: `lower(t.period) NULLS LAST, ${sortKey('polity', 't', 'name')}`,
   },
 };
 
@@ -250,7 +251,7 @@ const RELATIONSHIPS_SQL = `
          CASE WHEN r.subject_type = $1 AND r.subject_id = $2 THEN r.object_id   ELSE r.subject_id   END)
   -- the creator edges are left out: the artwork's creator / creators and the artist's artworks already list them
   WHERE ((r.subject_type = $1 AND r.subject_id = $2) OR (r.object_type = $1 AND r.object_id = $2)) AND r.source <> 'creator'
-  ORDER BY rt.sort_order, lower(r.period) NULLS LAST, o.name`;
+  ORDER BY rt.sort_order, lower(r.period) NULLS LAST, ${natural('o.sort_key')}`;
 
 // Hierarchy upwards (Arles → France), a recursive CTE over parent_id.
 const ancestorsSql = (table) => `
@@ -272,7 +273,7 @@ const EXTRAS = {
                           WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = w.id
                             AND r.object_type = 'artist' AND r.object_id = $1 LIMIT 1) co ON w.creator_id IS DISTINCT FROM $1
       WHERE w.creator_id = $1 OR co.role IS NOT NULL
-      ORDER BY lower(w.created) NULLS LAST, w.title`, [id])).rows,
+      ORDER BY lower(w.created) NULLS LAST, ${sortKey('artwork', 'w', 'title')}`, [id])).rows,
   }),
   // the provenance (031): the steps as recorded, plus the computed period and where its end comes from
   artwork: async (id) => ({
@@ -287,7 +288,7 @@ const EXTRAS = {
     ...(await apiPool.query(`
       WITH me AS (SELECT parent_id, part_number, part_sort, title FROM artworks WHERE id = $1),
       sib AS (SELECT a.id, a.slug, a.title, a.part_number,
-                     row_number() OVER (ORDER BY a.part_sort NULLS LAST, a.part_number, a.title) AS n
+                     row_number() OVER (ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}) AS n
               FROM artworks a, me WHERE a.parent_id = me.parent_id)
       SELECT (SELECT part_number FROM me) AS part_number,
              (SELECT jsonb_build_object('slug', p.slug, 'title', p.title, 'part_number', p.part_number) FROM sib p, sib s
@@ -298,7 +299,7 @@ const EXTRAS = {
       SELECT a.slug, a.title, a.part_number, a.kind, range_json(a.created, a.created_label) AS created,
              (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url,
              (SELECT count(*)::int FROM artworks c WHERE c.parent_id = a.id) AS parts
-      FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, a.title`, [id])).rows,
+      FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [id])).rows,
     provenance: (await apiPool.query(`
       SELECT p.position,
              CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'name', o.name) END AS owner,
@@ -313,31 +314,31 @@ const EXTRAS = {
     artworks: (await apiPool.query(`
       SELECT w.slug, w.title, range_json(w.created, w.created_label) AS created,
              (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = w.creator_id) AS creator
-      FROM artworks w WHERE w.current_institution_id = $1 ORDER BY w.title`, [id])).rows,
+      FROM artworks w WHERE w.current_institution_id = $1 ORDER BY ${sortKey('artwork', 'w', 'title')}`, [id])).rows,
   }),
   place: async (id) => ({
     ancestors: (await apiPool.query(ancestorsSql('places'), [id])).rows,
-    children: (await apiPool.query('SELECT slug, name, kind FROM places WHERE parent_id = $1 ORDER BY name', [id])).rows,
-    institutions: (await apiPool.query('SELECT slug, name, kind FROM institutions WHERE place_id = $1 ORDER BY name', [id])).rows,
+    children: (await apiPool.query(`SELECT slug, name, kind FROM places WHERE parent_id = $1 ORDER BY ${natural('name')}`, [id])).rows,
+    institutions: (await apiPool.query(`SELECT slug, name, kind FROM institutions t WHERE place_id = $1 ORDER BY ${sortKey('institution', 't')}`, [id])).rows,
   }),
   polity: async (id) => ({
     ancestors: (await apiPool.query(ancestorsSql('polities'), [id])).rows,
     children: (await apiPool.query(`
       SELECT slug, name, kind, range_json(period, period_label) AS period
-      FROM polities WHERE parent_id = $1 ORDER BY lower(period) NULLS LAST, name`, [id])).rows,
+      FROM polities WHERE parent_id = $1 ORDER BY lower(period) NULLS LAST, ${natural('name')}`, [id])).rows,
   }),
   // a glossary term: where texts link it ("used in"), from the view glossary_links
   term: async (id) => ({
     used_in: (await apiPool.query(`
       SELECT e.type::text AS type, e.slug, e.name FROM glossary_links l
       JOIN glossary g ON g.slug = l.term_slug JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)
-      WHERE g.id = $1 AND NOT (e.type = 'term' AND e.id = $1) ORDER BY e.sort_key`, [id])).rows,
+      WHERE g.id = $1 AND NOT (e.type = 'term' AND e.id = $1) ORDER BY ${natural('e.sort_key')}`, [id])).rows,
   }),
   movement: async (id) => ({
     ancestors: (await apiPool.query(ancestorsSql('movements'), [id])).rows,
     children: (await apiPool.query(`
       SELECT slug, name, kind, range_json(period, period_label) AS period
-      FROM movements WHERE parent_id = $1 ORDER BY lower(period) NULLS LAST, name`, [id])).rows,
+      FROM movements t WHERE parent_id = $1 ORDER BY lower(period) NULLS LAST, ${sortKey('movement', 't')}`, [id])).rows,
   }),
 };
 
@@ -417,7 +418,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     }
 
     const { rows } = await apiPool.query(`
-      SELECT t.slug, t.${e.name}, ${nameCols(e.name, e.alt)}, ${e.list}, count(*) OVER () AS total
+      SELECT t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.list}, count(*) OVER () AS total
       FROM ${e.table} t
       ${where.length ? `WHERE ${where.join(' AND ')}` : ''}
       ORDER BY ${rank}${e.order}
@@ -440,7 +441,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
   router.get(`/${plural}/:slug`, async (req, res) => {
     if (!SLUG.test(req.params.slug)) throw notFound(`no ${e.type} "${req.params.slug}"`);
     const { rows } = await apiPool.query(`
-      SELECT t.id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt)}, ${e.detail}, t.wikidata_id, t.metadata, t.updated_at
+      SELECT t.id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.detail}, t.wikidata_id, t.metadata, t.updated_at
       FROM ${e.table} t WHERE t.slug = $1`, [req.params.slug]);
     if (!rows.length) {
       // an old slug (migration 041): permanently moved to the entry's current address
@@ -466,10 +467,10 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       EXTRAS[e.type] ? EXTRAS[e.type](id) : {},
       // backlinks: the entries whose texts [[link]] this one (view content_links, migration 030); a term has used_in
       e.type === 'term' ? null : apiPool.query(`
-        SELECT DISTINCT x.type::text AS type, x.slug, x.name, x.sort_key FROM content_links l
+        SELECT DISTINCT x.type::text AS type, x.slug, x.name, x.sort_key COLLATE sort_natural AS sort_key FROM content_links l
         JOIN entity_index x ON (x.type, x.id) = (l.entity_type, l.entity_id)
         WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (x.type = $1::entity_type AND x.id = $3)
-        ORDER BY x.sort_key`, [e.type, entity.slug, id]).then((r) => r.rows.map(({ sort_key: _, ...m }) => m)),
+        ORDER BY sort_key`, [e.type, entity.slug, id]).then((r) => r.rows.map(({ sort_key: _, ...m }) => m)),
     ]);
     // [[links]] show the linked entries' names: looked up for exactly the links in these texts
     const steps = extras.provenance || [];
@@ -481,7 +482,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     if (mentionedIn) body.mentioned_in = mentionedIn;
     // the glossary terms its texts link, with their short definitions — for tooltips without further requests
     const glossary = env.used.size ? Object.fromEntries((await apiPool.query(
-      'SELECT slug, name, category::text AS category, definition FROM glossary WHERE slug = ANY ($1) ORDER BY name', [[...env.used]])).rows
+      `SELECT slug, name, category::text AS category, definition FROM glossary t WHERE slug = ANY ($1) ORDER BY ${sortKey('term', 't')}`, [[...env.used]])).rows
       .map(({ slug, ...rest }) => [slug, rest])) : {};
     // the sources its texts cite (footnotes): siglum and full citation, e.g. for popovers
     const cited = env.names.sources ? Object.fromEntries([...env.cited].filter((s) => env.names.sources.has(s))

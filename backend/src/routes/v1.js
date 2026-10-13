@@ -44,7 +44,7 @@ router.get('/search', async (req, res) => {
     FROM entity_index
     WHERE f_unaccent(name) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(name)
        OR f_unaccent(coalesce(alt_text, '')) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(coalesce(alt_text, ''))
-    ORDER BY score DESC, sort_key
+    ORDER BY score DESC, sort_key COLLATE sort_natural
     LIMIT 20`, [q, `%${q.replace(/[\\%_]/g, '\\$&')}%`]);
   res.json({ data: rows });
 });

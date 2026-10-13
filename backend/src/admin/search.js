@@ -65,7 +65,7 @@ SELECT type::text, slug, name,
                 CASE WHEN body_tsv @@ tsq THEN 0.2 + ts_rank(body_tsv, tsq) ELSE 0 END) AS score
 FROM scored
 WHERE name_score >= ${THRESHOLD} OR alt_score >= ${THRESHOLD} OR other_hit OR body_tsv @@ tsq
-ORDER BY score DESC, name
+ORDER BY score DESC, name COLLATE sort_natural
 LIMIT 100`;
 
 // Picker suggestions (GET /lookup): best name / alternative-name matches of the given types.
@@ -82,7 +82,7 @@ scored AS (
 SELECT s.type::text, s.slug, s.name, s.alt, e.period_label, round(s.score::numeric, 2) AS score
 FROM scored s JOIN entity_index e ON e.type = s.type AND e.id = s.id
 WHERE s.score >= ${THRESHOLD}
-ORDER BY s.score DESC, s.name
+ORDER BY s.score DESC, s.name COLLATE sort_natural
 LIMIT 12`;
 
 const RELATIONSHIP_SQL = `
@@ -103,7 +103,7 @@ JOIN entity_index o ON o.type = r.object_type AND o.id = r.object_id
 CROSS JOIN q
 WHERE f_unaccent(concat_ws(' ', r.label, r.notes_md, nullif(r.metadata, '{}')::text)) ILIKE q.pattern
    OR to_tsvector('english', f_unaccent(coalesce(r.notes_md, ''))) @@ q.tsq
-ORDER BY s.name, rt.sort_order
+ORDER BY s.name COLLATE sort_natural, rt.sort_order
 LIMIT 50`;
 
 async function search(db, q) {

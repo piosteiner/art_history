@@ -276,7 +276,7 @@ async function relationshipTypes(db, entityType, { reverse = false } = {}) {
 }
 
 async function allEntities(db) {
-  const { rows } = await db.query("SELECT type::text || '/' || slug AS ref, name, type::text AS type FROM entity_index ORDER BY name");
+  const { rows } = await db.query("SELECT type::text || '/' || slug AS ref, name, type::text AS type FROM entity_index ORDER BY sort_key COLLATE sort_natural");
   return rows;
 }
 
@@ -416,7 +416,7 @@ async function formContext(t, id = null) {
   }
   const coCreators = t.type === 'artwork' && id !== null ? (await adminPool.query(`
     SELECT a.name, r.label FROM relationships r JOIN artists a ON a.id = r.object_id
-    WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = $1 ORDER BY a.name`, [id])).rows : [];
+    WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = $1 ORDER BY a.name COLLATE sort_natural`, [id])).rows : [];
   return { enums, enumsNullable, suggestions, refs, used, coCreators, errorKeys: new Set(), confirmNew: {} };
 }
 

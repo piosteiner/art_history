@@ -47,7 +47,7 @@ router.get('/places', async (req, res) => {
      AND ($1::daterange IS NULL OR r.period && $1::daterange)
     LEFT JOIN relationship_types rt ON rt.code = r.relationship_type
     GROUP BY p.id
-    ORDER BY p.name`, [window]);
+    ORDER BY p.name COLLATE sort_natural`, [window]);
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
 
@@ -74,7 +74,7 @@ router.get('/presence', async (req, res) => {
     ${SITE_JOINS}
     JOIN entity_index e ON e.type = r.subject_type AND e.id = r.subject_id
     WHERE r.subject_type = ANY ($2::entity_type[]) AND r.period && $1::daterange AND s.marker IS NOT NULL
-    ORDER BY lower(r.period), e.name`, [window, types]);
+    ORDER BY lower(r.period), e.sort_key COLLATE sort_natural`, [window, types]);
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
 
@@ -106,7 +106,7 @@ router.get('/:plural/:slug', async (req, res) => {
           'layer', CASE WHEN is_physical_presence THEN 'presence' ELSE 'association' END,
           'relationship', code, 'label', label, 'category', category, 'note', note, 'certainty', certainty,
           'period', range_json(period, period_label)))
-        ORDER BY lower(period) NULLS LAST, name), '[]') AS stops,
+        ORDER BY lower(period) NULLS LAST, name COLLATE sort_natural), '[]') AS stops,
       -- The route: an ordered aggregate over the dated physical-presence stops only.
       -- Associations (e.g. "influenced by the culture of Japan") are never drawn as travel.
       -- ST_RemoveRepeatedPoints: "lived in Auvers" followed by "died in Auvers" is one stop, not a zero-length hop.
@@ -133,7 +133,7 @@ router.get('/sites', async (req, res) => {
       UNION ALL
       SELECT 'artwork', a.slug, a.title, a.kind, NULL, coalesce(a.area, a.location), entity_home_place('artwork', a.id)
       FROM artworks a WHERE a.location IS NOT NULL OR a.area IS NOT NULL
-    ) x ORDER BY x.name`);
+    ) x ORDER BY x.name COLLATE sort_natural`);
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
 
@@ -147,7 +147,7 @@ router.get('/events', async (req, res) => {
         'place', (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = v.place_id))) AS feature
     FROM events v LEFT JOIN place_geo g ON g.id = v.place_id
     WHERE coalesce(v.area, v.location, g.marker) IS NOT NULL
-    ORDER BY lower(v.period) NULLS LAST, v.name`);
+    ORDER BY lower(v.period) NULLS LAST, v.name COLLATE sort_natural`);
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
 

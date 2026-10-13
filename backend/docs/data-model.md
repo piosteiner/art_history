@@ -436,3 +436,10 @@ WHERE id = (SELECT max(id) FROM audit_log) AND old_row->k IS DISTINCT FROM new_r
 - `arthistory_dev` — development (`npm run dev` on port 3005, `npm run migrate:dev`)
 
 Smoke test (runs as admin, rolls back): `psql -h localhost -U arthistory_admin -d arthistory_dev -f db/tests/schema_smoke.sql`
+
+## Sorting (migration 061)
+`entry_sort_key(type, name, ruby, names, lang)` = `name_sort_key` (the romanization for names in other scripts, 022)
+without the leading article for titles — `strip_article(key, lang)` picks the articles by the title's language
+(`<name>_lang`); people and places keep theirs. Order with the ICU collation `sort_natural` (`und-u-kn`: language-
+neutral root order, numbers by value): `ORDER BY sort_key COLLATE sort_natural` — the database's own collation is
+C.UTF-8 (byte order). `src/sortkey.js` builds these expressions for the queries.

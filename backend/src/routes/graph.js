@@ -57,14 +57,14 @@ router.get('/:plural/:slug', async (req, res) => {
       (SELECT jsonb_agg(jsonb_build_object(
                 'id', ei.type || '/' || ei.slug, 'type', ei.type, 'slug', ei.slug, 'name', ei.name,
                 'kind', ei.kind, 'depth', n.depth, 'period', range_json(ei.period, ei.period_label))
-              ORDER BY n.depth, ei.name)
+              ORDER BY n.depth, ei.sort_key COLLATE sort_natural)
          FROM nodes n JOIN entity_index ei ON ei.type = n.type AND ei.id = n.id) AS nodes,
       (SELECT coalesce(jsonb_agg(jsonb_build_object(
                 'source', s.type || '/' || s.slug, 'target', o.type || '/' || o.slug,
                 'type', rt.code, 'label', rt.label, 'category', rt.category, 'symmetric', rt.is_symmetric,
                 'certainty', r.certainty, 'note', r.label, 'period', range_json(r.period, r.period_label),
                 'derived', r.source <> 'relationship', 'end_basis', r.end_basis)
-              ORDER BY rt.sort_order, s.name), '[]')
+              ORDER BY rt.sort_order, s.sort_key COLLATE sort_natural), '[]')
          FROM edges r
          JOIN relationship_types rt ON rt.code = r.relationship_type
          JOIN nodes n1 ON n1.type = r.subject_type AND n1.id = r.subject_id

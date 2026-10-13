@@ -129,7 +129,7 @@ async function issues(db, { severity, check, type, entity, acked = false, live =
     LEFT JOIN quality_acks a ON a.check_id = q.check_id AND a.issue_key = q.issue_key
     LEFT JOIN admin_users u ON u.id = a.acked_by
     WHERE ${where.join(' AND ')}
-    ORDER BY array_position(ARRAY['error', 'warning', 'info'], q.severity), q.check_id, e.name`, params);
+    ORDER BY array_position(ARRAY['error', 'warning', 'info'], q.severity), q.check_id, e.sort_key COLLATE sort_natural`, params);
   return rows;
 }
 

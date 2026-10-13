@@ -40,3 +40,15 @@ test('range checks: never alive together, presence after death', async ({ userA 
   await userA.goto('/quality?check=never_alive_together');
   await expect(userA.locator('.qa-group')).toHaveCount(1);
 });
+
+test('a possible duplicate (one finding on two entries) is stored for both — the refresh does not fail (062)', async ({ userA }) => {
+  sql(`DELETE FROM artists WHERE slug IN ('test-twin-a', 'test-twin-b');
+       INSERT INTO artists (slug, name, birth, birth_label) VALUES ('test-twin-a', 'Test Twin Painter', year_range(1800), '1800'),
+                                                               ('test-twin-b', 'Test Twin Painter', year_range(1800), '1800')`);
+  await userA.goto('/quality?check=possible_duplicate');
+  await expect(userA.locator('.qa-group')).toContainText('Test Twin Painter');
+  expect(sql('SELECT quality_fresh()')).toBe('t');
+  expect(sql(`SELECT count(*) FROM quality_issues WHERE check_id = 'possible_duplicate'
+    AND entity_id IN (entity_id('artist', 'test-twin-a'), entity_id('artist', 'test-twin-b')) AND entity_type = 'artist'`)).toBe('2');
+  sql("DELETE FROM artists WHERE slug IN ('test-twin-a', 'test-twin-b')");
+});
