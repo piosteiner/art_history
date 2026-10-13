@@ -55,7 +55,7 @@ export interface Relationship {
   note: string | null;
   certainty: string | null;
   notes_html: string | null;
-  /** Computed, not entered: from the provenance (owned_by, kept_in, transferred_to). */
+  /** Computed, not entered: from the provenance (owned_by, held_by, kept_in, transferred_to, commissioned). */
   derived?: boolean;
   /** Where the period's end comes from (provenance); `implied` = only by the next owner's acquisition. */
   end_basis?: EndBasis | null;
@@ -272,11 +272,23 @@ export type AcquisitionMethod =
   | 'creation' | 'commission' | 'inheritance' | 'purchase' | 'auction' | 'gift' | 'bequest' | 'exchange'
   | 'confiscation' | 'forced_sale' | 'restitution' | 'unknown';
 
-/** One owner in an artwork's provenance, as recorded; `period` is computed (its end per `end_basis`). */
+/** How a holder held the work (migration 063): `estate` = the owner's estate; `agent` (consignment) and `custodian` (loan, deposit) didn't own it. */
+export type ProvenanceRole = 'owner' | 'dealer' | 'agent' | 'estate' | 'custodian';
+export interface Price { amount: number; currency: string; note: string | null }
+
+/**
+ * One holder in an artwork's provenance; `period` is computed (its end per `end_basis`). `kind` (migration 063): a
+ * recorded `step`, or a line computed by the API (`implied: true`, no sources) — the artist from the creation date
+ * first (`creation`), the institution it is lent to last (`loan`).
+ */
 export interface ProvenanceStep {
+  kind?: 'creation' | 'step' | 'loan'; implied?: boolean;
   position: number;
   owner: EntryRef | null; // an entry on this site, else only described:
   owner_label: string | null; owner_name: string | null;
+  /** Further owners of the same step ("Leo Stein and Gertrude Stein"). */
+  co_owners?: EntryRef[];
+  role?: ProvenanceRole; price?: Price | null;
   acquired: DateRange | null; ended: DateRange | null;
   method: AcquisitionMethod | null;
   /** The handover from the previous owner is documented (false: possibly someone in between). */
@@ -374,7 +386,7 @@ export interface RelationshipType {
   code: string; label: string; inverse_label: string | null; category: Category;
   is_physical_presence: boolean; is_symmetric: boolean;
   subject_types: EntityType[]; object_types: EntityType[]; description: string | null;
-  /** Computed, never entered: `creator` (graph only), `owned_by`, `kept_in`, `transferred_to` (provenance). */
+  /** Computed, never entered: `creator` (graph only), `owned_by`, `held_by`, `kept_in`, `transferred_to`, `commissioned` (provenance). */
   derived?: boolean;
 }
 

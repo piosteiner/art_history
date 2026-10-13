@@ -187,6 +187,8 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
   background: var(--c-provenance);
 }
 .provenance-owner .muted { margin-left: .3rem; font-size: .9rem; }
+.provenance-step.implied .provenance-owner, .provenance-step.implied .provenance-how { font-style: italic; }
+.provenance-step.implied .provenance-owner::before { background: var(--bg); box-shadow: inset 0 0 0 2px var(--c-provenance); } /* computed, not recorded: a hollow dot */
 .provenance-gap { font-size: .8rem; color: var(--muted); font-style: italic; margin-bottom: .2rem; }
 .provenance-how { font-size: .9rem; color: var(--muted); }
 .provenance-how::first-letter { text-transform: uppercase; }

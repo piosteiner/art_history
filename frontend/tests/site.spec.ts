@@ -252,7 +252,7 @@ test('each displayed route has its own colour, named in the legend', async ({ pa
     return Object.fromEntries(m.querySourceFeatures('ov-routes').map((f) => [f.properties.key, f.properties.color]));
   });
   const values = Object.values(colours);
-  expect(new Set(values).size).toBe(values.length); // no two routes share a colour (up to 12)
+  expect(new Set(values).size).toBe(Math.min(values.length, 12)); // no two routes share a colour until the 12 colours are used up
 });
 
 test('years typed while the map is still loading are kept (slow API)', async ({ page }) => {
@@ -420,7 +420,11 @@ test('a work on loan: credit line with the lender from the provenance; further n
     b.on_loan_since = { label: '2021', from: '2021-01-01', to: '2021-12-31', from_year: 2021, to_year: 2021 };
     b.provenance = [{ position: 0, owner: { type: 'institution', slug: 'foundation-e-g-buhrle-collection', name: 'Foundation E.G. Bührle Collection' },
       owner_label: null, owner_name: 'Foundation E.G. Bührle Collection', acquired: null, ended: null, method: 'gift', direct: true, label: null,
-      certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: null }];
+      certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: null },
+    // the computed last line (063): the lender is still the step before it
+    { kind: 'loan', implied: true, position: 1000000, owner: { type: 'institution', slug: 'kunsthaus-zurich', name: 'Kunsthaus Zürich' }, co_owners: [],
+      role: 'custodian', owner_label: null, owner_name: 'Kunsthaus Zürich', acquired: null, ended: null, method: 'unknown', direct: false, label: 'on loan',
+      certainty: 'attested', price: null, place: null, period: null, end_basis: 'ongoing', notes_html: null, sources: [] }];
     b.numbers = [
       { number: '18', label: null, institution: { slug: 'foundation-e-g-buhrle-collection', name: 'Foundation E.G. Bührle Collection' }, source: null },
       { number: '658', label: 'Rewald (catalogue raisonné)', institution: null, source: null },
@@ -534,6 +538,41 @@ test('provenance: owners in order, implied ends and undocumented handovers marke
   await expect(steps.nth(2)).not.toHaveClass(/undocumented/);
   await expect(steps.nth(2)).toContainText('since 1952');
   await expect(page.locator('.rel-list', { hasText: 'First Owner' })).toHaveCount(0); // under Provenance only
+});
+
+test('provenance (063): computed artist and loan lines in italics, roles, joint owners, estates, prices', async ({ page }) => {
+  const person = (slug: string, name: string) => ({ type: 'person', slug, name });
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [
+      step(-1, { type: 'artist', slug: 'katsushika-hokusai', name: 'Katsushika Hokusai' }, { kind: 'creation', implied: true, method: 'creation', direct: true,
+        period: { ...year(1831, 1904), label: '1831 – by 1904' }, end_basis: 'implied', sources: [] }),
+      step(0, person('a-dealer', 'A Dealer'), { kind: 'step', role: 'dealer', direct: true, label: 'bought from the artist', price: { amount: 200, currency: 'FRF', note: null },
+        period: { ...year(1831, 1904), from: null, from_year: null, label: 'until 28 October 1904' }, end_basis: 'recorded' }),
+      step(1, person('leo-stein', 'Leo Stein'), { kind: 'step', co_owners: [person('gertrude-stein', 'Gertrude Stein')], direct: true,
+        price: { amount: 18000, currency: 'USD', note: 'ca.' }, period: year(1904, 1936), end_basis: 'recorded' }),
+      step(2, person('leo-stein', 'Leo Stein'), { kind: 'step', role: 'estate', method: 'inheritance', direct: true, period: year(1936, null), end_basis: 'ongoing' }),
+      step(1000000, { type: 'institution', slug: 'some-museum', name: 'Some Museum' }, { kind: 'loan', implied: true, role: 'custodian', method: 'unknown',
+        direct: false, label: 'on loan', period: year(2021, null), end_basis: 'ongoing', sources: [] }),
+    ];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const steps = page.locator('.provenance-step');
+  await expect(steps).toHaveCount(5);
+  await expect(steps.nth(0)).toHaveClass(/implied/);
+  await expect(steps.nth(0).locator('.provenance-how')).toHaveText('the artist');
+  await expect(steps.nth(0).locator('.provenance-owner')).toHaveCSS('font-style', 'italic');
+  await expect(steps.nth(1)).not.toHaveClass(/implied/);
+  await expect(steps.nth(1).locator('.tag', { hasText: 'dealer' })).toBeVisible();
+  await expect(steps.nth(1)).toContainText('until 28 October 1904');
+  await expect(steps.nth(1).locator('.provenance-how')).toContainText('purchase · bought from the artist · 200 FRF');
+  await expect(steps.nth(2).locator('.provenance-owner')).toContainText('Leo Stein and Gertrude Stein');
+  await expect(steps.nth(2).locator('a[href="/people/gertrude-stein"]')).toBeVisible();
+  await expect(steps.nth(2).locator('.provenance-how')).toContainText('ca. 18,000 USD');
+  await expect(steps.nth(3).locator('.provenance-owner')).toContainText('Estate of Leo Stein');
+  await expect(steps.nth(4)).toHaveClass(/implied/);
+  await expect(steps.nth(4)).not.toHaveClass(/undocumented/); // a loan is no handover of ownership
+  await expect(steps.nth(4).locator('.tag', { hasText: 'custodian' })).toBeVisible();
+  await expect(steps.nth(4).locator('.cite-ref')).toHaveCount(0);
 });
 
 test('an owner\'s page and the network mark periods whose end is only implied', async ({ page }) => {

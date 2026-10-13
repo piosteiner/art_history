@@ -3,7 +3,7 @@ import { getPresence, listAll } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
-import type { SourceHint, Category, Entity, EntryRef, ProvenanceStep, Relationship } from '../types';
+import type { SourceHint, Category, Entity, EntryRef, Price, ProvenanceStep, Relationship } from '../types';
 import { cite } from '../cite';
 
 // categories, plus the relationship types an event's page groups by (participated_in, concerns)
@@ -33,25 +33,50 @@ const CATEGORY_LABEL: Record<string, string> = {
 export const uncertain = (certainty: string | null | undefined) => (certainty && certainty !== 'attested' ? html`<span class="tag">${certainty}</span>` : '');
 
 const METHOD_LABEL: Record<string, string> = { forced_sale: 'forced sale' };
+// roles shown as a tag next to the holder; an owner needs none, an estate is in the name ("Estate of …")
+const ROLE_TAG: Record<string, [string, string]> = {
+  dealer: ['dealer', 'Bought it to sell'],
+  agent: ['agent', 'Held it on consignment, did not own it'],
+  custodian: ['custodian', 'Held it without owning it: a loan, a deposit'],
+};
+
+/** "Leo Stein", "A and B", "A, B and C" — linked where they have an entry. */
+function holders(s: ProvenanceStep): Html {
+  const first = s.owner
+    ? html`${link(s.owner.type, s.owner.slug, s.owner.name)}${s.owner_label && s.owner_label !== s.owner.name ? html` <span class="muted">(${s.owner_label})</span>` : ''}`
+    : html`${s.owner_label ?? s.owner_name ?? 'Unknown owner'}`;
+  const all = [first, ...(s.co_owners ?? []).map((c) => link(c.type, c.slug, c.name))];
+  return html`${s.role === 'estate' ? 'Estate of ' : ''}${all.map((h, i) => html`${i ? (i === all.length - 1 ? ' and ' : ', ') : ''}${h}`)}`;
+}
+
+/** "200 FRF", "ca. 18,000 USD". */
+const priceLabel = (p: Price) => `${p.note ? `${p.note} ` : ''}${p.amount.toLocaleString('en')} ${p.currency}`;
+
+/** The holder the work is lent from: the last recorded step (the `loan` line after it is computed). */
+export const lastRecordedStep = (steps: ProvenanceStep[] | undefined) => steps?.filter((s) => s.kind !== 'loan').at(-1);
 
 /**
- * The owners in order, as recorded. A period whose end is only implied by the next acquisition is marked; a handover
- * that isn't documented as direct gets a dashed connector ("possibly other owners in between").
+ * The holders in order, as recorded. A period whose end is only implied by the next acquisition is marked; a handover
+ * that isn't documented as direct gets a dashed connector ("possibly other owners in between"). The lines the API
+ * computes — the artist from the creation date, the current loan — are in italics, without sources.
  */
 export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>): Html | null {
-  if (!steps.length) return null;
+  if (!steps.some((s) => !s.implied)) return null; // the computed lines alone are no provenance
   return html`<section class="provenance">
     <h2>Provenance</h2>
-    <p class="muted small">Owners in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between.</p>
+    <p class="muted small">Holders in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between. In italics: not recorded, but following from the creation or the loan.</p>
     <ol class="provenance-list">${steps.map((s, i) => {
-      const owner = s.owner
-        ? html`${link(s.owner.type, s.owner.slug, s.owner.name)}${s.owner_label && s.owner_label !== s.owner.name ? html` <span class="muted">(${s.owner_label})</span>` : ''}`
-        : html`${s.owner_label ?? s.owner_name ?? 'Unknown owner'}`;
-      const how = [s.method && s.method !== 'unknown' ? html`${METHOD_LABEL[s.method] ?? s.method}` : null, s.label ? html`${s.label}` : null,
-        s.place ? html`in ${link('place', s.place.slug, s.place.name)}` : null].filter((x): x is Html => !!x);
-      return html`<li class="provenance-step${i && !s.direct ? ' undocumented' : ''}">
-        ${i && !s.direct ? html`<div class="provenance-gap">handover not documented</div>` : ''}
-        <div class="provenance-owner">${owner}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${cite(s.sources, bibliography)}</div>
+      const gap = i > 0 && !s.direct && s.kind !== 'loan'; // a loan is no handover of ownership
+      const role = s.role && ROLE_TAG[s.role];
+      const how = [
+        s.kind === 'creation' ? html`the artist` : s.method && s.method !== 'unknown' ? html`${METHOD_LABEL[s.method] ?? s.method}` : null,
+        s.label ? html`${s.label}` : null,
+        s.price ? html`${priceLabel(s.price)}` : null,
+        s.place ? html`in ${link('place', s.place.slug, s.place.name)}` : null,
+      ].filter((x): x is Html => !!x);
+      return html`<li class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}">
+        ${gap ? html`<div class="provenance-gap">handover not documented</div>` : ''}
+        <div class="provenance-owner">${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
         ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
         ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
       </li>`;
@@ -67,11 +92,11 @@ export const backlinks = (title: string, hint: string, refs: EntryRef[] | undefi
 
 /**
  * Relationships listed elsewhere on the page: an artwork's co-creators (under Artist) and its owners and places
- * from the provenance (under Provenance); an artist's co-created works (under Artworks).
+ * from the provenance, a commission too (under Provenance); an artist's co-created works (under Artworks).
  */
 export function shownElsewhere(e: Entity, r: Relationship) {
   if (r.type === 'co_creator') return e.type === 'artwork' || e.type === 'artist';
-  return e.type === 'artwork' && !!r.derived && (r.type === 'owned_by' || r.type === 'kept_in');
+  return e.type === 'artwork' && !!r.derived && ['owned_by', 'held_by', 'kept_in', 'commissioned'].includes(r.type);
 }
 
 /**

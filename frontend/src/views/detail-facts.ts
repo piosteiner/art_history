@@ -8,7 +8,7 @@ import type {
 import { partsGrid } from '../series';
 import { STATUS_LABEL } from '../catalog';
 import { cite } from '../cite';
-import { backlinks, provenanceSection, uncertain } from './detail-sections';
+import { backlinks, lastRecordedStep, provenanceSection, uncertain } from './detail-sections';
 
 export type Fact = [label: string, value: Html | string | null | undefined | false];
 
@@ -56,14 +56,14 @@ function creatorsFact(e: Artwork): Html | string | null {
 const withArticle = (name: string) => (/^the\s/i.test(name) ? '' : 'the ');
 
 /**
- * Where the work is, as a credit line: the holding institution, or — on loan — the lender (the provenance's last owner)
+ * Where the work is, as a credit line: the holding institution, or — on loan — the lender (the provenance's last recorded step)
  * "Foundation E.G. Bührle Collection, on loan to the Kunsthaus Zürich since 2021" (migration 048).
  */
 function collectionFact(e: Artwork): Html | null {
   if (!e.institution) return null;
   const holder = link('institution', e.institution.slug, e.institution.name);
   if (!e.on_loan) return holder;
-  const last = e.provenance?.at(-1);
+  const last = lastRecordedStep(e.provenance);
   const owner = last?.owner ? link(last.owner.type, last.owner.slug, last.owner.name) : last?.owner_label ?? last?.owner_name ?? null;
   const since = e.on_loan_since ? html` since ${e.on_loan_since.label}` : '';
   return owner
