@@ -125,7 +125,8 @@ function page(t, e, data) {
       ? html`<p class="flash warn">No source to compare with yet — link the entry on Wikidata or add a GND / SIKART number first.</p>` : html`
     <p class="muted small">One review for every source. Taken values are cited with their source — a value several sources agree on, with each of
       them. Your own values are never replaced unless you choose so; field values go into the working copy — check them and Publish.
-      Relationships, new places and reference records are created when you apply.</p>
+      Relationships, new places and people, and reference records are created when you apply; any suggestion can be linked to another
+      of ours instead, and relationships we have can be cited with the source.</p>
     <form method="post" action="/${t.folder}/${e.slug}/enrich" class="wd-form enrich-form">
       ${merged.length ? html`<h2>Offered by several sources</h2>${mergedTable(t, merged)}` : ''}
       ${wd ? html`<h2>Wikidata</h2>

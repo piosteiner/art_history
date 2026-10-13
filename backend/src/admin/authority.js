@@ -72,7 +72,9 @@ async function plan(t, e, code) {
 
 // Apply the ticked choices (inside the caller's transaction) → gnd.apply's result; agreeing values cited now.
 async function apply(db, t, e, code, p, choices, user) {
-  const r = await gnd.apply(db, t, e, p, choices, citations, { ...SOURCES[code].opts, createPlace: (d, c) => createPlaceFrom(d, c, user) });
+  const r = await gnd.apply(db, t, e, p, choices, citations, { ...SOURCES[code].opts, createPlace: (d, c) => createPlaceFrom(d, c, user),
+    // a new artist / person by name: minimal, marked "to complete" (auto_created), from this entry
+    createEntry: (d, type, name) => wikidata.createEntry(d, type, { name }, { type: t.type, id: e.id }, user.id) });
   if (r.agreed.length) await citations.citeAgreeingSource(db, t.type, e.id, SOURCES[code].source, p.url, r.agreed, user.id);
   // ticked other names: added to the names of the working copy (the Enrich page combines several sources' itself)
   if (r.addNames.length) r.form['f.names'] = withNames((await collab.currentForm(t, e.id)).form['f.names'], r.addNames);
@@ -101,7 +103,9 @@ const empty = html`<span class="muted">(empty)</span>`;
 function fieldsTable(t, p, code, { prefix = '', skip = [] } = {}) {
   const c = SOURCES[code];
   const rows = p.rows.filter((r) => !skip.includes(r.key));
-  if (!rows.length) return html`<p class="muted">Nothing to compare.</p>`;
+  if (!rows.length) {
+    return html`<p class="muted">${p.rows.length ? html`Its ${p.rows.map((r) => fieldLabel(t.type, r.key).toLowerCase()).join(' and ')}: above, under “Offered by several sources”.` : 'No field values in its record.'}</p>`;
+  }
   return html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Field</th><th>Yours</th><th>${c.short}</th><th>Take?</th></tr></thead><tbody>
     ${rows.map((r) => html`<tr><td>${fieldLabel(t.type, r.key)}</td><td>${r.ours || empty}</td>
       <td>${r.label || r.theirs}${r.key !== 'place' ? html` <span class="muted small">(${r.theirs})</span>` : r.create ? html` <span class="muted small">— new place: ${r.create.label}</span>` : ''}</td>
@@ -119,15 +123,29 @@ function namesTable(p, { prefix = '' } = {}) {
     <td><span class="tag">${n.lang}</span> <span class="muted small">${n.role}</span></td></tr>`)}</tbody></table></div>`;
 }
 
+// One row per suggestion, each with its own choice: add · create (the place found in OpenStreetMap; a new artist or
+// person — "to complete") · link another of ours (a picker) · skip; ours already: cite this source for it.
 function relsTable(p, code, { prefix = '' } = {}) {
   const c = SOURCES[code];
   if (!p.rels.length) return html`<p class="muted">None.</p>`;
-  return html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Relationship</th><th>${c.short}</th><th>Ours</th><th>Add?</th></tr></thead><tbody>
-    ${p.rels.map((x) => html`<tr><td>${x.label}</td><td>${x.ref.label}</td>
+  const name = (x) => `${prefix}rel.${x.i}`;
+  const other = (x, checked) => html`<span class="rel-other">${radio(name(x), 'other', 'another of ours:', checked)}
+    <input name="${prefix}relto.${x.i}" data-lookup="${(x.types || ['place']).join(',')}" placeholder="type a name" aria-label="another entry" class="rel-picker"></span>`;
+  const choices = (x) => {
+    if (x.already) {
+      return html`<span class="muted">have it</span> <label class="choice"><input type="checkbox" name="${prefix}citerel.${x.i}" value="cite" checked> cite ${c.short} for it</label>`;
+    }
+    const people = (x.types || []).filter((ty) => ty === 'artist' || ty === 'person');
+    return html`${x.target || x.create ? radio(name(x), 'add', x.create ? 'create the place and add' : 'add', true) : ''}
+      ${!x.target && !x.create ? people.map((ty) => radio(name(x), `new-${ty}`, `new ${ty}`, false)) : ''}
+      ${other(x, false)} ${radio(name(x), 'skip', 'skip', !x.target && !x.create)}`;
+  };
+  return html`<div class="table-wrap"><table class="diff wd-table"><thead><tr><th>Relationship</th><th>${c.short}</th><th>Ours</th><th>Do</th></tr></thead><tbody>
+    ${p.rels.map((x) => html`<tr${x.already ? html` class="wd-same"` : ''}><td>${x.label}</td><td>${x.ref.label}</td>
       <td>${x.target ? html`<a href="/${BY_TYPE[x.target.type].folder}/${x.target.slug}">${x.target.name}</a>${x.target.by_id ? '' : html` <span class="muted small">(${x.target.via === 'osm' ? 'found by OpenStreetMap' : 'same name'})</span>`}`
         : x.create ? html`<span class="muted">not in our database —</span> new place <b>${x.create.name}</b> <span class="muted small">(${x.create.label}, OpenStreetMap)</span>`
-        : html`<span class="muted">not in our database, not found in OpenStreetMap</span>`}</td>
-      <td>${x.already ? html`<span class="muted">have it</span>` : x.target || x.create ? html`<label class="choice"><input type="checkbox" name="${prefix}rel.${x.i}" value="add" checked> ${x.create ? 'create the place and add' : 'add'}</label>` : ''}</td></tr>`)}
+        : html`<span class="muted">not in our database${(x.types || ['place']).includes('place') ? ', not found in OpenStreetMap' : ''}</span>`}</td>
+      <td>${choices(x)}</td></tr>`)}
   </tbody></table></div>`;
 }
 

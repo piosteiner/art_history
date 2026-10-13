@@ -14,6 +14,7 @@ const identifiers = require('./identifiers');
 const { BY_TYPE, TYPES, SLUG, toRow } = require('../content');
 const nameUtil = require('../names');
 const autocreate = require('./autocreate');
+const { pickedTarget } = require('./targets');
 const { fromStatement, periodOf } = require('../wikidata-time');
 const { parseFuzzyDate } = require('../fuzzy-date');
 
@@ -533,7 +534,7 @@ async function compare(db, t, qid, ours, entity) {
     const ref = target ? `${target.type}/${target.slug}` : null;
     const already = ref && existing.some((x) => x.relationship_type === v.code && (reverse ? x.subj === ref : x.obj === ref));
     const item = `rel:${r.type}:${r.qid}`;
-    suggestions.push({ item, type: r.type, prop: r.prop, label: reverse ? v.inverse_label : v.label, qid: r.qid, targetType: type,
+    suggestions.push({ item, type: r.type, prop: r.prop, label: reverse ? v.inverse_label : v.label, qid: r.qid, targetType: type, allowed,
       target, candidate, name: target ? target.name : labelOf(we) || r.qid, create: doc ? { type, doc, describe: describeDoc(type, doc) } : null,
       period: r.period, period_label: r.period_label, already, declined: declined(item, r.qid),
       period_display: r.period_label || (r.period ? parseFuzzyDate(r.period, { openEnd: true }).label : '') });
@@ -710,11 +711,26 @@ async function apply(db, t, entity, plan, choices, userId) {
       images += 1;
     }
     for (const [i, s] of plan.suggestions.entries()) {
-      if (s.already) continue;
+      const reverse = s.type.startsWith('~');
+      if (s.already) {
+        // ours already: cited with Wikidata when ticked
+        if (choices[`citerel.${i}`] !== 'cite' || !s.target) continue;
+        const other = (await db.query('SELECT entity_id($1, $2) AS id', [s.target.type, s.target.slug])).rows[0].id;
+        const [st, si, ot, oi] = reverse ? [s.target.type, other, entity.type, entity.id] : [entity.type, entity.id, s.target.type, other];
+        const rel = (await db.query(`SELECT id FROM relationships WHERE relationship_type = $5 AND (
+            (subject_type, subject_id, object_type, object_id) = ($1, $2, $3, $4) OR (subject_type, subject_id, object_type, object_id) = ($3, $4, $1, $2))
+          ORDER BY period IS NULL LIMIT 1`, [st, si, ot, oi, s.type.replace('~', '')])).rows[0];
+        if (rel) await citations.citeRelationshipFromWikidata(db, rel.id, plan.qid, s.prop);
+        continue;
+      }
       const pick = choices[`rel.${i}`] || 'later';
       if (pick === 'later') continue;
       let ref = null;
-      if (pick === 'link' && s.target) {
+      if (pick === 'other') {
+        // one of ours picked by hand — perhaps a stand-in (the region for a village), so it does NOT get the item's Q-id
+        const p = await pickedTarget(db, choices[`relto.${i}`], s.allowed || [s.targetType]);
+        if (p) ref = { type: p.type, slug: p.slug };
+      } else if (pick === 'link' && s.target) {
         ref = { type: s.target.type, slug: s.target.slug };
         if (s.target.matchedBy === 'name') await linkQid(db, s.target, s.qid);
       } else if (pick === 'candidate' && s.candidate) {
@@ -726,7 +742,6 @@ async function apply(db, t, entity, plan, choices, userId) {
       }
       await decide(s.item, s.qid, !!ref);
       if (!ref) continue;
-      const reverse = s.type.startsWith('~');
       const other = (await db.query('SELECT entity_id($1, $2) AS id', [ref.type, ref.slug])).rows[0].id;
       const [st, si, ot, oi] = reverse ? [ref.type, other, entity.type, entity.id] : [entity.type, entity.id, ref.type, other];
       const period = s.period ? parseFuzzyDate(s.period, { openEnd: true }) : null;

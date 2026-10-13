@@ -30,7 +30,7 @@ async function personPlan(db, t, entity, doc, rec, placeTarget) {
     if (!place || !place.label) continue;
     const { target, create } = await placeTarget(db, { label: placeName(place.label), qid: place.qid || null, country: place.country || null });
     const already = !!target && existing.some((x) => x.relationship_type === type && x.other === `place/${target.slug}`);
-    rels.push({ i: rels.length, type, label, ref: { label: place.label }, target, create, already });
+    rels.push({ i: rels.length, type, types: ['place'], label, ref: { label: place.label }, target, create, already });
   }
   // its numbers elsewhere — new reference records for this entry
   const have = (await db.query('SELECT authority, value FROM entry_identifiers WHERE entity_type = $1 AND entity_id = $2', [t.type, entity.id])).rows;

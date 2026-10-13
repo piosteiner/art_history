@@ -235,8 +235,10 @@ async function citeAgreeing(db, type, id, qid, fields, userId = null) {
 }
 
 async function citeRelationshipFromWikidata(db, relId, qid, property) {
-  await db.query(`INSERT INTO citations (relationship_id, wikidata_item, wikidata_property, accessed) VALUES ($1, $2, $3, current_date)`,
-    [relId, qid, /^P\d+$/.test(property || '') ? property : null]);
+  // (not twice: "cite Wikidata for it" on a relationship it already cites)
+  await db.query(`INSERT INTO citations (relationship_id, wikidata_item, wikidata_property, accessed) SELECT $1, $2, $3, current_date
+    WHERE NOT EXISTS (SELECT 1 FROM citations WHERE relationship_id = $1 AND wikidata_item = $2)`,
+  [relId, qid, /^P\d+$/.test(property || '') ? property : null]);
 }
 
 // ── display ─────────────────────────────────────────────────────────────────────────────────────────────────────

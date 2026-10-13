@@ -9,6 +9,7 @@
 const { parseFuzzyDate } = require('../fuzzy-date');
 const placefinder = require('./placefinder');
 const { memo } = require('./remember');
+const { pickedTarget } = require('./targets');
 
 const LOBID = process.env.LOBID_BASE || 'https://lobid.org';
 const recordUrl = (gnd) => `https://d-nb.info/gnd/${gnd}`;
@@ -99,7 +100,7 @@ async function compare(db, t, entity, doc, gnd) {
     for (const ref of r[prop] || []) {
       const { target, create } = types.includes('place') ? await placeTarget(db, ref) : { target: await ourEntry(db, types, ref) };
       const already = !!target && existing.some((x) => x.relationship_type === type && x.other === `${target.type}/${target.slug}`);
-      rels.push({ i: rels.length, type, label: vocab[type] || type, ref, target, create, already });
+      rels.push({ i: rels.length, type, types, label: vocab[type] || type, ref, target, create, already });
     }
   }
   const info = { name: r.preferredName, occupations: (r.professionOrOccupation || []).map((x) => x.label),
@@ -120,7 +121,7 @@ async function ensureSource(db) {
 // its number of — the GND: its own records name targets by GND number), createPlace(db, candidate) → slug (a place
 // found in OpenStreetMap, created when ticked)
 // choices: take.<key>=take|keep (fields), cite.<key>=cite (agreeing fields), rel.<i>=add, idf.<code>=take
-async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', byNameGets = 'gnd', ensure = ensureSource, createPlace } = {}) {
+async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', byNameGets = 'gnd', ensure = ensureSource, createPlace, createEntry } = {}) {
   await ensure(db);
   const form = {};
   const cites = [];
@@ -155,15 +156,43 @@ async function apply(db, t, entity, plan, choices, citations, { source = 'gnd', 
   }
   const agreed = plan.rows.filter((row) => row.status === 'same' && choices[`cite.${row.key}`] === 'cite').map((row) => row.key);
   let relationships = 0;
+  // the relationship with this target, if we have it — with or without a period, either way round (symmetric types)
+  const existing = (key) => db.query(`SELECT id FROM relationships WHERE relationship_type = $3 AND (
+      (subject_type, subject_id, object_type, object_id) = ($1, $2, $4, $5) OR (subject_type, subject_id, object_type, object_id) = ($4, $5, $1, $2))
+    ORDER BY period IS NULL DESC LIMIT 1`, key).then((r) => r.rows[0] || null);
+  // choices per suggestion: rel.<i> = add (ours / the place found in OpenStreetMap) | new-artist | new-person (created,
+  // "to complete") | other (relto.<i>: one of ours picked by hand) | skip; already there: citerel.<i> = cite
   for (const s of plan.rels) {
-    if (s.already || (!s.target && !s.create) || choices[`rel.${s.i}`] !== 'add') continue;
-    if (!s.target) s.target = { type: 'place', slug: await placeFrom(s.create, s.ref), by_id: true };
+    const pick = choices[`rel.${s.i}`];
+    if (s.already) {
+      if (choices[`citerel.${s.i}`] !== 'cite' || !s.target) continue;
+      const other = (await db.query('SELECT entity_id($1, $2) AS id', [s.target.type, s.target.slug])).rows[0].id;
+      const rel = await existing([t.type, entity.id, s.type, s.target.type, other]);
+      if (rel) await citations.citeRelationshipFromSource(db, rel.id, source, plan.url);
+      continue;
+    }
+    let target = null;
+    if (pick === 'other') {
+      const p = await pickedTarget(db, choices[`relto.${s.i}`], s.types || ['place']);
+      // (chosen by hand — perhaps a stand-in, so it does NOT get the record's number)
+      if (p) target = { type: p.type, slug: p.slug, by_id: true };
+    } else if (pick === 'add' && s.target) {
+      target = s.target;
+    } else if (pick === 'add' && s.create) {
+      target = { type: 'place', slug: await placeFrom(s.create, s.ref), by_id: true };
+    } else if ((pick === 'new-artist' || pick === 'new-person') && createEntry && (s.types || []).includes(pick.slice(4))) {
+      // a person the record names that we don't have: a minimal entry "to complete" — with its GND number, so the next
+      // comparison fills it in
+      const type = pick.slice(4);
+      target = { type, slug: await createEntry(db, type, natural(s.ref.label)), by_id: false };
+      created.push(`${type} ${natural(s.ref.label)}`);
+    }
+    if (!target) continue;
+    s.target = target;
     const other = (await db.query('SELECT entity_id($1, $2) AS id', [s.target.type, s.target.slug])).rows[0].id;
     const key = [t.type, entity.id, s.type, s.target.type, other];
-    // there already, with or without a period (another source of the Enrich page added it a moment ago): this source
-    // cites it too, no second one
-    const have = (await db.query(`SELECT id FROM relationships WHERE subject_type = $1 AND subject_id = $2
-      AND relationship_type = $3 AND object_type = $4 AND object_id = $5 ORDER BY period IS NULL DESC LIMIT 1`, key)).rows[0];
+    // there already (another source of the Enrich page added it a moment ago): this source cites it too, no second one
+    const have = await existing(key);
     // (a symmetric type may be stored the other way round: then the insert finds it and does nothing)
     const ins = have ? [] : (await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
       VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING RETURNING id`, key)).rows;

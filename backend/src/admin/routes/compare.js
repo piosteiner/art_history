@@ -20,9 +20,10 @@ function comparePage(t, e, p, code) {
   return html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p>
     <h1>Compare with ${c.name}</h1>
     <p>${authority.recordLine(p, code)}</p>
-    <p class="muted small">Everything is ticked — untick what you don't want. Taken values are cited with the source “${c.short}” and this record;
-      values that agree are cited as they are. Field values go into the working copy — check them and Publish. Places we don't have are
-      looked up in OpenStreetMap and created with their names, position and region.</p>
+    <p class="muted small">Every row has its own choice; what we have and what is new is pre-selected. Taken values are cited with the source
+      “${c.short}” and this record; values that agree are cited as they are. Field values go into the working copy — check them and Publish.
+      Places we don't have are looked up in OpenStreetMap and created with their names, position and region; people we don't have can be
+      created (marked “to complete”); any suggestion can be linked to another of ours instead.</p>
     <form method="post" action="/${t.folder}/${e.slug}/${code}" class="wd-form">
       <h2>Fields</h2>
       ${authority.fieldsTable(t, p, code)}

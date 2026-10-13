@@ -55,7 +55,8 @@ function fieldRow(r, t) {
 
 function suggestionRow(s, i, t) {
   if (s.already) {
-    return html`<tr class="wd-same"><td>${s.label}</td><td>${s.target.name}</td><td>${s.period_display || ''}</td><td class="muted">already there</td></tr>`;
+    return html`<tr class="wd-same"><td>${s.label}</td><td>${s.target.name}</td><td>${s.period_display || ''}</td>
+      <td><span class="muted">already there</span> <label class="choice"><input type="checkbox" name="citerel.${i}" value="cite" checked> cite Wikidata for it</label></td></tr>`;
   }
   const pre = s.declined ? 'skip' : 'later';
   const radio = (value, label) => html`<label class="choice"><input type="radio" name="rel.${i}" value="${value}"${pre === value ? ' checked' : ''}> ${label}</label>`;
@@ -66,6 +67,8 @@ function suggestionRow(s, i, t) {
       ${s.target ? radio('link', html`link our <a href="/${t.folderOf(s.target.type)}/${s.target.slug}" target="_blank">${s.target.name}</a>${s.target.matchedBy === 'name' ? ' (same name)' : ''}`) : ''}
       ${!s.target && s.candidate ? radio('candidate', html`link our <a href="/${t.folderOf(s.candidate.type)}/${s.candidate.slug}" target="_blank">${s.candidate.name}</a> (similar)`) : ''}
       ${!s.target && s.create ? radio('create', html`create new ${s.create.describe}`) : ''}
+      <span class="rel-other">${radio('other', 'another of ours:')}
+        <input name="relto.${i}" data-lookup="${(s.allowed || [s.targetType]).join(',')}" placeholder="type a name" aria-label="another entry" class="rel-picker"></span>
       ${s.declined ? html`<div class="muted small">skipped before</div>` : ''}</td></tr>`;
 }
 

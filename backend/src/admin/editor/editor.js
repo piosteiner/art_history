@@ -259,6 +259,12 @@ function enhance(textarea, collab = null) {
 }
 
 initAutocomplete();
+// comparison pages: typing in "another of ours" chooses that option of the row
+document.addEventListener('input', (e) => {
+  if (!e.target.matches || !e.target.matches('.rel-picker')) return;
+  const choice = e.target.closest('.rel-other') && e.target.closest('.rel-other').querySelector('input[type=radio]');
+  if (choice && e.target.value.trim()) choice.checked = true;
+});
 initNames();
 initMaterials();
 initDims();

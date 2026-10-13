@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-13
 
+### Admin: more control over the comparisons' suggestions (GND, SIKART, RKD, LC, BnF, KulturNav, NLK, Wikidata)
+- **What:** each relationship suggestion has its own choice: add · create (a place found in OpenStreetMap; **a new
+  artist or person** we don't have — minimal, "to complete", with the record's GND number) · **another of ours**
+  (a picker; `data-lookup="artist,person"` now allowed: value "type/slug"; the picked entry does *not* get the
+  record's number or Q-id — it may be a stand-in, e.g. the region for a village) · skip. Relationships we already have: **"cite <source> for it"** (ticked) — also on Wikidata's
+  suggestions. Sections whose values all went into the merged rows say so instead of "Nothing to compare".
+  `src/admin/targets.js` (pickedTarget), `gnd.apply` (choices `rel.<i>` = add|new-artist|new-person|other|skip,
+  `relto.<i>`, `citerel.<i>`), `wikidata.apply` (`other`, `citerel`), citations not duplicated.
+- **Why:** owner: no way to create an entry we don't have from the authority files' suggestions; little control.
+- **Revert:** revert the commit.
+- **Tested:** e2e `enrich-control.spec` (cite existing, link a place by hand, create a person with its GND number;
+  Wikidata: cite existing, link another) + full suite.
+
 ### Admin: Europeana and Smithsonian in the image search only with own API keys too
 - **What:** like DigitaltMuseum: no fallback to the demo keys (`api2demo`, `DEMO_KEY`); the source appears once
   `EUROPEANA_KEY` / `SMITHSONIAN_KEY` is set in `~/.config/arthistory/backend.env`.

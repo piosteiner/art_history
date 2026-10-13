@@ -404,3 +404,6 @@ details.qa-folded > summary h2::after { content: ' ▸'; color: var(--muted); }
 details.qa-folded[open] > summary h2::after { content: ' ▾'; }
 .qa-tools { margin: .3rem 0 .6rem; }
 .queue-bar > .grow { flex: 1 1 20rem; }
+.rel-other { display: inline-flex; align-items: center; gap: .3rem; flex-wrap: wrap; }
+.rel-other .ac { display: inline-block; }
+input.rel-picker { width: 13rem; padding: .15rem .4rem; }

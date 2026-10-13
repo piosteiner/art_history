@@ -1,6 +1,7 @@
 // Typo-tolerant pickers for form fields that reference another entity (browser code, part of editor.js).
 //
 //   <input data-lookup="place">                 value = a slug of that type (e.g. a place's parent, an artwork's creator)
+//   <input data-lookup="artist,person">         several types: value = "type/slug" (the Enrich page's "link to another")
 //   <input data-lookup-from="r-type">           value = "type/slug"; allowed types come from the selected <option
 //                                               data-object-types="place,institution"> of that <select> (relationship target)
 //
@@ -18,11 +19,12 @@ function el(tag, className, text) {
 
 function enhance(input) {
   const withType = input.hasAttribute('data-lookup-from');
+  const several = !withType && String(input.dataset.lookup || '').includes(',');
   const typeSelect = withType ? document.getElementById(input.dataset.lookupFrom) : null;
   const allowedTypes = () => (withType
     ? (typeSelect.selectedOptions[0]?.dataset.objectTypes || '').split(',').filter(Boolean)
-    : [input.dataset.lookup]);
-  const valueOf = (hit) => (withType ? `${hit.type}/${hit.slug}` : hit.slug);
+    : String(input.dataset.lookup).split(','));
+  const valueOf = (hit) => (withType || several ? `${hit.type}/${hit.slug}` : hit.slug);
 
   input.removeAttribute('list');  // our list replaces the browser's datalist
   input.setAttribute('autocomplete', 'off');

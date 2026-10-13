@@ -101,7 +101,8 @@ function handle(req, res) {
       dateOfBirth: ['1840-11-14'], dateOfDeath: ['1926-12-05'],
       placeOfBirth: [{ id: 'https://d-nb.info/gnd/4044660-8', label: 'Paris' }], placeOfDeath: [{ id: 'https://d-nb.info/gnd/4021477-1', label: 'Giverny' }],
       professionOrOccupation: [{ id: 'https://d-nb.info/gnd/4037220-0', label: 'Maler' }],
-      professionalRelationship: [{ id: 'https://d-nb.info/gnd/118583174', label: 'Gogh, Vincent van' }] });
+      professionalRelationship: [{ id: 'https://d-nb.info/gnd/118583174', label: 'Gogh, Vincent van' },
+        { id: 'https://d-nb.info/gnd/118695967', label: 'Gleyre, Charles' }] });  // (not one of ours: "new person")
   }
   // SIKART (src/admin/sikart.js, 057): Ferdinand Hodler's record, shortened; the search knows two Hodlers
   const hodler = { '@id': 'sik:person-4000055', 'sikapi:preferred_name': 'Hodler, Ferdinand',
