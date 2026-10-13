@@ -91,7 +91,9 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .intro p { max-width: 46rem; color: var(--muted); margin-top: 0; }
 .map-wrap { position: relative; }
 .map { height: min(62vh, 560px); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); background: var(--map-bg); }
-.map-small { height: 360px; }
+/* an entry's map beside the page: as tall as the screen allows below the sticky header, with room for the legend */
+.map-small { height: clamp(360px, calc(100vh - 180px), 600px); }
+.map-small .maplibregl-popup-content { max-height: 280px; }
 /* full screen (button on the map): the map fills the screen, legend and layer switches stay underneath */
 .map-wrap:fullscreen, .detail-side:fullscreen, .map-wrap.maplibregl-pseudo-fullscreen, .detail-side.maplibregl-pseudo-fullscreen {
   display: flex; flex-direction: column; background: var(--bg); padding: .5rem; box-sizing: border-box;
@@ -109,7 +111,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 
 .popup-row + .popup-row { margin-top: .5rem; padding-top: .5rem; border-top: 1px solid var(--line); }
 .popup-list { margin: .3rem 0 0; padding-left: 1.1rem; }
-.maplibregl-popup-content { font: 14px/1.45 var(--sans); padding: .7rem .9rem; }
+.maplibregl-map .maplibregl-popup-content { font: 14px/1.45 var(--sans); padding: .7rem .9rem; }
 
 /* timeline */
 .timeline { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: .5rem .5rem .2rem; overflow-x: auto; }
@@ -146,12 +148,13 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 /* detail */
 .crumbs { font-size: .85rem; color: var(--muted); margin: .3rem 0 0; }
 .subtitle { color: var(--muted); font-size: 1.1rem; margin: 0 0 1.2rem; }
-.detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) 380px; gap: 2rem; align-items: start; }
+.detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) clamp(340px, 40%, 460px); gap: 2rem; align-items: start; }
 .detail-side { position: sticky; top: 80px; }
 @media (max-width: 860px) {
   .detail-grid { grid-template-columns: minmax(0, 1fr); }
   .detail-side { position: static; order: -1; }
-  .map-small { height: 280px; }
+  .map-small { height: 320px; }
+  .map-small .maplibregl-popup-content { max-height: 200px; }
 }
 .prose { max-width: 42rem; font-size: 1.05rem; }
 .prose p { margin: 0 0 .9em; }
@@ -327,9 +330,13 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .web-panel p { margin: .3rem 0; }
 .web-panel p:first-child { color: var(--muted); }
 
-/* map popups and controls follow the theme */
-.maplibregl-popup-content { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
-.maplibregl-popup-tip { border-top-color: var(--surface) !important; border-bottom-color: var(--surface) !important; }
+/* map popups and controls follow the theme; `.maplibregl-map` first, as MapLibre's own CSS loads after this file (with the map) */
+.maplibregl-map .maplibregl-popup-content { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
+/* the tip is a border triangle: colour only the side facing the popup, per anchor, as MapLibre does */
+.maplibregl-map .maplibregl-popup-anchor-top .maplibregl-popup-tip, .maplibregl-map .maplibregl-popup-anchor-top-left .maplibregl-popup-tip, .maplibregl-map .maplibregl-popup-anchor-top-right .maplibregl-popup-tip { border-bottom-color: var(--surface); }
+.maplibregl-map .maplibregl-popup-anchor-bottom .maplibregl-popup-tip, .maplibregl-map .maplibregl-popup-anchor-bottom-left .maplibregl-popup-tip, .maplibregl-map .maplibregl-popup-anchor-bottom-right .maplibregl-popup-tip { border-top-color: var(--surface); }
+.maplibregl-map .maplibregl-popup-anchor-left .maplibregl-popup-tip { border-right-color: var(--surface); }
+.maplibregl-map .maplibregl-popup-anchor-right .maplibregl-popup-tip { border-left-color: var(--surface); }
 .maplibregl-popup-close-button { color: var(--muted); }
 .theme-toggle {
   font: inherit; font-size: .85rem; padding: .3rem .6rem; border: 1px solid var(--line); border-radius: 999px;
