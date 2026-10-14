@@ -131,6 +131,15 @@ async function byId(db, id) {
   return (await db.query('SELECT * FROM citations WHERE id = $1', [id])).rows[0] || null;
 }
 async function remove(db, id) { await db.query('DELETE FROM citations WHERE id = $1', [id]); }
+// "Yes, it still does": the source was checked against the changed value — the value now is the cited one (the same
+// field_value() as settle(); citation_status compares with it), and a dated source (a web page, Wikidata) was
+// accessed today.
+async function confirm(db, id) {
+  await db.query(`UPDATE citations c SET cited_value = field_value(er.r, f.cols),
+      accessed = CASE WHEN c.accessed IS NOT NULL THEN current_date ELSE c.accessed END, updated_at = now()
+    FROM citable_fields f, entity_rows er WHERE c.id = $1 AND c.pending IS NULL
+      AND (f.entity_type, f.field) = (c.entity_type, c.field) AND (er.type, er.id) = (c.entity_type, c.entity_id)`, [id]);
+}
 
 // A pasted link → the bibliography source of its website: ours for that host if we have one (kind web, its url on
 // the same host), else a new one — named as given, else after the host — reliability "institution" (a museum's or
@@ -298,7 +307,9 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
         ${c.url ? html` <a class="small" href="${c.url}" target="_blank" rel="noopener">page ↗</a>` : ''}
         ${c.accessed ? html`<span class="muted small">· accessed ${c.accessed.toISOString().slice(0, 10)}</span>` : ''}
         ${c.note ? html`<div class="small">${c.note}</div>` : ''}
-        ${c.outdated ? html`<div class="small cite-warn">The value changed since — does the source still support it?</div>` : ''}
+        ${c.outdated ? html`<div class="small cite-warn">The value changed since — does the source still support it?
+          <form method="post" action="/citations/${c.id}/confirm" class="inline cite-confirm"><input type="hidden" name="back" value="${back}"><button class="link small" title="I checked: the source supports the value as it is now${c.accessed ? ' (accessed today)' : ''}">Yes, it still does</button></form>
+          <span class="muted">· if not: remove it</span></div>` : ''}
         ${c.pending ? html`<div class="small muted">In the working copy — becomes a citation when published.</div>` : ''}
         <form method="post" action="/citations/${c.id}/delete" class="inline cite-remove"><input type="hidden" name="back" value="${back}"><button class="link small">remove</button></form></li>`)}</ul>`
       : html`<p class="small muted">No source yet.</p>`}
@@ -326,6 +337,6 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
       </form></div></details>`;
 }
 
-module.exports = { CitationError, citableFields, forEntity, forRelationships, forProvenance, syncText, add, byId, remove, pendingFromWikidata, settle,
+module.exports = { CitationError, citableFields, forEntity, forRelationships, forProvenance, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
   pendingFromSource, citeAgreeingSource, citeRelationshipFromSource,
   citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, recentSources, recentChips, keyOf };

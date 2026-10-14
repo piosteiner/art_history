@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Admin: "Yes, it still does" on a source whose value changed
+- **What:** an outdated citation ("The value changed since — does the source still support it?") has a button that
+  records the current value as the cited one (`cited_value = field_value(…)`, as when published) and, for dated
+  sources (web page, Wikidata), sets accessed to today. `POST /citations/:id/confirm`, `citations.confirm()`; in place
+  like add/remove (`editor/cites.js`). E2E in `citations.spec.js`.
+- **Why:** owner: there was no way to answer yes and clear the warning (only remove).
+- **Revert:** `git revert` this commit, deploy.
+
 ### Admin: further numbers entered on the edit page
 - **What:** an artwork's further numbers (048) are added and removed on its edit page, under the inventory number
   (inputs inside the entry's form that belong to two small forms after it, `form="…"` — saved at once, not part of

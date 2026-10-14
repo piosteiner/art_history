@@ -125,7 +125,8 @@ async function send(form, submitter) {
     body.set('expect', JSON.stringify(Object.fromEntries(keys.filter((k) => k.startsWith('field:'))
       .map((k) => [k.slice(6), valuesOf(k.slice(6))]))));
   }
-  status(d, form.classList.contains('cite-add') ? 'Adding …' : 'Removing …');
+  const confirming = form.classList.contains('cite-confirm');
+  status(d, form.classList.contains('cite-add') ? 'Adding …' : confirming ? 'Saving …' : 'Removing …');
   let res;
   try {
     res = await fetch(form.action, { method: 'POST', credentials: 'same-origin', body: new URLSearchParams(body),
@@ -139,7 +140,7 @@ async function send(form, submitter) {
   apply(result, d.dataset.citeKey, edit);
   const fresh = markerFor(d.dataset.citeKey, edit);
   const n = keys.length;
-  status(fresh, form.classList.contains('cite-add') ? (n > 1 ? `Source added to ${n} fields.` : 'Source added.') : 'Source removed.');
+  status(fresh, form.classList.contains('cite-add') ? (n > 1 ? `Source added to ${n} fields.` : 'Source added.') : confirming ? 'Noted: the source still supports it.' : 'Source removed.');
   const first = fresh && fresh.querySelector('form.cite-add input[name="url"]');
   if (first) first.focus();
 }
@@ -157,7 +158,7 @@ export function initCiteDialogs() {
   });
   document.addEventListener('submit', (e) => {
     const form = e.target;
-    if (!form.closest || !form.closest('details.cite') || !(form.matches('form.cite-add') || form.matches('form.cite-remove'))) return;
+    if (!form.closest || !form.closest('details.cite') || !(form.matches('form.cite-add') || form.matches('form.cite-remove') || form.matches('form.cite-confirm'))) return;
     e.preventDefault();
     send(form, e.submitter);
   });

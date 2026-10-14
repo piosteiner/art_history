@@ -88,6 +88,14 @@ router.post('/citations/:id/delete', async (req, res) => {
   res.redirect(303, citeBack(req.body.back, 'cite-deleted'));
 });
 
+router.post('/citations/:id/confirm', async (req, res) => {
+  const c = await citations.byId(adminPool, req.params.id);
+  if (!c) return wantsJson(req) ? res.status(404).json({ error: 'That source is gone — reload the page.' }) : notFoundPage(req, res);
+  await withTx(req.user, (db) => citations.confirm(db, c.id));
+  if (wantsJson(req)) return res.json(await freshMarkers(req, refreshOf(req)));
+  res.redirect(303, citeBack(req.body.back, 'cite-confirmed'));
+});
+
 // Reference records (authority files, src/admin/identifiers.js): added on an entry's page, removed one by one.
 router.post('/:plural/:slug/identifiers', async (req, res) => {
   const { t } = req;

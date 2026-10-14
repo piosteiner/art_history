@@ -30,7 +30,7 @@ const DONE = {
   'queue-done': 'That was the last one of this list.', 'looked-up': 'Filled in from the record — check the fields and press Create.',
   'source-exists': 'This ISBN / DOI is already in the bibliography: here it is.', cited: 'Cited.',
   enrich: 'Applied — the field values are in the working copy: check them below and Publish.', 'enrich-applied': 'Applied — agreeing values are cited.', 'id-added': 'Reference record added.', 'id-deleted': 'Reference record removed.', gnd: 'Values applied — the field values are in the working copy: check them below and Publish.',
-  'cite-added': 'Source added.', 'cite-deleted': 'Source removed.',
+  'cite-added': 'Source added.', 'cite-deleted': 'Source removed.', 'cite-confirmed': 'Noted: the source still supports it.',
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
 };

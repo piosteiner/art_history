@@ -48,6 +48,15 @@ test('a new entry from Wikidata: its values are cited (W); a museum source added
     .toBe('birth changed since it was cited (Wikidata Q100, P569)');
   await userA.reload();
   await expect(userA.locator('dt:has-text("Birth") + dd summary .cite-badge.cite-outdated')).toBeVisible();
+
+  // checked: the source still supports the new value — the warning goes, in place; the date of access is today
+  await userA.click('dt:has-text("Birth") + dd summary');
+  await userA.locator('details.cite[open] .cite-warn button:has-text("Yes, it still does")').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/still supports it/);
+  await expect(userA.locator('dt:has-text("Birth") + dd summary .cite-badge.cite-outdated')).toHaveCount(0);
+  await expect(userA.locator('details.cite[open] .cite-warn')).toHaveCount(0);
+  expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'citation_outdated' AND entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet')`)).toBe('0');
+  expect(sql(`SELECT accessed = current_date FROM citations WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'claude-monet') AND field = 'birth'`)).toBe('t');
 });
 
 test('an existing entry compared with Wikidata: pending in the working copy, cited when published; relationships cited at once', async ({ userA }) => {
