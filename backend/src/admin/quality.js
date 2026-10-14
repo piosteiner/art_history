@@ -195,6 +195,7 @@ function queueBar(t, e, queueParam, rows) {
 const BATCH = {
   no_wikidata_id: { href: '/quality/batch/wikidata', label: 'Find Wikidata items for these…' },
   weakly_sourced: { href: '/quality/batch/cite', label: 'Cite where the GND or SIKART agrees…' },
+  auto_created: { href: '/quality/batch/wikidata?only=auto', label: 'Find Wikidata items for these…' },
 };
 // checks the Enrich page helps with
 const ENRICH = ['weakly_sourced', 'no_wikidata_id', 'artist_missing_dates', 'missing_romanization', 'institution_without_place', 'auto_created'];
@@ -221,6 +222,9 @@ function page({ rows, allCounts, filter, back }) {
   const groups = {};
   for (const r of rows) (groups[r.check_id] ||= []).push(r);
   return html`<h1>Data quality</h1>
+    <p class="small">Batch pages: <a href="/quality/batch/wikidata">find Wikidata items</a> ·
+      <a href="/quality/batch/wikidata?only=auto">… for entries created automatically</a> ·
+      <a href="/quality/batch/images">images for artworks without one</a></p>
     <div class="cards" data-live-results="cards">${SEVERITIES.map((s) => html`<a class="card qa-${s}${filter.severity === s ? ' active' : ''}" href="${q({ severity: filter.severity === s ? '' : s, check: '' })}">
       <b>${total(s)}</b>${SEVERITY_TEXT[s]}</a>`)}</div>
     <form class="bar" method="get" action="/quality" data-live>
@@ -239,7 +243,7 @@ function page({ rows, allCounts, filter, back }) {
       const head = html`<h2><span class="tag qa-${list[0].severity}">${list[0].severity}</span> ${CHECKS[id] ? CHECKS[id].title : id} <span class="muted">(${list.length})</span></h2>`;
       const body = html`${CHECKS[id] ? html`<p class="muted small">${CHECKS[id].fix}</p>` : ''}
         ${!filter.acked ? html`<p class="actions qa-tools"><a class="button" href="${queueLink(list[0], qf, 0)}">Work through these →</a>
-          ${BATCH[id] ? html`<a class="button secondary" href="${BATCH[id].href}${filter.type ? `?type=${filter.type}` : ''}">${BATCH[id].label}</a>` : ''}</p>` : ''}
+          ${BATCH[id] ? html`<a class="button secondary" href="${BATCH[id].href}${filter.type ? `${BATCH[id].href.includes('?') ? '&' : '?'}type=${filter.type}` : ''}">${BATCH[id].label}</a>` : ''}</p>` : ''}
         <div class="table-wrap"><table><tbody>${list.map((r) => html`<tr>
           <td><a href="${filter.acked ? link(r) : queueLink(r, qf, posOf(r))}">${r.name}</a> <span class="tag">${r.type}</span></td><td>${r.detail}
             ${r.acked_at ? html`<div class="muted small">OK’d by ${r.acked_by || '?'} on ${r.acked_at.toISOString().slice(0, 10)}${r.note ? ` — ${r.note}` : ''}</div>` : ''}</td>

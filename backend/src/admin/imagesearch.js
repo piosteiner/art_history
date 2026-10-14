@@ -61,6 +61,11 @@ const stripTags = (s) => String(s || '').replace(/<[^>]*>/g, '').replace(/\s+/g,
 const clean = (u) => (u ? u.split('?')[0] : u);
 
 // → [{ url, thumb, source_url, license, credit, title, by }]
+// Commons' object name carries hidden QuickStatements of its labels (<span style="display:none">label QS:Lde,"…"</span>)
+// — left out, also when they come without the span
+const objectName = (v) => stripTags(String(v || '').replace(/<span[^>]*display:\s*none[^>]*>[\s\S]*?<\/span>/gi, ''))
+  .replace(/\b(?:label|title) QS:[^,"]*,(?:[a-z-]+:)?"[^"]*"/g, '').replace(/\s+/g, ' ').trim();
+
 async function commons(q) {
   const data = await getJson(`${COMMONS}/w/api.php?${new URLSearchParams({
     action: 'query', generator: 'search', gsrsearch: q, gsrnamespace: '6', gsrlimit: String(LIMIT),
@@ -73,7 +78,7 @@ async function commons(q) {
     if (!license) return [];  // no licence statement: not offered
     return [{ url: clean(info.thumburl || info.url), thumb: clean(info.thumburl || info.url), source_url: info.descriptionurl,
       license, credit: stripTags(m.Artist && m.Artist.value) || null,
-      title: stripTags(m.ObjectName && m.ObjectName.value) || String(p.title || '').replace(/^File:/, ''), by: null }];
+      title: objectName(m.ObjectName && m.ObjectName.value) || String(p.title || '').replace(/^File:/, ''), by: null }];
   });
 }
 

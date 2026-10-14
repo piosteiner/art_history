@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Admin: batch pages — Wikidata items with dates and "to complete" filter; images for artworks without one
+- **What:** `/quality/batch/wikidata`: each entry with what we know (dates, works held, why it was created), each hit
+  with its years from Wikidata (one `wbgetentities` for the page, `getEntitiesBatch()`); an exact name is no longer
+  pre-selected when the years contradict ours ("dates differ"); `?only=auto` = entries created automatically (also
+  the batch link of the `auto_created` check). New `/quality/batch/images`: artworks without an image, every keyless
+  image source searched by title + artist, 3 hits each (only hits sharing a word with title/artist), Add returns
+  there. Links on the Quality page. Commons titles without their hidden QuickStatements text. E2E in
+  `queue.spec.js`, `imagesearch.spec.js`.
+- **Why:** owner's improvement list of 2026-10-14 (167 entries to complete, 24 artworks without an image).
+- **Revert:** `git revert`, deploy.
+
 ### Provenance research: flags on holders (068) and links for 1933–1945
 - **What:** migration 068: `provenance_flag` (people, institutions, artists), `holder_flag()`, check `flagged_holder`
   in `quality_issues_live` (058's view, extended from production's definition). Admin: "Provenance flag…" in the

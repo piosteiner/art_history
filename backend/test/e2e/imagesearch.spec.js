@@ -61,3 +61,19 @@ test('find images: SMK and DigitaltMuseum — only public-domain / free-licence 
   await expect(items).toHaveCount(1);                                         // no NC licence, no record without one
   await expect(items).toContainText('Munchmuseet · CC BY-SA');
 });
+
+test('batch: images for artworks without one — every source at once, Add returns to the batch page', async ({ userA }) => {
+  await userA.goto('/quality');
+  await userA.click('a:has-text("images for artworks without one")');
+  await expect(userA).toHaveURL(/\/quality\/batch\/images$/);
+  const first = userA.locator('section.batch-images').first();
+  const id = await first.getAttribute('id');                                   // artwork-<slug>
+  const slug = id.replace(/^artwork-/, '');
+  await expect(first.locator('.find-item .tag', { hasText: 'Wikimedia Commons' }).first()).toBeVisible();
+  await expect(first.locator('.find-item .tag', { hasText: 'Metropolitan Museum' }).first()).toBeVisible();
+  await Promise.all([userA.waitForNavigation(), first.locator('.find-item button:has-text("Add")').first().click()]);
+  await expect(userA).toHaveURL(new RegExp(`/quality/batch/images\\?p=0&done=img-added#${id}$`));
+  expect(sql(`SELECT count(*) FROM images WHERE artwork_id = entity_id('artwork', '${slug}')`)).toBe('1');
+  await expect(userA.locator(`section#${id}`)).toHaveCount(0);                  // has one now: off the list
+  sql(`DELETE FROM images WHERE artwork_id = entity_id('artwork', '${slug}')`);
+});

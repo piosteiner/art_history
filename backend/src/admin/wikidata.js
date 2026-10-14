@@ -58,6 +58,18 @@ async function getEntities(ids, { light = false } = {}) {
   return out;
 }
 
+// Statements of many items in one request (wbgetentities takes 50 ids) — for people and institutions, whose items
+// are small; getEntities() fetches one by one because a city's or a country's item is huge.
+async function getEntitiesBatch(ids) {
+  const out = {};
+  const list = [...new Set(ids)].filter((id) => Q.test(id));
+  for (let i = 0; i < list.length; i += 50) {
+    const params = new URLSearchParams({ action: 'wbgetentities', ids: list.slice(i, i + 50).join('|'), format: 'json', props: 'claims' });
+    Object.assign(out, (await getJson(`${WIKIDATA}/w/api.php?${params}`)).entities || {});
+  }
+  return out;
+}
+
 async function search(q) {
   const url = `${WIKIDATA}/w/api.php?${new URLSearchParams({ action: 'wbsearchentities', search: q, language: 'en', uselang: 'en',
     type: 'item', limit: '8', format: 'json' })}`;
@@ -823,4 +835,5 @@ async function coordsOf(qid) {
 }
 
 module.exports = {
+  getEntitiesBatch,
   withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf };

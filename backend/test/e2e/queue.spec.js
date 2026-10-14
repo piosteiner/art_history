@@ -43,6 +43,26 @@ test('batch: find Wikidata items — an exact name pre-selected, linked, then En
   expect(sql("SELECT wikidata_id FROM people WHERE slug = 'charles-gleyre-q'")).toBe('Q103');
 });
 
+test('batch: find Wikidata items — years beside the hits; a namesake with other dates not pre-selected; only entries to complete', async ({ userA }) => {
+  sql(`INSERT INTO people (slug, name, birth, birth_label) VALUES ('charles-gleyre-n', 'Charles Gleyre', '[1900-01-01,1901-01-01)', '1900'),
+                                                                  ('charles-gleyre-m', 'Charles Gleyre', '[1806-01-01,1807-01-01)', '1806');
+       INSERT INTO auto_created (entity_type, entity_id) VALUES ('person', entity_id('person', 'charles-gleyre-n'))`);
+  await userA.goto('/quality/batch/wikidata?type=person');
+  const namesake = userA.locator('tr[data-entry="person/charles-gleyre-n"]');
+  await expect(namesake.locator('label', { hasText: 'Charles Gleyre' })).toContainText('1806–');      // Q103's birth
+  await expect(namesake.locator('.tag.flagged')).toHaveText('dates differ');
+  await expect(namesake.locator('input[value=Q103]')).not.toBeChecked();                             // born 1900 ≠ 1806
+  const same = userA.locator('tr[data-entry="person/charles-gleyre-m"]');
+  await expect(same.locator('.tag.ok')).toHaveText('dates agree');
+  await expect(same.locator('input[value=Q103]')).toBeChecked();
+  // only the entries created automatically
+  await userA.click('a:has-text("only those created automatically")');
+  await expect(userA).toHaveURL(/only=auto/);
+  await expect(userA.locator('tr[data-entry]')).toHaveCount(1);
+  await expect(userA.locator('tr[data-entry="person/charles-gleyre-n"]')).toBeVisible();
+  sql("DELETE FROM people WHERE slug IN ('charles-gleyre-n', 'charles-gleyre-m')");
+});
+
 test('batch: cite where the GND agrees — weakly sourced birth cited with the GND', async ({ userA }) => {
   sql(`INSERT INTO artists (slug, name, birth, birth_label) VALUES ('claude-monet-q', 'Claude Monet', '[1840-11-14,1840-11-15)', '14 November 1840');
        INSERT INTO entry_identifiers (entity_type, entity_id, authority, value) VALUES ('artist', entity_id('artist', 'claude-monet-q'), 'gnd', '118583123')`);

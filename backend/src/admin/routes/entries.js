@@ -638,6 +638,8 @@ router.post('/:plural/:slug/images', async (req, res) => {
   // from the image search: back to the results (only that page of this entry — never an arbitrary address)
   const back = String(req.body.back || '');
   if (back.startsWith(`/${t.folder}/${e.slug}/images/find?`)) return res.redirect(303, `${back}&done=img-added`);
+  // from the batch page (routes/queue.js): back there, at the row (only that page — never an arbitrary address)
+  if (/^\/quality\/batch\/images\?p=\d+$/.test(back)) return res.redirect(303, `${back}&done=img-added#${t.type}-${e.slug}`);
   res.redirect(303, `/${t.folder}/${e.slug}?done=img-added#images`);
 });
 
