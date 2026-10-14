@@ -100,7 +100,9 @@ router.get('/quality', async (req, res) => {
   const [rows, allCounts] = await Promise.all([
     quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked, live }),
     quality.counts(adminPool, { live })]);
-  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl }) });
+  // start views (069) aren't entries — their problems are counted here, listed on /featured
+  const featured = (await adminPool.query('SELECT count(DISTINCT id)::int AS n FROM featured_view_problems')).rows[0].n;
+  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl, featured }) });
 });
 
 // "Mark as OK" / undo — back to where it was clicked (only local paths).

@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Curated start views (migration 069, `GET /v1/featured`, admin "Start views")
+- **What:** table `featured_views` (audited) with `featured_query_refs()`, `current_featured_query()` (old slugs →
+  current), BEFORE trigger, one more step in `record_slug_change()`, intro in `markdown_columns`, view
+  `featured_view_problems`. API `GET /v1/featured` (published, ordered; query read through `current_featured_query`).
+  Admin `/featured` (`routes/featured.js`): paste a site URL (normalized: commas readable, `patrons` → `people`, the
+  site's `featured`/`all` dropped), preview link, problems listed, publishing refused while there are problems, drag
+  order; a notice on the Quality page. E2E `featured.spec.js`.
+- **Why:** frontend request (frontend/README.md → "Curated start views"): the home page shows curated views.
+- **Revert:** `git revert`, deploy; then `CREATE OR REPLACE FUNCTION record_slug_change()` with 042's body, `CREATE OR
+  REPLACE VIEW markdown_columns` without featured_views, `DROP TABLE featured_views CASCADE`, drop the three functions.
+
 ### Admin: endless lists
 - **What:** the lists (and the history pages) load the next page by themselves when you scroll near the end
   (`src/admin/editor/infinite.js`: IntersectionObserver, rows of the next page appended, its pager taking over; a

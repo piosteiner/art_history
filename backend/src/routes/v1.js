@@ -3,6 +3,7 @@ const { apiPool } = require('../db');
 const { router: entities } = require('./entities');
 const map = require('./map');
 const graph = require('./graph');
+const { renderMarkdown, linkNames } = require('../markdown');
 
 const router = express.Router();
 
@@ -47,6 +48,16 @@ router.get('/search', async (req, res) => {
     ORDER BY score DESC, sort_key COLLATE sort_natural
     LIMIT 20`, [q, `%${q.replace(/[\\%_]/g, '\\$&')}%`]);
   res.json({ data: rows });
+});
+
+// Curated start views (migration 069): published ones, in their order. The query read through
+// current_featured_query(), so a view follows renamed and merged entries even before it is saved again.
+router.get('/featured', async (req, res) => {
+  const { rows } = await apiPool.query(`
+    SELECT slug, title, intro_md, current_featured_query(query) AS query
+    FROM featured_views WHERE published ORDER BY sort_order, title COLLATE sort_natural, slug`);
+  const env = { names: await linkNames(apiPool, rows.map((r) => r.intro_md)), used: new Set(), cited: new Set() };
+  res.json({ data: rows.map(({ intro_md: md, ...v }) => ({ ...v, intro_html: md ? renderMarkdown(md, env) : null })) });
 });
 
 // Patrons became people (migration 024): old URLs keep working — /v1/patrons…, /v1/map/patrons/…, /v1/graph/patrons/…

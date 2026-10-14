@@ -61,6 +61,7 @@ router.use((req, res, next) => {
 router.use(require('./routes/revert'));
 router.use(require('./routes/dashboard'));
 router.use(require('./routes/queue'));
+router.use(require('./routes/featured'));
 router.use(require('./routes/relationships'));
 router.use(require('./routes/citations'));
 router.use(require('./routes/compare'));

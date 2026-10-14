@@ -473,3 +473,11 @@ reads it for a provenance holder (owner_type + owner_id); the check `flagged_hol
 about every step and joint ownership with a flagged holder. Not in the API. The admin artwork page lists the holders
 of 1933-01-30 – 1945-05-08 (and flagged ones) with links to Lost Art, Proveana, the ERR database and the Getty
 Provenance Index.
+
+## Curated start views (migration 069)
+`featured_views` (slug, title, `intro_md`, `query` = the start map's URL query, `sort_order`, `published`; audited).
+The database understands the query: `featured_query_refs(query)` lists the entries it names (`regexp_split_to_table`
+… `WITH ORDINALITY`), `current_featured_query(query)` replaces old slugs (slug_history) — a BEFORE trigger on the way
+in, `record_slug_change()` on renames, the API on reading (merges). `featured_view_problems` lists unknown keys, bad
+years and slugs that name nothing; a view with problems can't be published. The intro is in `markdown_columns`, so
+its `[[links]]` follow renames and merges like every text.

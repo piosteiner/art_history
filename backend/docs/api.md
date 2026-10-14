@@ -268,6 +268,13 @@ Artists and people have `given_name`, `family_name` and `sort_name` ("filed as":
 "Gogh, Vincent"; "de La Tour" → "La Tour, Georges"), else `sort_name`, else the name. Lists are ordered by it — sort
 by `sort_key` for every type, artists included (no longer `sort_name ?? name`).
 
+## Curated start views (069)
+- `GET /v1/featured` → `{data: [{slug, title, intro_html, query}]}` — the published views of the start map, ordered by
+  their position, then title. `query` is the start map's own URL query (`artists=vincent-van-gogh,paul-gauguin&
+  movements=none&from=1886&to=1890`: keys `artists`, `artworks`, `movements`, `polities`, `people` with slugs, `none`,
+  `all` (artworks also `by-artists`), and `from`/`to` years), always with the entries' current slugs (renamed and
+  merged ones followed). `intro_html` may be null. Edited in the admin panel (Start views).
+
 ## Search
 `GET /v1/search?q=edo` — top 20 matches across all types: `{type, slug, name, kind, period, score}`.
 

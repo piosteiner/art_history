@@ -216,12 +216,14 @@ function ackForm(r, back, acked) {
         <input name="note" placeholder="why it is right (optional)" aria-label="note"><button class="secondary">Mark as OK</button></form>`;
 }
 
-function page({ rows, allCounts, filter, back }) {
+function page({ rows, allCounts, filter, back, featured = 0 }) {
   const total = (s) => allCounts.filter((c) => c.severity === s).reduce((n, c) => n + c.n, 0);
   const q = (params) => `/quality?${new URLSearchParams(Object.entries({ ...filter, ...params }).filter(([, v]) => v)).toString()}`;
   const groups = {};
   for (const r of rows) (groups[r.check_id] ||= []).push(r);
   return html`<h1>Data quality</h1>
+    ${featured ? html`<p class="flash error">${featured} start view${featured === 1 ? ' has' : 's have'} problems (an entry deleted, a key the site doesn't know …) —
+      <a href="/featured">Start views</a>.</p>` : ''}
     <p class="small">Batch pages: <a href="/quality/batch/wikidata">find Wikidata items</a> ·
       <a href="/quality/batch/wikidata?only=auto">… for entries created automatically</a> ·
       <a href="/quality/batch/images">images for artworks without one</a></p>
