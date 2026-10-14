@@ -82,3 +82,19 @@ ALTER DATABASE arthistory_restored RENAME TO arthistory;`, `pm2 start arthistory
 On a **new server**: install Postgres 18 + PostGIS, clone both repos, run `backend/db/setup.sh arthistory_dev` (creates the
 roles with new passwords + `~/.pgpass`), put the passphrase into `~/.config/arthistory/backup-passphrase` (600), then
 `scripts/restore.sh <file> arthistory` — straight into the production name, since it doesn't exist yet.
+
+## Content snapshots (YAML in git) — prepared, **not installed yet**
+Nightly at ~04:00 UTC, systemd `arthistory-export.timer` → `scripts/export-commit.sh` (units: `config/systemd/`):
+`backend/scripts/export.js` writes the production database to `content/` (YAML); when that changed, `content/` alone is
+committed ("Content snapshot YYYY-MM-DD (nightly export)") and pushed — the content's history readable in the public repo,
+beside the encrypted backups. Other uncommitted work in this checkout is not committed (pull with `--autostash`); the
+git hooks run as usual. A failed pull (someone changed `content/` by hand) stops it: see the journal, resolve, run again.
+Install (as ubuntu, in `/var/www/arthistory`, after `git pull`):
+```bash
+command -v node                      # must be on systemd's default PATH (/usr/bin, /usr/local/bin); else set Environment=PATH= in the unit
+scripts/export-commit.sh             # once by hand: the first snapshot (content/ was last exported 2026-10-09)
+sudo cp server-docs/config/systemd/arthistory-export.{service,timer} /etc/systemd/system/
+sudo systemctl daemon-reload && sudo systemctl enable --now arthistory-export.timer
+```
+Check: `systemctl list-timers arthistory-export` · `journalctl -u arthistory-export -n 20`. Revert: `sudo systemctl disable --now
+arthistory-export.timer`, remove both units, `daemon-reload`.

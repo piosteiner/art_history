@@ -88,7 +88,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Batch pages: Wikidata items with dates / `?only=auto`, images for artworks without one (`/quality/batch/images`, `routes/queue.js`) built 2026-10-14.
   Spell check language of Markdown texts recognised as you type (EN/DE, `src/textlang.js`, toolbar switch) built 2026-10-14.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
-  Ideas later: impressions vs. design for prints; nightly auto-export commit; ISBN/DOI lookup for sources built 2026-10-12 (`booklookup.js`: Open Library, Crossref). Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
+  Ideas later: impressions vs. design for prints. Nightly export commit prepared 2026-10-14, not installed (`scripts/export-commit.sh`, server-docs/README.md → Content snapshots). ISBN/DOI lookup for sources built 2026-10-12 (`booklookup.js`: Open Library, Crossref). Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
 - Decided (2026-09-28): year-only dates = the whole year (as implemented); `visited` is the travel type (as implemented).
 - 📌 Open (raise this whenever we review improvements): API keys the owner hasn't applied for yet — Europeana (*Project*
   key), Smithsonian, DigitaltMuseum (museums only — ask), Paris Musées and Korea's e-museum (not built until keys exist).

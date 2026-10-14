@@ -1,0 +1,13 @@
+# Installed at /etc/systemd/system/arthistory-export.service (copy kept in server-docs/config/systemd/).
+# Nightly content snapshot — see scripts/export-commit.sh. Logs: journalctl -u arthistory-export
+[Unit]
+Description=Art history content snapshot (export to YAML, commit content/, push)
+After=postgresql.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+ExecStart=/var/www/arthistory/scripts/export-commit.sh
+Nice=10
+IOSchedulingClass=idle
