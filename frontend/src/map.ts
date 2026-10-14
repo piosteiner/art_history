@@ -1,5 +1,5 @@
 // MapLibre setup and the three kinds of map content: one entity's places, all places, presence in a time window.
-import { FullscreenControl, LngLatBounds, Map as MapLibre, NavigationControl, Popup, setWorkerUrl } from 'maplibre-gl';
+import { FullscreenControl, LngLatBounds, Map as MapLibre, Marker, NavigationControl, Popup, setWorkerUrl } from 'maplibre-gl';
 import type { ExpressionSpecification, GeoJSONSource, MapLayerMouseEvent } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
 // MapLibre 6 loads its worker from a separate module; let Vite bundle it and tell MapLibre where it is.
@@ -11,7 +11,10 @@ import { COLORS, PALETTE } from './colors';
 import { isDark, THEME_EVENT } from './theme';
 
 export { COLORS, PALETTE };
-import type { EntityMap, EntityType, EventMapProps, EventsMap, PlacesMap, PresenceMap, SiteProps, SitesMap, StopFeature } from './types';
+import type {
+  EntityMap, EntityType, EventMapProps, EventsMap, Feature, LineStringGeometry, PlacesMap, PointGeometry, PresenceMap,
+  ProvenanceMapStep, ProvenanceSegmentProps, ProvenanceStopProps, SiteProps, SitesMap, StopFeature, StopProps,
+} from './types';
 
 setWorkerUrl(workerUrl);
 
@@ -153,7 +156,7 @@ function ensureArrow(map: MapLibre) {
 }
 
 /** Arrows along a route layer's lines, pointing in travel (date) order. */
-function addArrows(map: MapLibre, id: string, source: string, color: ExpressionSpecification | string) {
+function addArrows(map: MapLibre, id: string, source: string, color: ExpressionSpecification | string, opacity: ExpressionSpecification | number = 0.9) {
   ensureArrow(map);
   map.addLayer({
     id, type: 'symbol', source,
@@ -161,15 +164,16 @@ function addArrows(map: MapLibre, id: string, source: string, color: ExpressionS
       'symbol-placement': 'line', 'symbol-spacing': 140, 'icon-image': 'route-arrow', 'icon-size': 0.95,
       'icon-rotation-alignment': 'map', 'icon-allow-overlap': true, 'icon-ignore-placement': true,
     },
-    paint: { 'icon-color': color, 'icon-opacity': 0.9 },
+    paint: { 'icon-color': color, 'icon-opacity': opacity },
   });
 }
 
-/** Numbers the dated presence stops in date order (the route's order) as `stop` / `stops` properties. */
-function numberStops<T extends { properties: { layer: string; period: { from_year: number | null; from: string | null } | null } }>(stops: T[]) {
-  const dated = stops
-    .filter((f) => f.properties.layer === 'presence' && f.properties.period?.from_year != null)
-    .sort((a, b) => a.properties.period!.from_year! - b.properties.period!.from_year! || (a.properties.period!.from ?? '').localeCompare(b.properties.period!.from ?? ''));
+/**
+ * Numbers the dated presence stops as `stop` / `stops` properties, in the order the API sends them — the route's
+ * order (by range, an open start such as "until 1912" first), which a sort by `from_year` would get wrong.
+ */
+function numberStops<T extends { properties: { layer: string; period: { from_year: number | null; to_year: number | null } | null } }>(stops: T[]) {
+  const dated = stops.filter((f) => f.properties.layer === 'presence' && (f.properties.period?.from_year ?? f.properties.period?.to_year) != null);
   return stops.map((f) => {
     const i = dated.indexOf(f);
     return i < 0 ? f : { ...f, properties: { ...f.properties, stop: i + 1, stops: dated.length } };
@@ -198,7 +202,7 @@ const prop = <T>(v: unknown): T => (typeof v === 'string' && /^[[{]/.test(v) ? J
  * Presence stops are filled dots joined by the route. Associations (e.g. influenced by the culture
  * of Japan) are hollow rings in another colour and never part of the route: no travel is implied.
  */
-export function showEntity(map: MapLibre, fc: EntityMap) {
+export function showEntity(map: MapLibre, fc: EntityMap, alsoFit: [number, number][] = []) {
   const stops = numberStops(fc.features.filter((f): f is StopFeature => f.geometry.type === 'Point'));
   const route = fc.features.filter((f) => f.properties.layer === 'route');
   whenReady(map, () => {
@@ -244,10 +248,125 @@ export function showEntity(map: MapLibre, fc: EntityMap) {
   // otherwise zoom the route down to a few pixels. The legend offers zooming out to include them.
   function fitStops(includeAssociations: boolean) {
     const presence = stops.filter((f) => f.properties.layer === 'presence');
-    const shown = includeAssociations || !presence.length ? stops : presence;
-    fit(map, shown.map((f) => f.geometry.coordinates));
+    const shown = includeAssociations || (!presence.length && !alsoFit.length) ? stops : presence;
+    fit(map, [...shown.map((f) => f.geometry.coordinates), ...alsoFit]);
   }
   return { fitAll: () => fitStops(true), fitPresence: () => fitStops(false) };
+}
+
+// ---- an artwork's provenance: its holders in the chain's order ------------------------------------
+
+/** The artwork's own presence links the provenance features replace: `kept_in` dots, the creation place, the route. */
+const PROVENANCE_RELATIONSHIPS = new Set(['kept_in', 'created_in']);
+
+/** "6–9", "2, 3", "1, 4–7": step numbers of one place, runs of three or more shortened. */
+export function stepRuns(ns: number[]): string {
+  const out: string[] = [];
+  for (let i = 0; i < ns.length;) {
+    let j = i;
+    while (j + 1 < ns.length && ns[j + 1] === ns[j] + 1) j++;
+    out.push(j - i >= 2 ? `${ns[i]}–${ns[j]}` : ns.slice(i, j + 1).join(', '));
+    i = j + 1;
+  }
+  return out.join(', ');
+}
+
+/** "Estate of Hedwig Frieda Ullmann", linked where there is an entry (as in the provenance list). */
+export const provenanceHolder = (s: ProvenanceMapStep): Html =>
+  html`${s.role === 'estate' ? 'Estate of ' : ''}${s.holder ? link(s.holder.type, s.holder.slug, s.holder.name) : s.holder_label ?? 'Unknown owner'}`;
+
+const STOP_ROLE: Record<string, string> = { dealer: 'dealer', agent: 'agent', custodian: 'custodian' };
+
+/** One step in a place's popup: holder, role, how and when, how we know the place. */
+function stepRow(s: ProvenanceStopProps) {
+  const made = s.kind === 'creation';
+  const how = [made ? null : s.method && s.method !== 'unknown' ? s.method.replace('_', ' ') : null, s.period?.label].filter(Boolean).join(' · ');
+  return html`<li value="${s.step}">
+    ${provenanceHolder(s)}${s.role && STOP_ROLE[s.role] && s.kind !== 'loan' ? html` <span class="tag">${STOP_ROLE[s.role]}</span>` : ''}
+    ${made ? html` <span class="tag">${s.place_basis === 'artist_residence' ? 'probably made here' : 'made here'}</span>` : ''}
+    ${s.kind === 'loan' ? html` <span class="tag">on loan</span>` : ''}
+    ${s.certainty && s.certainty !== 'attested' ? html` <span class="tag">${s.certainty}</span>` : ''}
+    ${how ? html`<br><span class="muted">${how}</span>` : ''}
+    ${s.place_basis === 'holder_seat' ? html`<br><span class="muted">at the institution's seat</span>` : ''}
+    ${!made && s.place_basis === 'artist_residence' ? html`<br><span class="muted">probably: where the artist lived</span>` : ''}
+  </li>`;
+}
+
+/**
+ * The provenance on an artwork's map, in the chain's order (not by date — the order is the reliable thing):
+ * numbered stops, several steps at one place in one popup; lines solid where the handover is documented, dashed
+ * where it isn't, dotted and faded where an end is only implied; arrows in step order. Hollow: the place is only
+ * probable (where the artist lived); a ring: only the region or country is known. The artwork's other features
+ * (associations …) are drawn as on any entity map; its `kept_in` dots and route are replaced.
+ */
+export function showProvenance(map: MapLibre, fc: EntityMap) {
+  const prov = fc.provenance!;
+  const stops = prov.features.filter((f): f is Feature<PointGeometry, ProvenanceStopProps> => f.properties.layer === 'provenance_stop');
+  const segments = prov.features.filter((f): f is Feature<LineStringGeometry, ProvenanceSegmentProps> => f.properties.layer === 'provenance_segment')
+    .map((f, i) => ({ ...f, properties: { ...f.properties, i } }));
+  const rest = fc.features.filter((f) => f.properties.layer !== 'route'
+    && !(f.properties.layer === 'presence' && PROVENANCE_RELATIONSHIPS.has((f.properties as StopProps).relationship)));
+  const coords = stops.map((f) => f.geometry.coordinates);
+  const view = showEntity(map, { ...fc, features: rest }, coords);
+
+  // one marker per position, its steps in chain order
+  const places = new Map<string, Feature<PointGeometry, ProvenanceStopProps>[]>();
+  for (const f of stops) {
+    const key = f.geometry.coordinates.join(',');
+    places.set(key, [...(places.get(key) ?? []), f]);
+  }
+  const byStep = new Map([...stops.map((f) => [f.properties.step, f.properties] as const)]);
+
+  whenReady(map, () => {
+    setData(map, 'prov-segments', { type: 'FeatureCollection', features: segments as unknown as GeoJSON.Feature[] });
+    const line = (id: string, filter: ExpressionSpecification, paint: Record<string, unknown>) => map.addLayer({
+      id, type: 'line', source: 'prov-segments', filter,
+      layout: { 'line-join': 'round', 'line-cap': id === 'prov-implied' ? 'round' : 'butt' },
+      paint: { 'line-color': COLORS.provenance, 'line-width': 2.5, 'line-opacity': 0.85, ...paint },
+    });
+    line('prov-direct', ['all', ['!', ['get', 'implied']], ['get', 'direct']], {});
+    line('prov-gap', ['all', ['!', ['get', 'implied']], ['!', ['get', 'direct']]], { 'line-dasharray': [3, 2] });
+    line('prov-implied', ['get', 'implied'], { 'line-dasharray': [0.1, 2], 'line-opacity': 0.45, 'line-width': 3 });
+    addArrows(map, 'prov-arrows', 'prov-segments', COLORS.provenance, ['case', ['get', 'implied'], 0.4, 0.9]);
+    // thin lines are hard to hit: a wide invisible copy takes the clicks
+    map.addLayer({ id: 'prov-hit', type: 'line', source: 'prov-segments', paint: { 'line-width': 14, 'line-opacity': 0 } });
+    map.on('mouseenter', 'prov-hit', () => (map.getCanvas().style.cursor = 'pointer'));
+    map.on('mouseleave', 'prov-hit', () => (map.getCanvas().style.cursor = ''));
+    map.on('click', 'prov-hit', (e) => {
+      if ((e.originalEvent.target as Element | null)?.closest('.maplibregl-marker')) return; // a stop's own popup opens
+      const seg = segments[Number(e.features?.[0]?.properties.i)]?.properties;
+      if (!seg) return;
+      const end = (n: number) => byStep.get(n);
+      new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(html`<div class="popup-row">
+        <strong>${String(seg.from_step)} → ${String(seg.to_step)}</strong>
+        <span class="muted">${end(seg.from_step)?.place.name ?? ''} → ${end(seg.to_step)?.place.name ?? ''}</span><br>
+        ${seg.implied ? html`<span class="tag tag-implied">implied</span> not recorded: follows from the creation, the loan or a place not recorded`
+          : seg.direct ? 'handover documented' : html`<span class="tag">handover not documented</span> there may have been owners in between`}
+        ${seg.between.length ? html`<div class="popup-note">passes over: ${seg.between.map((s, i) => html`${i ? '; ' : ''}${String(s.step)} ${provenanceHolder(s)}`)} (place not recorded)</div>` : ''}
+      </div>`.value).addTo(map);
+    });
+  });
+
+  // numbered stops as HTML markers: numbers need no map font, and they are focusable
+  for (const group of places.values()) {
+    const steps = group.map((f) => f.properties);
+    const first = steps[0];
+    const label = stepRuns(steps.map((s) => s.step));
+    const el = document.createElement('div');
+    const hollow = steps.every((s) => s.place_basis === 'artist_residence');
+    const area = steps.every((s) => s.precision === 'region' || s.precision === 'country');
+    el.className = `prov-stop${hollow ? ' hollow' : ''}${area ? ' area' : ''}`;
+    el.textContent = label;
+    el.setAttribute('role', 'button');
+    el.setAttribute('aria-label', `${first.place.name}: ${steps.length > 1 ? 'steps' : 'step'} ${label} of ${first.steps}`);
+    const popup = new Popup({ maxWidth: '320px', offset: area ? 20 : 13 }).setHTML(html`<div class="popup-row">
+      <strong>${link('place', first.place.slug, first.place.name)}</strong>
+      <span class="muted">${steps.length > 1 ? 'steps' : 'step'} ${label} of ${String(first.steps)}</span>
+      <ol class="popup-list popup-steps">${steps.map(stepRow)}</ol>
+    </div>`.value);
+    new Marker({ element: el }).setLngLat(group[0].geometry.coordinates).setPopup(popup).addTo(map);
+  }
+  return view;
 }
 
 /** A single place (its own detail page). */

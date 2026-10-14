@@ -92,7 +92,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const mapEl = main.querySelector<HTMLElement>('#map')!;
       const legend = main.querySelector<HTMLElement>('#legend')!;
       // MapLibre loads only for pages with a map (terms and sources have none)
-      mapModule!.then(({ createMap, showEntity, showOwnSite, showPoint }) => {
+      mapModule!.then(({ createMap, provenanceHolder, showEntity, showOwnSite, showPoint, showProvenance }) => {
         if (!current()) return;
         const map = createMap(mapEl);
         cleanup = () => map.remove();
@@ -113,29 +113,44 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         mapData!
           .then((fc) => {
             if (!current()) return;
-            const stops = fc.features.filter((f) => f.geometry.type === 'Point');
+            // an artwork with a placed provenance step: the provenance replaces its route and kept_in dots
+            const prov = e.type === 'artwork' && fc.provenance?.features.some((f) => f.properties.layer === 'provenance_stop') ? fc.provenance : null;
+            const provStops = prov?.features.flatMap((f) => (f.properties.layer === 'provenance_stop' ? [f.properties] : [])) ?? [];
+            const provSegments = prov?.features.flatMap((f) => (f.properties.layer === 'provenance_segment' ? [f.properties] : [])) ?? [];
+            const stops = fc.features.filter((f) => f.geometry.type === 'Point'
+              && !(prov && f.properties.layer === 'presence' && ['kept_in', 'created_in'].includes(f.properties.relationship)));
             // an institution's own point, or where an immovable artwork stands
             const own = e.type === 'institution' ? e.location ?? null : e.type === 'artwork' ? e.area ?? e.location ?? null : null;
-            if (own) showOwnSite(map, own, v.title, !stops.length);
-            if (!stops.length && own) {
+            if (own) showOwnSite(map, own, v.title, !stops.length && !prov);
+            if (!stops.length && !prov && own) {
               render(legend, html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>`);
               return;
             }
-            if (!stops.length) {
+            if (!stops.length && !prov) {
               main.querySelector('.detail-side')?.remove();
               map.remove();
               cleanup = undefined;
               return;
             }
-            const view = showEntity(map, fc);
+            const view = prov ? showProvenance(map, fc) : showEntity(map, fc);
             const layers = new Set(stops.map((f) => f.properties.layer));
-            const both = layers.has('presence') && layers.has('association');
+            const both = (layers.has('presence') || !!prov) && layers.has('association');
+            const c = COLORS.provenance;
             render(legend, html`
+              ${prov ? html`
+                ${provStops.some((s) => s.place_basis !== 'artist_residence') ? html`<span><i class="dot" style="background:${c}"></i>holders, numbered in the provenance's order</span>` : ''}
+                ${provStops.some((s) => s.place_basis === 'artist_residence') ? html`<span><i class="ring ring-dashed" style="border-color:${c}"></i>probably made here (where the artist lived)</span>` : ''}
+                ${provStops.some((s) => s.precision === 'region' || s.precision === 'country') ? html`<span><i class="ring ring-area" style="border-color:${c}"></i>only the region or country known</span>` : ''}
+                ${provSegments.some((s) => !s.implied && s.direct) ? html`<span><i class="line" style="background:${c}"></i>handover documented</span>` : ''}
+                ${provSegments.some((s) => !s.implied && !s.direct) ? html`<span><i class="line line-dashed" style="border-color:${c}"></i>handover not documented</span>` : ''}
+                ${provSegments.some((s) => s.implied) ? html`<span><i class="line line-dotted" style="border-color:${c}"></i>implied</span>` : ''}` : ''}
               ${layers.has('presence') ? html`<span><i class="dot" style="background:${COLORS.presence}"></i>was there</span>` : ''}
-              ${fc.features.some((f) => f.properties.layer === 'route') ? html`<span><i class="line" style="background:${COLORS.route}"></i>route, in date order</span>` : ''}
+              ${!prov && fc.features.some((f) => f.properties.layer === 'route') ? html`<span><i class="line" style="background:${COLORS.route}"></i>route, in date order</span>` : ''}
               ${layers.has('association') ? html`<span><i class="ring" style="border-color:${COLORS.association}"></i>association (not travel)</span>` : ''}
               ${own ? html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>` : ''}
-              ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}`);
+              ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}
+              ${prov?.unplaced.length ? html`<p class="legend-note" id="unplaced">Not on the map (place not recorded):
+                ${prov.unplaced.map((s, i) => html`${i ? '; ' : ''}${String(s.step)} ${provenanceHolder(s)}${s.kind === 'creation' ? ', creation' : ''}${s.period ? `, ${s.period.label}` : ''}`)}</p>` : ''}`);
             legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {
               const btn = ev.currentTarget as HTMLButtonElement;
               const all = btn.dataset.fit === 'all';

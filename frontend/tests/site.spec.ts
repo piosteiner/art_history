@@ -156,6 +156,12 @@ test('links navigate without reloading; back returns', async ({ page }) => {
   await expect(page.locator('h1')).toHaveText('Artists');
 });
 
+test('artists A–Z by the API\'s sort_key ("Family, Given"), also without a sort_name', async ({ page }) => {
+  await page.goto('/artists');
+  const card = page.locator('.cards > li', { hasText: 'Willem de Kooning' }); // sort_key "Kooning, Willem"
+  await expect(card.locator('xpath=preceding-sibling::li[contains(@class,"cards-heading")][1]')).toHaveText('K');
+});
+
 test('privacy page from the footer; the site sets no cookies', async ({ page, context }) => {
   await page.goto('/artworks/the-great-wave-off-kanagawa');
   await expect(page.locator('.figure img')).toBeVisible();
@@ -189,6 +195,55 @@ test('start map: routes of the selection, a place lists what happened there', as
   await expect(popup).toContainText('Paris');
   await expect(popup.locator('.popup-events a', { hasText: 'Vincent van Gogh' })).toBeVisible();
   await expect(popup).toContainText('lived in');
+});
+
+test('artwork map: the provenance in chain order — numbered stops, segments with steps passed over, unplaced steps', async ({ page }) => {
+  await page.goto('/artworks/heiliger-sebastian');
+  // Frankfurt (2, 3), London (4), Zürich (6–9: Bührle, his estate, the foundation, the loan to the Kunsthaus)
+  const stops = page.locator('.prov-stop');
+  await expect(stops).toHaveText(['2, 3', '4', '6–9']);
+  const legend = page.locator('#legend');
+  await expect(legend).toContainText('numbered in the provenance\'s order');
+  await expect(legend).not.toContainText('route, in date order'); // replaced, not drawn twice
+  await expect(page.locator('#unplaced')).toContainText('1 Niklaus Weckmann, creation, early 16th century');
+  await expect(page.locator('#unplaced')).toContainText('5 Estate of Hedwig Frieda Ullmann');
+
+  await stops.filter({ hasText: '6–9' }).click();
+  const popup = page.locator('.maplibregl-popup');
+  await expect(popup).toContainText('steps 6–9 of 9');
+  await expect(popup.locator('li')).toHaveCount(4);
+  await expect(popup.locator('li').nth(1)).toContainText('Estate of Emil Georg Bührle');
+  await expect(popup.locator('li').nth(3)).toContainText('at the institution\'s seat');
+  await popup.locator('.maplibregl-popup-close-button').click();
+
+  // the line London → Zürich passes over the estate in Frankfurt, whose place isn't recorded
+  const pt = await page.evaluate(async () => {
+    type M = { project(c: [number, number]): { x: number; y: number }; getCanvas(): HTMLCanvasElement; loaded(): boolean };
+    const m = (window as unknown as { __maps: M[] }).__maps.at(-1)!;
+    const fc = await (await fetch('/v1/map/artworks/heiliger-sebastian')).json();
+    const seg = fc.provenance.features.find((f: { properties: { from_step?: number } }) => f.properties.from_step === 4);
+    const [a, b] = [seg.geometry.coordinates[0], seg.geometry.coordinates.at(-1)].map((c: [number, number]) => m.project(c));
+    const r = m.getCanvas().getBoundingClientRect();
+    return { x: r.left + (a.x + b.x) / 2, y: r.top + (a.y + b.y) / 2 };
+  });
+  await page.waitForFunction(() => !!(window as unknown as { __maps: { getLayer(id: string): unknown }[] }).__maps.at(-1)!.getLayer('prov-hit'));
+  await page.mouse.click(pt.x, pt.y);
+  await expect(popup).toContainText('4 → 6');
+  await expect(popup).toContainText('passes over: 5 Estate of Hedwig Frieda Ullmann (place not recorded)');
+});
+
+test('stop popups count a stop with an open start ("until 1912") in route order', async ({ page }) => {
+  await page.goto('/?artworks=heiliger-sebastian');
+  await page.waitForFunction(() => {
+    const m = (window as unknown as { __maps?: { getSource(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
+    return !!m?.getSource('sel-stops') && m.querySourceFeatures('sel-stops').length > 0;
+  });
+  const numbers = await page.evaluate(() => (window as unknown as { __maps: { querySourceFeatures(id: string): { properties: { stop?: number; period?: string | { label: string } } }[] }[] }).__maps.at(-1)!
+    .querySourceFeatures('sel-stops').map((f) => {
+      const period = f.properties.period;
+      return [f.properties.stop, (typeof period === 'string' ? JSON.parse(period) : period)?.label]; // flattened to JSON or not
+    }));
+  expect(numbers).toContainEqual([1, 'until 1912']);
 });
 
 test('crossed paths: listed under the map, on detail pages, and "only these two"', async ({ page }) => {

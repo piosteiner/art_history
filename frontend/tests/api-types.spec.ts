@@ -64,6 +64,7 @@ test('types.ts matches the API: maps, graph, search, previews, vocabulary', asyn
   const found: string[] = [];
   const check = async (path: string, type: string) => found.push(...problems(validator(type), await json(request, path), path));
   await check('/map/artists/vincent-van-gogh', 'EntityMap');
+  await check('/map/artworks/heiliger-sebastian', 'EntityMap'); // with provenance
   await check('/map/presence?from=1880&to=1890', 'PresenceMap');
   await check('/map/places', 'PlacesMap');
   await check('/map/events', 'EventsMap');

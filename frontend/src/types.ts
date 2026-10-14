@@ -168,6 +168,13 @@ interface Titled {
   search_text?: string | null;
 }
 
+/** Artists and people (migration 066): name parts, each null when not set; `sort_key` is "Family, Given" or `sort_name`. */
+interface PersonName {
+  given_name?: string | null;
+  family_name?: string | null;
+  sort_name?: string | null;
+}
+
 interface Located {
   country: Country | null;
   polities: PolityLink[];
@@ -177,8 +184,8 @@ export interface BirthPlace { slug: string; name: string; country_code: string |
 
 // ---- list items ----------------------------------------------------------------------------------
 
-export interface ArtistItem extends Located, Named {
-  slug: string; name: string; sort_name: string | null; birth: DateRange | null; death: DateRange | null; image_url: string | null;
+export interface ArtistItem extends Located, Named, PersonName {
+  slug: string; name: string; birth: DateRange | null; death: DateRange | null; image_url: string | null;
   birth_place: BirthPlace | null;
 }
 /** One of an artwork's makers; the main creator comes first. `role`: "landscape", "figures" … */
@@ -200,7 +207,7 @@ export interface InstitutionItem extends Located, Named {
 /** Derived from relationships: commissioned / patron of, owner of an artwork, depicted in an artwork. */
 export type PersonRole = 'patron' | 'owner' | 'depicted';
 /** Everyone relevant who isn't an artist, also groups (family, dynasty, religious order …). */
-export interface PersonItem extends Located, Named {
+export interface PersonItem extends Located, Named, PersonName {
   slug: string; name: string; kind: string | null; occupations: string[];
   birth: DateRange | null; death: DateRange | null; active: DateRange | null; // active: groups, or when the lifespan is unknown
   roles: PersonRole[]; birth_place: BirthPlace | null;
@@ -227,10 +234,10 @@ export interface EventItem extends Located, Named {
 export interface ArtworkSummary { slug: string; title: string; created: DateRange | null; kind?: string | null; creator?: Ref | null; co_creator?: boolean; role?: string | null }
 export type KindRef = Ref & { kind?: string | null; period?: DateRange | null };
 
-export interface Artist extends DetailBase, Located, Named {
+export interface Artist extends DetailBase, Located, Named, PersonName {
   type: 'artist';
   birth_place: BirthPlace | null;
-  name: string; sort_name: string | null; alt_names: string[];
+  name: string; alt_names: string[];
   birth: DateRange | null; death: DateRange | null;
   biography_html: string | null;
   images: Image[]; image_url: string | null;
@@ -326,7 +333,7 @@ export interface Institution extends DetailBase, Located, Named {
   artworks: ArtworkSummary[];
 }
 
-export interface Person extends DetailBase, Located, Named {
+export interface Person extends DetailBase, Located, Named, PersonName {
   type: 'person';
   birth_place: BirthPlace | null;
   name: string; alt_names: string[]; kind: string | null; occupations: string[];
@@ -411,6 +418,42 @@ export interface EntityMap {
   type: 'FeatureCollection';
   entity: { type: EntityType; slug: string; name: string };
   features: (StopFeature | RouteFeature)[];
+  /** Artworks: the provenance in the chain's order (not by date), every step on the map or in `unplaced`. */
+  provenance?: ProvenanceMap;
+}
+
+/** One step of the provenance as the map has it: number `step` of `steps` in the chain (creation, steps, loan). */
+export interface ProvenanceMapStep {
+  kind: 'creation' | 'step' | 'loan';
+  step: number; steps: number;
+  holder: { type: EntityType; slug: string; name: string } | null; holder_label: string | null;
+  role: string | null; method: string | null; certainty: string | null;
+  period: DateRange | null; end_basis: string | null; provenance_id: number | null;
+}
+/**
+ * A step with a place. `place_basis`: `recorded` (the step's own) · `holder_seat` (the institution's seat) ·
+ * `created_in` (the recorded place of creation) · `artist_residence` (where the artist lived then: "probably").
+ */
+export interface ProvenanceStopProps extends ProvenanceMapStep {
+  layer: 'provenance_stop';
+  place: Ref;
+  precision: 'site' | 'settlement' | 'region' | 'country' | null;
+  place_basis: 'recorded' | 'holder_seat' | 'created_in' | 'artist_residence';
+}
+/** From one placed step to the next; `between`: the steps passed over that have no place. */
+export interface ProvenanceSegmentProps {
+  layer: 'provenance_segment';
+  from_step: number; to_step: number;
+  /** Every handover on it documented as direct. */
+  direct: boolean;
+  /** An end not recorded: the creation, the loan, or a place not recorded. */
+  implied: boolean;
+  between: ProvenanceMapStep[];
+}
+export interface ProvenanceMap {
+  type: 'FeatureCollection';
+  features: (Feature<PointGeometry, ProvenanceStopProps> | Feature<LineStringGeometry, ProvenanceSegmentProps>)[];
+  unplaced: ProvenanceMapStep[];
 }
 
 export interface PresenceProps {

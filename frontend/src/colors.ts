@@ -8,6 +8,7 @@ export const COLORS = {
   place: '#2f6f73',
   empty: '#9aa3a8',
   event: '#d4237a', // events: fires, trials, auctions, exhibitions
+  provenance: '#a0702a', // an artwork's holders on its map (--c-provenance)
 };
 
 /** Distinguishable colours for chosen entities (map routes and their timeline bars). */

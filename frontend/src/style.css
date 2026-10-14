@@ -108,6 +108,24 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 .ring { width: 12px; height: 12px; border-radius: 50%; display: inline-block; border: 2.5px solid; }
 .line { width: 18px; height: 3px; display: inline-block; border-radius: 2px; }
+.line-dashed, .line-dotted { height: 0; border-radius: 0; border-top: 3px dashed; }
+.line-dotted { border-top-style: dotted; opacity: .55; }
+.ring-dashed { border-style: dashed; }
+.ring-area { width: 16px; height: 16px; background: color-mix(in srgb, var(--c-provenance) 25%, transparent); }
+.legend-note { flex-basis: 100%; margin: .2rem 0 0; }
+
+/* an artwork's provenance on its map: numbered stops (HTML markers), in the chain's order */
+.prov-stop {
+  min-width: 20px; height: 20px; padding: 0 5px; box-sizing: border-box; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center; white-space: nowrap;
+  font: 600 11px/1 var(--sans); color: #fff; background: var(--c-provenance);
+  border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .35); cursor: pointer;
+}
+.prov-stop.hollow { background: var(--surface); color: var(--c-provenance); border: 2px dashed var(--c-provenance); } /* probably */
+.prov-stop.area { min-width: 34px; height: 34px; border-radius: 17px; color: var(--text); border: 3px solid var(--c-provenance);
+  background: color-mix(in srgb, var(--c-provenance) 25%, transparent); box-shadow: none; } /* only the region or country */
+.prov-stop:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+.popup-steps li { margin: .25rem 0; }
 
 .popup-row + .popup-row { margin-top: .5rem; padding-top: .5rem; border-top: 1px solid var(--line); }
 .popup-list { margin: .3rem 0 0; padding-left: 1.1rem; }
