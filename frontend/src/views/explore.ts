@@ -284,13 +284,22 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, artistsOf))
       .map((f) => ({ ...f.properties, point: f.geometry.coordinates }));
     const where = new Map(places.features.map((f) => [f.properties.slug, f.geometry.coordinates] as const));
-    useRoutes(showPlaces(map, places, rows, (slug) => where.get(slug)));
+    // artworks: their provenance in its order instead of a route by date, as on their own page (one request each, cached)
+    const artworks = [...new Set(rows.filter((r) => r.entity.type === 'artwork').map((r) => r.entity.slug))];
+    const maps = await Promise.all(artworks.map((slug) => getEntityMap('artworks', slug).catch(() => null)));
+    if (stale()) return;
+    const provenances = new Map(maps.flatMap((fc) => {
+      const prov = fc && placedProvenance(fc);
+      return prov ? [[`artwork/${fc.entity.slug}`, prov] as const] : [];
+    }));
+    useRoutes(showPlaces(map, places, rows, (slug) => where.get(slug), provenances));
     crossings(rows, (slug) => where.get(slug));
     pinned = null;
     redrawLegend = () => render(legend, html`${routeLegend()}
       <span class="legend-key"><i class="dot" style="background:${COLORS.place}"></i> someone or something of the selection was there ·
         <i class="dot" style="background:${COLORS.association}"></i> associations only ·
-        <i class="ring" style="border-color:${COLORS.place}"></i> country or region · lines = routes in date order</span>`);
+        <i class="ring" style="border-color:${COLORS.place}"></i> country or region · lines = routes in date order${provenances.size
+          ? '; artworks: their provenance in its order (dashed: handover not documented, dotted: implied)' : ''}</span>`);
     redrawLegend();
     const entries = new Set(rows.map((r) => `${r.entity.type}/${r.entity.slug}`)).size;
     status.textContent = rows.length

@@ -276,6 +276,9 @@ export function stepRuns(ns: number[]): string {
 export const provenanceHolder = (s: ProvenanceMapStep): Html =>
   html`${s.role === 'estate' ? 'Estate of ' : ''}${s.holder ? link(s.holder.type, s.holder.slug, s.holder.name) : s.holder_label ?? 'Unknown owner'}`;
 
+/** The same as plain text: "Estate of Hedwig Frieda Ullmann". */
+const holderText = (s: ProvenanceMapStep) => `${s.role === 'estate' ? 'Estate of ' : ''}${s.holder?.name ?? s.holder_label ?? 'Unknown owner'}`;
+
 const STOP_ROLE: Record<string, string> = { dealer: 'dealer', agent: 'agent', custodian: 'custodian' };
 
 /** One step in a place's popup: holder, role, how and when, how we know the place. */
@@ -439,7 +442,7 @@ export function showPoint(map: MapLibre, coords: [number, number], name: string)
 
 // The explore map shows one of three overlays at a time; switching removes the others' layers.
 const PLACE_LAYERS = ['places-areas', 'places-circles'];
-const OVERVIEW_LAYERS = ['ov-routes', 'ov-arrows', 'ov-route-hover'];
+const OVERVIEW_LAYERS = ['ov-routes', 'ov-routes-gap', 'ov-routes-implied', 'ov-arrows', 'ov-route-hover'];
 const SELECTION_LAYERS = ['sel-route', 'sel-arrows', 'sel-association', 'sel-presence', ...provenanceLayers('sel-prov')];
 const OVERLAY_LAYERS = ['enc-halo', ...OVERVIEW_LAYERS, ...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
 const clearOverlays = (map: MapLibre) => {
@@ -479,7 +482,10 @@ function placeRows(rows: PresenceRow[], colors?: Map<string, string>, venueInHea
  * presence stops (the same stops as its own map, from /v1/map/presence). Click a place: what happened there.
  * Hover a route: it is highlighted and named; click it: its stops in date order.
  */
-export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined): RouteInfo[] {
+export function showPlaces(
+  map: MapLibre, places: PlacesMap, presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined,
+  provenances: Map<string, ProvenanceMap> = new Map(),
+): RouteInfo[] {
   const atPlace = new Map<string, PresenceRow[]>();
   for (const r of presence) atPlace.set(r.place.slug, [...(atPlace.get(r.place.slug) ?? []), r]);
   const fc: GeoJSON.FeatureCollection = {
@@ -489,7 +495,7 @@ export function showPlaces(map: MapLibre, places: PlacesMap, presence: PresenceR
       return { ...f, properties: { ...f.properties, count: rows.length, rows: JSON.stringify(rows) } } as unknown as GeoJSON.Feature;
     }),
   };
-  const routes = buildRoutes(presence, coords);
+  const routes = buildRoutes(presence, coords, provenances);
   const info = routeInfo(map, routes);
 
   whenReady(map, () => {
@@ -554,22 +560,44 @@ const TYPE_ORDER: Partial<Record<EntityType, number>> = { artist: 0, person: 1, 
  * One line per entry through its dated stops in date order (repeated stays at the same place merged). Each route gets
  * its own colour, in a stable order (artists, people, artworks; by name), so the same selection always looks the same.
  */
-function buildRoutes(presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined): GeoJSON.Feature[] {
+/**
+ * One route per entry through its dated stops in date order; an artwork in `provenances` ("artwork/slug") gets its
+ * provenance instead, as on its own page: one feature per segment, in the chain's order, `style` direct · gap · implied.
+ */
+function buildRoutes(
+  presence: PresenceRow[], coords: (slug: string) => [number, number] | undefined, provenances: Map<string, ProvenanceMap> = new Map(),
+): GeoJSON.Feature[] {
   const perEntity = new Map<string, PresenceRow[]>();
   for (const r of presence) perEntity.set(rowKey(r), [...(perEntity.get(rowKey(r)) ?? []), r]);
   const routes: GeoJSON.Feature[] = [];
   const ordered = [...perEntity].sort(([, a], [, b]) =>
     (TYPE_ORDER[a[0].entity.type] ?? 9) - (TYPE_ORDER[b[0].entity.type] ?? 9) || a[0].entity.name.localeCompare(b[0].entity.name));
+  let n = 0; // colours per entry, not per feature
   for (const [key, rows] of ordered) {
+    const e = rows[0].entity;
+    const prov = provenances.get(key);
+    if (prov) {
+      const segments = prov.features.filter((f): f is Feature<LineStringGeometry, ProvenanceSegmentProps> => f.properties.layer === 'provenance_segment');
+      if (!segments.length) continue;
+      const steps = provenanceStops(prov).map((f) => f.properties);
+      const props = {
+        key, name: e.name, type: e.type, slug: e.slug, color: PALETTE[n++ % PALETTE.length], provenance: true,
+        stops: JSON.stringify(steps.map((st) => ({ step: st.step, place: st.place.name, slug: st.place.slug, label: holderText(st), period: st.period?.label ?? '' }))),
+      };
+      for (const f of segments) {
+        const style = f.properties.implied ? 'implied' : f.properties.direct ? 'direct' : 'gap';
+        routes.push({ type: 'Feature', geometry: f.geometry, properties: { ...props, style } });
+      }
+      continue;
+    }
     const stops = rows.filter((r) => r.period?.from_year != null).sort(byDate)
       .filter((r, i, all) => i === 0 || whereKey(r) !== whereKey(all[i - 1]));
     const line = stops.map((r) => r.point ?? coords(r.place.slug)).filter((c): c is [number, number] => !!c);
     if (line.length < 2) continue;
-    const e = rows[0].entity;
     routes.push({
       type: 'Feature', geometry: { type: 'LineString', coordinates: line },
       properties: {
-        key, name: e.name, type: e.type, slug: e.slug, color: PALETTE[routes.length % PALETTE.length],
+        key, name: e.name, type: e.type, slug: e.slug, color: PALETTE[n++ % PALETTE.length], style: 'route',
         stops: JSON.stringify(stops.map((st) => ({ place: st.institution?.name ?? st.artwork?.name ?? st.place.name, slug: st.place.slug, label: st.label, period: st.period?.label ?? '' }))),
       },
     });
@@ -578,7 +606,8 @@ function buildRoutes(presence: PresenceRow[], coords: (slug: string) => [number,
 }
 
 function routeInfo(map: MapLibre, routes: GeoJSON.Feature[]): RouteInfo[] {
-  const info = routes.map((r) => r.properties as RouteInfo);
+  const seen = new Set<string>();
+  const info = routes.map((r) => r.properties as RouteInfo).filter((i) => !seen.has(i.key) && seen.add(i.key));
   routeColorsOf.set(map, new Map(info.map((i) => [i.key, i.color])));
   return info;
 }
@@ -594,9 +623,20 @@ function addRouteLayers(map: MapLibre, routes: GeoJSON.Feature[]) {
   map.addLayer({
     id: 'ov-routes', type: 'line', source: 'ov-routes',
     layout: { 'line-join': 'round', 'line-cap': 'round' },
-    paint: { 'line-color': ['get', 'color'], 'line-width': 2.6, 'line-opacity': 0.8 }, // own colour per route: strong enough to follow
+    // own colour per route: strong enough to follow. Provenance stretches not documented as direct, or implied, are
+    // drawn dashed / dotted by the next layers; here they stay invisible but take the hover and the clicks
+    paint: { 'line-color': ['get', 'color'], 'line-width': 2.6, 'line-opacity': ['case', ['in', ['get', 'style'], ['literal', ['gap', 'implied']]], 0, 0.8] },
   });
-  addArrows(map, 'ov-arrows', 'ov-routes', ['get', 'color']);
+  map.addLayer({
+    id: 'ov-routes-gap', type: 'line', source: 'ov-routes', filter: ['==', ['get', 'style'], 'gap'],
+    paint: { 'line-color': ['get', 'color'], 'line-width': 2.6, 'line-opacity': 0.8, 'line-dasharray': [3, 2] },
+  });
+  map.addLayer({
+    id: 'ov-routes-implied', type: 'line', source: 'ov-routes', filter: ['==', ['get', 'style'], 'implied'],
+    layout: { 'line-cap': 'round' },
+    paint: { 'line-color': ['get', 'color'], 'line-width': 3, 'line-opacity': 0.45, 'line-dasharray': [0.1, 2] },
+  });
+  addArrows(map, 'ov-arrows', 'ov-routes', ['get', 'color'], ['case', ['==', ['get', 'style'], 'implied'], 0.4, 0.9]);
   map.addLayer({
     id: 'ov-route-hover', type: 'line', source: 'ov-routes', filter: ['==', ['get', 'key'], ''],
     layout: { 'line-join': 'round', 'line-cap': 'round' },
@@ -610,9 +650,11 @@ function bindRoutes(map: MapLibre) {
     const seenRoutes = new Set<string>();
     return html`${(features ?? []).filter((f) => !seenRoutes.has(f.properties.key) && seenRoutes.add(f.properties.key)).slice(0, 4).map((f) => {
       const p = f.properties;
-      const stops = prop<{ place: string; slug: string; label: string; period: string }[]>(p.stops);
-      return html`<div class="popup-row"><strong><a href="${href(p.type, p.slug)}">${p.name}</a></strong> <span class="muted">${stops.length} stops</span>
-        <ol class="popup-list">${stops.map((st) => html`<li><a href="${href('place', st.slug)}">${st.place}</a> <span class="muted">${st.label}${st.period ? ` · ${st.period}` : ''}</span></li>`)}</ol></div>`;
+      const stops = prop<{ step?: number; place: string; slug: string; label: string; period: string }[]>(p.stops);
+      const prov = p.provenance === true || p.provenance === 'true';
+      return html`<div class="popup-row"><strong><a href="${href(p.type, p.slug)}">${p.name}</a></strong>
+        <span class="muted">${prov ? 'provenance, in its order' : `${stops.length} stops`}</span>
+        <ol class="popup-list">${stops.map((st) => html`<li${st.step ? html` value="${st.step}"` : ''}><a href="${href('place', st.slug)}">${st.place}</a> <span class="muted">${st.label}${st.period ? ` · ${st.period}` : ''}</span></li>`)}</ol></div>`;
     })}`;
   }, ROUTE_BLOCKERS);
   const tip = new Popup({ closeButton: false, closeOnClick: false, className: 'hover-tip', offset: 10 });

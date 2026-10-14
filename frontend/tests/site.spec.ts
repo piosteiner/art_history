@@ -265,6 +265,23 @@ test('start map: a chosen artwork shows its provenance as on its own page, in it
   await expect(stops).toHaveCount(0);
 });
 
+test('start map overview: artworks follow their provenance (chain order, dashed where undocumented), not a route by date', async ({ page }) => {
+  await page.goto('/?artists=none&movements=none&polities=none&people=none');
+  type F = { properties: { slug: string; style: string; provenance?: boolean | string } };
+  await page.waitForFunction(() => {
+    const m = (window as unknown as { __maps?: { getLayer(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
+    return !!m?.getLayer('ov-routes-gap') && m.querySourceFeatures('ov-routes').length > 0;
+  });
+  const features = await page.evaluate(() => (window as unknown as { __maps: { querySourceFeatures(id: string): F[] }[] }).__maps.at(-1)!
+    .querySourceFeatures('ov-routes').map((f) => ({ slug: f.properties.slug, style: f.properties.style })));
+  const sebastian = features.filter((f) => f.slug === 'heiliger-sebastian');
+  expect(sebastian.length).toBeGreaterThan(0);
+  expect(sebastian.every((f) => f.style !== 'route')).toBe(true); // segments of the provenance
+  expect(features.some((f) => f.style === 'gap')).toBe(true); // somewhere a handover isn't documented
+  await expect(page.locator('#legend')).toContainText('artworks: their provenance in its order');
+  await expect(page.locator('#legend .route-key', { hasText: 'Heiliger Sebastian' })).toHaveCount(1); // one entry, not one per segment
+});
+
 test('stop popups count a stop with an open start ("until 1912") in route order', async ({ page }) => {
   // without the provenance the artwork's kept_in stops and route are shown, numbered (live data has open starts only there)
   await page.route(/\/v1\/map\/artworks\/heiliger-sebastian$/, async (route) => {
