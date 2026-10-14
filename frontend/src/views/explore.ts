@@ -3,9 +3,11 @@
 // - no time window, entries chosen             → their routes and places, one colour per entry
 // - a time window on the timeline              → who/what of the selection was physically where (artworks: their provenance in the window)
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
-import { getEntityMap, getEventsMap, getPlacesMap, getPresence, getSites, listAll, PLURAL } from '../api';
+// The home page (/) shows curated views (/v1/featured, edited in the admin panel): the first one, others at
+// /?featured=<slug>, everything at /?all. A view is a saved URL query; changing the picks or the window makes it your own.
+import { getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getSites, listAll, PLURAL } from '../api';
 import { entries } from '../catalog';
-import { creatorsOf, href, html, render } from '../html';
+import { creatorsOf, href, html, render, trusted } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
 import {
@@ -17,7 +19,7 @@ import { replaceQuery } from '../router';
 import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
 import { reducedMotion } from '../theme';
 import { renderTimeline, type TimelineRow } from '../timeline';
-import type { EntityType, EventsMap, Plural, PresenceMap, ProvenanceMap, StopProps } from '../types';
+import type { EntityType, EventsMap, FeaturedView, Plural, PresenceMap, ProvenanceMap, StopProps } from '../types';
 import { showError } from './common';
 
 const STORAGE_KEY = 'arthistory:explore';
@@ -40,17 +42,29 @@ function remembered(): URLSearchParams | null {
   }
 }
 
+/** The curated views around the one shown; `home`: shown at a plain / (the first view). */
+interface Curated { views: FeaturedView[]; view: FeaturedView; home: boolean }
+
 export function explore(main: HTMLElement, params: URLSearchParams) {
-  // a plain / brings back the last view
-  let restored = false;
-  if (![...params.keys()].length) {
-    const last = remembered();
-    if (last && [...last.keys()].length) {
-      params = last;
-      restored = true;
-      replaceQuery(params);
-    }
-  }
+  const slug = params.get('featured');
+  if ([...params.keys()].length && slug === null) return start(main, params, null);
+  // the home page and /?featured=…: the curated views first; without any (or without the API) everything, as before
+  let gone = false;
+  let cleanup: (() => void) | undefined;
+  render(main, html`<section class="explore"><p class="muted small">Loading…</p></section>`);
+  getFeatured().catch(() => [] as FeaturedView[]).then((views) => {
+    if (gone) return;
+    const view = views.find((v) => v.slug === slug) ?? views[0];
+    cleanup = view ? start(main, new URLSearchParams(view.query), { views, view, home: slug === null }) : start(main, new URLSearchParams(), null, slug === null);
+  });
+  return () => {
+    gone = true;
+    cleanup?.();
+  };
+}
+
+/** `home`: shown at a plain / — offers the reader's last own view. */
+function start(main: HTMLElement, params: URLSearchParams, curated: Curated | null, home = curated?.home ?? false) {
   let sel: Selection = parseSelection(params);
   let win: Window = readWindow(params);
 
@@ -59,6 +73,8 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       <h1>Art history on a map and a timeline</h1>
       <p>Where artists were born, lived and travelled, where their works were made and where they are now. Choose what to show, then pick a time window on the timeline to see who was where.</p>
     </div>
+    <nav class="featured" id="featured" aria-label="Curated views" hidden></nav>
+    <div class="featured-intro" id="featured-intro" hidden></div>
     <p class="restored" id="restored" hidden></p>
     <div id="pickers" class="pickers-wrap"><p class="muted small">Loading entries…</p></div>
     <div class="view-chips" id="chips" hidden></div>
@@ -113,17 +129,30 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     drawTimeline();
   });
 
-  // a remembered view (time window, picks) must not look like the default start page
+  // ---- curated views: a switcher (links: each view has its address), the shown one's intro; "Explore everything" ----
+  const featuredEl = main.querySelector<HTMLElement>('#featured')!;
+  const featuredIntro = main.querySelector<HTMLElement>('#featured-intro')!;
+  let own = !curated; // the picks or the window were changed: the view is the reader's own now
+  function drawFeatured() {
+    if (!curated) return;
+    featuredEl.hidden = false;
+    const at = (v: FeaturedView) => (v === curated.views[0] ? '/' : `/?featured=${encodeURIComponent(v.slug)}`);
+    render(featuredEl, html`${curated.views.map((v) => html`<a class="chip${!own && v === curated.view ? ' on' : ''}" href="${at(v)}"${!own && v === curated.view ? html` aria-current="page"` : ''}>${v.title}</a>`)}
+      <a class="featured-all" href="/?all">Explore everything →</a>`);
+    featuredIntro.hidden = own;
+    if (!own) render(featuredIntro, html`<h2>${curated.view.title}</h2>${curated.view.intro_html ? html`<div class="prose">${trusted(curated.view.intro_html)}</div>` : ''}`);
+  }
+  drawFeatured();
+
+  // the reader's last own view, one click away from the home page (no longer restored by itself)
   const restoredEl = main.querySelector<HTMLElement>('#restored')!;
-  if (restored) {
-    const w = readWindow(params);
-    const parts = [w ? `time window ${w.from === w.to ? w.from : `${w.from}–${w.to}`}` : '', [...params.keys()].some((k) => k !== 'from' && k !== 'to') ? 'your selection' : '']
+  const last = home ? remembered() : null;
+  if (last && [...last.keys()].some((k) => k !== 'all')) {
+    const w = readWindow(last);
+    const parts = [w ? `time window ${w.from === w.to ? w.from : `${w.from}–${w.to}`}` : '', [...last.keys()].some((k) => !['from', 'to', 'all'].includes(k)) ? 'your selection' : '']
       .filter(Boolean).join(' and ');
-    render(restoredEl, html`Showing your last view (${parts}). <a href="/" data-fresh>Start fresh</a>`);
+    render(restoredEl, html`<a href="/?${last.toString()}">Continue where you left off</a>${parts ? ` (${parts})` : ''}`);
     restoredEl.hidden = false;
-    restoredEl.querySelector('[data-fresh]')!.addEventListener('click', () => {
-      try { localStorage.removeItem(STORAGE_KEY); } catch { /* no storage */ }
-    });
   }
 
   // ---- crossed paths: entries at the same place at the same time, listed under the map ----
@@ -240,12 +269,17 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
 
   function persist() {
     drawChips();
+    if (!own) {
+      own = true;
+      drawFeatured();
+    }
     const p = new URLSearchParams();
     writeSelection(sel, p);
     if (win) {
       p.set('from', String(win.from));
       p.set('to', String(win.to));
     }
+    if (![...p.keys()].length) p.set('all', ''); // a plain / is the home page
     replaceQuery(p);
     try {
       localStorage.setItem(STORAGE_KEY, p.toString());

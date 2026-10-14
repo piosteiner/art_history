@@ -1,6 +1,6 @@
 // The only module that talks to the backend. Everything else calls these functions, never fetch().
 import type {
-  DetailByPlural, EntryHint, EntityMap, EntityType, Graph, ItemByPlural, List, PlacesMap, Plural,
+  DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, ItemByPlural, List, PlacesMap, Plural,
   EventsMap, PresenceMap, RelationshipType, SearchHit, SitesMap,
 } from './types';
 
@@ -84,6 +84,9 @@ export const getPlacesMap = (from?: number, to?: number) => get<PlacesMap>('/map
 
 /** Every event with a position (area, else exact spot, else its place's marker), for the events layer. */
 export const getEventsMap = () => get<EventsMap>('/map/events');
+
+/** The curated start views, in order (published only); edited in the admin panel. */
+export const getFeatured = () => get<{ data: FeaturedView[] }>('/featured').then((r) => r.data);
 
 /** Institutions and immovable artworks with an exact location of their own (a museum layer). */
 export const getSites = () => get<SitesMap>('/map/sites');

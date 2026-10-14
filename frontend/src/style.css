@@ -606,3 +606,13 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .view-chips { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0 0 .6rem; }
 .chip { font: inherit; font-size: .85rem; padding: .2rem .65rem; border: 1px solid var(--line); border-radius: 999px; background: var(--picked-bg); color: var(--text); cursor: pointer; }
 .chip:hover { border-color: var(--muted); }
+
+/* curated views on the home page: a switcher (links), the shown view's intro */
+.featured { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem; margin: 0 0 .6rem; }
+.featured .chip { text-decoration: none; background: var(--surface); }
+.featured .chip.on { background: var(--picked-bg); border-color: var(--text); font-weight: 600; }
+.featured-all { margin-left: auto; font-size: .9rem; }
+.featured-intro { max-width: 46rem; margin: 0 0 .8rem; }
+.featured-intro h2 { margin: .2rem 0 .3rem; font-size: 1.2rem; }
+.featured-intro .prose p { margin: .2rem 0; }
+@media (max-width: 600px) { .featured-all { margin-left: 0; flex-basis: 100%; } }

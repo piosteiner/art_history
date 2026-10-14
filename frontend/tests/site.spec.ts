@@ -11,7 +11,7 @@ const noErrors = (page: Page) => {
 
 test('explore: map, pickers, timeline; a typed window filters the map', async ({ page }) => {
   const errors = noErrors(page);
-  await page.goto('/');
+  await page.goto('/?all');
   await expect(page.locator('.maplibregl-canvas')).toBeVisible();
   await expect(page.locator('details.pick')).toHaveCount(5);
   await expect(page.locator('.row-label').first()).toBeVisible();
@@ -37,7 +37,7 @@ test('timeline zooms and pans without changing the window', async ({ page }) => 
 });
 
 test('pickers: search explains matches, ticking every entry means "all", by chosen artists', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?all');
   const artworks = page.locator('details[data-group=artwork]');
   await artworks.locator('summary').click();
   await artworks.locator('.pick-search').fill('wood');
@@ -57,7 +57,7 @@ test('pickers: search explains matches, ticking every entry means "all", by chos
 });
 
 test('picker names: click ticks, Ctrl+click opens the entry in a new tab', async ({ page, context }) => {
-  await page.goto('/');
+  await page.goto('/?all');
   const artists = page.locator('details[data-group=artist]');
   await artists.locator('summary').click();
   const vg = artists.locator('.pick-item', { hasText: 'Vincent van Gogh' });
@@ -103,7 +103,7 @@ test('list page: same field search as the pickers, typos as similar names', asyn
 });
 
 test('header search finds fields and typos', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?all');
   const input = page.locator('.search-form input');
   await input.fill('zundert');
   await expect(page.locator('.search-results')).toContainText('Born in');
@@ -180,7 +180,7 @@ test('privacy page from the footer; the site sets no cookies', async ({ page, co
 });
 
 test('start map: routes of the selection, a place lists what happened there', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?all');
   await expect(page.locator('#map-status')).toContainText('Click a place to see what happened there');
   // the dev build exposes the map (window.__maps) so the test can click a known place
   await page.waitForFunction(() => {
@@ -318,7 +318,7 @@ test('stop popups count a stop with an open start ("until 1912") in route order'
 
 test('crossed paths: listed under the map, on detail pages, and "only these two"', async ({ page }) => {
   // fixed point in the curated content: Gauguin and Van Gogh both lived in Arles in late 1888
-  await page.goto('/');
+  await page.goto('/?all');
   const list = page.locator('#encounters');
   const arles = list.locator('.encounter', { hasText: 'Arles' }).filter({ hasText: 'Paul Gauguin' }).filter({ hasText: 'Vincent van Gogh' });
   await expect(arles).toContainText('1888');
@@ -351,22 +351,68 @@ test('people (formerly patrons): page, roles, old /patrons/ addresses redirect',
   await expect(page.locator('h1')).toHaveText('People');
 });
 
-test('a remembered time window: routes still drawn, the page says so, "Start fresh" resets', async ({ page }) => {
-  await page.goto('/privacy');
-  await page.evaluate(() => localStorage.setItem('arthistory:explore', 'from=1856&to=1907'));
+// ---- the home page: curated views (/v1/featured, mocked: the live content may not have any yet) ----
+const FEATURED = [
+  { slug: 'van-gogh', title: 'Van Gogh’s journey', intro_html: '<p>From Zundert to Auvers.</p>',
+    query: 'artists=vincent-van-gogh&artworks=none&movements=none&polities=none&people=none' },
+  { slug: 'sebastian', title: 'A provenance', intro_html: null,
+    query: 'artworks=heiliger-sebastian&movements=none&polities=none&people=none' },
+];
+const mockFeatured = (page: import('@playwright/test').Page, data: unknown[] | null) =>
+  page.route(/\/v1\/featured$/, (route) => (data ? route.fulfill({ json: { data } }) : route.fulfill({ status: 404, json: { error: 'not_found' } })));
+
+test('home page: the first curated view, a switcher; changing the window makes the view your own', async ({ page }) => {
+  await mockFeatured(page, FEATURED);
   await page.goto('/');
-  await expect(page.locator('#restored')).toContainText('time window 1856–1907');
-  await page.waitForFunction(() => {
-    const m = (window as unknown as { __maps?: { getSource(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
-    return !!m?.getSource('ov-routes') && m.querySourceFeatures('ov-routes').length > 0;
-  });
-  await page.locator('[data-fresh]').click();
-  await expect(page.locator('#restored')).toBeHidden();
+  const nav = page.locator('#featured');
+  await expect(nav.locator('[aria-current=page]')).toHaveText('Van Gogh’s journey');
+  await expect(page.locator('#featured-intro')).toContainText('From Zundert to Auvers.');
+  await expect(page.locator('#legend')).toContainText('Vincent van Gogh'); // the view's picks, not everything
+  expect(new URL(page.url()).search).toBe(''); // the home page keeps its address
+
+  await nav.getByRole('link', { name: 'A provenance' }).click();
+  await expect(page).toHaveURL(/\?featured=sebastian$/);
+  await expect(page.locator('.prov-stop')).toHaveText(['2, 3', '4', '6–9']);
+  await expect(page.locator('#featured-intro h2')).toHaveText('A provenance');
+
+  await page.fill('input[name=from]', '1950');
+  await page.fill('input[name=to]', '1960');
+  await page.press('input[name=to]', 'Enter');
+  await expect(page).toHaveURL(/artworks=heiliger-sebastian.*from=1950&to=1960/);
+  await expect(page.locator('#featured-intro')).toBeHidden();
+  await expect(nav.locator('[aria-current=page]')).toHaveCount(0);
+  await expect(nav.locator('a.chip')).toHaveCount(2); // the switcher stays
+
+  await nav.getByRole('link', { name: 'Explore everything →' }).click();
+  await expect(page).toHaveURL(/\/\?all$/);
   await expect(page.locator('#map-status')).toContainText('Click a place to see what happened there');
 });
 
-test('each displayed route has its own colour, named in the legend', async ({ page }) => {
+test('home page: the last own view is offered, not restored by itself', async ({ page }) => {
+  await mockFeatured(page, FEATURED);
+  await page.goto('/privacy');
+  await page.evaluate(() => localStorage.setItem('arthistory:explore', 'from=1856&to=1907'));
   await page.goto('/');
+  await expect(page.locator('#featured [aria-current=page]')).toHaveText('Van Gogh’s journey');
+  const cont = page.locator('#restored');
+  await expect(cont).toContainText('Continue where you left off (time window 1856–1907)');
+  await cont.getByRole('link').click();
+  await expect(page).toHaveURL(/from=1856&to=1907/);
+  await expect(page.locator('#chips .chip')).toHaveText(/Time window 1856–1907/);
+});
+
+test('home page without curated views (or without the API): everything, as before', async ({ page }) => {
+  await mockFeatured(page, null);
+  await page.goto('/');
+  await expect(page.locator('#map-status')).toContainText('Click a place to see what happened there');
+  await expect(page.locator('#featured')).toBeHidden();
+  await page.evaluate(() => localStorage.setItem('arthistory:explore', 'from=1856&to=1907'));
+  await page.reload();
+  await expect(page.locator('#restored')).toContainText('Continue where you left off'); // offered here too
+});
+
+test('each displayed route has its own colour, named in the legend', async ({ page }) => {
+  await page.goto('/?all');
   await expect(page.locator('#legend .route-key', { hasText: 'Vincent van Gogh' })).toBeVisible();
   await page.waitForFunction(() => {
     const m = (window as unknown as { __maps?: { querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
@@ -386,7 +432,7 @@ test('years typed while the map is still loading are kept (slow API)', async ({ 
     await new Promise((r) => setTimeout(r, 2500));
     await route.continue();
   });
-  await page.goto('/');
+  await page.goto('/?all');
   await page.fill('input[name=from]', '1830');
   await page.fill('input[name=to]', '1850');
   // the routes arrive and recolour the timeline: the typed years must survive
@@ -836,7 +882,7 @@ async function sampleVenues(page: Page) {
 
 test('same institution at the same time: "could have met there"; the museums layer has a switch', async ({ page }) => {
   await sampleVenues(page);
-  await page.goto('/');
+  await page.goto('/?all');
   const item = page.locator('#encounters .encounter').first();
   await expect(item).toContainText('Kunsthaus Zürich');
   await expect(item).toContainText('could have met there');
@@ -1045,7 +1091,7 @@ test('explore: an events layer that follows the time window, and events on the t
     { type: 'Feature', geometry: FIRE.area, properties: { type: 'event', slug: FIRE.slug, name: FIRE.name, kind: 'fire', period: FIRE_PERIOD, place: { slug: 'edo', name: 'Edo' }, precision: 'area' } },
     { type: 'Feature', geometry: { type: 'Point', coordinates: [6.63, 46.52] }, properties: { type: 'event', slug: TRIAL.slug, name: TRIAL.name, kind: 'trial', period: TRIAL.period, place: TRIAL.place, precision: 'place' } },
   ] } }));
-  await page.goto('/');
+  await page.goto('/?all');
   const toggle = page.locator('#events-toggle');
   await expect(toggle).toContainText('Events (2)');
   await expect(page.locator('#timeline')).toContainText('Bührle trial');
@@ -1058,7 +1104,7 @@ test('explore: an events layer that follows the time window, and events on the t
 });
 
 test('full screen map: legend and layer switches come along, the button leaves it again', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?all');
   await expect(page.locator('#map-status')).toContainText('places');
   const wrap = page.locator('.map-wrap');
   await page.click('.maplibregl-ctrl-fullscreen');
@@ -1125,7 +1171,7 @@ test('back to a list returns to where the reader was; a new page starts at the t
 test('switching to dark keeps the page: only the base map changes, the overlays stay', async ({ page }) => {
   const errors = noErrors(page);
   await page.emulateMedia({ colorScheme: 'light' });
-  await page.goto('/');
+  await page.goto('/?all');
   await expect(page.locator('#map-status')).toContainText('places');
   type W = { __maps: { getStyle(): { layers: { id: string; paint?: unknown }[] } | undefined; hasImage(id: string): boolean }[] };
   const arrows = () => page.evaluate(() => (window as unknown as W).__maps.at(-1)!.hasImage('route-arrow'));
@@ -1174,7 +1220,7 @@ test('accessibility: after a navigation the new heading has focus; skip link; th
 });
 
 test('timeline: changing the picks replaces its rows, zoom and half-typed years stay; none selected shows a note', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?all');
   await expect(page.locator('.row-label').first()).toBeVisible();
   await page.locator('.timeline-svg').focus();
   await page.keyboard.press('+');

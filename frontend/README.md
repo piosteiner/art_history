@@ -173,6 +173,19 @@ time window), as a yellow halo on the map, in place popups ("At the same time he
 place pages. Overlaps based on year-only or "c." dates are marked "possibly".
 
 ## Wishes for the backend
+- **Curated start views — requested 2026-10-14, the frontend is built and waits for it.** The home page (`/`) shows
+  curated views of the start map instead of every entry (`src/views/explore.ts`; until the endpoint exists it falls back
+  to everything). Please build:
+  - Migration `featured_views`: `id` identity, `slug` text unique (slug format), `title` text not null, `intro` text
+    (Markdown, `[[type/slug]]` links like other texts), `query` text not null — the start map's own URL query, e.g.
+    `artists=vincent-van-gogh&artworks=none&movements=none&polities=none&people=none&from=1886&to=1890` —, `sort_order`
+    integer, `published` boolean default false; the audit_log trigger like the other tables.
+  - `GET /v1/featured` → `{data: [{slug, title, intro_html, query}]}`, published only, ordered by `sort_order`, then title.
+  - Admin page (list with order, edit form): paste a URL from the public site and keep its query; a "Preview" link to
+    `https://arthistory.piogino.ch/?<query>`; a check that the query's keys are known (`artists`, `artworks`,
+    `movements`, `polities`, `people`, `from`, `to`) and its slugs exist — also as a quality check, since entries get
+    renamed (old slugs redirect, but a view should follow the rename like `[[links]]` do, 042). e2e test.
+  - The frontend: the first view at `/`, the others at `/?featured=<slug>`, everything at `/?all`.
 - **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise): `GET /v1/encounters?from=&to=&types=`
   = a self-join of presence links on `place_id` with `a.period && b.period` (daterange overlap, GiST index) and
   `a.period * b.period` as the overlap; today the browser does this over the full presence list.

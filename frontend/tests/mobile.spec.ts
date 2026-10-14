@@ -11,7 +11,7 @@ for (const path of ['/', '/artists/vincent-van-gogh', '/artworks', '/graph/artis
 }
 
 test('time window by typing on a phone', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?all');
   await page.fill('input[name=from]', '1830');
   await page.fill('input[name=to]', '1850');
   await page.locator('.timeline-form button[type=submit]').tap();
@@ -19,7 +19,7 @@ test('time window by typing on a phone', async ({ page }) => {
 });
 
 test('pickers fit on the screen', async ({ page }) => {
-  await page.goto('/');
+  await page.goto('/?all');
   await page.locator('details[data-group=artwork] summary').tap();
   const panel = await page.locator('details[data-group=artwork] .pick-panel').boundingBox();
   const width = page.viewportSize()!.width;

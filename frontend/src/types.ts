@@ -484,3 +484,15 @@ export interface GraphEdge {
   derived?: boolean; end_basis?: EndBasis | null;
 }
 export interface Graph { root: string; depth: number; types: string[]; truncated: boolean; nodes: GraphNode[]; edges: GraphEdge[] }
+
+/**
+ * A curated view of the start map (`/v1/featured`): a title, an intro and the start map's own URL query
+ * ("artists=vincent-van-gogh&movements=none&from=1886&to=1890") — what the map shows is exactly what that URL shows.
+ */
+export interface FeaturedView {
+  slug: string;
+  title: string;
+  /** Markdown rendered to sanitized HTML, like every `*_html`. */
+  intro_html: string | null;
+  query: string;
+}
