@@ -11,7 +11,7 @@ const { send, withTx, friendly, stepFromBody, notFoundPage, findEntity } = requi
 
 const router = express.Router();
 
-// Further numbers of an artwork (src/admin/numbers.js): added on its page, removed one by one.
+// Further numbers of an artwork (src/admin/numbers.js): added and removed on its edit page (?back=edit), one by one.
 router.post('/artworks/:slug/numbers', async (req, res) => {
   const e = await findEntity(BY_TYPE.artwork, req.params.slug);
   if (!e) return notFoundPage(req, res);
@@ -20,16 +20,16 @@ router.post('/artworks/:slug/numbers', async (req, res) => {
   } catch (err) {
     const text = numbers.errorText(err) || friendly(err);
     return send(req, res, { title: 'Add a number', status: 422, flash: { kind: 'error', text },
-      body: html`<p><a href="/artworks/${e.slug}#numbers">← ${e.name}</a></p>${numbers.section({ e, numbers: await numbers.list(adminPool, e.id), values: req.body })}` });
+      body: html`<p><a href="/artworks/${e.slug}/edit#numbers">← Edit ${e.name}</a></p>${numbers.section({ e, numbers: await numbers.list(adminPool, e.id), values: req.body, standalone: true })}` });
   }
-  res.redirect(303, `/artworks/${e.slug}?done=num-added#numbers`);
+  res.redirect(303, `/artworks/${e.slug}${req.query.back === 'edit' ? '/edit' : ''}?done=num-added#numbers`);
 });
 
 router.post('/numbers/:id/delete', async (req, res) => {
   const n = await numbers.byId(adminPool, req.params.id);
   if (!n) return notFoundPage(req, res);
   await withTx(req.user, (db) => numbers.remove(db, n.id));
-  res.redirect(303, `/artworks/${n.artwork_slug}?done=num-deleted#numbers`);
+  res.redirect(303, `/artworks/${n.artwork_slug}${req.query.back === 'edit' ? '/edit' : ''}?done=num-deleted#numbers`);
 });
 
 // Provenance steps: added on the artwork's page, edited / removed / reordered under /provenance/<id> (src/admin/provenance.js).

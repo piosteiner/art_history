@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Admin: further numbers entered on the edit page
+- **What:** an artwork's further numbers (048) are added and removed on its edit page, under the inventory number
+  (inputs inside the entry's form that belong to two small forms after it, `form="…"` — saved at once, not part of
+  the shared working copy); its page lists them with a link there. `numbers.section` / `listSection` / `formsAfter`,
+  `ctx.afterField` in `forms.js`; `?back=edit` redirects. E2E in `numbers.spec.js`.
+- **Why:** owner: numbers belong with the inventory number on the edit page.
+- **Revert:** `git revert` this commit, deploy.
+
 ### Artwork maps: the provenance in the chain's order, with how sure each part is
 - **What:** `/v1/map/artworks/:slug` has a new member `provenance` (FeatureCollection): a stop per step with a place
   (`place_basis` recorded / holder_seat / created_in / artist_residence, `precision`), segments between them (`direct`,

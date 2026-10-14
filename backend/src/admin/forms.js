@@ -72,7 +72,7 @@ const TYPE_HINTS = {
   'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location. With an exact location you can leave it empty or give just the country — the city is found (and created inside the country if needed) when you save.',
   'institution.address': 'Street address, as written locally, e.g. Heimplatz 1, 8001 Zürich.',
   'artwork.title_status': html`Empty when the title is in its original language. A translation (an English title for a Japanese print): <b>official</b> — the holding institution’s or a publisher’s (add the source with the marker on the page) · <b>common</b> — in use in the literature or on Wikidata · <b>own</b> — yours (shown in [square brackets]). The same for translations among the other names: the second menu next to “translation”.`,
-  'artwork.inventory_number': 'Only together with the institution above — the number belongs to its collection, as it publishes it (Kunsthaus: BU 0099). The owner’s number, former numbers and catalogue raisonné numbers: “Further numbers” on the artwork’s page.',
+  'artwork.inventory_number': 'Only together with the institution above — the number belongs to its collection, as it publishes it (Kunsthaus: BU 0099). The owner’s number, former numbers and catalogue raisonné numbers: “Further numbers” just below.',
   'artwork.on_loan': 'Yes: lent to (deposited at) the institution above — the owner stays someone else; record the owner (the lender) in the provenance. A permanent loan (Dauerleihgabe) is a loan too.',
   'artwork.on_loan_since': 'Since when it is there on loan, e.g. 2021.',
   'artwork.web_url': 'The work’s page at the museum or collection that holds it — or another good page about it (the artist’s, a catalogue). The site links it: the way to see the work when we have no free image.',
@@ -447,7 +447,8 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
       const sections = sectionsOf(t);
       return html`${sections.length > 2 ? html`<nav class="form-nav small" aria-label="Sections">${sections.map((sec, i) => html`${i ? ' · ' : ''}<a href="#sec-${sec.id}">${sec.title}</a>`)}</nav>` : ''}
         ${sections.map((sec) => html`<section class="form-section" id="sec-${sec.id}"><h2 class="form-section-title">${sec.title}</h2>
-          ${sec.rows.map((r) => (r.group ? fieldGroup(r.group, t, f, ctx, one) : r.length > 1 ? html`<div class="field-pair">${r.map(one)}</div>` : one(r[0])))}</section>`)}`;
+          ${sec.rows.map((r) => html`${r.group ? fieldGroup(r.group, t, f, ctx, one) : r.length > 1 ? html`<div class="field-pair">${r.map(one)}</div>` : one(r[0])}${
+            (Array.isArray(r) ? r : []).map((k) => (ctx.afterField || {})[k] || '')}`)}</section>`)}`;
     })()}
     <div class="actions"><button>${isNew ? 'Create' : collab ? 'Publish' : 'Save'}</button>
       <a class="button secondary" href="${isNew ? `/${t.folder}` : `/${t.folder}/${slug}`}">${collab ? 'Close' : 'Cancel'}</a>

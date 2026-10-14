@@ -3,7 +3,9 @@
 // is on loan elsewhere (the Bührle Foundation's "99" for Kunsthaus "BU 0099"), former inventory numbers, catalogue
 // raisonné numbers (a source of the bibliography). The main inventory number stays a field of the artwork — the
 // number of the institution where it is now. An institution gives each number once, across both (a trigger).
-// Saved immediately, like images and provenance steps.
+// Saved immediately, like images and provenance steps — but entered on the edit page, under the inventory number: the
+// inputs sit inside the entry's form yet belong to two small forms after it (the HTML form="…" attribute; forms can't
+// nest), so the shared working copy (collab.js, form.elements) never sees them. The artwork's page lists them.
 // ---------------------------------------------------------------------------------------------------------------
 const { html } = require('./html');
 
@@ -56,28 +58,45 @@ function errorText(err) {
   return null;
 }
 
-function section({ e, numbers, values = {} }) {
-  const v = (k) => values[k] || '';
+const whose = (n) => (n.institution_slug ? html`<a href="/institutions/${n.institution_slug}">${n.institution_name}</a>`
+  : n.source_slug ? html`<a href="/bibliography/${n.source_slug}">${n.source_name}</a> <span class="tag">catalogue</span>` : html`<span class="muted">—</span>`);
+
+// The artwork's page: the list, to change on the edit page.
+function listSection({ e, numbers }) {
   return html`<section id="numbers"><h2>Further numbers</h2>
-    <p class="muted small">Besides the main inventory number (the institution where it is now): the owner's number when it is
-      on loan, former inventory numbers, the number in a catalogue raisonné.</p>
-    ${numbers.length ? html`<div class="table-wrap"><table><thead><tr><th>Number</th><th>Whose</th><th>Note</th><th></th></tr></thead><tbody>
-      ${numbers.map((n) => html`<tr><td><b>${n.number}</b></td>
-        <td>${n.institution_slug ? html`<a href="/institutions/${n.institution_slug}">${n.institution_name}</a>`
-          : n.source_slug ? html`<a href="/bibliography/${n.source_slug}">${n.source_name}</a> <span class="tag">catalogue</span>` : html`<span class="muted">—</span>`}</td>
-        <td>${n.label || ''}</td>
-        <td><form method="post" action="/numbers/${n.id}/delete" class="inline"><button class="link">remove</button></form></td></tr>`)}
-      </tbody></table></div>` : ''}
-    <details${values.number ? ' open' : ''}><summary class="button secondary">+ Add a number</summary>
-      <form method="post" action="/artworks/${e.slug}/numbers" class="form">
-        <div class="field-pair"><div class="field"><label for="n-number">Number</label><input id="n-number" name="number" value="${v('number')}" required placeholder="e.g. 99 · 204 · 1923/5"></div>
-          <div class="field"><label for="n-label">Note</label><input id="n-label" name="label" value="${v('label')}" placeholder="e.g. former inventory number · Lugt"></div></div>
-        <div class="field-pair"><div class="field"><label for="n-institution">Institution (its inventory number)</label>
-            <input id="n-institution" name="institution" value="${v('institution')}" data-lookup="institution" autocomplete="off" placeholder="the owner, a former holder"></div>
-          <div class="field"><label for="n-source">or catalogue (a source)</label>
-            <input id="n-source" name="source" value="${v('source')}" data-lookup="source" autocomplete="off" placeholder="the catalogue raisonné"></div></div>
-        <div class="actions"><button>Add</button></div>
-      </form></details></section>`;
+    ${numbers.length ? html`<div class="table-wrap"><table><thead><tr><th>Number</th><th>Whose</th><th>Note</th></tr></thead><tbody>
+      ${numbers.map((n) => html`<tr><td><b>${n.number}</b></td><td>${whose(n)}</td><td>${n.label || ''}</td></tr>`)}
+      </tbody></table></div>` : html`<p class="muted small">None.</p>`}
+    <p class="small"><a href="/artworks/${e.slug}/edit#numbers">Add or remove numbers on the edit page →</a></p></section>`;
 }
 
-module.exports = { NumberError, list, byId, add, remove, errorText, section };
+// The edit page (inside the entry's form, so every control names its own form: formsAfter() renders those) — or, with
+// standalone, a page of its own (a refused number, shown again with what was typed).
+function section({ e, numbers, values = {}, standalone = false }) {
+  const v = (k) => values[k] || '';
+  const own = standalone ? '' : html` form="numbers-add"`;
+  const back = standalone ? '' : '?back=edit';
+  const fields = html`<div class="field-pair"><div class="field"><label for="n-number">Number</label><input id="n-number" name="number" value="${v('number')}" required placeholder="e.g. 99 · 204 · 1923/5"${own}></div>
+          <div class="field"><label for="n-label">Note</label><input id="n-label" name="label" value="${v('label')}" placeholder="e.g. former inventory number · Lugt"${own}></div></div>
+        <div class="field-pair"><div class="field"><label for="n-institution">Institution (its inventory number)</label>
+            <input id="n-institution" name="institution" value="${v('institution')}" data-lookup="institution" autocomplete="off" placeholder="the owner, a former holder"${own}></div>
+          <div class="field"><label for="n-source">or catalogue (a source)</label>
+            <input id="n-source" name="source" value="${v('source')}" data-lookup="source" autocomplete="off" placeholder="the catalogue raisonné"${own}></div></div>
+        <div class="actions"><button${own}>Add</button></div>`;
+  return html`<div id="numbers" class="numbers-edit"><h3>Further numbers</h3>
+    <p class="muted small">Besides the main inventory number (the institution where it is now): the owner's number when it is
+      on loan, former inventory numbers, the number in a catalogue raisonné. Saved at once, not with Publish.</p>
+    ${numbers.length ? html`<div class="table-wrap"><table><thead><tr><th>Number</th><th>Whose</th><th>Note</th><th></th></tr></thead><tbody>
+      ${numbers.map((n) => html`<tr><td><b>${n.number}</b></td><td>${whose(n)}</td><td>${n.label || ''}</td>
+        <td>${standalone ? '' : html`<button class="link" form="numbers-delete" formaction="/numbers/${n.id}/delete${back}">remove</button>`}</td></tr>`)}
+      </tbody></table></div>` : ''}
+    <details${values.number ? ' open' : ''}><summary class="button secondary">+ Add a number</summary>
+      ${standalone ? html`<form method="post" action="/artworks/${e.slug}/numbers?back=edit" class="form">${fields}</form>` : html`<div class="form">${fields}</div>`}
+    </details></div>`;
+}
+
+// The two forms the edit page's number controls belong to — after the entry's form.
+const formsAfter = (e) => html`<form id="numbers-add" method="post" action="/artworks/${e.slug}/numbers?back=edit" hidden></form>
+  <form id="numbers-delete" method="post" hidden></form>`;
+
+module.exports = { NumberError, list, byId, add, remove, errorText, section, listSection, formsAfter };

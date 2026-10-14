@@ -3,13 +3,13 @@ const { test, expect, sql, submitForm, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const addNumber = async (page, slug, { number, institution = '', source = '', label = '' }) => {
-  await page.goto(`/artworks/${slug}`);
+  await page.goto(`/artworks/${slug}/edit`);
   await page.click('#numbers summary:has-text("+ Add a number")');
   await page.fill('#n-number', number);
   if (institution) { await page.fill('#n-institution', institution); await page.keyboard.press('Escape'); }
   if (source) { await page.fill('#n-source', source); await page.keyboard.press('Escape'); }
   if (label) await page.fill('#n-label', label);
-  await Promise.all([page.waitForNavigation(), page.click('#numbers form.form button:has-text("Add")')]);
+  await Promise.all([page.waitForNavigation(), page.click('#numbers .actions button:has-text("Add")')]);
 };
 
 test.afterAll(() => {
@@ -29,6 +29,22 @@ test('further numbers: the owner\'s inventory number and a catalogue number; eac
   sql("INSERT INTO bibliography (slug, kind, name, authors, year) VALUES ('catalogue-raisonne-test', 'book', 'Catalogue raisonné', '{\"Faille, J.-B. de la\"}', '1970')");
   await addNumber(userA, 'sunflowers-national-gallery', { number: 'F 454', source: 'catalogue-raisonne-test' });
   await expect(userA.locator('#numbers table')).toContainText('F 454');
+
+  // entered on the edit page, under the inventory number; its own forms, not part of the shared working copy
+  await expect(userA).toHaveURL(/\/artworks\/sunflowers-national-gallery\/edit\?done=num-added#numbers/);
+  await expect(userA.locator('#sec-where #numbers')).toBeVisible();
+  expect(await userA.evaluate(() => [...document.querySelector('form[data-collab]').elements].some((el) => el.id === 'n-number'))).toBe(false);
+  // the artwork's page lists them and links to the edit page
+  await userA.goto('/artworks/sunflowers-national-gallery');
+  await expect(userA.locator('#numbers table')).toContainText('F 454');
+  await expect(userA.locator('#numbers button')).toHaveCount(0);
+  await expect(userA.locator('#numbers a', { hasText: 'edit page' })).toHaveAttribute('href', '/artworks/sunflowers-national-gallery/edit#numbers');
+  // removed on the edit page, back there
+  sql("INSERT INTO artwork_numbers (artwork_id, number, label) VALUES (entity_id('artwork', 'sunflowers-national-gallery'), 'X 1', 'to remove')");
+  await userA.goto('/artworks/sunflowers-national-gallery/edit');
+  await Promise.all([userA.waitForNavigation(), userA.locator('#numbers tr', { hasText: 'X 1' }).locator('button:has-text("remove")').click()]);
+  await expect(userA).toHaveURL(/\/edit\?done=num-deleted#numbers/);
+  await expect(userA.locator('#numbers table')).not.toContainText('X 1');
 
   // the same number of the same institution for another work: refused — also as a main inventory number
   await addNumber(userA, 'the-starry-night', { number: '99', institution: 'van-gogh-museum' });

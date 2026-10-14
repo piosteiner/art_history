@@ -502,7 +502,7 @@ router.get('/:plural/:slug', async (req, res) => {
         return identifiers.forType(await identifiers.authorities(adminPool), t.type).length ? identifiers.section({ t, e, ids, available }) : '';
       })()}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
-      ${t.type === 'artwork' ? numbers.section({ e, numbers: nums }) : ''}
+      ${t.type === 'artwork' ? numbers.listSection({ e, numbers: nums }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap,
         cites: await citations.forProvenance(adminPool, provSteps.filter((s) => s.id).map((s) => s.id)),
         marker: (c, target, back) => citations.marker(c, target, back, { recent }), back: `${here}#provenance` }) : ''}
@@ -711,11 +711,14 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   const pending = await collab.unpublished(t, e.id);
   const banner = pending ? unpublishedBanner(t, e, { ...pending, fields: await unpublishedFields(t, e) }, true) : '';
   // published: the public values, so the browser can mark every field the working copy changes (editor/unpublished.js)
-  const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx: await formContext(t, e.id),
+  const ctx = await formContext(t, e.id);
+  // further numbers (numbers.js): under the inventory number, saved at once through forms of their own after this one
+  if (t.type === 'artwork') ctx.afterField = { inventory_number: numbers.section({ e, numbers: await numbers.list(adminPool, e.id) }) };
+  const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
     action: `/${t.folder}/${e.slug}`, errors: [], version: working.version,
     collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) } });
   send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
-    body: html`<h1>Edit ${e.name}</h1>${banner}${form}${await citeDialogs(t, e, req.user)}` });
+    body: html`<h1>Edit ${e.name}</h1>${banner}${form}${t.type === 'artwork' ? numbers.formsAfter(e) : ''}${await citeDialogs(t, e, req.user)}` });
 });
 
 // The sources of the fields on the edit page: one dialog per citable field, after the form (forms can't nest);
