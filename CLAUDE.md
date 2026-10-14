@@ -83,7 +83,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Wrong type: `type_doubt()`, Wikidata class check, `convert_entry()` + `entry_moves` redirects (055) built 2026-10-09.
   Given/family names (066: `split_person_name()` + trigger, `person_sort_key()`; people and artists sorted by family name, "Filed as" override) built 2026-10-14; frontend sorts by `sort_key` for every type since 2026-10-14.
   Provenance on artwork maps (API `provenance` beside `features`: stops in chain order with `place_basis`, segments direct/implied with `between`, `unplaced`) built 2026-10-14;
-  frontend draws it instead of the route on artwork pages since 2026-10-14 (`showProvenance` in `map.ts`: numbered HTML markers, unplaced steps under the map).
+  frontend draws it instead of the route on artwork pages and for artworks chosen on the start map (in their colour; not in a time window) since 2026-10-14 (`drawProvenance` in `map.ts`: numbered HTML markers, unplaced steps under the map).
   Spell check language of Markdown texts recognised as you type (EN/DE, `src/textlang.js`, toolbar switch) built 2026-10-14.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
   Ideas later: impressions vs. design for prints; nightly auto-export commit; ISBN/DOI lookup for sources built 2026-10-12 (`booklookup.js`: Open Library, Crossref). Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.

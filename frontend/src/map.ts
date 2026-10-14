@@ -13,7 +13,7 @@ import { isDark, THEME_EVENT } from './theme';
 export { COLORS, PALETTE };
 import type {
   EntityMap, EntityType, EventMapProps, EventsMap, Feature, LineStringGeometry, PlacesMap, PointGeometry, PresenceMap,
-  ProvenanceMapStep, ProvenanceSegmentProps, ProvenanceStopProps, SiteProps, SitesMap, StopFeature, StopProps,
+  ProvenanceMap, ProvenanceMapStep, ProvenanceSegmentProps, ProvenanceStopProps, SiteProps, SitesMap, StopFeature, StopProps,
 } from './types';
 
 setWorkerUrl(workerUrl);
@@ -109,6 +109,7 @@ function removeLayers(map: MapLibre, ids: string[]) {
 function popupOnClick(map: MapLibre, layers: string[], content: (features: MapLayerMouseEvent['features']) => Html, unless: string[] = []) {
   // one handler for the whole group: a click on overlapping layers opens one popup, not one per layer
   map.on('click', (e) => {
+    if ((e.originalEvent.target as Element | null)?.closest('.maplibregl-marker')) return; // a provenance stop: its own popup
     const present = layers.filter((l) => map.getLayer(l));
     if (!present.length) return;
     const features = map.queryRenderedFeatures(e.point, { layers: present });
@@ -292,80 +293,130 @@ function stepRow(s: ProvenanceStopProps) {
   </li>`;
 }
 
+/** An artwork's provenance when at least one step has a place (else its map stays as it was), or null. */
+export const placedProvenance = (fc: EntityMap) =>
+  fc.entity.type === 'artwork' && fc.provenance?.features.some((f) => f.properties.layer === 'provenance_stop') ? fc.provenance : null;
+
+/** The entity map without what the provenance replaces: the route and the `kept_in` / creation dots. */
+const withoutReplaced = (fc: EntityMap): EntityMap => ({
+  ...fc,
+  features: fc.features.filter((f) => f.properties.layer !== 'route'
+    && !(f.properties.layer === 'presence' && PROVENANCE_RELATIONSHIPS.has((f.properties as StopProps).relationship))),
+});
+
+const provenanceStops = (prov: ProvenanceMap) =>
+  prov.features.filter((f): f is Feature<PointGeometry, ProvenanceStopProps> => f.properties.layer === 'provenance_stop');
+
+/** One artwork's provenance to draw; `entity` names it in the popups when several are on the map. */
+interface ProvenanceDrawing { prov: ProvenanceMap; color: string; entity?: EntityMap['entity'] }
+interface DrawnSegment { seg: ProvenanceSegmentProps; stops: Map<number, ProvenanceStopProps>; color: string; entity?: EntityMap['entity'] }
+const drawnSegments = new WeakMap<MapLibre, Map<string, DrawnSegment[]>>(); // per map and layer prefix, for the line popups
+const provenanceMarkers = new WeakMap<MapLibre, Marker[]>();
+const provenanceLayers = (prefix: string) => ['direct', 'gap', 'implied', 'arrows', 'hit'].map((s) => `${prefix}-${s}`);
+
+function clearProvenanceMarkers(map: MapLibre) {
+  provenanceMarkers.get(map)?.forEach((m) => m.remove());
+  provenanceMarkers.set(map, []);
+}
+
+const entityLine = (d: { color: string; entity?: EntityMap['entity'] }) =>
+  d.entity ? html`<div><i class="dot" style="background:${d.color}"></i> ${link(d.entity.type, d.entity.slug, d.entity.name)}</div>` : '';
+
 /**
- * The provenance on an artwork's map, in the chain's order (not by date — the order is the reliable thing):
- * numbered stops, several steps at one place in one popup; lines solid where the handover is documented, dashed
- * where it isn't, dotted and faded where an end is only implied; arrows in step order. Hollow: the place is only
- * probable (where the artist lived); a ring: only the region or country is known. The artwork's other features
- * (associations …) are drawn as on any entity map; its `kept_in` dots and route are replaced.
+ * Provenances in the chain's order (not by date — the order is the reliable thing), each in its colour: numbered
+ * stops, several steps at one place in one popup; lines solid where the handover is documented, dashed where it
+ * isn't, dotted and faded where an end is only implied; arrows in step order. Hollow: the place is only probable
+ * (where the artist lived); a ring: only the region or country is known. Call when the style is ready.
  */
-export function showProvenance(map: MapLibre, fc: EntityMap) {
-  const prov = fc.provenance!;
-  const stops = prov.features.filter((f): f is Feature<PointGeometry, ProvenanceStopProps> => f.properties.layer === 'provenance_stop');
-  const segments = prov.features.filter((f): f is Feature<LineStringGeometry, ProvenanceSegmentProps> => f.properties.layer === 'provenance_segment')
-    .map((f, i) => ({ ...f, properties: { ...f.properties, i } }));
-  const rest = fc.features.filter((f) => f.properties.layer !== 'route'
-    && !(f.properties.layer === 'presence' && PROVENANCE_RELATIONSHIPS.has((f.properties as StopProps).relationship)));
-  const coords = stops.map((f) => f.geometry.coordinates);
-  const view = showEntity(map, { ...fc, features: rest }, coords);
+function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceDrawing[]) {
+  clearProvenanceMarkers(map);
+  removeLayers(map, provenanceLayers(prefix));
+  const drawn: DrawnSegment[] = [];
+  const segments = items.flatMap((it) => {
+    const stops = new Map(provenanceStops(it.prov).map((f) => [f.properties.step, f.properties] as const));
+    return it.prov.features
+      .filter((f): f is Feature<LineStringGeometry, ProvenanceSegmentProps> => f.properties.layer === 'provenance_segment')
+      .map((f) => {
+        drawn.push({ seg: f.properties, stops, color: it.color, entity: it.entity });
+        return { ...f, properties: { ...f.properties, between: undefined, i: drawn.length - 1, color: it.color } };
+      });
+  });
+  const byPrefix = drawnSegments.get(map) ?? new Map<string, DrawnSegment[]>();
+  drawnSegments.set(map, byPrefix.set(prefix, drawn));
 
-  // one marker per position, its steps in chain order
-  const places = new Map<string, Feature<PointGeometry, ProvenanceStopProps>[]>();
-  for (const f of stops) {
-    const key = f.geometry.coordinates.join(',');
-    places.set(key, [...(places.get(key) ?? []), f]);
-  }
-  const byStep = new Map([...stops.map((f) => [f.properties.step, f.properties] as const)]);
-
-  whenReady(map, () => {
-    setData(map, 'prov-segments', { type: 'FeatureCollection', features: segments as unknown as GeoJSON.Feature[] });
-    const line = (id: string, filter: ExpressionSpecification, paint: Record<string, unknown>) => map.addLayer({
-      id, type: 'line', source: 'prov-segments', filter,
-      layout: { 'line-join': 'round', 'line-cap': id === 'prov-implied' ? 'round' : 'butt' },
-      paint: { 'line-color': COLORS.provenance, 'line-width': 2.5, 'line-opacity': 0.85, ...paint },
-    });
-    line('prov-direct', ['all', ['!', ['get', 'implied']], ['get', 'direct']], {});
-    line('prov-gap', ['all', ['!', ['get', 'implied']], ['!', ['get', 'direct']]], { 'line-dasharray': [3, 2] });
-    line('prov-implied', ['get', 'implied'], { 'line-dasharray': [0.1, 2], 'line-opacity': 0.45, 'line-width': 3 });
-    addArrows(map, 'prov-arrows', 'prov-segments', COLORS.provenance, ['case', ['get', 'implied'], 0.4, 0.9]);
-    // thin lines are hard to hit: a wide invisible copy takes the clicks
-    map.addLayer({ id: 'prov-hit', type: 'line', source: 'prov-segments', paint: { 'line-width': 14, 'line-opacity': 0 } });
-    map.on('mouseenter', 'prov-hit', () => (map.getCanvas().style.cursor = 'pointer'));
-    map.on('mouseleave', 'prov-hit', () => (map.getCanvas().style.cursor = ''));
-    map.on('click', 'prov-hit', (e) => {
+  const source = `${prefix}-segments`;
+  setData(map, source, { type: 'FeatureCollection', features: segments as unknown as GeoJSON.Feature[] });
+  const line = (kind: string, filter: ExpressionSpecification, paint: Record<string, unknown>) => map.addLayer({
+    id: `${prefix}-${kind}`, type: 'line', source, filter,
+    layout: { 'line-join': 'round', 'line-cap': kind === 'implied' ? 'round' : 'butt' },
+    paint: { 'line-color': ['get', 'color'], 'line-width': 2.5, 'line-opacity': 0.85, ...paint },
+  });
+  line('direct', ['all', ['!', ['get', 'implied']], ['get', 'direct']], {});
+  line('gap', ['all', ['!', ['get', 'implied']], ['!', ['get', 'direct']]], { 'line-dasharray': [3, 2] });
+  line('implied', ['get', 'implied'], { 'line-dasharray': [0.1, 2], 'line-opacity': 0.45, 'line-width': 3 });
+  addArrows(map, `${prefix}-arrows`, source, ['get', 'color'], ['case', ['get', 'implied'], 0.4, 0.9]);
+  // thin lines are hard to hit: a wide invisible copy takes the clicks
+  map.addLayer({ id: `${prefix}-hit`, type: 'line', source, paint: { 'line-width': 14, 'line-opacity': 0 } });
+  once(map, `${prefix}-hit`, () => {
+    const hit = `${prefix}-hit`;
+    map.on('mouseenter', hit, () => (map.getCanvas().style.cursor = 'pointer'));
+    map.on('mouseleave', hit, () => (map.getCanvas().style.cursor = ''));
+    map.on('click', hit, (e) => {
       if ((e.originalEvent.target as Element | null)?.closest('.maplibregl-marker')) return; // a stop's own popup opens
-      const seg = segments[Number(e.features?.[0]?.properties.i)]?.properties;
-      if (!seg) return;
-      const end = (n: number) => byStep.get(n);
-      new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(html`<div class="popup-row">
+      const rows = [...new Set((e.features ?? []).map((f) => Number(f.properties.i)))]
+        .map((i) => drawnSegments.get(map)?.get(prefix)?.[i]).filter((d): d is DrawnSegment => !!d);
+      if (!rows.length) return;
+      new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(html`${rows.map(({ seg, stops, ...d }) => html`<div class="popup-row">
+        ${entityLine(d)}
         <strong>${String(seg.from_step)} → ${String(seg.to_step)}</strong>
-        <span class="muted">${end(seg.from_step)?.place.name ?? ''} → ${end(seg.to_step)?.place.name ?? ''}</span><br>
+        <span class="muted">${stops.get(seg.from_step)?.place.name ?? ''} → ${stops.get(seg.to_step)?.place.name ?? ''}</span><br>
         ${seg.implied ? html`<span class="tag tag-implied">implied</span> not recorded: follows from the creation, the loan or a place not recorded`
           : seg.direct ? 'handover documented' : html`<span class="tag">handover not documented</span> there may have been owners in between`}
         ${seg.between.length ? html`<div class="popup-note">passes over: ${seg.between.map((s, i) => html`${i ? '; ' : ''}${String(s.step)} ${provenanceHolder(s)}`)} (place not recorded)</div>` : ''}
-      </div>`.value).addTo(map);
+      </div>`)}`.value).addTo(map);
     });
   });
 
-  // numbered stops as HTML markers: numbers need no map font, and they are focusable
-  for (const group of places.values()) {
-    const steps = group.map((f) => f.properties);
-    const first = steps[0];
-    const label = stepRuns(steps.map((s) => s.step));
-    const el = document.createElement('div');
-    const hollow = steps.every((s) => s.place_basis === 'artist_residence');
-    const area = steps.every((s) => s.precision === 'region' || s.precision === 'country');
-    el.className = `prov-stop${hollow ? ' hollow' : ''}${area ? ' area' : ''}`;
-    el.textContent = label;
-    el.setAttribute('role', 'button');
-    el.setAttribute('aria-label', `${first.place.name}: ${steps.length > 1 ? 'steps' : 'step'} ${label} of ${first.steps}`);
-    const popup = new Popup({ maxWidth: '320px', offset: area ? 20 : 13 }).setHTML(html`<div class="popup-row">
-      <strong>${link('place', first.place.slug, first.place.name)}</strong>
-      <span class="muted">${steps.length > 1 ? 'steps' : 'step'} ${label} of ${String(first.steps)}</span>
-      <ol class="popup-list popup-steps">${steps.map(stepRow)}</ol>
-    </div>`.value);
-    new Marker({ element: el }).setLngLat(group[0].geometry.coordinates).setPopup(popup).addTo(map);
+  // numbered stops as HTML markers (one per artwork and position): numbers need no map font, and they are focusable
+  const markers = provenanceMarkers.get(map)!;
+  for (const it of items) {
+    const places = new Map<string, Feature<PointGeometry, ProvenanceStopProps>[]>();
+    for (const f of provenanceStops(it.prov)) {
+      const key = f.geometry.coordinates.join(',');
+      places.set(key, [...(places.get(key) ?? []), f]);
+    }
+    for (const group of places.values()) {
+      const steps = group.map((f) => f.properties);
+      const first = steps[0];
+      const label = stepRuns(steps.map((s) => s.step));
+      const el = document.createElement('div');
+      const hollow = steps.every((s) => s.place_basis === 'artist_residence');
+      const area = steps.every((s) => s.precision === 'region' || s.precision === 'country');
+      el.className = `prov-stop${hollow ? ' hollow' : ''}${area ? ' area' : ''}`;
+      el.style.setProperty('--pc', it.color);
+      el.textContent = label;
+      el.setAttribute('role', 'button');
+      el.setAttribute('aria-label', `${it.entity ? `${it.entity.name}, ` : ''}${first.place.name}: ${steps.length > 1 ? 'steps' : 'step'} ${label} of ${first.steps}`);
+      const popup = new Popup({ maxWidth: '320px', offset: area ? 20 : 13 }).setHTML(html`<div class="popup-row">
+        ${entityLine(it)}
+        <strong>${link('place', first.place.slug, first.place.name)}</strong>
+        <span class="muted">${steps.length > 1 ? 'steps' : 'step'} ${label} of ${String(first.steps)}</span>
+        <ol class="popup-list popup-steps">${steps.map(stepRow)}</ol>
+      </div>`.value);
+      markers.push(new Marker({ element: el }).setLngLat(group[0].geometry.coordinates).setPopup(popup).addTo(map));
+    }
   }
+}
+
+/** The steps without a place, one per line, numbered with their step: under the map, so every step is visible somewhere. */
+export const unplacedSteps = (prov: ProvenanceMap) => html`<ol class="unplaced-list">${prov.unplaced.map((s) => html`<li value="${s.step}">
+  ${provenanceHolder(s)}${s.kind === 'creation' ? ', creation' : ''}${s.period ? `, ${s.period.label}` : ''}</li>`)}</ol>`;
+
+/** An artwork's own map: its provenance (see drawProvenance) in place of the route; other features (associations …) as usual. */
+export function showProvenance(map: MapLibre, fc: EntityMap) {
+  const prov = fc.provenance!;
+  const view = showEntity(map, withoutReplaced(fc), provenanceStops(prov).map((f) => f.geometry.coordinates));
+  whenReady(map, () => drawProvenance(map, 'prov', [{ prov, color: COLORS.provenance }]));
   return view;
 }
 
@@ -389,9 +440,12 @@ export function showPoint(map: MapLibre, coords: [number, number], name: string)
 // The explore map shows one of three overlays at a time; switching removes the others' layers.
 const PLACE_LAYERS = ['places-areas', 'places-circles'];
 const OVERVIEW_LAYERS = ['ov-routes', 'ov-arrows', 'ov-route-hover'];
-const SELECTION_LAYERS = ['sel-route', 'sel-arrows', 'sel-association', 'sel-presence'];
+const SELECTION_LAYERS = ['sel-route', 'sel-arrows', 'sel-association', 'sel-presence', ...provenanceLayers('sel-prov')];
 const OVERLAY_LAYERS = ['enc-halo', ...OVERVIEW_LAYERS, ...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
-const clearOverlays = (map: MapLibre) => removeLayers(map, OVERLAY_LAYERS);
+const clearOverlays = (map: MapLibre) => {
+  removeLayers(map, OVERLAY_LAYERS);
+  clearProvenanceMarkers(map); // the selection's artwork provenances
+};
 
 /** Route colours on the start map: one per kind of entry (with hundreds of entries, one per entry wouldn't tell apart). */
 export const TYPE_COLORS: Partial<Record<EntityType, string>> = { artist: '#b4462b', person: '#8a4f9e', artwork: '#c08a1e' };
@@ -795,8 +849,14 @@ export interface ColoredEntityMap {
 /**
  * The routes and places of several entities at once, each in its own colour. Same encoding as a single
  * entity: filled dots + line = physically there, in date order; hollow rings = association, not travel.
+ * Artworks with a placed provenance step look as on their own page: the provenance instead of the route.
  */
-export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
+export function showSelection(map: MapLibre, input: ColoredEntityMap[]) {
+  const provenances = input.flatMap((i) => {
+    const prov = placedProvenance(i.fc);
+    return prov ? [{ prov, color: i.color, entity: i.fc.entity }] : [];
+  });
+  const items = input.map((i) => (placedProvenance(i.fc) ? { ...i, fc: withoutReplaced(i.fc) } : i));
   const tag = (item: ColoredEntityMap, f: EntityMap['features'][number]) => ({
     ...f,
     properties: { ...f.properties, color: item.color, entity: item.fc.entity },
@@ -823,6 +883,7 @@ export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
       filter: ['==', ['get', 'layer'], 'presence'],
       paint: { 'circle-radius': 6, 'circle-color': ['get', 'color'], 'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5 },
     });
+    drawProvenance(map, 'sel-prov', provenances);
     once(map, 'selection', () => popupOnClick(map, ['sel-presence', 'sel-association'], (features) => html`${(features ?? []).map((f) => {
       const p = f.properties;
       const entity = prop<{ type: EntityType; slug: string; name: string }>(p.entity);
@@ -836,6 +897,7 @@ export function showSelection(map: MapLibre, items: ColoredEntityMap[]) {
       </div>`;
     })}`));
     const presence = stops.filter((f) => f.properties?.layer === 'presence');
-    fit(map, (presence.length ? presence : stops).map((f) => (f.geometry as GeoJSON.Point).coordinates as [number, number]));
+    const held = provenances.flatMap((p) => provenanceStops(p.prov).map((f) => f.geometry.coordinates));
+    fit(map, [...(presence.length || held.length ? presence : stops).map((f) => (f.geometry as GeoJSON.Point).coordinates as [number, number]), ...held]);
   });
 }

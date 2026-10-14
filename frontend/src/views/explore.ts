@@ -8,7 +8,10 @@ import { entries } from '../catalog';
 import { creatorsOf, href, html, render } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
-import { COLORS, createMap, focusEncounter, highlightRoute, PALETTE, showEncounters, showEvents, showPlaces, showPresence, showSelection, showSites, type ColoredEntityMap, type RouteInfo } from '../map';
+import {
+  COLORS, createMap, focusEncounter, highlightRoute, PALETTE, placedProvenance, showEncounters, showEvents, showPlaces, showPresence, showSelection,
+  showSites, unplacedSteps, type ColoredEntityMap, type RouteInfo,
+} from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
 import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
@@ -313,10 +316,16 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
       return [{ entity: i.fc.entity, place: p.place, label: p.label, period: p.period, note: p.note, institution: p.institution, artwork: p.artwork, point: f.geometry.coordinates as [number, number] }];
     }));
     crossings(stays, (slug) => at.get(slug));
-    const withPlaces = items.filter((i) => i.fc.features.some((f) => f.geometry.type === 'Point'));
+    const withPlaces = items.filter((i) => i.fc.features.some((f) => f.geometry.type === 'Point') || placedProvenance(i.fc));
+    // artworks with a placed provenance step look as on their own page: numbered holders in the chain's order
+    const held = items.flatMap((i) => { const prov = placedProvenance(i.fc); return prov ? [{ i, prov }] : []; });
     render(legend, html`${items.map((i) => html`<span><i class="dot" style="background:${i.color}"></i>
         <a href="${href(i.fc.entity.type, i.fc.entity.slug)}">${i.fc.entity.name}</a></span>`)}
-      <span class="legend-key">filled dot + line = was there, in date order · ring = association, not travel</span>`);
+      <span class="legend-key">filled dot + line = was there, in date order · ring = association, not travel</span>
+      ${held.length ? html`<span class="legend-key">numbers = an artwork's holders, in the provenance's order (not by date) ·
+        line solid: handover documented, dashed: not documented, dotted: implied · hollow: probably</span>` : ''}
+      ${held.filter(({ prov }) => prov.unplaced.length).map(({ i, prov }) => html`<div class="legend-note unplaced">
+        <i class="dot" style="background:${i.color}"></i> ${i.fc.entity.name} — not on the map (place not recorded): ${unplacedSteps(prov)}</div>`)}`);
     const missing = items.length - withPlaces.length;
     status.textContent = [
       `${withPlaces.length} of ${picks.length} chosen entries on the map.`,

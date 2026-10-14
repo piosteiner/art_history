@@ -116,16 +116,16 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .unplaced-list { margin: .15rem 0 0; padding-left: 1.6rem; }
 .unplaced-list li { margin: .1rem 0; }
 
-/* an artwork's provenance on its map: numbered stops (HTML markers), in the chain's order */
+/* an artwork's provenance on its map: numbered stops (HTML markers), in the chain's order; --pc: its colour on the start map */
 .prov-stop {
   min-width: 20px; height: 20px; padding: 0 5px; box-sizing: border-box; border-radius: 10px;
   display: flex; align-items: center; justify-content: center; white-space: nowrap;
-  font: 600 11px/1 var(--sans); color: #fff; background: var(--c-provenance);
+  font: 600 11px/1 var(--sans); color: #fff; background: var(--pc, var(--c-provenance));
   border: 2px solid #fff; box-shadow: 0 1px 3px rgba(0, 0, 0, .35); cursor: pointer;
 }
-.prov-stop.hollow { background: var(--surface); color: var(--c-provenance); border: 2px dashed var(--c-provenance); } /* probably */
-.prov-stop.area { min-width: 34px; height: 34px; border-radius: 17px; color: var(--text); border: 3px solid var(--c-provenance);
-  background: color-mix(in srgb, var(--c-provenance) 25%, transparent); box-shadow: none; } /* only the region or country */
+.prov-stop.hollow { background: var(--surface); color: var(--pc, var(--c-provenance)); border: 2px dashed var(--pc, var(--c-provenance)); } /* probably */
+.prov-stop.area { min-width: 34px; height: 34px; border-radius: 17px; color: var(--text); border: 3px solid var(--pc, var(--c-provenance));
+  background: color-mix(in srgb, var(--pc, var(--c-provenance)) 25%, transparent); box-shadow: none; } /* only the region or country */
 .prov-stop:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
 .popup-steps li { margin: .25rem 0; }
 

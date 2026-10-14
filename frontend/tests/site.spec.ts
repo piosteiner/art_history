@@ -244,7 +244,35 @@ test('artwork map: the provenance in chain order — numbered stops, segments wi
   await expect(popup).toContainText('passes over: 5 Estate of Hedwig Frieda Ullmann (place not recorded)');
 });
 
+test('start map: a chosen artwork shows its provenance as on its own page, in its colour', async ({ page }) => {
+  await page.goto('/?artworks=heiliger-sebastian');
+  const stops = page.locator('.prov-stop');
+  await expect(stops).toHaveText(['2, 3', '4', '6–9']);
+  expect(await stops.first().evaluate((el) => el.style.getPropertyValue('--pc'))).not.toBe(''); // the selection's colour
+  const legend = page.locator('#legend');
+  await expect(legend).toContainText('in the provenance\'s order');
+  await expect(legend.locator('.unplaced li')).toHaveCount(2);
+  await stops.filter({ hasText: '4' }).click();
+  const popup = page.locator('.maplibregl-popup');
+  await expect(popup).toContainText('Heiliger Sebastian'); // named: several entries can be on the map
+  await expect(popup).toContainText('Arthur Kauffmann');
+  await expect(popup).toHaveCount(1); // not also the popup of a dot underneath
+  // a time window shows presence instead (dates, not the provenance): the markers go with the routes
+  await page.fill('input[name=from]', '1950');
+  await page.fill('input[name=to]', '1960');
+  await page.press('input[name=to]', 'Enter');
+  await expect(page.locator('#chips .chip')).toHaveText(/Time window 1950–1960/);
+  await expect(stops).toHaveCount(0);
+});
+
 test('stop popups count a stop with an open start ("until 1912") in route order', async ({ page }) => {
+  // without the provenance the artwork's kept_in stops and route are shown, numbered (live data has open starts only there)
+  await page.route(/\/v1\/map\/artworks\/heiliger-sebastian$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    delete body.provenance;
+    await route.fulfill({ response: res, json: body });
+  });
   await page.goto('/?artworks=heiliger-sebastian');
   await page.waitForFunction(() => {
     const m = (window as unknown as { __maps?: { getSource(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);

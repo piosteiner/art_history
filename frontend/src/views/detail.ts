@@ -92,7 +92,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const mapEl = main.querySelector<HTMLElement>('#map')!;
       const legend = main.querySelector<HTMLElement>('#legend')!;
       // MapLibre loads only for pages with a map (terms and sources have none)
-      mapModule!.then(({ createMap, provenanceHolder, showEntity, showOwnSite, showPoint, showProvenance }) => {
+      mapModule!.then(({ createMap, showEntity, showOwnSite, showPoint, showProvenance, unplacedSteps, placedProvenance }) => {
         if (!current()) return;
         const map = createMap(mapEl);
         cleanup = () => map.remove();
@@ -114,7 +114,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
           .then((fc) => {
             if (!current()) return;
             // an artwork with a placed provenance step: the provenance replaces its route and kept_in dots
-            const prov = e.type === 'artwork' && fc.provenance?.features.some((f) => f.properties.layer === 'provenance_stop') ? fc.provenance : null;
+            const prov = placedProvenance(fc);
             const provStops = prov?.features.flatMap((f) => (f.properties.layer === 'provenance_stop' ? [f.properties] : [])) ?? [];
             const provSegments = prov?.features.flatMap((f) => (f.properties.layer === 'provenance_segment' ? [f.properties] : [])) ?? [];
             const stops = fc.features.filter((f) => f.geometry.type === 'Point'
@@ -150,7 +150,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
               ${own ? html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>` : ''}
               ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}
               ${prov?.unplaced.length ? html`<div class="legend-note" id="unplaced">Not on the map (place not recorded):
-                <ol class="unplaced-list">${prov.unplaced.map((s) => html`<li value="${s.step}">${provenanceHolder(s)}${s.kind === 'creation' ? ', creation' : ''}${s.period ? `, ${s.period.label}` : ''}</li>`)}</ol></div>` : ''}`);
+                ${unplacedSteps(prov)}</div>` : ''}`);
             legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {
               const btn = ev.currentTarget as HTMLButtonElement;
               const all = btn.dataset.fit === 'all';
