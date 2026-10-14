@@ -106,11 +106,13 @@ router.get('/:plural/:slug', async (req, res) => {
           'layer', CASE WHEN is_physical_presence THEN 'presence' ELSE 'association' END,
           'relationship', code, 'label', label, 'category', category, 'note', note, 'certainty', certainty,
           'period', range_json(period, period_label)))
-        ORDER BY lower(period) NULLS LAST, name COLLATE sort_natural), '[]') AS stops,
+        ORDER BY period NULLS LAST, name COLLATE sort_natural), '[]') AS stops,
       -- The route: an ordered aggregate over the dated physical-presence stops only.
       -- Associations (e.g. "influenced by the culture of Japan") are never drawn as travel.
       -- ST_RemoveRepeatedPoints: "lived in Auvers" followed by "died in Auvers" is one stop, not a zero-length hop.
-      ST_AsGeoJSON(ST_RemoveRepeatedPoints(ST_MakeLine(point::geometry ORDER BY lower(period), upper(period))
+      -- ORDER BY the range itself, not lower(period): an open start ("until 1912") sorts as -infinity, first,
+      -- where lower() would be NULL and last; ties go by the upper bound.
+      ST_AsGeoJSON(ST_RemoveRepeatedPoints(ST_MakeLine(point::geometry ORDER BY period)
                    FILTER (WHERE is_physical_presence AND period IS NOT NULL)))::jsonb AS route
     FROM stops`, [e.type, id]);
 

@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Fix: map route with an open-start stop ("until 1912") drawn last
+- **What:** `/v1/map/<plural>/:slug` orders stops and the route by the range (`ORDER BY period`) instead of
+  `lower(period)`, so an open start sorts first (−∞) rather than last (NULL). E2E check in `provenance.spec.js`.
+- **Why:** Heiliger Sebastian's route looped Zürich → Frankfurt because "Albert Julius Ullmann, until 1912" came last.
+- **Revert:** `git revert` this commit, deploy.
+
 ### Given and family names; artists and people sorted by family name (migration 066)
 - **What:** `given_name`, `family_name` for artists and people, `sort_name` ("Filed as") for people too;
   `split_person_name()` + trigger `fill_person_names` (insert, or a changed name, when both fields are empty);

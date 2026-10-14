@@ -80,6 +80,10 @@ test('a provenance chain: computed periods, derived edges in graph, map, owner p
   expect(m.features.filter((f) => f.properties.relationship === 'kept_in').map((f) => f.properties.place.slug))
     .toEqual(['test-sorel', 'test-zurich', 'test-zurich']);
   expect(m.features.some((f) => f.properties.layer === 'route')).toBe(true);
+  // a step with no start ("until 1952") is the first stop of the route, not the last (Postgres range order)
+  sql(`UPDATE provenance SET acquired = NULL, acquired_label = NULL WHERE owner_person_id = entity_id('person', 'test-michel-monet')`);
+  const route = (await api(request, '/map/artworks/test-bassin')).features.find((f) => f.properties.layer === 'route');
+  expect(route.geometry.coordinates.map(([x]) => x)).toEqual([1.36, 8.54]);
 
   // the owner: role from the provenance, "owner of" on the admin page linking to the step
   expect((await api(request, '/people/test-buhrle')).roles).toEqual(['owner']);
