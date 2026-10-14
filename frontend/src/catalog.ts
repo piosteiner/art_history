@@ -170,6 +170,9 @@ const located = (e: { country: Country | null; polities: PolityLink[] }, rel: Po
   };
 };
 
+/** "Gogh, Vincent": the API's sort_key, when it says more than the name itself. */
+const filedAs = (x: { name: string; sort_key?: string }) => x.sort_key && x.sort_key !== x.name ? x.sort_key : null;
+
 const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
   artists: {
     type: 'artist',
@@ -185,11 +188,11 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       return {
         slug: a.slug, name: a.name, meta: spanLabel(a.birth, a.death).replace(' – ', '–'),
         fields: fields(
-          ['Filed as', a.sort_name !== a.name && a.sort_name],
+          ['Filed as', filedAs(a)],
           ['Born in', [a.birth_place?.name, countryText(a.country)].filter(Boolean).join(', ')],
           ['Nationality', l.polities],
         ),
-        sorts: { name: byName(a.sort_name ?? a.name), born: byYear(a.birth), died: byYear(a.death, 'to'), country: l.country, nationality: l.polity },
+        sorts: { name: byName(a.name), born: byYear(a.birth), died: byYear(a.death, 'to'), country: l.country, nationality: l.polity },
       };
     },
   },
@@ -253,6 +256,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       return {
         slug: p.slug, name: p.name, meta: personDates(p).replace(' – ', '–'),
         fields: fields(
+          ['Filed as', filedAs(p)],
           ['Kind', p.kind],
           ['Occupations', p.occupations.join(', ')],
           ['Roles', p.roles.map((r) => ROLE_LABEL[r] ?? r).join(', ')],
@@ -364,7 +368,7 @@ export function entries<P extends Plural>(plural: P, items: ItemByPlural[P][]): 
   const cat = CATALOG[plural] as unknown as TypeCatalog<P>;
   return items.map((item) => {
     const e = cat.build(item);
-    const named = item as { names?: NameEntry[]; search_text?: string | null; sort_key?: string; sort_name?: string | null; name_lang?: string | null; title_lang?: string | null; name_reading?: string | null; title_reading?: string | null };
+    const named = item as { names?: NameEntry[]; search_text?: string | null; sort_key?: string; name_lang?: string | null; title_lang?: string | null; name_reading?: string | null; title_reading?: string | null };
     // other names (original, translations …), their readings and the API's search_text (kana in Latin letters …):
     // all searchable, shown as the reason when the match came from them ("Other names: 神奈川沖浪裏")
     const names = named.names ?? [];
@@ -374,9 +378,10 @@ export function entries<P extends Plural>(plural: P, items: ItemByPlural[P][]): 
         match: [...names.flatMap((n) => [n.text, n.reading ?? '']), named.name_reading ?? named.title_reading ?? '', named.search_text ?? ''].join(' '),
       });
     }
-    // sort by the API's sort_key (the romanization for names in other scripts); artists keep sort_name first
+    // sort by the API's sort_key for every type: "Family, Given" (or sort_name) for artists and people,
+    // the romanization for names in other scripts
     const first = cat.sorts[0].id;
-    if (named.sort_key && !(plural === 'artists' && named.sort_name)) {
+    if (named.sort_key) {
       e.sorts[first] = byName(plural === 'artworks' ? titleKey(named.sort_key) : named.sort_key);
     }
     const lang = named.title_lang ?? named.name_lang ?? null;
