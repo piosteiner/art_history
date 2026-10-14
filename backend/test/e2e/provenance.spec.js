@@ -28,8 +28,9 @@ test.beforeEach(() => {
        INSERT INTO artworks (slug, title, current_institution_id) VALUES ('test-bassin', 'Test Bassin aux nymphéas', entity_id('institution', 'test-kunsthaus'))`);
 });
 test.afterEach(() => {
-  sql(`DELETE FROM artworks WHERE slug = 'test-bassin'; DELETE FROM institutions WHERE slug = 'test-kunsthaus';
-       DELETE FROM places WHERE slug IN ('test-sorel', 'test-zurich'); DELETE FROM people WHERE slug IN ('test-michel-monet', 'test-buhrle')`);
+  sql(`DELETE FROM relationships WHERE subject_type = 'artist' AND subject_id = entity_id('artist', 'test-painter');
+       DELETE FROM artworks WHERE slug = 'test-bassin'; DELETE FROM institutions WHERE slug = 'test-kunsthaus';
+       DELETE FROM places WHERE slug IN ('test-sorel', 'test-zurich'); DELETE FROM people WHERE slug IN ('test-michel-monet', 'test-buhrle'); DELETE FROM artists WHERE slug = 'test-painter'`);
 });
 
 test('a provenance chain: computed periods, derived edges in graph, map, owner page and roles', async ({ userA, request }) => {
@@ -84,6 +85,15 @@ test('a provenance chain: computed periods, derived edges in graph, map, owner p
   sql(`UPDATE provenance SET acquired = NULL, acquired_label = NULL WHERE owner_person_id = entity_id('person', 'test-michel-monet')`);
   const route = (await api(request, '/map/artworks/test-bassin')).features.find((f) => f.properties.layer === 'route');
   expect(route.geometry.coordinates.map(([x]) => x)).toEqual([1.36, 8.54]);
+  // the provenance on the map, in the chain's order: a stop per placed step; the purchase isn't documented as direct
+  const pr = (await api(request, '/map/artworks/test-bassin')).provenance;
+  expect(pr.features.filter((f) => f.properties.layer === 'provenance_stop')
+    .map((f) => [f.properties.step, f.properties.place.slug, f.properties.place_basis]))
+    .toEqual([[1, 'test-sorel', 'recorded'], [2, 'test-zurich', 'recorded'], [3, 'test-zurich', 'recorded']]);
+  expect(pr.features.filter((f) => f.properties.layer === 'provenance_segment')
+    .map((f) => [f.properties.from_step, f.properties.to_step, f.properties.direct, f.properties.implied]))
+    .toEqual([[1, 2, false, false]]);
+  expect(pr.unplaced).toEqual([]);
 
   // the owner: role from the provenance, "owner of" on the admin page linking to the step
   expect((await api(request, '/people/test-buhrle')).roles).toEqual(['owner']);
@@ -151,4 +161,29 @@ test('reorder and remove steps; an undocumented change of owner across 1933–19
   await userA.goto('/people/test-buhrle/delete');
   await Promise.all([userA.waitForNavigation(), userA.click('form button.danger')]);
   await expect(userA.locator('.flash.error')).toContainText('Still named in the provenance of an artwork');
+});
+
+test('the provenance on the map: where it was made from where the artist lived, a step without a place passed over', async ({ request }) => {
+  sql(`INSERT INTO artists (slug, name) VALUES ('test-painter', 'Test Painter');
+       INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period)
+         VALUES ('artist', entity_id('artist', 'test-painter'), 'lived_in', 'place', entity_id('place', 'test-sorel'), '[1880-01-01,1890-01-01)');
+       UPDATE artworks SET creator_id = entity_id('artist', 'test-painter'), created = '[1885-01-01,1886-01-01)', created_label = '1885'
+         WHERE slug = 'test-bassin';
+       INSERT INTO provenance (artwork_id, position, owner_person_id, method) VALUES (entity_id('artwork', 'test-bassin'), 1, entity_id('person', 'test-michel-monet'), 'purchase');
+       INSERT INTO provenance (artwork_id, position, owner_person_id, method, acquired, acquired_label, location_id, direct)
+         VALUES (entity_id('artwork', 'test-bassin'), 2, entity_id('person', 'test-buhrle'), 'purchase', '[1952-01-01,1953-01-01)', '1952', entity_id('place', 'test-zurich'), true)`);
+  const pr = (await api(request, '/map/artworks/test-bassin')).provenance;
+  const stops = pr.features.filter((f) => f.properties.layer === 'provenance_stop');
+  expect(stops.map((f) => [f.properties.step, f.properties.kind, f.properties.place.slug, f.properties.place_basis]))
+    .toEqual([[1, 'creation', 'test-sorel', 'artist_residence'], [3, 'step', 'test-zurich', 'recorded']]);
+  const [seg] = pr.features.filter((f) => f.properties.layer === 'provenance_segment');
+  expect([seg.properties.from_step, seg.properties.to_step, seg.properties.implied]).toEqual([1, 3, true]);
+  expect(seg.properties.between.map((b) => b.holder.slug)).toEqual(['test-michel-monet']);
+  expect(pr.unplaced.map((u) => [u.step, u.holder.slug])).toEqual([[2, 'test-michel-monet']]);
+
+  // a recorded place of creation (e.g. Wikidata P1071) wins over the derived one
+  sql(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+         VALUES ('artwork', entity_id('artwork', 'test-bassin'), 'created_in', 'place', entity_id('place', 'test-zurich'))`);
+  const again = (await api(request, '/map/artworks/test-bassin')).provenance;
+  expect(again.features.find((f) => f.properties.kind === 'creation').properties.place_basis).toBe('created_in');
 });

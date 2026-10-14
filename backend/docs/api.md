@@ -282,7 +282,21 @@ subject_types, object_types, description, derived`. `category` is meant for map/
   `presence` (was physically there) or `association` (e.g. influenced by the culture of Japan — **not** travel),
   plus one `LineString` with `layer: "route"`: the dated presence stops in chronological order.
   An artwork's stops include `kept_in` (where it was with each owner, from the provenance) — its journey from owner
-  to owner.
+  to owner. Stops and route are ordered by the period as a range: an open start ("until 1912") comes first.
+- Artworks also have `provenance`: a FeatureCollection of the provenance in the **chain's order** (creation, the
+  steps by position, the loan — like `provenance` on the artwork, not by date; every step, however patchy):
+  - `layer: "provenance_stop"` (Point), one per step with a place: `step` / `steps` (number in the chain, of all),
+    `kind` (`creation` · `step` · `loan`), `holder` `{type, slug, name}` or `holder_label`, `role`, `method`,
+    `certainty`, `period`, `end_basis`, `provenance_id`, `place` `{slug, name}`, `precision` (the place's kind:
+    `site` · `settlement` · `region` · `country`) and `place_basis` — how we know the place:
+    `recorded` (the step's own) · `holder_seat` (an institution holder without a place: its seat; the loan) ·
+    `created_in` (creation: the artwork's recorded place of creation, Wikidata P1071) · `artist_residence`
+    (creation: the one place the artist is recorded at while it was made — say "probably").
+  - `layer: "provenance_segment"` (LineString), between consecutive placed stops (none between two stops at the same
+    point): `from_step`, `to_step`, `direct` (every handover on it documented as direct), `implied` (an end not
+    recorded: creation, loan, or a place not recorded), `between` (the steps it passes over that have no place, same
+    properties as a stop without the place ones).
+  - `unplaced`: every step without a place (same properties), e.g. the creation when nothing says where it was made.
 - `GET /v1/map/presence?from=1888&to=1889[&types=artist,person,artwork]` — who/what was physically where during
   the window (for a timeline slider); `institution` may be added to `types` (earlier locations via `located_in`). Undated links are left out.
 - `GET /v1/map/places[?from=&to=]` — every place with `presence_count` and `association_count` (in the window).

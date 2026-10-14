@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Artwork maps: the provenance in the chain's order, with how sure each part is
+- **What:** `/v1/map/artworks/:slug` has a new member `provenance` (FeatureCollection): a stop per step with a place
+  (`place_basis` recorded / holder_seat / created_in / artist_residence, `precision`), segments between them (`direct`,
+  `implied`, `between` = steps without a place), `unplaced`. Built from `provenance_chain` in position order with
+  `row_number()` / `lag()`; the creation's place = `created_in`, else the artist's single dated place then.
+  `features` unchanged. E2E checks in `provenance.spec.js`; docs/api.md.
+- **Why:** owner: show the creation and every step however patchy — dates are often missing, the order never is.
+- **Revert:** `git revert` this commit, deploy (the frontend ignores a missing `provenance`).
+
 ### Fix: map route with an open-start stop ("until 1912") drawn last
 - **What:** `/v1/map/<plural>/:slug` orders stops and the route by the range (`ORDER BY period`) instead of
   `lower(period)`, so an open start sorts first (−∞) rather than last (NULL). E2E check in `provenance.spec.js`.

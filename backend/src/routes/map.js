@@ -2,7 +2,8 @@
 //
 // GET /v1/map/places?from=&to=            every place, with how many relationships touch it (in the time window)
 // GET /v1/map/presence?from=&to=&types=   who was physically where, overlapping the window (timeline slider)
-// GET /v1/map/<plural>/:slug              one entity's places + its travel route (physical presence only)
+// GET /v1/map/<plural>/:slug              one entity's places + its travel route (physical presence only);
+//                                         artworks also "provenance": the holders in the sources' order (below)
 // GET /v1/map/sites                       institutions and immovable artworks with an exact location of their own
 // GET /v1/map/events                      events: their area, spot or place (047)
 //
@@ -120,8 +121,87 @@ router.get('/:plural/:slug', async (req, res) => {
   if (result.route && result.route.coordinates.length > 1) {
     features.push({ type: 'Feature', geometry: result.route, properties: { layer: 'route' } });
   }
-  res.json({ type: 'FeatureCollection', entity: { type: e.type, ...entity }, features });
+  const extra = e.type === 'artwork' ? { provenance: await provenanceRoute(id) } : {};
+  res.json({ type: 'FeatureCollection', entity: { type: e.type, ...entity }, features, ...extra });
 });
+
+// An artwork's provenance on the map, in the order of the chain (view provenance_chain: the creation, the recorded
+// steps by position, the loan) — not by date: the sources' order is what every provenance has, dates often not.
+// Every step is in it, however patchy; how sure each part is travels along instead of being hidden:
+//   points    one per step with a place: place_basis 'recorded' (the step's own place), 'holder_seat' (an institution
+//             holder without a place: its seat), 'created_in' / 'artist_residence' (creation: the artwork's recorded
+//             place of creation, else the one place the artist is recorded at while it was made); precision = the
+//             place's kind (site / settlement / region / country)
+//   segments  between consecutive placed steps: direct (every handover on it documented as direct), implied (an end
+//             not recorded: the creation, the loan, or a place not recorded), between (the steps it passes over that
+//             have no place)
+//   unplaced  every step without a place, so a list beside the map can name them
+// row_number() numbers the chain once; lag() over the placed steps pairs each with the previous one — window
+// functions instead of a loop in JavaScript.
+async function provenanceRoute(artworkId) {
+  const { rows: [r] } = await apiPool.query(`
+    WITH chain AS (
+      SELECT c.*, row_number() OVER (ORDER BY c.position) AS step, count(*) OVER () AS steps
+      FROM provenance_chain c WHERE c.artwork_id = $1
+    ), located AS (
+      SELECT ch.*, coalesce(ch.location_id, made.place_id, seat.place_id) AS place_id,
+             CASE WHEN ch.location_id IS NOT NULL THEN CASE WHEN ch.kind = 'loan' THEN 'holder_seat' ELSE 'recorded' END
+                  ELSE coalesce(made.basis, seat.basis) END AS place_basis
+      FROM chain ch
+      -- where it was made: recorded (created_in, e.g. from Wikidata P1071), else the artist's single dated place then
+      LEFT JOIN LATERAL (
+        SELECT * FROM (
+          (SELECT rel.object_id AS place_id, 'created_in' AS basis, 1 AS pref FROM relationships rel
+           WHERE rel.subject_type = 'artwork' AND rel.subject_id = ch.artwork_id
+             AND rel.relationship_type = 'created_in' AND rel.object_type = 'place' ORDER BY rel.id LIMIT 1)
+          UNION ALL
+          (SELECT min(x.object_id), 'artist_residence', 2 FROM artworks w
+           JOIN edges x ON x.subject_type = 'artist' AND x.subject_id = w.creator_id AND x.object_type = 'place'
+                       AND x.period && w.created
+           JOIN relationship_types rt ON rt.code = x.relationship_type AND rt.is_physical_presence
+           WHERE w.id = ch.artwork_id HAVING count(DISTINCT x.object_id) = 1)
+        ) m ORDER BY pref LIMIT 1
+      ) made ON ch.location_id IS NULL AND (ch.kind = 'creation' OR ch.method = 'creation')
+      LEFT JOIN LATERAL (
+        SELECT i.place_id, 'holder_seat' AS basis FROM institutions i WHERE i.id = ch.owner_id
+      ) seat ON ch.location_id IS NULL AND ch.owner_type = 'institution' AND ch.kind <> 'creation'
+    ), rows AS (
+      SELECT l.*, pl.slug AS place_slug, pl.name AS place_name, pl.kind AS place_kind, g.marker,
+             o.slug AS holder_slug,
+             jsonb_build_object('step', l.step, 'steps', l.steps, 'kind', l.kind,
+               'holder', CASE WHEN l.owner_id IS NOT NULL THEN jsonb_build_object('type', l.owner_type, 'slug', o.slug, 'name', l.owner_name) END,
+               'holder_label', l.owner_label, 'role', l.role, 'method', l.method, 'certainty', l.certainty,
+               'period', range_json(l.period, l.period_label), 'end_basis', l.end_basis, 'provenance_id', l.id) AS props
+      FROM located l
+      LEFT JOIN entity_index o ON (o.type, o.id) = (l.owner_type, l.owner_id)
+      LEFT JOIN places pl ON pl.id = l.place_id
+      LEFT JOIN site_geo g ON (g.type, g.id) = ('place', l.place_id)
+    ), placed AS (
+      SELECT r.*, lag(r.step) OVER w AS prev_step, lag(r.marker) OVER w AS prev_marker,
+             lag(r.kind) OVER w AS prev_kind, lag(r.place_basis) OVER w AS prev_basis
+      FROM rows r WHERE r.marker IS NOT NULL WINDOW w AS (ORDER BY r.step)
+    )
+    SELECT
+      (SELECT coalesce(jsonb_agg(jsonb_build_object('type', 'Feature', 'geometry', ST_AsGeoJSON(p.marker)::jsonb,
+         'properties', p.props || jsonb_build_object('layer', 'provenance_stop', 'place_basis', p.place_basis,
+           'precision', p.place_kind, 'place', jsonb_build_object('slug', p.place_slug, 'name', p.place_name)))
+         ORDER BY p.step), '[]') FROM placed p) AS stops,
+      (SELECT coalesce(jsonb_agg(jsonb_build_object('type', 'Feature',
+         'geometry', ST_AsGeoJSON(ST_MakeLine(p.prev_marker::geometry, p.marker::geometry))::jsonb,
+         'properties', jsonb_build_object('layer', 'provenance_segment', 'from_step', p.prev_step, 'to_step', p.step,
+           'direct', h.direct,
+           'implied', p.prev_kind <> 'step' OR p.kind <> 'step' OR p.prev_basis <> 'recorded' OR p.place_basis <> 'recorded',
+           'between', h.between)) ORDER BY p.step), '[]')
+       FROM placed p
+       CROSS JOIN LATERAL (
+         SELECT coalesce(bool_and(x.direct AND x.kind = 'step') FILTER (WHERE x.step > p.prev_step), false) AS direct,
+                coalesce(jsonb_agg(x.props ORDER BY x.step) FILTER (WHERE x.marker IS NULL), '[]') AS between
+         FROM rows x WHERE x.step > p.prev_step AND x.step <= p.step
+       ) h
+       WHERE p.prev_step IS NOT NULL AND NOT ST_Equals(p.prev_marker::geometry, p.marker::geometry)) AS segments,
+      (SELECT coalesce(jsonb_agg(x.props ORDER BY x.step), '[]') FROM rows x WHERE x.marker IS NULL) AS unplaced`, [artworkId]);
+  return { type: 'FeatureCollection', features: [...r.stops, ...r.segments], unplaced: r.unplaced };
+}
 
 // Institutions and immovable artworks with an exact location of their own (migration 034).
 router.get('/sites', async (req, res) => {
