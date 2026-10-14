@@ -12,7 +12,7 @@ import { knownPreviews } from '../previews';
 import { partNav, seriesLine } from '../series';
 import { cite, resetCitations, wireCitations } from '../cite';
 import { accessedNote, factsFor, webPage, webPageLink, withSources } from './detail-facts';
-import { backlinks, crossedPaths, relationshipSections, shownElsewhere } from './detail-sections';
+import { backlinks, crossedPaths, holdingsSections, relationshipSections, shownElsewhere } from './detail-sections';
 
 export function detail(main: HTMLElement, plural: Plural, slug: string) {
   loading(main);
@@ -33,6 +33,9 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const v = factsFor(e);
       document.title = `${v.title} · Art History`;
       const facts = withSources(e, v.facts.filter(([, value]) => value));
+      // a holder (collector, dealer, museum): what it held, one line per work, instead of every provenance link
+      const listed = e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r));
+      const holdings = e.type === 'artwork' ? null : holdingsSections(listed, e.bibliography);
       const web = webPage(e);
       const hasMap = e.type === 'place' ? !!e.location : e.type === 'event' ? !!(e.area ?? e.location ?? e.place?.location) : e.type !== 'term' && e.type !== 'source';
       // an event on the start map: its years as the time window (the events layer follows it)
@@ -62,7 +65,8 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
             <div id="crossed-anchor"></div><section id="crossed" class="crossed" hidden></section>
-            ${relationshipSections(e.relationships.filter((r) => (e.type === 'polity' || r.category !== 'polity') && !shownElsewhere(e, r)), e.type, e.bibliography)}
+            ${holdings?.html ?? ''}
+            ${relationshipSections(holdings?.rest ?? listed, e.type, e.bibliography)}
             ${e.type === 'source'
               ? backlinks('Cited in', 'Entries whose texts cite this source.', e.mentioned_in)
               : backlinks('Mentioned in', 'Entries whose texts link to this one.', e.mentioned_in)}

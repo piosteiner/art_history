@@ -107,6 +107,10 @@ page's own link.
   handover not documented as direct a dashed rail with "handover not documented". The derived `owned_by` / `kept_in`
   relationships aren't repeated below it; on owners' pages they carry the same tag. In the graph, implied edges are
   dashed and faded. The artwork's map route includes its `kept_in` stops without frontend changes.
+- Holders' pages (collectors, dealers, museums): "Works held" — one line per artwork with every period it was held
+  (the owner's own and the estate's), "commissioned" / "held, not owned" tags; then "Acquired from" / "Passed on to",
+  one line per counterpart with how many works and when (`holdingsSections()` in `detail-sections.ts`). These
+  `owned_by` / `held_by` / `commissioned` / `transferred_to` links aren't listed again under Provenance.
 
 ## Series and other wholes (API migration 037)
 A part's page: "No. 21 of 36 in <whole>" (the chain upwards) and previous/next links; a whole's page: a grid of its parts.
@@ -176,6 +180,10 @@ place pages. Overlaps based on year-only or "c." dates are marked "possibly".
   return `bad_request`. The frontend uses -3000.
 - `GET /v1/map/presence?…&entities=artist/vincent-van-gogh,person/theo-van-gogh`: today the frontend filters single
   picks out of the full window response, which grows with the library.
+- **Holdings with their counterparts:** a holder's `transferred_to` links don't say which artwork changed hands, so
+  "Works held" can't say "from Fritz Nathan, 1948 (purchase) → to the Foundation, 1960" per work. Wish: `holdings` on
+  person / institution details from `provenance_chain` — per step the artwork, role, method, price, period and the
+  previous and next holder (`lag()` / `lead()` over the chain, partitioned by artwork).
 - `GET /v1/map/routes?entities=…`: several entities' map data in one request (today one request per chosen entry).
 - Large lists: pickers, list pages and the header search load every entry of a type (`listAll` in `src/api.ts`: pages of
   500, the rest in parallel once `total` says there are more) and sort and search in the browser. When that gets slow

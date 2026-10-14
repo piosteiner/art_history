@@ -681,6 +681,22 @@ test('provenance: owners in order, implied ends and undocumented handovers marke
   await expect(page.locator('.rel-list', { hasText: 'First Owner' })).toHaveCount(0); // under Provenance only
 });
 
+test('a holder’s page: works held one line each (own and estate periods), then whom it acquired from and passed on to', async ({ page }) => {
+  await page.goto('/people/emil-georg-buhrle');
+  const held = page.locator('.rel-holdings');
+  await expect(held.locator('h2')).toHaveText('Works held');
+  const sebastian = held.locator('> ul > li', { hasText: 'Heiliger Sebastian' });
+  await expect(sebastian).toHaveCount(1); // his ownership and his estate's: one line, both periods
+  await expect(sebastian).toContainText('16 February 1954–28 November 1956');
+  await expect(sebastian).toContainText('28 November 1956–1960');
+  await expect(held.locator('h3')).toHaveText(['Acquired from', 'Passed on to']);
+  const nathan = held.locator('ul', { has: page.locator('a', { hasText: 'Fritz Nathan' }) }).locator('li', { hasText: 'Fritz Nathan' });
+  await expect(nathan).toHaveCount(1); // one line per counterpart
+  await expect(nathan.locator('.tag')).toContainText(/\d+ works/);
+  // not repeated as single provenance links below
+  await expect(page.locator('.rel-provenance .rel-label', { hasText: 'owner of' })).toHaveCount(0);
+});
+
 test('provenance (063): computed artist and loan lines in italics, roles, joint owners, estates, prices', async ({ page }) => {
   const person = (slug: string, name: string) => ({ type: 'person', slug, name });
   await patch(page, GREAT_WAVE, (b) => {

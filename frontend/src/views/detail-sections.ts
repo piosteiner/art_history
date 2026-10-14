@@ -84,6 +84,57 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
   </section>`;
 }
 
+const HELD = new Set(['owned_by', 'held_by', 'commissioned']);
+const firstFrom = (rs: Relationship[]) => rs.map((r) => r.period?.from ?? r.period?.to ?? '9999').sort()[0];
+
+/**
+ * A holder's side of the provenance (a collector, a dealer, a museum): what it held, one line per artwork with its
+ * periods (its own and, say, its estate's), then whom it acquired from and passed works on to, one line per
+ * counterpart with how often and when — a dealer's network at a glance. The rest of the Provenance group as usual.
+ * Null when the page holds nothing.
+ */
+export function holdingsSections(rels: Relationship[], bibliography?: Record<string, SourceHint>): { html: Html; rest: Relationship[] } | null {
+  const held = rels.filter((r) => r.derived && r.direction === 'incoming' && r.entity.type === 'artwork' && HELD.has(r.type)
+    || r.derived && r.type === 'commissioned' && r.direction === 'outgoing');
+  if (!held.length) return null;
+  const transfers = rels.filter((r) => r.derived && r.type === 'transferred_to');
+  const rest = rels.filter((r) => !held.includes(r) && !transfers.includes(r));
+
+  const works = new Map<string, Relationship[]>();
+  for (const r of held) works.set(r.entity.slug, [...(works.get(r.entity.slug) ?? []), r]);
+  const rows = [...works.values()].sort((a, b) => firstFrom(a).localeCompare(firstFrom(b)));
+  const tags = (rs: Relationship[]) => html`${rs.some((r) => r.type === 'commissioned') ? html` <span class="tag" title="Ordered the work from the artist">commissioned</span>` : ''}${
+    rs.some((r) => r.type === 'held_by') && !rs.some((r) => r.type === 'owned_by') ? html` <span class="tag" title="Held it without owning it: as a dealer's agent, a loan, a deposit">held, not owned</span>` : ''}`;
+
+  const counterparts = (direction: 'incoming' | 'outgoing') => {
+    const by = new Map<string, Relationship[]>();
+    for (const r of transfers.filter((t) => t.direction === direction)) {
+      const key = `${r.entity.type}/${r.entity.slug}`;
+      by.set(key, [...(by.get(key) ?? []), r]);
+    }
+    return [...by.values()].sort((a, b) => b.length - a.length || a[0].entity.name.localeCompare(b[0].entity.name));
+  };
+  const network = (title: string, groups: Relationship[][]) => (groups.length ? html`<h3>${title}</h3>
+    <ul class="rel-list">${groups.map((g) => html`<li>${link(g[0].entity.type, g[0].entity.slug, g[0].entity.name)}
+      ${g.length > 1 ? html`<span class="tag">${String(g.length)} works</span>` : ''}
+      <span class="muted">${[...new Set(g.map((r) => r.period?.label).filter(Boolean))].join(' · ')}</span></li>`)}</ul>` : '');
+
+  return {
+    rest,
+    html: html`<section class="rel-group rel-holdings">
+      <h2>Works held</h2>
+      <p class="muted small">Works held, from the provenance of each work, in the order they came.</p>
+      <ul class="rel-list">${rows.map((rs) => html`<li>
+        ${link('artwork', rs[0].entity.slug, rs[0].entity.name)}${tags(rs)}
+        ${rs.filter((r) => r.period).map((r, i) => html`${i ? html`<span class="muted">,</span>` : ''}<span class="muted">${r.period!.label}</span>${impliedEnd(r.end_basis)}`)}
+        ${uncertain(rs.find((r) => r.certainty && r.certainty !== 'attested')?.certainty)}${cite(rs.flatMap((r) => r.sources ?? []), bibliography)}
+      </li>`)}</ul>
+      ${network('Acquired from', counterparts('incoming'))}
+      ${network('Passed on to', counterparts('outgoing'))}
+    </section>`,
+  };
+}
+
 /** Backlinks: the entries whose texts link this one. */
 export const backlinks = (title: string, hint: string, refs: EntryRef[] | undefined) => (refs?.length
   ? html`<section class="backlinks"><h2>${title}</h2><p class="muted small">${hint}</p><ul class="plain-list">${refs.map((u) =>
