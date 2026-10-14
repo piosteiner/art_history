@@ -36,7 +36,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Add an e2e test for every admin feature. Deploy: `backend/deploy.sh` (pull, npm ci, **tests**, build, migrate, pm2 reload,
   health probe; `--skip-tests` only in emergencies).
 
-## Status (2026-10-05)
+## Status (2026-10-14)
 - ✅ Phase 0 housekeeping, ufw (22/80/443 only) · ✅ Phase 1 health check, nginx, TLS, pm2
 - ✅ Phase 2 PostgreSQL 18 + PostGIS 3.6, roles (owner/admin/api), migrations 001–003 (+ 005 `located_in`, 2026-09-28)
 - ✅ Phase 3: read API (entities, search, `/v1/map/…` GeoJSON, `/v1/graph/…`; `backend/docs/api.md`), migration 004,
@@ -82,8 +82,8 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   SIKART (057: portal links, "Find in SIKART…" by name, compare like the GND — `src/admin/sikart.js`, source `sikart`) built 2026-10-09.
   Wrong type: `type_doubt()`, Wikidata class check, `convert_entry()` + `entry_moves` redirects (055) built 2026-10-09.
   Given/family names (066: `split_person_name()` + trigger, `person_sort_key()`; people and artists sorted by family name, "Filed as" override) built 2026-10-14; frontend sorts by `sort_key` for every type since 2026-10-14.
-  Provenance on artwork maps (API `provenance` beside `features`: stops in chain order with `place_basis`, segments direct/implied with `between`, `unplaced`) built 2026-10-14;
-  frontend draws it instead of the route on artwork pages and on the start map (chosen artworks in their colour; the overview's routes follow the provenance too; not in a time window) since 2026-10-14 (`drawProvenance` in `map.ts`: numbered HTML markers, unplaced steps under the map).
+  Provenance on artwork maps (API `provenance` beside `features`: stops in chain order with `place_basis` — creation at the artist's residence, else their one undated workplace (`artist_workplace`, 2026-10-14; frontend: hollow, "probably"), segments direct/implied with `between`, `unplaced`) built 2026-10-14;
+  frontend draws it instead of the route on artwork pages and on the start map (chosen artworks in their colour; the overview's routes follow the provenance too; in a time window its steps dated in the window, `provenanceInWindow`) since 2026-10-14 (`drawProvenance` in `map.ts`: numbered HTML markers, unplaced steps under the map).
   Provenance flags on holders + "Research 1933–1945" links (068: `provenance_flag`, `holder_flag()`, check `flagged_holder`) built 2026-10-14.
   Batch pages: Wikidata items with dates / `?only=auto`, images for artworks without one (`/quality/batch/images`, `routes/queue.js`) built 2026-10-14.
   Spell check language of Markdown texts recognised as you type (EN/DE, `src/textlang.js`, toolbar switch) built 2026-10-14.

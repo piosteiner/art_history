@@ -1,7 +1,7 @@
 // Start page: map + timeline over what the pickers select (per type: all, none or chosen entries).
 // - no time window, nothing chosen individually → every place, sized by its number of links
 // - no time window, entries chosen             → their routes and places, one colour per entry
-// - a time window on the timeline              → who/what of the selection was physically where
+// - a time window on the timeline              → who/what of the selection was physically where (artworks: their provenance in the window)
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
 import { getEntityMap, getEventsMap, getPlacesMap, getPresence, getSites, listAll, PLURAL } from '../api';
 import { entries } from '../catalog';
@@ -9,7 +9,7 @@ import { creatorsOf, href, html, render } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
 import {
-  COLORS, createMap, focusEncounter, highlightRoute, PALETTE, placedProvenance, showEncounters, showEvents, showPlaces, showPresence, showSelection,
+  COLORS, createMap, focusEncounter, highlightRoute, PALETTE, placedProvenance, provenanceInWindow, showEncounters, showEvents, showPlaces, showPresence, showSelection,
   showSites, unplacedSteps, type ColoredEntityMap, type RouteInfo,
 } from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
@@ -17,7 +17,7 @@ import { replaceQuery } from '../router';
 import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
 import { reducedMotion } from '../theme';
 import { renderTimeline, type TimelineRow } from '../timeline';
-import type { EntityType, EventsMap, Plural, PresenceMap, StopProps } from '../types';
+import type { EntityType, EventsMap, Plural, PresenceMap, ProvenanceMap, StopProps } from '../types';
 import { showError } from './common';
 
 const STORAGE_KEY = 'arthistory:explore';
@@ -271,6 +271,20 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     if (!stale()) drawEvents(); // the overlays were re-added: events back on top, filtered by the window
   }
 
+  /**
+   * The artworks among the rows with a placed provenance step ("artwork/slug" → provenance): drawn in its order instead
+   * of a route by date, as on their own page (one request each, cached).
+   */
+  async function provenancesOf(rows: { entity: { type: EntityType; slug: string } }[]) {
+    const artworks = [...new Set(rows.filter((r) => r.entity.type === 'artwork').map((r) => r.entity.slug))];
+    const maps = await Promise.all(artworks.map((slug) => getEntityMap('artworks', slug).catch(() => null)));
+    return new Map(maps.flatMap((fc) => {
+      const prov = fc && placedProvenance(fc);
+      return prov ? [[`artwork/${fc.entity.slug}`, prov] as const] : [];
+    }));
+  }
+  const PROVENANCE_KEY = 'artworks: their provenance in its order (dashed: handover not documented, dotted: implied)';
+
   // Start map without single picks or a time window: every place plus the routes of everything selected, from all
   // dated presence links (one request; /v1/map/presence fails below year -4713, PostgreSQL's oldest date).
   const ALL_TIME = { from: -3000, to: new Date().getFullYear() + 1 };
@@ -284,22 +298,15 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, artistsOf))
       .map((f) => ({ ...f.properties, point: f.geometry.coordinates }));
     const where = new Map(places.features.map((f) => [f.properties.slug, f.geometry.coordinates] as const));
-    // artworks: their provenance in its order instead of a route by date, as on their own page (one request each, cached)
-    const artworks = [...new Set(rows.filter((r) => r.entity.type === 'artwork').map((r) => r.entity.slug))];
-    const maps = await Promise.all(artworks.map((slug) => getEntityMap('artworks', slug).catch(() => null)));
+    const provenances = await provenancesOf(rows);
     if (stale()) return;
-    const provenances = new Map(maps.flatMap((fc) => {
-      const prov = fc && placedProvenance(fc);
-      return prov ? [[`artwork/${fc.entity.slug}`, prov] as const] : [];
-    }));
     useRoutes(showPlaces(map, places, rows, (slug) => where.get(slug), provenances));
     crossings(rows, (slug) => where.get(slug));
     pinned = null;
     redrawLegend = () => render(legend, html`${routeLegend()}
       <span class="legend-key"><i class="dot" style="background:${COLORS.place}"></i> someone or something of the selection was there ·
         <i class="dot" style="background:${COLORS.association}"></i> associations only ·
-        <i class="ring" style="border-color:${COLORS.place}"></i> country or region · lines = routes in date order${provenances.size
-          ? '; artworks: their provenance in its order (dashed: handover not documented, dotted: implied)' : ''}</span>`);
+        <i class="ring" style="border-color:${COLORS.place}"></i> country or region · lines = routes in date order${provenances.size ? `; ${PROVENANCE_KEY}` : ''}</span>`);
     redrawLegend();
     const entries = new Set(rows.map((r) => `${r.entity.type}/${r.entity.slug}`)).size;
     status.textContent = rows.length
@@ -347,8 +354,10 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     const types = (['artist', 'person', 'artwork'] as const).filter((t) => sel[t].mode !== 'none');
     const span = w.from === w.to ? `${w.from}` : `${w.from}–${w.to}`;
     pinned = null;
+    let provenances = new Map<string, ProvenanceMap>();
     redrawLegend = () => render(legend, html`${routeLegend()}
-      <span class="legend-key"><i class="dot" style="background:${COLORS.presence}"></i> physically there in ${span} · lines = routes through the stops in ${span}, in date order</span>`);
+      <span class="legend-key"><i class="dot" style="background:${COLORS.presence}"></i> physically there in ${span} · lines = routes through the stops in ${span}, in date order${provenances.size
+        ? `; ${PROVENANCE_KEY}, its steps dated in ${span}` : ''}</span>`);
     if (!types.length) {
       useRoutes(showPresence(map, { type: 'FeatureCollection', features: [] }));
       redrawLegend();
@@ -359,7 +368,11 @@ export function explore(main: HTMLElement, params: URLSearchParams) {
     if (stale()) return;
     // the API filters by type; single picks are filtered here (backend wish: an `entities=` parameter)
     const features = fc.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, artistsOf));
-    useRoutes(showPresence(map, { ...fc, features }));
+    // an artwork that was somewhere in the window: its provenance's steps dated in the window, in the chain's order
+    const all = await provenancesOf(features.map((f) => f.properties));
+    if (stale()) return;
+    provenances = new Map([...all].map(([key, prov]) => [key, provenanceInWindow(prov, w)]));
+    useRoutes(showPresence(map, { ...fc, features }, provenances));
     redrawLegend();
     const at = new Map(features.map((f) => [f.properties.place.slug, f.geometry.coordinates] as const));
     crossings(features.map((f) => ({ ...f.properties, point: f.geometry.coordinates })), (slug) => at.get(slug));

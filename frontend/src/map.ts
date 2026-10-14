@@ -414,6 +414,19 @@ function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceDrawing[
   }
 }
 
+/**
+ * The provenance inside a time window: the stops whose dates overlap it, and the segments with both ends among them.
+ * Undated steps stay out — we can't say they were in the window.
+ */
+export function provenanceInWindow(prov: ProvenanceMap, w: { from: number; to: number }): ProvenanceMap {
+  const inside = new Set(provenanceStops(prov).filter((f) => overlaps(f.properties.period, w)).map((f) => f.properties.step));
+  return {
+    ...prov,
+    features: prov.features.filter((f) => (f.properties.layer === 'provenance_stop'
+      ? inside.has(f.properties.step) : inside.has(f.properties.from_step) && inside.has(f.properties.to_step))),
+  };
+}
+
 /** The steps without a place, one per line, numbered with their step: under the map, so every step is visible somewhere. */
 export const unplacedSteps = (prov: ProvenanceMap) => html`<ol class="unplaced-list">${prov.unplaced.map((s) => html`<li value="${s.step}">
   ${provenanceHolder(s)}${s.kind === 'creation' ? ', creation' : ''}${s.period ? `, ${s.period.label}` : ''}</li>`)}</ol>`;
@@ -681,11 +694,12 @@ function bindRoutes(map: MapLibre) {
 
 /**
  * Groups presence features by place: one circle per place, sized by how many people/works were there; plus each
- * entry's route through its stops inside the window.
+ * entry's route through its stops inside the window — for an artwork in `provenances`, its provenance inside the
+ * window (provenanceInWindow) instead.
  */
-export function showPresence(map: MapLibre, fc: PresenceMap): RouteInfo[] {
+export function showPresence(map: MapLibre, fc: PresenceMap, provenances: Map<string, ProvenanceMap> = new Map()): RouteInfo[] {
   const at = new Map(fc.features.map((x) => [x.properties.place.slug, x.geometry.coordinates] as const));
-  const routes = buildRoutes(fc.features.map((x) => ({ ...x.properties, point: x.geometry.coordinates })), (slug) => at.get(slug));
+  const routes = buildRoutes(fc.features.map((x) => ({ ...x.properties, point: x.geometry.coordinates })), (slug) => at.get(slug), provenances);
   const info = routeInfo(map, routes);
   type Group = { coords: [number, number]; name: string; slug: string; venue: { type: string; slug: string; name: string } | null; rows: PresenceMap['features'] };
   const byPlace = new Map<string, Group>();

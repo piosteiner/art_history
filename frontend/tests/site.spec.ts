@@ -257,12 +257,25 @@ test('start map: a chosen artwork shows its provenance as on its own page, in it
   await expect(popup).toContainText('Heiliger Sebastian'); // named: several entries can be on the map
   await expect(popup).toContainText('Arthur Kauffmann');
   await expect(popup).toHaveCount(1); // not also the popup of a dot underneath
-  // a time window shows presence instead (dates, not the provenance): the markers go with the routes
+  // a time window shows presence instead: no numbered markers, but the route is the provenance's steps dated in the
+  // window (4 London 1938–1954, 6–8 Zürich), in the chain's order — one line London → Zürich, the handover documented
   await page.fill('input[name=from]', '1950');
   await page.fill('input[name=to]', '1960');
   await page.press('input[name=to]', 'Enter');
   await expect(page.locator('#chips .chip')).toHaveText(/Time window 1950–1960/);
   await expect(stops).toHaveCount(0);
+  type F = { properties: { slug: string; style: string; stops: string } };
+  await page.waitForFunction(() => {
+    const m = (window as unknown as { __maps?: { getLayer(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
+    return !!m?.getLayer('ov-routes') && m.querySourceFeatures('ov-routes').length > 0;
+  });
+  const routes = await page.evaluate(() => (window as unknown as { __maps: { querySourceFeatures(id: string): F[] }[] }).__maps.at(-1)!
+    .querySourceFeatures('ov-routes').filter((f) => f.properties.slug === 'heiliger-sebastian')
+    .map((f) => ({ style: f.properties.style, steps: (JSON.parse(f.properties.stops) as { step: number }[]).map((s) => s.step) })));
+  expect(routes.length).toBeGreaterThan(0);
+  expect(routes.every((r) => r.style === 'direct')).toBe(true); // not 'route': no line by date
+  expect(routes[0].steps).toEqual([4, 6, 7, 8]); // 2, 3 end before the window, 9 starts after it
+  await expect(page.locator('#legend')).toContainText('its steps dated in 1950–1960');
 });
 
 test('start map overview: artworks follow their provenance (chain order, dashed where undocumented), not a route by date', async ({ page }) => {
