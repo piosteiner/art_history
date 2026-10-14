@@ -15,6 +15,9 @@ const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'It
 const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1853-03-30</code> · <code>1886-03/1888-02-20</code> (from/to, inclusive)
   · <code>c. 1755</code> (±5 years) · <code>13th century</code> · <code>late 13th century</code> · <code>first half of the 13th century</code> · <code>1880s</code>`;
 const HINTS = {
+  family_name: html`With its particle: “van Gogh”, “de la Tour” — sorted under G, T (a lowercase particle is skipped); filled from the name for new entries.`,
+  given_name: html`With a suffix: “Jan, the Elder”. Japanese names: the given name here, the family name beside it.`,
+  sort_name: html`Only when the family name doesn't do: an art name (“Hokusai”), a single name, “Goya y Lucientes, Francisco de”.`,
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.
     Links: type <code>[[</code> and a name to pick any entry — <code>[[artist/katsushika-hokusai]]</code>, a glossary term <code>[[contrapposto]]</code>; own words after <code>|</code>: <code>[[contrapposto|the pose]]</code>.
     Cite: <code>[[source/busch-1993|55]]</code> → footnote "Busch 1993, S. 55."; own footnote: <code>^[Vgl. [[source/busch-1993|bes. S. 55]].]</code>`,
@@ -38,6 +41,9 @@ const HINTS = {
 // Field names and explanations per entry type, where one word means different things ("kind" of an artwork vs. of a
 // place) or two fields are easily confused (an artwork's object type, medium and materials).
 const LABELS = {
+  // given and family names (066): the list sorts by family name; "Filed as" overrides (art names, single names)
+  'artist.given_name': 'Given name(s)', 'artist.family_name': 'Family name', 'artist.sort_name': 'Filed as',
+  'person.given_name': 'Given name(s)', 'person.family_name': 'Family name', 'person.sort_name': 'Filed as',
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
   'artwork.title_status': 'Title: original or translation',
@@ -314,13 +320,13 @@ const SECTIONS = {
     IDS(),
   ],
   artist: [
-    { title: 'Name', id: 'names', rows: [['name'], ['sort_name'], ['names']] },
+    { title: 'Name', id: 'names', rows: [['name'], ['given_name', 'family_name', 'sort_name'], ['names']] },
     { title: 'Life', id: 'life', rows: [['birth', 'death']] },
     { title: 'Biography', id: 'text', rows: [['biography_md']] },
     IDS(),
   ],
   person: [
-    { title: 'Name', id: 'names', rows: [['name'], ['names']] },
+    { title: 'Name', id: 'names', rows: [['name'], ['given_name', 'family_name', 'sort_name'], ['names']] },
     { title: 'Who', id: 'who', rows: [['kind', 'occupations']] },
     { title: 'Dates', id: 'life', rows: [['birth', 'death'], ['active']] },
     { title: 'Description', id: 'text', rows: [['description_md']] },

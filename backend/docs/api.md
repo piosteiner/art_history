@@ -147,7 +147,7 @@ The detail says which: `geometry_source: {location: "own"|"derived", area: "own"
   `romanization` | `alternative`. A romanization's lang is the language in Latin script (`ja-Latn`, `zh-Latn-pinyin`).
 - `sort_key` — what to sort by: the name itself when it has Latin letters (also when it is an English translation);
   for a name in another script its romanization, else its furigana reading in Latin letters (歌川広重 → Utagawa
-  Hiroshige / utagawahiroshige). List results are ordered by it (artists: `sort_name` first).
+  Hiroshige / utagawahiroshige). List results are ordered by it (artists and people: family name first, see below).
 - `alt_names` / `alt_titles` — all other names as plain strings (unchanged, for older clients).
 - `search_text` — everything the entry is found by besides its name: other names, furigana readings, kana readings in
   Latin letters (Hepburn, long vowels both ways: "ほっかいどう · hokkaidou hokkaido"); `""` if none. For filtering
@@ -261,6 +261,12 @@ period, end_basis, notes_html, sources}]`.
   `provenance`, label = the method; certainty `possible` when not documented as direct). People who owned something
   have the role `owner`. Joint owners have their own `owned_by`; agents and custodians a `held_by` instead; a step with
   the method `commission` also gives `commissioned` (owner → artwork; the patron's role `patron`).
+
+### Names of artists and people (066)
+Artists and people have `given_name`, `family_name` and `sort_name` ("filed as": an override such as "Hokusai"), each
+`null` when not set; their `sort_key` is "family, given" without a leading lowercase particle ("van Gogh" →
+"Gogh, Vincent"; "de La Tour" → "La Tour, Georges"), else `sort_name`, else the name. Lists are ordered by it — sort
+by `sort_key` for every type, artists included (no longer `sort_name ?? name`).
 
 ## Search
 `GET /v1/search?q=edo` — top 20 matches across all types: `{type, slug, name, kind, period, score}`.

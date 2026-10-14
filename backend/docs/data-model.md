@@ -457,3 +457,11 @@ without the leading article for titles — `strip_article(key, lang)` picks the 
 (`<name>_lang`); people and places keep theirs. Order with the ICU collation `sort_natural` (`und-u-kn`: language-
 neutral root order, numbers by value): `ORDER BY sort_key COLLATE sort_natural` — the database's own collation is
 C.UTF-8 (byte order). `src/sortkey.js` builds these expressions for the queries.
+
+## Given and family names (migration 066)
+Artists and people: `given_name`, `family_name` (with its particle: "van Gogh", "de La Tour"), `sort_name` (override).
+`person_sort_key()` = `sort_name`, else `family_name` without leading lowercase particles + ", " + `given_name`, else
+the name's sort key. `split_person_name(name, east_asian)` fills the two fields for new entries and changed names
+(trigger `fill_person_names`, only when both are empty) and filled the existing ones; it leaves alone single names,
+titles, "of"/"y"/"and", groups ("… family"), article pseudonyms ("Le Corbusier") and East Asian names (whose Latin
+spelling may be in either order).

@@ -12,7 +12,7 @@ test('presence: who else is on an entry, and in which field', async ({ userA, us
   await userB.goto('/artists');
   await expect(userB.locator('.presence-badge').first()).toHaveText('tester editing');
   await userB.goto('/artists/paul-gauguin');
-  await expect(userB.locator('.presence-bar')).toHaveText(/tester editing · in Sort name/);
+  await expect(userB.locator('.presence-bar')).toHaveText(/tester editing · in Filed as/);
   await userA.close();
   await expect(userB.locator('.presence-bar')).toBeHidden();
 });

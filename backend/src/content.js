@@ -26,12 +26,13 @@ const TYPES = [
     name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period', country_codes: 'text[]',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
-    name: 'name', sort_name: 'text', names: 'names', birth: 'date', death: 'date',
+    // given/family name (066): sorted by family name; sort_name ("Filed as") overrides
+    name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', birth: 'date', death: 'date',
     biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   // people: everyone relevant who isn't an artist (poets, rulers, monks, sitters …) and groups (families, orders);
   // "patron" is a role from the relationships commissioned / patron of (migration 024)
   { type: 'person', folder: 'people', table: 'people', name: 'name', fields: {
-    name: 'name', names: 'names', kind: 'text', occupations: 'text[]', birth: 'date', death: 'date', active: 'period',
+    name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', kind: 'text', occupations: 'text[]', birth: 'date', death: 'date', active: 'period',
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', founded: 'date', place: 'ref:place', location: 'point', address: 'text',

@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Given and family names; artists and people sorted by family name (migration 066)
+- **What:** `given_name`, `family_name` for artists and people, `sort_name` ("Filed as") for people too;
+  `split_person_name()` + trigger `fill_person_names` (insert, or a changed name, when both fields are empty);
+  existing entries filled (audit source `migration`); `person_sort_key()` for `entity_index.sort_key` and every order
+  of artists/people (`src/sortkey.js`). Admin: the three fields in the Name section with hints. API: the three fields
+  in lists and details; artists ordered by `sort_key` like everything else (docs/api.md).
+- **Why:** owner: sort people by family name, not first name.
+- **Left for the owner (not split, by design):** Japanese names (order varies in our spellings): Asai Chū, Eikō Hosoe,
+  Hasegawa Tōhaku, Itō Jakuchū, Maruyama Ōkyo, Onchi Kōshirō, Tōshūsai Sharaku, Utagawa Kuniyoshi, Yukio Mishima;
+  Kōshō; Baron Louis van der Heyden à Hauzeur, Charles III of Spain, José de Salamanca y Mayol, Thomas Harvey of
+  Catton. Hokusai and Hiroshige keep their "Filed as".
+- **Revert:** restore `entity_index` (definition before 066), drop the triggers and functions, the columns; revert.
+
+## 2026-10-14
+
 ### Admin: spell check language of Markdown texts recognised (English / German) (no schema change)
 - **What:** `src/textlang.js` `guessLang()` (shared with the browser bundle): counts common function words of each
   language (+ umlauts as a hint), ignoring [[links]], link targets and code; undecided for short or mixed texts.
