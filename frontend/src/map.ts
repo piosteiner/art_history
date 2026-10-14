@@ -279,6 +279,9 @@ export const provenanceHolder = (s: ProvenanceMapStep): Html =>
 /** The same as plain text: "Estate of Hedwig Frieda Ullmann". */
 const holderText = (s: ProvenanceMapStep) => `${s.role === 'estate' ? 'Estate of ' : ''}${s.holder?.name ?? s.holder_label ?? 'Unknown owner'}`;
 
+/** The place is inferred from where the artist lived or worked: drawn hollow, "probably". */
+export const probable = (s: Pick<ProvenanceStopProps, 'place_basis'>) => s.place_basis === 'artist_residence' || s.place_basis === 'artist_workplace';
+
 const STOP_ROLE: Record<string, string> = { dealer: 'dealer', agent: 'agent', custodian: 'custodian' };
 
 /** One step in a place's popup: holder, role, how and when, how we know the place. */
@@ -287,12 +290,12 @@ function stepRow(s: ProvenanceStopProps) {
   const how = [made ? null : s.method && s.method !== 'unknown' ? s.method.replace('_', ' ') : null, s.period?.label].filter(Boolean).join(' · ');
   return html`<li value="${s.step}">
     ${provenanceHolder(s)}${s.role && STOP_ROLE[s.role] && s.kind !== 'loan' ? html` <span class="tag">${STOP_ROLE[s.role]}</span>` : ''}
-    ${made ? html` <span class="tag">${s.place_basis === 'artist_residence' ? 'probably made here' : 'made here'}</span>` : ''}
+    ${made ? html` <span class="tag">${probable(s) ? 'probably made here' : 'made here'}</span>` : ''}
     ${s.kind === 'loan' ? html` <span class="tag">on loan</span>` : ''}
     ${s.certainty && s.certainty !== 'attested' ? html` <span class="tag">${s.certainty}</span>` : ''}
     ${how ? html`<br><span class="muted">${how}</span>` : ''}
     ${s.place_basis === 'holder_seat' ? html`<br><span class="muted">at the institution's seat</span>` : ''}
-    ${!made && s.place_basis === 'artist_residence' ? html`<br><span class="muted">probably: where the artist lived</span>` : ''}
+    ${!made && probable(s) ? html`<br><span class="muted">probably: where the artist ${s.place_basis === 'artist_workplace' ? 'worked' : 'lived'}</span>` : ''}
   </li>`;
 }
 
@@ -393,7 +396,7 @@ function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceDrawing[
       const first = steps[0];
       const label = stepRuns(steps.map((s) => s.step));
       const el = document.createElement('div');
-      const hollow = steps.every((s) => s.place_basis === 'artist_residence');
+      const hollow = steps.every(probable);
       const area = steps.every((s) => s.precision === 'region' || s.precision === 'country');
       el.className = `prov-stop${hollow ? ' hollow' : ''}${area ? ' area' : ''}`;
       el.style.setProperty('--pc', it.color);

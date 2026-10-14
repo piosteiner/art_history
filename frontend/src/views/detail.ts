@@ -92,7 +92,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const mapEl = main.querySelector<HTMLElement>('#map')!;
       const legend = main.querySelector<HTMLElement>('#legend')!;
       // MapLibre loads only for pages with a map (terms and sources have none)
-      mapModule!.then(({ createMap, showEntity, showOwnSite, showPoint, showProvenance, unplacedSteps, placedProvenance }) => {
+      mapModule!.then(({ createMap, showEntity, showOwnSite, showPoint, showProvenance, unplacedSteps, placedProvenance, probable }) => {
         if (!current()) return;
         const map = createMap(mapEl);
         cleanup = () => map.remove();
@@ -138,8 +138,8 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
             const c = COLORS.provenance;
             render(legend, html`
               ${prov ? html`
-                ${provStops.some((s) => s.place_basis !== 'artist_residence') ? html`<span><i class="dot" style="background:${c}"></i>holders, numbered in the provenance's order</span>` : ''}
-                ${provStops.some((s) => s.place_basis === 'artist_residence') ? html`<span><i class="ring ring-dashed" style="border-color:${c}"></i>probably made here (where the artist lived)</span>` : ''}
+                ${provStops.some((s) => !probable(s)) ? html`<span><i class="dot" style="background:${c}"></i>holders, numbered in the provenance's order</span>` : ''}
+                ${provStops.some(probable) ? html`<span><i class="ring ring-dashed" style="border-color:${c}"></i>probably made here (where the artist lived or worked)</span>` : ''}
                 ${provStops.some((s) => s.precision === 'region' || s.precision === 'country') ? html`<span><i class="ring ring-area" style="border-color:${c}"></i>only the region or country known</span>` : ''}
                 ${provSegments.some((s) => !s.implied && s.direct) ? html`<span><i class="line" style="background:${c}"></i>handover documented</span>` : ''}
                 ${provSegments.some((s) => !s.implied && !s.direct) ? html`<span><i class="line line-dashed" style="border-color:${c}"></i>handover not documented</span>` : ''}

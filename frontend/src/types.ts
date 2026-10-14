@@ -432,13 +432,13 @@ export interface ProvenanceMapStep {
 }
 /**
  * A step with a place. `place_basis`: `recorded` (the step's own) · `holder_seat` (the institution's seat) ·
- * `created_in` (the recorded place of creation) · `artist_residence` (where the artist lived then: "probably").
+ * `created_in` (the recorded place of creation) · `artist_residence` / `artist_workplace` (where the artist lived or worked then: "probably").
  */
 export interface ProvenanceStopProps extends ProvenanceMapStep {
   layer: 'provenance_stop';
   place: Ref;
   precision: 'site' | 'settlement' | 'region' | 'country' | null;
-  place_basis: 'recorded' | 'holder_seat' | 'created_in' | 'artist_residence';
+  place_basis: 'recorded' | 'holder_seat' | 'created_in' | 'artist_residence' | 'artist_workplace';
 }
 /** From one placed step to the next; `between`: the steps passed over that have no place. */
 export interface ProvenanceSegmentProps {
