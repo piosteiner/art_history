@@ -149,8 +149,8 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
               ${layers.has('association') ? html`<span><i class="ring" style="border-color:${COLORS.association}"></i>association (not travel)</span>` : ''}
               ${own ? html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>` : ''}
               ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}
-              ${prov?.unplaced.length ? html`<p class="legend-note" id="unplaced">Not on the map (place not recorded):
-                ${prov.unplaced.map((s, i) => html`${i ? '; ' : ''}${String(s.step)} ${provenanceHolder(s)}${s.kind === 'creation' ? ', creation' : ''}${s.period ? `, ${s.period.label}` : ''}`)}</p>` : ''}`);
+              ${prov?.unplaced.length ? html`<div class="legend-note" id="unplaced">Not on the map (place not recorded):
+                <ol class="unplaced-list">${prov.unplaced.map((s) => html`<li value="${s.step}">${provenanceHolder(s)}${s.kind === 'creation' ? ', creation' : ''}${s.period ? `, ${s.period.label}` : ''}</li>`)}</ol></div>` : ''}`);
             legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {
               const btn = ev.currentTarget as HTMLButtonElement;
               const all = btn.dataset.fit === 'all';

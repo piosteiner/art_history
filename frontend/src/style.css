@@ -113,6 +113,8 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .ring-dashed { border-style: dashed; }
 .ring-area { width: 16px; height: 16px; background: color-mix(in srgb, var(--c-provenance) 25%, transparent); }
 .legend-note { flex-basis: 100%; margin: .2rem 0 0; }
+.unplaced-list { margin: .15rem 0 0; padding-left: 1.6rem; }
+.unplaced-list li { margin: .1rem 0; }
 
 /* an artwork's provenance on its map: numbered stops (HTML markers), in the chain's order */
 .prov-stop {

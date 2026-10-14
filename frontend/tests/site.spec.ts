@@ -205,8 +205,12 @@ test('artwork map: the provenance in chain order — numbered stops, segments wi
   const legend = page.locator('#legend');
   await expect(legend).toContainText('numbered in the provenance\'s order');
   await expect(legend).not.toContainText('route, in date order'); // replaced, not drawn twice
-  await expect(page.locator('#unplaced')).toContainText('1 Niklaus Weckmann, creation, early 16th century');
-  await expect(page.locator('#unplaced')).toContainText('5 Estate of Hedwig Frieda Ullmann');
+  const unplaced = page.locator('#unplaced li'); // one per line, numbered with the step
+  await expect(unplaced).toHaveCount(2);
+  await expect(unplaced.nth(0)).toHaveAttribute('value', '1');
+  await expect(unplaced.nth(0)).toContainText('Niklaus Weckmann, creation, early 16th century');
+  await expect(unplaced.nth(1)).toHaveAttribute('value', '5');
+  await expect(unplaced.nth(1)).toContainText('Estate of Hedwig Frieda Ullmann');
 
   await stops.filter({ hasText: '6–9' }).click();
   const popup = page.locator('.maplibregl-popup');
