@@ -79,6 +79,12 @@ the timeline; at most 24 drawn). Time window → presence in the window, limited
 the stops inside the window. The full-screen button on the map (every map) enlarges the map together with its legend and layer
 switches (`createMap(container, fullscreen)`; on iPhone, without a Fullscreen API, it fills the window). A remembered view (time window, picks) says so above the map, with "Start fresh". A time window is also named in a chip above the map ("Time window 1888–1889 ✕"; on a phone the timeline that set it is far below); the picks are named by the pickers' own buttons.
 
+**Curated views** (`GET /v1/featured` → `{data: [{slug, title, intro_html, query}]}`, published only, by position then
+title; backend table `featured_views`, edited in the admin panel; built 2026-10-14): `/` shows the first view with a
+switcher and its intro, the others at `/?featured=<slug>` (an unknown slug shows the first), everything at `/?all`.
+A view is the start map's own URL query (current slugs, only the start map's keys); changing the picks or the window
+makes it your own. Without published views (or without the API) `/` shows everything.
+
 ## People
 Formerly patrons (API migration 024): `/people`, type `person`, with kind, occupations, life dates (else `active`)
 and derived `roles` (patron, owner, depicted). Old `/patrons/…` addresses and `patrons=` in explore links are converted.
@@ -173,19 +179,6 @@ time window), as a yellow halo on the map, in place popups ("At the same time he
 place pages. Overlaps based on year-only or "c." dates are marked "possibly".
 
 ## Wishes for the backend
-- **Curated start views — requested 2026-10-14, the frontend is built and waits for it.** The home page (`/`) shows
-  curated views of the start map instead of every entry (`src/views/explore.ts`; until the endpoint exists it falls back
-  to everything). Please build:
-  - Migration `featured_views`: `id` identity, `slug` text unique (slug format), `title` text not null, `intro` text
-    (Markdown, `[[type/slug]]` links like other texts), `query` text not null — the start map's own URL query, e.g.
-    `artists=vincent-van-gogh&artworks=none&movements=none&polities=none&people=none&from=1886&to=1890` —, `sort_order`
-    integer, `published` boolean default false; the audit_log trigger like the other tables.
-  - `GET /v1/featured` → `{data: [{slug, title, intro_html, query}]}`, published only, ordered by `sort_order`, then title.
-  - Admin page (list with order, edit form): paste a URL from the public site and keep its query; a "Preview" link to
-    `https://arthistory.piogino.ch/?<query>`; a check that the query's keys are known (`artists`, `artworks`,
-    `movements`, `polities`, `people`, `from`, `to`) and its slugs exist — also as a quality check, since entries get
-    renamed (old slugs redirect, but a view should follow the rename like `[[links]]` do, 042). e2e test.
-  - The frontend: the first view at `/`, the others at `/?featured=<slug>`, everything at `/?all`.
 - **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise): `GET /v1/encounters?from=&to=&types=`
   = a self-join of presence links on `place_id` with `a.period && b.period` (daterange overlap, GiST index) and
   `a.period * b.period` as the overlap; today the browser does this over the full presence list.

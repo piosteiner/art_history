@@ -86,7 +86,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   frontend draws it instead of the route on artwork pages and on the start map (chosen artworks in their colour; the overview's routes follow the provenance too; in a time window its steps dated in the window, `provenanceInWindow`) since 2026-10-14 (`drawProvenance` in `map-provenance.ts`: numbered HTML markers, unplaced steps under the map).
   Provenance flags on holders + "Research 1933–1945" links (068: `provenance_flag`, `holder_flag()`, check `flagged_holder`) built 2026-10-14.
   Batch pages: Wikidata items with dates / `?only=auto`, images for artworks without one (`/quality/batch/images`, `routes/queue.js`) built 2026-10-14.
-  Curated home page (frontend 2026-10-14: `/` = first featured view + switcher, `/?featured=<slug>`, `/?all` = everything, last own view offered as "Continue") — **backend `featured_views` + `/v1/featured` + admin page requested** (frontend/README.md → Wishes); until then `/` shows everything.
+  Curated home page (frontend 2026-10-14: `/` = first featured view + switcher, `/?featured=<slug>`, `/?all` = everything, last own view offered as "Continue") — uses the backend below; no views published yet, so `/` shows everything until the owner publishes one.
   Curated start views (069: `featured_views`, `current_featured_query()`, `featured_view_problems`; `/v1/featured`; admin `/featured`) built 2026-10-14.
   Spell check language of Markdown texts recognised as you type (EN/DE, `src/textlang.js`, toolbar switch) built 2026-10-14.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
