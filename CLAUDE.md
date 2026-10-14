@@ -85,6 +85,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Provenance on artwork maps (API `provenance` beside `features`: stops in chain order with `place_basis`, segments direct/implied with `between`, `unplaced`) built 2026-10-14;
   frontend draws it instead of the route on artwork pages and on the start map (chosen artworks in their colour; the overview's routes follow the provenance too; not in a time window) since 2026-10-14 (`drawProvenance` in `map.ts`: numbered HTML markers, unplaced steps under the map).
   Provenance flags on holders + "Research 1933–1945" links (068: `provenance_flag`, `holder_flag()`, check `flagged_holder`) built 2026-10-14.
+  Batch pages: Wikidata items with dates / `?only=auto`, images for artworks without one (`/quality/batch/images`, `routes/queue.js`) built 2026-10-14.
   Spell check language of Markdown texts recognised as you type (EN/DE, `src/textlang.js`, toolbar switch) built 2026-10-14.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
   Ideas later: impressions vs. design for prints; nightly auto-export commit; ISBN/DOI lookup for sources built 2026-10-12 (`booklookup.js`: Open Library, Crossref). Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.
