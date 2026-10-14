@@ -216,6 +216,7 @@ async function remove(db, step) {
 async function read(db, artworkId) {
   return (await db.query(`
     SELECT p.*, o.slug AS owner_slug, o.name AS owner_entity_name, l.slug AS location_slug, l.name AS location_name, pv.metadata,
+           p.period && daterange('1933-01-30', '1945-05-09') AS nazi_era, holder_flag(p.owner_type, p.owner_id) AS flag,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('type', c.owner_type, 'slug', e.slug, 'name', e.name) ORDER BY c.position), '[]')
               FROM provenance_co_owners_x c JOIN entity_index e ON (e.type, e.id) = (c.owner_type, c.owner_id)
              WHERE c.provenance_id = p.id) AS co_owners
@@ -284,10 +285,30 @@ const IMPLIED = { creation: 'implied — the creator and the date', loan: 'impli
 function ownerCell(s) {
   const one = (slug, type, name) => (slug ? html`<a href="/${BY_TYPE[type].folder}/${slug}">${name}</a>` : name);
   const co = (s.co_owners || []).map((c) => html` and ${one(c.slug, c.type, c.name)}`);
-  return html`${s.role === 'estate' ? 'Estate of ' : ''}${s.owner_slug ? one(s.owner_slug, s.owner_type, s.owner_entity_name) : s.owner_label}${co}
+  return html`${s.role === 'estate' ? 'Estate of ' : ''}${s.owner_slug ? one(s.owner_slug, s.owner_type, s.owner_entity_name) : s.owner_label}${s.flag ? html` <span class="tag flagged" title="Provenance flag: ${s.flag}">⚑ flagged</span>` : ''}${co}
     ${s.owner_slug && s.owner_label ? html` <span class="muted">(${s.owner_label})</span>` : ''}
     ${s.role && s.role !== 'owner' && s.role !== 'estate' ? html` <span class="tag">${s.role}</span>` : ''}`;
 }
+// Holders between 30 January 1933 and 8 May 1945 (or flagged): where to look them up. Lost Art takes the name in
+// the link; Proveana (behind a bot check) and the ERR database are searched on their own pages — the name is shown.
+const RESEARCH = [
+  { name: 'Lost Art', title: 'German Lost Art Foundation: search and found reports', url: (q) => `https://www.lostart.de/en/search?term=${encodeURIComponent(q)}` },
+  { name: 'Proveana', title: 'German Lost Art Foundation: people, dealers, collections and research results — search there for the name', url: () => 'https://www.proveana.de/en' },
+  { name: 'ERR (Jeu de Paume)', title: 'Nazi looting in France and Belgium: the owners whose works were taken', url: () => 'https://errproject.org/jeudepaume/owner_list.php' },
+  { name: 'Getty Provenance Index', title: 'sales, dealers’ stock books, collections', url: () => 'https://www.getty.edu/research/tools/provenance/search.html' },
+];
+function research(steps) {
+  const seen = new Set();
+  const who = steps.filter((s) => s.kind === 'step' && (s.nazi_era || s.flag)).map((s) => ({ name: s.owner_slug ? s.owner_entity_name : s.owner_label, s }))
+    .filter((x) => x.name && !seen.has(x.name) && seen.add(x.name));
+  if (!who.length) return '';
+  return html`<details class="research"${steps.some((s) => s.flag) ? ' open' : ''}><summary><b>Research 1933–1945</b>
+      <span class="muted small">— ${who.length} holder${who.length === 1 ? '' : 's'} in that period${steps.some((s) => s.flag) ? ' or flagged' : ''}</span></summary>
+    <ul class="small">${who.map(({ name, s }) => html`<li><b>${name}</b>${s.period_label ? html` <span class="muted">(${s.period_label})</span>` : ''}${s.flag ? html` <span class="tag flagged">⚑ ${s.flag}</span>` : ''}:
+      ${RESEARCH.map((r, i) => html`${i ? ' · ' : ''}<a href="${r.url(name)}" target="_blank" rel="noopener" title="${r.title}">${r.name} ↗</a>`)}</li>`)}</ul>
+    <p class="muted small">Lost Art opens with the name searched; in the others, search for it there. Record what you find as a step's notes and source.</p></details>`;
+}
+
 function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
   const stored = steps.filter((s) => s.kind === 'step');
   let n = 0;
@@ -312,7 +333,8 @@ function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
         <td>${!implied && marker ? marker(cites[s.id], { provenance: s.id, label: `step ${n} (${s.owner_slug ? s.owner_name : s.owner_label})` }, back) : ''}</td>
         <td class="nowrap">${implied ? '' : html`<a href="/provenance/${s.id}/edit">edit</a>`}</td></tr></tbody>`;
     })}</table></div>
-      ${stored.length > 1 ? html`<p class="muted small">Drag ⠿ to change the order — the periods are recomputed.</p>` : ''}`
+      ${stored.length > 1 ? html`<p class="muted small">Drag ⠿ to change the order — the periods are recomputed.</p>` : ''}
+      ${research(steps)}`
     : html`<p class="muted">None yet. The owners in order, as the sources record them: when each acquired the work and how.</p>`}
     <details><summary><b>+ Add provenance step</b></summary>${form({ action: `/artworks/${e.slug}/provenance`, submit: 'Add' })}</details>`;
 }

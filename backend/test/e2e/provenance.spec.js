@@ -1,6 +1,6 @@
 // Provenance (migration 031): steps entered on the artwork page; periods computed (end recorded / implied / ongoing);
 // derived edges owned_by / kept_in / transferred_to in the graph, the map route, the owner's page and roles; checks.
-const { test, expect, sql, API } = require('./helpers');
+const { test, expect, sql, API, submitForm } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
@@ -191,4 +191,27 @@ test('the provenance on the map: where it was made from where the artist lived, 
          VALUES ('artwork', entity_id('artwork', 'test-bassin'), 'created_in', 'place', entity_id('place', 'test-zurich'))`);
   const again = (await api(request, '/map/artworks/test-bassin')).provenance;
   expect(again.features.find((f) => f.properties.kind === 'creation').properties.place_basis).toBe('created_in');
+});
+
+test('provenance flags and research 1933–1945: a flagged holder is a warning; links to Lost Art and others (068)', async ({ userA, request }) => {
+  sql(`INSERT INTO provenance (artwork_id, position, owner_person_id, method, acquired, acquired_label) VALUES
+         (entity_id('artwork', 'test-bassin'), 1, entity_id('person', 'test-michel-monet'), 'inheritance', '[1926-01-01,1927-01-01)', '1926'),
+         (entity_id('artwork', 'test-bassin'), 2, entity_id('person', 'test-buhrle'), 'purchase', '[1937-01-01,1938-01-01)', '1937')`);
+  await userA.goto('/people/test-buhrle/edit');
+  await userA.click('summary:has-text("Provenance flag…")');
+  await userA.fill('#f-provenance_flag', 'bought from dealers in occupied France — see Kunsthaus report 2024');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/done=published/);
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'flagged_holder' AND entity_id = entity_id('artwork', 'test-bassin')`))
+    .toBe('Test Emil Bührle (from 1937): bought from dealers in occupied France — see Kunsthaus report 2024');
+  expect((await api(request, '/people/test-buhrle')).provenance_flag).toBeUndefined();   // not public
+
+  await userA.goto('/artworks/test-bassin');
+  await expect(userA.locator('table.provenance .tag.flagged')).toHaveCount(1);
+  const research = userA.locator('details.research');
+  await expect(research).toHaveAttribute('open', '');   // open: a holder is flagged
+  await expect(research.locator('li')).toHaveCount(2);  // Michel Monet (1926–1937, overlaps 1933) and Bührle
+  await expect(research.locator('li', { hasText: 'Test Emil Bührle' }).locator('a:has-text("Lost Art")'))
+    .toHaveAttribute('href', 'https://www.lostart.de/en/search?term=Test%20Emil%20B%C3%BChrle');
+  sql("UPDATE people SET provenance_flag = NULL WHERE slug = 'test-buhrle'; DELETE FROM live_docs WHERE entity_type = 'person'");
 });

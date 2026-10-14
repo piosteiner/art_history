@@ -28,15 +28,15 @@ const TYPES = [
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
     // given/family name (066): sorted by family name; sort_name ("Filed as") overrides
     name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', birth: 'date', death: 'date',
-    biography_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+    biography_md: 'md', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },  // flag: 068, admin only
   // people: everyone relevant who isn't an artist (poets, rulers, monks, sitters …) and groups (families, orders);
   // "patron" is a role from the relationships commissioned / patron of (migration 024)
   { type: 'person', folder: 'people', table: 'people', name: 'name', fields: {
     name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', kind: 'text', occupations: 'text[]', birth: 'date', death: 'date', active: 'period',
-    description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+    description_md: 'md', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', founded: 'date', place: 'ref:place', location: 'point', address: 'text',
-    description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json' } },
+    description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },
   // events (migration 047): something that happened — when, where (city; exact spot or area), part of a larger event;
   // depicted, taken part in and concerned via relationships
   { type: 'event', folder: 'events', table: 'events', name: 'name', fields: {

@@ -413,3 +413,6 @@ input.rel-picker { width: 13rem; padding: .15rem .4rem; }
 table.provenance tbody.implied td { font-style: italic; color: var(--muted); }
 table.provenance tbody.implied a { color: inherit; }
 .tag.implied { font-style: normal; border-style: dashed; }
+.tag.flagged { color: var(--err); border-color: var(--err); }  /* provenance flag (068) */
+details.research { margin-top: .75rem; }
+details.research ul { margin: .4rem 0; }

@@ -17,6 +17,7 @@ const DATE_HINT = html`e.g. <code>1853</code> · <code>1888-02</code> · <code>1
 const HINTS = {
   family_name: html`With its particle: “van Gogh”, “de la Tour” — sorted under G, T (a lowercase particle is skipped); filled from the name for new entries.`,
   given_name: html`With a suffix: “Jan, the Elder”. Japanese names: the given name here, the family name beside it.`,
+  provenance_flag: html`Only for a name that needs a closer look in provenance research — e.g. a dealer known to have handled looted art. Say why and where it is documented: every provenance step with this holder becomes a warning on the quality page (“Flagged holders”). Not in the API or on the public site — but, like every field, in the YAML export (content/, a public repo).`,
   sort_name: html`Only when the family name doesn't do: an art name (“Hokusai”), a single name, “Goya y Lucientes, Francisco de”.`,
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.
     Links: type <code>[[</code> and a name to pick any entry — <code>[[artist/katsushika-hokusai]]</code>, a glossary term <code>[[contrapposto]]</code>; own words after <code>|</code>: <code>[[contrapposto|the pose]]</code>.
@@ -44,6 +45,7 @@ const LABELS = {
   // given and family names (066): the list sorts by family name; "Filed as" overrides (art names, single names)
   'artist.given_name': 'Given name(s)', 'artist.family_name': 'Family name', 'artist.sort_name': 'Filed as',
   'person.given_name': 'Given name(s)', 'person.family_name': 'Family name', 'person.sort_name': 'Filed as',
+  provenance_flag: 'Provenance flag (why it needs checking)',
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
   'artwork.title_status': 'Title: original or translation',
@@ -307,6 +309,8 @@ const IMMOVABLE = ['building', 'garden', 'park', 'bridge', 'temple hall', 'shrin
 const WHOLES = ['series', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'];
 const METADATA = g('Metadata (JSON)…', ['metadata'], 'Free-form extras — sources noted by the Wikidata comparison end up here.');
 const IDS = (...more) => ({ title: 'Identifiers', id: 'ids', rows: [...more, ['wikidata_id'], METADATA] });
+// provenance flag (068): the owner's research list — a group, closed unless it has a value
+const FLAG = g('Provenance flag…', ['provenance_flag'], 'Your research list: holders whose provenance steps need a closer look.');
 const SECTIONS = {
   artwork: [
     { title: 'Title and names', id: 'names', rows: [['title'], ['title_status'], ['names']] },
@@ -322,21 +326,21 @@ const SECTIONS = {
   artist: [
     { title: 'Name', id: 'names', rows: [['name'], ['given_name', 'family_name', 'sort_name'], ['names']] },
     { title: 'Life', id: 'life', rows: [['birth', 'death']] },
-    { title: 'Biography', id: 'text', rows: [['biography_md']] },
+    { title: 'Biography', id: 'text', rows: [['biography_md'], FLAG] },
     IDS(),
   ],
   person: [
     { title: 'Name', id: 'names', rows: [['name'], ['given_name', 'family_name', 'sort_name'], ['names']] },
     { title: 'Who', id: 'who', rows: [['kind', 'occupations']] },
     { title: 'Dates', id: 'life', rows: [['birth', 'death'], ['active']] },
-    { title: 'Description', id: 'text', rows: [['description_md']] },
+    { title: 'Description', id: 'text', rows: [['description_md'], FLAG] },
     IDS(),
   ],
   institution: [
     { title: 'Name', id: 'names', rows: [['name'], ['names']] },
     { title: 'About', id: 'about', rows: [['kind', 'founded'], ['website_url']] },
     { title: 'Where it is', id: 'where', rows: [['place', 'address'], g('Exact location on the map…', ['location'], 'The building itself — puts the institution on the map.')] },
-    { title: 'Description', id: 'text', rows: [['description_md']] },
+    { title: 'Description', id: 'text', rows: [['description_md'], FLAG] },
     IDS(),
   ],
   place: [

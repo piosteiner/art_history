@@ -465,3 +465,11 @@ the name's sort key. `split_person_name(name, east_asian)` fills the two fields 
 (trigger `fill_person_names`, only when both are empty) and filled the existing ones; it leaves alone single names,
 titles, "of"/"y"/"and", groups ("… family"), article pseudonyms ("Le Corbusier") and East Asian names (whose Latin
 spelling may be in either order).
+
+## Provenance flags (migration 068)
+`provenance_flag` on people, institutions and artists: the owner's research note for a holder that needs a closer
+look (e.g. a dealer known to have handled looted art) — why, and where it is documented. `holder_flag(type, id)`
+reads it for a provenance holder (owner_type + owner_id); the check `flagged_holder` in `quality_issues_live` warns
+about every step and joint ownership with a flagged holder. Not in the API. The admin artwork page lists the holders
+of 1933-01-30 – 1945-05-08 (and flagged ones) with links to Lost Art, Proveana, the ERR database and the Getty
+Provenance Index.

@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Provenance research: flags on holders (068) and links for 1933–1945
+- **What:** migration 068: `provenance_flag` (people, institutions, artists), `holder_flag()`, check `flagged_holder`
+  in `quality_issues_live` (058's view, extended from production's definition). Admin: "Provenance flag…" in the
+  edit form; ⚑ on flagged holders in the provenance; "Research 1933–1945" under the provenance — holders of the period
+  with links to Lost Art (name searched), Proveana, ERR (Jeu de Paume) owners, Getty Provenance Index.
+  E2E in `provenance.spec.js`.
+- **Why:** owner's improvement list of 2026-10-14 — the 1933–1945 gaps need looking up; the owner keeps the list
+  of names to watch.
+- **Revert:** `git revert`, deploy; then `CREATE OR REPLACE VIEW quality_issues_live` without the two flagged_holder
+  branches, `DROP FUNCTION holder_flag`, drop the three columns.
+
 ### API compressed; inventory constraint validated (067); creation from the workplace; reference records on the edit page
 - **What:**
   - nginx `api.arthistory.piogino.ch`: `gzip_proxied any`, `gzip_types application/json application/geo+json`
