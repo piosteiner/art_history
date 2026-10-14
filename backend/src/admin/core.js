@@ -251,9 +251,12 @@ function historyTable(rows, { showWhat = true, restoreFor = null } = {}) {
   })}</tbody></table></div>`;
 }
 
-const pager = (base, page, more) => html`<div class="actions">
-  ${page > 1 ? html`<a href="${base}${base.includes('?') ? '&' : '?'}page=${page - 1}">← newer</a>` : ''}
-  ${more ? html`<a href="${base}${base.includes('?') ? '&' : '?'}page=${page + 1}">older →</a>` : ''}</div>`;
+// The links to the neighbouring pages, after a table — with scripts the next page loads on its own as you scroll
+// (editor/infinite.js appends its rows; the links stay for a reload or without scripts). Lists in alphabetical
+// order say previous / more, the history (newest first) newer / older.
+const pager = (base, page, more, { prev = '← previous', next = 'more →' } = {}) => html`<div class="actions pager" data-infinite>
+  ${page > 1 ? html`<a href="${base}${base.includes('?') ? '&' : '?'}page=${page - 1}" rel="prev">${prev}</a>` : ''}
+  ${more ? html`<a href="${base}${base.includes('?') ? '&' : '?'}page=${page + 1}" rel="next">${next}</a>` : ''}</div>`;
 
 const pageParam = (req) => Math.max(1, Math.min(10000, Number.parseInt(req.query.page, 10) || 1));
 

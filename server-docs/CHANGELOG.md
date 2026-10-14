@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### Admin: endless lists
+- **What:** the lists (and the history pages) load the next page by themselves when you scroll near the end
+  (`src/admin/editor/infinite.js`: IntersectionObserver, rows of the next page appended, its pager taking over; a
+  MutationObserver picks up lists swapped by the live search). The page links stay for a reload / without scripts —
+  "← previous / more →" for alphabetical lists, "newer / older" for the history. E2E `infinite.spec.js`.
+- **Why:** owner: scroll through all entries without pages.
+- **Revert:** `git revert`, deploy.
+
 ### Admin: batch pages — Wikidata items with dates and "to complete" filter; images for artworks without one
 - **What:** `/quality/batch/wikidata`: each entry with what we know (dates, works held, why it was created), each hit
   with its years from Wikidata (one `wbgetentities` for the page, `getEntitiesBatch()`); an exact name is no longer

@@ -197,7 +197,7 @@ router.get('/:plural/:slug/history', async (req, res) => {
   send(req, res, {
     title: `History of ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'view' },
     body: html`<p class="muted"><a href="/${t.folder}/${e.slug}">← ${e.name}</a></p><h1>History</h1>
-      ${historyTable(h.rows, { restoreFor: { table: t.table, rowId: e.id } })}${pager(`/${t.folder}/${e.slug}/history`, page, h.more)}`,
+      ${historyTable(h.rows, { restoreFor: { table: t.table, rowId: e.id } })}${pager(`/${t.folder}/${e.slug}/history`, page, h.more, { prev: '← newer', next: 'older →' })}`,
   });
 });
 

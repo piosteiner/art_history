@@ -117,7 +117,7 @@ router.post('/quality/unack', async (req, res) => {
 router.get('/history', async (req, res) => {
   const page = pageParam(req);
   const h = await history(adminPool, 'true', [], { offset: (page - 1) * PAGE });
-  send(req, res, { title: 'History', body: html`<h1>History</h1>${historyTable(h.rows)}${pager('/history', page, h.more)}` });
+  send(req, res, { title: 'History', body: html`<h1>History</h1>${historyTable(h.rows)}${pager('/history', page, h.more, { prev: '← newer', next: 'older →' })}` });
 });
 
 module.exports = router;
