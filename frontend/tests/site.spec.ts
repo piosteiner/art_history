@@ -162,6 +162,14 @@ test('artists A–Z by the API\'s sort_key ("Family, Given"), also without a sor
   await expect(card.locator('xpath=preceding-sibling::li[contains(@class,"cards-heading")][1]')).toHaveText('K');
 });
 
+test('artworks A–Z by the API sort_key: titles without a leading article in their language', async ({ page }) => {
+  await page.goto('/artworks');
+  const heading = (title: string) => page.locator('.cards > li', { hasText: title }).first()
+    .locator('xpath=preceding-sibling::li[contains(@class,"cards-heading")][1]');
+  await expect(heading('Le Phare de Honfleur')).toHaveText('P'); // French "Le" (only English articles were dropped before)
+  await expect(heading('The Starry Night')).toHaveText('S');
+});
+
 test('privacy page from the footer; the site sets no cookies', async ({ page, context }) => {
   await page.goto('/artworks/the-great-wave-off-kanagawa');
   await expect(page.locator('.figure img')).toBeVisible();

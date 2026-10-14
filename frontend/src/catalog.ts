@@ -130,9 +130,6 @@ export function century(year: number | null | undefined) {
   return year > 0 ? `${ordinal(Math.floor((year - 1) / 100) + 1)} century` : `${ordinal(Math.floor(-year / 100) + 1)} century BCE`;
 }
 
-/** Titles sort without a leading article: "The Starry Night" under S. */
-const titleKey = (t: string) => t.replace(/^(the|a|an)\s+/i, '');
-
 // ---- sort values -----------------------------------------------------------------------------
 
 const byName = (key: string): SortValue => ({ value: fold(key), heading: letter(key) });
@@ -222,7 +219,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
           series: a.part_of
             ? { value: fold(`${a.part_of.title} ${String(a.part_number ?? '').padStart(6, '0')}`), heading: a.part_of.title }
             : { value: null, heading: 'Not in a series' },
-          title: byName(titleKey(a.title)), date: byYear(a.created), artist: byText(a.creator?.name, 'Artist unknown'),
+          title: byName(a.title), date: byYear(a.created), artist: byText(a.creator?.name, 'Artist unknown'),
           kind: byText(a.kind, 'Other'), country: l.country, polity: l.polity,
         },
       };
@@ -378,11 +375,11 @@ export function entries<P extends Plural>(plural: P, items: ItemByPlural[P][]): 
         match: [...names.flatMap((n) => [n.text, n.reading ?? '']), named.name_reading ?? named.title_reading ?? '', named.search_text ?? ''].join(' '),
       });
     }
-    // sort by the API's sort_key for every type: "Family, Given" (or sort_name) for artists and people,
-    // the romanization for names in other scripts
+    // sort by the API's sort_key for every type: "Family, Given" (or sort_name) for artists and people, titles
+    // without a leading article in their language ("Starry Night", "Phare de Honfleur"), romanizations of other scripts
     const first = cat.sorts[0].id;
     if (named.sort_key) {
-      e.sorts[first] = byName(plural === 'artworks' ? titleKey(named.sort_key) : named.sort_key);
+      e.sorts[first] = byName(named.sort_key);
     }
     const lang = named.title_lang ?? named.name_lang ?? null;
     return { ...e, lang, type: cat.type, item, search: fold([e.name, e.meta, ...e.fields.map((x) => x.match ?? x.text)].join(' ')) };
