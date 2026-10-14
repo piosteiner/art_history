@@ -181,6 +181,11 @@ test('the provenance on the map: where it was made from where the artist lived, 
   expect(seg.properties.between.map((b) => b.holder.slug)).toEqual(['test-michel-monet']);
   expect(pr.unplaced.map((u) => [u.step, u.holder.slug])).toEqual([[2, 'test-michel-monet']]);
 
+  // no dated place then: the artist's one undated place of work
+  sql(`UPDATE relationships SET relationship_type = 'worked_in', period = NULL WHERE subject_type = 'artist' AND subject_id = entity_id('artist', 'test-painter')`);
+  const workshop = (await api(request, '/map/artworks/test-bassin')).provenance;
+  expect(workshop.features.find((f) => f.properties.kind === 'creation').properties.place_basis).toBe('artist_workplace');
+
   // a recorded place of creation (e.g. Wikidata P1071) wins over the derived one
   sql(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
          VALUES ('artwork', entity_id('artwork', 'test-bassin'), 'created_in', 'place', entity_id('place', 'test-zurich'))`);

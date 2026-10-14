@@ -499,7 +499,7 @@ router.get('/:plural/:slug', async (req, res) => {
       ${await (async () => {
         const ids = await identifiers.list(adminPool, t.type, e.id);
         const available = identifiers.forType(await identifiers.authorities(adminPool), t.type).filter((a) => !ids.some((x) => x.code === a.code));
-        return identifiers.forType(await identifiers.authorities(adminPool), t.type).length ? identifiers.section({ t, e, ids, available }) : '';
+        return identifiers.forType(await identifiers.authorities(adminPool), t.type).length ? identifiers.section({ t, e, ids }) : '';
       })()}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? numbers.listSection({ e, numbers: nums }) : ''}
@@ -713,12 +713,19 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   // published: the public values, so the browser can mark every field the working copy changes (editor/unpublished.js)
   const ctx = await formContext(t, e.id);
   // further numbers (numbers.js): under the inventory number, saved at once through forms of their own after this one
-  if (t.type === 'artwork') ctx.afterField = { inventory_number: numbers.section({ e, numbers: await numbers.list(adminPool, e.id) }) };
+  ctx.afterField = {};
+  if (t.type === 'artwork') ctx.afterField.inventory_number = numbers.section({ e, numbers: await numbers.list(adminPool, e.id) });
+  // reference records (identifiers.js) the same way, under the Wikidata id
+  const authorityList = identifiers.forType(await identifiers.authorities(adminPool), t.type);
+  if (authorityList.length) {
+    const ids = await identifiers.list(adminPool, t.type, e.id);
+    ctx.afterField.wikidata_id = identifiers.editSection({ t, e, ids, available: authorityList.filter((a) => !ids.some((x) => x.code === a.code)) });
+  }
   const form = entityForm({ t, slug: working.slug || e.slug, f: formFromBody(working), ctx,
     action: `/${t.folder}/${e.slug}`, errors: [], version: working.version,
     collab: { key: `${t.type}:${e.id}:${epoch}`, state, published: drafts.formKeys(e.doc, t, e.slug) } });
   send(req, res, { title: `Edit ${e.name}`, page: { type: t.type, slug: e.slug, mode: 'edit' },
-    body: html`<h1>Edit ${e.name}</h1>${banner}${form}${t.type === 'artwork' ? numbers.formsAfter(e) : ''}${await citeDialogs(t, e, req.user)}` });
+    body: html`<h1>Edit ${e.name}</h1>${banner}${form}${t.type === 'artwork' ? numbers.formsAfter(e) : ''}${authorityList.length ? identifiers.formsAfter(t, e) : ''}${await citeDialogs(t, e, req.user)}` });
 });
 
 // The sources of the fields on the edit page: one dialog per citable field, after the form (forms can't nest);

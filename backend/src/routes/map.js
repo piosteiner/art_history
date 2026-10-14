@@ -129,9 +129,10 @@ router.get('/:plural/:slug', async (req, res) => {
 // steps by position, the loan) — not by date: the sources' order is what every provenance has, dates often not.
 // Every step is in it, however patchy; how sure each part is travels along instead of being hidden:
 //   points    one per step with a place: place_basis 'recorded' (the step's own place), 'holder_seat' (an institution
-//             holder without a place: its seat), 'created_in' / 'artist_residence' (creation: the artwork's recorded
-//             place of creation, else the one place the artist is recorded at while it was made); precision = the
-//             place's kind (site / settlement / region / country)
+//             holder without a place: its seat), 'created_in' / 'artist_residence' / 'artist_workplace' (creation:
+//             the artwork's recorded place of creation, else the one place the artist is recorded at while it was
+//             made, else the artist's one undated place of work); precision = the place's kind (site / settlement /
+//             region / country)
 //   segments  between consecutive placed steps: direct (every handover on it documented as direct), implied (an end
 //             not recorded: the creation, the loan, or a place not recorded), between (the steps it passes over that
 //             have no place)
@@ -159,6 +160,12 @@ async function provenanceRoute(artworkId) {
            JOIN edges x ON x.subject_type = 'artist' AND x.subject_id = w.creator_id AND x.object_type = 'place'
                        AND x.period && w.created
            JOIN relationship_types rt ON rt.code = x.relationship_type AND rt.is_physical_presence
+           WHERE w.id = ch.artwork_id HAVING count(DISTINCT x.object_id) = 1)
+          UNION ALL
+          -- a workshop artist's one place of work, undated ("worked in Ulm" — Wikidata P937 has no dates)
+          (SELECT min(x.object_id), 'artist_workplace', 3 FROM artworks w
+           JOIN relationships x ON x.subject_type = 'artist' AND x.subject_id = w.creator_id AND x.object_type = 'place'
+                               AND x.relationship_type = 'worked_in' AND x.period IS NULL
            WHERE w.id = ch.artwork_id HAVING count(DISTINCT x.object_id) = 1)
         ) m ORDER BY pref LIMIT 1
       ) made ON ch.location_id IS NULL AND (ch.kind = 'creation' OR ch.method = 'creation')

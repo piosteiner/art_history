@@ -16,7 +16,7 @@ Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest 
 | gif-converter | /var/www/gif-converter | Flask/Gunicorn, systemd | 5000 | api.piogino.ch | files |
 | arthistory (pm2: arthistory-api) | /var/www/arthistory/backend | Node/Express, pm2 | 3004 | api.arthistory / admin.arthistory.piogino.ch | PostgreSQL `arthistory` (+ `arthistory_dev`; tests: `arthistory_test`, `_1`, `_2` on :3006/:3008/:3009 while they run) |
 
-Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service).
+Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service). Both hostnames gzip JSON (`gzip_proxied any`).
 Databases (both localhost only): MySQL 8 (:3306, calorie-tracker) · PostgreSQL 18 + PostGIS 3.6 (:5432, art history; tuning in `config/postgresql/`).
 
 ## Firewall (ufw) + fail2ban

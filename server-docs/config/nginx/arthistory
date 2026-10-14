@@ -8,6 +8,12 @@ server {
     access_log /var/log/nginx/arthistory-api.access.log;
     error_log  /var/log/nginx/arthistory-api.error.log warn;
 
+    # Compress the JSON (gzip is on globally, but only for text/html and not for proxied responses): the artworks
+    # list shrinks from ~51 KB to ~8 KB.
+    gzip_proxied any;
+    gzip_vary on;
+    gzip_types application/json application/geo+json;
+
     location /v1/ {
         proxy_pass http://127.0.0.1:3004;
         proxy_http_version 1.1;

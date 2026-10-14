@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-14
 
+### API compressed; inventory constraint validated (067); creation from the workplace; reference records on the edit page
+- **What:**
+  - nginx `api.arthistory.piogino.ch`: `gzip_proxied any`, `gzip_types application/json application/geo+json`
+    (the artworks list 51 KB → 10 KB). Copy in `server-docs/config/nginx/arthistory`.
+  - Migration 067: `VALIDATE CONSTRAINT artworks_inventory_needs_institution` (The Great Wave fixed; 016 added it NOT VALID).
+  - Provenance map: the creation's place, failing a recorded or dated one, is the artist's one undated "worked in"
+    place (`place_basis: artist_workplace`, "probably").
+  - Admin: reference records are added and removed on the edit page under the Wikidata id (like further numbers);
+    the entry's page lists them with the GND / SIKART comparisons.
+- **Why:** owner's improvement list of 2026-10-14.
+- **Revert:** nginx: remove the three gzip lines from the api server block, `sudo nginx -t && sudo systemctl reload nginx`;
+  067: `ALTER TABLE artworks DROP CONSTRAINT artworks_inventory_needs_institution, ADD CONSTRAINT … NOT VALID` (016's
+  definition); the rest: `git revert`, deploy.
+
 ### Admin: "Yes, it still does" on a source whose value changed
 - **What:** an outdated citation ("The value changed since — does the source still support it?") has a button that
   records the current value as the cited one (`cited_value = field_value(…)`, as when published) and, for dated

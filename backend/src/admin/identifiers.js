@@ -71,23 +71,42 @@ async function byId(db, rowId) {
   return (await db.query('SELECT * FROM entry_identifiers WHERE id = $1', [rowId])).rows[0] || null;
 }
 
-function section({ t, e, ids, available }) {
+const COMPARE = ({ t, e, ids }) => {
   const gnd = ids.find((x) => x.code === 'gnd');
-  return html`<section id="reference-records"><h2>Reference records</h2>
-    <p class="muted small">The numbers of this ${t.type} in authority files — they say exactly who or what is meant, and lead to curated records.</p>
-    ${ids.length ? html`<ul class="identifiers">${ids.map((x) => html`<li><b>${x.name}</b>: <a href="${x.url}" target="_blank" rel="noopener">${x.value} ↗</a>
-      <form method="post" action="/identifiers/${x.id}/delete" class="inline"><button class="link small">remove</button></form></li>`)}</ul>` : ''}
-    ${gnd ? html`<p><a class="button secondary" href="/${t.folder}/${e.slug}/gnd">Compare with the GND…</a>
+  return html`${gnd ? html`<p><a class="button secondary" href="/${t.folder}/${e.slug}/gnd">Compare with the GND…</a>
       <span class="muted small">dates, places, occupations and relationships from the Deutsche Nationalbibliothek's record — cited as the source</span></p>` : ''}
     ${['artist', 'person'].includes(t.type) ? html`<p><a class="button secondary" href="/${t.folder}/${e.slug}/sikart">${ids.some((x) => x.code === 'sikart') ? 'Compare with SIKART…' : 'Find in SIKART…'}</a>
-      <span class="muted small">the lexicon of the Swiss Institute for Art Research (SIK-ISEA): life data, places, Heimatort, GND and VIAF — cited as the source</span></p>` : ''}
-    ${available.length ? html`<details><summary class="button secondary">+ Add a reference record</summary>
-      <form method="post" action="/${t.folder}/${e.slug}/identifiers" class="form bar">
-        <select name="authority" aria-label="authority">${available.map((a) => html`<option value="${a.code}">${a.name}</option>`)}</select>
-        <input name="value" class="grow" placeholder="the number — or paste the link of the record" aria-label="number or link" required>
-        <button>Add</button></form>
-      <div class="hint">Wikidata knows most of them: “Wikidata…” on this page takes them over.</div></details>` : ''}
+      <span class="muted small">the lexicon of the Swiss Institute for Art Research (SIK-ISEA): life data, places, Heimatort, GND and VIAF — cited as the source</span></p>` : ''}`;
+};
+
+// The entry's page: the records with their links and the comparisons; added and removed on the edit page.
+function section({ t, e, ids }) {
+  return html`<section id="reference-records"><h2>Reference records</h2>
+    <p class="muted small">The numbers of this ${t.type} in authority files — they say exactly who or what is meant, and lead to curated records.</p>
+    ${ids.length ? html`<ul class="identifiers">${ids.map((x) => html`<li><b>${x.name}</b>: <a href="${x.url}" target="_blank" rel="noopener">${x.value} ↗</a></li>`)}</ul>`
+      : html`<p class="muted small">None yet.</p>`}
+    ${COMPARE({ t, e, ids })}
+    <p class="small"><a href="/${t.folder}/${e.slug}/edit#reference-records">Add or remove reference records on the edit page →</a></p>
   </section>`;
 }
 
-module.exports = { IdentifierError, authorities, forType, urlOf, numberFrom, list, add, remove, byId, section, errorText };
+// The edit page, under the Wikidata id: inside the entry's form, every control names a form of its own (formsAfter) —
+// saved at once, never part of the shared working copy (like numbers.js).
+function editSection({ e, t, ids, available }) {
+  return html`<div id="reference-records" class="identifiers-edit"><h3>Reference records</h3>
+    <p class="muted small">Numbers in authority files (GND, ULAN, SIKART …). Saved at once, not with Publish.</p>
+    ${ids.length ? html`<ul class="identifiers">${ids.map((x) => html`<li><b>${x.name}</b>: <a href="${x.url}" target="_blank" rel="noopener">${x.value} ↗</a>
+      <button class="link small" form="identifiers-delete" formaction="/identifiers/${x.id}/delete?back=edit">remove</button></li>`)}</ul>` : ''}
+    ${available.length ? html`<details><summary class="button secondary">+ Add a reference record</summary>
+      <div class="form bar">
+        <select name="authority" aria-label="authority" form="identifiers-add">${available.map((a) => html`<option value="${a.code}">${a.name}</option>`)}</select>
+        <input name="value" class="grow" placeholder="the number — or paste the link of the record" aria-label="number or link" required form="identifiers-add">
+        <button form="identifiers-add">Add</button></div>
+      <div class="hint">Wikidata knows most of them: “Wikidata…” on the entry's page takes them over.</div></details>` : ''}
+  </div>`;
+}
+
+const formsAfter = (t, e) => html`<form id="identifiers-add" method="post" action="/${t.folder}/${e.slug}/identifiers?back=edit" hidden></form>
+  <form id="identifiers-delete" method="post" hidden></form>`;
+
+module.exports = { IdentifierError, authorities, forType, urlOf, numberFrom, list, add, remove, byId, section, editSection, formsAfter, errorText };

@@ -96,7 +96,8 @@ router.post('/citations/:id/confirm', async (req, res) => {
   res.redirect(303, citeBack(req.body.back, 'cite-confirmed'));
 });
 
-// Reference records (authority files, src/admin/identifiers.js): added on an entry's page, removed one by one.
+// Reference records (authority files, src/admin/identifiers.js): added and removed on the edit page (?back=edit), one
+// by one — or from the SIKART search (next=sikart).
 router.post('/:plural/:slug/identifiers', async (req, res) => {
   const { t } = req;
   const e = await findEntity(t, req.params.slug);
@@ -106,17 +107,17 @@ router.post('/:plural/:slug/identifiers', async (req, res) => {
   } catch (err) {
     const text = err instanceof identifiers.IdentifierError ? err.message : friendly(err);
     return send(req, res, { title: 'Add a reference record', status: 422, flash: { kind: 'error', text },
-      body: html`<p><a href="/${t.folder}/${e.slug}#reference-records">← ${e.name}</a></p>` });
+      body: html`<p><a href="/${t.folder}/${e.slug}${req.query.back === 'edit' ? '/edit' : ''}#reference-records">← ${e.name}</a></p>` });
   }
   if (req.body.next === 'sikart') return res.redirect(303, `/${t.folder}/${e.slug}/sikart`);  // picked in the SIKART search
-  res.redirect(303, `/${t.folder}/${e.slug}?done=id-added#reference-records`);
+  res.redirect(303, `/${t.folder}/${e.slug}${req.query.back === 'edit' ? '/edit' : ''}?done=id-added#reference-records`);
 });
 router.post('/identifiers/:id/delete', async (req, res) => {
   const row = await identifiers.byId(adminPool, req.params.id);
   if (!row) return notFoundPage(req, res);
   const { rows } = await adminPool.query('SELECT slug FROM entity_index WHERE type = $1 AND id = $2', [row.entity_type, row.entity_id]);
   await withTx(req.user, (db) => identifiers.remove(db, row.id));
-  res.redirect(303, `/${BY_TYPE[row.entity_type].folder}/${rows[0].slug}?done=id-deleted#reference-records`);
+  res.redirect(303, `/${BY_TYPE[row.entity_type].folder}/${rows[0].slug}${req.query.back === 'edit' ? '/edit' : ''}?done=id-deleted#reference-records`);
 });
 
 module.exports = router;

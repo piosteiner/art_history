@@ -13,24 +13,30 @@ test.afterAll(() => {
 
 test('reference records: a number or the record\'s link; one number names one entry; links in the API', async ({ userA, request }) => {
   sql("DELETE FROM entry_identifiers");
-  await userA.goto('/artists/paul-gauguin');
+  await userA.goto('/artists/paul-gauguin/edit');   // added and removed on the edit page, under the Wikidata id
   const section = userA.locator('#reference-records');
   await section.locator('summary:has-text("+ Add a reference record")').click();
   await section.locator('select[name=authority]').selectOption('gnd');
   await section.locator('input[name=value]').fill('https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=nid%3D118538489');
   await Promise.all([userA.waitForNavigation(), section.locator('button:has-text("Add")').click()]);
-  await expect(userA).toHaveURL(/done=id-added/);
+  await expect(userA).toHaveURL(/\/artists\/paul-gauguin\/edit\?done=id-added/);
   await expect(section.locator('a[href="https://d-nb.info/gnd/118538489"]')).toHaveText('118538489 ↗');   // the number from the link
+  expect(await userA.evaluate(() => [...document.querySelector('form[data-collab]').elements].some((el) => el.name === 'authority'))).toBe(false);
+  // the entry's page lists it, with the comparison, and links to the edit page
+  await userA.goto('/artists/paul-gauguin');
+  await expect(section.locator('a[href="https://d-nb.info/gnd/118538489"]')).toBeVisible();
+  await expect(section.locator('a:has-text("Compare with the GND…")')).toBeVisible();
+  await expect(section.locator('button')).toHaveCount(0);
 
   // the same number on another entry: refused, naming the entry it belongs to
-  await userA.goto('/artists/vincent-van-gogh');
+  await userA.goto('/artists/vincent-van-gogh/edit');
   await userA.locator('#reference-records summary:has-text("+ Add a reference record")').click();
   await userA.locator('#reference-records select[name=authority]').selectOption('gnd');
   await userA.locator('#reference-records input[name=value]').fill('118538489');
   await Promise.all([userA.waitForNavigation(), userA.locator('#reference-records button:has-text("Add")').click()]);
   await expect(userA.locator('.flash.error')).toContainText('is already the number of “Paul Gauguin”');
   // not a ULAN number: refused
-  await userA.goto('/artists/vincent-van-gogh');
+  await userA.goto('/artists/vincent-van-gogh/edit');
   await userA.locator('#reference-records summary:has-text("+ Add a reference record")').click();
   await userA.locator('#reference-records select[name=authority]').selectOption('ulan');
   await userA.locator('#reference-records input[name=value]').fill('12345');
@@ -39,6 +45,11 @@ test('reference records: a number or the record\'s link; one number names one en
 
   const g = await api(request, '/artists/paul-gauguin');
   expect(g.identifiers).toEqual([{ authority: 'gnd', name: 'GND (Deutsche Nationalbibliothek)', value: '118538489', url: 'https://d-nb.info/gnd/118538489' }]);
+  // removed on the edit page
+  await userA.goto('/artists/paul-gauguin/edit');
+  await Promise.all([userA.waitForNavigation(), userA.locator('#reference-records button:has-text("remove")').click()]);
+  await expect(userA).toHaveURL(/\/edit\?done=id-deleted/);
+  expect(sql("SELECT count(*) FROM entry_identifiers")).toBe('0');
   sql("DELETE FROM entry_identifiers");
 });
 
