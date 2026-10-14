@@ -2,6 +2,19 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-14
+
+### Admin: spell check language of Markdown texts recognised (English / German) (no schema change)
+- **What:** `src/textlang.js` `guessLang()` (shared with the browser bundle): counts common function words of each
+  language (+ umlauts as a hint), ignoring [[links]], link targets and code; undecided for short or mixed texts.
+  `editor/editor.js`: the editable area gets `lang` = the guess (on load and after a pause in typing), a toolbar
+  button EN / DE shows it and switches it by hand for that field (then no more automatic changes); the preview gets
+  the same `lang`. Unit test `textlang.test.js`, e2e `spelling.spec.js`.
+- **Why:** owner: descriptions are written in English or German; the page said `lang="en"` for all of them.
+- **Note:** the checking itself is the browser's: Firefox and Safari pick the dictionary by `lang` (German dictionary
+  installed); Chrome / Edge check against every language enabled in their settings (add German there).
+- **Revert:** redeploy the previous commit.
+
 ## 2026-10-13
 
 ### Fix: no dates, no lifespan (migration 065)

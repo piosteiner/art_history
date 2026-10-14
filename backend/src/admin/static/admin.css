@@ -109,6 +109,8 @@ button.link { background: none; border: none; padding: 0; color: var(--accent); 
 .md-toolbar .md-spacer { flex: 1; }
 button.md-tool { background: transparent; color: var(--fg); border: 1px solid transparent; padding: .1rem .55rem; font-size: .9rem; }
 button.md-tool:hover { border-color: var(--line); background: var(--panel); }
+/* the spell check language of a text (EN / DE, recognised as you type; click to switch) */
+button.md-tool.md-lang { font-size: .72rem; letter-spacing: .06em; color: var(--muted); border-color: var(--line); margin-right: .3rem; }
 .md-toolbar.previewing button.md-tool:not(:last-child) { visibility: hidden; }
 .md-preview { border: 1px solid var(--line); border-radius: 0 0 6px 6px; padding: .5rem .6rem; background: var(--panel); overflow-wrap: anywhere; }
 

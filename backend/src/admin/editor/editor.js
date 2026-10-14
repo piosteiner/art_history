@@ -5,7 +5,7 @@
 // exactly what is saved (the text is never rewritten). The textarea stays in the form (hidden) and is kept in sync,
 // so saving works as before, and without JavaScript the plain textarea still works.
 // "Preview" asks the server to render the text with the same markdown-it + sanitize-html as the public API.
-import { EditorState, EditorSelection } from '@codemirror/state';
+import { EditorState, EditorSelection, Compartment } from '@codemirror/state';
 import { EditorView, keymap, placeholder, drawSelection } from '@codemirror/view';
 import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
 import { syntaxHighlighting, HighlightStyle, LanguageSupport } from '@codemirror/language';
@@ -19,6 +19,7 @@ import { yCollab, yUndoManagerKeymap } from 'y-codemirror.next';
 import { startCollab } from './collab';
 import { initWikidataBulk } from './wikidata-bulk';
 import { initSlug } from './slug';
+import { guessLang } from '../../textlang';
 import { initNames } from './names';
 import { initUnpublished } from './unpublished';
 import { initMaterials } from './materials';
@@ -185,6 +186,27 @@ function enhance(textarea, collab = null) {
   const editorBox = document.createElement('div');
   wrapper.append(editorBox);
 
+  // The spell check language: the browser's own checker, told by the lang attribute of the editable area (Firefox and
+  // Safari switch dictionaries by it; Chrome/Edge check every language enabled in their settings). Recognised from the
+  // text as you type (src/textlang.js: English or German); the toolbar button switches it by hand for this field.
+  const langOf = new Compartment();
+  let lang = guessLang(collab ? collab.ytext.toString() : textarea.value) || 'en';
+  let langByHand = false;
+  let langTimer = null;
+  const LANG_NAME = { en: 'English', de: 'German' };
+  const langButton = button(lang.toUpperCase(), '', () => { langByHand = true; setLang(lang === 'de' ? 'en' : 'de'); });
+  langButton.classList.add('md-lang');
+  const showLang = () => {
+    langButton.textContent = lang.toUpperCase();
+    langButton.title = `Spelling: ${LANG_NAME[lang]} — ${langByHand ? 'chosen by you' : 'recognised from the text'}. Click to switch to ${LANG_NAME[lang === 'de' ? 'en' : 'de']}.`;
+  };
+  const setLang = (l) => {
+    lang = l;
+    view.dispatch({ effects: langOf.reconfigure(EditorView.contentAttributes.of({ lang: l })) });
+    preview.lang = l;
+    showLang();
+  };
+
   const view = new EditorView({
     parent: editorBox,
     state: EditorState.create({
@@ -200,9 +222,14 @@ function enhance(textarea, collab = null) {
         theme,
         placeholder(textarea.placeholder || 'Write here — Markdown styling appears as you type.'),
         EditorView.contentAttributes.of({ 'aria-label': textarea.getAttribute('aria-label') || textarea.id || 'Markdown', spellcheck: 'true' }),
+        langOf.of(EditorView.contentAttributes.of({ lang })),
         // Keep the hidden textarea current: the form posts it as before.
         EditorView.updateListener.of((u) => {
           if (!u.docChanged) return;
+          if (!langByHand) {  // a pause in typing: is it still the same language?
+            clearTimeout(langTimer);
+            langTimer = setTimeout(() => { const g = guessLang(u.view.state.doc.toString()); if (g && g !== lang) setLang(g); }, 700);
+          }
           textarea.value = u.state.doc.toString();
           textarea.dispatchEvent(new Event('md-change', { bubbles: true }));  // for editor/unpublished.js
         }),
@@ -242,8 +269,11 @@ function enhance(textarea, collab = null) {
     button('• List', 'Bulleted list', () => linePrefix(view, '- ')),
     button('❝ Quote', 'Quote', () => linePrefix(view, '> ')),
     Object.assign(document.createElement('span'), { className: 'md-spacer' }),
+    langButton,
     previewButton,
   );
+  preview.lang = lang;
+  showLang();
   toolbar.children[0].style.fontWeight = '700';
   toolbar.children[1].style.fontStyle = 'italic';
 
