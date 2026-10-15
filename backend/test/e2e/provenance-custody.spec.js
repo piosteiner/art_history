@@ -60,6 +60,12 @@ test('custody beside the ownership; an auction that did not sell; the 1933–194
   await Promise.all([userA.waitForNavigation(), userA.click('.provenance-form button:has-text("Add")')]);
   await expect(userA).toHaveURL(/done=prov-added/);
   expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'provenance_forced_transfer' AND entity_id = ${W}`)).toBe('0');
+  // … and the ownership goes on: the 1950 step isn't ended by the settlement (075)
+  expect(sql(`SELECT period_label FROM provenance_periods WHERE artwork_id = ${W} AND position = 6`)).toBe('from 1950');
+  // a dealer that held it on consignment and then bought it: not "via" itself (075)
+  sql(`UPDATE provenance SET owner_person_id = NULL, owner_institution_id = ${I('test-gallery-c')}, role = 'dealer' WHERE artwork_id = ${W} AND position = 4`);
+  expect(sql(`SELECT coalesce(via, '-') FROM provenance_periods WHERE artwork_id = ${W} AND position = 4`)).toBe('-');
+  sql(`UPDATE provenance SET owner_institution_id = NULL, owner_person_id = ${P('test-buyer')}, role = 'owner' WHERE artwork_id = ${W} AND position = 4`);
 
   // the API: the steps say which are custody, which agent didn't sell, through whom a handover went
   const prov = (await api(request, '/artworks/test-semmel-road')).provenance.filter((s) => !s.implied);

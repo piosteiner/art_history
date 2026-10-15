@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Provenance: a settlement doesn't end the ownership; no handover "via" itself (migration 075)
+- **What:** `provenance_periods`: the next step that ends an owner's period skips settlements; `via` leaves out agents that
+  are the holder of the step itself. E2E in `provenance-custody.spec.js`.
+- **Why:** owner's review of the Gauguin works on the site: the foundation showed "1960–24 June 2025, end implied" for La
+  Route montante; Knoedler bought Idylle à Tahiti "via M. Knoedler & Co.".
+- **Revert:** `git revert`, deploy; then 074's `CREATE OR REPLACE VIEW provenance_periods`.
+
 ### Data: the Gauguin works with the new provenance fields (production)
 - **What:** not sold: the 1933 Frederik Muller auction (La Route montante), the 1975 Hôtel Rameau auction (Carrière aux
   environs de Pontoise); La Route montante: settlement step of the foundation, 24 June 2025 (cited); provenance status
