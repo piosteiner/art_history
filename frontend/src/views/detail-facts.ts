@@ -73,7 +73,7 @@ const withArticle = (name: string) => (/^the\s/i.test(name) ? '' : 'the ');
  * Where the work is, as a credit line: the holding institution, or — on loan — the lender (the provenance's last recorded step)
  * "Foundation E.G. Bührle Collection, on loan to the Kunsthaus Zürich since 2021" (migration 048).
  */
-function collectionFact(e: Artwork): Html | null {
+export function collectionFact(e: Artwork): Html | null {
   if (!e.institution) return null;
   const holder = link('institution', e.institution.slug, e.institution.name);
   if (!e.on_loan) return holder;

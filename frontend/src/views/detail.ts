@@ -11,7 +11,7 @@ import { wireTextLinks } from '../glossary';
 import { knownPreviews } from '../previews';
 import { partNav, seriesLine } from '../series';
 import { cite, resetCitations, wireCitations } from '../cite';
-import { accessedNote, factsFor, webPage, webPageLink, withSources } from './detail-facts';
+import { accessedNote, collectionFact, factsFor, webPage, webPageLink, withSources } from './detail-facts';
 import { backlinks, crossedPaths, holdingsSections, relationshipSections, shownElsewhere } from './detail-sections';
 
 export function detail(main: HTMLElement, plural: Plural, slug: string) {
@@ -46,6 +46,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
         ${originalLine(e)}
         ${titleStatusLine(e) ? html`<p class="title-status muted small">${titleStatusLine(e)}${cite(e.sources?.[displayName(e).swapped ? 'names' : 'title_status'], e.bibliography)}</p>` : ''}
         ${v.subtitle ? html`<p class="subtitle">${v.subtitle}</p>` : ''}
+        ${e.type === 'artwork' && collectionFact(e) ? html`<p class="collection-line">${collectionFact(e)}</p>` : ''}
         ${e.type === 'artwork' ? html`${seriesLine(e)}${partNav(e)}` : ''}
         <p class="detail-actions">
           ${web ? html`<span class="web-top${v.images.length ? '' : ' narrow-only'}">${webPageLink(web)}${accessedNote(web)}</span>` : ''}
