@@ -82,10 +82,10 @@ const NUMBER_KEYS = ['number', 'institution', 'source', 'label'];
 // 063: role (owner · dealer · agent · estate · custodian), co_owners ["person/gertrude-stein", …], price {amount,
 // currency, note}.
 const PROVENANCE_KEYS = ['owner', 'owner_label', 'co_owners', 'role', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
-  'place', 'label', 'certainty', 'price', 'notes_md', 'sources', 'not_sold'];
-const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian'];
+  'place', 'label', 'certainty', 'price', 'notes_md', 'sources', 'not_sold', 'further_places', 'numbers', 'event'];
+const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian', 'publisher', 'foundry', 'trustee', 'event'];
 const ACQUISITION_METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
-  'confiscation', 'forced_sale', 'restitution', 'settlement', 'unknown'];
+  'confiscation', 'forced_sale', 'restitution', 'settlement', 'transfer', 'theft', 'claim', 'dissolution', 'unknown'];
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const LEGACY_ALT = ['alt_names', 'alt_titles'];  // before migration 022: plain lists → names with role "alternative"
 
@@ -211,7 +211,13 @@ function toRow(doc, fields) {
         if (!st || typeof st !== 'object' || Array.isArray(st)) { errors.push(`${at}: must be a mapping`); return; }
         const extra = Object.keys(st).filter((k) => !PROVENANCE_KEYS.includes(k));
         if (extra.length) errors.push(`${at}: unknown field(s) ${extra.join(', ')}`);
-        if (!st.owner && !st.owner_label) errors.push(`${at}: owner (type/slug) or owner_label is required`);
+        if (!st.owner && !st.owner_label && !(st.role === 'event' && st.label)) errors.push(`${at}: owner (type/slug) or owner_label is required (an event: a label)`);
+        // 077: further places [slug | {place, date}], numbers [{kind, number}], event (slug)
+        if (st.further_places !== undefined && (!Array.isArray(st.further_places) || st.further_places.some((x) => !(typeof x === 'string' ? SLUG.test(x) : x && SLUG.test(String(x.place)))))) {
+          errors.push(`${at}.further_places: a list of place slugs or {place, date}`);
+        }
+        if (st.numbers !== undefined && (!Array.isArray(st.numbers) || st.numbers.some((x) => !x || !x.kind || !x.number))) errors.push(`${at}.numbers: a list of {kind, number}`);
+        if (st.event !== undefined && !SLUG.test(String(st.event))) errors.push(`${at}.event: an event slug`);
         if (st.owner && !/^(artist|person|institution|place)\/[a-z0-9]+(-[a-z0-9]+)*$/.test(st.owner)) errors.push(`${at}.owner: must look like person/michel-monet`);
         if (st.method !== undefined && !ACQUISITION_METHODS.includes(st.method)) errors.push(`${at}.method: one of ${ACQUISITION_METHODS.join(', ')}`);
         if (st.certainty !== undefined && !['attested', 'probable', 'possible', 'disputed'].includes(st.certainty)) errors.push(`${at}.certainty: attested, probable, possible or disputed`);
@@ -222,7 +228,7 @@ function toRow(doc, fields) {
         if (st.co_owners !== undefined && (!Array.isArray(st.co_owners) || st.co_owners.some((c) => !/^(artist|person|institution)\/[a-z0-9]+(-[a-z0-9]+)*$/.test(c)))) {
           errors.push(`${at}.co_owners: a list like [person/gertrude-stein]`);
         }
-        if (st.price !== undefined && (!st.price || typeof st.price !== 'object' || typeof st.price.amount !== 'number' || !/^[A-Z]{3}$/.test(st.price.currency || ''))) {
+        if (st.price !== undefined && (!st.price || typeof st.price !== 'object' || typeof st.price.amount !== 'number' || !/^[A-Z]{2,4}$/.test(st.price.currency || ''))) {
           errors.push(`${at}.price: {amount: 18000, currency: USD, note: ca.}`);
         }
         for (const k of ['acquired', 'ended']) {
@@ -395,6 +401,11 @@ async function readProvenance(db, artworkId) {
            p.ended::text AS ended, p.ended_label, p.method::text AS method, p.direct, l.slug AS place, p.label,
            p.certainty::text AS certainty, p.notes_md, p.metadata, citation_docs(NULL, p.id) AS sources,
            p.role::text AS role, p.price, p.price_currency, p.price_note, p.not_sold,
+           (SELECT slug FROM events WHERE id = p.event_id) AS event,
+           (SELECT jsonb_agg(jsonb_build_object('place', l.slug, 'period', x.period::text, 'period_label', x.period_label) ORDER BY x.position)
+              FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
+           (SELECT jsonb_agg(jsonb_build_object('kind', n.kind, 'number', n.number) ORDER BY n.position)
+              FROM provenance_numbers n WHERE n.provenance_id = p.id) AS numbers,
            (SELECT array_agg(x.type::text || '/' || x.slug ORDER BY c.position) FROM provenance_co_owners_x c
               JOIN entity_index x ON (x.type, x.id) = (c.owner_type, c.owner_id) WHERE c.provenance_id = p.id) AS co_owners
     FROM provenance p
@@ -410,6 +421,14 @@ async function readProvenance(db, artworkId) {
     if (r.co_owners && r.co_owners.length) st.co_owners = r.co_owners;
     if (r.role && r.role !== 'owner') st.role = r.role;
     if (r.not_sold) st.not_sold = true;
+    if (r.event) st.event = r.event;
+    if (r.further_places) {
+      st.further_places = r.further_places.map((x) => {
+        const d = dateToDoc(x.period, x.period_label, false);
+        return d.value === null ? x.place : { place: x.place, date: d.value };
+      });
+    }
+    if (r.numbers) st.numbers = r.numbers;
     for (const k of ['acquired', 'ended']) {
       const d = dateToDoc(r[k], r[`${k}_label`], false);
       if (d.value !== null) st[k] = d.value;

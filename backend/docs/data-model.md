@@ -515,3 +515,11 @@ its `[[links]]` follow renames and merges like every text.
 - `artworks.provenance_status` (enum `provenance_status`: a_clear, b_no_indications, c_indications, d_seized — the BAK
   categories) + `provenance_status_note`; `artworks.conceived`/`conceived_label` (design earlier than the object;
   `artwork_outside_creator_life` uses it). Both citable. Relationship type `copy_after` (artwork → artwork).
+
+## Every case the Kunsthaus documents (migrations 076/077)
+- Roles: `publisher` (of the chain), `foundry`, `trustee` (custody), `event` (no holder — `provenance_holder_or_description`
+  lets an event go with a `label` only). Methods: `transfer`, `theft`, `claim`, `dissolution`.
+- `provenance_places` (further places of a step, ordered, dated; `kept_in` for each), `provenance_numbers` with the kinds
+  of `provenance_number_kinds` (index on `lower(number)`), `provenance.event_id` → `events`, authority `lugt`.
+- Currencies: 2–4 capital letters (RM). Check `provenance_stolen`: a theft without an end.
+- Fuzzy dates also read "between X and Y", "13.VI.1913", "1.7.1949", "7.1934" (`normalizeSourceForms`).

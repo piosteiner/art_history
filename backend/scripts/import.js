@@ -17,6 +17,7 @@ const config = require('../src/config');
 const { parseFuzzyDate } = require('../src/fuzzy-date');
 const { TYPES, REL_KEYS, toRow } = require('../src/content');
 const { importCitations } = require('../src/citations-io');
+const { saveExtras } = require('../src/admin/provenance');
 
 const CONTENT_DIR = process.env.CONTENT_DIR || path.join(__dirname, '..', '..', 'content');
 const DRY_RUN = process.argv.includes('--dry-run');
@@ -298,6 +299,34 @@ async function main() {
             const cid = await idOf(type, slug);
             if (cid === null) throw new Error(`co-owner ${ref} does not exist`);
             want.push({ type, id: cid });
+          }
+          // 077: further places, numbers (replaced as a whole when given), the event
+          const extras = {};
+          if (st.further_places !== undefined) {
+            extras.places = [];
+            for (const x of st.further_places) {
+              const slug = typeof x === 'string' ? x : String(x.place);
+              const pid = await idOf('place', slug);
+              if (pid === null) throw new Error(`further place ${slug} does not exist`);
+              const d = typeof x === 'string' ? null : parseFuzzyDate(x.date ?? null);
+              extras.places.push({ place_id: pid, period: d && d.range, period_label: d && d.label });
+            }
+          }
+          if (st.numbers !== undefined) extras.numbers = st.numbers.map((n) => ({ kind: String(n.kind), number: String(n.number) }));
+          // only when they differ — an unchanged import writes nothing to the history
+          const now = (await client.query(`SELECT
+              (SELECT coalesce(jsonb_agg(jsonb_build_object('place_id', place_id, 'period', period::text, 'period_label', period_label) ORDER BY position), '[]') FROM provenance_places WHERE provenance_id = $1) AS places,
+              (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', kind, 'number', number) ORDER BY position), '[]') FROM provenance_numbers WHERE provenance_id = $1) AS numbers`, [step.id])).rows[0];
+          const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
+          const wantExtras = { places: extras.places && extras.places.map((x) => ({ place_id: Number(x.place_id), period: x.period || null, period_label: x.period_label || null })), numbers: extras.numbers };
+          const changed = {};
+          if (wantExtras.places && !same(wantExtras.places, now.places.map((x) => ({ ...x, place_id: Number(x.place_id) })))) changed.places = extras.places;
+          if (wantExtras.numbers && !same(wantExtras.numbers, now.numbers)) changed.numbers = extras.numbers;
+          if (changed.places || changed.numbers) await saveExtras(client, step.id, changed);
+          if (st.event !== undefined) {
+            const eid = await idOf('event', String(st.event));
+            if (eid === null) throw new Error(`event ${st.event} does not exist`);
+            await client.query('UPDATE provenance SET event_id = $2 WHERE id = $1 AND event_id IS DISTINCT FROM $2', [step.id, eid]);
           }
           const have = (await client.query('SELECT owner_type::text AS type, owner_id AS id FROM provenance_co_owners_x WHERE provenance_id = $1 ORDER BY position', [step.id])).rows;
           if (JSON.stringify(have) !== JSON.stringify(want)) {

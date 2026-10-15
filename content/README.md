@@ -65,7 +65,8 @@ provenance:
   - owner: person/michel-monet        # artist/…, person/…, institution/… or place/…; or only owner_label
     acquired: 1926
     method: inheritance               # creation, commission, inheritance, purchase, auction, gift, bequest, exchange,
-                                      # confiscation, forced_sale, restitution, unknown (default)
+                                      # transfer, confiscation, theft, forced_sale, restitution, settlement, claim,
+                                      # dissolution, unknown (default)
     place: sorel-moussel              # where the work was (place slug)
     ended: 1952                       # only if a source says so — otherwise the next acquisition implies the end
   - owner: person/emil-georg-buhrle
@@ -73,6 +74,14 @@ provenance:
     method: purchase
     direct: true                      # handover documented as direct (default false)
     label: via …                      # also owner_label, certainty, notes_md, sources (list)
+    role: owner                       # owner (default), dealer, estate, publisher — the chain; agent, custodian,
+                                      # foundry, trustee — beside it; event — no holder (needs a label)
+    co_owners: [person/…]             # further owners of the same step
+    price: {amount: 50, currency: RM, note: ca.}
+    not_sold: true                    # agents only: the auction or consignment didn't sell
+    further_places: [berlin, {place: geneva, date: 1939-09-05}]   # after `place`, in order
+    numbers: [{kind: munich, number: '4317'}]   # lot, stock, inventory, catalogue, ek, err, munich, linz, aussee, lugt, other
+    event: some-auction-1941          # the event it belongs to (event slug)
 ```
 
 Every entity also takes `wikidata_id` (`Q…`) and `metadata` (free-form mapping). `*_md` fields are Markdown;

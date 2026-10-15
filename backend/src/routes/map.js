@@ -143,11 +143,10 @@ async function provenanceRoute(artworkId) {
   const { rows: [r] } = await apiPool.query(`
     WITH chain AS (
       SELECT c.*, row_number() OVER (ORDER BY c.position) AS step, count(*) OVER () AS steps
-      FROM provenance_chain c WHERE c.artwork_id = $1
+      FROM provenance_chain c WHERE c.artwork_id = $1 AND c.role IS DISTINCT FROM 'event'   -- events: no one held it there (077)
     ), located AS (
-      SELECT ch.*, coalesce(ch.location_id, made.place_id, seat.place_id) AS place_id,
-             CASE WHEN ch.location_id IS NOT NULL THEN CASE WHEN ch.kind = 'loan' THEN 'holder_seat' ELSE 'recorded' END
-                  ELSE coalesce(made.basis, seat.basis) END AS place_basis
+      -- each step at its place, then at its further places in order (077: "Köln, Berlin & Genf") — part 0, 1, 2 …
+      SELECT ch.*, pl.place_id, pl.place_basis, pl.part, pl.part_label
       FROM chain ch
       -- where it was made: recorded (created_in, e.g. from Wikidata P1071), else the artist's single dated place then
       LEFT JOIN LATERAL (
@@ -172,13 +171,21 @@ async function provenanceRoute(artworkId) {
       LEFT JOIN LATERAL (
         SELECT i.place_id, 'holder_seat' AS basis FROM institutions i WHERE i.id = ch.owner_id
       ) seat ON ch.location_id IS NULL AND ch.owner_type = 'institution' AND ch.kind <> 'creation'
+      CROSS JOIN LATERAL (
+        SELECT coalesce(ch.location_id, made.place_id, seat.place_id) AS place_id,
+               CASE WHEN ch.location_id IS NOT NULL THEN CASE WHEN ch.kind = 'loan' THEN 'holder_seat' ELSE 'recorded' END
+                    ELSE coalesce(made.basis, seat.basis) END AS place_basis, 0 AS part, NULL::text AS part_label
+        UNION ALL
+        SELECT x.place_id, 'recorded', x.position + 1, x.period_label FROM provenance_places x WHERE x.provenance_id = ch.id AND ch.kind = 'step'
+      ) pl
     ), rows AS (
       SELECT l.*, pl.slug AS place_slug, pl.name AS place_name, pl.kind AS place_kind, g.marker,
              o.slug AS holder_slug,
              jsonb_build_object('step', l.step, 'steps', l.steps, 'kind', l.kind,
                'holder', CASE WHEN l.owner_id IS NOT NULL THEN jsonb_build_object('type', l.owner_type, 'slug', o.slug, 'name', l.owner_name) END,
                'holder_label', l.owner_label, 'role', l.role, 'method', l.method, 'certainty', l.certainty,
-               'period', range_json(l.period, l.period_label), 'end_basis', l.end_basis, 'provenance_id', l.id) AS props
+               'period', range_json(l.period, l.period_label), 'end_basis', l.end_basis, 'provenance_id', l.id,
+               'part', l.part, 'part_label', l.part_label) AS props
       FROM located l
       LEFT JOIN entity_index o ON (o.type, o.id) = (l.owner_type, l.owner_id)
       LEFT JOIN places pl ON pl.id = l.place_id
@@ -186,27 +193,28 @@ async function provenanceRoute(artworkId) {
     ), placed AS (
       SELECT r.*, lag(r.step) OVER w AS prev_step, lag(r.marker) OVER w AS prev_marker,
              lag(r.kind) OVER w AS prev_kind, lag(r.place_basis) OVER w AS prev_basis
-      FROM rows r WHERE r.marker IS NOT NULL WINDOW w AS (ORDER BY r.step)
+      FROM rows r WHERE r.marker IS NOT NULL WINDOW w AS (ORDER BY r.step, r.part)
     )
     SELECT
       (SELECT coalesce(jsonb_agg(jsonb_build_object('type', 'Feature', 'geometry', ST_AsGeoJSON(p.marker)::jsonb,
          'properties', p.props || jsonb_build_object('layer', 'provenance_stop', 'place_basis', p.place_basis,
            'precision', p.place_kind, 'place', jsonb_build_object('slug', p.place_slug, 'name', p.place_name)))
-         ORDER BY p.step), '[]') FROM placed p) AS stops,
+         ORDER BY p.step, p.part), '[]') FROM placed p) AS stops,
       (SELECT coalesce(jsonb_agg(jsonb_build_object('type', 'Feature',
          'geometry', ST_AsGeoJSON(ST_MakeLine(p.prev_marker::geometry, p.marker::geometry))::jsonb,
          'properties', jsonb_build_object('layer', 'provenance_segment', 'from_step', p.prev_step, 'to_step', p.step,
-           'direct', h.direct,
+           -- within one step: the holder took it from one place to the next (077)
+           'move', p.prev_step = p.step, 'direct', CASE WHEN p.prev_step = p.step THEN true ELSE h.direct END,
            'implied', p.prev_kind <> 'step' OR p.kind <> 'step' OR p.prev_basis <> 'recorded' OR p.place_basis <> 'recorded',
-           'between', h.between)) ORDER BY p.step), '[]')
+           'between', h.between)) ORDER BY p.step, p.part), '[]')
        FROM placed p
        CROSS JOIN LATERAL (
          SELECT coalesce(bool_and(x.direct AND x.kind = 'step') FILTER (WHERE x.step > p.prev_step), false) AS direct,
-                coalesce(jsonb_agg(x.props ORDER BY x.step) FILTER (WHERE x.marker IS NULL), '[]') AS between
+                coalesce(jsonb_agg(x.props ORDER BY x.step) FILTER (WHERE x.marker IS NULL AND x.part = 0), '[]') AS between
          FROM rows x WHERE x.step > p.prev_step AND x.step <= p.step
        ) h
        WHERE p.prev_step IS NOT NULL AND NOT ST_Equals(p.prev_marker::geometry, p.marker::geometry)) AS segments,
-      (SELECT coalesce(jsonb_agg(x.props ORDER BY x.step), '[]') FROM rows x WHERE x.marker IS NULL) AS unplaced`, [artworkId]);
+      (SELECT coalesce(jsonb_agg(x.props ORDER BY x.step), '[]') FROM rows x WHERE x.marker IS NULL AND x.part = 0) AS unplaced`, [artworkId]);
   return { type: 'FeatureCollection', features: [...r.stops, ...r.segments], unplaced: r.unplaced };
 }
 

@@ -123,6 +123,22 @@ router.get('/views/:id', async (req, res) => {
   res.json({ id: v.id, query: v.query });
 });
 
+// Provenance numbers (077): which artworks' provenance records this number (a lot, ERR, Munich, Linz, "Entartete
+// Kunst" …) — exact matches only, any kind, or ?kind=munich.
+router.get('/provenance-numbers', async (req, res) => {
+  const number = typeof req.query.number === 'string' ? req.query.number.trim().slice(0, 60) : '';
+  if (!number) return res.json({ data: [] });
+  const kind = typeof req.query.kind === 'string' && /^[a-z_]+$/.test(req.query.kind) ? req.query.kind : null;
+  const { rows } = await apiPool.query(`
+    SELECT n.kind, k.label AS kind_label, n.number, jsonb_build_object('slug', w.slug, 'title', w.title) AS artwork,
+           pp."position", pp.owner_name, range_json(pp.period, pp.period_label) AS period
+    FROM provenance_numbers n JOIN provenance_number_kinds k ON k.code = n.kind
+    JOIN provenance_periods pp ON pp.id = n.provenance_id JOIN artworks w ON w.id = pp.artwork_id
+    WHERE lower(n.number) = lower($1) AND ($2::text IS NULL OR n.kind = $2)
+    ORDER BY k.position, w.title COLLATE sort_natural`, [number, kind]);
+  res.json({ data: rows });
+});
+
 // Patrons became people (migration 024): old URLs keep working — /v1/patrons…, /v1/map/patrons/…, /v1/graph/patrons/…
 router.use((req, res, next) => {
   const m = /^(\/(?:map\/|graph\/)?)patrons(\/.*)?$/.exec(req.path);

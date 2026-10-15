@@ -43,6 +43,26 @@ function provenanceEditPage(req, res, step, { status = 200, flash, values = prov
   });
 }
 
+// Provenance numbers (077): a lot, a dealer's stock number, "Entartete Kunst", ERR, Munich, Linz, Alt-Aussee — where
+// does this number occur? Exact match first, then numbers that contain it.
+router.get('/provenance/numbers', async (req, res) => {
+  const q = String(req.query.q || '').trim().slice(0, 60);
+  const { rows } = q ? await adminPool.query(`
+    SELECT k.label AS kind, n.number, w.slug, w.title, pp.owner_name, pp.period_label
+    FROM provenance_numbers n JOIN provenance_number_kinds k ON k.code = n.kind
+    JOIN provenance_periods pp ON pp.id = n.provenance_id JOIN artworks w ON w.id = pp.artwork_id
+    WHERE lower(n.number) = lower($1) OR lower(n.number) LIKE '%' || lower($1) || '%'
+    ORDER BY lower(n.number) = lower($1) DESC, k.position, n.number, w.title LIMIT 200`, [q]) : { rows: [] };
+  send(req, res, { title: 'Provenance numbers', body: html`<h1>Provenance numbers</h1>
+    <p class="muted">Lot and stock numbers, “Entartete Kunst” (EK), ERR, Munich Central Collecting Point, Linz, Alt-Aussee, Lugt —
+      as recorded on provenance steps.</p>
+    <form method="get" action="/provenance/numbers" class="bar" data-live><input type="search" name="q" value="${q}" class="grow" placeholder="a number, e.g. 4317" autocomplete="off"><button>Search</button></form>
+    <div data-live-results="numbers">${q ? (rows.length ? html`<div class="table-wrap"><table><thead><tr><th>Number</th><th>Kind</th><th>Artwork</th><th>Step</th></tr></thead><tbody>
+      ${rows.map((r) => html`<tr><td><b>${r.number}</b></td><td>${r.kind}</td><td><a href="/artworks/${r.slug}#provenance">${r.title}</a></td>
+        <td>${r.owner_name || ''} <span class="muted">${r.period_label || ''}</span></td></tr>`)}</tbody></table></div>`
+      : html`<p class="muted">No provenance step has this number.</p>`) : ''}</div>` });
+});
+
 router.get('/provenance/:id/edit', async (req, res) => {
   const step = await provenance.byId(adminPool, req.params.id);
   if (!step) return notFoundPage(req, res);

@@ -331,7 +331,13 @@ const EXTRAS = {
              (SELECT jsonb_build_object('slug', l.slug, 'name', l.name) FROM places l WHERE l.id = p.location_id) AS place,
              range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.id AS _prov_id,
              -- 074: custody steps (agent, custodian) run beside the ownership; an agent that didn't sell; the agents a handover went through
-             p.in_chain, p.not_sold, p.via
+             p.in_chain, p.not_sold, p.via,
+             -- 077: further places in order, the step's numbers, the event it belongs to
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', l.slug, 'name', l.name, 'period', range_json(x.period, x.period_label)) ORDER BY x.position), '[]')
+                FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', n.kind, 'label', k.label, 'number', n.number) ORDER BY n.position), '[]')
+                FROM provenance_numbers n JOIN provenance_number_kinds k ON k.code = n.kind WHERE n.provenance_id = p.id) AS numbers,
+             (SELECT jsonb_build_object('slug', ev.slug, 'name', ev.name) FROM provenance pv JOIN events ev ON ev.id = pv.event_id WHERE pv.id = p.id) AS event
       FROM provenance_chain p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
       WHERE p.artwork_id = $1 ORDER BY p.position`, [id])).rows,
   }),

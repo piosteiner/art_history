@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Provenance: every case the Kunsthaus documents (migrations 076/077)
+- **What:** from a survey of the Kunsthaus Zürich's 4,151 provenances (20,666 lines): steps without a holder (role
+  `event`: claims, settlements between others, collections dissolved); `theft` on custody steps + check
+  `provenance_stolen`; `transfer`; several places per step (`provenance_places`, map stops and `kept_in` for each);
+  RM prices (2–4 letters); roles `publisher`, `foundry`, `trustee`; numbers of a step (`provenance_numbers`, kinds lot,
+  stock, EK, ERR, Munich, Linz, Alt-Aussee, Lugt …; admin `/provenance/numbers`, API `/v1/provenance-numbers`);
+  authority `lugt` (link format not checkable from the server — the site is a JavaScript app); a step's `event_id`;
+  dates "between X and Y", "13.VI.1913", "1.7.1949". Admin form, table, YAML (`further_places`, `numbers`, `event`),
+  API, map. E2E `provenance-cases.spec.js`; unit tests for the dates.
+- **Why:** owner: "do all 10 — a big focus on provenance".
+- **Revert:** `git revert`, deploy; then 075's `provenance_periods`, 074/075's `edges` and `quality_issues_live`
+  (pg_get_viewdef before 077), drop `provenance_places`, `provenance_numbers`, `provenance_number_kinds`,
+  `provenance.event_id`, the lugt authority row; restore `provenance_check1` and the 3-letter currency check (076's
+  enum values stay, unused).
+
 ### Data: Gauguin provenances checked line by line against the Kunsthaus records
 - **What:** Idylle à Tahiti: Knoedler's 1934–36 consignment not sold (Phillips traded the painting to Newhouse);
   Tournesols: Bührle, his estate and the foundation passed on directly (no gap in the source), "inv. no. 46", a note on

@@ -126,3 +126,13 @@ test('dates known from one side, and written-out dates (063, provenance)', () =>
   assert.deepStrictEqual(p('1901/28 October 1904'), ['[1901-01-01,1904-10-29)', '1901–28 October 1904']);
   assert.strictEqual(formatFuzzyDate('(,1904-10-29)'), '1904-10-28 or earlier');
 });
+
+test('forms provenance sources write: between … and …, Roman months, German numeric dates (077)', () => {
+  const p = (s) => { const r = parseFuzzyDate(s); return [r.range, r.label]; };
+  assert.deepStrictEqual(p('between 1917 and 1930'), ['[1917-01-01,1931-01-01)', '1917–1930']);
+  assert.deepStrictEqual(p('13.VI.1913'), ['[1913-06-13,1913-06-14)', '13 June 1913']);
+  assert.deepStrictEqual(p('1.7.1949'), ['[1949-07-01,1949-07-02)', '1 July 1949']);
+  assert.deepStrictEqual(p('7.1934'), ['[1934-07-01,1934-08-01)', 'July 1934']);
+  assert.deepStrictEqual(p('1.7.1949 or earlier'), ['(,1949-07-02)', '1 July 1949 or earlier']);
+  assert.throws(() => parseFuzzyDate('32.13.1891'));   // no such month: left alone, then refused
+});

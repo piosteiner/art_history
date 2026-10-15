@@ -142,9 +142,23 @@ const BEFORE = /^before\s+(.+)$/i;
 
 // → { range: '[1886-03-01,1888-02-21)', label: 'March 1886–20 February 1888' }, or null for null/undefined.
 // openEnd allows "1808/" (still ongoing: upper bound infinite) — for periods, not for births or creation dates.
+// Forms as provenance sources write them (Kunsthaus Zürich …), rewritten to the ones below (077):
+//   "between 1917 and 1930" → 1917/1930 · "13.VI.1913" (Roman month) and "1.7.1949" → 1913-06-13, 1949-07-01 ·
+//   "7.1934" → 1934-07
+const ROMAN = { I: 1, II: 2, III: 3, IV: 4, V: 5, VI: 6, VII: 7, VIII: 8, IX: 9, X: 10, XI: 11, XII: 12 };
+function normalizeSourceForms(text) {
+  let t = text.replace(/^between\s+(.+?)\s+and\s+(.+)$/i, '$1/$2');
+  t = t.replace(/(^|[^\d.])(\d{1,2})\.([IVX]{1,4}|\d{1,2})\.(\d{3,4})(?![\d.])/g, (m, pre, d, mo, y) => {
+    const month = ROMAN[mo] || Number(mo);
+    return month >= 1 && month <= 12 ? `${pre}${y}-${pad(month, 2)}-${pad(Number(d), 2)}` : m;
+  });
+  t = t.replace(/(^|[^\d.])(\d{1,2})\.(\d{4})(?![\d.])/g, (m, pre, mo, y) => (Number(mo) >= 1 && Number(mo) <= 12 ? `${pre}${y}-${pad(Number(mo), 2)}` : m));
+  return t;
+}
+
 function parseFuzzyDate(value, { openEnd = false } = {}) {
   if (value === null || value === undefined) return null;
-  const raw = String(value).trim();
+  const raw = normalizeSourceForms(String(value).trim());
   // a moment known only from one side (provenance: "at the earliest from", "at least until"): an open range
   const later = LATER.exec(raw);
   if (later) {

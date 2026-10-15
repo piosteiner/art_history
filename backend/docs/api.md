@@ -258,6 +258,15 @@ The detail of an artwork has **`provenance`**: its holders in order, as the sour
 `[{kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,
 acquired, ended, method, direct, label, certainty, price: {amount, currency, note} | null, place: {slug, name} | null,
 period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
+- **The cases of 076/077:** `role` also `publisher` (holds an edition — of the chain), `foundry`, `trustee` (in trust
+  or as security — custody) and `event` (no holder: a claim, a settlement between others, a collection dissolved; the
+  step's `label` describes it, `owner` may name a party; `in_chain: false`, no `owned_by`, not on the map). `method`
+  also `transfer`, `theft` (on a custody step: the owner keeps the title; `ended` = recovered), `claim`,
+  `dissolution`. Per step: `further_places: [{slug, name, period}]` (after `place`, in order — the map has a stop for
+  each, `move: true` segments between them), `numbers: [{kind, label, number}]` (kinds: lot, stock, inventory,
+  catalogue, ek, err, munich, linz, aussee, lugt, other), `event: {slug, name}` or null. `price.currency` may be a
+  historical code without ISO (RM). `GET /v1/provenance-numbers?number=4317[&kind=munich]` → the steps recording it:
+  `{data: [{kind, kind_label, number, artwork: {slug, title}, position, owner_name, period}]}`.
 - **Custody beside the ownership (074):** `in_chain: false` for agents and custodians — deposits, loans, consignments,
   auctions. They hold the work *alongside* its owner: they don't end the owner's period, and handovers go from owner
   to owner past them. Show them indented or as "held by … (deposit)" rather than as a new owner. `not_sold: true`: an
