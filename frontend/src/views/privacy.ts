@@ -2,7 +2,7 @@
 // when a service, a stored value or the log retention changes, update this page and its date.
 import { html, render } from '../html';
 
-const UPDATED = '4 October 2026';
+const UPDATED = '15 October 2026';
 const CONTACT = 'info@piogino.ch';
 
 export function privacy(main: HTMLElement) {
@@ -34,11 +34,23 @@ export function privacy(main: HTMLElement) {
           <td>MapTiler AG, Switzerland (<a href="https://www.maptiler.com/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>); map data © OpenStreetMap contributors</td>
           <td>Your IP address and the map area being shown. Loaded without cookies.</td></tr>
         <tr><td>Images</td>
-          <td>Wikimedia Commons: Wikimedia Foundation, USA (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">privacy policy</a>)</td>
-          <td>Your IP address and the image requested. Images are loaded directly from Wikimedia, without cookies.</td></tr>
+          <td>Mostly Wikimedia Commons: Wikimedia Foundation, USA (<a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy" target="_blank" rel="noopener">privacy policy</a>).
+            For some works, the open-access image server of the museum or collection that holds them (e.g. The Metropolitan
+            Museum of Art, the Art Institute of Chicago or the Cleveland Museum of Art, USA; the Rijksmuseum, Netherlands;
+            SMK, Denmark)</td>
+          <td>Your IP address and the image requested. Images are loaded directly from these servers, without cookies;
+            each image names its source.</td></tr>
       </tbody>
     </table></div>
 
+    <h2>Short links to a view</h2>
+    <p>When your selection on the start page gets long (many artists, works …), the site stores that selection on our
+      server and shows a short address instead, such as <code>/?v=cec0c2f5</code>, so it can be bookmarked and shared.
+      What is stored is only the selection itself: the chosen entries and the time window, under a code derived from
+      them (the same selection always gets the same code). Nothing about you is stored with it. To limit how many links
+      can be created, your IP address is kept in the server's memory for at most 10 minutes, and the request appears in
+      the server log described above. Short links are kept so that they keep working; a selection names only public
+      entries of this site.</p>
     <h2>Stored in your browser</h2>
     <p>This site sets <strong>no cookies</strong>. It remembers a few of your own choices in your browser's local storage,
       so they are still there on your next visit:</p>
@@ -47,12 +59,13 @@ export function privacy(main: HTMLElement) {
       <li><code>arthistory:sort:…</code>: the sort order you picked for a list</li>
       <li><code>arthistory:explore</code>: your last view on the start page (selection and time window)</li>
     </ul>
-    <p>These values stay on your device and are never sent to us. You can refuse or delete them at any time by clearing
+    <p>These values stay on your device and are never sent to us (a long selection is sent only to make a short link, as
+      described above). You can refuse or delete them at any time by clearing
       the site data in your browser's settings, or by using a private window; the site works the same without them.</p>
 
     <h2>Data abroad</h2>
-    <p>GitHub and the Wikimedia Foundation are based in the USA, so your IP address and the request reach the USA when
-      their services are used. GitHub states that it participates in the Swiss-U.S. Data Privacy Framework; for details see
+    <p>GitHub, the Wikimedia Foundation and some of the museums whose image servers are used are based in the USA, so your
+      IP address and the request reach the USA when their services are used. GitHub states that it participates in the Swiss-U.S. Data Privacy Framework; for details see
       the privacy statements linked above. Our own server and MapTiler are in Switzerland.</p>
 
     <h2>Your rights</h2>

@@ -65,15 +65,21 @@ router.get('/featured', async (req, res) => {
 // and shows /?v=<code>. The code comes from the query's hash: the same selection, the same code. The API's role is
 // read-only by default (setup-roles.sql); storing opens its transaction READ WRITE — the role may insert only here.
 const MAX_QUERY = 20000;
-const recent = new Map();  // ip → [timestamps]: at most 60 new links per 10 minutes and address
+// ip → [timestamps]: at most 60 new links per 10 minutes and address. Addresses are forgotten 10 minutes after their
+// last link (the sweep below) — the privacy page says so; nothing else about the visitor is kept.
+const RATE_WINDOW = 600000;
+const recent = new Map();
 function tooMany(ip) {
   const now = Date.now();
-  const list = (recent.get(ip) || []).filter((t) => now - t < 600000);
+  const list = (recent.get(ip) || []).filter((t) => now - t < RATE_WINDOW);
   list.push(now);
   recent.set(ip, list);
-  if (recent.size > 5000) recent.clear();  // a crude bound on memory
   return list.length > 60;
 }
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, list] of recent) if (now - list[list.length - 1] >= RATE_WINDOW) recent.delete(ip);
+}, 60000).unref();  // unref: doesn't keep the process (or a test) alive
 // The query in one form: the site's own switches out, keys sorted (so the same view gives the same code), values
 // limited to what the site writes (slugs, commas, numbers, none / by-artists).
 function canonicalQuery(text) {

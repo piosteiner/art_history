@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Privacy page updated; rate-limit addresses forgotten after 10 minutes
+- **What:** `frontend/src/views/privacy.ts` (dated 15 October 2026): new section "Short links to a view" (what is stored,
+  nothing about the visitor, IP in memory ≤ 10 minutes for the rate limit, links kept); images may also come from
+  museums' open-access image servers (Met, Art Institute of Chicago, Cleveland, Rijksmuseum, SMK …), not only
+  Wikimedia; "never sent to us" qualified; data abroad names those museums. `backend/src/routes/v1.js`: the
+  short-link rate limiter drops an address 10 minutes after its last link (sweep every minute) — before, an address
+  stayed until the next restart, which the page would have misstated.
+- **Why:** owner asked whether the privacy page needs an update after the short links (072).
+- **Revert:** redeploy the previous commit.
+
 ### Short addresses for long selections on the start map (migration 072)
 - **What:** table `shared_views` (code, query, created, last used; not audited, anonymous) and
   `save_shared_view(q)`: code = first 8 hex digits of the query's SHA-256 (one more on a clash), the same query the same
