@@ -3,7 +3,7 @@ import { getPresence, listAll } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
-import type { SourceHint, Category, Entity, EntryRef, Price, ProvenanceStep, Relationship } from '../types';
+import type { Citation, SourceHint, Category, Entity, EntryRef, Price, ProvenanceStatus, ProvenanceStep, Relationship } from '../types';
 import { cite } from '../cite';
 
 // categories, plus the relationship types an event's page groups by (participated_in, concerns)
@@ -33,6 +33,16 @@ const CATEGORY_LABEL: Record<string, string> = {
 export const uncertain = (certainty: string | null | undefined) => (certainty && certainty !== 'attested' ? html`<span class="tag">${certainty}</span>` : '');
 
 const METHOD_LABEL: Record<string, string> = { forced_sale: 'forced sale' };
+const METHOD_TITLE: Record<string, string> = { settlement: 'Kept after an agreement with the claimants (a “just and fair solution”)' };
+const method = (m: string) => (METHOD_TITLE[m] ? html`<span class="explained" title="${METHOD_TITLE[m]}">${METHOD_LABEL[m] ?? m}</span>` : html`${METHOD_LABEL[m] ?? m}`);
+
+/** "1933–1945: D — looted art …", coloured by category, the source's own wording and its sources after it. */
+function statusLine(st: ProvenanceStatus, sources: Citation[] | undefined, bibliography?: Record<string, SourceHint>) {
+  return html`<p class="provenance-status prov-cat-${st.category}">
+    <span class="prov-badge" title="Provenance 1933–1945, category of the Swiss Federal Office of Culture">${st.category}</span>
+    <span><span class="muted">1933–1945:</span> ${st.label}${st.note ? html` <span class="muted">— “${st.note}”</span>` : ''}${cite(sources, bibliography)}</span>
+  </p>`;
+}
 // roles shown as a tag next to the holder; an owner needs none, an estate is in the name ("Estate of …")
 const ROLE_TAG: Record<string, [string, string]> = {
   dealer: ['dealer', 'Bought it to sell'],
@@ -52,35 +62,42 @@ function holders(s: ProvenanceStep): Html {
 /** "200 FRF", "ca. 18,000 USD". */
 const priceLabel = (p: Price) => `${p.note ? `${p.note} ` : ''}${p.amount.toLocaleString('en')} ${p.currency}`;
 
-/** The holder the work is lent from: the last recorded step (the `loan` line after it is computed). */
-export const lastRecordedStep = (steps: ProvenanceStep[] | undefined) => steps?.filter((s) => s.kind !== 'loan').at(-1);
+/** The holder the work is lent from: the last recorded owner (the `loan` line after it is computed; agents and custodians held it beside the owner). */
+export const lastRecordedStep = (steps: ProvenanceStep[] | undefined) => steps?.filter((s) => s.kind !== 'loan' && s.in_chain !== false).at(-1);
 
 /**
  * The holders in order, as recorded. A period whose end is only implied by the next acquisition is marked; a handover
  * that isn't documented as direct gets a dashed connector ("possibly other owners in between"). The lines the API
- * computes — the artist from the creation date, the current loan — are in italics, without sources.
+ * computes — the artist from the creation date, the current loan — are in italics, without sources. Agents and
+ * custodians (`in_chain: false`, API 074) held the work alongside its owner: indented and muted, "held by …", never a
+ * new owner. The 1933–1945 status (A–D) stands above the list, also when there are no steps.
  */
-export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>): Html | null {
-  if (!steps.some((s) => !s.implied)) return null; // the computed lines alone are no provenance
+export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>,
+  status?: ProvenanceStatus | null, statusSources?: Citation[]): Html | null {
+  const recorded = steps.some((s) => !s.implied); // the computed lines alone are no provenance
+  if (!recorded && !status) return null;
   return html`<section class="provenance">
     <h2>Provenance</h2>
-    <p class="muted small">Holders in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between. In italics: not recorded, but following from the creation or the loan.</p>
+    ${status ? statusLine(status, statusSources, bibliography) : ''}
+    ${recorded ? html`<p class="muted small">Holders in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between. Indented: held alongside the owner (an agent, a deposit, a loan), not owned. In italics: not recorded, but following from the creation or the loan.</p>
     <ol class="provenance-list">${steps.map((s, i) => {
-      const gap = i > 0 && !s.direct && s.kind !== 'loan'; // a loan is no handover of ownership
+      const custody = s.in_chain === false;
+      const gap = i > 0 && !s.direct && !custody && s.kind !== 'loan'; // custody and loans are no handover of ownership
       const role = s.role && ROLE_TAG[s.role];
       const how = [
-        s.kind === 'creation' ? html`the artist` : s.method && s.method !== 'unknown' ? html`${METHOD_LABEL[s.method] ?? s.method}` : null,
+        s.kind === 'creation' ? html`the artist` : s.method && s.method !== 'unknown' ? method(s.method) : null,
+        s.via ? html`via ${s.via}` : null,
         s.label ? html`${s.label}` : null,
         s.price ? html`${priceLabel(s.price)}` : null,
         s.place ? html`in ${link('place', s.place.slug, s.place.name)}` : null,
       ].filter((x): x is Html => !!x);
-      return html`<li class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}">
+      return html`<li class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}${custody ? ' custody' : ''}">
         ${gap ? html`<div class="provenance-gap">handover not documented</div>` : ''}
-        <div class="provenance-owner">${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
+        <div class="provenance-owner">${custody ? html`<span class="provenance-alongside" title="Held alongside the owner, did not own it">held by</span> ` : ''}${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.not_sold ? html` <span class="tag tag-not-sold" title="Bought in, withdrawn or returned: the owner kept it">not sold</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
         ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
         ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
       </li>`;
-    })}</ol>
+    })}</ol>` : ''}
   </section>`;
 }
 

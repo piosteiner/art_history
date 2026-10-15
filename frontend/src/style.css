@@ -19,6 +19,7 @@
   --picked-line: #e3b9ab;
   --mark: #f6dd8f;
   --polity: #8a7a5c;
+  --prov-a: #2e7a4a; --prov-b: #6b665d; --prov-c: #a2620a; --prov-d: #b3261e; /* 1933–1945 categories A–D */
   color-scheme: light;
 }
 
@@ -29,6 +30,7 @@
     --accent: #e0805f; --link: #f0a283; --association: #a79cf0; --place: #6fb3b6;
     --shadow: 0 8px 24px rgb(0 0 0 / .5); --error-bg: #3a1f1a; --error-text: #f4c3b5; --map-bg: #26272b;
     --picked-bg: #3a2620; --picked-line: #6b3d2e; --mark: #6b5617; --polity: #b9a57c;
+    --prov-a: #6fc28f; --prov-b: #a59e92; --prov-c: #e3a64f; --prov-d: #f08a80;
     color-scheme: dark;
   }
 }
@@ -37,6 +39,7 @@
   --accent: #e0805f; --link: #f0a283; --association: #a79cf0; --place: #6fb3b6;
   --shadow: 0 8px 24px rgb(0 0 0 / .5); --error-bg: #3a1f1a; --error-text: #f4c3b5; --map-bg: #26272b;
   --picked-bg: #3a2620; --picked-line: #6b3d2e; --mark: #6b5617; --polity: #b9a57c;
+    --prov-a: #6fc28f; --prov-b: #a59e92; --prov-c: #e3a64f; --prov-d: #f08a80;
   color-scheme: dark;
 }
 
@@ -212,6 +215,18 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .provenance-owner .muted { margin-left: .3rem; font-size: .9rem; }
 .provenance-step.implied .provenance-owner, .provenance-step.implied .provenance-how { font-style: italic; }
 .provenance-step.implied .provenance-owner::before { background: var(--bg); box-shadow: inset 0 0 0 2px var(--c-provenance); } /* computed, not recorded: a hollow dot */
+/* agents and custodians (API 074): held alongside the owner — indented, muted, a small dot on the rail */
+.provenance-step.custody { padding-left: 2.6rem; color: var(--muted); font-size: .95rem; }
+.provenance-step.custody .provenance-owner::before { left: calc(-2.6rem - 4px); top: .5em; width: 6px; height: 6px; background: var(--muted); }
+.provenance-step.custody.implied .provenance-owner::before { background: var(--bg); box-shadow: inset 0 0 0 1.5px var(--muted); }
+.provenance-alongside { font-size: .85rem; }
+.tag-not-sold { border-style: dashed; }
+.explained { text-decoration: underline dotted; cursor: help; }
+/* 1933–1945 status: a lettered badge in the category's colour */
+.provenance-status { display: flex; gap: .5rem; align-items: baseline; max-width: 42rem; margin: .2rem 0 .6rem; }
+.prov-badge { flex: none; font: 700 .85rem/1.5 var(--sans); min-width: 1.6rem; text-align: center; border-radius: 4px;
+  color: var(--surface); background: var(--prov); cursor: help; }
+.prov-cat-A { --prov: var(--prov-a); } .prov-cat-B { --prov: var(--prov-b); } .prov-cat-C { --prov: var(--prov-c); } .prov-cat-D { --prov: var(--prov-d); }
 .provenance-gap { font-size: .8rem; color: var(--muted); font-style: italic; margin-bottom: .2rem; }
 .provenance-how { font-size: .9rem; color: var(--muted); }
 .provenance-how::first-letter { text-transform: uppercase; }
@@ -502,7 +517,8 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .dim-part { color: var(--muted); }
 
 /* glossary */
-.category-filter { display: flex; flex-wrap: wrap; gap: .35rem; margin: .5rem 0 .2rem; }
+.category-filter { display: flex; flex-wrap: wrap; gap: .35rem; margin: .5rem 0 .2rem; align-items: center; }
+.category-filter-label { font-size: .85rem; color: var(--muted); margin-right: .2rem; }
 .category-filter button {
   font: inherit; font-size: .88rem; padding: .2rem .7rem; border: 1px solid var(--line); background: var(--surface);
   color: var(--text); border-radius: 999px; cursor: pointer; text-transform: capitalize;

@@ -119,6 +119,16 @@ page's own link.
   (the owner's own and the estate's), "commissioned" / "held, not owned" tags; then "Acquired from" / "Passed on to",
   one line per counterpart with how many works and when (`holdingsSections()` in `detail-sections.ts`). These
   `owned_by` / `held_by` / `commissioned` / `transferred_to` links aren't listed again under Provenance.
+- Custody and status (API 073/074): agents and custodians (`in_chain: false`) are indented and muted on the rail —
+  "held by Galerie Moos (agent)" beside the owner, never a new owner, never a "handover not documented"; `not_sold` →
+  a "not sold" tag; an owner's `via` → "via Galerie Moos" in the how-line; method `settlement` with an explaining
+  tooltip. The loan's lender is the last owner in the chain. `provenance_status` (Swiss Federal Office of Culture
+  categories A–D for 1933–1945) stands under the Provenance heading as a lettered badge in the category's colour
+  (`--prov-a`…`--prov-d`) with the label, the source's wording and its sources (not as a fact row); also without any
+  steps. `conceived` makes the Date row "designed 1893–1894, printed 1921" ("cast" for bronzes, else "made").
+  The artworks list filters by `provenance_category` (`?provenance=D`; shown once any work is assessed).
+  `copy_after` ("copy after" / "copied in") and the graph's handovers past custodians need nothing here: labels and
+  edges come from the API.
 
 ## Series and other wholes (API migration 037)
 A part's page: "No. 21 of 36 in <whole>" (the chain upwards) and previous/next links; a whole's page: a grid of its parts.

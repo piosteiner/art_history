@@ -144,6 +144,11 @@ const byText = (v: string | null | undefined, unknown: string): SortValue =>
 
 export const STATUS_LABEL: Record<string, string> = { read: 'read', reading: 'reading', to_read: 'to read' };
 
+/** The 1933–1945 provenance categories (Swiss Federal Office of Culture), short — the artworks list's filter. */
+export const PROVENANCE_CATEGORY_LABEL: Record<string, string> = {
+  A: 'A · clarified', B: 'B · not fully clarified', C: 'C · indications', D: 'D · looted / seized', other: 'Not assessed',
+};
+
 /** Fields without text are dropped, so builders can list them unconditionally. */
 const fields = (...list: [string, string | null | undefined | false][]): Field[] =>
   list.filter(([, t]) => t).map(([label, text]) => ({ label, text: text as string }));

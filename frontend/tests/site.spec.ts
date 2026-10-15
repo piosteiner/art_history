@@ -779,6 +779,61 @@ test('provenance (063): computed artist and loan lines in italics, roles, joint 
   await expect(steps.nth(4).locator('.cite-ref')).toHaveCount(0);
 });
 
+test('provenance (074): agents and custodians held alongside the owner, not sold, via, settlement; status A–D; design date', async ({ page }) => {
+  const inst = (slug: string, name: string) => ({ type: 'institution', slug, name });
+  await patch(page, GREAT_WAVE, (b) => {
+    b.created = year(1921);
+    b.conceived = year(1893, 1894);
+    b.kind = 'woodcut';
+    b.provenance_status = { category: 'D', code: 'd_seized', label: 'looted art / seized as a result of Nazi persecution', note: 'NS-verfolgungsbedingt entzogenes Kulturgut' };
+    b.sources = { ...(b.sources as object), provenance_status: [cited({ kind: 'text', reliability: null, text: 'Museum record' })] };
+    b.provenance = [
+      step(0, { type: 'person', slug: 'first-owner', name: 'First Owner' }, { kind: 'step', in_chain: true, period: year(1920, 1937), end_basis: 'recorded' }),
+      step(1, inst('an-auction-house', 'An Auction House'), { kind: 'step', role: 'agent', method: 'auction', in_chain: false, not_sold: true, direct: true, period: year(1933) }),
+      step(2, inst('galerie-moos', 'Galerie Moos'), { kind: 'step', role: 'agent', method: 'auction', in_chain: false, direct: true, period: year(1937) }),
+      step(3, { type: 'person', slug: 'second-owner', name: 'Second Owner' }, { kind: 'step', method: 'forced_sale', in_chain: true, via: 'Galerie Moos', direct: true,
+        period: year(1937, 2025), end_basis: 'implied' }),
+      step(4, { type: 'person', slug: 'second-owner', name: 'Second Owner' }, { kind: 'step', method: 'settlement', in_chain: true, direct: true, period: year(2025, null), end_basis: 'ongoing' }),
+    ];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.facts dt', { hasText: 'Date' }).locator('+ dd')).toHaveText('designed 1893–1894, printed 1921');
+  const status = page.locator('.provenance .provenance-status');
+  await expect(status.locator('.prov-badge')).toHaveText('D');
+  await expect(status).toContainText('looted art / seized as a result of Nazi persecution');
+  await expect(status).toContainText('NS-verfolgungsbedingt entzogenes Kulturgut');
+  await expect(status.locator('.cite-ref')).toHaveCount(1); // its sources here, not as a fact row
+  await expect(page.locator('.facts dt', { hasText: /Provenance status/i })).toHaveCount(0);
+
+  const steps = page.locator('.provenance-step');
+  await expect(steps).toHaveCount(5);
+  await expect(steps.nth(1)).toHaveClass(/custody/);
+  await expect(steps.nth(1).locator('.provenance-owner')).toContainText('held by An Auction House');
+  await expect(steps.nth(1).locator('.tag', { hasText: 'not sold' })).toBeVisible();
+  await expect(steps.nth(2)).toHaveClass(/custody/);
+  await expect(steps.nth(2).locator('.tag', { hasText: 'not sold' })).toHaveCount(0);
+  const indent = async (i: number) => steps.nth(i).locator('.provenance-owner').evaluate((el) => el.getBoundingClientRect().left);
+  expect(await indent(1)).toBeGreaterThan(await indent(0)); // indented, not a new owner
+  await expect(steps.nth(3)).not.toHaveClass(/custody/);
+  await expect(steps.nth(3).locator('.provenance-how')).toContainText('forced sale · via Galerie Moos');
+  await expect(steps.nth(4).locator('.provenance-how .explained')).toHaveText('settlement');
+});
+
+test('artworks list: a filter by the 1933–1945 provenance category', async ({ page }) => {
+  await patch(page, /\/v1\/artworks\?/, (b) => {
+    for (const a of b.data as Record<string, unknown>[]) a.provenance_category = a.slug === 'the-great-wave-off-kanagawa' ? 'D' : null;
+  });
+  await page.goto('/artworks');
+  const filter = page.locator('#categories');
+  await expect(filter).toContainText('Provenance 1933–1945');
+  await filter.locator('button', { hasText: 'D · looted / seized' }).click();
+  await expect(page).toHaveURL(/\?provenance=D$/);
+  await expect(page.locator('.card')).toHaveCount(1);
+  await expect(page.locator('.card')).toContainText('The Great Wave');
+  await filter.locator('button', { hasText: 'All' }).click();
+  await expect(page.locator('.card').nth(1)).toBeVisible();
+});
+
 test('an owner\'s page and the network mark periods whose end is only implied', async ({ page }) => {
   await patch(page, /\/v1\/people\/theo-van-gogh$/, (b) => {
     (b.relationships as unknown[]).push({ type: 'owned_by', direction: 'incoming', label: 'owner of', category: 'provenance', is_physical_presence: false,

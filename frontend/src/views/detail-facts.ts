@@ -13,6 +13,18 @@ import { backlinks, lastRecordedStep, provenanceSection, uncertain } from './det
 export type Fact = [label: string, value: Html | string | null | undefined | false];
 
 /**
+ * An artwork's date; with a design earlier than the making (API 074: a print pulled, a cast made later) both —
+ * "designed 1893–1894, printed 1921".
+ */
+function dateFact(e: Artwork): string | null {
+  if (!e.conceived) return dateLabel(e.created);
+  const kind = `${e.kind ?? ''} ${e.medium ?? ''}`.toLowerCase();
+  const made = /print|woodcut|woodblock|engraving|etching|lithograph|aquatint|mezzotint|ukiyo|holzschnitt|radierung|druck/.test(kind) ? 'printed'
+    : /bronze|cast|guss/.test(kind) ? 'cast' : 'made';
+  return e.created ? `designed ${e.conceived.label}, ${made} ${e.created.label}` : `designed ${e.conceived.label}`;
+}
+
+/**
  * Polity rows ("Soviet Union 1922–1991 (today Ukraine)") for one kind of link; null when there are none.
  * Without polities, today's country stands on its own under `fallback`.
  */
@@ -135,7 +147,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         text: e.description_html, images: e.images,
         facts: [
           [creatorsOf(e).length > 1 ? 'Artists' : 'Artist', creatorsFact(e)],
-          ['Date', dateLabel(e.created)],
+          ['Date', dateFact(e)],
           // glossary terms (API 071): linked to their entries, which explain them and carry the translations
           ['Type', e.kind_term ? link('term', e.kind_term.slug, e.kind ?? e.kind_term.name) : e.kind],
           ['Medium', e.medium],
@@ -149,7 +161,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ...numberFacts(e),
           ['Also known as', otherNames(e)],
         ],
-        extra: [partsGrid(e), provenanceSection(e.provenance ?? [], e.bibliography)].filter((x): x is Html => !!x),
+        extra: [partsGrid(e), provenanceSection(e.provenance ?? [], e.bibliography, e.provenance_status, e.sources?.provenance_status)].filter((x): x is Html => !!x),
       };
     }
     case 'place':
@@ -257,7 +269,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
 const NAMES_FACT: Record<string, string[]> = { names: ['Also known as'] };
 const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
   artist: { birth: ['Born'], death: ['Died'] },
-  artwork: { creator: ['Artist', 'Artists'], attribution_label: ['Artist', 'Artists'], created: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
+  artwork: { creator: ['Artist', 'Artists'], attribution_label: ['Artist', 'Artists'], created: ['Date'], conceived: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
     dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'] },
   institution: { founded: ['Founded'], address: ['Address', 'Location'], location: ['Address', 'Location'], place: ['Location'] },
   person: { birth: ['Born', 'Active'], death: ['Died'], kind: ['Kind'], occupations: ['Occupations'] },
@@ -275,7 +287,7 @@ export function withSources(e: Entity, facts: Fact[]): Fact[] {
   const by = new Map<number, Citation[]>();
   const extra: Fact[] = [];
   for (const [field, list] of Object.entries(e.sources ?? {})) {
-    if (field === 'title_status') continue; // shown beside the heading
+    if (field === 'title_status' || field === 'provenance_status') continue; // shown beside the heading / under Provenance
     const labels = FIELD_FACT[e.type]?.[field] ?? NAMES_FACT[field] ?? [];
     const i = facts.findIndex(([label]) => labels.includes(label));
     if (i >= 0) by.set(i, [...(by.get(i) ?? []), ...list]);

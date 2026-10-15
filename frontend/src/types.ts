@@ -197,6 +197,8 @@ export interface ArtworkItem extends Located, Titled {
   part_of?: { slug: string; title: string } | null; part_number?: string | null;
   /** Lent to (deposited at) `institution`; the owner is the provenance's last step (migration 048). */
   on_loan?: boolean;
+  /** The 1933–1945 provenance category (API 074): A–D, null when not assessed — a filter on the list. */
+  provenance_category?: ProvenanceCategory | null;
   /** Materials, and every name of the type / material terms in every language, for searching (API migration 071). */
   materials?: string[]; term_names?: string[];
 }
@@ -275,14 +277,27 @@ export interface Artwork extends DetailBase, Located, Titled {
   numbers?: ArtworkNumber[];
   /** Lent to (deposited at) `institution` — since when; the lender is the provenance's last owner. */
   on_loan?: boolean; on_loan_since?: DateRange | null;
+  /** The 1933–1945 provenance status (API 074), null when not assessed; `note`: the source's own wording. */
+  provenance_status?: ProvenanceStatus | null;
+  /** When the design, block or model was made, if earlier than `created` (a print pulled, a cast made later; 074). */
+  conceived?: DateRange | null;
 }
+
+/**
+ * The categories of the Swiss Federal Office of Culture for 1933–1945: A clarified, no looted art · B not fully
+ * clarified, no indications · C not fully clarified, indications or suspicious circumstances · D looted / seized.
+ */
+export type ProvenanceCategory = 'A' | 'B' | 'C' | 'D';
+export interface ProvenanceStatus { category: ProvenanceCategory; code: string; label: string; note: string | null }
 
 /** "18" at the Foundation E.G. Bührle Collection, "658" in Rewald's catalogue raisonné … */
 export interface ArtworkNumber { number: string; label: string | null; institution: Ref | null; source: Ref | null }
 
 export type AcquisitionMethod =
   | 'creation' | 'commission' | 'inheritance' | 'purchase' | 'auction' | 'gift' | 'bequest' | 'exchange'
-  | 'confiscation' | 'forced_sale' | 'restitution' | 'unknown';
+  | 'confiscation' | 'forced_sale' | 'restitution'
+  | 'settlement' // kept after an agreement with claimants (API 073)
+  | 'unknown';
 
 /** How a holder held the work (migration 063): `estate` = the owner's estate; `agent` (consignment) and `custodian` (loan, deposit) didn't own it. */
 export type ProvenanceRole = 'owner' | 'dealer' | 'agent' | 'estate' | 'custodian';
@@ -311,6 +326,12 @@ export interface ProvenanceStep {
   notes_html: string | null;
   /** Citations (migration 049); before that, plain URLs. */
   sources: (Citation | string)[] | null;
+  /**
+   * API 074: `in_chain: false` for agents and custodians (consignments, auctions, deposits, loans) — they held the work
+   * alongside its owner, not as a new owner. `not_sold`: an agent that didn't sell it. `via` (owner steps): the agents
+   * the work went through to this owner ("Galerie Moos").
+   */
+  in_chain?: boolean; not_sold?: boolean; via?: string | null;
 }
 
 export interface Place extends DetailBase, Named {
