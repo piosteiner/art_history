@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Data: the Gauguin works with the new provenance fields (production)
+- **What:** not sold: the 1933 Frederik Muller auction (La Route montante), the 1975 Hôtel Rameau auction (Carrière aux
+  environs de Pontoise); La Route montante: settlement step of the foundation, 24 June 2025 (cited); provenance status
+  with the Kunsthaus records cited — La Route montante D, Nature morte au couteau A ("kein NS-verfolgungsbedingt
+  entzogenes Kulturgut"), Nature morte aux fleurs et à l'idole C; the status sentences removed from the step notes;
+  L'Univers est créé designed 1893–1894 (the Noa Noa block); copy_after: Judith Gérard's copy → Van Gogh's
+  Self-portrait, dedicated to Paul Gauguin (new, Q3643629, to complete), Bridge in the Rain → Sudden Shower over
+  Shin-Ōhashi Bridge, Flowering Plum Orchard → Plum Park in Kameido.
+- **Why:** owner: points 1–6 applied to the Gauguin works.
+- **Revert:** History → the change set (source import) → Revert.
+
 ### Provenance: custody beside the ownership, unsold auctions, the 1933–1945 gap over undated steps, settlement, status A–D, design dates, copies (migrations 073/074)
 - **What:** 073: `acquisition_method` `settlement`. 074: `provenance.not_sold`; `provenance_periods` takes the next /
   previous step of the ownership chain (owner, dealer, estate) — custodians and agents no longer end an owner's period
