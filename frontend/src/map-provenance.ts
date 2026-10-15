@@ -3,6 +3,7 @@
 import { Marker, Popup, type Map as MapLibre } from 'maplibre-gl';
 import type { ExpressionSpecification } from 'maplibre-gl';
 import { html, link, type Html } from './html';
+import { gapSides, gapText, years } from './coverage';
 import { addArrows, once, overlaps, removeLayers, setData } from './map-core';
 import type {
   EntityMap, Feature, LineStringGeometry, PointGeometry, ProvenanceMap, ProvenanceMapStep, ProvenanceSegmentProps,
@@ -146,6 +147,25 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
 
   // numbered stops as HTML markers (one per artwork and position): numbers need no map font, and they are focusable
   const markers = provenanceMarkers.get(map)!;
+  // gaps between two stops (API 078): a "?" with the years mid-segment, red when it touches 1933–1945
+  for (const it of items) {
+    for (const f of it.prov.features) {
+      if (f.properties.layer !== 'provenance_segment' || !f.properties.gaps?.length) continue;
+      const gaps = f.properties.gaps;
+      const [a, b] = [(f.geometry as LineStringGeometry).coordinates[0], (f.geometry as LineStringGeometry).coordinates.at(-1)!];
+      const el = document.createElement('div');
+      el.className = `prov-gap${gaps.some((g) => g.in_1933_1945) ? ' ns' : ''}`;
+      el.textContent = `? ${gaps.map((g) => years(g.period)).join(', ')}`;
+      el.setAttribute('role', 'button');
+      el.setAttribute('aria-label', `${it.entity ? `${it.entity.name}, ` : ''}${gaps.map(gapText).join('; ')}`);
+      const popup = new Popup({ maxWidth: '320px', offset: 12 }).setHTML(html`<div class="popup-row">
+        ${entityLine(it)}
+        ${gaps.map((g) => html`<div><strong>${gapText(g)}</strong>${gapSides(g) ? html`<br><span class="muted">${gapSides(g)}</span>` : ''}
+          ${g.in_1933_1945 ? html`<br><span class="tag tag-ns">1933–1945</span>` : ''}</div>`)}
+      </div>`.value);
+      markers.push(new Marker({ element: el }).setLngLat([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]).setPopup(popup).addTo(map));
+    }
+  }
   for (const it of items) {
     const places = new Map<string, Feature<PointGeometry, ProvenanceStopProps>[]>();
     for (const f of provenanceStops(it.prov)) {
@@ -187,6 +207,10 @@ export function provenanceInWindow(prov: ProvenanceMap, w: { from: number; to: n
       ? inside.has(f.properties.step) : inside.has(f.properties.from_step) && inside.has(f.properties.to_step))),
   };
 }
+
+/** Every gap of the provenance, one per line, under the map (API 078). */
+export const gapList = (prov: ProvenanceMap) => html`<ul class="unplaced-list gap-list">${(prov.gaps ?? []).map((g) => html`<li class="${g.in_1933_1945 ? 'ns' : ''}">
+  ${gapText(g)}${gapSides(g) ? html` <span class="muted">(${gapSides(g)})</span>` : ''}</li>`)}</ul>`;
 
 /** The steps without a place, one per line, numbered with their step: under the map, so every step is visible somewhere. */
 export const unplacedSteps = (prov: ProvenanceMap) => html`<ol class="unplaced-list">${prov.unplaced.map((s) => html`<li value="${s.step}">

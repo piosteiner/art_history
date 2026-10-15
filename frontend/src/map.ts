@@ -19,7 +19,7 @@ import type {
 
 export { COLORS, PALETTE };
 export { createMap, whenReady } from './map-core';
-export { placedProvenance, probable, provenanceHolder, provenanceInWindow, stepRuns, unplacedSteps } from './map-provenance';
+export { gapList, placedProvenance, probable, provenanceHolder, provenanceInWindow, stepRuns, unplacedSteps } from './map-provenance';
 
 /**
  * Numbers the dated presence stops as `stop` / `stops` properties, in the order the API sends them — the route's

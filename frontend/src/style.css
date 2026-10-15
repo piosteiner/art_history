@@ -20,6 +20,7 @@
   --mark: #f6dd8f;
   --polity: #8a7a5c;
   --prov-a: #2e7a4a; --prov-b: #6b665d; --prov-c: #a2620a; --prov-d: #b3261e; /* 1933–1945 categories A–D */
+  --gap-edge: #c96a5a; /* a provenance gap's edge; 1933–1945 ones in --prov-d */
   color-scheme: light;
 }
 
@@ -30,7 +31,7 @@
     --accent: #e0805f; --link: #f0a283; --association: #a79cf0; --place: #6fb3b6;
     --shadow: 0 8px 24px rgb(0 0 0 / .5); --error-bg: #3a1f1a; --error-text: #f4c3b5; --map-bg: #26272b;
     --picked-bg: #3a2620; --picked-line: #6b3d2e; --mark: #6b5617; --polity: #b9a57c;
-    --prov-a: #6fc28f; --prov-b: #a59e92; --prov-c: #e3a64f; --prov-d: #f08a80;
+    --prov-a: #6fc28f; --prov-b: #a59e92; --prov-c: #e3a64f; --prov-d: #f08a80; --gap-edge: #b8786c;
     color-scheme: dark;
   }
 }
@@ -39,7 +40,7 @@
   --accent: #e0805f; --link: #f0a283; --association: #a79cf0; --place: #6fb3b6;
   --shadow: 0 8px 24px rgb(0 0 0 / .5); --error-bg: #3a1f1a; --error-text: #f4c3b5; --map-bg: #26272b;
   --picked-bg: #3a2620; --picked-line: #6b3d2e; --mark: #6b5617; --polity: #b9a57c;
-    --prov-a: #6fc28f; --prov-b: #a59e92; --prov-c: #e3a64f; --prov-d: #f08a80;
+    --prov-a: #6fc28f; --prov-b: #a59e92; --prov-c: #e3a64f; --prov-d: #f08a80; --gap-edge: #b8786c;
   color-scheme: dark;
 }
 
@@ -227,6 +228,32 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .provenance-event-line { font-style: italic; }
 .provenance-number-form { display: flex; gap: .5rem; flex-wrap: wrap; margin: .6rem 0 1rem; }
 .provenance-number-form input { font: inherit; padding: .3rem .5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--text); }
+/* coverage (API 078): the provenance's stretches from the creation until today */
+.coverage { margin: .3rem 0 .9rem; max-width: 42rem; }
+.coverage-bar { position: relative; height: 16px; border-radius: 3px; background: var(--surface); box-shadow: inset 0 0 0 1px var(--line); overflow: hidden; }
+.coverage-ns { position: absolute; top: 0; bottom: 0; background: color-mix(in srgb, var(--prov-d) 16%, transparent); }
+.coverage-seg { position: absolute; top: 3px; bottom: 3px; min-width: 1px; cursor: help; }
+.coverage-seg.documented, .coverage-key .documented { background: var(--c-provenance); }
+.coverage-seg.presumed, .coverage-key .presumed { background: repeating-linear-gradient(135deg, var(--c-provenance) 0 2px, transparent 2px 5px); box-shadow: inset 0 0 0 1px var(--c-provenance); }
+.coverage-seg.gap, .coverage-key .gap { background: transparent; box-shadow: inset 0 0 0 1.5px var(--gap-edge); }
+.coverage-seg.gap.ns { box-shadow: inset 0 0 0 2px var(--prov-d); background: color-mix(in srgb, var(--prov-d) 12%, transparent); }
+.coverage-axis { position: relative; display: flex; justify-content: space-between; font-size: .75rem; color: var(--muted); margin-top: .15rem; }
+.coverage-ns-label { position: absolute; top: 0; color: var(--prov-d); }
+.coverage figcaption { margin-top: .1rem; }
+.coverage-key { margin-left: .4rem; white-space: nowrap; }
+.coverage-key i { display: inline-block; width: 14px; height: 9px; margin: 0 .2rem 0 .5rem; vertical-align: baseline; border-radius: 2px; }
+.coverage-key .ns-key { background: color-mix(in srgb, var(--prov-d) 25%, transparent); }
+/* a gap between the steps of the list */
+.provenance-gap-line { padding: .3rem 0 .4rem 1.4rem; border-left: 2px dashed var(--gap-edge); color: var(--muted); font-size: .9rem; font-style: italic; }
+.provenance-gap-line.ns { border-left-color: var(--prov-d); color: var(--text); background: color-mix(in srgb, var(--prov-d) 8%, transparent); }
+.tag-ns { color: var(--prov-d); border-color: currentColor; font-style: normal; }
+.gap-list li.ns { color: var(--prov-d); }
+/* a gap on the map: "? 1934–1946" mid-segment */
+.prov-gap { font: 600 11px/1 var(--sans); padding: 3px 5px; border-radius: 9px; background: var(--surface); color: var(--muted);
+  border: 1.5px dashed var(--gap-edge); cursor: pointer; white-space: nowrap; }
+.prov-gap.ns { color: var(--prov-d); border-color: var(--prov-d); }
+.prov-gap-key { display: inline-block; margin-right: .3rem; font-style: normal; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 /* 1933–1945 status: a lettered badge in the category's colour */
 .provenance-status { display: flex; gap: .5rem; align-items: baseline; max-width: 42rem; margin: .2rem 0 .6rem; }
 .prov-badge { flex: none; font: 700 .85rem/1.5 var(--sans); min-width: 1.6rem; text-align: center; border-radius: 4px;

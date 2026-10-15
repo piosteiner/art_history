@@ -96,7 +96,7 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
       const mapEl = main.querySelector<HTMLElement>('#map')!;
       const legend = main.querySelector<HTMLElement>('#legend')!;
       // MapLibre loads only for pages with a map (terms and sources have none)
-      mapModule!.then(({ createMap, showEntity, showOwnSite, showPoint, showProvenance, unplacedSteps, placedProvenance, probable }) => {
+      mapModule!.then(({ createMap, gapList, showEntity, showOwnSite, showPoint, showProvenance, unplacedSteps, placedProvenance, probable }) => {
         if (!current()) return;
         const map = createMap(mapEl);
         cleanup = () => map.remove();
@@ -147,14 +147,17 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
                 ${provStops.some((s) => s.precision === 'region' || s.precision === 'country') ? html`<span><i class="ring ring-area" style="border-color:${c}"></i>only the region or country known</span>` : ''}
                 ${provSegments.some((s) => !s.implied && s.direct) ? html`<span><i class="line" style="background:${c}"></i>handover documented</span>` : ''}
                 ${provSegments.some((s) => !s.implied && !s.direct) ? html`<span><i class="line line-dashed" style="border-color:${c}"></i>handover not documented</span>` : ''}
-                ${provSegments.some((s) => s.implied) ? html`<span><i class="line line-dotted" style="border-color:${c}"></i>implied</span>` : ''}` : ''}
+                ${provSegments.some((s) => s.implied) ? html`<span><i class="line line-dotted" style="border-color:${c}"></i>implied</span>` : ''}
+                ${provSegments.some((s) => s.gaps?.length) ? html`<span><i class="prov-gap prov-gap-key">?</i>gap: no holder known (red: 1933–1945)</span>` : ''}` : ''}
               ${layers.has('presence') ? html`<span><i class="dot" style="background:${COLORS.presence}"></i>was there</span>` : ''}
               ${!prov && fc.features.some((f) => f.properties.layer === 'route') ? html`<span><i class="line" style="background:${COLORS.route}"></i>route, in date order</span>` : ''}
               ${layers.has('association') ? html`<span><i class="ring" style="border-color:${COLORS.association}"></i>association (not travel)</span>` : ''}
               ${own ? html`<span><i class="dot" style="background:${COLORS.site}"></i>${e.type === 'artwork' ? 'where it stands' : 'its building'}</span>` : ''}
               ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}
               ${prov?.unplaced.length ? html`<div class="legend-note" id="unplaced">Not on the map (place not recorded):
-                ${unplacedSteps(prov)}</div>` : ''}`);
+                ${unplacedSteps(prov)}</div>` : ''}
+              ${prov?.gaps?.length ? html`<div class="legend-note" id="gaps">Gaps in the provenance:
+                ${gapList(prov)}</div>` : ''}`);
             legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {
               const btn = ev.currentTarget as HTMLButtonElement;
               const all = btn.dataset.fit === 'all';

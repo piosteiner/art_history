@@ -104,6 +104,7 @@ export function list(main: HTMLElement, plural: Plural) {
     </div>
     <p class="muted small" id="stats"></p>
     <div class="category-filter" id="categories" hidden role="group" aria-label="Filter"></div>
+    <div class="category-filter" id="gap-filter" hidden></div>
     <p class="muted" id="count"></p>
     <ul class="cards" id="items"></ul>
   </section>`);
@@ -129,6 +130,29 @@ export function list(main: HTMLElement, plural: Plural) {
   // artworks: the parts of one whole (`?part_of=<slug>`, linked from the series page), in their order
   const partOf = plural === 'artworks' ? new URLSearchParams(location.search).get('part_of') : null;
   const categoriesEl = main.querySelector<HTMLElement>('#categories')!;
+  // artworks: works with no holder known somewhere in 1933–1945 (API 078, `?provenance_gap=1933-1945`)
+  const gapEl = main.querySelector<HTMLElement>('#gap-filter')!;
+  let gapOnly = plural === 'artworks' && new URLSearchParams(location.search).get('provenance_gap') === '1933-1945';
+  const openQuestion = (e: Entry<AnyItem>) => !!(e.item as { provenance_coverage?: { gap_1933_1945: boolean } | null }).provenance_coverage?.gap_1933_1945;
+  const urlNow = () => {
+    const q = new URLSearchParams();
+    if (category && FILTER) q.set(FILTER.param, category);
+    if (gapOnly) q.set('provenance_gap', '1933-1945');
+    return `/${plural}${q.size ? `?${q}` : ''}`;
+  };
+  function drawGapFilter() {
+    const n = all.filter(openQuestion).length;
+    gapEl.hidden = !n && !gapOnly;
+    render(gapEl, html`<button type="button" class="${gapOnly ? 'on' : ''}" aria-pressed="${String(gapOnly)}"
+      title="No holder known for some time between 30 January 1933 and 8 May 1945">Works with open questions 1933–1945 <span class="muted">${String(n)}</span></button>`);
+  }
+  gapEl.addEventListener('click', (ev) => {
+    if (!(ev.target as Element).closest('button')) return;
+    gapOnly = !gapOnly;
+    replaceUrl(urlNow());
+    drawGapFilter();
+    draw();
+  });
   function drawCategories() {
     const counts = new Map<string, number>();
     for (const e of all) { const c = fieldOf(e); counts.set(c, (counts.get(c) ?? 0) + 1); }
@@ -141,7 +165,7 @@ export function list(main: HTMLElement, plural: Plural) {
     const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-category]');
     if (!b) return;
     category = b.dataset.category || null;
-    replaceUrl(`/${plural}${category ? `?${FILTER!.param}=${encodeURIComponent(category)}` : ''}`);
+    replaceUrl(urlNow());
     drawCategories();
     draw();
   });
@@ -149,7 +173,7 @@ export function list(main: HTMLElement, plural: Plural) {
   function draw() {
     const words = queryWords(query);
     const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf) : all;
-    const pool = category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole;
+    const pool = (category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole).filter((e) => !gapOnly || openQuestion(e));
     const hits = query ? pool.filter((e) => matches(e, query)) : pool;
     let last = '';
     const row = (e: Entry<AnyItem>) => {
@@ -196,6 +220,7 @@ export function list(main: HTMLElement, plural: Plural) {
       if (!current()) return;
       all = entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
       if (FILTER) drawCategories();
+      if (plural === 'artworks') drawGapFilter();
       if (partOf) {
         const whole = all.find((x) => x.slug === partOf);
         render(main.querySelector('#stats')!, html`Parts of ${whole ? link('artwork', partOf, whole.name) : partOf} · <a href="/artworks">all artworks</a>`);

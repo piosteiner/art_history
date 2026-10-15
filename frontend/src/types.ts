@@ -199,6 +199,8 @@ export interface ArtworkItem extends Located, Titled {
   on_loan?: boolean;
   /** The 1933–1945 provenance category (API 074): A–D, null when not assessed — a filter on the list. */
   provenance_category?: ProvenanceCategory | null;
+  /** How much of its life the provenance covers (API 078); `gap_1933_1945`: no holder known then — a list filter. */
+  provenance_coverage?: { documented_percent: number | null; has_provenance: boolean; gap_1933_1945: boolean } | null;
   /** Materials, and every name of the type / material terms in every language, for searching (API migration 071). */
   materials?: string[]; term_names?: string[];
 }
@@ -281,6 +283,25 @@ export interface Artwork extends DetailBase, Located, Titled {
   provenance_status?: ProvenanceStatus | null;
   /** When the design, block or model was made, if earlier than `created` (a print pulled, a cast made later; 074). */
   conceived?: DateRange | null;
+  /** Where the provenance is silent (API 078), from the creation until today; null without a creation date. */
+  provenance_coverage?: ProvenanceCoverage | null;
+}
+
+/** A stretch of time in the coverage: like a DateRange, but the API leaves its `label` empty (`years()` in coverage.ts). */
+export type Stretch = Omit<DateRange, 'label'> & { label: string | null };
+/** A stretch without a known holder (API 078): the holders `before` / `after` it and undated `candidates`. */
+export interface ProvenanceGap {
+  period: Stretch | null; in_1933_1945: boolean;
+  before: string | null; after: string | null; candidates: string[];
+}
+/** One stretch of an artwork's life: `documented` · `presumed` (a holder known, not the edges) · `gap`; positions of the steps around a gap. */
+export interface CoverageSegment extends ProvenanceGap {
+  kind: 'documented' | 'presumed' | 'gap';
+  before_position: number | null; after_position: number | null;
+}
+export interface ProvenanceCoverage {
+  segments: CoverageSegment[];
+  documented_percent: number; has_provenance: boolean; gap_years: number; gap_1933_1945_years: number;
 }
 
 /**
@@ -495,11 +516,15 @@ export interface ProvenanceSegmentProps {
   between: ProvenanceMapStep[];
   /** API 077: within one step — the holder took it from one of its places to the next. */
   move?: boolean;
+  /** API 078: the gaps between its two stops — a "?" mid-segment. */
+  gaps?: ProvenanceGap[];
 }
 export interface ProvenanceMap {
   type: 'FeatureCollection';
   features: (Feature<PointGeometry, ProvenanceStopProps> | Feature<LineStringGeometry, ProvenanceSegmentProps>)[];
   unplaced: ProvenanceMapStep[];
+  /** API 078: every gap of the provenance, for the text under the map. */
+  gaps?: ProvenanceGap[];
 }
 
 export interface PresenceProps {

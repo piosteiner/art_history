@@ -3,8 +3,9 @@ import { getPresence, listAll } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
-import type { Citation, SourceHint, Category, Entity, EntryRef, Price, ProvenanceStatus, ProvenanceStep, Relationship } from '../types';
+import type { Citation, SourceHint, Category, CoverageSegment, Entity, EntryRef, Price, ProvenanceCoverage, ProvenanceStatus, ProvenanceStep, Relationship } from '../types';
 import { cite } from '../cite';
+import { coverageBar, gapSides, gapText } from '../coverage';
 
 // categories, plus the relationship types an event's page groups by (participated_in, concerns)
 const CATEGORY_ORDER: (Category | 'participated_in' | 'concerns')[] = [
@@ -102,39 +103,53 @@ export const lastRecordedStep = (steps: ProvenanceStep[] | undefined) => steps?.
  * new owner. The 1933–1945 status (A–D) stands above the list, also when there are no steps.
  */
 export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>,
-  status?: ProvenanceStatus | null, statusSources?: Citation[]): Html | null {
+  status?: ProvenanceStatus | null, statusSources?: Citation[], coverage?: ProvenanceCoverage | null): Html | null {
   const recorded = steps.some((s) => !s.implied); // the computed lines alone are no provenance
   if (!recorded && !status) return null;
+  // gaps (API 078) go after the step they follow; one before anyone known goes first
+  const gaps = (coverage?.segments ?? []).filter((g) => g.kind === 'gap');
+  const gapsAfter = (position: number | null) => gaps.filter((g) => g.before_position === position).map(gapLine);
+  const known = new Set(steps.map((s) => s.position));
+  const leading = gaps.filter((g) => g.before_position === null || !known.has(g.before_position)).map(gapLine);
   return html`<section class="provenance">
     <h2>Provenance</h2>
     ${status ? statusLine(status, statusSources, bibliography) : ''}
+    ${recorded ? coverageBar(coverage) ?? '' : ''}
     ${recorded ? html`<p class="muted small">Holders in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between. Indented: held alongside the owner (an agent, a deposit, a loan), not owned. A bullet: an event, not a holder. In italics: not recorded, but following from the creation or the loan.</p>
-    <ol class="provenance-list">${steps.map((s, i) => {
-      if (s.role === 'event') return eventStep(s, bibliography);
-      const custody = s.in_chain === false;
-      const gap = i > 0 && !s.direct && !custody && s.kind !== 'loan'; // custody and loans are no handover of ownership
-      const stolen = s.method === 'theft'; // "taken by …", no custodian's tag
-      const role = !stolen && s.role && ROLE_TAG[s.role];
-      const how = [
-        s.kind === 'creation' ? html`the artist`
-          : s.method === 'theft' ? html`stolen${s.ended ? html` — recovered ${s.ended.label}` : ''}`
-          : s.method && s.method !== 'unknown' ? method(s.method) : null,
-        s.via ? html`via ${s.via}` : null,
-        s.event ? html`at ${link('event', s.event.slug, s.event.name)}` : null,
-        s.label ? html`${s.label}` : null,
-        s.price ? html`${priceLabel(s.price)}` : null,
-        places(s),
-        ...numbers(s),
-      ].filter((x): x is Html => !!x);
-      return html`<li class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}${custody ? ' custody' : ''}">
-        ${gap ? html`<div class="provenance-gap">handover not documented</div>` : ''}
-        <div class="provenance-owner">${custody ? html`<span class="provenance-alongside" title="${stolen ? 'Stolen: the owner kept the title' : 'Held alongside the owner, did not own it'}">${stolen ? 'taken by' : 'held by'}</span> ` : ''}${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.not_sold ? html` <span class="tag tag-not-sold" title="Bought in, withdrawn or returned: the owner kept it">not sold</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
-        ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
-        ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
-      </li>`;
-    })}</ol>` : ''}
+    <ol class="provenance-list">${leading}${steps.map((s, i) => html`${stepItem(s, i)}${gapsAfter(s.position)}`)}</ol>` : ''}
   </section>`;
+
+  function stepItem(s: ProvenanceStep, i: number): Html {
+    if (s.role === 'event') return eventStep(s, bibliography);
+    const custody = s.in_chain === false;
+    const gap = i > 0 && !s.direct && !custody && s.kind !== 'loan'; // custody and loans are no handover of ownership
+    const afterGapLine = i > 0 && gaps.some((g) => g.before_position === steps[i - 1].position); // it says more already
+    const stolen = s.method === 'theft'; // "taken by …", no custodian's tag
+    const role = !stolen && s.role && ROLE_TAG[s.role];
+    const how = [
+      s.kind === 'creation' ? html`the artist`
+        : s.method === 'theft' ? html`stolen${s.ended ? html` — recovered ${s.ended.label}` : ''}`
+        : s.method && s.method !== 'unknown' ? method(s.method) : null,
+      s.via ? html`via ${s.via}` : null,
+      s.event ? html`at ${link('event', s.event.slug, s.event.name)}` : null,
+      s.label ? html`${s.label}` : null,
+      s.price ? html`${priceLabel(s.price)}` : null,
+      places(s),
+      ...numbers(s),
+    ].filter((x): x is Html => !!x);
+    return html`<li class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}${custody ? ' custody' : ''}">
+      ${gap && !afterGapLine ? html`<div class="provenance-gap">handover not documented</div>` : ''}
+      <div class="provenance-owner">${custody ? html`<span class="provenance-alongside" title="${stolen ? 'Stolen: the owner kept the title' : 'Held alongside the owner, did not own it'}">${stolen ? 'taken by' : 'held by'}</span> ` : ''}${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.not_sold ? html` <span class="tag tag-not-sold" title="Bought in, withdrawn or returned: the owner kept it">not sold</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
+      ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
+      ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
+    </li>`;
+  }
 }
+
+/** "Gap 1934–1946 — no holder known · possibly …" between the steps; marked when it touches 1933–1945. */
+const gapLine = (g: CoverageSegment) => html`<li class="provenance-gap-line${g.in_1933_1945 ? ' ns' : ''}" title="${gapSides(g)}">
+  ${gapText(g)}${g.in_1933_1945 ? html` <span class="tag tag-ns" title="The gap touches 30 January 1933 – 8 May 1945">1933–1945</span>` : ''}
+</li>`;
 
 const HELD = new Set(['owned_by', 'held_by', 'commissioned']);
 const firstFrom = (rs: Relationship[]) => rs.map((r) => r.period?.from ?? r.period?.to ?? '9999').sort()[0];

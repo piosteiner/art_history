@@ -934,6 +934,100 @@ test('provenance numbers: a number links to every work recording it; the header 
   await expect(page.locator('.number-hits li')).toHaveCount(1);
 });
 
+const span = (from: string, to: string) => ({ label: null, from, to, from_year: Number(from.slice(0, 4)), to_year: Number(to.slice(0, 4)) });
+const seg = (kind: string, from: string, to: string, extra: Record<string, unknown> = {}) => ({ kind, period: span(from, to), in_1933_1945: false,
+  before: null, after: null, candidates: [], before_position: null, after_position: null, ...extra });
+
+test('provenance coverage (078): a bar from the creation until today, gap lines after their step, 1933–1945 marked', async ({ page }) => {
+  const person = (slug: string, name: string) => ({ type: 'person', slug, name });
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [
+      step(0, person('first-owner', 'First Owner'), { kind: 'step', in_chain: true, direct: true, period: year(1900, 1928), end_basis: 'recorded' }),
+      step(1, person('maybe-owner', 'Maybe Owner'), { kind: 'step', in_chain: true, direct: false }),
+      step(2, person('second-owner', 'Second Owner'), { kind: 'step', in_chain: true, direct: false, period: year(1947, null), end_basis: 'ongoing' }),
+    ];
+    b.provenance_coverage = {
+      documented_percent: 60, has_provenance: true, gap_years: 18.2, gap_1933_1945_years: 12.3,
+      segments: [
+        seg('presumed', '1831-01-01', '1899-12-31'),
+        seg('documented', '1900-01-01', '1928-12-31'),
+        seg('gap', '1929-01-01', '1946-12-31', { in_1933_1945: true, before: 'First Owner', after: 'Second Owner', candidates: ['Maybe Owner'], before_position: 0, after_position: 2 }),
+        seg('documented', '1947-01-01', '2026-10-15'),
+      ],
+    };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const bar = page.locator('.provenance .coverage-bar');
+  await expect(bar.locator('.coverage-seg')).toHaveCount(4);
+  await expect(bar.locator('.coverage-seg.presumed')).toHaveCount(1);
+  const gap = bar.locator('.coverage-seg.gap');
+  await expect(gap).toHaveClass(/ns/);
+  await expect(gap).toHaveAttribute('title', /Gap 1929–1946: no holder known \(after First Owner, before Second Owner\)\. Possibly: Maybe Owner/);
+  await expect(bar.locator('.coverage-ns')).toHaveCount(1);
+  await expect(page.locator('.coverage figcaption')).toContainText('60% documented, gaps 18 years, 12 of them in 1933–1945');
+  // the documented stretch from 1900 to 1928 starts about a third of the way along (1831 → 2026)
+  const box = await bar.boundingBox();
+  const doc = await bar.locator('.coverage-seg.documented').first().boundingBox();
+  expect((doc!.x - box!.x) / box!.width).toBeGreaterThan(0.3);
+  expect((doc!.x - box!.x) / box!.width).toBeLessThan(0.4);
+
+  const items = page.locator('.provenance-list > li');
+  await expect(items).toHaveCount(4);
+  await expect(items.nth(1)).toHaveClass(/provenance-gap-line/); // after the step at position 0
+  await expect(items.nth(1)).toHaveClass(/ns/);
+  await expect(items.nth(1)).toContainText('Gap 1929–1946 — no holder known · possibly Maybe Owner');
+  await expect(items.nth(1).locator('.tag-ns')).toHaveText('1933–1945');
+  await expect(items.nth(2).locator('.provenance-gap')).toHaveCount(0); // the gap line says it already
+  await expect(items.nth(3).locator('.provenance-gap')).toHaveText('handover not documented');
+});
+
+test('artwork map (078): a "?" with the years mid-segment, red in 1933–1945; the gaps listed under the map', async ({ page }) => {
+  const g = { period: span('1934-01-02', '1946-12-30'), in_1933_1945: true, before: 'Alfred Gold', after: 'Arthur Byron', candidates: ['Arthur Jeffress'] };
+  await patch(page, /\/v1\/map\/artworks\/heiliger-sebastian$/, (b) => {
+    const prov = b.provenance as { features: { properties: Record<string, unknown> }[]; gaps?: unknown[] };
+    prov.features.find((f) => f.properties.from_step === 4)!.properties.gaps = [g];
+    prov.gaps = [g, { ...g, period: span('1899-01-01', '1912-12-31'), in_1933_1945: false, candidates: [] }];
+  });
+  await page.goto('/artworks/heiliger-sebastian');
+  const marker = page.locator('.prov-gap:not(.prov-gap-key)');
+  await expect(marker).toHaveCount(1);
+  await expect(marker).toHaveText('? 1934–1946');
+  await expect(marker).toHaveClass(/ns/);
+  await marker.click();
+  const popup = page.locator('.maplibregl-popup');
+  await expect(popup).toContainText('Gap 1934–1946 — no holder known · possibly Arthur Jeffress');
+  await expect(popup).toContainText('after Alfred Gold, before Arthur Byron');
+  const list = page.locator('#gaps li');
+  await expect(list).toHaveCount(2);
+  await expect(list.nth(0)).toHaveClass(/ns/);
+  await expect(list.nth(1)).toContainText('Gap 1899–1912 — no holder known');
+});
+
+test('artworks list: "Works with open questions 1933–1945", also with a category', async ({ page }) => {
+  await patch(page, /\/v1\/artworks\?/, (b) => {
+    for (const a of b.data as Record<string, unknown>[]) {
+      const wave = a.slug === 'the-great-wave-off-kanagawa';
+      a.provenance_category = wave || a.slug === 'heiliger-sebastian' ? 'C' : null;
+      a.provenance_coverage = { documented_percent: wave ? 40 : 100, has_provenance: true, gap_1933_1945: wave };
+    }
+  });
+  await page.goto('/artworks');
+  const toggle = page.locator('#gap-filter button');
+  await expect(toggle).toContainText('Works with open questions 1933–1945 1');
+  await toggle.click();
+  await expect(toggle).toHaveAttribute('aria-pressed', 'true');
+  await expect(page).toHaveURL(/\/artworks\?provenance_gap=1933-1945$/);
+  await expect(page.locator('.card')).toHaveCount(1);
+  await page.locator('#categories button', { hasText: 'C · indications' }).click();
+  await expect(page).toHaveURL(/\?provenance=C&provenance_gap=1933-1945$/);
+  await expect(page.locator('.card')).toHaveCount(1);
+  await toggle.click();
+  await expect(page.locator('.card')).toHaveCount(2);
+  await page.goto('/artworks?provenance_gap=1933-1945');
+  await expect(page.locator('.card')).toHaveCount(1);
+  await expect(page.locator('.card')).toContainText('The Great Wave');
+});
+
 test('artworks list: a filter by the 1933–1945 provenance category', async ({ page }) => {
   await patch(page, /\/v1\/artworks\?/, (b) => {
     for (const a of b.data as Record<string, unknown>[]) a.provenance_category = a.slug === 'the-great-wave-off-kanagawa' ? 'D' : null;

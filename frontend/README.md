@@ -137,6 +137,17 @@ page's own link.
   offers the lookup for any query with a digit); `event`: "at <event>". Prices in RM need nothing. On the map a step
   has a stop at each of its places (`part`, popup "moved here" + `part_label`), the segments between them
   (`move: true`) are drawn solid, their popup says "moved by the same holder"; segment ends are named by position.
+- Coverage (API 078, `src/coverage.ts`): above the provenance a bar from the creation until today — documented solid,
+  presumed hatched, gaps open with a red edge (1933–1945 ones filled pale red), 1933–1945 shaded behind; each stretch's
+  tooltip names the holders before / after and the candidates; caption "45% documented, gaps 60 years, 11 of them in
+  1933–1945" + key. Only with a recorded provenance. In the list a gap line ("Gap 1934–1946 — no holder known ·
+  possibly …") goes after the step whose `position` = `before_position` (none or unknown: first), highlighted with a
+  "1933–1945" tag when `in_1933_1945`; the next step then drops its "handover not documented" label. The stretches'
+  `period.label` is null: `years()` builds "1934–1946" (type `Stretch`). Map: a "? 1934–1946" marker mid-segment for a
+  segment's `gaps` (red in 1933–1945, popup with candidates and sides), `provenance.gaps` listed under the map.
+  Artworks list: toggle "Works with open questions 1933–1945" (`?provenance_gap=1933-1945`, from the list's
+  `provenance_coverage.gap_1933_1945`, combinable with the category; works without any provenance count too, as in the
+  API). `documented_percent` is null on works without provenance.
 
 ## Series and other wholes (API migration 037)
 A part's page: "No. 21 of 36 in <whole>" (the chain upwards) and previous/next links; a whole's page: a grid of its parts.
