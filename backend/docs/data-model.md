@@ -523,3 +523,10 @@ its `[[links]]` follow renames and merges like every text.
   of `provenance_number_kinds` (index on `lower(number)`), `provenance.event_id` → `events`, authority `lugt`.
 - Currencies: 2–4 capital letters (RM). Check `provenance_stolen`: a theft without an end.
 - Fuzzy dates also read "between X and Y", "13.VI.1913", "1.7.1949", "7.1934" (`normalizeSourceForms`).
+
+## Provenance coverage (migration 078)
+`provenance_spans` (per holding of the chain: `documented` and `presumed` ranges), `provenance_coverage(artwork_id)` —
+life (creation → today) minus documented minus presumed = the gaps, with multirange arithmetic (`range_agg`, `-`, `*`,
+`unnest`); each gap with the holders before/after and the undated candidates — and `provenance_completeness` (days
+documented / presumed / gap, gap days in 1933–1945, documented %, has_provenance). Admin: bar + gap lines on the
+artwork page, `/quality/provenance-gaps`.

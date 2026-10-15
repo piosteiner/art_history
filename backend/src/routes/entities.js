@@ -89,7 +89,9 @@ const ENTITIES = {
            artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')},
            -- type and materials are glossary terms (071): every name of them, all languages, for searching lists
            t.materials, artwork_term_names(t.id) AS term_names,
-           upper(left(t.provenance_status::text, 1)) AS provenance_category`,
+           upper(left(t.provenance_status::text, 1)) AS provenance_category,
+           (SELECT jsonb_build_object('documented_percent', c.documented_percent, 'has_provenance', c.has_provenance,
+                     'gap_1933_1945', c.gap_1933_1945_days > 0) FROM provenance_completeness c WHERE c.artwork_id = t.id) AS provenance_coverage`,
     detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
              range_json(t.conceived, t.conceived_label) AS conceived,
              -- 1933–1945 (074): the BAK category A–D, its meaning, the source's wording
@@ -136,6 +138,9 @@ const ENTITIES = {
       material: `(t.materials @> ARRAY[$]::text[] OR EXISTS (SELECT 1 FROM artwork_materials am WHERE am.artwork_id = t.id
                    AND am.term_id = coalesce((SELECT id FROM glossary WHERE slug = $), term_by_name($, ARRAY['material']::term_category[]))))`,
       part_of: "t.parent_id = entity_id('artwork', $)",  // the parts of a series / album …
+      // gaps in the provenance (078): ?provenance_gap=1933-1945 (no holder known for some time then) or any
+      provenance_gap: `(SELECT CASE $ WHEN '1933-1945' THEN c.gap_1933_1945_days > 0 WHEN 'any' THEN c.gap_days > 0 END
+                        FROM provenance_completeness c WHERE c.artwork_id = t.id)`,
       ...countryFilters('artwork'),
     },
     order: `lower(t.created) NULLS LAST, ${sortKey('artwork', 't', 'title')}`,
@@ -319,6 +324,19 @@ const EXTRAS = {
              (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url,
              (SELECT count(*)::int FROM artworks c WHERE c.parent_id = a.id) AS parts
       FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [id])).rows,
+    // where the provenance is silent (078): the time since the creation as documented / presumed / gap stretches
+    provenance_coverage: await (async () => {
+      const [summary, segments] = await Promise.all([
+        apiPool.query('SELECT documented_percent, has_provenance, gap_days, gap_1933_1945_days FROM provenance_completeness WHERE artwork_id = $1', [id]),
+        apiPool.query(`SELECT kind, range_json(period) AS period, in_1933_1945, before_name AS before, after_name AS after,
+                              coalesce(candidates, '{}') AS candidates, before_position, after_position
+                       FROM provenance_coverage($1) ORDER BY period`, [id])]);
+      const c = summary.rows[0];
+      if (!c || !segments.rows.length) return null;
+      return { documented_percent: c.documented_percent, has_provenance: c.has_provenance,
+        gap_years: Math.round(c.gap_days / 365.25 * 10) / 10, gap_1933_1945_years: Math.round(c.gap_1933_1945_days / 365.25 * 10) / 10,
+        segments: segments.rows };
+    })(),
     provenance: (await apiPool.query(`
       SELECT p.kind, p.kind <> 'step' AS implied, p.position,
              CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'name', o.name) END AS owner,

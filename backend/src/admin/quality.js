@@ -230,7 +230,8 @@ function page({ rows, allCounts, filter, back, featured = 0 }) {
       <a href="/quality/batch/wikidata?only=auto">… for entries created automatically</a> ·
       <a href="/quality/batch/images">images for artworks without one</a> ·
       <a href="/quality/batch/terms">types and materials to sort out</a> ·
-      <a href="/provenance/numbers">provenance numbers</a></p>
+      <a href="/provenance/numbers">provenance numbers</a> ·
+      <a href="/quality/provenance-gaps">provenance gaps 1933–1945</a></p>
     <div class="cards" data-live-results="cards">${SEVERITIES.map((s) => html`<a class="card qa-${s}${filter.severity === s ? ' active' : ''}" href="${q({ severity: filter.severity === s ? '' : s, check: '' })}">
       <b>${total(s)}</b>${SEVERITY_TEXT[s]}</a>`)}</div>
     <form class="bar" method="get" action="/quality" data-live>

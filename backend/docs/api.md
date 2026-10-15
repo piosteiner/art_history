@@ -243,6 +243,21 @@ Show it like a credit line: "Foundation E.G. Bührle Collection, on permanent lo
 `web_url_accessed` (`YYYY-MM-DD`, migration 039): the day the link was added or last changed — set by the database,
 shown like a citation's "accessed on …".
 
+### Provenance coverage — where the provenance is silent (artworks, 078)
+- `provenance_coverage` (detail) or `null`: the time from the creation until today as stretches
+  `segments: [{kind, period, in_1933_1945, before, after, candidates, before_position, after_position}]`, in order —
+  `kind` **documented** (someone demonstrably held it: a recorded period, or until the next acquisition when that
+  handover is documented as direct; documented custody — a deposit, a loan — counts too), **presumed** (a holder is
+  known, the edges are not), **gap** (no holder known). A gap names the holders `before` / `after` it (and their
+  provenance `position`s) and `candidates`: holders known only without dates who may have held it then.
+  `in_1933_1945`: the stretch touches 30 January 1933 – 8 May 1945. Also `documented_percent`, `has_provenance`,
+  `gap_years`, `gap_1933_1945_years`.
+- Lists: `provenance_coverage: {documented_percent, has_provenance, gap_1933_1945}`; filter
+  `?provenance_gap=1933-1945` (a gap then) or `?provenance_gap=any`.
+- Map (`/v1/map/artworks/:slug` → `provenance`): `gaps` (the same gaps, beside the features) and on each
+  `provenance_segment` its `gaps` (those between its two stops) — draw them, e.g. a "?" with the years mid-segment;
+  stops carry the step's `position`.
+
 ### Provenance status and design date (artworks, 074)
 - `provenance_status` (detail): `{category: "A"–"D", code, label, note}` or `null` (not assessed) — the categories of
   the Swiss Federal Office of Culture for 1933–1945: **A** clarified, no looted art · **B** not fully clarified, no

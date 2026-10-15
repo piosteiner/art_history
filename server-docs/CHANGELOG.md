@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Provenance coverage: gaps and time periods without a known holder (migration 078)
+- **What:** view `provenance_spans`, function `provenance_coverage()`, view `provenance_completeness` (multiranges:
+  life − documented − presumed = gaps; gaps name the holders before/after and undated candidates; 1933–1945 flagged).
+  API: `provenance_coverage` on artworks (detail: segments; lists: summary), filter `?provenance_gap=1933-1945|any`,
+  map `gaps` (beside the features and on each segment). Admin: a coverage bar above the provenance, gap lines in the
+  table, research page `/quality/provenance-gaps` (longest silence in 1933–1945 first). E2E `provenance-coverage.spec.js`.
+- **Why:** owner: highlight missing links and time periods in the provenance and on the map.
+- **Revert:** `git revert`, deploy; `DROP VIEW provenance_completeness; DROP FUNCTION provenance_coverage(bigint);
+  DROP VIEW provenance_spans;`.
+
 ### Provenance: every case the Kunsthaus documents (migrations 076/077)
 - **What:** from a survey of the Kunsthaus Zürich's 4,151 provenances (20,666 lines): steps without a holder (role
   `event`: claims, settlements between others, collections dissolved); `theft` on custody steps + check

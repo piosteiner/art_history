@@ -413,6 +413,25 @@ input.rel-picker { width: 13rem; padding: .15rem .4rem; }
 table.provenance tbody.implied td { font-style: italic; color: var(--muted); }
 table.provenance tbody.implied a { color: inherit; }
 .tag.implied { font-style: normal; border-style: dashed; }
-.tag.flagged { color: var(--err); border-color: var(--err); }  /* provenance flag (068) */
+.tag.flagged, .tag.era { color: var(--err); border-color: var(--err); }  /* provenance flag (068); a gap touching 1933–1945 (078) */
 details.research { margin-top: .75rem; }
 details.research ul { margin: .4rem 0; }
+
+/* Where the provenance is silent (078): the coverage bar and the gap lines of the provenance table */
+figure.coverage { margin: .5rem 0 1rem; }
+figure.coverage svg { width: 100%; height: 28px; display: block; }
+figure.coverage .cov-era { fill: var(--err-bg); }
+figure.coverage .cov-documented { fill: var(--accent); }
+figure.coverage .cov-presumed { fill: var(--accent); opacity: .45; }
+figure.coverage rect.cov-presumed-seg { stroke: var(--accent); stroke-width: 1; vector-effect: non-scaling-stroke; }
+figure.coverage rect.cov-gap { fill: var(--panel); stroke: var(--err); stroke-width: 1.5; vector-effect: non-scaling-stroke; }
+figure.coverage figcaption { display: flex; flex-wrap: wrap; gap: .25rem .75rem; justify-content: space-between; margin-top: .25rem; }
+figure.coverage .cov-legend { flex-basis: 100%; }
+figure.coverage .cov-legend i { display: inline-block; width: .9em; height: .7em; margin: 0 .2em 0 .6em; vertical-align: middle; }
+figure.coverage i.cov-documented { background: var(--accent); }
+figure.coverage i.cov-presumed-key { background: repeating-linear-gradient(45deg, var(--accent) 0 2px, transparent 2px 4px); }
+figure.coverage i.cov-gap { border: 1.5px solid var(--err); background: var(--panel); }
+figure.coverage i.cov-era { background: var(--err-bg); }
+.cov-warn { color: var(--err); }
+table.provenance tbody.gap td { padding-top: .35rem; padding-bottom: .35rem; background: var(--err-bg); }
+table.provenance tbody.gap td:first-child { border-left: 3px solid var(--err); }

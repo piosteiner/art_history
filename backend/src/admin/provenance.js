@@ -401,11 +401,53 @@ function research(steps) {
     <p class="muted small">Lost Art opens with the name searched; in the others, search for it there. Record what you find as a step's notes and source.</p></details>`;
 }
 
-function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
+// Where the provenance is silent (078): the time since the creation as documented / presumed / gap stretches.
+async function coverage(db, artworkId) {
+  const { rows } = await db.query(`SELECT kind, lower(period)::text AS from_date, upper(period)::text AS to_date,
+      extract(year FROM lower(period))::int AS from_year, extract(year FROM upper(period) - 1)::int AS to_year,
+      (upper(period) - lower(period)) AS days, in_1933_1945, before_name, after_name, coalesce(candidates, '{}') AS candidates,
+      before_position, after_position FROM provenance_coverage($1) ORDER BY period`, [artworkId]);
+  return rows;
+}
+const ERA = ['1933-01-30', '1945-05-09'];
+const years = (g) => (g.from_year === g.to_year ? `${g.from_year}` : `${g.from_year}–${g.to_year}`);
+const duration = (days) => (days >= 365 ? `${Math.round(days / 365.25)} year${Math.round(days / 365.25) === 1 ? '' : 's'}` : `${Math.max(1, Math.round(days / 30.4))} months`);
+
+// A bar from the creation to today: documented (solid), presumed (hatched), gaps (open, red edge); 1933–1945 shaded.
+function coverageBar(segs) {
+  if (!segs.length) return '';
+  const t = (d) => Date.parse(d);
+  const [t0, t1] = [t(segs[0].from_date), t(segs[segs.length - 1].to_date)];
+  const x = (d) => Math.max(0, Math.min(1000, ((t(d) - t0) / (t1 - t0)) * 1000));
+  const documented = segs.filter((g) => g.kind === 'documented').reduce((n, g) => n + g.days, 0);
+  const total = segs.reduce((n, g) => n + g.days, 0);
+  const eraGap = segs.filter((g) => g.kind === 'gap' && g.in_1933_1945);
+  return html`<figure class="coverage">
+    <svg viewBox="0 0 1000 28" preserveAspectRatio="none" role="img" aria-label="Provenance coverage from ${segs[0].from_year} to today">
+      <defs><pattern id="cov-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3" height="6" class="cov-presumed"></rect></pattern></defs>
+      ${t(ERA[1]) > t0 ? html`<rect class="cov-era" x="${x(ERA[0])}" y="0" width="${x(ERA[1]) - x(ERA[0])}" height="28"><title>1933–1945</title></rect>` : ''}
+      ${segs.map((g) => html`<rect class="cov-${g.kind === 'presumed' ? 'presumed-seg' : g.kind}" x="${x(g.from_date)}" y="6" width="${Math.max(1, x(g.to_date) - x(g.from_date))}" height="16"
+        ${g.kind === 'presumed' ? html` fill="url(#cov-hatch)"` : ''}><title>${years(g)}: ${g.kind === 'gap' ? `no holder known${g.before_name ? ` — after ${g.before_name}` : ''}${g.after_name ? `, before ${g.after_name}` : ''}` : g.kind}</title></rect>`)}
+    </svg>
+    <figcaption class="small"><span>${segs[0].from_year}</span> <span class="muted">— ${Math.round((100 * documented) / total)}% documented ·
+      ${segs.filter((g) => g.kind === 'gap').length} gap${segs.filter((g) => g.kind === 'gap').length === 1 ? '' : 's'}${eraGap.length ? html` · <b class="cov-warn">${eraGap.length} touching 1933–1945</b>` : ''} —</span>
+      <span>today</span>
+      <span class="cov-legend muted"><i class="cov-documented"></i> documented <i class="cov-presumed-key"></i> presumed <i class="cov-gap"></i> no holder known <i class="cov-era"></i> 1933–1945</span></figcaption>
+  </figure>`;
+}
+// A gap as a line of the table, after the step it follows
+function gapRow(g) {
+  return html`<tbody class="gap"><tr class="gap-row"><td></td><td></td><td colspan="6">
+    <b>Gap ${years(g)}</b> <span class="muted">(${duration(g.days)})</span>${g.in_1933_1945 ? html` <span class="tag era">touches 1933–1945</span>` : ''} — no holder known.
+    ${g.candidates.length ? html`<span class="muted">Undated, possibly then: ${g.candidates.join(', ')}.</span>` : ''}</td></tr></tbody>`;
+}
+
+function section({ e, steps, names, cites = {}, marker = null, back = '', gaps = null }) {
   const stored = steps.filter((s) => s.kind === 'step');
   let n = 0;
   return html`<h2 id="provenance">Provenance</h2>
-    ${steps.length ? html`<div class="table-wrap"><table class="provenance" data-sortable="/artworks/${e.slug}/provenance/order">${steps.map((s, i) => {
+    ${gaps && gaps.length ? coverageBar(gaps) : ''}
+    ${steps.length ? html`<div class="table-wrap"><table class="provenance" data-sortable="/artworks/${e.slug}/provenance/order">${(gaps || []).filter((g) => g.kind === 'gap' && g.before_position === null).map(gapRow)}${steps.map((s, i) => {
       const implied = s.kind !== 'step';
       if (!implied) n += 1;
       return html`
@@ -429,7 +471,8 @@ function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
           ${implied ? html` <span class="tag implied">${IMPLIED[s.kind]}</span>` : ''}
           ${s.notes_md ? html`<div class="md small">${raw(renderMarkdown(s.notes_md, { names }))}</div>` : ''}</td>
         <td>${!implied && marker ? marker(cites[s.id], { provenance: s.id, label: `step ${n} (${s.owner_slug ? s.owner_name : s.owner_label})` }, back) : ''}</td>
-        <td class="nowrap">${implied ? '' : html`<a href="/provenance/${s.id}/edit">edit</a>`}</td></tr></tbody>`;
+        <td class="nowrap">${implied ? '' : html`<a href="/provenance/${s.id}/edit">edit</a>`}</td></tr></tbody>
+      ${(gaps || []).filter((g) => g.kind === 'gap' && g.before_position === s.position).map(gapRow)}`;
     })}</table></div>
       ${stored.length > 1 ? html`<p class="muted small">Drag ⠿ to change the order — the periods are recomputed.</p>` : ''}
       ${research(steps)}`
@@ -437,4 +480,4 @@ function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
     <details><summary><b>+ Add provenance step</b></summary>${form({ action: `/artworks/${e.slug}/provenance`, submit: 'Add' })}</details>`;
 }
 
-module.exports = { ProvenanceError, METHODS, ROLES, NUMBER_KINDS, saveExtras, addCommission, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section, saveCoOwners, priceText };
+module.exports = { ProvenanceError, METHODS, ROLES, NUMBER_KINDS, saveExtras, coverage, coverageBar, addCommission, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section, saveCoOwners, priceText };

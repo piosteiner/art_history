@@ -185,7 +185,7 @@ async function provenanceRoute(artworkId) {
                'holder', CASE WHEN l.owner_id IS NOT NULL THEN jsonb_build_object('type', l.owner_type, 'slug', o.slug, 'name', l.owner_name) END,
                'holder_label', l.owner_label, 'role', l.role, 'method', l.method, 'certainty', l.certainty,
                'period', range_json(l.period, l.period_label), 'end_basis', l.end_basis, 'provenance_id', l.id,
-               'part', l.part, 'part_label', l.part_label) AS props
+               'part', l.part, 'part_label', l.part_label, 'position', l.position) AS props
       FROM located l
       LEFT JOIN entity_index o ON (o.type, o.id) = (l.owner_type, l.owner_id)
       LEFT JOIN places pl ON pl.id = l.place_id
@@ -215,7 +215,19 @@ async function provenanceRoute(artworkId) {
        ) h
        WHERE p.prev_step IS NOT NULL AND NOT ST_Equals(p.prev_marker::geometry, p.marker::geometry)) AS segments,
       (SELECT coalesce(jsonb_agg(x.props ORDER BY x.step), '[]') FROM rows x WHERE x.marker IS NULL AND x.part = 0) AS unplaced`, [artworkId]);
-  return { type: 'FeatureCollection', features: [...r.stops, ...r.segments], unplaced: r.unplaced };
+  // where nothing is known (078): each gap on the segment it falls into — after the segment's first stop, before its
+  // last — and all gaps beside the features, for the text under the map
+  const { rows: gaps } = await apiPool.query(`SELECT range_json(period) AS period, in_1933_1945, before_name AS before, after_name AS after,
+      coalesce(candidates, '{}') AS candidates, before_position, after_position FROM provenance_coverage($1) WHERE kind = 'gap' ORDER BY period`, [artworkId]);
+  const posOf = new Map(r.stops.map((f) => [f.properties.step, f.properties.position]));
+  for (const seg of r.segments) {
+    const [from, to] = [posOf.get(seg.properties.from_step), posOf.get(seg.properties.to_step)];
+    seg.properties.gaps = seg.properties.move ? [] : gaps.filter((g) => g.before_position !== null && g.before_position >= from
+      && (g.after_position === null || g.after_position <= to))
+      .map(({ before_position: _b, after_position: _a, ...g }) => g);
+  }
+  return { type: 'FeatureCollection', features: [...r.stops, ...r.segments], unplaced: r.unplaced,
+    gaps: gaps.map(({ before_position: _b, after_position: _a, ...g }) => g) };
 }
 
 // Institutions and immovable artworks with an exact location of their own (migration 034).
