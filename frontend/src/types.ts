@@ -297,11 +297,25 @@ export type AcquisitionMethod =
   | 'creation' | 'commission' | 'inheritance' | 'purchase' | 'auction' | 'gift' | 'bequest' | 'exchange'
   | 'confiscation' | 'forced_sale' | 'restitution'
   | 'settlement' // kept after an agreement with claimants (API 073)
+  | 'transfer' | 'claim' | 'dissolution'
+  | 'theft' // on a custody step: the owner keeps the title; `ended` = recovered (API 077)
   | 'unknown';
 
-/** How a holder held the work (migration 063): `estate` = the owner's estate; `agent` (consignment) and `custodian` (loan, deposit) didn't own it. */
-export type ProvenanceRole = 'owner' | 'dealer' | 'agent' | 'estate' | 'custodian';
+/**
+ * How a holder held the work (migration 063): `estate` = the owner's estate; `agent` (consignment) and `custodian` (loan,
+ * deposit) didn't own it. API 077: `publisher` (an edition — of the chain), `foundry`, `trustee` (custody), `event` (no
+ * holder: a claim, a settlement between others, a collection dissolved — described by `label`).
+ */
+export type ProvenanceRole = 'owner' | 'dealer' | 'agent' | 'estate' | 'custodian' | 'publisher' | 'foundry' | 'trustee' | 'event';
+/** `currency`: ISO 4217, old ones like FRF too, or a historical code without ISO ("RM"). */
 export interface Price { amount: number; currency: string; note: string | null }
+/** A number a provenance step records (API 077): kind lot · stock · inventory · catalogue · ek · err · munich · linz · aussee · lugt · other; `label` "Munich no.". */
+export interface ProvenanceNumber { kind: string; label: string; number: string }
+/** `GET /v1/provenance-numbers?number=`: the steps recording a number. */
+export interface ProvenanceNumberHit {
+  kind: string; kind_label: string; number: string; artwork: { slug: string; title: string };
+  position: number; owner_name: string | null; period: DateRange | null;
+}
 
 /**
  * One holder in an artwork's provenance; `period` is computed (its end per `end_basis`). `kind` (migration 063): a
@@ -332,6 +346,8 @@ export interface ProvenanceStep {
    * the work went through to this owner ("Galerie Moos").
    */
   in_chain?: boolean; not_sold?: boolean; via?: string | null;
+  /** API 077: further places after `place`, in order ("Köln → Berlin → Geneva"); numbers it records; the event it belongs to. */
+  further_places?: (Ref & { period: DateRange | null })[]; numbers?: ProvenanceNumber[]; event?: Ref | null;
 }
 
 export interface Place extends DetailBase, Named {
@@ -465,6 +481,8 @@ export interface ProvenanceStopProps extends ProvenanceMapStep {
   place: Ref;
   precision: 'site' | 'settlement' | 'region' | 'country' | null;
   place_basis: 'recorded' | 'holder_seat' | 'created_in' | 'artist_residence' | 'artist_workplace';
+  /** API 077: 0 at the step's place, 1, 2 … at its further places (`part_label`: when it was there). */
+  part?: number; part_label?: string | null;
 }
 /** From one placed step to the next; `between`: the steps passed over that have no place. */
 export interface ProvenanceSegmentProps {
@@ -475,6 +493,8 @@ export interface ProvenanceSegmentProps {
   /** An end not recorded: the creation, the loan, or a place not recorded. */
   implied: boolean;
   between: ProvenanceMapStep[];
+  /** API 077: within one step — the holder took it from one of its places to the next. */
+  move?: boolean;
 }
 export interface ProvenanceMap {
   type: 'FeatureCollection';

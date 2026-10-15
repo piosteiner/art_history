@@ -36,16 +36,19 @@ export const holderText = (s: ProvenanceMapStep) => `${s.role === 'estate' ? 'Es
 /** The place is inferred from where the artist lived or worked: drawn hollow, "probably". */
 export const probable = (s: Pick<ProvenanceStopProps, 'place_basis'>) => s.place_basis === 'artist_residence' || s.place_basis === 'artist_workplace';
 
-const STOP_ROLE: Record<string, string> = { dealer: 'dealer', agent: 'agent', custodian: 'custodian' };
+const STOP_ROLE: Record<string, string> = { dealer: 'dealer', agent: 'agent', custodian: 'custodian', publisher: 'publisher', foundry: 'foundry', trustee: 'trustee' };
 
 /** One step in a place's popup: holder, role, how and when, how we know the place. */
 function stepRow(s: ProvenanceStopProps) {
   const made = s.kind === 'creation';
-  const how = [made ? null : s.method && s.method !== 'unknown' ? s.method.replace('_', ' ') : null, s.period?.label].filter(Boolean).join(' · ');
+  const moved = (s.part ?? 0) > 0; // a further place of the step (API 077): when it was here
+  const how = moved ? s.part_label ?? ''
+    : [made ? null : s.method === 'theft' ? 'stolen' : s.method && s.method !== 'unknown' ? s.method.replace('_', ' ') : null, s.period?.label].filter(Boolean).join(' · ');
   return html`<li value="${s.step}">
     ${provenanceHolder(s)}${s.role && STOP_ROLE[s.role] && s.kind !== 'loan' ? html` <span class="tag">${STOP_ROLE[s.role]}</span>` : ''}
     ${made ? html` <span class="tag">${probable(s) ? 'probably made here' : 'made here'}</span>` : ''}
     ${s.kind === 'loan' ? html` <span class="tag">on loan</span>` : ''}
+    ${moved ? html` <span class="tag">moved here</span>` : ''}
     ${s.certainty && s.certainty !== 'attested' ? html` <span class="tag">${s.certainty}</span>` : ''}
     ${how ? html`<br><span class="muted">${how}</span>` : ''}
     ${s.place_basis === 'holder_seat' ? html`<br><span class="muted">at the institution's seat</span>` : ''}
@@ -69,7 +72,7 @@ export const provenanceStops = (prov: ProvenanceMap) =>
 
 /** One artwork's provenance to draw; `entity` names it in the popups when several are on the map. */
 interface ProvenanceDrawing { prov: ProvenanceMap; color: string; entity?: EntityMap['entity'] }
-interface DrawnSegment { seg: ProvenanceSegmentProps; stops: Map<number, ProvenanceStopProps>; color: string; entity?: EntityMap['entity'] }
+interface DrawnSegment { seg: ProvenanceSegmentProps; from?: string; to?: string; color: string; entity?: EntityMap['entity'] }
 const drawnSegments = new WeakMap<MapLibre, Map<string, DrawnSegment[]>>(); // per map and layer prefix, for the line popups
 const provenanceMarkers = new WeakMap<MapLibre, Marker[]>();
 export const provenanceLayers = (prefix: string) => ['direct', 'gap', 'implied', 'arrows', 'hit'].map((s) => `${prefix}-${s}`);
@@ -93,12 +96,14 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
   removeLayers(map, provenanceLayers(prefix));
   const drawn: DrawnSegment[] = [];
   const segments = items.flatMap((it) => {
-    const stops = new Map(provenanceStops(it.prov).map((f) => [f.properties.step, f.properties] as const));
+    // a step can have several places (API 077), so a segment's ends are found by their position
+    const at = new Map(provenanceStops(it.prov).map((f) => [f.geometry.coordinates.join(','), f.properties.place.name] as const));
     return it.prov.features
       .filter((f): f is Feature<LineStringGeometry, ProvenanceSegmentProps> => f.properties.layer === 'provenance_segment')
       .map((f) => {
-        drawn.push({ seg: f.properties, stops, color: it.color, entity: it.entity });
-        return { ...f, properties: { ...f.properties, between: undefined, i: drawn.length - 1, color: it.color } };
+        const ends = [f.geometry.coordinates[0], f.geometry.coordinates.at(-1)!].map((c) => at.get(c.join(',')));
+        drawn.push({ seg: f.properties, from: ends[0], to: ends[1], color: it.color, entity: it.entity });
+        return { ...f, properties: { ...f.properties, move: !!f.properties.move, between: undefined, i: drawn.length - 1, color: it.color } };
       });
   });
   const byPrefix = drawnSegments.get(map) ?? new Map<string, DrawnSegment[]>();
@@ -111,10 +116,11 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
     layout: { 'line-join': 'round', 'line-cap': kind === 'implied' ? 'round' : 'butt' },
     paint: { 'line-color': ['get', 'color'], 'line-width': 2.5, 'line-opacity': 0.85, ...paint },
   });
-  line('direct', ['all', ['!', ['get', 'implied']], ['get', 'direct']], {});
-  line('gap', ['all', ['!', ['get', 'implied']], ['!', ['get', 'direct']]], { 'line-dasharray': [3, 2] });
-  line('implied', ['get', 'implied'], { 'line-dasharray': [0.1, 2], 'line-opacity': 0.45, 'line-width': 3 });
-  addArrows(map, `${prefix}-arrows`, source, ['get', 'color'], ['case', ['get', 'implied'], 0.4, 0.9]);
+  // a move within one step (the holder took it from place to place) is solid
+  line('direct', ['any', ['get', 'move'], ['all', ['!', ['get', 'implied']], ['get', 'direct']]], {});
+  line('gap', ['all', ['!', ['get', 'move']], ['!', ['get', 'implied']], ['!', ['get', 'direct']]], { 'line-dasharray': [3, 2] });
+  line('implied', ['all', ['!', ['get', 'move']], ['get', 'implied']], { 'line-dasharray': [0.1, 2], 'line-opacity': 0.45, 'line-width': 3 });
+  addArrows(map, `${prefix}-arrows`, source, ['get', 'color'], ['case', ['all', ['get', 'implied'], ['!', ['get', 'move']]], 0.4, 0.9]);
   // thin lines are hard to hit: a wide invisible copy takes the clicks
   map.addLayer({ id: `${prefix}-hit`, type: 'line', source, paint: { 'line-width': 14, 'line-opacity': 0 } });
   once(map, `${prefix}-hit`, () => {
@@ -126,11 +132,12 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
       const rows = [...new Set((e.features ?? []).map((f) => Number(f.properties.i)))]
         .map((i) => drawnSegments.get(map)?.get(prefix)?.[i]).filter((d): d is DrawnSegment => !!d);
       if (!rows.length) return;
-      new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(html`${rows.map(({ seg, stops, ...d }) => html`<div class="popup-row">
+      new Popup({ maxWidth: '320px' }).setLngLat(e.lngLat).setHTML(html`${rows.map(({ seg, from, to, ...d }) => html`<div class="popup-row">
         ${entityLine(d)}
-        <strong>${String(seg.from_step)} → ${String(seg.to_step)}</strong>
-        <span class="muted">${stops.get(seg.from_step)?.place.name ?? ''} → ${stops.get(seg.to_step)?.place.name ?? ''}</span><br>
-        ${seg.implied ? html`<span class="tag tag-implied">implied</span> not recorded: follows from the creation, the loan or a place not recorded`
+        <strong>${seg.move ? `step ${seg.from_step}` : `${seg.from_step} → ${seg.to_step}`}</strong>
+        <span class="muted">${from ?? ''} → ${to ?? ''}</span><br>
+        ${seg.move ? 'moved by the same holder'
+          : seg.implied ? html`<span class="tag tag-implied">implied</span> not recorded: follows from the creation, the loan or a place not recorded`
           : seg.direct ? 'handover documented' : html`<span class="tag">handover not documented</span> there may have been owners in between`}
         ${seg.between.length ? html`<div class="popup-note">passes over: ${seg.between.map((s, i) => html`${i ? '; ' : ''}${String(s.step)} ${provenanceHolder(s)}`)} (place not recorded)</div>` : ''}
       </div>`)}`.value).addTo(map);
@@ -148,7 +155,7 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
     for (const group of places.values()) {
       const steps = group.map((f) => f.properties);
       const first = steps[0];
-      const label = stepRuns(steps.map((s) => s.step));
+      const label = stepRuns([...new Set(steps.map((s) => s.step))]); // a step back at a place it had left: once
       const el = document.createElement('div');
       const hollow = steps.every(probable);
       const area = steps.every((s) => s.precision === 'region' || s.precision === 'country');

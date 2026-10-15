@@ -36,7 +36,7 @@ map uses OpenFreeMap (free, no key).
 | `src/views/graph.ts` | network graph (`#/graph/<type>/<slug>?depth=&categories=`) with d3-force: click = details, double-click = recenter, Ctrl+click = new tab |
 | `src/theme.ts` | Auto / Light / Dark toggle (follows the system by default); maps swap to the matching base map in place (`THEME_EVENT`; `src/map-core.ts` carries its sources and layers into the new style), the page isn't re-rendered |
 | `tests/` | Playwright smoke tests (desktop + phone); run in the Pages workflow before every deploy |
-| `src/views/` | explore (map + timeline), list, detail (all types: `detail.ts` the page, `detail-facts.ts` the fact rows per type and their sources, `detail-sections.ts` provenance, relationships, backlinks, crossed paths), graph |
+| `src/views/` | explore (map + timeline), list, detail (all types: `detail.ts` the page, `detail-facts.ts` the fact rows per type and their sources, `detail-sections.ts` provenance, relationships, backlinks, crossed paths), graph, `numbers.ts` the provenance-number lookup |
 | `public/` | copied as is: `CNAME`, `health.html` (CORS round-trip check) |
 
 ## Privacy
@@ -129,6 +129,14 @@ page's own link.
   The artworks list filters by `provenance_category` (`?provenance=D`; shown once any work is assessed).
   `copy_after` ("copy after" / "copied in") and the graph's handovers past custodians need nothing here: labels and
   edges come from the API.
+- The cases of API 076/077: `role: event` steps (no holder) are a • note on the rail in italics — their `label`, a party
+  linked when the label doesn't name it — never a holder. `theft` on a custody step: "taken by …", "stolen", or
+  "stolen — recovered <ended>"; no role tag. Roles `publisher` (of the chain), `foundry`, `trustee` (custody) get tags.
+  `further_places`: "in Köln → Berlin (1933) → Geneva"; `numbers`: "Munich no. 4317", the number linked to
+  `/provenance-numbers?number=4317&kind=munich` (`src/views/numbers.ts`, `GET /v1/provenance-numbers`; the header search
+  offers the lookup for any query with a digit); `event`: "at <event>". Prices in RM need nothing. On the map a step
+  has a stop at each of its places (`part`, popup "moved here" + `part_label`), the segments between them
+  (`move: true`) are drawn solid, their popup says "moved by the same holder"; segment ends are named by position.
 
 ## Series and other wholes (API migration 037)
 A part's page: "No. 21 of 36 in <whole>" (the chain upwards) and previous/next links; a whole's page: a grid of its parts.

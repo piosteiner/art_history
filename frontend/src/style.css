@@ -222,6 +222,11 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .provenance-alongside { font-size: .85rem; }
 .tag-not-sold { border-style: dashed; }
 .explained { text-decoration: underline dotted; cursor: help; }
+/* an event in the chain (API 077): a note on the rail, no holder, no dot */
+.provenance-step.provenance-event { color: var(--muted); }
+.provenance-event-line { font-style: italic; }
+.provenance-number-form { display: flex; gap: .5rem; flex-wrap: wrap; margin: .6rem 0 1rem; }
+.provenance-number-form input { font: inherit; padding: .3rem .5rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--text); }
 /* 1933–1945 status: a lettered badge in the category's colour */
 .provenance-status { display: flex; gap: .5rem; align-items: baseline; max-width: 42rem; margin: .2rem 0 .6rem; }
 .prov-badge { flex: none; font: 700 .85rem/1.5 var(--sans); min-width: 1.6rem; text-align: center; border-radius: 4px;

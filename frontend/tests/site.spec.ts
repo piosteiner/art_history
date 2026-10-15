@@ -245,6 +245,49 @@ test('artwork map: the provenance in chain order — numbered stops, segments wi
   await expect(popup).toContainText('passes over: 5 Estate of Hedwig Frieda Ullmann (place not recorded)');
 });
 
+test('artwork map (077): a step with further places — a stop at each, the move between them solid', async ({ page }) => {
+  const PARIS: [number, number] = [2.3522, 48.8566];
+  await patch(page, /\/v1\/map\/artworks\/heiliger-sebastian$/, (b) => {
+    const prov = b.provenance as { features: { geometry: { coordinates: unknown }; properties: Record<string, unknown> }[] };
+    const london = prov.features.find((f) => f.properties.layer === 'provenance_stop' && f.properties.step === 4)!;
+    const seg = prov.features.find((f) => f.properties.from_step === 4)!;
+    const LONDON = london.geometry.coordinates;
+    seg.geometry.coordinates = [PARIS, (seg.geometry.coordinates as unknown[])[1]];
+    const at = prov.features.indexOf(london) + 1;
+    prov.features.splice(at, 0, { geometry: { type: 'Point', coordinates: PARIS } as never,
+      properties: { ...london.properties, part: 1, part_label: '1938', place: { slug: 'paris', name: 'Paris' } } } as never);
+    prov.features.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: [LONDON, PARIS] },
+      properties: { layer: 'provenance_segment', from_step: 4, to_step: 4, move: true, direct: true, implied: false, between: [] } } as never);
+  });
+  await page.goto('/artworks/heiliger-sebastian');
+  const stops = page.locator('.prov-stop');
+  await expect(stops).toHaveText(['2, 3', '4', '4', '6–9']);
+  await stops.nth(2).click();
+  const popup = page.locator('.maplibregl-popup');
+  await expect(popup).toContainText('Paris');
+  await expect(popup.locator('.tag', { hasText: 'moved here' })).toBeVisible();
+  await expect(popup).toContainText('1938');
+  await popup.locator('.maplibregl-popup-close-button').click();
+
+  await page.waitForFunction(() => !!(window as unknown as { __maps: { getLayer(id: string): unknown }[] }).__maps.at(-1)!.getLayer('prov-hit'));
+  const hit = await page.evaluate(async (paris) => {
+    type M = { project(c: [number, number]): { x: number; y: number }; getCanvas(): HTMLCanvasElement;
+      queryRenderedFeatures(p: [number, number], o: { layers: string[] }): unknown[] };
+    const m = (window as unknown as { __maps: M[] }).__maps.at(-1)!;
+    const fc = await (await fetch('/v1/map/artworks/heiliger-sebastian')).json();
+    const london = fc.provenance.features.find((f: { properties: { step?: number } }) => f.properties.step === 4).geometry.coordinates;
+    const [a, b] = [london, paris].map((c: [number, number]) => m.project(c));
+    const mid: [number, number] = [(a.x + b.x) / 2, (a.y + b.y) / 2];
+    const r = m.getCanvas().getBoundingClientRect();
+    return { x: r.left + mid[0], y: r.top + mid[1], solid: m.queryRenderedFeatures(mid, { layers: ['prov-direct'] }).length };
+  }, PARIS);
+  expect(hit.solid).toBeGreaterThan(0);
+  await page.mouse.click(hit.x, hit.y);
+  await expect(popup).toContainText('step 4');
+  await expect(popup).toContainText('London → Paris');
+  await expect(popup).toContainText('moved by the same holder');
+});
+
 test('start map: a chosen artwork shows its provenance as on its own page, in its colour', async ({ page }) => {
   await page.goto('/?artworks=heiliger-sebastian');
   const stops = page.locator('.prov-stop');
@@ -817,6 +860,78 @@ test('provenance (074): agents and custodians held alongside the owner, not sold
   await expect(steps.nth(3)).not.toHaveClass(/custody/);
   await expect(steps.nth(3).locator('.provenance-how')).toContainText('forced sale · via Galerie Moos');
   await expect(steps.nth(4).locator('.provenance-how .explained')).toHaveText('settlement');
+});
+
+test('provenance (077): events as notes, theft, publisher / trustee, further places, numbers, event links, RM', async ({ page }) => {
+  const person = (slug: string, name: string) => ({ type: 'person', slug, name });
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [
+      step(0, { type: 'institution', slug: 'a-publisher', name: 'A Publisher' }, { kind: 'step', role: 'publisher', in_chain: true, direct: true, period: year(1831, 1900), end_basis: 'recorded' }),
+      step(1, person('first-owner', 'First Owner'), { kind: 'step', in_chain: true, direct: true, period: year(1900, 1950), end_basis: 'recorded',
+        place: { slug: 'cologne', name: 'Köln' },
+        further_places: [{ slug: 'berlin', name: 'Berlin', period: year(1933) }, { slug: 'geneva', name: 'Geneva', period: null }],
+        price: { amount: 4500, currency: 'RM', note: null },
+        numbers: [{ kind: 'munich', label: 'Munich no.', number: '4317' }, { kind: 'lugt', label: 'Lugt', number: '1234a' }] }),
+      step(2, null, { kind: 'step', role: 'custodian', method: 'theft', in_chain: false, direct: true, owner_label: 'Unknown thieves', owner_name: 'Unknown thieves',
+        period: year(1940, 1945), ended: year(1945), end_basis: 'recorded' }),
+      step(3, { type: 'institution', slug: 'a-bank', name: 'A Bank' }, { kind: 'step', role: 'trustee', method: 'unknown', in_chain: false, direct: true, period: year(1946) }),
+      step(4, person('first-owner', 'First Owner'), { kind: 'step', role: 'event', method: 'claim', in_chain: false, direct: true,
+        label: 'settlement between First Owner and the heirs', period: year(1949), event: { slug: 'a-trial', name: 'A Trial' } }),
+      step(5, person('second-owner', 'Second Owner'), { kind: 'step', method: 'auction', in_chain: true, direct: true, period: year(1950, null), end_basis: 'ongoing',
+        event: { slug: 'an-auction', name: 'An Auction' } }),
+    ];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const steps = page.locator('.provenance-step');
+  await expect(steps).toHaveCount(6);
+  await expect(steps.nth(0).locator('.tag', { hasText: 'publisher' })).toBeVisible();
+  await expect(steps.nth(0)).not.toHaveClass(/custody/); // an edition's publisher is of the chain
+  const how1 = steps.nth(1).locator('.provenance-how');
+  await expect(how1).toContainText('in Köln → Berlin (1933) → Geneva');
+  await expect(how1.locator('a[href="/places/geneva"]')).toBeVisible();
+  await expect(how1).toContainText('4,500 RM');
+  await expect(how1).toContainText('Munich no. 4317');
+  await expect(how1).toContainText('Lugt 1234a');
+  await expect(how1.locator('a', { hasText: '4317' })).toHaveAttribute('href', '/provenance-numbers?number=4317&kind=munich');
+  await expect(steps.nth(2)).toHaveClass(/custody/);
+  await expect(steps.nth(2).locator('.provenance-how')).toContainText('stolen — recovered 1945');
+  await expect(steps.nth(2).locator('.provenance-owner')).toContainText('taken by Unknown thieves');
+  await expect(steps.nth(2).locator('.tag')).toHaveCount(0);
+  await expect(steps.nth(3)).toHaveClass(/custody/);
+  await expect(steps.nth(3).locator('.tag', { hasText: 'trustee' })).toBeVisible();
+  // the event: a note on the rail, not a holder
+  await expect(steps.nth(4)).toHaveClass(/provenance-event/);
+  await expect(steps.nth(4).locator('.provenance-owner')).toHaveCount(0);
+  await expect(steps.nth(4).locator('.provenance-event-line')).toContainText('• settlement between First Owner and the heirs');
+  await expect(steps.nth(4).locator('a[href="/events/a-trial"]')).toBeVisible();
+  await expect(steps.nth(5)).not.toHaveClass(/undocumented/);
+  await expect(steps.nth(5).locator('.provenance-how')).toContainText('auction · at An Auction');
+  await expect(steps.nth(5).locator('a[href="/events/an-auction"]')).toBeVisible();
+});
+
+test('provenance numbers: a number links to every work recording it; the header search offers the lookup', async ({ page }) => {
+  const asked: string[] = [];
+  await page.route(/\/v1\/provenance-numbers\?/, (r) => {
+    asked.push(new URL(r.request().url()).search);
+    return r.fulfill({ json: { data: [
+      { kind: 'munich', kind_label: 'Munich no.', number: '4317', artwork: { slug: 'the-great-wave-off-kanagawa', title: 'The Great Wave off Kanagawa' },
+        position: 1, owner_name: 'First Owner', period: year(1900, 1950) },
+    ] } });
+  });
+  await page.goto('/provenance-numbers?number=4317&kind=munich');
+  await expect(page.locator('h1')).toHaveText('Provenance numbers');
+  await expect(page.locator('#number-count')).toContainText('1 step records Munich no. “4317”');
+  await expect(page.locator('.number-hits li')).toContainText('Munich no. 4317');
+  await expect(page.locator('.number-hits a[href="/artworks/the-great-wave-off-kanagawa"]')).toBeVisible();
+  expect(asked[0]).toContain('kind=munich');
+
+  await page.goto('/artists');
+  await page.fill('.search-form input', '4317');
+  const lookup = page.locator('.search-results .hit-number a');
+  await expect(lookup).toContainText('“4317” as a provenance number');
+  await lookup.click();
+  await expect(page).toHaveURL(/\/provenance-numbers\?number=4317$/);
+  await expect(page.locator('.number-hits li')).toHaveCount(1);
 });
 
 test('artworks list: a filter by the 1933–1945 provenance category', async ({ page }) => {

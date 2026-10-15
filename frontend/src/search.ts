@@ -49,15 +49,19 @@ export function mountSearch(root: HTMLElement) {
     active = -1;
   };
 
+  let query = '';
   function show(similarFrom: number) {
+    // a query with a digit may be a lot, stock, ERR, Munich … number (API 077): offer the lookup after the hits
+    const number = /\d/.test(query) ? html`<li class="hit-number"><a href="/provenance-numbers?${String(new URLSearchParams({ number: query }))}">
+      <span class="hit-name">“${query}” as a provenance number</span><span class="hit-meta">lot, stock, ERR, Munich, Linz, Lugt …</span></a></li>` : '';
     render(results, hits.length
       ? html`${hits.map((h, i) => html`${i === similarFrom ? html`<li class="hit-heading" aria-hidden="true">Similar names</li>` : ''}
         <li role="option" aria-selected="${String(i === active)}" class="${i === active ? 'active' : ''}">
           <a href="${href(h.type, h.slug)}"><span class="hit-name"${langAttr(h.lang)}>${h.name}</span>
           <span class="hit-meta">${TYPE_LABEL[h.type]}${h.meta ? html` · ${h.meta}` : ''}</span>
           ${h.why ? html`<span class="hit-why">${h.why}</span>` : ''}</a>
-        </li>`)}`
-      : html`<li class="muted hit-empty">No matches</li>`);
+        </li>`)}${number}`
+      : html`${number ? '' : html`<li class="muted hit-empty">No matches</li>`}${number}`);
     results.hidden = false;
     input.setAttribute('aria-expanded', 'true');
   }
@@ -65,6 +69,7 @@ export function mountSearch(root: HTMLElement) {
   let similarFrom = -1;
   async function run(q: string) {
     const mine = ++request;
+    query = q;
     const [lib, fuzzy] = await Promise.all([loadLibrary().catch(() => [] as Entry[]), search(q).catch(() => [])]);
     if (mine !== request) return;
     const local = lib

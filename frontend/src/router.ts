@@ -10,6 +10,7 @@ export type Route =
   | { name: 'detail'; plural: Plural; slug: string }
   | { name: 'graph'; plural?: Plural; slug?: string; params: URLSearchParams }
   | { name: 'privacy' }
+  | { name: 'numbers'; params: URLSearchParams }
   | { name: 'not-found' };
 
 const PLURALS: Plural[] = ['artists', 'artworks', 'places', 'movements', 'institutions', 'people', 'polities', 'events', 'glossary', 'bibliography'];
@@ -20,6 +21,7 @@ export function parse(pathname: string, search: string): Route {
   const query = new URLSearchParams(search);
   if (!parts.length || (parts.length === 1 && parts[0] === 'index.html')) return { name: 'explore', params: query };
   if (parts.length === 1 && parts[0] === 'privacy') return { name: 'privacy' };
+  if (parts.length === 1 && parts[0] === 'provenance-numbers') return { name: 'numbers', params: query };
   if (parts[0] === 'graph') {
     const [, p, s, ...more] = parts;
     if (more.length || (p && !isPlural(p))) return { name: 'not-found' };

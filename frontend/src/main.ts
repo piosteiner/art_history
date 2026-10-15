@@ -9,6 +9,7 @@ import { detail } from './views/detail';
 import { loading, showError } from './views/common';
 import { list } from './views/list';
 import { privacy } from './views/privacy';
+import { provenanceNumbers } from './views/numbers';
 
 // The same groups as the admin panel's menu: the collection · context (when and where) · reference
 const NAV: { title: string; plurals: Plural[] }[] = [
@@ -116,6 +117,9 @@ function onRoute(route: Route) {
       break;
     case 'privacy':
       privacy(main);
+      break;
+    case 'numbers':
+      provenanceNumbers(main, route.params);
       break;
     case 'not-found':
       render(main, html`<section class="page"><h1>Not found</h1><p><a href="/">Back to the start</a></p></section>`);

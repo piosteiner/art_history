@@ -274,7 +274,7 @@ function buildRoutes(
         stops: JSON.stringify(steps.map((st) => ({ step: st.step, place: st.place.name, slug: st.place.slug, label: holderText(st), period: st.period?.label ?? '' }))),
       };
       for (const f of segments) {
-        const style = f.properties.implied ? 'implied' : f.properties.direct ? 'direct' : 'gap';
+        const style = f.properties.move ? 'direct' : f.properties.implied ? 'implied' : f.properties.direct ? 'direct' : 'gap';
         routes.push({ type: 'Feature', geometry: f.geometry, properties: { ...props, style } });
       }
       continue;
