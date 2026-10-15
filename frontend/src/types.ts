@@ -110,7 +110,7 @@ export interface SourceHint { siglum: string; citation: string }
 export interface EntryHint { type: EntityType; slug: string; name: string; subtitle: string | null; image_url: string | null; excerpt: string | null }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
-export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'other';
+export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'other';
 
 // ---- countries and polities ---------------------------------------------------------------------
 
