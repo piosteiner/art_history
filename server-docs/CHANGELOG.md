@@ -2,6 +2,15 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-15
+
+### Admin: spell check re-run when a text's language changes (Firefox)
+- **What:** `editor/editor.js` — after the language (lang attribute) of a Markdown editor changes, spell checking is
+  turned off and on again, so Firefox checks the text anew with the new dictionary instead of only on the next focus.
+- **Why:** owner (Firefox): the editor showed DE but words were still checked as English. Firefox also needs the
+  German dictionary installed (right-click in the field → Languages); otherwise it stays with English whatever the page says.
+- **Revert:** redeploy the previous commit.
+
 ## 2026-10-14
 
 ### Curated start views (migration 069, `GET /v1/featured`, admin "Start views")

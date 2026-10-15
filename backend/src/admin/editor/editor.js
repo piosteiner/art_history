@@ -204,6 +204,10 @@ function enhance(textarea, collab = null) {
   const setLang = (l) => {
     lang = l;
     view.dispatch({ effects: langOf.reconfigure(EditorView.contentAttributes.of({ lang: l })) });
+    // Firefox picks the dictionary when spell checking starts (on focus): off and on again makes it check the text
+    // anew with the new language, without leaving the field
+    view.contentDOM.spellcheck = false;
+    requestAnimationFrame(() => { view.contentDOM.spellcheck = true; });
     preview.lang = l;
     showLang();
   };
