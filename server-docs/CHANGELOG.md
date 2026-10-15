@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Data: the Kunsthaus Zürich's Gauguin works with their provenance (import, production)
+- **What:** the 12 works of the collection's search "gauguin": 9 new — La Barrière (1981/0002), L'Univers est créé
+  (Gr.2003/0154, woodcut printed 1921 by Pola Gauguin, co-creator "printer"), Le Bol blanc (1986/0002), Nature morte
+  aux fleurs et à l'idole (1995/0007), Carrière aux environs de Pontoise (1981/0005, owned by the Vereinigung Zürcher
+  Kunstfreunde, on loan since 1981), Idylle à Tahiti (BU 0045), La Route montante (BU 0048), Nature morte au couteau
+  (BU 0178), Judith Gérard's copy after van Gogh's self-portrait for Gauguin (BU 0174); 2 updated — L'Offrande (was at
+  the foundation with its "47": now Kunsthaus BU 0047 on loan since 2021, 47 as the foundation's further number; the
+  two Wikidata citations of the old values removed) and La Brodeuse (Mette Gauguin) (loan label "2021"); Tournesols
+  sur un fauteuil left as it is (has its provenance). 97 provenance steps, each cited with the record and its
+  footnote; same one-off scripts as the Bührle import plus listed corrections (custodian deposits, joint dealers,
+  unsold auctions, the source's "32.2.1891" read as February 1891); research findings as step notes (Semmel: a
+  persecution-related sale, settlement 2025; Alfred Gold: BAK category C; Meirowsky). Le Bol blanc: no provenance
+  published — two steps from its credit line. Created, "to complete": 2 artists, 32 people (16 with Wikidata), 14
+  institutions; 6 places via OpenStreetMap (Béziers, Uster, Düsseldorf, Versailles, Cologne, Meudon).
+- **Why:** owner: the Gauguin works of the Kunsthaus with their provenance — to see where the provenance tool falls short.
+- **Revert:** History → the change set (source import) → Revert; or delete the 9 new artworks (numbers above) and the
+  entries created with them (`auto_created.created_at` 2026-10-15).
+
 ### Privacy page updated; rate-limit addresses forgotten after 10 minutes
 - **What:** `frontend/src/views/privacy.ts` (dated 15 October 2026): new section "Short links to a view" (what is stored,
   nothing about the visitor, IP in memory ≤ 10 minutes for the rate limit, links kept); images may also come from
