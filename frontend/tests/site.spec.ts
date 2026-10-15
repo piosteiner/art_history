@@ -1277,3 +1277,24 @@ test('type and materials in any language: "Holzschnitt" finds the woodblock prin
   await page.goto('/artworks/the-great-wave-off-kanagawa');
   await expect(page.locator('.facts a[href="/glossary/woodblock-print"]')).toHaveText('woodblock print');
 });
+
+test('a long selection gets a short address; the short address opens the same selection', async ({ page }) => {
+  // many artists picked (built from the live list, so it doesn't depend on exact entries)
+  await page.goto('/artists');
+  await expect(page.locator('.card').first()).toBeVisible();
+  const slugs = await page.locator('.card a[href^="/artists/"]').evaluateAll((as) => [...new Set(as.map((a) => a.getAttribute('href')!.split('/')[2]))].slice(0, 30));
+  expect(slugs.length).toBeGreaterThan(10);
+  await page.goto(`/?artists=${slugs.join(',')}&movements=none`);
+  await expect(page.locator('#map-status')).toContainText('places');
+  await page.fill('input[name=from]', '1850');                                   // a change: the address is written
+  await page.fill('input[name=to]', '1900');
+  await page.press('input[name=to]', 'Enter');
+  await expect(page).toHaveURL(/\/\?v=[0-9a-f]{8,}$/);                          // stored once the choosing pauses
+  const short = new URL(page.url());
+
+  await page.goto(`${short.pathname}${short.search}`);                           // opened again: the same view
+  await expect(page.locator('#map-status')).toContainText('in 1850–1900');
+  await expect(page).toHaveURL(new RegExp(`\\?v=${short.searchParams.get('v')}$`)); // and the short address stays
+  await page.goto('/?v=00000000');
+  await expect(page.locator('.explore')).toContainText('This short link is unknown');
+});
