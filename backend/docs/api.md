@@ -283,6 +283,14 @@ by `sort_key` for every type, artists included (no longer `sort_name ?? name`).
   `all` (artworks also `by-artists`), and `from`/`to` years), always with the entries' current slugs (renamed and
   merged ones followed). `intro_html` may be null. Edited in the admin panel (Start views).
 
+## Short addresses for long views (migration 072)
+`POST /v1/views` with the start map's query as the body (`Content-Type: text/plain`, e.g.
+`artists=vincent-van-gogh,paul-gauguin&from=1886&to=1890`) → `201 {id, query}`: the query stored once — keys sorted,
+the site's switches `v` / `featured` / `all` dropped — and its code, the first 8 hex digits of its SHA-256 (one more on a
+clash). The same selection always gets the same code. At most 20 000 characters; 60 new links per 10 minutes and
+address (`429` beyond). `GET /v1/views/:id` → `{id, query}`, renamed entries followed (like `/v1/featured`), `404` for
+an unknown code. The site shows `/?v=<id>` instead of a query longer than 300 characters.
+
 ## Search
 `GET /v1/search?q=edo` — top 20 matches across all types: `{type, slug, name, kind, period, score}`.
 

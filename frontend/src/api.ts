@@ -35,6 +35,25 @@ function get<T>(path: string, params: Params = {}): Promise<T> {
   return p;
 }
 
+/** Short addresses for long selections (API migration 072): stores the query, returns its code (same query, same
+ *  code). Sent as text/plain — a "simple" request, no CORS preflight. */
+const savedViews = new Map<string, Promise<string>>();
+export function saveView(query: string): Promise<string> {
+  let p = savedViews.get(query);
+  if (!p) {
+    p = fetch(`${BASE}/views`, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: query }).then(async (res) => {
+      const body = await res.json().catch(() => null);
+      if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText);
+      return (body as { id: string }).id;
+    });
+    p.catch(() => savedViews.delete(query));
+    savedViews.set(query, p);
+  }
+  return p;
+}
+/** The query behind a short address (renamed entries followed). */
+export const getView = (id: string) => get<{ id: string; query: string }>(`/views/${encodeURIComponent(id)}`);
+
 export const PLURAL: Record<EntityType, Plural> = {
   artist: 'artists', artwork: 'artworks', place: 'places',
   movement: 'movements', institution: 'institutions', person: 'people', polity: 'polities', event: 'events', term: 'glossary', source: 'bibliography',

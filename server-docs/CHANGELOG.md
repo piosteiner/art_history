@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Short addresses for long selections on the start map (migration 072)
+- **What:** table `shared_views` (code, query, created, last used; not audited, anonymous) and
+  `save_shared_view(q)`: code = first 8 hex digits of the query's SHA-256 (one more on a clash), the same query the same
+  code. API `POST /v1/views` (text/plain; canonical query: keys sorted, `v`/`featured`/`all` dropped; ≤ 20 000
+  characters; 60 new links per 10 min and address) opens its transaction `READ WRITE` — the API role stays read-only
+  by default and may insert only here; `GET /v1/views/:id` follows renamed entries (`current_featured_query`).
+  Frontend: `replaceQuery` stores a query longer than 300 characters 0.8 s after the last change and shows `/?v=<code>`;
+  `/?v=` opens the stored selection (unknown code: a note and "show everything").
+- **Why:** owner: a selection of 54 artists made a 1 007-character address. "All except" was rejected (new entries
+  would change a shared link's meaning; small selections are the usual case).
+- **Note:** the site's smoke tests (run against the live API) store their own test selection once — always the same code.
+- **Revert:** redeploy the previous commit (frontend and backend); `DROP FUNCTION save_shared_view(text);
+  DROP TABLE shared_views;` `DELETE FROM schema_migrations WHERE name = '072_shared_views.sql';` — short links then stop working.
+
 ### Admin: Start views get the slug from the title, cleaned as you type
 - **What:** `editor/slug.js` works for every field marked `data-slug-field` besides the entry forms' `#f-slug`;
   the Start views form marks its slug field (following the title on a new view only, like entries). e2e in `featured.spec.js`.

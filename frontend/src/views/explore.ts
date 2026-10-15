@@ -5,7 +5,7 @@
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
 // The home page (/) shows curated views (/v1/featured, edited in the admin panel): the first one, others at
 // /?featured=<slug>, everything at /?all. A view is a saved URL query; changing the picks or the window makes it your own.
-import { getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getSites, listAll, PLURAL } from '../api';
+import { getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getSites, getView, listAll, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, render, trusted } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
@@ -46,6 +46,24 @@ function remembered(): URLSearchParams | null {
 interface Curated { views: FeaturedView[]; view: FeaturedView; home: boolean }
 
 export function explore(main: HTMLElement, params: URLSearchParams) {
+  // a short address (/?v=<code>, API 072): the stored selection, shown under that address until it is changed
+  const code = params.get('v');
+  if (code) {
+    let gone = false;
+    let cleanup: (() => void) | undefined;
+    render(main, html`<section class="explore"><p class="muted small">Loading…</p></section>`);
+    getView(code).then((v) => {
+      if (gone) return;
+      cleanup = start(main, new URLSearchParams(v.query), null, false);  // the address stays /?v=… until a change
+    }).catch(() => {
+      if (gone) return;
+      render(main, html`<section class="explore"><p class="flash">This short link is unknown — <a href="/?all">show everything</a>.</p></section>`);
+    });
+    return () => {
+      gone = true;
+      cleanup?.();
+    };
+  }
   const slug = params.get('featured');
   if ([...params.keys()].length && slug === null) return start(main, params, null);
   // the home page and /?featured=…: the curated views first; without any (or without the API) everything, as before

@@ -1,6 +1,7 @@
 // Path routing (/artists/vincent-van-gogh) with the History API. GitHub Pages serves a prerendered page per entry
 // (scripts/prerender.mjs) and 404.html (the app shell) for everything else, so every address loads the app.
 // The explore page keeps its state in the query: /?artists=…&from=1888&to=1889. Old #/… links are converted.
+import { saveView } from './api';
 import type { Plural } from './types';
 
 export type Route =
@@ -90,10 +91,22 @@ export function navigate(url: string, { replace = false } = {}) {
   run();
 }
 
-/** Updates the explore query without a navigation (no re-render, no new history entry). */
+/** Updates the explore query without a navigation (no re-render, no new history entry). A long query (many entries
+ *  picked) is stored by the API and replaced by a short address /?v=<code> once the choosing pauses — the same
+ *  selection always gets the same code (API migration 072). Without the API the long address simply stays. */
+const LONG_QUERY = 300;
+let shortenTimer: number | undefined;
 export function replaceQuery(params: URLSearchParams) {
   const qs = params.toString().replace(/%2C/g, ',');
-  replaceUrl(`/${qs ? `?${qs}` : ''}`);
+  window.clearTimeout(shortenTimer);
+  const long = `/${qs ? `?${qs}` : ''}`;
+  replaceUrl(long);
+  if (qs.length <= LONG_QUERY) return;
+  shortenTimer = window.setTimeout(() => {
+    saveView(qs).then((code) => {
+      if (location.pathname + location.search === long) replaceUrl(`/?v=${code}`);  // not if the choice moved on
+    }).catch(() => { /* the long address works too */ });
+  }, 800);
 }
 
 /** Changes the address of the page on screen (filters in the query), keeping its scroll position for back/forward. */
