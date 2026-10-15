@@ -1265,3 +1265,15 @@ test('explore: the time window is named above the map; ✕ clears it', async ({ 
   await page.press('input[name=to]', 'Enter');
   await expect(chip).toHaveText(/Time window 1890/);
 });
+
+test('type and materials in any language: "Holzschnitt" finds the woodblock prints, linked to the glossary', async ({ page }) => {
+  await page.goto('/artworks');
+  await expect(page.locator('.card').first()).toBeVisible();
+  await page.fill('.filter', 'Holzschnitt');
+  await expect(page.locator('#items')).toContainText('The Great Wave');
+  await expect(page.locator('#items')).toContainText('Type: woodblock print');           // the stored name, explained
+  await page.fill('.filter', 'Leinwand');                                                 // a material, through its German name
+  await expect(page.locator('#count')).toContainText('match');
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.facts a[href="/glossary/woodblock-print"]')).toHaveText('woodblock print');
+});
