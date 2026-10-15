@@ -88,6 +88,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Batch pages: Wikidata items with dates / `?only=auto`, images for artworks without one (`/quality/batch/images`, `routes/queue.js`) built 2026-10-14.
   Curated home page (frontend 2026-10-14: `/` = first featured view + switcher, `/?featured=<slug>`, `/?all` = everything, last own view offered as "Continue") — uses the backend below; no views published yet, so `/` shows everything until the owner publishes one.
   Curated start views (069: `featured_views`, `current_featured_query()`, `featured_view_problems`; `/v1/featured`; admin `/featured`) built 2026-10-14.
+  Type and materials as glossary terms with translations (070/071: `kind_term_id`, `artwork_materials`, `term_by_name()`, names stay the interface; `/quality/batch/terms`) built 2026-10-15.
   Spell check language of Markdown texts recognised as you type (EN/DE, `src/textlang.js`, toolbar switch) built 2026-10-14.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
   Ideas later: impressions vs. design for prints. Nightly export commit prepared 2026-10-14, not installed (`scripts/export-commit.sh`, server-docs/README.md → Content snapshots). ISBN/DOI lookup for sources built 2026-10-12 (`booklookup.js`: Open Library, Crossref). Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.

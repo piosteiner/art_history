@@ -1,0 +1,61 @@
+// An artwork's type and materials are glossary terms with names in several languages (migrations 070/071): typed in
+// any language, stored under the term's name, linked; new words become terms; phrases are sorted out on a batch page;
+// the API filters and the search names know every language.
+const { test, expect, sql, submitForm, API } = require('./helpers');
+
+const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
+
+test.afterAll(() => {
+  sql(`DELETE FROM artworks WHERE slug LIKE 'test-term-%';
+       DELETE FROM auto_created WHERE entity_type = 'term' AND entity_id IN (SELECT id FROM glossary WHERE slug IN ('lacquer-painting-test', 'lackmalerei'));
+       DELETE FROM glossary WHERE slug IN ('lacquer-painting-test', 'lackmalerei');
+       UPDATE glossary SET name = 'woodblock print' WHERE slug = 'woodblock-print'`);
+});
+
+test('a type and materials typed in German are stored as the glossary terms and linked', async ({ userA, request }) => {
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-title', 'Test Term Print');
+  await userA.fill('#f-kind', 'Holzschnitt');
+  await userA.fill('#f-medium', 'Farbholzschnitt auf Papier, Tusche');
+  await expect(userA.locator('.material-suggestions')).toContainText('+ paper');  // from the medium, through the German names
+  await expect(userA.locator('.material-suggestions')).toContainText('+ ink');
+  await userA.fill('#f-materials', 'Papier\nTusche\npaper');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/artworks\/test-term-print\?done=created/);
+  await expect(userA.locator('dl.fields a[href="/glossary/woodblock-print"]')).toHaveText('woodblock print');
+  await expect(userA.locator('dl.fields')).toContainText('paper · ink');               // main names, "paper" once
+
+  const list = await api(request, '/artworks?kind=Holzschnitt');                      // any name of the term
+  expect(list.data.map((a) => a.slug)).toContain('test-term-print');
+  expect((await api(request, '/artworks?material=Tusche')).data.map((a) => a.slug)).toContain('test-term-print');
+  const w = list.data.find((a) => a.slug === 'test-term-print');
+  expect(w.term_names).toEqual(expect.arrayContaining(['woodblock print', 'Holzschnitt', '木版画', 'paper', 'Papier']));
+  const d = await api(request, '/artworks/test-term-print');
+  expect(d.kind_term).toEqual({ slug: 'woodblock-print', name: 'woodblock print' });
+  expect(d.material_terms.map((m) => m.slug)).toEqual(['paper', 'ink']);
+
+  // a term renamed: the artwork follows
+  sql("UPDATE glossary SET name = 'woodcut print' WHERE slug = 'woodblock-print'");
+  expect(sql("SELECT kind FROM artworks WHERE slug = 'test-term-print'")).toBe('woodcut print');
+});
+
+test('a new word becomes a term to translate; a phrase is sorted out on the batch page', async ({ userA }) => {
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-title', 'Test Term Box');
+  await userA.fill('#f-kind', 'Lackmalerei');
+  await userA.fill('#f-materials', 'Öl auf Leinwand');                              // a phrase: no term made of it
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/artworks\/test-term-box\?done=created&auto=1/);
+  expect(sql("SELECT category || ' ' || (SELECT count(*) FROM auto_created a WHERE a.entity_type = 'term' AND a.entity_id = g.id) FROM glossary g WHERE name = 'Lackmalerei'"))
+    .toBe('object type 1');                                                          // flagged: translations to add
+  await expect(userA.locator('dl.fields')).toContainText('Öl auf Leinwand no term');
+
+  await userA.goto('/quality/batch/terms');
+  const form = userA.locator('form.term-fix', { hasText: 'material “Öl auf Leinwand”' });
+  await expect(form).toContainText('Test Term Box');
+  await form.locator('input[name=into]').fill('Ölfarbe, Leinwand');
+  await Promise.all([userA.waitForNavigation(), form.locator('button[value=replace]').click()]);
+  await expect(userA.locator('.flash.ok', { hasText: 'Saved' })).toContainText('1 artwork changed');
+  expect(sql("SELECT array_to_string(materials, ', ') FROM artworks WHERE slug = 'test-term-box'")).toBe('oil paint, canvas');
+  await expect(userA.locator('form.term-fix', { hasText: 'Öl auf Leinwand' })).toHaveCount(0);
+});

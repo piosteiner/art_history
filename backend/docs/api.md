@@ -95,9 +95,17 @@ link `a.fn-back`) and `<section class="bibliography">` (`<h4>Literatur</h4>` / `
 `/bibliography/<slug>`. Every detail response has `bibliography: {<slug>: {siglum, citation}}` for the sources its texts
 cite (popovers). The ids are unique per text, so several texts on one page don't clash.
 
+### Type and materials of artworks (glossary terms, migration 071)
+An artwork's `kind` and `materials` stay names (the term's main name, English), but each is a glossary term with
+names in several languages: the detail has `kind_term` `{slug, name}` and `material_terms` `[{slug, name}]` (link
+them to `/glossary/<slug>`); list and detail have `term_names` — every name of the type, the materials and the terms the
+`medium` mentions, in every language (`["woodblock print", "Holzschnitt", "木版画", "paper", "Papier", …]`) — for
+searching ("Holzschnitt" finds the woodblock prints). Filters `?kind=` and `?material=` take the term's slug or any of its
+names in any language. A value that is no term yet is shown as it is (no `kind_term` / not in `material_terms`).
+
 ### Glossary (`/v1/glossary`, type `term`)
 `name` (+ the name fields below), `category` (technique · architecture · material · iconography · style · format ·
-other; filter `?category=`), `definition` (short, plain text), `description_html`, `images`/`image_url`, related
+object type · other; filter `?category=`), `definition` (short, plain text), `description_html`, `images`/`image_url`, related
 terms as relationships (`related_term`), and in the detail `used_in: [{type, slug, name}]` — the entries whose texts
 link the term. Lists sort A–Z by `sort_key`.
 

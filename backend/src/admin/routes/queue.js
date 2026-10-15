@@ -12,6 +12,7 @@ const authority = require('../authority');
 const imagesearch = require('../imagesearch');
 const { fieldLabel } = require('../forms');
 const { send, withTx, findEntity } = require('../core');
+const autocreate = require('../autocreate');
 
 const router = express.Router();
 const PER_PAGE = 10;
@@ -292,6 +293,88 @@ router.get('/quality/batch/images', async (req, res) => {
     ${pages > 1 ? html`<p class="actions">${p > 0 ? html`<a class="button secondary" href="/quality/batch/images?p=${p - 1}">← previous</a>` : ''}
       <span class="muted">page ${p + 1} of ${pages}</span>
       ${p + 1 < pages ? html`<a class="button secondary" href="/quality/batch/images?p=${p + 1}">next →</a>` : ''}</p>` : ''}` });
+});
+
+// ---------------------------------------------------------------------------------------------------------------
+// Types and materials that are no glossary term yet (migration 071: check unlinked_term). Each value once, with the
+// artworks using it: replace it by terms (several, any language — "oil paint on canvas" → oil paint, canvas), move a
+// museum's phrase to the medium, or make it a term as it stands. Saved like an edit of each artwork (history, revert).
+// ---------------------------------------------------------------------------------------------------------------
+const termLikeName = (v) => /^[^,;/()]{1,40}$/.test(v) && v.trim().split(/\s+/).length <= 4;
+router.get('/quality/batch/terms', async (req, res) => {
+  const { rows } = await adminPool.query(`
+    SELECT what, value, count(*)::int AS n, array_agg(slug ORDER BY title) AS slugs, array_agg(title ORDER BY title) AS titles FROM (
+      SELECT 'type' AS what, w.kind AS value, w.slug, w.title FROM artworks w WHERE w.kind IS NOT NULL AND w.kind_term_id IS NULL
+      UNION ALL
+      SELECT 'material', m, w.slug, w.title FROM artworks w, unnest(w.materials) m
+      WHERE NOT EXISTS (SELECT 1 FROM artwork_materials am JOIN glossary g ON g.id = am.term_id WHERE am.artwork_id = w.id AND g.name = m)
+    ) x GROUP BY what, value ORDER BY what DESC, n DESC, value`);
+  const { rows: names } = await adminPool.query(`
+    SELECT g.category::text AS category, unnest(term_names(g)) AS name, g.name AS main FROM glossary g
+    WHERE g.category IN ('object type', 'technique', 'format', 'material') ORDER BY 2`);
+  const list = (cat) => names.filter((r) => (cat === 'material' ? r.category === 'material' : r.category !== 'material'));
+  send(req, res, { title: 'Types and materials to sort out', body: html`<p class="muted"><a href="/quality">← Quality</a></p>
+    <h1>Types and materials to sort out</h1>
+    <p class="muted">An artwork's type and materials are glossary terms with names in several languages — so a search for
+      “Holzschnitt” finds the woodblock prints. These values are no term yet. For each: name the term(s) it means
+      (any language; several separated by commas), move a museum's phrase to the medium, or make it a term as it stands.</p>
+    ${req.query.done ? html`<p class="flash ok">Saved — ${Number.parseInt(req.query.done, 10) || 0} artwork${req.query.done === '1' ? '' : 's'} changed.</p>` : ''}
+    ${!rows.length ? html`<p class="flash ok">Every type and material is a glossary term.</p>` : ''}
+    <datalist id="term-kinds">${list('type').map((r) => html`<option value="${r.name}"${r.name !== r.main ? html` label="${r.name} → ${r.main}"` : ''}>`)}</datalist>
+    <datalist id="term-materials">${list('material').map((r) => html`<option value="${r.name}"${r.name !== r.main ? html` label="${r.name} → ${r.main}"` : ''}>`)}</datalist>
+    ${rows.map((r) => html`<form method="post" action="/quality/batch/terms" class="form term-fix">
+      <input type="hidden" name="what" value="${r.what}"><input type="hidden" name="value" value="${r.value}">
+      <h2 class="form-section-title">${r.what} “${r.value}” <span class="muted">— ${r.n} artwork${r.n === 1 ? '' : 's'}:
+        ${r.slugs.map((s, i) => html`${i ? ', ' : ''}<a href="/artworks/${s}" target="_blank">${r.titles[i]}</a>`)}</span></h2>
+      <div class="row">
+        <div class="field"><label>Replace by</label>
+          <input name="into" list="${r.what === 'type' ? 'term-kinds' : 'term-materials'}" autocomplete="off"
+            placeholder="${r.what === 'type' ? 'a type, e.g. pastel' : 'one or more materials, e.g. oil paint, canvas'}"></div>
+      </div>
+      <div class="actions">
+        <button name="act" value="replace">Replace</button>
+        <button name="act" value="medium" class="secondary">Move to the medium</button>
+        ${termLikeName(r.value) ? html`<button name="act" value="term" class="secondary">Make “${r.value}” a ${r.what === 'type' ? 'type' : 'material'} term</button>` : ''}
+      </div>
+      <div class="hint">New names become new terms (marked “to complete” — add translations on their glossary page). Moving to the
+        medium keeps the text where it is empty and drops it here.</div>
+    </form>`)}` });
+});
+
+router.post('/quality/batch/terms', async (req, res) => {
+  const what = req.body.what === 'type' ? 'type' : 'material';
+  const value = String(req.body.value || '');
+  const act = String(req.body.act || '');
+  const into = String(req.body.into || '').split(/[,;\n]/).map((x) => x.trim()).filter(Boolean);
+  if (!value || (act === 'replace' && !into.length) || !['replace', 'medium', 'term'].includes(act)) return res.redirect(303, '/quality/batch/terms');
+  const category = what === 'type' ? 'object type' : 'material';
+  const cats = what === 'type' ? 'kind_categories()' : "ARRAY['material']::term_category[]";
+  let changed = 0;
+  await withTx(req.user, async (db) => {
+    // names that are no term yet become terms (flagged "to complete": translations to add)
+    const creates = [];
+    for (const name of act === 'term' ? [value] : act === 'replace' ? into : []) {
+      if ((await db.query(`SELECT term_by_name($1, ${cats}) AS id`, [name])).rows[0].id) continue;
+      if (!creates.some((c) => c.name.toLowerCase() === name.toLowerCase())) creates.push({ key: name, type: 'term', name, extra: { category } });
+    }
+    await autocreate.create(db, creates);
+    for (const c of creates) await autocreate.flag(db, 'term', c.id, null, req.user.id);
+    let r;
+    if (what === 'type') {
+      r = act === 'medium'
+        ? await db.query(`UPDATE artworks SET medium = coalesce(medium, kind), kind = NULL WHERE kind = $1 AND kind_term_id IS NULL RETURNING id`, [value])
+        : await db.query(`UPDATE artworks SET kind = $2 WHERE kind = $1 AND kind_term_id IS NULL RETURNING id`, [value, act === 'term' ? value : into[0]]);
+    } else {
+      const by = act === 'medium' ? [] : act === 'term' ? [value] : into;
+      r = await db.query(`
+        UPDATE artworks SET materials = ARRAY(SELECT x FROM unnest(materials) WITH ORDINALITY u(m, i),
+                                              LATERAL unnest(CASE WHEN m = $1 THEN $2::text[] ELSE ARRAY[m] END) WITH ORDINALITY v(x, j) ORDER BY i, j),
+                            medium = CASE WHEN $3 THEN coalesce(medium, $1) ELSE medium END
+        WHERE $1 = ANY (materials) RETURNING id`, [value, by, act === 'medium']);
+    }
+    changed = r.rowCount;
+  });
+  res.redirect(303, `/quality/batch/terms?done=${changed}`);
 });
 
 module.exports = router;

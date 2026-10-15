@@ -1,5 +1,6 @@
 // Materials (artworks): the list stays free to type (one per line), and terms can be added with a click —
-//   "from the medium": terms found in the medium text ("Ink and colour on paper" → ink · paper), re-checked as it changes
+//   "from the medium": terms found in the medium text ("Ink and colour on paper" → ink · paper; "Öl auf Leinwand" → oil paint ·
+//                      canvas, through the glossary terms' names in every language), re-checked as it changes
 //   "used before":     terms already used on other works, so the same word is reused (the API filters by exact terms)
 // textarea[data-suggest-from] names the medium input; data-used holds the terms in use (src/admin/forms.js).
 
@@ -44,6 +45,11 @@ export function initMaterials() {
     const medium = document.getElementById(ta.dataset.suggestFrom);
     let used = [];
     try { used = JSON.parse(ta.dataset.used || '[]'); } catch { used = []; }
+    // glossary terms (migration 071): every name, any language → the term's main name ("leinwand" → canvas)
+    let terms = {};
+    try { terms = JSON.parse(ta.dataset.terms || '{}'); } catch { terms = {}; }
+    const main = Object.fromEntries(Object.entries(terms).map(([n, m]) => [fold(n), m]));
+    const asTerm = (t) => main[fold(t)] || t;
     const box = Object.assign(document.createElement('div'), { className: 'material-suggestions' });
     const fieldBox = ta.closest('.field');
     const usedHint = fieldBox.querySelector('.used-terms');
@@ -60,7 +66,8 @@ export function initMaterials() {
     };
     const render = () => {
       const have = new Set(current().map(fold));
-      const suggested = medium ? fromMedium(medium.value, [...new Set([...KNOWN, ...used])]).filter((t) => !have.has(fold(t))) : [];
+      const suggested = medium ? [...new Set(fromMedium(medium.value, [...new Set([...KNOWN, ...used, ...Object.keys(terms)])]).map(asTerm))]
+        .filter((t) => !have.has(fold(t))) : [];
       const others = used.filter((t) => !have.has(fold(t)) && !suggested.includes(t));
       box.replaceChildren();
       if (suggested.length) {

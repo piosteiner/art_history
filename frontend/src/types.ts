@@ -197,6 +197,8 @@ export interface ArtworkItem extends Located, Titled {
   part_of?: { slug: string; title: string } | null; part_number?: string | null;
   /** Lent to (deposited at) `institution`; the owner is the provenance's last step (migration 048). */
   on_loan?: boolean;
+  /** Materials, and every name of the type / material terms in every language, for searching (API migration 071). */
+  materials?: string[]; term_names?: string[];
 }
 export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
@@ -255,6 +257,9 @@ export interface Artwork extends DetailBase, Located, Titled {
   location?: PointGeometry | null; area?: GeoJSON.Geometry | null;
   created: DateRange | null; kind: string | null; medium: string | null; inventory_number: string | null;
   materials: string[]; dimensions: Dimensions | null;
+  /** Type and materials as glossary terms (API migration 071): links (detail), and every name of them in every
+   *  language — of the type, the materials and the terms the medium mentions — for searching (list and detail). */
+  kind_term?: Ref | null; material_terms?: Ref[]; term_names?: string[];
   other_dimensions?: PartDimensions[]; // detail only; empty list when there are none
   /** Series (migration 037): a part has the chain of wholes and its neighbours; a whole has its parts in order. */
   part_of?: WholeRef[]; part_number?: string | null;

@@ -412,6 +412,21 @@ async function formContext(t, id = null) {
   for (const key of ['materials', 'occupations']) {
     if (t.fields[key] === 'text[]') used[key] = (await adminPool.query(`SELECT DISTINCT unnest(${key}) AS v FROM ${t.table} ORDER BY 1 LIMIT 200`)).rows.map((r) => r.v);
   }
+  // An artwork's type and materials are glossary terms (migration 071): every name of them, any language, is offered —
+  // "Holzschnitt" as well as "woodblock print"; the database stores the term's main name. terms.<key>: name → main name.
+  const terms = {};
+  if (t.type === 'artwork') {
+    const { rows } = await adminPool.query(`
+      SELECT g.category::text AS category, g.name AS main, unnest(term_names(g)) AS name FROM glossary g
+      WHERE g.category IN ('object type', 'technique', 'format', 'material') ORDER BY 3`);
+    const kinds = rows.filter((r) => r.category !== 'material');
+    const mats = rows.filter((r) => r.category === 'material');
+    suggestions.kind = [...kinds.map((r) => ({ value: r.name, label: r.name === r.main ? '' : r.main })),
+      ...suggestions.kind.filter((k) => !kinds.some((r) => r.name.toLowerCase() === k.toLowerCase()))];
+    terms.kind = Object.fromEntries(kinds.map((r) => [r.name.toLowerCase(), r.main]));
+    terms.materials = Object.fromEntries(mats.map((r) => [r.name.toLowerCase(), r.main]));
+    used.materials = [...new Set([...mats.map((r) => r.main), ...(used.materials || [])])].sort();
+  }
   const refs = {};
   for (const [key, kind] of Object.entries(t.fields)) {
     const target = kind === 'parent' ? t : kind.startsWith('ref:') ? BY_TYPE[kind.slice(4)] : null;
@@ -420,7 +435,7 @@ async function formContext(t, id = null) {
   const coCreators = t.type === 'artwork' && id !== null ? (await adminPool.query(`
     SELECT a.name, r.label FROM relationships r JOIN artists a ON a.id = r.object_id
     WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = $1 ORDER BY a.name COLLATE sort_natural`, [id])).rows : [];
-  return { enums, enumsNullable, suggestions, refs, used, coCreators, errorKeys: new Set(), confirmNew: {} };
+  return { enums, enumsNullable, suggestions, refs, used, terms, coCreators, errorKeys: new Set(), confirmNew: {} };
 }
 
 async function findEntity(t, slug) {

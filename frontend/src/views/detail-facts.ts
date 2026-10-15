@@ -136,9 +136,13 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         facts: [
           [creatorsOf(e).length > 1 ? 'Artists' : 'Artist', creatorsFact(e)],
           ['Date', dateLabel(e.created)],
-          ['Type', e.kind],
+          // glossary terms (API 071): linked to their entries, which explain them and carry the translations
+          ['Type', e.kind_term ? link('term', e.kind_term.slug, e.kind ?? e.kind_term.name) : e.kind],
           ['Medium', e.medium],
-          ['Materials', e.materials.length ? e.materials.join(', ') : null],
+          ['Materials', e.materials.length ? html`${e.materials.map((m, i) => {
+            const t = (e.material_terms ?? []).find((x) => x.name === m);
+            return html`${i ? ', ' : ''}${t ? link('term', t.slug, m) : m}`;
+          })}` : null],
           ['Dimensions', dimensionsFact(e.dimensions, e.other_dimensions ?? [])],
           ...polityFacts(e, 'created_in_polity', 'Made in', 'Country of origin'),
           ['Collection', collectionFact(e)],

@@ -208,12 +208,17 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(a, 'created_in_polity');
       return {
         slug: a.slug, name: displayName(a).text, meta: [creatorNames(a), a.created?.label].filter(Boolean).join(', '),
-        fields: fields(
-          ['Type', a.kind],
+        fields: [
+          // type and materials are glossary terms: every name of them, any language, matches (API 071) — "Holzschnitt"
+          // finds the woodblock prints, "Leinwand" the paintings on canvas (also through the medium)
+          ...(a.kind ? [{ label: 'Type', text: a.kind, match: [a.kind, ...(a.term_names ?? [])].join(' ') }] : []),
+          ...((a.materials ?? []).length ? [{ label: 'Materials', text: (a.materials ?? []).join(', '), match: [...(a.materials ?? []), ...(a.term_names ?? [])].join(' ') }] : []),
+          ...(!a.kind && !(a.materials ?? []).length && (a.term_names ?? []).length ? [{ label: 'Medium', text: (a.term_names ?? [])[0], match: (a.term_names ?? []).join(' ') }] : []),
+          ...fields(
           ['Made in', [a.country?.place?.name, countryText(a.country)].filter(Boolean).join(', ')],
           ['State', l.polities],
           ['Series', a.part_of ? `${a.part_of.title}${a.part_number ? ` (no. ${a.part_number})` : ''}` : null],
-        ),
+        )],
         sorts: {
           // grouped under the series title, in number order (zero-padded so 3 comes before 21)
           series: a.part_of

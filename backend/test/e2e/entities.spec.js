@@ -208,7 +208,8 @@ test('a new artist / institution typed into an artwork is created and marked "to
   await userA.goto('/institutions/kupferstichkabinett-berlin');
   await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("remove the mark")')]);
   await expect(userA.locator('.flash.ok')).toHaveText('Marked as complete.');
-  expect(sql('SELECT count(*) FROM auto_created')).toBe('0');
+  // (its own two: other specs running at the same time may have flagged entries of other types, e.g. a new term)
+  expect(sql("SELECT count(*) FROM auto_created WHERE entity_type IN ('artist', 'institution')")).toBe('0');
 });
 
 test('typing a name: an exact name links the existing artist, a near miss asks first', async ({ userA }) => {

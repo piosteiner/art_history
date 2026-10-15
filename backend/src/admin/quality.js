@@ -35,6 +35,7 @@ const CHECKS = {
   title_translation: { title: 'Title is not an official translation', fix: 'Look up the title the holding institution uses (its online collection); if it has one, use it, set “official translation” and cite the page with the marker.' },
   loan_owner: { title: 'On loan — but who lent it?', fix: 'Add the owner (the lender) as the last step of the provenance — the institution where it is now only holds it.' },
   citation_outdated: { title: 'Changed since cited', fix: 'The value changed after the source was cited: check the source — if it still says so, “Yes, it still does” in its sources; if not, remove the citation or cite the source of the new value.' },
+  unlinked_term: { title: 'Type or material that is no glossary term', fix: 'Sort these out on “Types and materials to sort out” (Quality → batch pages): replace by terms, move a phrase to the medium, or make it a term.' },
   flagged_holder: { title: 'Flagged holders in the provenance', fix: 'A holder on your list (“Provenance flag” on the person / institution): check this step in the provenance research databases (links under the provenance) — and record what you find, or Mark as OK.' },
   weakly_sourced: { title: 'Facts without a good source', fix: 'Cite the museum, a catalogue raisonné or the literature for these fields (the W / ? markers on the entry’s page). Wikidata is a start, not a source.' },
   no_wikidata_id: { title: 'No Wikidata id', fix: 'Use "Wikidata…" on the entry to find and link it.' },
@@ -226,7 +227,8 @@ function page({ rows, allCounts, filter, back, featured = 0 }) {
       <a href="/featured">Start views</a>.</p>` : ''}
     <p class="small">Batch pages: <a href="/quality/batch/wikidata">find Wikidata items</a> ·
       <a href="/quality/batch/wikidata?only=auto">… for entries created automatically</a> ·
-      <a href="/quality/batch/images">images for artworks without one</a></p>
+      <a href="/quality/batch/images">images for artworks without one</a> ·
+      <a href="/quality/batch/terms">types and materials to sort out</a></p>
     <div class="cards" data-live-results="cards">${SEVERITIES.map((s) => html`<a class="card qa-${s}${filter.severity === s ? ' active' : ''}" href="${q({ severity: filter.severity === s ? '' : s, check: '' })}">
       <b>${total(s)}</b>${SEVERITY_TEXT[s]}</a>`)}</div>
     <form class="bar" method="get" action="/quality" data-live>

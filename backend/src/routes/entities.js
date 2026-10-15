@@ -86,8 +86,14 @@ const ENTITIES = {
     list: `range_json(t.created, t.created_label) AS created, t.kind, t.title_status, ${mainImage('artwork_id')},
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
            (SELECT jsonb_build_object('slug', w.slug, 'title', w.title) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
-           artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')}`,
+           artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')},
+           -- type and materials are glossary terms (071): every name of them, all languages, for searching lists
+           t.materials, artwork_term_names(t.id) AS term_names`,
     detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
+             (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = t.kind_term_id) AS kind_term,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', g.slug, 'name', g.name) ORDER BY am.position), '[]')
+                FROM artwork_materials am JOIN glossary g ON g.id = am.term_id WHERE am.artwork_id = t.id) AS material_terms,
+             artwork_term_names(t.id) AS term_names,
              t.inventory_number, t.on_loan, range_json(t.on_loan_since, t.on_loan_since_label) AS on_loan_since,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('number', n.number, 'label', n.label,
                        'institution', (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = n.institution_id),
@@ -118,8 +124,10 @@ const ENTITIES = {
                  WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = t.id
                    AND r.object_type = 'artist' AND r.object_id = entity_id('artist', $)))`,
       institution: "t.current_institution_id = entity_id('institution', $)",
-      kind: 't.kind = $',
-      material: 't.materials @> ARRAY[$]::text[]',  // GIN index artworks_materials_gin
+      // by the term's slug or any of its names, any language (071): ?kind=Holzschnitt finds the woodblock prints
+      kind: `(t.kind = $ OR t.kind_term_id = coalesce((SELECT id FROM glossary WHERE slug = $), term_by_name($, kind_categories())))`,
+      material: `(t.materials @> ARRAY[$]::text[] OR EXISTS (SELECT 1 FROM artwork_materials am WHERE am.artwork_id = t.id
+                   AND am.term_id = coalesce((SELECT id FROM glossary WHERE slug = $), term_by_name($, ARRAY['material']::term_category[]))))`,
       part_of: "t.parent_id = entity_id('artwork', $)",  // the parts of a series / album …
       ...countryFilters('artwork'),
     },

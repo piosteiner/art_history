@@ -233,6 +233,25 @@ argument, `audit_log` JSON, quality acknowledgements). New: `birth`/`death` + ge
 category `depiction`, in the graph); people may also be `influenced_by`, `collaborated_with`, `associated_with`, and
 teachers (`student_of`).
 
+## Type and materials as glossary terms (migrations 070, 071)
+Museums write "woodblock print" or "Holzschnitt", "canvas" or "Leinwand". An artwork's type and materials are
+therefore glossary terms (categories `object type`, `technique`, `format` for the type; `material`), whose other names
+carry the translations. The **names stay the interface**: `artworks.kind` (text) and `artworks.materials` (text[]) keep
+holding names, so the form, YAML, the Wikidata review, revert and the views reading them are unchanged. The database
+resolves them:
+- `term_by_name(name, categories)` — the term a name means: its main name or any other name, any language, case- and
+  accent-insensitive (`f_unaccent`, `ruby_plain` for names with furigana), main-name matches first.
+- BEFORE trigger `artworks_link_terms`: sets the real foreign key `kind_term_id` and writes the term's main name
+  ("Ölgemälde" → "oil painting"); the materials likewise, each once. AFTER trigger `artworks_material_links`: the join
+  table `artwork_materials (artwork_id, term_id, position)` — derived, so not audited (the names are the record).
+- AFTER trigger `glossary_relink_artworks`: a renamed term renames it on its artworks (`array_replace` for the
+  materials); a new term or a new name links artworks that used it unlinked (`SET kind = kind` re-runs the BEFORE trigger).
+- `artwork_term_names(id)`: every name of the artwork's terms — type, materials, and the terms its `medium` mentions as
+  a whole word (`~*` with `\m…\M`, the name's regex characters escaped) — for searching in any language.
+- A name that is no term stays as typed: check `unlinked_term`, sorted out on `/quality/batch/terms`. In the admin, a
+  new single word typed as type or material becomes a term (flagged "to complete": translations to add); a phrase
+  ("oil paint on canvas") doesn't. Object types and materials need no description (no `missing_description`).
+
 ## Glossary (migrations 026, 027)
 Table `glossary` (entity type `term`; `entity_table('term')` = glossary): name fields as everywhere, `category`
 (enum `term_category` — a fixed list, extended with `ALTER TYPE … ADD VALUE`), `definition` (≤ 500 characters),

@@ -68,7 +68,7 @@ const LABELS = {
 };
 const TYPE_HINTS = {
   'artwork.medium': html`For people to read: one line, worded like a museum label and shown exactly as written — <i>Oil on canvas</i> · <i>Woodblock print; ink and colour on paper</i> · <i>Bronze, lost-wax cast</i>.`,
-  'artwork.materials': 'For filtering: the individual materials, one per line, lowercase and singular — ink · paper · bronze · silk. Substances and supports only, no techniques ("woodblock print" belongs in object type / medium). Type them, or click a suggestion below.',
+  'artwork.materials': 'For filtering: the individual materials, one per line, lowercase and singular — ink · paper · bronze · silk. Substances and supports only, no techniques ("woodblock print" belongs in object type / medium). Type them in English or German (Leinwand → canvas: each is a glossary term with its translations), or click a suggestion below.',
   'place.boundary_code': html`ISO code of a country (<code>JP</code>) or region (<code>JP-13</code> Tokyo, <code>FR-IDF</code>) — the outline and
     the marker then come from Natural Earth, no point or drawing needed. Countries get it from their country code automatically.`,
   'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location. With an exact location you can leave it empty or give just the country — the city is found (and created inside the country if needed) when you save.',
@@ -83,7 +83,9 @@ const TYPE_HINTS = {
   'artwork.parts_count': 'Only for a whole (series, album …): how many parts it has, e.g. 46 — pages then show “No. 21 of 46”.',
   'artwork.location': 'Only for works that don’t move — buildings, gardens, bridges, temple halls, monuments, murals. Paintings, prints and sculptures in collections: leave empty (they are where their institution is). Its city is found when you save and linked as “created in” (unless it has a place of creation).',
   'artwork.kind': html`What sort of object it is, in a word or two: painting, woodblock print, hanging scroll, sculpture, vase — or building, garden,
-    bridge, temple hall … Pick a term from the list so works group together. A building that houses an institution: link them with <i>houses</i>.`,
+    bridge, temple hall … Pick a term from the list so works group together — in English or German: types are glossary terms with
+    their translations (Holzschnitt → woodblock print), stored under the term's name. A new word becomes a new term, to translate on its
+    glossary page. A building that houses an institution: link them with <i>houses</i>.`,
   'place.kind': 'settlement (city, town, village) · building · site (archaeological site, landscape) · region · country',
   'movement.kind': 'period (Edo period) · movement (Impressionism) · school (Ukiyo-e, Rinpa) · style',
   'institution.kind': 'museum · academy · temple · church · gallery · library … — pick a term from the list',
@@ -244,7 +246,7 @@ function fieldInput(key, kind, f, ctx) {
   }
   if (kind === 'text[]' || kind === 'json') {
     return html`<div class="field${err}"><label for="${id}">${label}</label>
-      <textarea id="${id}" name="${name}" rows="3"${key === 'materials' ? html` data-suggest-from="f-medium" data-used="${JSON.stringify(used || [])}"` : ''}>${f[key]}</textarea>${hint(typeHint || HINTS[key] || HINTS[kind])}
+      <textarea id="${id}" name="${name}" rows="3"${key === 'materials' ? html` data-suggest-from="f-medium" data-used="${JSON.stringify(used || [])}" data-terms="${JSON.stringify((ctx.terms || {}).materials || {})}"` : ''}>${f[key]}</textarea>${hint(typeHint || HINTS[key] || HINTS[kind])}
       ${used && used.length ? html`<div class="hint used-terms">Used so far: ${used.join(' · ')}</div>` : ''}</div>`;
   }
   if (kind === 'dimensions') {
@@ -296,7 +298,8 @@ function fieldInput(key, kind, f, ctx) {
   const list = ctx.suggestions[key];
   return html`<div class="field${err}"><label for="${id}">${label}</label>
     <input id="${id}" name="${name}" value="${f[key]}"${list ? html` list="${id}-list" autocomplete="off"` : ''}>
-    ${list ? html`<datalist id="${id}-list">${list.map((v) => html`<option value="${v}">`)}</datalist>` : ''}${hint(typeHint || HINTS[key])}</div>`;
+    ${list ? html`<datalist id="${id}-list">${list.map((v) => (typeof v === 'object'
+      ? html`<option value="${v.value}"${v.label ? html` label="${v.value} → ${v.label}"` : ''}>` : html`<option value="${v}">`))}</datalist>` : ''}${hint(typeHint || HINTS[key])}</div>`;
 }
 
 // The form in sections with slim titles: rows of one field or a pair (side by side on wide screens), and groups that

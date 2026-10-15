@@ -1,0 +1,7 @@
+name: woodblock print
+name_lang: en
+category: object type
+names:
+  - {text: Holzschnitt, lang: de, role: translation}
+  - {text: Farbholzschnitt, lang: de, role: translation}
+  - {text: 木版画, lang: ja, role: translation}

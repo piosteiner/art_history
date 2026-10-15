@@ -125,6 +125,21 @@ router.post('/drafts/discard', async (req, res) => {
 // A new entry is compared with the existing ones right after its INSERT, in the same transaction (duplicates.js,
 // migration 044): likely duplicates roll it back and ask. probe: the same path for the live box while typing — no
 // creating of other entries, no city lookup, unknown references left out, and always rolled back → { probe: [...] }.
+// A word that can be a term: short, no list or phrase (commas, "on", "and", "auf", "und" …)
+const termLike = (v) => /^[^,;/()]{1,40}$/.test(v) && v.trim().split(/\s+/).length <= 4 && !/\b(on|and|with|over|auf|und|mit|über)\b/i.test(v);
+async function newTerms(db, doc) {
+  const wanted = [[doc.kind, 'object type', "kind_categories()"], ...(doc.materials || []).map((m) => [m, 'material', "ARRAY['material']::term_category[]"])];
+  const creates = [];
+  for (const [value, category, cats] of wanted) {
+    const v = String(value || '').trim();
+    if (!v || !termLike(v) || creates.some((c) => c.name.toLowerCase() === v.toLowerCase() && c.extra.category === category)) continue;
+    if ((await db.query(`SELECT term_by_name($1, ${cats}) AS id`, [v])).rows[0].id) continue;
+    creates.push({ key: `term:${v}`, type: 'term', name: v, extra: { category } });
+  }
+  await autocreate.create(db, creates);  // the artwork's own save then links them (trigger artworks_link_terms)
+  return creates;
+}
+
 async function saveEntity(user, t, body, existing, { probe = false } = {}) {
   const slug = probe ? `dup-probe-${crypto.randomBytes(6).toString('hex')}` : String(body.slug || '').trim();
   const { doc, errors } = formToDoc(body, t.fields);
@@ -165,6 +180,10 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
         if (existing && id === existing.id) throw new UserError('An entity cannot be its own parent.');
         row.cols.parent_id = ['$', id];
       }
+      // An artwork's type or material typed as a new word becomes a glossary term (071; translations then on its page,
+      // so it is flagged "to complete"). Only single terms: a phrase ("oil paint on canvas", "Pastell, Papier") stays
+      // as typed and is sorted out on /quality/batch/terms.
+      if (t.type === 'artwork' && !probe) created = [...created, ...await newTerms(db, doc)];
       if (city && city.draft) {  // a new city (and its region, from Natural Earth, if we don't have that either)
         const parentSlugs = await autocreate.create(db, city.creates);
         if (parentSlugs.has('parent')) city.doc.parent = parentSlugs.get('parent');
@@ -422,6 +441,17 @@ router.get('/:plural/:slug', async (req, res) => {
   const here = `/${t.folder}/${e.slug}`;
   const recent = await citations.recentSources(adminPool, req.user.id, t.type, e.id);
   const mark = (key) => (key in citable ? citations.marker(cites[key], { type: t.type, id: e.id, field: key, label: `“${fieldLabel(t.type, key)}”` }, here, { recent }) : '');
+  // type and materials as glossary terms (071): links to their pages, a mark where a value is no term yet
+  const termLinks = t.type === 'artwork' ? (await adminPool.query(`
+    SELECT (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = w.kind_term_id) AS kind,
+           (SELECT coalesce(jsonb_object_agg(g.name, g.slug), '{}') FROM artwork_materials am JOIN glossary g ON g.id = am.term_id
+             WHERE am.artwork_id = w.id) AS materials
+    FROM artworks w WHERE w.id = $1`, [e.id])).rows[0] : null;
+  const termValue = (key) => {
+    const noTerm = (v) => html`${v} <a class="tag" href="/quality/batch/terms" title="Not a glossary term yet — sort it out">no term</a>`;
+    if (key === 'kind') return termLinks.kind ? html`<a href="/glossary/${termLinks.kind.slug}">${e.doc.kind}</a>` : noTerm(e.doc.kind);
+    return html`${e.doc.materials.map((m, i) => html`${i ? ' · ' : ''}${termLinks.materials[m] ? html`<a href="/glossary/${termLinks.materials[m]}">${m}</a>` : noTerm(m)}`)}`;
+  };
   const webAccessed = t.type === 'artwork' && e.doc.web_url
     ? (await adminPool.query("SELECT to_char(web_url_accessed, 'FMDD FMMonth YYYY') AS d FROM artworks WHERE id = $1", [e.id])).rows[0].d : null;
   const boundary = t.type === 'place' && e.doc.boundary_code
@@ -472,7 +502,8 @@ router.get('/:plural/:slug', async (req, res) => {
         if (t.type === 'artwork' && key === 'creator') return creatorsRow(e, mainCreator, coCreators, mark('creator'));
         const shown = key === 'boundary_code' && boundary
           ? html`${boundary.code} — ${boundary.name} <span class="muted">(outline and marker from Natural Earth)</span>`
-          : showValue(t, key, kind, e.doc, linkMap);
+          : termLinks && ((key === 'kind' && e.doc.kind) || (key === 'materials' && (e.doc.materials || []).length)) ? termValue(key)
+            : showValue(t, key, kind, e.doc, linkMap);
         // the web page with the day the link was added (set by the database, migration 039)
         if (key === 'web_url' && shown !== null && webAccessed) return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown} <span class="muted small">· added ${webAccessed}</span></dd>`;
         if (shown === null) return '';

@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Type and materials of artworks are glossary terms with translations (migrations 070, 071)
+- **What:** 070: glossary category `object type`. 071: `term_by_name()`, `artworks.kind_term_id` (FK), join table
+  `artwork_materials`, triggers `artworks_link_terms` / `artworks_material_links` (link names to terms, store the term's
+  main name), `glossary_relink_artworks` (renames, new names), `artwork_term_names()` (every name of an artwork's terms
+  incl. those its medium mentions); starter terms in English and German (oil painting, painting, sculpture, woodblock
+  print, pastel; oil paint, canvas, copper, paper, ink, pastel crayon, wood, gold, cardboard); existing values linked
+  (on production: Ölgemälde → oil painting, Painting → painting; 6 values left to sort out); quality check
+  `unlinked_term`; object types / materials need no description. Admin: suggestions in every language, the medium
+  helper knows the German names, new single words become flagged terms, type and materials link to the glossary,
+  batch page `/quality/batch/terms` (replace by terms / move to the medium / make a term). API: `kind_term`,
+  `material_terms`, `term_names`; `?kind=` / `?material=` by any name. Frontend: search matches every name; type and
+  materials link to the glossary.
+- **Why:** owner: museums give type, medium and materials in English or German — a search for "woodblock print"
+  should find the Holzschnitte too.
+- **Tested:** migrations on a restored copy of production; unit 40, e2e 160 passing (new `terms.spec.js`, glossary fixtures).
+- **Revert:** redeploy the previous commit, then as owner: `DROP TRIGGER glossary_relink_artworks ON glossary;
+  DROP TRIGGER artworks_link_terms ON artworks; DROP TRIGGER artworks_material_links ON artworks; DROP TABLE
+  artwork_materials; ALTER TABLE artworks DROP COLUMN kind_term_id;` re-create 068's `quality_issues_live`; drop the
+  functions; the starter terms may stay; `DELETE FROM schema_migrations WHERE name IN ('070_…', '071_…');` (the
+  enum value stays — Postgres can't drop one).
+
+## 2026-10-15
+
 ### Admin: spell check re-run when a text's language changes (Firefox)
 - **What:** `editor/editor.js` — after the language (lang attribute) of a Markdown editor changes, spell checking is
   turned off and on again, so Firefox checks the text anew with the new dictionary instead of only on the next focus.
