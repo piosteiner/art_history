@@ -516,21 +516,6 @@ async function patch(page: Page, url: RegExp, change: (body: Record<string, unkn
 }
 const GREAT_WAVE = /\/v1\/artworks\/the-great-wave-off-kanagawa$/;
 
-test('an artwork\'s collection is linked right under the title, a loan as a credit line', async ({ page }) => {
-  await page.goto('/artworks/le-bassin-aux-nympheas-avec-iris'); // fixed point: Kunsthaus Zürich
-  await expect(page.locator('.subtitle + .collection-line a', { hasText: 'Kunsthaus Zürich' })).toHaveAttribute('href', '/institutions/kunsthaus-zurich');
-
-  await patch(page, GREAT_WAVE, (b) => {
-    b.institution = { slug: 'kunsthaus-zurich', name: 'Kunsthaus Zürich' };
-    b.on_loan = true;
-    b.on_loan_since = { label: '2021', from: '2021-01-01', to: '2021-12-31', from_year: 2021, to_year: 2021 };
-    b.provenance = [{ position: 0, owner: null, owner_label: 'A private collection', owner_name: null, acquired: null, ended: null, method: 'purchase',
-      direct: false, label: null, certainty: 'attested', place: null, period: null, end_basis: 'ongoing', notes_html: null, sources: null }];
-  });
-  await page.goto('/artworks/the-great-wave-off-kanagawa');
-  await expect(page.locator('.collection-line')).toContainText('A private collection, on loan to the Kunsthaus Zürich since 2021');
-});
-
 test('several creators: attribution instead of the name, co-creators with their part; not repeated below', async ({ page }) => {
   await patch(page, GREAT_WAVE, (b) => {
     const main = b.creator as { slug: string; name: string };

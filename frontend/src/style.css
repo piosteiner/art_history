@@ -168,9 +168,6 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 /* detail */
 .crumbs { font-size: .85rem; color: var(--muted); margin: .3rem 0 0; }
 .subtitle { color: var(--muted); font-size: 1.1rem; margin: 0 0 1.2rem; }
-/* an artwork's collection (credit line) right under the artist and date */
-.subtitle:has(+ .collection-line) { margin-bottom: .25rem; }
-.collection-line { font-size: 1.05rem; margin: 0 0 1.2rem; }
 .detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) clamp(340px, 40%, 460px); gap: 2rem; align-items: start; }
 .detail-side { position: sticky; top: 80px; }
 @media (max-width: 860px) {
