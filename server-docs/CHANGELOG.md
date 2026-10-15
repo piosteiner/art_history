@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Data: Gauguin provenances checked line by line against the Kunsthaus records
+- **What:** Idylle à Tahiti: Knoedler's 1934–36 consignment not sold (Phillips traded the painting to Newhouse);
+  Tournesols: Bührle, his estate and the foundation passed on directly (no gap in the source), "inv. no. 46", a note on
+  the two Walter Feilchenfeldts; L'Offrande: Thannhauser until 10 October 1929 (its stock book, the footnote — the line
+  says 1928), Bignou and Reid until February 1930 (was one day); L'Univers est créé: printed 1921 by Pola Gauguin;
+  La Brodeuse: one place label.
+- **Why:** owner: are all Gauguin provenances correct and shown correctly?
+- **Revert:** History → the change set (source import) → Revert.
+
 ### Provenance: a settlement doesn't end the ownership; no handover "via" itself (migration 075)
 - **What:** `provenance_periods`: the next step that ends an owner's period skips settlements; `via` leaves out agents that
   are the holder of the step itself. E2E in `provenance-custody.spec.js`.
