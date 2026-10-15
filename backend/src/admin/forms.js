@@ -49,6 +49,8 @@ const LABELS = {
   'place.boundary_code': 'Boundary (outline)', 'artwork.kind': 'Object type',
   'institution.location': 'Exact location', 'institution.place': 'Place (city)',
   'artwork.title_status': 'Title: original or translation',
+  'artwork.provenance_status': 'Provenance status 1933–1945', 'artwork.provenance_status_note': 'Status as the source words it',
+  'artwork.conceived': 'Designed (block, model)',
   'artwork.web_url': 'Web page', 'artwork.institution': 'Institution (where it is now)', 'artwork.on_loan': 'On loan there',
   'artwork.on_loan_since': 'On loan since', 'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
   'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
@@ -73,6 +75,9 @@ const TYPE_HINTS = {
     the marker then come from Natural Earth, no point or drawing needed. Countries get it from their country code automatically.`,
   'institution.place': 'The city it is in (Zürich, not the building): for grouping, the country and the map when there is no exact location. With an exact location you can leave it empty or give just the country — the city is found (and created inside the country if needed) when you save.',
   'institution.address': 'Street address, as written locally, e.g. Heimplatz 1, 8001 Zürich.',
+  'artwork.provenance_status': html`As the holding institution or a provenance report assesses it (the categories of the Swiss Federal Office of Culture) — cite the source with the marker. The step notes say why.`,
+  'artwork.provenance_status_note': 'In the source’s own words, e.g. “NS-verfolgungsbedingt entzogenes Kulturgut”.',
+  'artwork.conceived': html`Only when it differs from “Created”: a print pulled or a bronze cast later — often after the artist's death — from a block, plate or model made earlier (Gauguin's woodblock 1893–94, printed by his son in 1921).`,
   'artwork.title_status': html`Empty when the title is in its original language. A translation (an English title for a Japanese print): <b>official</b> — the holding institution’s or a publisher’s (add the source with the marker on the page) · <b>common</b> — in use in the literature or on Wikidata · <b>own</b> — yours (shown in [square brackets]). The same for translations among the other names: the second menu next to “translation”.`,
   'artwork.inventory_number': 'Only together with the institution above — the number belongs to its collection, as it publishes it (Kunsthaus: BU 0099). The owner’s number, former numbers and catalogue raisonné numbers: “Further numbers” just below.',
   'artwork.on_loan': 'Yes: lent to (deposited at) the institution above — the owner stays someone else; record the owner (the lender) in the provenance. A permanent loan (Dauerleihgabe) is a loan too.',
@@ -123,9 +128,14 @@ const TYPE_HINTS = {
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
 // The empty choice of a menu whose column may be empty, and readable names of some values.
-const EMPTY_CHOICE = { 'artwork.title_status': 'original — not a translation' };
+const EMPTY_CHOICE = { 'artwork.title_status': 'original — not a translation', 'artwork.provenance_status': 'not assessed' };
 const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', 'artwork.title_status.common': 'common translation',
-  'artwork.title_status.own': 'own translation' };
+  'artwork.title_status.own': 'own translation',
+  // the categories of the Swiss Federal Office of Culture (BAK) for the provenance 1933–1945 (074)
+  'artwork.provenance_status.a_clear': 'A — clarified: no looted art',
+  'artwork.provenance_status.b_no_indications': 'B — not fully clarified, no indications of looted art',
+  'artwork.provenance_status.c_indications': 'C — not fully clarified, indications of looted art or suspicious circumstances',
+  'artwork.provenance_status.d_seized': 'D — looted art / seized as a result of Nazi persecution' };
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
 const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || humanize(key);
 
@@ -318,12 +328,14 @@ const SECTIONS = {
   artwork: [
     { title: 'Title and names', id: 'names', rows: [['title'], ['title_status'], ['names']] },
     { title: 'Who and when', id: 'who', rows: [['creator', 'attribution_label'], ['created'],
+      g('Designed earlier (prints, casts)…', ['conceived'], 'A print or cast made later than its design — often after the artist’s death.'),
       g('Part of a series…', ['parent', 'part_number', 'parts_count'],
         'For a print from a series, a panel of a triptych, a leaf of an album — or for the whole itself (its number of parts).', WHOLES)] },
     { title: 'Object', id: 'object', rows: [['kind', 'medium'], ['materials'], ['dimensions'], ['dimensions_note'], ['other_dimensions']] },
     { title: 'Where it is', id: 'where', rows: [['institution', 'inventory_number'], ['on_loan', 'on_loan_since'], ['web_url'],
       g('Where it stands (buildings, gardens, monuments)…', ['location', 'area'], 'Only for works that don’t move.', IMMOVABLE)] },
     { title: 'Description', id: 'text', rows: [['description_md']] },
+    { title: 'Provenance status', id: 'prov', rows: [['provenance_status', 'provenance_status_note']] },
     IDS(),
   ],
   artist: [

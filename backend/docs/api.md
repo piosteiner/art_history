@@ -243,11 +243,26 @@ Show it like a credit line: "Foundation E.G. Bührle Collection, on permanent lo
 `web_url_accessed` (`YYYY-MM-DD`, migration 039): the day the link was added or last changed — set by the database,
 shown like a citation's "accessed on …".
 
+### Provenance status and design date (artworks, 074)
+- `provenance_status` (detail): `{category: "A"–"D", code, label, note}` or `null` (not assessed) — the categories of
+  the Swiss Federal Office of Culture for 1933–1945: **A** clarified, no looted art · **B** not fully clarified, no
+  indications · **C** not fully clarified, indications or suspicious circumstances · **D** looted / seized as a result
+  of Nazi persecution. `note`: the source's own wording. Lists have `provenance_category` ("A"–"D" or null).
+- `conceived` (detail): when the design, block or model was made, if earlier than `created` — a print pulled or a
+  cast made later (L'Univers est créé: block 1893–94, printed 1921 by Pola Gauguin). Show "designed 1893–94, printed
+  1921"; `null` otherwise.
+- Relationship `copy_after` (artwork → the work it copies; inverse "copied in").
+
 ### Provenance (artworks)
 The detail of an artwork has **`provenance`**: its holders in order, as the sources record them, read as a chain —
 `[{kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,
 acquired, ended, method, direct, label, certainty, price: {amount, currency, note} | null, place: {slug, name} | null,
-period, end_basis, notes_html, sources}]`.
+period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
+- **Custody beside the ownership (074):** `in_chain: false` for agents and custodians — deposits, loans, consignments,
+  auctions. They hold the work *alongside* its owner: they don't end the owner's period, and handovers go from owner
+  to owner past them. Show them indented or as "held by … (deposit)" rather than as a new owner. `not_sold: true`: an
+  agent that didn't sell it (bought in, withdrawn, returned). `via` (owner steps): the agents the work went through to
+  this owner, e.g. "Galerie Moos" — the unsold ones aren't among them.
 - `kind` (063): `creation` — **implied** first line, the artist from the creation date (computed from the creator and
   `created`; absent when the first step is a creation or commission, or names the artist) · `step` — recorded ·
   `loan` — **implied** last line, the current institution as custodian when the work is on loan (`on_loan`,
@@ -259,10 +274,12 @@ period, end_basis, notes_html, sources}]`.
 - Dates known only from one side are open ranges with a label saying so: "26 March 1952 or later" (`to` is `null`),
   "28 October 1904 or earlier" (`from` is `null`), "after 1952", "before 1928".
 - `acquired` / `ended` are dates (`ended` only when a source records it); `method`: creation · commission · inheritance ·
-  purchase · auction · gift · bequest · exchange · confiscation · forced_sale · restitution · unknown;
+  purchase · auction · gift · bequest · exchange · confiscation · forced_sale · restitution · settlement (073: kept
+  after an agreement with claimants — a "just and fair solution") · unknown;
   `direct`: the handover from the previous owner is documented (false = possibly someone in between).
 - `period` is **computed**: from the acquisition to … — `end_basis` says what:
-  `recorded` (the step's own `ended`) · `implied` (the next owner's acquisition — show it differently, e.g. "(implied)")
+  `recorded` (the step's own `ended`) · `implied` (the next owner's acquisition — of the chain: custody steps don't
+  count — show it differently, e.g. "(implied)")
   · `ongoing` (the current holder: open end) · `unknown` (nothing after it: only the acquisition, no invented end).
 - Each step also appears as derived relationships: `owned_by` (artwork → owner), `kept_in` (artwork → place, category
   `presence`: part of the artwork's **route on the map**), `transferred_to` (previous owner → next owner, category

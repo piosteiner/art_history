@@ -247,7 +247,7 @@ async function main() {
     //     import writes nothing to the history).
     const PROV_COLS = ['owner_artist_id', 'owner_person_id', 'owner_institution_id', 'owner_place_id', 'owner_label',
       'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct', 'location_id', 'label', 'certainty', 'notes_md', 'metadata',
-      'role', 'price', 'price_currency', 'price_note'];
+      'role', 'price', 'price_currency', 'price_note', 'not_sold'];
     const PROV_CASTS = { acquired: '::daterange', ended: '::daterange', method: '::acquisition_method', certainty: '::certainty', metadata: '::jsonb',
       role: '::holder_role', price: '::numeric' };
     for (const e of entities.filter((x) => x.provenance !== null && x.provenance !== undefined)) {
@@ -275,7 +275,7 @@ async function main() {
           label: st.label ?? null, certainty: st.certainty ?? 'attested', notes_md: st.notes_md ?? null,
           metadata: '{}',  // its sources are citations (050), added below
           role: st.role ?? 'owner', price: st.price ? st.price.amount : null, price_currency: st.price ? st.price.currency : null,
-          price_note: st.price ? st.price.note ?? null : null });
+          price_note: st.price ? st.price.note ?? null : null, not_sold: st.not_sold === true });
         const params = [artworkId, i, ...PROV_COLS.map((c) => v[c])];
         const vals = PROV_COLS.map((c, j) => `$${j + 3}${PROV_CASTS[c] || ''}`);
         try {

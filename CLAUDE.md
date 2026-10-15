@@ -90,6 +90,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Curated start views (069: `featured_views`, `current_featured_query()`, `featured_view_problems`; `/v1/featured`; admin `/featured`) built 2026-10-14.
   Short addresses for long start-map views (072: `shared_views`, code = SHA-256 prefix; `POST/GET /v1/views`; site shows `/?v=<code>` above 300 characters) built 2026-10-15.
   Type and materials as glossary terms with translations (070/071: `kind_term_id`, `artwork_materials`, `term_by_name()`, names stay the interface; `/quality/batch/terms`) built 2026-10-15.
+  Provenance custody (073/074: chain = owner/dealer/estate, custodians/agents beside it, `not_sold`, `via`, view `provenance_gaps` for the 1933–45 check, `settlement`, `provenance_status` A–D, `conceived`, `copy_after`) built 2026-10-15.
   Spell check language of Markdown texts recognised as you type (EN/DE, `src/textlang.js`, toolbar switch) built 2026-10-14.
   City of an exact location found/created on save (institutions, immovable artworks; `placefinder.cityAt`, Nominatim reverse) built 2026-10-07.
   Ideas later: impressions vs. design for prints. Nightly export commit prepared 2026-10-14, not installed (`scripts/export-commit.sh`, server-docs/README.md → Content snapshots). ISBN/DOI lookup for sources built 2026-10-12 (`booklookup.js`: Open Library, Crossref). Revert/restore from history (009) with word diffs + three-way text merge built 2026-09-30. Map picker for places built 2026-09-29.

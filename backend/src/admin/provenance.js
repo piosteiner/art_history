@@ -14,7 +14,7 @@ const { renderMarkdown } = require('../markdown');
 class ProvenanceError extends Error {}
 
 const METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
-  'confiscation', 'forced_sale', 'restitution', 'unknown'];
+  'confiscation', 'forced_sale', 'restitution', 'settlement', 'unknown'];
 const CERTAINTY = ['attested', 'probable', 'possible', 'disputed'];
 const ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian'];
 const ROLE_TEXT = { owner: 'owner', dealer: 'dealer', agent: 'agent — on consignment, held but not owned', estate: 'estate of the owner',
@@ -26,7 +26,7 @@ const OWNER_TYPES = ['artist', 'person', 'institution', 'place'];
 const ARC = { artist: 'owner_artist_id', person: 'owner_person_id', institution: 'owner_institution_id', place: 'owner_place_id' };
 const COLS = ['owner_artist_id', 'owner_person_id', 'owner_institution_id', 'owner_place_id', 'owner_label',
   'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct', 'location_id', 'label', 'certainty', 'notes_md', 'metadata',
-  'role', 'price', 'price_currency', 'price_note'];
+  'role', 'price', 'price_currency', 'price_note', 'not_sold'];
 const CASTS = { acquired: '::daterange', ended: '::daterange', method: '::acquisition_method', certainty: '::certainty', metadata: '::jsonb',
   role: '::holder_role', price: '::numeric' };
 // "18,000" · "18'000" · "200.00" · "1 250,50" → 18000 · 18000 · 200 · 1250.5
@@ -42,6 +42,7 @@ function priceOf(text) {
 const priceText = (s) => (s.price === null || s.price === undefined ? ''
   : `${Number(s.price).toLocaleString('en', { maximumFractionDigits: 2 })} ${s.price_currency}${s.price_note ? ` (${s.price_note})` : ''}`);
 const methodLabel = (m) => (m === 'forced_sale' ? 'forced sale' : m);
+const METHOD_OPTION = { settlement: 'settlement — kept after an agreement with claimants (073)' };
 const END_BASIS = {
   recorded: null,
   implied: 'end implied by the next acquisition',
@@ -81,6 +82,8 @@ async function fromForm(db, body, keepMetadata = {}) {
   v.certainty = CERTAINTY.includes(body.certainty) ? body.certainty : 'attested';
   v.notes_md = text('notes_md');
   v.role = ROLES.includes(body.role) ? body.role : 'owner';
+  // an auction or consignment that ended without a sale (074): only for agents
+  v.not_sold = v.role === 'agent' && body.not_sold === '1';
   v.price = priceOf(body.price);
   v.price_currency = text('price_currency') ? text('price_currency').toUpperCase() : null;
   if (v.price_currency && !/^[A-Z]{3}$/.test(v.price_currency)) throw new ProvenanceError('Currency: the three-letter code (ISO 4217) — e.g. CHF, USD, FRF, GBP, DEM.');
@@ -114,7 +117,7 @@ async function addCommission(db, artworkId, ownerType, ownerId) {
   const w = (await db.query('SELECT created::text AS created, created_label FROM artworks WHERE id = $1', [artworkId])).rows[0];
   const v = Object.fromEntries(COLS.map((c) => [c, null]));
   Object.assign(v, { [ARC[ownerType]]: ownerId, acquired: w.created, acquired_label: w.created_label, method: 'commission', direct: false,
-    certainty: 'attested', metadata: '{}', role: 'owner' });
+    certainty: 'attested', metadata: '{}', role: 'owner', not_sold: false });
   return add(db, artworkId, Object.assign(COLS.map((c) => v[c]), { coOwners: [] }), { first: true });
 }
 
@@ -153,7 +156,7 @@ function formValues(step) {
     method: step.method, direct: step.direct, location: step.location_slug || '', label: step.label || '',
     certainty: step.certainty, notes_md: step.notes_md || '', sources: step.text_sources || [],
     role: step.role || 'owner', price: step.price === null || step.price === undefined ? '' : String(Number(step.price)),
-    price_currency: step.price_currency || '', price_note: step.price_note || '',
+    price_currency: step.price_currency || '', price_note: step.price_note || '', not_sold: !!step.not_sold,
     ...Object.fromEntries((step.co_owner_refs || []).map((ref, i) => [`co_owner_${i + 1}`, ref])),
   };
 }
@@ -241,7 +244,9 @@ function form({ action, step = {}, submit }) {
     <div class="row">
       <div class="field"><label for="pv-role">Role</label><select id="pv-role" name="role">
         ${ROLES.map((r) => html`<option value="${r}"${r === (step.role || 'owner') ? ' selected' : ''}>${ROLE_TEXT[r]}</option>`)}</select>
-        <div class="hint">How the holder had the work: a dealer bought it to sell; an agent held it on consignment.</div></div>
+        <div class="hint">How the holder had the work: a dealer bought it to sell; an agent held it on consignment or auctioned it;
+          a custodian held it on deposit or loan. Agents and custodians hold it alongside the owner — the ownership goes on.</div>
+        <label class="choice"><input type="checkbox" name="not_sold" value="1"${step.not_sold ? ' checked' : ''}> not sold <span class="muted">(agents: bought in, withdrawn, returned)</span></label></div>
       <div class="field"><label>Joint owners <span class="muted">(with the owner above)</span></label>
         <select id="pv-co-type" hidden><option data-object-types="${CO_TYPES.join(',')}" selected></option></select>
         ${Array.from({ length: CO_SLOTS }, (_, i) => html`<input name="co_owner_${i + 1}" value="${v(`co_owner_${i + 1}`)}" placeholder="and … (start typing)" autocomplete="off" data-lookup-from="pv-co-type" aria-label="joint owner ${i + 1}">`)}
@@ -251,7 +256,7 @@ function form({ action, step = {}, submit }) {
       <div class="field"><label for="pv-acquired">Acquired</label><input id="pv-acquired" name="acquired" value="${v('acquired')}" placeholder="e.g. 1952, c. 1890, 26 March 1952 or later">
         <input name="acquired_label" value="${v('acquired_label')}" placeholder="label (optional)" aria-label="Acquired label"></div>
       <div class="field"><label for="pv-method">How</label><select id="pv-method" name="method">
-        ${METHODS.map((m) => html`<option value="${m}"${m === (step.method || 'unknown') ? ' selected' : ''}>${methodLabel(m)}</option>`)}</select></div>
+        ${METHODS.map((m) => html`<option value="${m}"${m === (step.method || 'unknown') ? ' selected' : ''}>${METHOD_OPTION[m] || methodLabel(m)}</option>`)}</select></div>
       <div class="field"><label for="pv-location">Place</label>
         <input id="pv-location" name="location" value="${v('location')}" placeholder="where the work was" autocomplete="off" data-lookup="place"></div>
     </div>
@@ -287,7 +292,7 @@ function ownerCell(s) {
   const co = (s.co_owners || []).map((c) => html` and ${one(c.slug, c.type, c.name)}`);
   return html`${s.role === 'estate' ? 'Estate of ' : ''}${s.owner_slug ? one(s.owner_slug, s.owner_type, s.owner_entity_name) : s.owner_label}${s.flag ? html` <span class="tag flagged" title="Provenance flag: ${s.flag}">⚑ flagged</span>` : ''}${co}
     ${s.owner_slug && s.owner_label ? html` <span class="muted">(${s.owner_label})</span>` : ''}
-    ${s.role && s.role !== 'owner' && s.role !== 'estate' ? html` <span class="tag">${s.role}</span>` : ''}`;
+    ${s.role && s.role !== 'owner' && s.role !== 'estate' ? html` <span class="tag">${s.role}</span>` : ''}${s.not_sold ? html` <span class="tag">not sold</span>` : ''}`;
 }
 // Holders between 30 January 1933 and 8 May 1945 (or flagged): where to look them up. Lost Art takes the name in
 // the link; Proveana (behind a bot check) and the ERR database are searched on their own pages — the name is shown.
@@ -318,7 +323,10 @@ function section({ e, steps, names, cites = {}, marker = null, back = '' }) {
       if (!implied) n += 1;
       return html`
       <tbody${implied ? html` class="implied"` : html` class="sort-item" data-sort-id="${s.id}"`}>
-      ${i > 0 ? html`<tr class="transfer muted small"><td></td><td></td><td colspan="6">${s.kind === 'loan' ? '⇢ lent' : s.direct ? '↓ passed on directly' : '⋮ not documented as direct'}</td></tr>` : ''}
+      ${i > 0 ? html`<tr class="transfer muted small"><td></td><td></td><td colspan="6">${s.kind === 'loan' ? '⇢ lent'
+        // custody (074): deposits, loans, consignments, auctions — beside the ownership, which goes on
+        : s.kind === 'step' && !s.in_chain ? '⇢ held alongside the owner (the ownership goes on)'
+        : html`${s.direct ? '↓ passed on directly' : '⋮ not documented as direct'}${s.via ? html` · via ${s.via}` : ''}`}</td></tr>` : ''}
       <tr><td class="drag-cell">${!implied && stored.length > 1 ? html`<button type="button" class="drag-handle" title="Drag to reorder (or focus and use ↑ ↓)" aria-label="Move step ${n}: drag, or arrow keys">⠿</button>` : ''}</td>
         <td>${implied ? '' : `${n}.`}</td>
         <td>${ownerCell(s)}</td>

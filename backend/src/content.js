@@ -57,10 +57,12 @@ const TYPES = [
   { type: 'artwork', folder: 'artworks', table: 'artworks', name: 'title', fields: {
     // title_status: is the title a translation, and whose (052)
     title: 'name', title_status: 'text', names: 'names', parent: 'parent', part_number: 'text', parts_count: 'text', creator: 'ref:artist', attribution_label: 'text', created: 'date',
+    conceived: 'date',  // when the design, block or model was made — a print pulled, a bronze cast later (074)
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     other_dimensions: 'dimsets',
     institution: 'ref:institution', inventory_number: 'text', web_url: 'text',  // its page at the museum (038)
     on_loan: 'bool', on_loan_since: 'date',  // lent to the institution where it is; the owner is in the provenance (048)
+    provenance_status: 'text', provenance_status_note: 'text',  // 1933–1945, the BAK categories A–D (074)
     location: 'point', area: 'area',  // only for works that don't move: buildings, gardens, bridges … (migration 034)
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];
@@ -80,10 +82,10 @@ const NUMBER_KEYS = ['number', 'institution', 'source', 'label'];
 // 063: role (owner · dealer · agent · estate · custodian), co_owners ["person/gertrude-stein", …], price {amount,
 // currency, note}.
 const PROVENANCE_KEYS = ['owner', 'owner_label', 'co_owners', 'role', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
-  'place', 'label', 'certainty', 'price', 'notes_md', 'sources'];
+  'place', 'label', 'certainty', 'price', 'notes_md', 'sources', 'not_sold'];
 const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian'];
 const ACQUISITION_METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
-  'confiscation', 'forced_sale', 'restitution', 'unknown'];
+  'confiscation', 'forced_sale', 'restitution', 'settlement', 'unknown'];
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const LEGACY_ALT = ['alt_names', 'alt_titles'];  // before migration 022: plain lists → names with role "alternative"
 
@@ -216,6 +218,7 @@ function toRow(doc, fields) {
         if (st.direct !== undefined && typeof st.direct !== 'boolean') errors.push(`${at}.direct: true or false`);
         if (st.place !== undefined && !SLUG.test(String(st.place))) errors.push(`${at}.place: a place slug`);
         if (st.role !== undefined && !HOLDER_ROLES.includes(st.role)) errors.push(`${at}.role: one of ${HOLDER_ROLES.join(', ')}`);
+        if (st.not_sold !== undefined && (st.not_sold !== true || st.role !== 'agent')) errors.push(`${at}.not_sold: true, only for role agent (an auction that didn't sell)`);
         if (st.co_owners !== undefined && (!Array.isArray(st.co_owners) || st.co_owners.some((c) => !/^(artist|person|institution)\/[a-z0-9]+(-[a-z0-9]+)*$/.test(c)))) {
           errors.push(`${at}.co_owners: a list like [person/gertrude-stein]`);
         }
@@ -391,7 +394,7 @@ async function readProvenance(db, artworkId) {
     SELECT o.type::text || '/' || o.slug AS owner, p.owner_label, p.acquired::text AS acquired, p.acquired_label,
            p.ended::text AS ended, p.ended_label, p.method::text AS method, p.direct, l.slug AS place, p.label,
            p.certainty::text AS certainty, p.notes_md, p.metadata, citation_docs(NULL, p.id) AS sources,
-           p.role::text AS role, p.price, p.price_currency, p.price_note,
+           p.role::text AS role, p.price, p.price_currency, p.price_note, p.not_sold,
            (SELECT array_agg(x.type::text || '/' || x.slug ORDER BY c.position) FROM provenance_co_owners_x c
               JOIN entity_index x ON (x.type, x.id) = (c.owner_type, c.owner_id) WHERE c.provenance_id = p.id) AS co_owners
     FROM provenance p
@@ -406,6 +409,7 @@ async function readProvenance(db, artworkId) {
     if (r.owner_label) st.owner_label = r.owner_label;
     if (r.co_owners && r.co_owners.length) st.co_owners = r.co_owners;
     if (r.role && r.role !== 'owner') st.role = r.role;
+    if (r.not_sold) st.not_sold = true;
     for (const k of ['acquired', 'ended']) {
       const d = dateToDoc(r[k], r[`${k}_label`], false);
       if (d.value !== null) st[k] = d.value;

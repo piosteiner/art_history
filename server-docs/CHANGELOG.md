@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Provenance: custody beside the ownership, unsold auctions, the 1933–1945 gap over undated steps, settlement, status A–D, design dates, copies (migrations 073/074)
+- **What:** 073: `acquisition_method` `settlement`. 074: `provenance.not_sold`; `provenance_periods` takes the next /
+  previous step of the ownership chain (owner, dealer, estate) — custodians and agents no longer end an owner's period
+  or stand in as owners (204 → 180 derived handovers on production); handovers say `via` their agents; `held_by`
+  "not sold"; view `provenance_gaps` and a `provenance_gap_1933_1945` check over the possible span of every handover
+  not documented as direct, dated or not (4 → 30 findings, one per stretch); settlement answers a forced sale;
+  `artworks.provenance_status` (BAK A–D) + note, `artworks.conceived` (used by the creator-life check), both citable;
+  relationship type `copy_after`. Admin: "not sold" in the step form, "held alongside the owner" / "via …" in the
+  table, the new artwork fields. API: `in_chain`, `not_sold`, `via` per step; `provenance_status`, `conceived`,
+  `provenance_category` (lists). YAML: `not_sold`, `settlement`, the two fields. E2E `provenance-custody.spec.js`.
+- **Why:** owner's review of the Kunsthaus Gauguin provenances (points 1–6).
+- **Revert:** `git revert`, deploy; then restore the previous definitions of `provenance_periods`, `edges`,
+  `provenance_chain`, `quality_issues_live` (from 063/064/068/069 — pg_get_viewdef before 074), drop `provenance_gaps`,
+  the new columns, type `provenance_status` and the `copy_after` row (the enum value can't be dropped; it is unused).
+
 ### Data: the Kunsthaus Zürich's Gauguin works with their provenance (import, production)
 - **What:** the 12 works of the collection's search "gauguin": 9 new — La Barrière (1981/0002), L'Univers est créé
   (Gr.2003/0154, woodcut printed 1921 by Pola Gauguin, co-creator "printer"), Le Bol blanc (1986/0002), Nature morte

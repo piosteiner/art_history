@@ -88,8 +88,15 @@ const ENTITIES = {
            (SELECT jsonb_build_object('slug', w.slug, 'title', w.title) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
            artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')},
            -- type and materials are glossary terms (071): every name of them, all languages, for searching lists
-           t.materials, artwork_term_names(t.id) AS term_names`,
+           t.materials, artwork_term_names(t.id) AS term_names,
+           upper(left(t.provenance_status::text, 1)) AS provenance_category`,
     detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
+             range_json(t.conceived, t.conceived_label) AS conceived,
+             -- 1933–1945 (074): the BAK category A–D, its meaning, the source's wording
+             CASE WHEN t.provenance_status IS NOT NULL THEN jsonb_build_object('category', upper(left(t.provenance_status::text, 1)), 'code', t.provenance_status,
+             'label', CASE t.provenance_status WHEN 'a_clear' THEN 'clarified: no looted art' WHEN 'b_no_indications' THEN 'not fully clarified, no indications of looted art'
+               WHEN 'c_indications' THEN 'not fully clarified, indications of looted art or suspicious circumstances'
+               ELSE 'looted art / seized as a result of Nazi persecution' END, 'note', t.provenance_status_note) END AS provenance_status,
              (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = t.kind_term_id) AS kind_term,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', g.slug, 'name', g.name) ORDER BY am.position), '[]')
                 FROM artwork_materials am JOIN glossary g ON g.id = am.term_id WHERE am.artwork_id = t.id) AS material_terms,
@@ -322,7 +329,9 @@ const EXTRAS = {
              p.method, p.direct, p.label, p.certainty,
              CASE WHEN p.price IS NOT NULL THEN jsonb_build_object('amount', p.price, 'currency', p.price_currency, 'note', p.price_note) END AS price,
              (SELECT jsonb_build_object('slug', l.slug, 'name', l.name) FROM places l WHERE l.id = p.location_id) AS place,
-             range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.id AS _prov_id
+             range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.id AS _prov_id,
+             -- 074: custody steps (agent, custodian) run beside the ownership; an agent that didn't sell; the agents a handover went through
+             p.in_chain, p.not_sold, p.via
       FROM provenance_chain p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
       WHERE p.artwork_id = $1 ORDER BY p.position`, [id])).rows,
   }),

@@ -500,3 +500,18 @@ The database understands the query: `featured_query_refs(query)` lists the entri
 in, `record_slug_change()` on renames, the API on reading (merges). `featured_view_problems` lists unknown keys, bad
 years and slugs that name nothing; a view with problems can't be published. The intro is in `markdown_columns`, so
 its `[[links]]` follow renames and merges like every text.
+
+## Custody beside the ownership; provenance status; design date (migrations 073/074)
+- Steps of the **chain** (`role` owner, dealer, estate) carry the ownership; custody steps (agent, custodian: deposits,
+  loans, consignments, auctions) run beside it. `provenance_periods` looks up the next / previous step *of the chain*
+  (LATERAL subqueries) for implied ends and handovers; new columns `in_chain`, `not_sold`, `via`.
+  `provenance.not_sold` (agents only, CHECK): an auction or consignment that didn't sell.
+- `provenance_gaps`: per handover the span in which it may have happened — window aggregates: the latest date known
+  before it (the creation for the first owner), the earliest acquisition known from it on. The check
+  `provenance_gap_1933_1945` reports each stretch overlapping 30 January 1933 – 8 May 1945 once (several undated
+  owners in a row share one).
+- `acquisition_method` `settlement` (073): kept after an agreement with claimants; answers `provenance_forced_transfer`
+  like a restitution.
+- `artworks.provenance_status` (enum `provenance_status`: a_clear, b_no_indications, c_indications, d_seized — the BAK
+  categories) + `provenance_status_note`; `artworks.conceived`/`conceived_label` (design earlier than the object;
+  `artwork_outside_creator_life` uses it). Both citable. Relationship type `copy_after` (artwork → artwork).
