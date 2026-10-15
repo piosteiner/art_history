@@ -8,10 +8,13 @@ const clean = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().re
 // while typing a trailing hyphen stays (you are about to type the next word); a finished slug has none
 const slugify = (s) => clean(s).replace(/-$/, '').slice(0, 80);
 
+// Entry forms have #f-slug; other forms (Start views) mark theirs with data-slug-field.
 export function initSlug() {
-  // by id: banners above the form ("unsaved changes — Discard") carry hidden inputs named slug too
-  const slug = document.getElementById('f-slug');
-  if (!slug) return;
+  // by id / attribute: banners above the form ("unsaved changes — Discard") carry hidden inputs named slug too
+  document.querySelectorAll('#f-slug, input[data-slug-field]').forEach(setup);
+}
+
+function setup(slug) {
   const set = (value) => {
     if (slug.value === value) return;
     slug.value = value;

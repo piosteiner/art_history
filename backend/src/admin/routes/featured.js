@@ -50,7 +50,8 @@ function form({ action, v = {}, problems = [], submit }) {
     ${val('query') ? html`<p class="small"><a href="${preview(val('query'))}" target="_blank" rel="noopener">Preview on the site ↗</a>
       <span class="muted">· stored: <code>${val('query')}</code></span></p>` : ''}
     <div class="field-pair"><div class="field"><label for="fv-title">Title</label><input id="fv-title" name="title" value="${val('title')}" required placeholder="e.g. Van Gogh and Gauguin in Arles"></div>
-      <div class="field"><label for="fv-slug">Slug</label><input id="fv-slug" name="slug" value="${val('slug')}" placeholder="from the title" pattern="[a-z0-9]+(-[a-z0-9]+)*">
+      <div class="field"><label for="fv-slug">Slug</label><input id="fv-slug" name="slug" value="${val('slug')}" placeholder="from the title" pattern="[a-z0-9]+(-[a-z0-9]+)*"
+          autocapitalize="none" spellcheck="false" data-slug-field${action === '/featured' ? html` data-slug-from="fv-title"` : ''}>
         <div class="hint">The view's address on the site: /?featured=<i>slug</i> (the first view is the home page itself).</div></div></div>
     <div class="field"><label for="fv-intro">Introduction</label>
       <textarea id="fv-intro" name="intro_md" class="md" rows="6">${val('intro_md')}</textarea>

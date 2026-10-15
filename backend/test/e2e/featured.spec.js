@@ -57,3 +57,17 @@ test('start views: pasted from the site, checked, published in order, following 
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body }).then((r) => r.status), `ids=${ids}`)).toBe(204);
   expect(sql("SELECT string_agg(slug, ' ' ORDER BY sort_order) FROM featured_views")).toBe('van-gogh-and-gauguin broken');
 });
+
+test('the slug follows the title on a new view and is cleaned as you type; on an existing view it stays', async ({ userA }) => {
+  await userA.goto('/featured/new');
+  await userA.locator('#fv-title').pressSequentially('Hokusai & Hiroshige: Fuji', { delay: 15 });
+  await expect(userA.locator('#fv-slug')).toHaveValue('hokusai-hiroshige-fuji');
+  await userA.locator('#fv-slug').fill('');
+  await userA.locator('#fv-slug').pressSequentially('Mein Blick Ä', { delay: 15 });
+  await expect(userA.locator('#fv-slug')).toHaveValue('mein-blick-a');
+  await userA.fill('#fv-url', '?artists=katsushika-hokusai');
+  await Promise.all([userA.waitForNavigation(), userA.click('.featured-form button:has-text("Create")')]);
+  await expect(userA).toHaveURL(/\/featured\/mein-blick-a\/edit/);
+  await userA.locator('#fv-title').pressSequentially(' and more', { delay: 15 });   // existing: the address stays
+  await expect(userA.locator('#fv-slug')).toHaveValue('mein-blick-a');
+});

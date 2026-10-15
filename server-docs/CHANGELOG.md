@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-15
 
+### Admin: Start views get the slug from the title, cleaned as you type
+- **What:** `editor/slug.js` works for every field marked `data-slug-field` besides the entry forms' `#f-slug`;
+  the Start views form marks its slug field (following the title on a new view only, like entries). e2e in `featured.spec.js`.
+- **Why:** owner: slug generation and formatting like elsewhere.
+- **Revert:** redeploy the previous commit.
+
 ### Type and materials of artworks are glossary terms with translations (migrations 070, 071)
 - **What:** 070: glossary category `object type`. 071: `term_by_name()`, `artworks.kind_term_id` (FK), join table
   `artwork_materials`, triggers `artworks_link_terms` / `artworks_material_links` (link names to terms, store the term's
