@@ -103,6 +103,22 @@ test('list page: same field search as the pickers, typos as similar names', asyn
   await expect(page.locator('#items')).toContainText('Hokusai');
 });
 
+test('list search ignores accents and special letters: "soren gross" finds Søren Groß, typed apostrophes d’Anvers', async ({ page }) => {
+  await page.route(/\/v1\/artists\?/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    if (body.data?.length) Object.assign(body.data[0], { name: 'Søren Groß d’Anvers', sort_key: 'Gross' });
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artists');
+  await expect(page.locator('.card').first()).toBeVisible();
+  for (const q of ['soren gross', "d'anvers", 'SØREN']) {
+    await page.fill('.filter', q);
+    await expect(page.locator('#items .card').first(), q).toContainText('Søren Groß');
+  }
+  await expect(page.locator('#items .card mark').first()).toHaveText('Søren');  // highlighted in the original spelling
+});
+
 test('header search finds fields and typos', async ({ page }) => {
   await page.goto('/?all');
   const input = page.locator('.search-form input');

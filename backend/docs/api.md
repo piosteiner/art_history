@@ -24,7 +24,7 @@ with a 301 to `/v1/people…`, also under `/map/` and `/graph/`.)
 ### `GET /v1/<type>` — list
 | Param | |
 |---|---|
-| `q` | name/title search: accent-insensitive, substring or fuzzy (`durer`, `hokusia`) |
+| `q` | name/title search: accent-insensitive (also æ ø ß ł, ligatures, ’ = '), substring or fuzzy (`durer`, `hokusia`, `gross` → Groß) |
 | `from`, `to` | years; entities whose lifespan / creation / period overlaps (not for places) |
 | `limit` (1–500, default 100), `offset` | paging; the response has `total` |
 | artworks: `creator` (main creator or co-creator), `institution` (slugs), `kind` · places: `kind`, `country` (ISO code) · movements, institutions: `kind` | filters |

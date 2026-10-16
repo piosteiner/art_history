@@ -34,8 +34,9 @@ export interface SortOption {
   label: string;
 }
 
-/** Lowercase without accents: "Dürer" → "durer", "Shin-Ōhashi" → "shin-ohashi". */
-export const fold = (s: string) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+/** Lowercase without accents and special letters: "Dürer" → "durer", "Groß" → "gross" (src/fold.ts). */
+export { fold } from './fold';
+import { fold } from './fold';
 
 export const queryWords = (query: string) => fold(query).split(/\s+/).filter(Boolean);
 

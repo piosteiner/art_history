@@ -3,6 +3,7 @@
 //                      canvas, through the glossary terms' names in every language), re-checked as it changes
 //   "used before":     terms already used on other works, so the same word is reused (the API filters by exact terms)
 // textarea[data-suggest-from] names the medium input; data-used holds the terms in use (src/admin/forms.js).
+import { fold } from '../../fold';  // accents and special letters off (src/fold.js)
 
 // Common materials, and words in a medium that mean one of them. Terms in use are matched too.
 const KNOWN = ['ink', 'paper', 'silk', 'canvas', 'oil paint', 'tempera', 'watercolour', 'gouache', 'pigment', 'gold leaf',
@@ -12,7 +13,6 @@ const KNOWN = ['ink', 'paper', 'silk', 'canvas', 'oil paint', 'tempera', 'waterc
 const SYNONYMS = { oil: 'oil paint', oils: 'oil paint', 'oil-on': 'oil paint', watercolor: 'watercolour', colour: null, color: null,
   gilt: 'gold leaf', gilded: 'gold leaf', 'gold-leaf': 'gold leaf', terra: null, cotta: null, washi: 'paper' };
 
-const fold = (s) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const words = (s) => fold(s).split(/[^a-z-]+/).filter(Boolean);
 
 function fromMedium(medium, vocabulary) {

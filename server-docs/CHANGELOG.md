@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Searches ignore special letters, ligatures, typographic apostrophes and dashes (migration 080)
+- **What:** `f_unaccent()` now also normalises compatibility forms (NFKC: ligatures "ﬁ", full-width letters) and maps
+  ’ ‘ ʼ ` ´ to ' and the dashes ‐ ‑ ‒ – — ― to -; the migration reindexes the 20 indexes built on it (and on `dup_names`/
+  `type_doubt`). `unaccent` already spelled out æ, ø, ß, ł, œ, đ, þ. The bibliography `?author=` filter folds accents
+  too. The browser side (admin editor pickers, materials, [[ suggestions; public site lists, pickers, header search)
+  shares one `fold()` with the same rules: `backend/src/fold.js` and `frontend/src/fold.ts` (before, the site only
+  dropped accents: "soren" didn't find Søren, "gross" not Groß). Tests: `test/fold.test.js`, e2e `folding.spec.js`,
+  frontend "list search ignores accents…".
+- **Why:** owner: "irene" should find Irène, and similar cases. é/è/ê already worked in the database searches.
+  Not folded on purpose: German transliteration (Mueller ≠ Müller) — would need its own rule (offered to the owner).
+- **Revert:** redeploy the previous commit, then restore the old function and reindex:
+  `CREATE OR REPLACE FUNCTION f_unaccent(text) … RETURN public.unaccent('public.unaccent'::regdictionary, $1);` (as in 004) + 080's
+  REINDEX loop; `DELETE FROM schema_migrations WHERE name = '080_search_folding.sql';`
+
 ### Provenance gaps shown where they belong (migration 079)
 - **What:** `provenance_gap_anchor(artwork, before, after, gap)`: the step a gap is shown after — the last step between
   its two owners whose dated start is on or before the gap's first day (e.g. an agent at an auction where the work

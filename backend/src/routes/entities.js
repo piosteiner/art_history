@@ -210,7 +210,7 @@ const ENTITIES = {
              range_json(t.uploaded, t.uploaded_label) AS uploaded, t.date_text, t.archive, t.shelfmark, t.isbn, t.doi,
              t.primary_source, t.reading_status, range_json(t.read_on, t.read_on_label) AS read_on, t.description_md`,
     md: ['description_md'],
-    filters: { kind: 't.kind::text = $', status: 't.reading_status::text = $', author: "t.authors::text ILIKE '%' || $ || '%'" },
+    filters: { kind: 't.kind::text = $', status: 't.reading_status::text = $', author: "f_unaccent(t.authors::text) ILIKE '%' || f_unaccent($) || '%'" },  // accents folded (080)
     order: `coalesce(t.authors[1], ${keyExpr('source', 't')}) COLLATE sort_natural, t.year`,
   },
   // events (migration 047): when, where (city; exact spot or area), part of a larger event, its parts

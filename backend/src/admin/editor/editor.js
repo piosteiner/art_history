@@ -20,6 +20,7 @@ import { startCollab } from './collab';
 import { initWikidataBulk } from './wikidata-bulk';
 import { initSlug } from './slug';
 import { guessLang } from '../../textlang';
+import { fold as foldText } from '../../fold';
 import { initNames } from './names';
 import { initUnpublished } from './unpublished';
 import { initMaterials } from './materials';
@@ -187,7 +188,7 @@ async function entryCompletions(context) {
   return { from: m.from, to: after === ']]' ? context.pos + 2 : context.pos, filter: false, options };
 }
 
-const fold = (t) => String(t).normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().trim();
+const fold = (t) => foldText(t).trim();  // accents and special letters off (src/fold.js)
 // "james-cook" (a slug typed by hand) → "James Cook"; anything else as typed
 const nameOfTyped = (q) => (/^[a-z0-9]+(-[a-z0-9]+)+$/.test(q) ? q.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : q.replace(/\s+/g, ' '));
 const TYPE_NAME = { person: 'Person', artist: 'Artist', artwork: 'Artwork', institution: 'Institution', place: 'Place',

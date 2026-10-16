@@ -1,5 +1,6 @@
 // Tiny HTML templating: interpolated values are escaped unless they are already Html (from html`` or trusted()).
 // Images load with crossorigin="anonymous": Wikimedia then neither receives nor sets cookies (the site stays cookie-free).
+import { fold } from './fold';
 import { PLURAL } from './api';
 import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, Plural, PolityLink, Ref, TranslationStatus } from './types';
 
@@ -161,7 +162,6 @@ export const countryLink = (c: Country | null | undefined) =>
  * A polity together with today's country, as the API docs ask: "Soviet Union (today Ukraine)".
  * The "today" part is left out when the polity's name already says it ("Kingdom of the Netherlands").
  */
-const fold = (s: string) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
 const todayPart = (p: PolityLink, today: Country | null | undefined) => {
   const now = countryText(today);
   return now && !fold(p.name).includes(fold(now)) ? now : null;
