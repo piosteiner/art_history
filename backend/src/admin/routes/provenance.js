@@ -33,11 +33,12 @@ router.post('/numbers/:id/delete', async (req, res) => {
 });
 
 // Provenance steps: added on the artwork's page, edited / removed / reordered under /provenance/<id> (src/admin/provenance.js).
-function provenanceEditPage(req, res, step, { status = 200, flash, values = provenance.formValues(step) } = {}) {
+async function provenanceEditPage(req, res, step, { status = 200, flash, values = provenance.formValues(step) } = {}) {
+  const choices = provenance.stepChoices(await provenance.read(adminPool, step.artwork_id));   // "another reading of" (084)
   send(req, res, {
     title: 'Edit provenance step', status, flash,
     body: html`<h1>Edit provenance step</h1><p><a href="${step.artworkUrl}#provenance">← ${step.artwork_title}</a></p>
-      ${provenance.form({ action: `/provenance/${step.id}`, step: values, submit: 'Save' })}
+      ${provenance.form({ action: `/provenance/${step.id}`, step: { ...values, id: step.id }, submit: 'Save', choices })}
       <form method="post" action="/provenance/${step.id}/delete" class="actions" style="margin-top:1.5rem">
         <button class="danger">Remove this step</button></form>`,
   });
@@ -66,7 +67,7 @@ router.get('/provenance/numbers', async (req, res) => {
 router.get('/provenance/:id/edit', async (req, res) => {
   const step = await provenance.byId(adminPool, req.params.id);
   if (!step) return notFoundPage(req, res);
-  provenanceEditPage(req, res, step);
+  return provenanceEditPage(req, res, step);
 });
 
 router.post('/provenance/:id', async (req, res) => {

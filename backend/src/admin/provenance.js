@@ -16,9 +16,10 @@ class ProvenanceError extends Error {}
 const METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange', 'transfer',
   'confiscation', 'theft', 'forced_sale', 'restitution', 'settlement', 'claim', 'dissolution', 'unknown'];
 const CERTAINTY = ['attested', 'probable', 'possible', 'disputed'];
-const ROLES = ['owner', 'dealer', 'estate', 'publisher', 'agent', 'custodian', 'foundry', 'trustee', 'event'];
+const ROLES = ['owner', 'dealer', 'estate', 'publisher', 'agent', 'custodian', 'foundry', 'trustee', 'possessor', 'event'];
 const ROLE_TEXT = { owner: 'owner', dealer: 'dealer', agent: 'agent — on consignment, auction: held, not owned', estate: 'estate of the owner',
-  custodian: 'custodian — held without owning (deposit, loan; a thief: method theft)', publisher: 'publisher — of an edition (prints)',
+  custodian: 'custodian — held without owning (deposit, loan)', publisher: 'publisher — of an edition (prints)',
+  possessor: 'possessor — held without good title: seized, looted, stolen, or received from those who took it (the owner keeps the title)',
   foundry: 'foundry — cast and held it', trustee: 'trustee — held in trust or as security (Treuhand, Sicherungsübereignung)',
   event: 'event — no holder: a claim, a settlement between others, a collection dissolved' };
 // 077: further places of a step, numbers of a step (the kinds of provenance_number_kinds — the same list)
@@ -34,7 +35,7 @@ const OWNER_TYPES = ['artist', 'person', 'institution', 'place'];
 const ARC = { artist: 'owner_artist_id', person: 'owner_person_id', institution: 'owner_institution_id', place: 'owner_place_id' };
 const COLS = ['owner_artist_id', 'owner_person_id', 'owner_institution_id', 'owner_place_id', 'owner_label',
   'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct', 'location_id', 'label', 'certainty', 'notes_md', 'metadata',
-  'role', 'price', 'price_currency', 'price_note', 'not_sold', 'event_id'];
+  'role', 'price', 'price_currency', 'price_note', 'not_sold', 'event_id', 'alternative_to', 'exchanged_for_artwork_id', 'exchanged_for_text'];
 const CASTS = { acquired: '::daterange', ended: '::daterange', method: '::acquisition_method', certainty: '::certainty', metadata: '::jsonb',
   role: '::holder_role', price: '::numeric' };
 // "18,000" · "18'000" · "200.00" · "1 250,50" → 18000 · 18000 · 200 · 1250.5
@@ -51,7 +52,7 @@ const priceText = (s) => (s.price === null || s.price === undefined ? ''
   : `${Number(s.price).toLocaleString('en', { maximumFractionDigits: 2 })} ${s.price_currency}${s.price_note ? ` (${s.price_note})` : ''}`);
 const methodLabel = (m) => (m === 'forced_sale' ? 'forced sale' : m);
 const METHOD_OPTION = { settlement: 'settlement — an agreement with claimants (073)', transfer: 'transfer — Übertragung, Übernahme (to a foundation …)',
-  theft: 'theft — stolen (a custodian step: the owner keeps the title; its end = recovered)', claim: 'claim — raised (an event)',
+  theft: 'theft — stolen (a possessor step: the owner keeps the title; its end = recovered)', claim: 'claim — raised (an event)',
   dissolution: 'dissolution — a collection dissolved, a firm wound up (an event)' };
 const END_BASIS = {
   recorded: null,
@@ -105,6 +106,16 @@ async function fromForm(db, body, keepMetadata = {}) {
     if (id === null) throw new ProvenanceError(`Event: "${event}" does not exist — pick one from the suggestions (or create it first).`);
     v.event_id = id;
   }
+  // another source's reading of a step (084): the step it is an alternative to (the trigger checks the artwork)
+  v.alternative_to = /^\d+$/.test(String(body.alternative_to || '')) ? Number(body.alternative_to) : null;
+  // what was given in exchange (084): an artwork of ours and/or words
+  const exchanged = text('exchanged_for');
+  if (exchanged) {
+    const id = (await db.query("SELECT entity_id('artwork', $1) AS id", [exchanged])).rows[0].id;
+    if (id === null) throw new ProvenanceError(`Exchanged for: "${exchanged}" is not an artwork of ours — pick one from the suggestions, or describe it in words.`);
+    v.exchanged_for_artwork_id = id;
+  }
+  v.exchanged_for_text = text('exchanged_for_text');
   // further places, in order (077): where the holder took it — "Köln, Berlin & Genf"
   const places = [];
   for (let i = 1; i <= PLACE_SLOTS; i += 1) {
@@ -157,7 +168,8 @@ async function addCommission(db, artworkId, ownerType, ownerId) {
   const w = (await db.query('SELECT created::text AS created, created_label FROM artworks WHERE id = $1', [artworkId])).rows[0];
   const v = Object.fromEntries(COLS.map((c) => [c, null]));
   Object.assign(v, { [ARC[ownerType]]: ownerId, acquired: w.created, acquired_label: w.created_label, method: 'commission', direct: false,
-    certainty: 'attested', metadata: '{}', role: 'owner', not_sold: false, event_id: null });
+    certainty: 'attested', metadata: '{}', role: 'owner', not_sold: false, event_id: null, alternative_to: null,
+    exchanged_for_artwork_id: null, exchanged_for_text: null });
   return add(db, artworkId, Object.assign(COLS.map((c) => v[c]), { coOwners: [] }), { first: true });
 }
 
@@ -197,6 +209,7 @@ async function byId(db, id) {
            (SELECT array_agg(o.type::text || '/' || o.slug ORDER BY c.position) FROM provenance_co_owners_x c
              JOIN entity_index o ON (o.type, o.id) = (c.owner_type, c.owner_id) WHERE c.provenance_id = p.id) AS co_owner_refs,
            (SELECT slug FROM events WHERE id = p.event_id) AS event_slug,
+           (SELECT slug FROM artworks WHERE id = p.exchanged_for_artwork_id) AS exchanged_for_slug,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', l.slug, 'period', x.period::text, 'period_label', x.period_label) ORDER BY x.position), '[]')
               FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', n.kind, 'number', n.number) ORDER BY n.position), '[]')
@@ -219,6 +232,8 @@ function formValues(step) {
     certainty: step.certainty, notes_md: step.notes_md || '', sources: step.text_sources || [],
     role: step.role || 'owner', price: step.price === null || step.price === undefined ? '' : String(Number(step.price)),
     price_currency: step.price_currency || '', price_note: step.price_note || '', not_sold: !!step.not_sold, event: step.event_slug || '',
+    alternative_to: step.alternative_to ? String(step.alternative_to) : '', exchanged_for: step.exchanged_for_slug || '',
+    exchanged_for_text: step.exchanged_for_text || '',
     ...Object.fromEntries((step.further_places || []).flatMap((pl, i) => {
       const d = dateToDoc(pl.period, pl.period_label, false);
       return [[`place_${i + 1}`, pl.slug], [`place_date_${i + 1}`, d.value || '']];
@@ -256,31 +271,37 @@ async function renumber(db, artworkId, ids) {
 }
 
 async function orderedIds(db, artworkId) {
-  return (await db.query('SELECT id FROM provenance WHERE artwork_id = $1 ORDER BY position, id', [artworkId])).rows.map((r) => r.id);
+  // the main steps in order, then the alternative readings (084) — they stay beside their step, outside the order
+  return (await db.query('SELECT id, alternative_to IS NOT NULL AS alt FROM provenance WHERE artwork_id = $1 ORDER BY alternative_to IS NOT NULL, position, id', [artworkId])).rows;
 }
 
+const mainIds = (rows) => rows.filter((r) => !r.alt).map((r) => r.id);
+const altIds = (rows) => rows.filter((r) => r.alt).map((r) => r.id);
 async function move(db, step, dir) {
-  const ids = await orderedIds(db, step.artwork_id);
+  const rows = await orderedIds(db, step.artwork_id);
+  const ids = mainIds(rows);
   const at = ids.indexOf(step.id);
   const to = dir === 'up' ? at - 1 : at + 1;
   if (at < 0 || to < 0 || to >= ids.length) return;
   ids.splice(to, 0, ...ids.splice(at, 1));
-  await renumber(db, step.artwork_id, ids);
+  await renumber(db, step.artwork_id, [...ids, ...altIds(rows)]);
 }
 
 // A new order from the page (drag and drop): the same steps, in the order given — else nothing changes.
 async function reorder(db, artworkId, ids) {
-  const now = await orderedIds(db, artworkId);
+  const rows = await orderedIds(db, artworkId);
+  const now = mainIds(rows);
   const want = ids.map(Number);
   if (want.length !== now.length || [...want].sort((a, b) => a - b).join() !== [...now].sort((a, b) => a - b).join()) {
     throw new ProvenanceError('The provenance changed meanwhile — reload the page and try again.');
   }
-  await renumber(db, artworkId, want);
+  await renumber(db, artworkId, [...want, ...altIds(rows)]);
 }
 
 async function remove(db, step) {
   await db.query('DELETE FROM provenance WHERE id = $1', [step.id]);
-  await renumber(db, step.artwork_id, await orderedIds(db, step.artwork_id));
+  const rows = await orderedIds(db, step.artwork_id);
+  await renumber(db, step.artwork_id, [...mainIds(rows), ...altIds(rows)]);
 }
 
 // The chain for the artwork page (view provenance_chain): the recorded steps with their computed periods, the implied
@@ -293,6 +314,9 @@ async function read(db, artworkId) {
               FROM provenance_co_owners_x c JOIN entity_index e ON (e.type, e.id) = (c.owner_type, c.owner_id)
              WHERE c.provenance_id = p.id) AS co_owners,
            (SELECT jsonb_build_object('slug', ev.slug, 'name', ev.name) FROM events ev WHERE ev.id = pv.event_id) AS event,
+           CASE WHEN pv.exchanged_for_artwork_id IS NOT NULL OR pv.exchanged_for_text IS NOT NULL THEN jsonb_build_object(
+             'slug', (SELECT slug FROM artworks WHERE id = pv.exchanged_for_artwork_id), 'title', (SELECT title FROM artworks WHERE id = pv.exchanged_for_artwork_id),
+             'text', pv.exchanged_for_text) END AS exchanged_for,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', l.slug, 'name', l.name, 'period_label', x.period_label) ORDER BY x.position), '[]')
               FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', k.label, 'number', n.number) ORDER BY n.position), '[]')
@@ -303,7 +327,23 @@ async function read(db, artworkId) {
     WHERE p.artwork_id = $1 ORDER BY p.position`, [artworkId])).rows;
 }
 
-function form({ action, step = {}, submit }) {
+// Other sources' readings of steps (084): not in the chain — read from the table, grouped by the step they belong to
+async function readAlternatives(db, artworkId) {
+  const { rows } = await db.query(`
+    SELECT p.id, p.alternative_to, p.role::text AS role, p.method::text AS method, p.acquired_label, p.ended_label, p.label,
+           p.certainty::text AS certainty, p.notes_md, p.owner_label, o.slug AS owner_slug, o.name AS owner_entity_name, o.type::text AS owner_type
+    FROM provenance p
+    LEFT JOIN entity_index o ON (o.type, o.id) = (CASE WHEN p.owner_artist_id IS NOT NULL THEN 'artist' WHEN p.owner_person_id IS NOT NULL THEN 'person'
+                                                       WHEN p.owner_institution_id IS NOT NULL THEN 'institution' WHEN p.owner_place_id IS NOT NULL THEN 'place' END::entity_type,
+                                                  coalesce(p.owner_artist_id, p.owner_person_id, p.owner_institution_id, p.owner_place_id))
+    WHERE p.artwork_id = $1 AND p.alternative_to IS NOT NULL ORDER BY p.position`, [artworkId]);
+  const by = new Map();
+  for (const r of rows) by.set(r.alternative_to, [...(by.get(r.alternative_to) || []), r]);
+  return by;
+}
+
+// choices: the artwork's main steps [{id, label}] — for "another reading of"
+function form({ action, step = {}, submit, choices = [] }) {
   const v = (k) => step[k] ?? '';
   return html`<form method="post" action="${action}" class="form provenance-form">
     <select id="pv-owner-type" hidden><option data-object-types="${OWNER_TYPES.join(',')}" selected></option></select>
@@ -364,6 +404,15 @@ function form({ action, step = {}, submit }) {
           ${NUMBER_KINDS.map(([k, label]) => html`<option value="${k}"${k === (v(`number_kind_${i + 1}`) || 'lot') ? ' selected' : ''}>${label}</option>`)}</select>
         <input name="number_${i + 1}" value="${v(`number_${i + 1}`)}" placeholder="e.g. 107 · 4317 · EK 5363" aria-label="number ${i + 1}"></div>`)}
       <div class="hint">Lot, dealer's stock number, “Entartete Kunst”, ERR, Munich Central Collecting Point, Linz, Alt-Aussee — found again under Provenance numbers.</div></div>
+    <div class="row">
+      <div class="field"><label for="pv-exchanged">Exchanged for</label><input id="pv-exchanged" name="exchanged_for" value="${v('exchanged_for')}" placeholder="an artwork of ours …" autocomplete="off" data-lookup="artwork">
+        <input name="exchanged_for_text" value="${v('exchanged_for_text')}" placeholder="… or in words: a Florentine tondo" aria-label="exchanged for, in words">
+        <div class="hint">What the holder gave for it (method exchange; with a price for a part exchange).</div></div>
+      <div class="field"><label for="pv-alt">Another reading of</label><select id="pv-alt" name="alternative_to">
+          <option value="">— no: a step of the provenance</option>
+          ${choices.filter((c) => String(c.id) !== String(step.id || '')).map((c) => html`<option value="${c.id}"${String(c.id) === String(v('alternative_to')) ? ' selected' : ''}>${c.label}</option>`)}</select>
+        <div class="hint">When sources contradict each other: this step is another source's version of the one chosen — shown beside it, with its own sources, left out of the chain and the map.</div></div>
+    </div>
     <div class="field"><label for="pv-notes">Notes</label><textarea class="md" id="pv-notes" name="notes_md" rows="2">${v('notes_md')}</textarea></div>
     <div class="field"><label for="pv-src">Sources</label><textarea id="pv-src" name="sources" rows="2">${(step.sources || []).join('\n')}</textarea><div class="hint">One per line.</div></div>
     <div class="actions"><button>${submit}</button></div></form>`;
@@ -379,7 +428,8 @@ function ownerCell(s) {
   const co = (s.co_owners || []).map((c) => html` and ${one(c.slug, c.type, c.name)}`);
   return html`${s.role === 'estate' ? 'Estate of ' : ''}${s.owner_slug ? one(s.owner_slug, s.owner_type, s.owner_entity_name) : s.owner_label}${s.flag ? html` <span class="tag flagged" title="Provenance flag: ${s.flag}">⚑ flagged</span>` : ''}${co}
     ${s.owner_slug && s.owner_label ? html` <span class="muted">(${s.owner_label})</span>` : ''}
-    ${s.role && s.role !== 'owner' && s.role !== 'estate' ? html` <span class="tag">${s.role}</span>` : ''}${s.not_sold ? html` <span class="tag">not sold</span>` : ''}${s.method === 'theft' ? html` <span class="tag flagged">${s.ended ? 'stolen — recovered' : 'stolen'}</span>` : ''}`;
+    ${s.role === 'possessor' ? html` <span class="tag flagged" title="held without good title — the owner keeps the title">possessor, without title</span>`
+      : s.role && s.role !== 'owner' && s.role !== 'estate' ? html` <span class="tag">${s.role}</span>` : ''}${s.not_sold ? html` <span class="tag">not sold</span>` : ''}${s.method === 'theft' ? html` <span class="tag flagged">${s.ended ? 'stolen — recovered' : 'stolen'}</span>` : ''}`;
 }
 // Holders between 30 January 1933 and 8 May 1945 (or flagged): where to look them up. Lost Art takes the name in
 // the link; Proveana (behind a bot check) and the ERR database are searched on their own pages — the name is shown.
@@ -445,7 +495,13 @@ function gapRow(g) {
     ${g.candidates.length ? html`<span class="muted">Undated, possibly then: ${g.candidates.join(', ')}.</span>` : ''}</td></tr></tbody>`;
 }
 
-function section({ e, steps, names, cites = {}, marker = null, back = '', gaps = null }) {
+// the main steps as choices for "another reading of" — numbered as in the table
+function stepChoices(steps) {
+  let n = 0;
+  return steps.filter((s) => s.kind === 'step').map((s) => { n += 1; return { id: s.id, label: `${n}. ${s.owner_slug ? s.owner_entity_name : s.owner_label || s.label || ''} ${s.acquired_label || ''}`.trim() }; });
+}
+
+function section({ e, steps, names, cites = {}, marker = null, back = '', gaps = null, alternatives = new Map() }) {
   const stored = steps.filter((s) => s.kind === 'step');
   let n = 0;
   return html`<h2 id="provenance">Provenance</h2>
@@ -458,6 +514,7 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
       ${i > 0 ? html`<tr class="transfer muted small"><td></td><td></td><td colspan="6">${s.kind === 'loan' ? '⇢ lent'
         // custody (074): deposits, loans, consignments, auctions — beside the ownership, which goes on
         : s.kind === 'step' && s.role === 'event' ? '• an event — no one took it over'
+        : s.kind === 'step' && s.role === 'possessor' ? '⚠ taken from its owner — held without title; the ownership goes on'
         : s.kind === 'step' && !s.in_chain ? '⇢ held alongside the owner (the ownership goes on)'
         : html`${s.direct ? '↓ passed on directly' : '⋮ not documented as direct'}${s.via ? html` · via ${s.via}` : ''}`}</td></tr>` : ''}
       <tr><td class="drag-cell">${!implied && stored.length > 1 ? html`<button type="button" class="drag-handle" title="Drag to reorder (or focus and use ↑ ↓)" aria-label="Move step ${n}: drag, or arrow keys">⠿</button>` : ''}</td>
@@ -467,6 +524,7 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
           ${priceText(s) ? html`<div class="small">${priceText(s)}</div>` : ''}
           ${s.label ? html`<div class="muted small">${s.label}</div>` : ''}
           ${s.event ? html`<div class="small">at <a href="/events/${s.event.slug}">${s.event.name}</a></div>` : ''}
+          ${s.exchanged_for ? html`<div class="small">exchanged for ${s.exchanged_for.slug ? html`<a href="/artworks/${s.exchanged_for.slug}">${s.exchanged_for.title}</a>` : ''}${s.exchanged_for.slug && s.exchanged_for.text ? ' — ' : ''}${s.exchanged_for.text || ''}</div>` : ''}
           ${(s.step_numbers || []).length ? html`<div class="small">${s.step_numbers.map((n, i) => html`${i ? ' · ' : ''}${n.kind} <a href="/provenance/numbers?q=${encodeURIComponent(n.number)}">${n.number}</a>`)}</div>` : ''}</td>
         <td>${s.location_slug ? html`<a href="/places/${s.location_slug}">${s.location_name}</a>` : ''}${(s.further_places || []).map((pl) => html` → <a href="/places/${pl.slug}">${pl.name}</a>${pl.period_label ? html` <span class="muted small">(${pl.period_label})</span>` : ''}`)}</td>
         <td>${s.period_label || ''}${END_BASIS[s.end_basis] ? html` <span class="tag ${s.end_basis}">${END_BASIS[s.end_basis]}</span>` : ''}
@@ -475,12 +533,18 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
           ${s.notes_md ? html`<div class="md small">${raw(renderMarkdown(s.notes_md, { names }))}</div>` : ''}</td>
         <td>${!implied && marker ? marker(cites[s.id], { provenance: s.id, label: `step ${n} (${s.owner_slug ? s.owner_name : s.owner_label})` }, back) : ''}</td>
         <td class="nowrap">${implied ? '' : html`<a href="/provenance/${s.id}/edit">edit</a>`}</td></tr></tbody>
+      ${(alternatives.get(s.id) || []).map((a) => html`<tbody class="alternative"><tr><td></td><td class="muted">↳</td>
+        <td colspan="4"><span class="tag">another reading</span> ${ownerCell(a)} — ${[methodLabel(a.method) !== 'unknown' && methodLabel(a.method), [a.acquired_label, a.ended_label].filter(Boolean).join('–')].filter(Boolean).join(', ') || 'undated'}
+          ${a.certainty !== 'attested' ? html` <span class="muted">· ${a.certainty}</span>` : ''}
+          ${a.label ? html`<div class="muted small">${a.label}</div>` : ''}${a.notes_md ? html`<div class="md small">${raw(renderMarkdown(a.notes_md, { names }))}</div>` : ''}</td>
+        <td>${marker ? marker(cites[a.id], { provenance: a.id, label: `another reading of step ${n}` }, back) : ''}</td>
+        <td class="nowrap"><a href="/provenance/${a.id}/edit">edit</a></td></tr></tbody>`)}
       ${(gaps || []).filter((g) => g.kind === 'gap' && (g.show_after ?? g.before_position) === s.position).map(gapRow)}`;
     })}</table></div>
       ${stored.length > 1 ? html`<p class="muted small">Drag ⠿ to change the order — the periods are recomputed.</p>` : ''}
       ${research(steps)}`
     : html`<p class="muted">None yet. The owners in order, as the sources record them: when each acquired the work and how.</p>`}
-    <details><summary><b>+ Add provenance step</b></summary>${form({ action: `/artworks/${e.slug}/provenance`, submit: 'Add' })}</details>`;
+    <details><summary><b>+ Add provenance step</b></summary>${form({ action: `/artworks/${e.slug}/provenance`, submit: 'Add', choices: stepChoices(steps) })}</details>`;
 }
 
-module.exports = { ProvenanceError, METHODS, ROLES, NUMBER_KINDS, saveExtras, coverage, coverageBar, addCommission, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section, saveCoOwners, priceText };
+module.exports = { ProvenanceError, METHODS, ROLES, NUMBER_KINDS, saveExtras, coverage, coverageBar, readAlternatives, stepChoices, addCommission, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section, saveCoOwners, priceText };

@@ -362,7 +362,21 @@ const EXTRAS = {
                 FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', n.kind, 'label', k.label, 'number', n.number) ORDER BY n.position), '[]')
                 FROM provenance_numbers n JOIN provenance_number_kinds k ON k.code = n.kind WHERE n.provenance_id = p.id) AS numbers,
-             (SELECT jsonb_build_object('slug', ev.slug, 'name', ev.name) FROM provenance pv JOIN events ev ON ev.id = pv.event_id WHERE pv.id = p.id) AS event
+             (SELECT jsonb_build_object('slug', ev.slug, 'name', ev.name) FROM provenance pv JOIN events ev ON ev.id = pv.event_id WHERE pv.id = p.id) AS event,
+             -- 084: what was given in exchange; other sources' readings of this step (not part of the chain)
+             (SELECT CASE WHEN pv.exchanged_for_artwork_id IS NOT NULL OR pv.exchanged_for_text IS NOT NULL THEN jsonb_build_object(
+                       'artwork', (SELECT jsonb_build_object('slug', x.slug, 'title', x.title) FROM artworks x WHERE x.id = pv.exchanged_for_artwork_id),
+                       'text', pv.exchanged_for_text) END FROM provenance pv WHERE pv.id = p.id) AS exchanged_for,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('_prov_id', a.id,
+                       'owner', CASE WHEN o.id IS NOT NULL THEN jsonb_build_object('type', o.type, 'slug', o.slug, 'name', o.name) END,
+                       'owner_label', a.owner_label, 'role', a.role, 'method', a.method,
+                       'acquired', range_json(a.acquired, a.acquired_label), 'ended', range_json(a.ended, a.ended_label),
+                       'label', a.label, 'certainty', a.certainty, 'notes_md', a.notes_md) ORDER BY a.position), '[]')
+                FROM provenance a
+                LEFT JOIN entity_index o ON (o.type, o.id) = (CASE WHEN a.owner_artist_id IS NOT NULL THEN 'artist' WHEN a.owner_person_id IS NOT NULL THEN 'person'
+                                                                   WHEN a.owner_institution_id IS NOT NULL THEN 'institution' WHEN a.owner_place_id IS NOT NULL THEN 'place' END::entity_type,
+                                                              coalesce(a.owner_artist_id, a.owner_person_id, a.owner_institution_id, a.owner_place_id))
+                WHERE a.alternative_to = p.id) AS alternatives
       FROM provenance_chain p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
       WHERE p.artwork_id = $1 ORDER BY p.position`, [id])).rows,
   }),
@@ -530,10 +544,10 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     ]);
     // [[links]] show the linked entries' names: looked up for exactly the links in these texts
     const steps = extras.provenance || [];
-    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md)]),
+    const env = { names: await linkNames(apiPool, [...e.md.map((f) => entity[f]), ...rels.map((r) => r.notes_md), ...steps.map((p) => p.notes_md), ...steps.flatMap((p) => (p.alternatives || []).map((a) => a.notes_md))]),
       used: new Set(), cited: new Set() };
     const relationships = rels.map((x) => renderMd(x, ['notes_md'], env));
-    steps.forEach((p) => renderMd(p, ['notes_md'], env));
+    steps.forEach((p) => { renderMd(p, ['notes_md'], env); (p.alternatives || []).forEach((a) => renderMd(a, ['notes_md'], env)); });
     const body = nameCountry(shapeNames(renderMd(entity, e.md, env), e.name));
     if (mentionedIn) body.mentioned_in = mentionedIn;
     // the glossary terms its texts link, with their short definitions — for tooltips without further requests
@@ -557,7 +571,8 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       WHERE c.pending IS NULL AND ((c.entity_type = $1 AND c.entity_id = $2) OR c.relationship_id = ANY ($3::bigint[])
                                    OR c.provenance_id = ANY ($4::bigint[]) OR c.number_id = ANY ($5::bigint[]))
       ORDER BY c.reliability DESC NULLS LAST, c.id`,
-    [e.type, id, rels.map((r) => r._rel_id).filter(Boolean), [...rels.map((r) => r._prov_id), ...steps.map((p) => p._prov_id)].filter(Boolean),
+    [e.type, id, rels.map((r) => r._rel_id).filter(Boolean),
+      [...rels.map((r) => r._prov_id), ...steps.map((p) => p._prov_id), ...steps.flatMap((p) => (p.alternatives || []).map((a) => a._prov_id))].filter(Boolean),
       (body.numbers || []).map((n) => n._num_id)]);
     const shape = (c) => {
       const out = { kind: c.wikidata_item ? 'wikidata' : c.source_id ? 'source' : 'text', reliability: c.reliability };
@@ -579,7 +594,11 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     const byRel = group((c) => c.relationship_id)(citeRows.filter((c) => c.relationship_id !== null));
     const byProv = group((c) => c.provenance_id)(citeRows.filter((c) => c.provenance_id !== null));
     relationships.forEach((r) => { r.sources = (r._rel_id ? byRel[r._rel_id] : r._prov_id ? byProv[r._prov_id] : null) || []; delete r._rel_id; delete r._prov_id; });
-    steps.forEach((p) => { p.sources = byProv[p._prov_id] || []; delete p._prov_id; });
+    steps.forEach((p) => {
+      p.sources = byProv[p._prov_id] || [];
+      delete p._prov_id;
+      (p.alternatives || []).forEach((a) => { a.sources = byProv[a._prov_id] || []; delete a._prov_id; });   // 084
+    });
     const byNum = group((c) => c.number_id)(citeRows.filter((c) => c.number_id !== null));
     (body.numbers || []).forEach((n) => { n.sources = byNum[n._num_id] || []; delete n._num_id; });  // further numbers (081)
     body.sources = byField;

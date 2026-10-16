@@ -276,6 +276,15 @@ The detail of an artwork has **`provenance`**: its holders in order, as the sour
 `[{kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,
 acquired, ended, method, direct, label, certainty, price: {amount, currency, note} | null, place: {slug, name} | null,
 period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
+- **As it happened (083/084):** `role: "possessor"` — held **without good title**: seized, looted, stolen, or received
+  from those who took it (the ERR, Göring, a dealer who got it from him, a thief). Like custody it stands beside the
+  ownership (`in_chain: false`): the dispossessed owner's period runs on until the restitution, and the graph has
+  "held by … — possessor, held without title", never "owned by". Show it as what it was ("taken from its owner").
+  `exchanged_for`: `{artwork: {slug, title} | null, text}` or null — what the holder gave for it (a derived edge
+  `exchanged_for` links the two artworks). `alternatives`: another source's reading of this step, when the sources
+  contradict each other and it can't be resolved — `[{owner, owner_label, role, method, acquired, ended, label,
+  certainty, notes_html, sources}]`; show them beside the step ("another reading: …"); they are not part of the
+  chain, the periods, the coverage or the map.
 - **The cases of 076/077:** `role` also `publisher` (holds an edition — of the chain), `foundry`, `trustee` (in trust
   or as security — custody) and `event` (no holder: a claim, a settlement between others, a collection dissolved; the
   step's `label` describes it, `owner` may name a party; `in_chain: false`, no `owned_by`, not on the map; without an

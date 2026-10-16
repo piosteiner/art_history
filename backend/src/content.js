@@ -82,8 +82,9 @@ const NUMBER_KEYS = ['number', 'institution', 'source', 'label', 'sources'];
 // 063: role (owner · dealer · agent · estate · custodian), co_owners ["person/gertrude-stein", …], price {amount,
 // currency, note}.
 const PROVENANCE_KEYS = ['owner', 'owner_label', 'co_owners', 'role', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
-  'place', 'label', 'certainty', 'price', 'notes_md', 'sources', 'not_sold', 'further_places', 'numbers', 'event'];
-const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian', 'publisher', 'foundry', 'trustee', 'event'];
+  'place', 'label', 'certainty', 'price', 'notes_md', 'sources', 'not_sold', 'further_places', 'numbers', 'event',
+  'alternative_of', 'exchanged_for', 'exchanged_for_text'];  // 084: alternative_of = the index of the step it is another reading of
+const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian', 'publisher', 'foundry', 'trustee', 'possessor', 'event'];
 const ACQUISITION_METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
   'confiscation', 'forced_sale', 'restitution', 'settlement', 'transfer', 'theft', 'claim', 'dissolution', 'unknown'];
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
@@ -218,6 +219,13 @@ function toRow(doc, fields) {
         }
         if (st.numbers !== undefined && (!Array.isArray(st.numbers) || st.numbers.some((x) => !x || !x.kind || !x.number))) errors.push(`${at}.numbers: a list of {kind, number}`);
         if (st.event !== undefined && !SLUG.test(String(st.event))) errors.push(`${at}.event: an event slug`);
+        if (st.exchanged_for !== undefined && !SLUG.test(String(st.exchanged_for))) errors.push(`${at}.exchanged_for: an artwork slug`);
+        if (st.alternative_of !== undefined) {
+          const main = doc.provenance[st.alternative_of];
+          if (!Number.isInteger(st.alternative_of) || st.alternative_of === i || !main || main.alternative_of !== undefined) {
+            errors.push(`${at}.alternative_of: the index (from 0) of another step of this list that is not itself an alternative`);
+          }
+        }
         if (st.owner && !/^(artist|person|institution|place)\/[a-z0-9]+(-[a-z0-9]+)*$/.test(st.owner)) errors.push(`${at}.owner: must look like person/michel-monet`);
         if (st.method !== undefined && !ACQUISITION_METHODS.includes(st.method)) errors.push(`${at}.method: one of ${ACQUISITION_METHODS.join(', ')}`);
         if (st.certainty !== undefined && !['attested', 'probable', 'possible', 'disputed'].includes(st.certainty)) errors.push(`${at}.certainty: attested, probable, possible or disputed`);
@@ -401,7 +409,8 @@ async function readProvenance(db, artworkId) {
     SELECT o.type::text || '/' || o.slug AS owner, p.owner_label, p.acquired::text AS acquired, p.acquired_label,
            p.ended::text AS ended, p.ended_label, p.method::text AS method, p.direct, l.slug AS place, p.label,
            p.certainty::text AS certainty, p.notes_md, p.metadata, citation_docs(NULL, p.id) AS sources,
-           p.role::text AS role, p.price, p.price_currency, p.price_note, p.not_sold,
+           p.role::text AS role, p.price, p.price_currency, p.price_note, p.not_sold, p.id AS _id, p.alternative_to,
+           (SELECT slug FROM artworks WHERE id = p.exchanged_for_artwork_id) AS exchanged_for, p.exchanged_for_text,
            (SELECT slug FROM events WHERE id = p.event_id) AS event,
            (SELECT jsonb_agg(jsonb_build_object('place', l.slug, 'period', x.period::text, 'period_label', x.period_label) ORDER BY x.position)
               FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
@@ -443,6 +452,9 @@ async function readProvenance(db, artworkId) {
     if (r.price !== null) st.price = { amount: Number(r.price), currency: r.price_currency, ...(r.price_note ? { note: r.price_note } : {}) };
     if (r.notes_md) st.notes_md = r.notes_md;
     if (r.sources) st.sources = r.sources;  // citations (050)
+    if (r.exchanged_for) st.exchanged_for = r.exchanged_for;
+    if (r.exchanged_for_text) st.exchanged_for_text = r.exchanged_for_text;
+    if (r.alternative_to) st.alternative_of = rows.findIndex((x) => x._id === r.alternative_to);   // 084: by index in this list
     return st;
   });
 }

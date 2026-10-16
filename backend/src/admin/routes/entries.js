@@ -446,6 +446,7 @@ router.get('/:plural/:slug', async (req, res) => {
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
   const provSteps = t.type === 'artwork' ? await provenance.read(adminPool, e.id) : [];
+  const provAlternatives = t.type === 'artwork' ? await provenance.readAlternatives(adminPool, e.id) : new Map();   // 084
   const nums = t.type === 'artwork' ? await numbers.list(adminPool, e.id) : [];
   const cites = await citations.forEntity(adminPool, t.type, e.id);
   const citable = (await citations.citableFields(adminPool))[t.type] || {};
@@ -547,7 +548,8 @@ router.get('/:plural/:slug', async (req, res) => {
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? numbers.listSection({ e, numbers: nums, cites: await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap, gaps: await provenance.coverage(adminPool, e.id),
-        cites: await citations.forProvenance(adminPool, provSteps.filter((s) => s.id).map((s) => s.id)),
+        alternatives: provAlternatives,
+        cites: await citations.forProvenance(adminPool, [...provSteps.filter((s) => s.id).map((s) => s.id), ...[...provAlternatives.values()].flat().map((a) => a.id)]),
         marker: (c, target, back) => citations.marker(c, target, back, { recent }), back: `${here}#provenance` }) : ''}
       <h2 id="relationships">Relationships</h2>
       ${await (async () => {
@@ -700,7 +702,7 @@ router.post('/:plural/:slug/provenance', async (req, res) => {
       title: 'Add provenance step', status: 422,
       flash: { kind: 'error', text: err instanceof provenance.ProvenanceError ? err.message : friendly(err) },
       body: html`<h1>Add provenance step</h1><p><a href="/${t.folder}/${e.slug}#provenance">← ${e.name}</a></p>
-        ${provenance.form({ action: `/${t.folder}/${e.slug}/provenance`, step: stepFromBody(req.body), submit: 'Add' })}`,
+        ${provenance.form({ action: `/${t.folder}/${e.slug}/provenance`, step: stepFromBody(req.body), submit: 'Add', choices: provenance.stepChoices(await provenance.read(adminPool, e.id)) })}`,
     });
   }
   res.redirect(303, `/${t.folder}/${e.slug}?done=prov-added#provenance`);

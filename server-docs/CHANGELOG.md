@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Provenance as it happened: looters hold without title; contradicting readings; exchanged for (migrations 083/084)
+- **What:** 083: role `possessor`. 084: `provenance.alternative_to` (another source's reading of a step, trigger
+  `provenance_alternative_valid`), `exchanged_for_artwork_id` / `exchanged_for_text`; `provenance_periods` leaves
+  alternatives out; `edges`: possessors `held_by` "possessor — held without title" (no `owned_by`), derived
+  `exchanged_for`; checks: alternatives not counted, new `provenance_seizure_as_owner`. Admin: role, "Another reading
+  of", "Exchanged for" in the step form; "⚠ taken from its owner — held without title" and "another reading" lines in
+  the table; reordering keeps alternatives outside the order. API: `alternatives` (with sources), `exchanged_for`.
+  YAML: `alternative_of` (index), `exchanged_for`, `exchanged_for_text`, role `possessor`. E2E `provenance-possession.spec.js`.
+- **Why:** owner, on La Petite Irène: seizures must not read as ownership ("I don't want to appear to be trivializing
+  looting and crimes"); the Kunsthaus states a contradiction it can't resolve; "exchanged for" wanted.
+- **Revert:** `git revert`, deploy; then the views from 082 (pg_get_viewdef before 084), drop the trigger, function,
+  columns, the `exchanged_for` vocabulary row (083's enum value stays, unused).
+
 ### Provenance of Renoir, "La Petite Irène" entered; events in a provenance are moments (migration 082)
 - **What:** Data (production, one admin transaction as user pio, script kept out of the repo): the 15 steps of the
   Kunsthaus Zürich's provenance of BU 0090 (collection.kunsthaus.ch item 586963, research status 22 July 2025) —

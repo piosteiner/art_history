@@ -37,6 +37,7 @@ const CHECKS = {
   citation_outdated: { title: 'Changed since cited', fix: 'The value changed after the source was cited: check the source — if it still says so, “Yes, it still does” in its sources; if not, remove the citation or cite the source of the new value.' },
   unlinked_term: { title: 'Type or material that is no glossary term', fix: 'Sort these out on “Types and materials to sort out” (Quality → batch pages): replace by terms, move a phrase to the medium, or make it a term.' },
   provenance_stolen: { title: 'Stolen, not recovered', fix: 'Report it (Art Loss Register, Interpol Stolen Works of Art, Lost Art) — and when it is found, record the end of the theft step (the recovery).' },
+  provenance_seizure_as_owner: { title: 'A seizure recorded as ownership', fix: 'Whoever seized, looted or stole a work held it without good title — give the step the role “possessor”; the dispossessed owner’s ownership then goes on until the restitution.' },
   flagged_holder: { title: 'Flagged holders in the provenance', fix: 'A holder on your list (“Provenance flag” on the person / institution): check this step in the provenance research databases (links under the provenance) — and record what you find, or Mark as OK.' },
   weakly_sourced: { title: 'Facts without a good source', fix: 'Cite the museum, a catalogue raisonné or the literature for these fields (the W / ? markers on the entry’s page). Wikidata is a start, not a source.' },
   no_wikidata_id: { title: 'No Wikidata id', fix: 'Use "Wikidata…" on the entry to find and link it.' },

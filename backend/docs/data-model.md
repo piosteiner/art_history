@@ -530,3 +530,12 @@ life (creation → today) minus documented minus presumed = the gaps, with multi
 `unnest`); each gap with the holders before/after and the undated candidates — and `provenance_completeness` (days
 documented / presumed / gap, gap days in 1933–1945, documented %, has_provenance). Admin: bar + gap lines on the
 artwork page, `/quality/provenance-gaps`.
+
+## Provenance as it happened (migrations 083/084)
+- Role `possessor` (beside the chain): held without good title — seized, looted, stolen, received from those who took
+  it. The dispossessed owner's ownership continues until the restitution. Check `provenance_seizure_as_owner`: a
+  confiscation or theft recorded as an owner of the chain.
+- `provenance.alternative_to` (+ trigger: same artwork, one level): another source's reading of a step —
+  `provenance_periods` leaves alternatives out, so does everything built on it. Main steps keep positions 0…n, the
+  alternatives follow (outside the drag order).
+- `exchanged_for_artwork_id` / `exchanged_for_text`; derived edge `exchanged_for` (artwork → artwork).
