@@ -546,3 +546,10 @@ and across tables (deferred constraint trigger `public_id_unique` — deferred b
 row before deleting the old one; the number goes with it). `public_id_history` remembers a deleted entry's number
 with its last slug; `entry_by_public_id()` resolves a number: the entry, else (a merge) where slug_history leads the
 old slug. In `entity_index`; exported in YAML as `public_id` (kept on import, the sequence moved past it).
+
+## Biography × provenance (migration 086)
+`provenance_inferences` (view): per direct handover between holders of the chain — `narrowed` (the giver's death
+falls into the acquisition window), `from_estate`, `travelled` (PostGIS distance > 100 km from every place the giver
+was then, and their stays — merged, without the uncertain first and last year of a stay given in years:
+`presence_core()` — cover the window). Checks: `holder_after_death`, `holder_before_birth`, `acquired_before_creation`,
+`created_where_artist_was_not` (errors), `provenance_date_narrowable` (info).

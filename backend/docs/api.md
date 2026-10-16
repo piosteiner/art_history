@@ -276,6 +276,12 @@ The detail of an artwork has **`provenance`**: its holders in order, as the sour
 `[{kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,
 acquired, ended, method, direct, label, certainty, price: {amount, currency, note} | null, place: {slug, name} | null,
 period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
+- **What the dates imply (086):** `inferences: [{kind, text, period, km}]` per step — conclusions drawn from the
+  holders' lives and whereabouts, not recorded by a source; show them marked as derived (e.g. in italics):
+  `narrowed` (the giver died during this acquisition's window: "from Paul Gauguin during the artist's lifetime — by
+  8 May 1903 at the latest"; `period` = the narrowed window), `from_estate` (wholly after the giver's death),
+  `travelled` (the giver was demonstrably far away for the whole window: "Paul Gauguin was in Atuona then: the work
+  travelled to Paris, ≈ 14,393 km"; `km`). Only for handovers documented as direct, never for inheritances.
 - **As it happened (083/084):** `role: "possessor"` — held **without good title**: seized, looted, stolen, or received
   from those who took it (the ERR, Göring, a dealer who got it from him, a thief). Like custody it stands beside the
   ownership (`in_chain: false`): the dispossessed owner's period runs on until the restitution, and the graph has

@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Biography × provenance: conclusions from lives and whereabouts, contradictions as errors (migration 086)
+- **What:** view `provenance_inferences` (narrowed by a death, from the estate, travelled — PostGIS distances;
+  `presence_core()` drops the uncertain first/last year of a stay given in years), checks `holder_after_death`,
+  `holder_before_birth`, `acquired_before_creation`, `created_where_artist_was_not` (errors) and
+  `provenance_date_narrowable` (info). API `inferences` per provenance step; admin shows them as "derived". On
+  production: Tournesols, L'Offrande, Nature morte aux fleurs et à l'idole narrowed to before Gauguin's death
+  (8 May 1903); four works "travelled" from Gauguin in the South Seas to Paris; no contradictions. E2E
+  `provenance-inferences.spec.js`.
+- **Why:** owner: connect the artist's biography with the provenance (Gauguin was in the South Seas when Tournesols
+  was sold in Paris).
+- **Revert:** `git revert`, deploy; quality_issues_live from 085 (pg_get_viewdef before 086), `DROP VIEW
+  provenance_inferences; DROP FUNCTION presence_core(daterange);`.
+
 ### Public numbers: addresses /<type>/<number>/<slug> (migration 085)
 - **What:** `public_id` for every entry (one sequence across all types, from 100001; existing entries numbered in
   creation order — 496 on production), deferred uniqueness across tables, `public_id_history` + `entry_by_public_id()`

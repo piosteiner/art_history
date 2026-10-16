@@ -376,7 +376,10 @@ const EXTRAS = {
                 LEFT JOIN entity_index o ON (o.type, o.id) = (CASE WHEN a.owner_artist_id IS NOT NULL THEN 'artist' WHEN a.owner_person_id IS NOT NULL THEN 'person'
                                                                    WHEN a.owner_institution_id IS NOT NULL THEN 'institution' WHEN a.owner_place_id IS NOT NULL THEN 'place' END::entity_type,
                                                               coalesce(a.owner_artist_id, a.owner_person_id, a.owner_institution_id, a.owner_place_id))
-                WHERE a.alternative_to = p.id) AS alternatives
+                WHERE a.alternative_to = p.id) AS alternatives,
+             -- 086: what the dates and places imply for this step (biography × provenance)
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', i.kind, 'text', i.detail, 'period', range_json(i.period), 'km', i.km) ORDER BY i.kind), '[]')
+                FROM provenance_inferences i WHERE i.provenance_id = p.id) AS inferences
       FROM provenance_chain p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
       WHERE p.artwork_id = $1 ORDER BY p.position`, [id])).rows,
   }),
