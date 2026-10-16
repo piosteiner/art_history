@@ -227,6 +227,12 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .provenance-step.custody.possession .provenance-owner::before { background: var(--prov-d); width: 8px; height: 8px; left: calc(-2.6rem - 5px); }
 .provenance-step.possession .provenance-alongside { color: var(--prov-d); }
 .provenance-step.possession .tag:not(.tag-implied) { color: var(--prov-d); border-color: currentColor; }
+/* what the dates imply (API 086): derived, not a source's statement */
+.provenance-inference { font-size: .88rem; color: var(--muted); margin-top: .15rem; }
+.tag-derived { margin-left: 0; border-style: dotted; font-style: normal; cursor: help; }
+.popup-derived { display: inline-block; margin-top: .2rem; color: var(--muted); }
+.prov-km { font: 600 11px/1 var(--sans); padding: 3px 6px; border-radius: 9px; background: var(--surface); color: var(--text);
+  border: 1px dotted var(--c-provenance); white-space: nowrap; cursor: help; }
 /* another source's reading of a step (API 084) */
 .provenance-alt { margin: .35rem 0 .1rem; padding: .3rem .6rem; border: 1px dashed var(--line); border-radius: var(--radius); font-size: .9rem; }
 .provenance-alt-label { font-size: .8rem; color: var(--muted); font-style: italic; margin-right: .2rem; }

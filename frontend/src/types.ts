@@ -380,7 +380,15 @@ export interface ProvenanceStep {
   exchanged_for?: { artwork: { slug: string; title: string } | null; text: string | null } | null;
   /** API 084: other sources' readings of this step when they contradict each other — beside it, not part of the chain. */
   alternatives?: ProvenanceAlternative[];
+  /** API 086: what the holders' lives and whereabouts imply — derived, not stated by a source. */
+  inferences?: Inference[];
 }
+
+/**
+ * A conclusion from the holders' lives (API 086): `narrowed` (the giver died within the window: `period` = the narrowed
+ * window), `from_estate` (wholly after the giver's death), `travelled` (the giver was far away: `km`).
+ */
+export interface Inference { kind: 'narrowed' | 'from_estate' | 'travelled'; text: string; period: Stretch | null; km: number | null }
 
 /** Another source's reading of a provenance step (API 084). */
 export interface ProvenanceAlternative {
@@ -522,6 +530,8 @@ export interface ProvenanceStopProps extends ProvenanceMapStep {
   place_basis: 'recorded' | 'holder_seat' | 'created_in' | 'artist_residence' | 'artist_workplace';
   /** API 077: 0 at the step's place, 1, 2 … at its further places (`part_label`: when it was there). */
   part?: number; part_label?: string | null;
+  /** The step's `position` in the artwork's provenance (API 078), to match it with the detail's steps. */
+  position?: number;
 }
 /** From one placed step to the next; `between`: the steps passed over that have no place. */
 export interface ProvenanceSegmentProps {

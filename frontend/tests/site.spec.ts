@@ -1112,6 +1112,33 @@ test('a possessor’s page: works it held without title say so', async ({ page }
   await expect(irene.locator('.tag', { hasText: 'held, not owned' })).toHaveCount(0);
 });
 
+test('what the dates imply (086): derived lines under their step; the distance travelled labels the segment and the stop', async ({ page }) => {
+  const travelled = { kind: 'travelled', text: 'Hedwig Frieda Ullmann was in Frankfurt then: the work travelled to London, ≈ 640 km', period: null, km: 640 };
+  await patch(page, /\/v1\/artworks\/heiliger-sebastian$/, (b) => {
+    const steps = b.provenance as Record<string, unknown>[];
+    const kauffmann = steps.find((st) => st.position === 2)!;
+    kauffmann.inferences = [
+      { kind: 'narrowed', text: 'from Hedwig Frieda Ullmann during her lifetime — by 3 May 1935 at the latest', period: { label: null, from: '1933-01-01', to: '1935-05-03', from_year: 1933, to_year: 1935 }, km: null },
+      travelled,
+    ];
+  });
+  await page.goto('/artworks/heiliger-sebastian');
+  const step = page.locator('.provenance-step', { hasText: 'Arthur Kauffmann' }).first();
+  const derived = step.locator('.provenance-inference');
+  await expect(derived).toHaveCount(2);
+  await expect(derived.nth(0).locator('.tag-derived')).toHaveText('derived');
+  await expect(derived.nth(0).locator('i')).toHaveText(/by 3 May 1935 at the latest$/);
+  await expect(derived.nth(1)).toContainText('the work travelled to London, ≈ 640 km');
+  // the map: "≈ 640 km" on the segment into that step (Frankfurt → London), the inference in London's popup
+  const km = page.locator('.prov-km');
+  await expect(km).toHaveCount(1);
+  await expect(km).toHaveText('≈ 640 km');
+  await expect(km).toHaveAttribute('title', /^Derived: .*travelled to London/);
+  await page.locator('.prov-stop', { hasText: /^4$/ }).click();
+  await expect(page.locator('.maplibregl-popup .popup-derived')).toHaveCount(2);
+  await expect(page.locator('.maplibregl-popup .popup-derived', { hasText: 'travelled to London' })).toBeVisible();
+});
+
 const span = (from: string, to: string) => ({ label: null, from, to, from_year: Number(from.slice(0, 4)), to_year: Number(to.slice(0, 4)) });
 const seg = (kind: string, from: string, to: string, extra: Record<string, unknown> = {}) => ({ kind, period: span(from, to), in_1933_1945: false,
   before: null, after: null, candidates: [], before_position: null, after_position: null, ...extra });

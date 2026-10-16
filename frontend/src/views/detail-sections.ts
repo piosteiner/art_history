@@ -4,7 +4,7 @@ import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
 import type {
-  Citation, SourceHint, Category, CoverageSegment, Entity, EntryRef, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceStatus, ProvenanceStep, Relationship,
+  Citation, SourceHint, Category, CoverageSegment, Entity, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceStatus, ProvenanceStep, Relationship,
 } from '../types';
 import { cite } from '../cite';
 import { coverageBar, gapSides, gapText } from '../coverage';
@@ -68,6 +68,11 @@ function exchangedFor(s: ProvenanceStep): Html | null {
   if (!x || (!x.artwork && x.text && s.label?.toLowerCase().includes(x.text.toLowerCase()))) return null;
   return html`exchanged for ${x.artwork ? link('artwork', x.artwork.slug, x.artwork.title) : x.text ?? 'another work'}`;
 }
+
+/** What the holders' lives imply about the step (API 086): in italics, tagged "derived" — no source says it. */
+export const inferenceLine = (i: Inference) => html`<div class="provenance-inference inference-${i.kind}">
+  <span class="tag tag-derived" title="Derived from the holders' lives and whereabouts — not stated by a source">derived</span> <i>${i.text}</i>
+</div>`;
 
 /** Another source's reading of the step (API 084): right under it, not part of the chain, the periods or the map. */
 function alternative(a: ProvenanceAlternative, bibliography?: Record<string, SourceHint>): Html {
@@ -177,6 +182,7 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
       <div class="provenance-owner">${custody ? html`<span class="provenance-alongside" title="${stolen ? 'Stolen: the owner kept the title' : possessor ? 'Taken from its owner, or received from those who took it — held without title' : 'Held alongside the owner, did not own it'}">${prefix}</span> ` : ''}${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.not_sold ? html` <span class="tag tag-not-sold" title="Bought in, withdrawn or returned: the owner kept it">not sold</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
       ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
       ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
+      ${(s.inferences ?? []).map(inferenceLine)}
       ${(s.alternatives ?? []).map((a) => alternative(a, bibliography))}
     </li>`;
   }

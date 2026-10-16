@@ -13,7 +13,7 @@ import {
   clearProvenanceMarkers, drawProvenance, holderText, placedProvenance, provenanceLayers, provenanceStops, stepsAtPlace, withoutReplaced,
 } from './map-provenance';
 import type {
-  EntityMap, EntityType, EventMapProps, EventsMap, Feature, LineStringGeometry, PlacesMap, PresenceMap,
+  EntityMap, EntityType, EventMapProps, EventsMap, Feature, Inference, LineStringGeometry, PlacesMap, PresenceMap,
   ProvenanceMap, ProvenanceSegmentProps, SiteProps, SitesMap, StopFeature,
 } from './types';
 
@@ -105,10 +105,10 @@ export function showEntity(map: MapLibre, fc: EntityMap, alsoFit: [number, numbe
 }
 
 /** An artwork's own map: its provenance (see drawProvenance) in place of the route; other features (associations …) as usual. */
-export function showProvenance(map: MapLibre, fc: EntityMap) {
+export function showProvenance(map: MapLibre, fc: EntityMap, inferences?: Map<number, Inference[]>) {
   const prov = fc.provenance!;
   const view = showEntity(map, withoutReplaced(fc), provenanceStops(prov).map((f) => f.geometry.coordinates));
-  whenReady(map, () => drawProvenance(map, 'prov', [{ prov, color: COLORS.provenance }]));
+  whenReady(map, () => drawProvenance(map, 'prov', [{ prov, color: COLORS.provenance, inferences }]));
   return view;
 }
 

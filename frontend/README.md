@@ -146,6 +146,11 @@ page's own link.
   label already says); the artwork's own outgoing `exchanged_for` relationship isn't repeated below. `alternatives` →
   a dashed box under the step: "Another reading (sources disagree): <holder> <role> <acquired – ended> <certainty>
   <sources>", method and label, notes. The graph's derived `exchanged_for` edge needs nothing here.
+- What the dates imply (API 086): each of a step's `inferences` is a line under it, in italics after a dotted
+  "derived" tag (tooltip: not stated by a source) — `narrowed` ("by 8 May 1903 at the latest"), `from_estate`,
+  `travelled`. On the artwork's map the `travelled` distance labels the segment into that step ("≈ 14,393 km", matched
+  by the stops' `position`; no label when the previous place isn't on the map, as for a creation in Atuona) and every
+  inference stands in that stop's popup. The narrowed window doesn't change the coverage bar yet (backend wish).
 - Coverage (API 078, `src/coverage.ts`): above the provenance a bar from the creation until today — documented solid,
   presumed hatched, gaps open with a red edge (1933–1945 ones filled pale red), 1933–1945 shaded behind; each stretch's
   tooltip names the holders before / after and the candidates; caption "45% documented, gaps 60 years, 11 of them in
@@ -233,6 +238,9 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
 ## Wishes for the backend
 - **Maps and networks by number (085):** `/v1/map/<plural>/<number>` and `/v1/graph/<plural>/<number>` answer 404, so an
   entry opened by its number loads its map only after the entry (to learn the slug) — one round trip later.
+- **Coverage from narrowed windows (086):** a `narrowed` inference ("by 8 May 1903 at the latest") could shorten its
+  step's stretch on the coverage bar, but the bar's `segments` don't say which step they belong to — so it is best done
+  in `provenance_coverage` itself.
 - **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise): `GET /v1/encounters?from=&to=&types=`
   = a self-join of presence links on `place_id` with `a.period && b.period` (daterange overlap, GiST index) and
   `a.period * b.period` as the overlap; today the browser does this over the full presence list.

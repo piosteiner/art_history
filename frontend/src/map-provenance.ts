@@ -6,7 +6,7 @@ import { html, link, type Html } from './html';
 import { gapSides, gapText, years } from './coverage';
 import { addArrows, once, overlaps, removeLayers, setData } from './map-core';
 import type {
-  EntityMap, Feature, LineStringGeometry, PointGeometry, ProvenanceMap, ProvenanceMapStep, ProvenanceSegmentProps,
+  EntityMap, Feature, Inference, LineStringGeometry, PointGeometry, ProvenanceMap, ProvenanceMapStep, ProvenanceSegmentProps,
   ProvenanceStopProps, StopProps,
 } from './types';
 
@@ -39,8 +39,8 @@ export const probable = (s: Pick<ProvenanceStopProps, 'place_basis'>) => s.place
 
 const STOP_ROLE: Record<string, string> = { dealer: 'dealer', agent: 'agent', custodian: 'custodian', publisher: 'publisher', foundry: 'foundry', trustee: 'trustee', possessor: 'without title' };
 
-/** One step in a place's popup: holder, role, how and when, how we know the place. */
-function stepRow(s: ProvenanceStopProps) {
+/** One step in a place's popup: holder, role, how and when, how we know the place; what its dates imply (API 086). */
+function stepRow(s: ProvenanceStopProps, inferences: Inference[] = []) {
   const made = s.kind === 'creation';
   const moved = (s.part ?? 0) > 0; // a further place of the step (API 077): when it was here
   const how = moved ? s.part_label ?? ''
@@ -54,6 +54,7 @@ function stepRow(s: ProvenanceStopProps) {
     ${how ? html`<br><span class="muted">${how}</span>` : ''}
     ${s.place_basis === 'holder_seat' ? html`<br><span class="muted">at the institution's seat</span>` : ''}
     ${!made && probable(s) ? html`<br><span class="muted">probably: where the artist ${s.place_basis === 'artist_workplace' ? 'worked' : 'lived'}</span>` : ''}
+    ${(s.part ?? 0) === 0 ? inferences.map((i) => html`<br><span class="popup-derived"><span class="tag tag-derived">derived</span> <i>${i.text}</i></span>`) : ''}
   </li>`;
 }
 
@@ -71,8 +72,11 @@ export const withoutReplaced = (fc: EntityMap): EntityMap => ({
 export const provenanceStops = (prov: ProvenanceMap) =>
   prov.features.filter((f): f is Feature<PointGeometry, ProvenanceStopProps> => f.properties.layer === 'provenance_stop');
 
-/** One artwork's provenance to draw; `entity` names it in the popups when several are on the map. */
-interface ProvenanceDrawing { prov: ProvenanceMap; color: string; entity?: EntityMap['entity'] }
+/**
+ * One artwork's provenance to draw; `entity` names it in the popups when several are on the map. `inferences`: what
+ * the dates imply per step `position` (API 086, from the artwork's detail) — the distance travelled labels its segment.
+ */
+interface ProvenanceDrawing { prov: ProvenanceMap; color: string; entity?: EntityMap['entity']; inferences?: Map<number, Inference[]> }
 interface DrawnSegment { seg: ProvenanceSegmentProps; from?: string; to?: string; color: string; entity?: EntityMap['entity'] }
 const drawnSegments = new WeakMap<MapLibre, Map<string, DrawnSegment[]>>(); // per map and layer prefix, for the line popups
 const provenanceMarkers = new WeakMap<MapLibre, Marker[]>();
@@ -94,7 +98,7 @@ export function stepsAtPlace(prov: ProvenanceMap, placeSlug: string, color: stri
   const label = stepRuns([...new Set(steps.map((st) => st.step))]);
   return html`<div class="popup-steps-block">${entityLine({ color, entity })}
     <span class="muted">${steps.length > 1 ? 'steps' : 'step'} ${label} of ${String(steps[0].steps)}</span>
-    <ol class="popup-list popup-steps">${steps.map(stepRow)}</ol></div>`;
+    <ol class="popup-list popup-steps">${steps.map((st) => stepRow(st))}</ol></div>`;
 }
 
 /**
@@ -161,6 +165,24 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
 
   // numbered stops as HTML markers (one per artwork and position): numbers need no map font, and they are focusable
   const markers = provenanceMarkers.get(map)!;
+  // a handover that crossed the world (API 086): "≈ 14,393 km" mid-segment, on the segment into that step
+  for (const it of items) {
+    if (!it.inferences?.size) continue;
+    const stops = provenanceStops(it.prov).map((f) => f.properties);
+    for (const f of it.prov.features) {
+      if (f.properties.layer !== 'provenance_segment' || f.properties.move) continue;
+      const to = f.properties.to_step;
+      const position = stops.find((st) => st.step === to && (st.part ?? 0) === 0)?.position;
+      const travelled = position === undefined ? undefined : it.inferences.get(position)?.find((i) => i.kind === 'travelled');
+      if (!travelled?.km) continue;
+      const [a, b] = [(f.geometry as LineStringGeometry).coordinates[0], (f.geometry as LineStringGeometry).coordinates.at(-1)!];
+      const el = document.createElement('div');
+      el.className = 'prov-km';
+      el.textContent = `≈ ${travelled.km.toLocaleString('en')} km`;
+      el.title = `Derived: ${travelled.text}`;
+      markers.push(new Marker({ element: el }).setLngLat([(a[0] + b[0]) / 2, (a[1] + b[1]) / 2]).addTo(map));
+    }
+  }
   // gaps between two stops (API 078): a "?" with the years mid-segment, red when it touches 1933–1945
   for (const it of items) {
     for (const f of it.prov.features) {
@@ -202,7 +224,7 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
         ${entityLine(it)}
         <strong>${link('place', first.place.slug, first.place.name)}</strong>
         <span class="muted">${steps.length > 1 ? 'steps' : 'step'} ${label} of ${String(first.steps)}</span>
-        <ol class="popup-list popup-steps">${steps.map(stepRow)}</ol>
+        <ol class="popup-list popup-steps">${steps.map((st) => stepRow(st, st.position === undefined ? [] : it.inferences?.get(st.position) ?? []))}</ol>
       </div>`.value);
       const at = group[0].geometry.coordinates as [number, number];
       const marker = new Marker({ element: el }).setLngLat(at);
