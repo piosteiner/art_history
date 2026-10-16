@@ -443,3 +443,5 @@ table.provenance tbody.gap td:first-child { border-left: 3px solid var(--err); }
 .link-create select { width: auto; margin: 0; }
 .link-create .hint { flex-basis: 100%; margin: 0; }
 .link-create .hint.error { color: var(--err); }
+/* list pages: a group heading inside the results (artworks: "Works by a matching artist" after the title matches) */
+tr.list-group td { padding-top: .9rem; font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }

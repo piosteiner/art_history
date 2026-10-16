@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Admin artwork lists find works by their artist; the site has a search page
+- **What:** Admin list pages for artworks (`routes/entries.js`): `?q=` also matches the creator and co-creators (the
+  same fuzzy score on the artist's names, `match.js`); title matches first (best first), then a heading "Works by a
+  matching artist" and the artist's works A–Z; every row names its creators. Site: `/search?q=…&type=…`
+  (`src/views/search.ts`) — Enter in the header search opens it unless a hit was chosen with the arrow keys; cards
+  with image, dates, details, type label and why it matched, type buttons with counts; `findAll()` in `src/search.ts`
+  is shared with the header (which ends with "All N results for …"). `search/index.html` prerendered (noindex),
+  robots.txt `Disallow: /search`. Tests: backend `search.spec.js` (artworks list), frontend "search page: …", header
+  test (Enter after ArrowDown).
+- **Why:** owner: searching "gauguin" in the admin's artworks only found titles; Enter in the site's search should
+  lead to a results page, as in most searches.
+- **Revert:** revert the commit (no migration).
+
 ### Sources for further numbers (migration 081); unpublished sources show their kind
 - **What:** `citations.number_id` (→ `artwork_numbers`, cascade) as a fourth target (`citations_one_target` replaces
   `citations_check1`), `citation_status.number_id`, `number_citation_docs()` for the YAML. Admin: a marker after each

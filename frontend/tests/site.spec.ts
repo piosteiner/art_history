@@ -126,8 +126,34 @@ test('header search finds fields and typos', async ({ page }) => {
   await expect(page.locator('.search-results')).toContainText('Born in');
   await input.fill('hokusia');
   await expect(page.locator('.search-results')).toContainText('Hokusai');
+  await input.press('ArrowDown');            // a hit chosen with the arrow keys: Enter opens it
   await input.press('Enter');
   await expect(page).toHaveURL(/\/(artists|artworks)\//);
+});
+
+test('search page: Enter without a chosen hit lists every result as cards — names first, then works by the artist; by type', async ({ page }) => {
+  await page.goto('/?all');
+  const input = page.locator('.search-form input');
+  await input.fill('gauguin');
+  await expect(page.locator('.search-results .hit-all')).toContainText('results for “gauguin”');
+  await input.press('Enter');
+  await expect(page).toHaveURL(/\/search\?q=gauguin$/);
+  await expect(page.locator('main h1')).toHaveText('Search');
+  await expect(page.locator('.search-page-form input')).toHaveValue('gauguin');
+  const cards = page.locator('#items .card');
+  await expect(cards.first()).toBeVisible();
+  expect(await cards.count()).toBeGreaterThan(5);
+  await expect(cards.first().locator('.card-name')).toContainText('Gauguin');                  // a name that matches comes first
+  await expect(page.locator('#items .card', { hasText: 'Idylle à Tahiti' }).locator('.card-detail')).toContainText('Paul Gauguin'); // a work by him
+  await expect(page.locator('#items .card', { hasText: 'Idylle à Tahiti' }).locator('.card-type')).toHaveText('Artwork');
+  await page.locator('#types button', { hasText: 'Artworks' }).click();
+  await expect(page).toHaveURL(/\/search\?q=gauguin&type=artworks$/);
+  expect(new Set(await page.locator('#items .card-type').allTextContents())).toEqual(new Set(['Artwork']));
+  // the page's own field: the results follow the typing, the address too (so it can be shared and reloaded)
+  await page.locator('.search-page-form input').fill('hokusai');
+  await expect(page).toHaveURL(/\/search\?q=hokusai/);
+  await page.reload();
+  await expect(page.locator('#items .card').first()).toContainText('Hokusai');
 });
 
 test('network graph: nodes, details on click, filters in the URL', async ({ page }) => {

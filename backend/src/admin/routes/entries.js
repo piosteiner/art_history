@@ -43,11 +43,18 @@ router.get('/:plural', async (req, res) => {
   const q = String(req.query.q || '').trim();
   const page = pageParam(req);
   // With a query: typo-tolerant match on name, alternative names and slug, best first (src/admin/match.js).
+  // Artworks also by their creators (main and co-creators, the same fuzzy match on the artist's names): the works
+  // whose title matches come first, best first, then the other works of a matching artist in A–Z order.
   const params = q ? [q, likeParam(q)] : [];
   const score = q ? `greatest(${scoreSql(`t.${t.name}`, altSql(t, 't'))}, CASE WHEN t.slug ILIKE '%' || $2 || '%' THEN 1.0 ELSE 0 END)` : 'NULL';
+  const byCreator = t.type === 'artwork';
+  const creatorScore = q && byCreator ? `(SELECT max(${scoreSql('a.name', altSql(BY_TYPE.artist, 'a'))}) FROM artists a
+      WHERE a.id = t.creator_id OR a.id IN (SELECT r.object_id FROM relationships r WHERE r.relationship_type = 'co_creator'
+                                            AND r.subject_type = 'artwork' AND r.subject_id = t.id))` : 'NULL::numeric';
   const { rows } = await adminPool.query(`
     SELECT * FROM (
-      SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score,
+      SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score, ${creatorScore} AS creator_score,
+             ${byCreator ? `(SELECT string_agg(c ->> 'name', ', ') FROM jsonb_array_elements(artwork_creators(t.id)) c)` : 'NULL'} AS creators,
              ${keyExpr(t.type, 't', t.name)} AS sort_key,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
              EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${params.length + 1}::entity_type AND ac.entity_id = t.id) AS to_complete,
@@ -55,7 +62,9 @@ router.get('/:plural', async (req, res) => {
              (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
                                                            OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
       FROM ${t.table} t) x
-    ${q ? `WHERE score >= ${THRESHOLD} ORDER BY score DESC, sort_key COLLATE sort_natural` : 'ORDER BY sort_key COLLATE sort_natural'}
+    ${q ? `WHERE score >= ${THRESHOLD} OR creator_score >= ${THRESHOLD}
+           ORDER BY score >= ${THRESHOLD} DESC, CASE WHEN score >= ${THRESHOLD} THEN score END DESC NULLS LAST, sort_key COLLATE sort_natural`
+      : 'ORDER BY sort_key COLLATE sort_natural'}
     LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [...params, t.type]);
   // the bibliography: short references and how much has been read
   const sources = t.type === 'source' ? await bibliography.loadCatalogue(adminPool) : null;
@@ -66,15 +75,17 @@ router.get('/:plural', async (req, res) => {
     title: humanize(t.folder),
     body: html`<h1>${humanize(t.folder)}</h1>
       ${stats ? html`<p class="muted">${stats.total} sources — <b>${stats.read}</b> read · ${stats.reading} reading · ${stats.to_read} to read</p>` : ''}
-      <form class="bar" method="get" data-live><input name="q" value="${q}" placeholder="Search name, other names or slug (typos are fine)" class="grow" type="search" autocomplete="off">
+      <form class="bar" method="get" data-live><input name="q" value="${q}" placeholder="${byCreator ? 'Search title, other titles, slug or artist (typos are fine)' : 'Search name, other names or slug (typos are fine)'}" class="grow" type="search" autocomplete="off">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
         <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a>
         ${t.type === 'place' ? html`<a class="button secondary" href="/places/new/find">+ find a place…</a>` : ''}</form>
       <div data-live-results="list">${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
-        ${rows.slice(0, PAGE).map((r) => html`<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
+        ${rows.slice(0, PAGE).map((r, i, shown) => html`${q && r.score < THRESHOLD && (i === 0 || shown[i - 1].score >= THRESHOLD)
+          ? html`<tr class="list-group"><td colspan="${t.imageFk ? 5 : 4}">Works by a matching artist</td></tr>` : ''}<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
           ${sources && sources.get(r.slug) ? html`<div class="small">${sources.get(r.slug).siglum}${r.status ? html` <span class="tag">${r.status.replace('_', ' ')}</span>` : ''}</div>` : ''}
+          ${r.creators ? html`<div class="muted small">${r.creators}</div>` : ''}
           ${!/[A-Za-zÀ-ɏ]/.test(r.name) && r.sort_key !== r.name ? html`<div class="muted small">${r.sort_key}</div>` : q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}

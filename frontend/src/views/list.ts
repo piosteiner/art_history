@@ -13,7 +13,7 @@ import { entries, explain, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, m
 type AnyItem = ItemByPlural[Plural];
 
 /** What a card shows: name, a date line, a detail line and an optional thumbnail. */
-function cardParts(plural: Plural, item: AnyItem) {
+export function cardParts(plural: Plural, item: AnyItem) {
   let name = '';
   let date = '';
   let detail = '';
@@ -79,12 +79,13 @@ function cardParts(plural: Plural, item: AnyItem) {
  * One card. While searching, the matched words are highlighted and `why` names the hidden field that matched
  * ("Born in: Zundert").
  */
-function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null): Html {
+export function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null, typeLabel = ''): Html {
   const { name, date, detail, image } = cardParts(plural, item);
   return html`<li class="card">
     <a class="card-link" href="${href(plural, item.slug)}">
       ${image ? html`<img class="card-img" src="${thumb(image, 250)}" alt="" loading="lazy" crossorigin="anonymous">` : html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
       <span class="card-text">
+        ${typeLabel ? html`<span class="card-type">${typeLabel}</span>` : ''}
         <span class="card-name"${langAttr(displayName(item as never).lang)}>${highlight(name, words)}</span>
         ${original(item) ? html`<span class="card-original"${langAttr(original(item)!.lang)}>${highlight(original(item)!.text, words)}</span>` : ''}
         ${date ? html`<span class="card-date">${highlight(date, words)}</span>` : ''}

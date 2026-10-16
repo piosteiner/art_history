@@ -5,7 +5,7 @@ import { listAll, search } from './api';
 import { entries, explain, matches, type Entry, type Match } from './catalog';
 import { href, html, langAttr, render, TYPE_LABEL, type Html } from './html';
 import { navigate, ROUTE_EVENT } from './router';
-import type { EntityType, Plural } from './types';
+import type { EntityType, Plural, SearchHit } from './types';
 
 const PLURALS: Plural[] = ['artists', 'artworks', 'movements', 'polities', 'events', 'institutions', 'people', 'places', 'glossary', 'bibliography'];
 const MAX = 20;
@@ -33,6 +33,25 @@ const loadLibrary = () => {
     }));
 };
 
+/**
+ * Every match for a query, best first: the field search over all entries (3 = the name starts with it, 2 = the name
+ * contains it, 1 = found elsewhere — an artwork by its artist, a person by their birthplace), then, only when that
+ * found nothing, the API's typo-tolerant name matches ("hokusia"). Shared by the header and the search page.
+ */
+export async function findAll(q: string): Promise<{ local: { e: Entry; m: Match }[]; similar: SearchHit[] }> {
+  const [lib, fuzzy] = await Promise.all([loadLibrary().catch(() => [] as Entry[]), search(q).catch(() => [] as SearchHit[])]);
+  const local = lib
+    .filter((e) => matches(e, q))
+    .map((e) => ({ e, m: explain(e, q) }))
+    .sort((a, b) => b.m.score - a.m.score || a.e.name.localeCompare(b.e.name, 'en', { numeric: true }));
+  const seen = new Set(local.map(({ e }) => `${e.type}/${e.slug}`));
+  // the API's fuzzy matches only help when nothing matched as typed ("hokusia"); otherwise they are noise
+  // ("theo" also scores every "The …" title about as high as a real typo)
+  return { local, similar: local.length ? [] : fuzzy.filter((h) => !seen.has(`${h.type}/${h.slug}`)) };
+}
+
+export const searchUrl = (q: string) => `/search?${new URLSearchParams({ q })}`;
+
 export function mountSearch(root: HTMLElement) {
   render(root, html`<form class="search-form" role="search">
     <input type="search" placeholder="Search artists, works, places…" aria-label="Search" autocomplete="off"
@@ -54,7 +73,11 @@ export function mountSearch(root: HTMLElement) {
   };
 
   let query = '';
+  let total = 0;
   function show(similarFrom: number) {
+    // Enter without choosing a hit opens the search page with every result (also when there are more than shown)
+    const all = html`<li class="hit-all"><a href="${searchUrl(query)}"><span class="hit-name">${total > hits.length ? `All ${total} results` : 'All results'} for “${query}” →</span>
+      <span class="hit-meta">with images and details · Enter</span></a></li>`;
     // a query with a digit may be a lot, stock, ERR, Munich … number (API 077): offer the lookup after the hits
     const number = /\d/.test(query) ? html`<li class="hit-number"><a href="/provenance-numbers?${String(new URLSearchParams({ number: query }))}">
       <span class="hit-name">“${query}” as a provenance number</span><span class="hit-meta">lot, stock, ERR, Munich, Linz, Lugt …</span></a></li>` : '';
@@ -64,7 +87,7 @@ export function mountSearch(root: HTMLElement) {
           <a href="${href(h.type, h.slug)}"><span class="hit-name"${langAttr(h.lang)}>${h.name}</span>
           <span class="hit-meta">${TYPE_LABEL[h.type]}${h.meta ? html` · ${h.meta}` : ''}</span>
           ${h.why ? html`<span class="hit-why">${h.why}</span>` : ''}</a>
-        </li>`)}${number}`
+        </li>`)}${number}${all}`
       : html`${number ? '' : html`<li class="muted hit-empty">No matches</li>`}${number}`);
     results.hidden = false;
     input.setAttribute('aria-expanded', 'true');
@@ -74,17 +97,11 @@ export function mountSearch(root: HTMLElement) {
   async function run(q: string) {
     const mine = ++request;
     query = q;
-    const [lib, fuzzy] = await Promise.all([loadLibrary().catch(() => [] as Entry[]), search(q).catch(() => [])]);
+    const found = await findAll(q);
     if (mine !== request) return;
-    const local = lib
-      .filter((e) => matches(e, q))
-      .map((e) => ({ e, m: explain(e, q) }))
-      .sort((a, b) => b.m.score - a.m.score || a.e.name.localeCompare(b.e.name, 'en', { numeric: true }))
-      .slice(0, MAX);
-    const seen = new Set(local.map(({ e }) => `${e.type}/${e.slug}`));
-    // the API's fuzzy matches only help when nothing matched as typed ("hokusia"); otherwise they are noise
-    // ("theo" also scores every "The …" title about as high as a real typo)
-    const extra = local.length ? [] : fuzzy.filter((h) => !seen.has(`${h.type}/${h.slug}`)).slice(0, MAX);
+    total = found.local.length + found.similar.length;
+    const local = found.local.slice(0, MAX);
+    const extra = found.similar.slice(0, MAX);
     hits = [
       ...local.map(({ e, m }) => toHit(e, m)),
       ...extra.map((h) => ({ type: h.type, slug: h.slug, name: html`${h.name}`, meta: [h.kind, h.period?.label].filter(Boolean).join(' · '), why: null })),
@@ -114,10 +131,14 @@ export function mountSearch(root: HTMLElement) {
     }
   });
 
+  // Enter: the hit chosen with the arrow keys — else the search page with all results, as search boxes usually do
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-    const hit = hits[active] ?? hits[0];
-    if (hit) navigate(href(hit.type, hit.slug));
+    const hit = hits[active];
+    const q = input.value.trim();
+    if (hit && !results.hidden) navigate(href(hit.type, hit.slug));
+    else if (q) navigate(searchUrl(q));
+    close();
   });
 
   results.addEventListener('click', (e) => {

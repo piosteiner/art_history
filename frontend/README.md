@@ -134,7 +134,7 @@ page's own link.
   "stolen — recovered <ended>"; no role tag. Roles `publisher` (of the chain), `foundry`, `trustee` (custody) get tags.
   `further_places`: "in Köln → Berlin (1933) → Geneva"; `numbers`: "Munich no. 4317", the number linked to
   `/provenance-numbers?number=4317&kind=munich` (`src/views/numbers.ts`, `GET /v1/provenance-numbers`; the header search
-  offers the lookup for any query with a digit); `event`: "at <event>". Prices in RM need nothing. On the map a step
+  and `/search` offer the lookup for any query with a digit); `event`: "at <event>". Prices in RM need nothing. On the map a step
   has a stop at each of its places (`part`, popup "moved here" + `part_label`), the segments between them
   (`move: true`) are drawn solid, their popup says "moved by the same holder"; segment ends are named by position.
 - Coverage (API 078, `src/coverage.ts`): above the provenance a bar from the creation until today — documented solid,
@@ -222,7 +222,13 @@ place pages. Overlaps based on year-only or "c." dates are marked "possibly".
   person / institution details from `provenance_chain` — per step the artwork, role, method, price, period and the
   previous and next holder (`lag()` / `lead()` over the chain, partitioned by artwork).
 - `GET /v1/map/routes?entities=…`: several entities' map data in one request (today one request per chosen entry).
-- Large lists: pickers, list pages and the header search load every entry of a type (`listAll` in `src/api.ts`: pages of
+- Search page `/search?q=…&type=artworks` (`src/views/search.ts`): Enter in the header search without a hit chosen by
+  the arrow keys opens it (a chosen hit opens that entry; the dropdown ends with "All N results for …"). Every match of
+  `findAll()` in `src/search.ts` (shared with the header: names first, then entries found by other fields — an
+  artwork by its artist — then the API's similar names when nothing matched) as the list pages' cards (`card()` in
+  `src/views/list.ts`, with a type label), type buttons with counts; the address follows the typing. Prerendered as
+  `search/index.html` (noindex, robots `Disallow: /search`).
+- Large lists: pickers, list pages, the header search and `/search` load every entry of a type (`listAll` in `src/api.ts`: pages of
   500, the rest in parallel once `total` says there are more) and sort and search in the browser. When that gets slow
   they need a server-side `sort=` parameter (name, born, died, country, date, …) with paging, and search-as-you-type
   with the field matching of `src/catalog.ts` (type, birthplace, nationality …).

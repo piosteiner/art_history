@@ -177,10 +177,12 @@ await write('privacy/index.html', page(template, {
   body: '<article class="page"><h1>Privacy</h1><p>No cookies, no analytics, no advertising, no tracking. The full statement loads with the page.</p></article>',
 }));
 urls.push(`${SITE}/privacy/`);
+// the search page: served with 200 (not the 404 shell), but kept out of search engines — results follow the query
+await write('search/index.html', page(template, { title: 'Search · Art History', description: SITE_DESCRIPTION, noindex: true }));
 
 // the start page gets the site description and preview tags; 404.html is the app shell for everything else
 await write('index.html', page(template, { title: 'Art History', description: SITE_DESCRIPTION, url: `${SITE}/` }));
 await write('404.html', page(template, { title: 'Art History', description: SITE_DESCRIPTION, noindex: true }));
-await write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /graph/\n\nSitemap: ${SITE}/sitemap.xml\n`);
+await write('robots.txt', `User-agent: *\nAllow: /\nDisallow: /graph/\nDisallow: /search\n\nSitemap: ${SITE}/sitemap.xml\n`);
 await write('sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.map((u) => `  <url><loc>${esc(u)}</loc></url>`).join('\n')}\n</urlset>\n`);
 console.log(`prerendered ${pages} entry pages, ${PLURALS.length} lists, sitemap with ${urls.length} addresses`);

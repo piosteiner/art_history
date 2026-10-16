@@ -667,3 +667,11 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 /* the place popup in a time window: an artwork's numbered steps here, as on its marker */
 .popup-steps-block { margin: .45rem 0 .3rem; }
 .popup-steps-block + .popup-list { margin-top: .2rem; }
+/* search page (/search): the type of each card above its name; the header's "All results" line */
+.card-type { font-size: .72rem; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.search-page-form { display: flex; gap: .5rem; margin: .5rem 0; }
+.search-page-form input { flex: 1; min-width: 0; font-size: 1.05rem; }
+.search-results .hit-all { border-top: 1px solid var(--line); }
+.search-page-form button { font: inherit; font-size: .95rem; padding: .3rem 1rem; border: 1px solid var(--accent); border-radius: 999px;
+  background: var(--surface); color: var(--accent); font-weight: 600; cursor: pointer; }
+.search-page-form button:hover { background: var(--picked-bg); }
