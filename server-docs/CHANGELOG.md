@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Data: seizures recorded as possession without title; La Petite Irène's contradicting readings
+- **What:** role possessor for those who seized a work or held it after the seizure, until the restitution: La Petite
+  Irène (ERR, Göring, Rochlitz), Au piano, étude de bras (ERR), Femme s'essuyant (ERR, Göring, Hans Wendland, Galerie
+  Fischer — the 1949 restitution to Kann's estate shows none of them held good title). La Petite Irène: Rochlitz
+  exchanged for "a Florentine tondo"; Irène's ownership and Béatrice Reinach's custody marked disputed, with Léon
+  Reinach's version (a gift from her grandmother, 1926 or earlier) as another reading of Béatrice's step; Bührle's
+  collection card (13 August 1949) as another reading of his purchase (21 October 1949); both cite the Kunsthaus record.
+- **Why:** owner: represent what actually happened; the contradiction the Kunsthaus can't resolve.
+- **Revert:** History → the change set (source admin, user pio).
+
 ### Provenance as it happened: looters hold without title; contradicting readings; exchanged for (migrations 083/084)
 - **What:** 083: role `possessor`. 084: `provenance.alternative_to` (another source's reading of a step, trigger
   `provenance_alternative_valid`), `exchanged_for_artwork_id` / `exchanged_for_text`; `provenance_periods` leaves
