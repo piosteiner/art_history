@@ -230,6 +230,11 @@ test('artwork map: the provenance in chain order — numbered stops, segments wi
   await popup.locator('.maplibregl-popup-close-button').click();
 
   // the line London → Zürich passes over the estate in Frankfurt, whose place isn't recorded
+  // (measured once the map has stopped moving: fitting the provenance animates, and a point taken during it is stale)
+  await page.waitForFunction(() => {
+    const m = (window as unknown as { __maps: { loaded(): boolean; isMoving(): boolean }[] }).__maps.at(-1)!;
+    return m.loaded() && !m.isMoving();
+  });
   const pt = await page.evaluate(async () => {
     type M = { project(c: [number, number]): { x: number; y: number }; getCanvas(): HTMLCanvasElement; loaded(): boolean };
     const m = (window as unknown as { __maps: M[] }).__maps.at(-1)!;
@@ -1597,4 +1602,16 @@ test('in a time window an artwork that stayed in one place keeps its colour in t
   await page.locator('#chips .chip').click();                                            // the window removed: the whole provenance
   await expect(page.locator('#map-status')).toContainText('chosen entries on the map');
   await expect(page.locator('.prov-stop')).not.toHaveCount(0);
+});
+
+test('in a time window a numbered stop opens the place\'s popup: one popup with everyone there', async ({ page }) => {
+  await page.goto('/?artists=salvador-dali&artworks=carriere-aux-environs-de-pontoise&movements=none&polities=none&people=none&from=1926&to=1927');
+  const stop = page.locator('.prov-stop').first();
+  await expect(stop).toBeVisible();
+  await stop.click();
+  const popup = page.locator('.maplibregl-popup');
+  await expect(popup).toHaveCount(1);
+  await expect(popup).toContainText('Salvador Dalí');                  // the place's popup, not only the artwork's steps
+  await expect(popup).toContainText('Carrière aux environs de Pontoise');
+  await expect(popup).toContainText('Ambroise Vollard');
 });

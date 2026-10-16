@@ -418,20 +418,36 @@ export function showPresence(map: MapLibre, fc: PresenceMap, provenances: Map<st
         'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5,
       },
     });
-    drawProvenance(map, 'win-prov', numbered);  // only the stops: the lines are the routes above
+    // only the stops (the lines are the routes above); a click opens the place's popup, which lists them too
+    drawProvenance(map, 'win-prov', numbered, { onStop: (at) => openPresenceAt(map, at) });
     once(map, 'presence', () => bindPresencePopups(map));
     once(map, 'routes', () => bindRoutes(map));
   });
   return info;
 }
 
+// A place's popup on the start map in a time window: everyone there, and who could have met.
+const presencePopup = (map: MapLibre, features: { properties: Record<string, unknown> }[]) => html`${features.slice(0, 1).map((f) => {
+  const rows = JSON.parse(f.properties.rows as string) as PresenceMap['features'][number]['properties'][];
+  const venue = f.properties.venue ? JSON.parse(f.properties.venue as string) as { type: EntityType; slug: string; name: string } : null;
+  return html`<div class="popup-row"><strong>${venue ? html`${link(venue.type, venue.slug, venue.name)}, ` : ''}<a href="${href('place', f.properties.slug as string)}">${f.properties.name as string}</a></strong>
+    ${placeRows(rows, routeColorsOf.get(map), !!venue)}${encountersHere(map, f.properties.slug as string, venue ? `${venue.type}/${venue.slug}` : null)}</div>`;
+})}`;
+
 function bindPresencePopups(map: MapLibre) {
-  popupOnClick(map, ['presence-circles'], (features) => html`${(features ?? []).slice(0, 1).map((f) => {
-    const rows = JSON.parse(f.properties.rows as string) as PresenceMap['features'][number]['properties'][];
-    const venue = f.properties.venue ? JSON.parse(f.properties.venue as string) as { type: EntityType; slug: string; name: string } : null;
-    return html`<div class="popup-row"><strong>${venue ? html`${link(venue.type, venue.slug, venue.name)}, ` : ''}<a href="${href('place', f.properties.slug)}">${f.properties.name}</a></strong>
-      ${placeRows(rows, routeColorsOf.get(map), !!venue)}${encountersHere(map, f.properties.slug, venue ? `${venue.type}/${venue.slug}` : null)}</div>`;
-  })}`);
+  popupOnClick(map, ['presence-circles'], (features) => presencePopup(map, (features ?? []) as never));
+}
+
+/** A numbered stop clicked in a time window: the popup of the place circle under it (it lists the artwork's steps there
+ *  too), so the two overlapping things open one popup. False when there is no circle there. */
+function openPresenceAt(map: MapLibre, at: [number, number]): boolean {
+  if (!map.getLayer('presence-circles')) return false;
+  // a box around the stop: the stop's point (its place's marker) and the circle's (the stay) may differ by a few pixels
+  const p = map.project(at);
+  const features = map.queryRenderedFeatures([[p.x - 14, p.y - 14], [p.x + 14, p.y + 14]], { layers: ['presence-circles'] });
+  if (!features.length) return false;
+  new Popup({ maxWidth: '320px' }).setLngLat(at).setHTML(presencePopup(map, features as never).value).addTo(map);
+  return true;
 }
 
 // ---- crossed paths: places where two entries were at the same time ---------------------------------

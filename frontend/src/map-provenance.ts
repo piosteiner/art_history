@@ -92,7 +92,10 @@ const entityLine = (d: { color: string; entity?: EntityMap['entity'] }) =>
  * isn't, dotted and faded where an end is only implied; arrows in step order. Hollow: the place is only probable
  * (where the artist lived); a ring: only the region or country is known. Call when the style is ready.
  */
-export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceDrawing[]) {
+/** `onStop`: a click on a numbered stop calls it instead of opening the stop's own popup (the start map in a time
+ *  window opens the place's popup there — one popup with everyone at that place); it returns false to fall back. */
+export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceDrawing[],
+  { onStop }: { onStop?: (at: [number, number]) => boolean } = {}) {
   clearProvenanceMarkers(map);
   removeLayers(map, provenanceLayers(prefix));
   const drawn: DrawnSegment[] = [];
@@ -190,7 +193,15 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
         <span class="muted">${steps.length > 1 ? 'steps' : 'step'} ${label} of ${String(first.steps)}</span>
         <ol class="popup-list popup-steps">${steps.map(stepRow)}</ol>
       </div>`.value);
-      markers.push(new Marker({ element: el }).setLngLat(group[0].geometry.coordinates).setPopup(popup).addTo(map));
+      const at = group[0].geometry.coordinates as [number, number];
+      const marker = new Marker({ element: el }).setLngLat(at);
+      if (onStop) {
+        el.addEventListener('click', (e) => {
+          e.stopPropagation();
+          if (!onStop(at)) popup.setLngLat(at).addTo(map);
+        });
+      } else marker.setPopup(popup);
+      markers.push(marker.addTo(map));
     }
   }
 }

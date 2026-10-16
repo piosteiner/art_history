@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Frontend: in a time window, a numbered stop opens the place's popup
+- **What:** `drawProvenance` takes `onStop`; on the start map in a time window a click on an artwork's numbered stop
+  opens the popup of the place circle under it (everyone there, the artwork's steps, "At the same time here") instead
+  of the stop's own popup — the two overlapping things open one popup (`openPresenceAt`, a 28 px box around the stop;
+  the stop's own popup when no circle is there). Test fixed: "artwork map: the provenance in chain order" measured a
+  line while the map was still animating (now waits until it stops) — it failed now and then since before.
+- **Why:** owner: the numbered marker covered the place circle, whose popup has the possible encounters.
+- **Revert:** revert the commit.
+
 ### Admin: create an entry from a [[link]] being typed; readable suggestions in dark mode
 - **What:** `editor/editor.js` — when nothing has exactly the typed name, the `[[` suggestions end with "＋ Create
   “James Cook”…": a small box asks for the type (remembered for next time), then `POST /lookup/create`
