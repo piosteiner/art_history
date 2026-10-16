@@ -231,7 +231,8 @@ language; otherwise the title itself is such a translation (English titles of Ja
 
 ### Numbers and loans (artworks, migration 048)
 `inventory_number` is the number of the institution where the work is now (`institution`). The detail adds `numbers`:
-further numbers in order — `[{number, label, institution: {slug, name} | null, source: {slug, name} | null}]`: the
+further numbers in order — `[{number, label, institution: {slug, name} | null, source: {slug, name} | null, sources}]`
+(`sources`: where the number is documented, the same shape as a field's sources — migration 081): the
 owner's inventory number when the work is on loan, former inventory numbers (`label`), catalogue raisonné numbers
 (`source` = the catalogue in the bibliography). `on_loan` (list and detail): the work is lent to (deposited at) that
 institution; the owner — the lender — is the last step of the provenance. `on_loan_since` (detail): a date range or `null`.

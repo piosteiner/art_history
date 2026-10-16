@@ -77,7 +77,7 @@ const REF_COLUMNS = { place: 'place_id', creator: 'creator_id', institution: 'cu
 const REL_KEYS = new Set(['type', 'to', 'period', 'period_label', 'label', 'certainty', 'notes_md', 'sources', 'metadata']);
 const IMAGE_KEYS = ['url', 'source_url', 'license', 'credit', 'caption'];
 // A further number of an artwork in YAML (migration 048): whose it is — an institution or a catalogue (source) slug — or a label.
-const NUMBER_KEYS = ['number', 'institution', 'source', 'label'];
+const NUMBER_KEYS = ['number', 'institution', 'source', 'label', 'sources'];
 // A provenance step in YAML (migration 031): owner "type/slug" and/or owner_label, dates as fuzzy text, place = slug.
 // 063: role (owner · dealer · agent · estate · custodian), co_owners ["person/gertrude-stein", …], price {amount,
 // currency, note}.
@@ -252,7 +252,7 @@ function toRow(doc, fields) {
       }
     }
   }
-  // numbers (artworks, 048): [{number, institution | source, label}] in order; null = key absent
+  // numbers (artworks, 048): [{number, institution | source, label, sources}] in order (sources: 081); null = key absent
   let numbers = null;
   if (doc.numbers !== undefined) {
     if (!fields.creator) errors.push('numbers: only artworks have further numbers');
@@ -268,6 +268,7 @@ function toRow(doc, fields) {
         if (n.institution && n.source) errors.push(`${at}: institution or source, not both`);
         if (!n.institution && !n.source && !n.label) errors.push(`${at}: say whose number it is (institution, source or label)`);
         for (const k of ['institution', 'source']) if (n[k] !== undefined && !SLUG.test(String(n[k]))) errors.push(`${at}.${k}: a slug`);
+        if (n.sources !== undefined && !Array.isArray(n.sources)) errors.push(`${at}.sources: a list (as for relationships)`);
       });
     }
   }
@@ -388,7 +389,7 @@ async function readImages(db, type, id) {
 // An artwork's further numbers in doc shape (as written in its YAML file), in order.
 async function readNumbers(db, artworkId) {
   const { rows } = await db.query(`
-    SELECT n.number, i.slug AS institution, b.slug AS source, n.label FROM artwork_numbers n
+    SELECT n.number, i.slug AS institution, b.slug AS source, n.label, number_citation_docs(n.id) AS sources FROM artwork_numbers n
     LEFT JOIN institutions i ON i.id = n.institution_id LEFT JOIN bibliography b ON b.id = n.source_id
     WHERE n.artwork_id = $1 ORDER BY n.position, n.id`, [artworkId]);
   return rows.map((r) => Object.fromEntries(Object.entries(r).filter(([, v]) => v !== null)));

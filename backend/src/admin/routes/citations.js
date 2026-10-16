@@ -36,6 +36,7 @@ async function freshMarkers(req, refresh) {
   const provIds = list.map((r) => /^prov:(\d+)$/.exec(r.key)).filter(Boolean).map((m) => m[1]);
   const rels = await citations.forRelationships(adminPool, relIds);
   const provs = await citations.forProvenance(adminPool, provIds);
+  const nums = await citations.forNumbers(adminPool, list.map((r) => /^num:(\d+)$/.exec(r.key)).filter(Boolean).map((m) => m[1]));
   for (const r of list) {
     const label = String(r.label || '').slice(0, 200);
     let m;
@@ -45,6 +46,8 @@ async function freshMarkers(req, refresh) {
       out[r.key] = String(citations.marker(rels[m[1]], { relationship: m[1], label }, back, { recent }));
     } else if ((m = /^prov:(\d+)$/.exec(r.key))) {
       out[r.key] = String(citations.marker(provs[m[1]], { provenance: m[1], label }, back, { recent }));
+    } else if ((m = /^num:(\d+)$/.exec(r.key))) {
+      out[r.key] = String(citations.marker(nums[m[1]], { number: m[1], label }, back, { recent }));
     }
   }
   return { markers: out, recent: String(citations.recentChips(recent)) };

@@ -514,7 +514,8 @@ router.get('/:plural/:slug', async (req, res) => {
         <span class="cite-badge cite-none">+</span> none yet · <span class="cite-badge cite-database">W</span> Wikidata ·
         <span class="cite-badge cite-institution">M</span> museum / institution · <span class="cite-badge cite-scholarly">L</span> literature ·
         <span class="cite-badge cite-primary">P</span> primary source · <span class="cite-badge cite-text">T</span> a note in words ·
-        <span class="cite-badge cite-outdated">!</span> changed since cited</p>` : ''}
+        <span class="cite-badge cite-outdated">!</span> changed since cited ·
+        <span class="cite-badge cite-database cite-pending">W</span> dotted: not published yet</p>` : ''}
       ${t.type === 'term' || usedIn.length ? html`<h2 id="used-in">${t.type === 'term' ? 'Used in' : 'Mentioned in'}</h2>${usedIn.length ? html`<ul>${usedIn.map((u) => html`<li><a href="/${BY_TYPE[u.type].folder}/${u.slug}">${u.name}</a> <span class="tag">${u.type}</span></li>`)}</ul>`
         : html`<p class="muted">No text links it yet — write <code>[[${e.slug}]]</code> in a description.</p>`}` : ''}
       ${series && (series.parts.length || series.isWhole) ? html`<h2 id="parts">Parts</h2>
@@ -533,7 +534,7 @@ router.get('/:plural/:slug', async (req, res) => {
         return identifiers.forType(await identifiers.authorities(adminPool), t.type).length ? identifiers.section({ t, e, ids }) : '';
       })()}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
-      ${t.type === 'artwork' ? numbers.listSection({ e, numbers: nums }) : ''}
+      ${t.type === 'artwork' ? numbers.listSection({ e, numbers: nums, cites: await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent }) : ''}
       ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap, gaps: await provenance.coverage(adminPool, e.id),
         cites: await citations.forProvenance(adminPool, provSteps.filter((s) => s.id).map((s) => s.id)),
         marker: (c, target, back) => citations.marker(c, target, back, { recent }), back: `${here}#provenance` }) : ''}
@@ -747,7 +748,10 @@ router.get('/:plural/:slug/edit', async (req, res) => {
   const ctx = await formContext(t, e.id);
   // further numbers (numbers.js): under the inventory number, saved at once through forms of their own after this one
   ctx.afterField = {};
-  if (t.type === 'artwork') ctx.afterField.inventory_number = numbers.section({ e, numbers: await numbers.list(adminPool, e.id) });
+  if (t.type === 'artwork') {
+    const nums = await numbers.list(adminPool, e.id);
+    ctx.afterField.inventory_number = numbers.section({ e, numbers: nums, cites: await citations.forNumbers(adminPool, nums.map((n) => n.id)) });
+  }
   // reference records (identifiers.js) the same way, under the Wikidata id
   const authorityList = identifiers.forType(await identifiers.authorities(adminPool), t.type);
   if (authorityList.length) {
@@ -769,8 +773,10 @@ async function citeDialogs(t, e, user) {
   const cites = await citations.forEntity(adminPool, t.type, e.id);
   const recent = await citations.recentSources(adminPool, user.id, t.type, e.id);
   const back = `/${t.folder}/${e.slug}/edit`;
+  // further numbers (081): their dialogs too — the buttons with their badges stand in the numbers' table
+  const nums = t.type === 'artwork' ? await numbers.list(adminPool, e.id) : [];
   return html`<div class="cite-dialogs">${Object.keys(citable).map((field) => citations.marker(cites[field],
-    { type: t.type, id: e.id, field, label: `“${fieldLabel(t.type, field)}”` }, back, { edit: true, recent }))}</div>`;
+    { type: t.type, id: e.id, field, label: `“${fieldLabel(t.type, field)}”` }, back, { edit: true, recent }))}${numbers.dialogs(e, nums, await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent)}</div>`;
 }
 
 router.post('/:plural/:slug', async (req, res) => {

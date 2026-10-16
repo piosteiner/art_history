@@ -99,7 +99,8 @@ function collectionFact(e: Artwork): Html | null {
 
 /**
  * The inventory number of the institution where it is, then the further numbers, each with whose number it is:
- * "Inventory no. 18 (Foundation E.G. Bührle Collection)", "Rewald (catalogue raisonné) 658".
+ * "Inventory no. 18 (Foundation E.G. Bührle Collection)", "Rewald (catalogue raisonné) 658" — a further number with the
+ * markers of its own sources.
  */
 function numberFacts(e: Artwork): Fact[] {
   const more = e.numbers ?? [];
@@ -107,7 +108,7 @@ function numberFacts(e: Artwork): Fact[] {
   return [
     ['Inventory no.', e.inventory_number ? html`${e.inventory_number}${more.length ? whose(e.institution, 'institution') : ''}` : null],
     ...more.map((n): Fact => [n.label ?? (n.source ? 'Catalogue no.' : n.institution ? 'Inventory no.' : 'Number'),
-      html`${n.number}${whose(n.institution, 'institution')}${whose(n.source, 'source')}`]),
+      html`${n.number}${whose(n.institution, 'institution')}${whose(n.source, 'source')}${cite(n.sources, e.bibliography)}`]),  // each its own sources (API 081)
   ];
 }
 

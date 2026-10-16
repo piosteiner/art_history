@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Sources for further numbers (migration 081); unpublished sources show their kind
+- **What:** `citations.number_id` (→ `artwork_numbers`, cascade) as a fourth target (`citations_one_target` replaces
+  `citations_check1`), `citation_status.number_id`, `number_citation_docs()` for the YAML. Admin: a marker after each
+  further number on the artwork page, a button with its badges in the numbers' table on the edit page (dialog after
+  the form, `citations.trigger()`); `forNumbers()`, key `num:<id>`. API: `numbers[].sources`; YAML `numbers[].sources`
+  (export + import). Site: markers after each number. Markers: a source still in the working copy now shows its kind
+  (W, M, L …, dotted outline) instead of "+ …" — the "…" looked cut off, and "+" said "no source" though one was logged.
+  Tests: `numbers.spec.js` (new test), frontend "a work on loan …"; flaky "step with further places" map test now
+  measures at rest.
+- **Why:** owner: the markers of Object type / Medium looked cut off ("+ …") and could lead to logging a source twice;
+  further numbers had no source marker.
+- **Revert:** redeploy the previous commit; `DROP FUNCTION number_citation_docs(bigint); DELETE FROM citations WHERE
+  number_id IS NOT NULL;` then recreate citation_status as in 050 (drop and recreate with its dependants
+  `field_sourcing`, `quality_issues_live`), `ALTER TABLE citations DROP CONSTRAINT citations_one_target, DROP COLUMN
+  number_id, ADD CHECK (… three targets = 1);` `DELETE FROM schema_migrations WHERE name = '081_number_citations.sql';`
+
 ### Searches ignore special letters, ligatures, typographic apostrophes and dashes (migration 080)
 - **What:** `f_unaccent()` now also normalises compatibility forms (NFKC: ligatures "ﬁ", full-width letters) and maps
   ’ ‘ ʼ ` ´ to ' and the dashes ‐ ‑ ‒ – — ― to -; the migration reindexes the 20 indexes built on it (and on `dup_names`/

@@ -6,7 +6,8 @@
 async function importCitations(db, target, list) {
   if (!Array.isArray(list)) return;
   const [col, id, field] = target.relationship ? ['relationship_id', target.relationship, null]
-    : target.provenance ? ['provenance_id', target.provenance, null] : [null, target.id, target.field];
+    : target.provenance ? ['provenance_id', target.provenance, null]
+    : target.number ? ['number_id', target.number, null] : [null, target.id, target.field];
   const where = col ? `${col} = $1` : 'entity_type = $1::entity_type AND entity_id = $2 AND field = $3';
   const key = col ? [id] : [target.type, id, field];
   const lines = list.filter((c) => typeof c === 'string').map((s) => s.trim()).filter(Boolean);

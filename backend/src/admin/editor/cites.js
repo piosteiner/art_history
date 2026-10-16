@@ -99,6 +99,8 @@ function apply(result, openKey, edit) {
     old.replaceWith(fresh);
     initAutocomplete(fresh);
     if (edit) placeTrigger(fresh);
+    // a button standing in for it elsewhere (a further number's on the edit page): the same badges
+    document.querySelectorAll(`.cite-trigger[data-for-key="${CSS.escape(key)}"]`).forEach((b) => { b.innerHTML = fresh.querySelector(':scope > summary').innerHTML; });
     if (key === openKey) { fresh.open = true; fillAlso(fresh); }
   }
   if (result.recent) {
@@ -155,6 +157,12 @@ export function initCiteDialogs() {
   document.addEventListener('click', (e) => {
     const btn = e.target.closest('.cite-close');
     if (btn) { e.preventDefault(); btn.closest('details.cite').open = false; }
+    const opener = e.target.closest('.cite-trigger[data-for-key]');
+    if (opener) {
+      e.preventDefault();
+      const d = markerFor(opener.dataset.forKey, false);
+      if (d) d.open = true;
+    }
   });
   document.addEventListener('submit', (e) => {
     const form = e.target;

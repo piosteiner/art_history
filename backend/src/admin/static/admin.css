@@ -335,7 +335,7 @@ details.cite > summary::-webkit-details-marker { display: none; }
 .cite-none { border-style: dashed; }
 .cite-text { font-style: italic; }
 .cite-outdated { color: var(--bg); background: var(--err); border-color: var(--err); }
-.cite-pending { border-style: dotted; }
+.cite-badge.cite-pending { border: 1px dotted currentColor; background: transparent; color: var(--fg); }  /* in the working copy, not published yet */
 .cite-warn { color: var(--err); }
 /* the sources of a value: a dialog in the middle of the screen (position: fixed — no table cuts it off); the
    dimmed backdrop is the summary's ::after, so a click beside the dialog closes it like the summary itself */
@@ -361,7 +361,7 @@ details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-
 .sort-saving { opacity: .6; pointer-events: none; }
 
 /* the edit page: the sources dialogs after the form, opened by a button next to each field's label */
-.cite-dialogs > details.cite-edit > summary { position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; font-size: 0; }
+.cite-dialogs > details.cite > summary { position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; font-size: 0; }
 .cite-trigger { display: inline-flex; gap: 2px; vertical-align: middle; background: none; border: 0; padding: 0 .1rem; cursor: pointer; }
 .label-row { display: flex; align-items: baseline; gap: .35rem; }
 .label-row > label { margin-bottom: .2rem; }

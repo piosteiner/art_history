@@ -37,7 +37,7 @@ test('further numbers: the owner\'s inventory number and a catalogue number; eac
   // the artwork's page lists them and links to the edit page
   await userA.goto('/artworks/sunflowers-national-gallery');
   await expect(userA.locator('#numbers table')).toContainText('F 454');
-  await expect(userA.locator('#numbers button')).toHaveCount(0);
+  await expect(userA.locator('#numbers button[formaction]')).toHaveCount(0);  // removed on the edit page only
   await expect(userA.locator('#numbers a', { hasText: 'edit page' })).toHaveAttribute('href', '/artworks/sunflowers-national-gallery/edit#numbers');
   // removed on the edit page, back there
   sql("INSERT INTO artwork_numbers (artwork_id, number, label) VALUES (entity_id('artwork', 'sunflowers-national-gallery'), 'X 1', 'to remove')");
@@ -66,8 +66,8 @@ test('further numbers: the owner\'s inventory number and a catalogue number; eac
 
   const sun = await api(request, '/artworks/sunflowers-national-gallery');
   expect(sun.numbers).toEqual([
-    { number: '99', label: null, institution: { slug: 'van-gogh-museum', name: 'Van Gogh Museum' }, source: null },
-    { number: 'F 454', label: null, institution: null, source: { slug: 'catalogue-raisonne-test', name: 'Catalogue raisonné' } }]);
+    { number: '99', label: null, institution: { slug: 'van-gogh-museum', name: 'Van Gogh Museum' }, source: null, sources: [] },
+    { number: 'F 454', label: null, institution: null, source: { slug: 'catalogue-raisonne-test', name: 'Catalogue raisonné' }, sources: [] }]);
 });
 
 test('a loan: the owner is someone else on purpose — the quality page asks for the lender, not about the holder', async ({ userA, request }) => {
@@ -87,4 +87,33 @@ test('a loan: the owner is someone else on purpose — the quality page asks for
   expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id IN ('loan_owner', 'provenance_last_owner')
               AND entity_id = entity_id('artwork', 'sunflowers-national-gallery')`)).toBe('0');
   sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
+});
+
+test('a further number has its own sources: a marker on the artwork page, a button on the edit page; in the API and the YAML', async ({ userA, request }) => {
+  sql("INSERT INTO artwork_numbers (artwork_id, number, label) VALUES (entity_id('artwork', 'the-starry-night'), 'L 1234', 'Lugt')");
+  // the edit page: a button with the badges in the number's row opens its dialog (after the entry's form)
+  await userA.goto('/artworks/the-starry-night/edit');
+  const button = userA.locator('#numbers tr', { hasText: 'L 1234' }).locator('.cite-trigger');
+  await expect(button.locator('.cite-none')).toHaveText('+');
+  await button.click();
+  const dialog = userA.locator('details.cite[open]');
+  await expect(dialog.locator('.cite-head')).toContainText('Sources of number L 1234');
+  await dialog.locator('input[name=text]').evaluate((el) => { el.closest('details.cite-more').open = true; });
+  await dialog.locator('input[name=text]').fill('Lugt, Marques de collections');
+  await dialog.locator('.cite-submit').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);   // in place, no reload
+  await userA.keyboard.press('Escape');
+  await expect(button.locator('.cite-text')).toHaveText('T');                                 // the button shows it at once
+  expect(sql("SELECT count(*) FROM citations c JOIN artwork_numbers n ON n.id = c.number_id WHERE n.number = 'L 1234'")).toBe('1');
+  // the artwork's page: a marker after the number
+  await userA.goto('/artworks/the-starry-night');
+  await expect(userA.locator('#numbers tr', { hasText: 'L 1234' }).locator('details.cite > summary .cite-text')).toHaveText('T');
+  // the API: the number's sources
+  const w = await api(request, '/artworks/the-starry-night');
+  expect(w.numbers.find((n) => n.number === 'L 1234').sources.map((c) => c.text)).toEqual(['Lugt, Marques de collections']);
+  expect(w.numbers.find((n) => n.number === 'L 1234')._num_id).toBeUndefined();
+  // the YAML snapshot: sources under the number; removing the number removes them
+  expect(sql("SELECT number_citation_docs(id)::text FROM artwork_numbers WHERE number = 'L 1234'")).toBe('["Lugt, Marques de collections"]');
+  sql("DELETE FROM artwork_numbers WHERE number = 'L 1234'");
+  expect(sql("SELECT count(*) FROM citations WHERE text = 'Lugt, Marques de collections'")).toBe('0');
 });

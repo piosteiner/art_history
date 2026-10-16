@@ -8,6 +8,7 @@
 // nest), so the shared working copy (collab.js, form.elements) never sees them. The artwork's page lists them.
 // ---------------------------------------------------------------------------------------------------------------
 const { html } = require('./html');
+const citations = require('./citations');
 
 class NumberError extends Error {}
 
@@ -62,17 +63,21 @@ const whose = (n) => (n.institution_slug ? html`<a href="/institutions/${n.insti
   : n.source_slug ? html`<a href="/bibliography/${n.source_slug}">${n.source_name}</a> <span class="tag">catalogue</span>` : html`<span class="muted">—</span>`);
 
 // The artwork's page: the list, to change on the edit page.
-function listSection({ e, numbers }) {
+// Each number has its sources (081): the marker after it, as for a provenance step.
+const target = (n) => ({ number: n.id, label: `number ${n.number}` });
+function listSection({ e, numbers, cites = {}, recent = [] }) {
+  const back = `/artworks/${e.slug}#numbers`;
   return html`<section id="numbers"><h2>Further numbers</h2>
     ${numbers.length ? html`<div class="table-wrap"><table><thead><tr><th>Number</th><th>Whose</th><th>Note</th></tr></thead><tbody>
-      ${numbers.map((n) => html`<tr><td><b>${n.number}</b></td><td>${whose(n)}</td><td>${n.label || ''}</td></tr>`)}
+      ${numbers.map((n) => html`<tr><td><b>${n.number}</b> ${citations.marker(cites[n.id], target(n), back, { recent })}</td><td>${whose(n)}</td><td>${n.label || ''}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted small">None.</p>`}
     <p class="small"><a href="/artworks/${e.slug}/edit#numbers">Add or remove numbers on the edit page →</a></p></section>`;
 }
 
 // The edit page (inside the entry's form, so every control names its own form: formsAfter() renders those) — or, with
 // standalone, a page of its own (a refused number, shown again with what was typed).
-function section({ e, numbers, values = {}, standalone = false }) {
+// cites: {number id: citations} — a button with each number's badges; its dialog comes after the form (dialogs()).
+function section({ e, numbers, cites = {}, values = {}, standalone = false }) {
   const v = (k) => values[k] || '';
   const own = standalone ? '' : html` form="numbers-add"`;
   const back = standalone ? '' : '?back=edit';
@@ -87,7 +92,7 @@ function section({ e, numbers, values = {}, standalone = false }) {
     <p class="muted small">Besides the main inventory number (the institution where it is now): the owner's number when it is
       on loan, former inventory numbers, the number in a catalogue raisonné. Saved at once, not with Publish.</p>
     ${numbers.length ? html`<div class="table-wrap"><table><thead><tr><th>Number</th><th>Whose</th><th>Note</th><th></th></tr></thead><tbody>
-      ${numbers.map((n) => html`<tr><td><b>${n.number}</b></td><td>${whose(n)}</td><td>${n.label || ''}</td>
+      ${numbers.map((n) => html`<tr><td><b>${n.number}</b>${standalone ? '' : html` ${citations.trigger(cites[n.id], target(n))}`}</td><td>${whose(n)}</td><td>${n.label || ''}</td>
         <td>${standalone ? '' : html`<button class="link" form="numbers-delete" formaction="/numbers/${n.id}/delete${back}">remove</button>`}</td></tr>`)}
       </tbody></table></div>` : ''}
     <details${values.number ? ' open' : ''}><summary class="button secondary">+ Add a number</summary>
@@ -99,4 +104,7 @@ function section({ e, numbers, values = {}, standalone = false }) {
 const formsAfter = (e) => html`<form id="numbers-add" method="post" action="/artworks/${e.slug}/numbers?back=edit" hidden></form>
   <form id="numbers-delete" method="post" hidden></form>`;
 
-module.exports = { NumberError, list, byId, add, remove, errorText, section, listSection, formsAfter };
+// The edit page: the numbers' source dialogs, after the entry's form (with the fields' ones).
+const dialogs = (e, numbers, cites, recent) => numbers.map((n) => citations.marker(cites[n.id], target(n), `/artworks/${e.slug}/edit#numbers`, { recent }));
+
+module.exports = { NumberError, list, byId, add, remove, errorText, section, listSection, formsAfter, dialogs };

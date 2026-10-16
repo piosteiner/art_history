@@ -104,7 +104,7 @@ const ENTITIES = {
                 FROM artwork_materials am JOIN glossary g ON g.id = am.term_id WHERE am.artwork_id = t.id) AS material_terms,
              artwork_term_names(t.id) AS term_names,
              t.inventory_number, t.on_loan, range_json(t.on_loan_since, t.on_loan_since_label) AS on_loan_since,
-             (SELECT coalesce(jsonb_agg(jsonb_build_object('number', n.number, 'label', n.label,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('_num_id', n.id, 'number', n.number, 'label', n.label,
                        'institution', (SELECT jsonb_build_object('slug', i.slug, 'name', i.name) FROM institutions i WHERE i.id = n.institution_id),
                        'source', (SELECT jsonb_build_object('slug', b.slug, 'name', b.name) FROM bibliography b WHERE b.id = n.source_id))
                      ORDER BY n.position, n.id), '[]'::jsonb) FROM artwork_numbers n WHERE n.artwork_id = t.id) AS numbers,
@@ -551,9 +551,10 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     const { rows: citeRows } = await apiPool.query(`
       SELECT c.*, b.kind::text AS source_kind FROM citation_status c LEFT JOIN bibliography b ON b.id = c.source_id
       WHERE c.pending IS NULL AND ((c.entity_type = $1 AND c.entity_id = $2) OR c.relationship_id = ANY ($3::bigint[])
-                                   OR c.provenance_id = ANY ($4::bigint[]))
+                                   OR c.provenance_id = ANY ($4::bigint[]) OR c.number_id = ANY ($5::bigint[]))
       ORDER BY c.reliability DESC NULLS LAST, c.id`,
-    [e.type, id, rels.map((r) => r._rel_id).filter(Boolean), [...rels.map((r) => r._prov_id), ...steps.map((p) => p._prov_id)].filter(Boolean)]);
+    [e.type, id, rels.map((r) => r._rel_id).filter(Boolean), [...rels.map((r) => r._prov_id), ...steps.map((p) => p._prov_id)].filter(Boolean),
+      (body.numbers || []).map((n) => n._num_id)]);
     const shape = (c) => {
       const out = { kind: c.wikidata_item ? 'wikidata' : c.source_id ? 'source' : 'text', reliability: c.reliability };
       if (c.wikidata_item) {
@@ -575,6 +576,8 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     const byProv = group((c) => c.provenance_id)(citeRows.filter((c) => c.provenance_id !== null));
     relationships.forEach((r) => { r.sources = (r._rel_id ? byRel[r._rel_id] : r._prov_id ? byProv[r._prov_id] : null) || []; delete r._rel_id; delete r._prov_id; });
     steps.forEach((p) => { p.sources = byProv[p._prov_id] || []; delete p._prov_id; });
+    const byNum = group((c) => c.number_id)(citeRows.filter((c) => c.number_id !== null));
+    (body.numbers || []).forEach((n) => { n.sources = byNum[n._num_id] || []; delete n._num_id; });  // further numbers (081)
     body.sources = byField;
     // its numbers in authority files (053), with the links to the records
     body.identifiers = (await apiPool.query(`

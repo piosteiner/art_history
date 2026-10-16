@@ -291,7 +291,12 @@ test('artwork map (077): a step with further places — a stop at each, the move
   await popup.locator('.maplibregl-popup-close-button').click();
 
   await page.waitForFunction(() => !!(window as unknown as { __maps: { getLayer(id: string): unknown }[] }).__maps.at(-1)!.getLayer('prov-hit'));
-  const hit = await page.evaluate(async (paris) => {
+  // measured once the map is at rest (the popup pans it; a point taken while it moves is stale) — and again until drawn
+  const atRest = () => page.waitForFunction(() => {
+    const m = (window as unknown as { __maps: { loaded(): boolean; isMoving(): boolean }[] }).__maps.at(-1)!;
+    return m.loaded() && !m.isMoving();
+  });
+  const measure = async () => { await atRest(); return page.evaluate(async (paris) => {
     type M = { project(c: [number, number]): { x: number; y: number }; getCanvas(): HTMLCanvasElement;
       queryRenderedFeatures(p: [number, number], o: { layers: string[] }): unknown[] };
     const m = (window as unknown as { __maps: M[] }).__maps.at(-1)!;
@@ -301,8 +306,9 @@ test('artwork map (077): a step with further places — a stop at each, the move
     const mid: [number, number] = [(a.x + b.x) / 2, (a.y + b.y) / 2];
     const r = m.getCanvas().getBoundingClientRect();
     return { x: r.left + mid[0], y: r.top + mid[1], solid: m.queryRenderedFeatures(mid, { layers: ['prov-direct'] }).length };
-  }, PARIS);
-  expect(hit.solid).toBeGreaterThan(0);
+  }, PARIS); };
+  await expect.poll(async () => (await measure()).solid).toBeGreaterThan(0);
+  const hit = await measure();
   await page.mouse.click(hit.x, hit.y);
   await expect(popup).toContainText('step 4');
   await expect(popup).toContainText('London → Paris');
@@ -680,7 +686,8 @@ test('a work on loan: credit line with the lender from the provenance; further n
     b.numbers = [
       { number: '18', label: null, institution: { slug: 'foundation-e-g-buhrle-collection', name: 'Foundation E.G. Bührle Collection' }, source: null },
       { number: '658', label: 'Rewald (catalogue raisonné)', institution: null, source: null },
-      { number: 'W 12', label: null, institution: null, source: { slug: 'rewald-1996', name: 'Rewald 1996' } },
+      { number: 'W 12', label: null, institution: null, source: { slug: 'rewald-1996', name: 'Rewald 1996' },
+        sources: [cited({ kind: 'text', reliability: null, text: 'Lugt, Marques de collections' })] },  // a number's own sources (API 081)
     ];
   });
   await page.goto('/artworks/the-great-wave-off-kanagawa');
@@ -692,6 +699,8 @@ test('a work on loan: credit line with the lender from the provenance; further n
   await expect(facts).toContainText('18 (Foundation E.G. Bührle Collection)');
   await expect(facts.locator('dt', { hasText: 'Rewald (catalogue raisonné)' }).locator('+ dd')).toHaveText('658');
   await expect(facts.locator('dt', { hasText: 'Catalogue no.' }).locator('+ dd a[href="/bibliography/rewald-1996"]')).toBeVisible();
+  await expect(facts.locator('dt', { hasText: 'Catalogue no.' }).locator('+ dd .cite-ref')).toHaveText('T');
+  await expect(facts.locator('dt', { hasText: 'Rewald (catalogue raisonné)' }).locator('+ dd .cite-ref')).toHaveCount(0);
 });
 
 const tr = (text: string, lang: string, status: string | null) => ({ text, lang, role: 'translation', status, ruby_html: null, reading: null });

@@ -314,7 +314,7 @@ export type ProvenanceCategory = 'A' | 'B' | 'C' | 'D';
 export interface ProvenanceStatus { category: ProvenanceCategory; code: string; label: string; note: string | null }
 
 /** "18" at the Foundation E.G. Bührle Collection, "658" in Rewald's catalogue raisonné … */
-export interface ArtworkNumber { number: string; label: string | null; institution: Ref | null; source: Ref | null }
+export interface ArtworkNumber { number: string; label: string | null; institution: Ref | null; source: Ref | null; sources?: Citation[] }
 
 export type AcquisitionMethod =
   | 'creation' | 'commission' | 'inheritance' | 'purchase' | 'auction' | 'gift' | 'bequest' | 'exchange'

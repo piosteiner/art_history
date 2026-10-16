@@ -63,6 +63,16 @@ async function forProvenance(db, ids) {
   return byStep;
 }
 
+async function forNumbers(db, ids) {  // further numbers of an artwork (081)
+  if (!ids.length) return {};
+  const { rows } = await db.query(`SELECT c.id, c.number_id, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
+      c.accessed, c.wikidata_item, c.url, false AS outdated, false AS pending FROM citation_status c
+    WHERE c.number_id = ANY ($1::bigint[]) ORDER BY c.reliability DESC NULLS LAST, c.id`, [ids]);
+  const byNumber = {};
+  for (const r of await shortForms(db, rows)) (byNumber[r.number_id] ||= []).push(r);
+  return byNumber;
+}
+
 // The "Sources" box of the relationship and provenance forms: one free-text citation per line (050). Lines that stay
 // keep their citation, removed ones go, new ones are added.
 async function syncText(db, target, lines) {
@@ -105,7 +115,7 @@ async function add(db, body, userId, { pending = null, pendingByField = null } =
   if (accessed && !/^\d{4}-\d{2}-\d{2}$/.test(accessed)) throw new CitationError('Accessed: a date like 2026-10-08.');
   if (url && !accessed) accessed = new Date().toISOString().slice(0, 10);  // a web page: consulted today
   const common = [sourceId, sourceId ? null : free, text('locator'), text('note'), accessed, url, userId];
-  for (const [key, col] of [['relationship', 'relationship_id'], ['provenance', 'provenance_id']]) {
+  for (const [key, col] of [['relationship', 'relationship_id'], ['provenance', 'provenance_id'], ['number', 'number_id']]) {
     if (!text(key)) continue;
     await db.query(`INSERT INTO citations (${col}, source_id, text, locator, note, accessed, url, created_by) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
       [text(key), ...common]);
@@ -285,19 +295,30 @@ function recentChips(recent = []) {
 }
 
 // Next to a value: one badge per kind of source (W M L P), "+" when there is none; a click opens the dialog with the
-// list and a form to add one. target: { type, id, field } or { relationship } or { provenance }, with its label.
+// list and a form to add one. target: { type, id, field } or { relationship } or { provenance } or { number }, with its label.
 // key / label (data-cite-*): which marker it is, so the page can replace just this one after an add or a remove
 // (editor/sortable.js — no reload). edit: on the edit page (rendered after the entry's form; a button with the same
 // badges goes next to the field's label, and `expect` gets the field's form values on submit).
-const keyOf = (target) => (target.relationship ? `rel:${target.relationship}` : target.provenance ? `prov:${target.provenance}` : `field:${target.field}`);
-function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
-  const kinds = [...new Set(cites.filter((c) => !c.pending && !c.outdated).map(kindOf))];
+const keyOf = (target) => (target.relationship ? `rel:${target.relationship}` : target.provenance ? `prov:${target.provenance}`
+  : target.number ? `num:${target.number}` : `field:${target.field}`);
+function badges(cites = []) {
+  // every logged source shows its kind — also one still in the working copy (dotted: becomes a citation on Publish),
+  // so a value with sources never looks like one without ("+" only when there is none at all)
+  const kinds = [...new Set(cites.map(kindOf))];
+  const onlyPending = (k) => cites.filter((c) => kindOf(c) === k).every((c) => c.pending);
   const outdated = cites.some((c) => c.outdated);
-  const pending = cites.some((c) => c.pending);
-  const label = kinds.length ? kinds.map((k) => html`<span class="cite-badge cite-${k}" title="${BADGE_TITLE[k]} — click to see or add sources">${BADGE[k]}</span>`)
-    : html`<span class="cite-badge cite-none" title="no source yet — click to add one">+</span>`;
+  return html`${kinds.length ? kinds.map((k) => (onlyPending(k)
+    ? html`<span class="cite-badge cite-${k} cite-pending" title="${BADGE_TITLE[k]} — not published yet: becomes a citation when the value is published">${BADGE[k]}</span>`
+    : html`<span class="cite-badge cite-${k}" title="${BADGE_TITLE[k]} — click to see or add sources">${BADGE[k]}</span>`))
+    : html`<span class="cite-badge cite-none" title="no source yet — click to add one">+</span>`}${outdated ? html`<span class="cite-badge cite-outdated" title="changed since cited">!</span>` : ''}`;
+}
+// A button with a marker's badges where the marker itself can't stand (inside the entry's form on the edit page — its
+// dialog holds a form of its own and sits after the entry's form): a click opens that dialog (editor/cites.js).
+const trigger = (cites = [], target) => html`<button type="button" class="cite-trigger" data-for-key="${keyOf(target)}" aria-label="sources of ${target.label || 'this'}">${badges(cites)}</button>`;
+
+function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
   const what = target.label || 'this';
-  return html`<details class="cite${edit ? ' cite-edit' : ''}" data-cite-key="${keyOf(target)}" data-cite-label="${what}"${edit ? html` data-cite-field="${target.field}" data-cite-edit="1"` : ''}><summary aria-label="sources of ${what}">${label}${outdated ? html`<span class="cite-badge cite-outdated" title="changed since cited">!</span>` : ''}${pending ? html`<span class="cite-badge cite-pending" title="not published yet — becomes a citation when the value is published">…</span>` : ''}</summary>
+  return html`<details class="cite${edit ? ' cite-edit' : ''}" data-cite-key="${keyOf(target)}" data-cite-label="${what}"${edit ? html` data-cite-field="${target.field}" data-cite-edit="1"` : ''}><summary aria-label="sources of ${what}">${badges(cites)}</summary>
     <div class="cite-panel" role="dialog" aria-label="Sources of ${what}">
       <div class="cite-head"><b>Sources of ${what}</b><button type="button" class="link cite-close" aria-label="close">close ✕</button></div>
       <div class="cite-status small" aria-live="polite"></div>
@@ -316,6 +337,7 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
       <form method="post" action="/citations" class="form cite-add">
         ${target.relationship ? html`<input type="hidden" name="relationship" value="${target.relationship}">`
           : target.provenance ? html`<input type="hidden" name="provenance" value="${target.provenance}">`
+          : target.number ? html`<input type="hidden" name="number" value="${target.number}">`
           : html`<input type="hidden" name="type" value="${target.type}"><input type="hidden" name="id" value="${target.id}"><input type="hidden" name="field" value="${target.field}">`}
         <input type="hidden" name="back" value="${back}">
         ${edit ? html`<input type="hidden" name="expect" value="">` : ''}
@@ -337,6 +359,6 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
       </form></div></details>`;
 }
 
-module.exports = { CitationError, citableFields, forEntity, forRelationships, forProvenance, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
+module.exports = { CitationError, citableFields, forEntity, forRelationships, forProvenance, forNumbers, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
   pendingFromSource, citeAgreeingSource, citeRelationshipFromSource,
-  citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, recentSources, recentChips, keyOf };
+  citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, trigger, recentSources, recentChips, keyOf };

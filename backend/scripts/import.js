@@ -411,6 +411,7 @@ async function main() {
             kept.push(ins.rows[0].id);
             count('numbers inserted');
           }
+          if (n.sources !== undefined) await importCitations(client, { number: kept[kept.length - 1] }, n.sources);  // 081
           await client.query('RELEASE SAVEPOINT num');
         } catch (err) {
           await client.query('ROLLBACK TO SAVEPOINT num');
