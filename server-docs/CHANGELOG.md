@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Frontend: the place popup in a time window explains the markers' numbers
+- **What:** `map.ts` presencePopup — an artwork with numbered steps at the place is listed as on its marker ("steps 3,
+  6, 9 of 11", then each holder by its number; `stepsAtPlace` in `map-provenance.ts`, shared with the marker popup)
+  instead of plain "kept in" lines; everyone else as before. `openPresenceAt` finds the place from its data (nearest
+  within 30 px), not from what is painted — a click right after drawing came before the circles were rendered.
+- **Why:** owner: since the marker opens the place popup, the numbers on it were no longer explained.
+- **Revert:** revert the commit.
+
 ### Frontend: in a time window, a numbered stop opens the place's popup
 - **What:** `drawProvenance` takes `onStop`; on the start map in a time window a click on an artwork's numbered stop
   opens the popup of the place circle under it (everyone there, the artwork's steps, "At the same time here") instead

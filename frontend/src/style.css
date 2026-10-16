@@ -664,3 +664,6 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .featured-intro h2 { margin: .2rem 0 .3rem; font-size: 1.2rem; }
 .featured-intro .prose p { margin: .2rem 0; }
 @media (max-width: 600px) { .featured-all { margin-left: 0; flex-basis: 100%; } }
+/* the place popup in a time window: an artwork's numbered steps here, as on its marker */
+.popup-steps-block { margin: .45rem 0 .3rem; }
+.popup-steps-block + .popup-list { margin-top: .2rem; }

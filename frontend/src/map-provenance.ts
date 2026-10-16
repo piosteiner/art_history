@@ -86,6 +86,17 @@ export function clearProvenanceMarkers(map: MapLibre) {
 const entityLine = (d: { color: string; entity?: EntityMap['entity'] }) =>
   d.entity ? html`<div><i class="dot" style="background:${d.color}"></i> ${link(d.entity.type, d.entity.slug, d.entity.name)}</div>` : '';
 
+/** An artwork's numbered steps at one place, as in its stop's popup — for the place's popup on the start map in a time
+ *  window, so the numbers on the marker are explained there too. Empty when it has no step at that place. */
+export function stepsAtPlace(prov: ProvenanceMap, placeSlug: string, color: string, entity?: EntityMap['entity']) {
+  const steps = provenanceStops(prov).map((f) => f.properties).filter((st) => st.place.slug === placeSlug);
+  if (!steps.length) return null;
+  const label = stepRuns([...new Set(steps.map((st) => st.step))]);
+  return html`<div class="popup-steps-block">${entityLine({ color, entity })}
+    <span class="muted">${steps.length > 1 ? 'steps' : 'step'} ${label} of ${String(steps[0].steps)}</span>
+    <ol class="popup-list popup-steps">${steps.map(stepRow)}</ol></div>`;
+}
+
 /**
  * Provenances in the chain's order (not by date — the order is the reliable thing), each in its colour: numbered
  * stops, several steps at one place in one popup; lines solid where the handover is documented, dashed where it

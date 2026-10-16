@@ -1613,5 +1613,9 @@ test('in a time window a numbered stop opens the place\'s popup: one popup with 
   await expect(popup).toHaveCount(1);
   await expect(popup).toContainText('Salvador Dalí');                  // the place's popup, not only the artwork's steps
   await expect(popup).toContainText('Carrière aux environs de Pontoise');
-  await expect(popup).toContainText('Ambroise Vollard');
+  // the marker's numbers explained: the artwork's steps here, numbered as on the marker
+  const label = (await stop.innerText()).trim();                       // e.g. "3, 6, 9"
+  await expect(popup.locator('.popup-steps-block')).toContainText(`steps ${label} of`);
+  await expect(popup.locator('.popup-steps-block ol li').first()).toHaveAttribute('value', label.split(/[,–]/)[0].trim());
+  await expect(popup.locator('.popup-steps-block')).toContainText('Ambroise Vollard');
 });

@@ -2,7 +2,7 @@
 // museums and sites, events. Setup and shared helpers: map-core.ts; an artwork's provenance: map-provenance.ts.
 import { Popup, type Map as MapLibre } from 'maplibre-gl';
 import type { ExpressionSpecification } from 'maplibre-gl';
-import { html, href, link } from './html';
+import { html, href, link, type Html } from './html';
 import { encounterLine } from './crossings';
 import { encounterKeys, type Encounter } from './encounters';
 import { COLORS, PALETTE } from './colors';
@@ -10,7 +10,7 @@ import {
   addArrows, EVENT_LAYERS, fit, once, overlaps, popupOnClick, prop, removeLayers, setData, whenReady,
 } from './map-core';
 import {
-  clearProvenanceMarkers, drawProvenance, holderText, placedProvenance, provenanceLayers, provenanceStops, withoutReplaced,
+  clearProvenanceMarkers, drawProvenance, holderText, placedProvenance, provenanceLayers, provenanceStops, stepsAtPlace, withoutReplaced,
 } from './map-provenance';
 import type {
   EntityMap, EntityType, EventMapProps, EventsMap, Feature, LineStringGeometry, PlacesMap, PresenceMap,
@@ -401,6 +401,8 @@ export function showPresence(map: MapLibre, fc: PresenceMap, provenances: Map<st
       },
     })),
   };
+  windowProvenances.set(map, provenances);  // for the place popups (presencePopup)
+  windowPlaces.set(map, grouped.features as GeoJSON.Feature<GeoJSON.Point>[]);
   // the artworks' steps in the window, numbered as in their provenance, in their legend colour (as without a window)
   const colors = new Map(info.map((i) => [i.key, i.color]));
   const entityOf = new Map(fc.features.map((f) => [rowKey(f.properties), f.properties.entity] as const));
@@ -426,12 +428,26 @@ export function showPresence(map: MapLibre, fc: PresenceMap, provenances: Map<st
   return info;
 }
 
-// A place's popup on the start map in a time window: everyone there, and who could have met.
+// A place's popup on the start map in a time window: everyone there, and who could have met. An artwork with numbered
+// steps here (its provenance in the window) is listed with them, as on its marker — "steps 3, 6, 9 of 11", then
+// each holder by its number — instead of plain "kept in" lines.
+const windowProvenances = new WeakMap<MapLibre, Map<string, ProvenanceMap>>();
 const presencePopup = (map: MapLibre, features: { properties: Record<string, unknown> }[]) => html`${features.slice(0, 1).map((f) => {
   const rows = JSON.parse(f.properties.rows as string) as PresenceMap['features'][number]['properties'][];
   const venue = f.properties.venue ? JSON.parse(f.properties.venue as string) as { type: EntityType; slug: string; name: string } : null;
+  const colors = routeColorsOf.get(map);
+  const provs = windowProvenances.get(map) ?? new Map<string, ProvenanceMap>();
+  const blocks = new Map<string, Html>();
+  for (const r of rows) {
+    const key = rowKey(r);
+    const prov = provs.get(key);
+    if (!prov || blocks.has(key)) continue;
+    const block = stepsAtPlace(prov, f.properties.slug as string, colors?.get(key) ?? COLORS.provenance, r.entity as EntityMap['entity']);
+    if (block) blocks.set(key, block);
+  }
   return html`<div class="popup-row"><strong>${venue ? html`${link(venue.type, venue.slug, venue.name)}, ` : ''}<a href="${href('place', f.properties.slug as string)}">${f.properties.name as string}</a></strong>
-    ${placeRows(rows, routeColorsOf.get(map), !!venue)}${encountersHere(map, f.properties.slug as string, venue ? `${venue.type}/${venue.slug}` : null)}</div>`;
+    ${[...blocks.values()]}
+    ${placeRows(rows.filter((r) => !blocks.has(rowKey(r))), colors, !!venue)}${encountersHere(map, f.properties.slug as string, venue ? `${venue.type}/${venue.slug}` : null)}</div>`;
 })}`;
 
 function bindPresencePopups(map: MapLibre) {
@@ -440,13 +456,21 @@ function bindPresencePopups(map: MapLibre) {
 
 /** A numbered stop clicked in a time window: the popup of the place circle under it (it lists the artwork's steps there
  *  too), so the two overlapping things open one popup. False when there is no circle there. */
+// The place circles of the window on screen (their data, not what is rendered: a click right after drawing comes
+// before the circles are painted).
+const windowPlaces = new WeakMap<MapLibre, GeoJSON.Feature<GeoJSON.Point>[]>();
 function openPresenceAt(map: MapLibre, at: [number, number]): boolean {
-  if (!map.getLayer('presence-circles')) return false;
-  // a box around the stop: the stop's point (its place's marker) and the circle's (the stay) may differ by a few pixels
+  // the nearest circle within 30 px: the stop's point (its place's marker) and the circle's (the stay) may differ a little
   const p = map.project(at);
-  const features = map.queryRenderedFeatures([[p.x - 14, p.y - 14], [p.x + 14, p.y + 14]], { layers: ['presence-circles'] });
-  if (!features.length) return false;
-  new Popup({ maxWidth: '320px' }).setLngLat(at).setHTML(presencePopup(map, features as never).value).addTo(map);
+  let best: GeoJSON.Feature<GeoJSON.Point> | null = null;
+  let bestD = 30;
+  for (const f of windowPlaces.get(map) ?? []) {
+    const q = map.project(f.geometry.coordinates as [number, number]);
+    const d = Math.hypot(q.x - p.x, q.y - p.y);
+    if (d <= bestD) { best = f; bestD = d; }
+  }
+  if (!best) return false;
+  new Popup({ maxWidth: '320px' }).setLngLat(at).setHTML(presencePopup(map, [best as never]).value).addTo(map);
   return true;
 }
 
