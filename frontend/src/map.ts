@@ -133,7 +133,7 @@ export function showPoint(map: MapLibre, coords: [number, number], name: string)
 const PLACE_LAYERS = ['places-areas', 'places-circles'];
 const OVERVIEW_LAYERS = ['ov-routes', 'ov-routes-gap', 'ov-routes-implied', 'ov-arrows', 'ov-route-hover'];
 const SELECTION_LAYERS = ['sel-route', 'sel-arrows', 'sel-association', 'sel-presence', ...provenanceLayers('sel-prov')];
-const OVERLAY_LAYERS = ['enc-halo', ...OVERVIEW_LAYERS, ...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS];
+const OVERLAY_LAYERS = ['enc-halo', ...OVERVIEW_LAYERS, ...PLACE_LAYERS, 'presence-circles', ...SELECTION_LAYERS, ...provenanceLayers('win-prov')];
 const clearOverlays = (map: MapLibre) => {
   removeLayers(map, OVERLAY_LAYERS);
   clearProvenanceMarkers(map); // the selection's artwork provenances
@@ -267,12 +267,19 @@ function buildRoutes(
     const prov = provenances.get(key);
     if (prov) {
       const segments = prov.features.filter((f): f is Feature<LineStringGeometry, ProvenanceSegmentProps> => f.properties.layer === 'provenance_segment');
-      if (!segments.length) continue;
-      const steps = provenanceStops(prov).map((f) => f.properties);
+      const stopFeatures = provenanceStops(prov);
+      if (!segments.length && !stopFeatures.length) continue;
+      const steps = stopFeatures.map((f) => f.properties);
       const props = {
         key, name: e.name, type: e.type, slug: e.slug, color: PALETTE[n++ % PALETTE.length], provenance: true,
         stops: JSON.stringify(steps.map((st) => ({ step: st.step, place: st.place.name, slug: st.place.slug, label: holderText(st), period: st.period?.label ?? '' }))),
       };
+      // in the window it stayed in one place: no line, but its colour in the legend and its numbered stop (showPresence) —
+      // a Point feature only for the legend; the line layers get the lines alone
+      if (!segments.length) {
+        routes.push({ type: 'Feature', geometry: stopFeatures[0].geometry, properties: { ...props, style: 'stop' } });
+        continue;
+      }
       for (const f of segments) {
         const style = f.properties.move ? 'direct' : f.properties.implied ? 'implied' : f.properties.direct ? 'direct' : 'gap';
         routes.push({ type: 'Feature', geometry: f.geometry, properties: { ...props, style } });
@@ -394,9 +401,14 @@ export function showPresence(map: MapLibre, fc: PresenceMap, provenances: Map<st
       },
     })),
   };
+  // the artworks' steps in the window, numbered as in their provenance, in their legend colour (as without a window)
+  const colors = new Map(info.map((i) => [i.key, i.color]));
+  const entityOf = new Map(fc.features.map((f) => [rowKey(f.properties), f.properties.entity] as const));
+  const numbered = [...provenances].filter(([key, prov]) => colors.has(key) && provenanceStops(prov).length)
+    .map(([key, prov]) => ({ prov: { ...prov, features: provenanceStops(prov) }, color: colors.get(key)!, entity: entityOf.get(key) as EntityMap['entity'] | undefined }));
   whenReady(map, () => {
     clearOverlays(map);
-    addRouteLayers(map, routes);
+    addRouteLayers(map, routes.filter((r) => r.geometry.type === 'LineString'));
     setData(map, 'presence', grouped);
     map.addLayer({
       id: 'presence-circles', type: 'circle', source: 'presence',
@@ -406,6 +418,7 @@ export function showPresence(map: MapLibre, fc: PresenceMap, provenances: Map<st
         'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5,
       },
     });
+    drawProvenance(map, 'win-prov', numbered);  // only the stops: the lines are the routes above
     once(map, 'presence', () => bindPresencePopups(map));
     once(map, 'routes', () => bindRoutes(map));
   });

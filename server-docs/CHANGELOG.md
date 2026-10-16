@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Frontend: in a time window, an artwork that stayed in one place keeps its legend entry and numbered stop
+- **What:** `frontend/src/map.ts` — `buildRoutes` skipped an artwork whose provenance has no segment in the window
+  (no colour, no legend entry); now it gets its colour (a Point feature for the legend only — the line layers get only
+  lines). `showPresence` draws the artworks' steps in the window as numbered stops (`drawProvenance` with the stops
+  only, prefix `win-prov`, cleared with the other overlays), as without a window. Test in `site.spec.ts`.
+- **Why:** owner: Dalí + "Carrière aux environs de Pontoise" in 1926–1927 — the painting (with Vollard in Paris) didn't
+  appear in the legend and had no provenance marker.
+- **Revert:** revert the commit.
+
 ### Frontend: lists and the header search are fetched again after 5 minutes
 - **What:** `frontend/src/api.ts` keeps API responses in memory for 5 minutes (before: for the page's whole lifetime);
   `src/search.ts` reloads its index of every entry after 5 minutes likewise. Test in `site.spec.ts` (fake clock).

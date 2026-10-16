@@ -1587,3 +1587,14 @@ test('a tab left open sees entries added meanwhile (the lists are fetched again 
   await page.fill('.filter', 'Zz Test Fresh');
   await expect(page.locator('#items .card')).toHaveCount(1);
 });
+
+test('in a time window an artwork that stayed in one place keeps its colour in the legend and its numbered stop', async ({ page }) => {
+  await page.goto('/?artists=salvador-dali&artworks=carriere-aux-environs-de-pontoise&movements=none&polities=none&people=none&from=1926&to=1927');
+  await expect(page.locator('#map-status')).toContainText('in 1926–1927');
+  await expect(page.locator('#legend')).toContainText('Carrière aux environs de Pontoise');  // with Vollard in Paris all the window
+  await expect(page.locator('#legend')).toContainText('Salvador Dalí');
+  await expect(page.locator('.prov-stop').first()).toBeVisible();                     // its step, numbered as in the provenance
+  await page.locator('#chips .chip').click();                                            // the window removed: the whole provenance
+  await expect(page.locator('#map-status')).toContainText('chosen entries on the map');
+  await expect(page.locator('.prov-stop')).not.toHaveCount(0);
+});
