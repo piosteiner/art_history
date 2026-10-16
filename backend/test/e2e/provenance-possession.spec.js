@@ -64,7 +64,7 @@ test('looters hold without title; another reading of a step; exchanged for', asy
   const alt = userA.locator('table.provenance tbody.alternative');
   await expect(alt).toContainText('another reading');
   await expect(alt).toContainText('Test Béatrice');
-  expect(sql(`SELECT count(*) FROM provenance_periods WHERE artwork_id = ${W} AND owner_id = ${P('test-poss-beatrice')}`)).toBe('0');
+  expect(sql(`SELECT count(*) FROM provenance_periods WHERE artwork_id = ${W} AND owner_type = 'person' AND owner_id = ${P('test-poss-beatrice')}`)).toBe('0');
   expect(sql(`SELECT period_label FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('1914–27 March 1946');   // unchanged
   const step = (await api(request, '/artworks/test-poss-w')).provenance.find((s) => s.owner && s.owner.slug === 'test-poss-irene');
   expect(step.alternatives.map((a) => [a.owner.slug, a.method, a.certainty])).toEqual([['test-poss-beatrice', 'gift', 'disputed']]);

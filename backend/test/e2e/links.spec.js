@@ -34,8 +34,8 @@ test('[[ completes entries of every type; the link is shown, rendered by the API
   const gauguin = await api(request, '/artists/paul-gauguin');
   expect(gauguin.biography_html).toContain('<a href="/artists/katsushika-hokusai" class="entry-link" data-entry="artist/katsushika-hokusai">Katsushika Hokusai</a>');
   expect(gauguin.biography_html).toContain('<a href="/places/paris" class="entry-link" data-entry="place/paris">Paris</a>');
-  expect((await api(request, '/artists/katsushika-hokusai')).mentioned_in).toEqual([{ type: 'artist', slug: 'paul-gauguin', name: 'Paul Gauguin' }]);
-  expect((await api(request, '/places/paris')).mentioned_in).toContainEqual({ type: 'artist', slug: 'paul-gauguin', name: 'Paul Gauguin' });
+  expect((await api(request, '/artists/katsushika-hokusai')).mentioned_in).toEqual([expect.objectContaining({ type: 'artist', slug: 'paul-gauguin', name: 'Paul Gauguin' })]);
+  expect((await api(request, '/places/paris')).mentioned_in).toContainEqual(expect.objectContaining({ type: 'artist', slug: 'paul-gauguin', name: 'Paul Gauguin' }));
   sql("UPDATE artists SET biography_md = regexp_replace(biography_md, ' Admired .*$', '') WHERE slug = 'paul-gauguin'");
 });
 

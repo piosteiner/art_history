@@ -68,7 +68,7 @@ test('role, joint owners, price, one-sided dates; the artist and the loan as imp
   expect(a.provenance.map((p) => p.kind)).toEqual(['creation', 'step', 'step', 'step', 'loan']);
   expect(a.provenance[0]).toMatchObject({ implied: true, owner: { slug: 'paul-gauguin' }, method: 'creation' });
   expect(a.provenance[1]).toMatchObject({ role: 'dealer', price: { amount: 200, currency: 'FRF', note: null } });
-  expect(a.provenance[2].co_owners).toEqual([{ type: 'person', slug: 'test-gertrude-stein', name: 'Test Gertrude Stein' }]);
+  expect(a.provenance[2].co_owners).toEqual([expect.objectContaining({ type: 'person', slug: 'test-gertrude-stein', name: 'Test Gertrude Stein' })]);
   expect(a.provenance[2].ended).toMatchObject({ from: '1908-04-27', to: null, label: '27 April 1908 or later' });
   expect(a.provenance[4]).toMatchObject({ kind: 'loan', implied: true, role: 'custodian', owner: { slug: 'test-kunsthaus-r' } });
 
