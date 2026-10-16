@@ -8,8 +8,10 @@ const { html } = require('../html');
 const { search, resultsPage, lookup } = require('../search');
 const quality = require('../quality');
 const placefinder = require('../placefinder');
-const { humanize } = require('../forms');
-const { PAGE, send, when, history, historyTable, pager, pageParam } = require('../core');
+const { humanize, formToDoc } = require('../forms');
+const autocreate = require('../autocreate');
+const wikidata = require('../wikidata');
+const { PAGE, send, when, history, historyTable, pager, pageParam, withTx, UserError, friendly } = require('../core');
 
 const router = express.Router();
 
@@ -85,6 +87,44 @@ router.get('/lookup', async (req, res) => {
   const types = String(req.query.types || '').split(',').filter((x) => BY_TYPE[x]);
   if (!q || !types.length) return res.json([]);
   res.json(await lookup(adminPool, q, types));
+});
+
+// A new entry from a [[link]] being typed (editor: "+ Create …"): a minimal entry by its name, marked "to complete" —
+// or the existing one of that type and name (no duplicates). A place needs a position: the place finder's first
+// OpenStreetMap hit, drafted as on "+ find a place…" (names, Wikidata point, parent region).
+router.post('/lookup/create', async (req, res) => {
+  const type = String(req.body.type || '');
+  const name = String(req.body.name || '').trim().replace(/\s+/g, ' ').slice(0, 200);
+  const t = BY_TYPE[type];
+  if (!t || !name) return res.status(400).json({ error: 'Pick a type and give a name.' });
+  const same = (await adminPool.query(`SELECT slug, name FROM entity_index WHERE type = $1::entity_type
+    AND lower(f_unaccent(name)) = lower(f_unaccent($2)) LIMIT 1`, [type, name])).rows[0];
+  if (same) return res.json({ type, slug: same.slug, name: same.name, existing: true });
+  try {
+    const made = await withTx(req.user, async (db) => {
+      if (type === 'place') {
+        const hits = await placefinder.candidates(name);
+        if (!hits.length) throw new UserError(`OpenStreetMap knows no place "${name}" — create it with "+ find a place…" on the Places page.`);
+        const draft = await placefinder.draftFor(db, hits[0], wikidata.coordsOf, wikidata.slugify);
+        const { doc } = formToDoc(draft.form, t.fields);
+        const parent = await autocreate.resolveRefs(adminPool, t, doc, {});
+        if (parent.errors.length) delete doc.parent;
+        else {
+          const slugs = await autocreate.create(db, parent.creates);
+          if (slugs.has('parent')) doc.parent = slugs.get('parent');
+        }
+        const slug = await wikidata.createEntry(db, 'place', doc, null, req.user.id, doc.wikidata_id || null);
+        return { slug, name: doc.name };
+      }
+      const c = [{ key: 'new', type, name }];
+      await autocreate.create(db, c);
+      await autocreate.flag(db, type, c[0].id, null, req.user.id);
+      return { slug: c[0].slug, name };
+    });
+    res.json({ type, ...made });
+  } catch (err) {
+    res.status(422).json({ error: err instanceof UserError ? err.message : friendly(err) });
+  }
 });
 
 // Data quality (checks: view quality_issues_live, migration 013; stored result: quality_issues, 058; src/admin/quality.js)

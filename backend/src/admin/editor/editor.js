@@ -58,6 +58,13 @@ const theme = EditorView.theme({
   '.cm-line': { padding: '0' },
   '.cm-placeholder': { color: 'var(--muted)' },
   '&.cm-focused .cm-selectionBackground, .cm-selectionBackground': { background: 'color-mix(in srgb, var(--accent) 25%, transparent)' },
+  // the [[ suggestions: the panel's colours (CodeMirror's own are light — bright text on bright ground in dark mode)
+  '.cm-tooltip': { background: 'var(--panel)', color: 'var(--fg)', border: '1px solid var(--line)', borderRadius: '6px' },
+  '.cm-tooltip.cm-tooltip-autocomplete > ul': { fontFamily: 'inherit', maxHeight: '16em' },
+  '.cm-tooltip.cm-tooltip-autocomplete > ul > li': { padding: '.2rem .6rem' },
+  '.cm-tooltip.cm-tooltip-autocomplete > ul > li[aria-selected]': { background: 'var(--accent)', color: 'var(--accent-fg)' },
+  '.cm-completionDetail': { color: 'var(--muted)', fontStyle: 'normal', marginLeft: '.6rem' },
+  '.cm-tooltip-autocomplete li[aria-selected] .cm-completionDetail': { color: 'inherit', opacity: '.85' },
 });
 
 // Toggle a wrapper like ** or * around the selection (or insert an empty pair at the cursor).
@@ -160,17 +167,98 @@ async function entryCompletions(context) {
     if (res.ok) hits = await res.json();
   } catch { return null; }
   const after = context.state.sliceDoc(context.pos, context.pos + 2);  // "]]" already typed after the cursor?
-  return {
-    from: m.from,
-    to: after === ']]' ? context.pos + 2 : context.pos,
-    filter: false,
-    options: hits.map((h) => ({
-      label: h.name,
-      detail: [h.type === 'term' ? 'glossary' : h.type, h.period_label].filter(Boolean).join(' · '),
-      type: 'text',
-      apply: h.type === 'term' ? `[[${h.slug}]]` : `[[${h.type}/${h.slug}]]`,
-    })),
+  const options = hits.map((h) => ({
+    label: h.name,
+    detail: [h.type === 'term' ? 'glossary' : h.type, h.period_label].filter(Boolean).join(' · '),
+    type: 'text',
+    apply: h.type === 'term' ? `[[${h.slug}]]` : `[[${h.type}/${h.slug}]]`,
+  }));
+  // nothing of that exact name: "+ Create …" — as in Obsidian, a link to what doesn't exist yet makes it.
+  // "[[person/james-cook" → a person "James Cook" at once; "[[James Cook" → its type chosen in a small box.
+  const name = nameOfTyped(q);
+  const type = typed && LINK_TYPES.includes(typed[1]) ? typed[1] : null;
+  if (name.length >= 2 && !hits.some((h) => fold(h.name) === fold(name) && (!type || h.type === type))) {
+    options.push({
+      label: type ? `＋ Create ${TYPE_NAME[type].toLowerCase()} “${name}”` : `＋ Create “${name}”…`,
+      detail: 'new entry', type: 'text',
+      apply: (view, _completion, from, to) => createLinked(view, from, to, name, type),
+    });
+  }
+  return { from: m.from, to: after === ']]' ? context.pos + 2 : context.pos, filter: false, options };
+}
+
+const fold = (t) => String(t).normalize('NFD').replace(/\p{M}/gu, '').toLowerCase().trim();
+// "james-cook" (a slug typed by hand) → "James Cook"; anything else as typed
+const nameOfTyped = (q) => (/^[a-z0-9]+(-[a-z0-9]+)+$/.test(q) ? q.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : q.replace(/\s+/g, ' '));
+const TYPE_NAME = { person: 'Person', artist: 'Artist', artwork: 'Artwork', institution: 'Institution', place: 'Place',
+  movement: 'Movement', event: 'Event', polity: 'Polity', term: 'Glossary term', source: 'Source' };
+const TYPE_HINT = { place: ' (looked up on OpenStreetMap)', polity: ' (state, dynasty …)', source: ' (bibliography)' };
+const LAST_TYPE = 'arthistory-admin:link-type';
+
+// Creates the entry (POST /lookup/create: minimal, "to complete"; an existing one of that name is used) and puts the
+// link where "[[name" was typed. With no type given, a small box asks for it first.
+function createLinked(view, from, to, name, type) {
+  const typedText = view.state.sliceDoc(from, to);
+  const make = async (chosen) => {
+    let res;
+    try {
+      res = await fetch('/lookup/create', { method: 'POST', credentials: 'same-origin',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded', Accept: 'application/json' },
+        body: new URLSearchParams({ type: chosen, name }) });
+    } catch { return 'Not created — no connection.'; }
+    const body = await res.json().catch(() => ({}));
+    if (!res.ok) return body.error || `Not created (${res.status}).`;
+    const link = chosen === 'term' ? `[[${body.slug}]]` : `[[${chosen}/${body.slug}]]`;
+    // others may have typed meanwhile (shared working copy): the typed text where it was, else nearby, else the cursor
+    let at = view.state.sliceDoc(from, from + typedText.length) === typedText ? from
+      : view.state.doc.toString().indexOf(typedText, Math.max(0, from - 500));
+    const len = at >= 0 ? typedText.length : 0;
+    if (at < 0) at = view.state.selection.main.head;
+    view.dispatch({ changes: { from: at, to: at + len, insert: link }, selection: { anchor: at + link.length }, userEvent: 'input' });
+    view.focus();
+    return null;
   };
+  if (type) { make(type).then((err) => err && window.alert(err)); return; }
+  typeChooser(view, from, name, make);
+}
+
+function typeChooser(view, pos, name, make) {
+  const box = document.createElement('div');
+  box.className = 'link-create';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-label', `Create “${name}”`);
+  const label = Object.assign(document.createElement('label'), { textContent: `Create “${name}” as ` });
+  const select = document.createElement('select');
+  let last = 'person';
+  try { last = localStorage.getItem(LAST_TYPE) || last; } catch { /* storage off */ }
+  for (const t of Object.keys(TYPE_NAME)) select.append(new Option(TYPE_NAME[t] + (TYPE_HINT[t] || ''), t, false, t === last));
+  label.append(select);
+  const ok = Object.assign(document.createElement('button'), { type: 'button', textContent: 'Create' });
+  const cancel = Object.assign(document.createElement('button'), { type: 'button', textContent: 'Cancel', className: 'secondary' });
+  const msg = Object.assign(document.createElement('div'), { className: 'hint error', hidden: true });
+  const note = Object.assign(document.createElement('div'), { className: 'hint', textContent: 'A new entry with just its name, marked “to complete”.' });
+  box.append(label, ok, cancel, msg, note);
+  const c = view.coordsAtPos(pos) || view.dom.getBoundingClientRect();
+  Object.assign(box.style, { left: `${Math.round(c.left + window.scrollX)}px`, top: `${Math.round(c.bottom + window.scrollY + 6)}px` });
+  document.body.append(box);
+  select.focus();
+  const close = () => { box.remove(); document.removeEventListener('mousedown', outside, true); view.focus(); };
+  const outside = (e) => { if (!box.contains(e.target)) close(); };
+  document.addEventListener('mousedown', outside, true);
+  const go = async () => {
+    ok.disabled = true;
+    ok.textContent = 'Creating…';
+    const err = await make(select.value);
+    if (err) { msg.textContent = err; msg.hidden = false; ok.disabled = false; ok.textContent = 'Create'; return; }
+    try { localStorage.setItem(LAST_TYPE, select.value); } catch { /* storage off */ }
+    close();
+  };
+  ok.addEventListener('click', go);
+  cancel.addEventListener('click', close);
+  box.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { e.preventDefault(); close(); }
+    if (e.key === 'Enter') { e.preventDefault(); go(); }
+  });
 }
 
 // collab: { ytext, awareness, undoManager } — edit a shared working copy's text (live step 2): the Y.Text is the source,

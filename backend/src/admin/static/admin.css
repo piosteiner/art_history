@@ -435,3 +435,11 @@ figure.coverage i.cov-era { background: var(--err-bg); }
 .cov-warn { color: var(--err); }
 table.provenance tbody.gap td { padding-top: .35rem; padding-bottom: .35rem; background: var(--err-bg); }
 table.provenance tbody.gap td:first-child { border-left: 3px solid var(--err); }
+/* "+ Create …" in the [[ suggestions: the type chooser (editor.js typeChooser) */
+.link-create { position: absolute; z-index: 1000; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; max-width: 34rem;
+  background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: .6rem .7rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .25); }
+.link-create label { display: inline-flex; align-items: center; gap: .4rem; margin: 0; font-weight: normal; }
+.link-create select { width: auto; margin: 0; }
+.link-create .hint { flex-basis: 100%; margin: 0; }
+.link-create .hint.error { color: var(--err); }

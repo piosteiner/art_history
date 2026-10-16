@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Admin: create an entry from a [[link]] being typed; readable suggestions in dark mode
+- **What:** `editor/editor.js` — when nothing has exactly the typed name, the `[[` suggestions end with "＋ Create
+  “James Cook”…": a small box asks for the type (remembered for next time), then `POST /lookup/create`
+  (`routes/dashboard.js`) makes a minimal entry marked "to complete" — or returns the existing one of that type and
+  name — and the link replaces the typed text. `[[person/james-cook` offers "＋ Create person “James Cook”" directly
+  (name from the slug). A place is looked up with the place finder (first OpenStreetMap hit, as "+ find a place…").
+  The suggestion list uses the panel's colours (CodeMirror's light default made unselected options unreadable in
+  dark mode). e2e `linkcreate.spec.js`.
+- **Why:** owner: create linked entries like in Obsidian; bright text on bright ground in the suggestions.
+- **Revert:** redeploy the previous commit.
+
 ### Frontend: in a time window, an artwork that stayed in one place keeps its legend entry and numbered stop
 - **What:** `frontend/src/map.ts` — `buildRoutes` skipped an artwork whose provenance has no segment in the window
   (no colour, no legend entry); now it gets its colour (a Point feature for the legend only — the line layers get only
