@@ -15,15 +15,20 @@ export class ApiError extends Error {
 
 type Params = Record<string, string | number | undefined | null>;
 
-// Responses are cacheable for 60 s anyway; keeping them for the page's lifetime makes back/forward instant.
+// Responses are kept for 5 minutes: back/forward and returning to a list stay instant, and a tab left open for
+// hours still sees new entries (kept for the page's whole lifetime, a list could miss everything added since).
+const KEEP_MS = 5 * 60 * 1000;
 const cache = new Map<string, Promise<unknown>>();
+const fetchedAt = new Map<string, number>();
 
 function get<T>(path: string, params: Params = {}): Promise<T> {
   const qs = new URLSearchParams();
   for (const [k, v] of Object.entries(params)) if (v !== undefined && v !== null && v !== '') qs.set(k, String(v));
   const url = `${BASE}${path}${qs.size ? `?${qs}` : ''}`;
+  if (Date.now() - (fetchedAt.get(url) ?? 0) > KEEP_MS) cache.delete(url);
   let p = cache.get(url) as Promise<T> | undefined;
   if (!p) {
+    fetchedAt.set(url, Date.now());
     p = fetch(url, { headers: { Accept: 'application/json' } }).then(async (res) => {
       const body = await res.json().catch(() => null);
       if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText);

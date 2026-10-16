@@ -2,6 +2,15 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-16
+
+### Frontend: lists and the header search are fetched again after 5 minutes
+- **What:** `frontend/src/api.ts` keeps API responses in memory for 5 minutes (before: for the page's whole lifetime);
+  `src/search.ts` reloads its index of every entry after 5 minutes likewise. Test in `site.spec.ts` (fake clock).
+- **Why:** owner: searching "gau" found 3 of 63 artworks — the tab had loaded the list before 10 artworks (most of them
+  Gauguin's) were added; a fresh load finds 13 of 73.
+- **Revert:** revert the commit (GitHub Pages republishes).
+
 ## 2026-10-15
 
 ### Provenance coverage: gaps and time periods without a known holder (migration 078)

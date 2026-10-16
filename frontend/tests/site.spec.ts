@@ -1562,3 +1562,28 @@ test('a long selection gets a short address; the short address opens the same se
   await page.goto('/?v=00000000');
   await expect(page.locator('.explore')).toContainText('This short link is unknown');
 });
+
+test('a tab left open sees entries added meanwhile (the lists are fetched again after 5 minutes)', async ({ page }) => {
+  await page.clock.install();
+  let calls = 0;
+  await page.route(/\/v1\/artworks\?.*limit=500/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    if (++calls > 1) {  // added after the first visit
+      body.data.push({ ...body.data[0], slug: 'zz-test-fresh-artwork', title: 'Zz Test Fresh Artwork', names: [], alt_titles: [] });
+      body.total += 1;
+    }
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks');
+  await expect(page.locator('.card').first()).toBeVisible();
+  await page.fill('.filter', 'Zz Test Fresh');
+  await expect(page.locator('#items .card')).toHaveCount(0);
+  await page.locator('header a[href="/artists"]').first().click();              // elsewhere in the site, no reload
+  await expect(page.locator('.card').first()).toBeVisible();
+  await page.clock.fastForward('06:00');                                       // six minutes later
+  await page.locator('header a[href="/artworks"]').first().click();
+  await expect(page.locator('.card').first()).toBeVisible();
+  await page.fill('.filter', 'Zz Test Fresh');
+  await expect(page.locator('#items .card')).toHaveCount(1);
+});

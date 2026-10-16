@@ -20,14 +20,18 @@ interface Hit {
 }
 
 let library: Promise<Entry[]> | undefined;
-/** Every entry of every type, loaded once on first use; the API caches the lists. */
-const loadLibrary = () =>
-  (library ??= Promise.all(PLURALS.map((p) => listAll(p).then((r) => entries(p, r.data as never) as Entry[])))
+let libraryAt = 0;
+/** Every entry of every type, loaded on first use and again after 5 minutes (a tab left open sees new entries). */
+const loadLibrary = () => {
+  if (Date.now() - libraryAt > 5 * 60 * 1000) library = undefined;
+  if (!library) libraryAt = Date.now();
+  return (library ??= Promise.all(PLURALS.map((p) => listAll(p).then((r) => entries(p, r.data as never) as Entry[])))
     .then((lists) => lists.flat())
     .catch((err) => {
       library = undefined;
       throw err;
     }));
+};
 
 export function mountSearch(root: HTMLElement) {
   render(root, html`<form class="search-form" role="search">
