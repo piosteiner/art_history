@@ -366,7 +366,53 @@ the order they were created.
 - Slugs of digits only ("1984") still work: a number that names no entry is tried as a slug.
 
 ## Search
-`GET /v1/search?q=edo` — top 20 matches across all types: `{type, slug, name, kind, period, score}`.
+`GET /v1/search?q=edo` — top 20 name matches across all types: `{type, slug, public_id, name, kind, period, sort_key, score}`
+(trigram similarity, typo-tolerant — for completion while typing).
+
+### Full-text search (087)
+`GET /v1/search/text?q=…[&type=artwork&limit=20&offset=0]` — names **and texts**: biographies, descriptions,
+definitions, sources' authors and containers, provenance steps (holder label, notes, the method — "confiscation").
+Web-search syntax: `"a phrase"`, `-excluded`, `or`. Stemmed in English, German and French at once ("paintings" →
+"painted", "Gemälden" → "Gemälde"), accents folded ("Irene" = "Irène"); names also by trigram, so "Gaugin" finds the name.
+→ `{total, data: [{type, slug, public_id, path, name, kind, period, matched_in, provenance_ids, score, headline_html}]}`:
+- `matched_in`: `name` (the name or another name; or only a close name) · `text` (the entry's texts) · `provenance`
+  (one of an artwork's provenance steps: `provenance_ids`, best first).
+- `headline_html`: the matching passage(s), joined by " … ", the words in `<mark>`; the text is escaped — insert as HTML.
+  `null` when only the name matched.
+- `type` is one of `artist, artwork, institution, person, movement, place, polity, term, source, event` (400 otherwise).
+
+## Network (088)
+An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.
+- `GET /v1/network/path?from=<entry>&to=<entry>[&via=person,artist&max=6]` — the shortest chain of relationships and
+  provenance links (owned by, held by, handed to …, both directions) → `{from, to, found, length, steps: [{from, to,
+  relationship_type, reads, forward, period, note, certainty, provenance_id}]}`; each step reads "`from` `reads` `to`"
+  ("owned by", "created by" …). `via` = the types allowed **in between** (default artist, artwork, institution, person,
+  event, movement — places would connect everyone in Paris); the ends may be anything. `max` 1–10 steps.
+- `GET /v1/network/hands?from=1933&to=1945` — through whose hands works went in a window: `holders: [{holder, roles
+  (owner · custodian · possessor …), flag (068), artworks: [ref]}]` (most works first) and `handovers: [{from, to,
+  artwork, period, note, certainty, provenance_id}]` dated in the window.
+- `GET /v1/network/shared-hands?artwork=<entry>[&depth=2&current=1]` — works that went through the same hands:
+  `data: [{artwork, depth, via, holders: [ref + together], together}]`; depth 1 = a holder in common with this work,
+  depth 2 = with one of those (`via`) … up to 4. `together`: held at the same time. Not the artist, and not hands both
+  works are still in (a museum's whole collection) unless `current=1`.
+
+## Versions: as of a date (089)
+- `GET /v1/<plural>/<number or slug>?as_of=2026-10-12` (the end of that day, Zurich time; today = now) or
+  `?as_of=2026-10-12T14:03:00.123456Z` — the entry **as recorded then**, rebuilt from the audit log:
+  `{type, as_of, requested, history_since, version, current, deleted, entry: {…its fields then}, relationships:
+  [{relationship_type, reads, direction, other, period, label, certainty, notes_md}], provenance: [{id, position, role,
+  method, direct, certainty, holder, holder_label, acquired, ended, label, notes_md, alternative_to}] (artworks),
+  changes_since: [{changed_at, table, action, fields, source}]}`.
+  - `version`: the moment of the last change at or before `as_of` — cite with it, it never changes.
+  - `current`: the entry now (`path` to link "see the current version"); `null` and `deleted: true` when it was
+    deleted or merged away since — a citation of it keeps working (by number or slug).
+  - `other` / `holder`: the other entries **as they are now** (current names and paths); `{type, name: null, gone: true}`
+    when one no longer exists.
+  - 404 before the entry existed; 400 for a bad date, a date before `history_since` (logging began 2026-09-28).
+  Moments carry microseconds — pass them back as given.
+- `GET /v1/history/<plural>/<number or slug>` — its versions, newest first: `{type, current, deleted, history_since,
+  versions: [{changed_at, as_of, sources (admin · import · wikidata …), tables, changes}]}` — every transaction that
+  changed the entry, its relationships, citations, images or (artworks) provenance and further numbers.
 
 ## Vocabulary
 `GET /v1/vocabulary` — relationship types: `code, label, inverse_label, category, is_physical_presence, is_symmetric,

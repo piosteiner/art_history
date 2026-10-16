@@ -553,3 +553,29 @@ falls into the acquisition window), `from_estate`, `travelled` (PostGIS distance
 was then, and their stays — merged, without the uncertain first and last year of a stay given in years:
 `presence_core()` — cover the window). Checks: `holder_after_death`, `holder_before_birth`, `acquired_before_creation`,
 `created_where_artist_was_not` (errors), `provenance_date_narrowable` (info).
+
+## Full-text search (migration 087)
+Text search configurations `search_simple` / `search_en` / `search_de` / `search_fr` (Postgres' own with `unaccent` in
+front of the stemmer). `search_vector(a, b, c, d)` = weighted A name, B other names, C texts, D the rest, each read in
+all four (`search_lexemes()`); one GIN **expression index** per entry table and on `provenance` — no stored column (the
+audit log copies whole rows). View `search_documents` (type, id, part `entry`/`provenance`, provenance_id, doc, body)
+repeats the indexed expressions, so `doc @@ search_query(q)` uses the indexes. `md_plain()` turns Markdown into text;
+`search_join()` / `search_method()` are IMMUTABLE wrappers (array_to_string, concat_ws and enum labels are only STABLE —
+renaming an acquisition method needs `REINDEX INDEX provenance_search_idx`). `search_headline()`: `ts_headline` in the
+configuration that matched, marks `\x01…\x02`.
+
+## Network (migration 088)
+`graph_links` (table): the `edges` view stored, rewritten by `refresh_quality()` after every committed change (a
+table rather than a materialized view: REFRESH runs with a restricted search_path since Postgres 17, and readers keep
+the old copy until the commit). `entry_path()` — plpgsql breadth-first search with a jsonb "seen" map (a recursive CTE
+can't skip entries reached before, so it would follow every path); `hands_network(daterange)` → JSON {holders,
+handovers}; `shared_hands()` — recursive CTE over (work, depth) with UNION and `SEARCH BREADTH FIRST`.
+
+## Versions as of a moment (migration 089)
+From `audit_log`: `rows_as_of(table, ts, filter jsonb)` — a row's state at ts is its last logged state at or before
+ts (unless deleted), else the state before its next change (unless that was its insertion), else as it is now;
+`DISTINCT ON (row_id) … ORDER BY row_id, id DESC` on `audit_log_row_idx`. `entry_row_id()` finds deleted entries too;
+`entry_log()` = the log entries about an entry (own row, relationships, citations, images, provenance, numbers);
+`entry_versions()` one row per transaction; `changed_fields()`; `history_since()` = when migration 006 was applied.
+SECURITY DEFINER: the API role still can't read `audit_log` (user ids); `public_row()` drops `metadata`, `created_by`.
+

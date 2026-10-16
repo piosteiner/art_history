@@ -4,6 +4,35 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Citable versions: entries as of a date (migration 089)
+- **What:** functions over `audit_log`: `rows_as_of(table, ts, filter)`, `entry_row_id()` (also deleted entries),
+  `entry_log()`, `entry_versions()`, `changed_fields()`, `history_since()`, `public_row()` — SECURITY DEFINER, content
+  only (the API role still has no access to `audit_log`). API: `?as_of=<date or moment>` on every detail
+  (`src/routes/history.js`: the entry's fields, relationships, provenance as recorded then; the changes since) and
+  `GET /v1/history/<plural>/<entry>` (its versions). E2E `as-of.spec.js`.
+- **Why:** owner: use more of Postgres — a citation can point to the version it quotes, however the entry is corrected later.
+- **Revert:** `DROP FUNCTION entry_versions, entry_log, entry_row_id, rows_as_of, changed_fields, public_row,
+  audited_table, history_since;` delete `089_as_of.sql` from `schema_migrations`; revert the commit.
+
+### Network questions: paths, hands in a window, shared hands (migration 088)
+- **What:** table `graph_links` (the `edges` view stored, rewritten by `refresh_quality()` after each change);
+  `entry_path()` (breadth-first, jsonb "seen" map), `hands_network(daterange)`, `shared_hands()` (recursive CTE, UNION
+  + SEARCH BREADTH FIRST). API `/v1/network/path`, `/hands`, `/shared-hands` (`src/routes/network.js`). E2E `network.spec.js`.
+- **Why:** owner: use more of Postgres — "how are these two connected?", "through whose hands 1933–1945?", "which
+  works went through the same hands?".
+- **Revert:** `DROP FUNCTION entry_path, hands_network, shared_hands; DROP TABLE graph_links;` then restore
+  `refresh_quality()` from `058`/`086` (without the graph lines); delete `088_network.sql` from `schema_migrations`;
+  revert the commit.
+
+### Full-text search over names and texts (migration 087)
+- **What:** text search configurations `search_simple/en/de/fr` (unaccent + stemmer), `search_vector()`,
+  `search_query()`, `search_headline()`, `md_plain()`; GIN expression indexes on the ten entry tables and
+  `provenance`; view `search_documents`. API `GET /v1/search/text` (ranked, `<mark>` passages, `matched_in`).
+  E2E `search-text.spec.js`.
+- **Why:** owner: use more of Postgres — the search found names only, not what the texts and provenance say.
+- **Revert:** `DROP VIEW search_documents;` drop the `*_search_idx` indexes, the functions and the four configurations;
+  delete `087_full_text_search.sql` from `schema_migrations`; revert the commit.
+
 ### Biography × provenance: conclusions from lives and whereabouts, contradictions as errors (migration 086)
 - **What:** view `provenance_inferences` (narrowed by a death, from the estate, travelled — PostGIS distances;
   `presence_core()` drops the uncertain first/last year of a stay given in years), checks `holder_after_death`,

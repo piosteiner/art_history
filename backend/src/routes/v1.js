@@ -3,6 +3,8 @@ const { apiPool } = require('../db');
 const { router: entities, ENTITIES } = require('./entities');
 const map = require('./map');
 const graph = require('./graph');
+const network = require('./network');
+const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
 
@@ -49,6 +51,60 @@ router.get('/search', async (req, res) => {
     ORDER BY score DESC, sort_key COLLATE sort_natural
     LIMIT 20`, [q, `%${q.replace(/[\\%_]/g, '\\$&')}%`]);
   res.json({ data: rows });
+});
+
+// Full-text search (087): names AND texts — biographies, descriptions, definitions, provenance steps. Web-search
+// syntax: "a phrase", -excluded, or. Stemmed in English, German and French ("paintings" finds "painted", "Gemälde"
+// "Gemälden"), accents folded; names also by trigram similarity, so a typo ("Gaugin") still finds the name.
+// One row per entry: matched_in name | text | provenance (the provenance steps that matched: provenance_ids),
+// headline_html = the matching passage, the words in <mark>. ?type=artwork narrows, ?limit= (≤ 100) & ?offset= page.
+const SEARCH_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source', 'event'];
+const escapeHtml = (s) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+router.get('/search/text', async (req, res) => {
+  const q = typeof req.query.q === 'string' ? req.query.q.trim().slice(0, 200) : '';
+  const type = typeof req.query.type === 'string' && req.query.type ? req.query.type : null;
+  if (type && !SEARCH_TYPES.includes(type)) throw badRequest(`type is one of ${SEARCH_TYPES.join(', ')}`);
+  const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 20, 1), 100);
+  const offset = Math.max(parseInt(req.query.offset, 10) || 0, 0);
+  if (q.length < 2) return res.json({ data: [], total: 0 });
+  const { rows } = await apiPool.query(`
+    WITH q AS (SELECT search_query($1) AS q),
+    -- the documents that match: one per entry, one per provenance step (GIN indexes, 087)
+    hits AS (
+      SELECT d.type, d.id, d.part, d.provenance_id, d.body, ts_rank_cd(d.doc, q.q, 32) AS rank,
+             ts_filter(d.doc, '{a,b}') @@ q.q AS in_name     -- the name or another name (weights A, B) matched
+      FROM search_documents d, q WHERE d.doc @@ q.q AND ($2::entity_type IS NULL OR d.type = $2)),
+    per_entry AS (
+      SELECT type, id, sum(rank) AS rank, bool_or(in_name) AS in_name,
+             (array_agg(part ORDER BY rank DESC))[1] AS part, (array_agg(body ORDER BY rank DESC))[1] AS body,
+             array_agg(provenance_id ORDER BY rank DESC) FILTER (WHERE provenance_id IS NOT NULL) AS provenance_ids
+      FROM hits GROUP BY type, id),
+    -- names that are close without matching a word: typos, partial names (trigram, 080)
+    near AS (
+      SELECT type, id FROM entity_index
+      WHERE ($2::entity_type IS NULL OR type = $2)
+        AND (f_unaccent($1) <% f_unaccent(name) OR f_unaccent($1) <% f_unaccent(coalesce(alt_text, ''))))
+    SELECT e.type, e.slug, e.public_id, e.name, e.kind, range_json(e.period, e.period_label) AS period,
+           CASE WHEN p.id IS NULL OR p.in_name THEN 'name' WHEN p.part = 'entry' THEN 'text' ELSE 'provenance' END AS matched_in,
+           coalesce(p.provenance_ids, '{}') AS provenance_ids,
+           round((coalesce(p.rank, 0) + 0.5 * greatest(word_similarity(f_unaccent($1), f_unaccent(e.name)),
+                                                      0.9 * word_similarity(f_unaccent($1), f_unaccent(coalesce(e.alt_text, '')))))::numeric, 3) AS score,
+           search_headline(p.body, $1) AS headline,
+           count(*) OVER () AS total
+    FROM entity_index e
+    LEFT JOIN per_entry p ON (p.type, p.id) = (e.type, e.id)
+    WHERE p.id IS NOT NULL OR (e.type, e.id) IN (SELECT type, id FROM near)
+    ORDER BY score DESC, e.sort_key COLLATE sort_natural
+    LIMIT $3 OFFSET $4`, [q, type, limit, offset]);
+  const plural = Object.fromEntries(Object.entries(ENTITIES).map(([k, v]) => [v.type, k]));
+  res.json({
+    total: rows.length ? Number(rows[0].total) : 0,
+    data: rows.map(({ total, headline, public_id: pid, provenance_ids: ids, ...r }) => ({
+      ...r, public_id: Number(pid), path: `/${plural[r.type]}/${pid}/${r.slug}`, score: Number(r.score),
+      provenance_ids: ids.map(Number),
+      headline_html: headline ? escapeHtml(headline).replace(/\x01/g, '<mark>').replace(/\x02/g, '</mark>') : null,
+    })),
+  });
 });
 
 // Curated start views (migration 069): published ones, in their order. The query read through
@@ -159,6 +215,8 @@ router.use((req, res, next) => {
 
 router.use('/map', map);
 router.use('/graph', graph);
+router.use('/network', network);
+router.use('/history', history);
 router.use(entities);
 
 module.exports = router;

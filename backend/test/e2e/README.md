@@ -28,6 +28,9 @@ npx playwright show-trace test/e2e/.results/<…>/trace.zip   # what the browser
 | `entities` | create/validate/publish/delete, protected deletes, reverse relationships, typo-tolerant pickers |
 | `search` | typo tolerance, alternative names, stemming, relationships, literal `%` |
 | `history` | conflicts kept, restore version, word-level merge, restoring a deletion with its id, stale previews, diffs |
+| `as-of` | an entry as of a moment (fields, relationships, provenance), changes since, versions, deleted entries (089) |
+| `search-text` | full-text search: stems (EN/DE/FR), accents, phrases, exclusions, provenance steps, escaped highlights (087) |
+| `network` | shortest path, holders in a window, shared hands with depth and current holders (088) |
 | `live` | presence, drafts of new entries, co-editing convergence, publish, offline merge across a restart, discard, rebase |
 | `editor` | Markdown shortcuts/styling/preview (escaping), map picker (Referer, click, polygon) |
 

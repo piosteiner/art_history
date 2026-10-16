@@ -516,6 +516,8 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
   // reading; any or none will do) — or by its slug, as before
   const detail = async (req, res) => {
     const key = req.params.slug;
+    // the entry as recorded at a moment (089): rebuilt from the audit log — also an entry deleted since
+    if (req.query.as_of !== undefined) return require('./history').asOf(req, res, plural, key);
     let byNumber = /^\d{1,15}$/.test(key);
     if (!byNumber && !SLUG.test(key)) throw notFound(`no ${e.type} "${key}"`);
     if (byNumber) {
