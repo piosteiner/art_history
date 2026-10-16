@@ -138,6 +138,14 @@ page's own link.
   and `/search` offer the lookup for any query with a digit); `event`: "at <event>". Prices in RM need nothing. On the map a step
   has a stop at each of its places (`part`, popup "moved here" + `part_label`), the segments between them
   (`move: true`) are drawn solid, their popup says "moved by the same holder"; segment ends are named by position.
+- As it happened (API 083/084): `role: possessor` (held without good title — seized, looted, stolen, or received from
+  those who took it) is indented like custody but tinted red with a red edge and dot, "taken by …" (confiscation,
+  theft, forced sale) or "held by …", a red "without title" tag — never an owner; the owner's period runs on until the
+  restitution (API). Holders' pages tag such works "held without title" (from the `held_by` note "possessor …").
+  `exchanged_for` → "exchanged for <work>" (linked; replaces the method word "exchange"; left out when only text the
+  label already says); the artwork's own outgoing `exchanged_for` relationship isn't repeated below. `alternatives` →
+  a dashed box under the step: "Another reading (sources disagree): <holder> <role> <acquired – ended> <certainty>
+  <sources>", method and label, notes. The graph's derived `exchanged_for` edge needs nothing here.
 - Coverage (API 078, `src/coverage.ts`): above the provenance a bar from the creation until today — documented solid,
   presumed hatched, gaps open with a red edge (1933–1945 ones filled pale red), 1933–1945 shaded behind; each stretch's
   tooltip names the holders before / after and the candidates; caption "45% documented, gaps 60 years, 11 of them in

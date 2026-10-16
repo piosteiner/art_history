@@ -37,7 +37,7 @@ export const holderText = (s: ProvenanceMapStep) => `${s.role === 'estate' ? 'Es
 /** The place is inferred from where the artist lived or worked: drawn hollow, "probably". */
 export const probable = (s: Pick<ProvenanceStopProps, 'place_basis'>) => s.place_basis === 'artist_residence' || s.place_basis === 'artist_workplace';
 
-const STOP_ROLE: Record<string, string> = { dealer: 'dealer', agent: 'agent', custodian: 'custodian', publisher: 'publisher', foundry: 'foundry', trustee: 'trustee' };
+const STOP_ROLE: Record<string, string> = { dealer: 'dealer', agent: 'agent', custodian: 'custodian', publisher: 'publisher', foundry: 'foundry', trustee: 'trustee', possessor: 'without title' };
 
 /** One step in a place's popup: holder, role, how and when, how we know the place. */
 function stepRow(s: ProvenanceStopProps) {

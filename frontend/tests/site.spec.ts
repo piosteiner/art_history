@@ -1029,6 +1029,53 @@ test('provenance numbers: a number links to every work recording it; the header 
   await expect(page.locator('.number-hits li')).toHaveCount(1);
 });
 
+test('provenance (083/084): possessors held without title, exchanged for, another reading under its step', async ({ page }) => {
+  const person = (slug: string, name: string) => ({ type: 'person', slug, name });
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [
+      step(0, person('the-owner', 'The Owner'), { kind: 'step', in_chain: true, direct: true, period: year(1900, 1946), end_basis: 'recorded',
+        alternatives: [{ owner: person('her-daughter', 'Her Daughter'), owner_label: null, role: 'owner', method: 'gift', acquired: year(1926), ended: null,
+          label: 'a gift, says the family', certainty: 'disputed', notes_html: null, sources: [cited({ kind: 'text', reliability: null, text: 'A letter' })] }] }),
+      step(1, { type: 'institution', slug: 'the-err', name: 'The ERR' }, { kind: 'step', role: 'possessor', method: 'confiscation', in_chain: false, direct: true, period: year(1941) }),
+      step(2, person('a-dealer', 'A Dealer'), { kind: 'step', role: 'possessor', method: 'exchange', in_chain: false, direct: true, period: year(1942, 1945),
+        exchanged_for: { artwork: { slug: 'heiliger-sebastian', title: 'Heiliger Sebastian' }, text: null } }),
+      step(3, person('the-owner', 'The Owner'), { kind: 'step', method: 'restitution', in_chain: true, direct: true, period: year(1946, null), end_basis: 'ongoing' }),
+    ];
+    (b.relationships as unknown[]).push({ type: 'exchanged_for', direction: 'outgoing', label: 'exchanged for', category: 'provenance', is_physical_presence: false,
+      entity: { type: 'artwork', slug: 'heiliger-sebastian', name: 'Heiliger Sebastian' }, period: year(1942), note: null, certainty: 'attested', notes_html: null, derived: true, end_basis: null });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const steps = page.locator('.provenance-step');
+  await expect(steps).toHaveCount(4);
+  // the possessors: indented, marked, never an owner
+  await expect(steps.nth(1)).toHaveClass(/custody/);
+  await expect(steps.nth(1)).toHaveClass(/possession/);
+  await expect(steps.nth(1).locator('.provenance-owner')).toContainText('taken by The ERR');
+  await expect(steps.nth(1).locator('.tag', { hasText: 'without title' })).toBeVisible();
+  await expect(steps.nth(2).locator('.provenance-owner')).toContainText('held by A Dealer');
+  const how = steps.nth(2).locator('.provenance-how');
+  await expect(how).toHaveText('exchanged for Heiliger Sebastian'); // not "Exchange · exchanged for …"
+  await expect(how.locator('a[href="/artworks/heiliger-sebastian"]')).toBeVisible();
+  await expect(steps.nth(3)).not.toHaveClass(/custody/);
+  // the other reading: inside its step, with its own sources and certainty
+  const alt = steps.nth(0).locator('.provenance-alt');
+  await expect(alt).toHaveCount(1);
+  await expect(alt).toContainText('Another reading (sources disagree): Her Daughter');
+  await expect(alt).toContainText('1926');
+  await expect(alt.locator('.tag', { hasText: 'disputed' })).toBeVisible();
+  await expect(alt.locator('.provenance-how')).toContainText('gift · a gift, says the family');
+  await expect(alt.locator('.cite-ref')).toHaveCount(1);
+  // the exchange is in the step, not repeated below
+  await expect(page.locator('.rel-list li', { hasText: 'Heiliger Sebastian' })).toHaveCount(0);
+});
+
+test('a possessor’s page: works it held without title say so', async ({ page }) => {
+  await page.goto('/people/hermann-goring');
+  const irene = page.locator('.rel-holdings > ul > li', { hasText: 'La Petite Irène' });
+  await expect(irene.locator('.tag', { hasText: 'held without title' })).toBeVisible();
+  await expect(irene.locator('.tag', { hasText: 'held, not owned' })).toHaveCount(0);
+});
+
 const span = (from: string, to: string) => ({ label: null, from, to, from_year: Number(from.slice(0, 4)), to_year: Number(to.slice(0, 4)) });
 const seg = (kind: string, from: string, to: string, extra: Record<string, unknown> = {}) => ({ kind, period: span(from, to), in_1933_1945: false,
   before: null, after: null, candidates: [], before_position: null, after_position: null, ...extra });

@@ -329,7 +329,8 @@ export type AcquisitionMethod =
  * deposit) didn't own it. API 077: `publisher` (an edition — of the chain), `foundry`, `trustee` (custody), `event` (no
  * holder: a claim, a settlement between others, a collection dissolved — described by `label`).
  */
-export type ProvenanceRole = 'owner' | 'dealer' | 'agent' | 'estate' | 'custodian' | 'publisher' | 'foundry' | 'trustee' | 'event';
+export type ProvenanceRole = 'owner' | 'dealer' | 'agent' | 'estate' | 'custodian' | 'publisher' | 'foundry' | 'trustee' | 'event'
+  | 'possessor'; // held without good title: seized, looted, stolen, or received from those who took it (API 083)
 /** `currency`: ISO 4217, old ones like FRF too, or a historical code without ISO ("RM"). */
 export interface Price { amount: number; currency: string; note: string | null }
 /** A number a provenance step records (API 077): kind lot · stock · inventory · catalogue · ek · err · munich · linz · aussee · lugt · other; `label` "Munich no.". */
@@ -371,6 +372,17 @@ export interface ProvenanceStep {
   in_chain?: boolean; not_sold?: boolean; via?: string | null;
   /** API 077: further places after `place`, in order ("Köln → Berlin → Geneva"); numbers it records; the event it belongs to. */
   further_places?: (Ref & { period: DateRange | null })[]; numbers?: ProvenanceNumber[]; event?: Ref | null;
+  /** API 084: what the holder gave for it — an artwork on this site, else only described. */
+  exchanged_for?: { artwork: { slug: string; title: string } | null; text: string | null } | null;
+  /** API 084: other sources' readings of this step when they contradict each other — beside it, not part of the chain. */
+  alternatives?: ProvenanceAlternative[];
+}
+
+/** Another source's reading of a provenance step (API 084). */
+export interface ProvenanceAlternative {
+  owner: EntryRef | null; owner_label: string | null; role: ProvenanceRole | null; method: AcquisitionMethod | null;
+  acquired: DateRange | null; ended: DateRange | null; label: string | null; certainty: string | null;
+  notes_html: string | null; sources: (Citation | string)[] | null;
 }
 
 export interface Place extends DetailBase, Named {

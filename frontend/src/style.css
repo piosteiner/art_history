@@ -221,6 +221,15 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .provenance-step.custody .provenance-owner::before { left: calc(-2.6rem - 4px); top: .5em; width: 6px; height: 6px; background: var(--muted); }
 .provenance-step.custody.implied .provenance-owner::before { background: var(--bg); box-shadow: inset 0 0 0 1.5px var(--muted); }
 .provenance-alongside { font-size: .85rem; }
+/* held without title (API 083): indented like custody, but marked in red — taken, not entrusted */
+.provenance-step.custody.possession { color: var(--text); background: color-mix(in srgb, var(--prov-d) 7%, transparent);
+  box-shadow: inset 3px 0 0 -1px var(--prov-d); }
+.provenance-step.custody.possession .provenance-owner::before { background: var(--prov-d); width: 8px; height: 8px; left: calc(-2.6rem - 5px); }
+.provenance-step.possession .provenance-alongside { color: var(--prov-d); }
+.provenance-step.possession .tag:not(.tag-implied) { color: var(--prov-d); border-color: currentColor; }
+/* another source's reading of a step (API 084) */
+.provenance-alt { margin: .35rem 0 .1rem; padding: .3rem .6rem; border: 1px dashed var(--line); border-radius: var(--radius); font-size: .9rem; }
+.provenance-alt-label { font-size: .8rem; color: var(--muted); font-style: italic; margin-right: .2rem; }
 .tag-not-sold { border-style: dashed; }
 .explained { text-decoration: underline dotted; cursor: help; }
 /* an event in the chain (API 077): a note on the rail, no holder, no dot */

@@ -3,7 +3,9 @@ import { getPresence, listAll } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
-import type { Citation, SourceHint, Category, CoverageSegment, Entity, EntryRef, Price, ProvenanceCoverage, ProvenanceStatus, ProvenanceStep, Relationship } from '../types';
+import type {
+  Citation, SourceHint, Category, CoverageSegment, Entity, EntryRef, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceStatus, ProvenanceStep, Relationship,
+} from '../types';
 import { cite } from '../cite';
 import { coverageBar, gapSides, gapText } from '../coverage';
 
@@ -52,7 +54,34 @@ const ROLE_TAG: Record<string, [string, string]> = {
   publisher: ['publisher', 'Published the edition'],
   foundry: ['foundry', 'Cast it, did not own it'],
   trustee: ['trustee', 'Held it in trust or as security, did not own it'],
+  possessor: ['without title', 'Held it without good title: seized, looted, stolen, or received from those who took it. The owner kept the title.'],
 };
+/** How a possessor came by it (API 083): taken, or passed on by those who took it. */
+const TAKEN = new Set(['confiscation', 'theft', 'forced_sale']);
+
+/**
+ * "exchanged for a Florentine tondo" — linked when the other work has an entry (API 084); left out when it's only text
+ * the step's label already says ("exchanged by Göring for a Florentine tondo").
+ */
+function exchangedFor(s: ProvenanceStep): Html | null {
+  const x = s.exchanged_for;
+  if (!x || (!x.artwork && x.text && s.label?.toLowerCase().includes(x.text.toLowerCase()))) return null;
+  return html`exchanged for ${x.artwork ? link('artwork', x.artwork.slug, x.artwork.title) : x.text ?? 'another work'}`;
+}
+
+/** Another source's reading of the step (API 084): right under it, not part of the chain, the periods or the map. */
+function alternative(a: ProvenanceAlternative, bibliography?: Record<string, SourceHint>): Html {
+  const who = a.owner ? link(a.owner.type, a.owner.slug, a.owner.name) : html`${a.owner_label ?? 'an unknown holder'}`;
+  const role = a.role && ROLE_TAG[a.role];
+  const when = [a.acquired?.label, a.ended?.label].filter(Boolean).join(' – ');
+  const how = [a.method && a.method !== 'unknown' ? method(a.method) : null, a.label ? html`${a.label}` : null].filter((x): x is Html => !!x);
+  return html`<div class="provenance-alt">
+    <span class="provenance-alt-label" title="The sources disagree about this step; it can't be settled">Another reading (sources disagree):</span>
+    ${a.role === 'estate' ? 'Estate of ' : ''}${who}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${when ? html` <span class="muted">${when}</span>` : ''}${uncertain(a.certainty)}${cite(a.sources, bibliography)}
+    ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
+    ${a.notes_html ? html`<div class="rel-note">${trusted(a.notes_html)}</div>` : ''}
+  </div>`;
+}
 
 /** "Munich no. 4317", the number linked to every step that records it. */
 export const numberHref = (n: { kind: string; number: string }) =>
@@ -117,7 +146,7 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
     <h2>Provenance</h2>
     ${status ? statusLine(status, statusSources, bibliography) : ''}
     ${recorded ? coverageBar(coverage) ?? '' : ''}
-    ${recorded ? html`<p class="muted small">Holders in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between. Indented: held alongside the owner (an agent, a deposit, a loan), not owned. A bullet: an event, not a holder. In italics: not recorded, but following from the creation or the loan.</p>
+    ${recorded ? html`<p class="muted small">Holders in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between. Indented: held alongside the owner (an agent, a deposit, a loan), not owned; in red: held without title (seized, looted, stolen) — the owner's period runs on until the restitution. A bullet: an event, not a holder. In italics: not recorded, but following from the creation or the loan.</p>
     <ol class="provenance-list">${leading}${steps.map((s, i) => html`${stepItem(s, i)}${gapsAfter(s.position)}`)}</ol>` : ''}
   </section>`;
 
@@ -127,23 +156,28 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
     const gap = i > 0 && !s.direct && !custody && s.kind !== 'loan'; // custody and loans are no handover of ownership
     const afterGapLine = i > 0 && gaps.some((g) => after(g) === steps[i - 1].position); // it says more already
     const stolen = s.method === 'theft'; // "taken by …", no custodian's tag
+    const possessor = s.role === 'possessor'; // held without title (API 083): never an owner, not a deposit either
     const role = !stolen && s.role && ROLE_TAG[s.role];
+    const prefix = stolen || (possessor && TAKEN.has(s.method ?? '')) ? 'taken by' : 'held by';
     const how = [
       s.kind === 'creation' ? html`the artist`
         : s.method === 'theft' ? html`stolen${s.ended ? html` — recovered ${s.ended.label}` : ''}`
+        : s.method === 'exchange' && exchangedFor(s) ? null // "exchanged for …" says it
         : s.method && s.method !== 'unknown' ? method(s.method) : null,
       s.via ? html`via ${s.via}` : null,
+      exchangedFor(s),
       s.event ? html`at ${link('event', s.event.slug, s.event.name)}` : null,
       s.label ? html`${s.label}` : null,
       s.price ? html`${priceLabel(s.price)}` : null,
       places(s),
       ...numbers(s),
     ].filter((x): x is Html => !!x);
-    return html`<li class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}${custody ? ' custody' : ''}">
+    return html`<li class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}${custody ? ' custody' : ''}${possessor ? ' possession' : ''}">
       ${gap && !afterGapLine ? html`<div class="provenance-gap">handover not documented</div>` : ''}
-      <div class="provenance-owner">${custody ? html`<span class="provenance-alongside" title="${stolen ? 'Stolen: the owner kept the title' : 'Held alongside the owner, did not own it'}">${stolen ? 'taken by' : 'held by'}</span> ` : ''}${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.not_sold ? html` <span class="tag tag-not-sold" title="Bought in, withdrawn or returned: the owner kept it">not sold</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
+      <div class="provenance-owner">${custody ? html`<span class="provenance-alongside" title="${stolen ? 'Stolen: the owner kept the title' : possessor ? 'Taken from its owner, or received from those who took it — held without title' : 'Held alongside the owner, did not own it'}">${prefix}</span> ` : ''}${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.not_sold ? html` <span class="tag tag-not-sold" title="Bought in, withdrawn or returned: the owner kept it">not sold</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
       ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
       ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
+      ${(s.alternatives ?? []).map((a) => alternative(a, bibliography))}
     </li>`;
   }
 }
@@ -173,7 +207,8 @@ export function holdingsSections(rels: Relationship[], bibliography?: Record<str
   for (const r of held) works.set(r.entity.slug, [...(works.get(r.entity.slug) ?? []), r]);
   const rows = [...works.values()].sort((a, b) => firstFrom(a).localeCompare(firstFrom(b)));
   const tags = (rs: Relationship[]) => html`${rs.some((r) => r.type === 'commissioned') ? html` <span class="tag" title="Ordered the work from the artist">commissioned</span>` : ''}${
-    rs.some((r) => r.type === 'held_by') && !rs.some((r) => r.type === 'owned_by') ? html` <span class="tag" title="Held it without owning it: as a dealer's agent, a loan, a deposit">held, not owned</span>` : ''}`;
+    rs.some((r) => r.type === 'held_by' && r.note?.startsWith('possessor')) ? html` <span class="tag tag-ns" title="Seized, looted, stolen, or received from those who took it">held without title</span>`
+    : rs.some((r) => r.type === 'held_by') && !rs.some((r) => r.type === 'owned_by') ? html` <span class="tag" title="Held it without owning it: as a dealer's agent, a loan, a deposit">held, not owned</span>` : ''}`;
 
   const counterparts = (direction: 'incoming' | 'outgoing') => {
     const by = new Map<string, Relationship[]>();
@@ -216,7 +251,8 @@ export const backlinks = (title: string, hint: string, refs: EntryRef[] | undefi
  */
 export function shownElsewhere(e: Entity, r: Relationship) {
   if (r.type === 'co_creator') return e.type === 'artwork' || e.type === 'artist';
-  return e.type === 'artwork' && !!r.derived && ['owned_by', 'held_by', 'kept_in', 'commissioned'].includes(r.type);
+  return e.type === 'artwork' && !!r.derived && (['owned_by', 'held_by', 'kept_in', 'commissioned'].includes(r.type)
+    || (r.type === 'exchanged_for' && r.direction === 'outgoing')); // in its step ("exchanged for …"); the other work lists it
 }
 
 /**
