@@ -1,6 +1,7 @@
 // Tiny HTML templating: interpolated values are escaped unless they are already Html (from html`` or trusted()).
 // Images load with crossorigin="anonymous": Wikimedia then neither receives nor sets cookies (the site stays cookie-free).
 import { fold } from './fold';
+import { zoomable } from './zoom';
 import { PLURAL } from './api';
 import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, Plural, PolityLink, Ref, TranslationStatus } from './types';
 
@@ -91,11 +92,17 @@ export function wireLightbox(root: Element) {
       const caption = img.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
       // the caption was built by figure() above from escaped values, so reusing its markup is safe
       dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close">×</button>
-        <figure><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}" crossorigin="anonymous"><figcaption>${caption}</figcaption></figure>`;
+        <figure><div class="lightbox-stage"><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}" crossorigin="anonymous" draggable="false"></div>
+        <figcaption>${caption}<span class="lightbox-hint">Scroll or pinch to zoom · drag to move · double-click: fit / zoom</span></figcaption></figure>`;
+      // the image zooms and pans (zoom.ts); a click beside it closes, as does Escape or ×
+      const unzoom = zoomable(dialog.querySelector<HTMLElement>('.lightbox-stage')!, dialog.querySelector('img')!);
       dialog.addEventListener('click', (e) => {
-        if (!(e.target as Element).closest('figcaption a')) dialog.close();
+        if (!(e.target as Element).closest('figcaption a, .lightbox-stage')) dialog.close();
       });
-      dialog.addEventListener('close', () => dialog.remove());
+      dialog.addEventListener('close', () => {
+        unzoom();
+        dialog.remove();
+      });
       document.body.append(dialog);
       dialog.showModal();
     });

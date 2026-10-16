@@ -415,7 +415,11 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .figure img { cursor: zoom-in; }
 .lightbox { border: 0; padding: 0; background: transparent; max-width: 96vw; max-height: 96vh; }
 .lightbox::backdrop { background: rgb(0 0 0 / .85); }
-.lightbox img { display: block; max-width: 96vw; max-height: 86vh; margin: 0 auto; cursor: zoom-out; }
+.lightbox-stage { position: relative; overflow: hidden; width: fit-content; margin: 0 auto; touch-action: none; cursor: zoom-in; user-select: none; }
+.lightbox-stage.zoomed { cursor: grab; }
+.lightbox-stage.zoomed.dragging { cursor: grabbing; }
+.lightbox img { display: block; max-width: 96vw; max-height: 86vh; transform-origin: 0 0; will-change: transform; }
+.lightbox-hint { display: block; color: #aaa; font-size: .75rem; margin-top: .2rem; }
 .lightbox figcaption { color: #ddd; font-size: .85rem; text-align: center; margin-top: .5rem; }
 .lightbox figcaption a { color: #ddd; }
 .lightbox-close {

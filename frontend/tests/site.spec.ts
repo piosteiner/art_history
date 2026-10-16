@@ -90,6 +90,45 @@ test('artwork detail: image with credit opens large', async ({ page }) => {
   await expect(page.locator('dialog.lightbox')).toHaveCount(0);
 });
 
+test('enlarged image: the wheel zooms towards the pointer, dragging moves it, a click beside it closes', async ({ page }) => {
+  // our own picture instead of Wikimedia's (a picture with a known size: throttled or placeholder images have none to zoom)
+  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
+    body: '<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="860"><rect width="1280" height="860" fill="#3a6"/><circle cx="640" cy="430" r="300" fill="#fff"/></svg>' }));
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await page.click('.figure img');
+  const stage = page.locator('dialog.lightbox[open] .lightbox-stage');
+  const img = stage.locator('img');
+  await expect(img).toBeVisible();
+  await expect.poll(async () => (await stage.boundingBox())?.width ?? 0).toBeGreaterThan(200); // laid out, not only loaded
+  const view = () => img.evaluate((el) => { const m = new DOMMatrix(getComputedStyle(el).transform); return { s: m.a, x: m.e, y: m.f }; });
+  const box = (await stage.boundingBox())!;
+  // zoom in at the top left quarter: scale grows smoothly, that point stays put (so the image shifts up-left)
+  await page.mouse.move(box.x + box.width / 4, box.y + box.height / 4);
+  for (let i = 0; i < 3; i++) await page.mouse.wheel(0, -200);
+  await expect.poll(async () => (await view()).s).toBeGreaterThan(2);
+  // settled: the smooth zoom has arrived (two reads a moment apart agree)
+  await expect.poll(async () => { const a = await view(); await page.waitForTimeout(150); const b = await view(); return a.s === b.s && a.x === b.x; }).toBe(true);
+  const zoomed = await view();
+  expect(zoomed.x).toBeLessThan(0);
+  await expect(stage).toHaveClass(/zoomed/);
+  // drag to the right and down: the image follows (within its edges)
+  await page.mouse.down();
+  await page.mouse.move(box.x + box.width / 4 + 60, box.y + box.height / 4 + 40, { steps: 5 });
+  await page.mouse.up();
+  const moved = await view();
+  expect(moved.x).toBeGreaterThan(zoomed.x);
+  await expect(page.locator('dialog.lightbox[open]')).toHaveCount(1); // a click on the image doesn't close
+  // never off its edges, never below fit
+  for (let i = 0; i < 6; i++) await page.mouse.wheel(0, 400);
+  await expect.poll(async () => (await view()).s).toBe(1);
+  expect((await view()).x).toBe(0);
+  // double click zooms, again fits; a click beside the image closes
+  await stage.dblclick();
+  await expect.poll(async () => (await view()).s).toBeGreaterThan(2);
+  await page.mouse.click(5, box.y + box.height / 2);
+  await expect(page.locator('dialog.lightbox')).toHaveCount(0);
+});
+
 test('list page: same field search as the pickers, typos as similar names', async ({ page }) => {
   await page.goto('/artworks');
   await expect(page.locator('.card').first()).toBeVisible();
