@@ -278,7 +278,8 @@ acquired, ended, method, direct, label, certainty, price: {amount, currency, not
 period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
 - **The cases of 076/077:** `role` also `publisher` (holds an edition — of the chain), `foundry`, `trustee` (in trust
   or as security — custody) and `event` (no holder: a claim, a settlement between others, a collection dissolved; the
-  step's `label` describes it, `owner` may name a party; `in_chain: false`, no `owned_by`, not on the map). `method`
+  step's `label` describes it, `owner` may name a party; `in_chain: false`, no `owned_by`, not on the map; without an
+  `ended` its `end_basis` is `"point"` — the period is its date, no end implied by later steps, 082). `method`
   also `transfer`, `theft` (on a custody step: the owner keeps the title; `ended` = recovered), `claim`,
   `dissolution`. Per step: `further_places: [{slug, name, period}]` (after `place`, in order — the map has a stop for
   each, `move: true` segments between them), `numbers: [{kind, label, number}]` (kinds: lot, stock, inventory,

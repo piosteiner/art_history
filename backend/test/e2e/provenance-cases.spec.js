@@ -93,6 +93,11 @@ test('places, numbers, an event, RM, German dates; theft and recovery; events an
   await expect(userA).toHaveURL(/done=prov-added/);
   await expect(userA.locator('table.provenance tbody', { hasText: 'amicable settlement' }).locator('tr.transfer')).toContainText('an event');
   expect(sql(`SELECT acquired_label || ' ' || in_chain FROM provenance_periods WHERE artwork_id = ${W} AND role = 'event'`)).toBe('1964–1965 false');
+  // a moment, not a holding (082): no end implied by a later acquisition — its period is its date
+  sql(`INSERT INTO provenance (artwork_id, position, owner_label, acquired, acquired_label, method)
+       VALUES (${W}, 900, 'Later owner (test)', year_range(1970), '1970', 'purchase')`);
+  expect(sql(`SELECT end_basis || ' ' || period_label FROM provenance_periods WHERE artwork_id = ${W} AND role = 'event'`)).toBe('point 1964–1965');
+  sql(`DELETE FROM provenance WHERE artwork_id = ${W} AND owner_label = 'Later owner (test)'`);
   // without a description: refused
   await addStep(userA, async (p) => { await p.selectOption('#pv-role', 'event'); });
   await expect(userA.locator('.flash.error')).toContainText('An event: describe it');

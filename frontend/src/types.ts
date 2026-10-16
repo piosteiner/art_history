@@ -80,7 +80,7 @@ export interface Citation {
 }
 
 /** recorded: a source gives the end · implied: the next acquisition · ongoing: still there · unknown: nothing after it. */
-export type EndBasis = 'recorded' | 'implied' | 'ongoing' | 'unknown';
+export type EndBasis = 'recorded' | 'implied' | 'ongoing' | 'unknown' | 'point'; // point: an event, a moment (API 082)
 
 /** An entry whose texts [[link]] this one (backlink). */
 export interface EntryRef { type: EntityType; slug: string; name: string }

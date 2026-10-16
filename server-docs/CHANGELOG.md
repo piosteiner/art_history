@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Provenance of Renoir, "La Petite Irène" entered; events in a provenance are moments (migration 082)
+- **What:** Data (production, one admin transaction as user pio, script kept out of the repo): the 15 steps of the
+  Kunsthaus Zürich's provenance of BU 0090 (collection.kunsthaus.ch item 586963, research status 22 July 2025) —
+  commission, the disputed ownership Irène Sampieri-Camondo / custody Béatrice Reinach, the Musées nationaux, ERR
+  seizure at Chambord, Göring, Léon Reinach's claim (event), Rochlitz's exchange, seizure by Monuments Officers Howe and
+  Moore, Munich CCP no. 8035, restitution, Werner Feuz as agent ("via"), Bührle (CHF 240,000), estate, foundation (inv.
+  no. 90). Every step cites the Kunsthaus page (M), plus literature (L) and archival documents in words (T). New
+  entries, flagged "to complete": 8 people, 2 institutions, 4 places (Chambord, Hohenschwangau, Munich, Clarens), and
+  the bibliography's first books (Yeide 2009, Dauberville 2007, Howe 1946, Die Sammlung Emil Bührle 2021); further
+  numbers Dauberville I.506 and Bührle 2021 no. 173 with sources; `on_loan_since_label` "Dauerleihgabe" → "2021".
+  Migration 082: `provenance_periods.end_basis = 'point'` for an event without an end (was: an end implied by the next
+  acquisition — the claim read "10 August 1941–10 March 1942"). Test in `provenance-cases.spec.js`.
+- **Why:** owner: try the system on an important provenance.
+- **Revert:** data — History page (audit log) or delete the steps (`DELETE FROM provenance WHERE artwork_id =
+  entity_id('artwork', 'irene-cahen-danvers-la-petite-irene')`) and the new entries; 082 — recreate the view from 077,
+  `DELETE FROM schema_migrations WHERE name = '082_provenance_event_point.sql';`
+
 ### Relationship picker: one choice per label, A–Z; depicted artworks and events are depictions
 - **What:** Admin (`core.js` `pickerOptions`, `relFromForm`): types with the same label in the same direction are one
   option — "depicts" (depicts + depicts_person), "created in" (+ _polity), "located in" (+ _polity) — and the target's
