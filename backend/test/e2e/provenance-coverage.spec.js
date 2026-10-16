@@ -64,3 +64,25 @@ test('gaps where no holder is known: API, list filter, map, admin bar and lines,
   await userA.goto('/quality/provenance-gaps');
   await expect(userA.locator('tr', { hasText: 'Test Coverage' })).toContainText('1934–1949: after Test Gold, before Test Later');
 });
+
+test('a gap split by an unsold auction: each half where it belongs — before and after the auction (079)', async ({ userA, request }) => {
+  sql(`DELETE FROM provenance WHERE artwork_id = ${W};
+       INSERT INTO institutions (slug, name) VALUES ('test-cov-auction', 'Test Cov Auction') ON CONFLICT DO NOTHING;
+       INSERT INTO provenance (artwork_id, position, owner_person_id, owner_institution_id, role, method, direct, acquired, acquired_label, ended, ended_label, not_sold) VALUES
+         (${W}, 0, ${P('test-cov-a')}, NULL, 'owner', 'purchase', true, year_range(1900), '1900', year_range(1963), '1963', false),
+         (${W}, 1, NULL, entity_id('institution', 'test-cov-auction'), 'agent', 'auction', true, '[1975-06-04,1975-06-05)', '4 June 1975', '[1975-06-04,1975-06-05)', '4 June 1975', true),
+         (${W}, 2, ${P('test-cov-d')}, NULL, 'owner', 'purchase', false, year_range(1981), '1981', NULL, NULL, false),
+         (${W}, 3, NULL, entity_id('institution', 'test-cov-museum'), 'owner', 'gift', true, year_range(1990), '1990', NULL, NULL, false)`);
+  const gaps = (await api(request, '/artworks/test-cov-w')).provenance_coverage.segments.filter((s) => s.kind === 'gap');
+  expect(gaps.map((g) => [g.period.from_year, g.before_position, g.show_after])).toEqual([[1964, 0, 0], [1975, 0, 1]]);
+
+  await userA.goto('/artworks/test-cov-w');
+  const lines = await userA.locator('table.provenance tr').evaluateAll((trs) => trs.map((tr) => tr.innerText.replace(/\s+/g, ' ').trim())
+    .filter((t) => /^(\d+\. |Gap )/.test(t) || /Test (First Owner|Cov Auction|Later)/.test(t)).map((t) => t.slice(0, 30)));
+  const at = (re) => lines.findIndex((t) => re.test(t));
+  expect(at(/^Gap 1964/)).toBeGreaterThan(at(/Test First Owner/));
+  expect(at(/^Gap 1964/)).toBeLessThan(at(/Test Cov Auction/));
+  expect(at(/^Gap 1975/)).toBeGreaterThan(at(/Test Cov Auction/));
+  expect(at(/^Gap 1975/)).toBeLessThan(at(/Test Later/));
+  sql("DELETE FROM provenance WHERE owner_institution_id = entity_id('institution', 'test-cov-auction'); DELETE FROM institutions WHERE slug = 'test-cov-auction'");
+});

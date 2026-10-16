@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Provenance gaps shown where they belong (migration 079)
+- **What:** `provenance_gap_anchor(artwork, before, after, gap)`: the step a gap is shown after — the last step between
+  its two owners whose dated start is on or before the gap's first day (e.g. an agent at an auction where the work
+  wasn't sold), else the owner before it. Admin table and API (`show_after` on gap segments) use it; the site places
+  gap lines by it. Test in `provenance-coverage.spec.js`.
+- **Why:** owner: in "Carrière aux environs de Pontoise" the gap 1975–1980 (after the unsold Hôtel Rameau auction of
+  4 June 1975, which splits 1964–1980 in two) was listed above the auction, next to 1964–1975.
+- **Revert:** redeploy the previous commit; `DROP FUNCTION provenance_gap_anchor(bigint, int, int, daterange);`
+  `DELETE FROM schema_migrations WHERE name = '079_provenance_gap_anchor.sql';`
+
 ### Frontend: the place popup in a time window explains the markers' numbers
 - **What:** `map.ts` presencePopup — an artwork with numbered steps at the place is listed as on its marker ("steps 3,
   6, 9 of 11", then each holder by its number; `stepsAtPlace` in `map-provenance.ts`, shared with the marker popup)

@@ -106,11 +106,13 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
   status?: ProvenanceStatus | null, statusSources?: Citation[], coverage?: ProvenanceCoverage | null): Html | null {
   const recorded = steps.some((s) => !s.implied); // the computed lines alone are no provenance
   if (!recorded && !status) return null;
-  // gaps (API 078) go after the step they follow; one before anyone known goes first
+  // gaps (API 078) go after the step they follow — the last one dated before them, which may be an agent's (an unsold
+  // auction splits a gap: API 079 `show_after`); one before anyone known goes first
   const gaps = (coverage?.segments ?? []).filter((g) => g.kind === 'gap');
-  const gapsAfter = (position: number | null) => gaps.filter((g) => g.before_position === position).map(gapLine);
+  const after = (g: (typeof gaps)[number]) => g.show_after ?? g.before_position;
+  const gapsAfter = (position: number | null) => gaps.filter((g) => after(g) === position).map(gapLine);
   const known = new Set(steps.map((s) => s.position));
-  const leading = gaps.filter((g) => g.before_position === null || !known.has(g.before_position)).map(gapLine);
+  const leading = gaps.filter((g) => after(g) === null || !known.has(after(g)!)).map(gapLine);
   return html`<section class="provenance">
     <h2>Provenance</h2>
     ${status ? statusLine(status, statusSources, bibliography) : ''}
@@ -123,7 +125,7 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
     if (s.role === 'event') return eventStep(s, bibliography);
     const custody = s.in_chain === false;
     const gap = i > 0 && !s.direct && !custody && s.kind !== 'loan'; // custody and loans are no handover of ownership
-    const afterGapLine = i > 0 && gaps.some((g) => g.before_position === steps[i - 1].position); // it says more already
+    const afterGapLine = i > 0 && gaps.some((g) => after(g) === steps[i - 1].position); // it says more already
     const stolen = s.method === 'theft'; // "taken by …", no custodian's tag
     const role = !stolen && s.role && ROLE_TAG[s.role];
     const how = [

@@ -245,7 +245,8 @@ shown like a citation's "accessed on …".
 
 ### Provenance coverage — where the provenance is silent (artworks, 078)
 - `provenance_coverage` (detail) or `null`: the time from the creation until today as stretches
-  `segments: [{kind, period, in_1933_1945, before, after, candidates, before_position, after_position}]`, in order —
+  `segments: [{kind, period, in_1933_1945, before, after, candidates, before_position, after_position}]`, in order — A gap also has `show_after` (migration 079): the step it is shown after — the last one between
+its owners dated before it (an agent at an unsold auction can split a gap); else `before_position`.
   `kind` **documented** (someone demonstrably held it: a recorded period, or until the next acquisition when that
   handover is documented as direct; documented custody — a deposit, a loan — counts too), **presumed** (a holder is
   known, the edges are not), **gap** (no holder known). A gap names the holders `before` / `after` it (and their

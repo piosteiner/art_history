@@ -298,6 +298,8 @@ export interface ProvenanceGap {
 export interface CoverageSegment extends ProvenanceGap {
   kind: 'documented' | 'presumed' | 'gap';
   before_position: number | null; after_position: number | null;
+  /** A gap: the step it is shown after — the last one between its owners dated before it (API 079); else before_position. */
+  show_after?: number | null;
 }
 export interface ProvenanceCoverage {
   segments: CoverageSegment[];

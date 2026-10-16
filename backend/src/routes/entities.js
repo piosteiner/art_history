@@ -329,7 +329,10 @@ const EXTRAS = {
       const [summary, segments] = await Promise.all([
         apiPool.query('SELECT documented_percent, has_provenance, gap_days, gap_1933_1945_days FROM provenance_completeness WHERE artwork_id = $1', [id]),
         apiPool.query(`SELECT kind, range_json(period) AS period, in_1933_1945, before_name AS before, after_name AS after,
-                              coalesce(candidates, '{}') AS candidates, before_position, after_position
+                              coalesce(candidates, '{}') AS candidates, before_position, after_position,
+                              -- the step it is shown after (079): the last one between its owners dated before it
+                              CASE WHEN kind = 'gap' AND before_position IS NOT NULL
+                                   THEN provenance_gap_anchor($1, before_position, after_position, period) END AS show_after
                        FROM provenance_coverage($1) ORDER BY period`, [id])]);
       const c = summary.rows[0];
       if (!c || !segments.rows.length) return null;

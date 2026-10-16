@@ -406,7 +406,10 @@ async function coverage(db, artworkId) {
   const { rows } = await db.query(`SELECT kind, lower(period)::text AS from_date, upper(period)::text AS to_date,
       extract(year FROM lower(period))::int AS from_year, extract(year FROM upper(period) - 1)::int AS to_year,
       (upper(period) - lower(period)) AS days, in_1933_1945, before_name, after_name, coalesce(candidates, '{}') AS candidates,
-      before_position, after_position FROM provenance_coverage($1) ORDER BY period`, [artworkId]);
+      before_position, after_position,
+      -- the line it goes after (079): the last step between its owners dated before it — e.g. an unsold auction
+      CASE WHEN kind = 'gap' AND before_position IS NOT NULL THEN provenance_gap_anchor($1, before_position, after_position, period) END AS show_after
+      FROM provenance_coverage($1) ORDER BY period`, [artworkId]);
   return rows;
 }
 const ERA = ['1933-01-30', '1945-05-09'];
@@ -435,7 +438,7 @@ function coverageBar(segs) {
       <span class="cov-legend muted"><i class="cov-documented"></i> documented <i class="cov-presumed-key"></i> presumed <i class="cov-gap"></i> no holder known <i class="cov-era"></i> 1933–1945</span></figcaption>
   </figure>`;
 }
-// A gap as a line of the table, after the step it follows
+// A gap as a line of the table, after the step it follows (show_after: the last step dated before it, 079)
 function gapRow(g) {
   return html`<tbody class="gap"><tr class="gap-row"><td></td><td></td><td colspan="6">
     <b>Gap ${years(g)}</b> <span class="muted">(${duration(g.days)})</span>${g.in_1933_1945 ? html` <span class="tag era">touches 1933–1945</span>` : ''} — no holder known.
@@ -472,7 +475,7 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
           ${s.notes_md ? html`<div class="md small">${raw(renderMarkdown(s.notes_md, { names }))}</div>` : ''}</td>
         <td>${!implied && marker ? marker(cites[s.id], { provenance: s.id, label: `step ${n} (${s.owner_slug ? s.owner_name : s.owner_label})` }, back) : ''}</td>
         <td class="nowrap">${implied ? '' : html`<a href="/provenance/${s.id}/edit">edit</a>`}</td></tr></tbody>
-      ${(gaps || []).filter((g) => g.kind === 'gap' && g.before_position === s.position).map(gapRow)}`;
+      ${(gaps || []).filter((g) => g.kind === 'gap' && (g.show_after ?? g.before_position) === s.position).map(gapRow)}`;
     })}</table></div>
       ${stored.length > 1 ? html`<p class="muted small">Drag ⠿ to change the order — the periods are recomputed.</p>` : ''}
       ${research(steps)}`
