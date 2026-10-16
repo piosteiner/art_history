@@ -30,6 +30,7 @@ const { docToForm, formToDoc, entityForm, humanize, fieldLabel } = require('../f
 const { PAGE, an, send, draftBanner, unpublishedBanner, unpublishedFields, restoredBanner, withTx, UserError, RULES, friendly, pager, pageParam, relationshipTypes, allEntities, relFromForm, relForm, anOf, typeWarning, CONVERTIBLE, stepFromBody, notFoundPage, formContext, findEntity, pluralParam } = require('../core');
 
 const router = express.Router();
+const SITE = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';   // public addresses: /<type>/<number>/<slug> (085)
 router.param('plural', pluralParam);
 
 // ---------------------------------------------------------------------------------------------------------------
@@ -480,7 +481,8 @@ router.get('/:plural/:slug', async (req, res) => {
   const main = imgs[0];
   send(req, res, {
     title: name, page: { type: t.type, slug: e.slug, mode: 'view' },
-    body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}</p>
+    body: html`<p class="muted"><a href="/${t.folder}">${humanize(t.folder)}</a> / ${e.slug}
+      <span class="small">· no. <b>${e.public_id}</b> · <a href="${SITE}/${t.folder}/${e.public_id}/${e.slug}" target="_blank" rel="noopener" title="the public address — the number stays when the name changes">public page ↗</a></span></p>
       <div class="bar"><h1 class="grow">${name}</h1>
         <a class="button" href="/${t.folder}/${e.slug}/edit">Edit</a>
         <a class="button secondary" href="/${t.folder}/${e.slug}/enrich" title="Wikidata, the GND and SIKART on one page">Enrich…</a>

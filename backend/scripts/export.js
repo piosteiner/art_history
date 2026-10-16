@@ -33,7 +33,7 @@ async function main() {
       fs.mkdirSync(dir, { recursive: true });
       const keep = new Set();
       const dateKeys = Object.entries(t.fields).filter(([, k]) => k === 'date' || k === 'period').map(([k]) => k);
-      for (const { id, slug, doc } of await readDocs(client, t)) {
+      for (const { id, public_id: publicId, slug, doc } of await readDocs(client, t)) {
         yearsAsNumbers(doc, dateKeys);
         const rels = (await readRelationships(client, t.type, id)).map((r) => r.rel);
         rels.forEach((rel) => yearsAsNumbers(rel, ['period']));
@@ -55,7 +55,7 @@ async function main() {
         if (cited) doc.sources = cited;
         const file = path.join(dir, `${slug}.yaml`);
         // Lists of plain values inline ([a, b]) like the hand-written files; relationships stay one per block.
-        const yaml = new YAML.Document(doc, { schema: 'core' });
+        const yaml = new YAML.Document({ public_id: publicId, ...doc }, { schema: 'core' });   // the public number first (085)
         YAML.visit(yaml, { Seq(_, seq) { if (seq.items.every((i) => YAML.isScalar(i))) seq.flow = true; } });
         const text = yaml.toString({ lineWidth: 0, flowCollectionPadding: false });
         const old = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;

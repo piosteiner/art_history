@@ -395,6 +395,11 @@ async function notFoundPage(req, res) {
     const other = (await adminPool.query(`SELECT m.new_type::text AS type, e.slug FROM entry_moves m
       JOIN entity_index e ON (e.type, e.id) = (m.new_type, m.new_id) WHERE m.old_type = $1 AND m.old_slug = $2`, [t.type, req.params.slug])).rows[0];
     if (other) return res.redirect(301, req.originalUrl.replace(`/${t.folder}/${req.params.slug}`, `/${BY_TYPE[other.type].folder}/${other.slug}`));
+    // a public number (085): /artworks/100586 → the entry's page, whatever its type now
+    if (/^\d{1,15}$/.test(req.params.slug)) {
+      const hit = (await adminPool.query('SELECT type::text AS type, slug FROM entry_by_public_id($1)', [req.params.slug])).rows[0];
+      if (hit && hit.type) return res.redirect(301, req.originalUrl.replace(`/${t.folder}/${req.params.slug}`, `/${BY_TYPE[hit.type].folder}/${hit.slug}`));
+    }
   }
   return notFoundPageNow(req, res);
 }

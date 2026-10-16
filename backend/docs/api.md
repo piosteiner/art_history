@@ -345,6 +345,20 @@ clash). The same selection always gets the same code. At most 20 000 characters;
 address (`429` beyond). `GET /v1/views/:id` → `{id, query}`, renamed entries followed (like `/v1/featured`), `404` for
 an unknown code. The site shows `/?v=<id>` instead of a query longer than 300 characters.
 
+## Public numbers and addresses (085)
+Every entry has a **public number** (`public_id`), unique across all types and never changed: not by a new title,
+a reattribution, a translation or a change of type. Numbers start at 100001; entries made before 085 are numbered in
+the order they were created.
+- Detail: `GET /v1/<plural>/<number>` and `GET /v1/<plural>/<number>/<any-name>` (the name is ignored) — like
+  `GET /v1/<plural>/<slug>`, which still works. The response has `public_id` and `path`, the canonical public address:
+  `"/artworks/100476/irene-cahen-danvers-la-petite-irene"`. A number under the wrong type, or of an entry merged into
+  another one, answers 301 with the current `/<plural>/<number>`.
+- `GET /v1/entries/<number>` → `{type, plural, slug, public_id, path, moved}` — any type; `moved: true` for an old
+  number of a merged entry. 404 when the entry is gone.
+- `public_id` is in list rows, search results, previews, relationships' `entity`, provenance owners and joint
+  owners, backlinks — build links as `/<plural>/<public_id>/<slug>`.
+- Slugs of digits only ("1984") still work: a number that names no entry is tried as a slug.
+
 ## Search
 `GET /v1/search?q=edo` — top 20 matches across all types: `{type, slug, name, kind, period, score}`.
 

@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Public numbers: addresses /<type>/<number>/<slug> (migration 085)
+- **What:** `public_id` for every entry (one sequence across all types, from 100001; existing entries numbered in
+  creation order — 496 on production), deferred uniqueness across tables, `public_id_history` + `entry_by_public_id()`
+  (merged entries' numbers lead on), `entity_index.public_id`. API: entries by number (with or without a name), 301 to
+  the right type / the kept entry, `/v1/entries/:number`, `public_id` + `path` in details and `public_id` in lists,
+  search, previews, references. Admin: `/<type>/<number>` redirects to the entry's page, which shows the number and
+  links the public address. YAML: `public_id` first in each file, kept on import (sequence moved past). E2E `public-ids.spec.js`.
+- **Why:** owner: hybrid addresses like museums use — "we are aware of the challenge and aiming for a big database …
+  potentially all the artworks of many museums and collections".
+- **Revert:** `git revert`, deploy; then 082/084's `entity_index` (without the column), drop the functions, triggers,
+  `public_id_history`, the columns and the sequence.
+
 ### Data: seizures recorded as possession without title; La Petite Irène's contradicting readings
 - **What:** role possessor for those who seized a work or held it after the seizure, until the restitution: La Petite
   Irène (ERR, Göring, Rochlitz), Au piano, étude de bras (ERR), Femme s'essuyant (ERR, Göring, Hans Wendland, Galerie

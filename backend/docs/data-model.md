@@ -539,3 +539,10 @@ artwork page, `/quality/provenance-gaps`.
   `provenance_periods` leaves alternatives out, so does everything built on it. Main steps keep positions 0…n, the
   alternatives follow (outside the drag order).
 - `exchanged_for_artwork_id` / `exchanged_for_text`; derived edge `exchanged_for` (artwork → artwork).
+
+## Public numbers (migration 085)
+`public_id` on all ten entry tables from one sequence (`entity_public_id_seq`, from 100001); unique per table (index)
+and across tables (deferred constraint trigger `public_id_unique` — deferred because `convert_entry` inserts the new
+row before deleting the old one; the number goes with it). `public_id_history` remembers a deleted entry's number
+with its last slug; `entry_by_public_id()` resolves a number: the entry, else (a merge) where slug_history leads the
+old slug. In `entity_index`; exported in YAML as `public_id` (kept on import, the sequence moved past it).

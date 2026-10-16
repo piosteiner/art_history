@@ -1,6 +1,6 @@
 const express = require('express');
 const { apiPool } = require('../db');
-const { router: entities } = require('./entities');
+const { router: entities, ENTITIES } = require('./entities');
 const map = require('./map');
 const graph = require('./graph');
 const { renderMarkdown, linkNames } = require('../markdown');
@@ -40,7 +40,7 @@ router.get('/search', async (req, res) => {
   const q = typeof req.query.q === 'string' ? req.query.q.trim().slice(0, 100) : '';
   if (q.length < 2) return res.json({ data: [] });
   const { rows } = await apiPool.query(`
-    SELECT type, slug, name, kind, range_json(period, period_label) AS period, sort_key,
+    SELECT type, slug, public_id, name, kind, range_json(period, period_label) AS period, sort_key,
            round(greatest(word_similarity(f_unaccent($1), f_unaccent(name)),
                           0.9 * word_similarity(f_unaccent($1), f_unaccent(coalesce(alt_text, ''))))::numeric, 2) AS score
     FROM entity_index
@@ -121,6 +121,16 @@ router.get('/views/:id', async (req, res) => {
     }).catch(() => {});
   }
   res.json({ id: v.id, query: v.query });
+});
+
+// An entry by its public number (085), whatever its type: { type, plural, slug, public_id, path } — a merged or
+// converted entry's old number answers with the entry it is now (moved: true).
+router.get('/entries/:number', async (req, res) => {
+  if (!/^\d{1,15}$/.test(req.params.number)) return res.status(404).json({ error: 'not_found', message: 'a public number, e.g. 100586' });
+  const { rows: [hit] } = await apiPool.query('SELECT type::text AS type, slug, public_id, moved FROM entry_by_public_id($1)', [req.params.number]);
+  if (!hit || !hit.type) return res.status(404).json({ error: 'not_found', message: `no entry no. ${req.params.number}` });
+  const plural = Object.keys(ENTITIES).find((k) => ENTITIES[k].type === hit.type);
+  res.json({ type: hit.type, plural, slug: hit.slug, public_id: Number(hit.public_id), path: `/${plural}/${hit.public_id}/${hit.slug}`, moved: hit.moved });
 });
 
 // Provenance numbers (077): which artworks' provenance records this number (a lot, ERR, Munich, Linz, "Entartete

@@ -263,7 +263,7 @@ const RELATIONSHIPS_SQL = `
               WHEN r.subject_type = $1 AND r.subject_id = $2 THEN 'outgoing' ELSE 'incoming' END AS direction,
          CASE WHEN r.subject_type = $1 AND r.subject_id = $2 OR rt.is_symmetric THEN rt.label ELSE rt.inverse_label END AS label,
          ${edgeCategory('r', 'rt')} AS category, rt.is_physical_presence,
-         jsonb_build_object('type', o.type, 'slug', o.slug, 'name', o.name,
+         jsonb_build_object('type', o.type, 'slug', o.slug, 'public_id', o.public_id, 'name', o.name,
                             'period', range_json(o.period, o.period_label)) AS entity,
          range_json(r.period, r.period_label) AS period,
          r.label AS note, r.certainty, r.notes_md,
@@ -346,8 +346,8 @@ const EXTRAS = {
     })(),
     provenance: (await apiPool.query(`
       SELECT p.kind, p.kind <> 'step' AS implied, p.position,
-             CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'name', o.name) END AS owner,
-             (SELECT coalesce(jsonb_agg(jsonb_build_object('type', c.owner_type, 'slug', x.slug, 'name', x.name) ORDER BY c.position), '[]')
+             CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'public_id', o.public_id, 'name', o.name) END AS owner,
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('type', c.owner_type, 'slug', x.slug, 'public_id', x.public_id, 'name', x.name) ORDER BY c.position), '[]')
                 FROM provenance_co_owners_x c JOIN entity_index x ON (x.type, x.id) = (c.owner_type, c.owner_id)
                WHERE c.provenance_id = p.id) AS co_owners,
              p.role, p.owner_label, p.owner_name, range_json(p.acquired, p.acquired_label) AS acquired, range_json(p.ended, p.ended_label) AS ended,
@@ -368,7 +368,7 @@ const EXTRAS = {
                        'artwork', (SELECT jsonb_build_object('slug', x.slug, 'title', x.title) FROM artworks x WHERE x.id = pv.exchanged_for_artwork_id),
                        'text', pv.exchanged_for_text) END FROM provenance pv WHERE pv.id = p.id) AS exchanged_for,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('_prov_id', a.id,
-                       'owner', CASE WHEN o.id IS NOT NULL THEN jsonb_build_object('type', o.type, 'slug', o.slug, 'name', o.name) END,
+                       'owner', CASE WHEN o.id IS NOT NULL THEN jsonb_build_object('type', o.type, 'slug', o.slug, 'public_id', o.public_id, 'name', o.name) END,
                        'owner_label', a.owner_label, 'role', a.role, 'method', a.method,
                        'acquired', range_json(a.acquired, a.acquired_label), 'ended', range_json(a.ended, a.ended_label),
                        'label', a.label, 'certainty', a.certainty, 'notes_md', a.notes_md) ORDER BY a.position), '[]')
@@ -434,7 +434,8 @@ async function previewsOf(refs) {
   if (!refs.length) return {};
   // two parallel arrays, unnest()ed into (type, slug) pairs: a row comparison the planner can join on
   const { rows } = await apiPool.query(`
-    SELECT p.type::text AS type, p.slug, p.name, p.subtitle, p.image_url, p.text_md FROM entry_previews p
+    SELECT p.type::text AS type, p.slug, (SELECT e.public_id FROM entity_index e WHERE (e.type, e.slug) = (p.type, p.slug)) AS public_id,
+           p.name, p.subtitle, p.image_url, p.text_md FROM entry_previews p
     WHERE (p.type, p.slug) IN (SELECT * FROM unnest($1::entity_type[], $2::text[]))`,
   [refs.map((r) => r.split('/')[0]), refs.map((r) => r.split('/')[1])]);
   const env = { names: await linkNames(apiPool, rows.map((r) => firstParagraph(r.text_md))) };
@@ -488,7 +489,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     }
 
     const { rows } = await apiPool.query(`
-      SELECT t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.list}, count(*) OVER () AS total
+      SELECT t.public_id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.list}, count(*) OVER () AS total
       FROM ${e.table} t
       ${where.length ? `WHERE ${where.join(' AND ')}` : ''}
       ORDER BY ${rank}${e.order}
@@ -508,11 +509,27 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     res.json({ data: rows, total, limit, offset });
   });
 
-  router.get(`/${plural}/:slug`, async (req, res) => {
-    if (!SLUG.test(req.params.slug)) throw notFound(`no ${e.type} "${req.params.slug}"`);
+  // the entry by its public number (085) — /artworks/100586, also /artworks/100586/la-petite-irene (the name is for
+  // reading; any or none will do) — or by its slug, as before
+  const detail = async (req, res) => {
+    const key = req.params.slug;
+    let byNumber = /^\d{1,15}$/.test(key);
+    if (!byNumber && !SLUG.test(key)) throw notFound(`no ${e.type} "${key}"`);
+    if (byNumber) {
+      const { rows: [hit] } = await apiPool.query('SELECT type::text AS type, slug, public_id, moved FROM entry_by_public_id($1)', [key]);
+      if (!hit || !hit.type) byNumber = false;   // no such number: perhaps a slug of digits ("1984")
+    }
+    if (byNumber) {
+      const { rows: [hit] } = await apiPool.query('SELECT type::text AS type, slug, public_id, moved FROM entry_by_public_id($1)', [key]);
+      if (hit.type !== e.type || hit.moved) {
+        // another type now (055), or merged into another entry (044): its current number, under the right type
+        const plural2 = Object.keys(ENTITIES).find((k) => ENTITIES[k].type === hit.type);
+        return res.redirect(301, `${req.baseUrl}/${plural2}/${hit.public_id}`);
+      }
+    }
     const { rows } = await apiPool.query(`
-      SELECT t.id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.detail}, t.wikidata_id, t.metadata, t.updated_at
-      FROM ${e.table} t WHERE t.slug = $1`, [req.params.slug]);
+      SELECT t.id, t.public_id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.detail}, t.wikidata_id, t.metadata, t.updated_at
+      FROM ${e.table} t WHERE ${byNumber ? 't.public_id = $1::bigint' : 't.slug = $1'}`, [key]);
     if (!rows.length) {
       // an old slug (migration 041): permanently moved to the entry's current address
       const moved = await apiPool.query(`SELECT x.slug FROM slug_history h JOIN ${e.table} x ON x.id = h.entity_id
@@ -531,13 +548,14 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       throw notFound(`no ${e.type} "${req.params.slug}"`);
     }
     const { id, ...entity } = rows[0];
+    entity.path = `/${plural}/${entity.public_id}/${entity.slug}`;   // the public address (085)
 
     const [rels, extras, mentionedIn] = await Promise.all([
       apiPool.query(RELATIONSHIPS_SQL, [e.type, id]).then((r) => r.rows),
       EXTRAS[e.type] ? EXTRAS[e.type](id) : {},
       // backlinks: the entries whose texts [[link]] this one (view content_links, migration 030); a term has used_in
       e.type === 'term' ? null : apiPool.query(`
-        SELECT DISTINCT x.type::text AS type, x.slug, x.name, x.sort_key COLLATE sort_natural AS sort_key FROM content_links l
+        SELECT DISTINCT x.type::text AS type, x.slug, x.public_id, x.name, x.sort_key COLLATE sort_natural AS sort_key FROM content_links l
         JOIN entity_index x ON (x.type, x.id) = (l.entity_type, l.entity_id)
         WHERE l.target_type = $1 AND l.target_slug = $2 AND NOT (x.type = $1::entity_type AND x.id = $3)
         ORDER BY sort_key`, [e.type, entity.slug, id]).then((r) => r.rows.map(({ sort_key: _, ...m }) => m)),
@@ -608,7 +626,9 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       FROM entry_identifiers i JOIN authorities a ON a.code = i.authority
       WHERE i.entity_type = $1 AND i.entity_id = $2 ORDER BY a.position`, [e.type, id])).rows;
     res.json({ type: e.type, ...body, ...extras, relationships, glossary, bibliography: cited, entries });
-  });
+  };
+  router.get(`/${plural}/:slug`, detail);
+  router.get(`/${plural}/:slug/:name`, (req, res, next) => (/^\d+$/.test(req.params.slug) ? detail(req, res) : next()));
 }
 
 module.exports = { router, ENTITIES, edgeCategory };

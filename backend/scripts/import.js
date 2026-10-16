@@ -447,6 +447,9 @@ async function main() {
       if (rowCount) stats['relationships pruned'] = rowCount;
     }
 
+    // Public numbers taken over from the files (085): the sequence continues after the highest one
+    await client.query("SELECT setval('entity_public_id_seq', greatest((SELECT max(public_id) FROM entity_index), (SELECT last_value FROM entity_public_id_seq)))");
+
     // Entities in the database without a file (created elsewhere, or file deleted): report only, never delete.
     const orphans = await client.query(`
       SELECT type, slug FROM entity_index

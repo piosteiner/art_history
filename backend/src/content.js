@@ -101,6 +101,13 @@ function toRow(doc, fields) {
 
   for (const key of Object.keys(doc)) {
     if (['relationships', 'images', 'provenance', 'numbers', 'sources', 'identifiers', 'slug'].includes(key)) continue;  // their own parts, below
+    // the public number (085): kept as exported, so the addresses survive an import into another database
+    if (key === 'public_id') {
+      if (doc.public_id === null || doc.public_id === undefined) continue;
+      if (!Number.isInteger(doc.public_id) || doc.public_id < 1) errors.push('public_id: a whole number');
+      else put('public_id', doc.public_id);
+      continue;
+    }
     if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;
     if (key.endsWith('_lang') && fields[key.slice(0, -'_lang'.length)] === 'name') continue;
     if (LEGACY_ALT.includes(key) && fields.names === 'names') continue;  // older YAML: alt_names / alt_titles
@@ -306,7 +313,7 @@ function dateToDoc(range, label, openEnd) {
 
 // SELECT list that reads a table back in doc shape (alias t).
 function docColumns(t) {
-  const cols = ['t.id', 't.slug', 't.updated_at::text AS version'];
+  const cols = ['t.id', 't.public_id', 't.slug', 't.updated_at::text AS version'];
   for (const [key, kind] of Object.entries(t.fields)) {
     if (kind === 'date' || kind === 'period') cols.push(`t.${key}::text AS ${key}`, `t.${key}_label`);
     else if (kind === 'name') cols.push(`coalesce(t.${key}_ruby, t.${key}) AS ${key}`, `t.${key}_lang`);
@@ -349,7 +356,7 @@ function rowToDoc(row, t) {
 // Read entities as docs: [{ id, slug, version (updated_at as text, for edit conflicts), doc }]. `where` is SQL on alias t.
 async function readDocs(db, t, where = 'true', params = []) {
   const { rows } = await db.query(`SELECT ${docColumns(t)} FROM ${t.table} t WHERE ${where} ORDER BY t.slug`, params);
-  return rows.map((row) => ({ id: row.id, slug: row.slug, version: row.version, doc: rowToDoc(row, t) }));
+  return rows.map((row) => ({ id: row.id, public_id: row.public_id, slug: row.slug, version: row.version, doc: rowToDoc(row, t) }));
 }
 
 // Relationships whose subject is (type, id), in doc shape (as written in the subject's YAML file), with their ids.
