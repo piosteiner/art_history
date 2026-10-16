@@ -301,13 +301,13 @@ test('start map: a chosen artwork shows its provenance as on its own page, in it
   await expect(popup).toContainText('Heiliger Sebastian'); // named: several entries can be on the map
   await expect(popup).toContainText('Arthur Kauffmann');
   await expect(popup).toHaveCount(1); // not also the popup of a dot underneath
-  // a time window shows presence instead: no numbered markers, but the route is the provenance's steps dated in the
-  // window (4 London 1938–1954, 6–8 Zürich), in the chain's order — one line London → Zürich, the handover documented
+  // a time window shows presence, with the provenance's steps dated in the window numbered as in the chain
+  // (4 London 1938–1954, 6–8 Zürich) and the route through them in the chain's order — one line London → Zürich
   await page.fill('input[name=from]', '1950');
   await page.fill('input[name=to]', '1960');
   await page.press('input[name=to]', 'Enter');
   await expect(page.locator('#chips .chip')).toHaveText(/Time window 1950–1960/);
-  await expect(stops).toHaveCount(0);
+  await expect(stops).toHaveText(['4', '6–8']);  // 2, 3 end before the window, 9 starts after it
   type F = { properties: { slug: string; style: string; stops: string } };
   await page.waitForFunction(() => {
     const m = (window as unknown as { __maps?: { getLayer(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
