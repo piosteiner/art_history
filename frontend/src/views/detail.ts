@@ -1,5 +1,6 @@
 // Detail page for every entity type: facts, images with credits, long text, relationships by category, map.
 import { getEntity, getEntityMap, PLURAL } from '../api';
+import { navigate, replaceUrl } from '../router';
 import { GROUPS, type Group } from '../selection';
 import {
   titleStatusLine, displayName, langAttr, originalLine, figure, html, PLURAL_LABEL, render, trusted, TYPE_LABEL, wireImageFallbacks, wireLightbox,
@@ -14,7 +15,8 @@ import { cite, resetCitations, wireCitations } from '../cite';
 import { accessedNote, factsFor, webPage, webPageLink, withSources } from './detail-facts';
 import { backlinks, crossedPaths, holdingsSections, relationshipSections, shownElsewhere } from './detail-sections';
 
-export function detail(main: HTMLElement, plural: Plural, slug: string) {
+/** `key`: a slug or a public number (API 085); the page then moves to the entry's canonical address (`path`). */
+export function detail(main: HTMLElement, plural: Plural, key: string) {
   loading(main);
   const current = guard();
   let cleanup: (() => void) | undefined;
@@ -22,13 +24,23 @@ export function detail(main: HTMLElement, plural: Plural, slug: string) {
   // started together with the entry rather than after it: one round trip less (terms and sources have no map,
   // places and events show their own point; the route data is for the others)
   const mapModule = plural === 'glossary' || plural === 'bibliography' ? null : import('../map');
-  const mapData = mapModule && plural !== 'places' && plural !== 'events' ? getEntityMap(plural, slug) : null;
+  // the map API knows slugs only: by number, it waits for the entry (backend wish: maps by number)
+  const entry = getEntity(plural, key);
+  const byNumber = /^\d+$/.test(key);
+  const mapData = mapModule && plural !== 'places' && plural !== 'events'
+    ? (byNumber ? entry.then((e) => getEntityMap(plural as Exclude<Plural, 'places'>, e.slug)) : getEntityMap(plural, key)) : null;
   mapModule?.catch(() => {}); // handled where they are used; no unhandled rejection when the entry fails first
   mapData?.catch(() => {});
 
-  getEntity(plural, slug)
+  entry
     .then((e: DetailByPlural[Plural]) => {
       if (!current()) return;
+      // the canonical address (API 085): from an old slug address, a renamed slug, or a number of another type
+      if (e.path && location.pathname !== e.path) {
+        const to = e.path + location.search + location.hash;
+        if (PLURAL[e.type] !== plural) { navigate(to, { replace: true }); return; } // another type: its own page
+        replaceUrl(to);
+      }
       resetCitations();
       const v = factsFor(e);
       document.title = `${v.title} · Art History`;

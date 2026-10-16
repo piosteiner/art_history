@@ -5,7 +5,7 @@
 // database · D other database · W Wikidata · T a note in words (not verified). A citation whose value has changed since
 // (`outdated`) gets no marker and is listed last, muted.
 import { byKeyboard, hideSoon, openFor, show } from './glossary';
-import { html, trusted, type Html } from './html';
+import { href as entryHref, html, trusted, type Html } from './html';
 import type { Citation, SourceHint } from './types';
 
 const RANK: Record<string, number> = { primary: 4, scholarly: 3, institution: 2, database: 1 };
@@ -39,8 +39,8 @@ function item(c: Citation, bibliography: Record<string, SourceHint> | undefined)
   return html`<li class="cite-item${c.outdated ? ' outdated' : ''}">
     <span class="cite-kind" title="${MARKER_TITLE[marker(c)]}">${marker(c)}</span>
     <span class="cite-body">${href ? html`<a href="${href}" target="_blank" rel="noopener">${c.text}</a>` : c.text}${c.kind === 'wikidata' || !accessed ? '' : html`, accessed ${accessed}`}${c.outdated ? html` <span class="tag">value changed since</span>` : ''}
-      ${full ? html`<span class="cite-full">${trusted(full)} <a href="/bibliography/${c.source!.slug}">In the bibliography →</a></span>`
-        : c.source ? html`<span class="cite-full"><a href="/bibliography/${c.source.slug}">${c.source.siglum} in the bibliography →</a></span>` : ''}
+      ${full ? html`<span class="cite-full">${trusted(full)} <a href="${entryHref('bibliography', c.source!.slug)}">In the bibliography →</a></span>`
+        : c.source ? html`<span class="cite-full"><a href="${entryHref('bibliography', c.source.slug)}">${c.source.siglum} in the bibliography →</a></span>` : ''}
       ${c.note ? html`<span class="cite-note">${c.note}</span>` : ''}</span>
   </li>`;
 }

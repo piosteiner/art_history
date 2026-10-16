@@ -7,7 +7,8 @@ import type { Plural } from './types';
 export type Route =
   | { name: 'explore'; params: URLSearchParams }
   | { name: 'list'; plural: Plural }
-  | { name: 'detail'; plural: Plural; slug: string }
+  /** `key`: a slug (/artworks/the-great-wave), or the public number of /artworks/100476[/<slug>] (API 085). */
+  | { name: 'detail'; plural: Plural; key: string }
   | { name: 'graph'; plural?: Plural; slug?: string; params: URLSearchParams }
   | { name: 'privacy' }
   | { name: 'numbers'; params: URLSearchParams }
@@ -29,9 +30,11 @@ export function parse(pathname: string, search: string): Route {
     if (more.length || (p && !isPlural(p))) return { name: 'not-found' };
     return { name: 'graph', plural: p as Plural | undefined, slug: s, params: query };
   }
-  const [first, slug, ...rest] = parts;
-  if (!isPlural(first) || rest.length) return { name: 'not-found' };
-  return slug ? { name: 'detail', plural: first, slug } : { name: 'list', plural: first };
+  const [first, key, ...rest] = parts;
+  if (!isPlural(first)) return { name: 'not-found' };
+  // /<plural>/<number>/<slug>: the number decides, the slug is for people (and may be outdated)
+  if (rest.length) return rest.length === 1 && /^\d+$/.test(key) ? { name: 'detail', plural: first, key } : { name: 'not-found' };
+  return key ? { name: 'detail', plural: first, key } : { name: 'list', plural: first };
 }
 
 export const currentRoute = () => parse(location.pathname, location.search);
@@ -41,9 +44,13 @@ export const ROUTE_EVENT = 'arthistory:route';
 
 let onRouteHandler: ((route: Route) => void) | undefined;
 let rendered = ''; // pathname + search of the page on screen
+let generation = 0; // counts navigations: a view's results are for the navigation that started it
+/** The current navigation's number — unchanged by replaceUrl (filters, a canonical address), changed by every navigation. */
+export const routeGeneration = () => generation;
 /** Renders the current address; `scroll`: where the reader was on it (back/forward, reload), else the top. */
 function run(scroll?: number) {
   rendered = location.pathname + location.search;
+  generation++;
   stopRestoring();
   window.scrollTo(0, 0);
   onRouteHandler?.(currentRoute());
@@ -116,6 +123,7 @@ export function replaceQuery(params: URLSearchParams) {
 /** Changes the address of the page on screen (filters in the query), keeping its scroll position for back/forward. */
 export function replaceUrl(url: string) {
   history.replaceState(history.state, '', url);
+  rendered = location.pathname + location.search; // still the page on screen: a jump to #note mustn't re-render it
 }
 
 /** A view renders into `main` and may return a cleanup function (maps, observers). */

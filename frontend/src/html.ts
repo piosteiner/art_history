@@ -2,7 +2,7 @@
 // Images load with crossorigin="anonymous": Wikimedia then neither receives nor sets cookies (the site stays cookie-free).
 import { fold } from './fold';
 import { zoomable } from './zoom';
-import { PLURAL } from './api';
+import { PLURAL, publicIdOf } from './api';
 import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, Plural, PolityLink, Ref, TranslationStatus } from './types';
 
 export class Html {
@@ -39,9 +39,12 @@ export function render(el: Element, content: Html) {
 
 // ---- shared bits ---------------------------------------------------------------------------------
 
+/** An entry's address: /<plural>/<number>/<slug> once its public number is known (API 085), else /<plural>/<slug>. */
 export const href = (type: EntityType | Plural, slug?: string) => {
   const plural = (type in PLURAL ? PLURAL[type as EntityType] : type) as Plural;
-  return slug ? `/${plural}/${encodeURIComponent(slug)}` : `/${plural}`;
+  if (!slug) return `/${plural}`;
+  const id = publicIdOf(plural, slug);
+  return id ? `/${plural}/${id}/${encodeURIComponent(slug)}` : `/${plural}/${encodeURIComponent(slug)}`;
 };
 
 export const link = (type: EntityType | Plural, slug: string, name: string) =>

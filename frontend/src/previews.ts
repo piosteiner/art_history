@@ -13,7 +13,8 @@ import { byKeyboard, entryPreview, hideSoon, keepOpen, openFor, show } from './g
 import type { EntityType, EntryHint } from './types';
 
 const TYPE_OF = Object.fromEntries(Object.entries(PLURAL).map(([type, plural]) => [plural, type])) as Record<string, EntityType>;
-const PATH = new RegExp(`^/(${Object.values(PLURAL).join('|')})/([^/]+)/?$`);
+// /<plural>/<slug>, and /<plural>/<number>/<slug> (API 085): the slug is what previews are asked for by
+const PATH = new RegExp(`^/(${Object.values(PLURAL).join('|')})/(?:[0-9]+/)?([^/]+)/?$`);
 const NOT_HERE = 'header, footer, .crumbs, .part-nav, .button-link, .card-link, .pick-panel, .glossary-popover, .hover-tip, sup.fn-ref';
 const OWN_POPOVER = '.glossary-link, .entry-link, .source-link, .fn-back';
 const OPEN_DELAY = 250;

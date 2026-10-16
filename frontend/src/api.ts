@@ -21,6 +21,36 @@ const KEEP_MS = 5 * 60 * 1000;
 const cache = new Map<string, Promise<unknown>>();
 const fetchedAt = new Map<string, number>();
 
+// Public numbers (API 085): every reference that names its type ({type, slug, public_id}) — relationships, provenance
+// owners, backlinks, search results, previews — and every list row (typed by its list) is remembered here, so `href()`
+// can build the canonical address /<plural>/<number>/<slug> wherever the number is known, without each caller
+// passing it. An entry whose number we haven't seen yet keeps its slug address, which still works (and redirects).
+const publicIds = new Map<string, number>(); // "artworks/irene-cahen-danvers-la-petite-irene" → 100476
+
+/** The public number of an entry, when a response has named it. */
+export const publicIdOf = (plural: Plural, slug: string) => publicIds.get(`${plural}/${slug}`);
+
+function remember(v: unknown, listOf?: Plural, depth = 0) {
+  if (!v || typeof v !== 'object' || depth > 12) return;
+  if (Array.isArray(v)) {
+    for (const x of v) remember(x, listOf, depth + 1);
+    return;
+  }
+  const o = v as Record<string, unknown>;
+  if (typeof o.public_id === 'number' && typeof o.slug === 'string') {
+    const plural = typeof o.type === 'string' ? PLURAL[o.type as EntityType] : listOf;
+    if (plural) publicIds.set(`${plural}/${o.slug}`, o.public_id);
+  }
+  // only a list's own rows are typed by the list; references inside them carry their own type
+  for (const [k, x] of Object.entries(o)) if (x && typeof x === 'object') remember(x, depth === 0 && k === 'data' ? listOf : undefined, depth + 1);
+}
+
+/** The plural a list path is of ("/artworks" → artworks), so its untyped rows can be remembered. */
+const listPlural = (path: string) => {
+  const m = /^\/([a-z]+)$/.exec(path);
+  return m && (Object.values(PLURAL) as string[]).includes(m[1]) ? (m[1] as Plural) : undefined;
+};
+
 function get<T>(path: string, params: Params = {}): Promise<T> {
   const qs = new URLSearchParams();
   for (const [k, v] of Object.entries(params)) if (v !== undefined && v !== null && v !== '') qs.set(k, String(v));
@@ -32,6 +62,7 @@ function get<T>(path: string, params: Params = {}): Promise<T> {
     p = fetch(url, { headers: { Accept: 'application/json' } }).then(async (res) => {
       const body = await res.json().catch(() => null);
       if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText);
+      remember(body, listPlural(path));
       return body as T;
     });
     p.catch(() => cache.delete(url)); // keep successes only
@@ -89,8 +120,9 @@ export const listAll = async <P extends Plural>(plural: P): Promise<List<ItemByP
   return { ...first, data: [...first.data, ...rest.flatMap((r) => r.data)], limit: first.total };
 };
 
-export const getEntity = <P extends Plural>(plural: P, slug: string) =>
-  get<DetailByPlural[P]>(`/${plural}/${encodeURIComponent(slug)}`);
+/** An entry by its slug or its public number (API 085; a number under another type answers with that type's entry). */
+export const getEntity = <P extends Plural>(plural: P, slugOrNumber: string) =>
+  get<DetailByPlural[P]>(`/${plural}/${encodeURIComponent(slugOrNumber)}`);
 
 export const search = (q: string) => get<{ data: SearchHit[] }>('/search', { q }).then((r) => r.data);
 

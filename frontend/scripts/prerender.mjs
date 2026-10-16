@@ -19,6 +19,8 @@ const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&
 // block tags become spaces, inline tags (<em>) just disappear: "Mount Fuji</em>." stays "Mount Fuji."
 const text = (html) => (html ?? '').replace(/<\/?(p|br|li|ul|ol|h\d|div|blockquote)\b[^>]*>/gi, ' ').replace(/<[^>]+>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&#39;|&rsquo;/g, '’').replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
 const clip = (s, n = 200) => (s.length <= n ? s : `${s.slice(0, s.lastIndexOf(' ', n - 1) > 80 ? s.lastIndexOf(' ', n - 1) : n - 1)}…`);
+/** An entry's public address (API 085): /<plural>/<number>/<slug>; the slug address where no number is given. */
+const entryPath = (plural, r) => (r.public_id ? `/${plural}/${r.public_id}/${r.slug}` : `/${plural}/${r.slug}`);
 const thumb = (url, w = 1200) => (url && url.includes('/thumb/') ? url.replace(/\/\d+px-/, `/${w}px-`) : url);
 
 async function get(path, tries = 3) {
@@ -102,13 +104,13 @@ function jsonLd(plural, e, d, url) {
   if (plural === 'artists') return { ...base, '@type': 'Person', birthDate: e.birth?.from ?? undefined, deathDate: e.death?.to ?? undefined, birthPlace: e.birth_place?.name };
   if (plural === 'artworks') {
     // main creator and co-creators (API `creators`; `creator` alone from older responses)
-    const makers = (e.creators ?? (e.creator ? [e.creator] : [])).map((c) => ({ '@type': 'Person', name: c.name, url: `${SITE}/artists/${c.slug}/` }));
+    const makers = (e.creators ?? (e.creator ? [e.creator] : [])).map((c) => ({ '@type': 'Person', name: c.name, url: `${SITE}${entryPath('artists', c)}/` }));
     return { ...base, '@type': 'VisualArtwork', creator: makers.length > 1 ? makers : makers[0], dateCreated: e.created?.label, artMedium: e.medium ?? undefined, artform: e.kind ?? undefined };
   }
   if (plural === 'places') return { ...base, '@type': 'Place', geo: e.location ? { '@type': 'GeoCoordinates', longitude: e.location.coordinates[0], latitude: e.location.coordinates[1] } : undefined };
   if (plural === 'institutions') return { ...base, '@type': e.kind === 'museum' ? 'Museum' : 'Organization', foundingDate: e.founded?.label };
   if (plural === 'events') return { ...base, '@type': 'Event', startDate: e.period?.from ?? undefined, endDate: e.period?.to ?? undefined,
-    location: e.place ? { '@type': 'Place', name: e.place.name, url: `${SITE}/places/${e.place.slug}/` } : undefined };
+    location: e.place ? { '@type': 'Place', name: e.place.name, url: `${SITE}${entryPath('places', e.place)}/` } : undefined };
   return null;
 }
 
@@ -135,6 +137,17 @@ function page(template, { title, description, url, image, imageAlt, type = 'webs
     .replace('<main id="app"></main>', `<main id="app">${body}</main>`);
 }
 
+/**
+ * A page that only sends the reader on: an old slug address or a bare number (API 085). GitHub Pages can't answer 301,
+ * so a refresh at once (keeping ?query and #hash) and a canonical link for search engines (no noindex beside it:
+ * the two together are contradictory signals).
+ */
+const forward = (to) => `<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Art History</title>
+<link rel="canonical" href="${esc(to)}"><meta http-equiv="refresh" content="0; url=${esc(to)}">
+<script>location.replace(${JSON.stringify(to)} + location.search + location.hash)</script></head>
+<body><p><a href="${esc(to)}">${esc(to)}</a></p></body></html>
+`;
+
 async function write(path, content) {
   const file = join(DIST, path);
   await mkdir(dirname(file), { recursive: true });
@@ -148,11 +161,17 @@ let pages = 0;
 
 for (const plural of PLURALS) {
   const items = await listAll(plural);
-  const details = await pool(items, 6, (it) => get(`/${plural}/${encodeURIComponent(it.slug)}`));
+  const details = await pool(items, 6, (it) => get(`/${plural}/${it.public_id ?? encodeURIComponent(it.slug)}`));
   for (const e of details) {
-    const url = `${SITE}/${plural}/${e.slug}/`;
+    // the canonical address (API 085) — with the slash GitHub Pages serves a folder's page at without a redirect
+    const path = e.path ?? entryPath(plural, e);
+    const url = `${SITE}${path}/`;
     const d = describe(plural, e);
-    await write(`${plural}/${e.slug}/index.html`, page(template, {
+    if (e.public_id) {
+      await write(`${plural}/${e.slug}/index.html`, forward(url)); // links and bookmarks from before the numbers
+      await write(`${plural}/${e.public_id}/index.html`, forward(url)); // the number alone
+    }
+    await write(`${path.slice(1)}/index.html`, page(template, {
       title: `${d.name} · Art History`, description: d.description, url, type: 'article',
       image: d.image ? thumb(d.image.url) : null, imageAlt: d.image?.caption ?? d.name,
       ld: jsonLd(plural, e, d, url),
@@ -165,7 +184,7 @@ for (const plural of PLURALS) {
   await write(`${plural}/index.html`, page(template, {
     title: `${LIST_LABEL[plural]} · Art History`, url: listUrl,
     description: `${LIST_LABEL[plural]} in the Art History collection: ${items.slice(0, 8).map((i) => i.name ?? i.title).join(', ')}${items.length > 8 ? ' …' : ''}`,
-    body: `<section class="page" data-prerendered><h1>${esc(LIST_LABEL[plural])}</h1><ul>${items.map((i) => `<li><a href="/${plural}/${esc(i.slug)}">${esc(i.name ?? i.title)}</a></li>`).join('')}</ul></section>`,
+    body: `<section class="page" data-prerendered><h1>${esc(LIST_LABEL[plural])}</h1><ul>${items.map((i) => `<li><a href="${esc(entryPath(plural, i))}">${esc(i.name ?? i.title)}</a></li>`).join('')}</ul></section>`,
   }));
   urls.push(listUrl);
   console.log(`${plural}: ${items.length} pages`);

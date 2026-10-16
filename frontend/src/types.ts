@@ -23,6 +23,8 @@ export interface List<T> {
 }
 
 export interface Ref {
+  /** The entry's public number (API 085), in references that name an entry. */
+  public_id?: number;
   slug: string;
   name: string;
 }
@@ -87,6 +89,8 @@ export interface EntryRef { type: EntityType; slug: string; name: string }
 
 interface DetailBase {
   slug: string;
+  /** The public number (API 085: from 100001, never changed) and the canonical address "/artworks/100476/<slug>". */
+  public_id: number; path: string;
   wikidata_id: string | null;
   metadata: Record<string, unknown>;
   updated_at: string;

@@ -216,7 +216,23 @@ work with its own artist, two works). Shown under the explore map (`src/crossing
 time window), as a yellow halo on the map, in place popups ("At the same time here") and on artist / patron / artwork /
 place pages. Overlaps based on year-only or "c." dates are marked "possibly".
 
+## Public numbers and addresses (API 085)
+Entry pages live at `/<plural>/<public_id>/<slug>` (`path` in every detail). The router takes `/<plural>/<number>[/<slug>]`
+and the old `/<plural>/<slug>`; `detail()` loads by number or slug and then replaces the address with `path` (an old
+slug address, a renamed slug — the number decides — or `?query` / `#hash` kept). A number of another type: the API
+answers with that entry (301 followed by `fetch`) and the page navigates to its own type's address. Links: `api.ts`
+remembers the `public_id` of every typed reference (`{type, slug, public_id}`: relationships, provenance owners and
+co-owners, backlinks, search, previews) and every list row (typed by its list) as responses arrive; `href()` builds
+the numbered address when the number is known and falls back to the slug address (which redirects) otherwise —
+no caller passes numbers. `guard()` follows navigations (`routeGeneration()` in `router.ts`), not the address, so a
+view may replace its own address; `replaceUrl()` keeps the router's idea of the page on screen in step, so a jump to
+`#note` doesn't re-render. Static pages (`scripts/prerender.mjs`): the page at `path/` (canonical, sitemap — with the
+slash GitHub Pages serves a folder's page at), small forwarding pages at the old `/<plural>/<slug>/` and at
+`/<plural>/<number>/` (refresh + canonical; Pages can't answer 301), numbered links on the list pages and in JSON-LD.
+
 ## Wishes for the backend
+- **Maps and networks by number (085):** `/v1/map/<plural>/<number>` and `/v1/graph/<plural>/<number>` answer 404, so an
+  entry opened by its number loads its map only after the entry (to learn the slug) — one round trip later.
 - **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise): `GET /v1/encounters?from=&to=&types=`
   = a self-join of presence links on `place_id` with `a.period && b.period` (daterange overlap, GiST index) and
   `a.period * b.period` as the overlap; today the browser does this over the full presence list.

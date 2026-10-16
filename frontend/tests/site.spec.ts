@@ -65,7 +65,7 @@ test('picker names: click ticks, Ctrl+click opens the entry in a new tab', async
   await vg.locator('.pick-link').click();
   await expect(vg.locator('input')).not.toBeChecked();
   const [tab] = await Promise.all([context.waitForEvent('page'), vg.locator('.pick-link').click({ modifiers: ['ControlOrMeta'] })]);
-  await expect(tab).toHaveURL(/\/artists\/vincent-van-gogh$/, { timeout: 15_000 }); // a new tab loads slowly in a busy run
+  await expect(tab).toHaveURL(/\/artists\/\d+\/vincent-van-gogh$/, { timeout: 15_000 }); // a new tab loads slowly in a busy run
 });
 
 test('artist detail: facts, relationships, map, links to explore and network', async ({ page }) => {
@@ -225,7 +225,43 @@ test('unknown entries show "Not found"', async ({ page }) => {
 test('old #/ addresses still work and become paths', async ({ page }) => {
   await page.goto('/#/artists/vincent-van-gogh');
   await expect(page.locator('h1')).toHaveText('Vincent van Gogh');
-  await expect(page).toHaveURL(/\/artists\/vincent-van-gogh$/);
+  await expect(page).toHaveURL(/\/artists\/\d+\/vincent-van-gogh$/); // and the canonical address (API 085)
+});
+
+test('public numbers (085): /<plural>/<number>/<slug> is the address; old slugs, renamed slugs and other types land there', async ({ page }) => {
+  const irene = /\/artworks\/100476\/irene-cahen-danvers-la-petite-irene$/;
+  // the number decides; the canonical address replaces the one typed
+  await page.goto('/artworks/100476');
+  await expect(page.locator('h1')).toContainText('Irène');
+  await expect(page).toHaveURL(irene);
+  // an old slug address (bookmarks, links from before 085)
+  await page.goto('/artworks/irene-cahen-danvers-la-petite-irene');
+  await expect(page).toHaveURL(irene);
+  // an outdated slug after the number: the entry was renamed
+  await page.goto('/artworks/100476/an-old-name?x=1#facts');
+  await expect(page).toHaveURL(/\/artworks\/100476\/irene-cahen-danvers-la-petite-irene\?x=1#facts$/);
+  // a number under the wrong type: the right type's page
+  await page.goto('/people/100476');
+  await expect(page).toHaveURL(irene);
+  await expect(page.locator('.crumbs a')).toHaveText('Artworks');
+  // links carry the numbers: relationships, provenance owners, list rows
+  const louis = page.locator('.provenance a[href="/people/100481/louis-cahen-d-anvers"]').first();
+  await expect(louis).toBeVisible();
+  await louis.hover(); // a numbered link gets its preview like a slug one
+  await expect(page.locator('.popover-entry')).toContainText("Louis Cahen d'Anvers");
+  await page.goto('/artworks');
+  await expect(page.locator('.card a[href="/artworks/100476/irene-cahen-danvers-la-petite-irene"]')).toBeVisible();
+});
+
+test('public numbers: an unknown number is "Not found"; back after the address was replaced returns to the list', async ({ page }) => {
+  await page.goto('/artworks/999999999');
+  await expect(page.locator('main')).toContainText(/not found|not_found/i);
+  await page.goto('/artworks');
+  await page.locator('.card a[href="/artworks/100476/irene-cahen-danvers-la-petite-irene"]').click();
+  await expect(page.locator('h1')).toContainText('Irène');
+  await page.goBack();
+  await expect(page).toHaveURL(/\/artworks$/);
+  await expect(page.locator('.card').first()).toBeVisible();
 });
 
 test('links navigate without reloading; back returns', async ({ page }) => {
@@ -1688,7 +1724,7 @@ test('a long selection gets a short address; the short address opens the same se
   // many artists picked (built from the live list, so it doesn't depend on exact entries)
   await page.goto('/artists');
   await expect(page.locator('.card').first()).toBeVisible();
-  const slugs = await page.locator('.card a[href^="/artists/"]').evaluateAll((as) => [...new Set(as.map((a) => a.getAttribute('href')!.split('/')[2]))].slice(0, 30));
+  const slugs = await page.locator('.card a[href^="/artists/"]').evaluateAll((as) => [...new Set(as.map((a) => a.getAttribute('href')!.split('/').at(-1)!))].slice(0, 30));
   expect(slugs.length).toBeGreaterThan(10);
   await page.goto(`/?artists=${slugs.join(',')}&movements=none`);
   await expect(page.locator('#map-status')).toContainText('places');

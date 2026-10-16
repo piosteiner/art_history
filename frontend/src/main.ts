@@ -110,7 +110,7 @@ function onRoute(route: Route) {
       cleanup = list(main, route.plural);
       break;
     case 'detail':
-      cleanup = detail(main, route.plural, route.slug);
+      cleanup = detail(main, route.plural, route.key);
       break;
     case 'graph':
       document.title = 'Network · Art History';

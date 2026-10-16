@@ -47,11 +47,12 @@ test('previews on an entry page: the first tap on a link shows it, the second fo
       name: ref, subtitle: null, image_url: null, excerpt: `About ${ref}.` }])) } });
   });
   await page.goto('/artworks/the-great-wave-off-kanagawa');
-  const museum = page.locator('.facts a[href="/institutions/metropolitan-museum-of-art"]');
+  // numbered or not (an artwork's `institution` has no public_id, API 085): a preview either way
+  const museum = page.locator('.facts a[href$="/metropolitan-museum-of-art"]');
   await page.waitForLoadState('networkidle');
   await museum.tap();
   await expect(page.locator('.popover-entry')).toContainText('About institution/metropolitan-museum-of-art.');
-  await expect(page).toHaveURL(/\/artworks\/the-great-wave-off-kanagawa$/);
+  await expect(page).toHaveURL(/\/artworks\/\d+\/the-great-wave-off-kanagawa$/);
   await museum.tap();
-  await expect(page).toHaveURL(/\/institutions\/metropolitan-museum-of-art$/);
+  await expect(page).toHaveURL(/\/institutions\/\d+\/metropolitan-museum-of-art$/);
 });

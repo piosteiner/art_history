@@ -1,3 +1,4 @@
+import { routeGeneration } from '../router';
 import { ApiError } from '../api';
 import { html, render } from '../html';
 
@@ -21,8 +22,11 @@ export function showError(el: HTMLElement, err: unknown) {
   render(el, html`<div class="error"><strong>Something went wrong.</strong> ${msg}</div>`);
 }
 
-/** Ignores results of a view the user has already navigated away from. */
+/**
+ * Ignores results of a view the user has already navigated away from. By navigation, not by address: a view may
+ * change its own address (filters, the canonical /<plural>/<number>/<slug>) and still be the page on screen.
+ */
 export function guard() {
-  const start = location.pathname + location.search;
-  return () => location.pathname + location.search === start;
+  const start = routeGeneration();
+  return () => routeGeneration() === start;
 }
