@@ -245,12 +245,13 @@ shown like a citation's "accessed on …".
 
 ### Provenance coverage — where the provenance is silent (artworks, 078)
 - `provenance_coverage` (detail) or `null`: the time from the creation until today as stretches
-  `segments: [{kind, period, in_1933_1945, before, after, candidates, before_position, after_position}]`, in order — A gap also has `show_after` (migration 079): the step it is shown after — the last one between
-its owners dated before it (an agent at an unsold auction can split a gap); else `before_position`.
+  `segments: [{kind, period, in_1933_1945, before, after, candidates, before_position, after_position, show_after}]`, in order —
   `kind` **documented** (someone demonstrably held it: a recorded period, or until the next acquisition when that
   handover is documented as direct; documented custody — a deposit, a loan — counts too), **presumed** (a holder is
   known, the edges are not), **gap** (no holder known). A gap names the holders `before` / `after` it (and their
   provenance `position`s) and `candidates`: holders known only without dates who may have held it then.
+  `show_after` (079): the step to show a gap after — the last one between its owners dated before it (an agent at an
+  unsold auction can split a gap), else `before_position`.
   `in_1933_1945`: the stretch touches 30 January 1933 – 8 May 1945. Also `documented_percent`, `has_provenance`,
   `gap_years`, `gap_1933_1945_years`.
 - Lists: `provenance_coverage: {documented_percent, has_provenance, gap_1933_1945}`; filter
