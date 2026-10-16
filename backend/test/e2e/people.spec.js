@@ -19,7 +19,7 @@ test('a person with life dates and occupations, depicted in an artwork; roles in
   sql("INSERT INTO artworks (slug, title, created, created_label) VALUES ('test-portrait-hagiwara', 'Portrait of Hagiwara Sakutarō', year_range(1943), '1943')");
   await userA.goto('/artworks/test-portrait-hagiwara');
   await userA.click('summary:has-text("+ Add relationship")');
-  await userA.selectOption('#r-type', 'depicts_person');
+  await userA.selectOption('#r-type', 'depicts');  // one "depicts" choice: a person as target makes it depicts_person
   await userA.fill('#r-to', 'person/hagiwara-sakutaro');
   await userA.keyboard.press('Escape');
   await userA.fill('#r-label', 'portrait');

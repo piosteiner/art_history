@@ -251,6 +251,10 @@ function nameCountry(row) {
   return row;
 }
 
+// An edge's category as shown: an artwork depicting another artwork or an event is a depiction like a portrait —
+// stored as `depicts`, whose places are map material (category association). The graph uses it too (graph.js).
+const edgeCategory = (r, rt) => `CASE WHEN ${rt}.code = 'depicts' AND ${r}.object_type <> 'place' THEN 'depiction' ELSE ${rt}.category END`;
+
 // Everything connected to one entity, in both directions. The label is read from the entity's point of view:
 // Van Gogh "lived in" Arles, Arles is "home of" Van Gogh.
 const RELATIONSHIPS_SQL = `
@@ -258,7 +262,7 @@ const RELATIONSHIPS_SQL = `
          CASE WHEN rt.is_symmetric THEN 'mutual'
               WHEN r.subject_type = $1 AND r.subject_id = $2 THEN 'outgoing' ELSE 'incoming' END AS direction,
          CASE WHEN r.subject_type = $1 AND r.subject_id = $2 OR rt.is_symmetric THEN rt.label ELSE rt.inverse_label END AS label,
-         rt.category, rt.is_physical_presence,
+         ${edgeCategory('r', 'rt')} AS category, rt.is_physical_presence,
          jsonb_build_object('type', o.type, 'slug', o.slug, 'name', o.name,
                             'period', range_json(o.period, o.period_label)) AS entity,
          range_json(r.period, r.period_label) AS period,
@@ -588,4 +592,4 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
   });
 }
 
-module.exports = { router, ENTITIES };
+module.exports = { router, ENTITIES, edgeCategory };

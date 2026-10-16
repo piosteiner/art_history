@@ -5,7 +5,7 @@
 const express = require('express');
 const { apiPool } = require('../db');
 const { badRequest, notFound, intParam, listParam } = require('../http');
-const { ENTITIES } = require('./entities');
+const { ENTITIES, edgeCategory } = require('./entities');
 
 const MAX_NODES = 500;
 const router = express.Router();
@@ -26,6 +26,12 @@ router.get('/:plural/:slug', async (req, res) => {
     types = vocab.filter((v) => !['presence', 'association'].includes(v.category)).map((v) => v.code);
   }
 
+  // An artwork depicting another artwork or an event is a depiction like a portrait: stored as `depicts` (whose
+  // places are map material, category association), it joins the graph — as category depiction — whenever the
+  // depictions of people do (by default, or with types=depicts_person).
+  const depicted = types.includes('depicts_person') && !types.includes('depicts');
+  const inGraph = (r) => `(${r}.relationship_type = ANY ($4) OR ($5 AND ${r}.relationship_type = 'depicts' AND ${r}.object_type <> 'place'))`;
+
   const found = await apiPool.query(`SELECT id FROM ${e.table} WHERE slug = $1`, [req.params.slug]);
   if (!found.rows.length) throw notFound(`no ${e.type} "${req.params.slug}"`);
 
@@ -42,10 +48,10 @@ router.get('/:plural/:slug', async (req, res) => {
       FROM walk w
       CROSS JOIN LATERAL (
         SELECT r.object_type, r.object_id FROM edges r
-         WHERE r.subject_type = w.type AND r.subject_id = w.id AND r.relationship_type = ANY ($4)
+         WHERE r.subject_type = w.type AND r.subject_id = w.id AND ${inGraph('r')}
         UNION ALL
         SELECT r.subject_type, r.subject_id FROM edges r
-         WHERE r.object_type = w.type AND r.object_id = w.id AND r.relationship_type = ANY ($4)
+         WHERE r.object_type = w.type AND r.object_id = w.id AND ${inGraph('r')}
       ) AS n (type, id)
       WHERE w.depth < $3
     ),
@@ -61,7 +67,8 @@ router.get('/:plural/:slug', async (req, res) => {
          FROM nodes n JOIN entity_index ei ON ei.type = n.type AND ei.id = n.id) AS nodes,
       (SELECT coalesce(jsonb_agg(jsonb_build_object(
                 'source', s.type || '/' || s.slug, 'target', o.type || '/' || o.slug,
-                'type', rt.code, 'label', rt.label, 'category', rt.category, 'symmetric', rt.is_symmetric,
+                'type', rt.code, 'label', rt.label, 'symmetric', rt.is_symmetric,
+                'category', ${edgeCategory('r', 'rt')},
                 'certainty', r.certainty, 'note', r.label, 'period', range_json(r.period, r.period_label),
                 'derived', r.source <> 'relationship', 'end_basis', r.end_basis)
               ORDER BY rt.sort_order, s.sort_key COLLATE sort_natural), '[]')
@@ -71,8 +78,8 @@ router.get('/:plural/:slug', async (req, res) => {
          JOIN nodes n2 ON n2.type = r.object_type  AND n2.id = r.object_id
          JOIN entity_index s ON s.type = r.subject_type AND s.id = r.subject_id
          JOIN entity_index o ON o.type = r.object_type  AND o.id = r.object_id
-         WHERE r.relationship_type = ANY ($4)) AS edges`,
-  [e.type, found.rows[0].id, depth, types]);
+         WHERE ${inGraph('r')}) AS edges`,
+  [e.type, found.rows[0].id, depth, types, depicted]);
 
   res.json({
     root: `${e.type}/${req.params.slug}`, depth, types,

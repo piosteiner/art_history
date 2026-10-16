@@ -384,3 +384,6 @@ further creators `co_creator` — so artists and their works are connected in th
 The provenance adds `owned_by` and `transferred_to` edges (collector ↔ dealer ↔ museum); `end_basis: "implied"` marks a
 period whose end is only implied by the next acquisition (draw it dashed/faded). The category `provenance` can be
 switched off like any other.
+`depicts` edges to an artwork or an event (a painting of a painting, of a battle) are in the graph whenever
+`depicts_person` is (by default): `type: "depicts"`, `category: "depiction"` (also in an entry's `relationships`);
+depicted places stay map material (`association`).

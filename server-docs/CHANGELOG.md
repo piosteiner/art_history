@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-16
 
+### Relationship picker: one choice per label, A–Z; depicted artworks and events are depictions
+- **What:** Admin (`core.js` `pickerOptions`, `relFromForm`): types with the same label in the same direction are one
+  option — "depicts" (depicts + depicts_person), "created in" (+ _polity), "located in" (+ _polity) — and the target's
+  kind picks the type on save; options sorted A–Z per direction; `housed_at` no longer offered (unused; the Collection
+  field and the provenance cover it — an existing one keeps its choice); `houses` explained ("— as its building").
+  API: `edgeCategory()` (entities.js, used by graph.js) — `depicts` to an artwork or an event has category `depiction`
+  in an entry's relationships and in the graph, and is in the graph whenever `depicts_person` is (default); depicted
+  places stay `association` (map). No data changed. Test `relpicker.spec.js`; `people.spec.js` picks "depicts".
+- **Why:** owner: "depicts" appeared twice in the list (person/artist vs place/artwork/event); options weren't sorted;
+  a depicted painting or event showed nowhere in the network.
+- **Revert:** revert the commit (no migration).
+
 ### Admin artwork lists find works by their artist; the site has a search page
 - **What:** Admin list pages for artworks (`routes/entries.js`): `?q=` also matches the creator and co-creators (the
   same fuzzy score on the artist's names, `match.js`); title matches first (best first), then a heading "Works by a

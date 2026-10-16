@@ -286,13 +286,20 @@ async function allEntities(db) {
 // Form body → validated params for INSERT/UPDATE relationships. Throws UserError.
 // `entity` is the page the form is on; with a reverse ("~") type it becomes the object and the target the subject.
 async function relFromForm(db, body, entity, keepMetadata = {}, { reverse = false } = {}) {
-  const type = String(body.type || '');
+  let type = String(body.type || '');
   const types = await relationshipTypes(db, entity.type, { reverse });
-  const rt = types.find((x) => x.code === type);
+  let rt = types.find((x) => x.code === type);
   if (!rt) throw new UserError(`"${type}" is not a relationship type for ${an(entity.type)}.`);
   const m = /^([a-z]+)\/([a-z0-9-]+)$/.exec(String(body.to || '').trim());
   if (!m) throw new UserError('Target must look like place/paris — pick one from the suggestions.');
-  if (!rt.object_types.includes(m[1])) throw new UserError(`"${rt.label}" needs ${rt.object_types.map(an).join(' or ')} as target, not ${an(m[1])}.`);
+  // one choice in the picker, several types (pickerOptions): the one for this kind of target — "depicts" a person is
+  // depicts_person, a place depicts
+  if (!rt.object_types.includes(m[1])) {
+    const sibling = types.find((x) => x.reverse === rt.reverse && x.label === rt.label && x.object_types.includes(m[1]));
+    if (sibling) [rt, type] = [sibling, sibling.code];
+  }
+  const allowed = [...new Set(types.filter((x) => x.reverse === rt.reverse && x.label === rt.label).flatMap((x) => x.object_types))];
+  if (!rt.object_types.includes(m[1])) throw new UserError(`"${rt.label}" needs ${allowed.map(an).join(' or ')} as target, not ${an(m[1])}.`);
   const targetId = (await db.query('SELECT entity_id($1, $2) AS id', [m[1], m[2]])).rows[0].id;
   if (targetId === null) throw new UserError(`${m[0]} does not exist.`);
   const [subject, code, objectType, objectId] = rt.reverse
@@ -309,14 +316,35 @@ async function relFromForm(db, body, entity, keepMetadata = {}, { reverse = fals
     opt('period_label') ?? (period && period.label), opt('label'), certainty, opt('notes_md'), JSON.stringify(rest)], { sources });
 }
 
+// The relationship picker: the types with the same label in the same direction are one choice — "depicts" (a person,
+// artist → depicts_person; a place, artwork, event → depicts), "created in" (a place or a polity), "located in". They
+// stay separate types because they belong in different places (a portrait in the network, a depicted place on the
+// map; places and polities), and relFromForm takes the one for the chosen target. A–Z within each direction.
+// housed_at (an artwork at an institution) is not offered: the Collection field and the provenance say where a work
+// is and was — only an existing one keeps its choice. Building types get a word of explanation.
+const PICKER_HIDDEN = new Set(['housed_at', '~housed_at']);
+const PICKER_NOTE = { houses: 'as its building', '~houses': 'a building of it' };
+function pickerOptions(types, current) {
+  const merged = [];
+  for (const t of types) {
+    if (PICKER_HIDDEN.has(t.code) && t.code !== current) continue;
+    const same = merged.find((x) => x.reverse === t.reverse && x.label === t.label);
+    if (same) {
+      same.codes.push(t.code);
+      same.object_types = [...new Set([...same.object_types, ...t.object_types])];
+    } else merged.push({ ...t, codes: [t.code], object_types: [...t.object_types] });
+  }
+  return merged.sort((a, b) => a.label.localeCompare(b.label, 'en'));
+}
+
 function relForm({ action, types, entities, rel = {}, submit, entityType = 'entity' }) {
   const v = (k) => rel[k] ?? '';
   return html`<form method="post" action="${action}" class="form">
     <div class="row">
       <div class="field"><label for="r-type">Relationship</label>
         <select id="r-type" name="type" required>${[false, true].map((rev) => {
-          const group = types.filter((t) => t.reverse === rev);
-          const options = group.map((t) => html`<option value="${t.code}" data-object-types="${t.object_types.join(',')}"${t.code === rel.type ? ' selected' : ''}>${t.label} (${t.object_types.join(', ')})</option>`);
+          const group = pickerOptions(types.filter((t) => t.reverse === rev), rel.type);
+          const options = group.map((t) => html`<option value="${t.codes.includes(rel.type) ? rel.type : t.code}" data-object-types="${t.object_types.join(',')}"${t.codes.includes(rel.type) ? ' selected' : ''}>${t.label} (${t.object_types.join(', ')})${PICKER_NOTE[t.code] ? ` — ${PICKER_NOTE[t.code]}` : ''}</option>`);
           return !group.length ? '' : types.some((t) => t.reverse) ? html`<optgroup label="${rev ? `Towards this ${entityType}` : `From this ${entityType}`}">${options}</optgroup>` : options;
         })}</select></div>
       <div class="field"><label for="r-to">Target</label>
