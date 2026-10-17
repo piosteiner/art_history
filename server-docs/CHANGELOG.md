@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-17
 
+### Adenai CMS: data cache, image cleanup (42 → 17 MB)
+- **What:** adenai-cms answers reads of `public/data/*.json` from memory (`server/lib/github-cache.js`, one shared
+  GitHub client in `server/lib/github.js`), gzip on; deleted the 84 `uploads/optimized/*-original.webp` (1200 px copies
+  of `*-large.webp` made by a pipeline bug; `media-library.json` now points `sizes.original` at the large file) and a
+  stray temp upload.
+- **Why:** owner: the CMS felt slow (every read waited 0.2–0.6 s for GitHub); storage for many more images.
+- **Revert:** `git revert` the adenai-map commits; the deleted files were duplicates (same image, 1200 px).
+
 ### Disk cleanup (23 → 18 GB used)
 - **What:** removed 6 unused VS Code server versions (`~/.vscode-server/cli/servers`, the 2 running kept), the npm cache,
   two 127 MB quiz crash-loop logs from 2026-09-23, `/var/www/obs-remote-media-backend.retired-2026-10-12` (its 10 images
