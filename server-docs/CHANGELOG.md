@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-17
 
+### Disk cleanup (23 → 18 GB used)
+- **What:** removed 6 unused VS Code server versions (`~/.vscode-server/cli/servers`, the 2 running kept), the npm cache,
+  two 127 MB quiz crash-loop logs from 2026-09-23, `/var/www/obs-remote-media-backend.retired-2026-10-12` (its 10 images
+  not in the new backend are in `obs-remote-media-controller/backend/orphaned-uploads-2026-10-12/`), the
+  `/var/www/gif-converter` placeholder, and disabled snap revisions; `snap set system refresh.retain=2`.
+- **Why:** owner: free space; all of it unused or re-downloadable.
+- **Revert:** nothing to restore; VS Code and npm download again on demand; the retired backend is in its GitHub repo.
+
 ### Nightly content snapshot installed
 - **What:** `arthistory-export.{service,timer}` copied from `server-docs/config/systemd/` to `/etc/systemd/system/`,
   enabled (04:00 UTC). First snapshot run by hand before (523 files, everything since 2026-10-09).
