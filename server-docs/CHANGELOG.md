@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-17
 
+### Adenai: nightly off-site backup, journeys moved into the repo
+- **What:** `adenai-backup.{service,timer}` (04:30 UTC, units in `adenai-map/server/config/systemd/`) runs
+  `server/scripts/backup.sh`: each `uploads/optimized/*.webp` encrypted once (gpg AES256, passphrase
+  `~/.config/adenai/backup-passphrase`) plus `config/users.js` and `.env`, pushed to the private repo
+  `piosteiner/adenai-backups` cloned at `~/backups/adenai-offsite` (SSH alias `github-adenai-backups`). Restore:
+  `scripts/restore-backup.sh`. Journeys moved from `server/data/journeys.json` (kept as `…migrated-2026-10-17`) to
+  `public/data/journeys.json`.
+- **Why:** media and journeys existed only on this server (one manual tarball from 2026-10-12).
+- **Revert:** `sudo systemctl disable --now adenai-backup.timer`; journeys: revert the adenai-map commit.
+
 ### Adenai CMS: data cache, image cleanup (42 → 17 MB)
 - **What:** adenai-cms answers reads of `public/data/*.json` from memory (`server/lib/github-cache.js`, one shared
   GitHub client in `server/lib/github.js`), gzip on; deleted the 84 `uploads/optimized/*-original.webp` (1200 px copies
