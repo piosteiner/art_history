@@ -4,13 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-17
 
-### Converter API: conversion progress (needs `systemctl restart file-converter-api`)
+### Nightly content snapshot installed
+- **What:** `arthistory-export.{service,timer}` copied from `server-docs/config/systemd/` to `/etc/systemd/system/`,
+  enabled (04:00 UTC). First snapshot run by hand before (523 files, everything since 2026-10-09).
+- **Why:** the content export was prepared but never installed, so content/ changes piled up uncommitted.
+- **Revert:** `sudo systemctl disable --now arthistory-export.timer`, remove both units, `daemon-reload`.
+
+### Converter API: conversion progress
 - **What:** `/api/convert` and `/convert/gif-to-webm` take a `job` id; ffmpeg runs with `-progress pipe:1` and writes
   `temp_uploads/progress_<job>.json`, read by new `GET /api/progress/<job>`. Preview WebMs get `-g 10`.
 - **Why:** owner: conversions looked stuck with no percentage. A file, not memory, because gunicorn has 2 workers.
 - **Revert:** `git revert` the file-converter commit "GIF tool: progress in percent…" and restart the service.
 
-### Swap 1 → 4 GB, swappiness 10 (owner runs swap-4g.sh)
+### Swap 1 → 4 GB, swappiness 10
 - **What:** `/swapfile` grown to 4 GB; `/etc/sysctl.d/99-swappiness.conf` sets `vm.swappiness=10`.
 - **Why:** three crashes today, most likely memory (Chromium on top of the VS Code server); swap turns a spike into
   slowness instead of a crash. Normal use (~1.2 GB for all sites) is unaffected.

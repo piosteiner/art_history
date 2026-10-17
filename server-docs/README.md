@@ -87,7 +87,7 @@ On a **new server**: install Postgres 18 + PostGIS, clone both repos, run `backe
 roles with new passwords + `~/.pgpass`), put the passphrase into `~/.config/arthistory/backup-passphrase` (600), then
 `scripts/restore.sh <file> arthistory` — straight into the production name, since it doesn't exist yet.
 
-## Content snapshots (YAML in git) — prepared, **not installed yet**
+## Content snapshots (YAML in git) — installed 2026-10-17
 Nightly at ~04:00 UTC, systemd `arthistory-export.timer` → `scripts/export-commit.sh` (units: `config/systemd/`):
 `backend/scripts/export.js` writes the production database to `content/` (YAML); when that changed, `content/` alone is
 committed ("Content snapshot YYYY-MM-DD (nightly export)") and pushed — the content's history readable in the public repo,
