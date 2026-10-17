@@ -4,6 +4,36 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-17
 
+### Converter API: conversion progress (needs `systemctl restart file-converter-api`)
+- **What:** `/api/convert` and `/convert/gif-to-webm` take a `job` id; ffmpeg runs with `-progress pipe:1` and writes
+  `temp_uploads/progress_<job>.json`, read by new `GET /api/progress/<job>`. Preview WebMs get `-g 10`.
+- **Why:** owner: conversions looked stuck with no percentage. A file, not memory, because gunicorn has 2 workers.
+- **Revert:** `git revert` the file-converter commit "GIF tool: progress in percent…" and restart the service.
+
+### Swap 1 → 4 GB, swappiness 10 (owner runs swap-4g.sh)
+- **What:** `/swapfile` grown to 4 GB; `/etc/sysctl.d/99-swappiness.conf` sets `vm.swappiness=10`.
+- **Why:** three crashes today, most likely memory (Chromium on top of the VS Code server); swap turns a spike into
+  slowness instead of a crash. Normal use (~1.2 GB for all sites) is unaffected.
+- **Revert:** `swapoff /swapfile && fallocate -l 1G /swapfile && mkswap /swapfile && swapon /swapfile`; delete the sysctl file.
+
+### Journal kept 14 days
+- **What:** `/etc/systemd/journald.conf.d/retention.conf` with `MaxRetentionSec=14day` (journal 2.1 GB → 136 MB).
+- **Why:** the privacy statements say server logs are deleted after 14 days; nginx (rotate 14) and PM2 (retain 5)
+  already were, the journal (converter logs file names there) was unlimited.
+- **Revert:** delete the file, `systemctl restart systemd-journald`.
+
+### Privacy statements on every public site; piogino.ch moved to GitHub Pages
+- **What:** FADP privacy pages on piogino.ch, converter, adenai (`datenschutz.html`), meetup, calorie-tracker,
+  obs-media-control, quiz and the Hunt Train builder (arthistory already had one). Fonts and libraries self-hosted
+  instead of Google Fonts/CDNs where possible. piogino.ch: repo `piosteiner/piogino.ch` cloned at `/var/www/piogino.ch`,
+  served by GitHub Pages; DNS at Infomaniak: four A records 185.199.108–111.153, `www` CNAME `piosteiner.github.io`
+  (the old Infomaniak Starter hosting is no longer used). New deploy keys + SSH aliases: `github-piogino-ch`,
+  `github-Meetup-Scheduler`, `github-calorie-tracker`, `github-Light-Trains-bot-command-generator`; clones in /var/www.
+  Quiz (not in git): stopped storing typed passwords in localStorage; backup of the old files in
+  `/var/www/quiz-platform/backups/2026-10-17-privacy/`.
+- **Why:** owner: every non-admin site needs a privacy statement under Swiss law that matches what it really does.
+- **Revert:** per repo `git revert`; DNS: A record back to 128.65.195.180 (old hosting).
+
 ### File converter renamed, runs from its git repo
 - **What:** backend runs from the `piosteiner/file-converter` clone at `/var/www/file-converter/server` (own `.venv`);
   systemd `gif-converter` → `file-converter-api`; nginx site `gif-converter` → `api.piogino.ch` (holds all of
