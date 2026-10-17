@@ -39,3 +39,10 @@ test('previewText: first paragraph as plain text, links as names, no footnotes, 
   assert.equal(previewText(null), null);
   assert.equal(previewText('# Only a heading'), null);
 });
+
+test('underline: ++words++ → <u>, inline markup inside, lone ++ stays text', () => {
+  assert.match(renderMarkdown('Ein ++wichtiger++ Punkt.'), /Ein <u>wichtiger<\/u> Punkt\./);
+  assert.match(renderMarkdown('++**fett und unterstrichen**++'), /<u><strong>fett und unterstrichen<\/strong><\/u>/);
+  assert.match(renderMarkdown('C++ und ++ lose ++'), /C\+\+ und \+\+ lose \+\+/);
+  assert.match(renderMarkdown('`++code++`'), /<code>\+\+code\+\+<\/code>/);
+});

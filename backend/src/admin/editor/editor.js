@@ -6,7 +6,7 @@
 // so saving works as before, and without JavaScript the plain textarea still works.
 // "Preview" asks the server to render the text with the same markdown-it + sanitize-html as the public API.
 import { EditorState, EditorSelection, Compartment } from '@codemirror/state';
-import { EditorView, keymap, placeholder, drawSelection } from '@codemirror/view';
+import { EditorView, keymap, placeholder, drawSelection, Decoration, ViewPlugin, MatchDecorator } from '@codemirror/view';
 import { defaultKeymap, history, historyKeymap } from '@codemirror/commands';
 import { syntaxHighlighting, HighlightStyle, LanguageSupport } from '@codemirror/language';
 // Just the Markdown (GFM) grammar — markdown() would also bundle HTML/CSS/JS highlighting for code blocks (~150 KB).
@@ -58,6 +58,7 @@ const theme = EditorView.theme({
   '.cm-cursor, .cm-dropCursor': { borderLeft: '2px solid var(--caret)' },
   '.cm-line': { padding: '0' },
   '.cm-placeholder': { color: 'var(--muted)' },
+  '.cm-underline': { textDecoration: 'underline' },
   '&.cm-focused .cm-selectionBackground, .cm-selectionBackground': { background: 'color-mix(in srgb, var(--accent) 25%, transparent)' },
   // the [[ suggestions: the panel's colours (CodeMirror's own are light — bright text on bright ground in dark mode)
   '.cm-tooltip': { background: 'var(--panel)', color: 'var(--fg)', border: '1px solid var(--line)', borderRadius: '6px' },
@@ -67,6 +68,13 @@ const theme = EditorView.theme({
   '.cm-completionDetail': { color: 'var(--muted)', fontStyle: 'normal', marginLeft: '.6rem' },
   '.cm-tooltip-autocomplete li[aria-selected] .cm-completionDetail': { color: 'inherit', opacity: '.85' },
 });
+
+// ++underlined++ looks underlined in the editor too (the Markdown grammar doesn't know the syntax)
+const underlineDeco = new MatchDecorator({ regexp: /\+\+(?=\S)[^+\n]*?\S\+\+/g, decoration: () => Decoration.mark({ class: 'cm-underline' }) });
+const underlines = ViewPlugin.fromClass(class {
+  constructor(view) { this.decorations = underlineDeco.createDeco(view); }
+  update(u) { this.decorations = underlineDeco.updateDeco(u, this.decorations); }
+}, { decorations: (v) => v.decorations });
 
 // Toggle a wrapper like ** or * around the selection (or insert an empty pair at the cursor).
 function wrap(view, mark) {
@@ -124,6 +132,8 @@ function linePrefix(view, prefix) {
 const shortcuts = [
   { key: 'Mod-b', run: (v) => wrap(v, '**') },
   { key: 'Mod-i', run: (v) => wrap(v, '*') },
+  // Markdown has no underline: ++words++ (src/markdown.js renders it as <u>). Without this, Ctrl+U opens the page source.
+  { key: 'Mod-u', run: (v) => wrap(v, '++'), preventDefault: true },
   { key: 'Mod-k', run: link },
 ];
 
@@ -311,6 +321,7 @@ function enhance(textarea, collab = null) {
         keymap.of([...shortcuts, ...defaultKeymap, ...(collab ? yUndoManagerKeymap : historyKeymap)]),
         new LanguageSupport(markdownLanguage),
         syntaxHighlighting(liveStyle),
+        underlines,
         EditorView.lineWrapping,
         autocompletion({ override: [entryCompletions], icons: false }),
         theme,
@@ -358,6 +369,7 @@ function enhance(textarea, collab = null) {
   toolbar.append(
     button('B', 'Bold (Ctrl/⌘+B)', () => wrap(view, '**')),
     button('I', 'Italic (Ctrl/⌘+I)', () => wrap(view, '*')),
+    button('U', 'Underline (Ctrl/⌘+U)', () => wrap(view, '++')),
     button('Link', 'Link (Ctrl/⌘+K)', () => link(view)),
     button('H', 'Heading', () => linePrefix(view, '## ')),
     button('• List', 'Bulleted list', () => linePrefix(view, '- ')),
@@ -370,6 +382,7 @@ function enhance(textarea, collab = null) {
   showLang();
   toolbar.children[0].style.fontWeight = '700';
   toolbar.children[1].style.fontStyle = 'italic';
+  toolbar.children[2].style.textDecoration = 'underline';
 
   wrapper.prepend(toolbar);
   wrapper.append(preview);

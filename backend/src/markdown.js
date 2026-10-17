@@ -40,8 +40,30 @@ md.inline.ruler.before('link', 'entry_link', (state, silent) => {
   return true;
 });
 
+// Underline: ++words++ (Markdown has none; the markdown-it-ins syntax) → <u>. The admin editor binds it to Ctrl/⌘+U.
+// The inner text is parsed as usual, so **bold** or [[links]] inside work; a lone "++" (C++) stays text.
+const UNDERLINE = /^\+\+(?=\S)([^\n]*?\S)\+\+/;
+md.inline.ruler.before('emphasis', 'underline', (state, silent) => {
+  if (state.src.charCodeAt(state.pos) !== 0x2b || state.src.charCodeAt(state.pos + 1) !== 0x2b) return false;  // "++"
+  const m = UNDERLINE.exec(state.src.slice(state.pos, state.posMax));
+  if (!m) return false;
+  if (!silent) {
+    const start = state.pos + 2;
+    const end = start + m[1].length;
+    const max = state.posMax;
+    state.push('u_open', 'u', 1);
+    state.pos = start;
+    state.posMax = end;
+    state.md.inline.tokenize(state);
+    state.posMax = max;
+    state.push('u_close', 'u', -1);
+  }
+  state.pos += silent ? m[0].length : 2;
+  return true;
+});
+
 const SANITIZE = {
-  allowedTags: ['p', 'br', 'hr', 'em', 'strong', 'code', 'pre', 'blockquote', 'ul', 'ol', 'li',
+  allowedTags: ['p', 'br', 'hr', 'em', 'strong', 'code', 'pre', 'blockquote', 'ul', 'ol', 'li', 'u',
     'h2', 'h3', 'h4', 'a', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'sup', 'sub', 's', 'i', 'span', 'section'],
   allowedAttributes: { a: ['href', 'title', 'class', 'data-term', 'data-entry', 'data-source', 'id'], th: ['align'], td: ['align'],
     li: ['id'], sup: ['id', 'class'], section: ['class'], span: ['class'], ol: ['class'], ul: ['class'] },
