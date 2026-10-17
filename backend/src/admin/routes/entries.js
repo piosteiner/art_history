@@ -245,7 +245,13 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
       const { rowCount } = await db.query(`
         UPDATE ${t.table} SET slug = $1, ${names.map((c, i) => `${c} = ${exprs[i]}`).join(', ')}
         WHERE id = $${values.length - 1} AND updated_at::text = $${values.length}`, values);
-      if (!rowCount) throw new UserError('Someone saved this record while you were editing. Open it again to see their changes, then redo yours.');
+      if (!rowCount) {
+        // row-level security (094) hides the row from an account limited to other collections: no row, no error
+        if (t.type === 'artwork' && !(await db.query('SELECT may_edit_artwork($1) AS ok', [existing.id])).rows[0].ok) {
+          throw new UserError('Your account may change only artworks of its own collections — this one belongs to another collection, or to none.');
+        }
+        throw new UserError('Someone saved this record while you were editing. Open it again to see their changes, then redo yours.');
+      }
       await citations.settle(db, t.type, existing.id, body, user.id);
       await createdIn(existing.id);
     });

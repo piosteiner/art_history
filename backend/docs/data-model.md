@@ -579,3 +579,37 @@ ts (unless deleted), else the state before its next change (unless that was its 
 `entry_versions()` one row per transaction; `changed_fields()`; `history_since()` = when migration 006 was applied.
 SECURITY DEFINER: the API role still can't read `audit_log` (user ids); `public_row()` drops `metadata`, `created_by`.
 
+## Prices over time — baseline (migration 090, 📌 data not loaded)
+`currencies` (code, name, country, in_use, successor + successor_rate = the fixed legal conversion: 100 AFRF = 1 FRF,
+6.55957 FRF = 1 EUR, 10 RM = 1 DM), `exchange_rates` (currency, quote, period, rate, source_id) and `price_indices`
+(country — national series are chain-linked across currencies —, period, value, base, source_id). Both have an
+**exclusion constraint** (`btree_gist`): `EXCLUDE USING gist (currency WITH =, quote WITH =, period WITH &&)` — one
+value per pair and day. `price_value(amount, currency, date, target 'CHF', target_date today)`: converted on the date,
+then × index(target country, target date) / index(…, date); NULL when data is missing. View `provenance_prices`.
+`provenance.price_currency` references `currencies`.
+
+## Spatial history (migration 091)
+`provenance_stops(artwork)` — the provenance's stops in chain order with place and basis (the map's route uses it);
+`artwork_travel(artwork)` → km (`ST_Length` of `ST_MakeLine` through the stops, on geography), legs, placed, steps;
+`encounters(window, within_km, type, id)` — overlapping dated stays at one place or within a distance (`ST_DWithin`),
+overlap = range intersection `*`; `place_clusters(zoom, window, radius_px)` — `ST_ClusterDBSCAN` in EPSG:3857 with
+eps = radius × 156543.03 / 2^zoom.
+
+## Names that sound alike (092) and the duplicate candidates (093)
+`fuzzystrmatch`: `name_sound_key()` (Double Metaphone per word), `names_sound_alike()` (same key and ≤ a fifth of the
+length in Levenshtein edits, names ≥ 5 letters) — in `dup_maybe()` and `dup_score()` ("names sound alike": 55, titles
+35). Both with SQL-standard bodies (`BEGIN ATOMIC`): bound at creation, independent of the search_path.
+`dup_name_keys` (MATERIALIZED VIEW: type, id, name, sound_key; GIN trigram + b-tree; refreshed by
+`refresh_quality()`) and view `dup_candidate_pairs` (similar `%` or alike names, same DOI/ISBN/web site/inventory or
+further number): the check `possible_duplicate` weighs only those pairs (was: every pair of a type — 3.8 s → 0.5 s).
+Most other views can't be materialized yet: since Postgres 17 REFRESH runs with search_path = pg_catalog, and ~50
+older SQL functions with quoted bodies call others unqualified — convert them to SQL-standard bodies first.
+
+## Editor scopes — row-level security (migration 094)
+`editor_scopes (user_id, institution_id)`: an account with rows may write only artworks whose
+`current_institution_id` is one of them, and their `provenance`, `artwork_numbers`, `images`; no rows = no limit.
+`ENABLE ROW LEVEL SECURITY` + policies (SELECT: all; INSERT WITH CHECK; UPDATE USING + WITH CHECK; DELETE USING) on
+those four tables, reading `editor_institutions()` (from `arthistory.user_id`; NULL = unlimited) as an InitPlan
+`(SELECT editor_institutions())`. The table owner is not subject to them. `may_edit_artwork(id)` for the admin's
+messages. Set with `npm run admin:scope -- <user> <institution slug …> | --clear`.
+

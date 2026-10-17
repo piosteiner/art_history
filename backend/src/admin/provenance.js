@@ -137,7 +137,7 @@ async function fromForm(db, body, keepMetadata = {}) {
   }
   v.price = priceOf(body.price);
   v.price_currency = text('price_currency') ? text('price_currency').toUpperCase() : null;
-  if (v.price_currency && !/^[A-Z]{2,4}$/.test(v.price_currency)) throw new ProvenanceError('Currency: the code — ISO 4217 (CHF, USD, FRF, GBP, DEM) or a historical one without (RM for Reichsmark).');
+  if (v.price_currency && !/^[A-Z]{2,4}$/.test(v.price_currency)) throw new ProvenanceError('Currency: the code — ISO 4217 (CHF, USD, FRF, GBP, DEM) or a historical one without (RM for Reichsmark, AFRF for French francs before 1960).');
   if (v.price !== null && !v.price_currency) throw new ProvenanceError('Price: which currency? (e.g. FRF, USD, CHF)');
   if (v.price === null) v.price_currency = null;
   v.price_note = v.price === null ? null : text('price_note');
@@ -390,7 +390,7 @@ function form({ action, step = {}, submit, choices = [] }) {
     <div class="row">
       <div class="field"><label for="pv-price">Price</label><input id="pv-price" name="price" value="${v('price')}" placeholder="e.g. 18000" inputmode="decimal"></div>
       <div class="field"><label for="pv-cur">Currency</label><input id="pv-cur" name="price_currency" value="${v('price_currency')}" placeholder="CHF, USD, FRF, RM …" list="pv-currencies" maxlength="4" autocomplete="off">
-        <datalist id="pv-currencies">${['CHF', 'USD', 'EUR', 'GBP', 'FRF', 'DEM', 'RM', 'NOK', 'SEK', 'DKK', 'ITL', 'NLG', 'BEF', 'JPY'].map((c) => html`<option>${c}</option>`)}</datalist></div>
+        <datalist id="pv-currencies">${['CHF', 'USD', 'EUR', 'GBP', 'AFRF', 'FRF', 'DEM', 'RM', 'ATS', 'NOK', 'SEK', 'DKK', 'ITL', 'NLG', 'BEF', 'JPY'].map((c) => html`<option>${c}</option>`)}</datalist></div>
       <div class="field"><label for="pv-pnote">Price note</label><input id="pv-pnote" name="price_note" value="${v('price_note')}" placeholder="e.g. ca., with two other works, insurance value"></div>
     </div>
     <div class="row">

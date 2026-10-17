@@ -18,6 +18,10 @@ Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest 
 
 Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service). Both hostnames gzip JSON (`gzip_proxied any`).
 Databases (both localhost only): MySQL 8 (:3306, calorie-tracker) · PostgreSQL 18 + PostGIS 3.6 (:5432, art history; tuning in `config/postgresql/`).
+PostgreSQL extensions in `arthistory`: postgis, pg_trgm, unaccent, btree_gist, fuzzystrmatch, pg_stat_statements
+(preloaded since 2026-10-17). Slowest statements (as arthistory_owner):
+`SELECT calls, round(mean_exec_time) ms, left(query, 100) FROM pg_stat_statements WHERE dbid = (SELECT oid FROM pg_database WHERE datname = 'arthistory') ORDER BY total_exec_time DESC LIMIT 20;`
+— note that the test databases share the statistics (filter by `dbid`); `SELECT pg_stat_statements_reset();` starts over.
 
 ## Firewall (ufw) + fail2ban
 Only 22 (SSH), 80, 443 are open. App ports are reachable only via nginx.

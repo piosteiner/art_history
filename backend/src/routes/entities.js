@@ -328,6 +328,11 @@ const EXTRAS = {
              (SELECT i.url FROM images i WHERE i.artwork_id = a.id ORDER BY i.position, i.id LIMIT 1) AS image_url,
              (SELECT count(*)::int FROM artworks c WHERE c.parent_id = a.id) AS parts
       FROM artworks a WHERE a.parent_id = $1 ORDER BY a.part_sort NULLS LAST, a.part_number, ${sortKey('artwork', 'a', 'title')}`, [id])).rows,
+    // how far it travelled along its provenance stops (091): null without two places
+    travel: await (async () => {
+      const { rows: [t] } = await apiPool.query('SELECT km, legs, placed, steps FROM artwork_travel($1)', [id]);
+      return t && t.legs ? t : null;
+    })(),
     // where the provenance is silent (078): the time since the creation as documented / presumed / gap stretches
     provenance_coverage: await (async () => {
       const [summary, segments] = await Promise.all([
@@ -352,7 +357,9 @@ const EXTRAS = {
                WHERE c.provenance_id = p.id) AS co_owners,
              p.role, p.owner_label, p.owner_name, range_json(p.acquired, p.acquired_label) AS acquired, range_json(p.ended, p.ended_label) AS ended,
              p.method, p.direct, p.label, p.certainty,
-             CASE WHEN p.price IS NOT NULL THEN jsonb_build_object('amount', p.price, 'currency', p.price_currency, 'note', p.price_note) END AS price,
+             CASE WHEN p.price IS NOT NULL THEN jsonb_build_object('amount', p.price, 'currency', p.price_currency, 'note', p.price_note,
+               -- in today's Swiss francs (090) — null until exchange rates and price indices are loaded
+               'chf_today', price_value(p.price, p.price_currency, lower(p.acquired))) END AS price,
              (SELECT jsonb_build_object('slug', l.slug, 'name', l.name) FROM places l WHERE l.id = p.location_id) AS place,
              range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.id AS _prov_id,
              -- 074: custody steps (agent, custodian) run beside the ownership; an agent that didn't sell; the agents a handover went through

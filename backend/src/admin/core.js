@@ -145,6 +145,9 @@ function friendly(err) {
     if (err.constraint === 'institution_number_unique') return `inventory_number: ${err.message} — the same object? (Merge… on its page)`;
     return /slug/.test(err.constraint || '') ? 'That slug is already taken.' : `Duplicate: ${err.detail || err.message}`;
   }
+  // row-level security (094): an account limited to collections tried to write outside them
+  if (err.code === '42501' && /row-level security/.test(err.message)) return 'Your account may change only artworks of its own collections (and their provenance, numbers and images) — this one belongs to another collection, or to none.';
+  if (err.constraint === 'provenance_price_currency_fkey') return 'Unknown currency — the codes are in the table currencies (migration 090): CHF, USD, GBP, EUR, AFRF (French francs before 1960), FRF, RM, DEM, ITL, NLG, BEF, ATS, JPY, SEK, NOK, DKK.';
   if (err.constraint === 'places_boundary_code_fkey') return 'Unknown boundary code — use an ISO code like JP (a country) or JP-13 (a region).';
   if (err.code === '23503' || err.code === '23001') {
     const m = /referenced from table "(\w+)"/.exec(err.detail || '');

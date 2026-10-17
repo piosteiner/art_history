@@ -18,7 +18,7 @@ SCRIPTS="$(cd "$(dirname "$0")" && pwd)"
 install -d -m 700 "$LOCAL_DIR"
 DUMP="$LOCAL_DIR/$DB-$(date +%F).sql.gz"
 
-# 1. Dump. --exclude-extension: postgis/pg_trgm/unaccent are created by setup-database.sql on restore.
+# 1. Dump. --exclude-extension: the extensions (postgis, pg_trgm, unaccent, btree_gist, …) are created by setup-database.sql on restore.
 #    gzip -n (no timestamp) keeps identical data byte-identical.
 pg_dump -h localhost -U arthistory_owner --exclude-extension='*' "$DB" | gzip -9 -n > "$DUMP.tmp"
 mv "$DUMP.tmp" "$DUMP"

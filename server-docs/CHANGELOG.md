@@ -2,6 +2,63 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-17
+
+### Row-level security: accounts limited to collections (migration 094)
+- **What:** table `editor_scopes`, `editor_institutions()`, `may_edit_artwork()`; ROW LEVEL SECURITY with policies on
+  `artworks`, `provenance`, `artwork_numbers`, `images` (reads unaffected; accounts without a scope unaffected).
+  `npm run admin:scope -- <user> <institution slug …> | --clear` (`scripts/admin-scope.js`); admin messages for a
+  refused save. E2E `editor-scopes.spec.js`. No account has a scope yet.
+- **Why:** owner: ready for other museums or co-editors — each changes only its collection, enforced by the database.
+- **Revert:** `ALTER TABLE artworks|provenance|artwork_numbers|images DISABLE ROW LEVEL SECURITY;` drop the policies
+  (`DROP POLICY … ON …`), `DROP FUNCTION may_edit_artwork, editor_institutions; DROP TABLE editor_scopes;` delete
+  `094_editor_scopes.sql` from `schema_migrations`; revert the commit.
+
+### Duplicate check from candidate pairs (migration 093)
+- **What:** materialized view `dup_name_keys` (names + sound keys, GIN trigram index), view `dup_candidate_pairs`;
+  check `possible_duplicate` weighs only those pairs; `refresh_quality()` refreshes the view first. Measured on
+  production: the check 3.8 s → 0.5 s, a whole refresh (after every save) 2.4–5 s → 1.6 s.
+- **Why:** pg_stat_statements showed refresh_quality() as the most expensive statement by far.
+- **Revert:** restore `quality_issues_live` and `refresh_quality()` from `092`/`088`, `DROP VIEW dup_candidate_pairs;
+  DROP MATERIALIZED VIEW dup_name_keys;` delete the migration row; revert the commit.
+
+### Names that sound alike in the duplicate check (migration 092)
+- **What:** extension `fuzzystrmatch`; `name_sound_key()` (Double Metaphone), `names_sound_alike()` (+ Levenshtein);
+  `dup_maybe()` and `dup_score()` use them ("names sound alike"). On production one new pair: Louis / Louise Cahen
+  d'Anvers (87 % similar, no dates) — "not the same" dismisses it. E2E `sound-alike.spec.js`.
+- **Why:** owner: "Rochlitz" / "Rochlits", Kunsthaus vs. Wikidata spellings.
+- **Revert:** `dup_maybe()` / `dup_score()` from `048`… (as before 092), `DROP FUNCTION names_sound_alike, name_sound_key;`
+  `DROP EXTENSION fuzzystrmatch;` delete the migration row; revert the commit.
+
+### Spatial history (migration 091)
+- **What:** `provenance_stops()` (the map's provenance stops, moved from `src/routes/map.js` into SQL),
+  `artwork_travel()` (ST_Length of the line through them), `encounters()` (ST_DWithin + overlapping periods),
+  `place_clusters()` (ST_ClusterDBSCAN in EPSG:3857). API: `travel` on artworks, `/v1/map/encounters`,
+  `/v1/map/clusters`. E2E `spatial.spec.js`.
+- **Why:** owner: travel distance per work; "who was near whom" in the database instead of the browser; clusters.
+- **Revert:** revert the commit (map.js back to its own stops), `DROP FUNCTION place_clusters, encounters, artwork_travel,
+  provenance_stops;` delete the migration row.
+
+### Prices over time — baseline only (migration 090)
+- **What:** extension `btree_gist`; tables `currencies` (16, with the fixed legal conversions), `exchange_rates`,
+  `price_indices` (empty — 📌 pinned until a cited source is chosen) with exclusion constraints on their periods;
+  `price_value()`, view `provenance_prices`; `provenance.price_currency` references `currencies`; API `price.chf_today`
+  (null for now).
+- **Why:** owner: build the baseline, pin the data.
+- **Revert:** `ALTER TABLE provenance DROP CONSTRAINT provenance_price_currency_fkey; DROP VIEW provenance_prices;
+  DROP FUNCTION price_value, index_on, rate_on; DROP TABLE price_indices, exchange_rates, currencies;` delete the
+  migration row; revert the commit.
+
+### pg_stat_statements (server: PostgreSQL configuration)
+- **What:** `shared_preload_libraries = 'pg_stat_statements'` (+ max 2000, track top, no utility statements) in
+  `/etc/postgresql/18/main/conf.d/arthistory.conf` (copy: `server-docs/config/postgresql/arthistory.conf`), Postgres
+  restarted (a few seconds, 09:2x UTC); `CREATE EXTENSION pg_stat_statements` in `arthistory` and `arthistory_dev`
+  (as postgres); `GRANT pg_read_all_stats TO arthistory_owner`. `setup-database.sql` creates it (and btree_gist,
+  fuzzystrmatch) on restores.
+- **Why:** owner: see which queries are slow before data growth makes it a problem.
+- **Revert:** remove the four lines from the config, `sudo systemctl restart postgresql`, `DROP EXTENSION
+  pg_stat_statements` (as postgres), `REVOKE pg_read_all_stats FROM arthistory_owner`.
+
 ## 2026-10-16
 
 ### Citable versions: entries as of a date (migration 089)

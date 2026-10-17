@@ -244,6 +244,11 @@ Show it like a credit line: "Foundation E.G. Bührle Collection, on permanent lo
 `web_url_accessed` (`YYYY-MM-DD`, migration 039): the day the link was added or last changed — set by the database,
 shown like a citation's "accessed on …".
 
+### Travel (artworks, 091)
+`travel`: `{km, legs, placed, steps}` — the length of the line through the provenance stops (the same stops as the
+map's provenance, in the chain's order; geodesic, km), `legs` = moves between different points, `placed` = steps
+with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km over 17 of 20 steps".
+
 ### Provenance coverage — where the provenance is silent (artworks, 078)
 - `provenance_coverage` (detail) or `null`: the time from the creation until today as stretches
   `segments: [{kind, period, in_1933_1945, before, after, candidates, before_position, after_position, show_after}]`, in order —
@@ -329,6 +334,11 @@ period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
   `provenance`, label = the method; certainty `possible` when not documented as direct). People who owned something
   have the role `owner`. Joint owners have their own `owned_by`; agents and custodians a `held_by` instead; a step with
   the method `commission` also gives `commissioned` (owner → artwork; the patron's role `patron`).
+
+- `price` (when recorded): `{amount, currency, note, chf_today}` — `chf_today` = the value in today's Swiss francs
+  (migration 090: converted at the time, then by the Swiss price index), **always `null` for now**: no exchange rates
+  or price indices are loaded yet (📌 pinned). Currencies: CHF, USD, GBP, EUR, AFRF (French francs before 1960), FRF,
+  RM, DEM, ITL, NLG, BEF, ATS, JPY, SEK, NOK, DKK.
 
 ### Names of artists and people (066)
 Artists and people have `given_name`, `family_name` and `sort_name` ("filed as": an override such as "Hokusai"), each
@@ -448,6 +458,17 @@ subject_types, object_types, description, derived`. `category` is meant for map/
   (`properties.precision`: `area` · `spot` · `place`), with `slug`, `name`, `kind`, `period`, `place`. An entity's own
   map (`/v1/map/<type>/:slug`) includes the events it took part in or depicts, as `association` stops with
   `properties.event`.
+
+- `GET /v1/map/encounters[?entity=<plural>/<slug> or number][&from=&to=][&within_km=0–500]` (091) — who was near whom,
+  computed in the database: two dated stays (physical presence: lived, worked, visited, born, died, kept in …) at the
+  same place — or within `within_km` — whose periods overlap. → `{data: [{a, b, place, other_place, venue, overlap,
+  days, km, approximate, a_relationship, b_relationship}]}` (≤ 1000, same venue first, then certain, nearest, by date).
+  `venue`: both at the same institution or building ("could have met there"); `approximate`: a date known only to the
+  year or circa; `other_place` when `within_km` paired two places. Stays with an open start ("until 1912") are left
+  out; an open end counts until today. Not two artworks, not an artwork with its own artist.
+- `GET /v1/map/clusters?zoom=3[&radius=40][&from=&to=]` (091) — places with presence grouped for that zoom
+  (ST_ClusterDBSCAN, radius in screen pixels, 10–120): Point features with `bbox` [w, s, e, n] (zoom into it) and
+  `properties: {cluster, places, presence, top: [{slug, name, presence}] (≤ 5)}`.
 
 ## Graph
 `GET /v1/graph/<type>/:slug?depth=2&types=influenced_by,student_of` — the network around an entity, following

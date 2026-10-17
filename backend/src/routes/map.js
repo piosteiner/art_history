@@ -20,6 +20,9 @@ const router = express.Router();
 // A place's marker (view place_geo, migration 032): its point, else its boundary's label point, else a point inside
 // its own outline.
 const MARKER = '(SELECT g.marker FROM place_geo g WHERE g.id = p.id)';
+// a reference { type, slug, public_id, name } to (type, id) columns, from entity_index
+const REF = (alias, t, id) => `(SELECT jsonb_build_object('type', ${alias}.type, 'slug', ${alias}.slug, 'public_id', ${alias}.public_id, 'name', ${alias}.name)
+  FROM entity_index ${alias} WHERE (${alias}.type, ${alias}.id) = (${t}, ${id}))`;
 
 // Joins for an edge's object as a location: s = site_geo row, o = the object's name, c = the city it counts for.
 const SITE_JOINS = `
@@ -137,47 +140,15 @@ router.get('/:plural/:slug', async (req, res) => {
 //             not recorded: the creation, the loan, or a place not recorded), between (the steps it passes over that
 //             have no place)
 //   unplaced  every step without a place, so a list beside the map can name them
-// row_number() numbers the chain once; lag() over the placed steps pairs each with the previous one — window
-// functions instead of a loop in JavaScript.
+// Where each step was: provenance_stops() (091, in SQL — the travel distance uses it too). lag() over the placed
+// steps pairs each with the previous one — window functions instead of a loop in JavaScript.
 async function provenanceRoute(artworkId) {
   const { rows: [r] } = await apiPool.query(`
-    WITH chain AS (
-      SELECT c.*, row_number() OVER (ORDER BY c.position) AS step, count(*) OVER () AS steps
-      FROM provenance_chain c WHERE c.artwork_id = $1 AND c.role IS DISTINCT FROM 'event'   -- events: no one held it there (077)
-    ), located AS (
-      -- each step at its place, then at its further places in order (077: "Köln, Berlin & Genf") — part 0, 1, 2 …
-      SELECT ch.*, pl.place_id, pl.place_basis, pl.part, pl.part_label
-      FROM chain ch
-      -- where it was made: recorded (created_in, e.g. from Wikidata P1071), else the artist's single dated place then
-      LEFT JOIN LATERAL (
-        SELECT * FROM (
-          (SELECT rel.object_id AS place_id, 'created_in' AS basis, 1 AS pref FROM relationships rel
-           WHERE rel.subject_type = 'artwork' AND rel.subject_id = ch.artwork_id
-             AND rel.relationship_type = 'created_in' AND rel.object_type = 'place' ORDER BY rel.id LIMIT 1)
-          UNION ALL
-          (SELECT min(x.object_id), 'artist_residence', 2 FROM artworks w
-           JOIN edges x ON x.subject_type = 'artist' AND x.subject_id = w.creator_id AND x.object_type = 'place'
-                       AND x.period && w.created
-           JOIN relationship_types rt ON rt.code = x.relationship_type AND rt.is_physical_presence
-           WHERE w.id = ch.artwork_id HAVING count(DISTINCT x.object_id) = 1)
-          UNION ALL
-          -- a workshop artist's one place of work, undated ("worked in Ulm" — Wikidata P937 has no dates)
-          (SELECT min(x.object_id), 'artist_workplace', 3 FROM artworks w
-           JOIN relationships x ON x.subject_type = 'artist' AND x.subject_id = w.creator_id AND x.object_type = 'place'
-                               AND x.relationship_type = 'worked_in' AND x.period IS NULL
-           WHERE w.id = ch.artwork_id HAVING count(DISTINCT x.object_id) = 1)
-        ) m ORDER BY pref LIMIT 1
-      ) made ON ch.location_id IS NULL AND (ch.kind = 'creation' OR ch.method = 'creation')
-      LEFT JOIN LATERAL (
-        SELECT i.place_id, 'holder_seat' AS basis FROM institutions i WHERE i.id = ch.owner_id
-      ) seat ON ch.location_id IS NULL AND ch.owner_type = 'institution' AND ch.kind <> 'creation'
-      CROSS JOIN LATERAL (
-        SELECT coalesce(ch.location_id, made.place_id, seat.place_id) AS place_id,
-               CASE WHEN ch.location_id IS NOT NULL THEN CASE WHEN ch.kind = 'loan' THEN 'holder_seat' ELSE 'recorded' END
-                    ELSE coalesce(made.basis, seat.basis) END AS place_basis, 0 AS part, NULL::text AS part_label
-        UNION ALL
-        SELECT x.place_id, 'recorded', x.position + 1, x.period_label FROM provenance_places x WHERE x.provenance_id = ch.id AND ch.kind = 'step'
-      ) pl
+    -- the stops: provenance_stops() (091) — the same the travel distance is measured along
+    WITH located AS (
+      SELECT c.*, s.step, s.steps, s.place_id, s.place_basis, s.part, s.part_label
+      FROM provenance_stops($1) s
+      JOIN provenance_chain c ON c.artwork_id = $1 AND c.kind = s.chain_kind AND c.id IS NOT DISTINCT FROM s.provenance_id
     ), rows AS (
       SELECT l.*, pl.slug AS place_slug, pl.name AS place_name, pl.kind AS place_kind, g.marker,
              o.slug AS holder_slug,
@@ -229,6 +200,53 @@ async function provenanceRoute(artworkId) {
   return { type: 'FeatureCollection', features: [...r.stops, ...r.segments], unplaced: r.unplaced,
     gaps: gaps.map(({ before_position: _b, after_position: _a, ...g }) => g) };
 }
+
+// Who was near whom (091): pairs of dated stays at the same place — or within ?within_km= (≤ 500) — at the same
+// time; ?from=&to= a window, ?entity=<plural>/<slug> or a public number for one entry's encounters. Sorted: same
+// venue first, certain before approximate, then by date.
+router.get('/encounters', async (req, res) => {
+  const window = yearWindowRange(req.query);
+  const km = req.query.within_km === undefined ? 0 : Number(req.query.within_km);
+  if (!(km >= 0 && km <= 500)) throw badRequest('within_km: 0–500');
+  let focus = [null, null];
+  if (req.query.entity) {
+    const key = String(req.query.entity).trim();
+    const { rows: [hit] } = /^\d{1,15}$/.test(key)
+      ? await apiPool.query('SELECT e.type::text AS type, e.id FROM entity_index e WHERE e.public_id = $1', [key])
+      : await apiPool.query('SELECT e.type::text AS type, e.id FROM entity_index e WHERE e.type = $1 AND e.slug = $2',
+        [(ENTITIES[key.split('/')[0]] || {}).type || null, key.split('/')[1] || '']);
+    if (!hit) throw notFound(`no entry "${key}"`);
+    focus = [hit.type, hit.id];
+  }
+  const { rows } = await apiPool.query(`
+    SELECT ${REF('a', 'e.a_type', 'e.a_id')} AS a, ${REF('b', 'e.b_type', 'e.b_id')} AS b,
+           jsonb_build_object('slug', pa.slug, 'name', pa.name) AS place,
+           CASE WHEN e.b_place <> e.a_place THEN jsonb_build_object('slug', pb.slug, 'name', pb.name) END AS other_place,
+           CASE WHEN e.venue_id IS NOT NULL THEN ${REF('v', 'e.venue_type', 'e.venue_id')} END AS venue,
+           range_json(e.overlap) AS overlap, upper(e.overlap) - lower(e.overlap) AS days, e.km, e.approximate,
+           e.a_relationship, e.b_relationship
+    FROM encounters($1::daterange, $2, $3::entity_type, $4) e
+    JOIN places pa ON pa.id = e.a_place JOIN places pb ON pb.id = e.b_place
+    ORDER BY e.venue_id IS NULL, e.approximate, e.km, lower(e.overlap)
+    LIMIT 1000`, [window, km, focus[0], focus[1]]);
+  res.json({ data: rows });
+});
+
+// Places grouped for a map at low zoom (091, ST_ClusterDBSCAN): ?zoom= (0–20), ?radius= pixels (10–120, default 40),
+// ?from=&to=. A FeatureCollection of points: count of places, presence, the biggest places (≤ 5), bbox to zoom into.
+router.get('/clusters', async (req, res) => {
+  const zoom = Number(req.query.zoom);
+  if (!(zoom >= 0 && zoom <= 20)) throw badRequest('zoom: 0–20');
+  const radius = req.query.radius === undefined ? 40 : Number(req.query.radius);
+  if (!(radius >= 10 && radius <= 120)) throw badRequest('radius: 10–120 pixels');
+  const { rows } = await apiPool.query(`
+    SELECT jsonb_build_object('type', 'Feature', 'geometry', ST_AsGeoJSON(center, 5)::jsonb,
+      'bbox', (SELECT jsonb_build_array(ST_XMin(bbox), ST_YMin(bbox), ST_XMax(bbox), ST_YMax(bbox))),
+      'properties', jsonb_build_object('cluster', cluster, 'places', places, 'presence', presence,
+        'top', (SELECT jsonb_agg(x) FROM (SELECT x FROM jsonb_array_elements(top) x LIMIT 5) t))) AS f
+    FROM place_clusters($1, $2::daterange, $3) ORDER BY presence DESC`, [zoom, yearWindowRange(req.query), radius]);
+  res.json({ type: 'FeatureCollection', features: rows.map((r) => r.f) });
+});
 
 // Institutions and immovable artworks with an exact location of their own (migration 034).
 router.get('/sites', async (req, res) => {
