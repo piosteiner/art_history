@@ -1,0 +1,47 @@
+public_id: "100469"
+name: Cologne
+names:
+  - lang: ja
+    role: translation
+    text: ケルン
+  - lang: zh
+    role: translation
+    text: 科隆
+  - lang: ko
+    role: translation
+    text: 쾰른
+  - lang: de
+    role: original
+    text: Köln
+  - lang: it
+    role: translation
+    text: Colonia
+  - lang: nl
+    role: translation
+    text: Keulen
+  - lang: ru
+    role: translation
+    text: Кёльн
+  - lang: pt
+    role: translation
+    text: Colónia
+kind: settlement
+parent: germany
+country_code: DE
+location: [6.95778, 50.94222]
+wikidata_id: Q365
+metadata:
+  sources: [Wikidata Q365 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q365
+  parent:
+    - accessed: 2026-10-15
+      property: P131
+      wikidata: Q365
+  location:
+    - accessed: 2026-10-15
+      property: P625
+      wikidata: Q365

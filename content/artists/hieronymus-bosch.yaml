@@ -1,0 +1,18 @@
+public_id: "100237"
+name: Hieronymus Bosch
+given_name: Hieronymus
+family_name: Bosch
+birth: c. 1450
+death: 1516-08-09
+wikidata_id: Q130531
+metadata:
+  sources: [Wikidata Q130531 (retrieved 2026-10-13)]
+sources:
+  birth:
+    - accessed: 2026-10-13
+      property: P569
+      wikidata: Q130531
+  death:
+    - accessed: 2026-10-13
+      property: P570
+      wikidata: Q130531

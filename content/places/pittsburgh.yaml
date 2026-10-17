@@ -1,0 +1,16 @@
+public_id: "100172"
+name: Pittsburgh
+kind: settlement
+location: [-80, 40.44167]
+wikidata_id: Q1342
+metadata:
+  sources: [Wikidata Q1342 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q1342
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q1342

@@ -1,0 +1,337 @@
+public_id: "100476"
+title: Irène Cahen d'Anvers (La Petite Irène)
+names:
+  - lang: de
+    role: translation
+    text: Irène Cahen d'Anvers (Die kleine Irene)
+    status: official
+  - lang: en
+    role: translation
+    text: Irène Cahen d'Anvers (Little Irene)
+    status: official
+creator: pierre-auguste-renoir
+created: 1880
+kind: oil painting
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [65, 54]
+institution: kunsthaus-zurich
+inventory_number: BU 0090
+web_url: https://collection.kunsthaus.ch/de/collection/item/586963/
+on_loan: true
+on_loan_since: 2021
+provenance_status: d_seized
+provenance_status_note: NS-verfolgungsbedingt entzogenes Kulturgut
+description_md: "[Bührle Sammlung](https://www.buehrle.ch/en/collection/artwork/detail/irene-cahens-danvers-little-irene/)"
+wikidata_id: Q3937570
+metadata:
+  sources: [Wikidata Q3937570 (retrieved 2026-10-16)]
+relationships:
+  - type: depicts_person
+    to: person/irene-cahen-d-anvers
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Pierre-Auguste_Renoir_-_Ir%C3%A8ne_Cahen_d%27Anvers_%28La_Petite_Ir%C3%A8ne%29_-_90_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Ir%C3%A8ne_Cahen_d%27Anvers_(La_Petite_Ir%C3%A8ne)_-_90_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: person/louis-cahen-d-anvers
+    co_owners: [person/louise-cahen-d-anvers]
+    acquired: 1880
+    ended: 1926-06-21 or earlier
+    method: commission
+    direct: true
+    place: paris
+    label: commissioned from Renoir; in 1900 lent by Mme L. Cahen d’Anvers to Bernheim-Jeune
+    notes_md: Dauberville names Louis Cahen d’Anvers as the patron; the Kunsthaus names Louise, the sitter’s mother — according to its account she disliked the portrait and had it hung in the servants’ quarters.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - source: dauberville-2007
+        locator: no. 506
+      - Exhibition catalogue A. Renoir, Galerie Bernheim-Jeune, Paris 1900, no. 14 (lent by Mme L. Cahen d’Anvers)
+  - owner: person/irene-cahen-d-anvers
+    acquired: 1914 or earlier
+    label: the sitter; probably from 1914 at the latest
+    certainty: disputed
+    notes_md: "Two versions: in 1946 René Joly wrote that the painting had never belonged to Béatrice Reinach but always to Irène Sampieri-Camondo, and had only been deposited with her daughter. In 1941 Léon Reinach had written that it was a gift to his wife from her grandmother Louise."
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - source: dauberville-2007
+        locator: no. 506
+      - Letter from René Joly to Pierre Henraux (Commission de récupération artistique), 18 October 1946, Archives Etrangères, Paris, 209SUP/36, dossier 45.917 – Comtesse Sampiéri
+  - owner: person/beatrice-reinach
+    role: custodian
+    acquired: before 21 June 1926
+    ended: 1945-01-04
+    place: neuilly-sur-seine
+    label: "probably on loan from her mother (Léon Reinach: a gift from her grandmother)"
+    certainty: disputed
+    notes_md: Granddaughter of Louise Cahen d’Anvers, daughter of Irène. Lent the painting to the Orangerie in 1933. Béatrice Reinach, her husband Léon and their children Fanny and Bertrand were arrested in 1942 and murdered in Auschwitz.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - "Exhibition catalogue Musée de l’Orangerie, Paris 1933, no. 57, p. 27 (lent by Léon Reinach); loan card, 9 June 1933, Archives nationales, Paris (lender: Madame Léon Reinach)"
+      - Letter from Léon Reinach to the Direction des Musées nationaux, Neuilly-sur-Seine, 10 August 1941, Archives nationales, Paris, Musées nationaux, 201447921/274
+  - owner: institution/musees-nationaux
+    role: custodian
+    acquired: 1939-10
+    ended: 1941-07-07
+    direct: true
+    place: paris
+    label: brought to the national museums for safekeeping in October 1939
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - Letter from Léon Reinach to the Direction des Musées nationaux, Neuilly-sur-Seine, 13 August 1941, Archives nationales, Paris, Musées nationaux
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1941-07-07
+    ended: 1941-07-07
+    method: confiscation
+    direct: true
+    place: chambord
+    label: seized at Chambord
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - "Munich Central Collecting Point, restitution card, Munich no. 8035, Bundesarchiv Koblenz, B323/662 (database: http://www.dhm.de/datenbank/ccp, 14 July 2025)"
+      - source: yeide-2009
+        locator: no. D100
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1941-07-07
+    ended: 1942-03-10
+    method: transfer
+    direct: true
+    label: handed over by the ERR
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - "Munich Central Collecting Point, restitution card, Munich no. 8035, Bundesarchiv Koblenz, B323/662 (database: http://www.dhm.de/datenbank/ccp, 14 July 2025)"
+      - source: yeide-2009
+        locator: no. D100
+  - owner: person/leon-reinach
+    role: event
+    acquired: 1941-08-10
+    method: claim
+    label: Léon Reinach asks the Musées nationaux to recover it, listing the Camondo family’s gifts to France — in vain
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - Letter from Léon Reinach to the Direction des Musées nationaux, Neuilly-sur-Seine, 10 August 1941, Archives nationales, Paris, Musées nationaux, 201447921/274
+      - Letter from Léon Reinach to the Direction des Musées nationaux, Neuilly-sur-Seine, 13 August 1941, Archives nationales, Paris, Musées nationaux
+  - owner: person/gustav-rochlitz
+    role: possessor
+    acquired: 1942-03-10
+    ended: 31 July 1945
+    method: exchange
+    direct: true
+    label: exchanged by Göring for a Florentine tondo (inv. R 1529)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - source: yeide-2009
+        locator: no. D100
+      - source: howe-1946
+        locator: p. 241
+      - Inventory at confiscation from Gustav Rochlitz, 31 July 1945, p. 13 — Roberts Commission, Subject Files 1944–1946 (https://www.fold3.com/image/270270773, 22 July 2025)
+    exchanged_for_text: a Florentine tondo
+  - owner: person/thomas-carr-howe
+    co_owners: [person/lamont-moore]
+    role: custodian
+    acquired: 31 July 1945
+    ended: 1945-09-04
+    method: confiscation
+    direct: true
+    place: hohenschwangau
+    label: US Army Monuments Officers; seized at Rochlitz’s house, the Gipsmühle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - Inventory at confiscation from Gustav Rochlitz, 31 July 1945, p. 13 — Roberts Commission, Subject Files 1944–1946 (https://www.fold3.com/image/270270773, 22 July 2025)
+      - source: howe-1946
+        locator: p. 241
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    numbers:
+      - kind: munich
+        number: "8035"
+    acquired: 1945-09-04
+    ended: 1946-03-27
+    direct: true
+    place: munich
+    label: safekeeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - "Munich Central Collecting Point, restitution card, Munich no. 8035, Bundesarchiv Koblenz, B323/662 (database: http://www.dhm.de/datenbank/ccp, 14 July 2025)"
+  - owner: person/irene-cahen-d-anvers
+    acquired: 1946-03-27
+    ended: 8 June 1949 or later
+    method: restitution
+    direct: true
+    place: paris
+    label: returned to the heir of the Reinach family, Béatrice’s mother
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - source: yeide-2009
+        locator: no. D100
+      - source: die-sammlung-emil-buhrle-2021
+        locator: pp. 111–113
+  - owner: person/werner-feuz
+    role: agent
+    acquired: after 8 June 1949
+    ended: 1949-10-21
+    direct: true
+    place: clarens
+    label: intermediary; negotiated with the banker of Comtesse Sampieri
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - "AStEGB (archive of the Foundation E.G. Bührle Collection): letters from Werner Feuz, Paris, to Emil Bührle, 8 June and 26 September 1949 (negotiations with the banker of Comtesse Sampieri)"
+      - "AStEGB: declaration and receipt signed by Werner Feuz, Zürich, 21 October 1949 — sold to Emil Bührle for CHF 240,000"
+  - owner: person/emil-georg-buhrle
+    acquired: 1949-10-21
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 240000
+      currency: CHF
+    notes_md: The card of the Bührle collection gives 13 August 1949 as the date of acquisition, from Comtesse Irène de Sampieri, Paris.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+      - "AStEGB: declaration and receipt signed by Werner Feuz, Zürich, 21 October 1949 — sold to Emil Bührle for CHF 240,000"
+      - "AStEGB: card of the Bührle collection — acquired 13 August 1949 from Comtesse Irène de Sampieri, Paris"
+      - source: die-sammlung-emil-buhrle-2021
+        locator: pp. 111–113
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+  - owner: institution/foundation-e-g-buhrle-collection
+    numbers:
+      - kind: inventory
+        number: "90"
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+  - owner: person/beatrice-reinach
+    acquired: 1926-06-21 or earlier
+    method: gift
+    label: "Léon Reinach (letters to the Musées nationaux, 10 and 13 August 1941): a gift to his wife from her grandmother Louise Cahen d’Anvers. Against it René Joly (1946): always Irène’s, only deposited with Béatrice. The Kunsthaus leaves it open; its research text dates the gift 1933, after Louise’s death in 1926."
+    certainty: disputed
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        note: "Fussnoten 3 und 4: Brief von Léon Reinach an die Direktion des Musées Nationaux, 10.08.1941 (Archives nationales, 201447921/274); Brief von René Joly an M. Henraux, 18.10.1946 (Archives Etrangères Paris, 209SUP/36)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+    alternative_of: 2
+  - owner: person/emil-georg-buhrle
+    acquired: 1949-08-13
+    method: purchase
+    place: zurich
+    label: "Bührle’s collection card: acquired from Comtesse Irène de Sampieri, Paris, on 13 August 1949 — the declaration signed by Werner Feuz and the receipt are dated 21 October 1949."
+    certainty: possible
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        note: "Fussnote 12: Karteikarte Sammlung Emil Bührle (13.08.1949); Erklärung und Quittung von Werner Feuz, 21.10.1949 (AStEGB)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+    alternative_of: 12
+numbers:
+  - number: "90"
+    institution: foundation-e-g-buhrle-collection
+  - number: I.506
+    source: dauberville-2007
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+  - number: "173"
+    source: die-sammlung-emil-buhrle-2021
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-16
+identifiers:
+  gnd: "1337717215"
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  created:
+    - accessed: 2026-10-16
+      property: P571
+      wikidata: Q3937570
+  creator:
+    - accessed: 2026-10-16
+      property: P170
+      wikidata: Q3937570
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  materials:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  dimensions:
+    - accessed: 2026-10-16
+      property: P2048
+      wikidata: Q3937570
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  provenance_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586963/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16

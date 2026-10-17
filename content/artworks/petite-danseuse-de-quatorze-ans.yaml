@@ -1,0 +1,103 @@
+public_id: "100283"
+title: Petite Danseuse de quatorze ans
+creator: edgar-degas
+created: 1880/1881
+kind: sculpture
+medium: Bronze, partially painted, cotton skirt, silk ribbon
+dimensions: [98]
+institution: kunsthaus-zurich
+inventory_number: BU 0037
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: artist/edgar-degas
+    role: estate
+    acquired: 1917-09-27
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+        note: "Footnote: AStEGB, Brief von F. K. Lloyd, Marlborough Fine Art Ltd, London, an Emil Bührle, 25.06.1952, betreffend seinem Verkauf eines Abgusses der Petite danseuse de quatorze ans an die Tate Gallery; Lloyd wird versuchen, Bührle den letzten noch bei den Erben befindlichen Abguss zur Verfügung zu stellen; der Brief ist mit einer handschriftlichen Notiz von Bührle versehen, aus der hervorgeht, dass er nicht …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1954-06-25
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+        note: "Footnote: AStEGB, Rechnung der Trafo Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], ausgestellt auf Emil Bührle, 17.06.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-06-25
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 6500000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+        note: "Footnote: Rechnung, wie oben Fussnote 2; AStEGB, Brief von Dr. O. Maurer [Generalsekretär von Oerlikon Bührle & Co.] an Trafo Anstalt für Handel und Finanz, Vaduz, 19.06.1954, in dem die Zahlung des obigen Betrages als Teil einer grösseren Abrechnung für Kunstankäufe in der Höhe von insgesamt CHF 451.250 bestätigt wird; Brief der Trafo Anstalt für Handel und Finanz, Vaduz, an Emil Bührle, 25.06.1954, mit de…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 37
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "37"
+    institution: foundation-e-g-buhrle-collection
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

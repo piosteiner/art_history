@@ -1,0 +1,13 @@
+public_id: "100090"
+name: Foundation E.G. Bührle Collection
+kind: foundation
+founded: 1960
+place: zurich
+wikidata_id: Q666331
+metadata:
+  sources: [Wikidata Q666331 (retrieved 2026-10-07)]
+sources:
+  founded:
+    - accessed: 2026-10-07
+      property: P571
+      wikidata: Q666331

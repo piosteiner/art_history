@@ -1,0 +1,16 @@
+public_id: "100071"
+name: Arma Christi
+category: technique
+definition: objects associated with the Passion of Jesus Christ in Christian symbolism and art
+wikidata_id: Q1240885
+metadata:
+  sources: [Wikidata Q1240885 (retrieved 2026-10-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/62/Passion-instruments.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Passion-instruments.jpg
+    license: CC BY-SA 3.0
+    credit: User:Poussin jean
+sources:
+  definition:
+    - accessed: 2026-10-06
+      wikidata: Q1240885

@@ -1,0 +1,180 @@
+public_id: "100295"
+title: Le Grand Duc
+creator: edouard-manet
+created: 1881
+kind: oil painting
+medium: Oil on canvas
+dimensions: [97, 64]
+institution: kunsthaus-zurich
+inventory_number: BU 0061
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: artist/edouard-manet
+    role: estate
+    acquired: 1883
+    ended: 1884-02-04
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: Auktion Hôtel Drouot (04.-05.02.1884), Lot 88."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1884-02-04/1884-02-05
+    ended: 1884-02-04/1884-02-05
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 88
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/antoine-leonard-joseph-de-la-narde
+    role: dealer
+    acquired: 1884-02-04
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: Bodelsen 1968, No. PV 135, S. 343. Es scheint wahrscheinlich, dass der dort identifizierte «Monsieur de la Narde» mit dem Antiquitätenhändler Antoine de la Narde, dem ehemaligen Besitzer von Courbets Origine du monde, identisch ist."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/louis-henri-devillez
+    acquired: 1930-09-06 or earlier
+    ended: 2 November 1930 or later
+    place: brussels
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: Kat. Stedelijk Museum 1930, No. 209; Rouart/Wildenstein 1975, No. 377."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/paul-colin
+    ended: 1943
+    place: brussels
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: Kat. Galerie Georges Giroux 1948, Lot 39: «Vente après décès»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/paul-colin
+    role: estate
+    acquired: 1943
+    ended: 1948-11-27
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-georges-giroux
+    role: agent
+    acquired: 1948-11-27
+    ended: 1948-11-27
+    method: auction
+    direct: true
+    place: brussels
+    label: Lot 39
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-seligmann
+    role: dealer
+    acquired: 1954-06-10 or earlier
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: AStEGB, Brief von Dr. Heyligers, Museum Boymans, Rotterdam, an Walter Drack, 11.07.1955, betreffend das Gemälde Manet, Le Grand-Duc; erinnert sich, dass das Gemälde bei der Galerie Seligmann, Place Vendôme, Paris, war; Kat. Musée des Arts décoratifs 1954, No. 27. Der Katalogeintrag gibt Bernoulli als Eigentümer an, die Reproduktion (Abb. 33) gibt «Seligmann, Paris» als Eigentümer an."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/christoph-bernoulli
+    role: dealer
+    acquired: 1954-07-10 or earlier
+    ended: 1955-09-07
+    direct: true
+    place: basel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: Kat. Museum Boymans 1954, No. 89; AStEGB Brief wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-09-07
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        note: "Footnote: Von dem Vorgenannten zusammen mit einer gotischen Skulptur für CHF 122.500 erworben, Brief von Dr. Christoph Bernoulli, Saas-Almagel, an Emil Bührle, 02.08.1955, mit Preisangabe, und Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, 07.09.1955, über den Betrag von CHF 122.500, zahlbar mit Check an Dr. Christoph Bernoulli, Basel."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 61
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "61"
+    institution: foundation-e-g-buhrle-collection
+  - number: "377"
+    label: Rouart/Wildenstein (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

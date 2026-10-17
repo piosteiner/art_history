@@ -1,0 +1,43 @@
+public_id: "100094"
+name: Vienna
+names:
+  - lang: ja
+    role: translation
+    text: ウィーン
+  - lang: zh
+    role: translation
+    text: 维也纳州
+  - lang: ko
+    role: translation
+    text: 빈
+  - lang: fr
+    role: translation
+    text: Vienne
+  - lang: de
+    role: original
+    text: Wien
+  - lang: nl
+    role: translation
+    text: Wenen
+  - lang: es
+    role: translation
+    text: Viena
+  - lang: ru
+    role: translation
+    text: Вена
+kind: settlement
+parent: austria
+country_code: AT
+location: [16.3725, 48.20833]
+wikidata_id: Q1741
+metadata:
+  sources: [Wikidata Q1741 (retrieved 2026-10-07)]
+sources:
+  kind:
+    - accessed: 2026-10-07
+      property: P31
+      wikidata: Q1741
+  location:
+    - accessed: 2026-10-07
+      property: P625
+      wikidata: Q1741

@@ -1,0 +1,30 @@
+public_id: "100159"
+name: Samuel Abraham Marx
+given_name: Samuel Abraham
+family_name: Marx
+names: [Samuel Marx, Samuel A. Marx]
+kind: person
+occupations: [architect, art collector]
+birth: 1885
+death: 1964
+wikidata_id: Q3471020
+metadata:
+  sources: [Wikidata Q3471020 (retrieved 2026-10-09)]
+identifiers:
+  gnd: "133826694"
+  lc: n98086827
+  ulan: "500123558"
+  viaf: "25804210"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q3471020
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q3471020
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q3471020

@@ -1,0 +1,37 @@
+public_id: "100156"
+name: Norton Simon
+given_name: Norton
+family_name: Simon
+names: [Norton Winfred Simon]
+kind: person
+birth: 1907-02-05
+death: 1993-06-02
+wikidata_id: Q327240
+metadata:
+  sources: [Wikidata Q327240 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/norton-simon-museum
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Norton_Simon_in_1971.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Norton_Simon_in_1971.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: 12088108X
+  lc: n98013382
+  ulan: "500326044"
+  viaf: "25445224"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q327240
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q327240
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q327240

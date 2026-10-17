@@ -1,0 +1,33 @@
+public_id: "100140"
+name: Gilcrease Museum
+names: [Thomas Gilcrease Institute of American History and Art, Gilcrease - The Museum of the Americas]
+founded: 1943
+place: tulsa
+location: [-96.0214, 36.1747]
+address: Gilcrease Museum, 1400 N Gilcrease Museum Rd, Tulsa
+website_url: https://gilcrease.org/
+wikidata_id: Q14708424
+metadata:
+  sources: [Wikidata Q14708424 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Gilcrease_-_Gro%C3%9Fer_Saal_mit_Schlacht_von_Chapultepec.jpg/1280px-Gilcrease_-_Gro%C3%9Fer_Saal_mit_Schlacht_von_Chapultepec.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gilcrease_-_Gro%C3%9Fer_Saal_mit_Schlacht_von_Chapultepec.jpg
+    license: CC BY-SA 3.0
+    credit: Wolfgang Sauber
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q14708424
+  address:
+    - accessed: 2026-10-09
+      property: P6375
+      wikidata: Q14708424
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q14708424
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q14708424

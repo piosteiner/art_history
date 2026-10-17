@@ -1,6 +1,8 @@
+public_id: "100028"
 name: Edo
 names: [Tokyo, 江戸]
 kind: settlement
 parent: japan
 country_code: JP
 location: [139.6917, 35.6895]
+wikidata_id: Q215646

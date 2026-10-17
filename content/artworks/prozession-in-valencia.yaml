@@ -1,0 +1,191 @@
+public_id: "100293"
+title: Prozession in Valencia
+creator: francisco-goya
+attribution_label: Workshop of
+kind: oil painting
+medium: Oil on canvas
+dimensions: [105.5, 126]
+institution: kunsthaus-zurich
+inventory_number: BU 0140
+on_loan: true
+on_loan_since: 2021
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/04/Workshop_of_Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_Prozession_in_Valencia_-_140_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Workshop_of_Francisco_Jos%C3%A9_de_Goya_y_Lucientes_-_Prozession_in_Valencia_-_140_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Workshop of Francisco Goya
+provenance:
+  - owner: person/javier-goya
+    acquired: 1812
+    ended: 1854-03-12
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Kat. Musée des Beaux-Arts Agen 2019, S. 189."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/mariano-de-goya
+    acquired: 1854-03-12
+    ended: 1855
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Sohn des Obengenannten, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/jose-de-salamanca-y-mayol
+    acquired: 1855
+    ended: 1875-01-25
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Wie oben Fussnote 3; Auktion Hôtel Drouot 1875, Lot 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1875-01-25
+    ended: 1875-01-26
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 14
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/henri-bamberger
+    acquired: 1875-01-26
+    ended: 1908-11-22
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Wie oben Fussnote 5; Kat. Musées des Beaux-Arts Agen, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner_label: heirs of Henri Bamberger
+    acquired: 1875
+    ended: 1920
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/marcel-nicolle
+    acquired: 1920
+    ended: before 1925
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/baron-louis-van-der-heyden-a-hauzeur
+    acquired: 1925
+    ended: 1952
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/helene-candida-berry
+    acquired: 1952
+    ended: 1955
+    method: inheritance
+    direct: true
+    label: Viscountess Kemsley; née Hay
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Kat. Musées des Beaux-Arts Agen, wie oben Fussnote 3, es handelt sich um die Nichte des Vorgenannten; AStEGB, Akte mit Briefkopf der Marlborough Fine Art Ltd. in London, o. D. [ca. Juni 1955], mit detaillierten Informationen zu 10 Gemälden, darunter Goya, Prozession."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    acquired: 1955
+    ended: 1955-06-27
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Informationen von Marlborough International Fine Art an die Stiftung E.G. Bührle Collection, 24.08.2012, und AStEGB, Brief von F. K. Lloyd, Marlborough Fine Art Ltd., London, an Emil Bührle, 23.07.1954, der darauf hinweist, dass Bührle das Gemälde in Paris gesehen hat."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1955-06-27
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 45000
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        note: "Footnote: Erworben von oben für 45.000 GBP (= 540.000 CHF), AStEGB, Preisliste, handgeschrieben von Emil Bührle und mit den Namen von 5 Künstlern, darunter Goya; die Preisliste wurde für eine Gruppe von Gemälden Alter Meister erstellt, über deren Kauf Bührle mit Frank Lloyd von Marlborough Fine Art Ltd, London, verhandelte; dieser Teil des Kaufs belief sich auf 60.000 GBP (= 720.000 CHF) und umfasste Bouche…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 140
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "140"
+    institution: foundation-e-g-buhrle-collection
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

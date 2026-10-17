@@ -1,0 +1,46 @@
+public_id: "100225"
+name: Camille Varlet
+given_name: Camille
+family_name: Varlet
+birth: 1872-10-02
+death: 1942
+wikidata_id: Q2935088
+metadata:
+  sources: [Wikidata Q2935088 (retrieved 2026-10-13)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-13
+        property: P27
+        wikidata: Q2935088
+  - type: born_in
+    to: place/seine-et-marne
+    sources:
+      - accessed: 2026-10-13
+        property: P19
+        wikidata: Q2935088
+  - type: died_in
+    to: place/veneux-les-sablons
+    sources:
+      - accessed: 2026-10-13
+        property: P20
+        wikidata: Q2935088
+  - type: student_of
+    to: artist/alfred-sisley
+    sources:
+      - accessed: 2026-10-13
+        property: P802
+        wikidata: Q175130
+      - accessed: 2026-10-13
+        property: P1066
+        wikidata: Q2935088
+sources:
+  birth:
+    - accessed: 2026-10-13
+      property: P569
+      wikidata: Q2935088
+  death:
+    - accessed: 2026-10-13
+      property: P570
+      wikidata: Q2935088

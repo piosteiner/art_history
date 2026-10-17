@@ -1,0 +1,29 @@
+public_id: "100371"
+name: Budapest
+names:
+  - lang: nl
+    role: translation
+    text: Boedapest
+  - lang: ru
+    role: translation
+    text: Будапешт
+kind: settlement
+parent: hungary
+country_code: HU
+location: [19.04083, 47.49833]
+wikidata_id: Q1781
+metadata:
+  sources: [Wikidata Q1781 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q1781
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q1781
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q1781

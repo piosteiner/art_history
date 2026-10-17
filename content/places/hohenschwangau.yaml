@@ -1,0 +1,29 @@
+public_id: "100490"
+name: Hohenschwangau
+names:
+  - lang: zh
+    role: translation
+    text: 霍恩施万高
+  - lang: ru
+    role: translation
+    text: Хоэншвангау
+kind: settlement
+parent: germany
+country_code: DE
+location: [10.74167, 47.55833]
+wikidata_id: Q672962
+metadata:
+  sources: [Wikidata Q672962 (retrieved 2026-10-16)]
+sources:
+  kind:
+    - accessed: 2026-10-16
+      property: P31
+      wikidata: Q672962
+  parent:
+    - accessed: 2026-10-16
+      property: P131
+      wikidata: Q672962
+  location:
+    - accessed: 2026-10-16
+      property: P625
+      wikidata: Q672962

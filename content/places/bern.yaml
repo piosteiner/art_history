@@ -1,0 +1,41 @@
+public_id: "100375"
+name: Bern
+names:
+  - lang: ja
+    role: translation
+    text: ベルン
+  - lang: zh
+    role: translation
+    text: 伯尔尼 / 伯恩 / 伯爾尼
+  - lang: ko
+    role: translation
+    text: 베른
+  - lang: fr
+    role: translation
+    text: Berne
+  - lang: it
+    role: translation
+    text: Berna
+  - lang: ru
+    role: translation
+    text: Берн
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [7.44743, 46.94798]
+wikidata_id: Q70
+metadata:
+  sources: [Wikidata Q70 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q70
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q70
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q70

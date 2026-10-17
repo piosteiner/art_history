@@ -1,0 +1,28 @@
+public_id: "100118"
+name: McNay Art Museum
+names: [The McNay, Marion Koogler McNay Art Museum]
+founded: 1950
+place: san-antonio
+location: [-98.45675, 29.48552]
+website_url: https://www.mcnayart.org/
+wikidata_id: Q286389
+metadata:
+  sources: [Wikidata Q286389 (retrieved 2026-10-08)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Mcnay_front1_Nima.JPG/1280px-Mcnay_front1_Nima.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Mcnay_front1_Nima.JPG
+    license: CC BY-SA 3.0
+    credit: Zereshk
+sources:
+  place:
+    - accessed: 2026-10-08
+      property: P131
+      wikidata: Q286389
+  founded:
+    - accessed: 2026-10-08
+      property: P571
+      wikidata: Q286389
+  location:
+    - accessed: 2026-10-08
+      property: P625
+      wikidata: Q286389

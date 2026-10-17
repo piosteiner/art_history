@@ -1,0 +1,239 @@
+public_id: "100398"
+title_lang: fr
+title: L'Offrande
+names:
+  - lang: de
+    role: translation
+    text: Die Opfergabe
+    status: official
+  - lang: en
+    role: translation
+    text: The Offering
+    status: official
+creator: paul-gauguin
+created: 1902
+kind: oil painting
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [68.5, 78.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0047
+web_url: https://collection.kunsthaus.ch/de/collection/item/512960/
+on_loan: true
+on_loan_since: 2021
+description_md: "[Bührle Collection](https://buehrle.ch/en/artworks/the-offering/)"
+wikidata_id: Q64174079
+metadata:
+  sources: [Wikidata Q64174079 (retrieved 2026-10-15)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Gauguin_L%27offrande.jpg/1280px-Gauguin_L%27offrande.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gauguin_L%27offrande.jpg
+    license: Public domain
+    credit: Paul Gauguin
+provenance:
+  - owner: person/ambroise-vollard
+    acquired: 1903
+    ended: 1906-06-25
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Vom Künstler gekauft, wie oben Fussnote 1; Kat. Museum of Fine Arts Boston 2004, S. 308."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/alexandre-berthier-prince-de-wagram
+    acquired: 1906-06-25
+    method: purchase
+    direct: true
+    place: paris
+    label: the 4th Prince of Wagram, as the source counts
+    price:
+      amount: 6000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/ambroise-vollard
+    role: custodian
+    acquired: 1906-06-25
+    ended: 2 August 1906 or later
+    direct: true
+    place: paris
+    label: deposited by Berthier
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Als Depot von Berthier bei Vollard, wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1922-01-22
+    ended: 1927-03-11
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Wie oben Fussnote 1: Das Gemälde hat möglicherweise Vollards Galerie nie verlassen. Es wurde entweder aufgrund von Zahlungsausfall an Vollard zurückgegeben oder vom Händler zurückgekauft."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/galerie-thannhauser
+    role: dealer
+    acquired: 1927-03-11
+    ended: 1929-10-10
+    method: purchase
+    direct: true
+    place: berlin
+    label: "Berlin, München, Luzern; the source's line ends it 10 October 1928; its footnote (Thannhauser's stock book): sold to Bignou-Reid on 10 October 1929"
+    price:
+      amount: 150000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Wie oben Fussnote 1; Siehe Galerien Thannhauser – Dezember 1919 - 1971. Akte: Lagerbuch II, München (ab 1924) und Berlin (ab 1928) an Luzern: «1135 11 III 1927 Vollard A. Paris Gauguin P.K. Verehrung Öl 76 1/2 x 67 10.10.1929 Bignou-Reid London», ZADIK, Zentralarchiv für deutsche und internationale Kunstmarktforschung, Köln, Thannhauser Archiv, https://zadik.uni-koeln.de/homepage/dokument.aspx?Pag…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/etienne-bignou
+    co_owners: [institution/alex-reid-lefevre]
+    role: dealer
+    acquired: 1929-10-10
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Galerien Thannhauser – Dezember 1919 - 1971. Akte: Lagerbuch II, München (ab 1924) und Berlin (ab 1928), wie oben Fussnote 7; Wie oben Fussnote 1: «Information comes from Fonds Bignou-Vollard, Musée d'Orsay and Bignou Gallery Albums, circa 1930s-1940s, Archives Directory for the History of Collecting in America, New York (Photo no. 1656)»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/m-knoedler-co
+    co_owners: [institution/alex-reid-lefevre]
+    role: dealer
+    acquired: 1930-02-18
+    ended: 1936-03
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: New York, London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: 1936-03
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/max-kaganovitch
+    role: dealer
+    acquired: 1938
+    ended: 1956-09
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Kat. Galerie Max Kaganovitch 1938, No. 21; Kat. Kunstmuseum Basel 1950, No. 64; Max Kaganovitch war der Leihgeber für die Ausstellung im Kunstmuseum Basel 1950 vgl. Archiv Kunstmuseum Basel, K 13, 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/kunstmuseum-bern
+    role: custodian
+    acquired: 1950-11-25
+    direct: true
+    place: bern
+    label: deposited by Max Kaganovitch (Bern no. 1266)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: Archiv des Kunstmuseums Bern, Inventarbuch Leihgaben (B-001-005), Aufzeichnungen über ein Depot von 29 Kunstwerken aus dem Besitz von Max Kaganovitch im Kunstmuseum Bern am 25.11.1950, L'Offrande ist die No. 1266. Während kein genaues Datum für den Abtransport des Gemäldes vermerkt ist, besagt der Eintrag, dass Kaganovitch das Gemälde persönlich nach Zürich gebracht hat. In einem zusätzlichen Verm…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/emil-georg-buhrle
+    acquired: 1956
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 80000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        note: "Footnote: AStEGB, Inventarkarte Gauguin, L'Offrande; Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 47
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: "47"
+    institution: foundation-e-g-buhrle-collection
+  - number: "624"
+    label: Wildenstein Gauguin (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - accessed: 2026-10-15
+      property: P571
+      wikidata: Q64174079
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - accessed: 2026-10-15
+      property: P170
+      wikidata: Q64174079
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - accessed: 2026-10-15
+      property: P2048
+      wikidata: Q64174079
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

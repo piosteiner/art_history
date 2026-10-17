@@ -1,0 +1,19 @@
+public_id: "100077"
+name: Deesis
+names:
+  - lang: fr
+    role: translation
+    text: Déisis
+category: technique
+definition: artistic theme of Jesus flanked by the Virgin Mary and John the Baptist, sometimes with other saints
+wikidata_id: Q1207453
+metadata:
+  sources: [Wikidata Q1207453 (retrieved 2026-10-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/eb/Deesis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Deesis.jpg
+    license: Public domain
+sources:
+  definition:
+    - accessed: 2026-10-06
+      wikidata: Q1207453

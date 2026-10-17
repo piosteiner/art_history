@@ -1,0 +1,60 @@
+public_id: "100105"
+title_lang: de
+title: Mönche am Feuer
+names:
+  - lang: en
+    role: translation
+    text: Monks by the Fire
+  - lang: fr
+    role: translation
+    text: Moines autour de l’âtre
+creator: alessandro-magnasco
+created: c. 1725
+kind: oil painting
+medium: oil on canvas
+materials: [oil paint, canvas]
+dimensions: [111, 143]
+institution: kunsthaus-zurich
+inventory_number: "2601"
+web_url: https://collection.kunsthaus.ch/en/collection/item/2134/
+wikidata_id: Q131586536
+metadata:
+  sources: [Wikidata Q131586536 (retrieved 2026-10-08)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/68/Alessandro_Magnasco_-_M%C3%B6nche_am_Feuer_-_2601_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alessandro_Magnasco_-_M%C3%B6nche_am_Feuer_-_2601_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Alessandro Magnasco
+sources:
+  kind:
+    - accessed: 2026-10-08
+      property: P31
+      wikidata: Q131586536
+  medium:
+    - accessed: 2026-10-08
+      property: P186
+      wikidata: Q131586536
+  created:
+    - accessed: 2026-10-08
+      property: P571
+      wikidata: Q131586536
+  creator:
+    - accessed: 2026-10-08
+      property: P170
+      wikidata: Q131586536
+  materials:
+    - accessed: 2026-10-08
+      property: P186
+      wikidata: Q131586536
+  dimensions:
+    - accessed: 2026-10-08
+      property: P2048
+      wikidata: Q131586536
+  institution:
+    - accessed: 2026-10-08
+      property: P195
+      wikidata: Q131586536
+  inventory_number:
+    - accessed: 2026-10-08
+      property: P217
+      wikidata: Q131586536

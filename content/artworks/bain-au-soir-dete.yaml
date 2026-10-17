@@ -1,0 +1,45 @@
+public_id: "100192"
+title_lang: fr
+title: Bain au soir d'été
+names:
+  - lang: en
+    role: translation
+    text: Bathing on a Summer Evening
+creator: felix-vallotton
+created: 1890s
+materials: [oil paint, canvas]
+dimensions: [97, 131]
+institution: kunsthaus-zurich
+inventory_number: 1965/0041
+web_url: https://collection.kunsthaus.ch/en/collection/item/3031/
+wikidata_id: Q62274515
+metadata:
+  sources: [Wikidata Q62274515 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Vallotton_Das_Bad_Sommerabend_1892.jpg/1280px-Vallotton_Das_Bad_Sommerabend_1892.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vallotton_Das_Bad_Sommerabend_1892.jpg
+    license: Public domain
+    credit: Félix Vallotton
+identifiers:
+  gnd: "1072197669"
+sources:
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q62274515
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q62274515
+  dimensions:
+    - accessed: 2026-10-09
+      property: P2048
+      wikidata: Q62274515
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q62274515
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q62274515

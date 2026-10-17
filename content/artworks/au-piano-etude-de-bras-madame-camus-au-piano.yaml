@@ -1,0 +1,168 @@
+public_id: "100291"
+title: Au piano, étude de bras (« Madame Camus au piano »)
+creator: edgar-degas
+created: 1869
+kind: pastel
+medium: Pastel on paper
+dimensions: [32.1, 43.6]
+institution: kunsthaus-zurich
+inventory_number: BU 0030
+on_loan: true
+on_loan_since: 2021
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Edgar_Degas_-_Au_piano%2C_%C3%A9tude_de_bras_%28%C2%AB_Madame_Camus_au_piano_%C2%BB%29_-_30_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_Au_piano,_%C3%A9tude_de_bras_(%C2%AB_Madame_Camus_au_piano_%C2%BB)_-_30_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Edgar Degas
+provenance:
+  - owner: artist/edgar-degas
+    role: estate
+    acquired: 1917-09-27 or earlier
+    ended: 1918-12-13
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        note: "Footnote: Auktion Galerie Georges Petit (11.12.-13.12.1918), No. 183 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1918-12-11
+    ended: 1918-12-13
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 183
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-nunes-fiquet
+    role: dealer
+    acquired: 1918-12-13 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 700
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        note: "Footnote: Annotierte Kopie des oben genannten Auktionskatalogs im Musée d'Orsay (Dokumentation), Paris; Brame/Reff 1984, No. 50."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/alphonse-kann
+    acquired: 1931 or earlier
+    ended: 1940-10
+    place: saint-germain-en-laye
+    label: St-Germain-en-Laye, London
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        note: "Footnote: Kat. Orangerie des Tuileries Paris 1931, No. 121."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1940-10
+    ended: 1944
+    method: confiscation
+    direct: true
+    place: paris
+    label: ERR no. Ka 1113
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        note: "Footnote: Für einen möglichen Austausch in Betracht gezogen, aber in Paris verblieben. Barch Koblenz, B 323 273, ERR Inventar-Liste Kann, Alphons, St-Germain-en-Laye, Oktober 1940/07.03.1941, inventarisiert 10.09.1942, S. 250; Archives des musées nationaux (Louvre), Paris, Liste Alph. Kann [1944], S. 2 (verso), Ka 1113."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/alphonse-kann
+    acquired: 1947-07-11
+    ended: 1948-09-24 or earlier
+    method: restitution
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        note: "Footnote: Archives of the MAEE, La Courneuve, Dossier Kann, Resitution du 11 juillet 1947, Œuvres récupérés en France, S. 1; Archives des musées nationaux (Louvre), Beleg («Reçu de la Direction des Musées de France les tableaux ci-après désignés provenant de la collection de M. Alphonse Kann», typoscript), signiert Mre Bokanowski [procureur des héritiers d'Alphonse Kann] und datiert 22/X/48 und 9/XI/48, S. …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/charles-weil
+    ended: 1951-11-14
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        note: "Footnote: Neffe des oben Genannten, AStEGB, Brief von Charles Weil, Paris, an Emil Bührle, 16.07.1951, in dem er zwei Studien für das Porträt von Mme Camus anbietet, und Brief von Charles Weil, Paris, an Emil Bührle, 29.04.1952, in dem er bestätigt, dass die beiden an Bührle verkauften Pastelle aus der Sammlung seines Onkels stammen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-11-14
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        note: "Footnote: Erworben von dem oben Genannten, zusammen mit einem weiteren Pastell aus der gleichen Serie (Sammlung Emil Bührle, Inv. 31) für FF 400.000, AStEGB, Rechnung von Charles Weil, Paris, ausgestellt auf Emil Bührle, 01.09.1951, und Korrespondenz über den Kauf und die Einfuhr der beiden Pastelle, 15.08.1951-12.11.1951, der letzte Brief mit einer Entschuldigung für die verspätete Zahlung; Zahlungsauftrag…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 30
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "30"
+    institution: foundation-e-g-buhrle-collection
+  - number: "50"
+    label: Brame/Reff (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

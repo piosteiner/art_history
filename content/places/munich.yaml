@@ -1,0 +1,47 @@
+public_id: "100491"
+name: Munich
+names:
+  - lang: ja
+    role: translation
+    text: ミュンヘン
+  - lang: zh
+    role: translation
+    text: 慕尼黑
+  - lang: ko
+    role: translation
+    text: 뮌헨
+  - lang: de
+    role: original
+    text: München
+  - lang: it
+    role: translation
+    text: Monaco di Baviera
+  - lang: es
+    role: translation
+    text: Múnich
+  - lang: ru
+    role: translation
+    text: Мюнхен
+  - lang: pt
+    role: translation
+    text: Munique
+kind: settlement
+parent: germany
+country_code: DE
+location: [11.575, 48.1375]
+wikidata_id: Q1726
+metadata:
+  sources: [Wikidata Q1726 (retrieved 2026-10-16)]
+sources:
+  kind:
+    - accessed: 2026-10-16
+      property: P31
+      wikidata: Q1726
+  parent:
+    - accessed: 2026-10-16
+      property: P131
+      wikidata: Q1726
+  location:
+    - accessed: 2026-10-16
+      property: P625
+      wikidata: Q1726

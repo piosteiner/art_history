@@ -1,0 +1,24 @@
+public_id: "100208"
+name: Giverny
+kind: settlement
+parent: france
+country_code: FR
+location: [1.52917, 49.07611]
+wikidata_id: Q165061
+metadata:
+  sources: [Wikidata Q165061 (retrieved 2026-10-12)]
+identifiers:
+  gnd: 4021113-7
+sources:
+  kind:
+    - accessed: 2026-10-12
+      property: P31
+      wikidata: Q165061
+  parent:
+    - accessed: 2026-10-12
+      property: P131
+      wikidata: Q165061
+  location:
+    - accessed: 2026-10-12
+      property: P625
+      wikidata: Q165061

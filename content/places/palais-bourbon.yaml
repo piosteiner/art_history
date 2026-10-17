@@ -1,0 +1,16 @@
+public_id: "100230"
+name: Palais Bourbon
+kind: site
+location: [2.31868, 48.86207]
+wikidata_id: Q936633
+metadata:
+  sources: [Wikidata Q936633 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q936633
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q936633

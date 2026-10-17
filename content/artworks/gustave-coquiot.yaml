@@ -1,0 +1,122 @@
+public_id: "100288"
+title: Gustave Coquiot
+creator: pablo-picasso
+created: 1901
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [46, 37]
+institution: kunsthaus-zurich
+inventory_number: BU 0079
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/pierre-loeb
+    role: dealer
+    ended: 1932 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+        note: "Footnote: Zervos 1932, Bd. I, No. I.85."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/alphonse-bellier
+    ended: 27 October 1936 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+        note: "Footnote: Archives for American Art, Smithsonian Institution, Washington D.C., Jacques Seligmann & Co. records, Box 261, Folder 1, «Picassos for sale in exhibition», vom 27.10.1936, bezüglich einer von Gemain Seligman vorbereiteten Picasso-Ausstellung und der Listung Nr. 5, Gustave Coquiot, mit einem Preis von $3.800, wobei Alphonse Bellier in einer undatierten Liste in derselben Ausstellungsakte als Eigent…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/jacques-seligmann-co-inc
+    role: agent
+    acquired: 1936-10-27 or earlier
+    direct: true
+    place: new-york-city
+    label: probably on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1953-09-21 or earlier
+    ended: 1953-09-23
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+        note: "Footnote: AStEGB, Eingangsbuch II, 21.09.1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-09-23
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+        note: "Footnote: Eingangsbuch wie oben Fussnote 8, mit Hinweis auf das Kaufdatum."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 79
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "79"
+    institution: foundation-e-g-buhrle-collection
+  - number: I-85
+    label: Zervos (catalogue raisonné)
+  - number: VI-16
+    label: Daix (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

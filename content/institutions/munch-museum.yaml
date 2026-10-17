@@ -1,0 +1,37 @@
+public_id: "100110"
+name: Munch Museum
+names: [Munchmuseet, MUNCH]
+founded: 1963
+place: oslo
+location: [10.75531, 59.90575]
+address: Edvard Munchs plass 1
+website_url: https://www.munch.no/
+wikidata_id: Q844926
+metadata:
+  sources: [Wikidata Q844926 (retrieved 2026-10-08)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/MUNCH_Museum_front_%282020%29_4.jpg/1280px-MUNCH_Museum_front_%282020%29_4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MUNCH_Museum_front_(2020)_4.jpg
+    license: CC BY-SA 4.0
+    credit: Premeditated
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Munchmuseet_Oslo_JUN2019.jpg/1280px-Munchmuseet_Oslo_JUN2019.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Munchmuseet_Oslo_JUN2019.jpg
+    license: CC BY-SA 4.0
+    credit: Annikdance
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/MuncMuseet01.jpg/1280px-MuncMuseet01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MuncMuseet01.jpg
+    license: CC BY 2.5
+    credit: Frode Inge Helland
+sources:
+  address:
+    - accessed: 2026-10-08
+      property: P6375
+      wikidata: Q844926
+  founded:
+    - accessed: 2026-10-08
+      property: P571
+      wikidata: Q844926
+  location:
+    - accessed: 2026-10-08
+      property: P625
+      wikidata: Q844926

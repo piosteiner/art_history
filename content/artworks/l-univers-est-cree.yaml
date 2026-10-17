@@ -1,0 +1,72 @@
+public_id: "100411"
+title: L'Univers est créé
+creator: paul-gauguin
+created: 1921
+conceived: 1893/1894
+kind: woodcut
+medium: Woodcut on China paper
+dimensions: [20.3, 35.1]
+institution: kunsthaus-zurich
+inventory_number: Gr.2003/0154
+relationships:
+  - type: co_creator
+    to: artist/pola-gauguin
+    label: printer (from Paul Gauguin’s woodblock, after his death)
+provenance:
+  - owner: artist/pola-gauguin
+    acquired: 1921
+    method: creation
+    direct: true
+    label: printed it from Paul Gauguin’s woodblock (1893–94)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/leonie-tobler
+    ended: 2003
+    place: uster
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/kunsthaus-zurich
+    acquired: 2003
+    method: bequest
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: 18/IIE,a
+    label: Mongan/Kornfeld (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/12830/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

@@ -1,0 +1,11 @@
+public_id: "100392"
+name_lang: en
+name: ink
+names:
+  - lang: de
+    role: translation
+    text: Tusche
+  - lang: de
+    role: translation
+    text: Tinte
+category: material

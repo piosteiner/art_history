@@ -1,0 +1,98 @@
+public_id: "100104"
+name: Alessandro Magnasco
+given_name: Alessandro
+family_name: Magnasco
+birth: 1667-02-04
+death: 1749-03-12
+wikidata_id: Q516941
+metadata:
+  sources: [Wikidata Q516941 (retrieved 2026-10-08)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-genoa
+    sources:
+      - accessed: 2026-10-12
+        property: P27
+        wikidata: Q516941
+  - type: born_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-12
+        property: P19
+        wikidata: Q516941
+      - url: https://d-nb.info/gnd/118730169
+        source: gnd
+        accessed: 2026-10-13
+      - url: https://rkd.nl/en/explore/artists/51970
+        source: rkd
+        accessed: 2026-10-13
+  - type: died_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-12
+        property: P20
+        wikidata: Q516941
+      - url: https://rkd.nl/en/explore/artists/51970
+        source: rkd
+        accessed: 2026-10-13
+  - type: worked_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-12
+        property: P937
+        wikidata: Q516941
+  - type: worked_in
+    to: place/milan
+    period: 1680/1703
+    sources:
+      - accessed: 2026-10-12
+        property: P937
+        wikidata: Q516941
+  - type: worked_in
+    to: place/florence
+    period: 1703/1711
+    sources:
+      - accessed: 2026-10-12
+        property: P937
+        wikidata: Q516941
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-12
+        property: P135
+        wikidata: Q516941
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Self-Portrait%2C_by_Alessandro_Magnasco%2C_called_il_Lissandrino_%28Genoa_1667-1749%29.jpg/1280px-Self-Portrait%2C_by_Alessandro_Magnasco%2C_called_il_Lissandrino_%28Genoa_1667-1749%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-Portrait,_by_Alessandro_Magnasco,_called_il_Lissandrino_(Genoa_1667-1749).jpg
+    license: Public domain
+    credit: Alessandro Magnasco
+identifiers:
+  bnf: 13171311x
+  gnd: "118730169"
+  idref: 03516333X
+  kulturnav: f9eb84cf-673c-4d05-b097-0a9597df142d
+  lc: nr87000716
+  rkd: "51970"
+  ulan: "500015104"
+  viaf: "62343833"
+sources:
+  birth:
+    - accessed: 2026-10-08
+      property: P569
+      wikidata: Q516941
+    - url: https://d-nb.info/gnd/118730169
+      source: gnd
+      accessed: 2026-10-13
+    - url: https://rkd.nl/en/explore/artists/51970
+      source: rkd
+      accessed: 2026-10-13
+  death:
+    - accessed: 2026-10-08
+      property: P570
+      wikidata: Q516941
+    - url: https://d-nb.info/gnd/118730169
+      source: gnd
+      accessed: 2026-10-13
+    - url: https://rkd.nl/en/explore/artists/51970
+      source: rkd
+      accessed: 2026-10-13

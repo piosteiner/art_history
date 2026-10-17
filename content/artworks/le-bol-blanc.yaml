@@ -1,0 +1,83 @@
+public_id: "100412"
+title_lang: fr
+title: Le Bol blanc
+names:
+  - lang: de
+    role: translation
+    text: Die weisse Schale
+    status: official
+  - lang: en
+    role: translation
+    text: Still Life, the White Bowl
+    status: official
+creator: paul-gauguin
+created: 1886
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [59.5, 72]
+institution: kunsthaus-zurich
+inventory_number: 1986/0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/1628/
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Paul_Gauguin_-_Le_Bol_blanc_-_1986-0002_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Le_Bol_blanc_-_1986-0002_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paul Gauguin
+provenance:
+  - owner: person/elisabeth-salzmann
+    ended: 1986
+    label: from the credit line
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+        note: "Footnote: Credit line: Donated by Elisabeth Salzmann in memory of her parents, 1986"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+      - Geschenk Elisabeth Salzmann zur Erinnerung an ihre Eltern
+  - owner: institution/kunsthaus-zurich
+    acquired: 1986
+    method: gift
+    direct: true
+    place: zurich
+    label: in memory of her parents (credit line)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+        note: "Footnote: Credit line: Donated by Elisabeth Salzmann in memory of her parents, 1986"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: "211"
+    label: Wildenstein (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1628/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

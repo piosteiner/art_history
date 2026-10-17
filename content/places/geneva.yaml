@@ -1,0 +1,50 @@
+public_id: "100369"
+name: Geneva
+names:
+  - lang: ja
+    role: translation
+    text: ジュネーヴ
+  - lang: zh
+    role: translation
+    text: 日內瓦
+  - lang: ko
+    role: translation
+    text: 제네바
+  - lang: fr
+    role: translation
+    text: Genève
+  - lang: de
+    role: translation
+    text: Genf
+  - lang: it
+    role: translation
+    text: Ginevra
+  - lang: es
+    role: translation
+    text: Ginebra
+  - lang: ru
+    role: translation
+    text: Женева
+  - lang: pt
+    role: translation
+    text: Genebra
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [6.15, 46.2]
+wikidata_id: Q71
+metadata:
+  sources: [Wikidata Q71 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q71
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q71
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q71

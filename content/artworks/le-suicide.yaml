@@ -1,0 +1,160 @@
+public_id: "100287"
+title: Le Suicidé
+creator: edouard-manet
+created: c. 1877
+kind: oil painting
+medium: Oil on canvas
+dimensions: [38, 46]
+institution: kunsthaus-zurich
+inventory_number: BU 0063
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1881-05-14
+    ended: 1881-05-14
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 22
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: |-
+          Footnote: Auktion Hôtel Drouot 1881, Nr. 22, für 65 FF verkauft; Rouart/Wildenstein 1975, Nr. 258.
+          Schenkung des Künstlers für einen Verkauf zugunsten des Komponisten Jean de Cabanes (Ernest Cabaner).
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/paul-durand-ruel
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: "Footnote: Rouart/Wildenstein 1975, Nr. 258."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/auguste-pellerin
+    acquired: 1902 or earlier
+    ended: 1910
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: "Footnote: Duret 1902, No. 215; Kat. Bernheim-Jeune & Cie 1910, No. 9; Kat. Moderne Galerie Thannhauser 1910, No. 20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/durand-ruel
+    co_owners: [institution/bernheim-jeune, person/paul-cassirer]
+    role: dealer
+    acquired: 1910
+    place: paris
+    label: Paris and Berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: "Footnote: Rouart/Wildenstein 1975, No. 258."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/ferenc-von-hatvany
+    acquired: after 1910
+    ended: 1948
+    place: budapest
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: "Footnote: Mravik 2003, No. 49, S. 158; No. 241, 243, 267, S. 159. Das Bild hängt an der Wand im Salon des Hauses Hatvany, ca. 1930."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/simon-meller
+    role: agent
+    acquired: 1948
+    ended: 1948
+    direct: true
+    label: intermediary; Baden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: "Footnote: Gerlőtei 1966, S. 369; AStEGB Eingangsbuch I, 08.10.1948, identifiziert Prof. Dr. Simon Meller, Baden, als Einlieferer, Inventarkarte Manet, Suicidé, identifiziert Dr. Fritz Nathan, St. Gallen, als Verkäufer. Die Transaktion mit der Einmischung des Kunsthistorikers Simon Meller und der Kaufpreis werden durch die Schilderung der Ereignisse durch Eugène Gerlőtei bestätigt"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: 1948
+    ended: 1948-10-08
+    method: purchase
+    direct: true
+    place: st-gallen
+    price:
+      amount: 29000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: "Footnote: Heuss 2006, S. 85, 89; Gerlőtei 1966, S. 369. Die Transaktion mit der Einmischung des Kunsthistorikers Simon Meller und der Kaufpreis werden durch die Schilderung der Ereignisse durch Eugène Gerlőtei bestätigt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1948-10-08
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        note: "Footnote: AStEGB Eingangsbuch I, 08.10.1948, wie oben Fussnote 11, identifiziert Prof. Dr. Simon Meller, (zeitweise lebhaft in) Baden, als Einlieferer, Inventarkarte Manet, Suicidé, identifiziert Dr. Fritz Nathan, St. Gallen, als Verkäufer."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 63
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "63"
+    institution: foundation-e-g-buhrle-collection
+  - number: "258"
+    label: Rouart/Wildenstein (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

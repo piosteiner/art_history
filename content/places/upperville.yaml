@@ -1,0 +1,16 @@
+public_id: "100173"
+name: Upperville
+kind: site
+location: [-77.8847, 38.9939]
+wikidata_id: Q2499804
+metadata:
+  sources: [Wikidata Q2499804 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q2499804
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q2499804

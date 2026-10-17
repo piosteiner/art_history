@@ -1,0 +1,35 @@
+public_id: "100583"
+name: Essen
+names:
+  - lang: ja
+    role: translation
+    text: エッセン
+  - lang: zh
+    role: translation
+    text: 埃森
+  - lang: ko
+    role: translation
+    text: 에센
+  - lang: ru
+    role: translation
+    text: Эссен
+kind: settlement
+parent: germany
+country_code: DE
+location: [7.01306, 51.45083]
+wikidata_id: Q2066
+metadata:
+  sources: [Wikidata Q2066 (retrieved 2026-10-17)]
+sources:
+  kind:
+    - accessed: 2026-10-17
+      property: P31
+      wikidata: Q2066
+  parent:
+    - accessed: 2026-10-17
+      property: P131
+      wikidata: Q2066
+  location:
+    - accessed: 2026-10-17
+      property: P625
+      wikidata: Q2066

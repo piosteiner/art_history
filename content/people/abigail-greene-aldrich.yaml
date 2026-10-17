@@ -1,0 +1,30 @@
+public_id: "100162"
+name: Abigail Greene Aldrich
+given_name: Abigail Greene
+family_name: Aldrich
+kind: person
+birth: 1874-10-26
+death: 1948-04-05
+wikidata_id: Q306870
+metadata:
+  sources: [Wikidata Q306870 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/museum-of-modern-art
+    sources:
+      - accessed: 2026-10-09
+        property: P112
+        wikidata: Q188740
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q306870
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q306870
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q306870

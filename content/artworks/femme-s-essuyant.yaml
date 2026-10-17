@@ -1,0 +1,223 @@
+public_id: "100292"
+title: Femme s'essuyant
+creator: edgar-degas
+created: 1896/1898
+kind: pastel
+medium: Pastel on cardboard
+dimensions: [66, 61]
+institution: kunsthaus-zurich
+inventory_number: BU 0033
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: artist/edgar-degas
+    role: estate
+    acquired: 1917-09-27
+    ended: 1918-05-08 or earlier
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Auktion Galerie Georges Petit (06.05.-08.05.1918), No. 151 (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1918-05-06
+    ended: 1918-05-08
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 151
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/alphonse-kann
+    acquired: 1918-05-08
+    ended: 1941-07-12
+    method: purchase
+    direct: true
+    place: saint-germain-en-laye
+    label: St-Germain-en-Laye, London
+    price:
+      amount: 15000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Wie oben Fussnote 2; Musée d'Orsay, Dokumentation, Kopie des annotierten Auktionskatalogs; Kat. Stedelijk Museum Amsterdam 1938, No. 111."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    acquired: 1941-07-12
+    method: confiscation
+    direct: true
+    place: paris
+    label: ERR no. Ka 19
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Übernommen im Auftrag von Hermann Göring durch Walter Andreas Hofer. Das Pastell trägt auf der Rückseite die Aufschrift «Ka 19», die Nummer, die der ERR den beschlagnahmten Bildern aus der Kann-Sammlung gab. Diese Aufschrift ermöglicht seine Identifizierung im Kann-Inventar, Barch Koblenz B323 273, S. 79."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/walter-andreas-hofer
+    role: agent
+    acquired: 1941
+    ended: 1941
+    direct: true
+    label: on behalf of Hermann Göring
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/hermann-goring
+    role: possessor
+    acquired: 1941
+    ended: 1941
+    direct: true
+    label: taken over from the ERR
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/hans-wendland
+    role: possessor
+    ended: 1941-10-22
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Francini/Heuss/Kreis 2001, S. 286: Wendland hatte 1/3 an den Bildern Fischers."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-fischer
+    role: possessor
+    acquired: 1941-10-22
+    ended: 1949-07-07
+    method: exchange
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: An die Galerie Fischer im Tausch gegen Kunstwerke. Francini/Heuss/Kreis 2001, S. 286 (No. *1). Laut dem Bericht CIR#2 (The Goering Collection) der Art Looting Investigation Unit (ALIU), S. 130, zitiert in Yeide 2009, No. D47, «Ka19» war Teil desselben Loses, wie der ebenfalls aus der Sammlung Kann beschlagnahmte Manet, Toilette («Ka 20»), der am 22.10.1941 nach Luzern gebracht und anschliessend vo…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/kunstmuseum-bern
+    role: custodian
+    acquired: 1945-11-16
+    ended: 1949-07-07
+    direct: true
+    place: bern
+    label: safekeeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Archiv Kunstmuseum Bern, Kopie eines Schreibens von Theodor Fischer, Luzern, an das Eidgenössische Politische Departement, Abteilung für Auswärtiges, Bern, vom 10.11.1945, in dem er sich bereit erklärt, 37 bei der Galerie in Luzern unverkauft gebliebene Werke französischer Impressionisten im Kunstmuseum Bern zu deponieren; das vorliegende Werk ist No. 11 in der beiliegenden Liste; Brief von Theodo…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/alphonse-kann
+    role: estate
+    acquired: 1949-07-07
+    method: restitution
+    direct: true
+    place: london
+    label: London, Paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Schweizerisches Bundesgericht, Lausanne, Kammer zur Beurteilung von Raubgutklagen, Urteil vom 07.07.1949, betreffend dem Gesuch um Rückgabe von Gemälden aus dem Nachlass von Alphonse Kann gegen Theodor Fischer, mit dem die Rückgabe der beanspruchten Bilder angeordnet wird, darunter Degas, Femme s'essuyant. Die im Archiv des Kunstmuseums Bern aufbewahrte Kopie dieses Urteils enthält handschriftlich…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/arthur-kauffmann
+    role: custodian
+    ended: 26 April 1951 or later
+    direct: true
+    place: london
+    label: safekeeping
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: AStEGB, Eingangsbuch I, 06.06.1951; Brief von Dr. Arthur Kauffmann, London, an Emil Bührle, 26.04.1951, betreffend Madame Camus von Degas, damals im Depot von Kauffmann, mit einer Passage, die sich höchstwahrscheinlich auf das vorliegende Pastell aus dem Nachlass Kann bezieht."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1951-06-06
+    direct: true
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Wie oben Fussnote 12."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-06-06
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        note: "Footnote: Wie oben Fussnote 12; mit Angabe des Kaufdatums."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 33
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "33"
+    institution: foundation-e-g-buhrle-collection
+  - number: "1263"
+    label: Lemoisne (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/703960/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

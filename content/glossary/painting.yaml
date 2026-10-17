@@ -1,0 +1,11 @@
+public_id: "100384"
+name_lang: en
+name: painting
+names:
+  - lang: de
+    role: translation
+    text: Gemälde
+  - lang: de
+    role: translation
+    text: Malerei
+category: object type

@@ -1,6 +1,160 @@
+public_id: "100049"
 name: Claude Monet
+given_name: Claude
+family_name: Monet
 birth: 1840-11-14
 death: 1926-12-05
 wikidata_id: Q296
 metadata:
   sources: [Wikidata Q296 (retrieved 2026-10-05)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-12
+        property: P27
+        wikidata: Q296
+  - type: born_in
+    to: place/paris
+    sources:
+      - url: https://d-nb.info/gnd/11858345X
+        source: gnd
+        accessed: 2026-10-12
+      - accessed: 2026-10-13
+        property: P19
+        wikidata: Q296
+      - url: https://rkd.nl/en/explore/artists/56860
+        source: rkd
+        accessed: 2026-10-13
+      - url: https://id.loc.gov/authorities/names/n79055527.html
+        source: lc
+        accessed: 2026-10-13
+  - type: died_in
+    to: place/giverny
+    sources:
+      - url: https://d-nb.info/gnd/11858345X
+        source: gnd
+        accessed: 2026-10-12
+      - accessed: 2026-10-13
+        property: P20
+        wikidata: Q296
+      - url: https://rkd.nl/en/explore/artists/56860
+        source: rkd
+        accessed: 2026-10-13
+      - url: https://id.loc.gov/authorities/names/n79055527.html
+        source: lc
+        accessed: 2026-10-13
+  - type: lived_in
+    to: place/argenteuil
+    period: 1878
+    period_label: until 1878
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q296
+  - type: lived_in
+    to: place/vetheuil
+    period: 1878
+    period_label: from 1878
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q296
+  - type: lived_in
+    to: place/villa-saint-louis
+    period: 1881-12/1883-04
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q296
+  - type: lived_in
+    to: place/giverny
+    period: 1883/1926
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q296
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q296
+  - type: influenced_by
+    to: artist/edouard-manet
+    sources:
+      - accessed: 2026-10-15
+        property: P737
+        wikidata: Q296
+  - type: influenced_by
+    to: artist/gustave-courbet
+    sources:
+      - accessed: 2026-10-15
+        property: P737
+        wikidata: Q296
+  - type: influenced_by
+    to: artist/j-m-w-turner
+    sources:
+      - accessed: 2026-10-15
+        property: P737
+        wikidata: Q296
+  - type: influenced_by
+    to: artist/jean-francois-millet
+    sources:
+      - accessed: 2026-10-15
+        property: P737
+        wikidata: Q296
+  - type: influenced_by
+    to: artist/katsushika-hokusai
+    sources:
+      - accessed: 2026-10-15
+        property: P737
+        wikidata: Q296
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-13
+        property: P69
+        wikidata: Q296
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-13
+        property: P135
+        wikidata: Q296
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Claude_Monet_1899_Nadar_crop.jpg/1280px-Claude_Monet_1899_Nadar_crop.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_1899_Nadar_crop.jpg
+    license: Public domain
+    credit: Nadar
+identifiers:
+  bnf: 11916491r
+  gnd: 11858345X
+  idref: "027329739"
+  kulturnav: 37de77b4-4828-4d49-b1ff-99e8eafdf26b
+  lc: n79055527
+  nlk: KAC199619147
+  rkd: "56860"
+  ulan: "500019484"
+  viaf: "24605513"
+sources:
+  birth:
+    - accessed: 2026-10-05
+      property: P569
+      wikidata: Q296
+    - url: https://d-nb.info/gnd/11858345X
+      source: gnd
+      accessed: 2026-10-12
+    - url: https://id.loc.gov/authorities/names/n79055527.html
+      source: lc
+      accessed: 2026-10-13
+  death:
+    - accessed: 2026-10-05
+      property: P570
+      wikidata: Q296
+    - url: https://d-nb.info/gnd/11858345X
+      source: gnd
+      accessed: 2026-10-12
+    - url: https://id.loc.gov/authorities/names/n79055527.html
+      source: lc
+      accessed: 2026-10-13

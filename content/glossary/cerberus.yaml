@@ -1,0 +1,26 @@
+public_id: "100076"
+name: Cerberus
+names:
+  - lang: grc
+    role: original
+    text: Κέρβερος
+  - lang: fr
+    role: translation
+    text: Cerbère
+  - lang: it
+    role: translation
+    text: Cerbero
+category: technique
+definition: three-headed dog that guards the underworld in Greek mythology
+wikidata_id: Q83496
+metadata:
+  sources: [Wikidata Q83496 (retrieved 2026-10-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/25/Cerberus-Blake.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Cerberus-Blake.jpeg
+    license: Public domain
+    credit: William Blake
+sources:
+  definition:
+    - accessed: 2026-10-06
+      wikidata: Q83496

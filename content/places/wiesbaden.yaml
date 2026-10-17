@@ -1,0 +1,35 @@
+public_id: "100586"
+name: Wiesbaden
+names:
+  - lang: ja
+    role: translation
+    text: ヴィースバーデン
+  - lang: zh
+    role: translation
+    text: 威斯巴登
+  - lang: ko
+    role: translation
+    text: 비스바덴
+  - lang: ru
+    role: translation
+    text: Висбаден
+kind: settlement
+parent: germany
+country_code: DE
+location: [8.24, 50.0825]
+wikidata_id: Q1721
+metadata:
+  sources: [Wikidata Q1721 (retrieved 2026-10-17)]
+sources:
+  kind:
+    - accessed: 2026-10-17
+      property: P31
+      wikidata: Q1721
+  parent:
+    - accessed: 2026-10-17
+      property: P131
+      wikidata: Q1721
+  location:
+    - accessed: 2026-10-17
+      property: P625
+      wikidata: Q1721

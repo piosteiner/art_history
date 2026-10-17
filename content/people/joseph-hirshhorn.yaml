@@ -1,0 +1,38 @@
+public_id: "100148"
+name: Joseph Hirshhorn
+given_name: Joseph
+family_name: Hirshhorn
+names: [Joseph H. Hirshhorn, Joseph Herman Hirshhorn]
+kind: person
+occupations: [art collector, stockbroker, entrepreneur]
+birth: 1899-08-11
+death: 31 August 1981
+wikidata_id: Q4578324
+metadata:
+  sources: [Wikidata Q4578324 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/hirshhorn-museum-and-sculpture-garden
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/12/Joseph_Herman_Hirshhorn_%281978%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Herman_Hirshhorn_(1978).jpg
+    license: Public domain
+    credit: Richard K. Hofmeister
+identifiers:
+  gnd: "119261588"
+  rkd: "467329"
+  ulan: "500319551"
+  viaf: "98513493"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q4578324
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q4578324
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q4578324

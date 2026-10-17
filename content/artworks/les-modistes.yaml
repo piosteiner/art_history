@@ -1,0 +1,118 @@
+public_id: "100296"
+title: Les Modistes
+creator: paul-signac
+created: 1885/1886
+kind: oil painting
+medium: Oil on canvas
+dimensions: [116, 89]
+institution: kunsthaus-zurich
+inventory_number: BU 0096
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: artist/paul-signac
+    role: estate
+    acquired: 1935-08-15
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+        note: "Footnote: Cachin/Ferretti-Bocquillon 2000, No. 111."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/ginette-cachin-signac
+    ended: 1954
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+        note: "Footnote: AStEGB, Brief von F. K. Lloyd, Marlborough Fine Art Ltd., London, an Emil Bührle, 09.03.1954, in dem er das Gemälde, das sich damals noch im Besitz der Familie des Künstlers befand, anbietet und versichert, dass er das Recht hat, das Gemälde nur an ein Museum zu verkaufen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    acquired: 1954
+    ended: 1954-03-22
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+        note: "Footnote: Brief, wie oben Fussnote 3, und bestätigt von Marlborough International Fine Art, 24.08.2012; AStEGB, Rechnung von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], ausgestellt auf Emil Bührle, 22.03.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-03-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 110000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+        note: "Footnote: Rechnung, wie oben Fussnote 4, mit Stempel «Gut zur Zahlung», paraphiert von Emil Bührle."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 96
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "96"
+    institution: foundation-e-g-buhrle-collection
+  - number: "111"
+    label: Cachin (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752008/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

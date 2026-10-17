@@ -1,0 +1,11 @@
+public_id: "100396"
+name_lang: en
+name: cardboard
+names:
+  - lang: de
+    role: translation
+    text: Karton
+  - lang: de
+    role: translation
+    text: Pappe
+category: material

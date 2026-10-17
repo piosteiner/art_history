@@ -1,0 +1,33 @@
+public_id: "100152"
+name: Clark Art Institute
+names: [Sterling & Francine Clark Art Institute, Sterling and Francine Clark Art Institute, The Clark, Clark Art Museum]
+founded: 1955
+place: williamstown
+location: [-73.2136, 42.7078]
+website_url: http://www.clarkart.edu/
+wikidata_id: Q1465805
+metadata:
+  sources: [Wikidata Q1465805 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Clark_Art_Institute%2C_Williamstown%2C_MA_-_main_entrance.JPG/1280px-Clark_Art_Institute%2C_Williamstown%2C_MA_-_main_entrance.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Clark_Art_Institute,_Williamstown,_MA_-_main_entrance.JPG
+    license: Public domain
+    credit: Daderot
+identifiers:
+  gnd: 1056275-8
+  lc: n78096939
+  ulan: "500125194"
+  viaf: "145164344"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q1465805
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q1465805
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q1465805

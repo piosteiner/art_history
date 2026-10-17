@@ -1,0 +1,16 @@
+public_id: "100245"
+name: Delft
+kind: settlement
+location: [4.35917, 52.01167]
+wikidata_id: Q690
+metadata:
+  sources: [Wikidata Q690 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q690
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q690

@@ -1,0 +1,53 @@
+public_id: "100223"
+name: Charles Gleyre
+given_name: Charles
+family_name: Gleyre
+birth: 1806-05-02
+death: 1874-05-05
+wikidata_id: Q452119
+metadata:
+  sources: [Wikidata Q452119 (retrieved 2026-10-13)]
+relationships:
+  - type: born_in
+    to: place/chevilly
+    sources:
+      - accessed: 2026-10-13
+        property: P19
+        wikidata: Q452119
+  - type: died_in
+    to: place/palais-bourbon
+    sources:
+      - accessed: 2026-10-13
+        property: P20
+        wikidata: Q452119
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q452119
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/95/Gleyre_-_Self_portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gleyre_-_Self_portrait.jpg
+    license: Public domain
+    credit: Charles Gleyre
+identifiers:
+  bnf: 14974832h
+  dodis: P68682
+  gnd: "118717766"
+  hls: "021882"
+  idref: "050549154"
+  lc: n80067420
+  rkd: "32125"
+  sikart: "4022808"
+  ulan: "500115734"
+  viaf: "59878964"
+sources:
+  birth:
+    - accessed: 2026-10-13
+      property: P569
+      wikidata: Q452119
+  death:
+    - accessed: 2026-10-13
+      property: P570
+      wikidata: Q452119

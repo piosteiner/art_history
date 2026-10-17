@@ -1,0 +1,18 @@
+public_id: "100498"
+name: Caspar David Friedrich
+given_name: Caspar David
+family_name: Friedrich
+birth: 1774-09-05
+death: 1840-05-07
+wikidata_id: Q104884
+metadata:
+  sources: [Wikidata Q104884 (retrieved 2026-10-16)]
+sources:
+  birth:
+    - accessed: 2026-10-16
+      property: P569
+      wikidata: Q104884
+  death:
+    - accessed: 2026-10-16
+      property: P570
+      wikidata: Q104884

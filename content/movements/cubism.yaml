@@ -1,0 +1,16 @@
+public_id: "100250"
+name: cubism
+kind: movement
+period: 1907
+wikidata_id: Q42934
+metadata:
+  sources: [Wikidata Q42934 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q42934
+  period:
+    - accessed: 2026-10-13
+      property: P580
+      wikidata: Q42934

@@ -1,0 +1,23 @@
+public_id: "100204"
+name: Baroque
+names:
+  - lang: de
+    role: translation
+    text: Barock
+kind: movement
+period: 1501/1759
+wikidata_id: Q37853
+metadata:
+  sources: [Wikidata Q37853 (retrieved 2026-10-09)]
+identifiers:
+  gnd: 4004541-9
+  hls: "011182"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q37853
+  period:
+    - accessed: 2026-10-12
+      property: P580
+      wikidata: Q37853

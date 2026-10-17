@@ -1,0 +1,53 @@
+public_id: "100129"
+name: Ferdinand Hodler
+given_name: Ferdinand
+family_name: Hodler
+birth: 1853-03-14
+death: 1918-05-19
+wikidata_id: Q214564
+metadata:
+  sources: [Wikidata Q214564 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-12
+        property: P27
+        wikidata: Q214564
+  - type: influenced_by
+    to: artist/gustave-courbet
+    sources:
+      - accessed: 2026-10-12
+        property: P737
+        wikidata: Q214564
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Hodler_-_Selbstbildnis_mit_Stehkragen_-_1879.jpeg/1280px-Hodler_-_Selbstbildnis_mit_Stehkragen_-_1879.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Hodler_-_Selbstbildnis_mit_Stehkragen_-_1879.jpeg
+    license: Public domain
+    credit: Ferdinand Hodler
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/74/Selbstbildnis_mit_aufgerissenen_Augen_III_%281912%29_-_Ferdinand_Hodler.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Selbstbildnis_mit_aufgerissenen_Augen_III_(1912)_-_Ferdinand_Hodler.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+identifiers:
+  gnd: "118551817"
+  lc: n50031263
+  rkd: "38688"
+  sikart: "4000055"
+  ulan: "500027184"
+  viaf: "41848532"
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q214564
+    - url: https://recherche.sik-isea.ch/sik:person-4000055/in/sikart
+      source: sikart
+      accessed: 2026-10-12
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q214564
+    - url: https://recherche.sik-isea.ch/sik:person-4000055/in/sikart
+      source: sikart
+      accessed: 2026-10-12

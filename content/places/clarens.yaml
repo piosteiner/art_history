@@ -1,0 +1,22 @@
+public_id: "100492"
+name: Clarens
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [6.894, 46.442]
+wikidata_id: Q178508
+metadata:
+  sources: [Wikidata Q178508 (retrieved 2026-10-16)]
+sources:
+  kind:
+    - accessed: 2026-10-16
+      property: P31
+      wikidata: Q178508
+  parent:
+    - accessed: 2026-10-16
+      property: P131
+      wikidata: Q178508
+  location:
+    - accessed: 2026-10-16
+      property: P625
+      wikidata: Q178508

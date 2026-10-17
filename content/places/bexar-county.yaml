@@ -1,0 +1,16 @@
+public_id: "100122"
+name: Bexar County
+kind: site
+location: [-98.52, 29.45]
+wikidata_id: Q16861
+metadata:
+  sources: [Wikidata Q16861 (retrieved 2026-10-08)]
+sources:
+  kind:
+    - accessed: 2026-10-08
+      property: P31
+      wikidata: Q16861
+  location:
+    - accessed: 2026-10-08
+      property: P625
+      wikidata: Q16861

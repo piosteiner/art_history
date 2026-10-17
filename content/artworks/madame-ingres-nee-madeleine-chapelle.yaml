@@ -1,0 +1,152 @@
+public_id: "100281"
+title: Madame Ingres, née Madeleine Chapelle
+creator: jean-auguste-dominique-ingres
+created: c. 1814
+kind: oil painting
+medium: Oil on canvas
+dimensions: [70, 57]
+institution: kunsthaus-zurich
+inventory_number: BU 0136
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/jeanne-sophie-dubreuil
+    place: gueret
+    label: née Chapelle
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: "Footnote: Die Schwester der Dargestellten; Wildenstein 1954, Nr. 107."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner_label: Mingasson
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: "Footnote: Ein Nachkomme der oben Genannten; wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/henry-lapauze
+    acquired: 1910
+    ended: 1925-04-09
+    method: purchase
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: "Footnote: Lapauze 1911, S. 168, Nr. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/henry-lapauze
+    role: estate
+    acquired: 1925-04-09
+    ended: 1929-06-21
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: "Footnote: Auktion Hôtel Drouot, Paris (21. Juni 1929), Nr. 53."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/hotel-drouot
+    role: agent
+    acquired: 1929-06-21
+    ended: 1929-06-21
+    method: auction
+    direct: true
+    place: paris
+    label: Lot 53
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1929-06-21
+    ended: 1952-12-02
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York, NY
+    price:
+      amount: 18500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: "Footnote: Archiv Paul Rosenberg Gallery, New York, Inventarverzeichnis, September 1952, S. 2-3, das als Kaufpreis den Gegenwert von 18.500 USD angibt; AStEGB, Brief von Paul Rosenberg, New York, an Emil Bührle, 22.09.1952, mit Einzelrechnungen für 10 Bilder, die Bührle von ihm erworben hat, darunter Ingres, Mme Ingres."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-12-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 58500
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        note: "Footnote: Erworben für 65.000 USD abzüglich 10% Rabatt (6.500 USD) = 58.500 USD, AStEGB, Rechnung von Paul Rosenberg, New York, ausgestellt auf Emil Bührle, 22.09.1952; Brief von Paul Rosenberg, New York, an Emil Bührle, 02.12.1952, mit der Bestätigung des Eingangs von 157. 500 USD für 3 Gemälde aus der 10er-Gruppe, darunter Ingres, Mme Ingres; Korrespondenz über die Einfuhr der 10 Bilder in die Schweiz, 12…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 136
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "136"
+    institution: foundation-e-g-buhrle-collection
+  - number: "107"
+    label: Wildenstein Ingres (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

@@ -1,0 +1,27 @@
+public_id: "100154"
+name: Clendenin J. Ryan
+given_name: Clendenin J.
+family_name: Ryan
+names: [Clendenin James Ryan, Clendenin James Ryan Sr.]
+kind: person
+birth: 1881
+death: 1939-08-20
+wikidata_id: Q75838072
+metadata:
+  sources: [Wikidata Q75838072 (retrieved 2026-10-09)]
+identifiers:
+  lc: no2003006110
+  viaf: "66151605"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q75838072
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q75838072
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q75838072

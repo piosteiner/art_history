@@ -1,0 +1,57 @@
+public_id: "100471"
+title_lang: en
+title: Self Portrait (dedicated to Paul Gauguin)
+creator: vincent-van-gogh
+created: 1888-09
+kind: oil painting
+materials: [oil paint, canvas]
+dimensions: [61.5, 50.3]
+institution: fogg-museum
+inventory_number: "1951.65"
+web_url: http://emuseum.campus.fu-berlin.de/eMuseumPlus?service=ExternalInterface&module=collection&objectId=113962&viewType=detailView
+wikidata_id: Q3643629
+metadata:
+  sources: [Wikidata Q3643629 (retrieved 2026-10-16)]
+relationships:
+  - type: created_in
+    to: place/arles
+    sources:
+      - accessed: 2026-10-16
+        property: P1071
+        wikidata: Q3643629
+  - type: depicts_person
+    to: artist/vincent-van-gogh
+    sources:
+      - accessed: 2026-10-16
+        property: P180
+        wikidata: Q3643629
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Van_Gogh_self-portrait_dedicated_to_Gauguin.jpg/1280px-Van_Gogh_self-portrait_dedicated_to_Gauguin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_self-portrait_dedicated_to_Gauguin.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Vincent_van_Gogh_-_Zelfportret_%28Van_Gogh_%26_Japan%29.jpg/1280px-Vincent_van_Gogh_-_Zelfportret_%28Van_Gogh_%26_Japan%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Zelfportret_(Van_Gogh_%26_Japan).jpg
+    license: Public domain
+    credit: Vincent van Gogh
+sources:
+  created:
+    - accessed: 2026-10-16
+      property: P571
+      wikidata: Q3643629
+  creator:
+    - accessed: 2026-10-16
+      property: P170
+      wikidata: Q3643629
+  dimensions:
+    - accessed: 2026-10-16
+      property: P2048
+      wikidata: Q3643629
+  institution:
+    - accessed: 2026-10-16
+      property: P195
+      wikidata: Q3643629
+  inventory_number:
+    - accessed: 2026-10-16
+      property: P217
+      wikidata: Q3643629

@@ -1,6 +1,21 @@
+public_id: "100051"
 name: Onchi Kōshirō
+birth: 1891-07-02
+death: 1955-06-03
+wikidata_id: Q2038322
+metadata:
+  sources: [Wikidata Q2038322 (retrieved 2026-10-05)]
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d7/Onchi_Koshiro.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Onchi_Koshiro.JPG
     license: Public domain
     credit: 朝日新聞社
+sources:
+  birth:
+    - accessed: 2026-10-05
+      property: P569
+      wikidata: Q2038322
+  death:
+    - accessed: 2026-10-05
+      property: P570
+      wikidata: Q2038322

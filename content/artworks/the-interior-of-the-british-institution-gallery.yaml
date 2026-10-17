@@ -1,0 +1,35 @@
+public_id: "100168"
+title_lang: en
+title: The Interior of the British Institution Gallery
+creator: john-scarlett-davis
+created: 1829
+materials: [oil paint, canvas]
+dimensions: [113, 142.2]
+institution: yale-center-for-british-art
+inventory_number: B1981.25.212
+web_url: https://collections.britishart.yale.edu/catalog/tms:722
+wikidata_id: Q23759362
+metadata:
+  sources: [Wikidata Q23759362 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/John_Scarlett_Davis_-_The_Interior_of_the_British_Institution_Gallery_-_Google_Art_Project.jpg/1280px-John_Scarlett_Davis_-_The_Interior_of_the_British_Institution_Gallery_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:John_Scarlett_Davis_-_The_Interior_of_the_British_Institution_Gallery_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: John Scarlett Davis
+sources:
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q23759362
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q23759362
+  dimensions:
+    - accessed: 2026-10-09
+      property: P2048
+      wikidata: Q23759362
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q23759362

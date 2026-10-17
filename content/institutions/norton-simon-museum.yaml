@@ -1,0 +1,42 @@
+public_id: "100158"
+name: Norton Simon Museum
+names: [Pasadena Art Museum, Pasadena Art Institute]
+founded: 1942
+place: pasadena
+location: [-118.15916, 34.14623]
+address: 411 West Colorado Boulevard
+website_url: https://www.nortonsimon.org/
+wikidata_id: Q1752085
+metadata:
+  sources: [Wikidata Q1752085 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Norton_Simon_Museum_Pasadena_CA_%2851081778692%29.jpg/1280px-Norton_Simon_Museum_Pasadena_CA_%2851081778692%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Norton_Simon_Museum_Pasadena_CA_(51081778692).jpg
+    license: CC BY 2.0
+    credit: Tony Mariotti from Los Angeles, United States
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/View_of_the_Norton_Simon_Museum.jpg/1280px-View_of_the_Norton_Simon_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:View_of_the_Norton_Simon_Museum.jpg
+    license: CC0
+    credit: Alexis Doine
+identifiers:
+  gnd: 1080843-7
+  lc: n80125907
+  ulan: "500310865"
+  viaf: "146046274"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q1752085
+  address:
+    - accessed: 2026-10-09
+      property: P6375
+      wikidata: Q1752085
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q1752085
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q1752085

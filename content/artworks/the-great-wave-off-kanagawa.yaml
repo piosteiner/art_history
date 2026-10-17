@@ -1,3 +1,4 @@
+public_id: "100010"
 title_lang: en
 title: The Great Wave off Kanagawa
 names:
@@ -30,3 +31,8 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa_LCCN2008660568.jpg
     license: Public domain
     credit: Katsushika, Hokusai, 1760-1849, artist
+sources:
+  inventory_number:
+    - accessed: 2026-10-01
+      property: P217
+      wikidata: Q252485

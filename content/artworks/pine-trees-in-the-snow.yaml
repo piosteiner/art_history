@@ -1,3 +1,4 @@
+public_id: "100062"
 title_lang: en
 title: Pine Trees in the Snow
 creator: maruyama-okyo
@@ -17,3 +18,20 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Okyo_Pines_left.jpg
     license: Public domain
     credit: Maruyama Ōkyo
+sources:
+  creator:
+    - accessed: 2026-10-05
+      property: P170
+      wikidata: Q107045354
+  materials:
+    - accessed: 2026-10-05
+      property: P186
+      wikidata: Q107045354
+  dimensions:
+    - accessed: 2026-10-05
+      property: P2048
+      wikidata: Q107045354
+  institution:
+    - accessed: 2026-10-05
+      property: P195
+      wikidata: Q107045354

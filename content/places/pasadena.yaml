@@ -1,0 +1,16 @@
+public_id: "100157"
+name: Pasadena
+kind: settlement
+location: [-118.14389, 34.1475]
+wikidata_id: Q485176
+metadata:
+  sources: [Wikidata Q485176 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q485176
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q485176

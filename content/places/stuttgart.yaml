@@ -1,0 +1,41 @@
+public_id: "100589"
+name: Stuttgart
+names:
+  - lang: ja
+    role: translation
+    text: シュトゥットガルト
+  - lang: zh
+    role: translation
+    text: 斯图加特
+  - lang: ko
+    role: translation
+    text: 슈투트가르트
+  - lang: it
+    role: translation
+    text: Stoccarda
+  - lang: ru
+    role: translation
+    text: Штутгарт
+  - lang: pt
+    role: translation
+    text: Estugarda
+kind: settlement
+parent: germany
+country_code: DE
+location: [9.18, 48.7775]
+wikidata_id: Q1022
+metadata:
+  sources: [Wikidata Q1022 (retrieved 2026-10-17)]
+sources:
+  kind:
+    - accessed: 2026-10-17
+      property: P31
+      wikidata: Q1022
+  parent:
+    - accessed: 2026-10-17
+      property: P131
+      wikidata: Q1022
+  location:
+    - accessed: 2026-10-17
+      property: P625
+      wikidata: Q1022

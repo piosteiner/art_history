@@ -1,0 +1,35 @@
+public_id: "100379"
+name: Meersburg
+names:
+  - lang: ja
+    role: translation
+    text: メールスブルク
+  - lang: zh
+    role: translation
+    text: 梅尔斯堡
+  - lang: ko
+    role: translation
+    text: 메어스부르크
+  - lang: ru
+    role: translation
+    text: Мерсбург
+kind: settlement
+parent: germany
+country_code: DE
+location: [9.27083, 47.69583]
+wikidata_id: Q498212
+metadata:
+  sources: [Wikidata Q498212 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q498212
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q498212
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q498212

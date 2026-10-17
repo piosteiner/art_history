@@ -1,0 +1,29 @@
+public_id: "100478"
+name: Irène Cahen d'Anvers
+given_name: Irène
+family_name: Cahen d'Anvers
+kind: person
+birth: 1872-09-20
+death: 1963-11-25
+description_md: French girl painted by Renoir, family killed by Nazis because of Jewish heritage (1872-1963) ([Quelle - Wikidata](https://www.wikidata.org/wiki/Q109293376))
+wikidata_id: Q109293376
+metadata:
+  sources: [Wikidata Q109293376 (retrieved 2026-10-16)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Pierre-Auguste_Renoir%2C_1880%2C_Portrait_of_Mademoiselle_Ir%C3%A8ne_Cahen_d%27Anvers%2C_Sammlung_E.G._B%C3%BChrle.jpg/1280px-Pierre-Auguste_Renoir%2C_1880%2C_Portrait_of_Mademoiselle_Ir%C3%A8ne_Cahen_d%27Anvers%2C_Sammlung_E.G._B%C3%BChrle.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir,_1880,_Portrait_of_Mademoiselle_Ir%C3%A8ne_Cahen_d%27Anvers,_Sammlung_E.G._B%C3%BChrle.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+sources:
+  kind:
+    - accessed: 2026-10-16
+      property: P31
+      wikidata: Q109293376
+  birth:
+    - accessed: 2026-10-16
+      property: P569
+      wikidata: Q109293376
+  death:
+    - accessed: 2026-10-16
+      property: P570
+      wikidata: Q109293376

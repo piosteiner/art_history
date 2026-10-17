@@ -1,0 +1,291 @@
+public_id: "100501"
+title_lang: de
+title: Der Wanderer über dem Nebelmeer
+creator: caspar-david-friedrich
+created: c. 1817
+kind: oil painting
+medium: oil on canvas
+materials: [oil paint, canvas]
+dimensions: [94.8, 74.8]
+institution: hamburger-kunsthalle
+inventory_number: HK-5161
+web_url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+on_loan: true
+on_loan_since: 1970-12
+provenance_status: c_indications
+provenance_status_note: 'Hamburger Kunsthalle: "ungeklärt, bedenklich" (unresolved, questionable) — research ongoing; gaps between Friedrich and 1938 and around 1949–1957.'
+wikidata_id: Q311243
+metadata:
+  sources: [Wikidata Q311243 (retrieved 2026-10-16)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Friedrich%2C_Caspar_David_-_Wanderer_%C3%BCber_dem_Nebelmeer.jpg/1280px-Friedrich%2C_Caspar_David_-_Wanderer_%C3%BCber_dem_Nebelmeer.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Friedrich,_Caspar_David_-_Wanderer_%C3%BCber_dem_Nebelmeer.jpg
+    license: Public domain
+    credit: Caspar David Friedrich
+provenance:
+  - owner: artist/caspar-david-friedrich
+    acquired: c. 1817
+    method: creation
+    direct: true
+    notes_md: "When, to whom and how Friedrich sold or passed on the work is unknown; the date is not secure — the work is neither signed nor dated. Detailed report: [[source/bauer-haug-2024|Bauer/Haug 2024]]."
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 1
+        accessed: 2026-10-17
+  - owner: institution/galerie-dr-wilhelm-august-luz
+    role: dealer
+    acquired: July 1938 or earlier
+    ended: 1938-10
+    place: berlin
+    label: "shown to art historians in July–August 1938 (Jähnig, Hanfstaengl, Grote, Oertel): Friedrich or Carl Gustav Carus?"
+    notes_md: "Karl Wilhelm Jähnig to Luz, 16 July 1938: an important autograph work by Friedrich (Deutsches Kunstarchiv, Nürnberg, Nachlass Gosebruch). Sources before 1938 unknown (the museum's note 2)."
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 3
+        accessed: 2026-10-17
+  - owner: person/ernst-henke
+    further_places: [siegen]
+    acquired: 1938-10
+    method: purchase
+    direct: true
+    place: essen
+    label: bought from Galerie Luz; label on the stretcher "Bes. Assessor Henke Essen"
+    certainty: probable
+    price:
+      amount: 60000
+      currency: RM
+      note: Henke's file card
+    notes_md: Stored during the war near Siegen with works of the Museum Folkwang. Handed back after the Allied custody, probably in August 1948; a grandson recalls it still in the house after 1951, but a data sheet (probably Jähnig's) has it leave the collection by December 1949.
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 4
+        accessed: 2026-10-17
+  - owner: institution/marburg-central-collecting-point
+    role: custodian
+    numbers:
+      - kind: other
+        number: MAR 1024
+    acquired: 1945-06-04
+    ended: 1946-06-06
+    method: confiscation
+    direct: true
+    place: marburg
+    label: seized by the Allies; inventoried as "German about 1810 C. D. Friedrich?"
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 4
+        accessed: 2026-10-17
+  - role: event
+    acquired: 1946-04
+    place: marburg
+    label: 'first shown in public: exhibition "Masterpieces", exhibition room of the Hessisches Staatsarchiv, Marburg'
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 4
+        accessed: 2026-10-17
+  - owner: institution/wiesbaden-central-collecting-point
+    role: custodian
+    acquired: 1946-06-06
+    ended: 1947-09-09
+    method: transfer
+    direct: true
+    place: wiesbaden
+    label: taken to the CCP Wiesbaden
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 4
+        accessed: 2026-10-17
+  - role: event
+    numbers:
+      - kind: catalogue
+        number: "9"
+    acquired: 1947-04
+    place: wiesbaden
+    label: exhibition "Deutsche Malerei des 19. Jahrhunderts", CCP Wiesbaden — as Carl Gustav Carus, "Wanderer am Abgrund", listed as a loan from the Museum Folkwang
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 4
+        accessed: 2026-10-17
+  - owner: institution/mfaa-british-zone-dusseldorf
+    role: custodian
+    acquired: 1947-09-09
+    ended: 1948-08
+    method: transfer
+    direct: true
+    place: dusseldorf
+    label: handed to the British MFA&A
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 4
+        accessed: 2026-10-17
+  - owner: person/ernst-henke
+    acquired: 1948-08
+    ended: 1949 or later
+    method: restitution
+    direct: true
+    place: essen
+    label: handed back to Henke after the Allied custody
+    certainty: probable
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 4
+        accessed: 2026-10-17
+  - owner: institution/galerie-dr-wilhelm-august-luz
+    role: agent
+    acquired: 1949
+    ended: 1949
+    place: berlin
+    label: "to sell it again, probably for Henke: offered to the Hamburger Kunsthalle in July 1949 (declined by Carl Georg Heise) and to the Kunstsammlungen der Stadt Düsseldorf (22 September 1949)"
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 5
+        accessed: 2026-10-17
+  - owner_label: Private collection, Bielefeld
+    acquired: 1957 or earlier
+    place: bielefeld
+    label: photograph in the Zentralinstitut für Kunstgeschichte, Munich, inventoried 1957 ("Privatbesitz Bielefeld"); between Henke and Bielefeld unknown (the museum's note 6)
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 7
+        accessed: 2026-10-17
+  - role: event
+    acquired: 1959
+    place: london
+    label: exhibition "The Romantic Movement" (Council of Europe), Tate Gallery, London — lent as "Privatbesitz Bielefeld"
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 7
+        accessed: 2026-10-17
+  - owner: person/paul-herzogenrath
+    role: dealer
+    place: bielefeld
+    label: no business records survive (his son Wulf Herzogenrath, 2022)
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 8
+        accessed: 2026-10-17
+  - owner: person/hugo-oberwelland
+    ended: 1970
+    method: purchase
+    direct: true
+    place: halle-westf
+    label: bought from Herzogenrath
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 9
+        accessed: 2026-10-17
+  - owner: institution/kunsthaus-buhler
+    role: agent
+    acquired: 1970-12
+    direct: true
+    place: stuttgart
+    label: sold it for Oberwelland (invoice of 9 December 1970); offered in 1970 also to the Nationalgalerie Berlin and the Staatsgalerie Stuttgart
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 10
+        accessed: 2026-10-17
+  - owner: institution/stiftung-hamburger-kunstsammlungen
+    acquired: 1970-12
+    method: purchase
+    direct: true
+    place: hamburg
+    label: bought as the Stiftung zur Förderung der Hamburgischen Kunstsammlungen, from Oberwelland through Kunsthaus Bühler; since then on permanent loan to the Hamburger Kunsthalle
+    price:
+      amount: 600000
+      currency: DEM
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 10
+        accessed: 2026-10-17
+  - owner_label: Dr. Oetker collection, Bielefeld
+    acquired: 1950
+    method: purchase
+    place: bielefeld
+    label: "Henke's file card: \"sold through [Ludwig] Grote for DM 20,000 to ? Oetker Bielefeld\"; the catalogue raisonné has it in \"Bielefeld, Slg. Dr. Oetker\" in 1950 — neither can be traced in the records of the Kunstsammlung Rudolf-August Oetker"
+    certainty: possible
+    price:
+      amount: 20000
+      currency: DEM
+      note: Henke's file card
+    sources:
+      - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161#provenienz
+        source: hamburger-kunsthalle-online-sammlung
+        locator: Provenienz, note 7
+        accessed: 2026-10-17
+      - note: as cited by the Hamburger Kunsthalle (note 7)
+        source: borsch-supan-jahnig-1973
+        locator: p. 349, no. 250
+    alternative_of: 10
+numbers:
+  - number: "250"
+    source: borsch-supan-jahnig-1973
+identifiers:
+  viaf: "295129252"
+sources:
+  kind:
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17
+  medium:
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17
+  created:
+    - accessed: 2026-10-16
+      property: P571
+      wikidata: Q311243
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17
+  creator:
+    - accessed: 2026-10-16
+      property: P170
+      wikidata: Q311243
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17
+  on_loan:
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17
+  dimensions:
+    - accessed: 2026-10-16
+      property: P2048
+      wikidata: Q311243
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17
+  institution:
+    - accessed: 2026-10-16
+      property: P195
+      wikidata: Q311243
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17
+  inventory_number:
+    - accessed: 2026-10-16
+      property: P217
+      wikidata: Q311243
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17
+  provenance_status:
+    - url: https://online-sammlung.hamburger-kunsthalle.de/de/objekt/HK-5161
+      source: hamburger-kunsthalle-online-sammlung
+      accessed: 2026-10-17

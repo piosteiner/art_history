@@ -1,0 +1,26 @@
+public_id: "100174"
+name: degenerate art
+names:
+  - lang: fr
+    role: translation
+    text: art dégénéré
+  - lang: it
+    role: translation
+    text: arte degenerata
+category: other
+definition: term used by the German Nazi regime to describe modern art
+description_md: Im Jahr 2026 erinnern die Forderungen und Formulierungen der AfD an die der NS-Zeit. [Tagesanzeiger](https://www.tagesanzeiger.ch/afd-in-sachsen-anhalt-angriff-auf-das-bauhaus-456388915953)
+wikidata_id: Q156460
+metadata:
+  sources: [Wikidata Q156460 (retrieved 2026-10-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Entartete_%22KUNST%22_Ausstellungsf%C3%BChrer_30_Pfg._Degenerate_art_Exhibition_catalogue_front_cover_1937_Nazi_Germany_Propaganda_Otto_Freundlich_Der_neue_Mensch_%28L%27Homme_nouveau%29_1912_No_known_copyright_restrictions_17-20_%283%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Entartete_%22KUNST%22_Ausstellungsf%C3%BChrer_30_Pfg._Degenerate_art_Exhibition_catalogue_front_cover_1937_Nazi_Germany_Propaganda_Otto_Freundlich_Der_neue_Mensch_(L%27Homme_nouveau)_1912_No_known_copyright_restrictions_17-20_(3).jpg
+    license: CC BY-SA 4.0
+    credit: Otto Freundlich
+identifiers:
+  gnd: 4152320-9
+sources:
+  definition:
+    - accessed: 2026-10-09
+      wikidata: Q156460

@@ -1,0 +1,37 @@
+public_id: "100150"
+name: Hirshhorn Museum and Sculpture Garden
+names: [HMSG, Hirshhorn Museum]
+founded: 1974
+place: washington-d-c
+location: [-77.02297, 38.88816]
+address: Independence Ave and 7th St, Washington, DC
+website_url: http://hirshhorn.si.edu/
+wikidata_id: Q1620553
+metadata:
+  sources: [Wikidata Q1620553 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Hirshhorn_Museum_DC_2007.jpg/1280px-Hirshhorn_Museum_DC_2007.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hirshhorn_Museum_DC_2007.jpg
+    license: Public domain
+    credit: Gryffindor
+identifiers:
+  gnd: 807186-X
+  lc: n78083445
+  viaf: "134801272"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q1620553
+  address:
+    - accessed: 2026-10-09
+      property: P6375
+      wikidata: Q1620553
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q1620553
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q1620553

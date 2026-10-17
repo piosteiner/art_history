@@ -1,0 +1,53 @@
+public_id: "100368"
+name: Venice
+names:
+  - lang: ja
+    role: translation
+    text: ヴェネツィア
+  - lang: zh
+    role: translation
+    text: 威尼斯
+  - lang: ko
+    role: translation
+    text: 베네치아
+  - lang: fr
+    role: translation
+    text: Venise
+  - lang: de
+    role: translation
+    text: Venedig
+  - lang: it
+    role: original
+    text: Venezia
+  - lang: nl
+    role: translation
+    text: Venetië
+  - lang: es
+    role: translation
+    text: Venecia
+  - lang: ru
+    role: translation
+    text: Венеция
+  - lang: pt
+    role: translation
+    text: Veneza
+kind: settlement
+parent: venezia
+country_code: IT
+location: [12.33194, 45.43972]
+wikidata_id: Q641
+metadata:
+  sources: [Wikidata Q641 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q641
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q641
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q641

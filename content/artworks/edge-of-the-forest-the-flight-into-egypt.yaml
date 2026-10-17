@@ -1,0 +1,45 @@
+public_id: "100200"
+title_lang: en
+title: Edge of the Forest (The Flight into Egypt)
+names:
+  - lang: de
+    role: translation
+    text: Die Flucht nach Ägypten
+creator: jan-brueghel-the-elder
+created: 1610
+materials: [oil paint, copper]
+dimensions: [25, 36]
+institution: hermitage-museum
+inventory_number: ГЭ-429
+wikidata_id: Q21716121
+metadata:
+  sources: [Wikidata Q21716121 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Jan_Brueghel_%28I%29_-_The_Flight_into_Egypt_%28Hermitage%29.jpg/1280px-Jan_Brueghel_%28I%29_-_The_Flight_into_Egypt_%28Hermitage%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Brueghel_(I)_-_The_Flight_into_Egypt_(Hermitage).jpg
+    license: Public domain
+    credit: Jan Brueghel the Elder
+sources:
+  names:
+    - accessed: 2026-10-09
+      wikidata: Q21716121
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q21716121
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q21716121
+  dimensions:
+    - accessed: 2026-10-09
+      property: P2048
+      wikidata: Q21716121
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q21716121
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q21716121

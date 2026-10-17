@@ -1,0 +1,15 @@
+public_id: "100095"
+name: Kokutai
+names:
+  - lang: ja
+    role: translation
+    text: 国体
+category: technique
+definition: Japanese political concept
+wikidata_id: Q1204868
+metadata:
+  sources: [Wikidata Q1204868 (retrieved 2026-10-07)]
+sources:
+  definition:
+    - accessed: 2026-10-07
+      wikidata: Q1204868

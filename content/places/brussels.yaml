@@ -1,0 +1,50 @@
+public_id: "100376"
+name: Brussels
+names:
+  - lang: ja
+    role: translation
+    text: ブリュッセル
+  - lang: zh
+    role: translation
+    text: 布鲁塞尔
+  - lang: ko
+    role: translation
+    text: 브뤼셀
+  - lang: fr
+    role: translation
+    text: Bruxelles
+  - lang: de
+    role: translation
+    text: Brüssel
+  - lang: nl
+    role: translation
+    text: Brussel
+  - lang: es
+    role: translation
+    text: Bruselas
+  - lang: ru
+    role: translation
+    text: Брюссель
+  - lang: pt
+    role: translation
+    text: Bruxelas
+kind: settlement
+parent: belgium
+country_code: BE
+location: [4.35167, 50.84667]
+wikidata_id: Q239
+metadata:
+  sources: [Wikidata Q239 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q239
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q239
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q239

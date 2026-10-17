@@ -1,0 +1,28 @@
+public_id: "100092"
+name: Solomon R. Guggenheim Museum
+names: [Guggenheim Museum, The Guggenheim, Guggenheim Museum New York]
+founded: 1937
+place: new-york-city
+location: [-73.95889, 40.78306]
+website_url: https://www.guggenheim.org/collection-online
+wikidata_id: Q201469
+metadata:
+  sources: [Wikidata Q201469 (retrieved 2026-10-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/NYC_-_Guggenheim_Museum.jpg/1280px-NYC_-_Guggenheim_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NYC_-_Guggenheim_Museum.jpg
+    license: CC BY 3.0
+    credit: Jean-Christophe BENOIST
+sources:
+  place:
+    - accessed: 2026-10-07
+      property: P131
+      wikidata: Q201469
+  founded:
+    - accessed: 2026-10-07
+      property: P571
+      wikidata: Q201469
+  location:
+    - accessed: 2026-10-07
+      property: P625
+      wikidata: Q201469

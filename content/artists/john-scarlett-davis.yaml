@@ -1,0 +1,18 @@
+public_id: "100167"
+name: John Scarlett Davis
+given_name: John Scarlett
+family_name: Davis
+birth: 1804-09-01
+death: 1845-09-29
+wikidata_id: Q6256854
+metadata:
+  sources: [Wikidata Q6256854 (retrieved 2026-10-09)]
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q6256854
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q6256854

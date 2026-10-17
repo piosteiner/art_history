@@ -1,0 +1,34 @@
+public_id: "100202"
+title_lang: de
+title: Die Sintflut mit der Arche Noah
+creator: jan-brueghel-the-younger
+created: 1601
+materials: [oil paint, copper]
+institution: kunsthaus-zurich
+inventory_number: KS 4
+web_url: https://collection.kunsthaus.ch/en/collection/item/620/
+wikidata_id: Q131585473
+metadata:
+  sources: [Wikidata Q131585473 (retrieved 2026-10-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Jan_Brueghel_%28I%29_-_Die_Sintflut_mit_der_Arche_Noah_-_KS_4_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Brueghel_(I)_-_Die_Sintflut_mit_der_Arche_Noah_-_KS_4_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jan Brueghel the Younger
+sources:
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q131585473
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q131585473
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q131585473
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q131585473

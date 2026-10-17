@@ -1,0 +1,16 @@
+public_id: "100078"
+name: labrys
+category: technique
+definition: Cretan double-bladed axe
+wikidata_id: Q837381
+metadata:
+  sources: [Wikidata Q837381 (retrieved 2026-10-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/AMI_-_Goldene_Doppelaxt.jpg/1280px-AMI_-_Goldene_Doppelaxt.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AMI_-_Goldene_Doppelaxt.jpg
+    license: CC BY-SA 3.0
+    credit: Wolfgang Sauber
+sources:
+  definition:
+    - accessed: 2026-10-06
+      wikidata: Q837381

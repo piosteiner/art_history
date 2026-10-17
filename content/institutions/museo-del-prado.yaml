@@ -1,0 +1,38 @@
+public_id: "100181"
+name: Museo del Prado
+names: [Prado Museum, Prado National Museum]
+founded: 1819
+place: madrid
+location: [-3.69222, 40.41389]
+address: Paseo del Prado, 28014 Madrid
+website_url: https://www.museodelprado.es/
+wikidata_id: Q160112
+metadata:
+  sources: [Wikidata Q160112 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Museo_del_Prado_2016_%2825185969599%29.jpg/1280px-Museo_del_Prado_2016_%2825185969599%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museo_del_Prado_2016_(25185969599).jpg
+    license: CC BY-SA 2.0
+    credit: Emilio J. Rodríguez Posada
+identifiers:
+  gnd: 116443-0
+  lc: n79064568
+  ulan: "500270885"
+  viaf: "147181932"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q160112
+  address:
+    - accessed: 2026-10-09
+      property: P6375
+      wikidata: Q160112
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q160112
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q160112

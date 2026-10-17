@@ -1,0 +1,11 @@
+public_id: "100385"
+name_lang: en
+name: sculpture
+names:
+  - lang: de
+    role: translation
+    text: Skulptur
+  - lang: de
+    role: translation
+    text: Plastik
+category: object type

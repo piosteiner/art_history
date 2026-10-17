@@ -1,0 +1,149 @@
+public_id: "100286"
+title: Madame Cézanne à l'éventail
+creator: paul-cezanne
+created: c. 1879/1888
+kind: oil painting
+medium: Oil on canvas
+dimensions: [92.5, 73]
+institution: kunsthaus-zurich
+inventory_number: BU 0016
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: "Footnote: Kat. Grand Palais, Paris 2011, No. 119."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/leo-stein
+    co_owners: [person/gertrude-stein]
+    acquired: 1904-12-16
+    ended: 1913 or later
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 300
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/gertrude-stein
+    acquired: 1913 or later
+    ended: 1943
+    direct: true
+    place: paris
+    label: Paris, Billignin, Culoz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/cesar-mange-de-hauke
+    role: dealer
+    acquired: 1943
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: "Footnote: Erworben in der zweiten Hälfte des Jahres 1943; Rogers 1948, S. 189."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/jacques-dubourg
+    role: dealer
+    ended: 1952-06-11
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: "Footnote: AStEGB, Eingangsbuch I, 16.06.1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1952
+    ended: 1952
+    direct: true
+    place: zurich
+    label: intermediary
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: "Footnote: Eine Rolle von Dr. Fritz Nathan, Zürich, als Vermittler wird angedeutet in AStEGB, Brief von Jacques Dubourg an Dr. Fritz Nathan, Zürich, 11.06.1952, mit der Bitte an Nathan, das Gemälde zu versichern."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-06-11
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        note: "Footnote: Wie oben Fussnote 8."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 16
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "16"
+    institution: foundation-e-g-buhrle-collection
+  - number: "606"
+    label: Rewald (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

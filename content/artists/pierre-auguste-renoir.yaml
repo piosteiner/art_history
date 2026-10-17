@@ -1,0 +1,18 @@
+public_id: "100475"
+name: Pierre-Auguste Renoir
+given_name: Pierre-Auguste
+family_name: Renoir
+birth: 1841-02-25
+death: 1919-12-03
+wikidata_id: Q39931
+metadata:
+  sources: [Wikidata Q39931 (retrieved 2026-10-16)]
+sources:
+  birth:
+    - accessed: 2026-10-16
+      property: P569
+      wikidata: Q39931
+  death:
+    - accessed: 2026-10-16
+      property: P570
+      wikidata: Q39931

@@ -1,0 +1,16 @@
+public_id: "100149"
+name: Washington, D.C.
+kind: settlement
+location: [-77.03667, 38.895]
+wikidata_id: Q61
+metadata:
+  sources: [Wikidata Q61 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q61
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q61

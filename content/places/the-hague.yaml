@@ -1,6 +1,8 @@
+public_id: "100040"
 name: The Hague
 names: [Den Haag]
 kind: settlement
 parent: netherlands
 country_code: NL
 location: [4.3007, 52.0705]
+wikidata_id: Q36600

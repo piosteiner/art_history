@@ -1,4 +1,7 @@
+public_id: "100004"
 name: Vincent van Gogh
+given_name: Vincent
+family_name: van Gogh
 sort_name: Gogh, Vincent van
 birth: 1853-03-30
 death: 1890-07-29
@@ -6,6 +9,7 @@ biography_md: |
   Dutch painter whose roughly ten-year career produced some 860 oil paintings, most of them in his last two years.
   In Paris he discovered Impressionism and collected hundreds of Japanese woodblock prints; in Arles and
   Saint-Rémy he developed the saturated colour and expressive brushwork that made him a founder of modern art.
+wikidata_id: Q5582
 relationships:
   - type: born_in
     to: place/zundert
@@ -60,3 +64,5 @@ relationships:
     to: movement/japonisme
   - type: associated_with
     to: movement/post-impressionism
+identifiers:
+  gnd: "118540416"

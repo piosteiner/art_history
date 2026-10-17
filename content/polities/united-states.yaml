@@ -1,0 +1,27 @@
+public_id: "100147"
+name: United States
+names:
+  - USA
+  - United States of America
+  - the United States of America
+  - the USA
+  - lang: fr
+    role: translation
+    text: États-Unis
+  - lang: de
+    role: translation
+    text: Vereinigte Staaten
+period: 1776-07-04/
+country_codes: [US]
+wikidata_id: Q30
+metadata:
+  sources: [Wikidata Q30 (retrieved 2026-10-09)]
+sources:
+  period:
+    - accessed: 2026-10-14
+      property: P571
+      wikidata: Q30
+  country_codes:
+    - accessed: 2026-10-09
+      property: P297
+      wikidata: Q30

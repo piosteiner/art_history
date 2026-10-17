@@ -1,0 +1,150 @@
+public_id: "100418"
+title: Kopie nach van Goghs Selbstbildnis für Gauguin
+names:
+  - lang: en
+    role: translation
+    text: Copy After van Gogh's Self-Portrait for Gauguin
+    status: official
+creator: judith-gerard
+attribution_label: copy after Vincent van Gogh
+created: 1897/1898
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [61, 50]
+institution: kunsthaus-zurich
+inventory_number: BU 0174
+web_url: https://collection.kunsthaus.ch/de/collection/item/805958/
+on_loan: true
+on_loan_since: 2021
+relationships:
+  - type: copy_after
+    to: artwork/self-portrait-dedicated-to-paul-gauguin
+    label: a reworked copy, sold to Bührle as the original (1948)
+provenance:
+  - owner: person/leon-paul-amedee-schuffenecker
+    acquired: 1902
+    place: meudon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+        note: "Footnote: Wie oben Fussnote 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    acquired: 1911
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+        note: "Footnote: Wie oben Fussnote 1; Etikette der Galerie Druet in Paris auf dem Keilrahmen der Leinwand."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/paul-von-mendelssohn-bartholdy
+    acquired: 1911
+    ended: 1935
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+        note: "Footnote: De la Faille 1928, Vol. 1, Tableaux, textes, Kat.-Nr. 530."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/elsa-von-mendelssohn-bartholdy
+    acquired: 1935
+    ended: 1948
+    method: inheritance
+    direct: true
+    place: berlin
+    label: widow of Paul von Mendelssohn-Bartholdy; later Countess Kesselstatt; Berlin and Vaduz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+        note: "Footnote: Witwe des oben Genannten."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/emil-georg-buhrle
+    acquired: 30 June 1948
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    label: CHF 80,000 + $25,000, as a van Gogh; the seller sued in 1954, settled out of court
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+        note: "Footnote: AStEGB, Anspruchserklärung [«Statement of Claim»], eingereicht beim Bezirksgericht Zürich von Emil Bührle gegen Gräfin Elsa von Mendelssohn-Bartholdy/Kesselstatt, 19.01.1954: erworben von der oben Genannten am 30.06.1948 in Zürich für CHF 80'000 + $ 25'000."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 2014
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+        note: "Footnote: Trotz eines Briefes von John Rewald, der schriftlich bestätigte, dass er Judith Gérard 1947 oder 1948 in Paris persönlich interviewt hatte und dass sie den von Gaston Poulain 1931 veröffentlichten Artikel (wie oben Fussnote 1) gutgeheissen hatte, wurde der Fall schliesslich aussergerichtlich geregelt, und das Gemälde verblieb bei den Nachkommen von Emil Bührle, die das Geld, das Emil Bührle für di…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2015
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 174
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: "174"
+    institution: foundation-e-g-buhrle-collection
+  - number: "530"
+    label: de la Faille (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  materials:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/805958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

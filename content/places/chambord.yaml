@@ -1,0 +1,22 @@
+public_id: "100489"
+name: Chambord
+kind: settlement
+parent: france
+country_code: FR
+location: [1.51917, 47.61306]
+wikidata_id: Q628532
+metadata:
+  sources: [Wikidata Q628532 (retrieved 2026-10-16)]
+sources:
+  kind:
+    - accessed: 2026-10-16
+      property: P31
+      wikidata: Q628532
+  parent:
+    - accessed: 2026-10-16
+      property: P131
+      wikidata: Q628532
+  location:
+    - accessed: 2026-10-16
+      property: P625
+      wikidata: Q628532

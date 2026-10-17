@@ -1,10 +1,14 @@
+public_id: "100002"
 name: Paul Gauguin
+given_name: Paul
+family_name: Gauguin
 sort_name: Gauguin, Paul
 birth: 1848-06-07
 death: 1903-05-08
 biography_md: |
   French painter, former stockbroker. Leading figure of the Pont-Aven school and Synthetism; spent
   two months with Van Gogh in Arles in 1888 and his last decade in French Polynesia.
+wikidata_id: Q37693
 relationships:
   - type: born_in
     to: place/paris

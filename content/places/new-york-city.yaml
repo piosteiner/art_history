@@ -1,5 +1,7 @@
+public_id: "100034"
 name: New York City
 kind: settlement
 parent: united-states
 country_code: US
 location: [-74.006, 40.7128]
+wikidata_id: Q60

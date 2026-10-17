@@ -1,0 +1,212 @@
+public_id: "100294"
+title: Landschaft mit Wirtshaus
+creator: meindert-hobbema
+created: c. 1665
+kind: oil painting
+medium: Oil on panel
+dimensions: [47, 53.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0152
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/thomas-harvey-of-catton
+    label: Catton House
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Turner 1840, S. 39; Hawcroft 1959, S. 235-237, Nr. 18, Abb. 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/dawson-turner
+    acquired: 1815
+    ended: 1852-05-14
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Turner 1840, wie oben Fussnote 3; Auktion Christie, Manson & Wood Ltd. 14. Mai 1852, Lot 74; Kat. Norwich Castle Museum 1988, Nr. 59."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1852-05-14
+    ended: 1852-05-14
+    method: auction
+    direct: true
+    place: london
+    label: Lot 74
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Auktion Christie, Manson & Wood Ltd., wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/christianus-johannes-nieuwenhuys
+    acquired: 1852-05-14
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/charles-scarisbrick
+    ended: 1860
+    label: Scarisbrick Hall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/charles-scarisbrick
+    role: estate
+    acquired: 1860
+    ended: 1861-05-10
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    acquired: 1861-05-10
+    ended: 1861-05-11
+    method: auction
+    direct: true
+    place: london
+    label: Lot 46
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Auktion Christie, Manson & Woods Ltd. London, 10.-11.05.1861, Lot 46."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/j-e-fordham
+    ended: 1863
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Unbekannte Auktion, London 1863, vgl. Kat. Norwich Castle Museum, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner_label: unknown (auction)
+    role: agent
+    acquired: 1863
+    ended: 1863
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/christianus-johannes-nieuwenhuys
+    acquired: 1863
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Kat. Norwich Castle Museum, wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/leggatt-brothers
+    role: dealer
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Auskunft von Herrn Anthony Speelman, London, Sohn von Edward Speelman, an die Stiftung Sammlung E.G. Bührle, 08.01.2010."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/edward-speelman
+    role: dealer
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1953-10-02
+    method: purchase
+    direct: true
+    place: london
+    price:
+      amount: 7075
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-10-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 8500
+      currency: GBP
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        note: "Footnote: Erworben vom Vorgenannten für 8.500 GBP (mit 6% Rabatt), AStEGB, Verkaufsbestätigung von Trafo, Anstalt für Handel und Finanz, Vaduz [Marlborough Fine Art Ltd., London], unterzeichnet von F. K. Lloyd, an Emil Bührle, 01.10.1953, betreffend eine Gruppe von 10 Bildern, die für eine Gesamtsumme von 40.000 GBP (= CHF 480.000) an Bührle verkauft wurden, darunter Hobbema, Landscape with an Inn, mit Prei…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 152
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "152"
+    institution: foundation-e-g-buhrle-collection
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707965/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

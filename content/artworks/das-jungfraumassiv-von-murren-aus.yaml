@@ -1,0 +1,34 @@
+public_id: "100130"
+title_lang: de
+title: Das Jungfraumassiv von Mürren aus
+creator: ferdinand-hodler
+created: 1911
+materials: [oil paint, canvas]
+institution: kunsthaus-zurich
+inventory_number: 1976/0009
+web_url: https://collection.kunsthaus.ch/en/collection/item/1141/
+wikidata_id: Q131586098
+metadata:
+  sources: [Wikidata Q131586098 (retrieved 2026-10-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Ferdinand_Hodler_-_Das_Jungfraumassiv_von_M%C3%BCrren_aus_-_1976-0009_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Das_Jungfraumassiv_von_M%C3%BCrren_aus_-_1976-0009_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+sources:
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q131586098
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q131586098
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q131586098
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q131586098

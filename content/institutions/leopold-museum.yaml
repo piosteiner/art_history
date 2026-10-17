@@ -1,0 +1,32 @@
+public_id: "100093"
+name: Leopold Museum
+founded: 2001
+place: vienna
+location: [16.35914, 48.20265]
+address: Museumsplatz 1
+website_url: https://www.leopoldmuseum.org/
+wikidata_id: Q59435
+metadata:
+  sources: [Wikidata Q59435 (retrieved 2026-10-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Wien_07_Leopold_Museum_a.jpg/1280px-Wien_07_Leopold_Museum_a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wien_07_Leopold_Museum_a.jpg
+    license: CC0
+    credit: Gugerell
+sources:
+  place:
+    - accessed: 2026-10-07
+      property: P131
+      wikidata: Q59435
+  address:
+    - accessed: 2026-10-07
+      property: P6375
+      wikidata: Q59435
+  founded:
+    - accessed: 2026-10-07
+      property: P571
+      wikidata: Q59435
+  location:
+    - accessed: 2026-10-07
+      property: P625
+      wikidata: Q59435

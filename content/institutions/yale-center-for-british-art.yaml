@@ -1,0 +1,33 @@
+public_id: "100169"
+name: Yale Center for British Art
+names: [YCBA]
+founded: 1966
+place: new-haven
+location: [-72.93091, 41.30791]
+website_url: http://britishart.yale.edu
+wikidata_id: Q6352575
+metadata:
+  sources: [Wikidata Q6352575 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Yale_Center_for_British_Art.jpg/1280px-Yale_Center_for_British_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yale_Center_for_British_Art.jpg
+    license: Public domain
+    credit: Sage Ross
+identifiers:
+  gnd: 1056978-9
+  lc: n77005277
+  ulan: "500303557"
+  viaf: "155449049"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q6352575
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q6352575
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q6352575

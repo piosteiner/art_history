@@ -1,0 +1,48 @@
+public_id: "100203"
+title_lang: de
+title: Dorfeingang mit Windmühle
+names:
+  - lang: en
+    role: translation
+    text: Entrance to a Village with a Windmill
+    status: official
+creator: jan-brueghel-the-younger
+created: 1603/1605
+materials: [copper, oil paint]
+dimensions: [18, 25.4]
+institution: kunsthaus-zurich
+inventory_number: D.2016/0026
+web_url: https://collection.kunsthaus.ch/en/collection/item/7999/
+wikidata_id: Q131586786
+metadata:
+  sources: [Wikidata Q131586786 (retrieved 2026-10-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Jan_Brueghel_%28I%29_-_Dorfeingang_mit_Windm%C3%BChle_-_D.2016-0026_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Brueghel_(I)_-_Dorfeingang_mit_Windm%C3%BChle_-_D.2016-0026_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Jan Brueghel the Younger
+sources:
+  created:
+    - url: https://collection.kunsthaus.ch/en/collection/item/7999/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-14
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q131586786
+  materials:
+    - accessed: 2026-10-14
+      property: P186
+      wikidata: Q131586786
+  dimensions:
+    - url: https://collection.kunsthaus.ch/en/collection/item/7999/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-14
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q131586786
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q131586786

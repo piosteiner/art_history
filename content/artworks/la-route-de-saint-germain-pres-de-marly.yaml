@@ -1,0 +1,109 @@
+public_id: "100103"
+title_lang: fr
+title: La Route de Saint-Germain près de Marly
+names:
+  - lang: de
+    role: translation
+    text: Die Strasse nach Saint-Germain bei Marly
+    status: official
+  - lang: en
+    role: translation
+    text: The Road to Saint-Germain, near Marly
+    status: official
+creator: alfred-sisley
+created: 1875
+kind: oil painting
+medium: oil on canvas
+materials: ["oil, canvas"]
+dimensions: [46, 55]
+institution: kunsthaus-zurich
+inventory_number: BU 0099
+web_url: https://collection.kunsthaus.ch/de/collection/item/752012/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64223633
+metadata:
+  sources: [Wikidata Q64223633 (retrieved 2026-10-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0f/Alfred_Sisley_-_La_Route_de_Saint-Germain_pr%C3%A8s_de_Marly_-_BU_0099_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alfred_Sisley_-_La_Route_de_Saint-Germain_pr%C3%A8s_de_Marly_-_BU_0099_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Alfred Sisley
+provenance:
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-05-19
+    ended: 1956-11-28
+    method: purchase
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-08
+  - owner_label: Nachlass Emil Bührle (estate)
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-08
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    place: zurich
+    label: Inv.-Nr. 99; since 2021 on permanent loan to the Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-08
+numbers:
+  - number: "99"
+    institution: foundation-e-g-buhrle-collection
+  - number: "204"
+    label: Brame/Lorenceau (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  materials:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09

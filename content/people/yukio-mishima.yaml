@@ -1,0 +1,36 @@
+public_id: "100096"
+name: Yukio Mishima
+names:
+  - lang: ja
+    role: original
+    text: 三島 由紀夫
+kind: person
+occupations: [writer, prose writer, novelist, playwright]
+birth: 1925-01-14
+death: 1970-11-25
+description_md: Mishima was a famous writer. He did embrace far right ideas one of which was that the Japanese people were losing their "national essence" [[kokutai]].
+wikidata_id: Q134456
+metadata:
+  sources: [Wikidata Q134456 (retrieved 2026-10-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Yukio_Mishima%2C_1955_%28cropped_850%C3%97950_px%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yukio_Mishima,_1955_(cropped_850%C3%97950_px).jpg
+    license: Public domain
+    credit: Ken Domon
+sources:
+  kind:
+    - accessed: 2026-10-07
+      property: P31
+      wikidata: Q134456
+  birth:
+    - accessed: 2026-10-07
+      property: P569
+      wikidata: Q134456
+  death:
+    - accessed: 2026-10-07
+      property: P570
+      wikidata: Q134456
+  occupations:
+    - accessed: 2026-10-07
+      property: P106
+      wikidata: Q134456

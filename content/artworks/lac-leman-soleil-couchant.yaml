@@ -1,0 +1,34 @@
+public_id: "100190"
+title: Lac Léman, soleil couchant
+names:
+  - lang: de
+    role: translation
+    text: Genfersee bei Sonnenuntergang
+creator: gustave-courbet
+created: 1875
+materials: [oil paint, canvas]
+dimensions: [74, 100]
+wikidata_id: Q94663010
+metadata:
+  sources: [Wikidata Q94663010 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Courbet_Genfersee_bei_Sonnenuntergang_1876.jpg/1280px-Courbet_Genfersee_bei_Sonnenuntergang_1876.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Courbet_Genfersee_bei_Sonnenuntergang_1876.jpg
+    license: Public domain
+    credit: Gustave Courbet
+sources:
+  names:
+    - accessed: 2026-10-09
+      wikidata: Q94663010
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q94663010
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q94663010
+  dimensions:
+    - accessed: 2026-10-09
+      property: P2048
+      wikidata: Q94663010

@@ -1,0 +1,16 @@
+public_id: "100163"
+name: Boston
+kind: settlement
+location: [-71.05778, 42.36028]
+wikidata_id: Q100
+metadata:
+  sources: [Wikidata Q100 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q100
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q100

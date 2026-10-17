@@ -1,13 +1,72 @@
+public_id: "100011"
+title_lang: en
 title: The Starry Night
+names:
+  - lang: de
+    role: translation
+    text: Sternennacht
 creator: vincent-van-gogh
 created: 1889-06
 kind: painting
 medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [73.7, 92.1]
 institution: museum-of-modern-art
+inventory_number: "472.1941"
+web_url: http://www.vggallery.com/painting/p_0612.htm
 description_md: The view from his window at the Saint-Rémy asylum before sunrise, with an imagined village.
+wikidata_id: Q45585
+metadata:
+  sources: [Wikidata Q45585 (retrieved 2026-10-09)]
 relationships:
   - type: created_in
     to: place/saint-remy-de-provence
     period: 1889-06
+  - type: created_in_polity
+    to: polity/france
+    sources:
+      - accessed: 2026-10-09
+        property: P495
+        wikidata: Q45585
+  - type: depicts
+    to: place/alpilles
+    sources:
+      - accessed: 2026-10-09
+        property: P180
+        wikidata: Q45585
+  - type: depicts
+    to: place/saint-remy-de-provence
+    sources:
+      - accessed: 2026-10-09
+        property: P180
+        wikidata: Q45585
   - type: associated_with
     to: movement/post-impressionism
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+identifiers:
+  gnd: 4209985-7
+  viaf: "176354386"
+sources:
+  names:
+    - accessed: 2026-10-09
+      wikidata: Q45585
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q45585
+  dimensions:
+    - accessed: 2026-10-09
+      property: P2048
+      wikidata: Q45585
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q45585
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q45585

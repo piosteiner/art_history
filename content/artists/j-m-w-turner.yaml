@@ -1,0 +1,18 @@
+public_id: "100382"
+name: J. M. W. Turner
+given_name: J. M. W.
+family_name: Turner
+birth: 1775-04-23
+death: 1851-12-19
+wikidata_id: Q159758
+metadata:
+  sources: [Wikidata Q159758 (retrieved 2026-10-15)]
+sources:
+  birth:
+    - accessed: 2026-10-15
+      property: P569
+      wikidata: Q159758
+  death:
+    - accessed: 2026-10-15
+      property: P570
+      wikidata: Q159758

@@ -1,0 +1,11 @@
+public_id: "100407"
+name: Republic of Venice
+period: 697/1797-05-12
+wikidata_id: Q4948
+metadata:
+  sources: [Wikidata Q4948 (retrieved 2026-10-15)]
+sources:
+  period:
+    - accessed: 2026-10-15
+      property: P571
+      wikidata: Q4948

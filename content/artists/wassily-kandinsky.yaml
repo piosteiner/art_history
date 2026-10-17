@@ -1,0 +1,36 @@
+public_id: "100135"
+name: Wassily Kandinsky
+given_name: Wassily
+family_name: Kandinsky
+birth: 1866-12-04
+death: 1944-12-13
+wikidata_id: Q61064
+metadata:
+  sources: [Wikidata Q61064 (retrieved 2026-10-09)]
+relationships:
+  - type: born_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-10-09
+        property: P19
+        wikidata: Q61064
+  - type: died_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-10-09
+        property: P20
+        wikidata: Q61064
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d6/Wassily_kandinsky.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wassily_kandinsky.jpg
+    license: Public domain
+    credit: 未知上傳者
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q61064
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q61064

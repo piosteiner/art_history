@@ -1,3 +1,4 @@
+public_id: "100064"
 name: Utagawa Kuniyoshi
 names:
   - lang: ja
@@ -8,3 +9,12 @@ death: 1861-04-14
 wikidata_id: Q317736
 metadata:
   sources: [Wikidata Q317736 (retrieved 2026-10-05)]
+sources:
+  birth:
+    - accessed: 2026-10-05
+      property: P569
+      wikidata: Q317736
+  death:
+    - accessed: 2026-10-05
+      property: P570
+      wikidata: Q317736

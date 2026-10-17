@@ -1,0 +1,35 @@
+public_id: "100184"
+name: Madrid
+names:
+  - lang: ja
+    role: translation
+    text: マドリード
+  - lang: zh
+    role: translation
+    text: 馬德里
+  - lang: ko
+    role: translation
+    text: 마드리드
+  - lang: ru
+    role: translation
+    text: Мадрид
+kind: settlement
+parent: spain
+country_code: ES
+location: [-3.70333, 40.41694]
+wikidata_id: Q2807
+metadata:
+  sources: [Wikidata Q2807 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q2807
+  parent:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q2807
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q2807

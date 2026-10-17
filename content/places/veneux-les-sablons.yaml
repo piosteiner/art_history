@@ -1,0 +1,16 @@
+public_id: "100228"
+name: Veneux-les-Sablons
+kind: settlement
+location: [2.79278, 48.37778]
+wikidata_id: Q1454790
+metadata:
+  sources: [Wikidata Q1454790 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q1454790
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q1454790

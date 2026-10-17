@@ -1,6 +1,34 @@
+public_id: "100013"
 name: Museum of Modern Art
-names: [MoMA]
+names: [MoMA, "The Museum of Modern Art, New York"]
 kind: museum
 founded: 1929
 place: new-york-city
+location: [-73.9775, 40.76167]
 website_url: https://www.moma.org
+wikidata_id: Q188740
+metadata:
+  sources: [Wikidata Q188740 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/MoMa_NY_USA_1.jpg/1280px-MoMa_NY_USA_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MoMa_NY_USA_1.jpg
+    license: CC BY 2.0
+    credit: hibino
+identifiers:
+  gnd: 1007559-8
+  lc: n79021281
+  ulan: "500303609"
+  viaf: "128460224"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q188740
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q188740
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q188740

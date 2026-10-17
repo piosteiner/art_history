@@ -1,0 +1,32 @@
+public_id: "100113"
+name: Rijksmuseum
+founded: 1800
+place: amsterdam
+location: [4.88528, 52.36]
+address: Museumstraat 1
+website_url: https://www.rijksmuseum.nl/
+wikidata_id: Q190804
+metadata:
+  sources: [Wikidata Q190804 (retrieved 2026-10-08)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Rijksmuseum_in_Amsterdam.jpg/1280px-Rijksmuseum_in_Amsterdam.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rijksmuseum_in_Amsterdam.jpg
+    license: CC BY-SA 3.0
+    credit: Marco Almbauer
+sources:
+  place:
+    - accessed: 2026-10-08
+      property: P131
+      wikidata: Q190804
+  address:
+    - accessed: 2026-10-08
+      property: P6375
+      wikidata: Q190804
+  founded:
+    - accessed: 2026-10-08
+      property: P571
+      wikidata: Q190804
+  location:
+    - accessed: 2026-10-08
+      property: P625
+      wikidata: Q190804

@@ -1,0 +1,16 @@
+public_id: "100216"
+name: Moret-sur-Loing
+kind: settlement
+location: [2.815, 48.3744]
+wikidata_id: Q839537
+metadata:
+  sources: [Wikidata Q839537 (retrieved 2026-10-12)]
+sources:
+  kind:
+    - accessed: 2026-10-12
+      property: P31
+      wikidata: Q839537
+  location:
+    - accessed: 2026-10-12
+      property: P625
+      wikidata: Q839537

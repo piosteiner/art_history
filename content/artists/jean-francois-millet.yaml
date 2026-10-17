@@ -1,0 +1,18 @@
+public_id: "100381"
+name: Jean-François Millet
+given_name: Jean-François
+family_name: Millet
+birth: 1814-10-04
+death: 1875-01-20
+wikidata_id: Q148458
+metadata:
+  sources: [Wikidata Q148458 (retrieved 2026-10-15)]
+sources:
+  birth:
+    - accessed: 2026-10-15
+      property: P569
+      wikidata: Q148458
+  death:
+    - accessed: 2026-10-15
+      property: P570
+      wikidata: Q148458

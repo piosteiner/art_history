@@ -1,0 +1,16 @@
+public_id: "100235"
+name: Verneuil-sur-Avre
+kind: settlement
+location: [0.92778, 48.73889]
+wikidata_id: Q317271
+metadata:
+  sources: [Wikidata Q317271 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q317271
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q317271

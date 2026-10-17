@@ -1,0 +1,35 @@
+public_id: "100141"
+name: Thomas Gilcrease
+given_name: Thomas
+family_name: Gilcrease
+kind: person
+occupations: [art collector]
+birth: 1890
+death: 1962
+wikidata_id: Q7790033
+metadata:
+  sources: [Wikidata Q7790033 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/gilcrease-museum
+    sources:
+      - url: https://www.getty.edu/tracingart/
+        source: getty-edu
+        accessed: 2026-10-09
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q7790033
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q7790033
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q7790033
+  occupations:
+    - accessed: 2026-10-09
+      property: P106
+      wikidata: Q7790033

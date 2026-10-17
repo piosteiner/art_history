@@ -1,0 +1,33 @@
+public_id: "100166"
+name: Samuel Henry Kress
+given_name: Samuel Henry
+family_name: Kress
+names: [Samuel H. Kress]
+birth: 1863-07-23
+death: 1955-09-22
+wikidata_id: Q3471151
+metadata:
+  sources: [Wikidata Q3471151 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/national-gallery-of-art
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Sam_kress.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sam_kress.jpg
+    license: Public domain
+    credit: Alman &amp; Co.
+identifiers:
+  gnd: "121559181"
+  lc: nr94024820
+  rkd: "348276"
+  ulan: "500235723"
+  viaf: "66604511"
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q3471151
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q3471151

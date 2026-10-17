@@ -1,11 +1,36 @@
+public_id: "100057"
 name: Asai Chū
 birth: 1856-07-22
 death: 1907-12-16
 wikidata_id: Q720550
 metadata:
   sources: [Wikidata Q720550 (retrieved 2026-10-05)]
+relationships:
+  - type: born_in
+    to: place/edo
+    sources:
+      - accessed: 2026-10-13
+        property: P19
+        wikidata: Q720550
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Asai_chu.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Asai_chu.jpg
     license: Public domain
     credit: Unknown authorUnknown author
+identifiers:
+  bnf: "166170436"
+  gnd: "141689757"
+  idref: "079570925"
+  lc: n82109002
+  rkd: "369611"
+  ulan: "500124870"
+  viaf: "67815871"
+sources:
+  birth:
+    - accessed: 2026-10-05
+      property: P569
+      wikidata: Q720550
+  death:
+    - accessed: 2026-10-05
+      property: P570
+      wikidata: Q720550

@@ -1,0 +1,70 @@
+public_id: "100201"
+name: Jan Brueghel the Younger
+given_name: Jan, the Younger
+family_name: Brueghel
+birth: 1601-09-13
+death: 1678-09-01
+biography_md: "[RKD Research](https://research.rkd.nl/nl/detail/https%3A%2F%2Fdata.rkd.nl%2Fartists%2F13288?image=4)"
+wikidata_id: Q285933
+metadata:
+  sources: [Wikidata Q285933 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-10-09
+        property: P27
+        wikidata: Q285933
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-09
+        property: P19
+        wikidata: Q285933
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-09
+        property: P20
+        wikidata: Q285933
+  - type: worked_in
+    to: place/italy
+    period: 1622/1625-08
+    sources:
+      - accessed: 2026-10-09
+        property: P937
+        wikidata: Q285933
+  - type: worked_in
+    to: place/antwerp
+    period: 1625/1678
+    sources:
+      - accessed: 2026-10-09
+        property: P937
+        wikidata: Q285933
+  - type: influenced_by
+    to: artist/jan-brueghel-the-elder
+    sources:
+      - accessed: 2026-10-09
+        property: P737
+        wikidata: Q285933
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-09
+        property: P135
+        wikidata: Q285933
+identifiers:
+  gnd: "118702173"
+  lc: n85095027
+  rkd: "13289"
+  ulan: "500013747"
+  viaf: "42046414"
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q285933
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q285933

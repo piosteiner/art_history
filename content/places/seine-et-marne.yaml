@@ -1,0 +1,16 @@
+public_id: "100227"
+name: Seine-et-Marne
+kind: region
+location: [3, 48.6]
+wikidata_id: Q12753
+metadata:
+  sources: [Wikidata Q12753 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q12753
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q12753

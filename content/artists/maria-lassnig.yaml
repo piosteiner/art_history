@@ -1,0 +1,31 @@
+public_id: "100116"
+name: Maria Lassnig
+given_name: Maria
+family_name: Lassnig
+birth: 1919-09-08
+death: 2014-05-06
+wikidata_id: Q538534
+metadata:
+  sources: [Wikidata Q538534 (retrieved 2026-10-08)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/1974_Avenue_B_Foto_ML_4.tif/lossy-page1-1280px-1974_Avenue_B_Foto_ML_4.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1974_Avenue_B_Foto_ML_4.tif
+    license: CC BY-SA 4.0
+    credit: Maria Lassnig
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Maria_Lassnig_Maxingstrasse.jpg/1280px-Maria_Lassnig_Maxingstrasse.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maria_Lassnig_Maxingstrasse.jpg
+    license: CC BY-SA 4.0
+    credit: Maria Lassnig
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Maria_Lassnig_mit_Sabine_Groschup%2C_Wien_2008.png
+    source_url: https://commons.wikimedia.org/wiki/File:Maria_Lassnig_mit_Sabine_Groschup,_Wien_2008.png
+    license: CC BY-SA 4.0
+    credit: Georg Weckwerth
+sources:
+  birth:
+    - accessed: 2026-10-08
+      property: P569
+      wikidata: Q538534
+  death:
+    - accessed: 2026-10-08
+      property: P570
+      wikidata: Q538534

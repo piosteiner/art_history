@@ -1,0 +1,16 @@
+public_id: "100244"
+name: Manhattan
+kind: site
+location: [-73.99417, 40.72833]
+wikidata_id: Q11299
+metadata:
+  sources: [Wikidata Q11299 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q11299
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q11299

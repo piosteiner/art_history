@@ -1,0 +1,18 @@
+public_id: "100247"
+name: Henri Rousseau
+given_name: Henri
+family_name: Rousseau
+birth: 1844-05-21
+death: 1910-09-02
+wikidata_id: Q156386
+metadata:
+  sources: [Wikidata Q156386 (retrieved 2026-10-13)]
+sources:
+  birth:
+    - accessed: 2026-10-13
+      property: P569
+      wikidata: Q156386
+  death:
+    - accessed: 2026-10-13
+      property: P570
+      wikidata: Q156386

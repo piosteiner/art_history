@@ -1,0 +1,16 @@
+public_id: "100098"
+name: Sumida River
+kind: site
+location: [139.80722, 35.71861]
+wikidata_id: Q222149
+metadata:
+  sources: [Wikidata Q222149 (retrieved 2026-10-07)]
+sources:
+  kind:
+    - accessed: 2026-10-07
+      property: P31
+      wikidata: Q222149
+  location:
+    - accessed: 2026-10-07
+      property: P625
+      wikidata: Q222149

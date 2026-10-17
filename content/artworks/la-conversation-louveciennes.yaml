@@ -1,0 +1,136 @@
+public_id: "100280"
+title: La Conversation, Louveciennes
+creator: camille-pissarro
+created: 1870
+kind: oil painting
+medium: Oil on canvas
+dimensions: [100, 81]
+institution: kunsthaus-zurich
+inventory_number: BU 0121
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/julie-pissarro
+    acquired: 1903-11-13
+    ended: 1926-05-16
+    method: inheritance
+    direct: true
+    place: paris
+    label: née Vellay
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        note: "Footnote: Pissarro et al. 2005, Bd. 2, Nr. 163."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/julie-pissarro
+    role: estate
+    acquired: 1926-05-16
+    ended: 1928-12-03
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        note: "Footnote: Auktion Galerie Georges Petit, Paris (3. Dezember 1928), Nr. 24."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-georges-petit
+    role: agent
+    acquired: 1928-12-03
+    ended: 1928-12-03
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1928-12-03
+    ended: 1953-09-18
+    method: purchase
+    direct: true
+    place: paris
+    label: Paris and New York, NY
+    price:
+      amount: 147000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        note: "Footnote: Maurice Monda, «Revue des ventes de décembre, Lundi 3 décembre, Galerie Georges Petit, La Collection Camille Pissarro», in: Figaro, Supplément artistique (10 Januar) 1929, S. 221; Archiv Paul Rosenberg Gallery, New York, Inventory Notebook, September 1952, S. 2-3, gibt als Kaufpreis die Summe von $ 7.600 an; AStEGB, Brief von Paul Rosenberg, New York, an Emil Bührle, 22. September 1952, mit Einzel…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-09-18
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 21600
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        note: "Footnote: Erworben für $ 24.000 abzüglich 10% Rabatt ($ 2.400) = $ 21. 600, AStEGB, Rechnung von Paul Rosenberg, New York, ausgestellt auf Emil Bührle, 22. September 1952; Brief von Emil Bührle an Paul Rosenberg, Zürich, 6. Mai 1953, mit einem Scheck zur Bezahlung von 4 Bildern und einem Zahlungsplan für 3 noch ausstehende Bilder, darunter Pissarro, Route de Versailles; [2.] Rechnung von Paul Rosenberg, New…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 121
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "121"
+    institution: foundation-e-g-buhrle-collection
+  - number: "163"
+    label: Pissarro/Durand-Ruel (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

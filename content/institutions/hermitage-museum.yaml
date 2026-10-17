@@ -1,0 +1,11 @@
+public_id: "100199"
+name: Hermitage Museum
+founded: 1764
+wikidata_id: Q132783
+metadata:
+  sources: [Wikidata Q132783 (retrieved 2026-10-09)]
+sources:
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q132783

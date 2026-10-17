@@ -1,3 +1,4 @@
+public_id: "100007"
 title: Plum Park in Kameido
 names: [Kameido Umeyashiki]
 creator: utagawa-hiroshige
@@ -11,3 +12,8 @@ relationships:
     period: 1857
   - type: associated_with
     to: movement/ukiyo-e
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg/1280px-De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:De_pruimenboomgaard_te_Kameido-Rijksmuseum_RP-P-1956-743.jpeg
+    license: Public domain
+    credit: Utagawa; Hiroshige (I) , Utagawa died 1858; Uoya Eikichi Hiroshige (I)

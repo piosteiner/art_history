@@ -1,5 +1,7 @@
+public_id: "100022"
 name: Amsterdam
 kind: settlement
 parent: netherlands
 country_code: NL
 location: [4.9041, 52.3676]
+wikidata_id: Q9899

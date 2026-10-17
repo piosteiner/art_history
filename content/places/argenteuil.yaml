@@ -1,0 +1,16 @@
+public_id: "100232"
+name: Argenteuil
+kind: settlement
+location: [2.24889, 48.94778]
+wikidata_id: Q181946
+metadata:
+  sources: [Wikidata Q181946 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q181946
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q181946

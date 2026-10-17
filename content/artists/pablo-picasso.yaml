@@ -1,0 +1,142 @@
+public_id: "100236"
+name: Pablo Picasso
+given_name: Pablo
+family_name: Picasso
+birth: 1881-10-25
+death: 1973-04-08
+wikidata_id: Q5593
+metadata:
+  sources: [Wikidata Q5593 (retrieved 2026-10-13)]
+relationships:
+  - type: born_in
+    to: place/malaga
+    sources:
+      - accessed: 2026-10-13
+        property: P19
+        wikidata: Q5593
+  - type: died_in
+    to: place/mas-notre-dame-de-vie-de-mougins
+    sources:
+      - accessed: 2026-10-13
+        property: P20
+        wikidata: Q5593
+  - type: lived_in
+    to: place/barcelona
+    period: 1895/1904
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q5593
+  - type: lived_in
+    to: place/chateau-of-vauvenargues
+    period: 1958/1961
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q5593
+  - type: lived_in
+    to: place/mas-notre-dame-de-vie-de-mougins
+    period: 1961/1973
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q5593
+  - type: worked_in
+    to: place/barcelona
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5593
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5593
+  - type: influenced_by
+    to: artist/henri-rousseau
+    sources:
+      - accessed: 2026-10-13
+        property: P737
+        wikidata: Q5593
+  - type: influenced_by
+    to: artist/maria-prymachenko
+    sources:
+      - accessed: 2026-10-13
+        property: P737
+        wikidata: Q5593
+  - type: influenced_by
+    to: artist/paul-cezanne
+    sources:
+      - accessed: 2026-10-13
+        property: P737
+        wikidata: Q5593
+  - type: studied_at
+    to: institution/escola-de-arte-e-superior-de-deseno-pablo-picasso
+    sources:
+      - accessed: 2026-10-13
+        property: P69
+        wikidata: Q5593
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-of-san-fernando
+    period: 1897
+    period_label: from 1897
+    sources:
+      - accessed: 2026-10-13
+        property: P69
+        wikidata: Q5593
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-10-13
+        property: P135
+        wikidata: Q5593
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-10-13
+        property: P135
+        wikidata: Q5593
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-10-13
+        property: P135
+        wikidata: Q5593
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/98/Pablo_picasso_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pablo_picasso_1.jpg
+    license: Public domain
+    credit: Argentina. Revista Vea y Lea
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a7/Portrait_de_Picasso%2C_1908_%28background_retouched%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_de_Picasso,_1908_(background_retouched).jpg
+    license: Public domain
+    credit: AnonymousUnknown author
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/1973_Dokfilm_Picasso_de_Lucien_Clergue_Condor_Films.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1973_Dokfilm_Picasso_de_Lucien_Clergue_Condor_Films.jpg
+    license: CC BY-SA 3.0
+    credit: Condor Films
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Modigliani%2C_Picasso_and_Andr%C3%A9_Salmon.jpg/1280px-Modigliani%2C_Picasso_and_Andr%C3%A9_Salmon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Modigliani,_Picasso_and_Andr%C3%A9_Salmon.jpg
+    license: Public domain
+    credit: Jean Cocteau
+identifiers:
+  bnf: 11919660r
+  dodis: P14560
+  gnd: "118594206"
+  idref: "027071790"
+  kulturnav: 87305a20-73cd-45e9-8d1e-022b0b0c29e2
+  lc: n78086005
+  nlk: KAC199621663
+  rkd: "63276"
+  ulan: "500009666"
+  viaf: "15873"
+sources:
+  birth:
+    - accessed: 2026-10-13
+      property: P569
+      wikidata: Q5593
+  death:
+    - accessed: 2026-10-13
+      property: P570
+      wikidata: Q5593

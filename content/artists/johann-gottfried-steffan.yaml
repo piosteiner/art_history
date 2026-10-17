@@ -1,0 +1,18 @@
+public_id: "100196"
+name: Johann Gottfried Steffan
+given_name: Johann Gottfried
+family_name: Steffan
+birth: 1815-12-13
+death: 1905-06-16
+wikidata_id: Q682744
+metadata:
+  sources: [Wikidata Q682744 (retrieved 2026-10-09)]
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q682744
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q682744

@@ -1,0 +1,37 @@
+public_id: "100144"
+name: The Frick Collection
+founded: 1935
+place: new-york-city
+location: [-73.96722, 40.77111]
+address: 1 East 70th Street, New York, NY 10021
+website_url: https://www.frick.org
+wikidata_id: Q682827
+metadata:
+  sources: [Wikidata Q682827 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Frick_collection_jan06.jpg/1280px-Frick_collection_jan06.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frick_collection_jan06.jpg
+    license: CC BY-SA 2.5
+    credit: Aude
+identifiers:
+  gnd: 1000952-8
+  lc: n80044956
+  ulan: "500303594"
+  viaf: "128866686"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q682827
+  address:
+    - accessed: 2026-10-09
+      property: P6375
+      wikidata: Q682827
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q682827
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q682827

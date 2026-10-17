@@ -1,0 +1,12 @@
+public_id: "100388"
+name_lang: en
+name: oil paint
+names:
+  - lang: de
+    role: translation
+    text: Ölfarbe
+  - oil
+  - lang: de
+    role: translation
+    text: Öl
+category: material

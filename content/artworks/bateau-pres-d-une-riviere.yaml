@@ -1,0 +1,112 @@
+public_id: "100290"
+title: Bateau près d'une rivière
+creator: jean-baptiste-camille-corot
+created: c. 1862
+kind: oil painting
+medium: Oil on canvas
+dimensions: [38, 55]
+institution: kunsthaus-zurich
+inventory_number: BU 0172
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner_label: Grandjean collection
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+        note: "Footnote: AStEGB, Rechnung der Galerie Aktuaryus, Zürich, ausgestellt auf Emil Bührle, 02.08.1937."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-aktuaryus
+    role: dealer
+    ended: 1937-08-04
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1937-08-04
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 32000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+        note: "Footnote: Rechnung, wie oben Fussnote 3, quittiert am 04.08.1937: erworben für CHF 37.250, abzüglich CHF 5.250 für ein Gemälde von Corot, das Bührle am 09.01.1937 von der Galerie Aktuaryus erworben hatte und das nun eingetauscht wurde."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    ended: 1993
+    method: gift
+    direct: true
+    place: zurich
+    label: on the list of objects to be sold (paintings, no. 5)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+        note: "Footnote: AStEGB, Statuten der Stiftung Sammlung E.G. Bührle, Zürich, 24.02.1960, Liste der zu verkaufenden Objekte, Gemälde, Nr. 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1993
+    direct: true
+    place: zurich
+    label: transfer; inv. no. 172
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+        note: "Footnote: Stiftung Sammlung E.G. Bührle, Jahresbericht 1993, S. 1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "172"
+    institution: foundation-e-g-buhrle-collection
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

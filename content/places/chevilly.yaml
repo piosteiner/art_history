@@ -1,0 +1,16 @@
+public_id: "100229"
+name: Chevilly
+kind: site
+location: [6.48333, 46.65]
+wikidata_id: Q52785
+metadata:
+  sources: [Wikidata Q52785 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q52785
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q52785

@@ -1,0 +1,16 @@
+public_id: "100107"
+name: Neuruppin
+kind: site
+location: [12.8, 52.92222]
+wikidata_id: Q16085
+metadata:
+  sources: [Wikidata Q16085 (retrieved 2026-10-08)]
+sources:
+  kind:
+    - accessed: 2026-10-08
+      property: P31
+      wikidata: Q16085
+  location:
+    - accessed: 2026-10-08
+      property: P625
+      wikidata: Q16085

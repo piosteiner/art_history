@@ -1,0 +1,33 @@
+public_id: "100179"
+name: Francisco Goya
+given_name: Francisco
+family_name: Goya
+names:
+  - lang: es
+    role: original
+    text: Francisco José de Goya y Lucientes
+birth: 1746-03-30
+death: 1828-04-16
+wikidata_id: Q5432
+metadata:
+  sources: [Wikidata Q5432 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg/1280px-Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vicente_L%C3%B3pez_Porta%C3%B1a_-_el_pintor_Francisco_de_Goya.jpg
+    license: Public domain
+    credit: Vicente López Portaña
+identifiers:
+  gnd: "118541064"
+  lc: n79003363
+  rkd: "33102"
+  ulan: "500118936"
+  viaf: "54343141"
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q5432
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q5432

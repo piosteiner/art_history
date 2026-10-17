@@ -1,0 +1,42 @@
+public_id: "100119"
+title: The Route from Saint-Germain to Marly
+creator: alfred-sisley
+created: 1872
+materials: [oil paint, canvas]
+dimensions: [46.4, 61]
+institution: mcnay-art-museum
+inventory_number: "1955.2"
+web_url: https://collection.mcnayart.org/objects/1030
+wikidata_id: Q67089951
+metadata:
+  sources: [Wikidata Q67089951 (retrieved 2026-10-08)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1e/The_Route_from_Saint-Germain_to_Marly_by_Alfred_Sisley.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Route_from_Saint-Germain_to_Marly_by_Alfred_Sisley.jpg
+    license: Public domain
+    credit: Alfred Sisley
+sources:
+  created:
+    - accessed: 2026-10-08
+      property: P571
+      wikidata: Q67089951
+  creator:
+    - accessed: 2026-10-08
+      property: P170
+      wikidata: Q67089951
+  materials:
+    - accessed: 2026-10-08
+      property: P186
+      wikidata: Q67089951
+  dimensions:
+    - accessed: 2026-10-08
+      property: P2048
+      wikidata: Q67089951
+  institution:
+    - accessed: 2026-10-08
+      property: P195
+      wikidata: Q67089951
+  inventory_number:
+    - accessed: 2026-10-08
+      property: P217
+      wikidata: Q67089951

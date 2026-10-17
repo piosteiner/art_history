@@ -1,0 +1,31 @@
+public_id: "100111"
+name: Oslo
+names:
+  - lang: ja
+    role: translation
+    text: オスロ
+  - lang: zh
+    role: translation
+    text: 奧斯陸
+  - lang: ko
+    role: translation
+    text: 오슬로
+  - lang: ru
+    role: translation
+    text: Осло
+kind: settlement
+parent: norway
+country_code: NO
+location: [10.73889, 59.91333]
+wikidata_id: Q585
+metadata:
+  sources: [Wikidata Q585 (retrieved 2026-10-08)]
+sources:
+  kind:
+    - accessed: 2026-10-08
+      property: P31
+      wikidata: Q585
+  location:
+    - accessed: 2026-10-08
+      property: P625
+      wikidata: Q585

@@ -1,0 +1,16 @@
+public_id: "100473"
+name: Marton
+kind: site
+location: [-1.2124, 54.5406]
+wikidata_id: Q441541
+metadata:
+  sources: [Wikidata Q441541 (retrieved 2026-10-16)]
+sources:
+  kind:
+    - accessed: 2026-10-16
+      property: P31
+      wikidata: Q441541
+  location:
+    - accessed: 2026-10-16
+      property: P625
+      wikidata: Q441541

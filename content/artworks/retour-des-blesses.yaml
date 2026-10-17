@@ -1,0 +1,101 @@
+public_id: "100279"
+title: Retour des blessés
+creator: theodore-chasseriau
+created: 1853
+kind: oil painting
+medium: Oil on panel
+dimensions: [37.5, 51.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0123
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/arthur-chasseriau
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+        note: "Footnote: Cousin des Künstlers, AStEGB, Inventarkarte Chassériau, Retour de blessés."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1953-03-11
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+        note: "Footnote: AStEGB, Eingangsbuch II, 18. Februar 1953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-03-11
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 28000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 123
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "123"
+    institution: foundation-e-g-buhrle-collection
+  - number: "226"
+    label: Sandoz (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48896/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

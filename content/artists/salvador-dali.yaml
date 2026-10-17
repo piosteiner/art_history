@@ -1,0 +1,182 @@
+public_id: "100133"
+name: Salvador Dalí
+given_name: Salvador
+family_name: Dalí
+birth: 1904-05-11
+death: 1989-01-23
+wikidata_id: Q5577
+metadata:
+  sources: [Wikidata Q5577 (retrieved 2026-10-09)]
+relationships:
+  - type: born_in
+    to: place/figueres
+    sources:
+      - accessed: 2026-10-13
+        property: P19
+        wikidata: Q5577
+      - url: https://d-nb.info/gnd/118523481
+        source: gnd
+        accessed: 2026-10-13
+      - url: https://rkd.nl/en/explore/artists/19752
+        source: rkd
+        accessed: 2026-10-13
+      - url: https://id.loc.gov/authorities/names/n79021554.html
+        source: lc
+        accessed: 2026-10-13
+  - type: died_in
+    to: place/figueres
+    sources:
+      - accessed: 2026-10-13
+        property: P20
+        wikidata: Q5577
+      - url: https://d-nb.info/gnd/118523481
+        source: gnd
+        accessed: 2026-10-13
+      - url: https://rkd.nl/en/explore/artists/19752
+        source: rkd
+        accessed: 2026-10-13
+      - url: https://id.loc.gov/authorities/names/n79021554.html
+        source: lc
+        accessed: 2026-10-13
+  - type: lived_in
+    to: place/figueres
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q5577
+  - type: lived_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-13
+        property: P551
+        wikidata: Q5577
+  - type: worked_in
+    to: place/delft
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: worked_in
+    to: place/manhattan
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: worked_in
+    to: place/mauritshuis
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: worked_in
+    to: place/singapore
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: worked_in
+    to: place/tel-aviv
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: worked_in
+    to: place/madrid
+    period: 1922/1926
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: worked_in
+    to: place/paris
+    period: 1926/1927
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: worked_in
+    to: place/spain
+    period: 1948/1989
+    sources:
+      - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5577
+  - type: influenced_by
+    to: artist/hieronymus-bosch
+    sources:
+      - accessed: 2026-10-13
+        property: P737
+        wikidata: Q5577
+  - type: influenced_by
+    to: artist/pablo-picasso
+    sources:
+      - accessed: 2026-10-13
+        property: P737
+        wikidata: Q5577
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-of-san-fernando
+    period: 1922/1926
+    sources:
+      - accessed: 2026-10-13
+        property: P69
+        wikidata: Q5577
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-10-13
+        property: P135
+        wikidata: Q5577
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Dali_Harcourt_1936.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dali_Harcourt_1936.jpg
+    license: Public domain
+    credit: Studio Harcourt
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Salvador_Dal%C3%AD_1939.jpg/1280px-Salvador_Dal%C3%AD_1939.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Salvador_Dal%C3%AD_1939.jpg
+    license: Public domain
+    credit: Van Vechten, Carl, 1880-1964.
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Salvador_Dali_NYWTS.jpg/1280px-Salvador_Dali_NYWTS.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Salvador_Dali_NYWTS.jpg
+    license: Public domain
+    credit: Roger Higgins, World Telegram staff photographer
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Dali_Allan_Warren.jpg/1280px-Dali_Allan_Warren.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dali_Allan_Warren.jpg
+    license: CC BY-SA 3.0
+    credit: Allan warren
+identifiers:
+  bnf: 11898472f
+  gnd: "118523481"
+  idref: "026809567"
+  kulturnav: a6d880ad-a6d4-4ff1-82a0-1b1ec8ca283f
+  lc: n79021554
+  nlk: KAC199606219
+  rkd: "19752"
+  ulan: "500009365"
+  viaf: "64004109"
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q5577
+    - url: https://d-nb.info/gnd/118523481
+      source: gnd
+      accessed: 2026-10-13
+    - url: https://id.loc.gov/authorities/names/n79021554.html
+      source: lc
+      accessed: 2026-10-13
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q5577
+    - url: https://d-nb.info/gnd/118523481
+      source: gnd
+      accessed: 2026-10-13
+    - url: https://id.loc.gov/authorities/names/n79021554.html
+      source: lc
+      accessed: 2026-10-13

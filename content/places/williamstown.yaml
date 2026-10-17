@@ -1,0 +1,22 @@
+public_id: "100153"
+name: Williamstown
+kind: settlement
+parent: united-states
+country_code: US
+location: [-73.20944, 42.71333]
+wikidata_id: Q983837
+metadata:
+  sources: [Wikidata Q983837 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q983837
+  parent:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q983837
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q983837

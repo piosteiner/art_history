@@ -1,0 +1,23 @@
+public_id: "100115"
+name: Maria Lassnig Foundation
+names: [Maria Lassnig Stiftung]
+founded: 2015
+place: austria
+website_url: https://www.marialassnig.org/
+wikidata_id: Q24718378
+metadata:
+  sources: [Wikidata Q24718378 (retrieved 2026-10-08)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Maria_Lassnig_mit_Sabine_Groschup%2C_Wien_2008.png
+    source_url: https://commons.wikimedia.org/wiki/File:Maria_Lassnig_mit_Sabine_Groschup,_Wien_2008.png
+    license: CC BY-SA 4.0
+    credit: Georg Weckwerth
+sources:
+  place:
+    - accessed: 2026-10-08
+      property: P131
+      wikidata: Q24718378
+  founded:
+    - accessed: 2026-10-08
+      property: P571
+      wikidata: Q24718378

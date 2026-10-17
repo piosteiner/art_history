@@ -1,0 +1,92 @@
+public_id: "100298"
+title: Heilige Barbara
+attribution_label: Swabia [Ulm?]
+created: 1470/1475
+kind: sculpture
+medium: Limewood
+dimensions: [127, 39, 34.3]
+institution: kunsthaus-zurich
+inventory_number: BU P.11
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/benno-griebert
+    role: dealer
+    ended: 1954-08-28
+    place: meersburg
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+        note: "Footnote: AStEGB, Rechnung der Galerie Dr. Griebert, Schloss Meersburg, ausgestellt auf Emil Bührle, 28.08.1954."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-08-28
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 9000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+        note: "Footnote: Rechnung wie oben Fussnote 3, mit Stempel «Gut zur Zahlung», paraphiert von Bührle."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P11
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: P11
+    institution: foundation-e-g-buhrle-collection
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/847316/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

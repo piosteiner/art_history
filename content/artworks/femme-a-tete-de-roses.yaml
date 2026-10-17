@@ -1,0 +1,46 @@
+public_id: "100134"
+title_lang: fr
+title: Femme à tête de roses
+names:
+  - lang: de
+    role: translation
+    text: Frau mit Rosenhaupt
+    status: official
+  - lang: en
+    role: translation
+    text: Woman with Head of Roses
+    status: official
+  - lang: fr
+    role: alternative
+    text: Deux femmes
+  - lang: es
+    role: alternative
+    text: Mujer con cabeza de rosas
+creator: salvador-dali
+created: 1935
+dimensions: [35, 27]
+institution: kunsthaus-zurich
+wikidata_id: Q102187650
+metadata:
+  sources: [Wikidata Q102187650 (retrieved 2026-10-09)]
+sources:
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/418/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/418/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/418/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/418/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/418/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09

@@ -1,0 +1,16 @@
+public_id: "100254"
+name: Barcelona
+kind: settlement
+location: [2.17694, 41.3825]
+wikidata_id: Q1492
+metadata:
+  sources: [Wikidata Q1492 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q1492
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q1492

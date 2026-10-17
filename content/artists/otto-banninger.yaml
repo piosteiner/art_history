@@ -1,0 +1,19 @@
+public_id: "100099"
+name: Otto Bänninger
+given_name: Otto
+family_name: Bänninger
+names: [Otto Charles Bänninger]
+birth: 1897-01-24
+death: 1973-05-15
+wikidata_id: Q15429125
+metadata:
+  sources: [Wikidata Q15429125 (retrieved 2026-10-07)]
+sources:
+  birth:
+    - accessed: 2026-10-07
+      property: P569
+      wikidata: Q15429125
+  death:
+    - accessed: 2026-10-07
+      property: P570
+      wikidata: Q15429125

@@ -1,0 +1,39 @@
+public_id: "100193"
+title_lang: de
+title: Genfersee mit Mont-Blanc am frühen Morgen
+creator: ferdinand-hodler
+created: 1918
+materials: [oil paint, canvas]
+dimensions: [65, 91.5]
+institution: kunsthaus-zurich
+inventory_number: 1992/0014
+web_url: https://collection.kunsthaus.ch/en/collection/item/1488/
+wikidata_id: Q117598272
+metadata:
+  sources: [Wikidata Q117598272 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Hodler_-_Genfersee_mit_Mont-Blanc_im_Morgenlicht.jpeg/1280px-Hodler_-_Genfersee_mit_Mont-Blanc_im_Morgenlicht.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Hodler_-_Genfersee_mit_Mont-Blanc_im_Morgenlicht.jpeg
+    license: Public domain
+    credit: Ferdinand Hodler
+sources:
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q117598272
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q117598272
+  dimensions:
+    - accessed: 2026-10-09
+      property: P2048
+      wikidata: Q117598272
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q117598272
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q117598272

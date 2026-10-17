@@ -1,0 +1,16 @@
+public_id: "100211"
+name: Florence
+kind: settlement
+location: [11.25417, 43.77139]
+wikidata_id: Q2044
+metadata:
+  sources: [Wikidata Q2044 (retrieved 2026-10-12)]
+sources:
+  kind:
+    - accessed: 2026-10-12
+      property: P31
+      wikidata: Q2044
+  location:
+    - accessed: 2026-10-12
+      property: P625
+      wikidata: Q2044

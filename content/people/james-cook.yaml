@@ -1,0 +1,54 @@
+public_id: "100472"
+name: James Cook
+given_name: James
+family_name: Cook
+names: [Captain James Cook, Captain Cook]
+kind: person
+occupations: [explorer, cartographer, naval officer, seafarer, botanist, discoverer]
+birth: 1728-10-27
+death: 1779-02-14
+wikidata_id: Q7324
+metadata:
+  sources: [Wikidata Q7324 (retrieved 2026-10-16)]
+relationships:
+  - type: born_in
+    to: place/marton
+    sources:
+      - accessed: 2026-10-16
+        property: P19
+        wikidata: Q7324
+  - type: died_in
+    to: place/kealakekua-bay
+    sources:
+      - accessed: 2026-10-16
+        property: P20
+        wikidata: Q7324
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Captainjamescookportrait.jpg/1280px-Captainjamescookportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Captainjamescookportrait.jpg
+    license: Public domain
+    credit: Nathaniel Dance-Holland
+identifiers:
+  bnf: 11897579w
+  dodis: P31115
+  gnd: "118522027"
+  idref: "026798018"
+  kulturnav: b89f314c-bb6e-4c5b-8b5a-84cbc469b028
+  lc: n78091496
+  nlk: KAC201934078
+  rkd: "260655"
+  ulan: "500132086"
+  viaf: "31994819"
+sources:
+  kind:
+    - accessed: 2026-10-16
+      property: P31
+      wikidata: Q7324
+  birth:
+    - accessed: 2026-10-16
+      property: P569
+      wikidata: Q7324
+  death:
+    - accessed: 2026-10-16
+      property: P570
+      wikidata: Q7324

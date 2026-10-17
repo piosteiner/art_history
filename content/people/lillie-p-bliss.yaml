@@ -1,0 +1,59 @@
+public_id: "100160"
+name: Lillie P. Bliss
+given_name: Lillie P.
+family_name: Bliss
+names: [Lillie Plummer Bliss, Lizzie Plummer Bliss]
+kind: person
+occupations: [art collector]
+birth: 1864-04-11
+death: 1931-03-12
+wikidata_id: Q1825229
+metadata:
+  sources: [Wikidata Q1825229 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-09
+        property: P27
+        wikidata: Q1825229
+  - type: born_in
+    to: place/boston
+    sources:
+      - accessed: 2026-10-09
+        property: P19
+        wikidata: Q1825229
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-09
+        property: P20
+        wikidata: Q1825229
+  - type: founded
+    to: institution/museum-of-modern-art
+    sources:
+      - accessed: 2026-10-09
+        property: P112
+        wikidata: Q188740
+identifiers:
+  gnd: "1031984690"
+  lc: nr97037876
+  ulan: "500314515"
+  viaf: "2377179"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q1825229
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q1825229
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q1825229
+  occupations:
+    - accessed: 2026-10-09
+      property: P106
+      wikidata: Q1825229

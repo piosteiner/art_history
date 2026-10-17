@@ -1,0 +1,18 @@
+public_id: "100131"
+name: René Magritte
+given_name: René
+family_name: Magritte
+birth: 1898-11-21
+death: 1967-08-15
+wikidata_id: Q7836
+metadata:
+  sources: [Wikidata Q7836 (retrieved 2026-10-09)]
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q7836
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q7836

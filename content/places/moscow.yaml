@@ -1,0 +1,16 @@
+public_id: "100137"
+name: Moscow
+kind: settlement
+location: [37.6175, 55.75056]
+wikidata_id: Q649
+metadata:
+  sources: [Wikidata Q649 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q649
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q649

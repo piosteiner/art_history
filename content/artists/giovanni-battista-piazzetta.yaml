@@ -1,0 +1,18 @@
+public_id: "100400"
+name: Giovanni Battista Piazzetta
+given_name: Giovanni Battista
+family_name: Piazzetta
+birth: 1683-02-13
+death: 1754-04-28
+wikidata_id: Q282670
+metadata:
+  sources: [Wikidata Q282670 (retrieved 2026-10-15)]
+sources:
+  birth:
+    - accessed: 2026-10-15
+      property: P569
+      wikidata: Q282670
+  death:
+    - accessed: 2026-10-15
+      property: P570
+      wikidata: Q282670

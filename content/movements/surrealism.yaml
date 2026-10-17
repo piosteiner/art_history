@@ -1,0 +1,16 @@
+public_id: "100239"
+name: surrealism
+kind: movement
+period: 1920/1929
+wikidata_id: Q39427
+metadata:
+  sources: [Wikidata Q39427 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q39427
+  period:
+    - accessed: 2026-10-13
+      property: P580
+      wikidata: Q39427

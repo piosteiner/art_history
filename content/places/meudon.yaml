@@ -1,0 +1,35 @@
+public_id: "100470"
+name: Meudon
+names:
+  - lang: ja
+    role: translation
+    text: ムードン
+  - lang: zh
+    role: translation
+    text: 默东
+  - lang: ko
+    role: translation
+    text: 뫼동
+  - lang: ru
+    role: translation
+    text: Мёдон
+kind: settlement
+parent: france
+country_code: FR
+location: [2.24028, 48.8075]
+wikidata_id: Q234735
+metadata:
+  sources: [Wikidata Q234735 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q234735
+  parent:
+    - accessed: 2026-10-15
+      property: P131
+      wikidata: Q234735
+  location:
+    - accessed: 2026-10-15
+      property: P625
+      wikidata: Q234735

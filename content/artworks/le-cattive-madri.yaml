@@ -1,0 +1,39 @@
+public_id: "100195"
+title_lang: de
+title: Le cattive madri
+creator: giovanni-segantini
+created: 1896/1897
+created_label: c. 1890s
+materials: [oil paint]
+institution: kunsthaus-zurich
+inventory_number: 1967/0066
+web_url: https://collection.kunsthaus.ch/en/collection/item/1306/
+wikidata_id: Q131584938
+metadata:
+  sources: [Wikidata Q131584938 (retrieved 2026-10-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6d/Giovanni_Segantini_-_Le_cattive_madri_-_1967-0066_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_-_Le_cattive_madri_-_1967-0066_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Giovanni Segantini
+sources:
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q131584938
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q131584938
+  materials:
+    - accessed: 2026-10-09
+      property: P186
+      wikidata: Q131584938
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q131584938
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q131584938

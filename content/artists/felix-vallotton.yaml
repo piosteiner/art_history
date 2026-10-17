@@ -1,0 +1,18 @@
+public_id: "100191"
+name: Félix Vallotton
+given_name: Félix
+family_name: Vallotton
+birth: 1865-12-28
+death: 1925-12-29
+wikidata_id: Q123740
+metadata:
+  sources: [Wikidata Q123740 (retrieved 2026-10-09)]
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q123740
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q123740

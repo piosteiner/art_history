@@ -1,0 +1,230 @@
+public_id: "100415"
+title: Idylle à Tahiti
+creator: paul-gauguin
+created: 1901
+kind: oil painting
+medium: Oil on canvas
+dimensions: [74.5, 94.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0045
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1902
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wie oben Fussnote 1: «This work was possibly part of the shipment that Paul Gauguin sent to Ambroise Vollard c. April 1902. See Shackelford 2003: \"[...] l'artiste put néanmoins annoncer à Vollard, qu'il s'apprêtait à lui envoyer une série de toiles. [...] Gauguin ne manqua pas d''expédier, un mois plus tard, une vingtaine de toiles à Paris [...] Idylle à Tahiti (W.598) [...]», S. 303, Fussnote 20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/arthur-fontaine
+    acquired: 1906
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Brief von Arthur Fontaine, Paris, an Wilhelm Barth [Kurator der Kunsthalle], Basel, vom 18.04.1928, in dem er auf eine Leihanfrage für seine Gauguin-Gemälde antwortet, dass er Idylle à Tahiti an J. Hessel, Paris, verkauft habe, Staatsarchiv Basel-Stadt, Archiv des Basler Kunstvereins, PA 888a, N 6 [1], 239 I."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/jos-hessel
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Archiv Kunstverein Basel, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/gaston-bernheim-de-villers
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wildenstein Plattner Institute 2020 PG6FYZ, wie oben Fussnote 1; Kat. National Gallery of Art 1990, S. 239, No. 56."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/edwin-m-otterbourg
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wildenstein 1964 598; Kat. National Gallery of Arts, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/josef-stransky
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Phillips Memorial Gallery 1926 (Sammlungskatalog), S. 36, 80, 98, Ill. 44."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/vandyck-gallery
+    role: dealer
+    ended: 1925
+    place: washington-d-c
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wildenstein Plattner Institute 2020 PG6FYZ, wie oben Fussnote 1; Kat. National Gallery of Arts 1990, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/duncan-phillips
+    acquired: 1925
+    ended: 1936
+    method: purchase
+    direct: true
+    place: washington-d-c
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/m-knoedler-co
+    role: agent
+    not_sold: true
+    acquired: 1934-12-19
+    ended: 1936-05
+    direct: true
+    place: new-york-city
+    label: on consignment for Duncan Phillips; returned — he traded the painting to the Newhouse Galleries (1936)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wie oben Fussnote 1: «On consignment with M. Knoedler & Co., New York (December 19, 1934, until c. May 1936). See Commission book 3: C6025-C6048, CA1-CA2090, 1927 August-1943 October Stock no.: CA720 [https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=IE994910]»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/newhouse-gallery
+    role: dealer
+    acquired: 1936-12
+    method: exchange
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wie oben Fussnote 1: «Information comes from the Phillips Collection, Washington, D.C.: [...] Gauguin’s Idyll of Tahiti [...] was deaccessioned to the Newhouse Galleries in 1936. It was traded/partial plus cash for Goya’s The Repentant St. Peter, which is still in The Phillips Collection.»; Kat. National Gallery of Arts 1990, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/aline-barnsdall
+    ended: 1946-12-18
+    place: los-angeles
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Getty Research Institute, Santa Monica (California) Knoedler Gallery Archiv, Stock Book 10, S. 84, Nr. A5035, [https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=IE684660]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/aline-barnsdall
+    role: estate
+    acquired: 1946-12-18
+    ended: 1952-03
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Das Lagerbuch der Galerie M. Knoedler & Co. weist auf einen gemeinsamen Besitz mit David Devine als Vormund hin, wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/m-knoedler-co
+    role: agent
+    acquired: 1952-03
+    ended: 1952
+    direct: true
+    place: new-york-city
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wie oben Fussnote 1: «See Commission Book Knoedler 5a: CA3810-CA5418 1951 January-1958 April, Stock no.: CA4178, [https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=IE1039793]»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/m-knoedler-co
+    role: dealer
+    acquired: 1952
+    ended: 1952-08-07
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wie oben Fussnote 1: «See Inventory cards: Sold alphabetical, Artists, Faber - Guys, 1907-1973, bulk 1907-1971, Item 0161, [https://rosettaapp.getty.edu/delivery/DeliveryManagerServlet?dps_pid=IE3593220]»; Stock Book Knoedler, wie oben Fussnote 18."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1952-08-07
+    ended: 1952-08-07
+    direct: true
+    place: zurich
+    label: the consignor to Bührle (Bührle’s acquisitions book)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Wie oben Fussnote 20."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-08-07
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        note: "Footnote: Erworben von Fritz Nathan, AStEGB, Eingangsbuch I, 15.07.1952, das Fritz Nathan, Zürich, als Einlieferer ausweist; Inventarkarte Gauguin, Idylle à Tahiti, die Dr. Arthur Kauffmann, London, als Verkäufer ausweist. Das auf der Karte angegebene Kaufdatum ist zwar der 25. 07.1952, doch handelt es sich  hier um das Datum der Abrechnung von Nathan mit Knoedler. Die Art von Kauffmanns Beteiligung an der …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 45
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: "45"
+    institution: foundation-e-g-buhrle-collection
+  - number: "598"
+    label: Wildenstein Gauguin (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

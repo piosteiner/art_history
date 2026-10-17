@@ -1,0 +1,186 @@
+public_id: "100271"
+name: Giovanni Battista Tiepolo
+given_name: Giovanni Battista
+family_name: Tiepolo
+birth: 1696-03-05
+death: 1770-03-27
+wikidata_id: Q186202
+metadata:
+  sources: [Wikidata Q186202 (retrieved 2026-10-15)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-15
+        property: P27
+        wikidata: Q186202
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-15
+        property: P19
+        wikidata: Q186202
+      - url: https://d-nb.info/gnd/118622625
+        source: gnd
+        accessed: 2026-10-15
+      - url: https://rkd.nl/en/explore/artists/77453
+        source: rkd
+        accessed: 2026-10-15
+      - url: https://data.bnf.fr/ark:/12148/cb11958435k
+        source: bnf
+        accessed: 2026-10-15
+      - url: https://kulturnav.org/8b8c375e-9d52-4042-8f4f-2bb118da0765
+        source: kulturnav
+        accessed: 2026-10-15
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-15
+        property: P20
+        wikidata: Q186202
+      - url: https://d-nb.info/gnd/118622625
+        source: gnd
+        accessed: 2026-10-15
+      - url: https://rkd.nl/en/explore/artists/77453
+        source: rkd
+        accessed: 2026-10-15
+      - url: https://data.bnf.fr/ark:/12148/cb11958435k
+        source: bnf
+        accessed: 2026-10-15
+      - url: https://kulturnav.org/8b8c375e-9d52-4042-8f4f-2bb118da0765
+        source: kulturnav
+        accessed: 2026-10-15
+  - type: worked_in
+    to: place/bergamo
+    sources:
+      - accessed: 2026-10-15
+        property: P937
+        wikidata: Q186202
+      - url: https://d-nb.info/gnd/118622625
+        source: gnd
+        accessed: 2026-10-15
+  - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-15
+        property: P937
+        wikidata: Q186202
+  - type: worked_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-15
+        property: P937
+        wikidata: Q186202
+      - url: https://d-nb.info/gnd/118622625
+        source: gnd
+        accessed: 2026-10-15
+  - type: worked_in
+    to: place/udine
+    sources:
+      - accessed: 2026-10-15
+        property: P937
+        wikidata: Q186202
+      - url: https://d-nb.info/gnd/118622625
+        source: gnd
+        accessed: 2026-10-15
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-15
+        property: P937
+        wikidata: Q186202
+  - type: worked_in
+    to: place/verona
+    sources:
+      - accessed: 2026-10-15
+        property: P937
+        wikidata: Q186202
+  - type: worked_in
+    to: place/vicenza
+    sources:
+      - accessed: 2026-10-15
+        property: P937
+        wikidata: Q186202
+      - url: https://d-nb.info/gnd/118622625
+        source: gnd
+        accessed: 2026-10-15
+  - type: worked_in
+    to: place/wurzburg
+    sources:
+      - accessed: 2026-10-15
+        property: P937
+        wikidata: Q186202
+      - url: https://d-nb.info/gnd/118622625
+        source: gnd
+        accessed: 2026-10-15
+  - type: influenced_by
+    to: artist/giovanni-battista-piazzetta
+    sources:
+      - accessed: 2026-10-15
+        property: P737
+        wikidata: Q186202
+  - type: influenced_by
+    to: artist/gregorio-lazzarini
+    sources:
+      - accessed: 2026-10-15
+        property: P737
+        wikidata: Q186202
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-15
+        property: P135
+        wikidata: Q186202
+  - type: associated_with
+    to: movement/rococo
+    sources:
+      - accessed: 2026-10-15
+        property: P135
+        wikidata: Q186202
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Tiepolo%2C_Giovanni_Battista_-_Fresken_Treppenhaus_des_W%C3%BCrzburger_Residenzschlosses%2C_Szenen_zur_Apotheose_des_F%C3%BCrstbischofs%2C_Detail_Giovanni_Battista_Tiepolo_-_1750-1753.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tiepolo,_Giovanni_Battista_-_Fresken_Treppenhaus_des_W%C3%BCrzburger_Residenzschlosses,_Szenen_zur_Apotheose_des_F%C3%BCrstbischofs,_Detail_Giovanni_Battista_Tiepolo_-_1750-1753.jpg
+    license: Public domain
+    credit: Giovanni Battista Tiepolo
+identifiers:
+  bnf: 11958435k
+  gnd: "118622625"
+  idref: "027573176"
+  kulturnav: 8b8c375e-9d52-4042-8f4f-2bb118da0765
+  lc: n80045041
+  rkd: "77453"
+  ulan: "500018523"
+  viaf: "71399712"
+sources:
+  birth:
+    - accessed: 2026-10-15
+      property: P569
+      wikidata: Q186202
+    - url: https://d-nb.info/gnd/118622625
+      source: gnd
+      accessed: 2026-10-15
+    - url: https://rkd.nl/en/explore/artists/77453
+      source: rkd
+      accessed: 2026-10-15
+    - url: https://data.bnf.fr/ark:/12148/cb11958435k
+      source: bnf
+      accessed: 2026-10-15
+    - url: https://kulturnav.org/8b8c375e-9d52-4042-8f4f-2bb118da0765
+      source: kulturnav
+      accessed: 2026-10-15
+  death:
+    - accessed: 2026-10-15
+      property: P570
+      wikidata: Q186202
+    - url: https://d-nb.info/gnd/118622625
+      source: gnd
+      accessed: 2026-10-15
+    - url: https://rkd.nl/en/explore/artists/77453
+      source: rkd
+      accessed: 2026-10-15
+    - url: https://data.bnf.fr/ark:/12148/cb11958435k
+      source: bnf
+      accessed: 2026-10-15
+    - url: https://kulturnav.org/8b8c375e-9d52-4042-8f4f-2bb118da0765
+      source: kulturnav
+      accessed: 2026-10-15

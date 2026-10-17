@@ -1,0 +1,23 @@
+public_id: "100100"
+name: Paul Cézanne
+given_name: Paul
+family_name: Cézanne
+birth: 1839-01-19
+death: 1906-10-22
+wikidata_id: Q35548
+metadata:
+  sources: [Wikidata Q35548 (retrieved 2026-10-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Paul-Cezanne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul-Cezanne.jpg
+    license: Public domain
+    credit: Unknown; Cézanne was born in 1839 and died in 1906
+sources:
+  birth:
+    - accessed: 2026-10-07
+      property: P569
+      wikidata: Q35548
+  death:
+    - accessed: 2026-10-07
+      property: P570
+      wikidata: Q35548

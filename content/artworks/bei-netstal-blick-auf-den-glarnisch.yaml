@@ -1,0 +1,34 @@
+public_id: "100197"
+title_lang: de
+title: Bei Netstal. Blick auf den Glärnisch
+creator: johann-gottfried-steffan
+created: 1873
+materials: [oil paint, canvas]
+institution: kunsthaus-zurich
+inventory_number: "2630"
+web_url: https://collection.kunsthaus.ch/en/collection/item/3990/
+wikidata_id: Q131586262
+metadata:
+  sources: [Wikidata Q131586262 (retrieved 2026-10-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/58/Johann_Gottfried_Steffan_-_Bei_Netstal._Blick_auf_den_Gl%C3%A4rnisch_-_2630_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johann_Gottfried_Steffan_-_Bei_Netstal._Blick_auf_den_Gl%C3%A4rnisch_-_2630_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Johann Gottfried Steffan
+sources:
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q131586262
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q131586262
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q131586262
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q131586262

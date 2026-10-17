@@ -1,0 +1,27 @@
+public_id: "100155"
+name: Clendenin James Ryan, Jr.
+given_name: Clendenin James, Jr.
+family_name: Ryan
+kind: person
+birth: 1905-07-16
+death: 1957-09-12
+wikidata_id: Q5131602
+metadata:
+  sources: [Wikidata Q5131602 (retrieved 2026-10-09)]
+identifiers:
+  gnd: "1252556713"
+  ulan: "500443527"
+  viaf: "4017157643304638590002"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q5131602
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q5131602
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q5131602

@@ -1,0 +1,25 @@
+public_id: "100209"
+name_lang: en
+name: Genoa
+names:
+  - lang: de
+    role: translation
+    text: Genua
+    status: official
+  - lang: it
+    role: original
+    text: Genova
+kind: settlement
+location: [8.93389, 44.40722]
+wikidata_id: Q1449
+metadata:
+  sources: [Wikidata Q1449 (retrieved 2026-10-12)]
+sources:
+  kind:
+    - accessed: 2026-10-12
+      property: P31
+      wikidata: Q1449
+  location:
+    - accessed: 2026-10-12
+      property: P625
+      wikidata: Q1449

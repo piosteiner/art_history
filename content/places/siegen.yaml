@@ -1,0 +1,29 @@
+public_id: "100584"
+name: Siegen
+names:
+  - lang: ko
+    role: translation
+    text: 지겐
+  - lang: ru
+    role: translation
+    text: Зиген
+kind: settlement
+parent: germany
+country_code: DE
+location: [8.01667, 50.87556]
+wikidata_id: Q3167
+metadata:
+  sources: [Wikidata Q3167 (retrieved 2026-10-17)]
+sources:
+  kind:
+    - accessed: 2026-10-17
+      property: P31
+      wikidata: Q3167
+  parent:
+    - accessed: 2026-10-17
+      property: P131
+      wikidata: Q3167
+  location:
+    - accessed: 2026-10-17
+      property: P625
+      wikidata: Q3167

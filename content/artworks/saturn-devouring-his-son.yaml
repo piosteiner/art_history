@@ -1,0 +1,45 @@
+public_id: "100180"
+title_lang: es
+title: Saturno devorando a un hijo
+names:
+  - lang: de
+    role: translation
+    text: Saturn verschlingt seinen Sohn
+creator: francisco-goya
+created: 1820/1823
+created_label: c. 1820s
+dimensions: [143.5, 81.4]
+institution: museo-del-prado
+inventory_number: P000763
+web_url: https://www.museodelprado.es/en/the-collection/art-work/saturn/18110a75-b0e7-430c-bc73-2a4d55893bd6
+description_md: "[Francisco Goya: Was steckt hinter seiner düsteren Kunst? | Die Geheimnisse der Meisterwerke | ARTE](https://www.youtube.com/watch?v=ZyEJL9Xx28M)"
+wikidata_id: Q1150997
+metadata:
+  sources: [Wikidata Q1150997 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg/1280px-Francisco_de_Goya%2C_Saturno_devorando_a_su_hijo_%281819-1823%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg
+    license: Public domain
+    credit: Francisco Goya
+identifiers:
+  viaf: "293064927"
+sources:
+  names:
+    - accessed: 2026-10-09
+      wikidata: Q1150997
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q1150997
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q1150997
+  dimensions:
+    - accessed: 2026-10-09
+      property: P2048
+      wikidata: Q1150997
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q1150997

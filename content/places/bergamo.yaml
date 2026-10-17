@@ -1,0 +1,16 @@
+public_id: "100403"
+name: Bergamo
+kind: settlement
+location: [9.67, 45.695]
+wikidata_id: Q628
+metadata:
+  sources: [Wikidata Q628 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q628
+  location:
+    - accessed: 2026-10-15
+      property: P625
+      wikidata: Q628

@@ -1,0 +1,16 @@
+public_id: "100186"
+name: France
+period: 843-08/
+country_codes: [FR]
+wikidata_id: Q142
+metadata:
+  sources: [Wikidata Q142 (retrieved 2026-10-09)]
+sources:
+  period:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q142
+  country_codes:
+    - accessed: 2026-10-09
+      property: P297
+      wikidata: Q142

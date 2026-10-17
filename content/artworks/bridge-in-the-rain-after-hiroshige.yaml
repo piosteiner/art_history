@@ -1,3 +1,4 @@
+public_id: "100005"
 title: Bridge in the Rain (after Hiroshige)
 creator: vincent-van-gogh
 created: 1887
@@ -13,3 +14,10 @@ relationships:
     label: painted copy
   - type: associated_with
     to: movement/japonisme
+  - type: copy_after
+    to: artwork/sudden-shower-over-shin-ohashi-bridge-and-atake
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Vincent_van_Gogh_-_Brug_in_de_regen-_naar_Hiroshige_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Brug_in_de_regen-_naar_Hiroshige_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Brug_in_de_regen-_naar_Hiroshige_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh

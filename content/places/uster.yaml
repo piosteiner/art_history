@@ -1,0 +1,26 @@
+public_id: "100466"
+name: Uster
+names:
+  - lang: ru
+    role: translation
+    text: Устер
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [8.71917, 47.34917]
+wikidata_id: Q64032
+metadata:
+  sources: [Wikidata Q64032 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q64032
+  parent:
+    - accessed: 2026-10-15
+      property: P131
+      wikidata: Q64032
+  location:
+    - accessed: 2026-10-15
+      property: P625
+      wikidata: Q64032

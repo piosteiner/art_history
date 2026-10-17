@@ -1,0 +1,45 @@
+public_id: "100106"
+name: Hans Wendland
+given_name: Hans
+family_name: Wendland
+names: [Dr. Hans Otto Carl Wendland, Hans Otto Carl Wendland]
+kind: person
+occupations: [art dealer, art collector]
+birth: 1880-12-28
+death: 1960/1970
+death_label: genaues Datum und Ort unbekannt
+description_md: '"German dealer and collector based in Switzerland, from 1926 in a large mansion in Lugano. He was implicated in the trade in art looted by the Nazi regime during WWII. At the end of the war, he was arrested and interrogated by the American forces (see interrogation report for full account of his activity)." [British Museum](https://www.britishmuseum.org/collection/term/BIOG50767)'
+wikidata_id: Q19661388
+metadata:
+  sources: [Wikidata Q19661388 (retrieved 2026-10-08)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-08
+        property: P27
+        wikidata: Q19661388
+  - type: born_in
+    to: place/neuruppin
+    sources:
+      - accessed: 2026-10-08
+        property: P19
+        wikidata: Q19661388
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/31/Hans_Adolf_Wendland.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Adolf_Wendland.jpg
+    license: Public domain
+    credit: AnonymousUnknown author
+sources:
+  kind:
+    - accessed: 2026-10-08
+      property: P31
+      wikidata: Q19661388
+  birth:
+    - accessed: 2026-10-08
+      property: P569
+      wikidata: Q19661388
+  occupations:
+    - accessed: 2026-10-08
+      property: P106
+      wikidata: Q19661388

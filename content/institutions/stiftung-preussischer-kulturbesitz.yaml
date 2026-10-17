@@ -1,0 +1,36 @@
+public_id: "100125"
+name_lang: de
+name: Stiftung Preußischer Kulturbesitz
+names:
+  - SPK
+  - lang: en
+    role: translation
+    text: Prussian Cultural Heritage Foundation
+    status: official
+kind: Stiftung
+founded: 1957
+place: germany
+location: [13.35517, 52.50671]
+description_md: Hat das Projekt [[source/galerie-das-20-jahrhunderts]] durchgeführt.
+website_url: https://www.preussischer-kulturbesitz.de/
+wikidata_id: Q685171
+metadata:
+  sources: [Wikidata Q685171 (retrieved 2026-10-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1a/Villa_von_der_Heydt_Berlin-Tiergarten.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Villa_von_der_Heydt_Berlin-Tiergarten.JPG
+    license: CC BY-SA 3.0
+    credit: Lienhard Schulz
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q685171
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q685171
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q685171

@@ -1,0 +1,24 @@
+public_id: "100175"
+title: Bauhaus Dessau
+created: 1925
+kind: building
+location: [12.2267, 51.8392]
+wikidata_id: Q516770
+metadata:
+  sources: [Wikidata Q516770 (retrieved 2026-10-09)]
+relationships:
+  - type: created_in
+    to: place/dessau-ro-lau
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg/1280px-Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg
+    license: FAL
+    credit: A.Savin
+identifiers:
+  gnd: "1049357531"
+  viaf: "136175948"
+sources:
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q516770

@@ -1,0 +1,35 @@
+public_id: "100372"
+name: St. Gallen
+names:
+  - lang: fr
+    role: translation
+    text: Saint-Gall
+  - lang: de
+    role: translation
+    text: Sankt Gallen
+  - lang: it
+    role: translation
+    text: San Gallo
+  - lang: es
+    role: translation
+    text: San Galo
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [9.37722, 47.42333]
+wikidata_id: Q25607
+metadata:
+  sources: [Wikidata Q25607 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q25607
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q25607
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q25607

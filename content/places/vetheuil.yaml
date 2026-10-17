@@ -1,0 +1,16 @@
+public_id: "100233"
+name: Vétheuil
+kind: settlement
+location: [1.70306, 49.06389]
+wikidata_id: Q920444
+metadata:
+  sources: [Wikidata Q920444 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q920444
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q920444

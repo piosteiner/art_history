@@ -1,0 +1,16 @@
+public_id: "100210"
+name: Milan
+kind: settlement
+location: [9.19, 45.46694]
+wikidata_id: Q490
+metadata:
+  sources: [Wikidata Q490 (retrieved 2026-10-12)]
+sources:
+  kind:
+    - accessed: 2026-10-12
+      property: P31
+      wikidata: Q490
+  location:
+    - accessed: 2026-10-12
+      property: P625
+      wikidata: Q490

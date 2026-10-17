@@ -1,0 +1,50 @@
+public_id: "100187"
+title_lang: de
+title: Meule au soleil
+names:
+  - lang: en
+    role: translation
+    text: Grainstack in Sunlight
+creator: claude-monet
+created: 1890s
+materials: [oil paint, canvas]
+dimensions: [60, 100]
+institution: kunsthaus-zurich
+inventory_number: 1969/0007
+web_url: https://collection.kunsthaus.ch/de/collection/item/2237/
+wikidata_id: Q48977661
+metadata:
+  sources: [Wikidata Q48977661 (retrieved 2026-10-09)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/51/Claude_Monet_-_Meule_au_soleil_-_1969-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Meule_au_soleil_-_1969-0007_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claude Monet
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b8/Poss_1288_Grainstack_in_Sunshine%2C_1891%2C_Meule_au_soleil%2C_Oil_on_Canvas%2C_60_x_100_cm%2C_Zurich%2C_Kunsthaus_Zurich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Poss_1288_Grainstack_in_Sunshine,_1891,_Meule_au_soleil,_Oil_on_Canvas,_60_x_100_cm,_Zurich,_Kunsthaus_Zurich.jpg
+    license: Public domain
+    credit: Claude Monet
+sources:
+  names:
+    - accessed: 2026-10-09
+      wikidata: Q48977661
+  created:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q48977661
+  creator:
+    - accessed: 2026-10-09
+      property: P170
+      wikidata: Q48977661
+  dimensions:
+    - accessed: 2026-10-09
+      property: P2048
+      wikidata: Q48977661
+  institution:
+    - accessed: 2026-10-09
+      property: P195
+      wikidata: Q48977661
+  inventory_number:
+    - accessed: 2026-10-09
+      property: P217
+      wikidata: Q48977661

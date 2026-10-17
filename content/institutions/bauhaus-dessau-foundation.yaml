@@ -1,0 +1,34 @@
+public_id: "100177"
+name: Bauhaus Dessau Foundation
+names:
+  - lang: de
+    role: translation
+    text: Stiftung Bauhaus Dessau
+founded: 1994
+place: dessau-ro-lau
+location: [12.22507, 51.8395]
+wikidata_id: Q1441998
+metadata:
+  sources: [Wikidata Q1441998 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Dessau_Bauhaus_neu.JPG/1280px-Dessau_Bauhaus_neu.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Dessau_Bauhaus_neu.JPG
+    license: CC BY-SA 3.0
+    credit: Lelikron
+identifiers:
+  gnd: 2153684-3
+  lc: nr96028066
+  viaf: "136490649"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q1441998
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q1441998
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q1441998

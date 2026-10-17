@@ -1,0 +1,51 @@
+public_id: "100145"
+name: Henry Clay Frick
+given_name: Henry Clay
+family_name: Frick
+names: [Henry C. Frick]
+kind: person
+occupations: [entrepreneur, art collector, industrialist]
+birth: 1849-12-19
+death: 1919-12-02
+wikidata_id: Q93709
+metadata:
+  sources: [Wikidata Q93709 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-09
+        property: P27
+        wikidata: Q93709
+  - type: born_in
+    to: place/west-overton
+    sources:
+      - accessed: 2026-10-09
+        property: P19
+        wikidata: Q93709
+  - type: founded
+    to: institution/the-frick-collection
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Henry_Clay_Frick.jpg/1280px-Henry_Clay_Frick.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Clay_Frick.jpg
+    license: Public domain
+    credit: Bain News Service
+identifiers:
+  gnd: "119010798"
+  lc: n88207762
+  rkd: "345640"
+  ulan: "500274405"
+  viaf: "45102466"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q93709
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q93709
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q93709

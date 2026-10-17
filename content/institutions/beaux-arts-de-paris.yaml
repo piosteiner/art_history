@@ -1,0 +1,11 @@
+public_id: "100213"
+name: Beaux-Arts de Paris
+founded: 1797-04-20
+wikidata_id: Q273593
+metadata:
+  sources: [Wikidata Q273593 (retrieved 2026-10-12)]
+sources:
+  founded:
+    - accessed: 2026-10-12
+      property: P571
+      wikidata: Q273593

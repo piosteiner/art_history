@@ -1,0 +1,58 @@
+public_id: "100224"
+name: Paul Vogler
+given_name: Paul
+family_name: Vogler
+birth: 1852
+death: 1904-12
+wikidata_id: Q3372389
+metadata:
+  sources: [Wikidata Q3372389 (retrieved 2026-10-13)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-13
+        property: P27
+        wikidata: Q3372389
+  - type: born_in
+    to: place/former-7th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-13
+        property: P19
+        wikidata: Q3372389
+  - type: died_in
+    to: place/verneuil-sur-avre
+    sources:
+      - accessed: 2026-10-13
+        property: P20
+        wikidata: Q3372389
+  - type: student_of
+    to: artist/alfred-sisley
+    sources:
+      - accessed: 2026-10-13
+        property: P802
+        wikidata: Q175130
+      - accessed: 2026-10-13
+        property: P1066
+        wikidata: Q3372389
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-13
+        property: P135
+        wikidata: Q3372389
+identifiers:
+  bnf: 16713546t
+  idref: "180921223"
+  rkd: "81616"
+  ulan: "500005289"
+  viaf: "95713071"
+sources:
+  birth:
+    - accessed: 2026-10-13
+      property: P569
+      wikidata: Q3372389
+  death:
+    - accessed: 2026-10-13
+      property: P570
+      wikidata: Q3372389

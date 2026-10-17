@@ -1,0 +1,30 @@
+public_id: "100161"
+name: Mary Quinn Sullivan
+given_name: Mary Quinn
+family_name: Sullivan
+kind: person
+birth: 1877
+death: 1939-12-05
+wikidata_id: Q2777901
+metadata:
+  sources: [Wikidata Q2777901 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/museum-of-modern-art
+    sources:
+      - accessed: 2026-10-09
+        property: P112
+        wikidata: Q188740
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q2777901
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q2777901
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q2777901

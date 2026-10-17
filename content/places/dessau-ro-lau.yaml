@@ -1,0 +1,26 @@
+public_id: "100176"
+name: Dessau-Roßlau
+names:
+  - lang: ja
+    role: translation
+    text: デッサウ=ロスラウ
+kind: settlement
+parent: germany
+country_code: DE
+location: [12.23333, 51.83333]
+wikidata_id: Q3828
+metadata:
+  sources: [Wikidata Q3828 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q3828
+  parent:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q3828
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q3828

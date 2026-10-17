@@ -1,0 +1,155 @@
+public_id: "100414"
+title_lang: fr
+title: Carrière aux environs de Pontoise
+names:
+  - lang: de
+    role: translation
+    text: Steinbruch bei Pontoise
+    status: official
+  - lang: en
+    role: translation
+    text: Chou Quarry, Hole in the Cliff
+    status: official
+creator: paul-gauguin
+created: 1882
+kind: oil painting
+medium: Oil on canvas
+dimensions: [89, 116]
+institution: kunsthaus-zurich
+inventory_number: 1981/0005
+web_url: https://collection.kunsthaus.ch/de/collection/item/1967/
+on_loan: true
+on_loan_since: 1981
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4d/Paul_Gauguin_-_Carri%C3%A8re_aux_environs_de_Pontoise_-_1981-0005_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Carri%C3%A8re_aux_environs_de_Pontoise_-_1981-0005_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paul Gauguin
+provenance:
+  - owner: person/emile-armand-bertaux
+    acquired: 1882-11-09
+    method: purchase
+    direct: true
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        note: "Footnote: Wildenstein 2001, I.101.88: \"Vendu par Gauguin en novembre 1882 à son ami le coulissier Émile Armand Bertaux - sur celui-ci, cf. la notice du n° 96 - pour 500 F, en même temps qu'une autre vue de Pontoise au même prix.\"; Merlhès 1984 Bd. 1, S. 35-36: Brief von Paul Gauguin an Camille Pissarro, 09.11.1882."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/ambroise-vollard
+    acquired: 1899
+    ended: 1939-07-22 or earlier
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        note: 'Footnote: Werkverzeichnis, wie oben Fussnote 2; Ambroise Vollard Records, c. 1842–1952, The Wildenstein Plattner Institute, Inc., Stock book A 1899–1904, https://digitalprojects.wpi.art/archive/search/detail?id=170532-stock-book-a [Zugriff: 08.03.2024]: wohl Nr. 4098, "Petite colline vert", 1882, 98 x 105; Ambroise Vollard Records, c. 1842–1952, The Wildenstein Plattner Institute, Inc., 1922 Inventory [3001…'
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/ambroise-vollard
+    role: estate
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/martin-fabiani
+    role: dealer
+    acquired: 1952
+    ended: 1952
+    direct: true
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        note: "Footnote: Werkdossier, handschriftliche Notiz von Martin Fabiani, o.D. und maschinengeschriebene Anmerkung von André Schoeller, 18.01.1952; FABIANI Martin (DE), Répertoire des acteurs du marché de l'art en France sous l'Occupation, 1940-1945, RAMA (FR) - INHA, http://agorha.inha.fr/detail/493 [Zugriff: 08.03.2024]; Martin Fabiani, National Gallery of Art, https://www.nga.gov/collection/artist-info.22376.htm…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/rene-kuss
+    acquired: 1960 or earlier
+    ended: 1964 or later
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        note: "Footnote: Werkverzeichnis, wie oben Fussnote 2: \"Acheté à un proche de Vollard par le professeur René Küss, Paris, peu après la Seconde Guerre mondiale.\"; Merlhès 1984 Bd. 1, S. 370, Anmerkung 81: \"ll s'agit probablement de l'oeuvre exposée à la Galerie Charpentier, en 1960, sous le n° 10 et le titre erroné « Paysage de Bretagne», (Catalogue Gauguin, 1964, n° 72); la dimension de cette oeuvre, 86 x 116 cm, …"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/hotel-rameau
+    role: agent
+    not_sold: true
+    acquired: 1975-06-04
+    ended: 1975-06-04
+    method: auction
+    place: versailles
+    label: lot 107
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        note: "Footnote: Werkverzeichnis, wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner_label: private collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/malingue-s-a
+    role: dealer
+    ended: 1981-05-27
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        note: "Footnote: Werkdokument, Rechnung der Galerie Daniel Malingue an Felix Baumann, 27.05.1981."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/vereinigung-zurcher-kunstfreunde
+    acquired: 1981-05-27
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+        note: "Footnote: Werkverzeichnis, wie oben Fussnote 2; Werkdokument, wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: "88"
+    label: Wildenstein (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-16
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1967/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

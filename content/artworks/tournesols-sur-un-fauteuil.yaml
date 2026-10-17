@@ -1,0 +1,230 @@
+public_id: "100091"
+title_lang: fr
+title: Tournesols sur un fauteuil
+names:
+  - lang: en
+    role: translation
+    text: Sunflowers on an Armchair
+  - lang: de
+    role: translation
+    text: Sonnenblumen auf einem Armsessel
+creator: paul-gauguin
+created: 1901
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [68, 75.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0046
+web_url: https://collection.kunsthaus.ch/de/collection/item/512959/
+on_loan: true
+on_loan_since: 2021
+wikidata_id: Q64174082
+metadata:
+  sources: [Wikidata Q64174082 (retrieved 2026-10-07)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7b/Paul_Gauguin_-_Tournesols_sur_un_fauteuil_-_46_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Tournesols_sur_un_fauteuil_-_46_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Paul Gauguin
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: between 1901 and 28 October 1904
+    ended: 1904-10-28
+    method: purchase
+    direct: true
+    place: paris
+    label: bought from the artist
+    price:
+      amount: 200
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: Kat. Grand Palais 2011, no. 21 (bought from the artist for FF 200)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/leo-stein
+    co_owners: [person/gertrude-stein]
+    acquired: 1904-10-28
+    ended: 1908-04-27
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: Diffre 2003/04, p. 311."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1908-04-27
+    method: exchange
+    direct: true
+    place: paris
+    label: taken back in exchange for works and cash
+    notes_md: Then whereabouts unknown.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: as for Vollard 1904."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/walther-halvorsen
+    role: dealer
+    ended: 1928-11-17
+    place: paris
+    label: Paris and Oslo
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: ZADIK Köln, Thannhauser-Archiv, Lagerbuch II, no. 1302."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/galerie-thannhauser
+    role: dealer
+    acquired: 1928-11-17
+    ended: 1929-06-22
+    method: purchase
+    direct: true
+    place: berlin
+    price:
+      amount: 18000
+      currency: USD
+      note: ca.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: ZADIK Köln, Thannhauser-Archiv, Lagerbuch II; Thannhauser–Halvorsen correspondence 1953 (price ca. USD 18,000)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/josef-stransky
+    acquired: 1929-06-22
+    ended: 1936-03-06
+    method: purchase
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: Lagerbuch II; Dale/Flint 1935 (Art News supplement), pp. 86–117."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/josef-stransky
+    role: estate
+    acquired: 1936-03-06
+    ended: 1945
+    method: inheritance
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: Wildenstein Plattner Institute, no. PG62DT."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/wildenstein-co
+    role: dealer
+    ended: 1945-06-04
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: Wildenstein Plattner Institute, no. PG62DT."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/sam-salz
+    role: dealer
+    acquired: 1945-06-04
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: National Gallery of Art, Washington, Sam Salz Archive, Collection Summary 1939–1981, p. 94."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/oskar-homolka
+    acquired: 1945
+    ended: 26 March 1952 or later
+    method: purchase
+    place: los-angeles
+    label: Hollywood
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: Sam Salz Archive, Collection Summary."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    acquired: 26 March 1952 or later
+    ended: 1952-07-01
+    method: purchase
+    direct: true
+    place: zurich
+    label: "the Kunsthaus line names Walter Feilchenfeldt (*1939); its footnote: Walter Feilchenfeldt sen. (1894–1953) agreed the sale with Homolka in March 1952"
+    notes_md: 'The Kunsthaus names "Walter Feilchenfeldt (*1939)" — but its own footnote says Walter Feilchenfeldt sen., and the son was 13 in 1952: the dealer is the father (1894–1953).'
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        note: "Footnote: Walter Feilchenfeldt, Zürich, 11.11.2019, from a letter of Marianne Feilchenfeldt to Grete Ring, 26.03.1952."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1952-07-01
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    notes_md: Purchase price unknown; insured for CHF 250,000 when lent to the Gauguin exhibition in Edinburgh and London, 1955 (Bührle archive).
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-08
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-08
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 46
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/512959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-08
+numbers:
+  - number: "46"
+    institution: foundation-e-g-buhrle-collection
+  - number: "602"
+    label: Wildenstein (catalogue raisonné)
+sources:
+  kind:
+    - accessed: 2026-10-07
+      property: P31
+      wikidata: Q64174082
+  medium:
+    - accessed: 2026-10-07
+      property: P186
+      wikidata: Q64174082
+  created:
+    - accessed: 2026-10-07
+      property: P571
+      wikidata: Q64174082
+  creator:
+    - accessed: 2026-10-07
+      property: P170
+      wikidata: Q64174082
+  materials:
+    - accessed: 2026-10-07
+      property: P186
+      wikidata: Q64174082
+  dimensions:
+    - accessed: 2026-10-07
+      property: P2048
+      wikidata: Q64174082
+  inventory_number:
+    - accessed: 2026-10-07
+      property: P217
+      wikidata: Q64174082

@@ -1,0 +1,16 @@
+public_id: "100243"
+name: Singapore
+kind: country
+location: [103.8, 1.3]
+wikidata_id: Q334
+metadata:
+  sources: [Wikidata Q334 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q334
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q334

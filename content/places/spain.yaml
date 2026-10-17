@@ -1,0 +1,16 @@
+public_id: "100183"
+name: Spain
+kind: country
+location: [-3.5, 40.2]
+wikidata_id: Q29
+metadata:
+  sources: [Wikidata Q29 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q29
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q29

@@ -1,0 +1,18 @@
+public_id: "100109"
+name: Norway
+kind: country
+country_code: NO
+boundary_code: NO
+location: [10.68333, 59.93333]
+wikidata_id: Q20
+metadata:
+  sources: [Wikidata Q20 (retrieved 2026-10-08)]
+sources:
+  kind:
+    - accessed: 2026-10-08
+      property: P31
+      wikidata: Q20
+  location:
+    - accessed: 2026-10-08
+      property: P625
+      wikidata: Q20

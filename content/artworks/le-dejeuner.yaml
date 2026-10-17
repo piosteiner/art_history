@@ -1,0 +1,165 @@
+public_id: "100285"
+title: Le Déjeuner
+creator: pierre-bonnard
+created: 1899
+kind: oil painting
+medium: Oil on cardboard
+dimensions: [54.5, 70.5]
+institution: kunsthaus-zurich
+inventory_number: BU 0003
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner_label: Rosenberg
+    ended: 1900
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Dauberville 216."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1900
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1903-03-04
+    ended: 1907-01-03
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/alexandre-natanson
+    acquired: 1907-01-30
+    ended: 1914
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1914
+    ended: 1916
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner_label: unknown (collector)
+    acquired: 1916-02-05
+    method: purchase
+    label: Schweden
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Erworben über den Kunstnerforbundet (Künstlervereinigung), Stockholm, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/john-scheidegger
+    acquired: 1946-02-05 or earlier
+    ended: 1946-03-22
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Das Angebot des in Skandinavien lebenden Schweizers John Scheidegger vom 05.02.1946 an die Zürcher Kunstgesellschaft, das Gemälde für 22.000 CHF zu kaufen, wurde in der Sammlungskommission an den Sitzungen vom 20.02.1946 und vom 20.03.1946 diskutiert. Die Kommission erachtete das Gemälde als wünschenswert, aber zu teuer, Sammlungskommission, Protokolle vom 20.02.1946 und 20.03.1946, Archiv ZKG/KHZ…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1946-03-22
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 16000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        note: "Footnote: Besteuerung 1947 Emil Bührle-Schalk, («Steuerpflichtige Fahrhabe») Liste der zwischen November 1945 und Januar 1948 erworbenen Gemälde: Zahlung von CHF 16.000 an Scheidegger, für Bonnard, am 22.03.1946, Staatsarchiv Zürich, Z 418.789."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 3
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "3"
+    institution: foundation-e-g-buhrle-collection
+  - number: "216"
+    label: Dauberville (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600961/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

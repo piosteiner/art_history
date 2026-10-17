@@ -1,0 +1,12 @@
+public_id: "100499"
+name: Hamburger Kunsthalle
+founded: 1868
+place: hamburg
+wikidata_id: Q169542
+metadata:
+  sources: [Wikidata Q169542 (retrieved 2026-10-16)]
+sources:
+  founded:
+    - accessed: 2026-10-16
+      property: P571
+      wikidata: Q169542

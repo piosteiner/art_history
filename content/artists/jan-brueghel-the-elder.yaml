@@ -1,0 +1,18 @@
+public_id: "100198"
+name: Jan Brueghel the Elder
+given_name: Jan, the Elder
+family_name: Brueghel
+birth: 1568
+death: 1625-01-13
+wikidata_id: Q209050
+metadata:
+  sources: [Wikidata Q209050 (retrieved 2026-10-09)]
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q209050
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q209050

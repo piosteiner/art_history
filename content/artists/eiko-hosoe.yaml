@@ -1,3 +1,4 @@
+public_id: "100054"
 name: Eikō Hosoe
 names: [細江英公]
 birth: 1933-03-18
@@ -10,3 +11,12 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Toshihiro_Hosoe_cropped_1_Toshihiro_Hosoe_201011.jpg
     license: CC BY 4.0
     credit: 大臣官房人事課
+sources:
+  birth:
+    - accessed: 2026-10-05
+      property: P569
+      wikidata: Q2564831
+  death:
+    - accessed: 2026-10-05
+      property: P570
+      wikidata: Q2564831

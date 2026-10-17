@@ -1,0 +1,29 @@
+public_id: "100585"
+name: Marburg
+names:
+  - lang: es
+    role: translation
+    text: Marburgo
+  - lang: ru
+    role: translation
+    text: Марбург
+kind: settlement
+parent: germany
+country_code: DE
+location: [8.76667, 50.81667]
+wikidata_id: Q3869
+metadata:
+  sources: [Wikidata Q3869 (retrieved 2026-10-17)]
+sources:
+  kind:
+    - accessed: 2026-10-17
+      property: P31
+      wikidata: Q3869
+  parent:
+    - accessed: 2026-10-17
+      property: P131
+      wikidata: Q3869
+  location:
+    - accessed: 2026-10-17
+      property: P625
+      wikidata: Q3869

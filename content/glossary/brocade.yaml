@@ -1,0 +1,30 @@
+public_id: "100074"
+name: brocade
+names:
+  - lang: fr
+    role: translation
+    text: brocart
+  - lang: de
+    role: translation
+    text: Brokat
+  - lang: it
+    role: translation
+    text: broccato
+category: technique
+definition: textile produced by brocading; in general, any richly figured fabric, often incorporating metal thread
+wikidata_id: Q649022
+metadata:
+  sources: [Wikidata Q649022 (retrieved 2026-10-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Textile_with_Design_of_Geometric_and_Floral_Meanders_LACMA_M.63.4.1.jpg/1280px-Textile_with_Design_of_Geometric_and_Floral_Meanders_LACMA_M.63.4.1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Textile_with_Design_of_Geometric_and_Floral_Meanders_LACMA_M.63.4.1.jpg
+    license: Public domain
+    credit: After James Lehman (England, circa 1688-1745)
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8f/1950c_Christian_Dior_cocktail_dress%2C_jacquard-woven_silk_brocade_with_metallic_threads_03.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1950c_Christian_Dior_cocktail_dress,_jacquard-woven_silk_brocade_with_metallic_threads_03.jpg
+    license: CC0
+    credit: Staff photographer, Rhode Island School of Design Museum of Art
+sources:
+  definition:
+    - accessed: 2026-10-06
+      wikidata: Q649022

@@ -1,0 +1,16 @@
+public_id: "100214"
+name: Impressionism
+kind: movement
+period: 1860/1869
+wikidata_id: Q40415
+metadata:
+  sources: [Wikidata Q40415 (retrieved 2026-10-12)]
+sources:
+  kind:
+    - accessed: 2026-10-12
+      property: P31
+      wikidata: Q40415
+  period:
+    - accessed: 2026-10-12
+      property: P580
+      wikidata: Q40415

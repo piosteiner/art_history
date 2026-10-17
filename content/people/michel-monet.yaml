@@ -1,0 +1,15 @@
+public_id: "100085"
+name: Michel Monet
+given_name: Michel
+family_name: Monet
+kind: person
+birth: 1878
+death: 1966
+description_md: Second son of [[artist/claude-monet]]; inherited his father's estate in 1926.
+relationships:
+  - type: born_in
+    to: place/paris
+    period: 1878
+  - type: died_in
+    to: place/vernon
+    period: 1966

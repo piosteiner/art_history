@@ -1,0 +1,16 @@
+public_id: "100251"
+name: Málaga
+kind: settlement
+location: [-4.41667, 36.71667]
+wikidata_id: Q8851
+metadata:
+  sources: [Wikidata Q8851 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q8851
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q8851

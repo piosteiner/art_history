@@ -1,0 +1,60 @@
+public_id: "100170"
+name: Paul Mellon
+given_name: Paul
+family_name: Mellon
+kind: person
+occupations: [entrepreneur, art collector, philanthropist]
+birth: 1907-06-11
+death: 1999-02-01
+wikidata_id: Q1542805
+metadata:
+  sources: [Wikidata Q1542805 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-09
+        property: P27
+        wikidata: Q1542805
+  - type: born_in
+    to: place/pittsburgh
+    sources:
+      - accessed: 2026-10-09
+        property: P19
+        wikidata: Q1542805
+  - type: died_in
+    to: place/upperville
+    sources:
+      - accessed: 2026-10-09
+        property: P20
+        wikidata: Q1542805
+  - type: founded
+    to: institution/yale-center-for-british-art
+    sources:
+      - accessed: 2026-10-09
+        property: P112
+        wikidata: Q6352575
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Paul_Mellon%2C_by_William_Orpen_%281878-1931%29_%28cropped%29_%28cropped%29.jpg/1280px-Paul_Mellon%2C_by_William_Orpen_%281878-1931%29_%28cropped%29_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Mellon,_by_William_Orpen_(1878-1931)_(cropped)_(cropped).jpg
+    license: Public domain
+    credit: William Orpen
+identifiers:
+  gnd: "119527162"
+  lc: n50007219
+  rkd: "357045"
+  ulan: "500253675"
+  viaf: "13551621"
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q1542805
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q1542805
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q1542805

@@ -1,0 +1,35 @@
+public_id: "100465"
+name: Béziers
+names:
+  - lang: ja
+    role: translation
+    text: ベジエ
+  - lang: zh
+    role: translation
+    text: 貝濟耶
+  - lang: ko
+    role: translation
+    text: 베지에
+  - lang: ru
+    role: translation
+    text: Безье
+kind: settlement
+parent: france
+country_code: FR
+location: [3.21611, 43.34333]
+wikidata_id: Q174019
+metadata:
+  sources: [Wikidata Q174019 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q174019
+  parent:
+    - accessed: 2026-10-15
+      property: P131
+      wikidata: Q174019
+  location:
+    - accessed: 2026-10-15
+      property: P625
+      wikidata: Q174019

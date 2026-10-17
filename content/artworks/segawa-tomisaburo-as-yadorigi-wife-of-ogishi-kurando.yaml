@@ -1,5 +1,6 @@
+public_id: "100066"
 title: Segawa Tomisaburō as Yadorigi, wife of Ogishi Kurando
-creator: sharaku
+creator: toshusai-sharaku
 created: 1794
 wikidata_id: Q62024406
 metadata:
@@ -13,3 +14,12 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Sharaku_-_Segawa_Tomisabur%C5%8D_as_Yadorigi,_wife_of_Ogishi_Kurando.png
     license: Public domain
     credit: Tōshūsai Sharaku
+sources:
+  created:
+    - accessed: 2026-10-05
+      property: P571
+      wikidata: Q62024406
+  creator:
+    - accessed: 2026-10-05
+      property: P170
+      wikidata: Q62024406

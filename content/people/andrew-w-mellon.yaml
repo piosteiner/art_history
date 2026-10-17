@@ -1,0 +1,38 @@
+public_id: "100164"
+name: Andrew W. Mellon
+given_name: Andrew W.
+family_name: Mellon
+names:
+  - lang: en
+    role: original
+    text: Andrew Mellon
+  - A. W. Mellon
+  - Andrew William Mellon
+birth: 1855-03-24
+death: 1937-08-26
+wikidata_id: Q446858
+metadata:
+  sources: [Wikidata Q446858 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/national-gallery-of-art
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/AWMellon.jpg/1280px-AWMellon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AWMellon.jpg
+    license: Public domain
+    credit: Trinity Court Studio, a photography studio in Pittsburgh, Pennsylvania
+identifiers:
+  gnd: "119526549"
+  lc: n84033829
+  rkd: "352948"
+  ulan: "500356367"
+  viaf: "62360327"
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q446858
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q446858

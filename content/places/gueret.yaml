@@ -1,0 +1,35 @@
+public_id: "100366"
+name: Guéret
+names:
+  - lang: ja
+    role: translation
+    text: ゲレ
+  - lang: zh
+    role: translation
+    text: 盖雷
+  - lang: ko
+    role: translation
+    text: 게레
+  - lang: ru
+    role: translation
+    text: Гере
+kind: settlement
+parent: france
+country_code: FR
+location: [1.86833, 46.17056]
+wikidata_id: Q188511
+metadata:
+  sources: [Wikidata Q188511 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q188511
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q188511
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q188511

@@ -1,0 +1,11 @@
+public_id: "100477"
+name: Fogg Museum
+founded: 1896
+wikidata_id: Q809600
+metadata:
+  sources: [Wikidata Q809600 (retrieved 2026-10-16)]
+sources:
+  founded:
+    - accessed: 2026-10-16
+      property: P571
+      wikidata: Q809600

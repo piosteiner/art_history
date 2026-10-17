@@ -1,0 +1,112 @@
+public_id: "100410"
+title: La Barrière
+creator: paul-gauguin
+created: 1889
+kind: oil painting
+medium: Oil on canvas
+dimensions: [92.5, 73]
+institution: kunsthaus-zurich
+inventory_number: 1981/0002
+provenance:
+  - owner: person/daniel-de-monfreid
+    acquired: 1891-02
+    ended: 1929-11-26
+    method: purchase
+    direct: true
+    place: paris
+    label: the source dates it “32.2.1891” (no such day)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+        note: "Footnote: Wildenstein Plattner Institute, 2025, No. PG5S1U."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/agnes-huc-de-monfreid
+    method: inheritance
+    direct: true
+    place: beziers
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/henry-de-monfreid
+    method: inheritance
+    direct: true
+    place: beziers
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/walter-feilchenfeldt
+    role: dealer
+    ended: 1953
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+        note: "Footnote: Schriftliche Notiz von Hilde (oder Alfred?) Hausammann über Ankauf 1953 bei Feilchenfeldt, Zürich, gemäss Telefonat mit Walter Feilchenfeldt, 14.01.2022."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/alfred-hausammann
+    acquired: 1953
+    ended: 1971
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+        note: "Footnote: Wie oben Fussnote 3; Schriftliche Notiz von Hilde (oder Alfred?) Hausammann, wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/hilde-hausammann-aebi
+    acquired: 1971
+    ended: 1980
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/kunsthaus-zurich
+    acquired: 1981
+    method: bequest
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: "353"
+    label: Wildenstein (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

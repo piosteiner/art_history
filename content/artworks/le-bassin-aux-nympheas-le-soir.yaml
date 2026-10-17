@@ -1,0 +1,77 @@
+public_id: "100080"
+title_lang: fr
+title: Le Bassin aux nymphéas, le soir
+names:
+  - lang: de
+    role: translation
+    text: Der Seerosenteich am Abend
+  - lang: en
+    role: translation
+    text: The Water Lily Pond in the Evening
+creator: claude-monet
+created: 1914/1922
+kind: oil painting
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [200, 600]
+institution: kunsthaus-zurich
+inventory_number: 1952/0064
+wikidata_id: Q124250959
+metadata:
+  sources: [Wikidata Q124250959 (retrieved 2026-10-06)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/87/Claude_Monet_-_Le_Bassin_aux_nymph%C3%A9as%2C_le_soir_-_1952-0064_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Bassin_aux_nymph%C3%A9as,_le_soir_-_1952-0064_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: person/michel-monet
+    acquired: 1926
+    ended: 1952
+    method: inheritance
+    place: sorel-moussel
+    label: estate (Nachlass)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+        source: kunsthaus-zurich-sammlung-online
+  - owner: person/emil-georg-buhrle
+    acquired: 1952
+    method: purchase
+    place: zurich
+    notes_md: in 1952 the artwork was donated to the Kunsthaus Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+        source: kunsthaus-zurich-sammlung-online
+  - owner: institution/kunsthaus-zurich
+    acquired: 1952
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+        source: kunsthaus-zurich-sammlung-online
+sources:
+  medium:
+    - accessed: 2026-10-06
+      property: P186
+      wikidata: Q124250959
+  creator:
+    - accessed: 2026-10-06
+      property: P170
+      wikidata: Q124250959
+  materials:
+    - accessed: 2026-10-06
+      property: P186
+      wikidata: Q124250959
+  dimensions:
+    - accessed: 2026-10-06
+      property: P2048
+      wikidata: Q124250959
+  institution:
+    - accessed: 2026-10-06
+      property: P195
+      wikidata: Q124250959
+  inventory_number:
+    - accessed: 2026-10-06
+      property: P217
+      wikidata: Q124250959

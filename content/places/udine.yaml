@@ -1,0 +1,16 @@
+public_id: "100404"
+name: Udine
+kind: settlement
+location: [13.23333, 46.06667]
+wikidata_id: Q2790
+metadata:
+  sources: [Wikidata Q2790 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q2790
+  location:
+    - accessed: 2026-10-15
+      property: P625
+      wikidata: Q2790

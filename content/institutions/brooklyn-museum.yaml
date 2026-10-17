@@ -1,0 +1,32 @@
+public_id: "100097"
+name: Brooklyn Museum
+founded: 1897
+place: new-york-city
+location: [-73.96363, 40.67121]
+address: 200 Eastern Parkway, Brooklyn, NY 11238
+website_url: https://www.brooklynmuseum.org/
+wikidata_id: Q632682
+metadata:
+  sources: [Wikidata Q632682 (retrieved 2026-10-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Brooklyn_Museum_June_2008_sunset_jeh.JPG/1280px-Brooklyn_Museum_June_2008_sunset_jeh.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_June_2008_sunset_jeh.JPG
+    license: Public domain
+    credit: Jim.henderson
+sources:
+  place:
+    - accessed: 2026-10-07
+      property: P131
+      wikidata: Q632682
+  address:
+    - accessed: 2026-10-07
+      property: P6375
+      wikidata: Q632682
+  founded:
+    - accessed: 2026-10-07
+      property: P571
+      wikidata: Q632682
+  location:
+    - accessed: 2026-10-07
+      property: P625
+      wikidata: Q632682

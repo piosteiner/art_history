@@ -1,0 +1,160 @@
+public_id: "100397"
+title_lang: fr
+title: La Brodeuse (Mette Gauguin)
+names:
+  - lang: fr
+    role: alternative
+    text: La Brodeuse
+  - lang: fr
+    role: alternative
+    text: Mette Gauguin
+  - lang: de
+    role: translation
+    text: Stickerin (Mette Gauguin)
+    status: official
+  - lang: en
+    role: translation
+    text: The Embroiderer (Mette Gauguin)
+    status: official
+creator: paul-gauguin
+created: 1880
+kind: oil painting
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [116, 81]
+institution: kunsthaus-zurich
+inventory_number: BU 0170
+web_url: https://collection.kunsthaus.ch/de/collection/item/707958/
+on_loan: true
+on_loan_since: 2021
+description_md: The artwork can also be found on the website of the Bührle Collection -> [Link](https://www.buehrle.ch/sammlung/artwork/detail/stickerin-mette-gauguin/)
+wikidata_id: Q19869142
+metadata:
+  sources: [Wikidata Q19869142 (retrieved 2026-10-15)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Paul_Gauguin%2C_1880%2C_The_Embroiderer_%28La_Brodeuse%29%2C_oil_on_canvas%2C_116_x_81_cm%2C_Foundation_E.G._B%C3%BChrle.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin,_1880,_The_Embroiderer_(La_Brodeuse),_oil_on_canvas,_116_x_81_cm,_Foundation_E.G._B%C3%BChrle.jpg
+    license: Public domain
+    credit: Paul Gauguin
+provenance:
+  - owner: person/peter-krag
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        note: "Footnote: Wildenstein 2001, No. 65."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/halfdan-nobel-roede
+    acquired: 1914 or earlier
+    ended: 1926 or later
+    place: oslo
+    label: Riis, Kristiania (Oslo)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        note: "Footnote: Kat. Statens Kunstmuseum Christiania Oslo 1914, No. 27; Kat. Nasjonalgalleriet Oslo, Nationalmuseum Stockholm, Ny Carlsberg Glyptotek Copenhagen 1926, No. 64."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner_label: Mr Lie, a dealer — not identified
+    role: dealer
+    acquired: 1928 or earlier
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        note: "Footnote: Staatsarchiv Basel-Stadt, Archiv des Basler Kunstvereins, PA 888a, N 6 [1] 239 III, Briefe H. Nobel Roede, Oslo, an Dr. Wilhelm Barth [Kurator der Kunsthalle], Basel, 21. März 1928 und 14. April 1928: zwei Briefe von Nobel Roede an die Kunsthalle Basel geben an, dass das Gemälde über einen Herrn Lie in Frankreich (Sèvres-et-Oise) in die Vereinigten Staaten verkauft worden sei."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner_label: an unknown dealer in the USA
+    role: dealer
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        note: "Footnote: Wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/fritz-nathan
+    role: dealer
+    ended: 1964-08
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        note: "Footnote: Stiftung Sammlung E.G. Bührle, Jahresbericht 1964, S. 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1964-08
+    method: purchase
+    direct: true
+    place: zurich
+    label: inv. no. 170
+    price:
+      amount: 450000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+        note: "Footnote: Jahresbericht, wie oben Fussnote 9."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: "170"
+    institution: foundation-e-g-buhrle-collection
+  - number: "65"
+    label: Wildenstein Gauguin (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  parent:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - accessed: 2026-10-15
+      property: P571
+      wikidata: Q19869142
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - accessed: 2026-10-15
+      property: P170
+      wikidata: Q19869142
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  materials:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707958/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

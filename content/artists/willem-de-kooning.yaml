@@ -1,0 +1,29 @@
+public_id: "100114"
+name: Willem de Kooning
+given_name: Willem
+family_name: de Kooning
+names: [Willem DeKooning]
+birth: 1904-04-24
+death: 1997-03-19
+biography_md: '[The Guardian Article](https://www.theguardian.com/artanddesign/2026/oct/08/willem-de-kooning-at-work-review-rijksmuseum-amsterdam?CMP=Share_AndroidApp_Other) on "Willem de Kooning at Work" at the Rijksmuseum from 9 October to 17 January 2027'
+wikidata_id: Q132305
+metadata:
+  sources: [Wikidata Q132305 (retrieved 2026-10-08)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Willem_de_Kooning_in_his_studio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Willem_de_Kooning_in_his_studio.jpg
+    license: Public domain
+    credit: Antony di Gesu, photographer
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Willem_de_Kooning_1968.jpg/1280px-Willem_de_Kooning_1968.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Willem_de_Kooning_1968.jpg
+    license: CC BY 4.0
+    credit: Jack de Nijs for Anefo
+sources:
+  birth:
+    - accessed: 2026-10-08
+      property: P569
+      wikidata: Q132305
+  death:
+    - accessed: 2026-10-08
+      property: P570
+      wikidata: Q132305

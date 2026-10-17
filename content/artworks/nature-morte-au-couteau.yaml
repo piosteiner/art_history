@@ -1,0 +1,146 @@
+public_id: "100417"
+title: Nature morte au couteau
+creator: paul-gauguin
+created: 1901
+kind: oil painting
+medium: Oil on canvas
+dimensions: [66, 75]
+institution: kunsthaus-zurich
+inventory_number: BU 0178
+on_loan: true
+on_loan_since: 2021
+provenance_status: a_clear
+provenance_status_note: "Kunsthaus Zürich: kein NS-verfolgungsbedingt entzogenes Kulturgut"
+provenance:
+  - owner: institution/galerie-eugene-druet
+    role: dealer
+    ended: 1913
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+        note: "Footnote: Liste des tableaux provenant de la succession Max Meirowsky, déposés au Musée d'art et d'histoire, Etat de conservation, unterzeichnet vom Nachlassverwalter und datiert vom 18.02.1950, Nr. 6, Archive Musée d'art et d'histoire, Geneva: «Gauguin, P., Nature morte, Aubergines, Huile sur toile, 66/75 cm, acquis en 1913 chez Druet, rue Royale, à Paris»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/max-meirowsky
+    acquired: 1913
+    ended: 1949-12-01
+    method: purchase
+    direct: true
+    place: cologne
+    label: Köln, Berlin & Genf
+    notes_md: Brought the painting with him when he left Germany via the Netherlands and settled in Geneva on 5 September 1939.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+        note: "Footnote: Liste, wie oben Fussnote 3. Nature morte: Auberginen, war eines von 13 Gemälden, die Max Meirowsky mitbrachte, als er Deutschland über Holland verließ und sich am 05.09.1939 in Genf niederließ, wo er am 01.12.1949 verstarb. Meirowskys Besitz des Gemäldes ist auch in AStEGB, Rechnung der Anstalt für Kunsthandel, Vaduz (Wildenstein & Co.), ausgestellt auf Emil Bührle am 24.10.1953, vermerkt; Brief v…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/max-meirowsky
+    role: estate
+    acquired: 1949-12-01
+    ended: 21 March 1952 or later
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+        note: "Footnote: Liste, wie oben Fussnote 3: Die Gemälde aus dem Nachlass wurden vom Nachlassverwalter zwischen Februar 1950 und März 1952 im Musée d'art et d'histoire in Genf deponiert («reçu des tableaux en bon ordre ce 21 mars 1952»)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/wildenstein-co
+    role: dealer
+    ended: 1953-11-06
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+        note: "Footnote: Rechnung, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/emil-georg-buhrle
+    acquired: 1953-11-06
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    label: "part exchange: Toulouse-Lautrec’s La Buveuse d’absinthe ($41,000) and $25,000"
+    price:
+      amount: 66000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+        note: "Footnote: Rechnung, wie oben Fussnote 4; Zahlungsauftrag von Emil Bührle an die Industrie- und Handelsbank, Zürich, 04.11.1953, über eine Zahlung von $ 25.000 an die Anstalt für Kunsthandel, Vaduz; Bestätigung der Zahlung von $ 25.000 an die Anstalt für Kunsthandel, Vaduz, von der Industrie- und Handelsbank, Zürich, an Emil Bührle, 06.11.1953: erworben im Tausch gegen ein Gemälde von Toulouse-Lautrec, La Bu…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1967
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+        note: "Footnote: Die Kunstwerke, die 1960 nicht in die Stiftung Sammlung E.G. Bührle gelangten, wurden 1967 unter Emil Bührles Sohn Dr. Dieter Bührle und seiner Tochter Hortense Anda-Bührle aufgeteilt."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/dieter-buhrle
+    acquired: 1967
+    ended: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+        note: "Footnote: Sohn von Emil Bührle und 1960, zusammen mit seiner Mutter Charlotte Bührle-Schalk und seiner Schwester Hortense (Anda-)Bührle, einer der drei Gründer der Stiftung Sammlung E.G. Bührle, deren Stiftungsrat er von 1960 bis 2012 angehörte."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 2012-11-09
+    method: inheritance
+    direct: true
+    place: zurich
+    label: from Dieter Bührle’s estate; inv. no. 178
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: "178"
+    institution: foundation-e-g-buhrle-collection
+  - number: "607"
+    label: Wildenstein Gauguin (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  provenance_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/604959/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

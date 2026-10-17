@@ -1,0 +1,16 @@
+public_id: "100139"
+name: Tulsa
+kind: settlement
+location: [-95.93722, 36.13139]
+wikidata_id: Q44989
+metadata:
+  sources: [Wikidata Q44989 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q44989
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q44989

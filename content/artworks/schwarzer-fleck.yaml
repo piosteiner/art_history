@@ -1,0 +1,56 @@
+public_id: "100136"
+title_lang: de
+title: Schwarzer Fleck
+names:
+  - lang: en
+    role: translation
+    text: Black Spot
+    status: official
+  - lang: fr
+    role: translation
+    text: Tache noire
+    status: official
+creator: wassily-kandinsky
+created: 1921
+materials: [oil paint, canvas]
+dimensions: [138, 120]
+institution: kunsthaus-zurich
+inventory_number: 1947/0005
+web_url: https://collection.kunsthaus.ch/en/collection/item/1889/
+wikidata_id: Q104537615
+metadata:
+  sources: [Wikidata Q104537615 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Black_Spot_-_Wassily_Kandinsky.jpg/1280px-Black_Spot_-_Wassily_Kandinsky.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Black_Spot_-_Wassily_Kandinsky.jpg
+    license: Public domain
+    credit: Wassily Kandinsky
+sources:
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  materials:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-09

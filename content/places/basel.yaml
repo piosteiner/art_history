@@ -1,0 +1,44 @@
+public_id: "100377"
+name: Basel
+names:
+  - lang: zh
+    role: translation
+    text: 巴塞尔
+  - lang: ko
+    role: translation
+    text: 바젤
+  - lang: fr
+    role: translation
+    text: Bâle
+  - lang: it
+    role: translation
+    text: Basilea
+  - lang: nl
+    role: translation
+    text: Bazel
+  - lang: ru
+    role: translation
+    text: Базель
+  - lang: pt
+    role: translation
+    text: Basileia
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [7.59056, 47.56056]
+wikidata_id: Q78
+metadata:
+  sources: [Wikidata Q78 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q78
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q78
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q78

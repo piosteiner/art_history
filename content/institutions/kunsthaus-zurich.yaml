@@ -1,4 +1,10 @@
+public_id: "100050"
 name: Kunsthaus Zürich
+kind: museum
+founded: 1819
+place: zurich
+location: [8.54806, 47.37028]
+address: Heimplatz 1, 8001 Zürich
 website_url: http://www.kunsthaus.ch/
 wikidata_id: Q685038
 metadata:
@@ -8,3 +14,25 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Kunsthaus_Z%C3%BCrich_2011-08-06_18-44-30_ShiftN2.jpg
     license: CC BY-SA 3.0
     credit: Roland zh
+identifiers:
+  gnd: 2016862-7
+  lc: n80103756
+  ulan: "500245760"
+  viaf: "227051459"
+sources:
+  place:
+    - accessed: 2026-10-12
+      property: P131
+      wikidata: Q685038
+  address:
+    - accessed: 2026-10-12
+      property: P6375
+      wikidata: Q685038
+  founded:
+    - accessed: 2026-10-12
+      property: P571
+      wikidata: Q685038
+  location:
+    - accessed: 2026-10-12
+      property: P625
+      wikidata: Q685038

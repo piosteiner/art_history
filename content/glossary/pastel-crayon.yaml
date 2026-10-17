@@ -1,0 +1,12 @@
+public_id: "100393"
+name_lang: en
+name: pastel crayon
+names:
+  - lang: de
+    role: translation
+    text: Pastellkreide
+  - pastel
+  - lang: de
+    role: translation
+    text: Pastell
+category: material

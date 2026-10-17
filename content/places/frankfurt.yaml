@@ -1,0 +1,53 @@
+public_id: "100378"
+name: Frankfurt
+names:
+  - lang: ja
+    role: translation
+    text: フランクフルト・アム・マイン
+  - lang: zh
+    role: translation
+    text: 美茵河畔法蘭克福
+  - lang: ko
+    role: translation
+    text: 프랑크푸르트암마인
+  - lang: fr
+    role: translation
+    text: Francfort-sur-le-Main
+  - lang: de
+    role: original
+    text: Frankfurt am Main
+  - lang: it
+    role: translation
+    text: Francoforte sul Meno
+  - lang: nl
+    role: translation
+    text: Frankfort aan de Main
+  - lang: es
+    role: translation
+    text: Fráncfort del Meno
+  - lang: ru
+    role: translation
+    text: Франкфурт-на-Майне
+  - lang: pt
+    role: translation
+    text: Frankfurt sobre o Meno
+kind: settlement
+parent: germany
+country_code: DE
+location: [8.68222, 50.11056]
+wikidata_id: Q1794
+metadata:
+  sources: [Wikidata Q1794 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q1794
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q1794
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q1794

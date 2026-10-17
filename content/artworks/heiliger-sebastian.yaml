@@ -1,0 +1,131 @@
+public_id: "100297"
+title: Heiliger Sebastian
+creator: niklaus-weckmann
+attribution_label: Circle of
+created: early 16th century
+kind: sculpture
+medium: Limewood
+dimensions: [112, 35, 23]
+institution: kunsthaus-zurich
+inventory_number: BU P.19
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/albert-julius-ullmann
+    ended: 1912
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+        note: "Footnote: Friedrich Lübbecke, «Die Sammlung Ullmann zu Frankfurt a. M.», in: Cicerone (8) 1916, S. 395, Abb. 14 (rechts)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/hedwig-frieda-ullmann
+    acquired: 1912
+    ended: 1945-05-04
+    method: inheritance
+    direct: true
+    place: frankfurt
+    label: née Nathan; Frankfurt am Main and Melbourne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+        note: "Footnote: Witwe des Obengenannten. AStEGB, Brief von Dr. Arthur Kauffmann, London, an Dr. Walter Drack, Konservator der Sammlung Bührle, 17.09.1952, mit Kopien von 2 Briefen an Hedwig Ullmann, Frankfurt, die Dr. Kauffmann aus dem Nachlass von Frau Hedwig Ullmann (alias Ullin) in Australien erhalten hat. Der eine Brief stammt von Theodor Demmler, Staatliche Museen zu Berlin, 14.05.1927, der andere vom Provin…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/arthur-kauffmann
+    role: agent
+    acquired: 1938
+    ended: 1954-02-16
+    direct: true
+    place: london
+    label: on consignment
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+        note: |-
+          Footnote: Brüggen 2022, S. 118-120: «Die außerordentlich einflussreiche Rolle von Arthur Kauffmann auf die Kunstsammlung Ullmann begann erst ab 1938, als Hedwig Ullmann den überwiegenden Teil ihrer Kunstsammlung in seine Obhut gab. Über bisher nicht vollständig nachvollziehbare Wege
+          gelang es ihr Ende 1938 bzw. Anfang 1939, zahlreiche Kisten gefüllt mit Kunstwerken zu seinen
+          Händen nach London zu senden. Ka…
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/hedwig-frieda-ullmann
+    role: estate
+    acquired: 1945-05-04
+    ended: 1954-02-16
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+        note: "Footnote: Wie oben Fussnote 5."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-02-16
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+        note: "Footnote: Als Teil einer Gruppe von 8 Skulpturen für insgesamt £ 6.000 erworben. AStEGB, Kontoübersicht über verschiedene Ankäufe von Dr. Arthur Kauffmann, darunter 8 Holzskulpturen, datiert vom 16.02.1954 und paraphiert von Emil Bührle. Der Betrag war über Clearing (£ 500) und über Special Swiss Account (£ 4.700) zu begleichen, wobei weitere £ 800 in Schweizer Franken bezahlt wurden."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. P19
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: P19
+    institution: foundation-e-g-buhrle-collection
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  attribution_label:
+    - url: https://collection.kunsthaus.ch/de/collection/item/754987/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

@@ -1,0 +1,41 @@
+public_id: "100468"
+name: Versailles
+names:
+  - lang: ja
+    role: translation
+    text: ヴェルサイユ
+  - lang: zh
+    role: translation
+    text: 凡爾賽;凡尔赛
+  - lang: ko
+    role: translation
+    text: 베르사유
+  - lang: es
+    role: translation
+    text: Versalles
+  - lang: ru
+    role: translation
+    text: Версаль
+  - lang: pt
+    role: translation
+    text: Versalhes
+kind: settlement
+parent: france
+country_code: FR
+location: [2.135, 48.805]
+wikidata_id: Q621
+metadata:
+  sources: [Wikidata Q621 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q621
+  parent:
+    - accessed: 2026-10-15
+      property: P131
+      wikidata: Q621
+  location:
+    - accessed: 2026-10-15
+      property: P625
+      wikidata: Q621

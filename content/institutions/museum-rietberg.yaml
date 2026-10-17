@@ -1,0 +1,36 @@
+public_id: "100117"
+name: Museum Rietberg
+founded: 1952
+place: zurich
+location: [8.53027, 47.35892]
+address: Gablerstrasse 15, 8002 Zürich
+website_url: http://www.rietberg.ch/en/
+wikidata_id: Q668300
+metadata:
+  sources: [Wikidata Q668300 (retrieved 2026-10-08)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Museum-Rietberg_Z%C3%BCrich_Eingang_mit_Ausstellungsplakat_Hallyu%21_The_Korean_Wave.jpg/1280px-Museum-Rietberg_Z%C3%BCrich_Eingang_mit_Ausstellungsplakat_Hallyu%21_The_Korean_Wave.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Museum-Rietberg_Z%C3%BCrich_Eingang_mit_Ausstellungsplakat_Hallyu!_The_Korean_Wave.jpg
+    license: CC BY 4.0
+    credit: Jo.burla
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b1/Zuerich_Villa_Wesendonck.jpg/1280px-Zuerich_Villa_Wesendonck.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zuerich_Villa_Wesendonck.jpg
+    license: CC BY-SA 3.0
+    credit: Ikiwaner
+sources:
+  place:
+    - accessed: 2026-10-08
+      property: P131
+      wikidata: Q668300
+  address:
+    - accessed: 2026-10-08
+      property: P6375
+      wikidata: Q668300
+  founded:
+    - accessed: 2026-10-08
+      property: P571
+      wikidata: Q668300
+  location:
+    - accessed: 2026-10-08
+      property: P625
+      wikidata: Q668300

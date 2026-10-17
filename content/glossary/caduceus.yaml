@@ -1,0 +1,31 @@
+public_id: "100075"
+name: caduceus
+names:
+  - lang: de
+    role: translation
+    text: Hermesstab
+  - lang: it
+    role: translation
+    text: caduceo
+category: technique
+definition: staff carried by Hermes in Greek mythology
+wikidata_id: Q238577
+metadata:
+  sources: [Wikidata Q238577 (retrieved 2026-10-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Caduceus.svg/1280px-Caduceus.svg.png
+    source_url: https://commons.wikimedia.org/wiki/File:Caduceus.svg
+    license: Public domain
+    credit: "Original: Rama Vector: Eliot Lash"
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Winged_goddess_Cdm_Paris_392.jpg/1280px-Winged_goddess_Cdm_Paris_392.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Winged_goddess_Cdm_Paris_392.jpg
+    license: Public domain
+    credit: Providence Painter
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Pompeii_-_Casa_dei_Vettii_-_Ixion.jpg/1280px-Pompeii_-_Casa_dei_Vettii_-_Ixion.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pompeii_-_Casa_dei_Vettii_-_Ixion.jpg
+    license: Public domain
+    credit: WolfgangRieger
+sources:
+  definition:
+    - accessed: 2026-10-06
+      wikidata: Q238577

@@ -1,0 +1,37 @@
+public_id: "100082"
+name: Emil Georg Bührle
+given_name: Emil Georg
+family_name: Bührle
+kind: person
+occupations: [art collector]
+birth: 31 August 1890
+death: 1956-11-28
+wikidata_id: Q96297
+metadata:
+  sources: [Wikidata Q96297 (retrieved 2026-10-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/ETH-BIB_Emil_B%C3%BChrle_-_Ausschnitt_von_Com_X-H065-08-02_%28cropped%29.tif_2.jpg/1280px-ETH-BIB_Emil_B%C3%BChrle_-_Ausschnitt_von_Com_X-H065-08-02_%28cropped%29.tif_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ETH-BIB_Emil_B%C3%BChrle_-_Ausschnitt_von_Com_X-H065-08-02_(cropped).tif_2.jpg
+    license: CC BY-SA 4.0
+    credit: Björn Erik Lindroos, Comet
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/ETH-BIB-_Hail%C3%A9_Selassie_und_Emil_B%C3%BChrle_-_Com_X-H065-08-02.tif/lossy-page1-1280px-ETH-BIB-_Hail%C3%A9_Selassie_und_Emil_B%C3%BChrle_-_Com_X-H065-08-02.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ETH-BIB-_Hail%C3%A9_Selassie_und_Emil_B%C3%BChrle_-_Com_X-H065-08-02.tif
+    license: CC BY-SA 4.0
+    credit: Björn Erik Lindroos, Comet
+sources:
+  kind:
+    - accessed: 2026-10-06
+      property: P31
+      wikidata: Q96297
+  birth:
+    - accessed: 2026-10-06
+      property: P569
+      wikidata: Q96297
+  death:
+    - accessed: 2026-10-06
+      property: P570
+      wikidata: Q96297
+  occupations:
+    - accessed: 2026-10-06
+      property: P106
+      wikidata: Q96297

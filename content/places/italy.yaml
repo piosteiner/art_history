@@ -1,0 +1,16 @@
+public_id: "100205"
+name: Italy
+kind: country
+location: [12.5, 42.5]
+wikidata_id: Q38
+metadata:
+  sources: [Wikidata Q38 (retrieved 2026-10-09)]
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q38
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q38

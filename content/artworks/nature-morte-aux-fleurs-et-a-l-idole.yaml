@@ -1,0 +1,229 @@
+public_id: "100413"
+title: Nature morte aux fleurs et à l'idole
+creator: paul-gauguin
+created: c. 1892
+kind: oil painting
+medium: Oil on canvas
+dimensions: [40.5, 32]
+institution: kunsthaus-zurich
+inventory_number: 1995/0007
+provenance_status: c_indications
+provenance_status_note: "Provenienzstatus (BAK): C"
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1899 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «Possibly Stockbook A 1899-ca. April 1904: 'no. 3948, Négresse tenant un bouquet de fleurs, 40 x 32 cm, provenance: Gauguin' / See Stockbook B (Registre des entrées et sorties de juin 1904 à décembre 1907) MS 421 (4,5) Ca. June 1904-ca. December 1907 (fol. 57): '[Entrée d'oeuvre] 3865, Provenance: Chaudet, Tête de monstre dans fleuré, 40 x 32 cm»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/victor-v-goloubew
+    method: purchase
+    place: paris
+    label: as "Nature morte"
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «See label and an inscription on the reverse / Possibly acquired from Ambroise Vollard / Possibly Datebooks 1911 (Agendas de la galerie) MS 421 (5,6)(fol. 84): 'Goloubeff Gauguin' / Could also refer to W495 or W602»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner_label: Mme Le Play (or Le Pley), Paris — not identified
+    place: paris
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Kat. Lefevre Gallery 1951, S. 18, Nr. 14: «Collections: Victor Galamben, [sic!], Paris; Mme. Le Pley, Paris». Zum jetzigen Recherchezeitpunkt konnte die Person Mme Le Play [oder Le Pley] nicht identifiziert werden."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/galerie-alfred-flechtheim
+    role: dealer
+    acquired: 1913
+    place: dusseldorf
+    label: as “Musique barbare”
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «Information comes from Mahlberg 1913 [https://archive.org/details/beitrgezurkuns00galeuoft/page/62/mode/2up] / See Kropmanns 1997 : '[...] Alfred Flechtheim [...] In seinem Tagebuch hatte er 1913 [...] ein 'Stilleben' von Gauguin aufgeführt. [...]'.»; Mahlberg 1913; Kat. Galerie Flechtheim 1914, S. 22, Nr. 5; Kat. Museum Würth 1997, S. 68, 99."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/leicester-galleries
+    role: dealer
+    place: london
+    label: as "Nature morte"
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «Information comes from Kunsthaus Zurich and photographic Archives Leicester Galleries, London / See Klemm and Lentzsch (eds.) 2007 : '[...] Gauguin Nature morte aux fleurs et à l'idole, um 1892 Stilleben mit Blumen und Idol [...] Provenienz Leicester Galleries London [...]'.»; Kunsthaus Zürich 2007 (Sammlungskatalog), S. 242; Wildenstein 1964 I, S.199, Nr. 494."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/galerie-fritz-gurlitt
+    role: dealer
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «Information comes from Bildindex der Kunst & Architektur [https://www.bildindex.de/document/obj20498742]: '[...] Paul Gauguin, Stilleben mit Blumen und Idol', um 1898, [...] zeitweiliger Verwalter: Berlin, Handel, Galerie Fritz Gurlitt [...], Bildarchiv Foto Marburg' / See Kropmanns 1998: '[...] Zwischen den Kriegen, schon während der 20er Jahre, geriet der Bestand an Gauguin…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/alfred-gold
+    acquired: 1928 or earlier
+    ended: 1934 or later
+    place: berlin
+    notes_md: A Viennese editor working as a dealer in Berlin and Paris; Jewish, threatened by Nazi persecution, he fled from Paris to the USA in 1940. When and how he sold the painting is unknown. The Kunsthaus published it on Lost Art in 2025 (find 630031) and has been in contact with the representatives of Gold’s heirs since 2026.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1; Wildenstein 1964 und Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 10; Kat. Kunsthalle Basel 1928 Nr. 88 (erste Ausgabe), Nr. 103 (zweite Ausgabe); Kat Beaux-Arts Paris 1934, Nr. 55."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/e-j-van-wisselingh-co
+    role: custodian
+    acquired: 22 December 1932 or later
+    ended: February 1933 or earlier
+    direct: true
+    place: amsterdam
+    label: as “Nature morte”; probably in safekeeping (for Alfred Gold)
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Etikette auf der Werkrückseite; wie oben Fussnote 1: «See label on the reverse, however there is no reference to this work in the E. J. Wisselingh archives; Stock no.: 2278x»; vgl. Brief Alfred Gold an Wilhelm Barth 22.12.1932, Erledigte Depositen [vor 1960] Alfred Gold, [1931-1945], Archiv Kunsthalle Basel; Eine Anfrage beim Archiv der Kunsthandlung Wisselingh im RKD Den Haag hat ergeben, dass di…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/arthur-jeffress
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «Information comes from the letter of Alex Reid & Lefevre Ltd., London, September 26, 1978: 'Nature Morte aux Fleurs, in Wildenstein no. 494, is now in the Kunstmuseum in Zurich on loan and was bought by us from Arthur Byron, London and sold to Louis Dreyfus, New York.' / Information comes from letter from Alex Reid & Lefevre Ltd., London, October 4, 1978: 'As to the Arthur By…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/gerald-corcoran
+    role: dealer
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 17."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/arthur-byron
+    acquired: before 1947
+    ended: 1950
+    method: purchase
+    direct: true
+    place: london
+    label: the end date is probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «Information comes from the letter from Alex Reid & Lefevre Ltd., London, October 4, 1978: 'As to the Arthur Byron one he bought it from my father just before he joined Lefevre [...]' Gerald Corcoran joined Lefevre Gallery in 1947»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    acquired: 1950
+    ended: 1953
+    method: purchase
+    direct: true
+    place: london
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «Information comes from the letter of Alex Reid & Lefevre Ltd., London, September 26, 1978: 'Nature Morte aux Fleurs, in Wildenstein no. 494, is now in the Kunstmuseum in Zurich on loan and was bought by us from Arthur Byron, London [...]' / Information on date of transaction comes from notes of Douglas Cooper».; Kat. Lefevre Gallery 1951, S.8 Nr. 14."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/gerard-louis-dreyfus
+    acquired: 1953
+    method: purchase
+    direct: true
+    place: new-york-city
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «Information on date of transaction comes from notes of Douglas Cooper»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/o-hana-gallery
+    role: dealer
+    acquired: 1957 or later
+    place: london
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Wie oben Fussnote 1: «See label and stamp on the reverse, however, there is no reference to this work in the O’Hana Gallery archives and to our knowledge the work was not included in any O’Hana Gallery exhibitions». Die O’Hana Gallery in London wurde im Jahr 1957 gegründet und bestand bis 1975, vgl. https://www.artbiogs.co.uk/2/galleries/ohana-gallery [Zugriff: 20.08.2026]"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/wildenstein-co
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Kunsthaus Zürich Schenkung Walter Haefner 1995 (Sammlungskatalog), Vorwort:  «In den mittleren 60er Jahren erwarb Walter Haefner als sein erstes Bild Claude Monets Palais Ducal, Venise von 1908. Es folgten daraufhin in kurzen Intervallen die Werke von Degas, Gauguin, van Gogh und Seurat. Diese fünf Bilder wurden bei Wildenstein in New York erworben, den der Zürcher dank ihres beidseitigen Interess…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: person/walter-haefner
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1974-09-11
+    ended: 1995
+    direct: true
+    place: zurich
+    label: on loan from Walter Haefner
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: ZKG/KHZ, Werkdossier; Etikette auf der Werkrückseite; Kunsthaus Zürich 2007 (Sammlungskatalog)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+  - owner: institution/kunsthaus-zurich
+    acquired: 31 May 1995
+    method: gift
+    direct: true
+    place: zurich
+    label: on the 50th anniversary of AMAG, Zürich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; ZKG/KHZ, Fangblatt Slg; Jahresbericht ZKG 1995, S. 11; Sitzungsprotokoll der Sammlungskommission, 17.05.1995, Archiv ZKG/KHZ 10.30.10.42b: 1994-1995; Kunsthaus Zürich 2007 (Sammlungskatalog), wie oben Fussnote 10."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-15
+numbers:
+  - number: PG4P6Q
+    label: WPI 2020 (catalogue raisonné)
+  - number: I.199.494
+    label: Wildenstein 1964 (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15
+  provenance_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1910/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-15

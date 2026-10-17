@@ -1,0 +1,16 @@
+public_id: "100231"
+name: Villa Saint-Louis
+kind: site
+location: [2.03488, 48.93138]
+wikidata_id: Q99407923
+metadata:
+  sources: [Wikidata Q99407923 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q99407923
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q99407923

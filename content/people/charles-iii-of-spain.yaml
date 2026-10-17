@@ -1,0 +1,28 @@
+public_id: "100182"
+name: Charles III of Spain
+kind: person
+birth: 1716-01-20
+death: 1788-12-14
+wikidata_id: Q36234
+metadata:
+  sources: [Wikidata Q36234 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/museo-del-prado
+    sources:
+      - accessed: 2026-10-09
+        property: P112
+        wikidata: Q160112
+sources:
+  kind:
+    - accessed: 2026-10-09
+      property: P31
+      wikidata: Q36234
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q36234
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q36234

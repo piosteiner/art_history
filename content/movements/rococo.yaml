@@ -1,0 +1,16 @@
+public_id: "100401"
+name: Rococo
+kind: movement
+period: 1730/1739
+wikidata_id: Q122960
+metadata:
+  sources: [Wikidata Q122960 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q122960
+  period:
+    - accessed: 2026-10-15
+      property: P580
+      wikidata: Q122960

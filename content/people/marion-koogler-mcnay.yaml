@@ -1,0 +1,35 @@
+public_id: "100121"
+name: Marion Koogler McNay
+given_name: Marion Koogler
+family_name: McNay
+names: [Marion Koogler Atkinson]
+kind: person
+occupations: [painter, art collector]
+birth: 1883-02-07
+death: 1950-04-13
+description_md: Her collection and her house became the [[institution/mcnay-art-museum]] and she hence is the [founder](https://www.mcnayart.org/founder/) of that museum in Texas.
+wikidata_id: Q6765269
+metadata:
+  sources: [Wikidata Q6765269 (retrieved 2026-10-08)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e0/Marion_Koogler_McNay.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Marion_Koogler_McNay.jpg
+    license: Public domain
+    credit: Marion, Ohio public schools
+sources:
+  kind:
+    - accessed: 2026-10-08
+      property: P31
+      wikidata: Q6765269
+  birth:
+    - accessed: 2026-10-08
+      property: P569
+      wikidata: Q6765269
+  death:
+    - accessed: 2026-10-08
+      property: P570
+      wikidata: Q6765269
+  occupations:
+    - accessed: 2026-10-08
+      property: P106
+      wikidata: Q6765269

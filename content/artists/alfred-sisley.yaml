@@ -1,0 +1,136 @@
+public_id: "100102"
+name: Alfred Sisley
+given_name: Alfred
+family_name: Sisley
+birth: 1839-10-30
+death: 1899-01-29
+wikidata_id: Q175130
+metadata:
+  sources: [Wikidata Q175130 (retrieved 2026-10-07)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-10-12
+        property: P27
+        wikidata: Q175130
+  - type: nationality
+    to: polity/france
+    period: 1889-06-26
+    period_label: from 26 June 1889
+    sources:
+      - accessed: 2026-10-12
+        property: P27
+        wikidata: Q175130
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-12
+        property: P19
+        wikidata: Q175130
+      - url: https://d-nb.info/gnd/118614762
+        source: gnd
+        accessed: 2026-10-13
+      - url: https://rkd.nl/en/explore/artists/72857
+        source: rkd
+        accessed: 2026-10-13
+      - url: https://id.loc.gov/authorities/names/n79102762.html
+        source: lc
+        accessed: 2026-10-13
+  - type: died_in
+    to: place/cemetery-of-moret-sur-loing
+    sources:
+      - accessed: 2026-10-12
+        property: P20
+        wikidata: Q175130
+  - type: died_in
+    to: place/moret-sur-loing
+    sources:
+      - accessed: 2026-10-12
+        property: P20
+        wikidata: Q175130
+      - url: https://d-nb.info/gnd/118614762
+        source: gnd
+        accessed: 2026-10-13
+      - url: https://rkd.nl/en/explore/artists/72857
+        source: rkd
+        accessed: 2026-10-13
+      - url: https://id.loc.gov/authorities/names/n79102762.html
+        source: lc
+        accessed: 2026-10-13
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-12
+        property: P937
+        wikidata: Q175130
+  - type: student_of
+    to: artist/charles-gleyre
+    sources:
+      - accessed: 2026-10-13
+        property: P1066
+        wikidata: Q175130
+      - accessed: 2026-10-13
+        property: P802
+        wikidata: Q452119
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-12
+        property: P69
+        wikidata: Q175130
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-12
+        property: P135
+        wikidata: Q175130
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1e/Alfred_Sisley_photo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alfred_Sisley_photo.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Sisley_Alfred_13_mini.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sisley_Alfred_13_mini.jpg
+    license: Public domain
+    credit: Joseph P. Jiolo
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Pierre-Auguste_Renoir_110.jpg/1280px-Pierre-Auguste_Renoir_110.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_110.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+identifiers:
+  bnf: 11941978b
+  gnd: "118614762"
+  idref: "027361225"
+  kulturnav: 444de2a5-43e6-47fd-aefa-5ae295e85ebe
+  lc: n79102762
+  rkd: "72857"
+  ulan: "500027485"
+  viaf: "32004750"
+sources:
+  birth:
+    - accessed: 2026-10-07
+      property: P569
+      wikidata: Q175130
+    - url: https://d-nb.info/gnd/118614762
+      source: gnd
+      accessed: 2026-10-13
+    - url: https://rkd.nl/en/explore/artists/72857
+      source: rkd
+      accessed: 2026-10-13
+    - url: https://id.loc.gov/authorities/names/n79102762.html
+      source: lc
+      accessed: 2026-10-13
+  death:
+    - accessed: 2026-10-07
+      property: P570
+      wikidata: Q175130
+    - url: https://d-nb.info/gnd/118614762
+      source: gnd
+      accessed: 2026-10-13
+    - url: https://rkd.nl/en/explore/artists/72857
+      source: rkd
+      accessed: 2026-10-13
+    - url: https://id.loc.gov/authorities/names/n79102762.html
+      source: lc
+      accessed: 2026-10-13

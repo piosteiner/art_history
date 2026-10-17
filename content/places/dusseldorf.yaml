@@ -1,0 +1,38 @@
+public_id: "100467"
+name: Dusseldorf
+names:
+  - lang: ja
+    role: translation
+    text: デュッセルドルフ
+  - lang: zh
+    role: translation
+    text: 杜塞尔多夫
+  - lang: ko
+    role: translation
+    text: 뒤셀도르프
+  - lang: fr
+    role: translation
+    text: Düsseldorf
+  - lang: ru
+    role: translation
+    text: Дюссельдорф
+kind: settlement
+parent: germany
+country_code: DE
+location: [6.77667, 51.22556]
+wikidata_id: Q1718
+metadata:
+  sources: [Wikidata Q1718 (retrieved 2026-10-15)]
+sources:
+  kind:
+    - accessed: 2026-10-15
+      property: P31
+      wikidata: Q1718
+  parent:
+    - accessed: 2026-10-15
+      property: P131
+      wikidata: Q1718
+  location:
+    - accessed: 2026-10-15
+      property: P625
+      wikidata: Q1718

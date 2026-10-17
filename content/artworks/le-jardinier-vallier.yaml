@@ -1,0 +1,116 @@
+public_id: "100282"
+title: Le Jardinier Vallier
+creator: paul-cezanne
+created: 1906
+kind: oil painting
+medium: Oil on canvas
+dimensions: [65, 54]
+institution: kunsthaus-zurich
+inventory_number: BU 0014
+on_loan: true
+on_loan_since: 2021
+provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    ended: 1939-07-22
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+        note: "Footnote: AStEGB, Antwort von Marlborough Fine Art Ltd., London, auf eine Anfrage von Walter Drack [Kurator der Sammlung Bührle], 28.05.1955, betreffend der Provenienz von 7 Gemälden, die von Emil Bührle erworben wurden."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/ambroise-vollard
+    role: estate
+    acquired: 1939-07-22
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+        note: "Footnote: Rewald 953."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/marlborough-fine-art-ltd
+    role: dealer
+    ended: 1954-02-02
+    method: purchase
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+        note: "Footnote: Erworben von den oben Genannten, Informationen von Marlborough International Fine Art an die Stiftung Sammlung E.G. Bührle, 24.08.2012; AStEGB, Begleitschreiben zur Rechnung von Trafo, Anstalt für Handel und Finanz, Vaduz, unterzeichnet von F. K. Lloyd [Leiter der Marlborough Fine Art Ltd, London], an Dr. O. Maurer [Generalsekretär der Oerlikon Bührle & Co.], Zürich, 01.02.1954, und Archiv Marlbor…"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    acquired: 1954-02-02
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 180000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+        note: "Footnote: Erworben zusammen mit einem Gemälde von Juan Gris, Arlequin assis à la guitare [Cooper 321], für insgesamt CHF 245.000, Rechnung (Kopie), wie oben Fussnote 5; Quittung der Schweizerischen Bankgesellschaft, Zürich, ausgestellt auf Emil Bührle, 02.02.1954, betreffend Überweisung von CHF 245.000 an Trafo, Vaduz."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+  - owner: institution/foundation-e-g-buhrle-collection
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    label: inv. no. 14
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-13
+numbers:
+  - number: "14"
+    institution: foundation-e-g-buhrle-collection
+  - number: "953"
+    label: Rewald (catalogue raisonné)
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  on_loan:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/585964/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-13

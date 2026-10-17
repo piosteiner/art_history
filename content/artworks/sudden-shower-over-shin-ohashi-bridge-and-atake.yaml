@@ -1,13 +1,43 @@
+public_id: "100008"
 title: Sudden Shower over Shin-Ōhashi Bridge and Atake
-names: [Ōhashi Atake no yūdachi]
+part_number: "58"
+parts_count: 100
 creator: utagawa-hiroshige
 created: 1857
 kind: woodblock print
 medium: Woodblock print, ink and colour on paper
+materials: [ink, paper]
+dimensions: [33.7, 22.2]
+institution: brooklyn-museum
+inventory_number: 30.1478.58
+web_url: https://www.brooklynmuseum.org/objects/121666
 description_md: From *One Hundred Famous Views of Edo*. Impressions are held by many collections.
+wikidata_id: Q5826309
+metadata:
+  sources: [Wikidata Q5826309 (retrieved 2026-10-07)]
 relationships:
   - type: created_in
     to: place/edo
     period: 1857
+  - type: depicts
+    to: place/sumida-river
+    sources:
+      - accessed: 2026-10-07
+        property: P180
+        wikidata: Q5826309
   - type: associated_with
     to: movement/ukiyo-e
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Utagawa_Hiroshige_-_Evening_Shower_at_Atake_and_the_Great_Bridge.jpg/1280px-Utagawa_Hiroshige_-_Evening_Shower_at_Atake_and_the_Great_Bridge.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Utagawa_Hiroshige_-_Evening_Shower_at_Atake_and_the_Great_Bridge.jpg
+    license: Public domain
+    credit: Utagawa Hiroshige
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Hiroshige%2C_Sudden_shower_over_Shin-%C5%8Chashi_bridge_and_Atake%2C_1857.jpg/1280px-Hiroshige%2C_Sudden_shower_over_Shin-%C5%8Chashi_bridge_and_Atake%2C_1857.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hiroshige,_Sudden_shower_over_Shin-%C5%8Chashi_bridge_and_Atake,_1857.jpg
+    license: Public domain
+    credit: Utagawa Hiroshige
+sources:
+  institution:
+    - accessed: 2026-10-07
+      property: P195
+      wikidata: Q5826309

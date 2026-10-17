@@ -1,0 +1,33 @@
+public_id: "100151"
+name: National Gallery of Art
+names: [Mellon Gallery of Art, United States. National Gallery of Art]
+founded: 1937-03-24
+place: washington-d-c
+location: [-77.02, 38.89139]
+website_url: https://www.nga.gov/
+wikidata_id: Q214867
+metadata:
+  sources: [Wikidata Q214867 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/National_Gallery_of_Art_-_West_Building.JPG/1280px-National_Gallery_of_Art_-_West_Building.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:National_Gallery_of_Art_-_West_Building.JPG
+    license: CC BY-SA 3.0
+    credit: AgnosticPreachersKid
+identifiers:
+  gnd: 1003319-1
+  lc: n79054426
+  ulan: "500115983"
+  viaf: "3064149198328574940008"
+sources:
+  place:
+    - accessed: 2026-10-09
+      property: P131
+      wikidata: Q214867
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q214867
+  location:
+    - accessed: 2026-10-09
+      property: P625
+      wikidata: Q214867

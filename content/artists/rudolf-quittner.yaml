@@ -1,0 +1,25 @@
+public_id: "100226"
+name: Rudolf Quittner
+given_name: Rudolf
+family_name: Quittner
+birth: 1872-02-05
+death: 1910-01-03
+wikidata_id: Q2173609
+metadata:
+  sources: [Wikidata Q2173609 (retrieved 2026-10-13)]
+relationships:
+  - type: student_of
+    to: artist/alfred-sisley
+    sources:
+      - accessed: 2026-10-13
+        property: P802
+        wikidata: Q175130
+sources:
+  birth:
+    - accessed: 2026-10-13
+      property: P569
+      wikidata: Q2173609
+  death:
+    - accessed: 2026-10-13
+      property: P570
+      wikidata: Q2173609

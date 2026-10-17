@@ -1,0 +1,18 @@
+public_id: "100240"
+name: Figueres
+kind: site
+location: [2.95, 42.26667]
+wikidata_id: Q6839
+metadata:
+  sources: [Wikidata Q6839 (retrieved 2026-10-13)]
+identifiers:
+  gnd: 4380126-2
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q6839
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q6839

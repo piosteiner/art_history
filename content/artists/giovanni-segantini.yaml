@@ -1,0 +1,18 @@
+public_id: "100194"
+name: Giovanni Segantini
+given_name: Giovanni
+family_name: Segantini
+birth: 1858-01-15
+death: 1899-09-28
+wikidata_id: Q379300
+metadata:
+  sources: [Wikidata Q379300 (retrieved 2026-10-09)]
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q379300
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q379300

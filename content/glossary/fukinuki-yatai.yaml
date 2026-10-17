@@ -1,0 +1,16 @@
+public_id: "100068"
+name: fukinuki yatai
+names:
+  - lang: ja
+    role: original
+    text: "{吹抜屋台|ふきぬきやたい}"
+category: technique
+definition: Japanese painting technique depicting buildings without roofs.
+wikidata_id: Q16969395
+metadata:
+  sources: [Wikidata Q16969395 (retrieved 2026-10-06)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/NEZAME_MONOGATARI1_handscroll.jpg/1280px-NEZAME_MONOGATARI1_handscroll.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:NEZAME_MONOGATARI1_handscroll.jpg
+    license: Public domain
+    credit: "Anonymus 12th century painter, Photo: YAMATO-BUNKAKAN(ACE1954)"

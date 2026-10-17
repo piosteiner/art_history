@@ -1,0 +1,31 @@
+public_id: "100165"
+name: Robert Sterling Clark
+given_name: Robert Sterling
+family_name: Clark
+birth: 1877-06-25
+death: 1956-12-29
+wikidata_id: Q328297
+metadata:
+  sources: [Wikidata Q328297 (retrieved 2026-10-09)]
+relationships:
+  - type: founded
+    to: institution/clark-art-institute
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/William_Orpen_Robert_Sterling_Clark.jpg/1280px-William_Orpen_Robert_Sterling_Clark.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:William_Orpen_Robert_Sterling_Clark.jpg
+    license: Public domain
+    credit: William Orpen
+identifiers:
+  gnd: "129670693"
+  lc: no96065870
+  ulan: "500443790"
+  viaf: "23225175"
+sources:
+  birth:
+    - accessed: 2026-10-09
+      property: P569
+      wikidata: Q328297
+  death:
+    - accessed: 2026-10-09
+      property: P570
+      wikidata: Q328297

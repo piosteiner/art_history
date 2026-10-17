@@ -1,0 +1,35 @@
+public_id: "100374"
+name: Lucerne
+names:
+  - lang: zh
+    role: translation
+    text: 卢塞恩 / 琉森
+  - lang: ko
+    role: translation
+    text: 루체른
+  - lang: de
+    role: translation
+    text: Luzern
+  - lang: it
+    role: translation
+    text: Lucerna
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [8.3059, 47.0523]
+wikidata_id: Q4191
+metadata:
+  sources: [Wikidata Q4191 (retrieved 2026-10-13)]
+sources:
+  kind:
+    - accessed: 2026-10-13
+      property: P31
+      wikidata: Q4191
+  parent:
+    - accessed: 2026-10-13
+      property: P131
+      wikidata: Q4191
+  location:
+    - accessed: 2026-10-13
+      property: P625
+      wikidata: Q4191

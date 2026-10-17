@@ -1,0 +1,11 @@
+public_id: "100212"
+name: Republic of Genoa
+period: 1005/1797-06-14
+wikidata_id: Q174306
+metadata:
+  sources: [Wikidata Q174306 (retrieved 2026-10-12)]
+sources:
+  period:
+    - accessed: 2026-10-12
+      property: P571
+      wikidata: Q174306
