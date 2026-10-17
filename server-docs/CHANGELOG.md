@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-17
 
+### Adenai: session minutes (private, on this server)
+- **What:** `adenai-map/server/data/protocols.json` (+ `protocol-settings.json`, `protocols-deleted.json`; mode 600,
+  git-ignored) written by the CMS route `/api/protocols`; added to `scripts/backup.sh` (encrypted off-site).
+- **Why:** owner: campaign minutes behind a password; `public/data` is world-readable, so they must not go there.
+- **Revert:** remove the route from `server.js`; the files stay on disk and in the backup.
+
 ### Adenai: nightly off-site backup, journeys moved into the repo
 - **What:** `adenai-backup.{service,timer}` (04:30 UTC, units in `adenai-map/server/config/systemd/`) runs
   `server/scripts/backup.sh`: each `uploads/optimized/*.webp` encrypted once (gpg AES256, passphrase
