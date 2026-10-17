@@ -9,11 +9,11 @@ Every change to this server is recorded in [CHANGELOG.md](CHANGELOG.md) (newest 
 ## Services
 | Project | Path | Runtime | Port (local) | Public hostname | Data |
 |---|---|---|---|---|---|
-| adenai-admin (pm2: adenai-cms) | /var/www/adenai-admin | Node/Express, pm2 | 3001 | adenai-admin.piogino.ch | files |
+| adenai-map (pm2: adenai-cms) | /var/www/adenai-map/server | Node/Express, pm2 | 3001 | adenai-admin.piogino.ch | files |
 | calorie-tracker-api | /var/www/calorie-tracker-api | Node/Express, pm2 | 3000 | api.calorie-tracker.piogino.ch | MySQL `calorie_tracker` |
 | quiz-platform (pm2: quiz-backend) | /var/www/quiz-platform | Node/Express+socket.io, pm2 | 3002 | quiz.piogino.ch | SQLite |
-| obs-remote-media-backend | /var/www/obs-remote-media-backend | Node/Express+socket.io, pm2 | 3003 | api.piogino.ch (sub-path) | SQLite |
-| gif-converter | /var/www/gif-converter | Flask/Gunicorn, systemd | 5000 | api.piogino.ch | files |
+| obs-remote-media-controller (pm2: obs-remote-backend) | /var/www/obs-remote-media-controller/backend | Node/Express+socket.io, pm2 | 3003 | api.piogino.ch (sub-path) | SQLite |
+| file-converter (systemd: file-converter-api) | /var/www/file-converter/server | Flask/Gunicorn, systemd | 5000 | api.piogino.ch (frontend: converter.piogino.ch, GitHub Pages) | files |
 | arthistory (pm2: arthistory-api) | /var/www/arthistory/backend | Node/Express, pm2 | 3004 | api.arthistory / admin.arthistory.piogino.ch | PostgreSQL `arthistory` (+ `arthistory_dev`; tests: `arthistory_test`, `_1`, `_2` on :3006/:3008/:3009 while they run) |
 
 Shared: nginx (reverse proxy, certbot TLS; art history site config copied in `config/nginx/`), pm2 as user `ubuntu` (pm2-ubuntu.service). Both hostnames gzip JSON (`gzip_proxied any`).

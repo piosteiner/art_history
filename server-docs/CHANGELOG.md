@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-17
 
+### File converter renamed, runs from its git repo
+- **What:** backend runs from the `piosteiner/file-converter` clone at `/var/www/file-converter/server` (own `.venv`);
+  systemd `gif-converter` → `file-converter-api`; nginx site `gif-converter` → `api.piogino.ch` (holds all of
+  api.piogino.ch, `/obs/` included); GitHub repo `webapp-file-converter` → `file-converter`, push via deploy key
+  `~/.ssh/file_converter_deploy` (SSH alias `github-file-converter`). Old non-git copy `/var/www/gif-converter` deleted;
+  repo `gif-to-webm-converter` archived. Services table: adenai and OBS rows corrected to their real paths.
+- **Why:** owner: the backend had no git; the project is a general file converter, not only GIF.
+- **Revert:** rename the unit and nginx site back (`daemon-reload`, `nginx -t && systemctl reload nginx`); the code is
+  the repo, nothing else was lost.
+
 ### Row-level security: accounts limited to collections (migration 094)
 - **What:** table `editor_scopes`, `editor_institutions()`, `may_edit_artwork()`; ROW LEVEL SECURITY with policies on
   `artworks`, `provenance`, `artwork_numbers`, `images` (reads unaffected; accounts without a scope unaffected).
