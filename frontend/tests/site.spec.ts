@@ -307,6 +307,63 @@ test('versions: before the entry existed "not recorded yet then"; a bad date say
   await expect(page.locator('.asof-banner')).toContainText('this entry no longer exists');
 });
 
+test('travel (091): under the provenance map, how far the work went over how many steps', async ({ page }) => {
+  await page.goto(IRENE);
+  await expect(page.locator('#legend #travel')).toHaveText(/^Travelled ≈ [\d,]+ km over \d+ of \d+ steps$/);
+});
+
+test('crossed paths (091): from the database on entry pages, "nearby" on request; the browser\'s own search as fallback and for places', async ({ page }) => {
+  const asked: string[] = [];
+  page.on('request', (r) => r.url().includes('/map/encounters') && asked.push(r.url()));
+  await page.goto('/artists/vincent-van-gogh');
+  const sec = page.locator('#crossed');
+  await sec.scrollIntoViewIfNeeded();
+  await expect(sec.locator('li', { hasText: 'Paul Gauguin' })).toContainText('Arles');
+  expect(asked.some((u) => u.includes('entity=artists%2Fvincent-van-gogh') || u.includes('entity=artists/vincent-van-gogh'))).toBe(true);
+  await sec.locator('.crossed-nearby input').check();
+  await expect.poll(() => asked.some((u) => u.includes('within_km=50'))).toBe(true);
+  await expect(sec.locator('li', { hasText: 'km apart' }).first()).toContainText('nearby at the same time');
+  // the API fails: the browser finds the same
+  await page.route(/\/v1\/map\/encounters/, (r) => r.fulfill({ status: 500, json: { error: 'internal_error', message: 'down' } }));
+  await page.goto('/artists/paul-gauguin');
+  await page.locator('#crossed-anchor').scrollIntoViewIfNeeded();
+  await expect(page.locator('#crossed li', { hasText: 'Vincent van Gogh' })).toContainText('Arles');
+  // a place: the browser's search (the API has no place filter)
+  asked.length = 0;
+  await page.unroute(/\/v1\/map\/encounters/);
+  await page.goto('/places/paris');
+  await page.locator('#crossed-anchor').scrollIntoViewIfNeeded();
+  await expect(page.locator('#crossed h2')).toHaveText('Crossed paths here');
+  expect(asked).toEqual([]);
+});
+
+test('start map zoomed out (091): numbered bubbles of nearby places; a click zooms in; not with single picks', async ({ page }) => {
+  await page.goto('/?all');
+  const bubbles = page.locator('.map-cluster');
+  await expect(bubbles.first()).toBeVisible();
+  const zoom = () => page.evaluate(() => (window as unknown as { __maps: { getZoom(): number }[] }).__maps.at(-1)!.getZoom());
+  const before = await zoom();
+  const biggest = await bubbles.evaluateAll((els) => els.map((e) => Number(e.textContent!.replace(/,/g, ''))).indexOf(Math.max(...els.map((e) => Number(e.textContent!.replace(/,/g, ''))))));
+  await expect(bubbles.nth(biggest)).toHaveAttribute('title', /stays at \d+ places: .*Zürich/);
+  await bubbles.nth(biggest).click();
+  await expect.poll(zoom).toBeGreaterThan(before + 1);
+  // close in: the dots, no bubbles
+  await page.evaluate(() => (window as unknown as { __maps: { jumpTo(o: object): void }[] }).__maps.at(-1)!.jumpTo({ center: [8.54, 47.37], zoom: 7 }));
+  await expect(bubbles).toHaveCount(0);
+  // single picks: their own dots and routes, never bubbles
+  await page.goto('/?artists=vincent-van-gogh&artworks=none&movements=none&polities=none&people=none');
+  await expect(page.locator('#map-status')).toContainText('chosen entries on the map');
+  await expect(bubbles).toHaveCount(0);
+});
+
+test('prices: AFRF reads "French francs (before 1960)"', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [step(0, { type: 'person', slug: 'a-buyer', name: 'A Buyer' }, { kind: 'step', in_chain: true, direct: true, price: { amount: 20000, currency: 'AFRF', note: null, chf_today: null } })];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.provenance-step .provenance-how')).toContainText('20,000 French francs (before 1960)');
+});
+
 test('network graph: nodes, details on click, filters in the URL', async ({ page }) => {
   const errors = noErrors(page);
   await page.goto('/graph/artists/vincent-van-gogh?depth=2');

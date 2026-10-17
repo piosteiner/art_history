@@ -1,7 +1,7 @@
 // The only module that talks to the backend. Everything else calls these functions, never fetch().
 import type {
   AsOfDetail, DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, History, NetworkHands, NetworkPath, ProvenanceNumberHit,
-  ItemByPlural, List, PlacesMap, Plural, SharedHands, TextHit,
+  ClustersMap, EncounterRow, ItemByPlural, List, PlacesMap, Plural, SharedHands, TextHit,
   EventsMap, PresenceMap, RelationshipType, SearchHit, SitesMap,
 } from './types';
 
@@ -182,3 +182,13 @@ export const getHistory = (plural: Plural, key: string) => get<History>(`/histor
 /** The entry as recorded at `asOf` (089) — a date or a moment, passed on exactly as given (microseconds). */
 export const getEntityAsOf = (plural: Plural, key: string, asOf: string) =>
   get<AsOfDetail>(`/${plural}/${encodeURIComponent(key)}`, { as_of: asOf });
+
+// ---- spatial history (API 091) ----------------------------------------------------------------------------------
+
+/** Who was near whom, computed in the database: one entry's crossed paths (`<plural>/<slug>` or its number). */
+export const getEncounters = (entity: string, withinKm?: number) =>
+  get<{ data: EncounterRow[] }>('/map/encounters', { entity, within_km: withinKm }).then((r) => r.data);
+
+/** Places with presence grouped for a zoom level (rounded), optionally in a time window. */
+export const getClusters = (zoom: number, window: { from: number; to: number } | null) =>
+  get<ClustersMap>('/map/clusters', { zoom, from: window?.from, to: window?.to });

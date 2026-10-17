@@ -9,11 +9,12 @@ const overlap = (e: Encounter) => html`${e.when}${e.approximate
   ? html` <span class="tag" title="At least one of the dates is only known to the year, so they may have missed each other">possibly</span>`
   : html` <span class="muted">· ${duration(e.days)}</span>`}`;
 
-/** "Kunsthaus Zürich, Zürich" when they were at the same venue, else the city. */
+/** "Kunsthaus Zürich, Zürich" when they were at the same venue, else the city; nearby: both places and the distance. */
 const where = (e: Encounter) => (e.venue
   ? html`${link(e.venue.type, e.venue.slug, e.venue.name)}, ${link('place', e.place.slug, e.place.name)}`
+  : e.otherPlace ? html`${link('place', e.place.slug, e.place.name)} and ${link('place', e.otherPlace.slug, e.otherPlace.name)} <span class="muted">(≈ ${String(e.km ?? 0)} km apart)</span>`
   : link('place', e.place.slug, e.place.name));
-const kindOf = (e: Encounter) => (e.venue ? 'could have met there' : 'in the same city at the same time');
+const kindOf = (e: Encounter) => (e.venue ? 'could have met there' : e.otherPlace ? 'nearby at the same time' : 'in the same city at the same time');
 
 /** Explore page link showing both entries in the years of their overlap. */
 export function compareUrl(e: Encounter) {

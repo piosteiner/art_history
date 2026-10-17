@@ -5,13 +5,13 @@
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
 // The home page (/) shows curated views (/v1/featured, edited in the admin panel): the first one, others at
 // /?featured=<slug>, everything at /?all. A view is a saved URL query; changing the picks or the window makes it your own.
-import { getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getSites, getView, listAll, PLURAL } from '../api';
+import { getClusters, getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getSites, getView, listAll, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, render, trusted } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
 import { findEncounters, type Encounter, type Stay } from '../encounters';
 import {
-  COLORS, createMap, focusEncounter, highlightRoute, PALETTE, placedProvenance, provenanceInWindow, showEncounters, showEvents, showPlaces, showPresence, showSelection,
+  CLUSTER_BELOW, COLORS, createMap, focusEncounter, showClusters, highlightRoute, PALETTE, placedProvenance, provenanceInWindow, showEncounters, showEvents, showPlaces, showPresence, showSelection,
   showSites, unplacedSteps, type ColoredEntityMap, type RouteInfo,
 } from '../map';
 import { mountPickers, type PickerGroup } from '../picker';
@@ -321,7 +321,24 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       if (!stale()) showError(status, err);
     }
     if (!stale()) drawEvents(); // the overlays were re-added: events back on top, filtered by the window
+    if (!stale()) void drawClusters();
   }
+
+  // zoomed out without single picks: numbered bubbles of nearby places (API 091) instead of every dot — they count
+  // every stay, not the selection, so not when entries are chosen; refetched per (rounded) zoom and window
+  let clusterRequest = 0;
+  async function drawClusters() {
+    const mine = ++clusterRequest;
+    const zoom = Math.round(map.getZoom());
+    if (zoom >= CLUSTER_BELOW || chosen(sel).length) return showClusters(map, null);
+    try {
+      const fc = await getClusters(zoom, win);
+      if (mine === clusterRequest) showClusters(map, fc);
+    } catch {
+      if (mine === clusterRequest) showClusters(map, null); // the dots stay
+    }
+  }
+  map.on('zoomend', () => void drawClusters());
 
   /**
    * The artworks among the rows with a placed provenance step ("artwork/slug" → provenance): drawn in its order instead

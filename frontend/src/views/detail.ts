@@ -187,6 +187,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
               ${both ? html`<button type="button" class="link-button" data-fit="all">show associations</button>` : ''}
               ${prov?.unplaced.length ? html`<div class="legend-note" id="unplaced">Not on the map (place not recorded):
                 ${unplacedSteps(prov)}</div>` : ''}
+              ${prov && e.type === 'artwork' && e.travel ? html`<div class="legend-note" id="travel" title="${String(e.travel.legs)} ${e.travel.legs === 1 ? 'move' : 'moves'} between different places, along the line through the provenance's stops">Travelled ≈ ${e.travel.km.toLocaleString('en')} km over ${String(e.travel.placed)} of ${String(e.travel.steps)} steps</div>` : ''}
               ${prov?.gaps?.length ? html`<div class="legend-note" id="gaps">Gaps in the provenance:
                 ${gapList(prov)}</div>` : ''}`);
             legend.querySelector<HTMLButtonElement>('[data-fit]')?.addEventListener('click', (ev) => {

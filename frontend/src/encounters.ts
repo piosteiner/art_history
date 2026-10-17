@@ -1,6 +1,8 @@
-// "Crossed paths": two entries at the same place with overlapping dates (Gauguin and Van Gogh in Arles, Oct–Dec 1888),
-// found in the dated presence links the maps already load. Left out: an artwork with its own artist, and two artworks.
-import type { DateRange, EntityType, Ref } from './types';
+// "Crossed paths": two entries at the same place with overlapping dates (Gauguin and Van Gogh in Arles, Oct–Dec 1888).
+// Computed by the database since API 091 (`GET /v1/map/encounters`, `fromApi` below); `findEncounters` does the same in
+// the browser over the dated presence links the maps already load — still used by the start map and place pages, and
+// as the fallback. Left out: an artwork with its own artist, two artworks, stays with an open start.
+import type { DateRange, EncounterRow, EntityType, Ref } from './types';
 
 export interface Stay {
   entity: { type: EntityType; slug: string; name: string };
@@ -33,13 +35,16 @@ export interface Encounter {
   venue: Venue | null;
   /** Where to mark it: the venue's point (null without a venue: use the city's). */
   point: [number, number] | null;
+  /** Nearby, not the same place (API 091 `within_km`): where `b` was, and how far apart. */
+  otherPlace?: Ref | null;
+  km?: number;
 }
 
 const DAY = 86_400_000;
 const today = Math.floor(Date.now() / DAY);
 
 /** Days since 1970 for an ISO date, also BCE ("-0500-01-01"). */
-function days(iso: string) {
+export function days(iso: string) {
   const m = /^(-?\d+)-(\d\d)-(\d\d)/.exec(iso);
   if (!m) return NaN;
   const d = new Date(0);
@@ -62,7 +67,7 @@ const dateOf = (n: number) => new Date(n * DAY);
 const yearLabel = (y: number) => (y < 0 ? `${-y} BCE` : String(y));
 
 /** "23 October – 25 December 1888", "1887", "1886–1888". */
-function describe(from: number, to: number, approximate: boolean) {
+export function describe(from: number, to: number, approximate: boolean) {
   const a = dateOf(from), b = dateOf(to);
   const [ya, yb] = [a.getUTCFullYear(), b.getUTCFullYear()];
   if (approximate) return ya === yb ? yearLabel(ya) : `${yearLabel(ya)}–${yearLabel(yb)}`;
@@ -127,3 +132,21 @@ export function findEncounters(stays: Stay[], opts: FindOptions = {}): Encounter
 
 /** The entries an encounter is about, as route keys ("artist/vincent-van-gogh"). */
 export const encounterKeys = (e: Encounter) => [`${e.a.entity.type}/${e.a.entity.slug}`, `${e.b.entity.type}/${e.b.entity.slug}`];
+
+/** "lived_in" → "lived in": the relationship as the line reads it. */
+const reads = (code: string) => code.replace(/_/g, ' ');
+
+/** An encounter from the database (API 091) in the shape the page draws. */
+export function fromApi(r: EncounterRow): Encounter {
+  const from = days(r.overlap.from ?? `${r.overlap.from_year}-01-01`);
+  const to = r.overlap.to ? days(r.overlap.to) : today;
+  const other = r.other_place && r.other_place.slug !== r.place.slug ? r.other_place : null;
+  return {
+    place: r.place,
+    a: { entity: r.a, place: r.place, label: reads(r.a_relationship), period: null },
+    b: { entity: r.b, place: other ?? r.place, label: reads(r.b_relationship), period: null },
+    from, to, days: r.days, approximate: r.approximate, when: describe(from, to, r.approximate),
+    venue: r.venue ? { type: r.venue.type ?? 'institution', slug: r.venue.slug, name: r.venue.name } : null,
+    point: null, otherPlace: other, km: r.km,
+  };
+}

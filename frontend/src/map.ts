@@ -1,6 +1,6 @@
 // The map views: one entity's places, all places, presence in a time window, several chosen entries, crossed paths,
 // museums and sites, events. Setup and shared helpers: map-core.ts; an artwork's provenance: map-provenance.ts.
-import { Popup, type Map as MapLibre } from 'maplibre-gl';
+import { Marker, Popup, type Map as MapLibre } from 'maplibre-gl';
 import type { ExpressionSpecification } from 'maplibre-gl';
 import { html, href, link, type Html } from './html';
 import { encounterLine } from './crossings';
@@ -13,7 +13,7 @@ import {
   clearProvenanceMarkers, drawProvenance, holderText, placedProvenance, provenanceLayers, provenanceStops, stepsAtPlace, withoutReplaced,
 } from './map-provenance';
 import type {
-  EntityMap, EntityType, EventMapProps, EventsMap, Feature, Inference, LineStringGeometry, PlacesMap, PresenceMap,
+  ClustersMap, EntityMap, EntityType, EventMapProps, EventsMap, Feature, Inference, LineStringGeometry, PlacesMap, PresenceMap,
   ProvenanceMap, ProvenanceSegmentProps, SiteProps, SitesMap, StopFeature,
 } from './types';
 
@@ -680,4 +680,41 @@ export function showSelection(map: MapLibre, input: ColoredEntityMap[]) {
     const held = provenances.flatMap((p) => provenanceStops(p.prov).map((f) => f.geometry.coordinates));
     fit(map, [...(presence.length || held.length ? presence : stops).map((f) => (f.geometry as GeoJSON.Point).coordinates as [number, number]), ...held]);
   });
+}
+
+// ---- clusters at low zoom (API 091) -----------------------------------------------------------------------------
+
+/** Below this zoom the start map groups its places into numbered bubbles. */
+export const CLUSTER_BELOW = 6;
+const clusterMarkers = new WeakMap<MapLibre, Marker[]>();
+const DOT_LAYERS = [...PLACE_LAYERS, 'presence-circles']; // what the bubbles stand in for
+
+/**
+ * Numbered bubbles, one per group of nearby places with presence (the number: stays there), in place of the place
+ * dots; a click zooms into the group's bounds. `null` removes them and shows the dots again.
+ */
+export function showClusters(map: MapLibre, fc: ClustersMap | null) {
+  clusterMarkers.get(map)?.forEach((m) => m.remove());
+  clusterMarkers.set(map, []);
+  for (const id of DOT_LAYERS) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', fc ? 'none' : 'visible');
+  if (!fc) return;
+  const markers = clusterMarkers.get(map)!;
+  for (const f of fc.features) {
+    const p = f.properties;
+    const el = document.createElement('button');
+    el.type = 'button';
+    el.className = 'map-cluster';
+    const size = Math.round(26 + Math.min(34, Math.sqrt(p.presence) * 2.2));
+    el.style.width = el.style.height = `${size}px`;
+    el.textContent = p.presence.toLocaleString('en');
+    const names = p.top.map((t) => `${t.name} ${t.presence}`).join(', ');
+    el.title = `${p.presence} stays at ${p.places} ${p.places === 1 ? 'place' : 'places'}: ${names}${p.places > p.top.length ? ' …' : ''} — click to zoom in`;
+    el.setAttribute('aria-label', el.title);
+    el.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      const [w, s, e, n] = f.bbox;
+      map.fitBounds([[w, s], [e, n]], { padding: 60, maxZoom: 8, duration: 700 });
+    });
+    markers.push(new Marker({ element: el }).setLngLat(f.geometry.coordinates).addTo(map));
+  }
 }

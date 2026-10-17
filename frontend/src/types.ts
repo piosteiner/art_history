@@ -289,6 +289,8 @@ export interface Artwork extends DetailBase, Located, Titled {
   conceived?: DateRange | null;
   /** Where the provenance is silent (API 078), from the creation until today; null without a creation date. */
   provenance_coverage?: ProvenanceCoverage | null;
+  /** How far it travelled (API 091): the line through the provenance stops — null without two placed stops. */
+  travel?: { km: number; legs: number; placed: number; steps: number } | null;
 }
 
 /** A stretch of time in the coverage: like a DateRange, but the API leaves its `label` empty (`years()` in coverage.ts). */
@@ -335,8 +337,11 @@ export type AcquisitionMethod =
  */
 export type ProvenanceRole = 'owner' | 'dealer' | 'agent' | 'estate' | 'custodian' | 'publisher' | 'foundry' | 'trustee' | 'event'
   | 'possessor'; // held without good title: seized, looted, stolen, or received from those who took it (API 083)
-/** `currency`: ISO 4217, old ones like FRF too, or a historical code without ISO ("RM"). */
-export interface Price { amount: number; currency: string; note: string | null }
+/**
+ * `currency`: ISO 4217, old ones like FRF too, or a historical code without ISO ("RM", "AFRF" = French francs before
+ * 1960). `chf_today` (API 090): the value in today's Swiss francs — always null until rates are loaded.
+ */
+export interface Price { amount: number; currency: string; note: string | null; chf_today?: number | null }
 /** A number a provenance step records (API 077): kind lot · stock · inventory · catalogue · ek · err · munich · linz · aussee · lugt · other; `label` "Munich no.". */
 export interface ProvenanceNumber { kind: string; label: string; number: string }
 /** `GET /v1/provenance-numbers?number=`: the steps recording a number. */
@@ -648,3 +653,19 @@ export interface AsOfDetail {
   relationships: AsOfRelationship[]; provenance?: AsOfStep[];
   changes_since: { changed_at: string; table: string; action: string; fields: string[]; source: string | null }[];
 }
+
+// ---- spatial history (API 091) ----------------------------------------------------------------------------------
+
+/** `GET /v1/map/encounters`: two dated stays overlapping at one place — or within `within_km` (then `other_place`). */
+export interface EncounterRow {
+  a: { type: EntityType; slug: string; name: string; public_id?: number };
+  b: { type: EntityType; slug: string; name: string; public_id?: number };
+  place: Ref; other_place: Ref | null;
+  venue: { type?: 'institution' | 'artwork'; slug: string; name: string } | null;
+  overlap: Stretch; days: number; km: number; approximate: boolean;
+  a_relationship: string; b_relationship: string;
+}
+
+/** `GET /v1/map/clusters`: places with presence grouped for a zoom; `bbox` [w, s, e, n] to zoom into. */
+export interface ClusterProps { cluster: number; places: number; presence: number; top: { slug: string; name: string; presence: number }[] }
+export interface ClustersMap { type: 'FeatureCollection'; features: (Feature<PointGeometry, ClusterProps> & { bbox: [number, number, number, number] })[] }

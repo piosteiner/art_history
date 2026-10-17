@@ -262,6 +262,22 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
   rest folded); the handovers dated in the window. Linked from the artworks list (beside "Works with open questions")
   and from an artwork's 1933–1945 status line; prerendered and in the sitemap.
 
+## Spatial history and prices (API 090–091)
+- Travel: under an artwork's provenance map, `travel` as "Travelled ≈ 2,232 km over 12 of 15 steps" (tooltip: the
+  moves between different places); nothing when `travel` is null.
+- Crossed paths on entry pages (`crossedPaths` in `detail-sections.ts`) come from `GET /v1/map/encounters?entity=` and
+  are turned into the same `Encounter` shape (`fromApi` in `src/encounters.ts`), so they read as before. A checkbox
+  "nearby too (≤ 50 km)" asks again with `within_km=50` ("Paris and Saint-Denis (≈ 12 km apart) · nearby at the same
+  time"); with nothing at the same place the nearby ones are offered at once, and the section stays hidden only when
+  both are empty. The browser's own `findEncounters` still serves **place pages** (the API has no place filter —
+  backend wish), the start map, and any page where the API fails.
+- Start map zoomed out (`showClusters` in `map.ts`, `drawClusters` in `explore.ts`): below zoom 6 and without single
+  picks, `GET /v1/map/clusters?zoom=<rounded>&from=&to=` replaces the place dots (and the window's presence dots) with
+  numbered bubbles — the number is stays, the tooltip the top places; a click fits the group's `bbox`. Refetched on
+  `zoomend` and after every map update (a new window). They count every stay, not the selection, so they stay away when
+  entries are picked; the routes stay drawn underneath.
+- Prices: `chf_today` (always null until rates are loaded) is not shown; AFRF reads "French francs (before 1960)".
+
 ## Wishes for the backend
 - **Maps and networks by number (085):** `/v1/map/<plural>/<number>` and `/v1/graph/<plural>/<number>` answer 404, so an
   entry opened by its number loads its map only after the entry (to learn the slug) — one round trip later.
@@ -271,9 +287,9 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
 - **Provenance step ids (087):** search hits name `provenance_ids`, but the detail's provenance steps carry no `id`,
   so a hit can only open the Provenance section. With `id` per step the page renders `id="provenance-<id>"` (already
   wired) and scrolls to the exact step.
-- **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise): `GET /v1/encounters?from=&to=&types=`
-  = a self-join of presence links on `place_id` with `a.period && b.period` (daterange overlap, GiST index) and
-  `a.period * b.period` as the overlap; today the browser does this over the full presence list.
+- **Encounters at a place (091):** `/v1/map/encounters` filters by one entry, not by a place; place pages ("Crossed
+  paths here") and the start map's list therefore still compute them in the browser. A `place=` filter (and one for a
+  set of entries — the start map's selection) would let the browser's `findEncounters` go.
 - **`end_basis` on map stops:** `/v1/map/…` features don't carry `end_basis` yet, so a `kept_in` stop whose end is
   only implied can't be drawn differently on the map (the detail page and the graph do mark it).
 - **Bug:** `/v1/map/presence?from=-5000` answers `internal_error` (PostgreSQL dates start at 4713 BC); clamp or

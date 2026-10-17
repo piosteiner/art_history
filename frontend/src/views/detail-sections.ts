@@ -1,10 +1,10 @@
 // Detail pages: the sections below the facts — provenance, relationships by category, backlinks, crossed paths.
-import { getPresence, listAll } from '../api';
+import { getEncounters, getPresence, listAll, PLURAL } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
-import { encounterKeys, findEncounters } from '../encounters';
+import { encounterKeys, findEncounters, fromApi, type Encounter } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
 import type {
-  Citation, SourceHint, Category, CoverageSegment, Entity, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceStatus, ProvenanceStep, Relationship,
+  Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceStatus, ProvenanceStep, Relationship,
 } from '../types';
 import { cite } from '../cite';
 import { coverageBar, gapSides, gapText } from '../coverage';
@@ -124,8 +124,10 @@ function holders(s: ProvenanceStep): Html {
   return html`${s.role === 'estate' ? 'Estate of ' : ''}${all.map((h, i) => html`${i ? (i === all.length - 1 ? ' and ' : ', ') : ''}${h}`)}`;
 }
 
-/** "200 FRF", "ca. 18,000 USD". */
-const priceLabel = (p: Price) => `${p.note ? `${p.note} ` : ''}${p.amount.toLocaleString('en')} ${p.currency}`;
+// currencies whose code says little: named instead (API 090; `chf_today` stays unshown until rates are loaded)
+const CURRENCY_NAME: Record<string, string> = { AFRF: 'French francs (before 1960)' };
+/** "200 FRF", "ca. 18,000 USD", "20,000 French francs (before 1960)". */
+const priceLabel = (p: Price) => `${p.note ? `${p.note} ` : ''}${p.amount.toLocaleString('en')} ${CURRENCY_NAME[p.currency] ?? p.currency}`;
 
 /** The holder the work is lent from: the last recorded owner (the `loan` line after it is computed; agents and custodians held it beside the owner). */
 export const lastRecordedStep = (steps: ProvenanceStep[] | undefined) => steps?.filter((s) => s.kind !== 'loan' && s.in_chain !== false).at(-1);
@@ -292,10 +294,48 @@ export function relationshipSections(rels: Relationship[], pageType?: string, bi
 }
 
 /**
- * Who this entry crossed paths with (same place, overlapping dates), or for a place: who met there. Uses all dated
- * presence links (one request, shared with the start map) and the artworks list (to leave out a work and its artist).
+ * Who this entry crossed paths with (same place, overlapping dates), or for a place: who met there. Entries ask the
+ * database (API 091: `/v1/map/encounters`, also "nearby, ≤ 50 km"); a place — the API has no place filter yet — and any
+ * failure use the browser's own search over all dated presence links (one request, shared with the start map).
  */
 export function crossedPaths(el: HTMLElement, type: string, slug: string, current: () => boolean) {
+  if (type === 'place') return crossedPathsHere(el, type, slug, current);
+  const self = `${type}/${slug}`;
+  const entity = `${PLURAL[type as EntityType]}/${slug}`;
+  let nearby = false;
+  const draw = (list: Encounter[], note = '') => {
+    el.hidden = false;
+    render(el, html`<h2>Crossed paths</h2>
+      <p class="muted small">At the same place at the same time, from the dated places on this site.${note ? html` ${note}` : ''}</p>
+      <label class="crossed-nearby"><input type="checkbox" ${nearby ? html`checked` : ''}> nearby too (≤ 50 km)</label>
+      ${list.length ? html`<ul class="plain-list encounters-list">${list.map((x) => crossedLine(x, self))}</ul>` : html`<p class="muted">Nobody nearby either.</p>`}`);
+    el.querySelector<HTMLInputElement>('.crossed-nearby input')!.addEventListener('change', (ev) => {
+      nearby = (ev.target as HTMLInputElement).checked;
+      void load();
+    });
+  };
+  const load = async () => {
+    try {
+      let list = (await getEncounters(entity, nearby ? 50 : undefined)).map(fromApi);
+      if (!current()) return;
+      // none at the same place: perhaps nearby — offered at once, so the section isn't simply missing
+      if (!list.length && !nearby) {
+        list = (await getEncounters(entity, 50)).map(fromApi);
+        if (!current()) return;
+        if (!list.length) { el.hidden = true; return; }
+        nearby = true;
+        return draw(list, 'None at the same place — nearby (≤ 50 km):');
+      }
+      draw(list);
+    } catch {
+      if (current()) crossedPathsHere(el, type, slug, current); // the browser's own search
+    }
+  };
+  void load();
+}
+
+/** The browser's own search (src/encounters.ts) over all dated presence links: place pages, and the fallback. */
+function crossedPathsHere(el: HTMLElement, type: string, slug: string, current: () => boolean) {
   Promise.all([getPresence(-3000, new Date().getFullYear() + 1), listAll('artworks')])
     .then(([presence, artworks]) => {
       if (!current() || !el.isConnected) return;
