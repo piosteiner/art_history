@@ -1,6 +1,7 @@
 // The only module that talks to the backend. Everything else calls these functions, never fetch().
 import type {
-  DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, ProvenanceNumberHit, ItemByPlural, List, PlacesMap, Plural,
+  AsOfDetail, DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, History, NetworkHands, NetworkPath, ProvenanceNumberHit,
+  ItemByPlural, List, PlacesMap, Plural, SharedHands, TextHit,
   EventsMap, PresenceMap, RelationshipType, SearchHit, SitesMap,
 } from './types';
 
@@ -8,7 +9,8 @@ import type {
 const BASE = import.meta.env.DEV ? '/v1' : 'https://api.arthistory.piogino.ch/v1';
 
 export class ApiError extends Error {
-  constructor(public status: number, public code: string, message: string) {
+  /** `body`: the whole answer, for errors that say more (089: a 404 names `first_recorded`). */
+  constructor(public status: number, public code: string, message: string, public body: Record<string, unknown> | null = null) {
     super(message);
   }
 }
@@ -61,7 +63,7 @@ function get<T>(path: string, params: Params = {}): Promise<T> {
     fetchedAt.set(url, Date.now());
     p = fetch(url, { headers: { Accept: 'application/json' } }).then(async (res) => {
       const body = await res.json().catch(() => null);
-      if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText);
+      if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText, body);
       remember(body, listPlural(path));
       return body as T;
     });
@@ -79,7 +81,7 @@ export function saveView(query: string): Promise<string> {
   if (!p) {
     p = fetch(`${BASE}/views`, { method: 'POST', headers: { 'Content-Type': 'text/plain' }, body: query }).then(async (res) => {
       const body = await res.json().catch(() => null);
-      if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText);
+      if (!res.ok) throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText, body);
       return (body as { id: string }).id;
     });
     p.catch(() => savedViews.delete(query));
@@ -156,3 +158,27 @@ export const getGraph = (plural: Plural, slug: string, depth = 1, types?: string
 /** Previews of any entries ("artist/paul-gauguin", "term/contrapposto" …; at most 100 per call); missing ones are left out. */
 export const getPreviews = (refs: string[]) =>
   get<{ data: Record<string, EntryHint> }>('/previews', { refs: refs.join(',') }).then((r) => r.data);
+
+// ---- full-text search, network questions, versions (API 087–089) ------------------------------------------------
+
+/** Names and texts (087): web-search syntax, stemmed in EN/DE/FR; `type` an entity type ("artwork"). */
+export const searchText = (q: string, type: EntityType | null, limit: number, offset: number) =>
+  get<{ total: number; data: TextHit[] }>('/search/text', { q, type, limit, offset });
+
+/** The shortest chain between two entries (088): `<number>` or `<plural>/<slug or number>`. */
+export const getNetworkPath = (from: string, to: string, via?: string) =>
+  get<NetworkPath>('/network/path', { from, to, via });
+
+/** Through whose hands works went in a window (088). */
+export const getNetworkHands = (from: number, to: number) => get<NetworkHands>('/network/hands', { from, to });
+
+/** Works that went through the same hands as this one (088); `current`: also hands both are still in. */
+export const getSharedHands = (artwork: string, current: boolean) =>
+  get<SharedHands>('/network/shared-hands', { artwork, depth: 2, current: current ? 1 : undefined });
+
+/** An entry's versions (089), newest first. */
+export const getHistory = (plural: Plural, key: string) => get<History>(`/history/${plural}/${encodeURIComponent(key)}`);
+
+/** The entry as recorded at `asOf` (089) — a date or a moment, passed on exactly as given (microseconds). */
+export const getEntityAsOf = (plural: Plural, key: string, asOf: string) =>
+  get<AsOfDetail>(`/${plural}/${encodeURIComponent(key)}`, { as_of: asOf });

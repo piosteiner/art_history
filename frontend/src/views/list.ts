@@ -145,7 +145,8 @@ export function list(main: HTMLElement, plural: Plural) {
     const n = all.filter(openQuestion).length;
     gapEl.hidden = !n && !gapOnly;
     render(gapEl, html`<button type="button" class="${gapOnly ? 'on' : ''}" aria-pressed="${String(gapOnly)}"
-      title="No holder known for some time between 30 January 1933 and 8 May 1945">Works with open questions 1933–1945 <span class="muted">${String(n)}</span></button>`);
+      title="No holder known for some time between 30 January 1933 and 8 May 1945">Works with open questions 1933–1945 <span class="muted">${String(n)}</span></button>
+      <a class="gap-filter-link" href="/provenance/1933-1945">Through whose hands, 1933–1945 →</a>`);
   }
   gapEl.addEventListener('click', (ev) => {
     if (!(ev.target as Element).closest('button')) return;

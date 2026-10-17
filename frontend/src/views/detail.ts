@@ -1,6 +1,8 @@
 // Detail page for every entity type: facts, images with credits, long text, relationships by category, map.
 import { getEntity, getEntityMap, PLURAL } from '../api';
 import { navigate, replaceUrl } from '../router';
+import { asOfView } from './asof';
+import { citeSection, connectSection, sharedHandsSection } from './detail-network';
 import { GROUPS, type Group } from '../selection';
 import {
   titleStatusLine, displayName, langAttr, originalLine, figure, html, PLURAL_LABEL, render, trusted, TYPE_LABEL, wireImageFallbacks, wireLightbox,
@@ -17,6 +19,9 @@ import { backlinks, crossedPaths, holdingsSections, relationshipSections, shownE
 
 /** `key`: a slug or a public number (API 085); the page then moves to the entry's canonical address (`path`). */
 export function detail(main: HTMLElement, plural: Plural, key: string) {
+  // a version as recorded then (API 089): its own, simpler page
+  const asOf = new URLSearchParams(location.search).get('as_of');
+  if (asOf) return asOfView(main, plural, key, asOf);
   loading(main);
   const current = guard();
   let cleanup: (() => void) | undefined;
@@ -77,11 +82,14 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
             ${e.wikidata_id ? html`<p class="muted small">Wikidata: <a href="https://www.wikidata.org/wiki/${e.wikidata_id}" target="_blank" rel="noopener">${e.wikidata_id}</a></p>` : ''}
             ${v.extra}
             <div id="crossed-anchor"></div><section id="crossed" class="crossed" hidden></section>
+            ${e.type === 'artwork' ? html`<section id="shared-hands" class="shared" hidden></section>` : ''}
             ${holdings?.html ?? ''}
             ${relationshipSections(holdings?.rest ?? listed, e.type, e.bibliography)}
             ${e.type === 'source'
               ? backlinks('Cited in', 'Entries whose texts cite this source.', e.mentioned_in)
               : backlinks('Mentioned in', 'Entries whose texts link to this one.', e.mentioned_in)}
+            <section id="connect" class="connect"></section>
+            <section id="cite-version" class="cite-version" hidden></section>
           </div>
           ${hasMap ? html`<aside class="detail-side">
             <div class="map map-small" id="map"></div>
@@ -102,6 +110,14 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
           crossedPaths(main.querySelector<HTMLElement>('#crossed')!, e.type, e.slug, current);
         }, { rootMargin: '800px 0px' });
         observer.observe(main.querySelector('#crossed-anchor')!);
+      }
+      // network questions and versions (API 088/089)
+      if (e.type === 'artwork') sharedHandsSection(main.querySelector<HTMLElement>('#shared-hands')!, e, current);
+      connectSection(main.querySelector<HTMLElement>('#connect')!, e, current);
+      citeSection(main.querySelector<HTMLElement>('#cite-version')!, plural, e, v.title, current);
+      // a link to a provenance step (a search hit): the step once steps carry ids, else the Provenance section
+      if (location.hash.startsWith('#provenance')) {
+        (main.querySelector(`[id="${CSS.escape(location.hash.slice(1))}"]`) ?? main.querySelector('#provenance'))?.scrollIntoView();
       }
       if (!hasMap) return;
 

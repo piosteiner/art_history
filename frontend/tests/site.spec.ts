@@ -170,29 +170,141 @@ test('header search finds fields and typos', async ({ page }) => {
   await expect(page).toHaveURL(/\/(artists|artworks)\//);
 });
 
-test('search page: Enter without a chosen hit lists every result as cards — names first, then works by the artist; by type', async ({ page }) => {
+test('search page (087): Enter opens full-text search — names and texts, why it matched, the passage; by type; pages', async ({ page }) => {
   await page.goto('/?all');
   const input = page.locator('.search-form input');
   await input.fill('gauguin');
-  await expect(page.locator('.search-results .hit-all')).toContainText('results for “gauguin”');
+  await expect(page.locator('.search-results .hit-all')).toBeVisible();
   await input.press('Enter');
   await expect(page).toHaveURL(/\/search\?q=gauguin$/);
   await expect(page.locator('main h1')).toHaveText('Search');
   await expect(page.locator('.search-page-form input')).toHaveValue('gauguin');
-  const cards = page.locator('#items .card');
-  await expect(cards.first()).toBeVisible();
-  expect(await cards.count()).toBeGreaterThan(5);
-  await expect(cards.first().locator('.card-name')).toContainText('Gauguin');                  // a name that matches comes first
-  await expect(page.locator('#items .card', { hasText: 'Idylle à Tahiti' }).locator('.card-detail')).toContainText('Paul Gauguin'); // a work by him
-  await expect(page.locator('#items .card', { hasText: 'Idylle à Tahiti' }).locator('.card-type')).toHaveText('Artwork');
+  const rows = page.locator('#items .text-hit');
+  await expect(rows.first()).toBeVisible();
+  await expect(rows.first().locator('.text-hit-name')).toContainText('Gauguin');                 // the name ranks first
+  await expect(rows.first().locator('.tag-matched')).toHaveText('name');
+  await expect(page.locator('#items .text-hit-name[href$="/paul-gauguin"]')).toHaveAttribute('href', /^\/artists\/\d+\/paul-gauguin$/);
+  // a match in a text: the passage with the words marked (escaped HTML from the API)
+  await expect(page.locator('#items .text-hit', { has: page.locator('.tag-matched-text') }).first().locator('.text-hit-passage mark').first()).toBeVisible();
+  // by type: the address follows; an older plural (?type=artworks) still works
   await page.locator('#types button', { hasText: 'Artworks' }).click();
-  await expect(page).toHaveURL(/\/search\?q=gauguin&type=artworks$/);
-  expect(new Set(await page.locator('#items .card-type').allTextContents())).toEqual(new Set(['Artwork']));
-  // the page's own field: the results follow the typing, the address too (so it can be shared and reloaded)
-  await page.locator('.search-page-form input').fill('hokusai');
-  await expect(page).toHaveURL(/\/search\?q=hokusai/);
-  await page.reload();
-  await expect(page.locator('#items .card').first()).toContainText('Hokusai');
+  await expect(page).toHaveURL(/\/search\?q=gauguin&type=artwork$/);
+  await expect(page.locator('#count')).toContainText('among artworks');
+  expect(new Set(await page.locator('#items .text-hit .muted.small').allTextContents().then((t) => t.map((x) => x.split(' · ')[0])))).toEqual(new Set(['Artwork']));
+  await page.goto('/search?q=gauguin&type=artworks');
+  await expect(page.locator('#types button.on')).toHaveText('Artworks');
+  // pages of 20
+  await page.goto('/search?q=painting');
+  await expect(page.locator('#count')).toContainText(/^1–20 of \d+ results/);
+  await page.locator('#pager button', { hasText: 'Next' }).click();
+  await expect(page).toHaveURL(/\/search\?q=painting&page=2$/);
+  await expect(page.locator('#count')).toContainText(/^21–/);
+});
+
+test('search page: a hit in a provenance links to the artwork\'s provenance', async ({ page }) => {
+  await page.goto('/search?q=confiscation');
+  const hit = page.locator('#items .text-hit', { hasText: 'La Petite Irène' });
+  await expect(hit.locator('.tag-matched')).toHaveText('provenance');
+  await expect(hit.locator('.text-hit-passage mark')).toHaveText(/confiscation/i);
+  await expect(hit.locator('.text-hit-name')).toHaveAttribute('href', /^\/artworks\/100476\/irene-cahen-danvers-la-petite-irene#provenance-\d+$/);
+  await hit.locator('.text-hit-name').click();
+  await expect(page.locator('section.provenance')).toBeInViewport();
+});
+
+const IRENE = '/artworks/100476/irene-cahen-danvers-la-petite-irene';
+
+test('how are they connected (088): pick any entry, the shortest chain top to bottom', async ({ page }) => {
+  await page.goto(IRENE);
+  const box = page.locator('#connect');
+  await box.locator('input').fill('van gogh');
+  await box.locator('.connect-hits button', { hasText: 'Vincent van Gogh' }).first().click();
+  const chain = box.locator('.net-path');
+  await expect(chain.locator('.net-node').first()).toContainText('La Petite Irène');
+  await expect(chain.locator('.net-node').last()).toContainText('Vincent van Gogh');
+  expect(await chain.locator('.net-link').count()).toBeGreaterThan(0);
+  await expect(chain.locator('.net-link .net-reads').first()).not.toBeEmpty();
+  // not found: said so
+  await page.route(/\/v1\/network\/path\?/, (r) => r.fulfill({ json: { from: null, to: null, found: false, length: null, steps: [] } }));
+  await box.locator('input').fill('hokusai');
+  await box.locator('.connect-hits button').first().click();
+  await expect(box.locator('#connect-result')).toHaveText('No connection within 6 steps.');
+});
+
+test('through the same hands (088): grouped by holder, "at the same time", further ones folded; current holders on request', async ({ page }) => {
+  const asked: string[] = [];
+  page.on('request', (r) => r.url().includes('/network/shared-hands') && asked.push(r.url()));
+  await page.goto(IRENE);
+  const sec = page.locator('#shared-hands');
+  await expect(sec.locator('h2')).toHaveText('Through the same hands');
+  const buhrle = sec.locator('.shared-hands > li', { has: page.locator('a', { hasText: 'Emil Georg Bührle' }) });
+  await expect(buhrle).toContainText('also held by');
+  await expect(buhrle.locator('.tag', { hasText: 'at the same time' })).toHaveCount(1); // once per holder, not per work
+  await expect(buhrle.locator('details.hands-more summary')).toContainText(/^and \d+ more$/); // a long list folds
+  await expect(sec.locator('details.shared-far summary')).toContainText(/^Further: \d+ works?/);
+  await sec.locator('.shared-current input').check();
+  await expect.poll(() => asked.some((u) => u.includes('current=1'))).toBe(true);
+  await expect(sec.locator('.shared-current input')).toBeChecked();
+});
+
+test('through whose hands 1933–1945 (088): holders, possessors in red, handovers; the window adjustable', async ({ page }) => {
+  await page.goto('/artworks');
+  await page.locator('a', { hasText: 'Through whose hands, 1933–1945' }).click();
+  await expect(page).toHaveURL(/\/provenance\/1933-1945$/);
+  await expect(page.locator('h1')).toHaveText('Through whose hands, 1933–1945');
+  const goring = page.locator('.hands-holders > li', { hasText: 'Hermann Göring' });
+  await expect(goring).toHaveClass(/hands-flagged/);
+  await expect(goring.locator('.tag-ns', { hasText: 'held without title' })).toBeVisible();
+  await expect(goring.locator('.hands-works a', { hasText: 'La Petite Irène' })).toBeVisible();
+  expect(await page.locator('.hands-handovers > li').count()).toBeGreaterThan(0);
+  await page.fill('input[name=from]', '1900');
+  await page.fill('input[name=to]', '1920');
+  await page.locator('.hands-window button').click();
+  await expect(page).toHaveURL(/\/provenance\/1900-1920$/);
+  await expect(page.locator('h1')).toHaveText('Through whose hands, 1900–1920');
+  await expect(page.locator('.hands-holders > li', { hasText: 'Hermann Göring' })).toHaveCount(0);
+});
+
+test('cite this version (089): the latest version with its exact moment; opening it shows the entry as recorded then', async ({ page }) => {
+  await page.goto(IRENE);
+  const box = page.locator('#cite-version');
+  await expect(box.locator('h2')).toHaveText('Cite this version');
+  const text = box.locator('.cite-version-text');
+  await expect(text).toContainText('“Irène Cahen d\'Anvers (La Petite Irène).” Art History, no. 100476, version of ');
+  // the moment exactly as the API gave it: microseconds
+  await expect(text).toContainText(/https:\/\/arthistory\.piogino\.ch\/artworks\/100476\/irene-cahen-danvers-la-petite-irene\?as_of=\d{4}-\d\d-\d\dT\d\d:\d\d:\d\d\.\d{6}Z/);
+  // an earlier version, then open it
+  const options = box.locator('select option');
+  const n = await options.count();
+  expect(n).toBeGreaterThan(2);
+  await box.locator('select').selectOption(String(n - 2));
+  const href = await box.locator('a', { hasText: 'Open this version' }).getAttribute('href');
+  expect(href).toMatch(/\?as_of=\d{4}-.*\.\d{6}Z$/);
+  await box.locator('a', { hasText: 'Open this version' }).click();
+  const banner = page.locator('.asof-banner');
+  await expect(banner).toContainText('As recorded on ');
+  await expect(banner).toContainText(/\d+ changes since/);
+  await expect(banner.locator('a', { hasText: 'see the current version' })).toHaveAttribute('href', '/artworks/100476/irene-cahen-danvers-la-petite-irene');
+  await expect(page.locator('h1')).toHaveText("Irène Cahen d'Anvers (La Petite Irène)");
+  await expect(page.locator('.facts dt', { hasText: 'Inventory number' })).toBeVisible(); // fields as stored then
+  await banner.locator('a', { hasText: 'see the current version' }).click();
+  await expect(page.locator('.asof-banner')).toHaveCount(0);
+  await expect(page.locator('#cite-version h2')).toBeVisible();
+});
+
+test('versions: before the entry existed "not recorded yet then"; a bad date says why; a deleted entry says so', async ({ page }) => {
+  await page.goto(`${IRENE}?as_of=2026-09-29`);
+  await expect(page.locator('h1')).toHaveText('Not recorded yet then');
+  await expect(page.locator('main')).toContainText('first recorded on 16 October 2026');
+  await page.goto(`${IRENE}?as_of=2020-01-01`);
+  await expect(page.locator('h1')).toHaveText('No such version');
+  await expect(page.locator('main')).toContainText('the history begins on 2026-09-28');
+  await page.route(/\/v1\/artworks\/100476\?as_of=/, async (r) => {
+    const res = await r.fetch();
+    const body = await res.json();
+    await r.fulfill({ response: res, json: { ...body, current: null, deleted: true } });
+  });
+  await page.goto(`${IRENE}?as_of=2026-10-16`);
+  await expect(page.locator('.asof-banner')).toContainText('this entry no longer exists');
 });
 
 test('network graph: nodes, details on click, filters in the URL', async ({ page }) => {

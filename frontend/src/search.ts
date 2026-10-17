@@ -36,7 +36,7 @@ const loadLibrary = () => {
 /**
  * Every match for a query, best first: the field search over all entries (3 = the name starts with it, 2 = the name
  * contains it, 1 = found elsewhere — an artwork by its artist, a person by their birthplace), then, only when that
- * found nothing, the API's typo-tolerant name matches ("hokusia"). Shared by the header and the search page.
+ * found nothing, the API's typo-tolerant name matches ("hokusia"). Shared by the header and the "Connect to…" picker.
  */
 export async function findAll(q: string): Promise<{ local: { e: Entry; m: Match }[]; similar: SearchHit[] }> {
   const [lib, fuzzy] = await Promise.all([loadLibrary().catch(() => [] as Entry[]), search(q).catch(() => [] as SearchHit[])]);

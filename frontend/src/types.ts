@@ -382,6 +382,8 @@ export interface ProvenanceStep {
   alternatives?: ProvenanceAlternative[];
   /** API 086: what the holders' lives and whereabouts imply — derived, not stated by a source. */
   inferences?: Inference[];
+  /** The step's id, once the API sends it — the anchor #provenance-<id> a search hit points at (backend wish). */
+  id?: number;
 }
 
 /**
@@ -594,4 +596,55 @@ export interface FeaturedView {
   /** Markdown rendered to sanitized HTML, like every `*_html`. */
   intro_html: string | null;
   query: string;
+}
+
+// ---- full-text search, network questions, versions (API 087–089) ------------------------------------------------
+
+/** An entry as the network and history answers name it: its current name and canonical `path`. */
+export interface NetRef {
+  type: EntityType; slug: string; public_id: number; name: string | null; kind?: string | null;
+  period?: DateRange | null; path: string; gone?: boolean;
+}
+
+/** `GET /v1/search/text` (087): names and texts; `headline_html` is escaped text with <mark>s, or null (name only). */
+export interface TextHit {
+  type: EntityType; slug: string; public_id: number; path: string; name: string; kind: string | null; period: DateRange | null;
+  matched_in: 'name' | 'text' | 'provenance'; provenance_ids: number[]; score: number; headline_html: string | null;
+}
+
+/** One link of `GET /v1/network/path` (088): reads "from <reads> to". */
+export interface PathStep {
+  from: NetRef; to: NetRef; relationship_type: string; reads: string; forward: boolean;
+  period: DateRange | null; note: string | null; certainty: string | null; provenance_id: number | null;
+}
+export interface NetworkPath { from: NetRef; to: NetRef; found: boolean; length: number | null; steps: PathStep[] }
+
+/** `GET /v1/network/hands` (088): holders in a window and the handovers dated in it. */
+export interface HandsHolder { holder: NetRef; roles: string[]; flag: string | null; artworks: NetRef[] }
+export interface Handover { from: NetRef; to: NetRef; artwork: NetRef; period: DateRange | null; note: string | null; certainty: string | null; provenance_id: number | null }
+export interface NetworkHands { holders: HandsHolder[]; handovers: Handover[] }
+
+/** `GET /v1/network/shared-hands` (088): works through the same hands; depth 2+ via one of those (`via`). */
+export interface SharedHand { artwork: NetRef; depth: number; via: NetRef | null; holders: (NetRef & { together?: boolean })[]; together: boolean }
+export interface SharedHands { artwork: NetRef; data: SharedHand[] }
+
+/** `GET /v1/history/<plural>/<number>` (089): versions, newest first. `as_of` is exact to the microsecond — pass it back as given. */
+export interface Version { changed_at: string; as_of: string; sources: string[]; tables: string[]; changes: number }
+export interface History { type: EntityType; current: NetRef | null; deleted: boolean; history_since: string; versions: Version[] }
+
+/** `GET /v1/<plural>/<number>?as_of=` (089): the entry as recorded then — raw fields, not the normal detail. */
+export interface AsOfRelationship {
+  relationship_type: string; reads: string; direction: 'out' | 'in'; other: NetRef; period: DateRange | null;
+  label: string | null; certainty: string | null; notes_md: string | null;
+}
+export interface AsOfStep {
+  id: number; position: number; role: string | null; method: string | null; direct: boolean; certainty: string | null;
+  acquired: DateRange | null; ended: DateRange | null; label: string | null; notes_md: string | null; alternative_to: number | null;
+  holder: NetRef | null; holder_label: string | null;
+}
+export interface AsOfDetail {
+  type: EntityType; as_of: string; requested: string; history_since: string; version: string;
+  current: NetRef | null; deleted: boolean; entry: Record<string, unknown>;
+  relationships: AsOfRelationship[]; provenance?: AsOfStep[];
+  changes_since: { changed_at: string; table: string; action: string; fields: string[]; source: string | null }[];
 }

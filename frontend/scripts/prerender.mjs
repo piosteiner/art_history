@@ -196,6 +196,13 @@ await write('privacy/index.html', page(template, {
   body: '<article class="page"><h1>Privacy</h1><p>No cookies, no analytics, no advertising, no tracking. The full statement loads with the page.</p></article>',
 }));
 urls.push(`${SITE}/privacy/`);
+// through whose hands works went 1933–1945 (API 088): its own page; other windows load from the app shell
+await write('provenance/1933-1945/index.html', page(template, {
+  title: 'Through whose hands, 1933–1945 · Art History', url: `${SITE}/provenance/1933-1945/`,
+  description: 'Who held works of the collection between 1933 and 1945 — owners, dealers, custodians and those who held them without title (seized, looted, stolen) — and the handovers dated then.',
+  body: '<section class="page" data-prerendered><h1>Through whose hands, 1933–1945</h1><p>The holders and handovers load with the page.</p></section>',
+}));
+urls.push(`${SITE}/provenance/1933-1945/`);
 // the search page: served with 200 (not the 404 shell), but kept out of search engines — results follow the query
 await write('search/index.html', page(template, { title: 'Search · Art History', description: SITE_DESCRIPTION, noindex: true }));
 

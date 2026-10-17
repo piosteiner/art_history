@@ -235,12 +235,42 @@ view may replace its own address; `replaceUrl()` keeps the router's idea of the 
 slash GitHub Pages serves a folder's page at), small forwarding pages at the old `/<plural>/<slug>/` and at
 `/<plural>/<number>/` (refresh + canonical; Pages can't answer 301), numbered links on the list pages and in JSON-LD.
 
+## Search, network questions and versions (API 087–089)
+- `/search` (`src/views/search.ts`) is full-text search (`GET /v1/search/text`): one row per entry — the name linked to
+  `path`, a badge for `matched_in` (name · text · provenance), `headline_html` inserted as is (escaped by the API, only
+  `<mark>`), type chips (`?type=artwork`; the older plural `?type=artworks` still works), 20 per page (`?page=2`). A
+  provenance hit links to `path#provenance-<provenance_ids[0]>`; the page scrolls to that step once steps carry an
+  `id` (backend wish), meanwhile to the Provenance section (`id="provenance"`). The header's completion stays the quick
+  name search (`/v1/search` + the field search of `findAll`).
+- Entry pages (`src/views/detail-network.ts`): "How are they connected?" — a "Connect to…" picker over every entry
+  (`findAll`), then `GET /v1/network/path` drawn top to bottom ("A — owned by → B", period, note; "No connection
+  within 6 steps"). Artworks: "Through the same hands" (`/v1/network/shared-hands?depth=2`) — depth 1 grouped by holder
+  ("also held by Emil Georg Bührle:", one "at the same time" line and one "at other times" line, more than 8 folded),
+  depth 2 in a closed "Further: …" with "via …"; a checkbox asks again with `current=1`. "Cite this version"
+  (`/v1/history/…`): newest version by default, any other from a list; the citation "“Name.” Art History, no. 100476,
+  version of 16 October 2026 at 17:29:26 (Zurich time). https://…/artworks/100476/<slug>?as_of=<as_of as given, with
+  microseconds> (accessed …)", a Copy button, "Open this version →". Moments are shown in Zurich time but never parsed
+  back: `as_of` goes out exactly as it came.
+- `?as_of=` on an entry address (`src/views/asof.ts`): the answer is the stored record, not the normal detail — a
+  banner "As recorded on … — N changes since · see the current version" (or "this entry no longer exists"), the name,
+  texts as entered (Markdown as text), the stored fields (dates by their `*_label`, keys and bookkeeping hidden),
+  provenance steps by position (alternative readings indented, possessors red) and relationships with the other
+  entries as they are now. 404 → "Not recorded yet then" (with `first_recorded`), 400 → "No such version" + the API's
+  message. `ApiError.body` keeps the whole error answer for this.
+- `/provenance/1933-1945` (any window: `/provenance/<from>-<to>`, `src/views/hands.ts`): `GET /v1/network/hands` —
+  holders, most works first, roles as tags, possessors and flagged holders in red (`hands-flagged`), their works (6, the
+  rest folded); the handovers dated in the window. Linked from the artworks list (beside "Works with open questions")
+  and from an artwork's 1933–1945 status line; prerendered and in the sitemap.
+
 ## Wishes for the backend
 - **Maps and networks by number (085):** `/v1/map/<plural>/<number>` and `/v1/graph/<plural>/<number>` answer 404, so an
   entry opened by its number loads its map only after the entry (to learn the slug) — one round trip later.
 - **Coverage from narrowed windows (086):** a `narrowed` inference ("by 8 May 1903 at the latest") could shorten its
   step's stretch on the coverage bar, but the bar's `segments` don't say which step they belong to — so it is best done
   in `provenance_coverage` itself.
+- **Provenance step ids (087):** search hits name `provenance_ids`, but the detail's provenance steps carry no `id`,
+  so a hit can only open the Provenance section. With `id` per step the page renders `id="provenance-<id>"` (already
+  wired) and scrolls to the exact step.
 - **Encounters in SQL** (for when the library is large; also a nice PostgreSQL exercise): `GET /v1/encounters?from=&to=&types=`
   = a self-join of presence links on `place_id` with `a.period && b.period` (daterange overlap, GiST index) and
   `a.period * b.period` as the overlap; today the browser does this over the full presence list.

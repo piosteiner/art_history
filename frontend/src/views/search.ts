@@ -1,98 +1,128 @@
-// The search page (/search?q=…&type=artworks): every match of the header search (src/search.ts, findAll), as cards
-// with image, dates and details — names that match first, then entries found by something else (an artwork by its
-// artist, a person by their birthplace, with the reason). Filtered by type; the query follows the typing.
-import { PLURAL } from '../api';
-import { explain, queryWords } from '../catalog';
-import { html, href, PLURAL_LABEL, render, TYPE_LABEL } from '../html';
+// The search page (/search?q=…&type=artwork&page=2): full-text search over names and texts (API 087) — biographies,
+// descriptions, definitions, sources, provenance steps. One row per entry: its name, why it matched (name · text ·
+// provenance) and the matching passage. Filtered by type, 20 per page. The header's completion (src/search.ts) stays
+// the quick name search.
+import { PLURAL, searchText } from '../api';
+import { html, PLURAL_LABEL, render, trusted, TYPE_LABEL } from '../html';
 import { replaceUrl } from '../router';
-import { findAll } from '../search';
-import type { Plural } from '../types';
+import type { EntityType, TextHit } from '../types';
 import { showError } from './common';
-import { card, cardParts } from './list';
+
+const PER_PAGE = 20;
+// the types in the menu's order (src/main.ts NAV)
+const TYPES: EntityType[] = ['artwork', 'artist', 'person', 'institution', 'event', 'movement', 'place', 'polity', 'term', 'source'];
+const MATCHED: Record<TextHit['matched_in'], [string, string]> = {
+  name: ['name', 'The name, another name, or a close one'],
+  text: ['text', 'Found in its texts: biography, description, definition …'],
+  provenance: ['provenance', 'Found in its provenance: a holder, a note, the method'],
+};
+
+/** The hit's address; a provenance hit opens the artwork at its provenance (the step, once steps carry ids). */
+const hitHref = (h: TextHit) => (h.matched_in === 'provenance' ? `${h.path}#provenance${h.provenance_ids[0] ? `-${h.provenance_ids[0]}` : ''}` : h.path);
 
 export function searchPage(main: HTMLElement, params: URLSearchParams) {
   let query = (params.get('q') ?? '').trim();
-  let type = params.get('type') as Plural | null;
+  // ?type=artwork; also the plural older search links used (?type=artworks)
+  const asked = params.get('type');
+  let type = TYPES.find((t) => t === asked || PLURAL[t] === asked) ?? null;
+  let page = Math.max(1, Number(params.get('page')) || 1);
   render(main, html`<section class="page search-page">
     <h1>Search</h1>
     <form class="search-page-form" role="search">
-      <input type="search" name="q" class="filter" aria-label="Search" placeholder="Search artists, works, places…" value="${query}" autocomplete="off">
+      <input type="search" name="q" class="filter" aria-label="Search" placeholder="Search names and texts…" value="${query}" autocomplete="off">
       <button type="submit">Search</button>
     </form>
-    <div class="category-filter" id="types" hidden role="group" aria-label="Type"></div>
+    <p class="muted small search-help">Names and texts — biographies, descriptions, provenance. <code>"a phrase"</code>, <code>-without</code>, <code>or</code>; “paintings” finds “painted”, “Irene” finds “Irène”.</p>
+    <div class="category-filter" id="types" role="group" aria-label="Type"></div>
     <p class="muted" id="count"></p>
-    <ul class="cards" id="items"></ul>
-    <div id="similar"></div>
+    <ol class="text-hits" id="items"></ol>
+    <nav class="pager" id="pager" aria-label="Pages"></nav>
   </section>`);
   const form = main.querySelector('form')!;
   const input = form.querySelector('input')!;
   const typesEl = main.querySelector<HTMLElement>('#types')!;
   const count = main.querySelector<HTMLElement>('#count')!;
   const items = main.querySelector<HTMLElement>('#items')!;
-  const similarEl = main.querySelector<HTMLElement>('#similar')!;
+  const pager = main.querySelector<HTMLElement>('#pager')!;
   let request = 0;
   let alive = true;
   let timer: number | undefined;
 
-  const urlNow = () => (query ? `/search?${new URLSearchParams({ q: query, ...(type ? { type } : {}) })}`.replace(/%2C/g, ',') : '/search');
+  const urlNow = () => {
+    if (!query) return '/search';
+    const q = new URLSearchParams({ q: query });
+    if (type) q.set('type', type);
+    if (page > 1) q.set('page', String(page));
+    return `/search?${q}`;
+  };
+
+  function drawTypes() {
+    render(typesEl, html`<button type="button" data-type="" class="${type ? '' : 'on'}" aria-pressed="${String(!type)}">All</button>
+      ${TYPES.map((t) => html`<button type="button" data-type="${t}" class="${t === type ? 'on' : ''}" aria-pressed="${String(t === type)}">${PLURAL_LABEL[PLURAL[t]]}</button>`)}`);
+  }
 
   async function draw() {
     const mine = ++request;
     document.title = query ? `“${query}” · Search · Art History` : 'Search · Art History';
+    drawTypes();
     if (query.length < 2) {
-      for (const el of [typesEl, items, similarEl]) render(el, html``);
-      typesEl.hidden = true;
-      render(count, html`${query ? 'Type at least two letters.' : 'Search names, titles, places, dates, types — and artworks by their artist.'}`);
+      render(items, html``);
+      render(pager, html``);
+      render(count, html`${query ? 'Type at least two letters.' : 'Search names and texts of every entry.'}`);
       return;
     }
     render(count, html`Searching…`);
-    let found;
+    let res;
     try {
-      found = await findAll(query);
+      res = await searchText(query, type, PER_PAGE, (page - 1) * PER_PAGE);
     } catch (err) {
       if (alive && mine === request) showError(items, err);
       return;
     }
     if (!alive || mine !== request) return;
-    const { local, similar } = found;
-    // the type buttons: how many of each, in the menu's order
-    const counts = new Map<Plural, number>();
-    for (const { e } of local) counts.set(PLURAL[e.type], (counts.get(PLURAL[e.type]) ?? 0) + 1);
-    if (type && !counts.has(type)) type = null;
-    typesEl.hidden = counts.size < 2;
-    render(typesEl, html`<button type="button" data-type="" class="${type ? '' : 'on'}" aria-pressed="${String(!type)}">All <span class="muted">${String(local.length)}</span></button>
-      ${(Object.keys(PLURAL_LABEL) as Plural[]).filter((p) => counts.has(p)).map((p) => html`<button type="button" data-type="${p}" class="${p === type ? 'on' : ''}" aria-pressed="${String(p === type)}">${PLURAL_LABEL[p]} <span class="muted">${String(counts.get(p))}</span></button>`)}`);
-    const shown = type ? local.filter(({ e }) => PLURAL[e.type] === type) : local;
-    const words = queryWords(query);
-    render(count, html`${local.length ? `${shown.length} ${shown.length === 1 ? 'result' : 'results'} for “${query}”${type ? ` among ${PLURAL_LABEL[type].toLowerCase()}` : ''}`
-      : similar.length ? `Nothing matches “${query}” as typed — similar names:` : `Nothing found for “${query}”.`}
+    const first = (page - 1) * PER_PAGE + 1;
+    const last = first + res.data.length - 1;
+    render(count, html`${res.total ? `${res.total > PER_PAGE ? `${first}–${last} of ` : ''}${res.total} ${res.total === 1 ? 'result' : 'results'} for “${query}”${type ? ` among ${PLURAL_LABEL[PLURAL[type]].toLowerCase()}` : ''}`
+      : `Nothing found for “${query}”${type ? ` among ${PLURAL_LABEL[PLURAL[type]].toLowerCase()}` : ''}.`}
       ${/\d/.test(query) ? html` · <a href="/provenance-numbers?${String(new URLSearchParams({ number: query }))}">“${query}” as a provenance number</a>` : ''}`);
-    render(items, html`${shown.map(({ e }) => {
-      const plural = PLURAL[e.type];
-      const parts = cardParts(plural, e.item as never);
-      // the reason (a hidden field that matched), unless the card shows the words already (name, dates, details)
-      const { why } = explain(e, query, `${parts.date} ${parts.detail}`);
-      return card(plural, e.item as never, words, why, TYPE_LABEL[e.type]);
-    })}`);
-    render(similarEl, similar.length ? html`<ul class="rel-list search-similar">${similar.map((h) => html`<li>
-        <a href="${href(h.type, h.slug)}">${h.name}</a> <span class="muted">${[TYPE_LABEL[h.type], h.kind, h.period?.label].filter(Boolean).join(' · ')}</span></li>`)}</ul>` : html``);
+    render(items, html`${res.data.map((h) => html`<li class="text-hit">
+      <a class="text-hit-name" href="${hitHref(h)}">${h.name}</a>
+      <span class="tag tag-matched tag-matched-${h.matched_in}" title="${MATCHED[h.matched_in][1]}">${MATCHED[h.matched_in][0]}</span>
+      <span class="muted small">${[TYPE_LABEL[h.type], h.kind, h.period?.label].filter(Boolean).join(' · ')}</span>
+      ${h.headline_html ? html`<p class="text-hit-passage">${trusted(h.headline_html)}</p>` : ''}
+    </li>`)}`);
+    items.setAttribute('start', String(first));
+    const pages = Math.ceil(res.total / PER_PAGE);
+    render(pager, pages > 1 ? html`
+      ${page > 1 ? html`<button type="button" data-page="${String(page - 1)}">← Previous</button>` : ''}
+      <span class="muted">Page ${String(page)} of ${String(pages)}</span>
+      ${page < pages ? html`<button type="button" data-page="${String(page + 1)}">Next →</button>` : ''}` : html``);
   }
 
   typesEl.addEventListener('click', (ev) => {
     const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-type]');
     if (!b) return;
-    type = (b.dataset.type || null) as Plural | null;
+    type = (b.dataset.type || null) as EntityType | null;
+    page = 1;
     replaceUrl(urlNow());
     void draw();
   });
+  pager.addEventListener('click', (ev) => {
+    const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-page]');
+    if (!b) return;
+    page = Number(b.dataset.page);
+    replaceUrl(urlNow());
+    void draw().then(() => main.querySelector('h1')?.scrollIntoView());
+  });
   const update = () => {
     query = input.value.trim();
+    page = 1;
     replaceUrl(urlNow());
     void draw();
   };
   input.addEventListener('input', () => {
     clearTimeout(timer);
-    timer = window.setTimeout(update, 250);
+    timer = window.setTimeout(update, 300);
   });
   form.addEventListener('submit', (ev) => {
     ev.preventDefault();
@@ -106,3 +136,4 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
     clearTimeout(timer);
   };
 }
+

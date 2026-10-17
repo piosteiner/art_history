@@ -43,7 +43,8 @@ const method = (m: string) => (METHOD_TITLE[m] ? html`<span class="explained" ti
 function statusLine(st: ProvenanceStatus, sources: Citation[] | undefined, bibliography?: Record<string, SourceHint>) {
   return html`<p class="provenance-status prov-cat-${st.category}">
     <span class="prov-badge" title="Provenance 1933–1945, category of the Swiss Federal Office of Culture">${st.category}</span>
-    <span><span class="muted">1933–1945:</span> ${st.label}${st.note ? html` <span class="muted">— “${st.note}”</span>` : ''}${cite(sources, bibliography)}</span>
+    <span><span class="muted">1933–1945:</span> ${st.label}${st.note ? html` <span class="muted">— “${st.note}”</span>` : ''}${cite(sources, bibliography)}
+      <a class="small" href="/provenance/1933-1945">Through whose hands works went then →</a></span>
   </p>`;
 }
 // roles shown as a tag next to the holder; an owner needs none, an estate is in the name ("Estate of …")
@@ -147,7 +148,7 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
   const gapsAfter = (position: number | null) => gaps.filter((g) => after(g) === position).map(gapLine);
   const known = new Set(steps.map((s) => s.position));
   const leading = gaps.filter((g) => after(g) === null || !known.has(after(g)!)).map(gapLine);
-  return html`<section class="provenance">
+  return html`<section class="provenance" id="provenance">
     <h2>Provenance</h2>
     ${status ? statusLine(status, statusSources, bibliography) : ''}
     ${recorded ? coverageBar(coverage) ?? '' : ''}
@@ -177,7 +178,7 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
       places(s),
       ...numbers(s),
     ].filter((x): x is Html => !!x);
-    return html`<li class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}${custody ? ' custody' : ''}${possessor ? ' possession' : ''}">
+    return html`<li ${s.id ? html`id="provenance-${String(s.id)}" ` : ''}class="provenance-step${gap ? ' undocumented' : ''}${s.implied ? ' implied' : ''}${custody ? ' custody' : ''}${possessor ? ' possession' : ''}">
       ${gap && !afterGapLine ? html`<div class="provenance-gap">handover not documented</div>` : ''}
       <div class="provenance-owner">${custody ? html`<span class="provenance-alongside" title="${stolen ? 'Stolen: the owner kept the title' : possessor ? 'Taken from its owner, or received from those who took it — held without title' : 'Held alongside the owner, did not own it'}">${prefix}</span> ` : ''}${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.not_sold ? html` <span class="tag tag-not-sold" title="Bought in, withdrawn or returned: the owner kept it">not sold</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
       ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}

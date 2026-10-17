@@ -694,3 +694,44 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .search-page-form button { font: inherit; font-size: .95rem; padding: .3rem 1rem; border: 1px solid var(--accent); border-radius: 999px;
   background: var(--surface); color: var(--accent); font-weight: 600; cursor: pointer; }
 .search-page-form button:hover { background: var(--picked-bg); }
+
+/* full-text search (API 087) */
+.search-help code { font-size: .85em; }
+.text-hits { padding-left: 1.6rem; max-width: 46rem; }
+.text-hit { margin: 0 0 .9rem; }
+.text-hit-name { font-weight: 600; }
+.text-hit-passage { margin: .2rem 0 0; font-size: .92rem; color: var(--muted); }
+.text-hit-passage mark { background: var(--mark); color: var(--text); padding: 0 .1em; }
+.tag-matched-provenance { color: var(--c-provenance); border-color: currentColor; }
+.pager { display: flex; gap: .8rem; align-items: center; margin: 1rem 0; }
+/* network questions (API 088) */
+.connect-form { position: relative; max-width: 30rem; }
+.connect-form input { font: inherit; padding: .3rem .5rem; width: 100%; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); color: var(--text); }
+.connect-hits { position: absolute; z-index: 5; left: 0; right: 0; list-style: none; margin: .2rem 0 0; padding: .2rem; background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
+.connect-hits button { display: block; width: 100%; text-align: left; font: inherit; background: none; border: 0; padding: .3rem .4rem; color: var(--text); cursor: pointer; border-radius: 4px; }
+.connect-hits button:hover, .connect-hits button:focus { background: var(--picked-bg); }
+.net-path { list-style: none; padding: 0; margin: .8rem 0 .4rem; }
+.net-node { padding: .15rem 0; }
+.net-link { margin-left: .5rem; padding: .2rem 0 .2rem 1rem; border-left: 2px solid var(--line); font-size: .9rem; color: var(--muted); }
+.net-link::before { content: '— '; }
+.net-link .net-reads { color: var(--text); font-style: italic; }
+.net-link .net-reads::after { content: ' →'; }
+.net-link.uncertain { border-left-style: dashed; }
+.shared-current { display: block; font-size: .85rem; color: var(--muted); margin: .2rem 0 .5rem; }
+.shared-far summary { cursor: pointer; color: var(--muted); }
+.hands-window { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; margin: .6rem 0 1rem; }
+.hands-window input { width: 6rem; font: inherit; padding: .2rem .4rem; }
+.hands-holders > li { margin-bottom: .6rem; }
+.hands-holders > li.hands-flagged { box-shadow: inset 3px 0 0 -1px var(--prov-d); padding-left: .6rem; }
+.hands-works { font-size: .9rem; }
+.hands-more { display: inline; } .hands-more summary { display: inline; cursor: pointer; color: var(--muted); }
+.ns-text { color: var(--prov-d); }
+/* versions (API 089) */
+.cite-version select { font: inherit; max-width: 100%; }
+.cite-version-text { overflow-wrap: anywhere; margin: .6rem 0; padding: .6rem .8rem; border-left: 3px solid var(--line); background: var(--surface); font-size: .92rem; user-select: all; }
+.asof-banner { padding: .6rem .8rem; margin: .4rem 0 1rem; border: 1px solid var(--picked-line); background: var(--picked-bg); border-radius: var(--radius); }
+.asof-text { white-space: pre-wrap; max-width: 46rem; }
+.asof-provenance li { margin-bottom: .5rem; }
+.asof-alt { margin-left: 1.4rem; font-size: .92rem; }
+.gap-filter-link { font-size: .85rem; margin-left: .4rem; align-self: center; }
