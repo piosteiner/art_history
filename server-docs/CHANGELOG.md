@@ -4,6 +4,25 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Data: Kunsthaus Zürich provenances completed from the Sammlung Online (import, production)
+- **What:** of the Kunsthaus's 54 works here, 50 have a record online; 28 already matched it line by line. Imported from
+  the records (fetched 18 October 2026, one request every 2 s): the 15 works without provenance (Walpurgisnacht, Mönche
+  am Feuer, Meule au soleil, Die Sintflut mit der Arche Noah, Branches de marronnier en fleur, Le cattive madri, Bain au
+  soir d'été, Genfersee bei Sonnenuntergang, Das Jungfraumassiv von Mürren aus, Schwarzer Fleck, Dorfeingang mit
+  Windmühle, La Chambre d'écoute, Genfersee mit Mont-Blanc, Bei Netstal, Études de bras et de mains) and 3 works that
+  had only part of it (Le Garçon au gilet rouge and La Route de Saint-Germain: Bührle onwards only; Femme à tête de
+  roses: one step) — 124 steps, each citing the record (source 2, the page, its footnote). The conventions of the
+  earlier Kunsthaus imports: the artist line implied; "Verbleib unbekannt" a gap (the next step not direct; the first
+  step after the artist direct only if dated within the artist's lifetime or the estate); the last open-ended loan to
+  the Kunsthaus = `on_loan` (set on 5 works); earlier loans as custodian steps; auctions as agents with lot numbers,
+  "zurück" = not sold; ERR / Munich CCP numbers; prices; "wohl" = probable; labels in English. La Route de
+  Saint-Germain: the ERR seizure (listed before) put after Paul Rosenberg, from whom it was taken. Created, "to
+  complete": 54 entries (people with years of birth and death from the records, institutions). Not imported: Le Bol
+  blanc (the record's provenance is not published online); 4 works without a record link (Le Phare de Honfleur, Le
+  Bassin aux nymphéas le soir, Au piano, Prozession in Valencia).
+- **Why:** owner: complete the incomplete Kunsthaus provenances from the museum's website.
+- **Revert:** History → the change sets (source import, 2026-10-18) → Revert.
+
 ### DoME as a reference record
 - **What:** migration `099_dome_authority.sql` — authority `dome` (Database of Modern Exhibitions 1905–1915, Universität
   Wien; Wikidata P7944, `https://exhibitions.univie.ac.at/person/{id}`) for artists and people, and its bibliography
