@@ -121,7 +121,7 @@ function page(t, e, data) {
     <h1>Enrich ${e.name}</h1>
     ${types && !types.includes(t.type) ? typeWarning(t, types, qid, e) : ''}
     <ul class="enrich-sources">${['wikidata', ...AUTH].map((c) => sourceLine(t, e, c, sources[c]))}</ul>
-    ${!wd && !auth.length && !data.japan && !data.arco && !(data.metagrid && (data.metagrid.exact || data.metagrid.candidates.length))
+    ${!wd && !auth.length && !data.japan && !data.arco && !(data.metagrid && (data.metagrid.exact || (data.metagrid.candidates || []).length))
       ? html`<p class="flash warn">No source to compare with yet — link the entry on Wikidata or add a GND / SIKART number first.</p>` : html`
     <p class="muted small">One review for every source. Taken values are cited with their source — a value several sources agree on, with each of
       them. Your own values are never replaced unless you choose so; field values go into the working copy — check them and Publish.

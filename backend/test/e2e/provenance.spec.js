@@ -215,3 +215,22 @@ test('provenance flags and research 1933–1945: a flagged holder is a warning; 
     .toHaveAttribute('href', 'https://www.lostart.de/en/search?term=Test%20Emil%20B%C3%BChrle');
   sql("UPDATE people SET provenance_flag = NULL WHERE slug = 'test-buhrle'; DELETE FROM live_docs WHERE entity_type = 'person'");
 });
+
+test('a provenance date in the future: refused in the form; one stored anyway breaks no list (095)', async ({ userA, request }) => {
+  // the form: "18 November 2099" is a typo, not a provenance
+  await userA.goto('/artworks/test-bassin');
+  await userA.click('summary:has-text("+ Add provenance step")');
+  await userA.fill('#pv-owner-label', 'Test private collection');
+  await userA.fill('#pv-ended', '18 November 2099');
+  await Promise.all([userA.waitForNavigation(), userA.click('.provenance-form button:has-text("Add")')]);
+  await expect(userA.locator('.flash.error')).toContainText('lies in the future');
+  // stored anyway (an older entry, an import): the artwork, the API list and the artwork in the API still answer
+  sql(`INSERT INTO provenance (artwork_id, position, owner_label, ended, ended_label) VALUES
+         (entity_id('artwork', 'test-bassin'), 0, 'Test private collection', daterange('2099-11-18', '2099-11-19'), '18 November 2099')`);
+  const list = await request.get(`${API}/artworks?limit=5`, { headers: { Host: 'api.localhost' } });
+  expect(list.status()).toBe(200);
+  const one = await request.get(`${API}/artworks/test-bassin`, { headers: { Host: 'api.localhost' } });
+  expect(one.status()).toBe(200);
+  await userA.goto('/artworks/test-bassin');
+  await expect(userA.locator('#provenance')).toBeVisible();
+});

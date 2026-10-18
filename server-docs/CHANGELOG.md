@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Fix: a provenance date in the future broke /v1/artworks and the artwork's admin page
+- **What:** migration `095_provenance_future_dates.sql` — `provenance_coverage()` builds an artwork's "life" range only
+  when it starts before tomorrow (before, `daterange()` raised "range lower bound must be less than or equal to range
+  upper bound" for a start after today, and every list reading `provenance_completeness` failed with it: 12 × 500 on
+  `/v1/artworks`, 7 × on `/artworks/fleurs-dans-une-coupe` since 08:41 UTC, when a step with ended "18 November 2026" was
+  added). The provenance form now refuses dates in the future ("lies in the future — check the year"). Also
+  `enrich.js`: the Enrich page no longer fails when the Metagrid search errors (`candidates` missing). e2e test in
+  `provenance.spec.js`.
+- **Why:** one mistyped year took down the public artwork list.
+- **Revert:** a migration restoring the 078 function body (not needed: identical results where 078 worked).
+
+
 ### Admin editor: a selected name and "[" make a link
 - **What:** `backend/src/admin/editor/editor.js` — typing "[" over a selection turns it into `[[text]]` and opens the
   `[[` suggestions searched for it; picking an entry keeps the text as written (`[[artist/katsushika-hokusai|Hokusai]]`).

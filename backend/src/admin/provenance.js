@@ -82,6 +82,11 @@ async function fromForm(db, body, keepMetadata = {}) {
   for (const key of ['acquired', 'ended']) {
     let d = null;
     try { d = parseFuzzyDate(text(key)); } catch (err) { throw new ProvenanceError(`${key === 'acquired' ? 'Acquired' : 'Ended'}: ${err.message}`); }
+    // the provenance records what happened: a date after today is a typo (095 keeps the lists working regardless)
+    const from = /^[[(](\d{4,}-\d{2}-\d{2})/.exec(String(d?.range || ''))?.[1];
+    if (from && from > new Date().toISOString().slice(0, 10)) {
+      throw new ProvenanceError(`${key === 'acquired' ? 'Acquired' : 'Ended'}: "${text(key)}" lies in the future — check the year.`);
+    }
     v[key] = d && d.range;
     v[`${key}_label`] = d ? text(`${key}_label`) || d.label : null;
   }
