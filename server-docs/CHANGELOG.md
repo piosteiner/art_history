@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### DoME as a reference record
+- **What:** migration `099_dome_authority.sql` — authority `dome` (Database of Modern Exhibitions 1905–1915, Universität
+  Wien; Wikidata P7944, `https://exhibitions.univie.ac.at/person/{id}`) for artists and people, and its bibliography
+  entry. Test in authorities.spec.js. The exhibitions are not imported: no licence for reuse found, the site blocks
+  automated access (Anubis), Wikidata has only 35 of its exhibitions (P8185).
+- **Why:** owner's request — link our artists to their exhibitions 1905–1915.
+- **Revert:** `DELETE FROM entry_identifiers WHERE authority = 'dome'; DELETE FROM authorities WHERE code = 'dome'`.
+
 ### Dates: ranges as people write them
 - **What:** `src/fuzzy-date.js` — a text none of the forms takes is tried as a range of two of them: "1900-1905",
   "1900–1905", "1900 - 1905", "1900 to 1905", "c. 1900–c. 1905", "March 1900 – May 1905", "1880s–1890s", "c. 965/"; open

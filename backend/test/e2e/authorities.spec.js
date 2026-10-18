@@ -101,3 +101,23 @@ test('Wikidata brings the numbers; the GND comparison: agreeing values cited, ot
   expect(sql(`SELECT coalesce(detail, '') FROM quality_issues_live WHERE check_id = 'weakly_sourced' AND entity_type = 'artist'
               AND entity_id = entity_id('artist', 'claude-monet-gnd')`)).toBe('');
 });
+
+test('DoME (099): the artist number from a pasted DoME link, linked to the record', async ({ userA }) => {
+  sql("DELETE FROM entry_identifiers WHERE authority = 'dome'");
+  await userA.goto('/artists/vincent-van-gogh/edit');
+  const section = userA.locator('#reference-records');
+  await section.locator('summary:has-text("+ Add a reference record")').click();
+  await section.locator('select[name=authority]').selectOption('dome');
+  await section.locator('input[name=value]').fill('https://exhibitions.univie.ac.at/person/401');
+  await Promise.all([userA.waitForNavigation(), section.locator('button:has-text("Add")').click()]);
+  await expect(userA).toHaveURL(/done=id-added/);
+  await expect(section.locator('a[href="https://exhibitions.univie.ac.at/person/401"]')).toHaveText('401 ↗');
+  // not a DoME number: refused
+  await userA.goto('/artists/paul-gauguin/edit');
+  await userA.locator('#reference-records summary:has-text("+ Add a reference record")').click();
+  await userA.locator('#reference-records select[name=authority]').selectOption('dome');
+  await userA.locator('#reference-records input[name=value]').fill('abc');
+  await Promise.all([userA.waitForNavigation(), userA.locator('#reference-records button:has-text("Add")').click()]);
+  await expect(userA.locator('.flash.error')).toBeVisible();
+  sql("DELETE FROM entry_identifiers WHERE authority = 'dome'");
+});
