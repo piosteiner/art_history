@@ -20,7 +20,7 @@ export interface TimelineRow {
   /** A part of the row above (a phase of a style): its label indented. */
   indent?: number;
   /** Works of the collection on the bar, as dots at their year. */
-  dots?: { year: number; label: string; href: string }[];
+  dots?: { year: number; label: string; href: string; outlier?: boolean }[];
   /** A thin bar (e.g. the span of the collection's works). */
   thin?: boolean;
 }
@@ -202,7 +202,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
         </rect>`);
       for (const d of s.dots ?? []) {
         if (d.year < v0 || d.year > v1) continue;
-        bars.push(`<a href="${escape(d.href)}"><circle class="tl-dot" cx="${x(d.year + 0.5)}" cy="${s.y + 11}" r="3.5"><title>${escape(d.label)}</title></circle></a>`);
+        bars.push(`<a href="${escape(d.href)}"><circle class="tl-dot${d.outlier ? ' tl-dot-out' : ''}" cx="${x(d.year + 0.5)}" cy="${s.y + 11}" r="${d.outlier ? 4 : 3.5}"><title>${escape(d.label)}</title></circle></a>`);
       }
     });
 

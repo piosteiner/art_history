@@ -35,10 +35,30 @@ router.get('/', async (req, res) => {
              range_json(r.period, r.period_label) AS period, r.period_label AS label, lower(r.period) AS starts
       FROM relationships r JOIN places l ON l.id = r.object_id
       WHERE r.subject_type = 'movement' AND r.relationship_type = 'active_in' AND r.object_type = 'place' AND r.period IS NOT NULL`),
+    // each work with where it was made — the provenance's creation stop (091: recorded, else where the artist lived or
+    // worked then), the places above it and its country — so the timeline puts it in the lane of its region
     apiPool.query(`
+      WITH RECURSIVE works AS (SELECT DISTINCT artwork_id FROM movement_works),
+      made AS (
+        SELECT w.artwork_id, cp.place_id FROM works w
+        LEFT JOIN LATERAL (SELECT s.place_id FROM provenance_stops(w.artwork_id) s WHERE s.chain_kind = 'creation' AND s.place_id IS NOT NULL LIMIT 1) cp ON true
+      ),
+      up AS (
+        SELECT artwork_id, place_id AS id, 0 AS depth FROM made WHERE place_id IS NOT NULL
+        UNION ALL
+        SELECT up.artwork_id, p.parent_id, up.depth + 1 FROM up JOIN places p ON p.id = up.id WHERE p.parent_id IS NOT NULL AND up.depth < 20
+      ),
+      where_made AS (
+        SELECT m.artwork_id,
+               array_remove(array_agg(pl.slug) || (place_country(m.place_id)->>'slug'), NULL) AS places,
+               (SELECT name FROM places WHERE id = m.place_id) AS made_in
+        FROM made m LEFT JOIN up ON up.artwork_id = m.artwork_id LEFT JOIN places pl ON pl.id = up.id
+        GROUP BY m.artwork_id, m.place_id
+      )
       SELECT mw.movement_id, w.slug, w.public_id, w.title, range_json(w.created, w.created_label) AS created,
-             a.name AS creator
+             a.name AS creator, coalesce(wm.places, '{}') AS places, wm.made_in
       FROM movement_works mw JOIN artworks w ON w.id = mw.artwork_id LEFT JOIN artists a ON a.id = w.creator_id
+      LEFT JOIN where_made wm ON wm.artwork_id = w.id
       ORDER BY lower(w.created) NULLS LAST, w.title`),
   ]);
   const ids = new Set(periods.rows.map((p) => p.id));
@@ -59,7 +79,7 @@ router.get('/', async (req, res) => {
     periods: periods.rows.map(({ id, ...p }) => ({
       ...p,
       spans: spans.rows.filter((s) => s.movement_id === id).map((s) => ({ place: s.place, period: s.period, fuzzy: fuzzy(s.label) })),
-      works: works.rows.filter((w) => w.movement_id === id).map(({ movement_id, ...w }) => w),
+      works: works.rows.filter((w) => w.movement_id === id).map(({ movement_id, places, ...w }) => ({ ...w, places: [...new Set(places)] })),
     })),
   });
 });

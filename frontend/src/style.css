@@ -759,3 +759,8 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .row-label-sub { font-size: 11.5px; }
 .periods-active { line-height: 1.7; }
 .periods-works .tag { margin-left: .2rem; }
+.tl-dot-out { fill: var(--surface); stroke: #c62828; stroke-width: 2; }
+.tl-dot-out:hover { fill: #c62828; }
+.legend-dot-out { background: transparent; border: 2px solid #c62828; width: 9px; height: 9px; }
+.periods-outliers { margin: .8rem 0; }
+.periods-outliers summary { cursor: pointer; font-weight: 600; }

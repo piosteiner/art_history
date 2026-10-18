@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Periods timeline: the works on the period bars, outliers marked
+- **What:** `/v1/periods` gives each work `places` (where it was made — the provenance's creation stop, 091: recorded,
+  else where the artist lived or worked then — the places above it and its country) and `made_in`. The page draws the
+  works as dots on the period bars, in the lane of the region where they were made (else Europe as a whole, else the
+  period's first lane); a work dated wholly outside the bar's span is a hollow red dot and listed under the timeline
+  ("Dated outside their period"). The separate "In the collection" lane is gone.
+- **Why:** owner: see where the works lie within the periods, and find outliers.
+- **Revert:** `git revert` the commit.
+
 ### Frontend tests: brought up to today's data (the Pages build had failed since 10:56)
 - **What:** frontend/tests/site.spec.ts — Heiliger Sebastian's creation is placed now (Niklaus Weckmann worked in Ulm,
   from the Wikidata review of 18 October 2026, 10:00): its maps show a stop "1" and one unplaced step instead of two;

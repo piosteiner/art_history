@@ -1,7 +1,8 @@
 // Periods (/periods; API 100): when and where styles, movements and periods were active — one lane per region
 // (Europe as a whole, Italy, France, the Low Countries, Germany, Japan …), phases under their style, approximate edges
-// fading out, drafts not yet reviewed outlined. Below the lanes, the collection: the span of each period's works with a
-// dot per work. A bar or a dragged window lists the works of those years.
+// fading out, drafts not yet reviewed outlined. The collection's works are dots on the bars — in the lane of the region
+// where they were made (else Europe as a whole, else the period's first lane) —, hollow and red when dated outside the
+// bar's span (an outlier, listed below the timeline). A bar or a dragged window lists the works of those years.
 import { getPeriods } from '../api';
 import { href, html, render } from '../html';
 import { replaceUrl } from '../router';
@@ -9,13 +10,28 @@ import { renderTimeline, type TimelineRow, type YearWindow } from '../timeline';
 import type { DateRange, Period, Periods, PeriodWork } from '../types';
 import { guard, showError } from './common';
 
-const COLLECTION = 'In the collection';
 const workHref = (w: PeriodWork) => (w.public_id ? `/artworks/${w.public_id}/${w.slug}` : href('artworks', w.slug));
 const year = (d: DateRange | null) => d?.from_year ?? d?.to_year ?? null;
 const overlaps = (d: DateRange | null, w: YearWindow) => {
   const a = d?.from_year ?? d?.to_year; const b = d?.to_year ?? d?.from_year;
   return a != null && b != null && a <= w.to && b >= w.from;
 };
+
+const yearsOf = (d: DateRange | null) => {
+  const a = d?.from_year ?? d?.to_year; const b = d?.to_year ?? d?.from_year;
+  return a != null && b != null ? [a, b] as const : null;
+};
+/** The lane a work of the period is drawn in: where it was made, if the period has a span there; else Europe as a whole, else the first. */
+function laneOf(p: Period, w: PeriodWork) {
+  const here = p.spans.find((s) => (w.places ?? []).includes(s.place));
+  return (here ?? p.spans.find((s) => s.place === 'europe') ?? p.spans[0])?.place;
+}
+/** A work dated wholly outside the span (its outer limits) — an outlier there. */
+const outside = (w: PeriodWork, span: DateRange) => {
+  const wy = yearsOf(w.created); const sy = yearsOf(span);
+  return !!(wy && sy && (wy[1] < sy[0] || wy[0] > sy[1]));
+};
+const workLabel = (w: PeriodWork) => `${w.title}${w.creator ? `, ${w.creator}` : ''}${w.created ? ` (${w.created.label})` : ''}${w.made_in ? ` · made in ${w.made_in}` : ''}`;
 
 /** Periods with a span in the lane, parents first and their parts under them (depth for the indent). */
 function laneRows(data: Periods, lane: string, phases: boolean): TimelineRow[] {
@@ -27,9 +43,14 @@ function laneRows(data: Periods, lane: string, phases: boolean): TimelineRow[] {
   const add = (p: Period, depth: number) => {
     if (depth && !phases) return;
     const s = p.spans.find((x) => x.place === lane)!;
+    const dots = p.works.filter((w) => laneOf(p, w) === lane && yearsOf(w.created)).map((w) => {
+      const [a, b] = yearsOf(w.created)!;
+      const out = outside(w, s.period);
+      return { year: (a + b) / 2, label: `${workLabel(w)}${out ? ` — dated outside ${p.name} here (${s.period.label})` : ''}`, href: workHref(w), outlier: out };
+    });
     rows.push({
       group: data.lanes.find((l) => l.slug === lane)!.name, label: p.name, href: href('movements', p.slug),
-      from: s.period, to: s.period, fade: s.fuzzy, draft: !p.reviewed, indent: depth, key: `movement/${p.slug}`,
+      from: s.period, to: s.period, fade: s.fuzzy, draft: !p.reviewed, indent: depth, key: `movement/${p.slug}`, dots,
     });
     here.filter((c) => c.parent === p.slug).sort((a, b) => start(a) - start(b)).forEach((c) => add(c, depth + 1));
   };
@@ -37,21 +58,17 @@ function laneRows(data: Periods, lane: string, phases: boolean): TimelineRow[] {
   return rows;
 }
 
-/** The collection: per period with works, the span of their dates and a dot per work. */
-function collectionRows(data: Periods, phases: boolean): TimelineRow[] {
-  return data.periods
-    .filter((p) => p.works.length && (phases || !p.parent))
-    .map((p) => {
-      const ys = p.works.flatMap((w) => [w.created?.from_year, w.created?.to_year]).filter((y): y is number => y != null);
-      if (!ys.length) return null;
-      const span: DateRange = { label: `${Math.min(...ys)}–${Math.max(...ys)}`, from: `${Math.min(...ys)}-01-01`, to: `${Math.max(...ys)}-12-31`, from_year: Math.min(...ys), to_year: Math.max(...ys) };
-      return {
-        group: COLLECTION, label: `${p.name} (${p.works.length})`, href: href('movements', p.slug), from: span, to: span, thin: true,
-        dots: p.works.filter((w) => year(w.created) != null).map((w) => ({ year: year(w.created)!, label: `${w.title}${w.creator ? `, ${w.creator}` : ''}${w.created ? ` (${w.created.label})` : ''}`, href: workHref(w) })),
-      } as TimelineRow;
-    })
-    .filter((r): r is TimelineRow => !!r)
-    .sort((a, b) => (a.from!.from_year ?? 0) - (b.from!.from_year ?? 0));
+/** Works dated outside the span of the bar they are drawn on: [work, period, lane name, span]. */
+function outliers(data: Periods) {
+  const out: { w: PeriodWork; p: Period; lane: string; span: DateRange }[] = [];
+  for (const p of data.periods) {
+    for (const w of p.works) {
+      const lane = laneOf(p, w);
+      const s = p.spans.find((x) => x.place === lane);
+      if (s && outside(w, s.period)) out.push({ w, p, lane: data.lanes.find((l) => l.slug === lane)?.name ?? lane ?? '', span: s.period });
+    }
+  }
+  return out.sort((a, b) => a.p.name.localeCompare(b.p.name) || (yearsOf(a.w.created)?.[0] ?? 0) - (yearsOf(b.w.created)?.[0] ?? 0));
 }
 
 export function periodsPage(main: HTMLElement, params: URLSearchParams) {
@@ -63,16 +80,18 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
       Approximate limits (“c. 1720”, “late 18th century”) fade out.</p>
     <div class="periods-controls" id="periods-controls"></div>
     <div id="periods-timeline"><p class="muted small">Loading…</p></div>
+    <div id="periods-outliers"></div>
     <div id="periods-window" aria-live="polite"></div>
   </section>`);
   const controls = main.querySelector<HTMLElement>('#periods-controls')!;
   const box = main.querySelector<HTMLElement>('#periods-timeline')!;
   const out = main.querySelector<HTMLElement>('#periods-window')!;
+  const odd = main.querySelector<HTMLElement>('#periods-outliers')!;
   const current = guard();
 
   getPeriods().then((data) => {
     if (!current()) return;
-    const lanes = [...data.lanes.map((l) => l.slug), 'collection'];
+    const lanes = data.lanes.map((l) => l.slug);
     const wanted = (params.get('regions') || '').split(',').filter((x) => lanes.includes(x));
     const shown = new Set(wanted.length ? wanted : lanes);
     let phases = params.get('phases') !== '0';
@@ -80,10 +99,14 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
     const from = Number(params.get('from')); const to = Number(params.get('to'));
     if (from && to) windowSel = { from: Math.min(from, to), to: Math.max(from, to) };
 
-    const rows = () => [
-      ...data.lanes.filter((l) => shown.has(l.slug)).flatMap((l) => laneRows(data, l.slug, phases)),
-      ...(shown.has('collection') ? collectionRows(data, phases) : []),
-    ];
+    const rows = () => data.lanes.filter((l) => shown.has(l.slug)).flatMap((l) => laneRows(data, l.slug, phases));
+    const strays = outliers(data);
+    render(odd, strays.length ? html`<details class="periods-outliers"><summary>Dated outside their period <span class="muted small">${String(strays.length)}</span></summary>
+      <p class="muted small">Works of the collection linked to a period (directly or through their artist) but dated outside its span in the region where
+        they were made — a work made before or after the style, a link to check, or a span to widen.</p>
+      <ul class="rel-list">${strays.map((x) => html`<li><a href="${workHref(x.w)}">${x.w.title}</a>${x.w.creator ? html` · ${x.w.creator}` : ''}
+        <span class="muted">${x.w.created?.label ?? ''}</span> — <a href="${href('movements', x.p.slug)}">${x.p.name}</a>
+        <span class="muted small">${x.lane} ${x.span.label}</span></li>`)}</ul></details>` : html``);
     const keepUrl = () => {
       const q = new URLSearchParams();
       if (shown.size !== lanes.length) q.set('regions', [...shown].join(','));
@@ -95,11 +118,11 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
     function drawControls() {
       render(controls, html`<div class="category-filter" role="group" aria-label="Regions">
           ${data.lanes.map((l) => html`<button type="button" data-lane="${l.slug}" class="${shown.has(l.slug) ? 'on' : ''}" aria-pressed="${String(shown.has(l.slug))}">${l.name}</button>`)}
-          <button type="button" data-lane="collection" class="${shown.has('collection') ? 'on' : ''}" aria-pressed="${String(shown.has('collection'))}">${COLLECTION}</button>
         </div>
         <label class="periods-phases"><input type="checkbox" ${phases ? 'checked' : ''}> phases (Early, High, Late …)</label>
         <span class="periods-legend muted small"><span class="legend-bar legend-fade"></span> approximate limits
-          <span class="legend-bar legend-draft"></span> not yet reviewed <span class="legend-dot"></span> a work of the collection</span>`);
+          <span class="legend-bar legend-draft"></span> not yet reviewed <span class="legend-dot"></span> a work of the collection
+          <span class="legend-dot legend-dot-out"></span> dated outside the period</span>`);
     }
     drawControls();
     controls.addEventListener('click', (e) => {

@@ -684,6 +684,9 @@ export interface PeriodWork {
   title: string;
   creator: string | null;
   created: DateRange | null;
+  /** where it was made, the places above and its country (slugs) — for its lane; made_in: the place's name */
+  places: string[];
+  made_in: string | null;
 }
 export interface Period {
   slug: string;

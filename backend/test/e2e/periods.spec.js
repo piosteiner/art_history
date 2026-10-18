@@ -32,6 +32,10 @@ test('periods: lanes, spans with fuzzy edges, parts under their style, works thr
   expect(phase.works.length).toBeGreaterThan(0);
   expect(years(phase).every((y) => y === null || (y >= 1888 && y <= 1889))).toBe(true);
   expect(style.works.map((w) => w.slug)).toEqual(expect.arrayContaining(phase.works.map((w) => w.slug)));
+  // where each work was made (the provenance's creation stop, the places above, its country): for its lane
+  expect(phase.works.every((w) => Array.isArray(w.places))).toBe(true);
+  const starry = phase.works.find((w) => w.slug === 'the-starry-night');
+  if (starry) expect(starry.places).toEqual(expect.arrayContaining(['france']));
   // a draft: marked "to complete"
   sql("INSERT INTO auto_created (entity_type, entity_id) VALUES ('movement', entity_id('movement', 'test-style'))");
   d = await api(request);
