@@ -13,6 +13,8 @@ Format: date — what — why — how to revert.
   with past dates clears it too); upcoming ones are listed on the dashboard. Public API: `planned_until` on provenance
   steps, the frontend shows a "planned" tag. YAML: `check_after` (content.js export, import.js).
 - **Why:** a future step is an announced event (an auction), not a typo — keep it and remind to check the outcome.
+  The first deploy stopped at the migration ("cannot CREATE INDEX … pending trigger events": the backfill fires
+  deferred triggers) and rolled back, production untouched; the index is now created before the backfill.
 - **Revert:** `git revert` the commit; `ALTER TABLE provenance DROP COLUMN check_after` (the column is unused otherwise).
 
 ### Fix: a provenance date in the future broke /v1/artworks and the artwork's admin page

@@ -5,6 +5,8 @@
 -- every step that only records the past. Set by the admin (src/admin/provenance.js fromForm), not by a trigger; the
 -- YAML files carry it as check_after (src/content.js, scripts/import.js). The public API: planned_until.
 ALTER TABLE provenance ADD COLUMN check_after date;
+-- the index first: after the UPDATE its deferred triggers are pending, and CREATE INDEX refuses to run then
+CREATE INDEX provenance_check_after ON provenance (check_after) WHERE check_after IS NOT NULL;
 COMMENT ON COLUMN provenance.check_after IS 'planned step (096): remind after this day whether it happened as planned; NULL = a record of the past';
 
 UPDATE provenance SET check_after = greatest(
@@ -12,4 +14,3 @@ UPDATE provenance SET check_after = greatest(
     CASE WHEN lower(ended) > current_date THEN coalesce(upper(ended) - 1, lower(ended)) END)
   WHERE lower(acquired) > current_date OR lower(ended) > current_date;
 
-CREATE INDEX provenance_check_after ON provenance (check_after) WHERE check_after IS NOT NULL;
