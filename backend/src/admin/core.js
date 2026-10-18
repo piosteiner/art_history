@@ -33,6 +33,7 @@ const DONE = {
   'cite-added': 'Source added.', 'cite-deleted': 'Source removed.', 'featured-problems': 'Saved — not published: the view has problems (below).', 'cite-confirmed': 'Noted: the source still supports it.',
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
+  'prov-confirmed': 'Marked as happened as planned — no more reminder.',
 };
 
 function send(req, res, { title, body, status = 200, flash, page = null }) {

@@ -216,21 +216,36 @@ test('provenance flags and research 1933–1945: a flagged holder is a warning; 
   sql("UPDATE people SET provenance_flag = NULL WHERE slug = 'test-buhrle'; DELETE FROM live_docs WHERE entity_type = 'person'");
 });
 
-test('a provenance date in the future: refused in the form; one stored anyway breaks no list (095)', async ({ userA, request }) => {
-  // the form: "18 November 2099" is a typo, not a provenance
+test('a provenance date in the future is planned: marked, in the lists, a reminder after its day, "Went as planned" (095, 096)', async ({ userA, request }) => {
+  const who = 'Test Sothebys New York';
+  // an auction announced for a day to come: accepted, marked as planned
   await userA.goto('/artworks/test-bassin');
   await userA.click('summary:has-text("+ Add provenance step")');
-  await userA.fill('#pv-owner-label', 'Test private collection');
+  await userA.fill('#pv-owner-label', who);
   await userA.fill('#pv-ended', '18 November 2099');
   await Promise.all([userA.waitForNavigation(), userA.click('.provenance-form button:has-text("Add")')]);
-  await expect(userA.locator('.flash.error')).toContainText('lies in the future');
-  // stored anyway (an older entry, an import): the artwork, the API list and the artwork in the API still answer
-  sql(`INSERT INTO provenance (artwork_id, position, owner_label, ended, ended_label) VALUES
-         (entity_id('artwork', 'test-bassin'), 0, 'Test private collection', daterange('2099-11-18', '2099-11-19'), '18 November 2099')`);
+  await expect(userA).toHaveURL(/done=prov-added#provenance/);
+  await expect(userA.locator('table.provenance .tag.planned')).toHaveText('planned · check after 18 Nov 2099');
+  expect(sql(`SELECT check_after::text FROM provenance WHERE owner_label = '${who}'`)).toBe('2099-11-18');
+  // the lists still answer (095), and the API says it is planned
   const list = await request.get(`${API}/artworks?limit=5`, { headers: { Host: 'api.localhost' } });
   expect(list.status()).toBe(200);
   const one = await request.get(`${API}/artworks/test-bassin`, { headers: { Host: 'api.localhost' } });
   expect(one.status()).toBe(200);
+  expect((await one.json()).provenance.find((s) => s.owner_label === who).planned_until).toBe('2099-11-18');
+  await userA.goto('/');
+  await expect(userA.locator('.planned-upcoming')).toContainText('(18 Nov 2099)');
+  await expect(userA.locator('.planned-reminder')).toHaveCount(0);
+  // the day has passed: the dashboard and the artwork ask whether it happened
+  sql(`UPDATE provenance SET check_after = current_date - 1 WHERE owner_label = '${who}'`);
   await userA.goto('/artworks/test-bassin');
-  await expect(userA.locator('#provenance')).toBeVisible();
+  await expect(userA.locator('table.provenance .planned-due')).toContainText('did it happen?');
+  await userA.goto('/');
+  const reminder = userA.locator('.planned-reminder');
+  await expect(reminder).toContainText('Planned provenance — did it happen?');
+  await Promise.all([userA.waitForNavigation(), reminder.locator('button:has-text("Went as planned")').click()]);
+  await expect(userA).toHaveURL(/\/\?done=prov-confirmed/);
+  await expect(userA.locator('.planned-reminder')).toHaveCount(0);
+  expect(sql(`SELECT check_after IS NULL FROM provenance WHERE owner_label = '${who}'`)).toBe('t');
+  sql(`DELETE FROM provenance WHERE owner_label = '${who}'`);
 });

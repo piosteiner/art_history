@@ -379,6 +379,8 @@ export interface ProvenanceStep {
    * the work went through to this owner ("Galerie Moos").
    */
   in_chain?: boolean; not_sold?: boolean; via?: string | null;
+  /** API 096: announced, not yet a fact (an auction to come) — the day it is planned for, until then. */
+  planned_until?: string | null;
   /** API 077: further places after `place`, in order ("Köln → Berlin → Geneva"); numbers it records; the event it belongs to. */
   further_places?: (Ref & { period: DateRange | null })[]; numbers?: ProvenanceNumber[]; event?: Ref | null;
   /** API 084: what the holder gave for it — an artwork on this site, else only described. */

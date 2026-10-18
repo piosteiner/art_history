@@ -364,6 +364,8 @@ const EXTRAS = {
              range_json(p.period, p.period_label) AS period, p.end_basis, p.notes_md, p.id AS _prov_id,
              -- 074: custody steps (agent, custodian) run beside the ownership; an agent that didn't sell; the agents a handover went through
              p.in_chain, p.not_sold, p.via,
+             -- 096: dated after today, announced (an auction to come) — not yet a fact; until when
+             (SELECT pv.check_after::text FROM provenance pv WHERE pv.id = p.id) AS planned_until,
              -- 077: further places in order, the step's numbers, the event it belongs to
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', l.slug, 'name', l.name, 'period', range_json(x.period, x.period_label)) ORDER BY x.position), '[]')
                 FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,

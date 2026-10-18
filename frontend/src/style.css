@@ -237,6 +237,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .provenance-alt { margin: .35rem 0 .1rem; padding: .3rem .6rem; border: 1px dashed var(--line); border-radius: var(--radius); font-size: .9rem; }
 .provenance-alt-label { font-size: .8rem; color: var(--muted); font-style: italic; margin-right: .2rem; }
 .tag-not-sold { border-style: dashed; }
+.tag-planned { border-style: dotted; font-style: italic; }
 .explained { text-decoration: underline dotted; cursor: help; }
 /* an event in the chain (API 077): a note on the rail, no holder, no dot */
 .provenance-step.provenance-event { color: var(--muted); }

@@ -248,9 +248,10 @@ async function main() {
     //     import writes nothing to the history).
     const PROV_COLS = ['owner_artist_id', 'owner_person_id', 'owner_institution_id', 'owner_place_id', 'owner_label',
       'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct', 'location_id', 'label', 'certainty', 'notes_md', 'metadata',
-      'role', 'price', 'price_currency', 'price_note', 'not_sold', 'exchanged_for_artwork_id', 'exchanged_for_text'];
+      'role', 'price', 'price_currency', 'price_note', 'not_sold', 'exchanged_for_artwork_id', 'exchanged_for_text',
+      'check_after'];
     const PROV_CASTS = { acquired: '::daterange', ended: '::daterange', method: '::acquisition_method', certainty: '::certainty', metadata: '::jsonb',
-      role: '::holder_role', price: '::numeric' };
+      role: '::holder_role', price: '::numeric', check_after: '::date' };
     for (const e of entities.filter((x) => x.provenance !== null && x.provenance !== undefined)) {
       const artworkId = ids.get(`${e.type}/${e.slug}`);
       if (artworkId === undefined) continue;
@@ -276,7 +277,8 @@ async function main() {
           label: st.label ?? null, certainty: st.certainty ?? 'attested', notes_md: st.notes_md ?? null,
           metadata: '{}',  // its sources are citations (050), added below
           role: st.role ?? 'owner', price: st.price ? st.price.amount : null, price_currency: st.price ? st.price.currency : null,
-          price_note: st.price ? st.price.note ?? null : null, not_sold: st.not_sold === true, exchanged_for_text: st.exchanged_for_text ?? null });
+          price_note: st.price ? st.price.note ?? null : null, not_sold: st.not_sold === true, exchanged_for_text: st.exchanged_for_text ?? null,
+          check_after: /^\d{4}-\d{2}-\d{2}$/.test(String(st.check_after ?? '')) ? String(st.check_after) : null });
         if (st.exchanged_for) {
           v.exchanged_for_artwork_id = await idOf('artwork', String(st.exchanged_for));
           if (v.exchanged_for_artwork_id === null) { fail(e.file, `${where}: exchanged_for ${st.exchanged_for} does not exist`); continue; }

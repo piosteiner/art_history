@@ -10,6 +10,7 @@ const quality = require('../quality');
 const placefinder = require('../placefinder');
 const { humanize, formToDoc } = require('../forms');
 const autocreate = require('../autocreate');
+const provenance = require('../provenance');
 const wikidata = require('../wikidata');
 const { PAGE, send, when, history, historyTable, pager, pageParam, withTx, UserError, friendly } = require('../core');
 
@@ -59,6 +60,14 @@ router.get('/', async (req, res) => {
     SELECT d.entity_type::text AS type, d.updated_at, e.slug, e.name FROM admin_drafts d
     LEFT JOIN entity_index e ON e.type = d.entity_type AND e.id = d.entity_id
     WHERE d.user_id = $1 AND d.entity_id IS NULL ORDER BY d.updated_at DESC`, [req.user.id])).rows;
+  // planned provenance (096): steps dated after today — due ones ask whether they happened, the others wait
+  const planned = (await adminPool.query(`
+    SELECT p.id, p.check_after::text AS check_after, p.check_after < current_date AS check_due, w.slug, w.title,
+           coalesce(pp.owner_name, p.label) AS who
+    FROM provenance p JOIN artworks w ON w.id = p.artwork_id LEFT JOIN provenance_periods pp ON pp.id = p.id
+    WHERE p.check_after IS NOT NULL ORDER BY p.check_after, w.title LIMIT 50`)).rows;
+  const due = planned.filter((p) => p.check_due);
+  const upcoming = planned.filter((p) => !p.check_due);
   send(req, res, {
     title: 'Dashboard',
     body: html`<h1>Dashboard</h1>
@@ -66,6 +75,13 @@ router.get('/', async (req, res) => {
         <span class="muted small">${d.contributors.join(', ')} · ${when(d.updated_at)}</span>`)}</div>` : ''}
       ${myDrafts.length ? html`<div class="flash draft"><b>Your unsaved drafts:</b> ${myDrafts.map((d, i) => html`${i ? ' · ' : ''}<a href="/${BY_TYPE[d.type].folder}/${d.slug ? `${d.slug}/edit` : 'new'}?draft=1">${d.name || `new ${d.type}`}</a>
         <span class="muted small">${when(d.updated_at)}</span>`)}</div>` : ''}
+      ${due.length ? html`<div class="flash warn planned-reminder"><b>Planned provenance — did it happen?</b>
+        <ul>${due.map((p) => html`<li><a href="/artworks/${p.slug}#provenance">${p.title}</a>${p.who ? html` · ${p.who}` : ''}
+          <span class="muted small">planned for ${provenance.dayText(p.check_after)}</span>
+          <form method="post" action="/provenance/${p.id}/confirm?back=dashboard" class="inline"><button class="small">Went as planned</button></form>
+          <a class="small" href="/provenance/${p.id}/edit">edit</a></li>`)}</ul></div>` : ''}
+      ${upcoming.length ? html`<p class="muted small planned-upcoming">Planned provenance: ${upcoming.map((p, i) => html`${i ? ' · ' : ''}<a href="/artworks/${p.slug}#provenance">${p.title}</a>
+        (${provenance.dayText(p.check_after)})`)} — you will be asked after each date whether it happened as planned.</p>` : ''}
       <div class="cards">${TYPES.map((t) => html`<a class="card" href="/${t.folder}"><b>${counts[t.type] || 0}</b>${humanize(t.folder)}</a>`)}
         <div class="card"><b>${rels}</b>Relationships</div>
         <a class="card qa-card" href="/quality"><b>${qaTotal('error')} · ${qaTotal('warning')}</b>Quality: errors · warnings</a></div>

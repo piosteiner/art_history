@@ -35,9 +35,10 @@ const OWNER_TYPES = ['artist', 'person', 'institution', 'place'];
 const ARC = { artist: 'owner_artist_id', person: 'owner_person_id', institution: 'owner_institution_id', place: 'owner_place_id' };
 const COLS = ['owner_artist_id', 'owner_person_id', 'owner_institution_id', 'owner_place_id', 'owner_label',
   'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct', 'location_id', 'label', 'certainty', 'notes_md', 'metadata',
-  'role', 'price', 'price_currency', 'price_note', 'not_sold', 'event_id', 'alternative_to', 'exchanged_for_artwork_id', 'exchanged_for_text'];
+  'role', 'price', 'price_currency', 'price_note', 'not_sold', 'event_id', 'alternative_to', 'exchanged_for_artwork_id', 'exchanged_for_text',
+  'check_after'];
 const CASTS = { acquired: '::daterange', ended: '::daterange', method: '::acquisition_method', certainty: '::certainty', metadata: '::jsonb',
-  role: '::holder_role', price: '::numeric' };
+  role: '::holder_role', price: '::numeric', check_after: '::date' };
 // "18,000" · "18'000" · "200.00" · "1 250,50" → 18000 · 18000 · 200 · 1250.5
 function priceOf(text) {
   let t = String(text || '').replace(/[\s'’]/g, '');
@@ -61,6 +62,17 @@ const END_BASIS = {
   unknown: 'end unknown',
 };
 
+const today = () => new Date().toISOString().slice(0, 10);
+// "[2026-11-18,2026-11-19)" → { from: '2026-11-18', day: '2026-11-18' } — its first and last day (open end: the first)
+function lastDay(range) {
+  const m = /^[[(](\d{4,}-\d{2}-\d{2})?,(\d{4,}-\d{2}-\d{2})?([\])])$/.exec(String(range || ''));
+  if (!m || !m[1]) return null;
+  if (!m[2]) return { from: m[1], day: m[1] };
+  const end = new Date(`${m[2]}T00:00:00Z`);
+  if (m[3] === ')') end.setUTCDate(end.getUTCDate() - 1);
+  return { from: m[1], day: end.toISOString().slice(0, 10) };
+}
+
 // Form body → column values (COLS order). Owner "type/slug" and place slug are looked up; throws ProvenanceError.
 async function fromForm(db, body, keepMetadata = {}) {
   const text = (k) => String(body[k] ?? '').replace(/\r\n/g, '\n').trim() || null;
@@ -82,11 +94,9 @@ async function fromForm(db, body, keepMetadata = {}) {
   for (const key of ['acquired', 'ended']) {
     let d = null;
     try { d = parseFuzzyDate(text(key)); } catch (err) { throw new ProvenanceError(`${key === 'acquired' ? 'Acquired' : 'Ended'}: ${err.message}`); }
-    // the provenance records what happened: a date after today is a typo (095 keeps the lists working regardless)
-    const from = /^[[(](\d{4,}-\d{2}-\d{2})/.exec(String(d?.range || ''))?.[1];
-    if (from && from > new Date().toISOString().slice(0, 10)) {
-      throw new ProvenanceError(`${key === 'acquired' ? 'Acquired' : 'Ended'}: "${text(key)}" lies in the future — check the year.`);
-    }
+    // a date after today is planned (096): an auction announced, a gift promised — check after its last day
+    const last = lastDay(d && d.range);
+    if (last && last.from > today()) v.check_after = [v.check_after, last.day].filter(Boolean).sort().pop();
     v[key] = d && d.range;
     v[`${key}_label`] = d ? text(`${key}_label`) || d.label : null;
   }
@@ -314,6 +324,7 @@ async function remove(db, step) {
 async function read(db, artworkId) {
   return (await db.query(`
     SELECT p.*, o.slug AS owner_slug, o.name AS owner_entity_name, l.slug AS location_slug, l.name AS location_name, pv.metadata,
+           pv.check_after::text AS check_after, pv.check_after < current_date AS check_due,
            p.period && daterange('1933-01-30', '1945-05-09') AS nazi_era, holder_flag(p.owner_type, p.owner_id) AS flag,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('type', c.owner_type, 'slug', e.slug, 'name', e.name) ORDER BY c.position), '[]')
               FROM provenance_co_owners_x c JOIN entity_index e ON (e.type, e.id) = (c.owner_type, c.owner_id)
@@ -503,6 +514,15 @@ function gapRow(g) {
 }
 
 // the main steps as choices for "another reading of" — numbered as in the table
+// A planned step (096): marked until its day; after it, the question whether it happened — "Went as planned" or edit it.
+const dayText = (d) => new Date(`${d}T00:00:00Z`).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+function plannedMark(s, back = '') {
+  if (!s.check_due) return html` <span class="tag planned" title="dated after today: you will be asked after this day whether it happened">planned · check after ${dayText(s.check_after)}</span>`;
+  return html`<div class="planned-due small">⏰ Planned for ${dayText(s.check_after)} — did it happen?
+    <form method="post" action="/provenance/${s.id}/confirm${back}" class="inline"><button class="small">Went as planned</button></form>
+    or <a href="/provenance/${s.id}/edit">edit the step</a></div>`;
+}
+
 function stepChoices(steps) {
   let n = 0;
   return steps.filter((s) => s.kind === 'step').map((s) => { n += 1; return { id: s.id, label: `${n}. ${s.owner_slug ? s.owner_entity_name : s.owner_label || s.label || ''} ${s.acquired_label || ''}`.trim() }; });
@@ -538,6 +558,7 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
         <td>${s.period_label || ''}${END_BASIS[s.end_basis] ? html` <span class="tag ${s.end_basis}">${END_BASIS[s.end_basis]}</span>` : ''}
           ${s.certainty !== 'attested' ? html` <span class="muted">· ${s.certainty}</span>` : ''}
           ${implied ? html` <span class="tag implied">${IMPLIED[s.kind]}</span>` : ''}
+          ${!implied && s.check_after ? plannedMark(s) : ''}
           ${s.notes_md ? html`<div class="md small">${raw(renderMarkdown(s.notes_md, { names }))}</div>` : ''}</td>
         <td>${!implied && marker ? marker(cites[s.id], { provenance: s.id, label: `step ${n} (${s.owner_slug ? s.owner_name : s.owner_label})` }, back) : ''}</td>
         <td class="nowrap">${implied ? '' : html`<a href="/provenance/${s.id}/edit">edit</a>`}</td></tr></tbody>
@@ -555,4 +576,4 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
     <details><summary><b>+ Add provenance step</b></summary>${form({ action: `/artworks/${e.slug}/provenance`, submit: 'Add', choices: stepChoices(steps) })}</details>`;
 }
 
-module.exports = { ProvenanceError, METHODS, ROLES, NUMBER_KINDS, saveExtras, coverage, coverageBar, readAlternatives, stepChoices, addCommission, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section, saveCoOwners, priceText };
+module.exports = { ProvenanceError, plannedMark, dayText, METHODS, ROLES, NUMBER_KINDS, saveExtras, coverage, coverageBar, readAlternatives, stepChoices, addCommission, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section, saveCoOwners, priceText };

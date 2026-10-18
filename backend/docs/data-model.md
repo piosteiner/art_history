@@ -506,6 +506,8 @@ its `[[links]]` follow renames and merges like every text.
   loans, consignments, auctions) run beside it. `provenance_periods` looks up the next / previous step *of the chain*
   (LATERAL subqueries) for implied ends and handovers; new columns `in_chain`, `not_sold`, `via`.
   `provenance.not_sold` (agents only, CHECK): an auction or consignment that didn't sell.
+  `provenance.check_after` (096): a planned step (dated after today) — the day after which the admin asks whether it
+  happened as planned; NULL for records of the past. API: `planned_until`.
 - `provenance_gaps`: per handover the span in which it may have happened — window aggregates: the latest date known
   before it (the creation for the first owner), the earliest acquisition known from it on. The check
   `provenance_gap_1933_1945` reports each stretch overlapping 30 January 1933 – 8 May 1945 once (several undated

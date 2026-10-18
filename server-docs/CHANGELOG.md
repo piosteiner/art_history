@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Planned provenance: future dates allowed, with a reminder after the day
+- **What:** migration `096_provenance_planned.sql` — column `provenance.check_after` (the last day of a step's latest
+  future date; backfilled for the steps already dated after today, e.g. "Fleurs dans une coupe", Sotheby's New York,
+  18 Nov 2026). The provenance form accepts future dates again (the refusal added this morning is gone) and sets it.
+  Admin: the step is tagged "planned · check after …"; once the day is over the artwork page and the dashboard ask
+  "did it happen?" with **Went as planned** (`POST /provenance/:id/confirm`, clears it) or edit the step (saving it
+  with past dates clears it too); upcoming ones are listed on the dashboard. Public API: `planned_until` on provenance
+  steps, the frontend shows a "planned" tag. YAML: `check_after` (content.js export, import.js).
+- **Why:** a future step is an announced event (an auction), not a typo — keep it and remind to check the outcome.
+- **Revert:** `git revert` the commit; `ALTER TABLE provenance DROP COLUMN check_after` (the column is unused otherwise).
+
 ### Fix: a provenance date in the future broke /v1/artworks and the artwork's admin page
 - **What:** migration `095_provenance_future_dates.sql` — `provenance_coverage()` builds an artwork's "life" range only
   when it starts before tomorrow (before, `daterange()` raised "range lower bound must be less than or equal to range

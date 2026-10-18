@@ -86,6 +86,14 @@ router.post('/provenance/:id', async (req, res) => {
   res.redirect(303, `${step.artworkUrl}?done=prov-saved#provenance`);
 });
 
+// A planned step (096) that happened as planned: no more reminder. ?back=dashboard → back to the dashboard.
+router.post('/provenance/:id/confirm', async (req, res) => {
+  const step = await provenance.byId(adminPool, req.params.id);
+  if (!step) return notFoundPage(req, res);
+  await withTx(req.user, (db) => db.query('UPDATE provenance SET check_after = NULL WHERE id = $1', [step.id]));
+  res.redirect(303, req.query.back === 'dashboard' ? '/?done=prov-confirmed' : `${step.artworkUrl}?done=prov-confirmed#provenance`);
+});
+
 router.post('/provenance/:id/delete', async (req, res) => {
   const step = await provenance.byId(adminPool, req.params.id);
   if (!step) return notFoundPage(req, res);

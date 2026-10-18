@@ -177,6 +177,9 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 .presence-tag, .presence-badge { margin-left: .4rem; font-weight: 400; }
 .presence-badge.editing, .presence-tag { color: var(--accent); border-color: var(--accent); }
 .flash.draft { background: color-mix(in srgb, var(--accent) 12%, transparent); color: var(--fg); }
+.tag.planned { border-color: var(--accent); color: var(--fg); }
+.planned-due { margin-top: .3rem; padding: .3rem .5rem; border-left: 3px solid var(--accent); background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.planned-reminder ul { margin: .3rem 0 0; padding-left: 1.2rem; }
 .flash.draft .actions { margin-left: .6rem; display: inline-flex; }
 
 /* Wikidata comparison (src/admin/wikidata-ui.js) */

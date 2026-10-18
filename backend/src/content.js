@@ -83,7 +83,8 @@ const NUMBER_KEYS = ['number', 'institution', 'source', 'label', 'sources'];
 // currency, note}.
 const PROVENANCE_KEYS = ['owner', 'owner_label', 'co_owners', 'role', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
   'place', 'label', 'certainty', 'price', 'notes_md', 'sources', 'not_sold', 'further_places', 'numbers', 'event',
-  'alternative_of', 'exchanged_for', 'exchanged_for_text'];  // 084: alternative_of = the index of the step it is another reading of
+  'alternative_of', 'exchanged_for', 'exchanged_for_text',  // 084: alternative_of = the index of the step it is another reading of
+  'check_after'];  // 096: a planned step — the day after which to check whether it happened ("2026-11-18")
 const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian', 'publisher', 'foundry', 'trustee', 'possessor', 'event'];
 const ACQUISITION_METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
   'confiscation', 'forced_sale', 'restitution', 'settlement', 'transfer', 'theft', 'claim', 'dissolution', 'unknown'];
@@ -418,6 +419,7 @@ async function readProvenance(db, artworkId) {
            p.certainty::text AS certainty, p.notes_md, p.metadata, citation_docs(NULL, p.id) AS sources,
            p.role::text AS role, p.price, p.price_currency, p.price_note, p.not_sold, p.id AS _id, p.alternative_to,
            (SELECT slug FROM artworks WHERE id = p.exchanged_for_artwork_id) AS exchanged_for, p.exchanged_for_text,
+           p.check_after::text AS check_after,
            (SELECT slug FROM events WHERE id = p.event_id) AS event,
            (SELECT jsonb_agg(jsonb_build_object('place', l.slug, 'period', x.period::text, 'period_label', x.period_label) ORDER BY x.position)
               FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
@@ -461,6 +463,7 @@ async function readProvenance(db, artworkId) {
     if (r.sources) st.sources = r.sources;  // citations (050)
     if (r.exchanged_for) st.exchanged_for = r.exchanged_for;
     if (r.exchanged_for_text) st.exchanged_for_text = r.exchanged_for_text;
+    if (r.check_after) st.check_after = r.check_after;
     if (r.alternative_to) st.alternative_of = rows.findIndex((x) => x._id === r.alternative_to);   // 084: by index in this list
     return st;
   });
