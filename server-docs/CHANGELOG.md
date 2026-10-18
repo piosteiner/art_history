@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Data: provenances for 10 of the 23 artworks without one (import, production)
+- **What:** from the museums' published records, every step cited: Le Phare de Honfleur (Kunsthaus Zürich, item 2206,
+  13 steps — Depeaux, Drouot 1901, Bernheim-Jeune, Grimthorpe, Christie's 1906, Hugo and Martha Nathan, Bottenwieser,
+  Adolf and Walter A. Jöhr, the Kunsthaus 1975; research there ongoing); Bridge in the Rain and Flowering Plum Orchard
+  (Van Gogh Museum: Theo, Jo van Gogh-Bonger and Vincent Willem van Gogh, the foundations, the Stedelijk loan; on loan
+  at the museum); Self-Portrait Dedicated to Paul Gauguin (Harvard Art Museums: Gauguin, Vollard and Cassirer as
+  "possible", Tschudi, his widow, the Neue Staatsgalerie, the 1938 confiscation EK 16554, Fischer Lucerne 1939 lot 45,
+  Wertheim, the Fogg 1951); Sunflowers (National Gallery: Jo van Gogh-Bonger, V. W. van Gogh, Leicester Galleries, the
+  Courtauld Fund 1924, transferred 1961); The Starry Night (Wikidata's owned-by statements — without references — and
+  MoMA's credit line). From credit lines only: The Great Wave (Met: Mrs. H. O. Havemeyer, bequest 1929), Rocks at
+  Belle-Île (Cincinnati, bought 1985), The Interior of the British Institution Gallery (Yale: Paul Mellon), The Route
+  from Saint-Germain to Marly (McNay: the Oppenheimers' gift, via pubhist). 12 new entries "to complete". Not found or
+  not reachable (bot protection: Prado, MoMA's page, Brooklyn, the Met's page, MFA Boston, McNay, Hermitage): Saturn,
+  Edge of the Forest, Sudden Shower, the Onchi portrait, Pine Trees in the Snow; no provenance to give: the Bauhaus
+  building, the Mirror Room, the Priest Kūya (in its temple), prints without a particular impression.
+- **Why:** owner: provenance for the artworks without one, from the museums' websites.
+- **Revert:** History → the change sets (source import, 18 October 2026) → Revert.
+
 ### Periods timeline: the works on the period bars, outliers marked
 - **What:** `/v1/periods` gives each work `places` (where it was made — the provenance's creation stop, 091: recorded,
   else where the artist lived or worked then — the places above it and its country) and `made_in`. The page draws the
