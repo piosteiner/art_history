@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Periods timeline: API and data
+- **What:** migration `100_movement_works.sql` — view `movement_works`: a movement's artworks (associated directly, or
+  through their artist if made while it lasted; a style collects its parts). `101_movement_drafts.sql` — view
+  `movement_drafts` (the movements marked "to complete", for the API role, which may not read `auto_created`). Route
+  `GET /v1/periods` (src/routes/periods.js): lanes (places, Europe first), every movement with dated "active in" spans —
+  each span with `fuzzy` start/end from its label —, its parent, `reviewed`, and its works. E2E `periods.spec.js`.
+  Data (import, 18 October 2026): place Europe (Q46); 21 new entries (Romanesque, Gothic with Early / High / Late /
+  International Gothic, Renaissance, Early and Late Renaissance, Mannerism, Early / High / Late Baroque, Dutch Golden
+  Age painting, Biedermeier, Jugendstil, Expressionism, Muromachi and Meiji periods); periods corrected (Rococo had
+  Wikidata's inception "1730–1739", Baroque "1501–1759", Romanticism "1701–1800", Impressionism "1860–1869" …), kinds
+  (style / movement / period) and parts; 47 dated spans in Europe, Italy, France, Belgium, the Netherlands, Germany,
+  Austria and Japan, each cited — the Getty AAT's scope notes (data.getty.edu, ODC-By) or Wikidata's start and end
+  times; the 44 movements touched marked "to complete" for review.
+- **Why:** owner: a timeline of the art-historical periods, regional where the sources say so.
+- **Revert:** `DROP VIEW movement_works, movement_drafts`, `git revert`; the data: History → the change set (source
+  import, 18 October 2026) → Revert.
+
 ### Data: Kunsthaus Zürich provenances completed from the Sammlung Online (import, production)
 - **What:** of the Kunsthaus's 54 works here, 50 have a record online; 28 already matched it line by line. Imported from
   the records (fetched 18 October 2026, one request every 2 s): the 15 works without provenance (Walpurgisnacht, Mönche

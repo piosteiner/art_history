@@ -741,3 +741,21 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .map-cluster { display: grid; place-items: center; border-radius: 50%; border: 2px solid #fff; padding: 0; cursor: zoom-in;
   font: 700 12px/1 var(--sans); color: #fff; background: rgb(47 111 115 / .88); box-shadow: 0 1px 4px rgb(0 0 0 / .35); }
 .map-cluster:hover, .map-cluster:focus-visible { background: #2f6f73; outline: 2px solid var(--accent); outline-offset: 1px; }
+
+/* ---- periods timeline (views/periods.ts) ---- */
+.periods-controls { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin: .6rem 0; }
+.periods-controls .category-filter { margin: 0; }
+.periods-phases { font-size: .9rem; display: inline-flex; gap: .35rem; align-items: center; }
+.periods-legend { display: inline-flex; flex-wrap: wrap; align-items: center; gap: .35rem; }
+.legend-bar { display: inline-block; width: 26px; height: 10px; border-radius: 3px; background: var(--accent); opacity: .8; margin-left: .4rem; }
+.legend-fade { background: linear-gradient(90deg, transparent, var(--accent) 35%, var(--accent) 65%, transparent); }
+.legend-draft { background: transparent; border: 1.5px dashed var(--accent); }
+.legend-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--text); margin-left: .4rem; }
+.bar-draft { stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 4 3; fill-opacity: .45; }
+.bar-thin { fill: var(--muted); opacity: .45; }
+.bar-in-the-collection { fill: var(--muted); }
+.tl-dot { fill: var(--text); stroke: var(--surface); stroke-width: 1; cursor: pointer; }
+.tl-dot:hover { fill: var(--accent); }
+.row-label-sub { font-size: 11.5px; }
+.periods-active { line-height: 1.7; }
+.periods-works .tag { margin-left: .2rem; }

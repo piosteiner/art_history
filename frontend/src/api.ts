@@ -2,7 +2,7 @@
 import type {
   AsOfDetail, DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, History, NetworkHands, NetworkPath, ProvenanceNumberHit,
   ClustersMap, EncounterRow, ItemByPlural, List, PlacesMap, Plural, SharedHands, TextHit,
-  EventsMap, PresenceMap, RelationshipType, SearchHit, SitesMap,
+  EventsMap, PresenceMap, RelationshipType, SearchHit, SitesMap, Periods,
 } from './types';
 
 // In development the Vite server proxies /v1 (the API only allows CORS from the production origin).
@@ -147,6 +147,7 @@ export const getEventsMap = () => get<EventsMap>('/map/events');
 /** Which artworks' provenance records a number (a lot, ERR, Munich, Linz …): exact matches, any kind or one. */
 export const getProvenanceNumbers = (number: string, kind?: string | null) =>
   get<{ data: ProvenanceNumberHit[] }>('/provenance-numbers', kind ? { number, kind } : { number }).then((r) => r.data);
+export const getPeriods = () => get<Periods>('/periods');
 export const getFeatured = () => get<{ data: FeaturedView[] }>('/featured').then((r) => r.data);
 
 /** Institutions and immovable artworks with an exact location of their own (a museum layer). */

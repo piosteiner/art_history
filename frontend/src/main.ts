@@ -22,7 +22,7 @@ const NAV: { title: string; plurals: Plural[] }[] = [
 
 const main = document.getElementById('app')!;
 const nav = document.getElementById('nav')!;
-render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph">Network</a></span>
+render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph">Network</a><a href="/periods">Periods</a></span>
   ${NAV.map((g) => html`<span class="nav-group" title="${g.title}">${g.plurals.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}</span>`)}`);
 mountSearch(document.getElementById('search')!);
 watchLinks(main); // previews on the internal links of every page
@@ -96,7 +96,7 @@ function onRoute(route: Route) {
   if (typeof cleanup === 'function') cleanup();
   cleanup = undefined;
   document.title = 'Art History';
-  const section = route.name === 'list' || route.name === 'detail' ? route.plural : route.name === 'explore' ? '' : route.name === 'graph' ? 'graph' : null;
+  const section = route.name === 'list' || route.name === 'detail' ? route.plural : route.name === 'explore' ? '' : route.name === 'graph' ? 'graph' : route.name === 'periods' ? 'periods' : null;
   nav.querySelectorAll('a').forEach((a) => a.classList.toggle('current', a.getAttribute('href') === `/${section ?? '-'}`));
 
   if (!firstRoute) queueMicrotask(focusHeading); // after the view's first render
@@ -119,6 +119,9 @@ function onRoute(route: Route) {
       break;
     case 'privacy':
       privacy(main);
+      break;
+    case 'periods':
+      cleanup = lazyView(() => import('./views/periods').then((m) => () => m.periodsPage(main, route.params)));
       break;
     case 'numbers':
       provenanceNumbers(main, route.params);

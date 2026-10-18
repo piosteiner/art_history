@@ -13,6 +13,16 @@ export interface TimelineRow {
   to: DateRange | null; // same object as `from` for single ranges (a movement's period)
   color?: string; // matches the entity's colour on the map when it was picked individually
   key?: string; // "artist/vincent-van-gogh", for colorFor
+  /** An edge known only roughly ("c. 1720", "late 18th century"): drawn fading out instead of ending hard. */
+  fade?: { start?: boolean; end?: boolean };
+  /** Not yet reviewed: drawn with a dashed outline. */
+  draft?: boolean;
+  /** A part of the row above (a phase of a style): its label indented. */
+  indent?: number;
+  /** Works of the collection on the bar, as dots at their year. */
+  dots?: { year: number; label: string; href: string }[];
+  /** A thin bar (e.g. the span of the collection's works). */
+  thin?: boolean;
 }
 
 export type YearWindow = { from: number; to: number };
@@ -27,6 +37,10 @@ export interface TimelineOptions {
   onView?: (view: { from: number; to: number }) => void;
   /** Colour of a bar without its own `color` (e.g. its route on the map); asked on every repaint, see redraw(). */
   colorFor?: (row: TimelineRow) => string | undefined;
+  /** Keep the rows' order (groups in the order they first appear) instead of sorting by group and start. */
+  keepOrder?: boolean;
+  /** The time axis' fixed extent instead of the rows' (e.g. so a filtered timeline keeps its scale). */
+  extent?: { from: number; to: number };
 }
 
 const NOW = new Date().getFullYear();
@@ -51,7 +65,7 @@ function decimalYear(d: DateRange | null, edge: 'from' | 'to'): number | null {
 const yearLabel = (t: number) => (t < 0 ? `${-t} BCE` : String(t));
 
 /** Bars with decimal years, stacked by group: the timeline's extent (`min`–`max`) and height. */
-function layout(rows: TimelineRow[]) {
+function layout(rows: TimelineRow[], keepOrder = false, extent?: { from: number; to: number }) {
   const spans = rows
     .map((r) => {
       const start = decimalYear(r.from, 'from') ?? decimalYear(r.to, 'from');
@@ -61,11 +75,16 @@ function layout(rows: TimelineRow[]) {
       return { ...r, start, end, open };
     })
     .filter((r): r is typeof r & { start: number; end: number } => r.start !== null && r.end !== null)
-    .sort((a, b) => a.group.localeCompare(b.group) || a.start - b.start);
+    .sort((a, b) => (keepOrder ? 0 : a.group.localeCompare(b.group) || a.start - b.start));
+  if (keepOrder) { // groups together, in the order they first appear
+    const firstSeen = new Map<string, number>();
+    spans.forEach((s, i) => { if (!firstSeen.has(s.group)) firstSeen.set(s.group, i); });
+    spans.sort((a, b) => firstSeen.get(a.group)! - firstSeen.get(b.group)!);
+  }
   if (!spans.length) return { min: 0, max: MIN_SPAN, placed: [], height: 0 };
 
-  const min = Math.floor(Math.min(...spans.map((s) => s.start)) / 10) * 10;
-  const max = Math.max(Math.ceil(Math.max(...spans.map((s) => s.end)) / 10) * 10, min + MIN_SPAN);
+  const min = extent ? extent.from : Math.floor(Math.min(...spans.map((s) => s.start)) / 10) * 10;
+  const max = extent ? extent.to : Math.max(Math.ceil(Math.max(...spans.map((s) => s.end)) / 10) * 10, min + MIN_SPAN);
 
   // groups stacked, rows inside
   let y = AXIS_H + 6;
@@ -84,7 +103,7 @@ function layout(rows: TimelineRow[]) {
 }
 
 export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts: TimelineOptions = {}) {
-  let { min, max, placed, height } = layout(rows);
+  let { min, max, placed, height } = layout(rows, opts.keepOrder, opts.extent);
   const clipId = `tl-clip-${Math.random().toString(36).slice(2)}`;
 
   container.classList.add('timeline');
@@ -168,22 +187,33 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     placed.forEach((s, i) => {
       if (!groups.has(s.group)) labels.push(`<text class="group-label" x="4" y="${s.heading + 13}">${escape(s.group)}</text>`);
       groups.add(s.group);
-      const maxChars = Math.floor((labelW() - 12) / 6.6);
+      const maxChars = Math.floor((labelW() - 12) / 6.6) - (s.indent ?? 0) * 2;
       const short = s.label.length > maxChars ? `${s.label.slice(0, maxChars - 1)}…` : s.label;
-      labels.push(`<a href="${escape(s.href)}"><text class="row-label" x="${labelW() - 8}" y="${s.y + 14}">${escape(short)}<title>${escape(s.label)}</title></text></a>`);
+      labels.push(`<a href="${escape(s.href)}"><text class="row-label${s.indent ? ' row-label-sub' : ''}" x="${labelW() - 8}" y="${s.y + 14}">${s.indent ? '· '.repeat(s.indent) : ''}${escape(short)}<title>${escape(s.label)}</title></text></a>`);
       if (s.end < v0 || s.start > v1) return;
       const x1 = x(s.start);
       const w = Math.max(x(s.end) - x1, 3);
-      bars.push(`<rect class="bar bar-${escape(s.group.toLowerCase())}${s.open ? ' bar-open' : ''}" data-i="${i}"${(s.color ?? opts.colorFor?.(s)) ? ` style="fill:${escape((s.color ?? opts.colorFor?.(s))!)};opacity:.9"` : ''}
-          x="${x1}" y="${s.y + 3}" width="${w}" height="${ROW - 8}" rx="3">
-          <title>${escape(s.label)}: ${escape(s.from === s.to || !s.to ? s.from?.label ?? '' : `${s.from?.label ?? '?'} – ${s.to.label}`)}</title>
+      const fade = s.fade && (s.fade.start || s.fade.end) ? `fade-${s.fade.start ? 's' : ''}${s.fade.end ? 'e' : ''}` : '';
+      const fill = s.color ?? opts.colorFor?.(s);
+      const [by, bh] = s.thin ? [s.y + 8, 6] : [s.y + 3, ROW - 8];
+      bars.push(`<rect class="bar bar-${escape(s.group.toLowerCase().replace(/[^a-z0-9]+/g, '-'))}${s.open ? ' bar-open' : ''}${s.draft ? ' bar-draft' : ''}${s.thin ? ' bar-thin' : ''}" data-i="${i}"${fill ? ` style="fill:${escape(fill)};opacity:.9"` : ''}
+          ${fade ? `mask="url(#${clipId}-${fade})"` : ''} x="${x1}" y="${by}" width="${w}" height="${bh}" rx="3">
+          <title>${escape(s.label)}: ${escape(s.from === s.to || !s.to ? s.from?.label ?? '' : `${s.from?.label ?? '?'} – ${s.to.label}`)}${s.draft ? ' (not yet reviewed)' : ''}</title>
         </rect>`);
+      for (const d of s.dots ?? []) {
+        if (d.year < v0 || d.year > v1) continue;
+        bars.push(`<a href="${escape(d.href)}"><circle class="tl-dot" cx="${x(d.year + 0.5)}" cy="${s.y + 11}" r="3.5"><title>${escape(d.label)}</title></circle></a>`);
+      }
     });
 
     const win = windowSel
       ? `<rect class="window" x="${x(windowSel.from)}" y="${AXIS_H - 4}" width="${Math.max(x(windowSel.to + 1) - x(windowSel.from), 2)}" height="${height - AXIS_H + 4}"/>`
       : '';
-    svg.innerHTML = `<defs><clipPath id="${clipId}"><rect x="${labelW()}" y="0" width="${plotW + 8}" height="${height}"/></clipPath></defs>
+    // fading edges (TimelineRow.fade): masks over the bar's own box, a fifth of it at each rough end
+    const ramp = (id: string, stops: [number, number][]) => `<linearGradient id="${clipId}-g${id}">${stops.map(([o, a]) => `<stop offset="${o}" stop-color="#fff" stop-opacity="${a}"/>`).join('')}</linearGradient>
+      <mask id="${clipId}-fade-${id}" maskContentUnits="objectBoundingBox"><rect width="1" height="1" fill="url(#${clipId}-g${id})"/></mask>`;
+    svg.innerHTML = `<defs><clipPath id="${clipId}"><rect x="${labelW()}" y="0" width="${plotW + 8}" height="${height}"/></clipPath>
+      ${ramp('s', [[0, 0], [0.2, 1], [1, 1]])}${ramp('e', [[0, 1], [0.8, 1], [1, 0]])}${ramp('se', [[0, 0], [0.2, 1], [0.8, 1], [1, 0]])}</defs>
       <rect class="axis-band" x="${labelW()}" y="0" width="${plotW + 8}" height="${AXIS_H}"/>
       <g clip-path="url(#${clipId})">${ticks.join('')}${win}${bars.join('')}</g>
       <g>${labels.join('')}</g>`;
@@ -308,7 +338,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     /** New rows (the selection changed): same controls, window and typed years; a zoomed view stays where it was. */
     setRows(next: TimelineRow[]) {
       const zoomed = v0 > min + 0.01 || v1 < max - 0.01;
-      ({ min, max, placed, height } = layout(next));
+      ({ min, max, placed, height } = layout(next, opts.keepOrder, opts.extent));
       if (zoomed) setView(v0, v1);
       else setView(min, max);
     },

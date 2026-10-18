@@ -11,6 +11,8 @@ export type Route =
   | { name: 'detail'; plural: Plural; key: string }
   | { name: 'graph'; plural?: Plural; slug?: string; params: URLSearchParams }
   | { name: 'privacy' }
+  /** When and where styles and periods were active (API 100): /periods?regions=italy,france&phases=0&from=1600&to=1700 */
+  | { name: 'periods'; params: URLSearchParams }
   | { name: 'numbers'; params: URLSearchParams }
   | { name: 'search'; params: URLSearchParams }
   /** Through whose hands works went in a window (API 088): /provenance/1933-1945. */
@@ -25,6 +27,7 @@ export function parse(pathname: string, search: string): Route {
   const query = new URLSearchParams(search);
   if (!parts.length || (parts.length === 1 && parts[0] === 'index.html')) return { name: 'explore', params: query };
   if (parts.length === 1 && parts[0] === 'privacy') return { name: 'privacy' };
+  if (parts.length === 1 && parts[0] === 'periods') return { name: 'periods', params: query };
   if (parts.length === 1 && parts[0] === 'provenance-numbers') return { name: 'numbers', params: query };
   if (parts.length === 1 && parts[0] === 'search') return { name: 'search', params: query };
   if (parts[0] === 'provenance' && parts.length <= 2) {

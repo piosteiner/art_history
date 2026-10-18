@@ -4,6 +4,7 @@ const { router: entities, ENTITIES } = require('./entities');
 const map = require('./map');
 const graph = require('./graph');
 const network = require('./network');
+const periods = require('./periods');
 const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
@@ -216,6 +217,7 @@ router.use((req, res, next) => {
 router.use('/map', map);
 router.use('/graph', graph);
 router.use('/network', network);
+router.use('/periods', periods);
 router.use('/history', history);
 router.use(entities);
 

@@ -671,3 +671,33 @@ export interface EncounterRow {
 /** `GET /v1/map/clusters`: places with presence grouped for a zoom; `bbox` [w, s, e, n] to zoom into. */
 export interface ClusterProps { cluster: number; places: number; presence: number; top: { slug: string; name: string; presence: number }[] }
 export interface ClustersMap { type: 'FeatureCollection'; features: (Feature<PointGeometry, ClusterProps> & { bbox: [number, number, number, number] })[] }
+
+/** GET /v1/periods (API 100): styles, movements and periods with where and when each was active. */
+export interface PeriodSpan {
+  place: string;
+  period: DateRange;
+  fuzzy: { start: boolean; end: boolean };
+}
+export interface PeriodWork {
+  slug: string;
+  public_id: number | null;
+  title: string;
+  creator: string | null;
+  created: DateRange | null;
+}
+export interface Period {
+  slug: string;
+  public_id: number | null;
+  name: string;
+  kind: 'style' | 'movement' | 'period' | 'school';
+  parent: string | null;
+  period: DateRange | null;
+  /** false: drafted, not yet reviewed (marked "to complete" in the admin) */
+  reviewed: boolean;
+  spans: PeriodSpan[];
+  works: PeriodWork[];
+}
+export interface Periods {
+  lanes: { slug: string; name: string; public_id: number | null }[];
+  periods: Period[];
+}
