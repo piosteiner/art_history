@@ -29,7 +29,7 @@ test('a new entry\'s unsaved form survives leaving the page', async ({ userA }) 
   await expect(userA.locator('#f-name')).toHaveValue('Impressionism');
   await submitForm(userA);
   await expect(userA).toHaveURL(/\/movements\/impressionism\?done=created/);
-  expect(sql('SELECT count(*) FROM admin_drafts')).toBe('0');
+  await expect.poll(() => sql("SELECT count(*) FROM admin_drafts WHERE entity_type = 'movement'")).toBe('0');  // only its own: other specs leave drafts of other kinds
 });
 
 test('two editors type into the same text at the same time and converge', async ({ userA, userB }) => {
