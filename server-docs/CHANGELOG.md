@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Periods timeline: the page (frontend)
+- **What:** `/periods` (frontend/src/views/periods.ts, menu "Periods"): one lane per region (Europe, then the European
+  regions, then the others), styles with their phases indented, approximate limits fading out, drafts (not yet
+  reviewed) outlined dashed; "In the collection": the span of each period's works with a dot per work (links to the
+  work). A clicked bar or a dragged / typed window lists the periods active then and the collection's works of those
+  years with their most specific period. Regions, phases and the window are kept in the address. The timeline
+  component (timeline.ts) gained optional fades, drafts, dots, indented rows, thin bars and keeping the rows' order.
+  The API's lane order uses a boundary's label point too (Germany, Austria have only a boundary code). Test in
+  frontend/tests/site.spec.ts.
+- **Why:** owner: a timeline of the art-historical periods (steps 2 and 3).
+- **Revert:** `git revert` the frontend commit (the API stays harmless).
+
 ### Periods timeline: API and data
 - **What:** migration `100_movement_works.sql` — view `movement_works`: a movement's artworks (associated directly, or
   through their artist if made while it lasted; a style collects its parts). `101_movement_drafts.sql` — view

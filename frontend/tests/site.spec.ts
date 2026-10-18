@@ -1988,3 +1988,27 @@ test('in a time window a numbered stop opens the place\'s popup: one popup with 
   await expect(popup.locator('.popup-steps-block ol li').first()).toHaveAttribute('value', label.split(/[,–]/)[0].trim());
   await expect(popup.locator('.popup-steps-block')).toContainText('Ambroise Vollard');
 });
+
+test('periods: lanes per region, phases, a region hidden, a window lists the works of those years', async ({ page }) => {
+  const errors = noErrors(page);
+  await page.goto('/periods');
+  await expect(page.locator('h1')).toHaveText('Periods');
+  await expect(page.locator('.group-label', { hasText: 'Europe' })).toBeVisible();
+  await expect(page.locator('.row-label', { hasText: 'Baroque' }).first()).toBeVisible();
+  await expect(page.locator('.row-label-sub').first()).toBeVisible();   // a phase, indented under its style
+  // a region hidden; phases off — kept in the address
+  await page.click('.periods-controls button[data-lane="japan"]');
+  await expect(page.locator('.group-label', { hasText: 'Japan' })).toHaveCount(0);
+  await expect(page).toHaveURL(/regions=/);
+  await page.uncheck('.periods-phases input');
+  await expect(page.locator('.row-label-sub')).toHaveCount(0);
+  await expect(page).toHaveURL(/phases=0/);
+  // a window: the periods and the collection's works of those years
+  await page.fill('input[name=from]', '1880');
+  await page.fill('input[name=to]', '1890');
+  await page.press('input[name=to]', 'Enter');
+  await expect(page.locator('#periods-window h2')).toHaveText('1880–1890');
+  await expect(page.locator('.periods-active a').first()).toBeVisible();
+  await expect(page.locator('.periods-works li').first()).toBeVisible();
+  expect(errors).toEqual([]);
+});

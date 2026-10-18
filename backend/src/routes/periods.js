@@ -28,9 +28,10 @@ router.get('/', async (req, res) => {
       ORDER BY lower(m.period) NULLS LAST, m.name`),
     apiPool.query(`
       SELECT r.subject_id AS movement_id, l.slug AS place, l.name AS place_name, l.public_id AS place_public_id,
-             -- in Europe (roughly: its point or the centre of its outline): the European lanes come before the others
-             coalesce(ST_X(coalesce(l.location, ST_Centroid(l.area))::geometry) BETWEEN -25 AND 45
-                  AND ST_Y(coalesce(l.location, ST_Centroid(l.area))::geometry) BETWEEN 34 AND 72, false) AS european,
+             -- in Europe (roughly): the European lanes come before the others
+             -- (its point, the centre of its outline, or its boundary's label point: Germany has only a boundary code)
+             coalesce((SELECT ST_X(g::geometry) BETWEEN -25 AND 45 AND ST_Y(g::geometry) BETWEEN 34 AND 72
+                       FROM (SELECT coalesce(l.location, ST_Centroid(l.area), (SELECT b.label_point FROM boundaries b WHERE b.code = l.boundary_code)) AS g) x), false) AS european,
              range_json(r.period, r.period_label) AS period, r.period_label AS label, lower(r.period) AS starts
       FROM relationships r JOIN places l ON l.id = r.object_id
       WHERE r.subject_type = 'movement' AND r.relationship_type = 'active_in' AND r.object_type = 'place' AND r.period IS NOT NULL`),
