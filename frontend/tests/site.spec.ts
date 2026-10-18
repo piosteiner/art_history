@@ -494,18 +494,17 @@ test('start map: routes of the selection, a place lists what happened there', as
 
 test('artwork map: the provenance in chain order — numbered stops, segments with steps passed over, unplaced steps', async ({ page }) => {
   await page.goto('/artworks/heiliger-sebastian');
-  // Frankfurt (2, 3), London (4), Zürich (6–9: Bührle, his estate, the foundation, the loan to the Kunsthaus)
+  // Ulm (1: made where Weckmann worked), Frankfurt (2, 3), London (4), Zürich (6–9: Bührle, his estate, the
+  // foundation, the loan to the Kunsthaus)
   const stops = page.locator('.prov-stop');
-  await expect(stops).toHaveText(['2, 3', '4', '6–9']);
+  await expect(stops).toHaveText(['1', '2, 3', '4', '6–9']);
   const legend = page.locator('#legend');
   await expect(legend).toContainText('numbered in the provenance\'s order');
   await expect(legend).not.toContainText('route, in date order'); // replaced, not drawn twice
   const unplaced = page.locator('#unplaced li'); // one per line, numbered with the step
-  await expect(unplaced).toHaveCount(2);
-  await expect(unplaced.nth(0)).toHaveAttribute('value', '1');
-  await expect(unplaced.nth(0)).toContainText('Niklaus Weckmann, creation, early 16th century');
-  await expect(unplaced.nth(1)).toHaveAttribute('value', '5');
-  await expect(unplaced.nth(1)).toContainText('Estate of Hedwig Frieda Ullmann');
+  await expect(unplaced).toHaveCount(1);
+  await expect(unplaced.nth(0)).toHaveAttribute('value', '5');
+  await expect(unplaced.nth(0)).toContainText('Estate of Hedwig Frieda Ullmann');
 
   await stops.filter({ hasText: '6–9' }).click();
   const popup = page.locator('.maplibregl-popup');
@@ -552,8 +551,8 @@ test('artwork map (077): a step with further places — a stop at each, the move
   });
   await page.goto('/artworks/heiliger-sebastian');
   const stops = page.locator('.prov-stop');
-  await expect(stops).toHaveText(['2, 3', '4', '4', '6–9']);
-  await stops.nth(2).click();
+  await expect(stops).toHaveText(['1', '2, 3', '4', '4', '6–9']);
+  await stops.nth(3).click();   // the second "4": Paris
   const popup = page.locator('.maplibregl-popup');
   await expect(popup).toContainText('Paris');
   await expect(popup.locator('.tag', { hasText: 'moved here' })).toBeVisible();
@@ -588,12 +587,12 @@ test('artwork map (077): a step with further places — a stop at each, the move
 test('start map: a chosen artwork shows its provenance as on its own page, in its colour', async ({ page }) => {
   await page.goto('/?artworks=heiliger-sebastian');
   const stops = page.locator('.prov-stop');
-  await expect(stops).toHaveText(['2, 3', '4', '6–9']);
+  await expect(stops).toHaveText(['1', '2, 3', '4', '6–9']);
   expect(await stops.first().evaluate((el) => el.style.getPropertyValue('--pc'))).not.toBe(''); // the selection's colour
   const legend = page.locator('#legend');
   await expect(legend).toContainText('in the provenance\'s order');
-  await expect(legend.locator('.unplaced li')).toHaveCount(2);
-  await stops.filter({ hasText: '4' }).click();
+  await expect(legend.locator('.unplaced li')).toHaveCount(1);
+  await stops.filter({ hasText: /^4$/ }).click();
   const popup = page.locator('.maplibregl-popup');
   await expect(popup).toContainText('Heiliger Sebastian'); // named: several entries can be on the map
   await expect(popup).toContainText('Arthur Kauffmann');
@@ -633,6 +632,8 @@ test('start map overview: artworks follow their provenance (chain order, dashed 
   expect(sebastian.every((f) => f.style !== 'route')).toBe(true); // segments of the provenance
   expect(features.some((f) => f.style === 'gap')).toBe(true); // somewhere a handover isn't documented
   await expect(page.locator('#legend')).toContainText('artworks: their provenance in its order');
+  const more = page.locator('#legend [data-legend-all]'); // the first 12 routes are named, the rest behind "+ N more"
+  if (await more.count()) await more.click();
   await expect(page.locator('#legend .route-key', { hasText: 'Heiliger Sebastian' })).toHaveCount(1); // one entry, not one per segment
 });
 
@@ -713,7 +714,7 @@ test('home page: the first curated view, a switcher; changing the window makes t
 
   await nav.getByRole('link', { name: 'A provenance' }).click();
   await expect(page).toHaveURL(/\?featured=sebastian$/);
-  await expect(page.locator('.prov-stop')).toHaveText(['2, 3', '4', '6–9']);
+  await expect(page.locator('.prov-stop')).toHaveText(['1', '2, 3', '4', '6–9']);
   await expect(page.locator('#featured-intro h2')).toHaveText('A provenance');
 
   await page.fill('input[name=from]', '1950');
@@ -1363,7 +1364,7 @@ test('artwork map (078): a "?" with the years mid-segment, red in 1933–1945; t
     prov.gaps = [g, { ...g, period: span('1899-01-01', '1912-12-31'), in_1933_1945: false, candidates: [] }];
   });
   await page.goto('/artworks/heiliger-sebastian');
-  const marker = page.locator('.prov-gap:not(.prov-gap-key)');
+  const marker = page.locator('.prov-gap:not(.prov-gap-key)', { hasText: '1934–1946' });   // (the live data has gaps of its own)
   await expect(marker).toHaveCount(1);
   await expect(marker).toHaveText('? 1934–1946');
   await expect(marker).toHaveClass(/ns/);

@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Frontend tests: brought up to today's data (the Pages build had failed since 10:56)
+- **What:** frontend/tests/site.spec.ts — Heiliger Sebastian's creation is placed now (Niklaus Weckmann worked in Ulm,
+  from the Wikidata review of 18 October 2026, 10:00): its maps show a stop "1" and one unplaced step instead of two;
+  the overview's legend names 12 routes before "+ N more" (18 more works have a provenance since the Kunsthaus
+  import); the gap test finds its marker by its text (the live data has gaps of its own). All 116 pass.
+- **Why:** the Pages workflow runs these against the live API; two builds failed on them, so the site had not been
+  updated since this morning (the "planned" provenance tag, the periods page).
+- **Revert:** `git revert` (the old expectations fail against the current data).
+
 ### Periods timeline: the page (frontend)
 - **What:** `/periods` (frontend/src/views/periods.ts, menu "Periods"): one lane per region (Europe, then the European
   regions, then the others), styles with their phases indented, approximate limits fading out, drafts (not yet
