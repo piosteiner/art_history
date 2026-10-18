@@ -9,6 +9,8 @@ test.afterAll(() => {
   sql(`DELETE FROM artworks WHERE slug LIKE 'test-term-%';
        DELETE FROM auto_created WHERE entity_type = 'term' AND entity_id IN (SELECT id FROM glossary WHERE slug IN ('lacquer-painting-test', 'lackmalerei'));
        DELETE FROM glossary WHERE slug IN ('lacquer-painting-test', 'lackmalerei');
+       DELETE FROM auto_created WHERE entity_type = 'term' AND entity_id IN (SELECT id FROM glossary WHERE slug = 'testschnitt');
+       DELETE FROM glossary WHERE slug = 'testschnitt';
        UPDATE glossary SET name = 'woodblock print' WHERE slug = 'woodblock-print'`);
 });
 
@@ -58,4 +60,23 @@ test('a new word becomes a term to translate; a phrase is sorted out on the batc
   await expect(userA.locator('.flash.ok', { hasText: 'Saved' })).toContainText('1 artwork changed');
   expect(sql("SELECT array_to_string(materials, ', ') FROM artworks WHERE slug = 'test-term-box'")).toBe('oil paint, canvas');
   await expect(userA.locator('form.term-fix', { hasText: 'Öl auf Leinwand' })).toHaveCount(0);
+});
+
+test('an entry whose stored type has no term yet saves: the new term touching the row is no conflict; a real one is', async ({ userA }) => {
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-title', 'Test Term Stored');
+  await userA.fill('#f-kind', 'woodblock print');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/artworks\/test-term-stored\?done=created/);
+  // stored before 071, or by an import: a word that is no term yet
+  sql("UPDATE artworks SET kind = 'Testschnitt', kind_term_id = NULL WHERE slug = 'test-term-stored'");
+  await userA.goto('/artworks/test-term-stored/edit');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/artworks\/test-term-stored\?done=published/);
+  expect(sql("SELECT g.slug FROM artworks w JOIN glossary g ON g.id = w.kind_term_id WHERE w.slug = 'test-term-stored'")).toBe('testschnitt');
+  // someone else saved meanwhile: still refused
+  await userA.goto('/artworks/test-term-stored/edit');
+  sql("UPDATE artworks SET title = 'Test Term Stored' WHERE slug = 'test-term-stored'");
+  await submitForm(userA);
+  await expect(userA.locator('body')).toContainText('Someone saved this record while you were editing');
 });

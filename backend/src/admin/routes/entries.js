@@ -181,6 +181,18 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
   try {
     await withTx(user, async (db) => {
       const idOf = async (type, s) => (await db.query('SELECT entity_id($1, $2) AS id', [type, s])).rows[0].id;
+      // Optimistic locking: only if nobody saved this row since the form was opened. Checked first, and the row
+      // locked until the end — the save itself may touch it before its UPDATE: a new glossary term for its type or
+      // material relinks the artworks using that word (trigger glossary_relink_artworks, 071), this one too.
+      const refused = async () => {
+        // row-level security (094) hides the row from an account limited to other collections: no row, no error
+        if (t.type === 'artwork' && !(await db.query('SELECT may_edit_artwork($1) AS ok', [existing.id])).rows[0].ok) {
+          throw new UserError('Your account may change only artworks of its own collections — this one belongs to another collection, or to none.');
+        }
+        throw new UserError('Someone saved this record while you were editing. Open it again to see their changes, then redo yours.');
+      };
+      if (existing && !(await db.query(`SELECT 1 FROM ${t.table} WHERE id = $1 AND updated_at::text = $2 FOR UPDATE`,
+        [existing.id, String(body.version || '')])).rows.length) await refused();
       const newSlugs = await autocreate.create(db, auto.creates);
       for (const [key, s] of newSlugs) {
         if (key === 'parent') row.parent = s; else row.refs.find((r) => r.col === REF_COLUMNS[key]).slug = s;
@@ -240,18 +252,12 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
       }
       for (const c of created) await autocreate.flag(db, c.type, c.id, { type: t.type, id: existing.id }, user.id);
       await autocreate.unflag(db, t.type, existing.id);  // published by someone: no longer "to complete"
-      // Optimistic locking: only if nobody saved this row since the form was opened.
-      values.push(existing.id, String(body.version || ''));
+      // the version was checked and the row locked at the start of the transaction
+      values.push(existing.id);
       const { rowCount } = await db.query(`
         UPDATE ${t.table} SET slug = $1, ${names.map((c, i) => `${c} = ${exprs[i]}`).join(', ')}
-        WHERE id = $${values.length - 1} AND updated_at::text = $${values.length}`, values);
-      if (!rowCount) {
-        // row-level security (094) hides the row from an account limited to other collections: no row, no error
-        if (t.type === 'artwork' && !(await db.query('SELECT may_edit_artwork($1) AS ok', [existing.id])).rows[0].ok) {
-          throw new UserError('Your account may change only artworks of its own collections — this one belongs to another collection, or to none.');
-        }
-        throw new UserError('Someone saved this record while you were editing. Open it again to see their changes, then redo yours.');
-      }
+        WHERE id = $${values.length}`, values);
+      if (!rowCount) await refused();
       await citations.settle(db, t.type, existing.id, body, user.id);
       await createdIn(existing.id);
     });

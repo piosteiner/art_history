@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Fix: "Someone saved this record while you were editing" on artworks nobody else had touched
+- **What:** `saveEntity` (src/admin/routes/entries.js) checks the version — and locks the row — at the start of the
+  transaction instead of in the final UPDATE. Before, an artwork whose stored type or material had no glossary term yet
+  (e.g. "woodcut" on `l-univers-est-cree`) could never be saved: the save creates the term, its trigger
+  `glossary_relink_artworks` (071) touches the artworks using that word — this one too, bumping `updated_at` — and the
+  UPDATE's `updated_at = version` then found no row. Rolled back, so the next try failed the same way. Test in
+  terms.spec.js (a real concurrent save is still refused).
+- **Why:** 2 × 422 on POST /artworks/l-univers-est-cree (11:12, 11:17 UTC).
+- **Revert:** `git revert` the commit.
+
 ### Planned provenance: future dates allowed, with a reminder after the day
 - **What:** migration `096_provenance_planned.sql` — column `provenance.check_after` (the last day of a step's latest
   future date; backfilled for the steps already dated after today, e.g. "Fleurs dans une coupe", Sotheby's New York,
