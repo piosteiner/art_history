@@ -315,7 +315,7 @@ const REL_PROPS = {
   event: [['P710', '~participated_in'], ['P921', 'concerns']],
   polity: [],
   term: [],
-  institution: [['P112', '~founded']],  // founded by (054): the founders, people or institutions
+  institution: [['P112', '~founded'], ['P361', 'part_of']],  // founded by (054): the founders, people or institutions; part of (097): its authority
   place: [],
 };
 function relsFor(t, e) {

@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Relationship "part of" / "includes" between institutions
+- **What:** migration `097_institution_part_of.sql` — relationship type `part_of` (institution → institution): a museum of
+  a museum authority (the Pinakotheken, Sammlung Schack, Museum Brandhorst ⊂ Bayerische Staatsgemäldesammlungen). The
+  Wikidata review of an institution suggests it from P361. Test: partof.spec.js.
+- **Why:** the Munich museums and their authority could not be modelled.
+- **Revert:** `DELETE FROM relationships WHERE relationship_type = 'part_of'; DELETE FROM relationship_types WHERE code = 'part_of'`, `git revert`.
+
 ### Fix: "Someone saved this record while you were editing" on artworks nobody else had touched
 - **What:** `saveEntity` (src/admin/routes/entries.js) checks the version — and locks the row — at the start of the
   transaction instead of in the final UPDATE. Before, an artwork whose stored type or material had no glossary term yet
