@@ -12,7 +12,7 @@ import { syntaxHighlighting, HighlightStyle, LanguageSupport } from '@codemirror
 // Just the Markdown (GFM) grammar — markdown() would also bundle HTML/CSS/JS highlighting for code blocks (~150 KB).
 import { markdownLanguage } from '@codemirror/lang-markdown';
 import { tags as t } from '@lezer/highlight';
-import { autocompletion } from '@codemirror/autocomplete';
+import { autocompletion, startCompletion } from '@codemirror/autocomplete';
 import { initAutocomplete } from './autocomplete';
 import { initLive } from './live';
 import { yCollab, yUndoManagerKeymap } from 'y-codemirror.next';
@@ -178,11 +178,19 @@ async function entryCompletions(context) {
     if (res.ok) hits = await res.json();
   } catch { return null; }
   const after = context.state.sliceDoc(context.pos, context.pos + 2);  // "]]" already typed after the cursor?
+  // from a selected word (selectionLink): the text as written stays the link's own words ("Hokusai's" →
+  // [[artist/katsushika-hokusai|Hokusai's]]); the same as the entry's name: no own words
+  const label = linkLabel && linkLabel.from === m.from && linkLabel.text === m.text.slice(2) ? linkLabel.text : null;
+  if (!label) linkLabel = null;
+  const target = (h) => {
+    const ref = h.type === 'term' ? h.slug : `${h.type}/${h.slug}`;
+    return label && label !== h.name ? `[[${ref}|${label}]]` : `[[${ref}]]`;
+  };
   const options = hits.map((h) => ({
     label: h.name,
     detail: [h.type === 'term' ? 'glossary' : h.type, h.period_label].filter(Boolean).join(' · '),
     type: 'text',
-    apply: h.type === 'term' ? `[[${h.slug}]]` : `[[${h.type}/${h.slug}]]`,
+    apply: target(h),
   }));
   // nothing of that exact name: "+ Create …" — as in Obsidian, a link to what doesn't exist yet makes it.
   // "[[person/james-cook" → a person "James Cook" at once; "[[James Cook" → its type chosen in a small box.
@@ -199,6 +207,29 @@ async function entryCompletions(context) {
 }
 
 const fold = (t) => foldText(t).trim();  // accents and special letters off (src/fold.js)
+
+// A name written without a link is selected and "[" typed: it becomes [[name]] and the [[ suggestions open, searched for
+// it (the typo-tolerant /lookup); picking an entry keeps the text as written, Escape leaves [[name]] as typed (to
+// finish by hand or undo). Spaces at the selection's ends stay outside; nothing happens over several lines or
+// brackets. "[" on any keyboard layout (AltGr on Swiss and German ones), so an input handler rather than a key binding.
+let linkLabel = null;  // { from, text } while the suggestions for a selection are open
+function selectionLink(view) {
+  const sel = view.state.selection.main;
+  if (sel.empty) return false;
+  let { from, to } = sel;
+  const raw = view.state.sliceDoc(from, to);
+  if (/[\n[\]|]/.test(raw)) return false;
+  from += raw.length - raw.trimStart().length;
+  to -= raw.length - raw.trimEnd().length;
+  const text = view.state.sliceDoc(from, to);
+  if (!text) return false;
+  view.dispatch({ changes: { from, to, insert: `[[${text}]]` }, selection: { anchor: from + 2 + text.length }, userEvent: 'input' });
+  linkLabel = { from, text };
+  view.focus();
+  startCompletion(view);
+  return true;
+}
+const bracketOverSelection = EditorView.inputHandler.of((view, from, to, text) => text === '[' && from !== to && selectionLink(view));
 // "james-cook" (a slug typed by hand) → "James Cook"; anything else as typed
 const nameOfTyped = (q) => (/^[a-z0-9]+(-[a-z0-9]+)+$/.test(q) ? q.split('-').map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ') : q.replace(/\s+/g, ' '));
 const TYPE_NAME = { person: 'Person', artist: 'Artist', artwork: 'Artwork', institution: 'Institution', place: 'Place',
@@ -324,6 +355,7 @@ function enhance(textarea, collab = null) {
         underlines,
         EditorView.lineWrapping,
         autocompletion({ override: [entryCompletions], icons: false }),
+        bracketOverSelection,
         theme,
         placeholder(textarea.placeholder || 'Write here — Markdown styling appears as you type.'),
         EditorView.contentAttributes.of({ 'aria-label': textarea.getAttribute('aria-label') || textarea.id || 'Markdown', spellcheck: 'true' }),

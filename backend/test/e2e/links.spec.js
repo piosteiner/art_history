@@ -39,6 +39,37 @@ test('[[ completes entries of every type; the link is shown, rendered by the API
   sql("UPDATE artists SET biography_md = regexp_replace(biography_md, ' Admired .*$', '') WHERE slug = 'paul-gauguin'");
 });
 
+test('a selected name and "[" make a link: the suggestions searched for it, the text kept as written', async ({ userA }) => {
+  await userA.goto('/artists/paul-gauguin/edit');
+  await liveReady(userA);
+  const field = () => userA.evaluate(() => document.querySelector('#f-biography_md').value);
+  const cm = userA.locator('.md-editor .cm-content').first();
+  await cm.click();
+  await userA.keyboard.press('Control+End');
+  await userA.keyboard.type(' He admired Hokusai ', { delay: 10 });
+  // select "Hokusai " (with the space after it: it stays outside the link) and type "["
+  await userA.keyboard.press('Shift+Control+ArrowLeft');
+  await userA.keyboard.type('[');
+  await expect.poll(field).toMatch(/He admired \[\[Hokusai\]\] $/);
+  await expect(userA.locator('.cm-tooltip-autocomplete li').first()).toContainText('Katsushika Hokusai');
+  await userA.waitForTimeout(200);  // CodeMirror ignores Enter for a moment after the list opens
+  await userA.keyboard.press('Enter');
+  await expect.poll(field).toMatch(/He admired \[\[artist\/katsushika-hokusai\|Hokusai\]\] $/);
+  // the entry's own name: no words of its own; "[" as the keyboard sends it on a Swiss layout (AltGr + ü) works too
+  await userA.keyboard.press('End');  // after the space that stayed outside the link
+  await userA.keyboard.type('in Paris', { delay: 10 });
+  await userA.keyboard.press('Shift+Control+ArrowLeft');
+  await userA.keyboard.insertText('[');
+  await expect(userA.locator('.cm-tooltip-autocomplete li').first()).toContainText('Paris');
+  await userA.waitForTimeout(200);
+  await userA.keyboard.press('Enter');
+  await expect.poll(field).toMatch(/\|Hokusai\]\] in \[\[place\/paris\]\]$/);
+  // no selection: "[" is just "["
+  await userA.keyboard.type(' [');
+  await expect.poll(field).toMatch(/\[\[place\/paris\]\] \[$/);
+  sql("UPDATE artists SET biography_md = regexp_replace(biography_md, ' He admired .*$', '') WHERE slug = 'paul-gauguin'");
+});
+
 test('a link to a missing entry is shown as such and reported on the quality page', async ({ userA }) => {
   sql("UPDATE artworks SET description_md = 'After [[artwork/no-such-work|a lost print]].' WHERE slug = 'plum-park-in-kameido'");
   await userA.goto('/artworks/plum-park-in-kameido');

@@ -2,6 +2,23 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-18
+
+### Admin editor: a selected name and "[" make a link
+- **What:** `backend/src/admin/editor/editor.js` — typing "[" over a selection turns it into `[[text]]` and opens the
+  `[[` suggestions searched for it; picking an entry keeps the text as written (`[[artist/katsushika-hokusai|Hokusai]]`).
+  An input handler, so it works for "[" on any keyboard layout. e2e test in `test/e2e/links.spec.js`.
+- **Why:** owner: linking names written without a link took retyping them (same feature in the Adenai editor).
+- **Revert:** remove `bracketOverSelection` from the editor's extensions; `npm run build:admin` via `deploy.sh`.
+
+### Adenai CMS: classic CMS retired; players' proposals
+- **What:** adenai-cms redirects `/` to `/v2/` (classic `admin-interface/{index.html,css,js,images}` removed); v2 has
+  Media, History (`/api/changelog/history`) and Overview with exports (`/api/protocols/export`, CMS login).
+  New private file `adenai-map/server/data/pending-entries.json` (entries players propose on the map, mode 600,
+  git-ignored, `/api/pending`) added to `scripts/backup.sh`.
+- **Why:** owner: one CMS; players create entries from the minutes that the DM confirms.
+- **Revert:** revert the adenai-map commits; the classic files are in its git history.
+
 ## 2026-10-17
 
 ### Adenai: session minutes (private, on this server)
