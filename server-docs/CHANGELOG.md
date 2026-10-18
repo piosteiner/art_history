@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### A museum authority's provenance is "ongoing" at its museums
+- **What:** migration `098_institution_holds.sql` — function `institution_holds(owner, museum)` (the museum itself, or an
+  institution it is part of, 097); `provenance_periods` uses it for "ongoing", the quality check `provenance_last_owner`
+  for "ends with …, but the work is at …". A provenance ending with the Bayerische Staatsgemäldesammlungen while the
+  work is at the Neue Pinakothek no longer ends "unknown" (a gap up to today) nor is reported. Test: partof.spec.js.
+- **Why:** the Munich works are owned by the authority, kept in its museums.
+- **Revert:** a migration restoring both views from 097 (`pg_get_viewdef` before 098 = 084/093) and `DROP FUNCTION institution_holds`.
+
 ### Relationship "part of" / "includes" between institutions
 - **What:** migration `097_institution_part_of.sql` — relationship type `part_of` (institution → institution): a museum of
   a museum authority (the Pinakotheken, Sammlung Schack, Museum Brandhorst ⊂ Bayerische Staatsgemäldesammlungen). The
