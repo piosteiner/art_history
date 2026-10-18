@@ -9,7 +9,7 @@ const router = express.Router();
 
 // "c. 1700–late 18th century": is the start / the end only approximate? (circa, a century or its part, a decade,
 // "or earlier" …) — the timeline fades such an edge instead of drawing a hard one.
-const ROUGH = /(?:^|[\s(])(?:c|ca)\.|\b(?:circa|century|early|mid|late|first half|second half|or earlier|or later|before|after|until|since)\b|\d0s\b/i;
+const ROUGH = /(?:^|[\s(])(?:c|ca)\.|\b(?:circa|century|early|mid|late|first half|second half|or earlier|or later|before|after|until|since)\b|\d0s\b|\b\d{1,2}(?:st|nd|rd|th)\b/i;
 function fuzzy(label) {
   if (!label) return { start: false, end: false };
   const [a, b] = String(label).split(/\s*–\s*/);
@@ -28,6 +28,9 @@ router.get('/', async (req, res) => {
       ORDER BY lower(m.period) NULLS LAST, m.name`),
     apiPool.query(`
       SELECT r.subject_id AS movement_id, l.slug AS place, l.name AS place_name, l.public_id AS place_public_id,
+             -- in Europe (roughly: its point or the centre of its outline): the European lanes come before the others
+             coalesce(ST_X(coalesce(l.location, ST_Centroid(l.area))::geometry) BETWEEN -25 AND 45
+                  AND ST_Y(coalesce(l.location, ST_Centroid(l.area))::geometry) BETWEEN 34 AND 72, false) AS european,
              range_json(r.period, r.period_label) AS period, r.period_label AS label, lower(r.period) AS starts
       FROM relationships r JOIN places l ON l.id = r.object_id
       WHERE r.subject_type = 'movement' AND r.relationship_type = 'active_in' AND r.object_type = 'place' AND r.period IS NOT NULL`),
@@ -42,13 +45,14 @@ router.get('/', async (req, res) => {
   const lanes = new Map();
   for (const s of spans.rows) {
     if (!ids.has(s.movement_id)) continue;
-    const lane = lanes.get(s.place) || { slug: s.place, name: s.place_name, public_id: s.place_public_id, starts: s.starts };
+    const lane = lanes.get(s.place) || { slug: s.place, name: s.place_name, public_id: s.place_public_id, starts: s.starts, european: s.european };
     if (s.starts && (!lane.starts || s.starts < lane.starts)) lane.starts = s.starts;
     lanes.set(s.place, lane);
   }
+  // Europe as a whole first, then the European lanes, then the others — each by its earliest span
   const ordered = [...lanes.values()].sort((a, b) => (a.slug === 'europe' ? -1 : b.slug === 'europe' ? 1 : 0)
-    || (a.starts ?? Infinity) - (b.starts ?? Infinity) || a.name.localeCompare(b.name))
-    .map(({ starts, ...l }) => l);
+    || Number(b.european) - Number(a.european) || (a.starts ?? Infinity) - (b.starts ?? Infinity) || a.name.localeCompare(b.name))
+    .map(({ starts, european, ...l }) => l);
   res.json({
     lanes: ordered,
     periods: periods.rows.map(({ id, ...p }) => ({

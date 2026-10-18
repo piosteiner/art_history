@@ -11,14 +11,19 @@ test('periods: lanes, spans with fuzzy edges, parts under their style, works thr
        INSERT INTO movements (slug, name, kind, period, period_label, parent_id) VALUES ('test-phase', 'Test Phase', 'style', '[1888-01-01,1890-01-01)', '1888–1889', entity_id('movement', 'test-style'));
        INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label) VALUES
          ('movement', entity_id('movement', 'test-style'), 'active_in', 'place', entity_id('place', 'france'), '[1875-01-01,1901-01-01)', 'c. 1880–late 19th century'),
-         ('movement', entity_id('movement', 'test-phase'), 'active_in', 'place', entity_id('place', 'france'), '[1888-01-01,1890-01-01)', '1888–1889');
+         ('movement', entity_id('movement', 'test-phase'), 'active_in', 'place', entity_id('place', 'france'), '[1888-01-01,1890-01-01)', '1888–1889'),
+         ('movement', entity_id('movement', 'test-style'), 'active_in', 'place', entity_id('place', 'japan'), '[1001-01-01,1201-01-01)', '11th–12th century');
        INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES
          ('artist', entity_id('artist', 'vincent-van-gogh'), 'associated_with', 'movement', entity_id('movement', 'test-phase'));`);
   let d = await api(request);
-  expect(d.lanes.map((l) => l.slug)).toContain('france');
+  // the European lanes first, then the others — Japan after France although its span starts earlier
+  const lanes = d.lanes.map((l) => l.slug);
+  expect(lanes.indexOf('france')).toBeGreaterThanOrEqual(0);
+  expect(lanes.indexOf('japan')).toBeGreaterThan(lanes.indexOf('france'));
   const style = d.periods.find((p) => p.slug === 'test-style');
   const phase = d.periods.find((p) => p.slug === 'test-phase');
-  expect(style.spans).toEqual([{ place: 'france', period: expect.objectContaining({ label: 'c. 1880–late 19th century' }), fuzzy: { start: true, end: true } }]);
+  expect(style.spans.find((s) => s.place === 'france')).toEqual({ place: 'france', period: expect.objectContaining({ label: 'c. 1880–late 19th century' }), fuzzy: { start: true, end: true } });
+  expect(style.spans.find((s) => s.place === 'japan').fuzzy).toEqual({ start: true, end: true });   // "11th–12th century"
   expect(phase.spans[0].fuzzy).toEqual({ start: false, end: false });
   expect(phase.parent).toBe('test-style');
   expect(style.reviewed).toBe(true);
