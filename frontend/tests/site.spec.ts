@@ -1997,6 +1997,8 @@ test('periods: lanes per region, phases, a region hidden, a window lists the wor
   await expect(page.locator('.group-label', { hasText: 'Europe' })).toBeVisible();
   await expect(page.locator('.row-label', { hasText: 'Baroque' }).first()).toBeVisible();
   await expect(page.locator('.row-label-sub').first()).toBeVisible();   // a phase, indented under its style
+  await expect(page.locator('.tl-dot').first()).toBeVisible();          // the collection's works on the period bars
+  await expect(page.locator('.group-label', { hasText: 'In the collection' })).toHaveCount(0);
   // a region hidden; phases off — kept in the address
   await page.click('.periods-controls button[data-lane="japan"]');
   await expect(page.locator('.group-label', { hasText: 'Japan' })).toHaveCount(0);
