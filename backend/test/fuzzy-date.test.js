@@ -136,3 +136,30 @@ test('forms provenance sources write: between … and …, Roman months, German 
   assert.deepStrictEqual(p('1.7.1949 or earlier'), ['(,1949-07-02)', '1 July 1949 or earlier']);
   assert.throws(() => parseFuzzyDate('32.13.1891'));   // no such month: left alone, then refused
 });
+
+test('ranges as people write them (099): any two forms, with -, –, " - ", "to"; open ends', () => {
+  const r = (s, o) => parseFuzzyDate(s, o);
+  for (const s of ['1900-1905', '1900–1905', '1900 - 1905', '1900 to 1905', '1900 – 1905']) {
+    assert.deepEqual(r(s), { range: '[1900-01-01,1906-01-01)', label: '1900–1905' }, s);
+  }
+  assert.equal(r('1900-05').label, 'May 1900');                                // YYYY-MM as before
+  assert.deepEqual(r('c. 1900–c. 1905'), { range: '[1895-01-01,1911-01-01)', label: 'c. 1900–c. 1905' });
+  assert.deepEqual(r('March 1900 – May 1905'), { range: '[1900-03-01,1905-06-01)', label: 'March 1900–May 1905' });
+  assert.equal(r('20 May 1890 – 29 July 1890').label, '20 May–29 July 1890');
+  assert.deepEqual(r('1880s–1890s'), { range: '[1880-01-01,1900-01-01)', label: '1880s–1890s' });
+  assert.equal(r('late 19th century–1920').range, '[1867-01-01,1921-01-01)');
+  assert.deepEqual(r('500 BCE'), { range: '[0500-01-01 BC,0499-01-01 BC)', label: '500 BCE' });
+  assert.equal(r('500 BCE–400 BCE').range, '[0500-01-01 BC,0399-01-01 BC)');
+  // open: Wikidata's "c. 965" start of a polity that still exists
+  assert.deepEqual(r('c. 965/', { openEnd: true }), { range: '[0960-01-01,)', label: 'since c. 965' });
+  assert.deepEqual(r('from 1900', { openEnd: true }), { range: '[1900-01-01,)', label: 'since 1900' });
+  assert.deepEqual(r('1900–', { openEnd: true }), { range: '[1900-01-01,)', label: 'since 1900' });
+  assert.throws(() => r('from 1900'), /only allowed for periods/);
+  assert.deepEqual(r('until 1905'), { range: '(,1906-01-01)', label: 'until 1905' });
+  assert.deepEqual(r('–1905'), { range: '(,1906-01-01)', label: 'until 1905' });
+  // still refused
+  assert.throws(() => r('1905-1900'), /end is before start/);
+  assert.throws(() => r('/1808', { openEnd: true }), /bad date/);
+  assert.throws(() => r('1900-13'), /bad month/);
+  assert.throws(() => r('nonsense'), /bad date/);
+});

@@ -158,6 +158,78 @@ function normalizeSourceForms(text) {
 
 function parseFuzzyDate(value, { openEnd = false } = {}) {
   if (value === null || value === undefined) return null;
+  try {
+    return parseOne(value, { openEnd });
+  } catch (err) {
+    // not one of the forms above (an invalid one keeps its message: end before start, year 0, "1200s", "1/2/3" …):
+    // perhaps two of them as a range, the way people write it (099)
+    if (!/\(expected YYYY|only allowed for periods/.test(err.message)) throw err;
+    const range = parseRange(String(value).replace(/\s+/g, ' ').trim(), { openEnd });
+    if (range) return range;
+    throw err;
+  }
+}
+
+// Ranges as written, each end any of the forms above (only for texts the forms above don't take — every date that
+// parsed before parses as before):
+//   1900-1905 · 1900–1905 · 1900 - 1905 · 1900 to 1905     [1900-01-01,1906-01-01)   "1900–1905"
+//   c. 1900–c. 1905 · March 1900 – May 1905 · 1880s–1890s · 12 March 1900–1905 · c. 965/1397
+//   1900– · from 1900 · since 1900 · c. 965/                  open end, only with { openEnd: true }   "since 1900"
+//   –1905 · until 1905 · till 1905                            known only from above                   "until 1905"
+//   500 BCE · 500 BCE–400 BCE                                 as the labels write it: -500 · -500/-400
+// "1900-05" stays May 1900 (YYYY-MM), as before.
+const SEPARATORS = [' / ', '/', ' – ', ' — ', ' - ', '–', '—', ' to ', ' until ', '-'];
+function parseRange(text, { openEnd }) {
+  if (/\bBCE?\b/i.test(text) && !/[-–—\/]|\sto\s/.test(text)) return parseSide(text);  // "500 BCE" alone
+  const from = /^(?:from|since)\s+(.+)$/i.exec(text);
+  if (from) return openRange(parseSide(from[1]), openEnd, text);
+  const until = /^(?:until|till|up to)\s+(.+)$/i.exec(text);
+  if (until) { const p = parseSide(until[1]); return p && { range: `(,${p.range.split(',')[1]}`, label: `until ${p.label}` }; }
+  for (const sep of SEPARATORS) {
+    for (let at = text.indexOf(sep); at >= 0; at = text.indexOf(sep, at + 1)) {
+      const [a, b] = [text.slice(0, at).trim(), text.slice(at + sep.length).trim()];
+      if (sep === '-' && /^\d{2}(?:-\d{2})?$/.test(b)) continue;  // 1900-05: a month, not a range
+      if (!a && (!b || sep === '/' || sep === ' / ' || sep === '-')) continue;  // an open start is "–1808"; "-500" is a year BCE, "/1808" an error
+      const left = a ? parseSide(a) : null;
+      const right = b ? parseSide(b) : null;
+      if ((a && !left) || (b && !right)) continue;
+      if (!b) return openRange(left, openEnd, text);
+      if (!a) return { range: `(,${right.range.split(',')[1]}`, label: `until ${right.label}` };
+      const lo = left.range.split(',')[0];
+      const hi = right.range.split(',')[1];
+      if (!lo.startsWith('(') && hi !== ')' && compareBounds(lo.slice(1), hi.slice(0, -1)) >= 0) {
+        throw new Error(`bad date "${text}": end is before start`);
+      }
+      return { range: `${lo},${hi}`, label: joinLabels(left.label, right.label) };
+    }
+  }
+  return null;
+}
+function parseSide(text) {
+  for (const t of [text, text.replace(/\b(\d{1,4})\s*(?:BCE|BC)\b/gi, '-$1')]) {  // "500 BCE", as the labels write it
+    try { return parseOne(t, { openEnd: false }); } catch { /* the next form */ }
+  }
+  return null;
+}
+function openRange(p, openEnd, text) {
+  if (!p) return null;
+  if (!openEnd) throw new Error(`bad date "${text}": an open end ("…/") is only allowed for periods`);
+  return { range: `${p.range.split(',')[0]},)`, label: `since ${p.label}` };
+}
+// "20 May 1890" + "29 July 1890" → "20 May–29 July 1890"; otherwise both as they are
+function joinLabels(a, b) {
+  const ya = /^(.*[A-Za-z]) (\d{1,4})$/.exec(a);
+  const yb = /^(.*[A-Za-z]) (\d{1,4})$/.exec(b);
+  const month = (x) => MONTHS.some((m) => x.includes(m));
+  if (ya && yb && ya[2] === yb[2] && month(ya[1]) && month(yb[1])) return `${ya[1]}–${b}`;
+  return `${a}–${b}`;
+}
+const compareBounds = (a, b) => {
+  const [x, y] = [parseBound(a), parseBound(b)];
+  return x.y - y.y || x.mo - y.mo || x.d - y.d;
+};
+
+function parseOne(value, { openEnd = false } = {}) {
   const raw = normalizeSourceForms(String(value).trim());
   // a moment known only from one side (provenance: "at the earliest from", "at least until"): an open range
   const later = LATER.exec(raw);

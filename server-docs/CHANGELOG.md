@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-18
 
+### Dates: ranges as people write them
+- **What:** `src/fuzzy-date.js` — a text none of the forms takes is tried as a range of two of them: "1900-1905",
+  "1900–1905", "1900 - 1905", "1900 to 1905", "c. 1900–c. 1905", "March 1900 – May 1905", "1880s–1890s", "c. 965/"; open
+  "from 1900", "1900–" (periods only), "until 1905", "–1905"; "500 BCE" as the labels write it. Every date that parsed
+  before parses as before (an invalid recognised form keeps its message); "1900-05" stays May 1900. Unit tests in
+  test/fuzzy-date.test.js, e2e test/e2e/dates.spec.js.
+- **Why:** the Wikidata review of Pola Gauguin failed on the polity "Kingdom of Denmark" ("c. 965/": a circa start, no
+  end) and refused everything; "1900-1905" in forms was refused.
+- **Revert:** `git revert` the commit (stored ranges are plain dateranges — nothing to migrate).
+
 ### A museum authority's provenance is "ongoing" at its museums
 - **What:** migration `098_institution_holds.sql` — function `institution_holds(owner, museum)` (the museum itself, or an
   institution it is part of, 097); `provenance_periods` uses it for "ongoing", the quality check `provenance_last_owner`
