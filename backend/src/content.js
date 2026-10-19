@@ -35,7 +35,7 @@ const TYPES = [
     name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', kind: 'text', occupations: 'text[]', birth: 'date', death: 'date', active: 'period',
     description_md: 'md', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },
   { type: 'institution', folder: 'institutions', table: 'institutions', name: 'name', fields: {
-    name: 'name', names: 'names', kind: 'text', founded: 'date', place: 'ref:place', location: 'point', address: 'text',
+    name: 'name', names: 'names', kind: 'text', founded: 'date', dissolved: 'date', place: 'ref:place', location: 'point', address: 'text',
     description_md: 'md', website_url: 'text', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },
   // events (migration 047): something that happened — when, where (city; exact spot or area), part of a larger event;
   // depicted, taken part in and concerned via relationships

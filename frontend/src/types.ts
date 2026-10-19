@@ -211,6 +211,8 @@ export interface ArtworkItem extends Located, Titled {
   provenance_category?: ProvenanceCategory | null;
   /** Destroyed, partly destroyed or lost (API 103); null while extant. */
   fate?: ArtworkFate['status'] | null;
+  /** The institutions that hold it now and those that held it before (provenance) — searchable in lists. */
+  holders?: { now: { slug: string; name: string }[]; before: { slug: string; name: string }[] } | null;
   /** How much of its life the provenance covers (API 078); `gap_1933_1945`: no holder known then — a list filter. */
   provenance_coverage?: { documented_percent: number | null; has_provenance: boolean; gap_1933_1945: boolean } | null;
   /** Materials, and every name of the type / material terms in every language, for searching (API migration 071). */
@@ -220,6 +222,8 @@ export interface PlaceItem extends Named { slug: string; name: string; kind: str
 export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
 export interface InstitutionItem extends Located, Named {
   slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null;
+  /** Closed / dissolved (API 106); null while it exists or not recorded. */
+  dissolved?: DateRange | null;
   location?: PointGeometry | null; // its own point (migration 034); else only its city's
 }
 /** Derived from relationships: commissioned / patron of, owner of an artwork, depicted in an artwork. */
@@ -438,6 +442,7 @@ export interface Movement extends DetailBase, Named {
 export interface Institution extends DetailBase, Located, Named {
   type: 'institution';
   name: string; alt_names: string[]; kind: string | null; founded: DateRange | null; website_url: string | null;
+  dissolved?: DateRange | null; // closed / dissolved (API 106)
   description_html: string | null;
   images: Image[]; image_url: string | null;
   place: (Ref & { location: PointGeometry | null }) | null;
@@ -587,7 +592,11 @@ export interface PresenceProps {
 export interface PresenceMap { type: 'FeatureCollection'; features: Feature<PointGeometry, PresenceProps>[] }
 
 /** Institutions and immovable artworks with an exact location of their own (`/v1/map/sites`). */
-export interface SiteProps { type: 'institution' | 'artwork'; slug: string; name: string; kind: string | null; address: string | null; place: Ref | null }
+export interface SiteProps {
+  type: 'institution' | 'artwork'; slug: string; name: string; kind: string | null; address: string | null; place: Ref | null;
+  /** When it existed, in years (API 106): founded (a building: made) … dissolved (destroyed); null = not known / still there. */
+  from_year?: number | null; to_year?: number | null;
+}
 export interface SitesMap { type: 'FeatureCollection'; features: Feature<GeoJSON.Geometry, SiteProps>[] }
 
 export interface PlaceCountProps { slug: string; name: string; kind: string | null; country_code: string | null; presence_count: number; association_count: number }

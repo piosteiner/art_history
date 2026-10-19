@@ -15,6 +15,8 @@ export interface Field {
   text: string;
   /** What the search matches for this field when it is more than `text` (readings, romanized kana). */
   match?: string;
+  /** Entries found only through this field come after the others, in this rank's section ("Now in the collection"). */
+  tier?: { rank: number; heading: string };
 }
 
 export interface Entry<T = unknown> {
@@ -110,6 +112,26 @@ export function explain(entry: Entry, query: string, shown = ''): Match {
       : null,
     score: name.startsWith(q) ? 3 : words.every((w) => name.includes(w)) ? 2 : 1,
   };
+}
+
+/**
+ * The hits of a search in the list's sort order, each with its section heading: entries found through a field with a
+ * tier (a museum that holds or held them) come after the others, in their tier's order and under its heading — a search
+ * for "Prado" lists the works there now, then those that were there.
+ */
+export function ordered<T>(hits: Entry<T>[], query: string, sort: string): { entry: Entry<T>; heading: string }[] {
+  const words = queryWords(query);
+  const tierOf = (e: Entry<T>) => {
+    const visible = fold(`${e.name} ${e.meta}`);
+    const hidden = words.filter((w) => !visible.includes(w));
+    if (!hidden.length) return null;
+    const by = e.fields.filter((f) => hidden.some((w) => fold(f.match ?? f.text).includes(w)));
+    if (!by.length || by.some((f) => !f.tier)) return null;
+    return by.map((f) => f.tier!).sort((a, b) => a.rank - b.rank)[0];
+  };
+  const sorted = sortEntries(hits, sort).map((entry) => ({ entry, tier: words.length ? tierOf(entry) : null }));
+  return [...sorted.filter((x) => !x.tier), ...sorted.filter((x) => x.tier).sort((a, b) => a.tier!.rank - b.tier!.rank)]
+    .map(({ entry, tier }) => ({ entry, heading: tier?.heading ?? entry.sorts[sort]?.heading ?? '' }));
 }
 
 // ---- headings ------------------------------------------------------------------------------------
@@ -224,7 +246,11 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
           ['Made in', [a.country?.place?.name, countryText(a.country)].filter(Boolean).join(', ')],
           ['State', l.polities],
           ['Series', a.part_of ? `${a.part_of.title}${a.part_number ? ` (no. ${a.part_number})` : ''}` : null],
-        )],
+        ),
+          // the museums that hold it now, then those that held it (API): "Prado" finds both, in that order
+          ...(a.holders?.now.length ? [{ label: 'Now in', text: a.holders.now.map((h) => h.name).join(', '), tier: { rank: 1, heading: 'Now in the collection' } }] : []),
+          ...(a.holders?.before.length ? [{ label: 'Formerly in', text: a.holders.before.map((h) => h.name).join(', '), tier: { rank: 2, heading: 'Formerly in the collection' } }] : []),
+        ],
         sorts: {
           // grouped under the series title, in number order (zero-padded so 3 comes before 21)
           series: a.part_of
@@ -302,7 +328,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     build: (i) => {
       const l = located(i, 'located_in_polity');
       return {
-        slug: i.slug, name: i.name, meta: [i.kind, i.founded ? `founded ${i.founded.label}` : ''].filter(Boolean).join(' · '),
+        slug: i.slug, name: i.name, meta: [i.kind, i.founded ? `founded ${i.founded.label}` : '', i.dissolved ? `closed ${i.dissolved.label}` : ''].filter(Boolean).join(' · '),
         fields: fields(
           ['Location', [i.country?.place?.name, countryText(i.country)].filter(Boolean).join(', ')],
           ['Historically in', l.polities],

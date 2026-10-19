@@ -76,7 +76,8 @@ export const provenanceStops = (prov: ProvenanceMap) =>
  * One artwork's provenance to draw; `entity` names it in the popups when several are on the map. `inferences`: what
  * the dates imply per step `position` (API 086, from the artwork's detail) — the distance travelled labels its segment.
  */
-interface ProvenanceDrawing { prov: ProvenanceMap; color: string; entity?: EntityMap['entity']; inferences?: Map<number, Inference[]> }
+/** `ends`: this artwork's first and last placed stop marked (see drawProvenance's option of the same name, which it overrides). */
+interface ProvenanceDrawing { prov: ProvenanceMap; color: string; entity?: EntityMap['entity']; inferences?: Map<number, Inference[]>; ends?: boolean | 'gone' }
 interface DrawnSegment { seg: ProvenanceSegmentProps; from?: string; to?: string; color: string; entity?: EntityMap['entity'] }
 const drawnSegments = new WeakMap<MapLibre, Map<string, DrawnSegment[]>>(); // per map and layer prefix, for the line popups
 const provenanceMarkers = new WeakMap<MapLibre, Marker[]>();
@@ -203,8 +204,9 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
     }
   }
   for (const it of items) {
-    // ends: on one artwork's own map, its first and last placed stop are marked "start" and "today" / "last known",
-    // since a return to a place puts both in one marker ("2, 8") and the order alone is hard to read
+    // ends: on an artwork's own map and the start map's chosen works, the first and last placed stop are marked "start" and
+    // "today" / "last known", since a return to a place puts both in one marker ("2, 8") and the order alone is hard to read
+    const itEnds = it.ends ?? ends;
     const placed = provenanceStops(it.prov).map((f) => f.properties.step);
     const [firstStep, lastStep] = [Math.min(...placed), Math.max(...placed)];
     const places = new Map<string, Feature<PointGeometry, ProvenanceStopProps>[]>();
@@ -222,7 +224,7 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
       el.className = `prov-stop${hollow ? ' hollow' : ''}${area ? ' area' : ''}`;
       el.style.setProperty('--pc', it.color);
       el.textContent = label;
-      const end = ends && placed.length > 1 ? endOf(steps, firstStep, lastStep, ends === 'gone') : null;
+      const end = itEnds && placed.length > 1 ? endOf(steps, firstStep, lastStep, itEnds === 'gone') : null;
       if (end) {
         el.classList.add(`prov-${end.kind}`);
         el.dataset.cap = end.text;  // drawn by CSS (::after): the marker's text stays its step numbers

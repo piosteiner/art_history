@@ -9,7 +9,7 @@ const { send, withTx, notFoundPage, friendly } = require('../core');
 
 const router = express.Router();
 const SITE = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
-const ENTITY_KEYS = ['artists', 'artworks', 'movements', 'polities', 'people'];
+const ENTITY_KEYS = ['artists', 'artworks', 'movements', 'polities', 'people', 'institutions', 'events'];
 
 // A pasted address (or just its query) → the query as the site reads it, in a readable form: commas unencoded
 // (URLSearchParams writes %2C), "patrons" as "people" (the site's old name), the site's own switches

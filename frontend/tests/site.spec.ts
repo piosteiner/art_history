@@ -13,7 +13,7 @@ test('explore: map, pickers, timeline; a typed window filters the map', async ({
   const errors = noErrors(page);
   await page.goto('/?all');
   await expect(page.locator('.maplibregl-canvas')).toBeVisible();
-  await expect(page.locator('details.pick')).toHaveCount(5);
+  await expect(page.locator('details.pick')).toHaveCount(7); // artists, artworks, movements, polities, people; museums and events (layers)
   await expect(page.locator('.row-label').first()).toBeVisible();
   await expect(page.locator('#map-status')).toContainText('places');
 
@@ -1569,7 +1569,7 @@ async function sampleVenues(page: Page) {
   ] } }));
 }
 
-test('same institution at the same time: "could have met there"; the museums layer has a switch', async ({ page }) => {
+test('same institution at the same time: "could have met there"; the museum is linked, so "auto" shows it', async ({ page }) => {
   await sampleVenues(page);
   await page.goto('/?all');
   const item = page.locator('#encounters .encounter').first();
@@ -1775,21 +1775,96 @@ test('events list: cards with date and place, filter by kind', async ({ page }) 
   await expect(page).toHaveURL(/\/events\?kind=trial$/);
 });
 
-test('explore: an events layer that follows the time window, and events on the timeline', async ({ page }) => {
+async function sampleEvents(page: Page) {
   await page.route(/\/v1\/map\/events$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', features: [
     { type: 'Feature', geometry: FIRE.area, properties: { type: 'event', slug: FIRE.slug, name: FIRE.name, kind: 'fire', period: FIRE_PERIOD, place: { slug: 'edo', name: 'Edo' }, precision: 'area' } },
     { type: 'Feature', geometry: { type: 'Point', coordinates: [6.63, 46.52] }, properties: { type: 'event', slug: TRIAL.slug, name: TRIAL.name, kind: 'trial', period: TRIAL.period, place: TRIAL.place, precision: 'place' } },
   ] } }));
+  const fireItem = { ...FIRE, location: null, relationships: undefined, parts: undefined };
+  await page.route(/\/v1\/events\?/, (r) => r.fulfill({ json: { data: [fireItem, TRIAL], total: 2, limit: 500, offset: 0 } }));
+}
+
+test('explore: an events layer that follows the time window, and events on the timeline', async ({ page }) => {
+  await sampleEvents(page);
   await page.goto('/?all');
-  const toggle = page.locator('#events-toggle');
-  await expect(toggle).toContainText('Events (2)');
+  const key = page.locator('#events-toggle');
+  await expect(key).toContainText(/Events \(2\b/);
   await expect(page.locator('#timeline')).toContainText('Bührle trial');
   await page.fill('input[name=from]', '1960');
   await page.fill('input[name=to]', '1980');
   await page.locator('.timeline-form button[type=submit]').click();
-  await expect(toggle).toContainText('Events (1 in 1960–1980)');
-  await toggle.locator('input').uncheck();
+  await expect(key).toContainText('Events (1 in 1960–1980)');
+  // the events picker: "auto" ticks what the window picked; None takes them off the map and the timeline
+  const events = page.locator('details[data-group=event]');
+  await events.locator('summary').click();
+  await expect(events.locator('.pick-count')).toHaveText('auto · 1');
+  await expect(events.locator('.pick-item', { hasText: 'Bührle trial' }).locator('input')).toBeChecked();
+  await events.locator('[data-act=none]').click();
+  await expect(key).toContainText('Events (0');
   await expect(page.locator('#timeline')).not.toContainText('Bührle trial');
+  await expect(page).toHaveURL(/events=none/);
+});
+
+test('explore: events on "auto" follow the years of what is chosen; chosen works run on the timeline until today', async ({ page }) => {
+  await sampleEvents(page);
+  // Van Gogh alone: 1853–1890 — neither the fire of 1657 nor the trial of 1970
+  await page.goto('/?artists=vincent-van-gogh&movements=none&polities=none&people=none&artworks=none');
+  await expect(page.locator('#events-toggle')).toContainText('Events (0 in 1853–1890)');
+  await expect(page.locator('#timeline')).not.toContainText('Bührle trial');
+  // a work of his added: its bar runs until today, and with it the span — the trial of 1970 is in
+  await page.goto('/?artists=vincent-van-gogh&movements=none&polities=none&people=none&artworks=by-artists');
+  await expect(page.locator('#timeline')).toContainText('Artworks');
+  await expect(page.locator('#events-toggle')).toContainText(/Events \(1 in 18\d\d–20\d\d\)/);
+  await expect(page.locator('#timeline')).toContainText('Bührle trial');
+  await expect(page.locator('#timeline')).not.toContainText('Great Fire of Meireki');
+  // chosen by hand: the fire too, also outside the span
+  await page.goto('/?artists=vincent-van-gogh&movements=none&polities=none&people=none&artworks=none&events=great-fire-of-meireki');
+  await expect(page.locator('#events-toggle')).toContainText('Events (1)');
+  await expect(page.locator('#timeline')).toContainText('Great Fire of Meireki');
+});
+
+test('explore: museums on "auto" are the ones linked to the map; in a time window only those that existed then', async ({ page }) => {
+  await sampleVenues(page);
+  await page.route(/\/v1\/map\/sites$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', features: [
+    { type: 'Feature', geometry: { type: 'Point', coordinates: KH_POINT },
+      properties: { type: 'institution', ...KUNSTHAUS, kind: 'museum', address: null, place: ZH, from_year: 1910, to_year: null } },
+    { type: 'Feature', geometry: { type: 'Point', coordinates: [2.35, 48.86] },
+      properties: { type: 'institution', slug: 'musee-test', name: 'Musée Test', kind: 'museum', address: null, place: null, from_year: 1800, to_year: 1850 } },
+  ] } }));
+  await page.goto('/?all');
+  await expect(page.locator('#sites-toggle')).toContainText('Museums and sites (1)'); // the Kunsthaus: a venue of the stays
+  await page.goto('/?institutions=all');
+  await expect(page.locator('#sites-toggle')).toContainText('Museums and sites (2)');
+  await page.goto('/?institutions=all&from=1820&to=1840');
+  await expect(page.locator('#sites-toggle')).toContainText('Museums and sites (1 that existed in 1820–1840)');
+});
+
+test('explore: a start view\'s introduction previews its [[links]]; chosen works have their ends marked on the map', async ({ page }) => {
+  await page.route(/\/v1\/featured$/, (r) => r.fulfill({ json: { data: [{ slug: 'gogh', title: 'Van Gogh', query: 'artists=paul-gauguin,vincent-van-gogh&artworks=tournesols-sur-un-fauteuil&movements=none&polities=none&people=none',
+    intro_html: '<p>About <a href="/artists/vincent-van-gogh" class="entry-link" data-entry="artist/vincent-van-gogh">Vincent</a>.</p>' }] } }));
+  await page.goto('/');
+  const link = page.locator('#featured-intro a.entry-link');
+  await link.hover();
+  await expect(page.locator('.glossary-popover')).toContainText('Vincent van Gogh');
+  // an artwork's provenance on the start map: its last placed stop says "today" (or "last known place")
+  await expect(page.locator('.prov-stop.prov-end').first()).toHaveAttribute('data-cap', /today|last known place/);
+});
+
+test('artworks list: searching a museum lists what is there now first, then what was there', async ({ page }) => {
+  await page.route(/\/v1\/artworks\?/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    if (body.data.length < 2) return route.fulfill({ response: res });
+    const [a, b] = body.data.slice(0, 2);
+    a.holders = { now: [], before: [{ slug: 'museo-del-prado', name: 'Museo del Prado' }] };
+    b.holders = { now: [{ slug: 'museo-del-prado', name: 'Museo del Prado' }], before: [] };
+    await route.fulfill({ response: res, json: { ...body, data: [a, b] } });
+  });
+  await page.goto('/artworks');
+  await page.fill('input.filter', 'prado');
+  const headings = page.locator('.cards-heading');
+  await expect(headings).toHaveText(['Now in the collection', 'Formerly in the collection']);
+  await expect(page.locator('.card').first()).toContainText('Now in: Museo del Prado');
 });
 
 test('full screen map: legend and layer switches come along, the button leaves it again', async ({ page }) => {
@@ -1930,7 +2005,7 @@ test('timeline: changing the picks replaces its rows, zoom and half-typed years 
     await d.locator('summary').click();
     await d.locator('[data-act=none]').click();
   }
-  if (await page.locator('#events-toggle').isVisible()) await page.locator('#events-toggle input').uncheck();
+  // (events on "auto" follow what is chosen: with nothing chosen, none)
   await expect(page.locator('.timeline-empty')).toBeVisible();
   await expect(page.locator('.timeline-svg')).toBeHidden();
   if ((await movements.getAttribute('open')) === null) await movements.locator('summary').click();

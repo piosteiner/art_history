@@ -2,10 +2,15 @@
 // - no time window, nothing chosen individually → every place, sized by its number of links
 // - no time window, entries chosen             → their routes and places, one colour per entry
 // - a time window on the timeline              → who/what of the selection was physically where (artworks: their provenance in the window)
-// The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
+// Museums and events are layers over that, with pickers of their own (selection.ts LAYERS): "auto" by default — museums
+// linked to what the map shows (holders of the chosen works, venues of the chosen people's stays), events in the time
+// window, else in the span of the chosen entries (their lives; an artwork from its making until today). In a time
+// window only the museums that existed then (founded … dissolved, API 106) and the events in it.
+// The state lives in the URL (/?artists=…&movements=none&institutions=all&from=1888&to=1889) and is remembered locally.
 // The home page (/) shows curated views (/v1/featured, edited in the admin panel): the first one, others at
 // /?featured=<slug>, everything at /?all. A view is a saved URL query; changing the picks or the window makes it your own.
-import { getClusters, getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getProvenances, getSites, getView, listAll, PLURAL } from '../api';
+import { getClusters, getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getPreviews, getProvenances, getSites, getView, listAll, PLURAL } from '../api';
+import { wireTextLinks } from '../glossary';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, render, trusted } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
@@ -14,18 +19,25 @@ import {
   CLUSTER_BELOW, COLORS, createMap, focusEncounter, showClusters, highlightRoute, PALETTE, placedProvenance, provenanceInWindow, showEncounters, showEvents, showPlaces, showPresence, showSelection,
   showSites, unplacedSteps, type ColoredEntityMap, type RouteInfo,
 } from '../map';
+import { overlaps } from '../map-core';
 import { mountPickers, type PickerGroup } from '../picker';
 import { replaceQuery } from '../router';
-import { chosen, includes, parseSelection, writeSelection, type Selection } from '../selection';
+import { chosen, GROUPS, includes, layerIncludes, parseSelection, writeSelection, type Selection } from '../selection';
 import { reducedMotion } from '../theme';
 import { renderTimeline, type TimelineRow } from '../timeline';
-import type { EntityType, EventsMap, FeaturedView, Plural, PresenceMap, ProvenanceMap, StopProps } from '../types';
+import type { DateRange, EntityType, EventsMap, FeaturedView, Plural, PresenceMap, ProvenanceMap, SitesMap, StopProps } from '../types';
 import { showError } from './common';
 
 const STORAGE_KEY = 'arthistory:explore';
 const MAX_ROUTES = 24; // one request each; beyond that, use a time window
 
 type Window = { from: number; to: number } | null;
+
+const THIS_YEAR = new Date().getFullYear();
+/** An artwork still there: its timeline bar runs until today. */
+const TODAY: DateRange = { label: 'today', from: null, to: null, from_year: THIS_YEAR, to_year: THIS_YEAR };
+const yearsMeet = (from: number | null | undefined, to: number | null | undefined, w: NonNullable<Window>) =>
+  (from ?? -Infinity) <= w.to && (to ?? Infinity) >= w.from;
 
 function readWindow(params: URLSearchParams): Window {
   const from = Number(params.get('from'));
@@ -100,8 +112,8 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       <div class="map" id="map"></div>
       <div class="legend" id="legend"></div>
       <div class="layer-toggles">
-        <label class="sites-toggle" id="sites-toggle" hidden><input type="checkbox" checked> <span></span></label>
-        <label class="sites-toggle" id="events-toggle" hidden><input type="checkbox" checked> <span></span></label>
+        <span class="sites-toggle" id="sites-toggle" hidden></span>
+        <span class="sites-toggle" id="events-toggle" hidden></span>
       </div>
     </div>
     <p class="map-status muted" id="map-status"></p>
@@ -114,38 +126,89 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
   const legend = main.querySelector<HTMLElement>('#legend')!;
   const encountersEl = main.querySelector<HTMLElement>('#encounters')!;
 
-  // museums and sites with their own location (institutions, buildings): a layer of its own, switchable
-  const sitesToggle = main.querySelector<HTMLLabelElement>('#sites-toggle')!;
-  getSites().then((fc) => {
-    if (!fc.features.length || !main.contains(sitesToggle)) return;
-    sitesToggle.hidden = false;
-    sitesToggle.querySelector('span')!.innerHTML = html`<i class="dot" style="background:${COLORS.site}"></i> Museums and sites (${String(fc.features.length)})`.value;
-    const box = sitesToggle.querySelector('input')!;
-    showSites(map, fc, box.checked);
-    box.addEventListener('change', () => showSites(map, fc, box.checked));
-  }).catch(() => { /* optional layer */ });
-
-  // events (fires, trials, auctions …): a layer of their own on top, following the time window; also on the timeline
-  const eventsToggle = main.querySelector<HTMLLabelElement>('#events-toggle')!;
-  const eventsBox = eventsToggle.querySelector('input')!;
+  // ---- layers: museums and sites, events (their own pickers; "auto" by default — see the top) ----------------------
+  // museums and sites with their own location (institutions; buildings, which follow the artwork picker)
+  const sitesKey = main.querySelector<HTMLElement>('#sites-toggle')!;
+  const eventsKey = main.querySelector<HTMLElement>('#events-toggle')!;
+  let sites: SitesMap | null = null;
   let events: EventsMap | null = null;
-  function drawEvents() {
-    if (!events?.features.length) return;
-    const shown = showEvents(map, events, { visible: eventsBox.checked, window: win });
-    const span = win ? ` in ${win.from === win.to ? win.from : `${win.from}–${win.to}`}` : '';
-    eventsToggle.querySelector('span')!.innerHTML = html`<i class="dot" style="background:${COLORS.event}"></i> Events (${String(shown)}${span})`.value;
+  let venues = new Set<string>(); // institutions at the stops the map shows (the exact venue of a stay)
+  const useVenues = (refs: ({ slug: string } | null | undefined)[]) => { venues = new Set(refs.flatMap((r) => (r ? [r.slug] : []))); };
+  const spanText = (w: NonNullable<Window>) => (w.from === w.to ? String(w.from) : `${w.from}–${w.to}`);
+
+  /**
+   * Without a time window: the years the chosen entries cover — null until the lists are in (then every event),
+   * empty (no event) when nothing chosen has a date.
+   */
+  function selectionSpan(): Window {
+    if (!lists) return null;
+    const ranges = entityRows().flatMap((r) => [r.from, r.to]).filter((d): d is DateRange => !!d);
+    const from = Math.min(...ranges.map((d) => d.from_year ?? Infinity));
+    const to = Math.max(...ranges.map((d) => d.to_year ?? d.from_year ?? -Infinity));
+    return Number.isFinite(from) && Number.isFinite(to) ? { from, to } : { from: Infinity, to: -Infinity };
   }
+  /** Museums linked to what the map shows: holders (now and before) of the works included, venues of the stays. */
+  function linkedMuseums() {
+    const linked = new Set(venues);
+    for (const a of lists?.artworks ?? []) {
+      if (!a.holders || !includes(sel, 'artwork', a.slug, artistsOf)) continue;
+      for (const h of [...a.holders.now, ...a.holders.before]) linked.add(h.slug);
+    }
+    return linked;
+  }
+  const existed = (f: SitesMap['features'][number]) => !win || yearsMeet(f.properties.from_year, f.properties.to_year, win);
+  function shownSites() {
+    if (!sites) return [];
+    const linked = linkedMuseums();
+    return sites.features.filter((f) => existed(f) && (f.properties.type === 'artwork'
+      ? includes(sel, 'artwork', f.properties.slug, artistsOf)
+      : layerIncludes(sel, 'institution', f.properties.slug, (slug) => linked.has(slug))));
+  }
+  /** Events in the window; "auto" without one: in the chosen entries' span (all of them before the lists are in). */
+  function eventShown(f: EventsMap['features'][number], span: Window) {
+    if (win && !overlaps(f.properties.period, win)) return false;
+    return layerIncludes(sel, 'event', f.properties.slug, () => !span || overlaps(f.properties.period, span));
+  }
+  /** What "auto" picks in the pickers, so their ticks and counts show it. */
+  function autoPicks() {
+    const linked = linkedMuseums();
+    const span = win ?? selectionSpan();
+    return {
+      institution: new Set((sites?.features ?? []).filter((f) => f.properties.type === 'institution' && existed(f) && linked.has(f.properties.slug)).map((f) => f.properties.slug)),
+      event: new Set((events?.features ?? []).filter((f) => !span || overlaps(f.properties.period, span)).map((f) => f.properties.slug)),
+    };
+  }
+  let autoNow = { institution: new Set<string>(), event: new Set<string>() }; // drawLayers() fills it
+
+  function drawLayers() {
+    autoNow = autoPicks();
+    pickers?.refresh();
+    if (sites?.features.length) {
+      const shown = shownSites();
+      showSites(map, { ...sites, features: shown }, true);
+      sitesKey.hidden = false;
+      sitesKey.innerHTML = html`<i class="dot" style="background:${COLORS.site}"></i> Museums and sites (${String(shown.length)}${win ? ` that existed in ${spanText(win)}` : ''})`.value;
+    }
+    if (events?.features.length) {
+      const span = win ?? selectionSpan();
+      const shown = events.features.filter((f) => eventShown(f, span));
+      showEvents(map, { ...events, features: shown }, { visible: true, window: null });
+      eventsKey.hidden = false;
+      const range = span && Number.isFinite(span.from) && (win || sel.event.mode === 'auto') ? ` in ${spanText(span)}` : '';
+      eventsKey.innerHTML = html`<i class="dot" style="background:${COLORS.event}"></i> Events (${String(shown.length)}${range})`.value;
+    }
+  }
+  getSites().then((fc) => {
+    if (!main.contains(sitesKey)) return;
+    sites = fc;
+    drawLayers();
+  }).catch(() => { /* optional layer */ });
   getEventsMap().then((fc) => {
-    if (!fc.features.length || !main.contains(eventsToggle)) return;
+    if (!main.contains(eventsKey)) return;
     events = fc;
-    eventsToggle.hidden = false;
-    drawEvents();
+    drawLayers();
     drawTimeline();
   }).catch(() => { /* optional layer */ });
-  eventsBox.addEventListener('change', () => {
-    drawEvents();
-    drawTimeline();
-  });
 
   // ---- curated views: a switcher (links: each view has its address), the shown one's intro; "Explore everything" ----
   const featuredEl = main.querySelector<HTMLElement>('#featured')!;
@@ -158,7 +221,12 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     render(featuredEl, html`${curated.views.map((v) => html`<a class="chip${!own && v === curated.view ? ' on' : ''}" href="${at(v)}"${!own && v === curated.view ? html` aria-current="page"` : ''}>${v.title}</a>`)}
       <a class="featured-all" href="/?all">Explore everything →</a>`);
     featuredIntro.hidden = own;
-    if (!own) render(featuredIntro, html`<h2>${curated.view.title}</h2>${curated.view.intro_html ? html`<div class="prose">${trusted(curated.view.intro_html)}</div>` : ''}`);
+    if (own) return;
+    render(featuredIntro, html`<h2>${curated.view.title}</h2>${curated.view.intro_html ? html`<div class="prose">${trusted(curated.view.intro_html)}</div>` : ''}`);
+    // its [[links]]: the same previews as in an entry's text (the API sends the intro without them)
+    const refs = [...new Set([...featuredIntro.querySelectorAll<HTMLAnchorElement>('a.entry-link:not(.missing)')].map((a) => a.dataset.entry!).filter(Boolean))];
+    wireTextLinks(featuredIntro, undefined); // missing entries → plain text at once
+    if (refs.length) getPreviews(refs).then((entries) => { if (!own) wireTextLinks(featuredIntro, undefined, undefined, entries); }).catch(() => { /* plain links */ });
   }
   drawFeatured();
 
@@ -320,7 +388,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     } catch (err) {
       if (!stale()) showError(status, err);
     }
-    if (!stale()) drawEvents(); // the overlays were re-added: events back on top, filtered by the window
+    if (!stale()) drawLayers(); // the overlays were re-added: museums and events back on top, filtered by the window
     if (!stale()) void drawClusters();
   }
 
@@ -377,6 +445,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       redrawLegend();
     };
     draw(new Map());
+    useVenues(rows.map((r) => r.institution));
     crossings(rows, (slug) => where.get(slug));
     pinned = null;
     const entries = new Set(rows.map((r) => `${r.entity.type}/${r.entity.slug}`)).size;
@@ -396,7 +465,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       getEntityMap(PLURAL[c.type] as Exclude<Plural, 'places'>, c.slug).catch(() => null)));
     if (stale()) return;
     const items: ColoredEntityMap[] = maps.flatMap((fc, i) =>
-      fc ? [{ fc, color: colorOf.get(shown[i].type, shown[i].slug) ?? PALETTE[0] }] : []);
+      fc ? [{ fc, color: colorOf.get(shown[i].type, shown[i].slug) ?? PALETTE[0], gone: gone(shown[i].type, shown[i].slug) }] : []);
     showSelection(map, items);
     const at = new Map<string, [number, number]>();
     const stays: Stay[] = items.flatMap((i) => i.fc.features.flatMap((f) => {
@@ -405,6 +474,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       at.set(p.place.slug, f.geometry.coordinates as [number, number]);
       return [{ entity: i.fc.entity, place: p.place, label: p.label, period: p.period, note: p.note, institution: p.institution, artwork: p.artwork, point: f.geometry.coordinates as [number, number] }];
     }));
+    useVenues(items.flatMap((i) => i.fc.features.map((f) => (f.properties as StopProps).institution)));
     crossings(stays, (slug) => at.get(slug));
     const withPlaces = items.filter((i) => i.fc.features.some((f) => f.geometry.type === 'Point') || placedProvenance(i.fc));
     // artworks with a placed provenance step look as on their own page: numbered holders in the chain's order
@@ -434,6 +504,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
         ? `; ${PROVENANCE_KEY}, its steps dated in ${span}` : ''}</span>`);
     if (!types.length) {
       useRoutes(showPresence(map, { type: 'FeatureCollection', features: [] }));
+      useVenues([]);
       redrawLegend();
       status.textContent = 'Artists, people and artworks are all hidden, so there is nothing to place on the map.';
       return;
@@ -449,6 +520,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     useRoutes(showPresence(map, { ...fc, features }, provenances));
     redrawLegend();
     const at = new Map(features.map((f) => [f.properties.place.slug, f.geometry.coordinates] as const));
+    useVenues(features.map((f) => f.properties.institution));
     crossings(features.map((f) => ({ ...f.properties, point: f.geometry.coordinates })), (slug) => at.get(slug));
     const who = new Set(features.map((f) => `${f.properties.entity.type}/${f.properties.entity.slug}`));
     const where = new Set(features.map((f) => f.properties.place.slug));
@@ -465,25 +537,45 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
 
   let timeline: ReturnType<typeof renderTimeline> | undefined;
   let lists: Awaited<ReturnType<typeof loadLists>> | undefined;
+  // an artwork destroyed or lost (not partly destroyed): its map's end is the last known place, not "today"
+  const fates = new Map<string, string>();
+  const gone = (type: EntityType, slug: string) => type === 'artwork' && !!fates.get(slug) && fates.get(slug) !== 'partly_destroyed';
 
   function loadLists() {
     return Promise.all([
       listAll('artists'), listAll('artworks'), listAll('movements'), listAll('polities'), listAll('people'),
-    ]).then(([artists, artworks, movements, polities, people]) => ({
+      listAll('institutions'), listAll('events'),
+    ]).then(([artists, artworks, movements, polities, people, institutions, events]) => ({
       artists: artists.data, artworks: artworks.data, movements: movements.data, polities: polities.data, people: people.data,
+      institutions: institutions.data, events: events.data,
     }));
+  }
+
+  /** The chosen entries' rows on the timeline (and their span, for the events' "auto"). */
+  function entityRows(): TimelineRow[] {
+    if (!lists) return [];
+    const keep = <T extends { slug: string }>(type: EntityType, items: T[]) => items.filter((i) => includes(sel, type, i.slug, artistsOf));
+    // artworks: from their making until today (destroyed or lost: until the last known; we have only the making) —
+    // the provenance runs on long after the artists' deaths. Rows only for works picked (all 100+ would bury the rest).
+    const artworkRows = sel.artwork.mode === 'all' ? [] : keep('artwork', lists.artworks).filter((a) => a.created)
+      .map((a) => ({ group: 'Artworks', label: a.title, href: href('artwork', a.slug), key: `artwork/${a.slug}`, from: a.created, to: gone('artwork', a.slug) ? a.created : TODAY, color: colorOf.get('artwork', a.slug) }));
+    return [
+      ...keep('polity', lists.polities).map((p) => ({ group: 'Polities', label: p.name, href: href('polity', p.slug), key: `polity/${p.slug}`, from: p.period, to: p.period, color: colorOf.get('polity', p.slug) })),
+      ...keep('movement', lists.movements).map((m) => ({ group: 'Movements', label: m.name, href: href('movement', m.slug), key: `movement/${m.slug}`, from: m.period, to: m.period, color: colorOf.get('movement', m.slug) })),
+      ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), key: `artist/${a.slug}`, from: a.birth, to: a.death, color: colorOf.get('artist', a.slug) })),
+      ...keep('person', lists.people).map((p) => ({ group: 'People', label: p.name, href: href('person', p.slug), key: `person/${p.slug}`, from: p.birth ?? p.active, to: p.birth || p.death ? p.death : p.active, color: colorOf.get('person', p.slug) })),
+      ...artworkRows,
+    ];
   }
 
   /** Built once; when the picks or the events layer change only its rows are replaced (zoom and typed years stay). */
   function drawTimeline() {
     if (!lists) return;
-    const keep = <T extends { slug: string }>(type: EntityType, items: T[]) => items.filter((i) => includes(sel, type, i.slug));
+    // events as the picker has them, in the chosen entries' span — not the window: the timeline is where it is picked
+    const span = selectionSpan();
     const rows: TimelineRow[] = [
-      ...keep('polity', lists.polities).map((p) => ({ group: 'Polities', label: p.name, href: href('polity', p.slug), key: `polity/${p.slug}`, from: p.period, to: p.period, color: colorOf.get('polity', p.slug) })),
-      ...keep('movement', lists.movements).map((m) => ({ group: 'Movements', label: m.name, href: href('movement', m.slug), key: `movement/${m.slug}`, from: m.period, to: m.period, color: colorOf.get('movement', m.slug) })),
-      ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), key: `artist/${a.slug}`, from: a.birth, to: a.death, color: colorOf.get('artist', a.slug) })),
-      ...keep('person', lists.people).map((p) => ({ group: 'People', label: p.name, href: href('person', p.slug), key: `person/${p.slug}`, from: p.birth ?? p.active, to: p.birth || p.death ? p.death : p.active, color: colorOf.get('person', p.slug) })),
-      ...(events && eventsBox.checked ? events.features.filter((f) => f.properties.period)
+      ...entityRows(),
+      ...(events ? events.features.filter((f) => f.properties.period && layerIncludes(sel, 'event', f.properties.slug, () => !span || overlaps(f.properties.period, span)))
         .map((f) => ({ group: 'Events', label: f.properties.name, href: href('event', f.properties.slug), from: f.properties.period, to: f.properties.period })) : []),
     ];
     if (timeline) return timeline.setRows(rows);
@@ -503,23 +595,36 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     .then((l) => {
       if (!main.contains(timelineEl)) return;
       lists = l;
-      l.artworks.forEach((a) => artists.set(a.slug, creatorsOf(a).map((c) => c.slug)));
+      l.artworks.forEach((a) => {
+        artists.set(a.slug, creatorsOf(a).map((c) => c.slug));
+        if (a.fate) fates.set(a.slug, a.fate);
+      });
+      const redraw = !win && chosen(sel).some((c) => gone(c.type, c.slug)); // drawn before the fates were known
       artistsReady();
+      if (redraw && sel.artwork.mode !== 'by-artists') updateMap();
       const groups: PickerGroup[] = [
         { group: 'artist', plural: 'artists', label: 'Artists', entries: entries('artists', l.artists) },
         { group: 'artwork', plural: 'artworks', label: 'Artworks', entries: entries('artworks', l.artworks) },
         { group: 'movement', plural: 'movements', label: 'Movements', entries: entries('movements', l.movements) },
         { group: 'polity', plural: 'polities', label: 'Polities', entries: entries('polities', l.polities) },
         { group: 'person', plural: 'people', label: 'People', entries: entries('people', l.people) },
+        // only museums with a place of their own on the map (the sites layer); events with a position
+        { group: 'institution', plural: 'institutions', label: 'Museums', autoLabel: 'the museums linked to what the map shows — holding or having held the works, or where the people stayed — and in a time window only those that existed then',
+          entries: entries('institutions', l.institutions.filter((i) => !sites || sites.features.some((f) => f.properties.type === 'institution' && f.properties.slug === i.slug))) },
+        { group: 'event', plural: 'events', label: 'Events', autoLabel: 'the events in the time window — without one, in the years of what is chosen (the artists’ lives, the works until today)',
+          entries: entries('events', l.events.filter((e) => !events || events.features.some((f) => f.properties.slug === e.slug))) },
       ];
       pickers = mountPickers(pickersEl, groups, sel, (next) => {
+        const entitiesChanged = GROUPS.some((g) => JSON.stringify(next[g]) !== JSON.stringify(sel[g]));
         sel = next;
-        colorOf.reset();
         persist();
         drawTimeline();
+        if (!entitiesChanged) return drawLayers(); // only museums or events: the map's routes stay
+        colorOf.reset();
         updateMap();
-      });
+      }, (layer, slug) => (layer === 'institution' || layer === 'event') && autoNow[layer].has(slug));
       drawTimeline();
+      drawLayers(); // the lists know the works' holders and the selection's span
     })
     .catch((err) => {
       showError(pickersEl, err);

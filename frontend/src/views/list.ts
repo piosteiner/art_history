@@ -8,7 +8,7 @@ import type { NameEntry } from '../types';
 const original = (item: unknown) => (item as { names?: NameEntry[] }).names?.find((n) => n.role === 'original');
 import type { ItemByPlural, Plural } from '../types';
 import { guard, showError } from './common';
-import { entries, explain, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, queryWords, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
+import { entries, explain, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, queryWords, saveSort, savedSort, sortOptions, type Entry } from '../catalog';
 
 type AnyItem = ItemByPlural[Plural];
 
@@ -183,8 +183,7 @@ export function list(main: HTMLElement, plural: Plural) {
       return card(plural, e.item, words, query ? explain(e, query, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null);
     };
     render(items, html`
-      ${sortEntries(hits, sort).map((e) => {
-        const h = e.sorts[sort]?.heading ?? '';
+      ${ordered(hits, query, sort).map(({ entry: e, heading: h }) => {
         const head = h !== last ? html`<li class="cards-heading">${h}</li>` : '';
         last = h;
         return html`${head}${row(e)}`;

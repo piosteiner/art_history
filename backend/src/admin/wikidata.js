@@ -242,6 +242,7 @@ function fieldsFor(t, e) {
   if (t.type === 'term') text('definition', e.descriptions && e.descriptions.en && e.descriptions.en.value);
   if (t.type === 'institution') {
     date('founded', 'P571');
+    date('dissolved', 'P576');  // closed / dissolved (106)
     // Its place is the city: the settlement P131 leads to — P131 is often a city district (Kunsthaus Zürich: "Kreis 1"
     // and Zürich). The exact spot is the institution's own: coordinates (P625) and street address (P6375), migration 034.
     const p131 = itemIds(e, 'P131');

@@ -599,7 +599,7 @@ ruby rt { font-size: .5em; color: var(--muted); }
 .glossary-popover a { font-size: .85rem; }
 
 /* exact locations: museums and sites layer, buildings in the graph */
-.sites-toggle { display: inline-flex; align-items: center; gap: .35rem; font-size: .85rem; color: var(--muted); margin: .3rem 0 0; cursor: pointer; }
+.sites-toggle { display: inline-flex; align-items: center; gap: .35rem; font-size: .85rem; color: var(--muted); margin: .3rem 0 0; } /* the layers' key; their pickers are above the map */
 .layer-toggles { display: flex; flex-wrap: wrap; gap: 0 1.2rem; }
 .rel-role { color: var(--muted); }
 :root { --c-architecture: #3b4fa0; }

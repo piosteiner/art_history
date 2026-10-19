@@ -203,6 +203,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         title: e.name, subtitle: [e.kind, e.place?.name].filter(Boolean).join(' · '), text: e.description_html, images: e.images,
         facts: [
           ['Founded', dateLabel(e.founded)],
+          ['Closed', dateLabel(e.dissolved ?? null)],
           ['Address', e.address],
           ['Location', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country ? html`, ${countryLink(e.country)}` : ''}` : null],
           ...(e.polities.some((p) => p.relationship === 'located_in_polity') ? polityFacts(e, 'located_in_polity', 'Historically in', '') : []),
@@ -282,7 +283,7 @@ const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
   artist: { birth: ['Born'], death: ['Died'] },
   artwork: { creator: ['Artist', 'Artists'], attribution_label: ['Artist', 'Artists'], created: ['Date'], conceived: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
     dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'], fate: ['Fate'] },
-  institution: { founded: ['Founded'], address: ['Address', 'Location'], location: ['Address', 'Location'], place: ['Location'] },
+  institution: { founded: ['Founded'], dissolved: ['Closed'], address: ['Address', 'Location'], location: ['Address', 'Location'], place: ['Location'] },
   person: { birth: ['Born', 'Active'], death: ['Died'], kind: ['Kind'], occupations: ['Occupations'] },
   place: { parent: ['Part of'], location: ['Coordinates'] },
   movement: { period: ['Period'], parent: ['Part of'] },

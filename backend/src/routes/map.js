@@ -267,12 +267,16 @@ router.get('/sites', async (req, res) => {
   const { rows } = await apiPool.query(`
     SELECT jsonb_build_object('type', 'Feature', 'geometry', ST_AsGeoJSON(x.geom)::jsonb,
       'properties', jsonb_build_object('type', x.type, 'slug', x.slug, 'name', x.name, 'kind', x.kind, 'address', x.address,
-        'place', (SELECT jsonb_build_object('slug', c.slug, 'name', c.name) FROM places c WHERE c.id = x.place_id))) AS feature
+        'place', (SELECT jsonb_build_object('slug', c.slug, 'name', c.name) FROM places c WHERE c.id = x.place_id),
+        -- when it existed, in years (106): from its founding (a building: its making), to its closing or destruction;
+        -- null = not known / still there — the start map shows it in a time window only then
+        'from_year', extract(year FROM lower(x.since))::int, 'to_year', extract(year FROM upper(x.until) - 1)::int)) AS feature
     FROM (
-      SELECT 'institution' AS type, i.slug, i.name, i.kind, i.address, i.location AS geom, i.place_id
+      SELECT 'institution' AS type, i.slug, i.name, i.kind, i.address, i.location AS geom, i.place_id, i.founded AS since, i.dissolved AS until
       FROM institutions i WHERE i.location IS NOT NULL
       UNION ALL
-      SELECT 'artwork', a.slug, a.title, a.kind, NULL, coalesce(a.area, a.location), entity_home_place('artwork', a.id)
+      SELECT 'artwork', a.slug, a.title, a.kind, NULL, coalesce(a.area, a.location), entity_home_place('artwork', a.id), a.created,
+        CASE WHEN a.fate = 'destroyed' THEN a.fate_date END
       FROM artworks a WHERE a.location IS NOT NULL OR a.area IS NOT NULL
     ) x ORDER BY x.name COLLATE sort_natural`);
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });

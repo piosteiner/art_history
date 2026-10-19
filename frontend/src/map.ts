@@ -625,6 +625,8 @@ export function showEvents(map: MapLibre, fc: EventsMap, opts: { visible: boolea
 export interface ColoredEntityMap {
   fc: EntityMap;
   color: string;
+  /** An artwork destroyed or lost (API 103): its last stop is the last known place, not "today". */
+  gone?: boolean;
 }
 
 /**
@@ -635,7 +637,7 @@ export interface ColoredEntityMap {
 export function showSelection(map: MapLibre, input: ColoredEntityMap[]) {
   const provenances = input.flatMap((i) => {
     const prov = placedProvenance(i.fc);
-    return prov ? [{ prov, color: i.color, entity: i.fc.entity }] : [];
+    return prov ? [{ prov, color: i.color, entity: i.fc.entity, ends: i.gone ? 'gone' as const : true }] : [];
   });
   const items = input.map((i) => (placedProvenance(i.fc) ? { ...i, fc: withoutReplaced(i.fc) } : i));
   const tag = (item: ColoredEntityMap, f: EntityMap['features'][number]) => ({
