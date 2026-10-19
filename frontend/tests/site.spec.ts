@@ -505,7 +505,8 @@ test('privacy page from the footer; the site sets no cookies', async ({ page, co
 });
 
 test('start map: routes of the selection, a place lists what happened there', async ({ page }) => {
-  await page.goto('/?all');
+  // the place itself, not an event or a museum drawn on it (Paris has the 1878 World's Fair): both layers off
+  await page.goto('/?events=none&institutions=none');
   await expect(page.locator('#map-status')).toContainText('Click a place to see what happened there');
   // the dev build exposes the map (window.__maps) so the test can click a known place
   await page.waitForFunction(() => {
@@ -515,9 +516,7 @@ test('start map: routes of the selection, a place lists what happened there', as
   const routes = await page.evaluate(() => (window as unknown as { __maps: { querySourceFeatures(id: string): { properties: { name: string } }[] }[] }).__maps.at(-1)!
     .querySourceFeatures('ov-routes').map((f) => f.properties.name));
   expect(routes).toContain('Vincent van Gogh');
-  // the place itself, not an event drawn on it (Paris has the 1878 World's Fair)
-  await page.getByRole('checkbox', { name: /^Events/ }).uncheck();
-  await page.locator('.maplibregl-canvas').first().scrollIntoViewIfNeeded();  // unchecking scrolled the page to the box
+  await page.locator('.maplibregl-canvas').first().scrollIntoViewIfNeeded();
   const atRest = () => page.waitForFunction(() => {
     const m = (window as unknown as { __maps: { loaded(): boolean; isMoving(): boolean }[] }).__maps.at(-1)!;
     return m.loaded() && !m.isMoving();
