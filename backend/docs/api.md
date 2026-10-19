@@ -278,9 +278,10 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
 
 ### Provenance (artworks)
 The detail of an artwork has **`provenance`**: its holders in order, as the sources record them, read as a chain —
-`[{kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,
+`[{id, kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,
 acquired, ended, method, direct, label, certainty, price: {amount, currency, note} | null, place: {slug, name} | null,
 period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
+- `id`: the step's number, as in `/v1/search/text`'s `provenance_ids` and the map's `provenance_id` — anchor a hit on it.
 - **What the dates imply (086):** `inferences: [{kind, text, period, km}]` per step — conclusions drawn from the
   holders' lives and whereabouts, not recorded by a source; show them marked as derived (e.g. in italics):
   `narrowed` (the giver died during this acquisition's window: "from Paul Gauguin during the artist's lifetime — by

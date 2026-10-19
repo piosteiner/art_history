@@ -628,6 +628,7 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     relationships.forEach((r) => { r.sources = (r._rel_id ? byRel[r._rel_id] : r._prov_id ? byProv[r._prov_id] : null) || []; delete r._rel_id; delete r._prov_id; });
     steps.forEach((p) => {
       p.sources = byProv[p._prov_id] || [];
+      p.id = p._prov_id;   // the step's number: the anchor full-text search hits point to (provenance_ids)
       delete p._prov_id;
       (p.alternatives || []).forEach((a) => { a.sources = byProv[a._prov_id] || []; delete a._prov_id; });   // 084
     });
