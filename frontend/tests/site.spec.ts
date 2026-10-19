@@ -1480,7 +1480,7 @@ test('previews on every internal link: fields and relationships, fetched togethe
   await expect.poll(() => asked.length).toBeGreaterThan(0);
   expect(asked[0].length).toBeGreaterThan(1); // the page's links in one request
   expect(asked.flat()).not.toContain('artwork/the-great-wave-off-kanagawa'); // not the page itself
-  const museum = page.locator('.facts a[href="/institutions/metropolitan-museum-of-art"]');
+  const museum = page.locator('.facts a[href^="/institutions/"][href$="/metropolitan-museum-of-art"]');
   await museum.hover();
   const pop = page.locator('.popover-entry');
   await expect(pop).toContainText('Excerpt about metropolitan-museum-of-art.');

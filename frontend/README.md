@@ -239,9 +239,10 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
 - `/search` (`src/views/search.ts`) is full-text search (`GET /v1/search/text`): one row per entry — the name linked to
   `path`, a badge for `matched_in` (name · text · provenance), `headline_html` inserted as is (escaped by the API, only
   `<mark>`), type chips (`?type=artwork`; the older plural `?type=artworks` still works), 20 per page (`?page=2`). A
-  provenance hit links to `path#provenance-<provenance_ids[0]>`; the page scrolls to that step once steps carry an
-  `id` (backend wish), meanwhile to the Provenance section (`id="provenance"`). The header's completion stays the quick
-  name search (`/v1/search` + the field search of `findAll`).
+  hit links to its entry with the passage's marked words as `?hl=word+word` (not for name hits), a provenance hit also
+  with `#provenance-<provenance_ids[0]>`: the entry page (`src/highlight.ts`) outlines that step (`.search-target`),
+  marks the words in it — or, for a text hit, all over `.detail-main` — and keeps the step or first mark in view while
+  images load. The header's completion stays the quick name search (`/v1/search` + the field search of `findAll`).
 - Entry pages (`src/views/detail-network.ts`): "How are they connected?" — a "Connect to…" picker over every entry
   (`findAll`), then `GET /v1/network/path` drawn top to bottom ("A — owned by → B", period, note; "No connection
   within 6 steps"). Artworks: "Through the same hands" (`/v1/network/shared-hands?depth=2`) — depth 1 grouped by holder
@@ -284,9 +285,6 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
 - **Coverage from narrowed windows (086):** a `narrowed` inference ("by 8 May 1903 at the latest") could shorten its
   step's stretch on the coverage bar, but the bar's `segments` don't say which step they belong to — so it is best done
   in `provenance_coverage` itself.
-- **Provenance step ids (087):** search hits name `provenance_ids`, but the detail's provenance steps carry no `id`,
-  so a hit can only open the Provenance section. With `id` per step the page renders `id="provenance-<id>"` (already
-  wired) and scrolls to the exact step.
 - **Encounters at a place (091):** `/v1/map/encounters` filters by one entry, not by a place; place pages ("Crossed
   paths here") and the start map's list therefore still compute them in the browser. A `place=` filter (and one for a
   set of entries — the start map's selection) would let the browser's `findEncounters` go.

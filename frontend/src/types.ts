@@ -389,8 +389,8 @@ export interface ProvenanceStep {
   alternatives?: ProvenanceAlternative[];
   /** API 086: what the holders' lives and whereabouts imply — derived, not stated by a source. */
   inferences?: Inference[];
-  /** The step's id, once the API sends it — the anchor #provenance-<id> a search hit points at (backend wish). */
-  id?: number;
+  /** The step's id — the anchor #provenance-<id> a search hit points at; null for implied lines (no stored step). */
+  id: number | null;
 }
 
 /**
