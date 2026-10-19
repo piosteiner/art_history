@@ -36,6 +36,9 @@ async function problemsOf(db, id) {
   return (await db.query('SELECT problem FROM featured_view_problems WHERE id = $1', [id])).rows.map((r) => r.problem);
 }
 const preview = (query) => `${SITE}/?${query}`;
+// The view as readers see it: a published one under its own address (the switcher shows it chosen, its intro above the
+// map); the bare query would be the reader's own selection — the map only. A draft is not in /v1/featured yet.
+const siteLink = (v) => (v.published ? `${SITE}/?featured=${encodeURIComponent(v.slug)}` : preview(v.query));
 
 function form({ action, v = {}, problems = [], submit }) {
   const val = (k) => v[k] ?? '';
@@ -47,7 +50,7 @@ function form({ action, v = {}, problems = [], submit }) {
         the browser and paste it here — or just the part after “?”. Only what the start map reads counts:
         ${ENTITY_KEYS.join(', ')}, from, to.</div></div>
     ${problems.length ? html`<div class="flash error featured-problems"><b>To fix before publishing:</b><ul>${problems.map((p) => html`<li>${p}</li>`)}</ul></div>` : ''}
-    ${val('query') ? html`<p class="small"><a href="${preview(val('query'))}" target="_blank" rel="noopener">Preview on the site ↗</a>
+    ${val('query') ? html`<p class="small"><a href="${siteLink(v)}" target="_blank" rel="noopener">${v.published ? 'View on the site ↗' : 'Preview the map on the site ↗'}</a>${v.published ? '' : html` <span class="muted">(the title and introduction show once it is published)</span>`}
       <span class="muted">· stored: <code>${val('query')}</code></span></p>` : ''}
     <div class="field-pair"><div class="field"><label for="fv-title">Title</label><input id="fv-title" name="title" value="${val('title')}" required placeholder="e.g. Van Gogh and Gauguin in Arles"></div>
       <div class="field"><label for="fv-slug">Slug</label><input id="fv-slug" name="slug" value="${val('slug')}" placeholder="from the title" pattern="[a-z0-9]+(-[a-z0-9]+)*"
@@ -105,7 +108,7 @@ router.get('/featured', async (req, res) => {
         <td><a href="/featured/${r.slug}/edit">${r.title}</a>${r === firstPublished ? html` <span class="tag ok">home page</span>` : ''}</td>
         <td class="muted">${r.slug}</td>
         <td>${r.published ? 'published' : html`<span class="muted">draft</span>`}${r.problems ? html` <span class="tag flagged">${r.problems} problem${r.problems === 1 ? '' : 's'}</span>` : ''}</td>
-        <td><a href="${preview(r.query)}" target="_blank" rel="noopener">preview ↗</a></td></tr></tbody>`)}
+        <td><a href="${siteLink(r)}" target="_blank" rel="noopener">${r.published ? 'view' : 'preview'} ↗</a></td></tr></tbody>`)}
     </table></div>` : html`<p class="muted">No views yet — the home page shows everything.</p>`}` });
 });
 

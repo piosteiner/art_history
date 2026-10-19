@@ -16,7 +16,9 @@ test('start views: pasted from the site, checked, published in order, following 
   await Promise.all([userA.waitForNavigation(), userA.click('.featured-form button:has-text("Create")')]);
   await expect(userA).toHaveURL(/\/featured\/van-gogh-and-gauguin\/edit\?done=created/);
   const query = 'artists=vincent-van-gogh,paul-gauguin&movements=none&from=1886&to=1890';   // commas readable, the site's switch gone
-  await expect(userA.locator('a:has-text("Preview on the site")')).toHaveAttribute('href', `https://arthistory.piogino.ch/?${query}`);
+  await expect(userA.locator('.featured-form')).toContainText(`stored: ${query}`);
+  // published: the link opens the view as readers see it (chosen in the switcher, its intro), not the bare query
+  await expect(userA.locator('a:has-text("View on the site")')).toHaveAttribute('href', 'https://arthistory.piogino.ch/?featured=van-gogh-and-gauguin');
 
   // a view with problems: saved, but not published
   await userA.goto('/featured/new');
@@ -31,6 +33,7 @@ test('start views: pasted from the site, checked, published in order, following 
   await expect(problems).toContainText('no artist “nobody-at-all”');
   await expect(problems).toContainText('from is after to');
   await expect(userA.locator('input[name=published]')).not.toBeChecked();
+  await expect(userA.locator('a:has-text("Preview the map on the site")')).toHaveAttribute('href', 'https://arthistory.piogino.ch/?artists=nobody-at-all&colour=red&from=1900&to=1800');
   await userA.goto('/quality');
   await expect(userA.locator('.flash.error', { hasText: 'start view has problems' })).toBeVisible();
 
