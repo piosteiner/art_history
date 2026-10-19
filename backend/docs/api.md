@@ -488,6 +488,11 @@ subject_types, object_types, description, derived`. `category` is meant for map/
   (ST_ClusterDBSCAN, radius in screen pixels, 10–120): Point features with `bbox` [w, s, e, n] (zoom into it) and
   `properties: {cluster, places, presence, top: [{slug, name, presence}] (≤ 5)}`.
 
+### Several artworks' provenance
+`GET /v1/map/provenances?artworks=slug,slug,…` (at most 300) → `{data: {slug: provenance}}` — each the `provenance` member
+of that artwork's map (above); unknown slugs are left out. For pages that draw many provenances at once (the start
+map's overview): one request instead of one per artwork.
+
 ## Graph
 `GET /v1/graph/<type>/:slug?depth=2&types=influenced_by,student_of` — the network around an entity, following
 links both ways up to `depth` (1–4) hops. Default `types`: everything except place links (those are map material).

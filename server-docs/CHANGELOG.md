@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-19
 
+### Several artworks' provenance in one request (`/v1/map/provenances`)
+- **What:** `GET /v1/map/provenances?artworks=slug,…` (≤ 300) → `{data: {slug: provenance}}` (`provenanceRoute()` in
+  `src/routes/map.js`, four at a time). The site's start map uses it for its overview instead of one map request per
+  artwork (frontend commit after this one). Test in `provenance-records.spec.js`.
+- **Why:** with ~110 artworks the start page queued ~110 requests (≈ 11 s here, more from far away); the Pages tests
+  (run in the US against the live API) timed out at "Loading…" and the site was no longer published.
+- **Revert:** revert the commit (the old site keeps working: it doesn't call the endpoint).
+
 ### Provenance periods with an end known only as "or later" (migration 105)
 - **What:** `provenance_periods` (patched as it stands): an end given as "… or later" (an open range) now counts from
   its earliest day — `coalesce(upper(r), lower(r) + 1)` — for a recorded end, an end implied by the next acquisition

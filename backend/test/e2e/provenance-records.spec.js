@@ -113,3 +113,11 @@ test('an end known only as "or later" (105): the holder\'s period runs to its ea
   sql(`UPDATE provenance SET ended = '[1749-06-08,)'::daterange, ended_label = '8 June 1749 or later' WHERE artwork_id = ${W} AND position = 0`);
   expect(sql(`SELECT period::text FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('[1650-01-01,1749-06-09)');
 });
+
+test('several artworks\' provenance at once (/v1/map/provenances): the same as each artwork\'s map', async ({ request }) => {
+  const one = await api(request, '/map/artworks/test-records-w');
+  const many = await api(request, '/map/provenances?artworks=test-records-w,the-starry-night,no-such-work');
+  expect(Object.keys(many.data).sort()).toEqual(['test-records-w', 'the-starry-night']);
+  expect(many.data['test-records-w']).toEqual(one.provenance);
+  expect((await request.get(`${API}/map/provenances?artworks=Bad%20Slug`, { headers: { Host: 'api.localhost' } })).status()).toBe(400);
+});

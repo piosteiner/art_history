@@ -82,6 +82,20 @@ router.get('/presence', async (req, res) => {
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
 
+// Several artworks' provenance on the map at once (?artworks=slug,slug … — at most 300): {data: {slug: provenance}},
+// each as in an artwork's map (`provenance`). The start map's overview draws every artwork's provenance: one request
+// instead of one per artwork (≈ 110 requests queued behind each other made the start page take 10 s and more).
+router.get('/provenances', async (req, res) => {
+  const slugs = [...new Set(listParam(req.query, 'artworks', /^[a-z0-9-]+$/) || [])];
+  if (slugs.length > 300) throw badRequest('at most 300 artworks');
+  const { rows } = await apiPool.query('SELECT id, slug FROM artworks WHERE slug = ANY ($1::text[])', [slugs]);
+  const data = {};
+  for (let i = 0; i < rows.length; i += 4) {  // a few at a time: the pool is shared with every other request
+    await Promise.all(rows.slice(i, i + 4).map(async (r) => { data[r.slug] = await provenanceRoute(r.id); }));
+  }
+  res.json({ data });
+});
+
 router.get('/:plural/:slug', async (req, res) => {
   const e = ENTITIES[req.params.plural];
   if (!e || e.type === 'place') throw notFound();
