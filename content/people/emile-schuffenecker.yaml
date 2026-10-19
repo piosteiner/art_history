@@ -1,0 +1,23 @@
+public_id: "101113"
+name: Émile Schuffenecker
+given_name: Émile
+family_name: Schuffenecker
+kind: person
+birth: 1851
+death: 1934
+wikidata_id: Q286456
+metadata:
+  sources: [Wikidata Q286456 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q286456
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q286456
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q286456

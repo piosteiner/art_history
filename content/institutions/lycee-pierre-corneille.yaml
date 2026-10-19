@@ -1,0 +1,11 @@
+public_id: "100824"
+name: Lycée Pierre-Corneille
+founded: 1593
+wikidata_id: Q3268638
+metadata:
+  sources: [Wikidata Q3268638 (retrieved 2026-10-18)]
+sources:
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q3268638

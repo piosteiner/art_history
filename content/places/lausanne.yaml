@@ -1,0 +1,16 @@
+public_id: "100982"
+name: Lausanne
+kind: settlement
+location: [6.63333, 46.53333]
+wikidata_id: Q807
+metadata:
+  sources: [Wikidata Q807 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q807
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q807

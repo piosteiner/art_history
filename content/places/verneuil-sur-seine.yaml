@@ -1,0 +1,29 @@
+public_id: "100989"
+name: Verneuil-sur-Seine
+names:
+  - lang: ja
+    role: translation
+    text: ヴェルヌイユ＝シュル＝セーヌ
+  - lang: zh
+    role: translation
+    text: 塞纳河畔韦尔讷伊
+kind: settlement
+parent: france
+country_code: FR
+location: [1.97389, 48.97972]
+wikidata_id: Q642326
+metadata:
+  sources: [Wikidata Q642326 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q642326
+  parent:
+    - accessed: 2026-10-18
+      property: P131
+      wikidata: Q642326
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q642326

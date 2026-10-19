@@ -1,0 +1,29 @@
+public_id: "101019"
+name: Hugo von Tschudi
+given_name: Hugo
+family_name: von Tschudi
+kind: person
+occupations: [art historian, museum director]
+birth: 1851-02-07
+death: 1911-11-23
+description_md: Director of the Nationalgalerie in Berlin, from 1909 general director of the Bavarian State Painting Collections in Munich.
+wikidata_id: Q124186
+metadata:
+  sources: [Wikidata Q124186 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q124186
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q124186
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q124186
+  occupations:
+    - accessed: 2026-10-18
+      property: P106
+      wikidata: Q124186

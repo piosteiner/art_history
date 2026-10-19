@@ -65,4 +65,5 @@ relationships:
   - type: associated_with
     to: movement/post-impressionism
 identifiers:
+  dome: "401"
   gnd: "118540416"

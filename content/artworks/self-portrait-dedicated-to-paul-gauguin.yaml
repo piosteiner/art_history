@@ -34,6 +34,84 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Zelfportret_(Van_Gogh_%26_Japan).jpg
     license: Public domain
     credit: Vincent van Gogh
+provenance:
+  - owner: artist/paul-gauguin
+    acquired: 1888
+    ended: 1897
+    method: gift
+    direct: true
+    place: arles
+    label: given by the artist, Arles; sold (Fr 300)
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner: person/ambroise-vollard
+    role: dealer
+    place: paris
+    label: named in brackets in the record
+    certainty: possible
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner: person/paul-cassirer
+    role: dealer
+    place: berlin
+    label: named in brackets in the record
+    certainty: possible
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner: person/hugo-von-tschudi
+    further_places: [munich]
+    acquired: 1906
+    ended: 1911
+    place: berlin
+    label: Berlin, then Munich by c. 1909
+    notes_md: Tschudi bought the painting for the Nationalgalerie, Berlin, with funds from sponsors, but did not submit it to the Kaiser for approval; he took it to Munich when he took up a post there.
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner: person/angela-von-tschudi
+    acquired: 1911
+    ended: 1919
+    method: inheritance
+    direct: true
+    place: munich
+    label: his widow
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner: institution/bavarian-state-painting-collections
+    acquired: 1919
+    ended: 1938-03-27
+    direct: true
+    place: munich
+    label: Neue Staatsgalerie, Munich
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner_label: German Reich (National Socialist authorities)
+    role: possessor
+    numbers:
+      - kind: ek
+        number: "16554"
+    acquired: 1938-03-27
+    ended: 30 June 1939
+    method: confiscation
+    direct: true
+    label: removed from the Neue Staatsgalerie as “degenerate art”; stored at Schloss Niederschönhausen from August 1938
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner: institution/galerie-fischer
+    role: agent
+    numbers:
+      - kind: lot
+        number: "45"
+    acquired: 30 June 1939
+    ended: 30 June 1939
+    method: auction
+    direct: true
+    place: lucerne
+    label: consigned for the sale of 30 June 1939
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner: person/maurice-wertheim
+    acquired: 1939
+    ended: 1951
+    direct: true
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
+  - owner: institution/fogg-museum
+    acquired: 1951
+    method: bequest
+    direct: true
+    label: Bequest from the Collection of Maurice Wertheim, Class of 1906
+    sources: ["Harvard Art Museums, 1951.65 (Self-Portrait Dedicated to Paul Gauguin), Recorded Ownership History"]
 sources:
   created:
     - accessed: 2026-10-16

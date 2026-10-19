@@ -1,11 +1,35 @@
 public_id: "100477"
 name: Fogg Museum
+names: [Fogg Art Museum, William Hayes Fogg Museum of Art]
 founded: 1896
+place: cambridge
+location: [-71.11436, 42.37409]
+website_url: https://harvardartmuseums.org/
 wikidata_id: Q809600
 metadata:
   sources: [Wikidata Q809600 (retrieved 2026-10-16)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Fogg_Art_Museum%2C_Harvard_University.jpg/1280px-Fogg_Art_Museum%2C_Harvard_University.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fogg_Art_Museum,_Harvard_University.jpg
+    license: Public domain
+    credit: Daderot
+identifiers:
+  bnf: 11988559g
+  gnd: 7797-5
+  idref: 02760215X
+  lc: n79105958
+  ulan: "500265900"
+  viaf: "132449533"
 sources:
+  place:
+    - accessed: 2026-10-18
+      property: P131
+      wikidata: Q809600
   founded:
     - accessed: 2026-10-16
       property: P571
+      wikidata: Q809600
+  location:
+    - accessed: 2026-10-18
+      property: P625
       wikidata: Q809600

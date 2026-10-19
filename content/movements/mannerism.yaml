@@ -1,0 +1,23 @@
+public_id: "101087"
+name: Mannerism
+kind: style
+parent: renaissance
+period: 1520s–1590
+wikidata_id: Q131808
+metadata:
+  sources: [Wikidata Q131808 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/italy
+    period: 1520s–1590
+    sources: ["Getty Art & Architecture Thesaurus, “Mannerist” (AAT 300021144): “in evidence approximately from the 1520s to 1590, developing chiefly in Rome and spreading elsewhere in Europe”"]
+  - type: active_in
+    to: place/europe
+    period: c. 1530–c. 1600
+    sources: ["Getty Art & Architecture Thesaurus, “Mannerist” (AAT 300021144): “developing chiefly in Rome and spreading elsewhere in Europe”", "Wikidata, Mannerism (Q131808): start time 1520 / 1525, end time 1600"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q131808
+  period: ["Getty Art & Architecture Thesaurus, “Mannerist” (AAT 300021144): “in evidence approximately from the 1520s to 1590, developing chiefly in Rome and spreading elsewhere in Europe”"]

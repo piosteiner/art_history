@@ -7,6 +7,7 @@ materials: [oil paint, copper]
 institution: kunsthaus-zurich
 inventory_number: KS 4
 web_url: https://collection.kunsthaus.ch/en/collection/item/620/
+on_loan: true
 wikidata_id: Q131585473
 metadata:
   sources: [Wikidata Q131585473 (retrieved 2026-10-09)]
@@ -15,6 +16,120 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Jan_Brueghel_(I)_-_Die_Sintflut_mit_der_Arche_Noah_-_KS_4_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
     credit: Jan Brueghel the Younger
+provenance:
+  - owner: person/benedetto-giustiniani
+    acquired: 1601/1606
+    ended: 1621-03-27
+    direct: true
+    place: rome
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        note: "Footnote: Kat. Musée départemental de Flandre 2025, S. 104."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/william-williams-of-aberpergwm
+    ended: 1855
+    label: Aberpergwm House, Glynneath
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/william-williams-of-aberpergwm
+    role: estate
+    acquired: 1855
+    method: inheritance
+    direct: true
+    label: Glynneach
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/godfrey-herbert-joseph-williams
+    ended: 1922
+    method: inheritance
+    direct: true
+    label: St. Donat's Castle, St. Donats, Wales
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    numbers:
+      - kind: lot
+        number: "115"
+    acquired: 1946-10-04
+    ended: 1946-10-04
+    method: auction
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        note: "Footnote: Wie oben Fussnote 2. "
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/edward-speelman
+    role: dealer
+    acquired: 1946
+    ended: 1946
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthandel-pieter-de-boer
+    role: dealer
+    acquired: 1946
+    ended: 1946
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/einar-perman
+    label: Stockholm
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/a-thustrup
+    label: Djubsholm
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/galerie-de-boer
+    role: dealer
+    acquired: 1961
+    ended: 1961
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner_label: Betty and David M. Koetser
+    acquired: before 1978
+    ended: 1986
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/stiftung-betty-und-david-koetser
+    acquired: 1986
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/620/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   created:
     - accessed: 2026-10-09

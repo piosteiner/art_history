@@ -32,7 +32,15 @@ relationships:
   - type: visited
     to: place/pont-aven
     period: 1886
+  - type: student_of
+    to: artist/camille-pissarro
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q134741
   - type: contemporary_of
     to: artist/vincent-van-gogh
   - type: associated_with
     to: movement/post-impressionism
+identifiers:
+  dome: "132"

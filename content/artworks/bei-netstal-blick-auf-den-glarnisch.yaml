@@ -15,6 +15,33 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Johann_Gottfried_Steffan_-_Bei_Netstal._Blick_auf_den_Gl%C3%A4rnisch_-_2630_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
     credit: Johann Gottfried Steffan
+provenance:
+  - owner: person/theodor-meyer
+    ended: 1922
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3990/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/marie-bauer
+    acquired: 1922
+    ended: 1943
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3990/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1943
+    method: bequest
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3990/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission Archiv 10.30.10.41-42, 31.03.1943, II.1."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   created:
     - accessed: 2026-10-09

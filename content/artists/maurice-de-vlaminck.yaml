@@ -1,0 +1,20 @@
+public_id: "100746"
+name: Maurice de Vlaminck
+given_name: Maurice
+family_name: de Vlaminck
+birth: 1876-04-04
+death: 1958-10-11
+wikidata_id: Q241098
+metadata:
+  sources: [Wikidata Q241098 (retrieved 2026-10-18)]
+identifiers:
+  dome: "88"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q241098
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q241098

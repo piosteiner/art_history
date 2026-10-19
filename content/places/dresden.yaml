@@ -1,0 +1,16 @@
+public_id: "100992"
+name: Dresden
+kind: settlement
+location: [13.73814, 51.04933]
+wikidata_id: Q1731
+metadata:
+  sources: [Wikidata Q1731 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1731
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q1731

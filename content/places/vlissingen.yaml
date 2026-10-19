@@ -1,0 +1,16 @@
+public_id: "100906"
+name: Vlissingen
+kind: settlement
+location: [3.58333, 51.45]
+wikidata_id: Q10084
+metadata:
+  sources: [Wikidata Q10084 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q10084
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q10084

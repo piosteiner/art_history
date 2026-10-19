@@ -7,6 +7,7 @@ materials: [oil paint on canvas]
 dimensions: [54, 81]
 institution: kunsthaus-zurich
 inventory_number: 1968/0004
+web_url: https://collection.kunsthaus.ch/de/collection/item/2206/
 wikidata_id: Q124250874
 metadata:
   sources: [Wikidata Q124250874 (retrieved 2026-10-05)]
@@ -15,6 +16,133 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Phare_de_Honfleur_-_1968-0004_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
     credit: Claude Monet
+provenance:
+  - owner: person/francois-depeaux
+    direct: true
+    label: Rouen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/hotel-drouot
+    role: agent
+    numbers:
+      - kind: lot
+        number: "33"
+    acquired: 1901-04-25
+    ended: 1901-04-25
+    method: auction
+    direct: true
+    place: paris
+    label: the Depeaux sale
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1901-04-25
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/lord-grimthorpe
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    numbers:
+      - kind: lot
+        number: "7"
+    acquired: 1906-05-12
+    ended: 1906-05-12
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner_label: Rosenberg and Bernheim-Jeune
+    role: dealer
+    acquired: 1906 or earlier
+    ended: 1906 or later
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/hugo-nathan
+    acquired: c. 1913
+    ended: 1922
+    direct: true
+    label: Frankfurt a. M.
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/martha-nathan
+    further_places: [geneva]
+    acquired: 1922
+    ended: 4 December 1938 or later
+    method: inheritance
+    direct: true
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/paul-bottenwieser
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/adolf-johr
+    ended: 30 June 1953
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/walter-a-johr
+    acquired: 1953
+    ended: 1975
+    method: inheritance
+    direct: true
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1968
+    ended: 1975
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1975
+    method: gift
+    direct: true
+    place: zurich
+    label: gift of the heirs of Adolf Jöhr
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2206/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   created:
     - accessed: 2026-10-05

@@ -1,0 +1,22 @@
+public_id: "101093"
+name: Biedermeier
+kind: style
+period: 1820s–1850s
+wikidata_id: Q154432
+metadata:
+  sources: [Wikidata Q154432 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/austria
+    period: 1820s–1850s
+    sources: ["Getty Art & Architecture Thesaurus, “Biedermeier” (AAT 300021434): “a style of Central European arts prevalent from the 1820s to the 1850s”"]
+  - type: active_in
+    to: place/germany
+    period: 1820s–1850s
+    sources: ["Getty Art & Architecture Thesaurus, “Biedermeier” (AAT 300021434): “a style of Central European arts prevalent from the 1820s to the 1850s”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q154432
+  period: ["Getty Art & Architecture Thesaurus, “Biedermeier” (AAT 300021434): “a style of Central European arts prevalent from the 1820s to the 1850s”"]

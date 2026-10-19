@@ -1,0 +1,16 @@
+public_id: "100822"
+name: Rotterdam
+kind: settlement
+location: [4.48, 51.92]
+wikidata_id: Q34370
+metadata:
+  sources: [Wikidata Q34370 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q34370
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q34370

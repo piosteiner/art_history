@@ -1,16 +1,19 @@
 public_id: "100214"
 name: Impressionism
 kind: movement
-period: 1860/1869
+period: 1860/1886
+period_label: 1860s–1886 (the last Impressionist exhibition)
 wikidata_id: Q40415
 metadata:
   sources: [Wikidata Q40415 (retrieved 2026-10-12)]
+relationships:
+  - type: active_in
+    to: place/france
+    period: 1860s–1886
+    sources: ["Wikidata, Impressionism (Q40415): inception 1860s", "Getty Art & Architecture Thesaurus, “Neo-Impressionist” (AAT 300021505): “a group of French artists including those exhibiting in the eighth and last Impressionist exhibition”", "Getty Art & Architecture Thesaurus, “Impressionist (style)” (AAT 300021503): “the movement in 19th-century Western art that developed in France”"]
 sources:
   kind:
     - accessed: 2026-10-12
       property: P31
       wikidata: Q40415
-  period:
-    - accessed: 2026-10-12
-      property: P580
-      wikidata: Q40415
+  period: ["Wikidata, Impressionism (Q40415): inception 1860s", "Getty Art & Architecture Thesaurus, “Neo-Impressionist” (AAT 300021505): “a group of French artists including those exhibiting in the eighth and last Impressionist exhibition”", "Getty Art & Architecture Thesaurus, “Impressionist (style)” (AAT 300021503): “the movement in 19th-century Western art that developed in France”"]

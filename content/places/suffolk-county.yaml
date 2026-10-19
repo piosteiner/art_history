@@ -1,0 +1,16 @@
+public_id: "100941"
+name: Suffolk County
+kind: site
+location: [-71.07349, 42.33495]
+wikidata_id: Q54072
+metadata:
+  sources: [Wikidata Q54072 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q54072
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q54072

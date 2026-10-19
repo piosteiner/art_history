@@ -1,0 +1,19 @@
+public_id: "100896"
+name: High Renaissance
+kind: style
+parent: italian-renaissance
+period: 1494/1527
+wikidata_id: Q1474884
+metadata:
+  sources: [Wikidata Q1474884 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/italy
+    period: 1494/1527
+    sources: ["Getty Art & Architecture Thesaurus, “High Renaissance” (AAT 300021142): “developed primarily in the last decade of the fifteenth century in Florence and Rome … generally considered to end with the development of Mannerism in the 1520s”", "Wikidata, High Renaissance (Q1474884): start time 1494, end time 1527"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1474884
+  period: ["Getty Art & Architecture Thesaurus, “High Renaissance” (AAT 300021142): “developed primarily in the last decade of the fifteenth century in Florence and Rome … generally considered to end with the development of Mannerism in the 1520s”", "Wikidata, High Renaissance (Q1474884): start time 1494, end time 1527"]

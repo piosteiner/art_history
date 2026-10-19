@@ -1,0 +1,70 @@
+public_id: "100791"
+title_lang: en
+title: Sunflowers
+names:
+  - lang: de
+    role: translation
+    text: Sonnenblumen
+    status: official
+creator: vincent-van-gogh
+created: 1888
+kind: oil painting
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [92, 73]
+institution: neue-pinakothek
+inventory_number: "8672"
+web_url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+wikidata_id: Q21948547
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Vincent_Willem_van_Gogh_128.jpg/1280px-Vincent_Willem_van_Gogh_128.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_Willem_van_Gogh_128.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Sunflowers_-_Vincent_van_Gogh_%28munich_version%29.jpg/1280px-Sunflowers_-_Vincent_van_Gogh_%28munich_version%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sunflowers_-_Vincent_van_Gogh_(munich_version).jpg
+    license: CC BY 4.0
+    credit: GoldenArtists
+provenance:
+  - owner_label: Estate of Vincent and Theo van Gogh
+    role: estate
+    acquired: 1890-07-29
+    method: inheritance
+    direct: true
+    label: from Vincent’s death
+    sources: ["Van Gogh Museum Journal 1999, appendix, F 456 / JH 1561, provenance: https://dbnl.org/tekst/_van012199901_01/_van012199901_01_0006.php (accessed 2026-10-18)"]
+  - owner: person/paul-cassirer
+    role: agent
+    ended: 1905-05-20
+    place: berlin
+    label: on consignment
+    sources: ["Van Gogh Museum Journal 1999, appendix, F 456 / JH 1561, provenance: https://dbnl.org/tekst/_van012199901_01/_van012199901_01_0006.php (accessed 2026-10-18)"]
+  - owner: person/hugo-von-tschudi
+    further_places: [munich]
+    acquired: 1905-05-20
+    ended: 1911-11-23
+    method: purchase
+    direct: true
+    place: berlin
+    label: bought through Paul Cassirer
+    sources: ["Van Gogh Museum Journal 1999, appendix, F 456 / JH 1561, provenance: https://dbnl.org/tekst/_van012199901_01/_van012199901_01_0006.php (accessed 2026-10-18)"]
+  - owner: person/hugo-von-tschudi
+    role: estate
+    acquired: 1911-11-23
+    ended: 1912-01-25
+    method: inheritance
+    direct: true
+    sources: ["Van Gogh Museum Journal 1999, appendix, F 456 / JH 1561, provenance: https://dbnl.org/tekst/_van012199901_01/_van012199901_01_0006.php (accessed 2026-10-18)"]
+  - owner_label: Anonymous benefactor
+    acquired: 1912-01-25
+    method: purchase
+    direct: true
+    label: from Tschudi’s estate, for the Tschudi donation (Tschudi-Spende)
+    sources: ["Van Gogh Museum Journal 1999, appendix, F 456 / JH 1561, provenance: https://dbnl.org/tekst/_van012199901_01/_van012199901_01_0006.php (accessed 2026-10-18)"]
+  - owner: institution/bavarian-state-painting-collections
+    acquired: 1912
+    method: gift
+    direct: true
+    place: munich
+    label: Neue Pinakothek, inv. 8672 — anonymous gift within the Tschudi donation (Tschudi-Spende)
+    sources: ["Bayerische Staatsgemäldesammlungen, online collection, inv. 8672 (“1912 als anonyme Schenkung im Rahmen der Tschudi-Spende erworben”): https://www.sammlung.pinakothek.de/en/artwork/Y0GR9B7LRX (accessed 2026-10-18)", "Van Gogh Museum Journal 1999, appendix, F 456 / JH 1561, provenance: https://dbnl.org/tekst/_van012199901_01/_van012199901_01_0006.php (accessed 2026-10-18)"]

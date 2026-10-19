@@ -1,0 +1,146 @@
+public_id: "100974"
+title_lang: fr
+title: Branches de marronnier en fleur
+names:
+  - lang: de
+    role: translation
+    text: Blühende Kastanienzweige
+    status: official
+  - lang: en
+    role: translation
+    text: Blossoming Chestnut Branches
+    status: official
+creator: vincent-van-gogh
+created: 1890-05
+dimensions: [73, 91]
+institution: kunsthaus-zurich
+inventory_number: BU 0053
+web_url: https://collection.kunsthaus.ch/de/collection/item/586966/
+on_loan: true
+wikidata_id: Q4928450
+metadata:
+  sources: [Wikidata Q4928450 (retrieved 2026-10-18)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/Vincent_van_Gogh_-_Branches_de_marronnier_en_fleur_-_53_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Branches_de_marronnier_en_fleur_-_53_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    role: estate
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        note: "Footnote: Für die Nachfolge beim Tod des Künstlers, siehe Stolwijk/Veenenbos/van Gogh-Bonger 2002, S. 21–22."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/paul-ferdinand-gachet
+    acquired: 1890
+    ended: 1909
+    method: gift
+    direct: true
+    place: auvers-sur-oise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        note: "Footnote: Von der Familie des Künstlers geschenkt; Kat. Grand Palais/Metropolitan Museum of Art, New York/Van Gogh Museum 1999, No. P.G.III-13, S. 256."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/paul-gachet-jr
+    acquired: 1909
+    ended: 1912
+    direct: true
+    place: auvers-sur-oise
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        note: "Footnote: Wie oben Fussnote 3: Sohn des oben Genannten."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1909-03-09
+    ended: 1912 or later
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/pierre-franz-walther-von-mendelssohn
+    acquired: 1914
+    ended: 1935
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        note: "Footnote: Kat. Galerie Paul Cassirer, Berlin 1914, No. 135."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/peter-nikolaus-witt
+    acquired: 1951
+    ended: 1951-02-11
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        note: "Footnote: Enkel von Franz von Mendelssohn (und Sohn von Emma Witt-von Mendelssohn), AStEGB, Brief von Dr. Peter N. Witt, Bern, an Emil Bührle, 31.01.1951, zur Bestätigung eines Gesprächs vom selben Tag über den Verkauf von zwei Gemälden von Vincent van Gogh, «Le champ de blé jaune» [F.717] und «Branches de marronniers en fleurs» [F.820] aus der Sammlung seines Grossvaters für CHF 550.000."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-02-11
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 250000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        note: "Footnote: Erworben von dem oben Genannten, AStEGB, Brief von Emil Bührle an Dr. Peter N. Witt, Bern, 03.02.1951, in dem er den Erhalt des obigen Schreibens bestätigt und die Überweisung von CHF 550.000 für die beiden Gemälde ankündigt; Brief von Dr. Peter N. Witt, Bern, an Emil Bührle, 11.02.1951, in dem er den Erhalt von CHF 550.000 bestätigt; Eingangsbuch I, 15.01.1951, das Dr. F. Nathan als Einlieferer ausweist und einen Preis von CHF 280.000 angibt. Der Preis für [F.717], von Nathan am 05.01.1951 eingeliefert, wird im Eingangsbuch mit CHF 350.000 angegeben; als das Gemälde jedoch kurz darauf für eine Reproduktion an eine Druckerei in Zürich ausgeliehen wurde, war es für CHF 300.000 versichert, AStEGB, Versicherungspolice der Helvetia Feuer St. Gallen, ausgestellt auf J. E. Wolfensberger, Zürich, 19.07.1951; daher ist anzunehmen, dass es sich bei den im Eingangsbuch I angegebenen Preisen um Angebotspreise handelte und sich die individuell bezahlten Preise für die beiden Gemälde auf CHF 300.000 für F.717 und CHF 250.000 für F.820 beliefen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28 or earlier
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/foundation-e-g-buhrle-collection
+    numbers:
+      - kind: inventory
+        number: "53"
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+sources:
+  created:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q4928450
+  creator:
+    - accessed: 2026-10-18
+      property: P170
+      wikidata: Q4928450
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/586966/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18

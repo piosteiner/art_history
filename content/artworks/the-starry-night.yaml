@@ -47,6 +47,53 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg
     license: Public domain
     credit: Vincent van Gogh
+provenance:
+  - owner: person/theo-van-gogh
+    acquired: 1889-09
+    ended: 1891-01-25
+    direct: true
+    place: paris
+    sources: ["Wikidata, The Starry Night (Q45585): owned by (P127) with start and end times — statements without references"]
+  - owner: person/johanna-van-gogh-bonger
+    acquired: 1891-01-25
+    ended: 1900-12
+    method: inheritance
+    direct: true
+    sources: ["Wikidata, The Starry Night (Q45585): owned by (P127) with start and end times — statements without references"]
+  - owner: person/julien-leclercq
+    acquired: 1900-12
+    ended: 1901
+    direct: true
+    place: paris
+    sources: ["Wikidata, The Starry Night (Q45585): owned by (P127) with start and end times — statements without references"]
+  - owner: person/emile-schuffenecker
+    acquired: 1901
+    direct: true
+    place: paris
+    sources: ["Wikidata, The Starry Night (Q45585): owned by (P127) with start and end times — statements without references"]
+  - owner: person/johanna-van-gogh-bonger
+    acquired: 1905-07
+    ended: 1906
+    sources: ["Wikidata, The Starry Night (Q45585): owned by (P127) with start and end times — statements without references"]
+  - owner: person/georgette-van-stolk
+    acquired: 1906
+    ended: 1938
+    direct: true
+    place: rotterdam
+    sources: ["Wikidata, The Starry Night (Q45585): owned by (P127) with start and end times — statements without references"]
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1938
+    ended: 1941
+    direct: true
+    sources: ["Wikidata, The Starry Night (Q45585): owned by (P127) with start and end times — statements without references"]
+  - owner: institution/museum-of-modern-art
+    acquired: 1941
+    method: exchange
+    direct: true
+    place: new-york-city
+    label: acquired through the Lillie P. Bliss Bequest (by exchange)
+    sources: ['The Museum of Modern Art: "Acquired through the Lillie P. Bliss Bequest (by exchange), 1941" (credit line)']
 identifiers:
   gnd: 4209985-7
   viaf: "176354386"

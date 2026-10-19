@@ -1,0 +1,23 @@
+public_id: "101112"
+name: Julien Leclercq
+given_name: Julien
+family_name: Leclercq
+kind: person
+birth: 1865
+death: 1901
+wikidata_id: Q3189563
+metadata:
+  sources: [Wikidata Q3189563 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q3189563
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q3189563
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q3189563

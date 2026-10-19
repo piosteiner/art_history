@@ -1,0 +1,30 @@
+public_id: "101020"
+name: Museum Brandhorst
+kind: museum
+founded: 2009
+location: [11.5742, 48.1481]
+address: Theresienstraße 35a, 80333 München, Germany
+website_url: https://www.museum-brandhorst.de/
+wikidata_id: Q258597
+metadata:
+  sources: [Wikidata Q258597 (retrieved 2026-10-18)]
+relationships:
+  - type: part_of
+    to: institution/bavarian-state-painting-collections
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q258597
+  address:
+    - accessed: 2026-10-18
+      property: P6375
+      wikidata: Q258597
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q258597
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q258597

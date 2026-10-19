@@ -16,6 +16,14 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:John_Scarlett_Davis_-_The_Interior_of_the_British_Institution_Gallery_-_Google_Art_Project.jpg
     license: Public domain
     credit: John Scarlett Davis
+provenance:
+  - owner: person/paul-mellon
+    label: Paul Mellon Collection
+    sources: ['Yale Center for British Art, B1981.25.212, credit line: "Yale Center for British Art, Paul Mellon Collection"']
+  - owner: institution/yale-center-for-british-art
+    direct: true
+    label: Paul Mellon Collection
+    sources: ["Yale Center for British Art, B1981.25.212, credit line"]
 sources:
   created:
     - accessed: 2026-10-09

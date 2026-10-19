@@ -2,3 +2,72 @@ public_id: "100278"
 name: Niklaus Weckmann
 given_name: Niklaus
 family_name: Weckmann
+names:
+  - Niclaus Weckmann
+  - lang: it
+    role: translation
+    text: Nikolaus Weckmann
+  - lang: es
+    role: translation
+    text: Nicolaus Weckmann
+birth: 1481
+death: 1526
+wikidata_id: Q1990482
+metadata:
+  sources: [Wikidata Q1990482 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q1990482
+  - type: born_in
+    to: place/ulm
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q1990482
+      - url: https://rkd.nl/en/explore/artists/114578
+        source: rkd
+        accessed: 2026-10-18
+  - type: died_in
+    to: place/ulm
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q1990482
+      - url: https://rkd.nl/en/explore/artists/114578
+        source: rkd
+        accessed: 2026-10-18
+  - type: worked_in
+    to: place/ulm
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q1990482
+      - url: https://d-nb.info/gnd/119107392
+        source: gnd
+        accessed: 2026-10-18
+identifiers:
+  gnd: "119107392"
+  idref: 24940530X
+  lc: nr94023526
+  rkd: "114578"
+  ulan: "500331209"
+  viaf: "5733801"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q1990482
+    - url: https://rkd.nl/en/explore/artists/114578
+      source: rkd
+      accessed: 2026-10-18
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q1990482
+    - url: https://rkd.nl/en/explore/artists/114578
+      source: rkd
+      accessed: 2026-10-18

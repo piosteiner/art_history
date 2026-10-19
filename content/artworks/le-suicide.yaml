@@ -7,8 +7,22 @@ medium: Oil on canvas
 dimensions: [38, 46]
 institution: kunsthaus-zurich
 inventory_number: BU 0063
+web_url: https://collection.kunsthaus.ch/de/collection/item/604964/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/%C3%89douard_Manet_-_Le_Suicid%C3%A9_%28ca._1877%29.jpg/1280px-%C3%89douard_Manet_-_Le_Suicid%C3%A9_%28ca._1877%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Le_Suicid%C3%A9_(ca._1877).jpg
+    license: Public domain
+    credit: Édouard Manet
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/%C3%89douard_Manet_-_Le_Suicid%C3%A9_-_63_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Le_Suicid%C3%A9_-_63_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Manet
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Edouard_Manet_-_Le_Suicid%C3%A9.jpg/1280px-Edouard_Manet_-_Le_Suicid%C3%A9.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_Le_Suicid%C3%A9.jpg
+    license: Public domain
+    credit: Édouard Manet
 provenance:
   - owner: institution/hotel-drouot
     role: agent

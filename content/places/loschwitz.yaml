@@ -1,0 +1,16 @@
+public_id: "100994"
+name: Loschwitz
+kind: site
+location: [13.82167, 51.06361]
+wikidata_id: Q8939
+metadata:
+  sources: [Wikidata Q8939 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q8939
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q8939

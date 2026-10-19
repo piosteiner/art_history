@@ -16,6 +16,87 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Hodler_-_Genfersee_mit_Mont-Blanc_im_Morgenlicht.jpeg
     license: Public domain
     credit: Ferdinand Hodler
+provenance:
+  - owner: person/willy-russ-young
+    acquired: 1921 or earlier
+    ended: 1941
+    label: Neuchâtel
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1488/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2012 596, http://www.ferdinand-hodler.ch/werke.aspx?id=6005017 [Zugriff: 05.01.2022]."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/daniel-tschudy
+    acquired: 1964 or earlier
+    ended: 1979
+    label: Glarus
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1488/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2012, vgl. oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/sotheby-s
+    role: agent
+    numbers:
+      - kind: lot
+        number: "72"
+    acquired: 1979-05-19
+    ended: 1979-05-19
+    method: auction
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1488/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/charles-aeschimann
+    acquired: 1979
+    ended: 1981
+    direct: true
+    label: Montreux
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1488/
+        note: "Footnote: Werkverzeichnis Bätschmann/Müller 2012, vgl. oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner_label: heirs of Charles Aeschimann
+    acquired: 1981
+    ended: 1992
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1488/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/galerie-romer
+    role: dealer
+    acquired: 1992
+    ended: 1992
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1488/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/holenia-trust
+    acquired: 1992
+    method: purchase
+    direct: true
+    label: Vaduz
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1488/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1992
+    method: gift
+    direct: true
+    place: zurich
+    label: gift of the Holenia Trust
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1488/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   created:
     - accessed: 2026-10-09

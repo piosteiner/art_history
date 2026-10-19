@@ -12,6 +12,8 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Paul-Cezanne.jpg
     license: Public domain
     credit: Unknown; Cézanne was born in 1839 and died in 1906
+identifiers:
+  dome: "58"
 sources:
   birth:
     - accessed: 2026-10-07

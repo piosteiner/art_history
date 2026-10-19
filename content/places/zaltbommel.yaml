@@ -1,0 +1,16 @@
+public_id: "100902"
+name: Zaltbommel
+kind: settlement
+location: [5.247, 51.81231]
+wikidata_id: Q73462
+metadata:
+  sources: [Wikidata Q73462 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q73462
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q73462

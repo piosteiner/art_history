@@ -1,0 +1,18 @@
+public_id: "101095"
+name: Expressionism
+kind: movement
+period: 1905/1920
+wikidata_id: Q80113
+metadata:
+  sources: [Wikidata Q80113 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/germany
+    period: 1905/1920
+    sources: ["Getty Art & Architecture Thesaurus, “Expressionist (style)” (AAT 300021502): “flourished between 1905 and 1920, especially in Germany”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q80113
+  period: ["Getty Art & Architecture Thesaurus, “Expressionist (style)” (AAT 300021502): “flourished between 1905 and 1920, especially in Germany”"]

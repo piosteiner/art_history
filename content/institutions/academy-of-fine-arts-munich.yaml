@@ -1,0 +1,35 @@
+public_id: "100849"
+name: Academy of Fine Arts, Munich
+names: [Munich Academy, Akademie der Bildenden Künste München, AdBK München, Munich Academy of Arts, Munich Academy of Fine Arts]
+founded: 1808
+place: munich
+location: [11.58031, 48.1532]
+website_url: https://www.adbk.de/
+wikidata_id: Q414052
+metadata:
+  sources: [Wikidata Q414052 (retrieved 2026-10-18)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Akademie_Muenchen2.JPG/1280px-Akademie_Muenchen2.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Akademie_Muenchen2.JPG
+    license: CC BY-SA 3.0 de
+    credit: David Kostner
+identifiers:
+  bnf: 12008138b
+  gnd: 1022060-4
+  idref: "028197305"
+  lc: n84106963
+  ulan: "500233460"
+  viaf: "136661549"
+sources:
+  place:
+    - accessed: 2026-10-18
+      property: P131
+      wikidata: Q414052
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q414052
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q414052

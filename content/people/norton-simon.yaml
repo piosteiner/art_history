@@ -4,12 +4,32 @@ given_name: Norton
 family_name: Simon
 names: [Norton Winfred Simon]
 kind: person
+occupations: [art collector, businessperson]
 birth: 1907-02-05
 death: 1993-06-02
+description_md: Might have had art that went to the [[institution/blaquier-arrieta-collection]]. ([Sotheby's](https://www.sothebys.com/en/series/legendary-the-blaquier-arrieta-collection))
 wikidata_id: Q327240
 metadata:
   sources: [Wikidata Q327240 (retrieved 2026-10-09)]
 relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q327240
+  - type: born_in
+    to: place/portland
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q327240
+  - type: died_in
+    to: place/beverly-hills
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q327240
   - type: founded
     to: institution/norton-simon-museum
 images:
@@ -18,7 +38,9 @@ images:
     license: Public domain
     credit: Unknown authorUnknown author
 identifiers:
+  bnf: 13620721x
   gnd: 12088108X
+  idref: "151851883"
   lc: n98013382
   ulan: "500326044"
   viaf: "25445224"

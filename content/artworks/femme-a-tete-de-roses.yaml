@@ -20,9 +20,78 @@ creator: salvador-dali
 created: 1935
 dimensions: [35, 27]
 institution: kunsthaus-zurich
+web_url: https://collection.kunsthaus.ch/de/collection/item/418/
 wikidata_id: Q102187650
 metadata:
   sources: [Wikidata Q102187650 (retrieved 2026-10-09)]
+provenance:
+  - owner: person/etienne-grandjean
+    acquired: 1949-07-23 or earlier
+    ended: 27 July 1951 or later
+    place: zurich
+    label: Oxford
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: "Footnote: «Verzeichnis der an das Kunstmuseum Zürich ausgeliehenen Kunstwerke» von Dr. Etienne Grandjean, 15.12.1950, ZKG/KHZ, Depot-Korrespondenz 1940-56; Kat. Palais des Thermes 1949, Nr. 60. Im Ausstellungskatalog von 1949 wird der Leihgeber als «Coll. Dr. Grandjean, Oxford» angegeben. Ein Werk von Dali mit dem Titel «Deux femmes», vom Eigentümer Dr. med. Etienne Grandjean, der ab 1950 an der ETH Zürich tätig war, befand sich ab dem 15.12.1950 als Depositum im Kunsthaus Zürich. Eine handschriftliche Notiz auf der Auflistung verweist auf die Abholung «sämtlicher Werke» am 27.07.1951."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1950-12-15
+    ended: 1951-07-27
+    direct: true
+    place: zurich
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: "Footnote: ZKG/KHZ, Depot-Korrespondenz 1940-56, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/martha-widmer
+    acquired: 1957 or earlier
+    ended: 1964-03-07
+    label: Winterthur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 22.10.1964, S. 1, Archiv ZKG/KHZ, 10.30.10.42a."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1957
+    ended: 1958-10-07
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: "Footnote: Empfangsbestätigung, 07.10.1958, ZKG/KHZ, Ordner «Gelöschte Depots Wel-Z»; Zürcher Kunstgesellschaft, Jahresbericht 1957, S. 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/martha-widmer
+    role: estate
+    acquired: 1964-03-07
+    ended: 1964-10-22
+    method: inheritance
+    direct: true
+    label: Winterthur
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 22.10.1964, S. 3, Archiv ZKG/KHZ, 10.30.10.42a; Brief von Dr. Hans Glarner an die Direktion des Kunsthaus Zürich, 18.03.1964, ZKG/KHZ, Ordner «Gelöschte Depots Wel-Z»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1964-10-22
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 15000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   names:
     - url: https://collection.kunsthaus.ch/de/collection/item/418/

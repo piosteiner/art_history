@@ -1,0 +1,25 @@
+public_id: "100943"
+name: Gielis Panhedel
+given_name: Gielis
+family_name: Panhedel
+birth: 1490
+death: 1557
+wikidata_id: Q2060317
+metadata:
+  sources: [Wikidata Q2060317 (retrieved 2026-10-18)]
+relationships:
+  - type: student_of
+    to: artist/hieronymus-bosch
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q130531
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q2060317
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q2060317

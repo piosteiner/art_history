@@ -7,10 +7,16 @@ medium: Oil on canvas
 dimensions: [66, 75]
 institution: kunsthaus-zurich
 inventory_number: BU 0178
+web_url: https://collection.kunsthaus.ch/de/collection/item/604959/
 on_loan: true
 on_loan_since: 2021
 provenance_status: a_clear
 provenance_status_note: "Kunsthaus Zürich: kein NS-verfolgungsbedingt entzogenes Kulturgut"
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cb/Paul_Gauguin_-_Nature_morte_au_couteau_-_178_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Nature_morte_au_couteau_-_178_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Paul Gauguin
 provenance:
   - owner: institution/galerie-eugene-druet
     role: dealer

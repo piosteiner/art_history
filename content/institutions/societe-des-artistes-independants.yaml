@@ -1,0 +1,11 @@
+public_id: "100909"
+name: Société des Artistes Indépendants
+founded: 1884
+wikidata_id: Q1420385
+metadata:
+  sources: [Wikidata Q1420385 (retrieved 2026-10-18)]
+sources:
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q1420385

@@ -7,8 +7,14 @@ medium: Oil on panel
 dimensions: [47, 53.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0152
+web_url: https://collection.kunsthaus.ch/de/collection/item/707965/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d4/Meindert_Hobbema_-_Landschaft_mit_Wirtshaus_-_152_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Meindert_Hobbema_-_Landschaft_mit_Wirtshaus_-_152_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Meindert Hobbema
 provenance:
   - owner: person/thomas-harvey-of-catton
     label: Catton House

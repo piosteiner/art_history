@@ -1,0 +1,16 @@
+public_id: "100976"
+name: Sweden
+period: 900/
+country_codes: [SE]
+wikidata_id: Q34
+metadata:
+  sources: [Wikidata Q34 (retrieved 2026-10-18)]
+sources:
+  period:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q34
+  country_codes:
+    - accessed: 2026-10-18
+      property: P297
+      wikidata: Q34

@@ -1,0 +1,16 @@
+public_id: "100803"
+name: Fontenay-aux-Roses
+kind: settlement
+location: [2.28556, 48.78917]
+wikidata_id: Q269166
+metadata:
+  sources: [Wikidata Q269166 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q269166
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q269166

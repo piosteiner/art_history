@@ -1,0 +1,28 @@
+public_id: "101017"
+name: Adolf Friedrich von Schack
+given_name: Adolf Friedrich
+family_name: von Schack
+kind: person
+occupations: [poet, art collector]
+birth: 1815-08-02
+death: 1894-04-14
+wikidata_id: Q63876
+metadata:
+  sources: [Wikidata Q63876 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q63876
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q63876
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q63876
+  occupations:
+    - accessed: 2026-10-18
+      property: P106
+      wikidata: Q63876

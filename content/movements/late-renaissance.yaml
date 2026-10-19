@@ -1,0 +1,14 @@
+public_id: "101088"
+name: Late Renaissance
+kind: style
+parent: renaissance
+period: mid 16th century–late 16th century
+metadata:
+  sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: mid 16th century–late 16th century
+    sources: ["Getty Art & Architecture Thesaurus, “Late Renaissance” (AAT 300021143): “a period and style of the middle and later decades of the 16th century in Italy and northern Europe”"]
+sources:
+  period: ["Getty Art & Architecture Thesaurus, “Late Renaissance” (AAT 300021143): “a period and style of the middle and later decades of the 16th century in Italy and northern Europe”"]

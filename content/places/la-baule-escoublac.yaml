@@ -1,0 +1,16 @@
+public_id: "100928"
+name: La Baule-Escoublac
+kind: settlement
+location: [-2.39222, 47.28583]
+wikidata_id: Q213481
+metadata:
+  sources: [Wikidata Q213481 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q213481
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q213481

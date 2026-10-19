@@ -1,0 +1,16 @@
+public_id: "100812"
+name: El Limón
+kind: site
+location: [-69.43082, 19.29229]
+wikidata_id: Q3306488
+metadata:
+  sources: [Wikidata Q3306488 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q3306488
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q3306488

@@ -1,0 +1,11 @@
+public_id: "100908"
+name: pointillism
+kind: movement
+wikidata_id: Q200034
+metadata:
+  sources: [Wikidata Q200034 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q200034

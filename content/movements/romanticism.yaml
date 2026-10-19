@@ -1,0 +1,18 @@
+public_id: "100813"
+name: Romanticism
+kind: style
+period: mid 18th century–mid 19th century
+wikidata_id: Q37068
+metadata:
+  sources: [Wikidata Q37068 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: mid 18th century–mid 19th century
+    sources: ["Getty Art & Architecture Thesaurus, “Romantic (modern European styles)” (AAT 300172863): “the European movement affecting visual arts, literature, music, and to a lesser degree architecture from the mid-18th to the mid-19th centuries”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q37068
+  period: ["Getty Art & Architecture Thesaurus, “Romantic (modern European styles)” (AAT 300172863): “the European movement affecting visual arts, literature, music, and to a lesser degree architecture from the mid-18th to the mid-19th centuries”"]

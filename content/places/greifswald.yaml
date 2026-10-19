@@ -1,0 +1,16 @@
+public_id: "100991"
+name: Greifswald
+kind: site
+location: [13.38333, 54.08333]
+wikidata_id: Q4098
+metadata:
+  sources: [Wikidata Q4098 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q4098
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q4098

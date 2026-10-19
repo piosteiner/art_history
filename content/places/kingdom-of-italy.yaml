@@ -1,0 +1,16 @@
+public_id: "100930"
+name: Kingdom of Italy
+kind: country
+location: [12.5, 41.9]
+wikidata_id: Q172579
+metadata:
+  sources: [Wikidata Q172579 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q172579
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q172579

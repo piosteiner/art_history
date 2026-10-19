@@ -1,0 +1,52 @@
+public_id: "100656"
+title: Chestnut Trees in Blossom
+names:
+  - lang: fr
+    role: translation
+    text: Châtaigniers en fleurs
+  - lang: de
+    role: translation
+    text: Blühende Kastanienbäume
+creator: vincent-van-gogh
+created: 1890-05
+materials: [oil paint, canvas]
+dimensions: [70, 58]
+web_url: http://www.vggallery.com/painting/p_0751.htm
+description_md: |-
+  The artwork went on auction in October 2026.
+  Under this circumstance the artwork was revealed for the first time after 60 years. [BBC](https://www.bbc.com/news/videos/ck0e0l3le555o)
+wikidata_id: Q26221216
+metadata:
+  sources: [Wikidata Q26221216 (retrieved 2026-10-18)]
+relationships:
+  - type: depicts
+    to: place/auvers-sur-oise
+    sources: [https://www.bbc.com/news/videos/ck0e0l3le555o]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Vincent_van_Gogh_-_Ch%C3%A2taigniers_en_fleurs.jpg/1280px-Vincent_van_Gogh_-_Ch%C3%A2taigniers_en_fleurs.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Ch%C3%A2taigniers_en_fleurs.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: institution/blaquier-arrieta-collection
+    ended: 2026-11-18
+    label: Sotheby's New York
+    certainty: possible
+    sources: [https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction?locale=en&lotFilter=AllLots]
+    check_after: 2026-11-18
+sources:
+  created:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q26221216
+    - url: https://www.theguardian.com/artanddesign/2026/sep/30/vincent-van-gogh-paul-cezanne-claude-monet-blaquier-arrieta-collection-display-sothebys-sale
+      source: theguardian-com
+      accessed: 2026-10-18
+  creator:
+    - accessed: 2026-10-18
+      property: P170
+      wikidata: Q26221216
+  dimensions:
+    - accessed: 2026-10-18
+      property: P2048
+      wikidata: Q26221216

@@ -5,6 +5,7 @@ created: 1887
 kind: painting
 medium: Oil on canvas
 institution: van-gogh-museum
+on_loan: true
 relationships:
   - type: created_in
     to: place/paris
@@ -21,3 +22,54 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Bloeiende_pruimenboomgaard_(naar_Hiroshige)_-_s0115V1962_-_Van_Gogh_Museum.jpg
     license: Public domain
     credit: Vincent van Gogh
+provenance:
+  - owner: person/theo-van-gogh
+    acquired: 1887-10/1887-11
+    ended: 1891-01-25
+    direct: true
+    place: paris
+    label: left by the artist at his brother’s apartment, Paris
+    sources: ["Van Gogh Museum, Amsterdam, s0115V1962 (Flowering Plum Orchard (after Hiroshige)), provenance"]
+  - owner: person/johanna-van-gogh-bonger
+    co_owners: [person/vincent-willem-van-gogh]
+    acquired: 1891-01-25
+    ended: 1925-09-02
+    method: inheritance
+    direct: true
+    label: inherited by his widow and their son; administered by Jo van Gogh-Bonger (Bussum, Amsterdam, Laren) until her death
+    sources: ["Van Gogh Museum, Amsterdam, s0115V1962 (Flowering Plum Orchard (after Hiroshige)), provenance"]
+  - owner: person/vincent-willem-van-gogh
+    acquired: 1925-09-02
+    ended: 1952-03-11
+    direct: true
+    label: Laren
+    sources: ["Van Gogh Museum, Amsterdam, s0115V1962 (Flowering Plum Orchard (after Hiroshige)), provenance"]
+  - owner: institution/stedelijk-museum-amsterdam
+    role: custodian
+    acquired: 1931-10-22
+    ended: 1973-06-02
+    place: amsterdam
+    label: on loan from Vincent Willem van Gogh, later from the foundations
+    sources: ["Van Gogh Museum, Amsterdam, s0115V1962 (Flowering Plum Orchard (after Hiroshige)), provenance"]
+  - owner: institution/vincent-van-gogh-foundation
+    acquired: 1952-03-11
+    ended: 1960-12-28
+    method: gift
+    direct: true
+    label: the (1st) Vincent van Gogh Foundation, Laren
+    sources: ["Van Gogh Museum, Amsterdam, s0115V1962 (Flowering Plum Orchard (after Hiroshige)), provenance"]
+  - owner: institution/theo-van-gogh-foundation
+    acquired: 1960-12-28
+    ended: 1962-07-21
+    method: transfer
+    direct: true
+    label: Laren
+    sources: ["Van Gogh Museum, Amsterdam, s0115V1962 (Flowering Plum Orchard (after Hiroshige)), provenance"]
+  - owner: institution/vincent-van-gogh-foundation
+    acquired: 1962-07-21
+    method: gift
+    direct: true
+    place: amsterdam
+    label: the (2nd) Vincent van Gogh Foundation, Amsterdam
+    notes_md: "Agreement of 21 July 1962 with the State of the Netherlands: the State preserves and manages the collection, to be placed in the Rijksmuseum Vincent van Gogh."
+    sources: ["Van Gogh Museum, Amsterdam, s0115V1962 (Flowering Plum Orchard (after Hiroshige)), provenance"]

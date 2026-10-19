@@ -1,0 +1,19 @@
+public_id: "100944"
+name: Early Netherlandish painting
+kind: style
+parent: northern-renaissance
+period: 15th century–early 16th century
+wikidata_id: Q443153
+metadata:
+  sources: [Wikidata Q443153 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/belgium
+    period: 15th century–early 16th century
+    sources: ["Getty Art & Architecture Thesaurus, “Early Netherlandish” (AAT 300387753): “the styles of art produced in the Southern Netherlands during the 15th and early 16th centuries”", "Wikidata, Early Netherlandish painting (Q443153): start time 1420s, end time 1560s"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q443153
+  period: ["Getty Art & Architecture Thesaurus, “Early Netherlandish” (AAT 300387753): “the styles of art produced in the Southern Netherlands during the 15th and early 16th centuries”", "Wikidata, Early Netherlandish painting (Q443153): start time 1420s, end time 1560s"]

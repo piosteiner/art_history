@@ -1,0 +1,16 @@
+public_id: "100819"
+name: Honfleur
+kind: settlement
+location: [0.23306, 49.41889]
+wikidata_id: Q231720
+metadata:
+  sources: [Wikidata Q231720 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q231720
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q231720

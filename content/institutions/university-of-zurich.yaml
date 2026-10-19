@@ -1,0 +1,31 @@
+public_id: "100760"
+name: University of Zurich
+names: [UZH, Universität Zürich]
+founded: 1833
+place: zurich
+location: [8.54833, 47.37472]
+website_url: https://www.uzh.ch/
+wikidata_id: Q206702
+metadata:
+  sources: [Wikidata Q206702 (retrieved 2026-10-18)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Z%C3%BCrich_Switzerland-University-of-Zurich-Main-Building-01.jpg/1280px-Z%C3%BCrich_Switzerland-University-of-Zurich-Main-Building-01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Z%C3%BCrich_Switzerland-University-of-Zurich-Main-Building-01.jpg
+    license: CC BY-SA 3.0
+    credit: CEphoto, Uwe Aranas
+identifiers:
+  bnf: "118679870"
+  gnd: 36190-2
+  hls: "010977"
+  idref: "026431092"
+  lc: n80001441
+  viaf: "122255956"
+sources:
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q206702
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q206702

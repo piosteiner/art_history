@@ -2,4 +2,88 @@ public_id: "100277"
 name: Paul Signac
 given_name: Paul
 family_name: Signac
+names: [Paul Victor Jules Signac]
+birth: 1863-11-11
+death: 1935-08-15
 wikidata_id: Q151573
+metadata:
+  sources: [Wikidata Q151573 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q151573
+  - type: born_in
+    to: place/2nd-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q151573
+  - type: died_in
+    to: place/6th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q151573
+  - type: worked_in
+    to: place/overschie
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q151573
+  - type: worked_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q151573
+  - type: worked_in
+    to: place/vlissingen
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q151573
+  - type: worked_in
+    to: place/volendam
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q151573
+  - type: member_of
+    to: institution/societe-des-artistes-independants
+    sources:
+      - accessed: 2026-10-18
+        property: P463
+        wikidata: Q151573
+  - type: associated_with
+    to: movement/pointillism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q151573
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Paul_Signac_1923.jpg/1280px-Paul_Signac_1923.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Signac_1923.jpg
+    license: Public domain
+    credit: Agence de presse Meurisse
+identifiers:
+  bnf: "119247303"
+  dome: "361"
+  gnd: "119425157"
+  idref: 02713783X
+  kulturnav: 8bf0923c-139c-48d6-96c9-f53c0d6bb064
+  lc: n80005086
+  rkd: "72519"
+  ulan: "500008410"
+  viaf: "46767282"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q151573
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q151573

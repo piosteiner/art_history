@@ -2,3 +2,125 @@ public_id: "100268"
 name: Camille Pissarro
 given_name: Camille
 family_name: Pissarro
+names: [Camille Jacob Pissaro, Jacob-Abraham-Camille Pissarro]
+birth: 1830-07-10
+death: 1903-11-13
+wikidata_id: Q134741
+metadata:
+  sources: [Wikidata Q134741 (retrieved 2026-10-18)]
+relationships:
+  - type: born_in
+    to: place/charlotte-amalie
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q134741
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q134741
+  - type: lived_in
+    to: place/charlotte-amalie
+    sources:
+      - accessed: 2026-10-18
+        property: P551
+        wikidata: Q134741
+  - type: lived_in
+    to: place/venezuela
+    sources:
+      - accessed: 2026-10-18
+        property: P551
+        wikidata: Q134741
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q134741
+  - type: worked_in
+    to: place/caracas
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q134741
+  - type: worked_in
+    to: place/la-roche-guyon
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q134741
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q134741
+  - type: worked_in
+    to: place/montmorency
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q134741
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q134741
+  - type: worked_in
+    to: place/netherlands
+    period: 1894/1898
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q134741
+  - type: studied_at
+    to: institution/academie-suisse
+    period: 1859
+    period_label: from 1859
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q134741
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q134741
+  - type: associated_with
+    to: movement/neo-impressionism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q134741
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Pissarro-portrait-c1900.jpg/1280px-Pissarro-portrait-c1900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pissarro-portrait-c1900.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Pissarro%2C_Camille_-_Autoportrait_1873_040.jpg/1280px-Pissarro%2C_Camille_-_Autoportrait_1873_040.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pissarro,_Camille_-_Autoportrait_1873_040.jpg
+    license: Public domain
+    credit: Camille Pissarro
+identifiers:
+  bnf: "119199341"
+  dome: "1708"
+  gnd: "118594672"
+  idref: "027343561"
+  kulturnav: 6979ddb8-0992-403f-b5a4-2f4df04b04a1
+  lc: n50010995
+  rkd: "63696"
+  ulan: "500001924"
+  viaf: "14775224"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q134741
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q134741

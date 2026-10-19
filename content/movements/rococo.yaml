@@ -1,16 +1,22 @@
 public_id: "100401"
 name: Rococo
-kind: movement
-period: 1730/1739
+kind: style
+period: c. 1730–c. 1780
 wikidata_id: Q122960
 metadata:
   sources: [Wikidata Q122960 (retrieved 2026-10-15)]
+relationships:
+  - type: active_in
+    to: place/france
+    period: c. 1700–late 18th century
+    sources: ["Getty Art & Architecture Thesaurus, “Rococo” (AAT 300021155): “emerged in France ca. 1700 at the court of Louis XV, and dominated Europe until it was superseded by the Classical Revival in the late 18th century”"]
+  - type: active_in
+    to: place/europe
+    period: c. 1730–c. 1780
+    sources: ["Wikidata, Rococo (Q122960): start time 1730s, end time 1780s"]
 sources:
   kind:
     - accessed: 2026-10-15
       property: P31
       wikidata: Q122960
-  period:
-    - accessed: 2026-10-15
-      property: P580
-      wikidata: Q122960
+  period: ["Wikidata, Rococo (Q122960): start time 1730s, end time 1780s"]

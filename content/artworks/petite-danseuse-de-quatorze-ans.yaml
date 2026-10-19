@@ -7,8 +7,34 @@ medium: Bronze, partially painted, cotton skirt, silk ribbon
 dimensions: [98]
 institution: kunsthaus-zurich
 inventory_number: BU 0037
+web_url: https://collection.kunsthaus.ch/de/collection/item/585967/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Edgar_Degas_-_Petite_danseuse_de_quatorze_ans_%2852255946506%29.jpg/1280px-Edgar_Degas_-_Petite_danseuse_de_quatorze_ans_%2852255946506%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_Petite_danseuse_de_quatorze_ans_(52255946506).jpg
+    license: CC BY-SA 2.0
+    credit: Adrian Scottow from London, England
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/Petite_danseuse_de_quatorze_ans%2C_1921-1931_%28cire_originale_1881%29%2C_bronze_patin%C3%A9%2C_tutu_en_tulle%2C_ruban_de_satin%2C_socle_en_bois%2C_Edgar_Degas%2C_Paris%2C_Mus%C3%A9e_d%27Orsay_RF2137_%282%29.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Petite_danseuse_de_quatorze_ans,_1921-1931_(cire_originale_1881),_bronze_patin%C3%A9,_tutu_en_tulle,_ruban_de_satin,_socle_en_bois,_Edgar_Degas,_Paris,_Mus%C3%A9e_d%27Orsay_RF2137_(2).jpg
+    license: CC BY-SA 4.0
+    credit: Ibex73
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Petite_danseuse_de_quatorze_ans%2C_1921-1931_%28cire_originale_1881%29%2C_bronze_patin%C3%A9%2C_tutu_en_tulle%2C_ruban_de_satin%2C_socle_en_bois%2C_Edgar_Degas%2C_Paris%2C_Mus%C3%A9e_d%27Orsay_RF2137_%283%29.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Petite_danseuse_de_quatorze_ans,_1921-1931_(cire_originale_1881),_bronze_patin%C3%A9,_tutu_en_tulle,_ruban_de_satin,_socle_en_bois,_Edgar_Degas,_Paris,_Mus%C3%A9e_d%27Orsay_RF2137_(3).jpg
+    license: CC BY-SA 4.0
+    credit: Ibex73
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/La_petite_danseuse_de_quatorze_ans_-_Degas_-_RF_2137_-_02.jpg/1280px-La_petite_danseuse_de_quatorze_ans_-_Degas_-_RF_2137_-_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_petite_danseuse_de_quatorze_ans_-_Degas_-_RF_2137_-_02.jpg
+    license: CC BY-SA 4.0
+    credit: Sukkoria
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Edgar_Degas_La_Petite_Danseuse_de_Quatorze_Ans_cast_in_1997.jpg/1280px-Edgar_Degas_La_Petite_Danseuse_de_Quatorze_Ans_cast_in_1997.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_La_Petite_Danseuse_de_Quatorze_Ans_cast_in_1997.jpg
+    license: CC BY 3.0
+    credit: Edgar Degas
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/La_Petite_Danseuse_de_Quatorze_Ans_by_Edgar_Dega_at_Metropolitan_Museum_of_Art.jpg/1280px-La_Petite_Danseuse_de_Quatorze_Ans_by_Edgar_Dega_at_Metropolitan_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_Petite_Danseuse_de_Quatorze_Ans_by_Edgar_Dega_at_Metropolitan_Museum_of_Art.jpg
+    license: CC BY-SA 4.0
+    credit: Yair Haklai
 provenance:
   - owner: artist/edgar-degas
     role: estate

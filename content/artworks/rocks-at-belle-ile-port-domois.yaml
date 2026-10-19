@@ -15,6 +15,12 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Rocks_at_Belle-ile,_Port-domois_by_Monet,_1886.jpg
     license: Public domain
     credit: Claude Monet
+provenance:
+  - owner: institution/cincinnati-art-museum
+    acquired: 1985
+    method: purchase
+    label: Fanny Bryce Lehmer Endowment and The Edwin and Virginia Irwin Memorial
+    sources: ["Cincinnati Art Museum, 1985.282, credit line; bought 1985 (the museum’s conservation blog)"]
 sources:
   created:
     - accessed: 2026-10-06

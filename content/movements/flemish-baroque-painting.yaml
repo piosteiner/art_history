@@ -1,0 +1,19 @@
+public_id: "100981"
+name: Flemish Baroque painting
+kind: style
+parent: baroque
+period: 1585/1700
+wikidata_id: Q1994273
+metadata:
+  sources: [Wikidata Q1994273 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/belgium
+    period: 1585/1700
+    sources: ["Wikidata, Flemish Baroque painting (Q1994273): inception 1585, end time 1700"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1994273
+  period: ["Wikidata, Flemish Baroque painting (Q1994273): inception 1585, end time 1700"]

@@ -1,14 +1,35 @@
 public_id: "100281"
+title_lang: fr
 title: Madame Ingres, née Madeleine Chapelle
+names:
+  - lang: de
+    role: translation
+    text: Madame Ingres, geb. Madeleine Chapelle
+    status: official
 creator: jean-auguste-dominique-ingres
 created: c. 1814
 kind: oil painting
 medium: Oil on canvas
+materials: [oil paint, canvas]
 dimensions: [70, 57]
 institution: kunsthaus-zurich
 inventory_number: BU 0136
+web_url: https://collection.kunsthaus.ch/de/collection/item/512962/
 on_loan: true
 on_loan_since: 2021
+description_md: "[Bührle Sammlung](https://www.buehrle.ch/en/collection/artwork/detail/madame-j-a-d-ingres-nee-madeleine-chapelle/)"
+wikidata_id: Q64174095
+metadata:
+  sources: [Wikidata Q64174095 (retrieved 2026-10-18)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/%28Zurich%29_Sammlung_Emil_B%C3%BChrle_-_Madame_J.-A.-D._Ingres_%28N%C3%A9e_Madeleine_Chapelle%29%2C_vers_1814.jpg/1280px-%28Zurich%29_Sammlung_Emil_B%C3%BChrle_-_Madame_J.-A.-D._Ingres_%28N%C3%A9e_Madeleine_Chapelle%29%2C_vers_1814.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Zurich)_Sammlung_Emil_B%C3%BChrle_-_Madame_J.-A.-D._Ingres_(N%C3%A9e_Madeleine_Chapelle),_vers_1814.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c9/Jean-Auguste-Dominique_Ingres_-_Madame_Ingres%2C_n%C3%A9e_Madeleine_Chapelle_-_136_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Auguste-Dominique_Ingres_-_Madame_Ingres,_n%C3%A9e_Madeleine_Chapelle_-_136_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
 provenance:
   - owner: person/jeanne-sophie-dubreuil
     place: gueret
@@ -122,6 +143,10 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
   medium:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/
       source: kunsthaus-zurich-sammlung-online
@@ -130,10 +155,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q64174095
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P170
+      wikidata: Q64174095
   on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/
       source: kunsthaus-zurich-sammlung-online
@@ -142,10 +173,17 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P2048
+      wikidata: Q64174095
   institution:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/
       source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-10-13
+      accessed: 2026-10-18
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/512962/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/512962/
       source: kunsthaus-zurich-sammlung-online

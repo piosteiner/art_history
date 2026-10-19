@@ -1,0 +1,16 @@
+public_id: "100907"
+name: Volendam
+kind: settlement
+location: [5.0675, 52.49944]
+wikidata_id: Q903595
+metadata:
+  sources: [Wikidata Q903595 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q903595
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q903595

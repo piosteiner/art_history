@@ -1,0 +1,45 @@
+public_id: "100699"
+title: Arlequin
+creator: paul-cezanne
+created: c. 1888–1890
+kind: oil painting
+medium: Oil on canvas
+materials: [canvas, oil paint]
+dimensions: [92.7, 65.7]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Paul_C%C3%A9zanne_-_Arlequin_%28CR_670%29.jpg/1280px-Paul_C%C3%A9zanne_-_Arlequin_%28CR_670%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Arlequin_(CR_670).jpg
+    license: Public domain
+    credit: Paul Cézanne
+provenance:
+  - owner: institution/blaquier-arrieta-collection
+    ended: 2026-11-18
+    label: Sotheby's New York
+    certainty: possible
+    check_after: 2026-11-18
+sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  created:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  creator:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  dimensions:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/paul-cezanne-arlequin?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18

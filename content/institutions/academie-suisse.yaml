@@ -1,0 +1,18 @@
+public_id: "100825"
+name: Académie Suisse
+founded: 1815
+place: paris
+location: [2.3446, 48.8545]
+website_url: https://de.wikipedia.org/wiki/Acad%C3%A9mie_Suisse
+wikidata_id: Q337473
+metadata:
+  sources: [Wikidata Q337473 (retrieved 2026-10-18)]
+sources:
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q337473
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q337473

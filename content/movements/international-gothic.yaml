@@ -1,0 +1,19 @@
+public_id: "101084"
+name: International Gothic
+kind: style
+parent: gothic
+period: mid 14th century–c. 1425
+wikidata_id: Q867769
+metadata:
+  sources: [Wikidata Q867769 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: mid 14th century–c. 1425
+    sources: ["Getty Art & Architecture Thesaurus, “International Gothic” (AAT 300020786): “developed in the French and Burgundian courts in the mid-14th century and spread widely over western Europe by about 1425”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q867769
+  period: ["Getty Art & Architecture Thesaurus, “International Gothic” (AAT 300020786): “developed in the French and Burgundian courts in the mid-14th century and spread widely over western Europe by about 1425”"]

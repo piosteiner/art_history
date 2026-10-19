@@ -2,4 +2,162 @@ public_id: "100269"
 name: Jean-Auguste-Dominique Ingres
 given_name: Jean-Auguste-Dominique
 family_name: Ingres
+birth: 1780-08-29
+death: 1867-01-14
 wikidata_id: Q23380
+metadata:
+  sources: [Wikidata Q23380 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q23380
+  - type: born_in
+    to: place/montauban
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q23380
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q23380
+  - type: worked_in
+    to: place/ancona
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/dampierre-saint-nicolas
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/meung-sur-loire
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/orvieto
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/ravenna
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/siena
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/toulouse
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/urbino
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: worked_in
+    to: place/versailles
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q23380
+  - type: influenced_by
+    to: artist/raphael
+    sources:
+      - accessed: 2026-10-18
+        property: P737
+        wikidata: Q23380
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    period: October 1799–1801
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q23380
+  - type: studied_at
+    to: institution/french-academy-in-rome
+    period: 1806/1810
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q23380
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q23380
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q23380
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Ingres%2C_Self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ingres,_Self-portrait.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
+identifiers:
+  bnf: 12015522j
+  dome: "1931"
+  gnd: 11855560X
+  idref: 02727330X
+  kulturnav: 1f7fcc2d-3e4f-42ad-8a8c-3ac1bf25642d
+  lc: n81047807
+  nlk: KAC201423593
+  rkd: "41067"
+  ulan: "500028037"
+  viaf: "76327826"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q23380
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q23380

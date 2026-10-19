@@ -25,6 +25,28 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Black_Spot_-_Wassily_Kandinsky.jpg
     license: Public domain
     credit: Wassily Kandinsky
+provenance:
+  - owner: person/nina-kandinsky
+    acquired: 1944-12-13
+    ended: 1947
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+        note: "Footnote: Protokoll der Sammlungskommission, 29.11.1946, I.3., ZKG/KHZ Archiv, 10.30.10.42: «Mme Kandinsky teilte in ihrem Brief vom 21. Oktober mit, dass das Bild für das Kunsthaus [...] erhältlich sei.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1947
+    method: purchase
+    direct: true
+    place: zurich
+    label: from the exhibition “Georges Braque, Wassily Kandinsky (1866–1944), Pablo Picasso”, Kunsthaus Zürich, 1946, no. 44
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1889/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg.; Protokoll der Sammlungskommission, 21.08.1947, I.b., ZKG/KHZ Archiv, 10.30.10.42."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   names:
     - url: https://collection.kunsthaus.ch/de/collection/item/1889/

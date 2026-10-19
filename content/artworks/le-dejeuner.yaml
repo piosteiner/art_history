@@ -7,8 +7,14 @@ medium: Oil on cardboard
 dimensions: [54.5, 70.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0003
+web_url: https://collection.kunsthaus.ch/de/collection/item/600961/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Pierre_Bonnard_-_Le_D%C3%A9jeuner_%28Stiftung_B%C3%BChrle%29.jpg/1280px-Pierre_Bonnard_-_Le_D%C3%A9jeuner_%28Stiftung_B%C3%BChrle%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Bonnard_-_Le_D%C3%A9jeuner_(Stiftung_B%C3%BChrle).jpg
+    license: Public domain
+    credit: Pierre Bonnard
 provenance:
   - owner_label: Rosenberg
     ended: 1900

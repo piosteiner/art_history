@@ -7,8 +7,14 @@ medium: Pastel on cardboard
 dimensions: [66, 61]
 institution: kunsthaus-zurich
 inventory_number: BU 0033
+web_url: https://collection.kunsthaus.ch/de/collection/item/703960/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Edgar_Degas_-_Femme_s%27essuyant_-_33_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_Femme_s%27essuyant_-_33_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Edgar Degas
 provenance:
   - owner: artist/edgar-degas
     role: estate

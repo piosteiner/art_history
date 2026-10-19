@@ -1,0 +1,22 @@
+public_id: "100942"
+name: "'s-Hertogenbosch"
+names:
+  - lang: de
+    role: translation
+    text: Herzogenbusch
+kind: settlement
+location: [5.31667, 51.7]
+wikidata_id: Q2766547
+metadata:
+  sources: [Wikidata Q2766547 (retrieved 2026-10-18)]
+identifiers:
+  gnd: 4072467-0
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2766547
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q2766547

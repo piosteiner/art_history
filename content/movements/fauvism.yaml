@@ -1,0 +1,18 @@
+public_id: "100744"
+name: Fauvism
+kind: movement
+period: c. 1898–1906
+wikidata_id: Q166593
+metadata:
+  sources: [Wikidata Q166593 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/france
+    period: c. 1898–1906
+    sources: ["Getty Art & Architecture Thesaurus, “Fauve” (AAT 300021300): “a group of young French artists dating from around 1898 to 1906”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q166593
+  period: ["Getty Art & Architecture Thesaurus, “Fauve” (AAT 300021300): “a group of young French artists dating from around 1898 to 1906”"]

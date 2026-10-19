@@ -1,0 +1,16 @@
+public_id: "100993"
+name: Neubrandenburg
+kind: settlement
+location: [13.26083, 53.55694]
+wikidata_id: Q3958
+metadata:
+  sources: [Wikidata Q3958 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q3958
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q3958

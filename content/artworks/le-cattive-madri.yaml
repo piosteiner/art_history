@@ -16,6 +16,34 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_-_Le_cattive_madri_-_1967-0066_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
     credit: Giovanni Segantini
+provenance:
+  - owner: person/zuppinger
+    acquired: 1926 or earlier
+    ended: 1926 or later
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1306/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/galerie-fischer
+    role: dealer
+    acquired: 1956
+    ended: 1967
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1306/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1967
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1306/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   created:
     - accessed: 2026-10-09

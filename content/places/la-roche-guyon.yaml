@@ -1,0 +1,16 @@
+public_id: "100832"
+name: La Roche-Guyon
+kind: settlement
+location: [1.62944, 49.08167]
+wikidata_id: Q837592
+metadata:
+  sources: [Wikidata Q837592 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q837592
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q837592

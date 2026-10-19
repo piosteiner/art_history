@@ -2,3 +2,149 @@ public_id: "100274"
 name: Édouard Vuillard
 given_name: Édouard
 family_name: Vuillard
+names: [Edouard Vuilliard]
+birth: 1868-11-11
+death: 1940-06-21
+wikidata_id: Q239394
+metadata:
+  sources: [Wikidata Q239394 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q239394
+  - type: born_in
+    to: place/cuiseaux
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q239394
+      - url: https://d-nb.info/gnd/118628003
+        source: gnd
+        accessed: 2026-10-18
+      - url: https://rkd.nl/en/explore/artists/82268
+        source: rkd
+        accessed: 2026-10-18
+      - url: https://id.loc.gov/authorities/names/n50024507.html
+        source: lc
+        accessed: 2026-10-18
+      - url: https://data.bnf.fr/ark:/12148/cb136143536
+        source: bnf
+        accessed: 2026-10-18
+  - type: died_in
+    to: place/la-baule-escoublac
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q239394
+      - url: https://d-nb.info/gnd/118628003
+        source: gnd
+        accessed: 2026-10-18
+      - url: https://rkd.nl/en/explore/artists/82268
+        source: rkd
+        accessed: 2026-10-18
+      - url: https://id.loc.gov/authorities/names/n50024507.html
+        source: lc
+        accessed: 2026-10-18
+      - url: https://data.bnf.fr/ark:/12148/cb136143536
+        source: bnf
+        accessed: 2026-10-18
+  - type: worked_in
+    to: place/kingdom-of-italy
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q239394
+  - type: worked_in
+    to: place/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q239394
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q239394
+  - type: worked_in
+    to: place/spain
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q239394
+  - type: worked_in
+    to: place/paris
+    period: 1886/1927
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q239394
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q239394
+  - type: associated_with
+    to: movement/japonisme
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q239394
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q239394
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Self-Portrait%2C_Aged_21_A21192.jpg/1280px-Self-Portrait%2C_Aged_21_A21192.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-Portrait,_Aged_21_A21192.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+identifiers:
+  bnf: "136143536"
+  dome: "416"
+  gnd: "118628003"
+  idref: "028959329"
+  kulturnav: cc5d1aae-752e-4560-ab96-ce6668f7af2d
+  lc: n50024507
+  rkd: "82268"
+  ulan: "500014954"
+  viaf: "17397031"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q239394
+    - url: https://d-nb.info/gnd/118628003
+      source: gnd
+      accessed: 2026-10-18
+    - url: https://rkd.nl/en/explore/artists/82268
+      source: rkd
+      accessed: 2026-10-18
+    - url: https://id.loc.gov/authorities/names/n50024507.html
+      source: lc
+      accessed: 2026-10-18
+    - url: https://data.bnf.fr/ark:/12148/cb136143536
+      source: bnf
+      accessed: 2026-10-18
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q239394
+    - url: https://d-nb.info/gnd/118628003
+      source: gnd
+      accessed: 2026-10-18
+    - url: https://rkd.nl/en/explore/artists/82268
+      source: rkd
+      accessed: 2026-10-18
+    - url: https://id.loc.gov/authorities/names/n50024507.html
+      source: lc
+      accessed: 2026-10-18
+    - url: https://data.bnf.fr/ark:/12148/cb136143536
+      source: bnf
+      accessed: 2026-10-18

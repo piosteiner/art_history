@@ -14,6 +14,14 @@ relationships:
       - accessed: 2026-10-13
         property: P802
         wikidata: Q175130
+  - type: student_of
+    to: artist/camille-pissarro
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q134741
+identifiers:
+  dome: "6234"
 sources:
   birth:
     - accessed: 2026-10-13

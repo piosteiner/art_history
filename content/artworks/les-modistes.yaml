@@ -7,8 +7,14 @@ medium: Oil on canvas
 dimensions: [116, 89]
 institution: kunsthaus-zurich
 inventory_number: BU 0096
+web_url: https://collection.kunsthaus.ch/de/collection/item/752008/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Signac_-_The_Milliners%2C_1885-86%2C_Cachin_111.jpg/1280px-Signac_-_The_Milliners%2C_1885-86%2C_Cachin_111.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Signac_-_The_Milliners,_1885-86,_Cachin_111.jpg
+    license: Public domain
+    credit: Paul Signac
 provenance:
   - owner: artist/paul-signac
     role: estate

@@ -1,0 +1,11 @@
+public_id: "100814"
+name: Orientalism
+kind: movement
+wikidata_id: Q42865
+metadata:
+  sources: [Wikidata Q42865 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q42865

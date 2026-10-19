@@ -1,14 +1,22 @@
 public_id: "100163"
 name: Boston
 kind: settlement
+parent: suffolk-county
+country_code: US
 location: [-71.05778, 42.36028]
 wikidata_id: Q100
 metadata:
   sources: [Wikidata Q100 (retrieved 2026-10-09)]
+identifiers:
+  gnd: 4007840-1
 sources:
   kind:
     - accessed: 2026-10-09
       property: P31
+      wikidata: Q100
+  parent:
+    - accessed: 2026-10-18
+      property: P131
       wikidata: Q100
   location:
     - accessed: 2026-10-09

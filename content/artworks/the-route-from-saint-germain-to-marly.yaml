@@ -15,6 +15,17 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:The_Route_from_Saint-Germain_to_Marly_by_Alfred_Sisley.jpg
     license: Public domain
     credit: Alfred Sisley
+provenance:
+  - owner_label: Dr. and Mrs. Frederic G. Oppenheimer
+    place: san-antonio
+    sources: ['pubhist, The Road from Saint-Germain to Marly (McNay Art Museum): "Gift of Dr. and Mrs. Frederic G. Oppenheimer"']
+  - owner: institution/mcnay-art-museum
+    acquired: 1955
+    method: gift
+    direct: true
+    label: Gift of Dr. and Mrs. Frederic G. Oppenheimer (the year from the accession number 1955.2)
+    certainty: probable
+    sources: ["pubhist, The Road from Saint-Germain to Marly (McNay Art Museum)"]
 sources:
   created:
     - accessed: 2026-10-08

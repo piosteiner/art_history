@@ -1,0 +1,14 @@
+public_id: "101083"
+name: Late Gothic
+kind: style
+parent: gothic
+period: late 13th century–c. 1530
+metadata:
+  sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: late 13th century–c. 1530
+    sources: ["Getty Art & Architecture Thesaurus, “Late Gothic” (AAT 300020783): “the last years of the Gothic period and style in architecture and other arts in Europe, beginning in the late 13th century”", "Wikidata, Gothic art (Q46825): end time 1530s"]
+sources:
+  period: ["Getty Art & Architecture Thesaurus, “Late Gothic” (AAT 300020783): “the last years of the Gothic period and style in architecture and other arts in Europe, beginning in the late 13th century”", "Wikidata, Gothic art (Q46825): end time 1530s"]

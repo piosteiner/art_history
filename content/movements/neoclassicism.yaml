@@ -1,0 +1,18 @@
+public_id: "100891"
+name: Neoclassicism
+kind: style
+period: mid 18th century–mid 19th century
+wikidata_id: Q14378
+metadata:
+  sources: [Wikidata Q14378 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: mid 18th century–mid 19th century
+    sources: ["Getty Art & Architecture Thesaurus, “Neoclassical” (AAT 300021477): “European and American architecture and fine and decorative arts between the mid-18th century and the mid-19th century”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q14378
+  period: ["Getty Art & Architecture Thesaurus, “Neoclassical” (AAT 300021477): “European and American architecture and fine and decorative arts between the mid-18th century and the mid-19th century”"]

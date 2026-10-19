@@ -1,14 +1,38 @@
 public_id: "100280"
+title_lang: fr
 title: La Conversation, Louveciennes
+names:
+  - lang: fr
+    role: alternative
+    text: La conversation, Louveciennes (La route de Versailles à Louveciennes)
+  - lang: de
+    role: translation
+    text: Das Gespräch, Louveciennes
+    status: official
+  - lang: en
+    role: translation
+    text: The Conversation, Louveciennes
+    status: official
 creator: camille-pissarro
 created: 1870
 kind: oil painting
 medium: Oil on canvas
+materials: [canvas, oil paint]
 dimensions: [100, 81]
 institution: kunsthaus-zurich
 inventory_number: BU 0121
+web_url: https://collection.kunsthaus.ch/de/collection/item/48913/
 on_loan: true
 on_loan_since: 2021
+description_md: "[Bührle Sammlung](https://www.buehrle.ch/en/collection/artwork/detail/the-conversation-louveciennes/)"
+wikidata_id: Q21369149
+metadata:
+  sources: [Wikidata Q21369149 (retrieved 2026-10-18)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/74/Camille_Pissarro_-_La_Conversation%2C_Louveciennes_-_121_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Pissarro_-_La_Conversation,_Louveciennes_-_121_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Camille Pissarro
 provenance:
   - owner: person/julie-pissarro
     acquired: 1903-11-13
@@ -114,10 +138,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/48913/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q21369149
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/48913/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P170
+      wikidata: Q21369149
   on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/48913/
       source: kunsthaus-zurich-sammlung-online
@@ -130,6 +160,10 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/48913/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/48913/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/48913/
       source: kunsthaus-zurich-sammlung-online

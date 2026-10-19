@@ -1,4 +1,22 @@
 public_id: "100256"
 name: Wildenstein & Co.
+names: [Wildenstein Gallery, Wildenstein & Co. Inc]
+founded: 1875
 place: new-york-city
 wikidata_id: Q10288082
+metadata:
+  sources: [Wikidata Q10288082 (retrieved 2026-10-18)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ce/Gimpel_%26_Wildenstein%2C_1907.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gimpel_%26_Wildenstein,_1907.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  lc: no2001096323
+  ulan: "500304375"
+  viaf: "122203675"
+sources:
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q10288082

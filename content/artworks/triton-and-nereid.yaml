@@ -1,0 +1,52 @@
+public_id: "100798"
+title_lang: de
+title: Triton und Nereïde
+creator: arnold-bocklin
+created: 1874
+materials: [oil paint, canvas]
+dimensions: [105.3, 194]
+institution: sammlung-schack
+inventory_number: "11534"
+web_url: https://www.sammlung.pinakothek.de/de/artwork/A9xlyJNLWv/arnold-boecklin-1827/triton-und-nereide-11534
+wikidata_id: Q22116969
+metadata:
+  sources: [Wikidata Q22116969 (retrieved 2026-10-18)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Arnold_B%C3%B6cklin_Die_Nereide.jpg/1280px-Arnold_B%C3%B6cklin_Die_Nereide.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_Die_Nereide.jpg
+    license: Public domain
+    credit: Arnold Böcklin
+provenance:
+  - owner: person/adolf-friedrich-von-schack
+    acquired: 1874
+    ended: 1894-04-14
+    place: munich
+    label: acquired (“erworben”) for his gallery
+    sources: ["Bayerische Staatsgemäldesammlungen, online collection, inv. 11534 (“1874 durch Adolf Friedrich Graf von Schack erworben”): https://www.sammlung.pinakothek.de/en/artwork/A9xlyJNLWv (accessed 2026-10-18)"]
+  - owner: person/wilhelm-ii
+    acquired: 1894-04-14
+    method: bequest
+    direct: true
+    place: munich
+    notes_md: Bequeathed by Schack in 1876, the Emperor’s on Schack’s death. He left the collection in Munich and in 1909 built the present gallery in Prinzregentenstraße, beside the Prussian legation.
+    sources: ["Bayerische Staatsgemäldesammlungen, “Sammlung Schack” (history of the collection): https://www.pinakothek.de/en/sammlung-schack (accessed 2026-10-18)"]
+  - owner: institution/bavarian-state-painting-collections
+    acquired: 1939
+    method: transfer
+    place: munich
+    label: Sammlung Schack, inv. 11534
+    notes_md: "The Schack-Galerie became part of the Bayerische Staatsgemäldesammlungen in 1939 (Britannica: 1940); how it passed from the Emperor after 1918 is not recorded here."
+    sources: ["Bayerische Staatsgemäldesammlungen, “Sammlung Schack” (history of the collection): https://www.pinakothek.de/en/sammlung-schack (accessed 2026-10-18)", "Bayerische Staatsgemäldesammlungen, online collection, inv. 11534 (“1874 durch Adolf Friedrich Graf von Schack erworben”): https://www.sammlung.pinakothek.de/en/artwork/A9xlyJNLWv (accessed 2026-10-18)"]
+sources:
+  created:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q22116969
+  dimensions:
+    - accessed: 2026-10-18
+      property: P2048
+      wikidata: Q22116969
+  inventory_number:
+    - accessed: 2026-10-18
+      property: P217
+      wikidata: Q22116969

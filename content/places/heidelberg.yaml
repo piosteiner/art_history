@@ -1,0 +1,16 @@
+public_id: "100979"
+name: Heidelberg
+kind: settlement
+location: [8.69472, 49.40936]
+wikidata_id: Q2966
+metadata:
+  sources: [Wikidata Q2966 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2966
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q2966

@@ -1,0 +1,16 @@
+public_id: "100675"
+name: Freiburg im Breisgau
+kind: settlement
+location: [7.85, 47.995]
+wikidata_id: Q2833
+metadata:
+  sources: [Wikidata Q2833 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2833
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q2833

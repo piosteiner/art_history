@@ -1,0 +1,16 @@
+public_id: "100955"
+name: Leominster
+kind: settlement
+location: [-2.73333, 52.23333]
+wikidata_id: Q550424
+metadata:
+  sources: [Wikidata Q550424 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q550424
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q550424

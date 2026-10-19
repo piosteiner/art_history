@@ -1,0 +1,11 @@
+public_id: "100848"
+name: Kunstakademie Düsseldorf
+founded: 1773
+wikidata_id: Q662355
+metadata:
+  sources: [Wikidata Q662355 (retrieved 2026-10-18)]
+sources:
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q662355

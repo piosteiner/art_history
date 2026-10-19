@@ -2,4 +2,117 @@ public_id: "100273"
 name: Édouard Manet
 given_name: Édouard
 family_name: Manet
+names: [Eduard Manė, Éduard Manet]
+birth: 1832-01-23
+death: 30 April 1883
 wikidata_id: Q40599
+metadata:
+  sources: [Wikidata Q40599 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q40599
+  - type: born_in
+    to: place/former-10th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q40599
+  - type: died_in
+    to: place/8th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q40599
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q40599
+  - type: lived_in
+    to: place/8th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-18
+        property: P551
+        wikidata: Q40599
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q40599
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q40599
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q40599
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q40599
+  - type: worked_in
+    to: place/rio-de-janeiro
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q40599
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q40599
+  - type: worked_in
+    to: place/zaltbommel
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q40599
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q40599
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/%C3%89douard_Manet%2C_en_buste%2C_de_face_-_Nadar.jpg/1280px-%C3%89douard_Manet%2C_en_buste%2C_de_face_-_Nadar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet,_en_buste,_de_face_-_Nadar.jpg
+    license: Public domain
+    credit: Nadar / Adam Cuerden
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/%C3%89douard_Manet.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet.jpg
+    license: Public domain
+    credit: Nadar
+identifiers:
+  bnf: "121059934"
+  dome: "236"
+  gnd: 11857700X
+  idref: "029430925"
+  kulturnav: 2baf1dc0-0bd8-41fd-ba82-d5462fe88af6
+  lc: n79043160
+  nlk: KAC199635194
+  rkd: "52303"
+  ulan: "500010363"
+  viaf: "97379936"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q40599
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q40599

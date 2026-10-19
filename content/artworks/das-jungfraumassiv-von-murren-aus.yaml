@@ -15,6 +15,56 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Das_Jungfraumassiv_von_M%C3%BCrren_aus_-_1976-0009_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
     credit: Ferdinand Hodler
+provenance:
+  - owner_label: Martin and Florence Flersheim
+    further_places: [amsterdam]
+    acquired: 1922-01-28 or earlier
+    ended: December 1938 or later
+    method: purchase
+    place: frankfurt
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1141/
+        note: "Footnote: Bätschmann/Müller 2008 I.439, https://www.ferdinand-hodler.ch/werke.aspx?id=6004740 (06.01.2022)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/paul-cassirer
+    role: dealer
+    acquired: 1939-01-04
+    ended: 1939-01-20
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1141/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/fritz-nathan
+    role: dealer
+    acquired: February 1939 or earlier
+    direct: true
+    place: st-gallen
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1141/
+        note: "Footnote: Brief von Fritz Nathan an Arthur Stoll, 04.02.1939: «2) Die Jungfrau, 60:80 cm. sign. Frs. 10000.- [...] Sämtliche Bilder mit alleiniger Ausnahme der grossen Heiligen Stunde befinden sich hier bei mir.»"
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/arthur-grumbach
+    ended: 1975
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1141/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 285."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1976
+    method: bequest
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1141/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   created:
     - accessed: 2026-10-09

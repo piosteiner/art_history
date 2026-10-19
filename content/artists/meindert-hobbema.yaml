@@ -2,4 +2,74 @@ public_id: "100276"
 name: Meindert Hobbema
 given_name: Meindert
 family_name: Hobbema
+birth: 31 October 1638
+death: 1709-12-07
 wikidata_id: Q336908
+metadata:
+  sources: [Wikidata Q336908 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q336908
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q336908
+      - url: https://rkd.nl/en/explore/artists/38627
+        source: rkd
+        accessed: 2026-10-18
+      - url: https://data.bnf.fr/ark:/12148/cb149527837
+        source: bnf
+        accessed: 2026-10-18
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q336908
+      - url: https://rkd.nl/en/explore/artists/38627
+        source: rkd
+        accessed: 2026-10-18
+      - url: https://data.bnf.fr/ark:/12148/cb149527837
+        source: bnf
+        accessed: 2026-10-18
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Portret_van_Meindert_Hobbema%2C_RP-T-1940-528.jpg/1280px-Portret_van_Meindert_Hobbema%2C_RP-T-1940-528.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_Meindert_Hobbema,_RP-T-1940-528.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: "149527837"
+  gnd: "119106930"
+  idref: "143100785"
+  kulturnav: 31eeac06-a026-4be0-9fb6-14020ea924e5
+  lc: nr97043008
+  rkd: "38627"
+  ulan: "500029015"
+  viaf: "29800769"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q336908
+    - url: https://data.bnf.fr/ark:/12148/cb149527837
+      source: bnf
+      accessed: 2026-10-18
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q336908
+    - url: https://rkd.nl/en/explore/artists/38627
+      source: rkd
+      accessed: 2026-10-18
+    - url: https://data.bnf.fr/ark:/12148/cb149527837
+      source: bnf
+      accessed: 2026-10-18
+    - url: https://kulturnav.org/31eeac06-a026-4be0-9fb6-14020ea924e5
+      source: kulturnav
+      accessed: 2026-10-18

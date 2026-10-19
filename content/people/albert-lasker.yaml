@@ -1,0 +1,54 @@
+public_id: "100674"
+name: Albert Lasker
+given_name: Albert
+family_name: Lasker
+names: [Albert Davis Lasker, Albert D. Lasker]
+kind: person
+occupations: [entrepreneur, art collector]
+birth: 1880-05-01
+death: 1952-05-30
+description_md: Might have had art that went to the [[institution/blaquier-arrieta-collection]]. ([Sotheby's](https://www.sothebys.com/en/series/legendary-the-blaquier-arrieta-collection))
+wikidata_id: Q2577675
+metadata:
+  sources: [Wikidata Q2577675 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q2577675
+  - type: born_in
+    to: place/freiburg-im-breisgau
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q2577675
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q2577675
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/AlbertLasker.jpg/1280px-AlbertLasker.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AlbertLasker.jpg
+    license: Public domain
+    credit: Bain News Service
+identifiers:
+  gnd: "124555659"
+  lc: n84203502
+  viaf: "35392739"
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2577675
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q2577675
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q2577675

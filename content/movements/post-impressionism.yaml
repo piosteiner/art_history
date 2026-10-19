@@ -2,7 +2,6 @@ public_id: "100020"
 name: Post-Impressionism
 kind: movement
 period: 1886/1905
-period_label: c. 1886–1905
 description_md: |
   Umbrella term (coined by Roger Fry in 1910) for artists who moved beyond Impressionism's naturalism
   towards expressive colour, structure and symbolism.
@@ -10,3 +9,9 @@ wikidata_id: Q166713
 relationships:
   - type: active_in
     to: place/france
+  - type: active_in
+    to: place/europe
+    period: 1886/1905
+    sources: ["Wikidata, Post-impressionism (Q166713): start time 1886, end time 1905", "Getty Art & Architecture Thesaurus, “Post-Impressionist” (AAT 300021508): “a movement of Western art that existed from the late nineteenth century through the early twentieth century”"]
+sources:
+  period: ["Wikidata, Post-impressionism (Q166713): start time 1886, end time 1905", "Getty Art & Architecture Thesaurus, “Post-Impressionist” (AAT 300021508): “a movement of Western art that existed from the late nineteenth century through the early twentieth century”"]

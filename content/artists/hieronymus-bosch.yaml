@@ -7,12 +7,98 @@ death: 1516-08-09
 wikidata_id: Q130531
 metadata:
   sources: [Wikidata Q130531 (retrieved 2026-10-13)]
+relationships:
+  - type: nationality
+    to: polity/northern-low-countries
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q130531
+  - type: born_in
+    to: place/s-hertogenbosch
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q130531
+      - url: https://d-nb.info/gnd/11851380X
+        source: gnd
+        accessed: 2026-10-18
+      - url: https://id.loc.gov/authorities/names/n79004071.html
+        source: lc
+        accessed: 2026-10-18
+      - url: https://data.bnf.fr/ark:/12148/cb12397425z
+        source: bnf
+        accessed: 2026-10-18
+  - type: died_in
+    to: place/s-hertogenbosch
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q130531
+      - url: https://d-nb.info/gnd/11851380X
+        source: gnd
+        accessed: 2026-10-18
+      - url: https://rkd.nl/en/explore/artists/11018
+        source: rkd
+        accessed: 2026-10-18
+      - url: https://id.loc.gov/authorities/names/n79004071.html
+        source: lc
+        accessed: 2026-10-18
+      - url: https://data.bnf.fr/ark:/12148/cb12397425z
+        source: bnf
+        accessed: 2026-10-18
+  - type: worked_in
+    to: place/s-hertogenbosch
+    period: 1474/1516
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q130531
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q130531
+  - type: associated_with
+    to: movement/northern-renaissance
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q130531
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Jheronimus_Bosch_%28cropped%29.jpg/1280px-Jheronimus_Bosch_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jheronimus_Bosch_(cropped).jpg
+    license: Public domain
+    credit: Attributed to Jacques Le Boucq
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Hieronymus_Bosch_by_Cornelis_Cort.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hieronymus_Bosch_by_Cornelis_Cort.jpg
+    license: Public domain
+    credit: Attributed to Cornelis Cort
+identifiers:
+  bnf: 12397425z
+  gnd: 11851380X
+  idref: 02727280X
+  kulturnav: d4a504a7-18c3-4abb-9b6c-14f416c077a0
+  lc: n79004071
+  rkd: "11018"
+  ulan: "500000759"
+  viaf: "76401424"
 sources:
   birth:
     - accessed: 2026-10-13
       property: P569
       wikidata: Q130531
+    - url: https://id.loc.gov/authorities/names/n79004071.html
+      source: lc
+      accessed: 2026-10-18
   death:
     - accessed: 2026-10-13
       property: P570
       wikidata: Q130531
+    - url: https://id.loc.gov/authorities/names/n79004071.html
+      source: lc
+      accessed: 2026-10-18
+    - url: https://data.bnf.fr/ark:/12148/cb12397425z
+      source: bnf
+      accessed: 2026-10-18

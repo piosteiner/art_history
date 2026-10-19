@@ -1,0 +1,16 @@
+public_id: "100977"
+name: Prague
+kind: settlement
+location: [14.42139, 50.0875]
+wikidata_id: Q1085
+metadata:
+  sources: [Wikidata Q1085 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1085
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q1085

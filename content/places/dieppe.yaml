@@ -1,0 +1,16 @@
+public_id: "100818"
+name: Dieppe
+kind: settlement
+location: [1.075, 49.925]
+wikidata_id: Q183557
+metadata:
+  sources: [Wikidata Q183557 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q183557
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q183557

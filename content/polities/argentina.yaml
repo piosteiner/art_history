@@ -1,0 +1,16 @@
+public_id: "100668"
+name: Argentina
+period: 1816-07-09/
+country_codes: [AR]
+wikidata_id: Q414
+metadata:
+  sources: [Wikidata Q414 (retrieved 2026-10-18)]
+sources:
+  period:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q414
+  country_codes:
+    - accessed: 2026-10-18
+      property: P297
+      wikidata: Q414

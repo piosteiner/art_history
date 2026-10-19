@@ -1,0 +1,16 @@
+public_id: "100827"
+name: New Orleans
+kind: settlement
+location: [-90.07833, 29.97611]
+wikidata_id: Q34404
+metadata:
+  sources: [Wikidata Q34404 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q34404
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q34404

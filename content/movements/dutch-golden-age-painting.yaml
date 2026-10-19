@@ -1,0 +1,19 @@
+public_id: "101092"
+name: Dutch Golden Age painting
+kind: style
+parent: baroque
+period: 1600/1699
+wikidata_id: Q2352880
+metadata:
+  sources: [Wikidata Q2352880 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/netherlands
+    period: 1600/1699
+    sources: ["Wikidata, Dutch Golden Age painting (Q2352880): start time 1600, end time 1699"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2352880
+  period: ["Wikidata, Dutch Golden Age painting (Q2352880): start time 1600, end time 1699"]

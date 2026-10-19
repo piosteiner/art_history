@@ -1,0 +1,20 @@
+public_id: "100691"
+title: Le Jardin des Tuileries
+creator: claude-monet
+created: 1876
+dimensions: [59.5, 81.8]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/claude-monet-le-jardin-des-tuileries?locale=en
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Claude_Monet_-_Le_Jardin_des_Tuileries_%28W_402%29.jpg/1280px-Claude_Monet_-_Le_Jardin_des_Tuileries_%28W_402%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Jardin_des_Tuileries_(W_402).jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: institution/blaquier-arrieta-collection
+    ended: 2026-11-18
+    label: Sotheby's New York
+    certainty: possible
+    check_after: 2026-11-18
+numbers:
+  - number: Wildenstein Nr. 402
+    source: wildenstein-index-number

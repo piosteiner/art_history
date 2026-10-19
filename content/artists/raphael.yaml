@@ -1,0 +1,100 @@
+public_id: "100893"
+name: Raphael
+names:
+  - lang: it
+    role: original
+    text: Raffaello Sanzio da Urbino
+birth: 1483-04-15
+death: 1520-04-16
+wikidata_id: Q5597
+metadata:
+  sources: [Wikidata Q5597 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/holy-roman-empire
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q5597
+  - type: born_in
+    to: place/urbino
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q5597
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q5597
+  - type: worked_in
+    to: place/urbino
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q5597
+  - type: worked_in
+    to: place/perugia
+    period: 1501/1502
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q5597
+  - type: worked_in
+    to: place/siena
+    period: 1503/1504
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q5597
+  - type: worked_in
+    to: place/florence
+    period: 1504/1508
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q5597
+  - type: worked_in
+    to: place/rome
+    period: 1508/1520
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q5597
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q5597
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q5597
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Raffaello_Sanzio.jpg/1280px-Raffaello_Sanzio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raffaello_Sanzio.jpg
+    license: Public domain
+    credit: Raphael
+identifiers:
+  bnf: 12215591q
+  gnd: "118597787"
+  idref: "027608956"
+  kulturnav: fdce292e-d882-4e1b-8644-19b32b07ed46
+  lc: n79041756
+  nlk: KAC199636045
+  rkd: "65622"
+  ulan: "500023578"
+  viaf: "64055977"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q5597
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q5597

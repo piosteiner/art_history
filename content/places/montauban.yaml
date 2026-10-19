@@ -1,0 +1,16 @@
+public_id: "100882"
+name: Montauban
+kind: settlement
+location: [1.355, 44.01722]
+wikidata_id: Q172593
+metadata:
+  sources: [Wikidata Q172593 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q172593
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q172593

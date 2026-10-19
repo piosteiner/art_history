@@ -1,0 +1,16 @@
+public_id: "100742"
+name: Rome
+kind: settlement
+location: [12.48278, 41.89306]
+wikidata_id: Q220
+metadata:
+  sources: [Wikidata Q220 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q220
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q220

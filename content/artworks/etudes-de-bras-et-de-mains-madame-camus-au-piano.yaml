@@ -24,6 +24,125 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_%C3%89tudes_de_bras_et_de_mains_(%C2%AB_Madame_Camus_au_piano_%C2%BB)_-_31_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
     license: Public domain
     credit: Edgar Degas
+provenance:
+  - owner: artist/edgar-degas
+    role: estate
+    acquired: 1917-09-27
+    ended: 11 December 1918 or later
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        note: "Footnote: Auktion Galerie Georges Petit (11.12.-13.12.1918), No. 243/1° (Abb.)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/galerie-georges-petit
+    role: agent
+    numbers:
+      - kind: lot
+        number: 243/1°
+    acquired: 1918-12-11
+    ended: 1918-12-13
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/jean-baptiste-rene-de-gas
+    acquired: 1918-12-13
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 1550
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        note: "Footnote: Annotierte Kopie des oben genannten Auktionskatalogs im Musée d'Orsay (Dokumentation), Paris."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/alphonse-kann
+    further_places: [london]
+    acquired: 1931 or earlier
+    ended: 1940-10
+    place: saint-germain-en-laye
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        note: "Footnote: Kat. Orangerie des Tuileries Paris 1931, No. 122."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    numbers:
+      - kind: err
+        number: Ka 1072
+    acquired: 1940-10
+    ended: 1944
+    method: confiscation
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        note: "Footnote: Für einen möglichen Austausch in Betracht gezogen, aber in Paris verblieben. Barch Koblenz, B 323 273, ERR Inventar-Liste Kann, Alphons, St-Germain-en-Laye, Oktober 1940/07.03.1941, inventarisiert 10.09.1942, S. 247; Archives des musées nationaux (Louvre), Paris, Liste Alph. Kann [1944], S. 2, Ka 1072."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/alphonse-kann
+    acquired: 1947-07-11
+    ended: 1948-09-24 or earlier
+    method: restitution
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        note: "Footnote: Archives of the MAEE, La Courneuve, Dossier Kann, Restitution du 11 juillet 1947, Œuvres récupérés en France, S.3; Archives des musées nationaux (Louvre), Paris, Beleg («Reçu de la Direction des Musées de France les tableaux ci-après désignés provenant de la collection de M. Alphonse Kann», typoscript), signiert Mre Bokanowski [procureur des héritiers d'Alphonse Kann] und datiert 22/X/48 und 9/XI/48, S. 1, No. Ka 1072 («Degas, Etude de main, pastel»)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/charles-weil
+    ended: 1951-11-14
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        note: "Footnote: Neffe des oben Genannten, AStEGB, Brief von Charles Weil, Paris, an Emil Bührle, 16.07.1951, in dem er zwei Studien für das Porträt von Mme Camus anbietet, und Brief von Charles Weil, Paris, an Emil Bührle, 29.04.1952, in dem er bestätigt, dass die beiden an Bührle verkauften Pastelle aus der Sammlung seines Onkels stammen."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/emil-georg-buhrle
+    acquired: 1951-11-14
+    ended: 1956-11-28
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        note: "Footnote: Erworben zusammen mit einem weiteren Pastell aus der gleichen Serie (Sammlung Emil Bührle, Inv. 30) für FF 400.000, AStEGB, Rechnung von Charles Weil, Paris, ausgestellt auf Emil Bührle, 01.09.1951, und Korrespondenz über den Kauf und die Einfuhr der beiden Pastelle, 15.08.1951-12.11.1951, der letzte Brief mit einer Entschuldigung für die verspätete Zahlung; Zahlungsauftrag von Emil Bührle an Credit Swiss, Zürich, 14.11.1951, mit dem er die Zahlung von FF 391.500 an Charles Weill, Paris, anordnet (wobei die Versandkosten von FF 8.500 vom Gesamtbetrag von FF 400.000 abgezogen werden)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/emil-georg-buhrle
+    role: estate
+    acquired: 1956-11-28
+    ended: 1960
+    method: inheritance
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/foundation-e-g-buhrle-collection
+    numbers:
+      - kind: inventory
+        number: "31"
+    acquired: 1960
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/703959/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   kind:
     - url: https://collection.kunsthaus.ch/de/collection/item/703959/

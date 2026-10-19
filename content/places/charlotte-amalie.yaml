@@ -1,0 +1,16 @@
+public_id: "100828"
+name: Charlotte Amalie
+kind: site
+location: [-64.95, 18.35]
+wikidata_id: Q51681
+metadata:
+  sources: [Wikidata Q51681 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q51681
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q51681

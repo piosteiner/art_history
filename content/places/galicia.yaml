@@ -1,0 +1,16 @@
+public_id: "100952"
+name: Galicia
+kind: country
+location: [-7.9, 42.8]
+wikidata_id: Q3908
+metadata:
+  sources: [Wikidata Q3908 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q3908
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q3908

@@ -1,0 +1,14 @@
+public_id: "101081"
+name: Early Gothic
+kind: style
+parent: gothic
+period: mid 12th century–late 12th century
+metadata:
+  sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/france
+    period: mid 12th century–late 12th century
+    sources: ["Getty Art & Architecture Thesaurus, “Early Gothic” (AAT 300020780): “flourished in the Île-de-France with the emergence of the strong French monarchy and resulting building campaigns in the mid-12th century”", "Getty Art & Architecture Thesaurus, “High Gothic” (AAT 300020782): “Gothic art of the late 12th through the 13th centuries”"]
+sources:
+  period: ["Getty Art & Architecture Thesaurus, “Early Gothic” (AAT 300020780): “flourished in the Île-de-France with the emergence of the strong French monarchy and resulting building campaigns in the mid-12th century”", "Getty Art & Architecture Thesaurus, “High Gothic” (AAT 300020782): “Gothic art of the late 12th through the 13th centuries”"]

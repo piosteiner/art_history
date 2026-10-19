@@ -1,0 +1,14 @@
+public_id: "101091"
+name: Late Baroque
+kind: style
+parent: baroque
+period: c. 1675–c. 1715
+metadata:
+  sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: c. 1675–c. 1715
+    sources: ["Getty Art & Architecture Thesaurus, “Late Baroque” (AAT 300021151): “the final years of the Baroque style, from approximately 1675 to 1715”"]
+sources:
+  period: ["Getty Art & Architecture Thesaurus, “Late Baroque” (AAT 300021151): “the final years of the Baroque style, from approximately 1675 to 1715”"]

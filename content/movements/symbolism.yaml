@@ -1,0 +1,18 @@
+public_id: "100847"
+name: Symbolism
+kind: movement
+period: late 19th century
+wikidata_id: Q164800
+metadata:
+  sources: [Wikidata Q164800 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: late 19th century
+    sources: ["Getty Art & Architecture Thesaurus, “Symbolist” (AAT 300021514): “first applied to literature in the late 19th century, spreading to painting and theater”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q164800
+  period: ["Getty Art & Architecture Thesaurus, “Symbolist” (AAT 300021514): “first applied to literature in the late 19th century, spreading to painting and theater”"]

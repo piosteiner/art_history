@@ -1,0 +1,19 @@
+public_id: "100833"
+name: Neo-impressionism
+kind: movement
+parent: impressionism
+period: 1886/1906
+wikidata_id: Q150091
+metadata:
+  sources: [Wikidata Q150091 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/france
+    period: 1886/1906
+    sources: ["Getty Art & Architecture Thesaurus, “Neo-Impressionist” (AAT 300021505): “flourished from 1886 to 1906”", "Wikidata, Neo-impressionism (Q150091): dissolved 1906"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q150091
+  period: ["Getty Art & Architecture Thesaurus, “Neo-Impressionist” (AAT 300021505): “flourished from 1886 to 1906”", "Wikidata, Neo-impressionism (Q150091): dissolved 1906"]

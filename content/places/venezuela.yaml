@@ -1,0 +1,16 @@
+public_id: "100829"
+name: Venezuela
+kind: country
+location: [-67, 8]
+wikidata_id: Q717
+metadata:
+  sources: [Wikidata Q717 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q717
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q717

@@ -1,0 +1,23 @@
+public_id: "101105"
+name: Johanna van Gogh-Bonger
+given_name: Johanna
+family_name: van Gogh-Bonger
+kind: person
+birth: 1862-10-04
+death: 1925-09-02
+wikidata_id: Q2554450
+metadata:
+  sources: [Wikidata Q2554450 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2554450
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q2554450
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q2554450

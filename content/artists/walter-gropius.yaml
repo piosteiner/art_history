@@ -1,0 +1,108 @@
+public_id: "100834"
+name: Walter Gropius
+given_name: Walter
+family_name: Gropius
+names: [Georg Walter Adolf Gropius]
+birth: 1883-05-18
+death: 1969-07-05
+wikidata_id: Q61071
+metadata:
+  sources: [Wikidata Q61071 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/german-empire
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q61071
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q61071
+  - type: nationality
+    to: polity/nazi-germany
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q61071
+  - type: nationality
+    to: polity/weimar-republic
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q61071
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q61071
+  - type: died_in
+    to: place/boston
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q61071
+  - type: lived_in
+    to: place/cambridge
+    sources:
+      - accessed: 2026-10-18
+        property: P551
+        wikidata: Q61071
+  - type: member_of
+    to: institution/congres-international-d-architecture-moderne
+    sources:
+      - accessed: 2026-10-18
+        property: P463
+        wikidata: Q61071
+  - type: member_of
+    to: institution/deutscher-werkbund
+    sources:
+      - accessed: 2026-10-18
+        property: P463
+        wikidata: Q61071
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-10-18
+        property: P463
+        wikidata: Q61071
+  - type: associated_with
+    to: movement/bauhaus
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q61071
+  - type: founded
+    to: movement/bauhaus
+    sources:
+      - accessed: 2026-10-18
+        property: P112
+        wikidata: Q124354
+  - type: founded
+    to: institution/bauhaus
+    period: 1919
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/70/Walter_Gropius_Foto_1920.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Walter_Gropius_Foto_1920.jpg
+    license: Public domain
+identifiers:
+  bnf: 12282423p
+  gnd: "118542443"
+  idref: "027382206"
+  kulturnav: 399bf4be-88a8-49af-ab7d-862d39ac9dc4
+  lc: n80076591
+  rkd: "238763"
+  ulan: "500028112"
+  viaf: "24663766"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q61071
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q61071

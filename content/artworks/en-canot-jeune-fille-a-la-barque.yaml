@@ -1,0 +1,49 @@
+public_id: "100717"
+title: En Canot (Jeune fille à la barque)
+creator: pierre-auguste-renoir
+created: 1877
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [73.7, 92.9]
+web_url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Pierre-Auguste_Renoir_-_En_Canot_%28Jeune_fille_%C3%A0_la_barque%29.jpg/1280px-Pierre-Auguste_Renoir_-_En_Canot_%28Jeune_fille_%C3%A0_la_barque%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_En_Canot_(Jeune_fille_%C3%A0_la_barque).jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: institution/blaquier-arrieta-collection
+    ended: 2026-11-18
+    label: Sotheby's New York
+    certainty: possible
+    sources: [https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en]
+    check_after: 2026-11-18
+sources:
+  kind:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  medium:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  created:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  creator:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  materials:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18
+  dimensions:
+    - url: https://www.sothebys.com/en/buy/auction/2026/legendary-the-blaquier-arrieta-collection-evening-auction/pierre-auguste-renoir-en-canot-or-jeune-fille-a-la?locale=en
+      source: sothebys-com
+      accessed: 2026-10-18

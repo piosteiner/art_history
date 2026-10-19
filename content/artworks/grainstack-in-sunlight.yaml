@@ -24,6 +24,164 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Poss_1288_Grainstack_in_Sunshine,_1891,_Meule_au_soleil,_Oil_on_Canvas,_60_x_100_cm,_Zurich,_Kunsthaus_Zurich.jpg
     license: Public domain
     credit: Claude Monet
+provenance:
+  - owner: person/paul-durand-ruel
+    role: dealer
+    acquired: 1891-07-20
+    ended: 1897-04-13
+    method: purchase
+    direct: true
+    price:
+      amount: 3200
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: E-Mail-Korrespondenz Flavie Durand-Ruel (Durand-Ruel & Cie.), 08.09.2025."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/edmond-decap
+    acquired: 1897-04-13
+    ended: 1903-10-12
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 8000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 2. "
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/paul-durand-ruel
+    role: dealer
+    acquired: 1903-10-12
+    ended: 1905-06-16
+    method: purchase
+    direct: true
+    place: paris
+    price:
+      amount: 9000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/alonzo-barton-hepburn
+    acquired: 1905-06-16
+    ended: 1922-01-25 or earlier
+    method: purchase
+    direct: true
+    place: new-york-city
+    price:
+      amount: 15000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 2; Wildenstein 1996, Bd. 3, S. 502, No. 1288."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/cordelia-susan-hepburn-cushman
+    acquired: 1922-01-25 or earlier
+    ended: 1946-11-25
+    method: inheritance
+    direct: true
+    place: new-york-city
+    certainty: probable
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1946-11-25
+    ended: 1947-05-10
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: jointly with Paul Rosenberg, in equal shares
+    price:
+      amount: 8000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1946-11-25
+    ended: 1947-04-10
+    method: purchase
+    direct: true
+    place: new-york-city
+    label: jointly with the Durand-Ruel Galleries, in equal shares
+    price:
+      amount: 8000
+      currency: USD
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Paul Rosenberg und die Galerie Durand-Ruel New York erwarben das Werk gemeinsam und zu gleichen Teilen für insgesamt 8000.- USD (E-Mail Korrespondenz Flavie Durand-Ruel, Durand-Ruel & Cie., 08.10.2025)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/parke-bernet
+    role: agent
+    numbers:
+      - kind: lot
+        number: "185"
+    acquired: 1947-04-10
+    ended: 1947-04-10
+    method: auction
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 2; Wildenstein 1996, Bd. 3, S. 502, No. 1288."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/charlotte-strand-oser
+    label: Mosman (NSW, Australia)
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wildenstein 1996, Bd. 3, S. 502, No. 1288."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/g-salomon
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/arthur-tooth
+    acquired: c. 1963
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthandlung-fritz-und-peter-nathan
+    role: agent
+    acquired: 1967
+    ended: 1969
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        note: "Footnote: Wie oben Fussnote 11."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1969
+    method: purchase
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2237/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   names:
     - accessed: 2026-10-09

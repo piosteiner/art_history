@@ -25,6 +25,8 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Wassily_kandinsky.jpg
     license: Public domain
     credit: 未知上傳者
+identifiers:
+  dome: "5"
 sources:
   birth:
     - accessed: 2026-10-09

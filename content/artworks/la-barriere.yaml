@@ -1,12 +1,34 @@
 public_id: "100410"
+title_lang: fr
 title: La Barrière
+names:
+  - lang: en
+    role: translation
+    text: The Gate
+  - lang: de
+    role: alternative
+    text: Die Schweinehüterin
+  - lang: de
+    role: translation
+    text: Das Gittertor
+    status: official
 creator: paul-gauguin
 created: 1889
 kind: oil painting
 medium: Oil on canvas
+materials: [oil paint, canvas]
 dimensions: [92.5, 73]
 institution: kunsthaus-zurich
 inventory_number: 1981/0002
+web_url: https://collection.kunsthaus.ch/de/collection/item/1283/
+wikidata_id: Q116621219
+metadata:
+  sources: [Wikidata Q116621219 (retrieved 2026-10-18)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/01/Paul_Gauguin_-_La_Barri%C3%A8re_-_1981-0002_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_La_Barri%C3%A8re_-_1981-0002_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Paul Gauguin
 provenance:
   - owner: person/daniel-de-monfreid
     acquired: 1891-02
@@ -94,19 +116,38 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/1283/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-15
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q116621219
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/1283/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-15
+    - accessed: 2026-10-18
+      property: P170
+      wikidata: Q116621219
   dimensions:
     - url: https://collection.kunsthaus.ch/de/collection/item/1283/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-15
+    - accessed: 2026-10-18
+      property: P2048
+      wikidata: Q116621219
   institution:
     - url: https://collection.kunsthaus.ch/de/collection/item/1283/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-15
+    - accessed: 2026-10-18
+      property: P195
+      wikidata: Q116621219
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/1283/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/1283/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-15
+    - accessed: 2026-10-18
+      property: P217
+      wikidata: Q116621219

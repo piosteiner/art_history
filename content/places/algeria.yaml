@@ -1,0 +1,21 @@
+public_id: "100805"
+name: Algeria
+kind: country
+country_code: DZ
+boundary_code: DZ
+location: [1, 28]
+wikidata_id: Q262
+metadata:
+  sources: [Wikidata Q262 (retrieved 2026-10-18)]
+identifiers:
+  gnd: 4001179-3
+  hls: "003434"
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q262
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q262

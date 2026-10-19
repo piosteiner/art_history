@@ -1,0 +1,14 @@
+public_id: "101090"
+name: High Baroque
+kind: style
+parent: baroque
+period: c. 1625–c. 1675
+metadata:
+  sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/italy
+    period: c. 1625–c. 1675
+    sources: ["Getty Art & Architecture Thesaurus, “High Baroque” (AAT 300021150): “the Italian art and architecture that emerged in Rome around 1625 and lasted for half a century”"]
+sources:
+  period: ["Getty Art & Architecture Thesaurus, “High Baroque” (AAT 300021150): “the Italian art and architecture that emerged in Rome around 1625 and lasted for half a century”"]

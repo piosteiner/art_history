@@ -1,0 +1,103 @@
+public_id: "100842"
+name: Arnold Böcklin
+given_name: Arnold
+family_name: Böcklin
+birth: 1827-10-16
+death: 1901-01-16
+wikidata_id: Q123071
+metadata:
+  sources: [Wikidata Q123071 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q123071
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q123071
+  - type: died_in
+    to: place/convent-of-san-domenico
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q123071
+  - type: died_in
+    to: place/fiesole
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q123071
+  - type: worked_in
+    to: place/basel
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123071
+  - type: worked_in
+    to: place/dusseldorf
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123071
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123071
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123071
+  - type: worked_in
+    to: place/weimar
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123071
+  - type: studied_at
+    to: institution/kunstakademie-dusseldorf
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q123071
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q123071
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ef/Arnold_B%C3%B6cklin_%281827_-_1901%29%2C_Selbstportrait_%281873%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arnold_B%C3%B6cklin_(1827_-_1901),_Selbstportrait_(1873).jpg
+    license: Public domain
+    credit: Arnold Böcklin
+identifiers:
+  bnf: 12101980t
+  dodis: P25411
+  dome: "34"
+  gnd: "118512374"
+  hls: "021878"
+  idref: "029380723"
+  kulturnav: 1403598e-f4bb-431f-bd5b-0093f1b41969
+  lc: n50010065
+  rkd: "9487"
+  sikart: "4022825"
+  ulan: "500016466"
+  viaf: "46789876"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q123071
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q123071

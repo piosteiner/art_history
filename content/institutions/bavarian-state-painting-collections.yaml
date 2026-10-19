@@ -1,0 +1,27 @@
+public_id: "101005"
+name: Bavarian State Painting Collections
+names:
+  - lang: de
+    role: translation
+    text: Bayerische Staatsgemäldesammlungen
+kind: museum administration
+founded: 1799
+location: [11.57178, 48.14958]
+description_md: "The Bavarian state authority for paintings and sculpture: it owns the collections and runs the Alte Pinakothek, the Neue Pinakothek, the Sammlung Moderne Kunst in the Pinakothek der Moderne, the Museum Brandhorst, the Sammlung Schack and branch galleries across Bavaria."
+website_url: https://www.pinakothek.de/
+wikidata_id: Q812285
+metadata:
+  sources: [Wikidata Q812285 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q812285
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q812285
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q812285

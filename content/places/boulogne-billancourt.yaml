@@ -1,0 +1,16 @@
+public_id: "100685"
+name: Boulogne-Billancourt
+kind: settlement
+location: [2.24139, 48.83528]
+wikidata_id: Q172455
+metadata:
+  sources: [Wikidata Q172455 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q172455
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q172455

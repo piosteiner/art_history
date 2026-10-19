@@ -1,11 +1,29 @@
 public_id: "100249"
 name: Escola de Arte e Superior de Deseño Pablo Picasso
 founded: 1890
+place: a-coruna
+location: [-8.39392, 43.37502]
+website_url: http://www.eapicasso.com/
 wikidata_id: Q47537669
 metadata:
   sources: [Wikidata Q47537669 (retrieved 2026-10-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Escola_de_Arte_e_Superior_de_Dese%C3%B1o_Pablo_Picasso.jpg/1280px-Escola_de_Arte_e_Superior_de_Dese%C3%B1o_Pablo_Picasso.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Escola_de_Arte_e_Superior_de_Dese%C3%B1o_Pablo_Picasso.jpg
+    license: CC BY-SA 3.0
+    credit: Estevoaei
+identifiers:
+  viaf: "129348478"
 sources:
+  place:
+    - accessed: 2026-10-18
+      property: P131
+      wikidata: Q47537669
   founded:
     - accessed: 2026-10-13
       property: P571
+      wikidata: Q47537669
+  location:
+    - accessed: 2026-10-18
+      property: P625
       wikidata: Q47537669

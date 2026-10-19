@@ -29,33 +29,100 @@ images:
     license: Public domain
     credit: Paul Cézanne
 provenance:
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1895
+    ended: 1909-07-30
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7927/
+        note: "Footnote: Erworben vom Künstler, wahrscheinlich im Zusammenhang mit der Ausstellung von 1895 in der Galerie des Händlers; Kat. Metropolitan Museum of Art New York 2006, S. 47, No. 88, S. 284."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/marcel-nemes
+    acquired: 1909-07-30
+    ended: 1913-06-18
+    direct: true
+    place: budapest
+    price:
+      amount: 20000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7927/
+        note: "Footnote: Wie oben Fussnote 2; Auktion Galerie Manzi-Joyant 1913, Lot. 90."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/galerie-manzi-joyant
+    role: agent
+    numbers:
+      - kind: lot
+        number: "90"
+    acquired: 1913-06-18
+    ended: 1913-06-18
+    method: auction
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7927/
+        note: "Footnote: Auktion Galerie Manzi-Joyant, wie oben Fussnote 4."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/gottlieb-friedrich-reber
+    role: dealer
+    further_places: [lausanne]
+    acquired: 1913-06-18
+    ended: 1948-08-28
+    method: purchase
+    direct: true
+    place: munich
+    label: Langerfeld-Wuppertal, Lugano, Ascona
+    price:
+      amount: 56000
+      currency: FRF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7927/
+        note: "Footnote: R. K. 1913, S. 516, 518; Kropmanns/Fleckner 2001, S. 352."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
   - owner: person/emil-georg-buhrle
     acquired: 1948-08-28
     ended: 1956-11-28
     method: purchase
+    direct: true
     place: zurich
+    price:
+      amount: 400000
+      currency: CHF
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/7927/
+        note: "Footnote: AStEGB, Eingangsbuch I, 14.07.1948; der Erwerbspreis erwähnt in AStEGB, Brief von Emil Bührle an Alois Miedl, Zürich, 27.08.1948, in dem er Miedl ein Gemälde von Cézanne, Portrait of Choquet [R.460] als Kommission anbietet. Zu einem Hinweis im Eingangsbuch, wonach das Gemälde zum Zeitpunkt des Erwerbs verpfändet war, und weiteren Details zum Erwerb siehe Stiftung Sammlung E.G. Bührle 2021 (Sammlungskatalog), S. 109-112."
         source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-10-08
-  - owner_label: Nachlass Emil Bührle (estate)
+        accessed: 2026-10-18
+  - owner: person/emil-georg-buhrle
+    role: estate
     acquired: 1956-11-28
     ended: 1960
     method: inheritance
+    direct: true
     place: zurich
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/7927/
         source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-10-08
+        accessed: 2026-10-18
   - owner: institution/foundation-e-g-buhrle-collection
+    numbers:
+      - kind: inventory
+        number: "18"
     acquired: 1960
     method: gift
+    direct: true
     place: zurich
-    label: Inv.-Nr. 18; since 2021 on permanent loan to the Kunsthaus Zürich
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/7927/
         source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-10-08
+        accessed: 2026-10-18
 numbers:
   - number: "18"
     institution: foundation-e-g-buhrle-collection

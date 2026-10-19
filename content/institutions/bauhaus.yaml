@@ -1,0 +1,30 @@
+public_id: "101023"
+name: Bauhaus
+names: [Staatliches Bauhaus]
+kind: art school
+founded: 1919
+description_md: The school of art, design and architecture founded by Walter Gropius in Weimar in 1919. It moved to Dessau in 1925 — into the Bauhaus building there from December 1926 — and to Berlin in 1932, where it closed in 1933. The style it stands for is the movement [[movement/bauhaus|Bauhaus]].
+wikidata_id: Q124354
+metadata:
+  sources: [Wikidata Q124354 (retrieved 2026-10-18)]
+relationships:
+  - type: located_in
+    to: place/weimar
+    period: 12 April 1919–31 March 1925
+  - type: located_in
+    to: place/dessau-ro-lau
+    period: 1 April 1925–30 September 1932
+  - type: located_in
+    to: place/berlin
+    period: 1932/1933
+  - type: associated_with
+    to: movement/bauhaus
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q124354
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q124354

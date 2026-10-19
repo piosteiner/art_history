@@ -2,4 +2,65 @@ public_id: "100408"
 name: Pola Gauguin
 given_name: Pola
 family_name: Gauguin
+names: [Paul Rollon Gauguin]
+birth: 1883-12-06
+death: 1961-07-02
 wikidata_id: Q3784452
+metadata:
+  sources: [Wikidata Q3784452 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q3784452
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q3784452
+  - type: died_in
+    to: place/copenhagen
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q3784452
+  - type: worked_in
+    to: place/copenhagen
+    period: 1904/1905
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q3784452
+  - type: worked_in
+    to: place/oslo
+    period: 1917/1924
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q3784452
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Pola_Gauguin_OB.F05882c.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pola_Gauguin_OB.F05882c.jpg
+    license: CC BY-SA 3.0
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "108993321"
+  gnd: "172093082"
+  idref: "188628487"
+  kulturnav: 8f1f4591-704c-460e-b05e-3ba4b5c289e2
+  lc: no92029097
+  rkd: "30453"
+  ulan: "500057331"
+  viaf: "91908071"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q3784452
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q3784452

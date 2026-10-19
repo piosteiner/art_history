@@ -1,0 +1,23 @@
+public_id: "100636"
+name: Marie-Hortense Fiquet
+given_name: Marie-Hortense
+family_name: Fiquet
+kind: person
+birth: 1850-04-22
+death: 1922-05-03
+wikidata_id: Q463803
+metadata:
+  sources: [Wikidata Q463803 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q463803
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q463803
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q463803

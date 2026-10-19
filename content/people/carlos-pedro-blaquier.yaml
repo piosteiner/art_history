@@ -1,0 +1,59 @@
+public_id: "100666"
+name: Carlos Pedro Blaquier
+given_name: Carlos Pedro
+family_name: Blaquier
+kind: person
+birth: 1927-08-28
+death: 2023-03-13
+wikidata_id: Q17462598
+metadata:
+  sources: [Wikidata Q17462598 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/argentina
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q17462598
+  - type: born_in
+    to: place/buenos-aires
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q17462598
+      - url: https://d-nb.info/gnd/1331112192
+        source: gnd
+        accessed: 2026-10-18
+  - type: died_in
+    to: place/buenos-aires
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q17462598
+      - url: https://d-nb.info/gnd/1331112192
+        source: gnd
+        accessed: 2026-10-18
+  - type: founded
+    to: institution/blaquier-arrieta-collection
+    sources: [https://www.sothebys.com/en/series/legendary-the-blaquier-arrieta-collection]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/19/Blaquier_123.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Blaquier_123.jpg
+    license: CC BY-SA 4.0
+    credit: Ernesto Valladares
+identifiers:
+  gnd: "1331112192"
+  viaf: "19156809560845122171"
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q17462598
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q17462598
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q17462598

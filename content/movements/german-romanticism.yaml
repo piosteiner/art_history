@@ -1,0 +1,11 @@
+public_id: "100995"
+name: German Romanticism
+kind: movement
+wikidata_id: Q2477112
+metadata:
+  sources: [Wikidata Q2477112 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2477112

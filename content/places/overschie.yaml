@@ -1,0 +1,16 @@
+public_id: "100905"
+name: Overschie
+kind: settlement
+location: [4.42944, 51.935]
+wikidata_id: Q2389241
+metadata:
+  sources: [Wikidata Q2389241 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2389241
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q2389241

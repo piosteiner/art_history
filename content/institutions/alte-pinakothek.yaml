@@ -1,0 +1,30 @@
+public_id: "101006"
+name: Alte Pinakothek
+kind: museum
+founded: 1836
+location: [11.56999, 48.14829]
+address: Barer Straße 27, 80333 München, Germany
+website_url: https://www.pinakothek.de/besuch/alte-pinakothek
+wikidata_id: Q154568
+metadata:
+  sources: [Wikidata Q154568 (retrieved 2026-10-18)]
+relationships:
+  - type: part_of
+    to: institution/bavarian-state-painting-collections
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q154568
+  address:
+    - accessed: 2026-10-18
+      property: P6375
+      wikidata: Q154568
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q154568
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q154568

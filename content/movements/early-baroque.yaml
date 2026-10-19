@@ -1,0 +1,14 @@
+public_id: "101089"
+name: Early Baroque
+kind: style
+parent: baroque
+period: c. 1585–1625
+metadata:
+  sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/italy
+    period: c. 1585–1625
+    sources: ["Getty Art & Architecture Thesaurus, “Early Baroque” (AAT 300021149): “particularly the Italian Baroque from about 1585 to 1625”"]
+sources:
+  period: ["Getty Art & Architecture Thesaurus, “Early Baroque” (AAT 300021149): “particularly the Italian Baroque from about 1585 to 1625”"]

@@ -1,0 +1,27 @@
+public_id: "100756"
+name: Etienne Grandjean
+given_name: Etienne
+family_name: Grandjean
+birth: 1914
+death: 1991
+relationships:
+  - type: born_in
+    to: place/bern
+    period: 1914
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/418/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - type: worked_in
+    to: institution/eth-zurich
+    period: 1950
+    sources: [https://collection.kunsthaus.ch/de/collection/item/418/]
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/de/collection/item/418/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  death:
+    - url: https://collection.kunsthaus.ch/de/collection/item/418/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18

@@ -1,0 +1,20 @@
+public_id: "100836"
+name: Bauhaus
+kind: movement
+period: 1919/1933
+wikidata_id: Q124354
+metadata:
+  sources: [Wikidata Q124354 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/germany
+    period: 1919/1933
+    sources: ["Getty Art & Architecture Thesaurus, “Bauhaus” (AAT 300021432): “active in Weimar from 1919 to 1925, in Dessau from 1925 to 1932, and in Berlin from 1932 to 1933”"]
+identifiers:
+  gnd: 4130303-9
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q124354
+  period: ["Getty Art & Architecture Thesaurus, “Bauhaus” (AAT 300021432): “active in Weimar from 1919 to 1925, in Dessau from 1925 to 1932, and in Berlin from 1932 to 1933”"]

@@ -7,6 +7,100 @@ death: 1840-05-07
 wikidata_id: Q104884
 metadata:
   sources: [Wikidata Q104884 (retrieved 2026-10-16)]
+relationships:
+  - type: nationality
+    to: polity/sweden
+    period: 1774/1815
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q104884
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    period: 1815
+    period_label: from 1815
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q104884
+  - type: born_in
+    to: place/greifswald
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q104884
+  - type: died_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q104884
+  - type: worked_in
+    to: place/copenhagen
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q104884
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q104884
+  - type: worked_in
+    to: place/greifswald
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q104884
+  - type: worked_in
+    to: place/loschwitz
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q104884
+  - type: worked_in
+    to: place/neubrandenburg
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q104884
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q104884
+  - type: studied_at
+    to: institution/royal-danish-academy-of-fine-arts
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q104884
+  - type: associated_with
+    to: movement/german-romanticism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q104884
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Caspar_David_Friedrich%2C_Selvportr%C3%A6t%2C_1800%2C_KKSgb5006%2C_Statens_Museum_for_Kunst.jpg/1280px-Caspar_David_Friedrich%2C_Selvportr%C3%A6t%2C_1800%2C_KKSgb5006%2C_Statens_Museum_for_Kunst.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich,_Selvportr%C3%A6t,_1800,_KKSgb5006,_Statens_Museum_for_Kunst.jpg
+    license: Public domain
+    credit: Caspar David Friedrich
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Carl_Johann_Baehr_-_Bildnis_des_Malers_Caspar_David_Friedrich.jpg/1280px-Carl_Johann_Baehr_-_Bildnis_des_Malers_Caspar_David_Friedrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carl_Johann_Baehr_-_Bildnis_des_Malers_Caspar_David_Friedrich.jpg
+    license: Public domain
+    credit: Johann Karl Bähr
+identifiers:
+  bnf: 12300916t
+  gnd: "118535889"
+  idref: "031876129"
+  kulturnav: 351378a6-1d4f-4478-9fae-ee1a11abfbfc
+  lc: n79059754
+  rkd: "29498"
+  ulan: "500116242"
+  viaf: "12145857793223021180"
 sources:
   birth:
     - accessed: 2026-10-16

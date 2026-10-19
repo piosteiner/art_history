@@ -7,8 +7,18 @@ medium: Oil on paper on canvas
 dimensions: [59.5, 51]
 institution: kunsthaus-zurich
 inventory_number: BU 0117
+web_url: https://collection.kunsthaus.ch/de/collection/item/604999/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/%C3%89douard_Vuillard_-_La_Visiteuse_-_117_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Vuillard_-_La_Visiteuse_-_117_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Vuillard_-_The_Visitor%2C_ca._1900.jpg/1280px-Vuillard_-_The_Visitor%2C_ca._1900.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vuillard_-_The_Visitor,_ca._1900.jpg
+    license: Public domain
+    credit: Édouard Vuillard
 provenance:
   - owner: institution/bernheim-jeune
     role: dealer

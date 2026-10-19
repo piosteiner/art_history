@@ -1,0 +1,9 @@
+public_id: "101025"
+name: Carl von Rose
+given_name: Carl
+family_name: von Rose
+kind: person
+birth: 1863
+death: 1945
+metadata:
+  sources: [Wikidata null (retrieved 2026-10-18)]

@@ -1,0 +1,11 @@
+public_id: "100876"
+name: Dutch Republic
+period: 1581-08-05/1795-01-19
+wikidata_id: Q170072
+metadata:
+  sources: [Wikidata Q170072 (retrieved 2026-10-18)]
+sources:
+  period:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q170072

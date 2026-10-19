@@ -31,6 +31,19 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Katsushika_Hokusai_-_The_Great_Wave_off_the_Coast_of_Kanagawa_LCCN2008660568.jpg
     license: Public domain
     credit: Katsushika, Hokusai, 1760-1849, artist
+provenance:
+  - owner: person/louisine-w-havemeyer
+    ended: 1929
+    place: new-york-city
+    label: H. O. Havemeyer Collection
+    sources: ['The Metropolitan Museum of Art, JP1847, credit line: "H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929"']
+  - owner: institution/metropolitan-museum-of-art
+    acquired: 1929
+    method: bequest
+    direct: true
+    place: new-york-city
+    label: Bequest of Mrs. H. O. Havemeyer
+    sources: ["The Metropolitan Museum of Art, JP1847, credit line"]
 sources:
   inventory_number:
     - accessed: 2026-10-01

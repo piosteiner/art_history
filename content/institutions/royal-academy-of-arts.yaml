@@ -1,0 +1,11 @@
+public_id: "100811"
+name: Royal Academy of Arts
+founded: 1768
+wikidata_id: Q270920
+metadata:
+  sources: [Wikidata Q270920 (retrieved 2026-10-18)]
+sources:
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q270920

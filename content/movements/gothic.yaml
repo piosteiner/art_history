@@ -1,0 +1,22 @@
+public_id: "101080"
+name: Gothic
+kind: style
+period: c. 1140–c. 1530
+wikidata_id: Q46825
+metadata:
+  sources: [Wikidata Q46825 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: c. 1140–c. 1530
+    sources: ["Getty Art & Architecture Thesaurus, “Gothic (Medieval)” (AAT 300020775): “began in northern France in the mid-twelfth century, and spread to the rest of western Europe during the next 100 years. It evolved into the Renaissance at different times in different parts of Europe”", "Wikidata, Gothic art (Q46825): start time 1140, end time 1530s"]
+  - type: active_in
+    to: place/france
+    period: 1140–c. 1500
+    sources: ["Getty Art & Architecture Thesaurus, “French Gothic” (AAT 300440779): “pratiqué en France de 1140 à 1500 environ”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q46825
+  period: ["Getty Art & Architecture Thesaurus, “Gothic (Medieval)” (AAT 300020775): “began in northern France in the mid-twelfth century, and spread to the rest of western Europe during the next 100 years. It evolved into the Renaissance at different times in different parts of Europe”", "Wikidata, Gothic art (Q46825): start time 1140, end time 1530s"]

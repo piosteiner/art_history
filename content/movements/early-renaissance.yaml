@@ -1,0 +1,19 @@
+public_id: "101086"
+name: Early Renaissance
+kind: style
+parent: italian-renaissance
+period: mid 14th century–1490s
+wikidata_id: Q1472236
+metadata:
+  sources: [Wikidata Q1472236 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/italy
+    period: mid 14th century–1490s
+    sources: ["Getty Art & Architecture Thesaurus, “Early Renaissance” (AAT 300021141): “developed in Central Italy in the mid- to late fourteenth century and spread throughout the peninsula and to northern Europe in the early to mid-15th century”", "Getty Art & Architecture Thesaurus, “High Renaissance” (AAT 300021142): “developed primarily in the last decade of the fifteenth century in Florence and Rome”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1472236
+  period: ["Getty Art & Architecture Thesaurus, “Early Renaissance” (AAT 300021141): “developed in Central Italy in the mid- to late fourteenth century and spread throughout the peninsula and to northern Europe in the early to mid-15th century”", "Getty Art & Architecture Thesaurus, “High Renaissance” (AAT 300021142): “developed primarily in the last decade of the fifteenth century in Florence and Rome”"]

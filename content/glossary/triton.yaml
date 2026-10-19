@@ -1,0 +1,17 @@
+public_id: "100802"
+name: Triton
+category: technique
+definition: Greek god, messenger of the sea
+wikidata_id: Q148030
+metadata:
+  sources: [Wikidata Q148030 (retrieved 2026-10-18)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Herakles_Triton_Met_06.1021.48.jpg/1280px-Herakles_Triton_Met_06.1021.48.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Herakles_Triton_Met_06.1021.48.jpg
+    license: CC BY 2.5
+identifiers:
+  gnd: "119020882"
+sources:
+  definition:
+    - accessed: 2026-10-18
+      wikidata: Q148030

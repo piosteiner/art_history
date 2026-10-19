@@ -1,0 +1,16 @@
+public_id: "100830"
+name: Caracas
+kind: settlement
+location: [-66.91444, 10.50611]
+wikidata_id: Q1533
+metadata:
+  sources: [Wikidata Q1533 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1533
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q1533

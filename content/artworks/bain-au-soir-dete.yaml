@@ -12,6 +12,7 @@ dimensions: [97, 131]
 institution: kunsthaus-zurich
 inventory_number: 1965/0041
 web_url: https://collection.kunsthaus.ch/en/collection/item/3031/
+on_loan: true
 wikidata_id: Q62274515
 metadata:
   sources: [Wikidata Q62274515 (retrieved 2026-10-09)]
@@ -20,6 +21,44 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Vallotton_Das_Bad_Sommerabend_1892.jpg
     license: Public domain
     credit: Félix Vallotton
+provenance:
+  - owner: person/lucien-muhlfeld
+    acquired: 1895
+    ended: 1902
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3031/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/ambroise-vollard
+    acquired: 1902
+    ended: 1939
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3031/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner_label: Edmond and Madeleine de Galéa
+    acquired: 1939
+    ended: 1965
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3031/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1965
+    method: purchase
+    direct: true
+    place: bern
+    label: bought from the exhibition at the Kunsthaus Zürich, two thirds financed by the Migros-Genossenschafts-Bund
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3031/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 identifiers:
   gnd: "1072197669"
 sources:

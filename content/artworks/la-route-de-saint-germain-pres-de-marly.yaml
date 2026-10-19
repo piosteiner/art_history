@@ -30,33 +30,126 @@ images:
     license: Public domain
     credit: Alfred Sisley
 provenance:
+  - owner: person/etienne-bignou
+    role: dealer
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        note: "Footnote: Brame/Lorenceau 2021, No. 204."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/alex-reid-lefevre
+    role: dealer
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/paul-rosenberg
+    role: dealer
+    further_places: [new-york-city]
+    acquired: 1939 or earlier
+    ended: 1941
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        note: "Footnote: Archiv Paul Rosenberg, New York, Inventarverzeichnis, September 1952, S. 12-13, No. 4073."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/einsatzstab-reichsleiter-rosenberg
+    role: possessor
+    numbers:
+      - kind: err
+        number: PR 167
+    acquired: 1941
+    ended: 1941
+    method: confiscation
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        note: "Footnote: Yeide 2009, No. A1200."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/hermann-goring
+    role: possessor
+    numbers:
+      - kind: other
+        number: "1187"
+    acquired: 1941
+    ended: 1945
+    method: transfer
+    direct: true
+    label: Carinhall
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        note: "Footnote: Wie oben Fussnote 7."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    numbers:
+      - kind: munich
+        number: "6123"
+    acquired: 1945
+    ended: 1946
+    direct: true
+    place: munich
+    label: safekeeping
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1946-11-19
+    method: restitution
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        note: "Footnote: Archiv Paul Rosenberg Gallery, New York, Verweis auf Lenars Exportlizenz, 06.11.1949; übernommen aus dem Privatbestand von Mr. & Mrs. Rosenberg in den Galeriebestand für $ 6. 750 am 19.05.1953, Inventarverzeichnis, September 1952, S. 12-13; AStEGB, Brief von Paul Rosenberg, New York, an Emil Bührle, 22.09.1952, mit Einzelrechnungen für 10 Bilder, die Bührle bei ihm erworben hat, darunter Sisley Route de Saint-Germain, Marly."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
   - owner: person/emil-georg-buhrle
     acquired: 1953-05-19
     ended: 1956-11-28
     method: purchase
+    direct: true
     place: zurich
+    price:
+      amount: 9000
+      currency: USD
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/752012/
+        note: "Footnote: Erworben für $10.000 abzüglich 10% Rabatt ($1.000) = $9.000, AStEGB, Rechnung von Paul Rosenberg, New York, ausgestellt auf Emil Bührle, 22.09.1952; Brief von Emil Bührle an Paul Rosenberg, Zürich, 06.05.1953, mit einem Scheck über $50.400 als Bezahlung von 4 Bildern, darunter Sisley, Route de Saint-Germain, Marly; 2 Quittungen von Paul Rosenberg, 06.05.1953 und 21.05.1953, über den Betrag von $50. 400; Quittung von Paul Rosenberg, 19.05.1953, über den Betrag von $9.000 für Sisley, Route de Saint-Germain, Marly; Korrespondenz über die Einfuhr der 10 Bilder in die Schweiz, 12.01.1956-22.06.1956, wobei Sisley in den Papieren als «Marly» aufgeführt ist, mit einem angegebenen Wert von $6.000."
         source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-10-08
-  - owner_label: Nachlass Emil Bührle (estate)
+        accessed: 2026-10-18
+  - owner: person/emil-georg-buhrle
+    role: estate
     acquired: 1956-11-28
     ended: 1960
     method: inheritance
+    direct: true
     place: zurich
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/752012/
         source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-10-08
+        accessed: 2026-10-18
   - owner: institution/foundation-e-g-buhrle-collection
+    numbers:
+      - kind: inventory
+        number: "99"
     acquired: 1960
     method: gift
+    direct: true
     place: zurich
-    label: Inv.-Nr. 99; since 2021 on permanent loan to the Kunsthaus Zürich
     sources:
       - url: https://collection.kunsthaus.ch/de/collection/item/752012/
         source: kunsthaus-zurich-sammlung-online
-        accessed: 2026-10-08
+        accessed: 2026-10-18
 numbers:
   - number: "99"
     institution: foundation-e-g-buhrle-collection

@@ -1,0 +1,25 @@
+public_id: "100743"
+name: Yohanan Simon
+given_name: Yohanan
+family_name: Simon
+birth: 1905-11-03
+death: 1976-01-16
+wikidata_id: Q8054451
+metadata:
+  sources: [Wikidata Q8054451 (retrieved 2026-10-18)]
+relationships:
+  - type: student_of
+    to: artist/andre-derain
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q156272
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q8054451
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q8054451

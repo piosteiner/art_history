@@ -2,3 +2,154 @@ public_id: "100275"
 name: Jean-Baptiste-Camille Corot
 given_name: Jean-Baptiste-Camille
 family_name: Corot
+birth: 1796-07-16
+death: 1875-02-22
+wikidata_id: Q148475
+metadata:
+  sources: [Wikidata Q148475 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q148475
+  - type: born_in
+    to: place/rue-du-bac
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q148475
+  - type: died_in
+    to: place/rue-du-faubourg-poissonniere
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q148475
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/barbizon
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/belgium
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/dieppe
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/honfleur
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: worked_in
+    to: place/trouville-sur-mer
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q148475
+  - type: studied_at
+    to: institution/academie-suisse
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q148475
+  - type: studied_at
+    to: institution/lycee-pierre-corneille
+    period: 1807/1812
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q148475
+  - type: associated_with
+    to: movement/french-realism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q148475
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Jean-Baptiste-Camille_Corot_c1850.png/1280px-Jean-Baptiste-Camille_Corot_c1850.png
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Camille_Corot_c1850.png
+    license: Public domain
+    credit: Victor Lainé
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Jean-Baptiste_Camille_Corot_-_autoportrait.jpg/1280px-Jean-Baptiste_Camille_Corot_-_autoportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Camille_Corot_-_autoportrait.jpg
+    license: Public domain
+    credit: Jean-Baptiste Camille Corot
+identifiers:
+  bnf: 12001264g
+  dome: "1706"
+  gnd: "118522256"
+  hls: "022192"
+  idref: "027286517"
+  kulturnav: 29d3a2c4-da23-498c-a88c-26a955744182
+  lc: n50020661
+  rkd: "18465"
+  sikart: "4023342"
+  ulan: "500115390"
+  viaf: "4940255"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q148475
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q148475

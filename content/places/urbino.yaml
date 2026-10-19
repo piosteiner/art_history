@@ -1,0 +1,16 @@
+public_id: "100890"
+name: Urbino
+kind: settlement
+location: [12.6372, 43.72524]
+wikidata_id: Q2759
+metadata:
+  sources: [Wikidata Q2759 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2759
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q2759

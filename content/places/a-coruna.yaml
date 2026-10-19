@@ -1,0 +1,32 @@
+public_id: "100954"
+name: A Coruña
+names:
+  - lang: fr
+    role: translation
+    text: La Corogne
+  - lang: es
+    role: original
+    text: La Coruña
+  - lang: pt
+    role: translation
+    text: Corunha
+kind: settlement
+parent: la-coruna
+country_code: ES
+location: [-8.39611, 43.37111]
+wikidata_id: Q8757
+metadata:
+  sources: [Wikidata Q8757 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q8757
+  parent:
+    - accessed: 2026-10-18
+      property: P131
+      wikidata: Q8757
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q8757

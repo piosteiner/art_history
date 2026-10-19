@@ -1,0 +1,16 @@
+public_id: "100738"
+name: Garches
+kind: settlement
+location: [2.18694, 48.84556]
+wikidata_id: Q246199
+metadata:
+  sources: [Wikidata Q246199 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q246199
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q246199

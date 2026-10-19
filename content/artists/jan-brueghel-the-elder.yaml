@@ -7,6 +7,109 @@ death: 1625-01-13
 wikidata_id: Q209050
 metadata:
   sources: [Wikidata Q209050 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q209050
+  - type: born_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q209050
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q209050
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/heidelberg
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/prague
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/spa
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/italy
+    period: 1589/1596
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/rome
+    period: 1592/1594
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/milan
+    period: 1595/1596
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: worked_in
+    to: place/brussels
+    period: 1606/1613
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q209050
+  - type: associated_with
+    to: movement/flemish-baroque-painting
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q209050
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/43/Anthony_van_Dyck_%28possibly%29_-_Portrait_of_Jan_Brueghel_the_Elder.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anthony_van_Dyck_(possibly)_-_Portrait_of_Jan_Brueghel_the_Elder.jpg
+    license: Public domain
+    credit: Workshop of Anthony van Dyck
+identifiers:
+  bnf: 12244766f
+  gnd: "118674005"
+  idref: "031183085"
+  kulturnav: 316c99ca-590c-4614-9080-3d16c1b7cd24
+  lc: n81089670
+  rkd: "13288"
+  ulan: "500007095"
+  viaf: "100909732"
 sources:
   birth:
     - accessed: 2026-10-09

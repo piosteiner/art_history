@@ -1,0 +1,27 @@
+public_id: "100810"
+name: Teofil Fraerman
+given_name: Teofil
+family_name: Fraerman
+birth: 1883-03-14
+death: 1957-01-07
+wikidata_id: Q4492298
+metadata:
+  sources: [Wikidata Q4492298 (retrieved 2026-10-18)]
+relationships:
+  - type: student_of
+    to: artist/pierre-bonnard
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q26408
+identifiers:
+  dome: "11993"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q4492298
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q4492298

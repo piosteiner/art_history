@@ -1,0 +1,16 @@
+public_id: "100900"
+name: Rio de Janeiro
+kind: settlement
+location: [-43.20556, -22.91111]
+wikidata_id: Q8678
+metadata:
+  sources: [Wikidata Q8678 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q8678
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q8678

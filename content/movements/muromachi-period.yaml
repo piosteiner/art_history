@@ -1,0 +1,18 @@
+public_id: "101096"
+name: Muromachi period
+kind: period
+period: 1338/1573
+wikidata_id: Q334845
+metadata:
+  sources: [Wikidata Q334845 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1338/1573
+    sources: ["Getty Art & Architecture Thesaurus, “Muromachi” (AAT 300018561): “the Japanese period and style of art that developed during the rise of the Asikaga shogunate (1338-1573)”", "Wikidata, Muromachi period (Q334845): start time 1336, end time 1573"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q334845
+  period: ["Getty Art & Architecture Thesaurus, “Muromachi” (AAT 300018561): “the Japanese period and style of art that developed during the rise of the Asikaga shogunate (1338-1573)”", "Wikidata, Muromachi period (Q334845): start time 1336, end time 1573"]

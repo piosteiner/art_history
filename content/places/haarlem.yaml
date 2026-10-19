@@ -1,0 +1,16 @@
+public_id: "100901"
+name: Haarlem
+kind: settlement
+location: [4.63556, 52.38139]
+wikidata_id: Q9920
+metadata:
+  sources: [Wikidata Q9920 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q9920
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q9920

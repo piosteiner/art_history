@@ -1,0 +1,24 @@
+public_id: "100903"
+name: 2nd arrondissement of Paris
+kind: site
+parent: paris
+country_code: FR
+location: [2.34047, 48.86688]
+wikidata_id: Q209549
+metadata:
+  sources: [Wikidata Q209549 (retrieved 2026-10-18)]
+identifiers:
+  gnd: 4441113-3
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q209549
+  parent:
+    - accessed: 2026-10-18
+      property: P131
+      wikidata: Q209549
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q209549

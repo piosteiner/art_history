@@ -1,0 +1,50 @@
+public_id: "100672"
+name: Nelly Arrieta de Blaquier
+given_name: Nelly Arrieta
+family_name: de Blaquier
+names:
+  - lang: es
+    role: original
+    text: María Elena Arrieta de Blaquier
+  - Nelly Arrieta Wollman
+  - María Elena Arrieta Wollman
+kind: person
+occupations: [patron of the arts]
+birth: 1931-11-11
+death: 2020-11-15
+wikidata_id: Q130409898
+metadata:
+  sources: [Wikidata Q130409898 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/argentina
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q130409898
+  - type: born_in
+    to: place/buenos-aires
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q130409898
+  - type: founded
+    to: institution/blaquier-arrieta-collection
+    sources: [https://www.sothebys.com/en/series/legendary-the-blaquier-arrieta-collection]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q130409898
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q130409898
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q130409898
+  occupations:
+    - accessed: 2026-10-18
+      property: P106
+      wikidata: Q130409898

@@ -1,0 +1,27 @@
+public_id: "100945"
+name: Northern Renaissance
+kind: style
+parent: renaissance
+period: late 15th century–16th century
+wikidata_id: Q610877
+metadata:
+  sources: [Wikidata Q610877 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/germany
+    period: late 15th century–16th century
+    sources: ["Getty Art & Architecture Thesaurus, “Northern Renaissance” (AAT 300252246): “the spread of the Renaissance from Italy into northern Europe in the late 15th century. It took hold principally in the courts of the French kings after the invasion of Italy in 1494, in the Netherlands with Margaret of Austria, and in Germany with the emperor Maximillion”"]
+  - type: active_in
+    to: place/netherlands
+    period: late 15th century–16th century
+    sources: ["Getty Art & Architecture Thesaurus, “Northern Renaissance” (AAT 300252246): “the spread of the Renaissance from Italy into northern Europe in the late 15th century. It took hold principally in the courts of the French kings after the invasion of Italy in 1494, in the Netherlands with Margaret of Austria, and in Germany with the emperor Maximillion”"]
+  - type: active_in
+    to: place/france
+    period: 1494–16th century
+    sources: ["Getty Art & Architecture Thesaurus, “Northern Renaissance” (AAT 300252246): “the spread of the Renaissance from Italy into northern Europe in the late 15th century. It took hold principally in the courts of the French kings after the invasion of Italy in 1494, in the Netherlands with Margaret of Austria, and in Germany with the emperor Maximillion”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q610877
+  period: ["Getty Art & Architecture Thesaurus, “Northern Renaissance” (AAT 300252246): “the spread of the Renaissance from Italy into northern Europe in the late 15th century. It took hold principally in the courts of the French kings after the invasion of Italy in 1494, in the Netherlands with Margaret of Austria, and in Germany with the emperor Maximillion”"]

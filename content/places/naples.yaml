@@ -1,0 +1,16 @@
+public_id: "100820"
+name: Naples
+kind: settlement
+location: [14.24861, 40.83583]
+wikidata_id: Q2634
+metadata:
+  sources: [Wikidata Q2634 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2634
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q2634

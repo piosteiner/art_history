@@ -2,11 +2,167 @@ public_id: "100191"
 name: Félix Vallotton
 given_name: Félix
 family_name: Vallotton
+names: [Félix-Emile-Jean Vallotton]
 birth: 1865-12-28
 death: 1925-12-29
 wikidata_id: Q123740
 metadata:
   sources: [Wikidata Q123740 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q123740
+  - type: nationality
+    to: polity/france
+    period: 1900
+    period_label: from 1900
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q123740
+  - type: born_in
+    to: place/lausanne
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q123740
+  - type: died_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q123740
+  - type: worked_in
+    to: place/belgium
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/deauville
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/honfleur
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/kingdom-of-italy
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/lausanne
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/russia
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/trouville-sur-mer
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/villerville
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: member_of
+    to: movement/les-nabis
+    period: 1889/1903
+    sources:
+      - accessed: 2026-10-18
+        property: P463
+        wikidata: Q123740
+  - type: associated_with
+    to: movement/art-nouveau
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q123740
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q123740
+  - type: associated_with
+    to: movement/les-nabis
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q123740
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q123740
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q123740
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3a/Vallotton-Autoportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vallotton-Autoportrait.jpg
+    license: Public domain
+    credit: Félix Vallotton
+identifiers:
+  bnf: "119275230"
+  dodis: P14431
+  dome: "394"
+  gnd: "118626043"
+  hls: "016179"
+  idref: "027609774"
+  kulturnav: 3fa479b2-70c1-4e87-b697-a0cd14fd6c08
+  lc: n50014281
+  nlk: KAC201421939
+  rkd: "79111"
+  sikart: "4022849"
+  ulan: "500017056"
+  viaf: "64012694"
 sources:
   birth:
     - accessed: 2026-10-09

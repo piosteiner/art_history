@@ -7,10 +7,16 @@ medium: Oil on canvas
 dimensions: [46, 38]
 institution: kunsthaus-zurich
 inventory_number: BU 0048
+web_url: https://collection.kunsthaus.ch/de/collection/item/512961/
 on_loan: true
 on_loan_since: 2021
 provenance_status: d_seized
 provenance_status_note: "Kunsthaus Zürich: NS-verfolgungsbedingt entzogenes Kulturgut"
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/45/Paul_Gauguin_-_La_Route_montante_-_48_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_La_Route_montante_-_48_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Paul Gauguin
 provenance:
   - owner: person/richard-semmel
     acquired: 1933-06-13 or earlier

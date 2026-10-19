@@ -1,0 +1,18 @@
+public_id: "100987"
+name: Art Nouveau
+kind: style
+period: c. 1890–c. 1910
+wikidata_id: Q34636
+metadata:
+  sources: [Wikidata Q34636 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/europe
+    period: c. 1890–c. 1910
+    sources: ["Getty Art & Architecture Thesaurus, “Art Nouveau” (AAT 300021430): “flourished in Europe and the United States from about 1890 to 1910”", "Wikidata, Art Nouveau (Q34636): start time 1880s, end time 1910s"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q34636
+  period: ["Getty Art & Architecture Thesaurus, “Art Nouveau” (AAT 300021430): “flourished in Europe and the United States from about 1890 to 1910”", "Wikidata, Art Nouveau (Q34636): start time 1880s, end time 1910s"]

@@ -1,0 +1,9 @@
+public_id: "101064"
+name: Alice Tully
+given_name: Alice
+family_name: Tully
+kind: person
+birth: 1902
+death: 1993
+metadata:
+  sources: [Wikidata null (retrieved 2026-10-18)]

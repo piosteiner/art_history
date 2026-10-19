@@ -2,4 +2,77 @@ public_id: "100267"
 name: Théodore Chassériau
 given_name: Théodore
 family_name: Chassériau
+birth: 1819-09-20
+death: 1856-10-08
 wikidata_id: Q342467
+metadata:
+  sources: [Wikidata Q342467 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q342467
+  - type: born_in
+    to: place/el-limon
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q342467
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q342467
+  - type: student_of
+    to: artist/jean-auguste-dominique-ingres
+    sources:
+      - accessed: 2026-10-18
+        property: P1066
+        wikidata: Q342467
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q23380
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q342467
+  - type: associated_with
+    to: movement/orientalism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q342467
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q342467
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7a/Chasseriau-Redingote.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chasseriau-Redingote.jpg
+    license: Public domain
+    credit: Théodore Chassériau
+identifiers:
+  bnf: "126479950"
+  dome: "2927"
+  gnd: "118669125"
+  idref: "050551558"
+  lc: n80051057
+  rkd: "16496"
+  ulan: "500115358"
+  viaf: "14893335"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q342467
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q342467

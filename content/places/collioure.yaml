@@ -1,0 +1,16 @@
+public_id: "100740"
+name: Collioure
+kind: settlement
+location: [3.08083, 42.52556]
+wikidata_id: Q254829
+metadata:
+  sources: [Wikidata Q254829 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q254829
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q254829

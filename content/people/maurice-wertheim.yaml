@@ -1,0 +1,23 @@
+public_id: "101111"
+name: Maurice Wertheim
+given_name: Maurice
+family_name: Wertheim
+kind: person
+birth: 1886
+death: 1950
+wikidata_id: Q1496426
+metadata:
+  sources: [Wikidata Q1496426 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1496426
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q1496426
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q1496426

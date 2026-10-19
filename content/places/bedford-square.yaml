@@ -1,0 +1,16 @@
+public_id: "100956"
+name: Bedford Square
+kind: site
+location: [-0.13011, 51.51891]
+wikidata_id: Q2893581
+metadata:
+  sources: [Wikidata Q2893581 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2893581
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q2893581

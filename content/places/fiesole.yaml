@@ -1,0 +1,16 @@
+public_id: "100843"
+name: Fiesole
+kind: settlement
+location: [11.3, 43.8]
+wikidata_id: Q82670
+metadata:
+  sources: [Wikidata Q82670 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q82670
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q82670

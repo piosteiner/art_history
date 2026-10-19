@@ -1,14 +1,42 @@
 public_id: "100286"
+title_lang: fr
 title: Madame Cézanne à l'éventail
+names:
+  - lang: de
+    role: translation
+    text: Madame Cézanne mit dem Fächer
+    status: official
+  - lang: en
+    role: translation
+    text: Madame Cézanne with a Fan
+    status: official
 creator: paul-cezanne
-created: c. 1879/1888
+created: c. 1879–1888
 kind: oil painting
 medium: Oil on canvas
+materials: [oil paint, canvas]
 dimensions: [92.5, 73]
 institution: kunsthaus-zurich
 inventory_number: BU 0016
+web_url: https://collection.kunsthaus.ch/de/collection/item/600970/
 on_loan: true
 on_loan_since: 2021
+description_md: "[Bührle Sammlung](https://www.buehrle.ch/sammlung/artwork/detail/madame-cezanne-mit-dem-faecher/)"
+wikidata_id: Q3937611
+metadata:
+  sources: [Wikidata Q3937611 (retrieved 2026-10-18)]
+relationships:
+  - type: depicts_person
+    to: person/marie-hortense-fiquet
+    sources:
+      - accessed: 2026-10-18
+        property: P180
+        wikidata: Q3937611
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/06/Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_%C3%A0_l%27%C3%A9ventail_-_16_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_%C3%A0_l%27%C3%A9ventail_-_16_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Paul Cézanne
 provenance:
   - owner: person/ambroise-vollard
     role: dealer
@@ -119,6 +147,10 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/600970/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
   medium:
     - url: https://collection.kunsthaus.ch/de/collection/item/600970/
       source: kunsthaus-zurich-sammlung-online
@@ -126,11 +158,14 @@ sources:
   created:
     - url: https://collection.kunsthaus.ch/de/collection/item/600970/
       source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-10-13
+      accessed: 2026-10-18
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/600970/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P170
+      wikidata: Q3937611
   on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/600970/
       source: kunsthaus-zurich-sammlung-online
@@ -143,6 +178,10 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/600970/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/600970/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/600970/
       source: kunsthaus-zurich-sammlung-online

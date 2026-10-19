@@ -1,0 +1,24 @@
+public_id: "100904"
+name: 6th arrondissement of Paris
+kind: site
+parent: paris
+country_code: FR
+location: [2.33223, 48.85053]
+wikidata_id: Q245546
+metadata:
+  sources: [Wikidata Q245546 (retrieved 2026-10-18)]
+identifiers:
+  gnd: 4638539-3
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q245546
+  parent:
+    - accessed: 2026-10-18
+      property: P131
+      wikidata: Q245546
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q245546

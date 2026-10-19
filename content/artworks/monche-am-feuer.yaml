@@ -25,6 +25,138 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Alessandro_Magnasco_-_M%C3%B6nche_am_Feuer_-_2601_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
     credit: Alessandro Magnasco
+provenance:
+  - owner: person/freiherr-e-von-enge
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Auktion Antiquitätenhaus Wertheim 01.10.1930, Lot 38, S. 78, https://digi.ub.uni-heidelberg.de/diglit/wertheim1930_10_01/0163/image,info (16.09.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/galerie-sanct-lucas
+    role: dealer
+    place: vienna
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/han-coray
+    acquired: 1930-10-01 or earlier
+    ended: December 1940 or earlier
+    method: purchase
+    direct: true
+    place: munich
+    label: Erlenbach
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Gloor 2021, S. 90; Koella 2002, S. 196; Auktion Antiquitätenhaus Wertheim 01.10.1930, wie oben Fussnote 3; Auktion Galerie Fischer Luzern 29.07.1925, nicht aufgeführt; Kat. Kunsthaus Zürich 1923, nicht aufgeführt, https://digital.kunsthaus.ch/viewer/image/47631/3/ (16.09.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/antiquitatenhaus-wertheim
+    role: agent
+    not_sold: true
+    numbers:
+      - kind: lot
+        number: "38"
+    acquired: 1930-10-01
+    ended: 1930-10-01
+    method: auction
+    direct: true
+    place: berlin
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Auktion Antiquitätenhaus Wertheim 01.10.1930, wie oben Fussnote 3."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/schweizerische-volksbank
+    role: trustee
+    ended: 1940-12
+    method: transfer
+    direct: true
+    label: held as security
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Brief Emil Bührle an die Schweizerische Verrechnungsstelle, 10.09.1946, Archiv ZKG/KHZ, Archiv Stiftung Sammlung E. G. Bührle, 10.100.20.119, Mappe «Coray»; Gloor 2021, wie oben Fussnote 6; Koella 2002, wie oben Fussnote 6."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/emil-georg-buhrle
+    acquired: 1940-12
+    ended: 1942-09-05
+    method: purchase
+    direct: true
+    place: zurich
+    label: for 125 works
+    price:
+      amount: 110000
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Wie oben Fussnote 8; Brief Wilhelm Wartmann an Emil Bührle, 26.08.1942, Archiv ZKG/KHZ, Ausgehende Korrespondenz, 10.30.20.96, S. 196, https://digital.kunsthaus.ch/viewer/image/58617_096/203/ (16.09.2026); Brief Theodor Fischer (Galerie Fischer Luzern) an Emil Bührle, 01.02.1942, Bundesarchiv Bern, E7160-08#1968/28#390* Galerie Fischer Luzern, https://www.recherche.bar.admin.ch/recherche/link/de/archiv/einheit/2379635 (16.09.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/fritz-nathan
+    role: agent
+    acquired: 1942-01-31 or earlier
+    ended: 1942-09-05
+    direct: true
+    place: zurich
+    label: intermediary
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Brief Emil Bührle an die Schweizerische Verrechnungsstelle, wie oben Fussnote 8; Brief Fritz Nathan an Theodor Fischer, 31.01.1942, Bundesarchiv Bern, E7160-08#1968/28#390* Galerie Fischer Luzern, https://www.recherche.bar.admin.ch/recherche/link/de/archiv/einheit/2379635 (16.09.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/galerie-fischer
+    role: dealer
+    ended: 1942-09-05
+    method: exchange
+    direct: true
+    place: lucerne
+    label: for four Impressionist paintings and a share in the profits of the sale of 110 works from the Han Coray collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Brief Emil Bührle an die Schweizerische Verrechnungsstelle, wie oben Fussnote 8; Brief Theodor Fischer (Galerie Fischer Luzern) an Emil Bührle, 01.02.1942, Bundesarchiv Bern, wie oben Fussnote 9: Bührle übergab 110 Werke der Sammlung Coray und zahlte 175000 CHF. Theodor Fischer übergab Emil Bührle im Gegenzug vier impressionistische Gemälde und versprach ihm eine Gewinnbeteiligung zu 50% an dem Verkauf der 110 Werken aus der Sammlung Han Corays."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/hans-wendland
+    role: agent
+    ended: 1942-09-05
+    direct: true
+    label: a 25% share in the profits of the sale of the Han Coray collection
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Brief Hans Wendland an Emil Bührle, 27.12.[1949], Brief Theodor Fischer (Galerie Fischer Luzern) an Emil Bührle, 09.09.1946, Archiv ZKG/KHZ, Archiv Stiftung Sammlung E. G. Bührle, 10.100.20.119, Mappe «Coray»."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/galerie-fischer
+    role: agent
+    numbers:
+      - kind: lot
+        number: "1172"
+    acquired: 1942-09-05
+    ended: 1942-09-05
+    method: auction
+    direct: true
+    place: lucerne
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, 30.09.1942, Archiv 10.30.10.42, I.c; Auktion Galerie Fischer Luzern 05.09.1942, Lot 1172, S. 93, https://digi.ub.uni-heidelberg.de/diglit/fischer1942_09_02/0105/image,info (16.09.2026)."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1942-09-05
+    method: purchase
+    direct: true
+    place: zurich
+    price:
+      amount: 4950
+      currency: CHF
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2134/
+        note: "Footnote: Sitzungsprotokoll der Sammlungskommission, wie oben Fussnote 13."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   kind:
     - accessed: 2026-10-08

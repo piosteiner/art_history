@@ -1,0 +1,11 @@
+public_id: "100841"
+name: Nazi Germany
+period: 1933-03-15/1945-05-23
+wikidata_id: Q7318
+metadata:
+  sources: [Wikidata Q7318 (retrieved 2026-10-18)]
+sources:
+  period:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q7318

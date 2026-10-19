@@ -1,0 +1,16 @@
+public_id: "100986"
+name: Les Nabis
+kind: movement
+period: 1888
+wikidata_id: Q503708
+metadata:
+  sources: [Wikidata Q503708 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q503708
+  period:
+    - accessed: 2026-10-18
+      property: P580
+      wikidata: Q503708

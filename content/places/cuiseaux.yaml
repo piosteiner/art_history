@@ -1,0 +1,16 @@
+public_id: "100927"
+name: Cuiseaux
+kind: settlement
+location: [5.38778, 46.49417]
+wikidata_id: Q735433
+metadata:
+  sources: [Wikidata Q735433 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q735433
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q735433

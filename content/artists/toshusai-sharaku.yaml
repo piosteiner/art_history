@@ -8,18 +8,46 @@ names:
   - lang: ja
     role: alternative
     text: "{寫樂|しゃらく}"
+  - Sharaku
 death: 1801
-biography_md: Article from the Art Institute Chicago [Link](https://www.artic.edu/exhibitions/3198/masterworks-of-japanese-prints-toshusai-sharaku)
+biography_md: |-
+  Sharaku had a very short period of production. He appeared in Spring 1794 and disappieared again after the New Year's performance 1795.[[source/history-of-japanese-art]], S. 286 
+  Article from the Art Institute Chicago [Link](https://www.artic.edu/exhibitions/3198/masterworks-of-japanese-prints-toshusai-sharaku)
 wikidata_id: Q361174
 metadata:
   sources: [Wikidata Q361174 (retrieved 2026-10-05)]
 relationships:
+  - type: worked_in
+    to: place/edo
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q361174
+  - type: worked_in
+    to: place/japan
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q361174
   - type: associated_with
     to: movement/ukiyo-e
     sources:
       - accessed: 2026-10-06
         property: P135
         wikidata: Q361174
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Sharaku1.jpg/1280px-Sharaku1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sharaku1.jpg
+    license: Public domain
+    credit: Sharaku
+identifiers:
+  bnf: 12018896n
+  gnd: "118754092"
+  idref: 02833129X
+  lc: n81033663
+  rkd: "434622"
+  ulan: "500118852"
+  viaf: "268783375"
 sources:
   death:
     - accessed: 2026-10-05

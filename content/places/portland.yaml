@@ -1,0 +1,16 @@
+public_id: "100681"
+name: Portland
+kind: settlement
+location: [-122.67917, 45.515]
+wikidata_id: Q6106
+metadata:
+  sources: [Wikidata Q6106 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q6106
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q6106

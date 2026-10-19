@@ -2,3 +2,18 @@ public_id: "100409"
 name: Judith Gérard
 given_name: Judith
 family_name: Gérard
+names: [Judith Gerard Ericsson-Molard]
+birth: 1881
+death: 1954
+wikidata_id: Q112569656
+metadata:
+  sources: [Wikidata Q112569656 (retrieved 2026-10-18)]
+sources:
+  birth:
+    - url: https://collection.kunsthaus.ch/multimedia/8/805958-en.pdf
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  death:
+    - url: https://collection.kunsthaus.ch/multimedia/8/805958-en.pdf
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18

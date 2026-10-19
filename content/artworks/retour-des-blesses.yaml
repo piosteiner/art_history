@@ -7,8 +7,14 @@ medium: Oil on panel
 dimensions: [37.5, 51.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0123
+web_url: https://collection.kunsthaus.ch/de/collection/item/48896/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Th%C3%A9odore_Chass%C3%A9riau_-_Retour_des_bless%C3%A9s_-_123_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Th%C3%A9odore_Chass%C3%A9riau_-_Retour_des_bless%C3%A9s_-_123_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Théodore Chassériau
 provenance:
   - owner: person/arthur-chasseriau
     place: paris

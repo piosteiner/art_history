@@ -2,4 +2,54 @@ public_id: "100325"
 name: Edmond James de Rothschild
 given_name: Edmond James
 family_name: de Rothschild
+kind: person
+birth: 1845-08-19
+death: 1934-11-02
 wikidata_id: Q467167
+metadata:
+  sources: [Wikidata Q467167 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q467167
+  - type: born_in
+    to: place/boulogne-billancourt
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q467167
+  - type: died_in
+    to: place/boulogne-billancourt
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q467167
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2a/%D7%94%D7%91%D7%A8%D7%95%D7%9F_%28_%D7%90%D7%93%D7%9E%D7%95%D7%A0%D7%93_%D7%93%D7%94_%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93_%D6%BC1934_-_1845%D7%82-JNF012590.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:%D7%94%D7%91%D7%A8%D7%95%D7%9F_(_%D7%90%D7%93%D7%9E%D7%95%D7%A0%D7%93_%D7%93%D7%94_%D7%A8%D7%95%D7%98%D7%A9%D7%99%D7%9C%D7%93_%D6%BC1934_-_1845%D7%82-JNF012590.jpeg
+    license: Public domain
+    credit: צלמי קק"ל
+identifiers:
+  bnf: "119351526"
+  gnd: "119065835"
+  idref: "077454340"
+  lc: n83001540
+  rkd: "450852"
+  ulan: "500291728"
+  viaf: "54415870"
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q467167
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q467167
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q467167

@@ -1,0 +1,16 @@
+public_id: "100898"
+name: former 10th arrondissement of Paris
+kind: site
+location: [2.32937, 48.85267]
+wikidata_id: Q2845749
+metadata:
+  sources: [Wikidata Q2845749 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2845749
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q2845749

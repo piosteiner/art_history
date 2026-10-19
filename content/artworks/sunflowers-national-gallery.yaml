@@ -4,9 +4,59 @@ creator: vincent-van-gogh
 created: 1888-08
 kind: painting
 medium: Oil on canvas
+dimensions: [92.1, 73]
 institution: national-gallery-london
+web_url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
 description_md: One of the series painted to decorate the Yellow House for Gauguin's arrival.
 relationships:
   - type: created_in
     to: place/arles
     period: 1888-08
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fe/Vincent_van_Gogh_-_Sunflowers_%281888%2C_National_Gallery_London%29.jpg/1280px-Vincent_van_Gogh_-_Sunflowers_%281888%2C_National_Gallery_London%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Sunflowers_(1888,_National_Gallery_London).jpg
+    license: Public domain
+    credit: Vincent van Gogh
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/WLANL_-_Pachango_-_Zonnebloemen%2C_Vincent_van_Gogh_%281889%29.jpg/1280px-WLANL_-_Pachango_-_Zonnebloemen%2C_Vincent_van_Gogh_%281889%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WLANL_-_Pachango_-_Zonnebloemen,_Vincent_van_Gogh_(1889).jpg
+    license: CC BY-SA 2.0
+    credit: Niels from Amsterdam, NL
+provenance:
+  - owner: person/johanna-van-gogh-bonger
+    label: the artist’s sister-in-law
+    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+  - owner: person/vincent-willem-van-gogh
+    direct: true
+    label: her son
+    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+  - owner: institution/leicester-galleries
+    role: dealer
+    ended: 1924
+    method: purchase
+    direct: true
+    place: london
+    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+  - owner: institution/tate-gallery
+    acquired: 1924
+    ended: 1961
+    method: purchase
+    direct: true
+    place: london
+    label: bought by the Trustees of the Courtauld Fund
+    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+  - owner: institution/national-gallery-london
+    acquired: 1961
+    method: transfer
+    direct: true
+    place: london
+    label: transferred from the Tate Gallery
+    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+sources:
+  creator:
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      source: nationalgallery-org-uk
+      accessed: 2026-10-18
+  dimensions:
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      source: nationalgallery-org-uk
+      accessed: 2026-10-18

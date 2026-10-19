@@ -1,0 +1,27 @@
+public_id: "101018"
+name: Wilhelm II
+names: ["Wilhelm II, German Emperor and King of Prussia"]
+kind: person
+occupations: [German Emperor]
+birth: 1859-01-27
+death: 1941-06-04
+wikidata_id: Q2677
+metadata:
+  sources: [Wikidata Q2677 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2677
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q2677
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q2677
+  occupations:
+    - accessed: 2026-10-18
+      property: P106
+      wikidata: Q2677

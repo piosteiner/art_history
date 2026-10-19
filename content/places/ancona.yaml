@@ -1,0 +1,16 @@
+public_id: "100886"
+name: Ancona
+kind: settlement
+location: [13.51667, 43.61667]
+wikidata_id: Q3415
+metadata:
+  sources: [Wikidata Q3415 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q3415
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q3415

@@ -1,16 +1,20 @@
 public_id: "100250"
 name: cubism
 kind: movement
-period: 1907
+period: 1903/1928
+period_label: c. 1908–early 1920s
 wikidata_id: Q42934
 metadata:
   sources: [Wikidata Q42934 (retrieved 2026-10-13)]
+relationships:
+  - type: active_in
+    to: place/france
+    period: 1903/1928
+    period_label: c. 1908–early 1920s
+    sources: ["Getty Art & Architecture Thesaurus, “Cubist” (AAT 300021495): “origins attributed to Georges Braque and Pablo Picasso ca. 1908. It developed in phases and lasted until the early 1920s”"]
 sources:
   kind:
     - accessed: 2026-10-13
       property: P31
       wikidata: Q42934
-  period:
-    - accessed: 2026-10-13
-      property: P580
-      wikidata: Q42934
+  period: ["Getty Art & Architecture Thesaurus, “Cubist” (AAT 300021495): “origins attributed to Georges Braque and Pablo Picasso ca. 1908. It developed in phases and lasted until the early 1920s”"]

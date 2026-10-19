@@ -1,0 +1,30 @@
+public_id: "100940"
+name: Nathan Wildenstein
+given_name: Nathan
+family_name: Wildenstein
+kind: person
+birth: 1851-11-08
+death: 1934-04-24
+wikidata_id: Q12954454
+metadata:
+  sources: [Wikidata Q12954454 (retrieved 2026-10-18)]
+relationships:
+  - type: founded
+    to: institution/wildenstein-co
+    sources:
+      - accessed: 2026-10-18
+        property: P112
+        wikidata: Q10288082
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q12954454
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q12954454
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q12954454

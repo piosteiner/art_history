@@ -2,3 +2,102 @@ public_id: "100270"
 name: Edgar Degas
 given_name: Edgar
 family_name: Degas
+names: [Hilaire-Germain-Edgar De Gas]
+birth: 1834-07-19
+death: 1917-09-27
+wikidata_id: Q46373
+metadata:
+  sources: [Wikidata Q46373 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q46373
+  - type: born_in
+    to: place/paris
+    sources:
+      - url: https://d-nb.info/gnd/118524291
+        source: gnd
+        accessed: 2026-10-18
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q46373
+  - type: died_in
+    to: place/paris
+    sources:
+      - url: https://d-nb.info/gnd/118524291
+        source: gnd
+        accessed: 2026-10-18
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q46373
+  - type: lived_in
+    to: place/new-orleans
+    period: 1872-10/1873-03
+    sources:
+      - accessed: 2026-10-18
+        property: P551
+        wikidata: Q46373
+  - type: worked_in
+    to: place/belgium
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q46373
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q46373
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q46373
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q46373
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q46373
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Edgar_Degas_self_portrait_1855FXD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_self_portrait_1855FXD.jpg
+    license: Public domain
+    credit: Edgar Degas
+identifiers:
+  bnf: "120737685"
+  dome: "77"
+  gnd: "118524291"
+  idref: "029025397"
+  kulturnav: e89b6d1f-466e-4b95-abd8-d9b4d4c2f168
+  lc: n79022903
+  nlk: KAC199633468
+  rkd: "21403"
+  ulan: "500115194"
+  viaf: "41863744"
+sources:
+  birth:
+    - url: https://d-nb.info/gnd/118524291
+      source: gnd
+      accessed: 2026-10-18
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q46373
+  death:
+    - url: https://d-nb.info/gnd/118524291
+      source: gnd
+      accessed: 2026-10-18
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q46373

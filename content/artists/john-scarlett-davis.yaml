@@ -2,11 +2,47 @@ public_id: "100167"
 name: John Scarlett Davis
 given_name: John Scarlett
 family_name: Davis
+names: [John Scarlett Davies, John Davis]
 birth: 1804-09-01
 death: 1845-09-29
 wikidata_id: Q6256854
 metadata:
   sources: [Wikidata Q6256854 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q6256854
+  - type: born_in
+    to: place/leominster
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q6256854
+  - type: died_in
+    to: place/bedford-square
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q6256854
+  - type: studied_at
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q6256854
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0a/John_Scarlett_Davis%2C_by_John_Scarlett_Davis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:John_Scarlett_Davis,_by_John_Scarlett_Davis.jpg
+    license: Public domain
+    credit: John Scarlett Davis
+identifiers:
+  lc: nr2003017220
+  rkd: "20225"
+  ulan: "500015569"
+  viaf: "29477316"
 sources:
   birth:
     - accessed: 2026-10-09

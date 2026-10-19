@@ -1,0 +1,16 @@
+public_id: "100936"
+name: Ulm
+kind: settlement
+location: [9.99111, 48.39861]
+wikidata_id: Q3012
+metadata:
+  sources: [Wikidata Q3012 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q3012
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q3012

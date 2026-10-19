@@ -20,6 +20,78 @@ web_url: https://collection.kunsthaus.ch/de/collection/item/2192/
 wikidata_id: Q62057590
 metadata:
   sources: [Wikidata Q62057590 (retrieved 2026-10-09)]
+provenance:
+  - owner_label: unknown
+    acquired: 1958
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2192/
+        note: "Footnote: Kunsthaus Zürich 2007 (Sammlungskatalog), S. 657."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/sidney-janis-gallery
+    role: dealer
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2192/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/sarah-hunter-kelly
+    ended: 1978
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2192/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/alice-tully
+    acquired: 1978
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2192/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    numbers:
+      - kind: lot
+        number: "57"
+    acquired: 1994-11-09
+    ended: 1994-11-09
+    method: auction
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2192/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/walter-haefner
+    acquired: 1994-11-09
+    ended: 1995
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2192/
+        note: "Footnote: Wie oben Fussnote 2."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1995
+    method: gift
+    direct: true
+    place: zurich
+    label: on the 50th anniversary of AMAG
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/2192/
+        note: "Footnote: ZKG/KHZ, Inventarbuch Slg."
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   names:
     - url: https://collection.kunsthaus.ch/de/collection/item/2192/

@@ -1,0 +1,16 @@
+public_id: "100887"
+name: Orvieto
+kind: settlement
+location: [12.10827, 42.7182]
+wikidata_id: Q541
+metadata:
+  sources: [Wikidata Q541 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q541
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q541

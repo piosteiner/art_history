@@ -1,0 +1,16 @@
+public_id: "100884"
+name: Meung-sur-Loire
+kind: settlement
+location: [1.69833, 47.82861]
+wikidata_id: Q658776
+metadata:
+  sources: [Wikidata Q658776 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q658776
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q658776

@@ -1,0 +1,86 @@
+public_id: "100846"
+name: Albert Welti
+given_name: Albert
+family_name: Welti
+birth: 1862-02-18
+death: 1912-06-07
+wikidata_id: Q690693
+metadata:
+  sources: [Wikidata Q690693 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q690693
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q690693
+  - type: died_in
+    to: place/bern
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q690693
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q690693
+  - type: worked_in
+    to: place/bern
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q690693
+  - type: student_of
+    to: artist/arnold-bocklin
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q123071
+      - accessed: 2026-10-18
+        property: P1066
+        wikidata: Q690693
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-10-18
+        property: P69
+        wikidata: Q690693
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q690693
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Albert_Welti_%281862%E2%80%931912%29_Portr%C3%A4t_von_1902.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Welti_(1862%E2%80%931912)_Portr%C3%A4t_von_1902.jpg
+    license: CC BY-SA 4.0
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 12925972z
+  dome: "6391"
+  gnd: "118766759"
+  hls: "022118"
+  idref: "034480331"
+  lc: n85301692
+  rkd: "83565"
+  sikart: "4022850"
+  ulan: "500005880"
+  viaf: "11145857775023020866"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q690693
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q690693

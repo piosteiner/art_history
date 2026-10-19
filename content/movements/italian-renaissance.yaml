@@ -1,0 +1,19 @@
+public_id: "100895"
+name: Italian Renaissance
+kind: style
+parent: renaissance
+period: late 14th century–16th century
+wikidata_id: Q1404472
+metadata:
+  sources: [Wikidata Q1404472 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/italy
+    period: late 14th century–16th century
+    sources: ["Getty Art & Architecture Thesaurus, “Renaissance” (AAT 300021140): “originated in Italy in the late 14th century, spread throughout Europe, and culminated in the 16th century”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1404472
+  period: ["Getty Art & Architecture Thesaurus, “Renaissance” (AAT 300021140): “originated in Italy in the late 14th century, spread throughout Europe, and culminated in the 16th century”"]

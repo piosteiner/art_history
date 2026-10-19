@@ -1,0 +1,16 @@
+public_id: "100883"
+name: Dampierre-Saint-Nicolas
+kind: settlement
+location: [1.2, 49.85944]
+wikidata_id: Q644640
+metadata:
+  sources: [Wikidata Q644640 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q644640
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q644640

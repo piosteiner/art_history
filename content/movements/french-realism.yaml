@@ -1,0 +1,18 @@
+public_id: "100823"
+name: French Realism
+kind: movement
+period: 1848–late 19th century
+wikidata_id: Q2642826
+metadata:
+  sources: [Wikidata Q2642826 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/france
+    period: 1848–late 19th century
+    sources: ["Getty Art & Architecture Thesaurus, “Realist (modern European fine arts styles)” (AAT 300172861): “existed from the mid- through the late nineteenth century and developed in reaction to the Romantic style”", "Wikidata, French Realism (Q2642826): start time 1848"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q2642826
+  period: ["Getty Art & Architecture Thesaurus, “Realist (modern European fine arts styles)” (AAT 300172861): “existed from the mid- through the late nineteenth century and developed in reaction to the Romantic style”", "Wikidata, French Realism (Q2642826): start time 1848"]

@@ -7,8 +7,14 @@ medium: Oil on canvas
 dimensions: [65, 54]
 institution: kunsthaus-zurich
 inventory_number: BU 0014
+web_url: https://collection.kunsthaus.ch/de/collection/item/585964/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Le_Jardinier_Vallier%2C_par_Paul_C%C3%A9zanne%2C_Tate%2C_FWN_547.jpg/1280px-Le_Jardinier_Vallier%2C_par_Paul_C%C3%A9zanne%2C_Tate%2C_FWN_547.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Jardinier_Vallier,_par_Paul_C%C3%A9zanne,_Tate,_FWN_547.jpg
+    license: Public domain
+    credit: Paul Cézanne
 provenance:
   - owner: person/ambroise-vollard
     role: dealer

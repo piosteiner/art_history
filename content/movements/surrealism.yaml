@@ -1,16 +1,20 @@
 public_id: "100239"
 name: surrealism
 kind: movement
-period: 1920/1929
+period: 1920/1949
+period_label: 1920s–late 1940s
 wikidata_id: Q39427
 metadata:
   sources: [Wikidata Q39427 (retrieved 2026-10-13)]
+relationships:
+  - type: active_in
+    to: place/france
+    period: 1920/1949
+    period_label: 1920s–late 1940s
+    sources: ["Getty Art & Architecture Thesaurus, “Surrealist” (AAT 300021512): “the international intellectual movement centered mainly in Paris from the 1920s to the late 1940s”"]
 sources:
   kind:
     - accessed: 2026-10-13
       property: P31
       wikidata: Q39427
-  period:
-    - accessed: 2026-10-13
-      property: P580
-      wikidata: Q39427
+  period: ["Getty Art & Architecture Thesaurus, “Surrealist” (AAT 300021512): “the international intellectual movement centered mainly in Paris from the 1920s to the late 1940s”"]

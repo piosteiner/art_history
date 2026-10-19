@@ -1,0 +1,157 @@
+public_id: "100735"
+name: André Derain
+given_name: André
+family_name: Derain
+birth: 1880-06-17
+death: 1954-09-08
+wikidata_id: Q156272
+metadata:
+  sources: [Wikidata Q156272 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q156272
+  - type: born_in
+    to: place/chatou
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q156272
+      - url: https://d-nb.info/gnd/118524755
+        source: gnd
+        accessed: 2026-10-18
+      - url: https://rkd.nl/en/explore/artists/22036
+        source: rkd
+        accessed: 2026-10-18
+      - url: https://id.loc.gov/authorities/names/n50001721.html
+        source: lc
+        accessed: 2026-10-18
+      - url: https://data.bnf.fr/ark:/12148/cb11899661k
+        source: bnf
+        accessed: 2026-10-18
+  - type: died_in
+    to: place/garches
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q156272
+      - url: https://d-nb.info/gnd/118524755
+        source: gnd
+        accessed: 2026-10-18
+      - url: https://rkd.nl/en/explore/artists/22036
+        source: rkd
+        accessed: 2026-10-18
+      - url: https://id.loc.gov/authorities/names/n50001721.html
+        source: lc
+        accessed: 2026-10-18
+      - url: https://data.bnf.fr/ark:/12148/cb11899661k
+        source: bnf
+        accessed: 2026-10-18
+  - type: worked_in
+    to: place/chambourcy
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q156272
+  - type: worked_in
+    to: place/chatou
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q156272
+  - type: worked_in
+    to: place/collioure
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q156272
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q156272
+  - type: worked_in
+    to: place/martigues
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q156272
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q156272
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q156272
+  - type: worked_in
+    to: place/spain
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q156272
+  - type: influenced_by
+    to: artist/georges-seurat
+    sources:
+      - accessed: 2026-10-18
+        property: P737
+        wikidata: Q156272
+  - type: influenced_by
+    to: artist/maurice-de-vlaminck
+    sources:
+      - accessed: 2026-10-18
+        property: P737
+        wikidata: Q156272
+  - type: influenced_by
+    to: artist/paul-gauguin
+    sources:
+      - accessed: 2026-10-18
+        property: P737
+        wikidata: Q156272
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q156272
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-10-18
+        property: P135
+        wikidata: Q156272
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Andr%C3%A9_Derain_1928.jpg/1280px-Andr%C3%A9_Derain_1928.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Derain_1928.jpg
+    license: Public domain
+    credit: Agence de presse Meurisse
+identifiers:
+  bnf: 11899661k
+  dome: "84"
+  gnd: "118524755"
+  idref: "026825228"
+  kulturnav: 7ec68919-d343-4ad2-98e5-f69827447f27
+  lc: n50001721
+  rkd: "22036"
+  ulan: "500004535"
+  viaf: "2469239"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q156272
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q156272
+    - url: https://id.loc.gov/authorities/names/n50001721.html
+      source: lc
+      accessed: 2026-10-18

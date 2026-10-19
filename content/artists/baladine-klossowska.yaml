@@ -1,0 +1,27 @@
+public_id: "100809"
+name: Baladine Klossowska
+given_name: Baladine
+family_name: Klossowska
+birth: 1881-10-21
+death: 1969-09-11
+wikidata_id: Q3633193
+metadata:
+  sources: [Wikidata Q3633193 (retrieved 2026-10-18)]
+relationships:
+  - type: student_of
+    to: artist/pierre-bonnard
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q26408
+identifiers:
+  dome: "872"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q3633193
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q3633193

@@ -1,0 +1,40 @@
+public_id: "100875"
+name: Hilding Bossler
+given_name: Hilding
+family_name: Bossler
+birth: 1899-04-08
+death: 1994
+wikidata_id: Q26260544
+metadata:
+  sources: [Wikidata Q26260544 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/sweden
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q26260544
+  - type: born_in
+    to: place/gamleby
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q26260544
+  - type: student_of
+    to: artist/pola-gauguin
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q3784452
+      - accessed: 2026-10-18
+        property: P1066
+        wikidata: Q26260544
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q26260544
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q26260544

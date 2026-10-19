@@ -1,0 +1,26 @@
+public_id: "101008"
+name: Sammlung Schack
+names: [Schack Collection, Schack-Galerie]
+kind: museum
+location: [11.5934, 48.1423]
+address: Prinzregentenstraße 9, 80538 München, Germany
+website_url: https://www.pinakothek.de/besuch/sammlung-schack
+wikidata_id: Q523652
+metadata:
+  sources: [Wikidata Q523652 (retrieved 2026-10-18)]
+relationships:
+  - type: part_of
+    to: institution/bavarian-state-painting-collections
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q523652
+  address:
+    - accessed: 2026-10-18
+      property: P6375
+      wikidata: Q523652
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q523652

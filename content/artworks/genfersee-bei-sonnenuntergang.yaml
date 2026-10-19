@@ -15,6 +15,37 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_-_Genfersee_bei_Sonnenuntergang_-_1157_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
     credit: Ferdinand Hodler
+provenance:
+  - owner: person/alfred-rutschi
+    acquired: 1917
+    ended: 1929
+    method: purchase
+    direct: true
+    place: zurich
+    label: bought from the exhibition at the Kunsthaus
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1918
+    ended: 1929
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    acquired: 1929
+    method: gift
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/1430/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   created:
     - accessed: 2026-10-09

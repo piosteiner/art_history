@@ -1,0 +1,23 @@
+public_id: "101094"
+name: Jugendstil
+kind: style
+parent: art-nouveau
+period: 1896–c. 1910
+wikidata_id: Q1294605
+metadata:
+  sources: [Wikidata Q1294605 (retrieved 2026-10-18)]
+relationships:
+  - type: active_in
+    to: place/austria
+    period: 1896–c. 1910
+    sources: ['Getty Art & Architecture Thesaurus, “Jugendstil (German, Austrian Art Nouveau)” (AAT 300021313): “the German and Austrian variation of Art Nouveau, named after the magazine "Jugend" that had been published in Munich since 1896”', "Getty Art & Architecture Thesaurus, “Art Nouveau” (AAT 300021430): “from about 1890 to 1910”"]
+  - type: active_in
+    to: place/germany
+    period: 1896–c. 1910
+    sources: ['Getty Art & Architecture Thesaurus, “Jugendstil (German, Austrian Art Nouveau)” (AAT 300021313): “the German and Austrian variation of Art Nouveau, named after the magazine "Jugend" that had been published in Munich since 1896”', "Getty Art & Architecture Thesaurus, “Art Nouveau” (AAT 300021430): “from about 1890 to 1910”"]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1294605
+  period: ['Getty Art & Architecture Thesaurus, “Jugendstil (German, Austrian Art Nouveau)” (AAT 300021313): “the German and Austrian variation of Art Nouveau, named after the magazine "Jugend" that had been published in Munich since 1896”', "Getty Art & Architecture Thesaurus, “Art Nouveau” (AAT 300021430): “from about 1890 to 1910”"]

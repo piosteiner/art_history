@@ -1,0 +1,111 @@
+public_id: "100871"
+title: Walpurgisnacht
+names:
+  - lang: en
+    role: translation
+    text: Walpurgis Night
+    status: official
+  - lang: fr
+    role: translation
+    text: La Nuit de Walpurgis
+    status: official
+creator: albert-welti
+created: 1896/1897
+kind: Tempera auf Holz
+medium: Tempera auf Holz
+materials: [tempera, wood]
+dimensions: [93.5, 69]
+institution: kunsthaus-zurich
+inventory_number: "989"
+web_url: https://collection.kunsthaus.ch/de/collection/item/3175/
+on_loan: true
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/91/Albert_Welti_-_Walpurgisnacht_-_989_-_Kunsthaus_Z%C3%BCrich.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Welti_-_Walpurgisnacht_-_989_-_Kunsthaus_Z%C3%BCrich.jpg
+    license: Public domain
+    credit: Albert Welti
+provenance:
+  - owner: person/franz-rose-von-doehlau
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/carl-von-rose
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/botho-von-rose
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/ursula-rose-von-dohlau
+    ended: 1954
+    method: inheritance
+    direct: true
+    place: munich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/kunsthaus-zurich
+    role: custodian
+    acquired: 1912
+    ended: 1954
+    direct: true
+    place: zurich
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/gottfried-keller-stiftung
+    acquired: 1954
+    method: purchase
+    direct: true
+    place: bern
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  names:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  medium:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  creator:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  materials:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  dimensions:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  institution:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
+  inventory_number:
+    - url: https://collection.kunsthaus.ch/de/collection/item/3175/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18

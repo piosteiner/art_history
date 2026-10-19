@@ -1,0 +1,20 @@
+public_id: "100745"
+name: Georges Seurat
+given_name: Georges
+family_name: Seurat
+birth: 1859-12-02
+death: 1891-03-29
+wikidata_id: Q34013
+metadata:
+  sources: [Wikidata Q34013 (retrieved 2026-10-18)]
+identifiers:
+  dome: "353"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q34013
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q34013

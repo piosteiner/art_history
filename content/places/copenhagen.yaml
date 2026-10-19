@@ -1,0 +1,16 @@
+public_id: "100874"
+name: Copenhagen
+kind: settlement
+location: [12.56889, 55.67611]
+wikidata_id: Q1748
+metadata:
+  sources: [Wikidata Q1748 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1748
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q1748

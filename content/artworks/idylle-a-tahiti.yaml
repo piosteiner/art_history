@@ -7,8 +7,14 @@ medium: Oil on canvas
 dimensions: [74.5, 94.5]
 institution: kunsthaus-zurich
 inventory_number: BU 0045
+web_url: https://collection.kunsthaus.ch/de/collection/item/512958/
 on_loan: true
 on_loan_since: 2021
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bf/Paul_Gauguin_-_Idylle_%C3%A0_Tahiti_-_45_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_-_Idylle_%C3%A0_Tahiti_-_45_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Paul Gauguin
 provenance:
   - owner: person/ambroise-vollard
     role: dealer

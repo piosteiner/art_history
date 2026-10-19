@@ -1,0 +1,18 @@
+public_id: "100667"
+name: Buenos Aires
+kind: region
+location: [-58.38194, -34.59972]
+wikidata_id: Q1486
+metadata:
+  sources: [Wikidata Q1486 (retrieved 2026-10-18)]
+identifiers:
+  gnd: 4008756-6
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q1486
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q1486

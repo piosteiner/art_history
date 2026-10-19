@@ -1,0 +1,43 @@
+public_id: "100783"
+name: Pinakothek der Moderne
+kind: museum
+founded: 2002
+place: munich
+location: [11.5723, 48.14716]
+address: Barer Straße 40, 80333 München, Germany
+website_url: https://www.pinakothek-der-moderne.de/
+wikidata_id: Q250195
+metadata:
+  sources: [Wikidata Q250195 (retrieved 2026-10-18)]
+relationships:
+  - type: part_of
+    to: institution/bavarian-state-painting-collections
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Pinakothek_der_Moderne_SO-1.jpg/1280px-Pinakothek_der_Moderne_SO-1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pinakothek_der_Moderne_SO-1.jpg
+    license: CC BY-SA 3.0
+    credit: Rufus46
+identifiers:
+  bnf: "131764493"
+  gnd: 2179410-8
+  idref: "035243597"
+  lc: n00010363
+  ulan: "500275440"
+  viaf: "121660265"
+sources:
+  place:
+    - accessed: 2026-10-18
+      property: P131
+      wikidata: Q250195
+  address:
+    - accessed: 2026-10-18
+      property: P6375
+      wikidata: Q250195
+  founded:
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q250195
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q250195

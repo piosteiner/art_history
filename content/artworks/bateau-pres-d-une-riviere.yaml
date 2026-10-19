@@ -1,14 +1,35 @@
 public_id: "100290"
+title_lang: fr
 title: Bateau près d'une rivière
+names:
+  - lang: en
+    role: translation
+    text: Landscape with a Boat
+    status: official
+  - lang: de
+    role: translation
+    text: Flusslandschaft mit Boot
+    status: official
 creator: jean-baptiste-camille-corot
 created: c. 1862
 kind: oil painting
 medium: Oil on canvas
+materials: [oil paint, canvas]
 dimensions: [38, 55]
 institution: kunsthaus-zurich
 inventory_number: BU 0172
+web_url: https://collection.kunsthaus.ch/de/collection/item/699968/
 on_loan: true
 on_loan_since: 2021
+on_loan_since_label: Dauerleihgabe
+wikidata_id: Q64223616
+metadata:
+  sources: [Wikidata Q64223616 (retrieved 2026-10-18)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Jean-Baptiste-Camille_Corot_-_Bateau_pr%C3%A8s_d%27une_rivi%C3%A8re_-_172_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Camille_Corot_-_Bateau_pr%C3%A8s_d%27une_rivi%C3%A8re_-_172_-_Foundation_E.G._B%C3%BChrle_Collection.jpg
+    license: Public domain
+    credit: Jean-Baptiste Camille Corot
 provenance:
   - owner_label: Grandjean collection
     place: paris
@@ -90,10 +111,16 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/699968/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P571
+      wikidata: Q64223616
   creator:
     - url: https://collection.kunsthaus.ch/de/collection/item/699968/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P170
+      wikidata: Q64223616
   on_loan:
     - url: https://collection.kunsthaus.ch/de/collection/item/699968/
       source: kunsthaus-zurich-sammlung-online
@@ -102,11 +129,18 @@ sources:
     - url: https://collection.kunsthaus.ch/de/collection/item/699968/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+    - accessed: 2026-10-18
+      property: P2048
+      wikidata: Q64223616
   institution:
     - url: https://collection.kunsthaus.ch/de/collection/item/699968/
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-13
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/699968/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-18
   inventory_number:
     - url: https://collection.kunsthaus.ch/de/collection/item/699968/
       source: kunsthaus-zurich-sammlung-online
-      accessed: 2026-10-13
+      accessed: 2026-10-18

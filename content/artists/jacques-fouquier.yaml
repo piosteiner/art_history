@@ -1,0 +1,25 @@
+public_id: "100980"
+name: Jacques Fouquier
+given_name: Jacques
+family_name: Fouquier
+birth: 1590-12
+death: 1655
+wikidata_id: Q327364
+metadata:
+  sources: [Wikidata Q327364 (retrieved 2026-10-18)]
+relationships:
+  - type: student_of
+    to: artist/jan-brueghel-the-elder
+    sources:
+      - accessed: 2026-10-18
+        property: P802
+        wikidata: Q209050
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q327364
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q327364

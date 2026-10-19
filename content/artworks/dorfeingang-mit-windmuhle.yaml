@@ -13,6 +13,7 @@ dimensions: [18, 25.4]
 institution: kunsthaus-zurich
 inventory_number: D.2016/0026
 web_url: https://collection.kunsthaus.ch/en/collection/item/7999/
+on_loan: true
 wikidata_id: Q131586786
 metadata:
   sources: [Wikidata Q131586786 (retrieved 2026-10-09)]
@@ -21,6 +22,62 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Jan_Brueghel_(I)_-_Dorfeingang_mit_Windm%C3%BChle_-_D.2016-0026_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
     credit: Jan Brueghel the Younger
+provenance:
+  - owner: institution/slatter-gallery
+    role: dealer
+    numbers:
+      - kind: catalogue
+        number: "19"
+    acquired: 1949
+    ended: 1949
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7999/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: person/sir-francis-glynn
+    acquired: before 1970
+    direct: true
+    label: Hob Farm, Albury, Much Hadham
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7999/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/christie-manson-woods-ltd
+    role: agent
+    numbers:
+      - kind: lot
+        number: "95"
+    acquired: 1970-06-26
+    ended: 1970-06-26
+    method: auction
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7999/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner: institution/leonard-koetser-gallery
+    role: dealer
+    numbers:
+      - kind: catalogue
+        number: "7"
+    acquired: 1970
+    ended: 1970
+    direct: true
+    place: london
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7999/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
+  - owner_label: private collection
+    acquired: 1971
+    direct: true
+    label: Switzerland
+    sources:
+      - url: https://collection.kunsthaus.ch/de/collection/item/7999/
+        source: kunsthaus-zurich-sammlung-online
+        accessed: 2026-10-18
 sources:
   created:
     - url: https://collection.kunsthaus.ch/en/collection/item/7999/

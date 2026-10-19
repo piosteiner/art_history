@@ -1,6 +1,13 @@
 public_id: "100175"
 title: Bauhaus Dessau
-created: 1925
+names:
+  - lang: de
+    role: translation
+    text: Bauhausgebäude Dessau
+creator: walter-gropius
+created: 1925-01/1926-12-04
+created_label: 1925–1926
+conceived: 1925
 kind: building
 location: [12.2267, 51.8392]
 wikidata_id: Q516770
@@ -9,6 +16,12 @@ metadata:
 relationships:
   - type: created_in
     to: place/dessau-ro-lau
+  - type: houses
+    to: institution/bauhaus
+    period: 4 December 1926–30 September 1932
+  - type: houses
+    to: institution/bauhaus-dessau-foundation
+    period: 1994/
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg/1280px-Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg
@@ -18,7 +31,12 @@ identifiers:
   gnd: "1049357531"
   viaf: "136175948"
 sources:
+  names:
+    - accessed: 2026-10-18
+      wikidata: Q516770
+  created: ["Bauhaus Kooperation, “Bauhaus Building, Dessau”: planning from spring 1925, the shell complete in March 1926, the studio block ready on 1 September, opened on 4 December 1926"]
   location:
     - accessed: 2026-10-09
       property: P625
       wikidata: Q516770
+  conceived: ["Bauhaus Kooperation, “Bauhaus Building, Dessau”: planning from spring 1925, the shell complete in March 1926, the studio block ready on 1 September, opened on 4 December 1926"]

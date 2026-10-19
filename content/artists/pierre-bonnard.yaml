@@ -2,4 +2,141 @@ public_id: "100272"
 name: Pierre Bonnard
 given_name: Pierre
 family_name: Bonnard
+birth: 1867-10-03
+death: 1947-01-23
 wikidata_id: Q26408
+metadata:
+  sources: [Wikidata Q26408 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-18
+        property: P27
+        wikidata: Q26408
+  - type: born_in
+    to: place/fontenay-aux-roses
+    sources:
+      - accessed: 2026-10-18
+        property: P19
+        wikidata: Q26408
+  - type: died_in
+    to: place/le-cannet
+    sources:
+      - accessed: 2026-10-18
+        property: P20
+        wikidata: Q26408
+  - type: worked_in
+    to: place/algeria
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/belgium
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/hamburg
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/italy
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/le-cannet
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/pittsburgh
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/saint-tropez
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/spain
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/trouville-sur-mer
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/tunisia
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: worked_in
+    to: place/united-kingdom
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q26408
+  - type: influenced_by
+    to: artist/katsushika-hokusai
+    sources:
+      - accessed: 2026-10-18
+        property: P737
+        wikidata: Q26408
+  - type: influenced_by
+    to: artist/paul-gauguin
+    sources:
+      - accessed: 2026-10-18
+        property: P737
+        wikidata: Q26408
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-10-18
+        property: P463
+        wikidata: Q26408
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/af/Self-portrait-1889.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-portrait-1889.jpg
+    license: Public domain
+    credit: Pierre Bonnard
+identifiers:
+  bnf: 12123889j
+  dome: "37"
+  gnd: "118513281"
+  idref: 02731216X
+  kulturnav: 1169c180-197f-4ae4-bf99-60dbf0144fa2
+  lc: n79040127
+  rkd: "10389"
+  ulan: "500115555"
+  viaf: "66499977"
+sources:
+  birth:
+    - accessed: 2026-10-18
+      property: P569
+      wikidata: Q26408
+  death:
+    - accessed: 2026-10-18
+      property: P570
+      wikidata: Q26408

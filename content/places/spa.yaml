@@ -1,0 +1,16 @@
+public_id: "100978"
+name: Spa
+kind: site
+location: [5.86221, 50.49228]
+wikidata_id: Q39865
+metadata:
+  sources: [Wikidata Q39865 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q39865
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q39865
