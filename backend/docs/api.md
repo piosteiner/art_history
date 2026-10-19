@@ -280,6 +280,7 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
 - Artwork lists have `holders: {now: [{slug, name}], before: [{slug, name}]}`: the institutions holding it now (where
   it is, the owner of that museum, an open last step without one) and those that held it before (provenance) — for
   searching a museum ("Prado": what is there, then what was).
+- Institution lists have `artists_held: [{slug, name, now, before}]`: the artists of the works it holds now and held before, with counts, most first (107, view `artwork_holders`).
 - Institutions (list and detail) have `dissolved`: a date object (closed / dissolved / merged) or `null`.
 - `/v1/map/sites` features have `from_year` / `to_year`: when the site existed (institutions: founded–dissolved;
   buildings: made–destroyed), `null` = not known / still there.

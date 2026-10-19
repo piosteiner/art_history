@@ -10,7 +10,7 @@ test.beforeEach(cleanup);
 test.afterEach(cleanup);
 
 test('holders: now (where it is) and before (earlier owners), and an open last step without a current institution', async ({ request }) => {
-  sql(`INSERT INTO artworks (slug, title, current_institution_id) VALUES ('test-holders-now', 'Test Holders Now', entity_id('institution', 'van-gogh-museum'));
+  sql(`INSERT INTO artworks (slug, title, current_institution_id, creator_id) VALUES ('test-holders-now', 'Test Holders Now', entity_id('institution', 'van-gogh-museum'), entity_id('artist', 'paul-gauguin'));
        INSERT INTO provenance (artwork_id, position, owner_institution_id, method) VALUES
          (entity_id('artwork', 'test-holders-now'), 0, entity_id('institution', 'museum-of-modern-art'), 'purchase'),
          (entity_id('artwork', 'test-holders-now'), 1, entity_id('institution', 'van-gogh-museum'), 'purchase');
@@ -27,6 +27,13 @@ test('holders: now (where it is) and before (earlier owners), and an open last s
   expect(names(open.now)).toEqual(['metropolitan-museum-of-art']);
   expect(names(open.before)).toEqual(['national-gallery-london']);
   expect(list.find((a) => !a.holders.now.length && !a.holders.before.length)?.holders).toEqual({ now: [], before: [] });
+
+  // the other way round: a museum names the artists of the works it holds and held, with counts (107)
+  const institutions = (await api(request, '/institutions?limit=500')).data;
+  const gauguin = (slug) => institutions.find((i) => i.slug === slug).artists_held.find((a) => a.slug === 'paul-gauguin');
+  expect(gauguin('van-gogh-museum')).toMatchObject({ name: 'Paul Gauguin', now: expect.any(Number), before: expect.any(Number) });
+  expect(gauguin('van-gogh-museum').now).toBeGreaterThanOrEqual(1);
+  expect(gauguin('museum-of-modern-art').before).toBeGreaterThanOrEqual(1);
 });
 
 test('an institution closed: its date in the API, and the sites layer says when it existed', async ({ request }) => {

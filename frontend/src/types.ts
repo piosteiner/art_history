@@ -224,6 +224,8 @@ export interface InstitutionItem extends Located, Named {
   slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null;
   /** Closed / dissolved (API 106); null while it exists or not recorded. */
   dissolved?: DateRange | null;
+  /** The artists of the works it holds now and held before, with counts (API 107). */
+  artists_held?: { slug: string; name: string; now: number; before: number }[];
   location?: PointGeometry | null; // its own point (migration 034); else only its city's
 }
 /** Derived from relationships: commissioned / patron of, owner of an artwork, depicted in an artwork. */

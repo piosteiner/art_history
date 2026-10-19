@@ -378,6 +378,11 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .pick-link:hover { color: var(--link); text-decoration: underline; }
 .pick-why, .card-why, .hit-why { font-size: .76rem; color: var(--muted); font-style: italic; }
 .card-why { margin-top: .1rem; }
+/* a museum found through an artist: "12 works by …" under the card, linked to them (the card itself is one link) */
+.card:has(.card-extra) { display: flex; flex-direction: column; }
+.card:has(.card-extra) .card-link { height: auto; flex: 1; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+.card-extra { font-size: .85rem; padding: .35rem .6rem; background: var(--surface); border: 1px solid var(--line); border-top: 0;
+  border-radius: 0 0 var(--radius) var(--radius); }
 .hit-why { display: block; }
 .hit-heading, .cards-heading-similar { color: var(--muted); }
 .hit-heading { font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; padding: .45rem .8rem .15rem; border-top: 1px solid var(--line); }

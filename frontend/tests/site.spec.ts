@@ -1866,6 +1866,34 @@ test('artworks list: searching a museum lists what is there now first, then what
   await expect(page.locator('.card').first()).toContainText('Now in: Museo del Prado');
 });
 
+test('museums list: an artist’s name finds the museums with their works, most first; the link lists them there', async ({ page }) => {
+  const MUSEUM = { slug: 'musee-test', name: 'Musée Test', kind: 'museum', founded: null, image_url: null, country: null, polities: [], names: [] };
+  const OTHER = { ...MUSEUM, slug: 'galerie-test', name: 'Galerie Test' };
+  await page.route(/\/v1\/institutions\?/, (r) => r.fulfill({ json: { data: [
+    { ...OTHER, artists_held: [{ slug: 'paul-gauguin', name: 'Paul Gauguin', now: 1, before: 0 }] },
+    { ...MUSEUM, artists_held: [{ slug: 'paul-gauguin', name: 'Paul Gauguin', now: 2, before: 1 }] },
+  ], total: 2, limit: 500, offset: 0 } }));
+  await page.route(/\/v1\/artworks\?/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    if (body.data.length < 3) return route.fulfill({ response: res });
+    const work = (a: Record<string, unknown>, held: 'now' | 'before') => ({ ...a, creator: { slug: 'paul-gauguin', name: 'Paul Gauguin' }, creators: [{ slug: 'paul-gauguin', name: 'Paul Gauguin', main: true, role: null, certainty: 'attested' }],
+      holders: { now: held === 'now' ? [{ slug: 'musee-test', name: 'Musée Test' }] : [], before: held === 'before' ? [{ slug: 'musee-test', name: 'Musée Test' }] : [] } });
+    await route.fulfill({ response: res, json: { ...body, total: 3, data: [work(body.data[0], 'now'), work(body.data[1], 'before'), { ...body.data[2], holders: { now: [], before: [] } }] } });
+  });
+  await page.goto('/institutions');
+  await page.fill('input.filter', 'gauguin');
+  await expect(page.locator('.cards-heading')).toHaveText(['With works by a matching artist']);
+  const first = page.locator('.card').first();
+  await expect(first).toContainText('Musée Test');               // 3 works before 1
+  await expect(first.locator('.card-extra')).toContainText('3 works by Paul Gauguin (2 there now, 1 formerly)');
+  await first.locator('.card-extra a').click();
+  await expect(page).toHaveURL(/\/artworks\?artist=paul-gauguin&institution=musee-test/);
+  await expect(page.locator('#stats')).toContainText('Works by Paul Gauguin held by Musée Test');
+  await expect(page.locator('.cards-heading')).toHaveText(['In the Musée Test now', 'Formerly there']);
+  await expect(page.locator('.card')).toHaveCount(2);
+});
+
 test('full screen map: legend and layer switches come along, the button leaves it again', async ({ page }) => {
   await page.goto('/?all');
   await expect(page.locator('#map-status')).toContainText('places');

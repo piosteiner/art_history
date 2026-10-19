@@ -1,14 +1,14 @@
 import { listAll, listEntities } from '../api';
 import { replaceUrl } from '../router';
 import { partLabel } from '../series';
-import { countryName, countryText, creatorNames, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
+import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
 const original = (item: unknown) => (item as { names?: NameEntry[] }).names?.find((n) => n.role === 'original');
-import type { ItemByPlural, Plural } from '../types';
+import type { ArtworkItem, InstitutionItem, ItemByPlural, Plural } from '../types';
 import { guard, showError } from './common';
-import { entries, explain, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, queryWords, saveSort, savedSort, sortOptions, type Entry } from '../catalog';
+import { entries, explain, fold, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, queryWords, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
 
 type AnyItem = ItemByPlural[Plural];
 
@@ -79,7 +79,7 @@ export function cardParts(plural: Plural, item: AnyItem) {
  * One card. While searching, the matched words are highlighted and `why` names the hidden field that matched
  * ("Born in: Zundert").
  */
-export function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null, typeLabel = ''): Html {
+export function card(plural: Plural, item: AnyItem, words: string[] = [], why: Html | null = null, typeLabel = '', extra: Html | null = null): Html {
   const { name, date, detail, image } = cardParts(plural, item);
   return html`<li class="card">
     <a class="card-link" href="${href(plural, item.slug)}">
@@ -93,6 +93,7 @@ export function card(plural: Plural, item: AnyItem, words: string[] = [], why: H
         ${why ? html`<span class="card-why">${why}</span>` : ''}
       </span>
     </a>
+    ${extra ? html`<div class="card-extra">${extra}</div>` : ''}
   </li>`;
 }
 
@@ -130,6 +131,22 @@ export function list(main: HTMLElement, plural: Plural) {
   let category = FILTER ? new URLSearchParams(location.search).get(FILTER.param) : null;
   // artworks: the parts of one whole (`?part_of=<slug>`, linked from the series page), in their order
   const partOf = plural === 'artworks' ? new URLSearchParams(location.search).get('part_of') : null;
+  // artworks: what one museum holds and held (`?institution=<slug>`), optionally of one artist (`&artist=<slug>`) —
+  // linked from the museums list ("12 works by Vincent van Gogh"); there now first, then formerly there
+  const heldBy = plural === 'artworks' ? new URLSearchParams(location.search).get('institution') : null;
+  const byArtist = heldBy ? new URLSearchParams(location.search).get('artist') : null;
+  const holding = (e: Entry<AnyItem>) => {
+    const h = (e.item as ArtworkItem).holders;
+    return h?.now.some((x) => x.slug === heldBy) ? 'now' : h?.before.some((x) => x.slug === heldBy) ? 'before' : null;
+  };
+  const inHolding = (e: Entry<AnyItem>) => !!holding(e) && (!byArtist || creatorsOf(e.item as ArtworkItem).some((c) => c.slug === byArtist));
+  const museumName = () => all.flatMap((e) => { const h = (e.item as ArtworkItem).holders; return h ? [...h.now, ...h.before] : []; })
+    .find((x) => x.slug === heldBy)?.name ?? heldBy ?? '';
+  const holdingSections = (hits: Entry<AnyItem>[]) => {
+    const sorted = sortEntries(hits, sort);
+    return [...sorted.filter((e) => holding(e) === 'now').map((entry) => ({ entry, heading: `In the ${museumName()} now` })),
+      ...sorted.filter((e) => holding(e) === 'before').map((entry) => ({ entry, heading: 'Formerly there' }))];
+  };
   const categoriesEl = main.querySelector<HTMLElement>('#categories')!;
   // artworks: works with no holder known somewhere in 1933–1945 (API 078, `?provenance_gap=1933-1945`)
   const gapEl = main.querySelector<HTMLElement>('#gap-filter')!;
@@ -139,6 +156,8 @@ export function list(main: HTMLElement, plural: Plural) {
     const q = new URLSearchParams();
     if (category && FILTER) q.set(FILTER.param, category);
     if (gapOnly) q.set('provenance_gap', '1933-1945');
+    if (heldBy) q.set('institution', heldBy);
+    if (byArtist) q.set('artist', byArtist);
     return `/${plural}${q.size ? `?${q}` : ''}`;
   };
   function drawGapFilter() {
@@ -172,18 +191,38 @@ export function list(main: HTMLElement, plural: Plural) {
     draw();
   });
 
+  /** Museums: the artists of their works whose names the search matches (every word), most works first. */
+  const artistsMatched = (e: Entry<AnyItem>, words: string[]) => (plural !== 'institutions' || !words.length ? []
+    : ((e.item as InstitutionItem).artists_held ?? []).filter((a) => words.every((w) => fold(a.name).includes(w))));
+  const worksLink = (e: Entry<AnyItem>, a: NonNullable<InstitutionItem['artists_held']>[number]) => {
+    const n = a.now + a.before;
+    return html`<a href="/artworks?${new URLSearchParams({ artist: a.slug, institution: e.slug }).toString()}">${String(n)} ${n === 1 ? 'work' : 'works'} by ${a.name}</a>${
+      a.before ? html` <span class="muted">(${a.now ? `${a.now} there now, ` : ''}${String(a.before)} formerly)</span>` : ''}`;
+  };
+
   function draw() {
     const words = queryWords(query);
     const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf) : all;
-    const pool = (category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole).filter((e) => !gapOnly || openQuestion(e));
+    const pool = (category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole).filter((e) => !gapOnly || openQuestion(e))
+      .filter((e) => !heldBy || inHolding(e));
     const hits = query ? pool.filter((e) => matches(e, query)) : pool;
     let last = '';
     const row = (e: Entry<AnyItem>) => {
       const p = cardParts(plural, e.item);
-      return card(plural, e.item, words, query ? explain(e, query, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null);
+      const byArtist = artistsMatched(e, words);
+      // a museum found through an artist: how many of their works, linked to them (instead of "Works by: …")
+      return card(plural, e.item, words, query && !byArtist.length ? explain(e, query, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null, '',
+        byArtist.length ? html`${byArtist.map((a, i) => html`${i ? ' · ' : ''}${worksLink(e, a)}`)}` : null);
     };
+    const worksOf = (e: Entry<AnyItem>) => artistsMatched(e, words).reduce((n, a) => n + a.now + a.before, 0);
+    const list = heldBy ? holdingSections(hits) : ordered(hits, query, sort);
+    // museums found through an artist: those with the most of their works first
+    if (plural === 'institutions' && words.length) {
+      const tier = list.filter((x) => x.heading === 'With works by a matching artist').sort((a, b) => worksOf(b.entry) - worksOf(a.entry));
+      list.splice(list.length - tier.length, tier.length, ...tier);
+    }
     render(items, html`
-      ${ordered(hits, query, sort).map(({ entry: e, heading: h }) => {
+      ${list.map(({ entry: e, heading: h }) => {
         const head = h !== last ? html`<li class="cards-heading">${h}</li>` : '';
         last = h;
         return html`${head}${row(e)}`;
@@ -226,6 +265,11 @@ export function list(main: HTMLElement, plural: Plural) {
         const whole = all.find((x) => x.slug === partOf);
         render(main.querySelector('#stats')!, html`Parts of ${whole ? link('artwork', partOf, whole.name) : partOf} · <a href="/artworks">all artworks</a>`);
         if (sortSelect.querySelector('option[value=series]')) { sort = 'series'; sortSelect.value = 'series'; }
+      }
+      if (heldBy) {
+        const artist = byArtist ? all.flatMap((e) => creatorsOf(e.item as ArtworkItem)).find((c) => c.slug === byArtist) : null;
+        render(main.querySelector('#stats')!, html`${byArtist ? html`Works by ${link('artist', byArtist, artist?.name ?? byArtist)} held` : 'Works held'} by
+          ${link('institution', heldBy, museumName())}, now or before · <a href="/artworks">all artworks</a>`);
       }
       const stats = (res as unknown as { stats?: { total: number; read: number; reading: number; to_read: number } }).stats;
       if (stats && stats.total) render(main.querySelector('#stats')!, html`${String(stats.read)} read · ${String(stats.reading)} reading · ${String(stats.to_read)} to read`);

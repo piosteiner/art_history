@@ -90,19 +90,12 @@ const ENTITIES = {
            -- type and materials are glossary terms (071): every name of them, all languages, for searching lists
            t.materials, artwork_term_names(t.id) AS term_names,
            upper(left(t.provenance_status::text, 1)) AS provenance_category, t.fate,  -- destroyed / partly_destroyed / lost (103)
-           -- the institutions that hold it now (where it is, the owner of that museum, an open last step without one) and
-           -- those that held it before (provenance): searching a list for "Prado" finds what is there and what was
+           -- the institutions that hold it now and those that held it before (view artwork_holders, 107): searching a
+           -- list for "Prado" finds what is there and what was
            (SELECT jsonb_build_object(
                'now', coalesce(jsonb_agg(jsonb_build_object('slug', i.slug, 'name', i.name) ORDER BY i.name) FILTER (WHERE h.now), '[]'),
                'before', coalesce(jsonb_agg(jsonb_build_object('slug', i.slug, 'name', i.name) ORDER BY i.name) FILTER (WHERE NOT h.now), '[]'))
-             FROM (SELECT x.id, bool_or(x.now) AS now FROM (
-                     SELECT t.current_institution_id AS id, true AS now WHERE t.current_institution_id IS NOT NULL
-                     UNION ALL
-                     SELECT p.owner_institution_id, institution_holds(p.owner_institution_id, t.current_institution_id)
-                       OR (t.current_institution_id IS NULL AND p.ended IS NULL
-                           AND NOT EXISTS (SELECT 1 FROM provenance q WHERE q.artwork_id = t.id AND q.position > p.position))
-                     FROM provenance p WHERE p.artwork_id = t.id AND p.owner_institution_id IS NOT NULL) x GROUP BY x.id) h
-             JOIN institutions i ON i.id = h.id) AS holders,
+             FROM artwork_holders h JOIN institutions i ON i.id = h.institution_id WHERE h.artwork_id = t.id) AS holders,
            (SELECT jsonb_build_object('documented_percent', c.documented_percent, 'has_provenance', c.has_provenance,
                      'gap_1933_1945', c.gap_1933_1945_days > 0) FROM provenance_completeness c WHERE c.artwork_id = t.id) AS provenance_coverage`,
     detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
@@ -189,7 +182,15 @@ const ENTITIES = {
     list: `t.kind, range_json(t.founded, t.founded_label) AS founded, range_json(t.dissolved, t.dissolved_label) AS dissolved, ${mainImage('institution_id')},
            ST_AsGeoJSON(t.location)::jsonb AS location,
            (SELECT jsonb_build_object('slug', p.slug, 'name', p.name) FROM places p WHERE p.id = t.place_id) AS place,
-           ${countryCols('institution')}`,
+           ${countryCols('institution')},
+           -- the artists of the works it holds (now) and held (before), with counts (107): an artist's name finds the
+           -- museums with their works, "12 works by Vincent van Gogh" links to them
+           (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', a.slug, 'name', a.name, 'now', c.now, 'before', c.before)
+                     ORDER BY c.now DESC, c.before DESC, a.name), '[]')
+              FROM (SELECT aa.artist_id, count(*) FILTER (WHERE h.now)::int AS now, count(*) FILTER (WHERE NOT h.now)::int AS before
+                      FROM artwork_holders h JOIN artwork_artists aa ON aa.artwork_id = h.artwork_id
+                     WHERE h.institution_id = t.id GROUP BY aa.artist_id) c
+              JOIN artists a ON a.id = c.artist_id) AS artists_held`,
     detail: `t.kind, range_json(t.founded, t.founded_label) AS founded, range_json(t.dissolved, t.dissolved_label) AS dissolved, t.website_url, t.description_md,
              ST_AsGeoJSON(t.location)::jsonb AS location, t.address,
              ${allImages('institution_id')},

@@ -332,7 +332,11 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
         fields: fields(
           ['Location', [i.country?.place?.name, countryText(i.country)].filter(Boolean).join(', ')],
           ['Historically in', l.polities],
-        ),
+        ).concat((i.artists_held ?? []).length ? [{
+          // an artist's name finds the museums with their works (API 107) — after those matching by their own name
+          label: 'Works by', text: (i.artists_held ?? []).map((a) => a.name).join(', '),
+          tier: { rank: 1, heading: 'With works by a matching artist' },
+        }] : []),
         sorts: { name: byName(i.name), founded: byYear(i.founded), kind: byText(i.kind, 'Other'), country: l.country },
       };
     },
