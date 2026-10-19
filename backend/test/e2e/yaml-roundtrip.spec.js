@@ -20,7 +20,7 @@ test('the export imports again: public numbers as numbers, an older quoted one a
     expect(fs.readFileSync(file, 'utf8')).toMatch(/^public_id: \d+$/m);
     // a snapshot from before the fix: the number quoted
     fs.writeFileSync(file, fs.readFileSync(file, 'utf8').replace(/^public_id: (\d+)$/m, 'public_id: "$1"'));
-    const out = run('scripts/import.js', dir, ['--dry-run']);
+    const out = run('scripts/import.js', dir, ['--dry-run', '--verbose']);
     expect(out).not.toContain('import failed');
     expect(out).toMatch(/unchanged/);
     expect(out).not.toMatch(/^ *\d+ [a-z ]+ (inserted|updated)$/m);

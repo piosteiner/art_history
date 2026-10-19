@@ -5,6 +5,7 @@
 //   npm run import                  # production DB
 //   npm run import:dev              # arthistory_dev
 //   npm run import -- --dry-run     # validate + report, then roll back
+//   npm run import -- --verbose     # also name every entry inserted or updated
 //   npm run import -- --prune       # also delete relationships (and images, provenance steps) of content entities that are no longer in the YAML
 //
 // Layout: content/<folder>/<slug>.yaml — one entity per file, the file name is its slug.
@@ -22,9 +23,11 @@ const { saveExtras } = require('../src/admin/provenance');
 const CONTENT_DIR = process.env.CONTENT_DIR || path.join(__dirname, '..', '..', 'content');
 const DRY_RUN = process.argv.includes('--dry-run');
 const PRUNE = process.argv.includes('--prune');
+const VERBOSE = process.argv.includes('--verbose');  // also name every entry inserted or updated
 
 // Collect every problem instead of stopping at the first one.
 const errors = [];
+const changed = []; // --verbose: "updated artists/…"
 const fail = (file, msg) => errors.push(`${file}: ${msg}`);
 
 function loadFiles() {
@@ -126,6 +129,7 @@ async function main() {
         if (rows.length) {
           ids.set(`${e.type}/${e.slug}`, rows[0].id);
           count(`${e.folder} ${rows[0].inserted ? 'inserted' : 'updated'}`);
+          if (VERBOSE) changed.push(`${rows[0].inserted ? 'inserted' : 'updated'} ${e.folder}/${e.slug}`);
         } else {
           await idOf(e.type, e.slug);
           count(`${e.folder} unchanged`);
@@ -507,6 +511,7 @@ function report(stats = {}, orphans = []) {
   }
   console.log(`${DRY_RUN ? 'dry run (rolled back)' : '✓ imported'} into ${config.db.name} from ${CONTENT_DIR}`);
   Object.entries(stats).sort().forEach(([k, v]) => console.log(`  ${String(v).padStart(4)} ${k}`));
+  changed.forEach((c) => console.log(`    ${c}`));
   if (orphans.length) {
     console.log(`  note: ${orphans.length} entit${orphans.length > 1 ? 'ies' : 'y'} in the database have no file in content/:`);
     orphans.forEach((o) => console.log(`    ${o.type}/${o.slug}`));

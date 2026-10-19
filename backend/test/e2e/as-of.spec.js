@@ -47,7 +47,9 @@ test('the entry as of a moment, the changes since, its versions, after deletion 
   expect((await api(request, `/artworks/test-asof?as_of=${h.versions[2].as_of}`)).entry.title).toBe('Test Asof First');
   expect((await api(request, `/artworks/test-asof?as_of=${h.versions[1].as_of}`)).version).toBe(h.versions[1].changed_at);
   // a date: the end of that day — today: as of now
-  expect((await api(request, `/artworks/test-asof?as_of=${new Date().toISOString().slice(0, 10)}`)).entry.title).toBe('Test Asof Third');
+  // (Zurich's date, as the API reads it: between 22:00 and 24:00 UTC the UTC date is a day behind)
+  const today = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Zurich' });
+  expect((await api(request, `/artworks/test-asof?as_of=${today}`)).entry.title).toBe('Test Asof Third');
 
   // before it existed, nonsense, before the history began
   expect((await get(request, `/artworks/test-asof?as_of=${before}`)).status()).toBe(404);
