@@ -53,3 +53,23 @@ test('texts, stems, accents, phrases, provenance steps and highlighted passages'
   const bad = await request.get(`${API}/search/text?q=x&type=nope`, { headers: { Host: 'api.localhost' } });
   expect(bad.status()).toBe(400);
 });
+
+// Search across languages (102): a word finds the others of its group — the German word the English provenance step
+// ("beschlagnahmt" → confiscation, seized) — and the passage marks them; a new group works at once (trigger).
+test('synonyms: German words find English provenance, the passage marks the match; groups take effect at once', async ({ request }) => {
+  const p = (await search(request, 'beschlagnahmt', '&type=artwork')).data.find((h) => h.slug === 'test-fts-work');
+  expect(p).toMatchObject({ matched_in: 'provenance' });
+  expect(p.headline_html).toMatch(/<mark>(Seized|confiscation)<\/mark>/);
+  // a phrase as an equivalent: "Zwangsverkauf" finds "forced sale"
+  sql(`UPDATE provenance SET method = 'forced_sale' WHERE artwork_id = entity_id('artwork', 'test-fts-work') AND position = 0`);
+  expect((await search(request, 'zwangsverkauf')).data.map((h) => h.slug)).toContain('test-fts-work');
+  // a group added later: the rules are rebuilt by the trigger, no reindex
+  expect((await search(request, 'lagune')).data.map((h) => h.slug)).not.toContain('test-fts-work');
+  try {
+    sql(`INSERT INTO search_synonyms (label, terms) VALUES ('test lagoon', '{lagune,lagoon}')`);
+    expect((await search(request, 'lagune')).data.map((h) => h.slug)).toContain('test-fts-work');
+  } finally {
+    sql(`DELETE FROM search_synonyms WHERE label = 'test lagoon'`);
+  }
+  expect((await search(request, 'lagune')).data.map((h) => h.slug)).not.toContain('test-fts-work');
+});

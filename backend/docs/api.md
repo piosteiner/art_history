@@ -385,6 +385,9 @@ the order they were created.
 definitions, sources' authors and containers, provenance steps (holder label, notes, the method — "confiscation").
 Web-search syntax: `"a phrase"`, `-excluded`, `or`. Stemmed in English, German and French at once ("paintings" →
 "painted", "Gemälden" → "Gemälde"), accents folded ("Irene" = "Irène"); names also by trigram, so "Gaugin" finds the name.
+Across languages by a word list (102, table `search_synonyms`): a word finds the others of its group — "beschlagnahmt"
+finds "confiscation", "seized", "saisie"; "Zwangsverkauf" finds "forced sale" — and the passage marks what matched.
+Only listed words; a phrase is found as an equivalent but not looked up (searching "forced sale" doesn't find "Zwangsverkauf").
 → `{total, data: [{type, slug, public_id, path, name, kind, period, matched_in, provenance_ids, score, headline_html}]}`:
 - `matched_in`: `name` (the name or another name; or only a close name) · `text` (the entry's texts) · `provenance`
   (one of an artwork's provenance steps: `provenance_ids`, best first).
