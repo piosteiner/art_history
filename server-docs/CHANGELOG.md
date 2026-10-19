@@ -4,6 +4,58 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-19
 
+### Data: 60 works of three Vienna museums with their provenance (KHM, Albertina, Leopold Museum)
+- **What:** (production, as user pio) 20 works each, made with `scripts/from-wikidata.js` (title, date, creator,
+  museum, inventory number, size, material, image), their provenance imported as YAML (export → steps added → import of
+  only those files, `CONTENT_DIR`): KHM 111 steps (Bruegel's Months, Vermeer's Art of Painting with Hitler and the
+  Munich Collecting Point, Giorgione, Raphael, Caravaggio, Velázquez, Bosch, Rubens, Tintoretto, Parmigianino, Dürer),
+  Albertina 144 steps (Dürer's drawings from Imhoff's Kunstbuch via Rudolf II, the Treasury and the Court Library to
+  Duke Albert, his heirs and the Republic in 1919; Bruegel, Bosch, Michelangelo, Raphael, Rembrandt, Klimt, Schiele),
+  Leopold Museum 122 steps (Schiele, Klimt, Gerstl, Kirchner, Moser: dealers, Nazi-era seizures, restitutions,
+  exchanges with the Belvedere, auctions with lot numbers; Wally's 2010 settlement as an event). Every step cited with
+  the museum's page and its own wording in the note (new sources: KHM Online-Sammlung, Albertina Sammlungen Online,
+  Leopold Museum Online Sammlung, AEIOU "Albertina", KHM 2016, Wikipedia "Leopold Wilhelm", US Attorney SDNY 2010).
+  New: about 110 people, artists, institutions and places from Wikidata (collectors, dealers, the Habsburg line, the
+  Imperial Treasury, the Court Library = Austrian National Library, Belvedere, Dorotheum …), 5 by name (Habsburg imperial
+  collection, Czernin Picture Gallery, Frederik Muller & Cie, Neue Galerie Vienna, Salzburger Landesgalerie). Renamed:
+  the State of Salzburg (was `salzburg`; the city now has the slug), Catharina Bolnes, the Landauer Zwölfbrüderhaus.
+- **Why:** owner: "add the most famous art museums of Vienna … 20 artworks of each museum with their complete provenance".
+  Belvedere, mumok and the Academy's gallery are still open: the Belvedere's collection site refuses this server (403),
+  mumok publishes only the acquisition, the Academy's site doesn't answer.
+- **Revert:** History page (audit log, 19–20 October, user pio and source import); the import batches are reproducible
+  from the scratchpad specs.
+
+### YAML round trip fixed (migrations 108, 109; export, import)
+- **What:** The export wrote `public_id` quoted (node-postgres reads bigint as text) and the import refused it — now a
+  number, and the import also takes the old quoted form. 108: `check_inventory_number()` asks for the row an
+  `INSERT … ON CONFLICT (slug)` will update (the BEFORE INSERT trigger saw a fresh id and found the work's own inventory
+  number). 109: `fill_person_names()` leaves the name parts of an existing entry as the file has them. `import --verbose`
+  names what it inserts or updates. Test `yaml-roundtrip.spec.js` (export → import, nothing changed). Also: the as-of test
+  uses Zurich's date (it failed between 22:00 and 24:00 UTC).
+- **Why:** found importing the Vienna provenances: the import could not take back its own export.
+- **Revert:** redeploy the previous commit; recreate the two trigger functions from 048 / 066;
+  `DELETE FROM schema_migrations WHERE name IN ('108_inventory_number_upsert.sql', '109_person_names_upsert.sql');`
+
+### Museums list: an artist's works there (migration 107)
+- **What:** Views `artwork_holders` (institutions holding a work now / before) and `artwork_artists`; artwork lists'
+  `holders` read from the first, institution lists have `artists_held` [{slug, name, now, before}]. Site: searching an
+  artist in the museums list shows the museums with their works, most first, "12 works by …" linked to
+  `/artworks?artist=…&institution=…` (there now, then formerly).
+- **Why:** owner: "if you search for an artist in the museum section you should be shown the museums with artworks of
+  that artist with a number of total held artworks".
+- **Revert:** redeploy the previous commit; `DROP VIEW artwork_holders, artwork_artists;`
+  `DELETE FROM schema_migrations WHERE name = '107_artwork_holders.sql';`
+
+### Start map layers with pickers; institutions' closing date (migration 106)
+- **What:** `institutions.dissolved` (+ label, citable, Wikidata P576, admin "Closed / dissolved"); artwork lists have
+  `holders`; `/v1/map/sites` has `from_year`/`to_year`; start views accept `institutions=` and `events=` (slugs, all,
+  none, auto). Site: Museums and Events pickers with "auto", artworks on the timeline until today, provenance ends on
+  the start map, previews in a start view's introduction.
+- **Why:** owner's requests of 19 October.
+- **Revert:** redeploy the previous commit; `ALTER TABLE institutions DROP COLUMN dissolved, DROP COLUMN dissolved_label;`
+  `DELETE FROM citable_fields WHERE entity_type = 'institution' AND field = 'dissolved';` recreate the three featured
+  functions/view from 069; `DELETE FROM schema_migrations WHERE name = '106_institution_dissolved_layers.sql';`
+
 ### Data: the Prado provenances with records; three series
 - **What:** (production, as user pio) The Prado's inventory entries, sightings, catalogues and exhibitions moved from
   the steps' text into provenance records (104): 76 records on 24 steps of 16 works — year, palace, room as the

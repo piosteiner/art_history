@@ -37,7 +37,14 @@ test('timeline zooms and pans without changing the window', async ({ page }) => 
 });
 
 test('pickers: search explains matches, ticking every entry means "all", by chosen artists', async ({ page }) => {
-  test.slow(); // ticks every artwork one by one: grows with the collection (timed out at ~50 works)
+  // ticks every artwork one by one: five of them (with the whole collection it grew past any timeout, ~170 works)
+  await page.route(/\/v1\/artworks\?/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    const wood = body.data.filter((a: { kind: string | null }) => /wood/i.test(a.kind ?? '')).slice(0, 2);  // woodblock prints: "Type: …"
+    const data = [...wood, ...body.data.filter((a: { slug: string }) => !wood.some((w: { slug: string }) => w.slug === a.slug)).slice(0, 3)];
+    await route.fulfill({ response: res, json: { ...body, data, total: data.length } });
+  });
   await page.goto('/?all');
   const artworks = page.locator('details[data-group=artwork]');
   await artworks.locator('summary').click();
@@ -1841,6 +1848,8 @@ test('explore: museums on "auto" are the ones linked to the map; in a time windo
 test('explore: a start view\'s introduction previews its [[links]]; chosen works have their ends marked on the map', async ({ page }) => {
   await page.route(/\/v1\/featured$/, (r) => r.fulfill({ json: { data: [{ slug: 'gogh', title: 'Van Gogh', query: 'artists=paul-gauguin,vincent-van-gogh&artworks=tournesols-sur-un-fauteuil&movements=none&polities=none&people=none',
     intro_html: '<p>About <a href="/artists/vincent-van-gogh" class="entry-link" data-entry="artist/vincent-van-gogh">Vincent</a>.</p>' }] } }));
+  // the previews late (as from far away): a link hovered before they come opens when they do
+  await page.route(/\/v1\/previews/, async (r) => { await new Promise((res) => setTimeout(res, 1500)); await r.continue(); });
   await page.goto('/');
   const link = page.locator('#featured-intro a.entry-link');
   await link.hover();

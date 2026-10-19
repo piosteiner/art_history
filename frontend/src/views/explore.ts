@@ -226,7 +226,12 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     // its [[links]]: the same previews as in an entry's text (the API sends the intro without them)
     const refs = [...new Set([...featuredIntro.querySelectorAll<HTMLAnchorElement>('a.entry-link:not(.missing)')].map((a) => a.dataset.entry!).filter(Boolean))];
     wireTextLinks(featuredIntro, undefined); // missing entries → plain text at once
-    if (refs.length) getPreviews(refs).then((entries) => { if (!own) wireTextLinks(featuredIntro, undefined, undefined, entries); }).catch(() => { /* plain links */ });
+    if (refs.length) getPreviews(refs).then((entries) => {
+      if (own) return;
+      wireTextLinks(featuredIntro, undefined, undefined, entries);
+      // a link hovered before the previews came: open it now (a further pointerenter would only come on the next hover)
+      featuredIntro.querySelector('a.entry-link:hover')?.dispatchEvent(new PointerEvent('pointerenter', { pointerType: 'mouse' }));
+    }).catch(() => { /* plain links */ });
   }
   drawFeatured();
 
