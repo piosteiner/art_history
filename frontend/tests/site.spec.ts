@@ -206,9 +206,26 @@ test('search page: a hit in a provenance links to the artwork\'s provenance', as
   const hit = page.locator('#items .text-hit', { hasText: 'La Petite Irène' });
   await expect(hit.locator('.tag-matched')).toHaveText('provenance');
   await expect(hit.locator('.text-hit-passage mark')).toHaveText(/confiscation/i);
-  await expect(hit.locator('.text-hit-name')).toHaveAttribute('href', /^\/artworks\/100476\/irene-cahen-danvers-la-petite-irene#provenance-\d+$/);
+  await expect(hit.locator('.text-hit-name')).toHaveAttribute('href', /^\/artworks\/100476\/irene-cahen-danvers-la-petite-irene\?hl=confiscation#provenance-\d+$/);
   await hit.locator('.text-hit-name').click();
-  await expect(page.locator('section.provenance')).toBeInViewport();
+  // the step outlined and in view, the matched word marked in it
+  const step = page.locator('.provenance-step.search-target');
+  await expect(step).toBeInViewport();
+  await expect(step.locator('mark.search-hit').first()).toHaveText(/confiscation/i);
+});
+
+test('search page: a hit in the texts opens the entry with the matched words marked, the first in view', async ({ page }) => {
+  await page.goto('/search?q=arles&type=artist');
+  const hit = page.locator('#items .text-hit', { hasText: 'Paul Gauguin' });
+  await expect(hit.locator('.text-hit-name')).toHaveAttribute('href', /^\/artists\/100002\/paul-gauguin\?hl=arles$/);
+  await hit.locator('.text-hit-name').click();
+  const marks = page.locator('.detail-main mark.search-hit');
+  await expect(marks.first()).toHaveText(/^arles$/i);
+  await expect(marks.first()).toBeInViewport();
+  // without ?hl= nothing is marked
+  await page.goto('/artists/100002/paul-gauguin');
+  await expect(page.locator('h1')).toBeVisible();
+  await expect(page.locator('mark.search-hit')).toHaveCount(0);
 });
 
 const IRENE = '/artworks/100476/irene-cahen-danvers-la-petite-irene';

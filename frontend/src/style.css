@@ -361,6 +361,8 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 
 /* why a search matched */
 mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1px; }
+/* a search hit opened from /search (src/highlight.ts): its step outlined, the matched words marked */
+.provenance-step.search-target { outline: 2px solid var(--mark); outline-offset: 2px; border-radius: 3px; }
 .pick-text { display: flex; flex-direction: column; min-width: 0; }
 .pick-line { display: flex; flex-wrap: wrap; column-gap: .4rem; align-items: baseline; min-width: 0; }
 .pick-line .muted { font-size: .78rem; }

@@ -2,6 +2,7 @@
 import { getEntity, getEntityMap, PLURAL } from '../api';
 import { navigate, replaceUrl } from '../router';
 import { asOfView } from './asof';
+import { keepInView, markWords, wordsToMark } from '../highlight';
 import { citeSection, connectSection, sharedHandsSection } from './detail-network';
 import { GROUPS, type Group } from '../selection';
 import {
@@ -115,10 +116,14 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
       if (e.type === 'artwork') sharedHandsSection(main.querySelector<HTMLElement>('#shared-hands')!, e, current);
       connectSection(main.querySelector<HTMLElement>('#connect')!, e, current);
       citeSection(main.querySelector<HTMLElement>('#cite-version')!, plural, e, v.title, current);
-      // a link to a provenance step (a search hit): the step once steps carry ids, else the Provenance section
-      if (location.hash.startsWith('#provenance')) {
-        (main.querySelector(`[id="${CSS.escape(location.hash.slice(1))}"]`) ?? main.querySelector('#provenance'))?.scrollIntoView();
-      }
+      // a search hit (src/views/search.ts): its provenance step, else the Provenance section, with the matched words
+      // (?hl=) marked there — or, for a hit in the texts, marked on the page and the first one in view
+      const step = location.hash.startsWith('#provenance-') ? main.querySelector(`[id="${CSS.escape(location.hash.slice(1))}"]`) : null;
+      step?.classList.add('search-target');
+      const scope = step ?? (location.hash.startsWith('#provenance') ? main.querySelector('#provenance') : null);
+      const marks = markWords(scope ?? main.querySelector('.detail-main') ?? main, wordsToMark());
+      const target = step ?? marks[0] ?? scope;
+      if (target) keepInView(target, main);
       if (!hasMap) return;
 
       const mapEl = main.querySelector<HTMLElement>('#map')!;

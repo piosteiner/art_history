@@ -3,6 +3,7 @@
 // provenance) and the matching passage. Filtered by type, 20 per page. The header's completion (src/search.ts) stays
 // the quick name search.
 import { PLURAL, searchText } from '../api';
+import { markedWords } from '../highlight';
 import { html, PLURAL_LABEL, render, trusted, TYPE_LABEL } from '../html';
 import { replaceUrl } from '../router';
 import type { EntityType, TextHit } from '../types';
@@ -17,8 +18,15 @@ const MATCHED: Record<TextHit['matched_in'], [string, string]> = {
   provenance: ['provenance', 'Found in its provenance: a holder, a note, the method'],
 };
 
-/** The hit's address; a provenance hit opens the artwork at its provenance (the step, once steps carry ids). */
-const hitHref = (h: TextHit) => (h.matched_in === 'provenance' ? `${h.path}#provenance${h.provenance_ids[0] ? `-${h.provenance_ids[0]}` : ''}` : h.path);
+/**
+ * The hit's address: the entry with the matched words to mark (?hl=, src/highlight.ts); a provenance hit at its step.
+ * A name hit needs no marks: the name is the page's title.
+ */
+function hitHref(h: TextHit): string {
+  const words = h.matched_in === 'name' ? [] : markedWords(h.headline_html);
+  const query = words.length ? `?${String(new URLSearchParams({ hl: words.join(' ') }))}` : '';
+  return `${h.path}${query}${h.matched_in === 'provenance' ? `#provenance${h.provenance_ids[0] ? `-${h.provenance_ids[0]}` : ''}` : ''}`;
+}
 
 export function searchPage(main: HTMLElement, params: URLSearchParams) {
   let query = (params.get('q') ?? '').trim();
