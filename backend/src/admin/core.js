@@ -188,11 +188,14 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
              WHEN a.table_name = 'provenance'
              THEN concat_ws(' ', 'provenance of', coalesce(pa.name, ${gone("'artwork'", "r->>'artwork_id'")}), '—',
                             coalesce(po.name, r->>'owner_label', 'owner #' || px.id), nullif(r->>'acquired_label', ''))
+             WHEN a.table_name = 'provenance_records'
+             THEN concat_ws(' ', 'record of', coalesce(prx.title, 'a provenance step'), '—', concat_ws(', ', r->>'date_label', r->>'document', 'no. ' || (r->>'number')))
              WHEN a.table_name = 'search_synonyms' THEN 'search words: ' || (r->>'label')
              ELSE coalesce(r->>'name', r->>'title', r->>'slug') END AS what,
            CASE WHEN a.table_name = 'relationships' THEN s.type::text || 's/' || s.slug
                 WHEN a.table_name = 'images' THEN ie.type::text || 's/' || ie.slug
                 WHEN a.table_name IN ('provenance', 'artwork_numbers') THEN 'artworks/' || pa.slug
+                WHEN a.table_name = 'provenance_records' AND prx.slug IS NOT NULL THEN 'artworks/' || prx.slug
                 WHEN a.table_name = 'search_synonyms' AND a.action <> 'delete' THEN 'search-words/' || a.row_id || '/edit'
                 WHEN a.action <> 'delete' THEN a.table_name || '/' || (r->>'slug') END AS link,
            (SELECT jsonb_object_agg(k, jsonb_build_array(
@@ -210,6 +213,9 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
                                    WHEN r->>'glossary_id' IS NOT NULL THEN 'term' ELSE 'institution' END) AS type,
                               coalesce(r->>'entity_id', r->>'artwork_id', r->>'artist_id', r->>'institution_id', r->>'glossary_id') AS id) ix ON a.table_name = 'images'
     LEFT JOIN entity_index ie ON a.table_name = 'images' AND ie.type = ix.type::entity_type AND ie.id = ix.id::bigint
+    -- a provenance record (104): the artwork of its step
+    LEFT JOIN LATERAL (SELECT w.slug, w.title FROM provenance p JOIN artworks w ON w.id = p.artwork_id
+                       WHERE p.id = (r->>'provenance_id')::bigint) prx ON a.table_name = 'provenance_records'
     -- a provenance step (031): its artwork, and its owner from whichever arm of the owner arc is set
     LEFT JOIN entity_index pa ON a.table_name IN ('provenance', 'artwork_numbers') AND pa.type = 'artwork' AND pa.id = (r->>'artwork_id')::bigint
     LEFT JOIN LATERAL (SELECT CASE WHEN r->>'owner_artist_id' IS NOT NULL THEN 'artist' WHEN r->>'owner_person_id' IS NOT NULL THEN 'person'

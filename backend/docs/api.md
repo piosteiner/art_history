@@ -313,7 +313,14 @@ period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
   each, `move: true` segments between them), `numbers: [{kind, label, number}]` (kinds: lot, stock, inventory,
   catalogue, ek, err, munich, linz, aussee, lugt, other), `event: {slug, name}` or null. `price.currency` may be a
   historical code without ISO (RM). `GET /v1/provenance-numbers?number=4317[&kind=munich]` → the steps recording it:
-  `{data: [{kind, kind_label, number, artwork: {slug, title}, position, owner_name, period}]}`.
+  `{data: [{kind, kind_label, number, artwork: {slug, title}, position, owner_name, period, certainty, recorded, document}]}`
+  — also the inventory numbers of records (104: `recorded` = the record's date label, `document`, `certainty` of the number).
+- **Records (104):** per step `records: [{kind, date, place: {slug, name} | null, room, number, number_certainty, document,
+  certainty, note}]`, by date — the evidence under the holder: `kind` inventory · catalogue · exhibition · sighting ·
+  document · other. `certainty` is the source's doubt about the whole entry ("¿Real Alcázar, 1666?" → possible),
+  `number_certainty` about the number ("¿nº 411?"). A record's place is a stop of the map (`/v1/map/…` provenance, a
+  part after the step's own places, `part_label` = its date) where it differs from the one before; its words are found
+  by `/v1/search/text` (matched_in `provenance`).
 - **Custody beside the ownership (074):** `in_chain: false` for agents and custodians — deposits, loans, consignments,
   auctions. They hold the work *alongside* its owner: they don't end the owner's period, and handovers go from owner
   to owner past them. Show them indented or as "held by … (deposit)" rather than as a new owner. `not_sold: true`: an

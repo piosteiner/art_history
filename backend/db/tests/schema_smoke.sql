@@ -10,6 +10,7 @@ DELETE FROM artworks;
 DELETE FROM institutions;
 DELETE FROM artists;
 DELETE FROM people;
+DELETE FROM events;  -- events (046) may have a place
 UPDATE polities SET parent_id = NULL;
 DELETE FROM polities;
 UPDATE movements SET parent_id = NULL;

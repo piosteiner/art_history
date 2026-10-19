@@ -515,14 +515,23 @@ test('start map: routes of the selection, a place lists what happened there', as
   const routes = await page.evaluate(() => (window as unknown as { __maps: { querySourceFeatures(id: string): { properties: { name: string } }[] }[] }).__maps.at(-1)!
     .querySourceFeatures('ov-routes').map((f) => f.properties.name));
   expect(routes).toContain('Vincent van Gogh');
+  // the place itself, not an event drawn on it (Paris has the 1878 World's Fair)
+  await page.getByRole('checkbox', { name: /^Events/ }).uncheck();
+  await page.locator('.maplibregl-canvas').first().scrollIntoViewIfNeeded();  // unchecking scrolled the page to the box
+  const atRest = () => page.waitForFunction(() => {
+    const m = (window as unknown as { __maps: { loaded(): boolean; isMoving(): boolean }[] }).__maps.at(-1)!;
+    return m.loaded() && !m.isMoving();
+  });
+  await atRest();  // the layers redrawn
+  await page.evaluate(() => (window as unknown as { __maps: { jumpTo(o: object): void }[] }).__maps.at(-1)!.jumpTo({ center: [2.35, 48.86], zoom: 6 }));
+  await atRest();
+  await page.waitForTimeout(500);
   const pt = await page.evaluate(() => {
-    const m = (window as unknown as { __maps: { jumpTo(o: object): void; project(c: [number, number]): { x: number; y: number }; getCanvas(): HTMLCanvasElement }[] }).__maps.at(-1)!;
-    m.jumpTo({ center: [2.35, 48.86], zoom: 6 });
+    const m = (window as unknown as { __maps: { project(c: [number, number]): { x: number; y: number }; getCanvas(): HTMLCanvasElement }[] }).__maps.at(-1)!;
     const p = m.project([2.3522, 48.8566]);
     const r = m.getCanvas().getBoundingClientRect();
     return { x: r.left + p.x, y: r.top + p.y };
   });
-  await page.waitForTimeout(500);
   await page.mouse.click(pt.x, pt.y);
   const popup = page.locator('.maplibregl-popup:not(.hover-tip)');
   await expect(popup).toContainText('Paris');
@@ -2052,4 +2061,26 @@ test('periods: lanes per region, phases, a region hidden, a window lists the wor
   await expect(page.locator('.periods-active a').first()).toBeVisible();
   await expect(page.locator('.periods-works li').first()).toBeVisible();
   expect(errors).toEqual([]);
+});
+
+test('provenance records (API 104): the inventories under a step, the doubts tagged, more than three folded', async ({ page }) => {
+  const rec = (date: string, number: string | null, extra: Record<string, unknown> = {}) => ({ kind: 'inventory', date: { label: date, from: `${date}-01-01`, to: `${date}-12-31` },
+    place: { slug: 'madrid', name: 'Madrid' }, room: null, number, number_certainty: 'attested', document: 'royal inventory', certainty: 'attested', note: null, ...extra });
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = [{ kind: 'step', implied: false, position: 0, id: 1, owner: { type: 'institution', slug: 'museo-del-prado', name: 'Spanish royal collection' }, co_owners: [],
+      role: 'owner', owner_label: null, owner_name: 'Spanish royal collection', acquired: null, ended: null, method: 'unknown', direct: false, label: null,
+      certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: [], in_chain: true,
+      records: [rec('1700', '286', { room: 'summer office' }), rec('1747', '4'), rec('1745', '411', { number_certainty: 'possible' }), rec('1666', null, { certainty: 'possible', note: 'without number' })] }];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const fold = page.locator('.provenance-records-fold');
+  await expect(fold.locator('summary')).toHaveText('4 records — inventories, catalogues, sightings');
+  await fold.locator('summary').click();
+  const items = fold.locator('.provenance-record');
+  await expect(items).toHaveCount(4);
+  await expect(items.first()).toContainText('1700 · royal inventory · Madrid, summer office · no. 286');
+  await expect(items.first().locator('a', { hasText: '286' })).toHaveAttribute('href', '/provenance-numbers?number=286');
+  await expect(items.nth(2)).toContainText('no. 411possible');                         // the number doubted
+  await expect(items.nth(3)).toContainText('royal inventorypossible');                  // the whole entry doubted
+  await expect(items.nth(3)).toContainText('— without number');
 });

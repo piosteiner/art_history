@@ -774,3 +774,7 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .legend-dot-out { background: transparent; border: 2px solid #c62828; width: 9px; height: 9px; }
 .periods-outliers { margin: .8rem 0; }
 .periods-outliers summary { cursor: pointer; font-weight: 600; }
+/* provenance records (API 104): the inventories, catalogues and sightings under a step */
+.provenance-records { list-style: none; margin: .2rem 0 .1rem; padding-left: .2rem; font-size: .85rem; }
+.provenance-record { margin: .1rem 0; }
+.provenance-records-fold > summary { cursor: pointer; font-size: .85rem; color: var(--muted); margin-top: .2rem; }

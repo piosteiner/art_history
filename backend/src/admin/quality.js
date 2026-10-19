@@ -42,6 +42,7 @@ const CHECKS = {
   holder_before_birth: { title: 'Acquired before the holder’s birth', fix: 'A date or the holder is wrong (a namesake? the father?).' },
   acquired_before_creation: { title: 'Acquired before it was made', fix: 'Check the date of the work and of the acquisition — or it was a commission (method “commission”).' },
   created_where_artist_was_not: { title: 'Made where the artist was not', fix: 'The place of creation contradicts the artist’s dated whereabouts: check the place, the date, the artist’s stays — or the work was made elsewhere and sent.' },
+  provenance_record_outside: { title: 'A provenance record outside its step', fix: 'An inventory, catalogue or sighting dated outside the holder’s period: it belongs under another step — or a date is wrong.' },
   provenance_date_narrowable: { title: 'A provenance date can be narrowed', fix: 'Derived from a death: the acquisition from that holder must lie within their lifetime. If the source agrees, enter the narrower date (and cite it).' },
   flagged_holder: { title: 'Flagged holders in the provenance', fix: 'A holder on your list (“Provenance flag” on the person / institution): check this step in the provenance research databases (links under the provenance) — and record what you find, or Mark as OK.' },
   weakly_sourced: { title: 'Facts without a good source', fix: 'Cite the museum, a catalogue raisonné or the literature for these fields (the W / ? markers on the entry’s page). Wikidata is a start, not a source.' },

@@ -82,6 +82,10 @@ provenance:
     further_places: [berlin, {place: geneva, date: 1939-09-05}]   # after `place`, in order
     numbers: [{kind: munich, number: '4317'}]   # lot, stock, inventory, catalogue, ek, err, munich, linz, aussee, lugt, other
     event: some-auction-1941          # the event it belongs to (event slug)
+    records:                          # 104: the evidence under the step, as listed: inventory (default), catalogue,
+      - {date: 1700, place: royal-alcazar-of-madrid, room: summer office, number: '286', document: royal inventory}
+      - {date: 1745, place: quinta-del-duque-del-arco, number: '411', number_certainty: possible}   # "¿nº 411?"
+      - {kind: sighting, date: 1840, place: madrid, document: 'Gautier, Voyage en Espagne', certainty: possible}
 ```
 
 Every entity also takes `wikidata_id` (`Q…`) and `metadata` (free-form mapping). `*_md` fields are Markdown;

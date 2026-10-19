@@ -191,6 +191,7 @@ router.get('/:plural/:slug/history', async (req, res) => {
       OR (a.table_name = 'images' AND (r->>$4)::bigint = $2)
       OR (a.table_name = 'provenance' AND (($3 = 'artwork' AND (r->>'artwork_id')::bigint = $2) OR (r->>('owner_' || $3 || '_id'))::bigint = $2
                                             OR ($3 = 'place' AND (r->>'location_id')::bigint = $2)))
+      OR (a.table_name = 'provenance_records' AND $3 = 'artwork' AND EXISTS (SELECT 1 FROM provenance p WHERE p.id = (r->>'provenance_id')::bigint AND p.artwork_id = $2))
       OR (a.table_name = 'artwork_numbers' AND (($3 = 'artwork' AND (r->>'artwork_id')::bigint = $2) OR ($3 = 'institution' AND (r->>'institution_id')::bigint = $2)
                                                  OR ($3 = 'source' AND (r->>'source_id')::bigint = $2)))`,
   [t.table, e.id, t.type, t.imageFk || '-'], { offset: (page - 1) * PAGE });

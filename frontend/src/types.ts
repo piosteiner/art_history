@@ -82,6 +82,12 @@ export interface Citation {
 }
 
 /** recorded: a source gives the end · implied: the next acquisition · ongoing: still there · unknown: nothing after it. */
+/** An inventory entry, a catalogue, an exhibition, a sighting under a provenance step (API 104); certainties are the source's doubts ("¿nº 411?"). */
+export interface ProvenanceRecord {
+  kind: 'inventory' | 'catalogue' | 'exhibition' | 'sighting' | 'document' | 'other';
+  date: DateRange | null; place: Ref | null; room: string | null; number: string | null; number_certainty: string;
+  document: string | null; certainty: string; note: string | null;
+}
 export type EndBasis = 'recorded' | 'implied' | 'ongoing' | 'unknown' | 'point'; // point: an event, a moment (API 082)
 
 /** An entry whose texts [[link]] this one (backlink). */
@@ -389,6 +395,8 @@ export interface ProvenanceStep {
   planned_until?: string | null;
   /** API 077: further places after `place`, in order ("Köln → Berlin → Geneva"); numbers it records; the event it belongs to. */
   further_places?: (Ref & { period: DateRange | null })[]; numbers?: ProvenanceNumber[]; event?: Ref | null;
+  /** API 104: the evidence under the step — inventory entries, catalogues, exhibitions, sightings — by date. */
+  records?: ProvenanceRecord[];
   /** API 084: what the holder gave for it — an artwork on this site, else only described. */
   exchanged_for?: { artwork: { slug: string; title: string } | null; text: string | null } | null;
   /** API 084: other sources' readings of this step when they contradict each other — beside it, not part of the chain. */

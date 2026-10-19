@@ -4,7 +4,7 @@ import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters, fromApi, type Encounter } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
 import type {
-  Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceStatus, ProvenanceStep, Relationship,
+  Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceRecord, ProvenanceStatus, ProvenanceStep, Relationship,
 } from '../types';
 import { cite } from '../cite';
 import { coverageBar, gapSides, gapText } from '../coverage';
@@ -93,6 +93,21 @@ function alternative(a: ProvenanceAlternative, bibliography?: Record<string, Sou
 export const numberHref = (n: { kind: string; number: string }) =>
   `/provenance-numbers?${new URLSearchParams({ number: n.number, kind: n.kind })}`;
 const numbers = (s: ProvenanceStep) => (s.numbers ?? []).map((n) => html`${n.label} <a href="${numberHref(n)}" title="Other works with this number">${n.number}</a>`);
+
+/** The records under a step (API 104): "1700 · inventory of the Real Alcázar · Real Alcázar, summer office · no. 286" —
+ *  the source's doubts as tags ("no. 411 possible"); more than three folded. */
+const RECORD_KIND: Record<string, string> = { inventory: 'inventory', catalogue: 'catalogue', exhibition: 'exhibition', sighting: 'seen there', document: 'document', other: 'record' };
+function records(s: ProvenanceStep): Html | null {
+  const list = s.records ?? [];
+  if (!list.length) return null;
+  const line = (r: ProvenanceRecord) => {
+    const where = [r.place ? link('place', r.place.slug, r.place.name) : null, r.room ? html`${r.room}` : null].filter((x): x is Html => !!x);
+    return html`<li class="provenance-record"><span class="muted">${r.date?.label ?? 'undated'}</span> · ${r.document ?? RECORD_KIND[r.kind]}${uncertain(r.certainty)}${where.length ? html` · ${where.map((w, i) => html`${i ? ', ' : ''}${w}`)}` : ''}${r.number
+      ? html` · no. <a href="/provenance-numbers?${String(new URLSearchParams({ number: r.number }))}" title="Other works with this number">${r.number}</a>${uncertain(r.number_certainty)}` : ''}${r.note ? html` <span class="muted">— ${r.note}</span>` : ''}</li>`;
+  };
+  const items = html`<ul class="provenance-records">${list.map(line)}</ul>`;
+  return list.length > 3 ? html`<details class="provenance-records-fold"><summary>${String(list.length)} records — inventories, catalogues, sightings</summary>${items}</details>` : items;
+}
 
 /** "in Köln → Berlin → Geneva" (the further places in order, API 077). */
 function places(s: ProvenanceStep): Html | null {
@@ -184,6 +199,7 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
       ${gap && !afterGapLine ? html`<div class="provenance-gap">handover not documented</div>` : ''}
       <div class="provenance-owner">${custody ? html`<span class="provenance-alongside" title="${stolen ? 'Stolen: the owner kept the title' : possessor ? 'Taken from its owner, or received from those who took it — held without title' : 'Held alongside the owner, did not own it'}">${prefix}</span> ` : ''}${holders(s)}${role ? html` <span class="tag" title="${role[1]}">${role[0]}</span>` : ''}${s.not_sold ? html` <span class="tag tag-not-sold" title="Bought in, withdrawn or returned: the owner kept it">not sold</span>` : ''}${s.planned_until ? html` <span class="tag tag-planned" title="Announced, not yet a fact — as planned for ${s.planned_until}">planned</span>` : ''}${s.period ? html` <span class="muted">${s.period.label}</span>` : ''}${impliedEnd(s.end_basis)}${uncertain(s.certainty)}${s.implied ? '' : cite(s.sources, bibliography)}</div>
       ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
+      ${records(s) ?? ''}
       ${s.notes_html ? html`<div class="rel-note">${trusted(s.notes_html)}</div>` : ''}
       ${(s.inferences ?? []).map(inferenceLine)}
       ${(s.alternatives ?? []).map((a) => alternative(a, bibliography))}

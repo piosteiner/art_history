@@ -85,7 +85,9 @@ const NUMBER_KEYS = ['number', 'institution', 'source', 'label', 'sources'];
 const PROVENANCE_KEYS = ['owner', 'owner_label', 'co_owners', 'role', 'acquired', 'acquired_label', 'ended', 'ended_label', 'method', 'direct',
   'place', 'label', 'certainty', 'price', 'notes_md', 'sources', 'not_sold', 'further_places', 'numbers', 'event',
   'alternative_of', 'exchanged_for', 'exchanged_for_text',  // 084: alternative_of = the index of the step it is another reading of
-  'check_after'];  // 096: a planned step — the day after which to check whether it happened ("2026-11-18")
+  'check_after',  // 096: a planned step — the day after which to check whether it happened ("2026-11-18")
+  'records'];      // 104: [{kind, date, place, room, number, number_certainty, document, certainty, note}] — the evidence under it
+const RECORD_KEYS = ['kind', 'date', 'date_label', 'place', 'room', 'number', 'number_certainty', 'document', 'certainty', 'note'];
 const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian', 'publisher', 'foundry', 'trustee', 'possessor', 'event'];
 const ACQUISITION_METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
   'confiscation', 'forced_sale', 'restitution', 'settlement', 'transfer', 'theft', 'claim', 'dissolution', 'unknown'];
@@ -228,6 +230,15 @@ function toRow(doc, fields) {
         }
         if (st.numbers !== undefined && (!Array.isArray(st.numbers) || st.numbers.some((x) => !x || !x.kind || !x.number))) errors.push(`${at}.numbers: a list of {kind, number}`);
         if (st.event !== undefined && !SLUG.test(String(st.event))) errors.push(`${at}.event: an event slug`);
+        if (st.records !== undefined) {
+          if (!Array.isArray(st.records)) errors.push(`${at}.records: a list`);
+          else st.records.forEach((r, j) => {
+            if (!r || typeof r !== 'object' || Array.isArray(r)) { errors.push(`${at}.records[${j}]: must be a mapping`); return; }
+            const extra = Object.keys(r).filter((k) => !RECORD_KEYS.includes(k));
+            if (extra.length) errors.push(`${at}.records[${j}]: unknown field(s) ${extra.join(', ')}`);
+            if (r.place !== undefined && !SLUG.test(String(r.place))) errors.push(`${at}.records[${j}].place: a place slug`);
+          });
+        }
         if (st.exchanged_for !== undefined && !SLUG.test(String(st.exchanged_for))) errors.push(`${at}.exchanged_for: an artwork slug`);
         if (st.alternative_of !== undefined) {
           const main = doc.provenance[st.alternative_of];
@@ -426,6 +437,10 @@ async function readProvenance(db, artworkId) {
               FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
            (SELECT jsonb_agg(jsonb_build_object('kind', n.kind, 'number', n.number) ORDER BY n.position)
               FROM provenance_numbers n WHERE n.provenance_id = p.id) AS numbers,
+           (SELECT jsonb_agg(jsonb_strip_nulls(jsonb_build_object('kind', r.kind, 'period', r.date::text, 'date_label', r.date_label, 'place', l.slug,
+                     'room', r.room, 'number', r.number, 'number_certainty', nullif(r.number_certainty::text, 'attested'), 'document', r.document,
+                     'certainty', nullif(r.certainty::text, 'attested'), 'note', r.note)) ORDER BY r.position)
+              FROM provenance_records r LEFT JOIN places l ON l.id = r.place_id WHERE r.provenance_id = p.id) AS records,
            (SELECT array_agg(x.type::text || '/' || x.slug ORDER BY c.position) FROM provenance_co_owners_x c
               JOIN entity_index x ON (x.type, x.id) = (c.owner_type, c.owner_id) WHERE c.provenance_id = p.id) AS co_owners
     FROM provenance p
@@ -466,8 +481,15 @@ async function readProvenance(db, artworkId) {
     if (r.exchanged_for_text) st.exchanged_for_text = r.exchanged_for_text;
     if (r.check_after) st.check_after = r.check_after;
     if (r.alternative_to) st.alternative_of = rows.findIndex((x) => x._id === r.alternative_to);   // 084: by index in this list
+    if (r.records) {  // 104: the date as written in the files (like a step's), the rest as stored
+      st.records = r.records.map(({ period, date_label: label, ...rec }) => {
+        const d = dateToDoc(period ?? null, label ?? null, false);
+        return { ...(rec.kind !== 'inventory' ? { kind: rec.kind } : {}), ...(d.value !== null ? { date: d.value } : {}), ...(d.label !== null ? { date_label: d.label } : {}),
+          ...Object.fromEntries(Object.entries(rec).filter(([k]) => k !== 'kind')) };
+      });
+    }
     return st;
   });
 }
 
-module.exports = { IMAGE_FK, IMAGE_KEYS, NUMBER_KEYS, PROVENANCE_KEYS, readImages, readProvenance, readNumbers, TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };
+module.exports = { IMAGE_FK, IMAGE_KEYS, NUMBER_KEYS, PROVENANCE_KEYS, RECORD_KEYS, readImages, readProvenance, readNumbers, TYPES, BY_TYPE, BY_FOLDER, REF_COLUMNS, REL_KEYS, SLUG, toRow, readDocs, readRelationships, dateToDoc, docFromJson };

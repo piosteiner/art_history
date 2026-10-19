@@ -376,6 +376,12 @@ const EXTRAS = {
              (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', n.kind, 'label', k.label, 'number', n.number) ORDER BY n.position), '[]')
                 FROM provenance_numbers n JOIN provenance_number_kinds k ON k.code = n.kind WHERE n.provenance_id = p.id) AS numbers,
              (SELECT jsonb_build_object('slug', ev.slug, 'name', ev.name) FROM provenance pv JOIN events ev ON ev.id = pv.event_id WHERE pv.id = p.id) AS event,
+             -- 104: the records under the step — inventory entries, catalogues, exhibitions, sightings — by date
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', r.kind, 'date', range_json(r.date, r.date_label),
+                       'place', CASE WHEN l.id IS NOT NULL THEN jsonb_build_object('slug', l.slug, 'name', l.name) END,
+                       'room', r.room, 'number', r.number, 'number_certainty', r.number_certainty, 'document', r.document,
+                       'certainty', r.certainty, 'note', r.note) ORDER BY lower(r.date) NULLS LAST, r.position), '[]')
+                FROM provenance_records r LEFT JOIN places l ON l.id = r.place_id WHERE r.provenance_id = p.id) AS records,
              -- 084: what was given in exchange; other sources' readings of this step (not part of the chain)
              (SELECT CASE WHEN pv.exchanged_for_artwork_id IS NOT NULL OR pv.exchanged_for_text IS NOT NULL THEN jsonb_build_object(
                        'artwork', (SELECT jsonb_build_object('slug', x.slug, 'title', x.title) FROM artworks x WHERE x.id = pv.exchanged_for_artwork_id),

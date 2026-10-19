@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-19
 
+### Provenance records (migration 104)
+- **What:** Table `provenance_records` (enum `provenance_record_kind`): the evidence under a step — inventory entries,
+  catalogues, exhibitions, sightings, documents — with date, place, room, number, `number_certainty` ("¿nº 411?"),
+  `certainty` of the whole entry ("¿Real Alcázar, 1666?"), document, note; audit trigger. View
+  `provenance_numbers_all` (step numbers + record numbers) for the number lookups (admin `/provenance/numbers`,
+  `/v1/provenance-numbers`: + `certainty`, `recorded`, `document`). `provenance_stops()` (091) with the records'
+  places where they change (map, travel distance). `search_documents` extended with the records (GIN index
+  `provenance_records_search_idx`). Check `provenance_record_outside` (a record dated outside its holder's period).
+  Admin: `src/admin/provenance-records.js` — records on the step's edit page (add / edit / remove), listed under the
+  step on the artwork page (folded above three); History and revert/restore know the table. API: `records` per step.
+  YAML: `records` per step (export + import, replaced as a whole when different). Site: records under the step, the
+  doubts tagged. Tests: `provenance-records.spec.js`, frontend "provenance records (API 104)". Also: the schema smoke
+  test clears events (it failed once an event had a place). Dev: 087's search objects re-created (dev only had lost
+  `search_method()`, the search indexes and `search_documents`).
+- **Why:** owner: the Prado's provenances are lists of inventory entries — until now flattened into text, numbers
+  without their year, doubts lost.
+- **Revert:** redeploy the previous commit; `DROP TABLE provenance_records CASCADE; DROP TYPE provenance_record_kind;
+  DROP VIEW provenance_numbers_all;` recreate `provenance_stops` from 091, `search_documents` from 087 and
+  `quality_issues_live` from its last definition (the migration appended one part to each);
+  `DELETE FROM schema_migrations WHERE name = '104_provenance_records.sql';`
+
 ### Data: 20 masterpieces of the Prado with their provenance; `scripts/from-wikidata.js`
 - **What:** New tool `backend/scripts/from-wikidata.js [--dry-run] [--prefer-lang=es] [--links] [--skip=…] [--trust-type]
   <type> Q… [Q…:slug]` — creates entries from Wikidata items as "+ from Wikidata…" + "Create" would (every value

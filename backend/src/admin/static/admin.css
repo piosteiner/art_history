@@ -451,3 +451,8 @@ tr.list-group td { padding-top: .9rem; font-size: .8rem; font-weight: 600; text-
 
 /* biography × provenance (086): conclusions derived from dates and places */
 .inference { font-style: italic; color: var(--muted); }
+/* provenance records (104): the evidence under a step — a compact list, folded when long */
+ul.records, ol.records-edit { margin: .25rem 0 0; padding-left: 1.1rem; }
+ul.records li, ol.records-edit li { margin: .1rem 0; }
+details.records > summary { cursor: pointer; color: var(--muted); }
+.record-date { font-variant-numeric: tabular-nums; }

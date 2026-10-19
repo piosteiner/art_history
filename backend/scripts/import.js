@@ -329,6 +329,31 @@ async function main() {
           if (wantExtras.places && !same(wantExtras.places, now.places.map((x) => ({ ...x, place_id: Number(x.place_id) })))) changed.places = extras.places;
           if (wantExtras.numbers && !same(wantExtras.numbers, now.numbers)) changed.numbers = extras.numbers;
           if (changed.places || changed.numbers) await saveExtras(client, step.id, changed);
+          // 104: the records, replaced as a whole when given and different
+          if (st.records !== undefined) {
+            const want = [];
+            for (const rec of st.records) {
+              const placeId = rec.place ? await idOf('place', String(rec.place)) : null;
+              if (rec.place && placeId === null) throw new Error(`record place ${rec.place} does not exist`);
+              const d = rec.date !== undefined && rec.date !== null ? parseFuzzyDate(String(rec.date)) : null;
+              want.push({ kind: rec.kind || 'inventory', date: d && d.range, date_label: rec.date_label ?? (d && d.label) ?? null, place_id: placeId,
+                room: rec.room ?? null, number: rec.number !== undefined && rec.number !== null ? String(rec.number) : null,
+                number_certainty: rec.number_certainty || 'attested', document: rec.document ?? null, certainty: rec.certainty || 'attested', note: rec.note ?? null });
+            }
+            const have = (await client.query(`SELECT kind::text AS kind, date::text AS date, date_label, place_id, room, number,
+                number_certainty::text AS number_certainty, document, certainty::text AS certainty, note
+              FROM provenance_records WHERE provenance_id = $1 ORDER BY position`, [step.id])).rows.map((x) => ({ ...x, place_id: x.place_id === null ? null : Number(x.place_id) }));
+            const norm = (list) => JSON.stringify(list.map((x) => ({ ...x, date: x.date || null })));
+            if (norm(have) !== norm(want)) {
+              await client.query('DELETE FROM provenance_records WHERE provenance_id = $1', [step.id]);
+              for (const [j, x] of want.entries()) {
+                await client.query(`INSERT INTO provenance_records (provenance_id, position, kind, date, date_label, place_id, room, number, number_certainty, document, certainty, note)
+                  VALUES ($1, $2, $3, $4::daterange, $5, $6, $7, $8, $9, $10, $11, $12)`,
+                [step.id, j, x.kind, x.date, x.date_label, x.place_id, x.room, x.number, x.number_certainty, x.document, x.certainty, x.note]);
+              }
+              count('provenance records replaced');
+            }
+          }
           if (st.event !== undefined) {
             const eid = await idOf('event', String(st.event));
             if (eid === null) throw new Error(`event ${st.event} does not exist`);

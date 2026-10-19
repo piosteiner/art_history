@@ -151,6 +151,10 @@ page's own link.
   `travelled`. On the artwork's map the `travelled` distance labels the segment into that step ("≈ 14,393 km", matched
   by the stops' `position`; no label when the previous place isn't on the map, as for a creation in Atuona) and every
   inference stands in that stop's popup. The narrowed window doesn't change the coverage bar yet (backend wish).
+- Records (API 104, `records()` in `src/views/detail-sections.ts`): under a step, its inventory entries, catalogues,
+  exhibitions and sightings — "1700 · royal inventory · Madrid, summer office · no. 286", the source's doubts as tags
+  (the number, or the whole entry), numbers linked to `/provenance-numbers`; more than three folded in a `<details>`.
+  Their places reach the map through the API's provenance stops (nothing to do here).
 - Coverage (API 078, `src/coverage.ts`): above the provenance a bar from the creation until today — documented solid,
   presumed hatched, gaps open with a red edge (1933–1945 ones filled pale red), 1933–1945 shaded behind; each stretch's
   tooltip names the holders before / after and the candidates; caption "45% documented, gaps 60 years, 11 of them in

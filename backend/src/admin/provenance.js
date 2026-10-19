@@ -10,6 +10,7 @@ const { html, raw } = require('./html');
 const { BY_TYPE, dateToDoc } = require('../content');
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { renderMarkdown } = require('../markdown');
+const { stepList } = require('./provenance-records');
 
 class ProvenanceError extends Error {}
 
@@ -338,7 +339,11 @@ async function read(db, artworkId) {
            (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', k.label, 'number', n.number) ORDER BY n.position), '[]')
               FROM provenance_numbers n JOIN provenance_number_kinds k ON k.code = n.kind WHERE n.provenance_id = p.id) AS step_numbers,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', i.kind, 'detail', i.detail) ORDER BY i.kind), '[]')
-              FROM provenance_inferences i WHERE i.provenance_id = p.id) AS inferences
+              FROM provenance_inferences i WHERE i.provenance_id = p.id) AS inferences,
+           (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', r.kind, 'date_label', r.date_label, 'room', r.room, 'number', r.number,
+                     'number_certainty', r.number_certainty, 'document', r.document, 'certainty', r.certainty, 'note', r.note,
+                     'place_slug', l.slug, 'place_name', l.name) ORDER BY lower(r.date) NULLS LAST, r.position), '[]')
+              FROM provenance_records r LEFT JOIN places l ON l.id = r.place_id WHERE r.provenance_id = p.id) AS records
     FROM provenance_chain p LEFT JOIN provenance pv ON pv.id = p.id
     LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
     LEFT JOIN places l ON l.id = p.location_id
@@ -553,7 +558,8 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
           ${s.event ? html`<div class="small">at <a href="/events/${s.event.slug}">${s.event.name}</a></div>` : ''}
           ${(s.inferences || []).map((i) => html`<div class="small inference" title="derived from the dates and places (biography × provenance)"><span class="tag">derived</span> ${i.detail}</div>`)}
           ${s.exchanged_for ? html`<div class="small">exchanged for ${s.exchanged_for.slug ? html`<a href="/artworks/${s.exchanged_for.slug}">${s.exchanged_for.title}</a>` : ''}${s.exchanged_for.slug && s.exchanged_for.text ? ' — ' : ''}${s.exchanged_for.text || ''}</div>` : ''}
-          ${(s.step_numbers || []).length ? html`<div class="small">${s.step_numbers.map((n, i) => html`${i ? ' · ' : ''}${n.kind} <a href="/provenance/numbers?q=${encodeURIComponent(n.number)}">${n.number}</a>`)}</div>` : ''}</td>
+          ${(s.step_numbers || []).length ? html`<div class="small">${s.step_numbers.map((n, i) => html`${i ? ' · ' : ''}${n.kind} <a href="/provenance/numbers?q=${encodeURIComponent(n.number)}">${n.number}</a>`)}</div>` : ''}
+          ${stepList(s.records)}</td>
         <td>${s.location_slug ? html`<a href="/places/${s.location_slug}">${s.location_name}</a>` : ''}${(s.further_places || []).map((pl) => html` → <a href="/places/${pl.slug}">${pl.name}</a>${pl.period_label ? html` <span class="muted small">(${pl.period_label})</span>` : ''}`)}</td>
         <td>${s.period_label || ''}${END_BASIS[s.end_basis] ? html` <span class="tag ${s.end_basis}">${END_BASIS[s.end_basis]}</span>` : ''}
           ${s.certainty !== 'attested' ? html` <span class="muted">· ${s.certainty}</span>` : ''}
