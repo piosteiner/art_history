@@ -5,7 +5,7 @@
 // The state lives in the URL (/?artists=…&movements=none&from=1888&to=1889) and is remembered locally.
 // The home page (/) shows curated views (/v1/featured, edited in the admin panel): the first one, others at
 // /?featured=<slug>, everything at /?all. A view is a saved URL query; changing the picks or the window makes it your own.
-import { getClusters, getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getSites, getView, listAll, PLURAL } from '../api';
+import { getClusters, getEntityMap, getEventsMap, getFeatured, getPlacesMap, getPresence, getProvenances, getSites, getView, listAll, PLURAL } from '../api';
 import { entries } from '../catalog';
 import { creatorsOf, href, html, render, trusted } from '../html';
 import { compareUrl, encounterLine } from '../crossings';
@@ -342,15 +342,14 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
 
   /**
    * The artworks among the rows with a placed provenance step ("artwork/slug" → provenance): drawn in its order instead
-   * of a route by date, as on their own page (one request each, cached).
+   * of a route by date, as on their own page — all in one request (API /v1/map/provenances; cached).
    */
   async function provenancesOf(rows: { entity: { type: EntityType; slug: string } }[]) {
-    const artworks = [...new Set(rows.filter((r) => r.entity.type === 'artwork').map((r) => r.entity.slug))];
-    const maps = await Promise.all(artworks.map((slug) => getEntityMap('artworks', slug).catch(() => null)));
-    return new Map(maps.flatMap((fc) => {
-      const prov = fc && placedProvenance(fc);
-      return prov ? [[`artwork/${fc.entity.slug}`, prov] as const] : [];
-    }));
+    const artworks = [...new Set(rows.filter((r) => r.entity.type === 'artwork').map((r) => r.entity.slug))].sort();
+    const all = artworks.length ? await getProvenances(artworks).catch(() => ({} as Awaited<ReturnType<typeof getProvenances>>)) : {};
+    // as placedProvenance(): only one with a placed step replaces the route
+    return new Map(Object.entries(all).flatMap(([slug, prov]) =>
+      prov.features.some((f) => f.properties.layer === 'provenance_stop') ? [[`artwork/${slug}`, prov] as const] : []));
   }
   const PROVENANCE_KEY = 'artworks: their provenance in its order (dashed: handover not documented, dotted: implied)';
 
@@ -367,20 +366,26 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     const rows = all.features.filter((f) => includes(sel, f.properties.entity.type, f.properties.entity.slug, artistsOf))
       .map((f) => ({ ...f.properties, point: f.geometry.coordinates }));
     const where = new Map(places.features.map((f) => [f.properties.slug, f.geometry.coordinates] as const));
-    const provenances = await provenancesOf(rows);
-    if (stale()) return;
-    useRoutes(showPlaces(map, places, rows, (slug) => where.get(slug), provenances));
+    // drawn at once with routes by date; the artworks' provenances (one request for all, the slowest part) replace
+    // their routes when they come — the map is usable meanwhile
+    const draw = (provenances: Map<string, ProvenanceMap>) => {
+      useRoutes(showPlaces(map, places, rows, (slug) => where.get(slug), provenances));
+      redrawLegend = () => render(legend, html`${routeLegend()}
+        <span class="legend-key"><i class="dot" style="background:${COLORS.place}"></i> someone or something of the selection was there ·
+          <i class="dot" style="background:${COLORS.association}"></i> associations only ·
+          <i class="ring" style="border-color:${COLORS.place}"></i> country or region · lines = routes in date order${provenances.size ? `; ${PROVENANCE_KEY}` : ''}</span>`);
+      redrawLegend();
+    };
+    draw(new Map());
     crossings(rows, (slug) => where.get(slug));
     pinned = null;
-    redrawLegend = () => render(legend, html`${routeLegend()}
-      <span class="legend-key"><i class="dot" style="background:${COLORS.place}"></i> someone or something of the selection was there ·
-        <i class="dot" style="background:${COLORS.association}"></i> associations only ·
-        <i class="ring" style="border-color:${COLORS.place}"></i> country or region · lines = routes in date order${provenances.size ? `; ${PROVENANCE_KEY}` : ''}</span>`);
-    redrawLegend();
     const entries = new Set(rows.map((r) => `${r.entity.type}/${r.entity.slug}`)).size;
     status.textContent = rows.length
       ? `${entries} ${entries === 1 ? 'entry' : 'entries'} at ${new Set(rows.map((r) => r.place.slug)).size} places. Click a place to see what happened there; hover or click a route to follow it.`
       : 'Nothing in the selection has dated places yet.';
+    const provenances = await provenancesOf(rows);
+    if (stale() || !provenances.size) return;
+    draw(provenances);
   }
 
   async function routes(stale: () => boolean) {

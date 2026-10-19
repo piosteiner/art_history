@@ -667,6 +667,8 @@ test('start map: a chosen artwork shows its provenance as on its own page, in it
 
 test('start map overview: artworks follow their provenance (chain order, dashed where undocumented), not a route by date', async ({ page }) => {
   await page.goto('/?artists=none&movements=none&polities=none&people=none');
+  // the provenances come after the first drawing (one request for all): the legend names them when they are drawn
+  await expect(page.locator('#legend')).toContainText('artworks: their provenance in its order', { timeout: 30000 });
   type F = { properties: { slug: string; style: string; provenance?: boolean | string } };
   await page.waitForFunction(() => {
     const m = (window as unknown as { __maps?: { getLayer(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);

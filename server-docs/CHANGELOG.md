@@ -7,7 +7,9 @@ Format: date — what — why — how to revert.
 ### Several artworks' provenance in one request (`/v1/map/provenances`)
 - **What:** `GET /v1/map/provenances?artworks=slug,…` (≤ 300) → `{data: {slug: provenance}}` (`provenanceRoute()` in
   `src/routes/map.js`, four at a time). The site's start map uses it for its overview instead of one map request per
-  artwork (frontend commit after this one). Test in `provenance-records.spec.js`.
+  artwork; the overview is drawn at once with routes by date and the provenances replace them when they come
+  (start page usable after ≈ 4 s instead of ≈ 11 s here). Test in `provenance-records.spec.js`; the frontend's
+  overview test waits for the provenance legend.
 - **Why:** with ~110 artworks the start page queued ~110 requests (≈ 11 s here, more from far away); the Pages tests
   (run in the US against the live API) timed out at "Loading…" and the site was no longer published.
 - **Revert:** revert the commit (the old site keeps working: it doesn't call the endpoint).

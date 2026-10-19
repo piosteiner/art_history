@@ -2,7 +2,7 @@
 import type {
   AsOfDetail, DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, History, NetworkHands, NetworkPath, ProvenanceNumberHit,
   ClustersMap, EncounterRow, ItemByPlural, List, PlacesMap, Plural, SharedHands, TextHit,
-  EventsMap, PresenceMap, RelationshipType, SearchHit, SitesMap, Periods,
+  EventsMap, PresenceMap, ProvenanceMap, RelationshipType, SearchHit, SitesMap, Periods,
 } from './types';
 
 // In development the Vite server proxies /v1 (the API only allows CORS from the production origin).
@@ -133,6 +133,14 @@ export const getVocabulary = () => get<{ data: RelationshipType[] }>('/vocabular
 /** One entity's places: presence/association points plus a `route` LineString. Not available for places. */
 export const getEntityMap = (plural: Exclude<Plural, 'places'>, slug: string) =>
   get<EntityMap>(`/map/${plural}/${encodeURIComponent(slug)}`);
+
+/** Several artworks' provenance on the map at once ("slug" → the `provenance` of its map; API /v1/map/provenances) —
+ *  in requests of 100, so the address stays short. */
+export async function getProvenances(slugs: string[]): Promise<Record<string, ProvenanceMap>> {
+  const chunks = Array.from({ length: Math.ceil(slugs.length / 100) }, (_, i) => slugs.slice(i * 100, i * 100 + 100));
+  const parts = await Promise.all(chunks.map((c) => get<{ data: Record<string, ProvenanceMap> }>('/map/provenances', { artworks: c.join(',') })));
+  return Object.assign({}, ...parts.map((p) => p.data));
+}
 
 /** Who or what was physically where between the years `from` and `to`. */
 export const getPresence = (from: number, to: number, types?: EntityType[]) =>
