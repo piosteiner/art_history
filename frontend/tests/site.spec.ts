@@ -205,13 +205,14 @@ test('search page: a hit in a provenance links to the artwork\'s provenance', as
   await page.goto('/search?q=confiscation');
   const hit = page.locator('#items .text-hit', { hasText: 'La Petite Irène' });
   await expect(hit.locator('.tag-matched')).toHaveText('provenance');
-  await expect(hit.locator('.text-hit-passage mark')).toHaveText(/confiscation/i);
-  await expect(hit.locator('.text-hit-name')).toHaveAttribute('href', /^\/artworks\/100476\/irene-cahen-danvers-la-petite-irene\?hl=confiscation#provenance-\d+$/);
+  // the passage marks every word that matched — with the synonyms (API 102) also "seized"
+  await expect(hit.locator('.text-hit-passage mark', { hasText: /confiscation/i }).first()).toBeVisible();
+  await expect(hit.locator('.text-hit-name')).toHaveAttribute('href', /^\/artworks\/100476\/irene-cahen-danvers-la-petite-irene\?hl=[^#]*confiscation[^#]*#provenance-\d+$/);
   await hit.locator('.text-hit-name').click();
   // the step outlined and in view, the matched word marked in it
   const step = page.locator('.provenance-step.search-target');
   await expect(step).toBeInViewport();
-  await expect(step.locator('mark.search-hit').first()).toHaveText(/confiscation/i);
+  await expect(step.locator('mark.search-hit', { hasText: /confiscation/i }).first()).toBeVisible();
 });
 
 test('search page: a hit in the texts opens the entry with the matched words marked, the first in view', async ({ page }) => {
