@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-19
 
+### Provenance periods with an end known only as "or later" (migration 105)
+- **What:** `provenance_periods` (patched as it stands): an end given as "… or later" (an open range) now counts from
+  its earliest day — `coalesce(upper(r), lower(r) + 1)` — for a recorded end, an end implied by the next acquisition
+  and a step with only an end. Before, `upper()` of the open range was NULL, `GREATEST()` skipped it, and the period
+  collapsed to the year of acquisition. 28 of 607 steps change (e.g. Bernheim-Jeune "9 March 1909–1912 or later",
+  La Petite Irène's restitution "27 March 1946 – 8 June 1949 or later"): their periods, the coverage, the map, the
+  encounters. Test in `provenance-records.spec.js`.
+- **Why:** found by the new check `provenance_record_outside` (104): the Prado's inventory entries of 1747–1818 lay
+  "outside" the Royal Collection's period "until 1819 or later".
+- **Revert:** redeploy the previous commit; recreate the view with the three expressions back to `upper(…)`;
+  `DELETE FROM schema_migrations WHERE name = '105_provenance_period_open_ends.sql';`
+
 ### Provenance records (migration 104)
 - **What:** Table `provenance_records` (enum `provenance_record_kind`): the evidence under a step — inventory entries,
   catalogues, exhibitions, sightings, documents — with date, place, room, number, `number_certainty` ("¿nº 411?"),

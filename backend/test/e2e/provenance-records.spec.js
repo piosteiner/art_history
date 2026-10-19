@@ -22,7 +22,7 @@ test.beforeEach(() => {
 });
 test.afterEach(cleanup);
 
-const STEP = () => sql(`SELECT id FROM provenance WHERE artwork_id = ${W}`);
+const STEP = () => sql(`SELECT id FROM provenance WHERE artwork_id = ${W} ORDER BY position LIMIT 1`);
 async function addRecord(page, fill) {
   await page.goto(`/provenance/${STEP()}/edit`);
   await page.click('#records summary:has-text("+ Add a record")');
@@ -99,4 +99,17 @@ test('records: added, edited and removed on the step; under the step, in the num
   await Promise.all([userA.waitForNavigation(), userA.locator('#records ol li').first().locator('button:has-text("remove")').click()]);
   await expect(userA).toHaveURL(/done=record-deleted#records/);
   await expect(userA.locator('#records ol li')).toHaveCount(2);
+});
+
+test('an end known only as "or later" (105): the holder\'s period runs to its earliest day — its records inside', () => {
+  // the royal collection from 1650 with no end of its own; the museum from "1819 or later"
+  sql(`UPDATE provenance SET ended = NULL, ended_label = NULL WHERE artwork_id = ${W};
+       INSERT INTO provenance (artwork_id, position, owner_label, acquired, acquired_label, method)
+         VALUES (${W}, 1, 'Test Museum', '[1819-01-01,)'::daterange, '1819 or later', 'transfer');
+       INSERT INTO provenance_records (provenance_id, position, date, date_label, note) VALUES (${STEP()}, 0, year_range(1747), '1747', 'test')`);
+  expect(sql(`SELECT period::text || ' ' || end_basis FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('[1650-01-01,1819-01-02) implied');
+  expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'provenance_record_outside' AND entity_id = ${W}`)).toBe('0');
+  // an end of its own "or later" likewise
+  sql(`UPDATE provenance SET ended = '[1749-06-08,)'::daterange, ended_label = '8 June 1749 or later' WHERE artwork_id = ${W} AND position = 0`);
+  expect(sql(`SELECT period::text FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('[1650-01-01,1749-06-09)');
 });
