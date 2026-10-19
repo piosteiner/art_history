@@ -2,6 +2,33 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-19
+
+### Data: 20 masterpieces of the Prado with their provenance; `scripts/from-wikidata.js`
+- **What:** New tool `backend/scripts/from-wikidata.js [--dry-run] [--prefer-lang=es] [--links] [--skip=…] [--trust-type]
+  <type> Q… [Q…:slug]` — creates entries from Wikidata items as "+ from Wikidata…" + "Create" would (every value
+  cited W, first image, authority numbers, the form's own `saveEntity`, now exported from `routes/entries.js`); with
+  `--links` the suggested relationships. A similar name among ours is never taken for the item (one with its own item
+  → a new entry; one without → reported "undecided"). Test `fromwikidata.spec.js` (fixtures Q140/Q141).
+  Data (production, as user pio): Las meninas, the Garden of Earthly Delights, both Majas, the 2nd and 3rd of May,
+  the Surrender of Breda, the Triumph of Death, the Family of Charles IV, Las hilanderas, the Descent from the Cross,
+  the Seven Deadly Sins, Charles V at Mühlberg, the Triumph of Bacchus, the Forge of Vulcan, the Nobleman with his
+  Hand on his Chest, Dürer's Self-portrait (1498), the Three Graces, the Dog, Fra Angelico's Annunciation — plus Saturn
+  (existing) completed. Title, date, measurements, type and medium after the Prado (cited M, Wikidata's dates and sizes
+  replaced), a short description, deposits of Patrimonio Nacional as `on_loan`. Provenance after the Prado's
+  "Procedencia" (read in the Internet Archive's copies — museodelprado.es blocks this server): 86 steps, each cited
+  with the Prado page and the Spanish wording in the citation note; royal inventories as places + inventory numbers;
+  the Duke of Alba's confiscation as possessor; Escorial deposits with the 1936 Junta and the 1943 decree as events.
+  New: some 95 entries — depicted people, owners, 8 palaces as site places, the Spanish royal collection, El Escorial,
+  Patrimonio Nacional, movements, events (from Wikidata where an item exists; 7 by name) — 51 flagged "to complete";
+  the source "Museo del Prado, Colección".
+  Corrected after the import: the Triumph of Death's creator (a similar-name candidate gave Jan instead of Pieter
+  Bruegel), Charles Aeschimann's Wikidata item (given Charles V's, reset), wrong depicted people (Mary Quinn Sullivan,
+  Mary Magdalene → the Virgin Mary), a Wikidata category "1795–1820 in Western fashion" (removed), the Siege of Breda
+  (place → event), Dürer's "Italian Renaissance" (removed), the Majas' sitters (possible, identification disputed).
+- **Why:** owner: the 20 most important works of the Prado with full entries and provenance.
+- **Revert:** data — History page (audit log, user pio, 19 October); the script — revert the commit.
+
 ## 2026-10-18
 
 ### Data: provenances for 10 of the 23 artworks without one (import, production)

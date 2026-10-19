@@ -839,3 +839,4 @@ router.post('/:plural/:slug', async (req, res) => {
 });
 
 module.exports = router;
+module.exports.saveEntity = saveEntity;  // the Create / Publish path, also for scripts/from-wikidata.js

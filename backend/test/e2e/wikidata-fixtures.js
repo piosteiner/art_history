@@ -26,6 +26,12 @@ const ENTITIES = {
   Q103: { id: 'Q103', labels: labels('Charles Gleyre'), descriptions: { en: { value: 'Swiss painter' } },
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1806-05-02T00:00:00Z', 11))] } },
   // an altarpiece "commissioned by" (P88) a patron — the commission becomes the provenance's first step (063)
+  // scripts/from-wikidata.js (fromwikidata.spec.js): a panel whose painter has only a similar name among ours
+  Q140: { id: 'Q140', labels: labels('Test Prado Panel', { es: 'Tabla de prueba' }), descriptions: { en: { value: 'painting' } },
+    claims: { P31: [stmt(item('Q3305213'))], P170: [stmt(item('Q141'))], P571: [stmt(time('+1600-00-00T00:00:00Z', 9))],
+      P1476: [stmt({ text: 'Tabla de prueba', language: 'es' })] } },
+  Q141: { id: 'Q141', labels: labels('Test Painter Velasco'), descriptions: { en: { value: 'Spanish painter' } },
+    claims: { P31: [stmt(item('Q5'))], P106: [stmt(item('Q1028181'))] } },
   Q130: { id: 'Q130', labels: labels('Test Altarpiece'), descriptions: { en: { value: 'painting' } },
     claims: { P31: [stmt(item('Q3305213'))], P571: [stmt(time('+1480-00-00T00:00:00Z', 9))], P88: [stmt(item('Q131'))] } },
   Q131: { id: 'Q131', labels: labels('Test Patron Portinari'), descriptions: { en: { value: 'merchant and banker' } },
