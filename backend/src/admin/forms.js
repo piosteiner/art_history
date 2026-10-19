@@ -5,6 +5,7 @@ const names = require('../names');
 const { thumbUrl } = require('./images');
 const dimensions = require('../dimensions');
 const duplicates = require('./duplicates');
+const citations = require('./citations');
 
 // Language tags offered in the pickers (any BCP 47 tag can be typed).
 const LANGS = [['en', 'English'], ['de', 'German'], ['fr', 'French'], ['it', 'Italian'], ['nl', 'Dutch'], ['es', 'Spanish'],
@@ -51,6 +52,7 @@ const LABELS = {
   'artwork.title_status': 'Title: original or translation',
   'artwork.provenance_status': 'Provenance status 1933–1945', 'artwork.provenance_status_note': 'Status as the source words it',
   'artwork.conceived': 'Designed (block, model)',
+  'artwork.fate': 'Fate', 'artwork.fate_date': 'Fate: when', 'artwork.fate_note': 'Fate: how',
   'artwork.web_url': 'Web page', 'artwork.institution': 'Institution (where it is now)', 'artwork.on_loan': 'On loan there',
   'artwork.on_loan_since': 'On loan since', 'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
   'artwork.location': 'Where it stands', 'artwork.area': 'Outline (gardens, parks, precincts)', 'artwork.other_dimensions': 'Further measurements', 'term.name': 'Term',
@@ -77,6 +79,8 @@ const TYPE_HINTS = {
   'institution.address': 'Street address, as written locally, e.g. Heimplatz 1, 8001 Zürich.',
   'artwork.provenance_status': html`As the holding institution or a provenance report assesses it (the categories of the Swiss Federal Office of Culture) — cite the source with the marker. The step notes say why.`,
   'artwork.provenance_status_note': 'In the source’s own words, e.g. “NS-verfolgungsbedingt entzogenes Kulturgut”.',
+  'artwork.fate': 'Only when the work no longer exists or nobody knows where it is: destroyed (in a fire, a war, on purpose), partly destroyed, or lost — also a stolen work that never resurfaced. Cite the source with the marker. The provenance stays as it is; its last holder is then the last known one.',
+  'artwork.fate_note': 'How and why, briefly — e.g. “burnt in the Friedrichshain flak tower, May 1945”.',
   'artwork.conceived': html`Only when it differs from “Created”: a print pulled or a bronze cast later — often after the artist's death — from a block, plate or model made earlier (Gauguin's woodblock 1893–94, printed by his son in 1921).`,
   'artwork.title_status': html`Empty when the title is in its original language. A translation (an English title for a Japanese print): <b>official</b> — the holding institution’s or a publisher’s (add the source with the marker on the page) · <b>common</b> — in use in the literature or on Wikidata · <b>own</b> — yours (shown in [square brackets]). The same for translations among the other names: the second menu next to “translation”.`,
   'artwork.inventory_number': 'Only together with the institution above — the number belongs to its collection, as it publishes it (Kunsthaus: BU 0099). The owner’s number, former numbers and catalogue raisonné numbers: “Further numbers” just below.',
@@ -128,14 +132,18 @@ const TYPE_HINTS = {
   'person.occupations': 'One per line, lowercase: poet · monk · emperor · art dealer · collector',
 };
 // The empty choice of a menu whose column may be empty, and readable names of some values.
-const EMPTY_CHOICE = { 'artwork.title_status': 'original — not a translation', 'artwork.provenance_status': 'not assessed' };
+const EMPTY_CHOICE = { 'artwork.title_status': 'original — not a translation', 'artwork.provenance_status': 'not assessed',
+  'artwork.fate': 'extant — as far as known' };
 const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', 'artwork.title_status.common': 'common translation',
   'artwork.title_status.own': 'own translation',
   // the categories of the Swiss Federal Office of Culture (BAK) for the provenance 1933–1945 (074)
   'artwork.provenance_status.a_clear': 'A — clarified: no looted art',
   'artwork.provenance_status.b_no_indications': 'B — not fully clarified, no indications of looted art',
   'artwork.provenance_status.c_indications': 'C — not fully clarified, indications of looted art or suspicious circumstances',
-  'artwork.provenance_status.d_seized': 'D — looted art / seized as a result of Nazi persecution' };
+  'artwork.provenance_status.d_seized': 'D — looted art / seized as a result of Nazi persecution',
+  // what became of it (103)
+  'artwork.fate.destroyed': 'destroyed', 'artwork.fate.partly_destroyed': 'partly destroyed — fragments survive',
+  'artwork.fate.lost': 'lost — whereabouts unknown' };
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
 const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || humanize(key);
 
@@ -336,6 +344,7 @@ const SECTIONS = {
       g('Where it stands (buildings, gardens, monuments)…', ['location', 'area'], 'Only for works that don’t move.', IMMOVABLE)] },
     { title: 'Description', id: 'text', rows: [['description_md']] },
     { title: 'Provenance status', id: 'prov', rows: [['provenance_status', 'provenance_status_note']] },
+    { title: 'Fate', id: 'fate', rows: [['fate', 'fate_date'], ['fate_note']] },
     IDS(),
   ],
   artist: [
@@ -469,6 +478,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
           ${sec.rows.map((r) => html`${r.group ? fieldGroup(r.group, t, f, ctx, one) : r.length > 1 ? html`<div class="field-pair">${r.map(one)}</div>` : one(r[0])}${
             (Array.isArray(r) ? r : []).map((k) => (ctx.afterField || {})[k] || '')}`)}</section>`)}`;
     })()}
+    ${isNew && ctx.recentSources ? citations.newEntrySection(ctx.recentSources, ctx.citeValues || {}) : ''}
     <div class="actions"><button>${isNew ? 'Create' : collab ? 'Publish' : 'Save'}</button>
       <a class="button secondary" href="${isNew ? `/${t.folder}` : `/${t.folder}/${slug}`}">${collab ? 'Close' : 'Cancel'}</a>
       ${collab ? html`<a class="button secondary" href="${action}/discard-changes">Discard unpublished changes…</a>

@@ -89,7 +89,7 @@ const ENTITIES = {
            artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')},
            -- type and materials are glossary terms (071): every name of them, all languages, for searching lists
            t.materials, artwork_term_names(t.id) AS term_names,
-           upper(left(t.provenance_status::text, 1)) AS provenance_category,
+           upper(left(t.provenance_status::text, 1)) AS provenance_category, t.fate,  -- destroyed / partly_destroyed / lost (103)
            (SELECT jsonb_build_object('documented_percent', c.documented_percent, 'has_provenance', c.has_provenance,
                      'gap_1933_1945', c.gap_1933_1945_days > 0) FROM provenance_completeness c WHERE c.artwork_id = t.id) AS provenance_coverage`,
     detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
@@ -99,6 +99,10 @@ const ENTITIES = {
              'label', CASE t.provenance_status WHEN 'a_clear' THEN 'clarified: no looted art' WHEN 'b_no_indications' THEN 'not fully clarified, no indications of looted art'
                WHEN 'c_indications' THEN 'not fully clarified, indications of looted art or suspicious circumstances'
                ELSE 'looted art / seized as a result of Nazi persecution' END, 'note', t.provenance_status_note) END AS provenance_status,
+             -- what became of it (103): null while extant
+             CASE WHEN t.fate IS NOT NULL THEN jsonb_build_object('status', t.fate, 'label', CASE t.fate WHEN 'destroyed' THEN 'destroyed'
+               WHEN 'partly_destroyed' THEN 'partly destroyed' ELSE 'lost' END,
+               'date', range_json(t.fate_date, t.fate_date_label), 'note', t.fate_note) END AS fate,
              (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = t.kind_term_id) AS kind_term,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', g.slug, 'name', g.name) ORDER BY am.position), '[]')
                 FROM artwork_materials am JOIN glossary g ON g.id = am.term_id WHERE am.artwork_id = t.id) AS material_terms,

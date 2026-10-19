@@ -63,6 +63,7 @@ const TYPES = [
     institution: 'ref:institution', inventory_number: 'text', web_url: 'text',  // its page at the museum (038)
     on_loan: 'bool', on_loan_since: 'date',  // lent to the institution where it is; the owner is in the provenance (048)
     provenance_status: 'text', provenance_status_note: 'text',  // 1933–1945, the BAK categories A–D (074)
+    fate: 'text', fate_date: 'date', fate_note: 'text',  // destroyed / partly destroyed / lost, when, how (103)
     location: 'point', area: 'area',  // only for works that don't move: buildings, gardens, bridges … (migration 034)
     description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
 ];

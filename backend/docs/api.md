@@ -276,6 +276,13 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
   1921"; `null` otherwise.
 - Relationship `copy_after` (artwork → the work it copies; inverse "copied in").
 
+### Fate (artworks, 103)
+- `fate` (detail): `{status, label, date, note}` or `null` (extant as far as known). `status`: `destroyed` ·
+  `partly_destroyed` (fragments survive) · `lost` (whereabouts unknown, also stolen and never recovered); `date` a
+  date object or null; `note` how and why, in the source's words. Lists have `fate` (the status or null). Show it
+  prominently ("Destroyed 1945 — burnt in the Friedrichshain flak tower"); the provenance's last holder is then the
+  last known one, not today's.
+
 ### Provenance (artworks)
 The detail of an artwork has **`provenance`**: its holders in order, as the sources record them, read as a chain —
 `[{id, kind, implied, position, owner: {type, slug, name} | null, co_owners: [{type, slug, name}], role, owner_label, owner_name,

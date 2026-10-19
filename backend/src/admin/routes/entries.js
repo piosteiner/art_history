@@ -117,7 +117,7 @@ router.get('/:plural/new', async (req, res) => {
       ${useDraft ? restoredBanner({ draft, rb: { stale: false, merged: [], conflicts: [] }, t })
         : draftBanner({ draft, changed: [...new Set(changed)], restoreUrl: `/${t.folder}/new?draft=1`, t })}
       ${entityForm({ t, slug: useDraft ? draft.form.slug || '' : '', f: useDraft ? formFromBody(draft.form) : docToForm(await newDocFrom(t, req.query), t.fields),
-        ctx: await formContext(t), action: `/${t.folder}`, errors: [], isNew: true,
+        ctx: { ...await formContext(t), recentSources: await citations.recentSources(adminPool, req.user.id) }, action: `/${t.folder}`, errors: [], isNew: true,
         pendingImages: useDraft ? draft.form['wd.images'] : null, pendingCites: useDraft ? draft.form['wd.cite'] : null,
         pendingIds: useDraft ? draft.form['wd.ids'] : null })}`,
   });
@@ -235,6 +235,12 @@ async function saveEntity(user, t, body, existing, { probe = false } = {}) {
         const { rows } = await db.query(`INSERT INTO ${t.table} (slug, ${names.join(', ')}) VALUES ($1, ${exprs.join(', ')}) RETURNING id`, values);
         await duplicates.checkNew(db, t, rows[0].id, body, user.id, { probe });
         await citations.settle(db, t.type, rows[0].id, body, user.id);
+        // the source given in the form's "Source" section, for every field it was created with
+        if (!probe) {
+          await citations.citeNew(db, t.type, rows[0].id, body, user.id).catch((err) => {
+            throw err instanceof citations.CitationError ? new UserError(`Source: ${err.message}`) : err;
+          });
+        }
         // reference records picked in the Wikidata review of this new entry (wd.ids, 053) — a number another entry
         // has already makes this a certain duplicate (unique violation → duplicates.fromUniqueViolation)
         let pendingIds = [];
@@ -359,6 +365,8 @@ router.post('/:plural', async (req, res) => {
     const ctx = await formContext(t);
     ctx.errorKeys = errorKeysOf(result.errors);
     ctx.confirmNew = result.confirm || {};
+    ctx.recentSources = await citations.recentSources(adminPool, req.user.id);
+    ctx.citeValues = req.body;
     ctx.duplicates = result.duplicates || null;
     ctx.typeCheck = result.typeCheck ? html`${typeWarning(t, result.typeCheck.types, result.typeCheck.qid, null)}
       <label class="choice"><input type="checkbox" name="type.ok" value="1"> it really is ${anOf(t.type)} — create it</label>` : null;

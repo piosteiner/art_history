@@ -233,6 +233,41 @@ async function settle(db, type, id, body, userId) {
   }
 }
 
+// A new entry's own source (the "Source" section of the new-entry form, cite.*): one source for every field the
+// entry was created with — a museum page backs the title, the date, the medium, the size. Wikidata's citations of the
+// same fields stay beside it. A source that can't be used throws CitationError, and the entry is not created.
+async function citeNew(db, type, id, body, userId) {
+  const v = (k) => [].concat(body[`cite.${k}`] ?? []).map((x) => String(x).trim()).filter(Boolean).pop() || '';
+  if (!['url', 'source', 'text'].some((k) => v(k))) return [];
+  const { rows } = await db.query(`
+    SELECT f.field FROM citable_fields f JOIN entity_rows er ON er.type = f.entity_type AND er.id = $2
+    WHERE f.entity_type = $1::entity_type AND field_value(er.r, f.cols) IS NOT NULL ORDER BY f.position`, [type, id]);
+  if (!rows.length) return [];
+  return add(db, { type, id, field: rows[0].field, also: rows.slice(1).map((r) => r.field),
+    url: v('url'), source: v('source'), locator: v('locator'), note: v('note'), text: v('text') }, userId);
+}
+
+// The "Source" section of the new-entry form: a page's link, a source of the bibliography (typed, or one used
+// recently — the source only, the page differs per entry), page or number, a note. values: the posted cite.* (after an error).
+function newEntrySection(recent = [], values = {}) {
+  const val = (k) => values[`cite.${k}`] ?? '';
+  const sources = [...new Map(recent.map((r) => [r.slug, r])).values()];
+  return html`<section class="form-section" id="sec-source"><h2 class="form-section-title">Source</h2>
+    <p class="hint">Optional: where the details above come from. It is added as the source of every field you fill in —
+      later you can change it per field with the markers on the entry's page.</p>
+    <div class="field"><label for="cite-url">Link of the page</label>
+      <input id="cite-url" name="cite.url" type="url" value="${val('url')}" placeholder="https://collection.kunsthaus.ch/de/collection/item/…">
+      <div class="hint">The website becomes a source of the bibliography (or the one we have for that site is used) — with this page and today's date.</div></div>
+    <div class="field"><label for="cite-source">… or a source of the bibliography</label>
+      <input id="cite-source" name="cite.source" data-lookup="source" autocomplete="off" value="${val('source')}" placeholder="start typing: Busch 1993, Kunsthaus …">
+      ${sources.length ? html`<div class="cite-recent"><span class="small muted">Used recently:</span>
+        ${sources.map((r) => html`<label class="choice cite-chip cite-chip-${r.reliability}"><input type="radio" name="cite.source" value="${r.slug}"${val('source') === r.slug ? ' checked' : ''}> ${r.label}</label>`)}</div>` : ''}</div>
+    <div class="field-pair"><div class="field"><label for="cite-locator">Page, catalogue no.</label><input id="cite-locator" name="cite.locator" value="${val('locator')}" placeholder="45 · Kat.-Nr. 12"></div>
+      <div class="field"><label for="cite-note">Note</label><input id="cite-note" name="cite.note" value="${val('note')}" placeholder="optional"></div></div>
+    <div class="field"><label for="cite-text">Or in words (stays a note: T)</label><input id="cite-text" name="cite.text" value="${val('text')}" placeholder="e.g. letter to Theo, 1888"></div>
+  </section>`;
+}
+
 // An entry created from Wikidata in one go (a missing target, a city): every field it has comes from that item.
 async function citeAllFromWikidata(db, type, id, qid, userId = null) {
   if (!/^Q\d+$/.test(qid || '')) return;
@@ -359,6 +394,6 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
       </form></div></details>`;
 }
 
-module.exports = { CitationError, citableFields, forEntity, forRelationships, forProvenance, forNumbers, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
+module.exports = { CitationError, citeNew, newEntrySection, citableFields, forEntity, forRelationships, forProvenance, forNumbers, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
   pendingFromSource, citeAgreeingSource, citeRelationshipFromSource,
   citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, trigger, recentSources, recentChips, keyOf };
