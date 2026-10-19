@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-19
 
+### Data: the Prado provenances with records; three series
+- **What:** (production, as user pio) The Prado's inventory entries, sightings, catalogues and exhibitions moved from
+  the steps' text into provenance records (104): 76 records on 24 steps of 16 works — year, palace, room as the
+  inventory writes it, number, the Prado's doubts ("¿nº 411?", "¿Real Alcázar, 1666?") as certainties; the step
+  numbers and further places they replace dropped, the labels shortened. Series: "Pinturas negras" (Wikidata
+  Q1988253, imported; 14 parts — Saturn and the Dog in it), "El Dos de Mayo de 1808 en Madrid" (new: the Second and
+  Third of May as 1 and 2), the Hall of Realms battle series completed (12 parts, the Prado, attribution, dates).
+  Also: Charles V's "created in Augsburg" dated 1548; outdated Wikidata citations of replaced values removed.
+- **Why:** owner: the Black Paintings as a series; the provenances recreated with the records.
+- **Revert:** History page (audit log, user pio, 19 October); records: `DELETE FROM provenance_records` for these steps.
+
 ### Several artworks' provenance in one request (`/v1/map/provenances`)
 - **What:** `GET /v1/map/provenances?artworks=slug,…` (≤ 300) → `{data: {slug: provenance}}` (`provenanceRoute()` in
   `src/routes/map.js`, four at a time). The site's start map uses it for its overview instead of one map request per
