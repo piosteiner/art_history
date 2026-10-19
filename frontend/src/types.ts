@@ -203,6 +203,8 @@ export interface ArtworkItem extends Located, Titled {
   on_loan?: boolean;
   /** The 1933–1945 provenance category (API 074): A–D, null when not assessed — a filter on the list. */
   provenance_category?: ProvenanceCategory | null;
+  /** Destroyed, partly destroyed or lost (API 103); null while extant. */
+  fate?: ArtworkFate['status'] | null;
   /** How much of its life the provenance covers (API 078); `gap_1933_1945`: no holder known then — a list filter. */
   provenance_coverage?: { documented_percent: number | null; has_provenance: boolean; gap_1933_1945: boolean } | null;
   /** Materials, and every name of the type / material terms in every language, for searching (API migration 071). */
@@ -285,6 +287,8 @@ export interface Artwork extends DetailBase, Located, Titled {
   on_loan?: boolean; on_loan_since?: DateRange | null;
   /** The 1933–1945 provenance status (API 074), null when not assessed; `note`: the source's own wording. */
   provenance_status?: ProvenanceStatus | null;
+  /** What became of it (API 103): destroyed / partly destroyed / lost, when and how; null while extant. */
+  fate?: ArtworkFate | null;
   /** When the design, block or model was made, if earlier than `created` (a print pulled, a cast made later; 074). */
   conceived?: DateRange | null;
   /** Where the provenance is silent (API 078), from the creation until today; null without a creation date. */
@@ -318,6 +322,8 @@ export interface ProvenanceCoverage {
  */
 export type ProvenanceCategory = 'A' | 'B' | 'C' | 'D';
 export interface ProvenanceStatus { category: ProvenanceCategory; code: string; label: string; note: string | null }
+/** What became of an artwork (API 103): null while extant as far as known; `note`: how, in the source's words. */
+export interface ArtworkFate { status: 'destroyed' | 'partly_destroyed' | 'lost'; label: string; date: DateRange | null; note: string | null }
 
 /** "18" at the Foundation E.G. Bührle Collection, "658" in Rewald's catalogue raisonné … */
 export interface ArtworkNumber { number: string; label: string | null; institution: Ref | null; source: Ref | null; sources?: Citation[] }

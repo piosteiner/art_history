@@ -131,6 +131,12 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .prov-stop.area { min-width: 34px; height: 34px; border-radius: 17px; color: var(--text); border: 3px solid var(--pc, var(--c-provenance));
   background: color-mix(in srgb, var(--pc, var(--c-provenance)) 25%, transparent); box-shadow: none; } /* only the region or country */
 .prov-stop:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
+/* an artwork's own map: its first and last placed stop, with a caption under the marker */
+.prov-stop.prov-start, .prov-stop.prov-end { box-shadow: 0 0 0 3px var(--surface), 0 0 0 5px var(--pc, var(--c-provenance)), 0 1px 4px 5px rgba(0, 0, 0, .25); }
+.prov-stop.prov-end:not(.hollow):not(.area) { min-width: 24px; height: 24px; border-radius: 12px; font-size: 12px; }
+.prov-stop[data-cap]::after { content: attr(data-cap); position: absolute; top: calc(100% + 7px); left: 50%; transform: translateX(-50%); pointer-events: none;
+  font: 600 10.5px/1.2 var(--sans); color: var(--text); background: var(--surface); padding: 1px 5px; border-radius: 3px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .25); white-space: nowrap; }
 .popup-steps li { margin: .25rem 0; }
 
 .popup-row + .popup-row { margin-top: .5rem; padding-top: .5rem; border-top: 1px solid var(--line); }
@@ -263,6 +269,8 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .provenance-gap-line { padding: .3rem 0 .4rem 1.4rem; border-left: 2px dashed var(--gap-edge); color: var(--muted); font-size: .9rem; font-style: italic; }
 .provenance-gap-line.ns { border-left-color: var(--prov-d); color: var(--text); background: color-mix(in srgb, var(--prov-d) 8%, transparent); }
 .tag-ns { color: var(--prov-d); border-color: currentColor; font-style: normal; }
+/* what became of an artwork (API 103): destroyed / partly destroyed / lost */
+.tag-fate { color: var(--surface); background: var(--text); border-color: var(--text); text-transform: none; }
 .gap-list li.ns { color: var(--prov-d); }
 /* a gap on the map: "? 1934–1946" mid-segment */
 .prov-gap { font: 600 11px/1 var(--sans); padding: 3px 5px; border-radius: 9px; background: var(--surface); color: var(--muted);

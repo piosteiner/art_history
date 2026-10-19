@@ -105,10 +105,11 @@ export function showEntity(map: MapLibre, fc: EntityMap, alsoFit: [number, numbe
 }
 
 /** An artwork's own map: its provenance (see drawProvenance) in place of the route; other features (associations …) as usual. */
-export function showProvenance(map: MapLibre, fc: EntityMap, inferences?: Map<number, Inference[]>) {
+export function showProvenance(map: MapLibre, fc: EntityMap, inferences?: Map<number, Inference[]>, gone = false) {
   const prov = fc.provenance!;
   const view = showEntity(map, withoutReplaced(fc), provenanceStops(prov).map((f) => f.geometry.coordinates));
-  whenReady(map, () => drawProvenance(map, 'prov', [{ prov, color: COLORS.provenance, inferences }]));
+  // gone: destroyed or lost (API 103) — its last stop is the last known place, not where it is today
+  whenReady(map, () => drawProvenance(map, 'prov', [{ prov, color: COLORS.provenance, inferences }], { ends: gone ? 'gone' : true }));
   return view;
 }
 

@@ -16,6 +16,13 @@ export type Fact = [label: string, value: Html | string | null | undefined | fal
  * An artwork's date; with a design earlier than the making (API 074: a print pulled, a cast made later) both —
  * "designed 1893–1894, printed 1921".
  */
+/** "destroyed · May 1945 — burnt in the Friedrichshain flak tower" (API 103); null while extant. */
+function fateFact(e: Artwork): Html | null {
+  const f = e.fate;
+  if (!f) return null;
+  return html`<span class="tag tag-fate tag-fate-${f.status}">${f.label}</span>${f.date ? ` ${f.date.label}` : ''}${f.note ? html` — ${f.note}` : ''}`;
+}
+
 function dateFact(e: Artwork): string | null {
   if (!e.conceived) return dateLabel(e.created);
   const kind = `${e.kind ?? ''} ${e.medium ?? ''}`.toLowerCase();
@@ -144,11 +151,14 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
       const byline = [e.creator ? (e.attribution_label ? attributed(e.attribution_label, e.creator.name) : e.creator.name) : e.attribution_label, ...coCreators.map((c) => c.name)];
       return {
         title: displayName(e).text, // an official translation preferred, an own one in [brackets]
-        subtitle: [...byline, e.created?.label].filter(Boolean).join(', '),
+        // destroyed or lost (API 103): said at once, under the title — "…, c. 1817 · destroyed 1945"
+        subtitle: [[...byline, e.created?.label].filter(Boolean).join(', '),
+          e.fate ? [e.fate.label, e.fate.date?.label].filter(Boolean).join(' ') : null].filter(Boolean).join(' · '),
         text: e.description_html, images: e.images,
         facts: [
           [creatorsOf(e).length > 1 ? 'Artists' : 'Artist', creatorsFact(e)],
           ['Date', dateFact(e)],
+          ['Fate', fateFact(e)],
           // glossary terms (API 071): linked to their entries, which explain them and carry the translations
           ['Type', e.kind_term ? link('term', e.kind_term.slug, e.kind ?? e.kind_term.name) : e.kind],
           ['Medium', e.medium],
@@ -271,7 +281,7 @@ const NAMES_FACT: Record<string, string[]> = { names: ['Also known as'] };
 const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
   artist: { birth: ['Born'], death: ['Died'] },
   artwork: { creator: ['Artist', 'Artists'], attribution_label: ['Artist', 'Artists'], created: ['Date'], conceived: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
-    dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'] },
+    dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'], fate: ['Fate'] },
   institution: { founded: ['Founded'], address: ['Address', 'Location'], location: ['Address', 'Location'], place: ['Location'] },
   person: { birth: ['Born', 'Active'], death: ['Died'], kind: ['Kind'], occupations: ['Occupations'] },
   place: { parent: ['Part of'], location: ['Coordinates'] },

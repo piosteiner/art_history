@@ -110,7 +110,7 @@ export function stepsAtPlace(prov: ProvenanceMap, placeSlug: string, color: stri
 /** `onStop`: a click on a numbered stop calls it instead of opening the stop's own popup (the start map in a time
  *  window opens the place's popup there — one popup with everyone at that place); it returns false to fall back. */
 export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceDrawing[],
-  { onStop }: { onStop?: (at: [number, number]) => boolean } = {}) {
+  { onStop, ends }: { onStop?: (at: [number, number]) => boolean; ends?: boolean | 'gone' } = {}) {
   clearProvenanceMarkers(map);
   removeLayers(map, provenanceLayers(prefix));
   const drawn: DrawnSegment[] = [];
@@ -203,6 +203,10 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
     }
   }
   for (const it of items) {
+    // ends: on one artwork's own map, its first and last placed stop are marked "start" and "today" / "last known",
+    // since a return to a place puts both in one marker ("2, 8") and the order alone is hard to read
+    const placed = provenanceStops(it.prov).map((f) => f.properties.step);
+    const [firstStep, lastStep] = [Math.min(...placed), Math.max(...placed)];
     const places = new Map<string, Feature<PointGeometry, ProvenanceStopProps>[]>();
     for (const f of provenanceStops(it.prov)) {
       const key = f.geometry.coordinates.join(',');
@@ -218,8 +222,13 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
       el.className = `prov-stop${hollow ? ' hollow' : ''}${area ? ' area' : ''}`;
       el.style.setProperty('--pc', it.color);
       el.textContent = label;
+      const end = ends && placed.length > 1 ? endOf(steps, firstStep, lastStep, ends === 'gone') : null;
+      if (end) {
+        el.classList.add(`prov-${end.kind}`);
+        el.dataset.cap = end.text;  // drawn by CSS (::after): the marker's text stays its step numbers
+      }
       el.setAttribute('role', 'button');
-      el.setAttribute('aria-label', `${it.entity ? `${it.entity.name}, ` : ''}${first.place.name}: ${steps.length > 1 ? 'steps' : 'step'} ${label} of ${first.steps}`);
+      el.setAttribute('aria-label', `${it.entity ? `${it.entity.name}, ` : ''}${first.place.name}: ${steps.length > 1 ? 'steps' : 'step'} ${label} of ${first.steps}${end ? ` (${end.text})` : ''}`);
       const popup = new Popup({ maxWidth: '320px', offset: area ? 20 : 13 }).setHTML(html`<div class="popup-row">
         ${entityLine(it)}
         <strong>${link('place', first.place.slug, first.place.name)}</strong>
@@ -237,6 +246,19 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
       markers.push(marker.addTo(map));
     }
   }
+}
+
+/**
+ * The first or last placed stop of an artwork: "start" (or "first known place" when earlier steps have no place) and
+ * "today" when the last step is the provenance's last and still runs (and the work wasn't destroyed or lost — API
+ * 103), else "last known place". Both in one marker:
+ * the end wins (an artwork back where it started).
+ */
+function endOf(steps: ProvenanceStopProps[], firstStep: number, lastStep: number, gone: boolean): { kind: 'start' | 'end'; text: string } | null {
+  const last = steps.find((s) => s.step === lastStep);
+  if (last) return { kind: 'end', text: !gone && last.step === last.steps && !last.period?.to ? 'today' : 'last known place' };
+  if (steps.some((s) => s.step === firstStep)) return { kind: 'start', text: firstStep === 1 ? 'start' : 'first known place' };
+  return null;
 }
 
 /**

@@ -172,7 +172,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
             // what the dates imply (API 086), by step position: the distance a work travelled labels its segment
             const inferences = e.type === 'artwork'
               ? new Map((e.provenance ?? []).filter((s) => s.inferences?.length).map((s) => [s.position, s.inferences!])) : undefined;
-            const view = prov ? showProvenance(map, fc, inferences) : showEntity(map, fc);
+            const view = prov ? showProvenance(map, fc, inferences, e.type === 'artwork' && !!e.fate && e.fate.status !== 'partly_destroyed') : showEntity(map, fc);
             const layers = new Set(stops.map((f) => f.properties.layer));
             const both = (layers.has('presence') || !!prov) && layers.has('association');
             const c = COLORS.provenance;

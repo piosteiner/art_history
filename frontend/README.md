@@ -163,6 +163,12 @@ page's own link.
   `provenance_coverage.gap_1933_1945`, combinable with the category; works without any provenance count too, as in the
   API). `documented_percent` is null on works without provenance.
 
+## Start, end and fate on an artwork's map (API 103)
+On an artwork's own map (`showProvenance` → `drawProvenance(…, { ends })`) the first and last placed stop are framed
+and captioned: "start" (or "first known place" when the first steps have no place) and "today" (the last step is the
+provenance's last and still runs) or "last known place". A destroyed or lost work (`fate`, API 103) always ends at its
+"last known place"; its fate is said under the title ("· destroyed 1945") and in the "Fate" fact row with its sources.
+
 ## Series and other wholes (API migration 037)
 A part's page: "No. 21 of 36 in <whole>" (the chain upwards) and previous/next links; a whole's page: a grid of its parts.
 Artwork cards show "No. 21 · <series>"; sort "Series" (series title, then the number); `/artworks?part_of=<slug>` lists one

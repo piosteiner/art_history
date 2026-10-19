@@ -230,6 +230,26 @@ test('search page: a hit in the texts opens the entry with the matched words mar
 
 const IRENE = '/artworks/100476/irene-cahen-danvers-la-petite-irene';
 
+test('provenance map: the first and last placed stop are marked; a destroyed work ends at its last known place (API 103)', async ({ page }) => {
+  await page.goto('/artworks/100501/der-wanderer-uber-dem-nebelmeer');
+  // step 1 (the artist) has no place: the map starts at the first known place; the last step still runs: today
+  await expect(page.locator('.prov-start')).toHaveAttribute('data-cap', 'first known place');
+  await expect(page.locator('.prov-end')).toHaveAttribute('data-cap', 'today');
+
+  // the same work as if it had burnt in 1945: said under the title, in the facts, and on the map
+  await page.route(/\/v1\/artworks\/(100501|der-wanderer-uber-dem-nebelmeer)(\?.*)?$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.fate = { status: 'destroyed', label: 'destroyed', note: 'Burnt in a test fire',
+      date: { label: '1945', from: '1945-01-01', to: '1945-12-31', from_year: 1945, to_year: 1945 } };
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.reload();
+  await expect(page.locator('.subtitle')).toContainText('destroyed 1945');
+  await expect(page.locator('dt:has-text("Fate") + dd')).toContainText('destroyed 1945 — Burnt in a test fire');
+  await expect(page.locator('.prov-end')).toHaveAttribute('data-cap', 'last known place');
+});
+
 test('how are they connected (088): pick any entry, the shortest chain top to bottom', async ({ page }) => {
   await page.goto(IRENE);
   const box = page.locator('#connect');
