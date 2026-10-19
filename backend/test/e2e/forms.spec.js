@@ -60,8 +60,8 @@ test('an artwork\'s web page: saved, checked, in the API; the images section poi
 test('forms in sections: titles and jump links, short fields in pairs, every field once, hints stay visible', async ({ userA }) => {
   await userA.setViewportSize({ width: 1280, height: 900 });
   await userA.goto('/artworks/new');
-  await expect(userA.locator('.form-section-title')).toHaveText(['Title and names', 'Who and when', 'Object', 'Where it is', 'Description', 'Provenance status', 'Identifiers']);
-  await expect(userA.locator('.form-nav a')).toHaveCount(7);
+  await expect(userA.locator('.form-section-title')).toHaveText(['Title and names', 'Who and when', 'Object', 'Where it is', 'Description', 'Provenance status', 'Fate', 'Identifiers', 'Source']);
+  await expect(userA.locator('.form-nav a')).toHaveCount(8);   // "Source" (new entries only, after the fields) has no jump link
   // creator and attribution side by side
   const [a, b] = await Promise.all(['#f-creator', '#f-attribution_label'].map((s) => userA.locator(s).boundingBox()));
   expect(Math.abs(a.y - b.y)).toBeLessThan(5);
