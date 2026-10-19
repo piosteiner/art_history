@@ -108,8 +108,10 @@ function toRow(doc, fields) {
     // the public number (085): kept as exported, so the addresses survive an import into another database
     if (key === 'public_id') {
       if (doc.public_id === null || doc.public_id === undefined) continue;
-      if (!Number.isInteger(doc.public_id) || doc.public_id < 1) errors.push('public_id: a whole number');
-      else put('public_id', doc.public_id);
+      // exports before 2026-10-19 wrote it as a string ("101300": node-postgres reads bigint as text)
+      const n = typeof doc.public_id === 'string' && /^[1-9][0-9]*$/.test(doc.public_id) ? Number(doc.public_id) : doc.public_id;
+      if (!Number.isInteger(n) || n < 1) errors.push('public_id: a whole number');
+      else put('public_id', n);
       continue;
     }
     if (key.endsWith('_label') && ['date', 'period'].includes(fields[key.slice(0, -'_label'.length)])) continue;

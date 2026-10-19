@@ -55,7 +55,7 @@ async function main() {
         if (cited) doc.sources = cited;
         const file = path.join(dir, `${slug}.yaml`);
         // Lists of plain values inline ([a, b]) like the hand-written files; relationships stay one per block.
-        const yaml = new YAML.Document({ public_id: publicId, ...doc }, { schema: 'core' });   // the public number first (085)
+        const yaml = new YAML.Document({ public_id: Number(publicId), ...doc }, { schema: 'core' });  // a number (pg reads bigint as text)   // the public number first (085)
         YAML.visit(yaml, { Seq(_, seq) { if (seq.items.every((i) => YAML.isScalar(i))) seq.flow = true; } });
         const text = yaml.toString({ lineWidth: 0, flowCollectionPadding: false });
         const old = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
