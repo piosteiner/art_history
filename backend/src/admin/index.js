@@ -6,6 +6,7 @@
 //   /<plural>/<slug>           view + relationships     /<plural>/<slug>/edit · /delete · /history
 //   /relationships/<id>/edit   edit one relationship    /history             all changes
 //   /images/<id>/edit          edit one image           (images are added and reordered on the entry's page)
+//   /search-words              groups of equivalent search words (102)
 //   (the pages themselves: src/admin/routes/*.js, mounted below in this order; shared helpers: src/admin/core.js)
 const express = require('express');
 const path = require('path');
@@ -62,6 +63,7 @@ router.use(require('./routes/revert'));
 router.use(require('./routes/dashboard'));
 router.use(require('./routes/queue'));
 router.use(require('./routes/featured'));
+router.use(require('./routes/search-words'));
 router.use(require('./routes/relationships'));
 router.use(require('./routes/citations'));
 router.use(require('./routes/compare'));

@@ -188,10 +188,12 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
              WHEN a.table_name = 'provenance'
              THEN concat_ws(' ', 'provenance of', coalesce(pa.name, ${gone("'artwork'", "r->>'artwork_id'")}), '—',
                             coalesce(po.name, r->>'owner_label', 'owner #' || px.id), nullif(r->>'acquired_label', ''))
+             WHEN a.table_name = 'search_synonyms' THEN 'search words: ' || (r->>'label')
              ELSE coalesce(r->>'name', r->>'title', r->>'slug') END AS what,
            CASE WHEN a.table_name = 'relationships' THEN s.type::text || 's/' || s.slug
                 WHEN a.table_name = 'images' THEN ie.type::text || 's/' || ie.slug
                 WHEN a.table_name IN ('provenance', 'artwork_numbers') THEN 'artworks/' || pa.slug
+                WHEN a.table_name = 'search_synonyms' AND a.action <> 'delete' THEN 'search-words/' || a.row_id || '/edit'
                 WHEN a.action <> 'delete' THEN a.table_name || '/' || (r->>'slug') END AS link,
            (SELECT jsonb_object_agg(k, jsonb_build_array(
                      CASE WHEN k IN ('location', 'area') THEN to_jsonb(ST_AsText((a.old_row->>k)::geography)) ELSE a.old_row->k END,
