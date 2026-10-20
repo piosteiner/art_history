@@ -44,7 +44,7 @@ ${nav && user ? html`<header class="top">
     <span class="nav-group" title="The collection: works and who made, owned and kept them"><a href="/artworks">Artworks</a><a href="/artists">Artists</a><a href="/people">People</a><a href="/institutions">Institutions</a></span>
     <span class="nav-group" title="Context: when and where"><a href="/events">Events</a><a href="/movements">Movements</a><a href="/places">Places</a><a href="/polities">Polities</a></span>
     <span class="nav-group" title="Reference"><a href="/glossary">Glossary</a><a href="/bibliography">Bibliography</a></span>
-    <span class="nav-group nav-tools"><a href="/quality">Quality</a><a href="/featured">Start views</a><a href="/search-words" title="Words the public search treats as the same, across languages">Search words</a><a href="/history">History</a></span>
+    <span class="nav-group nav-tools"><a href="/quality">Quality</a><a href="/featured">Start views</a><a href="/pages" title="Text pages of the site, e.g. the project documentation">Pages</a><a href="/search-words" title="Words the public search treats as the same, across languages">Search words</a><a href="/history">History</a></span>
   </nav>
   <form method="get" action="/search" class="inline top-search" role="search"><input type="search" name="q" placeholder="Search everything…" aria-label="Search everything"></form>
   <form method="post" action="/logout" class="inline"><span class="muted">${user.username}</span> <button class="link">Log out</button></form>

@@ -456,3 +456,12 @@ ul.records, ol.records-edit { margin: .25rem 0 0; padding-left: 1.1rem; }
 ul.records li, ol.records-edit li { margin: .1rem 0; }
 details.records > summary { cursor: pointer; color: var(--muted); }
 .record-date { font-variant-numeric: tabular-nums; }
+
+/* pages (migration 114): the image list of a page, and images in its preview */
+.page-image-list { list-style: none; padding: 0; display: grid; gap: .4rem; }
+.page-image-list li { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+.page-image-list img { width: 64px; height: 48px; object-fit: cover; border-radius: 3px; border: 1px solid var(--border, #ddd); }
+.md-preview img { max-width: 100%; height: auto; }
+.page-image-missing { display: inline-block; padding: .1rem .4rem; border: 1px dashed #c62828; color: #c62828; font-family: monospace; font-size: .85em; }
+.page-figure { display: block; } .page-caption { display: block; font-size: .85em; color: var(--muted, #666); }
+.md-preview .task { list-style: none; } .md-preview mark { background: #fff3a3; }

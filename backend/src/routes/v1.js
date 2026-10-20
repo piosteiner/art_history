@@ -9,6 +9,7 @@ const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
 const { fold } = require('../fold');
+const { renderPage } = require('../pages');
 
 const router = express.Router();
 
@@ -130,6 +131,27 @@ router.get('/search/suggest', async (req, res) => {
   const fix = new Map(rows.map((r) => [r.word, r.suggestion]));
   const query = q.replace(/\p{L}+/gu, (w) => fix.get(fold(w)) ?? w);
   res.json({ query, words: rows.map((r) => ({ from: r.word, to: r.suggestion, edits: r.edits })) });
+});
+
+// Pages written in the CMS (114): the project documentation. → {slug, title, lang, html, toc, updated_at}; only published
+// ones. Images are served beside them by name (as Obsidian embeds them: ![[name]]), cached for a day and revalidated by
+// their sha256 (a re-uploaded image of the same name shows at once).
+router.get('/pages/:slug', async (req, res) => {
+  const { rows: [p] } = await apiPool.query(`SELECT id, slug, title, lang, body_md, updated_at,
+      (SELECT array_agg(name) FROM page_images i WHERE i.page_id = p.id) AS images
+    FROM pages p WHERE slug = $1 AND published`, [req.params.slug]);
+  if (!p) throw notFound(`no page "${req.params.slug}"`);
+  const base = `${req.protocol}://${req.get('host')}${req.baseUrl}/pages/${p.slug}/images/`;
+  const { html, toc } = renderPage(p.body_md, { imageBase: base, known: new Set(p.images || []) });
+  res.json({ slug: p.slug, title: p.title, lang: p.lang, html, toc, updated_at: p.updated_at });
+});
+router.get('/pages/:slug/images/:name', async (req, res) => {
+  const { rows: [img] } = await apiPool.query(`SELECT i.content_type, i.bytes, i.sha256 FROM page_images i JOIN pages p ON p.id = i.page_id
+    WHERE p.slug = $1 AND p.published AND i.name = $2`, [req.params.slug, req.params.name]);
+  if (!img) throw notFound('no such image');
+  res.set({ 'Cache-Control': 'public, max-age=86400', ETag: `"${img.sha256}"`, 'Content-Type': img.content_type, 'X-Content-Type-Options': 'nosniff' });
+  if (req.get('if-none-match') === `"${img.sha256}"`) return res.status(304).end();
+  res.send(img.bytes);
 });
 
 // Curated start views (migration 069): published ones, in their order. The query read through

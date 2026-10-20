@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Pages: the project documentation on the site (migration 114)
+- **What:** tables `pages` (audited) and `page_images` (bytea); `src/pages.js` renders Obsidian Markdown (`![[image]]`,
+  `==mark==`, task lists, tables, coloured spans, ruby) behind a sanitize-html allowlist; API `/v1/pages/<slug>` and its
+  images by name; CMS "Pages" (`src/admin/routes/pages.js`: the Markdown editor with its own preview, images uploaded
+  several at once, dropped on or pasted into the text — `editor/uploads.js` —, history). Site `/dokumentation` with
+  contents (`src/views/page.ts`), footer link "Projekt Dokumentation", prerendered once published. The page
+  `projekt-dokumentation` starts empty and unpublished. E2E `pages.spec.js`, site test.
+- **Why:** owner: the documentation on the site for transparency and as proof of the work, edited in the CMS.
+- **Revert:** `DROP TABLE page_images, pages;` delete `114_pages.sql` from `schema_migrations`; revert the commits.
+
 ### Search: did you mean, collection filters, plain-language queries, infinite scroll; numbers linked only when shared (migration 113)
 - **What:** materialized view `search_words` + `search_suggest()` (fuzzystrmatch + pg_trgm), `GET /v1/search/suggest`;
   `/v1/search/text` `in` / `not_in` (an artwork's current collection); `provenance_number_kinds.scope`,

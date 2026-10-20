@@ -32,6 +32,7 @@ import { initDuplicates } from './duplicates';
 import { initSortable } from './sortable';
 import { initCiteDialogs, initCiteTriggers } from './cites';
 import { initErrorFields } from './errors';
+import { imageHandlers, initImageUploads } from './uploads';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -148,8 +149,9 @@ function button(label, title, onClick) {
   return b;
 }
 
-async function renderPreview(text) {
-  const res = await fetch('/preview', {
+// url: the field's own preview (data-preview: a page renders with src/pages.js and its images), else the entries' one
+async function renderPreview(text, url = '/preview') {
+  const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
     body: new URLSearchParams({ text }),
@@ -355,6 +357,8 @@ function enhance(textarea, collab = null) {
         underlines,
         EditorView.lineWrapping,
         autocompletion({ override: [entryCompletions], icons: false }),
+        // a page's text (data-upload, 114): images dropped or pasted in are uploaded and embedded as ![[name]]
+        ...(textarea.dataset.upload ? [imageHandlers(textarea.dataset.upload)] : []),
         bracketOverSelection,
         theme,
         placeholder(textarea.placeholder || 'Write here — Markdown styling appears as you type.'),
@@ -391,7 +395,7 @@ function enhance(textarea, collab = null) {
     preview.hidden = false;
     editorBox.hidden = true;
     try {
-      const html = await renderPreview(view.state.doc.toString());
+      const html = await renderPreview(view.state.doc.toString(), textarea.dataset.preview || '/preview');
       preview.innerHTML = html || '<p class="muted">(empty)</p>';  // server-sanitized
     } catch (err) {
       preview.textContent = err.message;
@@ -445,6 +449,7 @@ initSortable();
 initCiteDialogs();
 initCiteTriggers();
 initErrorFields();
+initImageUploads();
 initSlug();
 // A map inside a closed section (forms.js: "Where it stands…") was laid out at zero size: opening the section tells
 // Leaflet to measure again (it listens to window resize).

@@ -63,6 +63,7 @@ router.use(require('./routes/revert'));
 router.use(require('./routes/dashboard'));
 router.use(require('./routes/queue'));
 router.use(require('./routes/featured'));
+router.use(require('./routes/pages'));
 router.use(require('./routes/search-words'));
 router.use(require('./routes/relationships'));
 router.use(require('./routes/citations'));

@@ -457,6 +457,14 @@ only artworks whose current collection (the institution's names or its city) has
 those out (other types stay with `not_in`, drop out with `in`). The site reads "gauguin but not in kunsthaus zürich"
 as `q=gauguin&not_in=kunsthaus zurich`.
 
+## Pages (114)
+`GET /v1/pages/<slug>` — a text page written in the CMS, only when published (404 before):
+`{slug, title, lang, html, toc: [{level, id, text}], updated_at}` — `html` sanitized (headings with ids for the table of
+contents, images, `<mark>`, task lists `li.task` / `li.task-done` with `span.task-box`, tables, coloured spans, ruby);
+an embed of an image that isn't uploaded is `<span class="page-image-missing">name</span>`. Images:
+`GET /v1/pages/<slug>/images/<name>` (cached a day, `ETag` = its sha256). The project documentation:
+`/v1/pages/projekt-dokumentation` (site: `/dokumentation`).
+
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.
 - `GET /v1/network/path?from=<entry>&to=<entry>[&via=person,artist&max=6]` — the shortest chain of relationships and
