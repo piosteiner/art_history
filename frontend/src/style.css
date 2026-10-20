@@ -784,3 +784,7 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .provenance-records { list-style: none; margin: .2rem 0 .1rem; padding-left: .2rem; font-size: .85rem; }
 .provenance-record { margin: .1rem 0; }
 .provenance-records-fold > summary { cursor: pointer; font-size: .85rem; color: var(--muted); margin-top: .2rem; }
+
+/* the periods' work dots: a click shows the preview, a click on it (or the dot again) opens the work in a new tab */
+.tl-dot-link { cursor: pointer; }
+.popover-clickable { cursor: pointer; }

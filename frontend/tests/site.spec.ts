@@ -2180,6 +2180,33 @@ test('periods: lanes per region, phases, a region hidden, a window lists the wor
   expect(errors).toEqual([]);
 });
 
+test('periods: a work\'s dot shows its preview; clicked again it opens the work in a new tab, the periods stay', async ({ page, context }) => {
+  await page.goto('/periods');
+  const dot = page.locator('.tl-dot-link').first();
+  await dot.scrollIntoViewIfNeeded();
+  await dot.click();
+  const pop = page.locator('.glossary-popover');
+  await expect(pop).toBeVisible();
+  await expect(pop.locator('a', { hasText: 'Open' })).toHaveAttribute('target', '_blank');
+  await expect(page).toHaveURL(/\/periods/);
+  const [tab] = await Promise.all([context.waitForEvent('page'), dot.click()]);
+  await expect(tab).toHaveURL(/\/artworks\//, { timeout: 15_000 });
+  await expect(page).toHaveURL(/\/periods/);                               // no navigation here
+  // the preview itself opens it too — on another work's dot that is on top at its centre (works of one year overlap)
+  const other = await page.$$eval('.tl-dot-link', (as) => as.findIndex((a, i) => {
+    if (i === 0 || a.getAttribute('href') === as[0].getAttribute('href')) return false;
+    const r = a.getBoundingClientRect();
+    const hit = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
+    return !!hit && a.contains(hit);
+  }));
+  expect(other).toBeGreaterThan(0);
+  await page.locator('.tl-dot-link').nth(other).click();
+  await expect(pop).toBeVisible();
+  const [tab2] = await Promise.all([context.waitForEvent('page'), pop.locator('.glossary-popover-head').click()]);
+  await expect(tab2).toHaveURL(/\/artworks\//, { timeout: 15_000 });
+  await expect(page).toHaveURL(/\/periods/);
+});
+
 test('provenance records (API 104): the inventories under a step, the doubts tagged, more than three folded', async ({ page }) => {
   const rec = (date: string, number: string | null, extra: Record<string, unknown> = {}) => ({ kind: 'inventory', date: { label: date, from: `${date}-01-01`, to: `${date}-12-31` },
     place: { slug: 'madrid', name: 'Madrid' }, room: null, number, number_certainty: 'attested', document: 'royal inventory', certainty: 'attested', note: null, ...extra });

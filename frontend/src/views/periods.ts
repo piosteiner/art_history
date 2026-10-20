@@ -3,10 +3,11 @@
 // fading out, drafts not yet reviewed outlined. The collection's works are dots on the bars — in the lane of the region
 // where they were made (else Europe as a whole, else the period's first lane) —, hollow and red when dated outside the
 // bar's span (an outlier, listed below the timeline). A bar or a dragged window lists the works of those years.
-import { getPeriods } from '../api';
+import { getPeriods, getPreviews } from '../api';
 import { href, html, render } from '../html';
 import { replaceUrl } from '../router';
 import { renderTimeline, type TimelineRow, type YearWindow } from '../timeline';
+import { entryPreview, openFor, show } from '../glossary';
 import type { DateRange, Period, Periods, PeriodWork } from '../types';
 import { guard, showError } from './common';
 
@@ -69,6 +70,36 @@ function outliers(data: Periods) {
     }
   }
   return out.sort((a, b) => a.p.name.localeCompare(b.p.name) || (yearsOf(a.w.created)?.[0] ?? 0) - (yearsOf(b.w.created)?.[0] ?? 0));
+}
+
+/**
+ * A work's dot clicked: its preview (as on every link to an entry); clicked again — the dot or the preview — the work
+ * opens in a new tab, and the periods stay where they are.
+ */
+function workDot(href: string, el: Element) {
+  const openTab = () => window.open(href, '_blank', 'noopener');
+  if (openFor() === el) return openTab();
+  const slug = href.split('/').filter(Boolean).pop()!;
+  const label = el.querySelector('title')?.textContent ?? slug;
+  const fallback = html`<div class="popover-text"><div class="glossary-popover-head"><strong>${label}</strong></div><a href="${href}">Open →</a></div>`;
+  const open = (content: typeof fallback, kind: string) => {
+    show(el as HTMLElement, content, kind);
+    const pop = document.getElementById('text-popover');
+    if (!pop) return;
+    pop.classList.add('popover-clickable');
+    pop.title = 'Click to open in a new tab';
+    pop.querySelectorAll('a').forEach((a) => { a.target = '_blank'; a.rel = 'noopener'; });
+    pop.addEventListener('click', (e) => {
+      if ((e.target as Element).closest('a')) return; // its own link opens the new tab
+      openTab();
+    });
+  };
+  getPreviews([`artwork/${slug}`])
+    .then((data) => {
+      const hint = data[`artwork/${slug}`];
+      open(hint ? entryPreview(hint, href) : fallback, hint?.image_url ? 'entry has-image' : 'entry');
+    })
+    .catch(() => open(fallback, 'entry'));
 }
 
 export function periodsPage(main: HTMLElement, params: URLSearchParams) {
@@ -164,7 +195,7 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
     }
 
     box.innerHTML = '';
-    const timeline = renderTimeline(box, rows(), { keepOrder: true, initialWindow: windowSel, onWindow: showWindow });
+    const timeline = renderTimeline(box, rows(), { keepOrder: true, initialWindow: windowSel, onWindow: showWindow, onDot: workDot });
     if (windowSel) showWindow(windowSel);
   }).catch((err) => { if (current()) showError(box, err); });
 }

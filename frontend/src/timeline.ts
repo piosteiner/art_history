@@ -30,6 +30,8 @@ export type YearWindow = { from: number; to: number };
 export interface TimelineOptions {
   /** Called with whole years (inclusive) when a window is selected, or null when it is cleared. */
   onWindow?: (window: YearWindow | null) => void;
+  /** A click on a work's dot (TimelineRow.dots), instead of following its link; `el` is the dot's link. */
+  onDot?: (href: string, el: Element) => void;
   /** Window to start with (e.g. from the URL); not reported through onWindow. */
   initialWindow?: YearWindow | null;
   /** Zoom/pan to start with, e.g. kept from before the rows changed; reported through onView. */
@@ -202,7 +204,7 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
         </rect>`);
       for (const d of s.dots ?? []) {
         if (d.year < v0 || d.year > v1) continue;
-        bars.push(`<a href="${escape(d.href)}"><circle class="tl-dot${d.outlier ? ' tl-dot-out' : ''}" cx="${x(d.year + 0.5)}" cy="${s.y + 11}" r="${d.outlier ? 4 : 3.5}"><title>${escape(d.label)}</title></circle></a>`);
+        bars.push(`<a href="${escape(d.href)}" class="tl-dot-link"><circle class="tl-dot${d.outlier ? ' tl-dot-out' : ''}" cx="${x(d.year + 0.5)}" cy="${s.y + 11}" r="${d.outlier ? 4 : 3.5}"><title>${escape(d.label)}</title></circle></a>`);
       }
     });
 
@@ -226,9 +228,20 @@ export function renderTimeline(container: HTMLElement, rows: TimelineRow[], opts
     container.querySelector<HTMLButtonElement>('[data-zoom="in"]')!.disabled = v1 - v0 <= MIN_SPAN + 0.01;
   }
 
+  // a work's dot: onDot instead of following the link (Ctrl/Cmd/middle click still open it in a new tab)
+  svg.addEventListener('click', (e) => {
+    const a = (e.target as Element).closest<SVGAElement>('.tl-dot-link');
+    if (!a || !opts.onDot || e.ctrlKey || e.metaKey || e.shiftKey || e.button !== 0) return;
+    e.preventDefault();
+    e.stopPropagation();
+    opts.onDot(a.getAttribute('href')!, a);
+  });
+
   // ---- pointer: drag the axis to pan, drag across the bars to pick a window, click a bar for its span ----
   svg.addEventListener('pointerdown', (e) => {
     if (e.button !== 0) return;
+    if ((e.target as Element).closest('.tl-dot-link')) return; // a work's dot: its own click (onDot), no drag
+
     const rect = svg.getBoundingClientRect();
     const px = (ev: PointerEvent) => ev.clientX - rect.left;
     const startPx = px(e);
