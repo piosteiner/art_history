@@ -1,5 +1,6 @@
 // Pages (migration 114): a text page written in the CMS — Obsidian's Markdown, images uploaded by name and embedded as
 // ![[name]], published to the API (HTML + table of contents, images served by name), revisions in its history.
+const sharp = require('sharp');
 const { test, expect, sql, API } = require('./helpers');
 
 const PNG = Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z8BQDwAEhQGAhKmMIQAAAABJRU5ErkJggg==', 'base64');
@@ -17,9 +18,12 @@ test('a page: Obsidian Markdown, images by name, published to the API, its histo
   await Promise.all([userA.waitForURL(/\/pages\/test-doc\/edit/), userA.click('button:has-text("+ New page")')]);
   await expect(userA.locator('.md-editor .cm-content')).toBeVisible();
 
-  // images: several at once, under their own names
-  await userA.setInputFiles('#pg-files', [{ name: 'Facharbeit-1.png', mimeType: 'image/png', buffer: PNG }, { name: 'Bild 2.png', mimeType: 'image/png', buffer: PNG }]);
+  // images: several at once, under their own names — stored as WebP (115), a large one at most 1600 px on its longest side
+  const big = await sharp({ create: { width: 3000, height: 2000, channels: 3, background: '#88a' } }).png().toBuffer();
+  await userA.setInputFiles('#pg-files', [{ name: 'Facharbeit-1.png', mimeType: 'image/png', buffer: big }, { name: 'Bild 2.png', mimeType: 'image/png', buffer: PNG }]);
   await expect(userA.locator('[data-image-upload-status]')).toContainText('2 of 2 uploaded');
+  await expect(userA.locator('[data-image-list] li', { hasText: 'Facharbeit-1.png' })).toContainText('WebP (was');
+  await expect(userA.locator('[data-image-list] li', { hasText: 'Facharbeit-1.png' })).toContainText('1600 × 1067');
   await expect(userA.locator('[data-image-list] code', { hasText: 'Facharbeit-1.png' })).toBeVisible();
   // a file the page can't take: refused with a reason
   const refused = await userA.evaluate(async () => (await fetch('/pages/test-doc/images?name=x.svg', { method: 'POST', body: '<svg/>' })).status);
@@ -42,7 +46,7 @@ test('a page: Obsidian Markdown, images by name, published to the API, its histo
   // the API: HTML with the images at its own address, the marks, tasks, ids; the table of contents
   const page = await (await get(request, '/pages/test-doc')).json();
   expect(page).toMatchObject({ slug: 'test-doc', title: 'Test Doc', lang: 'de-CH' });
-  expect(page.html).toMatch(/<img src="http:\/\/api\.localhost[^"]*\/v1\/pages\/test-doc\/images\/Facharbeit-1\.png"/);
+  expect(page.html).toMatch(/<img src="http:\/\/api\.localhost[^"]*\/v1\/pages\/test-doc\/images\/Facharbeit-1\.png" alt="" loading="lazy" width="1600" height="1067"/);
   expect(page.html).toContain('<span class="page-caption">Eine Bildunterschrift</span>');
   expect(page.html).toContain('<mark>Markierung</mark>');
   expect(page.html).toContain('<span style="color:rgb(255, 0, 0)">rot</span>');
@@ -52,8 +56,9 @@ test('a page: Obsidian Markdown, images by name, published to the API, its histo
   // the image, by name; revalidated by its hash
   const img = await get(request, '/pages/test-doc/images/Facharbeit-1.png');
   expect(img.status()).toBe(200);
-  expect(img.headers()['content-type']).toBe('image/png');
-  expect(Buffer.compare(await img.body(), PNG)).toBe(0);
+  // the name stays as embedded; the image is WebP now, scaled down
+  expect(img.headers()['content-type']).toBe('image/webp');
+  expect(await sharp(await img.body()).metadata()).toMatchObject({ format: 'webp', width: 1600, height: 1067 });
   expect((await get(request, '/pages/test-doc/images/Facharbeit-1.png', { 'If-None-Match': img.headers().etag })).status()).toBe(304);
 
   // deleted: the embed shows as missing; the text stays

@@ -36,7 +36,11 @@ md.renderer.rules.embed_image = (tokens, i, opts, env) => {
   const known = env.known ? env.known.has(name) : true;
   if (!known) return `<span class="page-image-missing" title="Image not uploaded yet">${md.utils.escapeHtml(name)}</span>`;
   const src = `${env.imageBase}${encodeURIComponent(name)}`;
-  const img = `<img src="${md.utils.escapeHtml(src)}" alt="${md.utils.escapeHtml(caption || '')}" loading="lazy"${width ? ` width="${width}"` : ''}>`;
+  // its size (115), so the space is kept before it loads; a width asked for scales the height with it
+  const dim = env.dims && env.dims.get(name);
+  const w = width || (dim && dim.width);
+  const h = dim && w ? Math.round((dim.height * w) / dim.width) : null;
+  const img = `<img src="${md.utils.escapeHtml(src)}" alt="${md.utils.escapeHtml(caption || '')}" loading="lazy"${w ? ` width="${w}"` : ''}${h ? ` height="${h}"` : ''}>`;
   return caption ? `<span class="page-figure">${img}<span class="page-caption">${md.utils.escapeHtml(caption)}</span></span>` : img;
 };
 
@@ -97,7 +101,7 @@ const SANITIZE = {
   allowedTags: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'br', 'hr', 'em', 'strong', 'b', 'i', 'u', 's', 'del', 'mark', 'code', 'pre',
     'blockquote', 'ul', 'ol', 'li', 'a', 'img', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'sup', 'sub', 'span', 'ruby', 'rt', 'rp', 'kbd'],
   allowedAttributes: {
-    a: ['href', 'title'], img: ['src', 'alt', 'width', 'loading', 'title'], span: ['class', 'style', 'title', 'aria-label'],
+    a: ['href', 'title'], img: ['src', 'alt', 'width', 'height', 'loading', 'title'], span: ['class', 'style', 'title', 'aria-label'],
     li: ['class'], th: ['style'], td: ['style'], ol: ['start'],
     h1: ['id'], h2: ['id'], h3: ['id'], h4: ['id'], h5: ['id'], h6: ['id'], code: ['class'],
   },
@@ -110,10 +114,11 @@ SANITIZE.allowedAttributes.a.push('rel', 'target');
 
 /**
  * Markdown → { html, toc, images }. imageBase: the address the page's images are served under ("…/v1/pages/<slug>/images/");
- * known: the names uploaded (a Set) — an embed of another name shows as a marked file name; images: every name embedded.
+ * known: the names uploaded (a Set) — an embed of another name shows as a marked file name; dims: name → {width, height}
+ * (115); images: every name embedded.
  */
-function renderPage(markdown, { imageBase, known = null } = {}) {
-  const env = { toc: [], images: new Set(), imageBase, known };
+function renderPage(markdown, { imageBase, known = null, dims = null } = {}) {
+  const env = { toc: [], images: new Set(), imageBase, known, dims };
   const raw = md.render(String(markdown || ''), env);
   const html = sanitizeHtml(raw, SANITIZE);
   return { html, toc: env.toc, images: [...env.images] };

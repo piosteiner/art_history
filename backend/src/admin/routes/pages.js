@@ -5,6 +5,7 @@
 // embeds when its attachments are uploaded under their own names. Mounted by src/admin/index.js before the entry pages.
 const express = require('express');
 const crypto = require('crypto');
+const sharp = require('sharp');
 const { adminPool } = require('../../db');
 const { html } = require('../html');
 const { send, withTx, notFoundPage, friendly, history, historyTable } = require('../core');
@@ -19,9 +20,29 @@ const TYPES = { webp: 'image/webp', png: 'image/png', jpg: 'image/jpeg', jpeg: '
 const kb = (n) => (n >= 1048576 ? `${(n / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(n / 1024))} KB`);
 const slugOk = (s) => /^[a-z0-9]+(-[a-z0-9]+)*$/.test(s);
 
+// Every upload becomes WebP (migration 115; settings as the adenai map's media library): the camera's rotation applied
+// (rotate()), other metadata dropped, the longest side at most 1600 px, quality 82; an animated GIF stays animated.
+// An upload that is already a small enough WebP is kept as it was when converting would not make it smaller.
+const MAX_SIDE = 1600;
+const WEBP_QUALITY = 82;
+async function toWebp(input) {
+  const meta = await sharp(input, { animated: true }).metadata();
+  const animated = (meta.pages || 1) > 1;
+  const { data, info } = await sharp(input, { animated })
+    .rotate()
+    .resize(MAX_SIDE, MAX_SIDE, { fit: 'inside', withoutEnlargement: true })
+    .webp({ quality: WEBP_QUALITY, effort: 5 })
+    .toBuffer({ resolveWithObject: true });
+  const height = animated ? info.pageHeight || info.height : info.height;
+  if (meta.format === 'webp' && !animated && input.length <= data.length && Math.max(meta.width, meta.height) <= MAX_SIDE) {
+    return { bytes: input, width: meta.width, height: meta.height };
+  }
+  return { bytes: data, width: info.width, height };
+}
+
 const bySlug = async (slug) => (await adminPool.query('SELECT * FROM pages WHERE slug = $1', [slug])).rows[0] || null;
 const imagesOf = async (pageId) => (await adminPool.query(
-  'SELECT id, name, content_type, octet_length(bytes) AS size, created_at FROM page_images WHERE page_id = $1 ORDER BY name', [pageId])).rows;
+  'SELECT id, name, content_type, octet_length(bytes) AS size, original_bytes, width, height, created_at FROM page_images WHERE page_id = $1 ORDER BY name', [pageId])).rows;
 
 router.get('/pages', async (req, res) => {
   const { rows } = await adminPool.query(`SELECT p.*, length(p.body_md) AS chars, (SELECT count(*)::int FROM page_images i WHERE i.page_id = p.id) AS images
@@ -77,7 +98,8 @@ function editPage(p, images, { flash = null, values = null } = {}) {
     <section class="page-images">
       <h2>Images <span class="muted small">${String(images.length)}</span></h2>
       <p class="muted small">Upload the attachments of the note under their own names (Obsidian: the files in its attachments folder) and every
-        <code>![[…]]</code> finds its image. WebP, PNG, JPEG, GIF or AVIF, up to 10 MB each. Uploading a file of the same name replaces the image.</p>
+        <code>![[…]]</code> finds its image. WebP, PNG, JPEG, GIF or AVIF, up to 10 MB each — stored as WebP, at most 1600 px on the longest side (the name stays, so the embeds
+        keep working). Uploading a file of the same name replaces the image.</p>
       <div class="field"><label for="pg-files">Upload images</label>
         <input id="pg-files" type="file" multiple accept="image/webp,image/png,image/jpeg,image/gif,image/avif" data-image-upload="/pages/${p.slug}/images">
         <p class="muted small" data-image-upload-status aria-live="polite"></p></div>
@@ -85,7 +107,7 @@ function editPage(p, images, { flash = null, values = null } = {}) {
         ${missing.map((n, i) => html`${i ? ', ' : ''}<code>${n}</code>`)}</div>` : ''}
       <ul class="page-image-list" data-image-list>${images.map((i) => html`<li data-image-id="${String(i.id)}">
         <img src="/pages/${p.slug}/images/${encodeURIComponent(i.name)}" alt="" loading="lazy">
-        <code>${i.name}</code> <span class="muted small">${kb(Number(i.size))}${unused.includes(i) ? ' · not embedded' : ''}</span>
+        <code>${i.name}</code> <span class="muted small">${kb(Number(i.size))}${i.original_bytes ? ` WebP (was ${kb(i.original_bytes)})` : ''}${i.width ? ` · ${i.width} × ${i.height}` : ''}${unused.includes(i) ? ' · not embedded' : ''}</span>
         <button type="button" class="link-button" data-copy="![[${i.name}]]">copy embed</button>
         <button type="button" class="link-button danger" data-image-delete="/pages/${p.slug}/images/${String(i.id)}/delete">delete</button></li>`)}</ul>
     </section>` };
@@ -124,8 +146,9 @@ router.post('/pages/:slug', async (req, res) => {
 router.post('/pages/:slug/preview', async (req, res) => {
   const p = await bySlug(req.params.slug);
   if (!p) return res.status(404).end();
-  const known = new Set((await imagesOf(p.id)).map((i) => i.name));
-  res.type('html').send(renderPage(String(req.body.text || '').slice(0, 2000000), { imageBase: `/pages/${p.slug}/images/`, known }).html);
+  const imgs = await imagesOf(p.id);
+  res.type('html').send(renderPage(String(req.body.text || '').slice(0, 2000000), { imageBase: `/pages/${p.slug}/images/`,
+    known: new Set(imgs.map((i) => i.name)), dims: new Map(imgs.filter((i) => i.width).map((i) => [i.name, i])) }).html);
 });
 
 // Upload one image: the file as the body, its name in ?name= (editor/uploads.js). Same name → replaced.
@@ -137,17 +160,26 @@ router.post('/pages/:slug/images', express.raw({ type: () => true, limit: '10mb'
   const type = ext && TYPES[ext.toLowerCase()];
   if (!IMAGE_NAME.test(name) || !type) return res.status(422).json({ error: `“${name}”: a WebP, PNG, JPEG, GIF or AVIF file with a plain name (letters, digits, spaces, . _ -)` });
   if (!Buffer.isBuffer(req.body) || !req.body.length) return res.status(422).json({ error: 'empty file' });
-  const sha256 = crypto.createHash('sha256').update(req.body).digest('hex');
+  let image;
   try {
-    await withTx(req.user, (db) => db.query(`INSERT INTO page_images (page_id, name, content_type, bytes, sha256) VALUES ($1, $2, $3, $4, $5)
-      ON CONFLICT (page_id, name) DO UPDATE SET content_type = EXCLUDED.content_type, bytes = EXCLUDED.bytes, sha256 = EXCLUDED.sha256, created_at = now()`,
-    [p.id, name, type, req.body, sha256]));
+    image = await toWebp(req.body);
+  } catch {
+    return res.status(422).json({ error: `“${name}” could not be read as an image` });
+  }
+  const sha256 = crypto.createHash('sha256').update(image.bytes).digest('hex');
+  try {
+    await withTx(req.user, (db) => db.query(`INSERT INTO page_images (page_id, name, content_type, bytes, sha256, width, height, original_bytes)
+      VALUES ($1, $2, 'image/webp', $3, $4, $5, $6, $7)
+      ON CONFLICT (page_id, name) DO UPDATE SET content_type = EXCLUDED.content_type, bytes = EXCLUDED.bytes, sha256 = EXCLUDED.sha256,
+        width = EXCLUDED.width, height = EXCLUDED.height, original_bytes = EXCLUDED.original_bytes, created_at = now()`,
+    [p.id, name, image.bytes, sha256, image.width, image.height, req.body.length]));
   } catch (err) {
     return res.status(422).json({ error: friendly(err) });
   }
   const { rows: [img] } = await adminPool.query('SELECT id FROM page_images WHERE page_id = $1 AND name = $2', [p.id, name]);
-  res.status(201).json({ id: Number(img.id), name, size: req.body.length, size_label: kb(req.body.length), url: `/pages/${p.slug}/images/${encodeURIComponent(name)}`,
-    embed: `![[${name}]]`, delete: `/pages/${p.slug}/images/${img.id}/delete` });
+  res.status(201).json({ id: Number(img.id), name, size: image.bytes.length, original_size: req.body.length, width: image.width, height: image.height,
+    size_label: `${kb(image.bytes.length)} WebP (was ${kb(req.body.length)}) · ${image.width} × ${image.height}`,
+    url: `/pages/${p.slug}/images/${encodeURIComponent(name)}`, embed: `![[${name}]]`, delete: `/pages/${p.slug}/images/${img.id}/delete` });
 });
 
 router.get('/pages/:slug/images/:name', async (req, res) => {

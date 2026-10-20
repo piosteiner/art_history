@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Page images converted to WebP on upload (migration 115)
+- **What:** dependency `sharp` (0.35.5, as the adenai map); every page image upload becomes WebP — quality 82, longest
+  side ≤ 1600 px, EXIF rotation applied, other metadata dropped, animated GIFs stay animated, an already smaller WebP kept;
+  the name stays as embedded. Columns `page_images.width`, `height`, `original_bytes`; the site's `<img>` gets width/height.
+- **Why:** owner: save as much storage as possible with the documentation's images.
+- **Revert:** revert the commit (uploads stored as sent again); `ALTER TABLE page_images DROP COLUMN width, DROP COLUMN height,
+  DROP COLUMN original_bytes;` delete `115_page_image_sizes.sql` from `schema_migrations`.
+
 ### Pages: the project documentation on the site (migration 114)
 - **What:** tables `pages` (audited) and `page_images` (bytea); `src/pages.js` renders Obsidian Markdown (`![[image]]`,
   `==mark==`, task lists, tables, coloured spans, ruby) behind a sanitize-html allowlist; API `/v1/pages/<slug>` and its

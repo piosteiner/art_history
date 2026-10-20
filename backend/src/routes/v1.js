@@ -138,11 +138,13 @@ router.get('/search/suggest', async (req, res) => {
 // their sha256 (a re-uploaded image of the same name shows at once).
 router.get('/pages/:slug', async (req, res) => {
   const { rows: [p] } = await apiPool.query(`SELECT id, slug, title, lang, body_md, updated_at,
-      (SELECT array_agg(name) FROM page_images i WHERE i.page_id = p.id) AS images
+      (SELECT jsonb_agg(jsonb_build_object('name', name, 'width', width, 'height', height)) FROM page_images i WHERE i.page_id = p.id) AS images
     FROM pages p WHERE slug = $1 AND published`, [req.params.slug]);
   if (!p) throw notFound(`no page "${req.params.slug}"`);
   const base = `${req.protocol}://${req.get('host')}${req.baseUrl}/pages/${p.slug}/images/`;
-  const { html, toc } = renderPage(p.body_md, { imageBase: base, known: new Set(p.images || []) });
+  const imgs = p.images || [];
+  const { html, toc } = renderPage(p.body_md, { imageBase: base, known: new Set(imgs.map((i) => i.name)),
+    dims: new Map(imgs.filter((i) => i.width).map((i) => [i.name, i])) });
   res.json({ slug: p.slug, title: p.title, lang: p.lang, html, toc, updated_at: p.updated_at });
 });
 router.get('/pages/:slug/images/:name', async (req, res) => {

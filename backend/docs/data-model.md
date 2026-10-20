@@ -633,5 +633,5 @@ b-tree; refreshed by `refresh_quality()`; read from `dup_facts`, as `entity_inde
 (page_id, name — as embedded, `![[name]]` —, content_type, bytes `bytea` ≤ 10 MB, sha256; not audited; WebP, PNG, JPEG,
 GIF, AVIF — no SVG). Rendered by `src/pages.js` (markdown-it with HTML on + sanitize-html allowlist; Obsidian's
 `![[image|width or caption]]`, `==mark==`, `- [x]`). Images live in the database so the nightly dump, its restore check
-and the encrypted off-site copy include them.
+and the encrypted off-site copy include them. Since 115 every upload is converted to WebP (sharp: quality 82, ≤ 1600 px, EXIF rotation, metadata dropped); `width`, `height`, `original_bytes`.
 
