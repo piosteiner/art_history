@@ -822,3 +822,16 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .doc-crumb { margin-bottom: .2rem; }
 @media (max-width: 900px) { .doc-layout.has-toc { grid-template-columns: 1fr; } .doc-layout.has-toc .doc-toc { order: 0; position: static; max-height: none; } }
 .doc-page .doc-body { hyphens: auto; }
+
+/* the editor's extra forms in every text (API: src/md-extras.js) — tasks, spoilers, callout boxes */
+li.task { list-style: none; margin-left: -1.2rem; }
+.task-box { display: inline-block; width: 1.2rem; }
+.spoiler { background: var(--text); color: transparent; border-radius: 3px; cursor: pointer; transition: background .15s, color .15s; }
+.spoiler:hover, .spoiler:focus { background: var(--surface); color: inherit; outline: 1px dashed var(--line); }
+.callout { border-left: 4px solid var(--accent); background: var(--surface); padding: .45rem .9rem; margin: 1rem 0; border-radius: 0 6px 6px 0; }
+.callout > :last-child { margin-bottom: .2rem; }
+.callout-title { font-weight: 700; margin: .2rem 0 .3rem; }
+.callout-warning, .callout-important { border-left-color: #d9822b; }
+.callout-tip, .callout-example { border-left-color: #2f8a55; }
+.callout-quote { border-left-color: var(--muted); font-style: italic; }
+.callout-question, .callout-todo { border-left-color: #7a5fb0; }
