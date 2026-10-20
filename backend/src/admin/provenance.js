@@ -15,7 +15,7 @@ const { stepList } = require('./provenance-records');
 class ProvenanceError extends Error {}
 
 const METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange', 'transfer',
-  'confiscation', 'theft', 'forced_sale', 'restitution', 'settlement', 'claim', 'dissolution', 'find', 'partage', 'spoils_of_war', 'in_lieu', 'unknown'];
+  'confiscation', 'theft', 'forced_sale', 'forced_gift', 'restitution', 'settlement', 'claim', 'dissolution', 'find', 'partage', 'spoils_of_war', 'in_lieu', 'unknown'];
 const CERTAINTY = ['attested', 'probable', 'possible', 'disputed'];
 const ROLES = ['owner', 'dealer', 'estate', 'publisher', 'agent', 'custodian', 'foundry', 'trustee', 'possessor', 'event'];
 const ROLE_TEXT = { owner: 'owner', dealer: 'dealer', agent: 'agent — on consignment, auction: held, not owned', estate: 'estate of the owner',
@@ -52,12 +52,12 @@ function priceOf(text) {
 // 18000 USD (ca.) — for the page
 const priceText = (s) => (s.price === null || s.price === undefined ? ''
   : `${Number(s.price).toLocaleString('en', { maximumFractionDigits: 2 })} ${s.price_currency}${s.price_note ? ` (${s.price_note})` : ''}`);
-const METHOD_WORDS = { forced_sale: 'forced sale', spoils_of_war: 'spoils of war', in_lieu: 'in lieu of tax', partage: 'partage of finds' };
+const METHOD_WORDS = { forced_sale: 'forced sale', forced_gift: 'forced gift', spoils_of_war: 'spoils of war', in_lieu: 'in lieu of tax', partage: 'partage of finds' };
 const methodLabel = (m) => METHOD_WORDS[m] || m;
 const METHOD_OPTION = { settlement: 'settlement — an agreement with claimants (073)', transfer: 'transfer — Übertragung, Übernahme (to a foundation …)',
   theft: 'theft — stolen (a possessor step: the owner keeps the title; its end = recovered)', claim: 'claim — raised (an event)',
   dissolution: 'dissolution — a collection dissolved, a firm wound up (an event)',
-  find: 'find — found or dug up: a chance find, an excavation (120)', partage: 'partage — the division of excavation finds (120)',
+  forced_gift: 'forced gift — given under duress, no price (121)', find: 'find — found or dug up: a chance find, an excavation (120)', partage: 'partage — the division of excavation finds (120)',
   spoils_of_war: 'spoils of war — taken in war, or a war contribution under a treaty (120)', in_lieu: 'in lieu — accepted in payment of a tax: dation (120)' };
 const END_BASIS = {
   recorded: null,

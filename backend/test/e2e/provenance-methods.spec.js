@@ -19,7 +19,7 @@ test('the new methods: offered in the step form, saved, shown by the API; prices
   const step = sql(`SELECT id FROM provenance WHERE artwork_id = ${W} AND position = 1`);
   await userA.goto(`/provenance/${step}/edit`);
   const options = await userA.locator('#pv-method option').evaluateAll((os) => os.map((o) => o.value));
-  expect(options).toEqual(expect.arrayContaining(['find', 'partage', 'spoils_of_war', 'in_lieu']));
+  expect(options).toEqual(expect.arrayContaining(['find', 'partage', 'spoils_of_war', 'in_lieu', 'forced_gift']));
   await userA.selectOption('#pv-method', 'partage');
   await Promise.all([userA.waitForNavigation(), userA.click('form.provenance-form .actions button')]);
   expect(sql(`SELECT method FROM provenance WHERE id = ${step}`)).toBe('partage');

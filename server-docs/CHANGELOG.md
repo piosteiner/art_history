@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Provenance: a gift under duress (migration 121)
+- **What:** `acquisition_method` value `forced_gift` — given under duress, no price (Raphael's Marriage of the Virgin:
+  Città di Castello "practically forced" to give it to General Lechi, 1798); in the step form, import, API, site ("forced
+  gift", counted as taken). E2E `provenance-methods.spec.js`.
+- **Why:** the Brera provenances; owner: create the options a provenance needs.
+- **Revert:** leave the value unused (enum values can't be dropped); delete `121_forced_gift.sql` from `schema_migrations`.
+
 ### Provenance: four acquisition methods and five historical currencies (migration 120)
 - **What:** `acquisition_method` gets `find` (found or excavated), `partage` (division of excavation finds — the
   Louvre's "partage après fouilles"), `spoils_of_war` (taken in war, a war contribution under a treaty — the Louvre's
