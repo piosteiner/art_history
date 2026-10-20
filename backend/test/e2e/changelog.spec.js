@@ -3,6 +3,12 @@
 const { test, expect, sql, API, BASE } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
+// the bullets' field is a Markdown editor (CodeMirror): replace its whole text as typed
+async function typeItems(page, text) {
+  await page.locator('.changelog-form .cm-content').click();
+  await page.keyboard.press('ControlOrMeta+A');
+  await page.keyboard.insertText(text);
+}
 const today = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Zurich' }).format(new Date());
 test.afterEach(() => sql('DELETE FROM changelog_entries; DELETE FROM roadmap_items; DELETE FROM form_drafts'));
 
@@ -11,17 +17,27 @@ test('changelog: an entry with kinds, a draft until published, in the API and th
   await userA.click('a:has-text("+ New entry")');
   await userA.fill('#cl-day', '2026-10-19');
   await userA.fill('#cl-title', 'Patch: Suche');
-  await userA.fill('#cl-items', 'Neu: Suche über Sprachen hinweg mit [[artist/paul-gauguin|Gauguin]]\nbehoben: Treffer öffnen beim Fund\n  auch in der Provenienz\nOhne Art');
+  await typeItems(userA, 'Neu: Suche über Sprachen hinweg mit [[artist/paul-gauguin|Gauguin]]\nbehoben: Treffer öffnen beim Fund\n  auch in der Provenienz\nOhne Art');
   await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Create")')]);
   await expect(userA).toHaveURL(/\/changelog\/\d+\/edit\?done=created/);
   await expect(userA.locator('#cl-items')).toHaveValue('Neu: Suche über Sprachen hinweg mit [[artist/paul-gauguin|Gauguin]]\nBehoben: Treffer öffnen beim Fund\n  auch in der Provenienz\nNeu: Ohne Art');
   await expect(userA.locator('.changelog-preview li')).toHaveCount(3);
   await expect(userA.locator('.changelog-preview a', { hasText: 'Gauguin' })).toBeVisible();
 
-  // a draft: not on the site
+  // a draft: not on the site, and the CMS says so — on the entry and in the list
   expect((await api(request, '/changelog')).total).toBe(0);
-  await userA.check('input[name=published]');
-  await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Save")')]);
+  await expect(userA.locator('.unpublished-entry')).toContainText('Saved, but not published');
+  await expect(userA.locator('.md-lang').first()).toHaveText('DE');                    // spell check: German recognised
+  await expect(userA.locator('.changelog-form .cm-content')).toHaveAttribute('lang', 'de');
+  await userA.goto('/changelog');
+  await expect(userA.locator('.unpublished-list')).toContainText('1 saved entry is not published');
+  await userA.locator('.unpublished-list a').click();
+  await Promise.all([userA.waitForNavigation(), userA.click('.unpublished-entry button:has-text("Publish now")')]);
+  await expect(userA.locator('.flash')).toContainText('the entry is on the site');
+  await expect(userA.locator('.unpublished-entry')).toHaveCount(0);
+  // the editor's preview shows the bullets as on the site
+  const preview = await userA.request.post(`${BASE}/changelog/preview`, { form: { text: 'Behoben: Ein Fehler' }, headers: { Origin: BASE } });
+  expect(await preview.text()).toMatch(/<span class="cl-kind cl-behoben">Behoben<\/span> Ein Fehler/);
   const data = await api(request, '/changelog');
   expect(data.total).toBe(1);
   expect(data.data[0]).toMatchObject({ day: '2026-10-19', title: 'Patch: Suche' });
@@ -78,8 +94,10 @@ test('roadmap: columns, order, done items written into today\'s changelog', asyn
 test('changelog: autosaved draft restored, edits in place in the history, a deleted entry restored with its bullets and id', async ({ userA }) => {
   await userA.goto('/changelog/new');
   await userA.fill('#cl-day', '2026-09-29');
-  await userA.fill('#cl-items', 'Neu: Markdown-Editor\nBehoben: Anmeldung');
+  await typeItems(userA, 'Neu: Markdown-Editor\nBehoben: Anmeldung');
   await expect(userA.locator('[data-form-draft-status]')).toContainText('Draft saved');
+  await userA.goto('/changelog');                                                    // the list names the unsaved draft
+  await expect(userA.locator('.unsaved-drafts')).toContainText('a new entry');
   await userA.goto('/changelog/new');                                                // the tab closed: nothing lost
   await expect(userA.locator('.form-draft')).toContainText('Restored your unsaved draft');
   await expect(userA.locator('#cl-items')).toHaveValue('Neu: Markdown-Editor\nBehoben: Anmeldung');
@@ -89,7 +107,7 @@ test('changelog: autosaved draft restored, edits in place in the history, a dele
   expect(sql("SELECT count(*) FROM form_drafts WHERE form_key = 'changelog/new'")).toBe('0');
 
   // one bullet changed: an update of that bullet, not all deleted and written anew
-  await userA.fill('#cl-items', 'Neu: Markdown-Editor mit Live-Formatierung\nBehoben: Anmeldung');
+  await typeItems(userA, 'Neu: Markdown-Editor mit Live-Formatierung\nBehoben: Anmeldung');
   await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Save")')]);
   expect(sql(`SELECT string_agg(action::text, ',' ORDER BY id) FROM audit_log WHERE table_name = 'changelog_items' AND (new_row->>'entry_id') = '${id}'
     AND txid = (SELECT max(txid) FROM audit_log WHERE table_name = 'changelog_items')`)).toBe('update');

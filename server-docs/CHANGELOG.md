@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Changelog: notices for unpublished entries and unsaved drafts; spell check language recognised
+- **What:** an unpublished entry's edit page says "Saved, but not published — not on the site" with "Publish now"
+  (`POST /changelog/<id>/publish`); the list names the saved-but-unpublished entries and this account's autosaved
+  drafts not saved yet ("Unsaved changes"); the roadmap board lists its unsaved drafts too. The bullets' field is now
+  the Markdown editor (as artworks' descriptions): spell check language recognised from the text (EN/DE, switch in
+  the toolbar), `[[` completion, and its preview shows the bullets as on the site (`POST /changelog/preview`).
+- **Why:** owner: a message when there are unpublished saves/changes; the automatic language detection for the spell check.
+- **Revert:** revert the commit.
+
 ### Changelog and roadmap: deleting needs a confirmation page
 - **What:** "Delete this entry…" / "Delete this item…" open a page of their own that shows what will be deleted
   (day, title, status, the bullets); only "Yes, delete" (`confirm=yes`) deletes — a POST without it redirects to that

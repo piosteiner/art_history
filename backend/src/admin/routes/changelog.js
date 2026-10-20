@@ -65,6 +65,17 @@ async function deleted(table) {
   return rows;
 }
 
+// this account's autosaved drafts not saved yet, with what they belong to
+async function myDrafts(user, kind) {
+  const { rows } = await adminPool.query(`SELECT split_part(d.form_key, '/', 2) AS id, d.saved_at,
+      CASE WHEN $2 = 'changelog' THEN (SELECT e.day::text FROM changelog_entries e WHERE e.id::text = split_part(d.form_key, '/', 2))
+           ELSE (SELECT r.title FROM roadmap_items r WHERE r.id::text = split_part(d.form_key, '/', 2)) END AS label
+    FROM form_drafts d WHERE d.user_id = $1 AND d.form_key LIKE $2 || '/%' ORDER BY d.saved_at DESC`, [user.id, kind]);
+  return rows.filter((d) => d.id === 'new' || d.label).map((d) => ({ ...d, label: kind === 'changelog' && d.label ? dayLabel(d.label) : d.label }));
+}
+const draftsNotice = (drafts, link) => (drafts.length ? html`<div class="flash warn unsaved-drafts"><b>Unsaved changes</b> (autosaved drafts, not saved yet):
+  ${drafts.map((d, i) => html`${i ? ', ' : ''}${link(d)} <span class="muted small">${when(d.saved_at)}</span>`)} — open to save or discard.</div>` : '');
+
 // ---------------------------------------------------------------------------------------------------------------
 // Changelog
 // ---------------------------------------------------------------------------------------------------------------
@@ -73,11 +84,14 @@ router.get('/changelog', async (req, res) => {
       (SELECT jsonb_object_agg(kind, n) FROM (SELECT kind, count(*) AS n FROM changelog_items i WHERE i.entry_id = e.id GROUP BY kind) k) AS kinds
     FROM changelog_entries e ORDER BY e.day DESC, e.id DESC`);
   const gone = await deleted('changelog_entries');
-  const drafts = rows.filter((r) => !r.published).length;
+  const unpublished = rows.filter((r) => !r.published);
+  const mine = await myDrafts(req.user, 'changelog');
   send(req, res, { title: 'Changelog', body: html`<h1>Changelog</h1>
     <p class="muted">What changed on the site, one entry per day or patch — in German, as the site shows it at
-      <a href="${SITE}/changelog" target="_blank" rel="noopener">/changelog ↗</a>. ${drafts ? html`<b>${String(drafts)} draft${drafts === 1 ? '' : 's'}</b> not on the site yet.` : ''}
-      <a href="/roadmap">Roadmap →</a></p>
+      <a href="${SITE}/changelog" target="_blank" rel="noopener">/changelog ↗</a>. <a href="/roadmap">Roadmap →</a></p>
+    ${draftsNotice(mine, (d) => (d.id === 'new' ? html`<a href="/changelog/new">a new entry</a>` : html`<a href="/changelog/${d.id}/edit">${d.label}</a>`))}
+    ${unpublished.length ? html`<div class="flash warn unpublished-list"><b>${String(unpublished.length)} saved entr${unpublished.length === 1 ? 'y is' : 'ies are'} not published</b>
+      — not on the site: ${unpublished.slice(0, 12).map((r, i) => html`${i ? ', ' : ''}<a href="/changelog/${String(r.id)}/edit">${dayLabel(r.day)}</a>`)}${unpublished.length > 12 ? ` and ${unpublished.length - 12} more` : ''}.</div>` : ''}
     <p class="actions"><a class="button" href="/changelog/new">+ New entry</a></p>
     ${rows.length ? html`<div class="table-wrap"><table><thead><tr><th>Day</th><th>Title</th><th>Bullets</th><th>Status</th></tr></thead><tbody>
       ${rows.map((r) => html`<tr><td><a href="/changelog/${String(r.id)}/edit">${dayLabel(r.day)}</a></td><td>${r.title || ''}</td>
@@ -91,14 +105,18 @@ router.get('/changelog', async (req, res) => {
 function entryForm(e, { action, items = '', flash = null, preview = null, isNew = false, draft = null, key, base = '', past = '' }) {
   return { title: isNew ? 'New changelog entry' : `Changelog ${dayLabel(e.day)}`, flash, body: html`<p class="muted"><a href="/changelog">← Changelog</a></p>
     <h1>${isNew ? 'New changelog entry' : dayLabel(e.day)}</h1>
+    ${!isNew && !e.savedPublished ? html`<div class="flash warn unpublished-entry"><b>Saved, but not published</b> — this entry is not on the site.
+      <button type="submit" form="cl-publish" class="link-button">Publish now</button></div>
+      <form id="cl-publish" method="post" action="/changelog/${String(e.id)}/publish"></form>` : ''}
     ${draftBanner(draft, key)}
     <form method="post" action="${action}" class="form changelog-form" data-form-draft="/drafts/${key}" data-form-draft-base="${base}">
       <div class="field-pair"><div class="field"><label for="cl-day">Day</label><input id="cl-day" name="day" type="date" value="${e.day}" required></div>
         <div class="field"><label for="cl-title">Title <span class="muted small">(optional)</span></label><input id="cl-title" name="title" value="${e.title || ''}" placeholder="e.g. Patch: Suche"></div></div>
       <div class="field"><label for="cl-items">Bullet points</label>
-        <textarea id="cl-items" name="items" rows="14" class="mono" spellcheck="true" lang="de">${items}</textarea>
+        <textarea id="cl-items" name="items" rows="14" class="md" data-preview="/changelog/preview">${items}</textarea>
         <div class="hint">One per line, starting with its kind: <code>Neu:</code> · <code>Verbessert:</code> · <code>Behoben:</code> · <code>Inhalt:</code> · <code>Technik:</code>
-          (none = Neu). A line indented by two spaces continues the bullet above. Markdown and <code>[[type/slug]]</code> links work.</div></div>
+          (none = Neu). A line indented by two spaces continues the bullet above. Markdown and <code>[[type/slug]]</code> links work;
+          the spell check follows the text's language (EN/DE in the toolbar).</div></div>
       <div class="field"><label class="choice"><input type="checkbox" name="published" value="1"${e.published ? ' checked' : ''}> Published</label></div>
       <div class="actions"><button>${isNew ? 'Create' : 'Save'}</button> ${draftStatus}</div>
     </form>
@@ -140,6 +158,12 @@ async function writeItems(db, entryId, items) {
 }
 
 const newForm = (e, opts) => entryForm(e, { action: '/changelog', isNew: true, key: 'changelog/new', ...opts });
+// the editor's preview (editor.js, data-preview): the bullets as the site shows them
+router.post('/changelog/preview', async (req, res) => {
+  const items = parseItems(req.body.text);
+  res.type('html').send(String(items.length ? html`<ul class="changelog-preview">${await previewOf(items)}</ul>` : html`<p class="muted">No bullet points yet.</p>`));
+});
+
 router.get('/changelog/new', async (req, res) => {
   const draft = await draftOf(req.user, 'changelog/new', '');
   const f = draft ? draft.fields : {};
@@ -184,7 +208,7 @@ router.get('/changelog/:id/edit', async (req, res) => {
   const key = `changelog/${e.id}`;
   const draft = await draftOf(req.user, key, e.base);
   const f = draft && draft.fields;
-  const shown = f ? { ...e, day: f.day || e.day, title: f.title, published: f.published === '1' } : e;
+  const shown = { ...(f ? { ...e, day: f.day || e.day, title: f.title, published: f.published === '1' } : e), savedPublished: e.published };
   send(req, res, entryForm(shown, { action: `/changelog/${e.id}`, items: f ? f.items || '' : itemsToText(e.items), key, base: e.base, draft,
     preview: e.items.length ? await previewOf(e.items) : null, past: pastSection(await entryHistory(e.id)) }));
 });
@@ -202,7 +226,7 @@ router.post('/changelog/:id', async (req, res) => {
       await dropDraft(db, req.user, key);
     });
   } catch (err) {
-    return send(req, res, { ...entryForm({ ...e, ...v }, { action: `/changelog/${e.id}`, items: req.body.items, key, base: e.base, flash: { kind: 'error', text: friendly(err) } }), status: 422 });
+    return send(req, res, { ...entryForm({ ...e, ...v, savedPublished: e.published }, { action: `/changelog/${e.id}`, items: req.body.items, key, base: e.base, flash: { kind: 'error', text: friendly(err) } }), status: 422 });
   }
   res.redirect(303, `/changelog/${e.id}/edit?done=saved`);
 });
@@ -214,6 +238,13 @@ const confirmPage = ({ title, what, action, back }) => ({ title, body: html`<p c
   <p>It can be restored from the history (“Recently deleted”), but it is gone from the site at once.</p>
   <form method="post" action="${action}" class="actions"><input type="hidden" name="confirm" value="yes">
     <button class="danger">Yes, delete</button> <a class="button" href="${back}">Cancel</a></form>` });
+
+router.post('/changelog/:id/publish', async (req, res) => {
+  const e = await entry(req.params.id);
+  if (!e) return notFoundPage(req, res);
+  await withTx(req.user, (db) => db.query('UPDATE changelog_entries SET published = true WHERE id = $1 AND NOT published', [e.id]));
+  res.redirect(303, `/changelog/${e.id}/edit?done=cl-published`);
+});
 
 router.get('/changelog/:id/delete', async (req, res) => {
   const e = await entry(req.params.id);
@@ -326,6 +357,7 @@ router.get('/roadmap', async (req, res) => {
     FROM roadmap_items r ORDER BY r.position, r.id`);
   const gone = await deleted('roadmap_items');
   const draft = await draftOf(req.user, 'roadmap/new', '');
+  const mine = (await myDrafts(req.user, 'roadmap')).filter((d) => d.id !== 'new');   // the new item's draft shows in its form
   const col = (status) => rows.filter((r) => r.status === status)
     .sort((a, b) => (status === 'erledigt' ? String(b.done_on).localeCompare(String(a.done_on)) : 0));
   const move = (r) => html`${Object.entries(STATUS).filter(([k]) => k !== r.status).map(([k, l]) => html`
@@ -334,6 +366,7 @@ router.get('/roadmap', async (req, res) => {
     <p class="muted">What is being worked on, what comes next, what later, and what is done — in German, as the site shows it at
       <a href="${SITE}/roadmap" target="_blank" rel="noopener">/roadmap ↗</a>. Drag within a column to order it. “✓ Erledigt” also
       writes the item into today's changelog entry. <a href="/changelog">Changelog →</a></p>
+    ${draftsNotice(mine, (d) => html`<a href="/roadmap/${d.id}/edit">${d.label}</a>`)}
     <div class="roadmap-board">
       ${Object.entries(STATUS).map(([status, label]) => html`<section class="roadmap-col roadmap-${status}">
         <h2>${label} <span class="muted small">${String(col(status).length)}</span></h2>

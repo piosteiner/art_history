@@ -35,6 +35,7 @@ const DONE = {
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
   'prov-confirmed': 'Marked as happened as planned — no more reminder.',
   'draft-discarded': 'Draft discarded.',
+  'cl-published': 'Published — the entry is on the site.',
   logged: 'Marked as done — and written into today\'s changelog entry (a draft until you publish it).',
 };
 
