@@ -315,6 +315,9 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
   artwork by its artist — then the API's similar names when nothing matched) as the list pages' cards (`card()` in
   `src/views/list.ts`, with a type label), type buttons with counts; the address follows the typing. Prerendered as
   `search/index.html` (noindex, robots `Disallow: /search`).
+- Search fields (API 110): what a list search finds besides the name comes from the API (`search_fields` per list
+  item, view `entry_search_fields` — the admin's lists search the same); `catalog.ts` `entries()` turns them into
+  `fields` (label, text, match, tier, shown) — define new searchable facts in the view, not here.
 - Large lists: pickers, list pages, the header search and `/search` load every entry of a type (`listAll` in `src/api.ts`: pages of
   500, the rest in parallel once `total` says there are more) and sort and search in the browser. When that gets slow
   they need a server-side `sort=` parameter (name, born, died, country, date, …) with paging, and search-as-you-type

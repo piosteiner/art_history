@@ -17,7 +17,12 @@ export interface Field {
   match?: string;
   /** Entries found only through this field come after the others, in this rank's section ("Now in the collection"). */
   tier?: { rank: number; heading: string };
+  /** On the card anyway (an artwork's artist and date …): a word found here is visible, not a hidden reason (API 110). */
+  shown?: boolean;
 }
+
+/** A search field as the API sends it with list items (API 110). */
+interface ApiSearchField { label: string; text: string; match?: string; shown?: boolean; tier?: { rank: number; heading: string } }
 
 export interface Entry<T = unknown> {
   type: EntityType;
@@ -97,11 +102,14 @@ export interface Match {
 }
 
 /** `shown`: other text already on screen for this entry (a list card shows more than name + meta). */
+/** What the fields the card shows anyway say (API 110: `shown`) — visible like the name. */
+const shownFields = (e: Entry) => e.fields.filter((f) => f.shown).map((f) => f.match ?? f.text).join(' ');
+
 export function explain(entry: Entry, query: string, shown = ''): Match {
   const words = queryWords(query);
-  const visible = fold(`${entry.name} ${entry.meta} ${shown}`);
+  const visible = fold(`${entry.name} ${entry.meta} ${shown} ${shownFields(entry)}`);
   const hidden = words.filter((w) => !visible.includes(w));
-  const reasons = entry.fields.filter((f) => hidden.some((w) => fold(f.match ?? f.text).includes(w)));
+  const reasons = entry.fields.filter((f) => !f.shown && hidden.some((w) => fold(f.match ?? f.text).includes(w)));
   const name = fold(entry.name);
   const q = words.join(' ');
   return {
@@ -122,10 +130,10 @@ export function explain(entry: Entry, query: string, shown = ''): Match {
 export function ordered<T>(hits: Entry<T>[], query: string, sort: string): { entry: Entry<T>; heading: string }[] {
   const words = queryWords(query);
   const tierOf = (e: Entry<T>) => {
-    const visible = fold(`${e.name} ${e.meta}`);
+    const visible = fold(`${e.name} ${e.meta} ${shownFields(e)}`);
     const hidden = words.filter((w) => !visible.includes(w));
     if (!hidden.length) return null;
-    const by = e.fields.filter((f) => hidden.some((w) => fold(f.match ?? f.text).includes(w)));
+    const by = e.fields.filter((f) => !f.shown && hidden.some((w) => fold(f.match ?? f.text).includes(w)));
     if (!by.length || by.some((f) => !f.tier)) return null;
     return by.map((f) => f.tier!).sort((a, b) => a.rank - b.rank)[0];
   };
@@ -172,10 +180,6 @@ export const PROVENANCE_CATEGORY_LABEL: Record<string, string> = {
   A: 'A · clarified', B: 'B · not fully clarified', C: 'C · indications', D: 'D · looted / seized', other: 'Not assessed',
 };
 
-/** Fields without text are dropped, so builders can list them unconditionally. */
-const fields = (...list: [string, string | null | undefined | false][]): Field[] =>
-  list.filter(([, t]) => t).map(([label, text]) => ({ label, text: text as string }));
-
 type Built<T> = Omit<Entry<T>, 'item' | 'search' | 'type' | 'lang'>;
 
 interface TypeCatalog<P extends Plural> {
@@ -195,8 +199,6 @@ const located = (e: { country: Country | null; polities: PolityLink[] }, rel: Po
   };
 };
 
-/** "Gogh, Vincent": the API's sort_key, when it says more than the name itself. */
-const filedAs = (x: { name: string; sort_key?: string }) => x.sort_key && x.sort_key !== x.name ? x.sort_key : null;
 
 const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
   artists: {
@@ -212,11 +214,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(a, 'nationality');
       return {
         slug: a.slug, name: a.name, meta: spanLabel(a.birth, a.death).replace(' – ', '–'),
-        fields: fields(
-          ['Filed as', filedAs(a)],
-          ['Born in', [a.birth_place?.name, countryText(a.country)].filter(Boolean).join(', ')],
-          ['Nationality', l.polities],
-        ),
+        fields: [],
         sorts: { name: byName(a.name), born: byYear(a.birth), died: byYear(a.death, 'to'), country: l.country, nationality: l.polity },
       };
     },
@@ -236,21 +234,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(a, 'created_in_polity');
       return {
         slug: a.slug, name: displayName(a).text, meta: [creatorNames(a), a.created?.label].filter(Boolean).join(', '),
-        fields: [
-          // type and materials are glossary terms: every name of them, any language, matches (API 071) — "Holzschnitt"
-          // finds the woodblock prints, "Leinwand" the paintings on canvas (also through the medium)
-          ...(a.kind ? [{ label: 'Type', text: a.kind, match: [a.kind, ...(a.term_names ?? [])].join(' ') }] : []),
-          ...((a.materials ?? []).length ? [{ label: 'Materials', text: (a.materials ?? []).join(', '), match: [...(a.materials ?? []), ...(a.term_names ?? [])].join(' ') }] : []),
-          ...(!a.kind && !(a.materials ?? []).length && (a.term_names ?? []).length ? [{ label: 'Medium', text: (a.term_names ?? [])[0], match: (a.term_names ?? []).join(' ') }] : []),
-          ...fields(
-          ['Made in', [a.country?.place?.name, countryText(a.country)].filter(Boolean).join(', ')],
-          ['State', l.polities],
-          ['Series', a.part_of ? `${a.part_of.title}${a.part_number ? ` (no. ${a.part_number})` : ''}` : null],
-        ),
-          // the museums that hold it now, then those that held it (API): "Prado" finds both, in that order
-          ...(a.holders?.now.length ? [{ label: 'Now in', text: a.holders.now.map((h) => h.name).join(', '), tier: { rank: 1, heading: 'Now in the collection' } }] : []),
-          ...(a.holders?.before.length ? [{ label: 'Formerly in', text: a.holders.before.map((h) => h.name).join(', '), tier: { rank: 2, heading: 'Formerly in the collection' } }] : []),
-        ],
+        fields: [],
         sorts: {
           // grouped under the series title, in number order (zero-padded so 3 comes before 21)
           series: a.part_of
@@ -270,7 +254,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       { id: 'kind', label: 'Kind' },
     ],
     build: (m) => ({
-      slug: m.slug, name: m.name, meta: m.period?.label ?? '', fields: fields(['Kind', m.kind]),
+      slug: m.slug, name: m.name, meta: m.period?.label ?? '', fields: [],
       sorts: { name: byName(m.name), start: byYear(m.period), kind: byText(m.kind, 'Other') },
     }),
   },
@@ -289,14 +273,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(p, 'nationality');
       return {
         slug: p.slug, name: p.name, meta: personDates(p).replace(' – ', '–'),
-        fields: fields(
-          ['Filed as', filedAs(p)],
-          ['Kind', p.kind],
-          ['Occupations', p.occupations.join(', ')],
-          ['Roles', p.roles.map((r) => ROLE_LABEL[r] ?? r).join(', ')],
-          ['Born in', [p.birth_place?.name, countryText(p.country)].filter(Boolean).join(', ')],
-          ['Nationality', l.polities],
-        ),
+        fields: [],
         sorts: {
           name: byName(p.name), start: byYear(p.birth ?? p.active), kind: byText(p.kind, 'Other'),
           occupation: byText(p.occupations[0], 'Occupation unknown'), role: byText(p.roles[0] ? ROLE_LABEL[p.roles[0]] ?? p.roles[0] : null, 'No role recorded'),
@@ -329,14 +306,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       const l = located(i, 'located_in_polity');
       return {
         slug: i.slug, name: i.name, meta: [i.kind, i.founded ? `founded ${i.founded.label}` : '', i.dissolved ? `closed ${i.dissolved.label}` : ''].filter(Boolean).join(' · '),
-        fields: fields(
-          ['Location', [i.country?.place?.name, countryText(i.country)].filter(Boolean).join(', ')],
-          ['Historically in', l.polities],
-        ).concat((i.artists_held ?? []).length ? [{
-          // an artist's name finds the museums with their works (API 107) — after those matching by their own name
-          label: 'Works by', text: (i.artists_held ?? []).map((a) => a.name).join(', '),
-          tier: { rank: 1, heading: 'With works by a matching artist' },
-        }] : []),
+        fields: [],
         sorts: { name: byName(i.name), founded: byYear(i.founded), kind: byText(i.kind, 'Other'), country: l.country },
       };
     },
@@ -351,7 +321,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     ],
     build: (s) => ({
       slug: s.slug, name: s.siglum || s.name, meta: [s.kind, s.year].filter(Boolean).join(' · '),
-      fields: fields(['Citation', s.citation.replace(/<[^>]+>/g, '')], ['Authors', (s.authors ?? []).join(', ')]),
+      fields: [],
       sorts: {
         siglum: byName(s.siglum || s.name), year: { value: Number(String(s.year ?? '').match(/-?\d+/)?.[0] ?? NaN) || null, heading: s.year ? String(s.year) : 'Year unknown' },
         status: byText(STATUS_LABEL[s.reading_status ?? ''] ?? null, 'Not recorded'), kind: byText(s.kind, 'Other'),
@@ -368,10 +338,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     ],
     build: (e) => ({
       slug: e.slug, name: e.name, meta: [e.kind, e.period?.label, e.place?.name].filter(Boolean).join(' · '),
-      fields: fields(
-        ['Where', [e.place?.name, countryText(e.country)].filter(Boolean).join(', ')],
-        ['Part of', e.part_of?.name],
-      ),
+      fields: [],
       sorts: { date: byYear(e.period), name: byName(e.name), kind: byText(e.kind, 'Other'), country: byText(countryText(e.country), 'Country unknown') },
     }),
   },
@@ -383,7 +350,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     ],
     build: (t) => ({
       slug: t.slug, name: t.name, meta: t.category,
-      fields: fields(['Definition', t.definition]),
+      fields: [],
       sorts: { name: byName(t.name), category: byText(t.category, 'Other') },
     }),
   },
@@ -396,7 +363,7 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     ],
     build: (p) => ({
       slug: p.slug, name: p.name, meta: [p.period?.label, p.kind].filter(Boolean).join(' · '),
-      fields: fields(['Territory today', p.country_codes.map((c) => countryName(c) ?? c).join(', ')]),
+      fields: [],
       sorts: { name: byName(p.name), start: byYear(p.period), kind: byText(p.kind, 'Other') },
     }),
   },
@@ -406,6 +373,9 @@ export function entries<P extends Plural>(plural: P, items: ItemByPlural[P][]): 
   const cat = CATALOG[plural] as unknown as TypeCatalog<P>;
   return items.map((item) => {
     const e = cat.build(item);
+    // what a search finds besides the name: the API's search_fields (view entry_search_fields, API 110) — the same
+    // definition the admin's lists search, so both find the same entries
+    e.fields = ((item as { search_fields?: ApiSearchField[] }).search_fields ?? []).map((f) => ({ label: f.label, text: f.text, match: f.match, tier: f.tier, shown: f.shown }));
     const named = item as { names?: NameEntry[]; search_text?: string | null; sort_key?: string; name_lang?: string | null; title_lang?: string | null; name_reading?: string | null; title_reading?: string | null };
     // other names (original, translations …), their readings and the API's search_text (kana in Latin letters …):
     // all searchable, shown as the reason when the match came from them ("Other names: 神奈川沖浪裏")

@@ -1864,8 +1864,11 @@ test('artworks list: searching a museum lists what is there now first, then what
     const body = await res.json();
     if (body.data.length < 2) return route.fulfill({ response: res });
     const [a, b] = body.data.slice(0, 2);
+    // the museums as the API's search fields say them (API 110: view entry_search_fields)
     a.holders = { now: [], before: [{ slug: 'museo-del-prado', name: 'Museo del Prado' }] };
+    a.search_fields = [{ label: 'Formerly in', text: 'Museo del Prado', tier: { rank: 2, heading: 'Formerly in the collection' } }];
     b.holders = { now: [{ slug: 'museo-del-prado', name: 'Museo del Prado' }], before: [] };
+    b.search_fields = [{ label: 'Now in', text: 'Museo del Prado', tier: { rank: 1, heading: 'Now in the collection' } }];
     await route.fulfill({ response: res, json: { ...body, data: [a, b] } });
   });
   await page.goto('/artworks');
@@ -1878,9 +1881,10 @@ test('artworks list: searching a museum lists what is there now first, then what
 test('museums list: an artist’s name finds the museums with their works, most first; the link lists them there', async ({ page }) => {
   const MUSEUM = { slug: 'musee-test', name: 'Musée Test', kind: 'museum', founded: null, image_url: null, country: null, polities: [], names: [] };
   const OTHER = { ...MUSEUM, slug: 'galerie-test', name: 'Galerie Test' };
+  const worksBy = [{ label: 'Works by', text: 'Paul Gauguin', tier: { rank: 1, heading: 'With works by a matching artist' } }];  // API 110
   await page.route(/\/v1\/institutions\?/, (r) => r.fulfill({ json: { data: [
-    { ...OTHER, artists_held: [{ slug: 'paul-gauguin', name: 'Paul Gauguin', now: 1, before: 0 }] },
-    { ...MUSEUM, artists_held: [{ slug: 'paul-gauguin', name: 'Paul Gauguin', now: 2, before: 1 }] },
+    { ...OTHER, artists_held: [{ slug: 'paul-gauguin', name: 'Paul Gauguin', now: 1, before: 0 }], search_fields: worksBy },
+    { ...MUSEUM, artists_held: [{ slug: 'paul-gauguin', name: 'Paul Gauguin', now: 2, before: 1 }], search_fields: worksBy },
   ], total: 2, limit: 500, offset: 0 } }));
   await page.route(/\/v1\/artworks\?/, async (route) => {
     const res = await route.fetch();
