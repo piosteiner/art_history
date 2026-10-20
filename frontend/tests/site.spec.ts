@@ -2279,27 +2279,42 @@ test('periods: switched to artists — lifespans under their periods, their work
   expect(errors).toEqual([]);
 });
 
-test('project documentation (API 114): from the footer, its contents, images, marks and tasks; not published yet → a note', async ({ page }) => {
-  const body = { slug: 'projekt-dokumentation', title: 'Projekt Dokumentation', lang: 'de-CH', updated_at: '2026-10-20T12:00:00Z',
-    toc: [{ level: 1, id: 'pitch', text: 'Pitch' }, { level: 1, id: 'projektstart', text: 'Projektstart' }, { level: 2, id: 'backend-setup', text: 'Backend Setup' }, { level: 5, id: 'update', text: 'Update' }],
-    html: '<h1 id="pitch">Pitch</h1><p>Text mit <mark>Markierung</mark>.</p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" loading="lazy"><h1 id="projektstart">Projektstart</h1><ul><li class="task task-done"><span class="task-box">☑</span> erledigt</li></ul><h2 id="backend-setup">Backend Setup</h2><h5 id="update">Update</h5>' };
-  await page.route(/\/v1\/pages\/projekt-dokumentation$/, (r) => r.fulfill({ json: body }));
+test('project documentation (API 114/116): from the footer, the overview with its chapters, a chapter with its contents and neighbours; unpublished → a note', async ({ page }) => {
+  const base = { slug: 'projekt-dokumentation', title: 'Projekt Dokumentation', lang: 'de-CH', updated_at: '2026-10-20T12:00:00Z', words: 1200,
+    intro_html: '<p>Einleitung mit <mark>Markierung</mark>.</p>',
+    chapters: [{ id: 'pitch', title: 'Pitch', words: 400 }, { id: 'projektstart', title: 'Projektstart', words: 600 }, { id: 'provenienz', title: 'Provenienz', words: 200 }] };
+  const chapter = { id: 'projektstart', index: 2, title: 'Projektstart', prev: { id: 'pitch', title: 'Pitch' }, next: { id: 'provenienz', title: 'Provenienz' },
+    toc: [{ level: 1, id: 'projektstart', text: 'Projektstart' }, { level: 2, id: 'backend-setup', text: 'Backend Setup' }, { level: 3, id: 'node-app', text: 'Node App' }],
+    html: '<h1 id="projektstart">Projektstart</h1><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" width="1" height="1"><ul><li class="task task-done"><span class="task-box">☑</span> erledigt</li></ul><h2 id="backend-setup">Backend Setup</h2><h3 id="node-app">Node App</h3>' };
+  await page.route(/\/v1\/pages\/projekt-dokumentation(\?.*)?$/, (r) => {
+    const asked = new URL(r.request().url()).searchParams.get('chapter');
+    if (asked && asked !== 'projektstart') return r.fulfill({ status: 404, json: { error: 'not_found', message: 'no chapter' } });
+    return r.fulfill({ json: asked ? { ...base, chapter } : base });
+  });
   await page.goto('/privacy');
   await page.locator('footer a', { hasText: 'Projekt Dokumentation' }).click();
   await expect(page).toHaveURL(/\/dokumentation$/);
-  await expect(page.locator('main h1').first()).toHaveText('Projekt Dokumentation');
   await expect(page.locator('article.doc-page')).toHaveAttribute('lang', 'de-CH');
-  await expect(page.locator('.doc-page > p.muted')).toContainText('Stand 20. Oktober 2026');
-  // the contents: the two upper levels of headings, linked
-  await expect(page.locator('.doc-toc li')).toHaveText(['Pitch', 'Projektstart', 'Backend Setup']);
-  await page.locator('.doc-toc a', { hasText: 'Backend Setup' }).click();
-  await expect(page).toHaveURL(/#backend-setup$/);
+  await expect(page.locator('main h1')).toHaveText('Projekt Dokumentation');
+  await expect(page.locator('.doc-page > p.muted').first()).toContainText(/Stand 20\. Oktober 2026 · 1.200 Wörter · rund 6 Minuten/);
   await expect(page.locator('.doc-body mark')).toHaveText('Markierung');
+  await expect(page.locator('.doc-chapters li a')).toHaveText(['Pitch', 'Projektstart', 'Provenienz']);
+  // a chapter: its text, its own contents, previous / next
+  await page.locator('.doc-chapters a', { hasText: 'Projektstart' }).click();
+  await expect(page).toHaveURL(/\/dokumentation\/projektstart$/);
+  await expect(page.locator('.doc-crumb')).toContainText('Kapitel 2 von 3');
+  await expect(page.locator('.doc-toc li')).toHaveText(['Backend Setup', 'Node App']);
   await expect(page.locator('.doc-body li.task-done')).toContainText('erledigt');
-  await expect(page.locator('.doc-body img')).toHaveCount(1);
+  await expect(page.locator('.doc-pager a[rel=prev]')).toHaveText('← Pitch');
+  await expect(page.locator('.doc-pager a[rel=next]')).toHaveText('Provenienz →');
+  // an old link to a heading of the whole text opens its chapter; an unknown chapter: a way back
+  await page.goto('/dokumentation#projektstart');
+  await expect(page).toHaveURL(/\/dokumentation\/projektstart/);
+  await page.goto('/dokumentation/gibt-es-nicht');
+  await expect(page.locator('main')).toContainText('Kapitel nicht gefunden');
   // before it is published: a note instead of an error
-  await page.unroute(/\/v1\/pages\/projekt-dokumentation$/);
-  await page.route(/\/v1\/pages\/projekt-dokumentation$/, (r) => r.fulfill({ status: 404, json: { error: 'not_found', message: 'no page' } }));
+  await page.unroute(/\/v1\/pages\/projekt-dokumentation(\?.*)?$/);
+  await page.route(/\/v1\/pages\/projekt-dokumentation(\?.*)?$/, (r) => r.fulfill({ status: 404, json: { error: 'not_found', message: 'no page' } }));
   await page.goto('/dokumentation');
   await expect(page.locator('main')).toContainText('noch nicht veröffentlicht');
 });

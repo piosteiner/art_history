@@ -1,35 +1,67 @@
-// A text page written in the CMS (API 114): the project documentation at /dokumentation. The HTML comes sanitized from
-// the API (src/pages.js there: Obsidian's Markdown — images, ==highlights==, task lists, tables); this view adds the
-// title, the date of the last change, a table of contents of the main headings and the language (de-CH: Swiss German
-// spelling, so browsers hyphenate and read it aloud as German).
-import { ApiError, getPage } from '../api';
+// A text page written in the CMS (API 114), read chapter by chapter (116): the project documentation.
+//   /dokumentation               the overview: title, date of the last change, the introduction, the chapters (words,
+//                                minutes to read)
+//   /dokumentation/<chapter>     one chapter: its text, its own contents beside it (sticky on wide screens), previous / next
+// The chapters are the text's top-level headings (the API splits it); the HTML comes sanitized from the API. de-CH:
+// Swiss German spelling, so browsers hyphenate and read it aloud as German. An old link to a heading of the whole text
+// (/dokumentation#provenienz) opens that chapter.
+import { ApiError, getPage, type Page, type PageChapter } from '../api';
 import { html, render, trusted } from '../html';
+import { navigate } from '../router';
 import { guard, showError } from './common';
 
 const DATE = new Intl.DateTimeFormat('de-CH', { day: 'numeric', month: 'long', year: 'numeric' });
+const BASE = '/dokumentation';
+const minutes = (words: number) => Math.max(1, Math.round(words / 200));
+const chapterHref = (id: string) => `${BASE}/${encodeURIComponent(id)}`;
 
-export function page(main: HTMLElement, slug: string) {
+function overview(box: HTMLElement, p: Page) {
+  document.title = `${p.title} · Art History`;
+  render(box, html`<h1>${p.title}</h1>
+    <p class="muted small">Stand ${DATE.format(new Date(p.updated_at))} · ${p.words.toLocaleString('de-CH')} Wörter · rund ${String(minutes(p.words))} Minuten</p>
+    ${p.intro_html ? html`<div class="doc-body">${trusted(p.intro_html)}</div>` : ''}
+    ${p.chapters.length ? html`<h2 class="doc-chapters-title">Kapitel</h2>
+      <ol class="doc-chapters">${p.chapters.map((c) => html`<li><a href="${chapterHref(c.id)}">${c.title}</a>
+        <span class="muted small">${String(minutes(c.words))} min</span></li>`)}</ol>` : ''}`);
+}
+
+function chapter(box: HTMLElement, p: Page, c: PageChapter) {
+  document.title = `${c.title} · ${p.title} · Art History`;
+  // its own contents: the levels below its heading
+  const top = c.toc[0]?.level ?? 1;
+  const toc = c.toc.filter((t) => t.level > top && t.level <= top + 2);
+  const nav = html`<nav class="doc-pager" aria-label="Kapitel">
+    ${c.prev ? html`<a href="${chapterHref(c.prev.id)}" rel="prev">← ${c.prev.title}</a>` : html`<span></span>`}
+    <a href="${BASE}">Übersicht</a>
+    ${c.next ? html`<a href="${chapterHref(c.next.id)}" rel="next">${c.next.title} →</a>` : html`<span></span>`}</nav>`;
+  render(box, html`<p class="muted small doc-crumb"><a href="${BASE}">${p.title}</a> · Kapitel ${String(c.index)} von ${String(p.chapters.length)}</p>
+    <div class="doc-layout${toc.length ? ' has-toc' : ''}">
+      ${toc.length ? html`<nav class="doc-toc" aria-label="In diesem Kapitel"><p class="doc-toc-title">In diesem Kapitel</p><ol>${toc.map((t) => html`<li class="doc-toc-${String(t.level - top)}"><a href="#${t.id}">${t.text}</a></li>`)}</ol></nav>` : ''}
+      <div class="doc-body">${trusted(c.html)}${nav}</div>
+    </div>`);
+}
+
+export function page(main: HTMLElement, slug: string, chapterId: string | null) {
   render(main, html`<article class="page prose-page doc-page"><p class="muted small">Loading…</p></article>`);
   const box = main.querySelector<HTMLElement>('article')!;
   const current = guard();
-  getPage(slug)
+  getPage(slug, chapterId)
     .then((p) => {
       if (!current()) return;
-      document.title = `${p.title} · Art History`;
       box.lang = p.lang;
-      // the contents: the two upper levels of the text's headings (the text's own top level may be h1 or h2)
-      const top = Math.min(...p.toc.map((t) => t.level), 9);
-      const toc = p.toc.filter((t) => t.level <= top + 1);
-      render(box, html`<h1>${p.title}</h1>
-        <p class="muted small">Stand ${DATE.format(new Date(p.updated_at))}</p>
-        ${toc.length > 2 ? html`<details class="doc-toc" open><summary>Inhalt</summary><ol>${toc.map((t) => html`<li class="doc-toc-${String(t.level - top)}"><a href="#${t.id}">${t.text}</a></li>`)}</ol></details>` : ''}
-        <div class="doc-body">${trusted(p.html)}</div>`);
-      // opened at a heading (/dokumentation#provenienz): go there once the text is in
-      if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+      // /dokumentation#provenienz (a heading of the whole text before it was split): that chapter
+      const hash = decodeURIComponent(location.hash.slice(1));
+      if (!chapterId && hash && p.chapters.some((c) => c.id === hash)) { navigate(chapterHref(hash), { replace: true }); return; }
+      if (p.chapter) chapter(box, p, p.chapter); else overview(box, p);
+      if (hash) document.getElementById(hash)?.scrollIntoView();
+      else if (chapterId) window.scrollTo(0, 0);
     })
     .catch((err) => {
       if (!current()) return;
-      if (err instanceof ApiError && err.status === 404) render(box, html`<h1>Projekt Dokumentation</h1><p class="muted">Diese Seite ist noch nicht veröffentlicht.</p>`);
-      else showError(box, err);
+      if (err instanceof ApiError && err.status === 404) {
+        render(box, chapterId
+          ? html`<h1>Kapitel nicht gefunden</h1><p><a href="${BASE}">Zur Übersicht der Projekt Dokumentation</a></p>`
+          : html`<h1>Projekt Dokumentation</h1><p class="muted">Diese Seite ist noch nicht veröffentlicht.</p>`);
+      } else showError(box, err);
     });
 }

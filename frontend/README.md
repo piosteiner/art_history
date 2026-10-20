@@ -41,7 +41,7 @@ map uses OpenFreeMap (free, no key).
 | `public/` | copied as is: `CNAME`, `health.html` (CORS round-trip check) |
 
 ## Privacy
-`/dokumentation` (`src/views/page.ts`, API 114): the project documentation written in the CMS — German (de-CH), contents of its two upper heading levels, prerendered once published; footer link "Projekt Dokumentation".
+`/dokumentation` (`src/views/page.ts`, API 114/116): the project documentation written in the CMS — German (de-CH); the overview (introduction, chapters with reading time) and `/dokumentation/<chapter>` (its contents beside it, previous/next; an old `#heading` link opens its chapter); prerendered once published; footer link "Projekt Dokumentation".
 
 `/privacy` (`src/views/privacy.ts`, Swiss FADP Art. 19 / FMG Art. 45c): the site sets **no cookies** (images load
 with `crossorigin="anonymous"`, so Wikimedia neither gets nor sets cookies; MapLibre fetches MapTiler without them) and

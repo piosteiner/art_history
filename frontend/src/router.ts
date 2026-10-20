@@ -11,8 +11,8 @@ export type Route =
   | { name: 'detail'; plural: Plural; key: string }
   | { name: 'graph'; plural?: Plural; slug?: string; params: URLSearchParams }
   | { name: 'privacy' }
-  /** A text page written in the CMS (API 114): /dokumentation = the project documentation. */
-  | { name: 'page'; slug: string }
+  /** A text page written in the CMS (API 114): /dokumentation = the project documentation, /dokumentation/<chapter> one chapter (116). */
+  | { name: 'page'; slug: string; chapter: string | null }
   /** When and where styles and periods were active (API 100): /periods?regions=italy,france&phases=0&from=1600&to=1700 */
   | { name: 'periods'; params: URLSearchParams }
   | { name: 'numbers'; params: URLSearchParams }
@@ -29,7 +29,7 @@ export function parse(pathname: string, search: string): Route {
   const query = new URLSearchParams(search);
   if (!parts.length || (parts.length === 1 && parts[0] === 'index.html')) return { name: 'explore', params: query };
   if (parts.length === 1 && parts[0] === 'privacy') return { name: 'privacy' };
-  if (parts.length === 1 && parts[0] === 'dokumentation') return { name: 'page', slug: 'projekt-dokumentation' };
+  if (parts[0] === 'dokumentation' && parts.length <= 2) return { name: 'page', slug: 'projekt-dokumentation', chapter: parts[1] ?? null };
   if (parts.length === 1 && parts[0] === 'periods') return { name: 'periods', params: query };
   if (parts.length === 1 && parts[0] === 'provenance-numbers') return { name: 'numbers', params: query };
   if (parts.length === 1 && parts[0] === 'search') return { name: 'search', params: query };

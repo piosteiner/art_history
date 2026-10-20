@@ -810,6 +810,15 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .doc-page pre { overflow-x: auto; padding: .6rem .8rem; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }
 .doc-page h1:not(:first-child), .doc-page .doc-body h1 { font-size: 1.7rem; margin-top: 2.2rem; }
 .doc-page .doc-body h5 { font-size: .95rem; color: var(--muted); margin-bottom: .2rem; }
-.doc-toc { margin: 1rem 0 1.5rem; } .doc-toc summary { cursor: pointer; font-weight: 600; }
-.doc-toc ol { margin: .4rem 0 0; padding-left: 1.2rem; } .doc-toc .doc-toc-1 { margin-left: 1rem; font-size: .92rem; }
+/* chapters (API 116): the overview's list, a chapter's own contents beside it, previous / next */
+.doc-page:has(.doc-layout.has-toc) { max-width: 66rem; }
+.doc-chapters { padding-left: 1.6rem; line-height: 1.9; } .doc-chapters .muted { margin-left: .4rem; }
+.doc-layout.has-toc { display: grid; grid-template-columns: 1fr 15rem; gap: 2rem; align-items: start; }
+.doc-layout.has-toc .doc-toc { order: 2; position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; font-size: .9rem; }
+.doc-layout .doc-body { min-width: 0; max-width: 46rem; }
+.doc-toc-title { font-weight: 600; margin: 0 0 .3rem; }
+.doc-toc ol { margin: 0; padding-left: 1.1rem; } .doc-toc .doc-toc-2 { margin-left: .9rem; font-size: .88rem; }
+.doc-pager { display: flex; justify-content: space-between; gap: 1rem; margin: 2.5rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line); flex-wrap: wrap; }
+.doc-crumb { margin-bottom: .2rem; }
+@media (max-width: 900px) { .doc-layout.has-toc { grid-template-columns: 1fr; } .doc-layout.has-toc .doc-toc { order: 0; position: static; max-height: none; } }
 .doc-page .doc-body { hyphens: auto; }
