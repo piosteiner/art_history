@@ -164,6 +164,8 @@ test('list search ignores accents and special letters: "soren gross" finds Søre
     await expect(page.locator('#items .card').first(), q).toContainText('Søren Groß');
   }
   await expect(page.locator('#items .card mark').first()).toHaveText('Søren');  // highlighted in the original spelling
+  // the list's background name search may still be on its way through the route above: let it go
+  await page.unrouteAll({ behavior: 'ignoreErrors' });
 });
 
 test('header search finds fields and typos', async ({ page }) => {
@@ -217,15 +219,21 @@ test('searches read exclusions and plain words; a misspelt word is corrected (AP
   await page.goto('/artworks');
   const filter = page.locator('.list-tools .filter');
   const cards = page.locator('#items .card');
-  await filter.fill('gauguin');
   await expect(cards.first()).toBeVisible();
-  const all = await cards.count();
+  // the number of matches as the count line says it — written in the same redraw as the list (counting cards while
+  // the list is redrawn after typing races)
+  const matched = async () => Number((await page.locator('#count').textContent())!.match(/^(\d+) of/)![1]);
+  await filter.fill('gauguin');
+  await expect(page.locator('#count')).toContainText(/^\d+ of \d+ match/);
+  await expect(page.locator('#count .query-read')).toHaveCount(0);
+  const all = await matched();
+  expect(all).toBeGreaterThan(0);
   await filter.fill('gauguin but not in kunsthaus zürich');
   await expect(page.locator('#count .query-read')).toContainText('not in: kunsthaus zürich');
-  expect(await cards.count()).toBeLessThan(all);
+  expect(await matched()).toBeLessThan(all);
   await filter.fill('gauguin -kunsthaus');
   await expect(page.locator('#count .query-read')).toContainText('without: kunsthaus');
-  expect(await cards.count()).toBeLessThan(all);
+  expect(await matched()).toBeLessThan(all);
   // a typo: nothing found as typed → the correction, with a way back
   await filter.fill('hokusia');
   await expect(page.locator('#count .query-fix')).toContainText('showing “Hokusai”');
