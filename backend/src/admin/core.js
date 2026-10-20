@@ -34,6 +34,7 @@ const DONE = {
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
   'prov-confirmed': 'Marked as happened as planned — no more reminder.',
+  logged: 'Marked as done — and written into today\'s changelog entry (a draft until you publish it).',
 };
 
 function send(req, res, { title, body, status = 200, flash, page = null }) {

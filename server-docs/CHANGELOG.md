@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Public changelog and roadmap (migration 118)
+- **What:** tables `changelog_entries`, `changelog_items` (kind neu/verbessert/behoben/inhalt/technik, optional link to
+  a roadmap item), `roadmap_items` (status jetzt/naechstes/spaeter/erledigt, area, notes, position, done_on), all
+  audited. CMS `/changelog` (an entry = day, optional title, one "Kind: text" line per bullet, preview, draft/published)
+  and `/roadmap` (four columns, drag order, move buttons; "✓ Erledigt" writes a linked bullet into today's entry,
+  starting a draft entry if needed) — `src/admin/routes/changelog.js`, `src/changelog.js`. API `/v1/changelog`
+  (`?kind=`, paging), `/v1/changelog/feed.xml` (RSS), `/v1/roadmap`. Site `/changelog`, `/roadmap` (German), footer
+  links, prerendered. Seeded as drafts: 22 entries 2026-09-23 – 2026-10-20 written from the commit history, 14 roadmap
+  items from the open to-dos (all unpublished, to review and publish in the CMS). Tests: `changelog.test.js`,
+  E2E `changelog.spec.js`, site test.
+- **Why:** owner: a changelog for patches and daily updates as bullet points, and a "what I'm working on" list.
+- **Revert:** revert the commits; `DROP TABLE changelog_items, changelog_entries, roadmap_items;` delete
+  `118_changelog_roadmap.sql` from `schema_migrations`.
+
 ### The Markdown editor: the adenai tools, find and replace, autosave for pages (migration 117)
 - **What:** the CMS editor's toolbar gets the adenai editor's tools — [[ ]] entry link, web link, heading cycling
   (#/##/###), numbered list, task, highlight (Ctrl+Shift+H), spoiler, quote, callout boxes (▣ Box: note, info, tip,

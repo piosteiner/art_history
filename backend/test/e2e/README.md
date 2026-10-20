@@ -28,6 +28,7 @@ npx playwright show-trace test/e2e/.results/<…>/trace.zip   # what the browser
 | `entities` | create/validate/publish/delete, protected deletes, reverse relationships, typo-tolerant pickers |
 | `search` | typo tolerance, alternative names, stemming, relationships, literal `%` |
 | `history` | conflicts kept, restore version, word-level merge, restoring a deletion with its id, stale previews, diffs |
+| `changelog` | changelog entry from "Kind: text" lines, draft vs published, API + kind filter + RSS; roadmap columns, done → today's changelog entry linked, drag order, link kept on re-save (118) |
 | `pages` | a CMS page: images uploaded by name and embedded (![[…]]), preview, publish, API HTML + contents, image by name/ETag, delete, history (114) |
 | `as-of` | an entry as of a moment (fields, relationships, provenance), changes since, versions, deleted entries (089) |
 | `search-text` | full-text search: stems (EN/DE/FR), accents, phrases, exclusions, provenance steps, escaped highlights (087) |

@@ -471,6 +471,15 @@ that isn't uploaded is `<span class="page-image-missing">name</span>`. Images: `
 (WebP, cached a day, `ETag` = its sha256). The project documentation: `/v1/pages/projekt-dokumentation` (site:
 `/dokumentation`, chapters `/dokumentation/<id>`).
 
+## Changelog and roadmap (118)
+German (de-CH); only published entries and items.
+- `GET /v1/changelog[?kind=neu|verbessert|behoben|inhalt|technik&limit=20&offset=0]` → `{total, data: [{id, day, title,
+  items: [{kind, label, html, roadmap: {id, title} | null}]}]}`, newest first; with `kind` only the entries with such
+  bullets, and only those bullets. `html`: the bullet's Markdown inline (`[[links]]` resolved).
+- `GET /v1/changelog/feed.xml` — RSS 2.0, the last 30 entries, linked to `/changelog#eintrag-<id>`.
+- `GET /v1/roadmap` → `{columns: [{status, label, items: [{id, title, area, notes_html, done_on}]}]}` — the four columns
+  in order (In Arbeit, Als Nächstes, Später, Erledigt — the last 30 done, newest first).
+
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.
 - `GET /v1/network/path?from=<entry>&to=<entry>[&via=person,artist&max=6]` — the shortest chain of relationships and

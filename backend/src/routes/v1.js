@@ -10,6 +10,7 @@ const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
 const { fold } = require('../fold');
 const { renderPage, splitChapters, words } = require('../pages');
+const { KINDS, STATUS, renderItems } = require('../changelog');
 
 const router = express.Router();
 
@@ -173,6 +174,68 @@ router.get('/pages/:slug/images/:name', async (req, res) => {
   res.set({ 'Cache-Control': 'public, max-age=86400', ETag: `"${img.sha256}"`, 'Content-Type': img.content_type, 'X-Content-Type-Options': 'nosniff' });
   if (req.get('if-none-match') === `"${img.sha256}"`) return res.status(304).end();
   res.send(img.bytes);
+});
+
+// The public changelog and roadmap (118), German (de-CH). Only published entries / items.
+//   GET /v1/changelog[?kind=neu|verbessert|behoben|inhalt|technik&limit=20&offset=0]
+//       → {total, data: [{id, day, title, items: [{kind, label, html, roadmap: {id, title} | null}]}]}, newest first;
+//         with ?kind= only entries with such bullets, and only those bullets
+//   GET /v1/changelog/feed.xml   RSS 2.0, the last 30 entries
+//   GET /v1/roadmap              → {columns: [{status, label, items: [{id, title, area, notes_html, done_on}]}]}
+//                                   (Erledigt: the last 30, newest first)
+const SITE_URL = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
+async function changelogEntries({ kind = null, limit = 20, offset = 0 } = {}) {
+  const { rows } = await apiPool.query(`
+    SELECT e.id, e.day::text AS day, e.title, count(*) OVER () AS total,
+           (SELECT jsonb_agg(jsonb_build_object('kind', i.kind, 'text', i.text_md, 'roadmap',
+                     CASE WHEN r.id IS NOT NULL AND r.published THEN jsonb_build_object('id', r.id, 'title', r.title) END) ORDER BY i.position)
+              FROM changelog_items i LEFT JOIN roadmap_items r ON r.id = i.roadmap_item_id
+             WHERE i.entry_id = e.id AND ($1::text IS NULL OR i.kind = $1)) AS items
+    FROM changelog_entries e
+    WHERE e.published AND ($1::text IS NULL OR EXISTS (SELECT 1 FROM changelog_items i WHERE i.entry_id = e.id AND i.kind = $1))
+    ORDER BY e.day DESC, e.id DESC
+    LIMIT $2 OFFSET $3`, [kind, limit, offset]);
+  const texts = rows.flatMap((r) => (r.items || []).map((i) => i.text));
+  const html = await renderItems(apiPool, texts);
+  let n = 0;
+  return { total: rows.length ? Number(rows[0].total) : 0,
+    data: rows.map(({ total, items, ...e }) => ({ ...e, id: Number(e.id),
+      items: (items || []).map(({ text, ...i }) => ({ ...i, label: KINDS[i.kind], html: html[n++] })) })) };
+}
+router.get('/changelog', async (req, res) => {
+  const kind = typeof req.query.kind === 'string' && req.query.kind ? req.query.kind : null;
+  if (kind && !KINDS[kind]) throw badRequest(`kind is one of ${Object.keys(KINDS).join(', ')}`);
+  const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 20, 1), 100);
+  const offset = Math.max(parseInt(req.query.offset, 10) || 0, 0);
+  res.json(await changelogEntries({ kind, limit, offset }));
+});
+router.get('/changelog/feed.xml', async (req, res) => {
+  const { data } = await changelogEntries({ limit: 30 });
+  const x = (s) => String(s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
+  const date = (d) => new Date(`${d}T12:00:00Z`).toUTCString();
+  const de = new Intl.DateTimeFormat('de-CH', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  res.type('application/rss+xml').send(`<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"><channel>
+<title>Art History · Changelog</title><link>${SITE_URL}/changelog</link><language>de-CH</language>
+<description>Was sich an arthistory.piogino.ch geändert hat.</description>
+${data.map((e) => `<item><title>${x(e.title || de.format(new Date(`${e.day}T12:00:00Z`)))}</title><link>${SITE_URL}/changelog#eintrag-${e.id}</link><guid isPermaLink="false">arthistory-changelog-${e.id}</guid><pubDate>${date(e.day)}</pubDate>
+<description>${x(`<ul>${e.items.map((i) => `<li><b>${i.label}</b> ${i.html}</li>`).join('')}</ul>`)}</description></item>`).join('\n')}
+</channel></rss>`);
+});
+router.get('/roadmap', async (req, res) => {
+  const { rows } = await apiPool.query(`
+    SELECT * FROM (
+      SELECT r.id, r.title, r.area, r.notes_md, r.status, r.done_on::text AS done_on, r.position,
+             row_number() OVER (PARTITION BY r.status ORDER BY r.done_on DESC NULLS LAST, r.position, r.id) AS n
+      FROM roadmap_items r WHERE r.published) x
+    WHERE status <> 'erledigt' OR n <= 30
+    ORDER BY CASE status WHEN 'jetzt' THEN 1 WHEN 'naechstes' THEN 2 WHEN 'spaeter' THEN 3 ELSE 4 END,
+             CASE WHEN status = 'erledigt' THEN NULL ELSE position END, done_on DESC NULLS LAST, id`);
+  const withNotes = rows.filter((r) => r.notes_md);
+  const notes = new Map((await renderItems(apiPool, withNotes.map((r) => r.notes_md))).map((h, i) => [withNotes[i], h]));
+  res.json({ columns: Object.entries(STATUS).map(([status, label]) => ({ status, label,
+    items: rows.map((r) => ({ ...r, notes_html: notes.get(r) || null })).filter((r) => r.status === status)
+      .map(({ status: _s, position: _p, n: _n, notes_md: _m, ...r }) => ({ ...r, id: Number(r.id) })) })) });
 });
 
 // Curated start views (migration 069): published ones, in their order. The query read through

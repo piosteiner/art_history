@@ -643,3 +643,13 @@ restored on reopening; Save applies and deletes it. Text forms (`src/md-extras.j
 `==mark==`, `||spoiler||`, `- [x]` tasks, `> [!type] title` callouts (note, info, tip, important, warning, quote,
 example, question, todo).
 
+## Changelog and roadmap (migration 118)
+German (de-CH), as the site shows them. `changelog_entries` (day, title optional, published — drafts stay off the site)
+with `changelog_items` (entry_id, position — unique per entry, deferrable —, kind `neu` / `verbessert` / `behoben` /
+`inhalt` / `technik`, text_md, roadmap_item_id → the roadmap item it completes). `roadmap_items` (title, area, notes_md,
+status `jetzt` / `naechstes` / `spaeter` / `erledigt`, position in its column, done_on — CHECK: set exactly when the
+status is `erledigt` —, published). All three audited. In the CMS an entry's bullets are one line each, "Neu: …"
+(`parseItems()` / `itemsToText()` in `src/changelog.js`); marking a roadmap item done writes a bullet into today's entry
+(Europe/Zurich; a draft entry is started if there is none) linked to the item; re-saving the entry keeps that link for
+bullets whose text is unchanged.
+
