@@ -1,2 +1,28 @@
-public_id: "100423"
+public_id: 100423
 name: Alex Reid & Lefevre
+names: [The Lefevre Gallery, Lefevre Galleries, Alex Reid & Lefevre Ltd.]
+founded: 1871
+place: city-of-westminster
+location: [-0.13656, 51.50684]
+address: 1a King Street, St James's, London
+wikidata_id: Q18347243
+metadata:
+  sources: [Wikidata Q18347243 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4a/Lefevre_catalogue_-_1935_%281%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lefevre_catalogue_-_1935_(1).jpg
+    license: Public domain
+    credit: AnonymousUnknown author
+sources:
+  address:
+    - accessed: 2026-10-19
+      property: P6375
+      wikidata: Q18347243
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q18347243
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q18347243

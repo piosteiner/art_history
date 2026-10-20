@@ -1,0 +1,25 @@
+public_id: 101203
+name: Patrimonio Nacional
+names:
+  - lang: ja
+    role: translation
+    text: 国家遺産局
+  - lang: zh
+    role: translation
+    text: 國家遺產局
+founded: 1940-03-07
+website_url: http://www.patrimonionacional.es/
+wikidata_id: Q1891189
+metadata:
+  sources: [Wikidata Q1891189 (retrieved 2026-10-19)]
+identifiers:
+  bnf: "122642894"
+  gnd: 1018909-9
+  idref: "031426662"
+  lc: n80162741
+  viaf: "155943525"
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q1891189

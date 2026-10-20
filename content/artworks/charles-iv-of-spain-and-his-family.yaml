@@ -1,0 +1,210 @@
+public_id: 101148
+title_lang: es
+title: La familia de Carlos IV
+names:
+  - lang: en
+    role: original
+    text: Charles IV of Spain and His Family
+  - lang: fr
+    role: translation
+    text: La Famille de Charles IV
+  - lang: de
+    role: translation
+    text: Die Familie Karls IV.
+  - lang: it
+    role: translation
+    text: La famiglia di Carlo IV
+  - lang: ja
+    role: translation
+    text: カルロス4世の家族
+  - lang: zh
+    role: translation
+    text: 卡洛斯四世一家
+  - lang: ko
+    role: translation
+    text: 카를로스 4세의 가족
+  - lang: ru
+    role: translation
+    text: Портрет семьи Карла IV
+creator: francisco-goya
+created: 1800
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [280, 336]
+institution: museo-del-prado
+inventory_number: P000726
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+description_md: "Goya’s group portrait of 1800: King Charles IV and Queen María Luisa of Parma with their children and relatives, and the painter himself at his easel in the shadows on the left, as Velázquez in *Las Meninas*."
+wikidata_id: Q920030
+metadata:
+  sources: [Wikidata Q920030 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts_person
+    to: person/carlos-de-borbon-y-borbon-parma
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/carlota-joaquina-of-spain
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/charles-ii-duke-of-parma
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/ferdinand-vii-of-spain
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: artist/francisco-goya
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/infanta-maria-josefa-of-spain
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/infante-antonio-pascual-of-spain
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/infante-francisco-de-paula-of-spain
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/louis-of-parma-king-of-etruria
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/maria-isabella-of-spain
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/maria-luisa-i-duchess-of-lucca
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: depicts_person
+    to: person/maria-luisa-of-parma
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q920030
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q920030
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/La_familia_de_Carlos_IV%2C_por_Francisco_de_Goya.jpg/1280px-La_familia_de_Carlos_IV%2C_por_Francisco_de_Goya.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_familia_de_Carlos_IV,_por_Francisco_de_Goya.jpg
+    license: Public domain
+    credit: Francisco Goya
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1800
+    place: royal-palace-of-madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "“Colección Real (Palacio Real, Madrid, ¿comedor del rey o en la sala de corte?, 1800; Palacio Real, Madrid, antiguo dormitorio de los príncipes, 1808; Palacio Real, Madrid, callejón de paso a las tribunas, 1814-1818;” — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
+    records:
+      - date: "1800"
+        note: the room uncertain
+        room: comedor del rey o sala de corte?
+        place: royal-palace-of-madrid
+      - date: "1808"
+        room: antiguo dormitorio de los príncipes
+        place: royal-palace-of-madrid
+      - date: 1814/1818
+        room: callejón de paso a las tribunas
+        place: royal-palace-of-madrid
+  - owner: institution/museo-del-prado
+    acquired: 1834 or earlier
+    method: transfer
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+        note: "“Real Museo, Madrid, Gabinete de Descanso, 1834, nº 13).” — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+        source: museo-del-prado-coleccion
+        accessed: 2024-12-03
+    records:
+      - date: "1834"
+        room: Gabinete de Descanso
+        place: madrid
+        number: "13"
+        document: inventory of the Real Museo
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+      source: museo-del-prado-coleccion
+      accessed: 2024-12-03
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+      source: museo-del-prado-coleccion
+      accessed: 2024-12-03
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+      source: museo-del-prado-coleccion
+      accessed: 2024-12-03
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+      source: museo-del-prado-coleccion
+      accessed: 2024-12-03
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q920030
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q920030
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+      source: museo-del-prado-coleccion
+      accessed: 2024-12-03
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q920030
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+      source: museo-del-prado-coleccion
+      accessed: 2024-12-03
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q920030
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-12-03: https://web.archive.org/web/20241203183958/https://www.museodelprado.es/coleccion/obra-de-arte/wd/f47898fc-aa1c-48f6-a779-71759e417e74"
+      source: museo-del-prado-coleccion
+      accessed: 2024-12-03

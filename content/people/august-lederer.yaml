@@ -1,0 +1,39 @@
+public_id: 101553
+name: August Lederer
+given_name: August
+family_name: Lederer
+names:
+  - lang: ru
+    role: translation
+    text: Август Ледерер
+kind: person
+occupations: [entrepreneur, collector, patron of the arts, art collector, industrialist]
+birth: 1857-05-03
+death: 30 April 1936
+wikidata_id: Q762671
+metadata:
+  sources: [Wikidata Q762671 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/August_Lederer%2C_by_Egon_Schiele.jpg/1280px-August_Lederer%2C_by_Egon_Schiele.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:August_Lederer,_by_Egon_Schiele.jpg
+    license: Public domain
+    credit: Egon Schiele
+identifiers:
+  viaf: "293649838"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q762671
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q762671
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q762671
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q762671

@@ -1,0 +1,68 @@
+public_id: 101453
+name: Austrian National Library
+names:
+  - Oesterreichische Nationalbibliothek
+  - Hofbibliothek
+  - Prunksaal
+  - Bibl. Pal.
+  - Osterreichische Nationalbibliothek
+  - National Library of Austria
+  - Österreichische Nationalbibliothek
+  - ÖNB
+  - lang: fr
+    role: translation
+    text: bibliothèque nationale autrichienne
+  - lang: it
+    role: translation
+    text: Biblioteca Nazionale Austriaca
+  - lang: es
+    role: translation
+    text: Biblioteca Nacional de Austria
+  - lang: ja
+    role: translation
+    text: オーストリア国立図書館
+  - lang: zh
+    role: translation
+    text: 奥地利国家图书馆
+  - lang: ko
+    role: translation
+    text: 오스트리아 국립도서관
+  - lang: ru
+    role: translation
+    text: Австрийская национальная библиотека
+founded: 1368
+place: vienna
+location: [16.36627, 48.20614]
+address: Heldenplatz
+website_url: https://www.onb.ac.at/
+wikidata_id: Q304037
+metadata:
+  sources: [Wikidata Q304037 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg/1280px-State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:State_Hall_of_the_Austrian_National_Library_NightFall404_1.jpg
+    license: CC BY 2.0
+    credit: Richard Hopkins
+identifiers:
+  bnf: 11866756x
+  gnd: 2020893-5
+  idref: "026416581"
+  lc: n79068404
+  viaf: "136765452"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q304037
+  address:
+    - accessed: 2026-10-19
+      property: P6375
+      wikidata: Q304037
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q304037
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q304037

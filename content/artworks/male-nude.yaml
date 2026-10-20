@@ -1,0 +1,124 @@
+public_id: 101538
+title_lang: de
+title: Männlicher Akt
+names:
+  - lang: en
+    role: translation
+    text: Male Nude
+  - lang: nl
+    role: translation
+    text: Mannelijk Naakt
+  - lang: ru
+    role: translation
+    text: Обнажённый мужчина
+creator: gustav-klimt
+created: 1883
+materials: [oil paint, canvas]
+dimensions: [68, 54.8]
+institution: belvedere
+inventory_number: "5992"
+wikidata_id: Q28005437
+metadata:
+  sources: [Wikidata Q28005437 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Gustav_Klimt_-_M%C3%A4nnlicher_Akt_-_5992_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_M%C3%A4nnlicher_Akt_-_5992_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_M%C3%A4nnlicher_Akt_-_5992_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: artist/gustav-klimt
+    ended: 1918
+    place: vienna
+    certainty: probable
+    sources:
+      - url: https://sammlung.belvedere.at/objects/4742/mannlicher-akt
+        note: "“1883–1918, Eigentum, Gustav Klimt, Wien (?) 1918–1923, Nachlass, Gustav Klimt, Wien (?) 1923, Auktion, Dorotheum, Wien [1] 1923–1971, Ankauf, Unbekannter Privatbesitz oder Walter Reinhardt, Wien [2] 1971–1973, Übernahme, Theresia Reinhardt, Wien [3] 1973, Ankauf, Österreichische Galerie, Wien [4] [1] 13. Kleine Auktion in der Kunstabteilung. Ölgemälde, Aquarelle, Handzeichnungen, Miniaturen, Graphik, Glas, Porzellan, Keramik, Möbel, Metallarbeiten, Textilien aus Privatbesitz (Aukt.-Kat. Dorotheum, Wien, 19./21.12.1923), Nr. 224, o. Abb. [2] Übernahme von Walter Reinhardt im Erbweg. Archiv des Belvedere (AdB), Wien, Zl. 824/1973; im Erwerbungsakt wird der 1971 verstorbene Walter Reinhardt als Eigentümer genannt. [3] AdB, Wien, Zl. 824/1973. [4] Ebd.” — read in the Internet Archive’s copy of 2026-07-27: https://web.archive.org/web/20260727025523/https://sammlung.belvedere.at/objects/4742/mannlicher-akt"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-27
+  - owner: artist/gustav-klimt
+    role: estate
+    acquired: 1918
+    ended: 1923
+    method: inheritance
+    place: vienna
+    label: estate of Gustav Klimt
+    certainty: probable
+    sources:
+      - url: https://sammlung.belvedere.at/objects/4742/mannlicher-akt
+        note: "“1883–1918, Eigentum, Gustav Klimt, Wien (?) 1918–1923, Nachlass, Gustav Klimt, Wien (?) 1923, Auktion, Dorotheum, Wien [1] 1923–1971, Ankauf, Unbekannter Privatbesitz oder Walter Reinhardt, Wien [2] 1971–1973, Übernahme, Theresia Reinhardt, Wien [3] 1973, Ankauf, Österreichische Galerie, Wien [4] [1] 13. Kleine Auktion in der Kunstabteilung. Ölgemälde, Aquarelle, Handzeichnungen, Miniaturen, Graphik, Glas, Porzellan, Keramik, Möbel, Metallarbeiten, Textilien aus Privatbesitz (Aukt.-Kat. Dorotheum, Wien, 19./21.12.1923), Nr. 224, o. Abb. [2] Übernahme von Walter Reinhardt im Erbweg. Archiv des Belvedere (AdB), Wien, Zl. 824/1973; im Erwerbungsakt wird der 1971 verstorbene Walter Reinhardt als Eigentümer genannt. [3] AdB, Wien, Zl. 824/1973. [4] Ebd.” — read in the Internet Archive’s copy of 2026-07-27: https://web.archive.org/web/20260727025523/https://sammlung.belvedere.at/objects/4742/mannlicher-akt"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-27
+  - owner: institution/dorotheum
+    role: agent
+    numbers:
+      - kind: lot
+        number: "224"
+    acquired: 1923-12-19/1923-12-21
+    method: auction
+    place: vienna
+    label: 13th small auction
+    sources:
+      - url: https://sammlung.belvedere.at/objects/4742/mannlicher-akt
+        note: "“1883–1918, Eigentum, Gustav Klimt, Wien (?) 1918–1923, Nachlass, Gustav Klimt, Wien (?) 1923, Auktion, Dorotheum, Wien [1] 1923–1971, Ankauf, Unbekannter Privatbesitz oder Walter Reinhardt, Wien [2] 1971–1973, Übernahme, Theresia Reinhardt, Wien [3] 1973, Ankauf, Österreichische Galerie, Wien [4] [1] 13. Kleine Auktion in der Kunstabteilung. Ölgemälde, Aquarelle, Handzeichnungen, Miniaturen, Graphik, Glas, Porzellan, Keramik, Möbel, Metallarbeiten, Textilien aus Privatbesitz (Aukt.-Kat. Dorotheum, Wien, 19./21.12.1923), Nr. 224, o. Abb. [2] Übernahme von Walter Reinhardt im Erbweg. Archiv des Belvedere (AdB), Wien, Zl. 824/1973; im Erwerbungsakt wird der 1971 verstorbene Walter Reinhardt als Eigentümer genannt. [3] AdB, Wien, Zl. 824/1973. [4] Ebd.” — read in the Internet Archive’s copy of 2026-07-27: https://web.archive.org/web/20260727025523/https://sammlung.belvedere.at/objects/4742/mannlicher-akt"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-27
+  - owner_label: Walter Reinhardt (or an unknown private owner)
+    acquired: 1923
+    ended: 1971
+    method: auction
+    place: vienna
+    certainty: possible
+    sources:
+      - url: https://sammlung.belvedere.at/objects/4742/mannlicher-akt
+        note: "“1883–1918, Eigentum, Gustav Klimt, Wien (?) 1918–1923, Nachlass, Gustav Klimt, Wien (?) 1923, Auktion, Dorotheum, Wien [1] 1923–1971, Ankauf, Unbekannter Privatbesitz oder Walter Reinhardt, Wien [2] 1971–1973, Übernahme, Theresia Reinhardt, Wien [3] 1973, Ankauf, Österreichische Galerie, Wien [4] [1] 13. Kleine Auktion in der Kunstabteilung. Ölgemälde, Aquarelle, Handzeichnungen, Miniaturen, Graphik, Glas, Porzellan, Keramik, Möbel, Metallarbeiten, Textilien aus Privatbesitz (Aukt.-Kat. Dorotheum, Wien, 19./21.12.1923), Nr. 224, o. Abb. [2] Übernahme von Walter Reinhardt im Erbweg. Archiv des Belvedere (AdB), Wien, Zl. 824/1973; im Erwerbungsakt wird der 1971 verstorbene Walter Reinhardt als Eigentümer genannt. [3] AdB, Wien, Zl. 824/1973. [4] Ebd.” — read in the Internet Archive’s copy of 2026-07-27: https://web.archive.org/web/20260727025523/https://sammlung.belvedere.at/objects/4742/mannlicher-akt"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-27
+  - owner_label: Theresia Reinhardt
+    acquired: 1971
+    ended: 1973
+    method: inheritance
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/4742/mannlicher-akt
+        note: "“1883–1918, Eigentum, Gustav Klimt, Wien (?) 1918–1923, Nachlass, Gustav Klimt, Wien (?) 1923, Auktion, Dorotheum, Wien [1] 1923–1971, Ankauf, Unbekannter Privatbesitz oder Walter Reinhardt, Wien [2] 1971–1973, Übernahme, Theresia Reinhardt, Wien [3] 1973, Ankauf, Österreichische Galerie, Wien [4] [1] 13. Kleine Auktion in der Kunstabteilung. Ölgemälde, Aquarelle, Handzeichnungen, Miniaturen, Graphik, Glas, Porzellan, Keramik, Möbel, Metallarbeiten, Textilien aus Privatbesitz (Aukt.-Kat. Dorotheum, Wien, 19./21.12.1923), Nr. 224, o. Abb. [2] Übernahme von Walter Reinhardt im Erbweg. Archiv des Belvedere (AdB), Wien, Zl. 824/1973; im Erwerbungsakt wird der 1971 verstorbene Walter Reinhardt als Eigentümer genannt. [3] AdB, Wien, Zl. 824/1973. [4] Ebd.” — read in the Internet Archive’s copy of 2026-07-27: https://web.archive.org/web/20260727025523/https://sammlung.belvedere.at/objects/4742/mannlicher-akt"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-27
+  - owner: institution/belvedere
+    acquired: 1973
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    sources:
+      - url: https://sammlung.belvedere.at/objects/4742/mannlicher-akt
+        note: "“1883–1918, Eigentum, Gustav Klimt, Wien (?) 1918–1923, Nachlass, Gustav Klimt, Wien (?) 1923, Auktion, Dorotheum, Wien [1] 1923–1971, Ankauf, Unbekannter Privatbesitz oder Walter Reinhardt, Wien [2] 1971–1973, Übernahme, Theresia Reinhardt, Wien [3] 1973, Ankauf, Österreichische Galerie, Wien [4] [1] 13. Kleine Auktion in der Kunstabteilung. Ölgemälde, Aquarelle, Handzeichnungen, Miniaturen, Graphik, Glas, Porzellan, Keramik, Möbel, Metallarbeiten, Textilien aus Privatbesitz (Aukt.-Kat. Dorotheum, Wien, 19./21.12.1923), Nr. 224, o. Abb. [2] Übernahme von Walter Reinhardt im Erbweg. Archiv des Belvedere (AdB), Wien, Zl. 824/1973; im Erwerbungsakt wird der 1971 verstorbene Walter Reinhardt als Eigentümer genannt. [3] AdB, Wien, Zl. 824/1973. [4] Ebd.” — read in the Internet Archive’s copy of 2026-07-27: https://web.archive.org/web/20260727025523/https://sammlung.belvedere.at/objects/4742/mannlicher-akt"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-27
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28005437
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28005437
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28005437
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28005437
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28005437
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28005437
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28005437

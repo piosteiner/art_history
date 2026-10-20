@@ -1,0 +1,74 @@
+public_id: 101333
+name: Emperor Rudolf II
+names:
+  - lang: de
+    role: original
+    text: Rudolf II
+  - lang: nl
+    role: original
+    text: Rudolf II van Habsburg
+  - Rudolph II
+  - lang: nl
+    role: original
+    text: Keizer Rudolf II
+  - lang: fr
+    role: translation
+    text: Rodolphe II (empereur du Saint Empire)
+  - lang: de
+    role: original
+    text: Rudolf II.
+  - lang: it
+    role: translation
+    text: Rodolfo II d'Asburgo
+  - lang: es
+    role: translation
+    text: Rodolfo II del Sacro Imperio Romano Germánico
+  - lang: ja
+    role: translation
+    text: ルドルフ2世
+  - lang: zh
+    role: translation
+    text: 鲁道夫二世
+  - lang: ko
+    role: translation
+    text: 루돌프 2세
+  - lang: ru
+    role: translation
+    text: Рудольф II
+kind: person
+occupations: [politician, art collector, monarch]
+birth: 1552-07-28
+death: 1612-01-20
+wikidata_id: Q150586
+metadata:
+  sources: [Wikidata Q150586 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Joseph_Heintz_d._%C3%84._002.jpg/1280px-Joseph_Heintz_d._%C3%84._002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Heintz_d._%C3%84._002.jpg
+    license: Public domain
+    credit: Joseph Heintz the Elder
+identifiers:
+  bnf: 13168504p
+  gnd: "118603701"
+  idref: "027646440"
+  lc: n81004066
+  rkd: "466467"
+  ulan: "500122378"
+  viaf: "14909824"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q150586
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q150586
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q150586
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q150586

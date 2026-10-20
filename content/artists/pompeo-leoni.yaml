@@ -1,0 +1,41 @@
+public_id: 101357
+name: Pompeo Leoni
+names:
+  - Pompeo Lioni
+  - Pompeyo Leoni
+  - lang: ja
+    role: translation
+    text: ポンピオ・レオーニ
+  - lang: zh
+    role: translation
+    text: 龐培歐·萊奧尼
+  - lang: ru
+    role: translation
+    text: Помпео Леони
+birth: 1533
+death: 1608-10-09
+wikidata_id: Q1858775
+metadata:
+  sources: [Wikidata Q1858775 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/El_Greco_-_Portrait_of_a_Sculptor_-_WGA10449.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_Greco_-_Portrait_of_a_Sculptor_-_WGA10449.jpg
+    license: Public domain
+    credit: El Greco
+identifiers:
+  bnf: 16713503j
+  gnd: "119328887"
+  idref: "121681823"
+  lc: nr95035966
+  rkd: "129580"
+  ulan: "500037449"
+  viaf: "283632968"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q1858775
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q1858775

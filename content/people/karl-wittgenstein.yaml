@@ -1,0 +1,50 @@
+public_id: 101548
+name: Karl Wittgenstein
+names:
+  - Karl Otto Clemens Wittgenstein
+  - lang: ja
+    role: translation
+    text: カール・ウィトゲンシュタイン
+  - lang: zh
+    role: translation
+    text: 卡尔·维特根斯坦
+  - lang: ko
+    role: translation
+    text: 카를 비트겐슈타인
+  - lang: ru
+    role: translation
+    text: Карл Витгенштейн
+kind: person
+occupations: [engineer, industrialist, patron of the arts, political economist, entrepreneur]
+birth: 1847-04-08
+death: 1913-01-20
+wikidata_id: Q563305
+metadata:
+  sources: [Wikidata Q563305 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ef/Karl_Wittgenstein.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Karl_Wittgenstein.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "131738484"
+  gnd: "130249912"
+  lc: n85101712
+  viaf: "49363036"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q563305
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q563305
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q563305
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q563305

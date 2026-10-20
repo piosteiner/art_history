@@ -1,0 +1,35 @@
+public_id: 101492
+name: Roman Norbert Ketterer
+given_name: Roman Norbert
+family_name: Ketterer
+kind: person
+occupations: [art dealer]
+birth: 1911-02-06
+death: 2002-06-19
+wikidata_id: Q1487033
+metadata:
+  sources: [Wikidata Q1487033 (retrieved 2026-10-19)]
+identifiers:
+  bnf: 12537517q
+  gnd: "121198987"
+  idref: "034640592"
+  lc: n84223710
+  ulan: "500343251"
+  viaf: "9959568"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1487033
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q1487033
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q1487033
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q1487033

@@ -1,0 +1,23 @@
+public_id: 101134
+name: Marcela de Ulloa
+given_name: Marcela
+family_name: de Ulloa
+kind: person
+birth: 1601/1700
+death: 1669-01-13
+wikidata_id: Q11690831
+metadata:
+  sources: [Wikidata Q11690831 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q11690831
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q11690831
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q11690831

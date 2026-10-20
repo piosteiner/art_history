@@ -1,0 +1,18 @@
+public_id: 101131
+name: Maria Agustina Sarmiento
+given_name: Maria Agustina
+family_name: Sarmiento
+kind: person
+birth: 1637
+wikidata_id: Q9029918
+metadata:
+  sources: [Wikidata Q9029918 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q9029918
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q9029918

@@ -1,0 +1,72 @@
+public_id: 101210
+name: Philip II of Spain
+names:
+  - lang: es
+    role: original
+    text: Felipe II
+  - Philip I of Portugal
+  - Philip II
+  - lang: nl
+    role: translation
+    text: Filips II van Spanje
+  - lang: fr
+    role: translation
+    text: Philippe II
+  - lang: de
+    role: translation
+    text: Philipp II.
+  - lang: it
+    role: translation
+    text: Filippo II di Spagna
+  - lang: es
+    role: original
+    text: Felipe II de España
+  - lang: ja
+    role: translation
+    text: フェリペ2世
+  - lang: zh
+    role: translation
+    text: 费利佩二世
+  - lang: ko
+    role: translation
+    text: 펠리페 2세
+  - lang: ru
+    role: translation
+    text: Филипп II
+kind: person
+occupations: [ruler]
+birth: 31 May 1527
+death: 1598-09-13
+wikidata_id: Q34417
+metadata:
+  sources: [Wikidata Q34417 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg/1280px-Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg
+    license: Public domain
+    credit: Sofonisba Anguissola
+identifiers:
+  bnf: 12170664z
+  gnd: "118593862"
+  idref: "030249899"
+  lc: n78067330
+  rkd: "435459"
+  ulan: "500253117"
+  viaf: "88973996"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q34417
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q34417
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q34417
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q34417

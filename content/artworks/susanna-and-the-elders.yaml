@@ -1,0 +1,114 @@
+public_id: 101325
+title_lang: de
+title: Susanna im Bade
+names:
+  - lang: en
+    role: original
+    text: Susanna and the Elders
+  - lang: fr
+    role: original
+    text: Suzanne au bain
+  - lang: fr
+    role: original
+    text: Suzanne et les Vieillards
+  - lang: it
+    role: translation
+    text: Susanna e i vecchioni
+  - lang: es
+    role: translation
+    text: Susana y los viejos
+  - lang: ja
+    role: translation
+    text: スザンナと長老たち
+  - lang: zh
+    role: translation
+    text: 苏撒拿和长老 (丁托列托)
+  - lang: ru
+    role: translation
+    text: Сусанна и старцы
+creator: jacopo-tintoretto
+created: 1555/1556
+created_label: c. 1550s
+materials: [oil paint, canvas]
+dimensions: [146, 193.6]
+institution: kunsthistorisches-museum
+inventory_number: GG_1530
+wikidata_id: Q3978277
+metadata:
+  sources: [Wikidata Q3978277 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Jacopo_Robusti%2C_called_Tintoretto_-_Susanna_and_the_Elders_-_Google_Art_Project.jpg/1280px-Jacopo_Robusti%2C_called_Tintoretto_-_Susanna_and_the_Elders_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacopo_Robusti,_called_Tintoretto_-_Susanna_and_the_Elders_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Jacopo Tintoretto
+provenance:
+  - owner: artist/nicolas-regnier
+    acquired: 1648 or earlier
+    place: venice
+    sources:
+      - url: https://www.khm.at/kunstwerke/susanna-im-bade-1564
+        note: “1648 von Ridolfi im Haus des Nicolas Régnier beschrieben; 1677 Slg. Giovanni Roetta, Venedig; Vor 1712 in der Galerie”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: sighting
+        date: "1648"
+        note: described in Régnier's house
+        place: venice
+        document: Carlo Ridolfi, Le maraviglie dell'arte
+  - owner_label: Giovanni Roetta
+    acquired: 1677 or earlier
+    place: venice
+    sources:
+      - url: https://www.khm.at/kunstwerke/susanna-im-bade-1564
+        note: “1648 von Ridolfi im Haus des Nicolas Régnier beschrieben; 1677 Slg. Giovanni Roetta, Venedig; Vor 1712 in der Galerie”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    acquired: before 1712
+    place: vienna
+    label: in the gallery
+    sources:
+      - url: https://www.khm.at/kunstwerke/susanna-im-bade-1564
+        note: “1648 von Ridolfi im Haus des Nicolas Régnier beschrieben; 1677 Slg. Giovanni Roetta, Venedig; Vor 1712 in der Galerie”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q3978277
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q3978277
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q3978277
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q3978277
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q3978277
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q3978277
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q3978277

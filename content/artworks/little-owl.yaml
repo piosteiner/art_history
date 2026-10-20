@@ -1,0 +1,149 @@
+public_id: 101419
+title_lang: de-AT
+title: Käuzchen
+names:
+  - Screech Owl
+  - lang: en
+    role: translation
+    text: Little Owl
+  - lang: fr
+    role: translation
+    text: Chouette-effraie
+creator: albrecht-durer
+created: 1508
+materials: [watercolor paint, watercolor paper, ink]
+dimensions: [19.2, 14]
+institution: albertina
+inventory_number: "3123"
+web_url: https://sammlungenonline.albertina.at/?query=Inventarnummer=(3123)&showtype=record#/query/03e3c961-79dd-4e63-bd23-bc1cf0710a07
+wikidata_id: Q112091493
+metadata:
+  sources: [Wikidata Q112091493 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c2/D%C3%BCrer_-_K%C3%A4uzchen%2C_Albertina_3123.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:D%C3%BCrer_-_K%C3%A4uzchen,_Albertina_3123.jpg
+    license: Public domain
+    credit: Albrecht Dürer
+provenance:
+  - owner: person/pierre-jean-mariette
+    ended: 1774
+    place: paris
+    label: after the old Cahier
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/41007/kauzchen
+        note: '“Laut altem Cahier: Pierre-Jean Mariette (1694-1774), Paris (Auktion bei Pierre-François Basan, Paris, ab 15. November 1775, Nr. 896 / Lugt Rep. 2453) / Sammlung Jean-Antoine-Hubert Vassal de Saint-Hubert (1741-1782), nicht in dessen Auktionen 1779 und 1783 / eventuell identisch mit "Een Nagtuil, zeer fraai met sapverven geteekend, door Alb. Durer." in der Auktion der Sammlung Cornelis Ploos van Amstel, Amsterdam, 3.3.1800, S. 266, Kunstboek BBB, Nr. 64 / Herzog Albert von Sachsen-Teschen”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: artist/pierre-francois-basan
+    role: agent
+    numbers:
+      - kind: lot
+        number: "896"
+      - kind: lugt
+        number: "2453"
+    acquired: 1775-11-15
+    method: auction
+    place: paris
+    label: Mariette's sale
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/41007/kauzchen
+        note: '“Laut altem Cahier: Pierre-Jean Mariette (1694-1774), Paris (Auktion bei Pierre-François Basan, Paris, ab 15. November 1775, Nr. 896 / Lugt Rep. 2453) / Sammlung Jean-Antoine-Hubert Vassal de Saint-Hubert (1741-1782), nicht in dessen Auktionen 1779 und 1783 / eventuell identisch mit "Een Nagtuil, zeer fraai met sapverven geteekend, door Alb. Durer." in der Auktion der Sammlung Cornelis Ploos van Amstel, Amsterdam, 3.3.1800, S. 266, Kunstboek BBB, Nr. 64 / Herzog Albert von Sachsen-Teschen”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/jean-antoine-hubert-vassal-de-saint-hubert
+    place: paris
+    notes_md: Not in his sales of 1779 and 1783 (Albertina).
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/41007/kauzchen
+        note: '“Laut altem Cahier: Pierre-Jean Mariette (1694-1774), Paris (Auktion bei Pierre-François Basan, Paris, ab 15. November 1775, Nr. 896 / Lugt Rep. 2453) / Sammlung Jean-Antoine-Hubert Vassal de Saint-Hubert (1741-1782), nicht in dessen Auktionen 1779 und 1783 / eventuell identisch mit "Een Nagtuil, zeer fraai met sapverven geteekend, door Alb. Durer." in der Auktion der Sammlung Cornelis Ploos van Amstel, Amsterdam, 3.3.1800, S. 266, Kunstboek BBB, Nr. 64 / Herzog Albert von Sachsen-Teschen”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: artist/cornelis-ploos-van-amstel
+    place: amsterdam
+    certainty: possible
+    notes_md: Perhaps the "Een Nagtuil, zeer fraai met sapverven geteekend, door Alb. Durer." of his sale, Amsterdam, 3 March 1800, p. 266, Kunstboek BBB, no. 64.
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/41007/kauzchen
+        note: '“Laut altem Cahier: Pierre-Jean Mariette (1694-1774), Paris (Auktion bei Pierre-François Basan, Paris, ab 15. November 1775, Nr. 896 / Lugt Rep. 2453) / Sammlung Jean-Antoine-Hubert Vassal de Saint-Hubert (1741-1782), nicht in dessen Auktionen 1779 und 1783 / eventuell identisch mit "Een Nagtuil, zeer fraai met sapverven geteekend, door Alb. Durer." in der Auktion der Sammlung Cornelis Ploos van Amstel, Amsterdam, 3.3.1800, S. 266, Kunstboek BBB, Nr. 64 / Herzog Albert von Sachsen-Teschen”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/albert-casimir-duke-of-teschen
+    acquired: 1800 or later
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/41007/kauzchen
+        note: '“Laut altem Cahier: Pierre-Jean Mariette (1694-1774), Paris (Auktion bei Pierre-François Basan, Paris, ab 15. November 1775, Nr. 896 / Lugt Rep. 2453) / Sammlung Jean-Antoine-Hubert Vassal de Saint-Hubert (1741-1782), nicht in dessen Auktionen 1779 und 1783 / eventuell identisch mit "Een Nagtuil, zeer fraai met sapverven geteekend, door Alb. Durer." in der Auktion der Sammlung Cornelis Ploos van Amstel, Amsterdam, 3.3.1800, S. 266, Kunstboek BBB, Nr. 64 / Herzog Albert von Sachsen-Teschen”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/archduke-charles-duke-of-teschen
+    acquired: 1822
+    method: inheritance
+    direct: true
+    place: vienna
+    label: adoptive son of Duke Albert
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Bereits 1822 veranlasste sein Adoptivsohn Erzherzog Carl die Neugestaltung der Prunkräume …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-albrecht-duke-of-teschen
+    acquired: 1847
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Charles's eldest son
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Das historistische Erscheinungsbild der Fassaden des Palais geht auf Carls ältesten Sohn, Erzherzog Albrecht, zurück …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-friedrich-duke-of-teschen
+    acquired: 1895
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Albrecht's nephew
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1895 erbte Erzherzog Albrechts Neffe, Erzherzog Friedrich, das Palais …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1919-04
+    method: confiscation
+    direct: true
+    place: vienna
+    label: "expropriated by the Republic of Austria: Graphische Sammlung Albertina"
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1919 enteignete die Republik Österreich das erzherzogliche Palais samt der in ihm verwahrten Sammlung und nannte es fortan "Graphische Sammlung Albertina"; zugleich wurde die wertvolle Kupferstichsammlung der kaiserlichen Hofbibliothek mit der Albertina vereinigt.”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q112091493
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q112091493
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q112091493
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q112091493
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q112091493
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q112091493
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q112091493

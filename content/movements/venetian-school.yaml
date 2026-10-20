@@ -1,0 +1,11 @@
+public_id: 101175
+name: Venetian school
+kind: movement
+wikidata_id: Q610687
+metadata:
+  sources: [Wikidata Q610687 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q610687

@@ -1,0 +1,160 @@
+public_id: 101401
+title_lang: de
+title: Das große Rasenstück
+names:
+  - lang: en
+    role: translation
+    text: Great Piece of Turf
+  - lang: nl
+    role: translation
+    text: De grote graszode
+  - lang: fr
+    role: translation
+    text: Grande Touffe d'herbes
+  - lang: it
+    role: translation
+    text: La grande zolla
+  - lang: es
+    role: translation
+    text: Gran mata de hierba
+  - lang: ru
+    role: translation
+    text: Большой кусок луга
+creator: albrecht-durer
+created: 1503
+materials: [paper, watercolor paint, top color]
+dimensions: [40.8, 31.5]
+institution: albertina
+inventory_number: "3075"
+web_url: http://sammlungenonline.albertina.at/?query=Inventarnummer=(3075)&showtype=record
+wikidata_id: Q254794
+metadata:
+  sources: [Wikidata Q254794 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf%2C_1503_-_Google_Art_Project.jpg/1280px-Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf%2C_1503_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_The_Large_Piece_of_Turf,_1503_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Albrecht Dürer
+provenance:
+  - owner: person/willibald-imhoff
+    place: nuremberg
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/39098/das-groe-rasenstuck
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 27: "Viel Graßwerk.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+    records:
+      - date: "1588"
+        note: “Viel Graßwerk.”
+        place: nuremberg
+        number: "27"
+        document: Kunstbuch, Verzeichnis 1588
+  - owner: person/emperor-rudolf-ii
+    acquired: 1588
+    direct: true
+    place: prague
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/39098/das-groe-rasenstuck
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 27: "Viel Graßwerk.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/imperial-treasury
+    place: vienna
+    label: Imperial Treasury (Kaiserliche Schatzkammer)
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/39098/das-groe-rasenstuck
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 27: "Viel Graßwerk.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/austrian-national-library
+    acquired: 1783
+    method: transfer
+    place: vienna
+    label: Imperial Court Library (Kaiserliche Hofbibliothek)
+    notes_md: "The Albertina adds: no reference to the Court Library in the old Cahier III."
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/39098/das-groe-rasenstuck
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 27: "Viel Graßwerk.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/albert-casimir-duke-of-teschen
+    acquired: 1796
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/39098/das-groe-rasenstuck
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 27: "Viel Graßwerk.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/archduke-charles-duke-of-teschen
+    acquired: 1822
+    method: inheritance
+    direct: true
+    place: vienna
+    label: adoptive son of Duke Albert
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Bereits 1822 veranlasste sein Adoptivsohn Erzherzog Carl die Neugestaltung der Prunkräume …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-albrecht-duke-of-teschen
+    acquired: 1847
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Charles's eldest son
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Das historistische Erscheinungsbild der Fassaden des Palais geht auf Carls ältesten Sohn, Erzherzog Albrecht, zurück …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-friedrich-duke-of-teschen
+    acquired: 1895
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Albrecht's nephew
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1895 erbte Erzherzog Albrechts Neffe, Erzherzog Friedrich, das Palais …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1919-04
+    method: confiscation
+    direct: true
+    place: vienna
+    label: "expropriated by the Republic of Austria: Graphische Sammlung Albertina"
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1919 enteignete die Republik Österreich das erzherzogliche Palais samt der in ihm verwahrten Sammlung und nannte es fortan "Graphische Sammlung Albertina"; zugleich wurde die wertvolle Kupferstichsammlung der kaiserlichen Hofbibliothek mit der Albertina vereinigt.”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q254794
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q254794
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q254794
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q254794
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q254794
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q254794
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q254794

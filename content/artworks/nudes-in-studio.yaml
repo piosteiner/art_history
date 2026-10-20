@@ -1,0 +1,87 @@
+public_id: 101474
+title_lang: en
+title: Nudes in Studio
+names:
+  - lang: de
+    role: translation
+    text: Akte im Atelier
+creator: ernst-ludwig-kirchner
+created: 1912
+dimensions: [80.7, 70.7]
+institution: leopold-museum
+inventory_number: LM 197
+wikidata_id: Q28797709
+metadata:
+  sources: [Wikidata Q28797709 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Ernst_Ludwig_Kirchner_-_Nudes_in_Studio_-_Google_Art_Project.jpg/1280px-Ernst_Ludwig_Kirchner_-_Nudes_in_Studio_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_-_Nudes_in_Studio_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Ernst Ludwig Kirchner
+provenance:
+  - owner: artist/ernst-ludwig-kirchner
+    role: estate
+    acquired: 1938
+    ended: 1954
+    method: inheritance
+    place: davos
+    label: estate of Ernst Ludwig Kirchner
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/271-akte-im-atelier/
+        note: “Nachlass Ernst Ludwig Kirchner, Davos (1938-1954); (1) / Roman Norbert Ketterer, Campione, Schweiz (ab 1954-1980); / Dr. Rudolf Leopold, Wien (1980-1994); (2) / Leopold Museum-Privatstiftung, Wien (seit 1994)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/roman-norbert-ketterer
+    role: dealer
+    acquired: 1954
+    ended: 1980
+    place: campione-d-italia
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/271-akte-im-atelier/
+        note: “Nachlass Ernst Ludwig Kirchner, Davos (1938-1954); (1) / Roman Norbert Ketterer, Campione, Schweiz (ab 1954-1980); / Dr. Rudolf Leopold, Wien (1980-1994); (2) / Leopold Museum-Privatstiftung, Wien (seit 1994)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1980
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/271-akte-im-atelier/
+        note: “Nachlass Ernst Ludwig Kirchner, Davos (1938-1954); (1) / Roman Norbert Ketterer, Campione, Schweiz (ab 1954-1980); / Dr. Rudolf Leopold, Wien (1980-1994); (2) / Leopold Museum-Privatstiftung, Wien (seit 1994)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/271-akte-im-atelier/
+        note: “Nachlass Ernst Ludwig Kirchner, Davos (1938-1954); (1) / Roman Norbert Ketterer, Campione, Schweiz (ab 1954-1980); / Dr. Rudolf Leopold, Wien (1980-1994); (2) / Leopold Museum-Privatstiftung, Wien (seit 1994)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28797709
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28797709
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28797709
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28797709
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28797709
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28797709

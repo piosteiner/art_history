@@ -1,0 +1,43 @@
+public_id: 101363
+name: Alessandro Vittoria
+names:
+  - Alessandro Vitorio
+  - allesandro vittoria
+  - aless. vittoria
+  - alessandro vitto
+  - Jacopo Alessandro Vittoria
+  - Alessandro Vittorio
+  - Alessandro Vittoria di Vigilio della Volpa
+  - lang: ja
+    role: translation
+    text: アレッサンドロ・ヴィットーリア
+  - lang: ru
+    role: translation
+    text: Алессандро Витториа
+birth: 1525
+death: 1608-05-27
+wikidata_id: Q1347426
+metadata:
+  sources: [Wikidata Q1347426 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/Paolo_Veronese_044.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paolo_Veronese_044.jpg
+    license: Public domain
+    credit: Paolo Veronese
+identifiers:
+  bnf: 13510451n
+  gnd: "104150386"
+  idref: "050337424"
+  lc: no93038872
+  rkd: "81384"
+  ulan: "500025294"
+  viaf: "10276598"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q1347426
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q1347426

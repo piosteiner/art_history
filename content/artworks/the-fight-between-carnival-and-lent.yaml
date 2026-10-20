@@ -1,0 +1,104 @@
+public_id: 101313
+title_lang: de
+title: Kampf zwischen Fasching und Fasten
+names:
+  - lang: en
+    role: original
+    text: The Fight Between Carnival and Lent
+  - lang: nl
+    role: translation
+    text: De strijd tussen Vasten en Vastenavond
+  - lang: fr
+    role: translation
+    text: Le Combat de Carnaval et Carême
+  - lang: de
+    role: original
+    text: Kampf zwischen Fastnacht und Fasten
+  - lang: it
+    role: translation
+    text: Lotta tra Carnevale e Quaresima
+  - lang: es
+    role: translation
+    text: El combate entre don carnaval y doña cuaresma
+  - lang: ja
+    role: translation
+    text: 謝肉祭と四旬節の喧嘩
+  - lang: ru
+    role: translation
+    text: Битва Масленицы и Поста (картина)
+creator: pieter-brueghel-the-elder
+created: 1559
+materials: [oil paint, panel]
+dimensions: [118, 164.5]
+institution: kunsthistorisches-museum
+inventory_number: GG_1016
+web_url: http://insidebruegel.net/#p/v=paintings&lan=en&a=1016&x=s:3_l:1_v1:1016,vis
+wikidata_id: Q689236
+metadata:
+  sources: [Wikidata Q689236 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Pieter_Bruegel_d._%C3%84._066.jpg/1280px-Pieter_Bruegel_d._%C3%84._066.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_d._%C3%84._066.jpg
+    license: Public domain
+    credit: Pieter Brueghel the Elder
+provenance:
+  - owner: person/emperor-rudolf-ii
+    place: prague
+    certainty: probable
+    sources:
+      - url: https://www.khm.at/kunstwerke/kampf-zwischen-fasching-und-fasten-320
+        note: “vermutlich Rudolf II.; 1748 aus der Schatzkammer in die Galerie”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    place: vienna
+    label: Treasury, from 1748 the picture gallery
+    sources:
+      - url: https://www.khm.at/kunstwerke/kampf-zwischen-fasching-und-fasten-320
+        note: “vermutlich Rudolf II.; 1748 aus der Schatzkammer in die Galerie”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: document
+        date: "1748"
+        note: moved from the Treasury (Schatzkammer) to the gallery
+        place: vienna
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q689236
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q689236
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q689236
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q689236
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q689236
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q689236
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q689236

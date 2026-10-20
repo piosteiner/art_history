@@ -1,0 +1,179 @@
+public_id: 101162
+title_lang: es
+title: La maja vestida
+names:
+  - lang: en
+    role: translation
+    text: The Clothed Maja
+  - lang: nl
+    role: translation
+    text: Geklede Maja
+  - lang: fr
+    role: translation
+    text: La Maja vêtue
+  - lang: de
+    role: translation
+    text: Die Bekleidete Maja
+  - lang: it
+    role: translation
+    text: Maja vestida
+  - lang: ja
+    role: translation
+    text: 着衣のマハ
+  - lang: zh
+    role: translation
+    text: 着衣的玛哈
+  - lang: ko
+    role: translation
+    text: 옷 입은 마하
+  - lang: ru
+    role: translation
+    text: Маха одетая
+creator: francisco-goya
+created: 1800/1807
+kind: oil painting
+medium: Oil on canvas
+materials: [canvas, oil paint]
+dimensions: [94.7, 188]
+institution: museo-del-prado
+inventory_number: P000741
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+description_md: The clothed companion of Goya’s nude Maja, painted a few years after it, in the same pose. Both belonged to Manuel Godoy, were sequestered after his fall and came to the Prado from the Academy of San Fernando in 1901.
+wikidata_id: Q2735507
+metadata:
+  sources: [Wikidata Q2735507 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts_person
+    to: person/josefa-de-tudo-1st-countess-of-castillo-fiel
+    label: identification disputed
+    certainty: possible
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q2735507
+  - type: depicts_person
+    to: person/maria-teresa-de-silva-13th-duchess-of-alba
+    label: identification disputed
+    certainty: possible
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q2735507
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Goya_Maja_ubrana2.jpg/1280px-Goya_Maja_ubrana2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Goya_Maja_ubrana2.jpg
+    license: Public domain
+    credit: Francisco Goya
+provenance:
+  - owner: person/manuel-godoy
+    acquired: 1808 or earlier
+    ended: before 18 December 1813
+    place: madrid
+    label: in his collection in 1808; sequestered after his fall — who owned it until the Prado is not recorded
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "“Colección Manuel Godoy, Madrid, 1808.” — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
+  - owner: institution/deposito-general-de-secuestros
+    role: custodian
+    acquired: 1813-12-18
+    ended: 1814-11-28
+    place: madrid
+    label: the depot for sequestered property, in the warehouse of the Fábrica de Cristales de San Ildefonso, calle Alcalá
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "“Trasladada al Depósito General de Secuestros, situado en el almacén que la Fábrica de Cristales de San Ildefonso tenía en la calle Alcalá, el 18 de diciembre de 1813.” — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
+  - owner: institution/spanish-inquisition
+    role: custodian
+    acquired: 1814-11-28
+    ended: 1836-04-13
+    direct: true
+    place: madrid
+    label: kept in the premises of the Tribunal of the Inquisition
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "“Depositada en dependencias del Tribunal de la Inquisición el 28 de noviembre de 1814.” — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
+  - owner: institution/royal-academy-of-fine-arts-of-san-fernando
+    role: custodian
+    acquired: 1836-04-13
+    ended: 1901
+    direct: true
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "“Trasladada a la Real Academia de Bellas Artes de San Fernando el 13 de abril de 1836.” — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
+    records:
+      - kind: exhibition
+        date: "1840"
+        note: first shown in its public rooms
+        place: madrid
+        document: exhibition of the Real Academia de Bellas Artes de San Fernando
+  - owner: institution/museo-del-prado
+    acquired: 1901
+    method: transfer
+    direct: true
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+        note: "“Ingresó en el Museo del Prado en 1901.” — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+        source: museo-del-prado-coleccion
+        accessed: 2025-04-26
+identifiers:
+  gnd: 4439421-4
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+      source: museo-del-prado-coleccion
+      accessed: 2025-04-26
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+      source: museo-del-prado-coleccion
+      accessed: 2025-04-26
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+      source: museo-del-prado-coleccion
+      accessed: 2025-04-26
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+      source: museo-del-prado-coleccion
+      accessed: 2025-04-26
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2735507
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2735507
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+      source: museo-del-prado-coleccion
+      accessed: 2025-04-26
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2735507
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+      source: museo-del-prado-coleccion
+      accessed: 2025-04-26
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2735507
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-04-26: https://web.archive.org/web/20250426132716/https://www.museodelprado.es/coleccion/obra-de-arte/wd/a3121efc-6924-454c-8a9f-e4320f26d3d0"
+      source: museo-del-prado-coleccion
+      accessed: 2025-04-26

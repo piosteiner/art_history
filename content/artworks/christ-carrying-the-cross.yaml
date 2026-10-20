@@ -1,0 +1,109 @@
+public_id: 101321
+title_lang: nl
+title: "Portement de Croix (revers: Enfant au trotteur)"
+names:
+  - lang: en
+    role: translation
+    text: Christ Carrying the Cross
+  - lang: nl
+    role: original
+    text: De Kruisdraging
+  - lang: fr
+    role: translation
+    text: Le Portement de Croix
+  - lang: de
+    role: translation
+    text: Die Kreuztragung Christi
+  - lang: it
+    role: translation
+    text: Salita al Calvario
+  - lang: es
+    role: translation
+    text: Cristo con la Cruz a cuestas
+  - lang: ja
+    role: translation
+    text: 十字架を担うキリスト
+  - lang: ko
+    role: translation
+    text: 십자가를 지고 가는 그리스도 (보스, 빈)
+  - lang: ru
+    role: translation
+    text: Несение креста
+creator: hieronymus-bosch
+created: 1490/1510
+materials: [oakwood, oil paint]
+dimensions: [59.7, 32]
+institution: kunsthistorisches-museum
+inventory_number: GG_6429
+wikidata_id: Q2567058
+metadata:
+  sources: [Wikidata Q2567058 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Hieronymus_Bosch_054.jpg/1280px-Hieronymus_Bosch_054.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hieronymus_Bosch_054.jpg
+    license: Public domain
+    credit: Hieronymus Bosch
+provenance:
+  - owner_label: English art trade
+    role: dealer
+    sources:
+      - url: https://www.khm.at/kunstwerke/kreuztragung-christi-295
+        note: “Englischer Kunsthandel; Kunsthändler Frederik Muller & Cie, Amsterdam, Jänner 1923; 1923 Ankauf von der Fa. Goudstikker, Amsterdam;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/frederik-muller-cie
+    role: dealer
+    acquired: 1923-01
+    place: amsterdam
+    sources:
+      - url: https://www.khm.at/kunstwerke/kreuztragung-christi-295
+        note: “Englischer Kunsthandel; Kunsthändler Frederik Muller & Cie, Amsterdam, Jänner 1923; 1923 Ankauf von der Fa. Goudstikker, Amsterdam;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/jacques-goudstikker
+    role: dealer
+    place: amsterdam
+    label: Kunsthandel J. Goudstikker
+    sources:
+      - url: https://www.khm.at/kunstwerke/kreuztragung-christi-295
+        note: “Englischer Kunsthandel; Kunsthändler Frederik Muller & Cie, Amsterdam, Jänner 1923; 1923 Ankauf von der Fa. Goudstikker, Amsterdam;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1923
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.khm.at/kunstwerke/kreuztragung-christi-295
+        note: “Englischer Kunsthandel; Kunsthändler Frederik Muller & Cie, Amsterdam, Jänner 1923; 1923 Ankauf von der Fa. Goudstikker, Amsterdam;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q2567058
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q2567058
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2567058
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2567058
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q2567058
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2567058
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2567058

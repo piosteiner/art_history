@@ -1,0 +1,106 @@
+public_id: 101534
+title_lang: de
+title: Allee zum Schloss Kammer
+names:
+  - lang: en
+    role: translation
+    text: Avenue in the Park of Schloss Kammer
+  - lang: fr
+    role: translation
+    text: Avenue dans le parc de Schloss Kammer
+  - lang: de
+    role: original
+    text: Allee vor Schloss Kammer
+  - lang: ru
+    role: translation
+    text: Аллея к замку Каммер
+creator: gustav-klimt
+created: 1910s
+materials: [oil paint, canvas]
+dimensions: [110, 110]
+institution: belvedere
+inventory_number: "2892"
+wikidata_id: Q19912810
+metadata:
+  sources: [Wikidata Q19912810 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Gustav_Klimt_-_Allee_zum_Schloss_Kammer_-_2892_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_Allee_zum_Schloss_Kammer_-_2892_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Allee_zum_Schloss_Kammer_-_2892_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: person/victor-zuckerkandl
+    acquired: 1912
+    ended: 1927
+    method: purchase
+    place: vienna
+    certainty: probable
+    sources:
+      - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+        note: "“1912?–1927, Ankauf, Victor Zuckerkandl, Wien 1927, Übernahme, Paula Zuckerkandl, Berlin [1] 1927–1929, Nachlass, Victor & Paula Zuckerkandl, Wien [2] 1929, Ankauf, Österreichische Galerie, Wien [3] [1] Übernahme im Erbweg von Victor Zuckerkandl. [2] Wiener Stadt- und Landesarchiv, Bezirksgericht Hietzing, Zl. A II 923/27; Verlassenschaftsabhandlung nach Paula Zuckerkandl. [3] Archiv des Belvedere, Wien, Zl. 733/1929; Erwerbungsakt; Ankauf um 16.920 S aus der Verlassenschaft von Victor & Paula Zuckerkandl.” — read in the Internet Archive’s copy of 2026-07-22: https://web.archive.org/web/20260722122402/https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-22
+  - owner_label: Paula Zuckerkandl
+    acquired: 1927
+    method: inheritance
+    direct: true
+    place: berlin
+    sources:
+      - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+        note: "“1912?–1927, Ankauf, Victor Zuckerkandl, Wien 1927, Übernahme, Paula Zuckerkandl, Berlin [1] 1927–1929, Nachlass, Victor & Paula Zuckerkandl, Wien [2] 1929, Ankauf, Österreichische Galerie, Wien [3] [1] Übernahme im Erbweg von Victor Zuckerkandl. [2] Wiener Stadt- und Landesarchiv, Bezirksgericht Hietzing, Zl. A II 923/27; Verlassenschaftsabhandlung nach Paula Zuckerkandl. [3] Archiv des Belvedere, Wien, Zl. 733/1929; Erwerbungsakt; Ankauf um 16.920 S aus der Verlassenschaft von Victor & Paula Zuckerkandl.” — read in the Internet Archive’s copy of 2026-07-22: https://web.archive.org/web/20260722122402/https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-22
+  - owner_label: Estate of Victor and Paula Zuckerkandl
+    role: estate
+    acquired: 1927
+    ended: 1929
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+        note: "“1912?–1927, Ankauf, Victor Zuckerkandl, Wien 1927, Übernahme, Paula Zuckerkandl, Berlin [1] 1927–1929, Nachlass, Victor & Paula Zuckerkandl, Wien [2] 1929, Ankauf, Österreichische Galerie, Wien [3] [1] Übernahme im Erbweg von Victor Zuckerkandl. [2] Wiener Stadt- und Landesarchiv, Bezirksgericht Hietzing, Zl. A II 923/27; Verlassenschaftsabhandlung nach Paula Zuckerkandl. [3] Archiv des Belvedere, Wien, Zl. 733/1929; Erwerbungsakt; Ankauf um 16.920 S aus der Verlassenschaft von Victor & Paula Zuckerkandl.” — read in the Internet Archive’s copy of 2026-07-22: https://web.archive.org/web/20260722122402/https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-22
+  - owner: institution/belvedere
+    acquired: 1929
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    price:
+      amount: 16920
+      currency: ATS
+    sources:
+      - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+        note: "“1912?–1927, Ankauf, Victor Zuckerkandl, Wien 1927, Übernahme, Paula Zuckerkandl, Berlin [1] 1927–1929, Nachlass, Victor & Paula Zuckerkandl, Wien [2] 1929, Ankauf, Österreichische Galerie, Wien [3] [1] Übernahme im Erbweg von Victor Zuckerkandl. [2] Wiener Stadt- und Landesarchiv, Bezirksgericht Hietzing, Zl. A II 923/27; Verlassenschaftsabhandlung nach Paula Zuckerkandl. [3] Archiv des Belvedere, Wien, Zl. 733/1929; Erwerbungsakt; Ankauf um 16.920 S aus der Verlassenschaft von Victor & Paula Zuckerkandl.” — read in the Internet Archive’s copy of 2026-07-22: https://web.archive.org/web/20260722122402/https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-22
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q19912810
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q19912810
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q19912810
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q19912810
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q19912810
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q19912810
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q19912810

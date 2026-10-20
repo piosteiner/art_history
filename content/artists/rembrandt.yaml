@@ -1,0 +1,16 @@
+public_id: 101420
+name: Rembrandt
+birth: 1606-07-15
+death: 1669-10-04
+wikidata_id: Q5598
+metadata:
+  sources: [Wikidata Q5598 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q5598
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q5598

@@ -1,0 +1,38 @@
+public_id: 101559
+name: Ferdinand Eckhardt
+names:
+  - lang: ja
+    role: translation
+    text: フェルディナント・エックハルト
+  - lang: ru
+    role: translation
+    text: Фердинанд Экхардт
+kind: person
+occupations: [art historian]
+birth: 1902-04-28
+death: 1995-12-25
+wikidata_id: Q90185
+metadata:
+  sources: [Wikidata Q90185 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 11905793X
+  idref: "097654841"
+  lc: n82044514
+  viaf: "107640011"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q90185
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q90185
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q90185
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q90185

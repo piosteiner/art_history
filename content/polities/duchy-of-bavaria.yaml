@@ -1,0 +1,11 @@
+public_id: 101283
+name: Duchy of Bavaria
+period: 907/1805
+wikidata_id: Q47261
+metadata:
+  sources: [Wikidata Q47261 (retrieved 2026-10-19)]
+sources:
+  period:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q47261

@@ -1,0 +1,16 @@
+public_id: 101178
+name: El Greco
+birth: 1541-10-01
+death: 1614-04-07
+wikidata_id: Q301
+metadata:
+  sources: [Wikidata Q301 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q301
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q301

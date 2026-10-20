@@ -1,0 +1,38 @@
+public_id: 101570
+name: Mödling
+names:
+  - Modling
+  - lang: ja
+    role: translation
+    text: メードリング
+  - lang: zh
+    role: translation
+    text: 默德灵
+  - lang: ko
+    role: translation
+    text: 뫼들링
+  - lang: ru
+    role: translation
+    text: Мёдлинг
+kind: site
+parent: austria
+country_code: AT
+location: [16.28306, 48.08556]
+wikidata_id: Q277965
+metadata:
+  sources: [Wikidata Q277965 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4039880-8
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q277965
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q277965
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q277965

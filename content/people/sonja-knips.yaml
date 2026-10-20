@@ -1,0 +1,42 @@
+public_id: 101550
+name: Sonja Knips
+given_name: Sonja
+family_name: Knips
+names:
+  - lang: it
+    role: translation
+    text: Ritratto di Sonja Knips
+kind: person
+occupations: [patron of the arts]
+birth: 1873-12-02
+death: 1959-05
+wikidata_id: Q61061297
+metadata:
+  sources: [Wikidata Q61061297 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Gustav_Klimt_-_Sonja_Knips_-_4403_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_Sonja_Knips_-_4403_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Sonja_Knips_-_4403_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+identifiers:
+  gnd: 12960738X
+  idref: "088879658"
+  lc: n88297445
+  viaf: "309802953"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q61061297
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q61061297
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q61061297
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q61061297

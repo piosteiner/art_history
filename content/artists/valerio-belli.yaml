@@ -1,0 +1,37 @@
+public_id: 101361
+name: Valerio Belli
+names:
+  - Valerio Vicentino Belli
+  - Valerio Belli Vincentino
+  - Valerio Vicentino
+  - Valerio Visentino
+  - lang: ja
+    role: translation
+    text: ヴァレリオ・ベッリ
+birth: 1468
+death: 1546
+wikidata_id: Q716539
+metadata:
+  sources: [Wikidata Q716539 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/49/Valerio_Belli%2C_by_Parmigianino_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Valerio_Belli,_by_Parmigianino_cropped.jpg
+    license: Public domain
+    credit: Parmigianino
+identifiers:
+  bnf: 14604964f
+  gnd: "122739531"
+  idref: "083691499"
+  lc: nr2001007442
+  rkd: "6254"
+  ulan: "500005431"
+  viaf: "59973189"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q716539
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q716539

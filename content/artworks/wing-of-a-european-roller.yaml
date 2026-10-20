@@ -1,0 +1,161 @@
+public_id: 101407
+title_lang: de-AT
+title: Der Flügel einer Blauracke
+names:
+  - lang: pl
+    role: original
+    text: Skrzydło kraski
+  - The Wing of a Roller
+  - lang: en
+    role: translation
+    text: Wing of a European Roller
+  - lang: nl
+    role: translation
+    text: Vleugel van een scharrelaar
+  - lang: fr
+    role: translation
+    text: Aile de Rollier bleu
+  - lang: es
+    role: translation
+    text: Ala de una carraca europea
+  - lang: ru
+    role: translation
+    text: Крыло Сизоворонки
+creator: albrecht-durer
+created: 1500
+materials: [parchment, watercolor paint, gouache paint]
+dimensions: [19.6, 20]
+institution: albertina
+inventory_number: "4840"
+web_url: http://www.europeana.eu/portal/record/15508/4840.html?start=1&query=Blaurackenfl%C3%BCgel&startPage=1&qt=false&rows=24
+wikidata_id: Q21151884
+metadata:
+  sources: [Wikidata Q21151884 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Albrecht_D%C3%BCrer_-_Der_Fl%C3%BCgel_einer_Blauracke_%28ca._1500%29.jpg/1280px-Albrecht_D%C3%BCrer_-_Der_Fl%C3%BCgel_einer_Blauracke_%28ca._1500%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Der_Fl%C3%BCgel_einer_Blauracke_(ca._1500).jpg
+    license: Public domain
+    credit: Albrecht Dürer
+provenance:
+  - owner: person/willibald-imhoff
+    place: nuremberg
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/40278/der-flugel-einer-blauracke
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 20: "Ein Flügel auf Pergamen.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+    records:
+      - date: "1588"
+        note: “Ein Flügel auf Pergamen.”
+        place: nuremberg
+        number: "20"
+        document: Kunstbuch, Verzeichnis 1588
+  - owner: person/emperor-rudolf-ii
+    acquired: 1588
+    direct: true
+    place: prague
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/40278/der-flugel-einer-blauracke
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 20: "Ein Flügel auf Pergamen.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/imperial-treasury
+    place: vienna
+    label: Imperial Treasury (Kaiserliche Schatzkammer)
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/40278/der-flugel-einer-blauracke
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 20: "Ein Flügel auf Pergamen.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/austrian-national-library
+    acquired: 1783
+    method: transfer
+    place: vienna
+    label: Imperial Court Library (Kaiserliche Hofbibliothek)
+    notes_md: "The Albertina adds: no reference to the Court Library in the old Cahier III."
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/40278/der-flugel-einer-blauracke
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 20: "Ein Flügel auf Pergamen.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/albert-casimir-duke-of-teschen
+    acquired: 1796
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/40278/der-flugel-einer-blauracke
+        note: '“Willibald Imhoff (1519-1580), Nürnberg (Kunstbuch, Verzeichnis 1588, Zeichnung 20: "Ein Flügel auf Pergamen.") / 1588 an Kaiser Rudolf II. / Kaiserliche Schatzkammer / seit 1783 Kaiserliche Hofbibliothek / 1796 an Herzog Albert von Sachsen-Teschen / (Kein Hinweis auf Hofbibliothek im Alten Cahier III)”'
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/archduke-charles-duke-of-teschen
+    acquired: 1822
+    method: inheritance
+    direct: true
+    place: vienna
+    label: adoptive son of Duke Albert
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Bereits 1822 veranlasste sein Adoptivsohn Erzherzog Carl die Neugestaltung der Prunkräume …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-albrecht-duke-of-teschen
+    acquired: 1847
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Charles's eldest son
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Das historistische Erscheinungsbild der Fassaden des Palais geht auf Carls ältesten Sohn, Erzherzog Albrecht, zurück …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-friedrich-duke-of-teschen
+    acquired: 1895
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Albrecht's nephew
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1895 erbte Erzherzog Albrechts Neffe, Erzherzog Friedrich, das Palais …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1919-04
+    method: confiscation
+    direct: true
+    place: vienna
+    label: "expropriated by the Republic of Austria: Graphische Sammlung Albertina"
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1919 enteignete die Republik Österreich das erzherzogliche Palais samt der in ihm verwahrten Sammlung und nannte es fortan "Graphische Sammlung Albertina"; zugleich wurde die wertvolle Kupferstichsammlung der kaiserlichen Hofbibliothek mit der Albertina vereinigt.”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q21151884
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q21151884
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q21151884
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q21151884
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q21151884
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q21151884
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q21151884

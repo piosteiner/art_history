@@ -1,9 +1,46 @@
-public_id: "101068"
+public_id: 101068
 name: Charles Aeschimann
 given_name: Charles
 family_name: Aeschimann
 kind: person
-birth: 1908
-death: 1981
+birth: 1908-01-24
+death: 1981-07-03
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+relationships:
+  - type: born_in
+    to: place/geneva
+    sources:
+      - url: https://d-nb.info/gnd/125861338
+        source: gnd
+        accessed: 2026-10-19
+  - type: died_in
+    to: place/montreux
+    sources:
+      - url: https://d-nb.info/gnd/125861338
+        source: gnd
+        accessed: 2026-10-19
+      - url: https://id.loc.gov/authorities/names/n2018040109.html
+        source: lc
+        accessed: 2026-10-19
+identifiers:
+  dodis: P17419
+  gnd: "125861338"
+  hls: "046708"
+  lc: n2018040109
+  viaf: "50201851"
+sources:
+  birth:
+    - url: https://d-nb.info/gnd/125861338
+      source: gnd
+      accessed: 2026-10-19
+    - url: https://id.loc.gov/authorities/names/n2018040109.html
+      source: lc
+      accessed: 2026-10-19
+  death:
+    - url: https://d-nb.info/gnd/125861338
+      source: gnd
+      accessed: 2026-10-19
+    - url: https://id.loc.gov/authorities/names/n2018040109.html
+      source: lc
+      accessed: 2026-10-19

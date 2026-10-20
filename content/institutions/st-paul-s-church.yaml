@@ -1,0 +1,53 @@
+public_id: 101365
+name: St. Paul's Church
+names:
+  - Sint-Pauluskerk, Antwerpen
+  - St. Paul's Church, Antwerp
+  - Church of the Dominicans, Antwerp
+  - Antwerpse dominicanenkerk
+  - lang: nl
+    role: translation
+    text: Sint-Pauluskerk
+  - lang: fr
+    role: translation
+    text: église Saint-Paul d'Anvers
+  - lang: de
+    role: translation
+    text: Sankt Pauluskirche
+  - lang: it
+    role: translation
+    text: chiesa di San Paolo
+  - lang: es
+    role: translation
+    text: iglesia de San Pablo
+  - lang: zh
+    role: translation
+    text: 聖保祿教堂
+founded: 1517
+place: antwerp
+location: [4.40139, 51.22389]
+website_url: https://www.kerknet.be/organisatie/sint-paulusparochie-antwerpen
+wikidata_id: Q2272511
+metadata:
+  sources: [Wikidata Q2272511 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Antwerpen_Sint_Paulus_2.jpg/1280px-Antwerpen_Sint_Paulus_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antwerpen_Sint_Paulus_2.jpg
+    license: CC BY-SA 4.0
+    credit: Zairon
+identifiers:
+  gnd: 4842143-1
+  viaf: "150384132"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q2272511
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q2272511
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q2272511

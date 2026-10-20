@@ -1,0 +1,64 @@
+public_id: 101205
+name: Engelbert II of Nassau
+names:
+  - lang: de
+    role: original
+    text: Engelbert II von Nassau
+  - Engelbert II von Nassau-Dietz
+  - Engelbert II Graf von Nassau-Dillenburg
+  - lang: nl
+    role: translation
+    text: Engelbrecht II van Nassau
+  - lang: fr
+    role: translation
+    text: Engelbert II de Nassau
+  - lang: de
+    role: original
+    text: Engelbert II.
+  - lang: it
+    role: translation
+    text: Engelbert II graaf van Nassau
+  - lang: ja
+    role: translation
+    text: エンゲルベルト2世
+  - lang: zh
+    role: translation
+    text: 恩格爾貝特二世 (拿騷)
+  - lang: ru
+    role: translation
+    text: Энгельберт II Нассауский
+kind: person
+occupations: [military officer, art collector]
+birth: 1451
+death: 1504
+wikidata_id: Q76080
+metadata:
+  sources: [Wikidata Q76080 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Engelbrecht-II-Nassau.jpg/1280px-Engelbrecht-II-Nassau.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Engelbrecht-II-Nassau.jpg
+    license: Public domain
+    credit: Master of Portraits of Princes
+identifiers:
+  gnd: "124352723"
+  idref: "236173707"
+  lc: nr2003005256
+  rkd: "487314"
+  viaf: "37849257"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q76080
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q76080
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q76080
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q76080

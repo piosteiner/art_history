@@ -1,0 +1,21 @@
+public_id: 101160
+name: Maria Isabella of Spain
+kind: person
+birth: 1789-07-06
+death: 1848-09-13
+wikidata_id: Q233196
+metadata:
+  sources: [Wikidata Q233196 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q233196
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q233196
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q233196

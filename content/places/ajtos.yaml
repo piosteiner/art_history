@@ -1,0 +1,16 @@
+public_id: 101297
+name: Ajtós
+kind: site
+location: [21.267, 46.658]
+wikidata_id: Q554803
+metadata:
+  sources: [Wikidata Q554803 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q554803
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q554803

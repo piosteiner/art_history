@@ -1,0 +1,16 @@
+public_id: 101275
+name: Nuremberg
+kind: settlement
+location: [11.0775, 49.45389]
+wikidata_id: Q2090
+metadata:
+  sources: [Wikidata Q2090 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q2090
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q2090

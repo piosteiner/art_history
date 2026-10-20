@@ -1,0 +1,16 @@
+public_id: 101122
+name: Providence
+kind: settlement
+location: [-71.41283, 41.82399]
+wikidata_id: Q18383
+metadata:
+  sources: [Wikidata Q18383 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q18383
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q18383

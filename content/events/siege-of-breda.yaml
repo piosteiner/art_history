@@ -1,0 +1,15 @@
+public_id: 101145
+name: Siege of Breda
+location: [4.78333, 51.58333]
+wikidata_id: Q431488
+metadata:
+  sources: [Wikidata Q431488 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q431488
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q431488

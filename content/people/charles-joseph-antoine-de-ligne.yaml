@@ -1,0 +1,50 @@
+public_id: 101440
+name: Charles-Joseph Antoine de Ligne
+given_name: Charles-Joseph Antoine
+family_name: de Ligne
+names:
+  - Charles-Joseph-Emmanuel de Ligne
+  - Charles Joseph Emmanuel de, Prince Ligne
+  - Prince Charles-Joseph-Emmanuel de Ligne
+  - lang: fr
+    role: translation
+    text: Charles de Ligne
+  - lang: ru
+    role: translation
+    text: Линь, Шарль-Жозеф (1759)
+kind: person
+occupations: [painter, military officer, art collector, soldier]
+birth: 1759-11-25
+death: 1792-09-14
+wikidata_id: Q25713014
+metadata:
+  sources: [Wikidata Q25713014 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/69/Charles-Antoine_Prince_de_Ligne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Charles-Antoine_Prince_de_Ligne.jpg
+    license: Public domain
+    credit: Józef Kosiński
+identifiers:
+  bnf: "145946409"
+  gnd: "120804271"
+  lc: nb2010023188
+  rkd: "353690"
+  ulan: "500321492"
+  viaf: "129273940"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q25713014
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q25713014
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q25713014
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q25713014

@@ -1,0 +1,44 @@
+public_id: 101556
+name: Ferdinand Bloch-Bauer
+names:
+  - lang: ja
+    role: translation
+    text: フェルディナント・ブロッホ＝バウアー
+  - lang: ru
+    role: translation
+    text: Фердинанд Блох-Бауэр
+kind: person
+occupations: [art collector, industrialist, sugar refiner]
+birth: 1864-07-16
+death: 1945-11-13
+wikidata_id: Q1280247
+metadata:
+  sources: [Wikidata Q1280247 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f9/Ferdinand_Bloch_Baur_nel_1935_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Bloch_Baur_nel_1935_(cropped).jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: "122136853"
+  idref: "152678891"
+  lc: n00006753
+  rkd: "439999"
+  viaf: "55374110"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1280247
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1280247
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1280247
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1280247

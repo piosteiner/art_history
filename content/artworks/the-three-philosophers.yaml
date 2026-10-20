@@ -1,0 +1,142 @@
+public_id: 101306
+title_lang: de
+title: Die drei Philosophen
+names:
+  - lang: en
+    role: original
+    text: Three Philosophers
+  - lang: en
+    role: original
+    text: The Three Philosophers
+  - lang: nl
+    role: translation
+    text: De drie filosofen
+  - lang: fr
+    role: translation
+    text: Les Trois Philosophes
+  - lang: it
+    role: translation
+    text: Tre filosofi
+  - lang: es
+    role: translation
+    text: Los tres filósofos
+  - lang: ja
+    role: translation
+    text: 三人の哲学者
+  - lang: zh
+    role: translation
+    text: 三哲人
+  - lang: ko
+    role: translation
+    text: 세 철학자
+  - lang: ru
+    role: translation
+    text: Три философа
+creator: giorgione
+created: 1500/1509
+created_label: 1500s
+materials: [oil paint, canvas]
+dimensions: [125.5, 146.2]
+institution: kunsthistorisches-museum
+inventory_number: GG_111
+wikidata_id: Q877191
+metadata:
+  sources: [Wikidata Q877191 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Giorgione_-_Three_Philosophers_-_Google_Art_Project.jpg/1280px-Giorgione_-_Three_Philosophers_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giorgione_-_Three_Philosophers_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Giorgione
+provenance:
+  - owner: person/taddeo-contarini
+    acquired: 1525 or earlier
+    place: venice
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+        note: “1525 Taddeo Contarini, Venedig; 1545 Dario Contarini; 1636 Slg. Bartolomeo della Nave, Venedig; 1638-1649 Slg. Hamilton; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Dario Contarini
+    acquired: 1545 or earlier
+    place: venice
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+        note: “1525 Taddeo Contarini, Venedig; 1545 Dario Contarini; 1636 Slg. Bartolomeo della Nave, Venedig; 1638-1649 Slg. Hamilton; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/bartolomeo-della-nave
+    acquired: 1636 or earlier
+    place: venice
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+        note: “1525 Taddeo Contarini, Venedig; 1545 Dario Contarini; 1636 Slg. Bartolomeo della Nave, Venedig; 1638-1649 Slg. Hamilton; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/james-hamilton-1st-duke-of-hamilton
+    acquired: 1638
+    ended: 1649
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+        note: “1525 Taddeo Contarini, Venedig; 1545 Dario Contarini; 1636 Slg. Bartolomeo della Nave, Venedig; 1638-1649 Slg. Hamilton; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/archduke-leopold-wilhelm-of-austria
+    acquired: 1649 or later
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+        note: “1525 Taddeo Contarini, Venedig; 1545 Dario Contarini; 1636 Slg. Bartolomeo della Nave, Venedig; 1638-1649 Slg. Hamilton; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    acquired: 1662
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequeathed to Emperor Leopold I
+    sources:
+      - url: https://de.wikipedia.org/wiki/Leopold_Wilhelm_von_%C3%96sterreich
+        note: “Diese Sammlung wurde an seinen Neffen Leopold I. vererbt, so dass sie in kaiserlichen Besitz kam.”
+        source: wikipedia-de-leopold-wilhelm
+        accessed: 2026-10-19
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+identifiers:
+  gnd: 4387271-2
+  viaf: "183010887"
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q877191
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q877191
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q877191
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q877191
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q877191
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q877191
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q877191

@@ -1,0 +1,21 @@
+public_id: 101166
+name: Joseph of Arimathea
+kind: person
+birth: 1/100
+death: 1/100
+wikidata_id: Q271474
+metadata:
+  sources: [Wikidata Q271474 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q271474
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q271474
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q271474

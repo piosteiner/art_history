@@ -1,0 +1,21 @@
+public_id: 101129
+name: Margaret Theresa of Spain
+kind: person
+birth: 1651-07-12
+death: 1673-03-12
+wikidata_id: Q158659
+metadata:
+  sources: [Wikidata Q158659 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q158659
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q158659
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q158659

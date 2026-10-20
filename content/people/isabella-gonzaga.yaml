@@ -1,0 +1,39 @@
+public_id: 101213
+name: Isabella Gonzaga
+names:
+  - lang: fr
+    role: translation
+    text: Isabella Gonzaga di Novellara
+  - lang: ja
+    role: translation
+    text: イザベッラ・ゴンザーガ・ディ・ノヴェッラーラ
+  - lang: zh
+    role: translation
+    text: 伊莎貝拉·貢扎加
+  - lang: ru
+    role: translation
+    text: Изабелла Гонзага ди Новеллара
+kind: person
+occupations: [aristocrat]
+birth: 1576
+death: 1630
+wikidata_id: Q3802273
+metadata:
+  sources: [Wikidata Q3802273 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q3802273
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q3802273
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q3802273
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q3802273

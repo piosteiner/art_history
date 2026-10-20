@@ -1,0 +1,130 @@
+public_id: 101179
+title_lang: es
+title: El caballero de la mano en el pecho
+names:
+  - lang: en
+    role: translation
+    text: The Nobleman with his Hand on his Chest
+  - lang: fr
+    role: translation
+    text: Le Gentilhomme à la main sur la poitrine
+  - lang: de
+    role: translation
+    text: Bildnis eines Edelmanns mit der Hand auf der Brust
+  - lang: ja
+    role: translation
+    text: 胸に手を置く騎士
+  - lang: zh
+    role: translation
+    text: 手放胸口的騎士
+  - lang: ru
+    role: translation
+    text: Рыцарь с рукой на груди
+creator: el-greco
+created: c. 1580
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [81.8, 66.1]
+institution: museo-del-prado
+inventory_number: P000809
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+description_md: "An early Toledo portrait by El Greco, around 1580: an unknown gentleman in black lays his right hand on his chest, perhaps in an oath; the hilt of his sword shows at the edge."
+wikidata_id: Q6402081
+metadata:
+  sources: [Wikidata Q6402081 (retrieved 2026-10-19)]
+relationships:
+  - type: associated_with
+    to: movement/mannerism
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q6402081
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/El_caballero_de_la_mano_en_el_pecho%2C_by_El_Greco%2C_from_Prado_in_Google_Earth.jpg/1280px-El_caballero_de_la_mano_en_el_pecho%2C_by_El_Greco%2C_from_Prado_in_Google_Earth.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_caballero_de_la_mano_en_el_pecho,_by_El_Greco,_from_Prado_in_Google_Earth.jpg
+    license: Public domain
+    credit: El Greco
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1745 or earlier
+    place: quinta-del-duque-del-arco
+    label: Philip V’s collection
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+        note: "“Colección Real (colección Felipe V, Quinta del duque del Arco, El Pardo-Madrid, decimotercia pieza de verano, 1745, [¿nº 411?]; Quinta del duque del Arco, pieza duodécima, 1794, ¿nº 366?).” — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-26
+    records:
+      - date: "1745"
+        room: decimotercia pieza de verano
+        place: quinta-del-duque-del-arco
+        number: "411"
+        document: inventory of Philip V’s collection
+        number_certainty: possible
+      - date: "1794"
+        room: pieza duodécima
+        place: quinta-del-duque-del-arco
+        number: "366"
+        number_certainty: possible
+  - owner: institution/museo-del-prado
+    acquired: 1819 or later
+    method: transfer
+    direct: true
+    place: madrid
+    label: the Prado gives no date; after the inventory of 1794 (the museum opened in 1819)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+        note: "The Prado gives no date for this. — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-26
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-26
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-26
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-26
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-26
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q6402081
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q6402081
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-26
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q6402081
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-26
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q6402081
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-26: https://web.archive.org/web/20250226090837/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9cb73bdf-66e8-4826-a79c-5de2b15a1da6"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-26

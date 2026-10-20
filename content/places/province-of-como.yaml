@@ -1,0 +1,16 @@
+public_id: 101509
+name: Province of Como
+kind: site
+location: [9.08333, 45.81667]
+wikidata_id: Q16161
+metadata:
+  sources: [Wikidata Q16161 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q16161
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q16161

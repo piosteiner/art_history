@@ -1,4 +1,4 @@
-public_id: "100369"
+public_id: 100369
 name: Geneva
 names:
   - lang: ja
@@ -35,6 +35,8 @@ location: [6.15, 46.2]
 wikidata_id: Q71
 metadata:
   sources: [Wikidata Q71 (retrieved 2026-10-13)]
+identifiers:
+  gnd: 4020137-5
 sources:
   kind:
     - accessed: 2026-10-13

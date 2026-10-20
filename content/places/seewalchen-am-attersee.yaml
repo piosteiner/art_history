@@ -1,0 +1,31 @@
+public_id: 101507
+name: Seewalchen am Attersee
+names:
+  - lang: zh
+    role: translation
+    text: 阿特湖畔塞瓦尔兴
+  - lang: ru
+    role: translation
+    text: Зеевальхен-ам-Аттерзее
+kind: site
+parent: austria
+country_code: AT
+location: [13.58361, 47.95028]
+wikidata_id: Q876227
+metadata:
+  sources: [Wikidata Q876227 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4372319-6
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q876227
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q876227
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q876227

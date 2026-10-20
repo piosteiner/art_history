@@ -1,0 +1,16 @@
+public_id: 101396
+name: Albertina
+kind: museum
+founded: 1776
+place: vienna
+location: [16.3681, 48.2046]
+address: Albertinaplatz 1, 1010 Wien
+website_url: https://www.albertina.at
+wikidata_id: Q371908
+metadata:
+  sources: [Wikidata Q371908 (retrieved 2026-10-19)]
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q371908

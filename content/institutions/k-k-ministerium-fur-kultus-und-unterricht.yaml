@@ -1,0 +1,21 @@
+public_id: 101502
+name: K.k. Ministerium für Kultus und Unterricht
+founded: 1867
+dissolved: 1918
+wikidata_id: Q117337577
+metadata:
+  sources: [Wikidata Q117337577 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 128169-0
+  idref: "272494313"
+  lc: n81139268
+  viaf: "129591283"
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q117337577
+  dissolved:
+    - accessed: 2026-10-19
+      property: P576
+      wikidata: Q117337577

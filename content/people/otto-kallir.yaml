@@ -1,0 +1,42 @@
+public_id: 101487
+name: Otto Kallir
+given_name: Otto
+family_name: Kallir
+names:
+  - Otto Nirenstein
+  - Otto Kallir-Nirenstein
+  - lang: ru
+    role: translation
+    text: Отто Каллир
+kind: person
+occupations: [art historian, art dealer, writer, art collector, gallerist, collector]
+birth: 1894-04-01
+death: 30 November 1978
+wikidata_id: Q19754058
+metadata:
+  sources: [Wikidata Q19754058 (retrieved 2026-10-19)]
+identifiers:
+  bnf: 12763049z
+  gnd: "116032448"
+  idref: "081937806"
+  lc: n80139169
+  rkd: "450513"
+  ulan: "500340607"
+  viaf: "109000605"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q19754058
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q19754058
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q19754058
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q19754058

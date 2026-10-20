@@ -1,0 +1,16 @@
+public_id: 101277
+name: Colmar
+kind: settlement
+location: [7.355, 48.08111]
+wikidata_id: Q130994
+metadata:
+  sources: [Wikidata Q130994 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q130994
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q130994

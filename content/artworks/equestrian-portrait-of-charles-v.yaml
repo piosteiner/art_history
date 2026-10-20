@@ -1,0 +1,173 @@
+public_id: 101172
+title_lang: es
+title: Carlos V en la batalla de Mühlberg
+names:
+  - lang: nl
+    role: original
+    text: Portret van Karel V van Habsburg (1500-1558) bij de Slag van Mühlberg (1547)
+  - lang: en
+    role: original
+    text: Portrait of Charles V of Habsburg (1500-1558) at the Battle of Mühlberg (1547)
+  - Charles V at Mühlberg
+  - lang: en
+    role: original
+    text: Equestrian Portrait of Charles V
+  - lang: nl
+    role: original
+    text: Ruiterportret van Charles V
+  - lang: fr
+    role: translation
+    text: Charles Quint à cheval à Mühlberg
+  - lang: de
+    role: translation
+    text: Kaiser Karl V. nach der Schlacht bei Mühlberg
+  - lang: it
+    role: translation
+    text: Ritratto di Carlo V a cavallo
+  - lang: es
+    role: original
+    text: Carlos V a caballo en Mühlberg
+  - lang: ja
+    role: translation
+    text: 騎乗像
+  - lang: zh
+    role: translation
+    text: 在米赫爾貝格的查理五世
+  - lang: ru
+    role: translation
+    text: Конный портрет Карла V
+creator: titian
+created: 1548
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [335, 283]
+institution: museo-del-prado
+inventory_number: P000410
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+description_md: Titian painted the Emperor Charles V in Augsburg in 1548, on horseback in the armour he wore at his victory over the Protestant princes at Mühlberg the year before — the model of the equestrian state portrait for generations.
+wikidata_id: Q1123378
+metadata:
+  sources: [Wikidata Q1123378 (retrieved 2026-10-19)]
+relationships:
+  - type: created_in
+    to: place/augsburg
+    period: 1548
+    sources:
+      - accessed: 2026-10-19
+        property: P1071
+        wikidata: Q1123378
+  - type: depicts
+    to: event/battle-of-muhlberg
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q1123378
+  - type: depicts_person
+    to: person/charles-v
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q1123378
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q1123378
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Carlos_V_en_M%C3%BChlberg%2C_by_Titian%2C_from_Prado_in_Google_Earth.jpg/1280px-Carlos_V_en_M%C3%BChlberg%2C_by_Titian%2C_from_Prado_in_Google_Earth.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carlos_V_en_M%C3%BChlberg,_by_Titian,_from_Prado_in_Google_Earth.jpg
+    license: Public domain
+    credit: Titian
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1700 or earlier
+    place: royal-alcazar-of-madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "“Colección Real (Real Alcázar, Madrid, salón de los espejos-cuartos principales, 1700, nº 1; Palacio Real Nuevo, Madrid, antesala de la Furriera, 1747, nº 1; Palacio Real Nuevo, Madrid, paso de tribuna y trascuartos, 1772, nº 1; Palacio Real Nuevo, Madrid, pieza de comer, 1794, nº 1; Palacio Real, Madrid, pieza de comer, 1814-1818, nº 1).” — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
+    records:
+      - date: "1700"
+        room: salón de los espejos, cuartos principales
+        place: royal-alcazar-of-madrid
+        number: "1"
+      - date: "1747"
+        room: antesala de la Furriera
+        place: royal-palace-of-madrid
+        number: "1"
+      - date: "1772"
+        room: paso de tribuna y trascuartos
+        place: royal-palace-of-madrid
+        number: "1"
+      - date: "1794"
+        room: pieza de comer
+        place: royal-palace-of-madrid
+        number: "1"
+      - date: 1814/1818
+        room: pieza de comer
+        place: royal-palace-of-madrid
+        number: "1"
+  - owner: institution/museo-del-prado
+    acquired: 1819 or later
+    method: transfer
+    direct: true
+    place: madrid
+    label: the Prado gives no date; after the Royal Palace’s inventory of 1814–1818 (the museum opened in 1819)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+        note: "The Prado gives no date for this. — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q1123378
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q1123378
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q1123378
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q1123378
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127215624/https://www.museodelprado.es/coleccion/obra-de-arte/wd/e7c91aaa-b849-478c-a857-0bb58a6b6729"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27

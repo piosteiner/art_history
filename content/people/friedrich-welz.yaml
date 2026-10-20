@@ -1,0 +1,39 @@
+public_id: 101483
+name: Friedrich Welz
+given_name: Friedrich
+family_name: Welz
+names:
+  - Welz, Friedrich Maximilian
+  - lang: ru
+    role: translation
+    text: Фридрих Вельц
+kind: person
+occupations: [publisher, art collector, art dealer, merchant, collector]
+birth: 1903-11-02
+death: 1980-02-05
+wikidata_id: Q1462781
+metadata:
+  sources: [Wikidata Q1462781 (retrieved 2026-10-19)]
+identifiers:
+  bnf: 12878938c
+  gnd: "119224712"
+  idref: "082770867"
+  lc: n83142480
+  viaf: "2600749"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1462781
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q1462781
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q1462781
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q1462781

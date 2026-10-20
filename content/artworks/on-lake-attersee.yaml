@@ -1,0 +1,168 @@
+public_id: 101463
+title_lang: en
+title: Attersee
+names:
+  - lang: en
+    role: original
+    text: On Lake Attersee
+  - lang: nl
+    role: translation
+    text: Aan het Attermeer
+  - lang: fr
+    role: translation
+    text: Sur le lac Attersee
+  - lang: de
+    role: translation
+    text: Am Attersee
+  - lang: ru
+    role: translation
+    text: На Аттерзе
+creator: gustav-klimt
+created: 1900
+materials: [oil paint, canvas]
+dimensions: [80.2, 80.2]
+institution: leopold-museum
+inventory_number: LM 4148
+wikidata_id: Q19912809
+metadata:
+  sources: [Wikidata Q19912809 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Gustav_Klimt_-_Attersee_-_Google_Art_Project.jpg/1280px-Gustav_Klimt_-_Attersee_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Attersee_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: institution/k-k-ministerium-fur-kultus-und-unterricht
+    acquired: 1901
+    ended: 1903
+    method: purchase
+    place: vienna
+    label: bought from the artist after the 10th Secession exhibition
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/belvedere
+    numbers:
+      - kind: inventory
+        number: "433"
+    acquired: 1903
+    ended: 1923
+    method: transfer
+    direct: true
+    place: vienna
+    label: Moderne Galerie
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: catalogue
+        date: "1903"
+        place: vienna
+        number: "158"
+        document: Katalog der Modernen Galerie
+  - owner: person/gustav-nebehay
+    role: dealer
+    acquired: 1923-07-21
+    ended: 1926
+    method: exchange
+    direct: true
+    place: vienna
+    label: Kunsthandlung Gustav Nebehay
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/neue-galerie-vienna
+    role: dealer
+    acquired: 1926
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Bernhard Panzer
+    acquired: after 1928
+    ended: 1934
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Bernhard Panzer
+    role: estate
+    acquired: 1934
+    ended: 1943
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Maria Dressler, née Siedek
+    acquired: before 1964
+    ended: 1992
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Maria Ittner, née Dressler
+    acquired: 1992
+    ended: 1995
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 31 January 1995
+    method: purchase
+    direct: true
+    place: vienna
+    label: through Adeline Stummvoll, arranged by Dr. Martin Eder
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/4328-am-attersee/
+        note: “K.K. Ministerium für Cultus und Unterricht, Wien (1901-1903); (1) / Österreichische Galerie Belvedere, Wien (1903-1923); (2) / Kunsthandlung Gustav Nebehay, Wien (1923-1926); (3) / Kunsthandlung Neue Galerie, Wien (ab 1926); (4) / Bernhard Panzer, Wien (nach 1928-1934); / Verlassenschaft nach Bernhard Panzer, Wien (1934-1943); (5) / Maria Dressler, geb. Siedek, Wien (vor 1964-1992); (6) / Maria Ittner, geb. Dressler (1992-1995); (7) / Leopold Museum-Privatstiftung, Wien (1995); (8) / Archiv des Leopold Museums, Kaufvertrag vom 31.01.1995. Ankauf über Adeline Stummvoll und Vermittlung von RA Dr. Martin Eder (Vorstandsmitglied der Stiftung)”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q19912809
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q19912809
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q19912809
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q19912809
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q19912809
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q19912809
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q19912809

@@ -1,0 +1,157 @@
+public_id: 101170
+title_lang: es
+title: Mesa de los Pecados Capitales
+names:
+  - lang: nl
+    role: alternative
+    text: Tafelblad met de zeven hoofdzonden
+  - R-R
+  - lang: en
+    role: translation
+    text: The Seven Deadly Sins and the Four Last Things
+  - lang: nl
+    role: original
+    text: Zeven Hoofdzonden
+  - lang: fr
+    role: translation
+    text: Les Sept Péchés capitaux et les Quatre Dernières Étapes humaines
+  - lang: de
+    role: translation
+    text: Die sieben Todsünden und vier letzten Dinge
+  - lang: it
+    role: translation
+    text: Sette peccati capitali
+  - lang: es
+    role: translation
+    text: Mesa de los pecados capitales
+  - lang: ja
+    role: translation
+    text: 七つの大罪と四終
+  - lang: ko
+    role: translation
+    text: 일곱 가지 대죄와 네 가지 종말
+  - lang: ru
+    role: translation
+    text: Семь смертных грехов и Четыре последние вещи
+creator: hieronymus-bosch
+created: 1505/1510
+kind: oil painting
+medium: Oil on poplar panel
+materials: [oil paint, panel]
+dimensions: [119.5, 139.5]
+institution: museo-del-prado
+inventory_number: P002822
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+on_loan: true
+on_loan_since: 1936-10-26
+description_md: "A tabletop by Hieronymus Bosch or his workshop: the seven deadly sins in a circle around the eye of God, with Christ at its pupil, and in the corners death, judgement, hell and glory. Philip II owned it before 1560 and kept it in his rooms at El Escorial."
+wikidata_id: Q2304870
+metadata:
+  sources: [Wikidata Q2304870 (retrieved 2026-10-19)]
+relationships:
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q2304870
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Hieronymus_Bosch-_The_Seven_Deadly_Sins_and_the_Four_Last_Things.JPG/1280px-Hieronymus_Bosch-_The_Seven_Deadly_Sins_and_the_Four_Last_Things.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Hieronymus_Bosch-_The_Seven_Deadly_Sins_and_the_Four_Last_Things.JPG
+    license: Public domain
+    credit: Hieronymus Bosch or follower
+provenance:
+  - owner: person/philip-ii-of-spain
+    acquired: before 1560
+    ended: 1574
+    label: the patron is unknown
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "“Comitente desconocido; adquirida por Felipe II antes de 1560;” — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
+  - owner: institution/royal-monastery-of-san-lorenzo-de-el-escorial
+    acquired: 1574
+    direct: true
+    label: in the monastery 1574–1936
+    notes_md: Today a deposit of Patrimonio Nacional at the Prado, belonging to the Royal Patronage of the Monastery of San Lorenzo de El Escorial.
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "“en el monasterio de San Lorenzo del Escorial desde 1574 hasta 1936;” — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
+  - owner: institution/junta-de-incautacion-y-proteccion-del-tesoro-artistico
+    role: event
+    acquired: 1936-10-26
+    method: transfer
+    label: deposited at the Museo del Prado by the Junta de Incautación y Protección del Tesoro Artístico (Civil War)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "“depositada en el Museo del Prado por la Junta de Incautación y Protección del Tesoro Artístico el 26 de octubre de 1936;” — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
+  - owner: institution/patrimonio-nacional
+    role: event
+    acquired: 1943-03-02
+    method: transfer
+    label: its deposit at the Prado established by decree; a deposit of Patrimonio Nacional (Royal Patronage of the Monastery of El Escorial)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+        note: "“por Decreto de 02-03-1943 quedó establecido su depósito en el Museo del Prado; depósito del Patrimonio Nacional perteneciente al Real Patronato del Monasterio de San Lorenzo de El Escorial” — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+        source: museo-del-prado-coleccion
+        accessed: 2026-03-14
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+      source: museo-del-prado-coleccion
+      accessed: 2026-03-14
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+      source: museo-del-prado-coleccion
+      accessed: 2026-03-14
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+      source: museo-del-prado-coleccion
+      accessed: 2026-03-14
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+      source: museo-del-prado-coleccion
+      accessed: 2026-03-14
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2304870
+  on_loan:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+      source: museo-del-prado-coleccion
+      accessed: 2026-03-14
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2304870
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+      source: museo-del-prado-coleccion
+      accessed: 2026-03-14
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2304870
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+      source: museo-del-prado-coleccion
+      accessed: 2026-03-14
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2304870
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-03-14: https://web.archive.org/web/20260314081908/https://www.museodelprado.es/coleccion/obra-de-arte/wd/3fc0a84e-d77d-4217-b960-8a34b8873b70"
+      source: museo-del-prado-coleccion
+      accessed: 2026-03-14

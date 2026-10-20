@@ -1,0 +1,47 @@
+public_id: 101337
+name: Gottfried van Swieten
+names:
+  - lang: ja
+    role: translation
+    text: ゴットフリート・ヴァン・スヴィーテン
+  - lang: zh
+    role: translation
+    text: 史威登
+  - lang: ru
+    role: translation
+    text: Готфрид ван Свитен
+kind: person
+occupations: [librarian, diplomat, librettist, composer, politician]
+birth: 1733-10-29
+death: 1803-03-29
+wikidata_id: Q549419
+metadata:
+  sources: [Wikidata Q549419 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f9/Gottried_van_Swieten_%28c_clavereau%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gottried_van_Swieten_(c_clavereau).jpg
+    license: Public domain
+    credit: C. Clavereau
+identifiers:
+  bnf: 13925239b
+  gnd: "118620185"
+  idref: "124687091"
+  lc: n81018892
+  viaf: "10035684"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q549419
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q549419
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q549419
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q549419

@@ -1,0 +1,50 @@
+public_id: 101450
+name: Julien de Parme
+names:
+  - lang: fr
+    role: original
+    text: Jean-Antoine Julien
+  - Julien de Parme Julien
+  - Julien
+  - Jean Antoine Julien de Parme
+  - Bartolomeo Ottolini
+  - Jean Antoine Julien
+  - M. Julien de Parme
+  - Jullien de Parme
+  - Julien de Parma
+  - lang: ja
+    role: translation
+    text: ジュリアン・デ・パルメ
+  - lang: ru
+    role: translation
+    text: Жюльен, Жан-Антуан
+birth: 1736-04-23
+death: 1799-07-28
+wikidata_id: Q3189710
+metadata:
+  sources: [Wikidata Q3189710 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Julien_de_Parme_1799_autoportrait_07242.JPG/1280px-Julien_de_Parme_1799_autoportrait_07242.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Julien_de_Parme_1799_autoportrait_07242.JPG
+    license: CC BY-SA 4.0
+    credit: G.Garitan
+identifiers:
+  bnf: 13736927c
+  gnd: "121053237"
+  hls: "044891"
+  idref: "066911400"
+  kulturnav: 27e06195-c05f-42bc-9e77-4508b8d9d737
+  lc: nr98039658
+  rkd: "43068"
+  sikart: "4027800"
+  ulan: "500019743"
+  viaf: "35302366"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q3189710
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q3189710

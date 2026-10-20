@@ -1,0 +1,37 @@
+public_id: 101193
+name: Quinta del Sordo
+names:
+  - lang: ja
+    role: translation
+    text: 聾者の家
+  - lang: zh
+    role: translation
+    text: 金塔德尔索尔多
+  - lang: ko
+    role: translation
+    text: 귀머거리의 집
+  - lang: ru
+    role: translation
+    text: Дом Глухого
+kind: site
+parent: madrid
+country_code: ES
+location: [-3.72599, 40.41147]
+wikidata_id: Q2344241
+metadata:
+  sources: [Wikidata Q2344241 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "1191118096"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q2344241
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q2344241
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q2344241

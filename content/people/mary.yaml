@@ -1,0 +1,94 @@
+public_id: 101243
+name: Mary
+names:
+  - lang: arc
+    role: original
+    text: ܡܪܝܡ
+  - lang: he
+    role: original
+    text: מרים
+  - Mother of God
+  - Blessed Virgin
+  - Mary, mother of Jesus
+  - Holy Virgin
+  - The Blessed Mother
+  - Notre Dame
+  - Miriam
+  - St Mary the Virgin
+  - Maryam
+  - Maria
+  - The Madonna
+  - Madonna
+  - Our Lady
+  - Mīryām
+  - Blessed Virgin Mary
+  - Saint Mary
+  - Blessed Mother
+  - Holy Mary
+  - Queen of the Universe
+  - God-Bearer
+  - The Blessed Virgin Mary
+  - The Blessed Virgin
+  - Mary, Mother of our Lord
+  - Mother of Jesus
+  - Mary the Virgin
+  - Virgin God-Bearer
+  - the Virgin Mary
+  - Most Blessed
+  - Theotokos
+  - Immaculate Mary
+  - Virgin Mary
+  - lang: fr
+    role: translation
+    text: Marie
+  - lang: es
+    role: translation
+    text: Virgen María
+  - lang: ja
+    role: translation
+    text: 聖母マリア
+  - lang: zh
+    role: translation
+    text: 圣母玛利亚
+  - lang: ko
+    role: translation
+    text: 마리아
+  - lang: ru
+    role: translation
+    text: Дева Мария
+kind: person
+occupations: [seamster]
+birth: c. 18 BCE
+death: 48
+wikidata_id: Q345
+metadata:
+  sources: [Wikidata Q345 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bd/Duccio_The-Madonna-and-Child-128.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Duccio_The-Madonna-and-Child-128.jpg
+    license: Public domain
+    credit: Duccio di Buoninsegna
+identifiers:
+  bnf: 11934598c
+  gnd: "118640909"
+  idref: "027793745"
+  kulturnav: e2903551-cc56-46a3-9a8d-873b45f1f841
+  lc: n81018544
+  viaf: "86913753"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q345
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q345
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q345
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q345

@@ -1,0 +1,51 @@
+public_id: 101146
+name: Ambrogio Spinola, 1st Marquis of the Balbases
+names:
+  - lang: es
+    role: original
+    text: Ambrosio Spínola Doria
+kind: person
+occupations: [military officer, soldier, military leader, Generalfeldmarschall]
+birth: 1569
+death: 1630-09-25
+wikidata_id: Q359936
+metadata:
+  sources: [Wikidata Q359936 (retrieved 2026-10-19)]
+relationships:
+  - type: born_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-19
+        property: P19
+        wikidata: Q359936
+  - type: died_in
+    to: place/castelnuovo-scrivia
+    sources:
+      - accessed: 2026-10-19
+        property: P20
+        wikidata: Q359936
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Peter_Paul_Rubens_-_Portrait_of_Ambrogio_Spinola_%28ca._1625%2C_National_Gallery_in_Prague%29.jpg/1280px-Peter_Paul_Rubens_-_Portrait_of_Ambrogio_Spinola_%28ca._1625%2C_National_Gallery_in_Prague%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Portrait_of_Ambrogio_Spinola_(ca._1625,_National_Gallery_in_Prague).jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+identifiers:
+  bnf: 15553919c
+  gnd: "118616226"
+  idref: "117984906"
+  lc: nr93015050
+  rkd: "445440"
+  viaf: "88863426"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q359936
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q359936
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q359936

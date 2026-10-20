@@ -1,0 +1,32 @@
+public_id: 101493
+name: Richard Lányi
+given_name: Richard
+family_name: Lányi
+names: [Richard Löwy]
+kind: person
+occupations: [bookseller, publisher, antiquarian, art collector]
+birth: 1884-12-09
+death: 1942-05-28
+wikidata_id: Q106672151
+metadata:
+  sources: [Wikidata Q106672151 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "132966271"
+  viaf: "52863820"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q106672151
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q106672151
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q106672151
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q106672151

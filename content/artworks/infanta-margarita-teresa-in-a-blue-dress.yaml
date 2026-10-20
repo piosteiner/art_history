@@ -1,0 +1,107 @@
+public_id: 101319
+title_lang: en
+title: Infanta Margarita Teresa in a Blue Dress
+names:
+  - lang: fr
+    role: translation
+    text: L'Infante Marguerite en bleu
+  - lang: de
+    role: translation
+    text: Infantin Margarita Teresa (1651-1673) in blauem Kleid
+  - lang: it
+    role: translation
+    text: Ritratto dell'infanta Margherita in azzurro
+  - lang: es
+    role: translation
+    text: La Infanta Margarita en azul
+  - lang: ja
+    role: translation
+    text: 青いドレスのマルガリータ王女
+  - lang: zh
+    role: translation
+    text: 藍色洋裝的馬佳莉塔·德雷莎公主
+creator: diego-velazquez
+created: 1659
+materials: [oil paint, canvas]
+dimensions: [127, 107]
+institution: kunsthistorisches-museum
+inventory_number: GG_2130
+wikidata_id: Q2264914
+metadata:
+  sources: [Wikidata Q2264914 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Diego_Rodriguez_de_Silva_y_Vel%C3%A1zquez_-_Infanta_Margarita_Teresa_in_a_Blue_Dress_-_Google_Art_Project.jpg/1280px-Diego_Rodriguez_de_Silva_y_Vel%C3%A1zquez_-_Infanta_Margarita_Teresa_in_a_Blue_Dress_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Diego_Rodriguez_de_Silva_y_Vel%C3%A1zquez_-_Infanta_Margarita_Teresa_in_a_Blue_Dress_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Diego Velázquez
+provenance:
+  - owner: person/philip-iv-of-spain
+    place: madrid
+    sources:
+      - url: https://www.khm.at/kunstwerke/infantin-margarita-1651-1673-in-blauem-kleid-2027
+        note: “1659 als Geschenk Königs Philip IV an den Wiener Hof gesandt; 1855 in den Appartements von Erzherzogin Sophie; 1922 von Hofburg übernommen”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/leopold-i-holy-roman-emperor
+    acquired: 1659
+    method: gift
+    direct: true
+    place: vienna
+    label: sent to the Vienna court
+    sources:
+      - url: https://www.khm.at/kunstwerke/infantin-margarita-1651-1673-in-blauem-kleid-2027
+        note: “1659 als Geschenk Königs Philip IV an den Wiener Hof gesandt; 1855 in den Appartements von Erzherzogin Sophie; 1922 von Hofburg übernommen”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    place: vienna
+    label: Hofburg
+    sources:
+      - url: https://www.khm.at/kunstwerke/infantin-margarita-1651-1673-in-blauem-kleid-2027
+        note: “1659 als Geschenk Königs Philip IV an den Wiener Hof gesandt; 1855 in den Appartements von Erzherzogin Sophie; 1922 von Hofburg übernommen”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: sighting
+        date: "1855"
+        room: apartments of Archduchess Sophie, Hofburg
+        place: vienna
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1922
+    method: transfer
+    direct: true
+    place: vienna
+    label: taken over from the Hofburg
+    sources:
+      - url: https://www.khm.at/kunstwerke/infantin-margarita-1651-1673-in-blauem-kleid-2027
+        note: “1659 als Geschenk Königs Philip IV an den Wiener Hof gesandt; 1855 in den Appartements von Erzherzogin Sophie; 1922 von Hofburg übernommen”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q2264914
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q2264914
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2264914
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2264914
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q2264914
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2264914
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2264914

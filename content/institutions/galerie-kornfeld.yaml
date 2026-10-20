@@ -1,0 +1,45 @@
+public_id: 101497
+name: Galerie Kornfeld
+names:
+  - Klipstein & Kornfeld
+  - Kornfeld & Klipstein
+  - Richard Gutekunst
+  - Klipstein and Kornfeld
+  - Kornfeld and Klipstein
+  - Gutekunst & Klipstein
+  - Galerie Kornfeld Berne
+  - lang: de
+    role: translation
+    text: Galerie Kornfeld Auktionen
+founded: 1864-10-01
+place: bern
+location: [7.43155, 46.94744]
+address: 41 Laupenstrasse
+website_url: https://www.kornfeld.ch/
+wikidata_id: Q23984338
+metadata:
+  sources: [Wikidata Q23984338 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Kornfeld_Gartenansicht.JPG/1280px-Kornfeld_Gartenansicht.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kornfeld_Gartenansicht.JPG
+    license: CC BY-SA 4.0
+    credit: Sjots
+identifiers:
+  bnf: "135100370"
+  gnd: 2073014-7
+  idref: "077626125"
+  lc: no97020248
+  viaf: "137238466"
+sources:
+  address:
+    - accessed: 2026-10-19
+      property: P6375
+      wikidata: Q23984338
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q23984338
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q23984338

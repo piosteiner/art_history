@@ -1,0 +1,23 @@
+public_id: 101167
+name: John the Evangelist
+given_name: John the
+family_name: Evangelist
+kind: person
+birth: 10
+death: 98
+wikidata_id: Q328804
+metadata:
+  sources: [Wikidata Q328804 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q328804
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q328804
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q328804

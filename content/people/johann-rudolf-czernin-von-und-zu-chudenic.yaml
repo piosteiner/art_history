@@ -1,0 +1,50 @@
+public_id: 101338
+name: Johann Rudolf Czernin von und zu Chudenic
+names:
+  - Graf Czernin von Chudenitz
+  - Count Czernin von Chudenitz
+  - Johann Rudolf Graf Czernin von und zu Chudenitz
+  - Czernin von Chudenitz
+  - Count Johann Rudolph Czernin von Chudenitz
+  - Johann Rudolph Czernin von Chudenitz
+  - lang: nl
+    role: translation
+    text: Johann Rudolf Czernin von und zu Chudenitz
+  - lang: ja
+    role: translation
+    text: ヨハン・ルドルフ・チェルニン
+kind: person
+occupations: [art historian, composer, art collector, official, philanthropist, violinist, patron of the arts, beamter, chamberlain, count]
+birth: 1757-06-09
+death: 1845-04-23
+wikidata_id: Q87623
+metadata:
+  sources: [Wikidata Q87623 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Jan_Rudolf_Czernin_z_Chudenic_%281757%E2%80%931845%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Rudolf_Czernin_z_Chudenic_(1757%E2%80%931845).jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: "130133469"
+  idref: "191613916"
+  lc: n2015047721
+  rkd: "348376"
+  viaf: "18323139"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q87623
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q87623
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q87623
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q87623

@@ -1,0 +1,38 @@
+public_id: 101451
+name: Cornelis Ploos van Amstel
+given_name: Cornelis Ploos
+family_name: van Amstel
+names:
+  - Cornelis Jacobsz. Ploos van Amstel
+  - Jacob Cornelis Ploos van Amstel
+  - lang: ru
+    role: translation
+    text: Корнелис Плоос ван Амстел
+birth: 1726-01-04
+death: 1798-12-20
+wikidata_id: Q2541552
+metadata:
+  sources: [Wikidata Q2541552 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d3/George_van_der_Mijn_-_Portret_van_Cornelis_Ploos_van_Amstel_%281726-1798%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:George_van_der_Mijn_-_Portret_van_Cornelis_Ploos_van_Amstel_(1726-1798).jpg
+    license: Public domain
+    credit: George van der Mijn
+identifiers:
+  bnf: 11972943j
+  gnd: 11915255X
+  idref: "027754502"
+  kulturnav: 160794b9-75cc-4741-ada5-bed760e04a5b
+  lc: n81014452
+  rkd: "63882"
+  ulan: "500004484"
+  viaf: "20484255"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q2541552
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q2541552

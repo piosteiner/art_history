@@ -1,0 +1,33 @@
+public_id: 101494
+name: Jenö Eisenberger
+given_name: Jenö
+family_name: Eisenberger
+names: [Jenő Eisenberger]
+kind: person
+occupations: [merchant, art collector, entrepreneur]
+birth: 1922-11-16
+death: 2016-08-14
+wikidata_id: Q1687465
+metadata:
+  sources: [Wikidata Q1687465 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "123837758"
+  lc: nr2002021508
+  viaf: "146165494"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1687465
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q1687465
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q1687465
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q1687465

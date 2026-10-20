@@ -1,0 +1,28 @@
+public_id: 101336
+name: Maria Thins
+names:
+  - lang: ja
+    role: translation
+    text: マーリア・ティンス
+  - lang: zh
+    role: translation
+    text: 玛丽亚·廷斯
+kind: person
+birth: 1590s
+death: 1680-12-27
+wikidata_id: Q4497888
+metadata:
+  sources: [Wikidata Q4497888 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q4497888
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q4497888
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q4497888

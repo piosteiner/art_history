@@ -1,0 +1,21 @@
+public_id: 101140
+name: Josefa de Tudó, 1st Countess of Castillo Fiel
+kind: person
+birth: 1779-05-19
+death: 1869-09-20
+wikidata_id: Q195217
+metadata:
+  sources: [Wikidata Q195217 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q195217
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q195217
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q195217

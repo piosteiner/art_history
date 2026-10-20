@@ -1,0 +1,37 @@
+public_id: 101484
+name: Heinrich Rieger
+given_name: Heinrich
+family_name: Rieger
+names:
+  - lang: ru
+    role: translation
+    text: Генрих Ригер
+kind: person
+occupations: [dentist, art collector]
+birth: 1868-12-25
+death: 1942-10-17
+wikidata_id: Q55006961
+metadata:
+  sources: [Wikidata Q55006961 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "131888331"
+  idref: 19463406X
+  lc: no2008119220
+  viaf: "297121379"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q55006961
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q55006961
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q55006961
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q55006961

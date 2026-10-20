@@ -1,0 +1,18 @@
+public_id: 101135
+name: José Nieto Velázquez
+given_name: José Nieto
+family_name: Velázquez
+kind: person
+death: 1684
+wikidata_id: Q23620497
+metadata:
+  sources: [Wikidata Q23620497 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q23620497
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q23620497

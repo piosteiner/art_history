@@ -1,0 +1,71 @@
+public_id: 101218
+name: Charles I of England
+names:
+  - King Charles the Martyr
+  - Charles the 1st
+  - King Charles I
+  - lang: nl
+    role: translation
+    text: Karel I van Engeland
+  - lang: fr
+    role: translation
+    text: Charles Ier
+  - lang: de
+    role: translation
+    text: Karl I.
+  - lang: it
+    role: translation
+    text: Carlo I d'Inghilterra
+  - lang: es
+    role: translation
+    text: Carlos I de Inglaterra
+  - lang: ja
+    role: translation
+    text: チャールズ1世 (イングランド王)
+  - lang: zh
+    role: translation
+    text: 查理一世
+  - lang: ko
+    role: translation
+    text: 찰스 1세
+  - lang: ru
+    role: translation
+    text: Карл I
+kind: person
+occupations: [politician, art collector, monarch]
+birth: 1600-11-29
+death: 1649-02-09
+wikidata_id: Q81506
+metadata:
+  sources: [Wikidata Q81506 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d3/Anthony_van_Dyck_%281599-1641%29_-_Charles_I_%281600-1649%29_-_RCIN_404398_-_Royal_Collection.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anthony_van_Dyck_(1599-1641)_-_Charles_I_(1600-1649)_-_RCIN_404398_-_Royal_Collection.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+identifiers:
+  bnf: 13006763v
+  dodis: P48757
+  gnd: "118720856"
+  idref: "027668452"
+  lc: n79132433
+  rkd: "448913"
+  ulan: "500272099"
+  viaf: "67750325"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q81506
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q81506
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q81506
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q81506

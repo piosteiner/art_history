@@ -1,7 +1,8 @@
-public_id: "100836"
+public_id: 100836
 name: Bauhaus
 kind: movement
 period: 1919/1933
+description_md: Bauhaus was a school of design with its base in Weimar and later moved to Dessau and finally to Berlin. [Britannica](https://www.britannica.com/topic/Bauhaus)
 wikidata_id: Q124354
 metadata:
   sources: [Wikidata Q124354 (retrieved 2026-10-18)]
@@ -17,4 +18,8 @@ sources:
     - accessed: 2026-10-18
       property: P31
       wikidata: Q124354
-  period: ["Getty Art & Architecture Thesaurus, “Bauhaus” (AAT 300021432): “active in Weimar from 1919 to 1925, in Dessau from 1925 to 1932, and in Berlin from 1932 to 1933”"]
+  period:
+    - "Getty Art & Architecture Thesaurus, “Bauhaus” (AAT 300021432): “active in Weimar from 1919 to 1925, in Dessau from 1925 to 1932, and in Berlin from 1932 to 1933”"
+    - accessed: 2026-10-19
+      property: P580
+      wikidata: Q124354

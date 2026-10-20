@@ -1,0 +1,51 @@
+public_id: 101362
+name: Andrea Palladio
+names:
+  - Andrea di Pietro
+  - A. Palladio
+  - Palladio
+  - Andrea di Pietro della Gondola Palladio
+  - André Palladio
+  - Andrea di Pietro della Gondola
+  - lang: ja
+    role: translation
+    text: アンドレーア・パッラーディオ
+  - lang: zh
+    role: translation
+    text: 安德烈亚·帕拉迪奥
+  - lang: ko
+    role: translation
+    text: 안드레아 팔라디오
+  - lang: ru
+    role: translation
+    text: Андреа Палладио
+birth: 1508-12-10
+death: 1580-08-29
+death_label: c. 29 August 1580
+wikidata_id: Q177692
+metadata:
+  sources: [Wikidata Q177692 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Andrea_Palladio2.jpeg/1280px-Andrea_Palladio2.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Palladio2.jpeg
+    license: Public domain
+    credit: Alessandro Maganza
+identifiers:
+  bnf: "119184708"
+  gnd: "118591355"
+  idref: 02738425X
+  kulturnav: 509817fc-cbfe-4dc5-b860-dcba2ca84bed
+  lc: n80038415
+  nlk: KAC201909951
+  rkd: "61573"
+  ulan: "500021650"
+  viaf: "17227673"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q177692
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q177692

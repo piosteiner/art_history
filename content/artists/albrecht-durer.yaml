@@ -1,0 +1,222 @@
+public_id: 101180
+name: Albrecht Dürer
+given_name: Albrecht
+family_name: Dürer
+birth: 1471-05-21
+death: 1528-04-06
+wikidata_id: Q5580
+metadata:
+  sources: [Wikidata Q5580 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/duchy-of-bavaria
+    sources:
+      - accessed: 2026-10-19
+        property: P27
+        wikidata: Q5580
+  - type: born_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-10-19
+        property: P19
+        wikidata: Q5580
+      - url: https://d-nb.info/gnd/11852786X
+        source: gnd
+        accessed: 2026-10-19
+      - url: https://recherche.sik-isea.ch/sik:person-4023014/in/sikart
+        source: sikart
+        accessed: 2026-10-19
+      - url: https://rkd.nl/en/explore/artists/24586
+        source: rkd
+        accessed: 2026-10-19
+      - url: https://id.loc.gov/authorities/names/n79118011.html
+        source: lc
+        accessed: 2026-10-19
+      - url: https://data.bnf.fr/ark:/12148/cb11900585f
+        source: bnf
+        accessed: 2026-10-19
+  - type: died_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-10-19
+        property: P20
+        wikidata: Q5580
+      - url: https://d-nb.info/gnd/11852786X
+        source: gnd
+        accessed: 2026-10-19
+      - url: https://recherche.sik-isea.ch/sik:person-4023014/in/sikart
+        source: sikart
+        accessed: 2026-10-19
+      - url: https://rkd.nl/en/explore/artists/24586
+        source: rkd
+        accessed: 2026-10-19
+      - url: https://id.loc.gov/authorities/names/n79118011.html
+        source: lc
+        accessed: 2026-10-19
+      - url: https://data.bnf.fr/ark:/12148/cb11900585f
+        source: bnf
+        accessed: 2026-10-19
+  - type: lived_in
+    to: place/venice
+    period: 1505/1507
+    sources:
+      - accessed: 2026-10-19
+        property: P551
+        wikidata: Q5580
+  - type: lived_in
+    to: place/nuremberg
+    period: 1507/1528
+    sources:
+      - accessed: 2026-10-19
+        property: P551
+        wikidata: Q5580
+  - type: worked_in
+    to: place/basel
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/colmar
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/innsbruck
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/mainz
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/s-hertogenbosch
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/strasbourg
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q5580
+  - type: student_of
+    to: artist/albrecht-durer-the-elder
+    sources:
+      - accessed: 2026-10-19
+        property: P1066
+        wikidata: Q5580
+      - accessed: 2026-10-19
+        property: P802
+        wikidata: Q535910
+  - type: associated_with
+    to: movement/german-renaissance
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q5580
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/D%C3%BCrer_Alte_Pinakothek.jpg/1280px-D%C3%BCrer_Alte_Pinakothek.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:D%C3%BCrer_Alte_Pinakothek.jpg
+    license: Public domain
+    credit: Albrecht Dürer
+identifiers:
+  bnf: 11900585f
+  dome: "11661"
+  gnd: 11852786X
+  hls: "018306"
+  idref: "026837013"
+  kulturnav: dd536e2b-40c5-4745-8023-e02dd625c9e2
+  lc: n79118011
+  nlk: KAC200005159
+  rkd: "24586"
+  sikart: "4023014"
+  ulan: "500115493"
+  viaf: "54146999"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q5580
+    - url: https://d-nb.info/gnd/11852786X
+      source: gnd
+      accessed: 2026-10-19
+    - url: https://recherche.sik-isea.ch/sik:person-4023014/in/sikart
+      source: sikart
+      accessed: 2026-10-19
+    - url: https://rkd.nl/en/explore/artists/24586
+      source: rkd
+      accessed: 2026-10-19
+    - url: https://id.loc.gov/authorities/names/n79118011.html
+      source: lc
+      accessed: 2026-10-19
+    - url: https://data.bnf.fr/ark:/12148/cb11900585f
+      source: bnf
+      accessed: 2026-10-19
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q5580
+    - url: https://d-nb.info/gnd/11852786X
+      source: gnd
+      accessed: 2026-10-19
+    - url: https://recherche.sik-isea.ch/sik:person-4023014/in/sikart
+      source: sikart
+      accessed: 2026-10-19
+    - url: https://rkd.nl/en/explore/artists/24586
+      source: rkd
+      accessed: 2026-10-19
+    - url: https://id.loc.gov/authorities/names/n79118011.html
+      source: lc
+      accessed: 2026-10-19
+    - url: https://data.bnf.fr/ark:/12148/cb11900585f
+      source: bnf
+      accessed: 2026-10-19

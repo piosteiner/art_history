@@ -1,0 +1,75 @@
+public_id: 101536
+title_lang: de
+title: Sonja Knips
+names:
+  - lang: ru
+    role: translation
+    text: Портрет Сони Книпс
+creator: gustav-klimt
+created: 1898
+materials: [oil paint, canvas]
+dimensions: [145, 146]
+institution: belvedere
+inventory_number: "4403"
+wikidata_id: Q28002801
+metadata:
+  sources: [Wikidata Q28002801 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Gustav_Klimt_-_Sonja_Knips_-_4403_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_Sonja_Knips_-_4403_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Sonja_Knips_-_4403_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: person/sonja-knips
+    acquired: 1898
+    ended: 1950
+    method: purchase
+    place: vienna
+    label: the sitter
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3197/sonja-knips
+        note: "“1898–1950, Ankauf, Sonja Knips, Wien 1950, Ankauf, Österreichische Galerie, Wien [1] [1] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950. Ankauf um 20.000 S (gemeinsam mit Adam und Eva).” — read in the Internet Archive’s copy of 2026-08-27: https://web.archive.org/web/20260827024125/https://sammlung.belvedere.at/objects/3197/sonja-knips"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-27
+  - owner: institution/belvedere
+    acquired: 31 August 1950
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie, with Adam and Eve
+    price:
+      amount: 20000
+      currency: ATS
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3197/sonja-knips
+        note: "“1898–1950, Ankauf, Sonja Knips, Wien 1950, Ankauf, Österreichische Galerie, Wien [1] [1] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950. Ankauf um 20.000 S (gemeinsam mit Adam und Eva).” — read in the Internet Archive’s copy of 2026-08-27: https://web.archive.org/web/20260827024125/https://sammlung.belvedere.at/objects/3197/sonja-knips"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-27
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28002801
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28002801
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28002801
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28002801
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28002801
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28002801
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28002801

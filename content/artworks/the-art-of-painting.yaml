@@ -1,0 +1,170 @@
+public_id: 101302
+title_lang: en
+title: The Art of Painting
+names:
+  - lang: nl
+    role: original
+    text: De Schilderkonst
+  - lang: de
+    role: original
+    text: Die Malkunst
+  - The Allegory of Painting
+  - Painter in his Studio
+  - De schilderkunst
+  - The Artist in his Studio
+  - lang: fr
+    role: translation
+    text: L'Art de la peinture
+  - lang: it
+    role: translation
+    text: Allegoria della Pittura
+  - lang: es
+    role: translation
+    text: El arte de la pintura
+  - lang: ja
+    role: translation
+    text: 絵画芸術
+  - lang: zh
+    role: translation
+    text: 绘画艺术
+  - lang: ko
+    role: translation
+    text: 회화의 기술
+  - lang: ru
+    role: translation
+    text: Мастерская художника
+creator: johannes-vermeer
+created: 1660/1669
+created_label: c. 1660s
+materials: [oil paint, canvas]
+dimensions: [120, 100]
+institution: kunsthistorisches-museum
+inventory_number: GG_9128
+web_url: https://www.essentialvermeer.com/catalogue/art_of_painting.html
+wikidata_id: Q588695
+metadata:
+  sources: [Wikidata Q588695 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg/1280px-Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_Vermeer_-_The_Art_of_Painting_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Johannes Vermeer
+provenance:
+  - owner: person/catharina-bolnes
+    acquired: 1675-12
+    method: inheritance
+    place: delft
+    label: Vermeer's widow
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/maria-thins
+    acquired: 1676
+    method: transfer
+    direct: true
+    place: delft
+    label: handed over to her mother
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Unknown buyer
+    acquired: 1677-03-15
+    method: auction
+    place: delft
+    label: auction in Delft
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/gottfried-van-swieten
+    role: estate
+    place: vienna
+    label: estate of Gottfried van Swieten
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/johann-rudolf-czernin-von-und-zu-chudenic
+    acquired: 1813
+    method: purchase
+    place: vienna
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/czernin-picture-gallery
+    place: vienna
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/adolf-hitler
+    acquired: 1940
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/munich-central-collecting-point
+    role: custodian
+    acquired: 1945
+    place: munich
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1946-11-07
+    method: transfer
+    direct: true
+    place: vienna
+    label: handed over to the museum
+    sources:
+      - url: https://www.khm.at/kunstwerke/die-malkunst-2574
+        note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: document
+        date: "1958"
+        note: taken into the collection (inventoried)
+        place: vienna
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q588695
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q588695
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q588695
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q588695
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q588695
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q588695
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q588695

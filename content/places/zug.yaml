@@ -1,0 +1,45 @@
+public_id: 101512
+name: Zug
+names:
+  - Zug, ZG
+  - lang: fr
+    role: translation
+    text: Zoug
+  - lang: it
+    role: translation
+    text: Zugo
+  - lang: ja
+    role: translation
+    text: ツーク
+  - lang: zh
+    role: translation
+    text: 楚格
+  - lang: ko
+    role: translation
+    text: 추크
+  - lang: ru
+    role: translation
+    text: Цуг
+kind: settlement
+parent: canton-of-zug
+country_code: CH
+location: [8.51694, 47.16806]
+wikidata_id: Q68144
+metadata:
+  sources: [Wikidata Q68144 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4068063-0
+  hls: "000797"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q68144
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q68144
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q68144

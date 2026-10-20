@@ -1,0 +1,21 @@
+public_id: 101158
+name: Ferdinand VII of Spain
+kind: person
+birth: 1784-10-14
+death: 1833-09-29
+wikidata_id: Q186256
+metadata:
+  sources: [Wikidata Q186256 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q186256
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q186256
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q186256

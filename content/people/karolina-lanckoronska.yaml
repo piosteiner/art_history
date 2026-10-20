@@ -1,0 +1,48 @@
+public_id: 101448
+name: Karolina Lanckorońska
+given_name: Karolina
+family_name: Lanckorońska
+names:
+  - Karolina Maria Adelajda Franciszka Ksawera Małgorzata Edina Lanckorońska
+  - Countess Karolina Lanckorońska
+  - Caroline Gräfin von Brzezie-Lanckoronski
+  - Karolinę Lanckorońską
+  - Lanckorońska
+  - lang: ru
+    role: translation
+    text: Каролина Лянцкоронская
+kind: person
+occupations: [art historian, pedagogue, writer, university teacher, medievalist, librarian, art collector, historian]
+birth: 1898-08-11
+death: 2002-08-25
+wikidata_id: Q468466
+metadata:
+  sources: [Wikidata Q468466 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4c/Karolina_Lanckoro%C5%84ska.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Karolina_Lanckoro%C5%84ska.jpg
+    license: Public domain
+    credit: unknown-anonymous
+identifiers:
+  bnf: "119304624"
+  gnd: "122554140"
+  idref: "027213706"
+  lc: n80001031
+  viaf: "76324812"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q468466
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q468466
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q468466
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q468466

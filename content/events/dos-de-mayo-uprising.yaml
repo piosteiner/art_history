@@ -1,0 +1,16 @@
+public_id: 101142
+name: Dos de Mayo Uprising
+period: 1808-05-02
+location: [-3.68333, 40.43333]
+wikidata_id: Q181146
+metadata:
+  sources: [Wikidata Q181146 (retrieved 2026-10-19)]
+sources:
+  period:
+    - accessed: 2026-10-19
+      property: P585
+      wikidata: Q181146
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q181146

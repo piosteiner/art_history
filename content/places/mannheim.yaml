@@ -1,0 +1,43 @@
+public_id: 101569
+name: Mannheim
+names:
+  - Mannem
+  - Monnem
+  - Universitätsstadt Mannheim
+  - Mannheim, Germany
+  - Mannheim (Germany)
+  - Mannheim Germany
+  - lang: ja
+    role: translation
+    text: マンハイム
+  - lang: zh
+    role: translation
+    text: 曼海姆
+  - lang: ko
+    role: translation
+    text: 만하임
+  - lang: ru
+    role: translation
+    text: Мангейм
+kind: settlement
+parent: karlsruhe-government-region
+country_code: DE
+location: [8.46611, 49.48778]
+wikidata_id: Q2119
+metadata:
+  sources: [Wikidata Q2119 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4037372-1
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q2119
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q2119
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2119

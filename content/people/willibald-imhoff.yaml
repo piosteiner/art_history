@@ -1,0 +1,39 @@
+public_id: 101434
+name: Willibald Imhoff
+given_name: Willibald
+family_name: Imhoff
+names: [Patrizier Willibald Imhoff]
+kind: person
+occupations: [merchant]
+birth: 1519-11-16
+death: 1580-01-25
+wikidata_id: Q2581324
+metadata:
+  sources: [Wikidata Q2581324 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Willibald_Imhoff.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Willibald_Imhoff.jpeg
+    license: Public domain
+    credit: Titian
+identifiers:
+  gnd: "118980882"
+  idref: "130259543"
+  lc: nr91000335
+  viaf: "35256423"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q2581324
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q2581324
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q2581324
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q2581324

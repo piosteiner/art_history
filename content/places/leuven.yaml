@@ -1,0 +1,44 @@
+public_id: 101262
+name: Leuven
+names:
+  - lang: ja
+    role: translation
+    text: ルーヴェン
+  - lang: zh
+    role: translation
+    text: 鲁汶
+  - lang: fr
+    role: translation
+    text: Louvain
+  - lang: de
+    role: translation
+    text: Löwen
+  - lang: it
+    role: translation
+    text: Lovanio
+  - lang: es
+    role: translation
+    text: Lovaina
+  - lang: ru
+    role: translation
+    text: Лёвен
+kind: settlement
+parent: belgium
+country_code: BE
+location: [4.70444, 50.8775]
+wikidata_id: Q118958
+metadata:
+  sources: [Wikidata Q118958 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q118958
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q118958
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q118958

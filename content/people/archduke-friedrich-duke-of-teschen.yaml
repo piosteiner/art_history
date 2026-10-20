@@ -1,0 +1,70 @@
+public_id: 101438
+name: Archduke Friedrich, Duke of Teschen
+names:
+  - Friedrich Maria Albrecht Wilhelm Karl of Austria
+  - Archduke Frederic
+  - Frederick, Archduke of Austria, Duke of Teschen
+  - lang: nl
+    role: translation
+    text: Frederik van Oostenrijk
+  - lang: fr
+    role: translation
+    text: Frédéric de Teschen
+  - lang: de
+    role: translation
+    text: Friedrich von Österreich-Teschen
+  - lang: it
+    role: translation
+    text: Federico d'Asburgo-Teschen
+  - lang: es
+    role: translation
+    text: Federico de Austria
+  - lang: ja
+    role: translation
+    text: フリードリヒ・フォン・エスターライヒ＝テシェン
+  - lang: zh
+    role: translation
+    text: 弗里德里希大公
+  - lang: ko
+    role: translation
+    text: 프리드리히 폰 외스터라이히테셴
+  - lang: ru
+    role: translation
+    text: Фридрих Австрийский Тешенский
+kind: person
+occupations: [ruler, military personnel, politician, aristocrat, Generalfeldmarschall]
+birth: 1856-06-04
+death: 1936-12-30
+wikidata_id: Q446711
+metadata:
+  sources: [Wikidata Q446711 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Armee-Oberkommandant_Feldmarschall_Erzherzog_Friedrich_1916_Ernst_F%C3%B6rster.png/1280px-Armee-Oberkommandant_Feldmarschall_Erzherzog_Friedrich_1916_Ernst_F%C3%B6rster.png
+    source_url: https://commons.wikimedia.org/wiki/File:Armee-Oberkommandant_Feldmarschall_Erzherzog_Friedrich_1916_Ernst_F%C3%B6rster.png
+    license: Public domain
+    credit: Ernst Förster
+identifiers:
+  bnf: 12246618s
+  dodis: P34899
+  gnd: "118861913"
+  idref: "060114355"
+  lc: n91070579
+  rkd: "449465"
+  viaf: "47559295"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q446711
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q446711
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q446711
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q446711

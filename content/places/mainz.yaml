@@ -1,0 +1,16 @@
+public_id: 101278
+name: Mainz
+kind: settlement
+location: [8.27361, 49.99944]
+wikidata_id: Q1720
+metadata:
+  sources: [Wikidata Q1720 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1720
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q1720

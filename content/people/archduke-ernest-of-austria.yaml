@@ -1,0 +1,59 @@
+public_id: 101332
+name: Archduke Ernest of Austria
+names:
+  - Ernst van Oostenrijk
+  - lang: fr
+    role: translation
+    text: Ernest d'Autriche
+  - lang: de
+    role: translation
+    text: Ernst von Österreich
+  - lang: it
+    role: translation
+    text: Ernesto d'Austria
+  - lang: es
+    role: translation
+    text: Ernesto de Austria
+  - lang: ja
+    role: translation
+    text: エルンスト・フォン・エスターライヒ
+  - lang: zh
+    role: translation
+    text: 恩斯特大公
+  - lang: ru
+    role: translation
+    text: Эрнст Австрийский
+kind: person
+occupations: [politician]
+birth: 1553-06-25
+death: 1595-02-12
+wikidata_id: Q327156
+metadata:
+  sources: [Wikidata Q327156 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d0/Martino_Rota_002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Martino_Rota_002.jpg
+    license: Public domain
+    credit: Martino Rota
+identifiers:
+  gnd: "120580497"
+  lc: n85160667
+  rkd: "490739"
+  viaf: "45135798"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q327156
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q327156
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q327156
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q327156

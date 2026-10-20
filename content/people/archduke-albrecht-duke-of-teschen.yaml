@@ -1,0 +1,65 @@
+public_id: 101437
+name: Archduke Albrecht, Duke of Teschen
+names:
+  - lang: de
+    role: original
+    text: Erzherzog Albrecht Friedrich Rudolf von Österreich, Herzog von Teschen
+  - lang: nl
+    role: translation
+    text: Albrecht van Oostenrijk-Teschen
+  - lang: fr
+    role: translation
+    text: Albert de Teschen
+  - lang: de
+    role: original
+    text: Albrecht von Österreich-Teschen
+  - lang: it
+    role: translation
+    text: Alberto d'Asburgo-Teschen
+  - lang: es
+    role: translation
+    text: Alberto de Austria-Teschen
+  - lang: ja
+    role: translation
+    text: アルブレヒト・フォン・エスターライヒ＝テシェン
+  - lang: zh
+    role: translation
+    text: 阿尔布雷希特大公
+  - lang: ru
+    role: translation
+    text: Альбрехт Австрийский, герцог Тешенский
+kind: person
+occupations: [military officer, politician]
+birth: 1817-08-03
+death: 1895-02-18
+wikidata_id: Q310807
+metadata:
+  sources: [Wikidata Q310807 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Erzherzog_Albrecht_in_der_preu%C3%9Fischen_Marschalls-Uniform_1895_Hof-Atelier_Adele.jpg/1280px-Erzherzog_Albrecht_in_der_preu%C3%9Fischen_Marschalls-Uniform_1895_Hof-Atelier_Adele.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Erzherzog_Albrecht_in_der_preu%C3%9Fischen_Marschalls-Uniform_1895_Hof-Atelier_Adele.jpg
+    license: Public domain
+    credit: Max Perlmutter
+identifiers:
+  bnf: "135449194"
+  gnd: "119482975"
+  idref: "050766775"
+  lc: no97077281
+  viaf: "10656994"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q310807
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q310807
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q310807
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q310807

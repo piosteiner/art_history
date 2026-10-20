@@ -1,0 +1,61 @@
+public_id: 101207
+name: René of Chalon
+names:
+  - Rene of Chalon
+  - lang: nl
+    role: translation
+    text: René van Chalon
+  - lang: fr
+    role: translation
+    text: René de Chalon
+  - lang: de
+    role: translation
+    text: Renatus von Châlons
+  - lang: it
+    role: translation
+    text: Renato di Chalon
+  - lang: ja
+    role: translation
+    text: ルネ・ド・シャロン
+  - lang: zh
+    role: translation
+    text: 沙隆的勒内
+  - lang: ko
+    role: translation
+    text: 샬롱의 르네
+  - lang: ru
+    role: translation
+    text: Рене де Шалон
+kind: person
+occupations: [aristocrat]
+birth: 1519-02-15
+death: 1544-07-25
+wikidata_id: Q654855
+metadata:
+  sources: [Wikidata Q654855 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Possibly_copy_after_Jan_van_Scorel_-_Ren%C3%A9_de_Ch%C3%A2lon_%28ca_1518-44%29.jpg/1280px-Possibly_copy_after_Jan_van_Scorel_-_Ren%C3%A9_de_Ch%C3%A2lon_%28ca_1518-44%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Possibly_copy_after_Jan_van_Scorel_-_Ren%C3%A9_de_Ch%C3%A2lon_(ca_1518-44).jpg
+    license: Public domain
+    credit: After Jan van Scorel
+identifiers:
+  gnd: "132279762"
+  idref: "244907269"
+  viaf: "75008425"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q654855
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q654855
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q654855
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q654855

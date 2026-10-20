@@ -1,0 +1,18 @@
+public_id: 101427
+name: Egon Schiele
+given_name: Egon
+family_name: Schiele
+birth: 1890-06-12
+death: 31 October 1918
+wikidata_id: Q44032
+metadata:
+  sources: [Wikidata Q44032 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q44032
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q44032

@@ -1,0 +1,203 @@
+public_id: 101127
+title_lang: es
+title: Las meninas
+names:
+  - lang: es
+    role: alternative
+    text: Las Meninas
+  - lang: en
+    role: original
+    text: Las Meninas (The Maids of Honor)
+  - The Ladies-in-Waiting
+  - The Maids of Honor
+  - lang: fr
+    role: translation
+    text: Les Ménines
+  - lang: ja
+    role: translation
+    text: ラス・メニーナス
+  - lang: zh
+    role: translation
+    text: 宮女
+  - lang: ko
+    role: translation
+    text: 시녀들
+  - lang: ru
+    role: translation
+    text: Менины (Фрейлины)
+  - lang: de
+    role: translation
+    text: Las Meninas (Selbstporträt mit der königlichen Familie)
+creator: diego-velazquez
+created: 1656
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [320.3, 279.1]
+institution: museo-del-prado
+inventory_number: P001174
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+description_md: "Velázquez painted the scene in 1656 in the Cuarto del Príncipe of the Alcázar in Madrid: the Infanta Margarita with her maids of honour, dwarfs and a mastiff, the painter himself at a large canvas, and in the mirror the faces of Philip IV and Mariana of Austria. Antonio Palomino devoted a section of his lives of Spanish painters (1724) to it alone; the name *Las Meninas* first appears in the Prado’s catalogue of 1843."
+wikidata_id: Q208758
+metadata:
+  sources: [Wikidata Q208758 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts_person
+    to: artist/diego-velazquez
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: depicts_person
+    to: person/jose-nieto-velazquez
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: depicts_person
+    to: person/marcela-de-ulloa
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: depicts_person
+    to: person/margaret-theresa-of-spain
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: depicts_person
+    to: person/mari-barbola
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: depicts_person
+    to: person/maria-agustina-sarmiento
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: depicts_person
+    to: person/mariana-of-austria
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: depicts_person
+    to: person/nicolasito-pertusato
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: depicts_person
+    to: person/philip-iv-of-spain
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q208758
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q208758
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/1280px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg
+    license: Public domain
+    credit: Diego Velázquez
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1700 or earlier
+    ended: 1819
+    place: royal-alcazar-of-madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "“Colección Real (Real Alcázar, Madrid, Cuarto bajo-pieza del despacho de verano, 1700, nº 286; Palacio Real Nuevo, Madrid, antesala de la Furriera, 1747, nº 4; Palacio Real Nuevo, Madrid, paso de tribuna y trascuartos, 1772, nº 4; Palacio Real Nuevo, Madrid, cuarto de la serenísima infanta-dormitorio, 1794, s.n.; Palacio Real, Madrid, pieza amarilla, 1814-1818, nº 4).” — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
+    records:
+      - date: "1700"
+        room: cuarto bajo, pieza del despacho de verano
+        place: royal-alcazar-of-madrid
+        number: "286"
+      - date: "1747"
+        room: antesala de la Furriera
+        place: royal-palace-of-madrid
+        number: "4"
+      - date: "1772"
+        room: paso de tribuna y trascuartos
+        place: royal-palace-of-madrid
+        number: "4"
+      - date: "1794"
+        note: without number
+        room: cuarto de la serenísima infanta, dormitorio
+        place: royal-palace-of-madrid
+      - date: 1814/1818
+        room: pieza amarilla
+        place: royal-palace-of-madrid
+        number: "4"
+  - owner: institution/museo-del-prado
+    acquired: 1819
+    method: transfer
+    direct: true
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+        note: "“Fecha de ingreso 1819” — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+        source: museo-del-prado-coleccion
+        accessed: 2026-09-29
+identifiers:
+  gnd: 4368609-6
+  viaf: "174304266"
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+      source: museo-del-prado-coleccion
+      accessed: 2026-09-29
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+      source: museo-del-prado-coleccion
+      accessed: 2026-09-29
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+      source: museo-del-prado-coleccion
+      accessed: 2026-09-29
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+      source: museo-del-prado-coleccion
+      accessed: 2026-09-29
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q208758
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q208758
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+      source: museo-del-prado-coleccion
+      accessed: 2026-09-29
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q208758
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+      source: museo-del-prado-coleccion
+      accessed: 2026-09-29
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q208758
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-09-29: https://web.archive.org/web/20260929045508/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9fdc7800-9ade-48b0-ab8b-edee94ea877f"
+      source: museo-del-prado-coleccion
+      accessed: 2026-09-29

@@ -1,0 +1,21 @@
+public_id: 101139
+name: María Teresa de Silva, 13th Duchess of Alba
+kind: person
+birth: 1762-06-10
+death: 1802-07-23
+wikidata_id: Q260128
+metadata:
+  sources: [Wikidata Q260128 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q260128
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q260128
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q260128

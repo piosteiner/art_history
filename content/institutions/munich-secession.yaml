@@ -1,0 +1,41 @@
+public_id: 101566
+name: Munich Secession
+names:
+  - Münchener Secession
+  - lang: fr
+    role: translation
+    text: Sécession de Munich
+  - lang: it
+    role: translation
+    text: Secessione di Monaco
+  - lang: es
+    role: translation
+    text: Secesión de Múnich
+  - lang: ja
+    role: translation
+    text: ミュンヘン分離派
+  - lang: zh
+    role: translation
+    text: 慕尼黑分离派
+  - lang: ko
+    role: translation
+    text: 뮌헨 분리파
+  - lang: ru
+    role: translation
+    text: Мюнхенский сецессион
+founded: 1892-04-04
+website_url: http://www.muenchenersecession.de/
+wikidata_id: Q24312
+metadata:
+  sources: [Wikidata Q24312 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 1038102-8
+  idref: "030211255"
+  lc: n88207749
+  ulan: "500329591"
+  viaf: "134979012"
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q24312

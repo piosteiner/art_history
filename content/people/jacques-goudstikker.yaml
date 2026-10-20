@@ -1,0 +1,48 @@
+public_id: 101349
+name: Jacques Goudstikker
+names:
+  - Jacques Goudstiker
+  - lang: ja
+    role: translation
+    text: ジャック・ガウドスティッカー
+  - lang: ru
+    role: translation
+    text: Жак Гудстикер
+kind: person
+occupations: [art collector, art dealer]
+birth: 1897-08-30
+death: 1940-05-16
+wikidata_id: Q127564
+metadata:
+  sources: [Wikidata Q127564 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0e/Jacques_Goudstikker_%281938%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacques_Goudstikker_(1938).jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 13736570d
+  dodis: P6420
+  gnd: "123540860"
+  idref: "116429593"
+  lc: nr99010178
+  rkd: "337747"
+  ulan: "500439911"
+  viaf: "59261826"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q127564
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q127564
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q127564
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q127564

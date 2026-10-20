@@ -1,0 +1,53 @@
+public_id: 101227
+name: Luis Francisco de la Cerda
+names:
+  - lang: fr
+    role: translation
+    text: Luis Francisco de la Cerda Medinaceli
+  - lang: it
+    role: translation
+    text: Luis Francisco de la Cerda y Aragón
+  - lang: ja
+    role: translation
+    text: ルイス・フランシスコ・デ・ラ・セルダ
+  - lang: zh
+    role: translation
+    text: 盧伊斯·弗蘭西斯科·德·拉·塞爾達
+  - lang: ru
+    role: translation
+    text: Луис Франциско де ла Серда и Арагон
+kind: person
+occupations: [diplomat, politician]
+birth: 1660-08-02
+death: 1711-01-26
+wikidata_id: Q609736
+metadata:
+  sources: [Wikidata Q609736 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Voet-duque_de_medinacelli-prado.jpg/1280px-Voet-duque_de_medinacelli-prado.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Voet-duque_de_medinacelli-prado.jpg
+    license: Public domain
+    credit: Jacob Ferdinand Voet
+identifiers:
+  bnf: 12569821w
+  gnd: "1048494071"
+  idref: "166376205"
+  lc: no2017132944
+  viaf: "44416655"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q609736
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q609736
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q609736
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q609736

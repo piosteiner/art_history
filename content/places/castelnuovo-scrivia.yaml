@@ -1,0 +1,16 @@
+public_id: 101241
+name: Castelnuovo Scrivia
+kind: settlement
+location: [8.88222, 44.98139]
+wikidata_id: Q17338
+metadata:
+  sources: [Wikidata Q17338 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q17338
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q17338

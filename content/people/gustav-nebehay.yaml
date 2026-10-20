@@ -1,0 +1,38 @@
+public_id: 101489
+name: Gustav Nebehay
+names:
+  - lang: zh
+    role: translation
+    text: 古斯塔夫·内贝海
+  - lang: ru
+    role: translation
+    text: Небехай Густав
+kind: person
+occupations: [art dealer, antiquarian bookseller, bookseller]
+birth: 1881
+death: 1935
+wikidata_id: Q45909558
+metadata:
+  sources: [Wikidata Q45909558 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "118738259"
+  idref: "198609841"
+  lc: n84114376
+  viaf: "5726180"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q45909558
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q45909558
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q45909558
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q45909558

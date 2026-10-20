@@ -1,0 +1,29 @@
+public_id: 101499
+name: Dorotheum
+names:
+  - '"Versatz- und Fragamt zu Wien"'
+  - Aunt Dorothy
+  - The Dorotheum
+  - lang: ru
+    role: translation
+    text: Доротеум
+founded: 1707
+website_url: http://www.dorotheum.com/
+wikidata_id: Q668545
+metadata:
+  sources: [Wikidata Q668545 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Dorotheum_Vienna_2.jpg/1280px-Dorotheum_Vienna_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dorotheum_Vienna_2.jpg
+    license: CC BY-SA 3.0
+    credit: Gryffindor
+identifiers:
+  bnf: "145717633"
+  gnd: 2058319-9
+  lc: n83214362
+  viaf: "143109720"
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q668545

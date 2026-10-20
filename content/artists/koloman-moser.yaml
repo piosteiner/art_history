@@ -1,0 +1,18 @@
+public_id: 101479
+name: Koloman Moser
+given_name: Koloman
+family_name: Moser
+birth: 1868-03-30
+death: 1918-10-18
+wikidata_id: Q45055
+metadata:
+  sources: [Wikidata Q45055 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q45055
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q45055

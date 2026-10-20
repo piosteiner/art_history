@@ -1,11 +1,17 @@
-public_id: "100204"
+public_id: 100204
 name: Baroque
 names:
   - lang: de
     role: translation
     text: Barock
+  - lang: it
+    role: translation
+    text: barocco
+  - lang: es
+    role: translation
+    text: barroco
 kind: style
-period: c. 1590–c. 1750
+period: 1501/1759
 wikidata_id: Q37853
 metadata:
   sources: [Wikidata Q37853 (retrieved 2026-10-09)]
@@ -22,4 +28,9 @@ sources:
     - accessed: 2026-10-09
       property: P31
       wikidata: Q37853
-  period: ["Getty Art & Architecture Thesaurus, “Baroque” (AAT 300021147): “western Europe and the Americas from about 1590 to 1750”", "Wikidata, Baroque (Q37853): start time 16th century (1590), end time 1750s"]
+  period:
+    - "Getty Art & Architecture Thesaurus, “Baroque” (AAT 300021147): “western Europe and the Americas from about 1590 to 1750”"
+    - "Wikidata, Baroque (Q37853): start time 16th century (1590), end time 1750s"
+    - accessed: 2026-10-19
+      property: P580
+      wikidata: Q37853

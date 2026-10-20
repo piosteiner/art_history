@@ -1,0 +1,66 @@
+public_id: 101344
+name: Federico II Gonzaga, Duke of Mantua
+names:
+  - Federico II Gonzaga
+  - Federico II of Mantua
+  - Federigo, Duke of Mantua Gonzaga
+  - Federico II of Gonzaga
+  - Federico Gonzaga, Duke of Mantua
+  - lang: fr
+    role: translation
+    text: Frédéric II de Mantoue
+  - lang: de
+    role: translation
+    text: Federico II. Gonzaga
+  - lang: it
+    role: translation
+    text: Federico II di Mantova
+  - lang: ja
+    role: translation
+    text: フェデリーコ2世・ゴンザーガ
+  - lang: zh
+    role: translation
+    text: 費德里克二世
+  - lang: ko
+    role: translation
+    text: 페데리코 2세 곤차가
+  - lang: ru
+    role: translation
+    text: Федерико II
+kind: person
+occupations: [art collector, patron of the arts]
+birth: 1500-05-27
+death: 1540-07-08
+wikidata_id: Q932200
+metadata:
+  sources: [Wikidata Q932200 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Tiziano_-_Federico_II_Gonzaga_%281529%29.jpg/1280px-Tiziano_-_Federico_II_Gonzaga_%281529%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tiziano_-_Federico_II_Gonzaga_(1529).jpg
+    license: Public domain
+    credit: Titian
+identifiers:
+  bnf: 12485128n
+  gnd: "119228130"
+  idref: "034056114"
+  lc: no95043554
+  rkd: "445129"
+  ulan: "500115088"
+  viaf: "59186552"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q932200
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q932200
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q932200
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q932200

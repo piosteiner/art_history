@@ -1,4 +1,31 @@
-public_id: "100323"
+public_id: 100323
 name: Bonomo Algarotti
 given_name: Bonomo
 family_name: Algarotti
+kind: person
+occupations: [merchant]
+birth: 1706-03-14
+death: 1776-09-09
+wikidata_id: Q133609885
+metadata:
+  sources: [Wikidata Q133609885 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "1043788611"
+  viaf: "170569849"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q133609885
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q133609885
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q133609885
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q133609885

@@ -1,4 +1,57 @@
-public_id: "100322"
+public_id: 100322
 name: Francesco Algarotti
 given_name: Francesco
 family_name: Algarotti
+names: [Count Francesco Algarotti]
+kind: person
+occupations: [philosopher, art historian, physicist, writer, poet, chamberlain, art critic, mathematician, aristocrat, literary scholar, scholar, count]
+birth: 1712-12-11
+death: 1764-05-03
+wikidata_id: Q439081
+metadata:
+  sources: [Wikidata Q439081 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-19
+        property: P27
+        wikidata: Q439081
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-19
+        property: P19
+        wikidata: Q439081
+  - type: died_in
+    to: place/pisa
+    sources:
+      - accessed: 2026-10-19
+        property: P20
+        wikidata: Q439081
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Jean-%C3%89tienne_Liotard_-_Portret_van_Graaf_Francesco_Algarotti.jpg/1280px-Jean-%C3%89tienne_Liotard_-_Portret_van_Graaf_Francesco_Algarotti.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-%C3%89tienne_Liotard_-_Portret_van_Graaf_Francesco_Algarotti.jpg
+    license: Public domain
+    credit: Jean-Étienne Liotard
+identifiers:
+  bnf: 12090007q
+  gnd: "119086395"
+  idref: "029230659"
+  lc: n82110127
+  rkd: "1111"
+  ulan: "500021142"
+  viaf: "68955699"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q439081
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q439081
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q439081

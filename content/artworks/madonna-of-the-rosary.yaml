@@ -1,0 +1,121 @@
+public_id: 101315
+title_lang: de
+title: Rosenkranzmadonna
+names:
+  - lang: en
+    role: original
+    text: Madonna of the Rosary
+  - lang: nl
+    role: translation
+    text: Rozenkransmadonna
+  - lang: fr
+    role: translation
+    text: La Madone du rosaire
+  - lang: it
+    role: translation
+    text: Madonna del Rosario
+  - lang: ja
+    role: translation
+    text: ロザリオの聖母
+  - lang: zh
+    role: translation
+    text: 玫瑰圣母 (卡拉瓦乔)
+  - lang: ru
+    role: translation
+    text: Мадонна с чётками
+creator: caravaggio
+created: 1607
+materials: [oil paint, canvas]
+dimensions: [364.5, 249.5]
+institution: kunsthistorisches-museum
+inventory_number: GG_147
+wikidata_id: Q698228
+metadata:
+  sources: [Wikidata Q698228 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Michelangelo_Merisi%2C_called_Caravaggio_-_Madonna_of_the_Rosary_-_Google_Art_Project.jpg/1280px-Michelangelo_Merisi%2C_called_Caravaggio_-_Madonna_of_the_Rosary_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Michelangelo_Merisi,_called_Caravaggio_-_Madonna_of_the_Rosary_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: artist/louis-finson
+    co_owners: [artist/abraham-vinck]
+    further_places:
+      - place: amsterdam
+        date: "1617"
+    acquired: 1607 or earlier
+    place: naples
+    notes_md: Who commissioned it, and for what, is still open (KHM).
+    sources:
+      - url: https://www.khm.at/kunstwerke/rosenkranzmadonna-425
+        note: “Frage des Auftraggebers und der ursprünglichen Verwendung weiterhin offen; 1607 von Frans Pourbus d. J. in Neapel in Besitz von Louis Finson und Abraham Vinck bezeugt; 1617 nach Amsterdam; von einer Gesellschaft von Künstlern (u.a. P. P. Rubens, Jan Brueghel d. Ä., H. v. Balen) für die Dominikanerkirche in Antwerpen gekauft; 1781 besuchte Joseph II. die Kirche und das Gemälde wird ihm übergeben; 1786 nach Wien”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: sighting
+        date: "1607"
+        note: attested by Frans Pourbus the Younger as theirs
+        place: naples
+  - owner: institution/st-paul-s-church
+    method: purchase
+    place: antwerp
+    label: bought for the Dominican church by a group of artists, among them Rubens, Jan Brueghel the Elder and Hendrick van Balen
+    sources:
+      - url: https://www.khm.at/kunstwerke/rosenkranzmadonna-425
+        note: “Frage des Auftraggebers und der ursprünglichen Verwendung weiterhin offen; 1607 von Frans Pourbus d. J. in Neapel in Besitz von Louis Finson und Abraham Vinck bezeugt; 1617 nach Amsterdam; von einer Gesellschaft von Künstlern (u.a. P. P. Rubens, Jan Brueghel d. Ä., H. v. Balen) für die Dominikanerkirche in Antwerpen gekauft; 1781 besuchte Joseph II. die Kirche und das Gemälde wird ihm übergeben; 1786 nach Wien”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/joseph-ii-holy-roman-emperor
+    further_places:
+      - place: vienna
+        date: "1786"
+    acquired: 1781
+    method: gift
+    direct: true
+    place: antwerp
+    label: handed to him on his visit to the church
+    sources:
+      - url: https://www.khm.at/kunstwerke/rosenkranzmadonna-425
+        note: “Frage des Auftraggebers und der ursprünglichen Verwendung weiterhin offen; 1607 von Frans Pourbus d. J. in Neapel in Besitz von Louis Finson und Abraham Vinck bezeugt; 1617 nach Amsterdam; von einer Gesellschaft von Künstlern (u.a. P. P. Rubens, Jan Brueghel d. Ä., H. v. Balen) für die Dominikanerkirche in Antwerpen gekauft; 1781 besuchte Joseph II. die Kirche und das Gemälde wird ihm übergeben; 1786 nach Wien”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+identifiers:
+  gnd: "1228102368"
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q698228
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q698228
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q698228
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q698228
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q698228
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q698228
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q698228

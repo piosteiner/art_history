@@ -1,0 +1,67 @@
+public_id: 101435
+name: Albert Casimir, Duke of Teschen
+names:
+  - lang: de
+    role: original
+    text: Albert Kasimir von Sachsen-Teschen
+  - lang: nl
+    role: translation
+    text: Albert Casimir van Saksen-Teschen
+  - lang: fr
+    role: translation
+    text: Albert de Saxe-Teschen
+  - lang: it
+    role: translation
+    text: Alberto di Sassonia-Teschen
+  - lang: es
+    role: translation
+    text: Alberto de Sajonia-Teschen
+  - lang: ja
+    role: translation
+    text: アルベルト・カジミール・フォン・ザクセン＝テシェン
+  - lang: zh
+    role: translation
+    text: 阿尔贝特·卡西米尔
+  - lang: ko
+    role: translation
+    text: 테셴 공작 알베르트
+  - lang: ru
+    role: translation
+    text: Альберт Саксен-Тешенский
+kind: person
+occupations: [aristocrat, collector, military commander, Generalfeldmarschall]
+birth: 1738-07-11
+death: 1822-02-10
+wikidata_id: Q60657
+metadata:
+  sources: [Wikidata Q60657 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Herzog_Albert%2C_1777.jpg/1280px-Herzog_Albert%2C_1777.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Herzog_Albert,_1777.jpg
+    license: CC BY-SA 4.0
+    credit: Unidentified painter
+identifiers:
+  bnf: 11960585p
+  gnd: "118647652"
+  idref: "027600963"
+  lc: n95012172
+  rkd: "490745"
+  ulan: "500726489"
+  viaf: "13100743"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q60657
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q60657
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q60657
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q60657

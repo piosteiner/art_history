@@ -1,0 +1,131 @@
+public_id: 101461
+title_lang: de
+title: Tote Stadt III
+names:
+  - lang: en
+    role: original
+    text: Dead City III (City on the Blue River III)
+  - lang: en
+    role: original
+    text: Dead City III
+  - lang: fr
+    role: translation
+    text: Ville morte III
+  - lang: ru
+    role: translation
+    text: Мёртвый город
+creator: egon-schiele
+created: 1911
+materials: [oil paint, panel]
+dimensions: [37.3, 29.8]
+institution: leopold-museum
+inventory_number: LM 460
+wikidata_id: Q2445555
+metadata:
+  sources: [Wikidata Q2445555 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Egon_Schiele_-_Dead_City_III_%28City_on_the_Blue_River_III%29_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Dead_City_III_%28City_on_the_Blue_River_III%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Dead_City_III_(City_on_the_Blue_River_III)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: person/arthur-roessler
+    acquired: before 1918
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/534-tote-stadt-iii-stadt-am-blauen-fluss-iii/
+        note: “Arthur Rössler (vor 1918); (1) / Alfred Spitzer, Wien (o.D.); (2) / Franz Friedrich Grünbaum, Wien (vor 1928-1939); (3) / Mathilde Lukacs, Brüssel (o.D.); / Klipstein & Kornfeld, Bern (1956); / Galerie St. Etienne (Otto Kallir), New York (1956-1958); / Dr. Rudolf Leopold, Wien (1958-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Alfred Spitzer
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/534-tote-stadt-iii-stadt-am-blauen-fluss-iii/
+        note: “Arthur Rössler (vor 1918); (1) / Alfred Spitzer, Wien (o.D.); (2) / Franz Friedrich Grünbaum, Wien (vor 1928-1939); (3) / Mathilde Lukacs, Brüssel (o.D.); / Klipstein & Kornfeld, Bern (1956); / Galerie St. Etienne (Otto Kallir), New York (1956-1958); / Dr. Rudolf Leopold, Wien (1958-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/fritz-grunbaum
+    acquired: before 1928
+    ended: 1939
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/534-tote-stadt-iii-stadt-am-blauen-fluss-iii/
+        note: “Arthur Rössler (vor 1918); (1) / Alfred Spitzer, Wien (o.D.); (2) / Franz Friedrich Grünbaum, Wien (vor 1928-1939); (3) / Mathilde Lukacs, Brüssel (o.D.); / Klipstein & Kornfeld, Bern (1956); / Galerie St. Etienne (Otto Kallir), New York (1956-1958); / Dr. Rudolf Leopold, Wien (1958-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Mathilde Lukacs
+    place: brussels
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/534-tote-stadt-iii-stadt-am-blauen-fluss-iii/
+        note: “Arthur Rössler (vor 1918); (1) / Alfred Spitzer, Wien (o.D.); (2) / Franz Friedrich Grünbaum, Wien (vor 1928-1939); (3) / Mathilde Lukacs, Brüssel (o.D.); / Klipstein & Kornfeld, Bern (1956); / Galerie St. Etienne (Otto Kallir), New York (1956-1958); / Dr. Rudolf Leopold, Wien (1958-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/galerie-kornfeld
+    role: dealer
+    acquired: 1956
+    place: bern
+    label: Klipstein & Kornfeld
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/534-tote-stadt-iii-stadt-am-blauen-fluss-iii/
+        note: “Arthur Rössler (vor 1918); (1) / Alfred Spitzer, Wien (o.D.); (2) / Franz Friedrich Grünbaum, Wien (vor 1928-1939); (3) / Mathilde Lukacs, Brüssel (o.D.); / Klipstein & Kornfeld, Bern (1956); / Galerie St. Etienne (Otto Kallir), New York (1956-1958); / Dr. Rudolf Leopold, Wien (1958-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/galerie-st-etienne
+    role: dealer
+    acquired: 1956
+    ended: 1958
+    place: new-york-city
+    label: Otto Kallir
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/534-tote-stadt-iii-stadt-am-blauen-fluss-iii/
+        note: “Arthur Rössler (vor 1918); (1) / Alfred Spitzer, Wien (o.D.); (2) / Franz Friedrich Grünbaum, Wien (vor 1928-1939); (3) / Mathilde Lukacs, Brüssel (o.D.); / Klipstein & Kornfeld, Bern (1956); / Galerie St. Etienne (Otto Kallir), New York (1956-1958); / Dr. Rudolf Leopold, Wien (1958-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1958
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/534-tote-stadt-iii-stadt-am-blauen-fluss-iii/
+        note: “Arthur Rössler (vor 1918); (1) / Alfred Spitzer, Wien (o.D.); (2) / Franz Friedrich Grünbaum, Wien (vor 1928-1939); (3) / Mathilde Lukacs, Brüssel (o.D.); / Klipstein & Kornfeld, Bern (1956); / Galerie St. Etienne (Otto Kallir), New York (1956-1958); / Dr. Rudolf Leopold, Wien (1958-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/534-tote-stadt-iii-stadt-am-blauen-fluss-iii/
+        note: “Arthur Rössler (vor 1918); (1) / Alfred Spitzer, Wien (o.D.); (2) / Franz Friedrich Grünbaum, Wien (vor 1928-1939); (3) / Mathilde Lukacs, Brüssel (o.D.); / Klipstein & Kornfeld, Bern (1956); / Galerie St. Etienne (Otto Kallir), New York (1956-1958); / Dr. Rudolf Leopold, Wien (1958-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q2445555
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q2445555
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2445555
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2445555
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q2445555
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2445555
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2445555

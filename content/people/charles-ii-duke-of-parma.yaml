@@ -1,0 +1,21 @@
+public_id: 101152
+name: Charles II, Duke of Parma
+kind: person
+birth: 1799-12-22
+death: 1883-04-16
+wikidata_id: Q352200
+metadata:
+  sources: [Wikidata Q352200 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q352200
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q352200
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q352200

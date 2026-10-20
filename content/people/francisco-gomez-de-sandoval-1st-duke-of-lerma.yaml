@@ -1,0 +1,58 @@
+public_id: 101224
+name: Francisco Gómez de Sandoval, 1st Duke of Lerma
+names:
+  - Francisco de Sandoval y Rojas, Duque de Lerma
+  - Don Francisco de Sandoval Rojas y de Borja, 1.Duque de Lerma
+  - lang: nl
+    role: translation
+    text: Francisco Gómez de Sandoval y Rojas
+  - lang: fr
+    role: translation
+    text: Francisco Goméz de Sandoval y Rojas
+  - lang: es
+    role: translation
+    text: Francisco de Sandoval y Rojas, I duque de Lerma
+  - lang: ja
+    role: translation
+    text: フランシスコ・デ・サンドバル・イ・ロハス
+  - lang: zh
+    role: translation
+    text: 弗朗西斯科·德·桑多瓦爾
+  - lang: ru
+    role: translation
+    text: Франсиско Гомес де Сандоваль Лерма
+kind: person
+occupations: [politician, military personnel, Catholic priest, duke]
+birth: 1553
+death: 1625-05-17
+wikidata_id: Q691678
+metadata:
+  sources: [Wikidata Q691678 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Retrato_ecuestre_del_duque_de_Lerma_%28Rubens%29.jpg/1280px-Retrato_ecuestre_del_duque_de_Lerma_%28Rubens%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Retrato_ecuestre_del_duque_de_Lerma_(Rubens).jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+identifiers:
+  bnf: 14405295p
+  gnd: "122362454"
+  idref: "070694451"
+  lc: n85215985
+  viaf: "64220080"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q691678
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q691678
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q691678
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q691678

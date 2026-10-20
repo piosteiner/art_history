@@ -1,0 +1,57 @@
+public_id: 101206
+name: Henry III of Nassau-Breda
+names:
+  - lang: nl
+    role: translation
+    text: Hendrik III van Nassau-Breda
+  - lang: fr
+    role: translation
+    text: Henri III, comte de Nassau-Breda
+  - lang: de
+    role: translation
+    text: Heinrich III.
+  - lang: it
+    role: translation
+    text: Enrico III di Nassau-Breda
+  - lang: es
+    role: translation
+    text: Enrique III de Nassau-Breda
+  - lang: ja
+    role: translation
+    text: ヘンドリック3世・ファン・ナッサウ＝ブレダ
+  - lang: zh
+    role: translation
+    text: 拿騷的亨利三世
+  - lang: ru
+    role: translation
+    text: Генрих III Нассау-Бредский
+kind: person
+birth: 1483-01-21
+death: 1538-09-24
+wikidata_id: Q69450
+metadata:
+  sources: [Wikidata Q69450 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c3/Henry_III_of_Nassau-Breda.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_III_of_Nassau-Breda.jpg
+    license: Public domain
+    credit: After Jan Gossaert / Attributed to Simon Bening
+identifiers:
+  bnf: "144187710"
+  gnd: "121673391"
+  idref: "114992339"
+  rkd: "467897"
+  viaf: "45163160"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q69450
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q69450
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q69450

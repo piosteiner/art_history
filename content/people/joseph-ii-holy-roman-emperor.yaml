@@ -1,0 +1,67 @@
+public_id: 101347
+name: Joseph II, Holy Roman Emperor
+names:
+  - lang: de
+    role: original
+    text: Joseph II
+  - Josef II
+  - lang: nl
+    role: translation
+    text: Keizer Jozef II
+  - lang: de
+    role: original
+    text: Joseph II.
+  - lang: it
+    role: translation
+    text: Giuseppe II d'Asburgo-Lorena
+  - lang: es
+    role: translation
+    text: José II de Habsburgo
+  - lang: ja
+    role: translation
+    text: ヨーゼフ2世
+  - lang: zh
+    role: translation
+    text: 约瑟夫二世
+  - lang: ko
+    role: translation
+    text: 요제프 2세
+  - lang: ru
+    role: translation
+    text: Иосиф II
+kind: person
+occupations: [military leader, monarch]
+birth: 1741-03-13
+death: 1790-02-20
+wikidata_id: Q76555
+metadata:
+  sources: [Wikidata Q76555 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1b/Anton_von_Maron_006.png
+    source_url: https://commons.wikimedia.org/wiki/File:Anton_von_Maron_006.png
+    license: Public domain
+    credit: Anton von Maron
+identifiers:
+  bnf: "119898853"
+  gnd: "118558404"
+  idref: "027484688"
+  lc: n50038057
+  rkd: "438882"
+  viaf: "268608732"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q76555
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q76555
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q76555
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q76555

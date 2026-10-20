@@ -1,0 +1,21 @@
+public_id: 101157
+name: Carlos de Borbón y Borbón-Parma
+kind: person
+birth: 1788-03-29
+death: 1855-03-10
+wikidata_id: Q343621
+metadata:
+  sources: [Wikidata Q343621 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q343621
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q343621
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q343621

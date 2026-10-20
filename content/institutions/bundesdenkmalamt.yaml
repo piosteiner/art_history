@@ -1,0 +1,24 @@
+public_id: 101501
+name: Bundesdenkmalamt
+names:
+  - Austria National Heritage Board
+  - lang: ja
+    role: translation
+    text: オーストリア連邦文化財局
+founded: 31 December 1850
+website_url: http://www.bda.at/
+wikidata_id: Q876452
+metadata:
+  sources: [Wikidata Q876452 (retrieved 2026-10-19)]
+identifiers:
+  bnf: 11993508k
+  gnd: 39718-0
+  idref: 09374188X
+  lc: n82050769
+  ulan: "500457906"
+  viaf: "127762370"
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q876452

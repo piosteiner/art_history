@@ -1,0 +1,153 @@
+public_id: 101300
+title_lang: de
+title: Jäger im Schnee (Winter)
+names:
+  - lang: en
+    role: original
+    text: The Hunters in the Snow
+  - lang: pl
+    role: original
+    text: Myśliwi na śniegu
+  - December/January
+  - lang: nl
+    role: translation
+    text: Jagers in de sneeuw
+  - lang: fr
+    role: translation
+    text: Chasseurs dans la neige
+  - lang: de
+    role: original
+    text: Die Jäger im Schnee
+  - lang: it
+    role: translation
+    text: Cacciatori nella neve
+  - lang: es
+    role: translation
+    text: Los cazadores en la nieve
+  - lang: ja
+    role: translation
+    text: 雪中の狩人
+  - lang: zh
+    role: translation
+    text: 雪中獵人
+  - lang: ko
+    role: translation
+    text: 눈 속의 사냥꾼
+  - lang: ru
+    role: translation
+    text: Охотники на снегу
+creator: pieter-brueghel-the-elder
+created: 1565
+materials: [oil paint, panel]
+dimensions: [117, 162]
+institution: kunsthistorisches-museum
+inventory_number: GG_1838
+wikidata_id: Q500985
+metadata:
+  sources: [Wikidata Q500985 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg/1280px-Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_%28Winter%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Hunters_in_the_Snow_(Winter)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Pieter Brueghel the Elder
+provenance:
+  - owner: person/nicolaes-jonghelinck
+    place: antwerp
+    sources:
+      - url: https://www.khm.at/kunstwerke/jaeger-im-schnee-winter-327
+        note: “Nicolaas Jongelinck; 1594 Geschenk der Stadt Antwerpen an Erzherzog Ernst; 1595 Nachlass Erzherzog Ernst; Rudolf II.; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: place/antwerp
+    acquired: 1594 or earlier
+    label: the City of Antwerp
+    sources:
+      - url: https://www.khm.at/kunstwerke/jaeger-im-schnee-winter-327
+        note: “Nicolaas Jongelinck; 1594 Geschenk der Stadt Antwerpen an Erzherzog Ernst; 1595 Nachlass Erzherzog Ernst; Rudolf II.; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/archduke-ernest-of-austria
+    acquired: 1594
+    method: gift
+    direct: true
+    place: brussels
+    label: gift of the City of Antwerp
+    sources:
+      - url: https://www.khm.at/kunstwerke/jaeger-im-schnee-winter-327
+        note: “Nicolaas Jongelinck; 1594 Geschenk der Stadt Antwerpen an Erzherzog Ernst; 1595 Nachlass Erzherzog Ernst; Rudolf II.; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/archduke-ernest-of-austria
+    role: estate
+    acquired: 1595
+    method: inheritance
+    direct: true
+    place: brussels
+    sources:
+      - url: https://www.khm.at/kunstwerke/jaeger-im-schnee-winter-327
+        note: “Nicolaas Jongelinck; 1594 Geschenk der Stadt Antwerpen an Erzherzog Ernst; 1595 Nachlass Erzherzog Ernst; Rudolf II.; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/emperor-rudolf-ii
+    place: prague
+    sources:
+      - url: https://www.khm.at/kunstwerke/jaeger-im-schnee-winter-327
+        note: “Nicolaas Jongelinck; 1594 Geschenk der Stadt Antwerpen an Erzherzog Ernst; 1595 Nachlass Erzherzog Ernst; Rudolf II.; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/archduke-leopold-wilhelm-of-austria
+    sources:
+      - url: https://www.khm.at/kunstwerke/jaeger-im-schnee-winter-327
+        note: “Nicolaas Jongelinck; 1594 Geschenk der Stadt Antwerpen an Erzherzog Ernst; 1595 Nachlass Erzherzog Ernst; Rudolf II.; Slg. Leopold Wilhelm”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    acquired: 1662
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequeathed to Emperor Leopold I
+    sources:
+      - url: https://de.wikipedia.org/wiki/Leopold_Wilhelm_von_%C3%96sterreich
+        note: “Diese Sammlung wurde an seinen Neffen Leopold I. vererbt, so dass sie in kaiserlichen Besitz kam.”
+        source: wikipedia-de-leopold-wilhelm
+        accessed: 2026-10-19
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q500985
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q500985
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q500985
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q500985
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q500985
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q500985
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q500985

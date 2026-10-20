@@ -1,0 +1,35 @@
+public_id: 101223
+name: Mario I Farnese
+given_name: Mario I
+family_name: Farnese
+names:
+  - lang: de
+    role: translation
+    text: Mario Farnese
+kind: person
+occupations: [military personnel, diplomat]
+birth: c. 1548
+death: 1619-04-07
+wikidata_id: Q107051297
+metadata:
+  sources: [Wikidata Q107051297 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "1035691418"
+  viaf: "301491176"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q107051297
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q107051297
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q107051297
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q107051297

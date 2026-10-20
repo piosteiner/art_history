@@ -1,0 +1,44 @@
+public_id: 101221
+name: Francisco Javier Goya Bayeu
+given_name: Francisco Javier Goya
+family_name: Bayeu
+names:
+  - Francisco Javier de Goya
+  - Javier Goya Bayeu
+  - lang: es
+    role: translation
+    text: Francisco Javier de Goya y Bayeu
+  - lang: ru
+    role: translation
+    text: Франсиско Хавьер Гойя Байеу
+kind: person
+occupations: [painter, rentier]
+birth: 1784-12-02
+death: 1854-03-12
+wikidata_id: Q43372023
+metadata:
+  sources: [Wikidata Q43372023 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Francisco_Javier_Goya_y_Bayeu_%28Museo_de_Zaragoza%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francisco_Javier_Goya_y_Bayeu_(Museo_de_Zaragoza).jpg
+    license: Public domain
+    credit: Francisco Goya
+identifiers:
+  rkd: "271760"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q43372023
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q43372023
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q43372023
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q43372023

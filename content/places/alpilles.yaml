@@ -1,14 +1,28 @@
-public_id: "100185"
+public_id: 100185
 name: Alpilles
+names:
+  - Les Alpilles
+  - Chaîne des Alpilles
+  - lang: fr
+    role: translation
+    text: Massif des Alpilles
 kind: site
+parent: france
+country_code: FR
 location: [4.83306, 43.75]
 wikidata_id: Q2107098
 metadata:
   sources: [Wikidata Q2107098 (retrieved 2026-10-09)]
+identifiers:
+  gnd: 4295624-9
 sources:
   kind:
     - accessed: 2026-10-09
       property: P31
+      wikidata: Q2107098
+  parent:
+    - accessed: 2026-10-19
+      property: P131
       wikidata: Q2107098
   location:
     - accessed: 2026-10-09

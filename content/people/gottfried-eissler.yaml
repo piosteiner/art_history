@@ -1,0 +1,32 @@
+public_id: 101449
+name: Gottfried Eissler
+given_name: Gottfried
+family_name: Eissler
+kind: person
+occupations: [art collector, bibliophile]
+birth: 1862-02-16
+death: 1924-12-25
+wikidata_id: Q94914499
+metadata:
+  sources: [Wikidata Q94914499 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "127766758"
+  rkd: "449301"
+  viaf: "88891927"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q94914499
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q94914499
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q94914499
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q94914499

@@ -1,0 +1,82 @@
+public_id: 101545
+title_lang: it
+title: Le cattive madri
+names:
+  - lang: en
+    role: original
+    text: The Evil Mothers
+  - lang: fr
+    role: translation
+    text: Les Mauvaises Mères
+  - lang: de
+    role: translation
+    text: Die bösen Mütter
+  - lang: es
+    role: translation
+    text: Las malas madres
+  - lang: ja
+    role: translation
+    text: 悪しき母たち
+creator: giovanni-segantini
+created: 1894
+materials: [oil paint, canvas]
+dimensions: [105, 200]
+institution: belvedere
+inventory_number: "485"
+wikidata_id: Q749201
+metadata:
+  sources: [Wikidata Q749201 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Giovanni_Segantini_-_Die_b%C3%B6sen_M%C3%BCtter_-_485_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Giovanni_Segantini_-_Die_b%C3%B6sen_M%C3%BCtter_-_485_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_-_Die_b%C3%B6sen_M%C3%BCtter_-_485_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Giovanni Segantini
+provenance:
+  - owner: institution/vienna-secession
+    ended: 1901
+    place: vienna
+    notes_md: The Belvedere names only the donor; how the Secession acquired the painting is not published.
+    sources:
+      - url: https://sammlung.belvedere.at/objects/6224/die-bosen-mutter
+        note: "“Inventarzugang: 1901 Widmung Secession, Wien, unter finanzieller Mitwirkung der Kunstfreunde” — read in the Internet Archive’s copy of 2023-10-12: https://web.archive.org/web/20231012030547/https://sammlung.belvedere.at/objects/6224/die-bosen-mutter"
+        source: belvedere-sammlung-online
+        accessed: 2023-10-12
+  - owner: institution/belvedere
+    acquired: 1901
+    method: gift
+    direct: true
+    place: vienna
+    label: given by the Secession with the financial help of the Kunstfreunde (Moderne Galerie)
+    sources:
+      - url: https://sammlung.belvedere.at/objects/6224/die-bosen-mutter
+        note: "“Inventarzugang: 1901 Widmung Secession, Wien, unter finanzieller Mitwirkung der Kunstfreunde” — read in the Internet Archive’s copy of 2023-10-12: https://web.archive.org/web/20231012030547/https://sammlung.belvedere.at/objects/6224/die-bosen-mutter"
+        source: belvedere-sammlung-online
+        accessed: 2023-10-12
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q749201
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q749201
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q749201
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q749201
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q749201
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q749201
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q749201

@@ -1,0 +1,18 @@
+public_id: 101301
+name: Johannes Vermeer
+given_name: Johannes
+family_name: Vermeer
+birth: 1632-10
+death: 1675-12-15
+wikidata_id: Q41264
+metadata:
+  sources: [Wikidata Q41264 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q41264
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q41264

@@ -1,0 +1,16 @@
+public_id: 101174
+name: Battle of Mühlberg
+period: 1547-04-25
+location: [13.2167, 51.4331]
+wikidata_id: Q661327
+metadata:
+  sources: [Wikidata Q661327 (retrieved 2026-10-19)]
+sources:
+  period:
+    - accessed: 2026-10-19
+      property: P585
+      wikidata: Q661327
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q661327

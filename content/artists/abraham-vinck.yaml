@@ -1,0 +1,25 @@
+public_id: 101359
+name: Abraham Vinck
+given_name: Abraham
+family_name: Vinck
+names: [Abraham Willemsz. Vinck, Vinck]
+birth: c. 1575
+death: 1619-10
+wikidata_id: Q20788105
+metadata:
+  sources: [Wikidata Q20788105 (retrieved 2026-10-19)]
+identifiers:
+  idref: "236237217"
+  lc: no2020022996
+  rkd: "81114"
+  ulan: "500027674"
+  viaf: "95852276"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q20788105
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q20788105

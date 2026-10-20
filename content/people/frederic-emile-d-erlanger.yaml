@@ -1,0 +1,45 @@
+public_id: 101222
+name: Frédéric Emile d'Erlanger
+names:
+  - Frédéric Emile Baron d’Erlanger
+  - lang: nl
+    role: translation
+    text: Frédéric Émile d'Erlanger
+  - lang: fr
+    role: translation
+    text: Émile d'Erlanger
+  - lang: ja
+    role: translation
+    text: エルランジェ商会
+kind: person
+occupations: [banker]
+birth: 1832-06-19
+death: 1911-05-22
+wikidata_id: Q827152
+metadata:
+  sources: [Wikidata Q827152 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Fr%C3%A9d%C3%A9ric_%C3%89mile_d%27Erlanger.jpg/1280px-Fr%C3%A9d%C3%A9ric_%C3%89mile_d%27Erlanger.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fr%C3%A9d%C3%A9ric_%C3%89mile_d%27Erlanger.jpg
+    license: CC BY-SA 4.0
+    credit: Nelly12145
+identifiers:
+  gnd: "1146548494"
+  viaf: "247151247974344270009"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q827152
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q827152
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q827152
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q827152

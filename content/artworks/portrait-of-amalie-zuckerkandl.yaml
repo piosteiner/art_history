@@ -1,0 +1,125 @@
+public_id: 101530
+title_lang: de
+title: Bildnis Amalie Zuckerkandl
+names:
+  - lang: en
+    role: translation
+    text: Portrait of Amalie Zuckerkandl
+  - lang: nl
+    role: translation
+    text: Portret van Amalie Zuckerkandl
+  - lang: fr
+    role: translation
+    text: Portrait d'Amalie Zuckerkandl
+  - lang: de
+    role: original
+    text: Bildnis der Amalie Zuckerkandl
+  - lang: it
+    role: translation
+    text: Ritratto di Amalie Zuckerlandl
+  - lang: ru
+    role: translation
+    text: Портрет Амалии Цукеркандль
+creator: gustav-klimt
+created: 1917/1918
+created_label: c. 1910s
+materials: [oil paint, canvas]
+dimensions: [128, 128]
+institution: belvedere
+inventory_number: "7700"
+wikidata_id: Q28007512
+metadata:
+  sources: [Wikidata Q28007512 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Gustav_Klimt_-_Amalie_Zuckerkandl_-_7700_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_Amalie_Zuckerkandl_-_7700_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Amalie_Zuckerkandl_-_7700_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: person/ferdinand-bloch-bauer
+    acquired: 1928 or earlier
+    ended: 1939
+    place: vienna
+    certainty: probable
+    notes_md: "The board: it is not certain that he owned it; he may have held it on loan from Amalie Zuckerkandl."
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Zuckerkandl_Amalie_2005-06-29.pdf
+        note: “Bei der Klimt-Gedächtnisausstellung der Wiener Sezession des Jahres 1928 wurde unter Positionsnummer 58 das gegenständliche Gemälde als "Damenbildnis. Besitz F.Bloch-Bauer" präsentiert.”
+        source: kunstrueckgabebeirat-zuckerkandl-2005
+        accessed: 2026-10-19
+    records:
+      - kind: exhibition
+        date: "1928"
+        place: vienna
+        number: "58"
+        document: Klimt-Gedächtnisausstellung, Secession
+      - date: 1932-03
+        room: Schlafzimmer, Palais Bloch-Bauer, Elisabethstraße
+        place: vienna
+      - kind: exhibition
+        date: "1937"
+        place: paris
+        number: "362"
+        document: Exposition d'Art Autrichien, Musée du Jeu de Paume
+  - owner: person/amalie-zuckerkandl
+    acquired: 1939
+    method: gift
+    place: vienna
+    label: the sitter, or her daughter Hermine Müller-Hofmann and her family
+    certainty: possible
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Zuckerkandl_Amalie_2005-06-29.pdf
+        note: “es ist daher mit einiger Wahrscheinlichkeit denkbar, dass Ferdinand Bloch-Bauer von Zürich aus die Ausfolgung des Portraits der Amalie Zuckerkandl an die Dargestellte oder an die Familie Müller-Hoffmann veranlasst hat”
+        source: kunstrueckgabebeirat-zuckerkandl-2005
+        accessed: 2026-10-19
+  - owner: person/vita-kunstler
+    acquired: before 1945
+    method: purchase
+    place: vienna
+    label: bought from the Müller-Hofmann family, through Otto Kallir's Neue Galerie
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Zuckerkandl_Amalie_2005-06-29.pdf
+        note: “Schlechte wirtschaftliche Lage hat dann offensichtlich vor 1945 zu einem Verkauf des Gemäldes an Frau Dr. Vita Künstler geführt.”
+        source: kunstrueckgabebeirat-zuckerkandl-2005
+        accessed: 2026-10-19
+  - owner: institution/belvedere
+    acquired: 1988
+    method: gift
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Zuckerkandl_Amalie_2005-06-29.pdf
+        note: “Eine Rückgabe des von Dr. Künstler der Österreichischen Galerie im Jahre 1988 geschenkten Portraits Amalie Zuckerkandl […] kann daher nicht vorgeschlagen werden.”
+        source: kunstrueckgabebeirat-zuckerkandl-2005
+        accessed: 2026-10-19
+identifiers:
+  gnd: 7583528-9
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28007512
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28007512
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28007512
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28007512
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28007512
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28007512
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28007512

@@ -1,0 +1,71 @@
+public_id: 101436
+name: Archduke Charles, Duke of Teschen
+names:
+  - lang: de
+    role: original
+    text: Carl von Teschen
+  - Archduke Charles of Austria, Duke of Teschen
+  - Archduke Charles
+  - lang: nl
+    role: translation
+    text: Karel van Oostenrijk-Teschen
+  - lang: fr
+    role: translation
+    text: Charles-Louis d'Autriche-Teschen
+  - lang: de
+    role: original
+    text: Karl von Österreich-Teschen
+  - lang: it
+    role: translation
+    text: Carlo d'Asburgo-Teschen
+  - lang: es
+    role: translation
+    text: Carlos de Austria-Teschen
+  - lang: ja
+    role: translation
+    text: カール・フォン・エスターライヒ＝テシェン
+  - lang: zh
+    role: translation
+    text: 卡爾大公
+  - lang: ko
+    role: translation
+    text: 테셴 공작 카를
+  - lang: ru
+    role: translation
+    text: Карл Австрийский
+kind: person
+occupations: [military officer, military personnel]
+birth: 1771-09-05
+death: 30 April 1847
+wikidata_id: Q84201
+metadata:
+  sources: [Wikidata Q84201 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/29/Thomas-Lawrence_Archduke-Charles-of-Austria.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Thomas-Lawrence_Archduke-Charles-of-Austria.jpg
+    license: Public domain
+    credit: Thomas Lawrence
+identifiers:
+  bnf: 13516994r
+  gnd: "118723049"
+  hls: "041523"
+  idref: "035456620"
+  lc: n82033059
+  viaf: "69724369"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q84201
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q84201
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q84201
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q84201

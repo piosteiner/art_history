@@ -1,0 +1,125 @@
+public_id: 101531
+title_lang: de
+title: Garten mit Sonnenblumen auf dem Lande
+names:
+  - lang: en
+    role: original
+    text: Farm Garden with Sunflowers
+  - Cottage garden with sunflowers
+  - lang: en
+    role: original
+    text: Bauerngarten mit Sonnenblumen
+  - lang: fr
+    role: translation
+    text: Jardin aux tournesols
+  - lang: ru
+    role: translation
+    text: Крестьянский сад с подсолнухами
+creator: gustav-klimt
+created: 1906
+materials: [oil paint, canvas]
+dimensions: [110, 110]
+institution: belvedere
+inventory_number: "3685"
+wikidata_id: Q19912813
+metadata:
+  sources: [Wikidata Q19912813 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Klimt_-_Bauerngarten_mit_Sonnenblumen_-_ca1907.jpeg/1280px-Klimt_-_Bauerngarten_mit_Sonnenblumen_-_ca1907.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Klimt_-_Bauerngarten_mit_Sonnenblumen_-_ca1907.jpeg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: person/karl-wittgenstein
+    acquired: 1910 or earlier
+    ended: 1913
+    method: purchase
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen
+        note: "“spätestens 1910–1913, Ankauf, Karl Wittgenstein, Wien [1] 1913/1914, keine Angabe, Gustav Klimt [2] ?–mindestens 1937, Übernahme, Hermine Wittgenstein, Wien [3] 1939, keine Angabe, Galerie Sanct Lucas, Wien 1939, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, 2. Lieferung (1910), Taf. 3, 2. Lieferung, Sonnenblumen (Besitzer: Herr Karl Wittgenstein). [2] Ausstellung des Deutschen Künstlerbundes 1913 (Ausst.-Kat. Kunsthalle Mannheim), Mannheim 1913, Kat.-Nr. 197 (Sonnenblumen); Deutschböhmischer Künstlerbund (Ausst.-Kat. Rudolfinum Prag), Prag 1914, Kat.-Nr. 19 (Sonnenblumen). Jeweils als verkäuflich angeführt. [3] Max Eisler (Hg.), Gustav Klimt. Eine Nachlese, Wien 1931, Nr. 3, Sonnenblumen (Im Besitze von Frau Hermine Wittgenstein). Katalog Exposition dʼArt Autrichien, Musée du Jeu de Paume, Paris, Mai–Juni 1937, Kat.-Nr. 366 (Les Soleils [Vienne, Coll. Wittgenstein]). [4] Archiv des Belvedere, Wien, Zl. 663/1939, Quittung der Galerie Sanct Lucas, 28.10.1939.” — read in the Internet Archive’s copy of 2026-09-15: https://web.archive.org/web/20260915144324/https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen"
+        source: belvedere-sammlung-online
+        accessed: 2026-09-15
+  - owner: artist/gustav-klimt
+    acquired: 1913
+    ended: 1914
+    place: vienna
+    label: shown as for sale in Mannheim (1913) and Prague (1914)
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen
+        note: "“spätestens 1910–1913, Ankauf, Karl Wittgenstein, Wien [1] 1913/1914, keine Angabe, Gustav Klimt [2] ?–mindestens 1937, Übernahme, Hermine Wittgenstein, Wien [3] 1939, keine Angabe, Galerie Sanct Lucas, Wien 1939, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, 2. Lieferung (1910), Taf. 3, 2. Lieferung, Sonnenblumen (Besitzer: Herr Karl Wittgenstein). [2] Ausstellung des Deutschen Künstlerbundes 1913 (Ausst.-Kat. Kunsthalle Mannheim), Mannheim 1913, Kat.-Nr. 197 (Sonnenblumen); Deutschböhmischer Künstlerbund (Ausst.-Kat. Rudolfinum Prag), Prag 1914, Kat.-Nr. 19 (Sonnenblumen). Jeweils als verkäuflich angeführt. [3] Max Eisler (Hg.), Gustav Klimt. Eine Nachlese, Wien 1931, Nr. 3, Sonnenblumen (Im Besitze von Frau Hermine Wittgenstein). Katalog Exposition dʼArt Autrichien, Musée du Jeu de Paume, Paris, Mai–Juni 1937, Kat.-Nr. 366 (Les Soleils [Vienne, Coll. Wittgenstein]). [4] Archiv des Belvedere, Wien, Zl. 663/1939, Quittung der Galerie Sanct Lucas, 28.10.1939.” — read in the Internet Archive’s copy of 2026-09-15: https://web.archive.org/web/20260915144324/https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen"
+        source: belvedere-sammlung-online
+        accessed: 2026-09-15
+    records:
+      - kind: exhibition
+        date: "1913"
+        place: mannheim
+        number: "197"
+        document: Ausstellung des Deutschen Künstlerbundes
+      - kind: exhibition
+        date: "1914"
+        place: prague
+        number: "19"
+        document: Deutschböhmischer Künstlerbund, Rudolfinum
+  - owner: person/hermine-wittgenstein
+    ended: 1937 or later
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen
+        note: "“spätestens 1910–1913, Ankauf, Karl Wittgenstein, Wien [1] 1913/1914, keine Angabe, Gustav Klimt [2] ?–mindestens 1937, Übernahme, Hermine Wittgenstein, Wien [3] 1939, keine Angabe, Galerie Sanct Lucas, Wien 1939, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, 2. Lieferung (1910), Taf. 3, 2. Lieferung, Sonnenblumen (Besitzer: Herr Karl Wittgenstein). [2] Ausstellung des Deutschen Künstlerbundes 1913 (Ausst.-Kat. Kunsthalle Mannheim), Mannheim 1913, Kat.-Nr. 197 (Sonnenblumen); Deutschböhmischer Künstlerbund (Ausst.-Kat. Rudolfinum Prag), Prag 1914, Kat.-Nr. 19 (Sonnenblumen). Jeweils als verkäuflich angeführt. [3] Max Eisler (Hg.), Gustav Klimt. Eine Nachlese, Wien 1931, Nr. 3, Sonnenblumen (Im Besitze von Frau Hermine Wittgenstein). Katalog Exposition dʼArt Autrichien, Musée du Jeu de Paume, Paris, Mai–Juni 1937, Kat.-Nr. 366 (Les Soleils [Vienne, Coll. Wittgenstein]). [4] Archiv des Belvedere, Wien, Zl. 663/1939, Quittung der Galerie Sanct Lucas, 28.10.1939.” — read in the Internet Archive’s copy of 2026-09-15: https://web.archive.org/web/20260915144324/https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen"
+        source: belvedere-sammlung-online
+        accessed: 2026-09-15
+    records:
+      - kind: exhibition
+        date: "1937"
+        place: paris
+        number: "366"
+        document: Exposition d'Art Autrichien, Musée du Jeu de Paume
+  - owner: institution/galerie-sanct-lucas
+    role: dealer
+    acquired: 1939
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen
+        note: "“spätestens 1910–1913, Ankauf, Karl Wittgenstein, Wien [1] 1913/1914, keine Angabe, Gustav Klimt [2] ?–mindestens 1937, Übernahme, Hermine Wittgenstein, Wien [3] 1939, keine Angabe, Galerie Sanct Lucas, Wien 1939, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, 2. Lieferung (1910), Taf. 3, 2. Lieferung, Sonnenblumen (Besitzer: Herr Karl Wittgenstein). [2] Ausstellung des Deutschen Künstlerbundes 1913 (Ausst.-Kat. Kunsthalle Mannheim), Mannheim 1913, Kat.-Nr. 197 (Sonnenblumen); Deutschböhmischer Künstlerbund (Ausst.-Kat. Rudolfinum Prag), Prag 1914, Kat.-Nr. 19 (Sonnenblumen). Jeweils als verkäuflich angeführt. [3] Max Eisler (Hg.), Gustav Klimt. Eine Nachlese, Wien 1931, Nr. 3, Sonnenblumen (Im Besitze von Frau Hermine Wittgenstein). Katalog Exposition dʼArt Autrichien, Musée du Jeu de Paume, Paris, Mai–Juni 1937, Kat.-Nr. 366 (Les Soleils [Vienne, Coll. Wittgenstein]). [4] Archiv des Belvedere, Wien, Zl. 663/1939, Quittung der Galerie Sanct Lucas, 28.10.1939.” — read in the Internet Archive’s copy of 2026-09-15: https://web.archive.org/web/20260915144324/https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen"
+        source: belvedere-sammlung-online
+        accessed: 2026-09-15
+  - owner: institution/belvedere
+    acquired: 1939-10-28
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen
+        note: "“spätestens 1910–1913, Ankauf, Karl Wittgenstein, Wien [1] 1913/1914, keine Angabe, Gustav Klimt [2] ?–mindestens 1937, Übernahme, Hermine Wittgenstein, Wien [3] 1939, keine Angabe, Galerie Sanct Lucas, Wien 1939, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, 2. Lieferung (1910), Taf. 3, 2. Lieferung, Sonnenblumen (Besitzer: Herr Karl Wittgenstein). [2] Ausstellung des Deutschen Künstlerbundes 1913 (Ausst.-Kat. Kunsthalle Mannheim), Mannheim 1913, Kat.-Nr. 197 (Sonnenblumen); Deutschböhmischer Künstlerbund (Ausst.-Kat. Rudolfinum Prag), Prag 1914, Kat.-Nr. 19 (Sonnenblumen). Jeweils als verkäuflich angeführt. [3] Max Eisler (Hg.), Gustav Klimt. Eine Nachlese, Wien 1931, Nr. 3, Sonnenblumen (Im Besitze von Frau Hermine Wittgenstein). Katalog Exposition dʼArt Autrichien, Musée du Jeu de Paume, Paris, Mai–Juni 1937, Kat.-Nr. 366 (Les Soleils [Vienne, Coll. Wittgenstein]). [4] Archiv des Belvedere, Wien, Zl. 663/1939, Quittung der Galerie Sanct Lucas, 28.10.1939.” — read in the Internet Archive’s copy of 2026-09-15: https://web.archive.org/web/20260915144324/https://sammlung.belvedere.at/objects/2483/bauerngarten-mit-sonnenblumen"
+        source: belvedere-sammlung-online
+        accessed: 2026-09-15
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q19912813
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q19912813
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q19912813
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q19912813
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q19912813
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q19912813
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q19912813

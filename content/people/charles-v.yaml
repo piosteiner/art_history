@@ -1,0 +1,82 @@
+public_id: 101242
+name: Charles V
+names:
+  - lang: fr
+    role: original
+    text: Charles de Habsbourg
+  - Karl V.
+  - Holy Roman Emperor Charles V
+  - King Carlos I
+  - King Charles I
+  - Emperor Charles V
+  - Charles I of Spain
+  - Don Carlos
+  - King Charles
+  - Carlos I
+  - Charles I
+  - Carlos V
+  - King Carlos
+  - Emperor Karl V
+  - lang: nl
+    role: translation
+    text: Keizer Karel V
+  - lang: fr
+    role: original
+    text: Charles Quint
+  - lang: it
+    role: translation
+    text: Carlo V d'Asburgo
+  - lang: es
+    role: translation
+    text: Carlos I de España
+  - lang: ja
+    role: translation
+    text: カール5世 (神聖ローマ皇帝)
+  - lang: zh
+    role: translation
+    text: 查理五世
+  - lang: ko
+    role: translation
+    text: 카를 5세
+  - lang: ru
+    role: translation
+    text: Карл V
+kind: person
+occupations: [monarch]
+birth: 1500-03-05
+death: 1558-10-01
+wikidata_id: Q32500
+metadata:
+  sources: [Wikidata Q32500 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg/1280px-Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500%E2%80%931558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg
+    license: Public domain
+    credit: Attributed to Titian
+identifiers:
+  bnf: 12038246v
+  dodis: P43094
+  gnd: "118560093"
+  hls: "029211"
+  idref: 08578334X
+  lc: n79112289
+  rkd: "439066"
+  ulan: "500231828"
+  viaf: "88598818"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q32500
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q32500
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q32500
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q32500

@@ -1,0 +1,32 @@
+public_id: 101547
+name: Berthe Hodler
+given_name: Berthe
+family_name: Hodler
+names: [Berthe Jacques]
+kind: person
+birth: 1868
+death: 1957
+wikidata_id: Q131819970
+metadata:
+  sources: [Wikidata Q131819970 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Ferdinand_Hodler_Portr%C3%A4t_Berthe_Hodler.jpg/1280px-Ferdinand_Hodler_Portr%C3%A4t_Berthe_Hodler.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ferdinand_Hodler_Portr%C3%A4t_Berthe_Hodler.jpg
+    license: Public domain
+    credit: Ferdinand Hodler
+identifiers:
+  gnd: "1171859244"
+  viaf: "495154329445526970008"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q131819970
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q131819970
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q131819970

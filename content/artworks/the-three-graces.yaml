@@ -1,0 +1,173 @@
+public_id: 101183
+title_lang: es
+title: Las tres Gracias
+names:
+  - lang: nl
+    role: original
+    text: Drie Gratiën
+  - lang: en
+    role: translation
+    text: The Three Graces
+  - lang: fr
+    role: translation
+    text: Les Trois Grâces
+  - lang: de
+    role: translation
+    text: Die drei Grazien
+  - lang: it
+    role: translation
+    text: Tre Grazie
+  - lang: ja
+    role: translation
+    text: 三美神 (ルーベンス、プラド美術館)
+  - lang: zh
+    role: translation
+    text: 又有美惠三女神
+  - lang: ko
+    role: translation
+    text: 삼미신
+  - lang: ru
+    role: translation
+    text: Три грации
+creator: peter-paul-rubens
+created: 1630/1635
+kind: oil painting
+medium: Oil on oak panel
+materials: [oil paint, panel]
+dimensions: [220.5, 182]
+institution: museo-del-prado
+inventory_number: P001670
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+description_md: Rubens painted the three daughters of Zeus, in a ring dance under a garland of flowers, in his last years (1630–35); the figure on the left is often seen as a likeness of his second wife, Helena Fourment. It was among the nudes kept out of view in the Academy’s reserved room before it came to the Prado.
+wikidata_id: Q2268524
+metadata:
+  sources: [Wikidata Q2268524 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/The_Three_Graces%2C_by_Peter_Paul_Rubens%2C_from_Prado_in_Google_Earth.jpg/1280px-The_Three_Graces%2C_by_Peter_Paul_Rubens%2C_from_Prado_in_Google_Earth.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Three_Graces,_by_Peter_Paul_Rubens,_from_Prado_in_Google_Earth.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1666 or earlier
+    ended: 1796
+    place: royal-alcazar-of-madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "“Colección Real (Real Alcázar, Madrid, Pieza de la galería baja que cae sobre el jardín de los emperadores Bovedas del Ticiano, 1666, nº688; Real Alcázar, Bobedas del Ticiano, 1686, s.n.; Real Alcázar, Bobedas del Ticiano, 1701-1703, nº483; Real Alcázar, Pinturas que estan en las Bobedas de Palacio, 1734, nº206; Palacio Nuevo, Madrid, Pinturas existentes antiguas en la primera sala de este oficio, 1747, nº96; Palacio Nuevo, Estudio de Andrés de la Calleja, 1772, nº96; Palacio Nuevo, Casa de Rebeque, 1794, nº96;” — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
+    records:
+      - date: "1666"
+        room: pieza de la galería baja que cae sobre el jardín de los emperadores, Bóvedas de Tiziano
+        place: royal-alcazar-of-madrid
+        number: "688"
+      - date: "1686"
+        note: without number
+        room: Bóvedas de Tiziano
+        place: royal-alcazar-of-madrid
+      - date: 1701/1703
+        room: Bóvedas de Tiziano
+        place: royal-alcazar-of-madrid
+        number: "483"
+      - date: "1734"
+        room: pinturas que están en las Bóvedas de Palacio
+        place: royal-alcazar-of-madrid
+        number: "206"
+      - date: "1747"
+        room: pinturas existentes antiguas en la primera sala de este oficio
+        place: royal-palace-of-madrid
+        number: "96"
+      - date: "1772"
+        room: estudio de Andrés de la Calleja
+        place: royal-palace-of-madrid
+        number: "96"
+      - date: "1794"
+        room: Casa de Rebeque
+        place: royal-palace-of-madrid
+        number: "96"
+  - owner: institution/royal-academy-of-fine-arts-of-san-fernando
+    role: custodian
+    acquired: 1796/1805
+    ended: 1827/1834
+    direct: true
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "“Real Academia de Bellas Artes de San Fernando, Madrid, Pinturas que posee la Real Academia de Bellas Artes de San Fernando, 1796-1805, nº50; Real Academia de Bellas Artes de San Fernando, Sala Reservada, 1827, nº50;” — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
+    records:
+      - date: 1796/1805
+        place: madrid
+        number: "50"
+        document: paintings of the Real Academia de Bellas Artes de San Fernando
+      - date: "1827"
+        room: Sala Reservada
+        place: madrid
+        number: "50"
+  - owner: institution/museo-del-prado
+    acquired: 1827/1834
+    method: transfer
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+        note: "“Museo Real de Pinturas a la muerte de Fernando VII, Madrid, Sala Reservada, 1834, nº65)” — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-27
+    records:
+      - date: "1834"
+        room: Sala Reservada
+        place: madrid
+        number: "65"
+        document: inventory of the Museo Real at the death of Ferdinand VII
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2268524
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2268524
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2268524
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2268524
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-27: https://web.archive.org/web/20241127004006/https://www.museodelprado.es/coleccion/obra-de-arte/wd/145eadd9-0b54-4b2d-affe-09af370b6932"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-27

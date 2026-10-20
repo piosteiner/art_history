@@ -1,7 +1,7 @@
-public_id: "100202"
+public_id: 100202
 title_lang: de
 title: Die Sintflut mit der Arche Noah
-creator: jan-brueghel-the-younger
+creator: jan-brueghel-the-elder
 created: 1601
 materials: [oil paint, copper]
 institution: kunsthaus-zurich
@@ -136,9 +136,9 @@ sources:
       property: P571
       wikidata: Q131585473
   creator:
-    - accessed: 2026-10-09
-      property: P170
-      wikidata: Q131585473
+    - url: https://collection.kunsthaus.ch/en/collection/item/620/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-19
   institution:
     - accessed: 2026-10-09
       property: P195

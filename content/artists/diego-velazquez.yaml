@@ -1,0 +1,18 @@
+public_id: 101126
+name: Diego Velázquez
+given_name: Diego
+family_name: Velázquez
+birth: 1599
+death: 1660-08-06
+wikidata_id: Q297
+metadata:
+  sources: [Wikidata Q297 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q297
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q297

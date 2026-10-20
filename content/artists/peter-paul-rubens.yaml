@@ -1,0 +1,18 @@
+public_id: 101182
+name: Peter Paul Rubens
+given_name: Peter Paul
+family_name: Rubens
+birth: 1577-07-08
+death: 1640-05-30
+wikidata_id: Q5599
+metadata:
+  sources: [Wikidata Q5599 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q5599
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q5599

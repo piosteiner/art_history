@@ -1,0 +1,86 @@
+public_id: 101544
+title_lang: de
+title: Tod und Mädchen
+names:
+  - lang: en
+    role: translation
+    text: Death and the Maiden
+  - lang: fr
+    role: translation
+    text: La Mort et la jeune fille
+  - lang: it
+    role: translation
+    text: La morte e la fanciulla
+  - lang: es
+    role: translation
+    text: La Muerte y la doncella
+  - lang: ko
+    role: translation
+    text: 죽음과 소녀
+  - lang: ru
+    role: translation
+    text: Смерть и девушка
+creator: egon-schiele
+created: 1915
+materials: [oil paint, canvas]
+dimensions: [150, 180]
+institution: belvedere
+inventory_number: "3171"
+wikidata_id: Q2438357
+metadata:
+  sources: [Wikidata Q2438357 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Egon_Schiele_-_Tod_und_M%C3%A4dchen_-_3171_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Egon_Schiele_-_Tod_und_M%C3%A4dchen_-_3171_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Tod_und_M%C3%A4dchen_-_3171_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: institution/munich-secession
+    role: dealer
+    acquired: 1930
+    place: munich
+    notes_md: The Belvedere names only the seller; earlier owners are not published.
+    sources:
+      - url: https://sammlung.belvedere.at/objects/1968/tod-und-madchen
+        note: "“Inventarzugang: 1930 Ankauf Sezession, München” — read in the Internet Archive’s copy of 2024-11-13: https://web.archive.org/web/20241113040752/https://sammlung.belvedere.at/objects/1968/tod-und-madchen"
+        source: belvedere-sammlung-online
+        accessed: 2024-11-13
+  - owner: institution/belvedere
+    acquired: 1930
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    sources:
+      - url: https://sammlung.belvedere.at/objects/1968/tod-und-madchen
+        note: "“Inventarzugang: 1930 Ankauf Sezession, München” — read in the Internet Archive’s copy of 2024-11-13: https://web.archive.org/web/20241113040752/https://sammlung.belvedere.at/objects/1968/tod-und-madchen"
+        source: belvedere-sammlung-online
+        accessed: 2024-11-13
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2438357
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2438357
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2438357
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2438357
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2438357
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2438357
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2438357

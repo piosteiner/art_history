@@ -1,0 +1,22 @@
+public_id: 101198
+name: San Lorenzo de El Escorial
+kind: settlement
+parent: madrid
+country_code: ES
+location: [-4.14278, 40.59361]
+wikidata_id: Q371748
+metadata:
+  sources: [Wikidata Q371748 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q371748
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q371748
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q371748

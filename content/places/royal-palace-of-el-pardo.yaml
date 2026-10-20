@@ -1,0 +1,50 @@
+public_id: 101191
+name: Royal Palace of El Pardo
+names:
+  - El Pardo
+  - lang: nl
+    role: translation
+    text: Koninklijk Paleis van El Pardo
+  - lang: fr
+    role: translation
+    text: palais du Pardo
+  - lang: de
+    role: translation
+    text: Palacio Real El Pardo
+  - lang: it
+    role: translation
+    text: Palazzo Reale di El Pardo
+  - lang: es
+    role: translation
+    text: Palacio Real de El Pardo
+  - lang: ja
+    role: translation
+    text: エル・パルド宮殿
+  - lang: zh
+    role: translation
+    text: 埃尔帕尔多皇宫
+  - lang: ru
+    role: translation
+    text: Эль-Пардо
+kind: building
+parent: madrid
+country_code: ES
+location: [-3.77506, 40.52129]
+wikidata_id: Q1368571
+metadata:
+  sources: [Wikidata Q1368571 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4471045-8
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1368571
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q1368571
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q1368571

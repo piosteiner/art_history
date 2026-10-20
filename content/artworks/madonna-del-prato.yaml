@@ -1,0 +1,124 @@
+public_id: 101312
+title_lang: de
+title: Madonna im Grünen
+names:
+  - lang: en
+    role: original
+    text: Madonna in the Meadow
+  - Madonna of the Meadow
+  - Madonna with the Christ Child and Saint John the Baptist
+  - lang: en
+    role: original
+    text: Madonna del Prato
+  - lang: nl
+    role: translation
+    text: Madonna van de weide
+  - lang: fr
+    role: translation
+    text: La Madone à la prairie
+  - lang: it
+    role: translation
+    text: Madonna del Belvedere
+  - lang: es
+    role: translation
+    text: Virgen del prado
+  - lang: ja
+    role: translation
+    text: ベルヴェデーレの聖母
+  - lang: zh
+    role: translation
+    text: 草地上的聖母
+  - lang: ru
+    role: translation
+    text: Мадонна в зелени
+creator: raphael
+created: 1505/1506
+created_label: c. 1500s
+materials: [oil paint, poplar panel]
+dimensions: [113, 88.5]
+institution: kunsthistorisches-museum
+inventory_number: GG_175
+web_url: https://www.khm.at/objektdb/detail/1502/
+wikidata_id: Q2452858
+metadata:
+  sources: [Wikidata Q2452858 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Raphael_-_Madonna_in_the_Meadow_-_Google_Art_Project.jpg/1280px-Raphael_-_Madonna_in_the_Meadow_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raphael_-_Madonna_in_the_Meadow_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Raphael
+provenance:
+  - owner: person/taddeo-taddei
+    acquired: 1505/1506
+    method: commission
+    place: florence
+    label: painted for him
+    sources:
+      - url: https://www.khm.at/kunstwerke/madonna-im-gruenen-1502
+        note: “Für den Florentiner Patrizier und Kunstförderer Taddeo Taddei gemalt; 1662 von Erzherzog Ferdinand Karl erworben; 1663 in Ambraser Sammlung nachweisbar; 1773 aus Ambras nach Wien;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/ferdinand-charles-archduke-of-austria
+    acquired: 1662
+    method: purchase
+    place: innsbruck
+    sources:
+      - url: https://www.khm.at/kunstwerke/madonna-im-gruenen-1502
+        note: “Für den Florentiner Patrizier und Kunstförderer Taddeo Taddei gemalt; 1662 von Erzherzog Ferdinand Karl erworben; 1663 in Ambraser Sammlung nachweisbar; 1773 aus Ambras nach Wien;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    place: ambras-castle
+    label: Ambras collection; from 1773 in Vienna
+    sources:
+      - url: https://www.khm.at/kunstwerke/madonna-im-gruenen-1502
+        note: “Für den Florentiner Patrizier und Kunstförderer Taddeo Taddei gemalt; 1662 von Erzherzog Ferdinand Karl erworben; 1663 in Ambraser Sammlung nachweisbar; 1773 aus Ambras nach Wien;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - date: "1663"
+        note: documented in the Ambras collection
+        place: ambras-castle
+      - kind: document
+        date: "1773"
+        note: brought from Ambras to Vienna
+        place: vienna
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q2452858
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q2452858
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2452858
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2452858
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q2452858
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2452858
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2452858

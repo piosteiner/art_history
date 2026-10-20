@@ -1,0 +1,71 @@
+public_id: 101209
+name: Fernando Álvarez de Toledo, 3rd Duke of Alba
+names:
+  - lang: es
+    role: original
+    text: Fernando Álvarez de Toledo y Pimentel
+  - Fernando Alvarez de Toledo, duque de Alba
+  - 3er duque de Alba Fernando Álvarez de Toledo y Pimentel
+  - Fernando Alvarez de, duque de Alba Toledo
+  - Fernando, duque de Alba Alvarez de Toledo
+  - duque de Alba Fernando Alvarez de Toledo
+  - Fernando Alvarez, duque de Alba De Toledo
+  - Duke of Alba
+  - Duke of Alva
+  - Fernando Álvarez de Toledo
+  - lang: fr
+    role: translation
+    text: Ferdinand Alvare de Tolède
+  - lang: de
+    role: translation
+    text: Fernando Álvarez de Toledo, Herzog von Alba
+  - lang: ja
+    role: translation
+    text: フェルナンド・アルバレス・デ・トレド
+  - lang: zh
+    role: translation
+    text: 费尔南多·阿尔瓦雷斯·德·托莱多，第三代阿尔瓦公爵
+  - lang: ko
+    role: translation
+    text: 페르난도 알바레스 데 톨레도 데 알바 공작
+  - lang: ru
+    role: translation
+    text: Фернандо Альварес де Толедо Альба
+kind: person
+occupations: [military officer, military personnel, diplomat, politician]
+birth: 1507-11-08
+death: 1582-12-21
+wikidata_id: Q80847
+metadata:
+  sources: [Wikidata Q80847 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Fernando_%C3%81lvarez_de_Toledo%2C_III_Duque_de_Alba%2C_retratado_por_Antonio_Moro.jpg/1280px-Fernando_%C3%81lvarez_de_Toledo%2C_III_Duque_de_Alba%2C_retratado_por_Antonio_Moro.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fernando_%C3%81lvarez_de_Toledo,_III_Duque_de_Alba,_retratado_por_Antonio_Moro.jpg
+    license: Public domain
+    credit: Antonis Mor
+identifiers:
+  bnf: 14582096k
+  gnd: "118686704"
+  hls: "041520"
+  idref: 07955962X
+  lc: n82073925
+  rkd: "488017"
+  ulan: "500354988"
+  viaf: "90629206"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q80847
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q80847
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q80847
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q80847

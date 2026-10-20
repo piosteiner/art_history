@@ -1,0 +1,122 @@
+public_id: 101330
+title_lang: de
+title: Allerheiligenbild ("Landauer Altar")
+names:
+  - lang: en
+    role: original
+    text: Adoration of the Trinity
+  - All Saints
+  - lang: nl
+    role: translation
+    text: Aanbidding van de Drie-eenheid
+  - lang: fr
+    role: translation
+    text: L'Adoration de la Sainte Trinité
+  - lang: de
+    role: original
+    text: Allerheiligenbild („Landaueraltar")
+  - lang: it
+    role: translation
+    text: Adorazione della Santissima Trinità
+  - lang: es
+    role: translation
+    text: Adoración de la Trinidad
+  - lang: ja
+    role: translation
+    text: 聖三位一体の礼拝 (デューラー)
+  - lang: zh
+    role: translation
+    text: 兰道尔祭坛画
+  - lang: ru
+    role: translation
+    text: Поклонение Святой Троице
+creator: albrecht-durer
+created: 1511
+materials: [lime panel, oil paint]
+dimensions: [135, 123.4]
+institution: kunsthistorisches-museum
+inventory_number: GG_838
+wikidata_id: Q688870
+metadata:
+  sources: [Wikidata Q688870 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_%28Landauer_Altar%29_-_Google_Art_Project.jpg/1280px-Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_%28Landauer_Altar%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_(Landauer_Altar)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Albrecht Dürer
+provenance:
+  - owner: institution/landauer-zwolfbruderhaus
+    place: nuremberg
+    label: the foundation of the Zwölfbrüderhaus
+    sources:
+      - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+        note: “1585 von Rudolf II. von der Stiftung des Zwölfbrüderhauses in Nürnberg gekauft; 1780 von der Geistlichen Schatzkammer in die Gemäldegalerie;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/emperor-rudolf-ii
+    acquired: 1585
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+        note: “1585 von Rudolf II. von der Stiftung des Zwölfbrüderhauses in Nürnberg gekauft; 1780 von der Geistlichen Schatzkammer in die Gemäldegalerie;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/imperial-treasury
+    place: vienna
+    label: Ecclesiastical Treasury (Geistliche Schatzkammer)
+    sources:
+      - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+        note: “1585 von Rudolf II. von der Stiftung des Zwölfbrüderhauses in Nürnberg gekauft; 1780 von der Geistlichen Schatzkammer in die Gemäldegalerie;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    acquired: 1780
+    method: transfer
+    direct: true
+    place: vienna
+    label: picture gallery
+    sources:
+      - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+        note: “1585 von Rudolf II. von der Stiftung des Zwölfbrüderhauses in Nürnberg gekauft; 1780 von der Geistlichen Schatzkammer in die Gemäldegalerie;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q688870
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q688870
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q688870
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q688870
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q688870
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q688870
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q688870

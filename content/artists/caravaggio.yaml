@@ -1,0 +1,16 @@
+public_id: 101314
+name: Caravaggio
+birth: 1571-10-09
+death: 1610-07-18
+wikidata_id: Q42207
+metadata:
+  sources: [Wikidata Q42207 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q42207
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q42207

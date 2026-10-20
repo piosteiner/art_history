@@ -1,0 +1,16 @@
+public_id: 101282
+name: German Renaissance
+kind: movement
+period: 1401/1500
+wikidata_id: Q2455000
+metadata:
+  sources: [Wikidata Q2455000 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q2455000
+  period:
+    - accessed: 2026-10-19
+      property: P580
+      wikidata: Q2455000

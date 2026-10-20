@@ -1,0 +1,47 @@
+public_id: 101486
+name: Fritz Grünbaum
+names:
+  - Franz Grunbaum
+  - Franz Friedrich Grünbaum
+  - lang: ja
+    role: translation
+    text: フリッツ・グリューンバウム
+  - lang: ru
+    role: translation
+    text: Фриц Грюнбаум
+kind: person
+occupations: [art collector, actor, screenwriter, composer, film actor, cabaret performer, librettist, director, playwright, writer, lyricist]
+birth: 1880-04-07
+death: 1941-01-14
+wikidata_id: Q87857
+metadata:
+  sources: [Wikidata Q87857 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/21/Fritz_Gr%C3%BCnbaum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fritz_Gr%C3%BCnbaum.jpg
+    license: Public domain
+    credit: Thomas Staedeli
+identifiers:
+  bnf: "144686398"
+  gnd: "119368129"
+  idref: "083762078"
+  kulturnav: dc7ad7ae-a216-44a9-a257-1db80f66f981
+  lc: n86138300
+  viaf: "74077040"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q87857
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q87857
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q87857
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q87857

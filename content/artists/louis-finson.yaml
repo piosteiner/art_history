@@ -1,0 +1,52 @@
+public_id: 101358
+name: Louis Finson
+names:
+  - Ludovicus Finson
+  - Lodewijk Finson
+  - Ludovicus Finsonius
+  - Luigi Finzone
+  - Louis Finsonio
+  - Louis Finzone
+  - Ludovicus Vinson
+  - Louis Finsonius
+  - Louis Fynson
+  - Louis Fensonius
+  - Finzone
+  - Finson
+  - Vincon
+  - L. Finsonio
+  - Fensonius
+  - Tenzonius
+  - Louis Vinson
+  - lang: ja
+    role: translation
+    text: ルイス・フィンソン
+  - lang: ru
+    role: translation
+    text: Луи Финсон
+birth: 1580
+death: 1617
+wikidata_id: Q2701472
+metadata:
+  sources: [Wikidata Q2701472 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Louis_Finson_-_Autoportrait.jpg/1280px-Louis_Finson_-_Autoportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Louis_Finson_-_Autoportrait.jpg
+    license: Public domain
+    credit: Louis Finson
+identifiers:
+  gnd: "121809447"
+  idref: "113074670"
+  lc: nr87001041
+  rkd: "28069"
+  ulan: "500025963"
+  viaf: "95841863"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q2701472
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q2701472

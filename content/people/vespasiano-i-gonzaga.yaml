@@ -1,0 +1,58 @@
+public_id: 101212
+name: Vespasiano I Gonzaga
+names:
+  - lang: es
+    role: original
+    text: Vespasiano Gonzaga
+  - Vespasiano, duca di Sabbioneta Gonzaga Colonna
+  - Vespasiano Gonzaga Colonna
+  - Vespasiano Gonzaga, duca di Sabbioneta Colonna
+  - Vespasiano Gonzaga y Coloma
+  - lang: fr
+    role: translation
+    text: Vespasien Gonzague
+  - lang: ja
+    role: translation
+    text: ヴェスパシアーノ・ゴンザーガ
+  - lang: zh
+    role: translation
+    text: 維斯帕夏諾一世·貢扎加-科隆納
+  - lang: ru
+    role: translation
+    text: Веспасиано I Гонзага
+kind: person
+occupations: [condottiero, diplomat, architect, military personnel, politician]
+birth: 1531-12-16
+death: 1591-02-26
+wikidata_id: Q299378
+metadata:
+  sources: [Wikidata Q299378 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/78/Portrait_of_Vespasiano_I_Gonzaga%2C_Duke_of_Sabbioneta_%281531%E2%80%931591%29%2C_attributed_to_Bernardino_Campi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Vespasiano_I_Gonzaga,_Duke_of_Sabbioneta_(1531%E2%80%931591),_attributed_to_Bernardino_Campi.jpg
+    license: Public domain
+    credit: Attributed to Bernardino Campi
+identifiers:
+  bnf: "123024983"
+  gnd: "118768220"
+  idref: 06968037X
+  lc: nr93016942
+  ulan: "500286653"
+  viaf: "67261493"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q299378
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q299378
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q299378
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q299378

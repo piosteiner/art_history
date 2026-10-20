@@ -1,0 +1,54 @@
+public_id: 101565
+name: Vienna Secession
+names:
+  - Vereinigung Bildender Künstler Österreichs
+  - Union of Austrian Artists
+  - Wiener Secession
+  - Secessionist architecture
+  - Vienna Secession movement
+  - lang: fr
+    role: translation
+    text: Sécession viennoise
+  - lang: it
+    role: translation
+    text: secessione viennese
+  - lang: es
+    role: translation
+    text: Secesión de Viena
+  - lang: ja
+    role: translation
+    text: ウィーン分離派
+  - lang: zh
+    role: translation
+    text: 维也纳分离派
+  - lang: ko
+    role: translation
+    text: 빈 분리파
+  - lang: ru
+    role: translation
+    text: Венский сецессион
+founded: 1897-04-03
+place: austria
+wikidata_id: Q208208
+metadata:
+  sources: [Wikidata Q208208 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Wien_-_Secessionsgeb%C3%A4ude.JPG/1280px-Wien_-_Secessionsgeb%C3%A4ude.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Wien_-_Secessionsgeb%C3%A4ude.JPG
+    license: CC BY-SA 4.0
+    credit: C.Stadler/Bwag
+identifiers:
+  bnf: 11868155d
+  gnd: 32262-3
+  idref: "142331589"
+  lc: n80103753
+  viaf: "133252020"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q208208
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q208208

@@ -1,0 +1,46 @@
+public_id: 101215
+name: Ramiro Núñez de Guzmán
+given_name: Ramiro Núñez
+family_name: de Guzmán
+names:
+  - Ramiro Núñez de Guzmán duque de Medina de las Torres
+  - Felipe Ramírez de Guzmán
+  - lang: it
+    role: translation
+    text: Ramiro Felipe Núñez de Guzmán
+  - lang: es
+    role: translation
+    text: Ramiro Felipe Núñez de Guzmán y Guzmán
+kind: person
+occupations: [politician]
+birth: 1600
+death: 1668-12-08
+wikidata_id: Q3929881
+metadata:
+  sources: [Wikidata Q3929881 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/38/Duque_de_Medina_de_las_Torres.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Duque_de_Medina_de_las_Torres.JPG
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  gnd: "142582344"
+  lc: no2011018174
+  viaf: "122765117"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q3929881
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q3929881
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q3929881
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q3929881

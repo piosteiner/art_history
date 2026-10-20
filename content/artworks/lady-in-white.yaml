@@ -1,0 +1,104 @@
+public_id: 101535
+title_lang: de
+title: Dame in Weiß
+names:
+  - lang: en
+    role: translation
+    text: Lady in White
+  - lang: ru
+    role: translation
+    text: Дама в белом
+creator: gustav-klimt
+created: 1917/1918
+created_label: c. 1910s
+dimensions: [70, 70]
+institution: belvedere
+inventory_number: "4286"
+wikidata_id: Q28002620
+metadata:
+  sources: [Wikidata Q28002620 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Gustav_Klimt_-_Dame_in_Wei%C3%9F_-_4286_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_Dame_in_Wei%C3%9F_-_4286_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Dame_in_Wei%C3%9F_-_4286_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: artist/gustav-klimt
+    role: estate
+    acquired: 1918
+    method: inheritance
+    place: vienna
+    label: estate of Gustav Klimt
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+        note: "“1918, Nachlass, Gustav Klimt, Wien spätestens 1927–1934, Ankauf, Broncia Koller-Pinell, Wien [1] 1934–1948, Übernahme, Hugo Koller, Wien [2] 1948, keine Angabe, Galerie Welz, Wien [3] 1948, Ankauf, Österreichische Galerie, Wien [4] [1] Archiv des Belvedere (AdB), Wien, Archiv Neue Galerie, Zl. 115/13, Schreiben Gerhardus Knuttel an Broncia Koller-Pinell, 19.9.1927. XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 14, Kat.-Nr. 75 (Damenbildnis [Privatbesitz]). [2] Übernahme im Erbweg von Broncia Koller-Pinell. [3] AdB, Wien, Zl. 644/1948, Galerie Welz, Lieferschein, 28.12.1948. [4] AdB, Wien, Zl. 644/1948, Galerie Welz, Rechnung, 30.12.1948. Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-13: https://web.archive.org/web/20260813020942/https://sammlung.belvedere.at/objects/3080/dame-in-wei"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-13
+  - owner: artist/broncia-koller-pinell
+    acquired: 1927 or earlier
+    ended: 1934
+    method: purchase
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+        note: "“1918, Nachlass, Gustav Klimt, Wien spätestens 1927–1934, Ankauf, Broncia Koller-Pinell, Wien [1] 1934–1948, Übernahme, Hugo Koller, Wien [2] 1948, keine Angabe, Galerie Welz, Wien [3] 1948, Ankauf, Österreichische Galerie, Wien [4] [1] Archiv des Belvedere (AdB), Wien, Archiv Neue Galerie, Zl. 115/13, Schreiben Gerhardus Knuttel an Broncia Koller-Pinell, 19.9.1927. XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 14, Kat.-Nr. 75 (Damenbildnis [Privatbesitz]). [2] Übernahme im Erbweg von Broncia Koller-Pinell. [3] AdB, Wien, Zl. 644/1948, Galerie Welz, Lieferschein, 28.12.1948. [4] AdB, Wien, Zl. 644/1948, Galerie Welz, Rechnung, 30.12.1948. Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-13: https://web.archive.org/web/20260813020942/https://sammlung.belvedere.at/objects/3080/dame-in-wei"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-13
+  - owner_label: Hugo Koller
+    acquired: 1934
+    ended: 1948
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+        note: "“1918, Nachlass, Gustav Klimt, Wien spätestens 1927–1934, Ankauf, Broncia Koller-Pinell, Wien [1] 1934–1948, Übernahme, Hugo Koller, Wien [2] 1948, keine Angabe, Galerie Welz, Wien [3] 1948, Ankauf, Österreichische Galerie, Wien [4] [1] Archiv des Belvedere (AdB), Wien, Archiv Neue Galerie, Zl. 115/13, Schreiben Gerhardus Knuttel an Broncia Koller-Pinell, 19.9.1927. XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 14, Kat.-Nr. 75 (Damenbildnis [Privatbesitz]). [2] Übernahme im Erbweg von Broncia Koller-Pinell. [3] AdB, Wien, Zl. 644/1948, Galerie Welz, Lieferschein, 28.12.1948. [4] AdB, Wien, Zl. 644/1948, Galerie Welz, Rechnung, 30.12.1948. Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-13: https://web.archive.org/web/20260813020942/https://sammlung.belvedere.at/objects/3080/dame-in-wei"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-13
+  - owner: institution/galerie-welz
+    role: dealer
+    acquired: 1948
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+        note: "“1918, Nachlass, Gustav Klimt, Wien spätestens 1927–1934, Ankauf, Broncia Koller-Pinell, Wien [1] 1934–1948, Übernahme, Hugo Koller, Wien [2] 1948, keine Angabe, Galerie Welz, Wien [3] 1948, Ankauf, Österreichische Galerie, Wien [4] [1] Archiv des Belvedere (AdB), Wien, Archiv Neue Galerie, Zl. 115/13, Schreiben Gerhardus Knuttel an Broncia Koller-Pinell, 19.9.1927. XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 14, Kat.-Nr. 75 (Damenbildnis [Privatbesitz]). [2] Übernahme im Erbweg von Broncia Koller-Pinell. [3] AdB, Wien, Zl. 644/1948, Galerie Welz, Lieferschein, 28.12.1948. [4] AdB, Wien, Zl. 644/1948, Galerie Welz, Rechnung, 30.12.1948. Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-13: https://web.archive.org/web/20260813020942/https://sammlung.belvedere.at/objects/3080/dame-in-wei"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-13
+  - owner: institution/belvedere
+    acquired: 1948-12-30
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    price:
+      amount: 4000
+      currency: ATS
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+        note: "“1918, Nachlass, Gustav Klimt, Wien spätestens 1927–1934, Ankauf, Broncia Koller-Pinell, Wien [1] 1934–1948, Übernahme, Hugo Koller, Wien [2] 1948, keine Angabe, Galerie Welz, Wien [3] 1948, Ankauf, Österreichische Galerie, Wien [4] [1] Archiv des Belvedere (AdB), Wien, Archiv Neue Galerie, Zl. 115/13, Schreiben Gerhardus Knuttel an Broncia Koller-Pinell, 19.9.1927. XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 14, Kat.-Nr. 75 (Damenbildnis [Privatbesitz]). [2] Übernahme im Erbweg von Broncia Koller-Pinell. [3] AdB, Wien, Zl. 644/1948, Galerie Welz, Lieferschein, 28.12.1948. [4] AdB, Wien, Zl. 644/1948, Galerie Welz, Rechnung, 30.12.1948. Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-13: https://web.archive.org/web/20260813020942/https://sammlung.belvedere.at/objects/3080/dame-in-wei"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-13
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28002620
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28002620
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28002620
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28002620
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28002620
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28002620

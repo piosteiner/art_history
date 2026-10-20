@@ -1,0 +1,164 @@
+public_id: 101186
+title_lang: es
+title: La Anunciación
+names:
+  - lang: pl
+    role: alternative
+    text: Zwiastowanie
+  - lang: en
+    role: translation
+    text: Annunciation
+  - lang: fr
+    role: translation
+    text: L'Annonciation
+  - lang: de
+    role: translation
+    text: Verkündigung
+  - lang: it
+    role: translation
+    text: Annunciazione
+  - lang: es
+    role: translation
+    text: La Anunciación
+  - lang: ja
+    role: translation
+    text: 受胎告知 (フラ・アンジェリコ、マドリード)
+  - lang: ru
+    role: translation
+    text: Благовещение
+creator: fra-angelico
+created: 1425/1426
+kind: painting
+medium: Tempera on poplar panel
+materials: [tempera, panel]
+dimensions: [190.3, 191.5]
+institution: museo-del-prado
+inventory_number: P000015
+web_url: https://www.firenze1903.it/beato-angelico-in-restauro-lannunciazione-in-vista-della-mostra-del-2019-per-il-bicentenario-del-museo-nazionale-del-prado/
+description_md: "Fra Angelico’s altarpiece for San Domenico in Fiesole, 1425–26: the angel Gabriel and the Virgin in a loggia, Adam and Eve driven from Paradise on the left; the predella tells the life of the Virgin. Bought in 1611 as a gift for the Duke of Lerma, it came to the Prado in 1861."
+wikidata_id: Q2378567
+metadata:
+  sources: [Wikidata Q2378567 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q2378567
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q2378567
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/50/Fra_Angelico_-_The_Annunciation_-_WGA0454.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fra_Angelico_-_The_Annunciation_-_WGA0454.jpg
+    license: Public domain
+    credit: Fra Angelico
+provenance:
+  - owner: institution/convent-of-san-domenico
+    acquired: 1425/1428
+    ended: 1611
+    place: fiesole
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "“Convento de Santo Domingo, Fiesole, 1425/28-1611;” — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
+  - owner: person/mario-i-farnese
+    acquired: 1611
+    method: purchase
+    direct: true
+    place: rome
+    label: acquired to give it to the Duke of Lerma
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "“Mario Farnese, Roma, lo adquiere para obsequiar a Francisco Sandoval y Rojas V marqués de Denia y I duque de Lerma,” — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
+  - owner: person/francisco-gomez-de-sandoval-1st-duke-of-lerma
+    method: gift
+    direct: true
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "“para obsequiar a Francisco Sandoval y Rojas V marqués de Denia y I duque de Lerma,” — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
+  - owner: institution/convent-of-las-descalzas-reales
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "“pasó al monasterio de las Descalzas Reales, Madrid;” — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
+  - owner: person/francisco-de-asis-duke-of-cadiz
+    method: gift
+    place: madrid
+    label: given to the King consort
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "“Regalado al rey Francisco de Asís,” — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
+  - owner: institution/museo-del-prado
+    acquired: 1861
+    method: gift
+    place: madrid
+    label: ceded by Queen Isabel II
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+        note: "“Isabel II lo cede al Museo del Prado, 1861.” — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-09
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-09
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-09
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-09
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-09
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2378567
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2378567
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-09
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2378567
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-09
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2378567
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-09: https://web.archive.org/web/20260409052413/https://www.museodelprado.es/coleccion/obra-de-arte/wd/9b02b6c9-3618-4a92-a6b7-26f9076fcb67"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-09

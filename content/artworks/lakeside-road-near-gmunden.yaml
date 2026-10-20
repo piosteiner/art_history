@@ -1,0 +1,133 @@
+public_id: 101478
+title_lang: de
+title: Uferstrasse bei Gmunden, im Hintergrund die Schlafende Griechin
+names:
+  - lang: en
+    role: original
+    text: Lakeside Road near Gmunden
+creator: richard-gerstl
+created: 1907
+materials: [oil paint, canvas]
+dimensions: [32.3, 33.2]
+institution: leopold-museum
+inventory_number: LM 643
+wikidata_id: Q28798149
+metadata:
+  sources: [Wikidata Q28798149 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Richard_Gerstl_-_Lakeside_Road_near_Gmunden_-_Google_Art_Project.jpg/1280px-Richard_Gerstl_-_Lakeside_Road_near_Gmunden_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Richard_Gerstl_-_Lakeside_Road_near_Gmunden_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Richard Gerstl
+provenance:
+  - owner: artist/richard-gerstl
+    role: estate
+    acquired: 1908
+    method: inheritance
+    place: vienna
+    label: estate of Richard Gerstl
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/642-uferstrasse-bei-gmunden/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931); (2) / Dr. Adalbert Nemere, Wien (o.D.); (3) / Auktion: 17. – 20.03.1964, Dorotheum Wien, 563. Auktion, Los Nr. 286 / Dr. Rudolf Leopold, Wien (1964-1994); (4) / Leopold Museum-Privatstiftung, Wien (seit 1994). / Bildrückseite: Nachlass Richard Gerstl, Wien - Neue Galerie, Nr. 1 Uferpromenade bei Gmunden (1909); Otto Kallir, Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Dorotheum Wien, Katalog zur 563. Auktion, 17. März bis 20. März 1964, Los Nr. 286; Katalog der Secession, Wien 1966, Nr. 38; Archiv des Leopold Museums, Amt der Tiroler Landesregierung, Kulturabteilung, Rückgabebestätigung vom 16.08.1966.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: August and Alois Gerstl
+    acquired: 1908
+    ended: 1931
+    method: inheritance
+    direct: true
+    place: vienna
+    label: the painter's brother and father
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/642-uferstrasse-bei-gmunden/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931); (2) / Dr. Adalbert Nemere, Wien (o.D.); (3) / Auktion: 17. – 20.03.1964, Dorotheum Wien, 563. Auktion, Los Nr. 286 / Dr. Rudolf Leopold, Wien (1964-1994); (4) / Leopold Museum-Privatstiftung, Wien (seit 1994). / Bildrückseite: Nachlass Richard Gerstl, Wien - Neue Galerie, Nr. 1 Uferpromenade bei Gmunden (1909); Otto Kallir, Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Dorotheum Wien, Katalog zur 563. Auktion, 17. März bis 20. März 1964, Los Nr. 286; Katalog der Secession, Wien 1966, Nr. 38; Archiv des Leopold Museums, Amt der Tiroler Landesregierung, Kulturabteilung, Rückgabebestätigung vom 16.08.1966.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/neue-galerie-vienna
+    role: dealer
+    acquired: 1931
+    method: purchase
+    direct: true
+    place: vienna
+    label: Otto Nirenstein (Kallir) bought 36 paintings from Alois Gerstl
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/642-uferstrasse-bei-gmunden/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931); (2) / Dr. Adalbert Nemere, Wien (o.D.); (3) / Auktion: 17. – 20.03.1964, Dorotheum Wien, 563. Auktion, Los Nr. 286 / Dr. Rudolf Leopold, Wien (1964-1994); (4) / Leopold Museum-Privatstiftung, Wien (seit 1994). / Bildrückseite: Nachlass Richard Gerstl, Wien - Neue Galerie, Nr. 1 Uferpromenade bei Gmunden (1909); Otto Kallir, Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Dorotheum Wien, Katalog zur 563. Auktion, 17. März bis 20. März 1964, Los Nr. 286; Katalog der Secession, Wien 1966, Nr. 38; Archiv des Leopold Museums, Amt der Tiroler Landesregierung, Kulturabteilung, Rückgabebestätigung vom 16.08.1966.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - date: "1931"
+        note: “Uferpromenade bei Gmunden”
+        place: vienna
+        number: "1"
+        document: Nachlassverzeichnis (Otto Nirenstein)
+  - owner_label: Dr. Adalbert Nemere
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/642-uferstrasse-bei-gmunden/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931); (2) / Dr. Adalbert Nemere, Wien (o.D.); (3) / Auktion: 17. – 20.03.1964, Dorotheum Wien, 563. Auktion, Los Nr. 286 / Dr. Rudolf Leopold, Wien (1964-1994); (4) / Leopold Museum-Privatstiftung, Wien (seit 1994). / Bildrückseite: Nachlass Richard Gerstl, Wien - Neue Galerie, Nr. 1 Uferpromenade bei Gmunden (1909); Otto Kallir, Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Dorotheum Wien, Katalog zur 563. Auktion, 17. März bis 20. März 1964, Los Nr. 286; Katalog der Secession, Wien 1966, Nr. 38; Archiv des Leopold Museums, Amt der Tiroler Landesregierung, Kulturabteilung, Rückgabebestätigung vom 16.08.1966.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/dorotheum
+    role: agent
+    numbers:
+      - kind: lot
+        number: "286"
+    acquired: 1964-03-17/1964-03-20
+    method: auction
+    place: vienna
+    label: 563rd auction
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/642-uferstrasse-bei-gmunden/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931); (2) / Dr. Adalbert Nemere, Wien (o.D.); (3) / Auktion: 17. – 20.03.1964, Dorotheum Wien, 563. Auktion, Los Nr. 286 / Dr. Rudolf Leopold, Wien (1964-1994); (4) / Leopold Museum-Privatstiftung, Wien (seit 1994). / Bildrückseite: Nachlass Richard Gerstl, Wien - Neue Galerie, Nr. 1 Uferpromenade bei Gmunden (1909); Otto Kallir, Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Dorotheum Wien, Katalog zur 563. Auktion, 17. März bis 20. März 1964, Los Nr. 286; Katalog der Secession, Wien 1966, Nr. 38; Archiv des Leopold Museums, Amt der Tiroler Landesregierung, Kulturabteilung, Rückgabebestätigung vom 16.08.1966.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1964
+    method: auction
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/642-uferstrasse-bei-gmunden/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931); (2) / Dr. Adalbert Nemere, Wien (o.D.); (3) / Auktion: 17. – 20.03.1964, Dorotheum Wien, 563. Auktion, Los Nr. 286 / Dr. Rudolf Leopold, Wien (1964-1994); (4) / Leopold Museum-Privatstiftung, Wien (seit 1994). / Bildrückseite: Nachlass Richard Gerstl, Wien - Neue Galerie, Nr. 1 Uferpromenade bei Gmunden (1909); Otto Kallir, Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Dorotheum Wien, Katalog zur 563. Auktion, 17. März bis 20. März 1964, Los Nr. 286; Katalog der Secession, Wien 1966, Nr. 38; Archiv des Leopold Museums, Amt der Tiroler Landesregierung, Kulturabteilung, Rückgabebestätigung vom 16.08.1966.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/642-uferstrasse-bei-gmunden/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931); (2) / Dr. Adalbert Nemere, Wien (o.D.); (3) / Auktion: 17. – 20.03.1964, Dorotheum Wien, 563. Auktion, Los Nr. 286 / Dr. Rudolf Leopold, Wien (1964-1994); (4) / Leopold Museum-Privatstiftung, Wien (seit 1994). / Bildrückseite: Nachlass Richard Gerstl, Wien - Neue Galerie, Nr. 1 Uferpromenade bei Gmunden (1909); Otto Kallir, Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Dorotheum Wien, Katalog zur 563. Auktion, 17. März bis 20. März 1964, Los Nr. 286; Katalog der Secession, Wien 1966, Nr. 38; Archiv des Leopold Museums, Amt der Tiroler Landesregierung, Kulturabteilung, Rückgabebestätigung vom 16.08.1966.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28798149
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28798149
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28798149
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q28798149
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28798149
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28798149
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28798149

@@ -1,0 +1,54 @@
+public_id: 101201
+name: Convent of Las Descalzas Reales
+names:
+  - Monasterio de las Descalzas Reales (Madrid, Španělsko)
+  - lang: nl
+    role: translation
+    text: Monasterio de las Descalzas Reales
+  - lang: fr
+    role: translation
+    text: monastère des Déchaussées royales
+  - lang: it
+    role: translation
+    text: Monastero de las Descalzas Reales
+  - lang: ja
+    role: translation
+    text: デスカルサス・レアーレス修道院
+  - lang: zh
+    role: translation
+    text: 王家赤足女修道院
+  - lang: ru
+    role: translation
+    text: Дескальсас-Реалес
+founded: 1559
+place: madrid
+location: [-3.70619, 40.41827]
+website_url: http://www.patrimonionacional.es/Home/Monasterios-y-Conventos/Monasterio-de-las-Descalzas-Reales.aspx
+wikidata_id: Q2268271
+metadata:
+  sources: [Wikidata Q2268271 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Monasterio_de_las_Descalzas_Reales_%28Madrid%29_07.jpg/1280px-Monasterio_de_las_Descalzas_Reales_%28Madrid%29_07.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Monasterio_de_las_Descalzas_Reales_(Madrid)_07.jpg
+    license: CC BY-SA 3.0
+    credit: Luis García (Zaqarbal)
+identifiers:
+  bnf: 12141322t
+  gnd: 5041096-9
+  idref: "029880785"
+  lc: n81107101
+  ulan: "500302375"
+  viaf: "136749825"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q2268271
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q2268271
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q2268271

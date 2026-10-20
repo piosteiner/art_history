@@ -1,0 +1,79 @@
+public_id: 101240
+name: Pieter Brueghel the Elder
+names:
+  - lang: nl
+    role: original
+    text: Pieter Bruegel de Oude
+  - Old Breugel
+  - Pieter I Bruegel
+  - Pieter Breughel the Elder
+  - Pierre Bruegel
+  - Pieter, I Breugel
+  - Pieter Brueghel I
+  - Pieter, I Bruegel
+  - Old Breughel
+  - Pieter, I Brueghel
+  - Boeren Brueghel
+  - Pieter, I Breughel
+  - Peter Brueghel
+  - Peter Bruegel the Elder
+  - Pieter I Brueghel
+  - Pieter Brueghel Sr.
+  - Peasant Brueghel Bruegel
+  - Peter Brueghel the Elder
+  - Peasant Bruegel
+  - Pieter Bruegel I
+  - Peeter Brueghel the Elder
+  - lang: fr
+    role: translation
+    text: Pieter Brueghel l'Ancien
+  - lang: de
+    role: translation
+    text: Pieter Bruegel der Ältere
+  - lang: it
+    role: translation
+    text: Pieter Bruegel il Vecchio
+  - lang: es
+    role: translation
+    text: Pieter Brueghel el Viejo
+  - lang: ja
+    role: translation
+    text: ピーテル・ブリューゲル
+  - lang: zh
+    role: translation
+    text: 老彼得·布呂赫爾
+  - lang: ko
+    role: translation
+    text: 대 피터르 브뤼헐
+  - lang: ru
+    role: translation
+    text: Питер Брейгель Старший
+birth: c. 1525
+death: 1569-09-19
+wikidata_id: Q43270
+metadata:
+  sources: [Wikidata Q43270 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Pieter_Bruegel_the_Elder_-_The_Painter_and_the_Buyer%2C_ca._1566_-_Google_Art_Project.jpg/1280px-Pieter_Bruegel_the_Elder_-_The_Painter_and_the_Buyer%2C_ca._1566_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Painter_and_the_Buyer,_ca._1566_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Pieter Brueghel the Elder
+identifiers:
+  bnf: 11935800w
+  gnd: "118674013"
+  idref: "027281930"
+  kulturnav: ac08f1cf-f7b2-42e6-a5db-d04528e7de5f
+  lc: n80162848
+  nlk: KAC200006145
+  rkd: "13292"
+  ulan: "500013247"
+  viaf: "95761864"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q43270
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q43270

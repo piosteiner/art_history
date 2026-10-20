@@ -1,0 +1,28 @@
+public_id: 101118
+name: Montreux
+names:
+  - lang: ru
+    role: translation
+    text: Монтрё
+kind: settlement
+parent: switzerland
+country_code: CH
+location: [6.9125, 46.435]
+wikidata_id: Q69354
+metadata:
+  sources: [Wikidata Q69354 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4114631-1
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q69354
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q69354
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q69354

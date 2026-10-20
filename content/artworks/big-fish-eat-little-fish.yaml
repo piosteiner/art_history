@@ -1,0 +1,144 @@
+public_id: 101411
+title: Big Fish Eat Little Fish
+names:
+  - lang: nl
+    role: translation
+    text: De grote vissen eten de kleine
+  - lang: fr
+    role: translation
+    text: Les gros poissons mangent les petits
+  - lang: de
+    role: translation
+    text: Die großen Fische fressen die kleinen
+  - lang: it
+    role: translation
+    text: I pesci grandi mangiano i pesci piccoli
+  - lang: ja
+    role: translation
+    text: 大きな魚は小さな魚を食う (原画)
+  - lang: ru
+    role: translation
+    text: Большие рыбы поедают малых
+creator: pieter-brueghel-the-elder
+created: 1556
+materials: [ink]
+institution: albertina
+inventory_number: "7875"
+wikidata_id: Q698510
+metadata:
+  sources: [Wikidata Q698510 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Pieter_Bruegel_the_Elder_-_Big_Fish_Eat_Little_Fish%2C_1556_-_Google_Art_Project.jpg/1280px-Pieter_Bruegel_the_Elder_-_Big_Fish_Eat_Little_Fish%2C_1556_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Big_Fish_Eat_Little_Fish,_1556_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Pieter Brueghel the Elder
+provenance:
+  - owner: person/emperor-rudolf-ii
+    place: prague
+    certainty: probable
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/28754/die-groen-fische-fressen-die-kleinen
+        note: “wohl Sammlung Kaiser Rudolf II. (1552–1612), Prag / 1631 Kaiserliche Schatzkammer, Wien / 1783 Kaiserliche Hofbibliothek, Wien / 1796 Sammlung Herzog Albert von Sachsen-Teschen (1738–1822)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/imperial-treasury
+    acquired: 1631 or earlier
+    place: vienna
+    label: Imperial Treasury (Kaiserliche Schatzkammer)
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/28754/die-groen-fische-fressen-die-kleinen
+        note: “wohl Sammlung Kaiser Rudolf II. (1552–1612), Prag / 1631 Kaiserliche Schatzkammer, Wien / 1783 Kaiserliche Hofbibliothek, Wien / 1796 Sammlung Herzog Albert von Sachsen-Teschen (1738–1822)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+    records:
+      - date: "1631"
+        note: in the Imperial Treasury
+        place: vienna
+  - owner: institution/austrian-national-library
+    acquired: 1783
+    method: transfer
+    direct: true
+    place: vienna
+    label: Imperial Court Library (Kaiserliche Hofbibliothek)
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/28754/die-groen-fische-fressen-die-kleinen
+        note: “wohl Sammlung Kaiser Rudolf II. (1552–1612), Prag / 1631 Kaiserliche Schatzkammer, Wien / 1783 Kaiserliche Hofbibliothek, Wien / 1796 Sammlung Herzog Albert von Sachsen-Teschen (1738–1822)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/albert-casimir-duke-of-teschen
+    acquired: 1796
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/28754/die-groen-fische-fressen-die-kleinen
+        note: “wohl Sammlung Kaiser Rudolf II. (1552–1612), Prag / 1631 Kaiserliche Schatzkammer, Wien / 1783 Kaiserliche Hofbibliothek, Wien / 1796 Sammlung Herzog Albert von Sachsen-Teschen (1738–1822)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/archduke-charles-duke-of-teschen
+    acquired: 1822
+    method: inheritance
+    direct: true
+    place: vienna
+    label: adoptive son of Duke Albert
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Bereits 1822 veranlasste sein Adoptivsohn Erzherzog Carl die Neugestaltung der Prunkräume …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-albrecht-duke-of-teschen
+    acquired: 1847
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Charles's eldest son
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Das historistische Erscheinungsbild der Fassaden des Palais geht auf Carls ältesten Sohn, Erzherzog Albrecht, zurück …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-friedrich-duke-of-teschen
+    acquired: 1895
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Albrecht's nephew
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1895 erbte Erzherzog Albrechts Neffe, Erzherzog Friedrich, das Palais …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1919-04
+    method: confiscation
+    direct: true
+    place: vienna
+    label: "expropriated by the Republic of Austria: Graphische Sammlung Albertina"
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1919 enteignete die Republik Österreich das erzherzogliche Palais samt der in ihm verwahrten Sammlung und nannte es fortan "Graphische Sammlung Albertina"; zugleich wurde die wertvolle Kupferstichsammlung der kaiserlichen Hofbibliothek mit der Albertina vereinigt.”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q698510
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q698510
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q698510
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q698510
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q698510
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q698510

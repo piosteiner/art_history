@@ -1,0 +1,18 @@
+public_id: 101168
+name: Mary Magdalene
+given_name: Mary
+family_name: Magdalene
+kind: person
+death: 1/100
+wikidata_id: Q63070
+metadata:
+  sources: [Wikidata Q63070 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q63070
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q63070

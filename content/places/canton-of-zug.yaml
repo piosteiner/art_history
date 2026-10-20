@@ -1,0 +1,16 @@
+public_id: 101511
+name: Canton of Zug
+kind: site
+location: [8.548, 47.1648]
+wikidata_id: Q11933
+metadata:
+  sources: [Wikidata Q11933 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q11933
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q11933

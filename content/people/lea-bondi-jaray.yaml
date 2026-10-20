@@ -1,0 +1,35 @@
+public_id: 101482
+name: Lea Bondi Jaray
+given_name: Lea Bondi
+family_name: Jaray
+names:
+  - lang: ru
+    role: translation
+    text: Леа Бонди Ярай
+kind: person
+occupations: [art dealer, art collector]
+birth: 1880-12-12
+death: 1969
+wikidata_id: Q96774701
+metadata:
+  sources: [Wikidata Q96774701 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "1370308876"
+  viaf: "8485175417522604080000"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q96774701
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q96774701
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q96774701
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q96774701

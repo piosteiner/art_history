@@ -1,0 +1,21 @@
+public_id: 101153
+name: Infanta Maria Josefa of Spain
+kind: person
+birth: 1744-07-06
+death: 1801-12-08
+wikidata_id: Q604419
+metadata:
+  sources: [Wikidata Q604419 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q604419
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q604419
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q604419

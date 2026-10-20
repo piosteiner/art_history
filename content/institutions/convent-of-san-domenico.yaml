@@ -1,0 +1,51 @@
+public_id: 101200
+name: convent of San Domenico
+names:
+  - San Domenico
+  - lang: fr
+    role: translation
+    text: couvent San Domenico
+  - lang: it
+    role: translation
+    text: convento di San Domenico
+  - lang: es
+    role: translation
+    text: Convento de Santo Domingo
+  - lang: ja
+    role: translation
+    text: サン・ドメニコ修道院
+founded: 1406
+place: fiesole
+location: [11.28533, 43.80115]
+address: Piazza San Domenico 4
+website_url: http://www.sandomenicodifiesole.it
+wikidata_id: Q474122
+metadata:
+  sources: [Wikidata Q474122 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/San_domenico_di_fiesole_01.JPG/1280px-San_domenico_di_fiesole_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:San_domenico_di_fiesole_01.JPG
+    license: CC BY 2.5
+    credit: sailko
+identifiers:
+  gnd: 4392254-5
+  idref: "113453183"
+  lc: n96039422
+  viaf: "135035984"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q474122
+  address:
+    - accessed: 2026-10-19
+      property: P6375
+      wikidata: Q474122
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q474122
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q474122

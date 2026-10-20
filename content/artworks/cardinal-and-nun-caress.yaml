@@ -1,0 +1,138 @@
+public_id: 101467
+title_lang: en
+title: Cardinal and Nun (Caress)
+names:
+  - lang: de
+    role: translation
+    text: Kardinal und Nonne („Liebkosung”)
+  - lang: ru
+    role: translation
+    text: Кардинал и монахиня
+creator: egon-schiele
+created: 1912
+materials: [canvas, oil paint]
+dimensions: [70, 80.5]
+institution: leopold-museum
+inventory_number: LM 455
+wikidata_id: Q28797682
+metadata:
+  sources: [Wikidata Q28797682 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Egon_Schiele_-_Cardinal_and_Nun_%28Caress%29_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Cardinal_and_Nun_%28Caress%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Cardinal_and_Nun_(Caress)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: person/heinrich-rieger
+    acquired: 1918
+    ended: 1939
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+        note: “Dr. Heinrich Rieger, Wien (1918-1939); (1) / Friedrich Welz, Wien und Salzburg (1939-1945); (2) / September 1945 Sicherstellung durch die US-Besatzungsmacht in Salzburg; (3) / Dezember 1947 Verwahrung durch das Bundesdenkmalamt Salzburg (Depot Salzburg-Residenz); (4) / Mai 1948 Rückstellung an Dr. Robert Rieger und Tanna Berger; (5) / Österreichische Galerie Belvedere, Wien (1950-1957); (6) / Dr. Rudolf Leopold, Wien (1957-1994); (7) / Leopold Museum-Privatstiftung, Wien (1994). / Salzburger LA, LG Salzburg, Rückstellungsakt RK 108/48, Teilerkenntnis vom 31.05.1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/friedrich-welz
+    acquired: 1939
+    ended: 1945
+    place: salzburg
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+        note: “Dr. Heinrich Rieger, Wien (1918-1939); (1) / Friedrich Welz, Wien und Salzburg (1939-1945); (2) / September 1945 Sicherstellung durch die US-Besatzungsmacht in Salzburg; (3) / Dezember 1947 Verwahrung durch das Bundesdenkmalamt Salzburg (Depot Salzburg-Residenz); (4) / Mai 1948 Rückstellung an Dr. Robert Rieger und Tanna Berger; (5) / Österreichische Galerie Belvedere, Wien (1950-1957); (6) / Dr. Rudolf Leopold, Wien (1957-1994); (7) / Leopold Museum-Privatstiftung, Wien (1994). / Salzburger LA, LG Salzburg, Rückstellungsakt RK 108/48, Teilerkenntnis vom 31.05.1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: US occupation authorities
+    role: custodian
+    acquired: 1945-09
+    place: salzburg
+    label: secured (Sicherstellung)
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+        note: “Dr. Heinrich Rieger, Wien (1918-1939); (1) / Friedrich Welz, Wien und Salzburg (1939-1945); (2) / September 1945 Sicherstellung durch die US-Besatzungsmacht in Salzburg; (3) / Dezember 1947 Verwahrung durch das Bundesdenkmalamt Salzburg (Depot Salzburg-Residenz); (4) / Mai 1948 Rückstellung an Dr. Robert Rieger und Tanna Berger; (5) / Österreichische Galerie Belvedere, Wien (1950-1957); (6) / Dr. Rudolf Leopold, Wien (1957-1994); (7) / Leopold Museum-Privatstiftung, Wien (1994). / Salzburger LA, LG Salzburg, Rückstellungsakt RK 108/48, Teilerkenntnis vom 31.05.1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/bundesdenkmalamt
+    role: custodian
+    acquired: 1947-12
+    place: salzburg
+    label: Depot Salzburg-Residenz
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+        note: “Dr. Heinrich Rieger, Wien (1918-1939); (1) / Friedrich Welz, Wien und Salzburg (1939-1945); (2) / September 1945 Sicherstellung durch die US-Besatzungsmacht in Salzburg; (3) / Dezember 1947 Verwahrung durch das Bundesdenkmalamt Salzburg (Depot Salzburg-Residenz); (4) / Mai 1948 Rückstellung an Dr. Robert Rieger und Tanna Berger; (5) / Österreichische Galerie Belvedere, Wien (1950-1957); (6) / Dr. Rudolf Leopold, Wien (1957-1994); (7) / Leopold Museum-Privatstiftung, Wien (1994). / Salzburger LA, LG Salzburg, Rückstellungsakt RK 108/48, Teilerkenntnis vom 31.05.1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Dr. Robert Rieger and Tanna Berger
+    acquired: 31 May 1948
+    method: restitution
+    direct: true
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+        note: “Dr. Heinrich Rieger, Wien (1918-1939); (1) / Friedrich Welz, Wien und Salzburg (1939-1945); (2) / September 1945 Sicherstellung durch die US-Besatzungsmacht in Salzburg; (3) / Dezember 1947 Verwahrung durch das Bundesdenkmalamt Salzburg (Depot Salzburg-Residenz); (4) / Mai 1948 Rückstellung an Dr. Robert Rieger und Tanna Berger; (5) / Österreichische Galerie Belvedere, Wien (1950-1957); (6) / Dr. Rudolf Leopold, Wien (1957-1994); (7) / Leopold Museum-Privatstiftung, Wien (1994). / Salzburger LA, LG Salzburg, Rückstellungsakt RK 108/48, Teilerkenntnis vom 31.05.1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: document
+        date: 31 May 1948
+        place: salzburg
+        document: Rückstellungsakt RK 108/48, Teilerkenntnis
+  - owner: institution/belvedere
+    acquired: 1950-12-27
+    ended: 1957
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+        note: “Dr. Heinrich Rieger, Wien (1918-1939); (1) / Friedrich Welz, Wien und Salzburg (1939-1945); (2) / September 1945 Sicherstellung durch die US-Besatzungsmacht in Salzburg; (3) / Dezember 1947 Verwahrung durch das Bundesdenkmalamt Salzburg (Depot Salzburg-Residenz); (4) / Mai 1948 Rückstellung an Dr. Robert Rieger und Tanna Berger; (5) / Österreichische Galerie Belvedere, Wien (1950-1957); (6) / Dr. Rudolf Leopold, Wien (1957-1994); (7) / Leopold Museum-Privatstiftung, Wien (1994). / Salzburger LA, LG Salzburg, Rückstellungsakt RK 108/48, Teilerkenntnis vom 31.05.1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1957-02-07
+    method: exchange
+    direct: true
+    place: vienna
+    label: exchanged for Klimt's Poppy Field, a Dutch landscape by Rudolf Ribarz and a Salzburg saint's figure
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+        note: “Dr. Heinrich Rieger, Wien (1918-1939); (1) / Friedrich Welz, Wien und Salzburg (1939-1945); (2) / September 1945 Sicherstellung durch die US-Besatzungsmacht in Salzburg; (3) / Dezember 1947 Verwahrung durch das Bundesdenkmalamt Salzburg (Depot Salzburg-Residenz); (4) / Mai 1948 Rückstellung an Dr. Robert Rieger und Tanna Berger; (5) / Österreichische Galerie Belvedere, Wien (1950-1957); (6) / Dr. Rudolf Leopold, Wien (1957-1994); (7) / Leopold Museum-Privatstiftung, Wien (1994). / Salzburger LA, LG Salzburg, Rückstellungsakt RK 108/48, Teilerkenntnis vom 31.05.1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+        note: “Dr. Heinrich Rieger, Wien (1918-1939); (1) / Friedrich Welz, Wien und Salzburg (1939-1945); (2) / September 1945 Sicherstellung durch die US-Besatzungsmacht in Salzburg; (3) / Dezember 1947 Verwahrung durch das Bundesdenkmalamt Salzburg (Depot Salzburg-Residenz); (4) / Mai 1948 Rückstellung an Dr. Robert Rieger und Tanna Berger; (5) / Österreichische Galerie Belvedere, Wien (1950-1957); (6) / Dr. Rudolf Leopold, Wien (1957-1994); (7) / Leopold Museum-Privatstiftung, Wien (1994). / Salzburger LA, LG Salzburg, Rückstellungsakt RK 108/48, Teilerkenntnis vom 31.05.1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28797682
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28797682
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28797682
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q28797682
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28797682
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28797682
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28797682

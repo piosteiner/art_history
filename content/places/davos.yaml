@@ -1,0 +1,39 @@
+public_id: 101508
+name: Davos
+names:
+  - Davos GR
+  - lang: ja
+    role: translation
+    text: ダボス
+  - lang: zh
+    role: translation
+    text: 达沃斯
+  - lang: ko
+    role: translation
+    text: 다보스
+  - lang: ru
+    role: translation
+    text: Давос
+kind: site
+parent: switzerland
+country_code: CH
+location: [9.83983, 46.80906]
+wikidata_id: Q68097
+metadata:
+  sources: [Wikidata Q68097 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4011220-2
+  hls: "001571"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q68097
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q68097
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q68097

@@ -1,0 +1,35 @@
+public_id: 101123
+name: City of Westminster
+names:
+  - lang: ja
+    role: translation
+    text: シティ・オブ・ウェストミンスター
+  - lang: ko
+    role: translation
+    text: 시티오브웨스트민스터
+  - lang: fr
+    role: translation
+    text: Cité de Westminster
+  - lang: ru
+    role: translation
+    text: Вестминстер
+kind: settlement
+parent: united-kingdom
+country_code: GB
+location: [-0.13722, 51.4975]
+wikidata_id: Q179351
+metadata:
+  sources: [Wikidata Q179351 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q179351
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q179351
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q179351

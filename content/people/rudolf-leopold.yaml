@@ -1,0 +1,45 @@
+public_id: 101485
+name: Rudolf Leopold
+names:
+  - Rudolph Leopold
+  - lang: ja
+    role: translation
+    text: ルドルフ・レオポルト
+  - lang: zh
+    role: translation
+    text: 鲁道夫·利奥波德
+  - lang: ru
+    role: translation
+    text: Рудольф Леопольд
+kind: person
+occupations: [art collector, ophthalmologist, museologist]
+birth: 1925-03-01
+death: 2010-06-29
+wikidata_id: Q78747
+metadata:
+  sources: [Wikidata Q78747 (retrieved 2026-10-19)]
+identifiers:
+  bnf: 13167156k
+  gnd: "118844253"
+  idref: "035102780"
+  lc: n85144830
+  nlk: KAC202264454
+  rkd: "364368"
+  viaf: "27204568"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q78747
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q78747
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q78747
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q78747

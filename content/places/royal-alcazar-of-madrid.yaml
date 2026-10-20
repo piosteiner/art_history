@@ -1,0 +1,47 @@
+public_id: 101187
+name: Royal Alcazar of Madrid
+names:
+  - lang: nl
+    role: translation
+    text: Koninklijk Alcazar van Madrid
+  - lang: fr
+    role: translation
+    text: alcazar royal de Madrid
+  - lang: de
+    role: translation
+    text: Königlicher Alcazar von Madrid
+  - lang: it
+    role: translation
+    text: Real Alcázar di Madrid
+  - lang: es
+    role: translation
+    text: Real Alcázar de Madrid
+  - lang: ja
+    role: translation
+    text: アルカサル王宮
+  - lang: zh
+    role: translation
+    text: 馬德里皇家城堡
+  - lang: ru
+    role: translation
+    text: Мадридский Алькасар
+kind: site
+parent: madrid
+country_code: ES
+location: [-3.71417, 40.4181]
+wikidata_id: Q2832241
+metadata:
+  sources: [Wikidata Q2832241 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q2832241
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q2832241
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q2832241

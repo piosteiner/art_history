@@ -1,0 +1,72 @@
+public_id: 101334
+name: Archduke Leopold Wilhelm of Austria
+names:
+  - lang: de
+    role: original
+    text: Leopold Wilhelm von Österreich
+  - Archduke of Austria Leopold William
+  - Archduke of Austria Leopoldus Gulielmus
+  - Archduke of Austria Leopold Wilhelm
+  - Archduke of Austria Leopoldo Guglielmo
+  - Archduke of Austria Guglielmo Leopoldo
+  - Leopold, Archduke of Austria Wilhelm
+  - Archduke of Austria Léopold Guillaume
+  - Archduke of Austria Leopold Guillaume
+  - lang: nl
+    role: translation
+    text: Leopold Willem van Oostenrijk
+  - lang: fr
+    role: translation
+    text: Léopold-Guillaume de Habsbourg
+  - lang: it
+    role: translation
+    text: Leopoldo Guglielmo d'Austria
+  - lang: es
+    role: translation
+    text: Leopoldo Guillermo de Habsburgo
+  - lang: ja
+    role: translation
+    text: レオポルト・ヴィルヘルム・フォン・エスターライヒ
+  - lang: zh
+    role: translation
+    text: 奧地利的利奧波德·威廉
+  - lang: ru
+    role: translation
+    text: Леопольд Вильгельм Австрийский
+kind: person
+occupations: [politician, Catholic priest, art collector, military leader, patron of the arts, bishop]
+birth: 1614-01-05
+death: 1662-11-20
+wikidata_id: Q437295
+metadata:
+  sources: [Wikidata Q437295 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Archduke_Leopold_Wilhelm_of_Austria_by_Pieter_Thijs.jpg/1280px-Archduke_Leopold_Wilhelm_of_Austria_by_Pieter_Thijs.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Archduke_Leopold_Wilhelm_of_Austria_by_Pieter_Thijs.jpg
+    license: Public domain
+    credit: Pieter Thijs
+identifiers:
+  bnf: "150018996"
+  gnd: "118727664"
+  idref: "075161907"
+  lc: n85196888
+  rkd: "435667"
+  ulan: "500289108"
+  viaf: "72188987"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q437295
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q437295
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q437295
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q437295

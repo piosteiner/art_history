@@ -1,0 +1,78 @@
+public_id: 101208
+name: William the Silent
+names:
+  - lang: nl
+    role: original
+    text: Willem van Oranje-Nassau
+  - William I, Prince of Orange
+  - William the Taciturn
+  - William of Orange
+  - Willem de Zwijger
+  - prins van Oranje, graaf van Nassau Dutch Willem
+  - Prince of Orange, Count of Nassau William
+  - William I of Orange-Nassau
+  - Vader des Vaderlands Willem van Oranje
+  - lang: nl
+    role: original
+    text: Willem van Oranje
+  - lang: fr
+    role: translation
+    text: Guillaume Ier d'Orange-Nassau
+  - lang: de
+    role: translation
+    text: Wilhelm I.
+  - lang: it
+    role: translation
+    text: Guglielmo I d'Orange
+  - lang: es
+    role: translation
+    text: Guillermo de Orange
+  - lang: ja
+    role: translation
+    text: ウィレム1世
+  - lang: zh
+    role: translation
+    text: 威廉一世
+  - lang: ko
+    role: translation
+    text: 오라녜 공 빌럼 1세
+  - lang: ru
+    role: translation
+    text: Вильгельм I Молчаливый
+kind: person
+occupations: [politician, military leader]
+birth: 1533-05-04
+death: 1584-07-10
+wikidata_id: Q78454
+metadata:
+  sources: [Wikidata Q78454 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/William_I%2C_Prince_of_Orange_by_Adriaen_Thomasz._Key_Rijksmuseum_Amsterdam_SK-A-3148.jpg/1280px-William_I%2C_Prince_of_Orange_by_Adriaen_Thomasz._Key_Rijksmuseum_Amsterdam_SK-A-3148.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:William_I,_Prince_of_Orange_by_Adriaen_Thomasz._Key_Rijksmuseum_Amsterdam_SK-A-3148.jpg
+    license: Public domain
+    credit: Adriaen Thomasz. Key
+identifiers:
+  bnf: 12111384r
+  gnd: "118738062"
+  idref: "027292169"
+  lc: n50017277
+  rkd: "424324"
+  ulan: "500354070"
+  viaf: "289104657"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q78454
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q78454
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q78454
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q78454

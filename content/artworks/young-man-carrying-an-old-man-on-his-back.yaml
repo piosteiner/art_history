@@ -1,0 +1,104 @@
+public_id: 101425
+title: Young Man Carrying an Old Man on His Back
+creator: raphael
+created: 1514
+materials: [red chalk]
+institution: albertina
+inventory_number: "4881"
+wikidata_id: Q18688656
+metadata:
+  sources: [Wikidata Q18688656 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/Raphael_-_Young_Man_Carrying_an_Old_Man_on_His_Back%2C_c._1514_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raphael_-_Young_Man_Carrying_an_Old_Man_on_His_Back,_c._1514_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Raphael
+provenance:
+  - owner: person/fulvio-orsini
+    place: rome
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/25921/junger-mann-einen-alten-auf-dem-rucken-tragend-aeneas-und
+        note: “Fulvio Orsini / Kardinal Odoardo Farnese / Herzog Albert von Sachsen-Teschen”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/odoardo-farnese
+    acquired: 1600
+    method: bequest
+    place: rome
+    label: Orsini's collection, left to the Farnese
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/25921/junger-mann-einen-alten-auf-dem-rucken-tragend-aeneas-und
+        note: “Fulvio Orsini / Kardinal Odoardo Farnese / Herzog Albert von Sachsen-Teschen”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/albert-casimir-duke-of-teschen
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/25921/junger-mann-einen-alten-auf-dem-rucken-tragend-aeneas-und
+        note: “Fulvio Orsini / Kardinal Odoardo Farnese / Herzog Albert von Sachsen-Teschen”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/archduke-charles-duke-of-teschen
+    acquired: 1822
+    method: inheritance
+    direct: true
+    place: vienna
+    label: adoptive son of Duke Albert
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Bereits 1822 veranlasste sein Adoptivsohn Erzherzog Carl die Neugestaltung der Prunkräume …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-albrecht-duke-of-teschen
+    acquired: 1847
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Charles's eldest son
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Das historistische Erscheinungsbild der Fassaden des Palais geht auf Carls ältesten Sohn, Erzherzog Albrecht, zurück …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-friedrich-duke-of-teschen
+    acquired: 1895
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Albrecht's nephew
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1895 erbte Erzherzog Albrechts Neffe, Erzherzog Friedrich, das Palais …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1919-04
+    method: confiscation
+    direct: true
+    place: vienna
+    label: "expropriated by the Republic of Austria: Graphische Sammlung Albertina"
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1919 enteignete die Republik Österreich das erzherzogliche Palais samt der in ihm verwahrten Sammlung und nannte es fortan "Graphische Sammlung Albertina"; zugleich wurde die wertvolle Kupferstichsammlung der kaiserlichen Hofbibliothek mit der Albertina vereinigt.”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+sources:
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q18688656
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q18688656
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q18688656
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q18688656
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q18688656

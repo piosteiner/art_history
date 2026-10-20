@@ -1,0 +1,51 @@
+public_id: 101188
+name: Royal Palace of Madrid
+names:
+  - Palacio Real de Madrid
+  - Palacio Nueva
+  - lang: nl
+    role: translation
+    text: Koninklijk Paleis van Madrid
+  - lang: fr
+    role: translation
+    text: palais royal de Madrid
+  - lang: de
+    role: translation
+    text: Königspalast Madrid
+  - lang: it
+    role: translation
+    text: Palazzo reale di Madrid
+  - lang: ja
+    role: translation
+    text: 王宮
+  - lang: zh
+    role: translation
+    text: 马德里王宫
+  - lang: ko
+    role: translation
+    text: 마드리드 왕궁
+  - lang: ru
+    role: translation
+    text: Королевский дворец в Мадриде
+kind: building
+parent: madrid
+country_code: ES
+location: [-3.71431, 40.41796]
+wikidata_id: Q171517
+metadata:
+  sources: [Wikidata Q171517 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4281670-1
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q171517
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q171517
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q171517

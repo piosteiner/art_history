@@ -1,0 +1,41 @@
+public_id: 101189
+name: Buen Retiro Palace
+names:
+  - lang: fr
+    role: translation
+    text: palais du Buen Retiro
+  - lang: it
+    role: translation
+    text: Palazzo del Buon Ritiro
+  - lang: es
+    role: translation
+    text: Palacio del Buen Retiro
+  - lang: ja
+    role: translation
+    text: ブエン・レティーロ宮殿
+  - lang: zh
+    role: translation
+    text: 布恩·麗池宮
+  - lang: ru
+    role: translation
+    text: Буэн-Ретиро
+kind: site
+parent: madrid
+country_code: ES
+location: [-3.68169, 40.41368]
+wikidata_id: Q962117
+metadata:
+  sources: [Wikidata Q962117 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q962117
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q962117
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q962117

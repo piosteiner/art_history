@@ -1,0 +1,18 @@
+public_id: 101185
+name: Fra Angelico
+given_name: Fra
+family_name: Angelico
+birth: 1395/1400
+death: 1455-02-27
+wikidata_id: Q5664
+metadata:
+  sources: [Wikidata Q5664 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q5664
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q5664

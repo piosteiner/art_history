@@ -1,0 +1,125 @@
+public_id: 101460
+title_lang: en
+title: Death and Life
+names:
+  - Tod und Leben
+  - lang: nl
+    role: translation
+    text: Dood en Leven
+  - lang: fr
+    role: translation
+    text: La Vie et la Mort
+  - lang: it
+    role: translation
+    text: vita e morte
+  - lang: es
+    role: translation
+    text: Muerte y Vida
+  - lang: ja
+    role: translation
+    text: 死と生
+  - lang: zh
+    role: translation
+    text: 死亡和生命
+  - lang: ru
+    role: translation
+    text: Смерть и жизнь
+creator: gustav-klimt
+created: 1908/1915
+created_label: c. 1910
+materials: [oil paint, canvas]
+dimensions: [180.5, 200.5]
+institution: leopold-museum
+inventory_number: LM 630
+web_url: https://www.leopoldmuseum.org/en/collection/gustav-klimt
+wikidata_id: Q17001535
+metadata:
+  sources: [Wikidata Q17001535 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Gustav_Klimt_-_Death_and_Life_-_Google_Art_Project.jpg/1280px-Gustav_Klimt_-_Death_and_Life_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Death_and_Life_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: artist/gustav-klimt
+    role: estate
+    acquired: 1918
+    method: inheritance
+    place: vienna
+    label: estate of Gustav Klimt
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/629-tod-und-leben/
+        note: “Nachlass Gustav Klimt, Wien (1918); / Hans Böhler, Wien (nach 1918); (1) / Ab 1943 in einem Bergungsort der Städtischen Sammlungen deponiert (2) / Marietta Preleuthner, Wien (vor 1958-1978); (3) / Dr. Rudolf Leopold, Wien (1978-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994). / Tobias G. Natter / Elisabeth Leopold (Hrsg.), Gustav Klimt. Die Sammlung im Leopold Museum, Ostfildern 2013, S. 216, G8 / Archiv des Leopold Museums, Kaufvertrag und Überweisungsquittung vom 17.01.1978”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: artist/hans-bohler
+    acquired: after 1918
+    place: vienna
+    notes_md: From 1943 deposited in a shelter (Bergungsort) of the Städtische Sammlungen.
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/629-tod-und-leben/
+        note: “Nachlass Gustav Klimt, Wien (1918); / Hans Böhler, Wien (nach 1918); (1) / Ab 1943 in einem Bergungsort der Städtischen Sammlungen deponiert (2) / Marietta Preleuthner, Wien (vor 1958-1978); (3) / Dr. Rudolf Leopold, Wien (1978-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994). / Tobias G. Natter / Elisabeth Leopold (Hrsg.), Gustav Klimt. Die Sammlung im Leopold Museum, Ostfildern 2013, S. 216, G8 / Archiv des Leopold Museums, Kaufvertrag und Überweisungsquittung vom 17.01.1978”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Marietta Preleuthner
+    acquired: before 1958
+    ended: 1978
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/629-tod-und-leben/
+        note: “Nachlass Gustav Klimt, Wien (1918); / Hans Böhler, Wien (nach 1918); (1) / Ab 1943 in einem Bergungsort der Städtischen Sammlungen deponiert (2) / Marietta Preleuthner, Wien (vor 1958-1978); (3) / Dr. Rudolf Leopold, Wien (1978-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994). / Tobias G. Natter / Elisabeth Leopold (Hrsg.), Gustav Klimt. Die Sammlung im Leopold Museum, Ostfildern 2013, S. 216, G8 / Archiv des Leopold Museums, Kaufvertrag und Überweisungsquittung vom 17.01.1978”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1978-01-17
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/629-tod-und-leben/
+        note: “Nachlass Gustav Klimt, Wien (1918); / Hans Böhler, Wien (nach 1918); (1) / Ab 1943 in einem Bergungsort der Städtischen Sammlungen deponiert (2) / Marietta Preleuthner, Wien (vor 1958-1978); (3) / Dr. Rudolf Leopold, Wien (1978-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994). / Tobias G. Natter / Elisabeth Leopold (Hrsg.), Gustav Klimt. Die Sammlung im Leopold Museum, Ostfildern 2013, S. 216, G8 / Archiv des Leopold Museums, Kaufvertrag und Überweisungsquittung vom 17.01.1978”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: document
+        date: 1978-01-17
+        document: Kaufvertrag und Überweisungsquittung (Archiv des Leopold Museums)
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/629-tod-und-leben/
+        note: “Nachlass Gustav Klimt, Wien (1918); / Hans Böhler, Wien (nach 1918); (1) / Ab 1943 in einem Bergungsort der Städtischen Sammlungen deponiert (2) / Marietta Preleuthner, Wien (vor 1958-1978); (3) / Dr. Rudolf Leopold, Wien (1978-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994). / Tobias G. Natter / Elisabeth Leopold (Hrsg.), Gustav Klimt. Die Sammlung im Leopold Museum, Ostfildern 2013, S. 216, G8 / Archiv des Leopold Museums, Kaufvertrag und Überweisungsquittung vom 17.01.1978”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q17001535
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q17001535
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q17001535
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q17001535
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q17001535
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q17001535
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q17001535

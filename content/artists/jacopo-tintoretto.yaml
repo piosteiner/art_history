@@ -1,0 +1,18 @@
+public_id: 101324
+name: Jacopo Tintoretto
+given_name: Jacopo
+family_name: Tintoretto
+birth: 1519
+death: 31 May 1594
+wikidata_id: Q9319
+metadata:
+  sources: [Wikidata Q9319 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q9319
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q9319

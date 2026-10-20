@@ -1,0 +1,52 @@
+public_id: 101355
+name: Antonio Pérez
+names:
+  - Antonio Perez
+  - lang: es
+    role: original
+    text: Antonio Pérez del Hierro
+  - lang: ja
+    role: translation
+    text: アントニオ・ペレス
+  - lang: zh
+    role: translation
+    text: 安东尼奥·佩雷斯
+  - lang: ru
+    role: translation
+    text: Антонио Перес
+kind: person
+occupations: [politician, diplomat, writer]
+birth: 1540
+death: 1611-11-03
+wikidata_id: Q772704
+metadata:
+  sources: [Wikidata Q772704 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6e/Antonio_P%C3%A9rez_%28Alonso_S%C3%A1nchez_Coello%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonio_P%C3%A9rez_(Alonso_S%C3%A1nchez_Coello).jpg
+    license: Public domain
+    credit: Alonso Sánchez Coello
+identifiers:
+  bnf: 12073996z
+  gnd: "118739948"
+  idref: "029028450"
+  lc: n80152710
+  ulan: "500323886"
+  viaf: "120700777"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q772704
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q772704
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q772704
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q772704

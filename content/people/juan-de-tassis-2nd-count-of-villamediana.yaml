@@ -1,0 +1,45 @@
+public_id: 101350
+name: Juan de Tassis, 2nd Count of Villamediana
+names:
+  - lang: es
+    role: original
+    text: Juan de Tassis y Peralta
+  - lang: nl
+    role: translation
+    text: Conde de Villamediana
+  - lang: ja
+    role: translation
+    text: ヤン・タシス・イ・ペラルタ
+  - lang: ru
+    role: translation
+    text: Хуан де Тассис Вильямедьяна
+kind: person
+occupations: [writer, diplomat, poet]
+birth: 1582
+death: 1622-08-21
+wikidata_id: Q4111408
+metadata:
+  sources: [Wikidata Q4111408 (retrieved 2026-10-19)]
+identifiers:
+  bnf: 12129202f
+  gnd: 11880457X
+  idref: 02973102X
+  lc: n85049209
+  viaf: "47558272"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q4111408
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q4111408
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q4111408
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q4111408

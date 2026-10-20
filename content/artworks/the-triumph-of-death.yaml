@@ -1,0 +1,209 @@
+public_id: 101147
+title_lang: es
+title: El triunfo de la Muerte
+names:
+  - lang: nl
+    role: alternative
+    text: De triomf van de Dood
+  - Pieter Brueghel de Oude
+  - lang: en
+    role: translation
+    text: The Triumph of Death
+  - lang: fr
+    role: translation
+    text: Le Triomphe de la Mort
+  - lang: de
+    role: translation
+    text: Der Triumph des Todes
+  - lang: it
+    role: translation
+    text: Trionfo della Morte
+  - lang: es
+    role: translation
+    text: El triunfo de la muerte
+  - lang: ja
+    role: translation
+    text: 死の勝利
+  - lang: zh
+    role: translation
+    text: 死亡的勝利
+  - lang: ru
+    role: translation
+    text: Триумф смерти
+creator: pieter-brueghel-the-elder
+created: 1562/1563
+kind: oil painting
+medium: Oil on panel
+materials: [oil paint, panel]
+dimensions: [117, 162]
+institution: museo-del-prado
+inventory_number: P001393
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+description_md: Pieter Bruegel the Elder’s panorama of death’s army overrunning the living, painted around 1562–63. It was in Italy with the Gonzaga of Sabbioneta and in Naples before Queen Elisabeth Farnese acquired it for La Granja; it came to the Prado in 1827.
+wikidata_id: Q644856
+metadata:
+  sources: [Wikidata Q644856 (retrieved 2026-10-19)]
+relationships:
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q644856
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/The_Triumph_of_Death_by_Pieter_Bruegel_the_Elder.jpg/1280px-The_Triumph_of_Death_by_Pieter_Bruegel_the_Elder.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Triumph_of_Death_by_Pieter_Bruegel_the_Elder.jpg
+    license: Public domain
+    credit: Pieter Brueghel the Elder
+provenance:
+  - owner: person/vespasiano-i-gonzaga
+    ended: 1591
+    place: sabbioneta
+    label: Duke of Sabbioneta
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "“Colección Vespasiano Gonzaga, duque de Sabbioneta, Sabbioneta, hasta 1591;” — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
+  - owner: person/isabella-gonzaga
+    acquired: 1591
+    ended: 1637
+    direct: true
+    place: sabbioneta
+    label: Duchess of Sabbioneta
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "“col. Isabella Gonzaga, duquesa de Sabbioneta, Sabbioneta, ¿Milán? y Nápoles, hasta 1637;” — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
+    records:
+      - kind: other
+        note: perhaps in Milan
+        place: milan
+        certainty: possible
+      - kind: other
+        note: in Naples
+        place: naples
+  - owner: person/anna-carafa-della-stadera
+    acquired: 1637
+    ended: 1644
+    direct: true
+    place: naples
+    label: Princess of Stigliano
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "“col. Anna Carraffa, princesa de Stigliano, Nápoles, hasta 1644;” — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
+  - owner: person/ramiro-nunez-de-guzman
+    further_places:
+      - place: madrid
+        date: "1655"
+    acquired: 1644
+    ended: 1668
+    direct: true
+    place: naples
+    label: Duke of Medina de las Torres; in Naples 1644–1655, in Madrid 1655–1668
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "“colección Ramiro Núñez de Guzmán, II duque de Medina de las Torres, Nápoles, 1644-1655 y Madrid, 1655-1668;” — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
+  - owner: person/elisabeth-farnese
+    acquired: 1746/1759
+    ended: 1766
+    place: royal-palace-of-la-granja-de-san-ildefonso
+    label: acquired for La Granja after the inventory of 1746, before the Queen left for Madrid in 1759
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "“adquisición por la reina Isabel Farnesio entre 1746-1759, entre las pinturas incorporadas a La Granja tras la realización del inventario de 1746 y la partida de la Reina a Madrid en 1759;” — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
+  - owner: institution/spanish-royal-collection
+    acquired: 1766
+    ended: 1827
+    direct: true
+    place: royal-palace-of-la-granja-de-san-ildefonso
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "“Colección Real (colección Isabel Farnesio, Segovia, Palacio Real de La Granja de San Ildefonso, Cuarto bajo-pieza segunda, 1766, [s. nº.]; La Granja, Pinturas sin número, 1774 [s. nº.]; La Granja, Pinturas sin número, 1794, [s. nº.]; La Granja, Pinturas sin número, 1814, [s. nº.]” — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
+    records:
+      - date: "1766"
+        note: without number
+        room: cuarto bajo, pieza segunda
+        place: royal-palace-of-la-granja-de-san-ildefonso
+        document: inventory of Isabel de Farnesio’s collection
+      - date: "1774"
+        note: among the paintings without number
+        place: royal-palace-of-la-granja-de-san-ildefonso
+      - date: "1794"
+        note: among the paintings without number
+        place: royal-palace-of-la-granja-de-san-ildefonso
+      - date: "1814"
+        note: among the paintings without number
+        place: royal-palace-of-la-granja-de-san-ildefonso
+  - owner: institution/museo-del-prado
+    acquired: 1827
+    method: transfer
+    direct: true
+    place: madrid
+    label: from La Granja
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+        note: "“ingresó en el Museo del Prado, procedente de La Granja, en 1827).” — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+        source: museo-del-prado-coleccion
+        accessed: 2025-02-25
+identifiers:
+  gnd: 4594089-7
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-25
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-25
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-25
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-25
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q644856
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q644856
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-25
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q644856
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-25
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q644856
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-02-25: https://web.archive.org/web/20250225054103/https://www.museodelprado.es/coleccion/obra-de-arte/wd/d3d82b0b-9bf2-4082-ab04-66ed53196ccc"
+      source: museo-del-prado-coleccion
+      accessed: 2025-02-25

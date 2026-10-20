@@ -1,0 +1,41 @@
+public_id: 101356
+name: Leone Leoni
+names:
+  - Leone Aretino
+  - Leone Lioni
+  - Leone Aretino Lioni
+  - Leone Lione
+  - Leone Aretino Leoni
+  - lang: ja
+    role: translation
+    text: レオーネ・レオーニ
+  - lang: ru
+    role: translation
+    text: Леоне Леони
+birth: 1509
+death: 1590-07-22
+wikidata_id: Q722092
+metadata:
+  sources: [Wikidata Q722092 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Leone_Leoni%2C_Self-Portrait_%28reverse%29%2C_1541%2C_NGA_45097.jpg/1280px-Leone_Leoni%2C_Self-Portrait_%28reverse%29%2C_1541%2C_NGA_45097.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leone_Leoni,_Self-Portrait_(reverse),_1541,_NGA_45097.jpg
+    license: CC0
+    credit: Leone Leoni
+identifiers:
+  bnf: 12192515c
+  gnd: "118779567"
+  idref: 03052816X
+  lc: no93030895
+  rkd: "49466"
+  ulan: "500008130"
+  viaf: "57410696"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q722092
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q722092

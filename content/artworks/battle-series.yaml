@@ -1,0 +1,26 @@
+public_id: 101143
+title_lang: es
+title: Serie de Batallas del Salón de Reinos
+names:
+  - lang: en
+    role: translation
+    text: Hall of Realms battle series
+parts_count: 12
+attribution_label: Velázquez, Zurbarán, Maíno, Carducho, Cajés and others
+created: 1634/1635
+institution: museo-del-prado
+description_md: Twelve paintings of victories of Philip IV’s armies for the Hall of Realms (Salón de Reinos) of the Buen Retiro Palace, painted in 1634–35 by Velázquez, Zurbarán, Maíno, Carducho, Cajés and others; Velázquez’s *Surrender of Breda* is one of them. The Prado calls them *Serie de Batallas, Salón de Reinos, Palacio del Buen Retiro*.
+wikidata_id: Q114039888
+metadata:
+  sources: [Wikidata Q114039888 (retrieved 2026-10-19)]
+sources:
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: the series as the Prado names it on the page of one of its parts
+      source: museo-del-prado-coleccion
+      accessed: 2026-10-19
+  institution:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: the series as the Prado names it on the page of one of its parts
+      source: museo-del-prado-coleccion
+      accessed: 2026-10-19

@@ -1,0 +1,37 @@
+public_id: 101369
+name: Bratislava
+names:
+  - lang: ja
+    role: translation
+    text: ブラチスラヴァ
+  - lang: zh
+    role: translation
+    text: 布拉迪斯拉发
+  - lang: ko
+    role: translation
+    text: 브라티슬라바
+  - lang: ru
+    role: translation
+    text: Братислава
+kind: settlement
+parent: bratislava-region
+country_code: SK
+location: [17.10931, 48.1517]
+wikidata_id: Q1780
+metadata:
+  sources: [Wikidata Q1780 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "1063318696"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1780
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q1780
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q1780

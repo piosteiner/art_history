@@ -1,0 +1,15 @@
+public_id: 101503
+name: Kunstverlag Wolfrum
+founded: 1919-10-02
+website_url: https://www.wolfrum.at
+wikidata_id: Q139954207
+metadata:
+  sources: [Wikidata Q139954207 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 410095-5
+  viaf: "314797332"
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q139954207

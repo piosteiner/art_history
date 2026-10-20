@@ -1,0 +1,159 @@
+public_id: 101161
+title_lang: es
+title: Las hilanderas o la fábula de Aracne
+names:
+  - lang: es
+    role: alternative
+    text: Las hilanderas o la fábula de Aracne o los afiladores
+  - La fábula de Aracne
+  - The Fable of Arachne
+  - La fabula de Aracne
+  - perfect too see
+  - lang: en
+    role: translation
+    text: Las Hilanderas
+  - lang: fr
+    role: translation
+    text: Les Fileuses
+  - lang: de
+    role: translation
+    text: Die Spinnerinnen
+  - lang: it
+    role: translation
+    text: Filatrici
+  - lang: ja
+    role: translation
+    text: アラクネの寓話
+  - lang: zh
+    role: translation
+    text: 纺纱女工
+  - lang: ko
+    role: translation
+    text: 실 잣는 여인들
+  - lang: ru
+    role: translation
+    text: Пряхи
+creator: diego-velazquez
+created: 1655/1660
+kind: oil painting
+medium: Oil on canvas
+materials: [canvas, oil paint]
+dimensions: [220, 289]
+institution: museo-del-prado
+inventory_number: P001173
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+description_md: "Painted by Velázquez in the late 1650s: in the foreground women spin wool in a tapestry workshop; in the lit room behind, Minerva punishes Arachne before a tapestry of the rape of Europa — the fable from Ovid. It was long read as a scene of the royal tapestry factory."
+wikidata_id: Q984058
+metadata:
+  sources: [Wikidata Q984058 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Velazquez-las_hilanderas.jpg/1280px-Velazquez-las_hilanderas.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Velazquez-las_hilanderas.jpg
+    license: Public domain
+    credit: Diego Velázquez
+provenance:
+  - owner: person/pedro-de-arce
+    acquired: 1664 or earlier
+    place: madrid
+    label: in his collection in 1664
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "“colección Pedro de Arce, Madrid, 1664;” — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
+  - owner: person/luis-francisco-de-la-cerda
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "“col. IX duque de Medinaceli, Madrid;” — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
+  - owner: institution/spanish-royal-collection
+    acquired: 1711 or earlier
+    place: royal-alcazar-of-madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "“Real Alcázar, Madrid, 1711; Palacio del Buen Retiro, Madrid, post. 1716; Palacio Real Nuevo, Madrid, paso de tribuna y trascuartos, 1772, nº 982; Palacio Real Nuevo, Madrid, pieza de trucos, 1794, nº 982; Palacio Real, Madrid, pieza de trucos, 1814-1818, nº 982).” — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
+    records:
+      - date: "1711"
+        place: royal-alcazar-of-madrid
+      - date: after 1716
+        place: buen-retiro-palace
+      - date: "1772"
+        room: paso de tribuna y trascuartos
+        place: royal-palace-of-madrid
+        number: "982"
+      - date: "1794"
+        room: pieza de trucos
+        place: royal-palace-of-madrid
+        number: "982"
+      - date: 1814/1818
+        room: pieza de trucos
+        place: royal-palace-of-madrid
+        number: "982"
+  - owner: institution/museo-del-prado
+    acquired: 1819 or later
+    method: transfer
+    direct: true
+    place: madrid
+    label: the Prado gives no date; after the Royal Palace’s inventory of 1814–1818 (the museum opened in 1819)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+        note: "The Prado gives no date for this. — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+        source: museo-del-prado-coleccion
+        accessed: 2024-07-21
+identifiers:
+  gnd: 4398057-0
+  viaf: "218110279"
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+      source: museo-del-prado-coleccion
+      accessed: 2024-07-21
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+      source: museo-del-prado-coleccion
+      accessed: 2024-07-21
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+      source: museo-del-prado-coleccion
+      accessed: 2024-07-21
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+      source: museo-del-prado-coleccion
+      accessed: 2024-07-21
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q984058
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q984058
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+      source: museo-del-prado-coleccion
+      accessed: 2024-07-21
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q984058
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+      source: museo-del-prado-coleccion
+      accessed: 2024-07-21
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q984058
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/3d8e510d-2acf-4efb-af0c-8ffd665acd8d
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-07-21: https://web.archive.org/web/20240721193406/https://museodelprado.es/coleccion/obra-de-arte/las-hilanderas-o-la-fabula-de-aracne/3d8e510d-2acf-4efb-af0c-8ffd665acd8d"
+      source: museo-del-prado-coleccion
+      accessed: 2024-07-21

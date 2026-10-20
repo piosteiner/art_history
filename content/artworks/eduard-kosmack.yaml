@@ -1,0 +1,79 @@
+public_id: 101540
+title_lang: de
+title: Eduard Kosmack
+names:
+  - lang: es
+    role: translation
+    text: Retrato del editor Eduard Kosmack
+creator: egon-schiele
+created: 1910
+materials: [oil paint, canvas]
+dimensions: [99.8, 99.5]
+institution: belvedere
+inventory_number: "4702"
+web_url: http://www.egonschieleonline.org/works/paintings/work/p165
+wikidata_id: Q28003303
+metadata:
+  sources: [Wikidata Q28003303 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Egon_Schiele_-_Eduard_Kosmack_-_4702_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Egon_Schiele_-_Eduard_Kosmack_-_4702_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Eduard_Kosmack_-_4702_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: person/eduard-kosmack
+    place: modling
+    label: the sitter
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3456/eduard-kosmack
+        note: "“Eduard Kosmack, Mödling. 1928 Ferdinand Eckhardt, Wien 1953 Ankauf Ferdinand Eckhardt, Wien” — read in the Internet Archive’s copy of 2026-10-06: https://web.archive.org/web/20261006185940/https://sammlung.belvedere.at/objects/3456/eduard-kosmack"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-06
+  - owner: person/ferdinand-eckhardt
+    acquired: 1928
+    ended: 1953
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3456/eduard-kosmack
+        note: "“Eduard Kosmack, Mödling. 1928 Ferdinand Eckhardt, Wien 1953 Ankauf Ferdinand Eckhardt, Wien” — read in the Internet Archive’s copy of 2026-10-06: https://web.archive.org/web/20261006185940/https://sammlung.belvedere.at/objects/3456/eduard-kosmack"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-06
+  - owner: institution/belvedere
+    acquired: 1953
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3456/eduard-kosmack
+        note: "“Eduard Kosmack, Mödling. 1928 Ferdinand Eckhardt, Wien 1953 Ankauf Ferdinand Eckhardt, Wien” — read in the Internet Archive’s copy of 2026-10-06: https://web.archive.org/web/20261006185940/https://sammlung.belvedere.at/objects/3456/eduard-kosmack"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-06
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28003303
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28003303
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28003303
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28003303
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28003303
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28003303
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28003303

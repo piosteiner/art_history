@@ -1,0 +1,18 @@
+public_id: 101163
+name: Rogier van der Weyden
+given_name: Rogier
+family_name: van der Weyden
+birth: 1399/1400
+death: 1464-06-27
+wikidata_id: Q68631
+metadata:
+  sources: [Wikidata Q68631 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q68631
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q68631

@@ -1,0 +1,92 @@
+public_id: 101462
+title_lang: en
+title: The Hermits
+names:
+  - lang: de
+    role: translation
+    text: „Die Eremiten”
+  - lang: it
+    role: translation
+    text: Gli eremiti
+  - lang: es
+    role: translation
+    text: Los ermitaños
+creator: egon-schiele
+created: 1912
+dimensions: [181, 181]
+institution: leopold-museum
+inventory_number: LM 466
+wikidata_id: Q28797696
+metadata:
+  sources: [Wikidata Q28797696 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Egon_Schiele_-_The_Hermits_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_The_Hermits_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_The_Hermits_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: artist/egon-schiele
+    role: estate
+    acquired: 1918
+    method: inheritance
+    place: vienna
+    label: estate of Egon Schiele
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/540-eremiten/
+        note: “Nachlass Egon Schiele, Wien (1918); / Arthur Stemmer, Wien / London (1918-1953); (1) / Dr. Rudolf Leopold, Wien (1953-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/arthur-stemmer
+    further_places: [london]
+    acquired: 1918
+    ended: 1953
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/540-eremiten/
+        note: “Nachlass Egon Schiele, Wien (1918); / Arthur Stemmer, Wien / London (1918-1953); (1) / Dr. Rudolf Leopold, Wien (1953-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1953
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/540-eremiten/
+        note: “Nachlass Egon Schiele, Wien (1918); / Arthur Stemmer, Wien / London (1918-1953); (1) / Dr. Rudolf Leopold, Wien (1953-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/540-eremiten/
+        note: “Nachlass Egon Schiele, Wien (1918); / Arthur Stemmer, Wien / London (1918-1953); (1) / Dr. Rudolf Leopold, Wien (1953-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28797696
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28797696
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28797696
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28797696
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28797696
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28797696

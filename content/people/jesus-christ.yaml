@@ -1,0 +1,23 @@
+public_id: 101165
+name: Jesus Christ
+given_name: Jesus
+family_name: Christ
+kind: person
+birth: -6/-4
+death: 30-04-05
+wikidata_id: Q302
+metadata:
+  sources: [Wikidata Q302 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q302
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q302
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q302

@@ -1,0 +1,37 @@
+public_id: 101498
+name: Galerie St. Etienne
+names:
+  - Kallir Research Institute
+  - KRI art advisory
+  - lang: ru
+    role: translation
+    text: галерея Ст. Этьен
+founded: 1939
+place: new-york-city
+location: [-73.97558, 40.76342]
+address: 24 West 57th Street
+website_url: https://gseart.com/
+wikidata_id: Q27431468
+metadata:
+  sources: [Wikidata Q27431468 (retrieved 2026-10-19)]
+identifiers:
+  idref: 16203010X
+  lc: n79120892
+  viaf: "136032789"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q27431468
+  address:
+    - accessed: 2026-10-19
+      property: P6375
+      wikidata: Q27431468
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q27431468
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q27431468

@@ -1,0 +1,72 @@
+public_id: 101354
+name: Leopold I, Holy Roman Emperor
+names:
+  - lang: de
+    role: original
+    text: Leopold I
+  - Leopold Ignaz Joseph Balthasar Felician
+  - lang: nl
+    role: translation
+    text: Keizer Leopold I
+  - lang: fr
+    role: translation
+    text: Léopold Ier du Saint-Empire
+  - lang: de
+    role: original
+    text: Leopold I.
+  - lang: it
+    role: translation
+    text: Leopoldo I d'Asburgo
+  - lang: es
+    role: translation
+    text: Leopoldo I de Habsburgo
+  - lang: ja
+    role: translation
+    text: レオポルト1世
+  - lang: zh
+    role: translation
+    text: 利奥波德一世
+  - lang: ko
+    role: translation
+    text: 레오폴트 1세
+  - lang: ru
+    role: translation
+    text: Леопольд I
+kind: person
+occupations: [monarch, composer]
+birth: 1640-06-09
+death: 1705-05-05
+wikidata_id: Q150494
+metadata:
+  sources: [Wikidata Q150494 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Benjamin_von_Block_001.jpg/1280px-Benjamin_von_Block_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Benjamin_von_Block_001.jpg
+    license: Public domain
+    credit: Benjamin Block
+identifiers:
+  bnf: "119713967"
+  gnd: "118571869"
+  idref: "086131036"
+  kulturnav: 0bcf8a11-5413-4b74-9579-7a620e13d2bb
+  lc: n82099690
+  rkd: "485795"
+  ulan: "500353751"
+  viaf: "54156429"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q150494
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q150494
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q150494
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q150494

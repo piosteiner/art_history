@@ -1,0 +1,41 @@
+public_id: 101510
+name: Campione d'Italia
+names:
+  - lang: fr
+    role: translation
+    text: Campione d’Italia
+  - lang: ja
+    role: translation
+    text: カンピョーネ・ディターリア
+  - lang: zh
+    role: translation
+    text: 意大利金皮庸
+  - lang: ko
+    role: translation
+    text: 캄피오네디탈리아
+  - lang: ru
+    role: translation
+    text: Кампионе-д’Италия
+kind: settlement
+parent: province-of-como
+country_code: IT
+location: [8.97083, 45.97083]
+wikidata_id: Q244207
+metadata:
+  sources: [Wikidata Q244207 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4009381-5
+  hls: "007038"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q244207
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q244207
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q244207

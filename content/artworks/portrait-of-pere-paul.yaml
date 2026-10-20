@@ -1,0 +1,101 @@
+public_id: 101541
+title_lang: de
+title: Der Koch (Le Père Paul)
+names:
+  - lang: fr
+    role: original
+    text: Le Chef Père Paul
+  - lang: en
+    role: translation
+    text: Portrait of Père Paul
+  - lang: de
+    role: original
+    text: Der Koch
+  - lang: es
+    role: translation
+    text: Retrato de Père Paul
+  - lang: ko
+    role: translation
+    text: 폴 영감의 초상
+  - lang: ru
+    role: translation
+    text: Портрет папаши Поля
+creator: claude-monet
+created: 1882
+materials: [oil paint, canvas]
+dimensions: [64.5, 52.1]
+institution: belvedere
+inventory_number: "540"
+wikidata_id: Q27665416
+metadata:
+  sources: [Wikidata Q27665416 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Claude_Monet_-_Der_Koch_%28Le_P%C3%A8re_Paul%29_-_540_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Claude_Monet_-_Der_Koch_%28Le_P%C3%A8re_Paul%29_-_540_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Der_Koch_(Le_P%C3%A8re_Paul)_-_540_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner_label: Graff collection
+    sources:
+      - url: https://sammlung.belvedere.at/objects/6289/der-koch-le-pere-paul
+        note: "“Sammlung Graff. Sammlung Knoedler. Durand-Ruel, Paris 1903 Ankauf Impressionisten-Ausstellung Secession, Wien” — read in the Internet Archive’s copy of 2026-10-11: https://web.archive.org/web/20261011073753/https://sammlung.belvedere.at/objects/6289/der-koch-le-pere-paul"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-11
+  - owner: institution/m-knoedler-co
+    role: dealer
+    sources:
+      - url: https://sammlung.belvedere.at/objects/6289/der-koch-le-pere-paul
+        note: "“Sammlung Graff. Sammlung Knoedler. Durand-Ruel, Paris 1903 Ankauf Impressionisten-Ausstellung Secession, Wien” — read in the Internet Archive’s copy of 2026-10-11: https://web.archive.org/web/20261011073753/https://sammlung.belvedere.at/objects/6289/der-koch-le-pere-paul"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-11
+  - owner: institution/durand-ruel
+    role: dealer
+    place: paris
+    sources:
+      - url: https://sammlung.belvedere.at/objects/6289/der-koch-le-pere-paul
+        note: "“Sammlung Graff. Sammlung Knoedler. Durand-Ruel, Paris 1903 Ankauf Impressionisten-Ausstellung Secession, Wien” — read in the Internet Archive’s copy of 2026-10-11: https://web.archive.org/web/20261011073753/https://sammlung.belvedere.at/objects/6289/der-koch-le-pere-paul"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-11
+  - owner: institution/belvedere
+    acquired: 1903
+    method: purchase
+    place: vienna
+    label: bought at the Impressionist exhibition of the Secession (Moderne Galerie)
+    sources:
+      - url: https://sammlung.belvedere.at/objects/6289/der-koch-le-pere-paul
+        note: "“Sammlung Graff. Sammlung Knoedler. Durand-Ruel, Paris 1903 Ankauf Impressionisten-Ausstellung Secession, Wien” — read in the Internet Archive’s copy of 2026-10-11: https://web.archive.org/web/20261011073753/https://sammlung.belvedere.at/objects/6289/der-koch-le-pere-paul"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-11
+    records:
+      - kind: exhibition
+        date: "1903"
+        place: vienna
+        document: Entwicklung des Impressionismus in Malerei und Plastik, Secession
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q27665416
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q27665416
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q27665416
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q27665416
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q27665416
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q27665416
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q27665416

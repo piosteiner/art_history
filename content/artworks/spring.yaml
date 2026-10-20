@@ -1,0 +1,97 @@
+public_id: 101433
+title: Spring
+names:
+  - lang: nl
+    role: translation
+    text: voorjaar
+  - lang: fr
+    role: translation
+    text: Printemps
+  - lang: de
+    role: translation
+    text: Frühling
+  - lang: it
+    role: translation
+    text: primavera
+parent: the-four-seasons
+creator: pieter-brueghel-the-elder
+created: 1565
+materials: [ink, pencil, red chalk]
+institution: albertina
+inventory_number: "23750"
+web_url: https://www.albertina.at/ausstellungen/bruegel/#
+wikidata_id: Q18686388
+metadata:
+  sources: [Wikidata Q18686388 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Pieter_Bruegel_the_Elder_-_Spring%2C_1565_-_Google_Art_Project.jpg/1280px-Pieter_Bruegel_the_Elder_-_Spring%2C_1565_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Spring,_1565_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Pieter Brueghel the Elder
+provenance:
+  - owner_label: Max Strauss
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/32436/der-fruhling
+        note: “Sammlung Max Strauss (gestorben um 1925), Wien / Galerie Miethke, Wien, 15. Februar 1906, Nr. 17 / Gottfried Eissler, Wien (1861–1924) / 1924 von der Albertina erworben Inv. 23750”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/galerie-miethke
+    role: agent
+    numbers:
+      - kind: lot
+        number: "17"
+    acquired: 1906-02-15
+    method: auction
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/32436/der-fruhling
+        note: “Sammlung Max Strauss (gestorben um 1925), Wien / Galerie Miethke, Wien, 15. Februar 1906, Nr. 17 / Gottfried Eissler, Wien (1861–1924) / 1924 von der Albertina erworben Inv. 23750”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/gottfried-eissler
+    ended: 1924
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/32436/der-fruhling
+        note: “Sammlung Max Strauss (gestorben um 1925), Wien / Galerie Miethke, Wien, 15. Februar 1906, Nr. 17 / Gottfried Eissler, Wien (1861–1924) / 1924 von der Albertina erworben Inv. 23750”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1924
+    method: purchase
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/32436/der-fruhling
+        note: “Sammlung Max Strauss (gestorben um 1925), Wien / Galerie Miethke, Wien, 15. Februar 1906, Nr. 17 / Gottfried Eissler, Wien (1861–1924) / 1924 von der Albertina erworben Inv. 23750”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q18686388
+  parent:
+    - accessed: 2026-10-19
+      property: P179
+      wikidata: Q18686388
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q18686388
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q18686388
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q18686388
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q18686388
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q18686388

@@ -1,0 +1,21 @@
+public_id: 101128
+name: Philip IV of Spain
+kind: person
+birth: 1605-04-08
+death: 1665-09-17
+wikidata_id: Q691402
+metadata:
+  sources: [Wikidata Q691402 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q691402
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q691402
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q691402

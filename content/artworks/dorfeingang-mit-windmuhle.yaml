@@ -1,4 +1,4 @@
-public_id: "100203"
+public_id: 100203
 title_lang: de
 title: Dorfeingang mit Windmühle
 names:
@@ -6,7 +6,7 @@ names:
     role: translation
     text: Entrance to a Village with a Windmill
     status: official
-creator: jan-brueghel-the-younger
+creator: jan-brueghel-the-elder
 created: 1603/1605
 materials: [copper, oil paint]
 dimensions: [18, 25.4]
@@ -84,9 +84,9 @@ sources:
       source: kunsthaus-zurich-sammlung-online
       accessed: 2026-10-14
   creator:
-    - accessed: 2026-10-09
-      property: P170
-      wikidata: Q131586786
+    - url: https://collection.kunsthaus.ch/en/collection/item/7999/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-19
   materials:
     - accessed: 2026-10-14
       property: P186

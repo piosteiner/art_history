@@ -1,0 +1,32 @@
+public_id: 101555
+name: Erich Lederer
+given_name: Erich
+family_name: Lederer
+kind: person
+occupations: [art collector]
+birth: 1896-09-13
+death: 1985-01-19
+wikidata_id: Q136703900
+metadata:
+  sources: [Wikidata Q136703900 (retrieved 2026-10-20)]
+identifiers:
+  gnd: "1012750183"
+  lc: nr89004519
+  viaf: "9690023"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q136703900
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q136703900
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q136703900
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q136703900

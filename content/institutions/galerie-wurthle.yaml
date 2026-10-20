@@ -1,0 +1,23 @@
+public_id: 101500
+name: Galerie Würthle
+names:
+  - lang: ru
+    role: translation
+    text: галерея Вюртле
+founded: 1865
+place: vienna
+location: [16.37304, 48.20706]
+wikidata_id: Q83383893
+metadata:
+  sources: [Wikidata Q83383893 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 2071964-4
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q83383893
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q83383893

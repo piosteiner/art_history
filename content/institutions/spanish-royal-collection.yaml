@@ -1,0 +1,19 @@
+public_id: 101197
+name: Spanish royal collection
+names:
+  - Royal collection of Spain
+  - lang: es
+    role: translation
+    text: Colección real española
+  - lang: zh
+    role: translation
+    text: 西班牙皇室收藏品
+founded: 16th century
+wikidata_id: Q104848967
+metadata:
+  sources: [Wikidata Q104848967 (retrieved 2026-10-19)]
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q104848967

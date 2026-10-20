@@ -1,0 +1,211 @@
+public_id: 101459
+title_lang: en
+title: Portrait of Wally Neuzil
+names:
+  - lang: en
+    role: original
+    text: Portrait of Wally
+  - lang: fr
+    role: translation
+    text: Portrait de Walburga Neuzil
+  - lang: de
+    role: translation
+    text: Wally
+  - lang: zh
+    role: translation
+    text: 沃莉肖像
+  - lang: ko
+    role: translation
+    text: 발리의 초상화
+  - lang: ru
+    role: translation
+    text: Портрет Валли
+creator: egon-schiele
+created: 1912
+materials: [oil paint, panel]
+dimensions: [32, 39.8]
+institution: leopold-museum
+inventory_number: LM 453
+web_url: http://www.egonschieleonline.org/works/paintings/work/p234
+wikidata_id: Q1555137
+metadata:
+  sources: [Wikidata Q1555137 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Egon_Schiele_-_Portrait_of_Wally_Neuzil_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Portrait_of_Wally_Neuzil_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Portrait_of_Wally_Neuzil_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner_label: Emil Toepfer
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/richard-lanyi
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/lea-bondi-jaray
+    acquired: before 1925
+    ended: 1939
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: exhibition
+        date: "1925"
+        note: „Weibliches Bildnis mit Blumenranke“
+        place: vienna
+        number: "18"
+        document: Kunsthandlung Würthle, Katalog zu „Egon Schiele“
+  - owner: person/friedrich-welz
+    acquired: 1939
+    ended: 1944
+    method: theft
+    direct: true
+    place: salzburg
+    notes_md: 'Taken from Lea Bondi Jaray on the eve of her escape to England; the US Attorney: "a Nazi stole [it] from a Jewish woman in 1939".'
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+      - url: https://www.justice.gov/archive/usao/nys/pressreleases/July10/portraitofwallysettlementpr.pdf
+        note: “the United States has entered into a settlement agreement with the Leopold Museum Privat-Stiftung (the "Foundation") and LEA BONDI JARAY's estate (the "Estate") to resolve the civil forfeiture action against Portrait of Wally ("Wally"), an oil painting by EGON SCHIELE that a Nazi stole from a Jewish woman in 1939. According to the terms of the settlement agreement, the Leopold Museum will pay BONDI's Estate $19 million in exchange for the painting.”
+        source: us-attorney-sdny-2010-wally
+        accessed: 2026-10-19
+  - owner: institution/salzburger-landesgalerie
+    acquired: 1944
+    ended: 1945
+    direct: true
+    place: salzburg
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - date: 1942/1944
+        place: salzburg
+        document: Inventarbuch der Landesgalerie Salzburg (Koller 2000, pp. 27, 173)
+  - owner_label: US occupation authorities
+    role: custodian
+    acquired: 1945
+    place: salzburg
+    label: secured (Sicherstellung)
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Land Salzburg
+    role: custodian
+    acquired: 1947
+    place: salzburg
+    label: handed over to the Province of Salzburg
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Dr. Robert Rieger and Tana Berger
+    acquired: 1948
+    method: restitution
+    place: new-york-city
+    notes_md: Restituted as part of the collection of Heinrich Rieger (Rückstellungskommission Salzburg, Rk 108/48, partial ruling of 3 May 1948), although the picture was Lea Bondi Jaray's.
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+      - url: https://www.justice.gov/archive/usao/nys/pressreleases/July10/portraitofwallysettlementpr.pdf
+        note: “the United States has entered into a settlement agreement with the Leopold Museum Privat-Stiftung (the "Foundation") and LEA BONDI JARAY's estate (the "Estate") to resolve the civil forfeiture action against Portrait of Wally ("Wally"), an oil painting by EGON SCHIELE that a Nazi stole from a Jewish woman in 1939. According to the terms of the settlement agreement, the Leopold Museum will pay BONDI's Estate $19 million in exchange for the painting.”
+        source: us-attorney-sdny-2010-wally
+        accessed: 2026-10-19
+  - owner: institution/belvedere
+    acquired: 1950
+    ended: 1954
+    method: purchase
+    direct: true
+    place: vienna
+    label: with the Rieger collection
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1954
+    method: exchange
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: document
+        date: 1954-09-01
+        note: letter of Fritz Novotny to Rudolf Leopold
+        place: vienna
+        document: Archiv der Österreichischen Galerie, Zl. 352/54
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/527-bildnis-wally-neuzil/
+        note: “Lea Bondi Jaray, Wien (vor 1925-1939); (1) / Friedrich Welz, Salzburg (1939-1944); (2) / Salzburger Landesgalerie, Salzburg (1944-1945); / 1945 Sicherstellung durch die US-Besatzungsmacht und 1947 Übergabe an das / Land Salzburg (3) / Dr. Robert Rieger und Tana Berger, New York (1948); (4) / Österreichische Galerie Belvedere, Wien (1950-1954); (5) / Dr. Rudolf Leopold, Wien (1954-1994); (6) / Leopold Museum Privatstiftung, Wien (seit 1994) / Salzburger Landesarchiv, Rückstellungskommission beim Landesgericht Salzburg, Rk 108/48, Teilerkenntnis vom 3. Mai 1948”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Settlement with the estate of Lea Bondi Jaray
+    role: event
+    acquired: 2010-07-20
+    method: settlement
+    place: new-york-city
+    label: $19 million paid to the estate; the US civil forfeiture action ended
+    notes_md: Lent to the Museum of Modern Art in 1997, held in New York from 1998 under a US civil forfeiture action (1999–2010).
+    sources:
+      - url: https://www.justice.gov/archive/usao/nys/pressreleases/July10/portraitofwallysettlementpr.pdf
+        note: “the United States has entered into a settlement agreement with the Leopold Museum Privat-Stiftung (the "Foundation") and LEA BONDI JARAY's estate (the "Estate") to resolve the civil forfeiture action against Portrait of Wally ("Wally"), an oil painting by EGON SCHIELE that a Nazi stole from a Jewish woman in 1939. According to the terms of the settlement agreement, the Leopold Museum will pay BONDI's Estate $19 million in exchange for the painting.”
+        source: us-attorney-sdny-2010-wally
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q1555137
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q1555137
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q1555137
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q1555137
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q1555137
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q1555137
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q1555137

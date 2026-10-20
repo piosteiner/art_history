@@ -1,0 +1,16 @@
+public_id: 101195
+name: Binche
+kind: site
+location: [4.16516, 50.4103]
+wikidata_id: Q95121
+metadata:
+  sources: [Wikidata Q95121 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q95121
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q95121

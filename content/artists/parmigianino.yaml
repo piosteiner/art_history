@@ -1,0 +1,16 @@
+public_id: 101327
+name: Parmigianino
+birth: 1503-01-21
+death: 1540-09-03
+wikidata_id: Q9348
+metadata:
+  sources: [Wikidata Q9348 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q9348
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q9348

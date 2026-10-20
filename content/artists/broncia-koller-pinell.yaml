@@ -1,0 +1,43 @@
+public_id: 101561
+name: Broncia Koller-Pinell
+names:
+  - Bronislawa Koller
+  - Broncia Koller
+  - Broucia Koller
+  - Broncia Koller Pinell
+  - lang: ja
+    role: translation
+    text: ブロンシア・コラー＝ピネル
+  - lang: zh
+    role: translation
+    text: 布朗西亞·科勒-皮內爾
+  - lang: ru
+    role: translation
+    text: Бронция Коллер-Пинель
+birth: 1863-02-25
+death: 1934-04-26
+wikidata_id: Q927192
+metadata:
+  sources: [Wikidata Q927192 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fc/Broncia_Koller-Pinell_Photo2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Broncia_Koller-Pinell_Photo2.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  dome: "3023"
+  gnd: "119152444"
+  idref: "126904235"
+  lc: n82085057
+  rkd: "222682"
+  ulan: "500005937"
+  viaf: "64811184"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q927192
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q927192

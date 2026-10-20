@@ -1,0 +1,84 @@
+public_id: 101469
+title_lang: de
+title: Versinkende Sonne
+names:
+  - lang: en
+    role: translation
+    text: Setting Sun
+  - lang: ru
+    role: translation
+    text: Тонущее солнце
+creator: egon-schiele
+created: 1913
+materials: [oil paint, canvas]
+dimensions: [90, 90.5]
+institution: leopold-museum
+inventory_number: "625"
+web_url: https://onlinecollection.leopoldmuseum.org/en/object/624
+wikidata_id: Q28780356
+metadata:
+  sources: [Wikidata Q28780356 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Egon_Schiele_-_Setting_Sun_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Setting_Sun_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Setting_Sun_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: person/arthur-roessler
+    acquired: 1913
+    ended: 1957
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/624-versinkende-sonne/
+        note: “Arthur Roessler, Wien (1913-1957); (1) / Dr. Rudolf Leopold, Wien (1957-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994) / Archiv des Leopold Museums, Kaufvertrag vom 07.01.1953; Sonja Niederacher, Egon Schiele. „Versinkende Sonne“, Dossier vom 30.04.2011, S. 4”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1957
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/624-versinkende-sonne/
+        note: “Arthur Roessler, Wien (1913-1957); (1) / Dr. Rudolf Leopold, Wien (1957-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994) / Archiv des Leopold Museums, Kaufvertrag vom 07.01.1953; Sonja Niederacher, Egon Schiele. „Versinkende Sonne“, Dossier vom 30.04.2011, S. 4”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/624-versinkende-sonne/
+        note: “Arthur Roessler, Wien (1913-1957); (1) / Dr. Rudolf Leopold, Wien (1957-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994) / Archiv des Leopold Museums, Kaufvertrag vom 07.01.1953; Sonja Niederacher, Egon Schiele. „Versinkende Sonne“, Dossier vom 30.04.2011, S. 4”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28780356
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28780356
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28780356
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q28780356
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28780356
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28780356
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28780356

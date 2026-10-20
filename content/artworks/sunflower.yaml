@@ -1,0 +1,108 @@
+public_id: 101533
+title_lang: de
+title: Die Sonnenblume
+names:
+  - lang: en
+    role: translation
+    text: Sunflower
+  - lang: fr
+    role: translation
+    text: Le Tournesol
+  - lang: de
+    role: original
+    text: Sonnenblume
+  - lang: ru
+    role: translation
+    text: Подсолнух
+creator: gustav-klimt
+created: 1907/1908
+created_label: c. 1900s
+materials: [oil paint, canvas]
+dimensions: [110, 110]
+institution: belvedere
+inventory_number: "10500"
+wikidata_id: Q28015487
+metadata:
+  sources: [Wikidata Q28015487 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Gustav_Klimt_-_Sonnenblume_-_10500_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_Sonnenblume_-_10500_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Sonnenblume_-_10500_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: artist/gustav-klimt
+    ended: 1918
+    place: vienna
+    label: the artist's
+    sources:
+      - url: https://sammlung.belvedere.at/objects/21865/sonnenblume
+        note: "“1907/08–1918, Eigentum, Gustav Klimt, Wien [1] spätestens 1928–1938, keine Angabe, Heinrich Mayer, Wien [2] 1938–1978, Nachlass, Richard Parzer, Wien 1978–2010, Nachlass, Peter Parzer, Wien 2012, Legat, Österreichische Galerie Belvedere, Wien [3] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, Taf. 10 (Sonnenblume [Besitzer: Der Künstler]). [2] XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 13, Kat. Nr. 50 (Sonnenblume [Privatbesitz]). [3] Archiv des Belvedere, Wien, Zl. 8/2012.” — read in the Internet Archive’s copy of 2026-07-10: https://web.archive.org/web/20260710042904/https://sammlung.belvedere.at/objects/21865/sonnenblume"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-10
+  - owner_label: Heinrich Mayer
+    acquired: 1928 or earlier
+    ended: 1938
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/21865/sonnenblume
+        note: "“1907/08–1918, Eigentum, Gustav Klimt, Wien [1] spätestens 1928–1938, keine Angabe, Heinrich Mayer, Wien [2] 1938–1978, Nachlass, Richard Parzer, Wien 1978–2010, Nachlass, Peter Parzer, Wien 2012, Legat, Österreichische Galerie Belvedere, Wien [3] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, Taf. 10 (Sonnenblume [Besitzer: Der Künstler]). [2] XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 13, Kat. Nr. 50 (Sonnenblume [Privatbesitz]). [3] Archiv des Belvedere, Wien, Zl. 8/2012.” — read in the Internet Archive’s copy of 2026-07-10: https://web.archive.org/web/20260710042904/https://sammlung.belvedere.at/objects/21865/sonnenblume"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-10
+  - owner_label: Richard Parzer
+    acquired: 1938
+    ended: 1978
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/21865/sonnenblume
+        note: "“1907/08–1918, Eigentum, Gustav Klimt, Wien [1] spätestens 1928–1938, keine Angabe, Heinrich Mayer, Wien [2] 1938–1978, Nachlass, Richard Parzer, Wien 1978–2010, Nachlass, Peter Parzer, Wien 2012, Legat, Österreichische Galerie Belvedere, Wien [3] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, Taf. 10 (Sonnenblume [Besitzer: Der Künstler]). [2] XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 13, Kat. Nr. 50 (Sonnenblume [Privatbesitz]). [3] Archiv des Belvedere, Wien, Zl. 8/2012.” — read in the Internet Archive’s copy of 2026-07-10: https://web.archive.org/web/20260710042904/https://sammlung.belvedere.at/objects/21865/sonnenblume"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-10
+  - owner_label: Peter Parzer
+    acquired: 1978
+    ended: 2010
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/21865/sonnenblume
+        note: "“1907/08–1918, Eigentum, Gustav Klimt, Wien [1] spätestens 1928–1938, keine Angabe, Heinrich Mayer, Wien [2] 1938–1978, Nachlass, Richard Parzer, Wien 1978–2010, Nachlass, Peter Parzer, Wien 2012, Legat, Österreichische Galerie Belvedere, Wien [3] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, Taf. 10 (Sonnenblume [Besitzer: Der Künstler]). [2] XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 13, Kat. Nr. 50 (Sonnenblume [Privatbesitz]). [3] Archiv des Belvedere, Wien, Zl. 8/2012.” — read in the Internet Archive’s copy of 2026-07-10: https://web.archive.org/web/20260710042904/https://sammlung.belvedere.at/objects/21865/sonnenblume"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-10
+  - owner: institution/belvedere
+    acquired: 2012
+    method: bequest
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/21865/sonnenblume
+        note: "“1907/08–1918, Eigentum, Gustav Klimt, Wien [1] spätestens 1928–1938, keine Angabe, Heinrich Mayer, Wien [2] 1938–1978, Nachlass, Richard Parzer, Wien 1978–2010, Nachlass, Peter Parzer, Wien 2012, Legat, Österreichische Galerie Belvedere, Wien [3] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, Taf. 10 (Sonnenblume [Besitzer: Der Künstler]). [2] XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 13, Kat. Nr. 50 (Sonnenblume [Privatbesitz]). [3] Archiv des Belvedere, Wien, Zl. 8/2012.” — read in the Internet Archive’s copy of 2026-07-10: https://web.archive.org/web/20260710042904/https://sammlung.belvedere.at/objects/21865/sonnenblume"
+        source: belvedere-sammlung-online
+        accessed: 2026-07-10
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28015487
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28015487
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28015487
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28015487
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28015487
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28015487
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28015487

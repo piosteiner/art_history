@@ -1,0 +1,79 @@
+public_id: 101292
+title_lang: es
+title: Pinturas negras
+names:
+  - lang: en
+    role: translation
+    text: Black Paintings
+  - lang: nl
+    role: translation
+    text: Zwarte Schilderijen
+  - lang: fr
+    role: translation
+    text: Peintures noires
+  - lang: de
+    role: translation
+    text: Schwarze Gemälde
+  - lang: it
+    role: translation
+    text: Pitture nere
+  - lang: ja
+    role: translation
+    text: 黒い絵
+  - lang: zh
+    role: translation
+    text: 黑色繪畫
+  - lang: ru
+    role: translation
+    text: Мрачные картины
+parts_count: 14
+creator: francisco-goya
+created: 1820/1823
+kind: painting
+medium: Mixed technique on mural coating transferred to canvas
+materials: [oil paint, transferred to canvas]
+institution: museo-del-prado
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/18110a75-b0e7-430c-bc73-2a4d55893bd6
+description_md: "Fourteen paintings Goya made in 1820–23 on the walls of the Quinta del Sordo, his house across the Manzanares outside Madrid — on the ground floor and the upper floor. The Prado calls them *Pinturas de la Quinta del Sordo (Pinturas negras)*. Baron d’Erlanger had them transferred to canvas after 1873 and gave them to the Spanish State in 1881; they have been in the Prado since 1889. Their provenance is that of the house: see each painting."
+wikidata_id: Q1988253
+metadata:
+  sources: [Wikidata Q1988253 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Quintasordo.svg/1280px-Quintasordo.svg.png
+    source_url: https://commons.wikimedia.org/wiki/File:Quintasordo.svg
+    license: CC BY-SA 3.0
+    credit: Chabacano
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/18110a75-b0e7-430c-bc73-2a4d55893bd6
+      note: the series as the Prado names it on the page of one of its parts
+      source: museo-del-prado-coleccion
+      accessed: 2026-10-19
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q1988253
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/18110a75-b0e7-430c-bc73-2a4d55893bd6
+      note: the series as the Prado names it on the page of one of its parts
+      source: museo-del-prado-coleccion
+      accessed: 2026-10-19
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q1988253
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/18110a75-b0e7-430c-bc73-2a4d55893bd6
+      note: the series as the Prado names it on the page of one of its parts
+      source: museo-del-prado-coleccion
+      accessed: 2026-10-19
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q1988253
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q1988253
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/18110a75-b0e7-430c-bc73-2a4d55893bd6
+      note: the series as the Prado names it on the page of one of its parts
+      source: museo-del-prado-coleccion
+      accessed: 2026-10-19

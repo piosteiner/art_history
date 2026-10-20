@@ -1,0 +1,50 @@
+public_id: 101364
+name: Imperial Treasury
+names:
+  - lang: nl
+    role: translation
+    text: Schatkamer van de Hofburg
+  - lang: fr
+    role: translation
+    text: Trésor impérial de Vienne
+  - lang: de
+    role: translation
+    text: Schatzkammer
+  - lang: it
+    role: translation
+    text: Tesoreria imperiale
+  - lang: ja
+    role: translation
+    text: ウィーン王宮宝物館
+  - lang: zh
+    role: translation
+    text: 皇家珍寶館
+  - lang: ko
+    role: translation
+    text: 왕실 보물관
+  - lang: ru
+    role: translation
+    text: Сокровищница
+place: vienna
+location: [16.36542, 48.20657]
+wikidata_id: Q317701
+metadata:
+  sources: [Wikidata Q317701 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Weltliche_Schatzkammer_Wien_%28190%29.JPG/1280px-Weltliche_Schatzkammer_Wien_%28190%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Weltliche_Schatzkammer_Wien_(190).JPG
+    license: Public domain
+    credit: MyName (Gryffindor)
+identifiers:
+  gnd: "1100886028"
+  lc: n88181837
+  viaf: "140226908"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q317701
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q317701

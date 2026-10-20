@@ -1,0 +1,205 @@
+public_id: 101184
+title_lang: es
+title: Perro semihundido
+names:
+  - lang: es
+    role: alternative
+    text: El perro
+  - lang: es
+    role: original
+    text: Guy Eats Pigs
+  - lang: hu
+    role: original
+    text: A kutya
+  - Perro semihundido
+  - Half-Buried Dog
+  - lang: en
+    role: translation
+    text: The Dog
+  - lang: fr
+    role: translation
+    text: Le Chien
+  - lang: de
+    role: translation
+    text: Hund
+  - lang: it
+    role: translation
+    text: Cane interrato nella rena
+  - lang: ja
+    role: translation
+    text: 犬 （ゴヤ)
+  - lang: zh
+    role: translation
+    text: 狗
+  - lang: ko
+    role: translation
+    text: 개
+  - lang: ru
+    role: translation
+    text: Собака
+parent: black-paintings
+creator: francisco-goya
+created: 1820/1823
+kind: painting
+medium: Mixed technique on mural coating transferred to canvas
+materials: [oil paint]
+dimensions: [131.5, 79.2]
+institution: museo-del-prado
+inventory_number: P000767
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+description_md: "One of the Black Paintings Goya painted on the walls of his house outside Madrid, the Quinta del Sordo, in 1820–23: the head of a dog looks up out of a slope, almost the whole picture an empty field of ochre."
+wikidata_id: Q500936
+metadata:
+  sources: [Wikidata Q500936 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Goya_Dog.jpg/1280px-Goya_Dog.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Goya_Dog.jpg
+    license: Public domain
+    credit: Francisco Goya
+provenance:
+  - owner: person/mariano-de-goya
+    acquired: 1823 or earlier
+    ended: 1833
+    method: gift
+    direct: true
+    place: quinta-del-sordo
+    label: the Quinta del Sordo with its murals, given by Goya to his grandson Mariano before he left for Bordeaux in 1823
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "“Quinta del Sordo, Madrid, donada por Goya antes de partir para Burdeos en 1823 a su nieto Mariano.” — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+  - owner: person/francisco-javier-goya-bayeu
+    acquired: 1833
+    ended: 1854
+    method: purchase
+    direct: true
+    place: quinta-del-sordo
+    label: bought from his son Mariano
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "“Vendida por éste a Javier Goya, en 1833” — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+  - owner: person/mariano-de-goya
+    acquired: 1854
+    ended: 1859
+    direct: true
+    place: quinta-del-sordo
+    label: back in Mariano’s ownership
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "“aunque retornó a la propiedad de Mariano en 1854.” — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+  - owner: person/segundo-colmenares
+    acquired: 1859
+    ended: 1863
+    method: purchase
+    direct: true
+    place: quinta-del-sordo
+    label: bought the house
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "“En 1859, la posesión fue vendida a Segundo Colmenares.” — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+  - owner: person/louis-rodolphe-coumont
+    acquired: 1863
+    ended: 1873
+    direct: true
+    place: quinta-del-sordo
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "“En 1863 adquirida por Louis Rodolphe Coumont.” — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+  - owner: person/frederic-emile-d-erlanger
+    event: 1878-paris-world-s-fair
+    acquired: 1873
+    ended: 1881
+    method: purchase
+    direct: true
+    place: quinta-del-sordo
+    label: had the murals transferred to canvas at once
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "“Comprada en 1873 por el barón Frédéric Emile d'Erlanger, que encargó el inmediato traslado de las pinturas murales a lienzo. En 1878, en la exposición Universal de París, para su posible venta.” — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+    records:
+      - kind: exhibition
+        date: "1878"
+        note: for a possible sale
+        place: paris
+        document: Exposition Universelle, Paris
+  - owner: institution/museo-del-prado
+    acquired: 1881
+    method: gift
+    direct: true
+    place: madrid
+    label: given by d’Erlanger to the Spanish State, which assigned the paintings to the Prado
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+        note: "“En 1881 d'Erlanger las cedió al Estado español, que las destinó al Museo del Prado, donde se expusieron desde 1889.” — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+        source: museo-del-prado-coleccion
+        accessed: 2026-04-18
+    records:
+      - kind: exhibition
+        date: "1889"
+        note: on show from 1889
+        place: madrid
+        document: Museo del Prado
+identifiers:
+  gnd: "1048249328"
+  viaf: "293755261"
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-18
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-18
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-18
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-18
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q500936
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q500936
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-18
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q500936
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-18
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q500936
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-04-18: https://web.archive.org/web/20260418055717/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4ea6a3d1-00ee-49ee-b423-ab1c6969bca6"
+      source: museo-del-prado-coleccion
+      accessed: 2026-04-18

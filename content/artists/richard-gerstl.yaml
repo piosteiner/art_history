@@ -1,0 +1,18 @@
+public_id: 101475
+name: Richard Gerstl
+given_name: Richard
+family_name: Gerstl
+birth: 1883-09-14
+death: 1908-11-04
+wikidata_id: Q129113
+metadata:
+  sources: [Wikidata Q129113 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q129113
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q129113

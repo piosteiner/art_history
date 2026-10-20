@@ -1,0 +1,31 @@
+public_id: 101335
+name: Catharina Bolnes
+names:
+  - Catharina Bolnes
+  - lang: ja
+    role: translation
+    text: カタリーナ・ボルネス
+  - lang: zh
+    role: translation
+    text: 卡特琳娜·博尔内斯
+kind: person
+birth: c. 1631
+death: 1687-12
+wikidata_id: Q9710430
+metadata:
+  sources: [Wikidata Q9710430 (retrieved 2026-10-19)]
+identifiers:
+  viaf: "84256711"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q9710430
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q9710430
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q9710430

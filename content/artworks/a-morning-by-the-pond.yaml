@@ -1,0 +1,126 @@
+public_id: 101471
+title_lang: en
+title: Tranquil Pond (Egelsee near Golling, Salzburg)
+names:
+  - Tranquil Pond
+  - lang: en
+    role: original
+    text: A Morning by the Pond
+  - lang: fr
+    role: translation
+    text: Étang calme
+  - lang: de
+    role: translation
+    text: Stiller Weiher
+  - lang: ru
+    role: translation
+    text: Утро на пруду
+creator: gustav-klimt
+created: 1899
+materials: [oil paint, canvas]
+dimensions: [75.1, 75.1]
+institution: leopold-museum
+inventory_number: LM 2007
+wikidata_id: Q19912822
+metadata:
+  sources: [Wikidata Q19912822 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Gustav_Klimt_-_Tranquil_Pond_%28Egelsee_near_Golling%2C_Salzburg%29_-_Google_Art_Project.jpg/1280px-Gustav_Klimt_-_Tranquil_Pond_%28Egelsee_near_Golling%2C_Salzburg%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Tranquil_Pond_(Egelsee_near_Golling,_Salzburg)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: institution/galerie-miethke
+    role: dealer
+    acquired: 1911-10-05
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2148-ein-morgen-am-teiche/
+        note: “Galerie Miethke, Wien (05.10.1911); / Hermine Lasus, Wien (1912-1954); / Marko Danilowatz, Wien (1954-1971); / Bibiane Preisinger, geb. Danilowatz, Wien (1971-1975); / George McGuire und Dr. Rudolf Leopold, Wien (1975); (1) / Dr. Rudolf Leopold, Wien (1976-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bill of Sale vom 28.09.1976; Diethard Leopold, Rudolf Leopold - Kunstsammler, Wien 2003, S. 208-210.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Hermine Lasus
+    acquired: 1912
+    ended: 1954
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2148-ein-morgen-am-teiche/
+        note: “Galerie Miethke, Wien (05.10.1911); / Hermine Lasus, Wien (1912-1954); / Marko Danilowatz, Wien (1954-1971); / Bibiane Preisinger, geb. Danilowatz, Wien (1971-1975); / George McGuire und Dr. Rudolf Leopold, Wien (1975); (1) / Dr. Rudolf Leopold, Wien (1976-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bill of Sale vom 28.09.1976; Diethard Leopold, Rudolf Leopold - Kunstsammler, Wien 2003, S. 208-210.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Marko Danilowatz
+    acquired: 1954
+    ended: 1971
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2148-ein-morgen-am-teiche/
+        note: “Galerie Miethke, Wien (05.10.1911); / Hermine Lasus, Wien (1912-1954); / Marko Danilowatz, Wien (1954-1971); / Bibiane Preisinger, geb. Danilowatz, Wien (1971-1975); / George McGuire und Dr. Rudolf Leopold, Wien (1975); (1) / Dr. Rudolf Leopold, Wien (1976-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bill of Sale vom 28.09.1976; Diethard Leopold, Rudolf Leopold - Kunstsammler, Wien 2003, S. 208-210.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Bibiane Preisinger, née Danilowatz
+    acquired: 1971
+    ended: 1975
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2148-ein-morgen-am-teiche/
+        note: “Galerie Miethke, Wien (05.10.1911); / Hermine Lasus, Wien (1912-1954); / Marko Danilowatz, Wien (1954-1971); / Bibiane Preisinger, geb. Danilowatz, Wien (1971-1975); / George McGuire und Dr. Rudolf Leopold, Wien (1975); (1) / Dr. Rudolf Leopold, Wien (1976-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bill of Sale vom 28.09.1976; Diethard Leopold, Rudolf Leopold - Kunstsammler, Wien 2003, S. 208-210.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1975
+    place: vienna
+    label: jointly with George McGuire
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2148-ein-morgen-am-teiche/
+        note: “Galerie Miethke, Wien (05.10.1911); / Hermine Lasus, Wien (1912-1954); / Marko Danilowatz, Wien (1954-1971); / Bibiane Preisinger, geb. Danilowatz, Wien (1971-1975); / George McGuire und Dr. Rudolf Leopold, Wien (1975); (1) / Dr. Rudolf Leopold, Wien (1976-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bill of Sale vom 28.09.1976; Diethard Leopold, Rudolf Leopold - Kunstsammler, Wien 2003, S. 208-210.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1976-09-28
+    method: purchase
+    place: vienna
+    label: McGuire's half bought via Martin Ackermann, London
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2148-ein-morgen-am-teiche/
+        note: “Galerie Miethke, Wien (05.10.1911); / Hermine Lasus, Wien (1912-1954); / Marko Danilowatz, Wien (1954-1971); / Bibiane Preisinger, geb. Danilowatz, Wien (1971-1975); / George McGuire und Dr. Rudolf Leopold, Wien (1975); (1) / Dr. Rudolf Leopold, Wien (1976-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bill of Sale vom 28.09.1976; Diethard Leopold, Rudolf Leopold - Kunstsammler, Wien 2003, S. 208-210.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2148-ein-morgen-am-teiche/
+        note: “Galerie Miethke, Wien (05.10.1911); / Hermine Lasus, Wien (1912-1954); / Marko Danilowatz, Wien (1954-1971); / Bibiane Preisinger, geb. Danilowatz, Wien (1971-1975); / George McGuire und Dr. Rudolf Leopold, Wien (1975); (1) / Dr. Rudolf Leopold, Wien (1976-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bill of Sale vom 28.09.1976; Diethard Leopold, Rudolf Leopold - Kunstsammler, Wien 2003, S. 208-210.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q19912822
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q19912822
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q19912822
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q19912822
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q19912822
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q19912822
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q19912822

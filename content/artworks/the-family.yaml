@@ -1,0 +1,86 @@
+public_id: 101539
+title_lang: de
+title: Die Familie (Kauerndes Menschenpaar)
+names:
+  - lang: en
+    role: translation
+    text: The Family
+  - lang: fr
+    role: translation
+    text: La Famille
+  - lang: de
+    role: original
+    text: Die Familie
+  - lang: it
+    role: translation
+    text: La famiglia
+  - lang: es
+    role: translation
+    text: La familia
+  - lang: ja
+    role: translation
+    text: 家族
+creator: egon-schiele
+created: 1918
+materials: [oil paint, canvas]
+dimensions: [150, 160.8]
+institution: belvedere
+inventory_number: "4277"
+wikidata_id: Q28002609
+metadata:
+  sources: [Wikidata Q28002609 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Egon_Schiele_-_Kauerndes_Menschenpaar_%28Die_Familie%29_-_4277_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Egon_Schiele_-_Kauerndes_Menschenpaar_%28Die_Familie%29_-_4277_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Kauerndes_Menschenpaar_(Die_Familie)_-_4277_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: artist/hans-bohler
+    further_places: [new-york-city]
+    acquired: 1918
+    ended: 1948
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3071/kauerndes-menschenpaar-die-familie
+        note: "“Seit 1918 Hans Böhler, Wien und New York 1948 Ankauf Hans Böhler, New York” — read in the Internet Archive’s copy of 2026-02-26: https://web.archive.org/web/20260226010313/https://sammlung.belvedere.at/objects/3071/kauerndes-menschenpaar-die-familie"
+        source: belvedere-sammlung-online
+        accessed: 2026-02-26
+  - owner: institution/belvedere
+    acquired: 1948
+    method: purchase
+    direct: true
+    place: vienna
+    label: bought from Hans Böhler, New York
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3071/kauerndes-menschenpaar-die-familie
+        note: "“Seit 1918 Hans Böhler, Wien und New York 1948 Ankauf Hans Böhler, New York” — read in the Internet Archive’s copy of 2026-02-26: https://web.archive.org/web/20260226010313/https://sammlung.belvedere.at/objects/3071/kauerndes-menschenpaar-die-familie"
+        source: belvedere-sammlung-online
+        accessed: 2026-02-26
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28002609
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28002609
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28002609
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28002609
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28002609
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28002609
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28002609

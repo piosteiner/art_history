@@ -1,0 +1,53 @@
+public_id: 101219
+name: Luis Méndez de Haro
+names:
+  - Luis Mendez de Haro
+  - Don Luis de Haro
+  - Luis Méndez de Haro, 6th Marquis of Carpio
+  - lang: fr
+    role: translation
+    text: Luis de Haro
+  - lang: de
+    role: translation
+    text: Luis Méndez de Haro y Guzmán
+  - lang: ja
+    role: translation
+    text: ルイス・メンデス・デ・アロ
+  - lang: ru
+    role: translation
+    text: Луис де Аро и Гусман
+kind: person
+occupations: [politician, military personnel, diplomat]
+birth: 1598-02-17
+death: 1661-11-26
+wikidata_id: Q924894
+metadata:
+  sources: [Wikidata Q924894 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Arolsen_Klebeband_01_541_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arolsen_Klebeband_01_541_2.jpg
+    license: Public domain
+    credit: Joannes Meyssens
+identifiers:
+  bnf: "171140950"
+  gnd: 12405921X
+  idref: "180281879"
+  lc: n85035460
+  viaf: "8310801"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q924894
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q924894
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q924894
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q924894

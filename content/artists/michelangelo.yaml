@@ -1,0 +1,16 @@
+public_id: 101415
+name: Michelangelo
+birth: 1475-03-15
+death: 1564-02-28
+wikidata_id: Q5592
+metadata:
+  sources: [Wikidata Q5592 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q5592
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q5592

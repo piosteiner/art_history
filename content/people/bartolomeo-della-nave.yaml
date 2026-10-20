@@ -1,0 +1,26 @@
+public_id: 101342
+name: Bartolomeo della Nave
+given_name: Bartolomeo
+family_name: della Nave
+kind: person
+occupations: [art collector, art historian]
+death: 1636
+wikidata_id: Q26737150
+metadata:
+  sources: [Wikidata Q26737150 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "1143867270"
+  viaf: "305191305"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q26737150
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q26737150
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q26737150

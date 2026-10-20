@@ -1,0 +1,16 @@
+public_id: 101279
+name: Innsbruck
+kind: settlement
+location: [11.39333, 47.26833]
+wikidata_id: Q1735
+metadata:
+  sources: [Wikidata Q1735 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1735
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q1735

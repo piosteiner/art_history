@@ -1,0 +1,48 @@
+public_id: 101351
+name: Helena Fourment
+names:
+  - Hélène Fourment
+  - Helene Fourment
+  - lang: ja
+    role: translation
+    text: エレーヌ・フールマン
+  - lang: ko
+    role: translation
+    text: 헬레나 푸르망
+  - lang: ru
+    role: translation
+    text: Елена Фурман
+kind: person
+occupations: [art model, socialite, model]
+birth: 1614-04-11
+death: 1673-07-15
+wikidata_id: Q1965732
+metadata:
+  sources: [Wikidata Q1965732 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Helene_Fourment_in_her_Bridal_Gown_by_Rubens_%281630%29_-_Alte_Pinakothek_-_Munich_-_Germany_2017.jpg/1280px-Helene_Fourment_in_her_Bridal_Gown_by_Rubens_%281630%29_-_Alte_Pinakothek_-_Munich_-_Germany_2017.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Helene_Fourment_in_her_Bridal_Gown_by_Rubens_(1630)_-_Alte_Pinakothek_-_Munich_-_Germany_2017.jpg
+    license: CC BY-SA 4.0
+    credit: José Luiz
+identifiers:
+  bnf: "149651647"
+  gnd: "128802804"
+  idref: "189496061"
+  viaf: "40438373"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1965732
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q1965732
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q1965732
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q1965732

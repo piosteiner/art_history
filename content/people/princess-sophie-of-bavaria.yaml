@@ -1,0 +1,68 @@
+public_id: 101348
+name: Princess Sophie of Bavaria
+names:
+  - lang: de
+    role: original
+    text: Sophie Friederike von Bayern
+  - Friederike Sophie Dorothee Wilhelmine
+  - Sophie Frederica of Bavaria
+  - lang: nl
+    role: translation
+    text: Sophie van Beieren
+  - lang: fr
+    role: translation
+    text: Sophie de Bavière
+  - lang: it
+    role: translation
+    text: Sofia di Baviera
+  - lang: es
+    role: translation
+    text: Sofía de Baviera
+  - lang: ja
+    role: translation
+    text: ゾフィー
+  - lang: zh
+    role: translation
+    text: 苏菲公主
+  - lang: ko
+    role: translation
+    text: 바이에른 공주 조피
+  - lang: ru
+    role: translation
+    text: София Баварская
+kind: person
+occupations: [politician]
+birth: 1805-01-27
+death: 1872-05-28
+wikidata_id: Q57653
+metadata:
+  sources: [Wikidata Q57653 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Stieler_Archduchess_1832.jpg/1280px-Stieler_Archduchess_1832.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Stieler_Archduchess_1832.jpg
+    license: Public domain
+    credit: Joseph Karl Stieler
+identifiers:
+  bnf: 16297330n
+  dodis: P33309
+  gnd: "119131382"
+  idref: "224574795"
+  lc: no94025988
+  viaf: "57418282"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q57653
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q57653
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q57653
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q57653

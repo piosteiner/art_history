@@ -1,0 +1,32 @@
+public_id: 101558
+name: Vita Künstler
+given_name: Vita
+family_name: Künstler
+names: [Viktoria (“Vita”) Maria Künstler, Viktoria Künstler, Vita Maria Künstler]
+kind: person
+occupations: [art dealer]
+birth: 1900
+death: 2001-07-15
+wikidata_id: Q95662259
+metadata:
+  sources: [Wikidata Q95662259 (retrieved 2026-10-20)]
+identifiers:
+  gnd: "116591676"
+  viaf: "13062473"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q95662259
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q95662259
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q95662259
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q95662259

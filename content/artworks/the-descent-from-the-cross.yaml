@@ -1,0 +1,196 @@
+public_id: 101164
+title_lang: es
+title: El Descendimiento
+names:
+  - lang: en
+    role: original
+    text: Descent from the Cross (Deposition of Christ)
+  - Deposition of Christ
+  - Descent from the Cross
+  - Descent of Christ from the Cross
+  - lang: en
+    role: original
+    text: The Descent from the Cross
+  - lang: nl
+    role: translation
+    text: Kruisafneming
+  - lang: fr
+    role: translation
+    text: La Descente de Croix
+  - lang: de
+    role: translation
+    text: Kreuzabnahme
+  - lang: it
+    role: translation
+    text: Deposizione di Rogier van der Weyden
+  - lang: es
+    role: original
+    text: Descendimiento de la cruz
+  - lang: ja
+    role: translation
+    text: 十字架降架
+  - lang: zh
+    role: translation
+    text: 耶穌卸下十字架
+  - lang: ru
+    role: translation
+    text: Снятие с креста
+creator: rogier-van-der-weyden
+created: before 1443
+kind: oil painting
+medium: Oil on panel
+materials: [oil paint, panel]
+dimensions: [204.5, 261.5]
+institution: museo-del-prado
+inventory_number: P002825
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+on_loan: true
+on_loan_since: 1936
+description_md: "Rogier van der Weyden’s Deposition, painted before 1443 for the chapel of Our Lady Outside the Walls in Leuven: Christ’s body lowered from the cross, the fainting Virgin echoing his pose, the figures set in a shallow gilded shrine. Mary of Hungary acquired it; it came to Spain and to El Escorial."
+wikidata_id: Q568847
+metadata:
+  sources: [Wikidata Q568847 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts_person
+    to: person/jesus-christ
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q568847
+  - type: depicts_person
+    to: person/john-the-evangelist
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q568847
+  - type: depicts_person
+    to: person/joseph-of-arimathea
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q568847
+  - type: depicts_person
+    to: person/mary
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q568847
+  - type: depicts_person
+    to: person/mary-magdalene
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q568847
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q568847
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/El_Descendimiento%2C_by_Rogier_van_der_Weyden%2C_from_Prado_in_Google_Earth.jpg/1280px-El_Descendimiento%2C_by_Rogier_van_der_Weyden%2C_from_Prado_in_Google_Earth.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_Descendimiento,_by_Rogier_van_der_Weyden,_from_Prado_in_Google_Earth.jpg
+    license: Public domain
+    credit: Rogier van der Weyden
+provenance:
+  - owner: institution/chapel-of-our-lady-outside-the-walls-leuven
+    place: leuven
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "“Capilla de Nuestra Señora Extramuros de Lovaina (Bélgica);” — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
+  - owner: person/mary-of-hungary
+    further_places: [royal-palace-of-el-pardo]
+    place: binche-palace
+    label: for the chapel of her palace at Binche; later sent to Spain, to the chapel of El Pardo
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "“adquirido por María de Hungría, para la capilla del Palacio de Binche; posteriormente enviado a España, a la capilla de El Pardo;” — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
+  - owner: institution/spanish-royal-collection
+    acquired: 1574 or earlier
+    place: san-lorenzo-de-el-escorial
+    label: at the Monastery of El Escorial, 1574–1936
+    notes_md: Today a deposit of Patrimonio Nacional at the Prado, belonging to the Royal Patronage of the Monastery of San Lorenzo de El Escorial.
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "“Colección Real (Monasterio de El Escorial, 1574-1936);” — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
+  - owner: institution/junta-de-incautacion-y-proteccion-del-tesoro-artistico
+    role: event
+    acquired: 1936
+    method: transfer
+    label: deposited at the Museo del Prado by the Junta de Incautación y Protección del Tesoro Artístico (Civil War)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "“depositada en el Museo del Prado por la Junta Delegada de Incautación, Protección y Conservación del Tesoro Artístico Nacional, 1936;” — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
+  - owner: institution/patrimonio-nacional
+    role: event
+    acquired: 1943-03-02
+    method: transfer
+    label: its deposit at the Prado established by decree; a deposit of Patrimonio Nacional (Royal Patronage of the Monastery of El Escorial)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+        note: "“por Decreto de 02-03-1943 quedó establecido su depósito en el Museo del Prado; depósito del Patrimonio Nacional perteneciente al Real Patronato del Monasterio de San Lorenzo de El Escorial” — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+        source: museo-del-prado-coleccion
+        accessed: 2022-09-29
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+      source: museo-del-prado-coleccion
+      accessed: 2022-09-29
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+      source: museo-del-prado-coleccion
+      accessed: 2022-09-29
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+      source: museo-del-prado-coleccion
+      accessed: 2022-09-29
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+      source: museo-del-prado-coleccion
+      accessed: 2022-09-29
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q568847
+  on_loan:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+      source: museo-del-prado-coleccion
+      accessed: 2022-09-29
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q568847
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+      source: museo-del-prado-coleccion
+      accessed: 2022-09-29
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q568847
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+      source: museo-del-prado-coleccion
+      accessed: 2022-09-29
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q568847
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
+      source: museo-del-prado-coleccion
+      accessed: 2022-09-29

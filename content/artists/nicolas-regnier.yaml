@@ -1,0 +1,63 @@
+public_id: 101360
+name: Nicolas Régnier
+names:
+  - Nicolaas Renier
+  - Nicolas Renier
+  - Niccolò Renieri
+  - Nicolas Renieri
+  - Nicolaas Ringnerus
+  - Niccolo Renieri Regnier
+  - Nicolas Regnier
+  - N. Reniare
+  - Regnier
+  - Niccolo Renieri Renieri
+  - Nicolò Renieri
+  - Nicolo Renieri
+  - Renieri Nicolò
+  - Rinieri
+  - Nicolò Ranieri
+  - Ranieri
+  - Nicolò Renier
+  - Renieri N
+  - niccolo renieri
+  - Renier
+  - N. Renieri
+  - Renieri
+  - signor Renier
+  - lang: ja
+    role: translation
+    text: ニコラ・レニエ
+  - lang: zh
+    role: translation
+    text: 尼古拉斯·雷尼爾
+  - lang: ru
+    role: translation
+    text: Николо Реньери
+birth: c. 1588
+death: 1667-11-20
+wikidata_id: Q2979648
+metadata:
+  sources: [Wikidata Q2979648 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Self-Portrait_with_a_Portrait_on_an_Easel_1623-4_Nicolas_Regnier.jpg/1280px-Self-Portrait_with_a_Portrait_on_an_Easel_1623-4_Nicolas_Regnier.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-Portrait_with_a_Portrait_on_an_Easel_1623-4_Nicolas_Regnier.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "156232190"
+  gnd: "122968824"
+  idref: "122792076"
+  kulturnav: 07a34daa-7a9c-4875-be29-2533fc78cd93
+  lc: nr2004021317
+  rkd: "66002"
+  ulan: "500029815"
+  viaf: "23037211"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q2979648
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q2979648

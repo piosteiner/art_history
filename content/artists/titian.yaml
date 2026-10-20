@@ -1,0 +1,16 @@
+public_id: 101171
+name: Titian
+birth: c. 1490
+death: 1576-09-06
+wikidata_id: Q47551
+metadata:
+  sources: [Wikidata Q47551 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q47551
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q47551

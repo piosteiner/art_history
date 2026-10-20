@@ -1,0 +1,132 @@
+public_id: 101310
+title_lang: de
+title: Jupiter und Io
+names:
+  - lang: en
+    role: original
+    text: Jupiter and Io
+  - lang: nl
+    role: translation
+    text: Jupiter en Io
+  - lang: fr
+    role: translation
+    text: Jupiter et Io
+  - lang: it
+    role: translation
+    text: Giove e Io
+  - lang: es
+    role: translation
+    text: Júpiter e Ío
+  - lang: ja
+    role: translation
+    text: ユピテルとイオ
+  - lang: ko
+    role: translation
+    text: 유피테르와 이오
+  - lang: ru
+    role: translation
+    text: Юпитер и Ио
+parent: the-loves-of-jupiter
+creator: antonio-da-correggio
+created: c. 1530
+materials: [oil paint, canvas]
+dimensions: [162, 73.5]
+institution: kunsthistorisches-museum
+inventory_number: GG_274
+wikidata_id: Q700834
+metadata:
+  sources: [Wikidata Q700834 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Antonio_Allegri%2C_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg/1280px-Antonio_Allegri%2C_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonio_Allegri,_called_Correggio_-_Jupiter_and_Io_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Antonio Allegri, called Correggio 1489/95 (italian) Born in Correggio. Died in Correggio. Details on Google Art Project
+provenance:
+  - owner: person/federico-ii-gonzaga-duke-of-mantua
+    certainty: possible
+    sources:
+      - url: https://www.khm.at/kunstwerke/jupiter-und-io-40
+        note: “1532 vielleicht als Geschenk Federico Gonzagas an Karl V.; 1584 im Besitz des Bildhauers Leone Leoni; vor 1603 erwirbt Rudolf II. das Bild von dessen Sohn Pompeo Leoni;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/charles-v
+    acquired: 1532
+    method: gift
+    direct: true
+    certainty: possible
+    sources:
+      - url: https://www.khm.at/kunstwerke/jupiter-und-io-40
+        note: “1532 vielleicht als Geschenk Federico Gonzagas an Karl V.; 1584 im Besitz des Bildhauers Leone Leoni; vor 1603 erwirbt Rudolf II. das Bild von dessen Sohn Pompeo Leoni;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: artist/leone-leoni
+    acquired: 1584 or earlier
+    sources:
+      - url: https://www.khm.at/kunstwerke/jupiter-und-io-40
+        note: “1532 vielleicht als Geschenk Federico Gonzagas an Karl V.; 1584 im Besitz des Bildhauers Leone Leoni; vor 1603 erwirbt Rudolf II. das Bild von dessen Sohn Pompeo Leoni;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: artist/pompeo-leoni
+    method: inheritance
+    label: the sculptor's son
+    sources:
+      - url: https://www.khm.at/kunstwerke/jupiter-und-io-40
+        note: “1532 vielleicht als Geschenk Federico Gonzagas an Karl V.; 1584 im Besitz des Bildhauers Leone Leoni; vor 1603 erwirbt Rudolf II. das Bild von dessen Sohn Pompeo Leoni;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/emperor-rudolf-ii
+    acquired: before 1603
+    method: purchase
+    direct: true
+    place: prague
+    sources:
+      - url: https://www.khm.at/kunstwerke/jupiter-und-io-40
+        note: “1532 vielleicht als Geschenk Federico Gonzagas an Karl V.; 1584 im Besitz des Bildhauers Leone Leoni; vor 1603 erwirbt Rudolf II. das Bild von dessen Sohn Pompeo Leoni;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    label: imperial collection
+    certainty: probable
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q700834
+  parent:
+    - accessed: 2026-10-19
+      property: P179
+      wikidata: Q700834
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q700834
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q700834
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q700834
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q700834
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q700834
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q700834

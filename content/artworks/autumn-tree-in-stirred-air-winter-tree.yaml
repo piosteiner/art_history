@@ -1,0 +1,91 @@
+public_id: 101466
+title_lang: en
+title: Autumn Tree in Stirred Air (Winter Tree)
+names:
+  - lang: de
+    role: translation
+    text: Herbstbaum in bewegter Luft („Winterbaum“)
+creator: egon-schiele
+created: 1912
+materials: [oil paint, pencil, canvas]
+dimensions: [80, 80.5]
+institution: leopold-museum
+inventory_number: LM 449
+web_url: http://www.egonschieleonline.org/works/paintings/work/p239
+wikidata_id: Q28797681
+metadata:
+  sources: [Wikidata Q28797681 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Egon_Schiele_-_Autumn_Tree_in_Stirred_Air_%28Winter_Tree%29_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Autumn_Tree_in_Stirred_Air_%28Winter_Tree%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Autumn_Tree_in_Stirred_Air_(Winter_Tree)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner_label: Magda Mautner-Markhof
+    further_places: [salzburg]
+    acquired: 1912
+    ended: 1944
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/523-herbstbaum-in-bewegter-luft-winterbaum/
+        note: “Magda Mautner-Markhof, Wien u. Salzburg (1912-1944); (1) / Dr. Klaus Grasmayer, Salzburg (1944-1954); (2) / Dr. Rudolf Leopold, Wien (1954-1994); (3) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Kaufvertrag vom 23.08.1954”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Dr. Klaus Grasmayer
+    acquired: 1944
+    ended: 1954
+    place: salzburg
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/523-herbstbaum-in-bewegter-luft-winterbaum/
+        note: “Magda Mautner-Markhof, Wien u. Salzburg (1912-1944); (1) / Dr. Klaus Grasmayer, Salzburg (1944-1954); (2) / Dr. Rudolf Leopold, Wien (1954-1994); (3) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Kaufvertrag vom 23.08.1954”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1954-08-23
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/523-herbstbaum-in-bewegter-luft-winterbaum/
+        note: “Magda Mautner-Markhof, Wien u. Salzburg (1912-1944); (1) / Dr. Klaus Grasmayer, Salzburg (1944-1954); (2) / Dr. Rudolf Leopold, Wien (1954-1994); (3) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Kaufvertrag vom 23.08.1954”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/523-herbstbaum-in-bewegter-luft-winterbaum/
+        note: “Magda Mautner-Markhof, Wien u. Salzburg (1912-1944); (1) / Dr. Klaus Grasmayer, Salzburg (1944-1954); (2) / Dr. Rudolf Leopold, Wien (1954-1994); (3) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Kaufvertrag vom 23.08.1954”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28797681
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28797681
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28797681
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q28797681
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28797681
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28797681
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28797681

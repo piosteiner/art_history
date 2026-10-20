@@ -1,0 +1,46 @@
+public_id: 101452
+name: Pierre-François Basan
+given_name: Pierre-François
+family_name: Basan
+names:
+  - Pierre Francois Basan
+  - Pierre François Basan
+  - Fr. Basan
+  - François Basan
+  - Pierre Basan
+  - Pierre-François Bazan
+  - Bazan
+  - Basan
+  - Bassan
+  - F. Basan
+  - lang: ru
+    role: translation
+    text: Пьер-Франсуа Базан
+birth: 1723-10-23
+death: 1797-01-12
+wikidata_id: Q3383022
+metadata:
+  sources: [Wikidata Q3383022 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Pierre_Fran%C3%A7ois_Basan_%281723%E2%80%931797%29_MET_185409.jpg/1280px-Pierre_Fran%C3%A7ois_Basan_%281723%E2%80%931797%29_MET_185409.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Fran%C3%A7ois_Basan_(1723%E2%80%931797)_MET_185409.jpg
+    license: CC0
+    credit: Augustin Pajou
+identifiers:
+  bnf: 14065308r
+  gnd: "102431108"
+  idref: "118598244"
+  kulturnav: 28b7671e-f9e4-462f-9d8c-9fa4d5f26f48
+  lc: nr90010940
+  rkd: "238356"
+  ulan: "500042976"
+  viaf: "63994583"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q3383022
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q3383022

@@ -1,0 +1,28 @@
+public_id: 101488
+name: Arthur Stemmer
+given_name: Arthur
+family_name: Stemmer
+kind: person
+occupations: [art collector]
+birth: 1880-01-27
+death: 1954-08-13
+wikidata_id: Q115857351
+metadata:
+  sources: [Wikidata Q115857351 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q115857351
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q115857351
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q115857351
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q115857351

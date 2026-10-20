@@ -1,0 +1,26 @@
+public_id: 101341
+name: Taddeo Contarini
+given_name: Taddeo
+family_name: Contarini
+kind: person
+birth: 1466
+death: 1556
+wikidata_id: Q111623914
+metadata:
+  sources: [Wikidata Q111623914 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 12281942X
+  viaf: "59975195"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q111623914
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q111623914
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q111623914

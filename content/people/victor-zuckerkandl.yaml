@@ -1,0 +1,41 @@
+public_id: 101551
+name: Victor Zuckerkandl
+given_name: Victor
+family_name: Zuckerkandl
+names:
+  - Viktor Zuckerkandl
+  - lang: ru
+    role: translation
+    text: Виктор Цукеркандль
+kind: person
+occupations: [industrialist, art collector, entrepreneur, director general]
+birth: 1851-04-11
+death: 1927-02-09
+wikidata_id: Q56649632
+metadata:
+  sources: [Wikidata Q56649632 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/56/Victor_Zuckerkandl.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Victor_Zuckerkandl.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: "174340621"
+  viaf: "202424534"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q56649632
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q56649632
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q56649632
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q56649632

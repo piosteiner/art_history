@@ -1,0 +1,60 @@
+public_id: 101211
+name: Manuel Godoy
+names:
+  - Manuel de Godoy y Álvarez de Faria de los Ríos Sánchez Zarzosa
+  - Manuel, Príncipe de la Paz Godoy
+  - Manuel Godoy Príncipe de la Paz
+  - Manuel, Príncipe de la Paz Godoy y Alvárez de Faria
+  - Manuel de Godoy y Alvarez de Faria de los Rios Sanchez Zarzosa
+  - Manuel Godoy Principe de la Paz
+  - Manuel de Godoy
+  - Prince of Peace
+  - Manuel de Godoy, Prince of the Peace
+  - lang: ja
+    role: translation
+    text: マヌエル・デ・ゴドイ
+  - lang: zh
+    role: translation
+    text: 曼努埃·歌代
+  - lang: ko
+    role: translation
+    text: 마누엘 데 고도이
+  - lang: ru
+    role: translation
+    text: Мануэль Годой
+kind: person
+occupations: [military personnel, politician, military officer, head of government]
+birth: 1767-05-12
+death: 1851-10-04
+wikidata_id: Q316110
+metadata:
+  sources: [Wikidata Q316110 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Manuel_de_Godoy%2C_por_Francisco_Bayeu_%28Real_Academia_de_Bellas_Artes_de_San_Fernando%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Manuel_de_Godoy,_por_Francisco_Bayeu_(Real_Academia_de_Bellas_Artes_de_San_Fernando).jpg
+    license: Public domain
+    credit: Francisco Bayeu
+identifiers:
+  bnf: 12407471f
+  gnd: "118717855"
+  idref: "033182302"
+  lc: n81072386
+  ulan: "500318530"
+  viaf: "88905521"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q316110
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q316110
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q316110
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q316110

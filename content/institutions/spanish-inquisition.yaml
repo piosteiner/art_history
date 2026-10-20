@@ -1,0 +1,44 @@
+public_id: 101202
+name: Spanish Inquisition
+names:
+  - Tribunal of the Holy Office of the Inquisition
+  - lang: nl
+    role: translation
+    text: Spaanse inquisitie
+  - lang: fr
+    role: translation
+    text: inquisition espagnole
+  - lang: de
+    role: translation
+    text: Spanische Inquisition
+  - lang: it
+    role: translation
+    text: Inquisizione spagnola
+  - lang: es
+    role: translation
+    text: Inquisición española
+  - lang: ja
+    role: translation
+    text: スペイン異端審問
+  - lang: zh
+    role: translation
+    text: 西班牙宗教裁判所
+  - lang: ko
+    role: translation
+    text: 스페인 종교재판
+  - lang: ru
+    role: translation
+    text: Испанская инквизиция
+founded: 1478
+wikidata_id: Q184725
+metadata:
+  sources: [Wikidata Q184725 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 10314696-9
+  lc: n83046831
+  viaf: "128138451"
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q184725

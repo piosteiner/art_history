@@ -1,0 +1,95 @@
+public_id: 101470
+title: Blind Mother, or The Mother
+names:
+  - lang: de
+    role: translation
+    text: Die blinde Mutter
+creator: egon-schiele
+created: 1914
+materials: [oil paint, canvas]
+dimensions: [99, 120]
+institution: leopold-museum
+wikidata_id: Q134067801
+metadata:
+  sources: [Wikidata Q134067801 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Egon_Schiele_-_Die_blinde_Mutter.jpg/1280px-Egon_Schiele_-_Die_blinde_Mutter.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Die_blinde_Mutter.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner_label: Adolf Neufeld
+    acquired: before 1920
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+        note: “Adolf Neufeld, Wien (vor 1920); (1) / Neue Galerie, Wien (vor 1930); (2) / Wolfgang Gurlitt, Bad Aussee und München (vor 1949); (3) / Dr. Rudolf Leopold, Wien (1952-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: exhibition
+        date: "1920"
+        place: vienna
+        number: "81"
+        document: Kunstschau 1920
+  - owner: institution/neue-galerie-vienna
+    role: dealer
+    acquired: before 1930
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+        note: “Adolf Neufeld, Wien (vor 1920); (1) / Neue Galerie, Wien (vor 1930); (2) / Wolfgang Gurlitt, Bad Aussee und München (vor 1949); (3) / Dr. Rudolf Leopold, Wien (1952-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/wolfgang-gurlitt
+    further_places: [munich]
+    acquired: before 1949
+    place: bad-aussee
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+        note: “Adolf Neufeld, Wien (vor 1920); (1) / Neue Galerie, Wien (vor 1930); (2) / Wolfgang Gurlitt, Bad Aussee und München (vor 1949); (3) / Dr. Rudolf Leopold, Wien (1952-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1952
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+        note: “Adolf Neufeld, Wien (vor 1920); (1) / Neue Galerie, Wien (vor 1930); (2) / Wolfgang Gurlitt, Bad Aussee und München (vor 1949); (3) / Dr. Rudolf Leopold, Wien (1952-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+        note: “Adolf Neufeld, Wien (vor 1920); (1) / Neue Galerie, Wien (vor 1930); (2) / Wolfgang Gurlitt, Bad Aussee und München (vor 1949); (3) / Dr. Rudolf Leopold, Wien (1952-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q134067801
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q134067801
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q134067801
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q134067801
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q134067801
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q134067801

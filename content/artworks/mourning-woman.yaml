@@ -1,0 +1,104 @@
+public_id: 101468
+title_lang: en
+title: Mourning Woman
+names:
+  - lang: de
+    role: translation
+    text: Trauernde Frau
+creator: egon-schiele
+created: 1912
+dimensions: [42.5, 34]
+institution: leopold-museum
+inventory_number: LM 461
+wikidata_id: Q28797688
+metadata:
+  sources: [Wikidata Q28797688 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Egon_Schiele_-_Mourning_Woman_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Mourning_Woman_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Mourning_Woman_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: person/heinrich-benesch
+    acquired: before 1925
+    ended: 1947
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/535-trauernde/
+        note: “Heinrich Benesch, Wien (vor 1925 bis 1947); / Otto Benesch, Wien (1947-1964); / Eva Benesch, Wien (1964-1983); / Jenö Eisenberger, Wien (1983); (1) / Dr. Rudolf Leopold, Wien (1983-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bestätigung der Giese & Schweiger Kunsthandel Ges.m.b.H. vom 19.02.2002 sowie Quittung vom 30.09.1983.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/otto-benesch
+    acquired: 1947
+    ended: 1964
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/535-trauernde/
+        note: “Heinrich Benesch, Wien (vor 1925 bis 1947); / Otto Benesch, Wien (1947-1964); / Eva Benesch, Wien (1964-1983); / Jenö Eisenberger, Wien (1983); (1) / Dr. Rudolf Leopold, Wien (1983-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bestätigung der Giese & Schweiger Kunsthandel Ges.m.b.H. vom 19.02.2002 sowie Quittung vom 30.09.1983.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Eva Benesch
+    acquired: 1964
+    ended: 1983
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/535-trauernde/
+        note: “Heinrich Benesch, Wien (vor 1925 bis 1947); / Otto Benesch, Wien (1947-1964); / Eva Benesch, Wien (1964-1983); / Jenö Eisenberger, Wien (1983); (1) / Dr. Rudolf Leopold, Wien (1983-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bestätigung der Giese & Schweiger Kunsthandel Ges.m.b.H. vom 19.02.2002 sowie Quittung vom 30.09.1983.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/jeno-eisenberger
+    acquired: 1983
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/535-trauernde/
+        note: “Heinrich Benesch, Wien (vor 1925 bis 1947); / Otto Benesch, Wien (1947-1964); / Eva Benesch, Wien (1964-1983); / Jenö Eisenberger, Wien (1983); (1) / Dr. Rudolf Leopold, Wien (1983-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bestätigung der Giese & Schweiger Kunsthandel Ges.m.b.H. vom 19.02.2002 sowie Quittung vom 30.09.1983.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1983
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/535-trauernde/
+        note: “Heinrich Benesch, Wien (vor 1925 bis 1947); / Otto Benesch, Wien (1947-1964); / Eva Benesch, Wien (1964-1983); / Jenö Eisenberger, Wien (1983); (1) / Dr. Rudolf Leopold, Wien (1983-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bestätigung der Giese & Schweiger Kunsthandel Ges.m.b.H. vom 19.02.2002 sowie Quittung vom 30.09.1983.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/535-trauernde/
+        note: “Heinrich Benesch, Wien (vor 1925 bis 1947); / Otto Benesch, Wien (1947-1964); / Eva Benesch, Wien (1964-1983); / Jenö Eisenberger, Wien (1983); (1) / Dr. Rudolf Leopold, Wien (1983-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Bestätigung der Giese & Schweiger Kunsthandel Ges.m.b.H. vom 19.02.2002 sowie Quittung vom 30.09.1983.”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28797688
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28797688
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28797688
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28797688
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28797688
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28797688

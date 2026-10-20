@@ -1,0 +1,61 @@
+public_id: 101353
+name: Pietro Aretino
+names:
+  - Piero Aretino
+  - Pietro del Tura
+  - Arétin
+  - Aretin
+  - Partenio Etiro
+  - lang: fr
+    role: translation
+    text: Pierre l’Arétin
+  - lang: ja
+    role: translation
+    text: ピエトロ・アレティーノ
+  - lang: zh
+    role: translation
+    text: 彼得罗·阿雷蒂诺
+  - lang: ko
+    role: translation
+    text: 피에트로 아레티노
+  - lang: ru
+    role: translation
+    text: Пьетро Аретино
+kind: person
+occupations: [poet, playwright, journalist, writer, art historian, collector, art critic, satirist]
+birth: 1492-04-28/1492-04-29
+birth_label: c. April 1492
+death: 31 October 1556
+wikidata_id: Q296272
+metadata:
+  sources: [Wikidata Q296272 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Portrait_of_Pietro_Aretino_%28by_Titian%29_-_Pitti_Palace.jpg/1280px-Portrait_of_Pietro_Aretino_%28by_Titian%29_-_Pitti_Palace.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Pietro_Aretino_(by_Titian)_-_Pitti_Palace.jpg
+    license: Public domain
+    credit: Titian
+identifiers:
+  bnf: 13197293p
+  gnd: "118650033"
+  idref: "026689987"
+  lc: n79089193
+  rkd: "441201"
+  ulan: "500290983"
+  viaf: "66609417"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q296272
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q296272
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q296272
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q296272

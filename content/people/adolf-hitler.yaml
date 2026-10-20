@@ -1,0 +1,55 @@
+public_id: 101340
+name: Adolf Hitler
+names:
+  - lang: ja
+    role: translation
+    text: アドルフ・ヒトラー
+  - lang: zh
+    role: translation
+    text: 阿道夫·希特勒
+  - lang: ko
+    role: translation
+    text: 아돌프 히틀러
+  - lang: ru
+    role: translation
+    text: Адольф Гитлер
+kind: person
+occupations: [politician, Holocaust perpetrator, soldier, painter, political writer, military commander, writer]
+birth: 1889-04-20
+death: 30 April 1945
+wikidata_id: Q352
+metadata:
+  sources: [Wikidata Q352 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Adolf_Hitler_cropped_restored_3x4.jpg/1280px-Adolf_Hitler_cropped_restored_3x4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adolf_Hitler_cropped_restored_3x4.jpg
+    license: CC BY-SA 3.0 de
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 11907574g
+  dodis: P535
+  gnd: "118551655"
+  hls: "048732"
+  idref: "185951457"
+  kulturnav: d5a45844-1ba9-4167-a3cc-9b6529798612
+  lc: n79046200
+  rkd: "38605"
+  ulan: "500119333"
+  viaf: "38190770"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q352
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q352
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q352
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q352

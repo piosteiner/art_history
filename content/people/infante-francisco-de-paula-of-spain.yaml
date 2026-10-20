@@ -1,0 +1,21 @@
+public_id: 101155
+name: Infante Francisco de Paula of Spain
+kind: person
+birth: 1794-03-10
+death: 1865-08-13
+wikidata_id: Q462892
+metadata:
+  sources: [Wikidata Q462892 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q462892
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q462892
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q462892

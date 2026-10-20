@@ -1,0 +1,40 @@
+public_id: 101552
+name: Carl Reininghaus
+given_name: Carl
+family_name: Reininghaus
+names:
+  - lang: ru
+    role: translation
+    text: Карл Райнингхаус
+kind: person
+occupations: [entrepreneur, art collector]
+birth: 1857-02-11
+death: 1929-10-29
+wikidata_id: Q1040189
+metadata:
+  sources: [Wikidata Q1040189 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Schiele_-_Bildnis_Carl_Reininghaus_-_1910.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schiele_-_Bildnis_Carl_Reininghaus_-_1910.jpg
+    license: Public domain
+    credit: Egon Schiele
+identifiers:
+  gnd: 11642785X
+  viaf: "72144912"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1040189
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1040189
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1040189
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1040189

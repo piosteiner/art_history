@@ -1,0 +1,51 @@
+public_id: 101447
+name: Karol Lanckoroński
+names:
+  - Karol, Count Lanckoroński
+  - Count Karol Lanckoroński
+  - Karl Anton Leo Ludwig Lanckoroński
+  - lang: de
+    role: translation
+    text: Karl Lanckoroński
+  - lang: ja
+    role: translation
+    text: カロル・ランコロンスキー
+  - lang: ru
+    role: translation
+    text: Кароль Лянцкоронский
+kind: person
+occupations: [art historian, archaeologist, politician, art collector, patron of the arts, preservationist]
+birth: 1848-11-04
+death: 1933-07-15
+wikidata_id: Q328245
+metadata:
+  sources: [Wikidata Q328245 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dd/Karl_Graf_Lanckoronski-Brzezie.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Karl_Graf_Lanckoronski-Brzezie.jpg
+    license: Public domain
+identifiers:
+  bnf: 14628396s
+  gnd: "115103848"
+  idref: "112163068"
+  lc: nr88003170
+  rkd: "348854"
+  ulan: "500321022"
+  viaf: "22396413"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q328245
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q328245
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q328245
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q328245

@@ -1,0 +1,18 @@
+public_id: 101132
+name: Mari Bárbola
+given_name: Mari
+family_name: Bárbola
+kind: person
+birth: 1601/1700
+wikidata_id: Q11690939
+metadata:
+  sources: [Wikidata Q11690939 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q11690939
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q11690939

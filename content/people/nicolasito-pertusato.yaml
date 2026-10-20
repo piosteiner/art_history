@@ -1,0 +1,23 @@
+public_id: 101133
+name: Nicolasito Pertusato
+given_name: Nicolasito
+family_name: Pertusato
+kind: person
+birth: 1635
+death: 1710-06-21
+wikidata_id: Q9049947
+metadata:
+  sources: [Wikidata Q9049947 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q9049947
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q9049947
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q9049947

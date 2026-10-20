@@ -1,0 +1,47 @@
+public_id: 101549
+name: Hermine Wittgenstein
+names:
+  - Hermine Maria Franciska Wittgenstein
+  - Mining Wittgenstein
+  - Minka Wittgenstein
+  - lang: ko
+    role: translation
+    text: 헤르미네 비트겐슈타인
+  - lang: ru
+    role: translation
+    text: Гермина Витгенштейн
+kind: person
+occupations: [painter, annalist, social worker]
+birth: 1874-12-01
+death: 1950-02-11
+wikidata_id: Q96090154
+metadata:
+  sources: [Wikidata Q96090154 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6b/Hermine_Wittgenstein.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hermine_Wittgenstein.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "128922163"
+  gnd: 13024984X
+  idref: "083682538"
+  lc: nr93004997
+  viaf: "49353568"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q96090154
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q96090154
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q96090154
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q96090154

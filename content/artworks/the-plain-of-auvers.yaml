@@ -1,0 +1,92 @@
+public_id: 101542
+title_lang: de
+title: Die Ebene von Auvers
+names:
+  - Wheat Fields near Auvers
+  - lang: en
+    role: translation
+    text: The Plain of Auvers
+  - lang: ru
+    role: translation
+    text: Пшеничные поля близ Овера
+creator: vincent-van-gogh
+created: 1890
+materials: [oil paint, canvas]
+dimensions: [50, 101]
+institution: belvedere
+inventory_number: "1007"
+web_url: http://www.vggallery.com/painting/p_0775.htm
+wikidata_id: Q26221225
+metadata:
+  sources: [Wikidata Q26221225 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/The_Plain_of_Auvers_-_Vincent_van_Gogh_-_Google_Cultural_Institute.jpg/1280px-The_Plain_of_Auvers_-_Vincent_van_Gogh_-_Google_Cultural_Institute.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Plain_of_Auvers_-_Vincent_van_Gogh_-_Google_Cultural_Institute.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: person/johanna-van-gogh-bonger
+    place: amsterdam
+    label: widow of Theo van Gogh
+    notes_md: The Belvedere lists the Amsterdam art gallery of C. M. van Gogh and Johanna van Gogh-Bonger.
+    sources:
+      - url: https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers
+        note: "“Galerie d' Art C. M. van Gogh, Amsterdam. Johanna van Gogh-Bonger. 1903 Secession, Wien 1909 Widmung Secession, Wien” — read in the Internet Archive’s copy of 2026-01-30: https://web.archive.org/web/20260130032839/https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers"
+        source: belvedere-sammlung-online
+        accessed: 2026-01-30
+  - owner_label: Kunsthandel C. M. van Gogh
+    role: agent
+    place: amsterdam
+    sources:
+      - url: https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers
+        note: "“Galerie d' Art C. M. van Gogh, Amsterdam. Johanna van Gogh-Bonger. 1903 Secession, Wien 1909 Widmung Secession, Wien” — read in the Internet Archive’s copy of 2026-01-30: https://web.archive.org/web/20260130032839/https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers"
+        source: belvedere-sammlung-online
+        accessed: 2026-01-30
+  - owner: institution/vienna-secession
+    acquired: 1903
+    method: purchase
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers
+        note: "“Galerie d' Art C. M. van Gogh, Amsterdam. Johanna van Gogh-Bonger. 1903 Secession, Wien 1909 Widmung Secession, Wien” — read in the Internet Archive’s copy of 2026-01-30: https://web.archive.org/web/20260130032839/https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers"
+        source: belvedere-sammlung-online
+        accessed: 2026-01-30
+  - owner: institution/belvedere
+    acquired: 1909
+    method: gift
+    direct: true
+    place: vienna
+    label: given by the Secession (Moderne Galerie)
+    sources:
+      - url: https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers
+        note: "“Galerie d' Art C. M. van Gogh, Amsterdam. Johanna van Gogh-Bonger. 1903 Secession, Wien 1909 Widmung Secession, Wien” — read in the Internet Archive’s copy of 2026-01-30: https://web.archive.org/web/20260130032839/https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers"
+        source: belvedere-sammlung-online
+        accessed: 2026-01-30
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q26221225
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q26221225
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q26221225
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q26221225
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q26221225
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q26221225
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q26221225

@@ -1,5 +1,12 @@
-public_id: "100930"
+public_id: 100930
 name: Kingdom of Italy
+names:
+  - lang: de
+    role: translation
+    text: Königreich Italien
+  - lang: it
+    role: translation
+    text: Regno d'Italia
 kind: country
 location: [12.5, 41.9]
 wikidata_id: Q172579

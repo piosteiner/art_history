@@ -1,0 +1,59 @@
+public_id: 101496
+name: Belvedere
+names:
+  - Osterreichische Gallery
+  - Osterreichische Galerie Belvedere
+  - Austrian National Gallery
+  - Belvedere Gallery
+  - Belvedere Museum
+  - Kaiserlich Königlichen Bilder Gallerie in Wien
+  - lang: nl
+    role: translation
+    text: Österreichische Galerie Belvedere
+  - lang: es
+    role: translation
+    text: Galería Belvedere
+  - lang: ja
+    role: translation
+    text: オーストリア・ギャラリー
+  - lang: zh
+    role: translation
+    text: 奥地利美景宫美术馆
+  - lang: ko
+    role: translation
+    text: 오스트리아 벨베데레 미술관
+  - lang: ru
+    role: translation
+    text: галерея Бельведер
+kind: museum
+founded: 1907
+place: vienna
+location: [16.38083, 48.19139]
+address: Prinz Eugen-Straße 27, 1030 Wien
+website_url: https://www.belvedere.at/
+wikidata_id: Q303139
+metadata:
+  sources: [Wikidata Q303139 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Wien_-_Schloss_Belvedere%2C_oberes_%281%29.JPG/1280px-Wien_-_Schloss_Belvedere%2C_oberes_%281%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Belvedere,_oberes_(1).JPG
+    license: CC BY-SA 4.0
+    credit: C.Stadler/Bwag
+identifiers:
+  bnf: "118798653"
+  gnd: 2165327-6
+  idref: "032148712"
+  viaf: "172476334"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q303139
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q303139
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q303139

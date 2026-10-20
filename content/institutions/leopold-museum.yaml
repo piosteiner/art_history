@@ -1,10 +1,11 @@
-public_id: "100093"
+public_id: 100093
 name: Leopold Museum
+kind: museum
 founded: 2001
 place: vienna
 location: [16.35914, 48.20265]
-address: Museumsplatz 1
-website_url: https://www.leopoldmuseum.org/
+address: Museumsplatz 1, 1070 Wien
+website_url: https://www.leopoldmuseum.org
 wikidata_id: Q59435
 metadata:
   sources: [Wikidata Q59435 (retrieved 2026-10-07)]

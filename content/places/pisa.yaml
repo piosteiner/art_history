@@ -1,0 +1,16 @@
+public_id: 101124
+name: Pisa
+kind: settlement
+location: [10.4, 43.71667]
+wikidata_id: Q13375
+metadata:
+  sources: [Wikidata Q13375 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q13375
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q13375

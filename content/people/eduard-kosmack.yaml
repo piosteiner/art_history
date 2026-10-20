@@ -1,0 +1,36 @@
+public_id: 101560
+name: Eduard Kosmack
+given_name: Eduard
+family_name: Kosmack
+kind: person
+occupations: [publisher, editor]
+birth: 1880
+death: 1947
+wikidata_id: Q104908359
+metadata:
+  sources: [Wikidata Q104908359 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Egon_Schiele_-_Eduard_Kosmack_-_4702_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Egon_Schiele_-_Eduard_Kosmack_-_4702_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Eduard_Kosmack_-_4702_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Egon Schiele
+identifiers:
+  gnd: "1272433544"
+  viaf: "4717166838916336200009"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q104908359
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q104908359
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q104908359
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q104908359

@@ -1,0 +1,168 @@
+public_id: 101144
+title_lang: es
+title: Las lanzas o La rendición de Breda
+names:
+  - lang: es
+    role: alternative
+    text: La rendición de Breda
+  - lang: en
+    role: original
+    text: The Surrender of Breda
+  - La rendicion de Breda
+  - lang: nl
+    role: translation
+    text: De overgave van Breda
+  - lang: fr
+    role: translation
+    text: La Reddition de Bréda
+  - lang: de
+    role: translation
+    text: Die Übergabe von Breda
+  - lang: it
+    role: translation
+    text: Resa di Breda
+  - lang: ja
+    role: translation
+    text: ブレダの開城
+  - lang: zh
+    role: translation
+    text: 布雷達之降
+  - lang: ko
+    role: translation
+    text: 브레다의 항복
+  - lang: ru
+    role: translation
+    text: Сдача Бреды
+parent: battle-series
+creator: diego-velazquez
+created: c. 1635
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [307.3, 371.5]
+institution: museo-del-prado
+inventory_number: P001172
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+description_md: "Painted around 1635 for the Hall of Realms in the Buen Retiro Palace, among the battle paintings of Philip IV’s victories: Justinus of Nassau hands the keys of Breda to Ambrogio Spinola in 1625, before the upright lances of the Spanish army."
+wikidata_id: Q1133420
+metadata:
+  sources: [Wikidata Q1133420 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts
+    to: event/siege-of-breda
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q1133420
+  - type: depicts_person
+    to: person/ambrogio-spinola-1st-marquis-of-the-balbases
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q1133420
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q1133420
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Velazquez-The_Surrender_of_Breda.jpg/1280px-Velazquez-The_Surrender_of_Breda.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Velazquez-The_Surrender_of_Breda.jpg
+    license: Public domain
+    credit: Diego Velázquez
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1701 or earlier
+    place: buen-retiro-palace
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "“Colección Real (Palacio del Buen Retiro, Madrid, 1701, [nº 244]; Palacio Real Nuevo, antecámara de la serenísima infanta, 1772, nº 244; Palacio Real Nuevo, Madrid, pieza de vestir, 1794, nº 244; Palacio Real, Madrid, [1ª] pieza de vestir, 1814-1818, nº 244).” — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
+    records:
+      - date: "1701"
+        note: the number supplied in brackets
+        place: buen-retiro-palace
+        number: "244"
+        number_certainty: probable
+      - date: "1772"
+        room: antecámara de la serenísima infanta
+        place: royal-palace-of-madrid
+        number: "244"
+      - date: "1794"
+        room: pieza de vestir
+        place: royal-palace-of-madrid
+        number: "244"
+      - date: 1814/1818
+        room: "[1ª] pieza de vestir"
+        place: royal-palace-of-madrid
+        number: "244"
+  - owner: institution/museo-del-prado
+    acquired: 1819 or later
+    method: transfer
+    direct: true
+    place: madrid
+    label: the Prado gives no date; after the Royal Palace’s inventory of 1814–1818 (the museum opened in 1819)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+        note: "The Prado gives no date for this. — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+        source: museo-del-prado-coleccion
+        accessed: 2024-11-26
+identifiers:
+  gnd: 4491728-4
+  viaf: "306062542"
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-26
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-26
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-26
+  parent:
+    - accessed: 2026-10-19
+      property: P179
+      wikidata: Q1133420
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-26
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q1133420
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q1133420
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-26
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q1133420
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-26
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q1133420
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-11-26: https://web.archive.org/web/20241126223213/https://www.museodelprado.es/coleccion/obra-de-arte/wd/0cc7577a-51d9-44fd-b4d5-4dba8d9cb13a"
+      source: museo-del-prado-coleccion
+      accessed: 2024-11-26

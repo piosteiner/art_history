@@ -1,0 +1,125 @@
+public_id: 101472
+title_lang: en
+title: Approaching Thunderstorm (The Large Poplar II)
+names:
+  - lang: fr
+    role: translation
+    text: Orage approchant (Le Grand Peuplier II)
+  - lang: de
+    role: translation
+    text: Aufziehendes Gewitter (Die große Pappel II)
+  - lang: ru
+    role: translation
+    text: Большой тополь II
+creator: gustav-klimt
+created: 1903
+dimensions: [100.8, 100.7]
+institution: leopold-museum
+inventory_number: LM 2008
+wikidata_id: Q19912807
+metadata:
+  sources: [Wikidata Q19912807 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Gustav_Klimt_-_Approaching_Thunderstorm_%28The_Large_Poplar_II%29_-_Google_Art_Project.jpg/1280px-Gustav_Klimt_-_Approaching_Thunderstorm_%28The_Large_Poplar_II%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Approaching_Thunderstorm_(The_Large_Poplar_II)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner_label: Therese Flöge, née Paulick
+    ended: 1949
+    place: vienna
+    notes_md: 'On the back of the canvas: "Eigentum der / Frau Therese Flöge-Paulick".'
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+        note: "“Therese Flöge, geb. Paulick, Wien (bis 1949); (1) / Gertrude Flöge, Wien (1949-1971); (2) / Unbekannter Privatbesitz, Seewalchen (1971-1974); / Auktion: 28.05.1974, Dorotheum Wien, 604. Kunstauktion, Los Nr. 330; (3) / Dr. Rudolf Leopold und George McQuire, Wien (1974-1976); (4) / Dr. Rudolf Leopold, Wien (1976-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994).”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Gertrude Flöge
+    acquired: 1949
+    ended: 1971
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+        note: "“Therese Flöge, geb. Paulick, Wien (bis 1949); (1) / Gertrude Flöge, Wien (1949-1971); (2) / Unbekannter Privatbesitz, Seewalchen (1971-1974); / Auktion: 28.05.1974, Dorotheum Wien, 604. Kunstauktion, Los Nr. 330; (3) / Dr. Rudolf Leopold und George McQuire, Wien (1974-1976); (4) / Dr. Rudolf Leopold, Wien (1976-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994).”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Unknown private owner
+    acquired: 1971
+    ended: 1974
+    place: seewalchen-am-attersee
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+        note: "“Therese Flöge, geb. Paulick, Wien (bis 1949); (1) / Gertrude Flöge, Wien (1949-1971); (2) / Unbekannter Privatbesitz, Seewalchen (1971-1974); / Auktion: 28.05.1974, Dorotheum Wien, 604. Kunstauktion, Los Nr. 330; (3) / Dr. Rudolf Leopold und George McQuire, Wien (1974-1976); (4) / Dr. Rudolf Leopold, Wien (1976-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994).”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/dorotheum
+    role: agent
+    numbers:
+      - kind: lot
+        number: "330"
+    acquired: 1974-05-28
+    method: auction
+    place: vienna
+    label: 604th art auction
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+        note: "“Therese Flöge, geb. Paulick, Wien (bis 1949); (1) / Gertrude Flöge, Wien (1949-1971); (2) / Unbekannter Privatbesitz, Seewalchen (1971-1974); / Auktion: 28.05.1974, Dorotheum Wien, 604. Kunstauktion, Los Nr. 330; (3) / Dr. Rudolf Leopold und George McQuire, Wien (1974-1976); (4) / Dr. Rudolf Leopold, Wien (1976-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994).”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1974-05-28
+    method: auction
+    direct: true
+    place: vienna
+    label: jointly with George McGuire
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+        note: "“Therese Flöge, geb. Paulick, Wien (bis 1949); (1) / Gertrude Flöge, Wien (1949-1971); (2) / Unbekannter Privatbesitz, Seewalchen (1971-1974); / Auktion: 28.05.1974, Dorotheum Wien, 604. Kunstauktion, Los Nr. 330; (3) / Dr. Rudolf Leopold und George McQuire, Wien (1974-1976); (4) / Dr. Rudolf Leopold, Wien (1976-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994).”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1976
+    place: vienna
+    label: sole owner
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+        note: "“Therese Flöge, geb. Paulick, Wien (bis 1949); (1) / Gertrude Flöge, Wien (1949-1971); (2) / Unbekannter Privatbesitz, Seewalchen (1971-1974); / Auktion: 28.05.1974, Dorotheum Wien, 604. Kunstauktion, Los Nr. 330; (3) / Dr. Rudolf Leopold und George McQuire, Wien (1974-1976); (4) / Dr. Rudolf Leopold, Wien (1976-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994).”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+        note: "“Therese Flöge, geb. Paulick, Wien (bis 1949); (1) / Gertrude Flöge, Wien (1949-1971); (2) / Unbekannter Privatbesitz, Seewalchen (1971-1974); / Auktion: 28.05.1974, Dorotheum Wien, 604. Kunstauktion, Los Nr. 330; (3) / Dr. Rudolf Leopold und George McQuire, Wien (1974-1976); (4) / Dr. Rudolf Leopold, Wien (1976-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994).”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q19912807
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q19912807
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q19912807
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q19912807
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q19912807
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q19912807

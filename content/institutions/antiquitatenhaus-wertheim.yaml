@@ -1,4 +1,21 @@
-public_id: "101032"
+public_id: 101032
 name: Antiquitätenhaus Wertheim
+kind: antiquirary
+place: berlin
+location: [13.37563, 52.50999]
+address: Berlin W9, Bellevuestrasse 7
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+sources:
+  place:
+    - url: https://digi.ub.uni-heidelberg.de/diglit/wertheim1930_10_01
+      source: digi-ub-uni-heidelberg-de
+      accessed: 2026-10-19
+  address:
+    - url: https://digi.ub.uni-heidelberg.de/diglit/wertheim1930_10_01
+      source: digi-ub-uni-heidelberg-de
+      accessed: 2026-10-19
+  location:
+    - url: https://digi.ub.uni-heidelberg.de/diglit/wertheim1930_10_01
+      source: digi-ub-uni-heidelberg-de
+      accessed: 2026-10-19

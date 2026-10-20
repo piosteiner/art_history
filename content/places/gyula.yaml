@@ -1,0 +1,16 @@
+public_id: 101298
+name: Gyula
+kind: site
+location: [21.28278, 46.65]
+wikidata_id: Q214938
+metadata:
+  sources: [Wikidata Q214938 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q214938
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q214938

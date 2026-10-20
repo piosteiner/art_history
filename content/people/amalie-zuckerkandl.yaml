@@ -1,0 +1,38 @@
+public_id: 101557
+name: Amalie Zuckerkandl
+given_name: Amalie
+family_name: Zuckerkandl
+names:
+  - Amalie Schlesinger
+  - lang: ru
+    role: translation
+    text: Амалия Цукеркандль
+kind: person
+occupations: [physician]
+birth: 1869-08-01
+death: 1942
+wikidata_id: Q98217701
+metadata:
+  sources: [Wikidata Q98217701 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Gustav_Klimt_-_Amalie_Zuckerkandl_-_7700_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_Amalie_Zuckerkandl_-_7700_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Amalie_Zuckerkandl_-_7700_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q98217701
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q98217701
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q98217701
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q98217701

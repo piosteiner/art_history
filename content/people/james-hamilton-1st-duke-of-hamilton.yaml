@@ -1,0 +1,56 @@
+public_id: 101343
+name: James Hamilton, 1st Duke of Hamilton
+names:
+  - lang: nl
+    role: translation
+    text: James Hamilton
+  - lang: it
+    role: translation
+    text: James Hamilton, I duca di Hamilton
+  - lang: ja
+    role: translation
+    text: ジェイムズ・ハミルトン
+  - lang: zh
+    role: translation
+    text: 詹姆斯·漢默頓
+  - lang: ko
+    role: translation
+    text: 제임스 해밀턴
+  - lang: ru
+    role: translation
+    text: Джеймс Гамильтон, 1-й герцог Гамильтон
+kind: person
+occupations: [art collector, politician]
+birth: 1606-06-19
+death: 1649-03-09
+wikidata_id: Q336106
+metadata:
+  sources: [Wikidata Q336106 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/James_Hamilton%2C_third_Marquess_of_Hamilton%2C_by_Anthony_van_Dyck.jpg/1280px-James_Hamilton%2C_third_Marquess_of_Hamilton%2C_by_Anthony_van_Dyck.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:James_Hamilton,_third_Marquess_of_Hamilton,_by_Anthony_van_Dyck.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+identifiers:
+  gnd: "124701930"
+  idref: "234916141"
+  lc: n85029597
+  rkd: "487797"
+  viaf: "60023742"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q336106
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q336106
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q336106
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q336106

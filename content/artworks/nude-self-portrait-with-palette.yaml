@@ -1,0 +1,145 @@
+public_id: 101476
+title_lang: de
+title: Selbstporträt als Akt
+names:
+  - lang: en
+    role: original
+    text: Nude Self-Portrait with Palette
+  - lang: fr
+    role: translation
+    text: Autoportrait nu avec palette
+creator: richard-gerstl
+created: 1908
+materials: [oil paint, canvas]
+dimensions: [139.3, 100]
+institution: leopold-museum
+inventory_number: LM 651
+web_url: http://www.richardgerstl.com/chronology-of-gerstls-works/gmunden-1908-gerstls-suicide/selbstbildnis-akt-in-ganzer-figur
+wikidata_id: Q28797106
+metadata:
+  sources: [Wikidata Q28797106 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Richard_Gerstl_-_Nude_Self-Portrait_with_Palette_-_Google_Art_Project.jpg/1280px-Richard_Gerstl_-_Nude_Self-Portrait_with_Palette_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Richard_Gerstl_-_Nude_Self-Portrait_with_Palette_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Richard Gerstl
+provenance:
+  - owner: artist/richard-gerstl
+    role: estate
+    acquired: 1908
+    method: inheritance
+    place: vienna
+    label: estate of Richard Gerstl
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/650-selbstbildnis-als-akt/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931-1954); (2) / Galerie Würthle, Wien (1954-1966); (3) / Familie Kamm, Zug, Schweiz (1968); (4) / Rudolf Leopold, Wien (1968-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Otto Kallir: Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Archiv des Leopold Museums, Auskunft Leonora Kugler (Kunsthaus Zug) vom 16.07.2019.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: August and Alois Gerstl
+    acquired: 1908
+    ended: 1931
+    method: inheritance
+    direct: true
+    place: vienna
+    label: the painter's brother and father
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/650-selbstbildnis-als-akt/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931-1954); (2) / Galerie Würthle, Wien (1954-1966); (3) / Familie Kamm, Zug, Schweiz (1968); (4) / Rudolf Leopold, Wien (1968-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Otto Kallir: Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Archiv des Leopold Museums, Auskunft Leonora Kugler (Kunsthaus Zug) vom 16.07.2019.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/neue-galerie-vienna
+    role: dealer
+    acquired: 1931
+    ended: 1954
+    method: purchase
+    direct: true
+    place: vienna
+    label: Otto Nirenstein (Kallir) bought 36 paintings from Alois Gerstl
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/650-selbstbildnis-als-akt/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931-1954); (2) / Galerie Würthle, Wien (1954-1966); (3) / Familie Kamm, Zug, Schweiz (1968); (4) / Rudolf Leopold, Wien (1968-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Otto Kallir: Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Archiv des Leopold Museums, Auskunft Leonora Kugler (Kunsthaus Zug) vom 16.07.2019.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - date: "1931"
+        note: “Selbstbildnis (Akt in ganzer Figur)”
+        place: vienna
+        number: "42"
+        document: Nachlassverzeichnis (Otto Nirenstein)
+  - owner: institution/galerie-wurthle
+    role: dealer
+    acquired: 1954
+    ended: 1966
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/650-selbstbildnis-als-akt/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931-1954); (2) / Galerie Würthle, Wien (1954-1966); (3) / Familie Kamm, Zug, Schweiz (1968); (4) / Rudolf Leopold, Wien (1968-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Otto Kallir: Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Archiv des Leopold Museums, Auskunft Leonora Kugler (Kunsthaus Zug) vom 16.07.2019.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: exhibition
+        date: "1956"
+        place: venice
+        number: "1"
+        document: Biennale di Venezia
+      - kind: exhibition
+        date: "1966"
+        place: vienna
+        number: "44"
+        document: Katalog der Secession
+  - owner_label: Kamm family
+    acquired: 1968
+    place: zug
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/650-selbstbildnis-als-akt/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931-1954); (2) / Galerie Würthle, Wien (1954-1966); (3) / Familie Kamm, Zug, Schweiz (1968); (4) / Rudolf Leopold, Wien (1968-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Otto Kallir: Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Archiv des Leopold Museums, Auskunft Leonora Kugler (Kunsthaus Zug) vom 16.07.2019.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1968
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/650-selbstbildnis-als-akt/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931-1954); (2) / Galerie Würthle, Wien (1954-1966); (3) / Familie Kamm, Zug, Schweiz (1968); (4) / Rudolf Leopold, Wien (1968-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Otto Kallir: Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Archiv des Leopold Museums, Auskunft Leonora Kugler (Kunsthaus Zug) vom 16.07.2019.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/650-selbstbildnis-als-akt/
+        note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931-1954); (2) / Galerie Würthle, Wien (1954-1966); (3) / Familie Kamm, Zug, Schweiz (1968); (4) / Rudolf Leopold, Wien (1968-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Otto Kallir: Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Archiv des Leopold Museums, Auskunft Leonora Kugler (Kunsthaus Zug) vom 16.07.2019.”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28797106
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28797106
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28797106
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q28797106
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28797106
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28797106
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28797106

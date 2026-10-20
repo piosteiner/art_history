@@ -1,0 +1,68 @@
+public_id: 101431
+title: Portrait of a Lady with Cape and Hat
+creator: gustav-klimt
+created: c. 1897
+materials: [black chalk, red chalk, paper]
+institution: albertina
+inventory_number: "36058"
+wikidata_id: Q18685951
+metadata:
+  sources: [Wikidata Q18685951 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Gustav_Klimt_-_Portrait_of_a_Lady_with_Cape_and_Hat%2C_1897-1898_-_Google_Art_Project.jpg/1280px-Gustav_Klimt_-_Portrait_of_a_Lady_with_Cape_and_Hat%2C_1897-1898_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Portrait_of_a_Lady_with_Cape_and_Hat,_1897-1898_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: person/karol-lanckoronski
+    ended: 1933
+    place: vienna
+    certainty: probable
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/1990/bildnis-einer-dame-mit-cape-und-hut
+        note: “vermutlich bis 1933 Karl Lanckoroński-Brzezie, Wien / vermutlich ab 1933 Karolina (1898-2002) und Adelheid Lanckorońska (1903-1980), Wien (als Erbinnen von Karl Lanckoroński, Wien) / 1971 Albertina, Wien (erworben von Karolina und Adelheid Lanckorońska, Wien)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/karolina-lanckoronska
+    acquired: 1933
+    method: inheritance
+    direct: true
+    place: vienna
+    label: with her sister Adelheid Lanckorońska, as heirs of Karl Lanckoroński
+    certainty: probable
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/1990/bildnis-einer-dame-mit-cape-und-hut
+        note: “vermutlich bis 1933 Karl Lanckoroński-Brzezie, Wien / vermutlich ab 1933 Karolina (1898-2002) und Adelheid Lanckorońska (1903-1980), Wien (als Erbinnen von Karl Lanckoroński, Wien) / 1971 Albertina, Wien (erworben von Karolina und Adelheid Lanckorońska, Wien)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1971
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/1990/bildnis-einer-dame-mit-cape-und-hut
+        note: “vermutlich bis 1933 Karl Lanckoroński-Brzezie, Wien / vermutlich ab 1933 Karolina (1898-2002) und Adelheid Lanckorońska (1903-1980), Wien (als Erbinnen von Karl Lanckoroński, Wien) / 1971 Albertina, Wien (erworben von Karolina und Adelheid Lanckorońska, Wien)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+sources:
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q18685951
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q18685951
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q18685951
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q18685951
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q18685951

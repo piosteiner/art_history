@@ -1,0 +1,18 @@
+public_id: 101430
+name: Gustav Klimt
+given_name: Gustav
+family_name: Klimt
+birth: 1862-07-14
+death: 1918-02-06
+wikidata_id: Q34661
+metadata:
+  sources: [Wikidata Q34661 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q34661
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q34661

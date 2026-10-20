@@ -1,0 +1,43 @@
+public_id: 101491
+name: Wolfgang Gurlitt
+given_name: Wolfgang
+family_name: Gurlitt
+names:
+  - lang: ru
+    role: translation
+    text: Вольфганг Гурлитт
+kind: person
+occupations: [art dealer, publisher, art collector, gallerist]
+birth: 1888-02-15
+death: 1965-03-26
+wikidata_id: Q89304
+metadata:
+  sources: [Wikidata Q89304 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Lovis_Corinth_Portr%C3%A4t_Wolfgang_Gurlitt_1917.jpg/1280px-Lovis_Corinth_Portr%C3%A4t_Wolfgang_Gurlitt_1917.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lovis_Corinth_Portr%C3%A4t_Wolfgang_Gurlitt_1917.jpg
+    license: Public domain
+    credit: Lovis Corinth
+identifiers:
+  gnd: "116930802"
+  idref: "242540058"
+  lc: no2001091361
+  rkd: "446062"
+  viaf: "22905857"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q89304
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q89304
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q89304
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q89304

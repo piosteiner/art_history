@@ -1,0 +1,57 @@
+public_id: 101204
+name: 1878 Paris World's Fair
+names:
+  - World's Fair of 1878
+  - 1878 World's Fair
+  - Expo 1878
+  - Paris Universal Exposition of 1878
+  - lang: nl
+    role: translation
+    text: Exposition Universelle in 1878
+  - lang: fr
+    role: translation
+    text: Exposition universelle de 1878
+  - lang: de
+    role: translation
+    text: Weltausstellung Paris 1878
+  - lang: it
+    role: translation
+    text: Esposizione Universale del 1878
+  - lang: es
+    role: translation
+    text: Exposición Universal de París de 1878
+  - lang: ja
+    role: translation
+    text: 1878年パリ万国博覧会
+  - lang: zh
+    role: translation
+    text: 1878年巴黎世界博覽會
+  - lang: ru
+    role: translation
+    text: Всемирная выставка 1878 года
+period: 1878
+place: paris
+location: [2.28825, 48.86222]
+wikidata_id: Q1165690
+metadata:
+  sources: [Wikidata Q1165690 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/The_Trocadero%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg/1280px-The_Trocadero%2C_Exposition_Universal%2C_1900%2C_Paris%2C_France.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Trocadero,_Exposition_Universal,_1900,_Paris,_France.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: 805476-9
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P276
+      wikidata: Q1165690
+  period:
+    - accessed: 2026-10-19
+      property: P585
+      wikidata: Q1165690
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q1165690

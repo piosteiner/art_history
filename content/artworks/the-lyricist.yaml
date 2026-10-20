@@ -1,0 +1,93 @@
+public_id: 101464
+title_lang: en
+title: The Lyricist
+names:
+  - Lyricist
+  - lang: de
+    role: translation
+    text: „Der Lyriker”
+creator: egon-schiele
+created: 1911
+materials: [oil paint, canvas]
+dimensions: [80.5, 80]
+institution: leopold-museum
+inventory_number: LM 450
+web_url: https://onlinecollection.leopoldmuseum.org/en/object/524-lyricist/
+wikidata_id: Q28797697
+metadata:
+  sources: [Wikidata Q28797697 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Egon_Schiele_-_The_Lyricist_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_The_Lyricist_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_The_Lyricist_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: artist/egon-schiele
+    role: estate
+    acquired: 1918
+    method: inheritance
+    place: vienna
+    label: estate of Egon Schiele
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/524-lyriker/
+        note: “Nachlass Egon Schiele, Wien (1918); / Arthur Stemmer, Wien / London (vor 1930-1954); (1) / Dr. Rudolf Leopold, Wien (1954-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/arthur-stemmer
+    further_places: [london]
+    acquired: before 1930
+    ended: 1954
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/524-lyriker/
+        note: “Nachlass Egon Schiele, Wien (1918); / Arthur Stemmer, Wien / London (vor 1930-1954); (1) / Dr. Rudolf Leopold, Wien (1954-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: 1954
+    direct: true
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/524-lyriker/
+        note: “Nachlass Egon Schiele, Wien (1918); / Arthur Stemmer, Wien / London (vor 1930-1954); (1) / Dr. Rudolf Leopold, Wien (1954-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/524-lyriker/
+        note: “Nachlass Egon Schiele, Wien (1918); / Arthur Stemmer, Wien / London (vor 1930-1954); (1) / Dr. Rudolf Leopold, Wien (1954-1994); (2) / Leopold Museum-Privatstiftung, Wien (1994).”
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28797697
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28797697
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28797697
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q28797697
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28797697
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28797697
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28797697

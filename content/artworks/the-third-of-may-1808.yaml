@@ -1,0 +1,169 @@
+public_id: 101141
+title_lang: es
+title: El 3 de mayo en Madrid o "Los fusilamientos"
+names:
+  - lang: es
+    role: alternative
+    text: El 3 de mayo en Madrid
+  - lang: en
+    role: original
+    text: The Third of May, 1808
+  - lang: en
+    role: original
+    text: The Third of May 1808
+  - lang: nl
+    role: translation
+    text: El tres de mayo de 1808 en Madrid
+  - lang: fr
+    role: translation
+    text: Tres de mayo
+  - lang: de
+    role: translation
+    text: Die Erschießung der Aufständischen
+  - lang: it
+    role: translation
+    text: 3 maggio 1808
+  - lang: ja
+    role: translation
+    text: マドリード、1808年5月3日
+  - lang: zh
+    role: translation
+    text: 1808年5月3日
+  - lang: ko
+    role: translation
+    text: 1808년 5월 3일
+  - lang: ru
+    role: translation
+    text: Третье мая 1808 года в Мадриде
+parent: the-second-and-third-of-may-1808
+part_number: "2"
+creator: francisco-goya
+created: 1814
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [268, 347]
+institution: museo-del-prado
+inventory_number: P000749
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+description_md: "Painted in 1814 with its companion, the Second of May, after the French had left Madrid: the execution of Madrilenians by French soldiers on the night after the uprising of 2 May 1808. The man in the white shirt, arms raised before the firing squad, became an image of the victims of war."
+wikidata_id: Q1091086
+metadata:
+  sources: [Wikidata Q1091086 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts
+    to: event/dos-de-mayo-uprising
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q1091086
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q1091086
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Francisco_de_Goya_y_Lucientes_-_Los_fusilamientos_del_tres_de_mayo_-_1814.jpg/1280px-Francisco_de_Goya_y_Lucientes_-_Los_fusilamientos_del_tres_de_mayo_-_1814.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francisco_de_Goya_y_Lucientes_-_Los_fusilamientos_del_tres_de_mayo_-_1814.jpg
+    license: Public domain
+    credit: Francisco Goya
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1814
+    ended: before 1834
+    place: royal-palace-of-madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: "“Palacio Real, Madrid, 1814;” — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
+    records:
+      - kind: other
+        date: "1814"
+        note: in the Royal Palace
+        place: royal-palace-of-madrid
+  - owner: institution/museo-del-prado
+    acquired: before 1834
+    method: transfer
+    direct: true
+    place: madrid
+    label: in the Prado’s catalogue from 1872
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+        note: '“ingresó en el Museo del Prado antes de 1834, registrándose en ese año en el "Depósito Grande"; en 1840 visto por Théophile Gautier en las salas del Museo; … se incorpora finalmente al catálogo del Prado de 1872.” — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c'
+        source: museo-del-prado-coleccion
+        accessed: 2025-01-23
+    records:
+      - date: "1834"
+        note: the store
+        room: Depósito Grande
+        place: madrid
+        document: inventory of the Museo del Prado
+      - kind: sighting
+        date: "1840"
+        note: in the galleries
+        place: madrid
+        document: Théophile Gautier (described in Voyage en Espagne, 1843)
+      - kind: sighting
+        date: "1850"
+        place: madrid
+        document: comte Clément de Ris
+      - kind: other
+        date: "1867"
+        note: illustrated
+        document: Charles Yriarte, Goya (monograph)
+      - kind: catalogue
+        date: "1872"
+        place: madrid
+        document: catalogue of the Museo del Prado
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+      source: museo-del-prado-coleccion
+      accessed: 2025-01-23
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+      source: museo-del-prado-coleccion
+      accessed: 2025-01-23
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+      source: museo-del-prado-coleccion
+      accessed: 2025-01-23
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+      source: museo-del-prado-coleccion
+      accessed: 2025-01-23
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q1091086
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q1091086
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+      source: museo-del-prado-coleccion
+      accessed: 2025-01-23
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q1091086
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+      source: museo-del-prado-coleccion
+      accessed: 2025-01-23
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q1091086
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-01-23: https://web.archive.org/web/20250123040925/https://www.museodelprado.es/coleccion/obra-de-arte/wd/5e177409-2993-4240-97fb-847a02c6496c"
+      source: museo-del-prado-coleccion
+      accessed: 2025-01-23

@@ -1,0 +1,26 @@
+public_id: 101567
+name: Galerie Welz
+names: [Friedrich Welz]
+place: salzburg
+location: [13.04379, 47.7986]
+address: Sigmund-Haffner-Gasse 16, 5020 Salzburg
+website_url: https://galerie-welz.at/
+wikidata_id: Q109333033
+metadata:
+  sources: [Wikidata Q109333033 (retrieved 2026-10-20)]
+identifiers:
+  idref: "069788324"
+  viaf: "121660573"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q109333033
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q109333033
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q109333033

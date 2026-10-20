@@ -1,0 +1,37 @@
+public_id: 101331
+name: Nicolaes Jonghelinck
+names:
+  - Nicolaas Jonghelinck
+  - Niclaes Jonghelinck
+  - Nicholas Jongelink
+  - lang: ja
+    role: translation
+    text: ニコラース・ヨンゲリンク
+kind: person
+occupations: [banker, patron of the arts, art collector, merchant]
+birth: c. 1517
+death: 1570
+wikidata_id: Q1768402
+metadata:
+  sources: [Wikidata Q1768402 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "1185722726"
+  ulan: "500121903"
+  viaf: "96580456"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1768402
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q1768402
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q1768402
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q1768402

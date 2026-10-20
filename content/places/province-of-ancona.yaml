@@ -1,0 +1,16 @@
+public_id: 101125
+name: Province of Ancona
+kind: site
+location: [13.51667, 43.61667]
+wikidata_id: Q16114
+metadata:
+  sources: [Wikidata Q16114 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q16114
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q16114

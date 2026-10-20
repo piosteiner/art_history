@@ -1,0 +1,109 @@
+public_id: 101529
+title_lang: de
+title: Fritza Riedler
+names:
+  - lang: en
+    role: original
+    text: Portrait of Fritza Riedler
+  - lang: fr
+    role: translation
+    text: Portrait de Fritza Riedler
+  - lang: it
+    role: translation
+    text: Ritratto di Fritza Riedler
+  - lang: es
+    role: translation
+    text: Retrato de Fritza Riedler
+  - lang: ru
+    role: translation
+    text: Портрет Фритцы Ридлер
+creator: gustav-klimt
+created: 1906
+materials: [oil paint, canvas]
+dimensions: [153, 133]
+institution: belvedere
+inventory_number: "3379"
+wikidata_id: Q28001663
+metadata:
+  sources: [Wikidata Q28001663 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Gustav_Klimt_-_Fritza_Riedler_-_3379_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Gustav_Klimt_-_Fritza_Riedler_-_3379_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Fritza_Riedler_-_3379_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner_label: Fritza Riedler
+    acquired: 1906
+    ended: 1927
+    method: purchase
+    place: vienna
+    label: the sitter
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2177/fritza-riedler
+        note: "“1906–1927, Ankauf, Fritza Riedler, Wien [1] 1927–1936, Übernahme, Aloys Riedler, Wien [2] 1936/37, Übernahme, Emilie Barbara Langer, Wien [3] 1937, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–1914, 1. Lieferung (1908), Taf. 7, Weibliches Bildnis (Besitzer: Frau Geh. Rat Fritza Riedler, Berlin). [2] Übernahme im Erbweg von Fritza Riedler. [3] Übernahme im Erbweg von Aloys Riedler. Tobias G. Natter / Gerbert Frodl (Hg.), Klimt und die Frauen (Ausst.-Kat. Belvedere, Wien), Köln 2000, S. 114. [4] Archiv des Belvedere, Wien, Zl. 588/1937; Erwerbungsakt, Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-15: https://web.archive.org/web/20260815052300/https://sammlung.belvedere.at/objects/2177/fritza-riedler"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-15
+  - owner_label: Aloys Riedler
+    acquired: 1927
+    ended: 1936
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2177/fritza-riedler
+        note: "“1906–1927, Ankauf, Fritza Riedler, Wien [1] 1927–1936, Übernahme, Aloys Riedler, Wien [2] 1936/37, Übernahme, Emilie Barbara Langer, Wien [3] 1937, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–1914, 1. Lieferung (1908), Taf. 7, Weibliches Bildnis (Besitzer: Frau Geh. Rat Fritza Riedler, Berlin). [2] Übernahme im Erbweg von Fritza Riedler. [3] Übernahme im Erbweg von Aloys Riedler. Tobias G. Natter / Gerbert Frodl (Hg.), Klimt und die Frauen (Ausst.-Kat. Belvedere, Wien), Köln 2000, S. 114. [4] Archiv des Belvedere, Wien, Zl. 588/1937; Erwerbungsakt, Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-15: https://web.archive.org/web/20260815052300/https://sammlung.belvedere.at/objects/2177/fritza-riedler"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-15
+  - owner_label: Emilie Barbara Langer
+    acquired: 1936/1937
+    ended: 1937
+    method: inheritance
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2177/fritza-riedler
+        note: "“1906–1927, Ankauf, Fritza Riedler, Wien [1] 1927–1936, Übernahme, Aloys Riedler, Wien [2] 1936/37, Übernahme, Emilie Barbara Langer, Wien [3] 1937, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–1914, 1. Lieferung (1908), Taf. 7, Weibliches Bildnis (Besitzer: Frau Geh. Rat Fritza Riedler, Berlin). [2] Übernahme im Erbweg von Fritza Riedler. [3] Übernahme im Erbweg von Aloys Riedler. Tobias G. Natter / Gerbert Frodl (Hg.), Klimt und die Frauen (Ausst.-Kat. Belvedere, Wien), Köln 2000, S. 114. [4] Archiv des Belvedere, Wien, Zl. 588/1937; Erwerbungsakt, Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-15: https://web.archive.org/web/20260815052300/https://sammlung.belvedere.at/objects/2177/fritza-riedler"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-15
+  - owner: institution/belvedere
+    acquired: 1937
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    price:
+      amount: 4000
+      currency: ATS
+    sources:
+      - url: https://sammlung.belvedere.at/objects/2177/fritza-riedler
+        note: "“1906–1927, Ankauf, Fritza Riedler, Wien [1] 1927–1936, Übernahme, Aloys Riedler, Wien [2] 1936/37, Übernahme, Emilie Barbara Langer, Wien [3] 1937, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–1914, 1. Lieferung (1908), Taf. 7, Weibliches Bildnis (Besitzer: Frau Geh. Rat Fritza Riedler, Berlin). [2] Übernahme im Erbweg von Fritza Riedler. [3] Übernahme im Erbweg von Aloys Riedler. Tobias G. Natter / Gerbert Frodl (Hg.), Klimt und die Frauen (Ausst.-Kat. Belvedere, Wien), Köln 2000, S. 114. [4] Archiv des Belvedere, Wien, Zl. 588/1937; Erwerbungsakt, Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-15: https://web.archive.org/web/20260815052300/https://sammlung.belvedere.at/objects/2177/fritza-riedler"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-15
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28001663
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28001663
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28001663
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28001663
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28001663
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28001663
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28001663

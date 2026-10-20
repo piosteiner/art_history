@@ -1,0 +1,137 @@
+public_id: 101176
+title_lang: es
+title: Los borrachos, o El triunfo de Baco
+names:
+  - lang: en
+    role: alternative
+    text: The Triumph of Bacchus
+  - lang: fr
+    role: translation
+    text: Le Triomphe de Bacchus
+  - lang: de
+    role: translation
+    text: Der Triumph des Bacchus
+  - lang: it
+    role: translation
+    text: Trionfo di Bacco
+  - lang: es
+    role: translation
+    text: El triunfo de Baco
+  - lang: ja
+    role: translation
+    text: バッカスの勝利
+  - lang: zh
+    role: translation
+    text: 酒神巴庫斯
+  - lang: ru
+    role: translation
+    text: Триумф Бахуса
+creator: diego-velazquez
+created: 1628/1629
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [165, 225]
+institution: museo-del-prado
+inventory_number: P001170
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+description_md: "Velázquez’s first mythology, painted in 1628–29 before his first journey to Italy: Bacchus crowns a kneeling soldier among a group of peasant drinkers who grin out at the viewer."
+wikidata_id: Q123935
+metadata:
+  sources: [Wikidata Q123935 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Vel%C3%A1zquez_-_El_Triunfo_de_Baco_o_Los_Borrachos_%28Museo_del_Prado%2C_1628-29%29.jpg/1280px-Vel%C3%A1zquez_-_El_Triunfo_de_Baco_o_Los_Borrachos_%28Museo_del_Prado%2C_1628-29%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vel%C3%A1zquez_-_El_Triunfo_de_Baco_o_Los_Borrachos_(Museo_del_Prado,_1628-29).jpg
+    license: Public domain
+    credit: Diego Velázquez
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1700 or earlier
+    place: royal-alcazar-of-madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "“Colección Real (Real Alcázar, Madrid, galería del Cierzo, 1700, nº 179; Palacio Real Nuevo, Madrid, paso de tribuna y trascuartos, 1772, nº 197[dupl.]; Palacio Real Nuevo, Madrid, pieza de trucos, 1794, nº 197; Palacio Real, Madrid, pieza de trucos, 1814-1818, nº 197).” — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
+    records:
+      - date: "1700"
+        room: galería del Cierzo
+        place: royal-alcazar-of-madrid
+        number: "179"
+      - date: "1772"
+        note: the number given twice ([dupl.])
+        room: paso de tribuna y trascuartos
+        place: royal-palace-of-madrid
+        number: "197"
+      - date: "1794"
+        room: pieza de trucos
+        place: royal-palace-of-madrid
+        number: "197"
+      - date: 1814/1818
+        room: pieza de trucos
+        place: royal-palace-of-madrid
+        number: "197"
+  - owner: institution/museo-del-prado
+    acquired: 1819 or later
+    method: transfer
+    direct: true
+    place: madrid
+    label: the Prado gives no date; after the Royal Palace’s inventory of 1814–1818 (the museum opened in 1819)
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+        note: "The Prado gives no date for this. — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+        source: museo-del-prado-coleccion
+        accessed: 2024-06-03
+identifiers:
+  gnd: 4360522-9
+  viaf: "178339097"
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+      source: museo-del-prado-coleccion
+      accessed: 2024-06-03
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+      source: museo-del-prado-coleccion
+      accessed: 2024-06-03
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+      source: museo-del-prado-coleccion
+      accessed: 2024-06-03
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+      source: museo-del-prado-coleccion
+      accessed: 2024-06-03
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q123935
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q123935
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+      source: museo-del-prado-coleccion
+      accessed: 2024-06-03
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q123935
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+      source: museo-del-prado-coleccion
+      accessed: 2024-06-03
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q123935
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2024-06-03: https://web.archive.org/web/20240603234018/https://www.museodelprado.es/coleccion/obra-de-arte/wd/4a23d5e2-9fd4-496b-806b-0f8ba913b3d8"
+      source: museo-del-prado-coleccion
+      accessed: 2024-06-03

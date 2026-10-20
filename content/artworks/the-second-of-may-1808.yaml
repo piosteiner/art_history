@@ -1,0 +1,152 @@
+public_id: 101169
+title_lang: es
+title: El 2 de mayo de 1808 en Madrid o "La lucha con los mamelucos"
+names:
+  - lang: es
+    role: alternative
+    text: El dos de mayo de 1808 en Madrid
+  - lang: es
+    role: original
+    text: La carga de los mamelucos
+  - lang: en
+    role: translation
+    text: The Second of May 1808
+  - lang: nl
+    role: translation
+    text: Dos de Mayo
+  - lang: de
+    role: translation
+    text: Kampf mit den Mamelucken am 2. Mai 1808 in Madrid
+  - lang: it
+    role: translation
+    text: 2 maggio 1808
+  - lang: ja
+    role: translation
+    text: 1808年5月2日、エジプト人親衛隊との戦闘
+  - lang: zh
+    role: translation
+    text: 1808年5月2日
+  - lang: ko
+    role: translation
+    text: 1808년 5월 2일
+  - lang: ru
+    role: translation
+    text: Восстание 2 мая 1808 года в Мадриде
+parent: the-second-and-third-of-may-1808
+part_number: "1"
+creator: francisco-goya
+created: 1814
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [268.5, 347.5]
+institution: museo-del-prado
+inventory_number: P000748
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+description_md: "The uprising of the people of Madrid against Napoleon’s troops on 2 May 1808, at the Puerta del Sol: Madrilenians attack the Mamluk cavalry of the Imperial Guard. Goya painted it in 1814 with its companion, the Third of May."
+wikidata_id: Q2983399
+metadata:
+  sources: [Wikidata Q2983399 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/El_dos_de_mayo_de_1808_en_Madrid.jpg/1280px-El_dos_de_mayo_de_1808_en_Madrid.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_dos_de_mayo_de_1808_en_Madrid.jpg
+    license: Public domain
+    credit: Francisco Goya
+provenance:
+  - owner: institution/spanish-royal-collection
+    acquired: 1814
+    ended: before 1834
+    place: royal-palace-of-madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+        note: "“Palacio Real, Madrid, 1814;” — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1"
+        source: museo-del-prado-coleccion
+        accessed: 2025-05-28
+    records:
+      - kind: other
+        date: "1814"
+        note: in the Royal Palace
+        place: royal-palace-of-madrid
+  - owner: institution/museo-del-prado
+    acquired: before 1834
+    method: transfer
+    direct: true
+    place: madrid
+    label: in the Prado’s catalogue from 1872
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+        note: '“ingresó en el Museo del Prado antes de 1834, registrándose en ese año en el "Depósito Grande"; en 1840 visto por Théophile Gautier en las salas del Museo; … se incorpora finalmente al catálogo del Prado de 1872.” — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1'
+        source: museo-del-prado-coleccion
+        accessed: 2025-05-28
+    records:
+      - date: "1834"
+        note: the store
+        room: Depósito Grande
+        place: madrid
+        document: inventory of the Museo del Prado
+      - kind: sighting
+        date: "1840"
+        note: in the galleries
+        place: madrid
+        document: Théophile Gautier
+      - kind: sighting
+        date: "1850"
+        place: madrid
+        document: comte Clément de Ris
+      - kind: other
+        date: "1867"
+        document: Charles Yriarte, Goya (monograph)
+      - kind: catalogue
+        date: "1872"
+        place: madrid
+        document: catalogue of the Museo del Prado
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1"
+      source: museo-del-prado-coleccion
+      accessed: 2025-05-28
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1"
+      source: museo-del-prado-coleccion
+      accessed: 2025-05-28
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1"
+      source: museo-del-prado-coleccion
+      accessed: 2025-05-28
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1"
+      source: museo-del-prado-coleccion
+      accessed: 2025-05-28
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2983399
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2983399
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1"
+      source: museo-del-prado-coleccion
+      accessed: 2025-05-28
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2983399
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1"
+      source: museo-del-prado-coleccion
+      accessed: 2025-05-28
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2983399
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2025-05-28: https://web.archive.org/web/20250528081954/https://www.museodelprado.es/coleccion/obra-de-arte/wd/57dacf2e-5d10-4ded-85aa-9ff6f741f6b1"
+      source: museo-del-prado-coleccion
+      accessed: 2025-05-28

@@ -1,0 +1,49 @@
+public_id: 101439
+name: Pierre-Jean Mariette
+given_name: Pierre-Jean
+family_name: Mariette
+names:
+  - Pierre Jean Mariette
+  - M. Mariette
+  - Jean-Pierre Mariette
+  - lang: ru
+    role: translation
+    text: Пьер-Жан Мариетт
+kind: person
+occupations: [art collector, art historian, printseller, printer, publisher, collector, book printer]
+birth: 1694-05-07
+death: 1774-09-10
+wikidata_id: Q322341
+metadata:
+  sources: [Wikidata Q322341 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Portrait_of_Pierre-Jean_Mariette_MET_DP828981.jpg/1280px-Portrait_of_Pierre-Jean_Mariette_MET_DP828981.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Pierre-Jean_Mariette_MET_DP828981.jpg
+    license: CC0
+    credit: Augustin de Saint-Aubin / Charles-Nicolas Cochin / Pierre-Jean Mariette
+identifiers:
+  bnf: "119145759"
+  gnd: "123185823"
+  idref: "027010007"
+  kulturnav: 72ccbba4-72f7-479d-a5cf-9dfa58500829
+  lc: n50040799
+  rkd: "52624"
+  ulan: "500013510"
+  viaf: "59086225"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q322341
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q322341
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q322341
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q322341

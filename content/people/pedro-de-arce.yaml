@@ -1,0 +1,28 @@
+public_id: 101226
+name: Pedro de Arce
+given_name: Pedro
+family_name: de Arce
+kind: person
+occupations: [aristocrat]
+birth: 1607
+death: 1678
+wikidata_id: Q18384732
+metadata:
+  sources: [Wikidata Q18384732 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q18384732
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q18384732
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q18384732
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q18384732

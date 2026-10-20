@@ -1,0 +1,45 @@
+public_id: 101454
+name: Galerie Miethke
+names:
+  - Miethke & Wawra
+  - Miethke
+  - lang: ja
+    role: translation
+    text: ミートケ画廊
+  - lang: ru
+    role: translation
+    text: галерея Митке
+founded: 1861
+dissolved: 1940
+place: vienna
+location: [16.36928, 48.20718]
+address: Dorotheergasse 11, 1010 Wien
+wikidata_id: Q1257640
+metadata:
+  sources: [Wikidata Q1257640 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4760108-5
+  idref: "154187909"
+  lc: nr2004035718
+  viaf: "138045091"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q1257640
+  address:
+    - accessed: 2026-10-19
+      property: P6375
+      wikidata: Q1257640
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q1257640
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q1257640
+  dissolved:
+    - accessed: 2026-10-19
+      property: P576
+      wikidata: Q1257640

@@ -1,0 +1,119 @@
+public_id: 101323
+title_lang: nl
+title: Het pelsken
+names:
+  - lang: en
+    role: original
+    text: Helena Fourment in a Fur Robe
+  - lang: fr
+    role: translation
+    text: Hélène Fourment sortant du bain
+  - lang: de
+    role: translation
+    text: Helena Fourment ("Das Pelzchen")
+  - lang: it
+    role: translation
+    text: Hélène Fourment esce dal bagno
+  - lang: es
+    role: translation
+    text: Helena Fourment saliendo del baño
+  - lang: ja
+    role: translation
+    text: 毛皮をまとったエレーヌ・フールマン
+  - lang: ru
+    role: translation
+    text: Шубка (картина Рубенса)
+creator: peter-paul-rubens
+created: 1638
+materials: [oil paint, panel]
+dimensions: [176, 83]
+institution: kunsthistorisches-museum
+inventory_number: GG_688
+wikidata_id: Q3788158
+metadata:
+  sources: [Wikidata Q3788158 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2e/Peter_Paul_Rubens_019.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_019.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+provenance:
+  - owner: artist/peter-paul-rubens
+    method: creation
+    place: antwerp
+    sources:
+      - url: https://www.khm.at/kunstwerke/helena-fourment-das-pelzchen-1637
+        note: “1640 im Testament von Peter Paul Rubens erwähnt; 1658 im Testament von Helena Fourment genannt; 1730 in der Galerie in Wien nachweisbar;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: document
+        date: "1640"
+        place: antwerp
+        document: Rubens's will
+  - owner: person/helena-fourment
+    acquired: 1640
+    method: bequest
+    direct: true
+    place: antwerp
+    sources:
+      - url: https://www.khm.at/kunstwerke/helena-fourment-das-pelzchen-1637
+        note: “1640 im Testament von Peter Paul Rubens erwähnt; 1658 im Testament von Helena Fourment genannt; 1730 in der Galerie in Wien nachweisbar;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: document
+        date: "1658"
+        document: Helena Fourment's will
+  - owner: institution/habsburg-imperial-collection
+    acquired: 1730 or earlier
+    place: vienna
+    sources:
+      - url: https://www.khm.at/kunstwerke/helena-fourment-das-pelzchen-1637
+        note: “1640 im Testament von Peter Paul Rubens erwähnt; 1658 im Testament von Helena Fourment genannt; 1730 in der Galerie in Wien nachweisbar;”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: document
+        date: "1730"
+        note: documented in the gallery in Vienna
+        place: vienna
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q3788158
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q3788158
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q3788158
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q3788158
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q3788158
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q3788158
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q3788158

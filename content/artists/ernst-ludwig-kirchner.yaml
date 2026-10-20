@@ -1,0 +1,18 @@
+public_id: 101473
+name: Ernst Ludwig Kirchner
+given_name: Ernst Ludwig
+family_name: Kirchner
+birth: 1880-05-06
+death: 1938-06-15
+wikidata_id: Q229272
+metadata:
+  sources: [Wikidata Q229272 (retrieved 2026-10-19)]
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q229272
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q229272

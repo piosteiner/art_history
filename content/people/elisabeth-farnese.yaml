@@ -1,0 +1,90 @@
+public_id: 101216
+name: Elisabeth Farnese
+names:
+  - lang: es
+    role: original
+    text: Isabel de Farnesio
+  - Elisabetta Farnese
+  - Reina Isabel de Farnesio España
+  - Elisabetta Regina di Spagna
+  - regina consorte di Felipe V, re di Spagna Isabel Farnese
+  - Queen of Spain Elisabetta Farnese
+  - Elizabeth, consort of Philip V, King of Spain Farnese
+  - Elisabetta, Queen of Spain Farnese
+  - consort of Philip V, King of Spain Elisabeth Farnese
+  - Isabel, consort of Philip V, King of Spain Farnese
+  - Isabella of Parma
+  - Doña Isabella Farnese
+  - Isabella Farnese Reina de España
+  - S. M., Doña Isabella Farnese
+  - S. M. Isabel Farnese
+  - Reina de España Isabel Farnese
+  - consort of Philip V, King of Spain Elizabeth Farnese
+  - Isabel Farnesio
+  - Queen of Spain Elisabeth Farnese
+  - S. M., Doña Isabella Farnese Reina de España
+  - Doña Isabel Farnese
+  - Queen consort of Philip V Elizabeth Farnese
+  - reine d'Espagne Elisabeth Farnèse
+  - Doña Isabella Farnese Reina de España
+  - Doña Isabel Farnese Reina de España
+  - S. M. Isabella Farnese Reina de España
+  - Elisabetta, consort of Philip V, King of Spain Farnese
+  - Queen of Spain Elizabeth
+  - S. M., Doña Isabel Farnese
+  - consort of Philip V, King of Spain Isabel de Farnesio
+  - S. M., Doña Isabel Farnese Reina de España
+  - Elisabeth, consort of Philip V, King of Spain Farnese
+  - S. M. Isabel Farnese Reina de España
+  - Queen of Spain Isabella Farnese
+  - lang: fr
+    role: translation
+    text: Élisabeth Farnèse
+  - lang: ja
+    role: translation
+    text: エリザベッタ・ファルネーゼ
+  - lang: zh
+    role: translation
+    text: 埃麗莎貝塔·法爾內塞
+  - lang: ko
+    role: translation
+    text: 이사벨 디 파르네시오
+  - lang: ru
+    role: translation
+    text: Изабелла Фарнезе
+kind: person
+occupations: [aristocrat]
+birth: 1692-10-25
+death: 1766-07-11
+wikidata_id: Q229867
+metadata:
+  sources: [Wikidata Q229867 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Isabel_de_Farnesio.jpg/1280px-Isabel_de_Farnesio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Isabel_de_Farnesio.jpg
+    license: Public domain
+    credit: Louis-Michel van Loo
+identifiers:
+  bnf: 12252969r
+  gnd: "119151804"
+  idref: "060812419"
+  lc: nr97022036
+  ulan: "500039510"
+  viaf: "36824642"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q229867
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q229867
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q229867
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q229867

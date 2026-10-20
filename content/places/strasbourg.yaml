@@ -1,0 +1,16 @@
+public_id: 101276
+name: Strasbourg
+kind: settlement
+location: [7.75222, 48.57333]
+wikidata_id: Q6602
+metadata:
+  sources: [Wikidata Q6602 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q6602
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q6602

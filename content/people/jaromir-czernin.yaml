@@ -1,0 +1,32 @@
+public_id: 101339
+name: Jaromir Czernin
+given_name: Jaromir
+family_name: Czernin
+names: [Jaromir Czernin von Chudenitz]
+kind: person
+occupations: [art collector, lord of the manor]
+birth: 1908-01-30
+death: 1966-02-01
+wikidata_id: Q13736441
+metadata:
+  sources: [Wikidata Q13736441 (retrieved 2026-10-19)]
+identifiers:
+  gnd: "1049857143"
+  viaf: "305807461"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q13736441
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q13736441
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q13736441
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q13736441

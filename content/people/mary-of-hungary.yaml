@@ -1,0 +1,71 @@
+public_id: 101217
+name: Mary of Hungary
+names:
+  - lang: de
+    role: original
+    text: Maria von Ungarn
+  - Mary of Austria
+  - Queen Maria of Hungary
+  - Mary of Hungary (governor of the Netherlands)
+  - Maria of Hungary (governor of the Netherlands)
+  - Queen Mary of Hungary
+  - lang: nl
+    role: translation
+    text: Maria van Hongarije
+  - lang: fr
+    role: translation
+    text: Marie de Hongrie
+  - lang: it
+    role: translation
+    text: Maria d'Asburgo
+  - lang: es
+    role: translation
+    text: María de Hungría
+  - lang: ja
+    role: translation
+    text: マリア・フォン・エスターライヒ
+  - lang: zh
+    role: translation
+    text: 匈牙利的瑪麗
+  - lang: ko
+    role: translation
+    text: 오스트리아의 마리아
+  - lang: ru
+    role: translation
+    text: Мария Австрийская
+kind: person
+occupations: [regent]
+birth: 1505-09-15
+death: 1558-10-18
+wikidata_id: Q157077
+metadata:
+  sources: [Wikidata Q157077 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Maria%2C_K%C3%B6nigin_von_Ungarn_%281505-1558%29.jpg/1280px-Maria%2C_K%C3%B6nigin_von_Ungarn_%281505-1558%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maria,_K%C3%B6nigin_von_Ungarn_(1505-1558).jpg
+    license: Public domain
+    credit: Hans Krell
+identifiers:
+  bnf: "123664671"
+  gnd: "119170531"
+  idref: "032682131"
+  lc: n94037144
+  rkd: "490517"
+  viaf: "77119805"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q157077
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q157077
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q157077
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q157077

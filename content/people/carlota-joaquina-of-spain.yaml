@@ -1,0 +1,21 @@
+public_id: 101156
+name: Carlota Joaquina of Spain
+kind: person
+birth: 1775-04-25
+death: 1830-01-07
+wikidata_id: Q233603
+metadata:
+  sources: [Wikidata Q233603 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q233603
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q233603
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q233603

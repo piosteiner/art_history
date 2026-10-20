@@ -1,0 +1,21 @@
+public_id: 101151
+name: Maria Luisa I, Duchess of Lucca
+kind: person
+birth: 1782-07-06
+death: 1824-03-13
+wikidata_id: Q233587
+metadata:
+  sources: [Wikidata Q233587 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q233587
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q233587
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q233587

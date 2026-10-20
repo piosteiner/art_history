@@ -1,0 +1,66 @@
+public_id: 101346
+name: Ferdinand Charles, Archduke of Austria
+names:
+  - Archduke of Austria Ferdinando Carlo
+  - Archduke of Austria Ferdinand Karl
+  - Archduke of Austria Ferdinand Charles
+  - Ferdinand Charles
+  - lang: nl
+    role: translation
+    text: Ferdinand Karel van Tirol
+  - lang: fr
+    role: translation
+    text: Ferdinand-Charles d'Autriche
+  - lang: de
+    role: translation
+    text: Ferdinand Karl
+  - lang: it
+    role: translation
+    text: Ferdinando Carlo d'Austria
+  - lang: es
+    role: translation
+    text: Fernando Carlos de Habsburgo-Médicis
+  - lang: ja
+    role: translation
+    text: フェルディナント・カール・フォン・エスターライヒ＝ティロル
+  - lang: zh
+    role: translation
+    text: 奧地利大公斐迪南·查理
+  - lang: ru
+    role: translation
+    text: Фердинанд Карл Австрийский
+kind: person
+occupations: [politician]
+birth: 1628-05-17
+death: 1662-12-30
+wikidata_id: Q560021
+metadata:
+  sources: [Wikidata Q560021 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c0/Frans_Luycx_-_Ferdinand_Charles%2C_Archduke_of_Further_Austria.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Luycx_-_Ferdinand_Charles,_Archduke_of_Further_Austria.jpg
+    license: Public domain
+    credit: Frans Luycx
+identifiers:
+  gnd: "100100465"
+  idref: "237796295"
+  lc: nr2001020261
+  ulan: "500353956"
+  viaf: "69270022"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q560021
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q560021
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q560021
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q560021

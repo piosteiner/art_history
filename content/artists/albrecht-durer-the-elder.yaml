@@ -1,0 +1,70 @@
+public_id: 101281
+name: Albrecht Dürer the Elder
+given_name: Albrecht, the Elder
+family_name: Dürer
+birth: 1427
+death: 1502
+wikidata_id: Q535910
+metadata:
+  sources: [Wikidata Q535910 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/holy-roman-empire
+    sources:
+      - accessed: 2026-10-19
+        property: P27
+        wikidata: Q535910
+  - type: born_in
+    to: place/ajtos
+    sources:
+      - accessed: 2026-10-19
+        property: P19
+        wikidata: Q535910
+  - type: born_in
+    to: place/gyula
+    sources:
+      - accessed: 2026-10-19
+        property: P19
+        wikidata: Q535910
+  - type: died_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-10-19
+        property: P20
+        wikidata: Q535910
+  - type: lived_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-10-19
+        property: P551
+        wikidata: Q535910
+  - type: worked_in
+    to: place/netherlands
+    sources:
+      - accessed: 2026-10-19
+        property: P937
+        wikidata: Q535910
+  - type: associated_with
+    to: movement/german-renaissance
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q535910
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Albrecht_D%C3%BCrer_-_Ritratto_del_padre_-_Google_Art_Project.jpg/1280px-Albrecht_D%C3%BCrer_-_Ritratto_del_padre_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Ritratto_del_padre_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Albrecht Dürer
+identifiers:
+  gnd: "117751669"
+  ulan: "500102378"
+  viaf: "74638365"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q535910
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q535910

@@ -1,0 +1,222 @@
+public_id: 101181
+title_lang: es
+title: Autorretrato
+names:
+  - lang: nl
+    role: original
+    text: Zelfportret van Albrecht Dürer (1471-1528)
+  - lang: en
+    role: original
+    text: Self-portrait by Albrecht Dürer (1471-1528)
+  - lang: en
+    role: original
+    text: Self-Portrait
+  - lang: nl
+    role: original
+    text: Zelfportret met 26
+  - lang: fr
+    role: translation
+    text: Autoportrait à 26 ans
+  - lang: de
+    role: translation
+    text: Selbstporträt im Alter von 26 Jahren
+  - lang: it
+    role: translation
+    text: Autoritratto con guanti
+  - lang: es
+    role: original
+    text: Autorretrato de Durero
+  - lang: ja
+    role: translation
+    text: 自画像
+  - lang: zh
+    role: translation
+    text: 自畫像
+  - lang: ko
+    role: translation
+    text: 26세의 자화상
+  - lang: ru
+    role: translation
+    text: Автопортрет Дюрера
+creator: albrecht-durer
+created: 1498
+kind: oil painting
+medium: Oil on panel
+materials: [oil paint, panel]
+dimensions: [52, 41]
+institution: museo-del-prado
+inventory_number: P002179
+web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+description_md: Dürer painted himself in 1498, at twenty-six, as an elegant gentleman in white and black with gloves, before a window onto a mountain landscape. It belonged to Charles I of England and came to Spain as a gift to Philip IV in 1654.
+wikidata_id: Q2388965
+metadata:
+  sources: [Wikidata Q2388965 (retrieved 2026-10-19)]
+relationships:
+  - type: depicts_person
+    to: artist/albrecht-durer
+    sources:
+      - accessed: 2026-10-19
+        property: P180
+        wikidata: Q2388965
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-19
+        property: P135
+        wikidata: Q2388965
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Selbstportr%C3%A4t%2C_by_Albrecht_D%C3%BCrer%2C_from_Prado_in_Google_Earth.jpg/1280px-Selbstportr%C3%A4t%2C_by_Albrecht_D%C3%BCrer%2C_from_Prado_in_Google_Earth.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Selbstportr%C3%A4t,_by_Albrecht_D%C3%BCrer,_from_Prado_in_Google_Earth.jpg
+    license: Public domain
+    credit: Albrecht Dürer
+provenance:
+  - owner: person/charles-i-of-england
+    acquired: 1636 or earlier
+    place: london
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+        note: "“Colección de Carlos I de Inglaterra, 1636;” — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+        source: museo-del-prado-coleccion
+        accessed: 2026-06-19
+  - owner: person/david-murray
+    method: auction
+    place: london
+    label: bought at the sale of Charles I’s goods
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+        note: "“comprado en su almoneda por David Murray,” — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+        source: museo-del-prado-coleccion
+        accessed: 2026-06-19
+  - owner: person/alonso-de-cardenas
+    role: agent
+    method: purchase
+    direct: true
+    place: london
+    label: Spanish ambassador; bought it from Murray for Luis de Haro
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+        note: "“que lo vende al embajador Alonso de Cárdenas para don Luis de Haro;” — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+        source: museo-del-prado-coleccion
+        accessed: 2026-06-19
+  - owner: person/luis-mendez-de-haro
+    ended: 1654
+    method: purchase
+    direct: true
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+        note: "“para don Luis de Haro;” — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+        source: museo-del-prado-coleccion
+        accessed: 2026-06-19
+  - owner: institution/spanish-royal-collection
+    acquired: 1654
+    ended: 1827
+    method: gift
+    direct: true
+    place: royal-alcazar-of-madrid
+    label: a gift from Luis de Haro to Philip IV
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+        note: "“regalado por este a Felipe IV en 1654; Colección Real (¿Real Alcázar, Madrid, Pieza junto a la Galeria del Cierzo que mira al Parque, 1666, s.n.?; …; ¿Real Alcázar, … 1701-1703, nº 167?; Real Alcázar, Pinturas que estan en las Bobedas de Palacio, 1734, nº382; Palacio Nuevo, Madrid, Primera sala de la Furriera, 1747, nº71; Palacio Nuevo, Paso de tribuna y trascuartos, 1772, nº382; Palacio Nuevo, Pinturas Descolgadas de Palacio, 1794, nº382; Palacio Nuevo, Habitación del Infante Don Carlos-sexta pieza, 1814-1818, nº382; Real Palacio, Guardamuebles, 1827, nº382)” — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+        source: museo-del-prado-coleccion
+        accessed: 2026-06-19
+    records:
+      - date: "1666"
+        note: without number
+        room: pieza junto a la Galería del Cierzo que mira al Parque
+        place: royal-alcazar-of-madrid
+        certainty: possible
+      - date: "1686"
+        note: without number
+        room: pieza que cae al Parque a la entrada de la Galería del Cierzo
+        place: royal-alcazar-of-madrid
+        certainty: possible
+      - date: 1701/1703
+        room: pieza que cae al Parque a la entrada de la Galería del Cierzo
+        place: royal-alcazar-of-madrid
+        number: "167"
+        certainty: possible
+        number_certainty: possible
+      - date: "1734"
+        room: pinturas que están en las Bóvedas de Palacio
+        place: royal-alcazar-of-madrid
+        number: "382"
+      - date: "1747"
+        room: primera sala de la Furriera
+        place: royal-palace-of-madrid
+        number: "71"
+      - date: "1772"
+        room: paso de tribuna y trascuartos
+        place: royal-palace-of-madrid
+        number: "382"
+      - date: "1794"
+        room: pinturas descolgadas de Palacio
+        place: royal-palace-of-madrid
+        number: "382"
+      - date: 1814/1818
+        room: habitación del infante don Carlos, sexta pieza
+        place: royal-palace-of-madrid
+        number: "382"
+      - date: "1827"
+        room: Guardamuebles
+        place: royal-palace-of-madrid
+        number: "382"
+  - owner: institution/museo-del-prado
+    acquired: 1827
+    method: transfer
+    direct: true
+    place: madrid
+    sources:
+      - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+        note: "“Fecha de ingreso 1827” — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+        source: museo-del-prado-coleccion
+        accessed: 2026-06-19
+sources:
+  kind:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+      source: museo-del-prado-coleccion
+      accessed: 2026-06-19
+  names:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+      source: museo-del-prado-coleccion
+      accessed: 2026-06-19
+  medium:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+      source: museo-del-prado-coleccion
+      accessed: 2026-06-19
+  created:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+      source: museo-del-prado-coleccion
+      accessed: 2026-06-19
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2388965
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2388965
+  dimensions:
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+      source: museo-del-prado-coleccion
+      accessed: 2026-06-19
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2388965
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+      source: museo-del-prado-coleccion
+      accessed: 2026-06-19
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2388965
+    - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b
+      note: "Museo del Prado, technical data — read in the Internet Archive’s copy of 2026-06-19: https://web.archive.org/web/20260619140613/https://www.museodelprado.es/coleccion/obra-de-arte/wd/8417d190-eb9d-4c52-9c89-dcdcd0109b5b"
+      source: museo-del-prado-coleccion
+      accessed: 2026-06-19

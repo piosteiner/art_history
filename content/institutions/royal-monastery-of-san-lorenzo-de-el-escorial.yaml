@@ -1,0 +1,67 @@
+public_id: 101199
+name: Royal Monastery of San Lorenzo de El Escorial
+names:
+  - Royal Seat of San Lorenzo de El Escorial
+  - Royal Palace, El Escorial
+  - Monastery of El Escorial
+  - Escurial
+  - El Escorial
+  - lang: nl
+    role: translation
+    text: Escorial
+  - lang: fr
+    role: translation
+    text: monastère royal de San Lorenzo de El Escorial
+  - lang: de
+    role: translation
+    text: Real Sitio de San Lorenzo de El Escorial
+  - lang: it
+    role: translation
+    text: Monastero dell'Escorial
+  - lang: es
+    role: translation
+    text: Real Monasterio de San Lorenzo de El Escorial
+  - lang: ja
+    role: translation
+    text: エル・エスコリアル修道院
+  - lang: zh
+    role: translation
+    text: 埃斯科里亚尔修道院
+  - lang: ko
+    role: translation
+    text: 엘에스코리알
+  - lang: ru
+    role: translation
+    text: Эскориал
+founded: 1563
+place: san-lorenzo-de-el-escorial
+location: [-4.14778, 40.58917]
+website_url: https://entradas.patrimonionacional.es/es-ES/comprar-entradas-palacios-reales-monasterios
+wikidata_id: Q28471
+metadata:
+  sources: [Wikidata Q28471 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Monasterio_de_El_Escorial_en_Madrid.jpg/1280px-Monasterio_de_El_Escorial_en_Madrid.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Monasterio_de_El_Escorial_en_Madrid.jpg
+    license: CC BY-SA 4.0
+    credit: Zvonimir Stamenov
+identifiers:
+  bnf: "118635826"
+  gnd: 1007050-3
+  idref: 02784949X
+  lc: n79058364
+  ulan: "500302339"
+  viaf: "132051570"
+sources:
+  place:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q28471
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28471
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q28471

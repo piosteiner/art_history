@@ -1,7 +1,8 @@
-public_id: "100162"
+public_id: 100162
 name: Abigail Greene Aldrich
 given_name: Abigail Greene
 family_name: Aldrich
+names: [Abby Aldrich Rockefeller, Abby Aldrich, Abigail Greene Aldrich Rockefeller, Abby Greene Aldrich Rockefeller]
 kind: person
 birth: 1874-10-26
 death: 1948-04-05
@@ -9,12 +10,41 @@ wikidata_id: Q306870
 metadata:
   sources: [Wikidata Q306870 (retrieved 2026-10-09)]
 relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-19
+        property: P27
+        wikidata: Q306870
+  - type: born_in
+    to: place/providence
+    sources:
+      - accessed: 2026-10-19
+        property: P19
+        wikidata: Q306870
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-19
+        property: P20
+        wikidata: Q306870
   - type: founded
     to: institution/museum-of-modern-art
     sources:
       - accessed: 2026-10-09
         property: P112
         wikidata: Q188740
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Abigail_Rockefeller.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Abigail_Rockefeller.jpg
+    license: CC BY-SA 4.0
+    credit: Cagsousa72
+identifiers:
+  bnf: 17129768f
+  gnd: "118844350"
+  idref: "114119260"
+  lc: n93007452
+  viaf: "135621103"
 sources:
   kind:
     - accessed: 2026-10-09

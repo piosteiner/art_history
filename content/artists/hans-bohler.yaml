@@ -1,0 +1,36 @@
+public_id: 101495
+name: Hans Bohler
+names:
+  - lang: de
+    role: original
+    text: Hans Böhler
+  - Hans Boehler
+  - lang: ja
+    role: translation
+    text: ハンス・ベーラー
+  - lang: ru
+    role: translation
+    text: Ганс Бёлер
+birth: 1884-09-11
+death: 1961-09-17
+wikidata_id: Q1578922
+metadata:
+  sources: [Wikidata Q1578922 (retrieved 2026-10-19)]
+identifiers:
+  dome: "3773"
+  gnd: "118850369"
+  idref: "249401622"
+  lc: n83222524
+  rkd: "9970"
+  sikart: "4024026"
+  ulan: "500078072"
+  viaf: "72191648"
+sources:
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q1578922
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q1578922

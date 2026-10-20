@@ -1,0 +1,49 @@
+public_id: 101490
+name: Otto Benesch
+names:
+  - lang: ja
+    role: translation
+    text: オットー・ベネシュ
+  - lang: ko
+    role: translation
+    text: 오토 베네슈
+  - lang: ru
+    role: translation
+    text: Отто Бенеш
+kind: person
+occupations: [art historian, historian, university teacher]
+birth: 1896-06-29
+death: 1964-11-16
+wikidata_id: Q88130
+metadata:
+  sources: [Wikidata Q88130 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Egon_Schiele_-_Doppelbildnis_Heinrich_und_Otto_Benesch.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Doppelbildnis_Heinrich_und_Otto_Benesch.jpg
+    license: Public domain
+    credit: Egon Schiele
+identifiers:
+  bnf: 14873989b
+  gnd: "122881702"
+  idref: "071285490"
+  lc: n79041766
+  rkd: "358859"
+  ulan: "500314199"
+  viaf: "29800494"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q88130
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q88130
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q88130
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q88130

@@ -1,0 +1,37 @@
+public_id: 101444
+name: Jean-Antoine-Hubert Vassal de Saint-Hubert
+given_name: Jean-Antoine-Hubert Vassal
+family_name: de Saint-Hubert
+names:
+  - lang: fr
+    role: translation
+    text: Jean-Antoine Hubert Vassal
+kind: person
+occupations: [valet, art collector]
+birth: 1741-08-02
+death: 1782-09-07
+wikidata_id: Q97949401
+metadata:
+  sources: [Wikidata Q97949401 (retrieved 2026-10-19)]
+identifiers:
+  bnf: 16686479h
+  rkd: "454053"
+  ulan: "500327482"
+  viaf: "300579408"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q97949401
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q97949401
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q97949401
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q97949401

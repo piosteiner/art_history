@@ -1,0 +1,120 @@
+public_id: 101523
+title_lang: de
+title: Der Kuss (Liebespaar)
+names:
+  - lang: en
+    role: original
+    text: The Kiss
+  - lang: pl
+    role: original
+    text: Pocałunek
+  - lang: ru
+    role: original
+    text: Поцелуй
+  - lang: en
+    role: original
+    text: The Kiss (Klimt)
+  - lang: nl
+    role: translation
+    text: De kus
+  - lang: fr
+    role: translation
+    text: Le Baiser
+  - lang: de
+    role: original
+    text: Der Kuss
+  - lang: it
+    role: translation
+    text: Il bacio
+  - lang: es
+    role: translation
+    text: El beso
+  - lang: ja
+    role: translation
+    text: 接吻
+  - lang: zh
+    role: translation
+    text: 吻
+  - lang: ko
+    role: translation
+    text: 키스
+creator: gustav-klimt
+created: 1907/1908
+created_label: c. 1907
+materials: [oil paint, gold leaf, canvas]
+dimensions: [180, 180]
+institution: belvedere
+inventory_number: "912"
+wikidata_id: Q698487
+metadata:
+  sources: [Wikidata Q698487 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg/1280px-The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: institution/k-k-ministerium-fur-kultus-und-unterricht
+    acquired: 1908/1909
+    method: purchase
+    place: vienna
+    label: bought at the Kunstschau 1908
+    sources:
+      - url: https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar
+        note: "“1908/09, Ankauf, Ministerium für Kultus und Unterricht, Wien [1] 1909, Übernahme, Moderne Galerie, Wien [2] [1] Katalog der Kunstschau in Wien, Wien 1908, Raum 22. Österreichisches Staatsarchiv. AVA, FHKA, Zl. 32.554/1908. [2] Archiv des Belvedere, Wien, ohne Zl., Übernahmebestätigung 22.7.1909. Katalog der Modernen Galerie in Wien, Wien 1909, Nachtrag, Kat.-Nr. 322 (Der Kuss).” — read in the Internet Archive’s copy of 2026-10-04: https://web.archive.org/web/20261004100745/https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-04
+    records:
+      - kind: exhibition
+        date: "1908"
+        room: Raum 22
+        place: vienna
+        document: Katalog der Kunstschau in Wien
+  - owner: institution/belvedere
+    acquired: 1909-07-22
+    method: transfer
+    direct: true
+    place: vienna
+    label: Moderne Galerie
+    sources:
+      - url: https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar
+        note: "“1908/09, Ankauf, Ministerium für Kultus und Unterricht, Wien [1] 1909, Übernahme, Moderne Galerie, Wien [2] [1] Katalog der Kunstschau in Wien, Wien 1908, Raum 22. Österreichisches Staatsarchiv. AVA, FHKA, Zl. 32.554/1908. [2] Archiv des Belvedere, Wien, ohne Zl., Übernahmebestätigung 22.7.1909. Katalog der Modernen Galerie in Wien, Wien 1909, Nachtrag, Kat.-Nr. 322 (Der Kuss).” — read in the Internet Archive’s copy of 2026-10-04: https://web.archive.org/web/20261004100745/https://sammlung.belvedere.at/objects/6678/der-kuss-liebespaar"
+        source: belvedere-sammlung-online
+        accessed: 2026-10-04
+    records:
+      - kind: catalogue
+        date: "1909"
+        place: vienna
+        number: "322"
+        document: Katalog der Modernen Galerie in Wien, Nachtrag
+identifiers:
+  gnd: "1046598198"
+  viaf: "306270035"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q698487
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q698487
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q698487
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q698487
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q698487
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q698487
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q698487

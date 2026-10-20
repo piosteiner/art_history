@@ -1,0 +1,113 @@
+public_id: 101532
+title_lang: de
+title: Adam und Eva
+names:
+  - lang: en
+    role: translation
+    text: Adam and Eve
+  - lang: nl
+    role: translation
+    text: Adam en Eva
+  - lang: fr
+    role: translation
+    text: Adam et Ève
+  - lang: it
+    role: translation
+    text: Adamo ed Eva
+  - lang: es
+    role: translation
+    text: Adán y Eva
+  - lang: ru
+    role: translation
+    text: Адам и Ева
+creator: gustav-klimt
+created: 1917/1918
+created_label: c. 1910s
+materials: [oil paint, canvas]
+dimensions: [173, 60]
+institution: belvedere
+inventory_number: "4402"
+wikidata_id: Q28002799
+metadata:
+  sources: [Wikidata Q28002799 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Gustav_Klimt_-_Adam_und_Eva_-_4402_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Adam_und_Eva_-_4402_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: artist/gustav-klimt
+    role: estate
+    acquired: 1918
+    method: inheritance
+    place: vienna
+    label: estate of Gustav Klimt
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+        note: "“1918, Nachlass, Gustav Klimt, Wien 1919, Übernahme, Kunsthandlung Gustav Nebehay, Wien [1] 1919–1950, Ankauf, Sonja Knips, Wien [2] 1950, Ankauf, Österreichische Galerie, Wien [3] [1] Gedächtnis-Ausstellung Gustav Klimt, Kunsthandlung Gustav Nebehay, Wien 6.2.–6.3.1919 (ohne Katalog) [2] Ankauf aus der Gedächtnis-Ausstellung Gustav Klimt der Kunsthandlung Gustav Nebehay. [3] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950 Ankauf um 20.000 S (gemeinsam mit Porträt Sonja Knips).” — read in the Internet Archive’s copy of 2026-08-05: https://web.archive.org/web/20260805080821/https://sammlung.belvedere.at/objects/3196/adam-und-eva"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-05
+  - owner: person/gustav-nebehay
+    role: dealer
+    acquired: 1919
+    direct: true
+    place: vienna
+    label: Klimt memorial exhibition, Kunsthandlung Gustav Nebehay
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+        note: "“1918, Nachlass, Gustav Klimt, Wien 1919, Übernahme, Kunsthandlung Gustav Nebehay, Wien [1] 1919–1950, Ankauf, Sonja Knips, Wien [2] 1950, Ankauf, Österreichische Galerie, Wien [3] [1] Gedächtnis-Ausstellung Gustav Klimt, Kunsthandlung Gustav Nebehay, Wien 6.2.–6.3.1919 (ohne Katalog) [2] Ankauf aus der Gedächtnis-Ausstellung Gustav Klimt der Kunsthandlung Gustav Nebehay. [3] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950 Ankauf um 20.000 S (gemeinsam mit Porträt Sonja Knips).” — read in the Internet Archive’s copy of 2026-08-05: https://web.archive.org/web/20260805080821/https://sammlung.belvedere.at/objects/3196/adam-und-eva"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-05
+  - owner: person/sonja-knips
+    acquired: 1919
+    ended: 1950
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+        note: "“1918, Nachlass, Gustav Klimt, Wien 1919, Übernahme, Kunsthandlung Gustav Nebehay, Wien [1] 1919–1950, Ankauf, Sonja Knips, Wien [2] 1950, Ankauf, Österreichische Galerie, Wien [3] [1] Gedächtnis-Ausstellung Gustav Klimt, Kunsthandlung Gustav Nebehay, Wien 6.2.–6.3.1919 (ohne Katalog) [2] Ankauf aus der Gedächtnis-Ausstellung Gustav Klimt der Kunsthandlung Gustav Nebehay. [3] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950 Ankauf um 20.000 S (gemeinsam mit Porträt Sonja Knips).” — read in the Internet Archive’s copy of 2026-08-05: https://web.archive.org/web/20260805080821/https://sammlung.belvedere.at/objects/3196/adam-und-eva"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-05
+  - owner: institution/belvedere
+    acquired: 31 August 1950
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie, with the portrait of Sonja Knips
+    price:
+      amount: 20000
+      currency: ATS
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+        note: "“1918, Nachlass, Gustav Klimt, Wien 1919, Übernahme, Kunsthandlung Gustav Nebehay, Wien [1] 1919–1950, Ankauf, Sonja Knips, Wien [2] 1950, Ankauf, Österreichische Galerie, Wien [3] [1] Gedächtnis-Ausstellung Gustav Klimt, Kunsthandlung Gustav Nebehay, Wien 6.2.–6.3.1919 (ohne Katalog) [2] Ankauf aus der Gedächtnis-Ausstellung Gustav Klimt der Kunsthandlung Gustav Nebehay. [3] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950 Ankauf um 20.000 S (gemeinsam mit Porträt Sonja Knips).” — read in the Internet Archive’s copy of 2026-08-05: https://web.archive.org/web/20260805080821/https://sammlung.belvedere.at/objects/3196/adam-und-eva"
+        source: belvedere-sammlung-online
+        accessed: 2026-08-05
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28002799
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28002799
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28002799
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28002799
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28002799
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28002799
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28002799

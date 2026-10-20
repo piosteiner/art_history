@@ -1,0 +1,22 @@
+public_id: 101192
+name: Quinta del Duque del Arco
+kind: site
+parent: madrid
+country_code: ES
+location: [-3.73701, 40.50548]
+wikidata_id: Q6095071
+metadata:
+  sources: [Wikidata Q6095071 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q6095071
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q6095071
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q6095071

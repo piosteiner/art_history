@@ -1,0 +1,145 @@
+public_id: 101528
+title_lang: de
+title: 'Beethovenfries: "Die Sehnsucht nach dem Glück" (nach Richard Wagners Interpretation der IX. Sinfonie von Ludwig van Beethoven)'
+names:
+  - lang: en
+    role: original
+    text: The Beethoven Frieze
+  - lang: en
+    role: original
+    text: Beethoven Frieze
+  - lang: nl
+    role: translation
+    text: Beethoven-fries
+  - lang: fr
+    role: translation
+    text: Frise Beethoven
+  - lang: de
+    role: original
+    text: Beethovenfries
+  - lang: it
+    role: translation
+    text: Fregio di Beethoven
+  - lang: es
+    role: translation
+    text: Friso de Beethoven
+  - lang: ja
+    role: translation
+    text: ベートーヴェン・フリーズ
+  - lang: ko
+    role: translation
+    text: 베토벤 프리즈
+  - lang: ru
+    role: translation
+    text: Бетховенский фриз
+creator: gustav-klimt
+created: 1901
+materials: [casein paint, chalk, paint, graphite, plaster]
+dimensions: [215, 3414]
+institution: vienna-secession
+web_url: https://sammlung.belvedere.at/objects/4737
+on_loan: true
+wikidata_id: Q684689
+metadata:
+  sources: [Wikidata Q684689 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Gustav_Klimt_-_Beethovenfries%2C_%22Die_Sehnsucht_nach_dem_Gl%C3%BCck%22_%28nach_Richard_Wagners_Interpretation_der_IX._Sinfonie_von_Ludwig_van_Beethoven%29_-_5987_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Beethovenfries,_%22Die_Sehnsucht_nach_dem_Gl%C3%BCck%22_(nach_Richard_Wagners_Interpretation_der_IX._Sinfonie_von_Ludwig_van_Beethoven)_-_5987_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Gustav Klimt
+provenance:
+  - owner: person/carl-reininghaus
+    acquired: 1903
+    method: purchase
+    place: vienna
+    label: saved from destruction after the Secession exhibitions
+    notes_md: Painted 1901/02 for the 14th exhibition of the Vienna Secession (April–June 1902), shown again in 1903; Reininghaus had it taken off the walls in eight panels and stored at the furniture depot Wilhelm & Eisler, Michelbeuern.
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Lederer_Erich_2015-03-06.pdf
+        note: “Nach deren Ende wäre der (zwischen den beiden Ausstellungen verhängt gewesene) Fries abgeschlagen und zerstört worden, hätte nicht der Kunstsammler Carl Reininghaus ihn für seine Kunstsammlung erworben.”
+        source: kunstrueckgabebeirat-lederer-2015
+        accessed: 2026-10-19
+  - owner: person/august-lederer
+    acquired: 1915
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Lederer_Erich_2015-03-06.pdf
+        note: “Carl Reininghaus verkaufte den Fries […] im Jahr 1915 an August Lederer.”
+        source: kunstrueckgabebeirat-lederer-2015
+        accessed: 2026-10-19
+  - owner: person/erich-lederer
+    acquired: 30 April 1935
+    method: inheritance
+    direct: true
+    place: vienna
+    label: universal heir of August Lederer
+    notes_md: In a letter of 1930 August Lederer had declared the collection the property of his wife Serena Lederer.
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Lederer_Erich_2015-03-06.pdf
+        note: “August Lederer verstarb am 30. April 1935; in seinem Testament setzte er seinen Sohn Erich Lederer als Universalerben ein”
+        source: kunstrueckgabebeirat-lederer-2015
+        accessed: 2026-10-19
+  - owner_label: Zentralstelle für Denkmalschutz
+    role: custodian
+    acquired: 1938-11-26
+    ended: 1946-08-23
+    method: confiscation
+    place: vienna
+    label: secured (Sicherstellung) as part of the Lederer collection; stored at the forwarding agent E. Bäuml
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Lederer_Erich_2015-03-06.pdf
+        note: “Durch Bescheid des Magistrates der Stadt Wien vom 26. November 1938 wurde die in der Wohnung in Wien I befindliche Kunstsammlung gemäß § 4a Ausfuhrverbotsgesetz sichergestellt”
+        source: kunstrueckgabebeirat-lederer-2015
+        accessed: 2026-10-19
+  - owner: institution/belvedere
+    acquired: 1972/1973
+    method: purchase
+    direct: true
+    place: vienna
+    label: bought by the Republic of Austria for the Österreichische Galerie
+    price:
+      amount: 15000000
+      currency: ATS
+    notes_md: On permanent loan to the Vienna Secession, shown in its building.
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Lederer_Erich_2015-03-06.pdf
+        note: “bedankte sich Erich Lederer bei Hertha Firnberg für den Besuch und akzeptierte das offenbar bei dem Abendessen gemachte Angebot, den Beethoven-Fries um öS 15 Mio. […] im Februar 1973 angewiesen, den Fries zu inventarisieren.”
+        source: kunstrueckgabebeirat-lederer-2015
+        accessed: 2026-10-19
+numbers:
+  - number: "5987"
+    institution: belvedere
+    label: inventory number of the owner
+identifiers:
+  gnd: 4204968-4
+  viaf: "176725947"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q684689
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q684689
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q684689
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q684689
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q684689
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q684689
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q684689

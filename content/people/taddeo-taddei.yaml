@@ -1,0 +1,33 @@
+public_id: 101345
+name: Taddeo Taddei
+names:
+  - lang: ja
+    role: translation
+    text: タッデオ・タッデイ
+kind: person
+occupations: [patron of the arts, philosopher]
+birth: 1470
+death: 1529
+wikidata_id: Q930159
+metadata:
+  sources: [Wikidata Q930159 (retrieved 2026-10-19)]
+identifiers:
+  ulan: "500326720"
+  viaf: "173299068"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q930159
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q930159
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q930159
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q930159

@@ -1,0 +1,153 @@
+public_id: 101328
+title_lang: de
+title: Selbstbildnis im Konvexspiegel
+names:
+  - lang: en
+    role: original
+    text: Self-portrait in a Convex Mirror
+  - lang: fr
+    role: translation
+    text: Autoportrait dans un miroir convexe
+  - lang: de
+    role: original
+    text: Selbstporträt im konvexen Spiegel
+  - lang: it
+    role: translation
+    text: Autoritratto entro uno specchio convesso
+  - lang: es
+    role: translation
+    text: Autorretrato en un espejo convexo
+  - lang: ja
+    role: translation
+    text: 凸面鏡の自画像
+  - lang: zh
+    role: translation
+    text: 自画像
+  - lang: ru
+    role: translation
+    text: Автопортрет в искривленном зеркале
+creator: parmigianino
+created: 1523/1524
+created_label: c. 1520s
+materials: [oil paint, poplar panel]
+dimensions: [24.4, 24.4]
+institution: kunsthistorisches-museum
+inventory_number: GG_286
+wikidata_id: Q699319
+metadata:
+  sources: [Wikidata Q699319 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Parmigianino_Selfportrait.jpg/1280px-Parmigianino_Selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Parmigianino_Selfportrait.jpg
+    license: Public domain
+    credit: Parmigianino
+provenance:
+  - owner: artist/parmigianino
+    method: creation
+    sources:
+      - url: https://www.khm.at/kunstwerke/selbstbildnis-im-konvexspiegel-1407
+        note: “Von Papst Clemens VII. vom Künstler erworben, dann Pietro Aretino geschenkt; danach Valerio Belli und dessen Sohn Elio.; 1560 von Andrea Palladio an den Bildhauer Alessandro Vittoria verkauft; 1608 Vermächtnis Vittorias an Kaiser Rudolf II.; 1608 Slg. Rudolf II.”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/clement-vii
+    method: purchase
+    direct: true
+    place: rome
+    label: acquired from the artist
+    sources:
+      - url: https://www.khm.at/kunstwerke/selbstbildnis-im-konvexspiegel-1407
+        note: “Von Papst Clemens VII. vom Künstler erworben, dann Pietro Aretino geschenkt; danach Valerio Belli und dessen Sohn Elio.; 1560 von Andrea Palladio an den Bildhauer Alessandro Vittoria verkauft; 1608 Vermächtnis Vittorias an Kaiser Rudolf II.; 1608 Slg. Rudolf II.”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/pietro-aretino
+    method: gift
+    direct: true
+    sources:
+      - url: https://www.khm.at/kunstwerke/selbstbildnis-im-konvexspiegel-1407
+        note: “Von Papst Clemens VII. vom Künstler erworben, dann Pietro Aretino geschenkt; danach Valerio Belli und dessen Sohn Elio.; 1560 von Andrea Palladio an den Bildhauer Alessandro Vittoria verkauft; 1608 Vermächtnis Vittorias an Kaiser Rudolf II.; 1608 Slg. Rudolf II.”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: artist/valerio-belli
+    sources:
+      - url: https://www.khm.at/kunstwerke/selbstbildnis-im-konvexspiegel-1407
+        note: “Von Papst Clemens VII. vom Künstler erworben, dann Pietro Aretino geschenkt; danach Valerio Belli und dessen Sohn Elio.; 1560 von Andrea Palladio an den Bildhauer Alessandro Vittoria verkauft; 1608 Vermächtnis Vittorias an Kaiser Rudolf II.; 1608 Slg. Rudolf II.”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Elio Belli
+    method: inheritance
+    label: Valerio Belli's son
+    sources:
+      - url: https://www.khm.at/kunstwerke/selbstbildnis-im-konvexspiegel-1407
+        note: “Von Papst Clemens VII. vom Künstler erworben, dann Pietro Aretino geschenkt; danach Valerio Belli und dessen Sohn Elio.; 1560 von Andrea Palladio an den Bildhauer Alessandro Vittoria verkauft; 1608 Vermächtnis Vittorias an Kaiser Rudolf II.; 1608 Slg. Rudolf II.”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: artist/andrea-palladio
+    role: agent
+    ended: 1560
+    label: sold it to Alessandro Vittoria
+    sources:
+      - url: https://www.khm.at/kunstwerke/selbstbildnis-im-konvexspiegel-1407
+        note: “Von Papst Clemens VII. vom Künstler erworben, dann Pietro Aretino geschenkt; danach Valerio Belli und dessen Sohn Elio.; 1560 von Andrea Palladio an den Bildhauer Alessandro Vittoria verkauft; 1608 Vermächtnis Vittorias an Kaiser Rudolf II.; 1608 Slg. Rudolf II.”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: artist/alessandro-vittoria
+    acquired: 1560
+    method: purchase
+    place: venice
+    sources:
+      - url: https://www.khm.at/kunstwerke/selbstbildnis-im-konvexspiegel-1407
+        note: “Von Papst Clemens VII. vom Künstler erworben, dann Pietro Aretino geschenkt; danach Valerio Belli und dessen Sohn Elio.; 1560 von Andrea Palladio an den Bildhauer Alessandro Vittoria verkauft; 1608 Vermächtnis Vittorias an Kaiser Rudolf II.; 1608 Slg. Rudolf II.”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/emperor-rudolf-ii
+    acquired: 1608
+    method: bequest
+    direct: true
+    place: prague
+    sources:
+      - url: https://www.khm.at/kunstwerke/selbstbildnis-im-konvexspiegel-1407
+        note: “Von Papst Clemens VII. vom Künstler erworben, dann Pietro Aretino geschenkt; danach Valerio Belli und dessen Sohn Elio.; 1560 von Andrea Palladio an den Bildhauer Alessandro Vittoria verkauft; 1608 Vermächtnis Vittorias an Kaiser Rudolf II.; 1608 Slg. Rudolf II.”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    label: imperial collection
+    certainty: probable
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q699319
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q699319
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q699319
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q699319
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q699319
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q699319
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q699319

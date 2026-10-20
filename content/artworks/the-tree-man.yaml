@@ -1,0 +1,143 @@
+public_id: 101414
+title: The Tree-Man
+names:
+  - lang: nl
+    role: translation
+    text: Boommens
+  - lang: fr
+    role: translation
+    text: L'Homme-arbre
+  - lang: de
+    role: translation
+    text: Der Baummensch
+  - lang: es
+    role: translation
+    text: El hombre árbol
+creator: hieronymus-bosch
+created: 1510
+materials: [ink]
+dimensions: [27.7, 21.1]
+institution: albertina
+inventory_number: "7876"
+wikidata_id: Q1968805
+metadata:
+  sources: [Wikidata Q1968805 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Hieronymus_Bosch_-_The_Tree-Man%2C_c._1505_-_Google_Art_Project.jpg/1280px-Hieronymus_Bosch_-_The_Tree-Man%2C_c._1505_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hieronymus_Bosch_-_The_Tree-Man,_c._1505_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Hieronymus Bosch
+provenance:
+  - owner: person/emperor-rudolf-ii
+    place: prague
+    certainty: probable
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/28755/der-baummensch
+        note: “wohl Sammlung Kaiser Rudolf II. (1552–1612), Prag / 1631 Kaiserliche Schatzkammer, Wien / 1783 Kaiserliche Hofbibliothek, Wien / 1796 Sammlung Herzog Albert von Sachsen-Teschen (1738–1822)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/imperial-treasury
+    acquired: 1631 or earlier
+    place: vienna
+    label: Imperial Treasury (Kaiserliche Schatzkammer)
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/28755/der-baummensch
+        note: “wohl Sammlung Kaiser Rudolf II. (1552–1612), Prag / 1631 Kaiserliche Schatzkammer, Wien / 1783 Kaiserliche Hofbibliothek, Wien / 1796 Sammlung Herzog Albert von Sachsen-Teschen (1738–1822)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+    records:
+      - date: "1631"
+        note: in the Imperial Treasury
+        place: vienna
+  - owner: institution/austrian-national-library
+    acquired: 1783
+    method: transfer
+    direct: true
+    place: vienna
+    label: Imperial Court Library (Kaiserliche Hofbibliothek)
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/28755/der-baummensch
+        note: “wohl Sammlung Kaiser Rudolf II. (1552–1612), Prag / 1631 Kaiserliche Schatzkammer, Wien / 1783 Kaiserliche Hofbibliothek, Wien / 1796 Sammlung Herzog Albert von Sachsen-Teschen (1738–1822)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/albert-casimir-duke-of-teschen
+    acquired: 1796
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/28755/der-baummensch
+        note: “wohl Sammlung Kaiser Rudolf II. (1552–1612), Prag / 1631 Kaiserliche Schatzkammer, Wien / 1783 Kaiserliche Hofbibliothek, Wien / 1796 Sammlung Herzog Albert von Sachsen-Teschen (1738–1822)”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: person/archduke-charles-duke-of-teschen
+    acquired: 1822
+    method: inheritance
+    direct: true
+    place: vienna
+    label: adoptive son of Duke Albert
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Bereits 1822 veranlasste sein Adoptivsohn Erzherzog Carl die Neugestaltung der Prunkräume …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-albrecht-duke-of-teschen
+    acquired: 1847
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Charles's eldest son
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “Das historistische Erscheinungsbild der Fassaden des Palais geht auf Carls ältesten Sohn, Erzherzog Albrecht, zurück …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: person/archduke-friedrich-duke-of-teschen
+    acquired: 1895
+    method: inheritance
+    direct: true
+    place: vienna
+    label: Archduke Albrecht's nephew
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1895 erbte Erzherzog Albrechts Neffe, Erzherzog Friedrich, das Palais …”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1919-04
+    method: confiscation
+    direct: true
+    place: vienna
+    label: "expropriated by the Republic of Austria: Graphische Sammlung Albertina"
+    sources:
+      - url: https://austria-forum.org/af/AEIOU/Albertina
+        note: “1919 enteignete die Republik Österreich das erzherzogliche Palais samt der in ihm verwahrten Sammlung und nannte es fortan "Graphische Sammlung Albertina"; zugleich wurde die wertvolle Kupferstichsammlung der kaiserlichen Hofbibliothek mit der Albertina vereinigt.”
+        source: aeiou-albertina
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q1968805
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q1968805
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q1968805
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q1968805
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q1968805
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q1968805
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q1968805

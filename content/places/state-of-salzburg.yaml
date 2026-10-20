@@ -1,0 +1,16 @@
+public_id: 101504
+name: State of Salzburg
+kind: site
+location: [13.22, 47.42]
+wikidata_id: Q43325
+metadata:
+  sources: [Wikidata Q43325 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q43325
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q43325

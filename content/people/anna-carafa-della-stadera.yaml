@@ -1,0 +1,31 @@
+public_id: 101214
+name: Anna Carafa della Stadera
+given_name: Anna Carafa
+family_name: della Stadera
+kind: person
+birth: 1607
+death: 1644
+wikidata_id: Q3617681
+metadata:
+  sources: [Wikidata Q3617681 (retrieved 2026-10-19)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Anna_Carafa_della_Stadera.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Anna_Carafa_della_Stadera.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: "1020229373"
+  viaf: "231899280"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q3617681
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q3617681
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q3617681

@@ -1,0 +1,36 @@
+public_id: 101546
+name: Anton Loew
+given_name: Anton
+family_name: Loew
+names:
+  - Anton Löw
+  - lang: ru
+    role: translation
+    text: Антон Лёв
+kind: person
+occupations: [physician, art collector]
+birth: 1847-10-20
+death: 1907-09-14
+wikidata_id: Q94825244
+metadata:
+  sources: [Wikidata Q94825244 (retrieved 2026-10-20)]
+identifiers:
+  gnd: "1020739371"
+  viaf: "232561965"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q94825244
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q94825244
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q94825244
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q94825244

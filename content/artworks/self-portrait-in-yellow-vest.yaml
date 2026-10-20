@@ -1,0 +1,74 @@
+public_id: 101428
+title_lang: de
+title: Selbstbildnis in gelber Weste
+names:
+  - lang: en
+    role: original
+    text: Self-Portrait in Yellow Vest, 1914
+  - lang: en
+    role: original
+    text: Self-Portrait in Yellow Vest
+creator: egon-schiele
+created: 1914
+materials: [gouache paint, pencil]
+dimensions: [48.2, 32]
+institution: albertina
+inventory_number: "31157"
+wikidata_id: Q18684899
+metadata:
+  sources: [Wikidata Q18684899 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Egon_Schiele_-_Self-Portrait_in_Yellow_Vest%2C_1914_-_Google_Art_Project.jpg/1280px-Egon_Schiele_-_Self-Portrait_in_Yellow_Vest%2C_1914_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Self-Portrait_in_Yellow_Vest,_1914_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: person/heinrich-benesch
+    role: estate
+    acquired: 1947
+    method: inheritance
+    place: vienna
+    label: estate of Heinrich Benesch
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/3096/selbstbildnis-in-gelber-weste
+        note: “1951 erworben aus dem Nachlass Heinrich Benesch (1862-1947), Wien”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+  - owner: institution/albertina
+    acquired: 1951
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://sammlungenonline.albertina.at/objects/3096/selbstbildnis-in-gelber-weste
+        note: “1951 erworben aus dem Nachlass Heinrich Benesch (1862-1947), Wien”
+        source: albertina-sammlungen-online
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q18684899
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q18684899
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q18684899
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q18684899
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q18684899
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q18684899
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q18684899

@@ -1,0 +1,100 @@
+public_id: 101322
+title_lang: it
+title: Davide con la testa di Golia
+names:
+  - lang: en
+    role: original
+    text: David with the head of Goliath
+  - lang: fr
+    role: translation
+    text: David avec la tête de Goliath
+  - lang: de
+    role: translation
+    text: David mit dem Haupt des Goliath
+  - lang: es
+    role: translation
+    text: David con la cabeza de Goliat
+  - lang: ja
+    role: translation
+    text: ゴリアテの首を持つダヴィデ (カラヴァッジョ、ウィーン)
+  - lang: ru
+    role: translation
+    text: Давид с головой Голиафа
+creator: caravaggio
+created: 1607
+materials: [oil on panel, poplar panel]
+dimensions: [91, 116]
+institution: kunsthistorisches-museum
+inventory_number: GG_125
+wikidata_id: Q2721037
+metadata:
+  sources: [Wikidata Q2721037 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/David_with_the_Head_of_Goliath-Caravaggio_%28c.1606-7%29.jpg/1280px-David_with_the_Head_of_Goliath-Caravaggio_%28c.1606-7%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:David_with_the_Head_of_Goliath-Caravaggio_(c.1606-7).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: person/juan-de-tassis-2nd-count-of-villamediana
+    ended: 1622
+    place: madrid
+    sources:
+      - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+        note: “Slg. Conte Villamediana (gest. 1622); Slg. Imstenraed, Amsterdam; 1667 in kaiserlichen Besitz gekommen”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Imstenraedt collection
+    place: amsterdam
+    sources:
+      - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+        note: “Slg. Conte Villamediana (gest. 1622); Slg. Imstenraed, Amsterdam; 1667 in kaiserlichen Besitz gekommen”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/habsburg-imperial-collection
+    acquired: 1667
+    place: vienna
+    label: came into imperial possession
+    sources:
+      - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+        note: “Slg. Conte Villamediana (gest. 1622); Slg. Imstenraed, Amsterdam; 1667 in kaiserlichen Besitz gekommen”
+        source: khm-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/kunsthistorisches-museum
+    acquired: 1891-10-17
+    method: transfer
+    direct: true
+    place: vienna
+    label: opening of the museum for the imperial collections
+    sources:
+      - url: https://www.khm.at/fileadmin/content/125jahre/KHM_125-Jahre_Programmfolder_NEUAUFLAGE_0616.pdf
+        note: “Vor 125 Jahren, am 17. Oktober 1891 eröffnete Kaiser Franz Joseph das Kunsthistorische Museum mit dem Ziel, die Schätze des Hauses Habsburg der Bevölkerung öffentlich zugänglich zu machen.”
+        source: khm-125-jahre
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q2721037
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q2721037
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q2721037
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q2721037
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q2721037
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q2721037
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q2721037

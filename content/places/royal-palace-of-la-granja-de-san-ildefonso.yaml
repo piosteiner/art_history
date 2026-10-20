@@ -1,0 +1,50 @@
+public_id: 101190
+name: Royal Palace of La Granja de San Ildefonso
+names:
+  - La Granja Palace, Madrid
+  - lang: nl
+    role: translation
+    text: La Granja (paleis)
+  - lang: fr
+    role: translation
+    text: palais royal de la Granja de San Ildefonso
+  - lang: de
+    role: translation
+    text: Palacio Real La Granja de San Ildefonso
+  - lang: it
+    role: translation
+    text: Palazzo Reale della Granja de San Ildefonso
+  - lang: es
+    role: translation
+    text: Palacio Real de La Granja de San Ildefonso
+  - lang: ja
+    role: translation
+    text: ラ・グランハ宮殿
+  - lang: zh
+    role: translation
+    text: 圣伊尔德丰索宫
+  - lang: ru
+    role: translation
+    text: Ла Гранха
+kind: building
+parent: spain
+country_code: ES
+location: [-4.00458, 40.8975]
+wikidata_id: Q1540732
+metadata:
+  sources: [Wikidata Q1540732 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4625567-9
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q1540732
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q1540732
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q1540732

@@ -1,0 +1,21 @@
+public_id: 101130
+name: Mariana of Austria
+kind: person
+birth: 1634-12-24
+death: 1696-05-16
+wikidata_id: Q311469
+metadata:
+  sources: [Wikidata Q311469 (retrieved 2026-10-19)]
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q311469
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q311469
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q311469

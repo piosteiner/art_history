@@ -1,0 +1,106 @@
+public_id: 101543
+title_lang: de
+title: Die Umarmung (Liebespaar II)
+names:
+  - Man and Woman
+  - Lovers II
+  - lang: en
+    role: translation
+    text: The embrace
+  - lang: nl
+    role: translation
+    text: De Omhelzing
+  - lang: fr
+    role: translation
+    text: L'Étreinte
+  - lang: it
+    role: translation
+    text: L'abbraccio
+  - lang: es
+    role: translation
+    text: El abrazo (pareja de enamorados II)
+creator: egon-schiele
+created: 1917
+materials: [oil paint, canvas]
+dimensions: [100, 170]
+institution: belvedere
+inventory_number: "4438"
+web_url: http://www.egonschieleonline.org/works/paintings/work/p304
+wikidata_id: Q19967004
+metadata:
+  sources: [Wikidata Q19967004 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Egon_Schiele_-_Die_Umarmung_-_4438_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Egon_Schiele_-_Die_Umarmung_-_4438_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Die_Umarmung_-_4438_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Egon Schiele
+provenance:
+  - owner: person/heinrich-rieger
+    ended: 1939
+    place: vienna
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Rieger_Heinrich_2004-11-25.pdf
+        note: “Dr. Heinrich Rieger war Eigentümer einer bedeutenden Kunstsammlung, deren Schwerpunkt das Oeuvre Egon Schieles bildete.”
+        source: kunstrueckgabebeirat-rieger-2004
+        accessed: 2026-10-19
+  - owner: person/friedrich-welz
+    acquired: 1939
+    ended: 1945
+    direct: true
+    place: salzburg
+    notes_md: Heinrich Rieger was persecuted as a Jew; he died in Theresienstadt in 1942.
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Rieger_Heinrich_2004-11-25.pdf
+        note: “Zu Anfang des Jahres 1939 habe Welz einen Teil der Sammlung käuflich erworben, und zwar um 5.650,-- RM, dazu habe er noch einen Brilliantsolitär gegeben.”
+        source: kunstrueckgabebeirat-rieger-2004
+        accessed: 2026-10-19
+  - owner_label: Dr. Robert Rieger and Tanna Berger
+    acquired: 31 May 1948
+    ended: 1950
+    method: restitution
+    direct: true
+    place: new-york-city
+    sources:
+      - url: https://provenienzforschung.gv.at/beiratsbeschluesse/Rieger_Heinrich_2004-11-25.pdf
+        note: “Mit Teilerkenntnis der Rückstellungskommission beim Landesgericht Salzburg vom 31.5.1948 wurde Friedrich Welz verpflichtet, Riegers Erben eine Reihe von Kunstwerken, darunter Schieles "Kardinal und Nonne", "Liebespaar" und "Bildnis seiner Frau" zurückzustellen.”
+        source: kunstrueckgabebeirat-rieger-2004
+        accessed: 2026-10-19
+  - owner: institution/belvedere
+    acquired: 1950
+    method: purchase
+    direct: true
+    place: vienna
+    label: Österreichische Galerie
+    sources:
+      - url: https://sammlung.belvedere.at/objects/3232/die-umarmung
+        note: "“Inventarzugang: 1950 Ankauf Robert Rieger, New York” — read in the Internet Archive’s copy of 2024-11-12: https://web.archive.org/web/20241112232442/https://sammlung.belvedere.at/objects/3232/die-umarmung"
+        source: belvedere-sammlung-online
+        accessed: 2024-11-12
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q19967004
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q19967004
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q19967004
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q19967004
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q19967004
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q19967004
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q19967004

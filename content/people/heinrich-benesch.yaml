@@ -1,0 +1,39 @@
+public_id: 101445
+name: Heinrich Benesch
+given_name: Heinrich
+family_name: Benesch
+kind: person
+occupations: [art collector, collector, art historian]
+birth: 1862-06-07
+death: 1947
+wikidata_id: Q18934866
+metadata:
+  sources: [Wikidata Q18934866 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Egon_Schiele_-_Bildnis_Heinrich_Benesch%2C_1917.jpeg/1280px-Egon_Schiele_-_Bildnis_Heinrich_Benesch%2C_1917.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Bildnis_Heinrich_Benesch,_1917.jpeg
+    license: Public domain
+    credit: Egon Schiele
+identifiers:
+  gnd: "126034311"
+  idref: "258655607"
+  lc: no2006111742
+  ulan: "500505327"
+  viaf: "57592952"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q18934866
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q18934866
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q18934866
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q18934866

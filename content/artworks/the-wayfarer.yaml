@@ -1,0 +1,132 @@
+public_id: 101480
+title_lang: de
+title: Der Wanderer
+names:
+  - lang: en
+    role: original
+    text: The Wayfarer
+creator: koloman-moser
+created: c. 1914
+materials: [oil paint, canvas]
+dimensions: [75.5, 62.4]
+institution: leopold-museum
+inventory_number: LM 584
+wikidata_id: Q28797987
+metadata:
+  sources: [Wikidata Q28797987 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Koloman_Moser_-_The_Wayfarer_-_Google_Art_Project.jpg/1280px-Koloman_Moser_-_The_Wayfarer_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Koloman_Moser_-_The_Wayfarer_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Koloman Moser
+provenance:
+  - owner: artist/koloman-moser
+    role: estate
+    acquired: 1918
+    method: inheritance
+    place: vienna
+    label: estate of Koloman Moser (estate number 170)
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/583-der-wanderer/
+        note: "“Nachlass Koloman Moser, Wien; / Editha Hauska, Wien (1918); (1) / Kunstverlag Wolfrum, Wien (1920); (2) / Auktion: 23. / 24.04.1928, Dorotheum Wien, 387. Kunstauktion, Los Nr. 116; (3) / Auktion: 03.-05.11.1932, Buch- und Kunstantiquariat Dr. Ignaz Schwarz, Wien, Sammlung eines Wiener Kunstfreundes (18. Versteigerung), Los Nr. 35; (4) / Dr. Rudolf Leopold, Wien (vor 1980-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Lieferschein für Leihgaben an das Rheinische Landesmuseum, Bonn vom 08.07.1980”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Editha Hauska
+    acquired: 1918
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/583-der-wanderer/
+        note: "“Nachlass Koloman Moser, Wien; / Editha Hauska, Wien (1918); (1) / Kunstverlag Wolfrum, Wien (1920); (2) / Auktion: 23. / 24.04.1928, Dorotheum Wien, 387. Kunstauktion, Los Nr. 116; (3) / Auktion: 03.-05.11.1932, Buch- und Kunstantiquariat Dr. Ignaz Schwarz, Wien, Sammlung eines Wiener Kunstfreundes (18. Versteigerung), Los Nr. 35; (4) / Dr. Rudolf Leopold, Wien (vor 1980-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Lieferschein für Leihgaben an das Rheinische Landesmuseum, Bonn vom 08.07.1980”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/kunstverlag-wolfrum
+    role: dealer
+    acquired: 1920
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/583-der-wanderer/
+        note: "“Nachlass Koloman Moser, Wien; / Editha Hauska, Wien (1918); (1) / Kunstverlag Wolfrum, Wien (1920); (2) / Auktion: 23. / 24.04.1928, Dorotheum Wien, 387. Kunstauktion, Los Nr. 116; (3) / Auktion: 03.-05.11.1932, Buch- und Kunstantiquariat Dr. Ignaz Schwarz, Wien, Sammlung eines Wiener Kunstfreundes (18. Versteigerung), Los Nr. 35; (4) / Dr. Rudolf Leopold, Wien (vor 1980-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Lieferschein für Leihgaben an das Rheinische Landesmuseum, Bonn vom 08.07.1980”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+    records:
+      - kind: exhibition
+        date: 1920-11-23/1920-12-15
+        note: „Schreitender Akt“
+        place: vienna
+        number: "170"
+        document: Kolo Moser-Nachlass-Ausstellung
+  - owner: institution/dorotheum
+    role: agent
+    numbers:
+      - kind: lot
+        number: "116"
+    acquired: 1928-04-23/1928-04-24
+    method: auction
+    place: vienna
+    label: 387th art auction
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/583-der-wanderer/
+        note: "“Nachlass Koloman Moser, Wien; / Editha Hauska, Wien (1918); (1) / Kunstverlag Wolfrum, Wien (1920); (2) / Auktion: 23. / 24.04.1928, Dorotheum Wien, 387. Kunstauktion, Los Nr. 116; (3) / Auktion: 03.-05.11.1932, Buch- und Kunstantiquariat Dr. Ignaz Schwarz, Wien, Sammlung eines Wiener Kunstfreundes (18. Versteigerung), Los Nr. 35; (4) / Dr. Rudolf Leopold, Wien (vor 1980-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Lieferschein für Leihgaben an das Rheinische Landesmuseum, Bonn vom 08.07.1980”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner_label: Buch- und Kunstantiquariat Dr. Ignaz Schwarz
+    role: agent
+    numbers:
+      - kind: lot
+        number: "35"
+    acquired: 1932-11-03/1932-11-05
+    method: auction
+    place: vienna
+    label: 18th sale, Sammlung eines Wiener Kunstfreundes
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/583-der-wanderer/
+        note: "“Nachlass Koloman Moser, Wien; / Editha Hauska, Wien (1918); (1) / Kunstverlag Wolfrum, Wien (1920); (2) / Auktion: 23. / 24.04.1928, Dorotheum Wien, 387. Kunstauktion, Los Nr. 116; (3) / Auktion: 03.-05.11.1932, Buch- und Kunstantiquariat Dr. Ignaz Schwarz, Wien, Sammlung eines Wiener Kunstfreundes (18. Versteigerung), Los Nr. 35; (4) / Dr. Rudolf Leopold, Wien (vor 1980-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Lieferschein für Leihgaben an das Rheinische Landesmuseum, Bonn vom 08.07.1980”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: person/rudolf-leopold
+    acquired: before 1980
+    place: vienna
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/583-der-wanderer/
+        note: "“Nachlass Koloman Moser, Wien; / Editha Hauska, Wien (1918); (1) / Kunstverlag Wolfrum, Wien (1920); (2) / Auktion: 23. / 24.04.1928, Dorotheum Wien, 387. Kunstauktion, Los Nr. 116; (3) / Auktion: 03.-05.11.1932, Buch- und Kunstantiquariat Dr. Ignaz Schwarz, Wien, Sammlung eines Wiener Kunstfreundes (18. Versteigerung), Los Nr. 35; (4) / Dr. Rudolf Leopold, Wien (vor 1980-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Lieferschein für Leihgaben an das Rheinische Landesmuseum, Bonn vom 08.07.1980”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+  - owner: institution/leopold-museum
+    acquired: 1994
+    method: transfer
+    direct: true
+    place: vienna
+    label: brought into the Leopold Museum-Privatstiftung
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/583-der-wanderer/
+        note: "“Nachlass Koloman Moser, Wien; / Editha Hauska, Wien (1918); (1) / Kunstverlag Wolfrum, Wien (1920); (2) / Auktion: 23. / 24.04.1928, Dorotheum Wien, 387. Kunstauktion, Los Nr. 116; (3) / Auktion: 03.-05.11.1932, Buch- und Kunstantiquariat Dr. Ignaz Schwarz, Wien, Sammlung eines Wiener Kunstfreundes (18. Versteigerung), Los Nr. 35; (4) / Dr. Rudolf Leopold, Wien (vor 1980-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Lieferschein für Leihgaben an das Rheinische Landesmuseum, Bonn vom 08.07.1980”"
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-19
+sources:
+  names:
+    - accessed: 2026-10-19
+      wikidata: Q28797987
+  created:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q28797987
+  creator:
+    - accessed: 2026-10-19
+      property: P170
+      wikidata: Q28797987
+  materials:
+    - accessed: 2026-10-19
+      property: P186
+      wikidata: Q28797987
+  dimensions:
+    - accessed: 2026-10-19
+      property: P2048
+      wikidata: Q28797987
+  institution:
+    - accessed: 2026-10-19
+      property: P195
+      wikidata: Q28797987
+  inventory_number:
+    - accessed: 2026-10-19
+      property: P217
+      wikidata: Q28797987

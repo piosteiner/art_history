@@ -1,0 +1,49 @@
+public_id: 101446
+name: Arthur Roessler
+given_name: Arthur
+family_name: Roessler
+names:
+  - Arthur Roeßler
+  - A. Roeßler
+  - A. Roessler
+  - Arthur Rössler
+  - lang: ru
+    role: translation
+    text: Артур Рёслер
+kind: person
+occupations: [art critic, writer, art historian, historian]
+birth: 1877-02-20
+death: 1955-07-20
+wikidata_id: Q711175
+metadata:
+  sources: [Wikidata Q711175 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Egon_Schiele_060.jpg/1280px-Egon_Schiele_060.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_060.jpg
+    license: Public domain
+    credit: Egon Schiele
+identifiers:
+  gnd: "118993070"
+  idref: 08339575X
+  lc: n84114561
+  nlk: KAC200404024
+  rkd: "450817"
+  ulan: "500325029"
+  viaf: "50025979"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q711175
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q711175
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q711175
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q711175

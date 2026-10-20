@@ -1,0 +1,74 @@
+public_id: 101352
+name: Clement VII
+names:
+  - lang: la
+    role: original
+    text: Clemens PP. VII
+  - Pope Clement VII
+  - Giulio de’ Medici
+  - Giulio di Giuliano de Medici
+  - Julius de Medicis
+  - lang: nl
+    role: translation
+    text: Paus Clemens VII
+  - lang: fr
+    role: translation
+    text: Clément VII
+  - lang: de
+    role: translation
+    text: Clemens VII.
+  - lang: it
+    role: translation
+    text: papa Clemente VII
+  - lang: es
+    role: translation
+    text: Clemente VII
+  - lang: ja
+    role: translation
+    text: クレメンス7世
+  - lang: zh
+    role: translation
+    text: 克勉七世
+  - lang: ko
+    role: translation
+    text: 교황 클레멘스 7세
+  - lang: ru
+    role: translation
+    text: Климент VII
+kind: person
+occupations: [Catholic priest, transitional deacon]
+birth: 1478-06-04
+death: 1534-10-05
+wikidata_id: Q83159
+metadata:
+  sources: [Wikidata Q83159 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/El_papa_Clemente_VII%2C_por_Sebastiano_del_Piombo.jpg/1280px-El_papa_Clemente_VII%2C_por_Sebastiano_del_Piombo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_papa_Clemente_VII,_por_Sebastiano_del_Piombo.jpg
+    license: Public domain
+    credit: Sebastiano del Piombo
+identifiers:
+  bnf: 13623902x
+  gnd: "118723510"
+  idref: "072315563"
+  lc: n88002890
+  nlk: KAC199633289
+  ulan: "500353928"
+  viaf: "90633828"
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q83159
+  birth:
+    - accessed: 2026-10-19
+      property: P569
+      wikidata: Q83159
+  death:
+    - accessed: 2026-10-19
+      property: P570
+      wikidata: Q83159
+  occupations:
+    - accessed: 2026-10-19
+      property: P106
+      wikidata: Q83159

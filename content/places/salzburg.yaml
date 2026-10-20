@@ -1,0 +1,46 @@
+public_id: 101513
+name: Salzburg
+names:
+  - lang: fr
+    role: translation
+    text: Salzbourg
+  - lang: it
+    role: translation
+    text: Salisburgo
+  - lang: es
+    role: translation
+    text: Salzburgo
+  - lang: ja
+    role: translation
+    text: ザルツブルク
+  - lang: zh
+    role: translation
+    text: 萨尔茨堡
+  - lang: ko
+    role: translation
+    text: 잘츠부르크
+  - lang: ru
+    role: translation
+    text: Зальцбург
+kind: settlement
+parent: state-of-salzburg
+country_code: AT
+location: [13.045, 47.8]
+wikidata_id: Q34713
+metadata:
+  sources: [Wikidata Q34713 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4076982-3
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q34713
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q34713
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q34713

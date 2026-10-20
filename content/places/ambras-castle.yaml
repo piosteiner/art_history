@@ -1,0 +1,44 @@
+public_id: 101367
+name: Ambras Castle
+names:
+  - Schloss Ambras
+  - lang: fr
+    role: translation
+    text: château d'Ambras
+  - lang: it
+    role: translation
+    text: castello di Ambras
+  - lang: es
+    role: translation
+    text: Castillo Ambras
+  - lang: ja
+    role: translation
+    text: アムブラス城
+  - lang: zh
+    role: translation
+    text: 安布拉斯城
+  - lang: ru
+    role: translation
+    text: замок Амбрас
+kind: site
+parent: innsbruck
+country_code: AT
+location: [11.43472, 47.25667]
+wikidata_id: Q700764
+metadata:
+  sources: [Wikidata Q700764 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4001643-2
+sources:
+  kind:
+    - accessed: 2026-10-19
+      property: P31
+      wikidata: Q700764
+  parent:
+    - accessed: 2026-10-19
+      property: P131
+      wikidata: Q700764
+  location:
+    - accessed: 2026-10-19
+      property: P625
+      wikidata: Q700764
