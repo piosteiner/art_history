@@ -90,7 +90,8 @@ const PROVENANCE_KEYS = ['owner', 'owner_label', 'co_owners', 'role', 'acquired'
 const RECORD_KEYS = ['kind', 'date', 'date_label', 'place', 'room', 'number', 'number_certainty', 'document', 'certainty', 'note'];
 const HOLDER_ROLES = ['owner', 'dealer', 'agent', 'estate', 'custodian', 'publisher', 'foundry', 'trustee', 'possessor', 'event'];
 const ACQUISITION_METHODS = ['creation', 'commission', 'inheritance', 'purchase', 'auction', 'gift', 'bequest', 'exchange',
-  'confiscation', 'forced_sale', 'restitution', 'settlement', 'transfer', 'theft', 'claim', 'dissolution', 'unknown'];
+  'confiscation', 'forced_sale', 'restitution', 'settlement', 'transfer', 'theft', 'claim', 'dissolution',
+  'find', 'partage', 'spoils_of_war', 'in_lieu', 'unknown'];  // the four before unknown: migration 120
 const SLUG = /^[a-z0-9]+(-[a-z0-9]+)*$/;
 const LEGACY_ALT = ['alt_names', 'alt_titles'];  // before migration 022: plain lists → names with role "alternative"
 

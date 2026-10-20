@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Provenance: four acquisition methods and five historical currencies (migration 120)
+- **What:** `acquisition_method` gets `find` (found or excavated), `partage` (division of excavation finds — the
+  Louvre's "partage après fouilles"), `spoils_of_war` (taken in war, a war contribution under a treaty — the Louvre's
+  "conquête militaire") and `in_lieu` (accepted in payment of a tax, French "dation"); in the step form, the import,
+  the API and the site (labels "found", "partage of finds", "spoils of war", "in lieu of tax"; spoils of war counts as
+  taken). `currencies`: LIV (livre tournois), SCU (Roman scudo), DUC (Venetian ducat), FIOR (Florentine florin), PIA
+  (Ottoman piastre) — codes only, no rates (pinned). E2E `provenance-methods.spec.js`.
+- **Why:** owner: the French and Italian museums' provenances must be recorded exactly — "if there is something we
+  can't recreate, create the option to do so".
+- **Revert:** values can't be dropped from an enum: leave them unused, or recreate the type; `DELETE FROM currencies
+  WHERE code IN ('LIV','SCU','DUC','FIOR','PIA');` delete `120_…` from `schema_migrations`.
+
 ### Changelog: notices for unpublished entries and unsaved drafts; spell check language recognised
 - **What:** an unpublished entry's edit page says "Saved, but not published — not on the site" with "Publish now"
   (`POST /changelog/<id>/publish`); the list names the saved-but-unpublished entries and this account's autosaved

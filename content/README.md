@@ -66,7 +66,7 @@ provenance:
     acquired: 1926
     method: inheritance               # creation, commission, inheritance, purchase, auction, gift, bequest, exchange,
                                       # transfer, confiscation, theft, forced_sale, restitution, settlement, claim,
-                                      # dissolution, unknown (default)
+                                      # dissolution, find, partage, spoils_of_war, in_lieu (120), unknown (default)
     place: sorel-moussel              # where the work was (place slug)
     ended: 1952                       # only if a source says so — otherwise the next acquisition implies the end
   - owner: person/emil-georg-buhrle

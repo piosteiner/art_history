@@ -362,7 +362,9 @@ period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
   "28 October 1904 or earlier" (`from` is `null`), "after 1952", "before 1928".
 - `acquired` / `ended` are dates (`ended` only when a source records it); `method`: creation · commission · inheritance ·
   purchase · auction · gift · bequest · exchange · confiscation · forced_sale · restitution · settlement (073: kept
-  after an agreement with claimants — a "just and fair solution") · unknown;
+  after an agreement with claimants — a "just and fair solution") · transfer · theft · claim · dissolution · find (120:
+  found or excavated) · partage (division of excavation finds) · spoils_of_war (taken in war, a war contribution under a
+  treaty) · in_lieu (accepted in payment of a tax, French dation) · unknown;
   `direct`: the handover from the previous owner is documented (false = possibly someone in between).
 - `period` is **computed**: from the acquisition to … — `end_basis` says what:
   `recorded` (the step's own `ended`) · `implied` (the next owner's acquisition — of the chain: custody steps don't
