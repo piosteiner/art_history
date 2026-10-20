@@ -1,6 +1,6 @@
 // The public changelog and roadmap (migration 118, src/admin/routes/changelog.js, GET /v1/changelog, /v1/roadmap):
 // bullets one per line with their kind, drafts off the site, an item marked done written into today's entry.
-const { test, expect, sql, API } = require('./helpers');
+const { test, expect, sql, API, BASE } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const today = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Zurich' }).format(new Date());
@@ -95,9 +95,16 @@ test('changelog: autosaved draft restored, edits in place in the history, a dele
     AND txid = (SELECT max(txid) FROM audit_log WHERE table_name = 'changelog_items')`)).toBe('update');
   await expect(userA.locator('table.diff')).toContainText('Live-Formatierung');
 
-  // deleted (after a confirmation) …
-  userA.once('dialog', (d) => d.accept());
-  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Delete this entry")')]);
+  // deleted only after confirming on a page of its own: a bare POST deletes nothing, Cancel goes back
+  const bare = await userA.request.post(`${BASE}/changelog/${id}/delete`, { form: { x: '1' }, headers: { Origin: BASE }, maxRedirects: 0 });
+  expect([bare.status(), bare.headers().location]).toEqual([303, `/changelog/${id}/delete`]);
+  expect(sql(`SELECT count(*) FROM changelog_entries WHERE id = ${id}`)).toBe('1');
+  await userA.click('a:has-text("Delete this entry…")');
+  await expect(userA.locator('main')).toContainText('2 bullet points');
+  await userA.click('main a.button:has-text("Cancel")');
+  await expect(userA).toHaveURL(new RegExp(`/changelog/${id}/edit$`));
+  await userA.click('a:has-text("Delete this entry…")');
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Yes, delete")')]);
   await expect(userA.locator('.recently-deleted')).toContainText('29. September 2026');
   // … and restored as it was before: same id, both bullets
   await userA.locator('.recently-deleted li', { hasText: '29. September 2026' }).locator('a:has-text("restore…")').click();
@@ -127,8 +134,9 @@ test('roadmap: the edit form autosaves, a deleted item comes back from the histo
   await userA.click('.form-draft button:has-text("Discard draft")');
   await expect(userA.locator('#rm-title')).toHaveValue('Historische Karten');
 
-  userA.once('dialog', (d) => d.accept());
-  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Delete this item")')]);
+  await userA.click('a:has-text("Delete this item…")');
+  await expect(userA.locator('h1')).toHaveText('Delete “Historische Karten”?');
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Yes, delete")')]);
   await userA.locator('.recently-deleted li', { hasText: 'Historische Karten' }).first().locator('a:has-text("restore…")').click();
   await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Restore")')]);
   await expect(userA).toHaveURL(new RegExp(`/roadmap/${id}/edit\\?done=restored`));

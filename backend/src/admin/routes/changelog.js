@@ -103,7 +103,7 @@ function entryForm(e, { action, items = '', flash = null, preview = null, isNew 
       <div class="actions"><button>${isNew ? 'Create' : 'Save'}</button> ${draftStatus}</div>
     </form>
     ${preview ? html`<h2>As on the site</h2><ul class="changelog-preview">${preview}</ul>` : ''}
-    ${isNew ? '' : html`<form method="post" action="/changelog/${String(e.id)}/delete" class="actions" style="margin-top:1.5rem" data-confirm="Delete this entry and its bullet points? (It can be restored from the history.)"><button class="danger">Delete this entry</button></form>`}
+    ${isNew ? '' : html`<p class="actions" style="margin-top:1.5rem"><a class="button danger" href="/changelog/${String(e.id)}/delete">Delete this entry…</a></p>`}
     ${past}` };
 }
 const previewOf = async (items) => {
@@ -207,9 +207,26 @@ router.post('/changelog/:id', async (req, res) => {
   res.redirect(303, `/changelog/${e.id}/edit?done=saved`);
 });
 
+// Deleting takes a second step on a page of its own (owner, 2026-10-20: an entry was deleted by accident): what goes
+// is shown, and only "Yes, delete" (confirm=yes) deletes — a stray POST or a double click doesn't.
+const confirmPage = ({ title, what, action, back }) => ({ title, body: html`<p class="muted"><a href="${back}">← Back</a></p>
+  <h1>${title}</h1>${what}
+  <p>It can be restored from the history (“Recently deleted”), but it is gone from the site at once.</p>
+  <form method="post" action="${action}" class="actions"><input type="hidden" name="confirm" value="yes">
+    <button class="danger">Yes, delete</button> <a class="button" href="${back}">Cancel</a></form>` });
+
+router.get('/changelog/:id/delete', async (req, res) => {
+  const e = await entry(req.params.id);
+  if (!e) return notFoundPage(req, res);
+  send(req, res, confirmPage({ title: `Delete ${dayLabel(e.day)}?`, action: `/changelog/${e.id}/delete`, back: `/changelog/${e.id}/edit`,
+    what: html`<p><b>${dayLabel(e.day)}</b>${e.title ? ` · ${e.title}` : ''} — ${e.published ? 'published' : 'draft'}, ${String(e.items.length)} bullet point${e.items.length === 1 ? '' : 's'}:</p>
+      <ul class="changelog-preview">${e.items.length ? await previewOf(e.items) : ''}</ul>` }));
+});
+
 router.post('/changelog/:id/delete', async (req, res) => {
   const e = await entry(req.params.id);
   if (!e) return notFoundPage(req, res);
+  if (req.body.confirm !== 'yes') return res.redirect(303, `/changelog/${e.id}/delete`);
   await withTx(req.user, (db) => db.query('DELETE FROM changelog_entries WHERE id = $1', [e.id]));
   res.redirect(303, '/changelog?done=deleted');
 });
@@ -398,7 +415,7 @@ router.get('/roadmap/:id/edit', async (req, res) => {
   send(req, res, { title: r.title, body: html`<p class="muted"><a href="/roadmap">← Roadmap</a></p><h1>${r.title}</h1>
     ${draftBanner(draft, key)}
     ${itemForm(withDraft(r, draft), { action: `/roadmap/${r.id}`, submit: 'Save', key, base: stamp(r.updated_at) })}
-    <form method="post" action="/roadmap/${String(r.id)}/delete" class="actions" style="margin-top:1.5rem" data-confirm="Delete this roadmap item? (It can be restored from the history.)"><button class="danger">Delete this item</button></form>
+    <p class="actions" style="margin-top:1.5rem"><a class="button danger" href="/roadmap/${String(r.id)}/delete">Delete this item…</a></p>
     <h2>History</h2>${historyTable(past, { showWhat: false })}` });
 });
 
@@ -415,8 +432,17 @@ router.post('/roadmap/:id', async (req, res) => {
   res.redirect(303, '/roadmap?done=saved');
 });
 
+router.get('/roadmap/:id/delete', async (req, res) => {
+  if (!idOk(req.params.id)) return notFoundPage(req, res);
+  const { rows: [r] } = await adminPool.query('SELECT id, title, area, status, published FROM roadmap_items WHERE id = $1', [req.params.id]);
+  if (!r) return notFoundPage(req, res);
+  send(req, res, confirmPage({ title: `Delete “${r.title}”?`, action: `/roadmap/${r.id}/delete`, back: `/roadmap/${r.id}/edit`,
+    what: html`<p><b>${r.title}</b>${r.area ? html` <span class="tag">${r.area}</span>` : ''} — ${STATUS[r.status]}, ${r.published ? 'on the site' : 'hidden'}.</p>` }));
+});
+
 router.post('/roadmap/:id/delete', async (req, res) => {
   if (!idOk(req.params.id)) return notFoundPage(req, res);
+  if (req.body.confirm !== 'yes') return res.redirect(303, `/roadmap/${req.params.id}/delete`);
   await withTx(req.user, (db) => db.query('DELETE FROM roadmap_items WHERE id = $1', [req.params.id]));
   res.redirect(303, '/roadmap?done=deleted');
 });

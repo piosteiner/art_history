@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Changelog and roadmap: deleting needs a confirmation page
+- **What:** "Delete this entry…" / "Delete this item…" open a page of their own that shows what will be deleted
+  (day, title, status, the bullets); only "Yes, delete" (`confirm=yes`) deletes — a POST without it redirects to that
+  page. Replaces the browser dialog of the commit before (easy to click through, depends on the script). E2E
+  `changelog.spec.js`.
+- **Why:** owner: deleting a changelog entry must ask first, to prevent accidental deletion.
+- **Revert:** revert the commit.
+
 ### Changelog and roadmap: autosave, history and restore (migration 119); a deleted entry restored
 - **What:** table `form_drafts` — the changelog and roadmap forms send what is typed as a draft of the account 1.5 s
   after typing pauses (also when the tab is hidden), restored with a banner when the form is opened again, removed on
