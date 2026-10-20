@@ -120,6 +120,9 @@ function onRoute(route: Route) {
     case 'privacy':
       privacy(main);
       break;
+    case 'page':
+      cleanup = lazyView(() => import('./views/page').then((m) => () => m.page(main, route.slug)));
+      break;
     case 'periods':
       cleanup = lazyView(() => import('./views/periods').then((m) => () => m.periodsPage(main, route.params)));
       break;

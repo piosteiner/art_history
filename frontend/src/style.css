@@ -795,3 +795,21 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 /* how a search was read ("· gauguin · not in: kunsthaus zürich") and its correction ("did you mean …?") — src/query.ts, API 113 */
 .query-read { color: var(--muted); font-size: .9em; }
 .query-fix { font-size: .95em; }
+
+/* a text page written in the CMS (views/page.ts, API 114): the project documentation */
+.doc-page { max-width: 46rem; }
+.doc-page .doc-body img { max-width: 100%; height: auto; display: block; margin: .8rem 0; border-radius: 4px; }
+.doc-page .page-figure { display: block; margin: .8rem 0; }
+.doc-page .page-caption { display: block; font-size: .85rem; color: var(--muted); }
+.doc-page .page-image-missing { display: none; }
+.doc-page mark { background: var(--mark); color: #1b1a17; padding: 0 .1em; }
+.doc-page li.task { list-style: none; margin-left: -1.2rem; }
+.doc-page .task-box { display: inline-block; width: 1.2rem; }
+.doc-page table { border-collapse: collapse; margin: .8rem 0; font-size: .92rem; display: block; overflow-x: auto; }
+.doc-page th, .doc-page td { border: 1px solid var(--line); padding: .3rem .5rem; text-align: left; vertical-align: top; }
+.doc-page pre { overflow-x: auto; padding: .6rem .8rem; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; }
+.doc-page h1:not(:first-child), .doc-page .doc-body h1 { font-size: 1.7rem; margin-top: 2.2rem; }
+.doc-page .doc-body h5 { font-size: .95rem; color: var(--muted); margin-bottom: .2rem; }
+.doc-toc { margin: 1rem 0 1.5rem; } .doc-toc summary { cursor: pointer; font-weight: 600; }
+.doc-toc ol { margin: .4rem 0 0; padding-left: 1.2rem; } .doc-toc .doc-toc-1 { margin-left: 1rem; font-size: .92rem; }
+.doc-page .doc-body { hyphens: auto; }

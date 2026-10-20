@@ -106,6 +106,9 @@ export interface ListParams extends Params {
 }
 
 export const getHealth = () => get<{ status: string; db: string }>('/health');
+/** A text page written in the CMS (API 114): sanitized HTML, the headings for a table of contents. 404 until published. */
+export interface Page { slug: string; title: string; lang: string; html: string; toc: { level: number; id: string; text: string }[]; updated_at: string }
+export const getPage = (slug: string) => get<Page>(`/pages/${encodeURIComponent(slug)}`);
 
 export const listEntities = <P extends Plural>(plural: P, params: ListParams = {}) =>
   get<List<ItemByPlural[P]>>(`/${plural}`, params);

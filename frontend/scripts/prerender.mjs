@@ -203,6 +203,21 @@ await write('provenance/1933-1945/index.html', page(template, {
   body: '<section class="page" data-prerendered><h1>Through whose hands, 1933–1945</h1><p>The holders and handovers load with the page.</p></section>',
 }));
 urls.push(`${SITE}/provenance/1933-1945/`);
+// the project documentation (API 114): the whole text for crawlers and link previews once it is published, the app
+// shell (kept out of search engines) until then
+const doc = await fetch(`${API}/pages/projekt-dokumentation`, { headers: { Accept: 'application/json' } })
+  .then((r) => (r.ok ? r.json() : null)).catch(() => null);
+if (doc) {
+  const first = doc.html.replace(/<h\d[^>]*>.*?<\/h\d>/gs, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  await write('dokumentation/index.html', page(template, {
+    title: `${doc.title} · Art History`, url: `${SITE}/dokumentation/`,
+    description: first.length > 200 ? `${first.slice(0, 197).replace(/\s\S*$/, '')} …` : first,
+    body: `<article class="page prose-page doc-page" lang="${esc(doc.lang)}" data-prerendered><h1>${esc(doc.title)}</h1>${doc.html}</article>`,
+  }));
+  urls.push(`${SITE}/dokumentation/`);
+} else {
+  await write('dokumentation/index.html', page(template, { title: 'Projekt Dokumentation · Art History', description: SITE_DESCRIPTION, noindex: true }));
+}
 // the search page: served with 200 (not the 404 shell), but kept out of search engines — results follow the query
 await write('search/index.html', page(template, { title: 'Search · Art History', description: SITE_DESCRIPTION, noindex: true }));
 
