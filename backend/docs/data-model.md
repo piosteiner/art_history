@@ -622,3 +622,9 @@ phases' works). `movement_artists` (view, 112): artists linked directly (`associ
 via `artist`, the links' dates merged with `range_merge(range_agg(period))`) or creators/co-creators of its works (via
 `works`); rolled up the same way. `/v1/periods` serves both.
 
+## Did you mean, number reach (migration 113)
+`search_words` (MATERIALIZED VIEW: word, display = `mode() WITHIN GROUP`, n, Double Metaphone `sound`; GIN trigram +
+b-tree; refreshed by `refresh_quality()`; read from `dup_facts`, as `entity_index` can't be materialized — 093) and
+`search_suggest(q)`. `provenance_number_kinds.scope` (global / holder); `provenance_number_peers(number id)`,
+`provenance_record_peers(record id)` — the other works sharing a number within its reach.
+

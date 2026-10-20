@@ -8,6 +8,7 @@ const periods = require('./periods');
 const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
+const { fold } = require('../fold');
 
 const router = express.Router();
 
@@ -57,6 +58,8 @@ router.get('/search', async (req, res) => {
 // Full-text search (087): names AND texts — biographies, descriptions, definitions, provenance steps. Web-search
 // syntax: "a phrase", -excluded, or. Stemmed in English, German and French ("paintings" finds "painted", "Gemälde"
 // "Gemälden"), accents folded; names also by trigram similarity, so a typo ("Gaugin") still finds the name.
+// ?in= / ?not_in= (113, may repeat): only artworks whose current collection — the institution's names or its city —
+// has every word of the phrase ("kunsthaus zurich", "zurich") / leave those out (other types stay).
 // One row per entry: matched_in name | text | provenance (the provenance steps that matched: provenance_ids),
 // headline_html = the matching passage, the words in <mark>. ?type=artwork narrows, ?limit= (≤ 100) & ?offset= page.
 const SEARCH_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'term', 'source', 'event'];
@@ -68,6 +71,12 @@ router.get('/search/text', async (req, res) => {
   const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 20, 1), 100);
   const offset = Math.max(parseInt(req.query.offset, 10) || 0, 0);
   if (q.length < 2) return res.json({ data: [], total: 0 });
+  const phrases = (v) => (v === undefined ? null : [].concat(v).map((x) => fold(String(x)).replace(/[^\p{L}\p{N}]+/gu, ' ').trim()).filter(Boolean).slice(0, 5));
+  const [within, without] = [phrases(req.query.in), phrases(req.query.not_in)];
+  // the artwork's current collection as folded text: the institution's names and its city
+  const coll = `(SELECT lower(f_unaccent(concat_ws(' ', i.name, name_alt_text(i.name_ruby, i.names), pl.name))) FROM artworks w
+    JOIN institutions i ON i.id = w.current_institution_id LEFT JOIN places pl ON pl.id = i.place_id WHERE w.id = e.id)`;
+  const has = () => `coalesce((SELECT bool_and(strpos(coalesce(${coll}, ''), x) > 0) FROM regexp_split_to_table(ph, '\\s+') x), false)`;
   const { rows } = await apiPool.query(`
     WITH q AS (SELECT search_query($1) AS q),
     -- the documents that match: one per entry, one per provenance step (GIN indexes, 087)
@@ -94,9 +103,11 @@ router.get('/search/text', async (req, res) => {
            count(*) OVER () AS total
     FROM entity_index e
     LEFT JOIN per_entry p ON (p.type, p.id) = (e.type, e.id)
-    WHERE p.id IS NOT NULL OR (e.type, e.id) IN (SELECT type, id FROM near)
+    WHERE (p.id IS NOT NULL OR (e.type, e.id) IN (SELECT type, id FROM near))
+      AND ($5::text[] IS NULL OR (e.type = 'artwork' AND NOT EXISTS (SELECT 1 FROM unnest($5::text[]) ph WHERE NOT ${has()})))
+      AND ($6::text[] IS NULL OR e.type <> 'artwork' OR NOT EXISTS (SELECT 1 FROM unnest($6::text[]) ph WHERE ${has()}))
     ORDER BY score DESC, e.sort_key COLLATE sort_natural
-    LIMIT $3 OFFSET $4`, [q, type, limit, offset]);
+    LIMIT $3 OFFSET $4`, [q, type, limit, offset, within && within.length ? within : null, without && without.length ? without : null]);
   const plural = Object.fromEntries(Object.entries(ENTITIES).map(([k, v]) => [v.type, k]));
   res.json({
     total: rows.length ? Number(rows[0].total) : 0,
@@ -106,6 +117,19 @@ router.get('/search/text', async (req, res) => {
       headline_html: headline ? escapeHtml(headline).replace(/\x01/g, '<mark>').replace(/\x02/g, '</mark>') : null,
     })),
   });
+});
+
+// "Did you mean …?" (113): each word of the query that is no word of any entry's names, replaced by the nearest that
+// is (few edits — trigrams, Levenshtein, the same Double Metaphone sound): ?q=hokusia → {query: "Hokusai", words: […]}.
+// query is null when every word is known. Only the words change: quotes, minus signs and the rest stay as typed.
+router.get('/search/suggest', async (req, res) => {
+  const q = typeof req.query.q === 'string' ? req.query.q.slice(0, 200) : '';
+  if (q.trim().length < 3) return res.json({ query: null, words: [] });
+  const { rows } = await apiPool.query('SELECT word, suggestion, edits FROM search_suggest($1)', [q]);
+  if (!rows.length) return res.json({ query: null, words: [] });
+  const fix = new Map(rows.map((r) => [r.word, r.suggestion]));
+  const query = q.replace(/\p{L}+/gu, (w) => fix.get(fold(w)) ?? w);
+  res.json({ query, words: rows.map((r) => ({ from: r.word, to: r.suggestion, edits: r.edits })) });
 });
 
 // Curated start views (migration 069): published ones, in their order. The query read through
@@ -196,6 +220,9 @@ router.get('/provenance-numbers', async (req, res) => {
   const number = typeof req.query.number === 'string' ? req.query.number.trim().slice(0, 60) : '';
   if (!number) return res.json({ data: [] });
   const kind = typeof req.query.kind === 'string' && /^[a-z_]+$/.test(req.query.kind) ? req.query.kind : null;
+  // ?of=n<id> (a step's number) / r<id> (a record's number): only that number's series — the step or record and those
+  // sharing it within its reach (113) — not every "244" of every inventory
+  const of = /^([nr])(\d{1,15})$/.exec(String(req.query.of || ''));
   const { rows } = await apiPool.query(`
     SELECT n.kind, k.label AS kind_label, n.number, jsonb_build_object('slug', w.slug, 'title', w.title) AS artwork,
            pp."position", pp.owner_name, range_json(pp.period, pp.period_label) AS period,
@@ -203,7 +230,10 @@ router.get('/provenance-numbers', async (req, res) => {
     FROM provenance_numbers_all n JOIN provenance_number_kinds k ON k.code = n.kind
     JOIN provenance_periods pp ON pp.id = n.provenance_id JOIN artworks w ON w.id = pp.artwork_id
     WHERE lower(n.number) = lower($1) AND ($2::text IS NULL OR n.kind = $2)
-    ORDER BY k.position, w.title COLLATE sort_natural`, [number, kind]);
+      AND ($3::text IS NULL OR ($3 = 'n' AND n.record_id IS NULL AND n.provenance_id IN (
+             SELECT provenance_id FROM provenance_numbers WHERE id = $4 UNION SELECT provenance_id FROM provenance_number_peers($4)))
+        OR ($3 = 'r' AND n.record_id IN (SELECT $4 UNION SELECT record_id FROM provenance_record_peers($4))))
+    ORDER BY k.position, w.title COLLATE sort_natural`, [number, kind, of ? of[1] : null, of ? of[2] : null]);
   res.json({ data: rows });
 });
 

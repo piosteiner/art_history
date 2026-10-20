@@ -378,13 +378,16 @@ const EXTRAS = {
              -- 077: further places in order, the step's numbers, the event it belongs to
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', l.slug, 'name', l.name, 'period', range_json(x.period, x.period_label)) ORDER BY x.position), '[]')
                 FROM provenance_places x JOIN places l ON l.id = x.place_id WHERE x.provenance_id = p.id) AS further_places,
-             (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', n.kind, 'label', k.label, 'number', n.number) ORDER BY n.position), '[]')
+             -- 113: shared = other works recording the same number within its reach (the site links it only then)
+             (SELECT coalesce(jsonb_agg(jsonb_build_object('id', n.id, 'kind', n.kind, 'label', k.label, 'number', n.number,
+                       'shared', (SELECT count(DISTINCT x.artwork_id) FROM provenance_number_peers(n.id) x)) ORDER BY n.position), '[]')
                 FROM provenance_numbers n JOIN provenance_number_kinds k ON k.code = n.kind WHERE n.provenance_id = p.id) AS numbers,
              (SELECT jsonb_build_object('slug', ev.slug, 'name', ev.name) FROM provenance pv JOIN events ev ON ev.id = pv.event_id WHERE pv.id = p.id) AS event,
              -- 104: the records under the step — inventory entries, catalogues, exhibitions, sightings — by date
              (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', r.kind, 'date', range_json(r.date, r.date_label),
                        'place', CASE WHEN l.id IS NOT NULL THEN jsonb_build_object('slug', l.slug, 'name', l.name) END,
-                       'room', r.room, 'number', r.number, 'number_certainty', r.number_certainty, 'document', r.document,
+                       'room', r.room, 'number', r.number, 'number_certainty', r.number_certainty, 'document', r.document, 'id', r.id,
+                       'shared', CASE WHEN r.number IS NOT NULL THEN (SELECT count(DISTINCT x.artwork_id) FROM provenance_record_peers(r.id) x) END,
                        'certainty', r.certainty, 'note', r.note) ORDER BY lower(r.date) NULLS LAST, r.position), '[]')
                 FROM provenance_records r LEFT JOIN places l ON l.id = r.place_id WHERE r.provenance_id = p.id) AS records,
              -- 084: what was given in exchange; other sources' readings of this step (not part of the chain)

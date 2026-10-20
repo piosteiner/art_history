@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Search: did you mean, collection filters, plain-language queries, infinite scroll; numbers linked only when shared (migration 113)
+- **What:** materialized view `search_words` + `search_suggest()` (fuzzystrmatch + pg_trgm), `GET /v1/search/suggest`;
+  `/v1/search/text` `in` / `not_in` (an artwork's current collection); `provenance_number_kinds.scope`,
+  `provenance_number_peers()` / `provenance_record_peers()`, `shared` + `id` on numbers and records, `/v1/provenance-numbers?of=`.
+  Site: `src/query.ts` reads `-word`, `-"…"`, `"…"`, "but not in …", "except", "without", "nicht in", "ohne" … (list
+  pages, pickers, header, search page; the reading shown); a typo corrected (nothing found → the correction, with
+  "search for … instead"; few → "did you mean"); the search page loads more while scrolling instead of pages; a
+  provenance number is a link only when another work shares it. E2E `search-suggest.spec.js`, site tests.
+- **Why:** owner (2026-10-20): "244" linked in every royal inventory was confusing; no pages to click through;
+  "gauguin but not in kunsthaus zürich"; "hokusia" → Hokusai.
+- **Revert:** restore `refresh_quality()` from 111, `DROP FUNCTION search_suggest, provenance_number_peers,
+  provenance_record_peers; DROP MATERIALIZED VIEW search_words; ALTER TABLE provenance_number_kinds DROP COLUMN scope;`
+  delete `113_search_suggest_number_scope.sql` from `schema_migrations`; revert the commits.
+
 ### Periods: artists beside works (migration 112)
 - **What:** view `movement_artists` (artists linked to a style/movement directly or through their works, phases
   rolled up); `/v1/periods` sends `artists` per period (life, via, the link's dates, lane places) and `creator_slug`

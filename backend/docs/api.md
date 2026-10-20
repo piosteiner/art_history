@@ -334,6 +334,11 @@ period, end_basis, notes_html, sources, in_chain, not_sold, via}]`.
   historical code without ISO (RM). `GET /v1/provenance-numbers?number=4317[&kind=munich]` → the steps recording it:
   `{data: [{kind, kind_label, number, artwork: {slug, title}, position, owner_name, period, certainty, recorded, document}]}`
   — also the inventory numbers of records (104: `recorded` = the record's date label, `document`, `certainty` of the number).
+  Reach (113): each step number has `id` and `shared` = other works recording it within its reach — any holder's for a
+  global series (`provenance_number_kinds.scope`: ERR, Munich, Linz, Aussee, EK, Lugt), else the same holder's
+  (inventory, stock, lot, catalogue, other); each record number `id` and `shared` = other works in the same record (kind,
+  document, place, date). `&of=n<id>` / `&of=r<id>` limits the lookup to that number's series. The site links a number
+  only when `shared > 0`.
 - **Records (104):** per step `records: [{kind, date, place: {slug, name} | null, room, number, number_certainty, document,
   certainty, note}]`, by date — the evidence under the holder: `kind` inventory · catalogue · exhibition · sighting ·
   document · other. `certainty` is the source's doubt about the whole entry ("¿Real Alcázar, 1666?" → possible),
@@ -440,6 +445,17 @@ name, kind, parent, period, reviewed, spans: [{place, period, fuzzy: {start, end
   when recorded; `life` = birth–death (open end: living); `places` = where they lived and worked during the period
   (dated stays overlapping it, undated ones too; at an institution: its city), the places above and the countries;
   `fuzzy` = birth/death known only roughly (start also when the birth is unknown).
+
+### Did you mean …? (113)
+`GET /v1/search/suggest?q=hokusia` → `{query: "Hokusai", words: [{from, to, edits}]}` — each word of the query that is
+no word of any entry's names replaced by the nearest that is (Levenshtein ≤ a third of its length, found through
+trigrams or the same Double Metaphone sound; fewest edits, then the same sound, then the most frequent word). Only
+the words change — quotes and minus signs stay. `query: null` when every word is known.
+
+Full-text search, collection filters (113): `/v1/search/text?…&in=<phrase>&not_in=<phrase>` (each may repeat) —
+only artworks whose current collection (the institution's names or its city) has every word of the phrase / leave
+those out (other types stay with `not_in`, drop out with `in`). The site reads "gauguin but not in kunsthaus zürich"
+as `q=gauguin&not_in=kunsthaus zurich`.
 
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.
