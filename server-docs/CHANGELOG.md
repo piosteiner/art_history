@@ -2,6 +2,25 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-20
+
+### Data: mumok and the Academy's picture gallery, 20 works each, with the provenance they publish
+- **What:** (production, as user pio) mumok: 20 works (Gerstl, Kokoschka, Magritte, Kandinsky, Léger, Moholy-Nagy, Calder,
+  Gleizes, Balla, Schmidt-Rottluff, Dubuffet, Delvaux, Schwitters, Christo, Nitsch, Lam, Brauner, Masson, Vasarely,
+  Campendonk) — 3 from Wikidata, 17 written from the mumok's online collection (title, German title, date, technique,
+  size, inventory number, link; each field cited); provenance as far as published: the year of acquisition and the
+  credit line (a gift of the Kamm family, of Ernst Ploil, of the artist Masson; Christo's Packed Coast on loan from the
+  Austrian Ludwig Foundation since 1981), the steps noting that earlier owners are not published. Bronze casts of
+  editions left out (as the prints at the Albertina). Academy of Fine Arts, picture gallery: its 20 highlights
+  (Bosch's Last Judgment, Rubens, Rembrandt, Van Dyck, Botticelli, Titian, Cranach, Murillo, Guardi, Ruisdael …) — 17
+  from Wikidata, 3 from the Academy's "Sammlung online" (with its CC BY 4.0 images); provenance after its field
+  "Provenienz": 15 from the bequest of Count Lamberg-Sprinzenstein (1822), gifts of Prince Johann II of Liechtenstein
+  (1882, 1889) and of Heinrich Adam Füger (1878), the Titian bought from Kunsthandlung Pisko (1907), Maria Theresa
+  commissioned by the Academy (1759). New: some 25 artists and people, the Austrian Ludwig Foundation; mumok renamed
+  "mumok – Museum moderner Kunst Stiftung Ludwig Wien" (Wikidata's "Mumok"); places and addresses of both added.
+- **Why:** owner: "add them anyway" (the provenance these museums publish is short).
+- **Revert:** History page (audit log, 20 October, user pio and source import).
+
 ## 2026-10-19
 
 ### Data: 80 works of four Vienna museums with their provenance (KHM, Albertina, Leopold Museum, Belvedere)
