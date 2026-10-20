@@ -769,6 +769,10 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .legend-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--text); margin-left: .4rem; }
 .bar-draft { stroke: var(--accent); stroke-width: 1.5; stroke-dasharray: 4 3; fill-opacity: .45; }
 .bar-thin { fill: var(--muted); opacity: .45; }
+.bar-outside { stroke: #c62828; stroke-width: 1.5; }
+.legend-life { height: 5px; background: var(--muted); opacity: .6; }
+.legend-life-out { background: transparent; border: 1.5px solid #c62828; }
+.periods-show { margin: 0; }
 .bar-in-the-collection { fill: var(--muted); }
 .tl-dot { fill: var(--text); stroke: var(--surface); stroke-width: 1; cursor: pointer; }
 .tl-dot:hover { fill: var(--accent); }

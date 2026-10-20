@@ -708,6 +708,8 @@ export interface PeriodWork {
   public_id: number | null;
   title: string;
   creator: string | null;
+  /** the main creator's slug (API 112): the work's dot on the artist's row in the artists view */
+  creator_slug: string | null;
   created: DateRange | null;
   /** where it was made, the places above and its country (slugs) — for its lane; made_in: the place's name */
   places: string[];
@@ -724,6 +726,23 @@ export interface Period {
   reviewed: boolean;
   spans: PeriodSpan[];
   works: PeriodWork[];
+  /** its artists (API 112) — linked directly, or creators of its works; a style has its phases' artists too */
+  artists: PeriodArtist[];
+}
+export interface PeriodArtist {
+  slug: string;
+  public_id: number | null;
+  name: string;
+  /** birth – death (open end: living) */
+  life: DateRange | null;
+  /** 'artist': associated with / member of / founded it; 'works': only through works of theirs */
+  via: 'artist' | 'works';
+  /** the link's own dates, when recorded ("member 1874–1886") */
+  active: DateRange | null;
+  /** where they lived and worked during the period, the places above and the countries (slugs) — for the lane */
+  places: string[];
+  /** birth or death known only roughly: that edge fades */
+  fuzzy: { start: boolean; end: boolean };
 }
 export interface Periods {
   lanes: { slug: string; name: string; public_id: number | null }[];

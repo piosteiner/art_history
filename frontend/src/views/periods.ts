@@ -3,15 +3,20 @@
 // fading out, drafts not yet reviewed outlined. The collection's works are dots on the bars — in the lane of the region
 // where they were made (else Europe as a whole, else the period's first lane) —, hollow and red when dated outside the
 // bar's span (an outlier, listed below the timeline). A bar or a dragged window lists the works of those years.
+// Switched to artists (?show=artists, API 112): under each period its artists, one thin row each from birth to death —
+// in the lane of where they lived and worked then —, their works of the period as dots on it; a life wholly outside
+// the period's span outlined red. An artist of two periods appears under both, like a work.
 import { getPeriods, getPreviews } from '../api';
 import { href, html, render } from '../html';
 import { replaceUrl } from '../router';
 import { renderTimeline, type TimelineRow, type YearWindow } from '../timeline';
 import { entryPreview, openFor, show } from '../glossary';
-import type { DateRange, Period, Periods, PeriodWork } from '../types';
+import type { DateRange, Period, PeriodArtist, Periods, PeriodWork } from '../types';
 import { guard, showError } from './common';
 
 const workHref = (w: PeriodWork) => (w.public_id ? `/artworks/${w.public_id}/${w.slug}` : href('artworks', w.slug));
+const artistHref = (a: PeriodArtist) => (a.public_id ? `/artists/${a.public_id}/${a.slug}` : href('artists', a.slug));
+type Show = 'works' | 'artists';
 const year = (d: DateRange | null) => d?.from_year ?? d?.to_year ?? null;
 const overlaps = (d: DateRange | null, w: YearWindow) => {
   const a = d?.from_year ?? d?.to_year; const b = d?.to_year ?? d?.from_year;
@@ -23,7 +28,7 @@ const yearsOf = (d: DateRange | null) => {
   return a != null && b != null ? [a, b] as const : null;
 };
 /** The lane a work of the period is drawn in: where it was made, if the period has a span there; else Europe as a whole, else the first. */
-function laneOf(p: Period, w: PeriodWork) {
+function laneOf(p: Period, w: { places: string[] }) {
   const here = p.spans.find((s) => (w.places ?? []).includes(s.place));
   return (here ?? p.spans.find((s) => s.place === 'europe') ?? p.spans[0])?.place;
 }
@@ -32,10 +37,19 @@ const outside = (w: PeriodWork, span: DateRange) => {
   const wy = yearsOf(w.created); const sy = yearsOf(span);
   return !!(wy && sy && (wy[1] < sy[0] || wy[0] > sy[1]));
 };
+/** Where an artist lived and worked during the period — else where their works of it were made: for the lane. */
+const artistPlaces = (p: Period, a: PeriodArtist) => ({
+  places: a.places.length ? a.places : p.works.filter((w) => w.creator_slug === a.slug).flatMap((w) => w.places ?? []),
+});
+/** An artist whose life lies wholly outside the span: before or after the period there. */
+const lifeOutside = (a: PeriodArtist, span: DateRange) => {
+  const ly = yearsOf(a.life); const sy = yearsOf(span);
+  return !!(ly && sy && (ly[1] < sy[0] || ly[0] > sy[1]));
+};
 const workLabel = (w: PeriodWork) => `${w.title}${w.creator ? `, ${w.creator}` : ''}${w.created ? ` (${w.created.label})` : ''}${w.made_in ? ` · made in ${w.made_in}` : ''}`;
 
 /** Periods with a span in the lane, parents first and their parts under them (depth for the indent). */
-function laneRows(data: Periods, lane: string, phases: boolean): TimelineRow[] {
+function laneRows(data: Periods, lane: string, phases: boolean, show: Show): TimelineRow[] {
   const here = data.periods.filter((p) => p.spans.some((s) => s.place === lane));
   const bySlug = new Map(here.map((p) => [p.slug, p]));
   const start = (p: Period) => p.spans.find((s) => s.place === lane)!.period.from_year ?? 0;
@@ -44,19 +58,46 @@ function laneRows(data: Periods, lane: string, phases: boolean): TimelineRow[] {
   const add = (p: Period, depth: number) => {
     if (depth && !phases) return;
     const s = p.spans.find((x) => x.place === lane)!;
-    const dots = p.works.filter((w) => laneOf(p, w) === lane && yearsOf(w.created)).map((w) => {
+    const group = data.lanes.find((l) => l.slug === lane)!.name;
+    const dot = (w: PeriodWork) => {
       const [a, b] = yearsOf(w.created)!;
       const out = outside(w, s.period);
       return { year: (a + b) / 2, label: `${workLabel(w)}${out ? ` — dated outside ${p.name} here (${s.period.label})` : ''}`, href: workHref(w), outlier: out };
-    });
+    };
+    const dots = show === 'works' ? p.works.filter((w) => laneOf(p, w) === lane && yearsOf(w.created)).map(dot) : [];
     rows.push({
-      group: data.lanes.find((l) => l.slug === lane)!.name, label: p.name, href: href('movements', p.slug),
+      group, label: p.name, href: href('movements', p.slug),
       from: s.period, to: s.period, fade: s.fuzzy, draft: !p.reviewed, indent: depth, key: `movement/${p.slug}`, dots,
     });
+    if (show === 'artists') {
+      // its artists in this lane — those of a phase shown under the phase, not again under its style
+      const inPhase = new Set(phases ? here.filter((c) => c.parent === p.slug).flatMap((c) => c.artists.filter((a) => laneOf(c, artistPlaces(c, a)) === lane).map((a) => a.slug)) : []);
+      for (const a of p.artists.filter((x) => laneOf(p, artistPlaces(p, x)) === lane && x.life && !inPhase.has(x.slug))) {
+        const out = lifeOutside(a, s.period);
+        rows.push({
+          group, label: a.name, href: artistHref(a), from: a.life, to: a.life, fade: a.fuzzy, thin: true, outside: out, indent: depth + 1,
+          key: `artist/${a.slug}`,
+          dots: p.works.filter((w) => w.creator_slug === a.slug && yearsOf(w.created)).map(dot),
+        });
+      }
+    }
     here.filter((c) => c.parent === p.slug).sort((a, b) => start(a) - start(b)).forEach((c) => add(c, depth + 1));
   };
   roots.forEach((p) => add(p, 0));
   return rows;
+}
+
+/** Artists whose life lies outside the span of the period they are drawn under. */
+function artistOutliers(data: Periods) {
+  const out: { a: PeriodArtist; p: Period; lane: string; span: DateRange }[] = [];
+  for (const p of data.periods) {
+    for (const a of p.artists) {
+      const lane = laneOf(p, artistPlaces(p, a));
+      const s = p.spans.find((x) => x.place === lane);
+      if (s && lifeOutside(a, s.period)) out.push({ a, p, lane: data.lanes.find((l) => l.slug === lane)?.name ?? lane ?? '', span: s.period });
+    }
+  }
+  return out.sort((a, b) => a.p.name.localeCompare(b.p.name) || (yearsOf(a.a.life)?.[0] ?? 0) - (yearsOf(b.a.life)?.[0] ?? 0));
 }
 
 /** Works dated outside the span of the bar they are drawn on: [work, period, lane name, span]. */
@@ -126,37 +167,63 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
     const wanted = (params.get('regions') || '').split(',').filter((x) => lanes.includes(x));
     const shown = new Set(wanted.length ? wanted : lanes);
     let phases = params.get('phases') !== '0';
+    let show: Show = params.get('show') === 'artists' ? 'artists' : 'works';
     let windowSel: YearWindow | null = null;
     const from = Number(params.get('from')); const to = Number(params.get('to'));
     if (from && to) windowSel = { from: Math.min(from, to), to: Math.max(from, to) };
 
-    const rows = () => data.lanes.filter((l) => shown.has(l.slug)).flatMap((l) => laneRows(data, l.slug, phases));
+    const rows = () => data.lanes.filter((l) => shown.has(l.slug)).flatMap((l) => laneRows(data, l.slug, phases, show));
     const strays = outliers(data);
-    render(odd, strays.length ? html`<details class="periods-outliers"><summary>Dated outside their period <span class="muted small">${String(strays.length)}</span></summary>
+    const drawOutliers = () => {
+      if (show === 'artists') {
+        const lost = artistOutliers(data);
+        render(odd, lost.length ? html`<details class="periods-outliers"><summary>Lived outside their period <span class="muted small">${String(lost.length)}</span></summary>
+          <p class="muted small">Artists linked to a period (directly or through a work) whose life lies wholly before or after its span in the region where
+            they lived — a revival, a link to check, or a span to widen.</p>
+          <ul class="rel-list">${lost.map((x) => html`<li><a href="${artistHref(x.a)}">${x.a.name}</a> <span class="muted">${x.a.life?.label ?? ''}</span>
+            — <a href="${href('movements', x.p.slug)}">${x.p.name}</a> <span class="muted small">${x.lane} ${x.span.label}</span></li>`)}</ul></details>` : html``);
+        return;
+      }
+      render(odd, strays.length ? html`<details class="periods-outliers"><summary>Dated outside their period <span class="muted small">${String(strays.length)}</span></summary>
       <p class="muted small">Works of the collection linked to a period (directly or through their artist) but dated outside its span in the region where
         they were made — a work made before or after the style, a link to check, or a span to widen.</p>
       <ul class="rel-list">${strays.map((x) => html`<li><a href="${workHref(x.w)}">${x.w.title}</a>${x.w.creator ? html` · ${x.w.creator}` : ''}
         <span class="muted">${x.w.created?.label ?? ''}</span> — <a href="${href('movements', x.p.slug)}">${x.p.name}</a>
         <span class="muted small">${x.lane} ${x.span.label}</span></li>`)}</ul></details>` : html``);
+    };
+    drawOutliers();
     const keepUrl = () => {
       const q = new URLSearchParams();
       if (shown.size !== lanes.length) q.set('regions', [...shown].join(','));
       if (!phases) q.set('phases', '0');
+      if (show === 'artists') q.set('show', 'artists');
       if (windowSel) { q.set('from', String(windowSel.from)); q.set('to', String(windowSel.to)); }
       replaceUrl(`/periods${q.size ? `?${q}` : ''}`);
     };
 
     function drawControls() {
-      render(controls, html`<div class="category-filter" role="group" aria-label="Regions">
+      render(controls, html`<div class="category-filter periods-show" role="group" aria-label="Show">
+          ${(['works', 'artists'] as const).map((k) => html`<button type="button" data-show="${k}" class="${show === k ? 'on' : ''}" aria-pressed="${String(show === k)}">${k === 'works' ? 'Works' : 'Artists'}</button>`)}
+        </div>
+        <div class="category-filter" role="group" aria-label="Regions">
           ${data.lanes.map((l) => html`<button type="button" data-lane="${l.slug}" class="${shown.has(l.slug) ? 'on' : ''}" aria-pressed="${String(shown.has(l.slug))}">${l.name}</button>`)}
         </div>
         <label class="periods-phases"><input type="checkbox" ${phases ? 'checked' : ''}> phases (Early, High, Late …)</label>
         <span class="periods-legend muted small"><span class="legend-bar legend-fade"></span> approximate limits
-          <span class="legend-bar legend-draft"></span> not yet reviewed <span class="legend-dot"></span> a work of the collection
+          <span class="legend-bar legend-draft"></span> not yet reviewed
+          ${show === 'artists' ? html`<span class="legend-bar legend-life"></span> an artist's life <span class="legend-bar legend-life legend-life-out"></span> lived outside the period` : html``}
+          <span class="legend-dot"></span> a work of the collection
           <span class="legend-dot legend-dot-out"></span> dated outside the period</span>`);
     }
     drawControls();
     controls.addEventListener('click', (e) => {
+      const m = (e.target as Element).closest<HTMLButtonElement>('button[data-show]');
+      if (m) {
+        show = m.dataset.show as Show;
+        drawControls(); drawOutliers(); timeline.setRows(rows()); keepUrl();
+        if (windowSel) showWindow(windowSel);
+        return;
+      }
       const b = (e.target as Element).closest<HTMLButtonElement>('button[data-lane]');
       if (!b) return;
       const lane = b.dataset.lane!;
@@ -185,9 +252,28 @@ export function periodsPage(main: HTMLElement, params: URLSearchParams) {
         }
       }
       const specific = (ps: Period[]) => ps.filter((p) => !ps.some((c) => c.parent === p.slug));
+      const periodsLine = active.length ? html`<p class="periods-active">${active.map((p, i) => html`${i ? ' · ' : ''}<a href="${href('movements', p.slug)}">${p.name}</a> <span class="muted small">${p.spans.filter((s) => shown.has(s.place) && overlaps(s.period, w)).map((s) => `${data.lanes.find((l) => l.slug === s.place)?.name ?? s.place} ${s.period.label}`).join('; ')}</span>`)}</p>` : html`<p class="muted">No period of the timeline in these years.</p>`;
+      if (show === 'artists') {
+        // each artist alive in these years once, with the most specific of their periods
+        const people = new Map<string, { a: PeriodArtist; periods: Period[] }>();
+        for (const p of data.periods) {
+          for (const a of p.artists.filter((x) => overlaps(x.life, w))) {
+            const e = people.get(a.slug) ?? { a, periods: [] };
+            e.periods.push(p);
+            people.set(a.slug, e);
+          }
+        }
+        const alive = [...people.values()].sort((a, b) => (yearsOf(a.a.life)?.[0] ?? 0) - (yearsOf(b.a.life)?.[0] ?? 0));
+        render(out, html`<h2>${String(w.from)}–${String(w.to)}</h2>${periodsLine}
+          <h3>Artists of the periods alive in these years <span class="muted small">${String(alive.length)}</span></h3>
+          ${alive.length ? html`<ul class="rel-list periods-works">${alive.map((e) => html`<li><a href="${artistHref(e.a)}">${e.a.name}</a> <span class="muted">${e.a.life?.label ?? ''}</span>
+            ${specific(e.periods).map((p) => html` <span class="tag">${p.name}</span>`)}</li>`)}</ul>`
+          : html`<p class="muted">None of the artists linked to a period of the timeline lived in these years.</p>`}`);
+        return;
+      }
       const list = [...works.values()].sort((a, b) => (year(a.w.created) ?? 0) - (year(b.w.created) ?? 0));
       render(out, html`<h2>${String(w.from)}–${String(w.to)}</h2>
-        ${active.length ? html`<p class="periods-active">${active.map((p, i) => html`${i ? ' · ' : ''}<a href="${href('movements', p.slug)}">${p.name}</a> <span class="muted small">${p.spans.filter((s) => shown.has(s.place) && overlaps(s.period, w)).map((s) => `${data.lanes.find((l) => l.slug === s.place)?.name ?? s.place} ${s.period.label}`).join('; ')}</span>`)}</p>` : html`<p class="muted">No period of the timeline in these years.</p>`}
+        ${periodsLine}
         <h3>Works of the collection from these years <span class="muted small">${String(list.length)}</span></h3>
         ${list.length ? html`<ul class="rel-list periods-works">${list.map((e) => html`<li><a href="${workHref(e.w)}">${e.w.title}</a>${e.w.creator ? html` · ${e.w.creator}` : ''}${e.w.created ? html` <span class="muted">${e.w.created.label}</span>` : ''}
           ${specific(e.periods).map((p) => html` <span class="tag">${p.name}</span>`)}</li>`)}</ul>`

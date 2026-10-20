@@ -2207,6 +2207,35 @@ test('periods: a work\'s dot shows its preview; clicked again it opens the work 
   await expect(page).toHaveURL(/\/periods/);
 });
 
+test('periods: switched to artists — lifespans under their periods, their works as dots, kept in the address; a window lists the artists alive then', async ({ page }) => {
+  const errors = noErrors(page);
+  await page.goto('/periods');
+  await page.click('.periods-controls button[data-show="artists"]');
+  await expect(page).toHaveURL(/show=artists/);
+  await expect(page.locator('.periods-controls button[data-show="artists"]')).toHaveAttribute('aria-pressed', 'true');
+  // an artist's row: a thin bar from birth to death, linked to the artist, under the period (indented)
+  const monet = page.locator('.row-label', { hasText: 'Claude Monet' }).first();
+  await expect(monet).toBeVisible();
+  await expect(page.locator('a:has(.row-label:has-text("Claude Monet"))').first()).toHaveAttribute('href', /\/artists\//);
+  await expect(page.locator('rect.bar-thin').first()).toBeVisible();
+  await expect(page.locator('.periods-legend')).toContainText("an artist's life");
+  // the period bars carry no work dots now; the works sit on their artists' rows
+  await expect(page.locator('.tl-dot').first()).toBeVisible();
+  // a window: the artists alive in those years
+  await page.fill('input[name=from]', '1870');
+  await page.fill('input[name=to]', '1880');
+  await page.press('input[name=to]', 'Enter');
+  await expect(page.locator('#periods-window h3')).toContainText('Artists of the periods alive in these years');
+  await expect(page.locator('#periods-window .periods-works')).toContainText('Claude Monet');
+  // reloaded: still artists; back to works
+  await page.reload();
+  await expect(page.locator('.row-label', { hasText: 'Claude Monet' }).first()).toBeVisible();
+  await page.click('.periods-controls button[data-show="works"]');
+  await expect(page.locator('.row-label', { hasText: 'Claude Monet' })).toHaveCount(0);
+  await expect(page).not.toHaveURL(/show=artists/);
+  expect(errors).toEqual([]);
+});
+
 test('provenance records (API 104): the inventories under a step, the doubts tagged, more than three folded', async ({ page }) => {
   const rec = (date: string, number: string | null, extra: Record<string, unknown> = {}) => ({ kind: 'inventory', date: { label: date, from: `${date}-01-01`, to: `${date}-12-31` },
     place: { slug: 'madrid', name: 'Madrid' }, room: null, number, number_certainty: 'attested', document: 'royal inventory', certainty: 'attested', note: null, ...extra });
