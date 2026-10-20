@@ -1,4 +1,5 @@
-import { listAll, listEntities } from '../api';
+import { applySuggestion, listAll, listEntities, suggest } from '../api';
+import { describeQuery, parseQuery } from '../query';
 import { replaceUrl } from '../router';
 import { partLabel } from '../series';
 import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
@@ -8,7 +9,7 @@ import type { NameEntry } from '../types';
 const original = (item: unknown) => (item as { names?: NameEntry[] }).names?.find((n) => n.role === 'original');
 import type { ArtworkItem, InstitutionItem, ItemByPlural, Plural } from '../types';
 import { guard, showError } from './common';
-import { entries, explain, fold, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, queryWords, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
+import { entries, explain, fold, highlight, PROVENANCE_CATEGORY_LABEL, STATUS_LABEL, matches, ordered, saveSort, savedSort, sortEntries, sortOptions, type Entry } from '../catalog';
 
 type AnyItem = ItemByPlural[Plural];
 
@@ -121,6 +122,11 @@ export function list(main: HTMLElement, plural: Plural) {
   let all: Entry<AnyItem>[] = [];
   let similar: Entry<AnyItem>[] = []; // typo-tolerant name matches from the API that the field search missed
   let query = '';
+  // typos (API 113): nothing found as typed → the corrected query is searched instead (`corrected`, with a way back);
+  // few found → "Did you mean …?" (`suggested`). `literal`: the visitor asked for the query as typed.
+  let corrected: string | null = null;
+  let suggested: string | null = null;
+  let literal = '';
   // one value of a field at a time: glossary by category (`?category=technique`), bibliography by reading status
   // (`?status=read`), events by kind (`?kind=trial`), artworks by their 1933–1945 provenance category (`?provenance=D`,
   // shown once any work is assessed); "All" shows everything
@@ -201,21 +207,24 @@ export function list(main: HTMLElement, plural: Plural) {
   };
 
   function draw() {
-    const words = queryWords(query);
+    const asked = query;
+    const query_ = corrected ?? query;
+    const parsed = parseQuery(query_);
+    const words = parsed.words;
     const inWhole = partOf ? all.filter((e) => (e.item as { part_of?: { slug: string } | null }).part_of?.slug === partOf) : all;
     const pool = (category ? inWhole.filter((e) => fieldOf(e) === category) : inWhole).filter((e) => !gapOnly || openQuestion(e))
       .filter((e) => !heldBy || inHolding(e));
-    const hits = query ? pool.filter((e) => matches(e, query)) : pool;
+    const hits = query_ ? pool.filter((e) => matches(e, parsed)) : pool;
     let last = '';
     const row = (e: Entry<AnyItem>) => {
       const p = cardParts(plural, e.item);
       const byArtist = artistsMatched(e, words);
       // a museum found through an artist: how many of their works, linked to them (instead of "Works by: …")
-      return card(plural, e.item, words, query && !byArtist.length ? explain(e, query, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null, '',
+      return card(plural, e.item, words, query_ && !byArtist.length ? explain(e, query_, `${p.date} ${p.detail} ${original(e.item)?.text ?? ""}`).why : null, '',
         byArtist.length ? html`${byArtist.map((a, i) => html`${i ? ' · ' : ''}${worksLink(e, a)}`)}` : null);
     };
     const worksOf = (e: Entry<AnyItem>) => artistsMatched(e, words).reduce((n, a) => n + a.now + a.before, 0);
-    const list = heldBy ? holdingSections(hits) : ordered(hits, query, sort);
+    const list = heldBy ? holdingSections(hits) : ordered(hits, query_, sort);
     // museums found through an artist: those with the most of their works first
     if (plural === 'institutions' && words.length) {
       const tier = list.filter((x) => x.heading === 'With works by a matching artist').sort((a, b) => worksOf(b.entry) - worksOf(a.entry));
@@ -228,11 +237,14 @@ export function list(main: HTMLElement, plural: Plural) {
         return html`${head}${row(e)}`;
       })}
       ${similar.length ? html`<li class="cards-heading cards-heading-similar">Similar names</li>${similar.map((e) => card(plural, e.item))}` : ''}
-      ${!hits.length && !similar.length ? html`<li class="muted">${query ? `Nothing found for “${query}”.` : 'No entries yet.'}</li>` : ''}`);
+      ${!hits.length && !similar.length ? html`<li class="muted">${query_ ? `Nothing found for “${query_}”.` : 'No entries yet.'}</li>` : ''}`);
     const total = pool.length;
-    count.textContent = query
-      ? `${hits.length} of ${total} match${similar.length ? `, ${similar.length} similar ${similar.length === 1 ? 'name' : 'names'}` : ''}`
-      : `${total} ${total === 1 ? 'entry' : 'entries'}`;
+    render(count, query_
+      ? html`${hits.length} of ${total} match${similar.length ? `, ${similar.length} similar ${similar.length === 1 ? 'name' : 'names'}` : ''}${
+        parsed.special ? html` <span class="query-read" title="How the search was read">· ${describeQuery(parsed)}</span>` : ''}${
+        corrected ? html`<span class="query-fix"> — nothing for “${asked}”, showing “${corrected}”. <button type="button" class="link-button" data-literal>Search for “${asked}” instead</button></span>` : ''}${
+        suggested ? html`<span class="query-fix"> — did you mean <button type="button" class="link-button" data-suggest="${suggested}">${suggested}</button>?</span>` : ''}`
+      : html`${total} ${total === 1 ? 'entry' : 'entries'}`);
   }
 
   // same search as the explore pickers: every word in name, details or hidden fields (type, birthplace …)
@@ -240,20 +252,43 @@ export function list(main: HTMLElement, plural: Plural) {
   async function search(q: string) {
     query = q;
     similar = [];
+    corrected = null;
+    suggested = null;
     draw();
-    if (q.length < 3) return;
+    const positive = parseQuery(q).positive;
+    if (positive.length < 3) return;
     const mine = ++request;
+    const local = all.filter((e) => matches(e, q)).length;
+    // a misspelt word (API 113): nothing found → search the correction; few found → offer it
+    if (local < 3 && literal !== q) {
+      suggest(positive).then((s) => {
+        if (mine !== request || !current() || query !== q || !s.query) return;
+        const fixed = applySuggestion(q, s);
+        if (fixed === q) return;
+        const found = all.filter((e) => matches(e, fixed)).length;
+        if (!found) return;
+        if (local) suggested = fixed; else { corrected = fixed; similar = []; }
+        draw();
+      }).catch(() => { /* no suggestion: the search as typed stands */ });
+    }
     try {
-      const res = await listEntities(plural, { q, limit: 20 });
-      if (mine !== request || !current() || query !== q) return;
-      const local = new Set(all.filter((e) => matches(e, q)).map((e) => e.slug));
-      // typo-tolerant matches only when nothing matched as typed (otherwise mostly noise, see search.ts)
-      similar = local.size ? [] : entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
+      const res = await listEntities(plural, { q: positive, limit: 20 });
+      if (mine !== request || !current() || query !== q || corrected) return;
+      // typo-tolerant name matches only when nothing matched as typed (otherwise mostly noise, see search.ts)
+      similar = local ? [] : entries(plural, res.data as ItemByPlural[typeof plural][]) as Entry<AnyItem>[];
       if (similar.length) draw();
     } catch {
       /* the field search above still stands */
     }
   }
+  // "Search for … instead" / "did you mean …?"
+  count.addEventListener('click', (ev) => {
+    const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-literal], button[data-suggest]');
+    if (!b) return;
+    if (b.dataset.suggest) filter.value = b.dataset.suggest;
+    else literal = query;
+    void search(filter.value.trim());
+  });
 
   listAll(plural)
     .then((res) => {

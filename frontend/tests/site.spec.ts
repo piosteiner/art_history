@@ -136,7 +136,7 @@ test('enlarged image: the wheel zooms towards the pointer, dragging moves it, a 
   await expect(page.locator('dialog.lightbox')).toHaveCount(0);
 });
 
-test('list page: same field search as the pickers, typos as similar names', async ({ page }) => {
+test('list page: same field search as the pickers, a typo corrected', async ({ page }) => {
   await page.goto('/artworks');
   await expect(page.locator('.card').first()).toBeVisible();
   await page.fill('.filter', 'wood');
@@ -145,7 +145,8 @@ test('list page: same field search as the pickers, typos as similar names', asyn
 
   await page.goto('/artists');
   await page.fill('.filter', 'hokusia');
-  await expect(page.locator('.cards-heading-similar')).toBeVisible();
+  // nothing as typed: the correction searched instead (API 113), not "similar names"
+  await expect(page.locator('#count .query-fix')).toContainText('showing “Hokusai”');
   await expect(page.locator('#items')).toContainText('Hokusai');
 });
 
@@ -200,12 +201,43 @@ test('search page (087): Enter opens full-text search — names and texts, why i
   expect(new Set(await page.locator('#items .text-hit .muted.small').allTextContents().then((t) => t.map((x) => x.split(' · ')[0])))).toEqual(new Set(['Artwork']));
   await page.goto('/search?q=gauguin&type=artworks');
   await expect(page.locator('#types button.on')).toHaveText('Artworks');
-  // pages of 20
+  // no pages: more results load while scrolling
   await page.goto('/search?q=painting');
-  await expect(page.locator('#count')).toContainText(/^1–20 of \d+ results/);
-  await page.locator('#pager button', { hasText: 'Next' }).click();
-  await expect(page).toHaveURL(/\/search\?q=painting&page=2$/);
-  await expect(page.locator('#count')).toContainText(/^21–/);
+  await expect(page.locator('#count')).toContainText(/^\d+ results/);
+  const total = Number((await page.locator('#count').textContent())!.match(/^(\d+)/)![1]);
+  expect(total).toBeGreaterThan(20);
+  await expect(page.locator('#pager')).toHaveCount(0);
+  await page.locator('#more').scrollIntoViewIfNeeded();
+  await expect.poll(() => rows.count(), { timeout: 15_000 }).toBeGreaterThan(20);
+  await expect(page).toHaveURL(/\/search\?q=painting$/);
+});
+
+test('searches read exclusions and plain words; a misspelt word is corrected (API 113)', async ({ page }) => {
+  // list page: -word, and "but not in …" = the collection a work is in now — the reading shown
+  await page.goto('/artworks');
+  const filter = page.locator('.list-tools .filter');
+  const cards = page.locator('#items .card');
+  await filter.fill('gauguin');
+  await expect(cards.first()).toBeVisible();
+  const all = await cards.count();
+  await filter.fill('gauguin but not in kunsthaus zürich');
+  await expect(page.locator('#count .query-read')).toContainText('not in: kunsthaus zürich');
+  expect(await cards.count()).toBeLessThan(all);
+  await filter.fill('gauguin -kunsthaus');
+  await expect(page.locator('#count .query-read')).toContainText('without: kunsthaus');
+  expect(await cards.count()).toBeLessThan(all);
+  // a typo: nothing found as typed → the correction, with a way back
+  await filter.fill('hokusia');
+  await expect(page.locator('#count .query-fix')).toContainText('showing “Hokusai”');
+  await expect(cards.first()).toBeVisible();
+  await page.locator('#count button[data-literal]').click();
+  await expect(page.locator('#items')).toContainText('Nothing found for “hokusia”');
+  // the search page: the same corrections
+  await page.goto('/search?q=gaugin');
+  await expect(page.locator('#count')).toContainText('nothing for “gaugin”');
+  await expect(page.locator('#items .text-hit').first()).toContainText('Gauguin');
+  await page.goto(`/search?q=${encodeURIComponent('gauguin but not in kunsthaus zürich')}&type=artwork`);
+  await expect(page.locator('#count .query-read')).toContainText('not in: kunsthaus zürich');
 });
 
 test('search page: a hit in a provenance links to the artwork\'s provenance', async ({ page }) => {
@@ -1227,7 +1259,7 @@ test('provenance (077): events as notes, theft, publisher / trustee, further pla
         place: { slug: 'cologne', name: 'Köln' },
         further_places: [{ slug: 'berlin', name: 'Berlin', period: year(1933) }, { slug: 'geneva', name: 'Geneva', period: null }],
         price: { amount: 4500, currency: 'RM', note: null },
-        numbers: [{ kind: 'munich', label: 'Munich no.', number: '4317' }, { kind: 'lugt', label: 'Lugt', number: '1234a' }] }),
+        numbers: [{ kind: 'munich', label: 'Munich no.', number: '4317', id: 71, shared: 2 }, { kind: 'lugt', label: 'Lugt', number: '1234a', id: 72, shared: 0 }] }),
       step(2, null, { kind: 'step', role: 'custodian', method: 'theft', in_chain: false, direct: true, owner_label: 'Unknown thieves', owner_name: 'Unknown thieves',
         period: year(1940, 1945), ended: year(1945), end_basis: 'recorded' }),
       step(3, { type: 'institution', slug: 'a-bank', name: 'A Bank' }, { kind: 'step', role: 'trustee', method: 'unknown', in_chain: false, direct: true, period: year(1946) }),
@@ -1248,7 +1280,10 @@ test('provenance (077): events as notes, theft, publisher / trustee, further pla
   await expect(how1).toContainText('4,500 RM');
   await expect(how1).toContainText('Munich no. 4317');
   await expect(how1).toContainText('Lugt 1234a');
-  await expect(how1.locator('a', { hasText: '4317' })).toHaveAttribute('href', '/provenance-numbers?number=4317&kind=munich');
+  // linked only when other works share it (API 113), to that number's series
+  await expect(how1.locator('a', { hasText: '4317' })).toHaveAttribute('href', '/provenance-numbers?number=4317&kind=munich&of=n71');
+  await expect(how1.locator('a', { hasText: '4317' })).toHaveAttribute('title', 'Also recorded for 2 other works');
+  await expect(how1.locator('a', { hasText: '1234a' })).toHaveCount(0);
   await expect(steps.nth(2)).toHaveClass(/custody/);
   await expect(steps.nth(2).locator('.provenance-how')).toContainText('stolen — recovered 1945');
   await expect(steps.nth(2).locator('.provenance-owner')).toContainText('taken by Unknown thieves');
@@ -2243,7 +2278,7 @@ test('provenance records (API 104): the inventories under a step, the doubts tag
     b.provenance = [{ kind: 'step', implied: false, position: 0, id: 1, owner: { type: 'institution', slug: 'museo-del-prado', name: 'Spanish royal collection' }, co_owners: [],
       role: 'owner', owner_label: null, owner_name: 'Spanish royal collection', acquired: null, ended: null, method: 'unknown', direct: false, label: null,
       certainty: 'attested', place: null, period: null, end_basis: 'unknown', notes_html: null, sources: [], in_chain: true,
-      records: [rec('1700', '286', { room: 'summer office' }), rec('1747', '4'), rec('1745', '411', { number_certainty: 'possible' }), rec('1666', null, { certainty: 'possible', note: 'without number' })] }];
+      records: [rec('1700', '286', { room: 'summer office', id: 9, shared: 1 }), rec('1747', '4', { id: 10, shared: 0 }), rec('1745', '411', { number_certainty: 'possible' }), rec('1666', null, { certainty: 'possible', note: 'without number' })] }];
   });
   await page.goto('/artworks/the-great-wave-off-kanagawa');
   const fold = page.locator('.provenance-records-fold');
@@ -2252,7 +2287,10 @@ test('provenance records (API 104): the inventories under a step, the doubts tag
   const items = fold.locator('.provenance-record');
   await expect(items).toHaveCount(4);
   await expect(items.first()).toContainText('1700 · royal inventory · Madrid, summer office · no. 286');
-  await expect(items.first().locator('a', { hasText: '286' })).toHaveAttribute('href', '/provenance-numbers?number=286');
+  // a number another work shares in the same inventory is linked to it; one of its own is just the number (API 113)
+  await expect(items.first().locator('a', { hasText: '286' })).toHaveAttribute('href', '/provenance-numbers?number=286&of=r9');
+  await expect(items.nth(1)).toContainText('no. 4');
+  await expect(items.nth(1).locator('a', { hasText: /^4$/ })).toHaveCount(0);
   await expect(items.nth(2)).toContainText('no. 411possible');                         // the number doubted
   await expect(items.nth(3)).toContainText('royal inventorypossible');                  // the whole entry doubted
   await expect(items.nth(3)).toContainText('— without number');

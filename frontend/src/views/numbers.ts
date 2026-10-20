@@ -26,7 +26,7 @@ export function provenanceNumbers(main: HTMLElement, params: URLSearchParams) {
   function lookUp(number: string, kindFilter: string | null) {
     if (!number) return render(out, html``);
     render(out, html`<p class="muted small">Looking up…</p>`);
-    getProvenanceNumbers(number, kindFilter)
+    getProvenanceNumbers(number, kindFilter, number === (params.get('number') ?? '').trim() ? params.get('of') : null)
       .then((hits) => {
         if (!current() || input.value.trim() !== number) return;
         const kindLabel = kindFilter && hits[0]?.kind_label;

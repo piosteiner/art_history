@@ -792,3 +792,6 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 /* the periods' work dots: a click shows the preview, a click on it (or the dot again) opens the work in a new tab */
 .tl-dot-link { cursor: pointer; }
 .popover-clickable { cursor: pointer; }
+/* how a search was read ("· gauguin · not in: kunsthaus zürich") and its correction ("did you mean …?") — src/query.ts, API 113 */
+.query-read { color: var(--muted); font-size: .9em; }
+.query-fix { font-size: .95em; }

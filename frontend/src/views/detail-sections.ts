@@ -89,10 +89,13 @@ function alternative(a: ProvenanceAlternative, bibliography?: Record<string, Sou
   </div>`;
 }
 
-/** "Munich no. 4317", the number linked to every step that records it. */
-export const numberHref = (n: { kind: string; number: string }) =>
-  `/provenance-numbers?${new URLSearchParams({ number: n.number, kind: n.kind })}`;
-const numbers = (s: ProvenanceStep) => (s.numbers ?? []).map((n) => html`${n.label} <a href="${numberHref(n)}" title="Other works with this number">${n.number}</a>`);
+/** "Munich no. 4317" — linked to the works sharing it only when there are any (API 113: within its reach — any holder's
+ *  for ERR, Munich …, the same holder's for an inventory, lot or stock number). Alone, it is just the number. */
+export const numberHref = (n: { kind: string; number: string; id?: number }) =>
+  `/provenance-numbers?${new URLSearchParams({ number: n.number, kind: n.kind, ...(n.id ? { of: `n${n.id}` } : {}) })}`;
+const shareTitle = (k: number) => `Also recorded for ${k} other ${k === 1 ? 'work' : 'works'}`;
+const numbers = (s: ProvenanceStep) => (s.numbers ?? []).map((n) => (n.shared
+  ? html`${n.label} <a href="${numberHref(n)}" title="${shareTitle(n.shared)}">${n.number}</a>` : html`${n.label} ${n.number}`));
 
 /** The records under a step (API 104): "1700 · inventory of the Real Alcázar · Real Alcázar, summer office · no. 286" —
  *  the source's doubts as tags ("no. 411 possible"); more than three folded. */
@@ -103,7 +106,7 @@ function records(s: ProvenanceStep): Html | null {
   const line = (r: ProvenanceRecord) => {
     const where = [r.place ? link('place', r.place.slug, r.place.name) : null, r.room ? html`${r.room}` : null].filter((x): x is Html => !!x);
     return html`<li class="provenance-record"><span class="muted">${r.date?.label ?? 'undated'}</span> · ${r.document ?? RECORD_KIND[r.kind]}${uncertain(r.certainty)}${where.length ? html` · ${where.map((w, i) => html`${i ? ', ' : ''}${w}`)}` : ''}${r.number
-      ? html` · no. <a href="/provenance-numbers?${String(new URLSearchParams({ number: r.number }))}" title="Other works with this number">${r.number}</a>${uncertain(r.number_certainty)}` : ''}${r.note ? html` <span class="muted">— ${r.note}</span>` : ''}</li>`;
+      ? html` · no. ${r.shared && r.id ? html`<a href="/provenance-numbers?${String(new URLSearchParams({ number: r.number, of: `r${r.id}` }))}" title="${shareTitle(r.shared)}">${r.number}</a>` : r.number}${uncertain(r.number_certainty)}` : ''}${r.note ? html` <span class="muted">— ${r.note}</span>` : ''}</li>`;
   };
   const items = html`<ul class="provenance-records">${list.map(line)}</ul>`;
   return list.length > 3 ? html`<details class="provenance-records-fold"><summary>${String(list.length)} records — inventories, catalogues, sightings</summary>${items}</details>` : items;

@@ -44,12 +44,25 @@ export interface SortOption {
 /** Lowercase without accents and special letters: "Dürer" → "durer", "Groß" → "gross" (src/fold.ts). */
 export { fold } from './fold';
 import { fold } from './fold';
+import { parseQuery, type ParsedQuery } from './query';
 
-export const queryWords = (query: string) => fold(query).split(/\s+/).filter(Boolean);
+/** The words a hit must have (src/query.ts: exclusions, "phrases" and connecting words aside). */
+export const queryWords = (query: string) => parseQuery(query).words;
 
-/** Every word of the query must appear somewhere in the entry. */
-export function matches(entry: Entry, query: string) {
-  return queryWords(query).every((w) => entry.search.includes(w));
+/** An artwork's current collection, folded (the field of the first tier, "Now in"); '' when it is in none. */
+const collectionOf = (e: Entry) => fold(e.fields.filter((f) => f.tier?.rank === 1).map((f) => f.match ?? f.text).join(' '));
+
+/**
+ * Every word of the query appears somewhere in the entry, every quoted phrase as written, and nothing it excludes:
+ * "-copy" anywhere; "not in Kunsthaus Zürich" in an artwork's current collection (elsewhere: anywhere) — src/query.ts.
+ */
+export function matches(entry: Entry, query: string | ParsedQuery) {
+  const p = typeof query === 'string' ? parseQuery(query) : query;
+  if (!p.words.every((w) => entry.search.includes(w)) || !p.phrases.every((ph) => entry.search.includes(ph))) return false;
+  return !p.not.some((n) => {
+    const target = n.where === 'collection' && entry.type === 'artwork' ? collectionOf(entry) : entry.search;
+    return n.words.every((w) => target.includes(w));
+  });
 }
 
 // ---- why an entry matched ------------------------------------------------------------------------

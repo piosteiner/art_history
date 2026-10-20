@@ -87,6 +87,8 @@ export interface ProvenanceRecord {
   kind: 'inventory' | 'catalogue' | 'exhibition' | 'sighting' | 'document' | 'other';
   date: DateRange | null; place: Ref | null; room: string | null; number: string | null; number_certainty: string;
   document: string | null; certainty: string; note: string | null;
+  /** API 113: other works with this number in the same record (inventory, date, place) — linked only when > 0 */
+  id?: number; shared?: number | null;
 }
 export type EndBasis = 'recorded' | 'implied' | 'ongoing' | 'unknown' | 'point'; // point: an event, a moment (API 082)
 
@@ -361,7 +363,8 @@ export type ProvenanceRole = 'owner' | 'dealer' | 'agent' | 'estate' | 'custodia
  */
 export interface Price { amount: number; currency: string; note: string | null; chf_today?: number | null }
 /** A number a provenance step records (API 077): kind lot · stock · inventory · catalogue · ek · err · munich · linz · aussee · lugt · other; `label` "Munich no.". */
-export interface ProvenanceNumber { kind: string; label: string; number: string }
+/** shared (API 113): other works with this number within its reach — any holder's for ERR, Munich …, else the same holder's; linked only when > 0 */
+export interface ProvenanceNumber { kind: string; label: string; number: string; id?: number; shared?: number }
 /** `GET /v1/provenance-numbers?number=`: the steps recording a number. */
 export interface ProvenanceNumberHit {
   kind: string; kind_label: string; number: string; artwork: { slug: string; title: string };

@@ -1,4 +1,5 @@
 // The only module that talks to the backend. Everything else calls these functions, never fetch().
+import { fold } from './fold';
 import type {
   AsOfDetail, DetailByPlural, EntryHint, EntityMap, EntityType, FeaturedView, Graph, History, NetworkHands, NetworkPath, ProvenanceNumberHit,
   ClustersMap, EncounterRow, ItemByPlural, List, PlacesMap, Plural, SharedHands, TextHit,
@@ -15,7 +16,7 @@ export class ApiError extends Error {
   }
 }
 
-type Params = Record<string, string | number | undefined | null>;
+type Params = Record<string, string | number | string[] | undefined | null>;
 
 // Responses are kept for 5 minutes: back/forward and returning to a list stay instant, and a tab left open for
 // hours still sees new entries (kept for the page's whole lifetime, a list could miss everything added since).
@@ -55,7 +56,10 @@ const listPlural = (path: string) => {
 
 function get<T>(path: string, params: Params = {}): Promise<T> {
   const qs = new URLSearchParams();
-  for (const [k, v] of Object.entries(params)) if (v !== undefined && v !== null && v !== '') qs.set(k, String(v));
+  for (const [k, v] of Object.entries(params)) {
+    if (Array.isArray(v)) v.forEach((x) => qs.append(k, String(x)));   // repeated: ?not_in=a&not_in=b
+    else if (v !== undefined && v !== null && v !== '') qs.set(k, String(v));
+  }
   const url = `${BASE}${path}${qs.size ? `?${qs}` : ''}`;
   if (Date.now() - (fetchedAt.get(url) ?? 0) > KEEP_MS) cache.delete(url);
   let p = cache.get(url) as Promise<T> | undefined;
@@ -153,8 +157,9 @@ export const getEventsMap = () => get<EventsMap>('/map/events');
 
 /** The curated start views, in order (published only); edited in the admin panel. */
 /** Which artworks' provenance records a number (a lot, ERR, Munich, Linz …): exact matches, any kind or one. */
-export const getProvenanceNumbers = (number: string, kind?: string | null) =>
-  get<{ data: ProvenanceNumberHit[] }>('/provenance-numbers', kind ? { number, kind } : { number }).then((r) => r.data);
+/** of: "n<id>" / "r<id>" (API 113) — only that number's series: the step or record and the works sharing it within its reach */
+export const getProvenanceNumbers = (number: string, kind?: string | null, of?: string | null) =>
+  get<{ data: ProvenanceNumberHit[] }>('/provenance-numbers', { number, ...(kind ? { kind } : {}), ...(of ? { of } : {}) }).then((r) => r.data);
 export const getPeriods = () => get<Periods>('/periods');
 export const getFeatured = () => get<{ data: FeaturedView[] }>('/featured').then((r) => r.data);
 
@@ -171,8 +176,18 @@ export const getPreviews = (refs: string[]) =>
 // ---- full-text search, network questions, versions (API 087–089) ------------------------------------------------
 
 /** Names and texts (087): web-search syntax, stemmed in EN/DE/FR; `type` an entity type ("artwork"). */
-export const searchText = (q: string, type: EntityType | null, limit: number, offset: number) =>
-  get<{ total: number; data: TextHit[] }>('/search/text', { q, type, limit, offset });
+/** notIn (API 113): leave out artworks whose current collection has every word of one of these phrases. */
+export const searchText = (q: string, type: EntityType | null, limit: number, offset: number, notIn: string[] = []) =>
+  get<{ total: number; data: TextHit[] }>('/search/text', { q, type, limit, offset, ...(notIn.length ? { not_in: notIn } : {}) });
+
+/** "Did you mean …?" (API 113): the query with its unknown words replaced by the nearest words of our names; null: all known. */
+export interface Suggestion { query: string | null; words: { from: string; to: string; edits: number }[] }
+export const suggest = (q: string) => get<Suggestion>('/search/suggest', { q });
+/** `query` with the suggestion's words put in (only those words; the rest as typed). */
+export const applySuggestion = (query: string, s: Suggestion) => {
+  const fix = new Map(s.words.map((w) => [w.from, w.to]));
+  return query.replace(/\p{L}+/gu, (w) => fix.get(fold(w)) ?? w);
+};
 
 /** The shortest chain between two entries (088): `<number>` or `<plural>/<slug or number>`. */
 export const getNetworkPath = (from: string, to: string, via?: string) =>
