@@ -4,7 +4,7 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-19
 
-### Data: 60 works of three Vienna museums with their provenance (KHM, Albertina, Leopold Museum)
+### Data: 80 works of four Vienna museums with their provenance (KHM, Albertina, Leopold Museum, Belvedere)
 - **What:** (production, as user pio) 20 works each, made with `scripts/from-wikidata.js` (title, date, creator,
   museum, inventory number, size, material, image), their provenance imported as YAML (export → steps added → import of
   only those files, `CONTENT_DIR`): KHM 111 steps (Bruegel's Months, Vermeer's Art of Painting with Hitler and the
@@ -12,7 +12,12 @@ Format: date — what — why — how to revert.
   Albertina 144 steps (Dürer's drawings from Imhoff's Kunstbuch via Rudolf II, the Treasury and the Court Library to
   Duke Albert, his heirs and the Republic in 1919; Bruegel, Bosch, Michelangelo, Raphael, Rembrandt, Klimt, Schiele),
   Leopold Museum 122 steps (Schiele, Klimt, Gerstl, Kirchner, Moser: dealers, Nazi-era seizures, restitutions,
-  exchanges with the Belvedere, auctions with lot numbers; Wally's 2010 settlement as an event). Every step cited with
+  exchanges with the Belvedere, auctions with lot numbers; Wally's 2010 settlement as an event), Belvedere 78 steps
+  (11 Klimts after the Belvedere's online Klimt catalogue of July 2026 — the Kiss, Judith, Fritza Riedler, Adam and Eve …
+  —, read in the Internet Archive's copies because sammlung.belvedere.at refuses this server; the Beethoven Frieze,
+  Amalie Zuckerkandl and The Embrace after the decisions of the Kunstrückgabebeirat; Schiele, Monet, Van Gogh after the
+  Belvedere's provenance lists; Death and the Maiden and Segantini's Evil Mothers only with the acquisition, noted as
+  such; the Beethoven Frieze now "at the Vienna Secession, on loan", the Belvedere's number 5987 kept). Every step cited with
   the museum's page and its own wording in the note (new sources: KHM Online-Sammlung, Albertina Sammlungen Online,
   Leopold Museum Online Sammlung, AEIOU "Albertina", KHM 2016, Wikipedia "Leopold Wilhelm", US Attorney SDNY 2010).
   New: about 110 people, artists, institutions and places from Wikidata (collectors, dealers, the Habsburg line, the
@@ -20,8 +25,8 @@ Format: date — what — why — how to revert.
   collection, Czernin Picture Gallery, Frederik Muller & Cie, Neue Galerie Vienna, Salzburger Landesgalerie). Renamed:
   the State of Salzburg (was `salzburg`; the city now has the slug), Catharina Bolnes, the Landauer Zwölfbrüderhaus.
 - **Why:** owner: "add the most famous art museums of Vienna … 20 artworks of each museum with their complete provenance".
-  Belvedere, mumok and the Academy's gallery are still open: the Belvedere's collection site refuses this server (403),
-  mumok publishes only the acquisition, the Academy's site doesn't answer.
+  mumok and the Academy's gallery are still open: mumok publishes only the acquisition (year and credit line), the
+  Academy's site doesn't answer this server.
 - **Revert:** History page (audit log, 19–20 October, user pio and source import); the import batches are reproducible
   from the scratchpad specs.
 
