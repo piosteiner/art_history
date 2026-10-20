@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Pages read and edited by chapter; .md download and upload (migration 116)
+- **What:** chapters = a page's top-level headings (`splitChapters()` in `src/pages.js`). CMS: an outline beside the
+  editor, one chapter (or the introduction, or the whole text) edited at a time and put back in its place, a stale save
+  refused with the edit kept; "Download .md" / "Upload .md" with a warning when the page changed in the CMS since the
+  last download (table `page_downloads`). API `/v1/pages/<slug>` = introduction + chapter list, `?chapter=`, `?full=1`.
+  Site: `/dokumentation` overview with chapters, `/dokumentation/<chapter>` with its own contents beside it and
+  previous/next; all prerendered once published. E2E `pages.spec.js`, site test.
+- **Why:** owner: the documentation is too long to edit and read in one piece; it is written both in the CMS and in Obsidian.
+- **Revert:** revert the commits; `DROP TABLE page_downloads;` delete `116_page_downloads.sql` from `schema_migrations`.
+
 ### Page images converted to WebP on upload (migration 115)
 - **What:** dependency `sharp` (0.35.5, as the adenai map); every page image upload becomes WebP — quality 82, longest
   side ≤ 1600 px, EXIF rotation applied, other metadata dropped, animated GIFs stay animated, an already smaller WebP kept;

@@ -44,7 +44,7 @@ test('a page: Obsidian Markdown, images by name, published to the API, its histo
   await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
 
   // the API: HTML with the images at its own address, the marks, tasks, ids; the table of contents
-  const page = await (await get(request, '/pages/test-doc')).json();
+  const page = await (await get(request, '/pages/test-doc?full=1')).json();
   expect(page).toMatchObject({ slug: 'test-doc', title: 'Test Doc', lang: 'de-CH' });
   expect(page.html).toMatch(/<img src="http:\/\/api\.localhost[^"]*\/v1\/pages\/test-doc\/images\/Facharbeit-1\.png" alt="" loading="lazy" width="1600" height="1067"/);
   expect(page.html).toContain('<span class="page-caption">Eine Bildunterschrift</span>');
@@ -66,9 +66,56 @@ test('a page: Obsidian Markdown, images by name, published to the API, its histo
   userA.once('dialog', (d) => d.accept());
   await userA.locator('[data-image-list] li', { hasText: 'Facharbeit-1.png' }).locator('button[data-image-delete]').click();
   await expect(userA.locator('[data-image-list] code', { hasText: 'Facharbeit-1.png' })).toHaveCount(0);
-  expect((await (await get(request, '/pages/test-doc')).json()).html).not.toContain('Facharbeit-1.png"');
+  expect((await (await get(request, '/pages/test-doc?full=1')).json()).html).not.toContain('Facharbeit-1.png"');
 
   // every revision in its history
   await userA.goto('/pages/test-doc/history');
   await expect(userA.locator('table.diff > tbody > tr')).toHaveCount(3);   // created, saved, published (each with its changes)
+});
+
+test('a long page: chapters edited one at a time, a stale save refused, .md download and upload, chapters on the API', async ({ userA, request }) => {
+  const text = 'Einleitung.\n\n# Pitch\nVorteil.\n\n# Projektstart\nAlt.\n## Backend\nNode.\n\n# Provenienz\nBesitz.\n';
+  sql(`INSERT INTO pages (slug, title, body_md, published) VALUES ('test-doc', 'Test Doc', '${text.replace(/'/g, "''")}', true)`);
+  // the outline: the introduction and three chapters
+  await userA.goto('/pages/test-doc/edit');
+  await expect(userA.locator('.page-outline ol li')).toHaveText([/^Introduction/, /^Pitch/, /^Projektstart/, /^Provenienz/]);
+  await expect(userA.locator('#pg-body')).toHaveCount(0);                          // nothing chosen: no editor yet
+  // chapter 2 alone in the editor; saved back in its place
+  await userA.locator('.page-outline a', { hasText: 'Projektstart' }).click();
+  await expect(userA.locator('#pg-body')).toHaveValue('# Projektstart\nAlt.\n## Backend\nNode.\n\n');
+  await userA.evaluate(() => { document.querySelector('#pg-body').value = '# Projektstart\nNeu.\n'; });
+  await Promise.all([userA.waitForURL(/chapter=2&done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('Einleitung.\n\n# Pitch\nVorteil.\n\n# Projektstart\nNeu.\n# Provenienz\nBesitz.');
+  // changed elsewhere meanwhile: refused, the edited version kept; saving again puts it in
+  await userA.evaluate(() => { document.querySelector('#pg-body').value = '# Projektstart\nMeine Fassung.\n'; });
+  sql("UPDATE pages SET body_md = body_md || '\nNachtrag.' WHERE slug = 'test-doc'");
+  await userA.click('.page-form button:has-text("Save")');
+  await expect(userA.locator('.flash.error')).toContainText('changed since you opened this part');
+  await expect(userA.locator('#pg-body')).toHaveValue('# Projektstart\nMeine Fassung.\n');
+  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toContain('# Projektstart\nMeine Fassung.\n# Provenienz\nBesitz.\n\nNachtrag.');
+
+  // .md: downloaded (remembered), changed in the CMS, then a file uploaded → asked first; confirmed → replaced
+  const [download] = await Promise.all([userA.waitForEvent('download'), userA.click('a:has-text("Download .md")')]);
+  expect(download.suggestedFilename()).toBe('Test Doc.md');
+  await userA.reload();
+  await expect(userA.locator('[data-md-sync]')).toContainText('no changes in the CMS since');
+  sql("UPDATE pages SET body_md = body_md || '\nIm CMS ergänzt.' WHERE slug = 'test-doc'");
+  await userA.goto('/pages/test-doc/edit');     // an address without done=saved, so the wait below waits for the upload
+  await expect(userA.locator('[data-md-sync]')).toContainText('changed in the CMS since');
+  let asked = '';
+  userA.once('dialog', (d) => { asked = d.message(); d.accept(); });
+  await Promise.all([userA.waitForURL(/done=saved/), userA.setInputFiles('#pg-md', { name: 'Test Doc.md', mimeType: 'text/markdown', buffer: Buffer.from('# Eins\nA\n\n# Zwei\nB\n') })]);
+  expect(asked).toContain('changed in the CMS after your last download');
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nA\n\n# Zwei\nB');   // (sql() trims the last newline)
+  await expect(userA.locator('.page-outline ol li')).toHaveText([/^Eins/, /^Zwei/]);
+
+  // the API: the chapter list, one chapter with its neighbours, ids as in the whole text
+  const all = await (await get(request, '/pages/test-doc')).json();
+  expect(all.chapters.map((c) => c.id)).toEqual(['eins', 'zwei']);
+  expect(all.html).toBeUndefined();
+  const two = (await (await get(request, '/pages/test-doc?chapter=zwei')).json()).chapter;
+  expect(two).toMatchObject({ id: 'zwei', index: 2, title: 'Zwei', prev: { id: 'eins', title: 'Eins' }, next: null });
+  expect(two.html).toContain('<h1 id="zwei">Zwei</h1>');
+  expect((await get(request, '/pages/test-doc?chapter=drei')).status()).toBe(404);
 });

@@ -465,3 +465,9 @@ details.records > summary { cursor: pointer; color: var(--muted); }
 .page-image-missing { display: inline-block; padding: .1rem .4rem; border: 1px dashed #c62828; color: #c62828; font-family: monospace; font-size: .85em; }
 .page-figure { display: block; } .page-caption { display: block; font-size: .85em; color: var(--muted, #666); }
 .md-preview .task { list-style: none; } .md-preview mark { background: #fff3a3; }
+/* a page's chapters beside the editor (116) */
+.page-layout { display: grid; grid-template-columns: minmax(12rem, 17rem) 1fr; gap: 1.5rem; align-items: start; }
+.page-outline { position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; font-size: .92rem; }
+.page-outline h2 { font-size: 1rem; margin: .4rem 0; } .page-outline ol { padding-left: 1.3rem; margin: .3rem 0; }
+.page-outline a.on { font-weight: 700; } .page-main { min-width: 0; }
+@media (max-width: 900px) { .page-layout { grid-template-columns: 1fr; } .page-outline { position: static; max-height: none; } }

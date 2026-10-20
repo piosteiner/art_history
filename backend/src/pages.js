@@ -65,7 +65,8 @@ md.inline.ruler.before('emphasis', 'mark', (state, silent) => {
 // headings: ids from their text ("Räumliche Nähe" → "raumliche-nahe"), each once
 const slug = (s) => fold(s).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'abschnitt';
 md.core.ruler.push('heading_ids', (state) => {
-  const seen = new Map();
+  // env.seen: shared by the chapters of one page, rendered one after the other, so their ids are those of the whole text
+  const seen = state.env.seen || new Map();
   for (let i = 0; i < state.tokens.length; i++) {
     const t = state.tokens[i];
     if (t.type !== 'heading_open') continue;
@@ -117,11 +118,59 @@ SANITIZE.allowedAttributes.a.push('rel', 'target');
  * known: the names uploaded (a Set) — an embed of another name shows as a marked file name; dims: name → {width, height}
  * (115); images: every name embedded.
  */
-function renderPage(markdown, { imageBase, known = null, dims = null } = {}) {
-  const env = { toc: [], images: new Set(), imageBase, known, dims };
+function renderPage(markdown, { imageBase, known = null, dims = null, seen = null } = {}) {
+  const env = { toc: [], images: new Set(), imageBase, known, dims, seen };
   const raw = md.render(String(markdown || ''), env);
   const html = sanitizeHtml(raw, SANITIZE);
   return { html, toc: env.toc, images: [...env.images] };
 }
 
-module.exports = { renderPage, IMAGE_NAME };
+// ---- chapters --------------------------------------------------------------------------------------------------
+// A long page is read and edited chapter by chapter: the chapters are its top-level headings (the highest level the
+// text uses — "#" in the documentation), the text before the first is the introduction. Headings inside code fences
+// don't count. The text stays one: chapters are positions in it, so a chapter edited alone goes back into its place.
+const HEADING = /^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$/;
+function splitChapters(markdown) {
+  const text = String(markdown || '');
+  const lines = text.split('\n');
+  const heads = [];
+  let fence = null;
+  let pos = 0;
+  for (const line of lines) {
+    const f = /^(```|~~~)/.exec(line);
+    if (f) fence = fence === f[1] ? null : fence || f[1];
+    else if (!fence) {
+      const m = HEADING.exec(line);
+      if (m) heads.push({ level: m[1].length, title: m[2].replace(/[*_`=]/g, '').trim(), start: pos });
+    }
+    pos += line.length + 1;
+  }
+  const top = Math.min(...heads.map((h) => h.level), 7);
+  const starts = heads.filter((h) => h.level === top);
+  const ids = new Map();
+  const chapters = starts.map((h, i) => {
+    let id = slug(h.title);
+    const n = (ids.get(id) || 0) + 1;
+    ids.set(id, n);
+    if (n > 1) id = `${id}-${n}`;
+    const end = i + 1 < starts.length ? starts[i + 1].start : text.length;
+    return { index: i + 1, id, title: h.title, start: h.start, end, md: text.slice(h.start, end) };
+  });
+  const introEnd = chapters.length ? chapters[0].start : text.length;
+  return { intro: { index: 0, start: 0, end: introEnd, md: text.slice(0, introEnd) }, chapters, level: top };
+}
+
+// a chapter's part of the text replaced by its edited version (the rest exactly as it was)
+function replaceChapter(markdown, index, edited) {
+  const { intro, chapters } = splitChapters(markdown);
+  const part = index === 0 ? intro : chapters.find((c) => c.index === index);
+  if (!part) return null;
+  let next = String(edited || '').replace(/\r\n/g, '\n');
+  // a chapter ends with its blank line, so the next heading stays a heading
+  if (part.end < String(markdown).length && !next.endsWith('\n')) next += '\n';
+  return String(markdown).slice(0, part.start) + next + String(markdown).slice(part.end);
+}
+
+const words = (mdText) => (String(mdText).replace(/!\[\[[^\]]*\]\]|<[^>]+>|[#*_=`>|-]/g, ' ').match(/[\p{L}\p{N}]+/gu) || []).length;
+
+module.exports = { renderPage, splitChapters, replaceChapter, words, IMAGE_NAME };

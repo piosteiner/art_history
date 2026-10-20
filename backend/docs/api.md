@@ -457,13 +457,19 @@ only artworks whose current collection (the institution's names or its city) has
 those out (other types stay with `not_in`, drop out with `in`). The site reads "gauguin but not in kunsthaus zürich"
 as `q=gauguin&not_in=kunsthaus zurich`.
 
-## Pages (114)
-`GET /v1/pages/<slug>` — a text page written in the CMS, only when published (404 before):
-`{slug, title, lang, html, toc: [{level, id, text}], updated_at}` — `html` sanitized (headings with ids for the table of
-contents, images, `<mark>`, task lists `li.task` / `li.task-done` with `span.task-box`, tables, coloured spans, ruby);
-an embed of an image that isn't uploaded is `<span class="page-image-missing">name</span>`. Images:
-`GET /v1/pages/<slug>/images/<name>` (cached a day, `ETag` = its sha256). The project documentation:
-`/v1/pages/projekt-dokumentation` (site: `/dokumentation`).
+## Pages (114, 116)
+A text page written in the CMS, only when published (404 before), read chapter by chapter — the chapters are its
+top-level headings, the text before the first is the introduction:
+- `GET /v1/pages/<slug>` → `{slug, title, lang, updated_at, words, intro_html, chapters: [{id, title, words}]}`
+- `…?chapter=<id>` → also `chapter: {id, index, title, html, toc: [{level, id, text}], prev: {id, title} | null, next}`
+  (404 for an unknown chapter)
+- `…?full=1` → also `html` and `toc` of the whole text.
+
+The HTML is sanitized (heading ids — those of the whole text, also in a single chapter —, images with width/height,
+`<mark>`, task lists `li.task` / `li.task-done` with `span.task-box`, tables, coloured spans, ruby); an embed of an image
+that isn't uploaded is `<span class="page-image-missing">name</span>`. Images: `GET /v1/pages/<slug>/images/<name>`
+(WebP, cached a day, `ETag` = its sha256). The project documentation: `/v1/pages/projekt-dokumentation` (site:
+`/dokumentation`, chapters `/dokumentation/<id>`).
 
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.

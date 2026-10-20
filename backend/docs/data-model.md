@@ -634,4 +634,8 @@ b-tree; refreshed by `refresh_quality()`; read from `dup_facts`, as `entity_inde
 GIF, AVIF — no SVG). Rendered by `src/pages.js` (markdown-it with HTML on + sanitize-html allowlist; Obsidian's
 `![[image|width or caption]]`, `==mark==`, `- [x]`). Images live in the database so the nightly dump, its restore check
 and the encrypted off-site copy include them. Since 115 every upload is converted to WebP (sharp: quality 82, ≤ 1600 px, EXIF rotation, metadata dropped); `width`, `height`, `original_bytes`.
+Chapters (116): `splitChapters()` / `replaceChapter()` in `src/pages.js` — positions in the one text (top-level headings,
+not inside code fences); the CMS edits one at a time and checks the text's sha256 it was opened with (a stale save is
+refused, the edit kept). `page_downloads` (page_id, sha256, at, kind download/upload): the text at the last .md
+download or upload — uploading a file warns when the page changed in the CMS since.
 

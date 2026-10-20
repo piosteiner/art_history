@@ -86,7 +86,31 @@ function addRow(list, img) {
   list.prepend(li);
 }
 
+// A .md file replaces the page's text (routes/pages.js POST /upload): 409 = changed in the CMS since the last download →
+// asked, then sent again with ?force=1. Then the page reloads with the new chapters.
+function initMdUpload() {
+  for (const input of document.querySelectorAll('input[type=file][data-md-upload]')) {
+    input.addEventListener('change', async () => {
+      const file = input.files && input.files[0];
+      if (!file) return;
+      const text = await file.text();
+      const send = (force) => fetch(`${input.dataset.mdUpload}${force ? '?force=1' : ''}`, {
+        method: 'POST', body: text, headers: { 'Content-Type': 'text/markdown; charset=utf-8' }, credentials: 'same-origin' });
+      let res = await send(false);
+      if (res.status === 409) {
+        const { error } = await res.json();
+        if (!window.confirm(`${error}\n\nReplace the text with ${file.name}?`)) { input.value = ''; return; }  // eslint-disable-line no-alert
+        res = await send(true);
+      }
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) { alert(body.error || `upload failed (${res.status})`); input.value = ''; return; }  // eslint-disable-line no-alert
+      location.assign(`${location.pathname}?done=saved`);
+    });
+  }
+}
+
 export function initImageUploads() {
+  initMdUpload();
   const list = document.querySelector('[data-image-list]');
   document.addEventListener('page-image-uploaded', (e) => addRow(list, e.detail));
   for (const input of document.querySelectorAll('input[type=file][data-image-upload]')) {

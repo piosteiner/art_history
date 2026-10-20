@@ -9,7 +9,7 @@ const sharp = require('sharp');
 const { adminPool } = require('../../db');
 const { html } = require('../html');
 const { send, withTx, notFoundPage, friendly, history, historyTable } = require('../core');
-const { renderPage, IMAGE_NAME } = require('../../pages');
+const { renderPage, splitChapters, replaceChapter, words, IMAGE_NAME } = require('../../pages');
 
 const router = express.Router();
 const SITE = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
@@ -73,25 +73,63 @@ router.post('/pages', async (req, res) => {
   res.redirect(303, `/pages/${slug}/edit?done=created`);
 });
 
-function editPage(p, images, { flash = null, values = null } = {}) {
+const sha = (text) => crypto.createHash('sha256').update(String(text)).digest('hex');
+const lastSync = async (pageId) => (await adminPool.query('SELECT sha256, at, kind FROM page_downloads WHERE page_id = $1', [pageId])).rows[0] || null;
+const when = (d) => d.toISOString().slice(0, 16).replace('T', ' ');
+const fileName = (p) => `${p.title.normalize('NFC').replace(/[\\/:*?"<>|]+/g, '-')}.md`;
+
+// which part of the text is edited: 'all' · 0 (the introduction) · 1 … (a chapter); none: the outline only
+function partOf(text, asked) {
+  const { intro, chapters } = splitChapters(text);
+  if (asked === 'all' || (!chapters.length && asked === undefined)) return { key: 'all', label: 'the whole text', md: text };
+  if (asked === undefined || asked === '') return null;
+  const n = Number(asked);
+  if (n === 0) return { key: '0', label: 'the introduction', md: intro.md };
+  const c = chapters.find((x) => x.index === n);
+  return c ? { key: String(n), label: `chapter ${n}: ${c.title}`, md: c.md } : null;
+}
+
+function editPage(p, images, { flash = null, values = null, part = null, sync = null } = {}) {
   const v = values || p;
-  const { images: embedded } = renderPage(v.body_md, { imageBase: '' });
+  const { images: embedded } = renderPage(p.body_md, { imageBase: '' });
   const names = new Set(images.map((i) => i.name));
   const missing = embedded.filter((n) => !names.has(n));
   const unused = images.filter((i) => !embedded.includes(i.name));
+  const { intro, chapters } = splitChapters(p.body_md);
+  const changedSince = sync && sync.sha256 !== sha(p.body_md);
+  const on = (k) => (part && part.key === k ? ' aria-current="true" class="on"' : '');
   return { title: `Edit ${p.title}`, flash, body: html`<p class="muted"><a href="/pages">← Pages</a></p>
     <h1>${p.title}</h1>
     <p class="small">${p.published ? html`<a href="${siteUrl(p)}" target="_blank" rel="noopener">View on the site ↗</a>` : html`<span class="muted">Not published yet — the site shows it once “Published” is ticked.</span>`}
-      <span class="muted">· <a href="/pages/${p.slug}/history">history</a></span></p>
+      <span class="muted">· <a href="/pages/${p.slug}/history">history</a> · ${words(p.body_md).toLocaleString('en')} words</span></p>
+    <div class="page-layout">
+    <nav class="page-outline" aria-label="Chapters">
+      <h2>Chapters</h2>
+      <p class="muted small">The text's top-level headings. Edit one at a time — it is put back in its place when you save.</p>
+      <ol>
+        ${intro.md.trim() ? html`<li><a href="/pages/${p.slug}/edit?chapter=0"${on('0')}>Introduction</a> <span class="muted small">${String(words(intro.md))}</span></li>` : ''}
+        ${chapters.map((c) => html`<li><a href="/pages/${p.slug}/edit?chapter=${String(c.index)}"${on(String(c.index))}>${c.title}</a> <span class="muted small">${String(words(c.md))}</span></li>`)}
+      </ol>
+      <p class="small"><a href="/pages/${p.slug}/edit?chapter=all"${on('all')}>Whole text</a></p>
+      <h2>Obsidian</h2>
+      <p class="small"><a class="button secondary" href="/pages/${p.slug}/download" download>Download .md</a></p>
+      <div class="field"><label for="pg-md">Upload .md</label>
+        <input id="pg-md" type="file" accept=".md,.markdown,text/markdown,text/plain" data-md-upload="/pages/${p.slug}/upload">
+        <p class="muted small">Replaces the whole text (the images stay; the old text stays in the history).</p></div>
+      <p class="muted small" data-md-sync>${sync ? html`Last ${sync.kind} ${when(sync.at)}${changedSince ? html` — <b>changed in the CMS since</b>` : ' — no changes in the CMS since'}.` : 'Not downloaded yet.'}</p>
+    </nav>
+    <div class="page-main">
     <form method="post" action="/pages/${p.slug}" class="form page-form">
       <div class="field-pair"><div class="field"><label for="pg-title">Title</label><input id="pg-title" name="title" value="${v.title}" required></div>
         <div class="field"><label for="pg-lang">Language</label><input id="pg-lang" name="lang" value="${v.lang}" required pattern="[a-z]{2}(-[A-Z]{2})?">
           <div class="hint">de-CH: Swiss German spelling (ss, no ß) — the site tells browsers and screen readers.</div></div></div>
-      <div class="field"><label for="pg-body">Text</label>
-        <textarea id="pg-body" name="body_md" class="md" rows="30" data-upload="/pages/${p.slug}/images" data-preview="/pages/${p.slug}/preview">${v.body_md}</textarea>
+      ${part ? html`<input type="hidden" name="chapter" value="${part.key}"><input type="hidden" name="base" value="${sha(p.body_md)}">
+      <div class="field"><label for="pg-body">Text — ${part.label}</label>
+        <textarea id="pg-body" name="body_md" class="md" rows="30" data-upload="/pages/${p.slug}/images" data-preview="/pages/${p.slug}/preview">${values && values.body_md !== undefined ? values.body_md : part.md}</textarea>
         <div class="hint">Markdown, as in Obsidian: <code>![[name.webp]]</code> embeds an image of this page (<code>![[name.webp|400]]</code> 400 px wide,
           <code>![[name.webp|caption]]</code> with a caption), <code>==highlight==</code>, <code>- [x]</code> tasks, tables, <code>&lt;span style="color:…"&gt;</code>.
-          Drop or paste an image into the text to upload and embed it.</div></div>
+          Drop or paste an image into the text to upload and embed it. A new <code>#</code> heading starts a new chapter.</div></div>`
+      : html`<p class="muted">Choose a chapter on the left to edit it${chapters.length ? '' : ', or the whole text'}.</p>`}
       <div class="field"><label class="choice"><input type="checkbox" name="published" value="1"${v.published ? ' checked' : ''}> Published</label></div>
       <div class="actions"><button>Save</button></div>
     </form>
@@ -110,13 +148,49 @@ function editPage(p, images, { flash = null, values = null } = {}) {
         <code>${i.name}</code> <span class="muted small">${kb(Number(i.size))}${i.original_bytes ? ` WebP (was ${kb(i.original_bytes)})` : ''}${i.width ? ` · ${i.width} × ${i.height}` : ''}${unused.includes(i) ? ' · not embedded' : ''}</span>
         <button type="button" class="link-button" data-copy="![[${i.name}]]">copy embed</button>
         <button type="button" class="link-button danger" data-image-delete="/pages/${p.slug}/images/${String(i.id)}/delete">delete</button></li>`)}</ul>
-    </section>` };
+    </section>
+    </div></div>` };
 }
 
 router.get('/pages/:slug/edit', async (req, res) => {
   const p = await bySlug(req.params.slug);
   if (!p) return notFoundPage(req, res);
-  send(req, res, editPage(p, await imagesOf(p.id)));
+  const part = partOf(p.body_md, req.query.chapter);
+  if (req.query.chapter !== undefined && req.query.chapter !== '' && !part) return res.redirect(303, `/pages/${p.slug}/edit`);
+  send(req, res, editPage(p, await imagesOf(p.id), { part, sync: await lastSync(p.id) }));
+});
+
+// The text as a .md file, named after the page — for Obsidian; remembered, so an upload can tell what changed since
+router.get('/pages/:slug/download', async (req, res) => {
+  const p = await bySlug(req.params.slug);
+  if (!p) return notFoundPage(req, res);
+  await adminPool.query(`INSERT INTO page_downloads (page_id, sha256, kind) VALUES ($1, $2, 'download')
+    ON CONFLICT (page_id) DO UPDATE SET sha256 = EXCLUDED.sha256, at = now(), kind = 'download'`, [p.id, sha(p.body_md)]);
+  const name = fileName(p);
+  res.set({ 'Content-Type': 'text/markdown; charset=utf-8',
+    'Content-Disposition': `attachment; filename="${name.replace(/[^\x20-\x7e]/g, '_')}"; filename*=UTF-8''${encodeURIComponent(name)}` });
+  res.send(p.body_md);
+});
+
+// A .md file replaces the whole text (editor/uploads.js). Changed in the CMS since the last download or upload (or
+// never synced and different): 409 with the reason; ?force=1 after the owner confirmed.
+router.post('/pages/:slug/upload', express.text({ type: () => true, limit: '5mb' }), async (req, res) => {
+  const p = await bySlug(req.params.slug);
+  if (!p) return res.status(404).json({ error: 'no such page' });
+  const text = String(req.body || '').replace(/^﻿/, '').replace(/\r\n/g, '\n');
+  if (!text.trim()) return res.status(422).json({ error: 'The file is empty.' });
+  const sync = await lastSync(p.id);
+  const current = sha(p.body_md);
+  if (req.query.force !== '1' && p.body_md.trim() && sha(text) !== current && (!sync || sync.sha256 !== current)) {
+    return res.status(409).json({ error: sync
+      ? `The text was changed in the CMS after your last ${sync.kind} (${when(sync.at)}). The file would undo those changes (they stay in the history).`
+      : 'The page already has a text that was never downloaded. The file replaces it (the old text stays in the history).' });
+  }
+  await withTx(req.user, (db) => db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, text]));
+  await adminPool.query(`INSERT INTO page_downloads (page_id, sha256, kind) VALUES ($1, $2, 'upload')
+    ON CONFLICT (page_id) DO UPDATE SET sha256 = EXCLUDED.sha256, at = now(), kind = 'upload'`, [p.id, sha(text)]);
+  const { chapters } = splitChapters(text);
+  res.json({ chapters: chapters.length, words: words(text) });
 });
 
 // every revision (audit_log, like any entry's): who changed what, word by word
@@ -128,18 +202,33 @@ router.get('/pages/:slug/history', async (req, res) => {
     <h1>History of ${p.title}</h1>${historyTable(h.rows, { showWhat: false })}` });
 });
 
+// Save: the settings, and the part being edited put back in its place (the rest of the text exactly as it was). The text
+// changed since the part was opened (another tab, an upload): not saved — the edited version comes back in the editor,
+// and saving again (now based on the current text) puts it in.
 router.post('/pages/:slug', async (req, res) => {
   const p = await bySlug(req.params.slug);
   if (!p) return notFoundPage(req, res);
-  const values = { title: String(req.body.title || '').trim(), lang: String(req.body.lang || 'de-CH').trim(),
-    body_md: String(req.body.body_md || '').replace(/\r\n/g, '\n'), published: req.body.published === '1' };
+  const values = { title: String(req.body.title || '').trim(), lang: String(req.body.lang || 'de-CH').trim(), published: req.body.published === '1' };
+  const chapter = req.body.chapter;
+  const edited = req.body.body_md === undefined ? undefined : String(req.body.body_md).replace(/\r\n/g, '\n');
+  const part = chapter === undefined ? null : partOf(p.body_md, chapter);
+  const again = async (flash) => send(req, res, { ...editPage(p, await imagesOf(p.id), { values: { ...values, body_md: edited },
+    part: part || { key: String(chapter), label: 'your text', md: '' }, flash, sync: await lastSync(p.id) }), status: 409 });
+  let body = p.body_md;
+  if (chapter !== undefined && edited !== undefined) {
+    if (req.body.base !== sha(p.body_md)) {
+      return again({ kind: 'error', text: 'The text was changed since you opened this part (another tab or an upload). Your version is in the editor — save again to put it in, or open the part again to see the current one.' });
+    }
+    body = chapter === 'all' ? edited : replaceChapter(p.body_md, Number(chapter), edited);
+    if (body === null) return again({ kind: 'error', text: 'This chapter is no longer there. Your version is in the editor — copy it, then open the chapter list again.' });
+  }
   try {
     await withTx(req.user, (db) => db.query('UPDATE pages SET title = $2, lang = $3, body_md = $4, published = $5 WHERE id = $1',
-      [p.id, values.title, values.lang, values.body_md, values.published]));
+      [p.id, values.title, values.lang, body, values.published]));
   } catch (err) {
-    return send(req, res, { ...editPage(p, await imagesOf(p.id), { values, flash: { kind: 'error', text: friendly(err) } }), status: 422 });
+    return send(req, res, { ...editPage(p, await imagesOf(p.id), { values: { ...values, body_md: edited }, part, flash: { kind: 'error', text: friendly(err) } }), status: 422 });
   }
-  res.redirect(303, `/pages/${p.slug}/edit?done=saved`);
+  res.redirect(303, `/pages/${p.slug}/edit?${chapter !== undefined ? `chapter=${encodeURIComponent(chapter)}&` : ''}done=saved`);
 });
 
 // Preview (editor's button): the page as the site will show it, images from here (also those of an unpublished page)

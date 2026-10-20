@@ -9,7 +9,7 @@ const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
 const { fold } = require('../fold');
-const { renderPage } = require('../pages');
+const { renderPage, splitChapters, words } = require('../pages');
 
 const router = express.Router();
 
@@ -133,19 +133,38 @@ router.get('/search/suggest', async (req, res) => {
   res.json({ query, words: rows.map((r) => ({ from: r.word, to: r.suggestion, edits: r.edits })) });
 });
 
-// Pages written in the CMS (114): the project documentation. → {slug, title, lang, html, toc, updated_at}; only published
-// ones. Images are served beside them by name (as Obsidian embeds them: ![[name]]), cached for a day and revalidated by
-// their sha256 (a re-uploaded image of the same name shows at once).
+// Pages written in the CMS (114): the project documentation, read chapter by chapter (116). Only published ones.
+//   GET /v1/pages/<slug>                 {slug, title, lang, updated_at, words, intro_html, chapters: [{id, title, words}]}
+//   GET /v1/pages/<slug>?chapter=<id>    … and chapter: {id, index, title, html, toc, prev, next}
+//   GET /v1/pages/<slug>?full=1          … and html, toc: the whole text in one (for the prerendered page)
+// Chapters are the text's top-level headings; the heading ids are those of the whole text (rendered in order).
+// Images are served beside them by name (as Obsidian embeds them: ![[name]]), cached for a day and revalidated by their
+// sha256 (a re-uploaded image of the same name shows at once).
 router.get('/pages/:slug', async (req, res) => {
   const { rows: [p] } = await apiPool.query(`SELECT id, slug, title, lang, body_md, updated_at,
       (SELECT jsonb_agg(jsonb_build_object('name', name, 'width', width, 'height', height)) FROM page_images i WHERE i.page_id = p.id) AS images
     FROM pages p WHERE slug = $1 AND published`, [req.params.slug]);
   if (!p) throw notFound(`no page "${req.params.slug}"`);
-  const base = `${req.protocol}://${req.get('host')}${req.baseUrl}/pages/${p.slug}/images/`;
   const imgs = p.images || [];
-  const { html, toc } = renderPage(p.body_md, { imageBase: base, known: new Set(imgs.map((i) => i.name)),
-    dims: new Map(imgs.filter((i) => i.width).map((i) => [i.name, i])) });
-  res.json({ slug: p.slug, title: p.title, lang: p.lang, html, toc, updated_at: p.updated_at });
+  const opts = { imageBase: `${req.protocol}://${req.get('host')}${req.baseUrl}/pages/${p.slug}/images/`,
+    known: new Set(imgs.map((i) => i.name)), dims: new Map(imgs.filter((i) => i.width).map((i) => [i.name, i])), seen: new Map() };
+  const { intro, chapters } = splitChapters(p.body_md);
+  const introOut = renderPage(intro.md, opts);
+  const rendered = chapters.map((c) => ({ ...c, ...renderPage(c.md, opts) }));
+  const ref = (c) => (c ? { id: c.id, title: c.title } : null);
+  const out = { slug: p.slug, title: p.title, lang: p.lang, updated_at: p.updated_at, words: words(p.body_md),
+    intro_html: introOut.html, chapters: rendered.map((c) => ({ id: c.id, title: c.title, words: words(c.md) })) };
+  if (req.query.chapter !== undefined) {
+    const i = rendered.findIndex((c) => c.id === String(req.query.chapter));
+    if (i < 0) throw notFound(`no chapter "${req.query.chapter}"`);
+    const c = rendered[i];
+    out.chapter = { id: c.id, index: c.index, title: c.title, html: c.html, toc: c.toc, prev: ref(rendered[i - 1]), next: ref(rendered[i + 1]) };
+  }
+  if (req.query.full === '1') {
+    out.html = introOut.html + rendered.map((c) => c.html).join('\n');
+    out.toc = [...introOut.toc, ...rendered.flatMap((c) => c.toc)];
+  }
+  res.json(out);
 });
 router.get('/pages/:slug/images/:name', async (req, res) => {
   const { rows: [img] } = await apiPool.query(`SELECT i.content_type, i.bytes, i.sha256 FROM page_images i JOIN pages p ON p.id = i.page_id
