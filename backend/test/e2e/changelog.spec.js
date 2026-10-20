@@ -4,7 +4,7 @@ const { test, expect, sql, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const today = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Zurich' }).format(new Date());
-test.afterEach(() => sql('DELETE FROM changelog_entries; DELETE FROM roadmap_items'));
+test.afterEach(() => sql('DELETE FROM changelog_entries; DELETE FROM roadmap_items; DELETE FROM form_drafts'));
 
 test('changelog: an entry with kinds, a draft until published, in the API and the RSS feed', async ({ userA, request }) => {
   await userA.goto('/changelog');
@@ -73,4 +73,66 @@ test('roadmap: columns, order, done items written into today\'s changelog', asyn
   await userA.goto(`/changelog/${entry}/edit`);
   await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Save")')]);
   expect(sql('SELECT count(*) FROM changelog_items WHERE roadmap_item_id IS NOT NULL')).toBe('1');
+});
+
+test('changelog: autosaved draft restored, edits in place in the history, a deleted entry restored with its bullets and id', async ({ userA }) => {
+  await userA.goto('/changelog/new');
+  await userA.fill('#cl-day', '2026-09-29');
+  await userA.fill('#cl-items', 'Neu: Markdown-Editor\nBehoben: Anmeldung');
+  await expect(userA.locator('[data-form-draft-status]')).toContainText('Draft saved');
+  await userA.goto('/changelog/new');                                                // the tab closed: nothing lost
+  await expect(userA.locator('.form-draft')).toContainText('Restored your unsaved draft');
+  await expect(userA.locator('#cl-items')).toHaveValue('Neu: Markdown-Editor\nBehoben: Anmeldung');
+  await expect(userA.locator('#cl-day')).toHaveValue('2026-09-29');
+  await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Create")')]);
+  const id = userA.url().match(/changelog\/(\d+)\/edit/)[1];
+  expect(sql("SELECT count(*) FROM form_drafts WHERE form_key = 'changelog/new'")).toBe('0');
+
+  // one bullet changed: an update of that bullet, not all deleted and written anew
+  await userA.fill('#cl-items', 'Neu: Markdown-Editor mit Live-Formatierung\nBehoben: Anmeldung');
+  await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Save")')]);
+  expect(sql(`SELECT string_agg(action::text, ',' ORDER BY id) FROM audit_log WHERE table_name = 'changelog_items' AND (new_row->>'entry_id') = '${id}'
+    AND txid = (SELECT max(txid) FROM audit_log WHERE table_name = 'changelog_items')`)).toBe('update');
+  await expect(userA.locator('table.diff')).toContainText('Live-Formatierung');
+
+  // deleted (after a confirmation) …
+  userA.once('dialog', (d) => d.accept());
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Delete this entry")')]);
+  await expect(userA.locator('.recently-deleted')).toContainText('29. September 2026');
+  // … and restored as it was before: same id, both bullets
+  await userA.locator('.recently-deleted li', { hasText: '29. September 2026' }).locator('a:has-text("restore…")').click();
+  await expect(userA.locator('.restore-preview li')).toHaveCount(2);
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Restore")')]);
+  await expect(userA).toHaveURL(new RegExp(`/changelog/${id}/edit\\?done=restored`));
+  await expect(userA.locator('#cl-items')).toHaveValue('Neu: Markdown-Editor mit Live-Formatierung\nBehoben: Anmeldung');
+  await expect(userA.locator('table.diff .tag', { hasText: '↩ restore' }).first()).toBeVisible();
+
+  // an older version restored from the entry's history
+  await userA.locator('table.diff a:has-text("restore this version…")').last().click();
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Restore")')]);
+  await expect(userA.locator('#cl-items')).toHaveValue('Neu: Markdown-Editor\nBehoben: Anmeldung');
+  // the global history names it
+  await userA.goto('/history');
+  await expect(userA.locator('table.diff a', { hasText: 'changelog 2026-09-29' }).first()).toHaveAttribute('href', `/changelog/${id}/edit`);
+});
+
+test('roadmap: the edit form autosaves, a deleted item comes back from the history', async ({ userA }) => {
+  sql("INSERT INTO roadmap_items (title, area) VALUES ('Historische Karten', 'Karte')");
+  const id = sql("SELECT id FROM roadmap_items WHERE title = 'Historische Karten'");
+  await userA.goto(`/roadmap/${id}/edit`);
+  await userA.fill('#rm-title', 'Historische Karten pro Epoche');
+  await expect(userA.locator('[data-form-draft-status]')).toContainText('Draft saved');
+  await userA.reload();
+  await expect(userA.locator('#rm-title')).toHaveValue('Historische Karten pro Epoche');
+  await userA.click('.form-draft button:has-text("Discard draft")');
+  await expect(userA.locator('#rm-title')).toHaveValue('Historische Karten');
+
+  userA.once('dialog', (d) => d.accept());
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Delete this item")')]);
+  await userA.locator('.recently-deleted li', { hasText: 'Historische Karten' }).first().locator('a:has-text("restore…")').click();
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Restore")')]);
+  await expect(userA).toHaveURL(new RegExp(`/roadmap/${id}/edit\\?done=restored`));
+  await expect(userA.locator('#rm-title')).toHaveValue('Historische Karten');
+  await userA.goto('/roadmap/history');
+  await expect(userA.locator('table.diff')).toContainText('roadmap: Historische Karten');
 });

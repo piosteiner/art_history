@@ -34,6 +34,7 @@ import { initSortable } from './sortable';
 import { initCiteDialogs, initCiteTriggers } from './cites';
 import { initErrorFields } from './errors';
 import { imageHandlers, initImageUploads } from './uploads';
+import { initFormDrafts } from './formdrafts';
 
 // Colours come from the admin stylesheet's CSS variables, so light/dark mode just works.
 const liveStyle = HighlightStyle.define([
@@ -536,6 +537,7 @@ initLiveSearch();
 initInfinite();
 initDuplicates();
 initSortable();
+initFormDrafts();
 initCiteDialogs();
 initCiteTriggers();
 initErrorFields();

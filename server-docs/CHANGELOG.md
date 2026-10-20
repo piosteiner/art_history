@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Changelog and roadmap: autosave, history and restore (migration 119); a deleted entry restored
+- **What:** table `form_drafts` — the changelog and roadmap forms send what is typed as a draft of the account 1.5 s
+  after typing pauses (also when the tab is hidden), restored with a banner when the form is opened again, removed on
+  Save (`editor/formdrafts.js`). Edit pages show their history; "restore this version…" / "restore as before…" in
+  every history (also /history and `/roadmap/history`) bring back an entry with its bullets or a roadmap item, a
+  deleted one under its old id; lists show "Recently deleted"; deleting asks first. Saving now edits bullets in place
+  instead of deleting and re-inserting them all. History labels and links for the three tables. Fix: the history read
+  the roadmap's text column `area` as a geography (/history failed once roadmap items had an area). The entry of
+  2026-09-29, deleted by accident at 20:21 UTC, restored from the audit log as it was before (published, 3 bullets).
+- **Why:** owner: an entry deleted by accident; wants them in the history and saves while typing, for the roadmap too.
+- **Revert:** revert the commit; `DROP TABLE form_drafts;` delete `119_form_drafts.sql` from `schema_migrations`.
+
 ### Public changelog and roadmap (migration 118)
 - **What:** tables `changelog_entries`, `changelog_items` (kind neu/verbessert/behoben/inhalt/technik, optional link to
   a roadmap item), `roadmap_items` (status jetzt/naechstes/spaeter/erledigt, area, notes, position, done_on), all

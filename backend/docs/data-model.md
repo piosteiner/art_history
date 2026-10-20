@@ -652,4 +652,12 @@ status is `erledigt` —, published). All three audited. In the CMS an entry's b
 (`parseItems()` / `itemsToText()` in `src/changelog.js`); marking a roadmap item done writes a bullet into today's entry
 (Europe/Zurich; a draft entry is started if there is none) linked to the item; re-saving the entry keeps that link for
 bullets whose text is unchanged.
+Saving rewrites the bullets in place, position by position (an update per changed bullet, so the history reads
+well). History and restore: the edit pages list the entry's (and its bullets') changes from `audit_log`;
+`/changelog/restore/<audit id>` and `/roadmap/restore/<audit id>` rebuild a version — the newest logged state of each
+row up to that change set (`DISTINCT ON (row_id) … ORDER BY row_id, id DESC`), or up to just before it when it deleted
+the entry — and write it back with `jsonb_populate_record()`; a deleted entry or item is re-inserted under its old id
+(`OVERRIDING SYSTEM VALUE`). Lists show "Recently deleted". Drafts (119): `form_drafts` (user_id, form_key
+`changelog/new|<id>`, `roadmap/new|<id>`, base = the record's updated_at, fields jsonb, saved_at) — autosaved while
+typing (`editor/formdrafts.js`), restored on reopening, removed on Save; not audited.
 

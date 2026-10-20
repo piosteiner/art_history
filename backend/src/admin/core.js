@@ -34,6 +34,7 @@ const DONE = {
   'num-added': 'Number added.', 'num-deleted': 'Number removed.',
   'prov-added': 'Provenance step added.', 'prov-saved': 'Provenance step saved.', 'prov-deleted': 'Provenance step removed.', 'prov-moved': 'Order changed.',
   'prov-confirmed': 'Marked as happened as planned — no more reminder.',
+  'draft-discarded': 'Draft discarded.',
   logged: 'Marked as done — and written into today\'s changelog entry (a draft until you publish it).',
 };
 
@@ -166,7 +167,7 @@ function friendly(err) {
 // ---------------------------------------------------------------------------------------------------------------
 const HIDDEN_KEYS = ['id', 'created_at', 'updated_at', 'lifespan', 'web_url_accessed'];  // the last follows web_url (trigger, 039)
 
-// `where` is SQL on alias a (audit_log) and r (the row as jsonb). Geography values are shown as WKT.
+// `where` is SQL on alias a (audit_log) and r (the row as jsonb). Geography values (location, area — not the roadmap's text area) are shown as WKT.
 // A deleted entity's name comes from its last recorded version (its table: entity_table(), migration 019).
 const GONE_NAME = `(SELECT coalesce(x.old_row->>'name', x.old_row->>'title') FROM audit_log x
   WHERE x.table_name = entity_table(($T)::entity_type) AND x.row_id = ($I)::bigint AND x.old_row IS NOT NULL ORDER BY x.id DESC LIMIT 1)`;
@@ -192,16 +193,25 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
              WHEN a.table_name = 'provenance_records'
              THEN concat_ws(' ', 'record of', coalesce(prx.title, 'a provenance step'), '—', concat_ws(', ', r->>'date_label', r->>'document', 'no. ' || (r->>'number')))
              WHEN a.table_name = 'search_synonyms' THEN 'search words: ' || (r->>'label')
+             WHEN a.table_name = 'changelog_entries' THEN concat_ws(' · ', 'changelog ' || (r->>'day'), r->>'title')
+             WHEN a.table_name = 'changelog_items'
+             THEN 'changelog bullet of ' || coalesce((SELECT e.day::text FROM changelog_entries e WHERE e.id = (r->>'entry_id')::bigint), 'a deleted entry')
+                  || ' (' || (r->>'kind') || '): ' || left(r->>'text_md', 80)
+             WHEN a.table_name = 'roadmap_items' THEN 'roadmap: ' || (r->>'title')
              ELSE coalesce(r->>'name', r->>'title', r->>'slug') END AS what,
            CASE WHEN a.table_name = 'relationships' THEN s.type::text || 's/' || s.slug
                 WHEN a.table_name = 'images' THEN ie.type::text || 's/' || ie.slug
                 WHEN a.table_name IN ('provenance', 'artwork_numbers') THEN 'artworks/' || pa.slug
                 WHEN a.table_name = 'provenance_records' AND prx.slug IS NOT NULL THEN 'artworks/' || prx.slug
                 WHEN a.table_name = 'search_synonyms' AND a.action <> 'delete' THEN 'search-words/' || a.row_id || '/edit'
+                WHEN a.table_name = 'changelog_entries' AND a.action <> 'delete' THEN 'changelog/' || a.row_id || '/edit'
+                WHEN a.table_name = 'changelog_items' AND EXISTS (SELECT 1 FROM changelog_entries e WHERE e.id = (r->>'entry_id')::bigint)
+                THEN 'changelog/' || (r->>'entry_id') || '/edit'
+                WHEN a.table_name = 'roadmap_items' AND a.action <> 'delete' THEN 'roadmap/' || a.row_id || '/edit'
                 WHEN a.action <> 'delete' THEN a.table_name || '/' || (r->>'slug') END AS link,
            (SELECT jsonb_object_agg(k, jsonb_build_array(
-                     CASE WHEN k IN ('location', 'area') THEN to_jsonb(ST_AsText((a.old_row->>k)::geography)) ELSE a.old_row->k END,
-                     CASE WHEN k IN ('location', 'area') THEN to_jsonb(ST_AsText((a.new_row->>k)::geography)) ELSE a.new_row->k END))
+                     CASE WHEN k IN ('location', 'area') AND a.table_name <> 'roadmap_items' THEN to_jsonb(ST_AsText((a.old_row->>k)::geography)) ELSE a.old_row->k END,
+                     CASE WHEN k IN ('location', 'area') AND a.table_name <> 'roadmap_items' THEN to_jsonb(ST_AsText((a.new_row->>k)::geography)) ELSE a.new_row->k END))
             FROM jsonb_object_keys(r) k
             WHERE (a.old_row->k) IS DISTINCT FROM (a.new_row->k) AND k <> ALL ($${params.length + 1}::text[])) AS diff
     FROM audit_log a
@@ -239,6 +249,11 @@ const short = (v) => {
 };
 
 // restoreFor: { table, rowId } on an entity's history page — its insert/update rows get "restore this version".
+// The changelog and roadmap (118) restore whole versions on their own pages (routes/changelog.js) instead of the
+// entries' revert planner: an entry together with its bullets, a deleted one as it was before the deletion.
+const OWN_RESTORE = {
+  changelog_entries: (h) => `/changelog/restore/${h.id}`, changelog_items: (h) => `/changelog/restore/${h.id}`, roadmap_items: (h) => `/roadmap/restore/${h.id}`,
+};
 function historyTable(rows, { showWhat = true, restoreFor = null } = {}) {
   if (!rows.length) return html`<p class="muted">No changes recorded yet.</p>`;
   const seenTx = new Set();  // "revert…" once per change set (a delete and its relationships share one txid)
@@ -258,7 +273,8 @@ function historyTable(rows, { showWhat = true, restoreFor = null } = {}) {
           ? html`<tr><th>${k}</th><td colspan="2">${wordDiff(o, n)}</td></tr>`
           : html`<tr><th>${k}</th><td class="old">${short(o)}</td><td class="new">${short(n)}</td></tr>`))}</table>`
         : html`<span class="tag">${h.action}</span> <span class="muted">${entries.map(([k, [o, n]]) => `${k}: ${short(o ?? n)}`).join(' · ')}</span>`}</td>
-      <td class="history-actions">${firstOfTx ? html`<a href="/revert/${h.txid}" title="Undo this save${h.tx_rows > 1 ? ` (${h.tx_rows} rows)` : ''}">revert…</a>` : ''}
+      <td class="history-actions">${OWN_RESTORE[h.table_name] ? (firstOfTx ? html`<a href="${OWN_RESTORE[h.table_name](h)}" title="Make it look like ${h.action === 'delete' ? 'right before this deletion' : 'right after this change'}">${h.action === 'delete' ? 'restore as before…' : 'restore this version…'}</a>` : '')
+        : firstOfTx ? html`<a href="/revert/${h.txid}" title="Undo this save${h.tx_rows > 1 ? ` (${h.tx_rows} rows)` : ''}">revert…</a>` : ''}
         ${canRestore ? html`<a href="/restore/${h.id}" title="Make it look like right after this change">restore this version…</a>` : ''}</td>
     </tr>`;
   })}</tbody></table></div>`;
