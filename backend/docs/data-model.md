@@ -615,3 +615,10 @@ those four tables, reading `editor_institutions()` (from `arthistory.user_id`; N
 `(SELECT editor_institutions())`. The table owner is not subject to them. `may_edit_artwork(id)` for the admin's
 messages. Set with `npm run admin:scope -- <user> <institution slug …> | --clear`.
 
+## Works and artists of a period (migrations 100, 112)
+`movement_works` (view): artworks of each style/movement/period — linked themselves (`associated_with`), or through
+their artist (made while the movement lasted); rolled up through `parent_id` with a recursive CTE (a style has its
+phases' works). `movement_artists` (view, 112): artists linked directly (`associated_with`, `member_of`, `founded`;
+via `artist`, the links' dates merged with `range_merge(range_agg(period))`) or creators/co-creators of its works (via
+`works`); rolled up the same way. `/v1/periods` serves both.
+

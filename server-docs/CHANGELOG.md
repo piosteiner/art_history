@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Periods: artists beside works (migration 112)
+- **What:** view `movement_artists` (artists linked to a style/movement directly or through their works, phases
+  rolled up); `/v1/periods` sends `artists` per period (life, via, the link's dates, lane places) and `creator_slug`
+  per work. Site: a Works | Artists switch on /periods (`?show=artists`) — each artist a thin lifespan row under the
+  period, their works of it as dots, a life outside the span outlined red and listed, a year window lists the artists
+  alive then. E2E `periods.spec.js`, site test.
+- **Why:** owner: see how the artists' lives sit in the periods.
+- **Revert:** `DROP VIEW movement_artists;` delete `112_movement_artists.sql` from `schema_migrations`; revert the commit.
+
 ### The search fields stored (migration 111)
 - **What:** Table `entry_search_fields_stored` — the view `entry_search_fields` (110) stored, brought up to date by
   `refresh_quality()` after every change (only changed rows written, like `graph_links`); `entry_search_fields_json()`

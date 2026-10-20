@@ -1,7 +1,8 @@
 // GET /v1/periods — the periods timeline: styles, movements and periods with where and when each was active (their
 // dated "active in" relationships, one lane per place — Europe as a whole, Italy, France, the Low Countries, Japan …),
 // their parts (parent), whether the entry has been reviewed (not marked "to complete"), and the works of the collection
-// that belong to each (view movement_works, migration 100).
+// that belong to each (view movement_works, migration 100) and its artists (view movement_artists, 112): their lives,
+// how they belong, and where they lived and worked then — for their lane.
 const express = require('express');
 const { apiPool } = require('../db');
 
@@ -18,7 +19,7 @@ function fuzzy(label) {
 }
 
 router.get('/', async (req, res) => {
-  const [periods, spans, works] = await Promise.all([
+  const [periods, spans, works, artists] = await Promise.all([
     apiPool.query(`
       SELECT m.id, m.slug, m.public_id, m.name, m.kind::text AS kind, p.slug AS parent, range_json(m.period, m.period_label) AS period,
              NOT EXISTS (SELECT 1 FROM movement_drafts d WHERE d.movement_id = m.id) AS reviewed
@@ -56,10 +57,39 @@ router.get('/', async (req, res) => {
         GROUP BY m.artwork_id, m.place_id
       )
       SELECT mw.movement_id, w.slug, w.public_id, w.title, range_json(w.created, w.created_label) AS created,
-             a.name AS creator, coalesce(wm.places, '{}') AS places, wm.made_in
+             a.name AS creator, a.slug AS creator_slug, coalesce(wm.places, '{}') AS places, wm.made_in
       FROM movement_works mw JOIN artworks w ON w.id = mw.artwork_id LEFT JOIN artists a ON a.id = w.creator_id
       LEFT JOIN where_made wm ON wm.artwork_id = w.id
       ORDER BY lower(w.created) NULLS LAST, w.title`),
+    // each artist of a period with where they lived and worked during it (dated stays overlapping the period's span,
+    // undated ones too; at an institution: its city), the places above those and their countries — for the lane
+    apiPool.query(`
+      WITH RECURSIVE stays AS (
+        SELECT DISTINCT ma.movement_id, ma.artist_id, CASE r.object_type WHEN 'place' THEN r.object_id ELSE i.place_id END AS place_id
+        FROM movement_artists ma
+        JOIN movements m ON m.id = ma.movement_id
+        JOIN relationships r ON r.subject_type = 'artist' AND r.subject_id = ma.artist_id AND r.object_type IN ('place', 'institution')
+        JOIN relationship_types rt ON rt.code = r.relationship_type AND rt.is_physical_presence AND rt.code NOT IN ('born_in', 'died_in')
+        LEFT JOIN institutions i ON r.object_type = 'institution' AND i.id = r.object_id
+        WHERE r.period IS NULL OR m.period IS NULL OR r.period && m.period
+      ),
+      up AS (
+        SELECT movement_id, artist_id, place_id AS id, 0 AS depth FROM stays WHERE place_id IS NOT NULL
+        UNION ALL
+        SELECT up.movement_id, up.artist_id, p.parent_id, up.depth + 1 FROM up JOIN places p ON p.id = up.id WHERE p.parent_id IS NOT NULL AND up.depth < 20
+      ),
+      lived AS (
+        SELECT s.movement_id, s.artist_id,
+               array_remove(array_agg(DISTINCT pl.slug) || array_agg(DISTINCT place_country(s.place_id)->>'slug'), NULL) AS places
+        FROM stays s LEFT JOIN up ON (up.movement_id, up.artist_id) = (s.movement_id, s.artist_id) LEFT JOIN places pl ON pl.id = up.id
+        GROUP BY s.movement_id, s.artist_id
+      )
+      SELECT ma.movement_id, a.slug, a.public_id, a.name, a.birth_label, a.death_label,
+             range_json(a.lifespan, NULLIF(concat_ws('–', a.birth_label, a.death_label), '')) AS life,
+             ma.via, range_json(ma.period, ma.period_label) AS active, coalesce(l.places, '{}') AS places
+      FROM movement_artists ma JOIN artists a ON a.id = ma.artist_id
+      LEFT JOIN lived l ON (l.movement_id, l.artist_id) = (ma.movement_id, ma.artist_id)
+      ORDER BY lower(a.lifespan) NULLS LAST, a.name`),
   ]);
   const ids = new Set(periods.rows.map((p) => p.id));
   // lanes: Europe as a whole first, then by their earliest span
@@ -80,6 +110,9 @@ router.get('/', async (req, res) => {
       ...p,
       spans: spans.rows.filter((s) => s.movement_id === id).map((s) => ({ place: s.place, period: s.period, fuzzy: fuzzy(s.label) })),
       works: works.rows.filter((w) => w.movement_id === id).map(({ movement_id, places, ...w }) => ({ ...w, places: [...new Set(places)] })),
+      // fuzzy: a birth or death known only roughly ("c. 1450", "1430s") — the life's edge fades
+      artists: artists.rows.filter((a) => a.movement_id === id).map(({ movement_id, places, birth_label: b, death_label: d, ...a }) => ({
+        ...a, places: [...new Set(places)], fuzzy: { start: !b || ROUGH.test(b), end: !!d && ROUGH.test(d) } })),
     })),
   });
 });

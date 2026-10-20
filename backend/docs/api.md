@@ -428,6 +428,19 @@ Only listed words; a phrase is found as an equivalent but not looked up (searchi
   `null` when only the name matched.
 - `type` is one of `artist, artwork, institution, person, movement, place, polity, term, source, event` (400 otherwise).
 
+## Periods (100, 112)
+`GET /v1/periods` — the periods timeline: styles, movements and periods with dated "active in" places →
+`{lanes: [{slug, name, public_id}] (Europe first, then European lanes, then the others), periods: [{slug, public_id,
+name, kind, parent, period, reviewed, spans: [{place, period, fuzzy: {start, end}}], works: [...], artists: [...]}]}`.
+- `works`: the collection's works of the period (linked themselves or through their artist, made while it lasted;
+  a style has its phases' works): `{slug, public_id, title, creator, creator_slug, created, places, made_in}` —
+  `places` = where it was made, the places above and the country (for the lane).
+- `artists` (112): `{slug, public_id, name, life, via, active, places, fuzzy}` — `via`: `artist` (associated with,
+  member of, founded it) or `works` (only through works of theirs, incl. co-creators); `active` = the link's own dates
+  when recorded; `life` = birth–death (open end: living); `places` = where they lived and worked during the period
+  (dated stays overlapping it, undated ones too; at an institution: its city), the places above and the countries;
+  `fuzzy` = birth/death known only roughly (start also when the birth is unknown).
+
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.
 - `GET /v1/network/path?from=<entry>&to=<entry>[&via=person,artist&max=6]` — the shortest chain of relationships and
