@@ -4,6 +4,27 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### One search definition for the admin and the site (migration 110)
+- **What:** View `entry_search_fields` — per entry the fields a search finds besides the name (label, text, match,
+  tier, shown): artworks' artist, date, type and materials (term names in every language), medium, made in, state,
+  series, **now in / formerly in** (museums, view `artwork_holders`); artists' and people's filed as, dates, birthplace,
+  nationality (people also kind, occupations, roles); institutions' place, polity and "works by" an artist; sources'
+  authors, title, publisher; events, terms, polities, places, movements. Functions `person_roles()` (was SQL in
+  entities.js), `country_words()`, `polity_words()`, `place_and_country()`, `entry_search_fields_json()`.
+  Admin lists (`fieldSearchSql()` in `src/admin/match.js`): every word in the name, other names, slug or a field;
+  names first; museums' hits under "Now in the collection" / "Formerly in the collection"; the matched fields shown as
+  the reason; nothing found → "Similar names" (typo-tolerant names). API lists: `search_fields` per item (artworks
+  no longer send `term_names` in lists). Site: matches against `search_fields` (its own field definitions in
+  `catalog.ts` removed); fields marked `shown` count as visible. Test `fieldsearch.spec.js` compares the admin's
+  hits and groups with the site's rules applied to the API's lists for ten queries.
+- **Why:** owner: "prado" in the admin's artworks didn't find the works in (or once in) the Prado — the two searches
+  had drifted apart.
+- **Note:** the artworks list API takes ≈ 1.9 s instead of ≈ 1.4 s (the fields of ~190 works); a misspelt artist name
+  no longer finds the artist's works in the admin (typo tolerance is for names, as on the site).
+- **Revert:** redeploy the previous commit; `DROP FUNCTION entry_search_fields_json(entity_type, bigint); DROP VIEW
+  entry_search_fields; DROP FUNCTION person_roles(bigint), country_words(jsonb), polity_words(entity_type, bigint, text),
+  place_and_country(text, jsonb); DELETE FROM schema_migrations WHERE name = '110_entry_search_fields.sql';`
+
 ### Data: mumok and the Academy's picture gallery, 20 works each, with the provenance they publish
 - **What:** (production, as user pio) mumok: 20 works (Gerstl, Kokoschka, Magritte, Kandinsky, Léger, Moholy-Nagy, Calder,
   Gleizes, Balla, Schmidt-Rottluff, Dubuffet, Delvaux, Schwitters, Christo, Nitsch, Lam, Brauner, Masson, Vasarely,

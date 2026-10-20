@@ -57,16 +57,7 @@ function shapeNames(row, col) {
 // patron · owner (of an artwork) · depicted (in an artwork). Sorted text[]; ?role=patron filters with @>.
 // "owner" comes from the provenance (031), asked directly: a filter on the owner can't be pushed through the window
 // functions of provenance_periods (they are partitioned by artwork), but here the index provenance_person_idx serves it.
-const ROLES = `ARRAY(SELECT x.role FROM (
-    SELECT CASE WHEN (r.subject_type, r.subject_id) = ('person', t.id) AND rt.category = 'patronage' THEN 'patron'
-                WHEN (r.object_type, r.object_id) = ('person', t.id) AND r.relationship_type = 'depicts_person' THEN 'depicted' END
-    FROM relationships r JOIN relationship_types rt ON rt.code = r.relationship_type
-    WHERE (r.subject_type, r.subject_id) = ('person', t.id) OR (r.object_type, r.object_id) = ('person', t.id)
-    UNION
-    SELECT CASE WHEN pv.method = 'commission' THEN 'patron' ELSE 'owner' END FROM provenance pv WHERE pv.owner_person_id = t.id
-    UNION
-    SELECT 'owner' FROM provenance_co_owners c WHERE c.owner_person_id = t.id) x(role)
-  WHERE x.role IS NOT NULL ORDER BY 1)`;
+const ROLES = 'person_roles(t.id)';  // patron / owner / depicted, from relationships and provenance (function, 110)
 
 // Per type: which column is the name, which daterange drives ?from/?to, list/detail columns (SQL on alias t),
 // extra list filters (?key=value → SQL with $ placeholder), Markdown columns, default order.
@@ -87,8 +78,8 @@ const ENTITIES = {
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
            (SELECT jsonb_build_object('slug', w.slug, 'title', w.title) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
            artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')},
-           -- type and materials are glossary terms (071): every name of them, all languages, for searching lists
-           t.materials, artwork_term_names(t.id) AS term_names,
+           -- type and materials (their names in every language are in search_fields, 110)
+           t.materials,
            upper(left(t.provenance_status::text, 1)) AS provenance_category, t.fate,  -- destroyed / partly_destroyed / lost (103)
            -- the institutions that hold it now and those that held it before (view artwork_holders, 107): searching a
            -- list for "Prado" finds what is there and what was
@@ -525,7 +516,9 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     }
 
     const { rows } = await apiPool.query(`
-      SELECT t.public_id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.list}, count(*) OVER () AS total
+      SELECT t.public_id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.list},
+             -- what a search finds besides the name (view entry_search_fields, 110): the admin's lists use the same
+             entry_search_fields_json('${e.type}', t.id) AS search_fields, count(*) OVER () AS total
       FROM ${e.table} t
       ${where.length ? `WHERE ${where.join(' AND ')}` : ''}
       ORDER BY ${rank}${e.order}

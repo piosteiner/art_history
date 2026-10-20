@@ -9,7 +9,7 @@ test('list pages, the search page and the quality filters update as you type / c
   await userA.goto('/artists');
   await mark(userA);
   await userA.locator('main input[name=q]').pressSequentially('hokusia', { delay: 30 });  // with a typo
-  await expect(userA.locator('[data-live-results="list"] tbody tr')).toHaveCount(1);
+  await expect(userA.locator('[data-live-results="list"] tbody tr:not(.list-group)')).toHaveCount(1);   // under "Similar names"
   await expect(userA.locator('[data-live-results="list"]')).toContainText('Katsushika Hokusai');
   await expect(userA).toHaveURL(/\/artists\?q=hokusia$/);                  // the address follows
   expect(await same(userA)).toBe(true);

@@ -98,9 +98,9 @@ cite (popovers). The ids are unique per text, so several texts on one page don't
 ### Type and materials of artworks (glossary terms, migration 071)
 An artwork's `kind` and `materials` stay names (the term's main name, English), but each is a glossary term with
 names in several languages: the detail has `kind_term` `{slug, name}` and `material_terms` `[{slug, name}]` (link
-them to `/glossary/<slug>`); list and detail have `term_names` — every name of the type, the materials and the terms the
-`medium` mentions, in every language (`["woodblock print", "Holzschnitt", "木版画", "paper", "Papier", …]`) — for
-searching ("Holzschnitt" finds the woodblock prints). Filters `?kind=` and `?material=` take the term's slug or any of its
+them to `/glossary/<slug>`); the detail has `term_names` — every name of the type, the materials and the terms the
+`medium` mentions, in every language (`["woodblock print", "Holzschnitt", "木版画", "paper", "Papier", …]`); in lists they
+are in `search_fields` (the Type field's `match`, 110) — "Holzschnitt" finds the woodblock prints. Filters `?kind=` and `?material=` take the term's slug or any of its
 names in any language. A value that is no term yet is shown as it is (no `kind_term` / not in `material_terms`).
 
 ### Glossary (`/v1/glossary`, type `term`)
@@ -160,6 +160,14 @@ The detail says which: `geometry_source: {location: "own"|"derived", area: "own"
 - `search_text` — everything the entry is found by besides its name: other names, furigana readings, kana readings in
   Latin letters (Hepburn, long vowels both ways: "ほっかいどう · hokkaidou hokkaido"); `""` if none. For filtering
   already loaded lists in the browser — append it to the text you match against; don't romanize client-side.
+- `search_fields` (lists, 110) — what a search finds besides the name, the same the admin's lists search (view
+  `entry_search_fields`): `[{label, text, match?, shown?, tier?: {rank, heading}}]` in order — e.g. an artwork's
+  `Artist`, `Date`, `Type` (`match`: the term's names in every language), `Materials`, `Medium`, `Made in`, `State`,
+  `Series`, `Now in` (tier 1, "Now in the collection"), `Formerly in` (tier 2); an artist's `Filed as`, `Lived`,
+  `Born in`, `Nationality`; an institution's `Works by` (tier 1). The rules both sides follow: every word of the query
+  (folded like `f_unaccent`) in the name, the other names or a field; names that start with the query first, then
+  names that contain every word, then the rest; an entry found only through tiered fields after all others, under the
+  tier's heading; `shown` fields are on the card anyway (no hidden reason); the matched hidden fields are the reason.
 Set `lang` on elements showing a name (`<h1 lang="ja">`) so the right font and pronunciation are used. `?q=` and
 `/v1/search` also match other names and readings ("kanagawa oki", "Under the Wave", "かながわ"), and kana readings typed
 in Latin letters (Hepburn, long vowels either way: "utagawa", "toukyou" or "tokyo").

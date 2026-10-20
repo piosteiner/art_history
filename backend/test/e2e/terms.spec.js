@@ -31,7 +31,9 @@ test('a type and materials typed in German are stored as the glossary terms and 
   expect(list.data.map((a) => a.slug)).toContain('test-term-print');
   expect((await api(request, '/artworks?material=Tusche')).data.map((a) => a.slug)).toContain('test-term-print');
   const w = list.data.find((a) => a.slug === 'test-term-print');
-  expect(w.term_names).toEqual(expect.arrayContaining(['woodblock print', 'Holzschnitt', '木版画', 'paper', 'Papier']));
+  // every name of its terms, in the type's search field (110: list items carry search_fields, no term_names)
+  const typeField = w.search_fields.find((f) => f.label === 'Type');
+  for (const n of ['woodblock print', 'Holzschnitt', '木版画', 'paper', 'Papier']) expect(typeField.match).toContain(n);
   const d = await api(request, '/artworks/test-term-print');
   expect(d.kind_term).toEqual({ slug: 'woodblock-print', name: 'woodblock print' });
   expect(d.material_terms.map((m) => m.slug)).toEqual(['paper', 'ink']);

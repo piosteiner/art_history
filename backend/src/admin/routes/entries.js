@@ -25,7 +25,7 @@ const placefinder = require('../placefinder');
 const bibliography = require('../../bibliography');
 const { thumbUrl } = require('../images');
 const collab = require('../collab');
-const { THRESHOLD, likeParam, scoreSql, altSql } = require('../match');
+const { THRESHOLD, likeParam, scoreSql, altSql, fieldSearchSql } = require('../match');
 const { docToForm, formToDoc, entityForm, humanize, fieldLabel } = require('../forms');
 const { PAGE, an, send, draftBanner, unpublishedBanner, unpublishedFields, restoredBanner, withTx, UserError, RULES, friendly, pager, pageParam, relationshipTypes, allEntities, relFromForm, relForm, anOf, typeWarning, CONVERTIBLE, stepFromBody, notFoundPage, formContext, findEntity, pluralParam } = require('../core');
 
@@ -43,56 +43,72 @@ router.get('/:plural', async (req, res) => {
   const { t } = req;
   const q = String(req.query.q || '').trim();
   const page = pageParam(req);
-  // With a query: typo-tolerant match on name, alternative names and slug, best first (src/admin/match.js).
-  // Artworks also by their creators (main and co-creators, the same fuzzy match on the artist's names): the works
-  // whose title matches come first, best first, then the other works of a matching artist in A–Z order.
-  const params = q ? [q, likeParam(q)] : [];
-  const score = q ? `greatest(${scoreSql(`t.${t.name}`, altSql(t, 't'))}, CASE WHEN t.slug ILIKE '%' || $2 || '%' THEN 1.0 ELSE 0 END)` : 'NULL';
-  const byCreator = t.type === 'artwork';
-  const creatorScore = q && byCreator ? `(SELECT max(${scoreSql('a.name', altSql(BY_TYPE.artist, 'a'))}) FROM artists a
-      WHERE a.id = t.creator_id OR a.id IN (SELECT r.object_id FROM relationships r WHERE r.relationship_type = 'co_creator'
-                                            AND r.subject_type = 'artwork' AND r.subject_id = t.id))` : 'NULL::numeric';
-  const { rows } = await adminPool.query(`
-    SELECT * FROM (
-      SELECT t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${score} AS score, ${creatorScore} AS creator_score,
-             ${byCreator ? `(SELECT string_agg(c ->> 'name', ', ') FROM jsonb_array_elements(artwork_creators(t.id)) c)` : 'NULL'} AS creators,
-             ${keyExpr(t.type, 't', t.name)} AS sort_key,
+  // With a query: the field search, the same rules as the site's lists (src/admin/match.js fieldSearchSql, view
+  // entry_search_fields, migration 110) — every word in the name, other names, slug or a search field ("prado" finds
+  // the works in the Prado, then those once there), names first; the fields that matched shown as the reason. Nothing
+  // found: typo-tolerant names instead ("Similar names", as on the site).
+  const cols = (p) => `t.slug, t.${t.name} AS name, t.updated_at, ${altSql(t, 't') || 'NULL'} AS alt, ${keyExpr(t.type, 't', t.name)} AS sort_key,
              ${t.imageFk ? `(SELECT i.url FROM images i WHERE i.${t.imageFk} = t.id ORDER BY i.position, i.id LIMIT 1)` : 'NULL'} AS image_url,
-             EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${params.length + 1}::entity_type AND ac.entity_id = t.id) AS to_complete,
+             EXISTS (SELECT 1 FROM auto_created ac WHERE ac.entity_type = $${p}::entity_type AND ac.entity_id = t.id) AS to_complete,
              ${t.type === 'source' ? 't.reading_status::text' : 'NULL'} AS status,
-             (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${params.length + 1}::entity_type, t.id)
-                                                           OR (r.object_type, r.object_id) = ($${params.length + 1}::entity_type, t.id)) AS rels
-      FROM ${t.table} t) x
-    ${q ? `WHERE score >= ${THRESHOLD} OR creator_score >= ${THRESHOLD}
-           ORDER BY score >= ${THRESHOLD} DESC, CASE WHEN score >= ${THRESHOLD} THEN score END DESC NULLS LAST, sort_key COLLATE sort_natural`
-      : 'ORDER BY sort_key COLLATE sort_natural'}
-    LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [...params, t.type]);
+             ${t.type === 'artwork' ? `(SELECT string_agg(c ->> 'name', ', ') FROM jsonb_array_elements(artwork_creators(t.id)) c)` : 'NULL'} AS creators,
+             (SELECT count(*)::int FROM relationships r WHERE (r.subject_type, r.subject_id) = ($${p}::entity_type, t.id)
+                                                           OR (r.object_type, r.object_id) = ($${p}::entity_type, t.id)) AS rels`;
+  let rows;
+  let similar = false;
+  if (!q) {
+    ({ rows } = await adminPool.query(`SELECT * FROM (SELECT ${cols(1)} FROM ${t.table} t) x ORDER BY sort_key COLLATE sort_natural
+      LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [t.type]));
+  } else {
+    ({ rows } = await adminPool.query(`
+      SELECT * FROM (SELECT ${cols(2)}, s.score, s.why, s.tier_rank, s.tier_heading
+                     FROM (${fieldSearchSql(t)}) s JOIN ${t.table} t ON t.id = s.id) x
+      ORDER BY tier_rank NULLS FIRST, score DESC, sort_key COLLATE sort_natural
+      LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [q, t.type]));
+    if (!rows.length && page === 1) {
+      similar = true;
+      ({ rows } = await adminPool.query(`
+        SELECT * FROM (SELECT ${cols(3)}, greatest(${scoreSql(`t.${t.name}`, altSql(t, 't'))}, CASE WHEN t.slug ILIKE '%' || $2 || '%' THEN 1.0 ELSE 0 END) AS fuzzy
+                       FROM ${t.table} t) x
+        WHERE fuzzy >= ${THRESHOLD} ORDER BY fuzzy DESC, sort_key COLLATE sort_natural LIMIT ${PAGE + 1}`, [q, likeParam(q), t.type]));
+    }
+  }
   // the bibliography: short references and how much has been read
   const sources = t.type === 'source' ? await bibliography.loadCatalogue(adminPool) : null;
   const stats = sources ? (await adminPool.query(`SELECT count(*)::int AS total,
       count(*) FILTER (WHERE reading_status = 'read')::int AS read, count(*) FILTER (WHERE reading_status = 'reading')::int AS reading,
       count(*) FILTER (WHERE reading_status = 'to_read')::int AS to_read FROM bibliography`)).rows[0] : null;
+  const span = t.imageFk ? 5 : 4;
+  // a heading where the group changes: "Now in the collection", "Formerly in the collection" (tiers), "Similar names"
+  const heading = (r, i, shown) => {
+    const h = similar ? (i === 0 ? 'Similar names' : null) : r.tier_heading && (i === 0 || shown[i - 1].tier_heading !== r.tier_heading) ? r.tier_heading : null;
+    return h ? html`<tr class="list-group"><td colspan="${span}">${h}</td></tr>` : '';
+  };
   send(req, res, {
     title: humanize(t.folder),
     body: html`<h1>${humanize(t.folder)}</h1>
       ${stats ? html`<p class="muted">${stats.total} sources — <b>${stats.read}</b> read · ${stats.reading} reading · ${stats.to_read} to read</p>` : ''}
-      <form class="bar" method="get" data-live><input name="q" value="${q}" placeholder="${byCreator ? 'Search title, other titles, slug or artist (typos are fine)' : 'Search name, other names or slug (typos are fine)'}" class="grow" type="search" autocomplete="off">
+      <form class="bar" method="get" data-live><input name="q" value="${q}" placeholder="Search — names, other names, slug and what the site searches too (${SEARCH_HINT[t.type] || 'kind, dates'})" class="grow" type="search" autocomplete="off">
         <button class="secondary">Search</button><a class="button" href="/${t.folder}/new">+ New ${t.type}</a>
         <a class="button secondary" href="/${t.folder}/new/wikidata">+ from Wikidata…</a>
         ${t.type === 'place' ? html`<a class="button secondary" href="/places/new/find">+ find a place…</a>` : ''}</form>
       <div data-live-results="list">${rows.length ? html`<div class="table-wrap"><table${t.imageFk ? html` class="with-thumbs thumbs-${t.type}"` : ''}><thead><tr>${t.imageFk ? html`<th></th>` : ''}<th>Name</th><th>Slug</th><th>Links</th><th>Updated</th></tr></thead><tbody>
-        ${rows.slice(0, PAGE).map((r, i, shown) => html`${q && r.score < THRESHOLD && (i === 0 || shown[i - 1].score >= THRESHOLD)
-          ? html`<tr class="list-group"><td colspan="${t.imageFk ? 5 : 4}">Works by a matching artist</td></tr>` : ''}<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
+        ${rows.slice(0, PAGE).map((r, i, shown) => html`${q ? heading(r, i, shown) : ''}<tr>${t.imageFk ? html`<td class="thumb">${r.image_url
           ? html`<a href="/${t.folder}/${r.slug}" tabindex="-1"><img src="${thumbUrl(r.image_url, 120)}" alt="" loading="lazy" decoding="async"></a>`
           : html`<span class="thumb-empty" title="no image"></span>`}</td>` : ''}<td><a href="/${t.folder}/${r.slug}">${r.name}</a>${r.to_complete ? html` <span class="tag warn" title="created automatically — fill in the details">to complete</span>` : ''}
           ${sources && sources.get(r.slug) ? html`<div class="small">${sources.get(r.slug).siglum}${r.status ? html` <span class="tag">${r.status.replace('_', ' ')}</span>` : ''}</div>` : ''}
           ${r.creators ? html`<div class="muted small">${r.creators}</div>` : ''}
+          ${r.why ? html`<div class="small search-why">${r.why.map((f, j) => html`${j ? ' · ' : ''}<span class="muted">${f.label}:</span> ${f.text}`)}</div>` : ''}
           ${!/[A-Za-zÀ-ɏ]/.test(r.name) && r.sort_key !== r.name ? html`<div class="muted small">${r.sort_key}</div>` : q && r.alt ? html`<div class="muted small">${r.alt}</div>` : ''}</td><td class="muted">${r.slug}</td>
           <td>${r.rels}</td><td class="muted">${r.updated_at.toISOString().slice(0, 10)}</td></tr>`)}
       </tbody></table></div>` : html`<p class="muted">Nothing found.</p>`}
-      ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, rows.length > PAGE)}</div>`,
+      ${pager(`/${t.folder}${q ? `?q=${encodeURIComponent(q)}` : ''}`, page, !similar && rows.length > PAGE)}</div>`,
   });
 });
+// what the search box can find besides names (the fields of view entry_search_fields, 110)
+const SEARCH_HINT = { artwork: 'artist, type, material, museum now or before, place, series', artist: 'birthplace, nationality, dates',
+  person: 'occupation, role, birthplace, dates', institution: 'place, kind, artists of its works', event: 'place, kind, date',
+  source: 'authors, title, publisher, year', place: 'kind, country', term: 'definition, category', polity: 'kind, territory today', movement: 'kind, dates' };
 
 // A new part of a series / album …: "+ New part" links to /artworks/new?part_of=<slug> — prefilled with the whole and
 // its creator (the part may still differ).
