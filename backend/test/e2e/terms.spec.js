@@ -27,6 +27,7 @@ test('a type and materials typed in German are stored as the glossary terms and 
   await expect(userA.locator('dl.fields a[href="/glossary/woodblock-print"]')).toHaveText('woodblock print');
   await expect(userA.locator('dl.fields')).toContainText('paper · ink');               // main names, "paper" once
 
+  sql('SELECT refresh_quality()');                                                    // the stored search fields (111)
   const list = await api(request, '/artworks?kind=Holzschnitt');                      // any name of the term
   expect(list.data.map((a) => a.slug)).toContain('test-term-print');
   expect((await api(request, '/artworks?material=Tusche')).data.map((a) => a.slug)).toContain('test-term-print');

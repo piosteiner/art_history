@@ -60,9 +60,11 @@ router.get('/:plural', async (req, res) => {
     ({ rows } = await adminPool.query(`SELECT * FROM (SELECT ${cols(1)} FROM ${t.table} t) x ORDER BY sort_key COLLATE sort_natural
       LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [t.type]));
   } else {
+    // the stored search fields (111), or the view itself while they are behind a change just made
+    const live = !(await quality.current(adminPool, { wait: 2000 }));
     ({ rows } = await adminPool.query(`
       SELECT * FROM (SELECT ${cols(2)}, s.score, s.why, s.tier_rank, s.tier_heading
-                     FROM (${fieldSearchSql(t)}) s JOIN ${t.table} t ON t.id = s.id) x
+                     FROM (${fieldSearchSql(t, 't', { live })}) s JOIN ${t.table} t ON t.id = s.id) x
       ORDER BY tier_rank NULLS FIRST, score DESC, sort_key COLLATE sort_natural
       LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [q, t.type]));
     if (!rows.length && page === 1) {

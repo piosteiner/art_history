@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### The search fields stored (migration 111)
+- **What:** Table `entry_search_fields_stored` — the view `entry_search_fields` (110) stored, brought up to date by
+  `refresh_quality()` after every change (only changed rows written, like `graph_links`); `entry_search_fields_json()`
+  reads it (the artworks' fields for a list: 0.9 s → 0.01 s). The admin's lists read it too, or the view itself while
+  it is behind a change just made (`quality.current()`). Not a materialized view: since Postgres 17 a refresh runs
+  with search_path = pg_catalog and the older functions the fields use don't qualify their tables (093).
+- **Why:** with the fields computed per request the artworks list went over the API role's 5 s statement timeout under
+  load ("Service Unavailable" in the site's tests).
+- **Revert:** redeploy the previous commit; restore `refresh_quality()` without the block and
+  `entry_search_fields_json()` reading the view (110); `DROP TABLE entry_search_fields_stored;`
+  `DELETE FROM schema_migrations WHERE name = '111_entry_search_fields_stored.sql';`
+
 ### One search definition for the admin and the site (migration 110)
 - **What:** View `entry_search_fields` — per entry the fields a search finds besides the name (label, text, match,
   tier, shown): artworks' artist, date, type and materials (term names in every language), medium, made in, state,

@@ -58,7 +58,8 @@ test('the admin finds what the site finds: museums now and before, birthplaces, 
   await expect(userA.locator('main table tbody tr').first()).toHaveText('Similar names');
   await expect(userA.locator('main table tbody tr').nth(1)).toContainText('Katsushika Hokusai');
 
-  // the API sends the fields with its lists; the artist and date as shown
+  // the API sends the fields with its lists (stored, 111 — brought up to date after a change, as the server does)
+  sql('SELECT refresh_quality()');
   const list = (await api(request, '/artworks?limit=500')).data;
   const bridge = list.find((w) => w.slug === 'bridge-in-the-rain-after-hiroshige');
   expect(bridge.search_fields).toEqual(expect.arrayContaining([
