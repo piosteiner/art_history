@@ -89,7 +89,7 @@ function partOf(text, asked) {
   return c ? { key: String(n), label: `chapter ${n}: ${c.title}`, md: c.md } : null;
 }
 
-function editPage(p, images, { flash = null, values = null, part = null, sync = null } = {}) {
+function editPage(p, images, { flash = null, values = null, part = null, sync = null, draft = null } = {}) {
   const v = values || p;
   const { images: embedded } = renderPage(p.body_md, { imageBase: '' });
   const names = new Set(images.map((i) => i.name));
@@ -123,9 +123,14 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
       <div class="field-pair"><div class="field"><label for="pg-title">Title</label><input id="pg-title" name="title" value="${v.title}" required></div>
         <div class="field"><label for="pg-lang">Language</label><input id="pg-lang" name="lang" value="${v.lang}" required pattern="[a-z]{2}(-[A-Z]{2})?">
           <div class="hint">de-CH: Swiss German spelling (ss, no ß) — the site tells browsers and screen readers.</div></div></div>
-      ${part ? html`<input type="hidden" name="chapter" value="${part.key}"><input type="hidden" name="base" value="${sha(p.body_md)}">
+      ${draft ? html`<div class="flash warning page-draft">Restored your unsaved draft of ${part.label} from ${when(draft.saved_at)} — it is not on the site until you save.
+        ${draft.base_sha !== sha(p.body_md) ? html` <b>The text has changed since the draft was written</b>: Save will show you before anything is overwritten.` : ''}
+        <button type="submit" form="pg-discard" class="link-button">Discard draft</button></div>` : ''}
+      ${part ? html`<input type="hidden" name="chapter" value="${part.key}"><input type="hidden" name="base" value="${draft ? draft.base_sha : sha(p.body_md)}">
       <div class="field"><label for="pg-body">Text — ${part.label}</label>
-        <textarea id="pg-body" name="body_md" class="md" rows="30" data-upload="/pages/${p.slug}/images" data-preview="/pages/${p.slug}/preview">${values && values.body_md !== undefined ? values.body_md : part.md}</textarea>
+        <textarea id="pg-body" name="body_md" class="md" rows="30" data-upload="/pages/${p.slug}/images" data-preview="/pages/${p.slug}/preview"
+          data-autosave="/pages/${p.slug}/draft">${values && values.body_md !== undefined ? values.body_md : draft ? draft.body_md : part.md}</textarea>
+        <p class="muted small page-autosave" data-autosave-status aria-live="polite">Drafts are saved as you type; Save puts them on the site.</p>
         <div class="hint">Markdown, as in Obsidian: <code>![[name.webp]]</code> embeds an image of this page (<code>![[name.webp|400]]</code> 400 px wide,
           <code>![[name.webp|caption]]</code> with a caption), <code>==highlight==</code>, <code>- [x]</code> tasks, tables, <code>&lt;span style="color:…"&gt;</code>.
           Drop or paste an image into the text to upload and embed it. A new <code>#</code> heading starts a new chapter.</div></div>`
@@ -133,6 +138,7 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
       <div class="field"><label class="choice"><input type="checkbox" name="published" value="1"${v.published ? ' checked' : ''}> Published</label></div>
       <div class="actions"><button>Save</button></div>
     </form>
+    ${part ? html`<form id="pg-discard" method="post" action="/pages/${p.slug}/draft/discard"><input type="hidden" name="chapter" value="${part.key}"></form>` : ''}
     <section class="page-images">
       <h2>Images <span class="muted small">${String(images.length)}</span></h2>
       <p class="muted small">Upload the attachments of the note under their own names (Obsidian: the files in its attachments folder) and every
@@ -157,7 +163,11 @@ router.get('/pages/:slug/edit', async (req, res) => {
   if (!p) return notFoundPage(req, res);
   const part = partOf(p.body_md, req.query.chapter);
   if (req.query.chapter !== undefined && req.query.chapter !== '' && !part) return res.redirect(303, `/pages/${p.slug}/edit`);
-  send(req, res, editPage(p, await imagesOf(p.id), { part, sync: await lastSync(p.id) }));
+  const draft = part ? (await adminPool.query('SELECT base_sha, body_md, saved_at FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3',
+    [p.id, req.user.id, part.key])).rows[0] : null;
+  // a draft that says nothing new (saved, then typed back) is no draft
+  const useful = draft && !(draft.base_sha === sha(p.body_md) && draft.body_md === part.md) ? draft : null;
+  send(req, res, editPage(p, await imagesOf(p.id), { part, sync: await lastSync(p.id), draft: useful }));
 });
 
 // The text as a .md file, named after the page — for Obsidian; remembered, so an upload can tell what changed since
@@ -228,7 +238,28 @@ router.post('/pages/:slug', async (req, res) => {
   } catch (err) {
     return send(req, res, { ...editPage(p, await imagesOf(p.id), { values: { ...values, body_md: edited }, part, flash: { kind: 'error', text: friendly(err) } }), status: 422 });
   }
+  if (chapter !== undefined) await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3', [p.id, req.user.id, String(chapter)]);
   res.redirect(303, `/pages/${p.slug}/edit?${chapter !== undefined ? `chapter=${encodeURIComponent(chapter)}&` : ''}done=saved`);
+});
+
+// Autosave (117, editor/uploads.js): the part being edited as a draft of this account — not on the site until Save
+router.post('/pages/:slug/draft', express.json({ limit: '5mb' }), async (req, res) => {
+  const p = await bySlug(req.params.slug);
+  if (!p) return res.status(404).json({ error: 'no such page' });
+  const part = String(req.body.chapter || '');
+  if (!/^(all|\d{1,4})$/.test(part) || typeof req.body.body !== 'string' || typeof req.body.base !== 'string') return res.status(422).json({ error: 'bad draft' });
+  const { rows: [d] } = await adminPool.query(`INSERT INTO page_drafts (page_id, user_id, part, base_sha, body_md) VALUES ($1, $2, $3, $4, $5)
+    ON CONFLICT (page_id, user_id, part) DO UPDATE SET base_sha = EXCLUDED.base_sha, body_md = EXCLUDED.body_md, saved_at = now() RETURNING saved_at`,
+  [p.id, req.user.id, part, req.body.base, req.body.body.replace(/\r\n/g, '\n')]);
+  res.json({ saved_at: d.saved_at });
+});
+
+router.post('/pages/:slug/draft/discard', async (req, res) => {
+  const p = await bySlug(req.params.slug);
+  if (!p) return notFoundPage(req, res);
+  const part = String(req.body.chapter || '');
+  await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3', [p.id, req.user.id, part]);
+  res.redirect(303, `/pages/${p.slug}/edit?chapter=${encodeURIComponent(part)}`);
 });
 
 // Preview (editor's button): the page as the site will show it, images from here (also those of an unpublished page)

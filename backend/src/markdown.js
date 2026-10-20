@@ -3,6 +3,7 @@
 const MarkdownIt = require('markdown-it');
 const sanitizeHtml = require('sanitize-html');
 const { TYPES } = require('./content');
+const { extras, ALLOW } = require('./md-extras');
 
 const md = new MarkdownIt({ html: false, linkify: true, typographer: true });
 
@@ -62,6 +63,9 @@ md.inline.ruler.before('emphasis', 'underline', (state, silent) => {
   return true;
 });
 
+// ==highlight==, ||spoiler||, - [x] tasks, > [!note] callouts — the admin editor's toolbar writes them (src/md-extras.js)
+extras(md);
+
 const SANITIZE = {
   allowedTags: ['p', 'br', 'hr', 'em', 'strong', 'code', 'pre', 'blockquote', 'ul', 'ol', 'li', 'u',
     'h2', 'h3', 'h4', 'a', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'sup', 'sub', 's', 'i', 'span', 'section'],
@@ -72,6 +76,10 @@ const SANITIZE = {
   allowedSchemes: ['http', 'https', 'mailto'],
   transformTags: { a: sanitizeHtml.simpleTransform('a', { rel: 'noopener' }) },
 };
+// the extras' tags, attributes and classes (src/md-extras.js) added to the lists above
+SANITIZE.allowedTags = [...new Set([...SANITIZE.allowedTags, ...ALLOW.tags])];
+for (const [tag, attrs] of Object.entries(ALLOW.attributes)) SANITIZE.allowedAttributes[tag] = [...new Set([...(SANITIZE.allowedAttributes[tag] || []), ...attrs])];
+for (const [tag, cls] of Object.entries(ALLOW.classes)) SANITIZE.allowedClasses[tag] = [...new Set([...(SANITIZE.allowedClasses[tag] || []), ...cls])];
 
 // ── Citations and footnotes (migration 036; the KHIST guide, src/bibliography.js) ─────────────────────────────────
 //   … in his seventies [[source/clark-2017|45]].        a citation in the text → a footnote "Clark 2017, S. 45."

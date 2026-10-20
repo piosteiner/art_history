@@ -638,4 +638,8 @@ Chapters (116): `splitChapters()` / `replaceChapter()` in `src/pages.js` — pos
 not inside code fences); the CMS edits one at a time and checks the text's sha256 it was opened with (a stale save is
 refused, the edit kept). `page_downloads` (page_id, sha256, at, kind download/upload): the text at the last .md
 download or upload — uploading a file warns when the page changed in the CMS since.
+Drafts (117): `page_drafts` (page_id, user_id, part, base_sha, body_md, saved_at) — autosaved per account and part,
+restored on reopening; Save applies and deletes it. Text forms (`src/md-extras.js`, also in entries' texts):
+`==mark==`, `||spoiler||`, `- [x]` tasks, `> [!type] title` callouts (note, info, tip, important, warning, quote,
+example, question, todo).
 

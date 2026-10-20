@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### The Markdown editor: the adenai tools, find and replace, autosave for pages (migration 117)
+- **What:** the CMS editor's toolbar gets the adenai editor's tools — [[ ]] entry link, web link, heading cycling
+  (#/##/###), numbered list, task, highlight (Ctrl+Shift+H), spoiler, quote, callout boxes (▣ Box: note, info, tip,
+  important, warning, quote, example, question, to do), table, divider — and find/replace (Ctrl+F,
+  `@codemirror/search`). The forms render everywhere: `src/md-extras.js` (==mark==, ||spoiler||, tasks, `> [!type]`
+  callouts) shared by `src/markdown.js` and `src/pages.js`; site styles. Pages autosave as drafts per account and part
+  (table `page_drafts`, every 1.5 s pause, also when the tab is hidden), restored on reopening with "Discard draft";
+  Save publishes. Unit tests `md-extras.test.js`, E2E `pages.spec.js`.
+- **Why:** owner: autosave for the Markdown editor, and all the tools of the adenai CMS editor.
+- **Revert:** revert the commits; `DROP TABLE page_drafts;` delete `117_page_drafts.sql` from `schema_migrations`.
+
 ### Pages read and edited by chapter; .md download and upload (migration 116)
 - **What:** chapters = a page's top-level headings (`splitChapters()` in `src/pages.js`). CMS: an outline beside the
   editor, one chapter (or the introduction, or the whole text) edited at a time and put back in its place, a stale save

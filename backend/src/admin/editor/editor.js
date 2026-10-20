@@ -13,6 +13,7 @@ import { syntaxHighlighting, HighlightStyle, LanguageSupport } from '@codemirror
 import { markdownLanguage } from '@codemirror/lang-markdown';
 import { tags as t } from '@lezer/highlight';
 import { autocompletion, startCompletion } from '@codemirror/autocomplete';
+import { search, searchKeymap, openSearchPanel, highlightSelectionMatches } from '@codemirror/search';
 import { initAutocomplete } from './autocomplete';
 import { initLive } from './live';
 import { yCollab, yUndoManagerKeymap } from 'y-codemirror.next';
@@ -130,12 +131,80 @@ function linePrefix(view, prefix) {
   return true;
 }
 
+// ---- the toolbar's tools (as in the adenai map's editor; the forms rendered by src/md-extras.js) ----
+
+// "1. " … before the selected lines (again: removed)
+function numberLines(view) {
+  const { state } = view;
+  const lines = [];
+  for (const r of state.selection.ranges) for (let pos = r.from; pos <= r.to;) { const l = state.doc.lineAt(pos); if (!lines.some((x) => x.from === l.from)) lines.push(l); pos = l.to + 1; }
+  const NUM = /^(\s*)\d{1,3}[.)]\s+/;
+  const allHave = lines.every((l) => NUM.test(l.text));
+  view.dispatch({
+    changes: lines.map((l, i) => {
+      const m = NUM.exec(l.text);
+      return allHave ? { from: l.from + m[1].length, to: l.from + m[0].length } : { from: l.from, insert: `${i + 1}. ` };
+    }),
+    userEvent: 'input',
+  });
+  view.focus();
+  return true;
+}
+
+// the heading of the line: none → # → ## → ### → none
+function cycleHeading(view) {
+  const line = view.state.doc.lineAt(view.state.selection.main.head);
+  const m = /^(#{1,6})\s+/.exec(line.text);
+  const next = !m ? '# ' : m[1].length < 3 ? `${m[1]}# ` : '';
+  view.dispatch({ changes: { from: line.from, to: line.from + (m ? m[0].length : 0), insert: next }, userEvent: 'input' });
+  view.focus();
+  return true;
+}
+
+// a block on lines of its own after the cursor's line (a divider, a table): blank lines around it
+function insertBlock(view, text, cursorAt = null) {
+  const line = view.state.doc.lineAt(view.state.selection.main.head);
+  const before = line.text.trim() ? '\n\n' : '';
+  const insert = `${before}${text}\n`;
+  const from = line.text.trim() ? line.to : line.from;
+  view.dispatch({ changes: { from, insert }, selection: { anchor: from + before.length + (cursorAt ?? text.length) }, userEvent: 'input' });
+  view.focus();
+  return true;
+}
+
+// a callout box (as in Obsidian): the selected lines go into it, else an empty one is started
+const CALLOUTS = [['note', '📝 Note'], ['info', 'ℹ️ Info'], ['tip', '💡 Tip'], ['important', '❗ Important'], ['warning', '⚠️ Warning'],
+  ['quote', '💬 Quote'], ['example', '🖼 Example'], ['question', '❓ Question'], ['todo', '☐ To do']];
+function insertCallout(view, type) {
+  const { state } = view;
+  const sel = state.selection.main;
+  if (!sel.empty) {
+    const a = state.doc.lineAt(sel.from); const b = state.doc.lineAt(sel.to);
+    const body = state.sliceDoc(a.from, b.to).split('\n').map((l) => `> ${l}`).join('\n');
+    view.dispatch({ changes: { from: a.from, to: b.to, insert: `> [!${type}]\n${body}` }, userEvent: 'input' });
+    view.focus();
+    return true;
+  }
+  return insertBlock(view, `> [!${type}] \n> `, `> [!${type}] `.length);
+}
+
+// "[[" at the cursor and the suggestions open — or, around a selection, the selection becomes a link (selectionLink)
+function wikiLink(view) {
+  if (selectionLink(view)) return true;
+  const { from } = view.state.selection.main;
+  view.dispatch({ changes: { from, to: from, insert: '[[' }, selection: { anchor: from + 2 }, userEvent: 'input' });
+  view.focus();
+  startCompletion(view);
+  return true;
+}
+
 const shortcuts = [
   { key: 'Mod-b', run: (v) => wrap(v, '**') },
   { key: 'Mod-i', run: (v) => wrap(v, '*') },
   // Markdown has no underline: ++words++ (src/markdown.js renders it as <u>). Without this, Ctrl+U opens the page source.
   { key: 'Mod-u', run: (v) => wrap(v, '++'), preventDefault: true },
   { key: 'Mod-k', run: link },
+  { key: 'Mod-Shift-h', run: (v) => wrap(v, '=='), preventDefault: true },
 ];
 
 function button(label, title, onClick) {
@@ -351,7 +420,9 @@ function enhance(textarea, collab = null) {
       extensions: [
         collab ? yCollab(collab.ytext, collab.awareness, { undoManager: collab.undoManager }) : history(),
         drawSelection(),
-        keymap.of([...shortcuts, ...defaultKeymap, ...(collab ? yUndoManagerKeymap : historyKeymap)]),
+        keymap.of([...shortcuts, ...searchKeymap, ...defaultKeymap, ...(collab ? yUndoManagerKeymap : historyKeymap)]),
+        search({ top: true }),
+        highlightSelectionMatches(),
         new LanguageSupport(markdownLanguage),
         syntaxHighlighting(liveStyle),
         underlines,
@@ -402,14 +473,33 @@ function enhance(textarea, collab = null) {
     }
   });
 
+  // ▣ Box ▾: a small menu of the callout types (> [!type])
+  const calloutMenu = document.createElement('span');
+  calloutMenu.className = 'md-boxmenu';
+  const calloutList = document.createElement('span');
+  calloutList.className = 'md-boxlist';
+  calloutList.hidden = true;
+  CALLOUTS.forEach(([type, label]) => calloutList.append(button(label, `Box “${label.slice(2).trim()}” — > [!${type}]`, () => { calloutList.hidden = true; insertCallout(view, type); })));
+  calloutMenu.append(button('▣ Box ▾', 'Box: note, info, tip, important, warning, quote, example, question, to do', () => { calloutList.hidden = !calloutList.hidden; }), calloutList);
+  document.addEventListener('mousedown', (e) => { if (!calloutMenu.contains(e.target)) calloutList.hidden = true; });
+
   toolbar.append(
     button('B', 'Bold (Ctrl/⌘+B)', () => wrap(view, '**')),
     button('I', 'Italic (Ctrl/⌘+I)', () => wrap(view, '*')),
     button('U', 'Underline (Ctrl/⌘+U)', () => wrap(view, '++')),
-    button('Link', 'Link (Ctrl/⌘+K)', () => link(view)),
-    button('H', 'Heading', () => linePrefix(view, '## ')),
+    button('[[ ]]', 'Link to an entry — or type [[, or select a word and type [', () => wikiLink(view)),
+    button('Web', 'Web link (Ctrl/⌘+K)', () => link(view)),
+    button('H', 'Heading — again: smaller (#, ##, ###, none)', () => cycleHeading(view)),
     button('• List', 'Bulleted list', () => linePrefix(view, '- ')),
-    button('❝ Quote', 'Quote', () => linePrefix(view, '> ')),
+    button('1.', 'Numbered list', () => numberLines(view)),
+    button('☐', 'Task (- [ ]) — write [x] when done', () => linePrefix(view, '- [ ] ')),
+    button('▍', 'Highlight (Ctrl/⌘+Shift+H)', () => wrap(view, '==')),
+    button('◼', 'Spoiler — hidden until clicked', () => wrap(view, '||')),
+    button('❝', 'Quote', () => linePrefix(view, '> ')),
+    calloutMenu,
+    button('⊞', 'Table', () => insertBlock(view, '| Column | Column |\n|---|---|\n|  |  |', 2)),
+    button('—', 'Divider', () => insertBlock(view, '---')),
+    button('🔍', 'Find and replace (Ctrl/⌘+F)', () => { openSearchPanel(view); }),
     Object.assign(document.createElement('span'), { className: 'md-spacer' }),
     langButton,
     previewButton,

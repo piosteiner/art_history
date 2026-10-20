@@ -465,7 +465,7 @@ top-level headings, the text before the first is the introduction:
   (404 for an unknown chapter)
 - `…?full=1` → also `html` and `toc` of the whole text.
 
-The HTML is sanitized (heading ids — those of the whole text, also in a single chapter —, images with width/height,
+Every text (entries' `*_html` too) may contain the editor's forms: `<mark>`, `span.spoiler` (shown on focus/hover), `li.task` / `li.task-done` with `span.task-box`, `blockquote.callout.callout-<type>` with `p.callout-title` (src/md-extras.js). The HTML is sanitized (heading ids — those of the whole text, also in a single chapter —, images with width/height,
 `<mark>`, task lists `li.task` / `li.task-done` with `span.task-box`, tables, coloured spans, ruby); an embed of an image
 that isn't uploaded is `<span class="page-image-missing">name</span>`. Images: `GET /v1/pages/<slug>/images/<name>`
 (WebP, cached a day, `ETag` = its sha256). The project documentation: `/v1/pages/projekt-dokumentation` (site:

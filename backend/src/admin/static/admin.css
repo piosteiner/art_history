@@ -471,3 +471,21 @@ details.records > summary { cursor: pointer; color: var(--muted); }
 .page-outline h2 { font-size: 1rem; margin: .4rem 0; } .page-outline ol { padding-left: 1.3rem; margin: .3rem 0; }
 .page-outline a.on { font-weight: 700; } .page-main { min-width: 0; }
 @media (max-width: 900px) { .page-layout { grid-template-columns: 1fr; } .page-outline { position: static; max-height: none; } }
+/* editor tools (as in the adenai editor): the box menu, the find panel; the extras in the preview (src/md-extras.js) */
+.md-toolbar { flex-wrap: wrap; }
+.md-boxmenu { position: relative; display: inline-block; }
+.md-boxlist { position: absolute; top: 100%; left: 0; z-index: 20; display: flex; flex-direction: column; min-width: 11rem; padding: .25rem;
+  background: var(--bg); border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 4px 14px rgba(0, 0, 0, .15); }
+.md-boxlist[hidden] { display: none; }
+.md-boxlist button.md-tool { text-align: left; }
+.md-editor .cm-panels { background: var(--panel); color: var(--fg); border-color: var(--line); }
+.md-editor .cm-search input, .md-editor .cm-search button { font: inherit; font-size: .85rem; }
+.md-editor .cm-searchMatch { background: rgba(255, 213, 0, .35); } .md-editor .cm-searchMatch-selected { background: rgba(255, 140, 0, .5); }
+.md mark, .md-preview mark { background: #ffe58a; color: #1b1a17; padding: 0 .1em; }
+.md .spoiler, .md-preview .spoiler { background: var(--fg); color: transparent; border-radius: 3px; cursor: pointer; }
+.md .spoiler:focus, .md-preview .spoiler:focus, .md .spoiler:hover, .md-preview .spoiler:hover { background: var(--panel); color: inherit; }
+.md li.task, .md-preview li.task { list-style: none; margin-left: -1.2rem; } .task-box { display: inline-block; width: 1.2rem; }
+.callout { border-left: 4px solid var(--accent); background: var(--panel); padding: .4rem .8rem; margin: .8rem 0; border-radius: 0 6px 6px 0; }
+.callout-title { font-weight: 700; margin: .2rem 0; }
+.callout-warning, .callout-important { border-left-color: #d9822b; } .callout-tip, .callout-example { border-left-color: #2f8a55; }
+.callout-quote { border-left-color: var(--muted); font-style: italic; } .callout-question, .callout-todo { border-left-color: #7a5fb0; }

@@ -119,3 +119,52 @@ test('a long page: chapters edited one at a time, a stale save refused, .md down
   expect(two.html).toContain('<h1 id="zwei">Zwei</h1>');
   expect((await get(request, '/pages/test-doc?chapter=drei')).status()).toBe(404);
 });
+
+test('the editor: the adenai tools, find and replace, autosave as a draft restored after leaving, discarded, published by Save', async ({ userA }) => {
+  sql("INSERT INTO pages (slug, title, body_md) VALUES ('test-doc', 'Test Doc', '# Eins\nText.\n')");
+  await userA.goto('/pages/test-doc/edit?chapter=1');
+  const tools = userA.locator('.md-toolbar button.md-tool');
+  for (const t of ['B', 'I', 'U', '[[ ]]', 'Web', 'H', '• List', '1.', '☐', '▍', '◼', '❝', '▣ Box ▾', '⊞', '—', '🔍']) {
+    await expect(tools.filter({ hasText: new RegExp(`^${t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`) }).first(), t).toBeVisible();
+  }
+  const cm = userA.locator('.md-editor .cm-content');
+  const body = userA.locator('#pg-body');
+  await cm.click();
+  await userA.keyboard.press('Control+End');
+  await userA.keyboard.type('\nwichtig');
+  await userA.keyboard.press('Shift+Home');
+  await userA.keyboard.press('Control+Shift+h');                                   // highlight
+  await expect(body).toHaveValue(/==wichtig==$/);
+  await userA.keyboard.press('End');
+  await userA.click('.md-toolbar button:has-text("▣ Box ▾")');
+  await userA.click('.md-boxlist button:has-text("Warning")');                       // a callout box
+  await expect(body).toHaveValue(/\n\n> \[!warning\] \n> \n$/);
+  await userA.click('.md-toolbar button:text-is("1.")');
+  await userA.click('.md-toolbar button:text-is("⊞")');
+  await expect(body).toHaveValue(/\| Column \| Column \|\n\|---\|---\|/);
+  // find and replace
+  await userA.keyboard.press('Control+f');
+  await expect(userA.locator('.md-editor .cm-search')).toBeVisible();
+  await userA.keyboard.press('Escape');
+
+  // autosave: a draft, not the page
+  await expect(userA.locator('[data-autosave-status]')).toContainText('Draft saved', { timeout: 10000 });
+  expect(sql("SELECT count(*) FROM page_drafts p JOIN pages g ON g.id = p.page_id WHERE g.slug = 'test-doc' AND p.part = '1'")).toBe('1');
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nText.');
+  // left and opened again: restored
+  await userA.goto('/pages/test-doc/edit?chapter=1');
+  await expect(userA.locator('.page-draft')).toContainText('Restored your unsaved draft');
+  await expect(body).toHaveValue(/==wichtig==/);
+  // discarded: gone
+  await Promise.all([userA.waitForURL(/chapter=1$/), userA.click('.page-draft button:has-text("Discard draft")')]);
+  await expect(userA.locator('.page-draft')).toHaveCount(0);
+  await expect(body).toHaveValue('# Eins\nText.\n');
+  // typed again, saved: on the page, the draft gone
+  await cm.click();
+  await userA.keyboard.press('Control+End');
+  await userA.keyboard.type('Mehr.');
+  await expect(userA.locator('[data-autosave-status]')).toContainText('Draft saved', { timeout: 10000 });
+  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nText.\nMehr.');
+  expect(sql("SELECT count(*) FROM page_drafts p JOIN pages g ON g.id = p.page_id WHERE g.slug = 'test-doc'")).toBe('0');
+});

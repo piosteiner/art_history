@@ -109,8 +109,45 @@ function initMdUpload() {
   }
 }
 
+// Autosave (migration 117): the part being edited is sent as a draft 1.5 s after typing pauses (and when the tab is
+// hidden or closed); the status line says when. Save (the form) publishes it; leaving with something not yet sent asks.
+function initAutosave() {
+  const ta = document.querySelector('textarea[data-autosave]');
+  if (!ta) return;
+  const form = ta.form;
+  const status = document.querySelector('[data-autosave-status]');
+  const say = (t) => { if (status) status.textContent = t; };
+  let timer = null;
+  let dirty = false;
+  let sending = null;
+  const time = () => new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  const send = async (beacon = false) => {
+    clearTimeout(timer);
+    if (!dirty) return;
+    dirty = false;
+    const body = JSON.stringify({ chapter: form.elements.chapter.value, base: form.elements.base.value, body: ta.value });
+    if (beacon && navigator.sendBeacon) { navigator.sendBeacon(ta.dataset.autosave, new Blob([body], { type: 'application/json' })); return; }
+    say('Saving draft…');
+    sending = fetch(ta.dataset.autosave, { method: 'POST', body, headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', keepalive: true })
+      .then((r) => { if (!r.ok) throw new Error(String(r.status)); say(`Draft saved ${time()} — not on the site until you save.`); })
+      .catch(() => { dirty = true; say('Draft not saved (offline?) — retrying when you type; keep this tab open.'); })
+      .finally(() => { sending = null; });
+    await sending;
+  };
+  ta.addEventListener('md-change', () => { dirty = true; clearTimeout(timer); timer = setTimeout(send, 1500); say('…'); });
+  document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') void send(true); });
+  let submitting = false;
+  form.addEventListener('submit', () => { submitting = true; clearTimeout(timer); });
+  window.addEventListener('beforeunload', (e) => {
+    if (submitting || !dirty) return;
+    void send(true);
+    e.preventDefault();
+  });
+}
+
 export function initImageUploads() {
   initMdUpload();
+  initAutosave();
   const list = document.querySelector('[data-image-list]');
   document.addEventListener('page-image-uploaded', (e) => addRow(list, e.detail));
   for (const input of document.querySelectorAll('input[type=file][data-image-upload]')) {
