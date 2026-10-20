@@ -2319,6 +2319,44 @@ test('project documentation (API 114/116): from the footer, the overview with it
   await expect(page.locator('main')).toContainText('noch nicht veröffentlicht');
 });
 
+test('changelog and roadmap (API 118): from the footer, kinds as badges, filtered by kind, more on scrolling; the roadmap columns', async ({ page }) => {
+  const entry = (id: number, day: string, kind = 'neu') => ({ id, day, title: id === 1 ? 'Patch: Suche' : null,
+    items: [{ kind, label: kind === 'neu' ? 'Neu' : 'Behoben', html: `Punkt <a href="/artists/paul-gauguin">${id}</a>`, roadmap: id === 1 ? { id: 7, title: 'Suche' } : null }] });
+  const all = Array.from({ length: 25 }, (_, n) => entry(n + 1, `2026-10-${String(20 - (n % 20)).padStart(2, '0')}`, n % 5 === 1 ? 'behoben' : 'neu'));
+  await page.route(/\/v1\/changelog(\?.*)?$/, (r) => {
+    const q = new URL(r.request().url()).searchParams;
+    const list = q.get('kind') ? all.filter((e) => e.items[0].kind === q.get('kind')) : all;
+    const offset = Number(q.get('offset') || 0);
+    return r.fulfill({ json: { total: list.length, data: list.slice(offset, offset + Number(q.get('limit') || 20)) } });
+  });
+  await page.route(/\/v1\/roadmap$/, (r) => r.fulfill({ json: { columns: [
+    { status: 'jetzt', label: 'In Arbeit', items: [{ id: 7, title: 'Projekt Dokumentation', area: 'Dokumentation', notes_html: '<p>Aus Obsidian</p>', done_on: null }] },
+    { status: 'naechstes', label: 'Als Nächstes', items: [] },
+    { status: 'spaeter', label: 'Später', items: [{ id: 8, title: 'Historische Karten', area: 'Karte', notes_html: null, done_on: null }] },
+    { status: 'erledigt', label: 'Erledigt', items: [{ id: 9, title: 'Suche über Sprachen', area: null, notes_html: null, done_on: '2026-10-19' }] }] } }));
+  await page.goto('/privacy');
+  await page.locator('footer a', { hasText: 'Changelog' }).click();
+  await expect(page).toHaveURL(/\/changelog$/);
+  await expect(page.locator('.changelog-page')).toHaveAttribute('lang', 'de-CH');
+  const first = page.locator('#eintrag-1');
+  await expect(first.locator('h2')).toHaveText('Dienstag, 20. Oktober 2026 · Patch: Suche');
+  await expect(first.locator('.cl-kind')).toHaveText('Neu');
+  await expect(first.locator('.cl-text a')).toHaveAttribute('href', '/artists/paul-gauguin');
+  await expect(page.locator('a.cl-feed')).toHaveAttribute('href', /\/v1\/changelog\/feed\.xml$/);
+  await page.locator('.cl-more').scrollIntoViewIfNeeded();
+  await expect(page.locator('.cl-entry')).toHaveCount(25);
+  await page.locator('.cl-chips button', { hasText: 'Behoben' }).click();
+  await expect(page).toHaveURL(/\/changelog\?kind=behoben$/);
+  await expect(page.locator('.cl-entry')).toHaveCount(5);
+  await expect(page.locator('.cl-entry .cl-kind').first()).toHaveText('Behoben');
+  // the roadmap, from the intro
+  await page.locator('.changelog-page a', { hasText: 'Roadmap' }).first().click();
+  await expect(page).toHaveURL(/\/roadmap$/);
+  await expect(page.locator('.roadmap-col h2')).toHaveText(['In Arbeit 1', 'Als Nächstes 0', 'Später 1', 'Erledigt 1']);
+  await expect(page.locator('.roadmap-jetzt .roadmap-notes')).toHaveText('Aus Obsidian');
+  await expect(page.locator('.roadmap-erledigt')).toContainText('erledigt am 19. Oktober 2026');
+});
+
 test('provenance records (API 104): the inventories under a step, the doubts tagged, more than three folded', async ({ page }) => {
   const rec = (date: string, number: string | null, extra: Record<string, unknown> = {}) => ({ kind: 'inventory', date: { label: date, from: `${date}-01-01`, to: `${date}-12-31` },
     place: { slug: 'madrid', name: 'Madrid' }, room: null, number, number_certainty: 'attested', document: 'royal inventory', certainty: 'attested', note: null, ...extra });

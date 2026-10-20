@@ -226,6 +226,18 @@ if (doc) {
 } else {
   await write('dokumentation/index.html', page(template, { title: 'Projekt Dokumentation · Art History', description: SITE_DESCRIPTION, noindex: true }));
 }
+// changelog and roadmap (API 118): their own pages with what the API has now (they load fresh with the app)
+const changelog = await fetch(`${API}/changelog?limit=30`).then((r) => (r.ok ? r.json() : null)).catch(() => null);
+await write('changelog/index.html', page(template, {
+  title: 'Changelog · Art History', url: `${SITE}/changelog/`, description: 'Was sich an Art History geändert hat: neue Funktionen, Verbesserungen, Korrekturen und neue Inhalte, Tag für Tag.',
+  body: `<section class="page changelog-page" lang="de-CH" data-prerendered><h1>Changelog</h1>${(changelog?.data ?? []).map((e) => `<article class="cl-entry" id="eintrag-${e.id}"><h2>${esc(e.day)}${e.title ? ` · ${esc(e.title)}` : ''}</h2><ul>${e.items.map((i) => `<li>${esc(i.label)}: ${i.html}</li>`).join('')}</ul></article>`).join('')}</section>`,
+}));
+urls.push(`${SITE}/changelog/`);
+await write('roadmap/index.html', page(template, {
+  title: 'Roadmap · Art History', url: `${SITE}/roadmap/`, description: 'Woran gerade gearbeitet wird, was als Nächstes kommt und was später – die Roadmap von Art History.',
+  body: '<section class="page roadmap-page" lang="de-CH" data-prerendered><h1>Roadmap</h1><p>Die Roadmap lädt mit der Seite.</p></section>',
+}));
+urls.push(`${SITE}/roadmap/`);
 // the search page: served with 200 (not the 404 shell), but kept out of search engines — results follow the query
 await write('search/index.html', page(template, { title: 'Search · Art History', description: SITE_DESCRIPTION, noindex: true }));
 

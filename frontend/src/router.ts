@@ -16,6 +16,9 @@ export type Route =
   /** When and where styles and periods were active (API 100): /periods?regions=italy,france&phases=0&from=1600&to=1700 */
   | { name: 'periods'; params: URLSearchParams }
   | { name: 'numbers'; params: URLSearchParams }
+  /** The changelog (API 118): /changelog?kind=behoben, and the roadmap: /roadmap. */
+  | { name: 'changelog'; params: URLSearchParams }
+  | { name: 'roadmap' }
   | { name: 'search'; params: URLSearchParams }
   /** Through whose hands works went in a window (API 088): /provenance/1933-1945. */
   | { name: 'hands'; from: number; to: number }
@@ -33,6 +36,8 @@ export function parse(pathname: string, search: string): Route {
   if (parts.length === 1 && parts[0] === 'periods') return { name: 'periods', params: query };
   if (parts.length === 1 && parts[0] === 'provenance-numbers') return { name: 'numbers', params: query };
   if (parts.length === 1 && parts[0] === 'search') return { name: 'search', params: query };
+  if (parts.length === 1 && parts[0] === 'changelog') return { name: 'changelog', params: query };
+  if (parts.length === 1 && parts[0] === 'roadmap') return { name: 'roadmap' };
   if (parts[0] === 'provenance' && parts.length <= 2) {
     const m = /^(\d{3,4})-(\d{3,4})$/.exec(parts[1] ?? '1933-1945');
     return m ? { name: 'hands', from: Number(m[1]), to: Number(m[2]) } : { name: 'not-found' };

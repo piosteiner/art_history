@@ -132,6 +132,12 @@ function onRoute(route: Route) {
     case 'search':
       cleanup = searchPage(main, route.params);
       break;
+    case 'changelog':
+      cleanup = lazyView(() => import('./views/changelog').then((m) => () => m.changelogPage(main, route.params)));
+      break;
+    case 'roadmap':
+      cleanup = lazyView(() => import('./views/changelog').then((m) => () => m.roadmapPage(main)));
+      break;
     case 'hands':
       handsPage(main, route.from, route.to);
       break;

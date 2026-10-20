@@ -117,6 +117,18 @@ export interface Page {
 export const getPage = (slug: string, chapter?: string | null) =>
   get<Page>(`/pages/${encodeURIComponent(slug)}`, chapter ? { chapter } : {});
 
+/** The public changelog (API 118): entries newest first, each with its bullet points (kind, rendered HTML). */
+export type ChangeKind = 'neu' | 'verbessert' | 'behoben' | 'inhalt' | 'technik';
+export interface ChangelogItem { kind: ChangeKind; label: string; html: string; roadmap: { id: number; title: string } | null }
+export interface ChangelogEntry { id: number; day: string; title: string | null; items: ChangelogItem[] }
+export const getChangelog = (params: { kind?: ChangeKind | null; limit?: number; offset?: number } = {}) =>
+  get<{ total: number; data: ChangelogEntry[] }>('/changelog', params);
+export const CHANGELOG_FEED = `${BASE}/changelog/feed.xml`;
+/** The roadmap (API 118): four columns — in Arbeit, als Nächstes, später, erledigt (the last 30). */
+export type RoadmapStatus = 'jetzt' | 'naechstes' | 'spaeter' | 'erledigt';
+export interface RoadmapItem { id: number; title: string; area: string | null; notes_html: string | null; done_on: string | null }
+export const getRoadmap = () => get<{ columns: { status: RoadmapStatus; label: string; items: RoadmapItem[] }[] }>('/roadmap');
+
 export const listEntities = <P extends Plural>(plural: P, params: ListParams = {}) =>
   get<List<ItemByPlural[P]>>(`/${plural}`, params);
 

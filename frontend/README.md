@@ -43,6 +43,8 @@ map uses OpenFreeMap (free, no key).
 ## Privacy
 `/dokumentation` (`src/views/page.ts`, API 114/116): the project documentation written in the CMS — German (de-CH); the overview (introduction, chapters with reading time) and `/dokumentation/<chapter>` (its contents beside it, previous/next; an old `#heading` link opens its chapter); prerendered once published; footer link "Projekt Dokumentation".
 
+`/changelog` and `/roadmap` (`src/views/changelog.ts`, API 118): German (de-CH). The changelog — entries newest first with kind badges (Neu, Verbessert, Behoben, Inhalt, Technik), chips filter by kind (`?kind=`), more load as you scroll, anchors `#eintrag-<id>` (the RSS feed links them), RSS link; the roadmap — four columns with area tags, notes, done dates (`#punkt-<id>`). Footer links; both prerendered.
+
 `/privacy` (`src/views/privacy.ts`, Swiss FADP Art. 19 / FMG Art. 45c): the site sets **no cookies** (images load
 with `crossorigin="anonymous"`, so Wikimedia neither gets nor sets cookies; MapLibre fetches MapTiler without them) and
 only keeps preferences in localStorage (`arthistory:*`). When a third-party service, a stored value or the API's
