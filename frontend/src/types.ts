@@ -344,10 +344,11 @@ export interface ArtworkNumber { number: string; label: string | null; instituti
 
 export type AcquisitionMethod =
   | 'creation' | 'commission' | 'inheritance' | 'purchase' | 'auction' | 'gift' | 'bequest' | 'exchange'
-  | 'confiscation' | 'forced_sale' | 'restitution'
+  | 'confiscation' | 'forced_sale' | 'forced_gift' | 'restitution' // forced_gift: given under duress (API 121)
   | 'settlement' // kept after an agreement with claimants (API 073)
   | 'transfer' | 'claim' | 'dissolution'
   | 'theft' // on a custody step: the owner keeps the title; `ended` = recovered (API 077)
+  | 'find' | 'partage' | 'spoils_of_war' | 'in_lieu' // found or excavated, division of finds, taken in war, accepted in lieu of tax (API 120)
   | 'unknown';
 
 /**

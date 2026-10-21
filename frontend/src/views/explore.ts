@@ -425,6 +425,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       prov.features.some((f) => f.properties.layer === 'provenance_stop') ? [[`artwork/${slug}`, prov] as const] : []));
   }
   const PROVENANCE_KEY = 'artworks: their provenance in its order (dashed: handover not documented, dotted: implied)';
+  let knownProvenances = new Map<string, ProvenanceMap>();  // the overview's last provenances (artwork/slug → map)
 
   // Start map without single picks or a time window: every place plus the routes of everything selected, from all
   // dated presence links (one request; /v1/map/presence fails below year -4713, PostgreSQL's oldest date).
@@ -449,7 +450,8 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
           <i class="ring" style="border-color:${COLORS.place}"></i> country or region · lines = routes in date order${provenances.size ? `; ${PROVENANCE_KEY}` : ''}</span>`);
       redrawLegend();
     };
-    draw(new Map());
+    // the provenances already in (an earlier run, or the cache) at once — a redraw must never put the routes by date back
+    draw(knownProvenances);
     useVenues(rows.map((r) => r.institution));
     crossings(rows, (slug) => where.get(slug));
     pinned = null;
@@ -458,7 +460,9 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
       ? `${entries} ${entries === 1 ? 'entry' : 'entries'} at ${new Set(rows.map((r) => r.place.slug)).size} places. Click a place to see what happened there; hover or click a route to follow it.`
       : 'Nothing in the selection has dated places yet.';
     const provenances = await provenancesOf(rows);
-    if (stale() || !provenances.size) return;
+    if (!provenances.size) return;
+    knownProvenances = provenances;
+    if (stale()) return;
     draw(provenances);
   }
 

@@ -302,7 +302,7 @@ test('how are they connected (088): pick any entry, the shortest chain top to bo
   await page.goto(IRENE);
   const box = page.locator('#connect');
   await box.locator('input').fill('van gogh');
-  await box.locator('.connect-hits button', { hasText: 'Vincent van Gogh' }).first().click();
+  await box.locator('.connect-hits button', { hasText: /^\s*Vincent van Gogh/ }).first().click();   // the artist, not a work of his
   const chain = box.locator('.net-path');
   await expect(chain.locator('.net-node').first()).toContainText('La Petite Irène');
   await expect(chain.locator('.net-node').last()).toContainText('Vincent van Gogh');
@@ -429,7 +429,7 @@ test('start map zoomed out (091): numbered bubbles of nearby places; a click zoo
   const zoom = () => page.evaluate(() => (window as unknown as { __maps: { getZoom(): number }[] }).__maps.at(-1)!.getZoom());
   const before = await zoom();
   const biggest = await bubbles.evaluateAll((els) => els.map((e) => Number(e.textContent!.replace(/,/g, ''))).indexOf(Math.max(...els.map((e) => Number(e.textContent!.replace(/,/g, ''))))));
-  await expect(bubbles.nth(biggest)).toHaveAttribute('title', /stays at \d+ places: .*Zürich/);
+  await expect(bubbles.nth(biggest)).toHaveAttribute('title', /stays at \d+ places: \S/);   // which city is biggest follows the data
   await bubbles.nth(biggest).click();
   await expect.poll(zoom).toBeGreaterThan(before + 1);
   // close in: the dots, no bubbles
@@ -757,6 +757,8 @@ test('crossed paths: listed under the map, on detail pages, and "only these two"
   // fixed point in the curated content: Gauguin and Van Gogh both lived in Arles in late 1888
   await page.goto('/?all');
   const list = page.locator('#encounters');
+  // the first six are shown; more data puts others first — open the whole list
+  await list.locator('[data-crossed-all]').click();
   const arles = list.locator('.encounter', { hasText: 'Arles' }).filter({ hasText: 'Paul Gauguin' }).filter({ hasText: 'Vincent van Gogh' });
   await expect(arles).toContainText('1888');
   await arles.getByRole('link', { name: 'only these two →' }).click();

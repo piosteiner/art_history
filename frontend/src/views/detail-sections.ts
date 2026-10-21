@@ -35,8 +35,11 @@ const CATEGORY_LABEL: Record<string, string> = {
 
 export const uncertain = (certainty: string | null | undefined) => (certainty && certainty !== 'attested' ? html`<span class="tag">${certainty}</span>` : '');
 
-const METHOD_LABEL: Record<string, string> = { forced_sale: 'forced sale', theft: 'stolen' };
-const METHOD_TITLE: Record<string, string> = { settlement: 'Kept after an agreement with the claimants (a “just and fair solution”)' };
+const METHOD_LABEL: Record<string, string> = { forced_sale: 'forced sale', forced_gift: 'forced gift', theft: 'stolen', find: 'found', partage: 'partage of finds', spoils_of_war: 'spoils of war', in_lieu: 'in lieu of tax' };
+const METHOD_TITLE: Record<string, string> = { settlement: 'Kept after an agreement with the claimants (a “just and fair solution”)',
+  forced_gift: 'Given under duress — no free gift, and no price was paid',
+  find: 'Found by chance or excavated, after the work had been lost or buried', partage: 'The excavation finds divided between the excavators and the host country',
+  spoils_of_war: 'Taken in war, or handed over as a war contribution under a peace treaty', in_lieu: 'Accepted by the state in payment of a tax (French “dation”)' };
 const method = (m: string) => (METHOD_TITLE[m] ? html`<span class="explained" title="${METHOD_TITLE[m]}">${METHOD_LABEL[m] ?? m}</span>` : html`${METHOD_LABEL[m] ?? m}`);
 
 /** "1933–1945: D — looted art …", coloured by category, the source's own wording and its sources after it. */
@@ -58,7 +61,7 @@ const ROLE_TAG: Record<string, [string, string]> = {
   possessor: ['without title', 'Held it without good title: seized, looted, stolen, or received from those who took it. The owner kept the title.'],
 };
 /** How a possessor came by it (API 083): taken, or passed on by those who took it. */
-const TAKEN = new Set(['confiscation', 'theft', 'forced_sale']);
+const TAKEN = new Set(['confiscation', 'theft', 'forced_sale', 'forced_gift', 'spoils_of_war']);
 
 /**
  * "exchanged for a Florentine tondo" — linked when the other work has an entry (API 084); left out when it's only text

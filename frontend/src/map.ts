@@ -316,6 +316,9 @@ export function highlightRoute(map: MapLibre, keys: string[]) {
 
 /** Route lines with arrows and a highlight layer; call after clearOverlays, before the place circles. */
 function addRouteLayers(map: MapLibre, routes: GeoJSON.Feature[]) {
+  // a fresh source: its layers were just removed (clearOverlays), and a setData() on the old one could be overtaken by
+  // its previous data still loading (the provenances came right after the routes by date and lost, 2026-10-20)
+  if (map.getSource('ov-routes')) map.removeSource('ov-routes');
   setData(map, 'ov-routes', { type: 'FeatureCollection', features: routes });
   map.addLayer({
     id: 'ov-routes', type: 'line', source: 'ov-routes',
