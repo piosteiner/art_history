@@ -1,0 +1,129 @@
+public_id: 101696
+title_lang: fr
+title: La Vierge, l'Enfant Jésus et sainte Anne, dit La Sainte Anne
+names:
+  - The Virgin and Child with St. Anne
+  - The Virgin and Child with St Anne
+  - lang: en
+    role: translation
+    text: The Virgin and Child with Saint Anne
+  - lang: nl
+    role: translation
+    text: Maria met kind en Sint-Anna
+  - lang: de
+    role: translation
+    text: Anna Selbdritt
+  - lang: it
+    role: translation
+    text: Sant'Anna, la Vergine e il Bambino con l'agnellino
+  - lang: es
+    role: translation
+    text: La Virgen, el Niño Jesús y Santa Ana
+  - lang: ja
+    role: translation
+    text: 聖アンナと聖母子
+  - lang: zh
+    role: translation
+    text: 圣母子与圣安妮
+  - lang: ko
+    role: translation
+    text: 성 안나와 성 모자
+  - lang: ru
+    role: translation
+    text: Святая Анна с Мадонной и младенцем Христом
+creator: leonardo-da-vinci
+created: 1503/1519
+created_label: c. 16th century
+materials: [oil paint, poplar panel]
+dimensions: [168, 130]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 776
+web_url: https://collections.louvre.fr/ark:/53355/cl010066107
+wikidata_id: Q563727
+metadata:
+  sources: [Wikidata Q563727 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Sainte_Anne_Leonard.jpg/1280px-Sainte_Anne_Leonard.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sainte_Anne_Leonard.jpg
+    license: Public domain
+    credit: Leonardo da Vinci
+provenance:
+  - owner: artist/leonardo-da-vinci
+    acquired: c. 1503
+    ended: 1518
+    method: creation
+    place: florence
+    label: begun at Florence, kept by Leonardo to go on painting it, unfinished in 1519
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066107
+        note: Ce tableau fut commencé vers 1503 au moins, à Florence, puis fut conservé par Léonard de Vinci jusqu'à sa mort pour en poursuivre lentement l'exécution picturale, toujours inachevée en 1519
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/francis-i-of-france
+    acquired: 1518
+    method: purchase
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066107
+        note: l'oeuvre fut très probablement acquise par François Ier en 1518.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/french-royal-collection
+    acquired: 1547
+    method: inheritance
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066107
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne"
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1793
+    method: transfer
+    direct: true
+    place: paris
+    label: the royal collection became the nation's (“ancienne collection royale”)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066107
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne, 1793"
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 319
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+identifiers:
+  gnd: 4365184-7
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q563727
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q563727
+    - url: https://collections.louvre.fr/ark:/53355/cl010066107
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q563727
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q563727
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q563727
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q563727
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q563727
+    - url: https://collections.louvre.fr/ark:/53355/cl010066107
+      source: louvre-collections
+      accessed: 2026-10-20

@@ -1,0 +1,74 @@
+public_id: 101745
+name: Armand-Jean du Plessis, duc de Richelieu
+names:
+  - lang: fr
+    role: original
+    text: Armand Jean du Plessis de Richelieu
+  - Armand Jean du Plessis, Duc de Richelieu
+  - Duc de Fronsac
+  - Armand Jean du, duc de Richelieu Plessis
+  - Cardinal-Duke of Richelieu and of Fronsac Armand Jean du Plessis
+  - Armand-Jean Duplessis, Cardinal de Richelieu
+  - Armand Jean, duc de Richelieu Du Plessis
+  - Armand de Vignerot, cardinal and duc de Richelieu
+  - Armand Jean du Plessis
+  - cardinal and duc de Richelieu Armand de Vignerot
+  - Cardinal Richelieu
+  - lang: nl
+    role: translation
+    text: Kardinaal de Richelieu
+  - lang: it
+    role: translation
+    text: Armand-Jean du Plessis de Richelieu
+  - lang: es
+    role: translation
+    text: Cardenal Richelieu
+  - lang: ja
+    role: translation
+    text: リシュリュー
+  - lang: zh
+    role: translation
+    text: 黎塞留
+  - lang: ko
+    role: translation
+    text: 아르망 장 뒤 플레시 드 리슐리외
+  - lang: ru
+    role: translation
+    text: кардинал Ришельё
+kind: person
+occupations: [politician, diplomat, art collector, writer, Catholic bishop, Catholic priest, minister]
+birth: 1585-09-09
+death: 1642-12-04
+wikidata_id: Q26702
+metadata:
+  sources: [Wikidata Q26702 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Cardinal_de_Richelieu.jpg/1280px-Cardinal_de_Richelieu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cardinal_de_Richelieu.jpg
+    license: Public domain
+    credit: Philippe de Champaigne
+identifiers:
+  bnf: 11921894w
+  gnd: "118600354"
+  idref: "027349217"
+  lc: n50074523
+  rkd: "491261"
+  ulan: "500230194"
+  viaf: "12314392"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q26702
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q26702
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q26702
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q26702

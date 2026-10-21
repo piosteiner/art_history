@@ -1,0 +1,18 @@
+public_id: 101969
+name: Artemisia Gentileschi
+given_name: Artemisia
+family_name: Gentileschi
+birth: 1593-07-08
+death: 1653
+wikidata_id: Q212657
+metadata:
+  sources: [Wikidata Q212657 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q212657
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q212657

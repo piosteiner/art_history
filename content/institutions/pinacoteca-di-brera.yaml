@@ -1,0 +1,61 @@
+public_id: 102076
+name: Pinacoteca di Brera
+names:
+  - Brera Museum
+  - Pinacoteca di Brera di Milano
+  - Brera Art Gallery
+  - lang: fr
+    role: translation
+    text: pinacothèque de Brera
+  - lang: es
+    role: translation
+    text: Pinacoteca de Brera
+  - lang: ja
+    role: translation
+    text: ブレラ美術館
+  - lang: zh
+    role: translation
+    text: 布雷拉画廊
+  - lang: ko
+    role: translation
+    text: 피나코테카 디 브레라
+  - lang: ru
+    role: translation
+    text: Пинакотека Брера
+founded: 1776
+place: milan
+location: [9.18782, 45.47196]
+address: via Brera, 28 - Milano
+website_url: https://pinacotecabrera.org/
+wikidata_id: Q150066
+metadata:
+  sources: [Wikidata Q150066 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Milan_-_Pinacoth%C3%A8que_de_Brera_-_Cour_int%C3%A9rieure.jpg/1280px-Milan_-_Pinacoth%C3%A8que_de_Brera_-_Cour_int%C3%A9rieure.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Milan_-_Pinacoth%C3%A8que_de_Brera_-_Cour_int%C3%A9rieure.jpg
+    license: CC BY 3.0
+    credit: Jean-Christophe BENOIST
+identifiers:
+  bnf: "121547983"
+  gnd: 2082452-X
+  idref: "030053765"
+  lc: n50056780
+  ulan: "500302853"
+  viaf: "157020123"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q150066
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q150066
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q150066
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q150066

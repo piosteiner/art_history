@@ -1,0 +1,40 @@
+public_id: 101721
+name: Bristol
+names:
+  - Bristol, England
+  - Bristol, Gloucestershire
+  - Bristol, UK
+  - lang: ja
+    role: translation
+    text: ブリストル
+  - lang: zh
+    role: translation
+    text: 布里斯托尔
+  - lang: ko
+    role: translation
+    text: 브리스틀
+  - lang: ru
+    role: translation
+    text: Бристоль
+kind: settlement
+parent: city-of-bristol
+country_code: GB
+location: [-2.5975, 51.45361]
+wikidata_id: Q23154
+metadata:
+  sources: [Wikidata Q23154 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4090130-0
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q23154
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q23154
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q23154

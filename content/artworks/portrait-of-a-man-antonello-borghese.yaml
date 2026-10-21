@@ -1,0 +1,115 @@
+public_id: 102059
+title_lang: it
+title: Ritratto d'uomo
+names:
+  - lang: nl
+    role: translation
+    text: Portret van een man
+  - lang: fr
+    role: translation
+    text: Portrait d'un homme
+  - lang: de
+    role: translation
+    text: Porträt eines Mannes
+  - lang: it
+    role: translation
+    text: Ritratto di un uomo
+  - lang: es
+    role: translation
+    text: Retrato de un hombre
+  - lang: ja
+    role: translation
+    text: 男の肖像
+  - lang: ru
+    role: translation
+    text: Мужской портрет
+creator: antonello-da-messina
+created: c. 1476
+materials: [tempera, oil paint, panel]
+dimensions: [31, 25.2]
+institution: galleria-borghese
+inventory_number: "396"
+web_url: https://galleriaborghese.beniculturali.it/opere/ritratto-duomo/
+wikidata_id: Q98852368
+metadata:
+  sources: [Wikidata Q98852368 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Antonello_da_messina%2C_ritratto_d%27uomo%2C_1474-75%2C_02.jpg/1280px-Antonello_da_messina%2C_ritratto_d%27uomo%2C_1474-75%2C_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonello_da_messina,_ritratto_d%27uomo,_1474-75,_02.jpg
+    license: Public domain
+    credit: Antonello da Messina
+provenance:
+  - owner_label: unknown (probably a Venetian patrician)
+    acquired: c. 1475–1476
+    label: painted during Antonello's stay in Venice, 1475–1476; the sitter's red gown and black cap those of Venetian patricians
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/ritratto-duomo
+        note: L’uomo ritratto indossa una veste rossa e una berretta nera, tipici capi d’abbigliamento di quei patrizi veneziani che furono estimatori e committenti di Antonello da Messina. Per ragioni stilistiche, il dipinto si deve fare risalire alla trasferta veneziana del 1475-1476.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1790 or earlier
+    ended: 1902
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/ritratto-duomo
+        note: "Provenienza: Collezione Borghese, citato per la prima volta nell’inventario del 1790 (Stanza III, n. 19); Inventario Fidecommissario Borghese 1833, B, p. 23, n. 12. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1790"
+        note: first listed, as Giovanni Bellini; given back to Antonello in 1869
+        room: Stanza III
+        place: rome
+        number: "19"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, B, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/ritratto-duomo
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q98852368
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q98852368
+    - url: https://www.collezionegalleriaborghese.it/opere/ritratto-duomo
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q98852368
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q98852368
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q98852368
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q98852368
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q98852368
+    - url: https://www.collezionegalleriaborghese.it/opere/ritratto-duomo
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

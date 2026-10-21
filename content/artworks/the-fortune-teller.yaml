@@ -1,0 +1,142 @@
+public_id: 101705
+title_lang: fr
+title: La Diseuse de bonne aventure
+names:
+  - lang: it
+    role: original
+    text: Buona ventura
+  - lang: en
+    role: translation
+    text: The Fortune Teller
+  - lang: nl
+    role: translation
+    text: De waarzegster
+  - lang: de
+    role: translation
+    text: Die Wahrsagerin
+  - lang: es
+    role: translation
+    text: La buenaventura
+  - lang: ja
+    role: translation
+    text: 女占い師
+  - lang: zh
+    role: translation
+    text: 女占卜师
+  - lang: ru
+    role: translation
+    text: Гадалка
+creator: caravaggio
+created: 1590/1603
+created_label: c. 1594
+materials: [oil paint, canvas]
+dimensions: [99, 131]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 55
+web_url: https://collections.louvre.fr/ark:/53355/cl010062329
+wikidata_id: Q2610675
+metadata:
+  sources: [Wikidata Q2610675 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/The_Fortune_Teller-Caravaggio_%28Louvre%29.jpg/1280px-The_Fortune_Teller-Caravaggio_%28Louvre%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Fortune_Teller-Caravaggio_(Louvre).jpg
+    license: Public domain
+    credit: Masur
+provenance:
+  - owner: artist/caravaggio
+    acquired: c. 1595
+    method: creation
+    place: rome
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062329
+        note: "Date de création/fabrication : 4e quart du XVIe siècle (vers 1595 - 1598)"
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/alessandro-vittrici
+    place: rome
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062329
+        note: A. Vittrici, Rome.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: the Doria-Pamphili family
+    place: rome
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062329
+        note: Famille Doria-Pamphili, Rome
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/camillo-francesco-maria-pamphili
+    ended: 1665
+    place: rome
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062329
+        note: don du prince Camillo Pamphili (1622-1666) à Louis XIV, 1665
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/louis-xiv-of-france
+    acquired: 1665
+    method: gift
+    direct: true
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062329
+        note: don du prince Camillo Pamphili (1622-1666) à Louis XIV, 1665 (inventaire de 1683, n° 189).
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - date: "1683"
+        number: "189"
+        document: inventory of the king's paintings (Le Brun)
+  - owner: institution/french-royal-collection
+    acquired: 1715
+    method: inheritance
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062329
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne, 1665"
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1793
+    method: transfer
+    place: paris
+    label: the royal collection became the nation's
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062329
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne"
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 105
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2610675
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010062329
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2610675
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2610675
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2610675
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2610675
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2610675
+    - url: https://collections.louvre.fr/ark:/53355/cl010062329
+      source: louvre-collections
+      accessed: 2026-10-20

@@ -1,0 +1,30 @@
+public_id: 101933
+name: Agnolo Doni
+given_name: Agnolo
+family_name: Doni
+kind: person
+birth: 1474
+death: 1539
+wikidata_id: Q26791760
+metadata:
+  sources: [Wikidata Q26791760 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Agnolo_Doni%27s_portrait_paintings_by_Raffaello_Sanzio.jpg/1280px-Agnolo_Doni%27s_portrait_paintings_by_Raffaello_Sanzio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Agnolo_Doni%27s_portrait_paintings_by_Raffaello_Sanzio.jpg
+    license: Public domain
+    credit: Raphael
+identifiers:
+  viaf: "172756106"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q26791760
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q26791760
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q26791760

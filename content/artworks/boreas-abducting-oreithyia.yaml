@@ -1,0 +1,89 @@
+public_id: 101652
+title_lang: nl
+title: Boreas ontvoert Oreithya (Ovidius, Met. VI)
+names:
+  - lang: en
+    role: original
+    text: Boreas abducting Orithyia (Ovid, Met. VI)
+  - lang: en
+    role: original
+    text: Boreas Abducting Oreithyia
+  - lang: fr
+    role: translation
+    text: L'Enlèvement d'Orithye par Boreas
+  - lang: de
+    role: translation
+    text: Boreas entführt Oreithya
+  - lang: es
+    role: translation
+    text: Bóreas rapta a Oritía
+  - lang: ja
+    role: translation
+    text: オレイテュイアを略奪するボレアス
+creator: peter-paul-rubens
+created: 1620
+materials: [oil paint, panel]
+dimensions: [146, 140]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-626
+wikidata_id: Q8253935
+metadata:
+  sources: [Wikidata Q8253935 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Peter_Paul_Rubens_135.jpg/1280px-Peter_Paul_Rubens_135.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_135.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    ended: 1822
+    place: vienna
+    notes_md: The Academy publishes the bequest only; earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1822
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “Die bereits beachtlichen Bestände aus der Schenkung des Grafen Lamberg-Sprinzenstein, der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q8253935
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q8253935
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q8253935
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q8253935
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q8253935
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q8253935
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q8253935

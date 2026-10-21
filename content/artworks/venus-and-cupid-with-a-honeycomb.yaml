@@ -1,0 +1,127 @@
+public_id: 102057
+title_lang: it
+title: Venere e Amore che reca il favo di miele
+names:
+  - Venus with Cupid the Honey Thief
+  - lang: nl
+    role: translation
+    text: Venus en Cupido de honing dief
+  - lang: fr
+    role: translation
+    text: Vénus avec Cupidon voleur de miel
+  - lang: de
+    role: translation
+    text: Venus und Amor mit einer Wabe
+  - lang: it
+    role: translation
+    text: Venere e Amore che reca il favo di miele
+  - lang: es
+    role: translation
+    text: Venus y Cupido con un panal de miel
+  - lang: zh
+    role: translation
+    text: 维纳斯与手持蜂巢的丘比特
+  - lang: ru
+    role: translation
+    text: Венера с Амуром мед вор
+creator: lucas-cranach-the-elder
+created: c. 1531
+materials: [oil paint, canvas]
+dimensions: [169, 67]
+institution: galleria-borghese
+inventory_number: "326"
+web_url: https://www.collezionegalleriaborghese.it/en/opere/venus-and-cupid-with-a-honeycomb
+wikidata_id: Q115826047
+metadata:
+  sources: [Wikidata Q115826047 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ae/Lucas_Cranach_d.%C3%84._-_Venus_mit_Cupid_als_Honigdieb_%28Galleria_Borghese%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lucas_Cranach_d.%C3%84._-_Venus_mit_Cupid_als_Honigdieb_(Galleria_Borghese).jpg
+    license: Public domain
+    credit: Lucas Cranach the Elder
+provenance:
+  - owner_label: Alvise Corradini
+    ended: 1611
+    place: padua
+    certainty: possible
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/venere-e-amore-che-reca-il-favo-di-miele
+        note: (?) Padova, collezione Alvise Corradini, ante 1611 (Herrmann Fiore 2010)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1611-01-12
+    ended: 1633
+    place: rome
+    label: one of the first paintings to reach Cardinal Scipione Borghese
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/venere-e-amore-che-reca-il-favo-di-miele
+        note: Roma, collezione Scipione Borghese, 12 gennaio 1611 (Coliva 2010)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/venere-e-amore-che-reca-il-favo-di-miele
+        note: "Provenienza: (?) Padova, collezione Alvise Corradini, ante 1611 (Herrmann Fiore 2010); Roma, collezione Scipione Borghese, 12 gennaio 1611 (Coliva 2010); Inventario ante 1633, n. 186 (Corradini 1998, p. 453); Roma, collezione Borghese, 1650 (Manilli 1650); Inventario Fidecommissario Borghese 1833, p. 11. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: before 1633
+        place: rome
+        number: "186"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/venere-e-amore-che-reca-il-favo-di-miele
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q115826047
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q115826047
+    - url: https://www.collezionegalleriaborghese.it/opere/venere-e-amore-che-reca-il-favo-di-miele
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q115826047
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q115826047
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q115826047
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q115826047
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q115826047
+    - url: https://www.collezionegalleriaborghese.it/opere/venere-e-amore-che-reca-il-favo-di-miele
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

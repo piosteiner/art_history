@@ -1,0 +1,77 @@
+public_id: 102158
+title_lang: it
+title: Allegoria ed effetti del Buono e del Cattivo Governo
+names:
+  - Good and Bad Government
+  - The Allegory and Effects of Good and Bad Government
+  - lang: en
+    role: original
+    text: The Allegory of Good and Bad Government
+  - lang: nl
+    role: translation
+    text: Allegorie van het goede en slechte bestuur
+  - lang: fr
+    role: translation
+    text: Les Effets du bon et du mauvais gouvernement
+  - lang: it
+    role: translation
+    text: Allegoria ed effetti del Buono e del Cattivo Governo
+  - lang: es
+    role: translation
+    text: Alegoría del Buen y del Mal Gobierno
+  - lang: ja
+    role: translation
+    text: 善政の効果
+  - lang: zh
+    role: translation
+    text: 好政府与坏政府的寓言
+creator: ambrogio-lorenzetti
+created: 1338-02/1339-05
+created_label: c. 1337
+dimensions: [200, 770]
+institution: palazzo-pubblico
+location: [11.33194, 43.31801]
+wikidata_id: Q2401235
+metadata:
+  sources: [Wikidata Q2401235 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Sala_amb_frescos_d%27Ambrogio_Lorenzetti%2C_Palazzo_Pubblico_de_Siena.JPG/1280px-Sala_amb_frescos_d%27Ambrogio_Lorenzetti%2C_Palazzo_Pubblico_de_Siena.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Sala_amb_frescos_d%27Ambrogio_Lorenzetti,_Palazzo_Pubblico_de_Siena.JPG
+    license: CC BY-SA 3.0
+    credit: Joanbanjo
+provenance:
+  - owner_label: the Comune di Siena (Government of the Nine)
+    acquired: 1338-02
+    method: commission
+    place: siena
+    label: proposed by the Nine for the room where they met (Sala dei Nove, or della Pace) in the Palazzo Pubblico; Lorenzetti worked from February 1338 to May 1339
+    sources:
+      - url: https://it.wikipedia.org/wiki/Allegoria_ed_effetti_del_Buono_e_del_Cattivo_Governo
+        note: Gli affreschi furono proposti dal Governo della città di Siena, che in quegli anni era governata da nove cittadini, il Governo dei Nove appunto […] I documenti attestano che Ambrogio Lorenzetti lavorò agli affreschi dal febbraio del 1338 al maggio del 1339
+        source: wikipedia-it-buon-governo
+        accessed: 2026-10-20
+  - owner: institution/palazzo-pubblico
+    acquired: 1339
+    place: siena
+    label: the Sala del Consiglio dei Nove — its entrances changed since, its furniture lost
+    sources:
+      - url: https://it.wikipedia.org/wiki/Allegoria_ed_effetti_del_Buono_e_del_Cattivo_Governo
+        note: "La Sala del Consiglio dei Nove ha subito negli anni numerose modifiche: Il sistema degli accessi alla sala è stato modificato e sono andati perduti la mobilia e gli arredi originari."
+        source: wikipedia-it-buon-governo
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2401235
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2401235
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2401235
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2401235

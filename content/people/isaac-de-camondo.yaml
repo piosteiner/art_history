@@ -1,0 +1,55 @@
+public_id: 101889
+name: Isaac de Camondo
+names:
+  - Isaac de, Count Camondo
+  - Comte Isaac de Camondo
+  - Isaac de, Comte Camondo
+  - lang: ja
+    role: translation
+    text: イザック・ド・カモンド
+  - lang: zh
+    role: translation
+    text: 艾萨克‧德‧卡蒙多
+  - lang: ko
+    role: translation
+    text: 이사크 드 카몽도
+  - lang: ru
+    role: translation
+    text: Исаак де Камондо
+kind: person
+occupations: [banker, art collector, diplomat, composer]
+birth: 1851-07-03
+death: 1911-04-07
+wikidata_id: Q94319
+metadata:
+  sources: [Wikidata Q94319 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Isaac_de_Camondo_%281851-1911%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Isaac_de_Camondo_(1851-1911).jpg
+    license: Public domain
+    credit: A. Bert
+identifiers:
+  bnf: "159260050"
+  gnd: "1029372721"
+  idref: 10049112X
+  lc: no2008065432
+  rkd: "427566"
+  ulan: "500435458"
+  viaf: "78788422"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q94319
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q94319
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q94319
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q94319

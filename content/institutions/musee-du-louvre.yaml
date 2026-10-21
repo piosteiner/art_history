@@ -1,0 +1,64 @@
+public_id: 101780
+name: Louvre Museum
+names:
+  - The Louvre
+  - Musée Napoléon
+  - Musée national du Louvre
+  - France. Musée du Louvre Paris
+  - The Louvre Museum
+  - Musee Napoleon
+  - Musee national du Louvre
+  - France. Musee du Louvre Paris
+  - lang: nl
+    role: translation
+    text: Louvre
+  - lang: fr
+    role: translation
+    text: Musée du Louvre
+  - lang: it
+    role: translation
+    text: Museo del Louvre
+  - lang: ja
+    role: translation
+    text: ルーヴル美術館
+  - lang: zh
+    role: translation
+    text: 卢浮宫博物馆
+  - lang: ko
+    role: translation
+    text: 루브르 박물관
+  - lang: ru
+    role: translation
+    text: Лувр
+founded: 1793-08-10
+place: paris
+location: [2.33583, 48.86111]
+website_url: https://www.louvre.fr/
+wikidata_id: Q19675
+metadata:
+  sources: [Wikidata Q19675 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Cour_Napol%C3%A9on_at_night_-_Louvre.jpg/1280px-Cour_Napol%C3%A9on_at_night_-_Louvre.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cour_Napol%C3%A9on_at_night_-_Louvre.jpg
+    license: CC BY 2.5
+    credit: Benh LIEU SONG
+identifiers:
+  bnf: 11865019j
+  gnd: 1006837-5
+  idref: "026394677"
+  lc: n80020283
+  ulan: "500125189"
+  viaf: "257711507"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q19675
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q19675
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q19675

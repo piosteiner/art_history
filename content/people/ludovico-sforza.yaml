@@ -1,0 +1,68 @@
+public_id: 102189
+name: Ludovico Sforza
+names:
+  - Ludovico il Moro
+  - Duke of Milan Ludovico Sforza
+  - Duke of Milan Lodovico Sforza
+  - il Moro Ludivico
+  - Ludovicus, Duke of Milan Sfortia
+  - il Moro Ludovico
+  - Ludovico, Duke of Milan Sforza
+  - Lodovico, Duke of Milan Sforza
+  - le More Ludovic
+  - il Moro Lodovico
+  - Duke of Milan Ludovicus Sfortia
+  - Ludovico Maria Sforza
+  - Ludovico Maria Sforza, Duca di Milano
+  - lang: fr
+    role: translation
+    text: Ludovic Sforza
+  - lang: ja
+    role: translation
+    text: ルドヴィーコ・スフォルツァ
+  - lang: zh
+    role: translation
+    text: 卢多维科·斯福尔扎
+  - lang: ko
+    role: translation
+    text: 루도비코 스포르차
+  - lang: ru
+    role: translation
+    text: Лодовико Сфорца
+kind: person
+occupations: [statesperson, duke, politician, patron of the arts]
+birth: 1452-08-05
+death: 1508-06-06
+wikidata_id: Q236853
+metadata:
+  sources: [Wikidata Q236853 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8f/Pala_Sforzesca_-_detail_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pala_Sforzesca_-_detail_01.jpg
+    license: Public domain
+    credit: Unknown Master, Italian (active 1490-1520 in Lombardy)
+identifiers:
+  bnf: "120761118"
+  gnd: "118820745"
+  hls: "029255"
+  idref: "029055032"
+  lc: n80149218
+  ulan: "500258305"
+  viaf: "88653204"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q236853
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q236853
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q236853
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q236853

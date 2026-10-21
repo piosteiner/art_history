@@ -1,0 +1,49 @@
+public_id: 101757
+name: Jacques de Morgan
+names:
+  - Jean-Jacques de Morgan
+  - J. de Morgan
+  - lang: ja
+    role: translation
+    text: ジャック・ド・モルガン
+  - lang: zh
+    role: translation
+    text: 雅克·德·摩根
+  - lang: ru
+    role: translation
+    text: Жак де Морган
+kind: person
+occupations: [anthropologist, archaeologist, engineer, geologist, mining engineer, Egyptologist, numismatist, civil engineer, biologist]
+birth: 1857-06-03
+death: 1924-06-12
+wikidata_id: Q541964
+metadata:
+  sources: [Wikidata Q541964 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Jacques_de_Morgan.jpg/1280px-Jacques_de_Morgan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacques_de_Morgan.jpg
+    license: Public domain
+    credit: Abdullah frères
+identifiers:
+  bnf: "119168492"
+  gnd: "117144037"
+  idref: "027038424"
+  lc: n90676635
+  viaf: "7394637"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q541964
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q541964
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q541964
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q541964

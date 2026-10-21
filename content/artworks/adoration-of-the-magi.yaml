@@ -1,0 +1,123 @@
+public_id: 101945
+title_lang: it
+title: Adorazione dei Magi
+names:
+  - lang: en
+    role: translation
+    text: Adoration of the Magi
+  - lang: nl
+    role: translation
+    text: Aanbidding door de Wijzen
+  - lang: fr
+    role: translation
+    text: L'Adoration des mages
+  - lang: de
+    role: translation
+    text: Anbetung der Könige
+  - lang: it
+    role: original
+    text: Adorazione dei Magi
+  - lang: es
+    role: translation
+    text: Adoración de los Magos
+  - lang: ja
+    role: translation
+    text: 東方三博士の礼拝
+  - lang: zh
+    role: translation
+    text: 三博士来朝
+  - lang: ko
+    role: translation
+    text: 동방박사의 경배
+  - lang: ru
+    role: translation
+    text: Поклонение волхвов
+creator: leonardo-da-vinci
+created: 1481/1482
+materials: [drawing, charcoal, watercolor paint, ink, oil paint, panel]
+dimensions: [243, 246]
+institution: uffizi-gallery
+inventory_number: 1890 n. 1594
+web_url: https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi
+wikidata_id: Q1638622
+metadata:
+  sources: [Wikidata Q1638622 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Leonardo_da_Vinci%2C_Adoration%2C_c1481%2C_Uffizi.jpg/1280px-Leonardo_da_Vinci%2C_Adoration%2C_c1481%2C_Uffizi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci,_Adoration,_c1481,_Uffizi.jpg
+    license: CC BY-SA 4.0
+    credit: Leonardo da Vinci
+provenance:
+  - owner_label: the Augustinian monks of San Donato a Scopeto
+    acquired: 1481-07
+    method: commission
+    label: commissioned for the high altar of their church outside the walls; Leonardo left for Milan in 1482, the friars later commissioned Filippino Lippi (1496)
+    sources:
+      - url: https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi
+        note: A document from July 1481 states that Leonardo da Vinci had received a commission from the Augustinian monks to paint a panel for the high altar in the church of San Donato in Scopeto, outside Florence’s city walls. […] The Augustinian friars waited in vain for the artist to return
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner_label: Amerigo de' Benci
+    place: florence
+    label: left unfinished in his house (the father of Ginevra), where Vasari saw it
+    sources:
+      - url: https://it.wikipedia.org/wiki/Adorazione_dei_Magi_%28Leonardo%29
+        note: L'Adorazione di Leonardo nel frattempo era rimasta allo stato di abbozzo in casa Amerigo de' Benci, il padre di Ginevra, della quale Leonardo dipinse un famoso ritratto; qui la vide Vasari.
+        source: wikipedia-it-adorazione-leonardo
+        accessed: 2026-10-20
+  - owner: person/antonio-de-medici
+    acquired: before 1601
+    place: florence
+    sources:
+      - url: https://it.wikipedia.org/wiki/Adorazione_dei_Magi_%28Leonardo%29
+        note: Nel 1601 si trovava nelle raccolte di don Antonio de' Medici e, dopo la morte di suo figlio Giulio, nel 1670 approdò alle Gallerie fiorentine.
+        source: wikipedia-it-adorazione-leonardo
+        accessed: 2026-10-20
+  - owner_label: Giulio de' Medici, Antonio's son
+    ended: 1670
+    method: inheritance
+    sources:
+      - url: https://it.wikipedia.org/wiki/Adorazione_dei_Magi_%28Leonardo%29
+        note: dopo la morte di suo figlio Giulio, nel 1670 approdò alle Gallerie fiorentine
+        source: wikipedia-it-adorazione-leonardo
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1670
+    method: inheritance
+    place: florence
+    label: in the Florentine Galleries; at the villa of Castello around 1681 (the frame lost then), back in the museum for good in 1794
+    sources:
+      - url: https://it.wikipedia.org/wiki/Adorazione_dei_Magi_%28Leonardo%29
+        note: nel 1670 approdò alle Gallerie fiorentine. Nel 1681 andò perduta la cornice cinquecentesca con dorature, probabilmente in occasione dello spostamento della tavola alla villa di Castello. Dal 1794 tornò definitivamente al museo.
+        source: wikipedia-it-adorazione-leonardo
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4415834-8
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1638622
+  created:
+    - url: https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1638622
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1638622
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1638622
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1638622
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi
+      source: uffizi-artworks
+      accessed: 2026-10-20

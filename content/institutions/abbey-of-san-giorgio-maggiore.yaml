@@ -1,0 +1,36 @@
+public_id: 101781
+name: Abbey of San Giorgio Maggiore
+names:
+  - San Giorgio Maggiore Abbey
+  - Abbey of St. George Major
+  - lang: fr
+    role: translation
+    text: abbaye de San Giorgio Maggiore
+  - lang: it
+    role: translation
+    text: Abbazia di San Giorgio Maggiore
+founded: 1957
+place: venice
+location: [12.34333, 45.42917]
+address: Isola di S.Giorgio Maggiore, 30124, Venezia
+website_url: http://www.abbaziasangiorgio.it
+wikidata_id: Q116732887
+metadata:
+  sources: [Wikidata Q116732887 (retrieved 2026-10-20)]
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q116732887
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q116732887
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q116732887
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q116732887

@@ -1,0 +1,39 @@
+public_id: 101774
+name: Roger du Plessis, duc de Liancourt
+names:
+  - Roger du Plessis, Seigneur de Liancourt, 2.Duc de La Roche-Guyon
+  - lang: it
+    role: translation
+    text: Roger du Plessis Liancourt
+  - lang: es
+    role: translation
+    text: Roger du Plessis (duc de Liancourt)
+kind: person
+occupations: [aristocrat]
+birth: 1598
+death: 1674-08-01
+wikidata_id: Q3439635
+metadata:
+  sources: [Wikidata Q3439635 (retrieved 2026-10-20)]
+identifiers:
+  bnf: 14953615q
+  idref: "083196021"
+  rkd: "432058"
+  viaf: "54416719"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q3439635
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q3439635
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q3439635
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q3439635

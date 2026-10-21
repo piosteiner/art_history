@@ -1,0 +1,36 @@
+public_id: 101592
+name: Victor Brauner
+names:
+  - lang: ja
+    role: translation
+    text: ヴィクトル・ブローネル
+  - lang: ru
+    role: translation
+    text: Виктор Браунер
+birth: 1903-06-15
+death: 1966-03-12
+wikidata_id: Q558060
+metadata:
+  sources: [Wikidata Q558060 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/Stamps_of_Romania%2C_2003-40.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Stamps_of_Romania,_2003-40.jpg
+    license: Public domain
+    credit: Post of Romania
+identifiers:
+  bnf: 12028441g
+  gnd: 11865988X
+  idref: "029398878"
+  lc: n86136950
+  rkd: "12181"
+  ulan: "500027528"
+  viaf: "34470910"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q558060
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q558060

@@ -1,0 +1,18 @@
+public_id: 101653
+name: Nicolaes Maes
+given_name: Nicolaes
+family_name: Maes
+birth: 1634-01
+death: 1693-12
+wikidata_id: Q505150
+metadata:
+  sources: [Wikidata Q505150 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q505150
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q505150

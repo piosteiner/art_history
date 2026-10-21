@@ -1,0 +1,16 @@
+public_id: 102179
+name: canton of Montignac
+kind: site
+location: [1.12591, 45.04643]
+wikidata_id: Q1726321
+metadata:
+  sources: [Wikidata Q1726321 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1726321
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1726321

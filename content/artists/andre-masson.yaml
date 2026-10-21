@@ -1,0 +1,45 @@
+public_id: 101593
+name: André Masson
+names:
+  - Andre Masson
+  - Masson
+  - lang: ja
+    role: translation
+    text: アンドレ・マッソン
+  - lang: zh
+    role: translation
+    text: 安德烈·马松
+  - lang: ko
+    role: translation
+    text: 앙드레 마송
+  - lang: ru
+    role: translation
+    text: Андре Массон
+birth: 1896-01-04
+death: 1987-10-28
+wikidata_id: Q312529
+metadata:
+  sources: [Wikidata Q312529 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/18/Andr%C3%A9_Masson%2C_Paris.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Masson,_Paris.jpg
+    license: CC BY-SA 4.0
+    credit: Vulprania
+identifiers:
+  bnf: 11930229r
+  gnd: 11857874X
+  idref: "027210669"
+  kulturnav: d835ec34-4796-4508-b0ee-3270d90f8315
+  lc: n79144794
+  rkd: "53151"
+  ulan: "500030295"
+  viaf: "36926103"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q312529
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q312529

@@ -1,0 +1,18 @@
+public_id: 101706
+name: Jan van Eyck
+given_name: Jan
+family_name: van Eyck
+birth: c. 1390
+death: 1441-06-09
+wikidata_id: Q102272
+metadata:
+  sources: [Wikidata Q102272 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q102272
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q102272

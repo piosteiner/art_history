@@ -1,0 +1,51 @@
+public_id: 102025
+name: Ludovico Ludovisi
+names:
+  - lang: ja
+    role: translation
+    text: ルドヴィーコ・ルドヴィーシ
+  - lang: zh
+    role: translation
+    text: 盧多維科·盧多維西
+  - lang: ko
+    role: translation
+    text: 루도비코 루도비시
+  - lang: ru
+    role: translation
+    text: Людовико Людовизи
+kind: person
+occupations: [diplomat, Catholic priest, Catholic bishop]
+birth: 1595-10-27
+death: 1632-11-18
+wikidata_id: Q707750
+metadata:
+  sources: [Wikidata Q707750 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Portrait_of_Ludovico_Ludovisi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Ludovico_Ludovisi.jpg
+    license: Public domain
+    credit: Ottavio Leoni
+identifiers:
+  bnf: "120504566"
+  gnd: "124585183"
+  idref: "028728483"
+  lc: no2010006531
+  rkd: "489485"
+  viaf: "66485493"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q707750
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q707750
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q707750
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q707750

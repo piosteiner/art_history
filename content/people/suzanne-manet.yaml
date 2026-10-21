@@ -1,0 +1,50 @@
+public_id: 101886
+name: Suzanne Manet
+names:
+  - Suzanna Leenhoff
+  - Madam Edouard Manet
+  - lang: ja
+    role: translation
+    text: シュザンヌ・マネ
+  - lang: ko
+    role: translation
+    text: 쉬잔 마네
+  - lang: ru
+    role: translation
+    text: Сюзанна Мане
+kind: person
+occupations: [pianist, model, collector]
+birth: 1829-10-30
+death: 1906-03-08
+wikidata_id: Q524534
+metadata:
+  sources: [Wikidata Q524534 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/%C3%89douard_Manet_-_Madame_Manet_ou_Piano_-_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89douard_Manet_-_Madame_Manet_ou_Piano_-_2.jpg
+    license: Public domain
+    credit: Édouard Manet
+identifiers:
+  gnd: "1065865775"
+  idref: "181810735"
+  lc: n91077130
+  rkd: "450283"
+  ulan: "500054450"
+  viaf: "96044054"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q524534
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q524534
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q524534
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q524534

@@ -1,0 +1,16 @@
+public_id: 101866
+name: Gooise Meren
+kind: settlement
+location: [5.16667, 52.28333]
+wikidata_id: Q18335889
+metadata:
+  sources: [Wikidata Q18335889 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q18335889
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q18335889

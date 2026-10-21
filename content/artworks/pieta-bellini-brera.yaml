@@ -1,0 +1,93 @@
+public_id: 102114
+title_lang: it
+title: Pietà
+names:
+  - Pieta
+  - Dead Christ Supported by the Madonna and St John
+  - lang: nl
+    role: translation
+    text: Piëta
+  - lang: ja
+    role: translation
+    text: ピエタ (ベッリーニ、ブレラ美術館)
+  - lang: zh
+    role: translation
+    text: 聖殤
+  - lang: ru
+    role: translation
+    text: Пьета
+creator: giovanni-bellini
+created: c. 1460
+materials: [tempera, panel]
+dimensions: [86, 107]
+institution: pinacoteca-di-brera
+inventory_number: "228"
+web_url: https://pinacotecabrera.org/collezioni/collezione-on-line/pieta/
+wikidata_id: Q3904393
+metadata:
+  sources: [Wikidata Q3904393 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Pieta_Bellini.jpg/1280px-Pieta_Bellini.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pieta_Bellini.jpg
+    license: Public domain
+    credit: Giovanni Bellini
+provenance:
+  - owner_label: the Sampieri collection, Bologna
+    place: bologna
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/pieta/
+        note: Il dipinto, che faceva parte della collezione Sampieri di Bologna, fu donato a Brera nel 1811 dal viceré d’Italia Eugenio di Beauharnais.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: person/eugene-de-beauharnais
+    ended: 1811
+    method: purchase
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/pieta/
+        note: fu donato a Brera nel 1811 dal viceré d’Italia Eugenio di Beauharnais.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1811
+    method: gift
+    direct: true
+    place: milan
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/pieta/
+        note: fu donato a Brera nel 1811 dal viceré d’Italia Eugenio di Beauharnais.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q3904393
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q3904393
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/pieta/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q3904393
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q3904393
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q3904393
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q3904393
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q3904393
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/pieta/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

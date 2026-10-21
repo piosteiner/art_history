@@ -1,0 +1,37 @@
+public_id: 101879
+name: Mór Lipót Herzog
+given_name: Mór Lipót
+family_name: Herzog
+names: [Mór Lipót Herzog de Csete, Baron Mór Lipót Herzog, Mor Lipot Herzog, Baron Mor Lipot Herzog, Baron Herzog, Herzog de Csete, Baron Moritz Leopold Herzog de Csete]
+kind: person
+occupations: [art collector, banker, large estate owner, businessperson]
+birth: 1869-06-19
+death: 1934-11-19
+wikidata_id: Q69860245
+metadata:
+  sources: [Wikidata Q69860245 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d1/Herzog_M%C3%B3r_Lip%C3%B3t%2C_K%C3%A9pes_Pesti_H%C3%ADrlap%2C_1934.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Herzog_M%C3%B3r_Lip%C3%B3t,_K%C3%A9pes_Pesti_H%C3%ADrlap,_1934.jpg
+    license: Public domain
+    credit: Unknown author, not named in the original source
+identifiers:
+  gnd: "1053459629"
+  viaf: "309630789"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q69860245
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q69860245
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q69860245
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q69860245

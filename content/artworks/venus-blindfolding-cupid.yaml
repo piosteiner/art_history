@@ -1,0 +1,126 @@
+public_id: 102053
+title_lang: it
+title: Venere che benda Amore
+names:
+  - lang: en
+    role: translation
+    text: Venus Blindfolding Cupid
+  - lang: nl
+    role: translation
+    text: Venus blinddoekt Cupido
+  - lang: fr
+    role: translation
+    text: Vénus bandant les yeux de Cupidon
+  - lang: de
+    role: translation
+    text: Venus verbindet Cupid die Augen
+  - lang: es
+    role: translation
+    text: Venus vendando al Amor
+  - lang: ja
+    role: translation
+    text: キューピッドに目隠しをするヴィーナス
+  - lang: zh
+    role: translation
+    text: 維納斯蒙住邱比特的眼睛
+creator: titian
+created: 1555/1570
+created_label: c. 1560s
+materials: [oil paint, canvas]
+dimensions: [118, 185]
+institution: galleria-borghese
+inventory_number: "170"
+web_url: https://www.collezionegalleriaborghese.it/opere/venere-che-benda-amore
+wikidata_id: Q7920573
+metadata:
+  sources: [Wikidata Q7920573 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Titian_-_Venus_Blindfolding_Cupid.jpg/1280px-Titian_-_Venus_Blindfolding_Cupid.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Titian_-_Venus_Blindfolding_Cupid.jpg
+    license: Public domain
+    credit: Titian
+provenance:
+  - owner: person/paolo-emilio-sfondrati
+    ended: 1608
+    place: rome
+    certainty: possible
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/venere-che-benda-amore
+        note: (?) Roma, cardinale Paolo Emilio Sfondrati, 1608 (Della Pergola 1955)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1608
+    ended: 1633
+    place: rome
+    label: very probably ceded by Cardinal Sfondrati in 1608; certainly his in 1613 (Francucci)
+    certainty: probable
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/venere-che-benda-amore
+        note: Con buona probabilità il dipinto entrò in collezione Borghese nel 1608, ceduto dal cardinale Paolo Emilio Sfondrati a Scipione Borghese. […] Roma, cardinale Scipione Borghese, 1613 (Francucci 1613)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/venere-che-benda-amore
+        note: "Provenienza: (?) Roma, cardinale Paolo Emilio Sfondrati, 1608 (Della Pergola 1955); Roma, cardinale Scipione Borghese, 1613 (Francucci 1613); Inv, 1700, Stanza V, n. 43; Inventario Fidecommissario Borghese 1833, p. 9, n. 35. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1700"
+        room: Stanza V
+        place: rome
+        number: "43"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/venere-che-benda-amore
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q7920573
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/venere-che-benda-amore
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q7920573
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q7920573
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q7920573
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q7920573
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q7920573
+    - url: https://www.collezionegalleriaborghese.it/opere/venere-che-benda-amore
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

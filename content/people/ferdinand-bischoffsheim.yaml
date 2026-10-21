@@ -1,0 +1,31 @@
+public_id: 101891
+name: Ferdinand Bischoffsheim
+names:
+  - Ferd. Bischoffsheim
+  - lang: ja
+    role: translation
+    text: フェルディナン・ビショフスハイム
+kind: person
+occupations: [politician, banker, art collector]
+birth: 1837-08-02
+death: 1909-11-05
+wikidata_id: Q7121337
+metadata:
+  sources: [Wikidata Q7121337 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q7121337
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q7121337
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q7121337
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q7121337

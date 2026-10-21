@@ -1,0 +1,35 @@
+public_id: 101763
+name: Léon Gauchez
+given_name: Léon
+family_name: Gauchez
+names: [Paul Leroi, Léon Mancino]
+kind: person
+occupations: [art dealer, art critic]
+birth: 1825-08-13
+death: 1907-06-01
+wikidata_id: Q16214328
+metadata:
+  sources: [Wikidata Q16214328 (retrieved 2026-10-20)]
+identifiers:
+  bnf: "100183960"
+  gnd: "122904397"
+  idref: "151158959"
+  rkd: "361658"
+  viaf: "30431185"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q16214328
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q16214328
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q16214328
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q16214328

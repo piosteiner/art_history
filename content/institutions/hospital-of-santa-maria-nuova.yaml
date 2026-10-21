@@ -1,0 +1,60 @@
+public_id: 101917
+name: Hospital of Santa Maria Nuova
+names:
+  - Santa Maria Nuova
+  - Santa Maria Nuova (Florence)
+  - Santa Maria Nuova hospital
+  - lang: fr
+    role: translation
+    text: hôpital Santa Maria Nuova
+  - lang: de
+    role: translation
+    text: Krankenhaus Santa Maria Nuova
+  - lang: it
+    role: translation
+    text: Ospedale di Santa Maria Nuova
+  - lang: es
+    role: translation
+    text: Hospital de Santa Maria Nuova
+  - lang: ja
+    role: translation
+    text: サンタ・マリーア・ヌオーヴァ病院
+  - lang: ru
+    role: translation
+    text: Оспедале Санта-Мария-Нуова
+founded: 1288
+place: florence
+location: [11.25989, 43.77341]
+address: Via Sant'Egidio -
+website_url: http://www.asf.toscana.it
+wikidata_id: Q913148
+metadata:
+  sources: [Wikidata Q913148 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Ospedale_di_santa_maria_nuova%2C_porticato_%285%29.JPG/1280px-Ospedale_di_santa_maria_nuova%2C_porticato_%285%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Ospedale_di_santa_maria_nuova,_porticato_(5).JPG
+    license: CC BY-SA 4.0
+    credit: Mongolo1984
+identifiers:
+  bnf: 12249796k
+  gnd: 16009823-3
+  idref: 03124484X
+  lc: n80051160
+  viaf: "138255873"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q913148
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q913148
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q913148
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q913148

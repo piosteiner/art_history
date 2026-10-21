@@ -1,0 +1,149 @@
+public_id: 102094
+title_lang: it
+title: Sposalizio della Vergine
+names:
+  - lang: en
+    role: translation
+    text: The Marriage of the Virgin
+  - lang: nl
+    role: translation
+    text: Het huwelijk van de Maagd Maria
+  - lang: fr
+    role: translation
+    text: Le Mariage de la Vierge
+  - lang: de
+    role: translation
+    text: Vermählung Mariä
+  - lang: es
+    role: translation
+    text: Los desposorios de la Virgen
+  - lang: ja
+    role: translation
+    text: 聖母の結婚
+  - lang: zh
+    role: translation
+    text: 聖母的婚禮
+  - lang: ru
+    role: translation
+    text: Обручение Девы Марии
+creator: raphael
+created: 1504
+materials: [oil paint, panel]
+dimensions: [175, 118]
+institution: pinacoteca-di-brera
+inventory_number: "336"
+web_url: http://dipinti.galleriapinacotecabrera.it/
+wikidata_id: Q2030685
+metadata:
+  sources: [Wikidata Q2030685 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Raffaello_-_Spozalizio_-_Web_Gallery_of_Art.jpg/1280px-Raffaello_-_Spozalizio_-_Web_Gallery_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raffaello_-_Spozalizio_-_Web_Gallery_of_Art.jpg
+    license: Public domain
+    credit: Raphael
+provenance:
+  - owner_label: San Francesco, Città di Castello
+    acquired: 1504
+    ended: 1798
+    method: commission
+    place: citta-di-castello
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/sposalizio-della-vergine/
+        note: Il dipinto, datato 1504, proviene dalla chiesa di San Francesco a Città di Castello
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: person/giuseppe-lechi
+    acquired: 1798
+    ended: 1801
+    method: forced_gift
+    direct: true
+    place: citta-di-castello
+    label: the town council was practically forced to have the altarpiece removed and give it to the Napoleonic general
+    sources:
+      - url: https://it.wikipedia.org/wiki/Sposalizio_della_Vergine_%28Raffaello%29
+        note: Nel 1798 il municipio di Città di Castello fu praticamente obbligato a far rimuovere la pala, per donarla al generale napoleonico Giuseppe Lechi
+        source: wikipedia-it-sposalizio-raffaello
+        accessed: 2026-10-20
+  - owner: person/giacomo-sannazzari-della-ripa
+    acquired: 1801
+    ended: 1804
+    method: purchase
+    direct: true
+    place: milan
+    label: for 50,000 lire (Milanese lire, before the Italian lira of 1861)
+    sources:
+      - url: https://it.wikipedia.org/wiki/Sposalizio_della_Vergine_%28Raffaello%29
+        note: che tre anni dopo la vendette per 50.000 lire al mercante milanese conte Giacomo Sannazzari della Ripa.
+        source: wikipedia-it-sposalizio-raffaello
+        accessed: 2026-10-20
+  - owner_label: Ospedale Maggiore, Milan
+    acquired: 1804
+    ended: 1806
+    method: bequest
+    direct: true
+    place: milan
+    sources:
+      - url: https://it.wikipedia.org/wiki/Sposalizio_della_Vergine_%28Raffaello%29
+        note: Quest'ultima la lasciò poi in eredità all'Ospedale Maggiore di Milano nel 1804.
+        source: wikipedia-it-sposalizio-raffaello
+        accessed: 2026-10-20
+  - owner: person/eugene-de-beauharnais
+    role: agent
+    acquired: 1806
+    ended: 1806
+    method: purchase
+    direct: true
+    place: milan
+    label: bought by the Viceroy of Italy for the Academy of Fine Arts in Milan, whose collections became the Pinacoteca (opened 1809)
+    sources:
+      - url: https://it.wikipedia.org/wiki/Sposalizio_della_Vergine_%28Raffaello%29
+        note: Nel 1806 fu acquistata da Beauharnais, che la destinò all'Accademia di Belle Arti milanese, le cui collezioni sono poi confluite nella Pinacoteca, inaugurata nel 1809.
+        source: wikipedia-it-sposalizio-raffaello
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1806
+    method: purchase
+    direct: true
+    place: milan
+    label: Brera's page says it arrived in 1805
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/sposalizio-della-vergine/
+        note: giunse a Brera nel 1805.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4483808-6
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2030685
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2030685
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/sposalizio-della-vergine/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2030685
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2030685
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2030685
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2030685
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2030685
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/sposalizio-della-vergine/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

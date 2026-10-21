@@ -1,0 +1,120 @@
+public_id: 102095
+title_lang: it
+title: Cena in Emmaus
+names:
+  - Cena in Emmaus
+  - lang: en
+    role: translation
+    text: Supper at Emmaus
+  - lang: nl
+    role: translation
+    text: Avondmaal in Emmaüs
+  - lang: fr
+    role: translation
+    text: Le Souper à Emmaüs
+  - lang: de
+    role: translation
+    text: Abendmahl in Emmaus
+  - lang: es
+    role: translation
+    text: Los discípulos de Emaús
+  - lang: ja
+    role: translation
+    text: エマオの晩餐
+  - lang: zh
+    role: translation
+    text: 以馬忤斯的晚餐
+  - lang: ru
+    role: translation
+    text: Ужин в Эммаусе
+creator: caravaggio
+created: 1605/1606
+materials: [oil paint, canvas]
+dimensions: [141, 175]
+institution: pinacoteca-di-brera
+inventory_number: "2296"
+web_url: http://dipinti.galleriapinacotecabrera.it/
+wikidata_id: Q2097931
+metadata:
+  sources: [Wikidata Q2097931 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Caravaggio_%E2%80%94_Supper_at_Emmaus.jpg/1280px-Caravaggio_%E2%80%94_Supper_at_Emmaus.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_Supper_at_Emmaus.jpg
+    license: Public domain
+    credit: Gleb Simonov
+provenance:
+  - owner: artist/caravaggio
+    acquired: 1605
+    ended: 1606
+    method: creation
+    place: paliano
+    label: probably painted at Paliano, a Colonna fief, where he hid after killing Ranuccio Tomassoni
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-emmaus/
+        note: Caravaggio dipinse la Cena in Emmaus tra il 1605 e il 1606, probabilmente a Paliano, feudo dei Colonna, presso i quali si era rifugiato dopo aver ucciso Ranuccio Tomassoni
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: Ottavio Costa
+    role: agent
+    acquired: 1606
+    ended: 1606
+    method: purchase
+    label: sold through him
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-emmaus/
+        note: riuscì a venderla, per il tramite di Ottavio Costa, al marchese Patrizi
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: the Marchesi Patrizi
+    acquired: 1606
+    ended: 1939
+    method: purchase
+    place: rome
+    label: still in the family's palace in Rome in 1939
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-emmaus/
+        note: al marchese Patrizi e nel palazzo romano della famiglia si trovava ancora nel 1939
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1939
+    method: purchase
+    direct: true
+    place: milan
+    label: bought for the Pinacoteca by the Associazione Amici di Brera
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-emmaus/
+        note: quando fu acquistato per la Pinacoteca dalla Associazione Amici di Brera.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2097931
+  created:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-emmaus/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2097931
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2097931
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2097931
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2097931
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2097931
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-emmaus/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

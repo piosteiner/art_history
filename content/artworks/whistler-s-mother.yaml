@@ -1,0 +1,136 @@
+public_id: 101843
+title_lang: fr
+title: Arrangement en gris et noir n°1
+names:
+  - lang: en
+    role: original
+    text: "Arrangement in Grey and Black No. 1: Portrait of the Artist’s Mother"
+  - Arrangement in Grey and Black
+  - "Arrangement in Grey and Black: Portrait of the Painter's Mother"
+  - lang: en
+    role: original
+    text: Whistler's Mother
+  - lang: nl
+    role: translation
+    text: Arrangement in Gray and Black, No. 1
+  - lang: fr
+    role: translation
+    text: Arrangement en gris et noir n°1
+  - lang: de
+    role: translation
+    text: "Arrangement in Grau und Schwarz: Porträt der Mutter des Künstlers"
+  - lang: it
+    role: translation
+    text: Arrangiamento in Grigio e Nero No.1
+  - lang: es
+    role: translation
+    text: Retrato de la madre del artista
+  - lang: ja
+    role: translation
+    text: 灰色と黒のアレンジメント-母の肖像
+  - lang: zh
+    role: translation
+    text: 惠斯勒的母亲
+  - lang: ko
+    role: translation
+    text: 휘슬러의 어머니
+  - lang: ru
+    role: translation
+    text: Мать Уистлера
+creator: james-mcneill-whistler
+created: 1871
+materials: [oil paint, canvas]
+dimensions: [144.3, 163]
+institution: musee-d-orsay
+inventory_number: RF 699
+web_url: https://www.photo.rmn.fr/archive/86-001131-2C6NU0HB0TI2.html
+wikidata_id: Q687182
+metadata:
+  sources: [Wikidata Q687182 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Whistlers_Mother_high_res.jpg/1280px-Whistlers_Mother_high_res.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Whistlers_Mother_high_res.jpg
+    license: Public domain
+    credit: James McNeill Whistler
+provenance:
+  - owner: artist/james-mcneill-whistler
+    acquired: 1871
+    ended: 1891
+    method: creation
+    place: london
+    label: painted in summer 1871 in the artist's studio
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/arrangement-en-gris-et-noir-ndeg1-974
+        note: Date 1871 [Peint pendant l'été 1871 dans l'atelier de l'artiste]
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/luxembourg-museum
+    acquired: 1891
+    ended: 1922
+    method: purchase
+    direct: true
+    place: paris
+    label: bought from the artist by the State for the Musée du Luxembourg
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/arrangement-en-gris-et-noir-ndeg1-974
+        note: 1891, acquis de l'artiste par l'Etat pour le musée du Luxembourg de 1891 à 1922, musée du Luxembourg, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1922
+    method: transfer
+    direct: true
+    place: paris
+    label: at the Louvre's Jeu de Paume gallery 1922–1925, attributed to the Louvre in 1925
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/arrangement-en-gris-et-noir-ndeg1-974
+        note: de 1922 à 1925, musée du Louvre, galerie du Jeu de Paume, Paris 1925, attribué au musée du Louvre, Paris de 1925 à 1986, musée du Louvre
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/arrangement-en-gris-et-noir-ndeg1-974
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4764623-8
+  viaf: "184402409"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q687182
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q687182
+    - url: https://www.musee-orsay.fr/fr/oeuvres/arrangement-en-gris-et-noir-ndeg1-974
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q687182
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q687182
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q687182
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q687182
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q687182
+    - url: https://www.musee-orsay.fr/fr/oeuvres/arrangement-en-gris-et-noir-ndeg1-974
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

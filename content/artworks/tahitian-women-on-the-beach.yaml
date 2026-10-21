@@ -1,0 +1,134 @@
+public_id: 101849
+title_lang: fr
+title: Femmes de Tahiti
+names:
+  - lang: en
+    role: original
+    text: Tahitian Women on the Beach
+  - lang: nl
+    role: translation
+    text: Tahitiaanse vrouwen op het strand
+  - lang: de
+    role: translation
+    text: Frauen aus Tahiti
+  - lang: it
+    role: translation
+    text: Due donne tahitiane
+  - lang: es
+    role: translation
+    text: Mujeres de Tahití
+  - lang: ja
+    role: translation
+    text: タヒチの女たち
+  - lang: zh
+    role: translation
+    text: 沙灘上的大溪地女人
+  - lang: ko
+    role: translation
+    text: 타히티의 여인들
+  - lang: ru
+    role: translation
+    text: Таитянские женщины на побережье
+creator: paul-gauguin
+created: 1891-11/1891-12
+materials: [oil paint, canvas]
+dimensions: [69, 91.5]
+institution: musee-d-orsay
+inventory_number: RF 2765
+web_url: http://www.photo.rmn.fr/C.aspx?VP3=SearchResult&amp;IID=2C6NU0XIMSR8
+wikidata_id: Q930535
+metadata:
+  sources: [Wikidata Q930535 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Paul_Gauguin_056.jpg/1280px-Paul_Gauguin_056.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_056.jpg
+    license: Public domain
+    credit: Paul Gauguin
+provenance:
+  - owner: artist/paul-gauguin
+    acquired: 1891-11
+    method: creation
+    place: papeete
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
+        note: Date 1891 [novembre-décembre]
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Captain Arnaud
+    method: gift
+    direct: true
+    place: papeete
+    label: a gift of the artist in Tahiti
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
+        note: collection du capitaine Arnaud, don de l'artiste à Tahiti
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Mme Wilmot, Captain Arnaud's daughter
+    ended: 1920
+    method: inheritance
+    place: papeete
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
+        note: jusqu'en 1920, dans la collection de Mme Wilmot, Papeete, fille du capitaine Arnaud
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Vicomte Guy de Cholet
+    acquired: 1920
+    ended: 1923
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
+        note: jusqu'en 1923, dans la collection du vicomte Guy de Cholet
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1923
+    method: gift
+    place: paris
+    label: given by the comtesse Vitali in memory of her brother, the vicomte Guy de Cholet; at the Musée du Luxembourg 1923–1929
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
+        note: 1923, accepté par l'Etat à titre de don aux Musées nationaux de la comtesse Vitali en souvenir de son frère le vicomte Guy de Cholet 1923, attribué au musée du Louvre, Paris de 1923 à 1929, musée du Luxembourg
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q930535
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q930535
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q930535
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q930535
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q930535
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q930535
+    - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-de-tahiti-290
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

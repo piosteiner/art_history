@@ -1,0 +1,66 @@
+public_id: 101783
+name: Uffizi Gallery
+names:
+  - Uffizi
+  - Galleria degli Uffizi
+  - lang: fr
+    role: translation
+    text: galerie des Offices
+  - lang: de
+    role: translation
+    text: Uffizien
+  - lang: it
+    role: translation
+    text: Palazzo degli Uffizi
+  - lang: es
+    role: translation
+    text: Galería Uffizi
+  - lang: ja
+    role: translation
+    text: ウフィツィ美術館
+  - lang: zh
+    role: translation
+    text: 烏菲茲美術館
+  - lang: ko
+    role: translation
+    text: 우피치 미술관
+  - lang: ru
+    role: translation
+    text: Уффици
+founded: 1560
+place: florence
+location: [11.25528, 43.76833]
+address: Piazzale degli Uffizi 6, I-50122 Firenze
+website_url: https://www.uffizi.it/
+wikidata_id: Q51252
+metadata:
+  sources: [Wikidata Q51252 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Florence%2C_Italy_-_panoramio_%28125%29.jpg/1280px-Florence%2C_Italy_-_panoramio_%28125%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Florence,_Italy_-_panoramio_(125).jpg
+    license: CC BY-SA 3.0
+    credit: Arek N.
+identifiers:
+  bnf: 12074174p
+  gnd: 2042762-1
+  idref: "027439534"
+  lc: n79007196
+  ulan: "500125191"
+  viaf: "169401840"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q51252
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q51252
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q51252
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q51252

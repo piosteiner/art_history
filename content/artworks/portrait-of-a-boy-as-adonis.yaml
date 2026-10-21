@@ -1,0 +1,74 @@
+public_id: 101654
+title: Portrait of a Boy as Adonis
+names:
+  - lang: de
+    role: translation
+    text: Bildnis eines Knaben im Kostüm des Adonis
+creator: nicolaes-maes
+created: 1670
+materials: [oil paint]
+dimensions: [55.5, 42]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-670
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1106
+wikidata_id: Q47543597
+metadata:
+  sources: [Wikidata Q47543597 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Nicolaes_Maes_-_Portrait_of_a_Boy_as_Adonis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nicolaes_Maes_-_Portrait_of_a_Boy_as_Adonis.jpg
+    license: Public domain
+    credit: Nicolaes Maes
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    ended: 1822
+    place: vienna
+    notes_md: The Academy publishes the bequest only; earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1106
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1822
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1106
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “Die bereits beachtlichen Bestände aus der Schenkung des Grafen Lamberg-Sprinzenstein, der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q47543597
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q47543597
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q47543597
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q47543597
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q47543597
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q47543597
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q47543597

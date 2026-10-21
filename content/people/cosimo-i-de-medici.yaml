@@ -1,0 +1,72 @@
+public_id: 101921
+name: Cosimo I de' Medici, Grand Duke of Tuscany
+names:
+  - lang: it
+    role: original
+    text: Cosimo I de Medici
+  - Grand-Duke of Tuscany Cosimo I
+  - Cosimo il Grande
+  - de' Medici, il Grande, Grand Duke Of Tuscany Cosimo I
+  - Cosmo I
+  - Cosimo I de' Medici
+  - Cosimo de' Medici
+  - Cosimo I, de' il Grande, gran duca di Toscana Medici
+  - Cosimo the Great
+  - lang: fr
+    role: translation
+    text: Cosme Ier de Toscane
+  - lang: de
+    role: translation
+    text: Cosimo I. de’ Medici
+  - lang: es
+    role: translation
+    text: Cosme I de Médici
+  - lang: ja
+    role: translation
+    text: コジモ1世
+  - lang: zh
+    role: translation
+    text: 科西莫一世
+  - lang: ko
+    role: translation
+    text: 코시모 1세 데 메디치
+  - lang: ru
+    role: translation
+    text: Козимо I
+kind: person
+occupations: [art collector, politician, statesperson]
+birth: 1519-06-22
+death: 1574-05-01
+wikidata_id: Q48547
+metadata:
+  sources: [Wikidata Q48547 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Agnolo_Bronzino_-_Cosimo_I_de%27_Medici_in_armour_-_Google_Art_Project.jpg/1280px-Agnolo_Bronzino_-_Cosimo_I_de%27_Medici_in_armour_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Agnolo_Bronzino_-_Cosimo_I_de%27_Medici_in_armour_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Bronzino
+identifiers:
+  bnf: 11941260b
+  gnd: "118638521"
+  idref: "027352056"
+  lc: n79043917
+  rkd: "420370"
+  ulan: "500125867"
+  viaf: "121802096"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q48547
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q48547
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q48547
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q48547

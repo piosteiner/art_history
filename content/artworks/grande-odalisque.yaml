@@ -1,0 +1,132 @@
+public_id: 101700
+title_lang: fr
+title: Une odalisque, dite La Grande Odalisque
+names:
+  - lang: en
+    role: translation
+    text: Grande Odalisque
+  - lang: de
+    role: translation
+    text: Die große Odaliske
+  - lang: it
+    role: translation
+    text: La grande odalisca
+  - lang: es
+    role: translation
+    text: La gran odalisca
+  - lang: ja
+    role: translation
+    text: グランド・オダリスク
+  - lang: zh
+    role: translation
+    text: 大宫女
+  - lang: ko
+    role: translation
+    text: 그랑드 오달리스크
+  - lang: ru
+    role: translation
+    text: Большая одалиска
+creator: jean-auguste-dominique-ingres
+created: 1814
+materials: [oil paint, canvas]
+dimensions: [91, 162]
+institution: department-of-paintings-of-the-louvre
+inventory_number: RF 1158
+web_url: https://collections.louvre.fr/ark:/53355/cl010065566
+wikidata_id: Q1978815
+metadata:
+  sources: [Wikidata Q1978815 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/La_grande_odalisque_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_1158.jpg/1280px-La_grande_odalisque_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_1158.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_grande_odalisque_-_Jean-Auguste_Dominique_Ingres_-_Mus%C3%A9e_du_Louvre_Peintures_RF_1158.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
+provenance:
+  - owner: person/caroline-bonaparte
+    acquired: 1814
+    method: commission
+    label: painted for Caroline Murat, Queen of Naples — never paid for after the fall of the Empire; Salon of 1819
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065566
+        note: Peint pour Caroline Murat, reine de Naples. Salon de 1819.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/james-pourtales-gorgier
+    certainty: probable
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Grande_Odalisque
+        note: Avant cela, il est passé entre les mains du comte James de Pourtalès-Gorgier, de Georges Goupil, de Joseph Fau, du Baron Seillière et de Jeanne Seillière, surnommée princesse de Sagan.
+        source: wikipedia-fr-grande-odalisque
+        accessed: 2026-10-20
+  - owner_label: Georges Goupil
+    certainty: probable
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Grande_Odalisque
+        note: il est passé entre les mains du comte James de Pourtalès-Gorgier, de Georges Goupil, de Joseph Fau, du Baron Seillière et de Jeanne Seillière
+        source: wikipedia-fr-grande-odalisque
+        accessed: 2026-10-20
+  - owner_label: Joseph Fau
+    certainty: probable
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Grande_Odalisque
+        note: il est passé entre les mains du comte James de Pourtalès-Gorgier, de Georges Goupil, de Joseph Fau, du Baron Seillière et de Jeanne Seillière
+        source: wikipedia-fr-grande-odalisque
+        accessed: 2026-10-20
+  - owner_label: Baron Seillière
+    certainty: probable
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Grande_Odalisque
+        note: il est passé entre les mains du comte James de Pourtalès-Gorgier, de Georges Goupil, de Joseph Fau, du Baron Seillière et de Jeanne Seillière
+        source: wikipedia-fr-grande-odalisque
+        accessed: 2026-10-20
+  - owner: person/jeanne-seilliere
+    label: called princesse de Sagan
+    certainty: probable
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Grande_Odalisque
+        note: il est passé entre les mains du comte James de Pourtalès-Gorgier, de Georges Goupil, de Joseph Fau, du Baron Seillière et de Jeanne Seillière, surnommée princesse de Sagan.
+        source: wikipedia-fr-grande-odalisque
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1899
+    method: purchase
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065566
+        note: "Mode d'acquisition : achat, 1899"
+        source: louvre-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1978815
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1978815
+    - url: https://collections.louvre.fr/ark:/53355/cl010065566
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1978815
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1978815
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1978815
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1978815
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1978815
+    - url: https://collections.louvre.fr/ark:/53355/cl010065566
+      source: louvre-collections
+      accessed: 2026-10-20

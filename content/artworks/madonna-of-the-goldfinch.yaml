@@ -1,0 +1,106 @@
+public_id: 101951
+title_lang: it
+title: Madonna del Cardellino
+names:
+  - lang: es
+    role: original
+    text: Virgen del jilguero
+  - lang: en
+    role: original
+    text: Madonna del Cardellino (Madonna of the Goldfinch)
+  - lang: en
+    role: original
+    text: Madonna of the Goldfinch
+  - lang: fr
+    role: translation
+    text: La Vierge au chardonneret
+  - lang: de
+    role: translation
+    text: Madonna mit dem Stieglitz
+  - lang: ja
+    role: translation
+    text: ヒワの聖母
+  - lang: zh
+    role: translation
+    text: 金翅雀聖母
+  - lang: ru
+    role: translation
+    text: Мадонна со щеглом
+creator: raphael
+created: 1506-01-31 or earlier
+created_label: c. 1500s
+materials: [oil paint, panel]
+dimensions: [107, 77]
+institution: uffizi-gallery
+inventory_number: 1890 n. 1447
+web_url: https://www.uffizi.it/en/artworks/mary-christ-and-the-young-john-the-baptist-known-as-the-madonna-of-the-goldfinch
+wikidata_id: Q2344505
+metadata:
+  sources: [Wikidata Q2344505 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Madonna_of_the_Goldfinch_%28by_Raffaello_Sanzio%29_%E2%80%93_Galleria_degli_Uffizi%2C_Florence.jpg/1280px-Madonna_of_the_Goldfinch_%28by_Raffaello_Sanzio%29_%E2%80%93_Galleria_degli_Uffizi%2C_Florence.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Madonna_of_the_Goldfinch_(by_Raffaello_Sanzio)_%E2%80%93_Galleria_degli_Uffizi,_Florence.jpg
+    license: Public domain
+    credit: "{{creator:Raffaello Sanzio]}}"
+provenance:
+  - owner: person/lorenzo-nasi
+    acquired: 1506
+    method: commission
+    place: florence
+    label: commissioned for his marriage to Sandra di Matteo Canigiani (23 February 1506), says Vasari; broken into seventeen pieces when the Nasi house on Costa San Giorgio collapsed in a landslide on 12 November 1547, probably restored by Michele di Ridolfo del Ghirlandaio
+    sources:
+      - url: https://www.uffizi.it/en/artworks/mary-christ-and-the-young-john-the-baptist-known-as-the-madonna-of-the-goldfinch
+        note: Giorgio Vasari says that the painting was commissioned for the marriage of Lorenzo Nasi with Sandra di Matteo Canigiani, celebrated on 23 February 1506. When, the Nasi home was destroyed by a landslide in 1547, the painting was broken into seventeen fragments and probably given to Michele di Ridolfo del Ghirlandaio for restoration. Its subsequent history is unknown
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: person/gian-carlo-de-medici
+    acquired: before 1646
+    ended: 1663
+    place: florence
+    label: recorded in the cardinal's collection in 1646–1647; valued at 600 scudi in his estate inventory, one of the highest values of all
+    sources:
+      - url: https://www.uffizi.it/en/artworks/mary-christ-and-the-young-john-the-baptist-known-as-the-madonna-of-the-goldfinch
+        note: until it is recorded as being part of the collection of Cardinal Giovan Carlo de’ Medici in 1646-47.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Madonna_del_Cardellino
+        note: Nell'inventario redatto alla morte del cardinale l'opera era stimata 600 scudi, un costo record
+        source: wikipedia-it-madonna-del-cardellino
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: before 1705
+    place: florence
+    label: in the Tribune in 1705
+    sources:
+      - url: https://it.wikipedia.org/wiki/Madonna_del_Cardellino
+        note: confluì infine agli Uffizi. […] Si trovava nella Tribuna nel 1705
+        source: wikipedia-it-madonna-del-cardellino
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2344505
+  created:
+    - url: https://www.uffizi.it/en/artworks/mary-christ-and-the-young-john-the-baptist-known-as-the-madonna-of-the-goldfinch
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2344505
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2344505
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2344505
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2344505
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/mary-christ-and-the-young-john-the-baptist-known-as-the-madonna-of-the-goldfinch
+      source: uffizi-artworks
+      accessed: 2026-10-20

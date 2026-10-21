@@ -1,0 +1,18 @@
+public_id: 102090
+name: Andrea Mantegna
+given_name: Andrea
+family_name: Mantegna
+birth: 1431
+death: 1506-09-23
+wikidata_id: Q5681
+metadata:
+  sources: [Wikidata Q5681 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q5681
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q5681

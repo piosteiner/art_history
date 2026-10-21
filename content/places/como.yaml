@@ -1,0 +1,41 @@
+public_id: 102069
+name: Como
+names:
+  - lang: fr
+    role: translation
+    text: Côme
+  - lang: ja
+    role: translation
+    text: コモ
+  - lang: zh
+    role: translation
+    text: 科莫
+  - lang: ko
+    role: translation
+    text: 코모
+  - lang: ru
+    role: translation
+    text: Комо
+kind: settlement
+parent: province-of-como
+country_code: IT
+location: [9.08614, 45.81025]
+wikidata_id: Q1308
+metadata:
+  sources: [Wikidata Q1308 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4085313-5
+  hls: "007045"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1308
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q1308
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1308

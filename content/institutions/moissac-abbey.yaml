@@ -1,0 +1,60 @@
+public_id: 102187
+name: Moissac Abbey
+names:
+  - lang: nl
+    role: translation
+    text: Abdij Saint-Pierre van Moissac
+  - lang: fr
+    role: translation
+    text: abbaye Saint-Pierre de Moissac
+  - lang: de
+    role: translation
+    text: Abtei Saint-Pierre
+  - lang: it
+    role: translation
+    text: abbazia San Pietro di Moissac
+  - lang: es
+    role: translation
+    text: abadía de Moissac
+  - lang: zh
+    role: translation
+    text: 穆瓦萨克圣伯多禄修道院
+  - lang: ru
+    role: translation
+    text: Муассак (аббатство)
+founded: 7th century
+dissolved: 1790
+place: moissac
+location: [1.08472, 44.10556]
+website_url: https://www.abbayemoissac.com/fr/l-abbaye-saint-pierre
+wikidata_id: Q334208
+metadata:
+  sources: [Wikidata Q334208 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Cloitre_avec_arbre_moissac.jpg/1280px-Cloitre_avec_arbre_moissac.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cloitre_avec_arbre_moissac.jpg
+    license: CC BY-SA 3.0
+    credit: Abxbay
+identifiers:
+  bnf: 15509237s
+  gnd: 4204887-4
+  idref: "027435504"
+  lc: n84162243
+  viaf: "262702350"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q334208
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q334208
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q334208
+  dissolved:
+    - accessed: 2026-10-20
+      property: P576
+      wikidata: Q334208

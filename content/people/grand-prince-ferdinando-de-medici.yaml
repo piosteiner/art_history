@@ -1,0 +1,58 @@
+public_id: 101926
+name: Ferdinando de' Medici, Grand Prince of Tuscany
+names:
+  - Ferdinando de' Medici
+  - lang: fr
+    role: translation
+    text: Ferdinand III de Médicis
+  - lang: de
+    role: translation
+    text: Ferdinando de’ Medici
+  - lang: es
+    role: translation
+    text: Fernando de Médici
+  - lang: ja
+    role: translation
+    text: フェルディナンド・デ・メディチ
+  - lang: zh
+    role: translation
+    text: 斐迪南三世·德·美第奇
+  - lang: ru
+    role: translation
+    text: Фердинандо Медичи
+kind: person
+occupations: [composer]
+birth: 1663-08-09
+death: 31 October 1713
+wikidata_id: Q465178
+metadata:
+  sources: [Wikidata Q465178 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/98/Portrait-Of-Ferdinand-II-De-Medici.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait-Of-Ferdinand-II-De-Medici.jpg
+    license: Public domain
+    credit: Niccolò Cassana
+identifiers:
+  bnf: 12509235p
+  gnd: "118896628"
+  idref: "034326251"
+  lc: nr90028321
+  rkd: "426080"
+  viaf: "34564300"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q465178
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q465178
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q465178
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q465178

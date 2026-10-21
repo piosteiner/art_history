@@ -1,0 +1,41 @@
+public_id: 101863
+name: Brighton
+names:
+  - Brighthelmston
+  - Brighthelmstone
+  - Brighton, East Sussex
+  - Brighton, England
+  - lang: ja
+    role: translation
+    text: ブライトン
+  - lang: zh
+    role: translation
+    text: 布赖顿
+  - lang: ko
+    role: translation
+    text: 브라이턴
+  - lang: ru
+    role: translation
+    text: Брайтон
+kind: site
+parent: brighton-and-hove
+country_code: GB
+location: [-0.1375, 50.82083]
+wikidata_id: Q131491
+metadata:
+  sources: [Wikidata Q131491 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4008266-0
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q131491
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q131491
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q131491

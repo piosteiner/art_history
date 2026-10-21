@@ -1,0 +1,59 @@
+public_id: 101927
+name: Gian Carlo de' Medici
+names:
+  - Giovan Carlo De' Medici
+  - Cardinal Giovan Carlo de' Medici
+  - Giovan Carlo de', Cardinal Medici
+  - Giancarlo de' Medici
+  - lang: es
+    role: translation
+    text: Giovan Carlo de Médici
+  - lang: ja
+    role: translation
+    text: ジャンカルロ・デ・メディチ
+  - lang: zh
+    role: translation
+    text: 吉安卡洛·德·美第奇
+  - lang: ko
+    role: translation
+    text: 잔 카를로 데 메디치
+  - lang: ru
+    role: translation
+    text: Джанкарло Медичи
+kind: person
+occupations: [Catholic priest, Catholic bishop]
+birth: 1611-07-04
+death: 1663-01-22
+wikidata_id: Q1316745
+metadata:
+  sources: [Wikidata Q1316745 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Giovan_Carlo_de%27_Medici%2C_il_volterrano_%28palatine_gallery%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovan_Carlo_de%27_Medici,_il_volterrano_(palatine_gallery).jpg
+    license: Public domain
+    credit: Baldassare Franceschini
+identifiers:
+  bnf: "146456384"
+  gnd: "129593370"
+  idref: "086188666"
+  lc: nr98025029
+  rkd: "441367"
+  ulan: "500353788"
+  viaf: "47020795"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1316745
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1316745
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1316745
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1316745

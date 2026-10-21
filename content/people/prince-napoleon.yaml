@@ -1,0 +1,67 @@
+public_id: 101773
+name: Prince Napoléon-Jérôme, Prince Napoléon
+names:
+  - lang: fr
+    role: original
+    text: Napoléon Joseph Charles Paul Bonaparte
+  - lang: fr
+    role: original
+    text: Napoléon-Jérôme Bonaparte
+  - Napoleon Joseph Charles Paul Bonaparte
+  - Napoleon-Jerome Bonaparte
+  - Plon-Plon
+  - lang: nl
+    role: translation
+    text: Napoleon Jozef Karel Paul Bonaparte
+  - lang: it
+    role: translation
+    text: Napoleone Giuseppe Carlo Paolo Bonaparte
+  - lang: ja
+    role: translation
+    text: ナポレオン・ジョゼフ・シャルル・ポール・ボナパルト
+  - lang: zh
+    role: translation
+    text: 拿破崙親王
+  - lang: ko
+    role: translation
+    text: 나폴레옹 조제프 샤를 폴 보나파르트
+  - lang: ru
+    role: translation
+    text: Наполеон Жозеф Бонапарт
+kind: person
+occupations: [politician, diplomat]
+birth: 1822-09-09
+death: 1891-03-17
+wikidata_id: Q434077
+metadata:
+  sources: [Wikidata Q434077 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Napol%C3%A9on-J%C3%A9r%C3%B4me_Bonaparte_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Napol%C3%A9on-J%C3%A9r%C3%B4me_Bonaparte_(cropped).jpg
+    license: Public domain
+    credit: Unidentified photographer
+identifiers:
+  bnf: 14539256j
+  dodis: P32844
+  gnd: "101921632"
+  idref: "078526965"
+  lc: n50075988
+  ulan: "500434783"
+  viaf: "103645462"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q434077
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q434077
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q434077
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q434077

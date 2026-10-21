@@ -1,0 +1,18 @@
+public_id: 101647
+name: Lucas Cranach the Elder
+given_name: Lucas, the Elder
+family_name: Cranach
+birth: 1472-10-13
+death: 1553-10-26
+wikidata_id: Q191748
+metadata:
+  sources: [Wikidata Q191748 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q191748
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q191748

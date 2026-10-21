@@ -1,0 +1,72 @@
+public_id: 101640
+title_lang: de
+title: Der Aktsaal der Wiener Akademie im St. Annagebäude
+names:
+  - lang: de
+    role: original
+    text: Der Aktsaal der Wiener Akademie
+creator: martin-ferdinand-quadal
+created: 1787
+materials: [oil paint, canvas]
+dimensions: [144, 207]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-100
+wikidata_id: Q106129336
+metadata:
+  sources: [Wikidata Q106129336 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Aktsaal_der_Wiener_Akademie_%281787%2C_Martin_Ferdinand_Quadal%29.jpg/1280px-Aktsaal_der_Wiener_Akademie_%281787%2C_Martin_Ferdinand_Quadal%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aktsaal_der_Wiener_Akademie_(1787,_Martin_Ferdinand_Quadal).jpg
+    license: Public domain
+    credit: Martin Ferdinand Quadal
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    place: vienna
+    notes_md: The Academy publishes the bequest only; earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/536
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, Schenkungsjahr unbekannt / Bequest of Count Lamberg-Sprinzenstein, Vienna, date of bequest unknown”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein (date of the bequest unknown)
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/536
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, Schenkungsjahr unbekannt / Bequest of Count Lamberg-Sprinzenstein, Vienna, date of bequest unknown”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “Die bereits beachtlichen Bestände aus der Schenkung des Grafen Lamberg-Sprinzenstein, der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q106129336
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q106129336
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q106129336
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q106129336
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q106129336
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q106129336
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q106129336

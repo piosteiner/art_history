@@ -1,0 +1,43 @@
+public_id: 101740
+name: Susa
+names:
+  - Shushan
+  - Susa archaeological complex
+  - Mint of Susa
+  - lang: fr
+    role: translation
+    text: Suse
+  - lang: ja
+    role: translation
+    text: スーサ
+  - lang: zh
+    role: translation
+    text: 蘇薩
+  - lang: ko
+    role: translation
+    text: 수사
+  - lang: ru
+    role: translation
+    text: Сузы
+kind: site
+parent: shush
+country_code: IR
+location: [48.25611, 32.18944]
+wikidata_id: Q180773
+metadata:
+  sources: [Wikidata Q180773 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4118912-7
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q180773
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q180773
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q180773

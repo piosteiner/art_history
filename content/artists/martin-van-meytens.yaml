@@ -1,0 +1,18 @@
+public_id: 101641
+name: Martin van Meytens
+given_name: Martin
+family_name: van Meytens
+birth: 1695-06-24
+death: 1770-03-23
+wikidata_id: Q1082324
+metadata:
+  sources: [Wikidata Q1082324 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1082324
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1082324

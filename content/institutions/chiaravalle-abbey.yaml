@@ -1,0 +1,60 @@
+public_id: 102078
+name: Chiaravalle Abbey
+names:
+  - abbazia di Chiaravalle
+  - abbazia di Chiaravalle Milanese
+  - Certosa di Chiaravalle
+  - Santa Maria di Rovegnano
+  - Chiaravalle Milanese
+  - Parish of Chiaravalle
+  - lang: fr
+    role: translation
+    text: abbaye de Chiaravalle
+  - lang: de
+    role: translation
+    text: Kloster Chiaravalle Milanese
+  - lang: es
+    role: translation
+    text: abadía de Chiaravalle
+  - lang: zh
+    role: translation
+    text: 齐亚拉瓦莱修道院
+  - lang: ru
+    role: translation
+    text: Аббатство Кьяравалле
+founded: 12th century
+place: milan
+location: [9.23692, 45.41603]
+address: Via Sant'Arialdo, 102
+website_url: https://www.monasterochiaravalle.it
+wikidata_id: Q860569
+metadata:
+  sources: [Wikidata Q860569 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/AbbaziaChiaravalle.jpg/1280px-AbbaziaChiaravalle.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AbbaziaChiaravalle.jpg
+    license: CC BY-SA 3.0
+    credit: The original uploader was Yoruno at Italian Wikipedia.
+identifiers:
+  bnf: "124595806"
+  gnd: "1135695512"
+  idref: "033762260"
+  lc: n80159165
+  viaf: "212968081"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q860569
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q860569
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q860569
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q860569

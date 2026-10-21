@@ -1,0 +1,66 @@
+public_id: 101937
+name: Ferdinand III, Grand Duke of Tuscany
+names:
+  - lang: it
+    role: original
+    text: Ferdinando III di Toscana
+  - Ferdinand III
+  - lang: nl
+    role: translation
+    text: Ferdinand III van Toscane
+  - lang: fr
+    role: translation
+    text: Ferdinand III de Toscane
+  - lang: de
+    role: translation
+    text: Ferdinand III.
+  - lang: es
+    role: translation
+    text: Fernando III de Toscana
+  - lang: ja
+    role: translation
+    text: フェルディナンド3世
+  - lang: zh
+    role: translation
+    text: 斐迪南三世
+  - lang: ko
+    role: translation
+    text: 토스카나 대공 페르디난도 3세
+  - lang: ru
+    role: translation
+    text: Фердинанд III
+kind: person
+occupations: [politician]
+birth: 1769-05-06
+death: 1824-06-18
+wikidata_id: Q309605
+metadata:
+  sources: [Wikidata Q309605 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Joseph_Dorffmeister_-_Gro%C3%9Fherzog_Ferdinand_III._%281769-1824%29%2C_Sohn_von_Leopold_II.%2C_in_seiner_Bibliothek_sitzend%2C_Kniest%C3%BCck.jpg/1280px-Joseph_Dorffmeister_-_Gro%C3%9Fherzog_Ferdinand_III._%281769-1824%29%2C_Sohn_von_Leopold_II.%2C_in_seiner_Bibliothek_sitzend%2C_Kniest%C3%BCck.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Dorffmeister_-_Gro%C3%9Fherzog_Ferdinand_III._(1769-1824),_Sohn_von_Leopold_II.,_in_seiner_Bibliothek_sitzend,_Kniest%C3%BCck.jpg
+    license: Public domain
+    credit: Joseph Dorffmeister
+identifiers:
+  bnf: 12037631p
+  gnd: "118686763"
+  idref: "070679991"
+  lc: n85002170
+  viaf: "102619573"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q309605
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q309605
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q309605
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q309605

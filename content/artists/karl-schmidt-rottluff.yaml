@@ -1,0 +1,51 @@
+public_id: 101585
+name: Karl Schmidt-Rottluff
+names:
+  - Karl S. Rottluff
+  - Karl Schmidt- Rottluff
+  - Karl Schmidt-Rotluff
+  - Karl Rottluff
+  - S Rottluff
+  - Schmidt-Rottluff
+  - K. Schmidt-Rottluff
+  - lang: ja
+    role: translation
+    text: カール・シュミット＝ロットルフ
+  - lang: zh
+    role: translation
+    text: 卡尔·施密特-罗特卢夫
+  - lang: ko
+    role: translation
+    text: 카를 슈미트 로틀루프
+  - lang: ru
+    role: translation
+    text: Карл Шмидт-Ротлуф
+birth: 1884-12-01
+death: 1976-08-10
+wikidata_id: Q161143
+metadata:
+  sources: [Wikidata Q161143 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Karl_Schmidt_Rottluff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Karl_Schmidt_Rottluff.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 12127491z
+  dome: "345"
+  gnd: "118759795"
+  idref: "029723957"
+  kulturnav: 5b607818-5942-44fb-9f3c-b80f19a2f173
+  lc: n50006738
+  rkd: "70712"
+  ulan: "500005940"
+  viaf: "4964287"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q161143
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q161143

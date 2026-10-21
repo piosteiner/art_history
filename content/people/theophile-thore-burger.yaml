@@ -1,0 +1,65 @@
+public_id: 101775
+name: Théophile Thoré-Bürger
+names:
+  - lang: fr
+    role: original
+    text: Théophile Thoré-Burger
+  - T. Thoré
+  - Thoré-Bürger
+  - W. Bürger
+  - Théophile Etienne Joseph Thoré
+  - Etienne-Joseph-Théophile Thoré
+  - Willem Bürger
+  - Théophile Thoré
+  - T. Thore
+  - Theophile Etienne Joseph Thore
+  - Etienne-Joseph-Theophile Thore
+  - Theophile Thore
+  - Willem Vermeer
+  - Willy Bürger
+  - lang: ja
+    role: translation
+    text: テオフィル・トレ＝ビュルガー
+  - lang: zh
+    role: translation
+    text: 提奧菲爾·托雷-伯格
+  - lang: ru
+    role: translation
+    text: Теофиль Тор-Бюргер
+kind: person
+occupations: [journalist, art historian, art collector, art critic]
+birth: 1807-06-23
+death: 30 April 1869
+wikidata_id: Q933765
+metadata:
+  sources: [Wikidata Q933765 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Th%C3%A9ophile_Thor%C3%A9_by_Nadar.jpg/1280px-Th%C3%A9ophile_Thor%C3%A9_by_Nadar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Th%C3%A9ophile_Thor%C3%A9_by_Nadar.jpg
+    license: Public domain
+    credit: Nadar / Adam Cuerden
+identifiers:
+  bnf: 12737137k
+  gnd: "102430594"
+  idref: "029797578"
+  lc: no89015510
+  rkd: "340988"
+  ulan: "500326948"
+  viaf: "2597399"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q933765
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q933765
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q933765
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q933765

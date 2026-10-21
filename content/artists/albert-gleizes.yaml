@@ -1,0 +1,47 @@
+public_id: 101583
+name: Albert Gleizes
+names:
+  - Albert Leon Gleizes
+  - Albert Léon Gleizes
+  - Gleizes
+  - lang: ja
+    role: translation
+    text: アルベール・グレーズ
+  - lang: zh
+    role: translation
+    text: 阿尔伯特·格列兹
+  - lang: ko
+    role: translation
+    text: 알베르 글레즈
+  - lang: ru
+    role: translation
+    text: Альбер Глез
+birth: 1881-12-08
+death: 1953-06-23
+wikidata_id: Q711903
+metadata:
+  sources: [Wikidata Q711903 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/69/Albert_Gleizes%2C_c.1920%2C_photograph_by_Pierre_Choumoff..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Gleizes,_c.1920,_photograph_by_Pierre_Choumoff..jpg
+    license: Public domain
+    credit: Pierre Choumoff
+identifiers:
+  bnf: "119051726"
+  dome: "142"
+  gnd: "118695363"
+  idref: "026894327"
+  kulturnav: 3759e52d-e573-4ab2-ba6c-e52f6c380840
+  lc: n81013211
+  rkd: "32116"
+  ulan: "500001380"
+  viaf: "66467993"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q711903
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q711903

@@ -1,0 +1,133 @@
+public_id: 101941
+title_lang: it
+title: Primavera
+names:
+  - Spring
+  - Allegory of Spring
+  - lang: en
+    role: original
+    text: Primavera
+  - lang: fr
+    role: translation
+    text: Le Printemps
+  - lang: ja
+    role: translation
+    text: プリマヴェーラ
+  - lang: zh
+    role: translation
+    text: 春
+  - lang: ko
+    role: translation
+    text: 봄
+  - lang: ru
+    role: translation
+    text: Весна
+creator: sandro-botticelli
+created: 1475/1485
+created_label: c. 1480s
+materials: [tempera, panel, plaster]
+dimensions: [203, 314]
+institution: uffizi-gallery
+inventory_number: 1890 n. 8360
+web_url: https://catalogo.uffizi.it/it/29/ricerca/detailiccd/1185170/
+wikidata_id: Q549847
+metadata:
+  sources: [Wikidata Q549847 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg/1280px-Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_Primavera_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Sandro Botticelli
+provenance:
+  - owner: person/lorenzo-di-pierfrancesco-de-medici
+    acquired: c. 1480
+    method: commission
+    place: florence
+    label: painted for Lorenzo “il Popolano”, second cousin of Lorenzo the Magnificent; in his palace in Via Larga (family inventories of 1498, 1503, 1516)
+    sources:
+      - url: https://it.wikipedia.org/wiki/Primavera_%28Botticelli%29
+        note: Il dipinto venne eseguito per Lorenzo il Popolano (1463-1503) […] Gli inventari di famiglia del 1498, 1503 e 1516 hanno anche chiarito la sua collocazione originaria, nel Palazzo di via Larga
+        source: wikipedia-it-primavera
+        accessed: 2026-10-20
+    records:
+      - date: "1498"
+        room: Palazzo di via Larga
+        place: florence
+        document: Medici family inventory
+      - date: "1503"
+        place: florence
+        document: Medici family inventory
+      - date: "1516"
+        place: florence
+        document: Medici family inventory
+  - owner_label: the heirs of Lorenzo di Pierfrancesco de' Medici
+    acquired: 1503
+    method: inheritance
+    place: florence
+    label: in the house in Via Larga at the end of the 15th century, later moved to the villa of Castello, where Vasari described it in 1550
+    sources:
+      - url: https://www.uffizi.it/en/artworks/botticelli-spring
+        note: towards the end of the 15th century, it was to be found in the house in Via Larga (modern-day Via Cavour) that belonged to the heirs of Lorenzo di Pierfrancesco de’ Medici, cousin of Lorenzo the Magnificent. It was later moved to the Villa di Castello, where Giorgio Vasari (1550) describes it together with the Birth of Venus.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner_label: the Medici grand dukes (Guardaroba)
+    place: florence
+    label: by 1815 in the Medici Guardaroba
+    sources:
+      - url: https://it.wikipedia.org/wiki/Primavera_%28Botticelli%29
+        note: Nel 1815 si trovava già nel Guardaroba mediceo
+        source: wikipedia-it-primavera
+        accessed: 2026-10-20
+  - owner: institution/galleria-dell-accademia-florence
+    acquired: 1853
+    ended: 1919
+    method: transfer
+    place: florence
+    label: for the young artists studying at the Academy
+    sources:
+      - url: https://it.wikipedia.org/wiki/Primavera_%28Botticelli%29
+        note: nel 1853 venne trasferita alla Galleria dell'Accademia per lo studio dei giovani artisti che frequentavano la scuola
+        source: wikipedia-it-primavera
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1919
+    method: transfer
+    direct: true
+    place: florence
+    label: with the reorganisation of the Florentine collections
+    sources:
+      - url: https://it.wikipedia.org/wiki/Primavera_%28Botticelli%29
+        note: con il riordino delle collezioni fiorentine venne trasferita agli Uffizi nel 1919.
+        source: wikipedia-it-primavera
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4069615-7
+  viaf: "173901874"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q549847
+  created:
+    - url: https://www.uffizi.it/en/artworks/botticelli-spring
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q549847
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q549847
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q549847
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q549847
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/botticelli-spring
+      source: uffizi-artworks
+      accessed: 2026-10-20

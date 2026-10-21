@@ -1,0 +1,11 @@
+public_id: 101955
+name: Galleria Palatina
+founded: 1833
+wikidata_id: Q866498
+metadata:
+  sources: [Wikidata Q866498 (retrieved 2026-10-20)]
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q866498

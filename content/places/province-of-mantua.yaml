@@ -1,0 +1,16 @@
+public_id: 101730
+name: Province of Mantua
+kind: site
+location: [10.8, 45.16667]
+wikidata_id: Q16204
+metadata:
+  sources: [Wikidata Q16204 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q16204
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q16204

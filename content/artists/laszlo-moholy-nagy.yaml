@@ -1,0 +1,62 @@
+public_id: 101581
+name: László Moholy-Nagy
+names:
+  - lang: hu
+    role: original
+    text: Moholy-Nagy László
+  - László Nagy
+  - László Weisz
+  - Laszlo Moholy-Nagy
+  - Laszlo Nagy
+  - Lazlo Moholy-Nagy
+  - László Moholy- Nagy
+  - Ladislaus Moholy- Nagy
+  - Ladislaus Moholy-Nagy
+  - Lʹaszlʹo Moholy- Nagy
+  - Lʹaszlʹo Moholy-Nagy
+  - L. Moholy-Nagy
+  - Ladislas Moholy-Nagy
+  - Laszlo Weisz
+  - Laszlo Moholy- Nagy
+  - Moholy-Nagy
+  - László Moholy Nagy
+  - lang: ja
+    role: translation
+    text: モホリ＝ナジ・ラースロー
+  - lang: zh
+    role: translation
+    text: 莫霍利-纳吉·拉斯洛
+  - lang: ko
+    role: translation
+    text: 모홀리 나기
+  - lang: ru
+    role: translation
+    text: Ласло Мохой-Надь
+birth: 1895-07-20
+death: 1946-11-24
+wikidata_id: Q160448
+metadata:
+  sources: [Wikidata Q160448 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/L%C3%A1szl%C3%B3_Moholy-Nagy_by_Hugo_Erfurth%2C_c._1930_.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:L%C3%A1szl%C3%B3_Moholy-Nagy_by_Hugo_Erfurth,_c._1930_.jpg
+    license: Public domain
+    credit: Hugo Erfurth
+identifiers:
+  bnf: 12282432n
+  gnd: "118583204"
+  idref: "027272591"
+  lc: n79133790
+  nlk: KAC201817444
+  rkd: "56560"
+  ulan: "500004274"
+  viaf: "22203431"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q160448
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q160448

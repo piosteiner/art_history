@@ -1,0 +1,101 @@
+public_id: 102107
+title_lang: it
+title: Madonna con il Bambino e coro di cherubini (Madonna dei Cherubini)
+names:
+  - lang: en
+    role: original
+    text: Madonna of the Cherubim
+  - The Madonna of the Cherubim
+  - lang: nl
+    role: translation
+    text: Madonna van de cherubijnen
+  - lang: fr
+    role: translation
+    text: La Vierge aux chérubins
+  - lang: de
+    role: translation
+    text: Maria mit Kind und Cherubim
+  - lang: it
+    role: original
+    text: Madonna col Bambino e un coro di cherubini
+  - lang: es
+    role: translation
+    text: Virgen con el Niño y un coro de querubines
+  - lang: ja
+    role: translation
+    text: 聖母子と智天使
+creator: andrea-mantegna
+created: c. 1485
+materials: [oil paint, panel]
+dimensions: [88, 70]
+institution: pinacoteca-di-brera
+inventory_number: "297"
+web_url: https://pinacotecabrera.org/en/collezione-online/opere/madonna-and-child-with-a-choir-of-cherubs/
+wikidata_id: Q1150402
+metadata:
+  sources: [Wikidata Q1150402 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Andrea_Mantegna_109.jpg/1280px-Andrea_Mantegna_109.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_109.jpg
+    license: Public domain
+    credit: Andrea Mantegna
+provenance:
+  - owner_label: Abbot Matteo Bosso
+    method: gift
+    label: probably the panel the artist gave his friend the abbot
+    certainty: probable
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-con-il-bambino-e-coro-di-cherubini-madonna-dei-cherubini/
+        note: corrisponde probabilmente con quella donata dall’artista all’amico abate Matteo Bosso
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: Santa Maria Maggiore, Venice
+    ended: 1808
+    place: venice
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-con-il-bambino-e-coro-di-cherubini-madonna-dei-cherubini/
+        note: giunse a Brera nel 1808 in seguito alle soppressioni napoleoniche dalla chiesa di Santa Maria Maggiore a Venezia.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1808
+    method: confiscation
+    direct: true
+    place: milan
+    label: after the Napoleonic suppressions; attributed to Giovanni Bellini until Luigi Cavenaghi's restoration of 1885
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-con-il-bambino-e-coro-di-cherubini-madonna-dei-cherubini/
+        note: La tavola, attribuita a Giovanni Bellini sino al 1885 quando il restauro di Luigi Cavenaghi permise di riconoscere la mano di Mantegna […] giunse a Brera nel 1808 in seguito alle soppressioni napoleoniche
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1150402
+  created:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-con-il-bambino-e-coro-di-cherubini-madonna-dei-cherubini/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1150402
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1150402
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1150402
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1150402
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1150402
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-con-il-bambino-e-coro-di-cherubini-madonna-dei-cherubini/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

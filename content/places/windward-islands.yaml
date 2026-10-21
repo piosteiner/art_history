@@ -1,0 +1,16 @@
+public_id: 101860
+name: Windward Islands
+kind: region
+location: [-149.833, -17.5333]
+wikidata_id: Q140298
+metadata:
+  sources: [Wikidata Q140298 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q140298
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q140298

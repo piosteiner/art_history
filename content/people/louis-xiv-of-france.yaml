@@ -1,0 +1,76 @@
+public_id: 101765
+name: Louis XIV of France
+names:
+  - lang: fr
+    role: original
+    text: Louis XIV
+  - the Sun King
+  - Louis le Grand Monarque
+  - Lewis the Fourteenth
+  - Louis the Grand Monarch
+  - Sun King
+  - Lewis XIV
+  - Louis le Grand
+  - Louis the Great
+  - lang: nl
+    role: translation
+    text: Lodewijk XIV van Frankrijk
+  - lang: de
+    role: translation
+    text: Ludwig XIV.
+  - lang: it
+    role: translation
+    text: Luigi XIV di Francia
+  - lang: es
+    role: translation
+    text: Luis XIV
+  - lang: ja
+    role: translation
+    text: ルイ14世
+  - lang: zh
+    role: translation
+    text: 路易十四
+  - lang: ko
+    role: translation
+    text: 루이 14세
+  - lang: ru
+    role: translation
+    text: Людовик XIV
+kind: person
+occupations: [politician, art collector, actor, monarch, statesperson]
+birth: 1638-09-05
+death: 1715-09-01
+wikidata_id: Q7742
+metadata:
+  sources: [Wikidata Q7742 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Louis_XIV_of_France.jpg/1280px-Louis_XIV_of_France.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Louis_XIV_of_France.jpg
+    license: Public domain
+    credit: Hyacinthe Rigaud
+identifiers:
+  bnf: 11913463s
+  dodis: P2080
+  gnd: "118816829"
+  idref: "027328848"
+  lc: n80051801
+  rkd: "346039"
+  ulan: "500122256"
+  viaf: "268675767"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q7742
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q7742
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q7742
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q7742

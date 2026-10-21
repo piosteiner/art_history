@@ -1,0 +1,43 @@
+public_id: 101913
+name: San Salvi
+names:
+  - lang: it
+    role: translation
+    text: chiesa di San Michele a San Salvi
+  - lang: ja
+    role: translation
+    text: サン・サルヴィ修道院
+  - lang: zh
+    role: translation
+    text: 圣萨尔维教堂
+  - lang: ko
+    role: translation
+    text: 산 살비
+  - lang: ru
+    role: translation
+    text: Сан-Сальви
+founded: 11th century
+place: florence
+location: [11.28671, 43.77201]
+website_url: http://www.mac.cat/cat/Seus/Barcelona
+wikidata_id: Q692591
+metadata:
+  sources: [Wikidata Q692591 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f8/Chiesa_di_san_salvi.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Chiesa_di_san_salvi.JPG
+    license: CC BY 2.5
+    credit: Sailko
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q692591
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q692591
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q692591

@@ -1,0 +1,47 @@
+public_id: 101892
+name: Jeanne Alexandrine Pommery
+names:
+  - lang: fr
+    role: original
+    text: Louise Pommery
+  - Jeanne Alexandrine Melin
+  - lang: ja
+    role: translation
+    text: ジャンヌ・アレクサンドリーヌ・ポメリー
+  - lang: ru
+    role: translation
+    text: Луиза Поммери
+kind: person
+occupations: [businessperson]
+birth: 1819-04-13
+death: 1890-03-18
+wikidata_id: Q3175961
+metadata:
+  sources: [Wikidata Q3175961 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3e/Louise_Pommery.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Louise_Pommery.JPG
+    license: Public domain
+identifiers:
+  bnf: 12464263s
+  gnd: "119467496"
+  idref: "161852831"
+  lc: n95074973
+  viaf: "17320965"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q3175961
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q3175961
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q3175961
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q3175961

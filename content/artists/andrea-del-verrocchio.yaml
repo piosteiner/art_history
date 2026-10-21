@@ -1,0 +1,18 @@
+public_id: 101948
+name: Andrea del Verrocchio
+given_name: Andrea
+family_name: del Verrocchio
+birth: c. 1435
+death: 1488-10-16
+wikidata_id: Q183458
+metadata:
+  sources: [Wikidata Q183458 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q183458
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q183458

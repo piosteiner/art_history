@@ -1,0 +1,16 @@
+public_id: 101964
+name: Giotto
+birth: 1267
+death: 1337-01-16
+wikidata_id: Q7814
+metadata:
+  sources: [Wikidata Q7814 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q7814
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q7814

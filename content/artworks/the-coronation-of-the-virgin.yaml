@@ -1,0 +1,73 @@
+public_id: 101661
+title: The Coronation of the Virgin
+names:
+  - lang: nl
+    role: translation
+    text: De kroning van Maria
+  - lang: fr
+    role: translation
+    text: Le Couronnement de la Vierge
+  - lang: de
+    role: translation
+    text: Krönung Mariens
+  - lang: it
+    role: translation
+    text: L'Incoronazione della Vergine
+  - lang: es
+    role: translation
+    text: Coronación de la Virgen
+  - lang: ru
+    role: translation
+    text: Коронование Богоматери/Коронация Девы Марии
+creator: antonio-da-fabriano
+created: 1452
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-1097
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1533
+wikidata_id: Q129897100
+metadata:
+  sources: [Wikidata Q129897100 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Antonio_da_Frabriano_-_Coronation_of_the_Virgin%2C_1452.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonio_da_Frabriano_-_Coronation_of_the_Virgin,_1452.jpg
+    license: CC BY-SA 4.0
+    credit: Antonio da Fabriano
+provenance:
+  - owner: person/johann-ii-prince-of-liechtenstein
+    place: vienna
+    notes_md: How the prince acquired it is not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1533
+        note: “Schenkung des Fürsten Johann II. von und zu Liechtenstein, 1882 / Bequest of Prince Johann II. von und zu Liechtenstein, 1882”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1882
+    method: gift
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1533
+        note: “Schenkung des Fürsten Johann II. von und zu Liechtenstein, 1882 / Bequest of Prince Johann II. von und zu Liechtenstein, 1882”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q129897100
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q129897100
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q129897100
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q129897100
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q129897100

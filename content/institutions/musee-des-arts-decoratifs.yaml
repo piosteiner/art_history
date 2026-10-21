@@ -1,0 +1,51 @@
+public_id: 101873
+name: Musée des Arts Décoratifs
+names:
+  - MAD Paris
+  - lang: es
+    role: translation
+    text: Museo de las Artes Decorativas
+  - lang: ja
+    role: translation
+    text: パリ装飾芸術美術館
+  - lang: zh
+    role: translation
+    text: 裝飾藝術博物館
+  - lang: ko
+    role: translation
+    text: 파리 장식미술관
+  - lang: ru
+    role: translation
+    text: Музей декоративного искусства
+founded: 1905-05-29
+place: paris
+location: [2.33372, 48.86303]
+website_url: https://madparis.fr
+wikidata_id: Q1319378
+metadata:
+  sources: [Wikidata Q1319378 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Mus%C3%A9e_des_Arts_D%C3%A9coratifs_2009_001.jpg/1280px-Mus%C3%A9e_des_Arts_D%C3%A9coratifs_2009_001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_des_Arts_D%C3%A9coratifs_2009_001.jpg
+    license: CC BY-SA 2.0
+    credit: Gaël Chardon from Paris, France
+identifiers:
+  bnf: 11877417n
+  gnd: 2019186-8
+  idref: 02654704X
+  lc: n80046802
+  ulan: "500310006"
+  viaf: "130051033"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q1319378
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1319378
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1319378

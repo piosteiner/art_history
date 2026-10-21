@@ -1,0 +1,50 @@
+public_id: 101885
+name: Léonce Bénédite
+names:
+  - Leonce Benedite
+  - lang: ja
+    role: translation
+    text: レオンス・ベネディット
+  - lang: zh
+    role: translation
+    text: 萊昂斯·班內蒂特
+  - lang: ru
+    role: translation
+    text: Леонс Бенедит
+kind: person
+occupations: [art historian, curator, art critic]
+birth: 1859-01-14
+death: 1925-05-12
+wikidata_id: Q731430
+metadata:
+  sources: [Wikidata Q731430 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/L%C3%A9once_b%C3%A9n%C3%A9dite.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:L%C3%A9once_b%C3%A9n%C3%A9dite.jpg
+    license: Public domain
+    credit: Amélie Beaury-Saurel
+identifiers:
+  bnf: "127148063"
+  gnd: "127687955"
+  idref: "059429127"
+  lc: n84090022
+  rkd: "468035"
+  ulan: "500314195"
+  viaf: "79127846"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q731430
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q731430
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q731430
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q731430

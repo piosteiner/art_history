@@ -1,0 +1,109 @@
+public_id: 102041
+title_lang: it
+title: La Verità
+names:
+  - lang: fr
+    role: translation
+    text: La Vérité
+  - lang: de
+    role: translation
+    text: Die Wahrheit
+  - lang: it
+    role: translation
+    text: La Verità
+  - lang: es
+    role: translation
+    text: Verdad descubierta por el Tiempo
+  - lang: zh
+    role: translation
+    text: 真理
+creator: gian-lorenzo-bernini
+created: 1646/1652
+created_label: c. 17th century
+materials: [marble]
+dimensions: [277]
+institution: galleria-borghese
+inventory_number: CCLXXVIII
+web_url: https://galleriaborghese.beniculturali.it/opere/la-verita/
+wikidata_id: Q7848306
+metadata:
+  sources: [Wikidata Q7848306 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/rome
+    period: 1645/1652
+    period_label: c. 17th century
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9c/Bernini_Truth_unveiled_by_Time_Gal_Borghese.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernini_Truth_unveiled_by_Time_Gal_Borghese.jpg
+    license: Public domain
+provenance:
+  - owner: artist/gian-lorenzo-bernini
+    acquired: 1646
+    ended: 1680
+    method: creation
+    place: rome
+    label: made for himself in a difficult time (one of his bell towers of St Peter's pulled down, Innocent X preferring Borromini); meant for a Truth unveiled by Time never finished
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-verita
+        note: La Verità fu realizzata da Gian Lorenzo Bernini per sé stesso in un periodo difficile della sua carriera
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: Bernini's heirs
+    acquired: 1680
+    ended: 1958
+    method: inheritance
+    direct: true
+    place: rome
+    label: they sold the block meant for Time after his death
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-verita
+        note: Gian Lorenzo Bernini, 1646; poi Eredi Bernini; Deposito Galleria Borghese, 1924. Acquisto dello Stato italiano, 1958.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/galleria-borghese
+    role: custodian
+    acquired: 1924
+    ended: 1958
+    place: rome
+    label: deposited by the heirs at the Galleria Borghese
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-verita
+        note: Deposito Galleria Borghese, 1924.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/galleria-borghese
+    acquired: 1958
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-verita
+        note: Acquisto dello Stato italiano, 1958.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q7848306
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/la-verita
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q7848306
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q7848306
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q7848306
+  inventory_number:
+    - url: https://www.collezionegalleriaborghese.it/opere/la-verita
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

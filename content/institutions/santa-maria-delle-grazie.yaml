@@ -1,0 +1,11 @@
+public_id: 102137
+name: Santa Maria delle Grazie
+founded: 1401/1500
+wikidata_id: Q244952
+metadata:
+  sources: [Wikidata Q244952 (retrieved 2026-10-20)]
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q244952

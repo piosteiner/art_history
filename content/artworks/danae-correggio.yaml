@@ -1,0 +1,258 @@
+public_id: 102054
+title_lang: it
+title: Danae
+names:
+  - lang: en
+    role: original
+    text: Danae
+  - lang: fr
+    role: translation
+    text: Danaé
+  - lang: es
+    role: translation
+    text: Dánae
+  - lang: ja
+    role: translation
+    text: ダナエ
+  - lang: zh
+    role: translation
+    text: 達那厄 (科雷吉歐)
+parent: the-loves-of-jupiter
+creator: antonio-da-correggio
+created: 1530/1531
+created_label: c. 1530s
+materials: [oil paint, canvas]
+dimensions: [158, 189]
+institution: galleria-borghese
+inventory_number: "125"
+web_url: https://www.collezionegalleriaborghese.it/opere/danae
+wikidata_id: Q1408753
+metadata:
+  sources: [Wikidata Q1408753 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bd/Correggio_008.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Correggio_008.jpg
+    license: Public domain
+    credit: Antonio da Correggio
+provenance:
+  - owner: person/federico-ii-gonzaga-duke-of-mantua
+    acquired: 1530
+    method: commission
+    place: mantova
+    label: one of Correggio's four Loves of Jupiter for the Duke of Mantua
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: fa parte di una nota serie di quattro tele dedicata agli amori di Giove, realizzata dal Correggio per il duca di Mantova Federico II Gonzaga e da questi donata a Carlo V
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/charles-v
+    acquired: 1530/1532
+    method: gift
+    direct: true
+    place: madrid
+    label: given by Federico Gonzaga perhaps at Bologna in 1530, more probably in November 1532, when the emperor stayed in Mantua
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: da questi donata a Carlo V, forse a Bologna nel 1530 o più verosimilmente nel novembre del 1532, anno in cui il sovrano soggiornò nel capoluogo mantovano.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/antonio-perez
+    place: madrid
+    certainty: possible
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: (?) Madrid, collezione Antonio Pérez, 1585 (Delaforce 1982)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: artist/leone-leoni
+    acquired: before 1584
+    place: milan
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Milano, Leone Leoni, 1584 (Lomazzo 1584)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/emperor-rudolf-ii
+    acquired: before 1601
+    place: prague
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Praga, collezione Rodolfo II, 1601 (cfr. da ultimo Rudolf 2002)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: the imperial collections, Prague
+    acquired: 1612
+    method: inheritance
+    place: prague
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Praga, collezioni imperiali, 1621 (Zimmermann 1905)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1621"
+        place: prague
+        document: inventory of the imperial collections (Zimmermann 1905)
+  - owner: person/christina-of-sweden
+    further_places:
+      - place: rome
+        date: "1655"
+    acquired: 1648/1652
+    method: spoils_of_war
+    place: stockholm
+    label: in Stockholm by 1652 — the Prague imperial collections were taken by the Swedes in 1648; in Rome with the queen (1673)
+    certainty: probable
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Praga, collezioni imperiali, 1621 (Zimmermann 1905); Stoccolma, 1652; Roma, collezione Cristina di Svezia, 1673 (Silos 1673)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/decio-azzolino
+    acquired: 1689
+    ended: 1689
+    method: bequest
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Roma, collezione Decio Azzolini, 1689
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: Livio Odescalchi
+    acquired: 1696
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Roma, collezione Livio Odescalchi, 1696
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: Baldassarre Erba Odescalchi
+    ended: 1721
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Roma, collezione Baldassarre Erba Odescalchi, fino al 1721
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/pierre-crozat
+    acquired: 1721
+    method: purchase
+    place: paris
+    label: bought in France by Crozat (for the Duke of Orléans)
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Francia, acquisto di Pierre Crozat, 1721
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/philippe-ii-duke-of-orleans
+    acquired: 1721/1727
+    ended: 1780
+    place: paris
+    label: the Orléans collection, from 1727 to 1780
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: collezione Filippo II d'Orleans, dal 1727 al 1780 (Gould 1976; Staccioli 1991)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: the Duke of Bridgewater
+    acquired: before 1816
+    place: london
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Londra, duca di Bridgewater, 1816
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/henry-philip-hope
+    acquired: before 1823
+    place: london
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Londra, Henry Hope, 1823
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: artist/fereol-bonnemaison
+    role: dealer
+    acquired: 1823
+    ended: 1827
+    place: paris
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Parigi, presso antiquario Bonnemaison, 1823-27
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/camillo-borghese
+    further_places: [rome]
+    acquired: 1827
+    ended: 1832
+    method: purchase
+    place: paris
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Parigi, poi Roma, acquisto di Camillo Borghese, 1827
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1832
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: "Provenienza: Mantova, Federico II Gonzaga, 1530-31; Madrid, presso Carlo V, 1530/32 (Gould 1976); (?) Madrid, collezione Antonio Pérez, 1585 (Delaforce 1982); Milano, Leone Leoni, 1584 (Lomazzo 1584); Praga, collezione Rodolfo II, 1601 (cfr. da ultimo Rudolf 2002); Praga, collezioni imperiali, 1621 (Zimmermann 1905); Stoccolma, 1652; Roma, collezione Cristina di Svezia, 1673 (Silos 1673); Roma, collezione Decio Azzolini, 1689; Roma, collezione Livio Odescalchi, 1696; Roma, collezione Baldassarre Erba Odescalchi, fino al 1721; Francia, acquisto di Pierre Crozat, 1721; collezione Filippo II d'Orleans, dal 1727 al 1780 (Gould 1976; Staccioli 1991); Londra, duca di Bridgewater, 1816; Londra, Henry Hope, 1823; Parigi, presso antiquario Bonnemaison, 1823-27; Parigi, poi Roma, acquisto di Camillo Borghese, 1827; Inventario Fidecommissario Borghese 1833 (Inventario Fid. p. 13, n. 42). Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833 (Inventario Fid
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/danae
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1408753
+  parent:
+    - accessed: 2026-10-20
+      property: P179
+      wikidata: Q1408753
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1408753
+    - url: https://www.collezionegalleriaborghese.it/opere/danae
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1408753
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1408753
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1408753
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1408753
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1408753
+    - url: https://www.collezionegalleriaborghese.it/opere/danae
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

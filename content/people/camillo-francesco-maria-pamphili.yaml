@@ -1,0 +1,58 @@
+public_id: 101744
+name: Camillo Francesco Maria Pamphili, 1st Prince of San Martino al Cimino and Valmontone
+names:
+  - lang: it
+    role: original
+    text: Camillo Francesco Maria Pamphili
+  - Camillo Francesco Maria Pamphilꟾ
+  - Camillo Francesco Maria Pamphilj
+  - lang: fr
+    role: translation
+    text: Camillo Pamphili, I prince de San Martino al Cimino et Valmontone
+  - lang: it
+    role: original
+    text: Camillo Francesco Maria Pamphili, I principe di San Martino al Cimino e Valmontone
+  - lang: ja
+    role: translation
+    text: カミッロ・パンフィリ
+  - lang: zh
+    role: translation
+    text: 卡米洛·弗朗切斯科·瑪麗亞·潘菲利
+  - lang: ru
+    role: translation
+    text: Камилло Франческо Мария Памфили
+kind: person
+occupations: [Catholic priest, Catholic bishop]
+birth: 1622-02-21
+death: 1666-07-26
+wikidata_id: Q2935138
+metadata:
+  sources: [Wikidata Q2935138 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/37/Ritratto_in_Armatura_del_Principe_Camillo_Pamphilj.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ritratto_in_Armatura_del_Principe_Camillo_Pamphilj.jpg
+    license: Public domain
+    credit: Baciccio
+identifiers:
+  gnd: "131602721"
+  idref: "131577751"
+  lc: n2003010757
+  rkd: "443918"
+  viaf: "72529554"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q2935138
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q2935138
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q2935138
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q2935138

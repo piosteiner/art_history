@@ -1,0 +1,56 @@
+public_id: 101752
+name: Everhard Jabach
+names:
+  - Evrard Jabach
+  - Everard Jabaque
+  - Evrard Jabaque
+  - Everard Jabach
+  - Everard Jabacque
+  - Eberhardt Jabaque
+  - Eberhardt Jabach
+  - lang: de
+    role: translation
+    text: Eberhard Jabach
+  - lang: ja
+    role: translation
+    text: エバーハルト・ジャバッハ
+  - lang: ru
+    role: translation
+    text: Эбергард Ябах
+kind: person
+occupations: [banker, art collector]
+birth: 1618-07-10
+death: 1695-03-06
+wikidata_id: Q103934
+metadata:
+  sources: [Wikidata Q103934 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Ch%C3%A2teau_de_Bussy-Rabutin_-_Everhard_Jabach%2C_dit_l%27homme_aux_gants_gris_%28bgw19_0341%29_%28cropped%29.jpg/1280px-Ch%C3%A2teau_de_Bussy-Rabutin_-_Everhard_Jabach%2C_dit_l%27homme_aux_gants_gris_%28bgw19_0341%29_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ch%C3%A2teau_de_Bussy-Rabutin_-_Everhard_Jabach,_dit_l%27homme_aux_gants_gris_(bgw19_0341)_(cropped).jpg
+    license: Public domain
+    credit: Benjamin Gavaudo
+identifiers:
+  bnf: 12488669b
+  gnd: "122266994"
+  idref: "060389680"
+  lc: n82119141
+  rkd: "431893"
+  ulan: "500319985"
+  viaf: "45178547"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q103934
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q103934
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q103934
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q103934

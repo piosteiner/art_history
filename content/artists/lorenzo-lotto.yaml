@@ -1,0 +1,18 @@
+public_id: 102117
+name: Lorenzo Lotto
+given_name: Lorenzo
+family_name: Lotto
+birth: 1480
+death: 1556
+wikidata_id: Q310973
+metadata:
+  sources: [Wikidata Q310973 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q310973
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q310973

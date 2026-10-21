@@ -1,0 +1,57 @@
+public_id: 102183
+name: Gallerie dell'Accademia
+names:
+  - Accademia
+  - Venice Academy Gallery
+  - lang: fr
+    role: translation
+    text: Galeries de l'Académie
+  - lang: es
+    role: translation
+    text: Galería de la Academia de Venecia
+  - lang: ja
+    role: translation
+    text: アカデミア美術館
+  - lang: zh
+    role: translation
+    text: 學院美術館
+  - lang: ko
+    role: translation
+    text: 아카데미아 미술관
+  - lang: ru
+    role: translation
+    text: Галерея Академии (Венеция)
+founded: 1750
+place: venice
+location: [12.32814, 45.43108]
+address: Campo della Carità, Dorsoduro 1050, Venezia
+website_url: http://www.gallerieaccademia.it/
+wikidata_id: Q338330
+metadata:
+  sources: [Wikidata Q338330 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Accademia_%28Venice%29.jpg/1280px-Accademia_%28Venice%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Accademia_(Venice).jpg
+    license: CC BY-SA 4.0
+    credit: Didier Descouens
+identifiers:
+  gnd: 2121572-8
+  lc: n83215494
+  viaf: "145358176"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q338330
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q338330
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q338330
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q338330

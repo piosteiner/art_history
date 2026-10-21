@@ -1,0 +1,38 @@
+public_id: 101875
+name: American Art Association
+names:
+  - lang: ja
+    role: translation
+    text: アメリカン・アート・アソシエーション
+  - lang: ru
+    role: translation
+    text: Американская художественная ассоциация
+founded: 1883
+dissolved: 1929
+place: new-york-city
+address: 6 East 23rd Street
+wikidata_id: Q16961275
+metadata:
+  sources: [Wikidata Q16961275 (retrieved 2026-10-20)]
+identifiers:
+  idref: "142816191"
+  lc: n80020591
+  ulan: "500303689"
+  viaf: "144775553"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q16961275
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q16961275
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q16961275
+  dissolved:
+    - accessed: 2026-10-20
+      property: P576
+      wikidata: Q16961275

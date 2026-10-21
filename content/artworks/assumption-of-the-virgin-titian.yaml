@@ -1,0 +1,106 @@
+public_id: 102160
+title_lang: it
+title: Assunta
+names:
+  - Assumption of the Virgin Mary
+  - Frari Assumption
+  - Assumption
+  - lang: nl
+    role: translation
+    text: Maria Hemelvaart
+  - lang: fr
+    role: translation
+    text: L'Assomption de la Vierge
+  - lang: de
+    role: translation
+    text: Mariä Himmelfahrt
+  - lang: it
+    role: translation
+    text: Assunta
+  - lang: es
+    role: translation
+    text: La Asunción de la Virgen
+  - lang: ja
+    role: translation
+    text: 聖母被昇天 (ティツィアーノ)
+  - lang: zh
+    role: translation
+    text: 聖母升天
+  - lang: ko
+    role: translation
+    text: 성모 승천
+  - lang: ru
+    role: translation
+    text: Успение Богородицы
+creator: titian
+created: 1516/1518
+created_label: c. 1510s
+materials: [oil paint, panel]
+dimensions: [668, 344]
+institution: santa-maria-gloriosa-dei-frari
+web_url: https://www.basilicadeifrari.it/en/opere/assunta/
+location: [12.32649, 45.43693]
+wikidata_id: Q1899740
+metadata:
+  sources: [Wikidata Q1899740 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Tizian_041.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tizian_041.jpg
+    license: Public domain
+    credit: Titian
+provenance:
+  - owner: institution/santa-maria-gloriosa-dei-frari
+    acquired: 1516
+    method: commission
+    place: venice
+    label: commissioned by the prior, Father Germano, for the high altar; unveiled on 20 March 1518 (Sanudo) — the friars nearly refused it until the Austrian ambassador, Charles V's envoy, offered to buy it
+    sources:
+      - url: https://it.wikipedia.org/wiki/Assunta_%28Tiziano%29
+        note: Nel 1516 il priore del convento francescano dei Frari, padre Germano, commissionò una nuova pala a Tiziano per l'altare maggiore […] Il 20 marzo 1518, come ricorda il Sanudo, l'opera fu solennemente inaugurata […] I frati stavano infatti per rifiutarla, se non fosse stato per l'ambasciatore austriaco, emissario dell'imperatore Carlo V, che si offrì di acquistarla
+        source: wikipedia-it-assunta-tiziano
+        accessed: 2026-10-20
+  - owner: institution/gallerie-dell-accademia-venice
+    role: custodian
+    acquired: 1818
+    ended: 1919
+    place: venice
+    label: kept in deposit at the Accademia after the Napoleonic suppressions
+    sources:
+      - url: https://it.wikipedia.org/wiki/Assunta_%28Tiziano%29
+        note: In seguito alle soppressioni napoleoniche, fu tenuta in deposito alle Gallerie dell'Accademia per un secolo, dal 1818 al 1919.
+        source: wikipedia-it-assunta-tiziano
+        accessed: 2026-10-20
+  - owner: institution/santa-maria-gloriosa-dei-frari
+    acquired: 1919
+    method: restitution
+    place: venice
+    label: back on the high altar, “today as then”
+    sources:
+      - url: https://it.wikipedia.org/wiki/Assunta_%28Tiziano%29
+        note: conservato nella basilica di Santa Maria Gloriosa dei Frari a Venezia, dove decora, oggi come allora, l'altare centrale.
+        source: wikipedia-it-assunta-tiziano
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1899740
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1899740
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1899740
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1899740
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1899740
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1899740

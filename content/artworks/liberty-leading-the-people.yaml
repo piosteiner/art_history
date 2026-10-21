@@ -1,0 +1,153 @@
+public_id: 101691
+title_lang: fr
+title: Le 28 juillet 1830. La Liberté guidant le peuple
+names:
+  - lang: en
+    role: original
+    text: Liberty Leading the People
+  - lang: cs
+    role: original
+    text: Svoboda vede lid na barikády
+  - lang: nl
+    role: translation
+    text: De Vrijheid leidt het volk
+  - lang: fr
+    role: original
+    text: La Liberté guidant le peuple
+  - lang: de
+    role: translation
+    text: Die Freiheit führt das Volk
+  - lang: it
+    role: translation
+    text: La Libertà che guida il popolo
+  - lang: es
+    role: translation
+    text: La Libertad guiando al pueblo
+  - lang: ja
+    role: translation
+    text: 民衆を導く自由の女神
+  - lang: zh
+    role: translation
+    text: 自由引导人民
+  - lang: ko
+    role: translation
+    text: 민중을 이끄는 자유의 여신
+  - lang: ru
+    role: translation
+    text: Свобода, ведущая народ
+creator: eugene-delacroix
+created: 1830
+created_label: c. 1830
+materials: [oil paint, canvas]
+dimensions: [260, 325]
+institution: department-of-paintings-of-the-louvre
+inventory_number: RF 129
+web_url: http://www.histoire-image.org/site/oeuvre/analyse.php?i=234
+wikidata_id: Q29530
+metadata:
+  sources: [Wikidata Q29530 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg/1280px-La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_Libert%C3%A9_guidant_le_peuple_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_129_-_apr%C3%A8s_restauration_2024.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+provenance:
+  - owner: artist/eugene-delacroix
+    acquired: 1830-09
+    ended: 1831-08
+    method: creation
+    place: paris
+    label: painted September–December 1830 in his rented studio, 15 quai Voltaire; Salon of 1831, no. 511
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065872
+        note: Peint de septembre à décembre 1830 dans l'atelier loué par Eugène Delacroix au 15 (actuel n°17 ?) quai Voltaire, à Paris ; […] exposé au Salon de 1831 (ouvert du 1er mai au 15 août), Paris, Musée royal (Louvre), n° 511 du livret
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - kind: exhibition
+        date: 1831-05
+        note: « Le 28 juillet. La liberté guidant le peuple »
+        place: paris
+        number: "511"
+        document: Salon de 1831
+  - owner_label: French State (Ministry of Commerce and Public Works)
+    acquired: 1831-08
+    method: purchase
+    direct: true
+    place: paris
+    label: bought from the artist instead of a commissioned history painting; shown at the Musée du Luxembourg 1832–1833, then put in store
+    price:
+      amount: 3000
+      currency: AFRF
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065872
+        note: finalement acheté à l'artiste par le ministère du Commerce et des Travaux publics en août 1831, au prix de 3 000 francs […] présenté au musée du Luxembourg, Paris, en 1832 et en 1833 […] mis en réserve vers 1833-1834
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: artist/eugene-delacroix
+    role: custodian
+    acquired: c. 1839
+    ended: 1849-03
+    place: frepillon
+    label: entrusted to the artist, who kept it at his aunt Félicité Riesener's house at Frépillon; reclaimed March 1848; lent by him to Alphonse Jame for Lyon, May 1848 – March 1849
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065872
+        note: confié à l'artiste vers 1839 qui le met en dépôt au domicile de sa tante, Félicité Riesener, et de son cousin Léon Riesener, à Frépillon (Val-d'Oise) ; réclamé à l'artiste par la direction des Musées nationaux (ministère de l'Intérieur) en mars 1848 […] restitué à l'administration en mars 1849
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/luxembourg-museum
+    role: custodian
+    acquired: 1863
+    ended: 1874-11
+    place: paris
+    label: in store at the Louvre 1850–1855; Exposition universelle 1855; in store 1856–1863; shown at the Musée du Luxembourg 1863–1874
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065872
+        note: présenté au musée du Luxembourg, Paris, de 1863 à 1874 ; déplacé du musée du Luxembourg au musée du Louvre en novembre 1874
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1874-11
+    method: transfer
+    direct: true
+    place: paris
+    label: inventoried R.F. 129 in 1875; evacuated to the Jacobins at Toulouse 1914–1918, to Chambord 1939 and Sourches 1943, back 16 June 1945
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065872
+        note: déplacé du musée du Luxembourg au musée du Louvre en novembre 1874 ; inventorié pour la première fois, sous le n° "R.F. 129", en 1875
+        source: louvre-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4275137-8
+  viaf: "184003081"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q29530
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010065872
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q29530
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q29530
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q29530
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q29530
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q29530
+    - url: https://collections.louvre.fr/ark:/53355/cl010065872
+      source: louvre-collections
+      accessed: 2026-10-20

@@ -1,0 +1,71 @@
+public_id: 102171
+title_lang: fr
+title: La Lutte de Jacob avec l'Ange
+names:
+  - lang: fr
+    role: translation
+    text: La Lutte de Jacob avec l'Ange
+  - lang: de
+    role: translation
+    text: "Wandgemälde für Saint-Sulpice in Paris, Kapelle der Heiligen Engel, Szene: Jakobs Kampf mit dem Engel"
+  - lang: it
+    role: translation
+    text: Lotta di Giacobbe con l'angelo
+  - lang: ja
+    role: translation
+    text: 天使とヤコブの闘い
+creator: eugene-delacroix
+created: 1855/1861
+materials: [oil paint, plaster, wax]
+dimensions: [751, 485]
+institution: church-of-saint-sulpice
+location: [2.33492, 48.851]
+wikidata_id: Q3837491
+metadata:
+  sources: [Wikidata Q3837491 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Eug%C3%A8ne_Delacroix_%E2%80%94_Jacob_Wrestling_with_the_Angel.jpg/1280px-Eug%C3%A8ne_Delacroix_%E2%80%94_Jacob_Wrestling_with_the_Angel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Delacroix_%E2%80%94_Jacob_Wrestling_with_the_Angel.jpg
+    license: Public domain
+    credit: Gleb Simonov
+provenance:
+  - owner_label: City of Paris
+    acquired: 1849-04
+    method: commission
+    place: paris
+    label: a commission of the City for the Chapelle des Saints-Anges in Saint-Sulpice; painted mainly 1855–1861, unveiled 31 July 1861; listed as a historic monument (object) since 1908
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Lutte_de_Jacob_avec_l%27Ange_%28Delacroix%29
+        note: Sur une commande de la Ville de Paris passée en avril 1849, Delacroix travaille dans la chapelle des Saints-Anges principalement de 1855 à 1861. […] Enfin les deux peintures murales sont dévoilées le 31 juillet 1861
+        source: wikipedia-fr-saint-sulpice-delacroix
+        accessed: 2026-10-20
+  - owner: institution/church-of-saint-sulpice
+    role: custodian
+    acquired: 31 July 1861
+    place: paris
+    label: on the walls of the Chapelle des Saints-Anges
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Lutte_de_Jacob_avec_l%27Ange_%28Delacroix%29
+        note: pour la chapelle des Saints-Anges à l'église Saint-Sulpice de Paris
+        source: wikipedia-fr-saint-sulpice-delacroix
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q3837491
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q3837491
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q3837491
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q3837491
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q3837491

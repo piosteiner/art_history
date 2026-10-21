@@ -1,0 +1,39 @@
+public_id: 101726
+name: Fontainebleau
+names:
+  - Fontaine-la-Montagne
+  - Fontaine-le-Vallon
+  - lang: ja
+    role: translation
+    text: フォンテーヌブロー
+  - lang: zh
+    role: translation
+    text: 枫丹白露
+  - lang: ko
+    role: translation
+    text: 퐁텐블로
+  - lang: ru
+    role: translation
+    text: Фонтенбло
+kind: settlement
+parent: seine-et-marne
+country_code: FR
+location: [2.70167, 48.40889]
+wikidata_id: Q182872
+metadata:
+  sources: [Wikidata Q182872 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4093055-5
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q182872
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q182872
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q182872

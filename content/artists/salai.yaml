@@ -1,0 +1,64 @@
+public_id: 101779
+name: Salaì
+names:
+  - Gian Giacomo Caprotti da Oreno
+  - Andrea Salai
+  - Andrea Salario
+  - Salaj
+  - Gian Giacomo Caprotti
+  - Salai
+  - Andrea Salaj
+  - Salaì Caprotti
+  - Andrea Solano
+  - Andrea Salaino
+  - Gian Giacomo De' Caprotti
+  - Andrea Da Salerno Salaj
+  - Andrea Salcino
+  - Andrea Sallai
+  - Gian Giacomo Salai
+  - Andrea da Salerno (Salaj)
+  - Gian Giacomo de Caprotti
+  - Salai Caprotti
+  - A. Salaino
+  - Salcino
+  - or Salaino Andrea Salai
+  - or Saliano Andrea Salai
+  - Salaino
+  - Salcino scuolaro di Leonardo
+  - Salaine
+  - lang: ja
+    role: translation
+    text: ジャン・ジャコモ・カプロッティ
+  - lang: zh
+    role: translation
+    text: 吉安·贾科莫·卡普罗蒂·达奥雷诺
+  - lang: ru
+    role: translation
+    text: Салаи
+birth: 1480
+death: 1524-01-29
+wikidata_id: Q954126
+metadata:
+  sources: [Wikidata Q954126 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Leonardo_Salai.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Leonardo_Salai.JPG
+    license: Public domain
+    credit: Leonardo da Vinci
+identifiers:
+  bnf: 14966299d
+  gnd: "118860305"
+  kulturnav: 0b476110-f198-443d-befa-e67a5d5d530c
+  lc: no91011076
+  rkd: "69342"
+  ulan: "500115891"
+  viaf: "59881627"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q954126
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q954126

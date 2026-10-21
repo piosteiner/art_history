@@ -1,0 +1,127 @@
+public_id: 101942
+title_lang: it
+title: Venere di Urbino
+names:
+  - lang: en
+    role: original
+    text: Venus of Urbino
+  - lang: nl
+    role: translation
+    text: Venus van Urbino
+  - lang: fr
+    role: translation
+    text: Vénus d'Urbin
+  - lang: de
+    role: translation
+    text: Venus von Urbino
+  - lang: es
+    role: translation
+    text: Venus de Urbino
+  - lang: ja
+    role: translation
+    text: ウルビーノのヴィーナス
+  - lang: zh
+    role: translation
+    text: 乌尔比诺的维纳斯
+  - lang: ko
+    role: translation
+    text: 우르비노의 비너스
+  - lang: ru
+    role: translation
+    text: Венера Урбинская
+creator: titian
+created: 1538
+materials: [oil paint, canvas]
+dimensions: [119, 165.5]
+institution: uffizi-gallery
+inventory_number: 1890 no. 1437
+web_url: https://www.uffizi.it/en/artworks/venus-urbino-titian
+wikidata_id: Q727875
+metadata:
+  sources: [Wikidata Q727875 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Tiziano%27s_Venere_di_Urbino_%28from_The_History_BLog%29.jpg/1280px-Tiziano%27s_Venere_di_Urbino_%28from_The_History_BLog%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tiziano%27s_Venere_di_Urbino_(from_The_History_BLog).jpg
+    license: Public domain
+    credit: Titian
+provenance:
+  - owner: artist/titian
+    acquired: 1538
+    ended: 1538
+    method: creation
+    place: venice
+    label: kept in the painter's workshop until Guidobaldo found the money (his mother, Eleonora Gonzaga, would not pay)
+    sources:
+      - url: https://it.wikipedia.org/wiki/Venere_di_Urbino
+        note: così il dipinto restò nella bottega del pittore e Guidobaldo, preoccupato che fosse venduto ad altri, assicurò che avrebbe pagato anche a costo di impegnare qualcosa di suo.
+        source: wikipedia-it-venere-di-urbino
+        accessed: 2026-10-20
+  - owner: person/guidobaldo-ii-della-rovere
+    acquired: 1538
+    method: purchase
+    direct: true
+    place: urbino
+    label: bought directly from Titian, as a letter of 1538 shows
+    sources:
+      - url: https://www.uffizi.it/en/artworks/venus-urbino-titian
+        note: As certified in a letter dated 1538, the painting of the “naked woman” was bought directly from Titian by Guidobaldo II della Rovere
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: person/vittoria-della-rovere
+    acquired: 1631
+    method: inheritance
+    place: florence
+    label: the last of the Della Rovere; brought to Florence with her dowry on her marriage to Ferdinando II de' Medici — certainly at the villa of Poggio Imperiale in 1654–1655
+    sources:
+      - url: https://www.uffizi.it/en/artworks/venus-urbino-titian
+        note: it was taken to Florence as part of Vittoria della Rovere’s dowry, the last member of the family and wife of Grand Duke of Tuscany, Ferdinando II de’ Medici.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Venere_di_Urbino
+        note: Nel 1631 Vittoria della Rovere, ultima discendente della dinastia, si sposò con Ferdinando II de' Medici portando a Firenze inestimabili capolavori del ducato urbinate […] nel 1654-1655 era invece con sicurezza alla villa di Poggio Imperiale. Dal 1694 è conservata nella galleria.
+        source: wikipedia-it-venere-di-urbino
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1694
+    method: transfer
+    place: florence
+    label: in the gallery since 1694, long in the Tribune beside the Medici Venus
+    sources:
+      - url: https://it.wikipedia.org/wiki/Venere_di_Urbino
+        note: Dal 1694 è conservata nella galleria.
+        source: wikipedia-it-venere-di-urbino
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4467404-1
+  viaf: "186016342"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q727875
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q727875
+    - url: https://www.uffizi.it/en/artworks/venus-urbino-titian
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q727875
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q727875
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q727875
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q727875
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/venus-urbino-titian
+      source: uffizi-artworks
+      accessed: 2026-10-20

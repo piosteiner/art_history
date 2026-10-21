@@ -1,0 +1,63 @@
+public_id: 101935
+name: Francesco Maria del Monte
+names:
+  - lang: it
+    role: original
+    text: Francesco del Monte
+  - Francesco Maria Bourbon del Monte
+  - Francesco Maria, Cardinal Bourbon del Monte
+  - Cardinal Francesco Maria Bourbon del Monte
+  - lang: it
+    role: original
+    text: Francesco Maria Bourbon del Monte Santa Maria
+  - lang: es
+    role: translation
+    text: Francesco María Del Monte
+  - lang: ja
+    role: translation
+    text: フランチェスコ・マリア・デル・モンテ
+  - lang: zh
+    role: translation
+    text: 方濟各·瑪利亞·德爾·蒙特
+  - lang: ko
+    role: translation
+    text: 프란체스코 마리아 델 몬테
+  - lang: ru
+    role: translation
+    text: Франческо дель Монте
+kind: person
+occupations: [art collector, Catholic priest, diplomat]
+birth: 1549-07-15
+death: 1627-08-27
+wikidata_id: Q140106
+metadata:
+  sources: [Wikidata Q140106 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ottavio_Leoni_-_Francesco_Maria_del_Monte.jpg/1280px-Ottavio_Leoni_-_Francesco_Maria_del_Monte.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ottavio_Leoni_-_Francesco_Maria_del_Monte.jpg
+    license: Public domain
+    credit: Ottavio Leoni
+identifiers:
+  bnf: "124695796"
+  gnd: "119310562"
+  idref: "033884285"
+  lc: n95049441
+  ulan: "500314789"
+  viaf: "45108742"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q140106
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q140106
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q140106
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q140106

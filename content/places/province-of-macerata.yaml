@@ -1,0 +1,16 @@
+public_id: 102065
+name: Province of Macerata
+kind: site
+location: [13.4533, 43.30025]
+wikidata_id: Q16203
+metadata:
+  sources: [Wikidata Q16203 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q16203
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q16203

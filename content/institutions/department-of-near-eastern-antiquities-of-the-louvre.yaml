@@ -1,0 +1,8 @@
+public_id: 101710
+name: Department of Near Eastern Antiquities of the Louvre
+wikidata_id: Q3044751
+metadata:
+  sources: [Wikidata Q3044751 (retrieved 2026-10-20)]
+relationships:
+  - type: part_of
+    to: institution/musee-du-louvre

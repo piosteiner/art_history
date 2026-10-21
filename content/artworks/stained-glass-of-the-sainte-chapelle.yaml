@@ -1,0 +1,62 @@
+public_id: 102176
+title_lang: fr
+title: Verrières de la Sainte-Chapelle
+names:
+  - Stained glass windows of Sainte-Chapelle de Vincennes
+  - lang: fr
+    role: translation
+    text: Vitraux de la Sainte-Chapelle du Palais
+  - lang: de
+    role: translation
+    text: Fenster der Sainte-Chapelle (Vincennes)
+created: c. 1243–1248
+institution: sainte-chapelle
+location: [2.43636, 48.84235]
+wikidata_id: Q24940224
+metadata:
+  sources: [Wikidata Q24940224 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/vincennes
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Santa_Capilla%2C_Par%C3%ADs%2C_Francia%2C_2022-11-01%2C_DD_80-82_HDR.jpg/1280px-Santa_Capilla%2C_Par%C3%ADs%2C_Francia%2C_2022-11-01%2C_DD_80-82_HDR.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Santa_Capilla,_Par%C3%ADs,_Francia,_2022-11-01,_DD_80-82_HDR.jpg
+    license: CC BY-SA 4.0
+    credit: Diego Delso
+provenance:
+  - owner: person/louis-ix-of-france
+    acquired: c. 1243
+    method: commission
+    place: paris
+    label: for the upper chapel of the palace chapel built to keep the Crown of Thorns and the relics of the Passion he had acquired from 1239
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Sainte-Chapelle
+        note: La Sainte-Chapelle […] est une chapelle palatine édifiée sur l’île de la Cité, à Paris […] à la demande de saint Louis afin d’abriter la Sainte Couronne d’épines, un morceau de la Vraie Croix, ainsi que diverses autres reliques de la Passion qu’il avait acquises à partir de 1239.
+        source: wikipedia-fr-sainte-chapelle
+        accessed: 2026-10-20
+  - owner_label: archive depot of the Palais de Justice
+    role: event
+    acquired: 1797
+    place: paris
+    label: stripped of its relics in the Revolution, turned into an archive depot; its rescue decided in 1836, restored from 1837 for 26 years; listed in 1862
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Sainte-Chapelle
+        note: elle a été privée de ses reliques à la Révolution française […] En 1797, elle est transformée en dépôt d'archives du Palais de Justice, et l'expansion de celui-ci menace son existence même. Son sauvetage est décidé en 1836 sous la pression de l'opinion publique, et sa restauration est lancée un an plus tard et dure vingt-six ans.
+        source: wikipedia-fr-sainte-chapelle
+        accessed: 2026-10-20
+  - owner: institution/centre-des-monuments-nationaux
+    role: custodian
+    place: paris
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Sainte-Chapelle
+        note: Elle est gérée par le centre des monuments nationaux
+        source: wikipedia-fr-sainte-chapelle
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q24940224
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q24940224

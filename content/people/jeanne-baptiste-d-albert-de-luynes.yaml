@@ -1,0 +1,56 @@
+public_id: 101759
+name: Jeanne Baptiste d'Albert de Luynes
+names:
+  - Jeanne-Baptiste d'Albert de Luynes, Comtesse de Verrue
+  - Jeanne-Baptiste d'Albert de Luynes Verrue Comtesse de
+  - Jeanne-Baptiste d'Albert de Luynes Verrue
+  - Countess de Verrue
+  - lang: fr
+    role: original
+    text: Jeanne Baptiste d’Albert de Luynes
+  - lang: ja
+    role: translation
+    text: ジャンヌ・バティスト・ダルベール・ド・リュイヌ
+  - lang: zh
+    role: translation
+    text: 让娜·巴蒂斯特·达尔贝·德吕内
+  - lang: ru
+    role: translation
+    text: Жанна Батиста д’Альбер де Люинь
+kind: person
+occupations: [art collector, salonnière]
+birth: 1670-01-18
+death: 1736-11-18
+wikidata_id: Q293356
+metadata:
+  sources: [Wikidata Q293356 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/aa/Follower_of_Voet_-_Portrait_of_a_lady%2C_traditionally_identified_as_the_Marquise_de_Montespan.png
+    source_url: https://commons.wikimedia.org/wiki/File:Follower_of_Voet_-_Portrait_of_a_lady,_traditionally_identified_as_the_Marquise_de_Montespan.png
+    license: Public domain
+    credit: Follower of Jacob Ferdinand Voet / Formerly attributed to Pierre Mignard I
+identifiers:
+  bnf: 12258196w
+  gnd: "122373952"
+  idref: "061419761"
+  lc: n87101399
+  rkd: "431694"
+  ulan: "500327596"
+  viaf: "41897347"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q293356
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q293356
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q293356
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q293356

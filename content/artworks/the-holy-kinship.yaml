@@ -1,0 +1,79 @@
+public_id: 101648
+title_lang: en
+title: The Holy Kinship
+names:
+  - lang: fr
+    role: translation
+    text: La Sainte Parenté
+  - lang: de
+    role: translation
+    text: Heilige Sippe
+creator: lucas-cranach-the-elder
+created: 1510/1512
+created_label: c. 1510s
+materials: [tempera, panel]
+dimensions: [89, 71]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-542
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/978/
+wikidata_id: Q111095531
+metadata:
+  sources: [Wikidata Q111095531 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/La_Sainte_Parent%C3%A9%2C_par_Lucas_Cranach_l%27Ancien.jpg/1280px-La_Sainte_Parent%C3%A9%2C_par_Lucas_Cranach_l%27Ancien.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_Sainte_Parent%C3%A9,_par_Lucas_Cranach_l%27Ancien.jpg
+    license: Public domain
+    credit: Lucas Cranach the Elder
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    ended: 1822
+    place: vienna
+    notes_md: The Academy publishes the bequest only; earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/978
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1822
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/978
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “Die bereits beachtlichen Bestände aus der Schenkung des Grafen Lamberg-Sprinzenstein, der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q111095531
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q111095531
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q111095531
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q111095531
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q111095531
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q111095531
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q111095531

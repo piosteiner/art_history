@@ -1,0 +1,21 @@
+public_id: 102026
+name: Atalanta Baglioni
+given_name: Atalanta
+family_name: Baglioni
+names:
+  - Atalanta di Galeotto Baglioni
+  - lang: ru
+    role: translation
+    text: Аталанта Бальони
+kind: person
+wikidata_id: Q21529483
+metadata:
+  sources: [Wikidata Q21529483 (retrieved 2026-10-20)]
+identifiers:
+  ulan: "500100820"
+  viaf: "96428113"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q21529483

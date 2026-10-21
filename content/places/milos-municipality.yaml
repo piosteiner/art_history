@@ -1,0 +1,16 @@
+public_id: 101732
+name: Milos Municipality
+kind: site
+location: [24.50667, 36.70917]
+wikidata_id: Q20379354
+metadata:
+  sources: [Wikidata Q20379354 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q20379354
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q20379354

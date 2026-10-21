@@ -1,0 +1,70 @@
+public_id: 101766
+name: Louis XVI of France
+names:
+  - lang: fr
+    role: original
+    text: Louis XVI
+  - Louis I of Navarre
+  - Louis Capet
+  - lang: nl
+    role: translation
+    text: Lodewijk XVI van Frankrijk
+  - lang: de
+    role: translation
+    text: Ludwig XVI.
+  - lang: it
+    role: translation
+    text: Luigi XVI di Francia
+  - lang: es
+    role: translation
+    text: Luis XVI
+  - lang: ja
+    role: translation
+    text: ルイ16世
+  - lang: zh
+    role: translation
+    text: 路易十六
+  - lang: ko
+    role: translation
+    text: 루이 16세
+  - lang: ru
+    role: translation
+    text: Людовик XVI
+kind: person
+occupations: [politician, ruler, art collector, monarch]
+birth: 1754-08-23
+death: 1793-01-21
+wikidata_id: Q7732
+metadata:
+  sources: [Wikidata Q7732 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Mus%C3%A9e_Ingres-Bourdelle_-_Portrait_de_Louis_XVI_-_Joseph-Siffred_Duplessis_-_Joconde06070000102.jpg/1280px-Mus%C3%A9e_Ingres-Bourdelle_-_Portrait_de_Louis_XVI_-_Joseph-Siffred_Duplessis_-_Joconde06070000102.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Ingres-Bourdelle_-_Portrait_de_Louis_XVI_-_Joseph-Siffred_Duplessis_-_Joconde06070000102.jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  bnf: "120081657"
+  gnd: "118574949"
+  idref: "028197631"
+  kulturnav: 0ac0ed4a-b5ca-46da-9d07-20f6a59c1cfd
+  lc: n80038425
+  rkd: "435099"
+  ulan: "500122357"
+  viaf: "212882453"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q7732
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q7732
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q7732
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q7732

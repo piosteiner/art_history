@@ -1,0 +1,18 @@
+public_id: 102042
+name: Antonio Canova
+given_name: Antonio
+family_name: Canova
+birth: 1757-11-01
+death: 1822-10-13
+wikidata_id: Q5547
+metadata:
+  sources: [Wikidata Q5547 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q5547
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q5547

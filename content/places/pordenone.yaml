@@ -1,0 +1,37 @@
+public_id: 102073
+name: Pordenone
+names:
+  - lang: ja
+    role: translation
+    text: ポルデノーネ
+  - lang: zh
+    role: translation
+    text: 波代諾內
+  - lang: ko
+    role: translation
+    text: 포르데노네
+  - lang: ru
+    role: translation
+    text: Порденоне
+kind: settlement
+parent: regional-decentralization-entity-of-pordenone
+country_code: IT
+location: [12.6563, 45.9626]
+wikidata_id: Q6606
+metadata:
+  sources: [Wikidata Q6606 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4116051-4
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q6606
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q6606
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q6606

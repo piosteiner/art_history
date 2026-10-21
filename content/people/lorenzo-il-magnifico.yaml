@@ -1,0 +1,70 @@
+public_id: 101920
+name: Lorenzo de' Medici
+names:
+  - lang: it
+    role: original
+    text: Lorenzo di Piero de Medici
+  - Lorenzo il Magnifico
+  - Lorenzo de'Medici
+  - Lorenzo de Medici
+  - Lorenzo de’ Medici
+  - Lorenzo the Magnificent
+  - il Magnifico Lorenzo de'Medici
+  - lang: nl
+    role: translation
+    text: Lorenzo I de' Medici
+  - lang: fr
+    role: translation
+    text: Laurent le Magnifique de Médicis
+  - lang: es
+    role: translation
+    text: Lorenzo de Médici
+  - lang: ja
+    role: translation
+    text: ロレンツォ・デ・メディチ
+  - lang: zh
+    role: translation
+    text: 洛伦佐·德·美第奇
+  - lang: ko
+    role: translation
+    text: 로렌초 데 메디치
+  - lang: ru
+    role: translation
+    text: Лоренцо Великолепный
+kind: person
+occupations: [politician, writer, poet, banker]
+birth: 1449-01-10
+death: 1492-04-17
+wikidata_id: Q177854
+metadata:
+  sources: [Wikidata Q177854 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e0/Bottega_di_Agnolo_di_Cosimo%2C_detto_il_Bronzino_%28Firenze_1503-1572%29_-_Ritratto_di_Lorenzo_il_Magnifico_-_865_-_Uffizi_Gallery_%28cropped%29.jpg/1280px-Bottega_di_Agnolo_di_Cosimo%2C_detto_il_Bronzino_%28Firenze_1503-1572%29_-_Ritratto_di_Lorenzo_il_Magnifico_-_865_-_Uffizi_Gallery_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bottega_di_Agnolo_di_Cosimo,_detto_il_Bronzino_(Firenze_1503-1572)_-_Ritratto_di_Lorenzo_il_Magnifico_-_865_-_Uffizi_Gallery_(cropped).jpg
+    license: Public domain
+    credit: Workshop of Bronzino
+identifiers:
+  bnf: "120626851"
+  gnd: "118574418"
+  idref: "028883683"
+  lc: n78085428
+  rkd: "420375"
+  ulan: "500114960"
+  viaf: "54169908"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q177854
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q177854
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q177854
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q177854

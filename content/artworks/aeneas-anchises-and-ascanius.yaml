@@ -1,0 +1,116 @@
+public_id: 102039
+title_lang: it
+title: Enea, Anchise e Ascanio
+names:
+  - Aeneas, Anchises, and Ascanius
+  - lang: en
+    role: translation
+    text: Aeneas, Anchises and Ascanius
+  - lang: fr
+    role: translation
+    text: Énée, Anchise et Ascagne
+  - lang: de
+    role: translation
+    text: Aeneas, Anchises und Ascanius
+  - lang: es
+    role: translation
+    text: Eneas, Anquises y Ascanio
+  - lang: zh
+    role: translation
+    text: 埃涅阿斯、安喀塞斯與阿斯卡尼俄斯
+  - lang: ru
+    role: translation
+    text: Эней, Анхиз и Асканий
+creator: gian-lorenzo-bernini
+created: 1619
+materials: [marble]
+dimensions: [220]
+institution: galleria-borghese
+inventory_number: CLXXXII
+web_url: https://www.collezionegalleriaborghese.it/en/opere/aeneas-anchises-and-ascanius
+wikidata_id: Q3725175
+metadata:
+  sources: [Wikidata Q3725175 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/rome
+    period: 1619
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Aeneas%2C_Anchises%2C_and_Ascanius_by_Bernini.jpg/1280px-Aeneas%2C_Anchises%2C_and_Ascanius_by_Bernini.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aeneas,_Anchises,_and_Ascanius_by_Bernini.jpg
+    license: CC BY-SA 4.0
+    credit: Gian Lorenzo Bernini
+provenance:
+  - owner: person/scipione-borghese
+    acquired: 1619
+    ended: 1633
+    method: commission
+    place: rome
+    label: Bernini's first large group for Scipione Borghese — a payment of 1619 survives
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/enea-anchise-e-ascanio
+        note: Si tratta del primo grande gruppo scultoreo eseguito da Gian Lorenzo Bernini per Scipione Borghese, per il quale è conservato un pagamento del 1619.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/enea-anchise-e-ascanio
+        note: "Provenienza: Cardinale Scipione Borghese, 1619 (Faldi 1954, p. 28). Inventario Fidecommissario Borghese Borghese, 1833, C, p. 47, n. 86. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese Borghese, 1833, C, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/enea-anchise-e-ascanio
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q3725175
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q3725175
+    - url: https://www.collezionegalleriaborghese.it/opere/enea-anchise-e-ascanio
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q3725175
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q3725175
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q3725175
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q3725175
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q3725175
+    - url: https://www.collezionegalleriaborghese.it/opere/enea-anchise-e-ascanio
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

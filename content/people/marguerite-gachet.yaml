@@ -1,0 +1,42 @@
+public_id: 101887
+name: Marguerite Gachet
+given_name: Marguerite
+family_name: Gachet
+names:
+  - lang: ru
+    role: translation
+    text: Маргарита Гаше
+kind: person
+occupations: [art model]
+birth: 1869-06-21
+death: 1949-11-08
+wikidata_id: Q16684190
+metadata:
+  sources: [Wikidata Q16684190 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Van_Gogh_-_Marguerite_Gachet_am_Klavier.jpeg/1280px-Van_Gogh_-_Marguerite_Gachet_am_Klavier.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Marguerite_Gachet_am_Klavier.jpeg
+    license: Public domain
+    credit: Vincent van Gogh
+identifiers:
+  gnd: "1325498076"
+  lc: no2017014985
+  rkd: "496894"
+  viaf: "20148704205136931804"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q16684190
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q16684190
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q16684190
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q16684190

@@ -1,0 +1,18 @@
+public_id: 102098
+name: Gentile Bellini
+given_name: Gentile
+family_name: Bellini
+birth: 1429
+death: 1507-03-05
+wikidata_id: Q290407
+metadata:
+  sources: [Wikidata Q290407 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q290407
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q290407

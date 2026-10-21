@@ -1,0 +1,77 @@
+public_id: 102146
+title_lang: it
+title: Storie della Vera Croce
+names:
+  - The Legend of the True Cross
+  - lang: nl
+    role: translation
+    text: Legende van het echte kruis
+  - lang: fr
+    role: translation
+    text: La Légende de la Vraie Croix
+  - lang: de
+    role: translation
+    text: Legende vom wahren Kreuz
+  - lang: it
+    role: translation
+    text: Storie della Vera Croce
+  - lang: es
+    role: translation
+    text: Leyenda de la cruz
+  - lang: ja
+    role: translation
+    text: 聖十字架伝説
+  - lang: zh
+    role: translation
+    text: 真十字架传奇
+  - lang: ru
+    role: translation
+    text: История Животворящего Креста
+creator: piero-della-francesca
+created: 1452/1466
+institution: san-francesco-arezzo
+location: [11.88086, 43.46454]
+wikidata_id: Q2755131
+metadata:
+  sources: [Wikidata Q2755131 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/arezzo
+    period: 1452
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/46/VeraCrocePiero.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:VeraCrocePiero.jpg
+    license: CC BY-SA 2.5
+    credit: "This illustration was made by louis-garden. Please credit this : louis-garden An email to Louis-garden or a message here would be appreciated too. More pictures (not free) at My Photos Site"
+provenance:
+  - owner_label: the Bacci family (patrons of the choir)
+    acquired: 1452
+    method: commission
+    place: arezzo
+    label: Baccio di Maso Bacci (d. 1428) left a legacy to decorate the choir of San Francesco; Bicci di Lorenzo began, fell ill in 1452 — Giovanni Bacci then probably called Piero della Francesca, who finished by 1466
+    sources:
+      - url: https://it.wikipedia.org/wiki/Storie_della_Vera_Croce
+        note: Nel 1428 era morto Baccio di Maso Bacci, un ricco mercante appartenente a un'importante famiglia aretina, nelle cui disposizioni testamentarie era previsto un generoso lascito per la decorazione del coro della basilica francescana, patronato dalla famiglia stessa. […] Presumibilmente Giovanni Bacci […] chiamò allora un artista della nuova corrente artistica, scegliendo Piero della Francesca
+        source: wikipedia-it-storie-vera-croce
+        accessed: 2026-10-20
+  - owner: institution/san-francesco-arezzo
+    acquired: 1466
+    place: arezzo
+    label: in the choir (Cappella Bacci) of the Franciscan basilica
+    sources:
+      - url: https://it.wikipedia.org/wiki/Storie_della_Vera_Croce
+        note: Gli affreschi della Vera Croce risultavano terminati entro il 1466
+        source: wikipedia-it-storie-vera-croce
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2755131
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2755131
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2755131

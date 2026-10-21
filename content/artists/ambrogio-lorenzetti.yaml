@@ -1,0 +1,18 @@
+public_id: 102156
+name: Ambrogio Lorenzetti
+given_name: Ambrogio
+family_name: Lorenzetti
+birth: 1290
+death: 1348-06-09
+wikidata_id: Q211562
+metadata:
+  sources: [Wikidata Q211562 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q211562
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q211562

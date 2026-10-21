@@ -1,0 +1,37 @@
+public_id: 101918
+name: Santa Maria dei Servi, Parma
+names:
+  - Chiesa di Santa Maria dei Servi
+  - Santa Maria dei Servi (Parma)
+  - lang: de
+    role: translation
+    text: Kirche Santa Maria dei Servi
+founded: 1740
+place: parma
+location: [10.33459, 44.80094]
+address: piazzale dei Servi ‒ Parma (PR)
+wikidata_id: Q3673688
+metadata:
+  sources: [Wikidata Q3673688 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/97/Chiesa_di_Santa_Maria_dei_Servi_%28Parma%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chiesa_di_Santa_Maria_dei_Servi_(Parma).jpg
+    license: CC BY-SA 3.0
+    credit: Geobia
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q3673688
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q3673688
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q3673688
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q3673688

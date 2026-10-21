@@ -1,0 +1,103 @@
+public_id: 101667
+title_lang: nl
+title: Het laatste oordeel drieluik
+names:
+  - lang: en
+    role: original
+    text: The last judgement tryptch
+  - The last judgement triptych
+  - lang: en
+    role: original
+    text: The Last Judgment
+  - lang: nl
+    role: original
+    text: Laatste Oordeel-drieluik
+  - lang: fr
+    role: translation
+    text: Le Jugement dernier
+  - lang: de
+    role: translation
+    text: Weltgerichtstriptychon
+  - lang: it
+    role: translation
+    text: Trittico del Giudizio di Vienna
+  - lang: es
+    role: translation
+    text: Tríptico del Juicio de Viena
+  - lang: ja
+    role: translation
+    text: 最後の審判の三連祭壇画 (ウィーン美術アカデミー)
+  - lang: ru
+    role: translation
+    text: Страшный суд
+creator: hieronymus-bosch
+created: 1500/1509
+created_label: 1500s
+materials: [oil paint, oakwood, panel]
+dimensions: [163.7, 60]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-579-581
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/149508
+wikidata_id: Q1387483
+metadata:
+  sources: [Wikidata Q1387483 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Last_judgement_Bosch.jpg/1280px-Last_judgement_Bosch.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Last_judgement_Bosch.jpg
+    license: Public domain
+    credit: Hieronymus Bosch
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    ended: 1822
+    place: vienna
+    notes_md: The Academy publishes the bequest only; earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/149508
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1822
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/149508
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “Die bereits beachtlichen Bestände aus der Schenkung des Grafen Lamberg-Sprinzenstein, der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4224628-3
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1387483
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1387483
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1387483
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1387483
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1387483
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1387483
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1387483

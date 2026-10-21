@@ -1,0 +1,53 @@
+public_id: 101761
+name: Halil Şerif Pasha
+names:
+  - Halil Şerif Paşa
+  - Khalil Bey
+  - Khalil Sherif Pasha
+  - lang: fr
+    role: translation
+    text: Khalil Chérif Pacha
+  - lang: de
+    role: translation
+    text: Halil Şerif Pascha
+  - lang: ja
+    role: translation
+    text: ハリル・シェリフ・パシャ
+  - lang: ko
+    role: translation
+    text: 할릴 셰리프 파스하
+kind: person
+occupations: [art collector, diplomat, politician]
+birth: 1831-06-20
+death: 1879-01-12
+wikidata_id: Q506933
+metadata:
+  sources: [Wikidata Q506933 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Serif_Halil.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Serif_Halil.jpg
+    license: Public domain
+    credit: Abdullah Freres
+identifiers:
+  bnf: 13744953n
+  gnd: "122694279"
+  idref: 08611560X
+  lc: nr2001021529
+  viaf: "42726413"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q506933
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q506933
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q506933
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q506933

@@ -1,0 +1,138 @@
+public_id: 102047
+title_lang: it
+title: La Madonna dei Palafrenieri
+names:
+  - Madonna and Child with St. Anne
+  - Madonna and Child with St Anne
+  - lang: en
+    role: translation
+    text: Madonna and Child with Saint Anne
+  - lang: nl
+    role: translation
+    text: Madonna van de palfreniers
+  - lang: fr
+    role: translation
+    text: La Madone des palefreniers
+  - lang: de
+    role: translation
+    text: Madonna und Kind mit der Heiligen Anna
+  - lang: es
+    role: translation
+    text: Madonna con el niño y Santa Ana
+  - lang: ja
+    role: translation
+    text: 聖アンナと聖母子 (カラヴァッジョ)
+  - lang: zh
+    role: translation
+    text: 聖母、聖子與聖安娜
+creator: caravaggio
+created: 1605/1606
+materials: [oil paint, canvas]
+dimensions: [292, 211]
+institution: galleria-borghese
+inventory_number: "110"
+web_url: http://www.caravaggio.org/madonna-and-child-with-st-anne.jsp
+wikidata_id: Q2715302
+metadata:
+  sources: [Wikidata Q2715302 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Madonna_and_Child_with_St._Anne-Caravaggio_%28c._1605-6%29.jpg/1280px-Madonna_and_Child_with_St._Anne-Caravaggio_%28c._1605-6%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Madonna_and_Child_with_St._Anne-Caravaggio_(c._1605-6).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner_label: Arciconfraternita dei Palafrenieri
+    acquired: 1605
+    ended: 1606
+    method: commission
+    place: rome
+    label: for the altar of their chapel of Saint Anne in the new St Peter's; shown there in April 1606, removed soon after (for decorum or theology — still unclear) to Sant'Anna dei Palafrenieri
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-madonna-dei-palafrenieri
+        note: Il dipinto fu commissionato nel 1605 dai membri della potente arciconfraternita dei Palafrenieri […] nell'aprile 1606 l’opera fu esposta alla pietà dei fedeli e rimossa poco dopo per essere trasferita nella vicina chiesa di Sant'Anna dei Palafrenieri
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1606
+    ended: 1633
+    method: purchase
+    direct: true
+    place: rome
+    label: seen at Sant'Anna dei Palafrenieri and bought for 100 scudi
+    price:
+      amount: 100
+      currency: SCU
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-madonna-dei-palafrenieri
+        note: dove, vista da Scipione Borghese, fu da questi comprata per 100 scudi.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-madonna-dei-palafrenieri
+        note: "Provenienza: Roma, collezione Scipione Borghese, 1606; Inventario 1693, Stanza I, n. 13; Inventario 1790, Stanza IX, n. 1; Inventario 1794, p. 694; Inventario Fidecommissario 1833, p. 13. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1693"
+        room: Stanza I
+        place: rome
+        number: "13"
+        document: Borghese inventory
+      - date: "1790"
+        room: Stanza IX
+        place: rome
+        number: "1"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-madonna-dei-palafrenieri
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2715302
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/la-madonna-dei-palafrenieri
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2715302
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2715302
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2715302
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2715302
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2715302
+    - url: https://www.collezionegalleriaborghese.it/opere/la-madonna-dei-palafrenieri
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

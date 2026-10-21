@@ -1,0 +1,77 @@
+public_id: 102198
+name: Charles Le Brun
+names:
+  - Sharlʹ Le Bri︠u︡nʹ
+  - Chevalier Charles Le Brun
+  - Sharl Le Briun
+  - Charles LeBrun
+  - Char. le Brun
+  - M. Le Brun
+  - Ch. Le Brun
+  - Charles le Brün
+  - ch. lebrun
+  - M.r Le Brun
+  - Ch.-Lebrun
+  - Charles Le, French Brun
+  - Monsu Libroni
+  - Charles Lebun
+  - Carlo Lebrun
+  - Lebrun
+  - Carl le Brun
+  - Charl. le Brün
+  - Le Brün
+  - C. Lebrun
+  - Le Brun Ch.
+  - Le Bruyn
+  - Monsieur le Bruen
+  - Le Brune
+  - L. Brun
+  - Carlo le Brun
+  - Chev. Lebri
+  - C. Le Brun
+  - Charel Lebrun
+  - Le Brun
+  - Le Brüne
+  - Carl. Le Brun
+  - Charles de Brün
+  - Le Brun (Inv.)
+  - lang: ja
+    role: translation
+    text: シャルル・ル・ブラン
+  - lang: zh
+    role: translation
+    text: 夏尔·勒布伦
+  - lang: ko
+    role: translation
+    text: 샤를 르 브룅
+  - lang: ru
+    role: translation
+    text: Шарль Лебрен
+birth: 1619-02-24
+death: 1690-02-12
+wikidata_id: Q271676
+metadata:
+  sources: [Wikidata Q271676 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Le_brun.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_brun.jpg
+    license: Public domain
+    credit: Nicolas de Largillière
+identifiers:
+  bnf: "120282726"
+  gnd: "118779141"
+  idref: "028449975"
+  kulturnav: a44d412b-56df-44ed-be15-4bf275215426
+  lc: n78072045
+  rkd: "48502"
+  ulan: "500016215"
+  viaf: "59097680"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q271676
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q271676

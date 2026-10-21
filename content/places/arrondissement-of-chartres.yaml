@@ -1,0 +1,16 @@
+public_id: 102177
+name: arrondissement of Chartres
+kind: site
+location: [1.48333, 48.45]
+wikidata_id: Q700901
+metadata:
+  sources: [Wikidata Q700901 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q700901
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q700901

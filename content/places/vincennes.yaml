@@ -1,0 +1,35 @@
+public_id: 102175
+name: Vincennes
+names:
+  - lang: ja
+    role: translation
+    text: ヴァンセンヌ
+  - lang: zh
+    role: translation
+    text: 万塞讷
+  - lang: ko
+    role: translation
+    text: 뱅센
+  - lang: ru
+    role: translation
+    text: Венсен
+kind: settlement
+parent: france
+country_code: FR
+location: [2.43917, 48.84778]
+wikidata_id: Q193819
+metadata:
+  sources: [Wikidata Q193819 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q193819
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q193819
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q193819

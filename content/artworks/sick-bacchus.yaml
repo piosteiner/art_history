@@ -1,0 +1,148 @@
+public_id: 102045
+title_lang: it
+title: Autoritratto in veste di Bacco (Bacchino malato)
+names:
+  - Bacchino Malato
+  - sick Bacchus
+  - Young Sick Bacchus
+  - lang: fr
+    role: translation
+    text: Le Petit Bacchus malade
+  - lang: de
+    role: translation
+    text: Selbstporträt als Bacchus
+  - lang: it
+    role: translation
+    text: Autoritratto in veste di bacco (Bacchino malato)
+  - lang: es
+    role: translation
+    text: Baco enfermo
+  - lang: ja
+    role: translation
+    text: 病めるバッカス
+  - lang: zh
+    role: translation
+    text: 生病的巴克斯
+  - lang: ru
+    role: translation
+    text: Больной Вакх
+creator: caravaggio
+created: c. 1595
+materials: [oil paint, canvas]
+dimensions: [67, 53]
+institution: galleria-borghese
+inventory_number: "534"
+web_url: https://www.arteworld.it/bacchino-malato-caravaggio-analisi/
+wikidata_id: Q2293936
+metadata:
+  sources: [Wikidata Q2293936 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Young_Sick_Bacchus-Caravaggio_%281593%29.jpg/1280px-Young_Sick_Bacchus-Caravaggio_%281593%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Young_Sick_Bacchus-Caravaggio_(1593).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: artist/giuseppe-cesari
+    ended: 1607
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/autoritratto-in-veste-di-bacco-bacchino-malato
+        note: Roma, Giuseppe Cesari detto il Cavalier d'Arpino, ante 1607 (De Rinaldis 1936, p. 577)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: Camera Apostolica (the papal treasury)
+    acquired: 1607
+    ended: 1607
+    method: confiscation
+    direct: true
+    place: rome
+    label: "confiscated from the Cavalier d'Arpino, accused by Paul V's officers of illegal possession of firearms: to ransom himself he had to give his collection to the Camera Apostolica"
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/autoritratto-in-veste-di-bacco-bacchino-malato
+        note: anche questa tela proviene dal gruppo di opere confiscate nel 1607 a Giuseppe Cesari detto il Cavalier d’Arpino, accusato dai fiscali di Paolo V di possesso illegale di armi da fuoco. Per potersi riscattare, il pittore fu costretto a cedere alla Camera apostolica la propria quadreria
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1607
+    ended: 1633
+    method: gift
+    direct: true
+    place: rome
+    label: given by the pope to his nephew soon after
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/autoritratto-in-veste-di-bacco-bacchino-malato
+        note: donata poco dopo dal papa al nipote Scipione Borghese.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/autoritratto-in-veste-di-bacco-bacchino-malato
+        note: "Provenienza: Roma, Giuseppe Cesari detto il Cavalier d'Arpino, ante 1607 (De Rinaldis 1936, p. 577); Roma, cardinale Scipione Borghese, 1607; Inventario 1693, Stanza VII, n. 46; Inventario 1790, Stanza X, n. 40; Inventario Fidecommissario Borghese 1833, p. 19. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1693"
+        room: Stanza VII
+        place: rome
+        number: "46"
+        document: Borghese inventory
+      - date: "1790"
+        room: Stanza X
+        place: rome
+        number: "40"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/autoritratto-in-veste-di-bacco-bacchino-malato
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2293936
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2293936
+    - url: https://www.collezionegalleriaborghese.it/opere/autoritratto-in-veste-di-bacco-bacchino-malato
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2293936
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2293936
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2293936
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2293936
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2293936
+    - url: https://www.collezionegalleriaborghese.it/opere/autoritratto-in-veste-di-bacco-bacchino-malato
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

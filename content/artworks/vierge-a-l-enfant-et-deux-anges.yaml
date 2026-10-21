@@ -1,0 +1,67 @@
+public_id: 101663
+title_lang: de
+title: Madonna mit Kind und zwei Engeln
+names:
+  - lang: fr
+    role: translation
+    text: Vierge à l'Enfant et deux anges
+  - lang: de
+    role: original
+    text: Madonna und kind mit zwei Engeln
+creator: sandro-botticelli
+created: c. 1490
+materials: [tempera, panel]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-1133
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1569
+wikidata_id: Q117857264
+metadata:
+  sources: [Wikidata Q117857264 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Sandro_Botticelli_-_Virgin_and_Child_with_Two_Angels_-_WGA02721.jpg/1280px-Sandro_Botticelli_-_Virgin_and_Child_with_Two_Angels_-_WGA02721.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_Virgin_and_Child_with_Two_Angels_-_WGA02721.jpg
+    license: Public domain
+    credit: Sandro Botticelli
+provenance:
+  - owner: person/johann-ii-prince-of-liechtenstein
+    place: vienna
+    notes_md: How the prince acquired it is not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1569
+        note: “Schenkung des Fürsten Johann II. von und zu Lichtenstein, 1889 / Bequest of Prince Johann II. von und zu Lichtenstein, 1889”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1889
+    method: gift
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1569
+        note: “Schenkung des Fürsten Johann II. von und zu Lichtenstein, 1889 / Bequest of Prince Johann II. von und zu Lichtenstein, 1889”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q117857264
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q117857264
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q117857264
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q117857264
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q117857264
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q117857264

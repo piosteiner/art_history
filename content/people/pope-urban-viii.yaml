@@ -1,0 +1,72 @@
+public_id: 101936
+name: Urban VIII
+names:
+  - lang: la
+    role: original
+    text: Urbanus PP. VIII
+  - Urbanus VIII
+  - Pope Urban VIII
+  - lang: nl
+    role: translation
+    text: Paus Urbanus VIII
+  - lang: fr
+    role: translation
+    text: Urbain VIII
+  - lang: de
+    role: translation
+    text: Urban VIII.
+  - lang: it
+    role: translation
+    text: papa Urbano VIII
+  - lang: es
+    role: translation
+    text: Urbano VIII
+  - lang: ja
+    role: translation
+    text: ウルバヌス8世
+  - lang: zh
+    role: translation
+    text: 烏爾巴諾八世
+  - lang: ko
+    role: translation
+    text: 교황 우르바노 8세
+  - lang: ru
+    role: translation
+    text: Урбан VIII
+kind: person
+occupations: [Catholic priest, patron of the arts, writer, Catholic bishop, jurist]
+birth: 1568-04-15
+death: 1644-07-29
+wikidata_id: Q131579
+metadata:
+  sources: [Wikidata Q131579 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Pietro_da_Cortona_-_Portrait_of_Urban_VIII_%28ca._1624-1627%29_-_Google_Art_Project_-_edited.jpg/1280px-Pietro_da_Cortona_-_Portrait_of_Urban_VIII_%28ca._1624-1627%29_-_Google_Art_Project_-_edited.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pietro_da_Cortona_-_Portrait_of_Urban_VIII_(ca._1624-1627)_-_Google_Art_Project_-_edited.jpg
+    license: Public domain
+    credit: Pietro da Cortona
+identifiers:
+  bnf: 12216956j
+  gnd: "118625586"
+  idref: "030833000"
+  lc: n85112080
+  rkd: "443896"
+  ulan: "500057346"
+  viaf: "96062867"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q131579
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q131579
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q131579
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q131579

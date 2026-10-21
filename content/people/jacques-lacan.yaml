@@ -1,0 +1,54 @@
+public_id: 101880
+name: Jacques Lacan
+names:
+  - Jacques Marie Émile Lacan
+  - lang: ja
+    role: translation
+    text: ジャック・ラカン
+  - lang: zh
+    role: translation
+    text: 雅各·拉岡
+  - lang: ko
+    role: translation
+    text: 자크 라캉
+  - lang: ru
+    role: translation
+    text: Жак Лакан
+kind: person
+occupations: [psychoanalyst, psychiatrist, translator, docent]
+birth: 1901-04-13
+death: 1981-09-09
+wikidata_id: Q169906
+metadata:
+  sources: [Wikidata Q169906 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/25/Jacques_Lacan_during_an_interview_1969.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacques_Lacan_during_an_interview_1969.jpg
+    license: Public domain
+    credit: Foto Moisio
+identifiers:
+  bnf: "119104423"
+  gnd: "118568507"
+  idref: "027271765"
+  lc: n80022983
+  nlk: KAC200800551
+  rkd: "331571"
+  ulan: "500234379"
+  viaf: "36920510"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q169906
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q169906
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q169906
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q169906

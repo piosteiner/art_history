@@ -1,0 +1,59 @@
+public_id: 102024
+name: Camillo Borghese, 6th Prince of Sulmona
+names:
+  - lang: fr
+    role: original
+    text: Camille Borghèse
+  - lang: nl
+    role: translation
+    text: Camillo Filippo Ludovico Borghese
+  - lang: it
+    role: translation
+    text: Camillo II Borghese
+  - lang: es
+    role: translation
+    text: Camillo Borghese, Príncipe de Sulmona
+  - lang: ja
+    role: translation
+    text: カミッロ・フィリッポ・ボルゲーゼ
+  - lang: zh
+    role: translation
+    text: 卡米洛·博爾蓋塞
+  - lang: ru
+    role: translation
+    text: Камилло Боргезе
+kind: person
+occupations: [military officer, military personnel, art collector]
+birth: 1775-07-19
+death: 1832-05-09
+wikidata_id: Q205779
+metadata:
+  sources: [Wikidata Q205779 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Camille_Borgh%C3%A8se.jpg/1280px-Camille_Borgh%C3%A8se.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Camille_Borgh%C3%A8se.jpg
+    license: Public domain
+    credit: François Gérard
+identifiers:
+  bnf: 13331203j
+  gnd: "121007472"
+  idref: "243597606"
+  lc: nr98017993
+  viaf: "30381871"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q205779
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q205779
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q205779
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q205779

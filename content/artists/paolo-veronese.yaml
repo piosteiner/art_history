@@ -1,0 +1,18 @@
+public_id: 101702
+name: Paolo Veronese
+given_name: Paolo
+family_name: Veronese
+birth: 1528
+death: 1588-04-19
+wikidata_id: Q9440
+metadata:
+  sources: [Wikidata Q9440 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q9440
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q9440

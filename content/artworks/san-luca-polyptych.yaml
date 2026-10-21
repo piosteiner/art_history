@@ -1,0 +1,91 @@
+public_id: 102108
+title_lang: it
+title: Polittico di San Luca
+names:
+  - Polittico di san Luca
+  - lang: fr
+    role: translation
+    text: Retable de Saint-Luc
+  - lang: de
+    role: translation
+    text: Altarbild des heiligen Lukas
+  - lang: es
+    role: translation
+    text: Retablo de San Lucas
+  - lang: ja
+    role: translation
+    text: 聖ルカの多翼祭壇画
+  - lang: zh
+    role: translation
+    text: 聖盧卡祭壇多聯畫
+  - lang: ru
+    role: translation
+    text: Полиптих святого Луки
+creator: andrea-mantegna
+created: 1453/1455
+materials: [tempera, wood]
+dimensions: [177, 230]
+institution: pinacoteca-di-brera
+inventory_number: "176"
+web_url: http://pinacotecabrera.org/collezione-online/opere/polittico-di-san-luca/
+wikidata_id: Q1136780
+metadata:
+  sources: [Wikidata Q1136780 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Brera_San_Lucas_01.JPG/1280px-Brera_San_Lucas_01.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Brera_San_Lucas_01.JPG
+    license: Public domain
+    credit: Miguel Hermoso Cuesta
+provenance:
+  - owner_label: Santa Giustina, Padua (Benedictine abbey), chapel of St Luke
+    acquired: 1453
+    ended: 1797
+    method: commission
+    place: padua
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/polittico-di-san-luca/
+        note: L’opera fu eseguita tra il 1453 e il 1454 per la cappella di San Luca in Santa Giustina a Padova, da dove giunse a Brera con le soppressioni napoleoniche.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1797/1811
+    method: confiscation
+    direct: true
+    place: milan
+    label: assigned to the Milan Academy in the Napoleonic suppressions of 1797, arrived in 1811
+    sources:
+      - url: https://it.wikipedia.org/wiki/Polittico_di_san_Luca
+        note: La pala rimase in loco fino al 1797, quando con le soppressioni napoleoniche venne destinata all'Accademia di Milano, dove arrivò nel 1811.
+        source: wikipedia-it-polittico-san-luca
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1136780
+  created:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/polittico-di-san-luca/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1136780
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1136780
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1136780
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1136780
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1136780
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/polittico-di-san-luca/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

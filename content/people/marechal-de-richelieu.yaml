@@ -1,0 +1,56 @@
+public_id: 101769
+name: Armand de Vignerot du Plessis
+names:
+  - lang: fr
+    role: original
+    text: Louis François Armand de Vignerot du Plessis de Richelieu
+  - Louis François Armand de Vignerot du Plessis Richelieu
+  - Louis François Armund de Richelieu, Duc de Richelieu
+  - lang: nl
+    role: translation
+    text: Louis François Armand de Vignerot du Plessis
+  - lang: ja
+    role: translation
+    text: ルイ・フランソワ・アルマン・ド・ヴィニュロー・デュ・プレシ
+  - lang: zh
+    role: translation
+    text: 路易·弗朗索瓦·阿尔芒·德·维涅罗·迪·普莱西
+  - lang: ru
+    role: translation
+    text: Луи Франсуа Арман дю Плесси Ришельё
+kind: person
+occupations: [diplomat, bretteur, military commander, Hofmarschall, writer, politician]
+birth: 1696-03-13
+death: 1788-08-08
+wikidata_id: Q697562
+metadata:
+  sources: [Wikidata Q697562 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Jean-Marc_Nattier_%281685-1766%29_-_Portret_van_maarschalk_hertog_Richelieu_-_Lissabon_Museu_Calouste_Gulbenkian_21-10-2010_13-34-54.jpg/1280px-Jean-Marc_Nattier_%281685-1766%29_-_Portret_van_maarschalk_hertog_Richelieu_-_Lissabon_Museu_Calouste_Gulbenkian_21-10-2010_13-34-54.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Marc_Nattier_(1685-1766)_-_Portret_van_maarschalk_hertog_Richelieu_-_Lissabon_Museu_Calouste_Gulbenkian_21-10-2010_13-34-54.jpg
+    license: Public domain
+    credit: Jean-Marc Nattier
+identifiers:
+  bnf: "125334958"
+  gnd: "118788744"
+  idref: "027358569"
+  lc: n81028173
+  rkd: "450784"
+  viaf: "69041169"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q697562
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q697562
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q697562
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q697562

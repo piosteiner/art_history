@@ -1,0 +1,16 @@
+public_id: 102110
+name: Guercino
+birth: 1591-02-08
+death: 1666-12-22
+wikidata_id: Q334262
+metadata:
+  sources: [Wikidata Q334262 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q334262
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q334262

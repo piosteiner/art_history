@@ -1,0 +1,11 @@
+public_id: 102163
+name: Notre-Dame de Chartres
+founded: 1145
+wikidata_id: Q180274
+metadata:
+  sources: [Wikidata Q180274 (retrieved 2026-10-20)]
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q180274

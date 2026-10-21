@@ -1,0 +1,48 @@
+public_id: 101884
+name: Martial Caillebotte
+names:
+  - lang: ja
+    role: translation
+    text: マルシャル・カイユボット
+  - lang: ko
+    role: translation
+    text: 마르샬 카유보트
+  - lang: ru
+    role: translation
+    text: Марсиаль Кайботт
+kind: person
+occupations: [photographer, composer, pianist]
+birth: 1853-04-07
+death: 1910-01-16
+wikidata_id: Q111449
+metadata:
+  sources: [Wikidata Q111449 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Martial_Caillebotte.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Martial_Caillebotte.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 15886121k
+  gnd: "144029170"
+  idref: "148533884"
+  lc: no2011096668
+  rkd: "435505"
+  viaf: "170275762"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q111449
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q111449
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q111449
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q111449

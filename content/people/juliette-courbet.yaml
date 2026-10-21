@@ -1,0 +1,38 @@
+public_id: 101888
+name: Juliette Courbet
+names:
+  - lang: ja
+    role: translation
+    text: ジュリエット・クールベ
+kind: person
+occupations: [art model, art collector]
+birth: 1831-12-14
+death: 1915-03-13
+wikidata_id: Q17310916
+metadata:
+  sources: [Wikidata Q17310916 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Gustave_Courbet_-_Juliette_Courbet.jpg/1280px-Gustave_Courbet_-_Juliette_Courbet.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_Juliette_Courbet.jpg
+    license: Public domain
+    credit: Gustave Courbet
+identifiers:
+  gnd: "1065843690"
+  viaf: "313456476"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q17310916
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q17310916
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q17310916
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q17310916

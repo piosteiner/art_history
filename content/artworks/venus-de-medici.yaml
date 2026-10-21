@@ -1,0 +1,145 @@
+public_id: 101954
+title_lang: it
+title: Venere de' Medici
+names:
+  - Medici Venus
+  - lang: fr
+    role: translation
+    text: Vénus de Médicis
+  - lang: de
+    role: translation
+    text: Venus Medici
+  - lang: it
+    role: translation
+    text: Venere de' Medici
+  - lang: es
+    role: translation
+    text: Venus de Médici
+  - lang: ja
+    role: translation
+    text: メディチ家のヴィーナス
+  - lang: zh
+    role: translation
+    text: 麥第奇的維納斯
+  - lang: ko
+    role: translation
+    text: 메디치의 비너스
+  - lang: ru
+    role: translation
+    text: Венера Медицейская
+creator: cleomenes
+created: late 2nd century BCE–early 1st century BCE
+materials: [marble]
+dimensions: [153]
+institution: uffizi-gallery
+inventory_number: 1914 no. 224
+web_url: https://www.uffizi.it/en/artworks/medici-venus
+wikidata_id: Q774967
+metadata:
+  sources: [Wikidata Q774967 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Cleomene_di_Apollodoro%2C_venere_medici%2C_I_secolo_ac_ca.jpg/1280px-Cleomene_di_Apollodoro%2C_venere_medici%2C_I_secolo_ac_ca.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cleomene_di_Apollodoro,_venere_medici,_I_secolo_ac_ca.jpg
+    license: CC BY 3.0
+    credit: Sailko
+provenance:
+  - owner: person/andrea-della-valle
+    method: find
+    place: rome
+    label: found in Rome, near the Baths of Trajan on the Oppian Hill; in the collection of Cardinal Andrea della Valle (d. 1534)
+    certainty: probable
+    sources:
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        note: a statue of Venus was found in Rome in the area of the Baths of Trajan on the Oppian Hill.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Venere_de%27_Medici
+        note: venne acquistata dall'allora cardinale Ferdinando de' Medici, con una mossa spregiudicata che sottrasse la collezione del defunto cardinale Andrea della Valle, in cui l'opera si trovava, ai legittimo eredi Capranica.
+        source: wikipedia-it-venere-de-medici
+        accessed: 2026-10-20
+  - owner: person/ferdinando-i-de-medici
+    method: purchase
+    place: rome
+    label: bought by Cardinal Ferdinando de' Medici, taking the late cardinal della Valle's collection from his rightful heirs, the Capranica; kept almost a century in the Villa Medici on the Pincio (six fingers missing in its inventory of 1623)
+    sources:
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        note: Purchased by Ferdinando de' Medici, the statue was preserved for almost a century in the interiors of Villa Medici on the Pincian Hill, until it was brought to Florence in 1677
+        source: uffizi-artworks
+        accessed: 2026-10-20
+    records:
+      - date: "1623"
+        note: six fingers missing
+        place: rome
+        document: inventory of the Villa Medici
+  - owner: person/cosimo-iii-de-medici
+    further_places:
+      - place: florence
+        date: "1677"
+    acquired: 1677
+    method: inheritance
+    place: rome
+    label: brought to Florence with the Wrestlers and the Knife-grinder, restored by Ercole Ferrata (some fingers), placed in the Tribune in 1680
+    sources:
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        note: until it was brought to Florence in 1677 together with the Lottatori (Wrestlers) and the Arrotino (Knife grinder) […] In 1680 […] the Venus, with the missing fingers restored, was placed in the Tribune
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1680
+    method: transfer
+    place: florence
+    sources:
+      - url: https://www.uffizi.it/en/artworks/medici-venus
+        note: In 1680 (Pelli Bencivenni 1779, p. 290, note 368), the Venus, with the missing fingers restored, was placed in the Tribune together with the other two famous marbles arrived from Rome
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    role: possessor
+    further_places: [paris]
+    acquired: 1803
+    ended: 1815
+    method: spoils_of_war
+    place: palermo
+    label: sent by sea to Palermo by Ferdinand III to keep it in Italy — in vain; among the first works taken in the Napoleonic spoliations of Tuscany (1803), to the Musée Napoléon in Paris; Florence made do with Canova's copy until the Restoration
+    sources:
+      - url: https://it.wikipedia.org/wiki/Venere_de%27_Medici
+        note: la Venere entrò nel programma di trasferimento delle opere via mare a Palermo progettato dal granduca Ferdinando III per permettere alla scultura di rimanere in Italia; ma l'espediente non funzionò e la Venere fu quindi inevitabilmente tra le prime opere ad essere portate via dalle spoliazioni napoleoniche del Granducato di Toscana (1803) […] l'originale venne recuperata solo con la Restaurazione (1815).
+        source: wikipedia-it-venere-de-medici
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1815
+    method: restitution
+    place: florence
+    sources:
+      - url: https://it.wikipedia.org/wiki/Venere_de%27_Medici
+        note: La Galleria medicea dovette dunque accontentarsi di una copia realizzata da Antonio Canova e l'originale venne recuperata solo con la Restaurazione (1815).
+        source: wikipedia-it-venere-de-medici
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q774967
+  created:
+    - url: https://www.uffizi.it/en/artworks/medici-venus
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q774967
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q774967
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q774967
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q774967
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/medici-venus
+      source: uffizi-artworks
+      accessed: 2026-10-20

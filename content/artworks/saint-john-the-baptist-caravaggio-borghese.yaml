@@ -1,0 +1,135 @@
+public_id: 102049
+title_lang: it
+title: San Giovanni Battista
+names:
+  - lang: fr
+    role: translation
+    text: Saint Jean-Baptiste
+  - lang: de
+    role: translation
+    text: Johannes der Täufer
+  - lang: it
+    role: translation
+    text: San Giovanni Battista
+  - lang: es
+    role: translation
+    text: Juan Bautista (Galería Borghese)
+  - lang: ja
+    role: translation
+    text: 洗礼者ヨハネ
+creator: caravaggio
+created: 1609/1610
+materials: [oil paint]
+dimensions: [159, 124]
+institution: galleria-borghese
+inventory_number: "267"
+web_url: http://www.galleriaborghese.beniculturali.it/it/opera/san-giovanni-battista
+wikidata_id: Q9015206
+metadata:
+  sources: [Wikidata Q9015206 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/John_the_Baptist_%28Galleria_Borghese%29-Caravaggio_%281610%29.jpg/1280px-John_the_Baptist_%28Galleria_Borghese%29-Caravaggio_%281610%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:John_the_Baptist_(Galleria_Borghese)-Caravaggio_(1610).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: artist/caravaggio
+    acquired: 1609
+    ended: 1610-07
+    method: creation
+    place: naples
+    label: among the paintings he took by sea from Naples towards Rome in 1610, hoping for a pardon by offering them to Scipione Borghese; arrested at Palo, he lost the boat with his baggage
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/san-giovanni-battista
+        note: Il quadro faceva parte del gruppo di dipinti portati con sé dall’artista nel viaggio di ritorno via mare da Napoli a Roma, intrapreso nel 1610 […] nei pressi di Palo, sulla costa a nord di Roma, Caravaggio venne ingiustamente imprigionato, perdendo così la nave che trasportava il suo prezioso bagaglio.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: Marchesa Costanza Colonna
+    acquired: 1610
+    ended: 1611
+    place: naples
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/san-giovanni-battista
+        note: Napoli, marchesa Costanza Colonna, 1610 (Pacelli 1991)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1611
+    ended: 1633
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/san-giovanni-battista
+        note: Roma, collezione Scipione Borghese, 1611 (Pacelli 1991); Roma, collezione Borghese, 1613 (Francucci 1613)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/san-giovanni-battista
+        note: "Provenienza: Napoli, marchesa Costanza Colonna, 1610 (Pacelli 1991); Roma, collezione Scipione Borghese, 1611 (Pacelli 1991); Roma, collezione Borghese, 1613 (Francucci 1613); Inventario 1693, Stanza VII, n. 46; Inventario 1790, Stanza X, n. 40; Inventario Fidecommissario Borghese 1833, p. 19. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1693"
+        room: Stanza VII
+        place: rome
+        number: "46"
+        document: Borghese inventory
+      - date: "1790"
+        room: Stanza X
+        place: rome
+        number: "40"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/san-giovanni-battista
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+identifiers:
+  gnd: "1173182713"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q9015206
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/san-giovanni-battista
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q9015206
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q9015206
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q9015206
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q9015206
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q9015206
+    - url: https://www.collezionegalleriaborghese.it/opere/san-giovanni-battista
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

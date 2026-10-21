@@ -1,0 +1,105 @@
+public_id: 102099
+title_lang: it
+title: Predica di san Marco in una piazza di Alessandria d'Egitto
+names:
+  - The Preaching of Saint Mark in Alexandria
+  - St. Mark Preaching in Alexandria
+  - lang: en
+    role: translation
+    text: Saint Mark Preaching in Alexandria
+  - lang: nl
+    role: translation
+    text: De heilige Marcus predikend in Alexandrië
+  - lang: fr
+    role: translation
+    text: Saint Marc prêchant à Alexandrie
+  - lang: de
+    role: translation
+    text: Die Predigt des heiligen Markus in Alexandria
+  - lang: it
+    role: original
+    text: Predica di san Marco ad Alessandria d'Egitto
+  - lang: es
+    role: translation
+    text: Predicación de san Marcos en Alejandría
+  - lang: ja
+    role: translation
+    text: アレクサンドリアでの聖マルコの説教
+  - lang: zh
+    role: translation
+    text: 聖馬可在亞歷山大佈道
+creator: gentile-bellini
+created: 1504/1507
+created_label: c. 1500s
+materials: [oil paint, canvas]
+dimensions: [347, 770]
+institution: pinacoteca-di-brera
+inventory_number: "160"
+web_url: https://pinacotecabrera.org/collezione-online/opere/predica-di-san-marco-ad-alessandria-degitto/
+wikidata_id: Q3910087
+metadata:
+  sources: [Wikidata Q3910087 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d4/Gentile_and_Giovanni_Bellini_%E2%80%94_Saint_Mark_Preaching_in_Alexandria.jpg/1280px-Gentile_and_Giovanni_Bellini_%E2%80%94_Saint_Mark_Preaching_in_Alexandria.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gentile_and_Giovanni_Bellini_%E2%80%94_Saint_Mark_Preaching_in_Alexandria.jpg
+    license: Public domain
+    credit: Gleb Simonov
+provenance:
+  - owner: institution/scuola-grande-di-san-marco
+    acquired: 1504-07
+    method: commission
+    place: venice
+    label: for the great hall of the confraternity — commissioned from Gentile Bellini, unfinished at his death (February 1507) and completed by his brother Giovanni, as his will asked (confirmed by the Scuola on 7 March 1507)
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/predica-di-san-marco-in-una-piazza-di-alessandria-degitto/
+        note: L’imponente telero ornava il salone della Scuola Grande di San Marco a Venezia, una delle più prestigiose e potenti confraternite della città lagunare. Fu commissionato a Gentile Bellini nel 1504 ma nel 1507 restò incompiuto […] e fu portato a termine dal fratello Giovanni, incaricato in tal senso dal testamento di Gentile.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Predica_di_san_Marco_ad_Alessandria_d%27Egitto
+        note: La tela venne iniziata da Gentile nel luglio del 1504, ma dopo la sua morte (febbraio 1507) […] passò al fratello Giovanni […] La commissione venne confermata a Giovanni dalla Scuola Grande il 7 marzo 1507.
+        source: wikipedia-it-predica-san-marco
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    method: confiscation
+    place: milan
+    label: now at Brera — the Venetian scuole were suppressed under Napoleon (the date of the transfer is not on Brera's page)
+    certainty: probable
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/predica-di-san-marco-in-una-piazza-di-alessandria-degitto/
+        note: Inventario 160 […] Sala VIII
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q3910087
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q3910087
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/predica-di-san-marco-in-una-piazza-di-alessandria-degitto/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q3910087
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q3910087
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q3910087
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q3910087
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q3910087
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/predica-di-san-marco-in-una-piazza-di-alessandria-degitto/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

@@ -1,0 +1,147 @@
+public_id: 102052
+title_lang: it
+title: Amor sacro e Amor profano
+names:
+  - lang: en
+    role: translation
+    text: Sacred and Profane Love
+  - lang: fr
+    role: translation
+    text: Amour sacré et Amour profane
+  - lang: de
+    role: translation
+    text: Himmlische und Irdische Liebe
+  - lang: es
+    role: translation
+    text: Amor sacro y amor profano
+  - lang: ja
+    role: translation
+    text: 聖愛と俗愛
+  - lang: zh
+    role: translation
+    text: 神聖與世俗的小愛神
+  - lang: ko
+    role: translation
+    text: 신성한 사랑과 세속적인 사랑
+  - lang: ru
+    role: translation
+    text: Любовь земная и Любовь небесная
+creator: titian
+created: 1515/1516
+created_label: c. 1510s
+materials: [oil paint, canvas]
+dimensions: [118, 279]
+institution: galleria-borghese
+inventory_number: "147"
+web_url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
+wikidata_id: Q794077
+metadata:
+  sources: [Wikidata Q794077 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Tiziano_-_Amor_Sacro_y_Amor_Profano_%28Galer%C3%ADa_Borghese%2C_Roma%2C_1514%29FXD.jpg/1280px-Tiziano_-_Amor_Sacro_y_Amor_Profano_%28Galer%C3%ADa_Borghese%2C_Roma%2C_1514%29FXD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tiziano_-_Amor_Sacro_y_Amor_Profano_(Galer%C3%ADa_Borghese,_Roma,_1514)FXD.jpg
+    license: Public domain
+    credit: Titian
+provenance:
+  - owner_label: Niccolò Aurelio
+    acquired: c. 1515
+    method: commission
+    place: venice
+    label: the Venetian whose arms appear on the fountain with those of his wife Laura Bagarotto
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
+        note: commissionata dal veneziano Niccolò Aurelio, il cui stemma appare sulla fontana assieme a quello della moglie Laura Bagarotto.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/paolo-emilio-sfondrati
+    ended: 1608
+    place: rome
+    certainty: possible
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
+        note: (?) Roma, cardinale Paolo Emilio Sfondrati, ante 1608
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1608
+    ended: 1633
+    place: rome
+    label: probably ceded by Cardinal Sfondrati in 1608; certainly in Scipione's collection about 1620
+    certainty: probable
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
+        note: L'opera, probabilmente ceduta nel 1608 dal cardinale Paolo Emilio Sfondrati a Scipione Borghese […] Roma, collezione Scipione Borghese, 1620 ca. (Cappelletti 2014)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
+        note: "Provenienza: (?) Roma, cardinale Paolo Emilio Sfondrati, ante 1608; (?) Roma, collezione Scipione Borghese, 1608 (Della Pergola 1955); (?) Roma, collezione Scipione Borghese, 1613 (Francucci 1613); Roma, collezione Scipione Borghese, 1620 ca. (Cappelletti 2014); (?) Roma, collezione Borghese, 1644 (Wethey 1975); Roma, collezione Borghese 1648 (Ridolfi 1648); Inventario 1693, Stanza V, n. 2; Inventario 1700, Stanza V, n. 2; Inventario Fidecommissario 1833, p. 12. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1693"
+        room: Stanza V
+        place: rome
+        number: "2"
+        document: Borghese inventory
+      - date: "1700"
+        room: Stanza V
+        place: rome
+        number: "2"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4401186-6
+  viaf: "220450942"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q794077
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q794077
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q794077
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q794077
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q794077
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q794077
+    - url: https://www.collezionegalleriaborghese.it/opere/amor-sacro-e-amor-profano
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

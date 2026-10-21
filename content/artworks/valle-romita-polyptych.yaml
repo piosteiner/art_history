@@ -1,0 +1,104 @@
+public_id: 102102
+title_lang: it
+title: Incoronazione della Vergine e santi (Polittico di Valle Romita)
+names:
+  - Polittico di Valle Romita
+  - lang: nl
+    role: translation
+    text: Polyptiek van Valle Romita
+  - lang: fr
+    role: translation
+    text: polyptique de Valle Romita
+  - lang: de
+    role: translation
+    text: Marienkrönung mit Heiligen (Valle Romita Polyptychon)
+  - lang: es
+    role: translation
+    text: Políptico de Valle Romita
+  - lang: ja
+    role: translation
+    text: ヴァッレ・ロミータの多翼祭壇画
+  - lang: zh
+    role: translation
+    text: 羅米塔山谷多聯畫
+  - lang: ru
+    role: translation
+    text: Полиптих Валле Ромита
+creator: gentile-da-fabriano
+created: c. 1408
+materials: [tempera, panel]
+dimensions: [157, 180]
+institution: pinacoteca-di-brera
+inventory_number: 153-174-175; 1230-1231-1232
+web_url: https://pinacotecabrera.org/en/collezione-online/opere/valle-romita-polyptych/
+wikidata_id: Q3907532
+metadata:
+  sources: [Wikidata Q3907532 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Gentile_da_Fabriano_048.jpg/1280px-Gentile_da_Fabriano_048.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gentile_da_Fabriano_048.jpg
+    license: Public domain
+    credit: Gentile da Fabriano
+provenance:
+  - owner_label: Chiavello Chiavelli, lord of Fabriano (?)
+    acquired: 1406/1414
+    method: commission
+    place: fabriano
+    label: the most attractive hypothesis — he restored the Valdisasso hermitage in 1406 and chose it for his burial
+    certainty: possible
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/incoronazione-della-vergine-e-santi-polittico-di-valle-romita/
+        note: la più suggestiva ascrive la commissione del dipinto a Chiavello Chiavelli, signore di Fabriano, che nel 1406 fece restaurare il convento di Valdisasso e lo elesse come luogo della propria sepoltura
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: Santa Maria di Valdisasso, Fabriano (Observant Franciscan hermitage)
+    ended: 1811
+    place: fabriano
+    label: perhaps taken apart already in the 18th century
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/incoronazione-della-vergine-e-santi-polittico-di-valle-romita/
+        note: Forse smembrato già nel XVIII secolo, il polittico giunse in Pinacoteca a partire dal 1811, in seguito alla soppressione dell’eremo francescano osservante di santa Maria di Valdisasso, presso Fabriano
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1811
+    method: confiscation
+    direct: true
+    place: milan
+    label: the five large panels after the suppression of the hermitage; the four small ones bought from a private collection in 1901
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/incoronazione-della-vergine-e-santi-polittico-di-valle-romita/
+        note: il polittico giunse in Pinacoteca a partire dal 1811, in seguito alla soppressione dell’eremo […] da cui provennero le cinque tavole maggiori; le quattro tavole minori furono acquistate da una collezione privata nel 1901.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q3907532
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q3907532
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/incoronazione-della-vergine-e-santi-polittico-di-valle-romita/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q3907532
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q3907532
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q3907532
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q3907532
+  inventory_number:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/incoronazione-della-vergine-e-santi-polittico-di-valle-romita/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

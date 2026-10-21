@@ -1,0 +1,62 @@
+public_id: 101753
+name: Ferdinando Gonzaga, Duke of Mantua
+names:
+  - 6th Duke of Mantua Cardinal Ferdinando Gonzaga
+  - Ferdinando, Duke of Mantua Gonzaga
+  - Ferdinando Gonzaga
+  - Ferdinando, duca di Mantova Gonzaga
+  - Herzog Ferdinand VI. Mantua
+  - Duke Ferdinand Gonzaga
+  - duc de Mantoue et du Montferrat Ferdinando
+  - lang: fr
+    role: translation
+    text: Ferdinand de Mantoue
+  - lang: es
+    role: translation
+    text: Fernando I Gonzaga de Mantua
+  - lang: ja
+    role: translation
+    text: フェルディナンド1世・ゴンザーガ
+  - lang: zh
+    role: translation
+    text: 斐迪南多·貢扎加
+  - lang: ru
+    role: translation
+    text: Фердинандо I
+kind: person
+occupations: [Catholic priest]
+birth: 1587-04-26
+death: 1626-10-29
+wikidata_id: Q969739
+metadata:
+  sources: [Wikidata Q969739 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cf/Ritratto_del_Duca_Ferdinando_Gonzaga.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ritratto_del_Duca_Ferdinando_Gonzaga.jpg
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  bnf: 13496223s
+  gnd: "121823946"
+  idref: "063763605"
+  lc: n00009636
+  rkd: "445199"
+  ulan: "500115128"
+  viaf: "7543434"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q969739
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q969739
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q969739
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q969739

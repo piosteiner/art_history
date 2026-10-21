@@ -1,0 +1,58 @@
+public_id: 101742
+name: Anne de Montmorency
+names:
+  - Constable of France Montmorency
+  - Anne, Duc de Montmorency
+  - Anne Montmorency Duc de
+  - Anne de la Trémoille, Duc de Montmorency
+  - lang: nl
+    role: translation
+    text: Anne van Montmorency
+  - lang: ja
+    role: translation
+    text: アンヌ・ド・モンモランシー
+  - lang: zh
+    role: translation
+    text: 安内
+  - lang: ko
+    role: translation
+    text: 안 드 몽모랑시
+  - lang: ru
+    role: translation
+    text: Анн де Монморанси
+kind: person
+occupations: [diplomat, military personnel, politician, art historian, military officer]
+birth: 1493-03-24
+death: 1567-11-22
+wikidata_id: Q356952
+metadata:
+  sources: [Wikidata Q356952 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Corneille_de_Lyon_-_Portrait_of_Anne_de_Montmorency.jpg/1280px-Corneille_de_Lyon_-_Portrait_of_Anne_de_Montmorency.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Corneille_de_Lyon_-_Portrait_of_Anne_de_Montmorency.jpg
+    license: CC BY 2.0
+    credit: Corneille de Lyon
+identifiers:
+  bnf: "121165804"
+  gnd: 11899686X
+  idref: "029566932"
+  lc: n89629018
+  ulan: "500322786"
+  viaf: "3271276"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q356952
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q356952
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q356952
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q356952

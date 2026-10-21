@@ -1,0 +1,146 @@
+public_id: 101837
+title_lang: fr
+title: Bal du moulin de la Galette
+names:
+  - lang: en
+    role: original
+    text: Dance at Le Moulin de la Galette
+  - lang: it
+    role: translation
+    text: Bal au moulin de la Galette
+  - lang: es
+    role: translation
+    text: Baile en el Moulin de la Galette
+  - lang: ja
+    role: translation
+    text: ムーラン・ド・ラ・ギャレット
+  - lang: zh
+    role: translation
+    text: 煎餅磨坊的舞會
+  - lang: ko
+    role: translation
+    text: 물랭 드 라 갈레트의 무도회
+  - lang: ru
+    role: translation
+    text: Бал в Мулен де ла Галетт
+creator: pierre-auguste-renoir
+created: 1876
+materials: [oil paint, canvas]
+dimensions: [131, 175]
+institution: musee-d-orsay
+inventory_number: RF 2739
+web_url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+wikidata_id: Q683274
+metadata:
+  sources: [Wikidata Q683274 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg/1280px-Renoir%2C_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette%2C_1876.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Renoir,_Pierre-Auguste_-_Dance_at_Le_Moulin_de_la_Galette,_1876.jpg
+    license: Public domain
+    credit: Pierre-Auguste Renoir
+provenance:
+  - owner: artist/pierre-auguste-renoir
+    acquired: 1876
+    method: creation
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+        note: Date 1876
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: artist/gustave-caillebotte
+    acquired: 1877/1879-04
+    ended: 1894
+    method: purchase
+    place: paris
+    label: bought between 1877 and April 1879 (in his estate inventory of 8 March 1894)
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+        note: de 1877 à 1894, dans la collection Gustave Caillebotte, acquis entre 1877 et avril 1879 (inventaire après décès du 8 mars 1894)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+    records:
+      - date: 1894-03-08
+        place: paris
+        document: Caillebotte's estate inventory
+  - owner: person/martial-caillebotte
+    role: estate
+    acquired: 1894
+    ended: 1896-11
+    method: bequest
+    place: paris
+    label: the bequest to the State for the Musée du Luxembourg, accepted in part in 1896; the paintings fetched from Martial Caillebotte's by Léonce Bénédite in November 1896
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+        note: récupération de l'oeuvre par Léonce Bénédite chez Martial Caillebotte en novembre 1896
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/luxembourg-museum
+    acquired: 1896
+    ended: 1929-01-30
+    method: bequest
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+        note: 1896, accepté par l'Etat suite au legs de Gustave Caillebotte à destination du musée du Luxembourg de 1896 à 1929, attribué au musée du Luxembourg, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1929-01-30
+    method: transfer
+    direct: true
+    place: paris
+    label: at the Louvre's Jeu de Paume gallery 1947–1986
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+        note: de 1929 à 1947, musée du Louvre, Paris (à partir du 30 janvier 1929) de 1947 à 1986, musée du Louvre, galerie du Jeu de Paume, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4476592-7
+  viaf: "186909051"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q683274
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q683274
+    - url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q683274
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q683274
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q683274
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q683274
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q683274
+    - url: https://www.musee-orsay.fr/fr/oeuvres/bal-du-moulin-de-la-galette-497
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

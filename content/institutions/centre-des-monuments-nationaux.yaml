@@ -1,0 +1,40 @@
+public_id: 102185
+name: Les Monuments Nationaux
+names:
+  - CMN
+  - lang: nl
+    role: translation
+    text: Centre des monuments nationaux
+  - lang: es
+    role: translation
+    text: Centro de los monumentos nacionales
+  - lang: zh
+    role: translation
+    text: 国家历史文物中心
+founded: 2000-04-21
+place: paris
+location: [2.36, 48.85]
+website_url: http://www.monuments-nationaux.fr
+wikidata_id: Q2945551
+metadata:
+  sources: [Wikidata Q2945551 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/P1190741_Paris_IV_rue_St-Antoine_hotel_de_Sully_rwk.jpg/1280px-P1190741_Paris_IV_rue_St-Antoine_hotel_de_Sully_rwk.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:P1190741_Paris_IV_rue_St-Antoine_hotel_de_Sully_rwk.jpg
+    license: CC BY-SA 3.0
+    credit: Mbzt
+identifiers:
+  bnf: "136160933"
+  gnd: 10030331-6
+  idref: "058589228"
+  lc: no2002017848
+  viaf: "146675636"
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2945551
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2945551

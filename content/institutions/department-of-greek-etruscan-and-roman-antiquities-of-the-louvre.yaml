@@ -1,0 +1,8 @@
+public_id: 101686
+name: Department of Greek, Etruscan, and Roman Antiquities of the Louvre
+wikidata_id: Q3044747
+metadata:
+  sources: [Wikidata Q3044747 (retrieved 2026-10-20)]
+relationships:
+  - type: part_of
+    to: institution/musee-du-louvre

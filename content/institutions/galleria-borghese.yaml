@@ -1,0 +1,59 @@
+public_id: 102019
+name: Galleria Borghese
+names:
+  - Galleria Borghese in Rome
+  - Galleria Borghese Rome
+  - lang: fr
+    role: translation
+    text: Galerie Borghèse
+  - lang: es
+    role: translation
+    text: Galería Borghese
+  - lang: ja
+    role: translation
+    text: ボルゲーゼ美術館
+  - lang: zh
+    role: translation
+    text: 鮑格才美術館
+  - lang: ko
+    role: translation
+    text: 보르게세 미술관
+  - lang: ru
+    role: translation
+    text: Галерея Боргезе
+founded: 1903
+place: rome
+location: [12.49214, 41.91421]
+address: Piazzale Scipione Borghese 5, I-00197 Roma
+website_url: https://galleriaborghese.cultura.gov.it/
+wikidata_id: Q841506
+metadata:
+  sources: [Wikidata Q841506 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Roma_Museo_Borghese.jpg/1280px-Roma_Museo_Borghese.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Roma_Museo_Borghese.jpg
+    license: CC BY-SA 4.0
+    credit: Blackcat
+identifiers:
+  bnf: "123124195"
+  gnd: 1086465-9
+  idref: "031253407"
+  lc: n82047240
+  viaf: "135862740"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q841506
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q841506
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q841506
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q841506

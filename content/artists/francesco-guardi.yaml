@@ -1,0 +1,18 @@
+public_id: 101643
+name: Francesco Guardi
+given_name: Francesco
+family_name: Guardi
+birth: 1712-10-05
+death: 1793-01-01
+wikidata_id: Q318769
+metadata:
+  sources: [Wikidata Q318769 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q318769
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q318769

@@ -1,0 +1,168 @@
+public_id: 101709
+title_lang: fr
+title: Portrait de Charles Ier, roi d'Angleterre (1600-1649), à la chasse
+names:
+  - lang: fr
+    role: original
+    text: Portrait du roi Charles Ier d’Angleterre, dit « Le Roi à la chasse »
+  - lang: pl
+    role: original
+    text: Król Anglii Karol I na łowach
+  - lang: en
+    role: translation
+    text: Charles I at the Hunt
+  - lang: fr
+    role: original
+    text: Charles Ier à la chasse
+  - lang: de
+    role: translation
+    text: Karl I. auf der Jagd
+  - lang: it
+    role: translation
+    text: Ritratto di Carlo I a caccia
+  - lang: es
+    role: translation
+    text: Carlos I de Inglaterra (Van Dyck)
+  - lang: ja
+    role: translation
+    text: 狩猟場のチャールズ1世
+  - lang: zh
+    role: translation
+    text: 查理一世狩猎像
+  - lang: ru
+    role: translation
+    text: Портрет Карла I на охоте
+creator: anthony-van-dyck
+created: c. 1635
+materials: [oil paint, canvas]
+dimensions: [266, 207]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 1236
+web_url: https://livres.louvre.fr/vandyck/cats/18/
+wikidata_id: Q3937485
+metadata:
+  sources: [Wikidata Q3937485 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Portrait_de_Charles_1er%2C_roi_d%27Angleterre%2C_%C3%A0_la_chasse_-_Antoon_van_Dyck_-_Mus%C3%A9e_du_Louvre_Peintures_INV_1236_%3B_MR_666.jpg/1280px-Portrait_de_Charles_1er%2C_roi_d%27Angleterre%2C_%C3%A0_la_chasse_-_Antoon_van_Dyck_-_Mus%C3%A9e_du_Louvre_Peintures_INV_1236_%3B_MR_666.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_de_Charles_1er,_roi_d%27Angleterre,_%C3%A0_la_chasse_-_Antoon_van_Dyck_-_Mus%C3%A9e_du_Louvre_Peintures_INV_1236_;_MR_666.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+provenance:
+  - owner: person/charles-i-of-england
+    acquired: c. 1635
+    method: commission
+    label: very probably commissioned by the king, but found in none of his palaces — perhaps given to someone at court (the Duke of Hamilton?)
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062167
+        note: Très probablement commandé par Charles Ier, roi d’Angleterre, mais on ne sait dans quelle circonstance ni à quelle date (vers 1635 ?) ; non gardé par le roi car signalé dans aucun de ses palais
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/jeanne-baptiste-d-albert-de-luynes
+    ended: 1736
+    place: paris
+    label: Jeanne d'Albert, comtesse de Verrue — perhaps a gift of Victor Amadeus II of Savoy; in the middle of a long wall of her Grande Galerie
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062167
+        note: en possession de Jeanne d’Albert (1670-1736), comtesse de Verrue, Paris, laquelle avait pu le recevoir en don de Victor-Amédée II de Savoie dont elle avait été la maîtresse avant 1700
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/marquis-de-lassay
+    acquired: 1736
+    ended: 1750
+    method: bequest
+    direct: true
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062167
+        note: legs de la comtesse de Verrue au comte Léon de Lassay (1683-1750), Paris
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: comte de La Guiche (Mme de Lassay usufructuary until 1763)
+    numbers:
+      - kind: lot
+        number: "18"
+    acquired: 1750
+    ended: 1771
+    method: bequest
+    direct: true
+    place: paris
+    label: his sale after death, Paris, 4 March 1771, no. 18 — withdrawn, probably sold directly by his heirs
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062167
+        note: legs de ce dernier au comte de La Guiche, sous réserve d’usufruit en faveur de Mme de Lassay († 1763) ; vente après décès du comte de La Guiche († 1770), Paris, 4 III 1771, n° 18 […] retiré finalement de la vente et sans doute cédé directement par les héritiers du comte de La Guiche à la comtesse Du Barry
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/madame-du-barry
+    acquired: 1771
+    ended: 1775
+    method: purchase
+    place: louveciennes
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062167
+        note: sans doute cédé directement par les héritiers du comte de La Guiche à la comtesse Du Barry, Louveciennes (inventaires de 1772 et 1774) ; acquis de cette dernière pour Louis XVI, 1775.
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - date: "1772"
+        place: louveciennes
+      - date: "1774"
+        place: louveciennes
+  - owner: person/louis-xvi-of-france
+    acquired: 1775
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062167
+        note: acquis de cette dernière pour Louis XVI, 1775.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1793
+    method: transfer
+    place: paris
+    label: the royal collection became the nation's
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062167
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne, 1775"
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 666
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q3937485
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q3937485
+    - url: https://collections.louvre.fr/ark:/53355/cl010062167
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q3937485
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q3937485
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q3937485
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q3937485
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q3937485
+    - url: https://collections.louvre.fr/ark:/53355/cl010062167
+      source: louvre-collections
+      accessed: 2026-10-20

@@ -1,0 +1,51 @@
+public_id: 101594
+name: Victor Vasarely
+names:
+  - Viktor Vazareli
+  - Victor Vaserely
+  - Győző Vasarely
+  - Victor De Vasarely
+  - Victor Vasarély
+  - lang: es
+    role: translation
+    text: Víctor Vasarely
+  - lang: ja
+    role: translation
+    text: ヴィクトル・ヴァザルリ
+  - lang: zh
+    role: translation
+    text: 维克多·瓦沙雷
+  - lang: ko
+    role: translation
+    text: 빅토르 바사렐리
+  - lang: ru
+    role: translation
+    text: Виктор Вазарели
+birth: 1906-04-09
+death: 1997-03-15
+wikidata_id: Q154448
+metadata:
+  sources: [Wikidata Q154448 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Victor_Vasarely.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Victor_Vasarely.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 11927727x
+  gnd: "118626205"
+  idref: "027332705"
+  kulturnav: 2fb9883c-ce75-4f00-84be-50a61775973a
+  lc: n50014295
+  rkd: "79484"
+  ulan: "500030657"
+  viaf: "110233335"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q154448
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q154448

@@ -1,0 +1,55 @@
+public_id: 101874
+name: Musée National d'Art Moderne
+names:
+  - Musée National d'Art Moderne Centre Georges Pompidou
+  - National Museum of Modern Art
+  - MNAM
+  - lang: de
+    role: translation
+    text: Musée national d’Art moderne
+  - lang: es
+    role: translation
+    text: Museo Nacional de Arte Moderno
+  - lang: ja
+    role: translation
+    text: パリ国立近代美術館
+  - lang: zh
+    role: translation
+    text: 國立現代藝術博物館
+  - lang: ko
+    role: translation
+    text: 국립근대미술관
+  - lang: ru
+    role: translation
+    text: Государственный музей современного искусства
+founded: 1947-06-09
+place: paris
+location: [2.35228, 48.86064]
+website_url: http://www.centrepompidou.fr
+wikidata_id: Q1895953
+metadata:
+  sources: [Wikidata Q1895953 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg/1280px-Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Centre_Georges_Pompidou_from_the_Tour_Montparnasse_2007.jpg
+    license: CC BY 2.0
+    credit: Rui Ornelas
+identifiers:
+  gnd: 2019234-4
+  idref: "026394561"
+  lc: n82151094
+  ulan: "500310014"
+  viaf: "164406909"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q1895953
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1895953
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1895953

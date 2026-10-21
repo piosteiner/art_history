@@ -1,0 +1,76 @@
+public_id: 101664
+title_lang: de
+title: Tarquinius und Lucretia
+names:
+  - Tarquinius Sextus and Lucretia
+  - Tarquinius and Lucretia
+  - lang: en
+    role: translation
+    text: Tarquin and Lucretia
+  - lang: it
+    role: translation
+    text: Tarquinio e Lucrezia
+creator: titian
+created: 1572/1576
+created_label: c. 1570s
+materials: [oil paint, canvas]
+dimensions: [114, 100]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-1304
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1740/
+wikidata_id: Q106130077
+metadata:
+  sources: [Wikidata Q106130077 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Tizian_%28um_1488-1576%29_-_Tarquinius_und_Lucretia_-_GG-1304_-_Academy_of_Fine_Arts_Vienna.jpg/1280px-Tizian_%28um_1488-1576%29_-_Tarquinius_und_Lucretia_-_GG-1304_-_Academy_of_Fine_Arts_Vienna.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tizian_(um_1488-1576)_-_Tarquinius_und_Lucretia_-_GG-1304_-_Academy_of_Fine_Arts_Vienna.jpg
+    license: Public domain
+    credit: Titian
+provenance:
+  - owner_label: Kunsthandlung Pisko
+    role: dealer
+    place: vienna
+    notes_md: Earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1740
+        note: “Ankauf von der Kunsthandlung Pisko, Wien, 1907 / Acquired from the Kunsthandlung Pisko, Vienna, 1907”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1907
+    method: purchase
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1740
+        note: “Ankauf von der Kunsthandlung Pisko, Wien, 1907 / Acquired from the Kunsthandlung Pisko, Vienna, 1907”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q106130077
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q106130077
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q106130077
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q106130077
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q106130077
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q106130077
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q106130077

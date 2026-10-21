@@ -1,0 +1,104 @@
+public_id: 101947
+title_lang: it
+title: Sacra Famiglia, detta Tondo Doni
+names:
+  - Holy family
+  - lang: en
+    role: translation
+    text: Doni Tondo
+  - lang: ja
+    role: translation
+    text: 聖家族
+  - lang: zh
+    role: translation
+    text: 聖家庭與聖約翰
+  - lang: ko
+    role: translation
+    text: 성가족
+  - lang: ru
+    role: translation
+    text: Мадонна Дони
+creator: michelangelo
+created: 1505/1506
+created_label: 1500s
+materials: [oil paint, panel]
+dimensions: [120, 120]
+institution: uffizi-gallery
+inventory_number: 1890 n. 1456
+web_url: https://www.uffizi.it/opere/sacra-famiglia-detta-tondo-doni
+wikidata_id: Q1473546
+metadata:
+  sources: [Wikidata Q1473546 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Tondo_Doni_2015.png/1280px-Tondo_Doni_2015.png
+    source_url: https://commons.wikimedia.org/wiki/File:Tondo_Doni_2015.png
+    license: Public domain
+    credit: Michelangelo
+provenance:
+  - owner: person/agnolo-doni
+    acquired: 1505/1507
+    method: commission
+    place: florence
+    label: painted for the Florentine merchant, perhaps for his marriage to Maddalena Strozzi (1504) or the birth of their daughter Maria (1507)
+    price:
+      amount: 140
+      currency: DUC
+      note: "Vasari: Doni offered 40 instead of the 70 asked, and had to pay double"
+    sources:
+      - url: https://www.uffizi.it/en/artworks/holy-family-known-as-the-doni-tondo
+        note: Michelangelo painted this Holy Family for a Florentine merchant, Agnolo Doni, whose prestigious marriage to Maddalena Strozzi in 1504 took place in a period that was crucial for early 16th-century Florentine art.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Tondo_Doni
+        note: alla richiesta di settanta ducati come pagamento, il Doni […] offrendone invece solo quaranta. Michelangelo allora fece riportare indietro il dipinto e acconsentì a recapitarlo solo al prezzo raddoppiato di centoquaranta ducati.
+        source: wikipedia-it-tondo-doni
+        accessed: 2026-10-20
+  - owner_label: the Doni family
+    ended: 1591 or later
+    method: inheritance
+    place: florence
+    label: still in the Doni house in Via San Niccolò in 1591 (Bocchi)
+    sources:
+      - url: https://it.wikipedia.org/wiki/Tondo_Doni
+        note: Nel 1591, Bocchi ricorda l'opera ancora in casa Doni in via San Niccolò
+        source: wikipedia-it-tondo-doni
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: before 1677
+    place: florence
+    label: in the Tribune of the Uffizi by 1677 — in the grand-ducal collections
+    sources:
+      - url: https://it.wikipedia.org/wiki/Tondo_Doni
+        note: mentre nel 1677 risulta già collocata nella Tribuna degli Uffizi, quindi tra le collezioni granducali.
+        source: wikipedia-it-tondo-doni
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4361149-7
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1473546
+  created:
+    - url: https://www.uffizi.it/en/artworks/holy-family-known-as-the-doni-tondo
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1473546
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1473546
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1473546
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1473546
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/holy-family-known-as-the-doni-tondo
+      source: uffizi-artworks
+      accessed: 2026-10-20

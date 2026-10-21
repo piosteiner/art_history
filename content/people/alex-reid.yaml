@@ -1,0 +1,46 @@
+public_id: 101890
+name: Alex Reid
+given_name: Alex
+family_name: Reid
+names:
+  - Alexander Reid
+  - lang: ru
+    role: translation
+    text: Алекс Рид
+kind: person
+occupations: [art dealer]
+birth: 1854
+death: 1928
+wikidata_id: Q16030419
+metadata:
+  sources: [Wikidata Q16030419 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/79/Portrait_of_Alexander_Reid.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Alexander_Reid.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+identifiers:
+  bnf: 16584766b
+  gnd: "143185403"
+  idref: "153156376"
+  lc: n87896149
+  rkd: "320412"
+  ulan: "500078518"
+  viaf: "77845787"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q16030419
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q16030419
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q16030419
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q16030419

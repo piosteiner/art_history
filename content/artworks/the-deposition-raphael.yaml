@@ -1,0 +1,155 @@
+public_id: 102050
+title_lang: it
+title: Deposizione (Trasporto di Cristo morto al sepolcro)
+names:
+  - lang: en
+    role: original
+    text: Entombment
+  - lang: en
+    role: original
+    text: The Deposition
+  - lang: fr
+    role: translation
+    text: Déposition Borghèse
+  - lang: de
+    role: translation
+    text: Grablegung Christi
+  - lang: it
+    role: translation
+    text: Deposizione Borghese
+  - lang: es
+    role: translation
+    text: Traslado de Cristo
+  - lang: ja
+    role: translation
+    text: キリストの遺骸の運搬
+  - lang: zh
+    role: translation
+    text: 耶穌下葬 (拉斐爾)
+  - lang: ru
+    role: translation
+    text: Положение во гроб
+creator: raphael
+created: 1507
+materials: [oil paint, panel]
+dimensions: [174.5, 178.5]
+institution: galleria-borghese
+inventory_number: "369"
+web_url: https://galleriaborghese.beniculturali.it/en/opere/deposition/
+wikidata_id: Q2500226
+metadata:
+  sources: [Wikidata Q2500226 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Raffaello%2C_pala_baglioni%2C_deposizione.jpg/1280px-Raffaello%2C_pala_baglioni%2C_deposizione.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raffaello,_pala_baglioni,_deposizione.jpg
+    license: Public domain
+    credit: Raphael
+provenance:
+  - owner: person/atalanta-baglioni
+    acquired: 1507
+    method: commission
+    place: perugia
+    label: the altarpiece of her chapel in San Francesco al Prato, Perugia, where her son Grifonetto, killed in the fratricidal struggle for Perugia, was buried; signed and dated RAPHAEL VRBINAS MDVII
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/deposizione-trasporto-di-cristo-morto-al-sepolcro
+        note: La tavola, firmata e datata in basso a sinistra "Raphael Urbinas MDVII", fu commissionata da Atalanta Baglioni come pala d’altare per la sua cappella nella chiesa di San Francesco a Perugia
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: San Francesco al Prato, Perugia (Baglioni chapel)
+    acquired: 1507
+    ended: 1608
+    place: perugia
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/deposizione-trasporto-di-cristo-morto-al-sepolcro
+        note: Perugia, chiesa di San Francesco al Prato, cappella Baglioni, 1507
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/pope-paul-v
+    role: possessor
+    further_places: [rome]
+    acquired: 1608
+    ended: 1608
+    method: theft
+    direct: true
+    place: perugia
+    label: taken away secretly one night, with the friars' complicity, and sent to Rome to the pope
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/deposizione-trasporto-di-cristo-morto-al-sepolcro
+        note: L'opera rimase nella città umbra per cento anni, finché una notte, con la complicità dei frati, fu prelevata di nascosto e inviata a Roma a papa Paolo V
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    role: possessor
+    acquired: 1608
+    ended: 1633
+    method: gift
+    direct: true
+    place: rome
+    label: the pope gave it to his nephew
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/deposizione-trasporto-di-cristo-morto-al-sepolcro
+        note: che ne fece dono al nipote Scipione Borghese (1608).
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/deposizione-trasporto-di-cristo-morto-al-sepolcro
+        note: "Provenienza: Perugia, chiesa di San Francesco al Prato, cappella Baglioni, 1507; Roma, cardinale Scipione Borghese, 1608. Inventario Fidecommissario Borghese 1833, A, p. 10, n. 27. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, A, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/deposizione-trasporto-di-cristo-morto-al-sepolcro
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2500226
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2500226
+    - url: https://www.collezionegalleriaborghese.it/opere/deposizione-trasporto-di-cristo-morto-al-sepolcro
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2500226
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2500226
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2500226
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2500226
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2500226
+    - url: https://www.collezionegalleriaborghese.it/opere/deposizione-trasporto-di-cristo-morto-al-sepolcro
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

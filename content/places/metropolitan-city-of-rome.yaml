@@ -1,0 +1,16 @@
+public_id: 102015
+name: Metropolitan City of Rome
+kind: site
+location: [12.48278, 41.89306]
+wikidata_id: Q18288160
+metadata:
+  sources: [Wikidata Q18288160 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q18288160
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q18288160

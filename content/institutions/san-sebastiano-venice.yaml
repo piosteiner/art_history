@@ -1,0 +1,45 @@
+public_id: 102079
+name: San Sebastiano
+names:
+  - San Sebastiano, Venice
+  - Church of Saint Sebastian
+  - lang: fr
+    role: translation
+    text: église San Sebastiano de Venise
+  - lang: it
+    role: translation
+    text: chiesa di San Sebastiano
+  - lang: es
+    role: translation
+    text: iglesia de San Sebastián (Venecia)
+  - lang: zh
+    role: translation
+    text: 圣塞巴斯弟盎教堂
+founded: 1506
+place: venice
+location: [12.32, 45.432]
+wikidata_id: Q588559
+metadata:
+  sources: [Wikidata Q588559 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/San_Sebastiano_%28Venice%29_Facade.jpg/1280px-San_Sebastiano_%28Venice%29_Facade.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:San_Sebastiano_(Venice)_Facade.jpg
+    license: CC BY-SA 3.0
+    credit: Didier Descouens
+identifiers:
+  gnd: "1043809376"
+  lc: nr95004652
+  viaf: "122435361"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q588559
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q588559
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q588559

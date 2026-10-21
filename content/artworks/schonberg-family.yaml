@@ -1,0 +1,81 @@
+public_id: 101599
+title: Schönberg family
+names:
+  - Familie Schönberg
+  - lang: nl
+    role: translation
+    text: De familie Schönberg
+  - lang: fr
+    role: translation
+    text: La famille Schönberg
+  - lang: de
+    role: translation
+    text: Die Familie Schönberg
+  - lang: it
+    role: translation
+    text: La familia Schönberg
+  - lang: ru
+    role: translation
+    text: Семья Шёнберг
+creator: richard-gerstl
+created: 1907
+materials: [oil paint, canvas]
+dimensions: [109.7, 88.8]
+institution: mumok
+inventory_number: B 166/0
+web_url: https://www.mumok.at/de/familie-schoenberg
+wikidata_id: Q20980856
+metadata:
+  sources: [Wikidata Q20980856 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/Gerstl_-_Die_Familie_Sch%C3%B6nberg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gerstl_-_Die_Familie_Sch%C3%B6nberg.jpg
+    license: Public domain
+    credit: Richard Gerstl
+provenance:
+  - owner_label: Kamm family
+    place: zug
+    notes_md: How the family acquired it is not published.
+    sources:
+      - url: https://www.mumok.at/onlinesammlung/detail/portraet-der-familie-schoenberg-2763
+        note: "“Erwerbungsjahr 1969 · Inventarnummer B 166/0 · Creditline: mumok - Museum moderner Kunst Stiftung Ludwig Wien, Geschenk der Familie Kamm, Zug”"
+        source: mumok-onlinesammlung
+        accessed: 2026-10-20
+  - owner: institution/mumok
+    acquired: 1969
+    method: gift
+    direct: true
+    place: vienna
+    sources:
+      - url: https://www.mumok.at/onlinesammlung/detail/portraet-der-familie-schoenberg-2763
+        note: "“Erwerbungsjahr 1969 · Inventarnummer B 166/0 · Creditline: mumok - Museum moderner Kunst Stiftung Ludwig Wien, Geschenk der Familie Kamm, Zug”"
+        source: mumok-onlinesammlung
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q20980856
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q20980856
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q20980856
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q20980856
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q20980856
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q20980856
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q20980856

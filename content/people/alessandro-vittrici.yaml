@@ -1,0 +1,32 @@
+public_id: 101777
+name: Alessandro Vittrici
+given_name: Alessandro
+family_name: Vittrici
+names: [Alessandro Vittrice, Alessandro Victricius]
+kind: person
+occupations: [art collector, Catholic bishop, civil servant, bishop]
+birth: 1575
+death: 1650-10-05
+wikidata_id: Q4716445
+metadata:
+  sources: [Wikidata Q4716445 (retrieved 2026-10-20)]
+identifiers:
+  gnd: "1089586728"
+  viaf: "680145857092222922116"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q4716445
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q4716445
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q4716445
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q4716445

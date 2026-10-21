@@ -1,0 +1,47 @@
+public_id: 102081
+name: Giuseppe Lechi
+names:
+  - lang: ja
+    role: translation
+    text: ジュゼッペ・レチ
+  - lang: zh
+    role: translation
+    text: 朱塞佩·莱基
+  - lang: ru
+    role: translation
+    text: Жозеф Леки
+kind: person
+occupations: [military officer, military personnel, soldier]
+birth: 1767-12-17
+death: 1836-08-09
+wikidata_id: Q1627293
+metadata:
+  sources: [Wikidata Q1627293 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/60/Giuseppe_Lechi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giuseppe_Lechi.jpg
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  bnf: "165930055"
+  gnd: "142372307"
+  idref: "160673607"
+  lc: n2009072780
+  viaf: "102930224"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1627293
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1627293
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1627293
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1627293

@@ -1,0 +1,52 @@
+public_id: 101589
+name: Christo
+names:
+  - lang: bg
+    role: original
+    text: Христо Владимиров Явашев
+  - Christo Javacheff
+  - Christo Vladimirov Javacheff
+  - Javacheff Christo
+  - Christo Javatcheff
+  - Christo Javačev
+  - Vladimirov Javacheff Christo
+  - C. Mavromichali
+  - Christ Javačev
+  - Javaceff Christo
+  - Hristo Yavashev
+  - lang: ja
+    role: translation
+    text: クリスト
+  - lang: ko
+    role: translation
+    text: 크리스토 자바체프
+  - lang: ru
+    role: translation
+    text: Христо Явашев
+birth: 1935-06-13
+death: 31 May 2020
+wikidata_id: Q14633979
+metadata:
+  sources: [Wikidata Q14633979 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Christo_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Christo_(cropped).jpg
+    license: CC BY-SA 2.5
+    credit: Martin Dürrschnabel
+identifiers:
+  bnf: "122101039"
+  gnd: "118520660"
+  idref: "030746744"
+  lc: n50037641
+  rkd: "16773"
+  ulan: "500115266"
+  viaf: "102316487"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q14633979
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q14633979

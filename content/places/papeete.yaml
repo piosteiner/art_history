@@ -1,0 +1,37 @@
+public_id: 101861
+name: Papeete
+names:
+  - lang: ja
+    role: translation
+    text: パペーテ
+  - lang: zh
+    role: translation
+    text: 帕皮提
+  - lang: ko
+    role: translation
+    text: 파페에테
+  - lang: ru
+    role: translation
+    text: Папеэте
+kind: settlement
+parent: windward-islands
+country_code: FR
+location: [-149.56889, -17.53972]
+wikidata_id: Q130800
+metadata:
+  sources: [Wikidata Q130800 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4115840-4
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q130800
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q130800
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q130800

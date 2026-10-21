@@ -1,0 +1,206 @@
+public_id: 101835
+title_lang: fr
+title: L'Origine du monde
+names:
+  - The Origin of the World
+  - Origin of the World
+  - lang: de
+    role: translation
+    text: Der Ursprung der Welt
+  - lang: it
+    role: translation
+    text: L'origine del mondo
+  - lang: es
+    role: translation
+    text: El origen del mundo
+  - lang: ja
+    role: translation
+    text: 世界の起源
+  - lang: zh
+    role: translation
+    text: 世界的起源
+  - lang: ko
+    role: translation
+    text: 세상의 기원
+  - lang: ru
+    role: translation
+    text: Происхождение мира
+creator: gustave-courbet
+created: 1866
+materials: [oil paint, canvas]
+dimensions: [46, 55]
+institution: musee-d-orsay
+inventory_number: RF 1995 10
+web_url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+wikidata_id: Q334138
+metadata:
+  sources: [Wikidata Q334138 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Origin-of-the-World.jpg/1280px-Origin-of-the-World.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Origin-of-the-World.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: person/khalil-bey
+    acquired: 1866
+    method: commission
+    place: paris
+    label: commissioned for his private collection of erotic paintings (with Courbet's Sleep, also bought in 1866); not in his sale of 1868 — perhaps taken to Constantinople, back in Paris with it in 1877
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: collection Khalil-Bey
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+      - url: https://fr.wikipedia.org/wiki/L%27Origine_du_monde
+        note: Présenté par Sainte-Beuve à Courbet, il commande une toile à ce dernier pour sa collection personnelle de tableaux érotiques […] Courbet lui vend simultanément, en 1866, Le Sommeil et L'Origine du monde […] Certains supposent qu'il conserve L'Origine du monde et qu'il l'emporte à Constantinople. […] revient à Paris avec son tableau en 1877.
+        source: wikipedia-fr-origine-du-monde
+        accessed: 2026-10-20
+  - owner_label: Antoine de La Narde, antique dealer
+    role: dealer
+    place: paris
+    label: seen at his shop by Edmond de Goncourt
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: galerie Antoine de La Narde
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Émile Vial
+    ended: 1912
+    certainty: possible
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: jusqu'en 1912, dans la collection Emile Vial ?
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1912
+    ended: 1913-06-16
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: de 1912 à 1913, galerie Bernheim-Jeune
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/mor-lipot-herzog
+    acquired: 1913-06-16
+    method: purchase
+    direct: true
+    place: budapest
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: 1913, dans la collection du baron Herzog, vendu par Bernheim le 16 juin 1913
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/ferenc-von-hatvany
+    method: purchase
+    direct: true
+    place: budapest
+    label: bought from Herzog in Budapest; in 1944 hidden with 70 of his works in bank vaults under the names of trusted Hungarians, Hatvany being Jewish
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: collection du baron Ferenc Hatvany
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+      - url: https://fr.wikipedia.org/wiki/L%27Origine_du_monde
+        note: il cède l'Origine du monde à son compatriote le baron François de Hatvany. […] L'Origine du monde, figure parmi 70 œuvres de la collection du baron déposées dans des coffres de banques, sous les noms d'emprunt de Hongrois de confiance, car Hatvany est juif.
+        source: wikipedia-fr-origine-du-monde
+        accessed: 2026-10-20
+  - owner_label: Soviet troops
+    role: possessor
+    acquired: 1945
+    ended: 1946
+    method: theft
+    place: budapest
+    label: the banks plundered when the Red Army took Hungary; the painting went east — in summer 1946 a man calling himself Hungarian offered Hatvany to buy back some ten of his paintings, this one among them
+    sources:
+      - url: https://fr.wikipedia.org/wiki/L%27Origine_du_monde
+        note: quand les Russes envahissent la Hongrie au début de 1945, les banques du pays sont totalement pillées. L'Origine du monde part à l'est. À l'été 1946, un homme, se disant hongrois, vient trouver le baron Hatvany […] et lui propose de racheter une partie de sa collection (une dizaine de tableaux). Parmi eux figure L'Origine du monde
+        source: wikipedia-fr-origine-du-monde
+        accessed: 2026-10-20
+  - owner: person/ferenc-von-hatvany
+    further_places: [paris]
+    acquired: 1946
+    ended: 1955
+    method: purchase
+    place: budapest
+    label: bought back; it went with him to Paris
+    sources:
+      - url: https://fr.wikipedia.org/wiki/L%27Origine_du_monde
+        note: Parmi eux figure L'Origine du monde, qui l'accompagne lorsqu'il rejoint Paris avec sa famille.
+        source: wikipedia-fr-origine-du-monde
+        accessed: 2026-10-20
+  - owner: person/jacques-lacan
+    co_owners: [person/sylvia-bataille]
+    acquired: 1955
+    ended: 1981
+    method: purchase
+    place: guitrancourt
+    label: in their country house at Guitrancourt, behind a sliding panel painted by André Masson (Terre érotique)
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: à partir de 1955, dans la collection Jacques Lacan
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+      - url: https://fr.wikipedia.org/wiki/L%27Origine_du_monde
+        note: Avec l'actrice Sylvia Bataille, il en fait l'acquisition en 1955 pour l'installer dans sa maison de campagne de Guitrancourt dans les Yvelines. […] le psychanalyste demande à André Masson, son beau-frère, de construire un cadre à double fond et de peindre une autre œuvre par-dessus.
+        source: wikipedia-fr-origine-du-monde
+        accessed: 2026-10-20
+  - owner_label: Lacan's heirs (a private collection)
+    acquired: 1981
+    ended: 1995
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: jusqu'en 1995, dans une collection particulière
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1995-06-13
+    method: in_lieu
+    direct: true
+    place: paris
+    label: accepted by the State in payment of inheritance duties (dation) for the Musées nationaux and assigned to the Musée d'Orsay — committee 12 January, council 18 January, approval 7 March, Budget Minister's decision 10 May, decree 13 June 1995
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+        note: 1995, accepté par l'Etat à titre de dation en paiement de droits de succession pour les Musées nationaux (comité du 12/01/1995, conseil du 18/01/1995, commission interministérielle d'agrément du 07/03/1995, décision du Ministre du Budget du 10/05/1995, arrêté du 13/06/1995) 1995, attribué au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4453300-7
+  viaf: "186015356"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q334138
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q334138
+    - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q334138
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q334138
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q334138
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q334138
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q334138
+    - url: https://www.musee-orsay.fr/fr/oeuvres/lorigine-du-monde-69330
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

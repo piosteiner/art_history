@@ -1,0 +1,71 @@
+public_id: 102023
+name: Paul V
+names:
+  - lang: la
+    role: original
+    text: Paulus PP. V
+  - Pope Paul V
+  - Paulus V
+  - Paul V. Papst
+  - papa Paolo V
+  - Pope Paulus V
+  - pape Paul V
+  - Camille Borghèse
+  - Camillo Borghèse
+  - lang: nl
+    role: translation
+    text: Paus Paulus V
+  - lang: de
+    role: translation
+    text: Paul V.
+  - lang: es
+    role: translation
+    text: Paulo V
+  - lang: ja
+    role: translation
+    text: パウルス5世
+  - lang: zh
+    role: translation
+    text: 保祿五世
+  - lang: ko
+    role: translation
+    text: 교황 바오로 5세
+  - lang: ru
+    role: translation
+    text: Павел V
+kind: person
+occupations: [Latin Catholic priest, Catholic bishop]
+birth: 1552-09-27
+death: 1621-01-28
+wikidata_id: Q132711
+metadata:
+  sources: [Wikidata Q132711 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ad/Pope_Paul_V.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pope_Paul_V.jpg
+    license: Public domain
+    credit: Attributed to Caravaggio
+identifiers:
+  bnf: 13016268d
+  gnd: "118739530"
+  idref: "035118792"
+  lc: n85144319
+  ulan: "500257409"
+  viaf: "5065712"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q132711
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q132711
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q132711
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q132711

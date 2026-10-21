@@ -1,0 +1,62 @@
+public_id: 102173
+title_lang: fr
+title: Le Départ des volontaires de 1792 (La Marseillaise)
+names:
+  - La Marseillaise
+  - The Departure of the Volunteers of 1792
+  - lang: fr
+    role: translation
+    text: Le Départ des volontaires de 1792
+  - lang: it
+    role: translation
+    text: La partenza dei volontari del 1792
+creator: francois-rude
+created: 1833/1836
+location: [2.29528, 48.87389]
+wikidata_id: Q28061748
+metadata:
+  sources: [Wikidata Q28061748 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/paris
+    period: 1830s
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Paris_July_2011-16a.jpg/1280px-Paris_July_2011-16a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paris_July_2011-16a.jpg
+    license: CC BY-SA 3.0
+    credit: "François Rude sculpteur; photographe: Alvesgaspar"
+provenance:
+  - owner: person/louis-philippe-i
+    acquired: 1833
+    method: commission
+    place: paris
+    label: commissioned through his minister Adolphe Thiers for the east façade of the north pier of the Arc de Triomphe de l'Étoile
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Le_D%C3%A9part_des_volontaires_de_1792
+        note: Commandée par Louis-Philippe Ier par l'intermédiaire de son ministre Adolphe Thiers
+        source: wikipedia-fr-marseillaise-rude
+        accessed: 2026-10-20
+  - owner: institution/centre-des-monuments-nationaux
+    role: custodian
+    place: paris
+    label: the Arc de Triomphe — a cast of the head inside was vandalised on 1 December 2018
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Le_D%C3%A9part_des_volontaires_de_1792
+        note: Lors de la dégradation de l'Arc de Triomphe le 1er décembre 2018, le moulage en plâtre de la tête du Départ des volontaires de 1792, exposé à l'intérieur de l'Arc de Triomphe, est vandalisé
+        source: wikipedia-fr-marseillaise-rude
+        accessed: 2026-10-20
+identifiers:
+  gnd: 7683165-6
+  viaf: "210981985"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28061748
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28061748
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q28061748

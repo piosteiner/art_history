@@ -1,0 +1,118 @@
+public_id: 101963
+title_lang: it
+title: Doppio ritratto dei duchi di Urbino
+names:
+  - Portraits of Federico da Montefeltro, Duke of Urbino and of His Wife, Battista Sforza
+  - The Duke and Duchess of Urbino
+  - lang: en
+    role: original
+    text: Diptych of Federico da Montefeltro and Battista Sforza
+  - lang: nl
+    role: translation
+    text: Portretten van Federico da Montefeltro en Battista Sforza
+  - lang: fr
+    role: translation
+    text: Le Triomphe de la chasteté
+  - lang: de
+    role: translation
+    text: Diptychon des Federico da Montefeltro mit seiner Gattin Battista Sforza
+  - lang: it
+    role: translation
+    text: I duchi di Urbino Federico da Montefeltro e Battista Sforza
+  - lang: es
+    role: translation
+    text: Duques de Urbino
+  - lang: ja
+    role: translation
+    text: ウルビーノ公夫妻像
+  - lang: zh
+    role: translation
+    text: 烏爾比諾公爵雙聯畫
+  - lang: ru
+    role: translation
+    text: Урбинский диптих
+creator: piero-della-francesca
+created: 1468/1480
+created_label: c. 1470s
+materials: [tempera, panel, oil paint]
+dimensions: [47, 33]
+institution: uffizi-gallery
+inventory_number: 1890 nn. 1615, 3342
+web_url: https://www.uffizi.it/en/artworks/the-duke-and-duchess-of-urbino-federico-da-montefeltro-and-battista-sforza
+wikidata_id: Q1227359
+metadata:
+  sources: [Wikidata Q1227359 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Piero_della_Francesca_044.jpg/1280px-Piero_della_Francesca_044.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Piero_della_Francesca_044.jpg
+    license: Public domain
+    credit: Piero della Francesca
+provenance:
+  - owner: person/federico-da-montefeltro
+    acquired: c. 1465–1472
+    method: commission
+    place: urbino
+    label: shown in the audience hall of the ducal palace in Urbino
+    sources:
+      - url: https://it.wikipedia.org/wiki/Doppio_ritratto_dei_duchi_di_Urbino
+        note: Già esposto nella sala delle Udienze di palazzo Ducale di Urbino, entrò nelle collezioni dei Della Rovere
+        source: wikipedia-it-dittico-urbino
+        accessed: 2026-10-20
+  - owner_label: the Della Rovere, dukes of Urbino
+    method: inheritance
+    place: urbino
+    sources:
+      - url: https://it.wikipedia.org/wiki/Doppio_ritratto_dei_duchi_di_Urbino
+        note: entrò nelle collezioni dei Della Rovere e, con l'estinzione della casata, pervenne a Firenze nel 1631 con la dote di Vittoria della Rovere
+        source: wikipedia-it-dittico-urbino
+        accessed: 2026-10-20
+  - owner: person/vittoria-della-rovere
+    acquired: 1631
+    method: inheritance
+    place: florence
+    label: with her dowry, on her marriage to Ferdinando II de' Medici
+    sources:
+      - url: https://it.wikipedia.org/wiki/Doppio_ritratto_dei_duchi_di_Urbino
+        note: con l'estinzione della casata, pervenne a Firenze nel 1631 con la dote di Vittoria della Rovere, ultima discendente, maritata con Ferdinando II de' Medici.
+        source: wikipedia-it-dittico-urbino
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1773
+    method: transfer
+    place: florence
+    label: from the grand-ducal collections into the Royal Galleries (the Uffizi)
+    sources:
+      - url: https://it.wikipedia.org/wiki/Doppio_ritratto_dei_duchi_di_Urbino
+        note: Dalle collezioni granducali confluì poi naturalmente alle Regie Gallerie (1773), divenute gli Uffizi.
+        source: wikipedia-it-dittico-urbino
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4671185-5
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1227359
+  created:
+    - url: https://www.uffizi.it/en/artworks/the-duke-and-duchess-of-urbino-federico-da-montefeltro-and-battista-sforza
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1227359
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1227359
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1227359
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1227359
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/the-duke-and-duchess-of-urbino-federico-da-montefeltro-and-battista-sforza
+      source: uffizi-artworks
+      accessed: 2026-10-20

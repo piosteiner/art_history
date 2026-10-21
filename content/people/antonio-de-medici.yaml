@@ -1,0 +1,48 @@
+public_id: 101928
+name: Antonio de' Medici
+names:
+  - Antonio de Medici
+  - lang: es
+    role: translation
+    text: Antonio de Médici
+  - lang: zh
+    role: translation
+    text: 安東尼奧·德·麥地奇
+  - lang: ru
+    role: translation
+    text: Антонио Медичи
+kind: person
+occupations: [priest]
+birth: 1576-08-29
+death: 1621-05-02
+wikidata_id: Q577162
+metadata:
+  sources: [Wikidata Q577162 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b1/Portrait_of_Antonio_de_Medici.png
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Antonio_de_Medici.png
+    license: Public domain
+    credit: Valore Casini
+identifiers:
+  bnf: 15538341p
+  gnd: "131667157"
+  idref: "073970786"
+  lc: no2006076692
+  viaf: "8525991"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q577162
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q577162
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q577162
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q577162

@@ -1,0 +1,36 @@
+public_id: 101597
+name: mumok – Museum moderner Kunst Stiftung Ludwig Wien
+names:
+  - Museum Moderner Kunst
+  - Museum Moderner Kunst Stiftung Ludwig Wien
+  - lang: ru
+    role: translation
+    text: Музей современного искусства (MuMoK)
+kind: museum
+place: vienna
+location: [16.3567, 48.2037]
+address: Museumsplatz 1, 1070 Wien
+website_url: https://www.mumok.at
+wikidata_id: Q689951
+metadata:
+  sources: [Wikidata Q689951 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Wien_Muzeum_Sztuki_Nowoczesnej.jpg/1280px-Wien_Muzeum_Sztuki_Nowoczesnej.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wien_Muzeum_Sztuki_Nowoczesnej.jpg
+    license: CC BY-SA 4.0
+    credit: Andrzej Otrębski
+identifiers:
+  bnf: 11881400p
+  gnd: 10042956-7
+  idref: "026597209"
+  lc: n83015068
+  viaf: "125710047"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q689951
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q689951

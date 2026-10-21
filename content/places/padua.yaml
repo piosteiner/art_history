@@ -1,0 +1,43 @@
+public_id: 102018
+name: Padua
+names:
+  - Padova
+  - Pàva
+  - lang: fr
+    role: translation
+    text: Padoue
+  - lang: ja
+    role: translation
+    text: パドヴァ
+  - lang: zh
+    role: translation
+    text: 帕多瓦
+  - lang: ko
+    role: translation
+    text: 파도바
+  - lang: ru
+    role: translation
+    text: Падуя
+kind: settlement
+parent: province-of-padua
+country_code: IT
+location: [11.87333, 45.40778]
+wikidata_id: Q617
+metadata:
+  sources: [Wikidata Q617 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4044295-0
+  hls: "006603"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q617
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q617
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q617

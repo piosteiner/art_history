@@ -1,0 +1,55 @@
+public_id: 101897
+name: Kōjirō Matsukata
+names:
+  - lang: ja
+    role: original
+    text: 松方 幸次郎
+  - Matsukata Kōjirō
+  - lang: nl
+    role: translation
+    text: Matsukata Kojiro
+  - lang: ja
+    role: original
+    text: 松方幸次郎
+  - lang: ko
+    role: translation
+    text: 마츠카타 코지로
+  - lang: ru
+    role: translation
+    text: Мацуката Кодзиро
+kind: person
+occupations: [art collector, entrepreneur, politician, businessperson]
+birth: 1865-01-17
+death: 1950-06-24
+wikidata_id: Q714260
+metadata:
+  sources: [Wikidata Q714260 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Kojiro_Matsukata.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kojiro_Matsukata.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 12449726r
+  gnd: "174231768"
+  idref: "033677956"
+  lc: n86073417
+  ulan: "500124740"
+  viaf: "58098077"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q714260
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q714260
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q714260
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q714260

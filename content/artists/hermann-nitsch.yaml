@@ -1,0 +1,40 @@
+public_id: 101590
+name: Hermann Nitsch
+names:
+  - Herman Nitsch
+  - lang: ja
+    role: translation
+    text: ヘルマン・ニッチュ
+  - lang: zh
+    role: translation
+    text: 赫尔曼·尼特西
+  - lang: ru
+    role: translation
+    text: Герман Нич
+birth: 1938-08-29
+death: 2022-04-18
+wikidata_id: Q651376
+metadata:
+  sources: [Wikidata Q651376 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/79/Hermann_Nitsch_Viennale_2012.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hermann_Nitsch_Viennale_2012.jpg
+    license: CC BY-SA 3.0
+    credit: Manfred Werner / Tsui
+identifiers:
+  bnf: 12874471v
+  gnd: "118735543"
+  idref: "076760014"
+  lc: n82113195
+  rkd: "59705"
+  ulan: "500097958"
+  viaf: "51819084"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q651376
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q651376

@@ -1,0 +1,18 @@
+public_id: 101851
+name: Gustave Caillebotte
+given_name: Gustave
+family_name: Caillebotte
+birth: 1848-08-19
+death: 1894-02-21
+wikidata_id: Q295144
+metadata:
+  sources: [Wikidata Q295144 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q295144
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q295144

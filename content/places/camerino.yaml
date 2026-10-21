@@ -1,0 +1,32 @@
+public_id: 102066
+name: Camerino
+names:
+  - lang: ja
+    role: translation
+    text: カメリーノ
+  - lang: zh
+    role: translation
+    text: 卡梅里诺
+  - lang: ru
+    role: translation
+    text: Камерино
+kind: settlement
+parent: province-of-macerata
+country_code: IT
+location: [13.06667, 43.13333]
+wikidata_id: Q73489
+metadata:
+  sources: [Wikidata Q73489 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q73489
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q73489
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q73489

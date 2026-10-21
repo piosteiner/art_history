@@ -1,0 +1,51 @@
+public_id: 101746
+name: Caroline Bonaparte
+names:
+  - Caroline-Marie Bonaparte
+  - lang: nl
+    role: translation
+    text: Carolina Bonaparte
+  - lang: ja
+    role: translation
+    text: カロリーヌ・ボナパルト
+  - lang: zh
+    role: translation
+    text: 卡羅琳·波拿巴
+  - lang: ru
+    role: translation
+    text: Каролина Бонапарт
+kind: person
+occupations: [queen consort]
+birth: 1782-03-25
+death: 1839-05-18
+wikidata_id: Q152782
+metadata:
+  sources: [Wikidata Q152782 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Caroline_Bonaparte_%281782-1839%29_%28A%29.jpg/1280px-Caroline_Bonaparte_%281782-1839%29_%28A%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caroline_Bonaparte_(1782-1839)_(A).jpg
+    license: Public domain
+    credit: François Gérard
+identifiers:
+  bnf: "120481563"
+  gnd: "118585827"
+  idref: 02869886X
+  lc: n50051519
+  viaf: "14788463"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q152782
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q152782
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q152782
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q152782

@@ -1,0 +1,96 @@
+public_id: 102149
+title_lang: it
+title: Camera degli Sposi (Camera Picta)
+names:
+  - Camera picta
+  - Bridal Chamber
+  - Camera Depincta
+  - Camera Dipinta
+  - Depincta Chamber
+  - Dipinta Chamber
+  - Magna Picta Chamber
+  - Picta Chamber
+  - lang: fr
+    role: translation
+    text: La Chambre des Époux
+  - lang: es
+    role: translation
+    text: Cámara de los esposos
+  - lang: ja
+    role: translation
+    text: 夫婦の間
+  - lang: zh
+    role: translation
+    text: 婚礼房
+  - lang: ru
+    role: translation
+    text: Камера дельи Спози
+creator: andrea-mantegna
+created: 1465/1474
+materials: [fresco]
+institution: palazzo-ducale-mantua
+web_url: http://www.wga.hu/html/m/mantegna/07/
+location: [10.8, 45.16111]
+wikidata_id: Q2529899
+metadata:
+  sources: [Wikidata Q2529899 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/mantua
+    period: 15th century
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Andrea_Mantegna_-_Camera_picta%2C_la_corte_01.jpg/1280px-Andrea_Mantegna_-_Camera_picta%2C_la_corte_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_-_Camera_picta,_la_corte_01.jpg
+    license: Public domain
+    credit: Andrea Mantegna
+provenance:
+  - owner: person/ludovico-iii-gonzaga
+    acquired: 1465
+    method: commission
+    place: mantova
+    label: commissioned from his court painter (since 1460) for his audience chamber and state bedroom in the castle of San Giorgio
+    sources:
+      - url: https://it.wikipedia.org/wiki/Camera_degli_Sposi
+        note: La decorazione della stanza venne commissionata da Ludovico III Gonzaga a Mantegna, pittore di corte dal 1460.
+        source: wikipedia-it-camera-degli-sposi
+        accessed: 2026-10-20
+  - owner_label: the earthquake of 2012
+    role: event
+    acquired: 2012-05
+    place: mantova
+    label: the Emilia earthquake reopened an old crack in the Court scene and loosened painted plaster; reopened on 2 April 2015
+    sources:
+      - url: https://it.wikipedia.org/wiki/Camera_degli_Sposi
+        note: Il terremoto dell'Emilia del 2012 ha riaperto una vecchia micro-fenditura che corre verticale e poi obliqua nella scena della Corte e ha staccato una porzione di intonaco dipinto. dopo quasi un anno di lavoro il 2 aprile 2015 la Camera Picta ha riaperto i suoi tesori ai turisti
+        source: wikipedia-it-camera-degli-sposi
+        accessed: 2026-10-20
+  - owner: institution/palazzo-ducale-mantua
+    place: mantova
+    sources:
+      - url: https://it.wikipedia.org/wiki/Camera_degli_Sposi
+        note: il 2 aprile 2015 la Camera Picta ha riaperto i suoi tesori ai turisti, con l'inaugurazione da parte del ministro dei beni
+        source: wikipedia-it-camera-degli-sposi
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4342560-4
+  viaf: "212051623"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2529899
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2529899
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2529899
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2529899
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2529899

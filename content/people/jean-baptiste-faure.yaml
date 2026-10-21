@@ -1,0 +1,52 @@
+public_id: 101882
+name: Jean-Baptiste Faure
+names:
+  - J. Faure
+  - lang: ja
+    role: translation
+    text: ジャン＝バティスト・フォール
+  - lang: zh
+    role: translation
+    text: 让-巴蒂斯特·富尔
+  - lang: ko
+    role: translation
+    text: 장바티스트 포르
+  - lang: ru
+    role: translation
+    text: Жан-Батист Фор
+kind: person
+occupations: [art collector, composer, opera singer, music educator]
+birth: 1830-01-15
+death: 1914-11-09
+wikidata_id: Q320464
+metadata:
+  sources: [Wikidata Q320464 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/Jean-Baptiste_Faure_as_Hamlet_by_Charles_Reutlinger.jpg/1280px-Jean-Baptiste_Faure_as_Hamlet_by_Charles_Reutlinger.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Faure_as_Hamlet_by_Charles_Reutlinger.jpg
+    license: Public domain
+    credit: Charles Reutlinger
+identifiers:
+  bnf: "138938222"
+  gnd: "134852028"
+  idref: "133446336"
+  lc: n89644696
+  ulan: "500317542"
+  viaf: "46946260"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q320464
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q320464
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q320464
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q320464

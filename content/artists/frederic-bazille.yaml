@@ -1,0 +1,50 @@
+public_id: 101878
+name: Frédéric Bazille
+names:
+  - Jean-Frédéric Bazille
+  - Jean Frédéric Bazille
+  - Frederic Bazille
+  - Frederick Bazille
+  - Jean Frederic Bazille
+  - Jean-Frederic Bazille
+  - Bazille
+  - lang: ja
+    role: translation
+    text: フレデリック・バジール
+  - lang: zh
+    role: translation
+    text: 弗雷德里克·巴齐耶
+  - lang: ko
+    role: translation
+    text: 프레데리크 바지유
+  - lang: ru
+    role: translation
+    text: Фредерик Базиль
+birth: 1841-12-06
+death: 1870-11-28
+wikidata_id: Q207298
+metadata:
+  sources: [Wikidata Q207298 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Bazille%2C_Fr%C3%A9d%C3%A9ric%2C_album_Manet%2C_BNF_Gallica.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bazille,_Fr%C3%A9d%C3%A9ric,_album_Manet,_BNF_Gallica.jpg
+    license: Public domain
+    credit: UnknownUnknown . Upload, stitch and restoration by Jebulon
+identifiers:
+  bnf: 12215401n
+  dome: "5035"
+  gnd: "119079755"
+  idref: "030814561"
+  lc: n82159085
+  rkd: "5278"
+  ulan: "500004356"
+  viaf: "24651465"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q207298
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q207298

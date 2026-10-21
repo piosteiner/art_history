@@ -1,0 +1,47 @@
+public_id: 102071
+name: Turin
+names:
+  - Turin, Italy
+  - lang: nl
+    role: translation
+    text: Turijn
+  - lang: it
+    role: translation
+    text: Torino
+  - lang: es
+    role: translation
+    text: Turín
+  - lang: ja
+    role: translation
+    text: トリノ
+  - lang: zh
+    role: translation
+    text: 都灵
+  - lang: ko
+    role: translation
+    text: 토리노
+  - lang: ru
+    role: translation
+    text: Турин
+kind: settlement
+parent: metropolitan-city-of-turin
+country_code: IT
+location: [7.67611, 45.07917]
+wikidata_id: Q495
+metadata:
+  sources: [Wikidata Q495 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4061245-4
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q495
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q495
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q495

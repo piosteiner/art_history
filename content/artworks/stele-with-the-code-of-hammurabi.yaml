@@ -1,0 +1,110 @@
+public_id: 101712
+title_lang: fr
+title: Code de Hammurabi
+names:
+  - lang: en
+    role: original
+    text: stele with the code of Hammurabi
+  - lang: fr
+    role: translation
+    text: stèle du code de Hammurabi
+  - lang: es
+    role: translation
+    text: estela con el código de Hammurabi
+  - lang: zh
+    role: translation
+    text: 汉谟拉比法典碑
+created: -1797/-1750
+created_label: c. 1793 BCE
+materials: [black basalt]
+dimensions: [225, 79, 47]
+institution: department-of-near-eastern-antiquities-of-the-louvre
+inventory_number: Sb 8
+web_url: http://www.louvre.fr/oeuvre-notices/code-de-hammurabi-roi-de-babylone
+wikidata_id: Q12397781
+metadata:
+  sources: [Wikidata Q12397781 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Code_of_Hammurabi-Sb_8-IMG_7753-gradient.jpg/1280px-Code_of_Hammurabi-Sb_8-IMG_7753-gradient.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Code_of_Hammurabi-Sb_8-IMG_7753-gradient.jpg
+    license: CC BY-SA 3.0 fr
+    credit: Rama
+provenance:
+  - owner: person/hammurabi
+    acquired: c. 1792 BCE–1750 BCE
+    method: commission
+    place: sippar
+    label: set up by the king of Babylon, perhaps in the temple of the sun god Shamash at Sippar — or in Babylon itself
+    certainty: possible
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Code_de_Hammurabi
+        note: L'origine exacte de cette stèle est peut-être le temple du dieu-soleil Shamash situé à Sippar, au nord de Babylone, à moins qu'elle ne provienne de cette dernière.
+        source: wikipedia-fr-code-de-hammurabi
+        accessed: 2026-10-20
+  - owner_label: the Elamite kings
+    acquired: c. 1155 BCE
+    method: spoils_of_war
+    place: susa
+    label: carried to Susa with other Mesopotamian monuments by the Elamite kings who had conquered and plundered the cities of Babylonia
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Code_de_Hammurabi
+        note: La stèle y a été apportée vers 1155 av. J.-C. en compagnie d'autres monuments mésopotamiens […] par les rois élamites qui avaient conquis et pillé les grandes villes du royaume de Babylone.
+        source: wikipedia-fr-code-de-hammurabi
+        accessed: 2026-10-20
+  - owner: person/jacques-de-morgan
+    role: agent
+    acquired: 1901-12
+    ended: 1902
+    method: find
+    place: susa
+    label: its two main fragments dug up by Gustave Jéquier and Louis-Charles Watelin in December 1901 and January 1902, French mission directed by Jacques de Morgan
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Code_de_Hammurabi
+        note: les deux fragments principaux ont été exhumés par Gustave Jéquier et Louis-Charles Watelin en décembre 1901 et en janvier 1902 à Suse […] lors de fouilles conduites par une mission française dirigée par Jacques de Morgan.
+        source: wikipedia-fr-code-de-hammurabi
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1902
+    method: partage
+    place: paris
+    label: the Louvre's share of the finds (“partage après fouilles”)
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010174436
+        note: "Mode d'acquisition : partage après fouilles — Morgan, Jacques Jean Marie de (mission), Fouilleur/Archéologue ; Date de découverte : 1901-1902, Suse"
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: AS 6064
+    institution: department-of-near-eastern-antiquities-of-the-louvre
+    label: other inventory number
+  - number: Pézard et Pottier 8
+    institution: department-of-near-eastern-antiquities-of-the-louvre
+    label: catalogue number
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q12397781
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010174436
+      source: louvre-collections
+      accessed: 2026-10-20
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q12397781
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q12397781
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q12397781
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q12397781
+    - url: https://collections.louvre.fr/ark:/53355/cl010174436
+      source: louvre-collections
+      accessed: 2026-10-20

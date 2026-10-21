@@ -1,0 +1,18 @@
+public_id: 102166
+name: Henri Matisse
+given_name: Henri
+family_name: Matisse
+birth: 31 December 1869
+death: 1954-11-03
+wikidata_id: Q5589
+metadata:
+  sources: [Wikidata Q5589 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q5589
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q5589

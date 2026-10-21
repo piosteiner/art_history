@@ -1,0 +1,37 @@
+public_id: 101717
+name: Amboise
+names:
+  - Saint-Denis-Hors (réunie à Amboise)
+  - Amboise-Extra-Muros
+  - Amboise (France)
+  - lang: ja
+    role: translation
+    text: アンボワーズ
+  - lang: zh
+    role: translation
+    text: 昂布瓦斯
+  - lang: ru
+    role: translation
+    text: Амбуаз
+kind: settlement
+parent: indre-et-loire
+country_code: FR
+location: [0.9825, 47.41139]
+wikidata_id: Q205116
+metadata:
+  sources: [Wikidata Q205116 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4079744-2
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q205116
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q205116
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q205116

@@ -1,0 +1,16 @@
+public_id: 101728
+name: arrondissement of Saint-Germain-en-Laye
+kind: site
+location: [2.08333, 48.90194]
+wikidata_id: Q212673
+metadata:
+  sources: [Wikidata Q212673 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q212673
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q212673

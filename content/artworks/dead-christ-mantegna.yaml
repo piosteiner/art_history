@@ -1,0 +1,157 @@
+public_id: 102091
+title_lang: it
+title: Cristo morto nel sepolcro e tre dolenti
+names:
+  - lang: en
+    role: original
+    text: Lamentation over the Dead Christ
+  - Cristo morto
+  - lang: en
+    role: original
+    text: Lamentation of Christ
+  - lang: nl
+    role: translation
+    text: De Bewening van Christus
+  - lang: fr
+    role: translation
+    text: Lamentation sur le Christ mort
+  - lang: de
+    role: translation
+    text: Beweinung Christi
+  - lang: es
+    role: translation
+    text: Lamentación sobre Cristo muerto
+  - lang: ja
+    role: translation
+    text: 死せるキリスト
+  - lang: zh
+    role: translation
+    text: 哀悼死去的基督
+  - lang: ko
+    role: translation
+    text: 그리스도에 대한 애도
+  - lang: ru
+    role: translation
+    text: Мёртвый Христос
+creator: andrea-mantegna
+created: c. 1483
+materials: [tempera, canvas]
+dimensions: [68, 81]
+institution: pinacoteca-di-brera
+inventory_number: "352"
+web_url: http://pinacotecabrera.org/en/collezione-online/opere/the-dead-christ-and-three-mourners/
+wikidata_id: Q546297
+metadata:
+  sources: [Wikidata Q546297 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/26/Lamentaci%C3%B3n_sobre_Cristo_muerto%2C_por_Andrea_Mantegna.jpg/1280px-Lamentaci%C3%B3n_sobre_Cristo_muerto%2C_por_Andrea_Mantegna.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lamentaci%C3%B3n_sobre_Cristo_muerto,_por_Andrea_Mantegna.jpg
+    license: Public domain
+    credit: Andrea Mantegna
+provenance:
+  - owner: artist/andrea-mantegna
+    acquired: c. 1483
+    ended: 1506
+    method: creation
+    place: mantova
+    label: probably for the artist's own devotion; found in his studio when he died in 1506
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
+        note: identifica il dipinto di Brera con il Cristo in scurto ritrovato nello studio di Mantegna all’atto della sua morte
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: Ludovico Mantegna, the artist's son
+    acquired: 1506
+    ended: 1507
+    method: inheritance
+    place: mantova
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
+        note: venduto dal figlio Ludovico al cardinale Sigismondo Gonzaga
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: person/sigismondo-gonzaga
+    acquired: 1507
+    method: purchase
+    direct: true
+    place: mantova
+    label: bought from Ludovico Mantegna; in the inventory of the Gonzaga, lords of Mantua, in 1627
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
+        note: venduto dal figlio Ludovico al cardinale Sigismondo Gonzaga e inventariato tra i beni dei signori di Mantova nel 1627.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Cristo_morto_%28Mantegna%29
+        note: Poco dopo il dipinto veniva acquistato dal cardinale Sigismondo Gonzaga, nel 1507.
+        source: wikipedia-it-cristo-morto-mantegna
+        accessed: 2026-10-20
+    records:
+      - date: "1627"
+        place: mantova
+        document: Gonzaga inventory
+        certainty: probable
+  - owner: person/charles-i-of-england
+    acquired: 1628
+    method: purchase
+    place: london
+    label: perhaps among the Gonzaga pictures sold to Charles I in 1628 — then the art market and Cardinal Mazarin's collection, after whose dispersal it vanished for more than a century
+    certainty: possible
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
+        note: secondo le più recenti ma non risolutive ipotesi, nel 1628 il dipinto fu venduto a Carlo I di Inghilterra insieme ai pezzi più prestigiosi della quadreria gonzaghesca; dalla collezione reale sarebbe poi passato al mercato antiquario e alla raccolta del cardinale Mazarin, dispersa la quale sparì per più di un secolo.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: person/cardinal-mazarin
+    place: paris
+    certainty: possible
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
+        note: dalla collezione reale sarebbe poi passato al mercato antiquario e alla raccolta del cardinale Mazarin, dispersa la quale sparì per più di un secolo.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1824
+    method: purchase
+    place: milan
+    label: in 1806 Giuseppe Bossi, secretary of the Brera Academy, asked Antonio Canova to mediate the purchase of his “desiderato Mantegna”; it reached the Pinacoteca in 1824
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
+        note: nel 1806, il segretario dell’Accademia di Brera Giuseppe Bossi pregava infatti lo scultore Antonio Canova di mediare l’acquisto del suo “desiderato Mantegna”, che giunse finalmente in Pinacoteca nel 1824.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4224698-2
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q546297
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q546297
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q546297
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q546297
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q546297
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q546297
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q546297
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

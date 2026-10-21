@@ -1,0 +1,18 @@
+public_id: 102101
+name: Gentile da Fabriano
+given_name: Gentile
+family_name: da Fabriano
+birth: 1370
+death: 1427
+wikidata_id: Q312393
+metadata:
+  sources: [Wikidata Q312393 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q312393
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q312393

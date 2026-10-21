@@ -1,0 +1,83 @@
+public_id: 102162
+title_lang: fr
+title: Les Nymphéas — Les Deux Saules
+names:
+  - lang: fr
+    role: translation
+    text: "Les Nymphéas : Les Deux Saules"
+creator: claude-monet
+created: 1914/1926
+created_label: c. 20th century
+materials: [oil paint, canvas]
+dimensions: [200, 1700]
+institution: musee-de-l-orangerie
+inventory_number: INV 20104
+location: [2.32254, 48.86385]
+wikidata_id: Q28797624
+metadata:
+  sources: [Wikidata Q28797624 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Claude_Monet_-_The_Water_Lilies_-_The_Two_Willows_-_Google_Art_Project.jpg/1280px-Claude_Monet_-_The_Water_Lilies_-_The_Two_Willows_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_The_Water_Lilies_-_The_Two_Willows_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: 1914
+    ended: 1926-12-05
+    method: creation
+    place: giverny
+    label: begun in 1914, encouraged by Clemenceau; offered to France from 1918 (deed of gift signed before a notary at Vernon on 12 April 1922, delivery promised for April 1924, postponed for his eyesight)
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Les_Nymph%C3%A9as
+        note: "1914 : encouragé par Clemenceau, Monet commence une série de panneaux décoratifs sur le thème des Nymphéas. 12 avril 1922 : Monet signe à Vernon, devant notaire, un acte de donation dans lequel il s’engage à remettre des panneaux des Nymphéas à l’État en avril 1924."
+        source: wikipedia-fr-nympheas-orangerie
+        accessed: 2026-10-20
+  - owner_label: French State
+    acquired: 1922-04-12
+    method: gift
+    direct: true
+    place: paris
+    label: given by Monet; the State built two oval rooms for the eight panels in the Orangerie of the Tuileries, opened 17 May 1927, months after his death
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Les_Nymph%C3%A9as
+        note: "Pendant les années 1920, l'État français y a construit deux pièces ovales pour l'exposition permanente de ces huit peintures du bassin aux nénuphars par Monet. […] 17 mai 1927 : inauguration officielle des Nymphéas au musée de l'Orangerie."
+        source: wikipedia-fr-nympheas-orangerie
+        accessed: 2026-10-20
+  - owner: institution/musee-de-l-orangerie
+    role: custodian
+    acquired: 1927-05-17
+    place: paris
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Les_Nymph%C3%A9as
+        note: "17 mai 1927 : inauguration officielle des Nymphéas au musée de l'Orangerie."
+        source: wikipedia-fr-nympheas-orangerie
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q28797624
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q28797624
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q28797624
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q28797624
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q28797624
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q28797624
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q28797624

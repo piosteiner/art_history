@@ -1,0 +1,64 @@
+public_id: 101929
+name: Leopoldo de' Medici
+names:
+  - lang: la
+    role: original
+    text: Leopoldus Medices
+  - Leopoldo de', Cardinal Medici
+  - Cardinal Leopoldo de' Medici
+  - Leopoldo De’ Medici
+  - lang: fr
+    role: translation
+    text: Léopoldo de Médicis
+  - lang: es
+    role: translation
+    text: Leopoldo de Médici
+  - lang: ja
+    role: translation
+    text: レオポルド・デ・メディチ
+  - lang: zh
+    role: translation
+    text: 列奧波爾多·德·美第奇
+  - lang: ko
+    role: translation
+    text: 레오폴도 데 메디치
+  - lang: ru
+    role: translation
+    text: Леопольдо Медичи
+kind: person
+occupations: [Catholic priest, patron of the arts, art collector]
+birth: 1617-11-06
+death: 1675-11-10
+wikidata_id: Q968920
+metadata:
+  sources: [Wikidata Q968920 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Justus_Sustermans_-_Portrait_of_Cardinal_Leopoldo_de%27_Medici2.jpg/1280px-Justus_Sustermans_-_Portrait_of_Cardinal_Leopoldo_de%27_Medici2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Justus_Sustermans_-_Portrait_of_Cardinal_Leopoldo_de%27_Medici2.jpg
+    license: Public domain
+    credit: Justus Sustermans
+identifiers:
+  bnf: 12204664n
+  gnd: "118886207"
+  idref: "030678463"
+  lc: n85327592
+  rkd: "54427"
+  ulan: "500090968"
+  viaf: "74651286"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q968920
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q968920
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q968920
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q968920

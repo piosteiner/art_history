@@ -1,0 +1,18 @@
+public_id: 101694
+name: Jacques-Louis David
+given_name: Jacques-Louis
+family_name: David
+birth: 1748-08-30
+death: 1825-12-29
+wikidata_id: Q83155
+metadata:
+  sources: [Wikidata Q83155 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q83155
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q83155

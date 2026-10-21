@@ -1,0 +1,76 @@
+public_id: 102195
+name: Louis-Philippe I
+names:
+  - lang: fr
+    role: original
+    text: Louis-Philippe Ier
+  - King of the French Louis Philippe
+  - Citizen King
+  - King of the French Louis-Philippe
+  - Louis Philippe, King of the French
+  - Louis Philippe
+  - Louis-Philippe, Duke of Orleans
+  - Louis Philippe I
+  - lang: nl
+    role: translation
+    text: Lodewijk Filips I van Frankrijk
+  - lang: de
+    role: translation
+    text: Louis-Philippe I.
+  - lang: it
+    role: translation
+    text: Luigi Filippo di Francia
+  - lang: es
+    role: translation
+    text: Luis Felipe I
+  - lang: ja
+    role: translation
+    text: ルイ・フィリップ
+  - lang: zh
+    role: translation
+    text: 路易－菲利普一世
+  - lang: ko
+    role: translation
+    text: 루이 필리프 1세
+  - lang: ru
+    role: translation
+    text: Луи-Филипп I
+kind: person
+occupations: [ruler, king]
+birth: 1773-10-06
+death: 1850-08-26
+wikidata_id: Q7771
+metadata:
+  sources: [Wikidata Q7771 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/1841_portrait_painting_of_Louis_Philippe_I_%28King_of_the_French%29_by_Winterhalter.jpg/1280px-1841_portrait_painting_of_Louis_Philippe_I_%28King_of_the_French%29_by_Winterhalter.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1841_portrait_painting_of_Louis_Philippe_I_(King_of_the_French)_by_Winterhalter.jpg
+    license: Public domain
+    credit: Franz Xaver Winterhalter
+identifiers:
+  bnf: "120083455"
+  dodis: P4585
+  gnd: 11864064X
+  idref: "028200004"
+  kulturnav: 7996dfff-be63-44e5-a183-b603a32ebc08
+  lc: n50080625
+  rkd: "427832"
+  ulan: "500236304"
+  viaf: "2238151778208518130001"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q7771
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q7771
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q7771
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q7771

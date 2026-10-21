@@ -1,0 +1,16 @@
+public_id: 101734
+name: canton of Richelieu
+kind: site
+location: [0.37295, 47.02421]
+wikidata_id: Q1151256
+metadata:
+  sources: [Wikidata Q1151256 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1151256
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1151256

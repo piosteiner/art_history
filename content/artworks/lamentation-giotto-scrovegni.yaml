@@ -1,0 +1,106 @@
+public_id: 102142
+title_lang: it
+title: Compianto sul Cristo morto
+names:
+  - The Deposition
+  - lang: nl
+    role: translation
+    text: La Déposition de croix
+  - lang: de
+    role: translation
+    text: Die Beweinung Christi
+  - lang: it
+    role: translation
+    text: Compianto sul Cristo morto
+  - lang: es
+    role: translation
+    text: Lamentación sobre Cristo muerto
+  - lang: ja
+    role: translation
+    text: キリストの哀悼 (ジョット)
+  - lang: zh
+    role: translation
+    text: 哀悼基督 (乔托)
+creator: giotto
+created: 1303/1305
+materials: [fresco]
+dimensions: [200, 185]
+institution: scrovegni-chapel
+location: [11.87944, 45.41167]
+wikidata_id: Q2067212
+metadata:
+  sources: [Wikidata Q2067212 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/padua
+    period: 1305
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Compianto_sul_Cristo_morto.jpg/1280px-Compianto_sul_Cristo_morto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Compianto_sul_Cristo_morto.jpg
+    license: Public domain
+    credit: Gennadii Saus i Segura
+provenance:
+  - owner: person/enrico-scrovegni
+    acquired: 1303/1305
+    method: commission
+    place: padua
+    label: part of Giotto's cycle in the private chapel of his palace on the site of the Roman arena (bought in February 1300 from Manfredo Dalesmanini); consecrated 25 March 1305
+    sources:
+      - url: https://it.wikipedia.org/wiki/Cappella_degli_Scrovegni
+        note: La cappella fu commissionata da Enrico degli Scrovegni […] che agli inizi del Trecento aveva acquistato da un nobile decaduto, Manfredo Dalesmanini, l'area dell'antica arena romana di Padova. […] Nell'arco di tempo tra il 25 marzo 1303 e il 25 marzo 1305 si colloca dunque il lavoro di Giotto.
+        source: wikipedia-it-cappella-scrovegni
+        accessed: 2026-10-20
+  - owner_label: the Foscari
+    place: padua
+    label: owners of the Arena; in the 1820s they began demolishing the palace and the chapel to sell the materials
+    sources:
+      - url: https://it.wikipedia.org/wiki/Cappella_degli_Scrovegni
+        note: L'interesse della città di Padova per la Cappella degli Scrovegni risale agli anni Venti del XIX secolo, quando i Foscari, proprietari dell'area dell'Arena, iniziarono a demolire il palazzo e la cappella per venderne i materiali.
+        source: wikipedia-it-cappella-scrovegni
+        accessed: 2026-10-20
+  - owner_label: the Baglioni-Gradenigo family
+    ended: 1881
+    place: padua
+    sources:
+      - url: https://it.wikipedia.org/wiki/Cappella_degli_Scrovegni
+        note: La famiglia Baglioni-Gradenigo vendette quindi l'intera area dell'arena al Comune di Padova per 54.971 lire.
+        source: wikipedia-it-cappella-scrovegni
+        accessed: 2026-10-20
+  - owner_label: Comune di Padova
+    acquired: 10 May 1880–1881
+    method: purchase
+    direct: true
+    place: padua
+    label: bought by the city with the whole Arena — council resolution of 10 May 1880, deed of 1881; now part of the Musei civici
+    price:
+      amount: 54971
+      currency: ITL
+    sources:
+      - url: https://it.wikipedia.org/wiki/Cappella_degli_Scrovegni
+        note: La cappella fu ufficialmente acquisita dalla municipalità di Padova con delibera del 1880 (seduta del Consiglio Comunale del 10 maggio 1880) e con successivo atto notarile del 1881.
+        source: wikipedia-it-cappella-scrovegni
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2067212
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2067212
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2067212
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2067212
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2067212
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2067212

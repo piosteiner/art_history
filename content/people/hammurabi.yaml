@@ -1,0 +1,55 @@
+public_id: 101756
+name: Hammurabi
+names:
+  - Hammurapi
+  - lang: de
+    role: translation
+    text: Hammurapi I.
+  - lang: ja
+    role: translation
+    text: ハンムラビ
+  - lang: zh
+    role: translation
+    text: 汉谟拉比
+  - lang: ko
+    role: translation
+    text: 함무라비
+  - lang: ru
+    role: translation
+    text: Хаммурапи
+kind: person
+occupations: [king, monarch, leader]
+birth: c. 1810 BCE
+death: c. 1750 BCE
+wikidata_id: Q36359
+metadata:
+  sources: [Wikidata Q36359 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg/1280px-F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:F0182_Louvre_Code_Hammourabi_Bas-relief_Sb8_rwk.jpg
+    license: CC BY 3.0
+    credit: Mbzt
+identifiers:
+  bnf: 12611886p
+  gnd: "118545485"
+  idref: "027764796"
+  lc: n50019979
+  nlk: KAC199634252
+  viaf: "280799209"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q36359
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q36359
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q36359
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q36359

@@ -1,0 +1,173 @@
+public_id: 101855
+title_lang: fr
+title: Femmes au jardin
+names:
+  - lang: en
+    role: translation
+    text: Women in the Garden
+  - lang: nl
+    role: translation
+    text: Vrouwen in de tuin
+  - lang: de
+    role: translation
+    text: Frauen im Garten
+  - lang: it
+    role: translation
+    text: Donne in giardino
+  - lang: es
+    role: translation
+    text: Mujeres en el jardín
+  - lang: ja
+    role: translation
+    text: 庭の女たち
+  - lang: zh
+    role: translation
+    text: 花园中的女人
+  - lang: ko
+    role: translation
+    text: 정원의 여인들
+  - lang: ru
+    role: translation
+    text: Женщины в саду
+creator: claude-monet
+created: c. 1866
+materials: [oil paint, canvas]
+dimensions: [255, 205]
+institution: musee-d-orsay
+inventory_number: RF 2773
+web_url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+wikidata_id: Q2734892
+metadata:
+  sources: [Wikidata Q2734892 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Claude_Monet_024.jpg/1280px-Claude_Monet_024.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_024.jpg
+    license: Public domain
+    credit: Claude Monet
+provenance:
+  - owner: artist/claude-monet
+    acquired: c. 1866
+    ended: 1867-05
+    method: creation
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: Date vers 1866 [date incertaine (1867 ?)]
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: artist/frederic-bazille
+    acquired: 1867-05
+    ended: 1870
+    method: purchase
+    direct: true
+    label: bought from the artist in May 1867
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: à partir de 1867, dans la collection Frédéric Bazille (acquis de l'artiste en mai)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: M. and Mme Gaston Bazille, Frédéric Bazille's parents
+    acquired: 1870
+    ended: 1876
+    method: inheritance
+    direct: true
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: de 1870 à 1876, dans la collection M. et Mme Gaston Bazille, parents de Frédéric Bazille
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: artist/edouard-manet
+    acquired: 1876
+    ended: 1876
+    method: exchange
+    direct: true
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: en 1876, dans la collection Edouard Manet (cédé des Bazille en échange d'un portrait de leur fils par Renoir, RF 2448 représentant Camille au jardin d'Argenteuil)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+    exchanged_for_text: Renoir's portrait of their son (Frédéric Bazille painting, Orsay RF 2448)
+  - owner: artist/claude-monet
+    acquired: 1876
+    ended: 1921
+    method: exchange
+    direct: true
+    label: deposited with Durand-Ruel 1882–1887
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: de 1876 à 1921, dans la collection Claude Monet (acédé de Manet en échange d'une toile de Manet) de 1882 à 1887, déposé par Monet chez Durand-Ruel
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+    exchanged_for_text: a canvas by Manet
+  - owner: institution/durand-ruel
+    role: custodian
+    acquired: 1882
+    ended: 1887
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: de 1882 à 1887, déposé par Monet chez Durand-Ruel
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/luxembourg-museum
+    acquired: 1921-04-07
+    ended: 1929-01-30
+    method: purchase
+    direct: true
+    place: paris
+    label: bought from Monet by the State (committee 3 February, decree 29 April 1921; in the museum 7 April 1921)
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: 1921, acquis par l'Etat de Monet pour le musée du Luxembourg (comité du 03/02/1921, arrêté du 29/04/1921) de 1921 à 1929, musée du Luxembourg, Paris (entrée le 7 avril 1921, sortie le 30 janvier 1929)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1929-01-30
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: 1929, attribué au musée du Louvre, Paris de 1929 à 1947, musée du Louvre, Paris de 1947 à 1986, musée du Louvre, galerie du Jeu de Paume
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2734892
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2734892
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2734892
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2734892
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2734892
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2734892
+    - url: https://www.musee-orsay.fr/fr/oeuvres/femmes-au-jardin-807
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

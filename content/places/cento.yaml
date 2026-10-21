@@ -1,0 +1,37 @@
+public_id: 102068
+name: Cento
+names:
+  - lang: ja
+    role: translation
+    text: チェント
+  - lang: zh
+    role: translation
+    text: 琴托
+  - lang: ko
+    role: translation
+    text: 첸토
+  - lang: ru
+    role: translation
+    text: Ченто
+kind: settlement
+parent: province-of-ferrara
+country_code: IT
+location: [11.28333, 44.73333]
+wikidata_id: Q95094
+metadata:
+  sources: [Wikidata Q95094 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4216324-9
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q95094
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q95094
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q95094

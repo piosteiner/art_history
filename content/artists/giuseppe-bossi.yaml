@@ -1,0 +1,37 @@
+public_id: 102080
+name: Giuseppe Bossi
+names:
+  - cav. Giuseppe Bossi
+  - lang: zh
+    role: translation
+    text: 朱塞佩·博西
+  - lang: ru
+    role: translation
+    text: Джузеппе Босси
+birth: 1777-08-11
+death: 1815-12-15
+wikidata_id: Q428638
+metadata:
+  sources: [Wikidata Q428638 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/IMG_4010_-_Milano%2C_Palazzo_di_Brera_-_Bossi%2C_Giuseppe_-_Foto_Giovanni_Dall%27Orto19-jan_2007.jpg/1280px-IMG_4010_-_Milano%2C_Palazzo_di_Brera_-_Bossi%2C_Giuseppe_-_Foto_Giovanni_Dall%27Orto19-jan_2007.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:IMG_4010_-_Milano,_Palazzo_di_Brera_-_Bossi,_Giuseppe_-_Foto_Giovanni_Dall%27Orto19-jan_2007.jpg
+    license: Attribution
+    credit: Giovanni Dall'Orto
+identifiers:
+  bnf: 12685581j
+  gnd: "100429521"
+  idref: "050127055"
+  lc: n84186659
+  rkd: "11189"
+  ulan: "500012413"
+  viaf: "14894672"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q428638
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q428638

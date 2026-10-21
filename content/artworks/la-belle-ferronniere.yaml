@@ -1,0 +1,117 @@
+public_id: 101698
+title_lang: fr
+title: Portrait de femme, dit à tort La Belle Ferronnière
+names:
+  - Portrait of a Woman
+  - Portrait of a Lady from the Court of Milan
+  - La belle ferronnière
+  - lang: nl
+    role: translation
+    text: Portret van een dame
+  - lang: de
+    role: translation
+    text: Porträt einer Dame
+  - lang: it
+    role: translation
+    text: Belle Ferronnière
+  - lang: es
+    role: translation
+    text: La Belle Ferronière
+  - lang: ja
+    role: translation
+    text: ミラノの貴婦人の肖像
+  - lang: zh
+    role: translation
+    text: 美麗的費隆妮葉夫人
+  - lang: ru
+    role: translation
+    text: Прекрасная Ферроньера
+creator: leonardo-da-vinci
+created: c. 1490–1497
+materials: [oil paint, panel]
+dimensions: [63, 45, 7]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 778
+web_url: https://collections.louvre.fr/ark:/53355/cl010062372
+wikidata_id: Q656434
+metadata:
+  sources: [Wikidata Q656434 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/La_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg/1280px-La_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg
+    license: Public domain
+    credit: Leonardo da Vinci
+provenance:
+  - owner: artist/leonardo-da-vinci
+    acquired: c. 1490
+    method: creation
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062372
+        note: "Date de création/fabrication : 4e quart du XVe siècle (vers 1490 - 1497)"
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/french-royal-collection
+    acquired: before 1642
+    place: fontainebleau
+    label: first mentioned almost certainly in 1642, at Fontainebleau — probably in the royal collection earlier, perhaps from Louis XII or Francis I
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062372
+        note: Ce tableau est mentionné pour la première fois, de façon à peu près certaine, en 1642 au château de Fontainebleau. Il est vraisemblablement entré plus tôt dans les collections royales françaises, peut-être dès le règne de Louis XII ou celui de François Ier.
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - kind: sighting
+        date: "1642"
+        note: first mention, “de façon à peu près certaine”
+        place: fontainebleau
+        certainty: probable
+  - owner: institution/musee-du-louvre
+    acquired: 1793
+    method: transfer
+    direct: true
+    place: paris
+    label: the royal collection became the nation's (“ancienne collection royale”)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062372
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne, 1793"
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 317
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+identifiers:
+  gnd: 7539248-3
+  viaf: "182027552"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q656434
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010062372
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q656434
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q656434
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q656434
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q656434
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q656434
+    - url: https://collections.louvre.fr/ark:/53355/cl010062372
+      source: louvre-collections
+      accessed: 2026-10-20

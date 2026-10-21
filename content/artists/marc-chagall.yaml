@@ -1,0 +1,61 @@
+public_id: 102197
+name: Marc Chagall
+names:
+  - lang: ru
+    role: original
+    text: Марк Захарович Шагал
+  - Marc Zakharovich Chagall
+  - Moshe Segal
+  - Marḳ Shagal
+  - Chagall
+  - m. chagall
+  - Mark Zakharovich Shagal'
+  - Syagal
+  - Moses Shagal
+  - Mark Zakharovich Shagal
+  - Mark Sacharovich Schagal Chagall
+  - Marc Szagal
+  - Mark Shagal
+  - Moïche Zakharovitch Chagalov
+  - M. Shagal
+  - Marŭkkŭ Syagal
+  - Mark Shahal
+  - lang: ja
+    role: translation
+    text: マルク・シャガール
+  - lang: zh
+    role: translation
+    text: 馬克·夏卡爾
+  - lang: ko
+    role: translation
+    text: 마르크 샤갈
+birth: 1887-07-06
+death: 1985-03-28
+wikidata_id: Q93284
+metadata:
+  sources: [Wikidata Q93284 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Shagal_Choumoff.jpg/1280px-Shagal_Choumoff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shagal_Choumoff.jpg
+    license: Public domain
+    credit: Pierre Choumoff
+identifiers:
+  bnf: "118958588"
+  dodis: P22351
+  gnd: "118519980"
+  idref: "027285596"
+  kulturnav: cf951453-1996-4a98-b730-a087470e927e
+  lc: n79043105
+  nlk: KAC199604736
+  rkd: "16236"
+  ulan: "500115354"
+  viaf: "103953801"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q93284
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q93284

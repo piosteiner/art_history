@@ -1,0 +1,237 @@
+public_id: 101848
+title_lang: fr
+title: L'Angélus
+names:
+  - lang: en
+    role: translation
+    text: The Angelus
+  - lang: nl
+    role: translation
+    text: Het angelus
+  - lang: de
+    role: translation
+    text: Angelusgebet
+  - lang: it
+    role: translation
+    text: L'Angelus
+  - lang: es
+    role: translation
+    text: El Ángelus
+  - lang: ja
+    role: translation
+    text: 晩鐘
+  - lang: zh
+    role: translation
+    text: 晚禱
+  - lang: ko
+    role: translation
+    text: 만종
+  - lang: ru
+    role: translation
+    text: Анжелюс
+creator: jean-francois-millet
+created: 1857/1859
+created_label: c. 1858
+materials: [oil paint, canvas]
+dimensions: [55.5, 66]
+institution: musee-d-orsay
+inventory_number: RF 1877
+web_url: https://archive.org/details/collectiondemjoh00gale/page/n431/mode/1up
+wikidata_id: Q2571560
+metadata:
+  sources: [Wikidata Q2571560 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_%28Museo_de_Orsay%2C_1857-1859._%C3%93leo_sobre_lienzo%2C_55.5_x_66_cm%29.jpg/1280px-JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_%28Museo_de_Orsay%2C_1857-1859._%C3%93leo_sobre_lienzo%2C_55.5_x_66_cm%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:JEAN-FRAN%C3%87OIS_MILLET_-_El_%C3%81ngelus_(Museo_de_Orsay,_1857-1859._%C3%93leo_sobre_lienzo,_55.5_x_66_cm).jpg
+    license: Public domain
+    credit: Jean-François Millet
+provenance:
+  - owner: person/thomas-gold-appleton
+    acquired: c. 1857
+    method: commission
+    label: commissioned by the Boston collector, who never took delivery
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: Commandé par Thomas Gold Appleton vers 1857, qui n'en prend pas livraison.
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: artist/jean-francois-millet
+    acquired: 1857
+    ended: 1860
+    method: creation
+    place: barbizon
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: Date entre 1857 et 1859
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Papeleu
+    acquired: 1860
+    ended: 1860
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: en 1860, dans la collection Papeleu
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: artist/alfred-stevens
+    acquired: 1860
+    ended: 1860
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: en 1860, dans la collection Alfred Stevens
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/jules-van-praet
+    acquired: 1860
+    ended: 1864
+    place: brussels
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: à partir de 1860, dans la collection Van Praët, Bruxelles
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Paul Tesse
+    acquired: 1864
+    ended: 1865
+    method: exchange
+    place: paris
+    label: exchanged by Van Praet for La Grande Bergère
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: à partir de 1864, dans la collection Paul Tesse (il l'échange contre "La grande bergère", RF 1879)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+    exchanged_for_text: Millet's La Grande Bergère (Orsay, RF 1879)
+  - owner_label: Émile Gavet
+    acquired: 1865
+    ended: 1872-02-03
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: à partir de 1865, dans la collection Emile Gavet, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/paul-durand-ruel
+    role: dealer
+    numbers:
+      - kind: stock
+        number: "993"
+    acquired: 1872-02-03
+    ended: 1872-07-08
+    method: purchase
+    direct: true
+    place: paris
+    label: stock no. 993
+    price:
+      amount: 30000
+      currency: AFRF
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: 3 février 1872, acheté par Paul Durand-Ruel à Gavet pour 30 000 francs (stock n° 993)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/leon-gauchez
+    role: dealer
+    acquired: 1872-07-08
+    method: purchase
+    direct: true
+    price:
+      amount: 38000
+      currency: AFRF
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: 8 juillet 1872, acheté par Gauchez à Paul Durand-Ruel pour 38 000 francs
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: John Waterloo Wilson
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: collection John Waterloo Wilson
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/eugene-secretan
+    numbers:
+      - kind: lot
+        number: "63"
+    ended: 1889-07-01
+    place: paris
+    label: the Secrétan sale, Paris, Galerie Sedelmeyer, 1 July 1889, no. 63
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: collection Secrétan galerie Petit jusqu'en 1889, dans la collection Secrétan 1889, vente Secrétan, Paris, galerie Sedelmeyer, 1er juillet 1889, n°63
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/american-art-association
+    acquired: 1889-07-01
+    ended: 1890
+    method: auction
+    direct: true
+    label: bought at the Secrétan sale in Paris and taken to the United States
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: de 1889 à 1890, dans la collection American Art Association (acquis à la vente Secrétan à Paris du 1er juillet)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/alfred-chauchard
+    acquired: 1890
+    ended: 1909
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: de 1890 à 1909, dans la collection Alfred Chauchard (acquis à l'American Art Association)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1909/1910-01-15
+    method: bequest
+    direct: true
+    place: paris
+    label: Chauchard's bequest (will of 1906; committee 4 December, council 6 December 1909, decree 15 January 1910; arrived 1909)
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: 1910, accepté par l'Etat à titre de legs d'Alfred Chauchard (comité du 04/12/1909, conseil du 06/12/1909, décret du 15/01/1910, testament de 1906, entrée matérielle en 1909) 1910, attribué au musée du Louvre
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2571560
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2571560
+    - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2571560
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2571560
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2571560
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2571560
+  inventory_number:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/langelus-345
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

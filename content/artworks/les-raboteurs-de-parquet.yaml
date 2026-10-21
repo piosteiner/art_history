@@ -1,0 +1,115 @@
+public_id: 101852
+title_lang: fr
+title: Raboteurs de parquets
+names:
+  - lang: de
+    role: translation
+    text: Die Parkettschleifer
+  - lang: it
+    role: translation
+    text: I piallatori di parquet
+  - lang: es
+    role: translation
+    text: Los acuchilladores de parqué
+  - lang: ja
+    role: translation
+    text: 床削り
+  - lang: ko
+    role: translation
+    text: 마루 깎는 사람들
+  - lang: ru
+    role: translation
+    text: Паркетчики
+creator: gustave-caillebotte
+created: 1875
+materials: [oil paint, canvas]
+dimensions: [102, 146.5]
+institution: musee-d-orsay
+inventory_number: RF 2718
+web_url: https://www.wga.hu/html_m/c/caillebo/01floor.html
+wikidata_id: Q1766454
+metadata:
+  sources: [Wikidata Q1766454 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Gustave_Caillebotte_-_The_Floor_Planers_-_Google_Art_Project.jpg/1280px-Gustave_Caillebotte_-_The_Floor_Planers_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Caillebotte_-_The_Floor_Planers_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Gustave Caillebotte
+provenance:
+  - owner: artist/gustave-caillebotte
+    acquired: 1875
+    ended: 1894
+    method: creation
+    place: paris
+    label: offered in the sale of 45 paintings by Caillebotte, Pissarro, Renoir and Sisley, Hôtel Drouot, 28 May 1877 (no. 1 or 2) and taken back by the artist
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/raboteurs-de-parquets-105
+        note: 1877, vente de 45 tableaux à l'Hôtel Drouot, Paris, le 28 mai, par MM. Caillebotte - Pissarro - Renoir - Sisley, n°1 ou 2, repris par l'artiste de 1877 à 1894, dans la collection Gustave Caillebotte
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/luxembourg-museum
+    acquired: 1894
+    ended: 1929
+    method: gift
+    place: paris
+    label: given by Caillebotte's heirs through Auguste Renoir, his executor; at the Musée du Luxembourg from 1896
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/raboteurs-de-parquets-105
+        note: 1894, accepté par l'Etat à titre de don des héritiers de Gustave Caillebotte par l'intermédiaire d'Auguste Renoir, son exécuteur testamentaire en 1894. Entrée matérielle au Musée du Luxembourg en 1896. de 1896 à 1929, au musée du Luxembourg
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1929-01-05
+    method: transfer
+    direct: true
+    place: paris
+    label: at the Jeu de Paume 1947–1986 (then the Musée de l'Impressionnisme); deposited at the Élysée Palace 1977–1978
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/raboteurs-de-parquets-105
+        note: 1929, attribué au musée du Louvre, Paris de 1929 à 1947, au musée du Louvre, Paris (à partir du 5 janvier 1929) de 1947 à 1986, musée du Louvre, galerie du Jeu de Paume, Paris (alors musée de l'Impressionnisme) de 1977 à 1978, déposé au palais de l'Elysée
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/raboteurs-de-parquets-105
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1766454
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1766454
+    - url: https://www.musee-orsay.fr/fr/oeuvres/raboteurs-de-parquets-105
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1766454
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1766454
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1766454
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1766454
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1766454
+    - url: https://www.musee-orsay.fr/fr/oeuvres/raboteurs-de-parquets-105
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

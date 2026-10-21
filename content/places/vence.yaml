@@ -1,0 +1,38 @@
+public_id: 102167
+name: Vence
+names:
+  - lang: ja
+    role: translation
+    text: ヴァンス
+  - lang: zh
+    role: translation
+    text: 旺斯
+  - lang: ko
+    role: translation
+    text: 방스
+  - lang: it
+    role: translation
+    text: Venza
+  - lang: ru
+    role: translation
+    text: Ванс
+kind: settlement
+parent: france
+country_code: FR
+location: [7.11186, 43.72247]
+wikidata_id: Q192368
+metadata:
+  sources: [Wikidata Q192368 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q192368
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q192368
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q192368

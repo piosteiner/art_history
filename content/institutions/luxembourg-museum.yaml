@@ -1,0 +1,49 @@
+public_id: 101782
+name: Luxembourg Museum
+names:
+  - Musée du Luxembourg
+  - Musee du Luxembourg
+  - lang: ja
+    role: translation
+    text: リュクサンブール美術館
+  - lang: zh
+    role: translation
+    text: 卢森堡博物馆
+  - lang: ko
+    role: translation
+    text: 룩셈부르크 박물관
+  - lang: ru
+    role: translation
+    text: Музей в Люксембургском саду
+founded: 1750
+place: paris
+location: [2.33403, 48.84861]
+website_url: http://www.museeduluxembourg.fr/
+wikidata_id: Q1411180
+metadata:
+  sources: [Wikidata Q1411180 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Expo_Louis-Comfort_Tiffany.JPG/1280px-Expo_Louis-Comfort_Tiffany.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Expo_Louis-Comfort_Tiffany.JPG
+    license: CC BY-SA 3.0
+    credit: LPLT
+identifiers:
+  bnf: 11868627j
+  gnd: 514885-6
+  idref: "026438836"
+  lc: n50055368
+  ulan: "500310622"
+  viaf: "123782944"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q1411180
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1411180
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1411180

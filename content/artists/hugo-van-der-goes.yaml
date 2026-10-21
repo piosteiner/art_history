@@ -1,0 +1,18 @@
+public_id: 101957
+name: Hugo van der Goes
+given_name: Hugo
+family_name: van der Goes
+birth: c. 1440
+death: 1482
+wikidata_id: Q215251
+metadata:
+  sources: [Wikidata Q215251 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q215251
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q215251

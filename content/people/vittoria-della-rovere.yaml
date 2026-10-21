@@ -1,0 +1,53 @@
+public_id: 101931
+name: Vittoria della Rovere
+names:
+  - lang: es
+    role: translation
+    text: Victoria della Rovere
+  - lang: ja
+    role: translation
+    text: ヴィットーリア・デッラ・ローヴェレ
+  - lang: zh
+    role: translation
+    text: 維多利亞·德拉·羅維雷
+  - lang: ko
+    role: translation
+    text: 비토리아 델라 로베레
+  - lang: ru
+    role: translation
+    text: Виттория делла Ровере
+kind: person
+occupations: [politician]
+birth: 1622-02-07
+death: 1694-03-05
+wikidata_id: Q60139
+metadata:
+  sources: [Wikidata Q60139 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Sustermans%2C_Justus_-_Official_portrait_of_Vittoria_della_Rovere_as_Grand_Duchess_of_Tuscany.jpg/1280px-Sustermans%2C_Justus_-_Official_portrait_of_Vittoria_della_Rovere_as_Grand_Duchess_of_Tuscany.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sustermans,_Justus_-_Official_portrait_of_Vittoria_della_Rovere_as_Grand_Duchess_of_Tuscany.jpg
+    license: Public domain
+    credit: Justus Sustermans
+identifiers:
+  gnd: "131930648"
+  idref: "150317166"
+  lc: n97874646
+  ulan: "500353933"
+  viaf: "1158831"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q60139
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q60139
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q60139
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q60139

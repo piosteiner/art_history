@@ -1,0 +1,39 @@
+public_id: 101865
+name: Glasgow
+names:
+  - Glasgow, Scotland
+  - Glasgow, UK
+  - lang: ja
+    role: translation
+    text: グラスゴー
+  - lang: zh
+    role: translation
+    text: 格拉斯哥
+  - lang: ko
+    role: translation
+    text: 글래스고
+  - lang: ru
+    role: translation
+    text: Глазго
+kind: settlement
+parent: glasgow-city
+country_code: GB
+location: [-4.25, 55.86111]
+wikidata_id: Q4093
+metadata:
+  sources: [Wikidata Q4093 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4021159-9
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q4093
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q4093
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q4093

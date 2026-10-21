@@ -1,0 +1,105 @@
+public_id: 102097
+title_lang: it
+title: Ritratto di Andrea Doria come Nettuno
+names:
+  - lang: en
+    role: original
+    text: Portrait of Andrea Doria as Neptune
+  - lang: nl
+    role: translation
+    text: Portret van Andrea Doria als Neptunus
+  - lang: fr
+    role: translation
+    text: Portrait d'Andrea Doria en Neptune
+  - lang: de
+    role: translation
+    text: Andrea Doria als Neptun
+  - lang: es
+    role: translation
+    text: Retrato de Andrea Doria como Neptuno
+  - lang: ja
+    role: translation
+    text: ネプトゥヌスに扮したアンドレア・ドーリア
+  - lang: zh
+    role: translation
+    text: 海神安德烈亚·多利亚
+  - lang: ru
+    role: translation
+    text: Портрет Андреа Дориа в образе Нептуна
+creator: bronzino
+created: 1540/1551
+created_label: c. 1540s
+materials: [oil paint, canvas]
+dimensions: [115, 53]
+institution: pinacoteca-di-brera
+inventory_number: "1206"
+web_url: https://pinacotecabrera.org/collezioni/collezione-on-line/ritratto-di-andrea-doria-come-nettuno/
+wikidata_id: Q493792
+metadata:
+  sources: [Wikidata Q493792 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/57/Andrea_Doria_as_Neptune._Bronzino_%28Agnolo_di_Cosimo%29_c._1545-6._Paolo_Giovo_collection._Pinacoteca_di_Brera.jpg/1280px-Andrea_Doria_as_Neptune._Bronzino_%28Agnolo_di_Cosimo%29_c._1545-6._Paolo_Giovo_collection._Pinacoteca_di_Brera.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Doria_as_Neptune._Bronzino_(Agnolo_di_Cosimo)_c._1545-6._Paolo_Giovo_collection._Pinacoteca_di_Brera.jpg
+    license: Public domain
+    credit: Bronzino
+provenance:
+  - owner: person/paolo-giovio
+    acquired: c. 1545
+    method: commission
+    place: como
+    label: commissioned for the museum of “verae imagines” of famous men he was building at Borgovico near Como
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/ritratto-di-andrea-doria-come-nettuno/
+        note: Il collezionista e scrittore comasco commissionò al Bronzino questo ritratto per esporlo nel museo che stava allestendo a Borgovico presso Como per raccogliervi le «verae imagines» di uomini illustri.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: Alfredo Rovelli, heir of Paolo Giovio's collection
+    ended: 1898
+    method: inheritance
+    place: como
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/ritratto-di-andrea-doria-come-nettuno/
+        note: Il dipinto risulta acquistato nel 1898 da Alfredo Rovelli, erede della raccolta di Paolo Giovio.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1898
+    method: purchase
+    direct: true
+    place: milan
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/ritratto-di-andrea-doria-come-nettuno/
+        note: Il dipinto risulta acquistato nel 1898 da Alfredo Rovelli
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q493792
+  created:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/ritratto-di-andrea-doria-come-nettuno/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q493792
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q493792
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q493792
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q493792
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q493792
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/ritratto-di-andrea-doria-come-nettuno/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

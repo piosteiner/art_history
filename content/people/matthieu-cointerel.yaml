@@ -1,0 +1,45 @@
+public_id: 102192
+name: Matthieu Cointerel
+given_name: Matthieu
+family_name: Cointerel
+names:
+  - Mathieu Cointrel
+  - Matteo Contarelli
+  - lang: nl
+    role: translation
+    text: Matthieu Contarelli
+  - lang: ru
+    role: translation
+    text: Матье Куэнтрель
+kind: person
+occupations: [Catholic priest]
+birth: 1519
+death: 1585
+wikidata_id: Q6791639
+metadata:
+  sources: [Wikidata Q6791639 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/bf/Cardinal_Matthieu_Cointrel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cardinal_Matthieu_Cointrel.jpg
+    license: Public domain
+    credit: Video directed by Alain Jaubert, author of engraving unknown.
+identifiers:
+  gnd: "1011545047"
+  viaf: "170737451"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q6791639
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q6791639
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q6791639
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q6791639

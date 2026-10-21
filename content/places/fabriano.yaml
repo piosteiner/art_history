@@ -1,0 +1,37 @@
+public_id: 102064
+name: Fabriano
+names:
+  - lang: ja
+    role: translation
+    text: ファブリアーノ
+  - lang: zh
+    role: translation
+    text: 法布里亚诺
+  - lang: ko
+    role: translation
+    text: 파브리아노
+  - lang: ru
+    role: translation
+    text: Фабриано
+kind: settlement
+parent: province-of-ancona
+country_code: IT
+location: [12.90852, 43.33856]
+wikidata_id: Q13145
+metadata:
+  sources: [Wikidata Q13145 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4195784-2
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q13145
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q13145
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q13145

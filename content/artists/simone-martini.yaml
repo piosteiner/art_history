@@ -1,0 +1,18 @@
+public_id: 101959
+name: Simone Martini
+given_name: Simone
+family_name: Martini
+birth: 1284
+death: 1344-08-09
+wikidata_id: Q221043
+metadata:
+  sources: [Wikidata Q221043 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q221043
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q221043

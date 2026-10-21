@@ -1,0 +1,124 @@
+public_id: 101841
+title_lang: fr
+title: Un enterrement à Ornans
+names:
+  - lang: en
+    role: original
+    text: A Burial at Ornans
+  - lang: fr
+    role: translation
+    text: Un enterrement à Ornans
+  - lang: de
+    role: translation
+    text: Ein Begräbnis in Ornans
+  - lang: it
+    role: translation
+    text: Funerale a Ornans
+  - lang: es
+    role: translation
+    text: Entierro en Ornans
+  - lang: ja
+    role: translation
+    text: オルナンの埋葬
+  - lang: zh
+    role: translation
+    text: 奥南的葬礼
+  - lang: ko
+    role: translation
+    text: 오르낭의 매장
+  - lang: ru
+    role: translation
+    text: Похороны в Орнане
+creator: gustave-courbet
+created: 1849/1850
+created_label: c. 1840s
+materials: [oil paint, canvas]
+dimensions: [315, 668]
+institution: musee-d-orsay
+inventory_number: RF 325
+web_url: https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924
+wikidata_id: Q540488
+metadata:
+  sources: [Wikidata Q540488 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg/1280px-Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet_-_A_Burial_at_Ornans_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: artist/gustave-courbet
+    acquired: 1849
+    ended: 1877
+    method: creation
+    place: ornans
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924
+        note: Date entre 1849 et 1850
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/juliette-courbet
+    acquired: 1877
+    ended: 1881
+    method: inheritance
+    direct: true
+    label: the artist's sister
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924
+        note: de 1877 à 1881, dans la collection Juliette Courbet, soeur de l'artiste
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1881
+    method: gift
+    direct: true
+    place: paris
+    label: given by Juliette Courbet; at the Louvre 1882–1986
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924
+        note: 1881, accepté par l'Etat à titre de don de Mlle Juliette Courbet 1881, attribué au musée du Louvre, Paris de 1882 à 1986, musée du Louvre, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q540488
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q540488
+    - url: https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q540488
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q540488
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q540488
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q540488
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q540488
+    - url: https://www.musee-orsay.fr/fr/oeuvres/un-enterrement-ornans-924
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

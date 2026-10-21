@@ -1,0 +1,45 @@
+public_id: 102244
+title_lang: fr
+title: Salle des Taureaux (grotte de Lascaux)
+names:
+  - lang: en
+    role: translation
+    text: Hall of the Bulls (Lascaux)
+medium: peintures et gravures pariétales
+location: [1.17096, 45.05377]
+description_md: The great hall at the entrance of the Lascaux cave, with its aurochs, horses and deer. Most prehistorians date the paintings to the early Magdalenian, around 21,000 years cal BP — the dating of the cave's materials is debated.[[source/wikipedia-fr-lascaux|« La plupart des préhistoriens les attribuent néanmoins à la période du Magdalénien ancien, autour de 21 000 ans cal AP. »]]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1e/Lascaux_painting.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg
+    license: see Wikimedia Commons
+provenance:
+  - owner_label: the La Rochefoucauld-Montbel family (the Lascaux estate)
+    ended: 1972
+    place: montignac-lascaux
+    label: owners of the estate, with the hill holding the cave, when it was found — the noble estate had passed from the Lascaux to the du Cheylard, de Reilhac, Labrousse de Lascaux and La Rochefoucauld-Montbel
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Grotte_de_Lascaux
+        note: Le domaine noble changea de mains au fil des siècles, passant de la famille de Lascaux à celle du Cheylard, puis aux de Reilhac, aux Labrousse de Lascaux, puis finalement aux La Rochefoucauld-Montbel, propriétaires du domaine au moment de la découverte de la grotte.
+        source: wikipedia-fr-lascaux
+        accessed: 2026-10-20
+  - owner_label: Marcel Ravidat, Georges Agniel, Simon Coencas, Jacques Marsal
+    role: event
+    acquired: 1940-09-08/1940-09-12
+    method: find
+    place: montignac-lascaux
+    label: Marcel Ravidat found the opening on 8 September 1940 and came back on 12 September with the three others; the abbé Breuil visited on 21 September; open to the public 1948, closed 1963
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Grotte_de_Lascaux
+        note: le 8 septembre 1940, Marcel Ravidat découvre l'entrée de la cavité lors d'une promenade sur la commune de Montignac en Dordogne. […] Quatre jours plus tard, le 12 septembre, Marcel Ravidat […] revient sur les lieux accompagné cette fois de Georges Agniel, Simon Coencas, Jacques Marsal.
+        source: wikipedia-fr-lascaux
+        accessed: 2026-10-20
+  - owner_label: French State
+    acquired: 1972
+    method: purchase
+    direct: true
+    place: montignac-lascaux
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Grotte_de_Lascaux
+        note: En 1972, les La Rochefoucauld cèdent la grotte à l'État.
+        source: wikipedia-fr-lascaux
+        accessed: 2026-10-20

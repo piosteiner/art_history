@@ -1,0 +1,137 @@
+public_id: 101853
+title_lang: fr
+title: Le Cirque
+names:
+  - lang: nl
+    role: translation
+    text: Het circus
+  - lang: fr
+    role: translation
+    text: Le Cirque
+  - lang: it
+    role: translation
+    text: Il circo
+  - lang: es
+    role: translation
+    text: El circo
+  - lang: zh
+    role: translation
+    text: 马戏 (修拉)
+  - lang: ko
+    role: translation
+    text: 서커스
+  - lang: ru
+    role: translation
+    text: Цирк
+creator: georges-seurat
+created: 1891
+materials: [oil paint, canvas]
+dimensions: [185, 152]
+institution: musee-d-orsay
+inventory_number: RF 2511
+web_url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+wikidata_id: Q2275610
+metadata:
+  sources: [Wikidata Q2275610 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Georges_Seurat_-_The_Circus_-_Google_Art_Project.jpg/1280px-Georges_Seurat_-_The_Circus_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Seurat_-_The_Circus_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Georges Seurat
+provenance:
+  - owner: artist/georges-seurat
+    acquired: 1891
+    ended: 1891
+    method: creation
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+        note: Date 1891
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Mme Seurat, the artist's mother
+    acquired: 1891
+    method: inheritance
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+        note: collection Mme Seurat mère
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Émile Seurat and Léon Appert
+    method: inheritance
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+        note: collection Emile Seurat et Léon Appert
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: artist/paul-signac
+    acquired: 1900
+    ended: 1924
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+        note: 1900, dans la collection Paul Signac
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: John Quinn (1870–1924), New York lawyer and collector
+    ended: 1924
+    place: new-york-city
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+        note: jusqu'en 1924, dans la collection John Quinn
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1926/1927-05-21
+    method: bequest
+    direct: true
+    place: paris
+    label: John Quinn's bequest for the Louvre (committee 16 October 1924, council 1 March 1926, decree 21 May 1927; arrived 1926); at the Luxembourg 1929–1939, the Musée national d'Art moderne 1939–1947, the Jeu de Paume 1947–1977
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+        note: 1927, accepté par l'Etat à titre de legs de John Quinn pour le musée du Louvre (comité du 16/10/1924, conseil du 01/03/1926, arrêté du 21/05/1927) 1927, attribué au musée du Louvre, Paris (entrée matérielle en 1926) de 1929 à 1939, musée du Luxembourg, Paris de 1939 à 1947, musée national d'Art moderne
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1977
+    method: transfer
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+        note: 1977, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2275610
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2275610
+    - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2275610
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2275610
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2275610
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2275610
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2275610
+    - url: https://www.musee-orsay.fr/fr/oeuvres/le-cirque-542
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

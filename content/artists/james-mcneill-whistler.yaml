@@ -1,0 +1,18 @@
+public_id: 101842
+name: James McNeill Whistler
+given_name: James McNeill
+family_name: Whistler
+birth: 1834-07-10
+death: 1903-07-17
+wikidata_id: Q203643
+metadata:
+  sources: [Wikidata Q203643 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q203643
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q203643

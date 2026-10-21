@@ -1,0 +1,16 @@
+public_id: 102072
+name: regional decentralization entity of Pordenone
+kind: site
+location: [12.66105, 45.96]
+wikidata_id: Q104155857
+metadata:
+  sources: [Wikidata Q104155857 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q104155857
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q104155857

@@ -1,0 +1,70 @@
+public_id: 101925
+name: Cosimo III de' Medici, Grand Duke of Tuscany
+names:
+  - lang: it
+    role: original
+    text: Cosimo III de' Medici
+  - Cosimo III, granduca di Toscana De' Medici
+  - Grand Duke of Tuscany Cosimo III de' Medici
+  - Grand-Duke of Tuscany Cosimo III
+  - de' Medici, Grand Duke of Tuscany Cosimo III
+  - Cosimo III de', granduca di Toscana Medici
+  - Cosimo III de' Medici,
+  - lang: fr
+    role: translation
+    text: Cosme III de Médicis
+  - lang: de
+    role: translation
+    text: Cosimo III. de’ Medici
+  - lang: es
+    role: translation
+    text: Cosme III de Médici
+  - lang: ja
+    role: translation
+    text: コジモ3世
+  - lang: zh
+    role: translation
+    text: 科西莫三世·德·美第奇
+  - lang: ko
+    role: translation
+    text: 코시모 3세
+  - lang: ru
+    role: translation
+    text: Козимо III Медичи
+kind: person
+occupations: [statesperson, politician, art collector]
+birth: 1642-08-14
+death: 31 October 1723
+wikidata_id: Q47292
+metadata:
+  sources: [Wikidata Q47292 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a7/Volterrano%2C_Cosimo_III_de%27_Medici_in_grand_ducal_robes_%28Warsaw_Royal_Castle%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Volterrano,_Cosimo_III_de%27_Medici_in_grand_ducal_robes_(Warsaw_Royal_Castle).jpg
+    license: Public domain
+    credit: Baldassare Franceschini
+identifiers:
+  bnf: 11971838f
+  gnd: "118882945"
+  idref: "027740161"
+  lc: n81057115
+  rkd: "438535"
+  ulan: "500238556"
+  viaf: "14743515"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q47292
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q47292
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q47292
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q47292

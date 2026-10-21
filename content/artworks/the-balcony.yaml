@@ -1,0 +1,162 @@
+public_id: 101846
+title_lang: fr
+title: Le Balcon
+names:
+  - lang: en
+    role: original
+    text: The Balcony
+  - lang: nl
+    role: translation
+    text: Het balkon
+  - lang: de
+    role: translation
+    text: Der Balkon
+  - lang: it
+    role: translation
+    text: Il balcone
+  - lang: es
+    role: translation
+    text: El balcón
+  - lang: ja
+    role: translation
+    text: バルコニー
+  - lang: ko
+    role: translation
+    text: 발코니
+  - lang: ru
+    role: translation
+    text: Балкон
+creator: edouard-manet
+created: 1868/1869
+materials: [oil paint, canvas]
+dimensions: [170, 124.5]
+institution: musee-d-orsay
+inventory_number: RF 2772
+web_url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+wikidata_id: Q775407
+metadata:
+  sources: [Wikidata Q775407 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Edouard_Manet_-_The_Balcony_-_Google_Art_Project.jpg/1280px-Edouard_Manet_-_The_Balcony_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_The_Balcony_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: artist/edouard-manet
+    acquired: 1868
+    ended: 1883
+    method: creation
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+        note: Date entre 1868 et 1869
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Manet's estate
+    role: estate
+    numbers:
+      - kind: lot
+        number: "2"
+    acquired: 1883
+    ended: 1884-02-05
+    method: inheritance
+    place: paris
+    label: studio sale after the artist's death, Hôtel Drouot, 4 and 5 February 1884, no. 2
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+        note: 1884, 4 et 5 février, vente Manet à l'hôtel Drouot, Paris, n°2
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: artist/gustave-caillebotte
+    acquired: 1884-02-05
+    ended: 1894
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the posthumous sale of Manet's studio (in his estate inventory of 8 March 1894)
+    price:
+      amount: 3000
+      currency: AFRF
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+        note: dans la collection Gustave Caillebotte, acquis lors de la vente posthume de l'atelier d'Edouard Manet les 4 et 5 février 1884 pour 3 000 francs (inventaire après décès du 8 mars 1894)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/martial-caillebotte
+    role: estate
+    acquired: 1894
+    ended: 1896-11
+    method: bequest
+    place: paris
+    label: fetched from Martial Caillebotte's by Léonce Bénédite in November 1896
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+        note: récupération de l'oeuvre par Léonce Bénédite chez Martial Caillebotte en novembre 1896
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/luxembourg-museum
+    acquired: 1896
+    ended: 1929-01-30
+    method: bequest
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+        note: 1896, accepté par l'Etat suite au legs de Gustave Caillebotte à destination du musée du Luxembourg de 1896 à 1929, attribué au musée du Luxembourg
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1929-01-30
+    method: transfer
+    direct: true
+    place: paris
+    label: at the Louvre's Jeu de Paume gallery 1947–1986
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+        note: de 1929 à 1947, musée du Louvre, Paris (à partir du 30 janvier 1929) de 1947 à 1986, musée du Louvre, galerie du Jeu de Paume
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 7571965-4
+  viaf: "192614146"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q775407
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q775407
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q775407
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q775407
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q775407
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q775407
+    - url: https://www.musee-orsay.fr/fr/oeuvres/le-balcon-707
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

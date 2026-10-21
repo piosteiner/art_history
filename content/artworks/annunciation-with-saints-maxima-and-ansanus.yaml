@@ -1,0 +1,110 @@
+public_id: 101961
+title_lang: it
+title: Annunciazione tra i santi Ansano e Margherita
+names:
+  - Annunciation with St. Margaret and St. Ansanus
+  - The Annunciation with St. Margaret and St. Ansanus
+  - St. Ansanus Altarpiece
+  - The Annunciation with St. Margaret and St. Ansanus (St. Ansanus Altarpiece)
+  - lang: en
+    role: original
+    text: Annunciation with Saints Maxima and Ansanus
+  - lang: nl
+    role: translation
+    text: Verkondiging met de heilige Margaretha en Ansanus
+  - lang: fr
+    role: translation
+    text: Annonciation entre les saints Ansan et Marguerite
+  - lang: de
+    role: translation
+    text: Verkündigung mit den Heiligen Maxima und Ansanus
+  - lang: it
+    role: translation
+    text: Annunciazione tra i santi Ansano e Margherita
+  - lang: es
+    role: translation
+    text: Anunciación entre los santos Ansano y Margarita
+  - lang: ja
+    role: translation
+    text: 聖女マルガリータと聖アンサヌスのいる受胎告知
+  - lang: zh
+    role: translation
+    text: 圣母领报和圣玛加利与圣安沙诺
+  - lang: ru
+    role: translation
+    text: Благовещение
+parent: cycle-of-four-altar-pieces-for-the-patron-saints-of-siena
+creator: simone-martini
+created: 1333
+materials: [tempera, panel]
+dimensions: [158, 48]
+institution: uffizi-gallery
+inventory_number: 1890 nos. 451, 452, 453
+web_url: https://www.uffizi.it/en/artworks/annunciation-with-st-margaret-and-st-ansanus
+wikidata_id: Q979440
+metadata:
+  sources: [Wikidata Q979440 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Simone_Martini_%E2%80%94_Annunciation_with_St._Margaret_and_St._Ansanus.jpg/1280px-Simone_Martini_%E2%80%94_Annunciation_with_St._Margaret_and_St._Ansanus.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Simone_Martini_%E2%80%94_Annunciation_with_St._Margaret_and_St._Ansanus.jpg
+    license: CC0
+    credit: Gleb Simonov
+provenance:
+  - owner: institution/siena-cathedral
+    acquired: 1333
+    ended: 1799
+    method: commission
+    place: siena
+    label: for the altar of Saint Ansanus, one of Siena's patron saints, in the cathedral
+    sources:
+      - url: https://it.wikipedia.org/wiki/Annunciazione_tra_i_santi_Ansano_e_Margherita
+        note: Il dipinto era stato commissionato per l'altare di sant'Ansano, uno dei protettori di Siena, nella cattedrale senese, dove rimase fino al 1799
+        source: wikipedia-it-annunciazione-simone-martini
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1799
+    method: exchange
+    direct: true
+    place: florence
+    label: Grand Duke Ferdinand III had it brought to Florence in exchange for two canvases by Luca Giordano; shown at the Uffizi the same year
+    sources:
+      - url: https://it.wikipedia.org/wiki/Annunciazione_tra_i_santi_Ansano_e_Margherita
+        note: quando il Granduca Ferdinando III lo fece trasportare a Firenze, scambiandolo con due tele di Luca Giordano. Qui venne esposto lo stesso anno agli Uffizi.
+        source: wikipedia-it-annunciazione-simone-martini
+        accessed: 2026-10-20
+    exchanged_for_text: two canvases by Luca Giordano
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q979440
+  parent:
+    - accessed: 2026-10-20
+      property: P179
+      wikidata: Q979440
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q979440
+    - url: https://www.uffizi.it/en/artworks/annunciation-with-st-margaret-and-st-ansanus
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q979440
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q979440
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q979440
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q979440
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/annunciation-with-st-margaret-and-st-ansanus
+      source: uffizi-artworks
+      accessed: 2026-10-20

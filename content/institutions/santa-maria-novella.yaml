@@ -1,0 +1,62 @@
+public_id: 101915
+name: Basilica of Santa Maria Novella
+names:
+  - Santa Maria Novella
+  - Basilica of Our Lady
+  - lang: fr
+    role: translation
+    text: basilique Santa Maria Novella
+  - lang: it
+    role: translation
+    text: basilica di Santa Maria Novella
+  - lang: es
+    role: translation
+    text: iglesia de Santa María Novella
+  - lang: ja
+    role: translation
+    text: サンタ・マリア・ノヴェッラ教会
+  - lang: zh
+    role: translation
+    text: 新圣母大殿
+  - lang: ko
+    role: translation
+    text: 산타 마리아 노벨라 성당
+  - lang: ru
+    role: translation
+    text: Санта-Мария-Новелла
+founded: 1278
+place: florence
+location: [11.24937, 43.7743]
+address: Piazza Santa Maria Novella 18, 50123 Firenze, FI
+website_url: https://www.smn.it
+wikidata_id: Q51175
+metadata:
+  sources: [Wikidata Q51175 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Santa_Maria_Novella_%28Florence%29.jpg/1280px-Santa_Maria_Novella_%28Florence%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Santa_Maria_Novella_(Florence).jpg
+    license: CC BY-SA 4.0
+    credit: Commonists
+identifiers:
+  bnf: 12482821f
+  gnd: 4214339-1
+  lc: n79100216
+  ulan: "500305290"
+  viaf: "157095715"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q51175
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q51175
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q51175
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q51175

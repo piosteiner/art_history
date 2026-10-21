@@ -1,0 +1,62 @@
+public_id: 101912
+name: Galleria dell'Accademia
+names:
+  - Galleria dell'Accademia di Firenze
+  - Accademia
+  - Accademia Gallery
+  - Galleria dell'Accademia (Florence)
+  - lang: fr
+    role: translation
+    text: Galleria dell'Accademia de Florence
+  - lang: es
+    role: translation
+    text: Galería de la Academia de Florencia
+  - lang: ja
+    role: translation
+    text: アカデミア美術館
+  - lang: zh
+    role: translation
+    text: 學院美術館
+  - lang: ko
+    role: translation
+    text: 아카데미아 미술관
+  - lang: ru
+    role: translation
+    text: Академия изящных искусств
+founded: 1784
+place: florence
+location: [11.25889, 43.77694]
+address: Via Ricasoli 58-60
+website_url: https://www.galleriaaccademiafirenze.it/
+wikidata_id: Q10855544
+metadata:
+  sources: [Wikidata Q10855544 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Florence_13_09_07_817000.jpeg/1280px-Florence_13_09_07_817000.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Florence_13_09_07_817000.jpeg
+    license: CC BY-SA 4.0
+    credit: Robot8A
+identifiers:
+  bnf: 12210345s
+  gnd: 5040825-2
+  idref: "030749700"
+  lc: n83204697
+  ulan: "500304836"
+  viaf: "145995779"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q10855544
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q10855544
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q10855544
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q10855544

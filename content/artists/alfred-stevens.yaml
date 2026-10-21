@@ -1,0 +1,52 @@
+public_id: 101877
+name: Alfred Stevens
+names:
+  - lang: fr
+    role: original
+    text: Alfred Émile Léopold Stevens
+  - Alfred-Émile-Léopold Stevens
+  - Alfred Emile Leopold Joseph Victor Stevens
+  - Alfred Emile-Léopold Stevens
+  - Alfred Emile Leopold Stevens
+  - Alfred-Emile-Leopold Stevens
+  - Alfred Emile-Leopold Stevens
+  - Stevens A.
+  - a. stevens
+  - alfr. stevens
+  - alfd. stevens
+  - alfred emile leopold victor stevens
+  - lang: ja
+    role: translation
+    text: アルフレッド・ステヴァンス
+  - lang: ru
+    role: translation
+    text: Альфред Стевенс
+birth: 1823-05-11
+death: 1906-08-24
+wikidata_id: Q773855
+metadata:
+  sources: [Wikidata Q773855 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Stevens%2C_Alfred%2C_Erwin_Hanfstaengl_phot.%2C_album_Manet%2C_BNF_Gallica.jpg/1280px-Stevens%2C_Alfred%2C_Erwin_Hanfstaengl_phot.%2C_album_Manet%2C_BNF_Gallica.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Stevens,_Alfred,_Erwin_Hanfstaengl_phot.,_album_Manet,_BNF_Gallica.jpg
+    license: Public domain
+    credit: Erwin Hanfstaengl
+identifiers:
+  bnf: 13630193b
+  dome: "1765"
+  gnd: "118798790"
+  idref: "085882771"
+  kulturnav: db2db6a0-fcd0-4af9-8eb6-47967021b70f
+  lc: n87896129
+  rkd: "75150"
+  ulan: "500000844"
+  viaf: "10025104"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q773855
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q773855

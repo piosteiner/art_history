@@ -1,0 +1,72 @@
+public_id: 102191
+name: Ludovico III Gonzaga, Marquis of Mantua
+names:
+  - lang: it
+    role: original
+    text: Luigi III Gonzaga
+  - Ludovico Gonzaga
+  - Ludovico, Duke of Mantua Gonzaga
+  - Lodovico Gonzaga
+  - Ludovico III Gonzaga
+  - Ludovico III Gonzaga of Mantua
+  - Ludovico III
+  - lang: nl
+    role: translation
+    text: Lodewijk III Gonzaga
+  - lang: fr
+    role: translation
+    text: Louis III de Mantoue
+  - lang: de
+    role: translation
+    text: Ludwig III Gonzaga
+  - lang: es
+    role: translation
+    text: Luis III Gonzaga
+  - lang: ja
+    role: translation
+    text: ルドヴィーコ3世・ゴンザーガ
+  - lang: zh
+    role: translation
+    text: 盧多維科三世·貢扎加
+  - lang: ko
+    role: translation
+    text: 루도비코 3세 곤차가
+  - lang: ru
+    role: translation
+    text: Лудовико III
+kind: person
+occupations: [condottiero, commissioner]
+birth: 1412-06-14
+death: 1478-06-21
+wikidata_id: Q969770
+metadata:
+  sources: [Wikidata Q969770 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Andrea_Mantegna_081.jpg/1280px-Andrea_Mantegna_081.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_081.jpg
+    license: Public domain
+    credit: Andrea Mantegna
+identifiers:
+  bnf: 15619170q
+  gnd: "121838951"
+  idref: "178758426"
+  lc: n80092790
+  ulan: "500115083"
+  viaf: "32862995"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q969770
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q969770
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q969770
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q969770

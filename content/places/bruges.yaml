@@ -1,0 +1,46 @@
+public_id: 101909
+name: Bruges
+names:
+  - lang: nl
+    role: translation
+    text: Brugge
+  - lang: de
+    role: translation
+    text: Brügge
+  - lang: es
+    role: translation
+    text: Brujas
+  - lang: ja
+    role: translation
+    text: ブルッヘ
+  - lang: zh
+    role: translation
+    text: 布鲁日
+  - lang: ko
+    role: translation
+    text: 브뤼허
+  - lang: ru
+    role: translation
+    text: Брюгге
+kind: settlement
+parent: arrondissement-of-bruges
+country_code: BE
+location: [3.22417, 51.20889]
+wikidata_id: Q12994
+metadata:
+  sources: [Wikidata Q12994 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4069688-1
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q12994
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q12994
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q12994

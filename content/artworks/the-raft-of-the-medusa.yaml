@@ -1,0 +1,171 @@
+public_id: 101693
+title_lang: fr
+title: Le Radeau de la Méduse
+names:
+  - lang: en
+    role: original
+    text: The Raft of the Medusa
+  - Scène de NaufrageXd
+  - lang: nl
+    role: translation
+    text: Het vlot van de Medusa
+  - lang: de
+    role: translation
+    text: Das Floß der Medusa
+  - lang: it
+    role: translation
+    text: La zattera della Medusa
+  - lang: es
+    role: translation
+    text: La balsa de la Medusa
+  - lang: ja
+    role: translation
+    text: メデューズ号の筏
+  - lang: zh
+    role: translation
+    text: 梅杜薩之筏
+  - lang: ko
+    role: translation
+    text: 메두사호의 뗏목
+  - lang: ru
+    role: translation
+    text: Плот «Медузы»
+creator: theodore-gericault
+created: 1818/1819
+materials: [oil paint, canvas]
+dimensions: [491, 716]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 4884
+web_url: https://collections.louvre.fr/ark:/53355/cl010059199
+wikidata_id: Q212616
+metadata:
+  sources: [Wikidata Q212616 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg/1280px-JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_%28Museo_del_Louvre%2C_1818-19%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:JEAN_LOUIS_TH%C3%89ODORE_G%C3%89RICAULT_-_La_Balsa_de_la_Medusa_(Museo_del_Louvre,_1818-19).jpg
+    license: Public domain
+    credit: Théodore Géricault
+provenance:
+  - owner: artist/theodore-gericault
+    acquired: 1818
+    ended: 1824-01-28
+    method: creation
+    place: paris
+    label: painted 1818–1819 in his studio at 80 rue du Faubourg-du-Roule; Salon of 1819 (no. 510, “Scène de naufrage”); the Crown did not buy it in his lifetime
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010059199
+        note: Peint à Paris en 1818 et en 1819, dans un atelier loué par l'artiste au 80, rue du Faubourg-du-Roule […] accepté au Salon de 1819 (n° 510 du livret sous le titre « Scène de naufrage »
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - kind: exhibition
+        date: 1819-08-25
+        note: « Scène de naufrage »
+        place: paris
+        number: "510"
+        document: Salon de 1819
+  - owner_label: William Bullock
+    role: custodian
+    further_places:
+      - place: dublin-city
+        date: 1821-02
+    acquired: 1820-04
+    ended: 1821
+    place: london
+    label: lent to the British showman by contract, to exhibit it in the British Isles — Egyptian Hall, London, 12 June – 30 December 1820; The New Rotunda, Dublin, February–March 1821
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010059199
+        note: prêté à l’entrepreneur britannique James William Bullock par contrat signé en avril 1820, avec mandat d'en assurer l'exposition et la promotion dans les îles britanniques ; déplacé (roulé) au Royaume-Uni et exposé à Londres, Egyptian Hall, du 12 juin au 30 décembre 1820 ; déplacé (roulé) en Irlande et exposé à Dublin, The New Rotunda, de février à mars 1821
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: artist/theodore-gericault
+    role: estate
+    acquired: 1824-01-26
+    ended: 1824-11-02
+    method: inheritance
+    place: paris
+    label: Géricault died on 26 January 1824
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010059199
+        note: vente publique après décès des biens meubles de Théodore Géricault, Paris, hôtel de Bullion, 3 rue Jean-Jacques Rousseau
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: artist/pierre-joseph-dedreux-dorcy
+    role: agent
+    numbers:
+      - kind: lot
+        number: "1"
+    acquired: 1824-11-02
+    ended: 1824-11-12
+    method: auction
+    direct: true
+    place: paris
+    label: "the artist's friend, bidding on the instructions of Auguste de Forbin for the King's Household: lot 1, sale after death at the hôtel de Bullion (Me Parmentier, expert Thomas Henry)"
+    price:
+      amount: 6005
+      currency: AFRF
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010059199
+        note: 2 novembre 1824, lot n°1, adjugé au prix de 6005 francs à Pierre Joseph Dedreux-Dorcy, ami du défunt, agissant sur l'instruction d'Auguste de Forbin pour le compte du ministère de la Maison du roi
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/french-royal-collection
+    acquired: 1824-11-12
+    method: purchase
+    direct: true
+    place: paris
+    label: the purchase for the Crown confirmed by the vicomte de La Rochefoucauld; registered under Charles X as C 51; shown at the Louvre from 1826
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010059199
+        note: la confirmation de l'acquisition du tableau par la Couronne et l’autorisation de se rembourser sur la caisse des Musées royaux) ; déplacé au palais du Louvre et porté au registre des acquisitions de peintures du règne de Charles X sous le n° « C 51 »
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1848
+    method: transfer
+    place: paris
+    label: the Musées royaux became the nation's museums with the Second Republic; evacuated 1914–1918 (Toulouse) and 1939–1946 (Versailles, Louvigny, Sourches), back 11 July 1946
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010059199
+        note: Le tableau est présenté en permanence au musée du Louvre depuis 1826, excepté pendant les périodes de guerre sur le sol français. […] rentré du château de Sourches au musée du Louvre, Paris, le 11 juillet 1946
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: C 51
+    institution: department-of-paintings-of-the-louvre
+    label: register of acquisitions under Charles X
+identifiers:
+  gnd: 4304042-1
+  viaf: "177932717"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q212616
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010059199
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q212616
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q212616
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q212616
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q212616
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q212616
+    - url: https://collections.louvre.fr/ark:/53355/cl010059199
+      source: louvre-collections
+      accessed: 2026-10-20

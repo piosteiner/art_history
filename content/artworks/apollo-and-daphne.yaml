@@ -1,0 +1,131 @@
+public_id: 102035
+title_lang: it
+title: Apollo e Dafne
+names:
+  - lang: nl
+    role: translation
+    text: Apollo en Daphne
+  - lang: fr
+    role: translation
+    text: Apollon et Daphné
+  - lang: de
+    role: translation
+    text: Apollo und Daphne
+  - lang: it
+    role: translation
+    text: Apollo e Dafne
+  - lang: es
+    role: translation
+    text: Apolo y Dafne
+  - lang: ja
+    role: translation
+    text: アポロンとダプネ
+  - lang: zh
+    role: translation
+    text: 阿波羅與黛芙妮
+  - lang: ru
+    role: translation
+    text: Аполлон и Дафна
+creator: gian-lorenzo-bernini
+created: 1622/1625
+materials: [Carrara marble]
+dimensions: [243]
+institution: galleria-borghese
+inventory_number: CV
+web_url: https://www.collezionegalleriaborghese.it/en/opere/apollo-and-daphne
+wikidata_id: Q945850
+metadata:
+  sources: [Wikidata Q945850 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/rome
+    period: 1622
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Apollo_and_Daphne_%28Bernini%29_%28cropped%29.jpg/1280px-Apollo_and_Daphne_%28Bernini%29_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Apollo_and_Daphne_(Bernini)_(cropped).jpg
+    license: CC BY-SA 4.0
+    credit: Architas
+provenance:
+  - owner: artist/gian-lorenzo-bernini
+    acquired: 1622
+    ended: 1625
+    method: creation
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/apollo-e-dafne
+        note: Datazione 1622-1625
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1625
+    ended: 1633
+    method: commission
+    direct: true
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/apollo-e-dafne
+        note: Cardinale Scipione Borghese, 1625 (Minozzi 1998, pp. 437-440, docc. 61-78)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/apollo-e-dafne
+        note: "Provenienza: Cardinale Scipione Borghese, 1625 (Minozzi 1998, pp. 437-440, docc. 61-78); Inventario Fidecommissario Borghese 1833, C, p. 47, n. 85. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, C, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/apollo-e-dafne
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4540552-9
+  viaf: "184911814"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q945850
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/apollo-e-dafne
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q945850
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q945850
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q945850
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q945850
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q945850
+    - url: https://www.collezionegalleriaborghese.it/opere/apollo-e-dafne
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

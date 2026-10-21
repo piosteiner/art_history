@@ -1,0 +1,56 @@
+public_id: 101883
+name: Étienne Moreau-Nélaton
+names:
+  - Etienne Moreau-Nelaton
+  - a. moreau-nelaton
+  - Adolphe Etienne Auguste Moreau-Nelaton
+  - Etienne Moreau-Nélaton
+  - e. moreau-nelaton
+  - Étienne Adolphe Moreau-Nélaton
+  - lang: ja
+    role: translation
+    text: エティエンヌ・モロー・ネラトン
+  - lang: ko
+    role: translation
+    text: 에티엔 모로넬라통
+  - lang: ru
+    role: translation
+    text: Этьен Моро
+kind: person
+occupations: [art collector, poster artist, art historian, painter, printmaker, writer, photographer, visual artist, ceramicist]
+birth: 1859-12-02
+death: 1927-04-25
+wikidata_id: Q289951
+metadata:
+  sources: [Wikidata Q289951 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/%C3%89tienne_Moreau-N%C3%A9laton_%281859-1927%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89tienne_Moreau-N%C3%A9laton_(1859-1927).jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "121128266"
+  dome: "1732"
+  gnd: "119079917"
+  idref: "030705037"
+  lc: n88659158
+  rkd: "57643"
+  ulan: "500043492"
+  viaf: "61577551"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q289951
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q289951
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q289951
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q289951

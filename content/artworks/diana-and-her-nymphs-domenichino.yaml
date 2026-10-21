@@ -1,0 +1,135 @@
+public_id: 102056
+title_lang: it
+title: La caccia di Diana
+names:
+  - The Hunt of Diana
+  - Diana's Hunt
+  - The hunting of Diana
+  - Diana Hunting
+  - Diana and her Nymphs after the Hunt
+  - lang: en
+    role: translation
+    text: Diana and her Nymphs
+  - lang: fr
+    role: translation
+    text: La Chasse de Diane
+  - lang: de
+    role: translation
+    text: Die Jagd der Diana
+  - lang: ja
+    role: translation
+    text: ディアナの狩猟
+  - lang: zh
+    role: translation
+    text: 黛安娜的狩獵
+creator: domenichino
+created: 1616/1617
+created_label: c. 1610s
+materials: [oil paint, canvas]
+dimensions: [225, 320]
+institution: galleria-borghese
+inventory_number: "053"
+web_url: https://www.collezionegalleriaborghese.it/en/opere/la-caccia-di-diana
+wikidata_id: Q26038063
+metadata:
+  sources: [Wikidata Q26038063 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Domenichino_-_La_caccia_di_Diana_%28Galleria_Borghese%29.jpg/1280px-Domenichino_-_La_caccia_di_Diana_%28Galleria_Borghese%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Domenichino_-_La_caccia_di_Diana_(Galleria_Borghese).jpg
+    license: Public domain
+    credit: Domenichino
+provenance:
+  - owner: person/pietro-aldobrandini
+    acquired: 1616
+    method: commission
+    place: frascati
+    label: commissioned for his villa at Frascati
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-caccia-di-diana
+        note: Commissionata per la villa di Frascati dal cardinale Pietro Aldobrandini
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1617
+    ended: 1633
+    method: forced_sale
+    place: rome
+    label: taken from Domenichino — held in prison for some days — by Scipione's ruthless collecting; 150 scudi paid to the painter as partial compensation
+    price:
+      amount: 150
+      currency: SCU
+      note: for this and Domenichino's Sibyl (inv. 55) together
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-caccia-di-diana
+        note: l’opera fu sottratta al Domenichino - trattenuto in prigione per alcuni giorni - dalla spietatezza collezionistica di Scipione Borghese. Infatti, nel 1617, a parziale risarcimento del singolare espediente persuasivo, furono pagati al pittore 150 scudi, pagamento riferito tuttavia a ben due opere dell’artista
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-caccia-di-diana
+        note: "Provenienza: Roma, Scipione Borghese, 1617 (Della Pergola 1955, p. 28); Inventario 1700, Stanza II, n. 1; Inventario 1790, Stanza II, n. 1; Inventario Didecommissario 1833, p. 8. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1700"
+        room: Stanza II
+        place: rome
+        number: "1"
+        document: Borghese inventory
+      - date: "1790"
+        room: Stanza II
+        place: rome
+        number: "1"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Didecommissario 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/la-caccia-di-diana
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q26038063
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q26038063
+    - url: https://www.collezionegalleriaborghese.it/opere/la-caccia-di-diana
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q26038063
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q26038063
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q26038063
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q26038063
+  inventory_number:
+    - url: https://www.collezionegalleriaborghese.it/opere/la-caccia-di-diana
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

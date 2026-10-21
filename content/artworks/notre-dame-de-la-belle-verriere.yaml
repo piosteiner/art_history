@@ -1,0 +1,67 @@
+public_id: 102165
+title_lang: fr
+title: Notre-Dame de la Belle Verrière
+names:
+  - Madonna and Child (Chartres)
+  - La Belle-Verrière
+  - The Blue Virgin of Chartres
+  - lang: fr
+    role: translation
+    text: Notre-Dame de la Belle Verrière, cathédrale de Chartres (baie 30a)
+  - lang: de
+    role: translation
+    text: Notre-Dame de la Belle Verrière (Bucht 030a)
+created: c. 1180–1220
+materials: [clear glass]
+dimensions: [748, 239]
+institution: notre-dame-de-chartres
+inventory_number: 030a
+location: [1.48778, 48.44778]
+wikidata_id: Q27968027
+metadata:
+  sources: [Wikidata Q27968027 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Vitrail_Chartres_Notre-Dame_210209_1.jpg/1280px-Vitrail_Chartres_Notre-Dame_210209_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vitrail_Chartres_Notre-Dame_210209_1.jpg
+    license: Public domain
+    credit: Vassil
+provenance:
+  - owner: institution/notre-dame-de-chartres
+    acquired: c. 1180
+    place: chartres
+    label: the three panels of the Virgin and Child, of about 1180, survived the fire of 1194 and were set in the new window of the rebuilt cathedral, about 1215–1220; listed as a historic monument in the first list of 1840
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Notre-Dame_de_la_Belle_Verri%C3%A8re
+        note: la Vierge à l'Enfant de style roman représentée sur trois panneaux carrés de la fin du XIIe siècle, lesquels ont été réutilisés au début du XIIIe siècle lors de la construction de la cathédrale actuelle, après l'incendie de la cathédrale romane. […] Le vitrail a été classé monument historique dès sa première liste de 1840.
+        source: wikipedia-fr-belle-verriere
+        accessed: 2026-10-20
+  - owner_label: the fire of Chartres Cathedral
+    role: event
+    acquired: 1194
+    place: chartres
+    label: the three panels nearly lost in the fire
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Notre-Dame_de_la_Belle_Verri%C3%A8re
+        note: Ces trois panneaux ont failli disparaître lors du terrible incendie de 1194.
+        source: wikipedia-fr-belle-verriere
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q27968027
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q27968027
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q27968027
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q27968027
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q27968027

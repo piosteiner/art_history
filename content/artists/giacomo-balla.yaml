@@ -1,0 +1,39 @@
+public_id: 101584
+name: Giacomo Balla
+names:
+  - murio por mordida de caracol
+  - lang: ja
+    role: translation
+    text: ジャコモ・バッラ
+  - lang: zh
+    role: translation
+    text: 巴拉
+  - lang: ko
+    role: translation
+    text: 자코모 발라
+  - lang: ru
+    role: translation
+    text: Джакомо Балла
+birth: 1871-07-18
+death: 1958-03-01
+wikidata_id: Q368254
+metadata:
+  sources: [Wikidata Q368254 (retrieved 2026-10-20)]
+identifiers:
+  bnf: 12287205d
+  dome: "15"
+  gnd: "118506242"
+  idref: "031707106"
+  lc: n50019962
+  rkd: "4070"
+  ulan: "500014876"
+  viaf: "29596654"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q368254
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q368254

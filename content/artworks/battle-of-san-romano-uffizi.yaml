@@ -1,0 +1,129 @@
+public_id: 101968
+title_lang: it
+title: Disarcionamento di Bernardino della Ciarda (Battaglia di San Romano)
+names:
+  - Battle of San Romano
+  - The Battle of San Romano
+  - lang: en
+    role: translation
+    text: Niccolò Mauruzi da Tolentino unseats Bernardino della Ciarda at the Battle of San Romano
+  - lang: nl
+    role: translation
+    text: Bernardino della Carda in de verpletterende slag bij San Romano
+  - lang: fr
+    role: translation
+    text: Bernardino della Ciarda désarçonné
+  - lang: it
+    role: original
+    text: Disarcionamento di Bernardino della Ciarda
+  - lang: es
+    role: translation
+    text: Niccolò Mauruzi da Tolentino desmonta a Bernardino della Ciarda
+creator: paolo-uccello
+created: 1430/1445
+created_label: c. 1430s
+materials: [tempera, panel]
+dimensions: [188, 327]
+institution: uffizi-gallery
+inventory_number: 1890 n. 479
+web_url: https://www.uffizi.it/en/artworks/battle-of-san-romano
+wikidata_id: Q18564202
+metadata:
+  sources: [Wikidata Q18564202 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Uccello_%E2%80%94_the_Battle_of_San_Romano.jpg/1280px-Uccello_%E2%80%94_the_Battle_of_San_Romano.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Uccello_%E2%80%94_the_Battle_of_San_Romano.jpg
+    license: CC0
+    credit: Gleb Simonov
+provenance:
+  - owner_label: Lionardo Bartolini Salimbeni
+    acquired: 1438
+    method: commission
+    place: florence
+    label: one of three panels he paid for in 1438, for his palace in Florence; his sons Damiano and Andrea moved them to the family villa at Santa Maria a Quinto
+    sources:
+      - url: https://www.uffizi.it/en/artworks/battle-of-san-romano
+        note: The decorative cycle was commissioned by Lionardo Bartolini Salimbeni, leading light in Florentine political life from the early 15th century, for his palace in Florence, just a few years after the epic feat itself.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Battaglia_di_San_Romano
+        note: le tavole erano state pagate nel 1438 dal ricco ed eminente Lionardo Bartolini Salimbeni […] I suoi due figli, Damiano e Andrea avevano trasferito l'opera nella villa di famiglia nei dintorni di Firenze, a Santa Maria a Quinto
+        source: wikipedia-it-battaglia-san-romano
+        accessed: 2026-10-20
+  - owner_label: Damiano and Andrea Bartolini Salimbeni
+    ended: 1484
+    method: inheritance
+    place: florence
+    sources:
+      - url: https://it.wikipedia.org/wiki/Battaglia_di_San_Romano
+        note: I suoi due figli, Damiano e Andrea avevano trasferito l'opera nella villa di famiglia nei dintorni di Firenze, a Santa Maria a Quinto […] Qui le vide il Magnifico, che insistette tanto per averle e le ottenne nel 1484.
+        source: wikipedia-it-battaglia-san-romano
+        accessed: 2026-10-20
+  - owner: person/lorenzo-il-magnifico
+    acquired: 1484
+    ended: 1492
+    method: purchase
+    place: florence
+    label: he insisted until he had them, and hung them in the Medici palace in Via Larga (the “camera di Lorenzo”), probably having Uccello change their shape
+    sources:
+      - url: https://www.uffizi.it/en/artworks/battle-of-san-romano
+        note: The heirs of Lionardo Bartolini then sold the paintings to Lorenzo il Magnifico, who had them placed in his palace in via Larga (now known as Palazzo Medici-Riccardi in via Cavour) probably asking Paolo Uccello, the painter of the cycle, to change the shape
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Battaglia_di_San_Romano
+        note: Qui le vide il Magnifico, che insistette tanto per averle e le ottenne nel 1484.
+        source: wikipedia-it-battaglia-san-romano
+        accessed: 2026-10-20
+    records:
+      - date: "1492"
+        room: camera grande terrena, detta La camera di Lorenzo
+        place: florence
+        document: inventory after the death of Lorenzo the Magnificent
+  - owner_label: the Medici (Guardaroba)
+    acquired: 1659
+    method: transfer
+    place: florence
+    label: to the Medici Guardaroba with the furnishings when the palace was sold to the Riccardi
+    sources:
+      - url: https://it.wikipedia.org/wiki/Battaglia_di_San_Romano
+        note: Con la vendita di Palazzo Medici ai Riccardi, nel 1659, il dipinto, assieme a tutti gli altri arredi, pervenne alla Guardaroba medicea.
+        source: wikipedia-it-battaglia-san-romano
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1784
+    method: transfer
+    place: florence
+    label: the three panels came to the Uffizi in 1784; the best-preserved was kept, the other two sold as duplicates (London 1857, Louvre 1863)
+    sources:
+      - url: https://it.wikipedia.org/wiki/Battaglia_di_San_Romano
+        note: Nel 1784 le tre tavole arrivarono agli Uffizi; in seguito si decise che i tre pannelli erano troppo simili e si tenne a Firenze quello meglio conservato (Disarcionamento di Bernardino della Carda), vendendo gli altri due come inutili doppioni.
+        source: wikipedia-it-battaglia-san-romano
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q18564202
+  created:
+    - url: https://www.uffizi.it/en/artworks/battle-of-san-romano
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q18564202
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q18564202
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q18564202
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q18564202
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/battle-of-san-romano
+      source: uffizi-artworks
+      accessed: 2026-10-20

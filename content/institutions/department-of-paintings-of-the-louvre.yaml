@@ -1,0 +1,8 @@
+public_id: 101684
+name: Department of Paintings of the Louvre
+wikidata_id: Q3044768
+metadata:
+  sources: [Wikidata Q3044768 (retrieved 2026-10-20)]
+relationships:
+  - type: part_of
+    to: institution/musee-du-louvre

@@ -1,0 +1,81 @@
+public_id: 102136
+title_lang: it
+title: Madonna col Bambino e santi, angeli e Federico da Montefeltro (Pala di San Bernardino)
+names:
+  - lang: en
+    role: translation
+    text: Madonna and Child with Saints, Angels and Federico da Montefeltro (San Bernardino Altarpiece)
+  - lang: it
+    role: alternative
+    text: Pala di Brera
+  - lang: it
+    role: alternative
+    text: Pala Montefeltro
+creator: piero-della-francesca
+created: 1472/1474
+medium: Tempera su tavola
+dimensions: [251, 172]
+institution: pinacoteca-di-brera
+inventory_number: "180"
+web_url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-santi-angeli-e-federico-da-montefeltro-pala-di-san-bernardino/
+wikidata_id: Q1796098
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Piero_della_Francesca_046.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Piero_della_Francesca_046.jpg
+    license: Public domain
+    credit: Piero della Francesca
+provenance:
+  - owner: person/federico-da-montefeltro
+    acquired: c. 1472
+    method: commission
+    place: urbino
+    label: probably commissioned after the birth of his heir and the death of his wife Battista Sforza (1472)
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-santi-angeli-e-federico-da-montefeltro-pala-di-san-bernardino/
+        note: È probabile che Federico l’avesse commissionata dopo la nascita dell’erede, seguita dalla morte della moglie Battista Sforza (1472)
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: San Bernardino, Urbino
+    ended: 1811
+    place: urbino
+    label: on the high altar of the church Federico built for his tomb — perhaps, not certainly, its first destination
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-santi-angeli-e-federico-da-montefeltro-pala-di-san-bernardino/
+        note: la pala giunse a Brera dalla chiesa di San Bernardino a Urbino, edificata da Federico da Montefeltro per ospitare la propria sepoltura. È possibile, ma non certo, che il dipinto fosse originariamente destinato a questa sede e alla tomba del duca.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1811
+    method: confiscation
+    direct: true
+    place: milan
+    label: removed from the high altar in the Napoleonic requisitions after the suppressions
+    sources:
+      - url: https://it.wikipedia.org/wiki/Pala_di_Brera
+        note: Venne prelevata dall'altare maggiore della chiesa di San Bernardino a Urbino e trasferita a Milano nel 1811 in seguito alle requisizioni napoleoniche.
+        source: wikipedia-it-pala-montefeltro
+        accessed: 2026-10-20
+sources:
+  medium:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-santi-angeli-e-federico-da-montefeltro-pala-di-san-bernardino/
+      note: "Materia e tecnica: Tempera su Tavola"
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  created:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-santi-angeli-e-federico-da-montefeltro-pala-di-san-bernardino/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-santi-angeli-e-federico-da-montefeltro-pala-di-san-bernardino/
+      note: "Autore: Piero della Francesca"
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  dimensions:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-santi-angeli-e-federico-da-montefeltro-pala-di-san-bernardino/
+      note: "Dimensioni: cm 251 × 172"
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  inventory_number:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-santi-angeli-e-federico-da-montefeltro-pala-di-san-bernardino/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

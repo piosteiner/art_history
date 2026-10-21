@@ -1,0 +1,77 @@
+public_id: 101646
+title: Two boys playing dice
+names:
+  - lang: de
+    role: translation
+    text: Zwei Jungen spielen Würfel
+  - lang: es
+    role: translation
+    text: Dos muchachos jugando a los dados
+creator: bartolome-esteban-murillo
+created: 1670/1675
+created_label: c. 1670s
+materials: [oil paint, canvas]
+dimensions: [148, 114]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-515
+wikidata_id: Q106130158
+metadata:
+  sources: [Wikidata Q106130158 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e6/Murillo-Two_Boys_Playing_Dice.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Murillo-Two_Boys_Playing_Dice.jpg
+    license: Public domain
+    credit: Bartolomé Esteban Murillo
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    ended: 1822
+    place: vienna
+    notes_md: The Academy publishes the bequest only; earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/951
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1822
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/951
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “Die bereits beachtlichen Bestände aus der Schenkung des Grafen Lamberg-Sprinzenstein, der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q106130158
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q106130158
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q106130158
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q106130158
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q106130158
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q106130158
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q106130158

@@ -1,0 +1,16 @@
+public_id: 101718
+name: arrondissement of Autun
+kind: site
+location: [4.25, 46.91667]
+wikidata_id: Q662088
+metadata:
+  sources: [Wikidata Q662088 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q662088
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q662088

@@ -1,0 +1,11 @@
+public_id: 101834
+name: Musée d'Orsay
+founded: 1986
+wikidata_id: Q23402
+metadata:
+  sources: [Wikidata Q23402 (retrieved 2026-10-20)]
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q23402

@@ -1,0 +1,45 @@
+public_id: 102032
+name: Henry Philip Hope
+names:
+  - Henry P. Hope
+  - Henry Hope
+  - lang: zh
+    role: translation
+    text: 亨利·菲利普·霍普
+  - lang: ru
+    role: translation
+    text: Генри Филипп Хоуп
+kind: person
+occupations: [art collector]
+birth: 1774-06-08
+death: 1839-12-05
+wikidata_id: Q18671414
+metadata:
+  sources: [Wikidata Q18671414 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5e/Hope%2C_Henry_Philip.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hope,_Henry_Philip.jpg
+    license: Public domain
+    credit: Thomas Goff Lupton Bouton
+identifiers:
+  gnd: "1018385444"
+  lc: no2014027669
+  ulan: "500434270"
+  viaf: "220866555"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q18671414
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q18671414
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q18671414
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q18671414

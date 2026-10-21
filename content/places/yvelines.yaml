@@ -1,0 +1,16 @@
+public_id: 101868
+name: Yvelines
+kind: region
+location: [1.91667, 48.83333]
+wikidata_id: Q12820
+metadata:
+  sources: [Wikidata Q12820 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q12820
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q12820

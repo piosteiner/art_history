@@ -1,0 +1,33 @@
+public_id: 101760
+name: Jeanne Seillière
+given_name: Jeanne
+family_name: Seillière
+kind: person
+occupations: [art collector, socialite]
+birth: 1839-04-20
+death: 1905-10-12
+wikidata_id: Q30228557
+metadata:
+  sources: [Wikidata Q30228557 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/56/Princesse_de_Sagan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Princesse_de_Sagan.jpg
+    license: Public domain
+    credit: AnonymousUnknown author
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q30228557
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q30228557
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q30228557
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q30228557

@@ -1,0 +1,48 @@
+public_id: 101579
+name: Oskar Kokoschka
+names:
+  - Oscar Kokoschka
+  - O. Kokoschka
+  - kokoschka
+  - lang: ja
+    role: translation
+    text: オスカー・ココシュカ
+  - lang: zh
+    role: translation
+    text: 奥斯卡·柯克西卡
+  - lang: ko
+    role: translation
+    text: 오스카르 코코슈카
+  - lang: ru
+    role: translation
+    text: Оскар Кокошка
+birth: 1886-03-01
+death: 1980-02-22
+wikidata_id: Q154260
+metadata:
+  sources: [Wikidata Q154260 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Oskar_Kokoschka_by_Hugo_Erfurth_1919.jpg/1280px-Oskar_Kokoschka_by_Hugo_Erfurth_1919.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Oskar_Kokoschka_by_Hugo_Erfurth_1919.jpg
+    license: Public domain
+    credit: Hugo Erfurth
+identifiers:
+  bnf: 11909937v
+  gnd: "118564722"
+  hls: "011640"
+  idref: "026951991"
+  kulturnav: 68781b20-9f4d-4de5-8a39-34c06627cf9e
+  lc: n80032699
+  rkd: "45471"
+  sikart: "4025660"
+  ulan: "500024536"
+  viaf: "31998450"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q154260
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q154260

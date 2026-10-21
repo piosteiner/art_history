@@ -1,0 +1,18 @@
+public_id: 101660
+name: Antonio da Fabriano
+given_name: Antonio
+family_name: da Fabriano
+birth: 1420
+death: 1490
+wikidata_id: Q3620356
+metadata:
+  sources: [Wikidata Q3620356 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q3620356
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q3620356

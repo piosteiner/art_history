@@ -1,0 +1,18 @@
+public_id: 101683
+name: Leonardo da Vinci
+given_name: Leonardo
+family_name: da Vinci
+birth: 1452-04-24
+death: 1519-05-12
+wikidata_id: Q762
+metadata:
+  sources: [Wikidata Q762 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q762
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q762

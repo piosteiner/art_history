@@ -1,0 +1,35 @@
+public_id: 102148
+name: Mantua
+names:
+  - lang: zh
+    role: translation
+    text: 曼托瓦
+  - lang: fr
+    role: translation
+    text: Mantoue
+  - lang: it
+    role: original
+    text: Mantova
+  - lang: ru
+    role: translation
+    text: Мантуя
+kind: settlement
+parent: mantova
+country_code: IT
+location: [10.79111, 45.15639]
+wikidata_id: Q6247
+metadata:
+  sources: [Wikidata Q6247 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q6247
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q6247
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q6247

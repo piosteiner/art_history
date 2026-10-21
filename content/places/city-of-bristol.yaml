@@ -1,0 +1,16 @@
+public_id: 101720
+name: City of Bristol
+kind: site
+location: [-2.58333, 51.45]
+wikidata_id: Q21693433
+metadata:
+  sources: [Wikidata Q21693433 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q21693433
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q21693433

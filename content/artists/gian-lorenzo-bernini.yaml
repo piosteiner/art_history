@@ -1,0 +1,18 @@
+public_id: 102033
+name: Gian Lorenzo Bernini
+given_name: Gian Lorenzo
+family_name: Bernini
+birth: 1598-12-07
+death: 1680-11-28
+wikidata_id: Q160538
+metadata:
+  sources: [Wikidata Q160538 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q160538
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q160538

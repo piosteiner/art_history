@@ -1,0 +1,163 @@
+public_id: 101836
+title_lang: fr
+title: Le Déjeuner sur l'herbe
+names:
+  - lang: en
+    role: original
+    text: Luncheon on the Grass
+  - Le Bain
+  - Le Dejeuner sur l’Herbe
+  - Le Dejeuner sur l’Herbe (Luncheon on the Grass)
+  - lang: de
+    role: translation
+    text: Das Frühstück im Grünen
+  - lang: it
+    role: translation
+    text: Colazione sull'erba
+  - lang: es
+    role: translation
+    text: Almuerzo sobre la hierba
+  - lang: ja
+    role: translation
+    text: 草上の昼食
+  - lang: zh
+    role: translation
+    text: 草地上的午餐
+  - lang: ko
+    role: translation
+    text: 풀밭 위의 점심 식사
+  - lang: ru
+    role: translation
+    text: Завтрак на траве
+creator: edouard-manet
+created: 1863
+materials: [canvas, oil paint]
+dimensions: [208, 264.5]
+institution: musee-d-orsay
+inventory_number: RF 1668
+web_url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+wikidata_id: Q152509
+metadata:
+  sources: [Wikidata Q152509 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg/1280px-Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_Luncheon_on_the_Grass_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: artist/edouard-manet
+    acquired: 1863
+    ended: 1878
+    method: creation
+    place: paris
+    label: shown at the Salon des refusés of 1863 (no. 363, as “Le bain”)
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+        note: Salon des refusés - ville - France, Paris, 1863, n°363 (sous le titre "Le bain")
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+    records:
+      - kind: exhibition
+        date: "1863"
+        note: « Le bain »
+        place: paris
+        number: "363"
+        document: Salon des refusés
+  - owner: person/jean-baptiste-faure
+    acquired: 1878
+    ended: 1898
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+        note: de 1878 à 1898, dans la collection Jean-Baptiste Faure, Paris, acquis de l'artiste
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/durand-ruel
+    role: dealer
+    acquired: 1898
+    ended: 1900
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+        note: de 1898 à 1900, dans la collection Durand-Ruel, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/etienne-moreau-nelaton
+    acquired: 1900
+    ended: 1906
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+        note: de 1900 à 1906, dans la collection Etienne Moreau-Nélaton, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1906
+    method: gift
+    direct: true
+    place: paris
+    label: Moreau-Nélaton's gift to the Musées nationaux, assigned to the Louvre; shown at the Musée des Arts décoratifs 1907–1934 (no loans or deposits allowed); at the Louvre from 1934, its Jeu de Paume gallery 1947–1986
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+        note: 1906, accepté par l'Etat à titre de donation aux Musées nationaux (donation d'Etienne Moreau-Nélaton en 1906. Entrée au Musée des Arts décoratifs en 1907. Interdictions de prêt et de dépôt.) 1906, attribué au musée du Louvre, Paris de 1907 à 1934, musée des Arts décoratifs, Paris de 1934 à 1947, musée du Louvre, Paris de 1947 à 1986, musée du Louvre, galerie du Jeu de Paume
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-des-arts-decoratifs
+    role: custodian
+    acquired: 1907
+    ended: 1934
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+        note: de 1907 à 1934, musée des Arts décoratifs, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4539087-3
+  viaf: "183595228"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q152509
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q152509
+    - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q152509
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q152509
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q152509
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q152509
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q152509
+    - url: https://www.musee-orsay.fr/fr/oeuvres/le-dejeuner-sur-lherbe-904
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

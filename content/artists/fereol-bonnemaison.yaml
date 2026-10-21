@@ -1,0 +1,53 @@
+public_id: 102021
+name: Féréol Bonnemaison
+names:
+  - Chevalier Féréol de Bonnemaison
+  - Féréol de Bonnemaison
+  - Fereol Bonnemaison
+  - Féréol de Bon Maison
+  - Le Chevalier Féréol Bonnemaison
+  - Ferréol de, Chevalier Bonnemaison
+  - Chevalier Ferréol de Bonnemaison
+  - Ferréol de Bonnemaison
+  - Chevalier Fereol de Bonnemaison
+  - Fereol de Bonnemaison
+  - Fereol de Bon Maison
+  - Le Chevalier Fereol Bonnemaison
+  - Chevalier Ferreol de Bonnemaison
+  - Ferreol de Bonnemaison
+  - Bon Maison
+  - BomneMn
+  - Fereol de, Chevalier Bonnemaison
+  - Bonne Maison
+  - Fereol, Chevalier Bonnemaison
+  - Fereol-Bonnemaison
+  - Bonnaison
+  - Fereol, Chev. Bonnemaison
+  - F. Bonnemaison
+  - Bonnemaison
+  - Ferréol Bonnemaison
+  - lang: zh
+    role: translation
+    text: 费雷奥尔·博纳迈松
+birth: 1766-02-08
+death: 1826-08-22
+wikidata_id: Q5511672
+metadata:
+  sources: [Wikidata Q5511672 (retrieved 2026-10-20)]
+identifiers:
+  bnf: 14956394r
+  gnd: "141283238"
+  idref: "061749494"
+  lc: nr2004029007
+  rkd: "10403"
+  ulan: "500014191"
+  viaf: "76267943"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q5511672
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q5511672

@@ -1,0 +1,77 @@
+public_id: 102029
+name: Christina of Sweden
+names:
+  - lang: sv
+    role: original
+    text: Kristina av Sverige
+  - Queen of Sweden Christina Alessandra
+  - Queen of Sweden Christina
+  - Queen of Sweden Christiana
+  - Queen of Sweden Kristina
+  - Queen of Sweden Christina Augusta
+  - Queen of Sweden Christina Alexandra
+  - Queen of Sweden Christine
+  - Queen of Sweden Kristiina
+  - Christina
+  - lang: nl
+    role: translation
+    text: Christina I van Zweden
+  - lang: fr
+    role: translation
+    text: Christine I de Suède
+  - lang: it
+    role: translation
+    text: Cristina I di Svezia
+  - lang: es
+    role: translation
+    text: Cristina I de Suecia
+  - lang: ja
+    role: translation
+    text: クリスティーナ
+  - lang: zh
+    role: translation
+    text: 克里斯蒂娜女王
+  - lang: ko
+    role: translation
+    text: 크리스티나
+  - lang: ru
+    role: translation
+    text: Кристина
+kind: person
+occupations: [art collector, monarch, painter, writer, philosopher]
+birth: 1626-12-07
+death: 1689-04-19
+wikidata_id: Q52937
+metadata:
+  sources: [Wikidata Q52937 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Queen_Christina_%28S%C3%A9bastien_Bourdon%29_-_Nationalmuseum_-_18075FXD.jpg/1280px-Queen_Christina_%28S%C3%A9bastien_Bourdon%29_-_Nationalmuseum_-_18075FXD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Queen_Christina_(S%C3%A9bastien_Bourdon)_-_Nationalmuseum_-_18075FXD.jpg
+    license: Public domain
+    credit: Sébastien Bourdon
+identifiers:
+  bnf: "119101172"
+  gnd: "118520652"
+  idref: "026954206"
+  kulturnav: c75f9be7-5ec6-4110-9d9d-55170e9d4536
+  lc: n50047934
+  rkd: "435081"
+  ulan: "500095065"
+  viaf: "4931803"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q52937
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q52937
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q52937
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q52937

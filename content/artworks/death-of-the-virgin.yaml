@@ -1,0 +1,150 @@
+public_id: 101704
+title_lang: fr
+title: La Mort de la Vierge
+names:
+  - lang: en
+    role: original
+    text: Death of the Virgin
+  - Dormition of the Virgin
+  - lang: nl
+    role: translation
+    text: De dood van Maria
+  - lang: fr
+    role: translation
+    text: La Mort de la Vierge
+  - lang: de
+    role: translation
+    text: Der Tod Mariens
+  - lang: es
+    role: translation
+    text: Dormíción de la Virgen
+  - lang: ja
+    role: translation
+    text: 聖母の死
+  - lang: zh
+    role: translation
+    text: 圣母之死
+  - lang: ru
+    role: translation
+    text: Смерть Марии
+creator: caravaggio
+created: 1596/1611
+created_label: c. 1600s
+materials: [oil paint, canvas]
+dimensions: [369, 245]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 54
+web_url: https://collections.louvre.fr/ark:/53355/cl010062304
+wikidata_id: Q597114
+metadata:
+  sources: [Wikidata Q597114 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Death_of_the_Virgin-Caravaggio_%281606%29.jpg/1280px-Death_of_the_Virgin-Caravaggio_%281606%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Death_of_the_Virgin-Caravaggio_(1606).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: person/laerzio-cherubini
+    acquired: 1601
+    method: commission
+    place: rome
+    label: commissioned for his chapel in Santa Maria della Scala in Trastevere; finished late 1605 or early 1606 and refused by the clergy of the church
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062304
+        note: Commandé par Laerzio Cherubini pour l’église Santa Maria della Scala in Trastevere à Rome, 1601 ; terminé à la fin de l’année 1605 ou au début de 1606 et refusé par le clergé de cette église
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/ferdinando-gonzaga-duke-of-mantua
+    acquired: 1607
+    method: purchase
+    place: mantova
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062304
+        note: Mantoue, collection de Ferdinand Gonzague, duc de Mantoue (1587-1626), 1607
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/charles-i-of-england
+    acquired: 1627
+    ended: 1649
+    method: purchase
+    place: london
+    label: with the Gonzaga collection bought for Charles I
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062304
+        note: Charles Ier d’Angleterre (1600-1649), Londres, 1627.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/everhard-jabach
+    ended: 1671
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062304
+        note: Everhard Jabach (1618-1695), Paris ; vendu à Louis XIV, 1671
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/louis-xiv-of-france
+    acquired: 1671
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062304
+        note: vendu à Louis XIV, 1671 (inventaire de 1683, n° 193).
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - date: "1683"
+        number: "193"
+        document: inventory of the king's paintings (Le Brun)
+  - owner: institution/french-royal-collection
+    acquired: 1715
+    method: inheritance
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062304
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne, 1671"
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1793
+    method: transfer
+    place: paris
+    label: the royal collection became the nation's
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062304
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne"
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 104
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q597114
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010062304
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q597114
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q597114
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q597114
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q597114
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q597114
+    - url: https://collections.louvre.fr/ark:/53355/cl010062304
+      source: louvre-collections
+      accessed: 2026-10-20

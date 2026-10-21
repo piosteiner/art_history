@@ -1,0 +1,107 @@
+public_id: 101946
+title_lang: it
+title: Annunciazione
+names:
+  - The Annunciation
+  - Annunciation of San Martino
+  - lang: nl
+    role: translation
+    text: De Annunciatie
+  - lang: fr
+    role: translation
+    text: L'Annonciation de San Martino
+  - lang: de
+    role: translation
+    text: Verkündigung
+  - lang: it
+    role: translation
+    text: Annunciazione
+  - lang: es
+    role: translation
+    text: Anunciación
+  - lang: ja
+    role: translation
+    text: 受胎告知
+  - lang: zh
+    role: translation
+    text: 聖母領報
+  - lang: ko
+    role: translation
+    text: 수태고지
+  - lang: ru
+    role: translation
+    text: Благовещение
+creator: leonardo-da-vinci
+created: c. 1472
+materials: [oil paint, panel]
+dimensions: [90, 222]
+institution: uffizi-gallery
+inventory_number: 1890 n. 1618
+web_url: https://www.uffizi.it/en/artworks/annunciation
+wikidata_id: Q1217213
+metadata:
+  sources: [Wikidata Q1217213 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Annunciation_%28Leonardo%29_%28cropped%29.jpg/1280px-Annunciation_%28Leonardo%29_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Annunciation_(Leonardo)_(cropped).jpg
+    license: Public domain
+    credit: Leonardo da Vinci
+provenance:
+  - owner_label: unknown (nothing known of its original place or patron)
+    sources:
+      - url: https://www.uffizi.it/en/artworks/annunciation
+        note: nothing is known about its original location or who commissioned it
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner_label: San Bartolomeo a Monteoliveto, Florence (Olivetan church)
+    ended: 1867
+    place: florence
+    label: in the church outside Porta San Frediano until 1867
+    sources:
+      - url: https://www.uffizi.it/en/artworks/annunciation
+        note: The painting was brought to the Uffizi in 1867 from the church of San Bartolomeo a Monteoliveto, outside Porta San Frediano in Florence
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1867
+    method: transfer
+    direct: true
+    place: florence
+    sources:
+      - url: https://www.uffizi.it/en/artworks/annunciation
+        note: The painting was brought to the Uffizi in 1867
+        source: uffizi-artworks
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4415837-3
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1217213
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1217213
+    - url: https://www.uffizi.it/en/artworks/annunciation
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1217213
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1217213
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1217213
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1217213
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/annunciation
+      source: uffizi-artworks
+      accessed: 2026-10-20

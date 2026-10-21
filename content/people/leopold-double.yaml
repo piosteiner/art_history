@@ -1,0 +1,33 @@
+public_id: 101764
+name: Léopold Double
+given_name: Léopold
+family_name: Double
+kind: person
+occupations: [art collector, military officer]
+birth: 1812-09-12
+death: 1881-02-02
+wikidata_id: Q20666523
+metadata:
+  sources: [Wikidata Q20666523 (retrieved 2026-10-20)]
+identifiers:
+  gnd: "116190590"
+  idref: "172495636"
+  lc: no2009195102
+  viaf: "103544076"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q20666523
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q20666523
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q20666523
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q20666523

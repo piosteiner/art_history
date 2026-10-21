@@ -3,7 +3,7 @@ title_lang: es
 title: Tríptico del Jardín de las delicias
 names:
   - lang: en
-    role: alternative
+    role: translation
     text: The Garden of Earthly Delights
   - lang: nl
     role: translation
@@ -17,21 +17,6 @@ names:
   - lang: it
     role: translation
     text: Trittico del Giardino delle delizie
-  - lang: es
-    role: translation
-    text: El jardín de las delicias
-  - lang: ja
-    role: translation
-    text: 快楽の園
-  - lang: zh
-    role: translation
-    text: 人間樂園
-  - lang: ko
-    role: translation
-    text: 세속적인 쾌락의 정원
-  - lang: ru
-    role: translation
-    text: Сад земных наслаждений
 creator: hieronymus-bosch
 created: 1490/1500
 kind: oil painting

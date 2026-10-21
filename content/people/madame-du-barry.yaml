@@ -1,0 +1,62 @@
+public_id: 101768
+name: Madame du Barry
+names:
+  - Countess Du Barry
+  - Marie-Jeanne Bécu
+  - Comtesse Du Barry
+  - Madame Barre
+  - Marie-Jeanne Becu
+  - comtesse du Barry Jeanne Becu
+  - comtesse du Barry Jeanne Bécu
+  - lang: it
+    role: translation
+    text: Marie-Jeanne Bécu, contessa du Barry
+  - lang: ja
+    role: translation
+    text: デュ・バリー夫人
+  - lang: zh
+    role: translation
+    text: 杜巴利伯爵夫人
+  - lang: ko
+    role: translation
+    text: 바리 백작 부인
+  - lang: ru
+    role: translation
+    text: Мари Жанна Дюбарри
+kind: person
+occupations: [royal mistress, courtesan, art collector, modiste, salesperson, opera singer]
+birth: 1743-08-19
+death: 1793-12-08
+wikidata_id: Q230677
+metadata:
+  sources: [Wikidata Q230677 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/%C3%89lisabeth_Vig%C3%A9e-Lebrun_-_Portrait_of_Madame_Du_Barry.jpg/1280px-%C3%89lisabeth_Vig%C3%A9e-Lebrun_-_Portrait_of_Madame_Du_Barry.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%C3%89lisabeth_Vig%C3%A9e-Lebrun_-_Portrait_of_Madame_Du_Barry.jpg
+    license: Public domain
+    credit: Élisabeth Louise Vigée Le Brun
+identifiers:
+  bnf: "120040410"
+  gnd: "118527614"
+  idref: "028148185"
+  lc: n80040159
+  rkd: "440850"
+  ulan: "500317018"
+  viaf: "36927917"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q230677
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q230677
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q230677
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q230677

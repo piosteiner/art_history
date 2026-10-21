@@ -1,2 +1,37 @@
 public_id: 100311
 name: Kunstmuseum Bern
+names: [Museum of Fine Arts Berne]
+founded: 1879
+place: bern
+location: [7.44333, 46.95111]
+address: Hodlerstrasse 8–12, 3011 Bern
+website_url: https://www.kunstmuseumbern.ch
+wikidata_id: Q194622
+metadata:
+  sources: [Wikidata Q194622 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Bern_Kunstmuseum_1.jpg/1280px-Bern_Kunstmuseum_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bern_Kunstmuseum_1.jpg
+    license: CC BY 3.0
+    credit: "Photo: Andreas Praefcke"
+identifiers:
+  gnd: 2016799-4
+  lc: n50065150
+  viaf: "133205934"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q194622
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q194622
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q194622
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q194622

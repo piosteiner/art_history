@@ -1,0 +1,32 @@
+public_id: 101735
+name: Richelieu
+names:
+  - lang: ja
+    role: translation
+    text: リシュリュー (アンドル＝エ＝ロワール県)
+  - lang: zh
+    role: translation
+    text: 黎塞留
+  - lang: ru
+    role: translation
+    text: Ришелье
+kind: settlement
+parent: canton-of-richelieu
+country_code: FR
+location: [0.32361, 47.01417]
+wikidata_id: Q659955
+metadata:
+  sources: [Wikidata Q659955 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q659955
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q659955
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q659955

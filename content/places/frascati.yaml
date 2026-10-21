@@ -1,0 +1,37 @@
+public_id: 102016
+name: Frascati
+names:
+  - lang: ja
+    role: translation
+    text: フラスカーティ
+  - lang: zh
+    role: translation
+    text: 弗拉斯卡蒂
+  - lang: ko
+    role: translation
+    text: 프라스카티
+  - lang: ru
+    role: translation
+    text: Фраскати
+kind: settlement
+parent: metropolitan-city-of-rome
+country_code: IT
+location: [12.68333, 41.81667]
+wikidata_id: Q190963
+metadata:
+  sources: [Wikidata Q190963 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4086530-7
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q190963
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q190963
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q190963

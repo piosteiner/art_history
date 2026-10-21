@@ -1,0 +1,16 @@
+public_id: 102013
+name: Stockholm Municipality
+kind: site
+location: [18.05472, 59.3275]
+wikidata_id: Q506250
+metadata:
+  sources: [Wikidata Q506250 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q506250
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q506250

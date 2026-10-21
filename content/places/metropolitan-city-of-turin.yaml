@@ -1,0 +1,16 @@
+public_id: 102070
+name: Metropolitan City of Turin
+kind: site
+location: [7.7, 45.0667]
+wikidata_id: Q18288162
+metadata:
+  sources: [Wikidata Q18288162 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q18288162
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q18288162

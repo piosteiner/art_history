@@ -1,0 +1,18 @@
+public_id: 102172
+name: François Rude
+given_name: François
+family_name: Rude
+birth: 1784-01-04
+death: 1855-11-03
+wikidata_id: Q346491
+metadata:
+  sources: [Wikidata Q346491 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q346491
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q346491

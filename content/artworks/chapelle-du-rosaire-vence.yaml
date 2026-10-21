@@ -1,0 +1,56 @@
+public_id: 102168
+title_lang: fr
+title: Chapelle du Rosaire (Chapelle Matisse)
+names:
+  - Vence Chapel
+  - Chapelle du Saint-Marie du Rosaire
+  - lang: zh
+    role: translation
+    text: 旺斯罗塞尔小教堂
+  - lang: ko
+    role: translation
+    text: 로사리오 예배당
+  - lang: ru
+    role: translation
+    text: Часовня Розер
+creator: henri-matisse
+created: 1949/1951
+location: [7.11278, 43.7275]
+wikidata_id: Q1062726
+metadata:
+  sources: [Wikidata Q1062726 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/vence
+    period: 1949
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Chapelle_du_Rosaire_de_Vence_%284426949800%29.jpg/1280px-Chapelle_du_Rosaire_de_Vence_%284426949800%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chapelle_du_Rosaire_de_Vence_(4426949800).jpg
+    license: CC BY-SA 2.0
+    credit: m-louis .® from Osaka, Japan
+provenance:
+  - owner_label: the Dominican sisters of Vence
+    acquired: 1949
+    method: commission
+    place: vence
+    label: built 1949–1951 for the Dominican convent, architect Auguste Perret, decorated by Matisse — a project with his former nurse Monique Bourgeois, by then Sister Jacques-Marie; consecrated on 25 June 1951
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Chapelle_du_Rosaire_%28Vence%29
+        note: La chapelle du Rosaire, dite aussi chapelle Matisse, est une chapelle érigée de 1949 à 1951 à Vence (Alpes-Maritimes) pour le couvent des Dominicains. Conçue par l'architecte Auguste Perret (1874-1954) et décorée par Henri Matisse (1869-1954), elle est consacrée le 25 juin 1951.
+        source: wikipedia-fr-chapelle-rosaire-vence
+        accessed: 2026-10-20
+identifiers:
+  gnd: 6104688-7
+  viaf: "159340222"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1062726
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1062726
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1062726

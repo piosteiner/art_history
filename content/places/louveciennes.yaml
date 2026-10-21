@@ -1,0 +1,37 @@
+public_id: 101729
+name: Louveciennes
+names:
+  - lang: ja
+    role: translation
+    text: ルーヴシエンヌ
+  - lang: zh
+    role: translation
+    text: 卢沃谢讷
+  - lang: ko
+    role: translation
+    text: 루브시엔
+  - lang: ru
+    role: translation
+    text: Лувесьен
+kind: settlement
+parent: arrondissement-of-saint-germain-en-laye
+country_code: FR
+location: [2.11639, 48.86028]
+wikidata_id: Q762133
+metadata:
+  sources: [Wikidata Q762133 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4324076-8
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q762133
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q762133
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q762133

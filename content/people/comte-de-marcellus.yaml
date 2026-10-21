@@ -1,0 +1,43 @@
+public_id: 101749
+name: Lodoïs de Martin du Tyrac, comte de Marcellus
+names:
+  - lang: fr
+    role: translation
+    text: Lodoïs de Martin du Tyrac de Marcellus
+  - lang: ru
+    role: translation
+    text: Лодоис Мартен дю Тирак де Марселлю
+kind: person
+occupations: [philologist, diplomat, traveler, hellenist]
+birth: 1795-01-19
+death: 1861-04-28
+wikidata_id: Q3257799
+metadata:
+  sources: [Wikidata Q3257799 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/63/Ingres_-_Le_comte_de_Marcellus.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ingres_-_Le_comte_de_Marcellus.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
+identifiers:
+  gnd: "104222220"
+  idref: "030724899"
+  lc: n88256185
+  viaf: "64787124"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q3257799
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q3257799
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q3257799
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q3257799

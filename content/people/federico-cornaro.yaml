@@ -1,0 +1,48 @@
+public_id: 102193
+name: Federico Baldissera Bartolomeo Cornaro
+given_name: Federico Baldissera Bartolomeo
+family_name: Cornaro
+names:
+  - lang: fr
+    role: translation
+    text: Federico Baldissera Bartolomeo Corner
+  - lang: it
+    role: translation
+    text: Federico Corner
+  - lang: ru
+    role: translation
+    text: Федерико Корнер
+kind: person
+occupations: [Catholic priest, Catholic bishop, patriarch, bishop]
+birth: 1579-11-26
+death: 1653-06-05
+wikidata_id: Q82665
+metadata:
+  sources: [Wikidata Q82665 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Ca%27_Rezzonico_-_Ritratto_del_cardinale_Federico_Corner_-_Bernardo_Strozzi.jpg/1280px-Ca%27_Rezzonico_-_Ritratto_del_cardinale_Federico_Corner_-_Bernardo_Strozzi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ca%27_Rezzonico_-_Ritratto_del_cardinale_Federico_Corner_-_Bernardo_Strozzi.jpg
+    license: CC BY-SA 4.0
+    credit: Didier Descouens
+identifiers:
+  bnf: 13741726g
+  gnd: "122935543"
+  idref: "060728779"
+  viaf: "62442550"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q82665
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q82665
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q82665
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q82665

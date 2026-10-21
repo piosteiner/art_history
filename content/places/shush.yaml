@@ -1,0 +1,16 @@
+public_id: 101739
+name: Shush
+kind: site
+location: [48.24361, 32.19417]
+wikidata_id: Q4168823
+metadata:
+  sources: [Wikidata Q4168823 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q4168823
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q4168823

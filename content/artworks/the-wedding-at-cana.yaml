@@ -1,0 +1,133 @@
+public_id: 101703
+title_lang: fr
+title: Les Noces de Cana
+names:
+  - lang: en
+    role: translation
+    text: The Wedding at Cana
+  - lang: nl
+    role: translation
+    text: De bruiloft te Kana
+  - lang: de
+    role: translation
+    text: Die Hochzeit zu Kana
+  - lang: it
+    role: translation
+    text: Nozze di Cana
+  - lang: es
+    role: translation
+    text: Las bodas de Caná
+  - lang: ja
+    role: translation
+    text: カナの婚礼
+  - lang: zh
+    role: translation
+    text: 迦拿的婚禮
+  - lang: ko
+    role: translation
+    text: 가나의 혼인잔치
+  - lang: ru
+    role: translation
+    text: Брак в Кане Галилейской
+creator: paolo-veronese
+created: 1562/1563
+created_label: c. 1560s
+materials: [oil paint, canvas]
+dimensions: [677, 994]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 142
+web_url: https://www.analisidellopera.it/paolo-veronese-nozze-di-cana/
+wikidata_id: Q185255
+metadata:
+  sources: [Wikidata Q185255 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_%3B_MR_384.jpg/1280px-Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_%3B_MR_384.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_;_MR_384.jpg
+    license: Public domain
+    credit: Paolo Veronese
+provenance:
+  - owner: institution/abbey-of-san-giorgio-maggiore
+    acquired: 1562-06-06
+    method: commission
+    place: venice
+    label: commissioned for the refectory Palladio had just rebuilt, to fill its end wall; to be finished by 8 September 1563
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Les_Noces_de_Cana_(V%C3%A9ron%C3%A8se)
+        note: Le tableau est commandé le 6 juin 1562 par le bénédictin Paul du monastère San Giorgio Maggiore, à Venise. Il est destiné au réfectoire du monastère, dont Palladio vient d’achever cette même année la rénovation.
+        source: wikipedia-fr-noces-de-cana
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    further_places:
+      - place: paris
+        date: 31 July 1798
+    acquired: 1797
+    method: spoils_of_war
+    place: venice
+    label: taken under the Treaty of Campo Formio (17 October 1797) as a war contribution after the first Italian campaign; cut into seven strips for the journey; at the Muséum central des arts on 31 July 1798
+    notes_md: “Le tableau fait partie des œuvres d’art attribuées à la France en vertu du traité de Campo-Formio du 17 octobre 1797 au titre des contributions de guerre à la suite de la première campagne d'Italie. Il est découpé en sept lais qui furent par la suite recollés en France. Le 31 juillet 1798, Les Noces de Cana entrent au Muséum central des arts” (Wikipédia, Les Noces de Cana).
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064382
+        note: "Peint en 1562-1563 pour le réfectoire des bénédictins de San Giorgio Maggiore à Venise ; prélevé en 1797 ; transporté au Louvre en 1798. — Mode d'acquisition : conquête militaire, 1798"
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Austria, for Venice
+    role: event
+    acquired: 1815
+    method: claim
+    place: paris
+    label: Austria, then ruling Venice, claims its return; Vivant Denon persuades the Austrian commissioner that the canvas is too fragile and large to travel
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Les_Noces_de_Cana_(V%C3%A9ron%C3%A8se)
+        note: En 1815, l’Autriche, puissance occupante de l’Italie, réclame le retour à Venise des Noces de Cana. Dominique Vivant Denon parvient à convaincre le commissaire autrichien que la fragilité et les dimensions de la toile rendraient son transport très difficile.
+        source: wikipedia-fr-noces-de-cana
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1815
+    method: exchange
+    direct: true
+    place: paris
+    label: kept by the Louvre; Austria received Le Brun's painting in exchange
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Les_Noces_de_Cana_(V%C3%A9ron%C3%A8se)
+        note: L’Autriche reçoit en échange du tableau de Véronèse Le Repas chez Simon de Charles Le Brun « pour le suppléer dans le réfectoire du couvent des Bénédictins de San Giorgio Maggiore ».
+        source: wikipedia-fr-noces-de-cana
+        accessed: 2026-10-20
+    exchanged_for_text: Charles Le Brun's Feast in the House of Simon, sent to replace it in the refectory of San Giorgio Maggiore
+numbers:
+  - number: MR 384
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+identifiers:
+  gnd: 4347130-4
+  viaf: "193736178"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q185255
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010064382
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q185255
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q185255
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q185255
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q185255
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q185255
+    - url: https://collections.louvre.fr/ark:/53355/cl010064382
+      source: louvre-collections
+      accessed: 2026-10-20

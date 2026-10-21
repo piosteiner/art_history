@@ -1,0 +1,44 @@
+public_id: 102014
+name: Stockholm
+names:
+  - Sthlm
+  - lang: it
+    role: translation
+    text: Stoccolma
+  - lang: es
+    role: translation
+    text: Estocolmo
+  - lang: ja
+    role: translation
+    text: ストックホルム
+  - lang: zh
+    role: translation
+    text: 斯德哥尔摩
+  - lang: ko
+    role: translation
+    text: 스톡홀름
+  - lang: ru
+    role: translation
+    text: Стокгольм
+kind: settlement
+parent: stockholm-municipality
+country_code: SE
+location: [18.06861, 59.32944]
+wikidata_id: Q1754
+metadata:
+  sources: [Wikidata Q1754 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4057648-6
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1754
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q1754
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1754

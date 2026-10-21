@@ -1,0 +1,44 @@
+public_id: 101755
+name: Guy de Rothschild
+names:
+  - lang: ja
+    role: translation
+    text: ギー・ド・ロチルド
+  - lang: ru
+    role: translation
+    text: Ги де Ротшильд
+kind: person
+occupations: [art collector, banker, collector]
+birth: 1909-05-21
+death: 2007-06-12
+wikidata_id: Q1379005
+metadata:
+  sources: [Wikidata Q1379005 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Guy_de_Rothschild_1964.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Guy_de_Rothschild_1964.jpg
+    license: Public domain
+    credit: Fritz Cohen
+identifiers:
+  bnf: "119227162"
+  gnd: 11874996X
+  idref: "027110222"
+  lc: n83142828
+  viaf: "73859473"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1379005
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1379005
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1379005
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1379005

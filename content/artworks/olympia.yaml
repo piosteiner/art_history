@@ -1,0 +1,137 @@
+public_id: 101838
+title_lang: fr
+title: Olympia
+names:
+  - lang: ja
+    role: translation
+    text: オランピア
+  - lang: zh
+    role: translation
+    text: 奥林比亚
+  - lang: ko
+    role: translation
+    text: 올랭피아
+  - lang: ru
+    role: translation
+    text: Олимпия
+creator: edouard-manet
+created: 1863
+materials: [oil paint, canvas]
+dimensions: [130.5, 191]
+institution: musee-d-orsay
+inventory_number: RF 644
+web_url: https://www.musee-orsay.fr/fr/oeuvres/olympia-712
+wikidata_id: Q737062
+metadata:
+  sources: [Wikidata Q737062 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Edouard_Manet_-_Olympia_-_Google_Art_Project_3.jpg/1280px-Edouard_Manet_-_Olympia_-_Google_Art_Project_3.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edouard_Manet_-_Olympia_-_Google_Art_Project_3.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner: artist/edouard-manet
+    acquired: 1863
+    ended: 1883
+    method: creation
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/olympia-712
+        note: Date 1863
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/suzanne-manet
+    acquired: 1884-02
+    ended: 1890-03
+    method: auction
+    place: paris
+    label: put up in the sale of the artist's studio in 1884 and bought in by his widow
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Olympia_(Manet)
+        note: En 1884, le scandale n'est pas éteint. L'œuvre est aux enchères lors de la vente publique de l'atelier de l'artiste. Sa veuve décide de racheter le tableau.
+        source: wikipedia-fr-olympia
+        accessed: 2026-10-20
+  - owner_label: the subscribers of Claude Monet's subscription
+    acquired: 1890-03
+    ended: 1890
+    method: purchase
+    direct: true
+    place: paris
+    label: Monet raised a subscription to buy it from Suzanne Manet and give it to the Louvre (an American seemed interested); offered on 7 February 1890, bought in March 1890
+    price:
+      amount: 19415
+      currency: AFRF
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Olympia_(Manet)
+        note: En 1889, alors qu'un amateur américain semble intéressé par l'œuvre, Claude Monet décide de racheter le tableau à la veuve afin de l'offrir au musée du Louvre. Il lance alors une souscription […] En mars 1890, le tableau est acheté à Suzanne Manet pour 19 415 francs et entre au Luxembourg peu après.
+        source: wikipedia-fr-olympia
+        accessed: 2026-10-20
+  - owner: institution/luxembourg-museum
+    acquired: 1890
+    ended: 1907
+    method: gift
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/olympia-712
+        note: 1890, offert à l'Etat par souscription publique sur l'initiative de Claude Monet de 1890 à 1907, musée du Luxembourg, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1907
+    method: transfer
+    direct: true
+    place: paris
+    label: at the Louvre's Jeu de Paume gallery 1947–1986
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/olympia-712
+        note: 1907, attribué au musée du Louvre, Paris […] de 1947 à 1986, musée du Louvre, galerie du Jeu de Paume, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/olympia-712
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 7541559-8
+  viaf: "180067591"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q737062
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q737062
+    - url: https://www.musee-orsay.fr/fr/oeuvres/olympia-712
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q737062
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q737062
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q737062
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q737062
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q737062
+    - url: https://www.musee-orsay.fr/fr/oeuvres/olympia-712
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

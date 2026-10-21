@@ -1,0 +1,16 @@
+public_id: 101910
+name: Metropolitan City of Palermo
+kind: site
+location: [13.36139, 38.11556]
+wikidata_id: Q20795016
+metadata:
+  sources: [Wikidata Q20795016 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q20795016
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q20795016

@@ -1,0 +1,16 @@
+public_id: 101908
+name: Arrondissement of Bruges
+kind: site
+location: [3.2, 51.2]
+wikidata_id: Q91045
+metadata:
+  sources: [Wikidata Q91045 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q91045
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q91045

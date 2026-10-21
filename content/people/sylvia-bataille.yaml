@@ -1,0 +1,49 @@
+public_id: 101881
+name: Sylvia Bataille
+names:
+  - Sylvia Maklès
+  - Sylvia Makles
+  - lang: zh
+    role: translation
+    text: 西爾維亞·巴塔耶
+  - lang: ko
+    role: translation
+    text: 실비아 바타유
+  - lang: ru
+    role: translation
+    text: Сильвия Батай
+kind: person
+occupations: [actor, film actor]
+birth: 1908-11-01
+death: 1993-12-22
+wikidata_id: Q2636468
+metadata:
+  sources: [Wikidata Q2636468 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1d/SylviaBataille-1939-Harcourt.png
+    source_url: https://commons.wikimedia.org/wiki/File:SylviaBataille-1939-Harcourt.png
+    license: Public domain
+    credit: Studio Harcourt
+identifiers:
+  bnf: 13930361s
+  gnd: "172655609"
+  idref: "052198553"
+  lc: no2001049260
+  viaf: "46949158"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q2636468
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q2636468
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q2636468
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q2636468

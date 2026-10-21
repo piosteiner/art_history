@@ -1,0 +1,182 @@
+public_id: 101699
+title_lang: fr
+title: Saint Jean Baptiste
+names:
+  - lang: en
+    role: original
+    text: Saint John the Baptist
+  - St. John the Baptist
+  - St John the Baptist
+  - John the Baptist
+  - Saint John the Baptist (Leonardo)
+  - lang: nl
+    role: translation
+    text: Johannes de Doper
+  - lang: fr
+    role: original
+    text: Saint Jean-Baptiste
+  - lang: de
+    role: translation
+    text: Johannes der Täufer
+  - lang: it
+    role: translation
+    text: San Giovanni Battista
+  - lang: es
+    role: translation
+    text: San Juan Bautista
+  - lang: ja
+    role: translation
+    text: 洗礼者ヨハネ
+  - lang: zh
+    role: translation
+    text: 施洗者圣约翰
+  - lang: ko
+    role: translation
+    text: 세례자 요한
+  - lang: ru
+    role: translation
+    text: Иоанн Креститель
+creator: leonardo-da-vinci
+created: 1503/1524
+created_label: c. 1510s
+materials: [panel, oil paint]
+dimensions: [69, 57]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 775
+web_url: https://collections.louvre.fr/ark:/53355/cl010062374
+wikidata_id: Q783215
+metadata:
+  sources: [Wikidata Q783215 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg/1280px-Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg
+    license: Public domain
+    credit: Leonardo da Vinci
+provenance:
+  - owner: artist/leonardo-da-vinci
+    acquired: c. 1508
+    ended: 1518
+    method: creation
+    label: conceived probably about 1508, kept by Leonardo, unfinished in 1519
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: Ce tableau fut conçu vraisemblablement vers 1508 et conservé par Léonard de Vinci jusqu'à sa mort, pour en poursuivre lentement l'exécution picturale, toujours inachevée en 1519
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/francis-i-of-france
+    acquired: 1518
+    method: purchase
+    label: then out of the royal collection under unknown circumstances
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: très probablement acquis par François Ier en 1518 puis sorti des collections royales dans des conditions inconnues
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/roger-du-plessis-liancourt
+    acquired: 1620s
+    label: Roger du Plessis, duc de Liancourt
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: appartient à Roger du Plessis, duc de Liancourt, dans les années 1620
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/charles-i-of-england
+    acquired: 1630s
+    ended: 1649
+    method: gift
+    direct: true
+    place: london
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: donné par le duc de Liancourt au roi Charles Ier d’Angleterre, et conservé à Londres des années 1630 à 1649
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Cruso and Terence
+    acquired: 1651
+    method: purchase
+    place: london
+    label: bought at the Commonwealth sale of the late king's goods
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: après l'exécution de Charles Ier, vente du Commonwealth en 1651 ; acquis à cette vente par Cruso et Terence en 1651
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/everhard-jabach
+    acquired: 1651 or later
+    ended: 1662
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: vendu au banquier Everhard Jabach et conservé dans sa collection à Paris jusqu’en 1662
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/louis-xiv-of-france
+    acquired: 1662
+    method: purchase
+    direct: true
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: acquis par Louis XIV en 1662 et resté dans la collection royale française jusqu'en 1792
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/french-royal-collection
+    acquired: 1715
+    ended: 1792
+    method: inheritance
+    label: the Crown's collection, until 1792
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: resté dans la collection royale française jusqu'en 1792
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1793
+    method: transfer
+    place: paris
+    label: the royal collection became the nation's (“ancienne collection royale”); shown at the Louvre in 1801
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062374
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne, 1793 […] exposé au musée du Louvre en 1801."
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 318
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+identifiers:
+  gnd: 4350399-8
+  viaf: "211736301"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q783215
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010062374
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q783215
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q783215
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q783215
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q783215
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q783215
+    - url: https://collections.louvre.fr/ark:/53355/cl010062374
+      source: louvre-collections
+      accessed: 2026-10-20

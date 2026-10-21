@@ -1,0 +1,106 @@
+public_id: 101950
+title_lang: it
+title: Scudo con testa di Medusa
+names:
+  - lang: fr
+    role: translation
+    text: Méduse
+  - lang: es
+    role: translation
+    text: Cabeza de Medusa
+  - lang: ja
+    role: translation
+    text: メドゥーサの首 (カラヴァッジョ)
+  - lang: zh
+    role: translation
+    text: 美杜莎 (卡拉瓦乔)
+  - lang: ko
+    role: translation
+    text: 메두사
+  - lang: ru
+    role: translation
+    text: Медуза
+creator: caravaggio
+created: c. 1597–1598
+materials: [oil paint, canvas]
+dimensions: [60, 55]
+institution: uffizi-gallery
+inventory_number: 1890 n. 1351
+web_url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+wikidata_id: Q2293905
+metadata:
+  sources: [Wikidata Q2293905 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Caravaggio_-_Medusa_-_Google_Art_Project.jpg/1280px-Caravaggio_-_Medusa_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caravaggio_-_Medusa_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: person/francesco-maria-del-monte
+    acquired: c. 1597
+    method: commission
+    place: rome
+    label: commissioned by the Tuscan grand duke's ambassador in Rome as a gift for Ferdinando I, who was furnishing the armoury of the Palazzo Vecchio gallery
+    sources:
+      - url: https://it.wikipedia.org/wiki/Scudo_con_testa_di_Medusa
+        note: La seconda versione fu commissionata dal cardinal Francesco Maria Bourbon del Monte, ambasciatore a Roma del Granduca di Toscana, che poi la diede in regalo al granduca Ferdinando I de' Medici.
+        source: wikipedia-it-medusa-caravaggio
+        accessed: 2026-10-20
+  - owner: person/ferdinando-i-de-medici
+    acquired: 1598-07-25
+    method: gift
+    direct: true
+    place: florence
+    label: brought to Florence by the cardinal himself and handed over on 25 July 1598, as the Guardaroba recorded; placed in the Armoury
+    sources:
+      - url: https://it.wikipedia.org/wiki/Scudo_con_testa_di_Medusa
+        note: Il cardinale portò personalmente il dono a Firenze consegnandolo il 25 luglio 1598 come registrato nel Guardaroba Mediceo.
+        source: wikipedia-it-medusa-caravaggio
+        accessed: 2026-10-20
+  - owner: person/ferdinando-i-de-medici
+    acquired: 1608
+    method: gift
+    place: florence
+    label: given on the occasion of the wedding of his son Cosimo II
+    sources:
+      - url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+        note: (Medusa, Uffizi Galleries, inv. 1890 no. 1351), was donated by Cardinal del Monte to Ferdinando I de' Medici on the occasion of the wedding of his son Cosimo II in 1608.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+    alternative_of: 1
+  - owner: institution/uffizi-gallery
+    place: florence
+    label: from the Medici Armoury into the Galleries
+    sources:
+      - url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+        note: Medusa, Uffizi Galleries, inv. 1890 no. 1351
+        source: uffizi-artworks
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2293905
+  created:
+    - url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2293905
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2293905
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2293905
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2293905
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+      source: uffizi-artworks
+      accessed: 2026-10-20

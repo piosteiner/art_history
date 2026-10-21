@@ -1,0 +1,50 @@
+public_id: 101770
+name: Léon de Madaillan de Lesparre, marquis de Lassay
+names:
+  - Léon de Lassay
+  - lang: nl
+    role: translation
+    text: Léon de  Madaillan-Lesparre (count of Lassay)
+  - lang: de
+    role: translation
+    text: Léon de Madaillan-Lesparre
+  - lang: it
+    role: translation
+    text: Léon de Madaillan de Lesparre, marchese di Lassay
+  - lang: es
+    role: translation
+    text: Léon de Madaillan-Lesparre (count of Lassay)
+  - lang: ru
+    role: translation
+    text: Леон де Мадайян де Леспар, маркиз де Лассе
+kind: person
+occupations: [art collector]
+birth: 1683
+death: 1750
+wikidata_id: Q17280446
+metadata:
+  sources: [Wikidata Q17280446 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3f/Leon_de_Madaillan_de_Lesparre%2C_Marquis_de_Lassay.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leon_de_Madaillan_de_Lesparre,_Marquis_de_Lassay.jpg
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  rkd: "439967"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q17280446
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q17280446
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q17280446
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q17280446

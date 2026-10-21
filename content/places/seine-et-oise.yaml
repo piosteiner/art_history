@@ -1,0 +1,16 @@
+public_id: 101724
+name: Seine-et-Oise
+kind: region
+location: [2.13333, 48.8]
+wikidata_id: Q979470
+metadata:
+  sources: [Wikidata Q979470 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q979470
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q979470

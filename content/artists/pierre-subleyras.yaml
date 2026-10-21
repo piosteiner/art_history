@@ -1,0 +1,84 @@
+public_id: 101672
+name: Pierre Subleyras
+names:
+  - Pierre Hubert Subleyras
+  - Pierre Sublerns
+  - Hubert Subleyras
+  - Pietro Subleiras
+  - Pierre Subleras
+  - Pierre Hubert Subleras
+  - Pietro Subleras Francese
+  - Sublézas
+  - Sublerasse
+  - P. Fr. Subleiras
+  - Sublieras
+  - Subleras
+  - monsu Subleras
+  - P. Sublerase
+  - Jean-Baptiste Pierre Subleyras
+  - Sublairas
+  - M. Subleras
+  - Pierre Subleiras
+  - Subleigas
+  - Subleyras
+  - P. Fr. Subleyras
+  - Sublecras
+  - Subleyran
+  - Subelarais
+  - Subelarise
+  - Pietro Subligeas
+  - subleyras pierre
+  - Supleras
+  - M. de Subleyras
+  - P. Subleyras
+  - Sublerns
+  - Sublerras
+  - Subléras
+  - Pietro Subleyras
+  - Subleiras
+  - Pierre Sublerras
+  - Pierre Sublerasse
+  - Pierre Subleyran
+  - Pierre Sublairas
+  - Pierre Supleras
+  - Pierre Subelarais
+  - Pierre Subelarise
+  - Pierre Subleigas
+  - Pierre Sublecras
+  - Pierre Subléras
+  - Pierre Sublieras
+  - Pierre Sublézas
+  - lang: ja
+    role: translation
+    text: ピエール・シュプレイラス
+  - lang: ru
+    role: translation
+    text: Пьер Сюблейра
+birth: 1699-11-25
+death: 1749-05-28
+wikidata_id: Q464898
+metadata:
+  sources: [Wikidata Q464898 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Self-portrait_by_Pierre_Subleyras.jpg/1280px-Self-portrait_by_Pierre_Subleyras.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-portrait_by_Pierre_Subleyras.jpg
+    license: Public domain
+    credit: Pierre Subleyras
+identifiers:
+  bnf: 12098241c
+  gnd: "119094282"
+  idref: "029333873"
+  kulturnav: d15afc23-524d-407d-bc41-7b3c6355292a
+  lc: n87123625
+  rkd: "76004"
+  ulan: "500000017"
+  viaf: "12336582"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q464898
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q464898

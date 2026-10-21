@@ -1,0 +1,47 @@
+public_id: 102087
+name: Cesare Monti
+names:
+  - Cesare, Monti
+  - lang: ja
+    role: translation
+    text: チェザーレ・モンティ
+  - lang: ru
+    role: translation
+    text: Чезаре Монти
+kind: person
+occupations: [Catholic priest, diplomat, archbishop, papal legate, Catholic bishop]
+birth: 1594-05-15
+death: 1650-08-16
+wikidata_id: Q1222120
+metadata:
+  sources: [Wikidata Q1222120 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ee/Card_Cesare_Monti.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Card_Cesare_Monti.jpg
+    license: CC BY-SA 3.0
+    credit: A ntv
+identifiers:
+  bnf: "124938436"
+  gnd: "119282100"
+  hls: "026402"
+  lc: nr94038446
+  rkd: "444408"
+  ulan: "500322780"
+  viaf: "67272422"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1222120
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1222120
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1222120
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1222120

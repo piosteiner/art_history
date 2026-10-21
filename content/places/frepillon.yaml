@@ -1,0 +1,31 @@
+public_id: 101727
+name: Frépillon
+names:
+  - lang: zh
+    role: translation
+    text: 弗雷皮永
+  - lang: ru
+    role: translation
+    text: Фрепийон
+kind: settlement
+parent: seine-et-oise
+country_code: FR
+location: [2.205, 49.05167]
+wikidata_id: Q634335
+metadata:
+  sources: [Wikidata Q634335 (retrieved 2026-10-20)]
+identifiers:
+  gnd: "1079059687"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q634335
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q634335
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q634335

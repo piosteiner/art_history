@@ -1,0 +1,72 @@
+public_id: 102085
+name: Cardinal Mazarin
+names:
+  - lang: it
+    role: original
+    text: Giulio Raimondo Mazzarino
+  - lang: fr
+    role: original
+    text: Jules Mazarin
+  - Jules, Cardinal Mazarin
+  - Cardinal Mazarin Jules
+  - Giulio Mazzarini
+  - Julio Mazarino
+  - Cardinal Jules Mazarin
+  - Giulio Mazarino
+  - lang: it
+    role: original
+    text: Giulio Mazzarino
+  - lang: es
+    role: translation
+    text: Cardenal Mazarino
+  - lang: ja
+    role: translation
+    text: ジュール・マザラン
+  - lang: zh
+    role: translation
+    text: 儒勒·马萨林
+  - lang: ko
+    role: translation
+    text: 쥘 마자랭
+  - lang: ru
+    role: translation
+    text: Джулио Мазарини
+kind: person
+occupations: [diplomat, politician, Catholic priest, art collector, Catholic bishop, jurist]
+birth: 1602-07-14
+death: 1661-03-09
+wikidata_id: Q166056
+metadata:
+  sources: [Wikidata Q166056 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f2/Cardinal_Mazarin_%28Pierre_Mignard%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cardinal_Mazarin_(Pierre_Mignard).jpg
+    license: Public domain
+    credit: Pierre Mignard I
+identifiers:
+  bnf: "121112687"
+  dodis: P4685
+  gnd: "118579703"
+  idref: "027400646"
+  lc: n50078533
+  nlk: KAC199635305
+  rkd: "431897"
+  ulan: "500354043"
+  viaf: "17254063"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q166056
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q166056
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q166056
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q166056

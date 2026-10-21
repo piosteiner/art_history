@@ -1,0 +1,11 @@
+public_id: 102169
+name: Church of Saint-Sulpice
+founded: 1646
+wikidata_id: Q295844
+metadata:
+  sources: [Wikidata Q295844 (retrieved 2026-10-20)]
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q295844

@@ -1,0 +1,76 @@
+public_id: 101681
+title_lang: de
+title: Der Künstler in seinem Atelier
+names:
+  - lang: en
+    role: translation
+    text: The Artist's Studio
+    status: official
+creator: pierre-subleyras
+created: between 1746 and 1749
+medium: Öl auf Leinwand
+dimensions: [125, 99]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-844
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+images:
+  - url: https://collection.kunstsammlungenakademie.at.zetcom.net/multimedia/1/multimedia-9441.large.jpg
+    source_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+    license: CC BY 4.0
+    credit: "Gemäldegalerie der Akademie der bildenden Künste Wien, Foto: image industry"
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    ended: 1822
+    place: vienna
+    notes_md: The Academy publishes the bequest only; earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1822
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “Die bereits beachtlichen Bestände aus der Schenkung des Grafen Lamberg-Sprinzenstein, der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-20
+sources:
+  medium:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+      note: "“Pierre Subleyras, Der Künstler in seinem Atelier, zwischen 1746 und 1749, Öl auf Leinwand, Bildmaß: 125.0 × 99.0 cm; Rahmenmaß: 136.5 × 106.0 × 9.0 cm; Rahmenmaß: 157.0 × 128.0 × 9.0 cm, GG-844”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  created:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+      note: "“Pierre Subleyras, Der Künstler in seinem Atelier, zwischen 1746 und 1749, Öl auf Leinwand, Bildmaß: 125.0 × 99.0 cm; Rahmenmaß: 136.5 × 106.0 × 9.0 cm; Rahmenmaß: 157.0 × 128.0 × 9.0 cm, GG-844”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  creator:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+      note: "“Pierre Subleyras, Der Künstler in seinem Atelier, zwischen 1746 und 1749, Öl auf Leinwand, Bildmaß: 125.0 × 99.0 cm; Rahmenmaß: 136.5 × 106.0 × 9.0 cm; Rahmenmaß: 157.0 × 128.0 × 9.0 cm, GG-844”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  dimensions:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+      note: "“Pierre Subleyras, Der Künstler in seinem Atelier, zwischen 1746 und 1749, Öl auf Leinwand, Bildmaß: 125.0 × 99.0 cm; Rahmenmaß: 136.5 × 106.0 × 9.0 cm; Rahmenmaß: 157.0 × 128.0 × 9.0 cm, GG-844”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  institution:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+      note: "“Pierre Subleyras, Der Künstler in seinem Atelier, zwischen 1746 und 1749, Öl auf Leinwand, Bildmaß: 125.0 × 99.0 cm; Rahmenmaß: 136.5 × 106.0 × 9.0 cm; Rahmenmaß: 157.0 × 128.0 × 9.0 cm, GG-844”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  inventory_number:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1280
+      note: "“Pierre Subleyras, Der Künstler in seinem Atelier, zwischen 1746 und 1749, Öl auf Leinwand, Bildmaß: 125.0 × 99.0 cm; Rahmenmaß: 136.5 × 106.0 × 9.0 cm; Rahmenmaß: 157.0 × 128.0 × 9.0 cm, GG-844”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20

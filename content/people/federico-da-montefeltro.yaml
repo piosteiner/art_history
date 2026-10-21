@@ -1,0 +1,56 @@
+public_id: 101932
+name: Federico da Montefeltro
+names:
+  - Duke of Urbino Federico da Montefeltro
+  - lang: fr
+    role: translation
+    text: Frédéric III de Montefeltro
+  - lang: ja
+    role: translation
+    text: フェデリーコ・ダ・モンテフェルトロ
+  - lang: zh
+    role: translation
+    text: 費德里科·達·蒙特費爾特羅
+  - lang: ko
+    role: translation
+    text: 페데리코 다 몬테펠트로
+  - lang: ru
+    role: translation
+    text: Федериго да Монтефельтро
+kind: person
+occupations: [condottiero, patron of the arts]
+birth: 1422-06-16
+death: 1482-09-19
+wikidata_id: Q435501
+metadata:
+  sources: [Wikidata Q435501 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dc/Federico_da_Montefeltro.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Federico_da_Montefeltro.jpg
+    license: Public domain
+    credit: Piero della Francesca
+identifiers:
+  bnf: 11941263c
+  gnd: "118967444"
+  idref: "027352080"
+  lc: n79063683
+  rkd: "490391"
+  ulan: "500216636"
+  viaf: "68908276"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q435501
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q435501
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q435501
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q435501

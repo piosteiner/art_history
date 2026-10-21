@@ -1,0 +1,62 @@
+public_id: 101919
+name: Lorenzo di Pierfrancesco de' Medici
+names:
+  - lang: nl
+    role: translation
+    text: Lorenzo de' Medici
+  - lang: fr
+    role: translation
+    text: Lorenzo di Pierfrancesco de Médicis
+  - lang: de
+    role: translation
+    text: Lorenzo di Pierfrancesco de’ Medici
+  - lang: it
+    role: translation
+    text: Lorenzo il Popolano
+  - lang: es
+    role: translation
+    text: Lorenzo de Pierfrancesco de Médici
+  - lang: ja
+    role: translation
+    text: ロレンツォ・ディ・ピエルフランチェスコ・デ・メディチ
+  - lang: zh
+    role: translation
+    text: 洛倫佐•迪•皮爾弗朗切斯科•德•美第奇
+  - lang: ru
+    role: translation
+    text: Лоренцо Пополано
+kind: person
+occupations: [politician, banker, diplomat, ambassador, patron of the arts]
+birth: 1463-08-13
+death: 1503-05-30
+wikidata_id: Q1379683
+metadata:
+  sources: [Wikidata Q1379683 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a0/Lorenzo_il_popolano%2C_xv_century.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lorenzo_il_popolano,_xv_century.jpg
+    license: Public domain
+    credit: Sandro Botticelli
+identifiers:
+  bnf: 17084705d
+  gnd: "1056403667"
+  idref: "167593617"
+  lc: n83034937
+  viaf: "1380197"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1379683
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1379683
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1379683
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1379683

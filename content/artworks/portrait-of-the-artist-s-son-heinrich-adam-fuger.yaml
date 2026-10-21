@@ -1,0 +1,74 @@
+public_id: 101680
+title_lang: de
+title: Bildnis des Sohnes des Künstlers, Heinrich Adam Füger, im Alter von vier Jahren
+names:
+  - lang: en
+    role: translation
+    text: Portrait of the Artist's Son
+    status: official
+creator: heinrich-fuger
+created: c. 1795
+medium: Öl auf Leinwand
+dimensions: [110, 89]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-1022
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+images:
+  - url: https://collection.kunstsammlungenakademie.at.zetcom.net/multimedia/8/multimedia-4418.large.jpg
+    source_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+    license: CC BY 4.0
+    credit: "Gemäldegalerie der Akademie der bildenden Künste Wien, Foto: image industry"
+provenance:
+  - owner_label: Heinrich Adam Füger
+    acquired: 1818
+    method: inheritance
+    place: vienna
+    label: the sitter, the artist's son
+    certainty: probable
+    notes_md: Heinrich Friedrich Füger died in 1818; the Academy names his son as the donor.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+        note: “Schenkung Heinrich Adam Füger, Wien,1878 / Donation Heinrich Adam Füger, Wien, 1878”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1878
+    method: gift
+    direct: true
+    place: vienna
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+        note: “Schenkung Heinrich Adam Füger, Wien,1878 / Donation Heinrich Adam Füger, Wien, 1878”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+sources:
+  medium:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+      note: "“Heinrich Adam Füger; Heinrich Friedrich Füger, Bildnis des Sohnes des Künstlers, Heinrich Adam Füger, im Alter von vier Jahren, um 1795, Öl auf Leinwand, Bildmaß: 110.0 × 89.0 cm; Rahmenmaß: 144.0 × 113.5 × 10.0 cm, GG-1022”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  created:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+      note: "“Heinrich Adam Füger; Heinrich Friedrich Füger, Bildnis des Sohnes des Künstlers, Heinrich Adam Füger, im Alter von vier Jahren, um 1795, Öl auf Leinwand, Bildmaß: 110.0 × 89.0 cm; Rahmenmaß: 144.0 × 113.5 × 10.0 cm, GG-1022”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  creator:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+      note: "“Heinrich Adam Füger; Heinrich Friedrich Füger, Bildnis des Sohnes des Künstlers, Heinrich Adam Füger, im Alter von vier Jahren, um 1795, Öl auf Leinwand, Bildmaß: 110.0 × 89.0 cm; Rahmenmaß: 144.0 × 113.5 × 10.0 cm, GG-1022”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  dimensions:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+      note: "“Heinrich Adam Füger; Heinrich Friedrich Füger, Bildnis des Sohnes des Künstlers, Heinrich Adam Füger, im Alter von vier Jahren, um 1795, Öl auf Leinwand, Bildmaß: 110.0 × 89.0 cm; Rahmenmaß: 144.0 × 113.5 × 10.0 cm, GG-1022”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  institution:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+      note: "“Heinrich Adam Füger; Heinrich Friedrich Füger, Bildnis des Sohnes des Künstlers, Heinrich Adam Füger, im Alter von vier Jahren, um 1795, Öl auf Leinwand, Bildmaß: 110.0 × 89.0 cm; Rahmenmaß: 144.0 × 113.5 × 10.0 cm, GG-1022”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20
+  inventory_number:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1458
+      note: "“Heinrich Adam Füger; Heinrich Friedrich Füger, Bildnis des Sohnes des Künstlers, Heinrich Adam Füger, im Alter von vier Jahren, um 1795, Öl auf Leinwand, Bildmaß: 110.0 × 89.0 cm; Rahmenmaß: 144.0 × 113.5 × 10.0 cm, GG-1022”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-20

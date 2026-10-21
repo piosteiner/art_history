@@ -1,0 +1,27 @@
+public_id: 101596
+name: Ernst Ploil
+given_name: Ernst
+family_name: Ploil
+kind: person
+occupations: [exhibition curator, historian, lawyer]
+birth: 1946
+wikidata_id: Q112446245
+metadata:
+  sources: [Wikidata Q112446245 (retrieved 2026-10-20)]
+identifiers:
+  gnd: "128446374"
+  idref: "079153127"
+  viaf: "210774989"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q112446245
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q112446245
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q112446245

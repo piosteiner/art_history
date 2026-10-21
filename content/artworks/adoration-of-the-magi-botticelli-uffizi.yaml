@@ -1,0 +1,125 @@
+public_id: 101972
+title_lang: it
+title: Adorazione dei Magi
+names:
+  - lang: en
+    role: original
+    text: Adoration of the Magi
+  - Zanobi Altarpiece
+  - lang: nl
+    role: original
+    text: Aanbidding der Koningen
+  - lang: fr
+    role: translation
+    text: L'Adoration des mages
+  - lang: de
+    role: translation
+    text: Anbetung der Heiligen drei Könige
+  - lang: it
+    role: translation
+    text: Adorazione dei Magi
+  - lang: es
+    role: translation
+    text: Adoración de los Magos
+  - lang: ja
+    role: translation
+    text: 東方三博士の礼拝
+  - lang: zh
+    role: translation
+    text: 三博士来朝 (波提切利)
+  - lang: ko
+    role: translation
+    text: 동방박사의 경배
+  - lang: ru
+    role: translation
+    text: Поклонение волхвов
+creator: sandro-botticelli
+created: 1470/1475
+created_label: c. 1470s
+materials: [tempera, panel]
+dimensions: [111, 134]
+institution: uffizi-gallery
+inventory_number: 1890 no. 882
+web_url: https://web.archive.org/web/20160920053513/http://www.palazzo-medici.it/mediateca/en/schede.php?id_scheda=318
+wikidata_id: Q488825
+metadata:
+  sources: [Wikidata Q488825 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Zanobi-Altar.jpg/1280px-Zanobi-Altar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Zanobi-Altar.jpg
+    license: Public domain
+    credit: Sandro Botticelli
+provenance:
+  - owner_label: Gaspare di Zanobi del Lama
+    acquired: c. 1475
+    ended: 1556
+    method: commission
+    place: florence
+    label: for the chapel of the Magi he founded in Santa Maria Novella in 1469
+    sources:
+      - url: https://www.uffizi.it/en/artworks/boticelli-adoration-lami
+        note: He was Gaspare di Zanobi del Lama (1411-1481), an ambitious businessman and agent for the Guild of Cambio. In 1469, he founded a chapel in the Church of Santa Maria Novella dedicated to the Magi and the Epiphany.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner_label: the Fedini family
+    acquired: 1556
+    ended: c. 1570
+    label: patrons of the chapel
+    sources:
+      - url: https://it.wikipedia.org/wiki/Adorazione_dei_Magi_%28Botticelli_Uffizi%29
+        note: Il patronato della cappella passò nel 1556 ai Fedini e poi verso il 1570 a Flavio Mondragone, istruttore di Francesco I de' Medici.
+        source: wikipedia-it-adorazione-botticelli-lama
+        accessed: 2026-10-20
+  - owner_label: Flavio Mondragone, tutor of Francesco I de' Medici
+    acquired: c. 1570
+    place: florence
+    label: had it taken to his own palace
+    sources:
+      - url: https://it.wikipedia.org/wiki/Adorazione_dei_Magi_%28Botticelli_Uffizi%29
+        note: poi verso il 1570 a Flavio Mondragone, istruttore di Francesco I de' Medici. Il Mondragone fece trasportare il dipinto nel proprio palazzo.
+        source: wikipedia-it-adorazione-botticelli-lama
+        accessed: 2026-10-20
+  - owner_label: the grand-ducal collections (Francesco I de' Medici)
+    method: confiscation
+    place: florence
+    label: Mondragone, accused of treason by Francesco I, was exiled and his goods confiscated
+    sources:
+      - url: https://it.wikipedia.org/wiki/Adorazione_dei_Magi_%28Botticelli_Uffizi%29
+        note: L'esilio di Flavio, accusato di tradimento dallo stesso Francesco, comportò una confisca dei suoi beni, tra cui doveva trovarsi anche il dipinto botticelliano che finì nelle raccolte granducali.
+        source: wikipedia-it-adorazione-botticelli-lama
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    place: florence
+    sources:
+      - url: https://www.uffizi.it/en/artworks/boticelli-adoration-lami
+        note: Museum The Uffizi Collection […] Inventory 1890 no.882
+        source: uffizi-artworks
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q488825
+  created:
+    - url: https://www.uffizi.it/en/artworks/boticelli-adoration-lami
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q488825
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q488825
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q488825
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q488825
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/boticelli-adoration-lami
+      source: uffizi-artworks
+      accessed: 2026-10-20

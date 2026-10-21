@@ -1,0 +1,62 @@
+public_id: 101914
+name: Ognissanti Church
+names:
+  - Chiesa di Ognissanti
+  - All-Saints Church
+  - Ognissanti, Florence
+  - Ognissanti (Florence)
+  - lang: nl
+    role: translation
+    text: Ognissanti
+  - lang: fr
+    role: translation
+    text: église Ognissanti
+  - lang: es
+    role: translation
+    text: iglesia de Ognissanti
+  - lang: ja
+    role: translation
+    text: サン・サルヴァトーレ・ディ・オニサンティ教会
+  - lang: zh
+    role: translation
+    text: 佛罗伦萨诸圣教堂
+  - lang: ko
+    role: translation
+    text: 오니산티 성당
+  - lang: ru
+    role: translation
+    text: Церковь Всех святых
+founded: 1251
+place: florence
+location: [11.24598, 43.77251]
+address: via Borgo Ognissanti, 42
+website_url: https://www.chiesaognissanti.it/
+wikidata_id: Q2778991
+metadata:
+  sources: [Wikidata Q2778991 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Chiesa_di_Ognissanti%2C_Firenze%2C_facciata.jpg/1280px-Chiesa_di_Ognissanti%2C_Firenze%2C_facciata.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chiesa_di_Ognissanti,_Firenze,_facciata.jpg
+    license: CC BY-SA 3.0
+    credit: Lucarelli
+identifiers:
+  gnd: 4602655-1
+  lc: nr93026992
+  viaf: "158719605"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q2778991
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q2778991
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2778991
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2778991

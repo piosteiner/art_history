@@ -1,0 +1,55 @@
+public_id: 102184
+name: Palais Garnier
+names:
+  - Opéra Garnier
+  - Grand Opera House in Paris
+  - lang: es
+    role: translation
+    text: Ópera Garnier
+  - lang: ja
+    role: translation
+    text: ガルニエ宮
+  - lang: zh
+    role: translation
+    text: 巴黎歌劇院
+  - lang: ko
+    role: translation
+    text: 오페라 가르니에
+  - lang: ru
+    role: translation
+    text: Опера Гарнье
+founded: 1861-08-27
+place: paris
+location: [2.33167, 48.87194]
+address: Place de l'Opéra, 75009 Paris, France
+website_url: https://www.operadeparis.fr/
+wikidata_id: Q187840
+metadata:
+  sources: [Wikidata Q187840 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Paris_Palais_Garnier_2010-04-06_16.55.07.jpg/1280px-Paris_Palais_Garnier_2010-04-06_16.55.07.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paris_Palais_Garnier_2010-04-06_16.55.07.jpg
+    license: CC BY 3.0
+    credit: Alexander Hoernigk
+identifiers:
+  bnf: 11938732z
+  gnd: 5237527-4
+  idref: "034648186"
+  viaf: "958149296265880670008"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q187840
+  address:
+    - accessed: 2026-10-20
+      property: P6375
+      wikidata: Q187840
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q187840
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q187840

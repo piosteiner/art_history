@@ -1,0 +1,16 @@
+public_id: 101870
+name: Doubs
+kind: region
+location: [6.41667, 47.16667]
+wikidata_id: Q3361
+metadata:
+  sources: [Wikidata Q3361 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q3361
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q3361

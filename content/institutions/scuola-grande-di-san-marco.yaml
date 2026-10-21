@@ -1,0 +1,39 @@
+public_id: 102077
+name: Scuola Grande di San Marco
+names:
+  - Scuola di San Marco
+  - lang: es
+    role: translation
+    text: Escuela grande de San Marcos
+  - lang: ja
+    role: translation
+    text: 聖マルコ同信会館
+  - lang: zh
+    role: translation
+    text: 聖馬可大會堂
+  - lang: ru
+    role: translation
+    text: Скуола Сан-Марко
+founded: 1437
+place: venice
+location: [12.34148, 45.43971]
+wikidata_id: Q1273362
+metadata:
+  sources: [Wikidata Q1273362 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 10132628-2
+  lc: n81107784
+  viaf: "267148990"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q1273362
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1273362
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1273362

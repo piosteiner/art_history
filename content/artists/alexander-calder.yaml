@@ -1,0 +1,45 @@
+public_id: 101582
+name: Alexander Calder
+names:
+  - Calder
+  - Sandy Calder
+  - lang: ja
+    role: translation
+    text: アレクサンダー・カルダー
+  - lang: zh
+    role: translation
+    text: 亚历山大·考尔德
+  - lang: ko
+    role: translation
+    text: 알렉산더 콜더
+  - lang: ru
+    role: translation
+    text: Александр Колдер
+birth: 1898-07-22
+death: 1976-11-11
+wikidata_id: Q151580
+metadata:
+  sources: [Wikidata Q151580 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/05/Alexander_Calder_1968.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alexander_Calder_1968.jpg
+    license: CC BY 3.0
+    credit: Josepclopesbosc
+identifiers:
+  bnf: 12402694f
+  gnd: "118666592"
+  idref: "033129398"
+  lc: n79112975
+  nlk: KAC202248207
+  rkd: "14770"
+  ulan: "500007824"
+  viaf: "96096"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q151580
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q151580

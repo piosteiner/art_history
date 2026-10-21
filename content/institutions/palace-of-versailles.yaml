@@ -1,0 +1,68 @@
+public_id: 102186
+name: Palace of Versailles
+names:
+  - Versailles. Château
+  - Versailles. Palais
+  - Versailles Palace
+  - Chateau de Versailles
+  - France. Chateau Versailles
+  - Versailles
+  - Château de Versailles
+  - Versailles. Chateau
+  - Versailles Castle
+  - Palais de Versailles
+  - lang: nl
+    role: translation
+    text: Kasteel van Versailles
+  - lang: de
+    role: translation
+    text: Schloss Versailles
+  - lang: it
+    role: translation
+    text: Reggia di Versailles
+  - lang: es
+    role: translation
+    text: Palacio de Versalles
+  - lang: ja
+    role: translation
+    text: ヴェルサイユ宮殿
+  - lang: zh
+    role: translation
+    text: 凡尔赛宫
+  - lang: ko
+    role: translation
+    text: 베르사유궁
+  - lang: ru
+    role: translation
+    text: Версаль
+founded: 1661
+place: versailles
+location: [2.12028, 48.80472]
+website_url: https://en.chateauversailles.fr/
+wikidata_id: Q2946
+metadata:
+  sources: [Wikidata Q2946 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg/1280px-Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg
+    license: CC BY-SA 3.0
+    credit: ToucanWings
+identifiers:
+  bnf: "119487267"
+  gnd: 4194431-8
+  idref: 02654685X
+  ulan: "500312482"
+  viaf: "127977992"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q2946
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2946
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2946

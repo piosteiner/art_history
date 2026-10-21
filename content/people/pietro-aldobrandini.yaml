@@ -1,0 +1,58 @@
+public_id: 102028
+name: Pietro Aldobrandini
+names:
+  - Pierre Aldobrandini
+  - Pietro Aldobrandino
+  - Cardinale Pietro Aldobrandini
+  - Pietro, Cardinale Aldobrandini
+  - Pietro, Cardinal Aldobrandini
+  - Petrus Aldobrandinus
+  - lang: ja
+    role: translation
+    text: 枢機卿
+  - lang: zh
+    role: translation
+    text: 伯多祿·阿爾多布蘭
+  - lang: ko
+    role: translation
+    text: 피에트로 알도브란디니
+  - lang: ru
+    role: translation
+    text: Пьетро Альдобрандини
+kind: person
+occupations: [diplomat, Catholic priest, Catholic bishop, politician]
+birth: 1571-04-10
+death: 1621-02-10
+wikidata_id: Q691894
+metadata:
+  sources: [Wikidata Q691894 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/61/1593_ALDOBRANDINI_PIETRO_SMOM.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1593_ALDOBRANDINI_PIETRO_SMOM.jpg
+    license: Public domain
+    credit: Ottavio Leoni
+identifiers:
+  bnf: 10666012w
+  gnd: "124294707"
+  idref: "132262029"
+  lc: nr99014204
+  rkd: "443421"
+  ulan: "500360211"
+  viaf: "66458392"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q691894
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q691894
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q691894
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q691894

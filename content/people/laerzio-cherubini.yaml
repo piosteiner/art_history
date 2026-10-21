@@ -1,0 +1,36 @@
+public_id: 101762
+name: Laerzio Cherubini
+given_name: Laerzio
+family_name: Cherubini
+names: [Laertius Cherobini]
+kind: person
+occupations: [jurist, legal scholar, art collector, historian]
+birth: 16th century
+death: 1623/1631
+death_label: c. 17th century
+wikidata_id: Q18122922
+metadata:
+  sources: [Wikidata Q18122922 (retrieved 2026-10-20)]
+identifiers:
+  bnf: 12568857n
+  gnd: "124638767"
+  idref: "169914526"
+  lc: n88071200
+  viaf: "14889382"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q18122922
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q18122922
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q18122922
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q18122922

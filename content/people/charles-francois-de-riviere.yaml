@@ -1,0 +1,45 @@
+public_id: 101748
+name: Charles François Riffardeau de Rivière
+names:
+  - Charles François de Riffardeau, marquis de Rivière
+  - lang: ja
+    role: translation
+    text: シャルル・フランソワ・ド・ラファルデュー・ド・リヴィエール
+  - lang: ru
+    role: translation
+    text: Шарль Франсуа Ривьер
+kind: person
+occupations: [diplomat, politician, military officer, military personnel]
+birth: 1763-12-17
+death: 1828-04-21
+wikidata_id: Q2959107
+metadata:
+  sources: [Wikidata Q2959107 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b9/Vig%C3%A9e_Lebrun_-_Charles_de_Riffardeau_de_Rivi%C3%A8re_%281763-1822%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vig%C3%A9e_Lebrun_-_Charles_de_Riffardeau_de_Rivi%C3%A8re_(1763-1822).jpg
+    license: Public domain
+    credit: Élisabeth Louise Vigée Le Brun
+identifiers:
+  bnf: "121675556"
+  gnd: "119015978"
+  idref: "030211808"
+  lc: n91115909
+  viaf: "25403444"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q2959107
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q2959107
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q2959107
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q2959107

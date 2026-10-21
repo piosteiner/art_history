@@ -1,0 +1,125 @@
+public_id: 101940
+title_lang: it
+title: Nascita di Venere
+names:
+  - lang: en
+    role: original
+    text: The Birth of Venus
+  - lang: pl
+    role: original
+    text: Narodziny Wenus
+  - Birth of Venus
+  - lang: nl
+    role: translation
+    text: De Geboorte van Venus
+  - lang: fr
+    role: translation
+    text: La Naissance de Vénus
+  - lang: de
+    role: translation
+    text: Die Geburt der Venus
+  - lang: es
+    role: translation
+    text: El nacimiento de Venus
+  - lang: ja
+    role: translation
+    text: ヴィーナスの誕生
+  - lang: zh
+    role: translation
+    text: 维纳斯的诞生
+  - lang: ko
+    role: translation
+    text: 비너스의 탄생
+  - lang: ru
+    role: translation
+    text: Рождение Венеры
+creator: sandro-botticelli
+created: c. 1485
+materials: [tempera, canvas]
+dimensions: [172.5, 278.5]
+institution: uffizi-gallery
+inventory_number: 1890 n. 878
+web_url: http://www.artchive.com/artchive/B/botticelli/venus_text.jpg.html
+wikidata_id: Q151047
+metadata:
+  sources: [Wikidata Q151047 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg/1280px-Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_-_La_nascita_di_Venere_-_Google_Art_Project_-_edited.jpg
+    license: Public domain
+    credit: Sandro Botticelli
+provenance:
+  - owner_label: a member of the Medici family (perhaps Lorenzo di Pierfrancesco de' Medici)
+    acquired: c. 1485
+    method: commission
+    certainty: possible
+    sources:
+      - url: https://www.uffizi.it/en/artworks/birth-of-venus
+        note: It is highly probable that the work was commissioned by a member of the Medici family, although there is nothing written about the painting before 1550
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: person/cosimo-i-de-medici
+    acquired: before 1550
+    place: florence
+    label: in the Medici villa at Castello, where Vasari saw it in 1550 — Cosimo may have inherited it from the cadet branch, bought it, or taken it in a state confiscation; first in a villa inventory in 1598
+    sources:
+      - url: https://www.uffizi.it/en/artworks/birth-of-venus
+        note: when Giorgio Vasari describes it in the Medici’s Villa of Castello, owned by the cadet branch of the Medici family since the mid-15th century
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Nascita_di_Venere
+        note: Al tempo del riferimento vasariano l'edificio era di proprietà di Cosimo I de' Medici, che aveva sì potuto ereditare il dipinto dai suoi antenati del ramo "Popolano", ma anche averlo acquistato per conto personale o averlo sottratto durante una confisca di stato. La prima menzione in un inventario della villa risale al 1598.
+        source: wikipedia-it-nascita-di-venere
+        accessed: 2026-10-20
+    records:
+      - kind: sighting
+        date: "1550"
+        note: in the villa of Castello, with the Primavera
+        place: florence
+        document: Vasari, Vite (1550)
+      - date: "1598"
+        note: the first mention in a villa inventory
+        place: florence
+        document: inventory of the villa of Castello
+  - owner: institution/uffizi-gallery
+    place: florence
+    label: in the grand-ducal collections, now the Uffizi (inventory 1890 n. 878)
+    sources:
+      - url: https://www.uffizi.it/en/artworks/birth-of-venus
+        note: Museum The Uffizi Collection […] Inventory 1890 n. 878
+        source: uffizi-artworks
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4485048-7
+  viaf: "179550380"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q151047
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q151047
+    - url: https://www.uffizi.it/en/artworks/birth-of-venus
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q151047
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q151047
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q151047
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q151047
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/birth-of-venus
+      source: uffizi-artworks
+      accessed: 2026-10-20

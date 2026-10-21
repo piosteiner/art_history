@@ -1,0 +1,44 @@
+public_id: 101737
+name: Samothrace
+names:
+  - Samothraki
+  - lang: nl
+    role: translation
+    text: Samothrake
+  - lang: it
+    role: translation
+    text: Samotracia
+  - lang: ja
+    role: translation
+    text: サモトラキ島
+  - lang: zh
+    role: translation
+    text: 萨莫色雷斯岛
+  - lang: ko
+    role: translation
+    text: 사모트라키섬
+  - lang: ru
+    role: translation
+    text: Самотраки
+kind: site
+parent: samothraki-municipality
+country_code: GR
+location: [25.5875, 40.45]
+wikidata_id: Q203175
+metadata:
+  sources: [Wikidata Q203175 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4076989-6
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q203175
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q203175
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q203175

@@ -1,0 +1,155 @@
+public_id: 101859
+title_lang: fr
+title: La Chambre de Van Gogh à Arles
+names:
+  - lang: en
+    role: original
+    text: Bedroom in Arles
+  - lang: fr
+    role: translation
+    text: La Chambre de Van Gogh à Arles
+  - lang: de
+    role: translation
+    text: Vincents Schlafzimmer in Arles
+  - lang: it
+    role: translation
+    text: Camera da Letto.
+parent: bedroom-in-arles
+creator: vincent-van-gogh
+created: 1889-09
+materials: [oil paint, canvas]
+dimensions: [56.5, 74]
+institution: musee-d-orsay
+inventory_number: RF 1959 2
+web_url: http://www.vggallery.com/painting/p_0483.htm
+wikidata_id: Q18543956
+metadata:
+  sources: [Wikidata Q18543956 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/La_Chambre_%C3%A0_Arles%2C_by_Vincent_van_Gogh%2C_from_C2RMF.jpg/1280px-La_Chambre_%C3%A0_Arles%2C_by_Vincent_van_Gogh%2C_from_C2RMF.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:La_Chambre_%C3%A0_Arles,_by_Vincent_van_Gogh,_from_C2RMF.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    acquired: 1889-09
+    ended: 1889
+    method: creation
+    place: saint-remy-de-provence
+    label: a reduced replica painted in September 1889, for his mother and sister
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+        note: Date 1889 [Réplique exécutée en septembre 1889]
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: the artist's mother and sister, in Holland
+    acquired: 1889
+    method: gift
+    direct: true
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+        note: 1889, Envoyé par l'artiste à sa mère et sa soeur en Hollande
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Werner-Drucker collection
+    place: dusseldorf
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+        note: collection Werner-Drucker, Düsseldorf
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/paul-rosenberg
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+        note: Galerie Paul Rosenberg, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/kojiro-matsukata
+    acquired: 1920/1921
+    ended: 1944
+    method: purchase
+    place: paris
+    label: one of the works he bought for a museum of Western art in Japan and left in deposit in France
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+        note: dès 1920 ou 1921, dans la collection Kojiro Matsukata
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+      - url: https://fr.wikipedia.org/wiki/K%C5%8Djir%C5%8D_Matsukata
+        note: Il effectue à cette période de nombreux achats, qu'il laisse en dépôt auprès de personnes de confiance en France et au Royaume-Uni.
+        source: wikipedia-fr-kojiro-matsukata
+        accessed: 2026-10-20
+  - owner_label: French State (Domaines de la Seine)
+    role: possessor
+    acquired: 1944
+    ended: 1959
+    method: confiscation
+    place: paris
+    label: sequestered as enemy property after the Liberation, France counting Japan among the enemy countries
+    sources:
+      - url: https://fr.wikipedia.org/wiki/K%C5%8Djir%C5%8D_Matsukata
+        note: Le gouvernement provisoire mis en place en 1944 dans la France libérée […] classe le Japon parmi les pays ennemis. À la suite d'une ordonnance stipulant que tous les biens ennemis doivent être placés sous séquestre au profit de l’administration, les Domaines de la Seine en prennent le contrôle.
+        source: wikipedia-fr-kojiro-matsukata
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1959-05-27
+    method: settlement
+    direct: true
+    place: paris
+    label: "ceded to the Musées nationaux under the peace treaty with Japan (committee 12 February, council 19 February, decree 27 May 1959): France gave the collection to Japan for the National Museum of Western Art in Tokyo, the family renouncing all claims — about fifteen major works, this one among them, stayed in France"
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+        note: 1959, cédé aux Musées nationaux en application du traité de paix avec le Japon (comité du 12/02/1959, conseil du 19/02/1959, arrêté du 27/05/1959) 1959, attribué au musée du Louvre
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+      - url: https://fr.wikipedia.org/wiki/K%C5%8Djir%C5%8D_Matsukata
+        note: Le gouvernement français offre pour sa part au gouvernement japonais les œuvres de la collection, sur laquelle la famille Matsukata déclare renoncer à l'intégralité de ses revendications. Cependant, la collection sera amputée d'une quinzaine d'œuvres majeures, destinées à rester en France […] C'est le cas en particulier de la troisième version de La Chambre de Van Gogh à Arles
+        source: wikipedia-fr-kojiro-matsukata
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q18543956
+  parent:
+    - accessed: 2026-10-20
+      property: P179
+      wikidata: Q18543956
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q18543956
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q18543956
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q18543956
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q18543956
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q18543956
+    - url: https://www.musee-orsay.fr/fr/oeuvres/la-chambre-de-van-gogh-arles-746
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

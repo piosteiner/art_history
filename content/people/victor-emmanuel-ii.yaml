@@ -1,0 +1,73 @@
+public_id: 102089
+name: Victor Emmanuel II of Italy
+names:
+  - lang: it
+    role: original
+    text: Vittorio Emanuele II
+  - Vittorio Emmanuele II of Italy
+  - Vittorio Emanuele Maria Alberto Eugenio Ferdinando Tommaso di Savoia
+  - Victor Emanuel II
+  - Vittorio Emmanuele II
+  - lang: nl
+    role: translation
+    text: Victor Emanuel II van Italië
+  - lang: fr
+    role: translation
+    text: Victor-Emmanuel II
+  - lang: de
+    role: translation
+    text: Vittorio Emanuele II.
+  - lang: it
+    role: original
+    text: Vittorio Emanuele II di Savoia
+  - lang: es
+    role: translation
+    text: Víctor Manuel II de Italia
+  - lang: ja
+    role: translation
+    text: ヴィットーリオ・エマヌエーレ2世
+  - lang: zh
+    role: translation
+    text: 维托里奥·埃马努埃莱二世
+  - lang: ko
+    role: translation
+    text: 비토리오 에마누엘레 2세
+  - lang: ru
+    role: translation
+    text: Виктор Эммануил II
+kind: person
+occupations: [monarch, sovereign]
+birth: 1820-03-14
+death: 1878-01-09
+wikidata_id: Q168691
+metadata:
+  sources: [Wikidata Q168691 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/VictorEmmanuel2_%283%29.jpg/1280px-VictorEmmanuel2_%283%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:VictorEmmanuel2_(3).jpg
+    license: Public domain
+    credit: Eugène Disdéri
+identifiers:
+  bnf: 12788244d
+  dodis: P32857
+  gnd: "119172011"
+  idref: "029447224"
+  lc: n80056898
+  viaf: "95301792"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q168691
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q168691
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q168691
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q168691

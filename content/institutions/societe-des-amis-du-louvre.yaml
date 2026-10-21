@@ -1,0 +1,26 @@
+public_id: 101876
+name: Société des amis du Louvre
+names:
+  - lang: es
+    role: translation
+    text: Sociedad de amigos del Louvre
+  - lang: ja
+    role: translation
+    text: ルーヴル友の会
+  - lang: ru
+    role: translation
+    text: Общество друзей Лувра
+founded: 1897
+website_url: https://www.amisdulouvre.fr/
+wikidata_id: Q3488087
+metadata:
+  sources: [Wikidata Q3488087 (retrieved 2026-10-20)]
+identifiers:
+  bnf: 12244445n
+  lc: n88647188
+  viaf: "132292544"
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q3488087

@@ -1,0 +1,110 @@
+public_id: 102144
+title_lang: it
+title: Santissima Trinità
+names:
+  - lang: en
+    role: original
+    text: Holy Trinity
+  - lang: nl
+    role: translation
+    text: De Heilige Drie-eenheid
+  - lang: fr
+    role: translation
+    text: Trinité
+  - lang: de
+    role: translation
+    text: Dreifaltigkeit
+  - lang: it
+    role: translation
+    text: Trinità
+  - lang: es
+    role: translation
+    text: Trinidad
+  - lang: ja
+    role: translation
+    text: 聖三位一体 (マサッチオ)
+  - lang: zh
+    role: translation
+    text: 聖三位一體
+  - lang: ru
+    role: translation
+    text: Троица
+creator: masaccio
+created: 1425/1427
+created_label: c. 1420s
+materials: [fresco]
+dimensions: [667, 317]
+institution: santa-maria-novella
+web_url: https://www.smn.it/it/opere/la-trinita-del-masaccio/
+location: [11.24917, 43.77444]
+wikidata_id: Q977200
+metadata:
+  sources: [Wikidata Q977200 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/florence
+    period: 1425/1426
+    period_label: c. 1420s
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Masaccio_-_Trinity_-_Santa_Maria_Novella.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Masaccio_-_Trinity_-_Santa_Maria_Novella.jpg
+    license: Public domain
+    credit: Masaccio
+provenance:
+  - owner: institution/santa-maria-novella
+    acquired: 1425/1427
+    method: commission
+    place: florence
+    label: in the Dominicans' church, before the door to the cemetery; the patron (kneeling with his wife) is undocumented — perhaps Berto di Bartolomeo del Banderaio, honoured by the prior Fra Benedetto di Domenico di Lenzo
+    sources:
+      - url: https://it.wikipedia.org/wiki/Trinit%C3%A0_%28Masaccio%29
+        note: Nessun documento scritto attesta la data esatta di esecuzione del dipinto e l'identità del committente […] Il dogma della Trinità era dopotutto un tema di importanza fondamentale per i domenicani, proprietari della chiesa
+        source: wikipedia-it-trinita-masaccio
+        accessed: 2026-10-20
+  - owner_label: hidden behind Vasari's altar
+    role: event
+    acquired: 1570
+    place: florence
+    label: Giorgio Vasari, charged with taking down the rood screen, hid it behind a new altar (with his own Madonna of the Rosary for the Capponi) and so preserved it
+    certainty: probable
+    sources:
+      - url: https://it.wikipedia.org/wiki/Trinit%C3%A0_%28Masaccio%29
+        note: Egli, incaricato di smontare il tramezzo, nelle vicinanze del quale l'opera era collocata (per ragioni legate alla Controriforma), non trovando altro luogo dove conservarla all'interno della chiesa […] decise di nasconderla dietro ad un nuovo altare.
+        source: wikipedia-it-trinita-masaccio
+        accessed: 2026-10-20
+  - owner_label: rediscovered and moved
+    role: event
+    acquired: 1860
+    place: florence
+    label: found again when Vasari's altar was removed; cut out with the wall behind it (“a massello”) by Gaetano Bianchi and moved to the inner façade; put back in 1952, when Ugo Procacci found the skeleton and sarcophagus below
+    sources:
+      - url: https://it.wikipedia.org/wiki/Trinit%C3%A0_%28Masaccio%29
+        note: Nel 1860, durante la rimozione dell'altare vasariano […] venne riscoperto l'affresco della Trinità. Per non farlo coprire dall'altare neogotico, l'affresco fu trasportato "a massello" […] e spostato sulla parte bassa della controfacciata della chiesa. Quasi un secolo dopo, nel 1952 […] fu scoperto però che la Trinità era in realtà composta anche da uno scheletro e dal suo sarcofago dipinto
+        source: wikipedia-it-trinita-masaccio
+        accessed: 2026-10-20
+identifiers:
+  viaf: "178338732"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q977200
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q977200
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q977200
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q977200
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q977200
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q977200

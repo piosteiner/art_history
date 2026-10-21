@@ -1,0 +1,37 @@
+public_id: 102178
+name: Chartres
+names:
+  - lang: ja
+    role: translation
+    text: シャルトル
+  - lang: zh
+    role: translation
+    text: 沙特尔
+  - lang: ko
+    role: translation
+    text: 샤르트르
+  - lang: ru
+    role: translation
+    text: Шартр
+kind: settlement
+parent: arrondissement-of-chartres
+country_code: FR
+location: [1.48833, 48.44667]
+wikidata_id: Q130272
+metadata:
+  sources: [Wikidata Q130272 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4009794-8
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q130272
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q130272
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q130272

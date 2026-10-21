@@ -1,0 +1,40 @@
+public_id: 102086
+name: Lorenzo Imperiali
+given_name: Lorenzo
+family_name: Imperiali
+names:
+  - lang: ru
+    role: translation
+    text: Лоренцо Империали
+kind: person
+occupations: [Catholic priest]
+birth: 1612-02-21
+death: 1673-09-21
+wikidata_id: Q3259482
+metadata:
+  sources: [Wikidata Q3259482 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/71/Testana_Giuseppe_-_Lorenzo_Imperiali%2C_-_AN1613175162.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Testana_Giuseppe_-_Lorenzo_Imperiali,_-_AN1613175162.jpg
+    license: Public domain
+    credit: Giuseppe Maria Testana
+identifiers:
+  gnd: "117653276"
+  viaf: "8170825"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q3259482
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q3259482
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q3259482
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q3259482

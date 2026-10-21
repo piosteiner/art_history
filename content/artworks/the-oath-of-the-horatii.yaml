@@ -1,0 +1,138 @@
+public_id: 101695
+title_lang: fr
+title: Le Serment des Horaces, entre les mains de leur père
+names:
+  - lang: en
+    role: original
+    text: Oath of the Horatii
+  - lang: en
+    role: original
+    text: The Oath of the Horatii
+  - lang: nl
+    role: translation
+    text: De eed van de Horatii
+  - lang: de
+    role: translation
+    text: Der Schwur der Horatier
+  - lang: it
+    role: translation
+    text: Il giuramento degli Orazi
+  - lang: es
+    role: translation
+    text: Juramento de los Horacios
+  - lang: ja
+    role: translation
+    text: ホラティウス兄弟の誓い
+  - lang: zh
+    role: translation
+    text: 荷拉斯兄弟之誓
+  - lang: ko
+    role: translation
+    text: 호라티우스 형제의 맹세
+  - lang: ru
+    role: translation
+    text: Клятва Горациев
+creator: jacques-louis-david
+created: 1784/1785
+created_label: c. 1784
+materials: [oil paint, canvas]
+dimensions: [330, 425]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 3692
+web_url: http://www.louvre.fr/oeuvre-notices/le-serment-des-horaces
+wikidata_id: Q476458
+metadata:
+  sources: [Wikidata Q476458 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3692_%3B_MR_1432.jpg/1280px-Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3692_%3B_MR_1432.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Serment_des_Horaces_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3692_;_MR_1432.jpg
+    license: Public domain
+    credit: Jacques-Louis David
+provenance:
+  - owner: person/louis-xvi-of-france
+    acquired: 1781/1782
+    method: commission
+    label: commissioned through the comte d'Angiviller, Director of the King's Buildings; painted in Rome, finished July 1785; Salon of 1785, no. 103 (“est pour le Roi”)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062239
+        note: Commandé à l'artiste par le roi Louis XVI, par l’intermédiaire du comte d’Angiviller (1730-1809), directeur des Bâtiments du roi, à la fin de l’année 1781 ou au début de l’année 1782 […] peint à Rome probablement durant le premier semestre de l'année 1785 et achevé en juillet 1785
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - kind: exhibition
+        date: 1785-09
+        note: « Ce tableau de 13 pieds de long, sur 10 de haut, est pour le Roi »
+        place: paris
+        number: "103"
+        document: Salon de 1785
+  - owner: artist/jacques-louis-david
+    role: custodian
+    acquired: 1785-09
+    ended: 1804-01
+    place: paris
+    label: taken back by the artist after the Salon (to paint the Toledo replica) and kept in his studio at the Louvre; claimed by the Muséum in 1797, 1801, 1802
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062239
+        note: repris par l’artiste à l’issue de l'exposition pour en faire une répétition (Toledo Museum of Art) ; présenté dans l'atelier personnel de l'artiste au palais du Louvre (pavillon nord-est de la Cour carrée) de l'automne 1785 jusqu’en août 1791
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Sénat conservateur
+    role: custodian
+    acquired: 1804-01-29
+    ended: 1826-01-07
+    place: paris
+    label: at the Senate's gallery in the Luxembourg palace, from 1818 the Musée royal du Luxembourg
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062239
+        note: présenté (ensemble avec "Brutus") au palais du Luxembourg, Paris à partir du 29 janvier 1804, puis inclus au musée royal du Luxembourg inauguré le 24 avril 1818 ; déplacé au palais du Louvre le 7 janvier 1826
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1826-01-07
+    method: transfer
+    direct: true
+    place: paris
+    label: at the Louvre since 7 January 1826 (“entrée – Collection de Louis XVI”)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062239
+        note: déplacé au palais du Louvre le 7 janvier 1826 et exposé à partir de mars 1826
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 1432
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+identifiers:
+  gnd: 4113280-4
+  viaf: "211773512"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q476458
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q476458
+    - url: https://collections.louvre.fr/ark:/53355/cl010062239
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q476458
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q476458
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q476458
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q476458
+  inventory_number:
+    - url: https://collections.louvre.fr/ark:/53355/cl010062239
+      source: louvre-collections
+      accessed: 2026-10-20

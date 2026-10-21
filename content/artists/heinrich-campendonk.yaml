@@ -1,0 +1,49 @@
+public_id: 101595
+name: Heinrich Campendonk
+names:
+  - Mathias Heinrich Ernst Campendonk
+  - Mathias Heinrich Ernst Campendonck
+  - Heinrich Campendonck
+  - Heinrich Mathias Ernst Campendonk
+  - Heinrich Campendouck
+  - H. M. E. Campendonk
+  - lang: ja
+    role: translation
+    text: ハインリヒ・カンペンドンク
+  - lang: zh
+    role: translation
+    text: 海因里希·坎彭东克
+  - lang: ko
+    role: translation
+    text: 하인리히 캄펜동크
+  - lang: ru
+    role: translation
+    text: Генрих Кампендонк
+birth: 1889-11-03
+death: 1957-05-09
+wikidata_id: Q213685
+metadata:
+  sources: [Wikidata Q213685 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Heinrich_Campendonk_-_Sturm-K%C3%BCnstler%2C_1916.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heinrich_Campendonk_-_Sturm-K%C3%BCnstler,_1916.jpg
+    license: Public domain
+    credit: Photographer not credited (Herwarth Walden ?)
+identifiers:
+  bnf: "121668909"
+  dome: "52"
+  gnd: "118518674"
+  idref: 03020352X
+  lc: n87831532
+  rkd: "15018"
+  ulan: "500009451"
+  viaf: "283628"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q213685
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q213685

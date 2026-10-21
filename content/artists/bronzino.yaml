@@ -1,0 +1,16 @@
+public_id: 102096
+name: Bronzino
+birth: 1503-11-27
+death: 1572-12-03
+wikidata_id: Q7803
+metadata:
+  sources: [Wikidata Q7803 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q7803
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q7803

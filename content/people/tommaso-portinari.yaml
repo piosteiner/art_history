@@ -1,0 +1,47 @@
+public_id: 101934
+name: Tommaso Portinari
+names:
+  - Tommaso di Folco Portinari
+  - lang: ja
+    role: translation
+    text: トンマーゾ・ポルティナーリ
+  - lang: zh
+    role: translation
+    text: 托马索·波提纳利
+  - lang: ko
+    role: translation
+    text: 토마소 포르티나리
+kind: person
+occupations: [banker]
+birth: 1427
+death: 1501
+wikidata_id: Q1646308
+metadata:
+  sources: [Wikidata Q1646308 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a3/Hans_Memling_046.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hans_Memling_046.jpg
+    license: Public domain
+    credit: Hans Memling
+identifiers:
+  gnd: "118741519"
+  rkd: "453563"
+  ulan: "500324305"
+  viaf: "172537230"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1646308
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1646308
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1646308
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1646308

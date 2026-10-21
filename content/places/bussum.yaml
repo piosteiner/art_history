@@ -1,0 +1,36 @@
+public_id: 101867
+name: Bussum
+names:
+  - lang: ja
+    role: translation
+    text: ブッスム
+  - lang: zh
+    role: translation
+    text: 比瑟姆
+  - lang: ko
+    role: translation
+    text: 뷔쉼
+  - lang: ru
+    role: translation
+    text: Бюссюм
+kind: settlement
+parent: gooise-meren
+location: [5.16111, 52.27333]
+wikidata_id: Q9909
+metadata:
+  sources: [Wikidata Q9909 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4327728-7
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q9909
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q9909
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q9909

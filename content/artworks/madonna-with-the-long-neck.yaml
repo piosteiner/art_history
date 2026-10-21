@@ -1,0 +1,136 @@
+public_id: 101956
+title_lang: it
+title: Madonna dal collo lungo
+names:
+  - lang: de
+    role: original
+    text: Madonna mit dem langen Hals
+  - lang: en
+    role: original
+    text: Madonna of the Long Neck
+  - Madonna and Child with Angels and St. Jerome
+  - lang: en
+    role: original
+    text: Madonna with the Long Neck
+  - lang: fr
+    role: translation
+    text: La Vierge au long cou
+  - lang: es
+    role: translation
+    text: Virgen del cuello largo
+  - lang: ja
+    role: translation
+    text: 長い首の聖母
+  - lang: zh
+    role: translation
+    text: 長頸聖母
+  - lang: ko
+    role: translation
+    text: 목이 긴 성모
+  - lang: ru
+    role: translation
+    text: Мадонна с длинной шеей
+creator: parmigianino
+created: 1534/1540
+created_label: c. 16th century
+materials: [oil paint, panel]
+dimensions: [219, 132]
+institution: uffizi-gallery
+inventory_number: Palatina n. 230
+web_url: https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck
+wikidata_id: Q867403
+metadata:
+  sources: [Wikidata Q867403 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Parmigianino_-_Madonna_and_Child_with_Angels%2C_known_as_the_Madonna_with_the_Long_Neck.jpg/1280px-Parmigianino_-_Madonna_and_Child_with_Angels%2C_known_as_the_Madonna_with_the_Long_Neck.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Parmigianino_-_Madonna_and_Child_with_Angels,_known_as_the_Madonna_with_the_Long_Neck.jpg
+    license: Public domain
+    credit: Parmigianino
+provenance:
+  - owner_label: Elena Baiardi Tagliaferri
+    acquired: 1534-12-23
+    method: commission
+    place: parma
+    label: commissioned for her chapel in Santa Maria dei Servi, Parma — to be finished in five months; unfinished in the artist's studio when he died in 1540; set up in the chapel in 1542
+    price:
+      amount: 33
+      currency: SCU
+      note: paid in advance
+    sources:
+      - url: https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck
+        note: He was commissioned to paint the Madonna with the long neck in 1534 by Elena Baiardi Tagliaferri for the church of Santa Maria dei Servi in Parma. In the commissioning contract, the artist undertook to finish the painting in five months, but when he died in 1540, the altarpiece was in his study, still unfinished.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Madonna_dal_collo_lungo
+        note: con un contratto datato 23 dicembre 1534. Nel contratto l'artista si impegnava, per trentatré scudi versati in anticipo, a compiere il dipinto in cinque mesi […] venne infine collocata nella cappella nel 1542
+        source: wikipedia-it-madonna-collo-lungo
+        accessed: 2026-10-20
+  - owner: institution/santa-maria-dei-servi-parma
+    acquired: 1542
+    ended: 1698
+    place: parma
+    label: the Servite fathers, by then the owners — Cardinal Leopoldo de' Medici negotiated in vain in 1674
+    sources:
+      - url: https://it.wikipedia.org/wiki/Madonna_dal_collo_lungo
+        note: Nel 1674 si interessò all'opera il cardinale Leopoldo de' Medici che, tramite il suo emissario Annibale Ranuzzi, iniziò una trattativa con i padri serviti, divenuti all'epoca proprietari della tavola, che però non portò a un accordo e si interruppe.
+        source: wikipedia-it-madonna-collo-lungo
+        accessed: 2026-10-20
+  - owner: person/grand-prince-ferdinando-de-medici
+    acquired: 1698
+    method: purchase
+    direct: true
+    place: florence
+    sources:
+      - url: https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck
+        note: Joining the Medici collections in 1698, the painting is part of an altarpiece that the Grand Prince Ferdinando had purchased
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    role: possessor
+    acquired: 1799
+    ended: 1815
+    method: spoils_of_war
+    place: paris
+    label: taken to Paris in the Napoleonic spoliations; recovered in 1815 by Senator Giovanni degli Alessandri, who went to Paris with the painter Pietro Benvenuti
+    sources:
+      - url: https://it.wikipedia.org/wiki/Madonna_dal_collo_lungo
+        note: Nel 1799, durante le spoliazioni napoleoniche, fu portata a Parigi, dove restò fino al 1815, grazie alle pratiche espletate dal senatore Giovanni degli Alessandri che si era recato appositamente a Parigi, accompagnato dal pittore Pietro Benvenuti.
+        source: wikipedia-it-madonna-collo-lungo
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1815
+    method: restitution
+    place: florence
+    label: Palatine Gallery inventory n. 230 — now in the Uffizi
+    sources:
+      - url: https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck
+        note: Inventory Palatina n. 230
+        source: uffizi-artworks
+        accessed: 2026-10-20
+identifiers:
+  gnd: 7705830-6
+  viaf: "219024326"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q867403
+  created:
+    - url: https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q867403
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q867403
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q867403
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/parmigianino-madonna-long-neck
+      source: uffizi-artworks
+      accessed: 2026-10-20

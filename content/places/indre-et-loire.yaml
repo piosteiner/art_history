@@ -1,0 +1,16 @@
+public_id: 101716
+name: Indre-et-Loire
+kind: region
+location: [0.66667, 47.25]
+wikidata_id: Q12556
+metadata:
+  sources: [Wikidata Q12556 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q12556
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q12556

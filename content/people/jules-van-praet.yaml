@@ -1,0 +1,38 @@
+public_id: 101893
+name: Jules Van Praet
+given_name: Jules
+family_name: Van Praet
+kind: person
+occupations: [historian, diplomat, politician, archivist]
+birth: 1806-07-02
+death: 1887-12-29
+wikidata_id: Q3070531
+metadata:
+  sources: [Wikidata Q3070531 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Jules_Van_Praet_%2C_PA06720.jpg/1280px-Jules_Van_Praet_%2C_PA06720.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jules_Van_Praet_,_PA06720.jpg
+    license: Public domain
+    credit: Meunier, Jean Baptiste (Belgian painter, engraver, draftsman, 1821-1900) (artist) (graphic artist and designer)
+identifiers:
+  gnd: "116278757"
+  idref: "127165800"
+  lc: n84115566
+  viaf: "64753931"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q3070531
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q3070531
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q3070531
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q3070531

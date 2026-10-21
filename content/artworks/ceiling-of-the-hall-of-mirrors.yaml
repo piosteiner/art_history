@@ -1,0 +1,34 @@
+public_id: 102242
+title_lang: fr
+title: Plafond de la galerie des Glaces
+names:
+  - lang: en
+    role: translation
+    text: Ceiling of the Hall of Mirrors
+creator: charles-le-brun
+created: 1680/1684
+medium: peinture sur toile marouflée
+institution: palace-of-versailles
+location: [2.12033, 48.80483]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Chateau_Versailles_Galerie_des_Glaces.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chateau_Versailles_Galerie_des_Glaces.jpg
+    license: see Wikimedia Commons
+provenance:
+  - owner: person/louis-xiv-of-france
+    acquired: 1680
+    method: commission
+    place: versailles
+    label: nearly 1,000 m² by Le Brun's workshop, the first eighteen years of the reign — Le Brun himself painted the main scenes; the gallery (Hardouin-Mansart, 1678) inaugurated in 1684
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Galerie_des_Glaces
+        note: Le peintre et décorateur Charles Le Brun en entreprend la décoration en 1680. La Galerie est inaugurée en 1684. […] Le plafond est décoré de près de 1 000 m2 de peintures de l'atelier de Charles Le Brun illustrant les réalisations des dix-huit premières années du règne de Louis XIV.
+        source: wikipedia-fr-galerie-des-glaces
+        accessed: 2026-10-20
+  - owner: institution/palace-of-versailles
+    place: versailles
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Galerie_des_Glaces
+        note: La galerie des Glaces
+        source: wikipedia-fr-galerie-des-glaces
+        accessed: 2026-10-20

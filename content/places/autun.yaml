@@ -1,0 +1,39 @@
+public_id: 101719
+name: Autun
+names:
+  - Bibracte
+  - Augustodunum
+  - lang: ja
+    role: translation
+    text: オータン
+  - lang: zh
+    role: translation
+    text: 歐坦
+  - lang: ko
+    role: translation
+    text: 오툉
+  - lang: ru
+    role: translation
+    text: Отён
+kind: settlement
+parent: arrondissement-of-autun
+country_code: FR
+location: [4.29861, 46.95111]
+wikidata_id: Q190827
+metadata:
+  sources: [Wikidata Q190827 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4086147-8
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q190827
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q190827
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q190827

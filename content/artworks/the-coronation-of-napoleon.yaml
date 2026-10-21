@@ -1,0 +1,122 @@
+public_id: 101697
+title_lang: fr
+title: Le Sacre de l'empereur Napoléon Ier et le couronnement de l'impératrice Joséphine dans la cathédrale Notre-Dame de Paris, le 2 décembre 1804
+names:
+  - lang: en
+    role: translation
+    text: The Coronation of Napoleon
+  - lang: nl
+    role: translation
+    text: De kroning van Napoleon
+  - lang: fr
+    role: original
+    text: Le Sacre de Napoléon
+  - lang: it
+    role: translation
+    text: L'incoronazione di Napoleone
+  - lang: es
+    role: translation
+    text: La coronación de Napoleón
+  - lang: ja
+    role: translation
+    text: ナポレオン一世の戴冠式と皇妃ジョゼフィーヌの戴冠
+  - lang: zh
+    role: translation
+    text: 拿破崙加冕
+  - lang: ko
+    role: translation
+    text: 나폴레옹 1세의 대관식
+  - lang: ru
+    role: translation
+    text: Коронация Наполеона
+creator: jacques-louis-david
+created: 1805/1807
+materials: [oil paint, canvas]
+dimensions: [621, 979]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 3699
+web_url: http://www.louvre.fr/oeuvre-notices/le-sacre-ou-le-couronnement
+wikidata_id: Q1231009
+metadata:
+  sources: [Wikidata Q1231009 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a0/Le_Sacre_de_Napol%C3%A9on_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3699_%3B_MR_1437.jpg/1280px-Le_Sacre_de_Napol%C3%A9on_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3699_%3B_MR_1437.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Sacre_de_Napol%C3%A9on_-_Jacques-Louis_David_-_Mus%C3%A9e_du_Louvre_Peintures_INV_3699_;_MR_1437.jpg
+    license: Public domain
+    credit: Jacques-Louis David
+provenance:
+  - owner: person/napoleon
+    acquired: 1804-09
+    method: commission
+    place: paris
+    label: commissioned without a fixed price or place; painted 21 December 1805 – November 1807 in the former chapel of the Collège de Cluny; shown at the Musée Napoléon in 1808 and 1810, then in David's studio until 1815
+    price:
+      amount: 65000
+      currency: AFRF
+      note: paid in three instalments 1805–1807; David asked 100000
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065720
+        note: Commandé à l’artiste par l’empereur Napoléon Ier, en septembre 1804, sans prix fixé à l'avance et sans destination précise […] payé 65 000 francs par l’Intendance générale de la Maison de l’empereur, en trois versements
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/french-royal-collection
+    further_places:
+      - place: versailles
+        date: "1837"
+    acquired: 1815/1824
+    method: transfer
+    place: paris
+    label: confirmed as Crown property under the Restoration (inventory MR 1437); put in store at the Louvre late 1819; in the Salle du Sacre at Versailles from 1837
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065720
+        note: inscrit sur l’inventaire des peintures des Musées royaux sous le n° « MR 1437 » (estimé 80 000 francs), entre 1816 et 1824 ; déplacé vers 1836 au château de Versailles et installé dans la salle du Sacre
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    further_places:
+      - place: paris
+        date: 1890-08
+    acquired: 1889
+    method: transfer
+    place: versailles
+    label: from Versailles to the Exposition centennale of 1889, at the Louvre since August 1890 (evacuated 1939–1946)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010065720
+        note: déplacé de Versailles à Paris en 1889 et prêté à l’Exposition centennale de l’art français […] présenté au musée du Louvre, dans la salle des Sept-Cheminées, à partir d'août 1890
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 1437
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1231009
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010065720
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1231009
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1231009
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1231009
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1231009
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1231009
+    - url: https://collections.louvre.fr/ark:/53355/cl010065720
+      source: louvre-collections
+      accessed: 2026-10-20

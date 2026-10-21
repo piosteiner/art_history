@@ -1,0 +1,16 @@
+public_id: 102143
+name: Masaccio
+birth: 1401-12-30
+death: 1428
+wikidata_id: Q5811
+metadata:
+  sources: [Wikidata Q5811 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q5811
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q5811

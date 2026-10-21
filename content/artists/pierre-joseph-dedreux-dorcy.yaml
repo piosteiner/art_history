@@ -1,0 +1,39 @@
+public_id: 101778
+name: Pierre-Joseph Dedreux-Dorcy
+given_name: Pierre-Joseph
+family_name: Dedreux-Dorcy
+names:
+  - Pierre Joseph Dedreux Dorcy
+  - Pierre Joseph Dedreux-Dorcy
+  - Pierre Joseph de Dreux D'Orcy
+  - Pierre Joseph Dedreux-Dorey
+  - D. Dorcy
+  - Dorcy
+  - de Dreux D'Orcy
+  - Dedreux-Dorcy
+  - Dreux D'orcy
+  - lang: ru
+    role: translation
+    text: Пьер-Жозеф Дедрё-Дорси
+birth: 1789-04-28
+death: 1874-10-09
+wikidata_id: Q428625
+metadata:
+  sources: [Wikidata Q428625 (retrieved 2026-10-20)]
+identifiers:
+  bnf: "149726016"
+  dome: "2932"
+  gnd: "1271307340"
+  idref: "252874668"
+  rkd: "21352"
+  ulan: "500022077"
+  viaf: "222788588"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q428625
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q428625

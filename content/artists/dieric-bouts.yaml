@@ -1,0 +1,18 @@
+public_id: 101649
+name: Dieric Bouts
+given_name: Dieric
+family_name: Bouts
+birth: c. 1415
+death: 1475-05-15
+wikidata_id: Q313561
+metadata:
+  sources: [Wikidata Q313561 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q313561
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q313561

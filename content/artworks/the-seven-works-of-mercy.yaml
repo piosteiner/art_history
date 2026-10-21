@@ -1,0 +1,86 @@
+public_id: 102155
+title_lang: it
+title: Sette opere di Misericordia
+names:
+  - lang: nl
+    role: translation
+    text: Zeven werken van barmhartigheid
+  - lang: fr
+    role: translation
+    text: Les Sept Œuvres de miséricorde
+  - lang: de
+    role: translation
+    text: Die sieben Werke der Barmherzigkeit
+  - lang: it
+    role: translation
+    text: Sette opere di Misericordia
+  - lang: es
+    role: translation
+    text: Siete obras de misericordia
+  - lang: ja
+    role: translation
+    text: 慈悲の七つの行い (カラヴァッジョ)
+  - lang: zh
+    role: translation
+    text: 七件善事
+  - lang: ru
+    role: translation
+    text: Семь деяний милосердия
+creator: caravaggio
+created: 1606/1607
+materials: [oil paint, canvas]
+dimensions: [390, 70]
+institution: pio-monte-della-misericordia
+web_url: https://www.piomontedellamisericordia.it/portfolio/michelangelo-merisi-detto-caravaggio-le-opere-della-misericordia-1607/
+location: [14.26043, 40.85187]
+wikidata_id: Q2626595
+metadata:
+  sources: [Wikidata Q2626595 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/The_Seven_Works_of_Mercy-Caravaggio_%281607%29.jpg/1280px-The_Seven_Works_of_Mercy-Caravaggio_%281607%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Seven_Works_of_Mercy-Caravaggio_(1607).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: institution/pio-monte-della-misericordia
+    acquired: 1606
+    method: commission
+    place: naples
+    label: for the high altar of the confraternity's church — the first of its altarpieces; 400 ducats (Neapolitan), 370 of them paid in settlement on 9 January 1607
+    sources:
+      - url: https://it.wikipedia.org/wiki/Sette_opere_di_Misericordia
+        note: Il mandato di pagamento effettuato a favore del Caravaggio registra l'elargizione di 370 ducati a saldo dei 400 totali pattuiti, avvenuto il 9 gennaio 1607.
+        source: wikipedia-it-sette-opere-misericordia
+        accessed: 2026-10-20
+  - owner_label: the Congregation of the Pio Monte
+    role: event
+    acquired: 1613
+    place: naples
+    label: the Congregation decided it could “not be sold at any price” and must “always be kept in the said church”
+    sources:
+      - url: https://it.wikipedia.org/wiki/Sette_opere_di_Misericordia
+        note: La tela ebbe sin da subito un tale successo che la stessa Congregazione del Pio Monte stabilì nel 1613 che il dipinto non potesse "essere venduto ad alcun prezzo" e che dovesse "essere sempre conservato nella suddetta chiesa".
+        source: wikipedia-it-sette-opere-misericordia
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4417394-5
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2626595
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2626595
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2626595
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2626595
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2626595

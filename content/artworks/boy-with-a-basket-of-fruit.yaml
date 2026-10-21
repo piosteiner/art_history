@@ -1,0 +1,155 @@
+public_id: 102044
+title_lang: it
+title: Giovane con canestra di frutta
+names:
+  - lang: en
+    role: translation
+    text: Boy with a Basket of Fruit
+  - lang: nl
+    role: translation
+    text: Jongen met een fruitmand
+  - lang: fr
+    role: translation
+    text: Garçon avec un panier de fruits
+  - lang: de
+    role: translation
+    text: Knabe mit Fruchtkorb
+  - lang: it
+    role: original
+    text: giovane con canestra di frutta
+  - lang: es
+    role: translation
+    text: Niño con un cesto de frutas
+  - lang: ja
+    role: translation
+    text: 果物籠を持つ少年
+  - lang: zh
+    role: translation
+    text: 捧著果籃的男孩
+  - lang: ru
+    role: translation
+    text: Юноша с корзиной фруктов
+creator: caravaggio
+created: 1590/1600
+created_label: c. 1590s
+materials: [oil paint, canvas]
+dimensions: [70, 67]
+institution: galleria-borghese
+inventory_number: "136"
+web_url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
+wikidata_id: Q2610936
+metadata:
+  sources: [Wikidata Q2610936 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Boy_with_a_Basket_of_Fruit-Caravaggio_%281593%29.jpg/1280px-Boy_with_a_Basket_of_Fruit-Caravaggio_%281593%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Boy_with_a_Basket_of_Fruit-Caravaggio_(1593).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: artist/giuseppe-cesari
+    ended: 1607
+    place: rome
+    label: the Cavalier d'Arpino, in whose workshop Caravaggio then worked; his inventory no. 56
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
+        note: Roma, Giuseppe Cesari detto Cavalier d'Arpino, ante 1607, inv. n. 56 (pubblicato da De Rinaldis 1936, p. 577)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: before 1607
+        place: rome
+        number: "56"
+        document: inventory of the Cavalier d'Arpino (De Rinaldis 1936, p. 577)
+  - owner_label: Camera Apostolica (the papal treasury)
+    acquired: 1607
+    ended: 1607
+    method: confiscation
+    direct: true
+    place: rome
+    label: the Cavalier d'Arpino, accused by Paul V's officers of illegal possession of firearms, had to give up his picture collection to be released — presumably a seizure planned by Scipione
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
+        note: La tela proviene dal gruppo di opere confiscate nel 1607 a Giuseppe Cesari detto il Cavalier d’Arpino, accusato dagli emissari di Paolo V di possesso illegale di armi da fuoco. Per essere rilasciato, infatti, il pittore fu costretto a offrire la propria quadreria alla Camera apostolica
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1607
+    ended: 1633
+    method: gift
+    direct: true
+    place: rome
+    label: given by Pope Paul V to his nephew soon after
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
+        note: donata poco dopo da Paolo V a suo nipote Scipione Borghese, presumibile autore della pianificata sottrazione.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
+        note: "Provenienza: Roma, Giuseppe Cesari detto Cavalier d'Arpino, ante 1607, inv. n. 56 (pubblicato da De Rinaldis 1936, p. 577); Roma, collezione Scipione Borghese, 1607; Inventario 1693, Stanza IV, n. 65; Inventario 1790, Stanza IV, n. 61; Inventario Fidecommissario Borghese 1833, p. 21. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1693"
+        room: Stanza IV
+        place: rome
+        number: "65"
+        document: Borghese inventory
+      - date: "1790"
+        room: Stanza IV
+        place: rome
+        number: "61"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2610936
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2610936
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2610936
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2610936
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2610936
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2610936
+    - url: https://www.collezionegalleriaborghese.it/opere/giovane-con-canestra-di-frutta
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

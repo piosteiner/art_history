@@ -1,0 +1,80 @@
+public_id: 101659
+title_lang: nl
+title: De besnijdenis van Christus
+names:
+  - lang: en
+    role: original
+    text: The circumcision of the Crhist-child
+  - lang: en
+    role: original
+    text: Circumcision of Christ, Vienna
+  - lang: de
+    role: translation
+    text: Die Beschneidung Christi, Wien
+creator: peter-paul-rubens
+created: 1605
+materials: [oil paint, canvas]
+dimensions: [105, 74]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-897
+wikidata_id: Q109316460
+metadata:
+  sources: [Wikidata Q109316460 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6a/Peter_Paul_Rubens_-_The_circumcision_of_Christ.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_circumcision_of_Christ.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    ended: 1822
+    place: vienna
+    notes_md: The Academy publishes the bequest only; earlier owners are not published.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1333
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1822
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1333
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “Die bereits beachtlichen Bestände aus der Schenkung des Grafen Lamberg-Sprinzenstein, der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q109316460
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q109316460
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q109316460
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q109316460
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q109316460
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q109316460
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q109316460

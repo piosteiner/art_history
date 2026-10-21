@@ -1,0 +1,104 @@
+public_id: 102093
+title_lang: it
+title: Il bacio
+names:
+  - lang: en
+    role: original
+    text: The Kiss
+  - lang: nl
+    role: translation
+    text: De kus
+  - lang: fr
+    role: translation
+    text: Le Baiser
+  - lang: de
+    role: translation
+    text: Der Kuss
+  - lang: es
+    role: translation
+    text: El beso
+  - lang: zh
+    role: translation
+    text: 吻
+  - lang: ko
+    role: translation
+    text: 키스
+  - lang: ru
+    role: translation
+    text: Поцелуй (картина Хайеса)
+creator: francesco-hayez
+created: 1859
+materials: [oil paint, canvas]
+dimensions: [112, 88]
+institution: pinacoteca-di-brera
+inventory_number: "6335"
+web_url: https://pinacotecabrera.org/collezioni/collezione-on-line/il-bacio/
+wikidata_id: Q1195035
+metadata:
+  sources: [Wikidata Q1195035 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/El_Beso_%28Pinacoteca_de_Brera%2C_Mil%C3%A1n%2C_1859%29.jpg/1280px-El_Beso_%28Pinacoteca_de_Brera%2C_Mil%C3%A1n%2C_1859%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_Beso_(Pinacoteca_de_Brera,_Mil%C3%A1n,_1859).jpg
+    license: Public domain
+    credit: Francesco Hayez
+provenance:
+  - owner_label: Alfonso Maria Visconti di Saliceto
+    acquired: 1859
+    ended: 1886
+    method: commission
+    place: milan
+    label: commissioned by him; shown at the Brera exhibition of 1859, months after Victor Emmanuel II and Napoleon III entered Milan
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/il-bacio/
+        note: La tela fu presentata all’Esposizione di Brera del 1859 […] ma entrò in Pinacoteca solo nel 1886 grazie al legato di Alfonso Maria Visconti, che l’aveva commissionata.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+    records:
+      - kind: exhibition
+        date: "1859"
+        place: milan
+        document: Esposizione di Brera 1859
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1886
+    method: bequest
+    direct: true
+    place: milan
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/il-bacio/
+        note: entrò in Pinacoteca solo nel 1886 grazie al legato di Alfonso Maria Visconti
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1195035
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1195035
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/il-bacio/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1195035
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1195035
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1195035
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1195035
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1195035
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/il-bacio/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

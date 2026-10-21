@@ -1,0 +1,47 @@
+public_id: 101588
+name: Kurt Schwitters
+names:
+  - Herman Edward Karl Julius Schwitters
+  - Kurt Herman Edward Karl Julius Schwitters
+  - Curt Hermann Eduard Carl Julius Schwitters
+  - Schwitters
+  - lang: ja
+    role: translation
+    text: クルト・シュヴィッタース
+  - lang: zh
+    role: translation
+    text: 库尔特·施维特斯
+  - lang: ko
+    role: translation
+    text: 쿠르트 슈비터스
+  - lang: ru
+    role: translation
+    text: Курт Швиттерс
+birth: 1887-06-20
+death: 1948-01-08
+wikidata_id: Q155158
+metadata:
+  sources: [Wikidata Q155158 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c7/Kurt_Schwitters.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kurt_Schwitters.JPG
+    license: Public domain
+    credit: Genja Jonas
+identifiers:
+  bnf: 11924203t
+  gnd: "118612301"
+  idref: "027129268"
+  kulturnav: d5e4a707-ccd8-4a3e-9085-92793d8c6b66
+  lc: n50003922
+  rkd: "71558"
+  ulan: "500026542"
+  viaf: "27071479"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q155158
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q155158

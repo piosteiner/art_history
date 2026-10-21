@@ -1,0 +1,118 @@
+public_id: 102109
+title_lang: it
+title: Cena in casa di Simone
+names:
+  - lang: en
+    role: translation
+    text: The Feast in the House of Simon the Pharisee
+  - lang: nl
+    role: translation
+    text: Avondmaal in het huis van Simon
+  - lang: fr
+    role: original
+    text: Le Repas chez Simon
+  - lang: de
+    role: translation
+    text: Paolo Veronese Gastmahl im Haus des Simon
+  - lang: it
+    role: translation
+    text: Cena in casa di Simone
+  - lang: ja
+    role: translation
+    text: シモンの家の晩餐 (ヴェロネーゼ、ミラノ)
+  - lang: zh
+    role: translation
+    text: 西门家中的筵席 (委罗内塞，米兰)
+creator: paolo-veronese
+created: 1570
+materials: [oil paint, canvas]
+dimensions: [275, 710]
+institution: pinacoteca-di-brera
+inventory_number: "192"
+web_url: https://pinacotecabrera.org/en/collezione-online/opere/supper-in-the-house-of-simon/
+wikidata_id: Q15074981
+metadata:
+  sources: [Wikidata Q15074981 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Veronese%2C_Paolo_-_Feast_at_the_House_of_Simon_-_1567-1570.jpg/1280px-Veronese%2C_Paolo_-_Feast_at_the_House_of_Simon_-_1567-1570.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Veronese,_Paolo_-_Feast_at_the_House_of_Simon_-_1567-1570.jpg
+    license: Public domain
+    credit: Paolo Veronese
+provenance:
+  - owner: institution/san-sebastiano-venice
+    acquired: 1570
+    ended: 1797
+    method: commission
+    place: venice
+    label: for the refectory of San Sebastiano
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-casa-di-simone/
+        note: Fu eseguito nel 1570 per il refettorio di San Sebastiano a Venezia, dove rimase fino al 1797.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    role: possessor
+    acquired: 1797
+    ended: 1815
+    method: spoils_of_war
+    place: paris
+    label: sent to Paris as war booty with seventeen other paintings after the Napoleonic conquest of the Veneto
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-casa-di-simone/
+        note: In seguito alla conquista napoleonica del Veneto, il telero fu a quel punto inviato a Parigi come bottino di guerra insieme ad altri diciassette dipinti
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: the Austrian government (Venice)
+    acquired: 1815
+    ended: 1817
+    method: restitution
+    place: venice
+    label: back in Venice with the final return of Austrian rule
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-casa-di-simone/
+        note: Entrambi i teleri rientrarono a Venezia con il definitivo ritorno del governo austriaco e la Cena in casa di Simone giunse a Brera nel 1817.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    acquired: 1817
+    method: transfer
+    place: milan
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-casa-di-simone/
+        note: la Cena in casa di Simone giunse a Brera nel 1817.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q15074981
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q15074981
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-casa-di-simone/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q15074981
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q15074981
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q15074981
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q15074981
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q15074981
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cena-in-casa-di-simone/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

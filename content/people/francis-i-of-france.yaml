@@ -1,0 +1,72 @@
+public_id: 101754
+name: Francis I of France
+names:
+  - lang: fr
+    role: original
+    text: François Ier
+  - François I
+  - lang: nl
+    role: translation
+    text: Frans I van Frankrijk
+  - lang: fr
+    role: original
+    text: François Ier de France
+  - lang: de
+    role: translation
+    text: Franz I.
+  - lang: it
+    role: translation
+    text: Francesco I di Francia
+  - lang: es
+    role: translation
+    text: Francisco I de Francia
+  - lang: ja
+    role: translation
+    text: フランソワ1世
+  - lang: zh
+    role: translation
+    text: 弗朗索瓦一世
+  - lang: ko
+    role: translation
+    text: 프랑수아 1세
+  - lang: ru
+    role: translation
+    text: Франциск I
+kind: person
+occupations: [politician, art collector, patron of the arts, monarch, literary scholar]
+birth: 1494-09-21
+death: 1547-04-10
+wikidata_id: Q129857
+metadata:
+  sources: [Wikidata Q129857 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Fran%C3%A7ois_Ier_Louvre.jpg/1280px-Fran%C3%A7ois_Ier_Louvre.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois_Ier_Louvre.jpg
+    license: Public domain
+    credit: Jean Clouet
+identifiers:
+  bnf: "120127827"
+  gnd: "118534947"
+  hls: "029215"
+  idref: "028254287"
+  lc: n50038638
+  rkd: "441278"
+  ulan: "500122500"
+  viaf: "88805531"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q129857
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q129857
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q129857
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q129857

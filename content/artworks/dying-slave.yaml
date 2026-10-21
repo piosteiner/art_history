@@ -1,0 +1,209 @@
+public_id: 101715
+title_lang: fr
+title: Esclave mourant
+names:
+  - lang: it
+    role: original
+    text: Schiavo morente
+  - lang: fr
+    role: translation
+    text: L'Esclave mourant
+  - lang: de
+    role: translation
+    text: Sterbender Sklave
+  - lang: es
+    role: translation
+    text: Esclavo moribundo
+  - lang: ja
+    role: translation
+    text: 瀕死の奴隷
+  - lang: zh
+    role: translation
+    text: 垂死的奴隸
+  - lang: ko
+    role: translation
+    text: 죽어가는 노예
+  - lang: ru
+    role: translation
+    text: Умирающий раб
+creator: michelangelo
+created: 1513/1515
+materials: [marble]
+dimensions: [229, 72.4, 53.5]
+institution: department-of-sculptures-of-the-louvre
+inventory_number: MR 1590
+web_url: https://collections.louvre.fr/ark:/53355/cl010091872
+wikidata_id: Q83862
+metadata:
+  sources: [Wikidata Q83862 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Dying_slave_Louvre_MR_1590%2C_Louvre.jpg/1280px-Dying_slave_Louvre_MR_1590%2C_Louvre.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dying_slave_Louvre_MR_1590,_Louvre.jpg
+    license: CC0
+    credit: Michelangelo Buenarroti (1475-1564)
+provenance:
+  - owner_label: Pope Julius II (for his tomb in St Peter's)
+    acquired: 1505
+    method: commission
+    place: rome
+    label: commissioned in 1505 for the base of his tomb; carved 1513–1515, left out of the final tomb set up in 1545
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Commandé en 1505 par Jules II (pontificat 1503-1513) pour son tombeau dans la basilique Saint-Pierre de Rome. Réalisé par Michel-Ange à Rome entre 1513 et 1515 […] Finalement abandonné dans la version définitive mise en place en 1545.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: artist/michelangelo
+    acquired: 1545
+    ended: 1546
+    place: rome
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Don de l’artiste à son ami Roberto Strozzi en 1546.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/roberto-strozzi
+    acquired: 1546
+    method: gift
+    direct: true
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Don de l’artiste à son ami Roberto Strozzi en 1546. Offert au roi de France (François Ier?) par Roberto Strozzi peu de temps après.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/francis-i-of-france
+    acquired: 1546/1547
+    method: gift
+    direct: true
+    label: offered to the King of France (Francis I?) soon after
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Offert au roi de France (François Ier?) par Roberto Strozzi peu de temps après.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/anne-de-montmorency
+    acquired: before 1550
+    ended: 1567
+    method: gift
+    place: ecouen
+    label: given by Henri II to the Constable; in the niches of the east wing façade of his château at Écouen
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Donné avant 1550 par le roi Henri II au connétable Anne de Montmorency (1493-1567) ; installé dans les niches de la façade de l’aile orientale de son château à Ecouen
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Henri II de Montmorency
+    ended: 1632-10-30
+    place: ecouen
+    label: the Constable's grandson
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Offert par le petit-fils du connétable, Henri II de Montmorency, le 30 octobre 1632, au cardinal de Richelieu.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/cardinal-richelieu
+    acquired: 1632-10-30
+    ended: 1642
+    method: gift
+    direct: true
+    place: richelieu
+    label: in the two niches of the façade of the château of Richelieu in Poitou
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Offert par le petit-fils du connétable, Henri II de Montmorency, le 30 octobre 1632, au cardinal de Richelieu. Présenté dans les deux niches de la façade du château de Richelieu en Poitou.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/armand-jean-de-vignerot-du-plessis
+    acquired: 1642
+    ended: 1715
+    method: inheritance
+    place: richelieu
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Passe par héritage à Armand-Jean de Vignerot puis en 1715 à Louis-François-Armand, 3e duc et maréchal de Richelieu (1696-1788)
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/marechal-de-richelieu
+    further_places:
+      - place: paris
+        date: "1741"
+    acquired: 1715
+    ended: 1788
+    method: inheritance
+    direct: true
+    place: richelieu
+    label: Louis-François-Armand, 3rd duc and maréchal de Richelieu, who took it to Paris in 1741 — in the gardens of his “petite maison”, then of the hôtel d'Antin (from 1756)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: en 1715 à Louis-François-Armand, 3e duc et maréchal de Richelieu (1696-1788) qui le transporte à Paris en 1741. Placé d’abord dans le jardin de la « petite maison » du maréchal puis dans celui de l’ancien hôtel d’Antin acquis en 1756
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Louis, duc de Fronsac, and his wife Marie-Antoinette de Galliffet
+    acquired: 1788
+    ended: 1792
+    method: inheritance
+    place: paris
+    label: stored in the orangery of their house on the Grand chemin des Champs-Élysées
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Entreposé à une date indéterminée dans l’Orangerie d’une maison sur le « Grand chemin des Champs-Elysées » dans le quartier du Roule achetée en 1788 par Louis (fils du maréchal), duc de Fronsac (1736-1792) avec sa femme Marie-Antoinette de Galliffet.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: French nation
+    acquired: 1792
+    method: confiscation
+    direct: true
+    place: paris
+    label: seized as émigré property of the “veuve Richelieu”; withdrawn from the sale of 28 January 1793 (“réservé pour la Nation”); at the Petits-Augustins depot from February 1793
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: En 1792, saisi en tant que bien d’émigré appartenant à la « veuve Richelieu ». Prévu pour être mis en vente le 3 décembre 1792. « Réservé pour la Nation » lors de la vente du 28 janvier 1793 […] Transporté au dépôt des Petits-Augustins début février
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1794-08-28
+    method: transfer
+    direct: true
+    place: paris
+    label: transferred from the Petits-Augustins by the Conservatoire du Muséum (11 fructidor an II)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010091872
+        note: Après dix-huit mois, transféré au Louvre par le Conservatoire du Muséum le 11 fructidor an II (28 août 1794).
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: N 15044
+    institution: department-of-sculptures-of-the-louvre
+    label: other inventory number
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q83862
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010091872
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q83862
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q83862
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q83862
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q83862
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q83862
+    - url: https://collections.louvre.fr/ark:/53355/cl010091872
+      source: louvre-collections
+      accessed: 2026-10-20

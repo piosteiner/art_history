@@ -1,0 +1,76 @@
+public_id: 101771
+name: Napoleon
+names:
+  - lang: co
+    role: original
+    text: Napulione Buonaparte
+  - Napulione di Buonaparte
+  - The Little Corporal
+  - Napoleon Buonaparte
+  - Napoleon I of France
+  - the Corsican Napolean
+  - Empereur des Français Napoléon I
+  - Little Corporal
+  - Napoleone Bonaparte
+  - Emperador dels Francesos Napoleó I
+  - lang: nl
+    role: translation
+    text: Napoleon Bonaparte
+  - lang: fr
+    role: translation
+    text: Napoléon Ier
+  - lang: es
+    role: translation
+    text: Napoleón Bonaparte
+  - lang: ja
+    role: translation
+    text: ナポレオン・ボナパルト
+  - lang: zh
+    role: translation
+    text: 拿破崙
+  - lang: ko
+    role: translation
+    text: 나폴레옹 보나파르트
+  - lang: ru
+    role: translation
+    text: Наполеон I
+kind: person
+occupations: [politician, art collector, emperor, sovereign, militant, military leader, army officer]
+birth: 1769-08-15
+death: 1821-05-05
+wikidata_id: Q517
+metadata:
+  sources: [Wikidata Q517 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/1280px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Jacques-Louis David
+identifiers:
+  bnf: 12008245w
+  dodis: P2082
+  gnd: "118586408"
+  hls: "041455"
+  idref: 02733791X
+  kulturnav: 3ed781fc-7b79-47f4-8023-259d34cecf91
+  lc: n79054933
+  rkd: "434741"
+  ulan: "500122388"
+  viaf: "106964661"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q517
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q517
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q517
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q517

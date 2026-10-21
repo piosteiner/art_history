@@ -1,0 +1,142 @@
+public_id: 102046
+title_lang: it
+title: David con la testa di Golia
+names:
+  - lang: en
+    role: translation
+    text: David with the Head of Goliath
+  - lang: nl
+    role: translation
+    text: David met het hoofd van Goliath
+  - lang: fr
+    role: translation
+    text: David avec la tête de Goliath
+  - lang: de
+    role: translation
+    text: David mit dem Haupt des Goliath
+  - lang: es
+    role: translation
+    text: David con la cabeza de Goliat
+  - lang: ja
+    role: translation
+    text: ゴリアテの首を持つダヴィデ (カラヴァッジョ、ボルゲーゼ美術館)
+  - lang: zh
+    role: translation
+    text: 大衛與歌利亞的頭顱
+  - lang: ko
+    role: translation
+    text: 골리앗의 머리를 든 다윗
+  - lang: ru
+    role: translation
+    text: Давид с головой Голиафа
+creator: caravaggio
+created: 1606/1610
+materials: [oil paint, canvas]
+dimensions: [125, 101]
+institution: galleria-borghese
+inventory_number: "455"
+web_url: https://www.collezionegalleriaborghese.it/opere/david-con-la-testa-di-golia
+wikidata_id: Q2627056
+metadata:
+  sources: [Wikidata Q2627056 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/David_with_the_Head_of_Goliath-Caravaggio_%281610%29.jpg/1280px-David_with_the_Head_of_Goliath-Caravaggio_%281610%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:David_with_the_Head_of_Goliath-Caravaggio_(1610).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: artist/caravaggio
+    acquired: 1606
+    ended: 1610
+    method: creation
+    place: naples
+    label: painted in exile in Naples (1606–07 or 1609–10), Goliath's head a self-portrait — perhaps sent to Scipione Borghese as a gift for the pope, to obtain his pardon
+    certainty: probable
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/david-con-la-testa-di-golia
+        note: (?) Napoli, 1610 (cfr. Pacelli 1977) […] l'artista avrebbe inviato la tela al cardinale Scipione Borghese quale dono da far recapitare al pontefice
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/scipione-borghese
+    acquired: 1613 or earlier
+    ended: 1633
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/david-con-la-testa-di-golia
+        note: Roma, collezione Scipione Borghese, 1613 (Francucci 1613; Della Pergola 1959, p. 217, n. 61)
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - kind: catalogue
+        date: "1613"
+        place: rome
+        document: Scipione Francucci, La Galleria dell'Illustrissimo e Reverendissimo Signor Scipione Cardinale Borghese (1613)
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/david-con-la-testa-di-golia
+        note: "Provenienza: (?) Napoli, 1610 (cfr. Pacelli 1977); Roma, collezione Scipione Borghese, 1613 (Francucci 1613; Della Pergola 1959, p. 217, n. 61); Inventario 1693, Stanza IV, n. 28; Inventario 1790, Stanza II, n. 2; Inventario Fidecommissario Borghese 1833, p. 17. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1693"
+        room: Stanza IV
+        place: rome
+        number: "28"
+        document: Borghese inventory
+      - date: "1790"
+        room: Stanza II
+        place: rome
+        number: "2"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/david-con-la-testa-di-golia
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2627056
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/david-con-la-testa-di-golia
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2627056
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2627056
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2627056
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2627056
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2627056
+    - url: https://www.collezionegalleriaborghese.it/opere/david-con-la-testa-di-golia
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

@@ -1,0 +1,71 @@
+public_id: 101666
+title: Entrance to a Wood
+names:
+  - lang: nl
+    role: translation
+    text: Bossage
+  - lang: fr
+    role: translation
+    text: L'entrée d'un bois
+  - lang: de
+    role: translation
+    text: Lichtung in einem Wald
+  - lang: es
+    role: translation
+    text: Claro en un bosque
+  - lang: ru
+    role: translation
+    text: Поляна в лесу
+creator: jacob-van-ruisdael
+created: 1646
+materials: [oil paint, panel]
+dimensions: [57.5, 47]
+institution: academy-of-fine-arts-vienna
+inventory_number: GG-1368
+wikidata_id: Q20857201
+metadata:
+  sources: [Wikidata Q20857201 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b6/Jacob_van_Ruisdael_-_Lichtung_in_einem_Wald.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_Lichtung_in_einem_Wald.jpg
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner: institution/academy-of-fine-arts-vienna
+    acquired: 1924
+    method: purchase
+    place: vienna
+    notes_md: The Academy names neither the seller nor earlier owners.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804
+        note: “Ankauf, 1924 / Acquired, 1924”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q20857201
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q20857201
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q20857201
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q20857201
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q20857201
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q20857201
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q20857201

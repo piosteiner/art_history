@@ -1,0 +1,49 @@
+public_id: 101600
+title: Passy, Bridges of Paris
+names: [Les ponts de Paris (Passy), Paysage à Passy, Passy]
+creator: albert-gleizes
+created: 1912
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+institution: mumok
+inventory_number: B 65/0
+web_url: https://www.mumok.at/onlinesammlung/detail/les-ponts-de-paris-passy-1173
+wikidata_id: Q16985268
+metadata:
+  sources: [Wikidata Q16985268 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/Albert_Gleizes%2C_1912%2C_Les_ponts_de_Paris_%28Passy%29%2C_The_Bridges_of_Paris%2C_oil_on_canvas%2C_60.5_x_73.2_cm%2C_Museum_Moderner_Kunst_%28mumok%29%2C_Vienna..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Gleizes,_1912,_Les_ponts_de_Paris_(Passy),_The_Bridges_of_Paris,_oil_on_canvas,_60.5_x_73.2_cm,_Museum_Moderner_Kunst_(mumok),_Vienna..jpg
+    license: Public domain
+    credit: Albert Gleizes
+provenance:
+  - owner: institution/mumok
+    acquired: 1962
+    place: vienna
+    label: acquired 1962
+    notes_md: mumok publishes only the year of acquisition; earlier owners are not published.
+    sources:
+      - url: https://www.mumok.at/onlinesammlung/detail/les-ponts-de-paris-passy-1173
+        note: "“Erwerbungsjahr 1962 · Inventarnummer B 65/0 · Creditline: mumok - Museum moderner Kunst Stiftung Ludwig Wien”"
+        source: mumok-onlinesammlung
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q16985268
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q16985268
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q16985268
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q16985268
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q16985268

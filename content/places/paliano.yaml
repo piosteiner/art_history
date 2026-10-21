@@ -1,0 +1,35 @@
+public_id: 102075
+name: Paliano
+names:
+  - lang: ja
+    role: translation
+    text: パリアーノ
+  - lang: zh
+    role: translation
+    text: 帕利亚诺
+  - lang: ko
+    role: translation
+    text: 팔리아노
+  - lang: ru
+    role: translation
+    text: Пальяно
+kind: settlement
+parent: province-of-frosinone
+country_code: IT
+location: [13.05, 41.8]
+wikidata_id: Q116961
+metadata:
+  sources: [Wikidata Q116961 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q116961
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q116961
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q116961

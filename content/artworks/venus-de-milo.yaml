@@ -1,0 +1,145 @@
+public_id: 101688
+title_lang: fr
+title: Vénus de Milo
+names:
+  - Aphrodite of Milos
+  - Venus of Milo
+  - Venus de Milo (Aphrodite of Milos)
+  - lang: en
+    role: translation
+    text: Venus de Milo
+  - lang: nl
+    role: translation
+    text: Venus van Milo
+  - lang: de
+    role: translation
+    text: Venus von Milo
+  - lang: it
+    role: translation
+    text: Venere di Milo
+  - lang: ja
+    role: translation
+    text: ミロのヴィーナス
+  - lang: zh
+    role: translation
+    text: 米洛的维纳斯
+  - lang: ko
+    role: translation
+    text: 밀로의 비너스
+  - lang: ru
+    role: translation
+    text: Венера Милосская
+created: c. 150 BCE–125 BCE
+materials: [Parian marble]
+dimensions: [202]
+institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+inventory_number: Ma 399
+web_url: https://collections.louvre.fr/ark:/53355/cl010277627
+wikidata_id: Q151952
+metadata:
+  sources: [Wikidata Q151952 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/paris
+    period: -150/-125
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/V%C3%A9nus_de_Milo_-_Mus%C3%A9e_du_Louvre_AGER_LL_299_%3B_N_527_%3B_Ma_399.jpg/1280px-V%C3%A9nus_de_Milo_-_Mus%C3%A9e_du_Louvre_AGER_LL_299_%3B_N_527_%3B_Ma_399.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:V%C3%A9nus_de_Milo_-_Mus%C3%A9e_du_Louvre_AGER_LL_299_;_N_527_;_Ma_399.jpg
+    license: CC0
+    credit: Shonagon
+provenance:
+  - owner_label: a Greek peasant of Milos (named Georges by Marcellus; Theodoros Kentrotas in Brest's report of 1862)
+    acquired: 1820-04
+    method: find
+    place: milos
+    label: found in two parts on his land, near the ancient city of Melos, about 8 April 1820
+    sources:
+      - url: https://fr.wikipedia.org/wiki/V%C3%A9nus_de_Milo
+        note: Entre le 4 mars et le 14 avril 1820 […] un paysan grec découvre dans son terrain une statue féminine en deux parties. […] Dauriac la place « trois jours avant » sa lettre du 11 avril 1820, soit le 8 avril.
+        source: wikipedia-fr-venus-de-milo
+        accessed: 2026-10-20
+  - owner: person/comte-de-marcellus
+    role: agent
+    acquired: 1820-05-22
+    ended: 1820-05
+    method: purchase
+    place: milos
+    label: bought it for the ambassador after a Greek monk, Verghi, had bought it for the dragoman and put it on a ship for Constantinople
+    price:
+      amount: 836
+      currency: PIA
+    sources:
+      - url: https://fr.wikipedia.org/wiki/V%C3%A9nus_de_Milo
+        note: un religieux grec nommé Verghi s'était chargé d'acheter pour le compte du drogman la statue au paysan qui l'avait découverte et il en avait offert 718 piastres […] Deux jours de négociations très tendues avec les dignitaires de l'île et l'offre d'un paiement de 836 piastres sont nécessaires
+        source: wikipedia-fr-venus-de-milo
+        accessed: 2026-10-20
+  - owner: person/charles-francois-de-riviere
+    further_places:
+      - place: paris
+        date: 1821-02
+    acquired: 1820-05
+    ended: 1821-03-01
+    method: purchase
+    direct: true
+    place: milos
+    label: then marquis de Rivière, French ambassador at Constantinople, bought it on his own account; shipped on L'Estafette and La Lionne, landed at Toulon 23 December 1820
+    sources:
+      - url: https://fr.wikipedia.org/wiki/V%C3%A9nus_de_Milo
+        note: M. de Rivière décide d'acheter la statue à son propre compte et il demande à M. de Marcellus de se rendre d'abord à Milo pour traiter l'affaire. […] Arrivés le 23 décembre 1820 à Toulon, les objets sont acheminés par voie fluviale jusqu'à Paris où ils parviennent à la mi-février.
+        source: wikipedia-fr-venus-de-milo
+        accessed: 2026-10-20
+  - owner: person/louis-xviii-of-france
+    acquired: 1821-03-01
+    method: gift
+    direct: true
+    place: paris
+    label: given by Rivière to the king at an audience in the Tuileries
+    sources:
+      - url: https://fr.wikipedia.org/wiki/V%C3%A9nus_de_Milo
+        note: Cela permet à M. de Rivière d'offrir la statue au roi Louis XVIII lors d'une audience qui lui est accordée le 1er mars 1821 au palais des Tuileries. Le roi l'accepte et l'offre à la France pour enrichir les collections du musée du Louvre
+        source: wikipedia-fr-venus-de-milo
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1821
+    method: gift
+    direct: true
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010277627
+        note: "Mode d'acquisition : don, date d'arrivée au Musée 1821 — Louis XVIII, roi de France ; Duc Rivière, Charles François Riffardeau (Il est alors marquis lorsqu'il fait don de la Vénus à Louis XVIII)"
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: LL 299
+    institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+    label: entry number
+  - number: N 527
+    institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+    label: former inventory number
+identifiers:
+  gnd: 4206801-0
+  viaf: "195011024"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q151952
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010277627
+      source: louvre-collections
+      accessed: 2026-10-20
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q151952
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q151952
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q151952
+  inventory_number:
+    - url: https://collections.louvre.fr/ark:/53355/cl010277627
+      source: louvre-collections
+      accessed: 2026-10-20

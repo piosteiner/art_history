@@ -1,0 +1,150 @@
+public_id: 101708
+title_lang: fr
+title: Le Bain turc
+names:
+  - lang: en
+    role: original
+    text: The Turkish Bath
+  - lang: nl
+    role: translation
+    text: Het Turkse bad
+  - lang: de
+    role: translation
+    text: Das türkische Bad
+  - lang: it
+    role: translation
+    text: Il bagno turco
+  - lang: es
+    role: translation
+    text: El baño turco
+  - lang: ja
+    role: translation
+    text: トルコ風呂
+  - lang: zh
+    role: translation
+    text: 土耳其浴女
+  - lang: ko
+    role: translation
+    text: 터키 목욕탕
+  - lang: ru
+    role: translation
+    text: Турецкие бани
+creator: jean-auguste-dominique-ingres
+created: 1859/1862
+materials: [oil paint, canvas, panel]
+dimensions: [110, 108]
+institution: department-of-paintings-of-the-louvre
+inventory_number: RF 1934
+web_url: https://collections.louvre.fr/ark:/53355/cl010066606
+wikidata_id: Q2027662
+metadata:
+  sources: [Wikidata Q2027662 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/Le_Bain_Turc%2C_by_Jean_Auguste_Dominique_Ingres%2C_from_C2RMFFXD.jpg/1280px-Le_Bain_Turc%2C_by_Jean_Auguste_Dominique_Ingres%2C_from_C2RMFFXD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Bain_Turc,_by_Jean_Auguste_Dominique_Ingres,_from_C2RMFFXD.jpg
+    license: Public domain
+    credit: Jean-Auguste-Dominique Ingres
+provenance:
+  - owner: person/prince-napoleon
+    acquired: 1859
+    ended: 1860
+    method: purchase
+    label: painted in 1859 as a rectangle; the prince gave it back in 1860 in exchange for the artist's self-portrait (now at Chantilly)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066606
+        note: Peint en 1859 de forme rectangulaire, mis en tondo et terminé en 1862 ; collection du prince Napoléon, à partir de 1859 ; échangé par ce dernier en 1860 contre le portrait de l'artiste (aujourd'hui à Chantilly)
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: artist/jean-auguste-dominique-ingres
+    acquired: 1860
+    ended: 1864
+    method: exchange
+    direct: true
+    place: paris
+    label: made into a tondo and finished in 1862; seen in the painter's studio in 1864
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066606
+        note: échangé par ce dernier en 1860 contre le portrait de l'artiste (aujourd'hui à Chantilly) ; repéré dans l'atelier du peintre en 1864
+        source: louvre-collections
+        accessed: 2026-10-20
+    exchanged_for_text: Ingres's self-portrait (now at the Musée Condé, Chantilly)
+  - owner: person/khalil-bey
+    numbers:
+      - kind: lot
+        number: "34"
+    acquired: 1864
+    ended: 1868-01-18
+    method: purchase
+    place: paris
+    label: Ottoman ambassador in Paris; his sale, Paris, 16–18 January 1868, no. 34
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066606
+        note: acquis par Khalil Bey, ambassadeur de Turquie à Paris ; vente Khalil Bey, Paris, 16-18 janvier 1868, n°34
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/constant-say
+    acquired: 1868-01
+    method: auction
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066606
+        note: collection Constant Say, Paris
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Henri Say
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066606
+        note: collection Henri Say, Paris
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Prince Louis-Amédée de Broglie
+    ended: 1911
+    place: paris
+    label: Henry Say's brother-in-law
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066606
+        note: collection Prince Louis-Amédée de Broglie, beau-frère d'Henry Say, Paris
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1911
+    method: gift
+    place: paris
+    label: given by the Société des Amis du Louvre, with the help of David David-Weill
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010066606
+        note: don de la Société des Amis du Louvre avec la participation de M. David-Weill, en 1911.
+        source: louvre-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4407299-5
+  viaf: "190592575"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2027662
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010066606
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2027662
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2027662
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2027662
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2027662
+  inventory_number:
+    - url: https://collections.louvre.fr/ark:/53355/cl010066606
+      source: louvre-collections
+      accessed: 2026-10-20

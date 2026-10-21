@@ -1,0 +1,119 @@
+public_id: 101949
+title_lang: it
+title: Battesimo di Cristo
+names:
+  - Baptism of Christ
+  - lang: en
+    role: translation
+    text: The Baptism of Christ
+  - lang: nl
+    role: translation
+    text: De doop van Christus
+  - lang: fr
+    role: translation
+    text: Le Baptême du Christ
+  - lang: de
+    role: translation
+    text: Taufe Christi
+  - lang: es
+    role: translation
+    text: Bautismo de Cristo
+  - lang: ja
+    role: translation
+    text: キリストの洗礼
+  - lang: zh
+    role: translation
+    text: 基督受洗
+  - lang: ko
+    role: translation
+    text: 그리스도의 세례
+  - lang: ru
+    role: translation
+    text: Крещение Христа
+creator: andrea-del-verrocchio
+created: 1465/1480
+created_label: c. 1470s
+materials: [oil paint, panel]
+dimensions: [177, 151]
+institution: uffizi-gallery
+inventory_number: 1890 n. 8358
+web_url: https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ
+wikidata_id: Q1059211
+metadata:
+  sources: [Wikidata Q1059211 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Verrocchio_and_Leonardo%2C_Baptism_of_Christ%2C_c1470-75%2C_Uffizi.jpg/1280px-Verrocchio_and_Leonardo%2C_Baptism_of_Christ%2C_c1470-75%2C_Uffizi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Verrocchio_and_Leonardo,_Baptism_of_Christ,_c1470-75,_Uffizi.jpg
+    license: Public domain
+    credit: Andrea del Verrocchio / Leonardo da Vinci
+provenance:
+  - owner: institution/san-salvi
+    ended: 1730
+    place: florence
+    label: in the church of the Vallombrosan monastery of San Salvi
+    sources:
+      - url: https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ
+        note: The panel comes from the church of the Vallombrosan monastery of San Salvi in Florence.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner_label: Santa Verdiana, Florence (Vallombrosan monastery)
+    acquired: 1730
+    ended: 1810
+    method: transfer
+    place: florence
+    sources:
+      - url: https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ
+        note: In 1730 it was taken to another Vallombrosan monastery in Florence, Santa Verdiana, and from there, it joined the Florentine Galleries in 1810.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: institution/galleria-dell-accademia-florence
+    acquired: 1810
+    ended: 1919
+    method: confiscation
+    place: florence
+    label: joined the Florentine Galleries in 1810, when the monasteries were suppressed under French rule
+    certainty: probable
+    sources:
+      - url: https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ
+        note: from there, it joined the Florentine Galleries in 1810. In the Uffizi since 1919.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1919
+    method: transfer
+    place: florence
+    sources:
+      - url: https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ
+        note: In the Uffizi since 1919.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4432505-8
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1059211
+  created:
+    - url: https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1059211
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1059211
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1059211
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1059211
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ
+      source: uffizi-artworks
+      accessed: 2026-10-20

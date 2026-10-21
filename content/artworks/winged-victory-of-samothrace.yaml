@@ -1,0 +1,126 @@
+public_id: 101689
+title_lang: fr
+title: Victoire de Samothrace
+names:
+  - Victory of Samothrace
+  - Nike of Samothrace
+  - Winged Nike of Samothrace
+  - Winged Victory
+  - Winged Victory of Samothrace (Nike of Samothrace)
+  - Winged Victory of Samothrace
+  - lang: nl
+    role: translation
+    text: Nikè van Samothrake
+  - lang: fr
+    role: translation
+    text: Victoire de Samothrace
+  - lang: de
+    role: translation
+    text: Nike von Samothrake
+  - lang: it
+    role: translation
+    text: Nike di Samotracia
+  - lang: es
+    role: translation
+    text: Victoria alada de Samotracia
+  - lang: ja
+    role: translation
+    text: サモトラケのニケ
+  - lang: zh
+    role: translation
+    text: 薩莫特拉斯的勝利女神
+  - lang: ko
+    role: translation
+    text: 사모트라케의 니케
+  - lang: ru
+    role: translation
+    text: Ника Самофракийская
+created: c. 200 BCE–175 BCE
+materials: [Parian marble]
+dimensions: [245]
+institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+inventory_number: Ma 2369
+web_url: http://www.louvre.fr/oeuvre-notices/victoire-de-samothrace
+wikidata_id: Q216402
+metadata:
+  sources: [Wikidata Q216402 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/paris
+    period: -200/-175
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Victoire_de_Samothrace_-_Musee_du_Louvre_-_20190812.jpg/1280px-Victoire_de_Samothrace_-_Musee_du_Louvre_-_20190812.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Victoire_de_Samothrace_-_Musee_du_Louvre_-_20190812.jpg
+    license: CC0
+    credit: Shonagon
+provenance:
+  - owner: person/charles-champoiseau
+    role: agent
+    acquired: 1863-04-13
+    ended: 1864
+    method: find
+    place: samothrace
+    label: found by Charles Champoiseau, acting French vice-consul at Adrianople, digging in the Sanctuary of the Great Gods (the boat-shaped base followed in 1879, more fragments in 1891)
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Victoire_de_Samothrace
+        note: En 1863, Charles Champoiseau (1830-1909), chargé par intérim du consulat de France à Andrinople […] entreprend du 6 mars au 7 mai l'exploration des ruines du sanctuaire des Grands Dieux dans l'île de Samothrace. Le 13 avril 1863, il découvre une partie du buste et le corps d'une grande statue féminine
+        source: wikipedia-fr-victoire-de-samothrace
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1864
+    method: transfer
+    direct: true
+    place: paris
+    label: "assigned to the Louvre (“affecté au Louvre”): the statue 1864, the base 1879, fragments 1891; on the Daru staircase since 1884"
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010252531
+        note: "Mode d'acquisition : affecté au Louvre ; dates d'arrivée au Musée 1864, 1879, 1891 — M. Champoiseau, Charles François, Fouilleur/Archéologue"
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - date: "1879"
+        note: the blocks of the base and the slabs of the socle arrive (Champoiseau's second mission, 15–29 August 1879)
+        place: paris
+      - date: "1891"
+        note: fragments of drapery and base from Champoiseau's third mission
+        place: paris
+numbers:
+  - number: MNC 1433
+    institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+    label: entry number
+  - number: MNB 2118
+    institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+    label: entry number
+  - number: NIII 2447
+    institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
+    label: entry number
+identifiers:
+  gnd: 4202608-8
+  viaf: "190487421"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q216402
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010252531
+      source: louvre-collections
+      accessed: 2026-10-20
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q216402
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q216402
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q216402
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q216402
+    - url: https://collections.louvre.fr/ark:/53355/cl010252531
+      source: louvre-collections
+      accessed: 2026-10-20

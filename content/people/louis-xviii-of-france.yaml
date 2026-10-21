@@ -1,0 +1,68 @@
+public_id: 101767
+name: Louis XVIII of France
+names:
+  - lang: fr
+    role: original
+    text: Louis XVIII
+  - the Desired
+  - lang: nl
+    role: translation
+    text: Lodewijk XVIII van Frankrijk
+  - lang: de
+    role: translation
+    text: Ludwig XVIII.
+  - lang: it
+    role: translation
+    text: Luigi XVIII di Francia
+  - lang: es
+    role: translation
+    text: Luis XVIII
+  - lang: ja
+    role: translation
+    text: ルイ18世
+  - lang: zh
+    role: translation
+    text: 路易十八
+  - lang: ko
+    role: translation
+    text: 루이 18세
+  - lang: ru
+    role: translation
+    text: Людовик XVIII
+kind: person
+occupations: [politician]
+birth: 1755-11-17
+death: 1824-09-16
+wikidata_id: Q7750
+metadata:
+  sources: [Wikidata Q7750 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/77/G%C3%A9rard_-_Louis_XVIII_of_France_in_Coronation_Robes.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:G%C3%A9rard_-_Louis_XVIII_of_France_in_Coronation_Robes.jpg
+    license: Public domain
+    credit: François Gérard
+identifiers:
+  bnf: 12170342t
+  dodis: P46780
+  gnd: "118780743"
+  idref: "028586603"
+  lc: n81007438
+  ulan: "500122368"
+  viaf: "84035484"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q7750
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q7750
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q7750
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q7750

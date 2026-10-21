@@ -1,0 +1,18 @@
+public_id: 102112
+name: Carlo Crivelli
+given_name: Carlo
+family_name: Crivelli
+birth: 1430/1435
+death: 1494-08-16/1495-09-16
+wikidata_id: Q348024
+metadata:
+  sources: [Wikidata Q348024 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q348024
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q348024

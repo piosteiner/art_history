@@ -1,0 +1,74 @@
+public_id: 101670
+name: Heinrich Füger
+names:
+  - lang: de
+    role: original
+    text: Heinrich Friedrich Füger
+  - Heinrich-Friedrich Fuger
+  - Friedrich Heinrich Füger
+  - Friedrich Heinrich Fuger
+  - Heinrich Fuger
+  - Friedr. Heinr. Füger
+  - Heinrich Fueger
+  - Heinrich Friedrich Fueger
+  - füger friedrich heinrich
+  - Friedr. Füger
+  - Fuger
+  - Friedrich Füger
+  - Heinr. Fried. Füger
+  - F. H. Fuger
+  - Heinr. Füger
+  - fuger f. h.
+  - fr. heinr. fuger
+  - H. Füger
+  - F. Heinrich Füger
+  - Friedr. Heinrich Füger
+  - fuger h.
+  - Füger
+  - Fueger
+  - heinrich f. fuger
+  - h. fuger
+  - H. F. Füger
+  - fügerschule
+  - Friedrich H. Füger
+  - Heinr. Friedr. Füger
+  - fried. heinr. füger
+  - heinrich friedrich von fuger
+  - heinrich friedrich fuger
+  - lang: ja
+    role: translation
+    text: ハインリヒ・ヒューガー
+  - lang: ko
+    role: translation
+    text: 하인리히 퓌거
+  - lang: ru
+    role: translation
+    text: Генрих Фридрих Фюгер
+birth: 1751-12-08
+death: 1818-11-05
+wikidata_id: Q213739
+metadata:
+  sources: [Wikidata Q213739 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Heinrich_Friedrich_F%C3%BCger.jpg/1280px-Heinrich_Friedrich_F%C3%BCger.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Heinrich_Friedrich_F%C3%BCger.jpg
+    license: Public domain
+    credit: "Vincenz Georg Kininger, Foto: Peter Geymayer"
+identifiers:
+  bnf: 14955649h
+  gnd: "118968696"
+  idref: "086303031"
+  kulturnav: 5a47bd0a-fb63-45a1-b6b1-643fd38309f8
+  lc: nr00022521
+  rkd: "29712"
+  ulan: "500025520"
+  viaf: "7656391"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q213739
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q213739

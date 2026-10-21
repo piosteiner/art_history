@@ -1,0 +1,100 @@
+public_id: 102111
+title_lang: it
+title: Abramo ripudia Agar e Ismaele
+names:
+  - lang: fr
+    role: translation
+    text: Abraham répudiant Agar
+  - lang: de
+    role: translation
+    text: Verstoßung der Hagar
+  - lang: it
+    role: translation
+    text: Abramo ripudia Agar e Ismaele
+  - lang: ja
+    role: translation
+    text: ハガルとイシュマエルを追放するアブラハム
+creator: guercino
+created: 1657
+materials: [oil paint, canvas]
+dimensions: [115, 152]
+institution: pinacoteca-di-brera
+inventory_number: "322"
+web_url: https://pinacotecabrera.org/en/collezione-online/opere/abramo-ripudia-agar-e-ismaele/
+wikidata_id: Q9138435
+metadata:
+  sources: [Wikidata Q9138435 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Guercino_Abramo_ripudia_Agar.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Guercino_Abramo_ripudia_Agar.jpg
+    license: Public domain
+    credit: Guercino
+provenance:
+  - owner_label: the community of Cento
+    acquired: 1657
+    ended: 1657
+    method: commission
+    place: cento
+    label: commissioned to give to Cardinal Lorenzo Imperiali, papal legate of Ferrara
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/abramo-ripudia-agar-e-ismaele/
+        note: la tela era stata commissionata nel 1657 al Guercino dalla comunità di Cento per donarla a Lorenzo Imperiali, cardinale Legato di Ferrara.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: person/lorenzo-imperiali
+    acquired: 1657
+    method: gift
+    direct: true
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/abramo-ripudia-agar-e-ismaele/
+        note: per donarla a Lorenzo Imperiali, cardinale Legato di Ferrara.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner_label: the Sampieri collection, Bologna
+    place: bologna
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/abramo-ripudia-agar-e-ismaele/
+        note: Già nella collezione Sampieri come altri capolavori della pittura bolognese oggi a Brera
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    place: milan
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/abramo-ripudia-agar-e-ismaele/
+        note: Già nella collezione Sampieri come altri capolavori della pittura bolognese oggi a Brera
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q9138435
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q9138435
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/abramo-ripudia-agar-e-ismaele/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q9138435
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q9138435
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q9138435
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q9138435
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q9138435
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/abramo-ripudia-agar-e-ismaele/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

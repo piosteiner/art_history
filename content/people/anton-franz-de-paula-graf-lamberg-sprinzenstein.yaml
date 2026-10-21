@@ -1,0 +1,45 @@
+public_id: 101668
+name: Anton Franz de Paula Graf Lamberg-Sprinzenstein
+names:
+  - Graf von Anton Franz de Paula Lamberg-Sprinzenstein
+  - Anton Franz de Paula Lamberg-Sprinzenstein
+  - Anton Franz de Paula, Graf von Lamberg-Sprinzenstein
+  - Graf Lamberg
+  - Anton Franz von Lamberg-Sprinzenstein
+  - lang: ja
+    role: translation
+    text: アントン・フランツ・デ・パウラ・ランベルク＝シュプリンツェンシュタイン
+kind: person
+occupations: [politician, art collector, patron of the arts, diplomat, collector]
+birth: 1740-08-02
+death: 1822-06-26
+wikidata_id: Q19944917
+metadata:
+  sources: [Wikidata Q19944917 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/66/Christian_Kollonitsch_-_Portrait_of_Anton_Franz_von_Lamberg-Sprinzenstein%2C_1770..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Christian_Kollonitsch_-_Portrait_of_Anton_Franz_von_Lamberg-Sprinzenstein,_1770..jpg
+    license: Public domain
+    credit: Christian Kollonitsch
+identifiers:
+  gnd: "136222609"
+  rkd: "433061"
+  ulan: "500320992"
+  viaf: "80605110"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q19944917
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q19944917
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q19944917
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q19944917

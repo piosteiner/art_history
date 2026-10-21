@@ -1,0 +1,108 @@
+public_id: 102038
+title_lang: it
+title: David
+names:
+  - lang: en
+    role: original
+    text: David
+  - lang: ja
+    role: translation
+    text: ダビデ像 (ベルニーニ)
+  - lang: zh
+    role: translation
+    text: 大衛
+  - lang: ru
+    role: translation
+    text: Давид
+creator: gian-lorenzo-bernini
+created: 1623/1624
+materials: [marble]
+dimensions: [170]
+institution: galleria-borghese
+inventory_number: LXXVII
+web_url: https://www.collezionegalleriaborghese.it/opere/david
+wikidata_id: Q766487
+metadata:
+  sources: [Wikidata Q766487 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/rome
+    period: 1624
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/92/Bernini%27s_David_02.jpg/1280px-Bernini%27s_David_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bernini%27s_David_02.jpg
+    license: CC BY-SA 4.0
+    credit: Gian Lorenzo Bernini
+provenance:
+  - owner: person/scipione-borghese
+    acquired: 1624
+    ended: 1633
+    method: commission
+    place: rome
+    label: Bernini's only biblical subject for Scipione Borghese, meant for the Stanza del Seneca (today's Room I)
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/david
+        note: Cardinale Scipione Borghese, 1624
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/david
+        note: "Provenienza: Cardinale Scipione Borghese, 1624; Inventario Fidecommissario Borghese 1833, C, p. 47, n. 87. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, C, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/david
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+identifiers:
+  gnd: "1151913855"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q766487
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/david
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q766487
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q766487
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q766487
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q766487
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q766487
+    - url: https://www.collezionegalleriaborghese.it/opere/david
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

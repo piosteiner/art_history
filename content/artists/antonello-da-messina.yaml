@@ -1,0 +1,18 @@
+public_id: 102058
+name: Antonello da Messina
+given_name: Antonello
+family_name: da Messina
+birth: 1430
+death: 1479-02-23/1479-03-06
+wikidata_id: Q5594
+metadata:
+  sources: [Wikidata Q5594 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q5594
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q5594

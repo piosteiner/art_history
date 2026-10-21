@@ -1,0 +1,43 @@
+public_id: 101733
+name: Milos
+names:
+  - Melos
+  - Melus
+  - Mint of Melos
+  - lang: it
+    role: translation
+    text: Milo
+  - lang: ja
+    role: translation
+    text: ミロス島
+  - lang: zh
+    role: translation
+    text: 米洛斯岛
+  - lang: ko
+    role: translation
+    text: 밀로스섬
+  - lang: ru
+    role: translation
+    text: Милос
+kind: site
+parent: milos-municipality
+country_code: GR
+location: [24.4325, 36.6875]
+wikidata_id: Q203979
+metadata:
+  sources: [Wikidata Q203979 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4074828-5
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q203979
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q203979
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q203979

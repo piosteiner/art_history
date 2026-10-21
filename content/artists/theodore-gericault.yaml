@@ -1,0 +1,18 @@
+public_id: 101692
+name: Théodore Géricault
+given_name: Théodore
+family_name: Géricault
+birth: 1791-09-26
+death: 1824-01-26
+wikidata_id: Q184212
+metadata:
+  sources: [Wikidata Q184212 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q184212
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q184212

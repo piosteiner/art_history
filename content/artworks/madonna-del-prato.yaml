@@ -10,9 +10,6 @@ names:
   - lang: en
     role: original
     text: Madonna del Prato
-  - lang: nl
-    role: translation
-    text: Madonna van de weide
   - lang: fr
     role: translation
     text: La Madone à la prairie
@@ -22,15 +19,6 @@ names:
   - lang: es
     role: translation
     text: Virgen del prado
-  - lang: ja
-    role: translation
-    text: ベルヴェデーレの聖母
-  - lang: zh
-    role: translation
-    text: 草地上的聖母
-  - lang: ru
-    role: translation
-    text: Мадонна в зелени
 creator: raphael
 created: 1505/1506
 created_label: c. 1500s

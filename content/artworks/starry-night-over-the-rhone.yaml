@@ -1,0 +1,184 @@
+public_id: 101839
+title_lang: fr
+title: La Nuit étoilée
+names:
+  - Starry Night on the Rhône
+  - Starry Night Over the Rhône
+  - lang: nl
+    role: translation
+    text: Sterrennacht boven de Rhône
+  - lang: de
+    role: translation
+    text: Sternennacht über der Rhone
+  - lang: it
+    role: translation
+    text: Notte stellata sul Rodano
+  - lang: es
+    role: translation
+    text: Noche estrellada sobre el rodano
+  - lang: ja
+    role: translation
+    text: ローヌ川の星月夜
+  - lang: zh
+    role: translation
+    text: 罗纳河上的星夜
+  - lang: ko
+    role: translation
+    text: 론강의 별이 빛나는 밤
+  - lang: ru
+    role: translation
+    text: Звёздная ночь над Роной
+  - lang: en
+    role: translation
+    text: Starry Night
+creator: vincent-van-gogh
+created: 1888
+materials: [oil paint, canvas]
+dimensions: [72, 92.1]
+institution: musee-d-orsay
+inventory_number: RF 1975 19
+web_url: http://www.vggallery.com/painting/p_0474.htm
+wikidata_id: Q1464531
+metadata:
+  sources: [Wikidata Q1464531 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    acquired: 1888
+    ended: 1889-05
+    method: creation
+    place: arles
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: Date 1888
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/theo-van-gogh
+    acquired: 1889-05
+    ended: 1891
+    method: gift
+    direct: true
+    place: paris
+    label: sent by the artist to his brother shortly before 2 May 1889
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: 1889, dans la collection Théo Van Gogh, envoyé par l'artiste à son frère peu avant le 02/05/1889
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/johanna-van-gogh-bonger
+    acquired: 1891
+    ended: 1905
+    method: inheritance
+    direct: true
+    place: amsterdam
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: jusqu'en 1905, dans la collection Mme J. Van Gogh-Bonger, Amsterdam
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Bas Veth
+    acquired: 1905
+    ended: 1922-06-20
+    place: bussum
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: de 1905 à 1922, dans la collection Bas Veth, Bussum
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/frederik-muller-cie
+    role: agent
+    numbers:
+      - kind: lot
+        number: "3"
+    acquired: 1922-06-20
+    ended: 1922-06-20
+    method: auction
+    direct: true
+    place: amsterdam
+    label: Bas Veth sale, 20 June 1922, no. 3
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: 1922, vente Bas Veth, Amsterdam, Fred Muller, 20 juin 1922, n°3
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Galerie d'art Buffa
+    role: dealer
+    acquired: 1922
+    place: amsterdam
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: galerie d'art Buffa, Amsterdam
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Fernand Moch
+    acquired: c. 1930
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: vers 1930, collection Fernand Moch
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Marguerite and Robert Kahn-Sriber
+    ended: 1975
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: jusqu'en 1995, dans la collection Marguerite et Robert Kahn-Sriber, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1975-10-07
+    method: gift
+    direct: true
+    place: paris
+    label: given by M. and Mme Robert Kahn-Sriber in memory of M. and Mme Fernand Moch, keeping its use for their lifetime (usufruct, ended 1995)
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: 1975, accepté par l'Etat à titre de donation sous réserve d'usufruit de M. et Mme Robert Kahn-Sriber, en souvenir de M. et Mme Fernand Moch (arrêté du 07/10/1975) 1975, attribué au musée du Louvre, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    label: assigned to the Musée d'Orsay; in the museum since the end of the usufruct in 1995
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+        note: affecté au musée d'Orsay, Paris 1995, musée d'Orsay, Paris (fin de l'usufruit en 1995)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1464531
+    - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1464531
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1464531
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1464531
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1464531
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1464531
+    - url: https://www.musee-orsay.fr/fr/oeuvres/la-nuit-etoilee-78696
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

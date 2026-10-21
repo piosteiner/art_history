@@ -1,0 +1,18 @@
+public_id: 101638
+name: Martin Ferdinand Quadal
+given_name: Martin Ferdinand
+family_name: Quadal
+birth: 1736-10-28
+death: 1809-01-11
+wikidata_id: Q301665
+metadata:
+  sources: [Wikidata Q301665 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q301665
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q301665

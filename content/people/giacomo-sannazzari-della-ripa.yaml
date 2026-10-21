@@ -1,0 +1,33 @@
+public_id: 102082
+name: Giacomo Sannazzari della Ripa
+given_name: Giacomo Sannazzari
+family_name: della Ripa
+kind: person
+occupations: [art collector]
+birth: 1755
+death: 1804
+wikidata_id: Q61481410
+metadata:
+  sources: [Wikidata Q61481410 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fd/Paolo_Borroni%2C_Ritratto_di_Giacomo_Sannazzari_della_Ripa_%281805%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paolo_Borroni,_Ritratto_di_Giacomo_Sannazzari_della_Ripa_(1805).jpg
+    license: Public domain
+    credit: Paolo Borroni / After Antoine Coypel
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q61481410
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q61481410
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q61481410
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q61481410

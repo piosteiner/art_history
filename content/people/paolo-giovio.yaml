@@ -1,0 +1,59 @@
+public_id: 102088
+name: Paolo Giovio
+names:
+  - lang: fr
+    role: translation
+    text: Paul Jove
+  - lang: es
+    role: translation
+    text: Paulo Jovio
+  - lang: ja
+    role: translation
+    text: パオロ・ジョヴィオ
+  - lang: zh
+    role: translation
+    text: 保罗·焦维奥
+  - lang: ko
+    role: translation
+    text: 파올로 조비오
+  - lang: ru
+    role: translation
+    text: Паоло Джовио
+kind: person
+occupations: [historian, biographer, physician, museologist, humanist, Catholic bishop, art collector, bishop, writer]
+birth: 30 April 1483
+death: 1552-12-22
+wikidata_id: Q437543
+metadata:
+  sources: [Wikidata Q437543 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a0/Portrait_of_Paolo_Giovio._Pinacoteca_civica_di_Como.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Paolo_Giovio._Pinacoteca_civica_di_Como.jpg
+    license: Public domain
+    credit: 1521-1552
+identifiers:
+  bnf: 11997100p
+  gnd: "118958682"
+  hls: "018755"
+  idref: "028060296"
+  lc: n82154669
+  rkd: "416921"
+  ulan: "500318447"
+  viaf: "64015055"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q437543
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q437543
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q437543
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q437543

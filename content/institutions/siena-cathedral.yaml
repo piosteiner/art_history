@@ -1,0 +1,59 @@
+public_id: 101916
+name: Siena Cathedral
+names:
+  - Cathedral of Siena
+  - Duomo di Siena
+  - lang: nl
+    role: translation
+    text: Kathedraal van Siena
+  - lang: fr
+    role: translation
+    text: cathédrale Notre-Dame-de-l'Assomption de Sienne
+  - lang: de
+    role: translation
+    text: Dom von Siena
+  - lang: es
+    role: translation
+    text: Catedral de Siena
+  - lang: ja
+    role: translation
+    text: シエナ大聖堂
+  - lang: zh
+    role: translation
+    text: 锡耶纳主教座堂
+  - lang: ko
+    role: translation
+    text: 시에나 대성당
+  - lang: ru
+    role: translation
+    text: Сиенский собор
+founded: 1196
+place: siena
+location: [11.32869, 43.31758]
+website_url: http://www.operaduomo.siena.it
+wikidata_id: Q282554
+metadata:
+  sources: [Wikidata Q282554 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Duomo_di_Siena-9635.jpg/1280px-Duomo_di_Siena-9635.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Duomo_di_Siena-9635.jpg
+    license: CC BY-SA 4.0
+    credit: Raimond Spekking
+identifiers:
+  gnd: 4245259-4
+  idref: "139927832"
+  lc: n79063201
+  viaf: "131336027"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q282554
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q282554
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q282554

@@ -1,0 +1,122 @@
+public_id: 102139
+title_lang: it
+title: Cenacolo (Ultima Cena)
+names:
+  - Il Cenacolo
+  - L'Ultima Cena
+  - Last Supper
+  - lang: nl
+    role: translation
+    text: Het Laatste Avondmaal
+  - lang: fr
+    role: translation
+    text: La Cène
+  - lang: de
+    role: translation
+    text: Das Abendmahl
+  - lang: it
+    role: translation
+    text: Ultima Cena
+  - lang: es
+    role: translation
+    text: La Última Cena
+  - lang: ja
+    role: translation
+    text: 最後の晩餐
+  - lang: zh
+    role: translation
+    text: 最後的晚餐
+  - lang: ko
+    role: translation
+    text: 최후의 만찬
+  - lang: ru
+    role: translation
+    text: Тайная вечеря
+creator: leonardo-da-vinci
+created: 1494/1498
+materials: [tempera, gesso]
+dimensions: [700, 880]
+institution: santa-maria-delle-grazie
+web_url: http://legraziemilano.it/ultima-cena/
+location: [9.17111, 45.46583]
+wikidata_id: Q128910
+metadata:
+  sources: [Wikidata Q128910 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg/1280px-Leonardo_da_Vinci_%281452-1519%29_-_The_Last_Supper_%281495-1498%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_The_Last_Supper_(1495-1498).jpg
+    license: Public domain
+    credit: Leonardo da Vinci
+provenance:
+  - owner: person/ludovico-sforza
+    acquired: 1494
+    method: commission
+    place: milan
+    label: commissioned by Ludovico il Moro for the refectory of the Dominican convent of Santa Maria delle Grazie, which he had chosen as the Sforza family's church; painted “a secco” 1494–1498
+    sources:
+      - url: https://it.wikipedia.org/wiki/Ultima_Cena_%28Leonardo%29
+        note: realizzato su commissione di Ludovico il Moro nel refettorio del convento adiacente al santuario di Santa Maria delle Grazie a Milano. […] Ludovico il Moro, il quale aveva infatti eletto la chiesa domenicana di Santa Maria delle Grazie a luogo di celebrazione della casata Sforza.
+        source: wikipedia-it-ultima-cena
+        accessed: 2026-10-20
+  - owner: institution/santa-maria-delle-grazie
+    acquired: 1498
+    place: milan
+    label: on the wall of the friars' refectory
+    sources:
+      - url: https://it.wikipedia.org/wiki/Ultima_Cena_%28Leonardo%29
+        note: nel refettorio del convento adiacente al santuario di Santa Maria delle Grazie a Milano
+        source: wikipedia-it-ultima-cena
+        accessed: 2026-10-20
+  - owner_label: Napoleonic troops
+    role: event
+    acquired: early 19th century
+    place: milan
+    label: the refectory turned into a bivouac and a stable
+    sources:
+      - url: https://it.wikipedia.org/wiki/Ultima_Cena_%28Leonardo%29
+        note: All'inizio del XIX secolo le truppe napoleoniche trasformarono il refettorio in bivacco e stalla.
+        source: wikipedia-it-ultima-cena
+        accessed: 2026-10-20
+  - owner_label: the bombing of Milan
+    role: event
+    acquired: 1943-08
+    place: milan
+    label: the convent bombed — the refectory's vault destroyed; the Last Supper survived among the rubble behind sandbags, open to the weather for days
+    sources:
+      - url: https://it.wikipedia.org/wiki/Ultima_Cena_%28Leonardo%29
+        note: "Danni ancora più gravi vennero causati durante la seconda guerra mondiale, quando il convento venne bombardato nell'agosto del 1943: venne distrutta la volta del refettorio, ma il Cenacolo rimase salvo tra cumuli di macerie, protetto solo da un breve tetto e da una difesa di sacchi di sabbia"
+        source: wikipedia-it-ultima-cena
+        accessed: 2026-10-20
+  - owner_label: Italian Ministry of Culture (Museo del Cenacolo Vinciano)
+    role: custodian
+    acquired: 2014-12
+    place: milan
+    label: the Ministry runs the Museo del Cenacolo Vinciano through the Polo museale della Lombardia (since December 2019 the Direzione regionale Musei)
+    sources:
+      - url: https://it.wikipedia.org/wiki/Ultima_Cena_%28Leonardo%29
+        note: Dal dicembre 2014 il Ministero per i beni e le attività culturali gestisce il Museo del Cenacolo Vinciano tramite il Polo museale della Lombardia, nel dicembre 2019 divenuto Direzione regionale Musei.
+        source: wikipedia-it-ultima-cena
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4195043-4
+  viaf: "175915680"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q128910
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q128910
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q128910
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q128910
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q128910

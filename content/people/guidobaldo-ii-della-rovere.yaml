@@ -1,0 +1,54 @@
+public_id: 101930
+name: Guidobaldo II della Rovere
+names:
+  - Guidobaldo II della Rovere, Duke of Urbino
+  - lang: de
+    role: translation
+    text: Guidobaldo II. della Rovere
+  - lang: ja
+    role: translation
+    text: グイドバルド2世・デッラ・ローヴェレ
+  - lang: zh
+    role: translation
+    text: 圭多巴爾多二世·德拉·羅維雷
+  - lang: ko
+    role: translation
+    text: 구이도발도 2세 델라 로베레
+  - lang: ru
+    role: translation
+    text: Гвидобальдо II делла Ровере
+kind: person
+occupations: [condottiero]
+birth: 1514-04-02
+death: 1574-10-08
+wikidata_id: Q1397788
+metadata:
+  sources: [Wikidata Q1397788 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/Titian_%28Tiziano_Vecellio%29_-_Portrait_of_Guidobaldo_II_della_Rovere%2C_Duke_of_Urbino_-_1956.7.1_-_Yale_University_Art_Gallery.jpg/1280px-Titian_%28Tiziano_Vecellio%29_-_Portrait_of_Guidobaldo_II_della_Rovere%2C_Duke_of_Urbino_-_1956.7.1_-_Yale_University_Art_Gallery.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Titian_(Tiziano_Vecellio)_-_Portrait_of_Guidobaldo_II_della_Rovere,_Duke_of_Urbino_-_1956.7.1_-_Yale_University_Art_Gallery.jpg
+    license: Public domain
+    credit: Titian
+identifiers:
+  bnf: 13621725j
+  gnd: "122504992"
+  idref: "126668698"
+  lc: no2001055679
+  viaf: "69106530"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1397788
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1397788
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1397788
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1397788

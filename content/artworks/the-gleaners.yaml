@@ -1,0 +1,144 @@
+public_id: 101847
+title_lang: fr
+title: Des glaneuses
+names:
+  - lang: en
+    role: original
+    text: Gleaners
+  - lang: en
+    role: original
+    text: The Gleaners
+  - lang: nl
+    role: translation
+    text: Arenleessters
+  - lang: de
+    role: translation
+    text: Die Ährenleserinnen
+  - lang: it
+    role: translation
+    text: Le spigolatrici
+  - lang: es
+    role: translation
+    text: Las espigadoras
+  - lang: ja
+    role: translation
+    text: 落穂拾い
+  - lang: zh
+    role: translation
+    text: 拾穗
+  - lang: ko
+    role: translation
+    text: 이삭 줍는 여인들
+  - lang: ru
+    role: translation
+    text: Сборщицы колосьев
+creator: jean-francois-millet
+created: 1857
+materials: [oil paint, canvas]
+dimensions: [83.5, 110]
+institution: musee-d-orsay
+inventory_number: RF 592
+web_url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+wikidata_id: Q1368055
+metadata:
+  sources: [Wikidata Q1368055 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Jean-Fran%C3%A7ois_Millet_-_Des_glaneuses.jpg/1280px-Jean-Fran%C3%A7ois_Millet_-_Des_glaneuses.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Fran%C3%A7ois_Millet_-_Des_glaneuses.jpg
+    license: Public domain
+    credit: Jean-François Millet
+provenance:
+  - owner: artist/jean-francois-millet
+    acquired: 1857
+    method: creation
+    place: barbizon
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+        note: Date 1857
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Binder
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+        note: collection Binder
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Paul Tesse
+    acquired: 1865
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+        note: 1865, dans la collection Paul Tesse, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/ferdinand-bischoffsheim
+    acquired: 1867
+    ended: 1889
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+        note: de 1867 à 1889, dans la collection Ferdinand Bischoffsheim
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/jeanne-alexandrine-pommery
+    acquired: 1889
+    ended: 1890
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+        note: jusqu'en 1890, dans la collection Mme Pommery
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1890-01-30
+    method: gift
+    direct: true
+    place: paris
+    label: given by Mme Pommery, who kept its use for life (usufruct) — ended in 1890
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+        note: 1890, accepté par l'Etat à titre de donation sous réserve d'usufruit de Mme Pommery (comité du 30/01/1890) 1890, attribué au musée du Louvre, Paris 1890, musée du Louvre, Paris (fin de l'usufruit en 1890)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1368055
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1368055
+    - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1368055
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1368055
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1368055
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1368055
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1368055
+    - url: https://www.musee-orsay.fr/fr/oeuvres/des-glaneuses-342
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

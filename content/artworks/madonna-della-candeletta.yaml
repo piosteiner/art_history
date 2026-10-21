@@ -1,0 +1,97 @@
+public_id: 102113
+title_lang: it
+title: Madonna col Bambino e i santi Pietro e Paolo, Ansovino e Gerolamo (Madonna della Candeletta)
+names:
+  - lang: fr
+    role: translation
+    text: Vierge à la chandelle
+  - lang: es
+    role: translation
+    text: Virgen de la vela
+  - lang: ja
+    role: translation
+    text: ロウソクの聖母
+  - lang: zh
+    role: translation
+    text: 小蠟燭聖母
+creator: carlo-crivelli
+created: 1488/1490
+materials: [tempera, gold, panel, oil paint, wood]
+dimensions: [218, 75]
+institution: pinacoteca-di-brera
+inventory_number: "207"
+web_url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-i-santi-pietro-e-paolo-ansovino-e-gerolamo-madonna-della-candeletta/
+wikidata_id: Q3842658
+metadata:
+  sources: [Wikidata Q3842658 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Carlo_Crivelli_-_Madonna_della_Candeletta_-_WGA5785.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carlo_Crivelli_-_Madonna_della_Candeletta_-_WGA5785.jpg
+    license: Public domain
+    credit: Carlo Crivelli
+provenance:
+  - owner_label: Camerino Cathedral
+    acquired: 1488-05-10
+    method: commission
+    place: camerino
+    label: the centre of a polyptych for the high altar, commissioned by the chaplain Bartolomeo di Angelo Consuli (contract of 10 May 1488); perhaps already removed in 1548
+    sources:
+      - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-i-santi-pietro-e-paolo-ansovino-e-gerolamo-madonna-della-candeletta/
+        note: commissionato nel 1488 per l’altare maggiore della cattedrale di Camerino dal cappellano Bartolomeo di Angelo Consuli e probabilmente danneggiato dal rovinoso terremoto che distrusse la cattedrale nel 1799.
+        source: pinacoteca-di-brera-collezione
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Madonna_della_Candeletta
+        note: Il contratto di allogazione a Carlo Crivelli di un polittico per l'altare centrale della cattedrale di Camerino è datato 10 maggio 1488
+        source: wikipedia-it-candeletta
+        accessed: 2026-10-20
+  - owner_label: San Domenico, Camerino
+    role: custodian
+    acquired: 1799
+    place: camerino
+    label: sheltered there, damaged, after the earthquake destroyed the cathedral
+    sources:
+      - url: https://it.wikipedia.org/wiki/Madonna_della_Candeletta
+        note: Quando la chiesa fu distrutta da terremoto del 1799 il dipinto fu danneggiato e, con molti altri della zona, venne ricoverato nella chiesa di San Domenico. Qui i commissari napoleonici prelevarono l'opera per portarla al nascente museo di Brera, a Milano.
+        source: wikipedia-it-candeletta
+        accessed: 2026-10-20
+  - owner: institution/pinacoteca-di-brera
+    method: confiscation
+    direct: true
+    place: milan
+    label: taken by the Napoleonic commissioners for the nascent museum of Brera
+    sources:
+      - url: https://it.wikipedia.org/wiki/Madonna_della_Candeletta
+        note: Qui i commissari napoleonici prelevarono l'opera per portarla al nascente museo di Brera, a Milano.
+        source: wikipedia-it-candeletta
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q3842658
+  created:
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-i-santi-pietro-e-paolo-ansovino-e-gerolamo-madonna-della-candeletta/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q3842658
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q3842658
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q3842658
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q3842658
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q3842658
+    - url: https://pinacotecabrera.org/collezioni/collezione-on-line/madonna-col-bambino-e-i-santi-pietro-e-paolo-ansovino-e-gerolamo-madonna-della-candeletta/
+      source: pinacoteca-di-brera-collezione
+      accessed: 2026-10-20

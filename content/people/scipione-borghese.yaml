@@ -1,0 +1,69 @@
+public_id: 102022
+name: Scipione Borghese
+names:
+  - Cardinal Scipione Borghese
+  - Scipion Caffarelli Borghèse
+  - Scipione Caffarelli
+  - Scipione, Cardinale Borghese Caffarelli
+  - Cardinal Borghese
+  - Scipione, Cardinal Borghese
+  - Scipion Caffarelli Borghese
+  - Cardinal Scipione
+  - lang: fr
+    role: translation
+    text: Scipion Caffarelli-Borghèse
+  - lang: de
+    role: translation
+    text: Scipione Caffarelli-Borghese
+  - lang: es
+    role: translation
+    text: Scipione Caffarelli Borghese
+  - lang: ja
+    role: translation
+    text: スピキオーネ・ボルゲーゼ
+  - lang: zh
+    role: translation
+    text: 西皮歐內·博爾蓋塞
+  - lang: ko
+    role: translation
+    text: 쉬피오네 보르게세
+  - lang: ru
+    role: translation
+    text: Шипионе Боргезе
+kind: person
+occupations: [art collector, librarian, diplomat, Catholic priest, Catholic deacon, archbishop, patron of the arts, Catholic bishop, presbyter]
+birth: 1576
+death: 1633-10-02
+wikidata_id: Q452570
+metadata:
+  sources: [Wikidata Q452570 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Portrait_of_Cardinal_Scipione_Borghese_%28by_Ottavio_Leoni%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Cardinal_Scipione_Borghese_(by_Ottavio_Leoni).jpg
+    license: Public domain
+    credit: Ottavio Leoni
+identifiers:
+  bnf: 11970320r
+  gnd: "118661809"
+  idref: "027721078"
+  lc: n82093963
+  rkd: "441836"
+  ulan: "500245006"
+  viaf: "54156396"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q452570
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q452570
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q452570
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q452570

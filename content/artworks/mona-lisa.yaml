@@ -1,0 +1,181 @@
+public_id: 101685
+title_lang: fr
+title: Portrait de Lisa Gherardini, épouse de Francesco del Giocondo, dit La Joconde ou Monna Lisa
+names:
+  - lang: en
+    role: original
+    text: Mona Lisa
+  - lang: ja
+    role: original
+    text: モナ・リザ
+  - The Mona Lisa
+  - lang: fr
+    role: original
+    text: La Joconde
+  - lang: zh
+    role: translation
+    text: 蒙娜丽莎
+  - lang: ko
+    role: translation
+    text: 모나리자
+  - lang: ru
+    role: translation
+    text: Мона Лиза
+  - lang: it
+    role: translation
+    text: La Gioconda
+creator: leonardo-da-vinci
+created: 1503/1519
+created_label: c. 1500s
+materials: [oil paint, poplar panel, wood]
+dimensions: [79.4, 53.4]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 779
+web_url: https://www.louvre.fr/decouvrir/le-palais/de-la-joconde-aux-noces-de-cana
+wikidata_id: Q12418
+metadata:
+  sources: [Wikidata Q12418 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/1280px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg
+    license: Public domain
+    credit: Leonardo da Vinci
+provenance:
+  - owner: artist/leonardo-da-vinci
+    further_places:
+      - place: amboise
+        date: "1516"
+    acquired: c. 1503
+    ended: 1518
+    method: creation
+    place: florence
+    label: begun at Florence, probably for Francesco del Giocondo, kept by Leonardo to go on painting it; taken to France in 1516
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062370
+        note: Ce tableau fut commencé vers 1503 au moins, sans doute pour Francesco del Giocondo, gentilhomme florentin (1460-1539), mais fut conservé par Léonard de Vinci jusqu'à la fin de sa vie pour en pursuivre l'exécution picturale toujours inachevée à sa mort
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: artist/salai
+    role: agent
+    acquired: 1518
+    ended: 1518
+    method: purchase
+    label: paid 2,604 livres by Francis I in 1518 "for some panel paintings he handed to the King"
+    certainty: probable
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Joconde
+        note: un document découvert en 1999 […] attestant d’un paiement considérable de 2604 livres, de François Ier à Salaì en 1518 « pour quelques tables de peintures qu’il a bailles au Roy »
+        source: wikipedia-fr-joconde
+        accessed: 2026-10-20
+  - owner: person/francis-i-of-france
+    acquired: 1518
+    method: purchase
+    place: fontainebleau
+    certainty: probable
+    price:
+      amount: 2604
+      currency: LIV
+      note: for several paintings, paid to Salaì
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062370
+        note: il fut très probablement acquis par François Ier en 1518.
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - kind: sighting
+        date: "1550"
+        note: « lequel ouvrage se trouve aujourd’hui chez le roi de France à Fontainebleau »
+        place: fontainebleau
+        document: Vasari, Vite (1550)
+  - owner: institution/french-royal-collection
+    further_places:
+      - place: paris
+        date: "1665"
+      - place: versailles
+        date: 1690s
+    acquired: 1547
+    method: inheritance
+    place: fontainebleau
+    label: the Crown's collection — at Fontainebleau (in 1646 in the cabinet doré of Anne of Austria), from 1665 the Tuileries, in the 1690s Versailles
+    sources:
+      - url: https://fr.wikipedia.org/wiki/La_Joconde
+        note: En 1646, le tableau est présent dans le cabinet doré de la chambre d'Anne d'Autriche à Fontainebleau avant que Louis XIV décide de le ramener à Paris. En 1665-1666, il passe du palais du Louvre à la galerie des Ambassadeurs du palais des Tuileries. Louis XIV transfère le tableau dans la galerie du roi au château de Versailles dans les années 1690-1695.
+        source: wikipedia-fr-joconde
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    further_places:
+      - place: paris
+        date: "1797"
+    acquired: 1793
+    method: transfer
+    direct: true
+    place: versailles
+    label: the royal collection became the nation's (“ancienne collection royale”); in the Louvre's paintings from 1797, shown 1798; 1801–1802 in Josephine's rooms at the Tuileries
+    notes_md: “En 1793, La Joconde, alors dans les collections du château de Versailles, n'est pas retenue pour le premier accrochage … Elle entre dans les collections de peintures du musée en 1797, et est présentée pour la première fois au public en 1798.” (Wikipédia, La Joconde). Evacuated 1939–1945 (Chambord, Amboise, Louvigny, Loc-Dieu, Montauban, Montal …), back in June 1945; lent to Washington and New York 1963, Tokyo and Moscow 1974.
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010062370
+        note: "Mode d'acquisition : ancienne collection royale/de la Couronne, 1793"
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/vincenzo-peruggia
+    role: possessor
+    further_places: [florence]
+    acquired: 1911-08-21
+    ended: 1913-12-10
+    method: theft
+    direct: true
+    place: paris
+    label: stolen from the Salon Carré by the glazier Vincenzo Peruggia; hidden in his room in Paris, taken to Florence, shown to the dealer Alfredo Geri on 10 December 1913
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Vol_de_La_Joconde
+        note: Le 21 août 1911, un lundi (jour de fermeture du musée du Louvre), Vincenzo Peruggia, un vitrier italien qui a précédemment travaillé pour le musée […] Le 10 décembre 1913, il la montre à Alfredo Geri, le propriétaire d'une galerie d'art de la ville. […] Poggi et Geri gardent la peinture et informent la police, qui arrête Peruggia à son hôtel.
+        source: wikipedia-fr-vol-de-la-joconde
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    role: custodian
+    further_places: [rome]
+    acquired: 1913-12-10
+    ended: 1914-01
+    method: restitution
+    place: florence
+    label: recovered by Giovanni Poggi, director of the Uffizi; shown in Italy, handed to the French ambassador in Rome on 19 December 1913, back at the Louvre early in 1914
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Vol_de_La_Joconde
+        note: Retrouvé en 1913 après que le voleur a tenté d'approcher un marchand d'art de Florence, le tableau est restitué à l'ambassadeur français à Rome le 19 décembre 1913. […] la peinture est exposée à travers toute l'Italie dans une grande tournée d'adieu avant d'être retournée en grande pompe au Louvre début 1914.
+        source: wikipedia-fr-vol-de-la-joconde
+        accessed: 2026-10-20
+numbers:
+  - number: MR 316
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+identifiers:
+  gnd: 4074156-4
+  viaf: "180757281"
+sources:
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010062370
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q12418
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q12418
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q12418
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q12418
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q12418
+    - url: https://collections.louvre.fr/ark:/53355/cl010062370
+      source: louvre-collections
+      accessed: 2026-10-20

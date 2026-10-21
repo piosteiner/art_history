@@ -1,0 +1,45 @@
+public_id: 102084
+name: Sigismondo Gonzaga
+names:
+  - lang: ja
+    role: translation
+    text: シジスモンド・ゴンザーガ
+  - lang: zh
+    role: translation
+    text: 西吉斯蒙多·貢扎加
+  - lang: ko
+    role: translation
+    text: 시지스몬도 곤차가
+kind: person
+occupations: [Catholic priest]
+birth: 1469
+death: 1525-10-13
+wikidata_id: Q730692
+metadata:
+  sources: [Wikidata Q730692 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ca/Sigismondo_Gonzaga.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sigismondo_Gonzaga.jpg
+    license: Public domain
+    credit: Italian school
+identifiers:
+  gnd: "129022764"
+  idref: "175801509"
+  viaf: "35524090"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q730692
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q730692
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q730692
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q730692

@@ -1,0 +1,64 @@
+public_id: 102030
+name: Decio Azzolino
+names:
+  - lang: it
+    role: original
+    text: Decio Azzolino juniore
+  - Decio, Cardinal Azzolini
+  - Decio, Cardinal, II Azzolini
+  - Decio Azzolini
+  - Cardinal Decio Azzolini II
+  - Cardinal Decio Azzolino of Fermo
+  - Decio, Cardinale Azzolini
+  - Dezio, Cardinal Azzolino
+  - Decio, Cardinal Azzolino
+  - Decio Azzolini Cardinale
+  - Deccio, Cardinal Azzolini
+  - lang: de
+    role: translation
+    text: Decio Azzolini der Jüngere
+  - lang: ja
+    role: translation
+    text: デシオ・アッツォリーニ
+  - lang: zh
+    role: translation
+    text: 德喬·阿佐利諾
+  - lang: ru
+    role: translation
+    text: Дечио Аццолини
+kind: person
+occupations: [Catholic priest, Catholic bishop]
+birth: 1623-04-11
+death: 1689-06-08
+wikidata_id: Q1181870
+metadata:
+  sources: [Wikidata Q1181870 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5d/Decioazzolinodef.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Decioazzolinodef.jpg
+    license: Public domain
+    credit: "The original uploader was Vissia79 at Italian Wikipedia. (Original text: Vissia79)"
+identifiers:
+  bnf: 14407548g
+  gnd: "119136503"
+  idref: "152485031"
+  lc: no2001060551
+  ulan: "500313700"
+  viaf: "224944"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1181870
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1181870
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1181870
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1181870

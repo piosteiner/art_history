@@ -1,0 +1,140 @@
+public_id: 101707
+title_lang: fr
+title: La Vierge du chancelier Rolin
+names:
+  - lang: en
+    role: original
+    text: Group portrait of Mary with Christ and chancellor Nicolas Rolin (1376-1462)
+  - The Virgin of Chancellor Rolin
+  - The Virgin with Chancellor Rolin
+  - lang: en
+    role: original
+    text: Madonna of Chancellor Rolin
+  - lang: nl
+    role: original
+    text: De Maagd van kanselier Rolin
+  - lang: fr
+    role: original
+    text: La Vierge du chancelier Rolin
+  - lang: de
+    role: translation
+    text: Rolin-Madonna
+  - lang: it
+    role: translation
+    text: Madonna del cancelliere Rolin
+  - lang: es
+    role: translation
+    text: Virgen del canciller Rolin
+  - lang: ja
+    role: translation
+    text: 宰相ロランの聖母
+  - lang: zh
+    role: translation
+    text: 圣母与罗林大臣
+  - lang: ru
+    role: translation
+    text: Мадонна канцлера Ролена
+  - lang: nl
+    role: translation
+    text: Groepsportret van Maria met Christus en kanselier Nicolas Rolin (1376-1462)
+creator: jan-van-eyck
+created: c. 1430–1435
+materials: [oil paint, panel]
+dimensions: [66, 62]
+institution: department-of-paintings-of-the-louvre
+inventory_number: INV 1271
+web_url: https://collections.louvre.fr/ark:/53355/cl010061856
+wikidata_id: Q1516449
+metadata:
+  sources: [Wikidata Q1516449 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/The_Virgin_with_Chancellor_Rolin_by_Jan_van_Eyck_%28Louvre%29.webp/1280px-The_Virgin_with_Chancellor_Rolin_by_Jan_van_Eyck_%28Louvre%29.webp
+    source_url: https://commons.wikimedia.org/wiki/File:The_Virgin_with_Chancellor_Rolin_by_Jan_van_Eyck_(Louvre).webp
+    license: Public domain
+    credit: Jan van Eyck
+provenance:
+  - owner: person/nicolas-rolin
+    acquired: c. 1430
+    method: commission
+    label: probably commissioned by Nicolas Rolin, chancellor of Philip the Good, Duke of Burgundy — perhaps as a portable devotional panel, after his death in 1462 an epitaph
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010061856
+        note: Vraisemblablement commandé vers 1430 par Nicolas Rolin (vers 1370-1462), chancelier du duc de Bourgogne Philippe le Bon.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Collegiate church of Notre-Dame-du-Châtel, Autun
+    ended: 1793
+    place: autun
+    label: in the canons' sacristy beside the choir — described there in 1748 (a visit of 1705), 1778 and 1785
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010061856
+        note: Le panneau est décrit pour la première fois en 1748 dans l'église Notre-Dame-du-Châtel à Autun par un visiteur anonyme qui relate une visite de 1705. Il est à nouveau décrit au même endroit en 1778 et 1785.
+        source: louvre-collections
+        accessed: 2026-10-20
+    records:
+      - kind: sighting
+        date: "1705"
+        place: autun
+        document: anonymous visitor's account, published 1748
+      - kind: sighting
+        date: "1778"
+        place: autun
+      - kind: sighting
+        date: "1785"
+        place: autun
+  - owner_label: French nation (École centrale, Autun)
+    acquired: 1793/1799
+    method: confiscation
+    place: autun
+    label: seized in the Revolution (“saisie révolutionnaire”) and deposited at the École centrale of Autun, where Alexandre Lenoir chose it for the Louvre
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010061856
+        note: Le panneau est saisi à la Révolution et déposé à l’École centrale d’Autun, où il est sélectionné (avec un tableau de Fra Bartolomeo, également transféré au Louvre, INV 97) par Alexandre Lenoir pour le Louvre, où il entre en 1800.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1800
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010061856
+        note: "Mode d'acquisition : saisie révolutionnaire, date d'arrivée au Musée 1800"
+        source: louvre-collections
+        accessed: 2026-10-20
+numbers:
+  - number: MR 705
+    institution: department-of-paintings-of-the-louvre
+    label: former inventory number (Musée royal)
+identifiers:
+  gnd: 4484916-3
+  viaf: "183708377"
+sources:
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010061856
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1516449
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1516449
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1516449
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1516449
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1516449
+    - url: https://collections.louvre.fr/ark:/53355/cl010061856
+      source: louvre-collections
+      accessed: 2026-10-20

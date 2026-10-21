@@ -1,0 +1,48 @@
+public_id: 101776
+name: Vincenzo Peruggia
+names:
+  - lang: ja
+    role: translation
+    text: ビンセンツォ・ペルージャ
+  - lang: zh
+    role: translation
+    text: 温琴佐·佩鲁贾
+  - lang: ko
+    role: translation
+    text: 빈첸초 페루자
+  - lang: ru
+    role: translation
+    text: Винченцо Перуджа
+kind: person
+occupations: [art thief, decorative artist, glazier, museum professional]
+birth: 1881-10-08
+death: 1925-10-08
+wikidata_id: Q361362
+metadata:
+  sources: [Wikidata Q361362 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Vincenzo_peruggia.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincenzo_peruggia.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "123892052"
+  lc: no94036176
+  viaf: "255017832"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q361362
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q361362
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q361362
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q361362

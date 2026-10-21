@@ -1,0 +1,121 @@
+public_id: 101858
+title_lang: fr
+title: Portrait de l'artiste
+names:
+  - lang: fr
+    role: translation
+    text: Portrait de l'artiste
+  - lang: de
+    role: translation
+    text: Selbstporträt
+  - lang: it
+    role: translation
+    text: Autoritratto
+  - lang: es
+    role: translation
+    text: Autorretrato de Vincent Van Gogh (1889)
+  - lang: ja
+    role: translation
+    text: 自画像
+  - lang: ko
+    role: translation
+    text: 자화상
+  - lang: ru
+    role: translation
+    text: Автопортрет
+creator: vincent-van-gogh
+created: 1889
+materials: [oil paint, canvas]
+dimensions: [65, 54.2]
+institution: musee-d-orsay
+inventory_number: RF 1949 17
+web_url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-lartiste-747
+wikidata_id: Q3630735
+metadata:
+  sources: [Wikidata Q3630735 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    acquired: 1889
+    ended: 1890
+    method: creation
+    place: saint-remy-de-provence
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-lartiste-747
+        note: Date 1889
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/paul-ferdinand-gachet
+    place: auvers-sur-oise
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-lartiste-747
+        note: collection du docteur Paul Gachet, Auvers-sur-Oise
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/paul-gachet-jr
+    co_owners: [person/marguerite-gachet]
+    ended: 1949
+    method: inheritance
+    place: auvers-sur-oise
+    label: the doctor's children
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-lartiste-747
+        note: jusqu'en 1949, dans la collection Paul et Marguerite Gachet, les enfants du docteur Gachet
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1949-05-05
+    method: gift
+    direct: true
+    place: paris
+    label: given by Paul and Marguerite Gachet for the Jeu de Paume (committee 28 April, decree 5 May 1949)
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-lartiste-747
+        note: 1949, accepté par l'Etat à titre de don de Paul et Marguerite Gachet pour le musée du Jeu de Paume (comité du 28/04/1949, arrêté du 05/05/1949) 1949, attribué au musée du Louvre
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-lartiste-747
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q3630735
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-lartiste-747
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q3630735
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q3630735
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q3630735
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q3630735
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q3630735
+    - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-lartiste-747
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

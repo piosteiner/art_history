@@ -1,0 +1,18 @@
+public_id: 101645
+name: Bartolomé Esteban Murillo
+given_name: Bartolomé Esteban
+family_name: Murillo
+birth: 1617-12
+death: 1682-04-03
+wikidata_id: Q192062
+metadata:
+  sources: [Wikidata Q192062 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q192062
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q192062

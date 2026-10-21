@@ -1,0 +1,49 @@
+public_id: 101586
+name: Jean Dubuffet
+names:
+  - Louis-Léon Forget
+  - Jandu Bufe
+  - Jean-Philippe-Arthur Dubuffet
+  - Louis-Leon Forget
+  - Jean Philippe Arthur Dubuffet
+  - lang: ja
+    role: translation
+    text: ジャン・デュビュッフェ
+  - lang: zh
+    role: translation
+    text: 讓·杜布菲
+  - lang: ko
+    role: translation
+    text: 장 뒤뷔페
+  - lang: ru
+    role: translation
+    text: Жан Дюбюффе
+birth: 31 July 1901
+death: 1985-05-12
+wikidata_id: Q170076
+metadata:
+  sources: [Wikidata Q170076 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Paolo_Monti_-_Serie_fotografica_%28Italia%2C_1960%29_-_BEIC_6363665_dettaglio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paolo_Monti_-_Serie_fotografica_(Italia,_1960)_-_BEIC_6363665_dettaglio.jpg
+    license: CC BY-SA 4.0
+    credit: Paolo Monti
+identifiers:
+  bnf: "119008529"
+  gnd: "118527681"
+  hls: "027710"
+  idref: "026840359"
+  kulturnav: 56b54570-2da6-4b44-bf21-0be240a9a4bf
+  lc: n79134984
+  rkd: "24482"
+  ulan: "500019113"
+  viaf: "64004844"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q170076
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q170076

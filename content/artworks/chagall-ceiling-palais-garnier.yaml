@@ -1,0 +1,31 @@
+public_id: 102243
+title_lang: fr
+title: Plafond de l'Opéra Garnier
+names:
+  - lang: en
+    role: translation
+    text: Ceiling of the Palais Garnier
+creator: marc-chagall
+created: 1962/1964
+institution: palais-garnier
+location: [2.33167, 48.87194]
+provenance:
+  - owner_label: French State (Ministry of Cultural Affairs)
+    acquired: 1962
+    method: commission
+    place: paris
+    label: at the invitation of his friend André Malraux, minister of cultural affairs; installed 9 September, inaugurated 24 September 1964 — on a removable polyester structure covering Lenepveu's ceiling, which is still there
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Op%C3%A9ra_Garnier
+        note: La seconde coupole est conçue par Marc Chagall à l'invitation de son ami André Malraux, alors ministre des Affaires culturelles. La commande est passée officiellement en 1962. Le plafond, est installé le 9 septembre 1964 puis inauguré en 24 septembre 1964. […] L'œuvre de Lenepveu, toujours existante, est dissimulée depuis 1964 par une structure amovible en polyester où a été marouflé le décor conçu par Marc Chagall.
+        source: wikipedia-fr-opera-garnier
+        accessed: 2026-10-20
+  - owner: institution/palais-garnier
+    role: custodian
+    acquired: 1964-09
+    place: paris
+    sources:
+      - url: https://fr.wikipedia.org/wiki/Op%C3%A9ra_Garnier
+        note: En 1964, est inauguré le nouveau plafond de la coupole, dû à Marc Chagall
+        source: wikipedia-fr-opera-garnier
+        accessed: 2026-10-20

@@ -1,0 +1,88 @@
+public_id: 101952
+title_lang: it
+title: Bacco
+names:
+  - lang: en
+    role: original
+    text: Bacchus
+  - lang: es
+    role: translation
+    text: Baco
+  - lang: ja
+    role: translation
+    text: バッカス
+  - lang: zh
+    role: translation
+    text: 酒神巴克斯 (卡拉瓦喬)
+  - lang: ru
+    role: translation
+    text: Вакх (картина Караваджо)
+creator: caravaggio
+created: 1593/1603
+created_label: c. 1590s
+materials: [oil paint, canvas]
+dimensions: [95, 85]
+institution: uffizi-gallery
+inventory_number: 1890 n. 5312
+web_url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+wikidata_id: Q2011510
+metadata:
+  sources: [Wikidata Q2011510 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Baco%2C_por_CaravaggioFXD.jpg/1280px-Baco%2C_por_CaravaggioFXD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Baco,_por_CaravaggioFXD.jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: person/francesco-maria-del-monte
+    acquired: c. 1598
+    method: commission
+    place: rome
+    label: Caravaggio's patron in these years — perhaps commissioned to be given to Ferdinando I, like the Medusa
+    certainty: possible
+    sources:
+      - url: https://it.wikipedia.org/wiki/Bacco_%28Caravaggio%29
+        note: è possibile anche ritenere che la tela sia stata originariamente commissionata dal cardinale, o che quantomeno questi ne sia stato il primo acquirente […] il cardinale avrebbe incaricato Caravaggio di dipingere la tela con l'intento di donarla successivamente al granduca di Toscana Ferdinando I de' Medici
+        source: wikipedia-it-bacco-caravaggio
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    place: florence
+    label: long forgotten in the storerooms; found there in 1913 and given to Caravaggio by Roberto Longhi
+    sources:
+      - url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+        note: Discovered in the Uffizi’s storerooms in 1913 and attributed to Caravaggio by art historian Roberto Longhi
+        source: uffizi-artworks
+        accessed: 2026-10-20
+    records:
+      - kind: sighting
+        date: "1913"
+        note: found in the Uffizi's storerooms
+        place: florence
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2011510
+  created:
+    - url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2011510
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2011510
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2011510
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2011510
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/caravaggio-bacchus
+      source: uffizi-artworks
+      accessed: 2026-10-20

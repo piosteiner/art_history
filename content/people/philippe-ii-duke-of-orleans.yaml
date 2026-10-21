@@ -1,0 +1,76 @@
+public_id: 102031
+name: Philippe II, Duke of Orléans
+names:
+  - lang: fr
+    role: original
+    text: Philippe d'Orléans
+  - Regent of the Kingdom
+  - Philippe II
+  - Philippe d'Orleans
+  - Philippe d' Orleans
+  - Philippe von Orléans
+  - Philippe von Orleans
+  - Philippe II, Duke of Orleans
+  - Philippe, Duke of Orléans
+  - lang: nl
+    role: translation
+    text: Filips van Orléans
+  - lang: de
+    role: translation
+    text: Philippe II. d’Orléans, duc d’Orléans
+  - lang: it
+    role: translation
+    text: Filippo II di Borbone-Orléans
+  - lang: es
+    role: translation
+    text: Felipe II de Orleans
+  - lang: ja
+    role: translation
+    text: フィリップ2世
+  - lang: zh
+    role: translation
+    text: 腓力二世
+  - lang: ko
+    role: translation
+    text: 오를레앙 공 필리프 2세
+  - lang: ru
+    role: translation
+    text: Филипп II Орлеанский
+kind: person
+occupations: [art collector, military personnel, ruler, artist, painter, etcher, composer]
+birth: 1674-08-02
+death: 1723-12-02
+wikidata_id: Q155596
+metadata:
+  sources: [Wikidata Q155596 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/The_Duke_of_Orl%C3%A9ans_future_Regent_of_France_by_Jean_Baptiste_Santerre_%28Museo_del_Prado%29.jpg/1280px-The_Duke_of_Orl%C3%A9ans_future_Regent_of_France_by_Jean_Baptiste_Santerre_%28Museo_del_Prado%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Duke_of_Orl%C3%A9ans_future_Regent_of_France_by_Jean_Baptiste_Santerre_(Museo_del_Prado).jpg
+    license: Public domain
+    credit: Jean-Baptiste Santerre
+identifiers:
+  bnf: 11918201w
+  gnd: "118820214"
+  idref: "027053571"
+  kulturnav: 3ae5117c-3ef8-4d33-9eea-99f756756c64
+  lc: n85090571
+  rkd: "60935"
+  ulan: "500085678"
+  viaf: "71395774"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q155596
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q155596
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q155596
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q155596

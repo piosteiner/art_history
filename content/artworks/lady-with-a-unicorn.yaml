@@ -1,0 +1,121 @@
+public_id: 102051
+title_lang: it
+title: Dama con liocorno
+names:
+  - Lady with a unicorn
+  - Woman with a unicorn
+  - Portrait of a Young Woman with a Unicorn
+  - lang: en
+    role: translation
+    text: Portrait of a Lady with a Unicorn
+  - lang: nl
+    role: translation
+    text: De dame met de eenhoorn
+  - lang: fr
+    role: translation
+    text: La Dame à la licorne
+  - lang: de
+    role: translation
+    text: Dame mit dem Einhorn
+  - lang: it
+    role: original
+    text: Dama col liocorno
+  - lang: es
+    role: translation
+    text: Dama del unicornio
+  - lang: ja
+    role: translation
+    text: ユニコーンと若い女性
+  - lang: zh
+    role: translation
+    text: 獨角獸與年輕女子
+  - lang: ko
+    role: translation
+    text: 유니콘을 든 젊은 여인
+  - lang: ru
+    role: translation
+    text: Дама с единорогом
+creator: raphael
+created: 1500/1511
+created_label: c. 1500s
+materials: [oil paint, panel, transferred on canvas]
+dimensions: [65, 51]
+institution: galleria-borghese
+inventory_number: "371"
+web_url: https://www.collezionegalleriaborghese.it/opere/dama-con-liocorno
+wikidata_id: Q2344396
+metadata:
+  sources: [Wikidata Q2344396 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Raffaello_Sanzio_-_Lady_with_unicorn.jpg/1280px-Raffaello_Sanzio_-_Lady_with_unicorn.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Raffaello_Sanzio_-_Lady_with_unicorn.jpg
+    license: Public domain
+    credit: Raphael
+provenance:
+  - owner_label: unknown
+    label: first certainly identifiable in the Borghese inventories only in the fideicommissum of 1833; painted over as Saint Catherine until 1936
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/dama-con-liocorno
+        note: L’opera è riconoscibile con certezza per la prima volta negli inventari della collezione Borghese solo nel fidecommisso del 1833.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1833 or earlier
+    ended: 1902
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/dama-con-liocorno
+        note: "Provenienza: Roma, Collezione Borghese, Inventario Fidecommissario Borghese 1833. Acquisto dello stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/dama-con-liocorno
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+identifiers:
+  gnd: "1084830558"
+  viaf: "315595037"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2344396
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/dama-con-liocorno
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2344396
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2344396
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2344396
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2344396
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2344396
+    - url: https://www.collezionegalleriaborghese.it/opere/dama-con-liocorno
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

@@ -1,0 +1,90 @@
+public_id: 102151
+title_lang: it
+title: Vocazione di san Matteo
+names:
+  - lang: en
+    role: original
+    text: The Calling of Saint Matthew
+  - The Calling of St. Matthew
+  - The Calling of St Matthew
+  - lang: nl
+    role: translation
+    text: De roeping van Matteüs
+  - lang: fr
+    role: translation
+    text: La Vocation de saint Matthieu
+  - lang: de
+    role: original
+    text: Die Berufung des Hl. Matthäus
+  - lang: it
+    role: translation
+    text: Vocazione di san Matteo
+  - lang: es
+    role: translation
+    text: La vocación de San Mateo
+  - lang: ja
+    role: translation
+    text: 聖マタイの召命
+  - lang: zh
+    role: translation
+    text: 聖馬太蒙召喚
+  - lang: ko
+    role: translation
+    text: 성 마태오를 부르심
+  - lang: ru
+    role: translation
+    text: Призвание апостола Матфея
+creator: caravaggio
+created: 1599/1600
+materials: [oil paint, canvas]
+dimensions: [340, 322]
+institution: san-luigi-dei-francesi
+location: [12.47467, 41.89958]
+wikidata_id: Q969377
+metadata:
+  sources: [Wikidata Q969377 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg/1280px-Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_The_Calling_of_Saint_Matthew.jpg
+    license: CC0
+    credit: Gleb Simonov
+provenance:
+  - owner: person/matthieu-cointerel
+    acquired: 1599-07
+    method: commission
+    place: rome
+    label: Cardinal Matteo Contarelli (Matthieu Cointrel, d. 1585) had left funds and instructions in his will for a chapel of St Matthew; the commission (July 1599) was for the two side canvases
+    sources:
+      - url: https://it.wikipedia.org/wiki/Vocazione_di_san_Matteo
+        note: La commissione del dipinto si deve al cardinale Matteo Contarelli, il quale, intorno al 1590, aveva lasciato fondi e istruzioni specifiche nel suo testamento per la decorazione di una cappella dedicata al suo omonimo San Matteo. […] la commissione, datata luglio 1599, prevedeva la realizzazione di sole due tele per le pareti laterali della cappella
+        source: wikipedia-it-cappella-contarelli
+        accessed: 2026-10-20
+  - owner: institution/san-luigi-dei-francesi
+    acquired: 1600
+    place: rome
+    label: the Contarelli Chapel, where the three canvases still hang
+    sources:
+      - url: https://it.wikipedia.org/wiki/Vocazione_di_san_Matteo
+        note: Le tre tele sono a tutt'oggi esposte nella Cappella Contarelli.
+        source: wikipedia-it-cappella-contarelli
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q969377
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q969377
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q969377
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q969377
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q969377

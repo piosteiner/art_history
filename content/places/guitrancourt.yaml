@@ -1,0 +1,26 @@
+public_id: 101869
+name: Guitrancourt
+names:
+  - lang: zh
+    role: translation
+    text: 吉特朗库尔
+kind: settlement
+parent: yvelines
+country_code: FR
+location: [1.77694, 49.00861]
+wikidata_id: Q256153
+metadata:
+  sources: [Wikidata Q256153 (retrieved 2026-10-20)]
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q256153
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q256153
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q256153

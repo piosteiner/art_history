@@ -1,0 +1,67 @@
+public_id: 101923
+name: Cosimo II de' Medici
+names:
+  - Grand Duke of Tuscany Cosimo II
+  - Grand Duke of Tuscany Cosimo II de' Medici
+  - de' Medici, granduca di Toscana Cosimo II
+  - Cosimo II de Medici
+  - Cosimo II, granduca di Toscana De’ Medici
+  - Cosimo de, II Medici
+  - lang: fr
+    role: translation
+    text: Cosme II de Médicis
+  - lang: de
+    role: translation
+    text: Cosimo II. de’ Medici
+  - lang: es
+    role: translation
+    text: Cosme II de Médici
+  - lang: ja
+    role: translation
+    text: コジモ2世
+  - lang: zh
+    role: translation
+    text: 科西莫二世·德·美第奇
+  - lang: ko
+    role: translation
+    text: 코시모 2세
+  - lang: ru
+    role: translation
+    text: Козимо II Медичи
+kind: person
+occupations: [politician, statesperson, Grand Duke]
+birth: 1590-05-12
+death: 28 February 1621
+wikidata_id: Q312297
+metadata:
+  sources: [Wikidata Q312297 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Gro%C3%9Fherzog_Cosimo_II.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gro%C3%9Fherzog_Cosimo_II.jpg
+    license: Public domain
+    credit: Justus Sustermans
+identifiers:
+  bnf: "156198892"
+  gnd: "124843778"
+  idref: "080915221"
+  lc: no91010039
+  rkd: "435528"
+  ulan: "500353754"
+  viaf: "51663930"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q312297
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q312297
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q312297
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q312297

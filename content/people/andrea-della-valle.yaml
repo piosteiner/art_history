@@ -1,0 +1,38 @@
+public_id: 101938
+name: Andrea della Valle
+given_name: Andrea
+family_name: della Valle
+names: [Cardinal Andrea della Valle, Andrea Cardinal della Valle, A. della Valle, Della Valle, Valle]
+kind: person
+occupations: [Catholic priest]
+birth: 1463-12-08
+death: 1534-08-13
+wikidata_id: Q1772040
+metadata:
+  sources: [Wikidata Q1772040 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Lautizio_da_perugia%2C_sigillo_del_cardinale_andrea_della_valle.JPG/1280px-Lautizio_da_perugia%2C_sigillo_del_cardinale_andrea_della_valle.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Lautizio_da_perugia,_sigillo_del_cardinale_andrea_della_valle.JPG
+    license: CC BY-SA 3.0
+    credit: sailko
+identifiers:
+  gnd: "133378101"
+  ulan: "500327399"
+  viaf: "11033195"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1772040
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1772040
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1772040
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1772040

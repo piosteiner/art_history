@@ -1,0 +1,18 @@
+public_id: 102103
+name: Donato Bramante
+given_name: Donato
+family_name: Bramante
+birth: 1444
+death: 1514-04-21
+wikidata_id: Q7793
+metadata:
+  sources: [Wikidata Q7793 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q7793
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q7793

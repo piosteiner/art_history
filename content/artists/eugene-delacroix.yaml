@@ -1,0 +1,18 @@
+public_id: 101690
+name: Eugène Delacroix
+given_name: Eugène
+family_name: Delacroix
+birth: 1798-04-26
+death: 1863-08-13
+wikidata_id: Q33477
+metadata:
+  sources: [Wikidata Q33477 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q33477
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q33477

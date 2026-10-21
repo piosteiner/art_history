@@ -1,0 +1,40 @@
+public_id: 101907
+name: Parma
+names:
+  - lang: fr
+    role: translation
+    text: Parme
+  - lang: ja
+    role: translation
+    text: パルマ
+  - lang: zh
+    role: translation
+    text: 帕尔马
+  - lang: ko
+    role: translation
+    text: 파르마
+  - lang: ru
+    role: translation
+    text: Парма
+kind: settlement
+parent: province-of-parma
+country_code: IT
+location: [10.328, 44.80147]
+wikidata_id: Q2683
+metadata:
+  sources: [Wikidata Q2683 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4115856-8
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q2683
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q2683
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2683

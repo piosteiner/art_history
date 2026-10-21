@@ -1,0 +1,123 @@
+public_id: 101958
+title_lang: it
+title: Trittico Portinari
+names:
+  - lang: en
+    role: original
+    text: The Portinari Altarpiece
+  - Portinari Altarpiece
+  - The Portinari Triptych
+  - lang: en
+    role: original
+    text: Portinari Triptych
+  - lang: nl
+    role: translation
+    text: Portinari-altaar
+  - lang: fr
+    role: translation
+    text: Triptyque Portinari
+  - lang: de
+    role: translation
+    text: Portinari-Triptychon
+  - lang: es
+    role: translation
+    text: Tríptico Portinari
+  - lang: ja
+    role: translation
+    text: ポルティナーリ祭壇画
+  - lang: zh
+    role: translation
+    text: 波提納里三聯畫 (凡·德·古斯)
+  - lang: ko
+    role: translation
+    text: 포르티나리 제단화
+  - lang: ru
+    role: translation
+    text: Алтарь Портинари
+creator: hugo-van-der-goes
+created: c. 1477–1478
+materials: [oil paint, oak panel]
+dimensions: [253, 586]
+institution: uffizi-gallery
+inventory_number: 1890 nn. 3191, 3192, 3193
+web_url: https://www.uffizi.it/en/artworks/adoration-of-the-shepherds-with-angels-and-saints-recto-annunciation-verso
+wikidata_id: Q18686031
+metadata:
+  sources: [Wikidata Q18686031 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Hugo_van_der_Goes_-_Portinari_Triptych_%28c._1477%29.jpg/1280px-Hugo_van_der_Goes_-_Portinari_Triptych_%28c._1477%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hugo_van_der_Goes_-_Portinari_Triptych_(c._1477).jpg
+    license: Public domain
+    credit: Hugo van der Goes
+provenance:
+  - owner: person/tommaso-portinari
+    further_places:
+      - place: pisa
+        date: "1483"
+      - place: florence
+        date: 1483-05-28
+    acquired: c. 1477
+    method: commission
+    place: bruges
+    label: the Medici bank's representative in Bruges commissioned it for the Portinari chapel in Sant'Egidio, church of the hospital of Santa Maria Nuova; by sea to Pisa, up the Arno, in Florence on 28 May 1483
+    sources:
+      - url: https://www.uffizi.it/en/artworks/adoration-of-the-shepherds-with-angels-and-saints-recto-annunciation-verso
+        note: During his time in Flanders, Tommaso Portinari commissioned Flemish painter Hugo van der Goes to paint the Adoration of the Shepherds Triptych to adorn the Portinari family chapel in the church of Saint Giles in the Santa Maria Nuova hospital in Florence. The painting's arrival in Florence in 1483, having first reached Pisa by sea, was quite an event
+        source: uffizi-artworks
+        accessed: 2026-10-20
+      - url: https://it.wikipedia.org/wiki/Trittico_Portinari
+        note: dove l'opera giunse il 28 maggio 1483
+        source: wikipedia-it-trittico-portinari
+        accessed: 2026-10-20
+  - owner: institution/hospital-of-santa-maria-nuova
+    acquired: 1483
+    ended: 1900
+    place: florence
+    label: in Sant'Egidio, of old under the Portinari's patronage; taken apart in 1567, put together again in 1871
+    sources:
+      - url: https://it.wikipedia.org/wiki/Trittico_Portinari
+        note: trasportata alla chiesa di Sant'Egidio nell'Ospedale di Santa Maria Nuova, di antico patronato dei Portinari […] Nel 1567 subì uno smembramento […] fu possibile ricomporli in seguito, nel 1871.
+        source: wikipedia-it-trittico-portinari
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1900
+    method: gift
+    direct: true
+    place: florence
+    label: with the donation of Santa Maria Nuova
+    sources:
+      - url: https://it.wikipedia.org/wiki/Trittico_Portinari
+        note: Nell'anno 1900 pervenne agli Uffizi assieme a un gruppo di opere importantissime, che costituivano la donazione di Santa Maria Nuova.
+        source: wikipedia-it-trittico-portinari
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4574498-1
+  viaf: "205792774"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q18686031
+  created:
+    - url: https://www.uffizi.it/en/artworks/adoration-of-the-shepherds-with-angels-and-saints-recto-annunciation-verso
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q18686031
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q18686031
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q18686031
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q18686031
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/adoration-of-the-shepherds-with-angels-and-saints-recto-annunciation-verso
+      source: uffizi-artworks
+      accessed: 2026-10-20

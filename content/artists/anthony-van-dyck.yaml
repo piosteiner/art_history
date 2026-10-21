@@ -1,0 +1,18 @@
+public_id: 101655
+name: Anthony van Dyck
+given_name: Anthony
+family_name: van Dyck
+birth: 1599-03-22
+death: 1641-12-09
+wikidata_id: Q150679
+metadata:
+  sources: [Wikidata Q150679 (retrieved 2026-10-20)]
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q150679
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q150679

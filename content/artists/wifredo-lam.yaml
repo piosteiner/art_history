@@ -1,0 +1,48 @@
+public_id: 101591
+name: Wifredo Lam
+names:
+  - L Lam
+  - Wilfredo Lam
+  - Wifredo Oscar de la Conception Lam y Castilla
+  - Wifredo Lam y Castilla
+  - Wifredo Oscar de la Conception Lam
+  - lang: ja
+    role: translation
+    text: ヴィフレド・ラム
+  - lang: zh
+    role: translation
+    text: 林飞龙
+  - lang: ko
+    role: translation
+    text: 윌프레도 람
+  - lang: ru
+    role: translation
+    text: Вифредо Лам
+birth: 1902-12-08
+death: 1982-09-11
+wikidata_id: Q465342
+metadata:
+  sources: [Wikidata Q465342 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f0/Wilfredo_Lam.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wilfredo_Lam.jpg
+    license: CC BY 3.0
+    credit: Original uploader was Mfoto at en.wikipedia
+identifiers:
+  bnf: 12011808v
+  gnd: "119232553"
+  idref: 02824186X
+  kulturnav: 01cc8d99-55cf-4455-b2d1-06431446aa3d
+  lc: n79046146
+  rkd: "47518"
+  ulan: "500006317"
+  viaf: "22152571"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q465342
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q465342

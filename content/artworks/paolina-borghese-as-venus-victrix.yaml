@@ -1,0 +1,109 @@
+public_id: 102043
+title_lang: it
+title: Paolina Borghese Bonaparte come Venere vincitrice
+names:
+  - lang: fr
+    role: translation
+    text: Vénus Victrix
+  - lang: it
+    role: translation
+    text: Paolina Borghese Bonaparte come Venere Vincitrice
+  - lang: ja
+    role: translation
+    text: ウェヌス・ウィクトリクス
+  - lang: zh
+    role: translation
+    text: 寶琳娜·博爾蓋塞
+  - lang: ru
+    role: translation
+    text: Венера Победительница
+creator: antonio-canova
+created: 1804/1808
+created_label: c. 1800s
+materials: [Carrara marble]
+dimensions: [92, 192]
+institution: galleria-borghese
+inventory_number: LIV
+web_url: https://www.khanacademy.org/humanities/monarchy-enlightenment/neo-classicism/a/canova-paolina-borghese-as-venus-victorius
+wikidata_id: Q1093113
+metadata:
+  sources: [Wikidata Q1093113 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Paolina_Borghese_%28Canova%29.jpg/1280px-Paolina_Borghese_%28Canova%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paolina_Borghese_(Canova).jpg
+    license: CC BY-SA 4.0
+    credit: Antonio Canova
+provenance:
+  - owner: person/camillo-borghese
+    acquired: 1804
+    ended: 1832
+    method: commission
+    place: rome
+    label: Prince Camillo Borghese's portrait of his wife, Napoleon's sister, carved in Rome 1804–1808
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/paolina-borghese-bonaparte-come-venere-vincitrice
+        note: Principe Camillo Borghese, 1808; Inventario Fidecommissario Borghese 1833, A, p. 15. Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1832
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/paolina-borghese-bonaparte-come-venere-vincitrice
+        note: "Provenienza: Principe Camillo Borghese, 1808; Inventario Fidecommissario Borghese 1833, A, p. 15. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, A, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/paolina-borghese-bonaparte-come-venere-vincitrice
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1093113
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1093113
+    - url: https://www.collezionegalleriaborghese.it/opere/paolina-borghese-bonaparte-come-venere-vincitrice
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1093113
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1093113
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1093113
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1093113
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1093113
+    - url: https://www.collezionegalleriaborghese.it/opere/paolina-borghese-bonaparte-come-venere-vincitrice
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

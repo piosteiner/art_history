@@ -1,0 +1,44 @@
+public_id: 101587
+name: Paul Delvaux
+names:
+  - Paul François Ernest Delvaux
+  - Delvaux
+  - lang: ja
+    role: translation
+    text: ポール・デルヴォー
+  - lang: zh
+    role: translation
+    text: 保罗·德尔沃
+  - lang: ko
+    role: translation
+    text: 폴 델보
+  - lang: ru
+    role: translation
+    text: Поль Дельво
+birth: 1897-09-23
+death: 1994-07-20
+wikidata_id: Q164712
+metadata:
+  sources: [Wikidata Q164712 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Veurne_Paul_Delvaux.jpg/1280px-Veurne_Paul_Delvaux.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Veurne_Paul_Delvaux.jpg
+    license: CC BY-SA 3.0
+    credit: Lokilech
+identifiers:
+  bnf: 11899466r
+  gnd: "118679430"
+  idref: "028009312"
+  lc: n50035928
+  rkd: "21850"
+  ulan: "500017335"
+  viaf: "100902344"
+sources:
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q164712
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q164712

@@ -1,0 +1,75 @@
+public_id: 102194
+name: Louis IX of France
+names:
+  - lang: fr
+    role: original
+    text: Louis IX
+  - lang: fr
+    role: original
+    text: Saint Louis
+  - Saint Louis IX of France
+  - Louis IX the Saint
+  - Solomon of France
+  - lang: nl
+    role: translation
+    text: Lodewijk IX van Frankrijk
+  - lang: fr
+    role: original
+    text: Louis IX de France
+  - lang: de
+    role: translation
+    text: Ludwig IX.
+  - lang: it
+    role: translation
+    text: Luigi IX di Francia
+  - lang: es
+    role: translation
+    text: Luis IX de Francia
+  - lang: ja
+    role: translation
+    text: ルイ9世
+  - lang: zh
+    role: translation
+    text: 路易九世
+  - lang: ko
+    role: translation
+    text: 루이 9세
+  - lang: ru
+    role: translation
+    text: Людовик IX Святой
+kind: person
+occupations: [ruler, Miles Christianus, monarch]
+birth: 1214-05-02
+death: 1270-09-01
+wikidata_id: Q346
+metadata:
+  sources: [Wikidata Q346 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/03/Saintlouis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Saintlouis.jpg
+    license: Public domain
+    credit: AnonymousUnknown author
+identifiers:
+  bnf: "120344600"
+  gnd: "118729411"
+  idref: "028525949"
+  lc: n79055295
+  ulan: "500245812"
+  viaf: "89182909"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q346
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q346
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q346
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q346

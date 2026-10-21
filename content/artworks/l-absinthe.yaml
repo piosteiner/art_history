@@ -1,0 +1,190 @@
+public_id: 101845
+title_lang: fr
+title: Dans un café
+names:
+  - lang: en
+    role: original
+    text: L’Absinthe
+  - The Absinthe Drinker
+  - Glass of Absinthe
+  - lang: en
+    role: original
+    text: L'Absinthe
+  - lang: nl
+    role: translation
+    text: De absintdrinkster
+  - lang: de
+    role: translation
+    text: Der Absinth
+  - lang: it
+    role: translation
+    text: L'assenzio
+  - lang: es
+    role: translation
+    text: El ajenjo
+  - lang: ja
+    role: translation
+    text: アブサントを飲む人
+  - lang: zh
+    role: translation
+    text: 咖啡館裡
+  - lang: ko
+    role: translation
+    text: 압생트
+  - lang: ru
+    role: translation
+    text: Абсент
+creator: edgar-degas
+created: 1875/1876
+materials: [oil paint, canvas]
+dimensions: [92, 68]
+institution: musee-d-orsay
+inventory_number: RF 1984
+web_url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+wikidata_id: Q1239950
+metadata:
+  sources: [Wikidata Q1239950 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Edgar_Degas_-_In_a_Caf%C3%A9_-_Google_Art_Project_2.jpg/1280px-Edgar_Degas_-_In_a_Caf%C3%A9_-_Google_Art_Project_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_In_a_Caf%C3%A9_-_Google_Art_Project_2.jpg
+    license: Public domain
+    credit: Edgar Degas
+provenance:
+  - owner: artist/edgar-degas
+    acquired: 1875
+    ended: 1876
+    method: creation
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: Date entre 1875 et 1876
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Charles W. Deschamps
+    role: dealer
+    acquired: 1876
+    ended: 1876
+    method: purchase
+    direct: true
+    place: london
+    label: delivered by the artist
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: de 1876 à 1876, dans la collection Ch. W. Deschamps, Londres (livré par l'artiste)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Captain Henry Hill
+    numbers:
+      - kind: lot
+        number: "205"
+    acquired: 1876
+    ended: 1892-02-20
+    place: brighton
+    label: his second sale, London, Christie's, 20 February 1892, no. 205
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: de 1876 à 1892, dans la collection capitaine Henry Hill, Brighton 1892, deuxième vente Henry Hill, Londres, Christie's, 20 février 1892, n°205
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/alex-reid
+    role: dealer
+    acquired: 1892-02-20
+    ended: 1893
+    method: auction
+    direct: true
+    place: glasgow
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: à partir de 1892, dans la collection Alexandre Reid, Glasgow (acquis à la vente Hill)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Arthur Kay
+    acquired: 1893
+    ended: 1893
+    place: glasgow
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: en 1893, dans la collection Arthur Kay, Glasgow
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Martin et Camentron
+    role: dealer
+    acquired: 1893
+    ended: 1893
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: en 1893, dans la collection Martin et Camentron, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/alex-reid
+    role: dealer
+    acquired: 1893
+    ended: 1893
+    place: glasgow
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: en 1893, dans la collection Alexandre Reid
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/isaac-de-camondo
+    acquired: 1893
+    ended: 1911
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: de 1893 à 1911, dans la collection du comte Isaac de Camondo, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1911-11-23
+    method: bequest
+    direct: true
+    place: paris
+    label: Isaac de Camondo's bequest to the Musées nationaux for the Louvre (committee 27 April, council 8 May, decree 23 November 1911); shown from 1914
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: 1911, accepté par l'Etat à titre de legs aux Musées nationaux du comte Isaac de Camondo pour le musée du Louvre (comité du 27/04/1911, conseil du 08/05/1911, arrêté du 23/11/1911) 1911, attribué au musée du Louvre, Paris de 1911 à 1947, musée du Louvre, Paris (exposé à partir de 1914)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1239950
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1239950
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1239950
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1239950
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1239950
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1239950
+    - url: https://www.musee-orsay.fr/fr/oeuvres/dans-un-cafe-1147
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

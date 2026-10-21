@@ -1,0 +1,47 @@
+public_id: 101772
+name: Nicolas Rolin
+names:
+  - lang: ja
+    role: translation
+    text: ニコラ・ロラン
+  - lang: zh
+    role: translation
+    text: 尼古拉·罗兰
+  - lang: ru
+    role: translation
+    text: Николя Ролен
+kind: person
+occupations: [patron of the arts, diplomat, chancellor, lawyer]
+birth: c. 1376
+death: 1462-01-27
+wikidata_id: Q338480
+metadata:
+  sources: [Wikidata Q338480 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/99/Nicolas_Rolin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nicolas_Rolin.jpg
+    license: Public domain
+    credit: Rogier van der Weyden
+identifiers:
+  bnf: 12364313b
+  gnd: 11879101X
+  idref: 03265507X
+  lc: nr95006133
+  viaf: "89027076"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q338480
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q338480
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q338480
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q338480

@@ -1,0 +1,125 @@
+public_id: 102037
+title_lang: it
+title: Ratto di Proserpina
+names:
+  - Pluto and Persephone
+  - Rape of Proserpina
+  - lang: nl
+    role: translation
+    text: Pluto en Proserpina
+  - lang: fr
+    role: translation
+    text: L'Enlèvement de Proserpine
+  - lang: de
+    role: translation
+    text: Der Raub der Persephone
+  - lang: it
+    role: translation
+    text: Ratto di Proserpina
+  - lang: es
+    role: translation
+    text: El rapto de Proserpina
+  - lang: ja
+    role: translation
+    text: プロセルピナの略奪
+  - lang: zh
+    role: translation
+    text: 被擄掠的珀耳塞福涅
+  - lang: ko
+    role: translation
+    text: 프로세르피나의 강간
+  - lang: ru
+    role: translation
+    text: Похищение Прозерпины
+creator: gian-lorenzo-bernini
+created: 1621/1622
+materials: [Marbre blanc]
+dimensions: [255]
+institution: galleria-borghese
+inventory_number: CCLXVIII
+web_url: https://www.collezionegalleriaborghese.it/en/opere/rape-of-proserpine
+wikidata_id: Q2352789
+metadata:
+  sources: [Wikidata Q2352789 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/rome
+    period: 1624
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/The_Rape_of_Proserpina_%28Rome%29.jpg/1280px-The_Rape_of_Proserpina_%28Rome%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Rape_of_Proserpina_(Rome).jpg
+    license: CC BY-SA 4.0
+    credit: Gian Lorenzo Bernini
+provenance:
+  - owner: person/scipione-borghese
+    acquired: 1621
+    ended: 1622
+    method: commission
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/ratto-di-proserpina
+        note: Commissionato dal cardinale Scipione Borghese
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: person/ludovico-ludovisi
+    acquired: 1622
+    method: gift
+    direct: true
+    place: rome
+    label: given by Scipione Borghese to Cardinal Ludovico Ludovisi, nephew of the new pope Gregory XV
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/ratto-di-proserpina
+        note: collezione Ludovisi, 1622.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner_label: the Ludovisi family
+    ended: 1908
+    method: inheritance
+    place: rome
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/ratto-di-proserpina
+        note: collezione Ludovisi, 1622. Acquisto dello Stato, 1908.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/galleria-borghese
+    acquired: 1908
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the State from the Ludovisi and brought back to the Borghese
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/ratto-di-proserpina
+        note: Acquisto dello Stato, 1908.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2352789
+  created:
+    - url: https://www.collezionegalleriaborghese.it/opere/ratto-di-proserpina
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2352789
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2352789
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2352789
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2352789
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2352789
+    - url: https://www.collezionegalleriaborghese.it/opere/ratto-di-proserpina
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

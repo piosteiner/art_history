@@ -1,0 +1,130 @@
+public_id: 101840
+title_lang: fr
+title: L'Église d'Auvers-sur-Oise, vue du chevet
+names:
+  - De kerk in Auvers
+  - lang: en
+    role: translation
+    text: The Church at Auvers
+  - lang: nl
+    role: translation
+    text: De kerk van Auvers
+  - lang: fr
+    role: original
+    text: L'Église d'Auvers-sur-Oise
+  - lang: de
+    role: translation
+    text: Die Kirche von Auvers
+  - lang: it
+    role: translation
+    text: La chiesa di Auvers
+  - lang: es
+    role: translation
+    text: La iglesia de Auvers-sur-Oise
+  - lang: ja
+    role: translation
+    text: オーヴェルの教会
+  - lang: zh
+    role: translation
+    text: 奧維爾教堂
+  - lang: ko
+    role: translation
+    text: 오베르의 교회
+  - lang: ru
+    role: translation
+    text: Церковь в Овере
+creator: vincent-van-gogh
+created: 1890-06-04/1890-06-08
+materials: [oil paint, canvas]
+dimensions: [94, 74]
+institution: musee-d-orsay
+inventory_number: RF 1951 42
+web_url: http://www.vggallery.com/painting/p_0789.htm
+wikidata_id: Q1213917
+metadata:
+  sources: [Wikidata Q1213917 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Vincent_van_Gogh_-_The_Church_in_Auvers-sur-Oise%2C_View_from_the_Chevet_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_The_Church_in_Auvers-sur-Oise%2C_View_from_the_Chevet_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Church_in_Auvers-sur-Oise,_View_from_the_Chevet_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    acquired: 1890-06-04
+    ended: 1890-07-29
+    method: creation
+    place: auvers-sur-oise
+    label: painted between 4 and 8 June 1890
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
+        note: Date 1890 [Peint entre le 4 et le 8 juin 1890]
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/paul-ferdinand-gachet
+    place: auvers-sur-oise
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
+        note: collection du docteur Paul Gachet, Auvers-sur-Oise
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/paul-gachet-jr
+    ended: 1951
+    method: inheritance
+    place: auvers-sur-oise
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
+        note: jusqu'en 1951, dans la collection Paul Gachet (fils)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1951/1952-01-17
+    method: purchase
+    direct: true
+    place: paris
+    label: bought by the Musées nationaux for the Jeu de Paume with Paul Gachet's help and an anonymous Canadian gift (committee 29 November 1951, decree 17 January 1952)
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
+        note: 1952, acquis avec le concours de Paul Gachet, fils du docteur Paul Gachet, et la participation d'une donation anonyme canadienne par les Musées nationaux pour le Musée du Jeu de Paume (comité du 29/11/1951, arrêté du 17/01/1952) 1951, attribué au musée du Louvre
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1213917
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1213917
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1213917
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1213917
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1213917
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1213917
+    - url: https://www.musee-orsay.fr/fr/oeuvres/leglise-dauvers-sur-oise-vue-du-chevet-755
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

@@ -1,0 +1,129 @@
+public_id: 101854
+title_lang: fr
+title: Portrait de famille, dit aussi La Famille Bellelli
+names:
+  - lang: de
+    role: translation
+    text: Die Bellelli Familie
+  - lang: it
+    role: translation
+    text: La famiglia Bellelli
+  - lang: ko
+    role: translation
+    text: 벨렐리 가족
+  - lang: ru
+    role: translation
+    text: Семья Беллелли (Семейный портрет)
+  - lang: en
+    role: translation
+    text: The Bellelli Family
+creator: edgar-degas
+created: 1858/1869
+materials: [oil paint, canvas]
+dimensions: [200, 253]
+institution: musee-d-orsay
+inventory_number: RF 2210
+web_url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+wikidata_id: Q2622172
+metadata:
+  sources: [Wikidata Q2622172 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Edgar_Degas_-_The_Bellelli_Family_-_Google_Art_Project.jpg/1280px-Edgar_Degas_-_The_Bellelli_Family_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Edgar_Degas_-_The_Bellelli_Family_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Edgar Degas
+provenance:
+  - owner: artist/edgar-degas
+    acquired: 1858
+    ended: 1917
+    method: creation
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+        note: Date entre 1858 et 1869
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/durand-ruel
+    role: custodian
+    acquired: 1913
+    place: paris
+    label: deposited by the artist
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+        note: "1913-? : Durand-Ruel - Paris, déposé par l'artiste"
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/galerie-georges-petit
+    role: agent
+    numbers:
+      - kind: lot
+        number: "4"
+    acquired: 1918-05-06
+    ended: 1918-05-08
+    method: auction
+    place: paris
+    label: first sale of the Degas studio, 6–8 May 1918, no. 4
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+        note: "6-8 mai 1918 : Paris, Galerie Georges Petit, Première vente de l'atelier Degas, n°4"
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/luxembourg-museum
+    acquired: 1918-05
+    ended: 1929
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the sale with the help of the comte and comtesse de Fels and thanks to René de Gas
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+        note: "1918 : acquis par le Musée du Luxembourg à la première vente de l'atelier Degas avec le concours du comte et de la comtesse de Fels et grâce à René de Gas 1918-1929 : Musée du Luxembourg"
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1929
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+        note: "1929 : attribué au Musée du Louvre par les Musées nationaux 1929-1947 : Musée du Louvre 1947-1986 : Musée du Louvre Jeu de Paume"
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+        note: "1986 : affecté au Musée d'Orsay par le Musée du Louvre"
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2622172
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2622172
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2622172
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2622172
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2622172
+    - url: https://www.musee-orsay.fr/fr/oeuvres/portrait-de-famille-9998
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

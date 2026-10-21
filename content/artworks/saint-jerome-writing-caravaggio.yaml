@@ -1,0 +1,125 @@
+public_id: 102048
+title_lang: it
+title: San Girolamo
+names:
+  - Saint Jerome in his Study
+  - lang: nl
+    role: translation
+    text: De heilige Hieronymus
+  - lang: fr
+    role: translation
+    text: Saint Jérôme
+  - lang: de
+    role: translation
+    text: Hl. Hieronymus
+  - lang: it
+    role: translation
+    text: San Girolamo
+  - lang: es
+    role: translation
+    text: San Jerónimo escribiendo
+  - lang: ja
+    role: translation
+    text: 書斎の聖ヒエロニムス
+  - lang: zh
+    role: translation
+    text: 聖傑洛姆 (卡拉瓦喬)
+creator: caravaggio
+created: c. 1606
+materials: [oil paint, canvas]
+dimensions: [116, 153]
+institution: galleria-borghese
+inventory_number: "056"
+web_url: https://www.collezionegalleriaborghese.it/en/opere/saint-jerome
+wikidata_id: Q2715177
+metadata:
+  sources: [Wikidata Q2715177 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Caravaggio_-_Saint_Jerome_-_Galleria_Borghese.jpg/1280px-Caravaggio_-_Saint_Jerome_-_Galleria_Borghese.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caravaggio_-_Saint_Jerome_-_Galleria_Borghese.jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: person/scipione-borghese
+    acquired: c. 1606
+    ended: 1633
+    method: commission
+    place: rome
+    label: painted for Cardinal Scipione Borghese, says Bellori
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/san-girolamo
+        note: Secondo quanto tramandato da Giovanni Pietro Bellori, il dipinto fu eseguito dall’artista per il cardinale Scipione Borghese
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+  - owner: institution/borghese-collection
+    acquired: 1633
+    ended: 1902
+    method: inheritance
+    direct: true
+    place: rome
+    label: the Borghese family collection — bound by the fideicommissum (Fidecommisso) of 1833 and listed in its inventory
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/san-girolamo
+        note: "Provenienza: Roma, cardinale Scipione Borghese (Bellori 1672, p. 208); Inventario 1693, Stanza II, n. 43; Inventario 1790, Stanza V, n. 19; Inventario Fidecommissario Borghese 1833, p. 33. Acquisto dello Stato, 1902."
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+    records:
+      - date: "1693"
+        room: Stanza II
+        place: rome
+        number: "43"
+        document: Borghese inventory
+      - date: "1790"
+        room: Stanza V
+        place: rome
+        number: "19"
+        document: Borghese inventory
+      - date: "1833"
+        note: Inventario Fidecommissario Borghese 1833, p
+        place: rome
+        document: Inventario Fidecommissario Borghese
+  - owner: institution/galleria-borghese
+    acquired: 1902
+    method: purchase
+    direct: true
+    place: rome
+    label: bought by the Italian State, with the villa and the collection
+    sources:
+      - url: https://www.collezionegalleriaborghese.it/opere/san-girolamo
+        note: Acquisto dello Stato, 1902.
+        source: galleria-borghese-collezione
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2715177
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q2715177
+    - url: https://www.collezionegalleriaborghese.it/opere/san-girolamo
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2715177
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2715177
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2715177
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2715177
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q2715177
+    - url: https://www.collezionegalleriaborghese.it/opere/san-girolamo
+      source: galleria-borghese-collezione
+      accessed: 2026-10-20

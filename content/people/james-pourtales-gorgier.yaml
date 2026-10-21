@@ -1,0 +1,60 @@
+public_id: 101758
+name: James Pourtales-Gorgier
+names:
+  - James Pourtalès
+  - James-Alexandre Pourtalès-Gorgier Comte de
+  - James-Alexandre, Comte de Pourtalès-Gorgier
+  - James-Alexandre de Pourtalès
+  - James Pourtales
+  - James-Alexandre Pourtales-Gorgier Comte de
+  - James-Alexandre de Pourtales
+  - Portales
+  - Count Pourtales
+  - Pourtales
+  - lang: nl
+    role: translation
+    text: James de Pourtales-Gorgier
+  - lang: de
+    role: translation
+    text: James Alexander de Pourtalès-Gorgier
+  - lang: ja
+    role: translation
+    text: ジャム・アレクサンドル・ド・プルタレス
+kind: person
+occupations: [art collector, banker, diplomat]
+birth: 1776-11-28
+death: 1855-03-24
+wikidata_id: Q1679943
+metadata:
+  sources: [Wikidata Q1679943 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/James_Alexandre_de_Pourtal%C3%A8s_%281776-1855%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:James_Alexandre_de_Pourtal%C3%A8s_(1776-1855).jpg
+    license: Public domain
+    credit: Paul Delaroche
+identifiers:
+  bnf: 14977118r
+  gnd: "104243309"
+  hls: "048718"
+  idref: "195938062"
+  lc: no2012160212
+  rkd: "434317"
+  ulan: "500324337"
+  viaf: "22571666"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q1679943
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q1679943
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q1679943
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q1679943

@@ -1,0 +1,126 @@
+public_id: 101971
+title_lang: it
+title: Sacrificio di Isacco
+names:
+  - lang: de
+    role: original
+    text: Die Opferung Isaaks
+  - The Sacrifice of Isaac
+  - lang: en
+    role: translation
+    text: Sacrifice of Isaac
+  - lang: fr
+    role: translation
+    text: Le Sacrifice d'Isaac
+  - lang: es
+    role: translation
+    text: El sacrificio de Isaac
+  - lang: ja
+    role: translation
+    text: イサクの犠牲
+  - lang: zh
+    role: translation
+    text: 以撒的犧牲 (卡拉瓦喬)
+  - lang: ru
+    role: translation
+    text: Жертвоприношението на Исаак
+creator: caravaggio
+created: 1598/1608
+created_label: c. 1600s
+materials: [oil paint, canvas]
+dimensions: [104, 135]
+institution: uffizi-gallery
+inventory_number: 1890 no. 4659
+web_url: https://www.uffizi.it/en/artworks/sacrifice-of-isaac
+wikidata_id: Q2284829
+metadata:
+  sources: [Wikidata Q2284829 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Sacrifice_of_Isaac-Caravaggio_%28Uffizi%29.jpg/1280px-Sacrifice_of_Isaac-Caravaggio_%28Uffizi%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sacrifice_of_Isaac-Caravaggio_(Uffizi).jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: person/pope-urban-viii
+    acquired: 1603-05-20
+    method: commission
+    place: rome
+    label: commissioned by Cardinal Maffeo Barberini (later Pope Urban VIII), says Bellori; the Barberini archive records payments from 20 May 1603 to 8 January 1604; in the Barberini inventory by 1608
+    sources:
+      - url: https://it.wikipedia.org/wiki/Sacrificio_di_Isacco_%28Caravaggio%29
+        note: Secondo il biografo Giovanni Bellori, il dipinto venne commissionato dal cardinale Maffeo Barberini, futuro papa Urbano VIII. I documenti dell'archivio Barberini raccolgono i pagamenti effettuati al pittore, iniziati il 20 maggio 1603 e terminati l'8 gennaio 1604.
+        source: wikipedia-it-sacrificio-isacco-caravaggio
+        accessed: 2026-10-20
+    records:
+      - date: "1608"
+        place: rome
+        document: Barberini inventory
+  - owner_label: the Barberini family
+    method: inheritance
+    place: rome
+    sources:
+      - url: https://it.wikipedia.org/wiki/Sacrificio_di_Isacco_%28Caravaggio%29
+        note: proveniva dalla collezione della famiglia Sciarra di Roma, e ancora prima dalla Collezione Barberini, nel cui inventario compare già nel 1608.
+        source: wikipedia-it-sacrificio-isacco-caravaggio
+        accessed: 2026-10-20
+  - owner_label: the Colonna Sciarra family, Rome
+    place: rome
+    sources:
+      - url: https://www.uffizi.it/en/artworks/sacrifice-of-isaac
+        note: from a company that had acquired part of the property of the Roman Prince’s family of Colonna Sciarra in the late 19th century.
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner_label: a company that acquired part of the Colonna Sciarra property
+    acquired: late 19th century
+    method: purchase
+    sources:
+      - url: https://www.uffizi.it/en/artworks/sacrifice-of-isaac
+        note: a company that had acquired part of the property of the Roman Prince’s family of Colonna Sciarra in the late 19th century
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner_label: John Fairfax Murray
+    method: purchase
+    label: bought it as a work by Gherardo delle Notti
+    sources:
+      - url: https://www.uffizi.it/en/artworks/sacrifice-of-isaac
+        note: John Fairfax Murray, who purchased it as a work made by Gherardo delle Notti
+        source: uffizi-artworks
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1917-07
+    method: gift
+    direct: true
+    place: florence
+    sources:
+      - url: https://www.uffizi.it/en/artworks/sacrifice-of-isaac
+        note: The painting was donated to the Uffizi in July 1917 by John Fairfax Murray
+        source: uffizi-artworks
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2284829
+  created:
+    - url: https://www.uffizi.it/en/artworks/sacrifice-of-isaac
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2284829
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2284829
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2284829
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2284829
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/sacrifice-of-isaac
+      source: uffizi-artworks
+      accessed: 2026-10-20

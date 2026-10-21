@@ -1,0 +1,46 @@
+public_id: 102188
+name: Sainte Chapelle
+names:
+  - Sainte-Chapelle
+  - lang: ja
+    role: translation
+    text: サント・シャペル
+  - lang: zh
+    role: translation
+    text: 聖禮拜堂
+  - lang: ko
+    role: translation
+    text: 생트샤펠
+  - lang: ru
+    role: translation
+    text: Сент-Шапель
+founded: 1245
+place: paris
+location: [2.34503, 48.85537]
+website_url: https://www.sainte-chapelle.fr/
+wikidata_id: Q193193
+metadata:
+  sources: [Wikidata Q193193 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/33/Szensapel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Szensapel.jpg
+    license: CC BY 2.5
+    credit: Mathae
+identifiers:
+  gnd: 4389954-7
+  lc: n50079460
+  ulan: "500310026"
+  viaf: "312656055"
+sources:
+  place:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q193193
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q193193
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q193193

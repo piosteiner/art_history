@@ -1,0 +1,45 @@
+public_id: 102190
+name: Enrico degli Scrovegni
+given_name: Enrico degli
+family_name: Scrovegni
+names:
+  - lang: fr
+    role: translation
+    text: Enrico Scrovegni
+  - lang: ru
+    role: translation
+    text: Энрико Скровеньи
+kind: person
+occupations: [banker]
+birth: 13th century
+death: 1336
+wikidata_id: Q5379610
+metadata:
+  sources: [Wikidata Q5379610 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Giotto%2C_scrovegni%2C_enrico_scrovegni_dona_agli_angeli_una_riproduzione_della_cappella_degli_scrovegni_%281302%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giotto,_scrovegni,_enrico_scrovegni_dona_agli_angeli_una_riproduzione_della_cappella_degli_scrovegni_(1302).jpg
+    license: Public domain
+identifiers:
+  bnf: 15945802b
+  gnd: "136981054"
+  idref: "135311926"
+  lc: n2007064052
+  viaf: "167855341"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q5379610
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q5379610
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q5379610
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q5379610

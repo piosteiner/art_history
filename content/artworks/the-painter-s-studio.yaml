@@ -1,0 +1,175 @@
+public_id: 101844
+title_lang: fr
+title: L'Atelier du peintre
+names:
+  - lang: en
+    role: original
+    text: The Painter's Studio
+  - L'Atelier de l'artiste
+  - The Painter’s Studio
+  - lang: de
+    role: translation
+    text: Das Atelier des Künstlers
+  - lang: it
+    role: translation
+    text: L'atelier dell'artista
+  - lang: es
+    role: translation
+    text: El taller del pintor
+  - lang: ja
+    role: translation
+    text: 画家のアトリエ
+  - lang: zh
+    role: translation
+    text: 畫家的工作室
+  - lang: ko
+    role: translation
+    text: 화가의 아틀리에
+  - lang: ru
+    role: translation
+    text: Мастерская художника
+creator: gustave-courbet
+created: 1854/1855
+materials: [oil paint, canvas]
+dimensions: [361, 598]
+institution: musee-d-orsay
+inventory_number: RF 2257
+web_url: https://www.wga.hu/html_m/c/courbet/1/courb111.html
+wikidata_id: Q1167178
+metadata:
+  sources: [Wikidata Q1167178 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Courbet_LAtelier_du_peintre.jpg/1280px-Courbet_LAtelier_du_peintre.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Courbet_LAtelier_du_peintre.jpg
+    license: Public domain
+    credit: Gustave Courbet
+provenance:
+  - owner: artist/gustave-courbet
+    acquired: 1854
+    ended: 1877
+    method: creation
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+        note: Date entre 1854 et 1855
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: person/juliette-courbet
+    numbers:
+      - kind: lot
+        number: "8"
+    acquired: 1877
+    ended: 1881-12-09
+    method: inheritance
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+        note: jusqu'en 1881, dans la collection Juliette Courbet, soeur de l'artiste 1881, Vente de l'atelier de l'artiste, Paris, Hôtel Drouot, 9 décembre 1881, n°8
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Galerie Haro
+    role: dealer
+    numbers:
+      - kind: lot
+        number: "108"
+    acquired: 1881-12-09
+    ended: 1897-04-02
+    method: auction
+    direct: true
+    place: paris
+    label: bought at the studio sale (Hôtel Drouot) for 21,000 francs; Haro sale, 2 April 1897, no. 108
+    price:
+      amount: 21000
+      currency: AFRF
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+        note: jusqu'en 1897, Galerie Haro, acquis lors de la précédente pour 21 000 fr. 1897, Vente Haro, Paris, galerie Haro, 2 avril 1897, n°108
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Victor Desfossés
+    numbers:
+      - kind: lot
+        number: "6"
+    acquired: 1897-04-02
+    ended: 1899-04-26
+    method: auction
+    direct: true
+    place: paris
+    label: his sale after death, Paris, 26 April 1899, no. 6
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+        note: de 1897 à 1899, dans la collection Victor Desfossès (acquis à la vente Haro) 1899, Vente posthume Victor Desfossés, Paris, organisme inconnu, 26 avril 1899, n°6
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Mme Victor Desfossés
+    acquired: 1899-04-26
+    ended: 1919
+    method: auction
+    direct: true
+    place: paris
+    label: bought in at her husband's sale; used as a backdrop in the amateur theatre of the Hôtel Desfossés, 6 rue Galilée
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+        note: de 1899 à 1919, dans la collection Mme Victor Desfossés (rachat à la vente posthume de son mari ; sert de toile de fond dans le théâtre d'amateurs de l'Hôtel Desfossés, 6 rue Galilée, Paris)
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner_label: Galerie Barbazanges
+    role: dealer
+    acquired: 1919
+    ended: 1920
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+        note: de 1919 à 1920, galerie Barbazanges
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1920
+    method: purchase
+    direct: true
+    place: paris
+    label: bought by the Musées nationaux with a public subscription and the Société des Amis du Louvre
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+        note: 1920, acquis par les Musées nationaux pour le musée du Louvre, avec l'aide d'une souscription publique et de la Société des Amis du Louvre
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-d-orsay
+    acquired: 1986
+    method: transfer
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+        note: 1986, affecté au musée d'Orsay, Paris
+        source: musee-d-orsay-collections
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1167178
+  created:
+    - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1167178
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1167178
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1167178
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1167178
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q1167178
+    - url: https://www.musee-orsay.fr/fr/oeuvres/latelier-du-peintre-927
+      source: musee-d-orsay-collections
+      accessed: 2026-10-20

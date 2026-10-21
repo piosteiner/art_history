@@ -1,0 +1,41 @@
+public_id: 101911
+name: Palermo
+names:
+  - Palermo, Italy
+  - lang: fr
+    role: translation
+    text: Palerme
+  - lang: ja
+    role: translation
+    text: パレルモ
+  - lang: zh
+    role: translation
+    text: 巴勒莫
+  - lang: ko
+    role: translation
+    text: 팔레르모
+  - lang: ru
+    role: translation
+    text: Палермо
+kind: settlement
+parent: metropolitan-city-of-palermo
+country_code: IT
+location: [13.36126, 38.11566]
+wikidata_id: Q2656
+metadata:
+  sources: [Wikidata Q2656 (retrieved 2026-10-20)]
+identifiers:
+  gnd: 4044402-8
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q2656
+  parent:
+    - accessed: 2026-10-20
+      property: P131
+      wikidata: Q2656
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q2656

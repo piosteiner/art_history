@@ -1,0 +1,112 @@
+public_id: 101965
+title_lang: it
+title: Maestà di Ognissanti
+names:
+  - lang: en
+    role: original
+    text: Madonna Enthroned (Ognissanti Madonna)
+  - Ognissanti Madonna
+  - lang: en
+    role: original
+    text: Madonna Enthroned
+  - lang: fr
+    role: translation
+    text: Vierge d'Ognissanti
+  - lang: de
+    role: translation
+    text: Ognissanti-Madonna
+  - lang: it
+    role: original
+    text: Maestà di Ognissanti
+  - lang: ja
+    role: translation
+    text: オンニサンティの聖母
+  - lang: zh
+    role: translation
+    text: 聖像 (喬托)
+  - lang: ru
+    role: translation
+    text: Мадонна Оньиссанти
+creator: giotto
+created: 1295/1310
+created_label: c. 1300s
+materials: [tempera, panel, gold]
+dimensions: [325, 204]
+institution: uffizi-gallery
+inventory_number: 1890 no. 8344
+web_url: https://www.uffizi.it/en/artworks/virgin-and-child-enthroned-surrounded-by-angels-and-saints-ognissanti-maesta
+wikidata_id: Q2016193
+metadata:
+  sources: [Wikidata Q2016193 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Madonna_di_Ognissanti_by_Giotto.jpg/1280px-Madonna_di_Ognissanti_by_Giotto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Madonna_di_Ognissanti_by_Giotto.jpg
+    license: Public domain
+    credit: Giotto
+provenance:
+  - owner: institution/ognissanti-florence
+    acquired: c. 1300
+    ended: 1810
+    method: commission
+    place: florence
+    label: painted for the church of the Humiliati, Ognissanti; first mentioned in 1418, when its altar (the last on the right) was ceded to one Francesco di Benozzo
+    sources:
+      - url: https://it.wikipedia.org/wiki/Maest%C3%A0_di_Ognissanti
+        note: La prima menzione dell'opera risale al 1418 quando l'altare dove si trovava in Ognissanti, l'ultimo a destra, veniva ceduto a un tale Francesco di Benozzo.
+        source: wikipedia-it-maesta-ognissanti
+        accessed: 2026-10-20
+    records:
+      - kind: sighting
+        date: "1418"
+        note: the last altar on the right
+        place: florence
+        document: cession of the altar
+  - owner: institution/galleria-dell-accademia-florence
+    acquired: 1810
+    ended: 1919
+    method: confiscation
+    place: florence
+    label: secularised in 1810, taken from the church to the paintings depots forming at the Accademia
+    sources:
+      - url: https://it.wikipedia.org/wiki/Maest%C3%A0_di_Ognissanti
+        note: Nel 1810 la pala venne secolarizzata, togliendola dalla chiesa e destinandola ai depositi di dipinti che si andavano costituendo presso la Galleria dell'Accademia, passando nel 1919 agli Uffizi.
+        source: wikipedia-it-maesta-ognissanti
+        accessed: 2026-10-20
+  - owner: institution/uffizi-gallery
+    acquired: 1919
+    method: transfer
+    direct: true
+    place: florence
+    sources:
+      - url: https://it.wikipedia.org/wiki/Maest%C3%A0_di_Ognissanti
+        note: passando nel 1919 agli Uffizi.
+        source: wikipedia-it-maesta-ognissanti
+        accessed: 2026-10-20
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q2016193
+  created:
+    - url: https://www.uffizi.it/en/artworks/virgin-and-child-enthroned-surrounded-by-angels-and-saints-ognissanti-maesta
+      source: uffizi-artworks
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q2016193
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2016193
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q2016193
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q2016193
+  inventory_number:
+    - url: https://www.uffizi.it/en/artworks/virgin-and-child-enthroned-surrounded-by-angels-and-saints-ognissanti-maesta
+      source: uffizi-artworks
+      accessed: 2026-10-20

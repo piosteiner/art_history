@@ -1,0 +1,36 @@
+public_id: 101750
+name: Constant André Say
+given_name: Constant André
+family_name: Say
+kind: person
+occupations: [industrialist]
+birth: 1816-04-11
+death: 1871-08-17
+wikidata_id: Q16041382
+metadata:
+  sources: [Wikidata Q16041382 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Constant_Say._Politique%2C_%C3%A9conomiste_-_btv1b53141529t.jpg/1280px-Constant_Say._Politique%2C_%C3%A9conomiste_-_btv1b53141529t.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Constant_Say._Politique,_%C3%A9conomiste_-_btv1b53141529t.jpg
+    license: Public domain
+    credit: Atelier Nadar. Photographe
+identifiers:
+  bnf: 10924284h
+  viaf: "102373224"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q16041382
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q16041382
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q16041382
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q16041382

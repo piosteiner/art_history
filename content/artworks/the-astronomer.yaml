@@ -1,0 +1,333 @@
+public_id: 101701
+title_lang: fr
+title: L'Astronome
+names:
+  - lang: en
+    role: original
+    text: The Astronomer
+  - The Astrologer
+  - lang: nl
+    role: translation
+    text: De astronoom
+  - lang: fr
+    role: translation
+    text: L'Astronome
+  - lang: it
+    role: translation
+    text: Astronomo
+  - lang: es
+    role: translation
+    text: El astrónomo
+  - lang: ja
+    role: translation
+    text: 天文学者
+  - lang: zh
+    role: translation
+    text: 天文學家 (弗美爾)
+  - lang: ko
+    role: translation
+    text: 천문학자
+  - lang: ru
+    role: translation
+    text: Астроном
+creator: johannes-vermeer
+created: 1668
+materials: [oil paint, canvas]
+dimensions: [50.8, 46.3, 6.7]
+institution: department-of-paintings-of-the-louvre
+inventory_number: RF 1983-28
+web_url: http://www.louvre.fr/oeuvre-notices/l-astronome
+wikidata_id: Q544315
+metadata:
+  sources: [Wikidata Q544315 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Johannes_Vermeer_-_The_Astronomer_-_1668.jpg/1280px-Johannes_Vermeer_-_The_Astronomer_-_1668.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Johannes_Vermeer_-_The_Astronomer_-_1668.jpg
+    license: Public domain
+    credit: Johannes Vermeer
+provenance:
+  - owner: artist/johannes-vermeer
+    acquired: 1668
+    method: creation
+    place: delft
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: "Date de création/fabrication : XVIIe siècle et 3e quart du XVIIe siècle (1668 et 1673)"
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: unnamed owner (perhaps part of the cabinet of Adriaen Paets, 1657–1712)
+    numbers:
+      - kind: lot
+        number: "10"
+    ended: 1713-04-27
+    method: auction
+    place: rotterdam
+    label: sale, Rotterdam, 27 April 1713, no. 10 (“Savant mathématicien”), with its pendant no. 11 — this one or the Frankfurt Geographer
+    certainty: possible
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: Vente (peut-être une partie du Cabinet d’Adriaen Paets [1657-1712], le mécène du peintre A. van der Werff, vendu pour l’essentiel la veille), Rotterdam, 27 IV 1713, n° 10 (Savant mathématicien), avec pendant n° 11 (le R.F. 1983-28 ou le tableau de Francfort ; mention trop laconique).
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Hendrick Sorgh, art dealer in Amsterdam (grandson of the painter Sorgh)
+    numbers:
+      - kind: lot
+        number: "3"
+    ended: 1720-03-28
+    place: amsterdam
+    label: his sale after death, Amsterdam, 28 March 1720, no. 3, with pendant no. 4 (the two cannot be told apart)
+    certainty: possible
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: H. Sorgh, petit-fils du peintre Sorgh et marchand d’art à Amsterdam ; sa vente après décès, Amsterdam, 28 III 1720, n° 3, avec pendant, n° 4 (différenciation des deux tableaux impossible).
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Govert Looten
+    numbers:
+      - kind: lot
+        number: "6"
+    ended: 31 March 1729
+    place: amsterdam
+    label: his sale after death, Amsterdam, 31 March 1729, no. 6 (two Astrologers, cannot be told apart)
+    certainty: possible
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: G. Looten ; sa vente après décès, Amsterdam, 31 III 1729, n° 6 (deux Astrologues, différenciation impossible).
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Jacob Crammer Simonsz.
+    numbers:
+      - kind: lot
+        number: "18"
+    ended: 1778-11-25
+    place: amsterdam
+    label: his sale after death, Amsterdam, 25 November 1778, no. 18 (“Un philosophe”, whose description fits this painting), with pendant no. 19 (the Frankfurt painting)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: Jabob Crammer Simonsz., Amsterdam ; sa vente après décès, Amsterdam, 25 XI 1778, n° 18 (Un philosophe, dont la description correspond au R.F. 1983-28), avec pendant, n° 19 (Un philosophe, tableau de Francfort).
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Jean Étienne Fizeaux, Amsterdam
+    ended: 1784
+    place: amsterdam
+    label: owned it when it was engraved in 1784 for Jean-Baptiste-Pierre Lebrun
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: J. E. Fizeaux, Amsterdam (tableau en sa possession lorsqu’il est gravé en 1784 à la demande de J.-B. P. Lebrun qui ne le publie qu’en 1792
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Alexandre-Joseph Paillet, dealer in Paris, with Pieter Fouquet the younger, dealer in Amsterdam
+    role: dealer
+    acquired: 1784
+    place: paris
+    label: entrusted (or sold?) by Fizeaux's widow; offered to Louis XVI in 1785 (no purchase), returned to Fouquet, who had advanced the money
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: confié (ou vendu ?) par la veuve de Fizeaux à A. J. Paillet, marchand d’art à Paris et rival de Lebrun (avec le pendant de Francfort) en partenariat avec P. Fouquet le jeune, marchand d’art à Amsterdam, 1784 ; proposé à Louis XVI par Paillet, 1785 (projet d’achat resté sans suite) ; rendu par Paillet à Fouquet
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Jan Danser Nijman, Amsterdam
+    numbers:
+      - kind: lot
+        number: "167"
+    ended: 1797-08-16
+    place: amsterdam
+    label: his sale after death, Amsterdam, 16 August 1797, no. 167, with pendant no. 168
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: Jan Danser Nijman, Amsterdam […] ; sa vente après décès, Amsterdam, 16 VIII 1797, n° 167 (Un philosophe [= R.F. 1983-28]), avec pendant, n° 168 (tableau de Francfort)
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Jan Gildemeester
+    numbers:
+      - kind: lot
+        number: "139"
+    ended: 1800-06-11
+    place: amsterdam
+    label: his sale after death, Amsterdam, 11 June 1800, no. 139 (“Un philosophe en solitude”, now parted from its pendant); bought by Labouchère, probably a dealer
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: J. Gildemeester ; sa vente après décès, Amsterdam, 11 VI 1800, n° 139 (Un philosophe en solitude, désormais séparé de son pendant) ; Labouchère, sans doute un marchand d’art.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Labouchère
+    role: dealer
+    acquired: 1800-06-11
+    place: amsterdam
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: Labouchère, sans doute un marchand d’art.
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: J. Gibbons (1777–1851)
+    numbers:
+      - kind: lot
+        number: "31"
+    place: bristol
+    label: sale, probably at Bristol, 7 October 1820, no. 31 — not sold or bought in, lent by him to an exhibition at Birmingham in 1828
+    certainty: probable
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: Vente J. Gibbons (1777-1851), sans doute à Bristol, 7 X 1820, n° 31 ; non vendu ou racheté car prêté par J. Gibbons à une exposition à Birmingham, 1828 (Astrologue)
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: W. Gibbons (probably a younger brother of J. Gibbons)
+    numbers:
+      - kind: lot
+        number: "52"
+    ended: 1857-06-18
+    place: london
+    label: his sale after death, London, 18 June 1857, no. 52 (“Philosophe”)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: vente après décès de W. Gibbons, sans doute un plus jeune frère de J. Gibbons, Londres, 18 VI 1857, n° 52 (Philosophe)
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: Tate (perhaps Th. Moss Tate of Liverpool)
+    numbers:
+      - kind: lot
+        number: "73"
+    ended: 1863
+    place: london
+    label: sale, London, Christie's, 1863, no. 73
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: Tate, sans prénom indiqué (peut-être Th. Moss Tate, de Liverpool […]) plutôt que H. Tate (1819-1899) […] ; vente, Londres, Christie, 1863, n° 73
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/leopold-double
+    numbers:
+      - kind: lot
+        number: "17"
+    acquired: 1866/1867
+    ended: 1881-05-30
+    place: paris
+    label: bought for him by Théophile Thoré, late 1866 or early January 1867; his sale after death, Paris, 30 May 1881, no. 17 (“Astronome”)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: L. Double (1812-1881), Paris (acheté par Thoré pour ce collectionneur, fin 1866 ou début janvier 1867, cf. Jowell, 2003, p. 91) ; sa vente après décès, Paris, 30 V 1881, n° 17 (Astronome)
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/theophile-thore-burger
+    role: agent
+    acquired: 1866/1867
+    ended: 1867-01
+    method: purchase
+    place: paris
+    label: bought it for Léopold Double
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: acheté par Thoré pour ce collectionneur, fin 1866 ou début janvier 1867
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/leon-gauchez
+    role: dealer
+    acquired: 1881-05-30
+    method: auction
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: L. Gauchez, marchand d’art à Paris
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/alphonse-james-de-rothschild
+    acquired: before 1888
+    ended: 1905
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: acquis de ce dernier par le baron Alphonse de Rothschild (1827-1905), Paris (cité en possession de ce dernier en 1888, cf. Havard)
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/edouard-alphonse-james-de-rothschild
+    acquired: 1905
+    ended: 1940
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: son fils Édouard (1868-1949), Paris
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner_label: German occupation authorities
+    role: possessor
+    acquired: 1940
+    ended: 1945
+    method: confiscation
+    direct: true
+    place: paris
+    label: seized for Hitler's museum at Linz; recovered by the Allies in 1945
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: saisi par les autorités allemandes en 1940 pendant la Deuxième Guerre mondiale pour le musée hitlérien de Linz ; récupéré par les Alliés en 1945
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/edouard-alphonse-james-de-rothschild
+    acquired: 1946
+    ended: 1949
+    method: restitution
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: récupéré par les Alliés en 1945 puis restitué au baron Édouard, 1946
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: person/guy-de-rothschild
+    acquired: 1949
+    method: inheritance
+    direct: true
+    place: paris
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: Guy de Rothschild (1909-2007), fils d’Édouard, Paris
+        source: louvre-collections
+        accessed: 2026-10-20
+  - owner: institution/musee-du-louvre
+    acquired: 1982/1983
+    method: in_lieu
+    direct: true
+    place: paris
+    label: accepted from Guy de Rothschild in payment of transfer duties (“dation en paiement de droits de mutation”)
+    sources:
+      - url: https://collections.louvre.fr/ark:/53355/cl010064324
+        note: acquis de ce dernier par dation en paiement de droits de mutation, 1982-1983.
+        source: louvre-collections
+        accessed: 2026-10-20
+identifiers:
+  gnd: 4563935-8
+  viaf: "175620360"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q544315
+  created:
+    - url: https://collections.louvre.fr/ark:/53355/cl010064324
+      source: louvre-collections
+      accessed: 2026-10-20
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q544315
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q544315
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q544315
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q544315
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q544315
+    - url: https://collections.louvre.fr/ark:/53355/cl010064324
+      source: louvre-collections
+      accessed: 2026-10-20

@@ -1,0 +1,65 @@
+public_id: 101922
+name: Ferdinando I de' Medici
+names:
+  - granduca di Toscana Ferdinando I
+  - Grand Duke of Tuscany Ferdinand I
+  - Grand-Duke of Tuscany Ferdinando I
+  - Ferdinando de, Grand-Duke of Tuscany Medici
+  - lang: fr
+    role: translation
+    text: Ferdinand Ier de Médicis
+  - lang: de
+    role: translation
+    text: Ferdinando I. de’ Medici
+  - lang: es
+    role: translation
+    text: Fernando I de Médici
+  - lang: ja
+    role: translation
+    text: フェルディナンド1世・デ・メディチ
+  - lang: zh
+    role: translation
+    text: 斐迪南一世·德·美第奇
+  - lang: ko
+    role: translation
+    text: 페르디난도 1세 데 메디치
+  - lang: ru
+    role: translation
+    text: Фердинанд I
+kind: person
+occupations: [Catholic priest, politician, patron of the arts]
+birth: 1549-08-09
+death: 1609-02-17
+wikidata_id: Q297483
+metadata:
+  sources: [Wikidata Q297483 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Pulzone%2C_Scipione_-_Ferdinando_I_de%27_Medici%2C_granduca_di_Toscana_-_1590.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pulzone,_Scipione_-_Ferdinando_I_de%27_Medici,_granduca_di_Toscana_-_1590.jpg
+    license: Public domain
+    credit: Scipione Pulzone
+identifiers:
+  bnf: "135730745"
+  gnd: "118876368"
+  idref: "052664074"
+  lc: n88019319
+  rkd: "441240"
+  ulan: "500260482"
+  viaf: "292820183"
+sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P31
+      wikidata: Q297483
+  birth:
+    - accessed: 2026-10-20
+      property: P569
+      wikidata: Q297483
+  death:
+    - accessed: 2026-10-20
+      property: P570
+      wikidata: Q297483
+  occupations:
+    - accessed: 2026-10-20
+      property: P106
+      wikidata: Q297483

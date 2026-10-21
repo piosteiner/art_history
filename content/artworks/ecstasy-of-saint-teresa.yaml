@@ -1,0 +1,106 @@
+public_id: 102153
+title_lang: it
+title: Estasi di santa Teresa d'Avila
+names:
+  - Ecstasy of St. Theresa
+  - The Ecstasy of Saint Teresa
+  - Ecstasy of Saint Theresa
+  - The Ecstasy of Saint Theresa
+  - lang: nl
+    role: translation
+    text: Extase van Theresia
+  - lang: fr
+    role: translation
+    text: L'Extase de sainte Thérèse
+  - lang: de
+    role: translation
+    text: Verzückung der heiligen Theresa
+  - lang: it
+    role: translation
+    text: Estasi di santa Teresa d'Avila
+  - lang: es
+    role: translation
+    text: Éxtasis de Santa Teresa
+  - lang: ja
+    role: translation
+    text: 聖テレジアの法悦
+  - lang: zh
+    role: translation
+    text: 圣女大德兰的神魂超拔
+  - lang: ko
+    role: translation
+    text: 성 테레사의 법열
+  - lang: ru
+    role: translation
+    text: Экстаз святой Терезы
+creator: gian-lorenzo-bernini
+created: 1645/1652
+created_label: c. 1647
+materials: [marble]
+dimensions: [350]
+institution: santa-maria-della-vittoria
+location: [12.49417, 41.90472]
+wikidata_id: Q1333433
+metadata:
+  sources: [Wikidata Q1333433 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/rome
+    period: 1645/1652
+    period_label: c. 1647
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Ecstasy_of_Saint_Teresa_September_2015-2a.jpg/1280px-Ecstasy_of_Saint_Teresa_September_2015-2a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ecstasy_of_Saint_Teresa_September_2015-2a.jpg
+    license: CC BY-SA 4.0
+    credit: Gian Lorenzo Bernini
+provenance:
+  - owner: person/federico-cornaro
+    acquired: 1647
+    method: commission
+    place: rome
+    label: the Venetian cardinal's chapel — built 1647–1652, when Innocent X preferred Borromini and Algardi to Bernini
+    sources:
+      - url: https://it.wikipedia.org/wiki/Estasi_di_santa_Teresa_d%27Avila
+        note: La cappella fu eseguita da Bernini su commissione del cardinale veneziano Federico Cornaro […] La costruzione della cappella […] fu portata avanti tra il 1647 e il 1652.
+        source: wikipedia-it-estasi-santa-teresa
+        accessed: 2026-10-20
+  - owner: institution/santa-maria-della-vittoria
+    acquired: 1652
+    place: rome
+    label: in the Cornaro Chapel
+    sources:
+      - url: https://it.wikipedia.org/wiki/Estasi_di_santa_Teresa_d%27Avila
+        note: collocata nella cappella Cornaro, presso la chiesa di Santa Maria della Vittoria, a Roma.
+        source: wikipedia-it-estasi-santa-teresa
+        accessed: 2026-10-20
+identifiers:
+  gnd: 7703540-9
+  viaf: "192437715"
+sources:
+  names:
+    - accessed: 2026-10-20
+      wikidata: Q1333433
+  created:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q1333433
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q1333433
+  location:
+    - accessed: 2026-10-20
+      property: P625
+      wikidata: Q1333433
+  materials:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q1333433
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q1333433
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q1333433
