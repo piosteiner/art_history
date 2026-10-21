@@ -33,6 +33,7 @@ const CHECKS = {
   event_without_place: { title: 'Event without a place', fix: 'Set its place (the city), or an exact spot or area — otherwise it can\'t appear on the map.' },
   type_doubtful: { title: 'Perhaps the wrong kind of entry', fix: 'If it is: “Change type…” on its page moves it (a person entered as an institution) — with its relationships, images and sources. Otherwise: Mark as OK.' },
   title_translation: { title: 'Title is not an official translation', fix: 'Look up the title the holding institution uses (its online collection); if it has one, use it, set “official translation” and cite the page with the marker.' },
+  artwork_without_web_page: { title: 'Artwork without a web page', fix: 'Add its page at the museum or collection that holds it (field “Web page”, under the inventory number) — from the museum’s online collection; Enrich offers Wikidata’s “described at URL” where there is one.' },
   loan_owner: { title: 'On loan — but who lent it?', fix: 'Add the owner (the lender) as the last step of the provenance — the institution where it is now only holds it.' },
   citation_outdated: { title: 'Changed since cited', fix: 'The value changed after the source was cited: check the source — if it still says so, “Yes, it still does” in its sources; if not, remove the citation or cite the source of the new value.' },
   unlinked_term: { title: 'Type or material that is no glossary term', fix: 'Sort these out on “Types and materials to sort out” (Quality → batch pages): replace by terms, move a phrase to the medium, or make it a term.' },
@@ -207,7 +208,7 @@ const BATCH = {
   auto_created: { href: '/quality/batch/wikidata?only=auto', label: 'Find Wikidata items for these…' },
 };
 // checks the Enrich page helps with
-const ENRICH = ['weakly_sourced', 'no_wikidata_id', 'artist_missing_dates', 'missing_romanization', 'institution_without_place', 'auto_created'];
+const ENRICH = ['artwork_without_web_page', 'weakly_sourced', 'no_wikidata_id', 'artist_missing_dates', 'missing_romanization', 'institution_without_place', 'auto_created'];
 
 function ackForm(r, back, acked) {
   return acked

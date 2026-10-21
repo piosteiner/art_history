@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### Quality: artworks without a web page (migration 124)
+- **What:** a new check `artwork_without_web_page` (warning) in `quality_issues_live` — every artwork without
+  `web_url` (its page at the museum or collection); title, fix and the Enrich link (Wikidata P973) on the Quality page.
+  99 of 353 artworks at the start. E2E `web-page-check.spec.js`.
+- **Why:** owner: "it's really important to have a web page for each artwork".
+- **Revert:** recreate `quality_issues_live` without the branch (`pg_get_viewdef`, drop the last UNION ALL); delete
+  `124_…` from `schema_migrations`.
+
 ### Fix: the duplicate check weighs only its candidate pairs (migration 123) — the admin dashboard loads again
 - **What:** `possible_duplicate` in `quality_issues_live` fetches the candidate pairs with their facts first (subquery
   with `OFFSET 0`) and only then runs `dup_maybe()` / `dup_score()`. The planner had joined `dup_facts` with itself
