@@ -4,7 +4,9 @@
 const { test, expect, adminChange, sql } = require('./helpers');
 
 const cleanup = () => sql(`DELETE FROM artists WHERE slug IN ('test-inc-twin-a', 'test-inc-twin-b');
+  DELETE FROM artworks WHERE slug = 'test-inc-made-in-arles';
   UPDATE artists SET name = 'Vincent van Gogh' WHERE slug = 'vincent-van-gogh';
+  UPDATE places SET name = 'France' WHERE slug = 'france';
   DELETE FROM derived_drift;`);
 test.beforeEach(cleanup);
 test.afterAll(cleanup);
@@ -22,6 +24,20 @@ test('a change queues the entry and what depends on it; only those are computed 
   // the global part (graph, words) follows at its own pace; refresh_quality() waits for everything
   sql('SELECT refresh_quality()');
   expect(sql('SELECT quality_fresh()')).toBe('t');
+});
+
+test('a link seconds old counts: renaming the country right after reaches a work made in one of its towns', async () => {
+  // the stored graph is rebuilt by the global part (up to half a minute later) — the neighbours come from the
+  // relationships as they are too, and a place stands for every place inside it
+  adminChange(`INSERT INTO artworks (slug, title) VALUES ('test-inc-made-in-arles', 'Test Made in Arles');
+    INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+      VALUES ('artwork', entity_id('artwork', 'test-inc-made-in-arles'), 'created_in', 'place', entity_id('place', 'arles'))`);
+  await settled();
+  const madeIn = () => sql(`SELECT text FROM entry_search_fields_stored WHERE type = 'artwork' AND id = entity_id('artwork', 'test-inc-made-in-arles') AND label = 'Made in'`);
+  expect(madeIn()).toBe('Arles, France');
+  adminChange("UPDATE places SET name = 'France (test)' WHERE slug = 'france'");
+  await settled();
+  expect(madeIn()).toBe('Arles, France (test)');
 });
 
 test('duplicates: a new twin is weighed against its candidates only; a rename away removes the pair on both sides', async ({ userA }) => {

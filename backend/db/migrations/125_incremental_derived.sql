@@ -137,8 +137,9 @@ BEGIN
   END LOOP;
 END $$;
 
--- the entries whose findings may depend on an entry: linked (the stored graph, both ways — before the global part
--- rebuilds it, it still has the links a change removed), parts and children, an artist's works, a museum's works,
+-- the entries whose findings may depend on an entry: linked — through the relationships as they are now and the
+-- stored graph (rebuilt by the global part up to half a minute later: it still has the links a change removed, and
+-- the derived ones), both ways —, parts and children, an artist's works, a museum's works,
 -- holders' works, entries citing a source, works of a type or material. A place counts with all places inside it
 -- (recursive): "Made in: Edo, Japan" names the ancestors, so renaming Japan changes the fields of works made in Edo.
 CREATE FUNCTION derived_neighbours(t entity_type, i bigint) RETURNS TABLE (type entity_type, id bigint)
@@ -148,9 +149,13 @@ LANGUAGE sql STABLE SET search_path = public, pg_temp AS $$
     UNION SELECT x.id FROM places x JOIN tree ON x.parent_id = tree.id)
   SELECT g.object_type, g.object_id FROM graph_links g WHERE g.subject_type = t AND g.subject_id = i
   UNION SELECT g.subject_type, g.subject_id FROM graph_links g WHERE g.object_type = t AND g.object_id = i
+  UNION SELECT r.object_type, r.object_id FROM relationships r WHERE r.subject_type = t AND r.subject_id = i
+  UNION SELECT r.subject_type, r.subject_id FROM relationships r WHERE r.object_type = t AND r.object_id = i
   UNION SELECT 'place', tree.id FROM tree WHERE tree.id <> i
   UNION SELECT g.subject_type, g.subject_id FROM tree JOIN graph_links g ON g.object_type = 'place' AND g.object_id = tree.id
   UNION SELECT g.object_type, g.object_id FROM tree JOIN graph_links g ON g.subject_type = 'place' AND g.subject_id = tree.id
+  UNION SELECT r.subject_type, r.subject_id FROM tree JOIN relationships r ON r.object_type = 'place' AND r.object_id = tree.id
+  UNION SELECT r.object_type, r.object_id FROM tree JOIN relationships r ON r.subject_type = 'place' AND r.subject_id = tree.id
   UNION SELECT 'institution', x.id FROM tree JOIN institutions x ON x.place_id = tree.id
   UNION SELECT 'event', x.id FROM tree JOIN events x ON x.place_id = tree.id
   UNION SELECT 'artwork', p.artwork_id FROM tree JOIN provenance p ON p.owner_place_id = tree.id OR p.location_id = tree.id
