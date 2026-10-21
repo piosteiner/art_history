@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### Fix: long start-map views can be shared again (migration 130)
+- **What:** `shared_views` is unique on `shared_view_hash(query)` (= `sha256(textsend(query))`, immutable) instead of on
+  the whole query; `save_shared_view()` looks queries up through the hash. Existing codes unchanged (all 118 equal the
+  new hash's digits). E2E `views.spec.js`: an 8,000-character view.
+- **Why:** found in the error log while checking step 6: at 15:37 a visitor's view failed — "index row size 3008
+  exceeds btree version 4 maximum 2704 for index shared_views_query_key" (the API accepts queries up to 20,000
+  characters; a b-tree entry holds at most a third of a page).
+- **Revert:** redeploy the previous commit; as owner `DROP INDEX shared_views_query_hash;` re-add
+  `UNIQUE (query)` (only if no query is that long), restore `save_shared_view()` from 072, drop `shared_view_hash()`;
+  `DELETE FROM schema_migrations WHERE name = '130_shared_views_hash.sql';`
+
 ### Step 6: the admin panel at scale (migration 129) — measured on 10× data, then fixed
 - **What:**
   - Admin list search (`fieldSearchSql()`, `src/admin/match.js`): the search fields grouped per entry in one pass

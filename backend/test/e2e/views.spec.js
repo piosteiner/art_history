@@ -27,3 +27,14 @@ test('a long selection gets a short code; the same selection the same code; rena
   expect((await post(request, 'artists=<script>')).status()).toBe(400);
   expect((await post(request, '')).status()).toBe(400);
 });
+
+test('a very long selection (over the 2,704 bytes a b-tree entry may hold) is stored and found again (130)', async ({ request }) => {
+  // 400 artwork slugs that don't compress: ≈ 8,000 characters (the failure on 2026-10-21 had 3,008 bytes in the index)
+  const slugs = Array.from({ length: 400 }, (_, i) => `w${(i * 2654435761 % 4294967296).toString(36)}`);
+  const q = `artworks=${slugs.join(',')}`;
+  const a = await post(request, q);
+  expect(a.status()).toBe(201);
+  const { id } = await a.json();
+  expect((await (await post(request, q)).json()).id).toBe(id);   // the same code again, through the hash
+  expect((await (await request.get(`${API}/views/${id}`, { headers: H })).json()).query.length).toBeGreaterThan(3000);
+});
