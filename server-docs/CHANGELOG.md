@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### Data: Agricola's copy after Rubens' *Boreas entführt Oreithya* (Academy GG-779)
+- **What:** (data only, via `scripts/from-wikidata.js` + `scripts/import.js`)
+  - New artist `karl-agricola` (Q1371095, 1779–1852), born in the new place `bad-sackingen` (Q522362), died in Vienna
+    (dated; Wikidata + the Academy).
+  - New artwork `boreas-abducting-oreithyia-copy-agricola` (public 102260): creator Agricola, `attribution_label` “copy after
+    Peter Paul Rubens”, relationship `copy_after` → the Rubens (GG-626) labelled “Kopie nach Peter Paul Rubens”.
+    Before 1822, oil on canvas, 88 × 70 cm, frame 99 × 80.5 × 5.5, GG-779, unsigned, web page and CC BY 4.0 photo.
+    Provenance Lamberg-Sprinzenstein → bequest to the Academy 1822. Every field cites the Academy's record (item 1215).
+  - The Rubens: the Academy's c. 1615 (Wikidata: 1620), 146 × 140.5 cm (Wikidata: 140), oil on oak panel, frame,
+    web page (item 1062). The owner edited the same entry at the same time: their photo, title and citation clean-up
+    were kept.
+- **Why:** owner: add item 1215 with everything the Academy publishes, modelled as a copy after Rubens.
+- **Revert:** admin history of the three entries (delete the copy, the artist, Bad Säckingen; restore the Rubens' fields).
+
 ### Admin image search: small previews
 - **What:** the result grids of “Find images…” and the batch page show 330 px Wikimedia thumbnails (`thumbUrl`) instead
   of the 1280 px images; Commons and the Wikidata import ask for 1280 px (a standard width) instead of 1200. Unit test
