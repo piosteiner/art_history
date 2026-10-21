@@ -28,7 +28,7 @@ Slow-query log: statements over 1 s and lock waits (`conf.d/arthistory.conf`) in
 ones, and the pg_stat_statements top lists.
 **Performance budgets** (2026-10-21): database `scale_test` = the latest backup with every entry cloned nine times
 (`cd backend && npm run perf:data`, ≈ 10 min, replaces only scale_test), then `npm run perf` — migrates scale_test, a server of the checkout on
-:3015 against it, the times of the heavy requests, whole lists, one change through the worker and the global part
+:3015 against it, the times of the heavy requests, 13 admin pages (logged in as a user `perf` made per run), whole lists, one change through the worker and the global part
 against `backend/perf/budgets.json` (exit 1 when over). Run before deploying changes to queries, views or the worker.
 
 ## Firewall (ufw) + fail2ban

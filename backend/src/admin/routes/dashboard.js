@@ -160,7 +160,8 @@ router.get('/quality', async (req, res) => {
   // the stored result (058/125) — waiting a moment for a change just made; never computed here
   await quality.current(adminPool, { wait: 3000 });
   const [rows, allCounts, status, driftRows, failureRows] = await Promise.all([
-    quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked }),
+    // at most 100 per check on the overview, 1,000 for one check (60,000 findings at 10× today's data: 3 s just for the HTML)
+    quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked, perCheck: filter.check ? 1000 : 100 }),
     quality.counts(adminPool), quality.status(adminPool), quality.drift(adminPool), quality.failures(adminPool)]);
   // start views (069) aren't entries — their problems are counted here, listed on /featured
   const featured = (await adminPool.query('SELECT count(DISTINCT id)::int AS n FROM featured_view_problems')).rows[0].n;

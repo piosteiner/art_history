@@ -455,15 +455,19 @@ router.get('/:plural/:slug', async (req, res) => {
   const { t } = req;
   const e = await findEntity(t, req.params.slug);
   if (!e) return notFoundPage(req, res);
+  // after a change just made: until this entry's derived data — findings, its links — is computed again (a moment;
+  // the quality box says if not yet)
+  const qaQueued = !(await quality.settled(adminPool, t.type, e.id));
   const [outgoing, incoming, types, entities] = await Promise.all([
     readRelationships(adminPool, t.type, e.id),
-    // links towards this entry, plus the derived ones from it (view edges, 031: provenance, the creator field) —
+    // links towards this entry, plus the derived ones from it (edges, 031: provenance, the creator field — stored in
+    // graph_links, 126, current once the entry is: the view, asked "subject or object", computed every edge) —
     // except an artwork's own derived edges, which its creator row and Provenance section show
     adminPool.query(`
-      SELECT r.id, r.source, r.provenance_id, s.type::text AS type, s.slug, s.name,
+      SELECT r.relationship_id AS id, r.source, r.provenance_id, s.type::text AS type, s.slug, s.name,
              CASE WHEN (r.object_type, r.object_id) = ($1::entity_type, $2) THEN rt.inverse_label ELSE rt.label END AS inverse_label,
              r.period_label, r.label, r.end_basis
-      FROM edges r JOIN relationship_types rt ON rt.code = r.relationship_type
+      FROM graph_links r JOIN relationship_types rt ON rt.code = r.relationship_type
       JOIN entity_index s ON (s.type, s.id) = (CASE WHEN (r.object_type, r.object_id) = ($1::entity_type, $2) THEN r.subject_type ELSE r.object_type END,
                                                CASE WHEN (r.object_type, r.object_id) = ($1::entity_type, $2) THEN r.subject_id ELSE r.object_id END)
       WHERE (r.object_type = $1 AND r.object_id = $2)
@@ -479,8 +483,6 @@ router.get('/:plural/:slug', async (req, res) => {
   const mainCreator = t.type === 'artwork' && e.doc.creator
     ? (await adminPool.query('SELECT slug, name FROM artists WHERE slug = $1', [e.doc.creator])).rows[0] : null;
   const name = e.name;
-  // the stored result — after a change just made, once this entry is checked again (a moment; the box says if not yet)
-  const qaQueued = !(await quality.settled(adminPool, t.type, e.id));
   const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];

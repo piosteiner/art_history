@@ -389,10 +389,10 @@ router.get('/quality/provenance-gaps', async (req, res) => {
            (SELECT jsonb_agg(jsonb_build_object('from', extract(year FROM lower(g.period)), 'to', extract(year FROM upper(g.period) - 1),
                      'before', g.before_name, 'after', g.after_name, 'candidates', coalesce(g.candidates, '{}')) ORDER BY g.period)
               FROM provenance_coverage(w.id) g WHERE g.kind = 'gap' AND g.in_1933_1945) AS gaps
-    FROM provenance_completeness c JOIN artworks w ON w.id = c.artwork_id LEFT JOIN artists a ON a.id = w.creator_id
+    FROM provenance_completeness_stored c JOIN artworks w ON w.id = c.artwork_id LEFT JOIN artists a ON a.id = w.creator_id  -- stored (129)
     WHERE c.has_provenance AND c.gap_1933_1945_days > 0
     ORDER BY c.gap_1933_1945_days DESC, c.gap_days DESC, w.title COLLATE sort_natural`);
-  const { rows: [none] } = await adminPool.query(`SELECT count(*)::int AS n FROM provenance_completeness c JOIN artworks w ON w.id = c.artwork_id
+  const { rows: [none] } = await adminPool.query(`SELECT count(*)::int AS n FROM provenance_completeness_stored c JOIN artworks w ON w.id = c.artwork_id
     WHERE NOT c.has_provenance AND (w.created IS NULL OR lower(w.created) < '1945-05-09')`);
   const yrs = (d) => Math.round(d / 365.25 * 10) / 10;
   send(req, res, { title: 'Provenance gaps 1933–1945', body: html`<p class="muted"><a href="/quality">← Quality</a></p>

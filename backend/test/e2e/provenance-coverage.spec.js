@@ -1,6 +1,6 @@
 // Where the provenance is silent (migration 078): documented / presumed / gap over an artwork's time, the gaps in the
 // API (detail, list filter, map), the admin's bar and gap lines, the research ranking.
-const { test, expect, sql, API } = require('./helpers');
+const { test, expect, sql, settled, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const W = "entity_id('artwork', 'test-cov-w')";
@@ -36,6 +36,7 @@ test('gaps where no holder is known: API, list filter, map, admin bar and lines,
   expect(cov.segments.some((s) => s.kind === 'documented' && s.period.from_year === 1928)).toBe(true);   // Gold: at the latest 1928 – at least 1934
 
   // the list: a summary per work, and a filter
+  await settled();   // lists and their filter read the stored coverage (129)
   const list = (await api(request, '/artworks?provenance_gap=1933-1945&limit=500')).data.map((a) => a.slug);
   expect(list).toContain('test-cov-w');
   const row = (await api(request, '/artworks?limit=500')).data.find((a) => a.slug === 'test-cov-w');

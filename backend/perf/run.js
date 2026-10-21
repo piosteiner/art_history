@@ -16,10 +16,12 @@ const budgets = require('./budgets.json');
 const PORT = 3015;
 const sleep = (ms) => new Promise((resolve) => { setTimeout(resolve, ms); });
 
-function get(p) {
+// a request to the API (/v1…) or, with a session cookie, to the admin panel
+function get(p, { admin = null } = {}) {
   return new Promise((resolve, reject) => {
     const t0 = process.hrtime.bigint();
-    const req = http.get({ host: '127.0.0.1', port: PORT, path: `/v1${p}`, headers: { Host: 'api.localhost' } }, (res) => {
+    const headers = admin ? { Host: 'admin.localhost', Cookie: admin } : { Host: 'api.localhost' };
+    const req = http.get({ host: '127.0.0.1', port: PORT, path: admin ? p : `/v1${p}`, headers }, (res) => {
       const chunks = [];
       res.on('data', (c) => chunks.push(c));
       res.on('end', () => resolve({ ms: Number(process.hrtime.bigint() - t0) / 1e6, status: res.statusCode, body: Buffer.concat(chunks) }));
@@ -29,6 +31,24 @@ function get(p) {
   });
 }
 const median = (xs) => [...xs].sort((a, b) => a - b)[Math.floor(xs.length / 2)];
+
+// the admin pages need a login: a user "perf" in scale_test with a password made for this run (never stored)
+async function adminSession() {
+  const password = require('crypto').randomBytes(18).toString('hex');
+  execFileSync(process.execPath, ['scripts/admin-user.js', 'perf'], { cwd: BACKEND, env: { ...process.env, DB_NAME: 'scale_test' }, input: password, stdio: ['pipe', 'ignore', 'inherit'] });
+  const body = new URLSearchParams({ username: 'perf', password }).toString();
+  return new Promise((resolve, reject) => {
+    const req = http.request({ host: '127.0.0.1', port: PORT, path: '/login', method: 'POST', headers: {
+      Host: 'admin.localhost', Origin: 'http://admin.localhost', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': Buffer.byteLength(body) } }, (res) => {
+      res.resume();
+      const cookie = (res.headers['set-cookie'] || []).map((c) => c.split(';')[0]).join('; ');
+      if (res.statusCode !== 303 && res.statusCode !== 302 || !cookie) reject(new Error(`admin login failed: HTTP ${res.statusCode}`));
+      else resolve(cookie);
+    });
+    req.on('error', reject);
+    req.end(body);
+  });
+}
 
 async function until(what, test, timeoutMs) {
   const end = Date.now() + timeoutMs;
@@ -78,6 +98,17 @@ async function main() {
       }
       return { ms, n };
     };
+    // the admin panel, logged in
+    const cookie = await adminSession();
+    for (const [name, r] of Object.entries(budgets.admin)) {
+      if (name === '_') continue;
+      const first = await get(r.path, { admin: cookie });
+      const times = [];
+      for (let i = 0; i < 3; i++) times.push((await get(r.path, { admin: cookie })).ms);
+      const status = (await get(r.path, { admin: cookie })).status;
+      check('admin', name, median(times), r.budget, `first ${Math.round(first.ms)} ms${status !== 200 ? ` · HTTP ${status}` : ''}`);
+      if (status !== 200) results[results.length - 1].ok = false;
+    }
     for (const [plural, budget] of Object.entries(budgets.lists)) {
       if (plural === '_') continue;
       const passes = [await wholeList(plural), await wholeList(plural), await wholeList(plural)];

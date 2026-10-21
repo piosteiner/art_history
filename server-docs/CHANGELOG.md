@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### Step 6: the admin panel at scale (migration 129) — measured on 10× data, then fixed
+- **What:**
+  - Admin list search (`fieldSearchSql()`, `src/admin/match.js`): the search fields grouped per entry in one pass
+    (hash join) and the details only for the hits — before, every entry scanned all the type's fields in a
+    materialized CTE (quadratic). 10×: 12.5 s → 0.3 s; same results (parity test admin/site).
+  - `provenance_completeness_stored` (129): each work's provenance coverage, written by `process_derived()` for the
+    batch's works. Admin "Provenance gaps 1933–1945" 8.5 → 2.1 s; API list filter `?provenance_gap=` and list rows
+    read it; the single work's detail stays live.
+  - Quality page: at most 100 findings per check, "all N of this check" link (1,000 for one check) — 60,000 findings
+    at 10× took 3 s of HTML. 10×: 4 s → 0.7 s.
+  - Admin entry pages: the incoming/derived links from `graph_links` after waiting for the entry's own derived data
+    (was the view `edges` asked "subject or object": every edge computed) — 10×: 0.6–0.9 s → 0.2–0.45 s.
+  - `npm run perf` also times 13 admin pages (a user `perf` in scale_test with a password made per run): 35 budgets.
+  - Tests: Quality page cap; `settled()` before the coverage list filter.
+- **Why:** owner: the editors' side has to stay fast at thousands of entries too; the API budgets didn't cover it.
+- **Revert:** redeploy the previous commit; as owner restore `process_derived()` from 128 (without the coverage
+  block), `DROP TABLE provenance_completeness_stored`; `DELETE FROM schema_migrations WHERE name = '129_provenance_completeness_stored.sql';`
+
 ### Data: Agricola's copy after Rubens' *Boreas entführt Oreithya* (Academy GG-779)
 - **What:** (data only, via `scripts/from-wikidata.js` + `scripts/import.js`)
   - New artist `karl-agricola` (Q1371095, 1779–1852), born in the new place `bad-sackingen` (Q522362), died in Vienna

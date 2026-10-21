@@ -295,7 +295,8 @@ async function stop() {
 
 // Findings with names, filtered; acknowledged ones only when asked for — always the stored result: computed live,
 // the checks would take as long as a refresh (seconds, more as the database grows).
-async function issues(db, { severity, check, type, entity, acked = false } = {}) {
+// perCheck: at most this many per check (the page; the queue needs them all) — each row also says how many its check has
+async function issues(db, { severity, check, type, entity, acked = false, perCheck = null } = {}) {
   const where = ['true'];
   const params = [];
   const p = (v) => { params.push(v); return `$${params.length}`; };
@@ -304,15 +305,21 @@ async function issues(db, { severity, check, type, entity, acked = false } = {})
   if (type) where.push(`q.entity_type = ${p(type)}::entity_type`);
   if (entity) where.push(`q.entity_type = ${p(entity.type)}::entity_type AND q.entity_id = ${p(entity.id)}`);
   where.push(acked ? 'a.check_id IS NOT NULL' : 'a.check_id IS NULL');
+  // the rank and the count per check by window functions over the filtered findings; the cut after them
   const { rows } = await db.query(`
-    SELECT q.check_id, q.severity, q.entity_type::text AS type, q.issue_key, q.detail, e.slug, e.name,
-           a.note, a.acked_at, u.username AS acked_by
-    FROM quality_issues q
-    JOIN entity_index e ON e.type = q.entity_type AND e.id = q.entity_id
-    LEFT JOIN quality_acks a ON a.check_id = q.check_id AND a.issue_key = q.issue_key
-    LEFT JOIN admin_users u ON u.id = a.acked_by
-    WHERE ${where.join(' AND ')}
-    ORDER BY array_position(ARRAY['error', 'warning', 'info'], q.severity), q.check_id, e.sort_key COLLATE sort_natural`, params);
+    SELECT * FROM (
+      SELECT q.check_id, q.severity, q.entity_type::text AS type, q.issue_key, q.detail, e.slug, e.name,
+             a.note, a.acked_at, u.username AS acked_by,
+             row_number() OVER w AS rank, count(*) OVER (PARTITION BY q.check_id)::int AS of_check,
+             array_position(ARRAY['error', 'warning', 'info'], q.severity) AS sev_order, e.sort_key
+      FROM quality_issues q
+      JOIN entity_index e ON e.type = q.entity_type AND e.id = q.entity_id
+      LEFT JOIN quality_acks a ON a.check_id = q.check_id AND a.issue_key = q.issue_key
+      LEFT JOIN admin_users u ON u.id = a.acked_by
+      WHERE ${where.join(' AND ')}
+      WINDOW w AS (PARTITION BY q.check_id ORDER BY e.sort_key COLLATE sort_natural)) x
+    ${perCheck ? `WHERE x.rank <= ${p(perCheck)}` : ''}
+    ORDER BY x.sev_order, x.check_id, x.sort_key COLLATE sort_natural`, params);
   return rows;
 }
 
@@ -428,14 +435,17 @@ function page({ rows, allCounts, filter, back, featured = 0, status: st = null, 
       const order = [];
       for (const r of list) if (!order.includes(`${r.type}/${r.slug}`)) order.push(`${r.type}/${r.slug}`);
       const posOf = (r) => order.indexOf(`${r.type}/${r.slug}`);
-      const head = html`<h2><span class="tag qa-${list[0].severity}">${list[0].severity}</span> ${CHECKS[id] ? CHECKS[id].title : id} <span class="muted">(${list.length})</span></h2>`;
+      const total = list[0].of_check || list.length;
+      const head = html`<h2><span class="tag qa-${list[0].severity}">${list[0].severity}</span> ${CHECKS[id] ? CHECKS[id].title : id} <span class="muted">(${total})</span></h2>`;
+      const more = total > list.length ? html`<p class="muted small qa-more">The first ${list.length} of ${total} —
+        ${filter.check ? 'narrow them by type above.' : html`<a href="${q({ check: id, severity: '' })}">all ${total} of this check</a>.`}</p>` : '';
       const body = html`${CHECKS[id] ? html`<p class="muted small">${CHECKS[id].fix}</p>` : ''}
         ${!filter.acked ? html`<p class="actions qa-tools"><a class="button" href="${queueLink(list[0], qf, 0)}">Work through these →</a>
           ${BATCH[id] ? html`<a class="button secondary" href="${BATCH[id].href}${filter.type ? `${BATCH[id].href.includes('?') ? '&' : '?'}type=${filter.type}` : ''}">${BATCH[id].label}</a>` : ''}</p>` : ''}
         <div class="table-wrap"><table><tbody>${list.map((r) => html`<tr>
           <td><a href="${filter.acked ? link(r) : queueLink(r, qf, posOf(r))}">${r.name}</a> <span class="tag">${r.type}</span></td><td>${r.detail}
             ${r.acked_at ? html`<div class="muted small">OK’d by ${r.acked_by || '?'} on ${r.acked_at.toISOString().slice(0, 10)}${r.note ? ` — ${r.note}` : ''}</div>` : ''}</td>
-          <td class="qa-actions">${ENRICH.includes(id) && !filter.acked ? html`<a class="button secondary" href="${link(r)}/enrich">Enrich…</a> ` : ''}${ackForm(r, back, !!r.acked_at)}</td></tr>`)}</tbody></table></div>`;
+          <td class="qa-actions">${ENRICH.includes(id) && !filter.acked ? html`<a class="button secondary" href="${link(r)}/enrich">Enrich…</a> ` : ''}${ackForm(r, back, !!r.acked_at)}</td></tr>`)}</tbody></table></div>${more}`;
       // completeness hints (info) folded away unless asked for: the errors and warnings first
       return list[0].severity === 'info' && filter.severity !== 'info' && !filter.check
         ? html`<details class="qa-group qa-folded"><summary>${head}</summary>${body}</details>`

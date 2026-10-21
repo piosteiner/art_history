@@ -88,7 +88,7 @@ const ENTITIES = {
                'before', coalesce(jsonb_agg(jsonb_build_object('slug', i.slug, 'name', i.name) ORDER BY i.name) FILTER (WHERE NOT h.now), '[]'))
              FROM artwork_holders h JOIN institutions i ON i.id = h.institution_id WHERE h.artwork_id = t.id) AS holders,
            (SELECT jsonb_build_object('documented_percent', c.documented_percent, 'has_provenance', c.has_provenance,
-                     'gap_1933_1945', c.gap_1933_1945_days > 0) FROM provenance_completeness c WHERE c.artwork_id = t.id) AS provenance_coverage`,
+                     'gap_1933_1945', c.gap_1933_1945_days > 0) FROM provenance_completeness_stored c WHERE c.artwork_id = t.id) AS provenance_coverage`,
     detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
              range_json(t.conceived, t.conceived_label) AS conceived,
              -- 1933–1945 (074): the BAK category A–D, its meaning, the source's wording
@@ -141,7 +141,7 @@ const ENTITIES = {
       part_of: "t.parent_id = entity_id('artwork', $)",  // the parts of a series / album …
       // gaps in the provenance (078): ?provenance_gap=1933-1945 (no holder known for some time then) or any
       provenance_gap: `(SELECT CASE $ WHEN '1933-1945' THEN c.gap_1933_1945_days > 0 WHEN 'any' THEN c.gap_days > 0 END
-                        FROM provenance_completeness c WHERE c.artwork_id = t.id)`,
+                        FROM provenance_completeness_stored c WHERE c.artwork_id = t.id)`,
       ...countryFilters('artwork'),
     },
     order: `lower(t.created) NULLS LAST, ${sortKey('artwork', 't', 'title')}`,

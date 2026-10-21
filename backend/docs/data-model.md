@@ -443,6 +443,10 @@ never the view (all checks take seconds, more as the data grows). How it stays c
 - **A migration that changes a check replaces `quality_issues_live`** (then `SELECT refresh_quality_full()`); one
   that changes `dup_facts`/`dup_score()` also `TRUNCATE dup_entries` (every fingerprint new → all weighed again).
 
+**Provenance coverage stored (129).** `provenance_completeness_stored` = the view `provenance_completeness` (078) per
+work, written by `process_derived()` for the batch's works (drift 'coverage'). Lists, the list filter
+`?provenance_gap=` and the admin gaps page read it; a single work's detail computes it live (≈ 2 ms).
+
 **The lists' rows (127).** `entry_list_rows (type, id, row jsonb)`: each entry's row exactly as the API's lists serve
 it (the columns are defined once, in `src/routes/entities.js` → `listRows()`). `process_derived()` hands every entry of
 a batch to `list_queue`; the worker computes their rows with `listRows()` and writes only changed ones (drift

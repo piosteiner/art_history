@@ -1,6 +1,6 @@
 // Data quality: contradictions are found (view quality_issues_live), shown on /quality and on the entry, and can be
 // marked as OK (remembered, hidden, shown again on request, undoable).
-const { test, expect, adminChange, sql } = require('./helpers');
+const { test, expect, adminChange, sql, settled } = require('./helpers');
 
 test('a contradiction appears on /quality and on the entry; "Mark as OK" hides it until undone', async ({ userA }) => {
   adminChange("UPDATE artworks SET created = year_range(1895), created_label = '1895' WHERE slug = 'sunflowers-national-gallery'");
@@ -51,4 +51,21 @@ test('a possible duplicate (one finding on two entries) is stored for both — t
   expect(sql(`SELECT count(*) FROM quality_issues WHERE check_id = 'possible_duplicate'
     AND entity_id IN (entity_id('artist', 'test-twin-a'), entity_id('artist', 'test-twin-b')) AND entity_type = 'artist'`)).toBe('2');
   sql("DELETE FROM artists WHERE slug IN ('test-twin-a', 'test-twin-b')");
+});
+
+test('a check with many findings: the first 100 on the overview, all of them (up to 1,000) when it is chosen', async ({ userA }) => {
+  sql(`DELETE FROM artists WHERE slug LIKE 'test-many-%';
+       INSERT INTO artists (slug, name) SELECT 'test-many-' || i, 'Test Many ' || i FROM generate_series(1, 105) i`);
+  await settled();
+  const total = Number(sql("SELECT count(*) FROM quality_issues q LEFT JOIN quality_acks a USING (check_id, issue_key) WHERE q.check_id = 'artist_missing_dates' AND a.check_id IS NULL"));
+  expect(total).toBeGreaterThan(100);
+  await userA.goto('/quality?severity=warning');
+  const group = userA.locator('.qa-group', { hasText: 'Artist without birth or death date' });
+  await expect(group.locator('h2')).toContainText(`(${total})`);
+  await expect(group.locator('tbody tr')).toHaveCount(100);
+  await expect(group.locator('.qa-more')).toContainText(`The first 100 of ${total}`);
+  await Promise.all([userA.waitForNavigation(), group.locator('.qa-more a').click()]);
+  await expect(userA).toHaveURL(/check=artist_missing_dates/);
+  await expect(userA.locator('.qa-group tbody tr')).toHaveCount(total);
+  sql("DELETE FROM artists WHERE slug LIKE 'test-many-%'");
 });

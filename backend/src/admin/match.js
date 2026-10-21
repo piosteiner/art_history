@@ -49,20 +49,26 @@ function altSql(t, alias) {
 // computes every entry's fields (seconds).
 function fieldSearchSql(t, alias = 't') {
   const own = [`${alias}.${t.name}`, altSql(t, alias), `${alias}.slug`].filter(Boolean).join(', ');
+  // One pass over the type's fields, grouped per entry (a hash join), then the details only for the hits through the
+  // primary key — not, for every entry, a scan of all the type's fields (3,500 artworks × 28,000 fields: 12 s at 10×
+  // today's data). A word can't match across the space between two joined fields: it has no space in it.
+  const hay = 'lower(f_unaccent(coalesce(f.match, f.text)))';
   return `
     WITH q AS (SELECT array_remove(regexp_split_to_array(lower(f_unaccent(btrim($1))), '\\s+'), '') AS words,
                       lower(f_unaccent(btrim($1))) AS phrase),
-    fields AS (SELECT f.id, f.position, f.label, f.text, f.tier_rank, f.tier_heading, f.shown, lower(f_unaccent(coalesce(f.match, f.text))) AS hay
-               FROM entry_search_fields_stored f WHERE f.type = '${t.type}'),
+    grouped AS (SELECT f.id, string_agg(${hay}, ' ') FILTER (WHERE f.shown) AS shown_hay, string_agg(${hay}, ' ') AS all_hay
+                FROM entry_search_fields_stored f WHERE f.type = '${t.type}' GROUP BY f.id),
     -- visible: the name, other names, slug and what the list shows under the name anyway (shown fields)
     base AS (SELECT ${alias}.id, lower(f_unaccent(${alias}.${t.name})) AS fname,
-                    concat_ws(' ', lower(f_unaccent(concat_ws(' ', ${own}))), (SELECT string_agg(f.hay, ' ') FROM fields f WHERE f.id = ${alias}.id AND f.shown)) AS own
-             FROM ${t.table} ${alias}),
-    -- per entry: the words its name and other names don't have, and the fields that have them
+                    concat_ws(' ', lower(f_unaccent(concat_ws(' ', ${own}))), g.shown_hay) AS own, coalesce(g.all_hay, '') AS all_hay
+             FROM ${t.table} ${alias} LEFT JOIN grouped g ON g.id = ${alias}.id),
+    -- every word somewhere (visible, or in one of its fields); per hit the words its name and other names don't have
     found AS (
-      SELECT b.id, b.fname, b.own,
+      SELECT b.id, b.fname,
              (SELECT coalesce(array_agg(w), '{}') FROM unnest(q.words) w WHERE strpos(b.own, w) = 0) AS hidden
-      FROM base b, q)
+      FROM base b, q
+      WHERE cardinality(q.words) > 0
+        AND NOT EXISTS (SELECT 1 FROM unnest(q.words) w WHERE strpos(b.own, w) = 0 AND strpos(b.all_hay, w) = 0))
     SELECT x.id,
            CASE WHEN x.fname LIKE q.phrase || '%' THEN 3
                 WHEN NOT EXISTS (SELECT 1 FROM unnest(q.words) w WHERE strpos(x.fname, w) = 0) THEN 2 ELSE 1 END AS score,
@@ -73,11 +79,8 @@ function fieldSearchSql(t, alias = 't') {
       SELECT jsonb_agg(jsonb_build_object('label', f.label, 'text', f.text) ORDER BY f.position) AS why,
              bool_or(f.tier_rank IS NULL) AS untiered, min(f.tier_rank) AS tier_rank,
              (array_agg(f.tier_heading ORDER BY f.tier_rank NULLS LAST))[1] AS tier_heading
-      FROM fields f WHERE f.id = x.id AND NOT f.shown AND EXISTS (SELECT 1 FROM unnest(x.hidden) w WHERE strpos(f.hay, w) > 0)) m
-    -- every word somewhere: each hidden word in one of its fields
-    WHERE cardinality(q.words) > 0
-      AND NOT EXISTS (SELECT 1 FROM unnest(x.hidden) w
-                      WHERE NOT EXISTS (SELECT 1 FROM fields f WHERE f.id = x.id AND strpos(f.hay, w) > 0))`;
+      FROM entry_search_fields_stored f
+      WHERE f.type = '${t.type}' AND f.id = x.id AND NOT f.shown AND EXISTS (SELECT 1 FROM unnest(x.hidden) w WHERE strpos(${hay}, w) > 0)) m`;
 }
 
 module.exports = { THRESHOLD, likeParam, scoreSql, altScoreSql, altSql, fieldSearchSql };
