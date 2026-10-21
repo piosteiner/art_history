@@ -139,14 +139,24 @@ END $$;
 
 -- the entries whose findings may depend on an entry: linked (the stored graph, both ways — before the global part
 -- rebuilds it, it still has the links a change removed), parts and children, an artist's works, a museum's works,
--- holders' works, entries citing a source, works of a type or material
+-- holders' works, entries citing a source, works of a type or material. A place counts with all places inside it
+-- (recursive): "Made in: Edo, Japan" names the ancestors, so renaming Japan changes the fields of works made in Edo.
 CREATE FUNCTION derived_neighbours(t entity_type, i bigint) RETURNS TABLE (type entity_type, id bigint)
 LANGUAGE sql STABLE SET search_path = public, pg_temp AS $$
+  WITH RECURSIVE tree(id) AS (
+    SELECT i WHERE t = 'place'
+    UNION SELECT x.id FROM places x JOIN tree ON x.parent_id = tree.id)
   SELECT g.object_type, g.object_id FROM graph_links g WHERE g.subject_type = t AND g.subject_id = i
   UNION SELECT g.subject_type, g.subject_id FROM graph_links g WHERE g.object_type = t AND g.object_id = i
-  UNION SELECT 'place', x.id FROM places x WHERE t = 'place' AND x.parent_id = i
-  UNION SELECT 'institution', x.id FROM institutions x WHERE t = 'place' AND x.place_id = i
-  UNION SELECT 'event', x.id FROM events x WHERE (t = 'place' AND x.place_id = i) OR (t = 'event' AND x.parent_id = i)
+  UNION SELECT 'place', tree.id FROM tree WHERE tree.id <> i
+  UNION SELECT g.subject_type, g.subject_id FROM tree JOIN graph_links g ON g.object_type = 'place' AND g.object_id = tree.id
+  UNION SELECT g.object_type, g.object_id FROM tree JOIN graph_links g ON g.subject_type = 'place' AND g.subject_id = tree.id
+  UNION SELECT 'institution', x.id FROM tree JOIN institutions x ON x.place_id = tree.id
+  UNION SELECT 'event', x.id FROM tree JOIN events x ON x.place_id = tree.id
+  UNION SELECT 'artwork', p.artwork_id FROM tree JOIN provenance p ON p.owner_place_id = tree.id OR p.location_id = tree.id
+  UNION SELECT 'artwork', p.artwork_id FROM tree JOIN provenance_places pp ON pp.place_id = tree.id JOIN provenance p ON p.id = pp.provenance_id
+  UNION SELECT 'artwork', p.artwork_id FROM tree JOIN provenance_records pr ON pr.place_id = tree.id JOIN provenance p ON p.id = pr.provenance_id
+  UNION SELECT 'event', x.id FROM events x WHERE t = 'event' AND x.parent_id = i
   UNION SELECT 'polity', x.id FROM polities x WHERE t = 'polity' AND x.parent_id = i
   UNION SELECT 'movement', x.id FROM movements x WHERE t = 'movement' AND x.parent_id = i
   UNION SELECT 'artwork', w.id FROM artworks w WHERE t = 'artwork' AND w.parent_id = i
@@ -157,7 +167,6 @@ LANGUAGE sql STABLE SET search_path = public, pg_temp AS $$
   UNION SELECT 'artwork', p.artwork_id FROM provenance p WHERE t = 'artist' AND p.owner_artist_id = i
   UNION SELECT 'artwork', p.artwork_id FROM provenance p WHERE t = 'person' AND p.owner_person_id = i
   UNION SELECT 'artwork', p.artwork_id FROM provenance p WHERE t = 'institution' AND p.owner_institution_id = i
-  UNION SELECT 'artwork', p.artwork_id FROM provenance p WHERE t = 'place' AND (p.owner_place_id = i OR p.location_id = i)
   UNION SELECT 'artwork', p.artwork_id FROM provenance p WHERE t = 'event' AND p.event_id = i
   UNION SELECT c.entity_type, c.entity_id FROM citations c WHERE t = 'source' AND c.source_id = i AND c.entity_id IS NOT NULL
 $$;

@@ -7,7 +7,9 @@ Format: date — what — why — how to revert.
 ### Derived data kept up to date incrementally (migration 125) — step 1 of the scaling plan
 - **What:** a change now says which entries it affects, and only those are computed again.
   - Trigger `derived_touch()` on 28 tables (replaces `quality_changed` on them) appends the affected entries to
-    `derived_queue` (append-only — saves never wait for locks); entries changed themselves also queue their neighbours.
+    `derived_queue` (append-only — saves never wait for locks); entries changed themselves also queue their neighbours
+    (`derived_neighbours()`; a place with every place inside it, recursively — "Made in: Edo, Japan" names the
+    ancestors; found by the nightly-run test as drift before the deploy).
   - The worker in `src/admin/quality.js` calls `process_derived(100)` batch by batch: search fields, findings,
     duplicate pairs of those entries — each batch a short transaction.
   - Duplicates by fingerprint: `dup_entries` (md5 of the facts), `dup_keys` (names with GIN trigram, sound keys,

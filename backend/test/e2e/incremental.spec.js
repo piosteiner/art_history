@@ -51,7 +51,7 @@ test('the nightly full run corrects what the triggers missed and shows it as dri
   sql('SELECT refresh_quality()');
   // a full run over unchanged data changes nothing
   sql('SELECT refresh_quality_full(); SELECT refresh_quality();');
-  expect(sql('SELECT count(*) FROM derived_drift')).toBe('0');
+  expect(sql("SELECT string_agg(d.type || ' ' || coalesce(e.slug, d.id::text) || ': ' || d.what, '; ') FROM derived_drift d LEFT JOIN entity_index e ON e.type = d.type AND e.id = d.id")).toBe('');
   // a change the triggers don't see (as if a dependency were unknown)
   sql(`ALTER TABLE artists DISABLE TRIGGER derived_touch;
        UPDATE artists SET name = 'Vincent van Gogh (unseen)' WHERE slug = 'vincent-van-gogh';
