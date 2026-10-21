@@ -2305,9 +2305,9 @@ test('periods: switched to artists — lifespans under their periods, their work
 });
 
 test('project documentation (API 114/116): from the footer, the overview with its chapters, a chapter with its contents and neighbours; unpublished → a note', async ({ page }) => {
-  const base = { slug: 'projekt-dokumentation', title: 'Projekt Dokumentation', lang: 'de-CH', updated_at: '2026-10-20T12:00:00Z', words: 1200,
+  const base = { slug: 'projekt-dokumentation', title: 'Projekt Dokumentation', lang: 'de-CH', updated_at: '2026-10-20T12:00:00Z', words: 1200, chars: 8400,
     intro_html: '<p>Einleitung mit <mark>Markierung</mark>.</p>',
-    chapters: [{ id: 'pitch', title: 'Pitch', words: 400 }, { id: 'projektstart', title: 'Projektstart', words: 600 }, { id: 'provenienz', title: 'Provenienz', words: 200 }] };
+    chapters: [{ id: 'pitch', title: 'Pitch', words: 400, chars: 2800 }, { id: 'projektstart', title: 'Projektstart', words: 600, chars: 4200 }, { id: 'provenienz', title: 'Provenienz', words: 200, chars: 1400 }] };
   const chapter = { id: 'projektstart', index: 2, title: 'Projektstart', prev: { id: 'pitch', title: 'Pitch' }, next: { id: 'provenienz', title: 'Provenienz' },
     toc: [{ level: 1, id: 'projektstart', text: 'Projektstart' }, { level: 2, id: 'backend-setup', text: 'Backend Setup' }, { level: 3, id: 'node-app', text: 'Node App' }],
     html: '<h1 id="projektstart">Projektstart</h1><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" width="1" height="1"><ul><li class="task task-done"><span class="task-box">☑</span> erledigt</li></ul><h2 id="backend-setup">Backend Setup</h2><h3 id="node-app">Node App</h3>' };
@@ -2321,7 +2321,8 @@ test('project documentation (API 114/116): from the footer, the overview with it
   await expect(page).toHaveURL(/\/dokumentation$/);
   await expect(page.locator('article.doc-page')).toHaveAttribute('lang', 'de-CH');
   await expect(page.locator('main h1')).toHaveText('Projekt Dokumentation');
-  await expect(page.locator('.doc-page > p.muted').first()).toContainText(/Stand 20\. Oktober 2026 · 1.200 Wörter · rund 6 Minuten/);
+  await expect(page.locator('.doc-page > p.muted').first()).toContainText(/Stand 20\. Oktober 2026 · 1.200 Wörter · 8.400 Zeichen mit Leerzeichen · rund 6 Minuten/);
+  await expect(page.locator('.doc-chapters li').nth(1)).toContainText(/600 Wörter · 4.200 Zeichen · 3 min/);
   await expect(page.locator('.doc-body mark')).toHaveText('Markierung');
   await expect(page.locator('.doc-chapters li a')).toHaveText(['Pitch', 'Projektstart', 'Provenienz']);
   // a chapter: its text, its own contents, previous / next

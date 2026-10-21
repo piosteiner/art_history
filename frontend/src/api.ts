@@ -110,8 +110,8 @@ export const getHealth = () => get<{ status: string; db: string }>('/health');
 export interface PageHeading { level: number; id: string; text: string }
 export interface PageChapter { id: string; index: number; title: string; html: string; toc: PageHeading[]; prev: { id: string; title: string } | null; next: { id: string; title: string } | null }
 export interface Page {
-  slug: string; title: string; lang: string; updated_at: string; words: number;
-  intro_html: string; chapters: { id: string; title: string; words: number }[];
+  slug: string; title: string; lang: string; updated_at: string; words: number; chars: number;
+  intro_html: string; chapters: { id: string; title: string; words: number; chars: number }[];
   chapter?: PageChapter;
 }
 export const getPage = (slug: string, chapter?: string | null) =>

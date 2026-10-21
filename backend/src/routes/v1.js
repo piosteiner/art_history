@@ -9,7 +9,7 @@ const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
 const { fold } = require('../fold');
-const { renderPage, splitChapters, words } = require('../pages');
+const { renderPage, splitChapters, words, chars } = require('../pages');
 const { KINDS, STATUS, renderItems } = require('../changelog');
 
 const router = express.Router();
@@ -135,7 +135,7 @@ router.get('/search/suggest', async (req, res) => {
 });
 
 // Pages written in the CMS (114): the project documentation, read chapter by chapter (116). Only published ones.
-//   GET /v1/pages/<slug>                 {slug, title, lang, updated_at, words, intro_html, chapters: [{id, title, words}]}
+//   GET /v1/pages/<slug>                 {slug, title, lang, updated_at, words, chars, intro_html, chapters: [{id, title, words, chars}]}
 //   GET /v1/pages/<slug>?chapter=<id>    … and chapter: {id, index, title, html, toc, prev, next}
 //   GET /v1/pages/<slug>?full=1          … and html, toc: the whole text in one (for the prerendered page)
 // Chapters are the text's top-level headings; the heading ids are those of the whole text (rendered in order).
@@ -154,7 +154,8 @@ router.get('/pages/:slug', async (req, res) => {
   const rendered = chapters.map((c) => ({ ...c, ...renderPage(c.md, opts) }));
   const ref = (c) => (c ? { id: c.id, title: c.title } : null);
   const out = { slug: p.slug, title: p.title, lang: p.lang, updated_at: p.updated_at, words: words(p.body_md),
-    intro_html: introOut.html, chapters: rendered.map((c) => ({ id: c.id, title: c.title, words: words(c.md) })) };
+    chars: chars(p.body_md), intro_html: introOut.html,
+    chapters: rendered.map((c) => ({ id: c.id, title: c.title, words: words(c.md), chars: chars(c.md) })) };
   if (req.query.chapter !== undefined) {
     const i = rendered.findIndex((c) => c.id === String(req.query.chapter));
     if (i < 0) throw notFound(`no chapter "${req.query.chapter}"`);

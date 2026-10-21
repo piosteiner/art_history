@@ -465,7 +465,8 @@ as `q=gauguin&not_in=kunsthaus zurich`.
 ## Pages (114, 116)
 A text page written in the CMS, only when published (404 before), read chapter by chapter — the chapters are its
 top-level headings, the text before the first is the introduction:
-- `GET /v1/pages/<slug>` → `{slug, title, lang, updated_at, words, intro_html, chapters: [{id, title, words}]}`
+- `GET /v1/pages/<slug>` → `{slug, title, lang, updated_at, words, chars, intro_html, chapters: [{id, title, words, chars}]}`
+  (`chars`: characters with spaces as the text reads — no Markdown, images or line breaks)
 - `…?chapter=<id>` → also `chapter: {id, index, title, html, toc: [{level, id, text}], prev: {id, title} | null, next}`
   (404 for an unknown chapter)
 - `…?full=1` → also `html` and `toc` of the whole text.

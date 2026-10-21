@@ -1,6 +1,6 @@
 // A text page written in the CMS (API 114), read chapter by chapter (116): the project documentation.
-//   /dokumentation               the overview: title, date of the last change, the introduction, the chapters (words,
-//                                minutes to read)
+//   /dokumentation               the overview: title, date of the last change, words and characters with spaces, the
+//                                introduction, the chapters (words, characters, minutes to read)
 //   /dokumentation/<chapter>     one chapter: its text, its own contents beside it (sticky on wide screens), previous / next
 // The chapters are the text's top-level headings (the API splits it); the HTML comes sanitized from the API. de-CH:
 // Swiss German spelling, so browsers hyphenate and read it aloud as German. An old link to a heading of the whole text
@@ -13,16 +13,17 @@ import { guard, showError } from './common';
 const DATE = new Intl.DateTimeFormat('de-CH', { day: 'numeric', month: 'long', year: 'numeric' });
 const BASE = '/dokumentation';
 const minutes = (words: number) => Math.max(1, Math.round(words / 200));
+const count = (n: number) => n.toLocaleString('de-CH');
 const chapterHref = (id: string) => `${BASE}/${encodeURIComponent(id)}`;
 
 function overview(box: HTMLElement, p: Page) {
   document.title = `${p.title} · Art History`;
   render(box, html`<h1>${p.title}</h1>
-    <p class="muted small">Stand ${DATE.format(new Date(p.updated_at))} · ${p.words.toLocaleString('de-CH')} Wörter · rund ${String(minutes(p.words))} Minuten</p>
+    <p class="muted small">Stand ${DATE.format(new Date(p.updated_at))} · ${count(p.words)} Wörter · ${count(p.chars)} Zeichen mit Leerzeichen · rund ${String(minutes(p.words))} Minuten</p>
     ${p.intro_html ? html`<div class="doc-body">${trusted(p.intro_html)}</div>` : ''}
     ${p.chapters.length ? html`<h2 class="doc-chapters-title">Kapitel</h2>
       <ol class="doc-chapters">${p.chapters.map((c) => html`<li><a href="${chapterHref(c.id)}">${c.title}</a>
-        <span class="muted small">${String(minutes(c.words))} min</span></li>`)}</ol>` : ''}`);
+        <span class="muted small">${count(c.words)} Wörter · ${count(c.chars)} Zeichen · ${String(minutes(c.words))} min</span></li>`)}</ol>` : ''}`);
 }
 
 function chapter(box: HTMLElement, p: Page, c: PageChapter) {

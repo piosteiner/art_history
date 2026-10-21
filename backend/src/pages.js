@@ -138,6 +138,20 @@ function replaceChapter(markdown, index, edited) {
   return String(markdown).slice(0, part.start) + next + String(markdown).slice(part.end);
 }
 
-const words = (mdText) => (String(mdText).replace(/!\[\[[^\]]*\]\]|<[^>]+>|[#*_=`>|-]/g, ' ').match(/[\p{L}\p{N}]+/gu) || []).length;
+// The text as it reads, one line per block: no Markdown, no link targets, no images, no task boxes
+const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
+const BLOCK = /<\/?(?:p|h[1-6]|li|ul|ol|blockquote|div|table|thead|tbody|tr|td|th|pre|figure|figcaption|hr|br)\b[^>]*>/gi;
+function readLines(mdText) {
+  return renderPage(String(mdText), { imageBase: '' }).html
+    .replace(/\n/g, ' ')
+    .replace(/<span class="task-box"[^>]*>[^<]*<\/span>/g, '')
+    .replace(BLOCK, '\n')
+    .replace(/<[^>]+>/g, '')
+    .replace(/&(#x[\da-f]+|#\d+|\w+);/gi, (m, e) => (e[0] === '#' ? String.fromCodePoint(e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : Number(e.slice(1))) : ENTITIES[e.toLowerCase()] ?? m))
+    .split('\n').map((line) => line.replace(/\s+/g, ' ').trim()).filter(Boolean);
+}
+const words = (mdText) => (readLines(mdText).join(' ').match(/[\p{L}\p{N}]+/gu) || []).length;
+// characters with spaces (line breaks not counted)
+const chars = (mdText) => readLines(mdText).reduce((n, line) => n + [...line].length, 0);
 
-module.exports = { renderPage, splitChapters, replaceChapter, words, IMAGE_NAME };
+module.exports = { renderPage, splitChapters, replaceChapter, words, chars, IMAGE_NAME };

@@ -9,7 +9,7 @@ const sharp = require('sharp');
 const { adminPool } = require('../../db');
 const { html } = require('../html');
 const { send, withTx, notFoundPage, friendly, history, historyTable } = require('../core');
-const { renderPage, splitChapters, replaceChapter, words, IMAGE_NAME } = require('../../pages');
+const { renderPage, splitChapters, replaceChapter, words, chars, IMAGE_NAME } = require('../../pages');
 
 const router = express.Router();
 const SITE = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
@@ -101,7 +101,7 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
   return { title: `Edit ${p.title}`, flash, body: html`<p class="muted"><a href="/pages">← Pages</a></p>
     <h1>${p.title}</h1>
     <p class="small">${p.published ? html`<a href="${siteUrl(p)}" target="_blank" rel="noopener">View on the site ↗</a>` : html`<span class="muted">Not published yet — the site shows it once “Published” is ticked.</span>`}
-      <span class="muted">· <a href="/pages/${p.slug}/history">history</a> · ${words(p.body_md).toLocaleString('en')} words</span></p>
+      <span class="muted">· <a href="/pages/${p.slug}/history">history</a> · ${words(p.body_md).toLocaleString('en')} words · ${chars(p.body_md).toLocaleString('en')} characters with spaces</span></p>
     <div class="page-layout">
     <nav class="page-outline" aria-label="Chapters">
       <h2>Chapters</h2>

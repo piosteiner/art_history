@@ -39,3 +39,12 @@ test('chapters: top-level headings outside code, the introduction before them; o
   assert.equal(replaceChapter(t, 0, 'New intro\n'), 'New intro\n# A\none\n```\n# no\n```\n## sub\n# B\ntwo\n# A\nthree');
   assert.equal(replaceChapter(t, 9, 'x'), null);
 });
+
+test('pages: words and characters with spaces as the text reads (no Markdown, images, task boxes or line breaks)', () => {
+  const { words, chars } = require('../src/pages');
+  const md = '# Titel\n\nEin *kurzer* [Link](https://a.ch) ![[bild.png]]\nweiter &amp; fertig\n\n- [x] erledigt\n\n|a|b|\n|-|-|\n|1|2|';
+  assert.equal(words(md), 11);
+  // "Titel" 5 + "Ein kurzer Link weiter & fertig" 31 + "erledigt" 8 + a, b, 1, 2
+  assert.equal(chars(md), 5 + 31 + 8 + 4);
+  assert.equal(chars(''), 0);
+});
