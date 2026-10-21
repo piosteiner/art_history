@@ -85,14 +85,20 @@ router.get('/presence', async (req, res) => {
 // Several artworks' provenance on the map at once (?artworks=slug,slug … — at most 300): {data: {slug: provenance}},
 // each as in an artwork's map (`provenance`). The start map's overview draws every artwork's provenance: one request
 // instead of one per artwork (≈ 110 requests queued behind each other made the start page take 10 s and more).
+// The overview takes what is cached, even from before the last change (the warm-up below brings it up to date within
+// moments); only maps never computed are computed here. ≈ 100 ms of database time per artwork: 350 artworks computed
+// on every visit ran into the API's 5 s statement timeout (2026-10-20).
 router.get('/provenances', async (req, res) => {
   const slugs = [...new Set(listParam(req.query, 'artworks', /^[a-z0-9-]+$/) || [])];
   if (slugs.length > 300) throw badRequest('at most 300 artworks');
   const { rows } = await apiPool.query('SELECT id, slug FROM artworks WHERE slug = ANY ($1::text[])', [slugs]);
   const data = {};
-  for (let i = 0; i < rows.length; i += 4) {  // a few at a time: the pool is shared with every other request
-    await Promise.all(rows.slice(i, i + 4).map(async (r) => { data[r.slug] = await provenanceRoute(r.id); }));
+  const missing = [];
+  for (const r of rows) { const hit = provenanceCache.get(String(r.id)); if (hit) data[r.slug] = hit.value; else missing.push(r); }
+  for (let i = 0; i < missing.length; i += 4) {  // a few at a time: the pool is shared with every other request
+    await Promise.all(missing.slice(i, i + 4).map(async (r) => { data[r.slug] = await cachedProvenanceRoute(r.id, await dataVersion()); }));
   }
+  warmSoon();
   res.json({ data });
 });
 
@@ -138,7 +144,7 @@ router.get('/:plural/:slug', async (req, res) => {
   if (result.route && result.route.coordinates.length > 1) {
     features.push({ type: 'Feature', geometry: result.route, properties: { layer: 'route' } });
   }
-  const extra = e.type === 'artwork' ? { provenance: await provenanceRoute(id) } : {};
+  const extra = e.type === 'artwork' ? { provenance: await cachedProvenanceRoute(id, await dataVersion()) } : {};
   res.json({ type: 'FeatureCollection', entity: { type: e.type, ...entity }, features, ...extra });
 });
 
@@ -156,6 +162,43 @@ router.get('/:plural/:slug', async (req, res) => {
 //   unplaced  every step without a place, so a list beside the map can name them
 // Where each step was: provenance_stops() (091, in SQL — the travel distance uses it too). lag() over the placed
 // steps pairs each with the previous one — window functions instead of a loop in JavaScript.
+// Artworks' provenance maps, cached per artwork with the data version they were computed at — the change counter
+// every commit to the content raises (sequence quality_changes, migrations 058/122). An artwork's own map is always
+// current (computed again when the counter moved); the overview may serve one from before the last change while the
+// warm-up recomputes them, one artwork at a time, after each change.
+const provenanceCache = new Map();  // artwork id → { version, value }
+const dataVersion = async () => (await apiPool.query('SELECT last_value::text AS v FROM quality_changes')).rows[0].v;
+async function cachedProvenanceRoute(artworkId, version) {
+  const key = String(artworkId);
+  const hit = provenanceCache.get(key);
+  if (hit && hit.version === version) return hit.value;
+  const value = await provenanceRoute(artworkId);
+  provenanceCache.set(key, { version, value });
+  return value;
+}
+let warming = null;
+let warmTimer = null;
+async function warm() {
+  const version = await dataVersion();
+  const { rows } = await apiPool.query('SELECT id FROM artworks');
+  const ids = new Set(rows.map((r) => String(r.id)));
+  for (const id of provenanceCache.keys()) if (!ids.has(id)) provenanceCache.delete(id);   // deleted artworks
+  for (const r of rows) {
+    if (await dataVersion() !== version) return warm();   // changed meanwhile: start over with the new version
+    await cachedProvenanceRoute(r.id, version);
+  }
+}
+function warmSoon() {
+  clearTimeout(warmTimer);
+  warmTimer = setTimeout(() => {
+    if (warming) return;
+    warming = warm().catch((err) => console.error('map: provenance warm-up —', err.message)).finally(() => { warming = null; });
+  }, 1000);
+  warmTimer.unref?.();
+}
+// after a start (deploy, restart) the cache is empty: fill it before the first visitor needs it
+if (process.env.NODE_ENV === 'production') setTimeout(warmSoon, 5000).unref();
+
 async function provenanceRoute(artworkId) {
   const { rows: [r] } = await apiPool.query(`
     -- the stops: provenance_stops() (091) — the same the travel distance is measured along

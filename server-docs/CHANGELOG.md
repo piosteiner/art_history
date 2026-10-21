@@ -4,6 +4,56 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-20
 
+### Start map: provenance maps cached (migration 122)
+- **What:** `src/routes/map.js` keeps every artwork's provenance map in memory with the data version it was computed
+  at (the change counter `quality_changes`, 058; migration 122 lets the API role read it). An artwork's own map is
+  always current; `/v1/map/provenances` (the start map's overview) serves cached maps — possibly from before the last
+  change — and a warm-up recomputes them one artwork at a time after changes and after a start. E2E
+  `start-map-data.spec.js`.
+- **Why:** with 120 more works (≈ 100 ms of database time each) the overview's four parallel requests took 6–10 s and
+  ran into the API role's 5 s statement timeout ("timeout: Service Unavailable" on the start map; frontend tests).
+- **Revert:** revert the commit (no data changed); `REVOKE SELECT ON SEQUENCE quality_changes FROM arthistory_api;`
+  delete `122_…` from `schema_migrations`.
+
+### Data: five museums in France and Italy, 20 works each, and 20 works in place — with their provenance
+- **What:** (production; works and people created as user pio with `scripts/from-wikidata.js`, provenance imported as
+  YAML — source import) 120 works, 559 provenance steps, every step cited with the source's own words:
+  - **Louvre** (129 steps, after its collection records — `collections.louvre.fr` JSON with “Historique”, previous
+    owners, Jabach/Napoleon inventories): Mona Lisa (Salaì 1518, Francis I, the Crown, 1793, Peruggia's theft
+    1911–1913 and the Uffizi's custody), Venus de Milo (the find 1820, Marcellus, Rivière, Louis XVIII), Victory of
+    Samothrace, Code of Hammurabi (Elamite booty, Susa 1901, partage), Wedding at Cana (Campo Formio 1797, Austria's
+    claim 1815, Le Brun's painting in exchange), Vermeer's Astronomer (sales 1713–1881, Rothschild, seized 1940,
+    restituted 1946, dation 1983), Leonardo's St John (Charles I, Commonwealth sale, Jabach, Louis XIV), Caravaggio,
+    Van Dyck's Charles I (Verrue, Lassay, du Barry, Louis XVI), Michelangelo's Dying Slave (Strozzi, Montmorency,
+    Richelieu, seized 1792), David, Delacroix, Géricault (Bullock's tour 1820–21, the 1824 sale), Ingres, Van Eyck.
+  - **Musée d'Orsay** (145, its “Historique – Provenance”, read in the Internet Archive — the museum refuses this
+    server): L'Origine du monde (Khalil-Bey, Hatvany, Soviet looting 1945, Lacan, dation 1995), Olympia (Monet's
+    subscription 1890), the Angelus (Secrétan sale, American Art Association, Chauchard), Van Gogh's Bedroom
+    (Matsukata, sequestered 1944, kept under the 1959 settlement with Japan), Caillebotte bequest, Camondo, Quinn …
+  - **Uffizi** (77, its pages + Italian Wikipedia): Medici and Della Rovere (1631), Napoleonic spoliations and 1815
+    returns (Venus de' Medici, Madonna with the Long Neck), Simone Martini's Annunciation (exchanged 1799), Uccello
+    (Bartolini Salimbeni → Lorenzo 1484), the Medusa with two readings (1598 / 1608, sources disagree).
+  - **Galleria Borghese** (94, its catalogue's “Provenienza” with the 1693/1700/1790/1833 inventories): Scipione
+    Borghese's seizure of the Cavalier d'Arpino's pictures (1607), Raphael's Deposition taken from Perugia (1608),
+    Domenichino's Diana (the painter imprisoned), Correggio's Danaë (Charles V, Rudolf II, Swedish booty, Christina,
+    Orléans …), the 1833 fideicommissum, the State's purchase 1902; Bernini's Proserpina back from the Ludovisi 1908.
+  - **Pinacoteca di Brera** (65, its pages + Italian Wikipedia): Napoleonic suppressions, Raphael's Sposalizio (forced
+    gift to Lechi 1798, Sannazzari, Ospedale Maggiore, Beauharnais), Mantegna's Dead Christ, Hayez, Caravaggio.
+  - **20 works in place** (49, Italian/French Wikipedia): Last Supper, Scrovegni (Lamentation), Masaccio's Trinity,
+    Arezzo, Camera degli Sposi, Contarelli, Cornaro, Pio Monte (“not to be sold at any price”, 1613), Siena, Frari
+    Assunta (Accademia 1818–1919); Lascaux (found 1940, State 1972), Orangerie Water Lilies (gift 1922), Hall of
+    Mirrors ceiling, Chartres, Vence, Chagall's Opéra ceiling, Saint-Sulpice, Rude, Moissac, Sainte-Chapelle.
+  New: about 230 people, institutions and places (mostly from Wikidata; French royal collection, Roberto Strozzi,
+  Lorenzo Nasi by name), 60 bibliography entries. Fixes along the way: Louvre departments `part_of` the Louvre;
+  locations Wikidata gave movable sculptures removed; the artificial “mythological paintings by Botticelli” group
+  removed; 109 Wikidata citations of values replaced by the museums' own deleted; Bramante's Christ at the Column on
+  loan from Chiaravalle. Not possible yet: Lascaux's date (≈ 21,000 years BP) — dates before 4713 BCE don't fit
+  Postgres dates; given in the description.
+- **Why:** owner: “take 5 major museums in France and Italy and add 20 artworks from each with provenance … be as
+  precise as possible … also choose 20 artworks with fixed location in France and Italy”.
+- **Revert:** History page (audit log, 20 October, user pio and source import); the import folders are reproducible
+  from the scratchpad specs.
+
 ### Provenance: a gift under duress (migration 121)
 - **What:** `acquisition_method` value `forced_gift` — given under duress, no price (Raphael's Marriage of the Virgin:
   Città di Castello "practically forced" to give it to General Lechi, 1798); in the step form, import, API, site ("forced

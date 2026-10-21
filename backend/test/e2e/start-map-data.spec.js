@@ -55,3 +55,18 @@ test('start views: the museums and events pickers (auto, all, none, slugs) are a
   expect(problems).toContain('“auto” is not a value for artists');
   expect(problems).toContain('no institution “nowhere-museum”');
 });
+
+test('provenance maps are cached: the artwork’s own map is current at once, the overview follows after the warm-up', async ({ request }) => {
+  sql(`INSERT INTO artworks (slug, title) VALUES ('test-holders-now', 'Test Holders Now');
+       INSERT INTO provenance (artwork_id, position, owner_institution_id, method) VALUES
+         (entity_id('artwork', 'test-holders-now'), 0, entity_id('institution', 'museum-of-modern-art'), 'purchase')`);
+  const stops = (p) => p.features.filter((f) => f.properties.layer === 'provenance_stop').length;
+  const overview = async () => (await api(request, '/map/provenances?artworks=test-holders-now')).data['test-holders-now'];
+  expect(stops(await overview())).toBe(1);
+  sql(`INSERT INTO provenance (artwork_id, position, owner_institution_id, method) VALUES
+         (entity_id('artwork', 'test-holders-now'), 1, entity_id('institution', 'van-gogh-museum'), 'purchase')`);
+  // the artwork's own map: never from before the change
+  expect(stops((await api(request, '/map/artworks/test-holders-now')).provenance)).toBe(2);
+  // the overview: the warm-up brings it up to date within moments
+  await expect.poll(async () => stops(await overview()), { timeout: 15000 }).toBe(2);
+});
