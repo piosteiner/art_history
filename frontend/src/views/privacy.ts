@@ -2,7 +2,7 @@
 // when a service, a stored value or the log retention changes, update this page and its date.
 import { html, render } from '../html';
 
-const UPDATED = '15 October 2026';
+const UPDATED = '21 October 2026';
 const CONTACT = 'info@piogino.ch';
 
 export function privacy(main: HTMLElement) {
@@ -39,7 +39,9 @@ export function privacy(main: HTMLElement) {
             Museum of Art, the Art Institute of Chicago or the Cleveland Museum of Art, USA; the Rijksmuseum, Netherlands;
             SMK, Denmark)</td>
           <td>Your IP address and the image requested. Images are loaded directly from these servers, without cookies;
-            each image names its source.</td></tr>
+            each image names its source. A museum server that doesn't allow this anonymous loading gets the image request
+            once more as an ordinary one — still without telling it which page you came from; it could then read cookies it
+            set itself on an earlier visit of yours to its own site.</td></tr>
       </tbody>
     </table></div>
 

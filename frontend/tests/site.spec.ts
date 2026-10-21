@@ -97,6 +97,29 @@ test('artwork detail: image with credit opens large', async ({ page }) => {
   await expect(page.locator('dialog.lightbox')).toHaveCount(0);
 });
 
+test('several images: the first large, the others as thumbnails that show it large; a server without CORS still shows its image', async ({ page }) => {
+  const svg = (fill: string) => `<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="${fill}"/></svg>`;
+  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' }, body: svg('#3a6') }));
+  // a museum's own image server without Access-Control-Allow-Origin: refused with crossorigin, served without it
+  await page.route(/museum\.example\/img/, (r) => (r.request().headers().origin ? r.abort('failed') : r.fulfill({ contentType: 'image/svg+xml', body: svg('#c33') })));
+  await patch(page, GREAT_WAVE, (b) => {
+    const first = (b.images as Record<string, unknown>[])[0];
+    b.images = [first,
+      { url: 'https://museum.example/img/second.jpg', credit: 'Second credit', license: 'CC BY 4.0', caption: null, source_url: null },
+      { ...first, credit: 'Third credit' }];
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const gallery = page.locator('.gallery-multi');
+  await expect(gallery.locator('.gallery-item:visible')).toHaveCount(1);
+  await expect(gallery.locator('.gallery-thumb')).toHaveCount(3);
+  await gallery.locator('.gallery-thumb').nth(1).click();
+  const shown = gallery.locator('.gallery-item:visible');
+  await expect(shown).toContainText('Second credit');
+  await expect.poll(() => shown.locator('img').evaluate((i: HTMLImageElement) => i.naturalWidth)).toBeGreaterThan(0);
+  await expect(shown.locator('img')).not.toHaveAttribute('crossorigin', /.*/);
+  await expect(gallery.locator('.gallery-thumb').nth(1)).toHaveAttribute('aria-current', 'true');
+});
+
 test('enlarged image: the wheel zooms towards the pointer, dragging moves it, a click beside it closes', async ({ page }) => {
   // our own picture instead of Wikimedia's (a picture with a known size: throttled or placeholder images have none to zoom)
   await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
@@ -783,7 +806,7 @@ test('names in several languages: lang, original with furigana, search by other 
 
 test('people (formerly patrons): page, roles, old /patrons/ addresses redirect', async ({ page }) => {
   await page.goto('/patrons/theo-van-gogh');
-  await expect(page).toHaveURL(/\/people\/theo-van-gogh$/);
+  await expect(page).toHaveURL(/\/people\/(\d+\/)?theo-van-gogh$/);   // the numbered address where the number is known (085)
   await expect(page.locator('h1')).toHaveText('Theo van Gogh');
   await expect(page.locator('.facts')).toContainText('patron'); // role derived from "patron of"
   await page.goto('/people');

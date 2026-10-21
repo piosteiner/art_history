@@ -76,13 +76,54 @@ export function figure(img: Image, alt: string, width = 500) {
   </figure>`;
 }
 
-/** Thumbnails that don't exist at the requested width fall back to the original URL. */
+/**
+ * An image that fails: a thumbnail that doesn't exist at the requested width falls back to the original URL; an image
+ * server that doesn't allow anonymous (CORS) loading — e.g. a museum's own collection server — gets the image once
+ * more as a plain request, still without our address as referrer (privacy page: "Images").
+ */
+export function retryImage(img: HTMLImageElement) {
+  img.addEventListener('error', () => {
+    const original = img.dataset.fallback;
+    if (original && img.src !== original) { img.src = original; return; }
+    if (img.hasAttribute('crossorigin')) {
+      img.removeAttribute('crossorigin');
+      img.referrerPolicy = 'no-referrer';
+      const src = img.src;
+      img.src = '';
+      img.src = src;
+    }
+  });
+}
 export function wireImageFallbacks(root: Element) {
-  root.querySelectorAll<HTMLImageElement>('img[data-fallback]').forEach((img) => {
-    img.addEventListener('error', () => {
-      const original = img.dataset.fallback;
-      if (original && img.src !== original) img.src = original;
-    }, { once: true });
+  root.querySelectorAll<HTMLImageElement>('img[crossorigin], img[data-fallback]').forEach(retryImage);
+}
+
+/**
+ * Several images of an entry: the first large, the others as thumbnails under it — a click (or Enter) shows that one
+ * large, with its own credit. All figures are in the page; only the chosen one is visible (the others load when shown).
+ */
+export function gallery(images: Image[], alt: string) {
+  if (images.length < 2) return html`<div class="gallery">${images.map((img) => figure(img, alt))}</div>`;
+  return html`<div class="gallery gallery-multi">
+    ${images.map((img, i) => html`<div class="gallery-item"${i ? ' hidden' : ''}>${figure(img, alt)}</div>`)}
+    <div class="gallery-thumbs" role="group" aria-label="Images">
+      ${images.map((img, i) => html`<button type="button" class="gallery-thumb${i ? '' : ' current'}" data-image="${String(i)}"
+        aria-label="Image ${String(i + 1)} of ${String(images.length)}"${i ? '' : ' aria-current="true"'}>
+        <img src="${thumb(img.url, 120)}" alt="" loading="lazy" decoding="async" crossorigin="anonymous" ${thumb(img.url, 120) !== img.url ? html`data-fallback="${img.url}"` : ''}></button>`)}
+    </div></div>`;
+}
+export function wireGalleries(root: Element) {
+  root.querySelectorAll<HTMLElement>('.gallery-multi').forEach((g) => {
+    g.addEventListener('click', (e) => {
+      const b = (e.target as Element).closest<HTMLButtonElement>('.gallery-thumb');
+      if (!b) return;
+      const n = Number(b.dataset.image);
+      g.querySelectorAll<HTMLElement>('.gallery-item').forEach((item, i) => { item.hidden = i !== n; });
+      g.querySelectorAll<HTMLButtonElement>('.gallery-thumb').forEach((t, i) => {
+        t.classList.toggle('current', i === n);
+        if (i === n) t.setAttribute('aria-current', 'true'); else t.removeAttribute('aria-current');
+      });
+    });
   });
 }
 
@@ -95,9 +136,10 @@ export function wireLightbox(root: Element) {
       const caption = img.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
       // the caption was built by figure() above from escaped values, so reusing its markup is safe
       dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close">×</button>
-        <figure><div class="lightbox-stage"><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}" crossorigin="anonymous" draggable="false"></div>
+        <figure><div class="lightbox-stage"><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}"${img.hasAttribute('crossorigin') ? ' crossorigin="anonymous"' : ' referrerpolicy="no-referrer"'} draggable="false"></div>
         <figcaption>${caption}<span class="lightbox-hint">Scroll or pinch to zoom · drag to move · double-click: fit / zoom</span></figcaption></figure>`;
       // the image zooms and pans (zoom.ts); a click beside it closes, as does Escape or ×
+      retryImage(dialog.querySelector('img')!);
       const unzoom = zoomable(dialog.querySelector<HTMLElement>('.lightbox-stage')!, dialog.querySelector('img')!);
       dialog.addEventListener('click', (e) => {
         if (!(e.target as Element).closest('figcaption a, .lightbox-stage')) dialog.close();

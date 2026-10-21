@@ -6,7 +6,7 @@ import { keepInView, markWords, wordsToMark } from '../highlight';
 import { citeSection, connectSection, sharedHandsSection } from './detail-network';
 import { GROUPS, type Group } from '../selection';
 import {
-  titleStatusLine, displayName, langAttr, originalLine, figure, html, PLURAL_LABEL, render, trusted, TYPE_LABEL, wireImageFallbacks, wireLightbox,
+  titleStatusLine, displayName, langAttr, originalLine, gallery, html, PLURAL_LABEL, render, trusted, TYPE_LABEL, wireGalleries, wireImageFallbacks, wireLightbox,
 } from '../html';
 import { COLORS } from '../colors';
 import type { DetailByPlural, Plural } from '../types';
@@ -73,7 +73,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
         </p>
         <div class="detail-grid">
           <div class="detail-main">
-            ${v.images.length ? html`<div class="gallery">${v.images.map((img) => figure(img, v.title))}</div>`
+            ${v.images.length ? gallery(v.images, v.title)
               : web ? html`<div class="web-panel"><p>There is no freely licensed image of this work we can show here.</p>
                   <p>${webPageLink(web)}</p>${web.accessed ? html`<p>${accessedNote(web)}</p>` : ''}</div>` : ''}
             ${v.lead ? html`<p class="lead">${v.lead}</p>` : ''}
@@ -100,6 +100,7 @@ export function detail(main: HTMLElement, plural: Plural, key: string) {
       </article>`);
       wireImageFallbacks(main);
       wireLightbox(main);
+      wireGalleries(main);
       knownPreviews(e.entries);
       wireTextLinks(main, e.glossary, e.bibliography, e.entries);
       wireCitations(main);
