@@ -2,6 +2,19 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-21
+
+### Fix: the duplicate check weighs only its candidate pairs (migration 123) — the admin dashboard loads again
+- **What:** `possible_duplicate` in `quality_issues_live` fetches the candidate pairs with their facts first (subquery
+  with `OFFSET 0`) and only then runs `dup_maybe()` / `dup_score()`. The planner had joined `dup_facts` with itself
+  (489,434 same-type pairs, all through `dup_maybe`) before narrowing to the 6,146 candidates: 124 s for the check,
+  130 s for all findings → `refresh_quality()` over the admin role's 30 s statement timeout on every try since the
+  night of 20/21 October (stored findings stale since 23:41), and the dashboard, computing them live, failed with 500
+  after 30 s. Now: check 7 s, all findings 11 s, refresh 14 s (measured on a restored copy); the same 58 findings.
+- **Why:** owner: the admin page wasn't reachable (the dashboard at `/`; other pages worked).
+- **Revert:** redeploy the previous commit; recreate the branch of `quality_issues_live` as in 093;
+  `DELETE FROM schema_migrations WHERE name = '123_duplicate_check_pairs_first.sql';`
+
 ## 2026-10-20
 
 ### Start map: provenance maps cached (migration 122)
