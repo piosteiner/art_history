@@ -12,6 +12,8 @@
 // two people at the same institution at the same time could have met; in the same place, they were in the same city.
 const express = require('express');
 const { apiPool } = require('../db');
+const cache = require('../cache');
+const { versioned } = cache;
 const { badRequest, notFound, yearWindowRange, listParam } = require('../http');
 const { ENTITIES } = require('./entities');
 
@@ -55,14 +57,8 @@ router.get('/places', async (req, res) => {
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
 });
 
-// Presence answers cached per window and types (at most PRESENCE_CACHE_MAX, the least used dropped). The version is
-// the change counter — but only while the derived data is current (quality_fresh(), 125–127): the stays come from the
-// stored graph, which the worker brings up to date a moment after a change; cached in between, a stale answer would
-// carry the new version. Not current: computed, not cached (null).
-const presenceCache = new Map();
-const PRESENCE_CACHE_MAX = 20;
-const presenceVersion = async () => (await apiPool.query(
-  'SELECT CASE WHEN quality_fresh() THEN last_value::text END AS v FROM quality_changes')).rows[0].v;
+// Presence answers cached per window and types (src/cache.js: per data version, while the derived data is current)
+const presenceCache = versioned(20);
 
 router.get('/presence', async (req, res) => {
   const window = yearWindowRange(req.query);
@@ -75,48 +71,31 @@ router.get('/presence', async (req, res) => {
   res.type('json').send(await presenceAnswer(window, types));
 });
 
-// The presence answer for a window and types, as JSON text — cached (see presenceCache above).
-async function presenceAnswer(window, types) {
-  const key = `${window}|${[...types].sort().join(',')}`;
-  const version = await presenceVersion();
-  const hit = version && presenceCache.get(key);
-  if (hit && hit.version === version) return hit.body;
-  // Undated edges are left out: we can't say they overlap the window.
-  const { rows } = await apiPool.query(`
-    SELECT jsonb_build_object(
-      'type', 'Feature',
-      'geometry', ST_AsGeoJSON(s.marker)::jsonb,
-      'properties', jsonb_build_object(
-        'entity', jsonb_build_object('type', e.type, 'slug', e.slug, 'name', e.name),
-        ${SITE_PROPS},
-        'relationship', rt.code, 'label', rt.label, 'note', r.label, 'certainty', r.certainty,
-        'period', range_json(r.period, r.period_label))) AS feature
-    FROM graph_links r  -- stored + derived (provenance: kept_in, 031) — stored, kept up to date per change (126)
-    JOIN relationship_types rt ON rt.code = r.relationship_type AND rt.is_physical_presence
-    ${SITE_JOINS}
-    JOIN entity_index e ON e.type = r.subject_type AND e.id = r.subject_id
-    WHERE r.subject_type = ANY ($2::entity_type[]) AND r.period && $1::daterange AND s.marker IS NOT NULL
-    ORDER BY lower(r.period), e.sort_key COLLATE sort_natural`, [window, types]);
-  const body = JSON.stringify({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });
-  if (version) {
-    presenceCache.delete(key);   // re-inserted: the Map's order is the order of use, the oldest go first
-    presenceCache.set(key, { version, body });
-    for (const k of presenceCache.keys()) { if (presenceCache.size <= PRESENCE_CACHE_MAX) break; presenceCache.delete(k); }
-  }
-  return body;
+// The presence answer for a window and types, as JSON text — cached (src/cache.js).
+function presenceAnswer(window, types) {
+  return presenceCache(`${window}|${[...types].sort().join(',')}`, async () => {
+    // Undated edges are left out: we can't say they overlap the window.
+    const { rows } = await apiPool.query(`
+      SELECT jsonb_build_object(
+        'type', 'Feature',
+        'geometry', ST_AsGeoJSON(s.marker)::jsonb,
+        'properties', jsonb_build_object(
+          'entity', jsonb_build_object('type', e.type, 'slug', e.slug, 'name', e.name),
+          ${SITE_PROPS},
+          'relationship', rt.code, 'label', rt.label, 'note', r.label, 'certainty', r.certainty,
+          'period', range_json(r.period, r.period_label))) AS feature
+      FROM graph_links r  -- stored + derived (provenance: kept_in, 031) — stored, kept up to date per change (126)
+      JOIN relationship_types rt ON rt.code = r.relationship_type AND rt.is_physical_presence
+      ${SITE_JOINS}
+      JOIN entity_index e ON e.type = r.subject_type AND e.id = r.subject_id
+      WHERE r.subject_type = ANY ($2::entity_type[]) AND r.period && $1::daterange AND s.marker IS NOT NULL
+      ORDER BY lower(r.period), e.sort_key COLLATE sort_natural`, [window, types]);
+    return { type: 'FeatureCollection', features: rows.map((r) => r.feature) };
+  });
 }
-// The start map's overview asks for all time and every kind (frontend explore.ts ALL_TIME): computed ahead once the
-// derived data is current after a change — the first visitor then finds it ready (1.3 s at 10× today's data).
-let presenceWarmed = null;
-async function warmPresence() {
-  const version = await presenceVersion();
-  if (!version || version === presenceWarmed) return;
-  await presenceAnswer(yearWindowRange({ from: '-3000', to: String(new Date().getFullYear() + 1) }), ['artist', 'person', 'artwork']);
-  presenceWarmed = version;
-}
-if (process.env.NODE_ENV === 'production') {
-  setInterval(() => warmPresence().catch((err) => console.error('map: presence warm-up —', err.message)), 15000).unref();
-}
+// The start map's overview asks for all time and every kind (frontend explore.ts ALL_TIME): computed ahead after a
+// change (1.3 s at 10× today's data).
+cache.warm('presence, all time', () => presenceAnswer(yearWindowRange({ from: '-3000', to: String(new Date().getFullYear() + 1) }), ['artist', 'person', 'artwork']));
 
 // Several artworks' provenance on the map at once (?artworks=slug,slug … — at most 300): {data: {slug: provenance}},
 // each as in an artwork's map (`provenance`). The start map's overview draws every artwork's provenance: one request

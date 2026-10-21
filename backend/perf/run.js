@@ -1,11 +1,11 @@
 // npm run perf — the time budgets (perf/budgets.json) checked on scale_test, ten times today's data
-// (perf/make-scale-db.sh). Starts a server of this checkout on scale_test (port 3015, never the live process), waits
+// (perf/make-scale-db.sh). Migrates scale_test to this checkout, starts a server of it on scale_test (port 3015, never the live process), waits
 // until its worker has every derived row current, then times the API's heavy requests (a first request, then the
 // median of three), whole lists, one change through the worker and the global part. Exit code 1 if a budget is
 // exceeded or a request fails. Takes a few minutes; run it before deploying changes to queries, views or the worker.
 const path = require('path');
 const http = require('http');
-const { spawn } = require('child_process');
+const { spawn, execFileSync } = require('child_process');
 
 process.env.DB_NAME = 'scale_test';
 const BACKEND = path.join(__dirname, '..');
@@ -39,6 +39,8 @@ async function until(what, test, timeoutMs) {
 }
 
 async function main() {
+  // the schema of this checkout first (a budget measured on an older schema says nothing)
+  execFileSync(process.execPath, ['scripts/migrate.js'], { cwd: BACKEND, env: { ...process.env, DB_NAME: 'scale_test' }, stdio: 'inherit' });
   const server = spawn(process.execPath, ['src/server.js'], {
     cwd: BACKEND,
     env: { ...process.env, DB_NAME: 'scale_test', PORT: String(PORT), NODE_ENV: 'development', DB_ADMIN_POOL_MAX: '2', DB_API_POOL_MAX: '4' },

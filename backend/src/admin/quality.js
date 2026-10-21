@@ -71,9 +71,42 @@ let lastGlobal = 0;
 let timer = null;
 let globalTimer = null;
 let nightly = null;
+let retry = null;
 let pool = null;     // the admin pool (start())
 
 const isFresh = async (db) => (await db.query('SELECT quality_fresh() AS f')).rows[0].f === true;
+
+// Errors that aren't an entry's: the database gone or restarting, connections refused — nothing is set aside then.
+const SYSTEMIC = (err) => /^(08|57P0|53)/.test(err.code || '') || ['ECONNREFUSED', 'ECONNRESET', 'ETIMEDOUT', 'EPIPE'].includes(err.code)
+  || /terminat|Connection terminated/i.test(err.message);
+const QUARANTINE_MAX = 5;   // this many single entries failing in a row: not the entries — stop and try again later
+
+// One batch of the queue (128). A failed batch: its entries one at a time — one that fails alone is set aside
+// (derived_quarantine: out of the queue, into derived_failures with the error) and the rest goes on.
+async function nextBatch() {
+  try {
+    return (await pool.query('SELECT process_derived($1) AS n', [BATCH_SIZE])).rows[0].n;
+  } catch (err) {
+    if (SYSTEMIC(err)) throw err;
+    console.error(`quality: a batch failed (${err.message}) — its entries one at a time`);
+  }
+  let done = 0;
+  let inRow = 0;
+  for (let i = 0; i < BATCH_SIZE; i++) {
+    try {
+      const n = (await pool.query('SELECT process_derived(1) AS n')).rows[0].n;
+      if (!n) break;
+      done += n;
+      inRow = 0;
+    } catch (err) {
+      if (SYSTEMIC(err) || ++inRow >= QUARANTINE_MAX) throw err;
+      const who = (await pool.query('SELECT derived_quarantine($1) AS q', [err.message])).rows[0].q;
+      console.error(`quality: ${who} set aside — ${err.message}`);
+      done++;
+    }
+  }
+  return done;
+}
 
 function refresh() {
   if (running) { again = true; return running; }
@@ -83,7 +116,7 @@ function refresh() {
         again = false;
         // a batch, then its entries' list rows (127) — until the queue is empty
         for (;;) {
-          const n = (await pool.query('SELECT process_derived($1) AS n', [BATCH_SIZE])).rows[0].n;
+          const n = await nextBatch();
           await refreshLists();
           if (!n) break;
         }
@@ -109,44 +142,71 @@ function refresh() {
 // A row changed for an entry queued only by the nightly full run = drift ('list row').
 const LIST_BATCH = 200;
 async function refreshLists() {
+  let size = LIST_BATCH;
+  let single = 0;      // after a failed batch: this many entries one at a time
+  let inRow = 0;
+  for (;;) {
+    try {
+      const n = await listBatch(single ? 1 : size);
+      if (!n) return;
+      if (single) { single -= 1; inRow = 0; }
+    } catch (err) {
+      if (SYSTEMIC(err)) throw err;
+      if (!single) { console.error(`quality: list rows failed (${err.message}) — one at a time`); single = LIST_BATCH; continue; }
+      if (++inRow >= QUARANTINE_MAX) throw err;
+      // the oldest one alone failed: set aside
+      const { rows: [q] } = await pool.query(`
+        WITH oldest AS (SELECT type, id FROM list_queue ORDER BY seq LIMIT 1),
+        gone AS (DELETE FROM list_queue l USING oldest o WHERE l.type = o.type AND l.id = o.id RETURNING l.type, l.id)
+        INSERT INTO derived_failures (type, id, what, error) SELECT DISTINCT type, id, 'list row', left($1, 2000) FROM gone
+        ON CONFLICT (type, id, what) DO UPDATE SET error = EXCLUDED.error, failed_at = EXCLUDED.failed_at
+        RETURNING type || '/' || id AS who`, [err.message]);
+      console.error(`quality: list row of ${q ? q.who : '?'} set aside — ${err.message}`);
+      single -= 1;
+    }
+  }
+}
+// The oldest `size` entries of list_queue in one transaction → how many there were (0: empty)
+async function listBatch(size) {
   const { ENTITIES, listRows } = require('../routes/entities');   // here: the routes load after this module
   const pluralOf = Object.fromEntries(Object.entries(ENTITIES).map(([plural, e]) => [e.type, plural]));
-  for (;;) {
-    const client = await pool.connect();
-    try {
-      await client.query('BEGIN');
-      const { rows: queued } = await client.query(`
-        DELETE FROM list_queue WHERE seq IN (SELECT seq FROM list_queue ORDER BY seq LIMIT $1 FOR UPDATE SKIP LOCKED)
-        RETURNING type::text AS type, id::text AS id, full_run`, [LIST_BATCH]);
-      if (!queued.length) { await client.query('COMMIT'); return; }
-      const byType = new Map();
-      for (const q of queued) {
-        if (!byType.has(q.type)) byType.set(q.type, new Map());
-        const ids = byType.get(q.type);
-        ids.set(q.id, (ids.get(q.id) ?? true) && q.full_run);   // full only if every queuing was the full run
+  const client = await pool.connect();
+  try {
+    await client.query('BEGIN');
+    const { rows: queued } = await client.query(`
+      DELETE FROM list_queue WHERE seq IN (SELECT seq FROM list_queue ORDER BY seq LIMIT $1 FOR UPDATE SKIP LOCKED)
+      RETURNING type::text AS type, id::text AS id, full_run`, [size]);
+    if (!queued.length) { await client.query('COMMIT'); return 0; }
+    const byType = new Map();
+    for (const q of queued) {
+      if (!byType.has(q.type)) byType.set(q.type, new Map());
+      const ids = byType.get(q.type);
+      ids.set(q.id, (ids.get(q.id) ?? true) && q.full_run);   // full only if every queuing was the full run
+    }
+    for (const [type, ids] of byType) {
+      if (!pluralOf[type]) continue;
+      const rows = await listRows(client, pluralOf[type], [...ids.keys()]);
+      const { rows: written } = await client.query(`
+        INSERT INTO entry_list_rows AS r (type, id, row)
+          SELECT $1::entity_type, x.id::bigint, x.row FROM jsonb_to_recordset($2::jsonb) x(id text, row jsonb)
+        ON CONFLICT (type, id) DO UPDATE SET row = EXCLUDED.row WHERE r.row IS DISTINCT FROM EXCLUDED.row
+        RETURNING id::text`, [type, JSON.stringify([...rows].map(([id, row]) => ({ id, row })))]);
+      const { rows: gone } = await client.query(`
+        DELETE FROM entry_list_rows WHERE type = $1 AND id = ANY ($2::bigint[]) AND NOT (id = ANY ($3::bigint[]))
+        RETURNING id::text`, [type, [...ids.keys()], [...rows.keys()]]);
+      const drift = [...written, ...gone].map((r) => r.id).filter((id) => ids.get(id));
+      if (drift.length) {
+        await client.query("INSERT INTO derived_drift (type, id, what) SELECT $1, unnest($2::bigint[]), 'list row'", [type, drift]);
       }
-      for (const [type, ids] of byType) {
-        if (!pluralOf[type]) continue;
-        const rows = await listRows(client, pluralOf[type], [...ids.keys()]);
-        const { rows: written } = await client.query(`
-          INSERT INTO entry_list_rows AS r (type, id, row)
-            SELECT $1::entity_type, x.id::bigint, x.row FROM jsonb_to_recordset($2::jsonb) x(id text, row jsonb)
-          ON CONFLICT (type, id) DO UPDATE SET row = EXCLUDED.row WHERE r.row IS DISTINCT FROM EXCLUDED.row
-          RETURNING id::text`, [type, JSON.stringify([...rows].map(([id, row]) => ({ id, row })))]);
-        const { rows: gone } = await client.query(`
-          DELETE FROM entry_list_rows WHERE type = $1 AND id = ANY ($2::bigint[]) AND NOT (id = ANY ($3::bigint[]))
-          RETURNING id::text`, [type, [...ids.keys()], [...rows.keys()]]);
-        const drift = [...written, ...gone].map((r) => r.id).filter((id) => ids.get(id));
-        if (drift.length) {
-          await client.query("INSERT INTO derived_drift (type, id, what) SELECT $1, unnest($2::bigint[]), 'list row'", [type, drift]);
-        }
-      }
-      await client.query('COMMIT');
-    } catch (err) {
-      await client.query('ROLLBACK').catch(() => {});
-      throw err;
-    } finally { client.release(); }
-  }
+      // computed: no longer set aside (128)
+      await client.query("DELETE FROM derived_failures WHERE type = $1 AND id = ANY ($2::bigint[]) AND what = 'list row'", [type, [...ids.keys()]]);
+    }
+    await client.query('COMMIT');
+    return queued.length;
+  } catch (err) {
+    await client.query('ROLLBACK').catch(() => {});
+    throw err;
+  } finally { client.release(); }
 }
 const refreshSoon = () => { clearTimeout(timer); timer = setTimeout(refresh, 500); };
 
@@ -217,6 +277,10 @@ function start(adminPool, { nightlyRun = true } = {}) {
     nightly = setInterval(() => fullRunDue().catch((err) => console.error('quality: nightly run —', err.message)), 15 * 60 * 1000);
     nightly.unref();
   }
+  // a refresh that failed (database restarting, an error not set aside) is tried again within a minute, also when no
+  // change comes to wake the worker
+  retry = setInterval(() => { if (!running) isFresh(pool).then((fresh) => { if (!fresh) refresh(); }).catch(() => {}); }, 60 * 1000);
+  retry.unref();
   return listen();
 }
 async function stop() {
@@ -224,6 +288,7 @@ async function stop() {
   clearTimeout(timer);
   clearTimeout(globalTimer);
   clearInterval(nightly);
+  clearInterval(retry);
   if (listener) await listener.end().catch(() => {});
   if (running) await running;
 }
@@ -333,13 +398,13 @@ function ackForm(r, back, acked) {
         <input name="note" placeholder="why it is right (optional)" aria-label="note"><button class="secondary">Mark as OK</button></form>`;
 }
 
-function page({ rows, allCounts, filter, back, featured = 0, status: st = null, driftRows = [] }) {
+function page({ rows, allCounts, filter, back, featured = 0, status: st = null, driftRows = [], failureRows = [] }) {
   const total = (s) => allCounts.filter((c) => c.severity === s).reduce((n, c) => n + c.n, 0);
   const q = (params) => `/quality?${new URLSearchParams(Object.entries({ ...filter, ...params }).filter(([, v]) => v)).toString()}`;
   const groups = {};
   for (const r of rows) (groups[r.check_id] ||= []).push(r);
   return html`<h1>Data quality</h1>
-    ${statusLine(st)}${driftBox(driftRows)}
+    ${statusLine(st)}${failuresBox(failureRows)}${driftBox(driftRows)}
     ${featured ? html`<p class="flash error">${featured} start view${featured === 1 ? ' has' : 's have'} problems (an entry deleted, a key the site doesn't know …) —
       <a href="/featured">Start views</a>.</p>` : ''}
     <p class="small">Batch pages: <a href="/quality/batch/wikidata">find Wikidata items</a> ·
@@ -380,12 +445,29 @@ function page({ rows, allCounts, filter, back, featured = 0, status: st = null, 
 
 // How current the stored result is (125): a line for the quality page and the dashboard.
 const clock = (d) => (d ? d.toISOString().slice(11, 16) : '—');   // UTC, as when() in core.js
+const STALE_MINUTES = 10;   // the queue's oldest entry waiting longer: the worker is stuck or failing — said loudly
+const stale = (st) => st && st.oldest && Date.now() - st.oldest.getTime() > STALE_MINUTES * 60000;
 function statusLine(st) {
   if (!st) return '';
+  if (stale(st)) return html`<p class="flash error qa-status stale">The checks are stuck: ${st.waiting} ${st.waiting === 1 ? 'entry has' : 'entries have'} waited since ${clock(st.oldest)} UTC
+    — the findings, search fields and lists below are out of date. The server log says why (<code>pm2 logs arthistory-api</code>).</p>`;
   if (st.waiting) return html`<p class="muted small qa-status updating">Updating — ${st.waiting} ${st.waiting === 1 ? 'entry' : 'entries'} waiting to be checked again (since ${clock(st.oldest)}); the lists below are a moment behind.</p>`;
   if (!st.global_current) return html`<p class="muted small qa-status updating">Updating the checks over all entries (broken links, narrowable dates) — a moment behind.</p>`;
   return html`<p class="muted small qa-status">Up to date · checked ${clock(st.refreshed_at)}${st.full_at ? html` · last full check ${st.full_at.toISOString().slice(0, 16).replace('T', ' ')}` : ''}</p>`;
 }
+// Entries the worker set aside because computing them failed (128) — their findings, search fields or list row are
+// out of date until the cause is fixed (then the next change or the nightly run computes them again).
+async function failures(db) {
+  const { rows } = await db.query(`
+    SELECT f.type::text AS type, f.what, f.error, f.failed_at, e.slug, e.name FROM derived_failures f
+    LEFT JOIN entity_index e ON e.type = f.type AND e.id = f.id ORDER BY f.failed_at DESC LIMIT 100`);
+  return rows;
+}
+const failuresBox = (rows) => (rows.length ? html`<div class="flash error qa-failures"><b>${rows.length} ${rows.length === 1 ? 'entry' : 'entries'} could not be checked</b>
+    — set aside so the others go on; their findings, search fields or list rows are out of date. The error says why (a bug to report):
+    <ul>${rows.map((r) => html`<li>${r.slug ? html`<a href="${link(r)}">${r.name}</a>` : html`<i>deleted</i>`} <span class="tag">${r.type}</span> ${r.what}:
+      <code>${r.error}</code> <span class="muted small">${r.failed_at.toISOString().slice(0, 16).replace('T', ' ')}</span></li>`)}</ul></div>` : '');
+
 // What the nightly full run changed that the incremental path had missed (the last week) — each a dependency the
 // triggers of 125 don't know yet.
 async function drift(db) {
@@ -427,5 +509,5 @@ async function unack(db, { check_id: checkId, issue_key: issueKey }) {
   await db.query('DELETE FROM quality_acks WHERE check_id = $1 AND issue_key = $2', [checkId, issueKey]);
 }
 
-module.exports = { CHECKS, SEVERITIES, issues, counts, page, entityBox, ack, unack, start, stop, current, isFresh, refresh, status, queued, settled, statusLine, drift,
+module.exports = { CHECKS, SEVERITIES, issues, counts, page, entityBox, ack, unack, start, stop, current, isFresh, refresh, status, queued, settled, statusLine, stale, drift, failures,
   filterOf, filterQuery, queue, next, queueLink, queueBar };

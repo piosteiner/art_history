@@ -435,6 +435,9 @@ never the view (all checks take seconds, more as the data grows). How it stays c
   after the queue, at most every 30 s (`QUALITY_GLOBAL_EVERY_MS`), at once when a page waits.
 - *Safety net*: each night after 03:00 `refresh_quality_full()` queues every entry (reason `full`); what that changes
   was missed by the triggers and lands in `derived_drift` (shown on the Quality page) — fix the dependency there.
+- *Failures* (128): a failed batch is taken one entry at a time by the worker; an entry failing alone is set aside
+  (`derived_quarantine()` → `derived_failures` with the error, shown on dashboard and Quality page), the rest goes
+  on; a later success clears it. Systemic errors set nothing aside; the worker retries every minute.
 - `quality_fresh()` = queue empty and the global part has seen the last change; `quality_status()` for the pages;
   `refresh_quality()` = everything now (empties the queue, then the global part — tests and scripts).
 - **A migration that changes a check replaces `quality_issues_live`** (then `SELECT refresh_quality_full()`); one

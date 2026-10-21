@@ -73,6 +73,9 @@ router.get('/', async (req, res) => {
   send(req, res, {
     title: 'Dashboard',
     body: html`<h1>Dashboard</h1>
+      ${quality.stale(qaStatus) || qaStatus.failures ? html`<div class="flash error qa-alert"><b>Data quality needs attention:</b>
+        ${quality.stale(qaStatus) ? html`the checks are stuck (${qaStatus.waiting} waiting)` : ''}${quality.stale(qaStatus) && qaStatus.failures ? ' · ' : ''}${
+        qaStatus.failures ? html`${qaStatus.failures} ${qaStatus.failures === 1 ? 'entry' : 'entries'} could not be checked` : ''} — <a href="/quality">Data quality</a>.</div>` : ''}
       ${unpublishedRows.length ? html`<div class="flash draft"><b>Unpublished changes:</b> ${unpublishedRows.map((d, i) => html`${i ? ' · ' : ''}<a href="/${BY_TYPE[d.type].folder}/${d.slug}/edit">${d.name}</a>
         <span class="muted small">${d.contributors.join(', ')} · ${when(d.updated_at)}</span>`)}</div>` : ''}
       ${myDrafts.length ? html`<div class="flash draft"><b>Your unsaved drafts:</b> ${myDrafts.map((d, i) => html`${i ? ' · ' : ''}<a href="/${BY_TYPE[d.type].folder}/${d.slug ? `${d.slug}/edit` : 'new'}?draft=1">${d.name || `new ${d.type}`}</a>
@@ -156,12 +159,12 @@ router.get('/quality', async (req, res) => {
   };
   // the stored result (058/125) — waiting a moment for a change just made; never computed here
   await quality.current(adminPool, { wait: 3000 });
-  const [rows, allCounts, status, driftRows] = await Promise.all([
+  const [rows, allCounts, status, driftRows, failureRows] = await Promise.all([
     quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked }),
-    quality.counts(adminPool), quality.status(adminPool), quality.drift(adminPool)]);
+    quality.counts(adminPool), quality.status(adminPool), quality.drift(adminPool), quality.failures(adminPool)]);
   // start views (069) aren't entries — their problems are counted here, listed on /featured
   const featured = (await adminPool.query('SELECT count(DISTINCT id)::int AS n FROM featured_view_problems')).rows[0].n;
-  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl, featured, status, driftRows }) });
+  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl, featured, status, driftRows, failureRows }) });
 });
 
 // "Mark as OK" / undo — back to where it was clicked (only local paths).

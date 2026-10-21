@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### Step 5: the worker can't get stuck; the periods timeline cached (migration 128)
+- **What:**
+  - A batch that fails is taken one entry at a time; an entry that fails alone is set aside (`derived_quarantine()` →
+    table `derived_failures` with the error) and the rest goes on — before, one bad entry blocked the whole queue.
+    The same for list rows. Errors that aren't an entry's (database unreachable, 5 single failures in a row) set
+    nothing aside. A success (its next change, the nightly run) clears the record.
+  - The worker retries every minute even without a new change.
+  - Dashboard: a red notice when entries were set aside or the queue's oldest entry waits over 10 minutes; Quality
+    page: the set-aside entries with their errors, "the checks are stuck" instead of the status line.
+  - `src/cache.js`: answers summing up the whole database cached per data version while the derived data is
+    current, computed ahead in production — the presence map (moved here) and `/v1/periods` (2.1 s → 4 ms at 10×).
+  - `npm run perf` migrates scale_test first; e2e `derived-failures.spec.js` (a test trigger breaks one entry).
+- **Why:** owner: reliable processes at thousands of entries — a failure must stay local and be visible.
+- **Revert:** redeploy the previous commit; as owner restore `process_derived()` from 127 (without the
+  derived_failures line) and `quality_status()` from 127; `DROP FUNCTION derived_quarantine(text); DROP TABLE
+  derived_failures;` `DELETE FROM schema_migrations WHERE name = '128_derived_failures.sql';`
+
 ### Step 4 of the scaling plan: presence cache, performance budgets, slow-query report
 - **What:**
   - `/v1/map/presence` answers cached per window and types (≤ 20) while the derived data is current (version =

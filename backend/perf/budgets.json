@@ -15,7 +15,7 @@
     "search": { "path": "/search?q=goya", "budget": 1500 },
     "full-text search": { "path": "/search/text?q=goya", "budget": 2000 },
     "did you mean": { "path": "/search/suggest?q=goyya", "budget": 200 },
-    "periods": { "path": "/periods", "budget": 4500 }
+    "periods (cached per data version, src/cache.js)": { "path": "/periods", "budget": 500 }
   },
   "lists": {
     "_": "a whole list, pages of 500 one after another (the site loads them side by side) — median of three passes",
