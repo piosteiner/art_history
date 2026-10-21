@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### The stored graph kept up to date per change; the API reads it (migration 126) — step 2 of the scaling plan
+- **What:**
+  - `graph_links` is no longer rebuilt by the global part. `process_derived()` recomputes, per batch, the edges its
+    entries own (relationship → its two ends; creator line and provenance edges → their work, new column `artwork_id`),
+    compares them with what is stored (`EXCEPT ALL`) and writes only differences; new columns `notes_md`, `end_basis`,
+    GiST index on `period`.
+  - The API reads `graph_links` instead of the view `edges`: relationships on entry pages, `/v1/graph`, the presence
+    and artwork maps, `encounters()`, the whereabouts in `provenance_inferences` (a moment behind a change).
+  - `provenance_inferences` with `NOT MATERIALIZED` CTEs: filtered by work (API, admin, checks); hence
+    `provenance_date_narrowable` is a check per work, only the two `[[link]]` checks stay global.
+  - Found by the drift test: the search field "Type" names materials found in the medium by text — a glossary change
+    now queues those works (`derived_touch` spec `termtext`).
+  - Tests: `settled()` in `test/e2e/helpers.js` (wait for the worker); 3 new cases in `incremental.spec.js`.
+- **Measured** (copy at 10×): artwork page 1.9 → 0.24 s, graph 4.1 → 0.02 s, presence in a window 4.4 → 0.37 s, all
+  time 503 → 1.3 s, crossed paths 503 → 0.56 s, global part 11.4 → 0.96 s, one change incl. neighbours ≈ 2 s.
+  Production copy: stored graph = view (4,796 edges), inferences identical, no drift on a full run.
+- **Why:** owner: reliable, efficient processes when the data grows to thousands of entries per type.
+- **Revert:** redeploy the previous commit; as owner restore `process_derived()`/`refresh_quality_global()`/
+  `derived_touch()`/`quality_global_checks()` from 125, `provenance_inferences` and `encounters()` with `edges`
+  (without NOT MATERIALIZED), the glossary trigger without `termtext.id`; drop the three new columns and the indexes;
+  `DELETE FROM schema_migrations WHERE name = '126_graph_links_incremental.sql';`
+
 ### Derived data kept up to date incrementally (migration 125) — step 1 of the scaling plan
 - **What:** a change now says which entries it affects, and only those are computed again.
   - Trigger `derived_touch()` on 28 tables (replaces `quality_changed` on them) appends the affected entries to

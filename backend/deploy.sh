@@ -28,5 +28,9 @@ npm run migrate
 # No YAML import since Phase 5: the database is the source of truth (admin panel). `npm run export` for snapshots.
 pm2 reload ecosystem.config.js --update-env
 pm2 save >/dev/null
-sleep 2
+# the reloaded process may need a few seconds before it listens (2026-10-21: probed 2 s after the reload → refused)
+for i in 1 2 3 4 5 6 7 8 9 10; do
+  sleep 2
+  curl -fsS http://127.0.0.1:3004/v1/health -H 'Host: api.arthistory.piogino.ch' >/dev/null 2>&1 && break
+done
 curl -fsS http://127.0.0.1:3004/v1/health -H 'Host: api.arthistory.piogino.ch' && echo "  ✓ deployed $(git log -1 --format='%h %s')"

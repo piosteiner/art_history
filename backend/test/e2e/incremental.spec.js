@@ -1,18 +1,17 @@
 // Derived data kept up to date incrementally (migration 125): a change queues the entries it affects (derived_queue),
 // the worker computes only those again — their search fields, findings and duplicate pairs — and the nightly full
 // run corrects (and logs as drift) what the incremental path missed.
-const { test, expect, adminChange, sql } = require('./helpers');
+const { test, expect, adminChange, sql, settled, API } = require('./helpers');
 
 const cleanup = () => sql(`DELETE FROM artists WHERE slug IN ('test-inc-twin-a', 'test-inc-twin-b');
   DELETE FROM artworks WHERE slug = 'test-inc-made-in-arles';
+  DELETE FROM glossary WHERE slug = 'test-inc-washi';
   UPDATE artists SET name = 'Vincent van Gogh' WHERE slug = 'vincent-van-gogh';
   UPDATE places SET name = 'France' WHERE slug = 'france';
   DELETE FROM derived_drift;`);
 test.beforeEach(cleanup);
 test.afterAll(cleanup);
 
-// the queue empty again (the worker runs half a second after a commit) — then the stored data is current
-const settled = () => expect.poll(() => sql('SELECT count(*) FROM derived_queue'), { timeout: 15000 }).toBe('0');
 
 test('a change queues the entry and what depends on it; only those are computed again', async () => {
   sql('SELECT refresh_quality()');
@@ -38,6 +37,31 @@ test('a link seconds old counts: renaming the country right after reaches a work
   adminChange("UPDATE places SET name = 'France (test)' WHERE slug = 'france'");
   await settled();
   expect(madeIn()).toBe('Arles, France (test)');
+});
+
+test('a new material reaches the works whose medium names it — linked by text, not by a key', async () => {
+  // the search field "Type" lists the names of materials found in the medium (artwork_term_names, 071)
+  const typeMatch = () => sql(`SELECT match FROM entry_search_fields_stored WHERE type = 'artwork' AND id = entity_id('artwork', 'sudden-shower-over-shin-ohashi-bridge-and-atake') AND label = 'Type'`);
+  await settled();
+  expect(typeMatch()).not.toContain('Washi-Test');
+  adminChange(`INSERT INTO glossary (slug, name, category, names) VALUES ('test-inc-washi', 'paper', 'material', '[{"text": "Washi-Test", "lang": "de"}]')`);
+  await settled();
+  expect(typeMatch()).toContain('Washi-Test');
+  adminChange("DELETE FROM glossary WHERE slug = 'test-inc-washi'");
+  await settled();
+  expect(typeMatch()).not.toContain('Washi-Test');
+});
+
+test('the API reads the stored graph: a new relationship is in it once the worker has caught up', async ({ request }) => {
+  adminChange(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+    VALUES ('artist', entity_id('artist', 'vincent-van-gogh'), 'visited', 'place', entity_id('place', 'edo'))`);
+  await settled();
+  const g = await (await request.get(`${API}/artists/vincent-van-gogh`, { headers: { Host: 'api.localhost' } })).json();
+  expect(g.relationships.map((r) => r.entity.slug)).toContain('edo');
+  adminChange("DELETE FROM relationships WHERE relationship_type = 'visited' AND object_id = entity_id('place', 'edo') AND subject_id = entity_id('artist', 'vincent-van-gogh')");
+  await settled();
+  const h = await (await request.get(`${API}/artists/vincent-van-gogh`, { headers: { Host: 'api.localhost' } })).json();
+  expect(h.relationships.map((r) => r.entity.slug)).not.toContain('edo');
 });
 
 test('duplicates: a new twin is weighed against its candidates only; a rename away removes the pair on both sides', async ({ userA }) => {

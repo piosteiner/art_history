@@ -35,7 +35,8 @@ router.get('/:plural/:slug', async (req, res) => {
   const found = await apiPool.query(`SELECT id FROM ${e.table} WHERE slug = $1`, [req.params.slug]);
   if (!found.rows.length) throw notFound(`no ${e.type} "${req.params.slug}"`);
 
-  // edges (migration 031) = the stored relationships + derived ones: each artwork's main creator (029) and the
+  // graph_links = the edges view (031) stored and kept up to date per change (088/126): the stored relationships +
+  // derived ones: each artwork's main creator (029) and the
   // provenance (owned_by, kept_in, transferred_to).
   // Breadth-first walk. A recursive CTE may reference itself only once, so both directions go into a
   // LATERAL subquery. UNION (not UNION ALL) drops rows already produced, and the depth cap guarantees termination
@@ -47,10 +48,10 @@ router.get('/:plural/:slug', async (req, res) => {
       SELECT n.type, n.id, w.depth + 1
       FROM walk w
       CROSS JOIN LATERAL (
-        SELECT r.object_type, r.object_id FROM edges r
+        SELECT r.object_type, r.object_id FROM graph_links r
          WHERE r.subject_type = w.type AND r.subject_id = w.id AND ${inGraph('r')}
         UNION ALL
-        SELECT r.subject_type, r.subject_id FROM edges r
+        SELECT r.subject_type, r.subject_id FROM graph_links r
          WHERE r.object_type = w.type AND r.object_id = w.id AND ${inGraph('r')}
       ) AS n (type, id)
       WHERE w.depth < $3
@@ -72,7 +73,7 @@ router.get('/:plural/:slug', async (req, res) => {
                 'certainty', r.certainty, 'note', r.label, 'period', range_json(r.period, r.period_label),
                 'derived', r.source <> 'relationship', 'end_basis', r.end_basis)
               ORDER BY rt.sort_order, s.sort_key COLLATE sort_natural), '[]')
-         FROM edges r
+         FROM graph_links r
          JOIN relationship_types rt ON rt.code = r.relationship_type
          JOIN nodes n1 ON n1.type = r.subject_type AND n1.id = r.subject_id
          JOIN nodes n2 ON n2.type = r.object_type  AND n2.id = r.object_id

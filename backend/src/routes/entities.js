@@ -264,7 +264,8 @@ function nameCountry(row) {
 // stored as `depicts`, whose places are map material (category association). The graph uses it too (graph.js).
 const edgeCategory = (r, rt) => `CASE WHEN ${rt}.code = 'depicts' AND ${r}.object_type <> 'place' THEN 'depiction' ELSE ${rt}.category END`;
 
-// Everything connected to one entity, in both directions. The label is read from the entity's point of view:
+// Everything connected to one entity, in both directions (the stored graph: a moment behind a change, never a full
+// computation of the edges view per request). The label is read from the entity's point of view:
 // Van Gogh "lived in" Arles, Arles is "home of" Van Gogh.
 const RELATIONSHIPS_SQL = `
   SELECT rt.code AS type,
@@ -277,8 +278,8 @@ const RELATIONSHIPS_SQL = `
          range_json(r.period, r.period_label) AS period,
          r.label AS note, r.certainty, r.notes_md,
          r.source <> 'relationship' AS derived, r.end_basis,  -- derived: the creator field or the provenance (031)
-         CASE WHEN r.source = 'relationship' THEN r.id END AS _rel_id, r.provenance_id AS _prov_id  -- for their sources
-  FROM edges r
+         CASE WHEN r.source = 'relationship' THEN r.relationship_id END AS _rel_id, r.provenance_id AS _prov_id  -- for their sources
+  FROM graph_links r  -- the edges view stored (088), kept up to date per change (126): indexed both ways
   JOIN relationship_types rt ON rt.code = r.relationship_type
   -- the "other" end: object for outgoing edges, subject for incoming ones
   JOIN entity_index o ON (o.type, o.id) = (
@@ -406,7 +407,7 @@ const EXTRAS = {
                 WHERE a.alternative_to = p.id) AS alternatives,
              -- 086: what the dates and places imply for this step (biography × provenance)
              (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', i.kind, 'text', i.detail, 'period', range_json(i.period), 'km', i.km) ORDER BY i.kind), '[]')
-                FROM provenance_inferences i WHERE i.provenance_id = p.id) AS inferences
+                FROM provenance_inferences i WHERE i.artwork_id = $1 AND i.provenance_id = p.id) AS inferences  -- by work: reaches into the view (126)
       FROM provenance_chain p LEFT JOIN entity_index o ON (o.type, o.id) = (p.owner_type, p.owner_id)
       WHERE p.artwork_id = $1 ORDER BY p.position`, [id])).rows,
   }),

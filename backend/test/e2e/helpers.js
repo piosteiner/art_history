@@ -2,12 +2,16 @@
 //   test('…', async ({ userA, userB }) => …)   two logged-in users (tester, tester2), each in its own browser context;
 //                                                every page records script errors — a spec fails if any occurred
 //   sql('SELECT …')                             a query against the test database (as owner), result as text
+//   await settled()                             derived data (stored graph, search fields, findings) caught up
 const fs = require('fs');
 const { execFileSync } = require('child_process');
 const { test: base, expect } = require('@playwright/test');
 const { AUTH_FILE, DB, BASE, API, sessionFile } = require('./env');
 
 const sql = (q) => execFileSync('psql', ['-X', '-h', 'localhost', '-U', 'arthistory_owner', '-d', DB, '-Atc', q]).toString().trim();
+// Derived data — search fields, findings, the stored graph the API reads (125/126) — follows a change within a
+// moment: the server's worker empties derived_queue. Wait for that before reading what derives from a change.
+const settled = () => expect.poll(() => sql('SELECT count(*) FROM derived_queue'), { timeout: 15000 }).toBe('0');
 
 // A change made the way the admin panel makes it (admin role, tagged source 'admin') → its txid, for revert tests.
 function adminChange(statement) {
@@ -66,4 +70,4 @@ async function submitForm(page) {
   await Promise.all([page.waitForNavigation(), page.click('form.form > .actions button')]);
 }
 
-module.exports = { test, expect, sql, adminChange, login, liveReady, submitForm, API, BASE };
+module.exports = { test, expect, sql, settled, adminChange, login, liveReady, submitForm, API, BASE };

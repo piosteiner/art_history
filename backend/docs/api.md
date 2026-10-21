@@ -3,6 +3,9 @@
 Base URL `https://api.arthistory.piogino.ch/v1`. Read-only, JSON, CORS for `https://arthistory.piogino.ch`.
 Responses are cacheable for 60 s (`Cache-Control`) and carry an `ETag`. Entities are addressed by **slug**.
 Errors: `{"error": "bad_request" | "not_found" | "timeout" | "internal_error", "message": "…"}`.
+Relationships, the graph, presence/artwork maps, crossed paths and the inferences under provenance steps come from
+the stored graph (`graph_links`, migration 126): a change shows there within a moment (usually a second), not in the
+same instant.
 
 ## Dates
 Every date is an object (or `null`):

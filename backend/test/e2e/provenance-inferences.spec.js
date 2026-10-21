@@ -1,6 +1,6 @@
 // Biography × provenance (migration 086): what the dates and places imply — a handover narrowed by the giver's
 // death, a work that travelled while its painter stayed far away — and contradictions as errors.
-const { test, expect, sql, API } = require('./helpers');
+const { test, expect, sql, settled, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const W = "entity_id('artwork', 'test-inf-w')";
@@ -25,6 +25,7 @@ test.beforeEach(() => {
 test.afterEach(cleanup);
 
 test('a handover narrowed by the painter\'s death; the work travelled while he stayed; contradictions', async ({ userA, request }) => {
+  await settled();   // where the painter was comes from the stored graph (126)
   const step = (await api(request, '/artworks/test-inf-w')).provenance.find((s) => !s.implied);
   const byKind = Object.fromEntries(step.inferences.map((i) => [i.kind, i]));
   expect(byKind.narrowed.text).toBe('from Test Painter during the artist\'s lifetime — by 8 May 1903 at the latest (Test Painter died then)');

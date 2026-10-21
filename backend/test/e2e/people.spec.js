@@ -1,6 +1,6 @@
 // People (migration 024): everyone relevant who isn't an artist; patron is a role from relationships; depictions;
 // birth/death and occupations; old /patrons addresses redirect.
-const { test, expect, sql, submitForm, API } = require('./helpers');
+const { test, expect, sql, settled, submitForm, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
@@ -60,6 +60,7 @@ test('a person without dates has no lifespan: period null in the API, also as th
        INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
        VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'collaborated_with', 'person', entity_id('person', 'test-undated-dealer'))`);
   expect(sql("SELECT lifespan IS NULL FROM people WHERE slug = 'test-undated-dealer'")).toBe('t');
+  await settled();   // the API reads the stored graph (126)
   const g = await (await request.get(`${API}/artists/paul-gauguin`, { headers: { Host: 'api.localhost' } })).json();
   const rel = g.relationships.find((r) => r.entity.slug === 'test-undated-dealer');
   expect(rel.entity.period).toBeNull();

@@ -342,7 +342,7 @@ async function read(db, artworkId) {
            (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', k.label, 'number', n.number) ORDER BY n.position), '[]')
               FROM provenance_numbers n JOIN provenance_number_kinds k ON k.code = n.kind WHERE n.provenance_id = p.id) AS step_numbers,
            (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', i.kind, 'detail', i.detail) ORDER BY i.kind), '[]')
-              FROM provenance_inferences i WHERE i.provenance_id = p.id) AS inferences,
+              FROM provenance_inferences i WHERE i.artwork_id = $1 AND i.provenance_id = p.id) AS inferences,  -- by work: reaches into the view (126)
            (SELECT coalesce(jsonb_agg(jsonb_build_object('kind', r.kind, 'date_label', r.date_label, 'room', r.room, 'number', r.number,
                      'number_certainty', r.number_certainty, 'document', r.document, 'certainty', r.certainty, 'note', r.note,
                      'place_slug', l.slug, 'place_name', l.name) ORDER BY lower(r.date) NULLS LAST, r.position), '[]')

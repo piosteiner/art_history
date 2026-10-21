@@ -73,7 +73,7 @@ router.get('/presence', async (req, res) => {
         ${SITE_PROPS},
         'relationship', rt.code, 'label', rt.label, 'note', r.label, 'certainty', r.certainty,
         'period', range_json(r.period, r.period_label))) AS feature
-    FROM edges r  -- stored + derived (provenance: kept_in), migration 031
+    FROM graph_links r  -- stored + derived (provenance: kept_in, 031) — stored, kept up to date per change (126)
     JOIN relationship_types rt ON rt.code = r.relationship_type AND rt.is_physical_presence
     ${SITE_JOINS}
     JOIN entity_index e ON e.type = r.subject_type AND e.id = r.subject_id
@@ -113,7 +113,7 @@ router.get('/:plural/:slug', async (req, res) => {
     WITH stops AS (
       SELECT r.period, rt.code, rt.label, rt.category, rt.is_physical_presence, r.period_label, r.label AS note,
              r.certainty, o.name, s.marker AS point, jsonb_build_object(${SITE_PROPS}) AS site
-      FROM edges r  -- stored + derived (provenance: kept_in), migration 031
+      FROM graph_links r  -- stored + derived (provenance: kept_in, 031) — stored, kept up to date per change (126)
       JOIN relationship_types rt ON rt.code = r.relationship_type
       ${SITE_JOINS}
       WHERE r.subject_type = $1 AND r.subject_id = $2 AND s.marker IS NOT NULL

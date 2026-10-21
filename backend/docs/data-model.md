@@ -430,8 +430,8 @@ never the view (all checks take seconds, more as the data grows). How it stays c
   (`entry_search_fields` filtered by type and ids → diff into `entry_search_fields_stored`) and findings
   (`quality_issues_live` filtered the same way — `EXECUTE`, so the planner sees the values, pushes them into each
   branch and drops the branches of other types and of the global checks). Written are only rows that changed.
-- *Global checks* (`quality_global_checks()`: broken `[[links]]`, narrowable provenance dates — they depend on entries
-  in no fixed relation, or compute every chain at once) with `search_words` and `graph_links`: `refresh_quality_global()`,
+- *Global checks* (`quality_global_checks()`: broken `[[links]]` — they depend on entries in no fixed relation; until
+  126 also narrowable provenance dates and the whole `graph_links`) with `search_words`: `refresh_quality_global()`,
   after the queue, at most every 30 s (`QUALITY_GLOBAL_EVERY_MS`), at once when a page waits.
 - *Safety net*: each night after 03:00 `refresh_quality_full()` queues every entry (reason `full`); what that changes
   was missed by the triggers and lands in `derived_drift` (shown on the Quality page) — fix the dependency there.
@@ -580,9 +580,16 @@ renaming an acquisition method needs `REINDEX INDEX provenance_search_idx`). `se
 configuration that matched, marks `\x01…\x02`.
 
 ## Network (migration 088)
-`graph_links` (table): the `edges` view stored, rewritten by `refresh_quality_global()` after changes (125) (a
-table rather than a materialized view: REFRESH runs with a restricted search_path since Postgres 17, and readers keep
-the old copy until the commit). `entry_path()` — plpgsql breadth-first search with a jsonb "seen" map (a recursive CTE
+`graph_links` (table): the `edges` view stored (a table rather than a materialized view: REFRESH runs with a
+restricted search_path since Postgres 17), kept up to date per change by `process_derived()` (126): each edge has an
+owner whose change recomputes it — a relationship its two ends, the creator line and every edge from the provenance
+their work (`artwork_id`, also for `transferred_to` between two holders); filtered by source and work, each filter
+reaches into the view's branches and the window partitions of `provenance_chain`. Compared as multisets
+(`EXCEPT ALL`), written only if different. Indexed both ways, by work and with GiST on `period`. The API reads it
+instead of the view (entry relationships, `/v1/graph`, presence and artwork maps, `encounters()`, the inferences'
+whereabouts) — a moment behind a change, never all edges computed per request (an artwork page at 10×: 1.9 → 0.24 s).
+`provenance_inferences` has its CTEs `NOT MATERIALIZED` (126), so a filter on `artwork_id` reaches the chains: one
+work 1.5 s → 37 ms; `provenance_date_narrowable` is therefore a check per work, not global. `entry_path()` — plpgsql breadth-first search with a jsonb "seen" map (a recursive CTE
 can't skip entries reached before, so it would follow every path); `hands_network(daterange)` → JSON {holders,
 handovers}; `shared_hands()` — recursive CTE over (work, depth) with UNION and `SEARCH BREADTH FIRST`.
 

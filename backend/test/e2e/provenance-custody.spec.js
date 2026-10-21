@@ -1,7 +1,7 @@
 // Provenance as the Kunsthaus Zürich's Gauguin works showed it (migrations 073/074): custody beside the ownership,
 // an auction that didn't sell, the 1933–1945 gap over undated steps, a settlement after a forced sale, the provenance
 // status (BAK A–D), a design date for later prints, copy_after.
-const { test, expect, sql, API, submitForm } = require('./helpers');
+const { test, expect, sql, settled, API, submitForm } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const W = "entity_id('artwork', 'test-semmel-road')";
@@ -106,6 +106,7 @@ test('provenance status (BAK A–D) and a design date earlier than the print; co
   // a copy after another work
   sql(`INSERT INTO artworks (slug, title) VALUES ('test-copy', 'Test Copy');
        INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artwork', entity_id('artwork', 'test-copy'), 'copy_after', 'artwork', ${W})`);
+  await settled();   // the API reads the stored graph (126)
   const copy = await api(request, '/artworks/test-copy');
   expect(copy.relationships.map((r) => [r.type, r.entity.slug])).toContainEqual(['copy_after', 'test-semmel-road']);
 });
