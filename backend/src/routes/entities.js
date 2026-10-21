@@ -487,6 +487,19 @@ router.get('/previews', async (req, res) => {
   res.json({ data: await previewsOf(refs) });
 });
 
+// A list's rows for some entries (Map id → row): what the lists serve, computed. The worker stores them per change
+// (entry_list_rows, 127: an artwork's row — country, holders now and before, provenance coverage, creators, search
+// fields — took ≈ 4 ms; a list of 3,500 artworks 15 s); the list endpoint computes only those not stored yet.
+async function listRows(db, plural, ids) {
+  const e = ENTITIES[plural];
+  const { rows } = await db.query(`
+    SELECT t.id AS _id, t.public_id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.list},
+           -- what a search finds besides the name (view entry_search_fields, 110): the admin's lists use the same
+           entry_search_fields_json('${e.type}', t.id) AS search_fields
+    FROM ${e.table} t WHERE t.id = ANY ($1::bigint[])`, [ids]);
+  return new Map(rows.map(({ _id, ...r }) => [String(_id), nameCountry(shapeNames(r, e.name))]));
+}
+
 for (const [plural, e] of Object.entries(ENTITIES)) {
   router.get(`/${plural}`, async (req, res) => {
     const limit = intParam(req.query, 'limit', { min: 1, max: 500, fallback: 100 });
@@ -519,19 +532,20 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
       where.push(sql.replaceAll('$', () => ph));
     }
 
-    const { rows } = await apiPool.query(`
-      SELECT t.public_id, t.slug, t.${e.name}, ${nameCols(e.name, e.alt, e.type)}, ${e.list},
-             -- what a search finds besides the name (view entry_search_fields, 110): the admin's lists use the same
-             entry_search_fields_json('${e.type}', t.id) AS search_fields, count(*) OVER () AS total
-      FROM ${e.table} t
+    // the rows as stored (entry_list_rows, 127 — kept up to date per change by the worker, src/admin/quality.js); an
+    // entry the worker hasn't reached yet (created a moment ago) is computed now
+    const { rows: hits } = await apiPool.query(`
+      SELECT t.id, r.row, count(*) OVER () AS total
+      FROM ${e.table} t LEFT JOIN entry_list_rows r ON r.type = '${e.type}' AND r.id = t.id
       ${where.length ? `WHERE ${where.join(' AND ')}` : ''}
       ORDER BY ${rank}${e.order}
       LIMIT ${p(limit)} OFFSET ${p(offset)}`, params);
-
-    const total = rows.length ? Number(rows[0].total) : 0;
-    rows.forEach((r) => { delete r.total; nameCountry(shapeNames(r, e.name)); });
+    const total = hits.length ? Number(hits[0].total) : 0;
+    const missing = hits.filter((h) => !h.row).map((h) => h.id);
+    const live = missing.length ? await listRows(apiPool, plural, missing) : new Map();
+    const rows = hits.map((h) => h.row || live.get(String(h.id))).filter(Boolean);
     if (e.type === 'source') {
-      // siglum + full citation (KHIST guide), and how much of it has been read
+      // siglum + full citation (KHIST guide) — per request: a siglum depends on the other sources ("Smith 2001a/b")
       const sources = await bibliography.loadCatalogue(apiPool);
       for (const r of rows) Object.assign(r, { siglum: sources.get(r.slug).siglum, citation: sources.get(r.slug).full });
       const { rows: [stats] } = await apiPool.query(`SELECT count(*)::int AS total,
@@ -667,4 +681,4 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
   router.get(`/${plural}/:slug/:name`, (req, res, next) => (/^\d+$/.test(req.params.slug) ? detail(req, res) : next()));
 }
 
-module.exports = { router, ENTITIES, edgeCategory };
+module.exports = { router, ENTITIES, edgeCategory, listRows };

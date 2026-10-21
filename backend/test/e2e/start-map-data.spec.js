@@ -1,7 +1,7 @@
 // What the start map's pickers need from the API: the artwork list names the institutions that hold a work now and
 // those that held it before (provenance) — a search for a museum finds what is there and what was; institutions have a
 // closing date (106) and the sites layer says when each existed; start views may set the museums and events pickers.
-const { test, expect, sql, API } = require('./helpers');
+const { test, expect, sql, settled, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const cleanup = () => sql(`DELETE FROM artworks WHERE slug IN ('test-holders-now', 'test-holders-open');
@@ -18,6 +18,7 @@ test('holders: now (where it is) and before (earlier owners), and an open last s
        INSERT INTO provenance (artwork_id, position, owner_institution_id, method) VALUES
          (entity_id('artwork', 'test-holders-open'), 0, entity_id('institution', 'national-gallery-london'), 'purchase'),
          (entity_id('artwork', 'test-holders-open'), 1, entity_id('institution', 'metropolitan-museum-of-art'), 'purchase')`);
+  await settled();   // the lists' rows are stored (127)
   const list = (await api(request, '/artworks?limit=500')).data;
   const names = (hs) => hs.map((h) => h.slug);
   const now = list.find((a) => a.slug === 'test-holders-now').holders;
@@ -39,6 +40,7 @@ test('holders: now (where it is) and before (earlier owners), and an open last s
 test('an institution closed: its date in the API, and the sites layer says when it existed', async ({ request }) => {
   sql(`UPDATE institutions SET dissolved = '[1990-01-01,1991-01-01)', dissolved_label = '1990', location = coalesce(location, 'SRID=4326;POINT(4.88 52.36)')
        WHERE slug = 'van-gogh-museum'`);
+  await settled();   // the lists' rows are stored (127)
   const museum = await api(request, '/institutions/van-gogh-museum');
   expect(museum.dissolved).toMatchObject({ label: '1990', from_year: 1990, to_year: 1990 });
   expect((await api(request, '/institutions?limit=500')).data.find((i) => i.slug === 'van-gogh-museum').dissolved.label).toBe('1990');

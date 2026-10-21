@@ -440,6 +440,13 @@ never the view (all checks take seconds, more as the data grows). How it stays c
 - **A migration that changes a check replaces `quality_issues_live`** (then `SELECT refresh_quality_full()`); one
   that changes `dup_facts`/`dup_score()` also `TRUNCATE dup_entries` (every fingerprint new → all weighed again).
 
+**The lists' rows (127).** `entry_list_rows (type, id, row jsonb)`: each entry's row exactly as the API's lists serve
+it (the columns are defined once, in `src/routes/entities.js` → `listRows()`). `process_derived()` hands every entry of
+a batch to `list_queue`; the worker computes their rows with `listRows()` and writes only changed ones (drift
+'list row' when the full run changes one). The list endpoint filters and orders on the tables and takes the stored
+row; an entry not stored yet is computed on the spot. Sigla of sources stay per request (they depend on the other
+sources). An artist's change also reaches the museums holding their works (`artists_held`).
+
 ## Roles & privileges
 | Role | Used by | Can |
 |---|---|---|

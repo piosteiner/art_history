@@ -64,6 +64,21 @@ test('the API reads the stored graph: a new relationship is in it once the worke
   expect(h.relationships.map((r) => r.entity.slug)).not.toContain('edo');
 });
 
+test('the lists serve stored rows (127): a renamed artist reaches the works\' rows; an entry not stored is computed', async ({ request }) => {
+  const list = async () => (await (await request.get(`${API}/artworks?limit=500`, { headers: { Host: 'api.localhost' } })).json()).data;
+  await settled();
+  adminChange("UPDATE artists SET name = 'Vincent van Gogh (listed)' WHERE slug = 'vincent-van-gogh'");
+  await settled();
+  expect(sql("SELECT row->'creator'->>'name' FROM entry_list_rows WHERE type = 'artwork' AND id = entity_id('artwork', 'sunflowers-national-gallery')"))
+    .toBe('Vincent van Gogh (listed)');
+  expect((await list()).find((w) => w.slug === 'sunflowers-national-gallery').creator.name).toBe('Vincent van Gogh (listed)');
+  // not stored (yet — created a moment ago): computed by the endpoint itself
+  adminChange("INSERT INTO artworks (slug, title) VALUES ('test-inc-made-in-arles', 'Test Listed At Once')");
+  await settled();
+  sql("DELETE FROM entry_list_rows WHERE type = 'artwork' AND id = entity_id('artwork', 'test-inc-made-in-arles')");
+  expect((await list()).find((w) => w.slug === 'test-inc-made-in-arles')).toMatchObject({ title: 'Test Listed At Once', public_id: expect.anything() });
+});
+
 test('duplicates: a new twin is weighed against its candidates only; a rename away removes the pair on both sides', async ({ userA }) => {
   adminChange(`INSERT INTO artists (slug, name, birth, birth_label) VALUES ('test-inc-twin-a', 'Test Incremental Twin', year_range(1801), '1801'),
                                                                           ('test-inc-twin-b', 'Test Incremental Twin', year_range(1801), '1801')`);

@@ -4,6 +4,26 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### The lists' rows stored (migration 127) — step 3 of the scaling plan
+- **What:**
+  - `entry_list_rows` keeps each entry's list row (jsonb). The list endpoints filter and sort on the tables as before
+    and take the stored row; an entry not stored yet is computed on the spot. Columns defined once:
+    `listRows()` in `src/routes/entities.js`.
+  - `process_derived()` hands every batch to `list_queue` (and notifies); the worker in `src/admin/quality.js`
+    (`refreshLists`) computes the rows and writes only changed ones; drift 'list row' from the full run.
+  - An artist's change also queues the museums holding their works (`artists_held`).
+  - Tests: `settled()` waits for both queues; a case in `incremental.spec.js`; `start-map-data.spec.js` waits.
+- **Measured:**
+  - Production copy: all 1,706 rows filled in 6 s, identical to the live computation; full run without drift.
+  - 10× copy: 14,927 rows in 19 s. Full lists one page after another: artworks 15.4 → 0.9 s, people 5.2 → 0.3 s,
+    institutions 4.6 → 0.25 s.
+- **Why:** the site loads whole lists (pickers, list pages, header search filter in the browser). The cost was
+  computing each row (≈ 4 ms per artwork), not the transfer (gzip: ≈ 1 MB for 3,500 artworks). So the lists stay
+  whole and instant in the browser; server-side paging only beyond tens of thousands of entries per type.
+- **Revert:** redeploy the previous commit; as owner restore `process_derived()` from 126, `quality_fresh()`/
+  `quality_status()`/`derived_neighbours()` from 125; `DROP TABLE entry_list_rows, list_queue`;
+  `DELETE FROM schema_migrations WHERE name = '127_entry_list_rows.sql';`
+
 ### The stored graph kept up to date per change; the API reads it (migration 126) — step 2 of the scaling plan
 - **What:**
   - `graph_links` is no longer rebuilt by the global part. `process_derived()` recomputes, per batch, the edges its

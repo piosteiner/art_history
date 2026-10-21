@@ -9,9 +9,11 @@ const { test: base, expect } = require('@playwright/test');
 const { AUTH_FILE, DB, BASE, API, sessionFile } = require('./env');
 
 const sql = (q) => execFileSync('psql', ['-X', '-h', 'localhost', '-U', 'arthistory_owner', '-d', DB, '-Atc', q]).toString().trim();
-// Derived data — search fields, findings, the stored graph the API reads (125/126) — follows a change within a
-// moment: the server's worker empties derived_queue. Wait for that before reading what derives from a change.
-const settled = () => expect.poll(() => sql('SELECT count(*) FROM derived_queue'), { timeout: 15000 }).toBe('0');
+// Derived data — search fields, findings, the stored graph and the list rows the API reads (125–127) — follows a
+// change within a moment: the server's worker empties derived_queue and list_queue. Wait for that before reading
+// what derives from a change.
+const settled = () => expect.poll(() => sql('SELECT (SELECT count(*) FROM derived_queue) + (SELECT count(*) FROM list_queue)'),
+  { timeout: 15000 }).toBe('0');
 
 // A change made the way the admin panel makes it (admin role, tagged source 'admin') → its txid, for revert tests.
 function adminChange(statement) {

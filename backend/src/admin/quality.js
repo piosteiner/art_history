@@ -81,7 +81,12 @@ function refresh() {
     try {
       do {
         again = false;
-        while ((await pool.query('SELECT process_derived($1) AS n', [BATCH_SIZE])).rows[0].n > 0) { /* next batch */ }
+        // a batch, then its entries' list rows (127) — until the queue is empty
+        for (;;) {
+          const n = (await pool.query('SELECT process_derived($1) AS n', [BATCH_SIZE])).rows[0].n;
+          await refreshLists();
+          if (!n) break;
+        }
         if (await isFresh(pool)) continue;
         const wait = lastGlobal + GLOBAL_EVERY - Date.now();
         if (urgent || wait <= 0) {
@@ -98,6 +103,50 @@ function refresh() {
     } finally { running = null; }
   })();
   return running;
+}
+// The lists' rows (entry_list_rows, 127): computed here with the list endpoint's own query (src/routes/entities.js
+// listRows — one definition) for the entries in list_queue, a batch per transaction; only changed rows are written.
+// A row changed for an entry queued only by the nightly full run = drift ('list row').
+const LIST_BATCH = 200;
+async function refreshLists() {
+  const { ENTITIES, listRows } = require('../routes/entities');   // here: the routes load after this module
+  const pluralOf = Object.fromEntries(Object.entries(ENTITIES).map(([plural, e]) => [e.type, plural]));
+  for (;;) {
+    const client = await pool.connect();
+    try {
+      await client.query('BEGIN');
+      const { rows: queued } = await client.query(`
+        DELETE FROM list_queue WHERE seq IN (SELECT seq FROM list_queue ORDER BY seq LIMIT $1 FOR UPDATE SKIP LOCKED)
+        RETURNING type::text AS type, id::text AS id, full_run`, [LIST_BATCH]);
+      if (!queued.length) { await client.query('COMMIT'); return; }
+      const byType = new Map();
+      for (const q of queued) {
+        if (!byType.has(q.type)) byType.set(q.type, new Map());
+        const ids = byType.get(q.type);
+        ids.set(q.id, (ids.get(q.id) ?? true) && q.full_run);   // full only if every queuing was the full run
+      }
+      for (const [type, ids] of byType) {
+        if (!pluralOf[type]) continue;
+        const rows = await listRows(client, pluralOf[type], [...ids.keys()]);
+        const { rows: written } = await client.query(`
+          INSERT INTO entry_list_rows AS r (type, id, row)
+            SELECT $1::entity_type, x.id::bigint, x.row FROM jsonb_to_recordset($2::jsonb) x(id text, row jsonb)
+          ON CONFLICT (type, id) DO UPDATE SET row = EXCLUDED.row WHERE r.row IS DISTINCT FROM EXCLUDED.row
+          RETURNING id::text`, [type, JSON.stringify([...rows].map(([id, row]) => ({ id, row })))]);
+        const { rows: gone } = await client.query(`
+          DELETE FROM entry_list_rows WHERE type = $1 AND id = ANY ($2::bigint[]) AND NOT (id = ANY ($3::bigint[]))
+          RETURNING id::text`, [type, [...ids.keys()], [...rows.keys()]]);
+        const drift = [...written, ...gone].map((r) => r.id).filter((id) => ids.get(id));
+        if (drift.length) {
+          await client.query("INSERT INTO derived_drift (type, id, what) SELECT $1, unnest($2::bigint[]), 'list row'", [type, drift]);
+        }
+      }
+      await client.query('COMMIT');
+    } catch (err) {
+      await client.query('ROLLBACK').catch(() => {});
+      throw err;
+    } finally { client.release(); }
+  }
 }
 const refreshSoon = () => { clearTimeout(timer); timer = setTimeout(refresh, 500); };
 
