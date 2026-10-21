@@ -79,6 +79,22 @@ test('the lists serve stored rows (127): a renamed artist reaches the works\' ro
   expect((await list()).find((w) => w.slug === 'test-inc-made-in-arles')).toMatchObject({ title: 'Test Listed At Once', public_id: expect.anything() });
 });
 
+test('the presence map is cached per data version — a change shows once the derived data has caught up', async ({ request }) => {
+  const presence = async () => (await (await request.get(`${API}/map/presence?from=1700&to=1950&types=artist`, { headers: { Host: 'api.localhost' } })).json())
+    .features.filter((f) => f.properties.entity.slug === 'vincent-van-gogh' && f.properties.place?.slug === 'edo');
+  sql('SELECT refresh_quality()');
+  await settled();
+  expect(await presence()).toHaveLength(0);
+  expect(await presence()).toHaveLength(0);   // now from the cache
+  adminChange(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label)
+    VALUES ('artist', entity_id('artist', 'vincent-van-gogh'), 'visited', 'place', entity_id('place', 'edo'), year_range(1880), '1880')`);
+  await settled();
+  expect(await presence()).toHaveLength(1);
+  adminChange("DELETE FROM relationships WHERE relationship_type = 'visited' AND object_id = entity_id('place', 'edo') AND subject_id = entity_id('artist', 'vincent-van-gogh')");
+  await settled();
+  expect(await presence()).toHaveLength(0);
+});
+
 test('duplicates: a new twin is weighed against its candidates only; a rename away removes the pair on both sides', async ({ userA }) => {
   adminChange(`INSERT INTO artists (slug, name, birth, birth_label) VALUES ('test-inc-twin-a', 'Test Incremental Twin', year_range(1801), '1801'),
                                                                           ('test-inc-twin-b', 'Test Incremental Twin', year_range(1801), '1801')`);

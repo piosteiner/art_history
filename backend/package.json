@@ -9,6 +9,8 @@
     "dev": "npm run build:admin:dev && DB_NAME=arthistory_dev PORT=3005 node --watch src/server.js",
     "migrate": "node scripts/migrate.js",
     "migrate:dev": "DB_NAME=arthistory_dev node scripts/migrate.js",
+    "perf": "node perf/run.js",
+    "perf:data": "perf/make-scale-db.sh",
     "import": "node scripts/import.js",
     "import:dev": "DB_NAME=arthistory_dev node scripts/import.js",
     "test": "node --test 'test/*.test.js'",

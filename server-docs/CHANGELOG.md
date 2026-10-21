@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### Step 4 of the scaling plan: presence cache, performance budgets, slow-query report
+- **What:**
+  - `/v1/map/presence` answers cached per window and types (≤ 20) while the derived data is current (version =
+    change counter, only when `quality_fresh()` — the stays come from the stored graph, a moment behind a change);
+    the start map's default (all time, every kind) computed ahead in production after each change (`warmPresence`,
+    every 15 s). At 10×: 1.4 s → 28 ms (the first request after a start timed out at 5 s once).
+  - `backend/perf/`: `scale.sql` (the 10× generator, scale_test only), `make-scale-db.sh` (`npm run perf:data`),
+    `budgets.json` + `run.js` (`npm run perf`): 22 budgets, all within on the first run (slowest: `/periods` 2.1 s).
+  - `scripts/slow-queries.sh`: the slow-query log (≥ 1 s, on since 2026-10-17) and pg_stat_statements summed up.
+    The last week: `refresh_quality()` 1,089× over 1 s (up to 29 s), the artworks list 980×, the presence map 565× —
+    what steps 1–3 replaced.
+  - Test `incremental.spec.js`: the presence answer follows a change.
+- **Note:** while measuring on scale_test, `pg_stat_statements_reset()` without arguments cleared the statistics of
+  every database, production's included (collected since 2026-10-17) — they fill again; README says how to reset one.
+- **Why:** owner: reliable and efficient processes at thousands of entries per type — and know before production does.
+- **Revert:** redeploy the previous commit (the cache is in memory); `backend/perf/` and the script are only tools.
+
 ### The lists' rows stored (migration 127) — step 3 of the scaling plan
 - **What:**
   - `entry_list_rows` keeps each entry's list row (jsonb). The list endpoints filter and sort on the tables as before

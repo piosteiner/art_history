@@ -21,7 +21,15 @@ Databases (both localhost only): MySQL 8 (:3306, calorie-tracker) · PostgreSQL 
 PostgreSQL extensions in `arthistory`: postgis, pg_trgm, unaccent, btree_gist, fuzzystrmatch, pg_stat_statements
 (preloaded since 2026-10-17). Slowest statements (as arthistory_owner):
 `SELECT calls, round(mean_exec_time) ms, left(query, 100) FROM pg_stat_statements WHERE dbid = (SELECT oid FROM pg_database WHERE datname = 'arthistory') ORDER BY total_exec_time DESC LIMIT 20;`
-— note that the test databases share the statistics (filter by `dbid`); `SELECT pg_stat_statements_reset();` starts over.
+— note that the test databases share the statistics (filter by `dbid`). `SELECT pg_stat_statements_reset();` without
+arguments clears **every** database's statistics; for one: `pg_stat_statements_reset(0, (SELECT oid FROM pg_database WHERE datname = 'scale_test'), 0)`.
+Slow-query log: statements over 1 s and lock waits (`conf.d/arthistory.conf`) in `/var/log/postgresql/`.
+**`scripts/slow-queries.sh`** (sudo, read-only; `DAYS=1`) sums both up: statements over 1 s per day, the most frequent
+ones, and the pg_stat_statements top lists.
+**Performance budgets** (2026-10-21): database `scale_test` = the latest backup with every entry cloned nine times
+(`cd backend && npm run perf:data`, ≈ 10 min, replaces only scale_test), then `npm run perf` — a server of the checkout on
+:3015 against it, the times of the heavy requests, whole lists, one change through the worker and the global part
+against `backend/perf/budgets.json` (exit 1 when over). Run before deploying changes to queries, views or the worker.
 
 ## Firewall (ufw) + fail2ban
 Only 22 (SSH), 80, 443 are open. App ports are reachable only via nginx.

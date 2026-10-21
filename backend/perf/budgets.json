@@ -1,0 +1,28 @@
+{
+  "_": "Time budgets in ms on scale_test (ten times today's data, perf/make-scale-db.sh) — the median of three requests after a first one. Measured 2026-10-21 after migrations 125–127; budgets ≈ twice that, so a regression shows before production feels it. perf/run.js checks them.",
+  "requests": {
+    "artwork page": { "path": "/artworks/las-meninas", "budget": 600 },
+    "artist page": { "path": "/artists/francisco-goya", "budget": 300 },
+    "institution page": { "path": "/institutions/museo-del-prado", "budget": 300 },
+    "artwork map": { "path": "/map/artworks/las-meninas", "budget": 400 },
+    "graph, depth 2": { "path": "/graph/artists/francisco-goya?depth=2", "budget": 300 },
+    "presence, a window": { "path": "/map/presence?from=1880&to=1890", "budget": 1000 },
+    "presence, all time (start map)": { "path": "/map/presence?from=-3000&to=2027&types=artist,person,artwork", "budget": 500 },
+    "places": { "path": "/map/places", "budget": 500 },
+    "sites": { "path": "/map/sites", "budget": 300 },
+    "clusters": { "path": "/map/clusters?zoom=3", "budget": 500 },
+    "crossed paths": { "path": "/map/encounters?entity=artists/francisco-goya", "budget": 1500 },
+    "search": { "path": "/search?q=goya", "budget": 1500 },
+    "full-text search": { "path": "/search/text?q=goya", "budget": 2000 },
+    "did you mean": { "path": "/search/suggest?q=goyya", "budget": 200 },
+    "periods": { "path": "/periods", "budget": 4500 }
+  },
+  "lists": {
+    "_": "a whole list, pages of 500 one after another (the site loads them side by side) — median of three passes",
+    "artworks": 2000, "artists": 600, "people": 1000, "institutions": 800, "places": 800
+  },
+  "worker": {
+    "one change, until every derived row is current": 10000,
+    "global part (refresh_quality_global)": 3000
+  }
+}
