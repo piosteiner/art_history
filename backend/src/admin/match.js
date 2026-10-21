@@ -45,14 +45,15 @@ function altSql(t, alias) {
 // hit: id, score (3 the name starts with the query, 2 every word in the name, 1 found elsewhere), why ([{label, text}]:
 // the fields that matched words the name doesn't have), tier_rank / tier_heading (found only through a tiered field:
 // "Now in the collection" before "Formerly in the collection"). Order: by tier (none first), then score, then name.
-// live: read the view itself (the stored copy, 111, is behind for half a second after a change)
-function fieldSearchSql(t, alias = 't', { live = false } = {}) {
+// The fields are the stored copy (111), brought up to date for each changed entry (125) — never the view itself, which
+// computes every entry's fields (seconds).
+function fieldSearchSql(t, alias = 't') {
   const own = [`${alias}.${t.name}`, altSql(t, alias), `${alias}.slug`].filter(Boolean).join(', ');
   return `
     WITH q AS (SELECT array_remove(regexp_split_to_array(lower(f_unaccent(btrim($1))), '\\s+'), '') AS words,
                       lower(f_unaccent(btrim($1))) AS phrase),
     fields AS (SELECT f.id, f.position, f.label, f.text, f.tier_rank, f.tier_heading, f.shown, lower(f_unaccent(coalesce(f.match, f.text))) AS hay
-               FROM ${live ? 'entry_search_fields' : 'entry_search_fields_stored'} f WHERE f.type = '${t.type}'),
+               FROM entry_search_fields_stored f WHERE f.type = '${t.type}'),
     -- visible: the name, other names, slug and what the list shows under the name anyway (shown fields)
     base AS (SELECT ${alias}.id, lower(f_unaccent(${alias}.${t.name})) AS fname,
                     concat_ws(' ', lower(f_unaccent(concat_ws(' ', ${own}))), (SELECT string_agg(f.hay, ' ') FROM fields f WHERE f.id = ${alias}.id AND f.shown)) AS own

@@ -50,7 +50,9 @@ router.get('/', async (req, res) => {
     'SELECT type::text, count(*)::int AS n FROM entity_index GROUP BY type')).rows.map((r) => [r.type, r.n]));
   const rels = (await adminPool.query('SELECT count(*)::int AS n FROM relationships')).rows[0].n;
   const recent = await history(adminPool, 'true', [], { limit: 15 });
-  const qaCounts = await quality.counts(adminPool, { live: !(await quality.current(adminPool)) });
+  // the stored findings (never computed here: a page must not wait for the checks) — a moment behind after a change
+  await quality.current(adminPool, { wait: 1500 });
+  const [qaCounts, qaStatus] = await Promise.all([quality.counts(adminPool), quality.status(adminPool)]);
   const qaTotal = (s) => qaCounts.filter((c) => c.severity === s).reduce((n, c) => n + c.n, 0);
   const unpublishedRows = (await adminPool.query(`
     SELECT d.entity_type::text AS type, e.slug, e.name, d.contributors, d.updated_at FROM live_docs d
@@ -84,7 +86,8 @@ router.get('/', async (req, res) => {
         (${provenance.dayText(p.check_after)})`)} — you will be asked after each date whether it happened as planned.</p>` : ''}
       <div class="cards">${TYPES.map((t) => html`<a class="card" href="/${t.folder}"><b>${counts[t.type] || 0}</b>${humanize(t.folder)}</a>`)}
         <div class="card"><b>${rels}</b>Relationships</div>
-        <a class="card qa-card" href="/quality"><b>${qaTotal('error')} · ${qaTotal('warning')}</b>Quality: errors · warnings</a></div>
+        <a class="card qa-card" href="/quality"><b>${qaTotal('error')} · ${qaTotal('warning')}</b>Quality: errors · warnings${
+          qaStatus.waiting || !qaStatus.global_current ? html` <span class="muted small">(updating…)</span>` : ''}</a></div>
       <h2>Recent changes</h2>${historyTable(recent.rows)}
       <p><a href="/history">All changes →</a></p>`,
   });
@@ -151,14 +154,14 @@ router.get('/quality', async (req, res) => {
     type: BY_TYPE[req.query.type] ? req.query.type : '',
     acked: req.query.acked === '1' ? '1' : '',
   };
-  // the stored result (058) — brought up to date first if a change is not in it yet
-  const live = !(await quality.current(adminPool));
-  const [rows, allCounts] = await Promise.all([
-    quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked, live }),
-    quality.counts(adminPool, { live })]);
+  // the stored result (058/125) — waiting a moment for a change just made; never computed here
+  await quality.current(adminPool, { wait: 3000 });
+  const [rows, allCounts, status, driftRows] = await Promise.all([
+    quality.issues(adminPool, { severity: filter.severity, check: filter.check, type: filter.type, acked: !!filter.acked }),
+    quality.counts(adminPool), quality.status(adminPool), quality.drift(adminPool)]);
   // start views (069) aren't entries — their problems are counted here, listed on /featured
   const featured = (await adminPool.query('SELECT count(DISTINCT id)::int AS n FROM featured_view_problems')).rows[0].n;
-  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl, featured }) });
+  send(req, res, { title: 'Data quality', body: quality.page({ rows, allCounts, filter, back: req.originalUrl, featured, status, driftRows }) });
 });
 
 // "Mark as OK" / undo — back to where it was clicked (only local paths).

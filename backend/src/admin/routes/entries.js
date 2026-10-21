@@ -60,11 +60,11 @@ router.get('/:plural', async (req, res) => {
     ({ rows } = await adminPool.query(`SELECT * FROM (SELECT ${cols(1)} FROM ${t.table} t) x ORDER BY sort_key COLLATE sort_natural
       LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [t.type]));
   } else {
-    // the stored search fields (111), or the view itself while they are behind a change just made
-    const live = !(await quality.current(adminPool, { wait: 2000 }));
+    // the stored search fields (111/125) — a change just made is in them within a second or two
+    await quality.current(adminPool, { wait: 2000 });
     ({ rows } = await adminPool.query(`
       SELECT * FROM (SELECT ${cols(2)}, s.score, s.why, s.tier_rank, s.tier_heading
-                     FROM (${fieldSearchSql(t, 't', { live })}) s JOIN ${t.table} t ON t.id = s.id) x
+                     FROM (${fieldSearchSql(t, 't')}) s JOIN ${t.table} t ON t.id = s.id) x
       ORDER BY tier_rank NULLS FIRST, score DESC, sort_key COLLATE sort_natural
       LIMIT ${PAGE + 1} OFFSET ${(page - 1) * PAGE}`, [q, t.type]));
     if (!rows.length && page === 1) {
@@ -479,8 +479,9 @@ router.get('/:plural/:slug', async (req, res) => {
   const mainCreator = t.type === 'artwork' && e.doc.creator
     ? (await adminPool.query('SELECT slug, name FROM artists WHERE slug = $1', [e.doc.creator])).rows[0] : null;
   const name = e.name;
-  // the stored result — or, right after a change not in it yet, this entry's checks computed now (no waiting)
-  const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id }, live: !(await quality.isFresh(adminPool)) });
+  // the stored result — after a change just made, once this entry is checked again (a moment; the box says if not yet)
+  const qaQueued = !(await quality.settled(adminPool, t.type, e.id));
+  const qa = await quality.issues(adminPool, { entity: { type: t.type, id: e.id } });
   const pending = await collab.unpublished(t, e.id);
   const imgs = t.imageFk ? await readImages(adminPool, t.type, e.id) : [];
   const autoFlag = await autocreate.flagOf(adminPool, t.type, e.id);
@@ -538,7 +539,7 @@ router.get('/:plural/:slug', async (req, res) => {
         <form method="post" action="/${t.folder}/${e.slug}/auto-done" class="inline"><button class="link">it's complete — remove the mark</button></form>
         <div class="muted small">The mark goes away by itself when the entry is next published.</div></div>` : ''}
       ${req.query.queue ? quality.queueBar(t, e, req.query.queue, qa) : ''}
-      ${quality.entityBox(qa, req.query.queue ? req.originalUrl : `/${t.folder}/${e.slug}`)}
+      ${quality.entityBox(qa, req.query.queue ? req.originalUrl : `/${t.folder}/${e.slug}`, { queued: qaQueued })}
       ${citation ? html`<p class="citation"><b>${citation.siglum}:</b> ${raw(citation.full)}</p>` : ''}
       ${series && series.whole ? html`<p class="part-of">${series.number ? html`<b>${/^\d+$/.test(series.number) ? `No. ${series.number}` : series.number}</b>
         ${series.whole.parts_count && /^\d+$/.test(series.number) ? `of ${series.whole.parts_count} ` : ''}in ` : 'Part of '}<a href="/artworks/${series.whole.slug}">${series.whole.title}</a>

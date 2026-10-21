@@ -53,20 +53,46 @@ const SEVERITIES = ['error', 'warning', 'info'];
 const SEVERITY_TEXT = { error: 'Errors — contradictions', warning: 'Warnings — probably a problem', info: 'Info — incomplete' };
 
 // ---------------------------------------------------------------------------------------------------------------
-// The stored result (migration 058). Every change bumps a counter and sends NOTIFY quality_changed at its commit;
-// this process LISTENs and calls refresh_quality() half a second later (several saves in a row: one refresh). One
-// refresh at a time; a change during it → once more right after. A page that must be exact waits (current()).
+// The stored result (058), kept up to date incrementally (125). Every change appends the entries it affects to
+// derived_queue and sends NOTIFY quality_changed at its commit; this process LISTENs and, half a second later, works
+// through the queue a batch at a time (process_derived — each batch its own short transaction: search fields,
+// findings, duplicate pairs of those entries). Then the global part (refresh_quality_global: the checks over all
+// entries, the words for "did you mean", the graph) — at most every GLOBAL_EVERY ms, at once when a page waits for
+// it. One worker at a time; a change during it → once more right after. Each night every entry is queued once
+// (refresh_quality_full): what that changes was missed and is logged as drift (quality page).
 // ---------------------------------------------------------------------------------------------------------------
+const BATCH_SIZE = 100;     // entries per batch (process_derived)
+const GLOBAL_EVERY = Number(process.env.QUALITY_GLOBAL_EVERY_MS || 30000);
+const FULL_HOUR = 3;       // the nightly full run, server time
 let running = null;  // the refresh in progress (a promise)
 let again = false;   // a change came in while it ran
+let urgent = false;  // a page waits: the global part now, not at its next turn
+let lastGlobal = 0;
 let timer = null;
+let globalTimer = null;
+let nightly = null;
 let pool = null;     // the admin pool (start())
+
+const isFresh = async (db) => (await db.query('SELECT quality_fresh() AS f')).rows[0].f === true;
 
 function refresh() {
   if (running) { again = true; return running; }
   running = (async () => {
     try {
-      do { again = false; await pool.query('SELECT refresh_quality()'); } while (again);
+      do {
+        again = false;
+        while ((await pool.query('SELECT process_derived($1) AS n', [BATCH_SIZE])).rows[0].n > 0) { /* next batch */ }
+        if (await isFresh(pool)) continue;
+        const wait = lastGlobal + GLOBAL_EVERY - Date.now();
+        if (urgent || wait <= 0) {
+          urgent = false;
+          await pool.query('SELECT refresh_quality_global()');
+          lastGlobal = Date.now();
+        } else {
+          clearTimeout(globalTimer);
+          globalTimer = setTimeout(refresh, wait);
+        }
+      } while (again);
     } catch (err) {
       console.error('quality: refresh failed —', err.message);
     } finally { running = null; }
@@ -75,21 +101,47 @@ function refresh() {
 }
 const refreshSoon = () => { clearTimeout(timer); timer = setTimeout(refresh, 500); };
 
-// Is the stored result up to date? Not: refresh now (or join the one running) and wait — at most `wait` ms; false =
-// still not (the caller then computes the checks live, as before 058).
+// Is the stored result up to date? Not: bring it up to date now (or join the worker) and wait — at most `wait` ms;
+// false = still not (the page then shows the stored result with a note that it is being updated).
 async function current(db, { wait = 5000 } = {}) {
-  const fresh = async () => (await db.query('SELECT quality_fresh() AS f')).rows[0].f === true;
-  if (await fresh()) return true;
+  if (await isFresh(db)) return true;
   if (!pool) return false;
+  urgent = true;
   let timeout;
   const late = new Promise((resolve) => { timeout = setTimeout(resolve, wait, false); });
-  const done = refresh().then(fresh);
+  const done = refresh().then(() => isFresh(db));
   try { return await Promise.race([done, late]); } finally { clearTimeout(timeout); }
 }
-const isFresh = async (db) => (await db.query('SELECT quality_fresh() AS f')).rows[0].f === true;
+
+// How far behind: { waiting, oldest, global_current, refreshed_at, full_at, drift_week }
+const status = async (db) => (await db.query('SELECT * FROM quality_status()')).rows[0];
+// Is this entry waiting to be checked again?
+const queued = async (db, type, id) => (await db.query(
+  'SELECT EXISTS (SELECT 1 FROM derived_queue WHERE type = $1 AND id = $2) AS q', [type, id])).rows[0].q;
+
+// Wait until this entry is checked again after a change (at most `wait` ms; the global part isn't waited for):
+// true = done, false = still queued (the page says so).
+async function settled(db, type, id, { wait = 2000 } = {}) {
+  const until = Date.now() + wait;
+  while (await queued(db, type, id)) {
+    if (Date.now() >= until) return false;
+    if (pool && !running) refresh();
+    await new Promise((resolve) => { setTimeout(resolve, 100); });
+  }
+  return true;
+}
+
+// the nightly full run, once a day after FULL_HOUR
+async function fullRunDue() {
+  if (new Date().getHours() < FULL_HOUR) return;
+  const { rows } = await pool.query("SELECT full_at IS NULL OR full_at < date_trunc('day', now()) + make_interval(hours => $1) AS due FROM quality_refresh", [FULL_HOUR]);
+  if (!rows[0].due) return;
+  const n = (await pool.query('SELECT refresh_quality_full() AS n')).rows[0].n;
+  console.log(`quality: nightly full run — ${n} entries queued`);
+}
 
 // LISTEN on a connection of its own (a pooled one goes back to the pool); reconnects after an outage and refreshes
-// then — a change during it sent its notice to nobody.
+// then — a change during it sent its notice to nobody (its entries wait in the queue).
 let listener = null;
 let stopped = false;
 async function listen() {
@@ -109,21 +161,27 @@ async function listen() {
   }
 }
 // on server start (src/server.js): also brings the result up to date after a deploy (a migration may change checks)
-function start(adminPool) {
+function start(adminPool, { nightlyRun = true } = {}) {
   pool = adminPool;
   stopped = false;
+  if (nightlyRun) {
+    nightly = setInterval(() => fullRunDue().catch((err) => console.error('quality: nightly run —', err.message)), 15 * 60 * 1000);
+    nightly.unref();
+  }
   return listen();
 }
 async function stop() {
   stopped = true;
   clearTimeout(timer);
+  clearTimeout(globalTimer);
+  clearInterval(nightly);
   if (listener) await listener.end().catch(() => {});
   if (running) await running;
 }
 
-// Findings with names, filtered; acknowledged ones only when asked for. live: computed now (quality_issues_live) —
-// when the stored result is behind and couldn't be brought up to date in time.
-async function issues(db, { severity, check, type, entity, acked = false, live = false } = {}) {
+// Findings with names, filtered; acknowledged ones only when asked for — always the stored result: computed live,
+// the checks would take as long as a refresh (seconds, more as the database grows).
+async function issues(db, { severity, check, type, entity, acked = false } = {}) {
   const where = ['true'];
   const params = [];
   const p = (v) => { params.push(v); return `$${params.length}`; };
@@ -135,7 +193,7 @@ async function issues(db, { severity, check, type, entity, acked = false, live =
   const { rows } = await db.query(`
     SELECT q.check_id, q.severity, q.entity_type::text AS type, q.issue_key, q.detail, e.slug, e.name,
            a.note, a.acked_at, u.username AS acked_by
-    FROM ${live ? 'quality_issues_live' : 'quality_issues'} q
+    FROM quality_issues q
     JOIN entity_index e ON e.type = q.entity_type AND e.id = q.entity_id
     LEFT JOIN quality_acks a ON a.check_id = q.check_id AND a.issue_key = q.issue_key
     LEFT JOIN admin_users u ON u.id = a.acked_by
@@ -144,9 +202,9 @@ async function issues(db, { severity, check, type, entity, acked = false, live =
   return rows;
 }
 
-async function counts(db, { live = false } = {}) {
+async function counts(db) {
   const { rows } = await db.query(`
-    SELECT q.severity, q.check_id, count(*)::int AS n FROM ${live ? 'quality_issues_live' : 'quality_issues'} q
+    SELECT q.severity, q.check_id, count(*)::int AS n FROM quality_issues q
     LEFT JOIN quality_acks a ON a.check_id = q.check_id AND a.issue_key = q.issue_key
     WHERE a.check_id IS NULL GROUP BY 1, 2`);
   return rows;
@@ -226,12 +284,13 @@ function ackForm(r, back, acked) {
         <input name="note" placeholder="why it is right (optional)" aria-label="note"><button class="secondary">Mark as OK</button></form>`;
 }
 
-function page({ rows, allCounts, filter, back, featured = 0 }) {
+function page({ rows, allCounts, filter, back, featured = 0, status: st = null, driftRows = [] }) {
   const total = (s) => allCounts.filter((c) => c.severity === s).reduce((n, c) => n + c.n, 0);
   const q = (params) => `/quality?${new URLSearchParams(Object.entries({ ...filter, ...params }).filter(([, v]) => v)).toString()}`;
   const groups = {};
   for (const r of rows) (groups[r.check_id] ||= []).push(r);
   return html`<h1>Data quality</h1>
+    ${statusLine(st)}${driftBox(driftRows)}
     ${featured ? html`<p class="flash error">${featured} start view${featured === 1 ? ' has' : 's have'} problems (an entry deleted, a key the site doesn't know …) —
       <a href="/featured">Start views</a>.</p>` : ''}
     <p class="small">Batch pages: <a href="/quality/batch/wikidata">find Wikidata items</a> ·
@@ -270,13 +329,38 @@ function page({ rows, allCounts, filter, back, featured = 0 }) {
     })}</div>`;
 }
 
+// How current the stored result is (125): a line for the quality page and the dashboard.
+const clock = (d) => (d ? d.toISOString().slice(11, 16) : '—');   // UTC, as when() in core.js
+function statusLine(st) {
+  if (!st) return '';
+  if (st.waiting) return html`<p class="muted small qa-status updating">Updating — ${st.waiting} ${st.waiting === 1 ? 'entry' : 'entries'} waiting to be checked again (since ${clock(st.oldest)}); the lists below are a moment behind.</p>`;
+  if (!st.global_current) return html`<p class="muted small qa-status updating">Updating the checks over all entries (broken links, narrowable dates) — a moment behind.</p>`;
+  return html`<p class="muted small qa-status">Up to date · checked ${clock(st.refreshed_at)}${st.full_at ? html` · last full check ${st.full_at.toISOString().slice(0, 16).replace('T', ' ')}` : ''}</p>`;
+}
+// What the nightly full run changed that the incremental path had missed (the last week) — each a dependency the
+// triggers of 125 don't know yet.
+async function drift(db) {
+  const { rows } = await db.query(`
+    SELECT d.type::text AS type, d.what, max(d.found_at) AS found_at, e.slug, e.name FROM derived_drift d
+    LEFT JOIN entity_index e ON e.type = d.type AND e.id = d.id
+    WHERE d.found_at > now() - interval '7 days'
+    GROUP BY d.type, d.id, d.what, e.slug, e.name ORDER BY max(d.found_at) DESC LIMIT 100`);
+  return rows;
+}
+const driftBox = (rows) => (rows.length ? html`<details class="flash warn qa-drift"><summary><b>${rows.length} correction${rows.length === 1 ? '' : 's'} by the nightly full check</b>
+    — the incremental checks had missed ${rows.length === 1 ? 'this' : 'these'} (a dependency they don’t know: worth reporting).</summary>
+    <ul>${rows.map((r) => html`<li>${r.slug ? html`<a href="${link(r)}">${r.name}</a>` : html`<i>deleted</i>`} <span class="tag">${r.type}</span> ${r.what}
+      <span class="muted small">${r.found_at.toISOString().slice(0, 16).replace('T', ' ')}</span></li>`)}</ul></details>` : '');
+
 // Box on an entity page: its errors and warnings (info only as a count).
-function entityBox(rows, back) {
+// queued: a change to it (or to an entry it depends on) isn't checked yet — said, not waited for.
+function entityBox(rows, back, { queued = false } = {}) {
   const serious = rows.filter((r) => r.severity !== 'info');
   const infos = rows.length - serious.length;
-  if (!rows.length) return '';
+  const checking = queued ? html` <span class="muted small qa-checking">Being checked again after a change — reload in a moment.</span>` : '';
+  if (!rows.length) return queued ? html`<div class="qa-box"><b>Data quality:</b>${checking}</div>` : '';
   return html`<div class="qa-box${serious.some((r) => r.severity === 'error') ? ' has-error' : ''}">
-    <b>Data quality:</b> ${serious.length ? '' : html`<span class="muted">no problems.</span>`}
+    <b>Data quality:</b> ${serious.length ? '' : html`<span class="muted">no problems.</span>`}${checking}
     ${serious.length ? html`<ul>${serious.map((r) => html`<li><span class="tag qa-${r.severity}">${r.severity}</span>
       ${CHECKS[r.check_id] ? CHECKS[r.check_id].title : r.check_id}: ${r.detail} ${ackForm(r, back, false)}</li>`)}</ul>` : ''}
     ${infos ? html`<span class="muted small">${infos} hint${infos === 1 ? '' : 's'} on completeness (${rows.filter((r) => r.severity === 'info').map((r) => (CHECKS[r.check_id] || {}).title || r.check_id).join(', ')}).</span>` : ''}
@@ -294,5 +378,5 @@ async function unack(db, { check_id: checkId, issue_key: issueKey }) {
   await db.query('DELETE FROM quality_acks WHERE check_id = $1 AND issue_key = $2', [checkId, issueKey]);
 }
 
-module.exports = { CHECKS, SEVERITIES, issues, counts, page, entityBox, ack, unack, start, stop, current, isFresh, refresh,
+module.exports = { CHECKS, SEVERITIES, issues, counts, page, entityBox, ack, unack, start, stop, current, isFresh, refresh, status, queued, settled, statusLine, drift,
   filterOf, filterQuery, queue, next, queueLink, queueBar };

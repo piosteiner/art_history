@@ -4,6 +4,33 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### Derived data kept up to date incrementally (migration 125) — step 1 of the scaling plan
+- **What:** a change now says which entries it affects, and only those are computed again.
+  - Trigger `derived_touch()` on 28 tables (replaces `quality_changed` on them) appends the affected entries to
+    `derived_queue` (append-only — saves never wait for locks); entries changed themselves also queue their neighbours.
+  - The worker in `src/admin/quality.js` calls `process_derived(100)` batch by batch: search fields, findings,
+    duplicate pairs of those entries — each batch a short transaction.
+  - Duplicates by fingerprint: `dup_entries` (md5 of the facts), `dup_keys` (names with GIN trigram, sound keys,
+    numbers, DOI/ISBN …), `dup_pairs` (the findings); replaces `dup_name_keys` + `dup_candidate_pairs` (093).
+  - Global part `refresh_quality_global()` (broken links, narrowable provenance dates, `search_words`, `graph_links`):
+    after the queue, at most every 30 s (`QUALITY_GLOBAL_EVERY_MS`), at once when a page waits.
+  - Nightly after 03:00 (in the server process) `refresh_quality_full()` queues every entry; what that corrects is
+    logged in `derived_drift` and shown on the Quality page.
+  - Pages never compute checks live any more: dashboard and Quality page read the stored result with a status line
+    ("Up to date · checked …" / "Updating — n entries waiting"); an entry page waits up to 2 s for its own entry.
+  - E2E `incremental.spec.js`; `sound-alike.spec.js` adapted; `test/e2e/reset.sql` truncates the derived tables too.
+- **Measured:**
+  - Copy of production: the same 5,416 findings, 58 duplicates and 4,920 search fields; full rebuild 11 s (was 50 s);
+    migration 8 s.
+  - Copy at 10× (3,530 artworks, 4,180 people …): one change 1.3 s + its neighbours 2.3 s, before over 120 s and failing.
+    Global part 11 s at 10× (graph 6.6 s → step 2).
+- **Why:** owner: the databases will grow to thousands of entries per type; processes must stay reliable and
+  efficient. The full refresh grew with the database and failed this morning (123).
+- **Revert:** redeploy the previous commit; then, as owner: drop the `derived_touch` triggers, recreate
+  `quality_changed` triggers (058) on the same tables, restore `refresh_quality()`/`quality_fresh()`/
+  `duplicate_candidates()` and the `possible_duplicate` branch from 123, recreate `dup_name_keys`/`dup_candidate_pairs`
+  (093), drop the new tables/functions; `DELETE FROM schema_migrations WHERE name = '125_incremental_derived.sql';`
+
 ### Quality: artworks without a web page (migration 124)
 - **What:** a new check `artwork_without_web_page` (warning) in `quality_issues_live` — every artwork without
   `web_url` (its page at the museum or collection); title, fix and the Enrich link (Wikidata P973) on the Quality page.

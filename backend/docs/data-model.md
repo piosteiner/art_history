@@ -416,16 +416,29 @@ issue_key, detail`. The date checks are range operators — `&&` overlap, `<<` e
 PostGIS `ST_Covers(parent.area, child.location)`; duplicates `similarity()` from pg_trgm. Findings confirmed as correct
 go into `quality_acks (check_id, issue_key)` and are filtered out with a `LEFT JOIN … WHERE a.check_id IS NULL`.
 
-**Stored result (058).** Computing every check took ~1 s (one entry ~0.3 s: a filter can't be pushed into every
-branch), so pages read the table `quality_issues` (same columns, primary key `(check_id, issue_key)`), which
-`refresh_quality()` (SECURITY DEFINER, advisory lock) brings up to date by writing only what changed: DELETE gone
-findings, `INSERT … ON CONFLICT DO UPDATE … WHERE … IS DISTINCT FROM` the rest. Not a materialized view: since
-PostgreSQL 17 those are built with `search_path = pg_catalog, pg_temp`, and functions the checks call name tables
-without `public.`. A deferred constraint trigger `quality_changed` on every content table fires at commit: `nextval()`
-of the sequence `quality_changes` (non-transactional, no lock — writers never queue) and `NOTIFY quality_changed`. The
-server LISTENs and refreshes 0.5 s later (`src/admin/quality.js`); `quality_fresh()` compares the sequence with the
-value the last refresh saw — the Quality page and dashboard wait for a refresh when behind, an entry page computes its
-own checks live meanwhile. **A migration that changes a check replaces `quality_issues_live`.**
+**Stored result (058), kept up to date incrementally (125).** Pages read the table `quality_issues` (same columns),
+never the view (all checks take seconds, more as the data grows). How it stays current:
+- *What a change affects.* The trigger `derived_touch()` on every table a finding, search field or duplicate depends on
+  appends the entries a row points at to `derived_queue` (append-only, never updated: saves never wait for each other
+  or for the worker). Its arguments map columns to entries: `'artwork.creator_id'`, `'@subject_type.subject_id'` (type
+  in a column), `'prov.provenance_id'` (→ the step's artwork), `'rel.…'`, `'num.…'`, `'all.place'` (boundaries); `+` =
+  changed itself → its neighbours (`derived_neighbours()`: stored graph both ways, children, parts, an artist's or a
+  museum's works, holders' works, entries citing a source) are queued behind it. Plus `nextval('quality_changes')` and
+  `NOTIFY quality_changed`.
+- *The worker* (`src/admin/quality.js`, LISTEN) calls `process_derived(100)` until the queue is empty — one short
+  transaction per batch, whatever the size of the database: per entry its duplicate facts (fingerprint), search fields
+  (`entry_search_fields` filtered by type and ids → diff into `entry_search_fields_stored`) and findings
+  (`quality_issues_live` filtered the same way — `EXECUTE`, so the planner sees the values, pushes them into each
+  branch and drops the branches of other types and of the global checks). Written are only rows that changed.
+- *Global checks* (`quality_global_checks()`: broken `[[links]]`, narrowable provenance dates — they depend on entries
+  in no fixed relation, or compute every chain at once) with `search_words` and `graph_links`: `refresh_quality_global()`,
+  after the queue, at most every 30 s (`QUALITY_GLOBAL_EVERY_MS`), at once when a page waits.
+- *Safety net*: each night after 03:00 `refresh_quality_full()` queues every entry (reason `full`); what that changes
+  was missed by the triggers and lands in `derived_drift` (shown on the Quality page) — fix the dependency there.
+- `quality_fresh()` = queue empty and the global part has seen the last change; `quality_status()` for the pages;
+  `refresh_quality()` = everything now (empties the queue, then the global part — tests and scripts).
+- **A migration that changes a check replaces `quality_issues_live`** (then `SELECT refresh_quality_full()`); one
+  that changes `dup_facts`/`dup_score()` also `TRUNCATE dup_entries` (every fingerprint new → all weighed again).
 
 ## Roles & privileges
 | Role | Used by | Can |
@@ -567,7 +580,7 @@ renaming an acquisition method needs `REINDEX INDEX provenance_search_idx`). `se
 configuration that matched, marks `\x01…\x02`.
 
 ## Network (migration 088)
-`graph_links` (table): the `edges` view stored, rewritten by `refresh_quality()` after every committed change (a
+`graph_links` (table): the `edges` view stored, rewritten by `refresh_quality_global()` after changes (125) (a
 table rather than a materialized view: REFRESH runs with a restricted search_path since Postgres 17, and readers keep
 the old copy until the commit). `entry_path()` — plpgsql breadth-first search with a jsonb "seen" map (a recursive CTE
 can't skip entries reached before, so it would follow every path); `hands_network(daterange)` → JSON {holders,
@@ -601,9 +614,13 @@ eps = radius × 156543.03 / 2^zoom.
 `fuzzystrmatch`: `name_sound_key()` (Double Metaphone per word), `names_sound_alike()` (same key and ≤ a fifth of the
 length in Levenshtein edits, names ≥ 5 letters) — in `dup_maybe()` and `dup_score()` ("names sound alike": 55, titles
 35). Both with SQL-standard bodies (`BEGIN ATOMIC`): bound at creation, independent of the search_path.
-`dup_name_keys` (MATERIALIZED VIEW: type, id, name, sound_key; GIN trigram + b-tree; refreshed by
-`refresh_quality()`) and view `dup_candidate_pairs` (similar `%` or alike names, same DOI/ISBN/web site/inventory or
-further number): the check `possible_duplicate` weighs only those pairs (was: every pair of a type — 3.8 s → 0.5 s).
+Duplicates by fingerprint (125, replaced `dup_name_keys`/`dup_candidate_pairs` of 093): `dup_entries` (md5 of each
+entry's `dup_facts` row), `dup_keys` (type, id, kind, key — names, sound keys, DOI, ISBN, web site, inventory,
+further numbers via `dup_entry_keys()`; b-tree on (type, kind, key), GIN trigram on names with `fastupdate = off`),
+`dup_pairs` (the verdicts that are findings, each way round, with b's name and slug). `dup_neighbours(f)` finds an
+entry's candidates through the keys (names `%` then `similarity ≥ 0.5`, the threshold of `dup_maybe`); only an entry
+whose fingerprint changed is weighed again, only against them (partners whose pair appeared or went are queued).
+`duplicate_candidates()` (the box on the new-entry form) uses the same lookup.
 Most other views can't be materialized yet: since Postgres 17 REFRESH runs with search_path = pg_catalog, and ~50
 older SQL functions with quoted bodies call others unqualified — convert them to SQL-standard bodies first.
 
@@ -624,7 +641,7 @@ via `artist`, the links' dates merged with `range_merge(range_agg(period))`) or 
 
 ## Did you mean, number reach (migration 113)
 `search_words` (MATERIALIZED VIEW: word, display = `mode() WITHIN GROUP`, n, Double Metaphone `sound`; GIN trigram +
-b-tree; refreshed by `refresh_quality()`; read from `dup_facts`, as `entity_index` can't be materialized — 093) and
+b-tree; refreshed by `refresh_quality_global()`; read from `dup_facts`, as `entity_index` can't be materialized — 093) and
 `search_suggest(q)`. `provenance_number_kinds.scope` (global / holder); `provenance_number_peers(number id)`,
 `provenance_record_peers(record id)` — the other works sharing a number within its reach.
 
