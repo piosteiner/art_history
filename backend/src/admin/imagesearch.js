@@ -69,13 +69,15 @@ const objectName = (v) => stripTags(String(v || '').replace(/<span[^>]*display:\
 async function commons(q) {
   const data = await getJson(`${COMMONS}/w/api.php?${new URLSearchParams({
     action: 'query', generator: 'search', gsrsearch: q, gsrnamespace: '6', gsrlimit: String(LIMIT),
-    prop: 'imageinfo', iiprop: 'url|extmetadata|mime', iiurlwidth: '1200', format: 'json' })}`);
+    prop: 'imageinfo', iiprop: 'url|extmetadata|mime', iiurlwidth: '1280', format: 'json' })}`);
   return Object.values((data.query && data.query.pages) || {}).sort((a, b) => (a.index || 0) - (b.index || 0)).flatMap((p) => {
     const info = p.imageinfo && p.imageinfo[0];
     if (!info || !/^image\//.test(info.mime || 'image/')) return [];
     const m = info.extmetadata || {};
     const license = stripTags(m.LicenseShortName && m.LicenseShortName.value);
     if (!license) return [];  // no licence statement: not offered
+    // the image at 1280 px (a standard width: Wikimedia refuses others, e.g. 1200 or 400 — HTTP 400); the result grid
+    // shows a 330 px thumbnail of it (thumbUrl), not 20 images of ~250 KB at once
     return [{ url: clean(info.thumburl || info.url), thumb: clean(info.thumburl || info.url), source_url: info.descriptionurl,
       license, credit: stripTags(m.Artist && m.Artist.value) || null,
       title: objectName(m.ObjectName && m.ObjectName.value) || String(p.title || '').replace(/^File:/, ''), by: null }];

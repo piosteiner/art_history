@@ -779,7 +779,7 @@ router.get('/:plural/:slug/images/find', async (req, res) => {
       ${error ? html`<p class="flash error">${error}</p>` : ''}
       ${!error && !results.length ? html`<p class="muted">Nothing found here — try another source or fewer words (e.g. only the artist).</p>` : ''}
       <div class="find-results">${results.map((r) => html`<figure class="image-item find-item">
-        <a href="${r.source_url || r.url}" target="_blank" rel="noopener"><img src="${r.thumb}" alt="" loading="lazy" decoding="async"></a>
+        <a href="${r.source_url || r.url}" target="_blank" rel="noopener"><img src="${thumbUrl(r.thumb, 330)}" alt="" loading="lazy" decoding="async"></a>
         <figcaption><b>${r.title || ''}</b>${r.by ? html`<div class="small">${r.by}</div>` : ''}
           <div class="muted small">${[r.credit, r.license].filter(Boolean).join(' · ')}</div>
           ${have.has(r.url) ? html`<div class="tag">added ✓</div>` : html`<form method="post" action="/${t.folder}/${e.slug}/images">

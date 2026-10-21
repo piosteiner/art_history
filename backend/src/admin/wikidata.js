@@ -80,7 +80,7 @@ const MAX_IMAGES = 12;  // P18 statements offered per item (each costs one Commo
 const stripTags = (s) => String(s || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
 async function commonsImage(file) {
   const url = `${COMMONS}/w/api.php?${new URLSearchParams({ action: 'query', titles: `File:${file}`, prop: 'imageinfo',
-    iiprop: 'extmetadata|url', iiurlwidth: '1200', format: 'json' })}`;
+    iiprop: 'extmetadata|url', iiurlwidth: '1280', format: 'json' })}`;
   const page = Object.values(((await getJson(url)).query || {}).pages || {})[0];
   const info = page && page.imageinfo && page.imageinfo[0];
   if (!info) return null;

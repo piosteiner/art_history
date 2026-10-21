@@ -10,6 +10,7 @@ const wikidata = require('../wikidata');
 const citations = require('../citations');
 const authority = require('../authority');
 const imagesearch = require('../imagesearch');
+const { thumbUrl } = require('../images');
 const { fieldLabel } = require('../forms');
 const { send, withTx, findEntity } = require('../core');
 const autocreate = require('../autocreate');
@@ -280,7 +281,7 @@ router.get('/quality/batch/images', async (req, res) => {
       <h2><a href="/artworks/${r.slug}" target="_blank">${r.name}</a>${r.creator || r.created_label ? html` <span class="muted small">${[r.creator, r.created_label].filter(Boolean).join(', ')}</span>` : ''}</h2>
       ${found[i].per.every((x) => !x.results.length) ? html`<p class="muted">Nothing found anywhere.</p>` : ''}
       <div class="find-results">${found[i].per.flatMap((x) => x.results.map((h) => html`<figure class="image-item find-item">
-        <a href="${h.source_url || h.url}" target="_blank" rel="noopener"><img src="${h.thumb}" alt="" loading="lazy" decoding="async"></a>
+        <a href="${h.source_url || h.url}" target="_blank" rel="noopener"><img src="${thumbUrl(h.thumb, 330)}" alt="" loading="lazy" decoding="async"></a>
         <figcaption><span class="tag">${x.name}</span> <b>${h.title || ''}</b>${h.by ? html`<div class="small">${h.by}</div>` : ''}
           <div class="muted small">${[h.credit, h.license].filter(Boolean).join(' · ')}</div>
           <form method="post" action="/artworks/${r.slug}/images">

@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-21
 
+### Admin image search: small previews
+- **What:** the result grids of “Find images…” and the batch page show 330 px Wikimedia thumbnails (`thumbUrl`) instead
+  of the 1280 px images; Commons and the Wikidata import ask for 1280 px (a standard width) instead of 1200. Unit test
+  `images.test.js`.
+- **Why:** owner: the Commons results showed empty boxes — up to 20 images of ~250 KB at once; Wikimedia limits such
+  bulk requests (the URLs themselves answer 200), and only standard thumbnail widths are served (1200, 400 → HTTP 400).
+- **Revert:** revert the commit.
+
 ### Step 5: the worker can't get stuck; the periods timeline cached (migration 128)
 - **What:**
   - A batch that fails is taken one entry at a time; an entry that fails alone is set aside (`derived_quarantine()` →
