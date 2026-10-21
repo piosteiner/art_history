@@ -6,5 +6,6 @@ TRUNCATE relationships, images, artworks, glossary, bibliography, polities, inst
          entry_identifiers, citations, slug_history, wikidata_reviews, auto_created, quality_acks, quality_issues,
          audit_log, live_docs, admin_drafts, admin_sessions, admin_users,
          -- derived data (125): no trigger saw the TRUNCATE — the import queues every entry again
-         derived_queue, derived_drift, dup_entries, dup_keys, dup_pairs, entry_search_fields_stored, graph_links
+         derived_queue, derived_drift, dup_entries, dup_keys, dup_pairs, entry_search_fields_stored, graph_links,
+         entry_list_rows, list_queue
   RESTART IDENTITY CASCADE;
