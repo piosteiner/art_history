@@ -2,6 +2,42 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-22
+
+### Data: Van Gogh's “The Bedroom” — the series and its three versions
+- **What:**
+  - New series entry `bedroom-in-arles` (Wikidata Q724377, “has part” the three versions), parts in the order painted:
+    1 Van Gogh Museum (October 1888, F482/JH1608), 2 Art Institute of Chicago (new entry, September 1889, F484/JH1771),
+    3 Musée d'Orsay (September 1889, smaller, for his mother and sister, F483/JH1793).
+  - Corrected:
+    - The Amsterdam painting carried the series' Wikidata item: now Q18713070.
+    - The Orsay version was a "part" of the first version.
+    - Orsay's size is 57.3 × 73.5 cm (Wikidata had 56.5 × 74).
+    - Orsay's names: English and German as translations, not as the original.
+    - The first version's "kind" was cited with the Orsay's page.
+  - Chicago and Orsay: `copy_after` the first version, labelled as Van Gogh's own repetitions. Places of creation
+    are dated: Arles, then Saint-Rémy-de-Provence. All four depict Arles (the Yellow House).
+  - Provenance:
+    - Chicago: eight steps from the Art Institute's record, with the exhibitions of 1895, 1901, 1909 and 1914 as
+      records; new entries `art-institute-of-chicago`, `chicago` (in the United States) and `frederic-clay-bartlett`.
+    - Amsterdam: rebuilt from the Van Gogh Museum's record — Jo van Gogh-Bonger with her son as joint heirs, the loans
+      to the Rijksmuseum and the Stedelijk, the Foundation since 1962, the museum as permanent loan (`on_loan`).
+  - Sources:
+    - New: `art-institute-of-chicago-collection`, `van-gogh-museum-collection`, and the catalogues raisonnés
+      `de-la-faille-1970` and `hulsker-1996` for the F and JH numbers.
+    - The Orsay's page was read in the Internet Archive (the museum blocks this server).
+  - Frames as further measurements; images from Commons; the four entries are not duplicates of each other (acks).
+- **Why:** owner: three versions of the same painting — finish the entries, relate them, perhaps as a series.
+- **Revert:** the history of each entry (admin → History) restores earlier states; the new entries can be deleted.
+
+### Fix: date ranges whose start leaves out the shared month or year (`src/fuzzy-date.js`)
+- **What:** “15–31 March 1901”, “May–October 1909”, “20 May–29 July 1890” — the start takes the end's month and
+  year (`borrowFromEnd`); a span within one month is labelled “15–31 March 1901”. Unit test in `test/fuzzy-date.test.js`.
+- **Why:** found while entering the Chicago exhibitions:
+  - “15–31 March 1901” was read as the year 15 to March 1901, silently.
+  - The other two forms were refused, although the parser itself writes labels like “20 May–29 July 1890”.
+- **Revert:** redeploy the previous commit.
+
 ## 2026-10-21
 
 ### Fix: long start-map views can be shared again (migration 130)

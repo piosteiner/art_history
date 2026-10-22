@@ -187,7 +187,8 @@ function parseRange(text, { openEnd }) {
   if (until) { const p = parseSide(until[1]); return p && { range: `(,${p.range.split(',')[1]}`, label: `until ${p.label}` }; }
   for (const sep of SEPARATORS) {
     for (let at = text.indexOf(sep); at >= 0; at = text.indexOf(sep, at + 1)) {
-      const [a, b] = [text.slice(0, at).trim(), text.slice(at + sep.length).trim()];
+      const b = text.slice(at + sep.length).trim();
+      const a = borrowFromEnd(text.slice(0, at).trim(), b);
       if (sep === '-' && /^\d{2}(?:-\d{2})?$/.test(b)) continue;  // 1900-05: a month, not a range
       if (!a && (!b || sep === '/' || sep === ' / ' || sep === '-')) continue;  // an open start is "–1808"; "-500" is a year BCE, "/1808" an error
       const left = a ? parseSide(a) : null;
@@ -205,6 +206,18 @@ function parseRange(text, { openEnd }) {
   }
   return null;
 }
+// A start that leaves out what it shares with the end, as people write ranges: "15–31 March 1901", "May–October
+// 1909", "20 May–29 July 1890" — the start takes the end's month and year, or its year. (Without this, "15" was read
+// as the year 15.) Only a bare day before a day, month and year, or a month (with or without its day) before a
+// month and year; anything else is left as it is.
+function borrowFromEnd(a, b) {
+  const end = /^(?:(\d{1,2})\s+)?([A-Za-z]+)\s+(\d{1,4})$/.exec(b);
+  if (!end || !MONTHS.includes(end[2])) return a;
+  if (/^\d{1,2}$/.test(a) && end[1]) return `${a} ${end[2]} ${end[3]}`;
+  const start = /^(?:\d{1,2}\s+)?([A-Za-z]+)$/.exec(a);
+  if (start && MONTHS.includes(start[1])) return `${a} ${end[3]}`;
+  return a;
+}
 function parseSide(text) {
   for (const t of [text, text.replace(/\b(\d{1,4})\s*(?:BCE|BC)\b/gi, '-$1')]) {  // "500 BCE", as the labels write it
     try { return parseOne(t, { openEnd: false }); } catch { /* the next form */ }
@@ -216,12 +229,18 @@ function openRange(p, openEnd, text) {
   if (!openEnd) throw new Error(`bad date "${text}": an open end ("…/") is only allowed for periods`);
   return { range: `${p.range.split(',')[0]},)`, label: `since ${p.label}` };
 }
-// "20 May 1890" + "29 July 1890" → "20 May–29 July 1890"; otherwise both as they are
+// "20 May 1890" + "29 July 1890" → "20 May–29 July 1890"; "15 March 1901" + "31 March 1901" → "15–31 March 1901";
+// otherwise both as they are
 function joinLabels(a, b) {
   const ya = /^(.*[A-Za-z]) (\d{1,4})$/.exec(a);
   const yb = /^(.*[A-Za-z]) (\d{1,4})$/.exec(b);
   const month = (x) => MONTHS.some((m) => x.includes(m));
-  if (ya && yb && ya[2] === yb[2] && month(ya[1]) && month(yb[1])) return `${ya[1]}–${b}`;
+  if (ya && yb && ya[2] === yb[2] && month(ya[1]) && month(yb[1])) {
+    const da = /^(\d{1,2}) ([A-Za-z]+)$/.exec(ya[1]);
+    const db = /^(\d{1,2}) ([A-Za-z]+)$/.exec(yb[1]);
+    if (da && db && da[2] === db[2]) return `${da[1]}–${b}`;
+    return `${ya[1]}–${b}`;
+  }
   return `${a}–${b}`;
 }
 const compareBounds = (a, b) => {

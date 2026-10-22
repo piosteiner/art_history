@@ -163,3 +163,15 @@ test('ranges as people write them (099): any two forms, with -, –, " - ", "to"
   assert.throws(() => r('1900-13'), /bad month/);
   assert.throws(() => r('nonsense'), /bad date/);
 });
+
+test('a range whose start leaves out what it shares with the end: "15–31 March 1901", "May–October 1909"', () => {
+  // was: "15" read as the year 15 → [0015-01-01,1901-04-01)
+  assert.deepEqual(parseFuzzyDate('15–31 March 1901'), { range: '[1901-03-15,1901-04-01)', label: '15–31 March 1901' });
+  assert.deepEqual(parseFuzzyDate('May–October 1909'), { range: '[1909-05-01,1909-11-01)', label: 'May–October 1909' });
+  assert.deepEqual(parseFuzzyDate('20 May–29 July 1890'), { range: '[1890-05-20,1890-07-30)', label: '20 May–29 July 1890' });
+  // written out in full, the label is shortened the same way
+  assert.equal(parseFuzzyDate('15 March 1901–31 March 1901').label, '15–31 March 1901');
+  // years stay years; the end before the start is still an error
+  assert.equal(parseFuzzyDate('1900–1905').range, '[1900-01-01,1906-01-01)');
+  assert.throws(() => parseFuzzyDate('31–15 March 1901'), /end is before start/);
+});
