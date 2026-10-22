@@ -1,7 +1,7 @@
 import { applySuggestion, listAll, listEntities, suggest } from '../api';
 import { describeQuery, parseQuery } from '../query';
 import { replaceUrl } from '../router';
-import { partLabel } from '../series';
+import { ofVersions, partLabel, wholeKind } from '../series';
 import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
 
@@ -29,7 +29,7 @@ export function cardParts(plural: Plural, item: AnyItem) {
     case 'artworks': {
       const a = item as ItemByPlural['artworks'];
       [name, date, image] = [displayName(a).text, dateLabel(a.created), a.image_url];
-      detail = [a.part_of ? [partLabel(a.part_number), a.part_of.title].filter(Boolean).join(' · ') : '', a.kind, creatorNames(a), countryText(a.country)].filter(Boolean).join(' · ');
+      detail = [a.part_of ? [partLabel(a.part_number, ofVersions(a.part_of)), a.part_of.title].filter(Boolean).join(' · ') : '', wholeKind(a), creatorNames(a), countryText(a.country)].filter(Boolean).join(' · ');
       break;
     }
     case 'places': {

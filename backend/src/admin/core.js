@@ -463,8 +463,13 @@ async function formContext(t, id = null) {
   // object types of immovable works, offered even before they are used (migration 034)
   if (t.type === 'artwork') {
     suggestions.kind = [...new Set([...suggestions.kind, 'building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate',
-      'monument', 'tower', 'mural', 'series', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'])].sort();
+      'monument', 'tower', 'mural', 'series', 'versions', 'cycle', 'pair', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'])].sort();
   }
+  // the kinds that make a whole a group of works (132: glossary category "group of works"), in every language the
+  // terms have — the form hides the physical fields for them (editor/artworkform.js)
+  const groupKinds = t.type === 'artwork' ? (await adminPool.query(`
+    SELECT DISTINCT lower(x) AS k FROM glossary g CROSS JOIN LATERAL unnest(term_names(g)) x
+    WHERE g.category = 'group of works'`)).rows.map((r) => r.k) : [];
   // kinds of events, offered before they are used (migration 047)
   if (t.type === 'event') {
     suggestions.kind = [...new Set([...suggestions.kind, 'fire', 'earthquake', 'flood', 'war', 'battle', 'siege', 'revolution', 'trial',
@@ -498,7 +503,7 @@ async function formContext(t, id = null) {
   const coCreators = t.type === 'artwork' && id !== null ? (await adminPool.query(`
     SELECT a.name, r.label FROM relationships r JOIN artists a ON a.id = r.object_id
     WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = $1 ORDER BY a.name COLLATE sort_natural`, [id])).rows : [];
-  return { enums, enumsNullable, suggestions, refs, used, terms, coCreators, errorKeys: new Set(), confirmNew: {} };
+  return { groupKinds, enums, enumsNullable, suggestions, refs, used, terms, coCreators, errorKeys: new Set(), confirmNew: {} };
 }
 
 async function findEntity(t, slug) {

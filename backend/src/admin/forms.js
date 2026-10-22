@@ -328,7 +328,7 @@ function fieldInput(key, kind, f, ctx) {
 const g = (summary, keys, hint = '', openForKinds = []) => ({ group: { summary, keys, hint, openForKinds } });
 // object types that open a group as soon as they are typed (editor.js): works that don't move, and wholes
 const IMMOVABLE = ['building', 'garden', 'park', 'bridge', 'temple hall', 'shrine', 'pagoda', 'gate', 'monument', 'tower', 'mural'];
-const WHOLES = ['series', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'];
+const WHOLES = ['series', 'versions', 'cycle', 'pair', 'album', 'diptych', 'triptych', 'polyptych', 'altarpiece', 'set'];
 const METADATA = g('Metadata (JSON)…', ['metadata'], 'Free-form extras — sources noted by the Wikidata comparison end up here.');
 const IDS = (...more) => ({ title: 'Identifiers', id: 'ids', rows: [...more, ['wikidata_id'], METADATA] });
 // provenance flag (068): the owner's research list — a group, closed unless it has a value
@@ -457,7 +457,7 @@ function entityForm({ t, slug, f, ctx, action, errors, isNew, version, collab = 
   return html`
   ${errors.length ? html`<ul class="errors">${errors.map((e) => html`<li>${e}</li>`)}</ul>` : ''}
   ${ctx.errorKeys && ctx.errorKeys.size ? html`<p class="small error-fields">Marked in red: ${[...ctx.errorKeys].filter((k) => k === 'slug' || t.fields[k]).map((k, i) => html`${i ? ' · ' : ''}<a href="#f-${k}" data-error-field="${k}">${k === 'slug' ? 'Slug' : fieldLabel(t.type, k)}</a>`)}</p>` : ''}
-  <form method="post" action="${action}" class="form"${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
+  <form method="post" action="${action}" class="form"${ctx.groupKinds && ctx.groupKinds.length ? html` data-group-kinds="${ctx.groupKinds.join('|')}"` : ''}${collab ? html` data-collab="${collab.key}" data-state="${collab.state}"` : html` data-draft="1"`}${collab && collab.published ? html` data-published="${Buffer.from(JSON.stringify(collab.published)).toString('base64')}" data-published-url="${action}/published.json"` : ''}>
     ${version ? html`<input type="hidden" name="version" value="${version}">` : ''}
     ${isNew && ctx.duplicates ? duplicates.confirmBox(t, ctx.duplicates) : ''}
     ${isNew && ctx.typeCheck ? html`<div class="type-check">${ctx.typeCheck}</div>` : ''}

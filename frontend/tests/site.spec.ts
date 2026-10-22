@@ -1763,6 +1763,19 @@ test('series: "No. 21 of 36 in …" with previous/next; the series page shows it
   await expect(page.locator('.parts-grid .part-card').nth(1)).toContainText('No. 21');
 });
 
+test('versions of one composition (API 132): "Version 2 of 3 in …", the whole lists its versions', async ({ page }) => {
+  const whole = { slug: 'thirty-six-views-of-mount-fuji', title: 'The Bedroom', kind: 'versions', parts_count: 3, is_group: true };
+  await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    Object.assign(body, { part_of: [whole], part_number: '2', previous_part: { slug: 'south-wind-clear-sky', title: 'The Bedroom', part_number: '1' }, next_part: null, parts_count: null, parts: [] });
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(page.locator('.series-line')).toHaveText(/Version 2\s+of 3 in\s+The Bedroom/);
+  await expect(page.locator('.part-nav .part-prev')).toContainText('Version 1');
+});
+
 // ---- an artwork's web page (API migrations 038/039; no live artwork has one yet: the tests add it) ----
 async function withWebPage(page: Page, change: (body: Record<string, unknown>) => void) {
   await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {

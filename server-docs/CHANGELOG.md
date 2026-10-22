@@ -4,6 +4,32 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-22
 
+### Groups of works made recognisable (migrations 131/132)
+- **What:** a series, the versions of one composition, a cycle or a pair stays an artwork entry with its parts (037),
+  but its kind now says what it is:
+  - Glossary:
+    - New category `group of works` (131) with the terms series, versions, cycle, pair (132; an existing "series"
+      term moved there).
+    - `artwork_is_group(kind_term_id)`.
+    - An editor can add another kind of group as a term in that category.
+  - Admin form (`src/admin/editor/artworkform.js`): for a group the fields of a single object (size, museum, inventory
+    number, location, provenance status, fate) are hidden while empty, with a note — no second form.
+  - Checks: `artwork_without_web_page` leaves groups out; new `group_parts_missing` (info): "2 of 3 parts entered".
+  - API:
+    - Artwork lists: `is_group`, `parts`, `parts_count`; a whole without an image shows its first part's.
+    - A part's `part_of` carries the whole's `kind` (and `is_group` in the detail).
+    - A part's change and its image reach the whole's list row (parent as neighbour, images spread).
+  - Site:
+    - Parts of versions read "Version 2 of 3 in The Bedroom"; the parts grid is titled "Versions".
+    - Lists say "Versions · 3 parts", and a whole heads its parts when sorted by series (`src/series.ts` `wholeKind`).
+  - Data: the seven existing wholes typed (Bedroom: versions; Black Paintings, Battle Series, Loves of Jupiter, Four
+    Seasons: series; Dos/Tres de Mayo: pair; Siena altarpieces: cycle).
+  - Tests: e2e `groups.spec.js`, site test for "Version 2 of 3", glossary fixtures for the four terms.
+- **Why:** owner: the Bedroom series appeared as a fourth painting; keep the artwork editor from bloating.
+- **Revert:** redeploy the previous commit; as owner restore `quality_issues_live` (without the two changes),
+  `derived_neighbours()`, `kind_categories()` and the images trigger from 127/129; drop `artwork_is_group()`; the
+  terms can stay (or be moved back to "object type"); delete 132 from `schema_migrations` (131's enum value stays).
+
 ### Data: Van Gogh's “The Bedroom” — the series and its three versions
 - **What:**
   - New series entry `bedroom-in-arles` (Wikidata Q724377, “has part” the three versions), parts in the order painted:

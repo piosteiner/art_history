@@ -45,6 +45,7 @@ export interface SortOption {
 export { fold } from './fold';
 import { fold } from './fold';
 import { parseQuery, type ParsedQuery } from './query';
+import { wholeKind } from './series';
 
 /** The words a hit must have (src/query.ts: exclusions, "phrases" and connecting words aside). */
 export const queryWords = (query: string) => parseQuery(query).words;
@@ -246,13 +247,17 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     build: (a) => {
       const l = located(a, 'created_in_polity');
       return {
-        slug: a.slug, name: displayName(a).text, meta: [creatorNames(a), a.created?.label].filter(Boolean).join(', '),
+        slug: a.slug, name: displayName(a).text,
+        meta: [a.is_group || a.parts ? wholeKind(a) : '', [creatorNames(a), a.created?.label].filter(Boolean).join(', ')].filter(Boolean).join(' · '),
         fields: [],
         sorts: {
           // grouped under the series title, in number order (zero-padded so 3 comes before 21)
+          // a whole (API 132) heads its own group, before its parts
           series: a.part_of
             ? { value: fold(`${a.part_of.title} ${String(a.part_number ?? '').padStart(6, '0')}`), heading: a.part_of.title }
-            : { value: null, heading: 'Not in a series' },
+            : a.is_group || a.parts
+              ? { value: fold(`${a.title} ${''.padStart(6, '0')}`), heading: a.title }
+              : { value: null, heading: 'Not in a series' },
           title: byName(a.title), date: byYear(a.created), artist: byText(a.creator?.name, 'Artist unknown'),
           kind: byText(a.kind, 'Other'), country: l.country, polity: l.polity,
         },

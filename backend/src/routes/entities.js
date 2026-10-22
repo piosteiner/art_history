@@ -74,9 +74,15 @@ const ENTITIES = {
   },
   artworks: {
     type: 'artwork', table: 'artworks', alt: 'alt_titles', name: 'title', period: 't.created',
-    list: `range_json(t.created, t.created_label) AS created, t.kind, t.title_status, ${mainImage('artwork_id')},
+    // a whole (037) without an image of its own shows its first part's; is_group: a series, versions, a cycle … (132)
+    list: `range_json(t.created, t.created_label) AS created, t.kind, t.title_status,
+           coalesce((SELECT i.url FROM images i WHERE i.artwork_id = t.id ORDER BY i.position, i.id LIMIT 1),
+                    (SELECT i.url FROM artworks c JOIN images i ON i.artwork_id = c.id WHERE c.parent_id = t.id
+                      ORDER BY c.part_sort NULLS LAST, c.part_number, c.id, i.position, i.id LIMIT 1)) AS image_url,
+           artwork_is_group(t.kind_term_id) AS is_group, t.parts_count,
+           (SELECT count(*)::int FROM artworks c WHERE c.parent_id = t.id) AS parts,
            (SELECT jsonb_build_object('slug', a.slug, 'name', a.name) FROM artists a WHERE a.id = t.creator_id) AS creator,
-           (SELECT jsonb_build_object('slug', w.slug, 'title', w.title) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
+           (SELECT jsonb_build_object('slug', w.slug, 'title', w.title, 'kind', w.kind) FROM artworks w WHERE w.id = t.parent_id) AS part_of, t.part_number,
            artwork_creators(t.id) AS creators, t.on_loan, ${countryCols('artwork')},
            -- type and materials (their names in every language are in search_fields, 110)
            t.materials,
@@ -90,6 +96,7 @@ const ENTITIES = {
            (SELECT jsonb_build_object('documented_percent', c.documented_percent, 'has_provenance', c.has_provenance,
                      'gap_1933_1945', c.gap_1933_1945_days > 0) FROM provenance_completeness_stored c WHERE c.artwork_id = t.id) AS provenance_coverage`,
     detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
+             artwork_is_group(t.kind_term_id) AS is_group,  -- a series, versions, a cycle … (132)
              range_json(t.conceived, t.conceived_label) AS conceived,
              -- 1933–1945 (074): the BAK category A–D, its meaning, the source's wording
              CASE WHEN t.provenance_status IS NOT NULL THEN jsonb_build_object('category', upper(left(t.provenance_status::text, 1)), 'code', t.provenance_status,
@@ -322,7 +329,8 @@ const EXTRAS = {
         SELECT w.id, w.parent_id, 1 AS depth FROM artworks a JOIN artworks w ON w.id = a.parent_id WHERE a.id = $1
         UNION ALL
         SELECT w.id, w.parent_id, up.depth + 1 FROM up JOIN artworks w ON w.id = up.parent_id WHERE up.depth < 10
-      ) SELECT w.slug, w.title, w.kind, w.parts_count FROM up JOIN artworks w ON w.id = up.id ORDER BY up.depth`, [id])).rows,
+      ) SELECT w.slug, w.title, w.kind, w.parts_count, artwork_is_group(w.kind_term_id) AS is_group  -- is_group (132): "Version 2 of 3"
+      FROM up JOIN artworks w ON w.id = up.id ORDER BY up.depth`, [id])).rows,
     ...(await apiPool.query(`
       WITH me AS (SELECT parent_id, part_number, part_sort, title FROM artworks WHERE id = $1),
       sib AS (SELECT a.id, a.slug, a.title, a.part_number,

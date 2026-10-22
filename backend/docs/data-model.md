@@ -303,7 +303,11 @@ markdown-it and puts them back numbered.
 
 ## Series (migration 037)
 `artworks.parent_id` (+ `part_number`, `parts_count`): the parent pattern of places and movements for wholes and
-parts. `part_sort` is a STORED generated column — the first number in `part_number` — so "No. 21" sorts after "3". A
+parts. A whole is an artwork entry like its parts. Its kind says whether it is an object (triptych, album,
+altarpiece — with a size and a place) or a **group of works** (132): a kind whose glossary term is in the category
+`group of works` (series, versions, cycle, pair …; `artwork_is_group(kind_term_id)`). For a group the admin form hides
+the empty object fields, the web-page check leaves it out, `group_parts_missing` counts its parts, and the site labels
+the parts of versions "Version 2 of 3". `part_sort` is a STORED generated column — the first number in `part_number` — so "No. 21" sorts after "3". A
 trigger function `no_parent_cycle()` (dynamic SQL with a recursive CTE and `CYCLE … SET … USING`) refuses loops on
 every table with `parent_id`.
 
