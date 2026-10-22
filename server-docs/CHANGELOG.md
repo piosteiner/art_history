@@ -4,6 +4,51 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-22
 
+### Thumbnails of museum-hosted images through the API (`/v1/thumb`)
+- **What:**
+  - `backend/src/routes/thumbs.js`: an image of our entries (only URLs in `images`) fetched once, resized with
+    sharp to WebP (widths 120/250/330/500/800), kept in `backend/var/thumbs/` (git-ignored), served with a year's
+    caching.
+  - Site (`frontend/src/html.ts` `thumb`): Wikimedia thumbnails as before; Wikimedia originals as their thumbnails
+    (lists loaded the full file); every other image through the API.
+  - One document-wide fallback for failing images (`wireImageFallbacksEverywhere`) instead of only on detail pages;
+    privacy page updated.
+  - Tests: `thumbs.spec.js` (fixture image server via `THUMB_TEST_SERVER`).
+- **Why:** owner: some small previews stayed empty — images from a museum's own server (Academy of Fine Arts Vienna)
+  that refuses anonymous (CORS) loading; the retry only ran on detail pages. A card also loaded a 249 KB "large" JPEG,
+  now 7.7 KB.
+- **Revert:** redeploy the previous commit; `rm -r backend/var/thumbs`.
+
+### Further measurements by glossary terms (migrations 133/134)
+- **What:**
+  - Glossary category `mounting` (133) with frame, mount, stretcher, sheet, plate mark, base (134), names in
+    several languages ("Rahmenmass", "mit Rahmen", "cadre", "with frame" …).
+  - `artworks_link_terms()` saves each part of `other_dimensions` as its term's name (the trigger now also fires on
+    `other_dimensions`); existing parts re-saved (Kunsthaus imports: "Rahmenmass" → "frame").
+  - API: `other_dimensions[].term`; the site links the part to the glossary.
+  - Glossary article "frame" with sources (Jacob Simon on the National Gallery's frames, read in the Internet
+    Archive; the Van Gogh letters; National Gallery; Pinakothek). New sources: `simon-framing-italian-renaissance`,
+    `van-gogh-letters`, `pinakothek-sammlung-online`.
+  - Tests: `mounting.spec.js`; `entities.spec.js` expects the term.
+- **Why:** owner: deal with frames like other translations — in the glossary, with an article, and other mountings.
+- **Revert:** redeploy the previous commit; as owner restore `artworks_link_terms()` and its trigger
+  (`UPDATE OF kind, materials`); the terms can stay; delete 134 from `schema_migrations` (133's enum value stays).
+
+### Data: Thirty-six Views of Mount Fuji and Van Gogh's Sunflowers as series
+- **What:**
+  - `thirty-six-views-of-mount-fuji` (series, 46 prints, Q227494, c. 1830–1832): the Great Wave as its part.
+    Publisher Nishimuraya Yohachi (Eijudō, new from Wikidata) as "published"; the Great Wave got its Met page and
+    the Met's data as sources.
+  - `sunflowers-arles` (series, 7 versions, Q157541): London and Munich (August 1888) and, new,
+    `sunflowers-van-gogh-museum` (January 1889, F458/JH1667, a repetition of London; provenance from the Van Gogh
+    Museum's record).
+  - London: NG3863, Wikidata, dated steps, exhibitions 1905/1923 as records.
+  - Munich: August 1888, its description, the Pinakothek as source.
+  - F/JH numbers for London and Munich.
+  - The site's tests mock a series of their own now (`mock-thirty-six-views`), and two drop the Great Wave's new sources.
+- **Why:** owner: enter the 36 Views; at least one more Sunflowers and a series.
+- **Revert:** admin → History of each entry; the new entries can be deleted.
+
 ### Groups of works made recognisable (migrations 131/132)
 - **What:** a series, the versions of one composition, a cycle or a pair stays an artwork entry with its parts (037),
   but its kind now says what it is:

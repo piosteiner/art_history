@@ -123,7 +123,10 @@ const ENTITIES = {
                'label', concat_ws(' × ', t.height_cm::float8, t.width_cm::float8, t.depth_cm::float8) || ' cm'
                         || CASE WHEN t.width_cm IS NULL THEN ' (height)' ELSE '' END) END AS dimensions,
              -- further measurements (migration 025): mount, frame … in the same shape as dimensions, plus the part
+             -- the part's glossary term, a frame, a mount … (134): the site links it
              (SELECT coalesce(jsonb_agg(jsonb_build_object('part', e->>'part', 'height_cm', (e->'cm'->>0)::numeric,
+                       'term', (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g
+                                 WHERE g.id = term_by_name(e->>'part', ARRAY['mounting']::term_category[])),
                        'width_cm', (e->'cm'->>1)::numeric, 'depth_cm', (e->'cm'->>2)::numeric,
                        'label', (SELECT string_agg(x, ' × ' ORDER BY i) FROM jsonb_array_elements_text(e->'cm') WITH ORDINALITY AS c(x, i)) || ' cm'
                                 || CASE WHEN jsonb_array_length(e->'cm') = 1 THEN ' (height)' ELSE '' END) ORDER BY o), '[]'::jsonb)

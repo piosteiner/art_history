@@ -122,7 +122,7 @@ export interface SourceHint { siglum: string; citation: string }
 export interface EntryHint { type: EntityType; slug: string; name: string; subtitle: string | null; image_url: string | null; excerpt: string | null }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
-export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'other';
+export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'other';  // group of works: API 131, mounting: 133
 
 // ---- countries and polities ---------------------------------------------------------------------
 
@@ -274,7 +274,8 @@ export interface Artist extends DetailBase, Located, Named, PersonName {
 
 export interface Dimensions { height_cm: number | null; width_cm: number | null; depth_cm: number | null; note: string | null; label: string | null }
 /** A further measured part next to the work itself: mount, frame, sheet, base … */
-export interface PartDimensions { part: string; height_cm: number | null; width_cm: number | null; depth_cm: number | null; label: string }
+/** A further measurement (API 025): its part — a glossary term when it is one (134: frame, mount …). */
+export interface PartDimensions { part: string; height_cm: number | null; width_cm: number | null; depth_cm: number | null; label: string; term?: { slug: string; name: string } | null }
 
 export interface Artwork extends DetailBase, Located, Titled {
   type: 'artwork';

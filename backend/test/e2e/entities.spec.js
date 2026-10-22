@@ -383,8 +383,8 @@ test('further measurements (mount, frame): rows with paste and conversion, on th
   await expect(userA.locator('dl.fields')).toContainText('frame: 190 × 105.5 × 6 cm');
   const api = await (await request.get(`${API}/artworks/plum-park-in-kameido`, { headers: { Host: 'api.localhost' } })).json();
   expect(api.other_dimensions).toEqual([
-    { part: 'mount', height_cm: 180.02, width_cm: 95.57, depth_cm: null, label: '180.02 × 95.57 cm' },
-    { part: 'frame', height_cm: 190, width_cm: 105.5, depth_cm: 6, label: '190 × 105.5 × 6 cm' }]);
+    { part: 'mount', height_cm: 180.02, width_cm: 95.57, depth_cm: null, label: '180.02 × 95.57 cm', term: { slug: 'mount', name: 'mount' } },   // glossary terms (134)
+    { part: 'frame', height_cm: 190, width_cm: 105.5, depth_cm: 6, label: '190 × 105.5 × 6 cm', term: { slug: 'frame', name: 'frame' } }]);
 
   // checked like the main dimensions: a part is needed
   await userA.goto('/artworks/plum-park-in-kameido/edit');

@@ -5,6 +5,7 @@ const map = require('./map');
 const graph = require('./graph');
 const network = require('./network');
 const periods = require('./periods');
+const thumbs = require('./thumbs');
 const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
@@ -356,6 +357,7 @@ router.use('/map', map);
 router.use('/graph', graph);
 router.use('/network', network);
 router.use('/periods', periods);
+router.use('/thumb', thumbs.router);  // small WebPs of museum-hosted images (thumbs.js)
 router.use('/history', history);
 router.use(entities);
 

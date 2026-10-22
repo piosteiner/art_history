@@ -2,6 +2,8 @@
 
 Base URL `https://api.arthistory.piogino.ch/v1`. Read-only, JSON, CORS for `https://arthistory.piogino.ch`.
 Responses are cacheable for 60 s (`Cache-Control`) and carry an `ETag`. Entities are addressed by **slug**.
+Thumbnails: `GET /v1/thumb?src=<image url>&w=120|250|330|500|800` — a WebP of an image of ours from a museum's server
+(only URLs of our images; cached a year). Wikimedia images use Wikimedia's own thumbnails.
 Errors: `{"error": "bad_request" | "not_found" | "timeout" | "internal_error", "message": "…"}`.
 Relationships, the graph, presence/artwork maps, crossed paths and the inferences under provenance steps come from
 the stored graph (`graph_links`, migration 126), list rows from `entry_list_rows` (127): a change shows there within

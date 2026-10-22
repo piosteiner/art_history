@@ -875,7 +875,8 @@ test('home page without curated views (or without the API): everything, as befor
 
 test('each displayed route has its own colour, named in the legend', async ({ page }) => {
   await page.goto('/?all');
-  await expect(page.locator('#legend .route-key', { hasText: 'Vincent van Gogh' })).toBeVisible();
+  // the legend names the first twelve routes A–Z ("+ 331 more"): which ones depends on the live data
+  await expect(page.locator('#legend .route-key').first()).toBeVisible();
   await page.waitForFunction(() => {
     const m = (window as unknown as { __maps?: { querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
     return !!m && m.querySourceFeatures('ov-routes').length > 1;
@@ -1063,6 +1064,7 @@ test('[[links]] to entries: a preview on hover (name, subtitle, excerpt); an ima
 
 test('a work on loan: credit line with the lender from the provenance; further numbers under the inventory number', async ({ page }) => {
   await patch(page, GREAT_WAVE, (b) => {
+    b.sources = {};   // the live work's sources (the Met's, 2026-10-22) would add their markers to the lines tested here
     b.institution = { slug: 'kunsthaus-zurich', name: 'Kunsthaus Zürich' };
     b.inventory_number = 'BU 0018';
     b.on_loan = true;
@@ -1246,6 +1248,7 @@ test('provenance (063): computed artist and loan lines in italics, roles, joint 
 test('provenance (074): agents and custodians held alongside the owner, not sold, via, settlement; status A–D; design date', async ({ page }) => {
   const inst = (slug: string, name: string) => ({ type: 'institution', slug, name });
   await patch(page, GREAT_WAVE, (b) => {
+    b.sources = {};   // as above: no markers of the live work's sources on the lines tested here
     b.created = year(1921);
     b.conceived = year(1893, 1894);
     b.kind = 'woodcut';
@@ -1722,8 +1725,8 @@ test('footnotes in texts: popovers for the note and the source; the jump keeps t
   await expect(page.locator('#nabc123-n1')).toBeVisible();
 });
 
-// ---- series and other wholes (API migration 037); the live data has no series yet, so the tests bring one ----
-const SERIES = { slug: 'thirty-six-views-of-mount-fuji', title: 'Thirty-six Views of Mount Fuji', kind: 'print series', parts_count: 36 };
+// ---- series and other wholes (API migration 037): a mock series of its own (the live one has other parts) ----
+const SERIES = { slug: 'mock-thirty-six-views', title: 'Thirty-six Views of Mount Fuji', kind: 'print series', parts_count: 36 };
 async function sampleSeries(page: Page) {
   await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
     const res = await route.fetch();
@@ -1736,7 +1739,7 @@ async function sampleSeries(page: Page) {
     });
     await route.fulfill({ response: res, json: body });
   });
-  await page.route(/\/v1\/artworks\/thirty-six-views-of-mount-fuji$/, async (route) => {
+  await page.route(/\/v1\/artworks\/mock-thirty-six-views$/, async (route) => {
     const base = { type: 'artwork', slug: SERIES.slug, title: SERIES.title, alt_titles: [], attribution_label: null, created: null, kind: 'print series',
       medium: null, inventory_number: null, materials: [], dimensions: null, other_dimensions: [], description_html: null, images: [], image_url: null,
       creator: { slug: 'katsushika-hokusai', name: 'Katsushika Hokusai' }, institution: null, wikidata_id: null, metadata: {}, updated_at: '',
@@ -1747,7 +1750,7 @@ async function sampleSeries(page: Page) {
       ] };
     await route.fulfill({ json: base });
   });
-  await page.route(/\/v1\/map\/artworks\/thirty-six-views-of-mount-fuji$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', entity: { type: 'artwork', slug: SERIES.slug, name: SERIES.title }, features: [] } }));
+  await page.route(/\/v1\/map\/artworks\/mock-thirty-six-views$/, (r) => r.fulfill({ json: { type: 'FeatureCollection', entity: { type: 'artwork', slug: SERIES.slug, name: SERIES.title }, features: [] } }));
 }
 
 test('series: "No. 21 of 36 in …" with previous/next; the series page shows its parts', async ({ page }) => {
@@ -1764,7 +1767,7 @@ test('series: "No. 21 of 36 in …" with previous/next; the series page shows it
 });
 
 test('versions of one composition (API 132): "Version 2 of 3 in …", the whole lists its versions', async ({ page }) => {
-  const whole = { slug: 'thirty-six-views-of-mount-fuji', title: 'The Bedroom', kind: 'versions', parts_count: 3, is_group: true };
+  const whole = { slug: 'mock-versions', title: 'The Bedroom', kind: 'versions', parts_count: 3, is_group: true };
   await page.route(/\/v1\/artworks\/the-great-wave-off-kanagawa$/, async (route) => {
     const res = await route.fetch();
     const body = await res.json();

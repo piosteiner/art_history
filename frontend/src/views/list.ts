@@ -84,7 +84,7 @@ export function card(plural: Plural, item: AnyItem, words: string[] = [], why: H
   const { name, date, detail, image } = cardParts(plural, item);
   return html`<li class="card">
     <a class="card-link" href="${href(plural, item.slug)}">
-      ${image ? html`<img class="card-img" src="${thumb(image, 250)}" alt="" loading="lazy" crossorigin="anonymous">` : html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
+      ${image ? html`<img class="card-img" src="${thumb(image, 250)}" alt="" loading="lazy" crossorigin="anonymous"${thumb(image, 250) !== image ? html` data-fallback="${image}"` : ''}>` : html`<span class="card-img card-img-empty" aria-hidden="true"></span>`}
       <span class="card-text">
         ${typeLabel ? html`<span class="card-type">${typeLabel}</span>` : ''}
         <span class="card-name"${langAttr(displayName(item as never).lang)}>${highlight(name, words)}</span>

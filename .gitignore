@@ -23,3 +23,6 @@ backups/
 *.dump
 *.sql.gz
 .DS_Store
+
+# thumbnails of museum-hosted images (backend/src/routes/thumbs.js)
+backend/var/

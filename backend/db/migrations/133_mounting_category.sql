@@ -1,0 +1,3 @@
+-- 133 — A glossary category for what a work is mounted or presented in: frame, mount, stretcher, base …
+-- (A new enum value can't be used in the transaction that adds it — its use follows in 134.)
+ALTER TYPE term_category ADD VALUE IF NOT EXISTS 'mounting' AFTER 'format';

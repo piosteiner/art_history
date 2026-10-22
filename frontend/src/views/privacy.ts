@@ -38,10 +38,12 @@ export function privacy(main: HTMLElement) {
             For some works, the open-access image server of the museum or collection that holds them (e.g. The Metropolitan
             Museum of Art, the Art Institute of Chicago or the Cleveland Museum of Art, USA; the Rijksmuseum, Netherlands;
             SMK, Denmark)</td>
-          <td>Your IP address and the image requested. Images are loaded directly from these servers, without cookies;
-            each image names its source. A museum server that doesn't allow this anonymous loading gets the image request
-            once more as an ordinary one — still without telling it which page you came from; it could then read cookies it
-            set itself on an earlier visit of yours to its own site.</td></tr>
+          <td>Your IP address and the image requested. Images from Wikimedia are loaded directly from its servers, without
+            cookies; each image names its source. Images from a museum's own server are shown through this site's API,
+            which fetched them once and keeps a smaller copy — your browser doesn't contact that server. Only when you open
+            such an image full size is it loaded from the museum's server, without cookies; a server that doesn't allow
+            this anonymous loading gets the request once more as an ordinary one — still without telling it which page you
+            came from; it could then read cookies it set itself on an earlier visit of yours to its own site.</td></tr>
       </tbody>
     </table></div>
 

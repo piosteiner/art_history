@@ -49,7 +49,7 @@ export function partsGrid(e: { slug: string; kind?: string | null; parts?: PartR
     <p class="small"><a href="/artworks?part_of=${encodeURIComponent(e.slug)}">See them in the artworks list →</a></p>
     <ul class="parts-grid">${parts.map((p) => html`<li>
       <a class="part-card" href="${href('artworks', p.slug)}">
-        ${p.image_url ? html`<img src="${thumb(p.image_url, 250)}" alt="" loading="lazy" crossorigin="anonymous">` : html`<span class="part-img-empty" aria-hidden="true"></span>`}
+        ${p.image_url ? html`<img src="${thumb(p.image_url, 250)}" alt="" loading="lazy" crossorigin="anonymous"${thumb(p.image_url, 250) !== p.image_url ? html` data-fallback="${p.image_url}"` : ''}>` : html`<span class="part-img-empty" aria-hidden="true"></span>`}
         <span class="part-number">${partLabel(p.part_number, versions)}</span>
         <span class="part-title">${p.title}</span>
         <span class="muted small">${[p.created?.label, p.parts ? `${p.parts} parts` : ''].filter(Boolean).join(' · ')}</span>

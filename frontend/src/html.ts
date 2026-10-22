@@ -2,7 +2,7 @@
 // Images load with crossorigin="anonymous": Wikimedia then neither receives nor sets cookies (the site stays cookie-free).
 import { fold } from './fold';
 import { zoomable } from './zoom';
-import { PLURAL, publicIdOf } from './api';
+import { BASE as API_BASE, PLURAL, publicIdOf } from './api';
 import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, Plural, PolityLink, Ref, TranslationStatus } from './types';
 
 export class Html {
@@ -59,8 +59,21 @@ export function spanLabel(from: DateRange | null, to: DateRange | null) {
 }
 
 /** Smaller Wikimedia Commons thumbnail: /1280px-… → /500px-…; other URLs stay as they are. */
-export const thumb = (url: string, width = 500) =>
-  url.includes('/thumb/') ? url.replace(/\/\d+px-/, `/${width}px-`) : url;
+// The widths the API's thumbnail service makes (backend/src/routes/thumbs.js WIDTHS) — Wikimedia's standard ones too.
+const THUMB_WIDTHS = [120, 250, 330, 500, 800];
+/**
+ * An image at about this width: a Wikimedia thumbnail at that width (an original on upload.wikimedia.org as its
+ * thumbnail — lists loaded the full file), any other image (a museum's own server) through the API's thumbnail service:
+ * a small WebP, and the visitor's browser never contacts that server — some refuse anonymous (CORS) loading anyway.
+ */
+export const thumb = (url: string, width = 500) => {
+  if (url.includes('/thumb/')) return url.replace(/\/\d+px-/, `/${width}px-`);
+  const commons = /^(https:\/\/upload\.wikimedia\.org\/wikipedia\/[a-z]+)\/([0-9a-f]\/[0-9a-f]{2})\/([^/?#]+\.(?:jpe?g|png|gif|webp))$/i.exec(url);
+  if (commons) return `${commons[1]}/thumb/${commons[2]}/${commons[3]}/${width}px-${commons[3]}`;
+  if (/^https:\/\/[^/]*wikimedia\.org\//.test(url) || !/^https:\/\//.test(url)) return url;
+  const w = THUMB_WIDTHS.find((x) => x >= width) ?? THUMB_WIDTHS[THUMB_WIDTHS.length - 1];
+  return `${API_BASE}/thumb?${new URLSearchParams({ src: url, w: String(w) })}`;
+};
 
 /** An image with the credit and licence the image licences require wherever it is shown. */
 export function figure(img: Image, alt: string, width = 500) {
@@ -96,6 +109,26 @@ export function retryImage(img: HTMLImageElement) {
 }
 export function wireImageFallbacks(root: Element) {
   root.querySelectorAll<HTMLImageElement>('img[crossorigin], img[data-fallback]').forEach(retryImage);
+}
+/**
+ * The same for every image of the site, once (main.ts): an image's "error" doesn't bubble, but it passes the document
+ * in the capture phase — lists, parts grids, popovers and whatever comes later are covered without wiring each.
+ */
+export function wireImageFallbacksEverywhere() {
+  document.addEventListener('error', (ev) => {
+    const img = ev.target;
+    if (!(img instanceof HTMLImageElement) || img.dataset.retried) return;
+    const original = img.dataset.fallback;
+    if (original && img.src !== original) { img.src = original; return; }
+    if (img.hasAttribute('crossorigin')) {
+      img.dataset.retried = '1';
+      img.removeAttribute('crossorigin');
+      img.referrerPolicy = 'no-referrer';
+      const src = img.src;
+      img.src = '';
+      img.src = src;
+    }
+  }, true);
 }
 
 /**

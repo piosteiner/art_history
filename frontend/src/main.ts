@@ -1,6 +1,6 @@
 import './style.css';
 import { mountThemeToggle } from './theme';
-import { html, PLURAL_LABEL, render } from './html';
+import { html, PLURAL_LABEL, render, wireImageFallbacksEverywhere } from './html';
 import { start, type Cleanup, type Route } from './router';
 import { watchLinks } from './previews';
 import { mountSearch } from './search';
@@ -26,6 +26,7 @@ render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph"
   ${NAV.map((g) => html`<span class="nav-group" title="${g.title}">${g.plurals.map((p) => html`<a href="/${p}">${PLURAL_LABEL[p]}</a>`)}</span>`)}`);
 mountSearch(document.getElementById('search')!);
 watchLinks(main); // previews on the internal links of every page
+wireImageFallbacksEverywhere(); // an image that fails: its original, or without crossorigin (html.ts)
 // light/dark: the page stays, maps swap their base map (THEME_EVENT in src/map.ts)
 mountThemeToggle(document.getElementById('theme')!);
 

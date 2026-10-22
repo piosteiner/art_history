@@ -7,7 +7,7 @@ import type {
 } from './types';
 
 // In development the Vite server proxies /v1 (the API only allows CORS from the production origin).
-const BASE = import.meta.env.DEV ? '/v1' : 'https://api.arthistory.piogino.ch/v1';
+export const BASE = import.meta.env.DEV ? '/v1' : 'https://api.arthistory.piogino.ch/v1';
 
 export class ApiError extends Error {
   /** `body`: the whole answer, for errors that say more (089: a 404 names `first_recorded`). */

@@ -1,0 +1,8 @@
+name: frame
+name_lang: en
+category: mounting
+definition: The border around a picture — given here as the size with frame.
+names:
+  - {text: Rahmen, lang: de, role: translation}
+  - {text: Rahmenmass, lang: de, role: alternative}
+  - {text: mit Rahmen, lang: de, role: alternative}

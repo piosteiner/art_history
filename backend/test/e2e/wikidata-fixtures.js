@@ -82,6 +82,11 @@ function handle(req, res) {
   const url = new URL(req.url, 'http://x');
   const p = url.searchParams;
   const json = (data) => { res.writeHead(200, { 'Content-Type': 'application/json' }); res.end(JSON.stringify(data)); };
+  // a museum's image server (the API's thumbnail service, thumbs.js): a 600 × 400 PNG, no CORS headers
+  if (url.pathname === '/museum/painting.png') {
+    return require('sharp')({ create: { width: 600, height: 400, channels: 3, background: { r: 180, g: 120, b: 60 } } }).png().toBuffer()
+      .then((png) => { res.writeHead(200, { 'Content-Type': 'image/png' }); res.end(png); });
+  }
   if (url.pathname === '/w/api.php' && p.get('action') === 'wbgetentities') {
     const light = (p.get('props') || '').indexOf('claims') === -1;
     return json({ entities: Object.fromEntries(p.get('ids').split('|').map((id) => {

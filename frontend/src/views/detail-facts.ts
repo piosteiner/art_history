@@ -47,7 +47,9 @@ function dimensionsFact(main: Dimensions | null, parts: PartDimensions[]) {
   const rest = parts.filter((p) => p.label);
   if (!first && !rest.length) return null;
   const cap = (t: string) => t.charAt(0).toUpperCase() + t.slice(1);
-  return html`${first ?? ''}${rest.map((p, i) => html`${first || i ? html`<br>` : ''}<span class="dim-part">${cap(p.part)}:</span> ${p.label}`)}`;
+  // a part that is a glossary term (API 134: frame, mount …) links to it
+  const part = (p: PartDimensions) => (p.term ? link('term', p.term.slug, cap(p.term.name)) : cap(p.part));
+  return html`${first ?? ''}${rest.map((p, i) => html`${first || i ? html`<br>` : ''}<span class="dim-part">${part(p)}:</span> ${p.label}`)}`;
 }
 
 const refs = (type: Parameters<typeof link>[0], items: KindRef[]) =>
