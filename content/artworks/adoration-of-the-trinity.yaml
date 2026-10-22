@@ -34,7 +34,7 @@ creator: albrecht-durer
 created: 1511
 materials: [lime panel, oil paint]
 dimensions: [135, 123.4]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_838
 wikidata_id: Q688870
 metadata:
@@ -81,7 +81,7 @@ provenance:
         note: “1585 von Rudolf II. von der Stiftung des Zwölfbrüderhauses in Nürnberg gekauft; 1780 von der Geistlichen Schatzkammer in die Gemäldegalerie;”
         source: khm-online-sammlung
         accessed: 2026-10-19
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

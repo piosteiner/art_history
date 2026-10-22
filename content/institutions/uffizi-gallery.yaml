@@ -1,8 +1,13 @@
 public_id: 101783
-name: Uffizi Gallery
+name_lang: it
+name: Le Gallerie Degli Uffizi
 names:
-  - Uffizi
-  - Galleria degli Uffizi
+  - lang: en
+    role: alternative
+    text: The Uffizi
+  - lang: it
+    role: alternative
+    text: Galleria degli Uffizi
   - lang: fr
     role: translation
     text: galerie des Offices
@@ -15,18 +20,7 @@ names:
   - lang: es
     role: translation
     text: Galería Uffizi
-  - lang: ja
-    role: translation
-    text: ウフィツィ美術館
-  - lang: zh
-    role: translation
-    text: 烏菲茲美術館
-  - lang: ko
-    role: translation
-    text: 우피치 미술관
-  - lang: ru
-    role: translation
-    text: Уффици
+kind: Museum
 founded: 1560
 place: florence
 location: [11.25528, 43.76833]

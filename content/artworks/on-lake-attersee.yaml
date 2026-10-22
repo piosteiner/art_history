@@ -1,28 +1,20 @@
 public_id: 101463
-title_lang: en
-title: Attersee
+title_lang: de
+title: A Attersee
 names:
   - lang: en
-    role: original
+    role: translation
     text: On Lake Attersee
-  - lang: nl
-    role: translation
-    text: Aan het Attermeer
-  - lang: fr
-    role: translation
-    text: Sur le lac Attersee
-  - lang: de
-    role: translation
-    text: Am Attersee
-  - lang: ru
-    role: translation
-    text: На Аттерзе
+    status: official
 creator: gustav-klimt
 created: 1900
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
-dimensions: [80.2, 80.2]
+dimensions: [80.2, 80.2, 2.1]
 institution: leopold-museum
 inventory_number: LM 4148
+web_url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
 wikidata_id: Q19912809
 metadata:
   sources: [Wikidata Q19912809 (retrieved 2026-10-19)]
@@ -139,29 +131,44 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
+  kind:
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   names:
     - accessed: 2026-10-19
       wikidata: Q19912809
+  medium:
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   created:
-    - accessed: 2026-10-19
-      property: P571
-      wikidata: Q19912809
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   creator:
-    - accessed: 2026-10-19
-      property: P170
-      wikidata: Q19912809
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   materials:
     - accessed: 2026-10-19
       property: P186
       wikidata: Q19912809
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   dimensions:
-    - accessed: 2026-10-19
-      property: P2048
-      wikidata: Q19912809
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q19912809
+  title_status:
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   inventory_number:
     - accessed: 2026-10-19
       property: P217

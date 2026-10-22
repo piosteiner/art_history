@@ -35,7 +35,7 @@ creator: pieter-brueghel-the-elder
 created: 1560
 materials: [oil paint, panel]
 dimensions: [118, 161]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_1017
 wikidata_id: Q697332
 metadata:
@@ -58,7 +58,7 @@ provenance:
   - owner: institution/habsburg-imperial-collection
     label: imperial collection
     certainty: probable
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

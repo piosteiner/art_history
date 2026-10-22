@@ -24,7 +24,7 @@ creator: diego-velazquez
 created: 1659
 materials: [oil paint, canvas]
 dimensions: [127, 107]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_2130
 wikidata_id: Q2264914
 metadata:
@@ -66,7 +66,7 @@ provenance:
         date: "1855"
         room: apartments of Archduchess Sophie, Hofburg
         place: vienna
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1922
     method: transfer
     direct: true

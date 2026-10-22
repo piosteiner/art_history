@@ -1,20 +1,30 @@
 public_id: 101640
 title_lang: de
-title: Der Aktsaal der Wiener Akademie im St. Annagebäude
+title: Der Aktsaal der Wiener Akademie im St. Anna Gebäude
 names:
   - lang: de
     role: original
     text: Der Aktsaal der Wiener Akademie
 creator: martin-ferdinand-quadal
 created: 1787
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [144, 207]
-institution: academy-of-fine-arts-vienna
+other_dimensions:
+  - cm: [165, 228, 12]
+    part: Rahmenmass
+institution: akademie-der-bildenden-kunste-wien
 inventory_number: GG-100
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/536/
 wikidata_id: Q106129336
 metadata:
   sources: [Wikidata Q106129336 (retrieved 2026-10-20)]
 images:
+  - url: https://collection.kunstsammlungenakademie.at/multimedia/4/multimedia-5864.large.jpg
+    source_url: https://collection.kunstsammlungenakademie.at/de/collection/item/536/
+    license: CC BY 4.0
+    credit: Akademie der bildenden Künste Wien
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Aktsaal_der_Wiener_Akademie_%281787%2C_Martin_Ferdinand_Quadal%29.jpg/1280px-Aktsaal_der_Wiener_Akademie_%281787%2C_Martin_Ferdinand_Quadal%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Aktsaal_der_Wiener_Akademie_(1787,_Martin_Ferdinand_Quadal).jpg
     license: Public domain
@@ -28,7 +38,7 @@ provenance:
         note: “Legat von Graf Lamberg-Sprinzenstein, Wien, Schenkungsjahr unbekannt / Bequest of Count Lamberg-Sprinzenstein, Vienna, date of bequest unknown”
         source: akademie-sammlung-online
         accessed: 2026-10-20
-  - owner: institution/academy-of-fine-arts-vienna
+  - owner: institution/akademie-der-bildenden-kunste-wien
     method: bequest
     direct: true
     place: vienna
@@ -50,10 +60,16 @@ sources:
     - accessed: 2026-10-20
       property: P571
       wikidata: Q106129336
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/536/
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
   creator:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q106129336
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/536/
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
   materials:
     - accessed: 2026-10-20
       property: P186
@@ -62,10 +78,17 @@ sources:
     - accessed: 2026-10-20
       property: P2048
       wikidata: Q106129336
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/536/
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q106129336
+  title_status:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/536/
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
   inventory_number:
     - accessed: 2026-10-20
       property: P217

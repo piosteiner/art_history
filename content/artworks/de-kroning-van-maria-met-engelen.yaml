@@ -12,7 +12,7 @@ creator: dieric-bouts
 created: 15th century
 materials: [oil paint, panel]
 dimensions: [83.5, 85]
-institution: academy-of-fine-arts-vienna
+institution: akademie-der-bildenden-kunste-wien
 inventory_number: GG-558
 web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/994
 wikidata_id: Q117228779
@@ -33,7 +33,7 @@ provenance:
         note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
         source: akademie-sammlung-online
         accessed: 2026-10-20
-  - owner: institution/academy-of-fine-arts-vienna
+  - owner: institution/akademie-der-bildenden-kunste-wien
     acquired: 1822
     method: bequest
     direct: true

@@ -24,7 +24,7 @@ created: 1505/1506
 created_label: c. 1500s
 materials: [oil paint, poplar panel]
 dimensions: [113, 88.5]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_175
 web_url: https://www.khm.at/objektdb/detail/1502/
 wikidata_id: Q2452858
@@ -71,7 +71,7 @@ provenance:
         date: "1773"
         note: brought from Ambras to Vienna
         place: vienna
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

@@ -27,7 +27,7 @@ creator: pieter-brueghel-the-elder
 created: 1564
 materials: [oil paint, oak panel]
 dimensions: [124, 170]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_1025
 wikidata_id: Q686107
 metadata:
@@ -95,7 +95,7 @@ provenance:
         date: "1783"
         note: documented in the gallery
         place: vienna
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

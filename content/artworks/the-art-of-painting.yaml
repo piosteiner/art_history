@@ -38,7 +38,7 @@ created: 1660/1669
 created_label: c. 1660s
 materials: [oil paint, canvas]
 dimensions: [120, 100]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_9128
 web_url: https://www.essentialvermeer.com/catalogue/art_of_painting.html
 wikidata_id: Q588695
@@ -124,7 +124,7 @@ provenance:
         note: “Slg. Catharina Bolnes (Vermeers Witwe); 1676 ihrer Mutter, Maria Thins übergeben; Auktion Delft 15.3.1677; Nachlass Gottfried van Swieten, Wien; 1813 Rudolf Graf Czernin; Gräflich Czerninsche Galerie, Wien; 1940 A. Hitler; 1945 Collecting Point Munich; am 7.11.1946 dem Kunsthistorischen Museum übergeben; 1958 in die Sammlung aufgenommen;”
         source: khm-online-sammlung
         accessed: 2026-10-19
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1946-11-07
     method: transfer
     direct: true

@@ -1,0 +1,28 @@
+public_id: 102248
+name: Franz Joseph I of Austria
+kind: person
+birth: 1830-08-18
+death: 1916-11-21
+wikidata_id: Q51056
+metadata:
+  sources: [Wikidata Q51056 (retrieved 2026-10-21)]
+relationships:
+  - type: founded
+    to: institution/kunsthistorisches-museum-wien
+    sources:
+      - accessed: 2026-10-21
+        property: P112
+        wikidata: Q95569
+sources:
+  kind:
+    - accessed: 2026-10-21
+      property: P31
+      wikidata: Q51056
+  birth:
+    - accessed: 2026-10-21
+      property: P569
+      wikidata: Q51056
+  death:
+    - accessed: 2026-10-21
+      property: P570
+      wikidata: Q51056

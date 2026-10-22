@@ -27,7 +27,7 @@ creator: peter-paul-rubens
 created: 1638
 materials: [oil paint, panel]
 dimensions: [176, 83]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_688
 wikidata_id: Q3788158
 metadata:
@@ -78,7 +78,7 @@ provenance:
         date: "1730"
         note: documented in the gallery in Vienna
         place: vienna
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

@@ -36,7 +36,7 @@ creator: pieter-brueghel-the-elder
 created: c. 1568
 materials: [oil paint, oak panel]
 dimensions: [113, 164]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_1027
 web_url: https://contentdm.lib.byu.edu/digital/collection/Civilization/id/846/
 wikidata_id: Q603751
@@ -74,7 +74,7 @@ provenance:
         note: “Diese Sammlung wurde an seinen Neffen Leopold I. vererbt, so dass sie in kaiserlichen Besitz kam.”
         source: wikipedia-de-leopold-wilhelm
         accessed: 2026-10-19
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

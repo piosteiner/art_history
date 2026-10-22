@@ -1,0 +1,16 @@
+public_id: 102256
+name: Waldshut
+kind: site
+location: [8.2, 47.63]
+wikidata_id: Q8200
+metadata:
+  sources: [Wikidata Q8200 (retrieved 2026-10-21)]
+sources:
+  kind:
+    - accessed: 2026-10-21
+      property: P31
+      wikidata: Q8200
+  location:
+    - accessed: 2026-10-21
+      property: P625
+      wikidata: Q8200

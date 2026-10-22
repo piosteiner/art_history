@@ -37,7 +37,7 @@ created: 1500/1509
 created_label: 1500s
 materials: [oil paint, canvas]
 dimensions: [125.5, 146.2]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_111
 wikidata_id: Q877191
 metadata:
@@ -98,7 +98,7 @@ provenance:
         note: “Diese Sammlung wurde an seinen Neffen Leopold I. vererbt, so dass sie in kaiserlichen Besitz kam.”
         source: wikipedia-de-leopold-wilhelm
         accessed: 2026-10-19
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

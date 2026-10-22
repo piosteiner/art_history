@@ -31,7 +31,7 @@ creator: antonio-da-correggio
 created: c. 1530
 materials: [oil paint, canvas]
 dimensions: [162, 73.5]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_274
 wikidata_id: Q700834
 metadata:
@@ -87,7 +87,7 @@ provenance:
   - owner: institution/habsburg-imperial-collection
     label: imperial collection
     certainty: probable
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

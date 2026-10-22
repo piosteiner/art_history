@@ -1,0 +1,46 @@
+public_id: 101299
+name_lang: de
+name: Kunsthistorisches Museum Wien
+names:
+  - lang: en
+    role: translation
+    text: Museum of Art History
+  - lang: en
+    role: translation
+    text: Vienna Art History Museum
+  - lang: fr
+    role: translation
+    text: musée d'Histoire de l'art de Vienne
+  - lang: de
+    role: alternative
+    text: Kunsthistorisches Museum
+kind: museum
+founded: 1891
+place: vienna
+location: [16.3617, 48.2038]
+address: Maria-Theresien-Platz, 1010 Wien
+website_url: https://www.khm.at
+wikidata_id: Q95569
+metadata:
+  sources: [Wikidata Q95569 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Wien_Kunsthistorisches_Museum.jpg/1280px-Wien_Kunsthistorisches_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wien_Kunsthistorisches_Museum.jpg
+    license: CC BY-SA 3.0
+    credit: Andrzej Otrębski
+identifiers:
+  bnf: 11870363v
+  gnd: 2016751-9
+  idref: "169274659"
+  lc: n50056014
+  ulan: "500312519"
+  viaf: "126584224"
+sources:
+  founded:
+    - accessed: 2026-10-19
+      property: P571
+      wikidata: Q95569
+  location:
+    - accessed: 2026-10-21
+      property: P625
+      wikidata: Q95569

@@ -1,21 +1,26 @@
 public_id: 101472
-title_lang: en
-title: Approaching Thunderstorm (The Large Poplar II)
+title_lang: de
+title: Die große Pappel II (Aufsteigendes Gewitter)
 names:
   - lang: fr
     role: translation
     text: Orage approchant (Le Grand Peuplier II)
+  - lang: en
+    role: translation
+    text: The Large Poplar II (Gathering Storm)
+    status: official
   - lang: de
-    role: translation
-    text: Aufziehendes Gewitter (Die große Pappel II)
-  - lang: ru
-    role: translation
-    text: Большой тополь II
+    role: alternative
+    text: Die Grosse Pappel
 creator: gustav-klimt
-created: 1903
-dimensions: [100.8, 100.7]
+created: 1902/1903
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [100.8, 100.8]
 institution: leopold-museum
 inventory_number: LM 2008
+web_url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
 wikidata_id: Q19912807
 metadata:
   sources: [Wikidata Q19912807 (retrieved 2026-10-19)]
@@ -100,25 +105,37 @@ provenance:
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
 sources:
+  kind:
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   names:
     - accessed: 2026-10-19
       wikidata: Q19912807
+  medium:
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   created:
-    - accessed: 2026-10-19
-      property: P571
-      wikidata: Q19912807
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   creator:
-    - accessed: 2026-10-19
-      property: P170
-      wikidata: Q19912807
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   dimensions:
-    - accessed: 2026-10-19
-      property: P2048
-      wikidata: Q19912807
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q19912807
+  title_status:
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2149-die-grosse-pappel-ii-aufsteigendes-gewitter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-21
   inventory_number:
     - accessed: 2026-10-19
       property: P217

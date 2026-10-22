@@ -1,0 +1,63 @@
+public_id: 102255
+name: Karl Agricola
+given_name: Karl
+family_name: Agricola
+names: [Karl Josef Aloysius Agricola, Carl Joseph Alois Agricola, Karl Joseph Aloys Agricola, Carl Josef Alois Agricola, Carl Agricola, Carl Josef Aloysius Agricola, Karl Josef Aloys Agricola]
+birth: 1779-10-18
+death: 1852-05-15
+wikidata_id: Q1371095
+metadata:
+  sources: [Wikidata Q1371095 (retrieved 2026-10-21)]
+relationships:
+  - type: born_in
+    to: place/bad-sackingen
+    period: 1779-10-18
+    sources:
+      - accessed: 2026-10-21
+        property: P19
+        wikidata: Q1371095
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+        note: “Karl Josef Aloys Agricola (Bad Säckingen 1779–1852 Wien)”
+        source: akademie-sammlung-online
+        accessed: 2026-10-21
+  - type: died_in
+    to: place/vienna
+    period: 1852-05-15
+    sources:
+      - accessed: 2026-10-21
+        property: P20
+        wikidata: Q1371095
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+        note: “Karl Josef Aloys Agricola (Bad Säckingen 1779–1852 Wien)”
+        source: akademie-sammlung-online
+        accessed: 2026-10-21
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6f/WP_Karl_Agricola.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WP_Karl_Agricola.jpg
+    license: Public domain
+    credit: After Karl Agricola
+identifiers:
+  gnd: "174364334"
+  idref: "133657418"
+  kulturnav: 38ba8b2f-ee65-41d0-8416-49f23f39f78b
+  lc: n97864143
+  rkd: "131046"
+  ulan: "500029558"
+  viaf: "32781952"
+sources:
+  birth:
+    - accessed: 2026-10-21
+      property: P569
+      wikidata: Q1371095
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: “Karl Josef Aloys Agricola (Bad Säckingen 1779–1852 Wien)” — years only
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  death:
+    - accessed: 2026-10-21
+      property: P570
+      wikidata: Q1371095
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: “Karl Josef Aloys Agricola (Bad Säckingen 1779–1852 Wien)” — years only
+      source: akademie-sammlung-online
+      accessed: 2026-10-21

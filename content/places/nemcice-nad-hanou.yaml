@@ -1,0 +1,16 @@
+public_id: 102245
+name: Němčice nad Hanou
+kind: site
+location: [17.20599, 49.34183]
+wikidata_id: Q2007259
+metadata:
+  sources: [Wikidata Q2007259 (retrieved 2026-10-21)]
+sources:
+  kind:
+    - accessed: 2026-10-21
+      property: P31
+      wikidata: Q2007259
+  location:
+    - accessed: 2026-10-21
+      property: P625
+      wikidata: Q2007259

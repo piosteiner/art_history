@@ -1,0 +1,120 @@
+public_id: 102260
+title_lang: de
+title: Boreas entführt Oreithya
+names:
+  - lang: de
+    role: original
+    text: Boreas entführt Oreithya, Kopie nach Peter Paul Rubens (Siegen 1577 - 1640 Antwerpen)
+  - lang: en
+    role: translation
+    text: Boreas Abducting Oreithyia (copy after Rubens)
+    status: own
+creator: karl-agricola
+attribution_label: copy after Peter Paul Rubens
+created: before 1822
+kind: painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [88, 70]
+other_dimensions:
+  - cm: [99, 80.5, 5.5]
+    part: Rahmenmaß
+institution: akademie-der-bildenden-kunste-wien
+inventory_number: GG-779
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+description_md: |-
+  A copy by the Viennese painter [[artist/karl-agricola]] of Rubens' [[artwork/boreas-entfuhrt-oreithya]], which hangs in the same collection (GG-626). Both came to the Academy of Fine Arts with the bequest of [[person/anton-franz-de-paula-graf-lamberg-sprinzenstein]] in 1822, so the copy was made while the original was in Lamberg's collection in Vienna. The Academy lists both artists on the copy: Agricola as the artist, Rubens with the attribution “Kopie nach” (copy after).
+
+  Not signed (recto).
+
+  The copy is on canvas, not on an oak panel, and is smaller: 88 × 70 cm against the original's 146 × 140.5 cm. It is also an upright format rather than a nearly square one. Comparing the Academy's photographs, the copy shows the whole group, including the two putti at the lower edge that the original cuts off, with more cloud around them.
+relationships:
+  - type: copy_after
+    to: artwork/boreas-entfuhrt-oreithya
+    label: Kopie nach Peter Paul Rubens
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+        note: "Related object: “(Original) Peter Paul Rubens, Boreas entführt Oreithya, um 1615”; the original (item 1062) links back to it as “(Kopie)”"
+        source: akademie-sammlung-online
+        accessed: 2026-10-21
+images:
+  - url: https://collection.kunstsammlungenakademie.at/multimedia/1/multimedia-4921.large.jpg
+    source_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+    license: CC BY 4.0
+    credit: "Gemäldegalerie der Akademie der bildenden Künste Wien, Foto: image industry"
+provenance:
+  - owner: person/anton-franz-de-paula-graf-lamberg-sprinzenstein
+    ended: 1822
+    place: vienna
+    notes_md: How the copy came into Lamberg's collection is not published. The Academy's acquisition field gives his dates as “1740 - 1882”, a slip for 1822.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+        note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
+        source: akademie-sammlung-online
+        accessed: 2026-10-21
+  - owner: institution/akademie-der-bildenden-kunste-wien
+    acquired: 1822
+    method: bequest
+    direct: true
+    place: vienna
+    label: bequest of Count Lamberg-Sprinzenstein
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+        note: "“Legat von Graf Lamberg-Sprinzenstein, Wien, 1822”; Erwerbungsart: Legat; Erwerbungsdatum: 1822; Erwerbung: “Anton Franz de Paula Graf von Lamberg-Sprinzenstein (1740 - 1882)”"
+        source: akademie-sammlung-online
+        accessed: 2026-10-21
+      - url: https://www.kunstsammlungenakademie.at/de/gemaeldegalerie/sammlung/
+        note: “… der 1822 der Akademie rund 800 Gemälde seiner international berühmten Sammlung testamentarisch übertrug …”
+        source: akademie-gemaeldegalerie-sammlung
+        accessed: 2026-10-21
+sources:
+  kind:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: "Gattung: “Gemälde” / painting"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  medium:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: “Öl auf Leinwand” / “oil on canvas”
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  created:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: “vor 1822”
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  creator:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: “Karl Josef Aloys Agricola”, Künstler_in
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  materials:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: "Material/Technik: “Leinwand”, “Öl”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  dimensions:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: "“Bildmaß: 88.0 × 70.0 cm”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  institution:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: "Sammlungsbereich: “Gemäldegalerie”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  inventory_number:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: "Inventarnummer: “GG-779”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  other_dimensions:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: "“Rahmenmaß: 99.0 × 80.5 × 5.5 cm”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  attribution_label:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
+      note: “Peter Paul Rubens”, Künstler_in — “Kopie nach” / “Copy after”
+      source: akademie-sammlung-online
+      accessed: 2026-10-21

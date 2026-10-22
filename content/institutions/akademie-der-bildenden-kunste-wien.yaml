@@ -1,0 +1,42 @@
+public_id: 101639
+name_lang: de
+name: Akademie der bildenden Künste Wien
+names:
+  - lang: en
+    role: alternative
+    text: Vienna Academy
+  - lang: en
+    role: alternative
+    text: Academy of Fine Arts Vienna
+  - lang: de
+    role: alternative
+    text: Gemäldegalerie der Akademie der bildenden Künste Wien
+kind: academy
+founded: 1692
+place: vienna
+location: [16.3672, 48.2009]
+address: Schillerplatz 3, 1010 Wien
+website_url: https://www.akbild.ac.at
+wikidata_id: Q414219
+metadata:
+  sources: [Wikidata Q414219 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Akademie_der_bildenden_Kuenste_DSC_2400w.jpg/1280px-Akademie_der_bildenden_Kuenste_DSC_2400w.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Akademie_der_bildenden_Kuenste_DSC_2400w.jpg
+    license: CC BY-SA 3.0
+    credit: P e z i
+identifiers:
+  bnf: 11993095z
+  gnd: 2003761-2
+  idref: "034462899"
+  lc: n79138887
+  viaf: "128478509"
+sources:
+  founded:
+    - accessed: 2026-10-20
+      property: P571
+      wikidata: Q414219
+  location:
+    - accessed: 2026-10-21
+      property: P625
+      wikidata: Q414219

@@ -21,19 +21,23 @@ creator: martin-van-meytens
 created: 1759
 materials: [oil paint, canvas]
 dimensions: [123, 99]
-institution: academy-of-fine-arts-vienna
+institution: akademie-der-bildenden-kunste-wien
 inventory_number: GG-103
 web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/539/
 wikidata_id: Q69495884
 metadata:
   sources: [Wikidata Q69495884 (retrieved 2026-10-20)]
 images:
+  - url: https://collection.kunstsammlungenakademie.at/multimedia/8/multimedia-5378.large.jpg
+    source_url: https://collection.kunstsammlungenakademie.at/de/collection/item/539/
+    license: CC BY 4.0
+    credit: Akademie der bildenden Künste Wien
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Kaiserin_Maria_Theresia_%28HRR%29.jpg/1280px-Kaiserin_Maria_Theresia_%28HRR%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kaiserin_Maria_Theresia_(HRR).jpg
     license: Public domain
     credit: Martin van Meytens
 provenance:
-  - owner: institution/academy-of-fine-arts-vienna
+  - owner: institution/akademie-der-bildenden-kunste-wien
     acquired: 1759
     method: commission
     place: vienna

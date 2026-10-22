@@ -1,35 +1,39 @@
 public_id: 101652
-title_lang: nl
-title: Boreas ontvoert Oreithya (Ovidius, Met. VI)
+title_lang: de
+title: Boreas entführt Oreithya
 names:
   - lang: en
-    role: original
+    role: alternative
     text: Boreas abducting Orithyia (Ovid, Met. VI)
   - lang: en
-    role: original
+    role: translation
     text: Boreas Abducting Oreithyia
   - lang: fr
     role: translation
     text: L'Enlèvement d'Orithye par Boreas
-  - lang: de
-    role: translation
-    text: Boreas entführt Oreithya
   - lang: es
     role: translation
     text: Bóreas rapta a Oritía
-  - lang: ja
-    role: translation
-    text: オレイテュイアを略奪するボレアス
 creator: peter-paul-rubens
-created: 1620
-materials: [oil paint, panel]
-dimensions: [146, 140]
-institution: academy-of-fine-arts-vienna
+created: c. 1615
+kind: oil painting
+medium: Oil on wood
+materials: [oil paint, oak]
+dimensions: [146, 140.5]
+other_dimensions:
+  - cm: [173.5, 167.5, 8.5]
+    part: Rahmenmass
+institution: akademie-der-bildenden-kunste-wien
 inventory_number: GG-626
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
 wikidata_id: Q8253935
 metadata:
   sources: [Wikidata Q8253935 (retrieved 2026-10-20)]
 images:
+  - url: https://collection.kunstsammlungenakademie.at/multimedia/6/multimedia-12246.large.jpg
+    source_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+    license: CC BY 4.0
+    credit: "Gemäldegalerie der Akademie der bildenden Künste Wien, Foto: image industry"
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Peter_Paul_Rubens_135.jpg/1280px-Peter_Paul_Rubens_135.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_135.jpg
     license: Public domain
@@ -44,7 +48,7 @@ provenance:
         note: “Legat von Graf Lamberg-Sprinzenstein, Wien, 1822 / Bequest of Count Lamberg-Sprinzenstein, Vienna, 1822”
         source: akademie-sammlung-online
         accessed: 2026-10-20
-  - owner: institution/academy-of-fine-arts-vienna
+  - owner: institution/akademie-der-bildenden-kunste-wien
     acquired: 1822
     method: bequest
     direct: true
@@ -61,29 +65,54 @@ provenance:
         accessed: 2026-10-20
 sources:
   names:
-    - accessed: 2026-10-20
+    - accessed: 2026-10-21
       wikidata: Q8253935
+  medium:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+      note: “Öl auf Holz (Eiche)”
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
   created:
-    - accessed: 2026-10-20
-      property: P571
-      wikidata: Q8253935
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
   creator:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q8253935
   materials:
-    - accessed: 2026-10-20
+    - accessed: 2026-10-21
       property: P186
       wikidata: Q8253935
   dimensions:
-    - accessed: 2026-10-20
-      property: P2048
-      wikidata: Q8253935
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+      note: "Bildmaß: 146.0 × 140.5 cm — Wikidata gives 146 × 140"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q8253935
+  title_status:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
   inventory_number:
     - accessed: 2026-10-20
       property: P217
       wikidata: Q8253935
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+      note: "Inventarnummer: “GG-626”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+  other_dimensions:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+      note: "“Rahmenmaß: 173.5 × 167.5 × 8.5 cm”"
+      source: akademie-sammlung-online
+      accessed: 2026-10-21
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
+      source: akademie-sammlung-online
+      accessed: 2026-10-21

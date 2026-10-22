@@ -1,0 +1,35 @@
+public_id: 102257
+name: Bad Säckingen
+names:
+  - lang: ja
+    role: translation
+    text: バート・ゼッキンゲン
+  - lang: zh
+    role: translation
+    text: 巴特塞京根
+  - lang: ru
+    role: translation
+    text: Бад-Зекинген
+kind: settlement
+parent: waldshut
+country_code: DE
+location: [7.94722, 47.55333]
+wikidata_id: Q522362
+metadata:
+  sources: [Wikidata Q522362 (retrieved 2026-10-21)]
+identifiers:
+  gnd: 4051228-9
+  hls: "007106"
+sources:
+  kind:
+    - accessed: 2026-10-21
+      property: P31
+      wikidata: Q522362
+  parent:
+    - accessed: 2026-10-21
+      property: P131
+      wikidata: Q522362
+  location:
+    - accessed: 2026-10-21
+      property: P625
+      wikidata: Q522362

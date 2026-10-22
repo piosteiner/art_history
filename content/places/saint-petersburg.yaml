@@ -1,0 +1,17 @@
+public_id: 102246
+name: Saint Petersburg
+names: [Petrograd]
+kind: settlement
+location: [30.31667, 59.95]
+wikidata_id: Q656
+metadata:
+  sources: [Wikidata Q656 (retrieved 2026-10-21)]
+sources:
+  kind:
+    - accessed: 2026-10-21
+      property: P31
+      wikidata: Q656
+  location:
+    - accessed: 2026-10-21
+      property: P625
+      wikidata: Q656

@@ -5,15 +5,9 @@ names:
   - lang: en
     role: original
     text: Liberty Leading the People
-  - lang: cs
-    role: original
-    text: Svoboda vede lid na barikády
-  - lang: nl
-    role: translation
-    text: De Vrijheid leidt het volk
   - lang: fr
-    role: original
-    text: La Liberté guidant le peuple
+    role: alternative
+    text: Une Barricade
   - lang: de
     role: translation
     text: Die Freiheit führt das Volk
@@ -23,26 +17,19 @@ names:
   - lang: es
     role: translation
     text: La Libertad guiando al pueblo
-  - lang: ja
-    role: translation
-    text: 民衆を導く自由の女神
-  - lang: zh
-    role: translation
-    text: 自由引导人民
-  - lang: ko
-    role: translation
-    text: 민중을 이끄는 자유의 여신
-  - lang: ru
-    role: translation
-    text: Свобода, ведущая народ
 creator: eugene-delacroix
 created: 1830
 created_label: c. 1830
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [260, 325]
+other_dimensions:
+  - cm: [297, 365]
+    part: mit Rahmen
 institution: department-of-paintings-of-the-louvre
 inventory_number: RF 129
-web_url: http://www.histoire-image.org/site/oeuvre/analyse.php?i=234
+web_url: https://collections.louvre.fr/en/ark:/53355/cl010065872
 wikidata_id: Q29530
 metadata:
   sources: [Wikidata Q29530 (retrieved 2026-10-20)]
@@ -121,9 +108,17 @@ identifiers:
   gnd: 4275137-8
   viaf: "184003081"
 sources:
+  kind:
+    - url: https://collections.louvre.fr/en/ark:/53355/cl010065872
+      source: louvre-collections
+      accessed: 2026-10-21
   names:
-    - accessed: 2026-10-20
+    - accessed: 2026-10-21
       wikidata: Q29530
+  medium:
+    - url: https://collections.louvre.fr/en/ark:/53355/cl010065872
+      source: louvre-collections
+      accessed: 2026-10-21
   created:
     - url: https://collections.louvre.fr/ark:/53355/cl010065872
       source: louvre-collections
@@ -132,6 +127,9 @@ sources:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q29530
+    - url: https://collections.louvre.fr/en/ark:/53355/cl010065872
+      source: louvre-collections
+      accessed: 2026-10-21
   materials:
     - accessed: 2026-10-20
       property: P186
@@ -140,10 +138,17 @@ sources:
     - accessed: 2026-10-20
       property: P2048
       wikidata: Q29530
+    - url: https://collections.louvre.fr/en/ark:/53355/cl010065872
+      source: louvre-collections
+      accessed: 2026-10-21
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q29530
+  title_status:
+    - url: https://collections.louvre.fr/en/ark:/53355/cl010065872
+      source: louvre-collections
+      accessed: 2026-10-21
   inventory_number:
     - accessed: 2026-10-20
       property: P217

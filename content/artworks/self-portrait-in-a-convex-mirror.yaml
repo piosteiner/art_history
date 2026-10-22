@@ -31,7 +31,7 @@ created: 1523/1524
 created_label: c. 1520s
 materials: [oil paint, poplar panel]
 dimensions: [24.4, 24.4]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_286
 wikidata_id: Q699319
 metadata:
@@ -112,7 +112,7 @@ provenance:
   - owner: institution/habsburg-imperial-collection
     label: imperial collection
     certainty: probable
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true

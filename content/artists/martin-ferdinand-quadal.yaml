@@ -7,6 +7,50 @@ death: 1809-01-11
 wikidata_id: Q301665
 metadata:
   sources: [Wikidata Q301665 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/austrian-empire
+    sources:
+      - accessed: 2026-10-21
+        property: P27
+        wikidata: Q301665
+  - type: born_in
+    to: place/nemcice-nad-hanou
+    sources:
+      - accessed: 2026-10-21
+        property: P19
+        wikidata: Q301665
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/536/
+        source: akademie-sammlung-online
+        accessed: 2026-10-21
+  - type: died_in
+    to: place/saint-petersburg
+    sources:
+      - accessed: 2026-10-21
+        property: P20
+        wikidata: Q301665
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/536/
+        source: akademie-sammlung-online
+        accessed: 2026-10-21
+  - type: studied_at
+    to: institution/akademie-der-bildenden-kunste-wien
+    sources:
+      - accessed: 2026-10-21
+        property: P69
+        wikidata: Q301665
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dc/Martin_Ferdinand_Quadal_Selbstportr%C3%A4t_1798.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Martin_Ferdinand_Quadal_Selbstportr%C3%A4t_1798.jpg
+    license: Public domain
+    credit: Martin Ferdinand Quadal
+identifiers:
+  bnf: "149660735"
+  gnd: "138364397"
+  kulturnav: cba3451c-810e-4d57-9a97-460a83e41b77
+  lc: no2010067386
+  rkd: "65182"
+  ulan: "500006165"
+  viaf: "282477"
 sources:
   birth:
     - accessed: 2026-10-20

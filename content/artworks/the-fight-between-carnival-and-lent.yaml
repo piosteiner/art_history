@@ -30,7 +30,7 @@ creator: pieter-brueghel-the-elder
 created: 1559
 materials: [oil paint, panel]
 dimensions: [118, 164.5]
-institution: kunsthistorisches-museum
+institution: kunsthistorisches-museum-wien
 inventory_number: GG_1016
 web_url: http://insidebruegel.net/#p/v=paintings&lan=en&a=1016&x=s:3_l:1_v1:1016,vis
 wikidata_id: Q689236
@@ -63,7 +63,7 @@ provenance:
         date: "1748"
         note: moved from the Treasury (Schatzkammer) to the gallery
         place: vienna
-  - owner: institution/kunsthistorisches-museum
+  - owner: institution/kunsthistorisches-museum-wien
     acquired: 1891-10-17
     method: transfer
     direct: true
