@@ -324,7 +324,8 @@ test('provenance map: the first and last placed stop are marked; a destroyed wor
 test('how are they connected (088): pick any entry, the shortest chain top to bottom', async ({ page }) => {
   await page.goto(IRENE);
   const box = page.locator('#connect');
-  await box.locator('input').fill('van gogh');
+  // the full name: "van gogh" alone now also finds the letters, the museum, his family and his works first
+  await box.locator('input').fill('vincent van gogh');
   await box.locator('.connect-hits button', { hasText: /^\s*Vincent van Gogh/ }).first().click();   // the artist, not a work of his
   const chain = box.locator('.net-path');
   await expect(chain.locator('.net-node').first()).toContainText('La Petite Irène');
@@ -1964,8 +1965,10 @@ test('explore: a start view\'s introduction previews its [[links]]; chosen works
 
 test('artworks list: searching a museum lists what is there now first, then what was there', async ({ page }) => {
   await page.route(/\/v1\/artworks\?/, async (route) => {
-    const res = await route.fetch();
-    const body = await res.json();
+    const res = await route.fetch().catch(() => null);
+    // a request the page dropped meanwhile (it loads the list again when the search starts): nothing to answer
+    const body = res && await res.json().catch(() => null);
+    if (!res || !body) return route.abort().catch(() => {});
     if (body.data.length < 2) return route.fulfill({ response: res });
     const [a, b] = body.data.slice(0, 2);
     // the museums as the API's search fields say them (API 110: view entry_search_fields)
