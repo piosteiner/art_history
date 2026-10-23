@@ -181,7 +181,7 @@ test('[[#Heading]]: suggested from every chapter while writing one, linked to th
   await expect(hits).toHaveCount(1);
   await expect(hits.first()).toContainText('Vertrauliche Daten');
   await expect(hits.first()).toContainText('## · Eins');                         // a heading of another chapter
-  await userA.keyboard.press('Enter');
+  await hits.first().click();       // (Enter right after the list opens falls in CodeMirror's interaction delay: a new line)
   await expect(userA.locator('#pg-body')).toHaveValue(/Siehe \[\[#Vertrauliche Daten\]\]$/);
   // a name used twice: written with the heading above it
   await userA.keyboard.type(' und [[#backend');
