@@ -1245,6 +1245,26 @@ test('provenance (063): computed artist and loan lines in italics, roles, joint 
   await expect(steps.nth(4).locator('.cite-ref')).toHaveCount(0);
 });
 
+test('a creation span says what it means (API 135): worked on over the years, or made at some point in them', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.sources = {};
+    b.created = year(1916, 1918);
+    b.conceived = null;
+    b.created_span = 'duration';
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const date = page.locator('.facts dt', { hasText: 'Date' }).locator('+ dd');
+  await expect(date).toHaveText('1916–1918 (worked on over these years)');
+  await patch(page, GREAT_WAVE, (b) => {
+    b.sources = {};
+    b.created = year(1916, 1918);
+    b.conceived = null;
+    b.created_span = 'uncertain';
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await expect(date).toHaveText('1916–1918 (made at some point in these years)');
+});
+
 test('provenance (074): agents and custodians held alongside the owner, not sold, via, settlement; status A–D; design date', async ({ page }) => {
   const inst = (slug: string, name: string) => ({ type: 'institution', slug, name });
   await patch(page, GREAT_WAVE, (b) => {

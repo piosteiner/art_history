@@ -284,6 +284,9 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
   the Swiss Federal Office of Culture for 1933–1945: **A** clarified, no looted art · **B** not fully clarified, no
   indications · **C** not fully clarified, indications or suspicious circumstances · **D** looted / seized as a result
   of Nazi persecution. `note`: the source's own wording. Lists have `provenance_category` ("A"–"D" or null).
+- `created_span` (detail, migration 135): what the range of `created` means — `duration` (worked on over that time:
+  "1916–1918, worked on over these years"), `uncertain` (made at some point in it), or `null` (not stated; read as
+  uncertain). The provenance's implied first line follows it.
 - `conceived` (detail): when the design, block or model was made, if earlier than `created` — a print pulled or a
   cast made later (L'Univers est créé: block 1893–94, printed 1921 by Pola Gauguin). Show "designed 1893–94, printed
   1921"; `null` otherwise.

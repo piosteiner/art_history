@@ -95,7 +95,7 @@ const ENTITIES = {
              FROM artwork_holders h JOIN institutions i ON i.id = h.institution_id WHERE h.artwork_id = t.id) AS holders,
            (SELECT jsonb_build_object('documented_percent', c.documented_percent, 'has_provenance', c.has_provenance,
                      'gap_1933_1945', c.gap_1933_1945_days > 0) FROM provenance_completeness_stored c WHERE c.artwork_id = t.id) AS provenance_coverage`,
-    detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.kind, t.medium,
+    detail: `t.attribution_label, t.title_status, range_json(t.created, t.created_label) AS created, t.created_span, t.kind, t.medium,
              artwork_is_group(t.kind_term_id) AS is_group,  -- a series, versions, a cycle … (132)
              range_json(t.conceived, t.conceived_label) AS conceived,
              -- 1933–1945 (074): the BAK category A–D, its meaning, the source's wording

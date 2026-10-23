@@ -52,6 +52,7 @@ const LABELS = {
   'artwork.title_status': 'Title: original or translation',
   'artwork.provenance_status': 'Provenance status 1933–1945', 'artwork.provenance_status_note': 'Status as the source words it',
   'artwork.conceived': 'Designed (block, model)',
+  'artwork.created_span': 'The span means',
   'artwork.fate': 'Fate', 'artwork.fate_date': 'Fate: when', 'artwork.fate_note': 'Fate: how',
   'artwork.web_url': 'Web page', 'artwork.institution': 'Institution (where it is now)', 'artwork.on_loan': 'On loan there',
   'artwork.on_loan_since': 'On loan since', 'artwork.parent': 'Part of', 'artwork.part_number': 'Number in it', 'artwork.parts_count': 'Number of parts',
@@ -80,6 +81,7 @@ const TYPE_HINTS = {
   'artwork.provenance_status': html`As the holding institution or a provenance report assesses it (the categories of the Swiss Federal Office of Culture) — cite the source with the marker. The step notes say why.`,
   'artwork.provenance_status_note': 'In the source’s own words, e.g. “NS-verfolgungsbedingt entzogenes Kulturgut”.',
   'artwork.fate': 'Only when the work no longer exists or nobody knows where it is: destroyed (in a fire, a war, on purpose), partly destroyed, or lost — also a stolen work that never resurfaced. Cite the source with the marker. The provenance stays as it is; its last holder is then the last known one.',
+  'artwork.created_span': 'Only for a span (1916–1918): “worked on throughout” when the artist worked on it over the whole time — the provenance then has them hold it from the start; “made at some point in it” when only the date is uncertain. Circa, decades and centuries are set to the second by themselves.',
   'artwork.fate_note': 'How and why, briefly — e.g. “burnt in the Friedrichshain flak tower, May 1945”.',
   'artwork.conceived': html`Only when it differs from “Created”: a print pulled or a bronze cast later — often after the artist's death — from a block, plate or model made earlier (Gauguin's woodblock 1893–94, printed by his son in 1921).`,
   'artwork.title_status': html`Empty when the title is in its original language. A translation (an English title for a Japanese print): <b>official</b> — the holding institution’s or a publisher’s (add the source with the marker on the page) · <b>common</b> — in use in the literature or on Wikidata · <b>own</b> — yours (shown in [square brackets]). The same for translations among the other names: the second menu next to “translation”.`,
@@ -134,7 +136,7 @@ const TYPE_HINTS = {
 };
 // The empty choice of a menu whose column may be empty, and readable names of some values.
 const EMPTY_CHOICE = { 'artwork.title_status': 'original — not a translation', 'artwork.provenance_status': 'not assessed',
-  'artwork.fate': 'extant — as far as known' };
+  'artwork.fate': 'extant — as far as known', 'artwork.created_span': 'not stated' };
 const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', 'artwork.title_status.common': 'common translation',
   'artwork.title_status.own': 'own translation',
   // the categories of the Swiss Federal Office of Culture (BAK) for the provenance 1933–1945 (074)
@@ -144,7 +146,10 @@ const ENUM_LABELS = { 'artwork.title_status.official': 'official translation', '
   'artwork.provenance_status.d_seized': 'D — looted art / seized as a result of Nazi persecution',
   // what became of it (103)
   'artwork.fate.destroyed': 'destroyed', 'artwork.fate.partly_destroyed': 'partly destroyed — fragments survive',
-  'artwork.fate.lost': 'lost — whereabouts unknown' };
+  'artwork.fate.lost': 'lost — whereabouts unknown',
+  // what a span of years under "Created" means (135)
+  'artwork.created_span.duration': 'worked on throughout — made over this time',
+  'artwork.created_span.uncertain': 'made at some point in it — the date is uncertain' };
 const humanize = (key) => key.replace(/_md$/, '').replace(/_/g, ' ').replace(/^./, (c) => c.toUpperCase());
 const fieldLabel = (type, key) => LABELS[`${type}.${key}`] || humanize(key);
 
@@ -336,7 +341,7 @@ const FLAG = g('Provenance flag…', ['provenance_flag'], 'Your research list: h
 const SECTIONS = {
   artwork: [
     { title: 'Title and names', id: 'names', rows: [['title'], ['title_status'], ['names']] },
-    { title: 'Who and when', id: 'who', rows: [['creator', 'attribution_label'], ['created'],
+    { title: 'Who and when', id: 'who', rows: [['creator', 'attribution_label'], ['created', 'created_span'],
       g('Designed earlier (prints, casts)…', ['conceived'], 'A print or cast made later than its design — often after the artist’s death.'),
       g('Part of a series…', ['parent', 'part_number', 'parts_count'],
         'For a print from a series, a panel of a triptych, a leaf of an album — or for the whole itself (its number of parts).', WHOLES)] },

@@ -23,8 +23,16 @@ function fateFact(e: Artwork): Html | null {
   return html`<span class="tag tag-fate tag-fate-${f.status}">${f.label}</span>${f.date ? ` ${f.date.label}` : ''}${f.note ? html` — ${f.note}` : ''}`;
 }
 
+// a span of years (API 135): worked on over the whole time, or made at some point in it — said only where the label
+// itself doesn't ("c. 1882", "1880s" say it already)
+function spanNote(e: Artwork): string {
+  if (!e.created || e.created.from_year === e.created.to_year) return '';
+  if (e.created_span === 'duration') return ' (worked on over these years)';
+  return e.created_span === 'uncertain' && /^\d{3,4}\s*[–-]\s*\d{3,4}$/.test(e.created.label ?? '') ? ' (made at some point in these years)' : '';
+}
+
 function dateFact(e: Artwork): string | null {
-  if (!e.conceived) return dateLabel(e.created);
+  if (!e.conceived) return e.created ? `${dateLabel(e.created)}${spanNote(e)}` : null;
   const kind = `${e.kind ?? ''} ${e.medium ?? ''}`.toLowerCase();
   const made = /print|woodcut|woodblock|engraving|etching|lithograph|aquatint|mezzotint|ukiyo|holzschnitt|radierung|druck/.test(kind) ? 'printed'
     : /bronze|cast|guss/.test(kind) ? 'cast' : 'made';

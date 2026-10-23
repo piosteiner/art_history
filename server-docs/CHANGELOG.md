@@ -2,6 +2,29 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-23
+
+### What a creation span means; the artist's line before their own estate (migration 135)
+- **What:**
+  - `artworks.created_span` (enum `span_meaning`: `duration` = worked on over that time, `uncertain` = made at some
+    point in it; NULL = not stated), citable on its own (`citable_fields` row `created_span`). Trigger
+    `artworks_created_span`: NULL without a date; `uncertain` when the label can only mean that
+    (`created_label_is_uncertain()`: circa, decades, centuries, "or earlier" …) — set for the existing works too.
+  - New hint `creation_span_unstated` (in `quality_issues_live`): a span of more than a year still unstated.
+  - `provenance_chain`, the implied first line "the artist": a duration starts it on the span's first day (documented
+    from there); a first step that is the creator's own estate keeps the line, which ends where the estate begins.
+    All artworks queued for their derived rows.
+  - Admin: "The span means" beside "Created". API detail `created_span`; site: "1916–1918 (worked on over these
+    years)" / "(made at some point in these years)". Tests: e2e `created-span.spec.js`, site test.
+- **Why:** owner (2026-10-23, Klimt's "Adam und Eva", 1916–1918): a long making and an uncertain date are different
+  things and must be told apart; and the provenance of works that begin with the artist's estate showed the years in
+  the studio as a gap (Degas' studies 1869–1917).
+- **Revert:** `CREATE OR REPLACE VIEW provenance_chain` and `quality_issues_live` from their definitions before 135
+  (patched in place: take them from a backup's schema); `DROP TRIGGER artworks_created_span ON artworks; DROP FUNCTION
+  artworks_created_span(), created_label_is_uncertain(text); DELETE FROM citations WHERE field = 'created_span';
+  DELETE FROM citable_fields WHERE field = 'created_span'; ALTER TABLE artworks DROP COLUMN created_span; DROP TYPE
+  span_meaning;` delete `135_created_span.sql` from `schema_migrations`; revert the commits.
+
 ## 2026-10-22
 
 ### Thumbnails of museum-hosted images through the API (`/v1/thumb`)

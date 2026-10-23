@@ -43,6 +43,14 @@ Historical dates are rarely exact, so every date is a **half-open range** plus a
 Open ends are for periods only (relationships, `movements.period`, `people.active`), never for births, deaths,
 creation or founding dates. An ongoing period overlaps every later window, which is what "still there" means.
 
+A range says two different things, and the range alone can't tell which (migration 135): *made over that time*
+(Klimt worked on "Adam und Eva" 1916–1918) or *made at some point in it* ("between 1490 and 1500", "c. 1882").
+For creation dates `artworks.created_span` (enum `span_meaning`: `duration` · `uncertain`, NULL = not stated) records
+which. A trigger sets `uncertain` where the label's wording can only mean that (`created_label_is_uncertain()`: circa,
+decades, centuries, "or earlier" …); a plain "1916–1918" stays for the editor, and the hint `creation_span_unstated`
+lists spans longer than a year still unstated. Elsewhere ranges keep the reading they had: uncertain (checks compare by
+overlap, so "c. 1480" never contradicts "1482").
+
 This makes timeline queries plain range operators, backed by GiST indexes:
 `lifespan @> date '1850-01-01'` (alive then), `period && year_range(1860, 1890)` (overlaps).
 `artists.lifespan` is a stored generated column (earliest birth → latest death).
@@ -548,6 +556,11 @@ its `[[links]]` follow renames and merges like every text.
 - `artworks.provenance_status` (enum `provenance_status`: a_clear, b_no_indications, c_indications, d_seized — the BAK
   categories) + `provenance_status_note`; `artworks.conceived`/`conceived_label` (design earlier than the object;
   `artwork_outside_creator_life` uses it). Both citable. Relationship type `copy_after` (artwork → artwork).
+- Migration 135, the implied first line "the artist" of `provenance_chain`: for `created_span = 'duration'` it starts
+  as the span's first day (`acquired` = that day: documented from there, as the artist had the work from the start),
+  otherwise as the whole range (documented from its end, presumed before). A first step that is the creator's own
+  estate no longer drops the line: the line ends where the estate begins (its `ended` = the estate's `acquired`) — an
+  estate begins at the death, so the years in the studio were shown as a gap.
 
 ## Every case the Kunsthaus documents (migrations 076/077)
 - Roles: `publisher` (of the chain), `foundry`, `trustee` (custody), `event` (no holder — `provenance_holder_or_description`

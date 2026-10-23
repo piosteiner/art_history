@@ -306,6 +306,9 @@ export interface Artwork extends DetailBase, Located, Titled {
   provenance_status?: ProvenanceStatus | null;
   /** What became of it (API 103): destroyed / partly destroyed / lost, when and how; null while extant. */
   fate?: ArtworkFate | null;
+  /** What the span of `created` means (API 135): `duration` = worked on over that time, `uncertain` = made at some point
+   * in it; null = not stated. */
+  created_span?: 'duration' | 'uncertain' | null;
   /** When the design, block or model was made, if earlier than `created` (a print pulled, a cast made later; 074). */
   conceived?: DateRange | null;
   /** Where the provenance is silent (API 078), from the creation until today; null without a creation date. */
