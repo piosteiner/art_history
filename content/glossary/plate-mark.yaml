@@ -1,0 +1,12 @@
+public_id: 102302
+name_lang: en
+name: plate mark
+names:
+  - lang: de
+    role: translation
+    text: Plattenrand
+  - lang: fr
+    role: translation
+    text: cuvette
+category: mounting
+definition: The edge pressed into the paper by the plate of an etching or engraving — the size of the plate.

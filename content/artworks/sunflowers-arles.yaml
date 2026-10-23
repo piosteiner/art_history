@@ -1,0 +1,48 @@
+public_id: 102290
+title_lang: en
+title: Sunflowers
+names:
+  - lang: fr
+    role: translation
+    text: Tournesols
+  - lang: nl
+    role: translation
+    text: Zonnebloemen
+  - lang: de
+    role: translation
+    text: Sonnenblumen
+parts_count: 7
+creator: vincent-van-gogh
+created: 1888-08/1889-01
+kind: series
+description_md: |-
+  Van Gogh’s still lifes of sunflowers in a vase, painted in Arles: four in August 1888 to decorate the Yellow House for Paul Gauguin’s arrival — two of them hung in Gauguin’s room — and three repetitions in January 1889. He meant them to express “gratitude”, and painted them in three shades of yellow “and nothing else”; Gauguin found them “completely Vincent”.
+
+  Five are in museums: the [[artwork/sunflowers-national-gallery|National Gallery]] in London and the [[artwork/sunflowers-munich|Neue Pinakothek]] in Munich (August 1888), the [[artwork/sunflowers-van-gogh-museum|Van Gogh Museum]] in Amsterdam, the Philadelphia Museum of Art and the Sompo Museum of Art in Tokyo (January 1889). *Three Sunflowers in a Vase* (August 1888) is in a private collection; *Five Sunflowers* (August 1888) was destroyed in a US air raid on Japan on 6 August 1945.
+wikidata_id: Q157541
+sources:
+  kind:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Van Gogh’s paintings of Sunflowers are among his most famous. He did them in Arles … in 1888 and 1889.”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  names:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Vincent painted a total of five large canvases with sunflowers in a vase, with three shades of yellow ‘and nothing else’ … they communicated ‘gratitude’”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  parent:
+    - url: https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)
+      note: (F459) … destroyed by U.S. air raid in Japan on 6 August 1945 … (F453) (private collection) … the repetitions of January 1889
+      source: wikipedia-en-sunflowers-van-gogh-series
+      accessed: 2026-10-22
+  created:
+    - url: https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)
+      note: (F459) … destroyed by U.S. air raid in Japan on 6 August 1945 … (F453) (private collection) … the repetitions of January 1889
+      source: wikipedia-en-sunflowers-van-gogh-series
+      accessed: 2026-10-22
+  creator:
+    - url: https://en.wikipedia.org/wiki/Sunflowers_(Van_Gogh_series)
+      note: (F459) … destroyed by U.S. air raid in Japan on 6 August 1945 … (F453) (private collection) … the repetitions of January 1889
+      source: wikipedia-en-sunflowers-van-gogh-series
+      accessed: 2026-10-22

@@ -7,8 +7,90 @@ death: 1919-12-03
 wikidata_id: Q39931
 metadata:
   sources: [Wikidata Q39931 (retrieved 2026-10-16)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-22
+        property: P27
+        wikidata: Q39931
+  - type: born_in
+    to: place/limoges
+    sources:
+      - accessed: 2026-10-22
+        property: P19
+        wikidata: Q39931
+  - type: died_in
+    to: place/cagnes-sur-mer
+    sources:
+      - accessed: 2026-10-22
+        property: P20
+        wikidata: Q39931
+  - type: lived_in
+    to: place/limoges
+    period: 25 February 1841–1844
+    sources:
+      - accessed: 2026-10-22
+        property: P551
+        wikidata: Q39931
+  - type: lived_in
+    to: place/paris
+    period: 1844
+    period_label: from 1844
+    sources:
+      - accessed: 2026-10-22
+        property: P551
+        wikidata: Q39931
+  - type: lived_in
+    to: place/cagnes-sur-mer
+    period: 1903
+    period_label: from 1903
+    sources:
+      - accessed: 2026-10-22
+        property: P551
+        wikidata: Q39931
+  - type: student_of
+    to: artist/charles-gleyre
+    period: 1862/1864
+    sources:
+      - accessed: 2026-10-22
+        property: P1066
+        wikidata: Q39931
+  - type: studied_at
+    to: institution/academie-suisse
+    sources:
+      - accessed: 2026-10-22
+        property: P69
+        wikidata: Q39931
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    period: 1862/1864
+    sources:
+      - accessed: 2026-10-22
+        property: P69
+        wikidata: Q39931
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-22
+        property: P135
+        wikidata: Q39931
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/67/Pierre_Auguste_Renoir%2C_uncropped_image.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pierre_Auguste_Renoir,_uncropped_image.jpg
+    license: Public domain
+    credit: UnknownUnknown Musée d'Orsay, Dist. RMN-Grand Palais / Patrice Schmidt
 identifiers:
+  bnf: 12529742r
   dome: "317"
+  gnd: "118599755"
+  idref: 03455338X
+  kulturnav: 3fe5453f-78c9-40b0-a0f7-233a57cd63ef
+  lc: n79055478
+  nlk: KAC199622810
+  rkd: "66307"
+  ulan: "500115467"
+  viaf: "29643005"
 sources:
   birth:
     - accessed: 2026-10-16

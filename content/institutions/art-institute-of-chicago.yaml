@@ -1,0 +1,58 @@
+public_id: 102262
+name: Art Institute of Chicago
+names:
+  - Art Institute Chicago
+  - AIC
+  - Chicago Art Institute
+  - lang: es
+    role: translation
+    text: Instituto de Arte de Chicago
+  - lang: ja
+    role: translation
+    text: シカゴ美術館
+  - lang: zh
+    role: translation
+    text: 芝加哥艺术博物馆
+  - lang: ko
+    role: translation
+    text: 시카고 미술관
+  - lang: ru
+    role: translation
+    text: Чикагский институт искусств
+founded: 1879
+place: chicago
+location: [-87.62389, 41.87944]
+address: 111 South Michigan Avenue, Chicago, IL 60603
+website_url: https://www.artic.edu
+wikidata_id: Q239303
+metadata:
+  sources: [Wikidata Q239303 (retrieved 2026-10-22)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Art_Institute_of_Chicago_%2851575570710%29.jpg/1280px-Art_Institute_of_Chicago_%2851575570710%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Art_Institute_of_Chicago_(51575570710).jpg
+    license: CC BY 2.0
+    credit: ajay_suresh
+identifiers:
+  bnf: 11873060q
+  gnd: 1004734-7
+  idref: "026492490"
+  lc: n78096940
+  ulan: "500304669"
+  viaf: "131375374"
+sources:
+  place:
+    - accessed: 2026-10-22
+      property: P131
+      wikidata: Q239303
+  address:
+    - accessed: 2026-10-22
+      property: P6375
+      wikidata: Q239303
+  founded:
+    - accessed: 2026-10-22
+      property: P571
+      wikidata: Q239303
+  location:
+    - accessed: 2026-10-22
+      property: P625
+      wikidata: Q239303

@@ -6,15 +6,17 @@ names:
     role: translation
     text: Sonnenblumen
     status: official
+parent: sunflowers-arles
 creator: vincent-van-gogh
-created: 1888
+created: 1888-08
 kind: oil painting
-medium: Öl auf Leinwand
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [92, 73]
 institution: neue-pinakothek
 inventory_number: "8672"
 web_url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+description_md: One of the four [[artwork/sunflowers-arles|Sunflowers]] Van Gogh painted in Arles in August 1888 to decorate the studio where he meant to paint with Paul Gauguin. Vase, flowers, table and background are rendered simply and flat; the icy turquoise of the ground heightens the yellows and yellow-browns. The simple form and strong colour go back to Japanese prints. Van Gogh saw this version and the one now in [[artwork/sunflowers-national-gallery|London]] as pendants; later he thought of hanging two sunflower paintings on either side of *La Berceuse* as a festive frame — a triptych.
 wikidata_id: Q21948547
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Vincent_Willem_van_Gogh_128.jpg/1280px-Vincent_Willem_van_Gogh_128.jpg
@@ -68,3 +70,69 @@ provenance:
     place: munich
     label: Neue Pinakothek, inv. 8672 — anonymous gift within the Tschudi donation (Tschudi-Spende)
     sources: ["Bayerische Staatsgemäldesammlungen, online collection, inv. 8672 (“1912 als anonyme Schenkung im Rahmen der Tschudi-Spende erworben”): https://www.sammlung.pinakothek.de/en/artwork/Y0GR9B7LRX (accessed 2026-10-18)", "Van Gogh Museum Journal 1999, appendix, F 456 / JH 1561, provenance: https://dbnl.org/tekst/_van012199901_01/_van012199901_01_0006.php (accessed 2026-10-18)"]
+numbers:
+  - number: F456
+    source: de-la-faille-1970
+    sources:
+      - note: "Wikidata: catalog code F456"
+        accessed: 2026-10-22
+        property: P528
+        wikidata: Q21948547
+  - number: JH1561
+    source: hulsker-1996
+    sources:
+      - note: "Wikidata: catalog code JH1561"
+        accessed: 2026-10-22
+        property: P528
+        wikidata: Q21948547
+sources:
+  kind:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  names:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  medium:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  parent:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  created:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  creator:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  materials:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  dimensions:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  institution:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22
+  inventory_number:
+    - url: https://www.sammlung.pinakothek.de/de/artwork/Y0GR9B7LRX
+      note: "„Sonnenblumen, 1888 · Öl auf Leinwand · 92 x 73 cm · Inventarnummer 8672 · Erwerb: 1912 als anonyme Schenkung im Rahmen der Tschudi-Spende“ — and in its text: „gemalt im August 1888“"
+      source: pinakothek-sammlung-online
+      accessed: 2026-10-22

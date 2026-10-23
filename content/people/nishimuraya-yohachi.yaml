@@ -1,0 +1,48 @@
+public_id: 102281
+name: Nishimuraya Yohachi
+names:
+  - lang: ja
+    role: original
+    text: 西村屋与八
+  - Hibino
+  - Eijudō
+  - Nishimura Yohachi
+  - lang: ru
+    role: translation
+    text: Ёхати Нисимурая
+kind: person
+occupations: [publisher]
+birth: 1762
+death: 1835
+wikidata_id: Q27920924
+metadata:
+  sources: [Wikidata Q27920924 (retrieved 2026-10-22)]
+relationships:
+  - type: published
+    to: artwork/thirty-six-views-of-mount-fuji
+    label: Eijudō, Edo
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2d/Eijudo_Hibino_at_Seventy-one.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eijudo_Hibino_at_Seventy-one.jpg
+    license: CC BY-SA 3.0
+    credit: Sianljones
+identifiers:
+  lc: n81006930
+  viaf: "309815627"
+sources:
+  kind:
+    - accessed: 2026-10-22
+      property: P31
+      wikidata: Q27920924
+  birth:
+    - accessed: 2026-10-22
+      property: P569
+      wikidata: Q27920924
+  death:
+    - accessed: 2026-10-22
+      property: P570
+      wikidata: Q27920924
+  occupations:
+    - accessed: 2026-10-22
+      property: P106
+      wikidata: Q27920924

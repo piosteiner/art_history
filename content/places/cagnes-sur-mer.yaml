@@ -1,0 +1,16 @@
+public_id: 102295
+name: Cagnes-sur-Mer
+kind: settlement
+location: [7.14833, 43.66361]
+wikidata_id: Q193832
+metadata:
+  sources: [Wikidata Q193832 (retrieved 2026-10-22)]
+sources:
+  kind:
+    - accessed: 2026-10-22
+      property: P31
+      wikidata: Q193832
+  location:
+    - accessed: 2026-10-22
+      property: P625
+      wikidata: Q193832

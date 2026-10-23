@@ -1,0 +1,28 @@
+public_id: 102306
+name: Catherine II of Russia
+kind: person
+birth: 1729-05-02
+death: 1796-11-17
+wikidata_id: Q36450
+metadata:
+  sources: [Wikidata Q36450 (retrieved 2026-10-22)]
+relationships:
+  - type: founded
+    to: institution/hermitage-museum-st-petersburg
+    sources:
+      - accessed: 2026-10-22
+        property: P112
+        wikidata: Q132783
+sources:
+  kind:
+    - accessed: 2026-10-22
+      property: P31
+      wikidata: Q36450
+  birth:
+    - accessed: 2026-10-22
+      property: P569
+      wikidata: Q36450
+  death:
+    - accessed: 2026-10-22
+      property: P570
+      wikidata: Q36450

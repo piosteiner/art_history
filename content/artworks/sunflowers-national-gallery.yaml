@@ -1,13 +1,16 @@
 public_id: 100009
 title: Sunflowers
+parent: sunflowers-arles
 creator: vincent-van-gogh
 created: 1888-08
-kind: painting
+kind: oil painting
 medium: Oil on canvas
 dimensions: [92.1, 73]
 institution: national-gallery-london
+inventory_number: NG3863
 web_url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
 description_md: One of the series painted to decorate the Yellow House for Gauguin's arrival.
+wikidata_id: Q21948567
 relationships:
   - type: created_in
     to: place/arles
@@ -24,18 +27,56 @@ images:
 provenance:
   - owner: person/johanna-van-gogh-bonger
     label: the artist’s sister-in-law
-    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+    sources:
+      - The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"
+      - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+        note: "National Gallery, provenance: “…Mrs. J. Van Gogh‐Bonger (the artist’s sister‐in‐law), by whom lent to the Van Gogh exhibition, Stedelijk Museum, Amsterdam, 1905 (No. 103), thence to her son, V. W. Van Gogh…”"
+        source: nationalgallery-org-uk
+        accessed: 2026-10-22
+    records:
+      - kind: exhibition
+        date: "1905"
+        note: lent by her
+        place: amsterdam
+        number: "103"
+        document: Amsterdam, Stedelijk Museum, Van Gogh exhibition
   - owner: person/vincent-willem-van-gogh
+    ended: 1923
     direct: true
     label: her son
-    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+    sources:
+      - The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"
+      - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+        note: "National Gallery, provenance: “…thence to her son, V. W. Van Gogh (by whom lent again to the Stedelijk Museum, Regeerings Jubileum exhibition, 1923, No. 125) until 1923, when bought by the Leicester Galleries, London…”"
+        source: nationalgallery-org-uk
+        accessed: 2026-10-22
+    records:
+      - kind: exhibition
+        date: "1923"
+        note: lent by him
+        place: amsterdam
+        number: "125"
+        document: Amsterdam, Stedelijk Museum, Regeerings Jubileum exhibition
   - owner: institution/leicester-galleries
     role: dealer
+    acquired: 1923
     ended: 1924
     method: purchase
     direct: true
     place: london
-    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+    sources:
+      - The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"
+      - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+        note: "National Gallery, provenance: “…until 1923, when bought by the Leicester Galleries, London, where exhibited, 1923, No. 26 (reproduced). Sold, 1924, by the Leicester Galleries to the Trustees of the Courtauld Fund…”"
+        source: nationalgallery-org-uk
+        accessed: 2026-10-22
+    records:
+      - kind: exhibition
+        date: "1923"
+        note: reproduced
+        place: london
+        number: "26"
+        document: London, Leicester Galleries
   - owner: institution/tate-gallery
     acquired: 1924
     ended: 1961
@@ -43,15 +84,60 @@ provenance:
     direct: true
     place: london
     label: bought by the Trustees of the Courtauld Fund
-    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+    sources:
+      - The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"
+      - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+        note: "National Gallery, provenance: “…Sold, 1924, by the Leicester Galleries to the Trustees of the Courtauld Fund. Transferred from the Tate Gallery, 1961…”"
+        source: nationalgallery-org-uk
+        accessed: 2026-10-22
   - owner: institution/national-gallery-london
     acquired: 1961
     method: transfer
     direct: true
     place: london
     label: transferred from the Tate Gallery
-    sources: ['The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"']
+    sources:
+      - The National Gallery, London, Sunflowers (Vincent van Gogh), provenance — "Bought, Courtauld Fund, 1924"
+      - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+        note: "National Gallery, provenance: “…Transferred from the Tate Gallery, 1961…”"
+        source: nationalgallery-org-uk
+        accessed: 2026-10-22
+numbers:
+  - number: F454
+    source: de-la-faille-1970
+    sources:
+      - note: "Wikidata: catalog code F454"
+        accessed: 2026-10-22
+        property: P528
+        wikidata: Q21948567
+  - number: JH1562
+    source: hulsker-1996
+    sources:
+      - note: "Wikidata: catalog code JH1562"
+        accessed: 2026-10-22
+        property: P528
+        wikidata: Q21948567
 sources:
+  kind:
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      note: “Date made 1888 · … This is one of five versions of Sunflowers on display in museums and galleries across the world. Van Gogh made the paintings to decorate his house in Arles in readiness for a visit from … Paul Gauguin.”
+      source: nationalgallery-org-uk
+      accessed: 2026-10-22
+  medium:
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      note: “Date made 1888 · Oil on canvas · 92.1 × 73 cm · Bought, Courtauld Fund, 1924 · Inventory number NG3863 · Frame 17th-century Italian Frame”
+      source: nationalgallery-org-uk
+      accessed: 2026-10-22
+  parent:
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      note: “Date made 1888 · … This is one of five versions of Sunflowers on display in museums and galleries across the world. Van Gogh made the paintings to decorate his house in Arles in readiness for a visit from … Paul Gauguin.”
+      source: nationalgallery-org-uk
+      accessed: 2026-10-22
+  created:
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      note: “Date made 1888 · … This is one of five versions of Sunflowers on display in museums and galleries across the world. Van Gogh made the paintings to decorate his house in Arles in readiness for a visit from … Paul Gauguin.”
+      source: nationalgallery-org-uk
+      accessed: 2026-10-22
   creator:
     - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
       source: nationalgallery-org-uk
@@ -60,3 +146,17 @@ sources:
     - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
       source: nationalgallery-org-uk
       accessed: 2026-10-18
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      note: “Date made 1888 · Oil on canvas · 92.1 × 73 cm · Bought, Courtauld Fund, 1924 · Inventory number NG3863 · Frame 17th-century Italian Frame”
+      source: nationalgallery-org-uk
+      accessed: 2026-10-22
+  institution:
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      note: “Date made 1888 · Oil on canvas · 92.1 × 73 cm · Bought, Courtauld Fund, 1924 · Inventory number NG3863 · Frame 17th-century Italian Frame”
+      source: nationalgallery-org-uk
+      accessed: 2026-10-22
+  inventory_number:
+    - url: https://www.nationalgallery.org.uk/paintings/vincent-van-gogh-sunflowers
+      note: “Date made 1888 · Oil on canvas · 92.1 × 73 cm · Bought, Courtauld Fund, 1924 · Inventory number NG3863 · Frame 17th-century Italian Frame”
+      source: nationalgallery-org-uk
+      accessed: 2026-10-22

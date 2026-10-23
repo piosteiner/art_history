@@ -1,6 +1,8 @@
 public_id: 100899
 name: 8th arrondissement of Paris
 kind: site
+parent: paris
+country_code: FR
 location: [2.31111, 48.87417]
 wikidata_id: Q270230
 metadata:
@@ -11,6 +13,10 @@ sources:
   kind:
     - accessed: 2026-10-18
       property: P31
+      wikidata: Q270230
+  parent:
+    - accessed: 2026-10-18
+      property: P131
       wikidata: Q270230
   location:
     - accessed: 2026-10-18

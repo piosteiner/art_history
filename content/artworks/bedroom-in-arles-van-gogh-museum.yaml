@@ -1,0 +1,218 @@
+public_id: 101856
+title_lang: en
+title: The Bedroom
+names:
+  - lang: nl
+    role: translation
+    text: De slaapkamer
+    status: official
+  - lang: en
+    role: alternative
+    text: Bedroom in Arles
+parent: bedroom-in-arles
+part_number: "1"
+creator: vincent-van-gogh
+created: 1888-10
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [72.4, 91.3]
+other_dimensions:
+  - cm: [92.2, 111, 7.2]
+    part: frame
+institution: van-gogh-museum
+inventory_number: s0047V1962
+web_url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+on_loan: true
+on_loan_since: 1973-06-02
+description_md: |-
+  The first of the three versions of [[artwork/bedroom-in-arles|The Bedroom]], painted in Arles in October 1888: Van Gogh’s bedroom in the Yellow House, which he had furnished himself with simple furniture and his own works on the wall. The bright colours were to express “repose” or “sleep”. Research shows that today’s strong contrasts are partly the result of discolouration — the walls and doors, now blue, were originally purple. The skewed rear wall is no mistake: the corner of the room really was at an angle. Van Gogh deliberately “flattened” the interior and left out the shadows so that it would resemble a Japanese print. He thought it among his best: “When I saw my canvases again after my illness, what seemed to me the best was the bedroom.”
+
+  The canvas was damaged by water while he was in hospital in 1889; before sending it to Theo he made the two repetitions now in [[artwork/bedroom-in-arles-chicago|Chicago]] and the [[artwork/bedroom-in-arles-orsay|Musée d’Orsay]].
+wikidata_id: Q18713070
+metadata:
+  sources: [Wikidata Q724377 (retrieved 2026-10-20)]
+relationships:
+  - type: created_in
+    to: place/arles
+    period: 1888-10
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: “Vincent van Gogh (1853 - 1890), Arles, October 1888”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - type: depicts
+    to: place/arles
+    sources:
+      - accessed: 2026-10-22
+        property: P180
+        wikidata: Q724377
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_De_slaapkamer_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    acquired: 1888-10
+    ended: 1889-04
+    method: creation
+    direct: true
+    place: arles
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: "Van Gogh Museum, provenance: “…Sent by the artist from Arles to his brother Theo van Gogh, Paris, at the end of April 1889…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: person/theo-van-gogh
+    acquired: 1889-04
+    ended: 1891-01-25
+    direct: true
+    place: paris
+    label: sent by the artist from Arles at the end of April 1889
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: "Van Gogh Museum, provenance: “…Sent by the artist from Arles to his brother Theo van Gogh, Paris, at the end of April 1889; after his death on 25 January 1891…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: person/johanna-van-gogh-bonger
+    co_owners: [person/vincent-willem-van-gogh]
+    acquired: 1891-01-25
+    ended: 1925-09-02
+    method: inheritance
+    direct: true
+    label: inherited by his widow and their son; administered by Jo van Gogh-Bonger (Bussum, Amsterdam, Laren) until her death
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: "Van Gogh Museum, provenance: “…inherited by his widow, Jo van Gogh-Bonger, and their son, Vincent Willem van Gogh, Paris; administered until her death on 2 September 1925 by Jo van Gogh-Bonger, Bussum/Amsterdam/Laren…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: institution/rijksmuseum
+    role: custodian
+    acquired: 1917
+    ended: 1919
+    label: on loan from Jo van Gogh-Bonger
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: "Van Gogh Museum, provenance: “…given on loan by Jo van Gogh-Bonger to the Rijksmuseum, Amsterdam, from 1917 to 1919…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: person/vincent-willem-van-gogh
+    acquired: 1925-09-02
+    ended: 1962-07-10
+    method: inheritance
+    direct: true
+    label: Laren
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: "Van Gogh Museum, provenance: “…administered until her death on 2 September 1925 by Jo van Gogh-Bonger … given on loan by Vincent Willem van Gogh, Laren…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: institution/rijksmuseum
+    role: custodian
+    acquired: 1927
+    ended: 1930
+    label: on loan from Vincent Willem van Gogh, Laren
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: "Van Gogh Museum, provenance: “…given on loan by Vincent Willem van Gogh, Laren to the Rijksmuseum, Amsterdam, from 1927 to 1930…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: institution/stedelijk-museum-amsterdam
+    role: custodian
+    acquired: 1931-10-22
+    ended: 1973-06-02
+    label: on loan — from Vincent Willem van Gogh, from 1962 from the Foundation — until the Rijksmuseum Vincent van Gogh opened
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: "Van Gogh Museum, provenance: “…given on loan by Vincent Willem van Gogh to the Stedelijk Museum, Amsterdam, since 22 October 1931; … given on loan until the opening of the museum on 2 June 1973 to the Stedelijk Museum, Amsterdam…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: institution/vincent-van-gogh-foundation
+    acquired: 1962-07-10
+    method: transfer
+    direct: true
+    notes_md: By an agreement of 21 July 1962 the State of the Netherlands took on the preservation and management of the collection and its placing in a museum, the Rijksmuseum Vincent van Gogh (opened 2 June 1973; the Van Gogh Museum since 1 July 1994), where it has been on permanent loan since.
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: "Van Gogh Museum, provenance: “…transferred by Vincent Willem van Gogh on 10 July 1962 to the Vincent van Gogh Foundation, Amsterdam; agreement concluded between the Vincent van Gogh Foundation and the State of the Netherlands … 21 July 1962 … on permanent loan to the Rijksmuseum Vincent van Gogh from 2 June 1973 and at the Van Gogh Museum, Amsterdam, since 1 July 1994…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+numbers:
+  - number: F482
+    source: de-la-faille-1970
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: “F-number F0482 · JH-number JH1608”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - number: JH1608
+    source: hulsker-1996
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+        note: “F-number F0482 · JH-number JH1608”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+identifiers:
+  gnd: 7691272-3
+sources:
+  kind:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas, 72.4 cm x 91.3 cm … Object number s0047V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  names:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “The Bedroom · Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas · 72.4 cm x 91.3 cm, 92.2 cm x 111 cm, 7.2 cm”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  medium:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas, 72.4 cm x 91.3 cm … Object number s0047V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  parent:
+    - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
+      note: "“The first, in the Van Gogh Museum in Amsterdam, was executed in October 1888” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
+      source: musee-d-orsay-collections
+      accessed: 2026-10-22
+  created:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas, 72.4 cm x 91.3 cm … Object number s0047V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  creator:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “The Bedroom · Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas · 72.4 cm x 91.3 cm, 92.2 cm x 111 cm, 7.2 cm”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  on_loan:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas, 72.4 cm x 91.3 cm … Object number s0047V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  materials:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “The Bedroom · Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas · 72.4 cm x 91.3 cm, 92.2 cm x 111 cm, 7.2 cm”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  dimensions:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas, 72.4 cm x 91.3 cm … Object number s0047V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  institution:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas, 72.4 cm x 91.3 cm … Object number s0047V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  inventory_number:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas, 72.4 cm x 91.3 cm … Object number s0047V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  other_dimensions:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0047v1962
+      note: “The Bedroom · Vincent van Gogh (1853 - 1890), Arles, October 1888 · oil on canvas · 72.4 cm x 91.3 cm, 92.2 cm x 111 cm, 7.2 cm”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22

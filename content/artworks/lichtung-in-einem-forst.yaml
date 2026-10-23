@@ -1,0 +1,106 @@
+public_id: 101666
+title_lang: de
+title: Lichtung in einem Forst
+names:
+  - lang: nl
+    role: translation
+    text: Bossage
+  - lang: fr
+    role: translation
+    text: L'entrée d'un bois
+  - lang: de
+    role: translation
+    text: Lichtung in einem Wald
+  - lang: es
+    role: translation
+    text: Claro en un bosque
+  - lang: en
+    role: translation
+    text: Entrance to a Wood
+creator: jacob-van-ruisdael
+created: c. 1646
+kind: oil painting
+medium: oil on wood
+materials: [oil paint, oak wook]
+dimensions: [57.5, 47]
+other_dimensions:
+  - cm: [79.5, 70, 6]
+    part: frame
+institution: akademie-der-bildenden-kunste-wien
+inventory_number: GG-1368
+web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+wikidata_id: Q20857201
+metadata:
+  sources: [Wikidata Q20857201 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b6/Jacob_van_Ruisdael_-_Lichtung_in_einem_Wald.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jacob_van_Ruisdael_-_Lichtung_in_einem_Wald.jpg
+    license: Public domain
+    credit: Jacob van Ruisdael
+provenance:
+  - owner: institution/akademie-der-bildenden-kunste-wien
+    acquired: 1924
+    method: purchase
+    place: vienna
+    notes_md: The Academy names neither the seller nor earlier owners.
+    sources:
+      - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804
+        note: “Ankauf, 1924 / Acquired, 1924”
+        source: akademie-sammlung-online
+        accessed: 2026-10-20
+sources:
+  kind:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22
+  names:
+    - accessed: 2026-10-22
+      wikidata: Q20857201
+  medium:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22
+  created:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22
+  creator:
+    - accessed: 2026-10-20
+      property: P170
+      wikidata: Q20857201
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22
+  materials:
+    - accessed: 2026-10-22
+      property: P186
+      wikidata: Q20857201
+  dimensions:
+    - accessed: 2026-10-20
+      property: P2048
+      wikidata: Q20857201
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22
+  institution:
+    - accessed: 2026-10-20
+      property: P195
+      wikidata: Q20857201
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22
+  title_status:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22
+  inventory_number:
+    - accessed: 2026-10-20
+      property: P217
+      wikidata: Q20857201
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22
+  other_dimensions:
+    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1804/
+      source: akademie-sammlung-online
+      accessed: 2026-10-22

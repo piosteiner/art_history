@@ -1,0 +1,17 @@
+public_id: 102261
+name: Chicago
+kind: settlement
+parent: united-states
+location: [-87.62778, 41.88194]
+wikidata_id: Q1297
+metadata:
+  sources: [Wikidata Q1297 (retrieved 2026-10-22)]
+sources:
+  kind:
+    - accessed: 2026-10-22
+      property: P31
+      wikidata: Q1297
+  location:
+    - accessed: 2026-10-22
+      property: P625
+      wikidata: Q1297

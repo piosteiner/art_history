@@ -1,0 +1,44 @@
+public_id: 102263
+name: Frederic Clay Bartlett
+names:
+  - Frederick Clay Bartlett
+  - Bartlett
+  - lang: ja
+    role: translation
+    text: フレデリック・クレイ・バートレット
+kind: person
+occupations: [painter, art collector]
+birth: 1873-06-01
+death: 1953-06-25
+wikidata_id: Q20859487
+metadata:
+  sources: [Wikidata Q20859487 (retrieved 2026-10-22)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/af/Frederic_Clay_Bartlett.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frederic_Clay_Bartlett.jpg
+    license: Public domain
+    credit: City of Chicago Archives
+identifiers:
+  dome: "1632"
+  gnd: "1079148698"
+  lc: no2012108568
+  rkd: "4762"
+  ulan: "500021314"
+  viaf: "294954567"
+sources:
+  kind:
+    - accessed: 2026-10-22
+      property: P31
+      wikidata: Q20859487
+  birth:
+    - accessed: 2026-10-22
+      property: P569
+      wikidata: Q20859487
+  death:
+    - accessed: 2026-10-22
+      property: P570
+      wikidata: Q20859487
+  occupations:
+    - accessed: 2026-10-22
+      property: P106
+      wikidata: Q20859487

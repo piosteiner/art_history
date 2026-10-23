@@ -5,8 +5,6 @@ names:
   - lang: en
     role: original
     text: The Calling of Saint Matthew
-  - The Calling of St. Matthew
-  - The Calling of St Matthew
   - lang: nl
     role: translation
     text: De roeping van Matteüs
@@ -22,18 +20,6 @@ names:
   - lang: es
     role: translation
     text: La vocación de San Mateo
-  - lang: ja
-    role: translation
-    text: 聖マタイの召命
-  - lang: zh
-    role: translation
-    text: 聖馬太蒙召喚
-  - lang: ko
-    role: translation
-    text: 성 마태오를 부르심
-  - lang: ru
-    role: translation
-    text: Призвание апостола Матфея
 creator: caravaggio
 created: 1599/1600
 materials: [oil paint, canvas]

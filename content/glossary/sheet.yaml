@@ -1,0 +1,18 @@
+public_id: 102301
+name_lang: en
+name: sheet
+names:
+  - lang: de
+    role: translation
+    text: Blatt
+  - lang: de
+    role: alternative
+    text: Blattmass
+  - lang: de
+    role: alternative
+    text: Blattmaß
+  - lang: fr
+    role: translation
+    text: feuille
+category: mounting
+definition: The whole sheet of paper of a print or drawing — larger than the image printed or drawn on it.

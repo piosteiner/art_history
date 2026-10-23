@@ -1,14 +1,23 @@
 public_id: 101422
-title: An Elephant
+title_lang: de
+title: Ein Elefant
 names:
   - lang: fr
     role: translation
     text: Un éléphant
+  - An elephant
 creator: rembrandt
 created: 1637
-materials: [black chalk, paper]
+kind: Zeichnung
+medium: black chalk on paper
+materials: [black chalk, paper, chalk]
+dimensions: [23.3, 35.4]
+other_dimensions:
+  - cm: [49.4, 61.3, 3.4]
+    part: frame
 institution: albertina
 inventory_number: "17558"
+web_url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
 wikidata_id: Q18688687
 metadata:
   sources: [Wikidata Q18688687 (retrieved 2026-10-19)]
@@ -79,26 +88,55 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
+  kind:
+    - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
+      source: albertina-sammlungen-online
+      accessed: 2026-10-22
   names:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-22
       wikidata: Q18688687
+  medium:
+    - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
+      source: albertina-sammlungen-online
+      accessed: 2026-10-22
   created:
     - accessed: 2026-10-19
       property: P571
       wikidata: Q18688687
+    - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
+      source: albertina-sammlungen-online
+      accessed: 2026-10-22
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q18688687
+    - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
+      source: albertina-sammlungen-online
+      accessed: 2026-10-22
   materials:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-22
       property: P186
       wikidata: Q18688687
+    - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
+      source: albertina-sammlungen-online
+      accessed: 2026-10-22
+  dimensions:
+    - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
+      source: albertina-sammlungen-online
+      accessed: 2026-10-22
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q18688687
+  title_status:
+    - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
+      source: albertina-sammlungen-online
+      accessed: 2026-10-22
   inventory_number:
     - accessed: 2026-10-19
       property: P217
       wikidata: Q18688687
+  other_dimensions:
+    - url: https://sammlungenonline.albertina.at/objects/32307/ein-elefant?ctx=9a1c93525e9fcb01efe91e8e7f916766c9d4c926&idx=3
+      source: albertina-sammlungen-online
+      accessed: 2026-10-22

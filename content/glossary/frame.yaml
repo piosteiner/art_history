@@ -1,0 +1,51 @@
+public_id: 102298
+name_lang: en
+name: frame
+names:
+  - lang: en
+    role: alternative
+    text: with frame
+  - lang: en
+    role: alternative
+    text: framed
+  - lang: de
+    role: translation
+    text: Rahmen
+  - lang: de
+    role: alternative
+    text: Rahmenmass
+  - lang: de
+    role: alternative
+    text: Rahmenmaß
+  - lang: de
+    role: alternative
+    text: mit Rahmen
+  - lang: fr
+    role: translation
+    text: cadre
+  - lang: fr
+    role: alternative
+    text: avec cadre
+  - lang: it
+    role: translation
+    text: cornice
+  - lang: nl
+    role: translation
+    text: lijst
+category: mounting
+definition: "The border around a picture: it protects its edges and sets it off from the wall — given here as the size with frame."
+description_md: |-
+  A frame borders a picture: it protects its edges, sets it off from the wall and leads the eye into it. Here the size of a work **with its frame** is given as a further measurement, “frame”, beside the size of the picture itself.
+
+  ## Made with the picture
+  Italian altarpieces of the early sixteenth century were made with architectural frames. The tabernacle frame with baluster columns on Andrea Previtali’s *Virgin and Child with two Saints* (c. 1503) in San Giobbe, Venice, is perhaps the finest Venetian frame of the period still on the picture it was made for.[[source/simon-framing-italian-renaissance|“the fine tabernacle frame with baluster columns on Andrea Previtali's Virgin and Child with two Saints, c. 1503 … in the church of S Giobbe in Venice, which he describes as perhaps the finest Venetian frame of this period remaining on the small devotional picture for which it was made”]]
+
+  ## Reframed
+  Most paintings in museums are no longer in their first frames. None of the sixteenth-century Italian paintings in Nicholas Penny’s catalogue of the National Gallery in London keeps its original frame, and most of the Gallery’s paintings have been reframed at one time or another, sometimes in fine period frames. The Gallery first gave its pictures standard frames to unify its rooms; from the 1860s it chose them by school — black or tortoiseshell for early Netherlandish and German paintings, Renaissance-revival *cassetta* frames for Italian pictures, altarpiece frames for altarpieces. By the end of the century collectors framed old masters in genuine old frames, “contemporary with the painting but not original to it”.[[source/simon-framing-italian-renaissance|“none of the catalogued pictures retain their original frames … Most of the paintings in the National Gallery have been reframed at one time or another, sometimes in fine period frames … whether black or tortoiseshell for early Netherlandish and German paintings, or Renaissance-revival cassetta frames for Italian pictures and altarpiece frames for altarpieces”]]
+
+  Van Gogh’s [[artwork/sunflowers-national-gallery|Sunflowers in London]] hangs in a seventeenth-century Italian frame,[[source/nationalgallery-org-uk|“Frame 17th-century Italian Frame”]] the [[artwork/sunflowers-munich|version in Munich]] in an Italian frame of the second half of the nineteenth century, probably from Bologna.[[source/pinakothek-sammlung-online|„Gemälderahmen · Datierung 19.Jh. 2.H. · Entstehungsort Italien - wohl Bologna“]]
+
+  ## The artist’s frame
+  Late in the nineteenth century painters took the frame into their own hands. In 1888 Seurat showed a painting “in an austere white frame with an inner frame painted in colours that contrasted with the painting” — and soon painted such borders onto the canvas itself.[[source/van-gogh-letters|letter 707, note 5: “in an austere white frame with an inner frame painted in colours that contrasted with the painting. Soon after this he started to paint borders on his canvases, replacing the inner frame.”]] Van Gogh thought of framing his *La Berceuse* with pictures: two sunflower paintings on either side of it, a triptych.[[source/pinakothek-sammlung-online|„Später dachte er daran, zwei Sonnenblumengemälde für das Gemälde ‚La Berceuse‘ als besonders festliche Rahmung zu verwenden, sodass ein Triptychon entstanden wäre.“]]
+
+  Related: [[mount]], [[stretcher]], [[base]].

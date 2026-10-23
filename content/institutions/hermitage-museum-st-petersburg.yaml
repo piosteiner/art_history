@@ -1,0 +1,41 @@
+public_id: 100199
+name_lang: en
+name: Hermitage Museum, St. Petersburg
+names: ["State Hermitage Museum, St. Petersburg", Hermitage Museum]
+kind: Museum
+founded: 1764
+place: saint-petersburg
+location: [30.31361, 59.94056]
+address: Санкт-Петербург, Дворцовая набережная, 34
+website_url: https://hermitagemuseum.org
+wikidata_id: Q132783
+metadata:
+  sources: [Wikidata Q132783 (retrieved 2026-10-09)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Winter_Palace_Panorama_4.jpg/1280px-Winter_Palace_Panorama_4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Winter_Palace_Panorama_4.jpg
+    license: CC BY-SA 4.0
+    credit: Florstein (Telegram:WikiPhoto.Space)
+identifiers:
+  bnf: "118705355"
+  gnd: 2124053-X
+  idref: "026461129"
+  lc: n79100241
+  viaf: "128956287"
+sources:
+  place:
+    - accessed: 2026-10-22
+      property: P131
+      wikidata: Q132783
+  address:
+    - accessed: 2026-10-22
+      property: P6375
+      wikidata: Q132783
+  founded:
+    - accessed: 2026-10-09
+      property: P571
+      wikidata: Q132783
+  location:
+    - accessed: 2026-10-22
+      property: P625
+      wikidata: Q132783

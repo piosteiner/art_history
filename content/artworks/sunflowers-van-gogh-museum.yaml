@@ -1,0 +1,199 @@
+public_id: 102291
+title_lang: en
+title: Sunflowers
+names:
+  - lang: nl
+    role: translation
+    text: Zonnebloemen
+    status: official
+parent: sunflowers-arles
+creator: vincent-van-gogh
+created: 1889-01
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [95, 73]
+other_dimensions:
+  - cm: [123.6, 101.2]
+    part: frame
+institution: van-gogh-museum
+inventory_number: s0031V1962
+web_url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+on_loan: true
+on_loan_since: 1973-06-02
+description_md: One of the three repetitions of the [[artwork/sunflowers-arles|Sunflowers]] that Van Gogh painted in Arles in January 1889 — a loose copy of the [[artwork/sunflowers-national-gallery|version now in London]]. Gauguin had asked for a sunflower picture as a gift, which Vincent was reluctant to give him; instead he made two loose copies, this one among them. Fifteen sunflowers, from bud to wilting, in three shades of yellow.
+wikidata_id: Q18689440
+relationships:
+  - type: created_in
+    to: place/arles
+    period: 1889-01
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: “Arles, January 1889”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - type: copy_after
+    to: artwork/sunflowers-national-gallery
+    label: repetition by Van Gogh himself (January 1889), a loose copy
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: “Van Gogh had already painted a new version during his friend’s stay and Gauguin later asked for one as a gift … He later produced two loose copies, however, one of which is now in the Van Gogh Museum.”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Vincent_van_Gogh_-_Zonnebloemen_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_Zonnebloemen_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Zonnebloemen_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    acquired: 1889-01
+    ended: 1889-04
+    method: creation
+    direct: true
+    place: arles
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: "Van Gogh Museum, provenance: “…Sent by the artist from Arles to his brother Theo van Gogh, Paris, at the end of April 1889…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: person/theo-van-gogh
+    acquired: 1889-04
+    ended: 1891-01-25
+    direct: true
+    place: paris
+    label: sent by the artist from Arles at the end of April 1889
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: "Van Gogh Museum, provenance: “…Sent by the artist from Arles to his brother Theo van Gogh, Paris, at the end of April 1889; after his death on 25 January 1891…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: person/johanna-van-gogh-bonger
+    co_owners: [person/vincent-willem-van-gogh]
+    acquired: 1891-01-25
+    ended: 1925-09-02
+    method: inheritance
+    direct: true
+    label: inherited by his widow and their son; administered by Jo van Gogh-Bonger (Bussum, Amsterdam, Laren) until her death
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: "Van Gogh Museum, provenance: “…inherited by his widow, Jo van Gogh-Bonger, and their son, Vincent Willem van Gogh, Paris; administered until her death on 2 September 1925 by Jo van Gogh-Bonger, Bussum/Amsterdam/Laren…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: institution/rijksmuseum
+    role: custodian
+    acquired: 1917
+    ended: 1919
+    label: on loan from Jo van Gogh-Bonger
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: "Van Gogh Museum, provenance: “…given on loan by Jo van Gogh-Bonger to the Rijksmuseum, Amsterdam, from 1917 to 1919…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: person/vincent-willem-van-gogh
+    acquired: 1925-09-02
+    ended: 1962-07-10
+    method: inheritance
+    direct: true
+    label: Laren
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: "Van Gogh Museum, provenance: “…administered until her death on 2 September 1925 by Jo van Gogh-Bonger … transferred by Vincent Willem van Gogh, Laren, on 10 July 1962…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: institution/vincent-van-gogh-foundation
+    acquired: 1962-07-10
+    method: transfer
+    direct: true
+    notes_md: By an agreement of 21 July 1962 the State of the Netherlands took on the preservation and management of the collection and its placing in a museum, the Rijksmuseum Vincent van Gogh (opened 2 June 1973; the Van Gogh Museum since 1 July 1994), where it has been on permanent loan since.
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: "Van Gogh Museum, provenance: “…transferred by Vincent Willem van Gogh, Laren, on 10 July 1962 to the Vincent van Gogh Foundation, Amsterdam; agreement concluded … 21 July 1962 … on permanent loan to the Rijksmuseum Vincent van Gogh from 2 June 1973 and at the Van Gogh Museum, Amsterdam, since 1 July 1994…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - owner: institution/stedelijk-museum-amsterdam
+    role: custodian
+    acquired: 1962
+    ended: 1973-06-02
+    label: on loan from the Foundation until the Rijksmuseum Vincent van Gogh opened
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: "Van Gogh Museum, provenance: “…given on loan until the opening of the museum on 2 June 1973 to the Stedelijk Museum, Amsterdam…”"
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+numbers:
+  - number: F458
+    source: de-la-faille-1970
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: “F-number F0458 · JH-number JH1667”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+  - number: JH1667
+    source: hulsker-1996
+    sources:
+      - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+        note: “F-number F0458 · JH-number JH1667”
+        source: van-gogh-museum-collection
+        accessed: 2026-10-22
+sources:
+  kind:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  names:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  medium:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  parent:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  created:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  creator:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  on_loan:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  materials:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  dimensions:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  institution:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  inventory_number:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22
+  other_dimensions:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0031V1962
+      note: “Sunflowers · Vincent van Gogh (1853 - 1890), Arles, January 1889 · oil on canvas, 95 cm x 73 cm … Dimensions 95 cm x 73 cm, 123.6 cm x 101.2 cm · Object number s0031V1962”
+      source: van-gogh-museum-collection
+      accessed: 2026-10-22

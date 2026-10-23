@@ -1,0 +1,231 @@
+public_id: 102276
+title_lang: en
+title: The Bedroom
+names:
+  - lang: en
+    role: alternative
+    text: Bedroom in Arles
+parent: bedroom-in-arles
+part_number: "2"
+creator: vincent-van-gogh
+created: 1889-09
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [73.6, 92.3]
+other_dimensions:
+  - cm: [88.9, 108, 8.9]
+    part: frame
+institution: art-institute-of-chicago
+inventory_number: "1926.417"
+web_url: https://www.artic.edu/artworks/28560/the-bedroom
+description_md: The second version of [[artwork/bedroom-in-arles|The Bedroom]], painted at Saint-Rémy-de-Provence in September 1889, nearly a year after the [[artwork/bedroom-in-arles-van-gogh-museum|first]], and of the same size. Van Gogh sent it to his brother Theo in Paris on 18 December 1889. With its bold colours, thick broken brushwork and sharply receding lines the picture may seem nervous, but Van Gogh meant it as a calm and restful image. At the same time he painted a third, smaller version as a gift for his mother and sister, now in the [[artwork/bedroom-in-arles-orsay|Musée d’Orsay]].
+wikidata_id: Q18713076
+relationships:
+  - type: created_in
+    to: place/saint-remy-de-provence
+    period: 1889-09
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "“Place: Saint-Rémy-de-Provence”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+  - type: depicts
+    to: place/arles
+    label: his bedroom in the Yellow House
+  - type: copy_after
+    to: artwork/bedroom-in-arles-van-gogh-museum
+    label: second version, painted by Van Gogh himself (a repetition), the same size
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: “The painting in the Art Institute’s collection is Van Gogh’s second version of the scene, made nearly a year after the first, in September 1889.”
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Vincent_van_Gogh_-_The_Bedroom_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_The_Bedroom_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Bedroom_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: artist/vincent-van-gogh
+    acquired: 1889-09
+    ended: 1889-12-18
+    method: creation
+    direct: true
+    place: saint-remy-de-provence
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "Art Institute of Chicago, provenance: “…The artist; sent to his brother, Theo van Gogh (died 1891), Paris, Dec. 18, 1889…”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+  - owner: person/theo-van-gogh
+    acquired: 1889-12-18
+    ended: 1891-01-25
+    direct: true
+    place: paris
+    label: sent to him by the artist
+    notes_md: Letter 829 from Vincent to Theo, 19 December 1889, says the picture was sent the day before.
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "Art Institute of Chicago, provenance: “…sent to his brother, Theo van Gogh (died 1891), Paris, Dec. 18, 1889 [Letter 829 from Vincent van Gogh to Theo van Gogh, Dec. 19, 1889, notes that The Bedroom was sent the day before]…”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+  - owner: person/johanna-van-gogh-bonger
+    acquired: 1891-01-25
+    method: inheritance
+    direct: true
+    label: by descent; the Netherlands
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "Art Institute of Chicago, provenance: “…by descent to Johanna van Gogh-Bonger (died 1925), the Netherlands, 1891…”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+    records:
+      - kind: exhibition
+        date: "1895"
+        note: no catalogue
+        place: paris
+        document: Paris, Galerie Vollard, 1895
+  - owner: person/jos-hessel
+    role: dealer
+    acquired: 1901 or earlier
+    method: purchase
+    direct: true
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "Art Institute of Chicago, provenance: “…sold to Jos Hessel, Paris, by 1901 [Paris 1901]…”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+    records:
+      - kind: exhibition
+        date: 15–31 March 1901
+        note: as “La Chambre de Vincent à Arles”
+        place: paris
+        number: "19"
+        document: Paris, Galerie Bernheim-Jeune, Vincent van Gogh
+  - owner: person/carl-reininghaus
+    acquired: 1909 or earlier
+    place: vienna
+    notes_md: Still his in 1914 at least (Berlin exhibition).
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "Art Institute of Chicago, provenance: “…Carl Reininghaus, Vienna, by 1909, to at least 1914 [Vienna 1909; Berlin 1914]…”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+    records:
+      - kind: exhibition
+        date: 1909-05/1909-10
+        note: as “Das Schlafzimmer”
+        place: vienna
+        number: "1"
+        document: Vienna, Internationale Kunstschau, room 14
+      - kind: exhibition
+        date: 1914-05/1914-06
+        note: as “Das Schlafzimmer”
+        place: berlin
+        number: "53"
+        document: "Berlin, Paul Cassirer, Zehnte Ausstellung: Vincent van Gogh"
+  - owner: person/paul-rosenberg
+    role: dealer
+    acquired: 1926 or earlier
+    ended: 1926-12
+    label: Paris and New York
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "Art Institute of Chicago, provenance: “…Paul Rosenberg, Paris and New York, by 1926…”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+  - owner: person/frederic-clay-bartlett
+    acquired: 1926-12
+    ended: 1926-12
+    method: purchase
+    direct: true
+    place: chicago
+    notes_md: Receipt and correspondence in the Art Institute’s curatorial object file.
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "Art Institute of Chicago, provenance: “…sold to Frederic Clay Bartlett, Chicago, Dec. 1926 [receipt and correspondence in curatorial object file]…”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+  - owner: institution/art-institute-of-chicago
+    acquired: 1926
+    method: gift
+    direct: true
+    label: Helen Birch Bartlett Memorial Collection
+    sources:
+      - url: https://www.artic.edu/artworks/28560/the-bedroom
+        note: "Art Institute of Chicago, provenance: “…given to the Art Institute of Chicago, 1926…” · credit line: “Helen Birch Bartlett Memorial Collection”"
+        source: art-institute-of-chicago-collection
+        accessed: 2026-10-22
+numbers:
+  - number: F484
+    source: de-la-faille-1970
+    sources:
+      - note: "Wikidata: catalog code F484"
+        accessed: 2026-10-22
+        property: P528
+        wikidata: Q18713076
+  - number: JH1771
+    source: hulsker-1996
+    sources:
+      - note: "Wikidata: catalog code JH1771"
+        accessed: 2026-10-22
+        property: P528
+        wikidata: Q18713076
+sources:
+  kind:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  names:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  medium:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  parent:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  created:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  creator:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  materials:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm (29 × 36 5/8 in.); Framed: 88.9 × 108 × 8.9 cm”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  dimensions:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  institution:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  inventory_number:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm · Reference Number 1926.417 · Helen Birch Bartlett Memorial Collection” — and in its text: “Van Gogh’s second version of the scene … in September 1889”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22
+  other_dimensions:
+    - url: https://www.artic.edu/artworks/28560/the-bedroom
+      note: "“Oil on canvas · 73.6 × 92.3 cm (29 × 36 5/8 in.); Framed: 88.9 × 108 × 8.9 cm”"
+      source: art-institute-of-chicago-collection
+      accessed: 2026-10-22

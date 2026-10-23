@@ -8,6 +8,7 @@ names:
   - lang: ja
     role: romanization
     text: kanagawa oki nami ura
+parent: thirty-six-views-of-mount-fuji
 creator: katsushika-hokusai
 created: 1830/1832
 created_label: c. 1831
@@ -16,6 +17,7 @@ medium: Woodblock print (ukiyo-e), ink and colour on paper
 dimensions: [25.7, 37.9]
 institution: metropolitan-museum-of-art
 inventory_number: JP1847
+web_url: https://www.metmuseum.org/art/collection/search/45434
 description_md: From *Thirty-six Views of Mount Fuji*. Printed in large editions; impressions survive in many museums.
 wikidata_id: Q252485
 metadata:
@@ -45,7 +47,46 @@ provenance:
     label: Bequest of Mrs. H. O. Havemeyer
     sources: ["The Metropolitan Museum of Art, JP1847, credit line"]
 sources:
+  kind:
+    - url: https://www.metmuseum.org/art/collection/search/45434
+      note: “Katsushika Hokusai · Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave … ca. 1830–32 · Woodblock print; ink and color on paper · 10 1/8 x 14 15/16 in. (25.7 x 37.9 cm) · H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 · JP1847”
+      source: metropolitan-museum-collection
+      accessed: 2026-10-22
+  medium:
+    - url: https://www.metmuseum.org/art/collection/search/45434
+      note: “Katsushika Hokusai · Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave … ca. 1830–32 · Woodblock print; ink and color on paper · 10 1/8 x 14 15/16 in. (25.7 x 37.9 cm) · H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 · JP1847”
+      source: metropolitan-museum-collection
+      accessed: 2026-10-22
+  parent:
+    - url: https://www.metmuseum.org/art/collection/search/45434
+      note: “… from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)”
+      source: metropolitan-museum-collection
+      accessed: 2026-10-22
+  created:
+    - url: https://www.metmuseum.org/art/collection/search/45434
+      note: “Katsushika Hokusai · Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave … ca. 1830–32 · Woodblock print; ink and color on paper · 10 1/8 x 14 15/16 in. (25.7 x 37.9 cm) · H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 · JP1847”
+      source: metropolitan-museum-collection
+      accessed: 2026-10-22
+  creator:
+    - url: https://www.metmuseum.org/art/collection/search/45434
+      note: “Katsushika Hokusai · Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave … ca. 1830–32 · Woodblock print; ink and color on paper · 10 1/8 x 14 15/16 in. (25.7 x 37.9 cm) · H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 · JP1847”
+      source: metropolitan-museum-collection
+      accessed: 2026-10-22
+  dimensions:
+    - url: https://www.metmuseum.org/art/collection/search/45434
+      note: “Katsushika Hokusai · Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave … ca. 1830–32 · Woodblock print; ink and color on paper · 10 1/8 x 14 15/16 in. (25.7 x 37.9 cm) · H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 · JP1847”
+      source: metropolitan-museum-collection
+      accessed: 2026-10-22
+  institution:
+    - url: https://www.metmuseum.org/art/collection/search/45434
+      note: “Katsushika Hokusai · Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave … ca. 1830–32 · Woodblock print; ink and color on paper · 10 1/8 x 14 15/16 in. (25.7 x 37.9 cm) · H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 · JP1847”
+      source: metropolitan-museum-collection
+      accessed: 2026-10-22
   inventory_number:
     - accessed: 2026-10-01
       property: P217
       wikidata: Q252485
+    - url: https://www.metmuseum.org/art/collection/search/45434
+      note: “Katsushika Hokusai · Under the Wave off Kanagawa (Kanagawa oki nami ura), also known as The Great Wave … ca. 1830–32 · Woodblock print; ink and color on paper · 10 1/8 x 14 15/16 in. (25.7 x 37.9 cm) · H. O. Havemeyer Collection, Bequest of Mrs. H. O. Havemeyer, 1929 · JP1847”
+      source: metropolitan-museum-collection
+      accessed: 2026-10-22

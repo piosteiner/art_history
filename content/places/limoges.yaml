@@ -1,0 +1,16 @@
+public_id: 102294
+name: Limoges
+kind: settlement
+location: [1.26167, 45.83444]
+wikidata_id: Q45656
+metadata:
+  sources: [Wikidata Q45656 (retrieved 2026-10-22)]
+sources:
+  kind:
+    - accessed: 2026-10-22
+      property: P31
+      wikidata: Q45656
+  location:
+    - accessed: 2026-10-22
+      property: P625
+      wikidata: Q45656

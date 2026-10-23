@@ -1,0 +1,12 @@
+public_id: 102300
+name_lang: en
+name: stretcher
+names:
+  - lang: de
+    role: translation
+    text: Keilrahmen
+  - lang: fr
+    role: translation
+    text: châssis
+category: mounting
+definition: The wooden frame a canvas is stretched on, behind the picture — with keys to tighten it (unlike a strainer).

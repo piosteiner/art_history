@@ -1,16 +1,34 @@
 public_id: 101396
 name: Albertina
+names: [The Albertina, Albertina Museum]
 kind: museum
 founded: 1776
 place: vienna
 location: [16.3681, 48.2046]
 address: Albertinaplatz 1, 1010 Wien
+description_md: "[Sammlung online](https://sammlungenonline.albertina.at/)"
 website_url: https://www.albertina.at
 wikidata_id: Q371908
 metadata:
   sources: [Wikidata Q371908 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Wien_-_Albertina_%28b%29.JPG/1280px-Wien_-_Albertina_%28b%29.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Wien_-_Albertina_(b).JPG
+    license: CC BY-SA 4.0
+    credit: C.Stadler/Bwag
+identifiers:
+  bnf: "118763728"
+  gnd: 2012512-4
+  idref: "111715733"
+  lc: n84168024
+  ulan: "500224093"
+  viaf: "136821676"
 sources:
   founded:
     - accessed: 2026-10-19
       property: P571
+      wikidata: Q371908
+  location:
+    - accessed: 2026-10-22
+      property: P625
       wikidata: Q371908

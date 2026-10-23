@@ -1,9 +1,50 @@
-public_id: 101856
-title: Bedroom in Arles
+public_id: 102265
+title_lang: en
+title: The Bedroom
+names:
+  - lang: en
+    role: alternative
+    text: Bedroom in Arles
+  - lang: fr
+    role: translation
+    text: La Chambre à coucher
+  - lang: nl
+    role: translation
+    text: De slaapkamer
+  - lang: de
+    role: translation
+    text: Vincents Schlafzimmer in Arles
+parts_count: 3
+creator: vincent-van-gogh
+created: 1888-10/1889-09
+kind: versions
+description_md: |-
+  Van Gogh painted his bedroom in the Yellow House in Arles three times. The first version, now in the [[artwork/bedroom-in-arles-van-gogh-museum|Van Gogh Museum]] in Amsterdam, he made in October 1888, a month after moving into the house; it was damaged by water while he was in hospital in Arles. Almost a year later, in September 1889 at Saint-Rémy-de-Provence, he painted two repetitions of it: one the same size, now in the [[artwork/bedroom-in-arles-chicago|Art Institute of Chicago]], and a smaller one for his mother and sister in Holland, now in the [[artwork/bedroom-in-arles-orsay|Musée d’Orsay]].
+
+  He described the colours to his brother Theo — pale lilac walls, a faded red floor, chrome-yellow bed and chairs, a blood-red blanket — and wrote that he wanted them to express “absolute repose”. The flat colours without shadows and the simple furniture recall the Japanese prints he admired.
 wikidata_id: Q724377
-metadata:
-  sources: [Wikidata Q724377 (retrieved 2026-10-20)]
+relationships:
+  - type: depicts
+    to: place/arles
+    label: his bedroom in the Yellow House
 sources:
-  title_status:
-    - accessed: 2026-10-20
-      wikidata: Q724377
+  names:
+    - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
+      note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
+      source: musee-d-orsay-collections
+      accessed: 2026-10-22
+  parent:
+    - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
+      note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
+      source: musee-d-orsay-collections
+      accessed: 2026-10-22
+  created:
+    - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
+      note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
+      source: musee-d-orsay-collections
+      accessed: 2026-10-22
+  creator:
+    - url: https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746
+      note: "“Van Gogh produced three, almost identical paintings on the theme of his bedroom.” — read in the Internet Archive’s copy of 2026-05-04: https://web.archive.org/web/20260504104434/https://www.musee-orsay.fr/en/artworks/la-chambre-de-van-gogh-arles-746"
+      source: musee-d-orsay-collections
+      accessed: 2026-10-22

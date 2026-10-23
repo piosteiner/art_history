@@ -6,40 +6,31 @@ names:
     role: original
     text: Adoration of the Trinity
   - All Saints
-  - lang: nl
-    role: translation
-    text: Aanbidding van de Drie-eenheid
   - lang: fr
     role: translation
     text: L'Adoration de la Sainte Trinité
-  - lang: de
-    role: original
-    text: Allerheiligenbild („Landaueraltar")
   - lang: it
     role: translation
     text: Adorazione della Santissima Trinità
   - lang: es
     role: translation
     text: Adoración de la Trinidad
-  - lang: ja
-    role: translation
-    text: 聖三位一体の礼拝 (デューラー)
-  - lang: zh
-    role: translation
-    text: 兰道尔祭坛画
-  - lang: ru
-    role: translation
-    text: Поклонение Святой Троице
 creator: albrecht-durer
 created: 1511
+kind: painting
 materials: [lime panel, oil paint]
 dimensions: [135, 123.4]
 institution: kunsthistorisches-museum-wien
-inventory_number: GG_838
+inventory_number: Gemäldergalerie, 838
+web_url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
 wikidata_id: Q688870
 metadata:
   sources: [Wikidata Q688870 (retrieved 2026-10-19)]
 images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Albrecht_D%C3%BCrer%2C_Kunsthistorisches_Museum_Wien%2C_Gem%C3%A4ldegalerie_-_Allerheiligenbild_%28%22Landauer_Altar%22%29_-_GG_838_-_Kunsthistorisches_Museum.jpg/1280px-Albrecht_D%C3%BCrer%2C_Kunsthistorisches_Museum_Wien%2C_Gem%C3%A4ldegalerie_-_Allerheiligenbild_%28%22Landauer_Altar%22%29_-_GG_838_-_Kunsthistorisches_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer,_Kunsthistorisches_Museum_Wien,_Gem%C3%A4ldegalerie_-_Allerheiligenbild_(%22Landauer_Altar%22)_-_GG_838_-_Kunsthistorisches_Museum.jpg
+    license: Public domain
+    credit: Albrecht Dürer
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_%28Landauer_Altar%29_-_Google_Art_Project.jpg/1280px-Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_%28Landauer_Altar%29_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_(Landauer_Altar)_-_Google_Art_Project.jpg
     license: Public domain
@@ -94,16 +85,22 @@ provenance:
         accessed: 2026-10-19
 sources:
   names:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-22
       wikidata: Q688870
   created:
     - accessed: 2026-10-19
       property: P571
       wikidata: Q688870
+    - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+      source: khm-125-jahre
+      accessed: 2026-10-22
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q688870
+    - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+      source: khm-125-jahre
+      accessed: 2026-10-22
   materials:
     - accessed: 2026-10-19
       property: P186
@@ -112,11 +109,18 @@ sources:
     - accessed: 2026-10-19
       property: P2048
       wikidata: Q688870
+    - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+      source: khm-125-jahre
+      accessed: 2026-10-22
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q688870
+  title_status:
+    - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+      source: khm-125-jahre
+      accessed: 2026-10-22
   inventory_number:
-    - accessed: 2026-10-19
-      property: P217
-      wikidata: Q688870
+    - url: https://www.khm.at/kunstwerke/allerheiligenbild-landauer-altar-615
+      source: khm-125-jahre
+      accessed: 2026-10-22

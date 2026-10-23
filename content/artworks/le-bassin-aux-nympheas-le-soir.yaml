@@ -5,9 +5,11 @@ names:
   - lang: de
     role: translation
     text: Der Seerosenteich am Abend
+    status: official
   - lang: en
     role: translation
     text: The Water Lily Pond in the Evening
+    status: official
 creator: claude-monet
 created: 1914/1922
 kind: oil painting
@@ -23,6 +25,14 @@ images:
   - url: https://upload.wikimedia.org/wikipedia/commons/8/87/Claude_Monet_-_Le_Bassin_aux_nymph%C3%A9as%2C_le_soir_-_1952-0064_-_Kunsthaus_Z%C3%BCrich.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Le_Bassin_aux_nymph%C3%A9as,_le_soir_-_1952-0064_-_Kunsthaus_Z%C3%BCrich.jpg
     license: Public domain
+    credit: Claude Monet
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/20220811_Zurich_051.jpg/1280px-20220811_Zurich_051.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:20220811_Zurich_051.jpg
+    license: CC BY-SA 4.0
+    credit: Jean Housen
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Kunsthaus_Z%C3%BCrich%2C_interno_29_monet.JPG/1280px-Kunsthaus_Z%C3%BCrich%2C_interno_29_monet.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Kunsthaus_Z%C3%BCrich,_interno_29_monet.JPG
+    license: CC BY-SA 3.0
     credit: Claude Monet
 provenance:
   - owner: person/michel-monet
@@ -51,27 +61,57 @@ provenance:
       - url: https://collection.kunsthaus.ch/de/collection/item/2599/
         source: kunsthaus-zurich-sammlung-online
 sources:
+  kind:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22
   medium:
     - accessed: 2026-10-06
       property: P186
       wikidata: Q124250959
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22
+  created:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22
   creator:
     - accessed: 2026-10-06
       property: P170
       wikidata: Q124250959
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22
   materials:
     - accessed: 2026-10-06
       property: P186
       wikidata: Q124250959
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22
   dimensions:
     - accessed: 2026-10-06
       property: P2048
       wikidata: Q124250959
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22
   institution:
     - accessed: 2026-10-06
       property: P195
       wikidata: Q124250959
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22
+  title_status:
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22
   inventory_number:
     - accessed: 2026-10-06
       property: P217
       wikidata: Q124250959
+    - url: https://collection.kunsthaus.ch/de/collection/item/2599/
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-22

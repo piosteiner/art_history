@@ -1,0 +1,18 @@
+public_id: 102303
+name_lang: en
+name: base
+names:
+  - lang: en
+    role: alternative
+    text: plinth
+  - lang: en
+    role: alternative
+    text: pedestal
+  - lang: de
+    role: translation
+    text: Sockel
+  - lang: fr
+    role: translation
+    text: socle
+category: mounting
+definition: What a sculpture stands on — a plinth or pedestal, made with it or later.

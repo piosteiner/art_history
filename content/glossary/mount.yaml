@@ -1,0 +1,15 @@
+public_id: 102299
+name_lang: en
+name: mount
+names:
+  - lang: en
+    role: alternative
+    text: mat
+  - lang: fr
+    role: translation
+    text: passe-partout
+  - lang: de
+    role: translation
+    text: Passepartout
+category: mounting
+definition: A card window around a drawing, print or watercolour, between it and the frame (a passe-partout).
