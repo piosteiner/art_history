@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-23
 
+### Site: the documentation's headings h1–h6 in one scale
+- **What:** `frontend/src/style.css`: h2 and h3 serif, each smaller than the one above; h4 bold, h5 small capitals,
+  h6 italic in the text's face; deeper levels indented in the chapter contents.
+- **Why:** owner: h3–h6 had the browser's defaults — a bold sans-serif h3 looked like a higher level than the h2.
+- **Revert:** revert the commit.
+
 ### Pages: links to headings, [[#Heading]], across chapters
 - **What:** `src/pages.js`: inline rule `heading_link` for `[[#Heading]]`, `[[#Heading|own words]]`, `[[#Above#Heading]]`
   (Obsidian's forms); `pageHeadings()` indexes the whole page's headings (ids as the chapters render them, chapter,
