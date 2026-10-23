@@ -197,3 +197,34 @@ test('[[#Heading]]: suggested from every chapter while writing one, linked to th
   expect(two.html).toContain('<a href="/pages/test-doc/drei#backend-2">Backend</a>');
   expect(two.html).toMatch(/<span class="page-link-missing"[^>]*>Gibt es nicht<\/span>/);
 });
+
+test('unpublished changes: a draft shown as a word diff in the editor, marked in the outline and the list, reviewed and discarded on one page', async ({ userA }) => {
+  sql("INSERT INTO pages (slug, title, body_md, published) VALUES ('test-doc', 'Test Doc', '# Eins\nDer alte Satz.\n\n# Zwei\nB.\n', true)");
+  await userA.goto('/pages/test-doc/edit?chapter=1');
+  const panel = userA.locator('[data-page-changes]');
+  await expect(panel).toBeHidden();                                                   // nothing unpublished yet
+  const cm = userA.locator('.md-editor .cm-content');
+  await cm.click();
+  await userA.keyboard.press('Control+End');
+  await userA.keyboard.type('Ein neuer Satz.');
+  await expect(panel).toBeVisible({ timeout: 8000 });                                 // after the autosave
+  await expect(panel.locator('ins')).toContainText('Ein neuer Satz.');
+
+  // opened again: the panel, the chapter marked; the list of pages counts it
+  await userA.goto('/pages/test-doc/edit?chapter=1');
+  await expect(userA.locator('[data-page-changes] ins')).toContainText('Ein neuer Satz.');
+  await expect(userA.locator('.page-outline li', { hasText: 'Eins' }).locator('.page-pending')).toBeVisible();
+  await expect(userA.locator('.page-outline li', { hasText: 'Zwei' }).locator('.page-pending')).toHaveCount(0);
+  await userA.goto('/pages');
+  await expect(userA.locator('tr', { hasText: 'Test Doc' })).toContainText('1 unpublished');
+
+  // the review page: every draft as a diff; discarded there, nothing left
+  await userA.locator('tr', { hasText: 'Test Doc' }).locator('a.page-pending').click();
+  await expect(userA.locator('main h1')).toHaveText('Unpublished changes');
+  await expect(userA.locator('.page-change h2')).toHaveText(['Chapter 1: Eins']);
+  await expect(userA.locator('.page-change ins')).toContainText('Ein neuer Satz.');
+  userA.once('dialog', (d) => d.accept());
+  await userA.locator('.page-change button:has-text("Discard draft")').click();
+  await expect(userA.locator('main')).toContainText('No unpublished changes');
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).not.toContain('Ein neuer Satz');   // the site's text untouched
+});

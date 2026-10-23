@@ -129,7 +129,17 @@ function initAutosave() {
     if (beacon && navigator.sendBeacon) { navigator.sendBeacon(ta.dataset.autosave, new Blob([body], { type: 'application/json' })); return; }
     say('Saving draft…');
     sending = fetch(ta.dataset.autosave, { method: 'POST', body, headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', keepalive: true })
-      .then((r) => { if (!r.ok) throw new Error(String(r.status)); say(`Draft saved ${time()} — not on the site until you save.`); })
+      .then(async (r) => {
+        if (!r.ok) throw new Error(String(r.status));
+        say(`Draft saved ${time()} — not on the site until you save.`);
+        // the panel of unpublished changes: the draft against the text on the site (word diff from the server)
+        const out = await r.json().catch(() => null);
+        const box = document.querySelector('[data-page-changes]');
+        if (out && box) {
+          box.hidden = !out.changed;
+          box.querySelector('[data-page-changes-body]').innerHTML = out.changes_html;
+        }
+      })
       .catch(() => { dirty = true; say('Draft not saved (offline?) — retrying when you type; keep this tab open.'); })
       .finally(() => { sending = null; });
     await sending;

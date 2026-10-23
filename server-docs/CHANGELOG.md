@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-23
 
+### Pages: unpublished changes highlighted
+- **What:** `src/admin/routes/pages.js`: `changesOf()` — this account's drafts (117) that differ from the text on the
+  site, part by part. The editor shows them under the text as a word diff (`textdiff.wordDiff`, removed struck red,
+  added green), updated with every autosave (the draft endpoint returns the diff; `editor/uploads.js`); the outline
+  marks chapters with "● unpublished"; the pages list counts them; `GET /pages/<slug>/changes` reviews all of them on
+  one page, each with "open to save" and "Discard draft". E2E `pages.spec.js`.
+- **Why:** owner: to audit unpublished changes before they go on the site.
+- **Revert:** revert the commit.
+
 ### Site: the documentation's headings h1–h6 in one scale
 - **What:** `frontend/src/style.css`: h2 and h3 serif, each smaller than the one above; h4 bold, h5 small capitals,
   h6 italic in the text's face; deeper levels indented in the chapter contents.
