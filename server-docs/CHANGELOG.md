@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-23
 
+### Pages: "Publish changes" instead of Save; page settings apart; publish from the review page
+- **What:** `src/admin/routes/pages.js`: the text is a draft as it is typed (117); the button is "Publish changes"
+  (greyed while nothing differs from the site) with "Discard changes" beside it. Title, language and "Visible on the
+  site" (was the "Published" tick beside Save) in a "Page settings" box, `POST /pages/<slug>/settings`. A draft's base
+  is now the sha of its own part as it was on the site (was the whole text): publishing another chapter no longer
+  makes the other drafts stale. Review page: "Publish" per part and "Publish all" (`POST /pages/<slug>/publish`, later
+  chapters first; a part changed on the site since its draft began stays a draft, said so). E2E `pages.spec.js`.
+- **Why:** owner: a tick for publishing and a button for saving was the wrong way round — changes save themselves,
+  publishing is the deliberate act.
+- **Revert:** revert the commit (drafts written meanwhile carry a part sha as base: the old code reads them as stale).
+
 ### Pages: unpublished changes highlighted
 - **What:** `src/admin/routes/pages.js`: `changesOf()` — this account's drafts (117) that differ from the text on the
   site, part by part. The editor shows them under the text as a word diff (`textdiff.wordDiff`, removed struck red,

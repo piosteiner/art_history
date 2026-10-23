@@ -50,9 +50,9 @@ router.get('/pages', async (req, res) => {
   const pending = new Map(await Promise.all(rows.map(async (p) => [p.id, (await changesOf(p, req.user.id)).length])));
   send(req, res, { title: 'Pages', body: html`<h1>Pages</h1>
     <p class="muted">Text pages of the site, written here in Markdown — Obsidian's forms included (![[image]], ==highlight==, task lists).</p>
-    <div class="table-wrap"><table><thead><tr><th>Title</th><th>Slug</th><th>Status</th><th>Length</th><th>Images</th><th></th></tr></thead><tbody>
+    <div class="table-wrap"><table><thead><tr><th>Title</th><th>Slug</th><th>On the site</th><th>Length</th><th>Images</th><th></th></tr></thead><tbody>
       ${rows.map((p) => html`<tr><td><a href="/pages/${p.slug}/edit">${p.title}</a></td><td class="muted">${p.slug}</td>
-        <td>${p.published ? 'published' : html`<span class="muted">draft</span>`}${pending.get(p.id) ? html` · <a class="page-pending" href="/pages/${p.slug}/changes">● ${String(pending.get(p.id))} unpublished</a>` : ''}</td><td class="muted">${Number(p.chars).toLocaleString('en')} characters</td>
+        <td>${p.published ? 'visible' : html`<span class="muted">hidden</span>`}${pending.get(p.id) ? html` · <a class="page-pending" href="/pages/${p.slug}/changes">● ${String(pending.get(p.id))} unpublished</a>` : ''}</td><td class="muted">${Number(p.chars).toLocaleString('en')} characters</td>
         <td class="muted">${String(p.images)}</td><td>${p.published ? html`<a href="${siteUrl(p)}" target="_blank" rel="noopener">view ↗</a>` : ''}</td></tr>`)}
     </tbody></table></div>
     <form method="post" action="/pages" class="form inline-form"><div class="field-pair">
@@ -90,6 +90,9 @@ function partOf(text, asked) {
   return c ? { key: String(n), label: `chapter ${n}: ${c.title}`, md: c.md, chapter: c.id } : null;
 }
 
+// A draft remembers the text of its part as it was on the site when the draft began (base_sha = sha of that part's
+// text): a change elsewhere on the page — another chapter published — leaves it current; only a change of its own
+// part on the site makes it stale.
 // This account's unpublished changes (drafts, 117) of a page, part by part, compared with the text on the site: a
 // draft identical to its part is none. → [{key, label, saved_at, base_changed, live, draft}]
 async function changesOf(p, userId) {
@@ -98,7 +101,7 @@ async function changesOf(p, userId) {
   for (const d of rows) {
     const part = partOf(p.body_md, d.part);
     if (!part || d.body_md === part.md) continue;
-    out.push({ key: part.key, label: part.label, saved_at: d.saved_at, base_changed: d.base_sha !== sha(p.body_md), live: part.md, draft: d.body_md });
+    out.push({ key: part.key, label: part.label, saved_at: d.saved_at, base_changed: d.base_sha !== sha(part.md), live: part.md, draft: d.body_md });
   }
   const order = (k) => (k === 'all' ? -1 : Number(k));
   return out.sort((a, b) => order(a.key) - order(b.key));
@@ -124,15 +127,15 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
   const on = (k) => (part && part.key === k ? ' aria-current="true" class="on"' : '');
   // a part with unpublished changes of this account: marked in the outline
   const pending = new Set(changes.map((c) => c.key));
-  const mark = (k) => (pending.has(k) ? html` <span class="page-pending" title="Unpublished changes — not on the site until you save">● unpublished</span>` : '');
+  const mark = (k) => (pending.has(k) ? html` <span class="page-pending" title="Unpublished changes — not on the site until you publish them">● unpublished</span>` : '');
   return { title: `Edit ${p.title}`, flash, body: html`<p class="muted"><a href="/pages">← Pages</a></p>
     <h1>${p.title}</h1>
-    <p class="small">${p.published ? html`<a href="${siteUrl(p)}" target="_blank" rel="noopener">View on the site ↗</a>` : html`<span class="muted">Not published yet — the site shows it once “Published” is ticked.</span>`}
+    <p class="small">${p.published ? html`<a href="${siteUrl(p)}" target="_blank" rel="noopener">View on the site ↗</a>` : html`<span class="muted">Hidden — the site shows it once “Visible on the site” is ticked in the page settings.</span>`}
       <span class="muted">· <a href="/pages/${p.slug}/history">history</a> · ${words(p.body_md).toLocaleString('en')} words · ${chars(p.body_md).toLocaleString('en')} characters with spaces</span></p>
     <div class="page-layout">
     <nav class="page-outline" aria-label="Chapters">
       <h2>Chapters</h2>
-      <p class="muted small">The text's top-level headings. Edit one at a time — it is put back in its place when you save.</p>
+      <p class="muted small">The text's top-level headings. Edit one at a time — it is put back in its place when you publish.</p>
       <ol>
         ${intro.md.trim() ? html`<li><a href="/pages/${p.slug}/edit?chapter=0"${on('0')}>Introduction</a> <span class="muted small">${String(words(intro.md))}</span>${mark('0')}</li>` : ''}
         ${chapters.map((c) => html`<li><a href="/pages/${p.slug}/edit?chapter=${String(c.index)}"${on(String(c.index))}>${c.title}</a> <span class="muted small">${String(words(c.md))}</span>${mark(String(c.index))}</li>`)}
@@ -147,29 +150,34 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
       <p class="muted small" data-md-sync>${sync ? html`Last ${sync.kind} ${when(sync.at)}${changedSince ? html` — <b>changed in the CMS since</b>` : ' — no changes in the CMS since'}.` : 'Not downloaded yet.'}</p>
     </nav>
     <div class="page-main">
-    <form method="post" action="/pages/${p.slug}" class="form page-form">
-      <div class="field-pair"><div class="field"><label for="pg-title">Title</label><input id="pg-title" name="title" value="${v.title}" required></div>
-        <div class="field"><label for="pg-lang">Language</label><input id="pg-lang" name="lang" value="${v.lang}" required pattern="[a-z]{2}(-[A-Z]{2})?">
-          <div class="hint">de-CH: Swiss German spelling (ss, no ß) — the site tells browsers and screen readers.</div></div></div>
-      ${draft ? html`<div class="flash warning page-draft">Restored your unsaved draft of ${part.label} from ${when(draft.saved_at)} — it is not on the site until you save.
-        ${draft.base_sha !== sha(p.body_md) ? html` <b>The text has changed since the draft was written</b>: Save will show you before anything is overwritten.` : ''}
-        <button type="submit" form="pg-discard" class="link-button">Discard draft</button></div>` : ''}
-      ${part ? html`<input type="hidden" name="chapter" value="${part.key}"><input type="hidden" name="base" value="${draft ? draft.base_sha : sha(p.body_md)}">
+    ${part ? html`<form method="post" action="/pages/${p.slug}" class="form page-form">
+      ${draft ? html`<div class="flash warning page-draft">Your unpublished changes of ${part.label} from ${when(draft.saved_at)} — they are not on the site until you publish them.
+        ${draft.base_sha !== sha(part.md) ? html` <b>This part has changed on the site since</b>: Publish will show you before anything is overwritten.` : ''}</div>` : ''}
+      <input type="hidden" name="chapter" value="${part.key}"><input type="hidden" name="base" value="${draft ? draft.base_sha : sha(part.md)}">
       <div class="field"><label for="pg-body">Text — ${part.label}</label>
         <textarea id="pg-body" name="body_md" class="md" rows="30" data-upload="/pages/${p.slug}/images" data-preview="/pages/${p.slug}/preview"
           data-headings="${JSON.stringify(otherHeadings)}" data-autosave="/pages/${p.slug}/draft">${values && values.body_md !== undefined ? values.body_md : draft ? draft.body_md : part.md}</textarea>
-        <p class="muted small page-autosave" data-autosave-status aria-live="polite">Drafts are saved as you type; Save puts them on the site.</p>
+        <p class="muted small page-autosave" data-autosave-status aria-live="polite">Your changes are saved as a draft as you type; “Publish changes” puts them on the site.</p>
         <details class="page-changes" data-page-changes open${draft ? '' : ' hidden'}>
           <summary>Unpublished changes in ${part.label} <span class="muted small">— compared with the text on the site; updated as the draft is saved</span></summary>
           <div data-page-changes-body>${draft ? changesBox(part.md, draft.body_md) : ''}</div></details>
         <div class="hint">Markdown, as in Obsidian: <code>![[name.webp]]</code> embeds an image of this page (<code>![[name.webp|400]]</code> 400 px wide,
           <code>![[name.webp|caption]]</code> with a caption), <code>[[#Heading]]</code> a link to a heading of this page, in any chapter (type <code>[[#</code> for the list), <code>==highlight==</code>, <code>- [x]</code> tasks, tables, <code>&lt;span style="color:…"&gt;</code>.
-          Drop or paste an image into the text to upload and embed it. A new <code>#</code> heading starts a new chapter.</div></div>`
-      : html`<p class="muted">Choose a chapter on the left to edit it${chapters.length ? '' : ', or the whole text'}.</p>`}
-      <div class="field"><label class="choice"><input type="checkbox" name="published" value="1"${v.published ? ' checked' : ''}> Published</label></div>
-      <div class="actions"><button>Save</button></div>
+          Drop or paste an image into the text to upload and embed it. A new <code>#</code> heading starts a new chapter.</div></div>
+      <div class="actions"><button data-publish${draft || values ? '' : ' disabled'}>Publish changes</button>
+        <button type="submit" form="pg-discard" class="secondary" data-discard${draft ? '' : ' hidden'}>Discard changes</button></div>
     </form>
-    ${part ? html`<form id="pg-discard" method="post" action="/pages/${p.slug}/draft/discard"><input type="hidden" name="chapter" value="${part.key}"></form>` : ''}
+    <form id="pg-discard" method="post" action="/pages/${p.slug}/draft/discard" data-confirm="Discard your changes of ${part.label}? The text on the site stays as it is."><input type="hidden" name="chapter" value="${part.key}"></form>`
+      : html`<p class="muted">Choose a chapter on the left to edit it${chapters.length ? '' : ', or the whole text'}.</p>`}
+    <details class="page-settings"${flash && flash.settings ? ' open' : ''}><summary>Page settings</summary>
+      <form method="post" action="/pages/${p.slug}/settings" class="form">
+        <div class="field-pair"><div class="field"><label for="pg-title">Title</label><input id="pg-title" name="title" value="${v.title}" required></div>
+          <div class="field"><label for="pg-lang">Language</label><input id="pg-lang" name="lang" value="${v.lang}" required pattern="[a-z]{2}(-[A-Z]{2})?">
+            <div class="hint">de-CH: Swiss German spelling (ss, no ß) — the site tells browsers and screen readers.</div></div></div>
+        <div class="field"><label class="choice"><input type="checkbox" name="published" value="1"${v.published ? ' checked' : ''}> Visible on the site</label>
+          <div class="hint">The whole page: hidden, the site doesn't show it at all. Changes to the text go on the site with “Publish changes”.</div></div>
+        <div class="actions"><button class="secondary">Save settings</button></div>
+      </form></details>
     <section class="page-images">
       <h2>Images <span class="muted small">${String(images.length)}</span></h2>
       <p class="muted small">Upload the attachments of the note under their own names (Obsidian: the files in its attachments folder) and every
@@ -206,16 +214,27 @@ router.get('/pages/:slug/changes', async (req, res) => {
   const p = await bySlug(req.params.slug);
   if (!p) return notFoundPage(req, res);
   const changes = await changesOf(p, req.user.id);
-  send(req, res, { title: `Unpublished changes · ${p.title}`, body: html`<p class="muted"><a href="/pages/${p.slug}/edit">← ${p.title}</a></p>
+  // after publishing from here: how many went on the site, how many stayed (their part changed on the site meanwhile)
+  const published = Number(req.query.published) || 0;
+  const kept = Number(req.query.kept) || 0;
+  const flash = req.query.published === undefined ? null : published
+    ? { kind: kept ? 'warning' : 'ok', text: `Published ${published} ${published === 1 ? 'part' : 'parts'} — on the site now.${kept ? ` ${kept} kept as draft: their part changed on the site since — open them to see what would be overwritten.` : ''}` }
+    : { kind: 'warning', text: 'Nothing published: the part changed on the site since the draft began — open it to see what would be overwritten.' };
+  const ready = changes.filter((c) => !c.base_changed);
+  send(req, res, { title: `Unpublished changes · ${p.title}`, flash, body: html`<p class="muted"><a href="/pages/${p.slug}/edit">← ${p.title}</a></p>
     <h1>Unpublished changes</h1>
-    <p class="muted">Your drafts of ${p.title}, compared with the text on the site: <del class="legend-del">removed</del> · <ins class="legend-ins">added</ins>. Nothing here is on the site until you save it in its chapter.</p>
+    <p class="muted">Your changes of ${p.title}, compared with the text on the site: <del class="legend-del">removed</del> · <ins class="legend-ins">added</ins>. Nothing here is on the site until you publish it.</p>
+    ${ready.length > 1 ? html`<form method="post" action="/pages/${p.slug}/publish" class="inline" data-confirm="Publish all ${String(ready.length)} parts? They go on the site now.">
+      <input type="hidden" name="chapter" value="all-drafts"><button>Publish all (${String(ready.length)})</button></form>` : ''}
     ${changes.length ? changes.map((c) => html`<section class="page-change">
       <h2>${c.label.replace(/^./, (x) => x.toUpperCase())}</h2>
-      <p class="muted small">Draft saved ${when(c.saved_at)}${c.base_changed ? html` · <b>the text on the site has changed since</b> — Save will show you before anything is overwritten` : ''}
-        · <a href="/pages/${p.slug}/edit?chapter=${c.key}">open to save or edit</a></p>
+      <p class="muted small">Saved as draft ${when(c.saved_at)}${c.base_changed ? html` · <b>this part changed on the site since</b> — open it: publishing there shows you what would be overwritten` : ''}
+        · <a href="/pages/${p.slug}/edit?chapter=${c.key}">open in the editor</a></p>
       ${changesBox(c.live, c.draft)}
-      <form method="post" action="/pages/${p.slug}/draft/discard" class="inline" data-confirm="Discard this draft? The text on the site stays as it is.">
-        <input type="hidden" name="chapter" value="${c.key}"><input type="hidden" name="back" value="changes"><button class="link-button danger">Discard draft</button></form>
+      <div class="actions">${c.base_changed ? '' : html`<form method="post" action="/pages/${p.slug}/publish" class="inline">
+        <input type="hidden" name="chapter" value="${c.key}"><button>Publish</button></form>`}
+      <form method="post" action="/pages/${p.slug}/draft/discard" class="inline" data-confirm="Discard these changes? The text on the site stays as it is.">
+        <input type="hidden" name="chapter" value="${c.key}"><input type="hidden" name="back" value="changes"><button class="secondary">Discard</button></form></div>
     </section>`) : html`<p>No unpublished changes — everything you wrote is on the site.</p>`}` });
 });
 
@@ -264,31 +283,75 @@ router.get('/pages/:slug/history', async (req, res) => {
 // Save: the settings, and the part being edited put back in its place (the rest of the text exactly as it was). The text
 // changed since the part was opened (another tab, an upload): not saved — the edited version comes back in the editor,
 // and saving again (now based on the current text) puts it in.
+// Publish: the edited part goes on the site. Refused when that part changed on the site since the editing began
+// (base = sha of the part's text then); a change in another chapter doesn't matter.
 router.post('/pages/:slug', async (req, res) => {
   const p = await bySlug(req.params.slug);
   if (!p) return notFoundPage(req, res);
-  const values = { title: String(req.body.title || '').trim(), lang: String(req.body.lang || 'de-CH').trim(), published: req.body.published === '1' };
   const chapter = req.body.chapter;
   const edited = req.body.body_md === undefined ? undefined : String(req.body.body_md).replace(/\r\n/g, '\n');
-  const part = chapter === undefined ? null : partOf(p.body_md, chapter);
-  const again = async (flash) => send(req, res, { ...editPage(p, await imagesOf(p.id), { values: { ...values, body_md: edited },
-    part: part || { key: String(chapter), label: 'your text', md: '' }, flash, sync: await lastSync(p.id) }), status: 409 });
-  let body = p.body_md;
-  if (chapter !== undefined && edited !== undefined) {
-    if (req.body.base !== sha(p.body_md)) {
-      return again({ kind: 'error', text: 'The text was changed since you opened this part (another tab or an upload). Your version is in the editor — save again to put it in, or open the part again to see the current one.' });
-    }
-    body = chapter === 'all' ? edited : replaceChapter(p.body_md, Number(chapter), edited);
-    if (body === null) return again({ kind: 'error', text: 'This chapter is no longer there. Your version is in the editor — copy it, then open the chapter list again.' });
+  if (chapter === undefined || edited === undefined) return res.redirect(303, `/pages/${p.slug}/edit`);
+  const part = partOf(p.body_md, chapter);
+  const again = async (flash, status = 409) => send(req, res, { ...editPage(p, await imagesOf(p.id), { values: { ...p, body_md: edited },
+    part: part || { key: String(chapter), label: 'your text', md: '' }, flash, sync: await lastSync(p.id), changes: await changesOf(p, req.user.id) }), status });
+  if (!part) return again({ kind: 'error', text: 'This chapter is no longer there. Your version is in the editor — copy it, then open the chapter list again.' });
+  if (req.body.base !== sha(part.md)) {
+    return again({ kind: 'error', text: `${part.label.replace(/^./, (x) => x.toUpperCase())} was changed on the site since you began (another tab or an upload). Your version is in the editor — publish again to put it in, or open the part again to see the current one.` });
   }
+  const body = chapter === 'all' ? edited : replaceChapter(p.body_md, Number(chapter), edited);
   try {
-    await withTx(req.user, (db) => db.query('UPDATE pages SET title = $2, lang = $3, body_md = $4, published = $5 WHERE id = $1',
-      [p.id, values.title, values.lang, body, values.published]));
+    await withTx(req.user, (db) => db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, body]));
   } catch (err) {
-    return send(req, res, { ...editPage(p, await imagesOf(p.id), { values: { ...values, body_md: edited }, part, flash: { kind: 'error', text: friendly(err) } }), status: 422 });
+    return again({ kind: 'error', text: friendly(err) }, 422);
   }
-  if (chapter !== undefined) await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3', [p.id, req.user.id, String(chapter)]);
-  res.redirect(303, `/pages/${p.slug}/edit?${chapter !== undefined ? `chapter=${encodeURIComponent(chapter)}&` : ''}done=saved`);
+  await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3', [p.id, req.user.id, String(chapter)]);
+  res.redirect(303, `/pages/${p.slug}/edit?chapter=${encodeURIComponent(chapter)}&done=page-published`);
+});
+
+// The page's settings: title, language, visible on the site — apart from the text, which is published by part
+router.post('/pages/:slug/settings', async (req, res) => {
+  const p = await bySlug(req.params.slug);
+  if (!p) return notFoundPage(req, res);
+  const values = { title: String(req.body.title || '').trim(), lang: String(req.body.lang || 'de-CH').trim(), published: req.body.published === '1' };
+  try {
+    await withTx(req.user, (db) => db.query('UPDATE pages SET title = $2, lang = $3, published = $4 WHERE id = $1', [p.id, values.title, values.lang, values.published]));
+  } catch (err) {
+    return send(req, res, { ...editPage(p, await imagesOf(p.id), { values: { ...p, ...values }, flash: { kind: 'error', text: friendly(err), settings: true },
+      sync: await lastSync(p.id), changes: await changesOf(p, req.user.id) }), status: 422 });
+  }
+  res.redirect(303, `/pages/${p.slug}/edit?done=saved`);
+});
+
+// Publish from the review page: one part's draft (chapter=<key>) or all of them (chapter=all-drafts). Later chapters
+// first, so a draft that adds a chapter doesn't move the ones still to come; a draft whose part changed on the site
+// since it began stays a draft (the page says so) — opened, it shows what would be overwritten.
+router.post('/pages/:slug/publish', async (req, res) => {
+  const p = await bySlug(req.params.slug);
+  if (!p) return notFoundPage(req, res);
+  const wanted = String(req.body.chapter || '');
+  const order = (k) => (k === 'all' ? Infinity : Number(k));
+  const drafts = (await changesOf(p, req.user.id)).filter((c) => wanted === 'all-drafts' || c.key === wanted).sort((x, y) => order(y.key) - order(x.key));
+  let body = p.body_md;
+  const done = [];
+  for (const c of drafts) {
+    if (c.base_changed) continue;
+    if (c.key === 'all' && drafts.length > 1) continue;   // the whole text beside chapter drafts: only on its own
+    const next = c.key === 'all' ? c.draft : replaceChapter(body, Number(c.key), c.draft);
+    if (next === null) continue;
+    body = next;
+    done.push(c.key);
+  }
+  if (done.length) {
+    try {
+      await withTx(req.user, (db) => db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, body]));
+    } catch (err) {
+      return send(req, res, { title: 'Not published', flash: { kind: 'error', text: friendly(err) },
+        body: html`<p><a href="/pages/${p.slug}/changes">← Unpublished changes</a></p>` });
+    }
+    await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = ANY($3)', [p.id, req.user.id, done]);
+  }
+  const skipped = drafts.length - done.length;
+  res.redirect(303, `/pages/${p.slug}/changes?published=${done.length}&kept=${skipped}`);
 });
 
 // Autosave (117, editor/uploads.js): the part being edited as a draft of this account — not on the site until Save
@@ -312,7 +375,7 @@ router.post('/pages/:slug/draft/discard', async (req, res) => {
   if (!p) return notFoundPage(req, res);
   const part = String(req.body.chapter || '');
   await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3', [p.id, req.user.id, part]);
-  res.redirect(303, req.body.back === 'changes' ? `/pages/${p.slug}/changes` : `/pages/${p.slug}/edit?chapter=${encodeURIComponent(part)}`);
+  res.redirect(303, req.body.back === 'changes' ? `/pages/${p.slug}/changes` : `/pages/${p.slug}/edit?chapter=${encodeURIComponent(part)}&done=page-discarded`);
 });
 
 // Preview (editor's button): the page as the site will show it, images from here (also those of an unpublished page)

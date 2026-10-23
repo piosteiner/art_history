@@ -110,7 +110,7 @@ function initMdUpload() {
 }
 
 // Autosave (migration 117): the part being edited is sent as a draft 1.5 s after typing pauses (and when the tab is
-// hidden or closed); the status line says when. Save (the form) publishes it; leaving with something not yet sent asks.
+// hidden or closed); the status line says when. "Publish changes" (the form) puts it on the site; leaving with something not yet sent asks.
 function initAutosave() {
   const ta = document.querySelector('textarea[data-autosave]');
   if (!ta) return;
@@ -131,7 +131,7 @@ function initAutosave() {
     sending = fetch(ta.dataset.autosave, { method: 'POST', body, headers: { 'Content-Type': 'application/json' }, credentials: 'same-origin', keepalive: true })
       .then(async (r) => {
         if (!r.ok) throw new Error(String(r.status));
-        say(`Draft saved ${time()} — not on the site until you save.`);
+        say(`Saved as draft ${time()} — not on the site until you publish.`);
         // the panel of unpublished changes: the draft against the text on the site (word diff from the server)
         const out = await r.json().catch(() => null);
         const box = document.querySelector('[data-page-changes]');
@@ -139,12 +139,16 @@ function initAutosave() {
           box.hidden = !out.changed;
           box.querySelector('[data-page-changes-body]').innerHTML = out.changes_html;
         }
+        // nothing different from the site (typed back): nothing to publish or discard
+        if (out) { publish.disabled = !out.changed; if (discard) discard.hidden = !out.changed; }
       })
       .catch(() => { dirty = true; say('Draft not saved (offline?) — retrying when you type; keep this tab open.'); })
       .finally(() => { sending = null; });
     await sending;
   };
-  ta.addEventListener('md-change', () => { dirty = true; clearTimeout(timer); timer = setTimeout(send, 1500); say('…'); });
+  const publish = form.querySelector('[data-publish]');
+  const discard = document.querySelector('[data-discard]');
+  ta.addEventListener('md-change', () => { dirty = true; publish.disabled = false; clearTimeout(timer); timer = setTimeout(send, 1500); say('…'); });
   document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') void send(true); });
   let submitting = false;
   form.addEventListener('submit', () => { submitting = true; clearTimeout(timer); });

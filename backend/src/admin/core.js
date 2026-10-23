@@ -20,6 +20,7 @@ const DONE = {
   wikidata: 'Wikidata values applied — the field values are in the working copy: check them below and Publish.',
   published: 'Published — the working copy is now the public version.',
   discarded: 'Unpublished changes discarded — the working copy is back to the published version.',
+  'page-published': 'Published — the changes are on the site.', 'page-discarded': 'Changes discarded — the text is as it is on the site.',
   reverted: 'Change reverted — the revert itself is in the history and can be reverted too.',
   restored: 'Version restored.',
   'rel-added': 'Relationship added.', 'rel-saved': 'Relationship saved.', 'rel-deleted': 'Relationship deleted.',

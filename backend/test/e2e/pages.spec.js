@@ -31,17 +31,19 @@ test('a page: Obsidian Markdown, images by name, published to the API, its histo
 
   // the text, as pasted from Obsidian (into the form's field; the editor keeps it in sync)
   const text = '# Kapitel Eins\n\nText mit ==Markierung== und <span style="color:rgb(255, 0, 0)">rot</span>.\n\n![[Facharbeit-1.png]]\n![[Bild 2.png|Eine Bildunterschrift]]\n![[fehlt.webp]]\n\n- [x] erledigt\n- [ ] offen\n\n## Räumliche Nähe';
-  await userA.evaluate((t) => { document.querySelector('#pg-body').value = t; }, text);
+  await userA.evaluate((t) => { document.querySelector('#pg-body').value = t; document.querySelector('#pg-body').dispatchEvent(new Event('md-change')); }, text);
   // the page's own preview: its images from the CMS
   const preview = await userA.evaluate(async (t) => (await fetch('/pages/test-doc/preview', { method: 'POST', body: new URLSearchParams({ text: t }) })).text(), text);
   expect(preview).toContain('src="/pages/test-doc/images/Facharbeit-1.png"');
   expect(preview).toContain('class="page-image-missing"');
-  // saved, not yet published: not on the API
-  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  // the text published, the page still hidden: not on the API
+  await Promise.all([userA.waitForURL(/done=page-published/), userA.click('.page-form button:has-text("Publish changes")')]);
   await expect(userA.locator('.page-images-missing')).toContainText('fehlt.webp');
   expect((await get(request, '/pages/test-doc')).status()).toBe(404);
+  // made visible in the page settings
+  await userA.click('.page-settings summary');
   await userA.check('input[name=published]');
-  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-settings button:has-text("Save settings")')]);
 
   // the API: HTML with the images at its own address, the marks, tasks, ids; the table of contents
   const page = await (await get(request, '/pages/test-doc?full=1')).json();
@@ -83,16 +85,21 @@ test('a long page: chapters edited one at a time, a stale save refused, .md down
   // chapter 2 alone in the editor; saved back in its place
   await userA.locator('.page-outline a', { hasText: 'Projektstart' }).click();
   await expect(userA.locator('#pg-body')).toHaveValue('# Projektstart\nAlt.\n## Backend\nNode.\n\n');
-  await userA.evaluate(() => { document.querySelector('#pg-body').value = '# Projektstart\nNeu.\n'; });
-  await Promise.all([userA.waitForURL(/chapter=2&done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  await userA.evaluate(() => { document.querySelector('#pg-body').value = '# Projektstart\nNeu.\n'; document.querySelector('#pg-body').dispatchEvent(new Event('md-change')); });
+  await Promise.all([userA.waitForURL(/chapter=2&done=page-published/), userA.click('.page-form button:has-text("Publish changes")')]);
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('Einleitung.\n\n# Pitch\nVorteil.\n\n# Projektstart\nNeu.\n# Provenienz\nBesitz.');
-  // changed elsewhere meanwhile: refused, the edited version kept; saving again puts it in
-  await userA.evaluate(() => { document.querySelector('#pg-body').value = '# Projektstart\nMeine Fassung.\n'; });
+  // another chapter changed meanwhile: no matter — this one goes in
+  await userA.evaluate(() => { document.querySelector('#pg-body').value = '# Projektstart\nZweite Fassung.\n'; document.querySelector('#pg-body').dispatchEvent(new Event('md-change')); });
   sql("UPDATE pages SET body_md = body_md || '\nNachtrag.' WHERE slug = 'test-doc'");
-  await userA.click('.page-form button:has-text("Save")');
-  await expect(userA.locator('.flash.error')).toContainText('changed since you opened this part');
+  await Promise.all([userA.waitForURL(/chapter=2&done=page-published/), userA.click('.page-form button:has-text("Publish changes")')]);
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toContain('# Projektstart\nZweite Fassung.\n# Provenienz\nBesitz.\n\nNachtrag.');
+  // this chapter changed meanwhile: refused, the edited version kept; publishing again puts it in
+  await userA.evaluate(() => { document.querySelector('#pg-body').value = '# Projektstart\nMeine Fassung.\n'; document.querySelector('#pg-body').dispatchEvent(new Event('md-change')); });
+  sql("UPDATE pages SET body_md = replace(body_md, 'Zweite Fassung.', 'Anderswo geändert.') WHERE slug = 'test-doc'");
+  await userA.click('.page-form button:has-text("Publish changes")');
+  await expect(userA.locator('.flash.error')).toContainText('was changed on the site since you began');
   await expect(userA.locator('#pg-body')).toHaveValue('# Projektstart\nMeine Fassung.\n');
-  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  await Promise.all([userA.waitForURL(/done=page-published/), userA.click('.page-form button:has-text("Publish changes")')]);
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toContain('# Projektstart\nMeine Fassung.\n# Provenienz\nBesitz.\n\nNachtrag.');
 
   // .md: downloaded (remembered), changed in the CMS, then a file uploaded → asked first; confirmed → replaced
@@ -148,23 +155,25 @@ test('the editor: the adenai tools, find and replace, autosave as a draft restor
   await userA.keyboard.press('Escape');
 
   // autosave: a draft, not the page
-  await expect(userA.locator('[data-autosave-status]')).toContainText('Draft saved', { timeout: 10000 });
+  await expect(userA.locator('[data-autosave-status]')).toContainText('Saved as draft', { timeout: 10000 });
   expect(sql("SELECT count(*) FROM page_drafts p JOIN pages g ON g.id = p.page_id WHERE g.slug = 'test-doc' AND p.part = '1'")).toBe('1');
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nText.');
   // left and opened again: restored
   await userA.goto('/pages/test-doc/edit?chapter=1');
-  await expect(userA.locator('.page-draft')).toContainText('Restored your unsaved draft');
+  await expect(userA.locator('.page-draft')).toContainText('Your unpublished changes');
   await expect(body).toHaveValue(/==wichtig==/);
   // discarded: gone
-  await Promise.all([userA.waitForURL(/chapter=1$/), userA.click('.page-draft button:has-text("Discard draft")')]);
+  userA.once('dialog', (d) => d.accept());
+  await Promise.all([userA.waitForURL(/chapter=1&done=page-discarded/), userA.click('.page-form button:has-text("Discard changes")')]);
+  await expect(userA.locator('.page-form button:has-text("Discard changes")')).toBeHidden();
   await expect(userA.locator('.page-draft')).toHaveCount(0);
   await expect(body).toHaveValue('# Eins\nText.\n');
   // typed again, saved: on the page, the draft gone
   await cm.click();
   await userA.keyboard.press('Control+End');
   await userA.keyboard.type('Mehr.');
-  await expect(userA.locator('[data-autosave-status]')).toContainText('Draft saved', { timeout: 10000 });
-  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  await expect(userA.locator('[data-autosave-status]')).toContainText('Saved as draft', { timeout: 10000 });
+  await Promise.all([userA.waitForURL(/done=page-published/), userA.click('.page-form button:has-text("Publish changes")')]);
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nText.\nMehr.');
   expect(sql("SELECT count(*) FROM page_drafts p JOIN pages g ON g.id = p.page_id WHERE g.slug = 'test-doc'")).toBe('0');
 });
@@ -189,7 +198,7 @@ test('[[#Heading]]: suggested from every chapter while writing one, linked to th
   await hits.filter({ hasText: 'Drei' }).click();
   await expect(userA.locator('#pg-body')).toHaveValue(/und \[\[#Drei#Backend\]\]$/);
   await userA.keyboard.type(' [[#Gibt es nicht]]');
-  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
+  await Promise.all([userA.waitForURL(/done=page-published/), userA.click('.page-form button:has-text("Publish changes")')]);
 
   // the API: links to the heading's chapter on the site; the second "Backend" by its own id; one not found marked
   const two = (await (await get(request, '/pages/test-doc?chapter=zwei')).json()).chapter;
@@ -224,7 +233,37 @@ test('unpublished changes: a draft shown as a word diff in the editor, marked in
   await expect(userA.locator('.page-change h2')).toHaveText(['Chapter 1: Eins']);
   await expect(userA.locator('.page-change ins')).toContainText('Ein neuer Satz.');
   userA.once('dialog', (d) => d.accept());
-  await userA.locator('.page-change button:has-text("Discard draft")').click();
+  await userA.locator('.page-change button:has-text("Discard")').click();
   await expect(userA.locator('main')).toContainText('No unpublished changes');
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).not.toContain('Ein neuer Satz');   // the site's text untouched
+});
+
+test('publishing from the review page: all parts at once; a part changed on the site meanwhile stays a draft', async ({ userA }) => {
+  const text = '# Eins\nA.\n\n# Zwei\nB.\n\n# Drei\nC.\n';
+  sql(`INSERT INTO pages (slug, title, body_md, published) VALUES ('test-doc', 'Test Doc', '${text}', true)`);
+  // three drafts as the editor's autosave writes them: based on their part as it was on the site
+  const draft = (part, live, mine) => userA.evaluate(async ([pt, l, m]) => {
+    const enc = new TextEncoder().encode(l);
+    const base = [...new Uint8Array(await crypto.subtle.digest('SHA-256', enc))].map((b) => b.toString(16).padStart(2, '0')).join('');
+    return (await fetch('/pages/test-doc/draft', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chapter: pt, base, body: m }) })).status;
+  }, [part, live, mine]);
+  await userA.goto('/pages/test-doc/edit');
+  expect(await draft('1', '# Eins\nA.\n\n', '# Eins\nA neu.\n\n')).toBe(200);
+  expect(await draft('2', '# Zwei\nB.\n\n', '# Zwei\nB neu.\n\n')).toBe(200);
+  expect(await draft('3', '# Drei\nC.\n', '# Drei\nC neu.\n')).toBe(200);
+  // chapter 3 changed on the site meanwhile: its draft can't be published from here
+  sql("UPDATE pages SET body_md = replace(body_md, 'C.', 'C anders.') WHERE slug = 'test-doc'");
+
+  await userA.goto('/pages/test-doc/changes');
+  await expect(userA.locator('.page-change')).toHaveCount(3);
+  await expect(userA.locator('.page-change', { hasText: 'Drei' })).toContainText('this part changed on the site since');
+  await expect(userA.locator('.page-change', { hasText: 'Drei' }).locator('button:text-is("Publish")')).toHaveCount(0);
+  // all at once: Eins and Zwei go in, Drei stays a draft — said so
+  userA.once('dialog', (d) => d.accept());
+  await userA.click('button:has-text("Publish all (2)")');
+  await expect(userA.locator('.flash')).toContainText('Published 2 parts');
+  await expect(userA.locator('.flash')).toContainText('1 kept as draft');
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nA neu.\n\n# Zwei\nB neu.\n\n# Drei\nC anders.');
+  await expect(userA.locator('.page-change')).toHaveCount(1);
+  await expect(userA.locator('.page-change h2')).toHaveText('Chapter 3: Drei');
 });
