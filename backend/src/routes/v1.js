@@ -10,7 +10,7 @@ const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
 const { fold } = require('../fold');
-const { renderPage, splitChapters, words, chars } = require('../pages');
+const { renderPage, pageHeadings, siteAddress, splitChapters, words, chars } = require('../pages');
 const { KINDS, STATUS, renderItems } = require('../changelog');
 
 const router = express.Router();
@@ -149,7 +149,9 @@ router.get('/pages/:slug', async (req, res) => {
   if (!p) throw notFound(`no page "${req.params.slug}"`);
   const imgs = p.images || [];
   const opts = { imageBase: `${req.protocol}://${req.get('host')}${req.baseUrl}/pages/${p.slug}/images/`,
-    known: new Set(imgs.map((i) => i.name)), dims: new Map(imgs.filter((i) => i.width).map((i) => [i.name, i])), seen: new Map() };
+    known: new Set(imgs.map((i) => i.name)), dims: new Map(imgs.filter((i) => i.width).map((i) => [i.name, i])), seen: new Map(),
+    // [[#Heading]] links: to the heading's chapter on the site, wherever it is in the text
+    headings: pageHeadings(p.body_md), linkBase: siteAddress(p.slug) };
   const { intro, chapters } = splitChapters(p.body_md);
   const introOut = renderPage(intro.md, opts);
   const rendered = chapters.map((c) => ({ ...c, ...renderPage(c.md, opts) }));

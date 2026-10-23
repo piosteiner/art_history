@@ -2349,7 +2349,7 @@ test('project documentation (API 114/116): from the footer, the overview with it
     chapters: [{ id: 'pitch', title: 'Pitch', words: 400, chars: 2800 }, { id: 'projektstart', title: 'Projektstart', words: 600, chars: 4200 }, { id: 'provenienz', title: 'Provenienz', words: 200, chars: 1400 }] };
   const chapter = { id: 'projektstart', index: 2, title: 'Projektstart', prev: { id: 'pitch', title: 'Pitch' }, next: { id: 'provenienz', title: 'Provenienz' },
     toc: [{ level: 1, id: 'projektstart', text: 'Projektstart' }, { level: 2, id: 'backend-setup', text: 'Backend Setup' }, { level: 3, id: 'node-app', text: 'Node App' }],
-    html: '<h1 id="projektstart">Projektstart</h1><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" width="1" height="1"><ul><li class="task task-done"><span class="task-box">☑</span> erledigt</li></ul><h2 id="backend-setup">Backend Setup</h2><h3 id="node-app">Node App</h3>' };
+    html: '<h1 id="projektstart">Projektstart</h1><img src="data:image/gif;base64,R0lGODlhAQABAAAAACw=" alt="" width="1" height="1"><ul><li class="task task-done"><span class="task-box">☑</span> erledigt</li></ul><p><a href="/dokumentation/projektstart#node-app">zur Node App</a></p><p style="height:3000px"></p><h2 id="backend-setup">Backend Setup</h2><h3 id="node-app">Node App</h3>' };
   await page.route(/\/v1\/pages\/projekt-dokumentation(\?.*)?$/, (r) => {
     const asked = new URL(r.request().url()).searchParams.get('chapter');
     if (asked && asked !== 'projektstart') return r.fulfill({ status: 404, json: { error: 'not_found', message: 'no chapter' } });
@@ -2372,6 +2372,10 @@ test('project documentation (API 114/116): from the footer, the overview with it
   await expect(page.locator('.doc-body li.task-done')).toContainText('erledigt');
   await expect(page.locator('.doc-pager a[rel=prev]')).toHaveText('← Pitch');
   await expect(page.locator('.doc-pager a[rel=next]')).toHaveText('Provenienz →');
+  // [[#Node App]] (API: a link to the heading in its chapter) — here the same chapter: scrolled there, the address with it
+  await page.locator('.doc-body a', { hasText: 'zur Node App' }).click();
+  await expect(page).toHaveURL(/\/dokumentation\/projektstart#node-app$/);
+  await expect(page.locator('#node-app')).toBeInViewport();
   // an old link to a heading of the whole text opens its chapter; an unknown chapter: a way back
   await page.goto('/dokumentation#projektstart');
   await expect(page).toHaveURL(/\/dokumentation\/projektstart/);

@@ -9,13 +9,12 @@ const sharp = require('sharp');
 const { adminPool } = require('../../db');
 const { html } = require('../html');
 const { send, withTx, notFoundPage, friendly, history, historyTable } = require('../core');
-const { renderPage, splitChapters, replaceChapter, words, chars, IMAGE_NAME } = require('../../pages');
+const { renderPage, pageHeadings, siteAddress, splitChapters, replaceChapter, words, chars, IMAGE_NAME } = require('../../pages');
 
 const router = express.Router();
 const SITE = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
-// the site's address of a page (frontend: src/views/page.ts)
-const ADDRESS = { 'projekt-dokumentation': '/dokumentation' };
-const siteUrl = (p) => `${SITE}${ADDRESS[p.slug] || `/pages/${p.slug}`}`;
+// the site's address of a page (src/pages.js, frontend: src/views/page.ts)
+const siteUrl = (p) => `${SITE}${siteAddress(p.slug)}`;
 const TYPES = { webp: 'image/webp', png: 'image/png', jpg: 'image/jpeg', jpeg: 'image/jpeg', gif: 'image/gif', avif: 'image/avif' };
 const kb = (n) => (n >= 1048576 ? `${(n / 1048576).toFixed(1)} MB` : `${Math.max(1, Math.round(n / 1024))} KB`);
 const slugOk = (s) => /^[a-z0-9]+(-[a-z0-9]+)*$/.test(s);
@@ -84,9 +83,9 @@ function partOf(text, asked) {
   if (asked === 'all' || (!chapters.length && asked === undefined)) return { key: 'all', label: 'the whole text', md: text };
   if (asked === undefined || asked === '') return null;
   const n = Number(asked);
-  if (n === 0) return { key: '0', label: 'the introduction', md: intro.md };
+  if (n === 0) return { key: '0', label: 'the introduction', md: intro.md, chapter: null };
   const c = chapters.find((x) => x.index === n);
-  return c ? { key: String(n), label: `chapter ${n}: ${c.title}`, md: c.md } : null;
+  return c ? { key: String(n), label: `chapter ${n}: ${c.title}`, md: c.md, chapter: c.id } : null;
 }
 
 function editPage(p, images, { flash = null, values = null, part = null, sync = null, draft = null } = {}) {
@@ -96,6 +95,13 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
   const missing = embedded.filter((n) => !names.has(n));
   const unused = images.filter((i) => !embedded.includes(i.name));
   const { intro, chapters } = splitChapters(p.body_md);
+  // [[# suggestions (editor.js): the headings of the other chapters — those of the part edited come from the editor
+  const titles = new Map(chapters.map((c) => [c.id, c.title]));
+  // a name used twice ("pm2" under two chapters) is written with the heading above it: [[#Projektaufbau#pm2]]
+  const all = pageHeadings(p.body_md).all;
+  const otherHeadings = part && part.key !== 'all' ? all.filter((h) => h.chapter !== part.chapter).map((h) => ({ text: h.text, level: h.level,
+    chapter: h.chapter ? titles.get(h.chapter) : 'Introduction',
+    path: all.filter((x) => x.key === h.key).length > 1 && h.above ? `${h.above}#${h.text}` : h.text })) : [];
   const changedSince = sync && sync.sha256 !== sha(p.body_md);
   const on = (k) => (part && part.key === k ? ' aria-current="true" class="on"' : '');
   return { title: `Edit ${p.title}`, flash, body: html`<p class="muted"><a href="/pages">← Pages</a></p>
@@ -129,10 +135,10 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
       ${part ? html`<input type="hidden" name="chapter" value="${part.key}"><input type="hidden" name="base" value="${draft ? draft.base_sha : sha(p.body_md)}">
       <div class="field"><label for="pg-body">Text — ${part.label}</label>
         <textarea id="pg-body" name="body_md" class="md" rows="30" data-upload="/pages/${p.slug}/images" data-preview="/pages/${p.slug}/preview"
-          data-autosave="/pages/${p.slug}/draft">${values && values.body_md !== undefined ? values.body_md : draft ? draft.body_md : part.md}</textarea>
+          data-headings="${JSON.stringify(otherHeadings)}" data-autosave="/pages/${p.slug}/draft">${values && values.body_md !== undefined ? values.body_md : draft ? draft.body_md : part.md}</textarea>
         <p class="muted small page-autosave" data-autosave-status aria-live="polite">Drafts are saved as you type; Save puts them on the site.</p>
         <div class="hint">Markdown, as in Obsidian: <code>![[name.webp]]</code> embeds an image of this page (<code>![[name.webp|400]]</code> 400 px wide,
-          <code>![[name.webp|caption]]</code> with a caption), <code>==highlight==</code>, <code>- [x]</code> tasks, tables, <code>&lt;span style="color:…"&gt;</code>.
+          <code>![[name.webp|caption]]</code> with a caption), <code>[[#Heading]]</code> a link to a heading of this page, in any chapter (type <code>[[#</code> for the list), <code>==highlight==</code>, <code>- [x]</code> tasks, tables, <code>&lt;span style="color:…"&gt;</code>.
           Drop or paste an image into the text to upload and embed it. A new <code>#</code> heading starts a new chapter.</div></div>`
       : html`<p class="muted">Choose a chapter on the left to edit it${chapters.length ? '' : ', or the whole text'}.</p>`}
       <div class="field"><label class="choice"><input type="checkbox" name="published" value="1"${v.published ? ' checked' : ''}> Published</label></div>
@@ -267,7 +273,13 @@ router.post('/pages/:slug/preview', async (req, res) => {
   const p = await bySlug(req.params.slug);
   if (!p) return res.status(404).end();
   const imgs = await imagesOf(p.id);
-  res.type('html').send(renderPage(String(req.body.text || '').slice(0, 2000000), { imageBase: `/pages/${p.slug}/images/`,
+  const text = String(req.body.text || '').slice(0, 2000000);
+  // [[#Heading]]: the saved page's headings, and those only in the text previewed (just written)
+  const headings = pageHeadings(p.body_md);
+  const fresh = pageHeadings(text);
+  for (const [k, h] of fresh) if (!headings.has(k)) headings.set(k, h);
+  headings.all = [...headings.all, ...fresh.all.filter((h) => !headings.all.some((x) => x.key === h.key))];
+  res.type('html').send(renderPage(text, { imageBase: `/pages/${p.slug}/images/`, headings, linkBase: siteUrl(p),
     known: new Set(imgs.map((i) => i.name)), dims: new Map(imgs.filter((i) => i.width).map((i) => [i.name, i])) }).html);
 });
 

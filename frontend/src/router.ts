@@ -157,6 +157,14 @@ function interceptLinks(e: MouseEvent) {
   if (/\.[a-z0-9]+$/i.test(url.pathname) || url.pathname.startsWith('/v1/')) return; // files (health.html, sitemap.xml)
   e.preventDefault();
   if (url.pathname + url.search !== location.pathname + location.search) navigate(url.pathname + url.search + url.hash);
+  else if (url.hash) {
+    // the same page at another place ([[#Heading]] links of the documentation): scroll there, "back" returns
+    const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+    if (!target) return;
+    saveScroll();
+    history.pushState(null, '', url.hash);
+    target.scrollIntoView();
+  }
 }
 
 export function start(onRoute: (route: Route) => void) {

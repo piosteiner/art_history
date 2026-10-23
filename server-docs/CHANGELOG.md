@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-23
 
+### Pages: links to headings, [[#Heading]], across chapters
+- **What:** `src/pages.js`: inline rule `heading_link` for `[[#Heading]]`, `[[#Heading|own words]]`, `[[#Above#Heading]]`
+  (Obsidian's forms); `pageHeadings()` indexes the whole page's headings (ids as the chapters render them, chapter,
+  headings above); the link goes to `<site address>/<chapter>#<id>`, one not found is `span.page-link-missing`.
+  `siteAddress()` (the site's address of a page) shared by the API and the admin. API `/v1/pages/…` and the admin
+  preview resolve them; the page editor suggests the headings after `[[#` (`editor.js` `headingCompletions`: the
+  other chapters' from `data-headings`, this part's from the text; a name used twice with the heading above it).
+  Site: a link to the same chapter scrolls to the heading (`router.ts`). Tests: `test/pages.test.js`, e2e
+  `pages.spec.js`, site test.
+- **Why:** owner: link to other headings of the documentation as in Obsidian, across its chapters.
+- **Revert:** revert the commit.
+
 ### What a creation span means; the artist's line before their own estate (migration 135)
 - **What:**
   - `artworks.created_span` (enum `span_meaning`: `duration` = worked on over that time, `uncertain` = made at some

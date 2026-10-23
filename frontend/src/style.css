@@ -809,6 +809,8 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .doc-page .page-figure { display: block; margin: .8rem 0; }
 .doc-page .page-caption { display: block; font-size: .85rem; color: var(--muted); }
 .doc-page .page-image-missing { display: none; }
+/* [[#Heading]] to no heading of the page (API 114): the text as plain words */
+.doc-page .page-link-missing { color: inherit; }
 .doc-page mark { background: var(--mark); color: #1b1a17; padding: 0 .1em; }
 .doc-page li.task { list-style: none; margin-left: -1.2rem; }
 .doc-page .task-box { display: inline-block; width: 1.2rem; }

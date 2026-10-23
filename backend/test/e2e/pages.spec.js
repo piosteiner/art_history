@@ -168,3 +168,32 @@ test('the editor: the adenai tools, find and replace, autosave as a draft restor
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nText.\nMehr.');
   expect(sql("SELECT count(*) FROM page_drafts p JOIN pages g ON g.id = p.page_id WHERE g.slug = 'test-doc'")).toBe('0');
 });
+
+test('[[#Heading]]: suggested from every chapter while writing one, linked to the heading in its chapter, two of a name told apart', async ({ userA, request }) => {
+  const text = '# Eins\nA.\n## Vertrauliche Daten\nGeheim.\n\n# Zwei\nB.\n## Backend\nX.\n\n# Drei\n## Backend\nY.\n';
+  sql(`INSERT INTO pages (slug, title, body_md, published) VALUES ('test-doc', 'Test Doc', '${text}', true)`);
+  await userA.goto('/pages/test-doc/edit?chapter=2');
+  const cm = userA.locator('.md-editor .cm-content');
+  await cm.click();
+  await userA.keyboard.press('Control+End');
+  await userA.keyboard.type('Siehe [[#vertrau');
+  const hits = userA.locator('.cm-tooltip-autocomplete li');
+  await expect(hits).toHaveCount(1);
+  await expect(hits.first()).toContainText('Vertrauliche Daten');
+  await expect(hits.first()).toContainText('## · Eins');                         // a heading of another chapter
+  await userA.keyboard.press('Enter');
+  await expect(userA.locator('#pg-body')).toHaveValue(/Siehe \[\[#Vertrauliche Daten\]\]$/);
+  // a name used twice: written with the heading above it
+  await userA.keyboard.type(' und [[#backend');
+  await expect(hits).toHaveCount(2);                                               // this chapter's and Drei's
+  await hits.filter({ hasText: 'Drei' }).click();
+  await expect(userA.locator('#pg-body')).toHaveValue(/und \[\[#Drei#Backend\]\]$/);
+  await userA.keyboard.type(' [[#Gibt es nicht]]');
+  await Promise.all([userA.waitForURL(/done=saved/), userA.click('.page-form button:has-text("Save")')]);
+
+  // the API: links to the heading's chapter on the site; the second "Backend" by its own id; one not found marked
+  const two = (await (await get(request, '/pages/test-doc?chapter=zwei')).json()).chapter;
+  expect(two.html).toContain('<a href="/pages/test-doc/eins#vertrauliche-daten">Vertrauliche Daten</a>');
+  expect(two.html).toContain('<a href="/pages/test-doc/drei#backend-2">Backend</a>');
+  expect(two.html).toMatch(/<span class="page-link-missing"[^>]*>Gibt es nicht<\/span>/);
+});

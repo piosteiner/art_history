@@ -236,10 +236,43 @@ async function renderPreview(text, url = '/preview') {
 // typo-tolerant /lookup as the pickers); "[[artist/hoku" narrows to one type. Picking one writes [[type/slug]] — a
 // glossary term the short [[slug]] (src/markdown.js). filter: false — the server already ranked them, and the typed
 // text ("[[hoku") wouldn't match the labels ("Katsushika Hokusai") by CodeMirror's own filter.
+// [[#Heading]] — a heading of the page being written (only there: the textarea carries data-headings, the other
+// chapters' headings from the server; those of the part edited are read from the text as it is now). Picking one
+// writes [[#Heading text]] (src/pages.js links it to its chapter on the site).
+const HEADING_LINE = /^(#{1,6})[ \t]+(.+?)[ \t]*#*[ \t]*$/;
+function headingCompletions(textarea) {
+  if (textarea.dataset.headings === undefined) return () => null;
+  let others = [];
+  try { others = JSON.parse(textarea.dataset.headings || '[]'); } catch { others = []; }
+  return (context) => {
+    const m = context.matchBefore(/\[\[#[^\[\]|\n]*$/);
+    if (!m) return null;
+    const here = [];
+    let fence = false;
+    for (const line of context.state.doc.toString().split('\n')) {
+      if (/^(```|~~~)/.test(line)) { fence = !fence; continue; }
+      const h = !fence && HEADING_LINE.exec(line);
+      if (h) here.push({ text: h[2].replace(/[*_`=]/g, '').trim(), level: h[1].length, chapter: 'this part' });
+    }
+    const words = fold(m.text.slice(3)).split(/\s+/).filter(Boolean);
+    const seen = new Set();
+    const options = [...here, ...others].filter((h) => {
+      const k = fold(h.text);
+      const id = fold(h.path || h.text);
+      if (seen.has(id) || !words.every((w) => k.includes(w))) return false;
+      seen.add(id);
+      return true;
+    }).slice(0, 40).map((h) => ({ label: h.text, detail: `${'#'.repeat(h.level)} · ${h.chapter}`, type: 'text', apply: `[[#${h.path || h.text}]]` }));
+    const after = context.state.sliceDoc(context.pos, context.pos + 2);
+    return { from: m.from, to: after === ']]' ? context.pos + 2 : context.pos, filter: false, options };
+  };
+}
+
 const LINK_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'event', 'term', 'source'];
 async function entryCompletions(context) {
   const m = context.matchBefore(/\[\[[^\[\]|\n]*$/);
   if (!m) return null;
+  if (m.text.startsWith('[[#')) return null;  // a heading of the page (headingCompletions)
   let q = m.text.slice(2).trim();
   let types = LINK_TYPES;
   const typed = /^([a-z]+)\/(.*)$/.exec(q);
@@ -429,7 +462,7 @@ function enhance(textarea, collab = null) {
         syntaxHighlighting(liveStyle),
         underlines,
         EditorView.lineWrapping,
-        autocompletion({ override: [entryCompletions], icons: false }),
+        autocompletion({ override: [headingCompletions(textarea), entryCompletions], icons: false }),
         // a page's text (data-upload, 114): images dropped or pasted in are uploaded and embedded as ![[name]]
         ...(textarea.dataset.upload ? [imageHandlers(textarea.dataset.upload)] : []),
         bracketOverSelection,

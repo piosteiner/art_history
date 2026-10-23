@@ -4,6 +4,8 @@
 //   ![[name.webp|400]] · ![[name.webp|Caption]]  a width in pixels, or a caption
 //   ==highlighted== · ||spoiler|| · ++underline++ · - [x] tasks · > [!note] callouts   (src/md-extras.js)
 //   # … ###### headings                      with ids (the table of contents links them)
+//   [[#Vertrauliche Daten]] · [[#Vertrauliche Daten|die Zugangsdaten]]   a link to a heading of the same page, in
+//                                            any chapter (a heading not found shows as marked text)
 //   <span style="color:…">, <ruby>…<rt>…</rt></ruby>   allowed HTML; everything else sanitize-html removes
 // Entity pages use src/markdown.js (raw HTML off); here HTML is on — the text is the owner's, written in the CMS — and
 // sanitize-html is the fence: only the tags and attributes listed below survive, a colour only as a colour.
@@ -46,6 +48,38 @@ md.renderer.rules.embed_image = (tokens, i, opts, env) => {
   return caption ? `<span class="page-figure">${img}<span class="page-caption">${md.utils.escapeHtml(caption)}</span></span>` : img;
 };
 
+// [[#Heading]] / [[#Heading|own words]] — a heading of this page, as Obsidian links them ([[#A#B]]: the last one, B).
+// Resolved through env.headings (pageHeadings: the whole text's headings → their id and chapter); env.linkBase is the
+// page's address on the site, so a link into another chapter opens it there at the heading.
+md.inline.ruler.before('link', 'heading_link', (state, silent) => {
+  if (!state.src.startsWith('[[#', state.pos)) return false;
+  const end = state.src.indexOf(']]', state.pos + 3);
+  if (end < 0) return false;
+  const inner = state.src.slice(state.pos + 3, end);
+  if (/[\[\n]/.test(inner)) return false;
+  const bar = inner.indexOf('|');
+  const path = (bar < 0 ? inner : inner.slice(0, bar)).split('#').map((x) => x.trim()).filter(Boolean);
+  const target = path[path.length - 1];
+  if (!target) return false;
+  const label = bar < 0 ? target : inner.slice(bar + 1).trim();
+  if (!silent) state.push('heading_link', 'a', 0).meta = { path, target, label: label || target };
+  state.pos = end + 2;
+  return true;
+});
+const headingKey = (t) => fold(String(t).replace(/[*_`=]/g, '')).replace(/\s+/g, ' ').trim();
+md.renderer.rules.heading_link = (tokens, i, opts, env) => {
+  const { path, target, label } = tokens[i].meta;
+  // [[#Grosse Erweiterungen#Preise]]: the "Preise" under that heading — of two of the same name, the one meant
+  const keys = path.map(headingKey);
+  const h = env.headings && (keys.length > 1
+    ? (env.headings.all || []).find((x) => x.key === keys[keys.length - 1] && keys.slice(0, -1).every((k) => x.parents.includes(k)))
+    : env.headings.get(keys[0]));
+  const text = md.utils.escapeHtml(label);
+  if (!h) return `<span class="page-link-missing" title="${md.utils.escapeHtml(`No heading “${target}” in this page`)}">${text}</span>`;
+  const href = `${env.linkBase || ''}${h.chapter ? `/${encodeURIComponent(h.chapter)}` : ''}#${encodeURIComponent(h.id)}`;
+  return `<a href="${md.utils.escapeHtml(href)}">${text}</a>`;
+};
+
 // headings: ids from their text ("Räumliche Nähe" → "raumliche-nahe"), each once
 const slug = (s) => fold(s).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'abschnitt';
 md.core.ruler.push('heading_ids', (state) => {
@@ -85,8 +119,8 @@ SANITIZE.allowedAttributes.a.push('rel', 'target');
  * known: the names uploaded (a Set) — an embed of another name shows as a marked file name; dims: name → {width, height}
  * (115); images: every name embedded.
  */
-function renderPage(markdown, { imageBase, known = null, dims = null, seen = null, lang = 'de' } = {}) {
-  const env = { toc: [], images: new Set(), imageBase, known, dims, seen, lang };
+function renderPage(markdown, { imageBase, known = null, dims = null, seen = null, lang = 'de', headings = null, linkBase = '' } = {}) {
+  const env = { toc: [], images: new Set(), imageBase, known, dims, seen, lang, headings, linkBase };
   const raw = md.render(String(markdown || ''), env);
   const html = sanitizeHtml(raw, SANITIZE);
   return { html, toc: env.toc, images: [...env.images] };
@@ -127,6 +161,30 @@ function splitChapters(markdown) {
   return { intro: { index: 0, start: 0, end: introEnd, md: text.slice(0, introEnd) }, chapters, level: top };
 }
 
+// Every heading of a page → Map(folded text → {id, chapter, text}): the ids as the rendered chapters have them (one
+// shared count, as the API renders them one after the other), chapter null for the introduction. The first of two
+// headings of the same text wins, as in Obsidian. Parsed, not rendered — md.parse runs the heading_ids rule.
+function pageHeadings(markdown) {
+  const { intro, chapters } = splitChapters(markdown);
+  const seen = new Map();
+  const out = new Map();
+  out.all = [];          // every heading in order, with the headings above it ([[#A#B]])
+  const stack = [];      // the current heading of each level above
+  for (const part of [{ id: null, md: intro.md }, ...chapters]) {
+    const env = { toc: [], images: new Set(), seen };
+    md.parse(part.md, env);
+    for (const t of env.toc) {
+      const key = headingKey(t.text);
+      while (stack.length && stack[stack.length - 1].level >= t.level) stack.pop();
+      const h = { key, id: t.id, chapter: part.id, text: t.text, level: t.level, parents: stack.map((x) => x.key), above: stack.length ? stack[stack.length - 1].text : null };
+      stack.push(h);
+      out.all.push(h);
+      if (!out.has(key)) out.set(key, h);
+    }
+  }
+  return out;
+}
+
 // a chapter's part of the text replaced by its edited version (the rest exactly as it was)
 function replaceChapter(markdown, index, edited) {
   const { intro, chapters } = splitChapters(markdown);
@@ -154,4 +212,8 @@ const words = (mdText) => (readLines(mdText).join(' ').match(/[\p{L}\p{N}]+/gu) 
 // characters with spaces (line breaks not counted)
 const chars = (mdText) => readLines(mdText).reduce((n, line) => n + [...line].length, 0);
 
-module.exports = { renderPage, splitChapters, replaceChapter, words, chars, IMAGE_NAME };
+// a page's address on the site (frontend: src/views/page.ts) — heading links point there
+const SITE_ADDRESS = { 'projekt-dokumentation': '/dokumentation' };
+const siteAddress = (slug) => SITE_ADDRESS[slug] || `/pages/${slug}`;
+
+module.exports = { renderPage, pageHeadings, siteAddress, splitChapters, replaceChapter, words, chars, IMAGE_NAME };
