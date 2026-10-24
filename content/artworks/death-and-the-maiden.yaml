@@ -24,7 +24,7 @@ creator: egon-schiele
 created: 1915
 materials: [oil paint, canvas]
 dimensions: [150, 180]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "3171"
 wikidata_id: Q2438357
 metadata:
@@ -45,7 +45,7 @@ provenance:
         note: "“Inventarzugang: 1930 Ankauf Sezession, München” — read in the Internet Archive’s copy of 2024-11-13: https://web.archive.org/web/20241113040752/https://sammlung.belvedere.at/objects/1968/tod-und-madchen"
         source: belvedere-sammlung-online
         accessed: 2024-11-13
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1930
     method: purchase
     direct: true

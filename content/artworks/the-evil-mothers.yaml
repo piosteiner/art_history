@@ -21,7 +21,7 @@ creator: giovanni-segantini
 created: 1894
 materials: [oil paint, canvas]
 dimensions: [105, 200]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "485"
 wikidata_id: Q749201
 metadata:
@@ -41,7 +41,7 @@ provenance:
         note: "“Inventarzugang: 1901 Widmung Secession, Wien, unter finanzieller Mitwirkung der Kunstfreunde” — read in the Internet Archive’s copy of 2023-10-12: https://web.archive.org/web/20231012030547/https://sammlung.belvedere.at/objects/6224/die-bosen-mutter"
         source: belvedere-sammlung-online
         accessed: 2023-10-12
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1901
     method: gift
     direct: true

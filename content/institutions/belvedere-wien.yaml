@@ -1,8 +1,8 @@
 public_id: 101496
-name: Belvedere
+name: Belvedere Wien
 names:
-  - Osterreichische Gallery
-  - Osterreichische Galerie Belvedere
+  - Österreichische Gallery
+  - Österreichische Galerie Belvedere
   - Austrian National Gallery
   - Belvedere Gallery
   - Belvedere Museum
@@ -13,23 +13,12 @@ names:
   - lang: es
     role: translation
     text: Galería Belvedere
-  - lang: ja
-    role: translation
-    text: オーストリア・ギャラリー
-  - lang: zh
-    role: translation
-    text: 奥地利美景宫美术馆
-  - lang: ko
-    role: translation
-    text: 오스트리아 벨베데레 미술관
-  - lang: ru
-    role: translation
-    text: галерея Бельведер
 kind: museum
 founded: 1907
 place: vienna
 location: [16.38083, 48.19139]
 address: Prinz Eugen-Straße 27, 1030 Wien
+description_md: "[Sammlung online](https://sammlung.belvedere.at/start)"
 website_url: https://www.belvedere.at/
 wikidata_id: Q303139
 metadata:
@@ -39,6 +28,10 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Wien_-_Schloss_Belvedere,_oberes_(1).JPG
     license: CC BY-SA 4.0
     credit: C.Stadler/Bwag
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg/1280px-Palacio_Belvedere%2C_Viena%2C_Austria%2C_2020-02-01%2C_DD_93-95_HDR.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Palacio_Belvedere,_Viena,_Austria,_2020-02-01,_DD_93-95_HDR.jpg
+    license: CC BY-SA 4.0
+    credit: Diego Delso
 identifiers:
   bnf: "118798653"
   gnd: 2165327-6

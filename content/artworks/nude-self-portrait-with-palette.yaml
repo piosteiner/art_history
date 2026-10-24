@@ -26,7 +26,7 @@ images:
 provenance:
   - owner: artist/richard-gerstl
     role: estate
-    acquired: 1908
+    acquired: 1908-11-04
     method: inheritance
     place: vienna
     label: estate of Richard Gerstl
@@ -35,6 +35,7 @@ provenance:
         note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1931); (1) / Neue Galerie, Wien (1931-1954); (2) / Galerie Würthle, Wien (1954-1966); (3) / Familie Kamm, Zug, Schweiz (1968); (4) / Rudolf Leopold, Wien (1968-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Otto Kallir: Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 125. / Archiv des Leopold Museums, Auskunft Leonora Kugler (Kunsthaus Zug) vom 16.07.2019.”"
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
+      - "The estate begins with the artist’s death: Richard Gerstl died on 4 November 1908 (the date and its source: the artist’s entry)."
   - owner_label: August and Alois Gerstl
     acquired: 1908
     ended: 1931

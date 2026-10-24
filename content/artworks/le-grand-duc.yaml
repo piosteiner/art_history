@@ -22,7 +22,7 @@ images:
 provenance:
   - owner: artist/edouard-manet
     role: estate
-    acquired: 1883
+    acquired: 30 April 1883
     ended: 1884-02-04
     method: inheritance
     direct: true
@@ -32,6 +32,7 @@ provenance:
         note: "Footnote: Auktion Hôtel Drouot (04.-05.02.1884), Lot 88."
         source: kunsthaus-zurich-sammlung-online
         accessed: 2026-10-13
+      - "The estate begins with the artist’s death: Édouard Manet died on 30 April 1883 (the date and its source: the artist’s entry)."
   - owner: institution/hotel-drouot
     role: agent
     acquired: 1884-02-04/1884-02-05

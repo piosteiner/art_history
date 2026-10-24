@@ -7,6 +7,7 @@ names:
     text: The Wayfarer
 creator: koloman-moser
 created: c. 1914
+created_span: uncertain
 materials: [oil paint, canvas]
 dimensions: [75.5, 62.4]
 institution: leopold-museum
@@ -22,7 +23,7 @@ images:
 provenance:
   - owner: artist/koloman-moser
     role: estate
-    acquired: 1918
+    acquired: 1918-10-18
     method: inheritance
     place: vienna
     label: estate of Koloman Moser (estate number 170)
@@ -31,6 +32,7 @@ provenance:
         note: "“Nachlass Koloman Moser, Wien; / Editha Hauska, Wien (1918); (1) / Kunstverlag Wolfrum, Wien (1920); (2) / Auktion: 23. / 24.04.1928, Dorotheum Wien, 387. Kunstauktion, Los Nr. 116; (3) / Auktion: 03.-05.11.1932, Buch- und Kunstantiquariat Dr. Ignaz Schwarz, Wien, Sammlung eines Wiener Kunstfreundes (18. Versteigerung), Los Nr. 35; (4) / Dr. Rudolf Leopold, Wien (vor 1980-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Archiv des Leopold Museums, Lieferschein für Leihgaben an das Rheinische Landesmuseum, Bonn vom 08.07.1980”"
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
+      - "The estate begins with the artist’s death: Koloman Moser died on 18 October 1918 (the date and its source: the artist’s entry)."
   - owner_label: Editha Hauska
     acquired: 1918
     place: vienna

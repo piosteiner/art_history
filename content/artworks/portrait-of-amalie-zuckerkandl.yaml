@@ -23,9 +23,10 @@ names:
 creator: gustav-klimt
 created: 1917/1918
 created_label: c. 1910s
+created_span: uncertain
 materials: [oil paint, canvas]
 dimensions: [128, 128]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "7700"
 wikidata_id: Q28007512
 metadata:
@@ -82,7 +83,7 @@ provenance:
         note: “Schlechte wirtschaftliche Lage hat dann offensichtlich vor 1945 zu einem Verkauf des Gemäldes an Frau Dr. Vita Künstler geführt.”
         source: kunstrueckgabebeirat-zuckerkandl-2005
         accessed: 2026-10-19
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1988
     method: gift
     direct: true

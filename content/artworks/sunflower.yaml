@@ -17,9 +17,10 @@ names:
 creator: gustav-klimt
 created: 1907/1908
 created_label: c. 1900s
+created_span: uncertain
 materials: [oil paint, canvas]
 dimensions: [110, 110]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "10500"
 wikidata_id: Q28015487
 metadata:
@@ -68,7 +69,7 @@ provenance:
         note: "“1907/08–1918, Eigentum, Gustav Klimt, Wien [1] spätestens 1928–1938, keine Angabe, Heinrich Mayer, Wien [2] 1938–1978, Nachlass, Richard Parzer, Wien 1978–2010, Nachlass, Peter Parzer, Wien 2012, Legat, Österreichische Galerie Belvedere, Wien [3] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–14, Taf. 10 (Sonnenblume [Besitzer: Der Künstler]). [2] XCIX. Ausstellung der Vereinigung bildender Künstler Wiener Secession. Klimt-Gedächtnis-Ausstellung (Ausst.-Kat. Secession, Wien), Wien 1928, S. 13, Kat. Nr. 50 (Sonnenblume [Privatbesitz]). [3] Archiv des Belvedere, Wien, Zl. 8/2012.” — read in the Internet Archive’s copy of 2026-07-10: https://web.archive.org/web/20260710042904/https://sammlung.belvedere.at/objects/21865/sonnenblume"
         source: belvedere-sammlung-online
         accessed: 2026-07-10
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 2012
     method: bequest
     direct: true

@@ -27,6 +27,7 @@ names:
 creator: gustav-klimt
 created: 1908/1915
 created_label: c. 1910
+created_span: uncertain
 materials: [oil paint, canvas]
 dimensions: [180.5, 200.5]
 institution: leopold-museum
@@ -43,7 +44,7 @@ images:
 provenance:
   - owner: artist/gustav-klimt
     role: estate
-    acquired: 1918
+    acquired: 1918-02-06
     method: inheritance
     place: vienna
     label: estate of Gustav Klimt
@@ -52,6 +53,7 @@ provenance:
         note: “Nachlass Gustav Klimt, Wien (1918); / Hans Böhler, Wien (nach 1918); (1) / Ab 1943 in einem Bergungsort der Städtischen Sammlungen deponiert (2) / Marietta Preleuthner, Wien (vor 1958-1978); (3) / Dr. Rudolf Leopold, Wien (1978-1994); (4) / Leopold Museum-Privatstiftung, Wien (1994). / Tobias G. Natter / Elisabeth Leopold (Hrsg.), Gustav Klimt. Die Sammlung im Leopold Museum, Ostfildern 2013, S. 216, G8 / Archiv des Leopold Museums, Kaufvertrag und Überweisungsquittung vom 17.01.1978”
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
+      - "The estate begins with the artist’s death: Gustav Klimt died on 6 February 1918 (the date and its source: the artist’s entry)."
   - owner: artist/hans-bohler
     acquired: after 1918
     place: vienna

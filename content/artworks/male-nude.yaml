@@ -15,7 +15,7 @@ creator: gustav-klimt
 created: 1883
 materials: [oil paint, canvas]
 dimensions: [68, 54.8]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "5992"
 wikidata_id: Q28005437
 metadata:
@@ -83,7 +83,7 @@ provenance:
         note: "“1883–1918, Eigentum, Gustav Klimt, Wien (?) 1918–1923, Nachlass, Gustav Klimt, Wien (?) 1923, Auktion, Dorotheum, Wien [1] 1923–1971, Ankauf, Unbekannter Privatbesitz oder Walter Reinhardt, Wien [2] 1971–1973, Übernahme, Theresia Reinhardt, Wien [3] 1973, Ankauf, Österreichische Galerie, Wien [4] [1] 13. Kleine Auktion in der Kunstabteilung. Ölgemälde, Aquarelle, Handzeichnungen, Miniaturen, Graphik, Glas, Porzellan, Keramik, Möbel, Metallarbeiten, Textilien aus Privatbesitz (Aukt.-Kat. Dorotheum, Wien, 19./21.12.1923), Nr. 224, o. Abb. [2] Übernahme von Walter Reinhardt im Erbweg. Archiv des Belvedere (AdB), Wien, Zl. 824/1973; im Erwerbungsakt wird der 1971 verstorbene Walter Reinhardt als Eigentümer genannt. [3] AdB, Wien, Zl. 824/1973. [4] Ebd.” — read in the Internet Archive’s copy of 2026-07-27: https://web.archive.org/web/20260727025523/https://sammlung.belvedere.at/objects/4742/mannlicher-akt"
         source: belvedere-sammlung-online
         accessed: 2026-07-27
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1973
     method: purchase
     direct: true

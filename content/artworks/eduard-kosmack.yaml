@@ -9,7 +9,7 @@ creator: egon-schiele
 created: 1910
 materials: [oil paint, canvas]
 dimensions: [99.8, 99.5]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "4702"
 web_url: http://www.egonschieleonline.org/works/paintings/work/p165
 wikidata_id: Q28003303
@@ -38,7 +38,7 @@ provenance:
         note: "“Eduard Kosmack, Mödling. 1928 Ferdinand Eckhardt, Wien 1953 Ankauf Ferdinand Eckhardt, Wien” — read in the Internet Archive’s copy of 2026-10-06: https://web.archive.org/web/20261006185940/https://sammlung.belvedere.at/objects/3456/eduard-kosmack"
         source: belvedere-sammlung-online
         accessed: 2026-10-06
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1953
     method: purchase
     direct: true

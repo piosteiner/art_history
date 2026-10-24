@@ -14,6 +14,7 @@ names:
 creator: richard-gerstl
 created: 1904/1905
 created_label: c. 1900s
+created_span: uncertain
 materials: [oil paint, canvas]
 dimensions: [159, 109]
 institution: leopold-museum
@@ -29,7 +30,7 @@ images:
 provenance:
   - owner: artist/richard-gerstl
     role: estate
-    acquired: 1908
+    acquired: 1908-11-04
     method: inheritance
     place: vienna
     label: estate of Richard Gerstl
@@ -38,6 +39,7 @@ provenance:
         note: "“Nachlass Richard Gerstl, Wien (1908); / August und Alois Gerstl, Wien (1908-1955); (1) / Hilde Mader, Wien (1955-1962); (2) / Dr. Rudolf Leopold, Wien (1962-1994); (3) / Leopold Museum-Privatstiftung, Wien (1994). / Rückseite: Nachlassbestätigung; Dr. Otto Nirenstein erstellt 1931 ein Nachlassverzeichnis, das “Selbstbildnis (Akt vor blauem Grund)” erhält die Nummer 54. Otto Kallir, Richard Gerstl (1883-1908). Beiträge zur Dokumentation seines Lebens und Werkes, in: Mitteilungen der Österreichischen Galerie, Jg. 18 (1974), Nr. 62, S. 163. Das Bild gehört nicht zu jenen 36 Gemälden, die von Otto Nirenstein erworben wurden. / Archiv des Leopold Museums, Kaufvertrag vom 31.05.1962; Katalog der Secession, Wien 1966, Nr. 5.”"
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
+      - "The estate begins with the artist’s death: Richard Gerstl died on 4 November 1908 (the date and its source: the artist’s entry)."
   - owner_label: August and Alois Gerstl
     acquired: 1908
     ended: 1955

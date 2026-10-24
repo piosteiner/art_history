@@ -21,7 +21,7 @@ images:
 provenance:
   - owner: artist/egon-schiele
     role: estate
-    acquired: 1918
+    acquired: 31 October 1918
     method: inheritance
     place: vienna
     label: estate of Egon Schiele
@@ -30,6 +30,7 @@ provenance:
         note: “Nachlass Egon Schiele, Wien (1919); (1) / Max Hevesi, Wien (1919); (2) / Otto Nirenstein bzw. Neue Galerie, Wien (vor 1930-1948); (3) / Galerie St. Etienne, New York (1948-1954); (4) / Dr. Rudolf Leopold, Wien (1954-1994); (5) / Leopold Museum-Privatstiftung, Wien (1994). / Niederacher, Schiele, S. 5; Archiv des Leopold Museums, Jane Kallir an Patricia Spiegelfeld vom 31. Mai 2002 / Archiv des Leopold Museums, Tauschvertrag zwischen Dr. Rudolf Leopold und Otto Kallir vom 14. Juli 1954; Archiv des Bundesdenkmalamtes, Ausfuhren AZ 1487/54, Ausfuhrbewilligung vom 15. Juli 1954.”
         source: leopold-museum-online-sammlung
         accessed: 2026-10-19
+      - "The estate begins with the artist’s death: Egon Schiele died on 31 October 1918 (the date and its source: the artist’s entry)."
   - owner_label: Max Hevesi
     acquired: 1919
     place: vienna

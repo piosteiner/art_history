@@ -24,7 +24,7 @@ creator: egon-schiele
 created: 1918
 materials: [oil paint, canvas]
 dimensions: [150, 160.8]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "4277"
 wikidata_id: Q28002609
 metadata:
@@ -45,7 +45,7 @@ provenance:
         note: "“Seit 1918 Hans Böhler, Wien und New York 1948 Ankauf Hans Böhler, New York” — read in the Internet Archive’s copy of 2026-02-26: https://web.archive.org/web/20260226010313/https://sammlung.belvedere.at/objects/3071/kauerndes-menschenpaar-die-familie"
         source: belvedere-sammlung-online
         accessed: 2026-02-26
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1948
     method: purchase
     direct: true

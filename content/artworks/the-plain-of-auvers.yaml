@@ -13,7 +13,7 @@ creator: vincent-van-gogh
 created: 1890
 materials: [oil paint, canvas]
 dimensions: [50, 101]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "1007"
 web_url: http://www.vggallery.com/painting/p_0775.htm
 wikidata_id: Q26221225
@@ -51,7 +51,7 @@ provenance:
         note: "“Galerie d' Art C. M. van Gogh, Amsterdam. Johanna van Gogh-Bonger. 1903 Secession, Wien 1909 Widmung Secession, Wien” — read in the Internet Archive’s copy of 2026-01-30: https://web.archive.org/web/20260130032839/https://sammlung.belvedere.at/objects/9/die-ebene-von-auvers"
         source: belvedere-sammlung-online
         accessed: 2026-01-30
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1909
     method: gift
     direct: true

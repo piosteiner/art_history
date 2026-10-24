@@ -1,0 +1,28 @@
+public_id: 102307
+name: Eugene of Savoy
+kind: person
+birth: 1663-10-18
+death: 1736-04-21
+wikidata_id: Q152428
+metadata:
+  sources: [Wikidata Q152428 (retrieved 2026-10-23)]
+relationships:
+  - type: founded
+    to: institution/belvedere-wien
+    sources:
+      - accessed: 2026-10-23
+        property: P112
+        wikidata: Q303139
+sources:
+  kind:
+    - accessed: 2026-10-23
+      property: P31
+      wikidata: Q152428
+  birth:
+    - accessed: 2026-10-23
+      property: P569
+      wikidata: Q152428
+  death:
+    - accessed: 2026-10-23
+      property: P570
+      wikidata: Q152428

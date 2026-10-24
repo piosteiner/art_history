@@ -22,7 +22,7 @@ creator: gustav-klimt
 created: 1906
 materials: [parchment, watercolor paint]
 dimensions: [50, 20]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "5077"
 wikidata_id: Q2551417
 metadata:
@@ -80,7 +80,7 @@ provenance:
         note: "“1904–1907, Eigentum, Gustav Klimt, Wien 1907, Übernahme, Galerie H. O. Miethke, Wien [1] 1908–1913, Ankauf, Karl Wittgenstein, Wien [2] 1913–1956, keine Angabe, Unbekannter Besitz, Wien 1956, keine Angabe, Galerie L. T. Neumann, Wien [3] 1956, Ankauf, Österreichische Galerie, Wien [4] [1] Übernahme durch den Künstler in Kommision. Karteikarte Nr. 541 der Galerie Miethke, Privatbesitz; zit. nach Tobias G. Natter, Die Galerie Miethke. Eine Kunsthandlung im Zentrum der Moderne (Ausst.-Kat. Jüdisches Museum der Stadt Wien), Wien 2003, S. 253. [2] Ebd. [3] Archiv des Belvedere, Wien, Zl. 369/1956, Erwerbungsakt. [4] Ebd.” — read in the Internet Archive’s copy of 2026-10-04: https://web.archive.org/web/20261004100954/https://sammlung.belvedere.at/objects/3828/freundinnen-wasserschlangen-i"
         source: belvedere-sammlung-online
         accessed: 2026-10-04
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1956
     method: purchase
     direct: true

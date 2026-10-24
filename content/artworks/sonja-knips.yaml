@@ -9,7 +9,7 @@ creator: gustav-klimt
 created: 1898
 materials: [oil paint, canvas]
 dimensions: [145, 146]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "4403"
 wikidata_id: Q28002801
 metadata:
@@ -31,7 +31,7 @@ provenance:
         note: "“1898–1950, Ankauf, Sonja Knips, Wien 1950, Ankauf, Österreichische Galerie, Wien [1] [1] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950. Ankauf um 20.000 S (gemeinsam mit Adam und Eva).” — read in the Internet Archive’s copy of 2026-08-27: https://web.archive.org/web/20260827024125/https://sammlung.belvedere.at/objects/3197/sonja-knips"
         source: belvedere-sammlung-online
         accessed: 2026-08-27
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 31 August 1950
     method: purchase
     direct: true

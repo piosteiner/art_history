@@ -17,16 +17,17 @@ names:
   - lang: es
     role: translation
     text: Adán y Eva
-  - lang: ru
-    role: translation
-    text: Адам и Ева
 creator: gustav-klimt
-created: 1917/1918
-created_label: c. 1910s
+created: 1916/1918
+created_span: duration
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [173, 60]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "4402"
+web_url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+description_md: Das Gemälde ist nicht fertiggestellt, sehr gut sichtbar an der linken Seite wo die rechten Hände der Personen zu sehen sein sollten. ([Belvedere](https://sammlung.belvedere.at/objects/3196/adam-und-eva))
 wikidata_id: Q28002799
 metadata:
   sources: [Wikidata Q28002799 (retrieved 2026-10-20)]
@@ -38,7 +39,7 @@ images:
 provenance:
   - owner: artist/gustav-klimt
     role: estate
-    acquired: 1918
+    acquired: 1918-02-06
     method: inheritance
     place: vienna
     label: estate of Gustav Klimt
@@ -47,6 +48,7 @@ provenance:
         note: "“1918, Nachlass, Gustav Klimt, Wien 1919, Übernahme, Kunsthandlung Gustav Nebehay, Wien [1] 1919–1950, Ankauf, Sonja Knips, Wien [2] 1950, Ankauf, Österreichische Galerie, Wien [3] [1] Gedächtnis-Ausstellung Gustav Klimt, Kunsthandlung Gustav Nebehay, Wien 6.2.–6.3.1919 (ohne Katalog) [2] Ankauf aus der Gedächtnis-Ausstellung Gustav Klimt der Kunsthandlung Gustav Nebehay. [3] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950 Ankauf um 20.000 S (gemeinsam mit Porträt Sonja Knips).” — read in the Internet Archive’s copy of 2026-08-05: https://web.archive.org/web/20260805080821/https://sammlung.belvedere.at/objects/3196/adam-und-eva"
         source: belvedere-sammlung-online
         accessed: 2026-08-05
+      - "The estate begins with the artist’s death: Gustav Klimt died on 6 February 1918 (the date and its source: the artist’s entry)."
   - owner: person/gustav-nebehay
     role: dealer
     acquired: 1919
@@ -69,7 +71,7 @@ provenance:
         note: "“1918, Nachlass, Gustav Klimt, Wien 1919, Übernahme, Kunsthandlung Gustav Nebehay, Wien [1] 1919–1950, Ankauf, Sonja Knips, Wien [2] 1950, Ankauf, Österreichische Galerie, Wien [3] [1] Gedächtnis-Ausstellung Gustav Klimt, Kunsthandlung Gustav Nebehay, Wien 6.2.–6.3.1919 (ohne Katalog) [2] Ankauf aus der Gedächtnis-Ausstellung Gustav Klimt der Kunsthandlung Gustav Nebehay. [3] Archiv des Belvedere, Wien, Zl. 94/1950, Erwerbungsakt, Rechnung Sonja Knips, 31.8.1950 Ankauf um 20.000 S (gemeinsam mit Porträt Sonja Knips).” — read in the Internet Archive’s copy of 2026-08-05: https://web.archive.org/web/20260805080821/https://sammlung.belvedere.at/objects/3196/adam-und-eva"
         source: belvedere-sammlung-online
         accessed: 2026-08-05
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 31 August 1950
     method: purchase
     direct: true
@@ -84,29 +86,51 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-08-05
 sources:
+  kind:
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-10-23
   names:
-    - accessed: 2026-10-20
+    - accessed: 2026-10-23
       wikidata: Q28002799
+  medium:
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-10-23
   created:
-    - accessed: 2026-10-20
-      property: P571
-      wikidata: Q28002799
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-10-23
   creator:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q28002799
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-10-23
   materials:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q28002799
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-10-23
   dimensions:
     - accessed: 2026-10-20
       property: P2048
       wikidata: Q28002799
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-10-23
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q28002799
+  created_span:
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      note: “1916–1918, Öl auf Leinwand (unvollendet)” — “In einem seiner letzten Werke, das infolge seines Todes unvollendet geblieben ist …” (read in the Internet Archive’s copy of 2026-05-17; the site refuses this server)
+      source: belvedere-sammlung-online
+      accessed: 2026-10-23
   inventory_number:
     - accessed: 2026-10-20
       property: P217

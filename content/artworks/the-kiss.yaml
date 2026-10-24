@@ -41,9 +41,10 @@ names:
 creator: gustav-klimt
 created: 1907/1908
 created_label: c. 1907
+created_span: uncertain
 materials: [oil paint, gold leaf, canvas]
 dimensions: [180, 180]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "912"
 wikidata_id: Q698487
 metadata:
@@ -70,7 +71,7 @@ provenance:
         room: Raum 22
         place: vienna
         document: Katalog der Kunstschau in Wien
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1909-07-22
     method: transfer
     direct: true

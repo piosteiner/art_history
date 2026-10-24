@@ -21,7 +21,7 @@ creator: gustav-klimt
 created: 1906
 materials: [oil paint, canvas]
 dimensions: [153, 133]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "3379"
 wikidata_id: Q28001663
 metadata:
@@ -65,7 +65,7 @@ provenance:
         note: "“1906–1927, Ankauf, Fritza Riedler, Wien [1] 1927–1936, Übernahme, Aloys Riedler, Wien [2] 1936/37, Übernahme, Emilie Barbara Langer, Wien [3] 1937, Ankauf, Österreichische Galerie, Wien [4] [1] Galerie H. O. Miethke (Hg.), Das Werk Gustav Klimts, Wien 1908–1914, 1. Lieferung (1908), Taf. 7, Weibliches Bildnis (Besitzer: Frau Geh. Rat Fritza Riedler, Berlin). [2] Übernahme im Erbweg von Fritza Riedler. [3] Übernahme im Erbweg von Aloys Riedler. Tobias G. Natter / Gerbert Frodl (Hg.), Klimt und die Frauen (Ausst.-Kat. Belvedere, Wien), Köln 2000, S. 114. [4] Archiv des Belvedere, Wien, Zl. 588/1937; Erwerbungsakt, Ankauf um 4.000 S.” — read in the Internet Archive’s copy of 2026-08-15: https://web.archive.org/web/20260815052300/https://sammlung.belvedere.at/objects/2177/fritza-riedler"
         source: belvedere-sammlung-online
         accessed: 2026-08-15
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1937
     method: purchase
     direct: true

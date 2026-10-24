@@ -23,7 +23,7 @@ creator: egon-schiele
 created: 1917
 materials: [oil paint, canvas]
 dimensions: [100, 170]
-institution: belvedere
+institution: belvedere-wien
 inventory_number: "4438"
 web_url: http://www.egonschieleonline.org/works/paintings/work/p304
 wikidata_id: Q19967004
@@ -65,7 +65,7 @@ provenance:
         note: “Mit Teilerkenntnis der Rückstellungskommission beim Landesgericht Salzburg vom 31.5.1948 wurde Friedrich Welz verpflichtet, Riegers Erben eine Reihe von Kunstwerken, darunter Schieles "Kardinal und Nonne", "Liebespaar" und "Bildnis seiner Frau" zurückzustellen.”
         source: kunstrueckgabebeirat-rieger-2004
         accessed: 2026-10-19
-  - owner: institution/belvedere
+  - owner: institution/belvedere-wien
     acquired: 1950
     method: purchase
     direct: true
