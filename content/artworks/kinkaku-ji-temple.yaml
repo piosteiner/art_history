@@ -1,0 +1,35 @@
+public_id: 102334
+title: Kinkaku-ji Temple
+names:
+  - Rokuon-ji
+  - Kinkaku-ji
+  - lang: ja
+    role: translation
+    text: 鹿苑寺
+created: 1397
+materials: [wood, kinpaku, Jōbōji urushi, gold leaf]
+location: [135.7285, 35.0395]
+wikidata_id: Q270983
+metadata:
+  sources: [Wikidata Q270983 (retrieved 2026-10-24)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 1397
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg/1280px-Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day%2C_Kyoto%2C_Japan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day,_Kyoto,_Japan.jpg
+    license: CC BY-SA 4.0
+    credit: Basile Morin
+identifiers:
+  gnd: 104787749X
+  viaf: "306367221"
+sources:
+  created:
+    - accessed: 2026-10-24
+      property: P571
+      wikidata: Q270983
+  location:
+    - accessed: 2026-10-24
+      property: P625
+      wikidata: Q270983

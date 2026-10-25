@@ -1,0 +1,18 @@
+public_id: 102325
+name: Axis Powers
+founded: 1940
+wikidata_id: Q43056
+metadata:
+  sources: [Wikidata Q43056 (retrieved 2026-10-24)]
+relationships:
+  - type: participated_in
+    to: event/world-war-ii
+    sources:
+      - accessed: 2026-10-24
+        property: P710
+        wikidata: Q362
+sources:
+  founded:
+    - accessed: 2026-10-24
+      property: P571
+      wikidata: Q43056

@@ -1,0 +1,33 @@
+public_id: 102330
+title: Ginkaku-ji Temple
+names:
+  - Jisho-ji
+  - Ginkaku-ji
+  - Jishōji
+  - lang: ja
+    role: translation
+    text: 慈照寺
+created: 1465
+location: [135.79833, 35.02667]
+wikidata_id: Q257473
+metadata:
+  sources: [Wikidata Q257473 (retrieved 2026-10-24)]
+relationships:
+  - type: created_in
+    to: place/kyoto
+    period: 1465
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0b/GinkakujiTemple.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:GinkakujiTemple.jpg
+    license: CC BY-SA 3.0
+identifiers:
+  viaf: "158473397"
+sources:
+  created:
+    - accessed: 2026-10-24
+      property: P571
+      wikidata: Q257473
+  location:
+    - accessed: 2026-10-24
+      property: P625
+      wikidata: Q257473

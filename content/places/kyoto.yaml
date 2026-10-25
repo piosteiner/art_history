@@ -1,0 +1,41 @@
+public_id: 102329
+name: Kyoto
+names:
+  - lang: ja
+    role: original
+    text: 京都市
+  - lang: ko
+    role: translation
+    text: 교토시
+  - lang: de
+    role: translation
+    text: Kyōto
+  - lang: es
+    role: translation
+    text: Kioto
+  - lang: ru
+    role: translation
+    text: Киото
+  - lang: pt
+    role: translation
+    text: Quioto
+kind: settlement
+parent: japan
+country_code: JP
+location: [135.76811, 35.01161]
+wikidata_id: Q34600
+metadata:
+  sources: [Wikidata Q34600 (retrieved 2026-10-24)]
+sources:
+  kind:
+    - accessed: 2026-10-24
+      property: P31
+      wikidata: Q34600
+  parent:
+    - accessed: 2026-10-24
+      property: P131
+      wikidata: Q34600
+  location:
+    - accessed: 2026-10-24
+      property: P625
+      wikidata: Q34600

@@ -1,0 +1,31 @@
+public_id: 102322
+name_lang: de
+name: Gemäldebrand im Flakbunker Berlin-Friedrichshain
+names:
+  - Disaster at Flakturm Friedrichshain
+  - lang: de
+    role: translation
+    text: Feuer im Flakturm Friedrichshain und Verschwinden der dort aufbewahrten Gemälde
+kind: Brand
+parent: world-war-ii
+period: 1945-05-06
+place: germany
+description_md: Wikipedia listet Gemälde, welche vermutlich verbrannten. [Wikipedia](https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie) Oder direkt über [Wikimedia](https://commons.wikimedia.org/wiki/Category:Paintings_lost_from_Kaiser-Friedrich-Museum?uselang=de)
+wikidata_id: Q110787858
+metadata:
+  sources: [Wikidata Q110787858 (retrieved 2026-10-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/44/Bundesarchiv_Bild_183-M1203-316%2C_Berlin%2C_gesprengter_Bunker_im_Friedrichshain.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-M1203-316,_Berlin,_gesprengter_Bunker_im_Friedrichshain.jpg
+    license: CC BY-SA 3.0
+    credit: Otto Donath (1898–1971)
+    caption: Bundesarchiv Bild 183-M1203-316, Berlin, gesprengter Bunker im Friedrichshain
+sources:
+  place:
+    - accessed: 2026-10-24
+      property: P276
+      wikidata: Q110787858
+  period:
+    - accessed: 2026-10-24
+      property: P585
+      wikidata: Q110787858

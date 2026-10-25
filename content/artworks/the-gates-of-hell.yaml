@@ -1,0 +1,48 @@
+public_id: 102313
+title_lang: en
+title: The Gates of Hell
+names:
+  - lang: fr
+    role: translation
+    text: La Porte de l'Enfer
+  - lang: de
+    role: translation
+    text: Das Höllentor
+  - lang: it
+    role: translation
+    text: La porta dell'inferno
+  - lang: es
+    role: translation
+    text: La puerta del Infierno
+  - lang: ja
+    role: translation
+    text: 地獄の門
+creator: auguste-rodin
+created: 1880/1917
+created_label: c. 1880
+created_span: uncertain
+dimensions: [635, 400, 85]
+wikidata_id: Q2003287
+metadata:
+  sources: [Wikidata Q2003287 (retrieved 2026-10-24)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Rodin_Porte_enfer.jpg/1280px-Rodin_Porte_enfer.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rodin_Porte_enfer.jpg
+    license: CC BY-SA 3.0
+    credit: Till Niermann
+identifiers:
+  gnd: 4269069-9
+  viaf: "177932680"
+sources:
+  created:
+    - accessed: 2026-10-24
+      property: P571
+      wikidata: Q2003287
+  creator:
+    - accessed: 2026-10-24
+      property: P170
+      wikidata: Q2003287
+  dimensions:
+    - url: https://www.musee-rodin.fr/en/musee/collections/oeuvres/gates-hell
+      source: musee-rodin-fr
+      accessed: 2026-10-24

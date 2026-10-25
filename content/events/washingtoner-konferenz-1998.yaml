@@ -5,7 +5,25 @@ names:
   - lang: en
     role: translation
     text: Washington Conference Principles on Nazi-Confiscated Art
+  - lang: de
+    role: alternative
+    text: Washingtoner Erklärung
+  - Washington Declaration
+  - lang: en
+    role: alternative
+    text: Washington Principles
+  - lang: fr
+    role: translation
+    text: Principes de la Conférence de Washington applicables aux œuvres d’art confisquées par les nazis
 period: 1998
 description_md: |-
   [The Principles](https://www.state.gov/washington-conference-principles-on-nazi-confiscated-art/)
   [Wikipedia](https://de.wikipedia.org/wiki/Washingtoner_Erkl%C3%A4rung)
+wikidata_id: Q17354266
+metadata:
+  sources: [Wikidata Q17354266 (retrieved 2026-10-24)]
+sources:
+  period:
+    - accessed: 2026-10-24
+      property: P585
+      wikidata: Q17354266

@@ -1,0 +1,31 @@
+public_id: 102324
+name: World War II
+names:
+  - World War Two
+  - 2nd World War
+  - the Second World War
+  - lang: de
+    role: translation
+    text: Zweiter Weltkrieg
+period: 1 September 1939–2 September 1945
+place: russia
+wikidata_id: Q362
+metadata:
+  sources: [Wikidata Q362 (retrieved 2026-10-24)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/54/Infobox_collage_for_WWII.PNG
+    source_url: https://commons.wikimedia.org/wiki/File:Infobox_collage_for_WWII.PNG
+    license: CC BY-SA 3.0 de
+    credit: User:Staberinde
+identifiers:
+  gnd: 4079167-1
+  hls: "008927"
+sources:
+  place:
+    - accessed: 2026-10-24
+      property: P276
+      wikidata: Q362
+  period:
+    - accessed: 2026-10-24
+      property: P585
+      wikidata: Q362

@@ -1,0 +1,18 @@
+public_id: 102309
+name: Auguste Rodin
+given_name: Auguste
+family_name: Rodin
+birth: 1840-11-12
+death: 1917-11-17
+wikidata_id: Q30755
+metadata:
+  sources: [Wikidata Q30755 (retrieved 2026-10-24)]
+sources:
+  birth:
+    - accessed: 2026-10-24
+      property: P569
+      wikidata: Q30755
+  death:
+    - accessed: 2026-10-24
+      property: P570
+      wikidata: Q30755

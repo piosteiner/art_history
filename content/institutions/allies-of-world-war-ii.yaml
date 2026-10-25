@@ -1,0 +1,18 @@
+public_id: 102326
+name: Allies of World War II
+founded: 1939
+wikidata_id: Q329888
+metadata:
+  sources: [Wikidata Q329888 (retrieved 2026-10-24)]
+relationships:
+  - type: participated_in
+    to: event/world-war-ii
+    sources:
+      - accessed: 2026-10-24
+        property: P710
+        wikidata: Q362
+sources:
+  founded:
+    - accessed: 2026-10-24
+      property: P571
+      wikidata: Q329888
