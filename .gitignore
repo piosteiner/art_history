@@ -15,6 +15,7 @@ backend/test/e2e/.results/
 backend/playwright-report/
 frontend/dist/
 frontend/test-results/
+backend/test-results/
 frontend/playwright-report/
 logs/
 *.log
