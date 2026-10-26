@@ -117,6 +117,7 @@ export function list(main: HTMLElement, plural: Plural) {
   const sortLabel = main.querySelector<HTMLLabelElement>('.list-sort')!;
   const sortSelect = sortLabel.querySelector('select')!;
   const current = guard();
+  filter.value = new URLSearchParams(location.search).get('q') ?? '';
 
   let sort = '';
   let all: Entry<AnyItem>[] = [];
@@ -164,6 +165,7 @@ export function list(main: HTMLElement, plural: Plural) {
     if (gapOnly) q.set('provenance_gap', '1933-1945');
     if (heldBy) q.set('institution', heldBy);
     if (byArtist) q.set('artist', byArtist);
+    if (query) q.set('q', query);  // the search too: back from an entry returns to it
     return `/${plural}${q.size ? `?${q}` : ''}`;
   };
   function drawGapFilter() {
@@ -251,6 +253,7 @@ export function list(main: HTMLElement, plural: Plural) {
   let request = 0;
   async function search(q: string) {
     query = q;
+    replaceUrl(urlNow());
     similar = [];
     corrected = null;
     suggested = null;

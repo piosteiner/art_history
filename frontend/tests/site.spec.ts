@@ -203,6 +203,38 @@ test('header search finds fields and typos', async ({ page }) => {
   await expect(page).toHaveURL(/\/(artists|artworks)\//);
 });
 
+test('back from an entry returns to the search it was opened from: search page, list, header', async ({ page }) => {
+  await page.goto('/search');
+  await page.fill('.search-page-form input', 'gauguin');
+  await expect(page).toHaveURL(/\/search\?q=gauguin$/);
+  await page.locator('#items .text-hit-name').first().click();
+  await expect(page).not.toHaveURL(/\/search/);
+  await page.goBack();
+  await expect(page.locator('.search-page-form input')).toHaveValue('gauguin');
+  await expect(page.locator('#items .text-hit').first()).toBeVisible();
+
+  await page.goto('/artists');
+  await expect(page.locator('.card').first()).toBeVisible();
+  await page.fill('.filter', 'van gogh');
+  await expect(page).toHaveURL(/\/artists\?q=van\+gogh$/);
+  await page.locator('.card-link', { hasText: 'Vincent van Gogh' }).click();
+  await expect(page.locator('h1')).toHaveText('Vincent van Gogh');
+  await page.goBack();
+  await expect(page.locator('.filter')).toHaveValue('van gogh');
+  await expect(page.locator('#items .card').first()).toContainText(/van gogh/i);
+  await expect(page.locator('#count')).toContainText('match');
+
+  await page.goto('/?all');
+  const input = page.locator('.search-form input');
+  await input.fill('hokusai');
+  await page.locator('.search-results [role=option] a').first().click();
+  await expect(page).toHaveURL(/\/(artists|artworks)\//);
+  await expect(input).toHaveValue('');
+  await page.goBack();
+  await expect(input).toHaveValue('hokusai');
+  await expect(page.locator('.search-results [role=option]').first()).toBeVisible();
+});
+
 test('search page (087): Enter opens full-text search — names and texts, why it matched, the passage; by type; pages', async ({ page }) => {
   await page.goto('/?all');
   const input = page.locator('.search-form input');

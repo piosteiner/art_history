@@ -2,6 +2,17 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-26
+
+### Site: back from an entry returns to the search
+- **What:** `frontend/src/views/list.ts`: the list search is part of the address (`/artists?q=van+gogh`, read on
+  opening, written while typing, like the other filters). `frontend/src/search.ts`: a hit opened from the header
+  search stores the query in the history entry it was opened from (`history.state.headerSearch`); back fills the
+  field again and reopens the hits. The search page kept `?q=` already. Test "back from an entry returns to the
+  search it was opened from" (search page, list, header).
+- **Why:** owner: back from an entry opened from search results showed an empty search.
+- **Revert:** revert the commit.
+
 ## 2026-10-23
 
 ### Pages: "Publish changes" instead of Save; page settings apart; publish from the review page

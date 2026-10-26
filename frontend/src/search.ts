@@ -131,25 +131,36 @@ export function mountSearch(root: HTMLElement) {
     }
   });
 
+  // a hit opened from the list: the page it was opened from keeps the query, so "back" shows the search again
+  const remember = () => history.replaceState({ ...history.state, headerSearch: query }, '');
+
   // Enter: the hit chosen with the arrow keys — else the search page with all results, as search boxes usually do
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const hit = hits[active];
     const q = input.value.trim();
-    if (hit && !results.hidden) navigate(href(hit.type, hit.slug));
+    if (hit && !results.hidden) {
+      remember();
+      navigate(href(hit.type, hit.slug));
+    }
     else if (q) navigate(searchUrl(q));
     close();
   });
 
   results.addEventListener('click', (e) => {
-    if ((e.target as Element).closest('a')) close();
+    const a = (e.target as Element).closest('a');
+    if (!a) return;
+    if (a.closest('[role=option]')) remember();
+    close();
   });
   document.addEventListener('click', (e) => {
     if (!root.contains(e.target as Node)) close();
   });
   window.addEventListener(ROUTE_EVENT, () => {
     close();
-    input.value = '';
+    const back = (history.state as { headerSearch?: string } | null)?.headerSearch;
+    input.value = back ?? '';
+    if (back) void run(back);
   });
 }
 
