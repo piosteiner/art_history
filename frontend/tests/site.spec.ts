@@ -2399,6 +2399,9 @@ test('project documentation (API 114/116): from the footer, the overview with it
   await expect(page.locator('.doc-chapters li').nth(1)).toContainText(/600 Wörter · 4.200 Zeichen · 3 min/);
   await expect(page.locator('.doc-body mark')).toHaveText('Markierung');
   await expect(page.locator('.doc-chapters li a')).toHaveText(['Pitch', 'Projektstart', 'Provenienz']);
+  // room for two-digit chapter numbers ("13."): tablets cut the tens off when the markers stick out of the list
+  const room = await page.locator('.doc-chapters').evaluate((ol) => parseFloat(getComputedStyle(ol).paddingLeft) / parseFloat(getComputedStyle(ol).fontSize));
+  expect(room).toBeGreaterThanOrEqual(2.2);
   // a chapter: its text, its own contents, previous / next
   await page.locator('.doc-chapters a', { hasText: 'Projektstart' }).click();
   await expect(page).toHaveURL(/\/dokumentation\/projektstart$/);

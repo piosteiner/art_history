@@ -829,12 +829,12 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .doc-page .doc-body :is(h1, h2, h3, h4, h5, h6) { scroll-margin-top: 1rem; }
 /* chapters (API 116): the overview's list, a chapter's own contents beside it, previous / next */
 .doc-page:has(.doc-layout.has-toc) { max-width: 66rem; }
-.doc-chapters { padding-left: 1.6rem; line-height: 1.9; } .doc-chapters .muted { margin-left: .4rem; }
+.doc-chapters { padding-left: 2.4em; line-height: 1.9; }  /* room for two-digit numbers ("13.") */ .doc-chapters .muted { margin-left: .4rem; }
 .doc-layout.has-toc { display: grid; grid-template-columns: 1fr 15rem; gap: 2rem; align-items: start; }
 .doc-layout.has-toc .doc-toc { order: 2; position: sticky; top: 1rem; max-height: calc(100vh - 2rem); overflow-y: auto; font-size: .9rem; }
 .doc-layout .doc-body { min-width: 0; max-width: 46rem; }
 .doc-toc-title { font-weight: 600; margin: 0 0 .3rem; }
-.doc-toc ol { margin: 0; padding-left: 1.1rem; } .doc-toc .doc-toc-2 { margin-left: .9rem; font-size: .88rem; }
+.doc-toc ol { margin: 0; padding-left: 2.2em; } .doc-toc .doc-toc-2 { margin-left: .9rem; font-size: .88rem; }
 .doc-toc .doc-toc-3 { margin-left: 1.8rem; font-size: .84rem; } .doc-toc .doc-toc-4, .doc-toc .doc-toc-5 { margin-left: 2.7rem; font-size: .82rem; color: var(--muted); }
 .doc-pager { display: flex; justify-content: space-between; gap: 1rem; margin: 2.5rem 0 1rem; padding-top: 1rem; border-top: 1px solid var(--line); flex-wrap: wrap; }
 .doc-crumb { margin-bottom: .2rem; }

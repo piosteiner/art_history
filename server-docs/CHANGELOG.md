@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-26
 
+### Site: documentation chapter numbers 10–13 cut on tablets
+- **What:** `frontend/src/style.css`: `.doc-chapters` list padding 1.6rem → 2.4em, `.doc-toc ol` 1.1rem → 2.2em, so
+  two-digit markers ("13.", "22.") fit inside the list; test in the documentation spec (padding ≥ 2.2 em).
+- **Why:** owner: on a tablet chapter 10 showed as "0", 11 as "1" — the markers stuck out of the list on the left.
+- **Revert:** revert the commit.
+
 ### Privacy statement as a CMS page; admin menu in five groups
 - **What:**
   - Data: new page `privacy` (title "Privacy", lang `en`, published) in `pages`, the statement of
