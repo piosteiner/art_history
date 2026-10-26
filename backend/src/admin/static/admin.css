@@ -1,15 +1,24 @@
-/* Art history admin — plain, dense, readable. Follows the OS light/dark setting. */
+/* Art history admin — plain, dense, readable. Follows the OS light/dark setting unless the header toggle chose a
+   theme (data-theme on <html>, static/theme.js — as on the public site). */
 :root {
   --bg: #fbfaf7; --fg: #1f1d1a; --muted: #6b665e; --line: #dedad2; --panel: #ffffff;
   --accent: #7a3e12; --accent-fg: #ffffff; --ok: #1f6b3a; --err: #a4221b; --err-bg: #fbeceb; --ok-bg: #e9f5ec;
   --code: #f1eee8; --caret: #1f1d1a;
+  color-scheme: light;  /* the browser's own parts (checkboxes, scrollbars, date pickers) match */
 }
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #171614; --fg: #e9e5de; --muted: #a39d93; --line: #35322d; --panel: #1f1e1b;
     --accent: #e3a36f; --accent-fg: #1a1208; --ok: #7ccf95; --err: #f08a82; --err-bg: #3a1d1b; --ok-bg: #1b3122;
     --code: #2a2824; --caret: #fffaf2;  /* the text cursor: bright on the dark background */
+    color-scheme: dark;
   }
+}
+:root[data-theme="dark"] {
+  --bg: #171614; --fg: #e9e5de; --muted: #a39d93; --line: #35322d; --panel: #1f1e1b;
+  --accent: #e3a36f; --accent-fg: #1a1208; --ok: #7ccf95; --err: #f08a82; --err-bg: #3a1d1b; --ok-bg: #1b3122;
+  --code: #2a2824; --caret: #fffaf2;
+  color-scheme: dark;
 }
 * { box-sizing: border-box; }
 input, textarea, [contenteditable] { caret-color: var(--caret); }
@@ -494,6 +503,18 @@ details.records > summary { cursor: pointer; color: var(--muted); }
 .md-boxlist button.md-tool { text-align: left; }
 .md-editor .cm-panels { background: var(--panel); color: var(--fg); border-color: var(--line); }
 .md-editor .cm-search input, .md-editor .cm-search button { font: inherit; font-size: .85rem; }
+/* the find panel inside a form field: the admin's input width, block labels and CodeMirror's light buttons undone */
+.md-editor .cm-panel.cm-search { padding: .45rem 2rem .45rem .6rem; line-height: 2.1; }
+.md-editor .cm-search .cm-textfield { width: 16rem; max-width: 100%; padding: .15rem .45rem; margin: 0 .3rem 0 0; vertical-align: middle;
+  border: 1px solid var(--line); border-radius: 4px; background: var(--bg); color: var(--fg); }
+.md-editor .cm-search label { display: inline-flex; align-items: center; gap: .25rem; margin: 0 .7rem 0 0; font-weight: normal; font-size: .85rem; color: var(--fg); vertical-align: middle; }
+.md-editor .cm-search input[type=checkbox] { width: auto; margin: 0; accent-color: var(--accent); }
+.md-editor .cm-search .cm-button { background: transparent; background-image: none; color: var(--fg); border: 1px solid var(--line);
+  border-radius: 4px; padding: .1rem .6rem; margin: 0 .3rem 0 0; vertical-align: middle; text-transform: none; }
+.md-editor .cm-search .cm-button:hover { border-color: var(--accent); color: var(--accent); }
+.md-editor .cm-search button[name=close] { background: none; border: 0; color: var(--muted); font-size: 1.2rem; line-height: 1; padding: .1rem .35rem;
+  top: .35rem; right: .35rem; }
+.md-editor .cm-search button[name=close]:hover { color: var(--fg); }
 .md-editor .cm-searchMatch { background: rgba(255, 213, 0, .35); } .md-editor .cm-searchMatch-selected { background: rgba(255, 140, 0, .5); }
 .md mark, .md-preview mark { background: #ffe58a; color: #1b1a17; padding: 0 .1em; }
 .md .spoiler, .md-preview .spoiler { background: var(--fg); color: transparent; border-radius: 3px; cursor: pointer; }
@@ -516,3 +537,8 @@ details.records > summary { cursor: pointer; color: var(--muted); }
 .roadmap-jetzt { border-top: 3px solid var(--accent); } .roadmap-erledigt { opacity: .85; }
 .link-button { background: none; border: 0; padding: 0; color: var(--accent); cursor: pointer; font: inherit; text-decoration: underline; } .link-button.small { font-size: .8rem; }
 .recently-deleted li { margin: .2rem 0; } .restore-preview { border: 1px solid var(--line); border-radius: 6px; padding: .3rem .9rem; margin: .6rem 0; }
+
+/* light / dark toggle in the header (static/theme.js): Auto → Light → Dark, remembered per browser */
+button.theme-toggle { background: transparent; color: var(--muted); border: 1px solid var(--line); border-radius: 999px;
+  padding: .1rem .6rem; font-size: .8rem; white-space: nowrap; }
+button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }

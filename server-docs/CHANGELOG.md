@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-26
 
+### Admin: light / dark toggle; the editor's find panel readable
+- **What:** `src/admin/static/theme.js` (plain file, in `<head>` without defer: the stored theme is set before the
+  page is drawn) + a header button "◐ Auto / ☀ Light / ☾ Dark", remembered per browser (`localStorage`
+  `arthistory-admin:theme`) — as on the site. `admin.css`: dark variables under
+  `:root:not([data-theme="light"])` in the media query and under `:root[data-theme="dark"]`, `color-scheme` so the
+  browser's own controls follow. The find panel of the Markdown editor (`.cm-search`) styled explicitly: it took the
+  admin's `input { width: 100% }` (field and checkboxes full width), `.field label { display: block }` and
+  CodeMirror's light button gradient (light text on light ground in dark mode). e2e `theme.spec.js`.
+  Two suggestions for the project documentation saved as drafts of chapters 9 and 11 (the owner publishes them).
+- **Why:** owner: the find panel was hardly visible in the dark style; a light style for the CMS like the site's.
+- **Revert:** revert the commit and deploy.
+
 ### Site: back from an entry returns to the search
 - **What:** `frontend/src/views/list.ts`: the list search is part of the address (`/artists?q=van+gogh`, read on
   opening, written while typing, like the other filters). `frontend/src/search.ts`: a hit opened from the header

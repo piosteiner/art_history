@@ -35,6 +35,7 @@ function layout({ title, user, body, flash, nav = true, page = null }) {
 <meta name="robots" content="noindex">
 <title>${title} · Art history admin</title>
 <link rel="stylesheet" href="${asset('admin.css')}">
+<script src="${asset('theme.js')}"></script>
 <script src="${asset('editor.js')}" defer></script>
 </head>
 <body data-map-js="${asset('map.js')}" data-map-css="${asset('map.css')}"${user ? html` data-live="1"` : ''}${page ? html` data-page-type="${page.type}" data-page-slug="${page.slug || ''}" data-page-mode="${page.mode}"` : ''}>
@@ -47,6 +48,7 @@ ${nav && user ? html`<header class="top">
     <span class="nav-group nav-tools"><a href="/quality">Quality</a><a href="/featured">Start views</a><a href="/pages" title="Text pages of the site, e.g. the project documentation">Pages</a><a href="/changelog" title="What changed on the site, by day">Changelog</a><a href="/roadmap" title="What is being worked on, next, later">Roadmap</a><a href="/search-words" title="Words the public search treats as the same, across languages">Search words</a><a href="/history">History</a></span>
   </nav>
   <form method="get" action="/search" class="inline top-search" role="search"><input type="search" name="q" placeholder="Search everything…" aria-label="Search everything"></form>
+  <button type="button" class="theme-toggle" data-theme-toggle title="Theme (click to change)">◐ Auto</button>
   <form method="post" action="/logout" class="inline"><span class="muted">${user.username}</span> <button class="link">Log out</button></form>
 </header>` : ''}
 <main>
