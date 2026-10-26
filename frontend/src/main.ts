@@ -8,7 +8,6 @@ import type { Plural } from './types';
 import { detail } from './views/detail';
 import { loading, showError } from './views/common';
 import { list } from './views/list';
-import { privacy } from './views/privacy';
 import { provenanceNumbers } from './views/numbers';
 import { handsPage } from './views/hands';
 import { searchPage } from './views/search';
@@ -118,8 +117,8 @@ function onRoute(route: Route) {
       document.title = 'Network · Art History';
       cleanup = lazyView(() => import('./views/graph').then((m) => () => m.graph(main, route.plural, route.slug, route.params)));
       break;
-    case 'privacy':
-      privacy(main);
+    case 'privacy':  // the CMS page "privacy" (API 114)
+      cleanup = lazyView(() => import('./views/page').then((m) => () => m.textPage(main, 'privacy')));
       break;
     case 'page':
       cleanup = lazyView(() => import('./views/page').then((m) => () => m.page(main, route.slug, route.chapter)));

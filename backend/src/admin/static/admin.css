@@ -41,12 +41,15 @@ pre { padding: .5em; overflow-x: auto; }
 .top nav { column-gap: .75rem; flex-basis: 100%; order: 3; }
 .top .top-search { margin-left: auto; }
 .top nav .nav-group { display: flex; flex-wrap: wrap; gap: .25rem .75rem; }
-.top nav .nav-group + .nav-group { border-left: 1px solid var(--line); padding-left: .75rem; }
-/* the tools (Quality, History) follow as the fourth group, like the others */
+/* a line before every group; the menu shifted left by line + padding and that strip clipped, so a group that starts a
+   row (the menu wraps on narrower screens) has no line and no indent */
+.top nav .nav-group { border-left: 1px solid var(--line); padding-left: .75rem; }
+.top nav { margin-left: calc(-.75rem - 1px); clip-path: inset(-.5rem -.5rem -.5rem calc(.75rem + 1px)); }
 @media (max-width: 760px) {  /* phones: the menu below the title, groups as rows without lines */
   .top nav { flex-direction: column; gap: .3rem; }
   .top .top-search { margin-left: 0; }
-  .top nav .nav-group + .nav-group { border-left: 0; padding-left: 0; }
+  .top nav { margin-left: 0; clip-path: none; }
+  .top nav .nav-group { border-left: 0; padding-left: 0; }
 }
 form.inline { display: inline; margin: 0; }
 

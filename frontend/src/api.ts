@@ -116,6 +116,8 @@ export interface Page {
 }
 export const getPage = (slug: string, chapter?: string | null) =>
   get<Page>(`/pages/${encodeURIComponent(slug)}`, chapter ? { chapter } : {});
+/** A short page in one piece (`?full=1`: `html` = the whole text, its headings not split into chapters). */
+export const getWholePage = (slug: string) => get<Page & { html: string }>(`/pages/${encodeURIComponent(slug)}`, { full: '1' });
 
 /** The public changelog (API 118): entries newest first, each with its bullet points (kind, rendered HTML). */
 export type ChangeKind = 'neu' | 'verbessert' | 'behoben' | 'inhalt' | 'technik';

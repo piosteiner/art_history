@@ -213,7 +213,7 @@ const words = (mdText) => (readLines(mdText).join(' ').match(/[\p{L}\p{N}]+/gu) 
 const chars = (mdText) => readLines(mdText).reduce((n, line) => n + [...line].length, 0);
 
 // a page's address on the site (frontend: src/views/page.ts) — heading links point there
-const SITE_ADDRESS = { 'projekt-dokumentation': '/dokumentation' };
+const SITE_ADDRESS = { 'projekt-dokumentation': '/dokumentation', privacy: '/privacy' };
 const siteAddress = (slug) => SITE_ADDRESS[slug] || `/pages/${slug}`;
 
 module.exports = { renderPage, pageHeadings, siteAddress, splitChapters, replaceChapter, words, chars, IMAGE_NAME };

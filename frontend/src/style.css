@@ -538,14 +538,15 @@ main { min-height: 60vh; }
 .prose-page ul { padding-left: 1.2rem; }
 .prose-page code { font-size: .88em; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; padding: 0 .3em; }
 .table-wrap { overflow-x: auto; }
-.privacy-table { border-collapse: collapse; width: 100%; font-size: .92rem; }
-.privacy-table th, .privacy-table td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--line); }
-.privacy-table th { font-weight: 600; color: var(--muted); font-size: .82rem; }
+.text-page > h1 + p { color: var(--muted); }  /* "Last updated …" */
+.text-page table { border-collapse: collapse; width: 100%; font-size: .92rem; }
+.text-page th, .text-page td { text-align: left; vertical-align: top; padding: .5rem .6rem; border-bottom: 1px solid var(--line); }
+.text-page th { font-weight: 600; color: var(--muted); font-size: .82rem; }
 @media (max-width: 640px) {
-  .privacy-table thead { display: none; }
-  .privacy-table tr { display: block; padding: .5rem 0; border-bottom: 1px solid var(--line); }
-  .privacy-table td { display: block; border: 0; padding: .15rem 0; }
-  .privacy-table td:first-child { font-weight: 600; }
+  .text-page thead { display: none; }
+  .text-page tr { display: block; padding: .5rem 0; border-bottom: 1px solid var(--line); }
+  .text-page td { display: block; border: 0; padding: .15rem 0; }
+  .text-page td:first-child { font-weight: 600; }
 }
 
 /* start map: what happened at a place, route names on hover */

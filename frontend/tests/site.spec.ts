@@ -598,12 +598,15 @@ test('artworks A–Z by the API sort_key: titles without a leading article in th
   await expect(heading('The Starry Night')).toHaveText('S');
 });
 
-test('privacy page from the footer; the site sets no cookies', async ({ page, context }) => {
+test('privacy page from the footer (the CMS page "privacy"); the site sets no cookies', async ({ page, context }) => {
   await page.goto('/artworks/the-great-wave-off-kanagawa');
   await expect(page.locator('.figure img')).toBeVisible();
   await page.locator('.site-footer a', { hasText: 'Privacy' }).click();
   await expect(page.locator('h1')).toHaveText('Privacy');
-  await expect(page.locator('main')).toContainText('info@piogino.ch');
+  await expect(page.locator('article.text-page')).toHaveAttribute('lang', 'en');
+  await expect(page.locator('.text-page > h1 + p')).toContainText('Last updated');
+  await expect(page.locator('.text-page table tbody tr').first()).toBeVisible();          // the services, from the page's Markdown table
+  await expect(page.locator('main a[href="mailto:info@piogino.ch"]').first()).toBeVisible();
   expect(await context.cookies()).toEqual([]); // the image stand-in offers a cookie (fixtures.ts): it must be refused
 });
 

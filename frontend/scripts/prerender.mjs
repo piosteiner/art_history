@@ -190,10 +190,15 @@ for (const plural of PLURALS) {
   console.log(`${plural}: ${items.length} pages`);
 }
 
+// the privacy statement: the CMS page "privacy" (API 114) with its whole text; without the API a short stand-in
+const privacyPage = await fetch(`${API}/pages/privacy?full=1`, { headers: { Accept: 'application/json' } })
+  .then((r) => (r.ok ? r.json() : null)).catch(() => null);
 await write('privacy/index.html', page(template, {
   title: 'Privacy · Art History', url: `${SITE}/privacy/`,
   description: 'Privacy statement of Art History: no cookies, no analytics, no tracking; which services see your IP address and what is stored in your browser.',
-  body: '<article class="page"><h1>Privacy</h1><p>No cookies, no analytics, no advertising, no tracking. The full statement loads with the page.</p></article>',
+  body: privacyPage
+    ? `<article class="page prose-page text-page" lang="${esc(privacyPage.lang)}" data-prerendered><h1>${esc(privacyPage.title)}</h1>${privacyPage.html}</article>`
+    : '<article class="page"><h1>Privacy</h1><p>No cookies, no analytics, no advertising, no tracking. The full statement loads with the page.</p></article>',
 }));
 urls.push(`${SITE}/privacy/`);
 // through whose hands works went 1933–1945 (API 088): its own page; other windows load from the app shell

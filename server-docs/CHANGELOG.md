@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-26
 
+### Privacy statement as a CMS page; admin menu in five groups
+- **What:**
+  - Data: new page `privacy` (title "Privacy", lang `en`, published) in `pages`, the statement of
+    `frontend/src/views/privacy.ts` word for word as Markdown (table of services, "Last updated 21 October 2026" as
+    its first line). Edited under Pages like the documentation.
+  - Site: `/privacy` shows it with `textPage()` (`src/views/page.ts`, whole text via `/v1/pages/privacy?full=1`,
+    `getWholePage` in `api.ts`); `privacy.ts` removed; table styles `.privacy-table` → `.text-page table`; prerendered
+    with its text (`scripts/prerender.mjs`). Backend: `SITE_ADDRESS.privacy = '/privacy'` (the CMS's site link).
+  - Admin menu: the tools group split — Quality · History (the data) and Pages · Changelog · Roadmap · Start views ·
+    Search words (the public site); a group starting a wrapped row has no line or indent (the menu's left strip
+    clipped). e2e `menu.spec.js`, frontend privacy test extended.
+- **Why:** owner: the last menu items were messy; the privacy page should be one of the pages in the CMS.
+- **Revert:** revert the commit, deploy; `DELETE FROM pages WHERE slug = 'privacy'` (the old view comes back with
+  the commit).
+
 ### Admin: light / dark toggle; the editor's find panel readable
 - **What:** `src/admin/static/theme.js` (plain file, in `<head>` without defer: the stored theme is set before the
   page is drawn) + a header button "◐ Auto / ☀ Light / ☾ Dark", remembered per browser (`localStorage`

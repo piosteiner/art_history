@@ -1,11 +1,12 @@
-// A text page written in the CMS (API 114), read chapter by chapter (116): the project documentation.
+// Text pages written in the CMS (API 114). `page`: read chapter by chapter (116) — the project documentation.
+// `textPage`: a short page in one piece — the privacy statement at /privacy (CMS page "privacy").
 //   /dokumentation               the overview: title, date of the last change, words and characters with spaces, the
 //                                introduction, the chapters (words, characters, minutes to read)
 //   /dokumentation/<chapter>     one chapter: its text, its own contents beside it (sticky on wide screens), previous / next
 // The chapters are the text's top-level headings (the API splits it); the HTML comes sanitized from the API. de-CH:
 // Swiss German spelling, so browsers hyphenate and read it aloud as German. An old link to a heading of the whole text
 // (/dokumentation#provenienz) opens that chapter.
-import { ApiError, getPage, type Page, type PageChapter } from '../api';
+import { ApiError, getPage, getWholePage, type Page, type PageChapter } from '../api';
 import { html, render, trusted } from '../html';
 import { navigate } from '../router';
 import { guard, showError } from './common';
@@ -40,6 +41,23 @@ function chapter(box: HTMLElement, p: Page, c: PageChapter) {
       ${toc.length ? html`<nav class="doc-toc" aria-label="In diesem Kapitel"><p class="doc-toc-title">In diesem Kapitel</p><ol>${toc.map((t) => html`<li class="doc-toc-${String(t.level - top)}"><a href="#${t.id}">${t.text}</a></li>`)}</ol></nav>` : ''}
       <div class="doc-body">${trusted(c.html)}${nav}</div>
     </div>`);
+}
+
+/** A short page in one piece: its title and whole text (its headings are sections, not chapters). */
+export function textPage(main: HTMLElement, slug: string) {
+  render(main, html`<article class="page prose-page text-page"><p class="muted small">Loading…</p></article>`);
+  const box = main.querySelector<HTMLElement>('article')!;
+  const current = guard();
+  getWholePage(slug)
+    .then((p) => {
+      if (!current()) return;
+      document.title = `${p.title} · Art History`;
+      box.lang = p.lang;
+      render(box, html`<h1>${p.title}</h1>${trusted(p.html)}`);
+      const hash = decodeURIComponent(location.hash.slice(1));
+      if (hash) document.getElementById(hash)?.scrollIntoView();
+    })
+    .catch((err) => { if (current()) showError(box, err); });
 }
 
 export function page(main: HTMLElement, slug: string, chapterId: string | null) {

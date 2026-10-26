@@ -45,10 +45,10 @@ map uses OpenFreeMap (free, no key).
 
 `/changelog` and `/roadmap` (`src/views/changelog.ts`, API 118): German (de-CH). The changelog — entries newest first with kind badges (Neu, Verbessert, Behoben, Inhalt, Technik), chips filter by kind (`?kind=`), more load as you scroll, anchors `#eintrag-<id>` (the RSS feed links them), RSS link; the roadmap — four columns with area tags, notes, done dates (`#punkt-<id>`). Footer links; both prerendered.
 
-`/privacy` (`src/views/privacy.ts`, Swiss FADP Art. 19 / FMG Art. 45c): the site sets **no cookies** (images load
+`/privacy` (the CMS page `privacy` since 2026-10-26, edited under Pages; shown by `textPage` in `src/views/page.ts`, prerendered with its text; Swiss FADP Art. 19 / FMG Art. 45c): the site sets **no cookies** (images load
 with `crossorigin="anonymous"`, so Wikimedia neither gets nor sets cookies; MapLibre fetches MapTiler without them) and
 only keeps preferences in localStorage (`arthistory:*`). When a third-party service, a stored value or the API's
-log retention (14 days) changes, update that page and its date. No consent banner is needed while this holds.
+log retention (14 days) changes, update that page (in the CMS) and its "Last updated" line. No consent banner is needed while this holds.
 
 ## Accessibility
 After a navigation inside the site, focus moves to the new page's `<h1>` once it has rendered (not on the first load,
