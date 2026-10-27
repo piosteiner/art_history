@@ -1,7 +1,7 @@
 // Exact locations without extra places (migration 034): institutions with their own point, presence at institutions
 // ("same institution" vs "same city"), buildings as artworks that house institutions, immovable artworks on the map,
 // "depicts" pointing at an immovable artwork.
-const { test, expect, sql, submitForm, API: API_BASE } = require('./helpers');
+const { test, expect, sql, submitForm, API: API_BASE, settled } = require('./helpers');
 
 const API = (path) => `${API_BASE}${path}`;
 const api = async (request, path) => (await request.get(API(path), { headers: { Host: 'api.localhost' } })).json();
@@ -30,6 +30,7 @@ test('an institution with its own point; people present at it; same venue vs. sa
   await userA.goto('/artists/utagawa-hiroshige');
   await addRel(userA, 'visited', 'institution/schauspielhaus', '1916');
 
+  await settled();   // presence reads the stored links (126), written a moment after the change
   const presence = (await api(request, '/map/presence?from=1916&to=1916')).features;
   const at = (slug) => presence.find((f) => f.properties.entity.slug === slug);
   expect(at('paul-gauguin').properties.institution).toEqual({ slug: 'cabaret-voltaire', name: 'Cabaret Voltaire' });
