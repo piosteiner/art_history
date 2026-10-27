@@ -5,6 +5,8 @@
 //   <input data-lookup-from="r-type">           value = "type/slug"; allowed types come from the selected <option
 //                                               data-object-types="place,institution"> of that <select> (relationship target)
 //
+//   data-cited="slug,slug"                      those are shown greyed as "already cited here" and can't be picked (a
+//                                               source cites a piece of information once — the citation dialog, 143)
 //   data-quick-new="person,institution,artist"  also offers "+ New person “…”" for the name as typed (not for a type that
 //                                               has an entry of exactly that name): value "new:person:Name" — the
 //                                               server creates it on save, flagged "to complete" (src/admin/provenance.js)
@@ -29,6 +31,8 @@ function enhance(input) {
     ? (typeSelect.selectedOptions[0]?.dataset.objectTypes || '').split(',').filter(Boolean)
     : String(input.dataset.lookup).split(','));
   const quickTypes = String(input.dataset.quickNew || '').split(',').filter(Boolean);
+  const cited = new Set(String(input.dataset.cited || '').split(',').filter(Boolean));
+  const isCited = (hit) => !hit.quick && cited.has(hit.slug);
   const valueOf = (hit) => (hit.quick ? `new:${hit.type}:${hit.name}` : withType || several ? `${hit.type}/${hit.slug}` : hit.slug);
   const fold = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
   // "+ New …" for the name as typed: the allowed quick types without an entry of exactly that name
@@ -80,7 +84,7 @@ function enhance(input) {
 
   function pick(i) {
     const hit = hits[i];
-    if (!hit) return;
+    if (!hit || isCited(hit)) return;
     input.value = valueOf(hit);
     showChosen(hit);
     close();
@@ -100,7 +104,8 @@ function enhance(input) {
         li.append(top, el('div', 'muted small', 'created with this step — complete it later'));
       } else {
         top.append(el('b', '', h.name), ' ', el('span', 'tag', h.type), ' ', el('span', 'muted', h.period_label || ''));
-        li.append(top, el('div', 'muted small', [h.slug, h.alt].filter(Boolean).join(' · ')));
+        li.append(top, el('div', 'muted small', isCited(h) ? 'already cited here' : [h.slug, h.alt].filter(Boolean).join(' · ')));
+        if (isCited(h)) { li.classList.add('ac-cited'); li.setAttribute('aria-disabled', 'true'); }
       }
       li.addEventListener('mousedown', (e) => { e.preventDefault(); pick(i); });  // before the input loses focus
       list.append(li);
@@ -108,7 +113,7 @@ function enhance(input) {
     if (!hits.length) list.append(el('li', 'ac-empty muted', 'No match — check the spelling, or create it first.'));
     list.hidden = false;
     input.setAttribute('aria-expanded', 'true');
-    highlight(hits.length ? 0 : -1);
+    highlight(hits.findIndex((h) => !isCited(h)));
   }
 
   async function query(q) {
@@ -140,6 +145,7 @@ function enhance(input) {
     if (e.key === 'ArrowDown') { e.preventDefault(); highlight(Math.min(active + 1, hits.length - 1)); }
     else if (e.key === 'ArrowUp') { e.preventDefault(); highlight(Math.max(active - 1, 0)); }
     else if (e.key === 'Enter' && active >= 0) { e.preventDefault(); pick(active); }  // pick, don't submit the form
+    else if (e.key === 'Enter' && hits.length) e.preventDefault();  // a list of nothing pickable (all cited here): nothing
     else if (e.key === 'Escape' && !list.hidden) { e.preventDefault(); close(); }  // an open list only: else Esc is the page's (closing a dialog)
   });
   input.addEventListener('blur', () => setTimeout(close, 100));

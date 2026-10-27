@@ -107,9 +107,27 @@ function apply(result, openKey, edit) {
     document.querySelectorAll('details.cite .cite-recent').forEach((el) => {
       const tpl = document.createElement('template');
       tpl.innerHTML = result.recent.trim();
-      el.replaceWith(tpl.content.firstElementChild);
+      const chips = tpl.content.firstElementChild;
+      el.replaceWith(chips);
+      markUsed(chips);
     });
   }
+}
+
+// The quick-select chips are the same for every dialog: in each, those of sources it cites already are disabled (a
+// source cites a piece of information once, 143 — the dialog's source field knows them: data-cited)
+function markUsed(chips) {
+  const d = chips.closest('details.cite');
+  const cited = new Set(String(d?.querySelector('input[name=source]')?.dataset.cited || '').split(',').filter(Boolean));
+  chips.querySelectorAll('.cite-chip[data-slug]').forEach((b) => {
+    if (!cited.has(b.dataset.slug) || b.disabled) return;
+    b.disabled = true;
+    b.type = 'button';
+    b.removeAttribute('name');
+    b.classList.add('cite-chip-used');
+    b.title = 'already a source here';
+    b.textContent = `${b.textContent.trim()} ✓`;
+  });
 }
 
 async function send(form, submitter) {

@@ -1,6 +1,6 @@
 // Duplicates (migration 044, src/admin/duplicates.js): hard rules, evidence instead of names alone, "not the same"
 // remembered, and merging.
-const { test, expect, sql, submitForm, API } = require('./helpers');
+const { test, expect, sql, submitForm, settled, API } = require('./helpers');
 
 test.afterAll(() => {
   sql(`DELETE FROM quality_acks WHERE check_id = 'possible_duplicate';
@@ -45,6 +45,7 @@ test('a likely duplicate: shown while typing, Create asks; "it\'s a different on
 
 test('"Untitled" is no evidence: other creator → created; same creator and dimensions → asked', async ({ userA }) => {
   sql(`INSERT INTO artworks (slug, title, creator_id, height_cm, width_cm) VALUES ('untitled-test-a', 'Untitled', entity_id('artist', 'katsushika-hokusai'), 25, 37)`);
+  await settled();   // its fingerprint for the duplicate check comes from the derived-data worker (125)
   const newUntitled = async (slug, creator) => {
     await userA.goto('/artworks/new');
     await userA.fill('#f-title', 'Untitled');

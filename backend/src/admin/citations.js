@@ -115,14 +115,28 @@ async function add(db, body, userId, { pending = null, pendingByField = null } =
   if (accessed && !/^\d{4}-\d{2}-\d{2}$/.test(accessed)) throw new CitationError('Accessed: a date like 2026-10-08.');
   if (url && !accessed) accessed = new Date().toISOString().slice(0, 10);  // a web page: consulted today
   const common = [sourceId, sourceId ? null : free, text('locator'), text('note'), accessed, url, userId];
+  // a source cites a piece of information once (143, index citations_one_per_source): two passages go into one note
+  const already = async (where, params) => sourceId !== null
+    && (await db.query(`SELECT 1 FROM citations WHERE source_id = $1 AND ${where}`, [sourceId, ...params])).rows.length > 0;
+  const twice = async () => {
+    const { rows: [b] } = await db.query('SELECT coalesce(siglum, name) AS name FROM bibliography WHERE id = $1', [sourceId]);
+    return new CitationError(`${b ? b.name : 'This source'} is already a source here — a source is cited once. To add a page or a quote, remove that citation and add it again with both.`);
+  };
   for (const [key, col] of [['relationship', 'relationship_id'], ['provenance', 'provenance_id'], ['number', 'number_id']]) {
     if (!text(key)) continue;
+    if (await already(`${col} = $2`, [text(key)])) throw await twice();
     await db.query(`INSERT INTO citations (${col}, source_id, text, locator, note, accessed, url, created_by) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
       [text(key), ...common]);
     return;
   }
   // the field — and the others ticked under "also for" (one museum page backs the date, the size, the medium …)
-  const fields = [...new Set([text('field'), ...[].concat(body.also ?? []).map(String)].filter(Boolean))];
+  let fields = [...new Set([text('field'), ...[].concat(body.also ?? []).map(String)].filter(Boolean))];
+  const citedHere = async (field) => already('entity_type = $2::entity_type AND entity_id = $3 AND field = $4', [text('type'), text('id'), field]);
+  if (text('field') && await citedHere(text('field'))) throw await twice();
+  // "also for" fields that cite it already: left as they are
+  const open = [];
+  for (const f of fields) if (f === text('field') || !(await citedHere(f))) open.push(f);
+  fields = open;
   for (const field of fields) {
     const waiting = pendingByField ? pendingByField[field] || null : field === text('field') ? pending : null;
     const { rowCount } = await db.query(`
@@ -188,8 +202,11 @@ async function pendingFromSource(db, type, id, sourceSlug, url, cites, userId) {
   if (!src) return;
   for (const c of cites.filter((x) => x.field in fields)) {
     await db.query('DELETE FROM citations WHERE entity_type = $1 AND entity_id = $2 AND field = $3 AND pending IS NOT NULL AND source_id = $4', [type, id, c.field, src]);
+    // cited by that source already (a published citation): it stays the one (143) — if the value changes, it shows as outdated
     await db.query(`INSERT INTO citations (entity_type, entity_id, field, source_id, url, accessed, pending, created_by)
-      VALUES ($1, $2, $3, $4, $5, current_date, $6, $7)`, [type, id, c.field, src, url, JSON.stringify(c.form), userId]);
+      SELECT $1, $2, $3, $4, $5, current_date, $6, $7
+      WHERE NOT EXISTS (SELECT 1 FROM citations WHERE entity_type = $1 AND entity_id = $2 AND field = $3 AND source_id = $4)`,
+    [type, id, c.field, src, url, JSON.stringify(c.form), userId]);
   }
 }
 // Fields where that source agrees with our value: cited as they are (unless it is cited there already).
@@ -324,9 +341,12 @@ const pageOf = (url) => {
 };
 async function catalogueOf(db) { return require('../bibliography').loadCatalogue(db); }  // lazy: bibliography.js is only needed here
 
-function recentChips(recent = []) {
+// cited: the slugs of the sources this marker cites already — their chips are disabled (a source cites once, 143)
+function recentChips(recent = [], cited = []) {
   return html`<div class="cite-recent">${recent.length ? html`<span class="small muted">Used recently — one click adds it (with the page no. above):</span>
-    ${recent.map((r) => html`<button class="cite-chip cite-chip-${r.reliability}" name="pick" value="${r.pick}" title="${r.url ? `${r.url} — ` : ''}${BADGE_TITLE[r.reliability] || ''}">${r.label}${r.url ? html` <span class="cite-chip-page">${pageOf(r.url)}</span>` : ''}</button>`)}` : ''}</div>`;
+    ${recent.map((r) => (cited.includes(r.slug)
+      ? html`<button type="button" class="cite-chip cite-chip-${r.reliability} cite-chip-used" data-slug="${r.slug}" disabled title="already a source here">${r.label} ✓</button>`
+      : html`<button class="cite-chip cite-chip-${r.reliability}" data-slug="${r.slug}" name="pick" value="${r.pick}" title="${r.url ? `${r.url} — ` : ''}${BADGE_TITLE[r.reliability] || ''}">${r.label}${r.url ? html` <span class="cite-chip-page">${pageOf(r.url)}</span>` : ''}</button>`))}` : ''}</div>`;
 }
 
 // Next to a value: one badge per kind of source (W M L P), "+" when there is none; a click opens the dialog with the
@@ -353,6 +373,7 @@ const trigger = (cites = [], target) => html`<button type="button" class="cite-t
 
 function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
   const what = target.label || 'this';
+  const cited = [...new Set(cites.filter((c) => c.source_slug).map((c) => c.source_slug))];   // offered no more (143)
   return html`<details class="cite${edit ? ' cite-edit' : ''}" data-cite-key="${keyOf(target)}" data-cite-label="${what}"${edit ? html` data-cite-field="${target.field}" data-cite-edit="1"` : ''}><summary aria-label="sources of ${what}">${badges(cites)}</summary>
     <div class="cite-panel" role="dialog" aria-label="Sources of ${what}">
       <div class="cite-head"><b>Sources of ${what}</b><button type="button" class="link cite-close" aria-label="close">close ✕</button></div>
@@ -380,11 +401,11 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
           <input name="url" type="url" placeholder="https://www.vangoghmuseum.nl/en/collection/…" aria-label="link of the page">
           <div class="hint">The website becomes a source of the bibliography (or the one we have for that site is used) — with this page and today's date.</div></div>
         <div class="field"><label>… or a source of the bibliography</label>
-          <input name="source" data-lookup="source" autocomplete="off" placeholder="start typing: Busch 1993, Kunsthaus …" aria-label="source of the bibliography">
+          <input name="source" data-lookup="source" data-cited="${cited.join(',')}" autocomplete="off" placeholder="start typing: Busch 1993, Kunsthaus …" aria-label="source of the bibliography">
           <div class="hint">Books, catalogues raisonnés, articles: <a href="/bibliography/new" target="_blank" rel="noopener">create it in the bibliography</a> first.</div></div>
         <div class="field-pair"><div class="field"><label>Page, catalogue no.</label><input name="locator" placeholder="45 · Kat.-Nr. 12" aria-label="page or number"></div>
           <div class="field"><label>Note</label><input name="note" placeholder="optional" aria-label="note"></div></div>
-        ${recentChips(recent)}
+        ${recentChips(recent, cited)}
         ${target.field ? html`<div class="cite-also" hidden></div>` : ''}
         <details class="cite-more"><summary class="small muted">more: website name, accessed date, a source in words</summary>
           <div class="field-pair"><div class="field"><label>Name of the website (new ones)</label><input name="site" placeholder="e.g. Van Gogh Museum, Collection" aria-label="name of the website"></div>

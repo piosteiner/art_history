@@ -4,6 +4,25 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Citations: a source cites a piece of information once (migration 143)
+- **What:**
+  - Migration 143: the 7 existing doubles merged (oldest kept; the others' notes and pages joined to it in the order
+    written; e.g. "Provenienz: … · Objektbeschreibung: …"); unique index `citations_one_per_source` on target + source,
+    `NULLS NOT DISTINCT` (the target columns are mostly NULL), only for bibliography sources; `merge_entries()` drops a
+    duplicate's citation of a source the kept entry already cites for that field before moving the rest.
+  - CMS: `citations.add()` refuses a source already cited for that field / relationship / step / number with a message;
+    "also for" skips fields that have it; the dialog greys it out in the suggestions ("already cited here", Enter does
+    nothing) and disables its quick chip (`data-cited`, `markUsed()` in `editor/cites.js` after the shared chips are
+    refreshed). GND comparison: no pending citation of a source already cited there. YAML import: a source listed twice
+    for one target joins the citation there (notes, pages).
+  - Test fix: `duplicates.spec.js` "Untitled" waits for the derived data (`settled()`) after its direct insert — failed
+    when run alone, also without these changes.
+  - e2e `cite-once.spec.js`.
+- **Why:** owner: the same source twice for one piece of information makes no sense.
+- **Revert:** revert the commit and deploy; as owner `DROP INDEX citations_one_per_source;`, restore `merge_entries()`
+  (the DELETE before the citations UPDATE); `DELETE FROM schema_migrations WHERE name = '143_one_citation_per_source.sql';`
+  (the merged doubles stay merged — their parts are in the audit log).
+
 ### Security: PHP advisories checked; vulnerable Node packages updated; audit on every deploy
 - **What:**
   - PHP "php2shell" (CVE-2026-109618/-109619, 21 October 2026): checked — no PHP on the server (no binary, packages,

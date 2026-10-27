@@ -2,7 +2,8 @@
 //   free text:  "Letter 577"
 //   a source:   { source: <bibliography slug>, locator: "S. 45", url: https://…, accessed: 2026-10-08, note: … }
 //   Wikidata:   { wikidata: Q45585, property: P2048, accessed: 2026-10-08 }
-// Existing citations stay; listed ones that are missing are added (free text: the lines replace the old lines).
+// Existing citations stay; listed ones that are missing are added (free text: the lines replace the old lines). A source
+// listed twice for one target (two passages) becomes one citation with both notes and pages (143).
 async function importCitations(db, target, list) {
   if (!Array.isArray(list)) return;
   const [col, id, field] = target.relationship ? ['relationship_id', target.relationship, null]
@@ -25,6 +26,19 @@ async function importCitations(db, target, list) {
       : { source_id: sourceId, wikidata_item: c.wikidata || null, wikidata_property: c.property || null,
         locator: c.locator ?? null, url: c.url ?? null, accessed: c.accessed ? String(c.accessed) : null, note: c.note ?? null };
     if (typeof c === 'string' && !v.text) continue;
+    // a source cites a target once (143): listed again (another passage), its page and note join the citation there
+    if (sourceId !== null) {
+      const { rows: [had] } = await db.query(`SELECT id, locator, note, url FROM citations WHERE ${where} AND source_id = $${key.length + 1}`, [...key, sourceId]);
+      if (had) {
+        const join = (old, add, sep) => (!add || (old || '').split(sep).includes(add) ? old : old ? `${old}${sep}${add}` : add);
+        const note = join(had.note, v.note, ' · ');
+        const locator = join(had.locator, v.locator, '; ');
+        if (note !== had.note || locator !== had.locator || (!had.url && v.url)) {
+          await db.query('UPDATE citations SET note = $2, locator = $3, url = coalesce(url, $4) WHERE id = $1', [had.id, note, locator, v.url]);
+        }
+        continue;
+      }
+    }
     const names = Object.keys(v);
     const params = [...key, ...names.map((n) => v[n])];
     const same = names.map((n, i) => `${n} IS NOT DISTINCT FROM $${key.length + i + 1}${n === 'accessed' ? '::date' : ''}`).join(' AND ');
