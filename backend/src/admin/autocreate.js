@@ -86,9 +86,10 @@ async function create(db, creates) {
   return slugs;
 }
 
-async function flag(db, type, id, from, userId) {
-  await db.query(`INSERT INTO auto_created (entity_type, entity_id, created_from_type, created_from_id, created_by)
-    VALUES ($1, $2, $3, $4, $5) ON CONFLICT DO NOTHING`, [type, id, from ? from.type : null, from ? from.id : null, userId || null]);
+// via: 'provenance' for an owner added in a provenance step — a high-priority finding (142)
+async function flag(db, type, id, from, userId, via = null) {
+  await db.query(`INSERT INTO auto_created (entity_type, entity_id, created_from_type, created_from_id, created_by, via)
+    VALUES ($1, $2, $3, $4, $5, $6) ON CONFLICT DO NOTHING`, [type, id, from ? from.type : null, from ? from.id : null, userId || null, via]);
 }
 
 async function unflag(db, type, id) {

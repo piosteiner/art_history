@@ -5,6 +5,10 @@
 //   <input data-lookup-from="r-type">           value = "type/slug"; allowed types come from the selected <option
 //                                               data-object-types="place,institution"> of that <select> (relationship target)
 //
+//   data-quick-new="person,institution,artist"  also offers "+ New person “…”" for the name as typed (not for a type that
+//                                               has an entry of exactly that name): value "new:person:Name" — the
+//                                               server creates it on save, flagged "to complete" (src/admin/provenance.js)
+//
 // Suggestions come from GET /lookup (fuzzy name + alternative-name match, src/admin/match.js). The input keeps
 // holding the slug, so the form posts exactly what it did before; the browser's <datalist> is the no-JS fallback.
 
@@ -24,7 +28,12 @@ function enhance(input) {
   const allowedTypes = () => (withType
     ? (typeSelect.selectedOptions[0]?.dataset.objectTypes || '').split(',').filter(Boolean)
     : String(input.dataset.lookup).split(','));
-  const valueOf = (hit) => (withType || several ? `${hit.type}/${hit.slug}` : hit.slug);
+  const quickTypes = String(input.dataset.quickNew || '').split(',').filter(Boolean);
+  const valueOf = (hit) => (hit.quick ? `new:${hit.type}:${hit.name}` : withType || several ? `${hit.type}/${hit.slug}` : hit.slug);
+  const fold = (s) => String(s).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  // "+ New …" for the name as typed: the allowed quick types without an entry of exactly that name
+  const quickHits = (typed, found) => quickTypes.filter((type) => allowedTypes().includes(type)
+    && !found.some((h) => h.type === type && fold(h.name) === fold(typed))).map((type) => ({ quick: true, type, name: typed }));
 
   input.removeAttribute('list');  // our list replaces the browser's datalist
   input.setAttribute('autocomplete', 'off');
@@ -65,7 +74,8 @@ function enhance(input) {
   }
 
   function showChosen(hit) {
-    chosen.textContent = hit ? `→ ${hit.name} (${hit.type}${hit.period_label ? `, ${hit.period_label}` : ''})` : '';
+    chosen.textContent = !hit ? '' : hit.quick ? `→ new ${hit.type} “${hit.name}” — created when you save, marked “to complete” on the Quality page`
+      : `→ ${hit.name} (${hit.type}${hit.period_label ? `, ${hit.period_label}` : ''})`;
   }
 
   function pick(i) {
@@ -84,8 +94,14 @@ function enhance(input) {
       li.id = `${list.id}-${i}`;
       li.setAttribute('role', 'option');
       const top = el('div');
-      top.append(el('b', '', h.name), ' ', el('span', 'tag', h.type), ' ', el('span', 'muted', h.period_label || ''));
-      li.append(top, el('div', 'muted small', [h.slug, h.alt].filter(Boolean).join(' · ')));
+      if (h.quick) {
+        li.classList.add('ac-new');
+        top.append(el('b', '', `+ New ${h.type} “${h.name}”`));
+        li.append(top, el('div', 'muted small', 'created with this step — complete it later'));
+      } else {
+        top.append(el('b', '', h.name), ' ', el('span', 'tag', h.type), ' ', el('span', 'muted', h.period_label || ''));
+        li.append(top, el('div', 'muted small', [h.slug, h.alt].filter(Boolean).join(' · ')));
+      }
       li.addEventListener('mousedown', (e) => { e.preventDefault(); pick(i); });  // before the input loses focus
       list.append(li);
     });
@@ -114,7 +130,7 @@ function enhance(input) {
       // Typed (or pasted) exactly an existing value: that is the choice — no list over the form's buttons.
       const exact = result.find((h) => valueOf(h) === input.value.trim());
       if (exact) { showChosen(exact); close(); return; }
-      hits = result;
+      hits = [...result, ...quickHits(input.value.trim(), result)];
       render();
     }, 150);
   });
@@ -131,7 +147,9 @@ function enhance(input) {
 
   // Editing an existing value: show which entity the slug stands for.
   const current = input.value.trim();
-  if (current) {
+  const pending = /^new:([a-z]+):(.+)$/s.exec(current);   // a quick-add not saved yet (the form came back with an error)
+  if (pending) showChosen({ quick: true, type: pending[1], name: pending[2] });
+  else if (current) {
     query(current.replace(/^[a-z]+\//, '')).then((result) => {
       showChosen((result || []).find((h) => valueOf(h) === current) || null);
     });

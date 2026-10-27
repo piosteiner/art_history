@@ -612,3 +612,4 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .feedback-message { margin: .4rem 0; padding: .4rem .7rem; border-left: 3px solid var(--line); white-space: pre-wrap; }
 .feedback-note { display: grid; gap: .2rem; margin: .4rem 0; } .feedback-note textarea { min-height: 2.6rem; } .feedback-note button { justify-self: start; }
 .feedback-actions { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+.ac-item.ac-new b { color: var(--accent); } .ac-item.ac-new { border-top: 1px dashed var(--line); }

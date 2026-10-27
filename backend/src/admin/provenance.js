@@ -11,6 +11,7 @@ const { BY_TYPE, dateToDoc } = require('../content');
 const { parseFuzzyDate } = require('../fuzzy-date');
 const { renderMarkdown } = require('../markdown');
 const { stepList } = require('./provenance-records');
+const autocreate = require('./autocreate');
 
 class ProvenanceError extends Error {}
 
@@ -77,12 +78,35 @@ function lastDay(range) {
   return { from: m[1], day: end.toISOString().slice(0, 10) };
 }
 
+// "new:person:Name" from the owner pickers' "+ New person …" (editor/autocomplete.js data-quick-new): an entry with
+// just that name, created in the step's own transaction (a refused step creates nothing) and flagged as auto-created —
+// "to complete", high priority on the Quality page. An entry of that type already called exactly so is taken instead.
+// → { type, id } | null when the value isn't such a request
+const QUICK = /^new:(artist|person|institution):(.+)$/s;
+async function quickCreate(db, value, ctx) {
+  const m = QUICK.exec(value);
+  if (!m) return null;
+  const [, type, raw] = m;
+  const name = raw.replace(/\s+/g, ' ').trim().slice(0, 200);
+  if (!name) throw new ProvenanceError('A new entry needs a name.');
+  const t = BY_TYPE[type];
+  const same = (await db.query(`SELECT id FROM ${t.table} WHERE lower(f_unaccent(${t.name})) = lower(f_unaccent($1)) LIMIT 2`, [name])).rows;
+  if (same.length === 1) return { type, id: same[0].id };
+  const [made] = [{ key: 'owner', type, name }];
+  await autocreate.create(db, [made]);
+  await autocreate.flag(db, type, made.id, ctx.artworkId ? { type: 'artwork', id: ctx.artworkId } : null, ctx.userId, 'provenance');
+  return { type, id: made.id };
+}
+
 // Form body → column values (COLS order). Owner "type/slug" and place slug are looked up; throws ProvenanceError.
-async function fromForm(db, body, keepMetadata = {}) {
+// ctx: { artworkId, userId } — the artwork a quick-added owner is flagged as created from.
+async function fromForm(db, body, keepMetadata = {}, ctx = {}) {
   const text = (k) => String(body[k] ?? '').replace(/\r\n/g, '\n').trim() || null;
   const v = Object.fromEntries(COLS.map((c) => [c, null]));
   const owner = text('owner');
-  if (owner) {
+  const quick = owner && await quickCreate(db, owner, ctx);
+  if (quick) v[ARC[quick.type]] = quick.id;
+  else if (owner) {
     const m = /^([a-z]+)\/([a-z0-9-]+)$/.exec(owner);
     if (!m || !OWNER_TYPES.includes(m[1])) throw new ProvenanceError('Owner: pick an artist, person, institution or place from the suggestions — or leave it empty and describe the owner.');
     const id = (await db.query('SELECT entity_id($1, $2) AS id', [m[1], m[2]])).rows[0].id;
@@ -165,6 +189,8 @@ async function fromForm(db, body, keepMetadata = {}) {
   for (let i = 1; i <= CO_SLOTS; i += 1) {
     const ref = text(`co_owner_${i}`);
     if (!ref) continue;
+    const quickCo = await quickCreate(db, ref, ctx);
+    if (quickCo) { coOwners.push(quickCo); continue; }
     const m = /^([a-z]+)\/([a-z0-9-]+)$/.exec(ref);
     if (!m || !CO_TYPES.includes(m[1])) throw new ProvenanceError('Joint owner: pick an artist, person or institution from the suggestions.');
     const id = (await db.query('SELECT entity_id($1, $2) AS id', [m[1], m[2]])).rows[0].id;
@@ -375,7 +401,7 @@ function form({ action, step = {}, submit, choices = [] }) {
     <select id="pv-owner-type" hidden><option data-object-types="${OWNER_TYPES.join(',')}" selected></option></select>
     <div class="row">
       <div class="field"><label for="pv-owner">Owner</label>
-        <input id="pv-owner" name="owner" value="${v('owner')}" placeholder="start typing a name" autocomplete="off" data-lookup-from="pv-owner-type">
+        <input id="pv-owner" name="owner" value="${v('owner')}" placeholder="start typing a name" autocomplete="off" data-lookup-from="pv-owner-type" data-quick-new="person,institution,artist">
         <div class="hint">An artist, person, institution or place (a city or state).</div></div>
       <div class="field"><label for="pv-owner-label">Owner description</label>
         <input id="pv-owner-label" name="owner_label" value="${v('owner_label')}" placeholder="e.g. Private collection, Paris">
@@ -389,7 +415,7 @@ function form({ action, step = {}, submit, choices = [] }) {
         <label class="choice"><input type="checkbox" name="not_sold" value="1"${step.not_sold ? ' checked' : ''}> not sold <span class="muted">(agents: bought in, withdrawn, returned)</span></label></div>
       <div class="field"><label>Joint owners <span class="muted">(with the owner above)</span></label>
         <select id="pv-co-type" hidden><option data-object-types="${CO_TYPES.join(',')}" selected></option></select>
-        ${Array.from({ length: CO_SLOTS }, (_, i) => html`<input name="co_owner_${i + 1}" value="${v(`co_owner_${i + 1}`)}" placeholder="and … (start typing)" autocomplete="off" data-lookup-from="pv-co-type" aria-label="joint owner ${i + 1}">`)}
+        ${Array.from({ length: CO_SLOTS }, (_, i) => html`<input name="co_owner_${i + 1}" value="${v(`co_owner_${i + 1}`)}" placeholder="and … (start typing)" autocomplete="off" data-lookup-from="pv-co-type" data-quick-new="person,institution,artist" aria-label="joint owner ${i + 1}">`)}
         <div class="hint">E.g. Léo and Gertrude Stein: one step, two owners.</div></div>
     </div>
     <div class="row">

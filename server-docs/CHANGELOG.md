@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Provenance: owners added on the fly, high priority until completed (migration 142)
+- **What:** the owner and joint-owner pickers of a provenance step offer "+ New person / institution / artist “…”"
+  for the name as typed (`editor/autocomplete.js` `data-quick-new`; not for a type that has an entry of exactly that
+  name); the value `new:<type>:<name>` is created on save inside the step's transaction (`quickCreate()` in
+  `src/admin/provenance.js`; a refused step creates nothing; an exact name found on the server is taken instead),
+  flagged in `auto_created` from the artwork. Migration 142: `auto_created.via` ('provenance' for these); the check
+  `auto_created` in `quality_issues_live` is "error" for via = provenance, "warning" for the rest (662 existing ones from
+  imports and forms stay warnings). e2e `quick-owner.spec.js`.
+- **Why:** owner: creating a missing person or institution meant leaving the artwork page; quick-added ones should be a
+  high-priority finding.
+- **Revert:** revert the commit and deploy; as owner restore `quality_issues_live` from 124's text of the check
+  ('warning') and `ALTER TABLE auto_created DROP COLUMN via;` `DELETE FROM schema_migrations WHERE name =
+  '142_auto_created_priority.sql';`
+
 ### Test fix: the "[" topic suggestion under load
 - **What:** `test/e2e/changelog.spec.js`: before pressing Enter on a suggestion, wait for the selected option and past
   CodeMirror's `interactionDelay` (75 ms after the list opens or changes, Enter is ignored so as not to accept by

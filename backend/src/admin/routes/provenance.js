@@ -116,7 +116,7 @@ router.post('/provenance/:id', async (req, res) => {
   if (!step) return notFoundPage(req, res);
   try {
     await withTx(req.user, async (db) => {
-      const values = await provenance.fromForm(db, req.body, step.metadata);
+      const values = await provenance.fromForm(db, req.body, step.metadata, { artworkId: step.artwork_id, userId: req.user.id });
       await provenance.update(db, step.id, values);
       await citations.syncText(db, { provenance: step.id }, values.sources);
     });

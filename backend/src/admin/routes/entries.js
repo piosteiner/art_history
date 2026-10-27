@@ -737,7 +737,7 @@ router.post('/:plural/:slug/provenance', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   try {
     await withTx(req.user, async (db) => {
-      const values = await provenance.fromForm(db, req.body);
+      const values = await provenance.fromForm(db, req.body, {}, { artworkId: e.id, userId: req.user.id });
       await citations.syncText(db, { provenance: await provenance.add(db, e.id, values) }, values.sources);
     });
   } catch (err) {
