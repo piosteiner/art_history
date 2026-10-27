@@ -4,6 +4,29 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Groups: the works of one group are no duplicates (144); the Saint Matthew cycle in the Contarelli Chapel (data)
+- **What:**
+  - Migration 144: `artworks_in_one_group(a, b)` (recursive CTE over `parent_id`, both artworks' ancestors) — the
+    `possible_duplicate` check in `quality_issues_live` leaves out pairs within one group at any depth (98 → 72 findings:
+    26 false ones between wholes and parts or same-named versions). `npm run perf`: 35/35 within budget. e2e test in
+    `groups.spec.js`. Rule written down in `backend/docs/data-model.md` (cycle = made to be seen together, also when no
+    longer together; groups nest); glossary "cycle" says so.
+  - Data: `ciclo-di-san-matteo` (cycle, Q19331941) with parts 1 Vocazione, 2 `san-matteo-e-langelo` (versions,
+    Q25412019: 1 `…-prima-versione` Q577248 — Giustiniani 1602/03 → heirs → Bonnemaison → Friedrich Wilhelm III 1815 →
+    Gemäldegalerie inv. 365 (1816–1830) → presumably burnt in the Friedrichshain flak tower, May 1945, fate destroyed;
+    2 `…-seconda-versione` Q2337873 in place since Feb. 1603), 3 `martirio-di-san-matteo` (Q2338417). Institution
+    `contarelli-chapel` (auto-created, completed) `part_of` San Luigi dei Francesi; the in-place works there. Vocazione:
+    commission corrected (the church's administrators, contract 23 July 1599 — Contarelli died 1585; his funds), names
+    fixed (no "original" English/German, Italian not a translation of itself). Event "Saint Matthew and the Contarelli
+    Chapel" (study days, Villa Medici, 29.04.2025) concerning the cycle and the chapel; Académie de France à Rome,
+    Ambassade de France près le Saint-Siège, Pieux Établissements participants. New: Vincenzo Giustiniani, Villa Medici
+    (place), 6 sources (Wikipedia en/it/de incl. the Friedrichshain list, the Villa Medici programme). 10 outdated
+    Wikidata citations of deliberately changed values removed.
+- **Why:** owner: how the chapel, the church, the three paintings and the Villa Medici fit together; works meant to be
+  shown together, handled by the series/versions feature.
+- **Revert:** revert the commit and deploy; `DROP FUNCTION artworks_in_one_group(bigint, bigint)` after restoring the
+  check; the data through the admin history.
+
 ### Data: provenance of Sabine Lepsius's *Selbstbildnis* (Alte Nationalgalerie, NG 1/56)
 - **What:** (data only) new person `monica-berenberg-lepsius` (Q95685361) with `child_of` Sabine Lepsius ("daughter";
   Wikidata P25), places `lauda` (Q1807270) and its parent `lauda-konigshofen`; `selbstbildnis-sabine-lepsius`:

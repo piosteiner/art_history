@@ -38,3 +38,33 @@ test('a group of versions: slim form, no web page asked of it, parts counted, la
   const part = await api(request, '/artworks/test-grp-b');
   expect(part.part_of[0]).toMatchObject({ slug: 'test-grp', kind: 'versions', is_group: true, parts_count: 3 });
 });
+
+test('the works of one group are not duplicates of each other (144): a cycle, a versions group inside it, same-named versions', async () => {
+  sql(`DELETE FROM artworks WHERE slug LIKE 'test-cyc%';
+       INSERT INTO artists (slug, name) VALUES ('test-cyc-painter', 'Test Cycle Painter') ON CONFLICT DO NOTHING;
+       INSERT INTO artworks (slug, title, kind, creator_id, parts_count) VALUES ('test-cyc', 'Test Ciclo di san Matteo', 'cycle', entity_id('artist', 'test-cyc-painter'), '2');
+       INSERT INTO artworks (slug, title, kind, creator_id, parent_id, part_number, parts_count) VALUES
+         ('test-cyc-ver', 'Test San Matteo e l''angelo', 'versions', entity_id('artist', 'test-cyc-painter'), entity_id('artwork', 'test-cyc'), '2', '2');
+       INSERT INTO artworks (slug, title, kind, creator_id, parent_id, part_number, created) VALUES
+         ('test-cyc-a', 'Test San Matteo e l''angelo', 'oil painting', entity_id('artist', 'test-cyc-painter'), entity_id('artwork', 'test-cyc-ver'), '1', '[1602-01-01,1603-01-01)'),
+         ('test-cyc-b', 'Test San Matteo e l''angelo', 'oil painting', entity_id('artist', 'test-cyc-painter'), entity_id('artwork', 'test-cyc-ver'), '2', '[1602-01-01,1603-01-01)'),
+         ('test-cyc-calling', 'Test Vocazione di san Matteo', 'oil painting', entity_id('artist', 'test-cyc-painter'), entity_id('artwork', 'test-cyc'), '1', NULL),
+         ('test-cyc-other', 'Test San Matteo e l''angelo', 'oil painting', entity_id('artist', 'test-cyc-painter'), NULL, NULL, '[1602-01-01,1603-01-01)')`);
+  try {
+    // the function: a whole and its part, a part two levels down, siblings, cousins — in one group; an outsider not
+    const one = (a, b) => sql(`SELECT artworks_in_one_group(entity_id('artwork', '${a}'), entity_id('artwork', '${b}'))`);
+    expect([one('test-cyc', 'test-cyc-a'), one('test-cyc-ver', 'test-cyc-b'), one('test-cyc-a', 'test-cyc-b'), one('test-cyc-a', 'test-cyc-calling'), one('test-cyc-a', 'test-cyc-other')])
+      .toEqual(['t', 't', 't', 't', 'f']);
+    await settled();
+    // findings: the same-named versions and the whole not flagged against each other; the outsider with the same name still is
+    const dups = sql(`SELECT coalesce(string_agg(DISTINCT a.slug || '~' || b.slug, ' ' ORDER BY a.slug || '~' || b.slug), '')
+      FROM quality_issues q JOIN artworks a ON a.id = q.entity_id JOIN artworks b ON q.issue_key IN ('dup:' || least(a.id, b.id) || ':' || greatest(a.id, b.id))
+      WHERE q.check_id = 'possible_duplicate' AND a.slug LIKE 'test-cyc%' AND b.slug LIKE 'test-cyc%'`);
+    const pairs = dups.split(' ').filter(Boolean);
+    expect(pairs.filter((x) => !x.includes('test-cyc-other'))).toEqual([]);   // within the group: none
+    expect(pairs).toContain('test-cyc-a~test-cyc-other');                   // the outsider of the same name: still asked
+  } finally {
+    sql(`DELETE FROM artworks WHERE slug LIKE 'test-cyc%' AND parent_id IS NOT NULL AND kind <> 'versions';
+         DELETE FROM artworks WHERE slug = 'test-cyc-ver'; DELETE FROM artworks WHERE slug LIKE 'test-cyc%'; DELETE FROM artists WHERE slug = 'test-cyc-painter'`);
+  }
+});

@@ -319,6 +319,15 @@ the parts of versions "Version 2 of 3". `part_sort` is a STORED generated column
 trigger function `no_parent_cycle()` (dynamic SQL with a recursive CTE and `CYCLE … SET … USING`) refuses loops on
 every table with `parent_id`.
 
+Which group (decided 2026-10-27, the Saint Matthew paintings in the Contarelli Chapel): works **made to be seen
+together** in one place or sequence are a `cycle` — whether or not they are still together (a chapel's paintings, a
+cathedral's altarpieces; a version that left the place stays in it); two such works are a `pair` (pendants); a `series`
+is works on one theme or in one format that were not made for one place; `versions` are repetitions of one
+composition. Groups nest: a `versions` group can be a part of a `cycle` (the chapel's altarpiece in two versions — the
+first sold, burnt in 1945; the second in place), and the site shows the whole chain. The works of one group are never
+duplicates of each other (144: `artworks_in_one_group(a, b)` — one an ancestor of the other or both sharing one, by a
+recursive CTE — leaves those pairs out of `possible_duplicate`).
+
 ## Events (migrations 046, 047)
 A type of its own rather than glossary terms: a term is a concept without time and place; an event happened at a time
 (`period`, fuzzy like every date, GiST-indexed for "what happened while …"), in a place (`place_id`, the city; plus an
