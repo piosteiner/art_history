@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Data: provenance of Friedrich's *Mönch am Meer* (Alte Nationalgalerie, NG 9/85)
+- **What:** (data only; `scripts/from-wikidata.js`, `scripts/import.js`, one SQL insert)
+  - New: people `friedrich-wilhelm-iv-von-preussen` (Q57180), `friedrich-wilhelm-iii-von-preussen` (Q37134); institution
+    `staatliche-schlosser-und-garten-berlin` (the Berlin successor administration as the museum names it — not linked to
+    Q108606055, the Prussian one of 1927–1947).
+  - `monch-am-meer`: 5 provenance steps from the SMB record (recherche.smb.museum/detail/965511), each cited word for
+    word: crown prince Friedrich Wilhelm, purchase 1810 (+ King Friedrich Wilhelm III as `alternative_of`, the record's
+    description), Prussian Crown ("Besitz der Krone") until 1928, Staatliche Schlösser und Gärten Berlin 1928–1957
+    ("Rechtsnachfolge"; note: "aus dem zerstörten Berliner Stadtschloß" → [[artwork/berliner-stadtschloss]]),
+    Staatliche Museen zu Berlin since 1957. Locations: Berlin (a provenance location must be a place; the Schloss is
+    the owner's artwork entry).
+  - Relationship Staatliche Museen zu Berlin `part_of` Stiftung Preußischer Kulturbesitz (Wikidata Q700216 P749).
+- **Why:** owner: the provenance of the entry, and how the Stadtschloss and the Berlin institutions fit.
+- **Revert:** the admin history of the artwork, the three new entries and the relationship.
+
 ### Statistics page: the vocabulary (relationship types, provenance options); "Projektdokumentation", no tables
 - **What:**
   - `backend/src/vocabulary.js` + `GET /v1/stats/vocabulary`: every relationship type (both labels, category, entry
