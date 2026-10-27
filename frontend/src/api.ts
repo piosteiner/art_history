@@ -125,6 +125,10 @@ export interface PageSearchHit { chapter: { id: string; title: string; index: nu
 export interface PageSearch { q: string; terms: string[]; total: number; hits: PageSearchHit[] }
 export const searchPage = (slug: string, q: string) => get<PageSearch>(`/pages/${encodeURIComponent(slug)}/search`, { q });
 
+/** The project's numbers (API /v1/stats, migration 138): per metric the latest value and one value per day. */
+export interface Stats { updated: string | null; metrics: Record<string, { value: number; series: [string, number][] }> }
+export const getStats = () => get<Stats>('/stats');
+
 /** The public changelog (API 118): entries newest first, each with its bullet points (kind, rendered HTML). */
 export type ChangeKind = 'neu' | 'verbessert' | 'behoben' | 'inhalt' | 'technik';
 /** `area`/`area_color`: the bullet's topic (API 137) — the roadmap's list and colours. */

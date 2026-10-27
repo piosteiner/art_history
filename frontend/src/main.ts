@@ -135,6 +135,9 @@ function onRoute(route: Route) {
     case 'changelog':
       cleanup = lazyView(() => import('./views/changelog').then((m) => () => m.changelogPage(main, route.params)));
       break;
+    case 'stats':
+      cleanup = lazyView(() => import('./views/stats').then((m) => () => m.statsPage(main)));
+      break;
     case 'roadmap':
       cleanup = lazyView(() => import('./views/changelog').then((m) => () => m.roadmapPage(main)));
       break;

@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### The project's numbers in one place: statistics (migration 138, API `/v1/stats`, site `/statistik`)
+- **What:** table `site_stats` (metric, day, value); `site_stats_counts()` / `record_site_stats()` (SECURITY DEFINER:
+  entries per kind, provenance steps, relationships, citations, images, relationship types, migrations). `src/stats.js`
+  records today's values at server start and hourly, adding the tests (test definitions in the backend's unit and
+  end-to-end tests and the site's) and the documentation's words. History: entries from `created_at` (existing rows),
+  migrations from `schema_migrations.applied_at` (in the migration); tests from git, words from the page's history
+  (`scripts/backfill-stats.js`, run once). Site: tiles and one line chart per number (crosshair, keyboard, table),
+  footer link "Statistik". Tests: e2e `stats.spec.js`, site test.
+- **Why:** owner (roadmap): the numbers out of the documentation's text into one place, with their development.
+- **Revert:** revert the commits; `DROP TABLE site_stats; DROP FUNCTION record_site_stats(), site_stats_counts();`
+  delete `138_site_stats.sql` from `schema_migrations`.
+
 ### Documentation: a search field (API `/v1/pages/<slug>/search`, site)
 - **What:** `searchPage()` in `src/pages.js` — the page read paragraph by paragraph as it reads (Markdown gone), every
   query word must begin a word there (`fold`: accents, ß/ss, case alike); hits with chapter, the heading above and a

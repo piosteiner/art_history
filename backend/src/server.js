@@ -3,12 +3,14 @@ const config = require('./config');
 const { apiPool, adminPool } = require('./db');
 const live = require('./admin/live');
 const quality = require('./admin/quality');
+const stats = require('./stats');
 
 const server = app.listen(config.port, config.host, () => {
   console.log(`arthistory-api listening on http://${config.host}:${config.port} (${config.env}, db ${config.db.name})`);
 });
 live.attach(server);  // admin panel's WebSocket (/live on the admin host)
 quality.start(adminPool);  // keeps the stored data-quality findings up to date (LISTEN quality_changed, migration 058)
+stats.start(adminPool);    // today's numbers for /v1/stats (migration 138), at start and hourly
 
 // pm2 reload/stop sends SIGINT: finish in-flight requests, then close DB pools.
 for (const signal of ['SIGINT', 'SIGTERM']) {

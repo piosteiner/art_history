@@ -19,6 +19,8 @@ export type Route =
   /** The changelog (API 118): /changelog?kind=behoben, and the roadmap: /roadmap. */
   | { name: 'changelog'; params: URLSearchParams }
   | { name: 'roadmap' }
+  /** The project's numbers (API /v1/stats): /statistik. */
+  | { name: 'stats' }
   | { name: 'search'; params: URLSearchParams }
   /** Through whose hands works went in a window (API 088): /provenance/1933-1945. */
   | { name: 'hands'; from: number; to: number }
@@ -38,6 +40,7 @@ export function parse(pathname: string, search: string): Route {
   if (parts.length === 1 && parts[0] === 'search') return { name: 'search', params: query };
   if (parts.length === 1 && parts[0] === 'changelog') return { name: 'changelog', params: query };
   if (parts.length === 1 && parts[0] === 'roadmap') return { name: 'roadmap' };
+  if (parts.length === 1 && parts[0] === 'statistik') return { name: 'stats' };
   if (parts[0] === 'provenance' && parts.length <= 2) {
     const m = /^(\d{3,4})-(\d{3,4})$/.exec(parts[1] ?? '1933-1945');
     return m ? { name: 'hands', from: Number(m[1]), to: Number(m[2]) } : { name: 'not-found' };

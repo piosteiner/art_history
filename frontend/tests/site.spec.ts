@@ -2461,6 +2461,33 @@ test('project documentation: the search field lists hits by chapter; a hit opens
   await expect(page.locator('.doc-hits')).toHaveCount(2);
 });
 
+test('statistics (API /v1/stats): from the footer, tiles with today\'s numbers, a chart per number with the day under the pointer, a table', async ({ page }) => {
+  const series = (a: number, b: number) => [['2026-10-01', a], ['2026-10-15', Math.round((a + b) / 2)], ['2026-10-27', b]] as [string, number][];
+  const m = (a: number, b: number) => ({ value: b, series: series(a, b) });
+  await page.route(/\/v1\/stats$/, (r) => r.fulfill({ json: { updated: '2026-10-27', metrics: {
+    'entries.total': m(400, 1754), 'entries.artworks': m(40, 362), 'entries.artists': m(30, 186),
+    'content.provenance': m(0, 1710), 'content.citations': m(0, 7704), 'project.migrations': m(60, 138),
+    'tests.backend_e2e': m(120, 233), 'tests.site': m(80, 121), 'documentation.words': m(10000, 24969) } } }));
+  await page.goto('/privacy');
+  await page.locator('footer a', { hasText: 'Statistik' }).click();
+  await expect(page).toHaveURL(/\/statistik$/);
+  await expect(page.locator('main h1')).toHaveText('Statistik');
+  await expect(page.locator('.stats-hero')).toContainText(/1['’]754 Einträge/);
+  await expect(page.locator('.stats-tiles li', { hasText: 'Kunstwerke' })).toContainText('362');
+  await expect(page.locator('.stats-chart figcaption')).toContainText(['Einträge insgesamt', 'Kunstwerke', 'Provenienzschritte']);
+  // the pointer over a chart: the day and its value
+  const plot = page.locator('.stats-chart', { hasText: 'Einträge insgesamt' }).locator('.stats-plot');
+  const box = (await plot.boundingBox())!;
+  await page.mouse.move(box.x + box.width - 4, box.y + box.height / 2);
+  await expect(plot.locator('.stats-tip')).toHaveText(/27\. Okt\. 2026: 1['’]754/);
+  // the keyboard too; and the numbers as a table
+  await plot.focus();
+  await page.keyboard.press('ArrowLeft');
+  await expect(plot.locator('.stats-tip')).toHaveText(/15\. Okt\. 2026: 1['’]077/);
+  await page.locator('.stats-chart', { hasText: 'Einträge insgesamt' }).locator('summary').click();
+  await expect(page.locator('.stats-chart', { hasText: 'Einträge insgesamt' }).locator('tbody tr')).toHaveCount(3);
+});
+
 test('changelog and roadmap (API 118): from the footer, kinds as badges, filtered by kind, more on scrolling; the roadmap columns', async ({ page }) => {
   const entry = (id: number, day: string, kind = 'neu') => ({ id, day, title: id === 1 ? 'Patch: Suche' : null,
     items: [{ kind, label: kind === 'neu' ? 'Neu' : 'Behoben', html: `Punkt <a href="/artists/paul-gauguin">${id}</a>`, roadmap: id === 1 ? { id: 7, title: 'Suche' } : null,

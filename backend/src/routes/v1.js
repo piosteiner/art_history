@@ -171,6 +171,18 @@ router.get('/pages/:slug', async (req, res) => {
   }
   res.json(out);
 });
+// GET /v1/stats — the project's numbers (migration 138, src/stats.js): {updated, metrics: {<metric>: {value, series:
+// [[day, value], …]}}} — value = the latest day's; the series one value per day (entries.*, content.*, project.*,
+// tests.*, documentation.words); small, read as it is, cached five minutes.
+router.get('/stats', async (req, res) => {
+  const { rows } = await apiPool.query(`SELECT metric, json_agg(json_build_array(to_char(day, 'YYYY-MM-DD'), value::float8) ORDER BY day) AS series,
+      max(day)::text AS last FROM site_stats GROUP BY metric ORDER BY metric`);
+  const metrics = Object.fromEntries(rows.map((r) => [r.metric, { value: r.series[r.series.length - 1][1], series: r.series }]));
+  const updated = rows.reduce((d, r) => (!d || r.last > d ? r.last : d), null);
+  res.set('Cache-Control', 'public, max-age=300');
+  res.json({ updated, metrics });
+});
+
 // GET /v1/pages/<slug>/search?q=… — the page searched paragraph by paragraph (src/pages.js searchPage): {q, terms, total,
 // hits: [{chapter: {id, title, index} | null (introduction), heading: {id, text} | null, passage_html, matches}]}
 router.get('/pages/:slug/search', async (req, res) => {
