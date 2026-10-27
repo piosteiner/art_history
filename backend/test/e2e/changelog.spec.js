@@ -10,7 +10,7 @@ async function typeItems(page, text) {
   await page.keyboard.insertText(text);
 }
 const today = () => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Zurich' }).format(new Date());
-test.afterEach(() => sql('DELETE FROM changelog_entries; DELETE FROM roadmap_items; DELETE FROM form_drafts'));
+test.afterEach(() => sql("DELETE FROM changelog_entries; DELETE FROM roadmap_items; DELETE FROM roadmap_areas; DELETE FROM form_drafts; UPDATE site_settings SET value = '30' WHERE key = 'roadmap_done_days'"));
 
 test('changelog: an entry with kinds, a draft until published, in the API and the RSS feed', async ({ userA, request }) => {
   await userA.goto('/changelog');
@@ -142,7 +142,7 @@ test('changelog: autosaved draft restored, edits in place in the history, a dele
 });
 
 test('roadmap: the edit form autosaves, a deleted item comes back from the history', async ({ userA }) => {
-  sql("INSERT INTO roadmap_items (title, area) VALUES ('Historische Karten', 'Karte')");
+  sql("INSERT INTO roadmap_areas (name, color) VALUES ('Karte', 'teal') ON CONFLICT DO NOTHING; INSERT INTO roadmap_items (title, area) VALUES ('Historische Karten', 'Karte')");
   const id = sql("SELECT id FROM roadmap_items WHERE title = 'Historische Karten'");
   await userA.goto(`/roadmap/${id}/edit`);
   await userA.fill('#rm-title', 'Historische Karten pro Epoche');
@@ -161,4 +161,51 @@ test('roadmap: the edit form autosaves, a deleted item comes back from the histo
   await expect(userA.locator('#rm-title')).toHaveValue('Historische Karten');
   await userA.goto('/roadmap/history');
   await expect(userA.locator('table.diff')).toContainText('roadmap: Historische Karten');
+});
+
+test('roadmap (136): topics with colours (new ones created, renamed on every item), the day added, done items on the site for N days', async ({ userA, request }) => {
+  // a new item with a new topic: the topic is created with a colour; the day it was added is today unless given
+  await userA.goto('/roadmap');
+  await userA.fill('#rm-title', 'Provenienz-Karte');
+  await userA.fill('#rm-area', 'Kartografie');
+  await userA.fill('#rm-added', '2026-10-01');
+  await Promise.all([userA.waitForURL(/done=created/), userA.click('.roadmap-form button:has-text("+ Add")')]);
+  const card = userA.locator('.roadmap-card', { hasText: 'Provenienz-Karte' });
+  await expect(card.locator('.tag.area')).toHaveText('Kartografie');
+  await expect(card).toContainText('added 1. Okt. 2026');
+  const row = userA.locator('table.roadmap-areas tr', { hasText: 'Kartografie' });
+  await expect(row.locator('td').nth(1)).toHaveText('1');
+  // a colour of its own on the tag
+  const color = await card.locator('.tag.area').evaluate((t) => getComputedStyle(t).color);
+  expect(color).not.toBe(await userA.locator('body').evaluate((b) => getComputedStyle(b).color));
+  // renamed and recoloured in the topics list: the item follows (ON UPDATE CASCADE)
+  await row.locator('input[name=name]').fill('Karten');
+  await row.locator('select[name=color]').selectOption('red');
+  await Promise.all([userA.waitForURL(/done=saved/), row.locator('button:has-text("Save")').click()]);
+  await expect(userA.locator('.roadmap-card', { hasText: 'Provenienz-Karte' }).locator('.tag.area')).toHaveText('Karten');
+  await expect(userA.locator('.roadmap-card', { hasText: 'Provenienz-Karte' }).locator('.tag.area')).toHaveClass(/area-red/);
+  // in the API: topic, its colour, the day added
+  let rm = await api(request, '/roadmap');
+  const later = rm.columns.find((c) => c.status === 'spaeter');
+  expect(later.items.find((i) => i.title === 'Provenienz-Karte')).toMatchObject({ area: 'Karten', area_color: 'red', added_on: '2026-10-01' });
+  expect(rm.done_days).toBe(30);
+
+  // done items: on the site for the days set in the CMS, then only in the CMS ("off the site")
+  sql("INSERT INTO roadmap_items (title, status, done_on) VALUES ('Alt erledigt', 'erledigt', current_date - 40), ('Neu erledigt', 'erledigt', current_date - 3)");
+  rm = await api(request, '/roadmap');
+  expect(rm.columns.find((c) => c.status === 'erledigt').items.map((i) => i.title)).toEqual(['Neu erledigt']);
+  await userA.goto('/roadmap');
+  await expect(userA.locator('.roadmap-card', { hasText: 'Alt erledigt' })).toContainText('off the site');
+  await userA.fill('input[name=done_days]', '60');
+  await Promise.all([userA.waitForURL(/done=saved/), userA.click('#done-days + form button')]);
+  rm = await api(request, '/roadmap');
+  expect(rm.columns.find((c) => c.status === 'erledigt').items.map((i) => i.title)).toEqual(['Neu erledigt', 'Alt erledigt']);
+  expect(rm.done_days).toBe(60);
+  // a topic in use can't be deleted; an unused one can
+  sql("INSERT INTO roadmap_areas (name, color) VALUES ('Leer', 'olive')");
+  await userA.goto('/roadmap');
+  await expect(userA.locator('table.roadmap-areas tr', { hasText: 'Karten' }).locator('button:has-text("delete")')).toHaveCount(0);
+  userA.once('dialog', (d) => d.accept());
+  await userA.locator('table.roadmap-areas tr', { hasText: 'Leer' }).locator('button:has-text("delete")').click();
+  await expect(userA.locator('table.roadmap-areas')).not.toContainText('Leer');
 });

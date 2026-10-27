@@ -488,8 +488,10 @@ German (de-CH); only published entries and items.
   items: [{kind, label, html, roadmap: {id, title} | null}]}]}`, newest first; with `kind` only the entries with such
   bullets, and only those bullets. `html`: the bullet's Markdown inline (`[[links]]` resolved).
 - `GET /v1/changelog/feed.xml` — RSS 2.0, the last 30 entries, linked to `/changelog#eintrag-<id>`.
-- `GET /v1/roadmap` → `{columns: [{status, label, items: [{id, title, area, notes_html, done_on}]}]}` — the four columns
-  in order (In Arbeit, Als Nächstes, Später, Erledigt — the last 30 done, newest first).
+- `GET /v1/roadmap` → `{done_days, columns: [{status, label, items: [{id, title, area, area_color, notes_html, added_on, done_on}]}]}`
+  — the four columns in order (In Arbeit, Als Nächstes, Später, Erledigt — done items for `done_days` days after their
+  done date, newest first; the setting `roadmap_done_days` in `site_settings`, 136). `area_color`: the topic's colour
+  key (`roadmap_areas`: blue, teal, purple, pink, red, brown, olive, indigo, cyan, slate).
 
 ## Network (088)
 An `<entry>` is its public number (`100476` — unique across types) or `<plural>/<slug or number>`.

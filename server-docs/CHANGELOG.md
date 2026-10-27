@@ -2,6 +2,29 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-27
+
+### Roadmap: day added, done items for N days, topics with colours (migration 136)
+- **What:**
+  - Migration 136: `roadmap_items.added_on` (existing items: the day they were created); table `roadmap_areas`
+    (name, colour of a 10-colour palette; the 19 topics in use seeded A–Z with the palette in turn) referenced by
+    `roadmap_items.area` with `ON UPDATE CASCADE`; table `site_settings` (key → jsonb) with `roadmap_done_days` = 30.
+    Both audited.
+  - API `/v1/roadmap`: done items only while `done_on` ≥ today − `roadmap_done_days` (was: the newest 30);
+    items with `added_on`, `area_color`; `done_days`.
+  - CMS /roadmap: "Added on" in the form, topic suggestions from the table (a new topic is created with the next
+    colour), coloured tags, "added …", "off the site" for done items past the days; section Topics (rename, colour,
+    delete when unused), section Done items on the site (days, 0–365). Restore creates a missing topic first.
+  - Site /roadmap: wider page, the columns two side by side, status colours (In Arbeit green, Als Nächstes yellow,
+    Später orange, Erledigt faded), topics in their colour, "aufgenommen am …", notes cut to two lines with
+    "mehr"/"weniger".
+  - Tests: e2e roadmap (136) test, frontend roadmap test extended.
+- **Why:** owner: record when a goal was taken up, remove done goals after a while, shorter items, two columns,
+  colours for the columns and the topics, the topics listed in the CMS.
+- **Revert:** revert the commit and deploy; as owner: `ALTER TABLE roadmap_items DROP CONSTRAINT roadmap_items_area_fkey,
+  DROP COLUMN added_on; DROP TABLE roadmap_areas, site_settings;` `DELETE FROM schema_migrations WHERE name =
+  '136_roadmap_areas_dates.sql';`
+
 ## 2026-10-26
 
 ### Site: documentation chapter numbers 10–13 cut on tablets

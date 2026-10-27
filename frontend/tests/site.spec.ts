@@ -2436,10 +2436,11 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
     const offset = Number(q.get('offset') || 0);
     return r.fulfill({ json: { total: list.length, data: list.slice(offset, offset + Number(q.get('limit') || 20)) } });
   });
-  await page.route(/\/v1\/roadmap$/, (r) => r.fulfill({ json: { columns: [
-    { status: 'jetzt', label: 'In Arbeit', items: [{ id: 7, title: 'Projekt Dokumentation', area: 'Dokumentation', notes_html: '<p>Aus Obsidian</p>', done_on: null }] },
+  const longNotes = `<p>${'Ein langer Text, der weit mehr als zwei Zeilen braucht. '.repeat(12)}</p>`;
+  await page.route(/\/v1\/roadmap$/, (r) => r.fulfill({ json: { done_days: 30, columns: [
+    { status: 'jetzt', label: 'In Arbeit', items: [{ id: 7, title: 'Projekt Dokumentation', area: 'Dokumentation', area_color: 'brown', notes_html: '<p>Aus Obsidian</p>', added_on: '2026-10-20', done_on: null }] },
     { status: 'naechstes', label: 'Als Nächstes', items: [] },
-    { status: 'spaeter', label: 'Später', items: [{ id: 8, title: 'Historische Karten', area: 'Karte', notes_html: null, done_on: null }] },
+    { status: 'spaeter', label: 'Später', items: [{ id: 8, title: 'Historische Karten', area: 'Karte', area_color: 'teal', notes_html: longNotes, added_on: '2026-10-21', done_on: null }] },
     { status: 'erledigt', label: 'Erledigt', items: [{ id: 9, title: 'Suche über Sprachen', area: null, notes_html: null, done_on: '2026-10-19' }] }] } }));
   await page.goto('/privacy');
   await page.locator('footer a', { hasText: 'Changelog' }).click();
@@ -2462,6 +2463,19 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
   await expect(page.locator('.roadmap-col h2')).toHaveText(['In Arbeit 1', 'Als Nächstes 0', 'Später 1', 'Erledigt 1']);
   await expect(page.locator('.roadmap-jetzt .roadmap-notes')).toHaveText('Aus Obsidian');
   await expect(page.locator('.roadmap-erledigt')).toContainText('erledigt am 19. Oktober 2026');
+  // 136: the day added, topics in their colour, two columns side by side, "mehr" only for notes over two lines
+  await expect(page.locator('.roadmap-jetzt')).toContainText('aufgenommen am 20. Oktober 2026');
+  await expect(page.locator('.roadmap-spaeter .tag.area')).toHaveClass(/area-teal/);
+  await expect(page.locator('.roadmap-page')).toContainText('bleibt es 30 Tage lang');
+  const [a, b] = await page.locator('.roadmap-col').evaluateAll((cols) => cols.slice(0, 2).map((c) => c.getBoundingClientRect().top));
+  expect(Math.abs(a - b)).toBeLessThan(2);                                     // side by side
+  await expect(page.locator('.roadmap-jetzt .roadmap-more')).toBeHidden();     // short: nothing to open
+  const more = page.locator('.roadmap-spaeter .roadmap-more');
+  const notes = page.locator('.roadmap-spaeter .roadmap-notes');
+  const closed = (await notes.boundingBox())!.height;
+  await more.click();
+  await expect(more).toHaveText('weniger');
+  expect((await notes.boundingBox())!.height).toBeGreaterThan(closed * 2);
 });
 
 test('provenance records (API 104): the inventories under a step, the doubts tagged, more than three folded', async ({ page }) => {

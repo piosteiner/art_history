@@ -128,8 +128,9 @@ export const getChangelog = (params: { kind?: ChangeKind | null; limit?: number;
 export const CHANGELOG_FEED = `${BASE}/changelog/feed.xml`;
 /** The roadmap (API 118): four columns — in Arbeit, als Nächstes, später, erledigt (the last 30). */
 export type RoadmapStatus = 'jetzt' | 'naechstes' | 'spaeter' | 'erledigt';
-export interface RoadmapItem { id: number; title: string; area: string | null; notes_html: string | null; done_on: string | null }
-export const getRoadmap = () => get<{ columns: { status: RoadmapStatus; label: string; items: RoadmapItem[] }[] }>('/roadmap');
+/** `area_color`: the topic's colour key (API 136: blue, teal, purple, pink, red, brown, olive, indigo, cyan, slate). */
+export interface RoadmapItem { id: number; title: string; area: string | null; area_color?: string | null; notes_html: string | null; added_on?: string | null; done_on: string | null }
+export const getRoadmap = () => get<{ done_days?: number; columns: { status: RoadmapStatus; label: string; items: RoadmapItem[] }[] }>('/roadmap');
 
 export const listEntities = <P extends Plural>(plural: P, params: ListParams = {}) =>
   get<List<ItemByPlural[P]>>(`/${plural}`, params);

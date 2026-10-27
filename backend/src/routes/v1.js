@@ -185,7 +185,8 @@ router.get('/pages/:slug/images/:name', async (req, res) => {
 //       → {total, data: [{id, day, title, items: [{kind, label, html, roadmap: {id, title} | null}]}]}, newest first;
 //         with ?kind= only entries with such bullets, and only those bullets
 //   GET /v1/changelog/feed.xml   RSS 2.0, the last 30 entries
-//   GET /v1/roadmap              → {columns: [{status, label, items: [{id, title, area, notes_html, done_on}]}]}
+//   GET /v1/roadmap              → {done_days, columns: [{status, label, items: [{id, title, area, area_color, notes_html, added_on, done_on}]}]}
+//                                  done items only for `done_days` after their done date (site_settings, 136)
 //                                   (Erledigt: the last 30, newest first)
 const SITE_URL = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
 async function changelogEntries({ kind = null, limit = 20, offset = 0 } = {}) {
@@ -227,19 +228,19 @@ ${data.map((e) => `<item><title>${x(e.title || de.format(new Date(`${e.day}T12:0
 </channel></rss>`);
 });
 router.get('/roadmap', async (req, res) => {
+  const { rows: [setting] } = await apiPool.query(`SELECT (value #>> '{}')::int AS days FROM site_settings WHERE key = 'roadmap_done_days'`);
+  const doneDays = setting ? setting.days : 30;
   const { rows } = await apiPool.query(`
-    SELECT * FROM (
-      SELECT r.id, r.title, r.area, r.notes_md, r.status, r.done_on::text AS done_on, r.position,
-             row_number() OVER (PARTITION BY r.status ORDER BY r.done_on DESC NULLS LAST, r.position, r.id) AS n
-      FROM roadmap_items r WHERE r.published) x
-    WHERE status <> 'erledigt' OR n <= 30
-    ORDER BY CASE status WHEN 'jetzt' THEN 1 WHEN 'naechstes' THEN 2 WHEN 'spaeter' THEN 3 ELSE 4 END,
-             CASE WHEN status = 'erledigt' THEN NULL ELSE position END, done_on DESC NULLS LAST, id`);
+    SELECT r.id, r.title, r.area, a.color AS area_color, r.notes_md, r.status, r.added_on::text AS added_on, r.done_on::text AS done_on, r.position
+    FROM roadmap_items r LEFT JOIN roadmap_areas a ON a.name = r.area
+    WHERE r.published AND (r.status <> 'erledigt' OR r.done_on >= (now() AT TIME ZONE 'Europe/Zurich')::date - $1::int)
+    ORDER BY CASE r.status WHEN 'jetzt' THEN 1 WHEN 'naechstes' THEN 2 WHEN 'spaeter' THEN 3 ELSE 4 END,
+             CASE WHEN r.status = 'erledigt' THEN NULL ELSE r.position END, r.done_on DESC NULLS LAST, r.id`, [doneDays]);
   const withNotes = rows.filter((r) => r.notes_md);
   const notes = new Map((await renderItems(apiPool, withNotes.map((r) => r.notes_md))).map((h, i) => [withNotes[i], h]));
-  res.json({ columns: Object.entries(STATUS).map(([status, label]) => ({ status, label,
+  res.json({ done_days: doneDays, columns: Object.entries(STATUS).map(([status, label]) => ({ status, label,
     items: rows.map((r) => ({ ...r, notes_html: notes.get(r) || null })).filter((r) => r.status === status)
-      .map(({ status: _s, position: _p, n: _n, notes_md: _m, ...r }) => ({ ...r, id: Number(r.id) })) })) });
+      .map(({ status: _s, position: _p, notes_md: _m, ...r }) => ({ ...r, id: Number(r.id) })) })) });
 });
 
 // Curated start views (migration 069): published ones, in their order. The query read through

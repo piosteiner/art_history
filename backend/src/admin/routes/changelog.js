@@ -333,13 +333,32 @@ router.post('/changelog/restore/:auditId', async (req, res) => {
 // ---------------------------------------------------------------------------------------------------------------
 // Roadmap
 // ---------------------------------------------------------------------------------------------------------------
-const AREAS = ['Daten', 'Provenienz', 'Suche', 'Karte', 'Zeitleiste', 'Netzwerk', 'CMS', 'Website', 'Dokumentation', 'Technik'];
+// Topics (136, table roadmap_areas): a name and a colour of this palette (CSS .area-<key> in admin.css and the site's
+// style.css). An item's area references the name (ON UPDATE CASCADE): a rename reaches every item.
+const PALETTE = { blue: 'Blau', teal: 'Petrol', purple: 'Violett', pink: 'Rosa', red: 'Rot', brown: 'Braun', olive: 'Oliv', indigo: 'Indigo', cyan: 'Cyan', slate: 'Schiefer' };
+const areaList = async (db) => (await db.query(`SELECT a.id, a.name, a.color, count(r.id)::int AS n
+  FROM roadmap_areas a LEFT JOIN roadmap_items r ON r.area = a.name GROUP BY a.id ORDER BY a.name COLLATE sort_natural`)).rows;
+// a topic typed in an item's form that doesn't exist yet: created with the palette's next colour
+async function ensureArea(db, name) {
+  if (!name) return;
+  await db.query(`INSERT INTO roadmap_areas (name, color)
+    SELECT $1, ($2::text[])[(SELECT count(*) FROM roadmap_areas)::int % cardinality($2::text[]) + 1]
+    ON CONFLICT (name) DO NOTHING`, [name, Object.keys(PALETTE)]);
+}
+const areaTag = (name, colors) => html`<span class="tag area area-${colors.get(name) || 'slate'}">${name}</span>`;
+const doneDays = async (db) => (await db.query(`SELECT (value #>> '{}')::int AS days FROM site_settings WHERE key = 'roadmap_done_days'`)).rows[0]?.days ?? 30;
+const SHORT = new Intl.DateTimeFormat('de-CH', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+const shortDay = (d) => SHORT.format(new Date(`${d}T12:00:00Z`));
+// a date column as YYYY-MM-DD: pg hands it over as a Date at local midnight (no type parser for date) — local getters
+const isoDay = (d) => (d instanceof Date ? `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}` : String(d));
 
-function itemForm(r, { action, submit, key, base = '' }) {
+function itemForm(r, { action, submit, key, base = '', areas = [] }) {
   return html`<form method="post" action="${action}" class="form roadmap-form" data-form-draft="/drafts/${key}" data-form-draft-base="${base}">
     <div class="field-pair"><div class="field"><label for="rm-title">Title</label><input id="rm-title" name="title" value="${r.title || ''}" required></div>
-      <div class="field"><label for="rm-area">Area</label><input id="rm-area" name="area" value="${r.area || ''}" list="rm-areas" placeholder="e.g. Provenienz">
-        <datalist id="rm-areas">${AREAS.map((a) => html`<option>${a}</option>`)}</datalist></div></div>
+      <div class="field"><label for="rm-area">Topic</label><input id="rm-area" name="area" value="${r.area || ''}" list="rm-areas" placeholder="e.g. Provenienz">
+        <datalist id="rm-areas">${areas.map((a) => html`<option>${a.name}</option>`)}</datalist>
+        <div class="hint">One of the topics below, or a new one (it gets the next colour).</div></div>
+      <div class="field"><label for="rm-added">Added on</label><input id="rm-added" name="added_on" type="date" value="${r.added_on ? isoDay(r.added_on) : today()}" style="width:auto"></div></div>
     <div class="field"><label for="rm-notes">Notes <span class="muted small">(optional, shown on the site)</span></label><textarea id="rm-notes" name="notes_md" rows="4" class="md">${r.notes_md || ''}</textarea></div>
     <div class="field-pair"><div class="field"><label for="rm-status">Column</label><select id="rm-status" name="status">
         ${Object.entries(STATUS).map(([k, l]) => html`<option value="${k}"${(r.status || 'spaeter') === k ? ' selected' : ''}>${l}</option>`)}</select></div>
@@ -348,14 +367,18 @@ function itemForm(r, { action, submit, key, base = '' }) {
     <div class="actions"><button>${submit}</button> ${draftStatus}</div></form>`;
 }
 // a draft's fields over the item's (an unticked box is absent from a draft)
-const withDraft = (r, d) => (d ? { ...r, title: d.fields.title, area: d.fields.area, notes_md: d.fields.notes_md, status: d.fields.status || r.status,
+const withDraft = (r, d) => (d ? { ...r, title: d.fields.title, area: d.fields.area, notes_md: d.fields.notes_md, status: d.fields.status || r.status, added_on: d.fields.added_on || r.added_on,
   published: d.fields.published === '1' } : r);
 
 router.get('/roadmap', async (req, res) => {
-  const { rows } = await adminPool.query(`SELECT r.id, r.title, r.area, r.status, r.position, r.published, r.done_on::text AS done_on,
+  const { rows } = await adminPool.query(`SELECT r.id, r.title, r.area, r.status, r.position, r.published, r.done_on::text AS done_on, r.added_on::text AS added_on,
+      r.done_on < (now() AT TIME ZONE 'Europe/Zurich')::date - (SELECT (value #>> '{}')::int FROM site_settings WHERE key = 'roadmap_done_days') AS off_site,
       (SELECT e.id FROM changelog_items i JOIN changelog_entries e ON e.id = i.entry_id WHERE i.roadmap_item_id = r.id ORDER BY e.day DESC LIMIT 1) AS logged_in
     FROM roadmap_items r ORDER BY r.position, r.id`);
   const gone = await deleted('roadmap_items');
+  const areas = await areaList(adminPool);
+  const colors = new Map(areas.map((a) => [a.name, a.color]));
+  const days = await doneDays(adminPool);
   const draft = await draftOf(req.user, 'roadmap/new', '');
   const mine = (await myDrafts(req.user, 'roadmap')).filter((d) => d.id !== 'new');   // the new item's draft shows in its form
   const col = (status) => rows.filter((r) => r.status === status)
@@ -373,18 +396,60 @@ router.get('/roadmap', async (req, res) => {
         <table${status === 'erledigt' ? '' : html` data-sortable="/roadmap/order"`} class="roadmap-list">
           ${col(status).map((r) => html`<tbody class="sort-item" data-sort-id="${String(r.id)}"><tr>
             <td class="drag-cell">${status === 'erledigt' ? '' : html`<button type="button" class="drag-handle" title="Drag to reorder (or focus and use ↑ ↓)" aria-label="Move ${r.title}">⠿</button>`}</td>
-            <td class="roadmap-card"><a href="/roadmap/${String(r.id)}/edit"><b>${r.title}</b></a>${r.area ? html` <span class="tag">${r.area}</span>` : ''}${r.published ? '' : html` <span class="tag flagged">hidden</span>`}
-            ${r.done_on ? html`<div class="muted small">done ${dayLabel(r.done_on)}${r.logged_in ? html` · <a href="/changelog/${String(r.logged_in)}/edit">in the changelog</a>` : ''}</div>` : ''}
+            <td class="roadmap-card"><a href="/roadmap/${String(r.id)}/edit"><b>${r.title}</b></a>${r.area ? html` ${areaTag(r.area, colors)}` : ''}${r.published ? '' : html` <span class="tag flagged">hidden</span>`}${r.off_site ? html` <span class="tag" title="Done more than ${String(days)} days ago: no longer on the site's roadmap">off the site</span>` : ''}
+            <div class="muted small">added ${shortDay(r.added_on)}${r.done_on ? html` · done ${dayLabel(r.done_on)}${r.logged_in ? html` · <a href="/changelog/${String(r.logged_in)}/edit">in the changelog</a>` : ''}` : ''}</div>
             <form id="rm-move-${String(r.id)}" method="post" action="/roadmap/${String(r.id)}/move"><input type="hidden" name="log" value="1"></form>
             <div class="roadmap-moves">${move(r)}</div></td></tr></tbody>`)}
         </table></section>`)}
     </div>
     <h2>New item</h2>
     ${draftBanner(draft && { ...draft, stale: false }, 'roadmap/new')}
-    ${itemForm(withDraft({}, draft), { action: '/roadmap', submit: '+ Add', key: 'roadmap/new' })}
+    ${itemForm(withDraft({}, draft), { action: '/roadmap', submit: '+ Add', key: 'roadmap/new', areas })}
+    <h2 id="topics">Topics</h2>
+    <p class="muted small">The bubbles on the items, each with its colour. Renaming a topic renames it on every item; a topic
+      without items can be deleted. A new topic typed into an item's form is added here with the next colour.</p>
+    <div class="table-wrap"><table class="roadmap-areas"><thead><tr><th>Topic</th><th>Items</th><th>Name</th><th>Colour</th><th></th></tr></thead><tbody>
+      ${areas.map((a) => html`<tr><td>${areaTag(a.name, colors)}</td><td>${String(a.n)}</td>
+        <td><input form="rm-area-${String(a.id)}" name="name" value="${a.name}" required aria-label="Name of ${a.name}" style="width:12rem"></td>
+        <td><select form="rm-area-${String(a.id)}" name="color" aria-label="Colour of ${a.name}">${Object.entries(PALETTE).map(([k, l]) => html`<option value="${k}"${k === a.color ? ' selected' : ''}>${l}</option>`)}</select></td>
+        <td><form id="rm-area-${String(a.id)}" method="post" action="/roadmap/areas/${String(a.id)}" class="inline"><button class="secondary small">Save</button></form>
+          ${a.n ? '' : html`<form method="post" action="/roadmap/areas/${String(a.id)}/delete" class="inline" data-confirm="Delete the topic “${a.name}”?"><button class="link">delete</button></form>`}</td></tr>`)}
+    </tbody></table></div>
+    <h2 id="done-days">Done items on the site</h2>
+    <form method="post" action="/roadmap/settings" class="form inline-form">
+      <label>A done item stays on the site's roadmap for <input name="done_days" type="number" min="0" max="365" step="1" value="${String(days)}" style="width:5rem" aria-label="Days"> days after its done date</label>
+      <button class="secondary">Save</button>
+      <div class="hint">After that it is only in the changelog and here (marked “off the site”). 0 = done items are not shown on the site.</div></form>
     ${gone.length ? html`<h2>Recently deleted</h2><ul class="recently-deleted">${gone.map((g) => html`<li>${g.old_row.title}
       <span class="muted small">deleted ${when(g.changed_at)}${g.username ? ` by ${g.username}` : ''}</span> <a href="/roadmap/restore/${String(g.id)}">restore…</a></li>`)}</ul>` : ''}
     <p class="muted small"><a href="/roadmap/history">History of the roadmap →</a></p>` });
+});
+
+router.post('/roadmap/areas/:id', async (req, res) => {
+  if (!idOk(req.params.id)) return notFoundPage(req, res);
+  const name = String(req.body.name || '').trim();
+  const color = PALETTE[req.body.color] ? req.body.color : null;
+  if (!name || !color) return res.redirect(303, '/roadmap#topics');
+  try {
+    await withTx(req.user, (db) => db.query(`UPDATE roadmap_areas SET name = $2, color = $3 WHERE id = $1 AND (name, color) IS DISTINCT FROM ($2, $3)`,
+      [req.params.id, name, color]));
+  } catch (err) {
+    if (err.code !== '23505') throw err;   // the name of another topic: nothing changed
+    return res.redirect(303, '/roadmap?done=area-exists#topics');
+  }
+  res.redirect(303, '/roadmap?done=saved#topics');
+});
+router.post('/roadmap/areas/:id/delete', async (req, res) => {
+  if (!idOk(req.params.id)) return notFoundPage(req, res);
+  await withTx(req.user, (db) => db.query('DELETE FROM roadmap_areas a WHERE id = $1 AND NOT EXISTS (SELECT 1 FROM roadmap_items r WHERE r.area = a.name)', [req.params.id]));
+  res.redirect(303, '/roadmap?done=saved#topics');
+});
+router.post('/roadmap/settings', async (req, res) => {
+  const days = Number(req.body.done_days);
+  if (Number.isInteger(days) && days >= 0 && days <= 365) {
+    await withTx(req.user, (db) => db.query(`UPDATE site_settings SET value = to_jsonb($1::int) WHERE key = 'roadmap_done_days' AND value <> to_jsonb($1::int)`, [days]));
+  }
+  res.redirect(303, '/roadmap?done=saved#done-days');
 });
 
 router.get('/roadmap/history', async (req, res) => {
@@ -423,15 +488,18 @@ router.post('/roadmap/:id/move', async (req, res) => {
 });
 
 const itemFromBody = (b) => ({ title: String(b.title || '').trim(), area: String(b.area || '').trim() || null, notes_md: String(b.notes_md || '').trim() || null,
+  added_on: /^\d{4}-\d{2}-\d{2}$/.test(String(b.added_on || '')) ? b.added_on : null,
   status: STATUS[b.status] ? b.status : 'spaeter', published: b.published === '1', log: b.log === '1' });
 
 router.post('/roadmap', async (req, res) => {
   const v = itemFromBody(req.body);
   if (!v.title) return res.redirect(303, '/roadmap');
   await withTx(req.user, async (db) => {
-    const { rows: [r] } = await db.query(`INSERT INTO roadmap_items (title, area, notes_md, status, published, position)
-      VALUES ($1, $2, $3, 'spaeter', $4, (SELECT coalesce(max(position), 0) + 10 FROM roadmap_items WHERE status = 'spaeter')) RETURNING id`,
-    [v.title, v.area, v.notes_md, v.published]);
+    await ensureArea(db, v.area);
+    const { rows: [r] } = await db.query(`INSERT INTO roadmap_items (title, area, notes_md, status, published, position, added_on)
+      VALUES ($1, $2, $3, 'spaeter', $4, (SELECT coalesce(max(position), 0) + 10 FROM roadmap_items WHERE status = 'spaeter'),
+        coalesce($5::date, (now() AT TIME ZONE 'Europe/Zurich')::date)) RETURNING id`,
+    [v.title, v.area, v.notes_md, v.published, v.added_on]);
     if (v.status !== 'spaeter') await setStatus(db, r.id, v.status, v.log);
     await dropDraft(db, req.user, 'roadmap/new');
   });
@@ -445,9 +513,10 @@ router.get('/roadmap/:id/edit', async (req, res) => {
   const key = `roadmap/${r.id}`;
   const draft = await draftOf(req.user, key, stamp(r.updated_at));
   const { rows: past } = await history(adminPool, "a.table_name = 'roadmap_items' AND a.row_id = $1", [r.id], { limit: 50 });
+  const areas = await areaList(adminPool);
   send(req, res, { title: r.title, body: html`<p class="muted"><a href="/roadmap">← Roadmap</a></p><h1>${r.title}</h1>
     ${draftBanner(draft, key)}
-    ${itemForm(withDraft(r, draft), { action: `/roadmap/${r.id}`, submit: 'Save', key, base: stamp(r.updated_at) })}
+    ${itemForm(withDraft(r, draft), { action: `/roadmap/${r.id}`, submit: 'Save', key, base: stamp(r.updated_at), areas })}
     <p class="actions" style="margin-top:1.5rem"><a class="button danger" href="/roadmap/${String(r.id)}/delete">Delete this item…</a></p>
     <h2>History</h2>${historyTable(past, { showWhat: false })}` });
 });
@@ -457,8 +526,10 @@ router.post('/roadmap/:id', async (req, res) => {
   const v = itemFromBody(req.body);
   if (!v.title) return res.redirect(303, `/roadmap/${req.params.id}/edit`);
   await withTx(req.user, async (db) => {
-    await db.query(`UPDATE roadmap_items SET title = $2, area = $3, notes_md = $4, published = $5
-      WHERE id = $1 AND (title, area, notes_md, published) IS DISTINCT FROM ($2, $3, $4, $5)`, [req.params.id, v.title, v.area, v.notes_md, v.published]);
+    await ensureArea(db, v.area);
+    await db.query(`UPDATE roadmap_items SET title = $2, area = $3, notes_md = $4, published = $5, added_on = coalesce($6::date, added_on)
+      WHERE id = $1 AND (title, area, notes_md, published, added_on) IS DISTINCT FROM ($2, $3, $4, $5, coalesce($6::date, added_on))`,
+    [req.params.id, v.title, v.area, v.notes_md, v.published, v.added_on]);
     await setStatus(db, req.params.id, v.status, v.log);
     await dropDraft(db, req.user, `roadmap/${req.params.id}`);
   });
@@ -499,11 +570,13 @@ router.post('/roadmap/restore/:auditId', async (req, res) => {
   if (!v) return notFoundPage(req, res);
   await withTx(req.user, async (db) => {
     await db.query("SELECT set_config('arthistory.restores', $1, true)", [String(p.audit.id)]);
+    await ensureArea(db, v.area);   // its topic may have been deleted or renamed since (136)
     const { rowCount } = await db.query(`UPDATE roadmap_items t SET (title, notes_md, area, status, position, done_on, published) =
       (SELECT r.title, r.notes_md, r.area, r.status, r.position, r.done_on, r.published FROM jsonb_populate_record(NULL::roadmap_items, $2) r) WHERE t.id = $1`, [p.rootId, v]);
     if (!rowCount) {
-      await db.query(`INSERT INTO roadmap_items (id, title, notes_md, area, status, position, done_on, published, created_at) OVERRIDING SYSTEM VALUE
-        SELECT r.id, r.title, r.notes_md, r.area, r.status, r.position, r.done_on, r.published, r.created_at FROM jsonb_populate_record(NULL::roadmap_items, $1) r`, [v]);
+      await db.query(`INSERT INTO roadmap_items (id, title, notes_md, area, status, position, done_on, published, created_at, added_on) OVERRIDING SYSTEM VALUE
+        SELECT r.id, r.title, r.notes_md, r.area, r.status, r.position, r.done_on, r.published, r.created_at,
+               coalesce(r.added_on, (r.created_at AT TIME ZONE 'Europe/Zurich')::date) FROM jsonb_populate_record(NULL::roadmap_items, $1) r`, [v]);
     }
   });
   res.redirect(303, `/roadmap/${p.rootId}/edit?done=restored`);

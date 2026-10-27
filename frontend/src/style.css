@@ -855,7 +855,13 @@ li.task { list-style: none; margin-left: -1.2rem; }
 .callout-question, .callout-todo { border-left-color: #7a5fb0; }
 
 /* Changelog and roadmap (views/changelog.ts, API 118) */
-.changelog-page, .roadmap-page { max-width: 60rem; }
+.changelog-page { max-width: 60rem; }
+.roadmap-page { max-width: 72rem; }
+.roadmap-page .roadmap-board { grid-template-columns: 1fr; }
+@media (min-width: 760px) { .roadmap-page .roadmap-board { grid-template-columns: 1fr 1fr; } }  /* two columns side by side */
+.roadmap-notes.clamped { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+.roadmap-notes.clamped p { margin: 0; display: inline; } .roadmap-notes.clamped p + p::before { content: ' '; }
+.roadmap-more { margin: .1rem 0 .15rem; }
 .cl-chips { display: flex; flex-wrap: wrap; gap: .35rem; margin: .8rem 0 1rem; }
 .cl-chips .chip.active { border-color: var(--text); font-weight: 600; }
 .cl-entry { border-top: 1px solid var(--line); padding: .6rem 0 .4rem; scroll-margin-top: 4rem; }
@@ -873,8 +879,39 @@ li.task { list-style: none; margin-left: -1.2rem; }
 .roadmap-board { display: grid; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); gap: .8rem; align-items: start; margin-top: 1rem; }
 .roadmap-col { border: 1px solid var(--line); border-radius: 8px; padding: .5rem .7rem .7rem; background: var(--surface); }
 .roadmap-col h2 { font-size: 1rem; margin: .2rem 0 .5rem; }
-.roadmap-jetzt { border-top: 3px solid #2f8a55; }
 .roadmap-items { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
 .roadmap-item { padding: .45rem .55rem; border-radius: 6px; background: var(--bg); border: 1px solid var(--line); scroll-margin-top: 4rem; }
 .roadmap-item:target { outline: 2px solid var(--text); }
 .roadmap-notes { font-size: .88rem; margin-top: .2rem; } .roadmap-notes p { margin: .2rem 0; }
+
+/* roadmap (136): topic colours (roadmap_areas.color) and the columns' colours — light, then dark */
+:root {
+  --a-blue: #2b6cb0; --a-teal: #1f7a7a; --a-purple: #7a5fb0; --a-pink: #b83280; --a-red: #c53030;
+  --a-brown: #8a5a2b; --a-olive: #6b7a1f; --a-indigo: #4c51bf; --a-cyan: #0e7490; --a-slate: #4a5568;
+  --st-jetzt: #2f8a55; --st-naechstes: #b8860b; --st-spaeter: #d9822b;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --a-blue: #7fb3ee; --a-teal: #5fc4c4; --a-purple: #b9a2e6; --a-pink: #f08cc4; --a-red: #f08a82;
+    --a-brown: #d2a679; --a-olive: #b5c45f; --a-indigo: #a3a8f0; --a-cyan: #67d0e6; --a-slate: #a0aec0;
+    --st-jetzt: #6fcf97; --st-naechstes: #e8c547; --st-spaeter: #f0a46b;
+  }
+}
+:root[data-theme="dark"] {
+  --a-blue: #7fb3ee; --a-teal: #5fc4c4; --a-purple: #b9a2e6; --a-pink: #f08cc4; --a-red: #f08a82;
+  --a-brown: #d2a679; --a-olive: #b5c45f; --a-indigo: #a3a8f0; --a-cyan: #67d0e6; --a-slate: #a0aec0;
+  --st-jetzt: #6fcf97; --st-naechstes: #e8c547; --st-spaeter: #f0a46b;
+}
+.area-blue { --area: var(--a-blue); } .area-teal { --area: var(--a-teal); } .area-purple { --area: var(--a-purple); }
+.area-pink { --area: var(--a-pink); } .area-red { --area: var(--a-red); } .area-brown { --area: var(--a-brown); }
+.area-olive { --area: var(--a-olive); } .area-indigo { --area: var(--a-indigo); } .area-cyan { --area: var(--a-cyan); }
+.area-slate { --area: var(--a-slate); }
+.tag.area { color: var(--area); border-color: currentColor; background: color-mix(in srgb, var(--area) 10%, transparent); }
+.roadmap-col.roadmap-jetzt { border-top: 3px solid var(--st-jetzt); }
+.roadmap-col.roadmap-naechstes { border-top: 3px solid var(--st-naechstes); }
+.roadmap-col.roadmap-spaeter { border-top: 3px solid var(--st-spaeter); }
+.roadmap-col.roadmap-erledigt { border-top: 3px solid var(--line); opacity: .7; }
+.roadmap-jetzt > h2::before, .roadmap-naechstes > h2::before, .roadmap-spaeter > h2::before { content: ''; display: inline-block;
+  width: .6rem; height: .6rem; border-radius: 50%; margin-right: .4rem; vertical-align: .05em; }
+.roadmap-jetzt > h2::before { background: var(--st-jetzt); } .roadmap-naechstes > h2::before { background: var(--st-naechstes); }
+.roadmap-spaeter > h2::before { background: var(--st-spaeter); }
