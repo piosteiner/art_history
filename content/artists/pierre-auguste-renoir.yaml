@@ -2,6 +2,12 @@ public_id: 100475
 name: Pierre-Auguste Renoir
 given_name: Pierre-Auguste
 family_name: Renoir
+names:
+  - lang: fr
+    role: original
+    text: Auguste Renoir
+  - Pierre Auguste Renoir
+  - Renoir
 birth: 1841-02-25
 death: 1919-12-03
 wikidata_id: Q39931
