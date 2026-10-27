@@ -1,7 +1,7 @@
 // src/pages.js: [[#Heading]] links resolved through the whole page's headings (pageHeadings)
 const test = require('node:test');
 const assert = require('node:assert');
-const { renderPage, pageHeadings, reorderChapters, splitChapters } = require('../src/pages');
+const { renderPage, pageHeadings, reorderChapters, splitChapters, searchPage } = require('../src/pages');
 
 const page = 'Intro [[#Zwei|zum zweiten]]\n\n# Eins\n\n## Vertrauliche Daten\n\n# Zwei\n\n## Vertrauliche Daten\n\n'
   + '[[#Vertrauliche Daten]] · [[#Zwei#Vertrauliche Daten]] · [[#vertrauliche daten|klein]] · [[#Fehlt]] · ![[bild.webp]]';
@@ -30,4 +30,17 @@ test('chapters reordered: the introduction first, each chapter with one blank li
   assert.strictEqual(reorderChapters(text, [1, 1, 2]), null);
   assert.strictEqual(reorderChapters(text, [1, 2]), null);
   assert.strictEqual(reorderChapters(text, [1, 2, 4]), null);
+});
+
+test('the documentation searched: every word must begin a word of the paragraph, accents and case alike; the heading above; a passage', () => {
+  const text = 'Vorwort über **Zürich**.\n\n# Eins\n## Daten\nDer Abgleich mit [Wikidata](https://www.wikidata.org) im Kunsthaus Zürich.\n\n- Ein Punkt über zurich\n\n# Zwei\nNichts.';
+  const r = searchPage(text, 'wiki zurich');
+  assert.strictEqual(r.total, 1);
+  assert.deepStrictEqual(r.hits[0].chapter, { id: 'eins', title: 'Eins', index: 1 });
+  assert.deepStrictEqual(r.hits[0].heading, { id: 'daten', text: 'Daten' });
+  assert.strictEqual(r.hits[0].passage_html, 'Der Abgleich mit <mark>Wikidata</mark> im Kunsthaus <mark>Zürich</mark>.');
+  const z = searchPage(text, 'ZURICH');
+  assert.deepStrictEqual(z.hits.map((h) => h.chapter && h.chapter.id), [null, 'eins', 'eins']);   // intro, paragraph, list item
+  assert.strictEqual(searchPage(text, 'a').total, 0);                                              // too short: no search
+  assert.strictEqual(searchPage(text, 'ichts').total, 0);                                          // inside a word: not a beginning
 });

@@ -471,6 +471,8 @@ as `q=gauguin&not_in=kunsthaus zurich`.
 A text page written in the CMS, only when published (404 before), read chapter by chapter — the chapters are its
 top-level headings, the text before the first is the introduction:
 - `GET /v1/pages/<slug>` → `{slug, title, lang, updated_at, words, chars, intro_html, chapters: [{id, title, words, chars}]}`
+- `GET /v1/pages/<slug>/search?q=…` → `{q, terms, total, hits: [{chapter: {id, title, index} | null, heading: {id, text} | null, passage_html, matches}]}` —
+  paragraphs in which every query word begins a word (accents and case alike), in text order, at most 100; `passage_html` with `<mark>`s.
   (`chars`: characters with spaces as the text reads — no Markdown, images or line breaks)
 - `…?chapter=<id>` → also `chapter: {id, index, title, html, toc: [{level, id, text}], prev: {id, title} | null, next}`
   (404 for an unknown chapter)

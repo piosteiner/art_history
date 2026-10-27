@@ -119,6 +119,12 @@ export const getPage = (slug: string, chapter?: string | null) =>
 /** A short page in one piece (`?full=1`: `html` = the whole text, its headings not split into chapters). */
 export const getWholePage = (slug: string) => get<Page & { html: string }>(`/pages/${encodeURIComponent(slug)}`, { full: '1' });
 
+/** The page searched paragraph by paragraph (API: every word begins a word there; accents and case alike): hits in
+ *  document order with their chapter (null: the introduction), the heading above and a passage with <mark>s. */
+export interface PageSearchHit { chapter: { id: string; title: string; index: number } | null; heading: { id: string; text: string } | null; passage_html: string; matches: number }
+export interface PageSearch { q: string; terms: string[]; total: number; hits: PageSearchHit[] }
+export const searchPage = (slug: string, q: string) => get<PageSearch>(`/pages/${encodeURIComponent(slug)}/search`, { q });
+
 /** The public changelog (API 118): entries newest first, each with its bullet points (kind, rendered HTML). */
 export type ChangeKind = 'neu' | 'verbessert' | 'behoben' | 'inhalt' | 'technik';
 /** `area`/`area_color`: the bullet's topic (API 137) — the roadmap's list and colours. */

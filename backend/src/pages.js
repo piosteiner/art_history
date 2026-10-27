@@ -222,8 +222,76 @@ const words = (mdText) => (readLines(mdText).join(' ').match(/[\p{L}\p{N}]+/gu) 
 // characters with spaces (line breaks not counted)
 const chars = (mdText) => readLines(mdText).reduce((n, line) => n + [...line].length, 0);
 
+// ---- search ----------------------------------------------------------------------------------------------------
+// The documentation searched paragraph by paragraph (API /v1/pages/<slug>/search, the site's search field): every word
+// of the query must begin a word of the paragraph — accents, ß/ss and case alike (fold) —, the chapter's text read as
+// it reads (Markdown, links and images gone). A hit: its chapter, the heading above it (to link to), a passage around
+// the first match with the matched words in <mark> (as written), and how often they occur in it.
+const ENTITY = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ', '#39': "'" };
+const plainText = (h) => h.replace(/<[^>]+>/g, '').replace(/&(#x[\da-f]+|#\d+|\w+);/gi, (m, e) => (e[0] === '#' && e !== '#39'
+  ? String.fromCodePoint(e[1] === 'x' || e[1] === 'X' ? parseInt(e.slice(2), 16) : Number(e.slice(1))) : ENTITY[e.toLowerCase()] ?? m)).replace(/\s+/g, ' ').trim();
+const escapeHtml = (t) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
+const WORD_RE = /[\p{L}\p{N}]+(?:['’][\p{L}]+)?/gu;
+const PASSAGE = 90;   // characters of context on each side of the first match
+
+function searchPage(markdown, q, { limit = 100 } = {}) {
+  const terms = [...new Set(fold(String(q || '')).split(/[^\p{L}\p{N}]+/u).filter((w) => w.length >= 2))];
+  if (!terms.length) return { terms, total: 0, hits: [] };
+  const { intro, chapters } = splitChapters(markdown);
+  const seen = new Map();   // heading ids as the rendered chapters have them
+  const hits = [];
+  let total = 0;
+  for (const part of [{ id: null, title: null, index: 0, md: intro.md }, ...chapters]) {
+    const env = { toc: [], images: new Set(), seen, imageBase: '', known: new Set() };
+    const tokens = md.parse(part.md, env);
+    let heading = null;
+    for (let i = 0; i < tokens.length; i++) {
+      const t = tokens[i];
+      if (t.type === 'heading_open') {
+        heading = { id: t.attrGet('id'), text: plainText(md.renderer.renderInline(tokens[i + 1].children, md.options, env)) };
+        i += 1;
+        continue;
+      }
+      if (t.type !== 'inline') continue;
+      const text = plainText(md.renderer.renderInline(t.children, md.options, env));
+      if (!text) continue;
+      // the paragraph's words that some term begins; every term must be found
+      const words = [...text.matchAll(WORD_RE)].map((m) => ({ at: m.index, end: m.index + m[0].length, f: fold(m[0]) }));
+      const found = new Set();
+      const marked = words.filter((w) => {
+        const hit = terms.filter((term) => w.f.startsWith(term));
+        hit.forEach((term) => found.add(term));
+        return hit.length > 0;
+      });
+      if (found.size < terms.length) continue;
+      total += 1;
+      if (hits.length >= limit) continue;
+      // the passage: around the first match, cut at word boundaries
+      const first = marked[0];
+      let from = Math.max(0, first.at - PASSAGE);
+      let to = Math.min(text.length, first.end + PASSAGE * 2);
+      if (from > 0) from = text.indexOf(' ', from) + 1 || from;
+      if (to < text.length) { const sp = text.lastIndexOf(' ', to); if (sp > first.end) to = sp; }
+      let out = '';
+      let at = from;
+      for (const w of marked.filter((x) => x.at >= from && x.end <= to)) {
+        out += `${escapeHtml(text.slice(at, w.at))}<mark>${escapeHtml(text.slice(w.at, w.end))}</mark>`;
+        at = w.end;
+      }
+      out += escapeHtml(text.slice(at, to));
+      hits.push({
+        chapter: part.id ? { id: part.id, title: part.title, index: part.index } : null,
+        heading: heading && heading.id ? heading : null,
+        passage_html: `${from > 0 ? '… ' : ''}${out}${to < text.length ? ' …' : ''}`,
+        matches: marked.length,
+      });
+    }
+  }
+  return { terms, total, hits };
+}
+
 // a page's address on the site (frontend: src/views/page.ts) — heading links point there
 const SITE_ADDRESS = { 'projekt-dokumentation': '/dokumentation', privacy: '/privacy' };
 const siteAddress = (slug) => SITE_ADDRESS[slug] || `/pages/${slug}`;
 
-module.exports = { renderPage, pageHeadings, siteAddress, reorderChapters, splitChapters, replaceChapter, words, chars, IMAGE_NAME };
+module.exports = { renderPage, pageHeadings, siteAddress, reorderChapters, searchPage, splitChapters, replaceChapter, words, chars, IMAGE_NAME };

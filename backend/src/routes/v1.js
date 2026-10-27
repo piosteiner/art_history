@@ -10,7 +10,7 @@ const { router: history } = require('./history');
 const { renderMarkdown, linkNames } = require('../markdown');
 const { badRequest, notFound } = require('../http');
 const { fold } = require('../fold');
-const { renderPage, pageHeadings, siteAddress, splitChapters, words, chars } = require('../pages');
+const { renderPage, pageHeadings, siteAddress, searchPage, splitChapters, words, chars } = require('../pages');
 const { KINDS, STATUS, renderItems } = require('../changelog');
 
 const router = express.Router();
@@ -170,6 +170,14 @@ router.get('/pages/:slug', async (req, res) => {
     out.toc = [...introOut.toc, ...rendered.flatMap((c) => c.toc)];
   }
   res.json(out);
+});
+// GET /v1/pages/<slug>/search?q=… — the page searched paragraph by paragraph (src/pages.js searchPage): {q, terms, total,
+// hits: [{chapter: {id, title, index} | null (introduction), heading: {id, text} | null, passage_html, matches}]}
+router.get('/pages/:slug/search', async (req, res) => {
+  const { rows: [p] } = await apiPool.query('SELECT body_md FROM pages WHERE slug = $1 AND published', [req.params.slug]);
+  if (!p) throw notFound(`no page "${req.params.slug}"`);
+  const q = String(req.query.q || '').slice(0, 200);
+  res.json({ q, ...searchPage(p.body_md, q) });
 });
 router.get('/pages/:slug/images/:name', async (req, res) => {
   const { rows: [img] } = await apiPool.query(`SELECT i.content_type, i.bytes, i.sha256 FROM page_images i JOIN pages p ON p.id = i.page_id

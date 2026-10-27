@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Documentation: a search field (API `/v1/pages/<slug>/search`, site)
+- **What:** `searchPage()` in `src/pages.js` — the page read paragraph by paragraph as it reads (Markdown gone), every
+  query word must begin a word there (`fold`: accents, ß/ss, case alike); hits with chapter, the heading above and a
+  passage with `<mark>`s. Site (`frontend/src/views/page.ts`): a search field on the overview and every chapter;
+  `/dokumentation?q=…` lists the hits by chapter as you type; a hit opens its chapter at the heading, the words marked
+  (`highlight.ts`). Tests: `test/pages.test.js`, site test.
+- **Why:** owner: search the documentation.
+- **Revert:** revert the commit.
+
 ### Pages: no word counts in the CMS chapter list
 - **What:** the outline of a page lists the chapters without their word counts (they ran over into the editor's column).
 - **Why:** owner: not needed in the CMS; the site shows them.

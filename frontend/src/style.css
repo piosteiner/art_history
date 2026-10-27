@@ -812,6 +812,15 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .doc-page .page-image-missing { display: none; }
 /* [[#Heading]] to no heading of the page (API 114): the text as plain words */
 .doc-page .page-link-missing { color: inherit; }
+/* the documentation's search (overview and chapters) and its hits */
+.doc-search { display: flex; gap: .4rem; margin: .8rem 0 1rem; max-width: 34rem; }
+.doc-search input { flex: 1; min-width: 0; padding: .4rem .6rem; font: inherit; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); }
+.doc-search button { font: inherit; padding: .4rem .8rem; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--text); cursor: pointer; }
+.doc-hits h2 { font-size: 1.1rem; margin: 1.4rem 0 .4rem; }
+.doc-hits ol { list-style: none; padding: 0; margin: 0; }
+.doc-hits li { margin: 0 0 .8rem; }
+.doc-hits li p { margin: .15rem 0 0; color: var(--muted); }
+.doc-hits li p mark { color: #1b1a17; }
 .doc-page mark { background: var(--mark); color: #1b1a17; padding: 0 .1em; }
 .doc-page li.task { list-style: none; margin-left: -1.2rem; }
 .doc-page .task-box { display: inline-block; width: 1.2rem; }

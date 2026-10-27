@@ -2426,6 +2426,41 @@ test('project documentation (API 114/116): from the footer, the overview with it
   await expect(page.locator('main')).toContainText('noch nicht veröffentlicht');
 });
 
+test('project documentation: the search field lists hits by chapter; a hit opens its chapter at the heading, the words marked', async ({ page }) => {
+  const base = { slug: 'projekt-dokumentation', title: 'Projekt Dokumentation', lang: 'de-CH', updated_at: '2026-10-27T12:00:00Z', words: 1200, chars: 8400,
+    intro_html: '', chapters: [{ id: 'projektstart', title: 'Projektstart', words: 600, chars: 4200 }, { id: 'provenienz', title: 'Provenienz', words: 200, chars: 1400 }] };
+  const chapter = { id: 'projektstart', index: 1, title: 'Projektstart', prev: null, next: { id: 'provenienz', title: 'Provenienz' },
+    toc: [{ level: 1, id: 'projektstart', text: 'Projektstart' }, { level: 2, id: 'backend-setup', text: 'Backend Setup' }],
+    html: '<h1 id="projektstart">Projektstart</h1><p>Wikidata oben.</p><p style="height:2500px"></p><h2 id="backend-setup">Backend Setup</h2><p>Der Abgleich mit Wikidata im Backend.</p>' };
+  let asked = '';
+  await page.route(/\/v1\/pages\/projekt-dokumentation\/search\?/, (r) => {
+    asked = new URL(r.request().url()).searchParams.get('q') ?? '';
+    return r.fulfill({ json: { q: asked, terms: ['wiki'], total: 2, hits: [
+      { chapter: { id: 'projektstart', title: 'Projektstart', index: 1 }, heading: { id: 'backend-setup', text: 'Backend Setup' }, passage_html: 'Der Abgleich mit <mark>Wikidata</mark> im Backend.', matches: 1 },
+      { chapter: { id: 'provenienz', title: 'Provenienz', index: 2 }, heading: { id: 'provenienz', text: 'Provenienz' }, passage_html: '… aus <mark>Wikipedia</mark> …', matches: 1 }] } });
+  });
+  await page.route(/\/v1\/pages\/projekt-dokumentation(\?.*)?$/, (r) => {
+    const c = new URL(r.request().url()).searchParams.get('chapter');
+    return r.fulfill({ json: c ? { ...base, chapter } : base });
+  });
+  await page.goto('/dokumentation');
+  await page.fill('.doc-search input', 'wiki');
+  await expect(page.locator('.doc-hits h2')).toHaveText(['Kapitel 1 Projektstart', 'Kapitel 2 Provenienz']);
+  expect(asked).toBe('wiki');
+  await expect(page).toHaveURL(/\/dokumentation\?q=wiki$/);
+  await expect(page.locator('.doc-chapters')).toBeHidden();                       // the chapter list gives way to the hits
+  await page.locator('.doc-hits a', { hasText: 'Backend Setup' }).click();
+  await expect(page).toHaveURL(/\/dokumentation\/projektstart\?hl=wikidata#backend-setup$/);
+  const marks = page.locator('.doc-body mark.search-hit');
+  await expect(marks).toHaveCount(2);
+  await expect(marks.nth(1)).toBeInViewport();                                    // the one after the heading, not the first
+  // from a chapter: Enter opens the hits on the overview
+  await page.fill('.doc-search input', 'wiki');
+  await page.press('.doc-search input', 'Enter');
+  await expect(page).toHaveURL(/\/dokumentation\?q=wiki$/);
+  await expect(page.locator('.doc-hits')).toHaveCount(2);
+});
+
 test('changelog and roadmap (API 118): from the footer, kinds as badges, filtered by kind, more on scrolling; the roadmap columns', async ({ page }) => {
   const entry = (id: number, day: string, kind = 'neu') => ({ id, day, title: id === 1 ? 'Patch: Suche' : null,
     items: [{ kind, label: kind === 'neu' ? 'Neu' : 'Behoben', html: `Punkt <a href="/artists/paul-gauguin">${id}</a>`, roadmap: id === 1 ? { id: 7, title: 'Suche' } : null,
