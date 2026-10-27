@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Data: provenance of Manet's *Im Wintergarten* (Alte Nationalgalerie, A I 550)
+- **What:** (data only; `from-wikidata.js`, `import.js`) new people `eduard-arnhold` (Q105675),
+  `ernst-von-mendelssohn-bartholdy` (Q1360879), `robert-von-mendelssohn` (Q24068581), `hugo-oppenheim` (Q21032850), each
+  `patron_of` the Alte Nationalgalerie 1896; `ehepaar-guillemet` (kind couple — the sitters, no first names in the source).
+  `in-the-conservatory`: created in Paris (Georg von Rosen's studio), depicts the Guillemets; provenance from
+  recherche.smb.museum/detail/962626: "Madame Manet, Paris" (as text — wife or mother, the record doesn't say) →
+  Jean-Baptiste Faure 1.1.1883 → Durand-Ruel (dealer) until 24.8.1896 → Nationalgalerie 24.8.1896 (gift: bought by
+  Tschudi with the patrons' money) · Central Collecting Point Wiesbaden custodian 1945–1953 (returned to the
+  Nationalgalerie West). All cited word for word.
+- **Why:** owner: add the missing information, especially the provenance.
+- **Revert:** admin history of the entries.
+
 ### Provenance: owners added on the fly, high priority until completed (migration 142)
 - **What:** the owner and joint-owner pickers of a provenance step offer "+ New person / institution / artist “…”"
   for the name as typed (`editor/autocomplete.js` `data-quick-new`; not for a type that has an entry of exactly that
