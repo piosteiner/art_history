@@ -3,8 +3,9 @@
 //                                as a badge; chips filter by kind; more entries load as you scroll; RSS feed linked.
 //                                Every entry has an anchor (#eintrag-<id>), which the feed links to.
 //   /roadmap                     what is being worked on, what comes next, later, and what is done (with the day) —
-//                                two columns side by side; topics in their colour (136); notes cut to two lines with
-//                                "mehr"; done items only for the CMS's number of days
+//                                four columns side by side on wide screens; topics in their colour (136); a card shows
+//                                title, topic and dates — a click opens its notes (<details>); done items only for the
+//                                CMS's number of days
 import { CHANGELOG_FEED, getChangelog, getRoadmap, type ChangeKind, type ChangelogEntry } from '../api';
 import { html, render, trusted } from '../html';
 import { replaceUrl } from '../router';
@@ -97,23 +98,24 @@ export function roadmapPage(main: HTMLElement) {
           <a href="/changelog">Changelog</a>${doneDays !== undefined ? ` – unter „Erledigt“ bleibt es ${String(doneDays)} Tage lang` : ''}.</p>
         <div class="roadmap-board">${columns.map((c) => html`<section class="roadmap-col roadmap-${c.status}" aria-labelledby="rm-${c.status}">
           <h2 id="rm-${c.status}">${c.label} <span class="muted small">${String(c.items.length)}</span></h2>
-          ${c.items.length ? html`<ul class="roadmap-items">${c.items.map((i) => html`<li class="roadmap-item" id="punkt-${String(i.id)}">
-            <b>${i.title}</b>${i.area ? html` <span class="tag area area-${i.area_color || 'slate'}">${i.area}</span>` : ''}
-            ${i.notes_html ? html`<div class="roadmap-notes clamped" id="rm-notes-${String(i.id)}">${trusted(i.notes_html)}</div>
-              <button type="button" class="link-button small roadmap-more" aria-expanded="false" aria-controls="rm-notes-${String(i.id)}" hidden>mehr</button>` : ''}
-            <div class="muted small">${[i.added_on ? `aufgenommen ${day(i.added_on, NUMERIC)}` : '', i.done_on ? `erledigt ${day(i.done_on, NUMERIC)}` : ''].filter(Boolean).join(' · ')}</div></li>`)}</ul>`
+          ${c.items.length ? html`<ul class="roadmap-items">${c.items.map((i) => {
+            const head = html`<b>${i.title}</b>${i.area ? html` <span class="tag area area-${i.area_color || 'slate'}">${i.area}</span>` : ''}
+              <span class="roadmap-dates muted small">${[i.added_on ? `aufgenommen ${day(i.added_on, NUMERIC)}` : '', i.done_on ? `erledigt ${day(i.done_on, NUMERIC)}` : ''].filter(Boolean).join(' · ')}</span>`;
+            // with notes: the card opens and closes on a click (and Enter / Space); without: just the head
+            return html`<li class="roadmap-item" id="punkt-${String(i.id)}">${i.notes_html
+              ? html`<details class="roadmap-card"><summary title="Klicken für die Beschreibung">${head}</summary><div class="roadmap-notes">${trusted(i.notes_html)}</div></details>`
+              : head}</li>`;
+          })}</ul>`
           : html`<p class="muted small">Nichts.</p>`}</section>`)}</div>`);
-      // notes longer than two lines: "mehr" opens them, "weniger" closes them again
-      box.querySelectorAll<HTMLButtonElement>('.roadmap-more').forEach((b) => {
-        const notes = document.getElementById(b.getAttribute('aria-controls')!)!;
-        b.hidden = notes.scrollHeight <= notes.clientHeight + 1;
-        b.addEventListener('click', () => {
-          const open = notes.classList.toggle('clamped') === false;
-          b.setAttribute('aria-expanded', String(open));
-          b.textContent = open ? 'weniger' : 'mehr';
-        });
-      });
-      if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+      // a link to one item (#punkt-12): that card open — also when only the anchor changes on this page
+      const openTarget = () => {
+        const target = location.hash ? document.getElementById(decodeURIComponent(location.hash.slice(1))) : null;
+        target?.querySelector('details')?.setAttribute('open', '');
+        target?.scrollIntoView();
+      };
+      openTarget();
+      const onHash = () => (current() ? openTarget() : window.removeEventListener('hashchange', onHash));
+      window.addEventListener('hashchange', onHash);
     })
     .catch((err) => { if (current()) showError(box, err); });
 }

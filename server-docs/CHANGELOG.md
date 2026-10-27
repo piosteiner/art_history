@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Site: roadmap cards open on a click
+- **What:** `frontend/src/views/changelog.ts` + `style.css`: a card shows title, topic and dates; its notes open and
+  close on a click (`<details>`/`<summary>`, keyboard too, ▸/▾); cards without notes aren't clickable; `#punkt-<id>`
+  opens its card (also on an anchor change within the page). The two-line preview and "mehr" removed. Test updated.
+- **Why:** owner: saves space, works well enough.
+- **Revert:** revert the commit.
+
 ### Site: the roadmap's four columns side by side again
 - **What:** `frontend/src/style.css`: four columns from 1100 px (page up to 90 rem), two by two from 760 px, one below
   the other on phones (was two by two on every screen); `views/changelog.ts`: dates on the cards as 24.10.2026.

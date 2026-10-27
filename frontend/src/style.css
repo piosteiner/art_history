@@ -861,9 +861,15 @@ li.task { list-style: none; margin-left: -1.2rem; }
 .roadmap-page .roadmap-board { grid-template-columns: 1fr; }
 @media (min-width: 760px) { .roadmap-page .roadmap-board { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1100px) { .roadmap-page .roadmap-board { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
-.roadmap-notes.clamped { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
-.roadmap-notes.clamped p { margin: 0; display: inline; } .roadmap-notes.clamped p + p::before { content: ' '; }
-.roadmap-more { margin: .1rem 0 .15rem; }
+/* a card with notes opens on a click: ▸ closed, ▾ open; the dates on their own line under title and topic */
+.roadmap-card > summary { list-style: none; cursor: pointer; position: relative; padding-right: 1.1rem; }
+.roadmap-card > summary::-webkit-details-marker { display: none; }
+.roadmap-card > summary::after { content: '▸'; position: absolute; right: 0; top: 0; color: var(--muted); }
+.roadmap-card[open] > summary::after { content: '▾'; }
+.roadmap-card > summary:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; border-radius: 3px; }
+.roadmap-item:has(> .roadmap-card):hover { border-color: var(--muted); }
+.roadmap-dates { display: block; }
+.roadmap-card[open] .roadmap-notes { border-top: 1px solid var(--line); margin-top: .35rem; padding-top: .3rem; }
 .cl-chips { display: flex; flex-wrap: wrap; gap: .35rem; margin: .8rem 0 1rem; }
 .cl-chips .chip.active { border-color: var(--text); font-weight: 600; }
 .cl-entry { border-top: 1px solid var(--line); padding: .6rem 0 .4rem; scroll-margin-top: 4rem; }

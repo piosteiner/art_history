@@ -2461,7 +2461,14 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
   await page.locator('.changelog-page a', { hasText: 'Roadmap' }).first().click();
   await expect(page).toHaveURL(/\/roadmap$/);
   await expect(page.locator('.roadmap-col h2')).toHaveText(['In Arbeit 1', 'Als Nächstes 0', 'Später 1', 'Erledigt 1']);
-  await expect(page.locator('.roadmap-jetzt .roadmap-notes')).toHaveText('Aus Obsidian');
+  // a card shows title, topic and dates; its notes open on a click and close on the next
+  const jetzt = page.locator('.roadmap-jetzt .roadmap-notes');
+  await expect(jetzt).toBeHidden();
+  await page.locator('.roadmap-jetzt summary').click();
+  await expect(jetzt).toHaveText('Aus Obsidian');
+  await page.locator('.roadmap-jetzt summary').click();
+  await expect(jetzt).toBeHidden();
+  await expect(page.locator('.roadmap-erledigt summary')).toHaveCount(0);       // no notes: nothing to open
   await expect(page.locator('.roadmap-erledigt')).toContainText('erledigt 19.10.2026');
   // 136: the day added, topics in their colour, two columns side by side, "mehr" only for notes over two lines
   await expect(page.locator('.roadmap-jetzt')).toContainText('aufgenommen 20.10.2026');
@@ -2475,13 +2482,11 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
   const [t1, t2, t3, t4] = await tops();
   expect(t1).toBe(t2); expect(t3).toBe(t4); expect(t3).toBeGreaterThan(t1);
   await page.setViewportSize({ width: 1280, height: 800 });
-  await expect(page.locator('.roadmap-jetzt .roadmap-more')).toBeHidden();     // short: nothing to open
-  const more = page.locator('.roadmap-spaeter .roadmap-more');
-  const notes = page.locator('.roadmap-spaeter .roadmap-notes');
-  const closed = (await notes.boundingBox())!.height;
-  await more.click();
-  await expect(more).toHaveText('weniger');
-  expect((await notes.boundingBox())!.height).toBeGreaterThan(closed * 2);
+  // a link to one item opens its card
+  await page.goto('/privacy');
+  await page.goto('/roadmap#punkt-8');
+  await expect(page.locator('#punkt-8 .roadmap-notes')).toBeVisible();
+  await expect(page.locator('#punkt-7 .roadmap-notes')).toBeHidden();
 });
 
 test('provenance records (API 104): the inventories under a step, the doubts tagged, more than three folded', async ({ page }) => {
