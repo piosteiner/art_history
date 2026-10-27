@@ -45,3 +45,9 @@ npx playwright show-trace test/e2e/.results/<…>/trace.zip   # what the browser
 fixtures start every test in a fresh browser context with them (no login form per test). A test that logs out must
 use `login(browser, user)` from `helpers.js` — logging out ends a session, and the shared one is used by every other test.
 A fresh context starts on a blank page: open the page you need first (`await userA.goto('/')`).
+
+## In deploys: a log, one retry, flaky tests listed
+`deploy.sh` writes the whole test output to `logs/deploy-<time>.log` (the newest 20 kept) and, on failure, names the
+failed tests. It runs the e2e tests with `E2E_RETRIES=1`: a test that fails and then passes is reported as **flaky** —
+the deploy goes on, but the test is listed and should be fixed; a test that fails twice stops the deploy. A plain
+`npm run test:e2e` has no retries, so every failure shows.

@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Deploys: test log, one retry, flaky tests listed
+- **What:** `backend/deploy.sh` writes the unit and e2e output to `logs/deploy-<time>.log` (newest 20 kept), prints the
+  failed tests on failure and the flaky ones (failed once, passed on retry) on success; `playwright.config.js` retries
+  `E2E_RETRIES` times (deploy: 1, otherwise 0). Checked with a deliberately flaky test. test/e2e/README.md.
+- **Why:** two deploys were stopped today by a failure that five full runs (246 tests each) could not reproduce; the
+  output was gone, so the test could not be named.
+- **Revert:** revert the commit.
+
 ### Names: role "former" (migration 139)
 - **What:** migration 139 widens `names_valid()` (called by the CHECK of every `names` column) by `former`;
   `src/names.js` ROLES (the CMS's role dropdown and the "text | lang | role" lines follow); site: a former name in the

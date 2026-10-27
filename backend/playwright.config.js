@@ -13,7 +13,7 @@ module.exports = defineConfig({
   fullyParallel: false,
   timeout: 60000,
   expect: { timeout: 8000 },
-  retries: 0,
+  retries: Number(process.env.E2E_RETRIES) || 0,  // deploy.sh: 1 — a test passing on its retry is reported as flaky
   reporter: [['list']],
   outputDir: 'test/e2e/.results',
   globalSetup: require.resolve('./test/e2e/global-setup'),

@@ -14,11 +14,24 @@ npm ci --no-fund --no-audit          # incl. dev deps: esbuild, CodeMirror, Leaf
 
 if [ "$1" != "--skip-tests" ]; then
   # Unit tests, then the admin panel in a real browser against their own databases and servers (two workers side by side: arthistory_test :3006, arthistory_test_1 :3008).
-  if ! npm test --silent || ! npm run --silent test:e2e; then
+  # The whole output goes to logs/deploy-<time>.log (the newest 20 kept), so a failure can be looked up afterwards.
+  # E2E_RETRIES=1: a test that fails once and then passes is "flaky" — listed, but the deploy goes on; one that fails
+  # twice stops it (2026-10-27: two failures that five full runs could not reproduce had blocked deploys).
+  LOG_DIR=../logs; mkdir -p "$LOG_DIR"; LOG="$LOG_DIR/deploy-$(date +%Y%m%d-%H%M%S).log"
+  ls -1t "$LOG_DIR"/deploy-*.log 2>/dev/null | tail -n +21 | xargs -r rm --
+  echo "  tests … (output: $LOG)"
+  if ! { npm test --silent && E2E_RETRIES=1 npm run --silent test:e2e; } > "$LOG" 2>&1; then
     echo "✗ tests failed — production was not touched (still running $PREVIOUS)."
+    grep -E "✘|^# fail|^not ok|[0-9]+ failed" "$LOG" | sort -u | head -20
+    echo "  Full output: $LOG"
     echo "  The checkout is now at $(git rev-parse --short HEAD); fix and deploy again, or go back: git checkout $PREVIOUS"
     exit 1
   fi
+  if grep -qE "^ +[0-9]+ flaky" "$LOG"; then
+    echo "! flaky (failed once, passed on retry) — please look at them:"
+    sed -n '/^ *[0-9]* flaky/,/^ *[0-9]* passed/p' "$LOG" | grep "›" | head -20
+  fi
+  grep -E "^ +[0-9]+ passed" "$LOG" | tail -1
 else
   echo "! --skip-tests: deploying without tests"
 fi
