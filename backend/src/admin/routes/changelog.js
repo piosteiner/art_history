@@ -88,7 +88,7 @@ router.get('/changelog', async (req, res) => {
   const mine = await myDrafts(req.user, 'changelog');
   send(req, res, { title: 'Changelog', body: html`<h1>Changelog</h1>
     <p class="muted">What changed on the site, one entry per day or patch — in German, as the site shows it at
-      <a href="${SITE}/changelog" target="_blank" rel="noopener">/changelog ↗</a>. <a href="/roadmap">Roadmap →</a></p>
+      <a href="${SITE}/changelog" target="_blank" rel="noopener">/changelog ↗</a>. <a href="/roadmap">Roadmap →</a> · <a href="/roadmap#topics">Topics and their colours →</a></p>
     ${draftsNotice(mine, (d) => (d.id === 'new' ? html`<a href="/changelog/new">a new entry</a>` : html`<a href="/changelog/${d.id}/edit">${d.label}</a>`))}
     ${unpublished.length ? html`<div class="flash warn unpublished-list"><b>${String(unpublished.length)} saved entr${unpublished.length === 1 ? 'y is' : 'ies are'} not published</b>
       — not on the site: ${unpublished.slice(0, 12).map((r, i) => html`${i ? ', ' : ''}<a href="/changelog/${String(r.id)}/edit">${dayLabel(r.day)}</a>`)}${unpublished.length > 12 ? ` and ${unpublished.length - 12} more` : ''}.</div>` : ''}
@@ -115,7 +115,8 @@ function entryForm(e, { action, items = '', flash = null, preview = null, isNew 
       <div class="field"><label for="cl-items">Bullet points</label>
         <textarea id="cl-items" name="items" rows="14" class="md" data-preview="/changelog/preview">${items}</textarea>
         <div class="hint">One per line, starting with its kind: <code>Neu:</code> · <code>Verbessert:</code> · <code>Behoben:</code> · <code>Inhalt:</code> · <code>Technik:</code>
-          (none = Neu). A line indented by two spaces continues the bullet above. Markdown and <code>[[type/slug]]</code> links work;
+          (none = Neu). A topic in brackets after the kind: <code>Neu [Karte]: …</code> — the roadmap's <a href="/roadmap#topics">topics</a>
+          and colours; a new one is added there. A line indented by two spaces continues the bullet above. Markdown and <code>[[type/slug]]</code> links work;
           the spell check follows the text's language (EN/DE in the toolbar).</div></div>
       <div class="field"><label class="choice"><input type="checkbox" name="published" value="1"${e.published ? ' checked' : ''}> Published</label></div>
       <div class="actions"><button>${isNew ? 'Create' : 'Save'}</button> ${draftStatus}</div>
@@ -126,7 +127,8 @@ function entryForm(e, { action, items = '', flash = null, preview = null, isNew 
 }
 const previewOf = async (items) => {
   const htmls = await renderItems(adminPool, items.map((i) => i.text_md ?? i.text));
-  return html`${items.map((i, n) => html`<li><span class="cl-kind cl-${i.kind}">${KINDS[i.kind]}</span> ${raw(htmls[n])}</li>`)}`;
+  const colors = new Map((await areaList(adminPool)).map((a) => [a.name, a.color]));
+  return html`${items.map((i, n) => html`<li><span class="cl-kind cl-${i.kind}">${KINDS[i.kind]}</span>${i.area ? html` ${areaTag(i.area, colors)}` : ''} ${raw(htmls[n])}</li>`)}`;
 };
 
 const fromBody = (body) => ({ day: String(body.day || '').trim(), title: String(body.title || '').trim() || null,
@@ -136,7 +138,8 @@ const fromBody = (body) => ({ day: String(body.day || '').trim(), title: String(
 // (not every bullet deleted and written anew). A bullet keeps its roadmap link when its text is unchanged; an item
 // may also name its link (a restored version).
 async function writeItems(db, entryId, items) {
-  const { rows: old } = await db.query('SELECT id, position, kind, text_md, roadmap_item_id FROM changelog_items WHERE entry_id = $1 ORDER BY position', [entryId]);
+  const { rows: old } = await db.query('SELECT id, position, kind, area, text_md, roadmap_item_id FROM changelog_items WHERE entry_id = $1 ORDER BY position', [entryId]);
+  for (const a of new Set(items.map((i) => i.area).filter(Boolean))) await ensureArea(db, a);   // a new topic: added with its colour
   const link = new Map(old.filter((o) => o.roadmap_item_id).map((o) => [o.text_md, o.roadmap_item_id]));
   const linkOf = async (i) => {
     if (!('roadmap_item_id' in i)) return link.get(i.text) || null;
@@ -148,9 +151,9 @@ async function writeItems(db, entryId, items) {
     const o = old[n];
     const roadmap = await linkOf(i);
     if (!o) {
-      await db.query('INSERT INTO changelog_items (entry_id, position, kind, text_md, roadmap_item_id) VALUES ($1, $2, $3, $4, $5)', [entryId, n, i.kind, i.text, roadmap]);
-    } else if (o.position !== n || o.kind !== i.kind || o.text_md !== i.text || String(o.roadmap_item_id) !== String(roadmap)) {
-      await db.query('UPDATE changelog_items SET position = $2, kind = $3, text_md = $4, roadmap_item_id = $5 WHERE id = $1', [o.id, n, i.kind, i.text, roadmap]);
+      await db.query('INSERT INTO changelog_items (entry_id, position, kind, text_md, roadmap_item_id, area) VALUES ($1, $2, $3, $4, $5, $6)', [entryId, n, i.kind, i.text, roadmap, i.area || null]);
+    } else if (o.position !== n || o.kind !== i.kind || o.text_md !== i.text || String(o.roadmap_item_id) !== String(roadmap) || (o.area || null) !== (i.area || null)) {
+      await db.query('UPDATE changelog_items SET position = $2, kind = $3, text_md = $4, roadmap_item_id = $5, area = $6 WHERE id = $1', [o.id, n, i.kind, i.text, roadmap, i.area || null]);
     }
   }
   const extra = old.slice(items.length).map((o) => o.id);
@@ -191,7 +194,7 @@ async function entry(id) {
   if (!idOk(id)) return null;
   const { rows: [e] } = await adminPool.query('SELECT id, day::text AS day, title, published, updated_at FROM changelog_entries WHERE id = $1', [id]);
   if (!e) return null;
-  const { rows: items } = await adminPool.query('SELECT kind, text_md, updated_at FROM changelog_items WHERE entry_id = $1 ORDER BY position', [id]);
+  const { rows: items } = await adminPool.query('SELECT kind, area, text_md, updated_at FROM changelog_items WHERE entry_id = $1 ORDER BY position', [id]);
   // changed = the entry or any of its bullets (a draft started before is stale)
   const changed = [e.updated_at, ...items.map((i) => i.updated_at)].reduce((a, b) => (b > a ? b : a));
   return { ...e, items, base: stamp(changed) };
@@ -325,7 +328,7 @@ router.post('/changelog/restore/:auditId', async (req, res) => {
       await db.query(`INSERT INTO changelog_entries (id, day, title, published, created_at) OVERRIDING SYSTEM VALUE
         SELECT r.id, r.day, r.title, r.published, r.created_at FROM jsonb_populate_record(NULL::changelog_entries, $1) r`, [v]);
     }
-    await writeItems(db, p.rootId, v.items.map((i) => ({ kind: i.kind, text: i.text_md, roadmap_item_id: i.roadmap_item_id })));
+    await writeItems(db, p.rootId, v.items.map((i) => ({ kind: i.kind, area: i.area || null, text: i.text_md, roadmap_item_id: i.roadmap_item_id })));
   });
   res.redirect(303, `/changelog/${p.rootId}/edit?done=restored`);
 });
@@ -336,8 +339,11 @@ router.post('/changelog/restore/:auditId', async (req, res) => {
 // Topics (136, table roadmap_areas): a name and a colour of this palette (CSS .area-<key> in admin.css and the site's
 // style.css). An item's area references the name (ON UPDATE CASCADE): a rename reaches every item.
 const PALETTE = { blue: 'Blau', teal: 'Petrol', purple: 'Violett', pink: 'Rosa', red: 'Rot', brown: 'Braun', olive: 'Oliv', indigo: 'Indigo', cyan: 'Cyan', slate: 'Schiefer' };
-const areaList = async (db) => (await db.query(`SELECT a.id, a.name, a.color, count(r.id)::int AS n
-  FROM roadmap_areas a LEFT JOIN roadmap_items r ON r.area = a.name GROUP BY a.id ORDER BY a.name COLLATE sort_natural`)).rows;
+// n: roadmap items, bullets: changelog bullets (137) with the topic
+const areaList = async (db) => (await db.query(`SELECT a.id, a.name, a.color,
+    (SELECT count(*) FROM roadmap_items r WHERE r.area = a.name)::int AS n,
+    (SELECT count(*) FROM changelog_items i WHERE i.area = a.name)::int AS bullets
+  FROM roadmap_areas a ORDER BY a.name COLLATE sort_natural`)).rows;
 // a topic typed in an item's form that doesn't exist yet: created with the palette's next colour
 async function ensureArea(db, name) {
   if (!name) return;
@@ -406,14 +412,15 @@ router.get('/roadmap', async (req, res) => {
     ${draftBanner(draft && { ...draft, stale: false }, 'roadmap/new')}
     ${itemForm(withDraft({}, draft), { action: '/roadmap', submit: '+ Add', key: 'roadmap/new', areas })}
     <h2 id="topics">Topics</h2>
-    <p class="muted small">The bubbles on the items, each with its colour. Renaming a topic renames it on every item; a topic
-      without items can be deleted. A new topic typed into an item's form is added here with the next colour.</p>
-    <div class="table-wrap"><table class="roadmap-areas"><thead><tr><th>Topic</th><th>Items</th><th>Name</th><th>Colour</th><th></th></tr></thead><tbody>
-      ${areas.map((a) => html`<tr><td>${areaTag(a.name, colors)}</td><td>${String(a.n)}</td>
+    <p class="muted small">The bubbles on the roadmap's items and the changelog's bullets (<code>Neu [Topic]: …</code>), each
+      with its colour. Renaming a topic renames it everywhere; a topic nothing uses can be deleted. A new topic typed into an
+      item's form or a bullet is added here with the next colour.</p>
+    <div class="table-wrap"><table class="roadmap-areas"><thead><tr><th>Topic</th><th>Items</th><th>Bullets</th><th>Name</th><th>Colour</th><th></th></tr></thead><tbody>
+      ${areas.map((a) => html`<tr><td>${areaTag(a.name, colors)}</td><td>${String(a.n)}</td><td>${String(a.bullets)}</td>
         <td><input form="rm-area-${String(a.id)}" name="name" value="${a.name}" required aria-label="Name of ${a.name}" style="width:12rem"></td>
         <td><select form="rm-area-${String(a.id)}" name="color" aria-label="Colour of ${a.name}">${Object.entries(PALETTE).map(([k, l]) => html`<option value="${k}"${k === a.color ? ' selected' : ''}>${l}</option>`)}</select></td>
         <td><form id="rm-area-${String(a.id)}" method="post" action="/roadmap/areas/${String(a.id)}" class="inline"><button class="secondary small">Save</button></form>
-          ${a.n ? '' : html`<form method="post" action="/roadmap/areas/${String(a.id)}/delete" class="inline" data-confirm="Delete the topic “${a.name}”?"><button class="link">delete</button></form>`}</td></tr>`)}
+          ${a.n || a.bullets ? '' : html`<form method="post" action="/roadmap/areas/${String(a.id)}/delete" class="inline" data-confirm="Delete the topic “${a.name}”?"><button class="link">delete</button></form>`}</td></tr>`)}
     </tbody></table></div>
     <h2 id="done-days">Done items on the site</h2>
     <form method="post" action="/roadmap/settings" class="form inline-form">
@@ -441,7 +448,8 @@ router.post('/roadmap/areas/:id', async (req, res) => {
 });
 router.post('/roadmap/areas/:id/delete', async (req, res) => {
   if (!idOk(req.params.id)) return notFoundPage(req, res);
-  await withTx(req.user, (db) => db.query('DELETE FROM roadmap_areas a WHERE id = $1 AND NOT EXISTS (SELECT 1 FROM roadmap_items r WHERE r.area = a.name)', [req.params.id]));
+  await withTx(req.user, (db) => db.query(`DELETE FROM roadmap_areas a WHERE id = $1 AND NOT EXISTS (SELECT 1 FROM roadmap_items r WHERE r.area = a.name)
+    AND NOT EXISTS (SELECT 1 FROM changelog_items i WHERE i.area = a.name)`, [req.params.id]));
   res.redirect(303, '/roadmap?done=saved#topics');
 });
 router.post('/roadmap/settings', async (req, res) => {
@@ -477,7 +485,7 @@ async function setStatus(db, id, status, log) {
   let { rows: [e] } = await db.query('SELECT id FROM changelog_entries WHERE day = $1 ORDER BY id DESC LIMIT 1', [today()]);
   if (!e) ({ rows: [e] } = await db.query('INSERT INTO changelog_entries (day, published) VALUES ($1, false) RETURNING id', [today()]));
   const { rows: [{ n }] } = await db.query('SELECT coalesce(max(position), -1) + 1 AS n FROM changelog_items WHERE entry_id = $1', [e.id]);
-  await db.query(`INSERT INTO changelog_items (entry_id, position, kind, text_md, roadmap_item_id) VALUES ($1, $2, 'neu', $3, $4)`, [e.id, n, r.title, id]);
+  await db.query(`INSERT INTO changelog_items (entry_id, position, kind, text_md, roadmap_item_id, area) VALUES ($1, $2, 'neu', $3, $4, $5)`, [e.id, n, r.title, id, r.area]);
   return e.id;
 }
 

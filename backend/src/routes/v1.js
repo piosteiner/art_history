@@ -181,7 +181,7 @@ router.get('/pages/:slug/images/:name', async (req, res) => {
 });
 
 // The public changelog and roadmap (118), German (de-CH). Only published entries / items.
-//   GET /v1/changelog[?kind=neu|verbessert|behoben|inhalt|technik&limit=20&offset=0]
+//   GET /v1/changelog[?kind=neu|verbessert|behoben|inhalt|technik&topic=<name>&limit=20&offset=0]   (+ topics: those in use, 137)
 //       → {total, data: [{id, day, title, items: [{kind, label, html, roadmap: {id, title} | null}]}]}, newest first;
 //         with ?kind= only entries with such bullets, and only those bullets
 //   GET /v1/changelog/feed.xml   RSS 2.0, the last 30 entries
@@ -189,17 +189,19 @@ router.get('/pages/:slug/images/:name', async (req, res) => {
 //                                  done items only for `done_days` after their done date (site_settings, 136)
 //                                   (Erledigt: the last 30, newest first)
 const SITE_URL = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
-async function changelogEntries({ kind = null, limit = 20, offset = 0 } = {}) {
+// kind and topic (137) filter the bullets — and the entries to those with such bullets
+async function changelogEntries({ kind = null, topic = null, limit = 20, offset = 0 } = {}) {
   const { rows } = await apiPool.query(`
     SELECT e.id, e.day::text AS day, e.title, count(*) OVER () AS total,
-           (SELECT jsonb_agg(jsonb_build_object('kind', i.kind, 'text', i.text_md, 'roadmap',
+           (SELECT jsonb_agg(jsonb_build_object('kind', i.kind, 'area', i.area, 'area_color', a.color, 'text', i.text_md, 'roadmap',
                      CASE WHEN r.id IS NOT NULL AND r.published THEN jsonb_build_object('id', r.id, 'title', r.title) END) ORDER BY i.position)
-              FROM changelog_items i LEFT JOIN roadmap_items r ON r.id = i.roadmap_item_id
-             WHERE i.entry_id = e.id AND ($1::text IS NULL OR i.kind = $1)) AS items
+              FROM changelog_items i LEFT JOIN roadmap_items r ON r.id = i.roadmap_item_id LEFT JOIN roadmap_areas a ON a.name = i.area
+             WHERE i.entry_id = e.id AND ($1::text IS NULL OR i.kind = $1) AND ($4::text IS NULL OR i.area = $4)) AS items
     FROM changelog_entries e
-    WHERE e.published AND ($1::text IS NULL OR EXISTS (SELECT 1 FROM changelog_items i WHERE i.entry_id = e.id AND i.kind = $1))
+    WHERE e.published AND (($1::text IS NULL AND $4::text IS NULL) OR EXISTS (SELECT 1 FROM changelog_items i WHERE i.entry_id = e.id
+      AND ($1::text IS NULL OR i.kind = $1) AND ($4::text IS NULL OR i.area = $4)))
     ORDER BY e.day DESC, e.id DESC
-    LIMIT $2 OFFSET $3`, [kind, limit, offset]);
+    LIMIT $2 OFFSET $3`, [kind, limit, offset, topic]);
   const texts = rows.flatMap((r) => (r.items || []).map((i) => i.text));
   const html = await renderItems(apiPool, texts);
   let n = 0;
@@ -210,9 +212,14 @@ async function changelogEntries({ kind = null, limit = 20, offset = 0 } = {}) {
 router.get('/changelog', async (req, res) => {
   const kind = typeof req.query.kind === 'string' && req.query.kind ? req.query.kind : null;
   if (kind && !KINDS[kind]) throw badRequest(`kind is one of ${Object.keys(KINDS).join(', ')}`);
+  const topic = typeof req.query.topic === 'string' && req.query.topic.trim() ? req.query.topic.trim() : null;
   const limit = Math.min(Math.max(parseInt(req.query.limit, 10) || 20, 1), 100);
   const offset = Math.max(parseInt(req.query.offset, 10) || 0, 0);
-  res.json(await changelogEntries({ kind, limit, offset }));
+  // the topics of published bullets, for the site's chips (name, colour, how many bullets)
+  const { rows: topics } = await apiPool.query(`SELECT a.name, a.color, count(*)::int AS n
+    FROM changelog_items i JOIN changelog_entries e ON e.id = i.entry_id AND e.published JOIN roadmap_areas a ON a.name = i.area
+    GROUP BY a.name, a.color ORDER BY a.name COLLATE sort_natural`);
+  res.json({ ...await changelogEntries({ kind, topic, limit, offset }), topics });
 });
 router.get('/changelog/feed.xml', async (req, res) => {
   const { data } = await changelogEntries({ limit: 30 });

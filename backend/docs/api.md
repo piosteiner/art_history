@@ -484,9 +484,11 @@ that isn't uploaded is `<span class="page-image-missing">name</span>`. Images: `
 
 ## Changelog and roadmap (118)
 German (de-CH); only published entries and items.
-- `GET /v1/changelog[?kind=neu|verbessert|behoben|inhalt|technik&limit=20&offset=0]` → `{total, data: [{id, day, title,
+- `GET /v1/changelog[?kind=neu|verbessert|behoben|inhalt|technik&topic=<name>&limit=20&offset=0]` → `{total, data: [{id, day, title,
   items: [{kind, label, html, roadmap: {id, title} | null}]}]}`, newest first; with `kind` only the entries with such
   bullets, and only those bullets. `html`: the bullet's Markdown inline (`[[links]]` resolved).
+  Since 137 each bullet also has `area` and `area_color` (its topic — the roadmap's list, `roadmap_areas` — or null);
+  `topic` filters like `kind`; `topics: [{name, color, n}]` = the topics of published bullets, for filter chips.
 - `GET /v1/changelog/feed.xml` — RSS 2.0, the last 30 entries, linked to `/changelog#eintrag-<id>`.
 - `GET /v1/roadmap` → `{done_days, columns: [{status, label, items: [{id, title, area, area_color, notes_html, added_on, done_on}]}]}`
   — the four columns in order (In Arbeit, Als Nächstes, Später, Erledigt — done items for `done_days` days after their

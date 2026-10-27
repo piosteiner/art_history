@@ -212,8 +212,8 @@ async function history(db, where, params, { limit = PAGE, offset = 0 } = {}) {
                 WHEN a.table_name = 'roadmap_items' AND a.action <> 'delete' THEN 'roadmap/' || a.row_id || '/edit'
                 WHEN a.action <> 'delete' THEN a.table_name || '/' || (r->>'slug') END AS link,
            (SELECT jsonb_object_agg(k, jsonb_build_array(
-                     CASE WHEN k IN ('location', 'area') AND a.table_name <> 'roadmap_items' THEN to_jsonb(ST_AsText((a.old_row->>k)::geography)) ELSE a.old_row->k END,
-                     CASE WHEN k IN ('location', 'area') AND a.table_name <> 'roadmap_items' THEN to_jsonb(ST_AsText((a.new_row->>k)::geography)) ELSE a.new_row->k END))
+                     CASE WHEN k IN ('location', 'area') AND a.table_name NOT IN ('roadmap_items', 'changelog_items') THEN to_jsonb(ST_AsText((a.old_row->>k)::geography)) ELSE a.old_row->k END,
+                     CASE WHEN k IN ('location', 'area') AND a.table_name NOT IN ('roadmap_items', 'changelog_items') THEN to_jsonb(ST_AsText((a.new_row->>k)::geography)) ELSE a.new_row->k END))
             FROM jsonb_object_keys(r) k
             WHERE (a.old_row->k) IS DISTINCT FROM (a.new_row->k) AND k <> ALL ($${params.length + 1}::text[])) AS diff
     FROM audit_log a

@@ -1,12 +1,13 @@
 // The changelog and the roadmap (API 118), in German (de-CH) as they are written in the CMS.
-//   /changelog[?kind=neu|verbessert|behoben|inhalt|technik]   entries newest first, one per day or patch; a bullet's kind
-//                                as a badge; chips filter by kind; more entries load as you scroll; RSS feed linked.
+//   /changelog[?kind=neu|verbessert|behoben|inhalt|technik][&topic=<name>]   entries newest first, one per day or patch;
+//                                a bullet's kind as a badge, its topic as a bubble in the roadmap's colours (137); chips
+//                                filter by kind and by topic; more entries load as you scroll; RSS feed linked.
 //                                Every entry has an anchor (#eintrag-<id>), which the feed links to.
 //   /roadmap                     what is being worked on, what comes next, later, and what is done (with the day) —
 //                                four columns side by side on wide screens; topics in their colour (136); a card shows
 //                                title, topic and dates — a click opens its notes (<details>); done items only for the
 //                                CMS's number of days
-import { CHANGELOG_FEED, getChangelog, getRoadmap, type ChangeKind, type ChangelogEntry } from '../api';
+import { CHANGELOG_FEED, getChangelog, getRoadmap, type ChangeKind, type ChangelogEntry, type ChangelogTopic } from '../api';
 import { html, render, trusted } from '../html';
 import { replaceUrl } from '../router';
 import { guard, showError } from './common';
@@ -19,22 +20,26 @@ const BATCH = 20;
 
 const entryHtml = (e: ChangelogEntry) => html`<article class="cl-entry" id="eintrag-${String(e.id)}">
   <h2><a href="#eintrag-${String(e.id)}" class="cl-day">${day(e.day)}</a>${e.title ? html`<span class="cl-title"> · ${e.title}</span>` : ''}</h2>
-  <ul class="cl-items">${e.items.map((i) => html`<li><span class="cl-kind cl-${i.kind}">${i.label}</span> <span class="cl-text">${trusted(i.html)}</span>
+  <ul class="cl-items">${e.items.map((i) => html`<li><span class="cl-kind cl-${i.kind}">${i.label}</span> <span class="cl-text">${i.area ? html`<span class="tag area area-${i.area_color || 'slate'}">${i.area}</span> ` : ''}${trusted(i.html)}</span>
     ${i.roadmap ? html` <a class="cl-roadmap muted small" href="/roadmap#punkt-${String(i.roadmap.id)}">Roadmap</a>` : ''}</li>`)}</ul></article>`;
 
 export function changelogPage(main: HTMLElement, params: URLSearchParams) {
   document.title = 'Changelog · Art History';
   const asked = params.get('kind');
   let kind = (KINDS.some(([k]) => k === asked) ? asked : null) as ChangeKind | null;
+  let topic = params.get('topic');
+  let topics: ChangelogTopic[] = [];
   render(main, html`<section class="page changelog-page" lang="de-CH">
     <h1>Changelog</h1>
     <p class="muted">Was sich an dieser Website geändert hat – neue Funktionen, Verbesserungen, Korrekturen und neue Inhalte.
       Geplantes steht in der <a href="/roadmap">Roadmap</a>. <a href="${CHANGELOG_FEED}" class="cl-feed">RSS-Feed</a></p>
     <div class="chips cl-chips" role="group" aria-label="Nach Art filtern"></div>
+    <div class="chips cl-topics" role="group" aria-label="Nach Thema filtern" hidden></div>
     <div class="cl-list"></div>
     <p class="muted small cl-more" aria-live="polite"></p>
   </section>`);
   const chips = main.querySelector<HTMLElement>('.cl-chips')!;
+  const topicChips = main.querySelector<HTMLElement>('.cl-topics')!;
   const list = main.querySelector<HTMLElement>('.cl-list')!;
   const more = main.querySelector<HTMLElement>('.cl-more')!;
   const current = guard();
@@ -46,16 +51,30 @@ export function changelogPage(main: HTMLElement, params: URLSearchParams) {
   const drawChips = () => render(chips, html`<button type="button" class="chip${kind ? '' : ' active'}" data-kind="" aria-pressed="${String(!kind)}">Alle</button>
     ${KINDS.map(([k, label]) => html`<button type="button" class="chip cl-chip-${k}${kind === k ? ' active' : ''}" data-kind="${k}" aria-pressed="${String(kind === k)}">${label}</button>`)}`);
 
+  const address = () => {
+    const q = new URLSearchParams();
+    if (kind) q.set('kind', kind);
+    if (topic) q.set('topic', topic);
+    return `/changelog${q.size ? `?${q}` : ''}`;
+  };
+  // the topics in use, each a chip in its colour; the chosen one again = all topics
+  const drawTopics = () => {
+    topicChips.hidden = !topics.length;
+    render(topicChips, html`<span class="muted small">Thema:</span>
+      ${topics.map((t) => html`<button type="button" class="chip tag area area-${t.color}${topic === t.name ? ' active' : ''}" data-topic="${t.name}" aria-pressed="${String(topic === t.name)}">${t.name} <span class="muted">${String(t.n)}</span></button>`)}`);
+  };
+
   async function load(first: boolean) {
     if (loading || (!first && loaded >= total)) return;
     loading = true;
     const mine = first ? ++request : request;
     if (first) { loaded = 0; render(list, html`<p class="muted small">Lädt…</p>`); }
     try {
-      const res = await getChangelog({ kind, limit: BATCH, offset: loaded });
+      const res = await getChangelog({ kind, topic, limit: BATCH, offset: loaded });
       if (!current() || mine !== request) return;
       total = res.total;
-      if (first) render(list, res.data.length ? html`` : html`<p class="muted">${kind ? 'Keine Einträge dieser Art.' : 'Noch keine Einträge.'}</p>`);
+      if (first && res.topics) { topics = res.topics; drawTopics(); }
+      if (first) render(list, res.data.length ? html`` : html`<p class="muted">${kind || topic ? 'Keine Einträge dazu.' : 'Noch keine Einträge.'}</p>`);
       list.insertAdjacentHTML('beforeend', res.data.map((e) => String(entryHtml(e))).join(''));
       loaded += res.data.length;
       if (!res.data.length) total = loaded;
@@ -76,8 +95,16 @@ export function changelogPage(main: HTMLElement, params: URLSearchParams) {
     const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-kind]');
     if (!b) return;
     kind = (b.dataset.kind || null) as ChangeKind | null;
-    replaceUrl(kind ? `/changelog?kind=${kind}` : '/changelog');
+    replaceUrl(address());
     drawChips();
+    void load(true);
+  });
+  topicChips.addEventListener('click', (ev) => {
+    const b = (ev.target as Element).closest<HTMLButtonElement>('button[data-topic]');
+    if (!b) return;
+    topic = topic === b.dataset.topic ? null : b.dataset.topic!;
+    replaceUrl(address());
+    drawTopics();
     void load(true);
   });
   drawChips();

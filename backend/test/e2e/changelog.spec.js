@@ -69,8 +69,8 @@ test('roadmap: columns, order, done items written into today\'s changelog', asyn
   await Promise.all([userA.waitForNavigation(), userA.locator('.roadmap-jetzt button:has-text("✓ Erledigt")').click()]);
   await expect(userA.locator('.flash')).toContainText("today's changelog");
   await expect(userA.locator('.roadmap-erledigt')).toContainText('in the changelog');
-  expect(sql(`SELECT e.day::text || ' ' || e.published || ' ' || i.text_md FROM changelog_items i JOIN changelog_entries e ON e.id = i.entry_id
-    WHERE i.roadmap_item_id IS NOT NULL`)).toBe(`${today()} false Projekt Dokumentation`);
+  expect(sql(`SELECT e.day::text || ' ' || e.published || ' ' || i.text_md || ' ' || i.area FROM changelog_items i JOIN changelog_entries e ON e.id = i.entry_id
+    WHERE i.roadmap_item_id IS NOT NULL`)).toBe(`${today()} false Projekt Dokumentation Website`);   // with the goal's topic (137)
 
   // the API: the published items per column, done with the day
   const { columns } = await api(request, '/roadmap');
@@ -208,4 +208,34 @@ test('roadmap (136): topics with colours (new ones created, renamed on every ite
   userA.once('dialog', (d) => d.accept());
   await userA.locator('table.roadmap-areas tr', { hasText: 'Leer' }).locator('button:has-text("delete")').click();
   await expect(userA.locator('table.roadmap-areas')).not.toContainText('Leer');
+});
+
+test('changelog (137): a bullet\'s topic in brackets — the roadmap\'s list and colours, new ones added, filtered by topic in the API', async ({ userA, request }) => {
+  sql("INSERT INTO roadmap_areas (name, color) VALUES ('Karte', 'teal')");
+  await userA.goto('/changelog/new');
+  await userA.fill('#cl-day', '2026-10-27');
+  await typeItems(userA, 'Neu [Karte]: Historische Karten\nVerbessert [Suche]: Tippfehler\nBehoben: ohne Thema');
+  await userA.check('input[name=published]');
+  await Promise.all([userA.waitForURL(/done=created/), userA.click('.changelog-form button:has-text("Create")')]);
+  // the preview: the bubbles; the text written back with the topics
+  await expect(userA.locator('.changelog-preview .tag.area')).toHaveText(['Karte', 'Suche']);
+  await expect(userA.locator('.changelog-preview .tag.area').first()).toHaveClass(/area-teal/);
+  expect(sql("SELECT string_agg(coalesce(area, '-'), ',' ORDER BY position) FROM changelog_items")).toBe('Karte,Suche,-');
+  // "Suche" was new: added to the topics with a colour, counted as a bullet
+  expect(sql("SELECT count(*) FROM roadmap_areas WHERE name = 'Suche'")).toBe('1');
+  await userA.goto('/roadmap');
+  await expect(userA.locator('table.roadmap-areas tr', { hasText: 'Suche' }).locator('td').nth(2)).toHaveText('1');
+  await expect(userA.locator('table.roadmap-areas tr', { hasText: 'Suche' }).locator('button:has-text("delete")')).toHaveCount(0);   // in use
+
+  // the API: topic and colour per bullet, the topics in use, a filter by topic
+  const all = await api(request, '/changelog');
+  expect(all.data[0].items.map((i) => [i.area, i.area_color])).toEqual([['Karte', 'teal'], ['Suche', expect.any(String)], [null, null]]);
+  expect(all.topics.map((t) => [t.name, t.n])).toEqual([['Karte', 1], ['Suche', 1]]);
+  const karte = await api(request, '/changelog?topic=Karte');
+  expect(karte.data[0].items.map((i) => i.html)).toEqual(['Historische Karten']);
+  expect((await api(request, '/changelog?topic=Nichts')).total).toBe(0);
+
+  // renamed in the topics list: the bullet follows (ON UPDATE CASCADE)
+  sql("UPDATE roadmap_areas SET name = 'Karten' WHERE name = 'Karte'");
+  expect(sql("SELECT area FROM changelog_items WHERE text_md = 'Historische Karten'")).toBe('Karten');
 });

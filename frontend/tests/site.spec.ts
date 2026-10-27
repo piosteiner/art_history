@@ -2428,13 +2428,14 @@ test('project documentation (API 114/116): from the footer, the overview with it
 
 test('changelog and roadmap (API 118): from the footer, kinds as badges, filtered by kind, more on scrolling; the roadmap columns', async ({ page }) => {
   const entry = (id: number, day: string, kind = 'neu') => ({ id, day, title: id === 1 ? 'Patch: Suche' : null,
-    items: [{ kind, label: kind === 'neu' ? 'Neu' : 'Behoben', html: `Punkt <a href="/artists/paul-gauguin">${id}</a>`, roadmap: id === 1 ? { id: 7, title: 'Suche' } : null }] });
+    items: [{ kind, label: kind === 'neu' ? 'Neu' : 'Behoben', html: `Punkt <a href="/artists/paul-gauguin">${id}</a>`, roadmap: id === 1 ? { id: 7, title: 'Suche' } : null,
+      area: id % 3 === 0 ? 'Karte' : null, area_color: id % 3 === 0 ? 'teal' : null }] });
   const all = Array.from({ length: 25 }, (_, n) => entry(n + 1, `2026-10-${String(20 - (n % 20)).padStart(2, '0')}`, n % 5 === 1 ? 'behoben' : 'neu'));
   await page.route(/\/v1\/changelog(\?.*)?$/, (r) => {
     const q = new URL(r.request().url()).searchParams;
-    const list = q.get('kind') ? all.filter((e) => e.items[0].kind === q.get('kind')) : all;
+    const list = all.filter((e) => (!q.get('kind') || e.items[0].kind === q.get('kind')) && (!q.get('topic') || e.items[0].area === q.get('topic')));
     const offset = Number(q.get('offset') || 0);
-    return r.fulfill({ json: { total: list.length, data: list.slice(offset, offset + Number(q.get('limit') || 20)) } });
+    return r.fulfill({ json: { total: list.length, data: list.slice(offset, offset + Number(q.get('limit') || 20)), topics: [{ name: 'Karte', color: 'teal', n: 8 }] } });
   });
   const longNotes = `<p>${'Ein langer Text, der weit mehr als zwei Zeilen braucht. '.repeat(12)}</p>`;
   await page.route(/\/v1\/roadmap$/, (r) => r.fulfill({ json: { done_days: 30, columns: [
@@ -2457,6 +2458,15 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
   await expect(page).toHaveURL(/\/changelog\?kind=behoben$/);
   await expect(page.locator('.cl-entry')).toHaveCount(5);
   await expect(page.locator('.cl-entry .cl-kind').first()).toHaveText('Behoben');
+  // topics (137): the bubble in the roadmap's colour beside the text, chips filter by topic (with the kind)
+  await page.locator('.cl-chips button', { hasText: 'Alle' }).click();
+  await expect(page.locator('#eintrag-3 .cl-text .tag.area')).toHaveText('Karte');
+  await expect(page.locator('#eintrag-3 .cl-text .tag.area')).toHaveClass(/area-teal/);
+  await page.locator('.cl-topics button', { hasText: 'Karte' }).click();
+  await expect(page).toHaveURL(/\/changelog\?topic=Karte$/);
+  await expect(page.locator('.cl-entry')).toHaveCount(8);
+  await page.locator('.cl-topics button', { hasText: 'Karte' }).click();      // again: all topics
+  await expect(page).toHaveURL(/\/changelog$/);
   // the roadmap, from the intro
   await page.locator('.changelog-page a', { hasText: 'Roadmap' }).first().click();
   await expect(page).toHaveURL(/\/roadmap$/);

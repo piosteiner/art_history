@@ -923,3 +923,7 @@ li.task { list-style: none; margin-left: -1.2rem; }
   width: .6rem; height: .6rem; border-radius: 50%; margin-right: .4rem; vertical-align: .05em; }
 .roadmap-jetzt > h2::before { background: var(--st-jetzt); } .roadmap-naechstes > h2::before { background: var(--st-naechstes); }
 .roadmap-spaeter > h2::before { background: var(--st-spaeter); }
+.cl-topics { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; margin: -.4rem 0 1rem; }
+.cl-topics .chip.tag.area { margin-left: 0; font-size: .8rem; padding: .1rem .55rem; cursor: pointer; }
+.cl-topics .chip.tag.area.active { font-weight: 600; box-shadow: inset 0 0 0 1px currentColor; }
+.cl-text .tag.area { margin-left: 0; }

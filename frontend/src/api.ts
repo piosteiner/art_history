@@ -121,10 +121,12 @@ export const getWholePage = (slug: string) => get<Page & { html: string }>(`/pag
 
 /** The public changelog (API 118): entries newest first, each with its bullet points (kind, rendered HTML). */
 export type ChangeKind = 'neu' | 'verbessert' | 'behoben' | 'inhalt' | 'technik';
-export interface ChangelogItem { kind: ChangeKind; label: string; html: string; roadmap: { id: number; title: string } | null }
+/** `area`/`area_color`: the bullet's topic (API 137) — the roadmap's list and colours. */
+export interface ChangelogItem { kind: ChangeKind; label: string; html: string; roadmap: { id: number; title: string } | null; area?: string | null; area_color?: string | null }
+export interface ChangelogTopic { name: string; color: string; n: number }
 export interface ChangelogEntry { id: number; day: string; title: string | null; items: ChangelogItem[] }
-export const getChangelog = (params: { kind?: ChangeKind | null; limit?: number; offset?: number } = {}) =>
-  get<{ total: number; data: ChangelogEntry[] }>('/changelog', params);
+export const getChangelog = (params: { kind?: ChangeKind | null; topic?: string | null; limit?: number; offset?: number } = {}) =>
+  get<{ total: number; data: ChangelogEntry[]; topics?: ChangelogTopic[] }>('/changelog', params);
 export const CHANGELOG_FEED = `${BASE}/changelog/feed.xml`;
 /** The roadmap (API 118): four columns — in Arbeit, als Nächstes, später, erledigt (the last 30). */
 export type RoadmapStatus = 'jetzt' | 'naechstes' | 'spaeter' | 'erledigt';

@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Changelog bullets share the roadmap's topics (migration 137)
+- **What:**
+  - Migration 137: `changelog_items.area` → `roadmap_areas (name)` ON UPDATE CASCADE / ON DELETE RESTRICT, backfilled
+    from linked roadmap goals (none had a topic: 0 of 138).
+  - CMS: bullets written `Neu [Karte]: …` (`src/changelog.js` parse/print; unit tests); a new topic is added with
+    the next colour; preview with bubbles; a goal marked done passes its topic to the bullet; Topics table counts
+    items and bullets, delete only when unused by both. `core.js` history: `area` of `changelog_items` is text, not
+    geometry (the 500 the e2e test found).
+  - API `/v1/changelog`: bullets with `area`, `area_color`; `?topic=`; `topics` (in use, with count).
+  - Site /changelog: the bubble in its colour before the text; topic chips (`?topic=`, with `?kind=`).
+  - Tests: e2e changelog (137), roadmap test checks the passed-on topic; frontend changelog test.
+- **Why:** owner chose option 2: one list of topics for roadmap and changelog, same bubbles and colours.
+- **Revert:** revert the commit and deploy; as owner `ALTER TABLE changelog_items DROP COLUMN area;`
+  `DELETE FROM schema_migrations WHERE name = '137_changelog_topics.sql';`
+
 ### Site: roadmap cards open on a click
 - **What:** `frontend/src/views/changelog.ts` + `style.css`: a card shows title, topic and dates; its notes open and
   close on a click (`<details>`/`<summary>`, keyboard too, ▸/▾); cards without notes aren't clickable; `#punkt-<id>`
