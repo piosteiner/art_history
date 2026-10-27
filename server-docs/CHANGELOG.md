@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Site: the roadmap's four columns side by side again
+- **What:** `frontend/src/style.css`: four columns from 1100 px (page up to 90 rem), two by two from 760 px, one below
+  the other on phones (was two by two on every screen); `views/changelog.ts`: dates on the cards as 24.10.2026.
+  Frontend roadmap test checks 4 side by side at 1280 px and 2 × 2 at 900 px.
+- **Why:** owner: on a monitor Später and Erledigt sat below the first two — hard to get an overview.
+- **Revert:** revert the commit.
+
 ### Roadmap: day added, done items for N days, topics with colours (migration 136)
 - **What:**
   - Migration 136: `roadmap_items.added_on` (existing items: the day they were created); table `roadmap_areas`

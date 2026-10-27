@@ -2462,13 +2462,19 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
   await expect(page).toHaveURL(/\/roadmap$/);
   await expect(page.locator('.roadmap-col h2')).toHaveText(['In Arbeit 1', 'Als Nächstes 0', 'Später 1', 'Erledigt 1']);
   await expect(page.locator('.roadmap-jetzt .roadmap-notes')).toHaveText('Aus Obsidian');
-  await expect(page.locator('.roadmap-erledigt')).toContainText('erledigt am 19. Oktober 2026');
+  await expect(page.locator('.roadmap-erledigt')).toContainText('erledigt 19.10.2026');
   // 136: the day added, topics in their colour, two columns side by side, "mehr" only for notes over two lines
-  await expect(page.locator('.roadmap-jetzt')).toContainText('aufgenommen am 20. Oktober 2026');
+  await expect(page.locator('.roadmap-jetzt')).toContainText('aufgenommen 20.10.2026');
   await expect(page.locator('.roadmap-spaeter .tag.area')).toHaveClass(/area-teal/);
   await expect(page.locator('.roadmap-page')).toContainText('bleibt es 30 Tage lang');
-  const [a, b] = await page.locator('.roadmap-col').evaluateAll((cols) => cols.slice(0, 2).map((c) => c.getBoundingClientRect().top));
-  expect(Math.abs(a - b)).toBeLessThan(2);                                     // side by side
+  // on a desktop screen all four columns side by side; on a tablet two by two
+  const tops = () => page.locator('.roadmap-col').evaluateAll((cols) => cols.map((c) => Math.round(c.getBoundingClientRect().top)));
+  await page.setViewportSize({ width: 1280, height: 800 });
+  expect(new Set(await tops()).size).toBe(1);
+  await page.setViewportSize({ width: 900, height: 1000 });
+  const [t1, t2, t3, t4] = await tops();
+  expect(t1).toBe(t2); expect(t3).toBe(t4); expect(t3).toBeGreaterThan(t1);
+  await page.setViewportSize({ width: 1280, height: 800 });
   await expect(page.locator('.roadmap-jetzt .roadmap-more')).toBeHidden();     // short: nothing to open
   const more = page.locator('.roadmap-spaeter .roadmap-more');
   const notes = page.locator('.roadmap-spaeter .roadmap-notes');

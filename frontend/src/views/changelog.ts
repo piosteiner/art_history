@@ -11,7 +11,7 @@ import { replaceUrl } from '../router';
 import { guard, showError } from './common';
 
 const DAY = new Intl.DateTimeFormat('de-CH', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
-const SHORT = new Intl.DateTimeFormat('de-CH', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+const NUMERIC = new Intl.DateTimeFormat('de-CH', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'UTC' });   // 24.10.2026: short cards
 const day = (d: string, f = DAY) => f.format(new Date(`${d}T12:00:00Z`));
 const KINDS: [ChangeKind, string][] = [['neu', 'Neu'], ['verbessert', 'Verbessert'], ['behoben', 'Behoben'], ['inhalt', 'Inhalt'], ['technik', 'Technik']];
 const BATCH = 20;
@@ -101,7 +101,7 @@ export function roadmapPage(main: HTMLElement) {
             <b>${i.title}</b>${i.area ? html` <span class="tag area area-${i.area_color || 'slate'}">${i.area}</span>` : ''}
             ${i.notes_html ? html`<div class="roadmap-notes clamped" id="rm-notes-${String(i.id)}">${trusted(i.notes_html)}</div>
               <button type="button" class="link-button small roadmap-more" aria-expanded="false" aria-controls="rm-notes-${String(i.id)}" hidden>mehr</button>` : ''}
-            <div class="muted small">${[i.added_on ? `aufgenommen am ${day(i.added_on, SHORT)}` : '', i.done_on ? `erledigt am ${day(i.done_on, SHORT)}` : ''].filter(Boolean).join(' · ')}</div></li>`)}</ul>`
+            <div class="muted small">${[i.added_on ? `aufgenommen ${day(i.added_on, NUMERIC)}` : '', i.done_on ? `erledigt ${day(i.done_on, NUMERIC)}` : ''].filter(Boolean).join(' · ')}</div></li>`)}</ul>`
           : html`<p class="muted small">Nichts.</p>`}</section>`)}</div>`);
       // notes longer than two lines: "mehr" opens them, "weniger" closes them again
       box.querySelectorAll<HTMLButtonElement>('.roadmap-more').forEach((b) => {
