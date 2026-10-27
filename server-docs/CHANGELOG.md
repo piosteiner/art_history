@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Incident and fix: two chapters of the documentation overwritten by drafts of other chapters
+- **What happened:** publishing the restructuring drafts (a new chapter "Einträge im Detail") moved every later
+  chapter one number down; drafts are kept by chapter number and stayed where they were. Two old drafts then sat on
+  other chapters: the CMS chapter's (unchanged) on "Inhalte erfassen", an empty one on "Gedanken zum Projekt". Opened
+  and published (the refusal "changed on the site since", then Publish again), they replaced both chapters
+  (audit 28914, 28915, 09:14). Restored to revision 28913 at the owner's question; nothing else had changed since.
+- **Fix:** `followDrafts()` in `src/admin/routes/pages.js` — after every publish (editor, review page) and .md upload,
+  each remaining draft moves to its chapter's new number (found by its text, else its title; gone chapter → dropped).
+  A part changed on the site since its draft began is no longer replaced on a second click: the page shows the site's
+  text against the edited one and publishes only with "Publish my version anyway" ticked (and names a draft whose
+  first heading differs from the chapter's). An empty text never replaces a chapter. Outline: chapter numbers drawn
+  beside the ⠿ handle (they lay under it). E2E `pages.spec.js` (the incident's case).
+- **Revert:** revert the commit.
+
 ### Pages: chapters moved by drag and drop
 - **What:** the CMS outline of a page lists its chapters with a ⠿ handle (`editor/sortable.js`, now also for lists;
   keyboard ↑ ↓). `POST /pages/<slug>/order` puts them in the new order (`reorderChapters()` in `src/pages.js`: the
