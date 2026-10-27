@@ -10,7 +10,7 @@ const { adminPool } = require('../../db');
 const { html } = require('../html');
 const { wordDiff } = require('../textdiff');
 const { send, withTx, notFoundPage, friendly, history, historyTable } = require('../core');
-const { renderPage, pageHeadings, siteAddress, splitChapters, replaceChapter, words, chars, IMAGE_NAME } = require('../../pages');
+const { renderPage, pageHeadings, siteAddress, reorderChapters, splitChapters, replaceChapter, words, chars, IMAGE_NAME } = require('../../pages');
 
 const router = express.Router();
 const SITE = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
@@ -135,10 +135,10 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
     <div class="page-layout">
     <nav class="page-outline" aria-label="Chapters">
       <h2>Chapters</h2>
-      <p class="muted small">The text's top-level headings. Edit one at a time — it is put back in its place when you publish.</p>
-      <ol>
-        ${intro.md.trim() ? html`<li><a href="/pages/${p.slug}/edit?chapter=0"${on('0')}>Introduction</a> <span class="muted small">${String(words(intro.md))}</span>${mark('0')}</li>` : ''}
-        ${chapters.map((c) => html`<li><a href="/pages/${p.slug}/edit?chapter=${String(c.index)}"${on(String(c.index))}>${c.title}</a> <span class="muted small">${String(words(c.md))}</span>${mark(String(c.index))}</li>`)}
+      <p class="muted small">The text's top-level headings. Edit one at a time — it is put back in its place when you publish. Drag ⠿ to move a chapter (or focus it and use ↑ ↓): it moves on the site at once, your drafts move with it.</p>
+      ${intro.md.trim() ? html`<p class="page-outline-intro"><a href="/pages/${p.slug}/edit?chapter=0"${on('0')}>Introduction</a> <span class="muted small">${String(words(intro.md))}</span>${mark('0')}</p>` : ''}
+      <ol class="page-chapters"${chapters.length > 1 ? html` data-sortable="/pages/${p.slug}/order" data-sort-current="${part ? part.key : ''}"` : ''}>
+        ${chapters.map((c) => html`<li class="sort-item" data-sort-id="${String(c.index)}">${chapters.length > 1 ? html`<button type="button" class="drag-handle" title="Drag to move the chapter (or focus and use ↑ ↓)" aria-label="Move chapter ${c.title}: drag, or arrow keys">⠿</button>` : ''}<a href="/pages/${p.slug}/edit?chapter=${String(c.index)}"${on(String(c.index))}>${c.title}</a> <span class="muted small">${String(words(c.md))}</span>${mark(String(c.index))}</li>`)}
       </ol>
       <p class="small"><a href="/pages/${p.slug}/edit?chapter=all"${on('all')}>Whole text</a>${mark('all')}</p>
       ${changes.length ? html`<p class="small"><a class="button secondary" href="/pages/${p.slug}/changes">Review unpublished changes (${String(changes.length)})</a></p>` : ''}
@@ -306,6 +306,36 @@ router.post('/pages/:slug', async (req, res) => {
   }
   await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3', [p.id, req.user.id, String(chapter)]);
   res.redirect(303, `/pages/${p.slug}/edit?chapter=${encodeURIComponent(chapter)}&done=page-published`);
+});
+
+// Chapters moved (the outline's drag and drop, editor/sortable.js): ids = the chapters' indices as they were, in their new
+// order. One change of the text (in its history); the drafts of every account move with their chapters — a draft that
+// was current stays current (its base follows the chapter's text), the whole text's draft becomes stale. The chapter
+// being edited is opened again at its new place (X-Location).
+router.post('/pages/:slug/order', async (req, res) => {
+  const p = await bySlug(req.params.slug);
+  if (!p) return res.status(404).type('text').send('No such page.');
+  const order = String(req.body.ids || '').split(',').map(Number);
+  const body = reorderChapters(p.body_md, order);
+  if (body === null) return res.status(422).type('text').send('The chapters changed meanwhile — the page reloads with the current order.');
+  const before = splitChapters(p.body_md).chapters;
+  const after = splitChapters(body).chapters;
+  const newIndex = (k) => order.indexOf(k) + 1;
+  await withTx(req.user, async (db) => {
+    await db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, body]);
+    const { rows } = await db.query("DELETE FROM page_drafts WHERE page_id = $1 AND part ~ '^[1-9][0-9]*$' RETURNING *", [p.id]);
+    for (const d of rows) {
+      const k = Number(d.part);
+      if (!before[k - 1]) continue;                     // a draft of a chapter no longer there: dropped
+      const n = newIndex(k);
+      const base = d.base_sha === sha(before[k - 1].md) ? sha(after[n - 1].md) : d.base_sha;
+      await db.query('INSERT INTO page_drafts (page_id, user_id, part, base_sha, body_md, saved_at) VALUES ($1, $2, $3, $4, $5, $6)',
+        [p.id, d.user_id, String(n), base, d.body_md, d.saved_at]);
+    }
+  });
+  const current = Number(req.body.current);
+  if (current >= 1) res.set('X-Location', `/pages/${p.slug}/edit?chapter=${newIndex(current)}`);
+  res.status(204).end();
 });
 
 // The page's settings: title, language, visible on the site — apart from the text, which is published by part

@@ -185,6 +185,16 @@ function pageHeadings(markdown) {
   return out;
 }
 
+// The chapters in a new order (the CMS outline, dragged): order = their indices as they are now (1 …), in the order
+// they should follow; the introduction stays first. Each chapter ends with one blank line, the text with a newline —
+// a chapter moved from the end gets the blank line it lacked. null when order is not every chapter once.
+function reorderChapters(markdown, order) {
+  const { intro, chapters } = splitChapters(markdown);
+  const ok = order.length === chapters.length && new Set(order).size === order.length && order.every((n) => Number.isInteger(n) && chapters[n - 1]);
+  if (!ok) return null;
+  return intro.md + order.map((n) => chapters[n - 1].md.replace(/\s+$/, '')).join('\n\n') + '\n';
+}
+
 // a chapter's part of the text replaced by its edited version (the rest exactly as it was)
 function replaceChapter(markdown, index, edited) {
   const { intro, chapters } = splitChapters(markdown);
@@ -216,4 +226,4 @@ const chars = (mdText) => readLines(mdText).reduce((n, line) => n + [...line].le
 const SITE_ADDRESS = { 'projekt-dokumentation': '/dokumentation', privacy: '/privacy' };
 const siteAddress = (slug) => SITE_ADDRESS[slug] || `/pages/${slug}`;
 
-module.exports = { renderPage, pageHeadings, siteAddress, splitChapters, replaceChapter, words, chars, IMAGE_NAME };
+module.exports = { renderPage, pageHeadings, siteAddress, reorderChapters, splitChapters, replaceChapter, words, chars, IMAGE_NAME };

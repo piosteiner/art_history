@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Pages: chapters moved by drag and drop
+- **What:** the CMS outline of a page lists its chapters with a ⠿ handle (`editor/sortable.js`, now also for lists;
+  keyboard ↑ ↓). `POST /pages/<slug>/order` puts them in the new order (`reorderChapters()` in `src/pages.js`: the
+  introduction first, one blank line after each chapter) as one change in the page's history; every account's drafts
+  move with their chapters (a current draft stays current), the open chapter is opened again at its new place
+  (`X-Location`). Tests: `test/pages.test.js`, e2e `pages.spec.js`.
+- **Why:** owner (roadmap): reorder the documentation's chapters, e.g. the CMS chapter further up.
+- **Revert:** revert the commit; an order already saved stays (restore an earlier version from the page's history).
+
+## 2026-10-27
+
 ### CMS: "[" suggests the topics in changelog bullets
 - **What:** `src/admin/editor/editor.js` `topicCompletions`: on a line "Neu [" (any kind) the topics are suggested,
   filtered as typed, each with a dot in its colour (`.cm-topic` in admin.css); Enter writes "Karte]: " (a "]" / "]:"

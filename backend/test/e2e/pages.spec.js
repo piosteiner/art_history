@@ -80,7 +80,8 @@ test('a long page: chapters edited one at a time, a stale save refused, .md down
   sql(`INSERT INTO pages (slug, title, body_md, published) VALUES ('test-doc', 'Test Doc', '${text.replace(/'/g, "''")}', true)`);
   // the outline: the introduction and three chapters
   await userA.goto('/pages/test-doc/edit');
-  await expect(userA.locator('.page-outline ol li')).toHaveText([/^Introduction/, /^Pitch/, /^Projektstart/, /^Provenienz/]);
+  await expect(userA.locator('.page-outline-intro')).toContainText('Introduction');
+  await expect(userA.locator('.page-outline ol li > a')).toHaveText(['Pitch', 'Projektstart', 'Provenienz']);
   await expect(userA.locator('#pg-body')).toHaveCount(0);                          // nothing chosen: no editor yet
   // chapter 2 alone in the editor; saved back in its place
   await userA.locator('.page-outline a', { hasText: 'Projektstart' }).click();
@@ -115,7 +116,7 @@ test('a long page: chapters edited one at a time, a stale save refused, .md down
   await Promise.all([userA.waitForURL(/done=saved/), userA.setInputFiles('#pg-md', { name: 'Test Doc.md', mimeType: 'text/markdown', buffer: Buffer.from('# Eins\nA\n\n# Zwei\nB\n') })]);
   expect(asked).toContain('changed in the CMS after your last download');
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nA\n\n# Zwei\nB');   // (sql() trims the last newline)
-  await expect(userA.locator('.page-outline ol li')).toHaveText([/^Eins/, /^Zwei/]);
+  await expect(userA.locator('.page-outline ol li > a')).toHaveText(['Eins', 'Zwei']);
 
   // the API: the chapter list, one chapter with its neighbours, ids as in the whole text
   const all = await (await get(request, '/pages/test-doc')).json();
@@ -266,4 +267,38 @@ test('publishing from the review page: all parts at once; a part changed on the 
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nA neu.\n\n# Zwei\nB neu.\n\n# Drei\nC anders.');
   await expect(userA.locator('.page-change')).toHaveCount(1);
   await expect(userA.locator('.page-change h2')).toHaveText('Chapter 3: Drei');
+});
+
+test('chapters moved in the outline: by keyboard and by dragging; the text one, the drafts and the open chapter move along', async ({ userA }) => {
+  sql("INSERT INTO pages (slug, title, body_md, published) VALUES ('test-doc', 'Test Doc', 'Vorwort.\n\n# Eins\nA.\n\n# Zwei\nB.\n\n# Drei\nC.', true)");
+  // a draft of Zwei, as the autosave writes it (based on its chapter's text)
+  await userA.goto('/pages/test-doc/edit?chapter=2');
+  await userA.evaluate(() => { document.querySelector('#pg-body').value = '# Zwei\nB neu.\n\n'; document.querySelector('#pg-body').dispatchEvent(new Event('md-change')); });
+  await expect(userA.locator('[data-autosave-status]')).toContainText('Saved as draft', { timeout: 10000 });
+
+  // keyboard: Drei up twice — first after the introduction; the open chapter (Zwei, now 3) opened again
+  await userA.locator('.page-chapters li', { hasText: 'Drei' }).locator('.drag-handle').focus();
+  await userA.keyboard.press('ArrowUp');
+  await userA.keyboard.press('ArrowUp');
+  await userA.waitForURL(/chapter=3$/);
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('Vorwort.\n\n# Drei\nC.\n\n# Eins\nA.\n\n# Zwei\nB.');
+  await expect(userA.locator('.page-chapters li > a')).toHaveText(['Drei', 'Eins', 'Zwei']);
+  await expect(userA.locator('#pg-body')).toHaveValue('# Zwei\nB neu.\n\n');             // its draft came along, still current
+  await expect(userA.locator('.page-draft')).not.toContainText('changed on the site since');
+  await expect(userA.locator('.page-chapters li', { hasText: 'Zwei' }).locator('.page-pending')).toBeVisible();
+
+  // dragging: Zwei to the top
+  const handle = userA.locator('.page-chapters li', { hasText: 'Zwei' }).locator('.drag-handle');
+  const target = await userA.locator('.page-chapters li', { hasText: 'Drei' }).boundingBox();
+  const from = await handle.boundingBox();
+  await userA.mouse.move(from.x + from.width / 2, from.y + from.height / 2);
+  await userA.mouse.down();
+  await userA.mouse.move(from.x + from.width / 2, target.y + 2, { steps: 8 });
+  await userA.mouse.up();
+  await userA.waitForURL(/chapter=1$/);
+  await expect(userA.locator('.page-chapters li > a')).toHaveText(['Zwei', 'Drei', 'Eins']);
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('Vorwort.\n\n# Zwei\nB.\n\n# Drei\nC.\n\n# Eins\nA.');
+  expect(sql("SELECT part FROM page_drafts d JOIN pages p ON p.id = d.page_id WHERE p.slug = 'test-doc'")).toBe('1');
+  // one change each in the page's history
+  expect(Number(sql("SELECT count(*) FROM audit_log WHERE table_name = 'pages' AND row_id = (SELECT id FROM pages WHERE slug = 'test-doc') AND action = 'update'"))).toBe(2);
 });

@@ -397,6 +397,10 @@ details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-
 /* dragging (editor/sortable.js): the floating copy and the gap where it lands */
 .sort-ghost { position: fixed; z-index: 70; margin: 0; pointer-events: none; background: var(--panel); border-collapse: collapse;
   box-shadow: 0 8px 28px rgba(0,0,0,.4); border: 1px solid var(--accent); border-radius: 4px; opacity: .97; }
+.page-chapters { padding-left: 1.6rem; } .page-chapters .drag-handle { margin-left: -1.6rem; width: 1.4rem; }
+.page-outline-intro { margin: .2rem 0; }
+li.sort-placeholder { list-style: none; border: 2px dashed color-mix(in srgb, var(--accent) 60%, transparent); border-radius: 6px; }
+ol.sort-ghost { list-style: none; padding: .2rem .4rem; }
 .sort-placeholder td { padding: 0; border: 2px dashed color-mix(in srgb, var(--accent) 60%, transparent); border-radius: 6px;
   background: color-mix(in srgb, var(--accent) 7%, transparent); }
 body.sorting, body.sorting * { cursor: grabbing !important; user-select: none; }

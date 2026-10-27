@@ -1,5 +1,6 @@
 // Drag-and-drop ordering for lists like the provenance (src/admin/provenance.js): a container [data-sortable="<url>"]
-// with items .sort-item[data-sort-id] (each item may be several rows: a <tbody>) and a .drag-handle in each.
+// with items .sort-item[data-sort-id] (each item may be several rows: a <tbody>) and a .drag-handle in each. The
+// container may also be a list (<ol>/<ul>, the chapters of a page): its <li> items are moved the same way.
 // Pointer events, not HTML drag and drop — the same code for mouse, pen and touch (touch-action: none on the handle).
 // Keyboard: focus the handle, ↑ / ↓ move the item. The new order is posted as ids=3,1,2; the page then reloads, so
 // everything computed from the order (periods, "passed on directly") is shown anew.
@@ -21,10 +22,12 @@ function setup(box) {
     let res;
     try {
       res = await fetch(box.dataset.sortable, { method: 'POST', credentials: 'same-origin',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ ids: now }) });
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams({ ids: now, current: box.dataset.sortCurrent || '' }) });
     } catch { res = null; }
     if (!res || !res.ok) window.alert(res ? await res.text() : 'Not saved — no connection. The page reloads with the old order.');
-    window.location.reload();
+    // the server may name where the open item now is (a page's chapter moved: its number changed)
+    const to = res && res.ok && res.headers.get('X-Location');
+    if (to) window.location.assign(to); else window.location.reload();
   };
 
   // after a keyboard move and the reload: the same handle has the focus again
@@ -49,26 +52,30 @@ function setup(box) {
     const item = handle.closest('.sort-item');
     const home = item.nextElementSibling;
     const rect = item.getBoundingClientRect();
-    const row = handle.closest('tr');                                   // the item's main row (the one with the handle)
+    const table = box.tagName === 'TABLE';
+    const row = table ? handle.closest('tr') : item;                    // the item's main row (the one with the handle)
     const rowRect = row.getBoundingClientRect();
     const offset = e.clientY - rowRect.top;
 
-    // the floating copy: a table of its own with the main row's cells at their current widths
+    // the floating copy: a table of its own with the main row's cells at their current widths — or the list item
     const ghost = box.cloneNode(false);
     ghost.removeAttribute('data-sortable');
     ghost.classList.add('sort-ghost');
-    const copy = document.createElement('tbody');
-    const rowCopy = row.cloneNode(true);
-    [...row.cells].forEach((td, k) => { rowCopy.cells[k].style.width = `${td.getBoundingClientRect().width}px`; });
-    copy.append(rowCopy);
-    ghost.append(copy);
+    if (table) {
+      const copy = document.createElement('tbody');
+      const rowCopy = row.cloneNode(true);
+      [...row.cells].forEach((td, k) => { rowCopy.cells[k].style.width = `${td.getBoundingClientRect().width}px`; });
+      copy.append(rowCopy);
+      ghost.append(copy);
+    } else ghost.append(item.cloneNode(true));
     Object.assign(ghost.style, { left: `${rowRect.left}px`, top: `${rowRect.top}px`, width: `${rowRect.width}px` });
     document.body.append(ghost);
 
     // the gap where it would land
-    const gap = document.createElement('tbody');
+    const gap = document.createElement(table ? 'tbody' : 'li');
     gap.className = 'sort-placeholder';
-    gap.innerHTML = `<tr><td colspan="99" style="height:${rect.height}px"></td></tr>`;
+    if (table) gap.innerHTML = `<tr><td colspan="99" style="height:${rect.height}px"></td></tr>`;
+    else gap.style.height = `${rect.height}px`;
     box.insertBefore(gap, item);
     item.hidden = true;
     document.body.classList.add('sorting');

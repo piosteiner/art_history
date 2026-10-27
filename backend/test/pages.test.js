@@ -1,7 +1,7 @@
 // src/pages.js: [[#Heading]] links resolved through the whole page's headings (pageHeadings)
 const test = require('node:test');
 const assert = require('node:assert');
-const { renderPage, pageHeadings } = require('../src/pages');
+const { renderPage, pageHeadings, reorderChapters, splitChapters } = require('../src/pages');
 
 const page = 'Intro [[#Zwei|zum zweiten]]\n\n# Eins\n\n## Vertrauliche Daten\n\n# Zwei\n\n## Vertrauliche Daten\n\n'
   + '[[#Vertrauliche Daten]] · [[#Zwei#Vertrauliche Daten]] · [[#vertrauliche daten|klein]] · [[#Fehlt]] · ![[bild.webp]]';
@@ -20,4 +20,14 @@ test('the ids of the index are those of the rendered chapters', () => {
   const h = pageHeadings(page);
   assert.deepStrictEqual(h.all.map((x) => [x.id, x.chapter]), [['eins', 'eins'], ['vertrauliche-daten', 'eins'], ['zwei', 'zwei'], ['vertrauliche-daten-2', 'zwei']]);
   assert.deepStrictEqual(h.all[3].parents, ['zwei']);
+});
+
+test('chapters reordered: the introduction first, each chapter with one blank line, every chapter once or nothing', () => {
+  const text = 'Vorwort.\n\n# A\na\n\n# B\nb\n## B2\nx\n\n# C\nc';
+  const moved = reorderChapters(text, [3, 1, 2]);
+  assert.strictEqual(moved, 'Vorwort.\n\n# C\nc\n\n# A\na\n\n# B\nb\n## B2\nx\n');
+  assert.deepStrictEqual(splitChapters(moved).chapters.map((c) => c.title), ['C', 'A', 'B']);
+  assert.strictEqual(reorderChapters(text, [1, 1, 2]), null);
+  assert.strictEqual(reorderChapters(text, [1, 2]), null);
+  assert.strictEqual(reorderChapters(text, [1, 2, 4]), null);
 });
