@@ -11,7 +11,7 @@ import { coverageBar, gapSides, gapText } from '../coverage';
 
 // categories, plus the relationship types an event's page groups by (participated_in, concerns)
 const CATEGORY_ORDER: (Category | 'participated_in' | 'concerns')[] = [
-  'glossary', 'presence', 'association', 'event', 'participated_in', 'concerns', 'architecture', 'polity', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'publication', 'depiction', 'provenance',
+  'glossary', 'presence', 'association', 'event', 'participated_in', 'concerns', 'architecture', 'polity', 'family', 'influence', 'education', 'collaboration', 'membership', 'patronage', 'publication', 'depiction', 'provenance',
 ];
 const CATEGORY_LABEL: Record<string, string> = {
   presence: 'Places (physically there)',
@@ -19,6 +19,7 @@ const CATEGORY_LABEL: Record<string, string> = {
   influence: 'Influence',
   education: 'Education',
   collaboration: 'Collaboration',
+  family: 'Family',
   membership: 'Membership',
   patronage: 'Patronage',
   depiction: 'Depictions',

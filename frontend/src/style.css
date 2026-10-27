@@ -479,7 +479,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 
 /* network graph */
 :root { --c-influence: #b4462b; --c-education: #3d6fb6; --c-collaboration: #5e8c3a; --c-membership: #8a8172;
-  --c-patronage: #8a4f9e; --c-depiction: #c2577f; --c-provenance: #a0702a; --c-polity: var(--polity);
+  --c-patronage: #8a4f9e; --c-depiction: #c2577f; --c-family: #b5651d; --c-provenance: #a0702a; --c-polity: var(--polity);
   --n-artist: #b4462b; --n-artwork: #c08a1e; --n-movement: #2f6f73; --n-institution: #3d6fb6; --n-person: #8a4f9e;
   --n-polity: var(--polity); --n-place: #8a8172; --c-event: #d4237a; --n-event: #d4237a; }
 .detail-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
@@ -495,7 +495,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .graph-cats label { display: inline-flex; align-items: center; gap: .3rem; cursor: pointer; }
 .swatch { display: inline-block; width: 16px; height: 3px; border-radius: 2px; background: var(--cat); }
 .cat-influence { --cat: var(--c-influence); } .cat-education { --cat: var(--c-education); }
-.cat-collaboration { --cat: var(--c-collaboration); } .cat-membership { --cat: var(--c-membership); }
+.cat-collaboration { --cat: var(--c-collaboration); } .cat-family { --cat: var(--c-family); } .cat-membership { --cat: var(--c-membership); }
 .cat-patronage { --cat: var(--c-patronage); } .cat-depiction { --cat: var(--c-depiction); } .cat-provenance { --cat: var(--c-provenance); } .cat-polity { --cat: var(--c-polity); } .cat-event { --cat: var(--c-event); }
 .graph-wrap { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 1rem; align-items: start; }
 @media (max-width: 860px) { .graph-wrap { grid-template-columns: minmax(0, 1fr); } }

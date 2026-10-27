@@ -70,7 +70,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   Events (046/047: `events`, `participated_in` with role, `concerns`, `depicts` → event, `/v1/events`, `/v1/map/events`) built 2026-10-08; frontend shows them since 2026-10-08 (list, page, map layer, timeline, graph).
   Further numbers + loans (048: `artwork_numbers`, `institution_number_free()` trigger across both tables, `on_loan`) built 2026-10-08.
   Sources for facts (049: `citations`, `citable_fields`, `citation_status`, Wikidata cites itself, markers on entry pages) built 2026-10-08; step 2 (050: free text as citations, `sources` in API and YAML) built 2026-10-08.
-  Translation status (052: names[].status official/common/own, `artworks.title_status`) built 2026-10-08. Name role `former` (139, `names_valid()`; site tag "former") built 2026-10-27.
+  Translation status (052: names[].status official/common/own, `artworks.title_status`) built 2026-10-08. Name role `former` (139, `names_valid()`; site tag "former") built 2026-10-27. Family ties (140: category `family` — `child_of`, `sibling_of`, `married_to`, `relative_of` with the tie in the label) built 2026-10-27.
   Authority files (053: `authorities`, `entry_identifiers` unique per number, GND comparison via lobid.org `src/admin/gnd.js`) built 2026-10-09; ULAN links only (Getty API 403).
   Enrich page (Wikidata + GND + SIKART in one review, `src/admin/enrich.js`, `authority.js`) and Quality queue (next issue, batch Wikidata / GND citing, `routes/queue.js`) built 2026-10-12.
   More sources (059: Metagrid numbers by name; LC, BnF, RKD compared like the GND — `records.js`, `lc.js`, `bnf.js`, `rkd.js`, `metagrid.js`) built 2026-10-12.

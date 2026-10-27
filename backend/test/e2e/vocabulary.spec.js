@@ -27,3 +27,24 @@ test('vocabulary: relationship types with counts, every provenance option in its
   expect(v.provenance.numbers.find((n) => n.code === 'err')).toMatchObject({ scope: 'global' });
   expect(v.provenance.currencies.find((c) => c.code === 'RM')).toMatchObject({ since: '1924-08-30', until: '1948-06-21' });
 });
+
+test('family ties (140): child of / parent of, sibling, married, relative with its label — on both sides, category family', async ({ request }) => {
+  const v = await vocab(request);
+  expect(v.relationships.filter((r) => r.category === 'family').map((r) => [r.code, r.symmetric])).toEqual(
+    [['child_of', false], ['sibling_of', true], ['married_to', true], ['relative_of', true]]);
+  sql(`INSERT INTO people (slug, name) VALUES ('test-uncle', 'Test Uncle'), ('test-nephew', 'Test Nephew');
+    INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, label)
+    SELECT 'person', u.id, 'relative_of', 'person', n.id, 'uncle (father''s brother)' FROM people u, people n WHERE u.slug = 'test-uncle' AND n.slug = 'test-nephew'`);
+  try {
+    for (const [me, other] of [['test-uncle', 'test-nephew'], ['test-nephew', 'test-uncle']]) {
+      await expect.poll(async () => {
+        const res = await request.get(`${API}/people/${me}`, { headers: { Host: 'api.localhost' } });
+        const body = await res.json();
+        const rel = ((body.data ?? body).relationships || []).find((r) => r.type === 'relative_of');
+        return rel && [rel.category, rel.entity?.slug, rel.note];
+      }, { timeout: 15000 }).toEqual(['family', other, 'uncle (father\'s brother)']);
+    }
+  } finally {
+    sql("DELETE FROM people WHERE slug IN ('test-uncle', 'test-nephew')");
+  }
+});

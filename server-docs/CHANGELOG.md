@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Family ties (migration 140)
+- **What:** relationship types in a new category `family`: `child_of` (inverse "parent of"), `sibling_of`, `married_to`,
+  `relative_of` (symmetric; the label says which tie, e.g. uncle) — for artists and people. Site: section "Family" on
+  entry pages, the category in the network graph (`--c-family`), "Familie" on the statistics page. e2e test in
+  `vocabulary.spec.js`.
+- **Why:** owner: Adolph von Liebermann, first owner of Menzel's *Eisenwalzwerk*, was Max Liebermann's uncle — no way to
+  record family ties yet.
+- **Revert:** revert the commit; as owner `DELETE FROM relationship_types WHERE category = 'family'` (after removing
+  such relationships); `DELETE FROM schema_migrations WHERE name = '140_family.sql';`
+
 ### Deploys: test log, one retry, flaky tests listed
 - **What:** `backend/deploy.sh` writes the unit and e2e output to `logs/deploy-<time>.log` (newest 20 kept), prints the
   failed tests on failure and the flaky ones (failed once, passed on retry) on success; `playwright.config.js` retries

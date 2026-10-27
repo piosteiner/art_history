@@ -44,7 +44,7 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication' | 'event';
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication' | 'event' | 'family';
 
 export interface Relationship {
   type: string;
