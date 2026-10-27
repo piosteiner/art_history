@@ -80,6 +80,18 @@ function get<T>(path: string, params: Params = {}): Promise<T> {
 /** Short addresses for long selections (API migration 072): stores the query, returns its code (same query, same
  *  code). Sent as text/plain — a "simple" request, no CORS preflight. */
 const savedViews = new Map<string, Promise<string>>();
+/** Feedback from a visitor (API 141): stored through submit_feedback(); the API can't read it back. */
+export interface FeedbackElement { label: string; heading: string; text: string; selector: string }
+export interface FeedbackInput { kind: 'bug' | 'idea' | 'content' | 'other'; message: string; page_url: string; page_title: string;
+  elements: FeedbackElement[]; email: string; viewport: string; website: string }
+export async function sendFeedback(f: FeedbackInput): Promise<void> {
+  const res = await fetch(`${BASE}/feedback`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(f) });
+  if (!res.ok) {
+    const body = await res.json().catch(() => null);
+    throw new ApiError(res.status, body?.error ?? 'internal_error', body?.message ?? res.statusText, body);
+  }
+}
+
 export function saveView(query: string): Promise<string> {
   let p = savedViews.get(query);
   if (!p) {

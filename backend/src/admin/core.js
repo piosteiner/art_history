@@ -16,6 +16,7 @@ const an = (word) => `${/^[aeiou]/.test(word) ? 'an' : 'a'} ${word}`;
 
 // Fixed messages for ?done=… after a redirect (never reflect arbitrary text).
 const DONE = {
+  'from-feedback': 'A roadmap item was made from the feedback (unpublished, in Später) — word it for the roadmap and publish it.',
   created: 'Created.', saved: 'Saved.', deleted: 'Deleted.', unchanged: 'No changes.',
   wikidata: 'Wikidata values applied — the field values are in the working copy: check them below and Publish.',
   published: 'Published — the working copy is now the public version.',

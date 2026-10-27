@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Feedback from visitors (migration 141)
+- **What:**
+  - Migration 141: table `feedback` (kind, message, page, elements as `{label, heading, text, selector}`, optional
+    email, viewport, status new/read/planned/done/dismissed, own note, roadmap item), enums `feedback_kind`,
+    `feedback_status`; written only through `submit_feedback()` (SECURITY DEFINER) — the API role has EXECUTE on it and
+    no right on the table (the default SELECT revoked). Not audited: deleted feedback is gone, address included.
+  - API `POST /v1/feedback`: checked, honeypot `website`, at most 10 per 10 minutes and address (in memory only).
+  - CMS `/feedback` (`routes/feedback.js`): tabs Open / On the roadmap / Done / Dismissed / All; each with "Open on the
+    site" (`#fb=<selectors>` outlines the elements), the elements in words, message, address; note (marks read),
+    statuses, "+ Add to roadmap" (unpublished item in Später, linked), delete. Menu "Feedback" with the number of new
+    ones (`feedback-count.js`, refreshed every 30 s and on the page).
+  - Site (`frontend/src/feedback.ts`): "F" bottom right, "Feedback" on hover; panel with kind, message, "Pick it on the
+    page" (outline under the pointer, click adds, Esc/Done ends), optional email; `#fb=` outlines elements.
+  - Privacy statement (CMS page `privacy`): section "Feedback", date 27 October 2026.
+  - Tests: e2e `feedback.spec.js` (API, CMS, roadmap, delete, rate limit), menu test; site test (button, picking,
+    request, `#fb=`). Full site suite 136/136.
+- **Why:** owner: an easy way for people shown the project to give general and detailed feedback, and a place in the
+  CMS to check it and take it to the roadmap.
+- **Revert:** revert the commit and deploy; as owner `DROP TABLE feedback; DROP FUNCTION submit_feedback(text, text,
+  text, text, jsonb, text, text), feedback_elements_ok(jsonb); DROP TYPE feedback_kind, feedback_status;`
+  `DELETE FROM schema_migrations WHERE name = '141_feedback.sql';` and the privacy section in the CMS history.
+
 ### Data: provenance of Menzel's *Eisenwalzwerk* (Alte Nationalgalerie, A I 201); Liebermann family tie
 - **What:** (data only; `from-wikidata.js`, `import.js`) new artist `max-liebermann` (Q158062); person
   `adolph-von-liebermann` completed from Wikidata Q55854929 (dates, other name, occupations, description) with

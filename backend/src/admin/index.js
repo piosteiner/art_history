@@ -65,6 +65,7 @@ router.use(require('./routes/queue'));
 router.use(require('./routes/featured'));
 router.use(require('./routes/pages'));
 router.use(require('./routes/changelog'));
+router.use(require('./routes/feedback'));
 router.use(require('./routes/search-words'));
 router.use(require('./routes/relationships'));
 router.use(require('./routes/citations'));

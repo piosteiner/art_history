@@ -596,3 +596,19 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
   border-radius: 50%; background: var(--area); margin-right: .45rem; vertical-align: .05em; }
 .cm-tooltip-autocomplete li.cm-topic .cm-completionLabel { color: var(--area); font-weight: 600; }
 .cm-tooltip-autocomplete li.cm-topic[aria-selected] .cm-completionLabel { color: inherit; }
+/* feedback from visitors (routes/feedback.js) */
+.nav-count { display: inline-block; min-width: 1.2em; padding: 0 .35em; border-radius: 999px; background: var(--accent); color: var(--accent-fg); font-size: .75rem; text-align: center; }
+.feedback-tabs { display: flex; flex-wrap: wrap; gap: .3rem 1rem; margin: .5rem 0 1rem; }
+.feedback-tabs a.on { font-weight: 700; text-decoration: none; }
+.feedback-card { background: var(--panel); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 8px; padding: .7rem .9rem; margin: 0 0 .9rem; }
+.feedback-card.fb-read, .feedback-card.fb-planned { border-left-color: var(--line); }
+.feedback-card.fb-done, .feedback-card.fb-dismissed { border-left-color: var(--line); opacity: .75; }
+.feedback-head { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; }
+.feedback-head .tag { margin-left: 0; }
+.fb-kind-bug { color: var(--err); border-color: currentColor; } .fb-kind-idea { color: var(--ok); border-color: currentColor; }
+.fb-kind-content { color: var(--accent); border-color: currentColor; }
+.feedback-page { margin: .4rem 0; }
+.feedback-elements { margin: .2rem 0 .5rem; padding-left: 1.4rem; font-size: .9rem; }
+.feedback-message { margin: .4rem 0; padding: .4rem .7rem; border-left: 3px solid var(--line); white-space: pre-wrap; }
+.feedback-note { display: grid; gap: .2rem; margin: .4rem 0; } .feedback-note textarea { min-height: 2.6rem; } .feedback-note button { justify-self: start; }
+.feedback-actions { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }

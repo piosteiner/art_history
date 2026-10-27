@@ -329,3 +329,11 @@ slash GitHub Pages serves a folder's page at), small forwarding pages at the old
 
 ## Next
 Missing API features go to the backend as a written request rather than client-side stitching.
+
+## Feedback (API 141)
+`src/feedback.ts`: an "F" fixed at the bottom right (widens to "Feedback" on hover/focus) opens a panel — kind, message,
+optional email, and "Pick it on the page": the element under the pointer is outlined, a click adds it (the page's own
+click is held back), Esc or Done ends. Each element is sent described (`label`, the `heading` it is under, its `text`)
+with a CSS `selector` (`selectorOf`: from the closest ancestor with an id, `tag:nth-of-type` steps). `POST /v1/feedback`
+through `sendFeedback` in `api.ts`. The CMS links a feedback's page with `#fb=<JSON list of selectors>`;
+`highlightFeedback()` outlines those elements once the view has drawn them. The privacy page has a section on it.

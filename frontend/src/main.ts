@@ -4,6 +4,7 @@ import { html, PLURAL_LABEL, render, wireImageFallbacksEverywhere } from './html
 import { start, type Cleanup, type Route } from './router';
 import { watchLinks } from './previews';
 import { mountSearch } from './search';
+import { mountFeedback } from './feedback';
 import type { Plural } from './types';
 import { detail } from './views/detail';
 import { loading, showError } from './views/common';
@@ -28,6 +29,8 @@ watchLinks(main); // previews on the internal links of every page
 wireImageFallbacksEverywhere(); // an image that fails: its original, or without crossorigin (html.ts)
 // light/dark: the page stays, maps swap their base map (THEME_EVENT in src/map.ts)
 mountThemeToggle(document.getElementById('theme')!);
+// feedback: the "F" at the bottom right, and a page opened from the CMS with the elements outlined (#fb=…)
+mountFeedback();
 
 let cleanup: Cleanup;
 

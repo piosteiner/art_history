@@ -9,7 +9,7 @@ test('menu: the groups in order, the site\'s pages and settings in their own gro
     ['Events', 'Movements', 'Places', 'Polities'],
     ['Glossary', 'Bibliography'],
     ['Quality', 'History'],
-    ['Pages', 'Changelog', 'Roadmap', 'Start views', 'Search words'],
+    ['Pages', 'Changelog', 'Roadmap', 'Start views', 'Search words', 'Feedback'],
   ]);
   // a group that starts a row has no line before it: the menu's left strip is clipped
   await userA.setViewportSize({ width: 1100, height: 600 });

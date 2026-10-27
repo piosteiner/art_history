@@ -339,6 +339,52 @@ router.post('/views', express.text({ type: '*/*', limit: '24kb' }), async (req, 
     client.release();
   }
 });
+// Feedback from visitors (migration 141): POST /v1/feedback {kind, message, page_url, page_title, elements, email,
+// viewport, website} → 201 {id}. Written through submit_feedback() — the API can't read feedback. `website` is a field
+// people don't see: filled in, it was a bot (answered 201 all the same, nothing stored). At most 10 per 10 minutes and
+// address; the address is only held in memory, like the short links' (the privacy page says so).
+const FEEDBACK_KINDS = ['bug', 'idea', 'content', 'other'];
+const feedbackRecent = new Map();
+function tooMuchFeedback(ip) {
+  const now = Date.now();
+  const list = (feedbackRecent.get(ip) || []).filter((t) => now - t < RATE_WINDOW);
+  list.push(now);
+  feedbackRecent.set(ip, list);
+  return list.length > 10;
+}
+setInterval(() => {
+  const now = Date.now();
+  for (const [ip, list] of feedbackRecent) if (now - list[list.length - 1] >= RATE_WINDOW) feedbackRecent.delete(ip);
+}, 60000).unref();
+const short = (v, n) => (typeof v === 'string' ? v.trim().slice(0, n) : '');
+router.post('/feedback', express.json({ limit: '32kb' }), async (req, res) => {
+  const b = req.body && typeof req.body === 'object' ? req.body : {};
+  if (tooMuchFeedback(req.ip)) return res.status(429).json({ error: 'too_many', message: 'too much feedback at once — try again in a few minutes' });
+  if (short(b.website, 10)) return res.status(201).json({ id: null });
+  const message = short(b.message, 5000);
+  if (!message) throw badRequest('a message is needed');
+  const page = short(b.page_url, 2000);
+  if (!page.startsWith('/')) throw badRequest('page_url: the path on the site');
+  const email = short(b.email, 200);
+  if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) throw badRequest('email: an address like name@example.org, or none');
+  const elements = (Array.isArray(b.elements) ? b.elements : []).slice(0, 20).map((e) => ({
+    label: short(e && e.label, 100), heading: short(e && e.heading, 200), text: short(e && e.text, 300), selector: short(e && e.selector, 500) }));
+  const viewport = /^\d{2,5}x\d{2,5}$/.test(String(b.viewport || '')) ? b.viewport : null;
+  const client = await apiPool.connect();
+  try {
+    await client.query('BEGIN READ WRITE');
+    const { rows: [r] } = await client.query('SELECT submit_feedback($1, $2, $3, $4, $5, $6, $7) AS id',
+      [FEEDBACK_KINDS.includes(b.kind) ? b.kind : 'other', message, page, short(b.page_title, 300), JSON.stringify(elements), email || null, viewport]);
+    await client.query('COMMIT');
+    res.status(201).json({ id: Number(r.id) });
+  } catch (err) {
+    await client.query('ROLLBACK').catch(() => {});
+    throw err;
+  } finally {
+    client.release();
+  }
+});
+
 router.get('/views/:id', async (req, res) => {
   if (!/^[0-9a-f]{8,64}$/.test(req.params.id)) throw notFound('no such view');
   const { rows: [v] } = await apiPool.query('SELECT id, current_featured_query(query) AS query, last_used < current_date AS stale FROM shared_views WHERE id = $1', [req.params.id]);

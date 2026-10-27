@@ -2608,3 +2608,37 @@ test('provenance records (API 104): the inventories under a step, the doubts tag
   await expect(items.nth(3)).toContainText('royal inventorypossible');                  // the whole entry doubted
   await expect(items.nth(3)).toContainText('— without number');
 });
+
+test('feedback (API 141): the F widens to "Feedback"; a message with a picked element is sent with the page; #fb= outlines it', async ({ page }) => {
+  let sent: Record<string, unknown> | null = null;
+  await page.route(/\/v1\/feedback$/, async (r) => { sent = r.request().postDataJSON(); await r.fulfill({ status: 201, json: { id: 7 } }); });
+  await page.goto('/artists');
+  await expect(page.locator('.card').first()).toBeVisible();
+  const fab = page.locator('.fb-fab');
+  await expect(fab.locator('.fb-rest')).toHaveCSS('max-width', '0px');
+  await fab.hover();
+  await expect.poll(async () => (await fab.boundingBox())!.width).toBeGreaterThan(80);   // "Feedback"
+  await fab.click();
+  await page.locator('.fb-kinds [data-kind=content]').click();
+  await page.fill('#fb-message', 'Van Gogh should be first.');
+  // pick an element: the click is held back (no navigation), the element outlined and listed
+  await page.locator('.fb-pick').click();
+  await expect(page.locator('.fb-pickbar')).toContainText('0 chosen');
+  const card = page.locator('.card-link', { hasText: 'Vincent van Gogh' });
+  await card.click();
+  await expect(page).toHaveURL(/\/artists$/);
+  await expect(page.locator('.fb-pickbar')).toContainText('1 chosen');
+  await page.keyboard.press('Escape');
+  await expect(page.locator('.fb-elements li')).toHaveCount(1);
+  await expect(page.locator('.fb-elements li')).toContainText('Vincent van Gogh');
+  await expect(page.locator('#fb-message')).toHaveValue('Van Gogh should be first.');   // kept while picking
+  await page.locator('.fb-submit').click();
+  await expect(page.locator('.fb-panel h2')).toHaveText('Thank you!');
+  expect(sent).toMatchObject({ kind: 'content', message: 'Van Gogh should be first.', page_url: '/artists', website: '' });
+  const el = (sent!.elements as { label: string; text: string; selector: string }[])[0];
+  expect(el.text).toContain('Vincent van Gogh');
+  // the CMS's "Open on the site": the element found again by its selector and outlined
+  await page.goto(`/artists#fb=${encodeURIComponent(JSON.stringify([el.selector]))}`);
+  await expect(page.locator('.fb-target')).toHaveCount(1);
+  await expect(page.locator('.fb-target')).toContainText('Vincent van Gogh');
+});
