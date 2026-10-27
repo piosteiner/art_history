@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Site: changelog topic bubbles all of one width
+- **What:** `.cl-topic .tag.area` fills the topic column (block, centred), so every bubble is as wide as the widest
+  topic; phones keep them inline. The site test also checks the bubbles' widths.
+- **Why:** owner chose "equal-width bubbles" over a topic column at the end or under the kind.
+- **Revert:** revert the commit.
+
 ### Site: changelog texts aligned again — a column for the topics
 - **What:** `views/changelog.ts`: a bullet is kind · topic (`.cl-topic`) · text (roadmap link inside); `style.css`: the
   list is a three-column grid, entries, lists and lines take its columns over (`subgrid`), so the topic column is as

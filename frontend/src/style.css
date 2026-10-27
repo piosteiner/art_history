@@ -895,12 +895,13 @@ li.task { list-style: none; margin-left: -1.2rem; }
 .cl-items { list-style: none; padding: 0; margin: 0; grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; }
 .cl-items li { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; align-items: baseline; margin: .3rem 0; line-height: 1.45; }
 .cl-items li .cl-text { min-width: 0; }
-.cl-topic .tag.area { margin-left: 0; }
+.cl-topic .tag.area { margin-left: 0; display: block; text-align: center; }  /* every bubble as wide as the column (the widest topic) */
 @media (max-width: 640px) {  /* phones: kind and topic on a line, the text under them at full width */
   .cl-list, .cl-entry, .cl-items { display: block; }
   .cl-items li { display: flex; flex-wrap: wrap; gap: .25rem .4rem; }
   .cl-items li .cl-text { flex-basis: 100%; }
   .cl-topic:empty { display: none; }
+  .cl-topic .tag.area { display: inline-block; }
 }
 .cl-kind { flex: none; min-width: 5.6rem; text-align: center; font-size: .72rem; font-weight: 600; padding: .05rem .4rem; border-radius: 4px; border: 1px solid currentColor; }
 .cl-neu { color: #2f8a55; } .cl-verbessert { color: #2b6cb0; } .cl-behoben { color: #c05621; } .cl-inhalt { color: #7a5fb0; } .cl-technik { color: var(--muted); }

@@ -2550,6 +2550,9 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
   // the texts start at the same place, with or without a topic, on every day (one column for the topics: subgrid)
   const starts = await page.locator('.cl-items .cl-text').evaluateAll((els) => els.slice(0, 12).map((e) => Math.round(e.getBoundingClientRect().left)));
   expect(new Set(starts).size).toBe(1);
+  // the topic bubbles all as wide as the column
+  const widths = await page.locator('.cl-topic .tag.area').evaluateAll((els) => els.map((e) => Math.round(e.getBoundingClientRect().width)));
+  expect(new Set(widths).size).toBe(1);
   await page.locator('.cl-topics button', { hasText: 'Karte' }).click();
   await expect(page).toHaveURL(/\/changelog\?topic=Karte$/);
   await expect(page.locator('.cl-entry')).toHaveCount(8);
