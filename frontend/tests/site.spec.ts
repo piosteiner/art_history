@@ -2535,7 +2535,7 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
   const first = page.locator('#eintrag-1');
   await expect(first.locator('h2')).toHaveText('Dienstag, 20. Oktober 2026 · Patch: Suche');
   await expect(first.locator('.cl-kind')).toHaveText('Neu');
-  await expect(first.locator('.cl-text a')).toHaveAttribute('href', '/artists/paul-gauguin');
+  await expect(first.locator('.cl-text a:not(.cl-roadmap)')).toHaveAttribute('href', '/artists/paul-gauguin');
   await expect(page.locator('a.cl-feed')).toHaveAttribute('href', /\/v1\/changelog\/feed\.xml$/);
   await page.locator('.cl-more').scrollIntoViewIfNeeded();
   await expect(page.locator('.cl-entry')).toHaveCount(25);
@@ -2545,8 +2545,11 @@ test('changelog and roadmap (API 118): from the footer, kinds as badges, filtere
   await expect(page.locator('.cl-entry .cl-kind').first()).toHaveText('Behoben');
   // topics (137): the bubble in the roadmap's colour beside the text, chips filter by topic (with the kind)
   await page.locator('.cl-chips button', { hasText: 'Alle' }).click();
-  await expect(page.locator('#eintrag-3 .cl-text .tag.area')).toHaveText('Karte');
-  await expect(page.locator('#eintrag-3 .cl-text .tag.area')).toHaveClass(/area-teal/);
+  await expect(page.locator('#eintrag-3 .cl-topic .tag.area')).toHaveText('Karte');
+  await expect(page.locator('#eintrag-3 .cl-topic .tag.area')).toHaveClass(/area-teal/);
+  // the texts start at the same place, with or without a topic, on every day (one column for the topics: subgrid)
+  const starts = await page.locator('.cl-items .cl-text').evaluateAll((els) => els.slice(0, 12).map((e) => Math.round(e.getBoundingClientRect().left)));
+  expect(new Set(starts).size).toBe(1);
   await page.locator('.cl-topics button', { hasText: 'Karte' }).click();
   await expect(page).toHaveURL(/\/changelog\?topic=Karte$/);
   await expect(page.locator('.cl-entry')).toHaveCount(8);

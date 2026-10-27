@@ -20,8 +20,8 @@ const BATCH = 20;
 
 const entryHtml = (e: ChangelogEntry) => html`<article class="cl-entry" id="eintrag-${String(e.id)}">
   <h2><a href="#eintrag-${String(e.id)}" class="cl-day">${day(e.day)}</a>${e.title ? html`<span class="cl-title"> · ${e.title}</span>` : ''}</h2>
-  <ul class="cl-items">${e.items.map((i) => html`<li><span class="cl-kind cl-${i.kind}">${i.label}</span> <span class="cl-text">${i.area ? html`<span class="tag area area-${i.area_color || 'slate'}">${i.area}</span> ` : ''}${trusted(i.html)}</span>
-    ${i.roadmap ? html` <a class="cl-roadmap muted small" href="/roadmap#punkt-${String(i.roadmap.id)}">Roadmap</a>` : ''}</li>`)}</ul></article>`;
+  <ul class="cl-items">${e.items.map((i) => html`<li><span class="cl-kind cl-${i.kind}">${i.label}</span><span class="cl-topic">${i.area ? html`<span class="tag area area-${i.area_color || 'slate'}">${i.area}</span>` : ''}</span><span class="cl-text">${trusted(i.html)}${
+    i.roadmap ? html` <a class="cl-roadmap muted small" href="/roadmap#punkt-${String(i.roadmap.id)}">Roadmap</a>` : ''}</span></li>`)}</ul></article>`;
 
 export function changelogPage(main: HTMLElement, params: URLSearchParams) {
   document.title = 'Changelog · Art History';

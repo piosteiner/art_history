@@ -886,9 +886,22 @@ li.task { list-style: none; margin-left: -1.2rem; }
 .cl-entry h2 .cl-day { color: inherit; text-decoration: none; }
 .cl-entry h2 .cl-day:hover { text-decoration: underline; }
 .cl-title { font-weight: 400; color: var(--muted); }
-.cl-items { list-style: none; padding: 0; margin: 0; }
-.cl-items li { display: flex; gap: .5rem; align-items: baseline; margin: .3rem 0; line-height: 1.45; }
-.cl-items li .cl-text { flex: 1; min-width: 0; }
+/* kind · topic · text in three columns shared by the whole list (subgrid): the topic column as wide as the widest
+   topic on the page, so every text starts at the same place — also across days and as more entries load */
+.cl-list { display: grid; grid-template-columns: max-content max-content minmax(0, 1fr); column-gap: .5rem; }
+.cl-list > * { grid-column: 1 / -1; }
+.cl-entry { display: grid; grid-template-columns: subgrid; }
+.cl-entry > h2 { grid-column: 1 / -1; }
+.cl-items { list-style: none; padding: 0; margin: 0; grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; }
+.cl-items li { grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; align-items: baseline; margin: .3rem 0; line-height: 1.45; }
+.cl-items li .cl-text { min-width: 0; }
+.cl-topic .tag.area { margin-left: 0; }
+@media (max-width: 640px) {  /* phones: kind and topic on a line, the text under them at full width */
+  .cl-list, .cl-entry, .cl-items { display: block; }
+  .cl-items li { display: flex; flex-wrap: wrap; gap: .25rem .4rem; }
+  .cl-items li .cl-text { flex-basis: 100%; }
+  .cl-topic:empty { display: none; }
+}
 .cl-kind { flex: none; min-width: 5.6rem; text-align: center; font-size: .72rem; font-weight: 600; padding: .05rem .4rem; border-radius: 4px; border: 1px solid currentColor; }
 .cl-neu { color: #2f8a55; } .cl-verbessert { color: #2b6cb0; } .cl-behoben { color: #c05621; } .cl-inhalt { color: #7a5fb0; } .cl-technik { color: var(--muted); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .cl-neu { color: #6fcf97; } :root:not([data-theme="light"]) .cl-verbessert { color: #7fb3ee; } :root:not([data-theme="light"]) .cl-behoben { color: #f0a46b; } :root:not([data-theme="light"]) .cl-inhalt { color: #b9a2e6; } }
@@ -935,7 +948,6 @@ li.task { list-style: none; margin-left: -1.2rem; }
 .cl-topics { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; margin: -.4rem 0 1rem; }
 .cl-topics .chip.tag.area { margin-left: 0; font-size: .8rem; padding: .1rem .55rem; cursor: pointer; }
 .cl-topics .chip.tag.area.active { font-weight: 600; box-shadow: inset 0 0 0 1px currentColor; }
-.cl-text .tag.area { margin-left: 0; }
 
 /* /statistik (views/stats.ts): tiles and one line chart per number */
 :root { --chart-line: #b4462b; }

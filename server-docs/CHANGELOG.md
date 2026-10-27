@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Site: changelog texts aligned again — a column for the topics
+- **What:** `views/changelog.ts`: a bullet is kind · topic (`.cl-topic`) · text (roadmap link inside); `style.css`: the
+  list is a three-column grid, entries, lists and lines take its columns over (`subgrid`), so the topic column is as
+  wide as the widest topic on the page and every text starts at the same place, across days; phones: kind and topic on a
+  line, the text under them. The site test checks the texts' left edges.
+- **Why:** owner: with the topics the texts no longer started at the same width.
+- **Revert:** revert the commit.
+
 ### Citations: a source cites a piece of information once (migration 143)
 - **What:**
   - Migration 143: the 7 existing doubles merged (oldest kept; the others' notes and pages joined to it in the order
