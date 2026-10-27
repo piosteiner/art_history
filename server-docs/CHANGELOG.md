@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Data: provenance of Menzel's *Eisenwalzwerk* (Alte Nationalgalerie, A I 201); Liebermann family tie
+- **What:** (data only; `from-wikidata.js`, `import.js`) new artist `max-liebermann` (Q158062); person
+  `adolph-von-liebermann` completed from Wikidata Q55854929 (dates, other name, occupations, description) with
+  `relative_of` → Max Liebermann, label "uncle of Max Liebermann (brother of his father Louis)" (Wikidata Q158062 P1038).
+  `eisenwalzwerk-moderne-cyklopen`: Adolph von Liebermann (purchase from the artist, until 18.10.1875) → Nationalgalerie
+  (purchase 18.10.1875), cited from recherche.smb.museum/detail/958605. The record's "(Onkel des Künstlers)" is noted
+  on the step as a slip: he was Max Liebermann's uncle, not Menzel's.
+- **Why:** owner: complete the provenance; record the uncle.
+- **Revert:** admin history of the three entries.
+
 ### Family ties (migration 140)
 - **What:** relationship types in a new category `family`: `child_of` (inverse "parent of"), `sibling_of`, `married_to`,
   `relative_of` (symmetric; the label says which tie, e.g. uncle) — for artists and people. Site: section "Family" on
