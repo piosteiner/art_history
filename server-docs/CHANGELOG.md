@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Data: provenance of Sabine Lepsius's *Selbstbildnis* (Alte Nationalgalerie, NG 1/56)
+- **What:** (data only) new person `monica-berenberg-lepsius` (Q95685361) with `child_of` Sabine Lepsius ("daughter";
+  Wikidata P25), places `lauda` (Q1807270) and its parent `lauda-konigshofen`; `selbstbildnis-sabine-lepsius`:
+  Monica Berenberg-Lepsius, inheritance from the artist's estate, Lauda, until 1956 → Nationalgalerie, purchase 1956 —
+  cited from recherche.smb.museum/detail/961917.
+- **Why:** owner: add the provenance.
+- **Revert:** admin history of the entries.
+
 ### Site: changelog topic bubbles all of one width
 - **What:** `.cl-topic .tag.area` fills the topic column (block, centred), so every bubble is as wide as the widest
   topic; phones keep them inline. The site test also checks the bubbles' widths.
