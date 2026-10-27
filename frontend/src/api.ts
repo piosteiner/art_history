@@ -128,6 +128,16 @@ export const searchPage = (slug: string, q: string) => get<PageSearch>(`/pages/$
 /** The project's numbers (API /v1/stats, migration 138): per metric the latest value and one value per day. */
 export interface Stats { updated: string | null; metrics: Record<string, { value: number; series: [string, number][] }> }
 export const getStats = () => get<Stats>('/stats');
+/** The project's vocabulary (GET /v1/stats/vocabulary): every kind of relationship and every provenance option, with how often each is used. */
+export interface VocabOption { code: string; label: string; description: string | null; n: number }
+export interface ModelVocabulary {
+  relationships: { code: string; label: string; inverse_label: string; category: string; symmetric: boolean; presence: boolean; derived: boolean;
+    subject_types: string[]; object_types: string[]; description: string | null; n: number }[];
+  provenance: { methods: VocabOption[]; roles: VocabOption[]; certainty: VocabOption[]; records: VocabOption[]; status: VocabOption[];
+    numbers: (VocabOption & { scope: string })[];
+    currencies: { code: string; name: string; country: string | null; since: string | null; until: string | null; n: number }[] };
+}
+export const getModelVocabulary = () => get<ModelVocabulary>('/stats/vocabulary');
 
 /** The public changelog (API 118): entries newest first, each with its bullet points (kind, rendered HTML). */
 export type ChangeKind = 'neu' | 'verbessert' | 'behoben' | 'inhalt' | 'technik';

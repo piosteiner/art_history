@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Statistics page: the vocabulary (relationship types, provenance options); "Projektdokumentation", no tables
+- **What:**
+  - `backend/src/vocabulary.js` + `GET /v1/stats/vocabulary`: every relationship type (both labels, category, entry
+    types, symmetric / derived / on the map, uses in `graph_links`) and every provenance option — methods, roles,
+    certainty, record kinds, 1933–45 categories (the enums via `enum_range()`, unused ones with 0), number kinds,
+    currencies — with how often each is used; German explanations of the provenance options in the module. (Not
+    `/v1/vocabulary`: that is the graph's.) e2e `vocabulary.spec.js`.
+  - Site /statistik: sections "Arten von Beziehungen" (by category) and "Provenienz: die Optionen" as tables, unused
+    options faded, anchors `#beziehungen`, `#provenienz`; "Als Tabelle" under the charts removed; the section
+    "Dokumentation" → "Projektdokumentation", its label "Wörter". Frontend test updated.
+- **Why:** owner: show the model to professionals who might give feedback; less that isn't important.
+- **Revert:** revert the commit and deploy.
+
 ### The project's numbers in one place: statistics (migration 138, API `/v1/stats`, site `/statistik`)
 - **What:** table `site_stats` (metric, day, value); `site_stats_counts()` / `record_site_stats()` (SECURITY DEFINER:
   entries per kind, provenance steps, relationships, citations, images, relationship types, migrations). `src/stats.js`

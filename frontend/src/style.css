@@ -964,7 +964,12 @@ li.task { list-style: none; margin-left: -1.2rem; }
 .stats-axis-y span { position: absolute; right: .3rem; transform: translateY(-50%); font-size: .72rem; color: var(--muted); font-variant-numeric: tabular-nums; }
 .stats-axis-x { position: absolute; left: 0; right: 0; top: 100%; display: flex; justify-content: space-between; padding: .15rem 0 0 9.3%; font-size: .72rem; color: var(--muted); }
 .stats-tip { position: absolute; top: -.2rem; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: .15rem .45rem; font-size: .8rem; white-space: nowrap; pointer-events: none; box-shadow: 0 2px 6px rgb(0 0 0 / .12); }
-.stats-table summary { font-size: .8rem; color: var(--muted); cursor: pointer; margin-top: .3rem; }
-.stats-table table { font-size: .82rem; border-collapse: collapse; margin-top: .3rem; }
-.stats-table td, .stats-table th { padding: .1rem .6rem .1rem 0; text-align: left; }
-.stats-table td:last-child { text-align: right; font-variant-numeric: tabular-nums; }
+/* the vocabulary (relationships, provenance options): plain tables, unused options faded */
+.vocab h3 { font-size: 1.02rem; margin: 1.4rem 0 .3rem; }
+.vocab-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.vocab-table th, .vocab-table td { text-align: left; vertical-align: top; padding: .35rem .6rem .35rem 0; border-bottom: 1px solid var(--line); }
+.vocab-table th { font-size: .78rem; font-weight: 600; color: var(--muted); }
+.vocab-table code { font-size: .9em; background: none; padding: 0; }
+.vocab-table .vocab-n { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.vocab-table tr.vocab-unused { color: var(--muted); }
+.vocab-table .tag { margin-left: .2rem; }

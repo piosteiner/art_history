@@ -1,10 +1,12 @@
 // /statistik — the project's numbers in one place (API /v1/stats, migration 138): how many entries of each kind,
 // provenance steps, citations, images, migrations, tests, words of the documentation; today's value as a tile and the
 // development as a line chart per number. The documentation links here instead of carrying numbers that age.
+// Below: the vocabulary (API /v1/stats/vocabulary) — every kind of relationship and every provenance option with how often
+// it is used, for professionals who want to see the model and give feedback.
 // The charts: one series each (no legend — the title names it), a 2px line in --chart-line (the dots are HTML, so a
 // chart stretched to its width keeps them round), a crosshair with the
-// day's value under the pointer (or the keyboard: ← →), and the numbers as a table below.
-import { getStats, type Stats } from '../api';
+// day's value under the pointer (or the keyboard: ← →).
+import { getModelVocabulary, getStats, type ModelVocabulary, type Stats, type VocabOption } from '../api';
 import { html, render, type Html } from '../html';
 import { guard, showError } from './common';
 
@@ -23,7 +25,7 @@ const LABELS: Record<string, string> = {
   'content.images': 'Bilder',
   'project.migrations': 'Migrationen der Datenbank', 'project.relationship_types': 'Arten von Beziehungen',
   'tests.backend_e2e': 'Tests von Backend und CMS (End-to-End)', 'tests.backend_unit': 'Tests des Backends (Unit)',
-  'tests.site': 'Tests der Website', 'documentation.words': 'Wörter dieser Dokumentation',
+  'tests.site': 'Tests der Website', 'documentation.words': 'Wörter',
 };
 const GROUPS: { title: string; tiles: string[]; charts: string[]; note?: string }[] = [
   { title: 'Einträge', tiles: ['entries.artworks', 'entries.artists', 'entries.people', 'entries.institutions', 'entries.places',
@@ -33,7 +35,7 @@ const GROUPS: { title: string; tiles: string[]; charts: string[]; note?: string 
   { title: 'Entwicklung', tiles: ['project.migrations', 'tests.backend_e2e', 'tests.backend_unit', 'tests.site', 'project.relationship_types'],
     charts: ['project.migrations', 'tests.backend_e2e', 'tests.site'],
     note: 'Tests werden als ihre Definitionen im Code gezählt, frühere Tage aus der Versionsgeschichte auf GitHub.' },
-  { title: 'Dokumentation', tiles: ['documentation.words'], charts: ['documentation.words'] },
+  { title: 'Projektdokumentation', tiles: ['documentation.words'], charts: ['documentation.words'] },
 ];
 
 const W = 560;
@@ -72,9 +74,6 @@ function chart(metric: string, series: [string, number][]): Html {
       <div class="stats-axis-x"><span>${DAY_SHORT.format(date(series[0][0]))}</span><span>${DAY_SHORT.format(date(last[0]))}</span></div>
       <div class="stats-tip" hidden></div>
     </div>
-    <details class="stats-table"><summary>Als Tabelle</summary>
-      <table><thead><tr><th>Tag</th><th>${label}</th></tr></thead>
-      <tbody>${series.slice().reverse().map(([d, v]) => html`<tr><td>${DAY.format(date(d))}</td><td>${NUM.format(v)}</td></tr>`)}</tbody></table></details>
   </figure>`;
 }
 
@@ -118,6 +117,63 @@ function wireChart(fig: HTMLElement) {
   });
 }
 
+const CATEGORY: Record<string, string> = {
+  polity: 'Staatsgebilde', presence: 'Aufenthalt und Orte', association: 'Zugehörigkeit', depiction: 'Darstellung', influence: 'Einfluss',
+  education: 'Ausbildung', collaboration: 'Zusammenarbeit', membership: 'Mitgliedschaft', patronage: 'Förderung und Auftrag',
+  publication: 'Veröffentlichung', provenance: 'Provenienz (aus den Provenienzschritten abgeleitet)', architecture: 'Architektur', event: 'Ereignisse', glossary: 'Glossar',
+};
+const TYPE: Record<string, string> = {
+  artist: 'Künstler:in', artwork: 'Kunstwerk', institution: 'Institution', person: 'Person', movement: 'Strömung', place: 'Ort',
+  polity: 'Staatsgebilde', term: 'Glossarbegriff', source: 'Quelle', event: 'Ereignis',
+};
+const types = (t: string[]) => t.map((x) => TYPE[x] ?? x).join(', ');
+const used = (n: number) => html`<td class="vocab-n">${NUM.format(n)}</td>`;
+
+/** One list of options: the wording on the site, what it means, how often it is used. */
+const optionTable = (title: string, intro: string, rows: VocabOption[]) => html`<h3>${title}</h3>
+  <p class="muted small">${intro}</p>
+  <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Option</th><th>Bedeutung</th><th class="vocab-n">Verwendet</th></tr></thead>
+    <tbody>${rows.map((o) => html`<tr${o.n ? '' : html` class="vocab-unused"`}><td><code>${o.label}</code></td><td>${o.description ?? ''}</td>${used(o.n)}</tr>`)}</tbody></table></div>`;
+
+function vocabularyView(box: HTMLElement, v: ModelVocabulary) {
+  const byCategory = new Map<string, ModelVocabulary['relationships']>();
+  for (const r of v.relationships) byCategory.set(r.category, [...(byCategory.get(r.category) ?? []), r]);
+  const p = v.provenance;
+  render(box, html`<section class="stats-group vocab" id="beziehungen"><h2>Arten von Beziehungen</h2>
+      <p class="muted small">Alle ${String(v.relationships.length)} Arten, mit denen Einträge verbunden werden, in der Bezeichnung der Website
+        (englisch) und in der Gegenrichtung, wie sie auf der anderen Seite erscheint. „Verwendet“ zählt die Verbindungen in der Datenbank.
+        Rückmeldungen dazu sind willkommen.</p>
+      ${[...byCategory].map(([cat, rows]) => html`<h3>${CATEGORY[cat] ?? cat}</h3>
+        <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Beziehung</th><th>Gegenrichtung</th><th>Von → Zu</th><th class="vocab-n">Verwendet</th></tr></thead>
+          <tbody>${rows.map((r) => html`<tr${r.n ? '' : html` class="vocab-unused"`}>
+            <td><code>${r.label}</code>${r.symmetric ? html` <span class="tag" title="Gilt in beide Richtungen">gegenseitig</span>` : ''}${r.derived ? html` <span class="tag" title="Wird aus anderen Angaben abgeleitet, nicht von Hand erfasst">abgeleitet</span>` : ''}${r.presence ? html` <span class="tag" title="Bedeutet physische Anwesenheit: erscheint auf der Karte und der Route">auf der Karte</span>` : ''}
+              ${r.description ? html`<div class="muted small">${r.description}</div>` : ''}</td>
+            <td>${r.symmetric ? '–' : html`<code>${r.inverse_label}</code>`}</td>
+            <td class="small">${types(r.subject_types)} → ${types(r.object_types)}</td>${used(r.n)}</tr>`)}</tbody></table></div>`)}
+    </section>
+    <section class="stats-group vocab" id="provenienz"><h2>Provenienz: die Optionen</h2>
+      <p class="muted small">Was ein Provenienzschritt festhalten kann: wie ein Werk erworben wurde, in welcher Rolle es jemand hielt, wie sicher
+        die Angabe ist, welche Nachweise es gibt. Die Bezeichnungen sind jene der Website (englisch); „Verwendet“ zählt die Schritte.
+        Rückmeldungen dazu sind willkommen.</p>
+      ${optionTable('Art des Erwerbs', 'Wie das Werk an die Halterin oder den Halter kam.', p.methods)}
+      ${optionTable('Rolle', 'In welcher Eigenschaft jemand das Werk hielt. Wer nicht Eigentümer:in ist, steht neben der Kette der Eigentümer:innen.', p.roles)}
+      ${optionTable('Sicherheit', 'Wie gut ein Schritt belegt ist.', p.certainty)}
+      ${optionTable('Nachweise', 'Einträge zu einem Schritt: wo und wann das Werk dokumentiert ist.', p.records)}
+      ${optionTable('Provenienz 1933–1945', 'Die Kategorien des Schweizer Bundesamts für Kultur, pro Werk; „Verwendet“ zählt die Werke.', p.status)}
+      <h3>Nummern</h3>
+      <p class="muted small">Nummern, die ein Schritt tragen kann. Jene der Halter:innen gelten nur bei ihnen, die übrigen werden über alle Werke
+        hinweg verglichen und verlinkt.</p>
+      <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Nummer</th><th>Bedeutung</th><th>Gilt</th><th class="vocab-n">Verwendet</th></tr></thead>
+        <tbody>${p.numbers.map((o) => html`<tr${o.n ? '' : html` class="vocab-unused"`}><td><code>${o.label}</code></td><td>${o.description ?? ''}</td>
+          <td class="small">${o.scope === 'global' ? 'über alle Werke' : 'bei der Halter:in'}</td>${used(o.n)}</tr>`)}</tbody></table></div>
+      <h3>Währungen</h3>
+      <p class="muted small">Für Preise in der Provenienz, auch historische; „Verwendet“ zählt die Schritte mit einem Preis in dieser Währung.</p>
+      <div class="table-wrap"><table class="vocab-table"><thead><tr><th>Code</th><th>Währung</th><th>In Gebrauch</th><th class="vocab-n">Verwendet</th></tr></thead>
+        <tbody>${p.currencies.map((c) => html`<tr${c.n ? '' : html` class="vocab-unused"`}><td><code>${c.code}</code></td><td>${c.name}</td>
+          <td class="small">${c.since ? `${c.since.slice(0, 4)}–${c.until ? c.until.slice(0, 4) : 'heute'}` : ''}</td>${used(c.n)}</tr>`)}</tbody></table></div>
+    </section>`);
+}
+
 function view(box: HTMLElement, s: Stats) {
   const value = (m: string) => s.metrics[m]?.value;
   const total = value('entries.total');
@@ -130,6 +186,7 @@ function view(box: HTMLElement, s: Stats) {
       <div class="stats-charts">${g.charts.filter((m) => s.metrics[m]).map((m) => chart(m, s.metrics[m].series))}</div>
       ${g.note ? html`<p class="muted small">${g.note}</p>` : ''}</section>`)}`);
   box.querySelectorAll<HTMLElement>('.stats-chart').forEach(wireChart);
+  box.insertAdjacentHTML('beforeend', '<div class="vocab-box"><p class="muted small">Lädt…</p></div>');
 }
 
 export function statsPage(main: HTMLElement) {
@@ -137,5 +194,14 @@ export function statsPage(main: HTMLElement) {
   render(main, html`<article class="page stats-page" lang="de-CH"><p class="muted small">Lädt…</p></article>`);
   const box = main.querySelector<HTMLElement>('article')!;
   const current = guard();
-  getStats().then((s) => { if (current()) view(box, s); }).catch((err) => { if (current()) showError(box, err); });
+  getStats().then((s) => {
+    if (!current()) return;
+    view(box, s);
+    const vocab = box.querySelector<HTMLElement>('.vocab-box')!;
+    getModelVocabulary().then((v) => {
+      if (!current()) return;
+      vocabularyView(vocab, v);
+      if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+    }).catch((err) => { if (current()) showError(vocab, err); });
+  }).catch((err) => { if (current()) showError(box, err); });
 }

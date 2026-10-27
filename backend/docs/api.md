@@ -474,6 +474,12 @@ top-level headings, the text before the first is the introduction:
 - `GET /v1/stats` → `{updated, metrics: {<metric>: {value, series: [[day, value], …]}}}` — the project's numbers (migration
   138): `entries.<kind>` + `entries.total`, `content.provenance|relationships|citations|images`,
   `project.migrations|relationship_types`, `tests.backend_e2e|backend_unit|site`, `documentation.words`; one value per day.
+- `GET /v1/stats/vocabulary` → `{relationships: [{code, label, inverse_label, category, symmetric, presence, derived,
+  subject_types, object_types, description, n}], provenance: {methods, roles, certainty, records, status: [{code, label,
+  description, n}], numbers: [{code, label, description, scope, n}], currencies: [{code, name, country, since, until, n}]}}` —
+  every kind of relationship and every provenance option with how often it is used (`src/vocabulary.js`; enums listed with
+  `enum_range()`, so new values appear by themselves; `description` of the provenance options in German). Not `/v1/vocabulary`
+  (the graph's relationship types).
 - `GET /v1/pages/<slug>/search?q=…` → `{q, terms, total, hits: [{chapter: {id, title, index} | null, heading: {id, text} | null, passage_html, matches}]}` —
   paragraphs in which every query word begins a word (accents and case alike), in text order, at most 100; `passage_html` with `<mark>`s.
   (`chars`: characters with spaces as the text reads — no Markdown, images or line breaks)

@@ -1,4 +1,5 @@
 const express = require('express');
+const { vocabulary } = require('../vocabulary');
 const { apiPool } = require('../db');
 const { router: entities, ENTITIES } = require('./entities');
 const map = require('./map');
@@ -181,6 +182,14 @@ router.get('/stats', async (req, res) => {
   const updated = rows.reduce((d, r) => (!d || r.last > d ? r.last : d), null);
   res.set('Cache-Control', 'public, max-age=300');
   res.json({ updated, metrics });
+});
+
+// GET /v1/stats/vocabulary — every kind of relationship and every provenance option, with how often each is used
+// (src/vocabulary.js), for the statistics page: {relationships: [...], provenance: {methods, roles, certainty, records,
+// status, numbers, currencies}}
+router.get('/stats/vocabulary', async (req, res) => {
+  res.set('Cache-Control', 'public, max-age=300');
+  res.json(await vocabulary(apiPool));
 });
 
 // GET /v1/pages/<slug>/search?q=… — the page searched paragraph by paragraph (src/pages.js searchPage): {q, terms, total,

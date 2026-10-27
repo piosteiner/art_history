@@ -2461,13 +2461,22 @@ test('project documentation: the search field lists hits by chapter; a hit opens
   await expect(page.locator('.doc-hits')).toHaveCount(2);
 });
 
-test('statistics (API /v1/stats): from the footer, tiles with today\'s numbers, a chart per number with the day under the pointer, a table', async ({ page }) => {
+test('statistics (API /v1/stats): from the footer, tiles with today\'s numbers, a chart per number with the day under the pointer; the vocabulary', async ({ page }) => {
   const series = (a: number, b: number) => [['2026-10-01', a], ['2026-10-15', Math.round((a + b) / 2)], ['2026-10-27', b]] as [string, number][];
   const m = (a: number, b: number) => ({ value: b, series: series(a, b) });
   await page.route(/\/v1\/stats$/, (r) => r.fulfill({ json: { updated: '2026-10-27', metrics: {
     'entries.total': m(400, 1754), 'entries.artworks': m(40, 362), 'entries.artists': m(30, 186),
     'content.provenance': m(0, 1710), 'content.citations': m(0, 7704), 'project.migrations': m(60, 138),
     'tests.backend_e2e': m(120, 233), 'tests.site': m(80, 121), 'documentation.words': m(10000, 24969) } } }));
+  const opt = (code: string, label: string, n: number) => ({ code, label, description: `Bedeutung von ${label}`, n });
+  await page.route(/\/v1\/stats\/vocabulary$/, (r) => r.fulfill({ json: {
+    relationships: [
+      { code: 'born_in', label: 'born in', inverse_label: 'birthplace of', category: 'presence', symmetric: false, presence: true, derived: false, subject_types: ['artist', 'person'], object_types: ['place'], description: null, n: 120 },
+      { code: 'collaborated_with', label: 'collaborated with', inverse_label: 'collaborated with', category: 'collaboration', symmetric: true, presence: false, derived: false, subject_types: ['artist'], object_types: ['artist'], description: 'Worked together.', n: 0 },
+      { code: 'owned_by', label: 'owned by', inverse_label: 'owned', category: 'provenance', symmetric: false, presence: false, derived: true, subject_types: ['artwork'], object_types: ['person'], description: null, n: 900 }],
+    provenance: { methods: [opt('purchase', 'purchase', 400), opt('theft', 'stolen', 3), opt('in_lieu', 'in lieu of tax', 0)], roles: [opt('owner', 'owner', 1300)],
+      certainty: [opt('attested', 'attested', 1600)], records: [opt('inventory', 'inventory', 125)], status: [opt('a_clear', 'A', 1), opt('d_seized', 'D', 2)],
+      numbers: [{ ...opt('err', 'ERR no.', 4), scope: 'global' }], currencies: [{ code: 'RM', name: 'Reichsmark', country: 'DE', since: '1924-08-30', until: '1948-06-21', n: 5 }] } } }));
   await page.goto('/privacy');
   await page.locator('footer a', { hasText: 'Statistik' }).click();
   await expect(page).toHaveURL(/\/statistik$/);
@@ -2480,12 +2489,26 @@ test('statistics (API /v1/stats): from the footer, tiles with today\'s numbers, 
   const box = (await plot.boundingBox())!;
   await page.mouse.move(box.x + box.width - 4, box.y + box.height / 2);
   await expect(plot.locator('.stats-tip')).toHaveText(/27\. Okt\. 2026: 1['’]754/);
-  // the keyboard too; and the numbers as a table
+  // the keyboard too; no table under the charts
   await plot.focus();
   await page.keyboard.press('ArrowLeft');
   await expect(plot.locator('.stats-tip')).toHaveText(/15\. Okt\. 2026: 1['’]077/);
-  await page.locator('.stats-chart', { hasText: 'Einträge insgesamt' }).locator('summary').click();
-  await expect(page.locator('.stats-chart', { hasText: 'Einträge insgesamt' }).locator('tbody tr')).toHaveCount(3);
+  await expect(page.locator('.stats-chart summary')).toHaveCount(0);
+  // the documentation's words: "Projektdokumentation", the tile and chart just "Wörter"
+  const doc = page.locator('.stats-group', { has: page.locator('h2', { hasText: 'Projektdokumentation' }) });
+  await expect(doc.locator('.stats-label')).toHaveText('Wörter');
+  await expect(doc.locator('figcaption')).toHaveText('Wörter');
+  // the vocabulary: relationships by category with both directions and the entry types, provenance options explained, unused faded
+  const rel = page.locator('#beziehungen');
+  await expect(rel.locator('h3')).toHaveText(['Aufenthalt und Orte', 'Zusammenarbeit', 'Provenienz (aus den Provenienzschritten abgeleitet)']);
+  await expect(rel.locator('tr', { hasText: 'born in' })).toContainText(/birthplace of[\s\S]*Künstler:in, Person → Ort[\s\S]*120/);
+  await expect(rel.locator('tr', { hasText: 'collaborated with' })).toHaveClass(/vocab-unused/);
+  await expect(rel.locator('tr', { hasText: 'owned by' })).toContainText('abgeleitet');
+  const prov = page.locator('#provenienz');
+  await expect(prov.locator('tr', { hasText: 'stolen' })).toContainText('Bedeutung von stolen');
+  await expect(prov.locator('tr', { hasText: 'in lieu of tax' })).toHaveClass(/vocab-unused/);
+  await expect(prov.locator('tr', { hasText: 'ERR no.' })).toContainText('über alle Werke');
+  await expect(prov.locator('tr', { hasText: 'Reichsmark' })).toContainText('1924–1948');
 });
 
 test('changelog and roadmap (API 118): from the footer, kinds as badges, filtered by kind, more on scrolling; the roadmap columns', async ({ page }) => {
