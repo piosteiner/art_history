@@ -27,7 +27,6 @@ Format: date — what — why — how to revert.
 - **Why:** owner (roadmap): reorder the documentation's chapters, e.g. the CMS chapter further up.
 - **Revert:** revert the commit; an order already saved stays (restore an earlier version from the page's history).
 
-## 2026-10-27
 
 ### CMS: "[" suggests the topics in changelog bullets
 - **What:** `src/admin/editor/editor.js` `topicCompletions`: on a line "Neu [" (any kind) the topics are suggested,
