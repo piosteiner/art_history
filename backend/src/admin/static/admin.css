@@ -397,7 +397,16 @@ details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-
 /* dragging (editor/sortable.js): the floating copy and the gap where it lands */
 .sort-ghost { position: fixed; z-index: 70; margin: 0; pointer-events: none; background: var(--panel); border-collapse: collapse;
   box-shadow: 0 8px 28px rgba(0,0,0,.4); border: 1px solid var(--accent); border-radius: 4px; opacity: .97; }
-.page-chapters { padding-left: 1.6rem; } .page-chapters .drag-handle { margin-left: -1.6rem; width: 1.4rem; }
+/* the chapters of a page: number, ⠿ handle, title in one row (the list's own numbers sat under the handles) */
+.page-chapters { list-style: none; padding-left: 0; counter-reset: chapter; }
+.page-chapters > li { counter-increment: chapter; display: flex; align-items: baseline; gap: .25rem; margin: .15rem 0; }
+.page-chapters > li::before { content: counter(chapter) "."; min-width: 1.6rem; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+.page-chapters > li > a { flex: 0 1 auto; min-width: 0; overflow-wrap: anywhere; }
+.page-chapters > li > .muted, .page-chapters > li > .page-pending { flex: none; }
+.page-chapters .drag-handle { padding: 0 .15rem; }
+.page-chapters > li.sort-placeholder { counter-increment: none; }
+.page-chapters > li.sort-placeholder::before { content: none; }
+.page-overwrite { margin: .6rem 0; padding: .5rem .7rem; border: 1px solid var(--err); border-radius: 4px; }
 .page-outline-intro { margin: .2rem 0; }
 li.sort-placeholder { list-style: none; border: 2px dashed color-mix(in srgb, var(--accent) 60%, transparent); border-radius: 6px; }
 ol.sort-ghost { list-style: none; padding: .2rem .4rem; }

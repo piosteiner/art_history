@@ -100,6 +100,11 @@ test('a long page: chapters edited one at a time, a stale save refused, .md down
   await userA.click('.page-form button:has-text("Publish changes")');
   await expect(userA.locator('.flash.error')).toContainText('was changed on the site since you began');
   await expect(userA.locator('#pg-body')).toHaveValue('# Projektstart\nMeine Fassung.\n');
+  await expect(userA.locator('[data-page-changes] del')).toContainText('Anderswo geändert');   // what would be replaced
+  // published only when asked for explicitly
+  await userA.click('.page-form button:has-text("Publish changes")');
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toContain('Anderswo geändert.');
+  await userA.check('input[name=overwrite]');
   await Promise.all([userA.waitForURL(/done=page-published/), userA.click('.page-form button:has-text("Publish changes")')]);
   expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toContain('# Projektstart\nMeine Fassung.\n# Provenienz\nBesitz.\n\nNachtrag.');
 
@@ -301,4 +306,36 @@ test('chapters moved in the outline: by keyboard and by dragging; the text one, 
   expect(sql("SELECT part FROM page_drafts d JOIN pages p ON p.id = d.page_id WHERE p.slug = 'test-doc'")).toBe('1');
   // one change each in the page's history
   expect(Number(sql("SELECT count(*) FROM audit_log WHERE table_name = 'pages' AND row_id = (SELECT id FROM pages WHERE slug = 'test-doc') AND action = 'update'"))).toBe(2);
+});
+
+test('drafts follow their chapters when a published draft adds one; a draft of another chapter or an empty text replaces nothing unasked', async ({ userA }) => {
+  sql("INSERT INTO pages (slug, title, body_md, published) VALUES ('test-doc', 'Test Doc', '# Eins\nA.\n\n# Zwei\nB.\n\n# Drei\nC.', true)");
+  const draft = (part, live, mine) => userA.evaluate(async ([pt, l, m]) => {
+    const base = [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(l)))].map((b) => b.toString(16).padStart(2, '0')).join('');
+    return (await fetch('/pages/test-doc/draft', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chapter: pt, base, body: m }) })).status;
+  }, [part, live, mine]);
+  await userA.goto('/pages/test-doc/edit');
+  // a draft of Drei; then Eins published with a new chapter after it (the case of 2026-10-27)
+  expect(await draft('3', '# Drei\nC.', '# Drei\nC neu.\n')).toBe(200);
+  expect(await draft('1', '# Eins\nA.\n\n', '# Eins\nA.\n\n# Neu\nN.\n\n')).toBe(200);
+  await userA.goto('/pages/test-doc/changes');
+  await userA.locator('.page-change', { hasText: 'Eins' }).locator('button:text-is("Publish")').click();
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toBe('# Eins\nA.\n\n# Neu\nN.\n\n# Zwei\nB.\n\n# Drei\nC.');
+  // Drei is chapter 4 now — its draft moved with it, still current
+  expect(sql("SELECT part FROM page_drafts d JOIN pages p ON p.id = d.page_id WHERE p.slug = 'test-doc'")).toBe('4');
+  await expect(userA.locator('.page-change h2')).toHaveText(['Chapter 4: Drei']);
+  await expect(userA.locator('.page-change', { hasText: 'Drei' }).locator('button:text-is("Publish")')).toBeVisible();
+
+  // a draft that belongs to another chapter (stored under Zwei's number): shown, refused, named as such
+  sql("INSERT INTO page_drafts (page_id, user_id, part, base_sha, body_md) SELECT id, (SELECT id FROM admin_users WHERE username = 'tester'), '3', 'stale', '# Drei\nFalsch.\n' FROM pages WHERE slug = 'test-doc'");
+  await userA.goto('/pages/test-doc/edit?chapter=3');
+  await userA.click('.page-form button:has-text("Publish changes")');
+  await expect(userA.locator('.flash.error')).toContainText('it may be a draft of another chapter');
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toContain('# Zwei\nB.');
+  // an empty text never replaces a chapter
+  await userA.goto('/pages/test-doc/edit?chapter=2');
+  await userA.evaluate(() => { document.querySelector('#pg-body').value = ''; document.querySelector('#pg-body').dispatchEvent(new Event('md-change')); });
+  await userA.click('.page-form button:has-text("Publish changes")');
+  await expect(userA.locator('.flash.error')).toContainText('The text is empty');
+  expect(sql("SELECT body_md FROM pages WHERE slug = 'test-doc'")).toContain('# Neu\nN.');
 });

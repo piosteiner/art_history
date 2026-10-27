@@ -106,10 +106,34 @@ async function changesOf(p, userId) {
   const order = (k) => (k === 'all' ? -1 : Number(k));
   return out.sort((a, b) => order(a.key) - order(b.key));
 }
+// Drafts are kept by the number of their chapter. When the text changes — a part published (perhaps adding or removing
+// a chapter), an .md upload — every remaining draft follows its chapter to its new number: found by the chapter's text
+// as it was, else by its title; a draft whose chapter is gone is dropped. (2026-10-27: a published draft added a chapter,
+// the older drafts kept their numbers and two of them were then published over other chapters.)
+async function followDrafts(db, pageId, beforeBody, afterBody) {
+  const before = splitChapters(beforeBody).chapters;
+  const after = splitChapters(afterBody).chapters;
+  const { rows } = await db.query("DELETE FROM page_drafts WHERE page_id = $1 AND part ~ '^[1-9][0-9]*$' RETURNING *", [pageId]);
+  const taken = new Set();
+  for (const d of rows) {
+    const old = before[Number(d.part) - 1];
+    if (!old) continue;
+    const free = (i) => !taken.has(`${d.user_id}:${i}`);
+    let n = after.findIndex((c, i) => free(i) && c.md === old.md);
+    if (n < 0) n = after.findIndex((c, i) => free(i) && c.title === old.title);
+    if (n < 0) continue;
+    taken.add(`${d.user_id}:${n}`);
+    const base = d.base_sha === sha(old.md) ? sha(after[n].md) : d.base_sha;
+    await db.query('INSERT INTO page_drafts (page_id, user_id, part, base_sha, body_md, saved_at) VALUES ($1, $2, $3, $4, $5, $6)',
+      [pageId, d.user_id, String(n + 1), base, d.body_md, d.saved_at]);
+  }
+}
+const firstHeading = (md) => ((/^#{1,6}[ \t]+(.+?)[ \t]*$/m.exec(md || '') || [])[1] || '').replace(/[*_`=]/g, '').trim();
+
 // The unpublished changes of one part as a word diff: removed words struck through red, added ones green
 const changesBox = (live, draft) => html`<div class="page-changes-diff">${wordDiff(live, draft)}</div>`;
 
-function editPage(p, images, { flash = null, values = null, part = null, sync = null, draft = null, changes = [] } = {}) {
+function editPage(p, images, { flash = null, values = null, part = null, sync = null, draft = null, changes = [], overwrite = false } = {}) {
   const v = values || p;
   const { images: embedded } = renderPage(p.body_md, { imageBase: '' });
   const names = new Set(images.map((i) => i.name));
@@ -164,6 +188,7 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
         <div class="hint">Markdown, as in Obsidian: <code>![[name.webp]]</code> embeds an image of this page (<code>![[name.webp|400]]</code> 400 px wide,
           <code>![[name.webp|caption]]</code> with a caption), <code>[[#Heading]]</code> a link to a heading of this page, in any chapter (type <code>[[#</code> for the list), <code>==highlight==</code>, <code>- [x]</code> tasks, tables, <code>&lt;span style="color:…"&gt;</code>.
           Drop or paste an image into the text to upload and embed it. A new <code>#</code> heading starts a new chapter.</div></div>
+      ${overwrite ? html`<div class="field page-overwrite"><label class="choice"><input type="checkbox" name="overwrite" value="1" required> Publish my version anyway: the text of ${part.label} on the site — struck through above — is replaced</label></div>` : ''}
       <div class="actions"><button data-publish${draft || values ? '' : ' disabled'}>Publish changes</button>
         <button type="submit" form="pg-discard" class="secondary" data-discard${draft ? '' : ' hidden'}>Discard changes</button></div>
     </form>
@@ -264,7 +289,10 @@ router.post('/pages/:slug/upload', express.text({ type: () => true, limit: '5mb'
       ? `The text was changed in the CMS after your last ${sync.kind} (${when(sync.at)}). The file would undo those changes (they stay in the history).`
       : 'The page already has a text that was never downloaded. The file replaces it (the old text stays in the history).' });
   }
-  await withTx(req.user, (db) => db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, text]));
+  await withTx(req.user, async (db) => {
+    await db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, text]);
+    await followDrafts(db, p.id, p.body_md, text);
+  });
   await adminPool.query(`INSERT INTO page_downloads (page_id, sha256, kind) VALUES ($1, $2, 'upload')
     ON CONFLICT (page_id) DO UPDATE SET sha256 = EXCLUDED.sha256, at = now(), kind = 'upload'`, [p.id, sha(text)]);
   const { chapters } = splitChapters(text);
@@ -283,8 +311,10 @@ router.get('/pages/:slug/history', async (req, res) => {
 // Save: the settings, and the part being edited put back in its place (the rest of the text exactly as it was). The text
 // changed since the part was opened (another tab, an upload): not saved — the edited version comes back in the editor,
 // and saving again (now based on the current text) puts it in.
-// Publish: the edited part goes on the site. Refused when that part changed on the site since the editing began
-// (base = sha of the part's text then); a change in another chapter doesn't matter.
+// Publish: the edited part goes on the site. When that part changed on the site since the editing began (base = sha of
+// the part's text then; a change in another chapter doesn't matter), it is not replaced unasked: the page shows the
+// text on the site against the edited one and publishes only with "Publish my version anyway" ticked. An empty text
+// never replaces a chapter.
 router.post('/pages/:slug', async (req, res) => {
   const p = await bySlug(req.params.slug);
   if (!p) return notFoundPage(req, res);
@@ -292,19 +322,32 @@ router.post('/pages/:slug', async (req, res) => {
   const edited = req.body.body_md === undefined ? undefined : String(req.body.body_md).replace(/\r\n/g, '\n');
   if (chapter === undefined || edited === undefined) return res.redirect(303, `/pages/${p.slug}/edit`);
   const part = partOf(p.body_md, chapter);
-  const again = async (flash, status = 409) => send(req, res, { ...editPage(p, await imagesOf(p.id), { values: { ...p, body_md: edited },
-    part: part || { key: String(chapter), label: 'your text', md: '' }, flash, sync: await lastSync(p.id), changes: await changesOf(p, req.user.id) }), status });
+  const again = async (flash, { status = 409, overwrite = false } = {}) => send(req, res, { ...editPage(p, await imagesOf(p.id), {
+    values: { ...p, body_md: edited }, part: part || { key: String(chapter), label: 'your text', md: '' }, flash, sync: await lastSync(p.id),
+    changes: await changesOf(p, req.user.id), overwrite,
+    draft: part ? { body_md: edited, base_sha: req.body.base, saved_at: new Date() } : null }), status });
   if (!part) return again({ kind: 'error', text: 'This chapter is no longer there. Your version is in the editor — copy it, then open the chapter list again.' });
-  if (req.body.base !== sha(part.md)) {
-    return again({ kind: 'error', text: `${part.label.replace(/^./, (x) => x.toUpperCase())} was changed on the site since you began (another tab or an upload). Your version is in the editor — publish again to put it in, or open the part again to see the current one.` });
+  const Label = part.label.replace(/^./, (x) => x.toUpperCase());
+  if (!edited.trim() && part.md.trim()) {
+    return again({ kind: 'error', text: `The text is empty — publishing it would remove ${part.label} from the site. To remove a chapter, open “Whole text” and delete it there.` });
+  }
+  if (req.body.base !== sha(part.md) && req.body.overwrite !== '1') {
+    const mine = firstHeading(edited);
+    const theirs = firstHeading(part.md);
+    const other = part.key !== 'all' && mine && theirs && mine !== theirs
+      ? ` Your text begins with “${mine}”, the chapter on the site with “${theirs}” — it may be a draft of another chapter.` : '';
+    return again({ kind: 'error', text: `${Label} was changed on the site since you began.${other} Below: what is on the site (struck through) against your version. Nothing was published.` }, { overwrite: true });
   }
   const body = chapter === 'all' ? edited : replaceChapter(p.body_md, Number(chapter), edited);
   try {
-    await withTx(req.user, (db) => db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, body]));
+    await withTx(req.user, async (db) => {
+      await db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, body]);
+      await db.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3', [p.id, req.user.id, String(chapter)]);
+      await followDrafts(db, p.id, p.body_md, body);
+    });
   } catch (err) {
-    return again({ kind: 'error', text: friendly(err) }, 422);
+    return again({ kind: 'error', text: friendly(err) }, { status: 422 });
   }
-  await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = $3', [p.id, req.user.id, String(chapter)]);
   res.redirect(303, `/pages/${p.slug}/edit?chapter=${encodeURIComponent(chapter)}&done=page-published`);
 });
 
@@ -373,12 +416,15 @@ router.post('/pages/:slug/publish', async (req, res) => {
   }
   if (done.length) {
     try {
-      await withTx(req.user, (db) => db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, body]));
+      await withTx(req.user, async (db) => {
+        await db.query('UPDATE pages SET body_md = $2 WHERE id = $1', [p.id, body]);
+        await db.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = ANY($3)', [p.id, req.user.id, done]);
+        await followDrafts(db, p.id, p.body_md, body);
+      });
     } catch (err) {
       return send(req, res, { title: 'Not published', flash: { kind: 'error', text: friendly(err) },
         body: html`<p><a href="/pages/${p.slug}/changes">← Unpublished changes</a></p>` });
     }
-    await adminPool.query('DELETE FROM page_drafts WHERE page_id = $1 AND user_id = $2 AND part = ANY($3)', [p.id, req.user.id, done]);
   }
   const skipped = drafts.length - done.length;
   res.redirect(303, `/pages/${p.slug}/changes?published=${done.length}&kept=${skipped}`);
