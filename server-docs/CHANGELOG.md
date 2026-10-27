@@ -4,6 +4,11 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Pages: no word counts in the CMS chapter list
+- **What:** the outline of a page lists the chapters without their word counts (they ran over into the editor's column).
+- **Why:** owner: not needed in the CMS; the site shows them.
+- **Revert:** revert the commit.
+
 ### Incident and fix: two chapters of the documentation overwritten by drafts of other chapters
 - **What happened:** publishing the restructuring drafts (a new chapter "Einträge im Detail") moved every later
   chapter one number down; drafts are kept by chapter number and stayed where they were. Two old drafts then sat on

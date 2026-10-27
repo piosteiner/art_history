@@ -402,7 +402,7 @@ details.cite[open] > summary::after { content: ''; position: fixed; inset: 0; z-
 .page-chapters > li { counter-increment: chapter; display: flex; align-items: baseline; gap: .25rem; margin: .15rem 0; }
 .page-chapters > li::before { content: counter(chapter) "."; min-width: 1.6rem; text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
 .page-chapters > li > a { flex: 0 1 auto; min-width: 0; overflow-wrap: anywhere; }
-.page-chapters > li > .muted, .page-chapters > li > .page-pending { flex: none; }
+.page-chapters > li > .page-pending { flex: none; }
 .page-chapters .drag-handle { padding: 0 .15rem; }
 .page-chapters > li.sort-placeholder { counter-increment: none; }
 .page-chapters > li.sort-placeholder::before { content: none; }

@@ -160,9 +160,9 @@ function editPage(p, images, { flash = null, values = null, part = null, sync = 
     <nav class="page-outline" aria-label="Chapters">
       <h2>Chapters</h2>
       <p class="muted small">The text's top-level headings. Edit one at a time — it is put back in its place when you publish. Drag ⠿ to move a chapter (or focus it and use ↑ ↓): it moves on the site at once, your drafts move with it.</p>
-      ${intro.md.trim() ? html`<p class="page-outline-intro"><a href="/pages/${p.slug}/edit?chapter=0"${on('0')}>Introduction</a> <span class="muted small">${String(words(intro.md))}</span>${mark('0')}</p>` : ''}
+      ${intro.md.trim() ? html`<p class="page-outline-intro"><a href="/pages/${p.slug}/edit?chapter=0"${on('0')}>Introduction</a>${mark('0')}</p>` : ''}
       <ol class="page-chapters"${chapters.length > 1 ? html` data-sortable="/pages/${p.slug}/order" data-sort-current="${part ? part.key : ''}"` : ''}>
-        ${chapters.map((c) => html`<li class="sort-item" data-sort-id="${String(c.index)}">${chapters.length > 1 ? html`<button type="button" class="drag-handle" title="Drag to move the chapter (or focus and use ↑ ↓)" aria-label="Move chapter ${c.title}: drag, or arrow keys">⠿</button>` : ''}<a href="/pages/${p.slug}/edit?chapter=${String(c.index)}"${on(String(c.index))}>${c.title}</a> <span class="muted small">${String(words(c.md))}</span>${mark(String(c.index))}</li>`)}
+        ${chapters.map((c) => html`<li class="sort-item" data-sort-id="${String(c.index)}">${chapters.length > 1 ? html`<button type="button" class="drag-handle" title="Drag to move the chapter (or focus and use ↑ ↓)" aria-label="Move chapter ${c.title}: drag, or arrow keys">⠿</button>` : ''}<a href="/pages/${p.slug}/edit?chapter=${String(c.index)}"${on(String(c.index))}>${c.title}</a>${mark(String(c.index))}</li>`)}
       </ol>
       <p class="small"><a href="/pages/${p.slug}/edit?chapter=all"${on('all')}>Whole text</a>${mark('all')}</p>
       ${changes.length ? html`<p class="small"><a class="button secondary" href="/pages/${p.slug}/changes">Review unpublished changes (${String(changes.length)})</a></p>` : ''}
