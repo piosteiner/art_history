@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Test fix: the "[" topic suggestion under load
+- **What:** `test/e2e/changelog.spec.js`: before pressing Enter on a suggestion, wait for the selected option and past
+  CodeMirror's `interactionDelay` (75 ms after the list opens or changes, Enter is ignored so as not to accept by
+  accident).
+- **Why:** the first deploy with the new log (logs/deploy-20261027-142948.log) named it: failed twice under deploy load,
+  Enter made a new line. Not a bug of the editor.
+- **Revert:** revert the commit.
+
 ### Feedback from visitors (migration 141)
 - **What:**
   - Migration 141: table `feedback` (kind, message, page, elements as `{label, heading, text, selector}`, optional

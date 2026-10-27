@@ -248,6 +248,10 @@ test('changelog (137): "[" after the kind suggests the topics in their colours, 
   const list = userA.locator('.cm-tooltip-autocomplete li');
   await expect(list).toHaveText(['Karte', 'Kartografie']);                       // filtered as typed; Suche not
   await expect(list.first()).toHaveClass(/area-teal/);
+  // CodeMirror ignores Enter for 75 ms after the list opened or changed (interactionDelay — so a fast typist doesn't
+  // accept by accident); under load the list may just have been redrawn: wait for the selection, then past that window
+  await expect(userA.locator('.cm-tooltip-autocomplete li[aria-selected]')).toHaveText('Karte');
+  await userA.waitForTimeout(200);
   await userA.keyboard.press('Enter');
   await userA.keyboard.type('Historische Karten');
   await expect(userA.locator('#cl-items')).toHaveValue('Neu [Karte]: Historische Karten');
