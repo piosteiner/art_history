@@ -11,6 +11,13 @@ git pull --ff-only
 # Dev dependencies stay installed: this checkout is also the dev environment (npm run dev / build:admin), and
 # they are never loaded by the running app — pruning them broke the next local build (2026-09-30).
 npm ci --no-fund --no-audit          # incl. dev deps: esbuild, CodeMirror, Leaflet, Playwright
+# Known vulnerabilities in the packages the running app loads (not the dev tools): a warning, not a stop — fix with
+# `npm audit fix` and deploy again (2026-10-27: four found after the PHP advisories prompted a look).
+if ! npm audit --omit=dev --audit-level=moderate >/dev/null 2>&1; then
+  echo "! npm audit: known vulnerabilities in the app's packages —"
+  npm audit --omit=dev 2>/dev/null | grep -E "^[a-z@].*|Severity" | head -12
+  echo "  fix: cd backend && npm audit fix (then test and deploy)"
+fi
 
 if [ "$1" != "--skip-tests" ]; then
   # Unit tests, then the admin panel in a real browser against their own databases and servers (two workers side by side: arthistory_test :3006, arthistory_test_1 :3008).

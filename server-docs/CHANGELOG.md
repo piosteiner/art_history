@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Security: PHP advisories checked; vulnerable Node packages updated; audit on every deploy
+- **What:**
+  - PHP "php2shell" (CVE-2026-109618/-109619, 21 October 2026): checked — no PHP on the server (no binary, packages,
+    /etc/php or nginx fastcgi), so neither this nor the other projects here are affected.
+  - `npm audit fix` (lock files only, same major versions): backend — sanitize-html (XSS bypass, < 2.18.0),
+    markdown-it (quadratic-time DoS, < 15.0.3), body-parser (DoS via compressed body), source-map-js; frontend — vite
+    (Windows-only), fast-uri. Both report 0 vulnerabilities.
+  - `deploy.sh`: `npm audit --omit=dev` after `npm ci` — a warning with the packages and the fix, not a stop.
+  - Privacy statement: session storage `arthistory:reloaded` listed; the CMS's `arthistory-admin:theme` under Editors.
+  - Project documentation: a section "Sicherheitslücken in fremder Software" saved as a draft of chapter 5.
+- **Why:** owner: the PHP flaw of 21/22 October; does the privacy page need updates.
+- **Revert:** revert the commit (the old lock files) and deploy; the privacy page in the CMS history.
+
 ### Data: provenance of Manet's *Im Wintergarten* (Alte Nationalgalerie, A I 550)
 - **What:** (data only; `from-wikidata.js`, `import.js`) new people `eduard-arnhold` (Q105675),
   `ernst-von-mendelssohn-bartholdy` (Q1360879), `robert-von-mendelssohn` (Q24068581), `hugo-oppenheim` (Q21032850), each
