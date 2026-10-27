@@ -268,6 +268,32 @@ function headingCompletions(textarea) {
   };
 }
 
+// A changelog bullet's topic (137): "Neu [Ka" suggests the topics (the textarea's data-topics-url answers [{name, color}],
+// the roadmap's list — fetched once, at the first "[") — each in its colour; picking one writes "Karte]: ". When none
+// matches, the name as typed is offered as a new topic.
+const BULLET_TOPIC = /^\s*(?:[-*•]\s+)?(?:neu|verbessert|behoben|inhalt|technik)\s*\[([^\[\]\n]*)$/i;
+function topicCompletions(textarea) {
+  const url = textarea.dataset.topicsUrl;
+  if (!url) return () => null;
+  let list = null;
+  const load = () => (list ??= fetch(url, { headers: { Accept: 'application/json' } }).then((r) => (r.ok ? r.json() : [])).catch(() => { list = null; return []; }));
+  return async (context) => {
+    const m = context.matchBefore(BULLET_TOPIC);
+    if (!m) return null;
+    const topics = await load();
+    const typed = BULLET_TOPIC.exec(m.text)[1];
+    const from = m.to - typed.length;
+    const words = fold(typed).split(/\s+/).filter(Boolean);
+    const options = topics.filter((t) => words.every((w) => fold(t.name).includes(w)))
+      .map((t) => ({ label: t.name, type: 'text', topicColor: t.color, apply: `${t.name}]: ` }));
+    const name = typed.trim();
+    if (name && !options.length) options.push({ label: name, detail: 'new topic', type: 'text', apply: `${name}]: ` });   // none fits: a new one
+    // "]" or "]:" already after the cursor: replaced too
+    const rest = /^\][ \t]*:?[ \t]*/.exec(context.state.sliceDoc(context.pos, context.pos + 6));
+    return { from, to: context.pos + (rest ? rest[0].length : 0), filter: false, options };
+  };
+}
+
 const LINK_TYPES = ['artist', 'artwork', 'institution', 'person', 'movement', 'place', 'polity', 'event', 'term', 'source'];
 async function entryCompletions(context) {
   const m = context.matchBefore(/\[\[[^\[\]|\n]*$/);
@@ -462,7 +488,8 @@ function enhance(textarea, collab = null) {
         syntaxHighlighting(liveStyle),
         underlines,
         EditorView.lineWrapping,
-        autocompletion({ override: [headingCompletions(textarea), entryCompletions], icons: false }),
+        autocompletion({ override: [topicCompletions(textarea), headingCompletions(textarea), entryCompletions], icons: false,
+          optionClass: (c) => (c.topicColor ? `cm-topic area-${c.topicColor}` : '') }),
         // a page's text (data-upload, 114): images dropped or pasted in are uploaded and embedded as ![[name]]
         ...(textarea.dataset.upload ? [imageHandlers(textarea.dataset.upload)] : []),
         bracketOverSelection,

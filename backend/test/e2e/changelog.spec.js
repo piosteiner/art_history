@@ -239,3 +239,21 @@ test('changelog (137): a bullet\'s topic in brackets — the roadmap\'s list and
   sql("UPDATE roadmap_areas SET name = 'Karten' WHERE name = 'Karte'");
   expect(sql("SELECT area FROM changelog_items WHERE text_md = 'Historische Karten'")).toBe('Karten');
 });
+
+test('changelog (137): "[" after the kind suggests the topics in their colours, Enter writes "Topic]: ", a new name is offered', async ({ userA }) => {
+  sql("INSERT INTO roadmap_areas (name, color) VALUES ('Karte', 'teal'), ('Kartografie', 'red'), ('Suche', 'blue')");
+  await userA.goto('/changelog/new');
+  await userA.locator('.changelog-form .cm-content').click();
+  await userA.keyboard.type('Neu [Ka');
+  const list = userA.locator('.cm-tooltip-autocomplete li');
+  await expect(list).toHaveText(['Karte', 'Kartografie']);                       // filtered as typed; Suche not
+  await expect(list.first()).toHaveClass(/area-teal/);
+  await userA.keyboard.press('Enter');
+  await userA.keyboard.type('Historische Karten');
+  await expect(userA.locator('#cl-items')).toHaveValue('Neu [Karte]: Historische Karten');
+  // a name no topic has: offered as new
+  await userA.keyboard.press('Enter');
+  await userA.keyboard.type('Behoben [Zeitleis');
+  await expect(list).toContainText(['Zeitleis']);
+  await expect(userA.locator('.cm-tooltip-autocomplete')).toContainText('new topic');
+});

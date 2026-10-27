@@ -113,7 +113,7 @@ function entryForm(e, { action, items = '', flash = null, preview = null, isNew 
       <div class="field-pair"><div class="field"><label for="cl-day">Day</label><input id="cl-day" name="day" type="date" value="${e.day}" required></div>
         <div class="field"><label for="cl-title">Title <span class="muted small">(optional)</span></label><input id="cl-title" name="title" value="${e.title || ''}" placeholder="e.g. Patch: Suche"></div></div>
       <div class="field"><label for="cl-items">Bullet points</label>
-        <textarea id="cl-items" name="items" rows="14" class="md" data-preview="/changelog/preview">${items}</textarea>
+        <textarea id="cl-items" name="items" rows="14" class="md" data-preview="/changelog/preview" data-topics-url="/roadmap/topics.json">${items}</textarea>
         <div class="hint">One per line, starting with its kind: <code>Neu:</code> · <code>Verbessert:</code> · <code>Behoben:</code> · <code>Inhalt:</code> · <code>Technik:</code>
           (none = Neu). A topic in brackets after the kind: <code>Neu [Karte]: …</code> — the roadmap's <a href="/roadmap#topics">topics</a>
           and colours; a new one is added there. A line indented by two spaces continues the bullet above. Markdown and <code>[[type/slug]]</code> links work;
@@ -432,6 +432,10 @@ router.get('/roadmap', async (req, res) => {
     <p class="muted small"><a href="/roadmap/history">History of the roadmap →</a></p>` });
 });
 
+// the topics for the bullets' "[" suggestions (editor.js topicCompletions)
+router.get('/roadmap/topics.json', async (req, res) => {
+  res.json((await areaList(adminPool)).map((a) => ({ name: a.name, color: a.color })));
+});
 router.post('/roadmap/areas/:id', async (req, res) => {
   if (!idOk(req.params.id)) return notFoundPage(req, res);
   const name = String(req.body.name || '').trim();

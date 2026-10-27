@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### CMS: "[" suggests the topics in changelog bullets
+- **What:** `src/admin/editor/editor.js` `topicCompletions`: on a line "Neu [" (any kind) the topics are suggested,
+  filtered as typed, each with a dot in its colour (`.cm-topic` in admin.css); Enter writes "Karte]: " (a "]" / "]:"
+  after the cursor is replaced); when nothing matches, the name as typed is offered as a new topic. The list comes from
+  `GET /roadmap/topics.json` (the field's `data-topics-url`), fetched at the first "[". e2e test.
+- **Why:** owner: typing "[Kar" showed no suggestions — needed, like "[[".
+- **Revert:** revert the commit and deploy.
+
 ### Changelog bullets share the roadmap's topics (migration 137)
 - **What:**
   - Migration 137: `changelog_items.area` → `roadmap_areas (name)` ON UPDATE CASCADE / ON DELETE RESTRICT, backfilled

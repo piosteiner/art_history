@@ -578,3 +578,8 @@ button.theme-toggle:hover { color: var(--fg); border-color: var(--accent); }
 .roadmap-jetzt > h2::before { background: var(--st-jetzt); } .roadmap-naechstes > h2::before { background: var(--st-naechstes); }
 .roadmap-spaeter > h2::before { background: var(--st-spaeter); }
 .roadmap-areas td { vertical-align: middle; } .inline-form label { display: inline; font-weight: normal; }
+/* "[" suggestions of a bullet's topic (editor.js topicCompletions): a dot in the topic's colour */
+.cm-tooltip-autocomplete li.cm-topic .cm-completionLabel::before { content: ''; display: inline-block; width: .6rem; height: .6rem;
+  border-radius: 50%; background: var(--area); margin-right: .45rem; vertical-align: .05em; }
+.cm-tooltip-autocomplete li.cm-topic .cm-completionLabel { color: var(--area); font-weight: 600; }
+.cm-tooltip-autocomplete li.cm-topic[aria-selected] .cm-completionLabel { color: inherit; }
