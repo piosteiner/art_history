@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-27
 
+### Names: role "former" (migration 139)
+- **What:** migration 139 widens `names_valid()` (called by the CHECK of every `names` column) by `former`;
+  `src/names.js` ROLES (the CMS's role dropdown and the "text | lang | role" lines follow); site: a former name in the
+  other-names line with a "former" tag (`html.ts` `otherNames`). Data: in `staatliche-museen-zu-berlin`, "Staatliche
+  Museen Preußischer Kulturbesitz" and "Königliche Museen zu Berlin" alternative → former. Unit + e2e tests.
+- **Why:** owner: an institution's earlier name is not an alternative name but a former one.
+- **Revert:** revert the commit; as owner restore `names_valid()` from 052 (without 'former') after turning former
+  names back into alternative ones; `DELETE FROM schema_migrations WHERE name = '139_former_names.sql';`
+
 ### Data: provenance of Friedrich's *Mönch am Meer* (Alte Nationalgalerie, NG 9/85)
 - **What:** (data only; `scripts/from-wikidata.js`, `scripts/import.js`, one SQL insert)
   - New: people `friedrich-wilhelm-iv-von-preussen` (Q57180), `friedrich-wilhelm-iii-von-preussen` (Q37134); institution

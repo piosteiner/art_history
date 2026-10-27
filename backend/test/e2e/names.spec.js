@@ -107,3 +107,20 @@ test('previews of any internal links in one request (GET /v1/previews)', async (
   const bad = await request.get(`${API}/previews?refs=evil/x;drop`, { headers: { Host: 'api.localhost' } });
   expect(bad.status()).toBe(400);
 });
+
+test('a former name (139): chosen as the role in the form, stored and in the API as "former"', async ({ userA, request }) => {
+  await userA.goto('/institutions/new');
+  await userA.fill('#f-name', 'Test Museen Berlin');
+  await userA.fill('#f-slug', 'test-museen-berlin');
+  const rows = userA.locator('.names-row');
+  await rows.nth(0).locator('.n-text').fill('Test Königliche Museen');
+  await rows.nth(0).locator('.n-lang').fill('de');
+  await rows.nth(0).locator('.n-role').selectOption('former');
+  await expect(userA.locator('#f-names')).toHaveValue('Test Königliche Museen | de | former');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/institutions\/test-museen-berlin\?done=created/);
+  const res = await request.get(`${API}/institutions/test-museen-berlin`, { headers: { Host: 'api.localhost' } });
+  const body = await res.json();
+  expect((body.data ?? body).names).toEqual([expect.objectContaining({ text: 'Test Königliche Museen', lang: 'de', role: 'former' })]);
+  sql("DELETE FROM institutions WHERE slug = 'test-museen-berlin'");
+});

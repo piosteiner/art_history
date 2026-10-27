@@ -323,17 +323,17 @@ export function originalLine(e: Nameable) {
 }
 
 /** Translations and other names (not the original or its romanization, shown above), each with its lang. */
-// Own translations in [brackets], official ones marked; when an official translation is shown as the title, the
-// stored title is listed here instead.
+// Own translations in [brackets], official ones marked, former names marked (API 139); when an official translation is
+// shown as the title, the stored title is listed here instead.
 export function otherNames(e: Nameable) {
   const official = officialInstead(e);
-  const rest: Pick<NameEntry, 'text' | 'lang' | 'ruby_html' | 'status'>[] = [
+  const rest: (Pick<NameEntry, 'text' | 'lang' | 'ruby_html' | 'status'> & { role?: NameEntry['role'] })[] = [
     ...(official ? [{ text: e.title!, lang: e.title_lang ?? null, ruby_html: e.title_ruby_html ?? null, status: e.title_status ?? null }] : []),
     ...(e.names ?? []).filter((n) => n.role !== 'original' && n.role !== 'romanization' && n !== official),
   ];
   return rest.length ? html`${rest.map((n, i) => html`${i ? ' · ' : ''}${n.status ? html`<span title="${STATUS_HINT[n.status]}">${
     nameSpan(translated(n.text, n.status), n.lang, n.ruby_html && n.status === 'own' ? `[${n.ruby_html}]` : n.ruby_html)}</span>` : nameSpan(n.text, n.lang, n.ruby_html)}${
-    n.status === 'official' ? html` <span class="tag">official</span>` : ''}`)}` : null;
+    n.status === 'official' ? html` <span class="tag">official</span>` : ''}${n.role === 'former' ? html` <span class="tag" title="A name it had before">former</span>` : ''}`)}` : null;
 }
 
 /** "Official English title" / "Own translation" under an artwork's heading, when the title is a translation (not "common"). */

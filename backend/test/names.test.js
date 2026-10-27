@@ -40,3 +40,9 @@ test('a translation is official, common (the default, not stored) or own — wri
   assert.throws(() => n.linesToNames('X | ja | original, own'), /only a translation/);
   assert.throws(() => n.linesToNames('X | en | translation, mine'), /official, common or own/);
 });
+
+test('a former name (139): its own role, kept through lines ↔ names', () => {
+  const list = n.linesToNames('Königliche Museen zu Berlin | de | former\nSMB');
+  assert.deepEqual(list, [{ text: 'Königliche Museen zu Berlin', lang: 'de', role: 'former' }, { text: 'SMB', role: 'alternative' }]);
+  assert.deepEqual(n.linesToNames(n.namesToLines(list)), list);
+});

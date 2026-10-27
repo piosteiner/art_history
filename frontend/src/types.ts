@@ -151,7 +151,7 @@ export interface PolityLink {
 export interface NameEntry {
   text: string;
   lang: string | null;
-  role: 'original' | 'translation' | 'romanization' | 'alternative';
+  role: 'original' | 'translation' | 'romanization' | 'alternative' | 'former';  // former: a name it had before (API 139)
   ruby_html: string | null; // with furigana, escaped and safe to insert
   reading: string | null;
   /** For a translation (migration 052): official (institution, publisher) · common (in use) · own (the author's); else null. */

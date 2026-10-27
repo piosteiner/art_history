@@ -9,10 +9,11 @@
 // Languages: BCP 47 tags — ja, en, de, zh-Hant; romanizations are the language in Latin script: ja-Latn,
 // zh-Latn-pinyin, ru-Latn. normLang() fixes the case (JA-latn → ja-Latn).
 //
-// Other names (column `names`, jsonb): [{text, lang?, role}], role = original | translation | romanization | alternative.
+// Other names (column `names`, jsonb): [{text, lang?, role}], role = original | translation | romanization | alternative |
+// former (a name the entry had before — a renamed institution, an old place name; 139).
 // In forms one per line: "text | lang | role" — lang and role optional ("Hokusai" alone = an alternative name).
 const GROUP = /\{([^{}|]+)\|([^{}|]+)\}/g;
-const ROLES = ['original', 'translation', 'romanization', 'alternative'];
+const ROLES = ['original', 'translation', 'romanization', 'alternative', 'former'];
 // A translation's standing (migration 052): official (the holding institution's, a publisher's — cite it), common (in
 // use: literature, Wikidata — the default, not stored), own (yours; shown in [brackets] by convention).
 const STATUSES = ['official', 'common', 'own'];
