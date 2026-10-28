@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: Rodin's Gates of Hell with its casts
+- **What:** saved through the admin's save path as pio. "The Gates of Hell" became a group (kind versions, 1880–1917 as a
+  duration, German overview; its size moved to the casts) with nine parts: the eight bronzes numbered as the casts are
+  — 1 Philadelphia (Rodin Museum, Rudier 1926–28), 2 Paris (Musée Rodin, Rudier 1926–28), 3 Tokyo (NMWA, 1930–33),
+  4 Zürich (Kunsthaus, Rudier 1942–47), 5 Stanford (Cantor, Coubertin 1981), 6 Shizuoka (Coubertin 1992), 7 Seoul
+  (Coubertin 1995–98, now Ho-Am Art Museum), 8 Mexico City (Museo Soumaya, year not given) — and the plaster model in
+  the Musée d'Orsay; each with designed 1880–1917, cast date, size, inventory number, museum page, a German line with
+  quotes; no points of their own (shown at their museum: a point would add "created in" the museum's city).
+  Provenance (19 steps): the foundry with its place for every bronze but Mexico City; Mastbaum → Rodin Museum 1929;
+  Matsukata → confiscated by France 1944 → NMWA 1959; Breker's order for the "Führermuseum" 1942 (event) → Bührle 1949
+  → Kunsthaus; Cantor gift 1985 … Created from Wikidata: institutions Musée Rodin, Rodin Museum, National Museum of
+  Western Art, Cantor Arts Center, Shizuoka Prefectural Museum of Art, Museo Soumaya, Ho-Am Art Museum, the foundries
+  Rudier and Coubertin; people Arno Breker (artist), Jules Mastbaum, B. Gerald Cantor. The term "bronze" was created
+  on saving (to complete). Nine sources: the museums' records, the Soumaya's list of all casts, Getty, Wikipedia.
+- **Why:** owner: the Gates of Hell with its casts around the world.
+- **Revert:** admin history of the entries.
+
 ### Texts: further reading under its own heading
 - **What:** in every entry text (`renderMarkdown`, `src/markdown.js`), a heading "Weiterführende Literatur", "Further
   reading" or "Weiterlesen" (any level) starts a section in which `[[source/…]]` is not a footnote but the whole
