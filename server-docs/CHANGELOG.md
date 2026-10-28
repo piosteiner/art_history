@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Site tests: two that failed the GitHub Pages runs
+- **What:** the last three Pages runs failed in `npm test`. (1) 12:48 — the API types check missed `active` (frontend
+  pushed before the backend deploy of 147; fine once it was in). (2) and (3) — "periods: a work's dot …" clicked the
+  first `.tl-dot-link`, which on /periods now lies under another work's circle (Giotto's Lamentation since the
+  Scrovegni works came in): the test now picks a dot that is on top at its centre. "Sources for facts" was flaky:
+  the cite popover could close again under a resting pointer after a late layout shift; the test hovers again and
+  checks the whole popover in one `toPass` block (12/12 repeats green).
+- **Why:** test assumptions about data, not site bugs.
+- **Revert:** `git revert` of this commit (`frontend/tests/site.spec.ts`).
+
 ### Wikidata: an institution's kind is offered (and filled for the existing ones)
 - **What:** the Wikidata comparison never offered an institution's kind — places and people got one, institutions
   only founded, dissolved, place, location, address and website. `institutionKind()` (`src/admin/wikidata.js`) maps

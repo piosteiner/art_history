@@ -1215,11 +1215,17 @@ test('sources for facts: markers by kind, best first; the citations in a popover
   await expect(date.locator('.cite-ref')).toHaveText('LW'); // literature before Wikidata
   await expect(facts.locator('dt', { hasText: 'Medium' }).locator('+ dd .cite-ref')).toHaveCount(0);
   await expect(facts.locator('dt', { hasText: 'Type' }).locator('+ dd .cite-ref')).toHaveText('T');
-  await date.locator('.cite-ref').hover();
   const pop = page.locator('.popover-cite');
-  await expect(pop.locator('.cite-item').first()).toContainText('Busch 1993, S. 45');
-  await expect(pop.locator('.cite-item').first()).toContainText('Das sentimentalische Bild');
-  await expect(pop.locator('.cite-item').nth(1).locator('a')).toHaveAttribute('href', 'https://www.wikidata.org/wiki/Q252485');
+  // a late layout shift (an image loading above) can move the marker away under a resting pointer, which closes the
+  // popover (pointerleave): hover again and check the whole popover in one go
+  await expect(async () => {
+    await page.mouse.move(5, 5);
+    await date.locator('.cite-ref').hover();
+    const first = pop.locator('.cite-item').first();
+    await expect(first).toContainText('Busch 1993, S. 45', { timeout: 2000 });
+    await expect(first).toContainText('Das sentimentalische Bild', { timeout: 500 });
+    await expect(pop.locator('.cite-item').nth(1).locator('a')).toHaveAttribute('href', 'https://www.wikidata.org/wiki/Q252485', { timeout: 500 });
+  }).toPass({ timeout: 15_000 });
   await page.mouse.move(5, 5);
   await expect(pop).toHaveCount(0);
   // keyboard: Tab onto the marker opens it; the popover of a marker is reachable by click too
@@ -2352,7 +2358,17 @@ test('periods: lanes per region, phases, a region hidden, a window lists the wor
 
 test('periods: a work\'s dot shows its preview; clicked again it opens the work in a new tab, the periods stay', async ({ page, context }) => {
   await page.goto('/periods');
-  const dot = page.locator('.tl-dot-link').first();
+  await page.locator('.tl-dot-link').first().waitFor();
+  // a dot that is on top at its centre: works of one year sit on the same spot, and the topmost takes the click
+  // (which one is first changes with the data — 2026-10-28 Giotto's Lamentation came to lie over the first one)
+  const onTop = await page.$$eval('.tl-dot-link', (as) => as.findIndex((a) => {
+    a.scrollIntoView({ block: 'center' });
+    const r = a.getBoundingClientRect();
+    const hit = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
+    return !!hit && a.contains(hit);
+  }));
+  expect(onTop).toBeGreaterThanOrEqual(0);
+  const dot = page.locator('.tl-dot-link').nth(onTop);
   await dot.scrollIntoViewIfNeeded();
   await dot.click();
   const pop = page.locator('.glossary-popover');
@@ -2363,13 +2379,14 @@ test('periods: a work\'s dot shows its preview; clicked again it opens the work 
   await expect(tab).toHaveURL(/\/artworks\//, { timeout: 15_000 });
   await expect(page).toHaveURL(/\/periods/);                               // no navigation here
   // the preview itself opens it too — on another work's dot that is on top at its centre (works of one year overlap)
-  const other = await page.$$eval('.tl-dot-link', (as) => as.findIndex((a, i) => {
-    if (i === 0 || a.getAttribute('href') === as[0].getAttribute('href')) return false;
+  const firstHref = await dot.getAttribute('href');
+  const other = await page.$$eval('.tl-dot-link', (as, firstHref) => as.findIndex((a) => {
+    if (a.getAttribute('href') === firstHref) return false;
     const r = a.getBoundingClientRect();
     const hit = document.elementFromPoint(r.x + r.width / 2, r.y + r.height / 2);
     return !!hit && a.contains(hit);
-  }));
-  expect(other).toBeGreaterThan(0);
+  }), firstHref);
+  expect(other).toBeGreaterThanOrEqual(0);
   await page.locator('.tl-dot-link').nth(other).click();
   await expect(pop).toBeVisible();
   const [tab2] = await Promise.all([context.waitForEvent('page'), pop.locator('.glossary-popover-head').click()]);
