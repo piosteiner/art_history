@@ -181,3 +181,20 @@ test('a person: the Wikidata portrait is offered and saved with the new entry; i
   expect(sql("SELECT entity_type || '/' || entity_id FROM images WHERE person_id IS NOT NULL"))   // generated columns (043)
     .toBe('person/' + sql("SELECT id FROM people WHERE slug = 'hans-wendland-test'"));
 });
+
+test('a similar name: the same name wins over longer ones that contain it ("Renaissance", not "Early Renaissance")', async ({ userA }) => {
+  // Monet's movement on Wikidata is Q102 Impressionism; ours carries another item (as our Renaissance carried "Renaissance
+  // art", Q1133779, for the artists' Q4692), so it is no direct match — only a similar name, beside a longer one
+  const before = sql("SELECT coalesce(wikidata_id, '') FROM movements WHERE slug = 'impressionism'");
+  sql(`INSERT INTO movements (slug, name) VALUES ('impressionism', 'Impressionism') ON CONFLICT (slug) DO NOTHING;
+       UPDATE movements SET wikidata_id = 'Q999102' WHERE slug = 'impressionism';
+       INSERT INTO movements (slug, name) VALUES ('early-impressionism', 'Early Impressionism')`);
+  try {
+    await userA.goto('/artists/claude-monet/wikidata');
+    const r = row(userA, 'Impressionism');
+    await expect(r.locator('label:has(input[value=candidate]) a')).toHaveText('Impressionism');  // A–Z would give "Early …"
+  } finally {
+    sql(`DELETE FROM movements WHERE slug = 'early-impressionism';
+         UPDATE movements SET wikidata_id = nullif('${before}', '') WHERE slug = 'impressionism'`);
+  }
+});

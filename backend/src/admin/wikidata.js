@@ -362,7 +362,9 @@ async function similarEntry(db, label, types) {
   const { rows } = await db.query(`
     SELECT type::text, slug, name, round(word_similarity(f_unaccent($1), f_unaccent(name))::numeric, 2) AS score FROM entity_index
     WHERE type = ANY ($2::entity_type[]) AND word_similarity(f_unaccent($1), f_unaccent(name)) >= 0.6
-    ORDER BY score DESC, name LIMIT 1`, [label, types]);
+    -- word_similarity is 1 for every name that contains the label whole ("Renaissance" in "Early Renaissance"): the
+    -- same name first, then the closer whole name (similarity), then A–Z
+    ORDER BY score DESC, lower(f_unaccent(name)) = lower(f_unaccent($1)) DESC, similarity(f_unaccent($1), f_unaccent(name)) DESC, name LIMIT 1`, [label, types]);
   return rows[0] || null;
 }
 

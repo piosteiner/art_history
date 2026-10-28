@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Admin: a "similar name" suggestion prefers the same name
+- **What:** `similarEntry()` (Wikidata comparison) and the "did you mean" of `src/admin/autocreate.js` ordered ties of
+  `word_similarity` A–Z: every name containing the label whole scores 1, so "Renaissance" (ours with another Q-id) was
+  offered as "Early Renaissance". Ties now: same name first, then `similarity()` (the closer whole name), then A–Z.
+  e2e test (Monet's Q102 with ours on another Q-id beside "Early Impressionism"; fails without the fix).
+- **Why:** owner: Early Renaissance proposed for the artist's movement Renaissance (Q4692).
+- **Revert:** `git revert`.
+
 ### Glossary chains for materials and object types; filters and search follow them (migration 146)
 - **What:** data (owner-approved): new terms poplar, lime, lacquer (urushi), print (sourced: Wikipedia Panel painting,
   Japanese lacquerware, Printmaking); broader terms — wood ← oak, poplar, lime, panel; panel ← oak/poplar/lime panel;

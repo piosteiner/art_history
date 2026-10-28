@@ -40,7 +40,8 @@ async function resolveRefs(db, t, doc, body) {
     if (!exact.length && body[`new.${key}`] !== '1') {
       const { rows } = await db.query(`
         SELECT slug, name FROM entity_index WHERE type = $2::entity_type AND word_similarity(f_unaccent($1), f_unaccent(name)) >= 0.6
-        ORDER BY word_similarity(f_unaccent($1), f_unaccent(name)) DESC LIMIT 1`, [name, type]);
+        ORDER BY word_similarity(f_unaccent($1), f_unaccent(name)) DESC, lower(f_unaccent(name)) = lower(f_unaccent($1)) DESC,
+                 similarity(f_unaccent($1), f_unaccent(name)) DESC, name LIMIT 1`, [name, type]);  // ties: as similarEntry (wikidata.js)
       if (rows.length) {
         out.errors.push(`${key}: no ${type} "${name}" yet — did you mean ${rows[0].name} (${rows[0].slug})? Pick it, or tick "create" below the field.`);
         out.confirm[key] = name;
