@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: the owner's notes with a claim cite their source as a footnote; last unsourced sentences
+- **What:** 19 links in the owner's notes became footnotes with bibliography entries; the owner's words are unchanged
+  (Chestnut Trees — BBC; Fleurs dans une coupe — Guardian; Adam and Eve — Belvedere; Kusama — ArtReview; de Kooning —
+  Guardian; Blaquier-Arrieta, Lasker, Norton Simon — Sotheby's; Irène Cahen d'Anvers — Wikidata; Wendland — British
+  Museum; McNay — McNay; Bauhaus — Britannica; Flakbunker fire — SMB, Wikipedia; Ecce Homo — Kretschmer 2019, p. 92
+  (title "… in der Kunst"); degenerate art — Tages-Anzeiger; Tahiti — NDR). Mishima's note: footnotes from Wikipedia.
+  Pure pointers stay links (Bührle ×5, Mette Gauguin, Maurice Fabre, RKD, "Sammlung online" ×3, Merriam-Webster,
+  Washington Principles, Wikimedia). 15 new sources. Relationship Van Gogh ← Hokusai: cited (letter 676, 8 Sept 1888) and
+  its note corrected — "these waves are claws" are Theo's words, Vincent answers "Hokusai makes you cry out the same
+  thing". Sudden Shower: "Impressions are held by many collections" (no source) replaced by Van Gogh's oil copy
+  (Brooklyn); Amsterdam Sunflowers' fifteen flowers after the London version (National Gallery); Thirty-six Views'
+  landscape sentence cited (Wikipedia, Hokusai).
+- **Why:** owner: descriptions without sources.
+- **Revert:** restore texts from their history in the CMS; delete the citation on relationship 36.
+
 ### Data: sources for the descriptions of artists, movements, people and a place
 - **What:** 18 descriptions with footnotes — artists Hokusai, Gauguin, Hiroshige, Van Gogh; movements Edo period,
   Japonisme, Post-Impressionism, Ukiyo-e; French Polynesia; people Adolph von Liebermann, the Guillemets, Ernst Henke,
