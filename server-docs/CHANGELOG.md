@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: glossary clean-up (materials, object types, categories)
+- **What (owner-approved list):** merged with `merge_entries()` (old addresses redirect): oak wook, oakwood → oak;
+  kinpaku → gold leaf (金箔 as its Japanese name); top color → gouache paint (a mistranslation of Deckfarbe:
+  bodycolour; names bodycolour, Deckfarbe). Renamed with slug: Marbre blanc → white marble, Zeichnung → drawing (object
+  type), Marble Statue → statue. Out of the material lists: "drawing" (Leonardo's Adoration of the Magi; term deleted),
+  "transferred to canvas" (Black Paintings → canvas; term deleted), "fresco" → category technique and the object type
+  of the Camera degli Sposi, Giotto's Lamentation, Masaccio's Trinity. Categories: ten terms technique → iconography
+  (Apotheosis, Arma Christi, Cerberus, Deesis, Nereids, Triton, aureola, caduceus, labrys, ecce homo); byōbu → object
+  type; brocade → material.
+- **Why:** owner: before chaining materials and object types with broader terms (145).
+- **Revert:** from the history of the terms and artworks in the CMS (audit_log); merged terms' rows are in it too.
+
 ### Data: Noh, Kabuki, Bunraku with a play each; Yoroboshi completed
 - **What:** glossary terms (category performing arts) `noh`, `kabuki`, `bunraku` and, as their narrower terms,
   `yoroboshi` (completed: Kanze Motomasa, plot, the two readings よろぼし/よろぼおし, link to Kanzan's screens),
