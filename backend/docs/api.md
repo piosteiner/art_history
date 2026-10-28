@@ -110,9 +110,11 @@ names in any language. A value that is no term yet is shown as it is (no `kind_t
 
 ### Glossary (`/v1/glossary`, type `term`)
 `name` (+ the name fields below), `category` (technique · architecture · material · iconography · style · format ·
-object type · other; filter `?category=`), `definition` (short, plain text), `description_html`, `images`/`image_url`, related
-terms as relationships (`related_term`), and in the detail `used_in: [{type, slug, name}]` — the entries whose texts
-link the term. Lists sort A–Z by `sort_key`.
+object type · group of works · mounting · performing arts · other; filter `?category=`), `definition` (short, plain text),
+`description_html`, `images`/`image_url`, related terms as relationships (`related_term`), and in the detail
+`used_in: [{type, slug, name}]` — the entries whose texts link the term. Broader terms (145): `broader: [{slug, name}]`
+upwards, nearest first (Yoroboshi → Noh → …), and `narrower: [{slug, name, category, definition}]` — the terms
+directly under it. Lists sort A–Z by `sort_key`.
 
 **Links in texts:** every `*_html` may contain `<a href="/glossary/<slug>" class="glossary-link" data-term="<slug>">`
 (class `glossary-link missing` when the term doesn't exist yet). Every detail response has `glossary`: the terms its

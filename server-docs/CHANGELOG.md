@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Glossary: category "performing arts" and broader terms (migration 145)
+- **What:** enum value `performing arts` in `term_category`; `glossary.parent_id` (the broader term, one or none) with
+  index, CHECK and the shared `no_parent_cycle()` trigger. Admin: "Broader term" picker beside the category
+  (`src/content.js` key `parent`, so YAML import/export carry it); API term detail `broader` (recursive CTE, nearest first)
+  and `narrower`; site term pages show the chain (widest first) and "Narrower terms". Docs: api.md, data-model.md.
+  Tests: e2e (form, both directions, loop refused), schema smoke (self, loop), site. The smoke test's "unknown
+  relationship type" example used `married_to`, which exists since 140 — now `no_such_type`.
+- **Why:** owner: theatre (Noh, Kabuki, Bunraku …) is a theme of its own; subcategories decided against in favour of
+  broader terms (as thesauri do).
+- **Revert:** `ALTER TABLE glossary DROP COLUMN parent_id` (the trigger goes with it); an enum value can't be dropped —
+  move its terms to `other`; `git revert` the code.
+
 ### Data: Kanzan's Yoroboshi completed as the pair of screens it is
 - **What:** artwork 102820 (TNM A-10508, "6曲1双" — a pair of six-fold screens; the museum's page shows only the right
   screen): description with footnotes from the TNM page (Inten 1915, the scene, Sankeien's Garyūbai, Important

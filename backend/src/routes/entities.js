@@ -439,8 +439,12 @@ const EXTRAS = {
       SELECT slug, name, kind, range_json(period, period_label) AS period
       FROM polities WHERE parent_id = $1 ORDER BY lower(period) NULLS LAST, ${natural('name')}`, [id])).rows,
   }),
-  // a glossary term: where texts link it ("used in"), from the view glossary_links
+  // a glossary term: where texts link it ("used in"), from the view glossary_links; its broader terms upwards
+  // (Yoroboshi → Noh → …, nearest first) and the terms directly under it (145)
   term: async (id) => ({
+    broader: (await apiPool.query(ancestorsSql('glossary'), [id])).rows,
+    narrower: (await apiPool.query(`
+      SELECT slug, name, category::text AS category, definition FROM glossary t WHERE parent_id = $1 ORDER BY ${sortKey('term', 't')}`, [id])).rows,
     used_in: (await apiPool.query(`
       SELECT e.type::text AS type, e.slug, e.name FROM glossary_links l
       JOIN glossary g ON g.slug = l.term_slug JOIN entity_index e ON (e.type, e.id) = (l.entity_type, l.entity_id)

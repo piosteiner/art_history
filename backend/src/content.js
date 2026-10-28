@@ -42,9 +42,10 @@ const TYPES = [
   { type: 'event', folder: 'events', table: 'events', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period', place: 'ref:place',
     location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
-  // the glossary (migration 027): terms that texts link with [[slug]]; category is a fixed list (enum term_category)
+  // the glossary (migration 027): terms that texts link with [[slug]]; category is a fixed list (enum term_category);
+  // parent = the broader term (145: Yoroboshi → Noh), shown as broader / narrower
   { type: 'term', folder: 'glossary', table: 'glossary', name: 'name', fields: {
-    name: 'name', names: 'names', category: 'text', definition: 'text', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
+    name: 'name', names: 'names', category: 'text', parent: 'parent', definition: 'text', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   // the bibliography (migration 036): cited in texts with [[source/slug|S. 45]] (src/bibliography.js, src/markdown.js)
   { type: 'source', folder: 'bibliography', table: 'bibliography', name: 'name', fields: {
     kind: 'text', name: 'name', subtitle: 'text', names: 'names', authors: 'text[]', editors: 'text[]', compilers: 'text[]',

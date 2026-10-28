@@ -263,7 +263,11 @@ resolves them:
 ## Glossary (migrations 026, 027)
 Table `glossary` (entity type `term`; `entity_table('term')` = glossary): name fields as everywhere, `category`
 (enum `term_category` — a fixed list, extended with `ALTER TYPE … ADD VALUE`), `definition` (≤ 500 characters),
-`description_md`; images (a fourth arm `glossary_id` of the exclusive arc); `related_term` (symmetric). Texts link
+`description_md`; images (a fourth arm `glossary_id` of the exclusive arc); `related_term` (symmetric). Broader terms
+(145): `parent_id` → the wider term (Yoroboshi → Noh), one or none, like places and movements — `no_parent_cycle()` keeps
+chains from looping; a second fixed level of categories was decided against (a term's place in a hierarchy is a
+relation, not a drawer; category `performing arts` for genres, plays and stage things). YAML/admin key `parent`, API
+`broader`/`narrower`. Texts link
 terms with `[[slug]]` / `[[slug|words]]` (a markdown-it inline rule in `src/markdown.js`). The view `glossary_links`
 finds every link with `regexp_matches(…, 'g')` over all Markdown columns (relationship notes count for their subject):
 "used in" and the quality check `broken_glossary_link` read it — computed when asked, so always current.

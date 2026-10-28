@@ -125,6 +125,7 @@ const RULES = {
   artworks_parts_count_check: 'Number of parts: a whole number above 0.',
   artworks_web_url_check: 'Web page: a link starting with https:// (or http://), without spaces.',
   movements_check: 'A movement cannot be its own parent.',
+  glossary_parent_check: 'A term cannot be its own broader term.',
   artists_check: 'Death cannot be before birth.',
   relationships_check: 'An entity cannot be related to itself.',
   artworks_inventory_needs_institution: 'An inventory number belongs to a collection: set the institution (current holder) too, or leave the number empty.',

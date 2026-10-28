@@ -68,7 +68,7 @@ DECLARE
     ['non-existent object id',          $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'visited', 'place', 999999)$q$],
     ['symmetric duplicate B↔A',         $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'contemporary_of', 'artist', entity_id('artist', 'vincent-van-gogh'))$q$],
     ['self relationship',               $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'influenced_by', 'artist', entity_id('artist', 'paul-gauguin'))$q$],
-    ['unknown relationship type',       $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'married_to', 'artist', entity_id('artist', 'vincent-van-gogh'))$q$],
+    ['unknown relationship type',       $q$INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id) VALUES ('artist', entity_id('artist', 'paul-gauguin'), 'no_such_type', 'artist', entity_id('artist', 'vincent-van-gogh'))$q$],
     ['death before birth',              $q$UPDATE artists SET death = year_range(1800) WHERE slug = 'paul-gauguin'$q$],
     ['bad slug',                        $q$INSERT INTO places (slug, name, kind, location) VALUES ('Not A Slug', 'x', 'site', 'POINT(0 0)')$q$],
     ['place without coordinates',       $q$INSERT INTO places (slug, name, kind) VALUES ('nowhere', 'Nowhere', 'site')$q$],
@@ -78,6 +78,28 @@ DECLARE
     ['admin role rewrites history',     $q$UPDATE audit_log SET source = 'x'$q$],
     ['admin role creates a user',       $q$INSERT INTO admin_users (username, password_hash) VALUES ('eve', 'x')$q$],
     ['admin role renames a user',       $q$UPDATE admin_users SET username = 'eve'$q$]
+  ];
+  c text[];
+BEGIN
+  FOREACH c SLICE 1 IN ARRAY cases LOOP
+    BEGIN
+      EXECUTE c[2];
+      RAISE EXCEPTION 'FAIL — accepted: %', c[1];
+    EXCEPTION WHEN OTHERS THEN
+      IF SQLERRM LIKE 'FAIL%' THEN RAISE; END IF;
+      RAISE NOTICE 'ok  rejected %: %', rpad(c[1], 32), SQLERRM;
+    END;
+  END LOOP;
+END $$;
+
+-- Glossary broader terms (145): a chain, never a loop, never itself
+INSERT INTO glossary (slug, name, category) VALUES ('smoke-noh', 'Noh', 'performing arts'), ('smoke-yoroboshi', 'Yoroboshi', 'performing arts');
+UPDATE glossary SET parent_id = (SELECT id FROM glossary WHERE slug = 'smoke-noh') WHERE slug = 'smoke-yoroboshi';
+DO $$
+DECLARE
+  cases text[][] := ARRAY[
+    ['term as its own broader term',    $q$UPDATE glossary SET parent_id = id WHERE slug = 'smoke-noh'$q$],
+    ['broader terms in a loop',         $q$UPDATE glossary SET parent_id = (SELECT id FROM glossary WHERE slug = 'smoke-yoroboshi') WHERE slug = 'smoke-noh'$q$]
   ];
   c text[];
 BEGIN
