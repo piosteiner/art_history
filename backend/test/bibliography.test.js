@@ -57,6 +57,12 @@ test('access dates as the database gives them: a one-day range is that day, a lo
   assert.equal(web('[2026-10-01,2026-11-01)', 'October 2026'), 'N, https://example.org (zuletzt abgerufen am October 2026).');
 });
 
+test('online lexicon entries with their address and access date', () => {
+  assert.equal(plain(full(src({ kind: 'lexicon_entry', name: 'Stallburg', container: 'Wikipedia, die freie Enzyklopädie',
+    url: 'https://de.wikipedia.org/wiki/Stallburg', accessed: '[2026-10-28,2026-10-29)' }))),
+  'Anon., Stallburg, in: Wikipedia, die freie Enzyklopädie, https://de.wikipedia.org/wiki/Stallburg (zuletzt abgerufen am 28.10.2026).');
+});
+
 test('8.1 sigla: surnames and year, u. a., Kat. Ort Jahr, a/b for equal sigla', () => {
   const c = catalogue([
     src({ slug: 'busch', kind: 'book', authors: ['Busch, Werner'], name: 'B', year: '1993' }),

@@ -84,7 +84,8 @@ function full(s) {
     }
     case 'lexicon_entry':
       return finish([esc(authors || T.anon), esc(titleOf(s)), `${T.in} ${it(s.container)}`, cEditors && `${T.ed} ${esc(cEditors)}`,
-        has(s.volumes_total) && `${esc(s.volumes_total)} ${T.vols}`, has(s.volume) && `${T.vol} ${esc(s.volume)}`, esc(imprint(s)), pages(s)]);
+        has(s.volumes_total) && `${esc(s.volumes_total)} ${T.vols}`, has(s.volume) && `${T.vol} ${esc(s.volume)}`, esc(imprint(s)), pages(s),
+        has(s.url) && `${esc(s.url)}${accessed(s)}`]);  // an online lexicon (Wikipedia …) like a web page
     case 'catalogue_entry':
       return finish([esc(authors), has(s.catalogue_number) ? `${T.catno} ${esc(s.catalogue_number)}${has(s.name) ? ` (${esc(titleOf(s))})` : ''}` : esc(titleOf(s)),
         `${T.in} ${it(s.container)}`, compilers && `${T.Comp} ${esc(compilers)}`, has(s.exhibition) && `${T.exh} ${esc(s.exhibition)}`,

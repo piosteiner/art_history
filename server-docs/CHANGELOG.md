@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: sources for the descriptions of institutions; online lexicon entries with their address
+- **What:** 11 institution descriptions with footnotes; 13 new sources (Wikipedia: Bauhaus, Bayerische
+  Staatsgemäldesammlungen, J. R. Czernin, Musée du Louvre, KHM, Stallburg, Otto Kallir, Neue Pinakothek, Friedrich Welz,
+  SPSG; pages: KHM Die Malkunst, SMB Mönch am Meer, Hamburger Kunsthalle HK-5161). Corrected: Neue Pinakothek closed since
+  January 2019 (text: end of 2018); Kallir emigrated to France in 1938 and opened the Galerie St. Etienne in New York in
+  1939; Salzburger Landesgalerie without "Reichsgau" and "1945" (sources: inventory 1942–1944, returns after 1945);
+  "Muséum central des arts" dropped (not in the source); the Berlin palace administration as successor of the Prussian
+  one of 1927. The owner's link notes (Akademie, Albertina, Belvedere, Blaquier-Arrieta) stay as written.
+  Code: `src/bibliography.js` — a lexicon entry with a URL (Wikipedia …) now shows the address and access date like a
+  web page (it showed neither; unit test).
+- **Why:** owner: descriptions without sources (batch 4: institutions).
+- **Revert:** restore descriptions from their history in the CMS; code: `git revert`.
+
 ### Data: sources for the descriptions of the remaining artworks
 - **What:** 15 artwork descriptions with footnotes (the three Bedrooms and the group, the Sunflowers group and three
   versions, the Agricola copy, the Starry Night, the Great Wave, Thirty-six Views — first paragraph only —, Sudden
