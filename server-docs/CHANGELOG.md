@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Artists' active period (migration 147); similar names by whole words; the Venus de' Medici without creator
+- **What:** `artists.active` + `active_label` (as `people.active`): form "Active (when the dates of life are unknown)",
+  YAML, API list/detail, time filter `coalesce(lifespan, active)`, stored list rows requeued; `artist_missing_dates`
+  quiet when it is set (view patched exactly once, as in 123/124); Wikidata import fills it from P1317 / P2031–P2032 when
+  P569/P570 are missing. Site: "active …" as subtitle and in lists, "Active" fact, sorting and the start-map timeline
+  fall back to it. Similar names (Wikidata comparison, "did you mean"): `strict_word_similarity` — whole words only
+  ("Oran" was offered as "Musée de l'Orangerie", "Seville" as "Trouville-sur-Mer"). Data: Venus de' Medici's creator
+  removed (the Uffizi: Cleomenes' signed base and trunk come from another statue, fitted in the 16th century; the
+  museum names no artist), the attribution note explains it; its two creator citations removed. e2e tests (artist
+  active; whole-word similar names, failing without the fix), site test.
+- **Why:** owner: Cleomenes is known only by when he was active; the suggestions for Delacroix's places.
+- **Revert:** `ALTER TABLE artists DROP COLUMN active, DROP COLUMN active_label` and the old check condition; `git revert`;
+  the Venus' creator from its history.
+
 ### Data: Wikidata IDs of Renaissance and Amsterdam
 - **What:** movement Renaissance Q1133779 ("Renaissance art") → Q4692 ("Renaissance", what artists' movement
   statements use), its `kind` citation with it; place Amsterdam Q9899 (the municipality incl. Weesp) → Q727 (the city;

@@ -211,7 +211,15 @@ function fieldsFor(t, e) {
   const date = (key, ...props) => { const v = firstTime(e, ...props); if (v && key in t.fields) f[key] = { kind: 'date', value: v.value, label: v.label }; };
   const ref = (key, type, prop) => { const id = itemIds(e, prop)[0]; if (id && key in t.fields) f[key] = { kind: 'ref', ref: { type, qid: id } }; };
   const text = (key, value) => { if (value && key in t.fields) f[key] = { kind: 'text', value }; };
-  if (t.type === 'artist') { date('birth', 'P569'); date('death', 'P570'); }
+  if (t.type === 'artist') {
+    date('birth', 'P569'); date('death', 'P570');
+    // no dates of life: when active (147) — floruit (P1317), else the work period (P2031/P2032)
+    if (!statements(e, 'P569').length && !statements(e, 'P570').length) {
+      const fl = firstTime(e, 'P1317');
+      const start = fl || firstTime(e, 'P2031'); const end = fl || firstTime(e, 'P2032');
+      if (start) f.active = { kind: 'date', value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: fl ? fl.label || null : null };
+    }
+  }
   if (t.type === 'person') {
     if (itemIds(e, 'P31').includes(HUMAN)) {
       date('birth', 'P569'); date('death', 'P570');
@@ -360,10 +368,12 @@ async function localByName(db, labels) {
 async function similarEntry(db, label, types) {
   if (!label || !types.length) return null;
   const { rows } = await db.query(`
-    SELECT type::text, slug, name, round(word_similarity(f_unaccent($1), f_unaccent(name))::numeric, 2) AS score FROM entity_index
-    WHERE type = ANY ($2::entity_type[]) AND word_similarity(f_unaccent($1), f_unaccent(name)) >= 0.6
-    -- word_similarity is 1 for every name that contains the label whole ("Renaissance" in "Early Renaissance"): the
-    -- same name first, then the closer whole name (similarity), then A–Z
+    SELECT type::text, slug, name, round(strict_word_similarity(f_unaccent($1), f_unaccent(name))::numeric, 2) AS score FROM entity_index
+    WHERE type = ANY ($2::entity_type[]) AND strict_word_similarity(f_unaccent($1), f_unaccent(name)) >= 0.6
+    -- whole words only (strict_word_similarity): word_similarity matched part of a word — "Oran" in "Orangerie" 0.8,
+    -- "Seville" in "Trouville-sur-Mer" 0.63; strict 0.36 and 0.29, while Sevilla/Seville 0.6, Kinkakuji/Kinkaku-ji 0.64.
+    -- A name containing the label whole scores 1 ("Renaissance" in "Early Renaissance"): the same name first, then the
+    -- closer whole name (similarity), then A–Z
     ORDER BY score DESC, lower(f_unaccent(name)) = lower(f_unaccent($1)) DESC, similarity(f_unaccent($1), f_unaccent(name)) DESC, name LIMIT 1`, [label, types]);
   return rows[0] || null;
 }

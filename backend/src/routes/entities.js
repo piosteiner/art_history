@@ -63,10 +63,12 @@ const ROLES = 'person_roles(t.id)';  // patron / owner / depicted, from relation
 // extra list filters (?key=value → SQL with $ placeholder), Markdown columns, default order.
 const ENTITIES = {
   artists: {
-    type: 'artist', table: 'artists', alt: 'alt_names', name: 'name', period: 't.lifespan',
-    list: `t.sort_name, t.given_name, t.family_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death, ${mainImage('artist_id')},
+    type: 'artist', table: 'artists', alt: 'alt_names', name: 'name', period: 'coalesce(t.lifespan, t.active)',  // active: 147
+    list: `t.sort_name, t.given_name, t.family_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
+           range_json(t.active, t.active_label) AS active, ${mainImage('artist_id')},
            ${birthPlace('artist')}, ${countryCols('artist')}`,
     detail: `t.sort_name, t.given_name, t.family_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
+             range_json(t.active, t.active_label) AS active,
              ${allImages('artist_id')}, t.biography_md, ${birthPlace('artist')}, ${countryCols('artist')}`,
     md: ['biography_md'],
     filters: countryFilters('artist'),

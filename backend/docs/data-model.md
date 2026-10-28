@@ -40,7 +40,7 @@ Historical dates are rarely exact, so every date is a **half-open range** plus a
 | 500 BCE | `year_range(-500)` | `500 BCE` |
 | since 1808 (ongoing) | `[1808-01-01,)` — infinite upper bound | `since 1808` |
 
-Open ends are for periods only (relationships, `movements.period`, `people.active`), never for births, deaths,
+Open ends are for periods only (relationships, `movements.period`, `people.active`, `artists.active` (147)), never for births, deaths,
 creation or founding dates. An ongoing period overlaps every later window, which is what "still there" means.
 
 A range says two different things, and the range alone can't tell which (migration 135): *made over that time*

@@ -28,6 +28,7 @@ const TYPES = [
   { type: 'artist', folder: 'artists', table: 'artists', name: 'name', fields: {
     // given/family name (066): sorted by family name; sort_name ("Filed as") overrides
     name: 'name', given_name: 'text', family_name: 'text', sort_name: 'text', names: 'names', birth: 'date', death: 'date',
+    active: 'period',  // when active, where the dates of life are unknown (147)
     biography_md: 'md', wikidata_id: 'text', metadata: 'json', provenance_flag: 'text' } },  // flag: 068, admin only
   // people: everyone relevant who isn't an artist (poets, rulers, monks, sitters …) and groups (families, orders);
   // "patron" is a role from the relationships commissioned / patron of (migration 024)

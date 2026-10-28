@@ -56,6 +56,10 @@ without images. The detail adds `images`, all of them in order (the first = `ima
 `[{url, source_url, license, credit, caption}]` — e.g. caption "Back view" for a sculpture. Show license and credit
 wherever an image is shown.
 
+### Artists: when active
+`active` (147): when the artist was active, for artists whose dates of life are unknown (an ancient sculptor known
+from a signature) — list and detail; `null` otherwise. The time filter uses the lifespan, else `active`.
+
 ### People
 Everyone relevant who isn't an artist, and groups: `kind` (person, family, dynasty, religious order …),
 `occupations` (list), `birth`, `death`, `active` (groups), `description_html`, `birth_place`, `country`, `polities`,

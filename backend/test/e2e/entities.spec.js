@@ -451,3 +451,26 @@ test('a renamed slug: [[links]] in every text follow it; a stale text saved late
   sql(`UPDATE movements SET description_md = convert_from(decode('${before}', 'base64'), 'UTF8') WHERE slug = 'post-impressionism'`);
   sql("DELETE FROM live_docs WHERE entity_type = 'artwork'");
 });
+
+test('an artist known only by when he was active: saved, in the API and the time filter, no missing-dates warning (147)', async ({ userA, request }) => {
+  await userA.goto('/artists/new');
+  await userA.fill('#f-name', 'Test Signing Sculptor');
+  await expect(userA.locator('label[for="f-active"]')).toContainText('Active');
+  await userA.fill('#f-active', 'first half of the 1st century BCE');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/artists\/test-signing-sculptor\?done=created/);
+  try {
+    expect(sql("SELECT active_label || ' ' || lower(active) || ' ' || upper(active) FROM artists WHERE slug = 'test-signing-sculptor'"))
+      .toBe('first half of the 1st century BCE 0100-01-01 BC 0050-01-01 BC');
+    const api = async (path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
+    const a = await api('/artists/test-signing-sculptor');
+    expect(a.active).toMatchObject({ label: 'first half of the 1st century BCE' });
+    expect(a.birth).toBeNull();
+    expect((await api('/artists?from=-80&to=-60&limit=500')).data.map((x) => x.slug)).toContain('test-signing-sculptor');  // the period stands in
+    expect((await api('/artists?from=1800&to=1900&limit=500')).data.map((x) => x.slug)).not.toContain('test-signing-sculptor');
+    expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'artist_missing_dates'
+                AND entity_id = (SELECT id FROM artists WHERE slug = 'test-signing-sculptor')`)).toBe('0');
+  } finally {
+    sql("DELETE FROM artists WHERE slug = 'test-signing-sculptor'");
+  }
+});

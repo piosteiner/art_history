@@ -198,3 +198,20 @@ test('a similar name: the same name wins over longer ones that contain it ("Rena
          UPDATE movements SET wikidata_id = nullif('${before}', '') WHERE slug = 'impressionism'`);
   }
 });
+
+test('a similar name means whole words: "Giverny" is not offered as "Givernyville" (as Oran was as Orangerie)', async ({ userA }) => {
+  // Monet died in Q101 Giverny; ours only a place whose name begins with it, under another item
+  const before = sql("SELECT coalesce(name, '') || '|' || coalesce(wikidata_id, '') FROM places WHERE slug = 'giverny'");
+  sql("INSERT INTO places (slug, name, kind, location) VALUES ('giverny', 'Giverny', 'settlement', 'POINT(1.53 49.07)') ON CONFLICT (slug) DO NOTHING");
+  sql("UPDATE places SET name = 'Givernyville', wikidata_id = 'Q999101' WHERE slug = 'giverny'");
+  try {
+    await userA.goto('/artists/claude-monet/wikidata');
+    const r = row(userA, 'died in');
+    await expect(r).toContainText('Giverny');
+    await expect(r.locator('input[value=candidate]')).toHaveCount(0);   // part of a word is no similar name
+  } finally {
+    const [name, qid] = before.split('|');
+    if (before) sql(`UPDATE places SET name = '${name}', wikidata_id = nullif('${qid}', '') WHERE slug = 'giverny'`);
+    else sql("DELETE FROM places WHERE slug = 'giverny'");
+  }
+});
