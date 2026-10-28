@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: sources for the descriptions of the Contarelli cycle
+- **What:** the descriptions of "Ciclo di san Matteo" and "San Matteo e l'angelo" with 13 footnotes quoting their sources;
+  new sources `smb-der-evangelist-matthaeus-caravaggio` (SMB Gemäldegalerie, Ident. Nr. 365: Berlin 1815, destroyed May
+  1945), `wikipedia-en-contarelli-chapel`, `wikipedia-it-san-matteo-e-langelo-caravaggio-roma` (Baglione 1642 p. 137,
+  Bellori 1672 p. 219, Spezzaferro). Corrected: the rejection for lack of decorum is Bellori's account (the text had
+  Baglione's "irreverent" saint); "presumably burnt" → "presumably destroyed" (the museum's word).
+- **Why:** owner: descriptions without sources.
+- **Revert:** restore both descriptions from their history in the CMS; the sources can stay.
+
 ### Server: request times in the API's nginx log; load history (sysstat)
 - **What:** `/etc/nginx/conf.d/arthistory-timing.conf` — log format `arthistory_timed` = combined + `rt=$request_time
   urt=$upstream_response_time`; the API's `access_log` uses it (`sites-available/arthistory`; copies in
