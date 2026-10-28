@@ -441,7 +441,7 @@ function creatorsRow(e, main, coCreators, marker = '') {
         <select id="cc-type" name="type" hidden><option value="co_creator" data-object-types="artist" selected>co-creator</option></select>
         <div class="row">
           <div class="field"><label for="cc-to">Artist</label>
-            <input id="cc-to" name="to" required placeholder="start typing a name" autocomplete="off" data-lookup-from="cc-type"></div>
+            <input id="cc-to" name="to" required placeholder="start typing a name" autocomplete="off" data-lookup-from="cc-type" data-quick-new="artist"></div>
           <div class="field"><label for="cc-label">Part</label><input id="cc-label" name="label" placeholder="optional, e.g. landscape, figures"></div>
           <div class="field"><label for="cc-cert">Certainty</label><select id="cc-cert" name="certainty">
             ${['attested', 'probable', 'possible', 'disputed'].map((c) => html`<option>${c}</option>`)}</select></div>
@@ -627,7 +627,7 @@ router.post('/:plural/:slug/relationships', async (req, res) => {
   if (!e) return notFoundPage(req, res);
   try {
     await withTx(req.user, async (db) => {
-      const p = await relFromForm(db, req.body, { type: t.type, id: e.id }, {}, { reverse: true });
+      const p = await relFromForm(db, req.body, { type: t.type, id: e.id }, {}, { reverse: true, userId: req.user.id });
       const { rows } = await db.query(`INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period,
         period_label, label, certainty, notes_md, metadata) VALUES ($1, $2, $3, $4, $5, $6::daterange, $7, $8, $9, $10, $11::jsonb) RETURNING id`, [...p]);
       await citations.syncText(db, { relationship: rows[0].id }, p.sources);

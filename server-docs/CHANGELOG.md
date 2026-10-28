@@ -4,6 +4,36 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Relationships: targets added on the fly, like provenance owners (migration 149)
+- **What:** the target picker of the relationship form (and of "+ Add co-creator") offers "+ New artist / person /
+  institution / movement / event “…”" for the name as typed — only the types the chosen relationship allows
+  (`editor/autocomplete.js` `data-quick-new`, as in provenance steps). The value `new:<type>:<name>` is created in the
+  relationship's transaction after its checks (`relFromForm` in `src/admin/core.js`; a refused relationship creates
+  nothing; an exact name of that type is taken instead), flagged in `auto_created` from the entry the form is on.
+  `quickCreate()` moved from `src/admin/provenance.js` to `src/admin/autocreate.js`, shared by both (provenance
+  unchanged: artist, person, institution). Places and polities are not offered (they need their geography: the place
+  finder). Migration 149: `auto_created.via` also 'relationship'; the `auto_created` check in `quality_issues_live` is
+  "error" for both. e2e `quick-relationship.spec.js`.
+- **Why:** owner: the quick add of the provenance was wanted for relationships too.
+- **Revert:** revert the commit and deploy; as owner restore the CASE of 142 (`WHEN ac.via = 'provenance'`) in
+  `quality_issues_live`, `UPDATE auto_created SET via = NULL WHERE via = 'relationship';`, the check back to
+  `CHECK (via IN ('provenance'))`, `DELETE FROM schema_migrations WHERE name = '149_auto_created_via_relationship.sql';`
+
+### Data: Flakbunker Friedrichshain, Lorenzetti's frescoes in the Palazzo Pubblico, Ambrogio and Pietro Lorenzetti
+- **What:** saved through the admin's save path as pio (`saveEntity`, citations, relationships — in the history).
+  Event "Gemäldebrand im Flakbunker Berlin-Friedrichshain": German text with 20 footnotes, 5–18 May 1945 (was 6 May),
+  Berlin with the control tower's position (was Germany), concerns the Caravaggio, the Gemäldegalerie and the
+  Bode-Museum; sources Dehnel 2021 (Predella 50), SMB press release 2012, Wikipedia "Flakturm"; the Wikidata
+  citations of the old date and place removed. Artwork "Allegoria ed effetti del Buono e del Cattivo Governo": one
+  entry for the whole room (not a cycle: one commission, painted in one go 1338–39, not separable), kind fresco,
+  dates as a duration (label "c. 1337" removed), German description, four wall images, a caption for the room photo;
+  institution Palazzo Pubblico: kind, 1297–1310, Siena, position, address, description, image; artist Ambrogio
+  Lorenzetti: death after his will of 9 August 1348 (Wikidata's 9 June was wrong), active 1319–1348, biography,
+  relationships; artist Pietro Lorenzetti from Wikidata. Sources Rubinstein 1958, Skinner 1986, Becchis 2005 (DBI),
+  Wikipedia (it, en), Finestre sull'Arte 2022.
+- **Why:** owner: improve the Flakbunker entry; complete the entries of the place and the wall paintings.
+- **Revert:** admin history of the entries.
+
 ### Data: Unkei's works with their temples; five works by Hashimoto Gahō
 - **What:** from Wikidata (`scripts/from-wikidata.js`): institutions Tōdai-ji, Kōfuku-ji, Enjō-ji, Ganjōju-in, Kongōbu-ji,
   Tokyo Fuji Art Museum, Philadelphia Museum of Art (places Nara, Izunokuni, Hachiōji created); artworks Dainichi Nyorai

@@ -10,6 +10,7 @@ const { wordDiff, isLongText } = require('./textdiff');
 const drafts = require('./drafts');
 const collab = require('./collab');
 const { fieldLabel, HINTS } = require('./forms');
+const autocreate = require('./autocreate');
 
 const PAGE = 50;
 const an = (word) => `${/^[aeiou]/.test(word) ? 'an' : 'a'} ${word}`;
@@ -316,15 +317,23 @@ async function allEntities(db) {
   return rows;
 }
 
+// The targets a relationship can create on the fly ("+ New person …" in the picker, data-quick-new): the types that
+// need nothing but a name — places and polities need their geography (the place finder), artworks more than a title
+const REL_QUICK_TYPES = ['artist', 'person', 'institution', 'movement', 'event'];
+
 // Form body → validated params for INSERT/UPDATE relationships. Throws UserError.
 // `entity` is the page the form is on; with a reverse ("~") type it becomes the object and the target the subject.
-async function relFromForm(db, body, entity, keepMetadata = {}, { reverse = false } = {}) {
+// The target "new:person:Name" (149) creates that entry in the caller's transaction — after the type checks, so a
+// refused relationship creates nothing — flagged as auto-created from `entity` by `userId`.
+async function relFromForm(db, body, entity, keepMetadata = {}, { reverse = false, userId = null } = {}) {
   let type = String(body.type || '');
   const types = await relationshipTypes(db, entity.type, { reverse });
   let rt = types.find((x) => x.code === type);
   if (!rt) throw new UserError(`"${type}" is not a relationship type for ${an(entity.type)}.`);
-  const m = /^([a-z]+)\/([a-z0-9-]+)$/.exec(String(body.to || '').trim());
-  if (!m) throw new UserError('Target must look like place/paris — pick one from the suggestions.');
+  const to = String(body.to || '').trim();
+  const quick = /^new:([a-z]+):(.+)$/s.exec(to);
+  const m = quick ? [to, quick[1], null] : /^([a-z]+)\/([a-z0-9-]+)$/.exec(to);
+  if (!m) throw new UserError('Target must look like place/paris — pick one from the suggestions (or "+ New …" for a name not there yet).');
   // one choice in the picker, several types (pickerOptions): the one for this kind of target — "depicts" a person is
   // depicts_person, a place depicts
   if (!rt.object_types.includes(m[1])) {
@@ -333,13 +342,20 @@ async function relFromForm(db, body, entity, keepMetadata = {}, { reverse = fals
   }
   const allowed = [...new Set(types.filter((x) => x.reverse === rt.reverse && x.label === rt.label).flatMap((x) => x.object_types))];
   if (!rt.object_types.includes(m[1])) throw new UserError(`"${rt.label}" needs ${allowed.map(an).join(' or ')} as target, not ${an(m[1])}.`);
-  const targetId = (await db.query('SELECT entity_id($1, $2) AS id', [m[1], m[2]])).rows[0].id;
-  if (targetId === null) throw new UserError(`${m[0]} does not exist.`);
+  let period = null;
+  try { period = parseFuzzyDate(String(body.period || '').trim() || null, { openEnd: true }); } catch (err) { throw new UserError(`Period: ${err.message}`); }
+  let targetId;
+  if (quick) {
+    try {
+      targetId = (await autocreate.quickCreate(db, to, { types: REL_QUICK_TYPES, from: { type: entity.type, id: entity.id }, userId, via: 'relationship' })).id;
+    } catch (err) { throw err instanceof autocreate.QuickError ? new UserError(`Target: ${err.message}`) : err; }
+  } else {
+    targetId = (await db.query('SELECT entity_id($1, $2) AS id', [m[1], m[2]])).rows[0].id;
+    if (targetId === null) throw new UserError(`${m[0]} does not exist.`);
+  }
   const [subject, code, objectType, objectId] = rt.reverse
     ? [{ type: m[1], id: targetId }, type.slice(1), entity.type, entity.id]
     : [entity, type, m[1], targetId];
-  let period = null;
-  try { period = parseFuzzyDate(String(body.period || '').trim() || null, { openEnd: true }); } catch (err) { throw new UserError(`Period: ${err.message}`); }
   const opt = (k) => String(body[k] || '').replace(/\r\n/g, '\n').trim() || null;
   const sources = String(body.sources || '').split('\n').map((s) => s.trim()).filter(Boolean);
   const { sources: _old, ...rest } = keepMetadata;
@@ -381,7 +397,7 @@ function relForm({ action, types, entities, rel = {}, submit, entityType = 'enti
           return !group.length ? '' : types.some((t) => t.reverse) ? html`<optgroup label="${rev ? `Towards this ${entityType}` : `From this ${entityType}`}">${options}</optgroup>` : options;
         })}</select></div>
       <div class="field"><label for="r-to">Target</label>
-        <input id="r-to" name="to" value="${v('to')}" list="r-to-list" required placeholder="start typing a name (typos are fine)" autocomplete="off" data-lookup-from="r-type">
+        <input id="r-to" name="to" value="${v('to')}" list="r-to-list" required placeholder="start typing a name (typos are fine)" autocomplete="off" data-lookup-from="r-type" data-quick-new="${REL_QUICK_TYPES.join(',')}">
         <datalist id="r-to-list">${entities.map((e) => html`<option value="${e.ref}">${e.name}</option>`)}</datalist></div>
     </div>
     <div class="row">

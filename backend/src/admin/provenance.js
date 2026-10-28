@@ -78,24 +78,15 @@ function lastDay(range) {
   return { from: m[1], day: end.toISOString().slice(0, 10) };
 }
 
-// "new:person:Name" from the owner pickers' "+ New person …" (editor/autocomplete.js data-quick-new): an entry with
-// just that name, created in the step's own transaction (a refused step creates nothing) and flagged as auto-created —
-// "to complete", high priority on the Quality page. An entry of that type already called exactly so is taken instead.
-// → { type, id } | null when the value isn't such a request
-const QUICK = /^new:(artist|person|institution):(.+)$/s;
+// "new:person:Name" from the owner pickers' "+ New person …": created with the step, flagged from the artwork
+// (autocreate.quickCreate, via 'provenance'). → { type, id } | null when the value isn't such a request
 async function quickCreate(db, value, ctx) {
-  const m = QUICK.exec(value);
-  if (!m) return null;
-  const [, type, raw] = m;
-  const name = raw.replace(/\s+/g, ' ').trim().slice(0, 200);
-  if (!name) throw new ProvenanceError('A new entry needs a name.');
-  const t = BY_TYPE[type];
-  const same = (await db.query(`SELECT id FROM ${t.table} WHERE lower(f_unaccent(${t.name})) = lower(f_unaccent($1)) LIMIT 2`, [name])).rows;
-  if (same.length === 1) return { type, id: same[0].id };
-  const [made] = [{ key: 'owner', type, name }];
-  await autocreate.create(db, [made]);
-  await autocreate.flag(db, type, made.id, ctx.artworkId ? { type: 'artwork', id: ctx.artworkId } : null, ctx.userId, 'provenance');
-  return { type, id: made.id };
+  try {
+    return await autocreate.quickCreate(db, value, { types: CO_TYPES, from: ctx.artworkId ? { type: 'artwork', id: ctx.artworkId } : null,
+      userId: ctx.userId, via: 'provenance' });
+  } catch (err) {
+    throw err instanceof autocreate.QuickError ? new ProvenanceError(err.message) : err;
+  }
 }
 
 // Form body → column values (COLS order). Owner "type/slug" and place slug are looked up; throws ProvenanceError.

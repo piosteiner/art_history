@@ -87,7 +87,32 @@ async function create(db, creates) {
   return slugs;
 }
 
-// via: 'provenance' for an owner added in a provenance step — a high-priority finding (142)
+// "new:person:Name" from a picker's "+ New person …" (editor/autocomplete.js data-quick-new): an entry with just that
+// name, created in the caller's transaction (a refused save creates nothing) and flagged as auto-created from `from`
+// (the entry the form is on) — "to complete", high priority on the Quality page (142, 149). An entry of that type
+// already called exactly so is taken instead. Used by the owners of provenance steps (via 'provenance') and the
+// targets of relationships (via 'relationship').
+// → { type, id } | null when the value isn't such a request; throws QuickError (no name, a type not allowed here)
+class QuickError extends Error {}
+const QUICK = /^new:([a-z]+):(.+)$/s;
+async function quickCreate(db, value, { types, from = null, userId = null, via }) {
+  const m = QUICK.exec(String(value || ''));
+  if (!m) return null;
+  const [, type, raw] = m;
+  if (!types.includes(type) || !BY_TYPE[type]) throw new QuickError(`A new ${type} can't be added here.`);
+  const name = raw.replace(/\s+/g, ' ').trim().slice(0, 200);
+  if (!name) throw new QuickError('A new entry needs a name.');
+  const t = BY_TYPE[type];
+  const same = (await db.query(`SELECT id FROM ${t.table} WHERE lower(f_unaccent(${t.name})) = lower(f_unaccent($1)) LIMIT 2`, [name])).rows;
+  if (same.length === 1) return { type, id: same[0].id };
+  const made = { key: 'quick', type, name };
+  await create(db, [made]);
+  await flag(db, type, made.id, from, userId, via);
+  return { type, id: made.id };
+}
+
+// via: 'provenance' for an owner added in a provenance step, 'relationship' for a relationship's target — both a
+// high-priority finding (142, 149)
 async function flag(db, type, id, from, userId, via = null) {
   await db.query(`INSERT INTO auto_created (entity_type, entity_id, created_from_type, created_from_id, created_by, via)
     VALUES ($1, $2, $3, $4, $5, $6) ON CONFLICT DO NOTHING`, [type, id, from ? from.type : null, from ? from.id : null, userId || null, via]);
@@ -108,4 +133,4 @@ async function flagOf(db, type, id) {
   return { created_at: r.created_at, from: r.from_slug ? { type: r.from_type, slug: r.from_slug, name: r.from_name } : null };
 }
 
-module.exports = { AUTO_TYPES, resolveRefs, create, flag, unflag, flagOf, slugify, freeSlug };
+module.exports = { AUTO_TYPES, resolveRefs, create, flag, unflag, flagOf, slugify, freeSlug, quickCreate, QuickError };

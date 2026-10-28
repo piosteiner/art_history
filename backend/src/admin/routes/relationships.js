@@ -44,7 +44,7 @@ router.post('/relationships/:id', async (req, res) => {
   if (!found) return notFoundPage(req, res);
   try {
     await withTx(req.user, async (db) => {
-      const p = await relFromForm(db, req.body, found.subject, found.metadata);
+      const p = await relFromForm(db, req.body, found.subject, found.metadata, { userId: req.user.id });
       await db.query(`UPDATE relationships SET relationship_type = $3, object_type = $4, object_id = $5, period = $6::daterange,
         period_label = $7, label = $8, certainty = $9, notes_md = $10, metadata = $11::jsonb
         WHERE id = $12 AND subject_type = $1 AND subject_id = $2`, [...p, found.id]);
