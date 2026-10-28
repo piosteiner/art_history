@@ -51,6 +51,12 @@ test('9.5 internet and video, 9.6 archival sources', () => {
   'Brief von J.E. Wolfensberger an Wilhelm Barth, 30.09.1913, Staatsarchiv Basel, Archiv des Basler Kunstvereins, PA888 H 2.1 (1).');
 });
 
+test('access dates as the database gives them: a one-day range is that day, a longer one its label', () => {
+  const web = (accessed, accessed_label) => plain(full(src({ kind: 'web', name: 'N', url: 'https://example.org', accessed, accessed_label })));
+  assert.equal(web('[2026-10-28,2026-10-29)', '28 October 2026'), 'N, https://example.org (zuletzt abgerufen am 28.10.2026).');
+  assert.equal(web('[2026-10-01,2026-11-01)', 'October 2026'), 'N, https://example.org (zuletzt abgerufen am October 2026).');
+});
+
 test('8.1 sigla: surnames and year, u. a., Kat. Ort Jahr, a/b for equal sigla', () => {
   const c = catalogue([
     src({ slug: 'busch', kind: 'book', authors: ['Busch, Werner'], name: 'B', year: '1993' }),

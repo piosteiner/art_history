@@ -48,7 +48,14 @@ function dateDe(d) {  // '2020-04-24' → 24.4.2020 / 24 April 2020
   if (LANG === 'de') return `${Number(m[3])}.${Number(m[2])}.${m[1]}`;
   return new Date(Date.UTC(+m[1], +m[2] - 1, +m[3])).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
 }
-const accessed = (s) => (has(s.accessed) ? ` (${T.accessed} ${dateDe(s.accessed)})` : '');
+// accessed / uploaded are dateranges ('[2026-10-28,2026-10-29)' from the database): one day → that day, else the label
+function dayOf(range, label) {
+  const m = /^\[(\d{4}-\d{2}-\d{2}),(\d{4}-\d{2}-\d{2})\)$/.exec(String(range || ''));
+  if (!m) return dateDe(range);
+  const next = new Date(`${m[1]}T00:00:00Z`); next.setUTCDate(next.getUTCDate() + 1);
+  return next.toISOString().slice(0, 10) === m[2] ? dateDe(m[1]) : (has(label) ? label : `${dateDe(m[1])}–${dateDe(m[2])}`);
+}
+const accessed = (s) => (has(s.accessed) ? ` (${T.accessed} ${dayOf(s.accessed, s.accessed_label)})` : '');
 const finish = (parts) => {
   const text = parts.filter((x) => typeof x === 'string' && x.trim()).join(', ').replace(/\s+/g, ' ').trim();
   return /[.!?]$/.test(text.replace(/<[^>]+>/g, '')) ? text : `${text}.`;
@@ -89,7 +96,7 @@ function full(s) {
     case 'video':
       return finish([esc(authors), it(titleOf(s)), has(s.container) && esc(s.container), has(s.place) && esc(s.place),
         has(s.date_text) ? esc(s.date_text) : has(s.year) && esc(s.year),
-        has(s.url) && `${esc(s.url)}${has(s.uploader) || has(s.uploaded) ? ` (${T.upload}: ${esc([s.uploader, has(s.uploaded) ? dateDe(s.uploaded) : ''].filter(has).join(', '))})` : ''}${accessed(s)}`]);
+        has(s.url) && `${esc(s.url)}${has(s.uploader) || has(s.uploaded) ? ` (${T.upload}: ${esc([s.uploader, has(s.uploaded) ? dayOf(s.uploaded, s.uploaded_label) : ''].filter(has).join(', '))})` : ''}${accessed(s)}`]);
     case 'archival':
       return finish([esc(titleOf(s)), has(s.date_text) && esc(s.date_text), has(s.archive) && esc(s.archive), has(s.shelfmark) && esc(s.shelfmark)]);
     default:  // book, other

@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: sources for the descriptions of the Prado's works; access dates in footnote lists
+- **What:** 21 artwork descriptions (Prado works, the Black Paintings, the pair of the Second and Third of May) with
+  footnotes quoting their sources; 20 new sources `prado-…`, one per catalogue page (read in the Internet Archive — the
+  Prado's site refuses this server; the copy's date is in each source's description), and `wikipedia-en-las-meninas`,
+  `wikipedia-en-apollo-in-the-forge-of-vulcan`, `wikipedia-es-la-maja-desnuda`. Corrected after the Prado: the
+  Inquisition claimed the Majas in November 1814 (text: called Goya to account in 1815); the Second of May's place is
+  disputed (text: Puerta del Sol); Titian's Charles V had no immediate followers (text: model for generations); the
+  Bacchus crowns a young man with ivy (text: a soldier); Pallas contends with Arachne, and the "royal" tapestry factory
+  dropped (Hilanderas); the 1814 pair painted most likely after Ferdinand VII's return (text: after the French had left
+  Madrid); the Nobleman's likely identification (Juan de Silva) added. Saturn's video link kept. A full stop before a
+  footnote's closing quote removed (the footnote adds its own), also in the Contarelli texts.
+  Code: `src/bibliography.js` `dayOf()` — `accessed`/`uploaded` are dateranges and showed raw ("[2026-10-28,2026-10-29)")
+  in every footnote list; now the day, or the label for a longer range (unit test).
+- **Why:** owner: descriptions without sources (batch 2: the Prado).
+- **Revert:** restore descriptions from their history in the CMS; the sources can stay. Code: `git revert`.
+
 ### Data: sources for the descriptions of the Contarelli cycle
 - **What:** the descriptions of "Ciclo di san Matteo" and "San Matteo e l'angelo" with 13 footnotes quoting their sources;
   new sources `smb-der-evangelist-matthaeus-caravaggio` (SMB Gemäldegalerie, Ident. Nr. 365: Berlin 1815, destroyed May
