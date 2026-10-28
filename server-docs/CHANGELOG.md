@@ -23,6 +23,21 @@ Format: date — what — why — how to revert.
   names no longer "translations"; Bührle's "Sammlung Emil Bührle" German, not Dutch; an address typo.
 - **Test:** `test/wikidata-time.test.js` — the kind from P31, the order of the table.
 
+### Data: the Chapel of Our Lady Outside the Walls, Leuven
+- **What:** saved through the admin's save path as pio. Institution (269): kind chapel, founded 1364 by the Great
+  Guild of Crossbowmen, demolished 1798, Leuven with its spot on the Tiensestraat (formerly Hollestraat), other names
+  (nl, fr; es as translation), German description with footnotes: founding, the guild's customs and the knights'
+  confraternity, Rogier van der Weyden's Descent from the Cross (the crossbows in its spandrels, the Edelheere copy of
+  1443, the exchange c. 1548 for Coxcie's copy and an organ through Mary of Hungary), Jan II Borman's St George
+  altarpiece of 1493 (Art & History Museum, Brussels), the demolition. Image: the plate in Van Even, *Louvain
+  monumental* (1860), Tab. 61 (public domain, British Library scan) — "bâtie en 1373". Provenance of the Descent:
+  the chapel's step a commission, before 1443 to c. 1548 (so "commissioned" is derived); Mary of Hungary's step an
+  exchange, c. 1548, for "a copy by Michiel Coxcie and a new organ". Four sources: Dutch Wikipedia, English Wikipedia
+  (Descent from the Cross), Van Even 1860, Art & History Museum (St George altarpiece). Conflicts noted in the text:
+  the 500 florins only in the Dutch Wikipedia; its date 1555 for the sale not used (in Binche by 1549, Prado).
+- **Why:** owner: complete the chapel entry.
+- **Revert:** admin history of the institution, the artwork's provenance and the sources.
+
 ### Fix: artists and people from Wikidata got no given and family name (migration 150)
 - **What:** `fill_person_names()` (066/109) leaves East Asian names unsplit, and `names_east_asian()` counted any
   Japanese, Chinese or Korean other name — also the translations the Wikidata import adds (ポール・デルヴォー). So
@@ -71,6 +86,15 @@ Format: date — what — why — how to revert.
 - **Why:** owner: the Gates of Hell with its casts around the world.
 - **Revert:** admin history of the entries.
 
+### Data: the Starry Night — the astronomical dating of 2026
+- **What:** saved through the admin's save path as pio. Source `guardian-2026-starry-night-dating` (The Guardian,
+  22 Oct 2026, amended 26 Oct); two German paragraphs added to the Starry Night's description: Kim's team (Kyung Hee
+  University) dates the sky to about 22 July 1889 instead of the usual June date (letter to Theo of c. 18 June), not
+  conclusive by their own account; the Van Gogh Museum keeps June (the drawing sent on 2 July, the breakdown around
+  22 July). Each claim cited with the article's words.
+- **Why:** owner: add the article in a few lines in German, in the owner's style.
+- **Revert:** admin history of the artwork and the source.
+
 ### Texts: further reading under its own heading
 - **What:** in every entry text (`renderMarkdown`, `src/markdown.js`), a heading "Weiterführende Literatur", "Further
   reading" or "Weiterlesen" (any level) starts a section in which `[[source/…]]` is not a footnote but the whole
@@ -83,6 +107,13 @@ Format: date — what — why — how to revert.
   Unit test in `test/bibliography.test.js`.
 - **Why:** owner: many entries will point to reading not (yet) read — worth recording, but not a source of a statement.
 - **Revert:** revert the commit and deploy (texts using the heading then show their citations as footnotes again).
+
+### Data: Foxwell 2015 as further reading on the Kangakai
+- **What:** saved as pio. Source `foxwell-2015` (Chelsea Foxwell, *Making Modern Japanese-Style Painting: Kano Hōgai
+  and the Search for Images*, Chicago 2015); first as a closing sentence on the Kangakai, then — with the feature
+  above — as a section "Weiterführende Literatur" listing the book.
+- **Why:** owner: record reading not (yet) read; it led to the further-reading feature.
+- **Revert:** admin history of the institution and the source.
 
 ### Data: the Kangakai researched and completed
 - **What:** saved through the admin's save path as pio. Institution Kangakai: kind art society, founded February 1884,
