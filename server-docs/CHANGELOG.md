@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: Unkei's works with their temples; five works by Hashimoto Gahō
+- **What:** from Wikidata (`scripts/from-wikidata.js`): institutions Tōdai-ji, Kōfuku-ji, Enjō-ji, Ganjōju-in, Kongōbu-ji,
+  Tokyo Fuji Art Museum, Philadelphia Museum of Art (places Nara, Izunokuni, Hachiōji created); artworks Dainichi Nyorai
+  (Enjō-ji), Kongō Rikishi of the Great South Gate (Tōdai-ji), Amida Triad, Fudō and Bishamonten (Ganjōju-in), Mujaku
+  and Seshin (a pair with its two statues as parts; Unkei as head of the workshop), Eight Youths Attending Fudō Myōō
+  (Kōyasan Reihōkan). Then collections, English titles with the Japanese originals, dates after the sources (Niō
+  "1203", not Wikidata's 15 Nov; Dainichi 1175–1176) and descriptions with footnotes (TNM 2017, Kobayashi 1954).
+  Hashimoto Gahō: Mount Fuji, Scenery in the Four Seasons, Landscape (screens), Cherry Blossoms and Autumn Leaves
+  (Tokyo Fuji Art Museum) and Landscape (Philadelphia, 2016-194-12a), each field cited to its museum page; the Fuji
+  museum's own contradiction (diptych of scrolls vs. "paired screens") noted. Citations added by script today got
+  their cited value (`field_value()`) — they showed as outdated without it.
+- **Why:** owner: Unkei's works; the five Gahō works.
+- **Revert:** delete the new entries (history in the CMS).
+
 ### Search: sources after every other entry; Unkei completed with his sons and Kaikei
 - **What:** `/v1/search/text` orders `e.type = 'source'` last, the site's header search the same (`frontend/src/search.ts`);
   e2e test (a source whose name matches better still comes after the artist; fails without the fix). Data: Unkei —
