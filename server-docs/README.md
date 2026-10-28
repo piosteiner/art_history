@@ -26,6 +26,14 @@ arguments clears **every** database's statistics; for one: `pg_stat_statements_r
 Slow-query log: statements over 1 s and lock waits (`conf.d/arthistory.conf`) in `/var/log/postgresql/`.
 **`scripts/slow-queries.sh`** (sudo, read-only; `DAYS=1`) sums both up: statements over 1 s per day, the most frequent
 ones, and the pg_stat_statements top lists.
+**Request times** (2026-10-28): the API's nginx log (`/var/log/nginx/arthistory-api.access.log`, format
+`arthistory_timed` in `/etc/nginx/conf.d/arthistory-timing.conf`, copy in `config/nginx/`) ends each line with
+`rt=` (the whole request, s) and `urt=` (the app's part). Requests over 2 s in a time window, e.g. the nightly site build:
+`sudo grep '28/Oct/2026:03:[23]' /var/log/nginx/arthistory-api.access.log | awk '{for (i = NF-1; i <= NF; i++) if ($i ~ /^rt=/ && substr($i, 4) + 0 > 2) print}'`
+— `urt` near `rt`: the app was slow; `rt` much larger: the network or the client.
+**Load history** (sysstat, enabled 2026-10-28: `ENABLED="true"` in `/etc/default/sysstat`, `HISTORY=28` days in
+`/etc/sysstat/sysstat`; collected every 10 min by `/etc/cron.d/sysstat`): `sar -u` (CPU) · `sar -q` (load, run queue) ·
+`sar -r` (memory) · `sar -d` (disks) for today, `-f /var/log/sysstat/saDD -s 03:00:00 -e 04:00:00` for another day.
 **Performance budgets** (2026-10-21): database `scale_test` = the latest backup with every entry cloned nine times
 (`cd backend && npm run perf:data`, ≈ 10 min, replaces only scale_test), then `npm run perf` — migrates scale_test, a server of the checkout on
 :3015 against it, the times of the heavy requests, 13 admin pages (logged in as a user `perf` made per run), whole lists, one change through the worker and the global part

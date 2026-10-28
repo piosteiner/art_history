@@ -5,7 +5,7 @@ server {
     server_name api.arthistory.piogino.ch;
 
     client_max_body_size 1M;
-    access_log /var/log/nginx/arthistory-api.access.log;
+    access_log /var/log/nginx/arthistory-api.access.log arthistory_timed;
     error_log  /var/log/nginx/arthistory-api.error.log warn;
 
     # Compress the JSON (gzip is on globally, but only for text/html and not for proxied responses): the artworks
