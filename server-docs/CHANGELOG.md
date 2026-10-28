@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Fix: endless admin lists showed an entry twice
+- **What:** the endless lists (`src/admin/editor/infinite.js`) append the next page, and pages are cut by position
+  (OFFSET). An entry added above while a list was open shifted the next page down by one, so the last row shown came
+  again (Giovanni Battista Piazzetta twice in Artists, at the end of page 3 and the start of page 4, after a day of
+  new artists). Rows already in the table are now left out when a page is appended (by their link).
+- **Test:** `test/e2e/infinite.spec.js` — an entry inserted just before page 2 is fetched: no row twice.
+
 ### Fix: a single day on the last of a month was written as a span
 - **What:** `formatFuzzyDate` (`src/fuzzy-date.js`) wrote the end of a range as coarsely as its bound allowed, so a
   single day that is the last of a month or a year came out as a span: [1869-12-31,1870-01-01) → "1869-12-31/1869-12"

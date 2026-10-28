@@ -23,7 +23,11 @@ async function loadNext(pager, observer) {
     const fresh = doc.querySelector('.pager[data-infinite]');
     const rows = fresh && rowsBefore(fresh);
     if (!fresh || !rows) throw new Error('no list');
-    tbody.append(...[...rows.children].map((r) => document.importNode(r, true)));
+    // pages are cut by position: an entry added above while this list was open shifts the next page down by one,
+    // and the last row here comes again — the rows already shown are left out
+    const shown = new Set([...tbody.querySelectorAll('tr a[href]')].map((a) => a.getAttribute('href')));
+    const isNew = (r) => { const a = r.querySelector('a[href]'); return !a || !shown.has(a.getAttribute('href')); };
+    tbody.append(...[...rows.children].filter(isNew).map((r) => document.importNode(r, true)));
     const replacement = document.importNode(fresh, true);
     replacement.querySelector('a[rel=prev]')?.remove();   // the page above is already here
     observer.unobserve(pager);
