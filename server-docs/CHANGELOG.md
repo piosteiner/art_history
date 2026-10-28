@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Search: sources after every other entry; Unkei completed with his sons and Kaikei
+- **What:** `/v1/search/text` orders `e.type = 'source'` last, the site's header search the same (`frontend/src/search.ts`);
+  e2e test (a source whose name matches better still comes after the artist; fails without the fix). Data: Unkei —
+  biography with 15 footnotes from the Tokyo National Museum's exhibition page (2017) and Kobayashi, *Study on the Life
+  and Works of Unkei* (Nara National Research Institute, Monograph No. 1, 1954); birth "c. 1150" (not recorded;
+  Kobayashi 1148/49 — Wikidata's 1151 and its citation replaced), death cited; "influenced by Kōkei" → child of and
+  student of Kōkei. New artists Tankei (born 1173), Kōben, Kaikei with sourced texts and Q-ids; child_of Unkei
+  (Tankei, Kōben; Kōshō cited), Unkei collaborated with Kaikei (Tōdaiji guardians 1203), Tankei in the Kei school.
+- **Why:** owner: Kleomenes found as two sources before the artist; Unkei from the two museum/institute pages.
+- **Revert:** `git revert`; the entries from their history.
+
 ### Wikidata comparison: ranks and the similar entry's own item; Cleomenes; artists' active period citable (148)
 - **What:** relationship suggestions carry the statement's rank: a preferred value is tagged "preferred", the
   normal-ranked ones beside it say "Wikidata prefers …" (Jan van Eyck: Maaseik preferred, Liège and the

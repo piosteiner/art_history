@@ -1,6 +1,6 @@
 // Full-text search (migration 087): texts and provenance steps, stemmed in English/German/French, accents folded,
 // phrases and exclusions, highlighted passages; names by trigram too.
-const { test, expect, sql, API } = require('./helpers');
+const { test, expect, sql, settled, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 const search = (request, q, more = '') => api(request, `/search/text?q=${encodeURIComponent(q)}${more}`);
@@ -72,4 +72,18 @@ test('synonyms: German words find English provenance, the passage marks the matc
     sql(`DELETE FROM search_synonyms WHERE label = 'test lagoon'`);
   }
   expect((await search(request, 'lagune')).data.map((h) => h.slug)).not.toContain('test-fts-work');
+});
+
+test('sources come after every other entry, however well their name matches (the sculptor before the lexicon article)', async ({ request }) => {
+  // the source's name matches better than the artist's ("Kleomenes" vs "Cleomenes" in the owner's case)
+  sql(`INSERT INTO artists (slug, name, names) VALUES ('testkleomenes', 'Testkleomenes of Athens and Rome', '[]');
+       INSERT INTO bibliography (slug, kind, name, description_md) VALUES ('testkleomenes-lexicon', 'lexicon_entry', 'Testkleomenes',
+         'Testkleomenes, Testkleomenes, Testkleomenes.')`);
+  try {
+    await settled();
+    const res = await (await request.get(`${API}/search/text?q=Testkleomenes`, { headers: { Host: 'api.localhost' } })).json();
+    expect(res.data.map((d) => d.type)).toEqual(['artist', 'source']);
+  } finally {
+    sql(`DELETE FROM artists WHERE slug = 'testkleomenes'; DELETE FROM bibliography WHERE slug = 'testkleomenes-lexicon'`);
+  }
 });

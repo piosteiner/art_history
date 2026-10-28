@@ -110,7 +110,8 @@ router.get('/search/text', async (req, res) => {
     WHERE (p.id IS NOT NULL OR (e.type, e.id) IN (SELECT type, id FROM near))
       AND ($5::text[] IS NULL OR (e.type = 'artwork' AND NOT EXISTS (SELECT 1 FROM unnest($5::text[]) ph WHERE NOT ${has()})))
       AND ($6::text[] IS NULL OR e.type <> 'artwork' OR NOT EXISTS (SELECT 1 FROM unnest($6::text[]) ph WHERE ${has()}))
-    ORDER BY score DESC, e.sort_key COLLATE sort_natural
+    -- sources after every other entry (owner, 2026-10-28): the person Kleomenes before the lexicon article "Kleomenes"
+    ORDER BY e.type = 'source', score DESC, e.sort_key COLLATE sort_natural
     LIMIT $3 OFFSET $4`, [q, type, limit, offset, within && within.length ? within : null, without && without.length ? without : null]);
   const plural = Object.fromEntries(Object.entries(ENTITIES).map(([k, v]) => [v.type, k]));
   res.json({
