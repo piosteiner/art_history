@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Fix: artists and people from Wikidata got no given and family name (migration 150)
+- **What:** `fill_person_names()` (066/109) leaves East Asian names unsplit, and `names_east_asian()` counted any
+  Japanese, Chinese or Korean other name — also the translations the Wikidata import adds (ポール・デルヴォー). So
+  most new entries from Wikidata were sorted by their whole name, under the given name ("Paul Delvaux" under P).
+  Migration 150: only an entry's own names (original, other names) count, not translations.
+- **Data:** the entries left empty filled as an audited change (user pio): by the rule, except titles it splits
+  wrongly (Cardinal Mazarin, Madame du Barry → family name only; Emperor Rudolf II, William the Silent, Halil Şerif
+  Pasha as written); Japanese names by hand, family name first (Hashimoto Gahō, Kanō Hōgai, Itō Jakuchū …, Eikō Hosoe
+  and Kōjirō Matsukata given name first), Tōshūsai Sharaku filed as "Sharaku" (like Hokusai); Kuroda Seiki (reversed)
+  and Shimomura Kanzan (given name "Kazan") corrected.
+- **Test:** `test/e2e/sorting.spec.js` — a translation doesn't stop the split, an original Japanese name does.
+
 ### Fix: endless admin lists showed an entry twice
 - **What:** the endless lists (`src/admin/editor/infinite.js`) append the next page, and pages are cut by position
   (OFFSET). An entry added above while a list was open shifted the next page down by one, so the last row shown came

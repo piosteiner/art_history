@@ -35,6 +35,14 @@ test('people and artists: given and family name filled from the name, sorted by 
   expect(sql("SELECT given_name || ' / ' || family_name FROM people WHERE slug = 'test-willem-de-bruin'")).toBe('Willem / de Bruin');
   expect(sql("SELECT given_name || ' / ' || family_name FROM people WHERE slug = 'test-jan-brueghel'")).toBe('Jan, the Elder / Brueghel');
   expect(sql("SELECT coalesce(family_name, '-') FROM people WHERE slug = 'test-medici'")).toBe('-');   // a group: left alone
+  // translations of the name don't make it East Asian (150): split as usual; an original name in Japanese does
+  sql(`DELETE FROM people WHERE slug IN ('test-paul-delvaux', 'test-kuroda-seiki');
+       INSERT INTO people (slug, name, names) VALUES
+         ('test-paul-delvaux', 'Paul Delvaux', '[{"lang": "ja", "role": "translation", "text": "ポール・デルヴォー"}]'),
+         ('test-kuroda-seiki', 'Kuroda Seiki', '[{"lang": "ja", "role": "original", "text": "黒田清輝"}]')`);
+  expect(sql("SELECT given_name || ' / ' || family_name FROM people WHERE slug = 'test-paul-delvaux'")).toBe('Paul / Delvaux');
+  expect(sql("SELECT coalesce(family_name, '-') FROM people WHERE slug = 'test-kuroda-seiki'")).toBe('-');
+  sql("DELETE FROM people WHERE slug IN ('test-paul-delvaux', 'test-kuroda-seiki')");
   const people = await (await request.get(`${API}/people?limit=500`, { headers: { Host: 'api.localhost' } })).json();
   const order = people.data.map((p) => p.slug).filter((s) => slugs.includes(s));
   // Adler, Brueghel, (de) Bruin, Medici (by its name), Zeller
