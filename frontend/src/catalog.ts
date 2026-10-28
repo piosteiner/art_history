@@ -1,7 +1,7 @@
 // Search and sort for lists of entries (explore pickers, list pages and the header search share it).
 // Each entry has a name and a meta line that are shown, labelled fields that are searchable but not shown
 // (type, birthplace, nationality …), and per sort option a value plus a section heading.
-import { countryName, countryText, creatorNames, displayName, html, personDates, polityText, ROLE_LABEL, spanLabel, type Html } from './html';
+import { countryName, countryText, creatorNames, displayName, html, personDates, polityText, ROLE_LABEL, type Html } from './html';
 import type { Country, DateRange, EntityType, ItemByPlural, NameEntry, Plural, PolityLink } from './types';
 
 export interface SortValue {
@@ -219,17 +219,17 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
     type: 'artist',
     sorts: [
       { id: 'name', label: 'Name (surname) A–Z' },
-      { id: 'born', label: 'Birth year' },
-      { id: 'died', label: 'Death year' },
+      { id: 'born', label: 'Birth year (or active from)' },
+      { id: 'died', label: 'Death year (or active until)' },
       { id: 'country', label: 'Country of birth (today)' },
       { id: 'nationality', label: 'Nationality' },
     ],
     build: (a) => {
       const l = located(a, 'nationality');
       return {
-        slug: a.slug, name: a.name, meta: spanLabel(a.birth, a.death).replace(' – ', '–'),
+        slug: a.slug, name: a.name, meta: personDates(a).replace(' – ', '–'),
         fields: [],
-        sorts: { name: byName(a.name), born: byYear(a.birth), died: byYear(a.death, 'to'), country: l.country, nationality: l.polity },
+        sorts: { name: byName(a.name), born: byYear(a.birth ?? a.active), died: byYear(a.death ?? a.active, 'to'), country: l.country, nationality: l.polity },
       };
     },
   },

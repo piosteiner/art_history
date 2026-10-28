@@ -198,6 +198,8 @@ export interface BirthPlace { slug: string; name: string; country_code: string |
 
 export interface ArtistItem extends Located, Named, PersonName {
   slug: string; name: string; birth: DateRange | null; death: DateRange | null; image_url: string | null;
+  /** API 147: when active, for artists whose dates of life are unknown. */
+  active: DateRange | null;
   birth_place: BirthPlace | null;
 }
 /** One of an artwork's makers; the main creator comes first. `role`: "landscape", "figures" … */
@@ -266,7 +268,7 @@ export interface Artist extends DetailBase, Located, Named, PersonName {
   type: 'artist';
   birth_place: BirthPlace | null;
   name: string; alt_names: string[];
-  birth: DateRange | null; death: DateRange | null;
+  birth: DateRange | null; death: DateRange | null; active: DateRange | null; // active: API 147
   biography_html: string | null;
   images: Image[]; image_url: string | null;
   artworks: ArtworkSummary[];

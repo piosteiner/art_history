@@ -1029,6 +1029,17 @@ async function patch(page: Page, url: RegExp, change: (body: Record<string, unkn
     await route.fulfill({ response: res, json: body });
   });
 }
+
+test('an artist known only by when he was active: "active …" as subtitle and fact (API 147)', async ({ page }) => {
+  await patch(page, /\/v1\/artists\/vincent-van-gogh$/, (b) => {
+    b.birth = null; b.death = null;
+    b.active = { label: 'first half of the 1st century BCE', from: '-0100-01-01', to: '-0051-12-31' };
+  });
+  await page.goto('/artists/vincent-van-gogh');
+  await expect(page.locator('h1')).toContainText('Vincent van Gogh');
+  await expect(page.locator('main')).toContainText('active first half of the 1st century BCE');
+  await expect(page.locator('main')).toContainText('Active');
+});
 const GREAT_WAVE = /\/v1\/artworks\/the-great-wave-off-kanagawa$/;
 
 test('several creators: attribution instead of the name, co-creators with their part; not repeated below', async ({ page }) => {

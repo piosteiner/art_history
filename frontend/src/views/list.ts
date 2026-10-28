@@ -2,7 +2,7 @@ import { applySuggestion, listAll, listEntities, suggest } from '../api';
 import { describeQuery, parseQuery } from '../query';
 import { replaceUrl } from '../router';
 import { ofVersions, partLabel, wholeKind } from '../series';
-import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, spanLabel, thumb, type Html } from '../html';
+import { countryName, countryText, creatorNames, creatorsOf, dateLabel, displayName, link, personDates, personWhat, href, html, langAttr, PLURAL_LABEL, render, thumb, type Html } from '../html';
 import type { NameEntry } from '../types';
 
 /** The original-language name, shown small on the card ("神奈川沖浪裏"). */
@@ -22,7 +22,7 @@ export function cardParts(plural: Plural, item: AnyItem) {
   switch (plural) {
     case 'artists': {
       const a = item as ItemByPlural['artists'];
-      [name, date, image] = [a.name, spanLabel(a.birth, a.death), a.image_url];
+      [name, date, image] = [a.name, personDates(a), a.image_url];  // or "active …" (API 147)
       detail = countryText(a.country) ?? '';
       break;
     }

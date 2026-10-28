@@ -1,6 +1,6 @@
 // Detail pages: the fact rows per type (dates, makers, collection, numbers …), their source markers, the work's web page.
 import {
-  countryLink, countryName, creatorsOf, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, spanLabel, type Html,
+  countryLink, countryName, creatorsOf, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, type Html,
 } from '../html';
 import type {
   Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, PolityLink, Term,
@@ -154,9 +154,10 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
   switch (e.type) {
     case 'artist':
       return {
-        title: e.name, subtitle: spanLabel(e.birth, e.death), text: e.biography_html, images: e.images,
+        title: e.name, subtitle: personDates(e), text: e.biography_html, images: e.images,
         facts: [
           ['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)],
+          ['Active', e.birth || e.death ? '' : dateLabel(e.active)],  // API 147: dates of life unknown
           ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
           ['Also known as', otherNames(e)],
         ],

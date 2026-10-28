@@ -571,7 +571,7 @@ function start(main: HTMLElement, params: URLSearchParams, curated: Curated | nu
     return [
       ...keep('polity', lists.polities).map((p) => ({ group: 'Polities', label: p.name, href: href('polity', p.slug), key: `polity/${p.slug}`, from: p.period, to: p.period, color: colorOf.get('polity', p.slug) })),
       ...keep('movement', lists.movements).map((m) => ({ group: 'Movements', label: m.name, href: href('movement', m.slug), key: `movement/${m.slug}`, from: m.period, to: m.period, color: colorOf.get('movement', m.slug) })),
-      ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), key: `artist/${a.slug}`, from: a.birth, to: a.death, color: colorOf.get('artist', a.slug) })),
+      ...keep('artist', lists.artists).map((a) => ({ group: 'Artists', label: a.name, href: href('artist', a.slug), key: `artist/${a.slug}`, from: a.birth ?? a.active, to: a.birth || a.death ? a.death : a.active, color: colorOf.get('artist', a.slug) })),
       ...keep('person', lists.people).map((p) => ({ group: 'People', label: p.name, href: href('person', p.slug), key: `person/${p.slug}`, from: p.birth ?? p.active, to: p.birth || p.death ? p.death : p.active, color: colorOf.get('person', p.slug) })),
       ...artworkRows,
     ];
