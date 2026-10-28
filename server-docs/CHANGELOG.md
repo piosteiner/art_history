@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: Noh, Kabuki, Bunraku with a play each; Yoroboshi completed
+- **What:** glossary terms (category performing arts) `noh`, `kabuki`, `bunraku` and, as their narrower terms,
+  `yoroboshi` (completed: Kanze Motomasa, plot, the two readings よろぼし/よろぼおし, link to Kanzan's screens),
+  `kanjincho` (Namiki Gohei III, 1840, after the Noh play Ataka), `sonezaki-shinju` (Chikamatsu, 1703); Japanese names
+  with readings, Wikidata IDs, 24 footnotes. 6 new sources (Wikipedia en: Noh, Kabuki, Bunraku, Kanjinchō, The Love
+  Suicides at Sonezaki; ja: 俊徳丸 — its section on the Noh play). Kanzan's screen links [[yoroboshi]].
+- **Why:** owner: an example of the new category and broader terms.
+- **Revert:** delete the five terms (the sources can stay); restore Yoroboshi and the screen from their history.
+
 ### Glossary: category "performing arts" and broader terms (migration 145)
 - **What:** enum value `performing arts` in `term_category`; `glossary.parent_id` (the broader term, one or none) with
   index, CHECK and the shared `no_parent_cycle()` trigger. Admin: "Broader term" picker beside the category
