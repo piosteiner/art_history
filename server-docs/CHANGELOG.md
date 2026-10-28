@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: sources for the descriptions of the remaining artworks
+- **What:** 15 artwork descriptions with footnotes (the three Bedrooms and the group, the Sunflowers group and three
+  versions, the Agricola copy, the Starry Night, the Great Wave, Thirty-six Views — first paragraph only —, Sudden
+  Shower, Fra Angelico's Annunciation, the battle series); 15 new sources, one per museum page (Akademie Wien GG-779 and
+  GG-626, Art Institute of Chicago, Orsay, Van Gogh Museum ×2, National Gallery, Pinakotheken, MoMA, The Met, Brooklyn,
+  Prado) and Wikipedia (Great Wave, Thirty-six Views, es: Salón de Reinos). Corrected: the first Bedroom went to Theo at
+  the end of April 1889 and the repetitions followed in September (text: made before sending it); "a month after moving
+  in" dropped (no source); the battle series: one of the twelve is lost. The owner's own notes (Bührle, Belvedere,
+  Maurice Fabre, BBC links, the Dulwich exhibition note) stay as written; Plum Park in Kameido has no museum page yet.
+- **Why:** owner: descriptions without sources (batch 3).
+- **Revert:** restore descriptions from their history in the CMS; the sources can stay.
+
 ### Data: sources for the descriptions of the Prado's works; access dates in footnote lists
 - **What:** 21 artwork descriptions (Prado works, the Black Paintings, the pair of the Second and Third of May) with
   footnotes quoting their sources; 20 new sources `prado-…`, one per catalogue page (read in the Internet Archive — the
