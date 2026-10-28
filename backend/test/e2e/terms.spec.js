@@ -1,7 +1,7 @@
 // An artwork's type and materials are glossary terms with names in several languages (migrations 070/071): typed in
 // any language, stored under the term's name, linked; new words become terms; phrases are sorted out on a batch page;
 // the API filters and the search names know every language.
-const { test, expect, sql, submitForm, API } = require('./helpers');
+const { test, expect, sql, settled, submitForm, API } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
@@ -82,4 +82,37 @@ test('an entry whose stored type has no term yet saves: the new term touching th
   sql("UPDATE artworks SET title = 'Test Term Stored' WHERE slug = 'test-term-stored'");
   await submitForm(userA);
   await expect(userA.locator('body')).toContainText('Someone saved this record while you were editing');
+});
+
+test('broader terms find the works under them: API filters and search names (146)', async ({ userA, request }) => {
+  await userA.goto('/artworks/new');
+  await userA.fill('#f-title', 'Test Term Panel');
+  await userA.fill('#f-kind', 'woodblock print');
+  await userA.fill('#f-materials', 'paper');
+  await submitForm(userA);
+  await expect(userA).toHaveURL(/\/artworks\/test-term-panel\?done=created/);
+
+  // a broader term for paper, set in the form: "Testmaterial" with a German name
+  await userA.goto('/glossary/new');
+  await userA.fill('#f-name', 'Testmaterial');
+  await userA.selectOption('#f-category', 'material');
+  await submitForm(userA);
+  await userA.goto('/glossary/paper/edit');
+  await userA.fill('#f-parent', 'testmaterial');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await settled();                                                                   // the worker refreshed the works under it
+
+  const slugs = async (q) => (await api(request, `/artworks?${q}`)).data.map((a) => a.slug);
+  expect(await slugs('material=testmaterial')).toContain('test-term-panel');         // a narrower term's work
+  expect(await slugs('material=paper')).toContain('test-term-panel');
+  expect(await slugs('material=testmaterial')).not.toContain('impression-sunrise');  // only what is under it
+  const w = (await api(request, '/artworks?material=testmaterial')).data.find((a) => a.slug === 'test-term-panel');
+  expect(w.search_fields.find((f) => f.label === 'Type').match).toContain('Testmaterial');  // found by the broader name
+
+  // unhooked again: the work loses the broader name (no drift in the stored search fields)
+  sql("UPDATE glossary SET parent_id = NULL WHERE slug = 'paper'");
+  await settled();
+  const again = (await api(request, '/artworks?material=paper')).data.find((a) => a.slug === 'test-term-panel');
+  expect(again.search_fields.find((f) => f.label === 'Type').match).not.toContain('Testmaterial');
+  sql("DELETE FROM glossary WHERE slug = 'testmaterial'");
 });

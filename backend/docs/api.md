@@ -115,6 +115,8 @@ object type · group of works · mounting · performing arts · other; filter `?
 `used_in: [{type, slug, name}]` — the entries whose texts link the term. Broader terms (145): `broader: [{slug, name}]`
 upwards, nearest first (Yoroboshi → Noh → …), and `narrower: [{slug, name, category, definition}]` — the terms
 directly under it. Lists sort A–Z by `sort_key`.
+The artwork filters `?kind=` and `?material=` include the terms under the one asked for (146): `?material=wood` finds
+the oak panels, `?kind=print` the woodcuts; a work's search names carry the names of its terms' broader terms too.
 
 **Links in texts:** every `*_html` may contain `<a href="/glossary/<slug>" class="glossary-link" data-term="<slug>">`
 (class `glossary-link missing` when the term doesn't exist yet). Every detail response has `glossary`: the terms its

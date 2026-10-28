@@ -267,7 +267,9 @@ Table `glossary` (entity type `term`; `entity_table('term')` = glossary): name f
 (145): `parent_id` → the wider term (Yoroboshi → Noh), one or none, like places and movements — `no_parent_cycle()` keeps
 chains from looping; a second fixed level of categories was decided against (a term's place in a hierarchy is a
 relation, not a drawer; category `performing arts` for genres, plays and stage things). YAML/admin key `parent`, API
-`broader`/`narrower`. Texts link
+`broader`/`narrower`. 146: `glossary_with_narrower(id)` (recursive CTE downwards); `artwork_term_names()` adds the broader
+terms of a work's linked type and materials (not of those found only by text in the medium); `derived_touch(…, 'termtree.id')`
+queues the works under a term whose names or parent change. Texts link
 terms with `[[slug]]` / `[[slug|words]]` (a markdown-it inline rule in `src/markdown.js`). The view `glossary_links`
 finds every link with `regexp_matches(…, 'g')` over all Markdown columns (relationship notes count for their subject):
 "used in" and the quality check `broken_glossary_link` read it — computed when asked, so always current.

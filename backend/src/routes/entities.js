@@ -144,10 +144,11 @@ const ENTITIES = {
                  WHERE r.relationship_type = 'co_creator' AND r.subject_type = 'artwork' AND r.subject_id = t.id
                    AND r.object_type = 'artist' AND r.object_id = entity_id('artist', $)))`,
       institution: "t.current_institution_id = entity_id('institution', $)",
-      // by the term's slug or any of its names, any language (071): ?kind=Holzschnitt finds the woodblock prints
-      kind: `(t.kind = $ OR t.kind_term_id = coalesce((SELECT id FROM glossary WHERE slug = $), term_by_name($, kind_categories())))`,
+      // by the term's slug or any of its names, any language (071): ?kind=Holzschnitt finds the woodblock prints;
+      // with the terms under it (146): ?kind=print finds woodcuts too, ?material=wood the oak panels
+      kind: `(t.kind = $ OR t.kind_term_id IN (SELECT glossary_with_narrower(coalesce((SELECT id FROM glossary WHERE slug = $), term_by_name($, kind_categories())))))`,
       material: `(t.materials @> ARRAY[$]::text[] OR EXISTS (SELECT 1 FROM artwork_materials am WHERE am.artwork_id = t.id
-                   AND am.term_id = coalesce((SELECT id FROM glossary WHERE slug = $), term_by_name($, ARRAY['material']::term_category[]))))`,
+                   AND am.term_id IN (SELECT glossary_with_narrower(coalesce((SELECT id FROM glossary WHERE slug = $), term_by_name($, ARRAY['material']::term_category[]))))))`,
       part_of: "t.parent_id = entity_id('artwork', $)",  // the parts of a series / album …
       // gaps in the provenance (078): ?provenance_gap=1933-1945 (no holder known for some time then) or any
       provenance_gap: `(SELECT CASE $ WHEN '1933-1945' THEN c.gap_1933_1945_days > 0 WHEN 'any' THEN c.gap_days > 0 END

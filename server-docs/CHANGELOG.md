@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Glossary chains for materials and object types; filters and search follow them (migration 146)
+- **What:** data (owner-approved): new terms poplar, lime, lacquer (urushi), print (sourced: Wikipedia Panel painting,
+  Japanese lacquerware, Printmaking); broader terms — wood ← oak, poplar, lime, panel; panel ← oak/poplar/lime panel;
+  marble ← Carrara, Parian, white marble; paint ← oil, tempera, gouache, watercolor, casein paint; chalk ← black, red
+  chalk; paper ← watercolor, wove paper; gold ← gold leaf; lacquer ← Jōbōji urushi; painting ← oil painting, fresco;
+  print ← woodblock print, woodcut; sculpture ← statue. Migration 146: `glossary_with_narrower()`;
+  `artwork_term_names()` adds broader terms' names; `derived_touch` 'termtree' queues the works under a changed term;
+  every work requeued once. API `?kind=`/`?material=` include narrower terms. e2e test (form → filter → search names,
+  unhooked again), perf budgets.
+- **Why:** owner: searching "wood" or "print" should find the works in oak panel or woodcut.
+- **Revert:** restore the old `artwork_term_names()` and the trigger's arguments from 071/126, drop
+  `glossary_with_narrower()`, requeue the works; the API filter from git; the chains: `UPDATE glossary SET parent_id = NULL`.
+
 ### Data: glossary clean-up (materials, object types, categories)
 - **What (owner-approved list):** merged with `merge_entries()` (old addresses redirect): oak wook, oakwood → oak;
   kinpaku → gold leaf (金箔 as its Japanese name); top color → gouache paint (a mistranslation of Deckfarbe:
