@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Wikidata comparison: ranks and the similar entry's own item; Cleomenes; artists' active period citable (148)
+- **What:** relationship suggestions carry the statement's rank: a preferred value is tagged "preferred", the
+  normal-ranked ones beside it say "Wikidata prefers …" (Jan van Eyck: Maaseik preferred, Liège and the
+  Prince-Bishopric of Liège normal). A "similar name" shows our entry's own Q-id ("ours is Q4692, another item") or
+  "no Wikidata item yet". Migration 148: `citable_fields` ('artist', 'active', P1317). Data: Cleomenes — biography
+  with 9 footnotes (Treccani EAA, Mansuelli 1961; Uffizi; de.wikipedia), names (grc, de, it, fr), active "first half
+  of the 1st century BCE" (cited: Mansuelli). e2e tests (ranks with new fixtures Q160–Q162; the Q-id note).
+- **Why:** owner: three birthplaces for Jan van Eyck; similar suggestions should be comparable.
+- **Revert:** `git revert`; `DELETE FROM citable_fields WHERE entity_type = 'artist' AND field = 'active'` (its citations first).
+
 ### Artists' active period (migration 147); similar names by whole words; the Venus de' Medici without creator
 - **What:** `artists.active` + `active_label` (as `people.active`): form "Active (when the dates of life are unknown)",
   YAML, API list/detail, time filter `coalesce(lifespan, active)`, stored list rows requeued; `artist_missing_dates`

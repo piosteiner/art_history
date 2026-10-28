@@ -192,7 +192,8 @@ test('a similar name: the same name wins over longer ones that contain it ("Rena
   try {
     await userA.goto('/artists/claude-monet/wikidata');
     const r = row(userA, 'Impressionism');
-    await expect(r.locator('label:has(input[value=candidate]) a')).toHaveText('Impressionism');  // A–Z would give "Early …"
+    await expect(r.locator('label:has(input[value=candidate]) a').first()).toHaveText('Impressionism');  // A–Z would give "Early …"
+    await expect(r.locator('label:has(input[value=candidate])')).toContainText('ours is Q999102, another item');  // to compare
   } finally {
     sql(`DELETE FROM movements WHERE slug = 'early-impressionism';
          UPDATE movements SET wikidata_id = nullif('${before}', '') WHERE slug = 'impressionism'`);
@@ -213,5 +214,17 @@ test('a similar name means whole words: "Giverny" is not offered as "Givernyvill
     const [name, qid] = before.split('|');
     if (before) sql(`UPDATE places SET name = '${name}', wikidata_id = nullif('${qid}', '') WHERE slug = 'giverny'`);
     else sql("DELETE FROM places WHERE slug = 'giverny'");
+  }
+});
+
+test('ranks: the preferred birthplace is marked, the others say which one Wikidata prefers', async ({ userA }) => {
+  sql("INSERT INTO artists (slug, name, wikidata_id) VALUES ('test-painter-of-ranks', 'Test Painter of Ranks', 'Q160')");
+  try {
+    await userA.goto('/artists/test-painter-of-ranks/wikidata');
+    await expect(row(userA, 'Testmaaseik').locator('.wd-preferred')).toHaveText('preferred');
+    await expect(row(userA, 'Testliege').locator('.wd-outranked')).toContainText('Wikidata prefers Testmaaseik');
+    await expect(row(userA, 'Testmaaseik').locator('.wd-outranked')).toHaveCount(0);
+  } finally {
+    sql("DELETE FROM artists WHERE slug = 'test-painter-of-ranks'");
   }
 });

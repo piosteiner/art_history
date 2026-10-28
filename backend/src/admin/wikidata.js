@@ -330,11 +330,18 @@ const REL_PROPS = {
 function relsFor(t, e) {
   const out = [];
   for (const [prop, type] of REL_PROPS[t.type] || []) {
-    for (const s of statements(e, prop)) {
+    const all = statements(e, prop);
+    // a preferred statement is Wikidata's answer; the normal-ranked ones beside it are shown as outranked by it
+    // (Jan van Eyck born in Maaseik — preferred — besides Liège and the Prince-Bishopric of Liège)
+    const preferred = all.find((x) => x.rank === 'preferred');
+    for (const s of all) {
       const qid = s.mainsnak.datavalue.value.id;
       if (!qid) continue;
       const p = periodOf(s);
-      if (!out.some((r) => r.type === type && r.qid === qid)) out.push({ type, prop, qid, period: p ? p.value : null, period_label: p ? p.label : null });
+      const outrankedBy = preferred && s.rank !== 'preferred' ? preferred.mainsnak.datavalue.value.id : null;
+      if (!out.some((r) => r.type === type && r.qid === qid)) {
+        out.push({ type, prop, qid, period: p ? p.value : null, period_label: p ? p.label : null, rank: s.rank, outrankedBy });
+      }
     }
   }
   // several creators (P170): the first becomes the creator field, the others co-creators (migration 028)
@@ -375,7 +382,12 @@ async function similarEntry(db, label, types) {
     -- A name containing the label whole scores 1 ("Renaissance" in "Early Renaissance"): the same name first, then the
     -- closer whole name (similarity), then A–Z
     ORDER BY score DESC, lower(f_unaccent(name)) = lower(f_unaccent($1)) DESC, similarity(f_unaccent($1), f_unaccent(name)) DESC, name LIMIT 1`, [label, types]);
-  return rows[0] || null;
+  if (!rows[0]) return null;
+  // its own Wikidata item, if any: shown beside it, so the two items can be compared (a narrower "Spanish Renaissance"
+  // against our "Renaissance")
+  const t = BY_TYPE[rows[0].type];
+  rows[0].wikidata_id = (await db.query(`SELECT wikidata_id FROM ${t.table} WHERE slug = $1`, [rows[0].slug])).rows[0]?.wikidata_id || null;
+  return rows[0];
 }
 
 async function localByQid(db, qids) {
@@ -564,6 +576,7 @@ async function compare(db, t, qid, ours, entity) {
     suggestions.push({ item, type: r.type, prop: r.prop, label: reverse ? v.inverse_label : v.label, qid: r.qid, targetType: type, allowed,
       target, candidate, name: target ? target.name : labelOf(we) || r.qid, create: doc ? { type, doc, describe: describeDoc(type, doc) } : null,
       period: r.period, period_label: r.period_label, already, declined: declined(item, r.qid),
+      rank: r.rank, outrankedBy: r.outrankedBy ? { qid: r.outrankedBy, name: labelOf(others[r.outrankedBy]) || (byQid[r.outrankedBy] || {}).name || r.outrankedBy } : null,
       period_display: r.period_label || (r.period ? parseFuzzyDate(r.period, { openEnd: true }).label : '') });
   }
   // the entry's numbers in authority files (053), as Wikidata records them: ULAN P245, GND P227, VIAF P214 …

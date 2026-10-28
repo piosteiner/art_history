@@ -22,6 +22,13 @@ const ENTITIES = {
     claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 48.8567, longitude: 2.3522, globe: 'http://www.wikidata.org/entity/Q2' })] } },
   Q101: { id: 'Q101', labels: labels('Giverny'), descriptions: { en: { value: 'commune in Eure, France' } },
     claims: { P31: [stmt(item('Q484170'))], P625: [stmt({ latitude: 49.0758, longitude: 1.5339, globe: 'http://www.wikidata.org/entity/Q2' })] } },
+  // a painter with three birthplaces on Wikidata, one preferred (as Jan van Eyck: Maaseik preferred, Liège, the Prince-Bishopric)
+  Q160: { id: 'Q160', labels: labels('Test Painter of Ranks'), descriptions: { en: { value: 'painter' } },
+    claims: { P31: [stmt(item('Q5'))], P19: [stmt(item('Q162')), { ...stmt(item('Q161')), rank: 'preferred' }] } },
+  Q161: { id: 'Q161', labels: labels('Testmaaseik'), descriptions: { en: { value: 'town' } },
+    claims: { P31: [stmt(item('Q484170'))], P625: [stmt({ latitude: 51.1, longitude: 5.78, globe: 'http://www.wikidata.org/entity/Q2' })] } },
+  Q162: { id: 'Q162', labels: labels('Testliege'), descriptions: { en: { value: 'city' } },
+    claims: { P31: [stmt(item('Q484170'))], P625: [stmt({ latitude: 50.64, longitude: 5.57, globe: 'http://www.wikidata.org/entity/Q2' })] } },
   Q102: { id: 'Q102', labels: labels('Impressionism'), descriptions: { en: { value: 'art movement' } }, claims: { P31: [stmt(item('Q968159'))] } },
   Q103: { id: 'Q103', labels: labels('Charles Gleyre'), descriptions: { en: { value: 'Swiss painter' } },
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1806-05-02T00:00:00Z', 11))] } },

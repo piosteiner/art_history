@@ -42,7 +42,7 @@ function fieldRow(r, t) {
       <td>${r.wikiLabel} <span class="tag">${r.qid}</span></td>
       <td>${radio('later', 'decide later')} ${radio('keep', r.ours ? 'keep mine' : 'leave empty')}
         ${r.target ? radio('link', html`link our <a href="/${t.folderOf(r.target.type)}/${r.target.slug}" target="_blank">${r.target.name}</a>${r.target.matchedBy === 'name' ? ' (same name)' : ''}`) : ''}
-        ${!r.target && r.candidate ? radio('candidate', html`link our <a href="/${t.folderOf(r.candidate.type)}/${r.candidate.slug}" target="_blank">${r.candidate.name}</a> (similar name)`) : ''}
+        ${!r.target && r.candidate ? radio('candidate', html`link our <a href="/${t.folderOf(r.candidate.type)}/${r.candidate.slug}" target="_blank">${r.candidate.name}</a> ${similarNote(r.candidate)}`) : ''}
         ${!r.target && r.create ? radio('create', html`create new: ${r.create.describe}`) : ''}${note}</td></tr>`;
   }
   const pre = r.declined ? 'keep' : r.status === 'empty' ? 'take' : 'later';
@@ -53,6 +53,11 @@ function fieldRow(r, t) {
     <td>${radio('take', "take Wikidata's")} ${radio('keep', r.ours ? 'keep mine' : 'leave empty')} ${radio('later', 'decide later')}${note}</td></tr>`;
 }
 
+// A similar name's own Wikidata item: none yet (it would get this one when linked), or another one — to compare
+const similarNote = (c) => (c.wikidata_id
+  ? html`(similar name · ours is <a href="https://www.wikidata.org/wiki/${c.wikidata_id}" target="_blank" rel="noopener" class="tag">${c.wikidata_id}</a>, another item)`
+  : html`(similar name · no Wikidata item yet)`);
+
 function suggestionRow(s, i, t) {
   if (s.already) {
     return html`<tr class="wd-same"><td>${s.label}</td><td>${s.target.name}</td><td>${s.period_display || ''}</td>
@@ -61,11 +66,12 @@ function suggestionRow(s, i, t) {
   const pre = s.declined ? 'skip' : 'later';
   const radio = (value, label) => html`<label class="choice"><input type="radio" name="rel.${i}" value="${value}"${pre === value ? ' checked' : ''}> ${label}</label>`;
   return html`<tr${s.declined ? html` class="wd-declined"` : ''}><td>${s.label}</td>
-    <td>${s.name} <span class="tag">${s.qid}</span></td>
+    <td>${s.name} <span class="tag">${s.qid}</span>${s.rank === 'preferred' ? html` <span class="tag wd-preferred" title="Wikidata's preferred value among several">preferred</span>` : ''}
+      ${s.outrankedBy ? html`<div class="muted small wd-outranked">Wikidata prefers ${s.outrankedBy.name} <span class="tag">${s.outrankedBy.qid}</span></div>` : ''}</td>
     <td>${s.period_display || ''}</td>
     <td>${radio('later', 'decide later')} ${radio('skip', 'skip')}
       ${s.target ? radio('link', html`link our <a href="/${t.folderOf(s.target.type)}/${s.target.slug}" target="_blank">${s.target.name}</a>${s.target.matchedBy === 'name' ? ' (same name)' : ''}`) : ''}
-      ${!s.target && s.candidate ? radio('candidate', html`link our <a href="/${t.folderOf(s.candidate.type)}/${s.candidate.slug}" target="_blank">${s.candidate.name}</a> (similar)`) : ''}
+      ${!s.target && s.candidate ? radio('candidate', html`link our <a href="/${t.folderOf(s.candidate.type)}/${s.candidate.slug}" target="_blank">${s.candidate.name}</a> ${similarNote(s.candidate)}`) : ''}
       ${!s.target && s.create ? radio('create', html`create new ${s.create.describe}`) : ''}
       <span class="rel-other">${radio('other', 'another of ours:')}
         <input name="relto.${i}" data-lookup="${(s.allowed || [s.targetType]).join(',')}" placeholder="type a name" aria-label="another entry" class="rel-picker"></span>
