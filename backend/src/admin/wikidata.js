@@ -159,7 +159,10 @@ const HUMAN = 'Q5';
 function placeKind(e) {
   const ids = itemIds(e, 'P31');
   if (ids.some((id) => ['Q6256', 'Q3624078', 'Q7275'].includes(id))) return 'country';
-  if (ids.some((id) => ['Q515', 'Q1549591', 'Q484170', 'Q3957', 'Q532', 'Q5119', 'Q2039348', 'Q15284', 'Q747074', 'Q1637706'].includes(id))) return 'settlement';
+  // (+ classes some big cities have instead of "city": human settlement, metropolis, municipality of Austria / Spain /
+  // Switzerland / Germany, city of Switzerland, city / census-designated place in the US — Vienna, Madrid, Lucerne went up to the country)
+  if (ids.some((id) => ['Q515', 'Q1549591', 'Q484170', 'Q3957', 'Q532', 'Q5119', 'Q2039348', 'Q15284', 'Q747074', 'Q1637706',
+    'Q486972', 'Q200250', 'Q667509', 'Q2074737', 'Q70208', 'Q54935504', 'Q262166', 'Q1093829', 'Q498162'].includes(id))) return 'settlement';
   if (ids.some((id) => ['Q82794', 'Q36784', 'Q6465', 'Q107390', 'Q10864048', 'Q34876', 'Q13220204', 'Q1620908'].includes(id))) return 'region';
   if (ids.some((id) => ['Q41176', 'Q33506', 'Q16970', 'Q3947'].includes(id))) return 'building';
   return 'site';
@@ -305,7 +308,8 @@ function fieldsFor(t, e) {
     date('dissolved', 'P576');  // closed / dissolved (106)
     // Its place is the city: the settlement P131 leads to — P131 is often a city district (Kunsthaus Zürich: "Kreis 1"
     // and Zürich). The exact spot is the institution's own: coordinates (P625) and street address (P6375), migration 034.
-    const p131 = itemIds(e, 'P131');
+    // A firm or society often has only its headquarters (P159: Christie's → London, the Dorotheum → Vienna).
+    const p131 = itemIds(e, 'P131').length ? itemIds(e, 'P131') : itemIds(e, 'P159');
     if (p131.length) f.place = { kind: 'ref', ref: { type: 'place', qid: p131[0] }, p131 };
     const c = coords(e);
     if (c) f.location = { kind: 'point', value: c };

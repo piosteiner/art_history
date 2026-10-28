@@ -4,6 +4,30 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Institutions enriched (data) + Wikidata places from the headquarters
+- **What:** the 266 institutions gone through (owner's request: "fill out the details to your best ability").
+  - 35 linked to their Wikidata items (Met, National Gallery, Van Gogh Museum, Stedelijk, Tate, Christie's, Sotheby's,
+    Parke-Bernet, Knoedler, Durand-Ruel, Marlborough, ERR, the Munich/Marburg/Wiesbaden collecting points …).
+  - New `backend/scripts/fill-from-wikidata.js`: **only empty fields** from the item, as "Compare with Wikidata" + Publish
+    (saveEntity, citations W); also the first image when there is none, authority numbers, relationships to entries we
+    have (founded by …); declined values not taken again; "to complete" flags kept. Run on all linked institutions:
+    108 filled (49 images, 376 numbers, 18 relationships); left out: the Louvre "founded by Napoleon", the Uffizi
+    "founded by Cosimo I", CIAM's location.
+  - 21 without an item researched on the web and filled with cited sources (founded, closed, city, address, point):
+    De Boer (TEFAF), Frederik Muller & Co. (Wikipedia), Neue Galerie Wien (Kallir Research), O'Hana, Leggatt,
+    Aktuaryus, Newhouse, Koetser and Hamburg foundations, Vereinigung Zürcher Kunstfreunde … New website sources named
+    (Brücke-Museum, Kallir Research Institute, Frick Archives Directory …; blogs/news as `database`).
+  - Places Vaduz, Laren, Stanford created from Wikidata; a second Amsterdam (the municipality item Q9899) merged into ours.
+  - Gaps before → after: no Wikidata 65 → 30, founded 80 → 44, place 103 → 21, point 131 → 82, address 192 → 161,
+    website 132 → 93.
+- **Code (`src/admin/wikidata.js`):** an institution's place falls back to its headquarters (P159) when it has no
+  "located in" (P131); `placeKind()` knows more settlement classes (human settlement, metropolis, municipality of
+  Austria/Spain/Switzerland/Germany, city of Switzerland, US city / census-designated place) — Vienna, Madrid and Lucerne
+  had walked up to their country.
+- **Left for the owner:** probable duplicates Frederik Muller & Cie / & Co., Galerie de Boer / Kunsthandel P. de Boer
+  (merge page); Galerie Seligmann (Jacques or Arnold?), Musées nationaux linked to the Direction des musées de France.
+- **Revert:** `git revert` for the code; data through History (audit_log, sources `wikidata` / `admin`).
+
 ### Site tests: two that failed the GitHub Pages runs
 - **What:** the last three Pages runs failed in `npm test`. (1) 12:48 — the API types check missed `active` (frontend
   pushed before the backend deploy of 147; fine once it was in). (2) and (3) — "periods: a work's dot …" clicked the
