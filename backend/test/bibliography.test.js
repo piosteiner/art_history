@@ -98,3 +98,25 @@ test('footnotes: citations in the text, adjacent ones combined, own notes with V
   assert.match(html, /<h4>Literatur<\/h4><ul class="source-list"><li[^>]*><span class="siglum">Busch 1993:<\/span> Werner Busch, <i>Das sentimentalische Bild<\/i>, München 1993\.<\/li><li[^>]*><span class="siglum">Dittscheid 1987:/);
   assert.match(renderMarkdown('No notes here.'), /^<p>No notes here\.<\/p>/);
 });
+
+test('further reading: under "Weiterführende Literatur" the whole entry, linked, not a footnote and not under Literatur', () => {
+  const names = new Map();
+  names.sources = cat([
+    src({ slug: 'busch-1993', kind: 'book', authors: ['Busch, Werner'], name: 'Das sentimentalische Bild', place: 'München', year: '1993' }),
+    src({ slug: 'clark-2017', kind: 'article', authors: ['Clark, Timothy'], name: 'Hokusai', container: 'Orientations', volume: '48', year: '2017', pages: '40–49' }),
+  ]);
+  const html = renderMarkdown('Belegt.[[source/busch-1993|43]]\n\n## Weiterführende Literatur\n\n- [[source/clark-2017|44–46]] zum Spätwerk\n- [[source/busch-1993]]\n\n## Danach\n\nText.', { names });
+  const reading = [...html.matchAll(/<a href="\/bibliography\/([a-z0-9-]+)" class="source-link further-reading"[^>]*>(.*?)<\/a>/g)].map((m) => [m[1], m[2].replace(/<[^>]+>/g, '')]);
+  assert.deepEqual(reading, [
+    ['clark-2017', 'Timothy Clark, Hokusai, in: Orientations 48 (2017), S. 40–49, hier S. 44–46.'],
+    ['busch-1993', 'Werner Busch, Das sentimentalische Bild, München 1993.'],
+  ]);
+  assert.match(html, /<\/a> zum Spätwerk<\/li>/);
+  assert.equal((html.match(/class="fn-ref"/g) || []).length, 1);  // only the citation in the text
+  // Literatur: what the text cites (Busch), not the reading only (Clark)
+  assert.match(html, /<h4>Literatur<\/h4><ul class="source-list"><li[^>]*><span class="siglum">Busch 1993:<\/span>[^]*<\/ul>/);
+  assert.doesNotMatch(html, /<span class="siglum">Clark 2017:/);
+  // after the next heading as high, citations are footnotes again; reading alone needs no footnote section
+  assert.equal(renderMarkdown('### Further reading\n- [[source/clark-2017]]', { names }).includes('class="footnotes"'), false);
+  assert.match(renderMarkdown('## Weiterlesen\n- [[source/clark-2017]]\n\n## Mehr\n\nX.[[source/clark-2017|41]]', { names }), /class="fn-ref"/);
+});

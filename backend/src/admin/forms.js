@@ -22,7 +22,8 @@ const HINTS = {
   sort_name: html`Only when the family name doesn't do: an art name (“Hokusai”), a single name, “Goya y Lucientes, Francisco de”.`,
   md: html`Markdown: <code>*italic*</code>, <code>**bold**</code>, <code>[link](https://…)</code>, blank line = new paragraph.
     Links: type <code>[[</code> and a name to pick any entry — <code>[[artist/katsushika-hokusai]]</code>, a glossary term <code>[[contrapposto]]</code>; own words after <code>|</code>: <code>[[contrapposto|the pose]]</code>.
-    Cite: <code>[[source/busch-1993|55]]</code> → footnote "Busch 1993, S. 55."; own footnote: <code>^[Vgl. [[source/busch-1993|bes. S. 55]].]</code>`,
+    Cite: <code>[[source/busch-1993|55]]</code> → footnote "Busch 1993, S. 55."; own footnote: <code>^[Vgl. [[source/busch-1993|bes. S. 55]].]</code>
+    Further reading: under a heading <code>## Weiterführende Literatur</code>, <code>- [[source/busch-1993]]</code> is listed in full, not as a footnote.`,
   'text[]': 'One per line.',
   names: html`One per line: <code>name | language | role</code> — role: original, translation, romanization or alternative
     (the default). E.g. <code>Kanagawa-oki nami ura | ja-Latn | romanization</code> · <code>The Great Wave off Kanagawa | en | translation, official</code>.

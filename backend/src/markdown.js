@@ -71,7 +71,7 @@ const SANITIZE = {
     'h2', 'h3', 'h4', 'a', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'sup', 'sub', 's', 'i', 'span', 'section'],
   allowedAttributes: { a: ['href', 'title', 'class', 'data-term', 'data-entry', 'data-source', 'id'], th: ['align'], td: ['align'],
     li: ['id'], sup: ['id', 'class'], section: ['class'], span: ['class'], ol: ['class'], ul: ['class'] },
-  allowedClasses: { a: ['glossary-link', 'entry-link', 'missing', 'source-link', 'fn-back'], sup: ['fn-ref'],
+  allowedClasses: { a: ['glossary-link', 'entry-link', 'missing', 'source-link', 'fn-back', 'further-reading'], sup: ['fn-ref'],
     section: ['footnotes', 'bibliography'], span: ['siglum', 'missing'], ol: ['footnote-list'], ul: ['source-list'] },
   allowedSchemes: ['http', 'https', 'mailto'],
   transformTags: { a: sanitizeHtml.simpleTransform('a', { rel: 'noopener' }) },
@@ -88,6 +88,11 @@ for (const [tag, cls] of Object.entries(ALLOW.classes)) SANITIZE.allowedClasses[
 //   … ^[Vgl. hierzu [[source/busch-1993|bes. S. 55]].]   an own footnote (Pandoc's inline-note syntax), citations in it
 // The same source as at the end of the previous footnote → "Ebd." / "ebd.". After the text: the footnotes and the
 // full entries of everything cited ("Literatur"; primary sources apart as "Quellen").
+//   ## Weiterführende Literatur                 further reading (owner, 2026-10-28): under a heading "Weiterführende
+//   - [[source/foxwell-2015]] zu Hōgai           Literatur", "Further reading" or "Weiterlesen" (any level, up to the
+//   - [[source/rubinstein-1958|179–190]]         next heading as high) citations are no footnotes: each is the whole
+//                                                entry, linked to the source's page ("…, hier S. 179–190."), not repeated
+//                                                under "Literatur" — reading worth doing, not a source of a statement.
 // Done as a pass over the Markdown before markdown-it: notes are cut out and replaced by markers (private-use
 // characters, which Markdown leaves alone), rendered on their own, and put back as numbered references.
 const crypto = require('crypto');
@@ -97,6 +102,25 @@ const CITE = /\[\[source\/([a-z0-9]+(?:-[a-z0-9]+)*)(?:\|([^\]\n]*))?\]\]/y;
 const CITE_RUN = /\[\[source\/[^\]\n]*\]\](?:[ \t]*[,;]?[ \t]*\[\[source\/[^\]\n]*\]\])*/y;
 const NOTE = (n) => `\uE000${n}\uE001`;
 const CITE_MARK = (k) => `\uE002${k}\uE003`;
+const READ_MARK = (k) => `\uE004${k}\uE005`;
+const READING = /^(#{1,6})[ \t]+(?:weiterführende literatur|further reading|weiterlesen)[ \t]*#*[ \t]*$/i;
+
+// The further-reading sections' citations → markers: { text, reads: [{ slug, loc }] } (before the footnotes are cut out)
+function extractReading(text) {
+  const reads = [];
+  let level = 0;  // inside a further-reading section: its heading's level
+  const lines = String(text).split('\n').map((line) => {
+    const h = /^(#{1,6})[ \t]/.exec(line);
+    if (h) {
+      if (READING.test(line)) level = h[1].length;
+      else if (level && h[1].length <= level) level = 0;
+      return line;
+    }
+    if (!level) return line;
+    return line.replace(new RegExp(CITE.source, 'g'), (_, slug, loc) => { reads.push({ slug, loc: (loc || '').trim() }); return READ_MARK(reads.length - 1); });
+  });
+  return { text: lines.join('\n'), reads };
+}
 
 function citesIn(s) {
   const out = [];
@@ -140,8 +164,9 @@ function extractNotes(text) {
 
 function renderWithNotes(text, env) {
   const { T, esc, locator } = bibliography;
-  const { body, notes } = extractNotes(text);
-  if (!notes.length) return md.render(text, env);
+  const { text: rest, reads } = extractReading(text);
+  const { body, notes } = extractNotes(rest);
+  if (!notes.length && !reads.length) return md.render(text, env);
   const sources = (env.names && env.names.sources) || new Map();
   const p = `n${crypto.createHash('sha1').update(text).digest('hex').slice(0, 6)}`;
   const cited = new Map();
@@ -176,7 +201,20 @@ function renderWithNotes(text, env) {
     html = html.replace(/^(\s*)([a-zà-ÿ])/, (_, sp, c) => sp + c.toUpperCase());  // "Jede Anmerkung beginnt mit einem Grossbuchstaben"
     return `<li id="${p}-n${idx + 1}">${end(html)} <a href="#${p}-r${idx + 1}" class="fn-back" title="back to the text">↩</a></li>`;
   });
-  const main = md.render(body, env).replace(/\uE000(\d+)\uE001/g, (_, n) => `<sup class="fn-ref" id="${p}-r${n}"><a href="#${p}-n${n}">${n}</a></sup>`);
+  // further reading: the whole entry, linked to the source's page, a page range after it ("…, S. 179–190.")
+  const reading = (c) => {
+    const s = sources.get(c.slug);
+    const loc = locator(c.loc, s && s.kind);
+    if (!s) return `<span class="missing">${esc(c.slug)}</span>${loc ? `, ${esc(loc)}` : ''}`;
+    if (env.cited) env.cited.add(c.slug);
+    // an article's or chapter's entry ends with its pages: the part to read is "hier S. 179–190" (the KHIST guide)
+    const here = /\b(S|pp?|Sp|col)\. \d/.test(s.full.replace(/<[^>]+>/g, '')) ? `${T.here.replace(/:$/, '')} ` : '';
+    const full = loc ? `${s.full.replace(/\.$/, '')}, ${here}${esc(loc)}.` : s.full;
+    return `<a href="/bibliography/${c.slug}" class="source-link further-reading" data-source="${c.slug}">${full}</a>`;
+  };
+  const main = md.render(body, env).replace(/\uE000(\d+)\uE001/g, (_, n) => `<sup class="fn-ref" id="${p}-r${n}"><a href="#${p}-n${n}">${n}</a></sup>`)
+    .replace(/\uE004(\d+)\uE005/g, (_, k) => reading(reads[+k]));
+  if (!notes.length) return main;
   const list = (entries, title) => (entries.length ? `<h4>${title}</h4><ul class="source-list">${entries
     .sort(([, a], [, b]) => a.siglum.localeCompare(b.siglum, bibliography.LANG))
     .map(([slug, s]) => `<li id="${p}-s-${slug}"><span class="siglum">${esc(s.siglum)}:</span> ${s.full}</li>`).join('')}</ul>` : '');

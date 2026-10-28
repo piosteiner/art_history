@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Texts: further reading under its own heading
+- **What:** in every entry text (`renderMarkdown`, `src/markdown.js`), a heading "Weiterführende Literatur", "Further
+  reading" or "Weiterlesen" (any level) starts a section in which `[[source/…]]` is not a footnote but the whole
+  bibliographic entry, linked to the source's page (`a.source-link.further-reading`); a locator after `|` is the part to
+  read ("…, S. 40–49, hier S. 44–46." when the entry has its own pages). Such sources are not repeated under
+  "Literatur" (only what the text cites); the section ends at the next heading as high. Same syntax as citations, so
+  the editor's `[[` suggestions, broken-link checks and "cited in" on the source's page work unchanged. Admin hint for
+  Markdown fields extended. Site (`frontend/src/glossary.ts`): no citation popover on further-reading links (the
+  citation is there already). Documentation pages (`src/pages.js`) have no citations, so no further reading either.
+  Unit test in `test/bibliography.test.js`.
+- **Why:** owner: many entries will point to reading not (yet) read — worth recording, but not a source of a statement.
+- **Revert:** revert the commit and deploy (texts using the heading then show their citations as footnotes again).
+
 ### Data: the Kangakai researched and completed
 - **What:** saved through the admin's save path as pio. Institution Kangakai: kind art society, founded February 1884,
   ended 1887–1889 (with the Tokyo School of Fine Arts), Tokyo, English name "Painting Appreciation Society", German

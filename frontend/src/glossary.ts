@@ -128,8 +128,9 @@ export function wireTextLinks(root: Element, terms: Record<string, GlossaryHint>
     if (!hint) return;
     attach(a, () => entryPreview(hint, a.getAttribute('href')!), hint.image_url ? 'entry has-image' : 'entry');
   });
-  // short references ("Busch 1993", "Ebd."): the full citation (HTML with italic titles, escaped by the API)
-  root.querySelectorAll<HTMLAnchorElement>('a.source-link').forEach((a) => {
+  // short references ("Busch 1993", "Ebd."): the full citation (HTML with italic titles, escaped by the API) — not for
+  // further reading, which is the full citation already: a plain link to the source's page
+  root.querySelectorAll<HTMLAnchorElement>('a.source-link:not(.further-reading)').forEach((a) => {
     const s = sources?.[a.dataset.source ?? ''];
     if (!s) return;
     attach(a, () => html`<div class="glossary-popover-head"><strong>${s.siglum}</strong></div>
