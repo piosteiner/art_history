@@ -88,6 +88,10 @@ test('formatFuzzyDate: stored range → shortest text', () => {
   assert.equal(formatFuzzyDate('[1926-12-01,1927-01-01)'), '1926-12');           // December: not "1926-12/1926"
   assert.equal(formatFuzzyDate('[1886-12-01,1888-01-01)'), '1886-12/1887-12');
   assert.equal(formatFuzzyDate('[1886-03-15,1887-01-01)'), '1886-03-15/1886-12');  // 15 March–December 1886
+  // a single day on the last of a month or year is that day (Matisse's birth was "1869-12-31/1869-12")
+  assert.equal(formatFuzzyDate('[1869-12-31,1870-01-01)'), '1869-12-31');
+  assert.equal(formatFuzzyDate('[1889-06-30,1889-07-01)'), '1889-06-30');
+  assert.equal(formatFuzzyDate('[1888-02-29,1888-03-01)'), '1888-02-29');
   assert.equal(formatFuzzyDate('[1808-01-01,)'), '1808/');
   assert.equal(formatFuzzyDate('[1973-06-01,)'), '1973-06/');
   assert.equal(formatFuzzyDate(null), null);

@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Fix: a single day on the last of a month was written as a span
+- **What:** `formatFuzzyDate` (`src/fuzzy-date.js`) wrote the end of a range as coarsely as its bound allowed, so a
+  single day that is the last of a month or a year came out as a span: [1869-12-31,1870-01-01) → "1869-12-31/1869-12"
+  ("31 December–December 1869"). Now a single day is that day ("1869-12-31"). The stored dates were right; the text
+  was wrong where it is written back: edit forms (`dateToDoc` fell back to the label, "31 December 1869"), the
+  Wikidata comparison and the YAML export — about 50 dates (birth/death of artists and people, provenance steps,
+  founding dates). The Wikidata comparison also treats two texts for the same span ("31 December 1869" and
+  "1869-12-31", "1880s" and "1880/1889") as the same date (`dateRelation()` in `src/admin/wikidata.js`), instead of
+  "yours is more precise". Tests in `test/fuzzy-date.test.js`.
+- **Why:** owner: Matisse's birth (31 December 1869) showed as "yours is more precise (within Wikidata's range)".
+- **Revert:** revert the commit and deploy.
+
 ### Data: Rodin's Gates of Hell with its casts
 - **What:** saved through the admin's save path as pio. "The Gates of Hell" became a group (kind versions, 1880–1917 as a
   duration, German overview; its size moved to the casts) with nine parts: the eight bronzes numbered as the casts are

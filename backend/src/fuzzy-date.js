@@ -332,6 +332,9 @@ function formatFuzzyDate(range, { coarseStart = false } = {}) {
   if (m[2] === '') return `${pointText(lo, coarsest)}/`;
 
   const hi = parseBound(m[2]);
+  // A single day is that day, also the last of a month or a year: [1869-12-31,1870-01-01) is "1869-12-31", not
+  // "1869-12-31/1869-12" — the end alone would be written as coarsely as its bound allows (below)
+  if (coarsest === DAY && pointText(dayBefore(hi), DAY) === pointText(lo, DAY)) return pointText(lo, DAY);
   // The end is written as coarsely as its bound allows — but not coarser than the start: [1926-12-01,1927-01-01) is
   // "1926-12" (December), not "1926-12/1926", although 1927-01-01 is also a year boundary.
   let endPrecision = hi.mo === 1 && hi.d === 1 ? YEAR : hi.d === 1 ? MONTH : DAY;

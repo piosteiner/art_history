@@ -594,18 +594,21 @@ async function compare(db, t, qid, ours, entity) {
 function scalarRow(key, ours, display, value, declined) {
   const theirs = value && value.value !== undefined ? value.value : value;
   let status = !ours ? 'empty' : String(ours) === String(theirs) ? 'same' : 'differs';
-  if (status === 'differs' && value && value.value !== undefined && withinRange(ours, theirs)) status = 'more-precise';
+  if (status === 'differs' && value && value.value !== undefined) status = dateRelation(ours, theirs) || status;
   return { key, ours, display, value, status, declined };
 }
 
-// Our date lies within Wikidata's (e.g. "1889-06" in "1889"): ours is just more precise, not in conflict.
-function withinRange(ours, theirs) {
+// Two dates written differently: the same span ("31 December 1869" and "1869-12-31", "1880s" and "1880/1889") is the
+// same date; ours inside Wikidata's (e.g. "1889-06" in "1889") is just more precise, not in conflict. → 'same' |
+// 'more-precise' | null
+function dateRelation(ours, theirs) {
   try {
     const bounds = (text) => parseFuzzyDate(text, { openEnd: true }).range.slice(1, -1).split(',');
     const [a1, a2] = bounds(ours);
     const [b1, b2] = bounds(theirs);
-    return a1 >= b1 && (b2 === '' || (a2 !== '' && a2 <= b2));
-  } catch { return false; }
+    if (a1 === b1 && a2 === b2) return 'same';
+    return a1 >= b1 && (b2 === '' || (a2 !== '' && a2 <= b2)) ? 'more-precise' : null;
+  } catch { return null; }
 }
 
 function distanceKm([lon1, lat1], [lon2, lat2]) {
