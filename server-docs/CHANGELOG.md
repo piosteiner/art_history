@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: Kanzan's Yoroboshi completed as the pair of screens it is
+- **What:** artwork 102820 (TNM A-10508, "6曲1双" — a pair of six-fold screens; the museum's page shows only the right
+  screen): description with footnotes from the TNM page (Inten 1915, the scene, Sankeien's Garyūbai, Important
+  Cultural Property; new source `tnm-a-10508-yoroboshi`); size noted as per screen; image captions (pair, right, left —
+  right before left), the left screen's credit corrected (was "Shoen Uemura"); names: `jp` → `ja` original
+  {弱法師|よろぼし} as the museum reads it, romanization Yoroboshi.
+- **Why:** owner: the museum's page shows only one screen.
+- **Revert:** restore from the entry's history in the CMS.
+
 ### Data: the owner's notes with a claim cite their source as a footnote; last unsourced sentences
 - **What:** 19 links in the owner's notes became footnotes with bibliography entries; the owner's words are unchanged
   (Chestnut Trees — BBC; Fleurs dans une coupe — Guardian; Adam and Eve — Belvedere; Kusama — ArtReview; de Kooning —
