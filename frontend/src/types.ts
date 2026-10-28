@@ -122,7 +122,7 @@ export interface SourceHint { siglum: string; citation: string }
 export interface EntryHint { type: EntityType; slug: string; name: string; subtitle: string | null; image_url: string | null; excerpt: string | null }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
-export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'other';  // group of works: API 131, mounting: 133
+export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'other';  // group of works: API 131, mounting: 133, performing arts: 145
 
 // ---- countries and polities ---------------------------------------------------------------------
 
@@ -495,6 +495,9 @@ export interface Term extends DetailBase, Named {
   images: Image[]; image_url: string | null;
   /** Entries whose texts link this term. */
   used_in: EntryRef[];
+  /** API 145: its broader terms upwards, nearest first (Yoroboshi → Noh → …), and the terms directly under it. */
+  broader: KindRef[];
+  narrower: { slug: string; name: string; category: TermCategory; definition: string | null }[];
 }
 
 export interface Source extends DetailBase, Named, Omit<SourceItem, 'slug'> {

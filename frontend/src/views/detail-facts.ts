@@ -3,7 +3,7 @@ import {
   countryLink, countryName, creatorsOf, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, spanLabel, type Html,
 } from '../html';
 import type {
-  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, PolityLink,
+  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, PolityLink, Term,
 } from '../types';
 import { partsGrid } from '../series';
 import { STATUS_LABEL } from '../catalog';
@@ -62,6 +62,12 @@ function dimensionsFact(main: Dimensions | null, parts: PartDimensions[]) {
 
 const refs = (type: Parameters<typeof link>[0], items: KindRef[]) =>
   items.length ? html`${items.map((r, i) => html`${i ? ', ' : ''}${link(type, r.slug, r.name)}`)}` : null;
+
+// the terms directly under a glossary term (API 145), each with its short definition
+const narrowerTerms = (terms: Term['narrower']) => (terms.length
+  ? html`<section class="narrower-terms"><h2>Narrower terms</h2><ul class="plain-list">${terms.map((t) =>
+    html`<li>${link('term', t.slug, t.name)}${t.definition ? html` <span class="muted">— ${t.definition}</span>` : ''}</li>`)}</ul></section>`
+  : null);
 
 const artworkList = (works: ArtworkSummary[], withCreator: boolean) => html`<ul class="plain-list">${works.map((w) => html`<li>
   ${link('artwork', w.slug, w.title)}${w.created ? html` <span class="muted">${w.created.label}</span>` : ''}
@@ -254,8 +260,13 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
     case 'term':
       return {
         title: e.name, subtitle: `Glossary · ${e.category}`, lead: e.definition, text: e.description_html, images: e.images,
-        facts: [['Category', html`<a href="/glossary?category=${e.category}">${e.category}</a>`], ['Also known as', otherNames(e)]],
-        extra: [backlinks('Used in', 'Entries whose texts mention this term.', e.used_in)].filter((x): x is Html => !!x),
+        facts: [
+          ['Category', html`<a href="/glossary?category=${e.category}">${e.category}</a>`],
+          // API 145: the chain of broader terms, widest first — Performing arts › Noh
+          ['Broader term', (e.broader ?? []).length ? html`${[...e.broader].reverse().map((t, i) => html`${i ? ' › ' : ''}${link('term', t.slug, t.name)}`)}` : null],
+          ['Also known as', otherNames(e)],
+        ],
+        extra: [narrowerTerms(e.narrower ?? []), backlinks('Used in', 'Entries whose texts mention this term.', e.used_in)].filter((x): x is Html => !!x),
       };
     case 'event':
       return {

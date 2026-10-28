@@ -1002,6 +1002,23 @@ test('glossary: A–Z with category buttons, term page with definition, related 
   await expect(page.locator('main a', { hasText: 'The Great Wave off Kanagawa' })).toBeVisible(); // used in
 });
 
+test('glossary: broader terms as a chain, narrower terms listed (API 145)', async ({ page }) => {
+  const term = (slug: string, name: string, extra: Record<string, unknown>) => ({
+    type: 'term', slug, name, category: 'performing arts', definition: null, alt_names: [], names: [], description_html: null,
+    images: [], image_url: null, wikidata_id: null, metadata: {}, updated_at: '', glossary: {}, used_in: [], relationships: [],
+    broader: [], narrower: [], ...extra });
+  await page.route(/\/v1\/glossary\/yoroboshi$/, (r) => r.fulfill({ json: term('yoroboshi', 'Yoroboshi', {
+    definition: 'Noh play', broader: [{ slug: 'noh', name: 'Noh' }, { slug: 'performing-arts', name: 'Performing arts' }] }) }));
+  await page.route(/\/v1\/glossary\/noh$/, (r) => r.fulfill({ json: term('noh', 'Noh', {
+    narrower: [{ slug: 'yoroboshi', name: 'Yoroboshi', category: 'performing arts', definition: 'Noh play' }] }) }));
+  await page.goto('/glossary/yoroboshi');
+  await expect(page.locator('h1')).toHaveText('Yoroboshi');
+  await expect(page.locator('main')).toContainText('Performing arts › Noh'); // widest first
+  await page.locator('main a', { hasText: /^Noh$/ }).click();
+  await expect(page.locator('h1')).toHaveText('Noh');
+  await expect(page.locator('.narrower-terms')).toContainText('Yoroboshi — Noh play');
+});
+
 // ---- co-creators, [[links]] to entries, provenance (migrations 028–031; the live content may not have examples yet,
 // so the tests change the live responses) ----
 async function patch(page: Page, url: RegExp, change: (body: Record<string, unknown>) => void) {

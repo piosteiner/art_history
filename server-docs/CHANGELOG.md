@@ -11,6 +11,8 @@ Format: date — what — why — how to revert.
   and `narrower`; site term pages show the chain (widest first) and "Narrower terms". Docs: api.md, data-model.md.
   Tests: e2e (form, both directions, loop refused), schema smoke (self, loop), site. The smoke test's "unknown
   relationship type" example used `married_to`, which exists since 140 — now `no_such_type`.
+  Data: Yoroboshi → category performing arts, Japanese name 弱法師 as original with the reading よろぼし; Kokutai
+  technique → other.
 - **Why:** owner: theatre (Noh, Kabuki, Bunraku …) is a theme of its own; subcategories decided against in favour of
   broader terms (as thesauri do).
 - **Revert:** `ALTER TABLE glossary DROP COLUMN parent_id` (the trigger goes with it); an enum value can't be dropped —
