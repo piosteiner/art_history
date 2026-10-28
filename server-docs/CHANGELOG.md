@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: Wikidata IDs of Renaissance and Amsterdam
+- **What:** movement Renaissance Q1133779 ("Renaissance art") → Q4692 ("Renaissance", what artists' movement
+  statements use), its `kind` citation with it; place Amsterdam Q9899 (the municipality incl. Weesp) → Q727 (the city;
+  26 statements of our people point there). Found by a scan of the items our entries' statements point to (1,026 items,
+  2,986 referenced) against our entries of the same name with another Q-id: 9 pairs, the other 7 are right as they are
+  (Tokyo, Scipione Borghese, Balla's Mercury, Expressionism, Rijksmuseum, Brussels, Ornans, El Escorial — the statements
+  mean another, narrower or historical item).
+- **Why:** owner: the Wikidata comparison offered "Early Renaissance" for Q4692.
+- **Revert:** set the old Q-ids back in the CMS.
+
 ### Admin: a "similar name" suggestion prefers the same name
 - **What:** `similarEntry()` (Wikidata comparison) and the "did you mean" of `src/admin/autocreate.js` ordered ties of
   `word_similarity` A–Z: every name containing the label whole scores 1, so "Renaissance" (ours with another Q-id) was
