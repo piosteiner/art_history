@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: the Kangakai researched and completed
+- **What:** saved through the admin's save path as pio. Institution Kangakai: kind art society, founded February 1884,
+  ended 1887–1889 (with the Tokyo School of Fine Arts), Tokyo, English name "Painting Appreciation Society", German
+  description with 11 footnotes (founding and the split from the Ryūchikai, the exhibitions of 1885 and 1886, Hōgai and
+  Gahō, Okakura's speech of 1887, the end); founded by Ernest Fenollosa, Okakura Kakuzō, Kuki Ryūichi (people created
+  from Wikidata with `scripts/from-wikidata.js`), associated with Nihonga. Sources Pickhardt 2012 (MA thesis, University
+  of Hawaiʻi), Japanese Wikipedia (鑑画会, 下村観山). Prizes at the exhibitions left out: not checkable today (Art
+  Platform Japan and the Tobunken repository under maintenance).
+- **Why:** owner: research and update the Kangakai entry.
+- **Revert:** admin history of the entries.
+
 ### Relationships: targets added on the fly, like provenance owners (migration 149)
 - **What:** the target picker of the relationship form (and of "+ Add co-creator") offers "+ New artist / person /
   institution / movement / event “…”" for the name as typed — only the types the chosen relationship allows
