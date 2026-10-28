@@ -12,6 +12,7 @@ Format: date — what — why — how to revert.
   {弱法師|よろぼし} as the museum reads it, romanization Yoroboshi.
   Then (owner): a sentence on the museum's count — „6曲1双“ = one pair, so it holds both screens though it shows only
   the right one; a single screen would be „6曲1隻“ (source `wikipedia-ja-byobu`).
+  ColBase shows both screens (owner's check): cited as `colbase-tnm-a-10508`.
 - **Why:** owner: the museum's page shows only one screen.
 - **Revert:** restore from the entry's history in the CMS.
 
