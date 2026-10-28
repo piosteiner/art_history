@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Data: sources for the descriptions of artists, movements, people and a place
+- **What:** 18 descriptions with footnotes — artists Hokusai, Gauguin, Hiroshige, Van Gogh; movements Edo period,
+  Japonisme, Post-Impressionism, Ukiyo-e; French Polynesia; people Adolph von Liebermann, the Guillemets, Ernst Henke,
+  Hugo Oberwelland, Hugo von Tschudi, Lorenzo Nasi, Michel Monet, Roberto Strozzi, Theo van Gogh. 19 new sources
+  (14 Wikipedia articles; pages: SMB Eisenwalzwerk and Im Wintergarten, Kunsthaus Zürich 2599, Uffizi Madonna of the
+  Goldfinch, Louvre Esclave mourant). Corrected: Post-Impressionism first used by Fry in 1906 (text: coined 1910);
+  Japonisme after the reopening of trade in 1858 (text: 1850s); Gauguin nine weeks in Arles, later years in Tahiti and
+  the Marquesas (text: two months, last decade); Tschudi director (not general director); Liebermann manufacturer,
+  banker, collector, "brother of Louis" dropped; Nasi a cloth merchant ("Raphael's friend" not in the sources); Strozzi
+  "exile in France" dropped, his gift on to the king added. The owner's own notes (links: RKD, Guardian, ArtReview,
+  Britannica, SMB, Wikipedia, Merriam-Webster, Tages-Anzeiger, Kretschmer, NDR, Sotheby's, British Museum, Wikidata,
+  McNay) stay as written. Still without a source: the Contarelli study day (the programme pages aren't recorded).
+- **Why:** owner: descriptions without sources (batch 5).
+- **Revert:** restore descriptions from their history in the CMS; the sources can stay.
+
 ### Data: sources for the descriptions of institutions; online lexicon entries with their address
 - **What:** 11 institution descriptions with footnotes; 13 new sources (Wikipedia: Bauhaus, Bayerische
   Staatsgemäldesammlungen, J. R. Czernin, Musée du Louvre, KHM, Stallburg, Otto Kallir, Neue Pinakothek, Friedrich Welz,
