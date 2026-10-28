@@ -2,6 +2,15 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-28
+
+### Site: links in the changelog, the roadmap and the documentation open in a new tab
+- **What:** `linksInNewTab()` in `frontend/src/html.ts` — a link inside a written text (changelog points, roadmap notes,
+  the documentation and the privacy page) gets `target=_blank` at the moment of the click, so the page read stays;
+  links to the documentation's own headings and chapters stay in the tab. Site test.
+- **Why:** owner: links in those texts should open in a new tab.
+- **Revert:** revert the commit.
+
 ## 2026-10-27
 
 ### Groups: the works of one group are no duplicates (144); the Saint Matthew cycle in the Contarelli Chapel (data)

@@ -10,7 +10,7 @@
 // (/dokumentation#provenienz) opens that chapter.
 import { ApiError, getPage, getWholePage, searchPage, type Page, type PageChapter, type PageSearch } from '../api';
 import { keepInView, markedWords, markWords, wordsToMark } from '../highlight';
-import { html, render, trusted } from '../html';
+import { html, linksInNewTab, render, trusted } from '../html';
 import { navigate, replaceUrl } from '../router';
 import { guard, showError } from './common';
 
@@ -107,6 +107,7 @@ function chapter(box: HTMLElement, p: Page, c: PageChapter) {
 export function textPage(main: HTMLElement, slug: string) {
   render(main, html`<article class="page prose-page text-page"><p class="muted small">Loading…</p></article>`);
   const box = main.querySelector<HTMLElement>('article')!;
+  linksInNewTab(box, 'article', (href) => href.startsWith('#'));
   const current = guard();
   getWholePage(slug)
     .then((p) => {
@@ -123,6 +124,8 @@ export function textPage(main: HTMLElement, slug: string) {
 export function page(main: HTMLElement, slug: string, chapterId: string | null) {
   render(main, html`<article class="page prose-page doc-page"><p class="muted small">Loading…</p></article>`);
   const box = main.querySelector<HTMLElement>('article')!;
+  // links in the text: a new tab — except to the documentation's own headings and chapters
+  linksInNewTab(box, '.doc-body', (href) => href.startsWith(BASE));
   const current = guard();
   getPage(slug, chapterId)
     .then((p) => {

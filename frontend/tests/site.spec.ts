@@ -2511,6 +2511,32 @@ test('statistics (API /v1/stats): from the footer, tiles with today\'s numbers, 
   await expect(prov.locator('tr', { hasText: 'Reichsmark' })).toContainText('1924–1948');
 });
 
+test('links in the changelog, the roadmap and the documentation open in a new tab; the documentation\'s own headings stay in it', async ({ page, context }) => {
+  await page.route(/\/v1\/changelog(\?.*)?$/, (r) => r.fulfill({ json: { data: [{ id: 1, day: '2026-10-27', title: null,
+    items: [{ kind: 'neu', label: 'Neu', html: 'Siehe <a href="/statistik">Statistik</a>', roadmap: null, area: null, area_color: null }] }], total: 1, topics: [] } }));
+  await page.goto('/changelog');
+  const [tab] = await Promise.all([context.waitForEvent('page'), page.locator('.cl-text a', { hasText: 'Statistik' }).click()]);
+  await tab.waitForLoadState();
+  expect(new URL(tab.url()).pathname).toBe('/statistik');
+  expect(new URL(page.url()).pathname).toBe('/changelog');                       // the changelog stays
+  await tab.close();
+
+  const base = { slug: 'projekt-dokumentation', title: 'Projekt Dokumentation', lang: 'de-CH', updated_at: '2026-10-27T12:00:00Z', words: 10, chars: 60,
+    intro_html: '', chapters: [{ id: 'eins', title: 'Eins', words: 10, chars: 60 }, { id: 'zwei', title: 'Zwei', words: 1, chars: 4 }] };
+  const chapter = { id: 'eins', index: 1, title: 'Eins', prev: null, next: { id: 'zwei', title: 'Zwei' }, toc: [{ level: 1, id: 'eins', text: 'Eins' }],
+    html: '<h1 id="eins">Eins</h1><p><a href="/roadmap">Roadmap</a> und <a href="/dokumentation/zwei#zwei">das zweite Kapitel</a></p>' };
+  await page.route(/\/v1\/pages\/projekt-dokumentation(\?.*)?$/, (r) => r.fulfill({ json: new URL(r.request().url()).searchParams.get('chapter') ? { ...base, chapter } : base }));
+  await page.goto('/dokumentation/eins');
+  const [tab2] = await Promise.all([context.waitForEvent('page'), page.locator('.doc-body a', { hasText: 'Roadmap' }).click()]);
+  await tab2.waitForLoadState();
+  expect(new URL(tab2.url()).pathname).toBe('/roadmap');
+  await tab2.close();
+  // a link to another chapter of the documentation: in this tab
+  await page.locator('.doc-body a', { hasText: 'das zweite Kapitel' }).click();
+  await expect(page).toHaveURL(/\/dokumentation\/zwei#zwei$/);
+  expect(context.pages()).toHaveLength(1);
+});
+
 test('changelog and roadmap (API 118): from the footer, kinds as badges, filtered by kind, more on scrolling; the roadmap columns', async ({ page }) => {
   const entry = (id: number, day: string, kind = 'neu') => ({ id, day, title: id === 1 ? 'Patch: Suche' : null,
     items: [{ kind, label: kind === 'neu' ? 'Neu' : 'Behoben', html: `Punkt <a href="/artists/paul-gauguin">${id}</a>`, roadmap: id === 1 ? { id: 7, title: 'Suche' } : null,

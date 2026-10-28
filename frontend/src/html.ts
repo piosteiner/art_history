@@ -344,3 +344,20 @@ export function titleStatusLine(e: Nameable) {
   try { language = d.lang ? new Intl.DisplayNames(['en'], { type: 'language' }).of(d.lang.split('-')[0]) ?? '' : ''; } catch { /* unknown code */ }
   return d.status === 'official' ? `Official ${language ? `${language} ` : ''}title` : `Own ${language ? `${language} ` : ''}translation of the title`;
 }
+
+/**
+ * Links inside written texts (the changelog's points, the roadmap's notes, the documentation) open in a new tab, so
+ * the text stays where the reader was. Set at the moment of the click — on texts loaded later too — before the
+ * router's own handling (it leaves links with a target alone). `keep`: links that stay in the tab (the
+ * documentation's links to its own headings).
+ */
+export function linksInNewTab(root: Element, within: string, keep: (href: string) => boolean = () => false) {
+  root.addEventListener('click', (e) => {
+    const a = (e.target as Element).closest?.('a[href]') as HTMLAnchorElement | null;
+    if (!a || !a.closest(within) || a.hasAttribute('target')) return;
+    const href = a.getAttribute('href') ?? '';
+    if (href.startsWith('#') || keep(href)) return;
+    a.target = '_blank';
+    a.rel = 'noopener';
+  }, true);
+}

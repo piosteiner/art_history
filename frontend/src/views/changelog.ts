@@ -8,7 +8,7 @@
 //                                title, topic and dates — a click opens its notes (<details>); done items only for the
 //                                CMS's number of days
 import { CHANGELOG_FEED, getChangelog, getRoadmap, type ChangeKind, type ChangelogEntry, type ChangelogTopic } from '../api';
-import { html, render, trusted } from '../html';
+import { html, linksInNewTab, render, trusted } from '../html';
 import { replaceUrl } from '../router';
 import { guard, showError } from './common';
 
@@ -42,6 +42,7 @@ export function changelogPage(main: HTMLElement, params: URLSearchParams) {
   const topicChips = main.querySelector<HTMLElement>('.cl-topics')!;
   const list = main.querySelector<HTMLElement>('.cl-list')!;
   const more = main.querySelector<HTMLElement>('.cl-more')!;
+  linksInNewTab(list, '.cl-text');   // links in the points: a new tab, the changelog stays
   const current = guard();
   let request = 0;
   let loaded = 0;
@@ -116,6 +117,7 @@ export function roadmapPage(main: HTMLElement) {
   document.title = 'Roadmap · Art History';
   render(main, html`<section class="page roadmap-page" lang="de-CH"><h1>Roadmap</h1><p class="muted small">Lädt…</p></section>`);
   const box = main.querySelector<HTMLElement>('section')!;
+  linksInNewTab(box, '.roadmap-notes');   // links in the notes: a new tab, the roadmap stays
   const current = guard();
   getRoadmap()
     .then(({ columns, done_days: doneDays }) => {
