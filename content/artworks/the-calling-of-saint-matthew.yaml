@@ -3,28 +3,27 @@ title_lang: it
 title: Vocazione di san Matteo
 names:
   - lang: en
-    role: original
-    text: The Calling of Saint Matthew
-  - lang: nl
     role: translation
-    text: De roeping van Matteüs
+    text: The Calling of Saint Matthew
+  - lang: de
+    role: translation
+    text: Die Berufung des Hl. Matthäus
   - lang: fr
     role: translation
     text: La Vocation de saint Matthieu
-  - lang: de
-    role: original
-    text: Die Berufung des Hl. Matthäus
-  - lang: it
+  - lang: nl
     role: translation
-    text: Vocazione di san Matteo
+    text: De roeping van Matteüs
   - lang: es
     role: translation
     text: La vocación de San Mateo
+parent: ciclo-di-san-matteo
+part_number: "1"
 creator: caravaggio
 created: 1599/1600
 materials: [oil paint, canvas]
 dimensions: [340, 322]
-institution: san-luigi-dei-francesi
+institution: contarelli-chapel
 location: [12.47467, 41.89958]
 wikidata_id: Q969377
 metadata:
@@ -35,29 +34,23 @@ images:
     license: CC0
     credit: Gleb Simonov
 provenance:
-  - owner: person/matthieu-cointerel
-    acquired: 1599-07
-    method: commission
-    place: rome
-    label: Cardinal Matteo Contarelli (Matthieu Cointrel, d. 1585) had left funds and instructions in his will for a chapel of St Matthew; the commission (July 1599) was for the two side canvases
-    sources:
-      - url: https://it.wikipedia.org/wiki/Vocazione_di_san_Matteo
-        note: La commissione del dipinto si deve al cardinale Matteo Contarelli, il quale, intorno al 1590, aveva lasciato fondi e istruzioni specifiche nel suo testamento per la decorazione di una cappella dedicata al suo omonimo San Matteo. […] la commissione, datata luglio 1599, prevedeva la realizzazione di sole due tele per le pareti laterali della cappella
-        source: wikipedia-it-cappella-contarelli
-        accessed: 2026-10-20
   - owner: institution/san-luigi-dei-francesi
-    acquired: 1600
+    acquired: 1599-07-23
+    method: commission
+    direct: true
     place: rome
-    label: the Contarelli Chapel, where the three canvases still hang
+    label: commissioned for the left wall of the Contarelli Chapel (400 scudi for the two side canvases); hung there in July 1600, where it still is
+    notes_md: Paid from the funds Cardinal [[person/matthieu-cointerel]] (Matteo Contarelli, d. 1585) left in his will for the chapel; the commission came from the church’s administrators.
     sources:
       - url: https://it.wikipedia.org/wiki/Vocazione_di_san_Matteo
-        note: Le tre tele sono a tutt'oggi esposte nella Cappella Contarelli.
+        note: La commissione del dipinto si deve al cardinale Matteo Contarelli, il quale, intorno al 1590, aveva lasciato fondi e istruzioni specifiche nel suo testamento per la decorazione di una cappella dedicata al suo omonimo San Matteo. […] la commissione, datata luglio 1599, prevedeva la realizzazione di sole due tele per le pareti laterali della cappella · La commissione del dipinto si deve al cardinale Matteo Contarelli, il quale, intorno al 1590, aveva lasciato fondi e istruzioni specifiche nel suo testamento per la decorazione di una cappella dedicata al suo omonimo San Matteo.
         source: wikipedia-it-cappella-contarelli
         accessed: 2026-10-20
+      - url: https://en.wikipedia.org/wiki/Paintings_in_the_Contarelli_Chapel
+        note: "“A contract dated 23 July 1599, provided for the payment of 400 ecus for the two side canvases, which were inaugurated barely a year later, in July of the Holy Year 1600: the Calling and the Martyrdom of Saint Matthew” · “Caravaggio was finally commissioned in 1599 when the church administrators decided to reopen the Contarelli Chapel to worship.”"
+        source: wikipedia-en-paintings-in-the-contarelli-chapel
+        accessed: 2026-10-27
 sources:
-  names:
-    - accessed: 2026-10-20
-      wikidata: Q969377
   creator:
     - accessed: 2026-10-20
       property: P170
@@ -69,8 +62,4 @@ sources:
   dimensions:
     - accessed: 2026-10-20
       property: P2048
-      wikidata: Q969377
-  institution:
-    - accessed: 2026-10-20
-      property: P195
       wikidata: Q969377

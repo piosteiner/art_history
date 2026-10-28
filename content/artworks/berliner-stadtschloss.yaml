@@ -1,0 +1,33 @@
+public_id: 102411
+title_lang: de
+title: Berliner Stadtschloss
+names:
+  - lang: de
+    role: translation
+    text: Berliner Schloss
+created: 1451
+location: [13.40278, 52.5175]
+wikidata_id: Q170119
+metadata:
+  sources: [Wikidata Q170119 (retrieved 2026-10-27)]
+relationships:
+  - type: created_in
+    to: place/berlin
+    period: 1451
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg/1280px-Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg
+    license: Public domain
+    credit: Königlich Preußische Messbildanstalt
+identifiers:
+  gnd: 4137109-4
+  viaf: "237754894"
+sources:
+  created:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q170119
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q170119

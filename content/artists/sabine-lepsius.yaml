@@ -1,0 +1,18 @@
+public_id: 102445
+name: Sabine Lepsius
+given_name: Sabine
+family_name: Lepsius
+birth: 1864-01-15
+death: 1942-11-22
+wikidata_id: Q530383
+metadata:
+  sources: [Wikidata Q530383 (retrieved 2026-10-27)]
+sources:
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q530383
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q530383

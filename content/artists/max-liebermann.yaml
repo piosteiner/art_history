@@ -1,0 +1,63 @@
+public_id: 102432
+name: Max Liebermann
+names:
+  - Max Lieberman
+  - Maks Liberman
+  - Max von Liebermann
+  - Liebermann
+  - M. Liebermann
+  - Professor Max Liebermann
+  - Prof. Max Liebermann
+  - M. Lieberman
+  - lang: ja
+    role: translation
+    text: マックス・リーバーマン
+  - lang: zh
+    role: translation
+    text: 馬克思·利伯曼
+  - lang: ko
+    role: translation
+    text: 막스 리버만
+  - lang: ru
+    role: translation
+    text: Макс Либерман
+birth: 1847-07-20
+death: 1935-02-08
+wikidata_id: Q158062
+metadata:
+  sources: [Wikidata Q158062 (retrieved 2026-10-27)]
+relationships:
+  - type: relative_of
+    to: person/adolph-von-liebermann
+    label: uncle of Max Liebermann (brother of his father Louis)
+    sources:
+      - accessed: 2026-10-27
+        property: P1038
+        wikidata: Q158062
+      - accessed: 2026-10-27
+        wikidata: Q55854929
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Liebermann%2C_Max_-_Selbstbildnis_mit_Pinsel_-_1913_-_Stiftung_Stadtmuseum_Berlin.jpg/1280px-Liebermann%2C_Max_-_Selbstbildnis_mit_Pinsel_-_1913_-_Stiftung_Stadtmuseum_Berlin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Liebermann,_Max_-_Selbstbildnis_mit_Pinsel_-_1913_-_Stiftung_Stadtmuseum_Berlin.jpg
+    license: Public domain
+    credit: Max Liebermann
+identifiers:
+  bnf: 11956143w
+  dome: "225"
+  gnd: "118572695"
+  idref: "027543501"
+  kulturnav: eae5c2c3-22e4-4f35-8f1d-9c97fe05755d
+  lc: n50050133
+  nlk: KAC202252526
+  rkd: "49931"
+  ulan: "500115690"
+  viaf: "32004869"
+sources:
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q158062
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q158062

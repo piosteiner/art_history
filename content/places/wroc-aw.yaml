@@ -1,0 +1,16 @@
+public_id: 102423
+name: Wrocław
+kind: settlement
+location: [17.0325, 51.11]
+wikidata_id: Q1799
+metadata:
+  sources: [Wikidata Q1799 (retrieved 2026-10-27)]
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q1799
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q1799

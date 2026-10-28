@@ -1,0 +1,43 @@
+public_id: 102459
+name: Villa Medici
+names:
+  - lang: fr
+    role: translation
+    text: villa Médicis
+  - lang: es
+    role: translation
+    text: Villa Médici
+  - lang: ja
+    role: translation
+    text: ヴィラ・メディチ
+  - lang: zh
+    role: translation
+    text: 美第奇别墅
+  - lang: ko
+    role: translation
+    text: 빌라 메디치
+  - lang: ru
+    role: translation
+    text: Вилла Медичи
+kind: site
+parent: rome
+country_code: IT
+location: [12.48252, 41.90827]
+wikidata_id: Q1362663
+metadata:
+  sources: [Wikidata Q1362663 (retrieved 2026-10-27)]
+identifiers:
+  gnd: 4305695-7
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q1362663
+  parent:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q1362663
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q1362663

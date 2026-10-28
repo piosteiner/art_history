@@ -1,0 +1,53 @@
+public_id: 102439
+name: Eduard Arnhold
+given_name: Eduard
+family_name: Arnhold
+names:
+  - lang: ru
+    role: translation
+    text: Эдуард Арнольд
+kind: person
+occupations: [merchant, art collector, politician, entrepreneur, patron of the arts, donor]
+birth: 1849-06-10
+death: 1925-08-10
+wikidata_id: Q105675
+metadata:
+  sources: [Wikidata Q105675 (retrieved 2026-10-27)]
+relationships:
+  - type: patron_of
+    to: institution/alte-nationalgalerie
+    period: 1896
+    label: gave the money for Manet’s Im Wintergarten
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Erwerbung: “1896 Geschenk von Berliner Kunstfreunden (Eduard Arnhold, Ernst und Robert von Mendelssohn, Hugo Oppenheim)”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e7/Eduard_Arnhold_by_Emil_Orlik.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eduard_Arnhold_by_Emil_Orlik.jpg
+    license: Public domain
+    credit: Emil Orlík
+identifiers:
+  bnf: "144638597"
+  gnd: "123272432"
+  idref: "076321142"
+  lc: no2003018011
+  viaf: "40282063"
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q105675
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q105675
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q105675
+  occupations:
+    - accessed: 2026-10-27
+      property: P106
+      wikidata: Q105675

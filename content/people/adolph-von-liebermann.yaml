@@ -1,0 +1,24 @@
+public_id: 102431
+name: Adolph von Liebermann
+given_name: Adolph
+family_name: von Liebermann
+names:
+  - lang: de
+    role: alternative
+    text: Adolf Liebermann von Wahlendorf
+  - Adolf von Liebermann
+kind: person
+occupations: [manufacturer, merchant, art collector]
+birth: 1829-11-13
+death: 1893-01-30
+description_md: Berlin manufacturer, merchant and art collector; the Nationalgalerie calls him a banker. He bought Adolph Menzel's [[artwork/eisenwalzwerk-moderne-cyklopen]] while it was being painted and sold it to the Nationalgalerie in 1875. He was the uncle of the painter [[artist/max-liebermann]], the brother of Max Liebermann's father Louis.
+wikidata_id: Q55854929
+sources:
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q55854929
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q55854929

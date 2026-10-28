@@ -1,0 +1,49 @@
+public_id: 102440
+name: Ernst von Mendelssohn-Bartholdy
+names:
+  - lang: ja
+    role: translation
+    text: エルンスト・フォン・メンデルスゾーン・バルトルディ
+kind: person
+occupations: [banker, politician, councillor of commerce]
+birth: 1846-12-13
+death: 1909-12-24
+wikidata_id: Q1360879
+metadata:
+  sources: [Wikidata Q1360879 (retrieved 2026-10-27)]
+relationships:
+  - type: patron_of
+    to: institution/alte-nationalgalerie
+    period: 1896
+    label: gave the money for Manet’s Im Wintergarten
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Erwerbung: “1896 Geschenk von Berliner Kunstfreunden (Eduard Arnhold, Ernst und Robert von Mendelssohn, Hugo Oppenheim)”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Ludwig_Passini_Bildnis_Ernst_Mendelssohn-Bartholdy_1894.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ludwig_Passini_Bildnis_Ernst_Mendelssohn-Bartholdy_1894.jpg
+    license: Public domain
+    credit: Ludwig Passini
+identifiers:
+  gnd: "117561193"
+  lc: n86032788
+  viaf: "15549466"
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q1360879
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q1360879
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q1360879
+  occupations:
+    - accessed: 2026-10-27
+      property: P106
+      wikidata: Q1360879

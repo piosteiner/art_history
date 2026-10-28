@@ -1,0 +1,98 @@
+public_id: 102422
+title_lang: de
+title: Eisenwalzwerk (Moderne Cyklopen)
+names:
+  - lang: en
+    role: translation
+    text: The Iron Rolling Mill (Modern Cyclopes)
+creator: adolph-von-menzel
+created: 1872/1875
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [158, 254]
+institution: alte-nationalgalerie
+inventory_number: A I 201
+web_url: https://id.smb.museum/object/958605
+wikidata_id: Q18683026
+metadata:
+  sources: [Wikidata Q18683026 (retrieved 2026-10-27)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Menzel%2C_Adolf_von_-_Eisenwalzwerk_%28Moderne_Cyklopen%29.jpg/1280px-Menzel%2C_Adolf_von_-_Eisenwalzwerk_%28Moderne_Cyklopen%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Menzel,_Adolf_von_-_Eisenwalzwerk_(Moderne_Cyklopen).jpg
+    license: Public domain
+    credit: Adolph von Menzel
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Adolph_Menzel_-_Eisenwalzwerk_-_Google_Art_Project.jpg/1280px-Adolph_Menzel_-_Eisenwalzwerk_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Adolph_Menzel_-_Eisenwalzwerk_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Adolph von Menzel
+provenance:
+  - owner: person/adolph-von-liebermann
+    ended: 1875-10-18
+    method: purchase
+    direct: true
+    place: berlin
+    label: bought from the artist while it was being painted
+    notes_md: The museum's record calls him “Onkel des Künstlers”; he was the uncle of [[artist/max-liebermann]] (Wikidata Q55854929), not known to be related to Menzel.
+    sources:
+      - url: https://recherche.smb.museum/detail/958605
+        note: "Provenienz: “Adolph von Liebermann, Berlin (Onkel des Künstlers), 18.10.1875” · Objektbeschreibung: “Bei Menzel schaltete sich der Bankier Adolph von Liebermann als Käufer erst ein, als mindestens der Plan schon gefaßt war.”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: institution/alte-nationalgalerie
+    acquired: 1875-10-18
+    method: purchase
+    direct: true
+    place: berlin
+    label: bought by the Nationalgalerie from Liebermann's collection
+    notes_md: The record gives 18 October 1875 with Liebermann's line and “1875 Ankauf” as the acquisition.
+    sources:
+      - url: https://recherche.smb.museum/detail/958605
+        note: "Erwerbung: “1875 Ankauf aus der Sammlung des Bankiers Adolph von Liebermann, Berlin”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+sources:
+  names:
+    - accessed: 2026-10-27
+      wikidata: Q18683026
+  medium:
+    - url: http://search.smb.museum/en/object/obj-958605
+      source: search-smb-museum
+      accessed: 2026-10-27
+  created:
+    - url: http://search.smb.museum/en/object/obj-958605
+      source: search-smb-museum
+      accessed: 2026-10-27
+  creator:
+    - accessed: 2026-10-27
+      property: P170
+      wikidata: Q18683026
+    - url: http://search.smb.museum/en/object/obj-958605
+      source: search-smb-museum
+      accessed: 2026-10-27
+  dimensions:
+    - accessed: 2026-10-27
+      property: P2048
+      wikidata: Q18683026
+    - url: http://search.smb.museum/en/object/obj-958605
+      source: search-smb-museum
+      accessed: 2026-10-27
+  institution:
+    - accessed: 2026-10-27
+      property: P195
+      wikidata: Q18683026
+    - url: http://search.smb.museum/en/object/obj-958605
+      source: search-smb-museum
+      accessed: 2026-10-27
+  title_status:
+    - url: http://search.smb.museum/en/object/obj-958605
+      source: search-smb-museum
+      accessed: 2026-10-27
+  inventory_number:
+    - accessed: 2026-10-27
+      property: P217
+      wikidata: Q18683026
+    - url: http://search.smb.museum/en/object/obj-958605
+      source: search-smb-museum
+      accessed: 2026-10-27

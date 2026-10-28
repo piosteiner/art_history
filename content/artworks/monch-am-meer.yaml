@@ -1,0 +1,154 @@
+public_id: 102406
+title_lang: de
+title: Mönch am Meer
+names:
+  - lang: en
+    role: translation
+    text: The Monk by the Sea
+  - lang: fr
+    role: translation
+    text: Le Moine au bord de la mer
+  - lang: it
+    role: translation
+    text: Monaco in riva al mare
+  - lang: es
+    role: translation
+    text: Monje a la orilla del mar
+creator: caspar-david-friedrich
+created: 1808/1810
+created_span: duration
+kind: oil painting
+medium: Öl auf Leinwand
+materials: [oil paint, canvas]
+dimensions: [110, 171.5]
+institution: alte-nationalgalerie
+inventory_number: NG 9/85
+web_url: http://search.smb.museum/en/object/obj-965511
+wikidata_id: Q693746
+metadata:
+  sources: [Wikidata Q693746 (retrieved 2026-10-27)]
+relationships:
+  - type: created_in_polity
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-27
+        property: P495
+        wikidata: Q693746
+  - type: associated_with
+    to: movement/german-romanticism
+    sources:
+      - accessed: 2026-10-27
+        property: P135
+        wikidata: Q693746
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Friedrich%2C_Caspar_David_-_M%C3%B6nch_am_Meer_-_Alte_Nationalgalerie_in_Berlin.jpg/1280px-Friedrich%2C_Caspar_David_-_M%C3%B6nch_am_Meer_-_Alte_Nationalgalerie_in_Berlin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Friedrich,_Caspar_David_-_M%C3%B6nch_am_Meer_-_Alte_Nationalgalerie_in_Berlin.jpg
+    license: Public domain
+    credit: Caspar David Friedrich
+provenance:
+  - owner: person/friedrich-wilhelm-iv-von-preussen
+    acquired: 1810
+    method: purchase
+    direct: true
+    place: berlin
+    label: as crown prince, at the Berlin Academy exhibition
+    sources:
+      - url: https://recherche.smb.museum/detail/965511
+        note: "Provenienz: “Kauf: Kronprinz Friedrich Wilhelm von Preußen, 1810”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: person/friedrich-wilhelm-iii-von-preussen
+    acquired: 1810
+    method: purchase
+    direct: true
+    place: berlin
+    label: at the Berlin Academy exhibition
+    notes_md: The same record names the king in its description and the crown prince in its provenance.
+    sources:
+      - url: https://recherche.smb.museum/detail/965511
+        note: "Objektbeschreibung: “1810 wurde das Gemälde … auf der Berliner Akademieausstellung gezeigt und dort von König Friedrich Wilhelm III. erworben.”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+    alternative_of: 0
+  - owner_label: Prussian Crown
+    ended: 1928
+    place: berlin
+    label: Besitz der Krone
+    notes_md: When it passed from the crown prince to the Crown is not stated.
+    sources:
+      - url: https://recherche.smb.museum/detail/965511
+        note: "Provenienz: “Besitz der Krone”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: institution/staatliche-schlosser-und-garten-berlin
+    acquired: 1928
+    ended: 1957
+    method: transfer
+    direct: true
+    place: berlin
+    label: legal successor of the Crown (Rechtsnachfolge)
+    notes_md: The painting came to the museums “from the destroyed Berliner Stadtschloss” ([[artwork/berliner-stadtschloss]]).
+    sources:
+      - url: https://recherche.smb.museum/detail/965511
+        note: "Provenienz: “Staatliche Schlösser und Gärten, Berlin (Rechtsnachfolge), 1928–1957”; Erwerbung: “Aus dem zerstörten Berliner Stadtschloß.”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: institution/staatliche-museen-zu-berlin
+    acquired: 1957
+    method: transfer
+    direct: true
+    place: berlin
+    label: as Staatliche Museen Preußischer Kulturbesitz (Stiftung Preußischer Kulturbesitz); shown in the Alte Nationalgalerie
+    sources:
+      - url: https://recherche.smb.museum/detail/965511
+        note: "Erwerbung: “Seit 1957 Eigentum der Staatlichen Museen Preußischer Kulturbesitz”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+identifiers:
+  gnd: 4239308-5
+  viaf: "180913580"
+sources:
+  kind:
+    - url: http://search.smb.museum/en/object/obj-965511
+      source: search-smb-museum
+      accessed: 2026-10-27
+  created:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q693746
+    - url: http://search.smb.museum/en/object/obj-965511
+      source: search-smb-museum
+      accessed: 2026-10-27
+  creator:
+    - url: http://search.smb.museum/en/object/obj-965511
+      source: search-smb-museum
+      accessed: 2026-10-27
+  materials:
+    - url: http://search.smb.museum/en/object/obj-965511
+      source: search-smb-museum
+      accessed: 2026-10-27
+  dimensions:
+    - accessed: 2026-10-27
+      property: P2048
+      wikidata: Q693746
+    - url: http://search.smb.museum/en/object/obj-965511
+      source: search-smb-museum
+      accessed: 2026-10-27
+  institution:
+    - accessed: 2026-10-27
+      property: P195
+      wikidata: Q693746
+    - url: http://search.smb.museum/en/object/obj-965511
+      source: search-smb-museum
+      accessed: 2026-10-27
+  title_status:
+    - url: http://search.smb.museum/en/object/obj-965511
+      source: search-smb-museum
+      accessed: 2026-10-27
+  inventory_number:
+    - accessed: 2026-10-27
+      property: P217
+      wikidata: Q693746
+    - url: http://search.smb.museum/en/object/obj-965511
+      source: search-smb-museum
+      accessed: 2026-10-27

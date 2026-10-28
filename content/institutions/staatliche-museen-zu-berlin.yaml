@@ -1,0 +1,91 @@
+public_id: 102349
+name_lang: de
+name: Staatliche Museen zu Berlin
+names:
+  - lang: de
+    role: alternative
+    text: SMB
+  - lang: en
+    role: alternative
+    text: Berlin State Museums
+  - lang: de
+    role: former
+    text: Königliche Museen zu Berlin
+  - lang: de
+    role: former
+    text: Staatliche Museen Preußischer Kulturbesitz
+kind: Öffentliche Stiftung
+founded: 1823
+place: berlin
+location: [13.3645, 52.50929]
+website_url: https://www.smb.museum/
+wikidata_id: Q700216
+metadata:
+  sources: [Wikidata Q700216 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/stiftung-preussischer-kulturbesitz
+    sources:
+      - accessed: 2026-10-27
+        property: P749
+        wikidata: Q700216
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/AltMuseum_1a.jpg/1280px-AltMuseum_1a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AltMuseum_1a.jpg
+    license: CC BY-SA 3.0
+    credit: Manfred Brückels
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Pergamonmuseum_Front.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pergamonmuseum_Front.jpg
+    license: CC BY-SA 4.0
+    credit: Raimond Spekking
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Berlin_Museumsinsel_Fernsehturm.jpg/1280px-Berlin_Museumsinsel_Fernsehturm.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin_Museumsinsel_Fernsehturm.jpg
+    license: CC BY-SA 3.0
+    credit: Thomas Wolf, www.foto-tw.de
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Kunstgewerbemuseum_Berlin_Kulturforum_entrance.jpg/1280px-Kunstgewerbemuseum_Berlin_Kulturforum_entrance.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kunstgewerbemuseum_Berlin_Kulturforum_entrance.jpg
+    license: CC0
+    credit: Marsupium
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Berlin_Kulturforum_2002a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin_Kulturforum_2002a.jpg
+    license: CC BY 3.0
+    credit: Andreas Praefcke
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/AlteNationalgalerie_1a.jpg/1280px-AlteNationalgalerie_1a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AlteNationalgalerie_1a.jpg
+    license: Public domain
+    credit: Manfred Brückels
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/aa/Berlin_Hamburger_Bahnhof_%E2%80%93_Museum_f%C3%BCr_Gegenwart.jpg/1280px-Berlin_Hamburger_Bahnhof_%E2%80%93_Museum_f%C3%BCr_Gegenwart.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin_Hamburger_Bahnhof_%E2%80%93_Museum_f%C3%BCr_Gegenwart.jpg
+    license: CC BY-SA 4.0
+    credit: Marek Śliwecki
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Haupteingang_Museum_Europ%C3%A4ischer_Kulturen%2CArnimallee_25._%C2%A9_Staatliche_Museen_zu_Berlin_Foto_von_Ute_Franz-Scarciglia2011.jpg/1280px-Haupteingang_Museum_Europ%C3%A4ischer_Kulturen%2CArnimallee_25._%C2%A9_Staatliche_Museen_zu_Berlin_Foto_von_Ute_Franz-Scarciglia2011.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Haupteingang_Museum_Europ%C3%A4ischer_Kulturen,Arnimallee_25._%C2%A9_Staatliche_Museen_zu_Berlin_Foto_von_Ute_Franz-Scarciglia2011.jpg
+    license: CC BY-SA 3.0
+    credit: Foto von Ute Franz- Scarciglia
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Arch%C3%A4ologisches_Zentrum_der_Staatlichen_Museen_zu_Berlin_-_panoramio.jpg/1280px-Arch%C3%A4ologisches_Zentrum_der_Staatlichen_Museen_zu_Berlin_-_panoramio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arch%C3%A4ologisches_Zentrum_der_Staatlichen_Museen_zu_Berlin_-_panoramio.jpg
+    license: CC BY-SA 3.0
+    credit: ThTsmb
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Berlin_-_Gipsformerei.jpg/1280px-Berlin_-_Gipsformerei.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin_-_Gipsformerei.jpg
+    license: CC BY-SA 4.0
+    credit: Marek Śliwecki
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Institut_f%C3%BCr_Museumsforschung.jpg/1280px-Institut_f%C3%BCr_Museumsforschung.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Institut_f%C3%BCr_Museumsforschung.jpg
+    license: CC BY-SA 4.0
+    credit: DerHisto
+identifiers:
+  bnf: 11867482w
+  gnd: 26095-2
+  idref: "027515516"
+  lc: n81120629
+  viaf: "312977417"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q700216
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q700216

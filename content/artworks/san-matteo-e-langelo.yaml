@@ -1,0 +1,24 @@
+public_id: 102488
+title_lang: it
+title: San Matteo e l'angelo
+names:
+  - lang: en
+    role: translation
+    text: Saint Matthew and the Angel
+  - lang: de
+    role: translation
+    text: Der Evangelist Matthäus mit dem Engel
+parent: ciclo-di-san-matteo
+part_number: "2"
+parts_count: 2
+creator: caravaggio
+created: 1602
+kind: versions
+description_md: "The altarpiece of the [[institution/contarelli-chapel]], in two versions. The [[artwork/san-matteo-e-langelo-prima-versione]] was installed on 26 May 1602 and replaced by the [[artwork/san-matteo-e-langelo-seconda-versione]] in February 1603. Whether the first was rejected for an “irreverent” saint, as Giovanni Baglione wrote, is doubted: it may only have been hung for a while until the altar was finished. Vincenzo Giustiniani bought it; it is known today only from photographs."
+wikidata_id: Q25412019
+sources:
+  created:
+    - url: https://en.wikipedia.org/wiki/Paintings_in_the_Contarelli_Chapel
+      note: “In 1602, Caravaggio was commissioned to replace Cobaert’s statue with an altarpiece depicting Saint Matthew and the Angel. This canvas was installed on 26 May of the same year, the day of Pentecost, but was again rejected by the commissioners; Caravaggio immediately proposed another version, The Inspiration of Saint Matthew, which was accepted and installed in February 1603”
+      source: wikipedia-en-paintings-in-the-contarelli-chapel
+      accessed: 2026-10-27

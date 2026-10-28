@@ -1,0 +1,43 @@
+public_id: 102376
+name: James-Simon-Galerie
+names:
+  - lang: nl
+    role: alternative
+    text: James Simon Galerie
+  - lang: en
+    role: translation
+    text: James Simon Gallery
+founded: 2019-07-13
+place: berlin
+location: [13.39701, 52.52]
+website_url: http://www.museumsinsel-berlin.de/index.php?lang=en&page=2_7_1
+wikidata_id: Q664484
+metadata:
+  sources: [Wikidata Q664484 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - url: https://www.smb.museum/museen-einrichtungen/alles-auf-einen-blick/
+        source: smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Berlin_James-Simon-Galerie_asv2019-07_img2.jpg/1280px-Berlin_James-Simon-Galerie_asv2019-07_img2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin_James-Simon-Galerie_asv2019-07_img2.jpg
+    license: FAL
+    credit: A.Savin
+identifiers:
+  gnd: "1195664036"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q664484
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q664484
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q664484

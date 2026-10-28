@@ -1,0 +1,28 @@
+public_id: 102456
+name: Contarelli Chapel
+names:
+  - lang: it
+    role: original
+    text: Cappella Contarelli
+  - lang: fr
+    role: translation
+    text: Chapelle Contarelli
+founded: 1600
+place: rome
+location: [12.47467, 41.89958]
+description_md: "A side chapel of [[institution/san-luigi-dei-francesi]] in Rome, founded with the bequest of Cardinal [[person/matthieu-cointerel]] (Matteo Contarelli, d. 1585). Caravaggio’s three paintings of Saint Matthew were made for it and still hang there: the [[artwork/ciclo-di-san-matteo]]."
+wikidata_id: Q3657340
+metadata:
+  sources: [Wikidata Q3657340 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/san-luigi-dei-francesi
+    sources:
+      - accessed: 2026-10-27
+        property: P361
+        wikidata: Q3657340
+sources:
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q3657340

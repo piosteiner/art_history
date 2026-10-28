@@ -1,0 +1,81 @@
+public_id: 102455
+title_lang: it
+title: Martirio di san Matteo
+names:
+  - lang: en
+    role: translation
+    text: The Martyrdom of Saint Matthew
+  - lang: de
+    role: translation
+    text: Das Martyrium des Hl. Matthäus
+  - lang: fr
+    role: translation
+    text: Le Martyre de saint Matthieu
+  - lang: es
+    role: translation
+    text: El martirio de San Mateo
+  - lang: ja
+    role: translation
+    text: 聖マタイの召命
+  - lang: zh
+    role: translation
+    text: 圣玛窦殉道
+  - lang: ko
+    role: translation
+    text: 성 마태오의 순교
+  - lang: ru
+    role: translation
+    text: Мученичество святого Матфея
+parent: ciclo-di-san-matteo
+part_number: "3"
+creator: caravaggio
+created: 1599/1600
+kind: oil painting
+materials: [oil paint, canvas]
+dimensions: [323, 343]
+institution: contarelli-chapel
+location: [12.47467, 41.89958]
+wikidata_id: Q2338417
+metadata:
+  sources: [Wikidata Q2338417 (retrieved 2026-10-27)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Caravaggio_%E2%80%94_The_Martyrdom_of_Saint_Matthew.jpg/1280px-Caravaggio_%E2%80%94_The_Martyrdom_of_Saint_Matthew.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caravaggio_%E2%80%94_The_Martyrdom_of_Saint_Matthew.jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: institution/san-luigi-dei-francesi
+    acquired: 1599-07-23
+    method: commission
+    direct: true
+    place: rome
+    label: commissioned for the right wall of the Contarelli Chapel (400 scudi for the two side canvases); hung there in July 1600, where it still is
+    notes_md: Paid from the funds Cardinal [[person/matthieu-cointerel]] (Matteo Contarelli, d. 1585) left in his will for the chapel; the commission came from the church’s administrators.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Paintings_in_the_Contarelli_Chapel
+        note: "“A contract dated 23 July 1599, provided for the payment of 400 ecus for the two side canvases, which were inaugurated barely a year later, in July of the Holy Year 1600: the Calling and the Martyrdom of Saint Matthew” · “Caravaggio was finally commissioned in 1599 when the church administrators decided to reopen the Contarelli Chapel to worship.”"
+        source: wikipedia-en-paintings-in-the-contarelli-chapel
+        accessed: 2026-10-27
+      - url: https://it.wikipedia.org/wiki/Martirio_di_san_Matteo
+        note: La commissione del dipinto si deve al cardinale Matteo Contarelli, il quale, intorno al 1590, aveva lasciato fondi e istruzioni specifiche nel suo testamento per la decorazione di una cappella dedicata al suo omonimo San Matteo.
+        source: wikipedia-it-martirio-di-san-matteo
+        accessed: 2026-10-27
+sources:
+  created:
+    - url: https://it.wikipedia.org/wiki/Martirio_di_san_Matteo
+      note: “databile al 1599-1600”
+      source: wikipedia-it-martirio-di-san-matteo
+      accessed: 2026-10-27
+  creator:
+    - accessed: 2026-10-27
+      property: P170
+      wikidata: Q2338417
+  materials:
+    - accessed: 2026-10-27
+      property: P186
+      wikidata: Q2338417
+  dimensions:
+    - url: https://it.wikipedia.org/wiki/Martirio_di_san_Matteo
+      note: “Il Martirio di San Matteo è un dipinto a olio su tela (323x343 cm) di Caravaggio, databile al 1599-1600”
+      source: wikipedia-it-martirio-di-san-matteo
+      accessed: 2026-10-27

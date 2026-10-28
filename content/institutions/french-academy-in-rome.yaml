@@ -4,6 +4,15 @@ founded: 1666
 wikidata_id: Q337494
 metadata:
   sources: [Wikidata Q337494 (retrieved 2026-10-18)]
+relationships:
+  - type: participated_in
+    to: event/saint-matthew-and-the-contarelli-chapel-study-day
+    label: host, with the organisers
+    sources:
+      - url: https://villamedici.it/en/programme/saint-matthew-and-the-contarelli-chapel/
+        note: “the study days organized by the French Embassy to the Holy See, the Pieux-établissements de la France à Rome et Lorette, in collaboration with the Académie de France à Rome – Villa Médicis”
+        source: villa-medici-saint-matthew-contarelli-chapel
+        accessed: 2026-10-27
 sources:
   founded:
     - accessed: 2026-10-18

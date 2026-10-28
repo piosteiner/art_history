@@ -1,0 +1,46 @@
+public_id: 102369
+name: Gemäldegalerie, Berlin
+names: [Gemäldegalerie, Gemäldegalerie Berlin]
+founded: 1830
+place: berlin
+location: [13.36472, 52.50861]
+address: Matthäikirchplatz
+website_url: http://www.smb.museum/gg
+wikidata_id: Q165631
+metadata:
+  sources: [Wikidata Q165631 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - url: https://www.smb.museum/museen-einrichtungen/alles-auf-einen-blick/
+        source: smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Kulturforum.Berlin.Portal.jpg/1280px-Kulturforum.Berlin.Portal.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kulturforum.Berlin.Portal.jpg
+    license: CC0
+    credit: Membeth
+identifiers:
+  bnf: 13178399v
+  gnd: 806975-X
+  idref: "032394330"
+  lc: n94003740
+  viaf: "139597962"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q165631
+  address:
+    - accessed: 2026-10-27
+      property: P6375
+      wikidata: Q165631
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q165631
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q165631

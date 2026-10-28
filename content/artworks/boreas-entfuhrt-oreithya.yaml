@@ -90,9 +90,6 @@ sources:
       note: "Bildmaß: 146.0 × 140.5 cm — Wikidata gives 146 × 140"
       source: akademie-sammlung-online
       accessed: 2026-10-21
-    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
-      source: akademie-sammlung-online
-      accessed: 2026-10-21
   institution:
     - accessed: 2026-10-20
       property: P195
@@ -112,8 +109,5 @@ sources:
   other_dimensions:
     - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
       note: "“Rahmenmaß: 173.5 × 167.5 × 8.5 cm”"
-      source: akademie-sammlung-online
-      accessed: 2026-10-21
-    - url: https://collection.kunstsammlungenakademie.at/de/collection/item/1062/
       source: akademie-sammlung-online
       accessed: 2026-10-21

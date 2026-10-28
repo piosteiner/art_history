@@ -1,0 +1,49 @@
+public_id: 102460
+name: Embassy of France, Holy See
+names:
+  - Embassy of France to the Holy See
+  - lang: fr
+    role: translation
+    text: ambassade de France près le Saint-Siège
+  - lang: de
+    role: translation
+    text: Botschaft von Frankreich in Vatikanstadt
+  - lang: it
+    role: translation
+    text: ambasciata di Francia presso la Santa Sede
+  - lang: es
+    role: translation
+    text: embajada de Francia ante la Santa Sede
+  - lang: zh
+    role: translation
+    text: 法國駐聖座大使館
+  - lang: ru
+    role: translation
+    text: Посольство Франции в Ватикане
+address: Via Piave, 23
+website_url: https://va.diplomatie.gouv.fr/
+wikidata_id: Q2841796
+metadata:
+  sources: [Wikidata Q2841796 (retrieved 2026-10-27)]
+relationships:
+  - type: participated_in
+    to: event/saint-matthew-and-the-contarelli-chapel-study-day
+    label: organiser
+    sources:
+      - url: https://villamedici.it/en/programme/saint-matthew-and-the-contarelli-chapel/
+        note: “the study days organized by the French Embassy to the Holy See, the Pieux-établissements de la France à Rome et Lorette, in collaboration with the Académie de France à Rome – Villa Médicis”
+        source: villa-medici-saint-matthew-contarelli-chapel
+        accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/French_embassy_to_the_Holy_See.JPG/1280px-French_embassy_to_the_Holy_See.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:French_embassy_to_the_Holy_See.JPG
+    license: CC BY-SA 3.0
+    credit: Caius bonus
+identifiers:
+  gnd: 4826210-9
+  viaf: "1488145857086822921903"
+sources:
+  address:
+    - accessed: 2026-10-27
+      property: P6375
+      wikidata: Q2841796

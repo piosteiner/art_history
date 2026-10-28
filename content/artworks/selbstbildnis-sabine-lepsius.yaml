@@ -1,0 +1,106 @@
+public_id: 102449
+title_lang: de
+title: Selbstbildnis
+names:
+  - lang: en
+    role: translation
+    text: Self-portrait
+creator: sabine-lepsius
+created: 1885
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [83.7, 63.5]
+institution: alte-nationalgalerie
+inventory_number: NG 1/56
+web_url: https://id.smb.museum/object/961917
+wikidata_id: Q23047574
+metadata:
+  sources: [Wikidata Q23047574 (retrieved 2026-10-27)]
+relationships:
+  - type: depicts_person
+    to: artist/sabine-lepsius
+    sources:
+      - accessed: 2026-10-27
+        property: P180
+        wikidata: Q23047574
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Self-portrait_by_Sabine_Lepsius.jpg/1280px-Self-portrait_by_Sabine_Lepsius.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-portrait_by_Sabine_Lepsius.jpg
+    license: Public domain
+    credit: Sabine Lepsius
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/Sabine_lepsius%2C_autoritratto%2C_1885.jpg/1280px-Sabine_lepsius%2C_autoritratto%2C_1885.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sabine_lepsius,_autoritratto,_1885.jpg
+    license: CC BY 3.0
+    credit: Sailko
+provenance:
+  - owner: person/monica-berenberg-lepsius
+    ended: 1956
+    method: inheritance
+    direct: true
+    place: lauda
+    label: the artist’s daughter, from her estate
+    notes_md: The record names it “Nachlass/Vermächtnis” — from the artist’s estate, by inheritance or bequest; when it came to her is not stated (Sabine Lepsius died in 1942).
+    sources:
+      - url: https://recherche.smb.museum/detail/961917
+        note: "Provenienz: “Nachlass/Vermächtnis: Monica Berenberg, geb. Lepsius, Lauda bei Baden (Tochter der Künstlerin), 1956”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: institution/alte-nationalgalerie
+    acquired: 1956
+    method: purchase
+    direct: true
+    place: berlin
+    label: bought by the Nationalgalerie from the artist’s daughter
+    sources:
+      - url: https://recherche.smb.museum/detail/961917
+        note: "Erwerbung: “1956 Ankauf von der Tochter der Künstlerin, Monica Lepsius-Berenberg, Lauda bei Baden”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+sources:
+  names:
+    - accessed: 2026-10-27
+      wikidata: Q23047574
+  medium:
+    - url: https://id.smb.museum/object/961917
+      source: id-smb-museum
+      accessed: 2026-10-27
+  created:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q23047574
+    - url: https://id.smb.museum/object/961917
+      source: id-smb-museum
+      accessed: 2026-10-27
+  creator:
+    - accessed: 2026-10-27
+      property: P170
+      wikidata: Q23047574
+    - url: https://id.smb.museum/object/961917
+      source: id-smb-museum
+      accessed: 2026-10-27
+  dimensions:
+    - accessed: 2026-10-27
+      property: P2048
+      wikidata: Q23047574
+    - url: https://id.smb.museum/object/961917
+      source: id-smb-museum
+      accessed: 2026-10-27
+  institution:
+    - accessed: 2026-10-27
+      property: P195
+      wikidata: Q23047574
+    - url: https://id.smb.museum/object/961917
+      source: id-smb-museum
+      accessed: 2026-10-27
+  title_status:
+    - url: https://id.smb.museum/object/961917
+      source: id-smb-museum
+      accessed: 2026-10-27
+  inventory_number:
+    - accessed: 2026-10-27
+      property: P217
+      wikidata: Q23047574
+    - url: https://id.smb.museum/object/961917
+      source: id-smb-museum
+      accessed: 2026-10-27

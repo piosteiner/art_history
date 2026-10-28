@@ -1,0 +1,42 @@
+public_id: 102442
+name: Hugo Oppenheim
+given_name: Hugo
+family_name: Oppenheim
+names: [Hugo Otto Josef Oppenheim]
+kind: person
+occupations: [banker, councillor of commerce]
+birth: 1847-02-05
+death: 1921-01-23
+wikidata_id: Q21032850
+metadata:
+  sources: [Wikidata Q21032850 (retrieved 2026-10-27)]
+relationships:
+  - type: patron_of
+    to: institution/alte-nationalgalerie
+    period: 1896
+    label: gave the money for Manet’s Im Wintergarten
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Erwerbung: “1896 Geschenk von Berliner Kunstfreunden (Eduard Arnhold, Ernst und Robert von Mendelssohn, Hugo Oppenheim)”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+identifiers:
+  gnd: "117605506"
+  viaf: "35238565"
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q21032850
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q21032850
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q21032850
+  occupations:
+    - accessed: 2026-10-27
+      property: P106
+      wikidata: Q21032850

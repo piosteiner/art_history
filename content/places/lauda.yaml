@@ -1,0 +1,25 @@
+public_id: 102452
+name: Lauda
+names: [Lauda (Lauda-Königshofen)]
+kind: site
+parent: lauda-konigshofen
+country_code: DE
+location: [9.70674, 49.56605]
+wikidata_id: Q1807270
+metadata:
+  sources: [Wikidata Q1807270 (retrieved 2026-10-27)]
+identifiers:
+  gnd: 4133118-7
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q1807270
+  parent:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q1807270
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q1807270

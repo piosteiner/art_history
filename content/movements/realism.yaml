@@ -1,0 +1,11 @@
+public_id: 102425
+name: realism
+kind: movement
+wikidata_id: Q10857409
+metadata:
+  sources: [Wikidata Q10857409 (retrieved 2026-10-27)]
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q10857409

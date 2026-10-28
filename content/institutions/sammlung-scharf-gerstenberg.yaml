@@ -1,0 +1,49 @@
+public_id: 102403
+name_lang: de
+name: Sammlung Scharf-Gerstenberg
+names:
+  - lang: en
+    role: translation
+    text: Scharf-Gerstenberg Collection
+founded: 2008
+place: berlin
+location: [13.2967, 52.5191]
+address: Schloßstraße 70, 14059 Berlin
+website_url: https://www.smb.museum/museen-und-einrichtungen/sammlung-scharf-gerstenberg/home.html
+wikidata_id: Q322010
+metadata:
+  sources: [Wikidata Q322010 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - url: https://www.smb.museum/museen-einrichtungen/alles-auf-einen-blick/
+        source: smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/da/Ls_aegypt_museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ls_aegypt_museum.jpg
+    license: CC BY-SA 3.0
+    credit: The original uploader was Maik Hager at German Wikipedia.
+identifiers:
+  gnd: 10354081-7
+  idref: "139162224"
+  lc: nb2010018452
+  viaf: "167470876"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q322010
+  address:
+    - accessed: 2026-10-27
+      property: P6375
+      wikidata: Q322010
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q322010
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q322010

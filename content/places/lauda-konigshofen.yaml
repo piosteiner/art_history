@@ -1,0 +1,16 @@
+public_id: 102451
+name: Lauda-Königshofen
+kind: site
+location: [9.70389, 49.56861]
+wikidata_id: Q61717
+metadata:
+  sources: [Wikidata Q61717 (retrieved 2026-10-27)]
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q61717
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q61717

@@ -1,0 +1,28 @@
+public_id: 102413
+name: Humboldt Forum
+names: [Humboldt-Forum]
+place: berlin
+location: [13.40278, 52.5175]
+website_url: https://www.humboldtforum.org/de/
+wikidata_id: Q20196262
+metadata:
+  sources: [Wikidata Q20196262 (retrieved 2026-10-27)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/At_Berlin_2024_241.jpg/1280px-At_Berlin_2024_241.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:At_Berlin_2024_241.jpg
+    license: CC BY-SA 4.0
+    credit: Photograph by Mike Peel (www.mikepeel.net).
+identifiers:
+  gnd: "1042486751"
+  idref: "147911834"
+  lc: no2009081668
+  viaf: "156339086"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q20196262
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q20196262

@@ -1,0 +1,47 @@
+public_id: 102394
+name: Neues Museum, Berlin
+names: [Neues Museum]
+founded: 1855
+place: berlin
+location: [13.3976, 52.5202]
+address: James-Simon-Galerie, Bodestraße, 10178 Berlin
+website_url: https://www.smb.museum/museen-einrichtungen/neues-museum/home/
+wikidata_id: Q157316
+metadata:
+  sources: [Wikidata Q157316 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - url: https://www.smb.museum/museen-einrichtungen/alles-auf-einen-blick/
+        source: smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Neues_Museum_-_Joy_of_Museums.jpg/1280px-Neues_Museum_-_Joy_of_Museums.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Neues_Museum_-_Joy_of_Museums.jpg
+    license: CC BY-SA 4.0
+    credit: Joyofmuseums
+identifiers:
+  bnf: "169010432"
+  gnd: 10006374-3
+  idref: "143425021"
+  lc: nr95006690
+  ulan: "500299938"
+  viaf: "135319142"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q157316
+  address:
+    - accessed: 2026-10-27
+      property: P6375
+      wikidata: Q157316
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q157316
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q157316

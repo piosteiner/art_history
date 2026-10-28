@@ -1,0 +1,42 @@
+public_id: 102384
+name: Pergamonmuseum, Berlin
+names: [Pergamonmuseum, Pergamon Museum]
+founded: 1910
+place: berlin
+location: [13.396, 52.521]
+website_url: https://www.smb.museum/museen-einrichtungen/pergamonmuseum/
+wikidata_id: Q157298
+metadata:
+  sources: [Wikidata Q157298 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - url: https://www.smb.museum/museen-einrichtungen/alles-auf-einen-blick/
+        source: smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Pergamonmuseum_Front.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pergamonmuseum_Front.jpg
+    license: CC BY-SA 4.0
+    credit: Raimond Spekking
+identifiers:
+  bnf: 12042621c
+  gnd: 16319233-9
+  idref: "077275713"
+  lc: nr95006694
+  ulan: "500221128"
+  viaf: "131008425"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q157298
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q157298
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q157298

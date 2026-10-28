@@ -1,0 +1,46 @@
+public_id: 102357
+name_lang: de
+name: Altes Museum
+names:
+  - lang: de
+    role: alternative
+    text: Altes Museum, Berlin
+founded: 1830
+place: berlin
+location: [13.39889, 52.51944]
+website_url: https://www.smb.museum/museen-einrichtungen/altes-museum/home/
+wikidata_id: Q156722
+metadata:
+  sources: [Wikidata Q156722 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - url: https://www.smb.museum/museen-einrichtungen/alles-auf-einen-blick/
+        source: smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Berl%C3%ADn_Star%C3%A9_muzeum_4.jpg/1280px-Berl%C3%ADn_Star%C3%A9_muzeum_4.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berl%C3%ADn_Star%C3%A9_muzeum_4.jpg
+    license: CC BY-SA 4.0
+    credit: VitVit
+identifiers:
+  bnf: 12310564s
+  gnd: 4506837-9
+  idref: "031992129"
+  lc: n83197241
+  ulan: "500221102"
+  viaf: "123944052"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q156722
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q156722
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q156722

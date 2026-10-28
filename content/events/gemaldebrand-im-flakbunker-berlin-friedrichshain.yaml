@@ -10,7 +10,10 @@ kind: Brand
 parent: world-war-ii
 period: 1945-05-06
 place: germany
-description_md: Wikipedia listet Gemälde, welche vermutlich verbrannten. [Wikipedia](https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie) Oder direkt über [Wikimedia](https://commons.wikimedia.org/wiki/Category:Paintings_lost_from_Kaiser-Friedrich-Museum?uselang=de)
+description_md: |-
+  Es sollen sich nach Kriegsende zwei Brände mit ungeklärter Ursache im Bunker ereignet haben, denen die dort verbliebenen Gemälde zum Opfer gefallen waren. (https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/sammeln-forschen/forschung/verlorene-meisterwerke/)
+
+  Wikipedia listet Gemälde, welche vermutlich verbrannten. [Wikipedia](https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie) Oder direkt über [Wikimedia](https://commons.wikimedia.org/wiki/Category:Paintings_lost_from_Kaiser-Friedrich-Museum?uselang=de)
 wikidata_id: Q110787858
 metadata:
   sources: [Wikidata Q110787858 (retrieved 2026-10-24)]

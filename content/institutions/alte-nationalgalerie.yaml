@@ -1,0 +1,39 @@
+public_id: 102352
+name: Alte Nationalgalerie
+founded: 1876
+place: berlin
+location: [13.39835, 52.52081]
+website_url: http://www.smb.museum/museen-und-einrichtungen/alte-nationalgalerie/home.html
+wikidata_id: Q162111
+metadata:
+  sources: [Wikidata Q162111 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - url: https://www.smb.museum/museen-einrichtungen/alles-auf-einen-blick/
+        source: smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/23/AlteNationalgalerie_1a.jpg/1280px-AlteNationalgalerie_1a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AlteNationalgalerie_1a.jpg
+    license: Public domain
+    credit: Manfred Brückels
+identifiers:
+  gnd: 5298137-X
+  idref: "089825225"
+  lc: n92073829
+  viaf: "130790367"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q162111
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q162111
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q162111

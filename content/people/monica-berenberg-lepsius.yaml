@@ -1,0 +1,44 @@
+public_id: 102450
+name: Monica Berenberg-Lepsius
+given_name: Monica
+family_name: Berenberg-Lepsius
+names: [Monica Berenberg, Monica Lepsius]
+kind: person
+occupations: [painter]
+birth: 1893
+death: 1961
+wikidata_id: Q95685361
+metadata:
+  sources: [Wikidata Q95685361 (retrieved 2026-10-27)]
+relationships:
+  - type: child_of
+    to: artist/sabine-lepsius
+    label: daughter
+    sources:
+      - accessed: 2026-10-27
+        property: P25
+        wikidata: Q95685361
+      - url: https://recherche.smb.museum/detail/961917
+        note: "Provenienz: “Nachlass/Vermächtnis: Monica Berenberg, geb. Lepsius, Lauda bei Baden (Tochter der Künstlerin), 1956”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+identifiers:
+  gnd: "116125438"
+  viaf: "15511841"
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q95685361
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q95685361
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q95685361
+  occupations:
+    - accessed: 2026-10-27
+      property: P106
+      wikidata: Q95685361

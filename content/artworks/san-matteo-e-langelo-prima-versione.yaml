@@ -1,0 +1,152 @@
+public_id: 102457
+title_lang: it
+title: San Matteo e l'angelo (prima versione)
+names:
+  - lang: de
+    role: translation
+    text: Der heilige Matthäus mit dem Engel
+  - lang: en
+    role: translation
+    text: Saint Matthew and the Angel (first version)
+  - lang: fr
+    role: translation
+    text: Saint Matthieu et l'Ange
+  - lang: es
+    role: translation
+    text: San Mateo y el ángel
+  - lang: zh
+    role: translation
+    text: 圣玛窦和天使
+parent: san-matteo-e-langelo
+part_number: "1"
+creator: caravaggio
+created: 1602
+kind: oil painting
+materials: [oil paint, canvas]
+dimensions: [223, 183]
+institution: gemaldegalerie-berlin
+inventory_number: "365"
+web_url: https://artsandculture.google.com/exhibit/das-verschwundene-museum/7QJiYBIL5CzhKA?hl=de
+fate: destroyed
+fate_date: 1945-05
+fate_note: presumably burnt in the Friedrichshain flak tower, Berlin, May 1945
+wikidata_id: Q577248
+metadata:
+  sources: [Wikidata Q577248 (retrieved 2026-10-27)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Caravaggio_%28Michelangelo_Merisi%29_%281571_-_1610%29_-_The_Evangelist_Matthew_-_365_-_Gem%C3%A4ldegalerie.jpg/1280px-Caravaggio_%28Michelangelo_Merisi%29_%281571_-_1610%29_-_The_Evangelist_Matthew_-_365_-_Gem%C3%A4ldegalerie.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caravaggio_(Michelangelo_Merisi)_(1571_-_1610)_-_The_Evangelist_Matthew_-_365_-_Gem%C3%A4ldegalerie.jpg
+    license: Public domain
+    credit: Caravaggio
+provenance:
+  - owner: institution/san-luigi-dei-francesi
+    acquired: 1602
+    ended: 1603
+    method: commission
+    direct: true
+    place: rome
+    label: the first altarpiece of the Contarelli Chapel, installed on 26 May 1602, replaced in February 1603
+    notes_md: Paid from the funds Cardinal [[person/matthieu-cointerel]] (Matteo Contarelli, d. 1585) left in his will for the chapel; the commission came from the church’s administrators. Whether it was rejected, as Baglione wrote, or only hung until the altar was finished, is debated.
+    sources:
+      - url: https://en.wikipedia.org/wiki/Paintings_in_the_Contarelli_Chapel
+        note: “In 1602, Caravaggio was commissioned to replace Cobaert’s statue with an altarpiece depicting Saint Matthew and the Angel. This canvas was installed on 26 May of the same year, the day of Pentecost, but was again rejected by the commissioners; Caravaggio immediately proposed another version, The Inspiration of Saint Matthew, which was accepted and installed in February 1603”
+        source: wikipedia-en-paintings-in-the-contarelli-chapel
+        accessed: 2026-10-27
+  - owner: person/vincenzo-giustiniani
+    acquired: 1602/1603
+    method: purchase
+    place: rome
+    label: bought by the Marchese Vincenzo Giustiniani
+    sources:
+      - url: https://en.wikipedia.org/wiki/Paintings_in_the_Contarelli_Chapel
+        note: “It was very well received, and Giustiniani acquired it at that time.” · Baglione “accuses Caravaggio of swindling Vincenzo Giustiniani by selling him the first Saint Matthew and the Angel”
+        source: wikipedia-en-paintings-in-the-contarelli-chapel
+        accessed: 2026-10-27
+      - url: https://en.wikipedia.org/wiki/Saint_Matthew_and_the_Angel
+        source: wikipedia-en-saint-matthew-and-the-angel
+        accessed: 2026-10-27
+  - owner_label: heirs of Vincenzo Giustiniani
+    ended: 1815
+    method: inheritance
+    place: rome
+    label: the Giustiniani collection
+    sources:
+      - url: https://en.wikipedia.org/wiki/Saint_Matthew_and_the_Angel
+        note: “The painting was subsequently purchased by the Marquis Vincenzo Giustiniani, to finally reach, through his heirs, the Kaiser Friedrich Museum in Berlin”
+        source: wikipedia-en-saint-matthew-and-the-angel
+        accessed: 2026-10-27
+  - owner: artist/fereol-bonnemaison
+    role: dealer
+    ended: 1815
+    place: paris
+    label: offering 155 paintings of the Giustiniani collection in Paris
+    certainty: probable
+    notes_md: The source names the Giustiniani paintings Bonnemaison offered in 1815, not this one by itself.
+    sources:
+      - url: https://de.wikipedia.org/wiki/Gem%C3%A4ldegalerie_(Berlin)
+        note: “1815 bot sich in Paris die erste Gelegenheit […]. Friedrich Wilhelm III. entdeckte dort die 155 von dem Pariser Kunsthändler Féréol Bonnemaison angebotenen Bilder aus der Sammlung Giustiniani.”
+        source: wikipedia-de-gemaldegalerie-berlin
+        accessed: 2026-10-27
+  - owner: person/friedrich-wilhelm-iii-von-preussen
+    acquired: 1815
+    method: purchase
+    direct: true
+    place: paris
+    label: bought with the Giustiniani paintings for 540,000 francs; given to the Berlin Academy, shown in 1816
+    sources:
+      - url: https://de.wikipedia.org/wiki/Gem%C3%A4ldegalerie_(Berlin)
+        note: “[…] erwarb die Giustinani-Bilder für eine Summe von 540.000 Francs. […] In Berlin wurden die Bilder […] zunächst an die Akademie übergeben, die sie 1816 öffentlich präsentierte.”
+        source: wikipedia-de-gemaldegalerie-berlin
+        accessed: 2026-10-27
+  - owner: institution/gemaldegalerie-berlin
+    acquired: 1816/1830
+    ended: 1945-05
+    method: transfer
+    direct: true
+    place: berlin
+    label: "the king’s Giustiniani paintings: to the Academy in 1816, in the new museum (opened 1830); Gemäldegalerie inv. no. 365, later in the Kaiser-Friedrich-Museum; stored in the Friedrichshain flak tower, presumably burnt there in May 1945"
+    sources:
+      - url: https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie
+        note: "I. Vermutlich im Flakturm verbrannte Gemälde: “365 · Caravaggio, eig. Michelangelo Merisi da · Der heilige Matthäus mit den Engeln · 223 × 183”"
+        source: wikipedia-de-flakbunker-friedrichshain-gemaelde
+        accessed: 2026-10-27
+      - url: https://de.wikipedia.org/wiki/Gem%C3%A4ldegalerie_(Berlin)
+        note: “Aus bisher ungeklärten Gründen brannte am 6. Mai das gesamte 1. Geschoss aus. […] Zwischen dem 14. und 18. Mai brannte es erneut; diesmal griffen die Flammen auf das gesamte Bauwerk über, das völlig ausbrannte. Dabei wurden die eingelagerten Kunstwerke weitgehend zerstört.” · “Noch im selben Jahr wurden erste Stimmen laut, die forderten, die Giustinani-Bilder sofort dem neuen Museum zuzuführen […]” · “Von den ausgestellten Gemälden kamen […] 76 Bilder aus der Sammlung Giustiniani”
+        source: wikipedia-de-gemaldegalerie-berlin
+        accessed: 2026-10-27
+sources:
+  fate:
+    - url: https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie
+      note: "I. Vermutlich im Flakturm verbrannte Gemälde: “365 · Caravaggio, eig. Michelangelo Merisi da · Der heilige Matthäus mit den Engeln · 223 × 183”"
+      source: wikipedia-de-flakbunker-friedrichshain-gemaelde
+      accessed: 2026-10-27
+    - url: https://de.wikipedia.org/wiki/Gem%C3%A4ldegalerie_(Berlin)
+      note: “Aus bisher ungeklärten Gründen brannte am 6. Mai das gesamte 1. Geschoss aus. […] Zwischen dem 14. und 18. Mai brannte es erneut; diesmal griffen die Flammen auf das gesamte Bauwerk über, das völlig ausbrannte. Dabei wurden die eingelagerten Kunstwerke weitgehend zerstört.”
+      source: wikipedia-de-gemaldegalerie-berlin
+      accessed: 2026-10-27
+  created:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q577248
+  creator:
+    - accessed: 2026-10-27
+      property: P170
+      wikidata: Q577248
+  dimensions:
+    - url: https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie
+      note: "I. Vermutlich im Flakturm verbrannte Gemälde: “365 · Caravaggio, eig. Michelangelo Merisi da · Der heilige Matthäus mit den Engeln · 223 × 183”"
+      source: wikipedia-de-flakbunker-friedrichshain-gemaelde
+      accessed: 2026-10-27
+  institution:
+    - url: https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie
+      note: "I. Vermutlich im Flakturm verbrannte Gemälde: “365 · Caravaggio, eig. Michelangelo Merisi da · Der heilige Matthäus mit den Engeln · 223 × 183”"
+      source: wikipedia-de-flakbunker-friedrichshain-gemaelde
+      accessed: 2026-10-27
+  inventory_number:
+    - accessed: 2026-10-27
+      property: P217
+      wikidata: Q577248
+    - url: https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie
+      note: "I. Vermutlich im Flakturm verbrannte Gemälde: “365 · Caravaggio, eig. Michelangelo Merisi da · Der heilige Matthäus mit den Engeln · 223 × 183”"
+      source: wikipedia-de-flakbunker-friedrichshain-gemaelde
+      accessed: 2026-10-27

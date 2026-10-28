@@ -1,0 +1,45 @@
+public_id: 102337
+name: Dulwich Picture Gallery
+founded: 1811
+place: london
+location: [-0.08639, 51.44611]
+address: College Road, London SE21 7AD
+website_url: https://www.dulwichpicturegallery.org.uk/
+wikidata_id: Q1241163
+metadata:
+  sources: [Wikidata Q1241163 (retrieved 2026-10-27)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e8/Dulwich_Picture_Gallery.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dulwich_Picture_Gallery.jpg
+    license: CC BY-SA 2.0
+    credit: Julian Osley
+identifiers:
+  bnf: "120081448"
+  gnd: 800776-7
+  idref: "028197372"
+  lc: n81002769
+  ulan: "500301758"
+  viaf: "147751332"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q1241163
+    - url: https://d-nb.info/gnd/800776-7
+      source: gnd
+      accessed: 2026-10-27
+  address:
+    - accessed: 2026-10-27
+      property: P6375
+      wikidata: Q1241163
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q1241163
+    - url: https://www.dulwichpicturegallery.org.uk/about-us/
+      source: dulwichpicturegallery-org-uk
+      accessed: 2026-10-27
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q1241163

@@ -1,6 +1,6 @@
 public_id: 101463
 title_lang: de
-title: A Attersee
+title: Am Attersee
 names:
   - lang: en
     role: translation
@@ -168,7 +168,7 @@ sources:
   title_status:
     - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
       source: leopold-museum-online-sammlung
-      accessed: 2026-10-21
+      accessed: 2026-10-27
   inventory_number:
     - accessed: 2026-10-19
       property: P217

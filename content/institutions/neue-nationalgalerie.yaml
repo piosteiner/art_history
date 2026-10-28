@@ -1,0 +1,44 @@
+public_id: 102396
+name: Neue Nationalgalerie, Berlin
+names: [Neue Nationalgalerie]
+founded: 1968
+place: berlin
+location: [13.36778, 52.50694]
+address: Potsdamer Straße 50, Berlin
+website_url: http://www.smb.museum/museen-und-einrichtungen/neue-nationalgalerie/home.html
+wikidata_id: Q32659772
+metadata:
+  sources: [Wikidata Q32659772 (retrieved 2026-10-27)]
+relationships:
+  - type: part_of
+    to: institution/staatliche-museen-zu-berlin
+    sources:
+      - url: https://www.smb.museum/museen-einrichtungen/alles-auf-einen-blick/
+        source: smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Berlin_Neue_Nationalgalerie_asv2021-11_img1.jpg/1280px-Berlin_Neue_Nationalgalerie_asv2021-11_img1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berlin_Neue_Nationalgalerie_asv2021-11_img1.jpg
+    license: FAL
+    credit: A.Savin
+identifiers:
+  gnd: 5298136-8
+  lc: n92076661
+  viaf: "142711389"
+sources:
+  place:
+    - accessed: 2026-10-27
+      property: P131
+      wikidata: Q32659772
+  address:
+    - accessed: 2026-10-27
+      property: P6375
+      wikidata: Q32659772
+  founded:
+    - accessed: 2026-10-27
+      property: P571
+      wikidata: Q32659772
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q32659772

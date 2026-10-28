@@ -1,0 +1,68 @@
+public_id: 102415
+name: Frederick William IV of Prussia
+names:
+  - Friedrich Wilhelm IV of Prussia
+  - Friedrich Wilhelm Nikolaus Karl
+  - Frederick-William IV.
+  - Frederick William IV
+  - lang: nl
+    role: translation
+    text: Frederik Willem IV van Pruisen
+  - lang: fr
+    role: translation
+    text: Frédéric-Guillaume IV de Prusse
+  - lang: it
+    role: translation
+    text: Federico Guglielmo IV di Prussia
+  - lang: es
+    role: translation
+    text: Federico Guillermo IV
+  - lang: ja
+    role: translation
+    text: フリードリヒ・ヴィルヘルム4世
+  - lang: zh
+    role: translation
+    text: 腓特烈·威廉四世
+  - lang: ko
+    role: translation
+    text: 프리드리히 빌헬름 4세
+  - lang: ru
+    role: translation
+    text: Фридрих Вильгельм IV Прусский
+kind: person
+occupations: [politician]
+birth: 1795-10-15
+death: 1861-01-02
+wikidata_id: Q57180
+metadata:
+  sources: [Wikidata Q57180 (retrieved 2026-10-27)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Friedrich_Wilhelm_IV_of_Prussia_%281847%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Friedrich_Wilhelm_IV_of_Prussia_(1847).jpg
+    license: Public domain
+    credit: Hermann Biow
+identifiers:
+  bnf: 12192556z
+  gnd: "118535994"
+  idref: "030528593"
+  lc: n84234360
+  rkd: "29506"
+  ulan: "500358134"
+  viaf: "172909814"
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q57180
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q57180
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q57180
+  occupations:
+    - accessed: 2026-10-27
+      property: P106
+      wikidata: Q57180

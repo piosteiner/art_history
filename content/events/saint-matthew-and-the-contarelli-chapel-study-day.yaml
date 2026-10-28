@@ -1,0 +1,23 @@
+public_id: 102480
+name: Saint Matthew and the Contarelli Chapel
+names:
+  - lang: fr
+    role: translation
+    text: Saint Matthieu et la chapelle Contarelli
+kind: study day
+period: 2025-04-29
+place: villa-medici
+description_md: "Study days on the [[institution/contarelli-chapel]] and Caravaggio’s three paintings of Saint Matthew, organised by the French Embassy to the Holy See and the Pieux Établissements de la France à Rome et à Lorette with the Académie de France à Rome – Villa Médicis, in the Jubilee Year 2025: six specialists on the figure of Saint Matthew, the subjects and narratives of the paintings and the new genre of religious painting they created. The programme speaks of two days; the Villa Medici lists 29 April 2025."
+relationships:
+  - type: concerns
+    to: artwork/ciclo-di-san-matteo
+    sources:
+      - url: https://villamedici.it/en/programme/saint-matthew-and-the-contarelli-chapel/
+        source: villa-medici-saint-matthew-contarelli-chapel
+        accessed: 2026-10-27
+  - type: concerns
+    to: institution/contarelli-chapel
+    sources:
+      - url: https://villamedici.it/en/programme/saint-matthew-and-the-contarelli-chapel/
+        source: villa-medici-saint-matthew-contarelli-chapel
+        accessed: 2026-10-27

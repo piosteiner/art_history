@@ -1,0 +1,82 @@
+public_id: 102420
+name: Adolph von Menzel
+given_name: Adolph
+family_name: von Menzel
+names: [Adolf Friedrich Erdmann Menzel, Adolf Menzel]
+birth: 1815-12-08
+death: 1905-02-09
+wikidata_id: Q164961
+metadata:
+  sources: [Wikidata Q164961 (retrieved 2026-10-27)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    sources:
+      - accessed: 2026-10-27
+        property: P27
+        wikidata: Q164961
+  - type: born_in
+    to: place/wroc-aw
+    sources:
+      - accessed: 2026-10-27
+        property: P19
+        wikidata: Q164961
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-27
+        property: P20
+        wikidata: Q164961
+  - type: worked_in
+    to: place/bad-harzburg
+    sources:
+      - accessed: 2026-10-27
+        property: P937
+        wikidata: Q164961
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-27
+        property: P937
+        wikidata: Q164961
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-10-27
+        property: P463
+        wikidata: Q164961
+  - type: associated_with
+    to: movement/realism
+    sources:
+      - accessed: 2026-10-27
+        property: P135
+        wikidata: Q164961
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/1839_Meyerheim_Portrait_Adolph_Menzel_anagoria.JPG/1280px-1839_Meyerheim_Portrait_Adolph_Menzel_anagoria.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:1839_Meyerheim_Portrait_Adolph_Menzel_anagoria.JPG
+    license: Public domain
+    credit: Friedrich Eduard Meyerheim
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Bundesarchiv_Bild_183-R30367%2C_Adolph_von_Menzel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-R30367,_Adolph_von_Menzel.jpg
+    license: CC BY-SA 3.0 de
+    credit: UnknownUnknown
+identifiers:
+  bnf: "134762341"
+  dome: "1462"
+  gnd: "118580914"
+  idref: "027514692"
+  kulturnav: 63954b84-b62e-4d62-a4fb-a5719816b2c4
+  lc: n50059021
+  nlk: KAC202292002
+  rkd: "55298"
+  ulan: "500018924"
+  viaf: "34607154"
+sources:
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q164961
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q164961

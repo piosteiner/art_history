@@ -1,0 +1,16 @@
+public_id: 102424
+name: Bad Harzburg
+kind: site
+location: [10.56167, 51.88278]
+wikidata_id: Q522459
+metadata:
+  sources: [Wikidata Q522459 (retrieved 2026-10-27)]
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q522459
+  location:
+    - accessed: 2026-10-27
+      property: P625
+      wikidata: Q522459

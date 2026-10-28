@@ -1,0 +1,142 @@
+public_id: 102437
+title_lang: de
+title: Im Wintergarten
+names:
+  - Im Treibhaus
+  - Die Konversation im Treibhaus
+  - lang: en
+    role: translation
+    text: In the Winter Garden
+    status: official
+creator: edouard-manet
+created: 1878/1879
+created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [115, 150]
+institution: alte-nationalgalerie
+inventory_number: A I 550
+web_url: https://id.smb.museum/object/962626
+wikidata_id: Q481454
+metadata:
+  sources: [Wikidata Q481454 (retrieved 2026-10-27)]
+relationships:
+  - type: created_in
+    to: place/paris
+    label: in Georg von Rosen’s studio, furnished as a hothouse
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Objektbeschreibung: “Dargestellt sind Freunde Manets, das Ehepaar Guillemet, sie betrieben ein Modegeschäft in der Rue Saint-Honoré. Manet malte sie in dem als Treibhaus ausgestatteten Atelier des Malers Georg von Rosen, welches er zu jener Zeit benutzte.”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - type: depicts_person
+    to: person/ehepaar-guillemet
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Objektbeschreibung: “Dargestellt sind Freunde Manets, das Ehepaar Guillemet, sie betrieben ein Modegeschäft in der Rue Saint-Honoré. Manet malte sie in dem als Treibhaus ausgestatteten Atelier des Malers Georg von Rosen, welches er zu jener Zeit benutzte.”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/In_the_Conservatory.jpg/1280px-In_the_Conservatory.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:In_the_Conservatory.jpg
+    license: Public domain
+    credit: Édouard Manet
+provenance:
+  - owner_label: Madame Manet, Paris
+    place: paris
+    notes_md: "The record doesn’t say which Madame Manet: the painter’s wife [[person/suzanne-manet]] or his mother, Eugénie-Désirée Manet (both were alive in 1883)."
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Provenienz: “Madame Manet, Paris”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: person/jean-baptiste-faure
+    acquired: 1883-01-01
+    place: paris
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Provenienz: “Jean-Baptiste Faure, 1.1.1883”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: institution/durand-ruel
+    role: dealer
+    ended: 1896-08-24
+    place: paris
+    label: Galerie Paul Durand-Ruel, Paris
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Provenienz: “Galerie Paul Durand-Ruel, Paris, 24.8.1896”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: institution/alte-nationalgalerie
+    acquired: 1896-08-24
+    method: gift
+    direct: true
+    place: berlin
+    label: bought by Hugo von Tschudi for the Nationalgalerie with money given by Berlin patrons
+    notes_md: Bought in Paris by the new director [[person/hugo-von-tschudi]]; paid for by [[person/eduard-arnhold]], [[person/ernst-von-mendelssohn-bartholdy]], [[person/robert-von-mendelssohn]] and [[person/hugo-oppenheim]] (“Geschenk von Berliner Kunstfreunden”).
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Provenienz: “Kauf: Hugo von Tschudi für die Nationalgalerie, Berlin, 24.8.1896” · Erwerbung: “1896 Geschenk von Berliner Kunstfreunden (Eduard Arnhold, Ernst und Robert von Mendelssohn, Hugo Oppenheim)”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+  - owner: institution/wiesbaden-central-collecting-point
+    role: custodian
+    acquired: 1945
+    ended: 1953
+    place: wiesbaden
+    label: returned to the Nationalgalerie (West) in 1953
+    sources:
+      - url: https://recherche.smb.museum/detail/962626
+        note: "Provenienz: “Central Collecting Point Wiesbaden, 1945 - 1953”; “Rückkehr in die Nationalgalerie (West), 1953”"
+        source: search-smb-museum
+        accessed: 2026-10-27
+identifiers:
+  gnd: 4693949-0
+  viaf: "214774164"
+sources:
+  names:
+    - url: https://id.smb.museum/object/962626
+      source: id-smb-museum
+      accessed: 2026-10-27
+  medium:
+    - url: https://id.smb.museum/object/962626
+      source: id-smb-museum
+      accessed: 2026-10-27
+  created:
+    - url: https://id.smb.museum/object/962626
+      source: id-smb-museum
+      accessed: 2026-10-27
+  creator:
+    - accessed: 2026-10-27
+      property: P170
+      wikidata: Q481454
+    - url: https://id.smb.museum/object/962626
+      source: id-smb-museum
+      accessed: 2026-10-27
+  dimensions:
+    - accessed: 2026-10-27
+      property: P2048
+      wikidata: Q481454
+    - url: https://id.smb.museum/object/962626
+      source: id-smb-museum
+      accessed: 2026-10-27
+  institution:
+    - accessed: 2026-10-27
+      property: P195
+      wikidata: Q481454
+    - url: https://id.smb.museum/object/962626
+      source: id-smb-museum
+      accessed: 2026-10-27
+  title_status:
+    - url: https://id.smb.museum/object/962626
+      source: id-smb-museum
+      accessed: 2026-10-27
+  inventory_number:
+    - accessed: 2026-10-27
+      property: P217
+      wikidata: Q481454
+    - url: https://id.smb.museum/object/962626
+      source: id-smb-museum
+      accessed: 2026-10-27

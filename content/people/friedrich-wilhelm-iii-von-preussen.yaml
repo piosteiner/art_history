@@ -1,0 +1,68 @@
+public_id: 102416
+name: Frederick William III of Prussia
+names:
+  - Friedrich Wilhelm III.
+  - Frederick William III
+  - Frederick-William III
+  - Friedrich Wilhelm III of Prussia
+  - lang: nl
+    role: translation
+    text: Frederik Willem III van Pruisen
+  - lang: fr
+    role: translation
+    text: Frédéric-Guillaume III
+  - lang: it
+    role: translation
+    text: Federico Guglielmo III di Prussia
+  - lang: es
+    role: translation
+    text: Federico Guillermo III de Prusia
+  - lang: ja
+    role: translation
+    text: フリードリヒ・ヴィルヘルム3世
+  - lang: zh
+    role: translation
+    text: 腓特烈·威廉三世
+  - lang: ko
+    role: translation
+    text: 프리드리히 빌헬름 3세
+  - lang: ru
+    role: translation
+    text: Фридрих Вильгельм III
+kind: person
+occupations: [composer, monarch]
+birth: 1770-08-03
+death: 1840-06-07
+wikidata_id: Q37134
+metadata:
+  sources: [Wikidata Q37134 (retrieved 2026-10-27)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/02/Friedrich_Wilhelm_III_of_Prussia_-_Lawrence_1814-18.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Friedrich_Wilhelm_III_of_Prussia_-_Lawrence_1814-18.jpg
+    license: Public domain
+    credit: Thomas Lawrence
+identifiers:
+  bnf: "120234251"
+  dodis: P32845
+  gnd: "118535986"
+  idref: 02759808X
+  lc: n81147121
+  rkd: "449467"
+  viaf: "774683"
+sources:
+  kind:
+    - accessed: 2026-10-27
+      property: P31
+      wikidata: Q37134
+  birth:
+    - accessed: 2026-10-27
+      property: P569
+      wikidata: Q37134
+  death:
+    - accessed: 2026-10-27
+      property: P570
+      wikidata: Q37134
+  occupations:
+    - accessed: 2026-10-27
+      property: P106
+      wikidata: Q37134
