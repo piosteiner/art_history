@@ -40,3 +40,16 @@ test('start/end qualifiers → periods', () => {
   assert.deepEqual(periodOf({ qualifiers: q('P580', '+1889-05-03T00:00:00Z', 11) }), { value: '1889-05-03', label: 'from 3 May 1889' });
   assert.equal(periodOf({}), null);
 });
+
+test("an institution's kind from its P31 classes, the first kind of the table winning", () => {
+  const { institutionKind } = require('../src/admin/wikidata');
+  const item = (...qids) => ({ claims: { P31: qids.map((id) => ({ rank: 'normal', mainsnak: { datavalue: { value: { id } } } })) } });
+  assert.equal(institutionKind(item('Q207694')), 'museum');                          // art museum
+  assert.equal(institutionKind(item('Q41176', 'Q9209474')), 'auction house');       // Hôtel Drouot: building, auction house
+  assert.equal(institutionKind(item('Q1007870', 'Q9209474', 'Q2085381')), 'gallery'); // Georges Petit: gallery first
+  assert.equal(institutionKind(item('Q1497649', 'Q7328910', 'Q157031')), 'foundation'); // Gottfried Keller-Stiftung
+  assert.equal(institutionKind(item('Q33506', 'Q108325')), 'chapel');                // a chapel that is also a museum
+  assert.equal(institutionKind(item('Q2651004', 'Q207694')), 'museum');              // a palazzo with a museum
+  assert.equal(institutionKind(item('Q43229')), null);                               // "organization": nothing offered
+  assert.equal(institutionKind({}), null);
+});

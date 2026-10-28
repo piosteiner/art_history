@@ -4,6 +4,25 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-28
 
+### Wikidata: an institution's kind is offered (and filled for the existing ones)
+- **What:** the Wikidata comparison never offered an institution's kind — places and people got one, institutions
+  only founded, dissolved, place, location, address and website. `institutionKind()` (`src/admin/wikidata.js`) maps
+  P31 "instance of" to our words through an ordered table (`INSTITUTION_KINDS`, built from the ~150 classes of our
+  institutions' items): the first kind any class has wins, so a chapel or town hall that is also a museum stays a
+  chapel / town hall, an academy with a picture gallery an academy, a gallery that also auctions a gallery; classes
+  like "organization" offer nothing. Offered in the comparison and set on entries created from Wikidata.
+- **Data (user pio, audited):** the kind filled for 178 institutions with a Wikidata item and none set, and by hand
+  for 41 without one (dealers → gallery, auction houses, collections …; the Einsatzstab Reichsleiter Rosenberg left
+  open); kinds written differently made the same words (Museum → museum, Stiftung → foundation, antiquirary →
+  antiques dealer, Staatliche Museen zu Berlin → museum network).
+- **Corrections from the review of 2026-10-28:** CIAM without the stray Wikidata point near Stuttgart (place and
+  location cleared); cities for Galerie Georges Giroux, Manzi-Joyant, Sanct Lucas, ENSAD, the International Society
+  of Sculptors, Painters and Gravers, Deutscher Werkbund, the Borghese Collection, Cercle de la Voile; Galerie
+  Thannhauser: Munich 1909–1937, branches in Lucerne (1919–1928) and Berlin (1927–1937) as dated relationships
+  (Wikipedia); Bernheim-Jeune closed 2018/2019 (The Art Newspaper, instead of Wikidata's unsourced 2019); French own
+  names no longer "translations"; Bührle's "Sammlung Emil Bührle" German, not Dutch; an address typo.
+- **Test:** `test/wikidata-time.test.js` — the kind from P31, the order of the table.
+
 ### Fix: artists and people from Wikidata got no given and family name (migration 150)
 - **What:** `fill_person_names()` (066/109) leaves East Asian names unsplit, and `names_east_asian()` counted any
   Japanese, Chinese or Korean other name — also the translations the Wikidata import adds (ポール・デルヴォー). So

@@ -164,6 +164,57 @@ function placeKind(e) {
   if (ids.some((id) => ['Q41176', 'Q33506', 'Q16970', 'Q3947'].includes(id))) return 'building';
   return 'site';
 }
+// An institution's kind from P31 "instance of" (150 classes seen among ours, 2026-10-28), in our words. Ordered:
+// the first kind any of its classes has wins — a chapel or a town hall that is also a museum stays what it is, an
+// academy with a picture gallery is an academy, a palazzo with a museum a museum, a gallery that also auctions a
+// gallery. Classes not listed ("organization", "memory institution", "building" …) offer nothing.
+const INSTITUTION_KINDS = [
+  ['department', ['Q11681271']],
+  ['chapel', ['Q108325']],
+  ['cathedral', ['Q56242215', 'Q2977']],
+  ['basilica', ['Q120560', 'Q163687']],
+  ['abbey', ['Q160742']],
+  ['monastery', ['Q44613', 'Q132296770']],
+  ['church', ['Q16970', 'Q317557', 'Q55876909', 'Q1088552', 'Q96371632', 'Q1649443', 'Q334383']],
+  ['temple', ['Q5393308', 'Q10901138', 'Q11452272', 'Q1207757', 'Q44539']],
+  ['town hall', ['Q25550691', 'Q543654']],
+  ['art academy', ['Q383092', 'Q2822241', 'Q1792623', 'Q130327897']],
+  ['university', ['Q3918', 'Q875538', 'Q38723', 'Q1371037', 'Q845392', 'Q1083980', 'Q123602198', 'Q1143413', 'Q265662', 'Q3354859',
+    'Q62078547', 'Q3551775', 'Q1767829']],
+  ['museum', ['Q207694', 'Q33506', 'Q17431399', 'Q97662266', 'Q124830411', 'Q3196771', 'Q16735822', 'Q92755865', 'Q3867560',
+    'Q121076356', 'Q124830213', 'Q614316', 'Q115154402', 'Q3329412', 'Q2087181', 'Q740437', 'Q28737012', 'Q112132522',
+    'Q112132573', 'Q62098611', 'Q12104174', 'Q3844310', 'Q4409567', 'Q24699794', 'Q1759852']],
+  ['museum network', ['Q88667167']],
+  ['gallery', ['Q1007870', 'Q56856618']],
+  ['auction house', ['Q9209474', 'Q124535592']],
+  ['academy', ['Q162633', 'Q1966910']],
+  ['school', ['Q847027', 'Q10496911', 'Q3914']],
+  ['foundation', ['Q157031', 'Q18330146', 'Q708676']],
+  ['collection', ['Q7328910', 'Q2668072', 'Q2982955', 'Q27699276']],
+  ['palace', ['Q16560', 'Q53536964', 'Q2651004', 'Q15848826', 'Q751876']],
+  ['library', ['Q7075', 'Q22806']],
+  ['archive', ['Q166118']],
+  ['guild', ['Q1110992']],
+  ['confraternity', ['Q992253']],
+  ['art society', ['Q4502119', 'Q1400264', 'Q5183590']],
+  ['publisher', ['Q2085381', 'Q1792356', 'Q1486290', 'Q96888669']],
+  ['foundry', ['Q13883136']],
+  ['studio', ['Q746628']],
+  ['arts centre', ['Q2190251']],
+  ['research institute', ['Q31855']],
+  ['embassy', ['Q3917681']],
+  ['hospital', ['Q16917', 'Q180370']],
+  ['ministry', ['Q2269756', 'Q1523279', 'Q192350']],
+  ['government agency', ['Q327333', 'Q20857065', 'Q1188075']],
+  ['military alliance', ['Q1127126', 'Q100906234']],
+  ['association', ['Q15911314', 'Q48204', 'Q1156831']],
+  ['company', ['Q4830453', 'Q11396960', 'Q783794']],
+];
+function institutionKind(e) {
+  const ids = new Set(itemIds(e, 'P31'));
+  const hit = INSTITUTION_KINDS.find(([, qids]) => qids.some((q) => ids.has(q)));
+  return hit ? hit[0] : null;
+}
 const isInstitutionLike = (e) => itemIds(e, 'P31').some((id) => ['Q33506', 'Q207694', 'Q3918', 'Q2385804', 'Q1664720', 'Q43229', 'Q16970',
   'Q1030034', 'Q7075', 'Q4830453', 'Q163740', 'Q1497649', 'Q18810687', 'Q2668072'].includes(id));
 // An event (migration 047): a point in time (P585), or an instance of a common kind of event — occurrence, event,
@@ -249,6 +300,7 @@ function fieldsFor(t, e) {
   }
   if (t.type === 'term') text('definition', e.descriptions && e.descriptions.en && e.descriptions.en.value);
   if (t.type === 'institution') {
+    text('kind', institutionKind(e));
     date('founded', 'P571');
     date('dissolved', 'P576');  // closed / dissolved (106)
     // Its place is the city: the settlement P131 leads to — P131 is often a city district (Kunsthaus Zürich: "Kreis 1"
@@ -424,7 +476,7 @@ function newEntryDoc(type, e) {
   if (type === 'place') { const c = coords(e); if (!c) return null; doc.location = c; doc.kind = placeKind(e); }
   if (type === 'artist') { const b = firstTime(e, 'P569'); const d = firstTime(e, 'P570'); if (b) doc.birth = b.value; if (d) doc.death = d.value; }
   if (type === 'movement') { const s = firstTime(e, 'P580', 'P571'); if (s) doc.period = s.value; doc.kind = 'movement'; }
-  if (type === 'institution') { const f = firstTime(e, 'P571'); if (f) doc.founded = f.value; }
+  if (type === 'institution') { const f = firstTime(e, 'P571'); if (f) doc.founded = f.value; const k = institutionKind(e); if (k) doc.kind = k; }
   if (type === 'event') {
     const at = firstTime(e, 'P585', 'P580'); if (at) doc.period = at.value;
     const c = coords(e); if (c) doc.location = c;
@@ -865,4 +917,4 @@ async function coordsOf(qid) {
 
 module.exports = {
   getEntitiesBatch,
-  withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf };
+  withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf, institutionKind };
