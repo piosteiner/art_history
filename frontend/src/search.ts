@@ -33,6 +33,8 @@ const loadLibrary = () => {
     }));
 };
 
+const lastIfSource = (type: string) => (type === 'source' ? 1 : 0);
+
 /**
  * Every match for a query, best first: the field search over all entries (3 = the name starts with it, 2 = the name
  * contains it, 1 = found elsewhere — an artwork by its artist, a person by their birthplace), then, only when that
@@ -43,11 +45,13 @@ export async function findAll(q: string): Promise<{ local: { e: Entry; m: Match 
   const local = lib
     .filter((e) => matches(e, q))
     .map((e) => ({ e, m: explain(e, q) }))
-    .sort((a, b) => b.m.score - a.m.score || a.e.name.localeCompare(b.e.name, 'en', { numeric: true }));
+    // sources after every other entry: the sculptor Kleomenes before the lexicon article "Kleomenes" (as the API, 2026-10-28)
+    .sort((a, b) => lastIfSource(a.e.type) - lastIfSource(b.e.type) || b.m.score - a.m.score || a.e.name.localeCompare(b.e.name, 'en', { numeric: true }));
   const seen = new Set(local.map(({ e }) => `${e.type}/${e.slug}`));
   // the API's fuzzy matches only help when nothing matched as typed ("hokusia"); otherwise they are noise
   // ("theo" also scores every "The …" title about as high as a real typo)
-  return { local, similar: local.length ? [] : fuzzy.filter((h) => !seen.has(`${h.type}/${h.slug}`)) };
+  return { local, similar: local.length ? [] : fuzzy.filter((h) => !seen.has(`${h.type}/${h.slug}`))
+    .sort((a, b) => lastIfSource(a.type) - lastIfSource(b.type)) };
 }
 
 export const searchUrl = (q: string) => `/search?${new URLSearchParams({ q })}`;
