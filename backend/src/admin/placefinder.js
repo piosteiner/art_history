@@ -35,8 +35,13 @@ function kindOf(h) {
   const t = h.addresstype || h.type;
   if (t === 'country') return 'country';
   if (['state', 'province', 'region', 'county', 'state_district', 'prefecture', 'archipelago', 'island'].includes(t)) return 'region';
-  if (['city', 'town', 'village', 'hamlet', 'municipality', 'suburb', 'quarter', 'neighbourhood', 'city_district', 'borough'].includes(t)) return 'settlement';
-  if (['building', 'amenity', 'tourism', 'historic', 'religion'].includes(h.category)) return h.type === 'archaeological_site' ? 'site' : 'building';
+  if (['city', 'town', 'village', 'hamlet', 'municipality'].includes(t)) return 'settlement';
+  // finer kinds (157): a part of a city, a street or square, nature, an excavation
+  if (['suburb', 'quarter', 'neighbourhood', 'city_district', 'borough'].includes(t)) return 'district';
+  if (h.category === 'highway' || ['road', 'square', 'pedestrian'].includes(t)) return 'street';
+  if (h.category === 'natural' || h.category === 'waterway' || ['peak', 'mountain', 'lake', 'river', 'island'].includes(t)) return 'natural';
+  if (h.type === 'archaeological_site') return 'archaeological';
+  if (['building', 'amenity', 'tourism', 'historic', 'religion'].includes(h.category)) return 'building';
   return 'site';
 }
 
@@ -77,7 +82,7 @@ async function draftFor(db, c, coordsOf, slugify) {
   const lat = Number(c.lat);
   const lon = Number(c.lon);
   if (!Number.isFinite(lat) || !Number.isFinite(lon) || Math.abs(lat) > 90 || Math.abs(lon) > 180) throw new Error('no position');
-  const kind = ['country', 'region', 'settlement', 'building', 'site'].includes(c.kind) ? c.kind : 'site';
+  const kind = ['country', 'region', 'settlement', 'district', 'street', 'building', 'site', 'natural', 'archaeological'].includes(c.kind) ? c.kind : 'site';
   // a boundary for countries and regions
   let boundary = null;
   if (kind === 'country' && cc) boundary = (await db.query('SELECT code, name FROM boundaries WHERE code = $1', [cc])).rows[0] || null;

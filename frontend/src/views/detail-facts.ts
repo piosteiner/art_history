@@ -195,7 +195,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
     }
     case 'place':
       return {
-        title: e.name, subtitle: [e.kind, e.country_code].filter(Boolean).join(' · '), text: e.description_html, images: [],
+        // what it is: the precise designation ("canton of Switzerland", API 158), else the kind
+        title: e.name, subtitle: [e.designation ?? e.kind, e.country_code].filter(Boolean).join(' · '), text: e.description_html, images: [],
         facts: [
           ['Part of', refs('place', [...e.ancestors].reverse())],
           // the division its point lies in (Natural Earth), when it isn't among the places it is part of already

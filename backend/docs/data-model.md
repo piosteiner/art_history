@@ -93,6 +93,9 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
 - Unique `NULLS NOT DISTINCT (subject, type, object, period)` — no exact duplicates; repeats with different periods are fine.
 - Current vs. history: `artworks.current_institution_id` / `institutions.place_id` hold where something is **now**;
   earlier holdings/locations are dated `housed_at` / `located_in` relationships (migration 005), needed only when it moved.
+  Kinds of places (157): settlement, district (part of a city), street (street or square), building, site, natural,
+  archaeological, region (any administrative unit), country, continent; `places.designation` (158) says what it is
+  as a unit — "canton of Switzerland", "province of Italy" — from Wikidata P31, editable.
   A place's country and first-level division come from its point (155): `places.within_code` = the Natural Earth
   division (else country) whose outline covers it (trigger `places_within`, `boundary_at()` with ST_Covers);
   `place_country()` walks up the parents taking at each step a code by hand, else the one the point lies in. Checks

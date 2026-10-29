@@ -25,3 +25,19 @@ test('a place with a point: its division and country follow; a different code by
   expect(sql("SELECT place_country(entity_id('place', 'test-kanagawa-region'))->>'code'")).toBe('JP');
   await settled();
 });
+
+// 157/158: finer kinds and the designation, in the form and the API
+test('a street with its designation: the new kinds and the designation field', async ({ userA, request }) => {
+  await userA.goto('/places/new');
+  await userA.fill('#f-name', 'Test Rue du Bac');
+  await userA.fill('#f-slug', 'test-rue-du-bac');
+  await userA.selectOption('#f-kind', 'street');   // the options are the enum's values (157)
+  await userA.fill('#f-designation', 'street in Paris');
+  await userA.fill('input[name="f.location_lon"]', '2.2');
+  await userA.fill('input[name="f.location_lat"]', '46.2');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/places\/test-rue-du-bac\?done=created/);
+  const body = await (await request.get(`${API}/places/test-rue-du-bac`, { headers: { Host: 'api.localhost' } })).json();
+  expect(body).toEqual(expect.objectContaining({ kind: 'street', designation: 'street in Paris', country_code: 'FR' }));
+  sql("DELETE FROM places WHERE slug = 'test-rue-du-bac'");
+});

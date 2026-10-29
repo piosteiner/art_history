@@ -338,7 +338,7 @@ router.get('/sites', async (req, res) => {
       UNION ALL
       -- a branch (154): at its place's marker (a city, or a building with its own point), for its period — bounded by the
       -- institution's own existence; its label is the branch's name or address
-      SELECT 'institution', i.slug, i.name, i.kind, r.label, g.marker, CASE WHEN c.kind IN ('building', 'site') THEN c.parent_id ELSE c.id END,
+      SELECT 'institution', i.slug, i.name, i.kind, r.label, g.marker, CASE WHEN c.kind IN ('settlement', 'region', 'country', 'continent') THEN c.id ELSE c.parent_id END,
              CASE WHEN lower(r.period) IS NOT NULL THEN daterange(lower(r.period), lower(r.period) + 1) ELSE i.founded END,
              CASE WHEN upper(r.period) IS NOT NULL THEN daterange(upper(r.period) - 1, upper(r.period)) ELSE i.dissolved END,
              jsonb_build_object('place', jsonb_build_object('slug', c.slug, 'name', c.name), 'period', range_json(r.period, r.period_label))

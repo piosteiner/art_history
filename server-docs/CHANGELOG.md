@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Places: finer kinds and the designation (migrations 157, 158) — step B of the places plan
+- **What:** `place_kind` + continent, district, street, natural, archaeological (157); `places.designation` (158);
+  checks "every place but a country" spare a continent; Wikidata `placeKind()` and the place finder know the new
+  kinds; the CMS select offers them (enum); API/site show the designation as the place's subtitle. E2E place-within.
+- **Why:** owner, 2026-10-29 — "site" had become the kind of everything unnamed (cities, provinces, streets, mountains).
+- **Revert:** `git revert`; enum values can't be dropped — leave them unused.
+
 ### Places: the hierarchy (data, step C) + coast and boundary-code fallbacks (migration 156)
 - **What (156):** `boundary_at()` takes the nearest division within 10 km when no outline covers the point (Copenhagen,
   Lisbon, Le Havre lay just off the simplified coastline); `place_country()` also reads a place's own boundary code

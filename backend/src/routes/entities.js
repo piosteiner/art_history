@@ -165,8 +165,8 @@ const ENTITIES = {
     // a country with only its code gets the Natural Earth outline and label point
     // country_code: its country today — by hand, else where its point lies, else its parent's (155); `within`: the
     // first-level division (canton, Land, province) its point lies in, from Natural Earth
-    list: `t.kind, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location`,
-    detail: `t.kind, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location,
+    list: `t.kind, t.designation, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location`,
+    detail: `t.kind, t.designation, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location,
              (SELECT jsonb_build_object('code', b.code, 'name', b.name) FROM boundaries b WHERE b.code = t.within_code AND b.level = 1) AS within,
              (SELECT ST_AsGeoJSON(g.outline)::jsonb FROM place_geo g WHERE g.id = t.id) AS area,
              (SELECT jsonb_build_object('location', CASE WHEN t.location IS NOT NULL THEN 'own' ELSE 'derived' END,

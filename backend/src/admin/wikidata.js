@@ -207,8 +207,17 @@ function placeKind(e) {
   // Switzerland / Germany, city of Switzerland, city / census-designated place in the US — Vienna, Madrid, Lucerne went up to the country)
   if (ids.some((id) => ['Q515', 'Q1549591', 'Q484170', 'Q3957', 'Q532', 'Q5119', 'Q2039348', 'Q15284', 'Q747074', 'Q1637706',
     'Q486972', 'Q200250', 'Q667509', 'Q2074737', 'Q70208', 'Q54935504', 'Q262166', 'Q1093829', 'Q498162'].includes(id))) return 'settlement';
-  if (ids.some((id) => ['Q82794', 'Q36784', 'Q6465', 'Q107390', 'Q10864048', 'Q34876', 'Q13220204', 'Q1620908'].includes(id))) return 'region';
-  if (ids.some((id) => ['Q41176', 'Q33506', 'Q16970', 'Q3947'].includes(id))) return 'building';
+  // finer kinds (157): continent; a part of a city; a street or square; a mountain, lake, river, island; an excavation
+  if (ids.includes('Q5107')) return 'continent';
+  if (ids.some((id) => ['Q123705', 'Q4286337', 'Q702842', 'Q2983893'].includes(id))) return 'district';
+  if (ids.some((id) => ['Q79007', 'Q174782', 'Q34442', 'Q83620'].includes(id))) return 'street';
+  if (ids.includes('Q839954')) return 'archaeological';
+  if (ids.some((id) => ['Q8502', 'Q23397', 'Q4022', 'Q23442', 'Q54050', 'Q39594', 'Q46831', 'Q34763', 'Q35145263'].includes(id))) return 'natural';
+  // administrative units: provinces, départements, cantons, Länder, prefectures, counties, regions, arrondissements …
+  if (ids.some((id) => ['Q82794', 'Q36784', 'Q6465', 'Q107390', 'Q10864048', 'Q34876', 'Q13220204', 'Q1620908', 'Q15089',
+    'Q194203', 'Q23058', 'Q1221156', 'Q50337', 'Q162620', 'Q10742', 'Q16110', 'Q15063611', 'Q28575', 'Q35657', 'Q211690',
+    'Q180673', 'Q56061'].includes(id))) return 'region';
+  if (ids.some((id) => ['Q41176', 'Q33506', 'Q16970', 'Q3947', 'Q16560', 'Q23413'].includes(id))) return 'building';
   return 'site';
 }
 // An institution's kind from P31 "instance of" (150 classes seen among ours, 2026-10-28), in our words. Ordered:
@@ -334,7 +343,7 @@ function fieldsFor(t, e) {
     const c = coords(e); if (c) f.location = { kind: 'point', value: c };
     f.kind = { kind: 'text', value: placeKind(e) };
     // a building or site lies in a settlement, not in a city district: P131 is resolved upwards (settlementOf)
-    if (['building', 'site'].includes(placeKind(e)) && itemIds(e, 'P131').length) {
+    if (!['settlement', 'region', 'country', 'continent'].includes(placeKind(e)) && itemIds(e, 'P131').length) {
       f.parent = { kind: 'ref', ref: { type: 'place', qid: itemIds(e, 'P131')[0] }, p131: itemIds(e, 'P131') };
     } else ref('parent', 'place', 'P131');
     f.country_code = { kind: 'country', qid: itemIds(e, 'P17')[0] || null };

@@ -17,7 +17,9 @@ const dimensions = require('./dimensions');
 // `name` is the column that names an entity (artworks have a title).
 const TYPES = [
   { type: 'place', folder: 'places', table: 'places', name: 'name', fields: {
-    name: 'name', names: 'names', kind: 'text', parent: 'parent', country_code: 'text', boundary_code: 'text',
+    // kind: settlement, district, street, building, site, natural, archaeological, region, country, continent (157);
+    // designation: what it is as a unit — "canton of Switzerland", "province of Italy" (158)
+    name: 'name', names: 'names', kind: 'text', designation: 'text', parent: 'parent', country_code: 'text', boundary_code: 'text',
     location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'movement', folder: 'movements', table: 'movements', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period',
