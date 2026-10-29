@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Places in time: data (step D) + the name then in Latin script (migration 160)
+- **Data:** 66 former official names from Wikidata (P1448 with an end; only in a language of the place's country),
+  each cited W — the revolutionary names of 1793–1814 (Lyon "Commune-Affranchie", Versailles "Berceau-de-la-Liberté",
+  Marseille "Ville-sans-Nom"), Oslo Christiania/Kristiania until 1924, Saint Petersburg Petrograd 1914–1924 and
+  Leningrad 1924–1991, Loire-Inférieure until 1957; one removed by hand (a Russian name of Iran). When 13 dissolved
+  units existed: Seine-et-Oise 1790–1968, Tokyo City 1889–1943, Tokyo Prefecture 1868–1943, the former arrondissements
+  of Paris 1795–1860, three cantons until 2015, the Alcázar of Madrid until 1734 (towns merged into a neighbour keep
+  no end: Moret-sur-Loing is still there; a dissolution still to come — Hovedstaden 2026 — is not entered). Edo merged
+  into Tokyo (13 relationships moved) with "Edo" former until 3 September 1868; Tokyo City and Tokyo Prefecture under
+  Tokyo.
+- **160:** `name_then()` prefers a name in Latin letters — "born in Tokyo (then Edo)", not "(then 江戸)".
+
 ### Places in time (migration 159) — step D of the places plan
 - **What:** `places.existed` (+ label, GiST index), form field "Existed", API place `existed`, site row "Existed";
   relationships carry `entity.name_then` (the former name in use during the relationship, via `name_then()`), the
