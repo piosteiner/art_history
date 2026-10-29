@@ -2,7 +2,7 @@
 //
 //  input[data-ruby]       gets an "Add reading" button: select kanji, press it, type the reading → {神奈川|かながわ};
 //                         below it a live preview with real <ruby> (built as DOM nodes, never as HTML).
-//  textarea[data-names]   stays the form field (one "text | lang | role" per line — what the server, the drafts and the
+//  textarea[data-names]   stays the form field (one "text | lang | role | period | note" per line — what the server, the drafts and the
 //                         shared working copy see) and is shown as rows; edits in the rows are written back into it,
 //                         changes arriving in it (another editor, a restored draft) redraw the rows.
 import { ROLES, STATUSES, plain, hasRuby, namesToLines, splitLine } from '../../names';
@@ -113,18 +113,19 @@ function initNamesEditor(ta) {
   ta.after(box);
 
   const parse = (text) => text.split('\n').map((l) => l.trim()).filter(Boolean).map((l) => {
-    const [t, lang, roleText] = splitLine(l);
+    const [t, lang, roleText, period, ...note] = splitLine(l);
     const [role, status] = String(roleText || 'alternative').split(',').map((x) => x.trim().toLowerCase());
-    return { text: t || '', lang: lang || '', role: role || 'alternative', status: status || 'common' };
+    return { text: t || '', lang: lang || '', role: role || 'alternative', status: status || 'common', period_label: period || '', note: note.join(' | ') };
   });
   const write = () => {
     const list = [...rows.children].map((r) => ({ text: r.querySelector('.n-text').value.trim(), lang: r.querySelector('.n-lang').value.trim(),
-      role: r.querySelector('.n-role').value, status: r.querySelector('.n-role').value === 'translation' ? r.querySelector('.n-status').value : null }))
+      role: r.querySelector('.n-role').value, status: r.querySelector('.n-role').value === 'translation' ? r.querySelector('.n-status').value : null,
+      period_label: r.querySelector('.n-period').value.trim().replace(/\|/g, '/'), note: r.querySelector('.n-note').value.trim() }))
       .filter((n) => n.text);
     const text = namesToLines(list.map((n) => ({ ...n, lang: n.lang || null })));
     if (text !== ta.value) { ta.value = text; ta.dispatchEvent(new Event('input', { bubbles: true })); }
   };
-  const row = (n = { text: '', lang: '', role: 'alternative', status: 'common' }) => {
+  const row = (n = { text: '', lang: '', role: 'alternative', status: 'common', period_label: '', note: '' }) => {
     const text = el('input', { className: 'n-text', value: n.text, placeholder: 'name' });
     text.setAttribute('aria-label', 'name');
     const lang = el('input', { className: 'n-lang lang-input', value: n.lang, placeholder: 'language', autocomplete: 'off' });
@@ -139,13 +140,20 @@ function initNamesEditor(ta) {
     status.hidden = n.role !== 'translation';
     const remove = el('button', { type: 'button', className: 'link small n-remove', textContent: 'remove' });
     const preview = el('div', { className: 'ruby-preview', hidden: true });
+    // its context (152): when it was in use — a date as everywhere ("until 1945", "1912–1940") — and a note
+    const period = el('input', { className: 'n-period', value: n.period_label || '', placeholder: 'in use when? e.g. until 1945', autocomplete: 'off',
+      title: 'When the name was in use — a date as everywhere: until 1945 · 1912–1940 · since 1946 · c. 1878' });
+    period.setAttribute('aria-label', 'in use when');
+    const note = el('input', { className: 'n-note', value: n.note || '', placeholder: 'context, e.g. renamed … in 1945', autocomplete: 'off' });
+    note.setAttribute('aria-label', 'context');
     const meta = el('div', { className: 'name-meta' }, lang, role, status);
-    const r = el('div', { className: 'names-row' }, text, meta);
+    const context = el('div', { className: 'name-context' }, period, note);
+    const r = el('div', { className: 'names-row' }, text, meta, context);
     const [button, panel] = readingButton(text, preview, () => lang.value.trim());
     meta.append(button, remove);
     r.append(panel, preview);
     remove.addEventListener('click', () => { r.remove(); write(); });
-    for (const x of [text, lang, role]) x.addEventListener('input', write);
+    for (const x of [text, lang, role, period, note]) x.addEventListener('input', write);
     role.addEventListener('change', () => { status.hidden = role.value !== 'translation'; write(); });
     status.addEventListener('change', write);
     text.addEventListener('change', write);

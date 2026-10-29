@@ -324,8 +324,9 @@ export function originalLine(e: Nameable) {
 
 /** Translations and other names (not the original or its romanization, shown above), each with its lang. */
 // Own translations in [brackets], official ones marked, former names marked (API 139); when an official translation is
-// shown as the title, the stored title is listed here instead.
-export function otherNames(e: Nameable) {
+// shown as the title, the stored title is listed here instead. Their context (API 152): when in use, a note, and — with
+// `marks` — their sources' markers.
+export function otherNames(e: Nameable, marks: (n: NameEntry) => Html | string = () => '') {
   const official = officialInstead(e);
   const rest: (Pick<NameEntry, 'text' | 'lang' | 'ruby_html' | 'status'> & { role?: NameEntry['role'] })[] = [
     ...(official ? [{ text: e.title!, lang: e.title_lang ?? null, ruby_html: e.title_ruby_html ?? null, status: e.title_status ?? null }] : []),
@@ -333,8 +334,13 @@ export function otherNames(e: Nameable) {
   ];
   return rest.length ? html`${rest.map((n, i) => html`${i ? ' · ' : ''}${n.status ? html`<span title="${STATUS_HINT[n.status]}">${
     nameSpan(translated(n.text, n.status), n.lang, n.ruby_html && n.status === 'own' ? `[${n.ruby_html}]` : n.ruby_html)}</span>` : nameSpan(n.text, n.lang, n.ruby_html)}${
-    n.status === 'official' ? html` <span class="tag">official</span>` : ''}${n.role === 'former' ? html` <span class="tag" title="A name it had before">former</span>` : ''}`)}` : null;
+    n.status === 'official' ? html` <span class="tag">official</span>` : ''}${n.role === 'former' ? html` <span class="tag" title="A name it had before">former</span>` : ''}${context(n as Partial<NameEntry>, marks)}`)}` : null;
 }
+
+/** A name's context (API 152): when it was in use, its sources' markers (stored names only, not the title), a note. */
+const context = (n: Partial<NameEntry>, marks: (n: NameEntry) => Html | string) => html`${
+  n.period ? html` <span class="muted name-period">${n.period.label}</span>` : ''}${n.role ? marks(n as NameEntry) : ''}${
+  n.note ? html` <span class="muted name-note">— ${n.note}</span>` : ''}`;
 
 /** "Official English title" / "Own translation" under an artwork's heading, when the title is a translation (not "common"). */
 export function titleStatusLine(e: Nameable) {

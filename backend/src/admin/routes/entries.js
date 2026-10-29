@@ -401,7 +401,8 @@ router.post('/:plural', async (req, res) => {
 
 // Display of one field's value on the view page.
 // links: "type/slug" → name, for [[links]] in Markdown (loaded by the page, linkNames)
-function showValue(t, key, kind, doc, links = new Map()) {
+// nameMark(i, text): the sources marker of the i-th other name (152), on the view page
+function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '') {
   const v = doc[key];
   if (kind === 'md') return v ? html`<div class="md">${raw(renderMarkdown(v, { names: links }))}</div>` : null;
   if (kind === 'date' || kind === 'period') {
@@ -413,9 +414,10 @@ function showValue(t, key, kind, doc, links = new Map()) {
   if (kind === 'text[]') return v.join(' · ');
   if (kind === 'dimsets') return html`<ul class="names-list">${v.map((s) => html`<li><b>${s.part}</b>: ${dimensionsLib.label(s.cm)}</li>`)}</ul>`;
   if (kind === 'names') {
-    return html`<ul class="names-list">${v.map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)).map((n) => html`<li>
+    return html`<ul class="names-list">${v.map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)).map((n, i) => html`<li>
       <span${n.lang ? html` lang="${n.lang}"` : ''}>${names.hasRuby(n.text) ? raw(names.rubyHtml(n.text)) : n.text}</span>
-      ${n.lang ? html`<span class="tag">${n.lang}</span>` : ''} <span class="muted small">${n.role === 'translation' ? `${n.status === 'own' ? 'own' : n.status || 'common'} translation` : n.role}</span></li>`)}</ul>`;
+      ${n.lang ? html`<span class="tag">${n.lang}</span>` : ''} <span class="muted small">${n.role === 'translation' ? `${n.status === 'own' ? 'own' : n.status || 'common'} translation` : n.role}${n.period_label ? ` · ${n.period_label}` : ''}</span>
+      ${nameMark(i, n.text)}${n.note ? html`<span class="small name-context-shown">${n.note}</span>` : ''}</li>`)}</ul>`;
   }
   if (key === 'title_status') return `${v === 'own' ? 'own' : v} translation${v === 'own' ? ' — shown in [square brackets]' : ''}`;
   if (kind === 'dimensions') return `${v.join(' × ')} cm${v.length === 1 ? ' (height)' : ''}${doc.dimensions_note ? ` (${doc.dimensions_note})` : ''}`;
@@ -495,6 +497,11 @@ router.get('/:plural/:slug', async (req, res) => {
   const here = `/${t.folder}/${e.slug}`;
   const recent = await citations.recentSources(adminPool, req.user.id, t.type, e.id);
   const mark = (key) => (key in citable ? citations.marker(cites[key], { type: t.type, id: e.id, field: key, label: `“${fieldLabel(t.type, key)}”` }, here, { recent }) : '');
+  // its other names as rows (entry_names, 152): each with its sources
+  const nameRows = t.fields.names === 'names' ? (await adminPool.query(
+    'SELECT id, position FROM entry_names WHERE entity_type = $1 AND entity_id = $2 ORDER BY position', [t.type, e.id])).rows : [];
+  const nameCites = await citations.forNames(adminPool, nameRows.map((r) => r.id));
+  const nameMark = (i, text) => (nameRows[i] ? citations.marker(nameCites[nameRows[i].id], { name: nameRows[i].id, label: `“${names.plain(text)}”` }, here, { recent }) : '');
   // type and materials as glossary terms (071): links to their pages, a mark where a value is no term yet
   const termLinks = t.type === 'artwork' ? (await adminPool.query(`
     SELECT (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = w.kind_term_id) AS kind,
@@ -563,6 +570,7 @@ router.get('/:plural/:slug', async (req, res) => {
         if (key === 'web_url' && shown !== null && webAccessed) return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown} <span class="muted small">· added ${webAccessed}</span></dd>`;
         if (shown === null) return '';
         // dates and dimensions are shown under their own key; the label column belongs to the value before it
+        if (kind === 'names') return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${showValue(t, key, kind, e.doc, linkMap, nameMark)}</dd>`;
         return html`<dt>${fieldLabel(t.type, key)}</dt><dd>${shown} ${mark(key)}</dd>`;
       })}</dl>
       ${Object.keys(citable).length ? html`<p class="cite-legend muted small">Sources: click a marker —

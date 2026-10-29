@@ -126,6 +126,20 @@ names:
 The romanization is what lists sort by. Files from before (with `alt_names` / `alt_titles` lists) still import:
 those become alternative names.
 
+A name can carry its context (152): when it was in use (`period`, a date as everywhere) and a `note`; and its own
+`sources` (as a field's):
+```yaml
+names:
+  - text: Direction des musées nationaux
+    lang: fr
+    role: former                                   # a name it had before (139)
+    period: until 1945
+    note: renamed Direction des musées de France in 1945
+    sources:
+      - {source: francearchives-gouv-fr, url: https://francearchives.gouv.fr/article/87249767, accessed: 2026-10-29}
+```
+In forms one name per line: `Direction des musées nationaux | fr | former | until 1945 | renamed … in 1945`.
+
 A translation can say whose it is: `official` (the holding institution's — cite it), `common` (in use; the default) or
 `own` (yours) — `{text: Unter der Welle, lang: de, role: translation, status: own}`, in forms `Unter der Welle | de | translation, own`.
 

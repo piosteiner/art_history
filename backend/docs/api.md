@@ -165,7 +165,11 @@ The detail says which: `geometry_source: {location: "own"|"derived", area: "own"
 - `<name>_ruby_html` — the name with furigana as `<ruby>神奈川<rp>(</rp><rt>かながわ</rt><rp>)</rp></ruby>…` (escaped, safe
   to insert), `null` without; `<name>_reading` — the full reading (`かながわおきなみうら`).
 - `names` — other names in order: `[{text, lang, role, ruby_html, reading}]`, role = `original` | `translation` |
-  `romanization` | `alternative`. A romanization's lang is the language in Latin script (`ja-Latn`, `zh-Latn-pinyin`).
+  `romanization` | `alternative` | `former`. A romanization's lang is the language in Latin script (`ja-Latn`, `zh-Latn-pinyin`).
+  On detail pages each also has its context (152): `period` (when it was in use, a date range like any other, or
+  `null`), `note` (e.g. "renamed Direction des musées de France in 1945") and `sources` (citations, as for fields).
+- In an artwork's `provenance`, `owner.name_then` — the holder's former name in use at the step (at the acquisition,
+  else during the holding): `{text, lang, period, note}`, or `null` (152).
 - `sort_key` — what to sort by: the name itself when it has Latin letters (also when it is an English translation);
   for a name in another script its romanization, else its furigana reading in Latin letters (歌川広重 → Utagawa
   Hiroshige / utagawahiroshige). List results are ordered by it (artists and people: family name first, see below).

@@ -159,7 +159,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)],
           ['Active', e.birth || e.death ? '' : dateLabel(e.active)],  // API 147: dates of life unknown
           ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: e.artworks.length ? [html`<section><h2>Artworks</h2>${artworkList(e.artworks, false)}</section>`] : [],
       };
@@ -187,7 +187,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ...polityFacts(e, 'created_in_polity', 'Made in', 'Country of origin'),
           ['Collection', collectionFact(e)],
           ...numberFacts(e),
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: [partsGrid(e), provenanceSection(e.provenance ?? [], e.bibliography, e.provenance_status, e.sources?.provenance_status, e.provenance_coverage)].filter((x): x is Html => !!x),
       };
@@ -200,7 +200,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Includes', refs('place', e.children)],
           ['Institutions', refs('institution', e.institutions)],
           ['Coordinates', e.location ? `${e.location.coordinates[1].toFixed(4)}, ${e.location.coordinates[0].toFixed(4)}` : null],
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: [],
       };
@@ -211,7 +211,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Period', dateLabel(e.period)],
           ['Part of', refs('movement', [...e.ancestors].reverse())],
           ['Includes', refs('movement', e.children)],
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: [],
       };
@@ -225,7 +225,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Location', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country ? html`, ${countryLink(e.country)}` : ''}` : null],
           ...(e.polities.some((p) => p.relationship === 'located_in_polity') ? polityFacts(e, 'located_in_polity', 'Historically in', '') : []),
           ['Website', e.website_url ? html`<a href="${e.website_url}" target="_blank" rel="noopener">${e.website_url.replace(/^https?:\/\/(www\.)?/, '')}</a>` : null],
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: e.artworks.length ? [html`<section><h2>Artworks in the collection</h2>${artworkList(e.artworks, true)}</section>`] : [],
       };
@@ -240,7 +240,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Occupations', e.occupations.length ? e.occupations.join(', ') : null],
           ['Roles', e.roles.length ? e.roles.map((r) => ROLE_LABEL[r] ?? r).join(', ') : null],
           ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: [],
       };
@@ -265,7 +265,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Category', html`<a href="/glossary?category=${e.category}">${e.category}</a>`],
           // API 145: the chain of broader terms, widest first — Performing arts › Noh
           ['Broader term', (e.broader ?? []).length ? html`${[...e.broader].reverse().map((t, i) => html`${i ? ' › ' : ''}${link('term', t.slug, t.name)}`)}` : null],
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: [narrowerTerms(e.narrower ?? []), backlinks('Used in', 'Entries whose texts mention this term.', e.used_in)].filter((x): x is Html => !!x),
       };
@@ -277,7 +277,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Kind', e.kind],
           ['Place', e.place ? html`${link('place', e.place.slug, e.place.name)}${e.country && e.country.name !== e.place.name ? html`, ${countryLink(e.country)}` : ''}` : null],
           ['Part of', e.part_of ? link('event', e.part_of.slug, e.part_of.name) : null],
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         // the parts in time order (the API sorts them): "Day 1 · fire · 2 March 1657"
         extra: e.parts.length ? [html`<section class="event-parts"><h2>Parts</h2><ul class="plain-list">${e.parts.map((p) => html`<li>
@@ -291,7 +291,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Territory today', e.country_codes.length ? e.country_codes.map((c) => countryName(c) ?? c).join(', ') : null],
           ['Part of', refs('polity', [...e.ancestors].reverse())],
           ['Includes', refs('polity', e.children)],
-          ['Also known as', otherNames(e)],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
         extra: [],
       };

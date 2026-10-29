@@ -375,7 +375,10 @@ const EXTRAS = {
     })(),
     provenance: (await apiPool.query(`
       SELECT p.kind, p.kind <> 'step' AS implied, p.position,
-             CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'public_id', o.public_id, 'name', o.name) END AS owner,
+             CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'public_id', o.public_id, 'name', o.name,
+               -- 152: the holder's former name in use then (at the acquisition, else during the holding)
+               'name_then', (SELECT jsonb_build_object('text', ruby_plain(nt.text), 'lang', nt.lang, 'period', range_json(nt.period, nt.period_label), 'note', nt.note)
+                               FROM name_then(p.owner_type, p.owner_id, coalesce(p.acquired, p.period)) nt WHERE nt.id IS NOT NULL)) END AS owner,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('type', c.owner_type, 'slug', x.slug, 'public_id', x.public_id, 'name', x.name) ORDER BY c.position), '[]')
                 FROM provenance_co_owners_x c JOIN entity_index x ON (x.type, x.id) = (c.owner_type, c.owner_id)
                WHERE c.provenance_id = p.id) AS co_owners,
@@ -651,14 +654,19 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     // { kind, reliability, text, source?, wikidata?, locator, url, accessed, note, outdated }; the full references of the
     // bibliography sources among them join the `bibliography` map (like those its texts cite).
     const catalogue = await bibliography.loadCatalogue(apiPool);
+    // its other names as rows (152): when each was in use, a note — in the order of `names`
+    const nameRows = Array.isArray(body.names) && body.names.length ? (await apiPool.query(`
+      SELECT id, position, range_json(period, period_label) AS period, note FROM entry_names
+      WHERE entity_type = $1 AND entity_id = $2 ORDER BY position`, [e.type, id])).rows : [];
     const { rows: citeRows } = await apiPool.query(`
       SELECT c.*, b.kind::text AS source_kind FROM citation_status c LEFT JOIN bibliography b ON b.id = c.source_id
       WHERE c.pending IS NULL AND ((c.entity_type = $1 AND c.entity_id = $2) OR c.relationship_id = ANY ($3::bigint[])
-                                   OR c.provenance_id = ANY ($4::bigint[]) OR c.number_id = ANY ($5::bigint[]))
+                                   OR c.provenance_id = ANY ($4::bigint[]) OR c.number_id = ANY ($5::bigint[])
+                                   OR c.name_id = ANY ($6::bigint[]))
       ORDER BY c.reliability DESC NULLS LAST, c.id`,
     [e.type, id, rels.map((r) => r._rel_id).filter(Boolean),
       [...rels.map((r) => r._prov_id), ...steps.map((p) => p._prov_id), ...steps.flatMap((p) => (p.alternatives || []).map((a) => a._prov_id))].filter(Boolean),
-      (body.numbers || []).map((n) => n._num_id)]);
+      (body.numbers || []).map((n) => n._num_id), nameRows.map((n) => n.id)]);
     const shape = (c) => {
       const out = { kind: c.wikidata_item ? 'wikidata' : c.source_id ? 'source' : 'text', reliability: c.reliability };
       if (c.wikidata_item) {
@@ -687,6 +695,11 @@ for (const [plural, e] of Object.entries(ENTITIES)) {
     });
     const byNum = group((c) => c.number_id)(citeRows.filter((c) => c.number_id !== null));
     (body.numbers || []).forEach((n) => { n.sources = byNum[n._num_id] || []; delete n._num_id; });  // further numbers (081)
+    const byName = group((c) => c.name_id)(citeRows.filter((c) => c.name_id !== null));
+    (body.names || []).forEach((n, i) => {  // 152: when in use, the context, its sources
+      const r = nameRows.find((x) => x.position === i);
+      Object.assign(n, { period: r ? r.period : null, note: r ? r.note : null, sources: (r && byName[r.id]) || [] });
+    });
     body.sources = byField;
     // its numbers in authority files (053), with the links to the records
     body.identifiers = (await apiPool.query(`

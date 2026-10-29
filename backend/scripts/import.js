@@ -425,6 +425,26 @@ async function main() {
       }
     }
 
+    // 3f. Sources of other names (152): names[i].sources → the i-th row of entry_names (made by the trigger)
+    for (const e of entities.filter((x) => (x.nameSources || []).some((list) => list !== undefined))) {
+      const entityId = ids.get(`${e.type}/${e.slug}`);
+      if (entityId === undefined) continue;
+      for (const [i, list] of e.nameSources.entries()) {
+        if (list === undefined) continue;
+        try {
+          await client.query('SAVEPOINT cite');
+          const { rows } = await client.query('SELECT id FROM entry_names WHERE entity_type = $1 AND entity_id = $2 AND position = $3', [e.type, entityId, i]);
+          if (!rows.length) throw new Error('no such name');
+          await importCitations(client, { name: rows[0].id }, list);
+          await client.query('RELEASE SAVEPOINT cite');
+          count('sources imported');
+        } catch (err) {
+          await client.query('ROLLBACK TO SAVEPOINT cite');
+          fail(e.file, `names[${i}].sources: ${err.message}`);
+        }
+      }
+    }
+
     // 3d. Further numbers of artworks (migration 048), for files with a numbers: list. A number is identified by
     //     (number, institution / source); the list order becomes position. Unchanged ones write nothing.
     for (const e of entities.filter((x) => x.numbers !== null && x.numbers !== undefined)) {

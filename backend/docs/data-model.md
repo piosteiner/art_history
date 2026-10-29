@@ -221,7 +221,17 @@ Each entity table has `<name>_lang` (BCP 47, `CHECK lang_tag_ok()`), `<name>_rub
 `jsonb_array_elements`). A jsonb column rather than a child table because names belong to the entry: saved,
 versioned, reverted, co-edited and exported with it. `names_text()` flattens them (with readings) for search; an
 expression GIN index `f_unaccent(names_text(names)) gin_trgm_ops` serves trigram matching. `name_sort_key()` picks the
-first romanization for sorting; `entity_index` exposes `names` and `sort_key`. Functions called from index
+first romanization for sorting; `entity_index` exposes `names` and `sort_key`.
+
+Names in context (152): a name may also carry `period` (a daterange as text, with `period_label` as written — "until
+1945") and a `note`. The table **entry_names** holds every name of every entry as a row (id, position, text, lang, role,
+status, `period daterange` with a GiST index, period_label, note), kept in step with the column by the trigger
+`entry_names_sync` on each table (`entry_names_reconcile()`, SECURITY DEFINER — nobody writes the table directly). The
+column stays what is edited, versioned and indexed; the rows give each name an identity: sources point at them
+(`citations.name_id`, one more target in `citations_one_target`), and dates become queryable
+(`name_then(type, id, span)` = the former name in use during a span, for the holder at a provenance step). A name keeps
+its row while its text and language stay, also when corrected in place or moved with the same language and role; a
+merge or conversion moves the names' sources along (`move_name_citations()`). Functions called from index
 expressions are schema-qualified inside each other: since Postgres 17, index builds run with a restricted search_path.
 
 Migration 023: `kana_romaji()` (PL/pgSQL, IMMUTABLE) turns kana into Hepburn — katakana → hiragana with `translate()`,

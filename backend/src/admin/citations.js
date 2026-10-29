@@ -63,6 +63,16 @@ async function forProvenance(db, ids) {
   return byStep;
 }
 
+async function forNames(db, ids) {  // other names (152): rows of entry_names
+  if (!ids.length) return {};
+  const { rows } = await db.query(`SELECT c.id, c.name_id, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
+      c.accessed, c.wikidata_item, c.url, false AS outdated, false AS pending FROM citation_status c
+    WHERE c.name_id = ANY ($1::bigint[]) ORDER BY c.reliability DESC NULLS LAST, c.id`, [ids]);
+  const byName = {};
+  for (const r of await shortForms(db, rows)) (byName[r.name_id] ||= []).push(r);
+  return byName;
+}
+
 async function forNumbers(db, ids) {  // further numbers of an artwork (081)
   if (!ids.length) return {};
   const { rows } = await db.query(`SELECT c.id, c.number_id, c.reliability, c.source_text, c.source_slug, c.locator, c.note,
@@ -122,7 +132,7 @@ async function add(db, body, userId, { pending = null, pendingByField = null } =
     const { rows: [b] } = await db.query('SELECT coalesce(siglum, name) AS name FROM bibliography WHERE id = $1', [sourceId]);
     return new CitationError(`${b ? b.name : 'This source'} is already a source here — a source is cited once. To add a page or a quote, remove that citation and add it again with both.`);
   };
-  for (const [key, col] of [['relationship', 'relationship_id'], ['provenance', 'provenance_id'], ['number', 'number_id']]) {
+  for (const [key, col] of [['relationship', 'relationship_id'], ['provenance', 'provenance_id'], ['number', 'number_id'], ['name', 'name_id']]) {
     if (!text(key)) continue;
     if (await already(`${col} = $2`, [text(key)])) throw await twice();
     await db.query(`INSERT INTO citations (${col}, source_id, text, locator, note, accessed, url, created_by) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
@@ -350,12 +360,13 @@ function recentChips(recent = [], cited = []) {
 }
 
 // Next to a value: one badge per kind of source (W M L P), "+" when there is none; a click opens the dialog with the
-// list and a form to add one. target: { type, id, field } or { relationship } or { provenance } or { number }, with its label.
+// list and a form to add one. target: { type, id, field } or { relationship } or { provenance } or { number } or { name },
+// with its label.
 // key / label (data-cite-*): which marker it is, so the page can replace just this one after an add or a remove
 // (editor/sortable.js — no reload). edit: on the edit page (rendered after the entry's form; a button with the same
 // badges goes next to the field's label, and `expect` gets the field's form values on submit).
 const keyOf = (target) => (target.relationship ? `rel:${target.relationship}` : target.provenance ? `prov:${target.provenance}`
-  : target.number ? `num:${target.number}` : `field:${target.field}`);
+  : target.number ? `num:${target.number}` : target.name ? `name:${target.name}` : `field:${target.field}`);
 function badges(cites = []) {
   // every logged source shows its kind — also one still in the working copy (dotted: becomes a citation on Publish),
   // so a value with sources never looks like one without ("+" only when there is none at all)
@@ -394,6 +405,7 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
         ${target.relationship ? html`<input type="hidden" name="relationship" value="${target.relationship}">`
           : target.provenance ? html`<input type="hidden" name="provenance" value="${target.provenance}">`
           : target.number ? html`<input type="hidden" name="number" value="${target.number}">`
+          : target.name ? html`<input type="hidden" name="name" value="${target.name}">`
           : html`<input type="hidden" name="type" value="${target.type}"><input type="hidden" name="id" value="${target.id}"><input type="hidden" name="field" value="${target.field}">`}
         <input type="hidden" name="back" value="${back}">
         ${edit ? html`<input type="hidden" name="expect" value="">` : ''}
@@ -415,6 +427,6 @@ function marker(cites = [], target, back, { edit = false, recent = [] } = {}) {
       </form></div></details>`;
 }
 
-module.exports = { CitationError, citeNew, newEntrySection, citableFields, forEntity, forRelationships, forProvenance, forNumbers, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
+module.exports = { CitationError, citeNew, newEntrySection, citableFields, forEntity, forRelationships, forProvenance, forNumbers, forNames, syncText, add, byId, remove, confirm, pendingFromWikidata, settle,
   pendingFromSource, citeAgreeingSource, citeRelationshipFromSource,
   citeAllFromWikidata, citeAgreeing, citeRelationshipFromWikidata, marker, trigger, recentSources, recentChips, keyOf };

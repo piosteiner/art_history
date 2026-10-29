@@ -46,3 +46,19 @@ test('a former name (139): its own role, kept through lines ↔ names', () => {
   assert.deepEqual(list, [{ text: 'Königliche Museen zu Berlin', lang: 'de', role: 'former' }, { text: 'SMB', role: 'alternative' }]);
   assert.deepEqual(n.linesToNames(n.namesToLines(list)), list);
 });
+
+test('a name in context (152): when it was in use and a note, kept through lines ↔ names and the stored form', () => {
+  const list = n.linesToNames('Direction des musées nationaux | fr | former | until 1945 | renamed Direction des musées de France in 1945\n'
+    + 'Galerie de Boer |  |  | 1961');
+  assert.deepEqual(list, [
+    { text: 'Direction des musées nationaux', lang: 'fr', role: 'former', period: '(,1946-01-01)', period_label: 'until 1945',
+      note: 'renamed Direction des musées de France in 1945' },
+    { text: 'Galerie de Boer', role: 'alternative', period: '[1961-01-01,1962-01-01)', period_label: '1961' }]);
+  assert.deepEqual(n.linesToNames(n.namesToLines(list)), list);
+  // the stored form (range + label) reads back the same — the label is what counts
+  assert.deepEqual(n.normName(list[0]), list[0]);
+  // a note may contain " | "
+  assert.equal(n.linesToNames('X | en | former | 1912–1940 | a | b')[0].note, 'a | b');
+  assert.throws(() => n.linesToNames('X | en | former | sometime'), /period/);
+  assert.throws(() => n.normName({ text: 'X', period: '(,1946-01-01)' }), /needs its label/);
+});

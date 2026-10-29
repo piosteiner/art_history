@@ -9,9 +9,15 @@
 // Languages: BCP 47 tags — ja, en, de, zh-Hant; romanizations are the language in Latin script: ja-Latn,
 // zh-Latn-pinyin, ru-Latn. normLang() fixes the case (JA-latn → ja-Latn).
 //
-// Other names (column `names`, jsonb): [{text, lang?, role}], role = original | translation | romanization | alternative |
-// former (a name the entry had before — a renamed institution, an old place name; 139).
-// In forms one per line: "text | lang | role" — lang and role optional ("Hokusai" alone = an alternative name).
+// Other names (column `names`, jsonb): [{text, lang?, role, status?, period?, period_label?, note?}], role = original |
+// translation | romanization | alternative | former (a name the entry had before — a renamed institution, an old place
+// name; 139). Context (152): when the name was in use — a fuzzy date like any other ("until 1945", "1912–1940"), stored
+// as the daterange `period` with its `period_label` — and a `note` ("renamed … in 1945"). The database keeps each name
+// as a row of entry_names too, which sources can cite.
+// In forms one per line: "text | lang | role | period | note" — all but the text optional ("Hokusai" alone = an
+// alternative name); the note is the rest of the line.
+const { parseFuzzyDate } = require('./fuzzy-date');
+
 const GROUP = /\{([^{}|]+)\|([^{}|]+)\}/g;
 const ROLES = ['original', 'translation', 'romanization', 'alternative', 'former'];
 // A translation's standing (migration 052): official (the holding institution's, a publisher's — cite it), common (in
@@ -48,11 +54,13 @@ function normLang(tag) {
 }
 const langOk = (tag) => LANG.test(tag);
 
-// One stored name {text, lang?, role, status?} ← a doc value: a string (an alternative name) or a mapping. Throws on errors.
+// One stored name {text, lang?, role, status?, period?, period_label?, note?} ← a doc value: a string (an alternative
+// name) or a mapping; its period as written ("until 1945" — as `period`, or as `period_label` beside the stored range).
+// Throws on errors.
 function normName(v) {
   if (typeof v === 'string') v = { text: v };
   if (!v || typeof v !== 'object' || Array.isArray(v)) throw new Error('each name must be text or {text, lang, role}');
-  const extra = Object.keys(v).filter((k) => !['text', 'lang', 'role', 'status'].includes(k));
+  const extra = Object.keys(v).filter((k) => !['text', 'lang', 'role', 'status', 'period', 'period_label', 'note'].includes(k));
   if (extra.length) throw new Error(`unknown key(s) ${extra.join(', ')}`);
   const text = String(v.text ?? '').trim();
   if (!text) throw new Error('a name needs a text');
@@ -69,6 +77,15 @@ function normName(v) {
   if (status && role !== 'translation') throw new Error(`"${text}": only a translation is official, common or own`);
   const out = lang ? { text, lang, role } : { text, role };
   if (status && status !== 'common') out.status = status;  // common is the default
+  const written = String(v.period_label ?? (/^[[(]/.test(String(v.period ?? '')) ? '' : v.period ?? '')).trim();
+  if (written) {
+    let parsed;
+    try { parsed = parseFuzzyDate(written, { openEnd: true }); } catch (err) { throw new Error(`"${text}": period — ${err.message}`); }
+    out.period = parsed.range;
+    out.period_label = written;
+  } else if (v.period) throw new Error(`"${text}": a period needs its label (e.g. "until 1945")`);
+  const note = String(v.note ?? '').trim();
+  if (note) out.note = note;
   return out;
 }
 
@@ -88,13 +105,17 @@ function splitLine(line) {
 }
 function linesToNames(text) {
   return String(text ?? '').split('\n').map((l) => l.trim()).filter(Boolean).map((line) => {
-    const [t, lang, role] = splitLine(line);
-    return normName({ text: t, lang: lang || null, role: role || null });
+    const [t, lang, role, period, ...note] = splitLine(line);
+    return normName({ text: t, lang: lang || null, role: role || null, period: period || null, note: note.join(' | ') || null });
   });
 }
-const namesToLines = (names) => (names || []).map((n) => [n.text, n.lang || (n.role !== 'alternative' ? '' : null),
-  n.role !== 'alternative' ? `${n.role}${n.status && n.status !== 'common' ? `, ${n.status}` : ''}` : null]
-  .filter((p) => p !== null).join(' | ')).join('\n');
+// the columns a name needs: trailing empty ones left out ("Hokusai", "Kanagawa | ja | original")
+const namesToLines = (names) => (names || []).map((n) => {
+  const cols = [n.text, n.lang || '', n.role !== 'alternative' || n.status ? `${n.role}${n.status && n.status !== 'common' ? `, ${n.status}` : ''}` : '',
+    n.period_label || '', n.note || ''];
+  while (cols.length > 1 && cols[cols.length - 1] === '') cols.pop();
+  return cols.join(' | ');
+}).join('\n');
 
 module.exports = { ROLES, STATUSES, plain, reading, hasRuby, rubyError, rubyHtml, normLang, langOk, normName, linesToNames,
   namesToLines, splitLine };

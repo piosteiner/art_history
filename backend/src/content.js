@@ -106,6 +106,7 @@ function toRow(doc, fields) {
   const errors = [];
   let parent = null;
   const put = (col, value, expr = '$') => { cols[col] = [expr, value]; };
+  let nameSources = [];
 
   for (const key of Object.keys(doc)) {
     if (['relationships', 'images', 'provenance', 'numbers', 'sources', 'identifiers', 'slug'].includes(key)) continue;  // their own parts, below
@@ -144,7 +145,11 @@ function toRow(doc, fields) {
       } else if (kind === 'names') {
         const list = v ?? LEGACY_ALT.map((k) => doc[k]).find((x) => x != null) ?? [];
         if (!Array.isArray(list)) throw new Error('must be a list');
-        put(key, JSON.stringify(list.map((n, i) => { try { return names.normName(n); } catch (err) { throw new Error(`[${i}] ${err.message}`); } })), '$::jsonb');
+        // a name's sources (152) are citations, imported after the entry: kept aside by position
+        nameSources = list.map((n) => (n && typeof n === 'object' ? n.sources : undefined));
+        put(key, JSON.stringify(list.map((n, i) => {
+          try { return names.normName(n && typeof n === 'object' ? (({ sources: _s, ...rest }) => rest)(n) : n); } catch (err) { throw new Error(`[${i}] ${err.message}`); }
+        })), '$::jsonb');
       } else if (kind === 'bool') {
         // true / false in YAML; "yes" from forms (a select, so live working copies can carry it)
         put(key, v === true || v === 'yes' || v === 'true');
@@ -312,7 +317,7 @@ function toRow(doc, fields) {
     if (typeof doc.identifiers !== 'object' || Array.isArray(doc.identifiers)) errors.push('identifiers must be a mapping authority → number');
     else identifiers = Object.fromEntries(Object.entries(doc.identifiers).map(([k, v]) => [k, String(v)]));
   }
-  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, sources, identifiers, errors };
+  return { cols, refs, parent, relationships: Array.isArray(relationships) ? relationships : [], images, provenance, numbers, sources, identifiers, nameSources, errors };
 }
 
 // Stored date → { value: '1886-03/1888-02-20', label } where label is null when it is just the generated one.

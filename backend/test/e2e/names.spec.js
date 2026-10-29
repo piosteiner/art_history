@@ -53,7 +53,8 @@ test('a Japanese title: furigana by "Add reading", language, romanization and tr
   expect(w.title_reading).toBe('かながわ沖浪裏');
   expect(w.sort_key).toBe('Kanagawa-oki nami ura');
   expect(w.alt_titles).toEqual(['Kanagawa-oki nami ura', 'Under the Wave off Kanagawa']);  // as before, plain
-  expect(w.names[1]).toEqual({ text: 'Under the Wave off Kanagawa', lang: 'en', role: 'translation', status: 'common', ruby_html: null, reading: null });  // status: 052
+  expect(w.names[1]).toEqual({ text: 'Under the Wave off Kanagawa', lang: 'en', role: 'translation', status: 'common', ruby_html: null, reading: null,
+    period: null, note: null, sources: [] });  // status: 052; period, note, sources: 152
   expect((await api(request, '/artworks?q=kanagawa oki')).data.map((x) => x.slug)).toContain('test-kanagawa');
   expect((await api(request, '/search?q=under the wave')).data.map((x) => x.slug)).toContain('test-kanagawa');
 
@@ -123,4 +124,52 @@ test('a former name (139): chosen as the role in the form, stored and in the API
   const body = await res.json();
   expect((body.data ?? body).names).toEqual([expect.objectContaining({ text: 'Test Königliche Museen', lang: 'de', role: 'former' })]);
   sql("DELETE FROM institutions WHERE slug = 'test-museen-berlin'");
+});
+
+// 152: a name with its context — when it was in use, a note — and its own sources (entry_names, citations.name_id)
+test('a former name in context: period and note in the form, a source of its own, the name then at a provenance step', async ({ userA, request }) => {
+  await userA.goto('/institutions/new');
+  await userA.fill('#f-name', 'Test Musées de France');
+  await userA.fill('#f-slug', 'test-musees-de-france');
+  const row = userA.locator('.names-row').nth(0);
+  await row.locator('.n-text').fill('Test Direction des musées nationaux');
+  await row.locator('.n-lang').fill('fr');
+  await row.locator('.n-role').selectOption('former');
+  await row.locator('.n-period').fill('until 1945');
+  await row.locator('.n-note').fill('renamed in 1945');
+  await expect(userA.locator('#f-names')).toHaveValue('Test Direction des musées nationaux | fr | former | until 1945 | renamed in 1945');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/institutions\/test-musees-de-france\?done=created/);
+  expect(sql(`SELECT concat_ws(' / ', text, role, period, period_label, note) FROM entry_names
+              WHERE entity_type = 'institution' AND entity_id = entity_id('institution', 'test-musees-de-france')`))
+    .toBe('Test Direction des musées nationaux / former / (,1946-01-01) / until 1945 / renamed in 1945');
+
+  // on the entry page: the period, the note, and a marker for its sources
+  const name = userA.locator('.names-list li', { hasText: 'Test Direction des musées nationaux' });
+  await expect(name).toContainText('until 1945');
+  await expect(name).toContainText('renamed in 1945');
+  await name.locator('details.cite > summary').click();
+  const form = name.locator('.cite-add');
+  await form.locator('.cite-more summary').click();
+  await form.locator('input[name=text]').fill('Archives nationales, fonds 20150044');
+  await form.locator('.cite-submit').click();
+  await expect(userA.locator('details.cite[open] .cite-status')).toHaveText(/Source added/);
+  await expect(name.locator('summary .cite-badge.cite-text')).toHaveText('T');
+
+  // a spelling corrected in place keeps the name's row, and so its source
+  sql(`UPDATE institutions SET names = jsonb_set(names, '{0,text}', '"Test Direction des Musées nationaux"') WHERE slug = 'test-musees-de-france'`);
+  expect(sql(`SELECT count(*) FROM citations c JOIN entry_names n ON n.id = c.name_id WHERE n.text = 'Test Direction des Musées nationaux'`)).toBe('1');
+
+  // the API: the name with its period, note and sources; a provenance step in 1939 shows the name then
+  const body = await (await request.get(`${API}/institutions/test-musees-de-france`, { headers: { Host: 'api.localhost' } })).json();
+  expect(body.names[0]).toEqual(expect.objectContaining({ text: 'Test Direction des Musées nationaux', role: 'former', note: 'renamed in 1945',
+    period: expect.objectContaining({ label: 'until 1945', to_year: 1945 }), sources: [expect.objectContaining({ kind: 'text', text: 'Archives nationales, fonds 20150044' })] }));
+  sql(`INSERT INTO artworks (slug, title) VALUES ('test-name-then-work', 'Name then test');
+       INSERT INTO provenance (artwork_id, position, owner_institution_id, role, acquired, acquired_label)
+         VALUES (entity_id('artwork', 'test-name-then-work'), 0, entity_id('institution', 'test-musees-de-france'), 'custodian', '[1939-10-01,1939-11-01)', 'October 1939')`);
+  const work = await (await request.get(`${API}/artworks/test-name-then-work`, { headers: { Host: 'api.localhost' } })).json();
+  const step = work.provenance.find((p) => p.owner && p.owner.slug === 'test-musees-de-france');
+  expect(step.owner.name_then).toEqual(expect.objectContaining({ text: 'Test Direction des Musées nationaux', note: 'renamed in 1945' }));
+  sql(`DELETE FROM artworks WHERE slug = 'test-name-then-work'; DELETE FROM institutions WHERE slug = 'test-musees-de-france'`);
+  expect(sql(`SELECT count(*) FROM entry_names WHERE text LIKE 'Test Direction des%'`)).toBe('0');
 });

@@ -156,7 +156,11 @@ export interface NameEntry {
   reading: string | null;
   /** For a translation (migration 052): official (institution, publisher) · common (in use) · own (the author's); else null. */
   status?: TranslationStatus | null;
+  /** When the name was in use, its context and sources (API 152) — on detail pages only. */
+  period?: DateRange | null; note?: string | null; sources?: Citation[];
 }
+/** A holder's former name in use at a provenance step (API 152: `owner.name_then`). */
+export interface NameThen { text: string; lang: string | null; period: DateRange | null; note: string | null }
 export type TranslationStatus = 'official' | 'common' | 'own';
 
 /** Display name (`name`) with its language, furigana and other names; `search_text`: further words it is found by. */
@@ -388,7 +392,7 @@ export interface ProvenanceNumberHit {
 export interface ProvenanceStep {
   kind?: 'creation' | 'step' | 'loan'; implied?: boolean;
   position: number;
-  owner: EntryRef | null; // an entry on this site, else only described:
+  owner: (EntryRef & { name_then?: NameThen | null }) | null; // an entry on this site (with its name then, 152), else only described:
   owner_label: string | null; owner_name: string | null;
   /** Further owners of the same step ("Leo Stein and Gertrude Stein"). */
   co_owners?: EntryRef[];

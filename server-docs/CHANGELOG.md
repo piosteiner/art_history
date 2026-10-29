@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Names in context: when in use, a note, sources per name (migration 152)
+- **What:** other names can say when they were in use (`period`, a fuzzy date: "until 1945") and why (`note`), and
+  have sources of their own. New table `entry_names` (a row per name, `period daterange` + GiST), kept in step with
+  the column `names` by triggers (`entry_names_sync` → `entry_names_reconcile()`); `citations.name_id`;
+  `name_then()`; `move_name_citations()` in `merge_entries()` / `convert_entry()`; `name_citation_docs()` for YAML.
+  CMS: period and context inputs per name row, a sources marker per name on the entry page. API: `names[].period`,
+  `note`, `sources`; provenance `owner.name_then`. Site: period, note and markers under "Also known as"; a holder's
+  name then in the provenance ("Musées nationaux (then Direction des musées nationaux)"). YAML: `names[].period`,
+  `note`, `sources`.
+- **Why:** owner, 2026-10-29 — the Direction des musées nationaux / Direction des musées de France case: a name
+  without its time and context misleads. Option B (own table) chosen over extending the jsonb only.
+- **Design:** the column stays the edited, audited and indexed copy (History, Revert, merge, import keep working; the
+  trigram/full-text indexes can't reach into a join); the table gives each name an id for sources and a real range.
+- **Tests:** unit (names.test.js), e2e "a former name in context" (names.spec.js); `npm run perf` 35/35 in budget.
+- **Revert:** `git revert`; in the database `DROP TABLE entry_names CASCADE` + `ALTER TABLE citations DROP COLUMN
+  name_id` and the previous `names_valid()`, `merge_entries()`, `convert_entry()` from 151/143.
+
 ### Institutions: the open cases settled (data) + merging institutions works again (migration 151)
 - **What:** the cases left for the owner on 2026-10-28, checked against their sources (the Kunsthaus provenance PDFs):
   - Frederik Muller & Co. merged into Frederik Muller & Cie (Q18821838) — the Kunsthaus writes both names for the same

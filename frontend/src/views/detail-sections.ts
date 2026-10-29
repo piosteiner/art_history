@@ -2,7 +2,7 @@
 import { getEncounters, getPresence, listAll, PLURAL } from '../api';
 import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters, fromApi, type Encounter } from '../encounters';
-import { creatorsOf, impliedEnd, html, link, render, trusted, TYPE_LABEL, type Html } from '../html';
+import { creatorsOf, impliedEnd, html, link, nameSpan, render, trusted, TYPE_LABEL, type Html } from '../html';
 import type {
   Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceRecord, ProvenanceStatus, ProvenanceStep, Relationship,
 } from '../types';
@@ -140,7 +140,9 @@ function eventStep(s: ProvenanceStep, bibliography?: Record<string, SourceHint>)
 /** "Leo Stein", "A and B", "A, B and C" — linked where they have an entry. */
 function holders(s: ProvenanceStep): Html {
   const first = s.owner
-    ? html`${link(s.owner.type, s.owner.slug, s.owner.name)}${s.owner_label && s.owner_label !== s.owner.name ? html` <span class="muted">(${s.owner_label})</span>` : ''}`
+    ? html`${link(s.owner.type, s.owner.slug, s.owner.name)}${s.owner_label && s.owner_label !== s.owner.name ? html` <span class="muted">(${s.owner_label})</span>`
+      // its name then (API 152): a former name in use at the time — unless the step names it already
+      : s.owner.name_then ? html` <span class="muted name-then" title="${s.owner.name_then.note ?? `its name ${s.owner.name_then.period?.label ?? 'then'}`}">(then ${nameSpan(s.owner.name_then.text, s.owner.name_then.lang)})</span>` : ''}`
     : html`${s.owner_label ?? s.owner_name ?? 'Unknown owner'}`;
   const all = [first, ...(s.co_owners ?? []).map((c) => link(c.type, c.slug, c.name))];
   return html`${s.role === 'estate' ? 'Estate of ' : ''}${all.map((h, i) => html`${i ? (i === all.length - 1 ? ' and ' : ', ') : ''}${h}`)}`;

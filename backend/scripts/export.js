@@ -47,6 +47,16 @@ async function main() {
           const nums = await readNumbers(client, id);
           if (nums.length) doc.numbers = nums;
         }
+        // other names (152): the period as written, and each name's sources
+        if (Array.isArray(doc.names) && doc.names.length) {
+          const rows = (await client.query('SELECT position, name_citation_docs(id) AS s FROM entry_names WHERE entity_type = $1 AND entity_id = $2', [t.type, id])).rows;
+          doc.names = doc.names.map((name, i) => {
+            const cited = (rows.find((r) => r.position === i) || {}).s;
+            if (typeof name === 'string') return cited ? { text: name, sources: cited } : name;  // a plain alternative name
+            const { period, period_label: label, note, ...n } = name;
+            return { ...n, ...(label ? { period: label } : {}), ...(note ? { note } : {}), ...(cited ? { sources: cited } : {}) };
+          });
+        }
         // its numbers in authority files (053)
         const ids = (await client.query('SELECT authority, value FROM entry_identifiers WHERE entity_type = $1 AND entity_id = $2 ORDER BY authority', [t.type, id])).rows;
         if (ids.length) doc.identifiers = Object.fromEntries(ids.map((r) => [r.authority, r.value]));
