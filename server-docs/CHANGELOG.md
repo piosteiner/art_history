@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Polity chains: the years 1813–1815 (data)
+- **What:** 9 polities from Wikidata — the Allied general governorates (Saxony, Berg, Lower Rhine, Middle Rhine, Lower and
+  Middle Rhine, Frankfurt; run by Stein's Central Administrative Department), the Provisional Government of Belgium,
+  the Electorate of Hanover (restored 1813), the Electorate of Hesse 1803–1807 — and 37 `in_polity` links: those
+  governorates, Hanover 1813–14, Prussia back in Ravensberg (Bielefeld, Halle) 1813, Belgium 1814–15, the Austrian
+  Empire in Venetia and Lombardy from April 1814, Goslar/Bad Harzburg (Westphalia), Bad Bentheim (Berg, France).
+  Still open: Switzerland Dec 1813–Apr 1814, the Papal States 1814–15, Hamburg 1814–15, Mainz 1814–16.
+- **Why:** owner, 2026-10-29: the "Allied administration" was true only for part of the lands.
+- **Revert:** delete the links by polity.
+
 ### A place's polities only while it existed (migration 163); Tokyo merged
 - **What:** `polity_timeline()` counts the time outside `places.existed` as covered, so no inherited link reaches into
   it (Tokyo City 1889–1943 showed Japan's chain from the Kamakura shogunate). Data: Tokyo City and Tokyo Prefecture
