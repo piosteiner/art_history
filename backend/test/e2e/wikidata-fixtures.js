@@ -17,6 +17,7 @@ const ENTITIES = {
       P19: [stmt(item('Q90'))], P20: [stmt(item('Q101'))], P135: [stmt(item('Q102'))], P1066: [stmt(item('Q103'))],
       P18: [stmt('Claude Monet 1899 Nadar crop.jpg')], P27: [stmt(item('Q108'))],
       P227: [stmt('118583123')], P245: [stmt('500018666')],  // GND, ULAN (053)
+      P742: [stmt('Test Pseudonym Monet', { P580: time('+1860-00-00T00:00:00Z', 9) })],  // a pseudonym with its start (153)
       P937: [stmt(item('Q90'), { P580: time('+1859-00-00T00:00:00Z', 9), P582: time('+1860-00-00T00:00:00Z', 9) })] } },
   Q90: { id: 'Q90', labels: labels('Paris'), descriptions: { en: { value: 'capital of France' } },
     claims: { P31: [stmt(item('Q515'))], P625: [stmt({ latitude: 48.8567, longitude: 2.3522, globe: 'http://www.wikidata.org/entity/Q2' })] } },

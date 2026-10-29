@@ -140,6 +140,9 @@ names:
 ```
 In forms one name per line: `Direction des musées nationaux | fr | former | until 1945 | renamed … in 1945`.
 
+What kind of name it is (153) — `kind: birth` (married, pseudonym, art_name, religious, nickname, abbreviation); in
+forms after the role: `Paula Becker | de | former, birth | until 1901`.
+
 A translation can say whose it is: `official` (the holding institution's — cite it), `common` (in use; the default) or
 `own` (yours) — `{text: Unter der Welle, lang: de, role: translation, status: own}`, in forms `Unter der Welle | de | translation, own`.
 

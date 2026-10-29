@@ -159,7 +159,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Born', dateLabel(e.birth)], ['Died', dateLabel(e.death)],
           ['Active', e.birth || e.death ? '' : dateLabel(e.active)],  // API 147: dates of life unknown
           ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
-          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
+          ['Born as', otherNames(e, (n) => cite(n.sources, e.bibliography), (n) => n.kind === 'birth')],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography), (n) => n.kind !== 'birth')],
         ],
         extra: e.artworks.length ? [html`<section><h2>Artworks</h2>${artworkList(e.artworks, false)}</section>`] : [],
       };
@@ -240,7 +241,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ['Occupations', e.occupations.length ? e.occupations.join(', ') : null],
           ['Roles', e.roles.length ? e.roles.map((r) => ROLE_LABEL[r] ?? r).join(', ') : null],
           ...polityFacts(e, 'nationality', 'Nationality', 'Country of birth'),
-          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
+          ['Born as', otherNames(e, (n) => cite(n.sources, e.bibliography), (n) => n.kind === 'birth')],
+          ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography), (n) => n.kind !== 'birth')],
         ],
         extra: [],
       };

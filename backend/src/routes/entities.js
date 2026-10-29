@@ -39,7 +39,7 @@ const countryFilters = (type) => ({
 const nameCols = (col, alt, type) => `t.${col}_lang, t.${col}_ruby, t.names, ${keyExpr(type, 't', col)} AS sort_key,
   coalesce(name_alt_text(t.${col}_ruby, t.names), '') AS search_text,
   (SELECT coalesce(jsonb_agg(ruby_plain(n->>'text')), '[]'::jsonb) FROM jsonb_array_elements(t.names) n) AS ${alt}`;
-// raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, status, ruby_html, reading}]
+// raw markup → { <col>_ruby_html, <col>_reading } and names → [{text (plain), lang, role, status, kind, ruby_html, reading}]
 // status: a translation's standing — official · common · own (052); null for the other roles
 function shapeNames(row, col) {
   if (!('names' in row)) return row;
@@ -48,7 +48,7 @@ function shapeNames(row, col) {
   row[`${col}_ruby_html`] = markup ? names.rubyHtml(markup) : null;
   row[`${col}_reading`] = markup ? names.reading(markup) : null;
   row.names = row.names.map((n) => ({ text: names.plain(n.text), lang: n.lang || null, role: n.role,
-    status: n.role === 'translation' ? n.status || 'common' : null,
+    status: n.role === 'translation' ? n.status || 'common' : null, kind: n.kind || null,  // 153: birth name, pseudonym …
     ruby_html: names.rubyHtml(n.text), reading: names.hasRuby(n.text) ? names.reading(n.text) : null }));
   return row;
 }
@@ -377,7 +377,7 @@ const EXTRAS = {
       SELECT p.kind, p.kind <> 'step' AS implied, p.position,
              CASE WHEN p.owner_id IS NOT NULL THEN jsonb_build_object('type', p.owner_type, 'slug', o.slug, 'public_id', o.public_id, 'name', o.name,
                -- 152: the holder's former name in use then (at the acquisition, else during the holding)
-               'name_then', (SELECT jsonb_build_object('text', ruby_plain(nt.text), 'lang', nt.lang, 'period', range_json(nt.period, nt.period_label), 'note', nt.note)
+               'name_then', (SELECT jsonb_build_object('text', ruby_plain(nt.text), 'lang', nt.lang, 'period', range_json(nt.period, nt.period_label), 'kind', nt.kind, 'note', nt.note)
                                FROM name_then(p.owner_type, p.owner_id, coalesce(p.acquired, p.period)) nt WHERE nt.id IS NOT NULL)) END AS owner,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('type', c.owner_type, 'slug', x.slug, 'public_id', x.public_id, 'name', x.name) ORDER BY c.position), '[]')
                 FROM provenance_co_owners_x c JOIN entity_index x ON (x.type, x.id) = (c.owner_type, c.owner_id)

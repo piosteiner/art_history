@@ -3,7 +3,7 @@
 import { fold } from './fold';
 import { zoomable } from './zoom';
 import { BASE as API_BASE, PLURAL, publicIdOf } from './api';
-import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, Plural, PolityLink, Ref, TranslationStatus } from './types';
+import type { Country, CreatorRef, DateRange, EndBasis, EntityType, Image, NameEntry, NameKind, Plural, PolityLink, Ref, TranslationStatus } from './types';
 
 export class Html {
   constructor(readonly value: string) {}
@@ -326,16 +326,23 @@ export function originalLine(e: Nameable) {
 // Own translations in [brackets], official ones marked, former names marked (API 139); when an official translation is
 // shown as the title, the stored title is listed here instead. Their context (API 152): when in use, a note, and — with
 // `marks` — their sources' markers.
-export function otherNames(e: Nameable, marks: (n: NameEntry) => Html | string = () => '') {
+// `keep`: which of them (the "Born as" row takes the birth names, "Also known as" the rest — API 153).
+export function otherNames(e: Nameable, marks: (n: NameEntry) => Html | string = () => '', keep: (n: Partial<NameEntry>) => boolean = () => true) {
   const official = officialInstead(e);
   const rest: (Pick<NameEntry, 'text' | 'lang' | 'ruby_html' | 'status'> & { role?: NameEntry['role'] })[] = [
     ...(official ? [{ text: e.title!, lang: e.title_lang ?? null, ruby_html: e.title_ruby_html ?? null, status: e.title_status ?? null }] : []),
     ...(e.names ?? []).filter((n) => n.role !== 'original' && n.role !== 'romanization' && n !== official),
-  ];
+  ].filter((n) => keep(n as Partial<NameEntry>));
   return rest.length ? html`${rest.map((n, i) => html`${i ? ' · ' : ''}${n.status ? html`<span title="${STATUS_HINT[n.status]}">${
     nameSpan(translated(n.text, n.status), n.lang, n.ruby_html && n.status === 'own' ? `[${n.ruby_html}]` : n.ruby_html)}</span>` : nameSpan(n.text, n.lang, n.ruby_html)}${
-    n.status === 'official' ? html` <span class="tag">official</span>` : ''}${n.role === 'former' ? html` <span class="tag" title="A name it had before">former</span>` : ''}${context(n as Partial<NameEntry>, marks)}`)}` : null;
+    n.status === 'official' ? html` <span class="tag">official</span>` : ''}${kindTag(n as Partial<NameEntry>)}${context(n as Partial<NameEntry>, marks)}`)}` : null;
 }
+
+const KIND_LABEL: Record<NameKind, string> = { birth: 'birth name', married: 'married name', pseudonym: 'pseudonym', art_name: 'art name',
+  religious: 'religious name', nickname: 'nickname', abbreviation: 'abbreviation' };
+/** What kind of name it is (API 153) — else "former" for a name it had before (139); a birth name says so in its row. */
+const kindTag = (n: Partial<NameEntry>) => (n.kind && n.kind !== 'birth' ? html` <span class="tag">${KIND_LABEL[n.kind]}</span>`
+  : n.role === 'former' && !n.kind ? html` <span class="tag" title="A name it had before">former</span>` : '');
 
 /** A name's context (API 152): when it was in use, its sources' markers (stored names only, not the title), a note. */
 const context = (n: Partial<NameEntry>, marks: (n: NameEntry) => Html | string) => html`${

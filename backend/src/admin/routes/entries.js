@@ -416,7 +416,7 @@ function showValue(t, key, kind, doc, links = new Map(), nameMark = () => '') {
   if (kind === 'names') {
     return html`<ul class="names-list">${v.map((n) => (typeof n === 'string' ? { text: n, role: 'alternative' } : n)).map((n, i) => html`<li>
       <span${n.lang ? html` lang="${n.lang}"` : ''}>${names.hasRuby(n.text) ? raw(names.rubyHtml(n.text)) : n.text}</span>
-      ${n.lang ? html`<span class="tag">${n.lang}</span>` : ''} <span class="muted small">${n.role === 'translation' ? `${n.status === 'own' ? 'own' : n.status || 'common'} translation` : n.role}${n.period_label ? ` · ${n.period_label}` : ''}</span>
+      ${n.lang ? html`<span class="tag">${n.lang}</span>` : ''} <span class="muted small">${n.role === 'translation' ? `${n.status === 'own' ? 'own' : n.status || 'common'} translation` : n.role}${n.kind ? ` · ${names.KIND_LABEL[n.kind]}` : ''}${n.period_label ? ` · ${n.period_label}` : ''}</span>
       ${nameMark(i, n.text)}${n.note ? html`<span class="small name-context-shown">${n.note}</span>` : ''}</li>`)}</ul>`;
   }
   if (key === 'title_status') return `${v === 'own' ? 'own' : v} translation${v === 'own' ? ' — shown in [square brackets]' : ''}`;

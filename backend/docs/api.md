@@ -166,7 +166,8 @@ The detail says which: `geometry_source: {location: "own"|"derived", area: "own"
   to insert), `null` without; `<name>_reading` — the full reading (`かながわおきなみうら`).
 - `names` — other names in order: `[{text, lang, role, ruby_html, reading}]`, role = `original` | `translation` |
   `romanization` | `alternative` | `former`. A romanization's lang is the language in Latin script (`ja-Latn`, `zh-Latn-pinyin`).
-  On detail pages each also has its context (152): `period` (when it was in use, a date range like any other, or
+  `kind` (153): what kind of name — `birth` | `married` | `pseudonym` | `art_name` (gō) | `religious` | `nickname` |
+  `abbreviation`, or `null`. On detail pages each also has its context (152): `period` (when it was in use, a date range like any other, or
   `null`), `note` (e.g. "renamed Direction des musées de France in 1945") and `sources` (citations, as for fields).
 - In an artwork's `provenance`, `owner.name_then` — the holder's former name in use at the step (at the acquisition,
   else during the holding): `{text, lang, period, note}`, or `null` (152).

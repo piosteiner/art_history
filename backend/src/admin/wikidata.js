@@ -115,9 +115,11 @@ function coords(e) {
   return [Math.round(longitude * 1e5) / 1e5, Math.round(latitude * 1e5) / 1e5];
 }
 // Alternative names: English aliases and the native name first (pre-ticked for an empty list), then other languages.
-// Other names, as form lines "text | lang | role" (src/names.js):
+// Other names, as form lines "text | lang | role, kind | period" (src/names.js):
 //   primary  English aliases (alternative) · native name P1559 and title P1476 (original, with their language) ·
-//            Revised Hepburn P2125 (ja-Latn, romanization)
+//            Revised Hepburn P2125 (ja-Latn, romanization) · names of a kind (153), with the time from their
+//            qualifiers (start P580 / end P582): birth name P1477 (former), pseudonym P742, nickname P1449, art name
+//            (gō) P1787
 //   other    labels in further languages (translation; "original" in the language of the title / native name)
 function altNames(e, main) {
   const seen = new Set([String(main || '').toLowerCase()]);
@@ -129,6 +131,17 @@ function altNames(e, main) {
     list.push(line(text, lang, role));
   };
   const primary = [];
+  for (const [prop, kind, role] of NAME_KINDS) {
+    for (const st of statements(e, prop)) {
+      const v = st.mainsnak.datavalue.value;
+      const text = typeof v === 'object' ? v.text : String(v);
+      if (!text || seen.has(text.toLowerCase())) continue;
+      seen.add(text.toLowerCase());
+      const when = periodOf(st);
+      primary.push(nameUtil.namesToLines([{ text, lang: typeof v === 'object' ? nameUtil.normLang(v.language) : null, role, kind,
+        period_label: when ? when.label || when.value : null }]));
+    }
+  }
   const originals = [...statements(e, 'P1476'), ...statements(e, 'P1559')].map((s) => s.mainsnak.datavalue.value);
   for (const o of originals) take(primary, o.text, nameUtil.normLang(o.language), 'original');
   for (const s of statements(e, 'P2125')) take(primary, String(s.mainsnak.datavalue.value), 'ja-Latn', 'romanization');
@@ -141,6 +154,11 @@ function altNames(e, main) {
   }
   return { primary, other };
 }
+
+// Names of a kind (153): Wikidata property → our kind and role; NAME_PROPS: kind → property (the citations of taken names)
+const NAME_KINDS = [['P1477', 'birth', 'former'], ['P742', 'pseudonym', 'alternative'], ['P1449', 'nickname', 'alternative'],
+  ['P1787', 'art_name', 'alternative']];
+const NAME_PROPS = Object.fromEntries(NAME_KINDS.map(([prop, kind]) => [kind, prop]));
 
 // Quantities (height P2048, width P2049, depth P2610 / P5524) → centimetres
 const UNIT_CM = { Q174728: 1, Q174789: 0.1, Q11573: 100, Q218593: 2.54, Q3710: 30.48 };  // cm, mm, m, inch, foot
@@ -921,4 +939,4 @@ async function coordsOf(qid) {
 
 module.exports = {
   getEntitiesBatch,
-  withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf, institutionKind };
+  withProvenance, search, compare, apply, slugify, sourceNote, SLUG, coordsOf, createEntry, typesOf, institutionKind, NAME_PROPS };

@@ -231,7 +231,13 @@ column stays what is edited, versioned and indexed; the rows give each name an i
 (`citations.name_id`, one more target in `citations_one_target`), and dates become queryable
 (`name_then(type, id, span)` = the former name in use during a span, for the holder at a provenance step). A name keeps
 its row while its text and language stay, also when corrected in place or moved with the same language and role; a
-merge or conversion moves the names' sources along (`move_name_citations()`). Functions called from index
+merge or conversion moves the names' sources along (`move_name_citations()`).
+
+The kind of name (153): `kind` in the column and in entry_names — birth, married, pseudonym, art_name (gō), religious,
+nickname, abbreviation; a fixed list like the roles (CHECK in `names_valid()` and on the column — an immutable check
+can't read a table). Written after the role in form lines ("former, birth"). The Wikidata review offers birth name
+P1477 (former), pseudonym P742, nickname P1449, art name P1787 with the time from their start/end qualifiers;
+`scripts/fill-from-wikidata.js --name-kinds` adds them to existing entries and cites each name with its statement. Functions called from index
 expressions are schema-qualified inside each other: since Postgres 17, index builds run with a restricted search_path.
 
 Migration 023: `kana_romaji()` (PL/pgSQL, IMMUTABLE) turns kana into Hepburn — katakana → hiragana with `translate()`,

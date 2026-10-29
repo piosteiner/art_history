@@ -54,7 +54,7 @@ test('a Japanese title: furigana by "Add reading", language, romanization and tr
   expect(w.sort_key).toBe('Kanagawa-oki nami ura');
   expect(w.alt_titles).toEqual(['Kanagawa-oki nami ura', 'Under the Wave off Kanagawa']);  // as before, plain
   expect(w.names[1]).toEqual({ text: 'Under the Wave off Kanagawa', lang: 'en', role: 'translation', status: 'common', ruby_html: null, reading: null,
-    period: null, note: null, sources: [] });  // status: 052; period, note, sources: 152
+    kind: null, period: null, note: null, sources: [] });  // status: 052; period, note, sources: 152; kind: 153
   expect((await api(request, '/artworks?q=kanagawa oki')).data.map((x) => x.slug)).toContain('test-kanagawa');
   expect((await api(request, '/search?q=under the wave')).data.map((x) => x.slug)).toContain('test-kanagawa');
 
@@ -172,4 +172,25 @@ test('a former name in context: period and note in the form, a source of its own
   expect(step.owner.name_then).toEqual(expect.objectContaining({ text: 'Test Direction des Musées nationaux', note: 'renamed in 1945' }));
   sql(`DELETE FROM artworks WHERE slug = 'test-name-then-work'; DELETE FROM institutions WHERE slug = 'test-musees-de-france'`);
   expect(sql(`SELECT count(*) FROM entry_names WHERE text LIKE 'Test Direction des%'`)).toBe('0');
+});
+
+// 153: the kind of name — chosen in the row, stored with the name and its row, in the API
+test('a birth name: "kind of name" in the row, stored as kind, in the API', async ({ userA, request }) => {
+  await userA.goto('/artists/new');
+  await userA.fill('#f-name', 'Test Paula Modersohn-Becker');
+  await userA.fill('#f-slug', 'test-paula-modersohn-becker');
+  const row = userA.locator('.names-row').nth(0);
+  await row.locator('.n-text').fill('Test Paula Becker');
+  await row.locator('.n-lang').fill('de');
+  await row.locator('.n-role').selectOption('former');
+  await row.locator('.n-kind').selectOption('birth');
+  await row.locator('.n-period').fill('until 1901');
+  await expect(userA.locator('#f-names')).toHaveValue('Test Paula Becker | de | former, birth | until 1901');
+  await Promise.all([userA.waitForNavigation(), userA.click('form.form > .actions button')]);
+  await expect(userA).toHaveURL(/\/artists\/test-paula-modersohn-becker\?done=created/);
+  await expect(userA.locator('.names-list li', { hasText: 'Test Paula Becker' })).toContainText('birth name');
+  expect(sql(`SELECT kind FROM entry_names WHERE entity_type = 'artist' AND entity_id = entity_id('artist', 'test-paula-modersohn-becker')`)).toBe('birth');
+  const body = await (await request.get(`${API}/artists/test-paula-modersohn-becker`, { headers: { Host: 'api.localhost' } })).json();
+  expect(body.names[0]).toEqual(expect.objectContaining({ text: 'Test Paula Becker', role: 'former', kind: 'birth', period: expect.objectContaining({ label: 'until 1901' }) }));
+  sql("DELETE FROM artists WHERE slug = 'test-paula-modersohn-becker'");
 });

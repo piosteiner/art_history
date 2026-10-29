@@ -9,6 +9,8 @@
 //     no slugs: every entry of the type that has a Wikidata item
 //     --no-names   leave the other names alone
 //     --skip=slug:key,…  values not to take (key as printed: location, ~founded …)
+//     --name-kinds       only the names of a kind (153): birth name, pseudonym, nickname, art name — added also when
+//                        the entry has other names already; each cited with its Wikidata statement (W)
 // Prints one line per entry: what was filled.
 const { adminPool } = require('../src/db');
 const { BY_TYPE, readDocs } = require('../src/content');
@@ -27,6 +29,9 @@ if (!t) {
 }
 const DRY = flag('dry-run');
 const SKIP = new Set((opt('skip') || '').split(',').filter(Boolean));
+const NAME_KINDS = flag('name-kinds');
+// a name line's kind ("Oscar-Claude Monet | fr | former, birth" → birth)
+const kindOfLine = (line) => { const role = String(line).split(' | ')[2] || ''; return role.split(',').map((x) => x.trim()).find((x) => wikidata.NAME_PROPS[x]) || null; };
 
 async function tx(user, fn) {
   const db = await adminPool.connect();
@@ -48,12 +53,15 @@ async function emptyOnly(slug, plan, hasImage) {
   const choices = {};
   const keys = [];
   for (const row of plan.rows) {
-    if (row.status !== 'empty' || row.declined || SKIP.has(`${slug}:${row.key}`)) continue;
+    // other names (a list): all when there are none yet; names of a kind (153) also beside others
     if (row.kind === 'list') {
-      if (flag('no-names') || row.ours.length) continue;
-      const items = row.items.filter((it) => !it.declined).map((it) => it.value);
-      if (items.length) { choices[`alt.${row.key}`] = items; keys.push(row.key); }
-    } else if (row.kind === 'ref') {
+      if (flag('no-names') || SKIP.has(`${slug}:${row.key}`) || (row.key !== 'names' && NAME_KINDS)) continue;
+      const items = row.items.filter((it) => !it.declined && (!row.ours.length || NAME_KINDS ? kindOfLine(it.value) : true)).map((it) => it.value);
+      if (items.length) { choices[`alt.${row.key}`] = items; keys.push(`${row.key} (${items.length})`); }
+      continue;
+    }
+    if (NAME_KINDS || row.status !== 'empty' || row.declined || SKIP.has(`${slug}:${row.key}`)) continue;
+    if (row.kind === 'ref') {
       let pick = row.target ? 'link' : row.create && !row.candidate ? 'create' : 'later';
       if (!row.target && row.candidate) {
         const own = (await adminPool.query(`SELECT wikidata_id FROM ${BY_TYPE[row.candidate.type].table} WHERE slug = $1`, [row.candidate.slug])).rows[0];
@@ -63,6 +71,7 @@ async function emptyOnly(slug, plan, hasImage) {
       if (pick !== 'later') { choices[`ref.${row.key}`] = pick; keys.push(`${row.key}${pick === 'create' ? ' (new)' : ''}`); }
     } else { choices[`take.${row.key}`] = 'take'; keys.push(row.key); }
   }
+  if (NAME_KINDS) return { choices, keys };
   const img = plan.images.findIndex((x) => x.status === 'new' && !x.declined);
   if (!hasImage && img >= 0) { choices[`img.${img}`] = 'add'; keys.push('image'); }
   for (const x of plan.identifiers || []) if (x.status === 'new') { choices[`idf.${x.code}`] = 'take'; keys.push(x.code); }
@@ -111,6 +120,18 @@ async function patiently(fn) {
         ...(result.cites.length ? { 'wd.cite': JSON.stringify({ qid: doc.wikidata_id, cites: result.cites }) } : {}) };
       saved = await saveEntity(user, t, body, { id: row.id });
       if (saved.errors) { console.log(`${doc.slug} ✗ ${saved.errors.join('; ')}`); continue; }
+    }
+    // the names of a kind taken: cited with their Wikidata statement (the name's own source, 152)
+    const kinded = [].concat(choices['alt.names'] || []).filter(kindOfLine);
+    if (kinded.length && !saved.errors) {
+      await tx(user, async (db) => {
+        for (const line of kinded) {
+          await db.query(`INSERT INTO citations (name_id, wikidata_item, wikidata_property, accessed, created_by)
+            SELECT n.id, $3, $4, current_date, $5 FROM entry_names n WHERE n.entity_type = $1 AND n.entity_id = $2 AND n.text = $6
+              AND NOT EXISTS (SELECT 1 FROM citations c WHERE c.name_id = n.id AND c.wikidata_item = $3)`,
+          [t.type, row.id, doc.wikidata_id, wikidata.NAME_PROPS[kindOfLine(line)], user.id, line.split(' | ')[0]]);
+        }
+      });
     }
     if (flagged) {
       await adminPool.query(`INSERT INTO auto_created (entity_type, entity_id, created_from_type, created_from_id, created_by, via, created_at)

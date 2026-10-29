@@ -156,12 +156,15 @@ export interface NameEntry {
   reading: string | null;
   /** For a translation (migration 052): official (institution, publisher) · common (in use) · own (the author's); else null. */
   status?: TranslationStatus | null;
+  /** What kind of name (API 153): a birth name, a pseudonym, an art name (gō) … */
+  kind?: NameKind | null;
   /** When the name was in use, its context and sources (API 152) — on detail pages only. */
   period?: DateRange | null; note?: string | null; sources?: Citation[];
 }
 /** A holder's former name in use at a provenance step (API 152: `owner.name_then`). */
 export interface NameThen { text: string; lang: string | null; period: DateRange | null; note: string | null }
 export type TranslationStatus = 'official' | 'common' | 'own';
+export type NameKind = 'birth' | 'married' | 'pseudonym' | 'art_name' | 'religious' | 'nickname' | 'abbreviation';
 
 /** Display name (`name`) with its language, furigana and other names; `search_text`: further words it is found by. */
 interface Named {

@@ -23,6 +23,12 @@ const ROLES = ['original', 'translation', 'romanization', 'alternative', 'former
 // A translation's standing (migration 052): official (the holding institution's, a publisher's — cite it), common (in
 // use: literature, Wikidata — the default, not stored), own (yours; shown in [brackets] by convention).
 const STATUSES = ['official', 'common', 'own'];
+// What kind of name it is (153), beside its role: written after the role in form lines ("former, birth"). Labels for
+// display; `art_name` is a gō (Hokusai's Shunrō, Gakyōjin …).
+const KINDS = ['birth', 'married', 'pseudonym', 'art_name', 'religious', 'nickname', 'abbreviation'];
+const KIND_LABEL = { birth: 'birth name', married: 'married name', pseudonym: 'pseudonym', art_name: 'art name',
+  religious: 'religious name', nickname: 'nickname', abbreviation: 'abbreviation' };
+const kindOf = (word) => { const w = String(word ?? '').trim().toLowerCase().replace(/[\s-]+/g, '_').replace(/_name$/, ''); return w === 'art' ? 'art_name' : w; };
 const LANG = /^[a-z]{2,3}(-[A-Z][a-z]{3})?(-(?:[A-Z]{2}|\d{3}))?(-[a-z0-9]{5,8})*$/;
 
 const plain = (s) => String(s ?? '').replace(GROUP, '$1');
@@ -60,7 +66,7 @@ const langOk = (tag) => LANG.test(tag);
 function normName(v) {
   if (typeof v === 'string') v = { text: v };
   if (!v || typeof v !== 'object' || Array.isArray(v)) throw new Error('each name must be text or {text, lang, role}');
-  const extra = Object.keys(v).filter((k) => !['text', 'lang', 'role', 'status', 'period', 'period_label', 'note'].includes(k));
+  const extra = Object.keys(v).filter((k) => !['text', 'lang', 'role', 'status', 'kind', 'period', 'period_label', 'note'].includes(k));
   if (extra.length) throw new Error(`unknown key(s) ${extra.join(', ')}`);
   const text = String(v.text ?? '').trim();
   if (!text) throw new Error('a name needs a text');
@@ -69,14 +75,23 @@ function normName(v) {
   const lang = normLang(v.lang);
   if (lang && !langOk(lang)) throw new Error(`"${v.lang}" is not a language code (e.g. en, ja, ja-Latn, zh-Latn-pinyin)`);
   // "translation, own" — the role with a translation's status after a comma (form lines)
-  const [roleText, statusText] = String(v.role ?? '').split(',').map((x) => x.trim().toLowerCase());
+  // "translation, own", "former, birth" — after the role a translation's status and/or the kind of name (153)
+  const [roleText, ...more] = String(v.role ?? '').split(',').map((x) => x.trim().toLowerCase());
   const role = roleText || 'alternative';
   if (!ROLES.includes(role)) throw new Error(`role "${v.role}": one of ${ROLES.join(', ')}`);
+  const statusText = more.find((x) => STATUSES.includes(x));
+  const kindText = more.filter((x) => x && !STATUSES.includes(x));
+  if (kindText.length > 1) throw new Error(`"${text}": one kind of name (${KINDS.join(', ')})`);
+  const kind = v.kind != null && String(v.kind).trim() !== '' ? kindOf(v.kind) : kindText.length ? kindOf(kindText[0]) : null;
+  if (kind && !KINDS.includes(kind)) {
+    throw new Error(`"${text}": kind of name "${v.kind ?? kindText[0]}" — one of ${KINDS.join(', ')}${role === 'translation' ? ' (a translation is official, common or own)' : ''}`);
+  }
   const status = String(v.status ?? statusText ?? '').trim().toLowerCase() || null;
   if (status && !STATUSES.includes(status)) throw new Error(`"${status}": a translation is official, common or own`);
   if (status && role !== 'translation') throw new Error(`"${text}": only a translation is official, common or own`);
   const out = lang ? { text, lang, role } : { text, role };
   if (status && status !== 'common') out.status = status;  // common is the default
+  if (kind) out.kind = kind;
   const written = String(v.period_label ?? (/^[[(]/.test(String(v.period ?? '')) ? '' : v.period ?? '')).trim();
   if (written) {
     let parsed;
@@ -111,11 +126,12 @@ function linesToNames(text) {
 }
 // the columns a name needs: trailing empty ones left out ("Hokusai", "Kanagawa | ja | original")
 const namesToLines = (names) => (names || []).map((n) => {
-  const cols = [n.text, n.lang || '', n.role !== 'alternative' || n.status ? `${n.role}${n.status && n.status !== 'common' ? `, ${n.status}` : ''}` : '',
+  const cols = [n.text, n.lang || '', n.role !== 'alternative' || n.status || n.kind
+    ? `${n.role}${n.status && n.status !== 'common' ? `, ${n.status}` : ''}${n.kind ? `, ${n.kind}` : ''}` : '',
     n.period_label || '', n.note || ''];
   while (cols.length > 1 && cols[cols.length - 1] === '') cols.pop();
   return cols.join(' | ');
 }).join('\n');
 
-module.exports = { ROLES, STATUSES, plain, reading, hasRuby, rubyError, rubyHtml, normLang, langOk, normName, linesToNames,
+module.exports = { ROLES, STATUSES, KINDS, KIND_LABEL, plain, reading, hasRuby, rubyError, rubyHtml, normLang, langOk, normName, linesToNames,
   namesToLines, splitLine };

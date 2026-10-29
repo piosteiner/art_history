@@ -228,3 +228,10 @@ test('ranks: the preferred birthplace is marked, the others say which one Wikida
     sql("DELETE FROM artists WHERE slug = 'test-painter-of-ranks'");
   }
 });
+
+// 153: names of a kind — a pseudonym (P742) is offered with its kind and the time from its qualifiers
+test('a pseudonym from Wikidata: offered as "alternative, pseudonym" with "from 1860"', async ({ userA }) => {
+  await userA.goto('/artists/new/wikidata?search=monet');
+  await Promise.all([userA.waitForNavigation(), userA.click('.search-hit a:has-text("Claude Monet")')]);
+  await expect(userA.locator('input[name="alt.names"][value="Test Pseudonym Monet |  | alternative, pseudonym | from 1860"]')).toBeVisible();
+});

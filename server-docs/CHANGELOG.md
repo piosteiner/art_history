@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### The kind of name: birth name, pseudonym, art name … (migration 153)
+- **What:** a name says what kind it is (`kind`: birth, married, pseudonym, art_name, religious, nickname,
+  abbreviation) — in `names`, `entry_names.kind`, `names_valid()`. CMS: "kind of name" select per row (form line
+  "former, birth"), shown on the entry page. API `names[].kind`, `owner.name_then.kind`. Site: artists and people get
+  a row "Born as" (birth names), other kinds as a tag. Wikidata review: birth name P1477, pseudonym P742, nickname
+  P1449, art name P1787, with the time from their qualifiers; `fill-from-wikidata.js --name-kinds` adds them to
+  existing entries (also beside other names), each cited W with its statement.
+- **Why:** owner, 2026-10-29 — birth names and aliases of artists in more detail (follows 152).
+- **Tests:** unit (names.test.js), e2e "a birth name" (names.spec.js), "a pseudonym from Wikidata" (wikidata.spec.js).
+- **Revert:** `git revert`; in the database `ALTER TABLE entry_names DROP COLUMN kind` and 152's `names_valid()` /
+  `entry_names_write()`.
+
 ### Names in context: when in use, a note, sources per name (migration 152)
 - **What:** other names can say when they were in use (`period`, a fuzzy date: "until 1945") and why (`note`), and
   have sources of their own. New table `entry_names` (a row per name, `period daterange` + GiST), kept in step with

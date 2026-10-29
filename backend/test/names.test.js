@@ -62,3 +62,15 @@ test('a name in context (152): when it was in use and a note, kept through lines
   assert.throws(() => n.linesToNames('X | en | former | sometime'), /period/);
   assert.throws(() => n.normName({ text: 'X', period: '(,1946-01-01)' }), /needs its label/);
 });
+
+test('the kind of name (153): after the role in form lines, stored as `kind`, read back', () => {
+  const list = n.linesToNames('Paula Becker | de | former, birth | until 1901 | before her marriage\nShunrō | ja-Latn | former, art name | 1779–1794\n'
+    + 'Le Douanier | fr | alternative, nickname\nSMB | de | alternative, abbreviation');
+  assert.deepEqual(list.map((x) => [x.text, x.role, x.kind]), [['Paula Becker', 'former', 'birth'], ['Shunrō', 'former', 'art_name'],
+    ['Le Douanier', 'alternative', 'nickname'], ['SMB', 'alternative', 'abbreviation']]);
+  assert.equal(n.namesToLines([list[0]]), 'Paula Becker | de | former, birth | until 1901 | before her marriage');
+  assert.deepEqual(n.linesToNames(n.namesToLines(list)), list);
+  assert.deepEqual(n.normName({ text: 'X', role: 'translation', status: 'own', kind: 'pseudonym' }), { text: 'X', role: 'translation', status: 'own', kind: 'pseudonym' });
+  assert.equal(n.linesToNames('X | en | translation, own, pseudonym')[0].kind, 'pseudonym');
+  assert.throws(() => n.linesToNames('X | en | alternative, stage'), /kind of name "stage"/);
+});
