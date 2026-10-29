@@ -13,6 +13,8 @@ Format: date — what — why — how to revert.
   Hong Kong 1973–; Christie's New York 1977–, Beverly Hills 1997–, Paris 2002–; Durand-Ruel London 1870–, New York
   1887–; Knoedler Paris 1895–, Pittsburgh 1897–, London 1908–; Wildenstein Paris 1875–, London 1925–, Buenos Aires
   1929–. Parke-Bernet part of Sotheby's since 1964. Place Hong Kong created from Wikidata.
+- **Site test:** the GitHub Pages run of 9fced59 failed in site.spec "crossed paths" — Gauguin now has an exact and an
+  approximate meeting with Van Gogh, the test expected one line; it now takes the exact one.
 - **Why:** owner, 2026-10-29 — Sotheby's and other firms with several locations; chosen over "one firm, the city on the
   provenance step only", as more traceable.
 - **Revert:** `git revert`; `DELETE FROM relationships WHERE relationship_type = 'branch_in'; DELETE FROM

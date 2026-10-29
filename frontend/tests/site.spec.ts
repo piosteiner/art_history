@@ -459,7 +459,8 @@ test('crossed paths (091): from the database on entry pages, "nearby" on request
   await page.goto('/artists/vincent-van-gogh');
   const sec = page.locator('#crossed');
   await sec.scrollIntoViewIfNeeded();
-  await expect(sec.locator('li', { hasText: 'Paul Gauguin' })).toContainText('Arles');
+  // the exact meeting (an approximate one — a span only partly known — may stand beside it)
+  await expect(sec.locator('li.encounter:not(.approximate)', { hasText: 'Paul Gauguin' }).first()).toContainText('Arles');
   expect(asked.some((u) => u.includes('entity=artists%2Fvincent-van-gogh') || u.includes('entity=artists/vincent-van-gogh'))).toBe(true);
   await sec.locator('.crossed-nearby input').check();
   await expect.poll(() => asked.some((u) => u.includes('within_km=50'))).toBe(true);
@@ -468,7 +469,7 @@ test('crossed paths (091): from the database on entry pages, "nearby" on request
   await page.route(/\/v1\/map\/encounters/, (r) => r.fulfill({ status: 500, json: { error: 'internal_error', message: 'down' } }));
   await page.goto('/artists/paul-gauguin');
   await page.locator('#crossed-anchor').scrollIntoViewIfNeeded();
-  await expect(page.locator('#crossed li', { hasText: 'Vincent van Gogh' })).toContainText('Arles');
+  await expect(page.locator('#crossed li.encounter:not(.approximate)', { hasText: 'Vincent van Gogh' }).first()).toContainText('Arles');
   // a place: the browser's search (the API has no place filter)
   asked.length = 0;
   await page.unroute(/\/v1\/map\/encounters/);
