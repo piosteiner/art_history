@@ -151,6 +151,12 @@ function vocabularyView(box: HTMLElement, v: ModelVocabulary) {
             <td>${r.symmetric ? '–' : html`<code>${r.inverse_label}</code>`}</td>
             <td class="small">${types(r.subject_types)} → ${types(r.object_types)}</td>${used(r.n)}</tr>`)}</tbody></table></div>`)}
     </section>
+    ${v.names ? html`<section class="stats-group vocab" id="namen"><h2>Namen: Rollen und Arten</h2>
+      <p class="muted small">Neben dem Hauptnamen kann ein Eintrag weitere Namen haben, jeder mit Sprache, Zeitraum, Kontext und eigenen Quellen.
+        Die Bezeichnungen sind jene der Website (englisch); „Verwendet“ zählt die Namen. Rückmeldungen dazu sind willkommen.</p>
+      ${optionTable('Rolle', 'Wie sich ein Name zum Hauptnamen verhält.', v.names.roles)}
+      ${optionTable('Art des Namens', 'Was für ein Name es ist — unabhängig von der Rolle.', v.names.kinds)}
+    </section>` : ''}
     <section class="stats-group vocab" id="provenienz"><h2>Provenienz: die Optionen</h2>
       <p class="muted small">Was ein Provenienzschritt festhalten kann: wie ein Werk erworben wurde, in welcher Rolle es jemand hielt, wie sicher
         die Angabe ist, welche Nachweise es gibt. Die Bezeichnungen sind jene der Website (englisch); „Verwendet“ zählt die Schritte.

@@ -186,7 +186,7 @@ router.get('/stats', async (req, res) => {
 });
 
 // GET /v1/stats/vocabulary — every kind of relationship and every provenance option, with how often each is used
-// (src/vocabulary.js), for the statistics page: {relationships: [...], provenance: {methods, roles, certainty, records,
+// (src/vocabulary.js), for the statistics page: {relationships: [...], names: {roles, kinds}, provenance: {methods, roles, certainty, records,
 // status, numbers, currencies}}
 router.get('/stats/vocabulary', async (req, res) => {
   res.set('Cache-Control', 'public, max-age=300');

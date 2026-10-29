@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Statistics: the vocabulary of names
+- **What:** `/v1/stats/vocabulary` has `names: {roles, kinds}` (src/vocabulary.js, German explanations, counted in
+  entry_names); the site's /statistik shows them as "Namen: Rollen und Arten" between relationships and provenance
+  (site.spec statistics test extended). `branch_in` was in the relationship list already (read from the database).
+- **Why:** owner, 2026-10-29 — the statistics page shows the model's vocabulary for feedback from professionals.
+- **Revert:** `git revert`.
+
 ### Branches: institutions in several cities at once (migration 154)
 - **What:** relationship type `branch_in` (institution → place, with period; "has a branch in" / "branch of",
   category presence). `/v1/map/sites` returns the branches as further features of the institution at their place's

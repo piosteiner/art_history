@@ -2520,6 +2520,7 @@ test('statistics (API /v1/stats): from the footer, tiles with today\'s numbers, 
       { code: 'born_in', label: 'born in', inverse_label: 'birthplace of', category: 'presence', symmetric: false, presence: true, derived: false, subject_types: ['artist', 'person'], object_types: ['place'], description: null, n: 120 },
       { code: 'collaborated_with', label: 'collaborated with', inverse_label: 'collaborated with', category: 'collaboration', symmetric: true, presence: false, derived: false, subject_types: ['artist'], object_types: ['artist'], description: 'Worked together.', n: 0 },
       { code: 'owned_by', label: 'owned by', inverse_label: 'owned', category: 'provenance', symmetric: false, presence: false, derived: true, subject_types: ['artwork'], object_types: ['person'], description: null, n: 900 }],
+    names: { roles: [opt('former', 'former', 40)], kinds: [opt('birth', 'birth name', 82), opt('art_name', 'art name', 0)] },
     provenance: { methods: [opt('purchase', 'purchase', 400), opt('theft', 'stolen', 3), opt('in_lieu', 'in lieu of tax', 0)], roles: [opt('owner', 'owner', 1300)],
       certainty: [opt('attested', 'attested', 1600)], records: [opt('inventory', 'inventory', 125)], status: [opt('a_clear', 'A', 1), opt('d_seized', 'D', 2)],
       numbers: [{ ...opt('err', 'ERR no.', 4), scope: 'global' }], currencies: [{ code: 'RM', name: 'Reichsmark', country: 'DE', since: '1924-08-30', until: '1948-06-21', n: 5 }] } } }));
@@ -2550,6 +2551,11 @@ test('statistics (API /v1/stats): from the footer, tiles with today\'s numbers, 
   await expect(rel.locator('tr', { hasText: 'born in' })).toContainText(/birthplace of[\s\S]*Künstler:in, Person → Ort[\s\S]*120/);
   await expect(rel.locator('tr', { hasText: 'collaborated with' })).toHaveClass(/vocab-unused/);
   await expect(rel.locator('tr', { hasText: 'owned by' })).toContainText('abgeleitet');
+  // other names (152/153): roles and kinds, explained and counted
+  const names = page.locator('#namen');
+  await expect(names.locator('h3')).toHaveText(['Rolle', 'Art des Namens']);
+  await expect(names.locator('tr', { hasText: 'birth name' })).toContainText('82');
+  await expect(names.locator('tr', { hasText: 'art name' })).toHaveClass(/vocab-unused/);
   const prov = page.locator('#provenienz');
   await expect(prov.locator('tr', { hasText: 'stolen' })).toContainText('Bedeutung von stolen');
   await expect(prov.locator('tr', { hasText: 'in lieu of tax' })).toHaveClass(/vocab-unused/);

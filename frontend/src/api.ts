@@ -145,6 +145,8 @@ export interface VocabOption { code: string; label: string; description: string 
 export interface ModelVocabulary {
   relationships: { code: string; label: string; inverse_label: string; category: string; symmetric: boolean; presence: boolean; derived: boolean;
     subject_types: string[]; object_types: string[]; description: string | null; n: number }[];
+  /** Other names (API 152/153): how a name relates to the main name, what kind of name it is. */
+  names?: { roles: VocabOption[]; kinds: VocabOption[] };
   provenance: { methods: VocabOption[]; roles: VocabOption[]; certainty: VocabOption[]; records: VocabOption[]; status: VocabOption[];
     numbers: (VocabOption & { scope: string })[];
     currencies: { code: string; name: string; country: string | null; since: string | null; until: string | null; n: number }[] };

@@ -1,5 +1,5 @@
-// The project's vocabulary for the public statistics page (/statistik, GET /v1/stats/vocabulary): every kind of relationship
-// and every option a provenance step can take, with how often each is used — so that professionals can see the model
+// The project's vocabulary for the public statistics page (/statistik, GET /v1/stats/vocabulary): every kind of relationship,
+// every option a provenance step can take and the roles and kinds of other names (152/153), with how often each is used — so that professionals can see the model
 // and give feedback. The lists come from the database (relationship_types, the enums via enum_range(), the number
 // kinds, the currencies): a new value appears by itself. The German explanations of the provenance options live here
 // (the database knows only their codes); `label` is the wording the site shows (English, as on the entry pages).
@@ -61,6 +61,30 @@ const STATUS = {
   d_seized: ['D', 'NS-verfolgungsbedingt entzogenes Kulturgut.'],
 };
 
+// Other names (152/153): how a name relates to the main name, and what kind of name it is
+const NAME_ROLES = {
+  original: ['original', 'Der Name in der Originalsprache, wenn der Hauptname eine Übersetzung ist (神奈川沖浪裏).'],
+  translation: ['translation', 'Übersetzung — offiziell (der Institution, eines Verlags), gebräuchlich oder eigene.'],
+  romanization: ['romanization', 'Umschrift in lateinische Schrift (Kanagawa-oki nami ura).'],
+  alternative: ['alternative', 'Ein weiterer Name, unter dem der Eintrag bekannt ist.'],
+  former: ['former', 'Ein Name, den der Eintrag früher trug: eine umbenannte Institution, ein alter Ortsname, ein abgelegter Familienname.'],
+};
+const NAME_KINDS = {
+  birth: ['birth name', 'Geburtsname; ein früherer Name nur, wenn sich der Familienname änderte.'],
+  married: ['married name', 'Name nach einer Heirat.'],
+  pseudonym: ['pseudonym', 'Selbst gewählter Name, unter dem jemand arbeitete oder veröffentlichte.'],
+  art_name: ['art name', 'Künstlername, bei japanischen Künstler:innen der gō (Hokusais Shunrō).'],
+  religious: ['religious name', 'Ordensname.'],
+  nickname: ['nickname', 'Beiname oder Spitzname (Le Douanier).'],
+  abbreviation: ['abbreviation', 'Abkürzung (SMB).'],
+};
+// a fixed list's values in order, each with how often entry_names uses it
+async function nameCounts(db, column, texts) {
+  const { rows } = await db.query(`SELECT v AS code, count(n.id)::int AS n FROM unnest($1::text[]) WITH ORDINALITY x(v, o)
+    LEFT JOIN entry_names n ON n.${column} = x.v GROUP BY v, o ORDER BY o`, [Object.keys(texts)]);
+  return rows.map((r) => ({ code: r.code, label: texts[r.code][0], description: texts[r.code][1], n: r.n }));
+}
+
 // an enum's values in their declared order, each with how often a column uses it — LEFT JOIN, so unused values count 0
 async function enumCounts(db, type, table, column, texts) {
   const { rows } = await db.query(`SELECT v::text AS code, count(t.${column})::int AS n
@@ -81,6 +105,7 @@ async function vocabulary(db) {
     FROM currencies c ORDER BY c.code`);
   return {
     relationships,
+    names: { roles: await nameCounts(db, 'role', NAME_ROLES), kinds: await nameCounts(db, 'kind', NAME_KINDS) },
     provenance: {
       methods: await enumCounts(db, 'acquisition_method', 'provenance', 'method', METHODS),
       roles: await enumCounts(db, 'holder_role', 'provenance', 'role', ROLES),
