@@ -213,6 +213,8 @@ export interface ArtistItem extends Located, Named, PersonName {
   /** API 147: when active, for artists whose dates of life are unknown. */
   active: DateRange | null;
   birth_place: BirthPlace | null;
+  /** API 164 (list): the collections holding their works now and those that held them, with counts. */
+  collections?: { slug: string; name: string; now: number; before: number }[];
 }
 /** One of an artwork's makers; the main creator comes first. `role`: "landscape", "figures" … */
 export interface CreatorRef extends Ref { main: boolean; role: string | null; certainty: string | null }
@@ -545,7 +547,7 @@ export interface DetailByPlural {
 
 // ---- search, vocabulary --------------------------------------------------------------------------
 
-export interface SearchHit { type: EntityType; slug: string; name: string; kind: string | null; period: DateRange | null; score: string }
+export interface SearchHit { type: EntityType; slug: string; name: string; kind: string | null; period: DateRange | null; score: string; subtitle?: string | null; image_url?: string | null }
 
 export interface RelationshipType {
   code: string; label: string; inverse_label: string | null; category: Category;
@@ -682,6 +684,8 @@ export interface NetRef {
 /** `GET /v1/search/text` (087): names and texts; `headline_html` is escaped text with <mark>s, or null (name only). */
 export interface TextHit {
   type: EntityType; slug: string; public_id: number; path: string; name: string; kind: string | null; period: DateRange | null;
+  /** What it is in one line — an artwork's artist and date, a museum's city (the previews'); its picture. */
+  subtitle?: string | null; image_url?: string | null;
   matched_in: 'name' | 'text' | 'provenance'; provenance_ids: number[]; score: number; headline_html: string | null;
 }
 

@@ -450,7 +450,7 @@ the order they were created.
 - Slugs of digits only ("1984") still work: a number that names no entry is tried as a slug.
 
 ## Search
-`GET /v1/search?q=edo` — top 20 name matches across all types: `{type, slug, public_id, name, kind, period, sort_key, score}`
+`GET /v1/search?q=edo` — top 20 name matches across all types: `{type, slug, public_id, name, kind, period, sort_key, score, subtitle, image_url}` (subtitle and picture as in `/v1/search/text`)
 (trigram similarity, typo-tolerant — for completion while typing).
 
 ### Full-text search (087)
@@ -461,7 +461,9 @@ Web-search syntax: `"a phrase"`, `-excluded`, `or`. Stemmed in English, German a
 Across languages by a word list (102, table `search_synonyms`): a word finds the others of its group — "beschlagnahmt"
 finds "confiscation", "seized", "saisie"; "Zwangsverkauf" finds "forced sale" — and the passage marks what matched.
 Only listed words; a phrase is found as an equivalent but not looked up (searching "forced sale" doesn't find "Zwangsverkauf").
-→ `{total, data: [{type, slug, public_id, path, name, kind, period, matched_in, provenance_ids, score, headline_html}]}`:
+→ `{total, data: [{type, slug, public_id, path, name, kind, period, subtitle, image_url, matched_in, provenance_ids, score, headline_html}]}`:
+- `subtitle`: what it is in one line, as in the previews — an artwork's artist and date ("Vincent van Gogh, January 1889 ·
+  oil painting"), a museum's kind and city; `image_url` its picture (both `null` when there is none).
 - `matched_in`: `name` (the name or another name; or only a close name) · `text` (the entry's texts) · `provenance`
   (one of an artwork's provenance steps: `provenance_ids`, best first).
 - `headline_html`: the matching passage(s), joined by " … ", the words in `<mark>`; the text is escaped — insert as HTML.

@@ -108,7 +108,7 @@ export function mountSearch(root: HTMLElement) {
     const extra = found.similar.slice(0, MAX);
     hits = [
       ...local.map(({ e, m }) => toHit(e, m)),
-      ...extra.map((h) => ({ type: h.type, slug: h.slug, name: html`${h.name}`, meta: [h.kind, h.period?.label].filter(Boolean).join(' · '), why: null })),
+      ...extra.map((h) => ({ type: h.type, slug: h.slug, name: html`${h.name}`, meta: h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · '), why: null })),
     ];
     similarFrom = extra.length && local.length ? local.length : -1;
     active = -1;

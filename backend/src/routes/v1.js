@@ -43,6 +43,15 @@ router.get('/vocabulary', async (req, res) => {
   res.json({ data: rows });
 });
 
+// What each hit is, in one line — an artwork with its artist and date ("Vincent van Gogh, January 1889 · oil painting"),
+// a museum with its city — and its picture: the previews' (040), for the hits of one answer only. → (row) → {subtitle, image_url}
+async function previewsOfHits(rows) {
+  const { rows: pv } = rows.length ? await apiPool.query(`SELECT p.type::text AS type, p.slug, p.subtitle, p.image_url FROM entry_previews p
+    WHERE (p.type, p.slug) IN (SELECT * FROM unnest($1::entity_type[], $2::text[]))`, [rows.map((r) => r.type), rows.map((r) => r.slug)]) : { rows: [] };
+  const by = new Map(pv.map((p) => [`${p.type}/${p.slug}`, p]));
+  return (r) => ({ subtitle: by.get(`${r.type}/${r.slug}`)?.subtitle || null, image_url: by.get(`${r.type}/${r.slug}`)?.image_url || null });
+}
+
 // One search box for everything: ?q=hokusai → best matches across all entity types.
 router.get('/search', async (req, res) => {
   const q = typeof req.query.q === 'string' ? req.query.q.trim().slice(0, 100) : '';
@@ -56,7 +65,8 @@ router.get('/search', async (req, res) => {
        OR f_unaccent(coalesce(alt_text, '')) ILIKE f_unaccent($2) OR f_unaccent($1) <% f_unaccent(coalesce(alt_text, ''))
     ORDER BY score DESC, sort_key COLLATE sort_natural
     LIMIT 20`, [q, `%${q.replace(/[\\%_]/g, '\\$&')}%`]);
-  res.json({ data: rows });
+  const preview = await previewsOfHits(rows);
+  res.json({ data: rows.map((r) => ({ ...r, ...preview(r) })) });
 });
 
 // Full-text search (087): names AND texts — biographies, descriptions, definitions, provenance steps. Web-search
@@ -114,10 +124,12 @@ router.get('/search/text', async (req, res) => {
     ORDER BY e.type = 'source', score DESC, e.sort_key COLLATE sort_natural
     LIMIT $3 OFFSET $4`, [q, type, limit, offset, within && within.length ? within : null, without && without.length ? without : null]);
   const plural = Object.fromEntries(Object.entries(ENTITIES).map(([k, v]) => [v.type, k]));
+  const preview = await previewsOfHits(rows);
   res.json({
     total: rows.length ? Number(rows[0].total) : 0,
     data: rows.map(({ total, headline, public_id: pid, provenance_ids: ids, ...r }) => ({
       ...r, public_id: Number(pid), path: `/${plural[r.type]}/${pid}/${r.slug}`, score: Number(r.score),
+      ...preview(r),
       provenance_ids: ids.map(Number),
       headline_html: headline ? escapeHtml(headline).replace(/\x01/g, '<mark>').replace(/\x02/g, '</mark>') : null,
     })),

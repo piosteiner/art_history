@@ -253,14 +253,14 @@ export function drawProvenance(map: MapLibre, prefix: string, items: ProvenanceD
 /**
  * The first or last placed stop of an artwork: "start" (or "first known place" when earlier steps have no place) and
  * "today" when the last step is the provenance's last and still runs (and the work wasn't destroyed or lost — API
- * 103), else "last known place". Both in one marker:
- * the end wins (an artwork back where it started).
+ * 103), else "last known place". Both in one marker — an artwork back where it started — say both: "start · today".
  */
 function endOf(steps: ProvenanceStopProps[], firstStep: number, lastStep: number, gone: boolean): { kind: 'start' | 'end'; text: string } | null {
   const last = steps.find((s) => s.step === lastStep);
-  if (last) return { kind: 'end', text: !gone && last.step === last.steps && !last.period?.to ? 'today' : 'last known place' };
-  if (steps.some((s) => s.step === firstStep)) return { kind: 'start', text: firstStep === 1 ? 'start' : 'first known place' };
-  return null;
+  const start = steps.some((s) => s.step === firstStep) ? (firstStep === 1 ? 'start' : 'first known place') : null;
+  const end = last ? (!gone && last.step === last.steps && !last.period?.to ? 'today' : 'last known place') : null;
+  if (!start && !end) return null;
+  return { kind: end ? 'end' : 'start', text: [start, end].filter(Boolean).join(' · ') };
 }
 
 /**

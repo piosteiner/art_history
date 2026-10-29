@@ -30,7 +30,8 @@ async function adminSearch(page, folder, query) {
     let tier = '-';
     const out = [];
     for (const tr of document.querySelectorAll('main table tbody tr')) {
-      if (tr.classList.contains('list-group')) { tier = { 'Now in the collection': '1', 'Formerly in the collection': '2', 'With works by a matching artist': '1' }[tr.textContent.trim()] || '-'; continue; }
+      if (tr.classList.contains('list-group')) { tier = { 'Now in the collection': '1', 'Formerly in the collection': '2', 'With works by a matching artist': '1',
+        'With works now in a matching collection': '1', 'With works formerly in a matching collection': '2' }[tr.textContent.trim()] || '-'; continue; }
       out.push(`${tier} ${tr.querySelector('td a[href]:not([tabindex])').getAttribute('href').split('/').pop()}`);
     }
     return out;
@@ -66,10 +67,19 @@ test('the admin finds what the site finds: museums now and before, birthplaces, 
     { label: 'Artist', text: 'Vincent van Gogh', shown: true },
     { label: 'Now in', text: 'Van Gogh Museum', tier: { rank: 1, heading: 'Now in the collection' } }]));
 
+  // artists through a museum (164): the collections holding their works now / before, with counts in the list
+  const artists = (await api(request, '/artists?limit=500')).data;
+  const vincent = artists.find((a) => a.slug === 'vincent-van-gogh');
+  expect(vincent.search_fields).toEqual(expect.arrayContaining([
+    expect.objectContaining({ label: 'Works now in', tier: { rank: 1, heading: 'With works now in a matching collection' } })]));
+  expect(vincent.collections).toEqual(expect.arrayContaining([expect.objectContaining({ slug: 'museum-of-modern-art', now: 1 })]));
+  await userA.goto('/artists?q=museum+of+modern+art');
+  await expect(userA.locator('main table tbody tr').first()).toContainText('With works now in a matching collection');
+
   // the same hits in the same order, front and back
   for (const [plural, folder, nameKey, queries] of [
     ['artworks', 'artworks', 'title', ['van gogh museum', 'gogh', 'hiroshige', 'museum', 'woodblock']],
-    ['artists', 'artists', 'name', ['zundert', 'gogh', 'japan']],
+    ['artists', 'artists', 'name', ['zundert', 'gogh', 'japan', 'van gogh museum', 'modern art']],
     ['institutions', 'institutions', 'name', ['gogh', 'amsterdam']],
   ]) {
     const items = (await api(request, `/${plural}?limit=500`)).data;

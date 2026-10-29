@@ -7,7 +7,7 @@
 import { applySuggestion, PLURAL, searchText, suggest } from '../api';
 import { describeQuery, parseQuery, textQuery } from '../query';
 import { markedWords } from '../highlight';
-import { html, PLURAL_LABEL, render, trusted, TYPE_LABEL } from '../html';
+import { html, PLURAL_LABEL, render, thumb, trusted, TYPE_LABEL } from '../html';
 import { replaceUrl } from '../router';
 import type { EntityType, TextHit } from '../types';
 import { showError } from './common';
@@ -77,10 +77,13 @@ export function searchPage(main: HTMLElement, params: URLSearchParams) {
       ${TYPES.map((t) => html`<button type="button" data-type="${t}" class="${t === type ? 'on' : ''}" aria-pressed="${String(t === type)}">${PLURAL_LABEL[PLURAL[t]]}</button>`)}`);
   }
 
-  const hitRow = (h: TextHit) => html`<li class="text-hit">
+  // each hit says what it is: an artwork with its artist and date (the subtitle, API), else its kind and dates; its picture
+  const hitRow = (h: TextHit) => html`<li class="text-hit${h.image_url ? ' has-image' : ''}">
+      ${h.image_url ? html`<img class="card-img text-hit-img" src="${thumb(h.image_url, 120)}" alt="" loading="lazy" crossorigin="anonymous" data-full="${h.image_url}"${
+        thumb(h.image_url, 120) !== h.image_url ? html` data-fallback="${h.image_url}"` : ''}>` : ''}
       <a class="text-hit-name" href="${hitHref(h)}">${h.name}</a>
       <span class="tag tag-matched tag-matched-${h.matched_in}" title="${MATCHED[h.matched_in][1]}">${MATCHED[h.matched_in][0]}</span>
-      <span class="muted small">${[TYPE_LABEL[h.type], h.kind, h.period?.label].filter(Boolean).join(' · ')}</span>
+      <span class="muted small text-hit-what">${[TYPE_LABEL[h.type], h.subtitle || [h.kind, h.period?.label].filter(Boolean).join(' · ')].filter(Boolean).join(' · ')}</span>
       ${h.headline_html ? html`<p class="text-hit-passage">${trusted(h.headline_html)}</p>` : ''}
     </li>`;
   const among = () => (type ? ` among ${PLURAL_LABEL[PLURAL[type]].toLowerCase()}` : '');

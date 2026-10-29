@@ -80,8 +80,8 @@ export function figure(img: Image, alt: string, width = 500) {
   const small = thumb(img.url, width);
   const credit = [img.credit, img.license].filter(Boolean).join(' · ');
   return html`<figure class="figure">
-    <img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async" crossorigin="anonymous" data-full="${img.url}"
-      ${small !== img.url ? html`data-fallback="${img.url}"` : ''}>
+    <span class="figure-frame"><img src="${small}" alt="${img.caption ?? alt}" loading="lazy" decoding="async" crossorigin="anonymous" data-full="${img.url}"
+      ${small !== img.url ? html`data-fallback="${img.url}"` : ''}></span>
     <figcaption>
       ${img.caption ? html`<span class="caption">${img.caption}</span>` : ''}
       <span class="credit">${img.source_url ? html`<a href="${img.source_url}" target="_blank" rel="noopener">${credit || 'Source'}</a>` : credit}</span>
@@ -110,6 +110,27 @@ export function retryImage(img: HTMLImageElement) {
 export function wireImageFallbacks(root: Element) {
   root.querySelectorAll<HTMLImageElement>('img[crossorigin], img[data-fallback]').forEach(retryImage);
 }
+/**
+ * Pictures of unusual shape (roadmap 2026-10-26: Monet's Water Lilies, 17 m wide): an entry's figure says, once its
+ * image is loaded, whether it is very wide (more than 2.5 × as wide as high: shown at a readable height, scrolled
+ * sideways) or very tall (a hanging scroll: allowed more height). Once for the whole site (main.ts), as below.
+ */
+export const WIDE = 2.5;
+export const TALL = 0.45;
+export function watchImageShapes() {
+  const shape = (img: HTMLImageElement) => {
+    const fig = img.closest<HTMLElement>('.figure');
+    if (!fig || !img.naturalWidth) return;
+    const ratio = img.naturalWidth / img.naturalHeight;
+    fig.classList.toggle('wide', ratio > WIDE);
+    fig.classList.toggle('tall', ratio < TALL);
+    const frame = img.parentElement!;
+    fig.classList.toggle('scrolls', frame.scrollWidth > frame.clientWidth + 1);
+  };
+  document.addEventListener('load', (ev) => { if (ev.target instanceof HTMLImageElement) shape(ev.target); }, true);
+  addEventListener('resize', () => document.querySelectorAll<HTMLImageElement>('.figure.wide img').forEach(shape));
+}
+
 /**
  * The same for every image of the site, once (main.ts): an image's "error" doesn't bubble, but it passes the document
  * in the capture phase — lists, parts grids, popovers and whatever comes later are covered without wiring each.
@@ -165,15 +186,18 @@ export function wireLightbox(root: Element) {
   root.querySelectorAll<HTMLImageElement>('.figure img[data-full]').forEach((img) => {
     img.addEventListener('click', () => {
       const dialog = document.createElement('dialog');
-      dialog.className = 'lightbox';
+      // a very wide picture (watchImageShapes) is shown at the height of the screen and scrolled sideways, not
+      // shrunk to a strip to zoom into
+      const wide = !!img.closest('.figure.wide');
+      dialog.className = wide ? 'lightbox lightbox-wide' : 'lightbox';
       const caption = img.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
       // the caption was built by figure() above from escaped values, so reusing its markup is safe
       dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close">×</button>
         <figure><div class="lightbox-stage"><img src="${escape(img.dataset.full!)}" alt="${escape(img.alt)}"${img.hasAttribute('crossorigin') ? ' crossorigin="anonymous"' : ' referrerpolicy="no-referrer"'} draggable="false"></div>
-        <figcaption>${caption}<span class="lightbox-hint">Scroll or pinch to zoom · drag to move · double-click: fit / zoom</span></figcaption></figure>`;
+        <figcaption>${caption}<span class="lightbox-hint">${wide ? 'Scroll sideways for the whole picture' : 'Scroll or pinch to zoom · drag to move · double-click: fit / zoom'}</span></figcaption></figure>`;
       // the image zooms and pans (zoom.ts); a click beside it closes, as does Escape or ×
       retryImage(dialog.querySelector('img')!);
-      const unzoom = zoomable(dialog.querySelector<HTMLElement>('.lightbox-stage')!, dialog.querySelector('img')!);
+      const unzoom = wide ? () => {} : zoomable(dialog.querySelector<HTMLElement>('.lightbox-stage')!, dialog.querySelector('img')!);
       dialog.addEventListener('click', (e) => {
         if (!(e.target as Element).closest('figcaption a, .lightbox-stage')) dialog.close();
       });

@@ -56,6 +56,15 @@ test('texts, stems, accents, phrases, provenance steps and highlighted passages'
 
 // Search across languages (102): a word finds the others of its group — the German word the English provenance step
 // ("beschlagnahmt" → confiscation, seized) — and the passage marks them; a new group works at once (trigger).
+// each hit says what it is (the previews' subtitle, 040): an artwork with its artist and date — in both searches
+test('hits carry a subtitle and a picture: an artwork with its artist and date', async ({ request }) => {
+  const hit = (await search(request, 'starry night')).data.find((h) => h.slug === 'the-starry-night');
+  expect(hit.subtitle).toMatch(/^Vincent van Gogh, .*1889/);
+  expect(hit).toHaveProperty('image_url');
+  const quick = await api(request, '/search?q=starry');
+  expect(quick.data.find((h) => h.slug === 'the-starry-night').subtitle).toMatch(/^Vincent van Gogh/);
+});
+
 test('synonyms: German words find English provenance, the passage marks the match; groups take effect at once', async ({ request }) => {
   const p = (await search(request, 'beschlagnahmt', '&type=artwork')).data.find((h) => h.slug === 'test-fts-work');
   expect(p).toMatchObject({ matched_in: 'provenance' });

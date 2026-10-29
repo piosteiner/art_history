@@ -1,10 +1,11 @@
 import './style.css';
 import { mountThemeToggle } from './theme';
-import { html, PLURAL_LABEL, render, wireImageFallbacksEverywhere } from './html';
+import { html, PLURAL_LABEL, render, watchImageShapes, wireImageFallbacksEverywhere } from './html';
 import { start, type Cleanup, type Route } from './router';
 import { watchLinks } from './previews';
 import { mountSearch } from './search';
 import { mountFeedback } from './feedback';
+import { mountHoverImages } from './hoverimage';
 import type { Plural } from './types';
 import { detail } from './views/detail';
 import { loading, showError } from './views/common';
@@ -27,10 +28,12 @@ render(nav, html`<span class="nav-group"><a href="/">Explore</a><a href="/graph"
 mountSearch(document.getElementById('search')!);
 watchLinks(main); // previews on the internal links of every page
 wireImageFallbacksEverywhere(); // an image that fails: its original, or without crossorigin (html.ts)
+watchImageShapes(); // very wide / tall pictures (html.ts)
 // light/dark: the page stays, maps swap their base map (THEME_EVENT in src/map.ts)
 mountThemeToggle(document.getElementById('theme')!);
 // feedback: the "F" at the bottom right, and a page opened from the CMS with the elements outlined (#fb=…)
 mountFeedback();
+mountHoverImages();
 
 let cleanup: Cleanup;
 

@@ -170,6 +170,9 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .card-link { display: flex; gap: .8rem; align-items: center; padding: .6rem; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); text-decoration: none; color: var(--text); height: 100%; }
 .card-link:hover { border-color: var(--accent); color: var(--text); }
 .card-img { width: 64px; height: 64px; object-fit: cover; border-radius: 4px; flex: none; background: var(--bg); }
+.hover-image { position: fixed; z-index: 50; pointer-events: none; padding: 6px; background: var(--surface); border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, .3); }
+.hover-image img { display: block; max-width: min(420px, 45vw); max-height: min(420px, 70vh); width: auto; height: auto; }
 .card-img-empty { background: repeating-linear-gradient(45deg, var(--bg), var(--bg) 6px, var(--line) 6px, var(--line) 7px); }
 .card-text { display: flex; flex-direction: column; min-width: 0; }
 .card-name { font-weight: 600; }
@@ -202,6 +205,14 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .gallery-thumb.current { border-color: var(--text); }
 .gallery-thumb:focus-visible { outline: 2px solid var(--text); outline-offset: 2px; }
 .figure img { display: block; max-width: 100%; max-height: 380px; border-radius: 4px; background: var(--line); }
+.figure-frame { display: block; }
+/* a very wide picture (a panorama, Monet's Water Lilies): a readable height, scrolled sideways (html.ts watchImageShapes) */
+.figure.wide { max-width: 100%; min-width: 0; }
+.figure.wide .figure-frame { overflow-x: auto; overscroll-behavior-x: contain; }
+.gallery .figure.wide img, .figure.wide img { max-width: none; max-height: none; height: clamp(170px, 42vh, 380px); width: auto; }
+.figure.wide.scrolls figcaption::before { content: "⟷ scroll sideways for the whole picture"; display: block; color: var(--muted); font-size: .85em; }
+/* a very tall one (a hanging scroll): more height than the usual frame */
+.gallery .figure.tall img, .figure.tall img { max-height: min(80vh, 900px); }
 .figure figcaption { font-size: .78rem; color: var(--muted); margin-top: .3rem; max-width: 500px; }
 .caption { display: block; color: var(--text); font-size: .85rem; }
 .credit a { color: var(--muted); }
@@ -457,6 +468,8 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .lightbox-stage.zoomed { cursor: grab; }
 .lightbox-stage.zoomed.dragging { cursor: grabbing; }
 .lightbox img { display: block; max-width: 96vw; max-height: 86vh; transform-origin: 0 0; will-change: transform; }
+.lightbox-wide .lightbox-stage { width: 96vw; overflow-x: auto; touch-action: pan-x; cursor: auto; }
+.lightbox-wide img { max-width: none; height: min(80vh, 900px); max-height: none; width: auto; transform: none; }
 .lightbox-hint { display: block; color: #aaa; font-size: .75rem; margin-top: .2rem; }
 .lightbox figcaption { color: #ddd; font-size: .85rem; text-align: center; margin-top: .5rem; }
 .lightbox figcaption a { color: #ddd; }
@@ -725,6 +738,8 @@ h1[tabindex="-1"]:focus, #app:focus { outline: none; }
 .text-hits { padding-left: 1.6rem; max-width: 46rem; }
 .text-hit { margin: 0 0 .9rem; }
 .text-hit-name { font-weight: 600; }
+.text-hit.has-image { position: relative; padding-left: 64px; min-height: 54px; }
+.text-hit-img { position: absolute; left: 0; top: 2px; width: 52px; height: 52px; }
 .text-hit-passage { margin: .2rem 0 0; font-size: .92rem; color: var(--muted); }
 .text-hit-passage mark { background: var(--mark); color: var(--text); padding: 0 .1em; }
 .tag-matched-provenance { color: var(--c-provenance); border-color: currentColor; }

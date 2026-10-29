@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Roadmap "in Arbeit": search sections, artists by museum, hover images, search hits, wide pictures (migration 164)
+- **What:** artists' search fields "Works now in" / "Works formerly in" as tiers (164) and `collections` with counts in
+  the artists list (API) — "Borghese" under Artists finds the artists with works there; section headings of a search
+  show their size; `/v1/search` and `/v1/search/text` send `subtitle` (the previews': "Vincent van Gogh, January 1889 ·
+  oil painting") and `image_url`. Site: hover a list's small image for the whole picture (`hoverimage.ts`); search hits
+  with subtitle and picture; place cards with designation and qualifier; very wide pictures (> 2.5 : 1) at a readable
+  height, scrolled sideways, also in the lightbox; very tall ones get more height; a provenance marker that is both
+  start and end says both ("start · today"). E2E fieldsearch, search-text; site tests; perf 35/35.
+- **Why:** owner's roadmap items 41, 42, 43, 46, 56, 57 (2026-10-24/26).
+- **Revert:** `git revert`; `entry_search_fields` back to 162's definition.
+
 ### Polity chains: the years 1813–1815 (data)
 - **What:** 9 polities from Wikidata — the Allied general governorates (Saxony, Berg, Lower Rhine, Middle Rhine, Lower and
   Middle Rhine, Frankfurt; run by Stein's Central Administrative Department), the Provisional Government of Belgium,

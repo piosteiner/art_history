@@ -141,7 +141,7 @@ export function explain(entry: Entry, query: string, shown = ''): Match {
  * tier (a museum that holds or held them) come after the others, in their tier's order and under its heading — a search
  * for "Prado" lists the works there now, then those that were there.
  */
-export function ordered<T>(hits: Entry<T>[], query: string, sort: string): { entry: Entry<T>; heading: string }[] {
+export function ordered<T>(hits: Entry<T>[], query: string, sort: string): { entry: Entry<T>; heading: string; counted?: boolean }[] {
   const words = queryWords(query);
   const tierOf = (e: Entry<T>) => {
     const visible = fold(`${e.name} ${e.meta} ${shownFields(e)}`);
@@ -153,7 +153,8 @@ export function ordered<T>(hits: Entry<T>[], query: string, sort: string): { ent
   };
   const sorted = sortEntries(hits, sort).map((entry) => ({ entry, tier: words.length ? tierOf(entry) : null }));
   return [...sorted.filter((x) => !x.tier), ...sorted.filter((x) => x.tier).sort((a, b) => a.tier!.rank - b.tier!.rank)]
-    .map(({ entry, tier }) => ({ entry, heading: tier?.heading ?? entry.sorts[sort]?.heading ?? '' }));
+    // a tier's heading is a section of the hits — its size is shown (`counted`), a sort's letter or country is not
+    .map(({ entry, tier }) => ({ entry, heading: tier?.heading ?? entry.sorts[sort]?.heading ?? '', counted: !!tier }));
 }
 
 // ---- headings ------------------------------------------------------------------------------------

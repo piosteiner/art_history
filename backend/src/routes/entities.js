@@ -66,7 +66,15 @@ const ENTITIES = {
     type: 'artist', table: 'artists', alt: 'alt_names', name: 'name', period: 'coalesce(t.lifespan, t.active)',  // active: 147
     list: `t.sort_name, t.given_name, t.family_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
            range_json(t.active, t.active_label) AS active, ${mainImage('artist_id')},
-           ${birthPlace('artist')}, ${countryCols('artist')}`,
+           ${birthPlace('artist')}, ${countryCols('artist')},
+           -- the collections holding their works (now) and that held them (before), with counts (164): a museum's name
+           -- finds the artists, "3 works in the Galleria Borghese" — the counterpart of the museums' artists_held
+           (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', i.slug, 'name', i.name, 'now', c.now, 'before', c.before)
+                     ORDER BY c.now DESC, c.before DESC, i.name), '[]')
+              FROM (SELECT h.institution_id, count(*) FILTER (WHERE h.now)::int AS now, count(*) FILTER (WHERE NOT h.now)::int AS before
+                      FROM artwork_holders h JOIN artwork_artists aa ON aa.artwork_id = h.artwork_id
+                     WHERE aa.artist_id = t.id GROUP BY h.institution_id) c
+              JOIN institutions i ON i.id = c.institution_id) AS collections`,
     detail: `t.sort_name, t.given_name, t.family_name, range_json(t.birth, t.birth_label) AS birth, range_json(t.death, t.death_label) AS death,
              range_json(t.active, t.active_label) AS active,
              ${allImages('artist_id')}, t.biography_md, ${birthPlace('artist')}, ${countryCols('artist')}`,

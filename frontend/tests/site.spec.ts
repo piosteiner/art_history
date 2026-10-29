@@ -353,6 +353,19 @@ test('provenance map: the first and last placed stop are marked; a destroyed wor
   await expect(page.locator('.prov-end')).toHaveAttribute('data-cap', 'last known place');
 });
 
+test('provenance map: a work back where it started — one marker says both, "start · today"', async ({ page }) => {
+  await page.route(/\/v1\/map\/artworks\/[^/?]+(\?.*)?$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    const stops = body.provenance.features.filter((f: { properties: { layer: string } }) => f.properties.layer === 'provenance_stop');
+    stops[stops.length - 1].geometry = stops[0].geometry;   // the last stop moved to where the first is
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/100501/der-wanderer-uber-dem-nebelmeer');
+  await expect(page.locator('.prov-end')).toHaveAttribute('data-cap', 'first known place · today');
+  await expect(page.locator('.prov-start')).toHaveCount(0);
+});
+
 test('how are they connected (088): pick any entry, the shortest chain top to bottom', async ({ page }) => {
   await page.goto(IRENE);
   const box = page.locator('#connect');
@@ -2051,7 +2064,7 @@ test('artworks list: searching a museum lists what is there now first, then what
   await page.goto('/artworks');
   await page.fill('input.filter', 'prado');
   const headings = page.locator('.cards-heading');
-  await expect(headings).toHaveText(['Now in the collection', 'Formerly in the collection']);
+  await expect(headings).toHaveText(['Now in the collection 1', 'Formerly in the collection 1']);   // each with its size
   await expect(page.locator('.card').first()).toContainText('Now in: Museo del Prado');
 });
 
@@ -2073,15 +2086,36 @@ test('museums list: an artist’s name finds the museums with their works, most 
   });
   await page.goto('/institutions');
   await page.fill('input.filter', 'gauguin');
-  await expect(page.locator('.cards-heading')).toHaveText(['With works by a matching artist']);
+  await expect(page.locator('.cards-heading')).toHaveText(['With works by a matching artist 2']);   // a section says its size
   const first = page.locator('.card').first();
   await expect(first).toContainText('Musée Test');               // 3 works before 1
   await expect(first.locator('.card-extra')).toContainText('3 works by Paul Gauguin (2 there now, 1 formerly)');
   await first.locator('.card-extra a').click();
   await expect(page).toHaveURL(/\/artworks\?artist=paul-gauguin&institution=musee-test/);
   await expect(page.locator('#stats')).toContainText('Works by Paul Gauguin held by Musée Test');
-  await expect(page.locator('.cards-heading')).toHaveText(['In the Musée Test now', 'Formerly there']);
+  await expect(page.locator('.cards-heading')).toHaveText(['In the Musée Test now 1', 'Formerly there 1']);
   await expect(page.locator('.card')).toHaveCount(2);
+});
+
+test('artists list: a museum’s name finds the artists with works there, now before formerly, each with its count (API 164)', async ({ page }) => {
+  await page.route(/\/v1\/artists\?/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    if (body.data.length < 3) return route.fulfill({ response: res });
+    const field = (rank: number) => [rank === 1 ? { label: 'Works now in', text: 'Musée Test', tier: { rank: 1, heading: 'With works now in a matching collection' } }
+      : { label: 'Works formerly in', text: 'Musée Test', tier: { rank: 2, heading: 'With works formerly in a matching collection' } }];
+    const [a, b, c] = body.data;
+    a.search_fields = field(2); a.collections = [{ slug: 'musee-test', name: 'Musée Test', now: 0, before: 2 }];
+    b.search_fields = field(1); b.collections = [{ slug: 'musee-test', name: 'Musée Test', now: 1, before: 0 }];
+    c.search_fields = field(1); c.collections = [{ slug: 'musee-test', name: 'Musée Test', now: 3, before: 1 }];
+    await route.fulfill({ response: res, json: { ...body, data: [a, b, c, ...body.data.slice(3)] } });
+  });
+  await page.goto('/artists');
+  await page.fill('input.filter', 'musee test');
+  await expect(page.locator('.cards-heading')).toHaveText(['With works now in a matching collection 2', 'With works formerly in a matching collection 1']);
+  const first = page.locator('.card').first();   // the most works there first
+  await expect(first.locator('.card-extra')).toContainText('4 works in Musée Test (3 there now, 1 formerly)');
+  await expect(first.locator('.card-extra a')).toHaveAttribute('href', /\/artworks\?artist=[^&]+&institution=musee-test$/);
 });
 
 test('full screen map: legend and layer switches come along, the button leaves it again', async ({ page }) => {
@@ -2733,4 +2767,33 @@ test('places of one name (API 162): each page says where it lies', async ({ page
   await expect(page.locator('.subtitle')).toContainText('in Cambridgeshire');
   await page.goto('/places/cambridge-massachusetts');
   await expect(page.locator('.subtitle')).toContainText('in Massachusetts');
+});
+
+test('lists: hovering a card’s small image shows the whole picture, larger; leaving it hides it', async ({ page }) => {
+  // pictures of 400 × 300 instead of the fixtures' 1 × 1 pixel
+  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
+    body: '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"><rect width="400" height="300" fill="#3a6"/></svg>' }));
+  await page.goto('/artworks');
+  const small = page.locator('img.card-img[data-full]').first();
+  await small.hover();
+  const preview = page.locator('.hover-image');
+  await expect(preview).toBeVisible();
+  // larger than the 64 px card image, once the picture has been drawn
+  await expect.poll(async () => (await preview.boundingBox())?.width ?? 0).toBeGreaterThan(100);
+  await page.locator('h1').hover();
+  await expect(preview).toBeHidden();
+});
+
+test('a very wide picture (Monet’s Water Lilies) keeps a readable height and scrolls sideways, also enlarged', async ({ page }) => {
+  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
+    body: '<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="200"><rect width="1700" height="200" fill="#36a"/></svg>' }));
+  await page.goto('/artworks/102162/water-lilies-the-two-willows');
+  const fig = page.locator('.gallery .figure').first();
+  await expect(fig).toHaveClass(/\bwide\b/);
+  expect((await fig.locator('img').boundingBox())!.height).toBeGreaterThan(160);
+  await expect(fig).toHaveClass(/\bscrolls\b/);   // wider than the page: "scroll sideways" under it
+  await fig.locator('img').click();
+  const box = page.locator('dialog.lightbox-wide');
+  await expect(box).toBeVisible();
+  expect((await box.locator('img').boundingBox())!.height).toBeGreaterThan(400);
 });
