@@ -2726,3 +2726,11 @@ test('feedback (API 141): the F widens to "Feedback"; a message with a picked el
   await expect(page.locator('.fb-target')).toHaveCount(1);
   await expect(page.locator('.fb-target')).toContainText('Vincent van Gogh');
 });
+
+test('places of one name (API 162): each page says where it lies', async ({ page }) => {
+  await page.goto('/places/cambridge-england');
+  await expect(page.locator('h1')).toHaveText('Cambridge');
+  await expect(page.locator('.subtitle')).toContainText('in Cambridgeshire');
+  await page.goto('/places/cambridge-massachusetts');
+  await expect(page.locator('.subtitle')).toContainText('in Massachusetts');
+});
