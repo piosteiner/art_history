@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Places in polities: data (step E)
+- **Polities:** 71 created from Wikidata (`from-wikidata.js polity`, new option `--different=` for the duplicate check:
+  the July Monarchy is not the Bourbon Restoration) — the French regimes 987–today, Dutch, Belgian, German, Austrian,
+  Spanish, Japanese, British chains, the Italian states before 1861 (Siena, Lucca, Mantua, Urbino, Trent, Savoy,
+  Tuscany, Naples, Two Sicilies, Sardinia, Parma, Modena, Lombardy–Venetia …), the three kingdoms of Italy named apart
+  (Holy Roman Empire 961–1806, Napoleonic 1805–1814, 1861–1946). The country-places "Kingdom of Italy" and "Kingdom of
+  the Netherlands" removed (their two "worked in" links moved to Italy and the Netherlands); "Galicia" was Spain's
+  autonomous community — a region under Spain.
+- **Links:** 277 `in_polity` (each until the next state; cited with the polity's Wikidata item) on 10 countries and,
+  where the country's history doesn't hold, regions: Italy's provinces before 1861/1866/1870, Alsace (HRE until 1648,
+  German Empire 1871–1918, annexed 1940–1944), Nice (Savoy/Sardinia until 1860), Avignon (Papal until 1791), Bavaria,
+  Saxony and Prussian lands 1806–1871, East German Länder 1949–1990, Scotland until 1707, Castile until 1516; 46
+  `succeeded_by` along the country chains. Gaps are left where no state is entered (Japan 1573–1603, the Netherlands
+  1813–1815, German lands 1806–1871 outside those named).
+
 ### Places in polities (migration 161) — step E of the places plan
 - **What:** relationship types `in_polity` (place → polity, "belonged to") and `succeeded_by`; `polity_timeline()`
   (PL/pgSQL, datemultirange: a link further down wins for its time) and `polities_at()`; API place `polities`,
