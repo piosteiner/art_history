@@ -8,6 +8,15 @@ Format: date — what — why — how to revert.
 - **What:** `place_kind` + continent, district, street, natural, archaeological (157); `places.designation` (158);
   checks "every place but a country" spare a continent; Wikidata `placeKind()` and the place finder know the new
   kinds; the CMS select offers them (enum); API/site show the designation as the place's subtitle. E2E place-within.
+- **Data:** 196 regions and countries linked to Wikidata by ISO 3166 code (P300/P297; 9 more by hand: Bern, Rhône,
+  Kent, Cambridgeshire, Thessaly, three Czech regions, Lower Silesia); 39 Natural Earth regions that duplicated a place
+  merged into it (merge_entries): 25 provinces filed as "site" (Province of Ancona, Canton of Zug …) and 14 cities that
+  are also states (Vienna, Berlin, Hamburg, Paris, Tokyo, Prague, Mexico City …) — the kept place got the boundary
+  code; 106 new regions named in English from Wikidata (Bayern → Bavaria). Kinds and designations from the items'
+  classes by their labels (Wikidata's class tree misleads: a "commune of France" is no settlement there, Cologne a
+  "Roman city"); only the 134 "sites" changed kind (60 settlements, 23 regions, 19 districts, 15 buildings, 8 streets,
+  7 natural, 2 archaeological), Europe a continent; by hand Aschaffenburg, Bayreuth, Weimar (cities), Chelsea
+  (district). 619 places have a designation. Places 780 → 741, without Wikidata 6.
 - **Why:** owner, 2026-10-29 — "site" had become the kind of everything unnamed (cities, provinces, streets, mountains).
 - **Revert:** `git revert`; enum values can't be dropped — leave them unused.
 
