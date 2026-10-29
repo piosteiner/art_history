@@ -2,6 +2,22 @@
 
 Format: date — what — why — how to revert.
 
+## 2026-10-29
+
+### Institutions: the open cases settled (data) + merging institutions works again (migration 151)
+- **What:** the cases left for the owner on 2026-10-28, checked against their sources (the Kunsthaus provenance PDFs):
+  - Frederik Muller & Co. merged into Frederik Muller & Cie (Q18821838) — the Kunsthaus writes both names for the same
+    Amsterdam sale of 13 June 1933; Galerie de Boer merged into Kunsthandel Pieter de Boer (Q28872849) — the Kunsthaus
+    lists both in Amsterdam (1946, 1961), TEFAF: one firm since 1922. The other name stays as an alternative name.
+  - Galerie Seligmann (Manet, Le Grand Duc, 1954): Paris, Place Vendôme (letter Heyligers 1955 in the Kunsthaus record);
+    after the split of 1912 that gallery was Arnold Seligmann's — left unlinked (Wikidata's Arnold Seligmann & Co. ends 1940).
+  - E. J. van Wisselingh & Co.: Amsterdam instead of Wikidata's headquarters The Hague (declined, not offered again).
+  - Musées nationaux: other names Direction des musées nationaux / Direction des musées de France (renamed 1945).
+- **Bug:** merging two institutions always failed ("permission denied for table editor_scopes"): `merge_entries()`
+  moves every foreign key, and since 094 editor_scopes is one the admin role may not change. 151 skips it and stops
+  with a message if an account is limited to the duplicate. E2E test "merge an institution" (duplicates.spec.js).
+- **Revert:** `git revert`; the merges through History (source `merge`).
+
 ## 2026-10-28
 
 ### Institutions enriched (data) + Wikidata places from the headquarters

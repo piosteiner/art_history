@@ -4,9 +4,9 @@ const { test, expect, sql, submitForm, settled, API } = require('./helpers');
 
 test.afterAll(() => {
   sql(`DELETE FROM quality_acks WHERE check_id = 'possible_duplicate';
-       DELETE FROM artworks WHERE slug IN ('untitled-test-a', 'untitled-test-b', 'starry-night-copy');
+       DELETE FROM artworks WHERE slug IN ('untitled-test-a', 'untitled-test-b', 'starry-night-copy', 'merge-test-work');
        DELETE FROM artists WHERE slug IN ('paul-gauguin-2', 'vincent-van-gogh-dup');
-       DELETE FROM slug_history WHERE old_slug = 'vincent-van-gogh-dup'`);
+       DELETE FROM slug_history WHERE old_slug IN ('vincent-van-gogh-dup', 'met-museum-dup')`);
 });
 
 test('a likely duplicate: shown while typing, Create asks; "it\'s a different one" creates it and is remembered', async ({ userA }) => {
@@ -116,4 +116,21 @@ test('different inventory numbers in one collection: two objects, however alike 
   expect(sql(`SELECT count(*) FROM duplicate_candidates('artwork', entity_id('artwork', 'wl-test-a'))`)).toBe('0');
   expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'possible_duplicate' AND detail LIKE '%nymphéas%'`)).toBe('0');
   sql("DELETE FROM artworks WHERE slug IN ('wl-test-a', 'wl-test-b')");
+});
+
+// 151: institutions too — editor_scopes (094) points at them and the admin role may not change it
+test('merge an institution: its provenance steps and name move to the kept one', async ({ userA }) => {
+  sql(`INSERT INTO institutions (slug, name) VALUES ('met-museum-dup', 'Met Museum');
+       INSERT INTO artworks (slug, title) VALUES ('merge-test-work', 'Merge test work') ON CONFLICT (slug) DO NOTHING;
+       INSERT INTO provenance (artwork_id, position, owner_institution_id)
+         VALUES (entity_id('artwork', 'merge-test-work'), 0, entity_id('institution', 'met-museum-dup'))`);
+  await userA.goto('/institutions/met-museum-dup/merge?into=metropolitan-museum-of-art');
+  await Promise.all([userA.waitForNavigation(), userA.click('button.danger')]);
+  await expect(userA).toHaveURL(/\/institutions\/metropolitan-museum-of-art\?done=merged/);
+  expect(sql(`SELECT i.slug FROM provenance p JOIN institutions i ON i.id = p.owner_institution_id
+              WHERE p.artwork_id = entity_id('artwork', 'merge-test-work')`)).toBe('metropolitan-museum-of-art');
+  expect(sql("SELECT names::text FROM institutions WHERE slug = 'metropolitan-museum-of-art'")).toContain('Met Museum');
+  sql(`DELETE FROM provenance WHERE artwork_id = entity_id('artwork', 'merge-test-work');
+       UPDATE institutions SET names = (SELECT coalesce(jsonb_agg(n), '[]') FROM jsonb_array_elements(names) n WHERE n->>'text' <> 'Met Museum')
+        WHERE slug = 'metropolitan-museum-of-art'`);
 });
