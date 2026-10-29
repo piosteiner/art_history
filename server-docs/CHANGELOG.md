@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### A place's polities only while it existed (migration 163); Tokyo merged
+- **What:** `polity_timeline()` counts the time outside `places.existed` as covered, so no inherited link reaches into
+  it (Tokyo City 1889–1943 showed Japan's chain from the Kamakura shogunate). Data: Tokyo City and Tokyo Prefecture
+  merged into Tokyo (today's Tokyo Metropolis, 1943) — their names kept as former names with their periods, the two
+  deaths moved, old slugs redirect. E2E place-within.
+- **Why:** owner, 2026-10-29.
+- **Revert:** `git revert` (161's function comes back); the merge via history restore.
+
 ### Places of one name told apart, cleanup (migration 162) — step F of the places plan
 - **What:** `place_qualifier()` (API `qualifier` on places and on relationship targets; site: list row, page subtitle
   "in Cambridgeshire", relationships "Cambridge (Massachusetts)"); place search fields Kind = designation, In = region,

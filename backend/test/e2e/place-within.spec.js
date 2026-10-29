@@ -78,6 +78,10 @@ test('a place in polities: the timeline inherited with an exception, the state t
     ['t-kingdom', '1800–1870', 't-land'], ['t-empire', '1871–1918', 't-region']]);
   const vincent = await (await request.get(`${API}/artists/vincent-van-gogh`, { headers: { Host: 'api.localhost' } })).json();
   expect(vincent.relationships.find((r) => r.entity.slug === 't-town').entity.polity_then).toEqual(expect.objectContaining({ slug: 't-empire' }));
+  // 163: a unit that existed only for a time gets only the polities of that time
+  sql("UPDATE places SET existed = '[1880-01-01,1890-01-01)', existed_label = '1880–1889' WHERE slug = 't-town'");
+  expect(sql("SELECT string_agg(lower(period)::text || '/' || upper(period)::text, ' ' ORDER BY lower(period)) FROM polity_timeline(entity_id('place', 't-town'))"))
+    .toBe('1880-01-01/1890-01-01');
   sql("DELETE FROM places WHERE slug IN ('t-town', 't-region', 't-land'); DELETE FROM polities WHERE slug IN ('t-kingdom', 't-empire')");
 });
 
