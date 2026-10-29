@@ -1,11 +1,46 @@
 public_id: 102169
 name: Church of Saint-Sulpice
+names:
+  - Saint-Sulpice church
+  - Church of St. Sulpice
+  - lang: nl
+    role: translation
+    text: Église Saint-Sulpice
+  - lang: de
+    role: translation
+    text: St-Sulpice de Paris
+kind: church
 founded: 1646
+place: paris
+location: [2.33492, 48.851]
+address: 2 Rue Palatine
+website_url: https://www.paroissesaintsulpice.paris/
 wikidata_id: Q295844
 metadata:
   sources: [Wikidata Q295844 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Paris_Saint-Sulpice_Fassade_4-5_A.jpg/1280px-Paris_Saint-Sulpice_Fassade_4-5_A.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paris_Saint-Sulpice_Fassade_4-5_A.jpg
+    license: CC BY-SA 4.0
+    credit: Zairon
+identifiers:
+  gnd: 4430157-1
+  lc: n50079459
+  viaf: "245758392"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q295844
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q295844
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q295844
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q295844

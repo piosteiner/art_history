@@ -3,4 +3,38 @@ name: National Gallery
 kind: museum
 founded: 1824
 place: london
+location: [-0.12833, 51.50889]
+address: Trafalgar Square, London WC2N 5DN
 website_url: https://www.nationalgallery.org.uk
+wikidata_id: Q180788
+metadata:
+  sources: [Wikidata Q180788 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_036.JPG/1280px-Galer%C3%ADa_Nacional%2C_Londres%2C_Inglaterra%2C_2014-08-07%2C_DD_036.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Galer%C3%ADa_Nacional,_Londres,_Inglaterra,_2014-08-07,_DD_036.JPG
+    license: CC BY-SA 4.0
+    credit: Diego Delso
+identifiers:
+  bnf: 11866630z
+  gnd: 1003322-1
+  idref: "027687252"
+  lc: n80081622
+  ulan: "500125190"
+  viaf: "144868906"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q180788
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q180788
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q180788
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q180788

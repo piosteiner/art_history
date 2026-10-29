@@ -1,0 +1,16 @@
+public_id: 102968
+name: Lille
+kind: settlement
+location: [3.0575, 50.63194]
+wikidata_id: Q648
+metadata:
+  sources: [Wikidata Q648 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q648
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q648

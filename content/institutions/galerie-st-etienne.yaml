@@ -6,6 +6,7 @@ names:
   - lang: ru
     role: translation
     text: галерея Ст. Этьен
+kind: gallery
 founded: 1939
 place: new-york-city
 location: [-73.97558, 40.76342]
@@ -19,6 +20,10 @@ identifiers:
   lc: n79120892
   viaf: "136032789"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q27431468
   place:
     - accessed: 2026-10-19
       property: P131

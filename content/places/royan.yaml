@@ -1,0 +1,16 @@
+public_id: 103219
+name: Royan
+kind: settlement
+location: [-1.04306, 45.62306]
+wikidata_id: Q81909
+metadata:
+  sources: [Wikidata Q81909 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q81909
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q81909

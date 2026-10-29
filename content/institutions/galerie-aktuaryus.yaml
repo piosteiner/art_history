@@ -1,2 +1,23 @@
 public_id: 100307
 name: Galerie Aktuaryus
+kind: gallery
+founded: 1924
+dissolved: 1946
+place: zurich
+wikidata_id: Q131693984
+sources:
+  place:
+    - url: https://en.wikipedia.org/wiki/Toni_Aktuaryus
+      note: "„In 1924 he founded the Aktuaryus Gallery in Zurich“; Toni Aktuaryus died in March 1946, bankruptcy proceedings for the gallery opened 3 July 1946 (Eggimann Gerber: Galerie Aktuaryus 1924–46)"
+      source: en-wikipedia-org
+      accessed: 2026-10-28
+  founded:
+    - url: https://en.wikipedia.org/wiki/Toni_Aktuaryus
+      note: "„In 1924 he founded the Aktuaryus Gallery in Zurich“; Toni Aktuaryus died in March 1946, bankruptcy proceedings for the gallery opened 3 July 1946 (Eggimann Gerber: Galerie Aktuaryus 1924–46)"
+      source: en-wikipedia-org
+      accessed: 2026-10-28
+  dissolved:
+    - url: https://en.wikipedia.org/wiki/Toni_Aktuaryus
+      note: "„In 1924 he founded the Aktuaryus Gallery in Zurich“; Toni Aktuaryus died in March 1946, bankruptcy proceedings for the gallery opened 3 July 1946 (Eggimann Gerber: Galerie Aktuaryus 1924–46)"
+      source: en-wikipedia-org
+      accessed: 2026-10-28

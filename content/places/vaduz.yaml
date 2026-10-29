@@ -1,0 +1,39 @@
+public_id: 103330
+name: Vaduz
+names:
+  - Vaduz, Liechtenstein
+  - lang: ja
+    role: translation
+    text: ファドゥーツ
+  - lang: zh
+    role: translation
+    text: 瓦杜兹
+  - lang: ko
+    role: translation
+    text: 파두츠
+  - lang: ru
+    role: translation
+    text: Вадуц
+kind: settlement
+parent: liechtenstein
+country_code: LI
+location: [9.52222, 47.14056]
+wikidata_id: Q1844
+metadata:
+  sources: [Wikidata Q1844 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4062244-7
+  hls: "007133"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1844
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1844
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1844

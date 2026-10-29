@@ -1,4 +1,37 @@
 public_id: 101037
 name: Parke Bernet
+kind: auction house
+founded: 1937
+dissolved: 1983
+place: new-york-city
+address: 30 East 57th Street
+wikidata_id: Q15435609
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q15435609 (retrieved 2026-10-28)]
+identifiers:
+  bnf: 14521531w
+  gnd: 2017360-X
+  idref: "140406581"
+  lc: n81107854
+  viaf: "135164151"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q15435609
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q15435609
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q15435609
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q15435609
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q15435609

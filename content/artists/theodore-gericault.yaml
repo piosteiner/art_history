@@ -7,6 +7,72 @@ death: 1824-01-26
 wikidata_id: Q184212
 metadata:
   sources: [Wikidata Q184212 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/rouen
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q184212
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q184212
+  - type: lived_in
+    to: place/rouen
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q184212
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q184212
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q184212
+  - type: studied_at
+    to: institution/lycee-louis-le-grand
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q184212
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    period: 1811-02-05
+    period_label: from 5 February 1811
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q184212
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q184212
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg/1280px-Horace_Vernet%2C_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault%2C_probably_1822_or_1823%2C_1998.84%2C_MET.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Horace_Vernet,_Jean-Louis-Andr%C3%A9-Th%C3%A9odore_Gericault,_probably_1822_or_1823,_1998.84,_MET.jpg
+    license: CC0
+    credit: Horace Vernet
+identifiers:
+  bnf: 12713851p
+  dome: "3363"
+  gnd: "118538675"
+  idref: "066897084"
+  kulturnav: 0cf6ff97-c6fa-4a1a-bb9e-6fec52b9154b
+  lc: n50016306
+  rkd: "31065"
+  ulan: "500115562"
+  viaf: "64128788"
 sources:
   birth:
     - accessed: 2026-10-20

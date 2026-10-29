@@ -1,9 +1,24 @@
 public_id: 100837
 name: Deutscher Werkbund
+kind: art society
 founded: 1907-10-06
+place: munich
+website_url: http://www.deutscher-werkbund.de/
 wikidata_id: Q160438
 metadata:
   sources: [Wikidata Q160438 (retrieved 2026-10-18)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/100_Jahre_Deutscher_Werkbund_-_Postwertzeichen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:100_Jahre_Deutscher_Werkbund_-_Postwertzeichen.jpg
+    license: Public domain
+    credit: Deutsche Post AG, nach einem Entwurf von Ingo Wulff, Kiel
+identifiers:
+  bnf: "120912990"
+  gnd: 2008677-5
+  idref: "029245982"
+  lc: n50065876
+  ulan: "500268688"
+  viaf: "135371651"
 sources:
   founded:
     - accessed: 2026-10-18

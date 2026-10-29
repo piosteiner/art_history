@@ -1,5 +1,36 @@
 public_id: 102147
 name: Palazzo Ducale Mantua
+kind: museum
+place: mantua
+location: [10.7988, 45.16034]
+address: piazza Sordello, 40 - Mantova
+website_url: http://www.mantovaducale.beniculturali.it/
 wikidata_id: Q1635704
 metadata:
   sources: [Wikidata Q1635704 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Mantoue_palais_ducal.jpg/1280px-Mantoue_palais_ducal.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mantoue_palais_ducal.jpg
+    license: CC BY-SA 4.0
+    credit: Velvet
+identifiers:
+  bnf: 12310005w
+  gnd: 4266647-8
+  idref: "031984835"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1635704
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1635704
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1635704
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1635704

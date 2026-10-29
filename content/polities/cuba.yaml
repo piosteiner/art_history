@@ -1,0 +1,16 @@
+public_id: 103175
+name: Cuba
+period: 1898-12-10/
+country_codes: [CU]
+wikidata_id: Q241
+metadata:
+  sources: [Wikidata Q241 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q241
+  country_codes:
+    - accessed: 2026-10-28
+      property: P297
+      wikidata: Q241

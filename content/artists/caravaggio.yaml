@@ -5,6 +5,112 @@ death: 1610-07-18
 wikidata_id: Q42207
 metadata:
   sources: [Wikidata Q42207 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/duchy-of-milan
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q42207
+  - type: born_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q42207
+  - type: died_in
+    to: place/porto-ercole
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q42207
+  - type: worked_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/messina
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/palermo
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/paliano
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/syracuse
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/valletta
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: worked_in
+    to: place/zagarolo
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q42207
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q42207
+  - type: associated_with
+    to: movement/counter-reformation
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q42207
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/Bild-Ottavio_Leoni%2C_Caravaggio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bild-Ottavio_Leoni,_Caravaggio.jpg
+    license: Public domain
+    credit: Ottavio Leoni
+identifiers:
+  bnf: "119585157"
+  gnd: "118519034"
+  idref: "027574105"
+  kulturnav: 8557a6dc-b59f-4cb2-b378-3defd369bcfd
+  lc: n50000558
+  nlk: KAC199604389
+  rkd: "15262"
+  ulan: "500115312"
+  viaf: "87679282"
 sources:
   birth:
     - accessed: 2026-10-19

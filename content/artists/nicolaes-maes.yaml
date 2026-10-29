@@ -7,6 +7,71 @@ death: 1693-12
 wikidata_id: Q505150
 metadata:
   sources: [Wikidata Q505150 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q505150
+  - type: born_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q505150
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q505150
+  - type: worked_in
+    to: place/amsterdam
+    period: 1648/1653
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q505150
+  - type: worked_in
+    to: place/dordrecht
+    period: 1653/1665
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q505150
+  - type: worked_in
+    to: place/antwerp
+    period: 1665/1667
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q505150
+  - type: student_of
+    to: artist/rembrandt
+    period: 1648/1653
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q505150
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q5598
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Self_portrait%2C_by_Nicolaes_Maes.jpg/1280px-Self_portrait%2C_by_Nicolaes_Maes.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self_portrait,_by_Nicolaes_Maes.jpg
+    license: Public domain
+    credit: Nicolaes Maes
+identifiers:
+  bnf: "145473525"
+  dome: "10634"
+  gnd: "122131924"
+  idref: "191787930"
+  kulturnav: d5285c30-c502-495b-8d5e-5b4629749aed
+  lc: nr00014357
+  rkd: "51906"
+  ulan: "500015747"
+  viaf: "32870511"
 sources:
   birth:
     - accessed: 2026-10-20

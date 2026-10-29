@@ -5,6 +5,45 @@ death: 1572-12-03
 wikidata_id: Q7803
 metadata:
   sources: [Wikidata Q7803 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q7803
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q7803
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7803
+  - type: associated_with
+    to: movement/mannerism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q7803
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Alessandro_Allori%2C_santissima_trinit%C3%A0%2C_1567-1571_circa%2C_ritratto_dei_maestri%2C_bronzino_%28cropped%29.jpg/1280px-Alessandro_Allori%2C_santissima_trinit%C3%A0%2C_1567-1571_circa%2C_ritratto_dei_maestri%2C_bronzino_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alessandro_Allori,_santissima_trinit%C3%A0,_1567-1571_circa,_ritratto_dei_maestri,_bronzino_(cropped).jpg
+    license: CC BY 3.0
+    credit: Sailko
+identifiers:
+  bnf: 14406814r
+  gnd: "119168774"
+  idref: "031948235"
+  kulturnav: d0862487-ab4e-4422-9c57-1be5d35631c0
+  lc: n80116993
+  rkd: "12960"
+  ulan: "500004362"
+  viaf: "106963584"
 sources:
   birth:
     - accessed: 2026-10-20

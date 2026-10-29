@@ -1,6 +1,14 @@
 public_id: 100892
 name: French Academy in Rome
+names:
+  - lang: fr
+    role: alternative
+    text: Académie de France à Rome
+kind: academy
 founded: 1666
+place: rome
+location: [12.4825, 41.90833]
+website_url: http://www.villamedici.it
 wikidata_id: Q337494
 metadata:
   sources: [Wikidata Q337494 (retrieved 2026-10-18)]
@@ -13,8 +21,24 @@ relationships:
         note: “the study days organized by the French Embassy to the Holy See, the Pieux-établissements de la France à Rome et Lorette, in collaboration with the Académie de France à Rome – Villa Médicis”
         source: villa-medici-saint-matthew-contarelli-chapel
         accessed: 2026-10-27
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1b/Villa_Medici_-_fronte.jpg/1280px-Villa_Medici_-_fronte.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Villa_Medici_-_fronte.jpg
+    license: CC BY 4.0
+    credit: SonyGM
+identifiers:
+  bnf: "118728584"
+  gnd: 1039862-4
+  idref: "026489910"
+  lc: n80090321
+  ulan: "500310990"
+  viaf: "132536536"
 sources:
   founded:
     - accessed: 2026-10-18
       property: P571
+      wikidata: Q337494
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q337494

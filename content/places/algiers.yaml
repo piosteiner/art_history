@@ -1,0 +1,16 @@
+public_id: 102952
+name: Algiers
+kind: settlement
+location: [3.05861, 36.77639]
+wikidata_id: Q3561
+metadata:
+  sources: [Wikidata Q3561 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3561
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3561

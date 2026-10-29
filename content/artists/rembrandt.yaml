@@ -1,10 +1,82 @@
 public_id: 101420
 name: Rembrandt
+names:
+  - lang: nl
+    role: original
+    text: Rembrandt Harmenszoon van Rijn
 birth: 1606-07-15
 death: 1669-10-04
 wikidata_id: Q5598
 metadata:
   sources: [Wikidata Q5598 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q5598
+  - type: born_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5598
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5598
+  - type: lived_in
+    to: institution/rembrandt-house-museum
+    period: 1639/1658
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5598
+  - type: worked_in
+    to: place/leiden
+    period: 1620/1624
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5598
+  - type: worked_in
+    to: place/amsterdam
+    period: 1623/1625
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5598
+  - type: studied_at
+    to: institution/leiden-university
+    period: 1620/1621
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q5598
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5598
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg/1280px-Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Self-Portrait_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Rembrandt
+identifiers:
+  bnf: 11940484n
+  gnd: 11859964X
+  idref: "027341925"
+  kulturnav: 8532f189-bc32-4e33-a39e-feb041f07316
+  lc: n79142935
+  nlk: KAC199622783
+  rkd: "66219"
+  ulan: "500011051"
+  viaf: "64013650"
 sources:
   birth:
     - accessed: 2026-10-19

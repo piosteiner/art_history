@@ -1,0 +1,35 @@
+public_id: 103328
+name: Cincinnati
+names:
+  - lang: ja
+    role: translation
+    text: シンシナティ
+  - lang: zh
+    role: translation
+    text: 辛辛那提
+  - lang: ko
+    role: translation
+    text: 신시내티
+  - lang: ru
+    role: translation
+    text: Цинциннати
+kind: settlement
+parent: united-states
+country_code: US
+location: [-84.5125, 39.1]
+wikidata_id: Q43196
+metadata:
+  sources: [Wikidata Q43196 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q43196
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q43196
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q43196

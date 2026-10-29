@@ -1,0 +1,44 @@
+public_id: 103248
+name: University of Cambridge
+kind: university
+founded: 1209
+place: cambridge-2
+location: [0.11316, 52.20536]
+address: University of Cambridge, Vice Chancellor's Office, University Offices, The Old Schools, Cambridge, CB2 1TN
+website_url: https://www.cam.ac.uk/
+wikidata_id: Q35794
+metadata:
+  sources: [Wikidata Q35794 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/St_John%27s_College_Second_Court%2C_Cambridge%2C_UK_-_Diliff.jpg/1280px-St_John%27s_College_Second_Court%2C_Cambridge%2C_UK_-_Diliff.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:St_John%27s_College_Second_Court,_Cambridge,_UK_-_Diliff.jpg
+    license: CC BY-SA 3.0
+    credit: Diliff
+identifiers:
+  bnf: "118680465"
+  gnd: 7877-3
+  idref: "027706338"
+  lc: n79018862
+  ulan: "500247221"
+  viaf: "153568718"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q35794
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q35794
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q35794
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q35794
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q35794

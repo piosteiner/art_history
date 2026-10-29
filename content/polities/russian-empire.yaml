@@ -1,0 +1,11 @@
+public_id: 102991
+name: Russian Empire
+period: 1721-11-02/1917-09-14
+wikidata_id: Q34266
+metadata:
+  sources: [Wikidata Q34266 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q34266

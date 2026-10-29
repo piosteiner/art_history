@@ -1,0 +1,78 @@
+public_id: 102548
+name: Unkei
+names:
+  - lang: ja
+    role: original
+    text: "{運|うん}{慶|けい}"
+birth: c. 1150
+death: 1223-12-21
+biography_md: |-
+  Buddhist sculptor of the early Kamakura period and the head of the [[movement/kei-school]]; in Japan no Buddhist sculptor is better known[[source/tnm-unkei-exhibition-2017|“In Japan, no Buddhist sculptor is better known than Unkei. With his extraordinary artistic talent, he led a new era in sculptural expression, creating realistic works that appear before the viewer as though they were alive”]]. His realism renewed the graceful style of Jōchō that had prevailed in the Heian period[[source/kobayashi-1954-unkei|“We call it "Kamakura shin-yo", or "the Kamakura new style", in that it is a renovation of the so-called "wayo", or the "Japanized style", created by the famous sculptor Jocho”]][[source/tnm-unkei-exhibition-2017|“This style differed substantially from the smoother and more gentle style that had been perfected by the great sculptor Jocho”]].
+
+  He trained under his father [[artist/kokei]] and worked with him[[source/tnm-unkei-exhibition-2017|“As a youth, he honed his skill under the tutelage of his father Kokei, with whom he produced several collaborative works”]]. His earliest extant work is the Dainichi Nyorai of Enjōji in Nara[[source/tnm-unkei-exhibition-2017|“his son and pupil Unkei produced his earliest extant work, Dainichi Nyorai (No. 4) for Enjoji temple in Nara”]], dated 1175 by its inscription and signed by him[[source/kobayashi-1954-unkei|“dated 1175, which was made under the direction of his father” · “it took 326 days for its completion” · “Also it bears his ornamental signature”]]; Kobayashi still counted a Thousand-armed Kannon of 1164 at Rengeō-in in Kyoto as his first[[source/kobayashi-1954-unkei|“his earliest authentic work, a statue of Senju-kannon, Sahasrabhuja, in Rengeo-in Temple, … which bears the inscription of 1164 … is thought to be his work at the age of 15-6”]].
+
+  In 1186 he carved five figures for Ganjōjuin in Izu for the warrior Hōjō Tokimasa, his style already mature; works for the warriors of the Kamakura shogunate make up much of his œuvre[[source/tnm-unkei-exhibition-2017|“Unkei’s original style can be observed for the first time in a set of five sculptures he carved for Ganjojuin temple in Shizuoka in 1186 (Bunji 2) at the order of the warrior Hojo Tokimasa” · “Buddhist images produced at the behest of members of the warrior class associated with the Kamakura Shogunate make up a significant portion of Unkei’s body of work”]]. Nara remained the centre of his work: the principal icon of Kōfukuji's rebuilt Western Golden Hall (around 1186; its head survives), the two colossal guardians (Kongō Rikishi) of the South Gate of Tōdaiji in 1203, and the Mujaku and Seshin of Kōfukuji's Northern Round Hall in 1212 — the rebuilding of the temples destroyed in the Genpei War[[source/tnm-unkei-exhibition-2017|“Around the year 1186 (Bunji 2), he carved the principal icon (Buddha Head, No. 6) of the newly rebuilt Western Golden Hall of Kohfukuji temple; in 1203 (Kennin 3) he fashioned a pair of enormous Vajra Warriors for Todaiji temple; and in 1212 (Kenryaku 2), he completed standing images of Mujaku Bosatsu and Seshin Bosatsu” · “in the wake of their destruction by the Taira forces during the Genpei Wars”]]. The Tōdaiji guardians, made in 72 days with [[artist/kaikei]] and sixteen assistants, are his best-known work[[source/kobayashi-1954-unkei|“The last and the most famous of his works in Todai-ji Temple began on July 24, 1203, and was finished on Oct. 3 of the same year. It was the erection of the statues of Giant Devas, flanking the South Gate, which Unkei made in collaboration with Kaikei and 16 artisans”]]. Aristocrats commissioned him as well — the Eight Youths attending Fudō Myōō at Kongōbuji on Mount Kōya[[source/tnm-unkei-exhibition-2017|“Unkei also received commissions from various aristocratic families. His rendition of the Eight Youths Attending Fudo Myo’o (No. 18) for Kongobuji temple in Wakayama”]].
+
+  He rose to the highest ranks open to a Buddhist sculptor: *hōgen* in 1195, at the dedication of Tōdaiji, and *hōin*, probably in 1203[[source/kobayashi-1954-unkei|“his promotion to the 2nd rank, Hogen, was took place on March 12, 1195, on the occasion of the dedication ceremony of Todai-ji Temple” · “Later, he was promoted to the highest rank of the Monks Admitation, Hoin, at the unknown date between 1202-1208, probably in 1203”]]. All six of his sons became sculptors — Tankei, Kōun, Kōben, Kōshō, Unga and Unjo[[source/kobayashi-1954-unkei|“all the six of his sons worked in collaboration in the construction: Tankei, Koun, Koben, Kosho, Unga, Unjo”]]; works survive by [[artist/tankei]], [[artist/koben]] and [[artist/kosho]], and Tankei led the Kei school after him[[source/tnm-unkei-exhibition-2017|“Unkei had six sons, all of whom became Buddhist sculptors. Sculptures by Tankei, Koben, and Kosho survive to this day.” · “As Unkei’s successor, Tankei headed the Kei school of Buddhist sculpture until the middle of the 13th century”]].
+
+  The year of his birth is not recorded; Kobayashi reckoned 1148 or 1149 from his early works and the birth of Tankei in 1173. He died on 21 December 1223[[source/kobayashi-1954-unkei|“we totally lack materials on the date of his birth” · “So the date of his birth must be 1148-9” · “"Unkei died on Dec. 21, 2nd year of Joo," ‐1223. We consider that date to be acurate”]].
+wikidata_id: Q2006048
+metadata:
+  sources: [Wikidata Q2006048 (retrieved 2026-10-28)]
+relationships:
+  - type: born_in
+    to: place/kansai-region
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q2006048
+  - type: died_in
+    to: place/kansai-region
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q2006048
+  - type: student_of
+    to: artist/kokei
+    sources:
+      - note: “As a youth, he honed his skill under the tutelage of his father Kokei, with whom he produced several collaborative works.”
+        source: tnm-unkei-exhibition-2017
+        accessed: 2026-10-28
+  - type: collaborated_with
+    to: artist/kaikei
+    sources:
+      - note: “which Unkei made in collaboration with Kaikei and 16 artisans” (the guardians of Tōdaiji’s South Gate, 1203)
+        source: kobayashi-1954-unkei
+        accessed: 2026-10-28
+  - type: associated_with
+    to: movement/kei-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q2006048
+  - type: child_of
+    to: artist/kokei
+    sources:
+      - note: “As a youth, he honed his skill under the tutelage of his father Kokei, with whom he produced several collaborative works.”
+        source: tnm-unkei-exhibition-2017
+        accessed: 2026-10-28
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Unkei_Rokuharamitsuji.jpg/1280px-Unkei_Rokuharamitsuji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Unkei_Rokuharamitsuji.jpg
+    license: Public domain
+    credit: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)
+identifiers:
+  lc: n81047530
+  viaf: "256604335"
+sources:
+  birth:
+    - note: “we totally lack materials on the date of his birth” · “So the date of his birth must be 1148-9”
+      source: kobayashi-1954-unkei
+      accessed: 2026-10-28
+  death:
+    - url: https://www.nabunken.go.jp/english/monograph/1.html
+      source: nabunken-go-jp
+      accessed: 2026-10-28
+    - note: “"Unkei died on Dec. 21, 2nd year of Joo," ‐1223. We consider that date to be acurate”
+      source: kobayashi-1954-unkei
+      accessed: 2026-10-28

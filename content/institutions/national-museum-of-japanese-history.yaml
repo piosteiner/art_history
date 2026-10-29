@@ -1,0 +1,56 @@
+public_id: 102670
+name: National Museum of Japanese History
+names:
+  - Kokuritsu Rekishi Minzoku Hakubutsukan
+  - Rekihaku
+  - lang: de
+    role: translation
+    text: Nationalmuseum der japanischen Geschichte
+  - lang: ja
+    role: translation
+    text: 国立歴史民俗博物館
+kind: museum
+founded: 1981-04-14
+place: sakura
+location: [140.21908, 35.7245]
+address: 千葉県佐倉市城内町117
+website_url: https://www.rekihaku.ac.jp/
+wikidata_id: Q3330690
+metadata:
+  sources: [Wikidata Q3330690 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/National_Museum_of_Japanese_History_06.jpg/1280px-National_Museum_of_Japanese_History_06.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:National_Museum_of_Japanese_History_06.jpg
+    license: CC0
+    credit: Higa4
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/National_Museum_of_Japanese_History_2008.jpg/1280px-National_Museum_of_Japanese_History_2008.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:National_Museum_of_Japanese_History_2008.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  bnf: 15509898n
+  gnd: 67836-3
+  idref: "054375932"
+  lc: n83228950
+  ulan: "500308442"
+  viaf: "137249525"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q3330690
+    - url: https://d-nb.info/gnd/67836-3
+      source: gnd
+      accessed: 2026-10-28
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q3330690
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q3330690
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3330690

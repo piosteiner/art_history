@@ -15,11 +15,17 @@ images:
     license: CC BY 2.0
     credit: hibino
 identifiers:
+  bnf: 11877649t
   gnd: 1007559-8
+  idref: "026549867"
   lc: n79021281
   ulan: "500303609"
   viaf: "128460224"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q188740
   place:
     - accessed: 2026-10-09
       property: P131

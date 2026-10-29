@@ -1,0 +1,11 @@
+public_id: 102966
+name: Spanish Renaissance
+kind: movement
+wikidata_id: Q430167
+metadata:
+  sources: [Wikidata Q430167 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q430167

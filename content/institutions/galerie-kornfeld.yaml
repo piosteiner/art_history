@@ -11,6 +11,7 @@ names:
   - lang: de
     role: translation
     text: Galerie Kornfeld Auktionen
+kind: gallery
 founded: 1864-10-01
 place: bern
 location: [7.43155, 46.94744]

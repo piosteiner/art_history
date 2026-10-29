@@ -1,0 +1,16 @@
+public_id: 102919
+name: Gardanne
+kind: settlement
+location: [5.47611, 43.45444]
+wikidata_id: Q318085
+metadata:
+  sources: [Wikidata Q318085 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q318085
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q318085

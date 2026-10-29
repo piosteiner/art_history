@@ -1,0 +1,11 @@
+public_id: 103223
+name: naïve art
+kind: movement
+wikidata_id: Q281108
+metadata:
+  sources: [Wikidata Q281108 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q281108

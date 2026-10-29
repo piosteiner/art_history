@@ -1,0 +1,78 @@
+public_id: 102820
+title_lang: en
+title: Scene from the Noh Play "Yoroboshi"
+names:
+  - lang: ja
+    role: original
+    text: "{弱法師|よろぼし}"
+  - lang: ja-Latn
+    role: romanization
+    text: Yoroboshi
+creator: shimomura-kanzan
+created: 1915
+kind: byōbu
+medium: Color and gold leaf on silk
+materials: [gold leaf, gold, silk]
+dimensions: [186.4, 406]
+dimensions_note: "each screen (the museum: 法量 186.4×406)"
+institution: tokyo-national-museum
+inventory_number: A-10508
+web_url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+description_md: "A pair of six-fold screens[[source/tnm-a-10508-yoroboshi|„6曲1双“]], shown at the second exhibition of the revived Japan Art Institute (Inten) in 1915[[source/tnm-a-10508-yoroboshi|„再興第２回院展の出品作“]]. The museum records the screens as one object, „6曲1双“ — six folds (曲), one pair (双) —, so it holds both; its own page shows a photograph of the right screen only, ColBase, the national museums’ image database, has both[[source/colbase-tnm-a-10508]]; a single screen would be counted with 隻, as „6曲1隻“[[source/wikipedia-ja-byobu|„これを接続したものが屏風の一単位、一隻（一畳、一帖）である“ · „14世紀前半には二隻（一双）を単位とする、六曲一双形式が定型となった“]]. A scene from the Noh play *[[yoroboshi|Yoroboshi]]*: in the garden of Shitennō-ji, where the plum trees are in bloom, the blind youth Shuntokumaru, disowned by his father, begs and prays towards the setting sun of the equinox[[source/tnm-a-10508-yoroboshi|„盲目の弱法師俊徳丸が、梅の花の咲く四天王寺の庭で、彼岸の落日に向かって拝む謡曲『弱法師』の一場面。“ · English page: “In a garden with blooming plum trees at Shitennoji Temple, a blind youth, disowned by his father, begs and offers a prayer facing the setting sun”]]. He stands on the right screen beneath an old plum tree; the left screen holds only the red sun and a branch of plum on the gold ground. Kanzan took the tree from the Garyūbai, the “reclining-dragon plum” in the Sankeien garden in Yokohama[[source/tnm-a-10508-yoroboshi|„観山は三渓園内の臥龍梅の木に着想を得てこの絵を描いた“]]; the face, like a Noh mask, gives the screens the mood of the Noh stage[[source/tnm-a-10508-yoroboshi|„能面を思わせる面貌とともに能楽的情緒を漂わせている“]]. Important Cultural Property[[source/tnm-a-10508-yoroboshi|„重要文化財“]]."
+relationships:
+  - type: associated_with
+    to: movement/nihonga
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Shimomura_Bettelm%C3%B6nch.jpg/1280px-Shimomura_Bettelm%C3%B6nch.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shimomura_Bettelm%C3%B6nch.jpg
+    license: Public domain
+    credit: Shimomura Kanzan
+    caption: "The pair: left screen (the setting sun) and right screen (Shuntokumaru beneath the plum tree)"
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Yoroboshi_by_Shimomura_Kazan.jpg/1280px-Yoroboshi_by_Shimomura_Kazan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yoroboshi_by_Shimomura_Kazan.jpg
+    license: Public domain
+    credit: Shimomura Kanzan
+    caption: "Right screen: Shuntokumaru beneath the plum tree"
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Yoroboshi_by_Shimomura_Kanzan_%28Tokyo_National_Museum%29.jpg/1280px-Yoroboshi_by_Shimomura_Kanzan_%28Tokyo_National_Museum%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yoroboshi_by_Shimomura_Kanzan_(Tokyo_National_Museum).jpg
+    license: Public domain
+    credit: Shimomura Kanzan
+    caption: "Left screen: the setting sun and a branch of plum"
+sources:
+  kind:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      source: tnm-jp
+      accessed: 2026-10-28
+  names:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      source: tnm-jp
+      accessed: 2026-10-28
+  medium:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      source: tnm-jp
+      accessed: 2026-10-28
+  created:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      source: tnm-jp
+      accessed: 2026-10-28
+  creator:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      source: tnm-jp
+      accessed: 2026-10-28
+  materials:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      source: tnm-jp
+      accessed: 2026-10-28
+  dimensions:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      note: 法量 „186.4×406“ — one screen of the pair („6曲1双“)
+      source: tnm-jp
+      accessed: 2026-10-28
+  institution:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      source: tnm-jp
+      accessed: 2026-10-28
+  inventory_number:
+    - url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A10508&lang=ja
+      source: tnm-jp
+      accessed: 2026-10-28

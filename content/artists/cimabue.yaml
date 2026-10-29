@@ -1,0 +1,59 @@
+public_id: 103044
+name: Cimabue
+names:
+  - lang: it
+    role: original
+    text: Giovanni Cenni di Pepo
+birth: c. 1240
+death: 1302
+wikidata_id: Q15790
+metadata:
+  sources: [Wikidata Q15790 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-florence
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q15790
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q15790
+  - type: died_in
+    to: place/pisa
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q15790
+  - type: associated_with
+    to: movement/trecento
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q15790
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Giovanni_Cimabue.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Cimabue.jpg
+    license: Public domain
+    credit: Giorgio Vasari
+identifiers:
+  bnf: 12044428q
+  gnd: "119138883"
+  idref: "028653289"
+  lc: n80081439
+  nlk: KAC202337637
+  rkd: "16876"
+  ulan: "500016284"
+  viaf: "1789151778206418130002"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q15790
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q15790

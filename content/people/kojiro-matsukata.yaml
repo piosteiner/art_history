@@ -1,5 +1,7 @@
 public_id: 101897
 name: Kōjirō Matsukata
+given_name: Kōjirō
+family_name: Matsukata
 names:
   - lang: ja
     role: original
@@ -24,6 +26,13 @@ death: 1950-06-24
 wikidata_id: Q714260
 metadata:
   sources: [Wikidata Q714260 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: institution/national-museum-of-western-art
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q1362629
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/c8/Kojiro_Matsukata.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kojiro_Matsukata.jpg

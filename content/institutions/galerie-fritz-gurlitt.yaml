@@ -1,2 +1,16 @@
 public_id: 100421
 name: Galerie Fritz Gurlitt
+kind: gallery
+founded: 1880
+place: berlin
+sources:
+  place:
+    - url: https://www.bruecke-museum.de/en/sammlung/bruecke-in-berlin/2521/kunstsalon-fritz-gurlitt
+      note: founded 1880; Potsdamer Straße 113 from 1905
+      source: bruecke-museum-de
+      accessed: 2026-10-28
+  founded:
+    - url: https://www.bruecke-museum.de/en/sammlung/bruecke-in-berlin/2521/kunstsalon-fritz-gurlitt
+      note: founded 1880; Potsdamer Straße 113 from 1905
+      source: bruecke-museum-de
+      accessed: 2026-10-28

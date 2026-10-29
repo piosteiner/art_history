@@ -7,6 +7,62 @@ death: 1475-05-15
 wikidata_id: Q313561
 metadata:
   sources: [Wikidata Q313561 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/duchy-of-burgundy
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q313561
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q313561
+  - type: died_in
+    to: place/leuven
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q313561
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q313561
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q313561
+  - type: worked_in
+    to: place/leuven
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q313561
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q313561
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Portret_van_de_schilder_Dieric_Bouts_Portretten_van_schilders_%28serietitel%29_Pictorum_Aliquot_Celebrium_Praecipuae_Germaniae_Inferioris_Effigies_%28serietitel%29%2C_RP-P-OB-67.052.jpg/1280px-thumbnail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_van_de_schilder_Dieric_Bouts_Portretten_van_schilders_(serietitel)_Pictorum_Aliquot_Celebrium_Praecipuae_Germaniae_Inferioris_Effigies_(serietitel),_RP-P-OB-67.052.jpg
+    license: CC0
+identifiers:
+  bnf: 14970415v
+  gnd: "118659588"
+  idref: "030654726"
+  kulturnav: 7c29b9d0-96ca-4ab1-91ee-3f85e6d6341c
+  lc: n91066787
+  rkd: "11604"
+  ulan: "500024814"
+  viaf: "17270527"
 sources:
   birth:
     - accessed: 2026-10-20

@@ -1,11 +1,37 @@
 public_id: 100061
 name: Mitsui Memorial Museum
+kind: museum
 founded: 2005-10-08
+place: tokyo
+location: [139.77314, 35.6863]
+website_url: http://www.mitsui-museum.jp/english/english.html
 wikidata_id: Q864700
 metadata:
   sources: [Wikidata Q864700 (retrieved 2026-10-05)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Mitsui_Main_Building_2009.jpg/1280px-Mitsui_Main_Building_2009.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mitsui_Main_Building_2009.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  gnd: 16019561-5
+  idref: "137840934"
+  lc: nr2006008411
+  viaf: "127143401"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q864700
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q864700
   founded:
     - accessed: 2026-10-05
       property: P571
+      wikidata: Q864700
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q864700

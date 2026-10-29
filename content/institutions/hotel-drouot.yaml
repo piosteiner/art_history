@@ -1,2 +1,39 @@
 public_id: 100300
 name: Hôtel Drouot
+kind: auction house
+founded: 1852
+place: paris
+location: [2.34056, 48.87278]
+address: 9, rue Drouot 75009 Paris
+website_url: https://drouot.com/
+wikidata_id: Q3145483
+metadata:
+  sources: [Wikidata Q3145483 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/H%C3%B4tel_Drouot.jpg/1280px-H%C3%B4tel_Drouot.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:H%C3%B4tel_Drouot.jpg
+    license: CC BY-SA 4.0
+    credit: Arthur Weidmann
+identifiers:
+  gnd: 3005837-5
+  idref: "188789324"
+  lc: no97069936
+  ulan: "500452142"
+  viaf: "264214285"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q3145483
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q3145483
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q3145483
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3145483

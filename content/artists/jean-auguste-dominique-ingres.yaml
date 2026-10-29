@@ -110,6 +110,12 @@ relationships:
       - accessed: 2026-10-18
         property: P737
         wikidata: Q23380
+  - type: student_of
+    to: artist/jacques-louis-david
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q83155
   - type: studied_at
     to: institution/beaux-arts-de-paris
     period: October 1799–1801

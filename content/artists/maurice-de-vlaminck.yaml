@@ -2,13 +2,79 @@ public_id: 100746
 name: Maurice de Vlaminck
 given_name: Maurice
 family_name: de Vlaminck
+names:
+  - lang: fr
+    role: original
+    text: Maurice Edmond Devlaminck
 birth: 1876-04-04
 death: 1958-10-11
 wikidata_id: Q241098
 metadata:
   sources: [Wikidata Q241098 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q241098
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q241098
+  - type: died_in
+    to: place/rueil-la-gadeliere
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q241098
+  - type: lived_in
+    to: place/rueil-la-gadeliere
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q241098
+  - type: influenced_by
+    to: artist/paul-cezanne
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q241098
+  - type: influenced_by
+    to: artist/vincent-van-gogh
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q241098
+  - type: associated_with
+    to: movement/cubism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q241098
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q241098
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/Maurice_de_Vlaminck_en_1942.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maurice_de_Vlaminck_en_1942.jpg
+    license: Public domain
+    credit: AnonymousUnknown author
 identifiers:
+  bnf: "121031834"
   dome: "88"
+  gnd: "118768808"
+  idref: "029395267"
+  kulturnav: c7e47f15-58b7-420c-a16d-d7d0e8ff3e5f
+  lc: n50014478
+  rkd: "81419"
+  ulan: "500008582"
+  viaf: "76346120"
 sources:
   birth:
     - accessed: 2026-10-18

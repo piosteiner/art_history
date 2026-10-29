@@ -1,4 +1,20 @@
 public_id: 101061
 name: Leonard Koetser Gallery
+kind: gallery
+place: london
+wikidata_id: Q55739714
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q55739714 (retrieved 2026-10-28)]
+identifiers:
+  lc: n85355689
+  ulan: "500301846"
+  viaf: "160314969"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q55739714
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q55739714

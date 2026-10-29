@@ -1,0 +1,34 @@
+public_id: 102801
+name: Tokyo Academy of Fine Arts
+kind: art academy
+founded: 1887-10
+dissolved: 1952-03-31
+place: tokyo
+wikidata_id: Q3577924
+metadata:
+  sources: [Wikidata Q3577924 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Tokyo_school_of_fine_arts_1913.jpg/1280px-Tokyo_school_of_fine_arts_1913.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tokyo_school_of_fine_arts_1913.jpg
+    license: Public domain
+    credit: 東京美術学校
+identifiers:
+  lc: n85286747
+  viaf: "156012307"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3577924
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q3577924
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q3577924
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q3577924

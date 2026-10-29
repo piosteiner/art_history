@@ -1,4 +1,12 @@
 public_id: 101070
 name: Holenia Trust
+kind: trust
+place: vaduz
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/multimedia/8/1488-en.pdf
+      note: Holenia Trust, Vaduz — gift to the Kunsthaus 1992 in memory of Joseph H. Hirshhorn
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-28

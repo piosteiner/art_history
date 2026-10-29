@@ -1,0 +1,16 @@
+public_id: 103056
+name: Nara
+kind: settlement
+location: [135.80478, 34.685]
+wikidata_id: Q169134
+metadata:
+  sources: [Wikidata Q169134 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q169134
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q169134

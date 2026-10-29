@@ -1,0 +1,16 @@
+public_id: 102932
+name: Possagno
+kind: settlement
+location: [11.88333, 45.85]
+wikidata_id: Q29369
+metadata:
+  sources: [Wikidata Q29369 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q29369
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q29369

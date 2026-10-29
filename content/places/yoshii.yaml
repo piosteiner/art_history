@@ -1,0 +1,16 @@
+public_id: 102762
+name: Yoshii
+kind: site
+location: [138.98894, 36.25417]
+wikidata_id: Q994765
+metadata:
+  sources: [Wikidata Q994765 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q994765
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q994765

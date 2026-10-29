@@ -1,0 +1,65 @@
+public_id: 102799
+name: Hashimoto Gahō
+given_name: Gahō
+family_name: Hashimoto
+names:
+  - lang: ja
+    role: original
+    text: 橋本雅邦
+  - Togansai
+birth: 1835-08-21
+death: 1908-01-13
+wikidata_id: Q3128092
+metadata:
+  sources: [Wikidata Q3128092 (retrieved 2026-10-28)]
+relationships:
+  - type: born_in
+    to: place/edo
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q3128092
+  - type: died_in
+    to: place/tokyo-prefecture
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q3128092
+  - type: member_of
+    to: institution/kangakai
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q3128092
+  - type: associated_with
+    to: movement/kano-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q3128092
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q3128092
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0c/Hashimoto_Gah%C5%8D.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hashimoto_Gah%C5%8D.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: 105979778X
+  idref: "225749459"
+  lc: nr2002017040
+  ulan: "500121214"
+  viaf: "96575524"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q3128092
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q3128092

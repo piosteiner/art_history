@@ -1,4 +1,28 @@
 public_id: 101033
 name: Schweizerische Volksbank
+kind: bank
+founded: 1869
+dissolved: 1993
+place: bern
+wikidata_id: Q2883432
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q2883432 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 1013050-0
+  hls: "041976"
+  idref: "260766836"
+  lc: n85111123
+  viaf: "142467245"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q2883432
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q2883432
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q2883432

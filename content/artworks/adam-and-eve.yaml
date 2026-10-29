@@ -27,7 +27,7 @@ dimensions: [173, 60]
 institution: belvedere-wien
 inventory_number: "4402"
 web_url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
-description_md: Das Gemälde ist nicht fertiggestellt, sehr gut sichtbar an der linken Seite wo die rechten Hände der Personen zu sehen sein sollten. ([Belvedere](https://sammlung.belvedere.at/objects/3196/adam-und-eva))
+description_md: Das Gemälde ist nicht fertiggestellt, sehr gut sichtbar an der linken Seite wo die rechten Hände der Personen zu sehen sein sollten.[[source/belvedere-klimt-adam-und-eva-3196]]
 wikidata_id: Q28002799
 metadata:
   sources: [Wikidata Q28002799 (retrieved 2026-10-20)]
@@ -72,7 +72,7 @@ provenance:
         source: belvedere-sammlung-online
         accessed: 2026-08-05
   - owner: institution/belvedere-wien
-    acquired: 31 August 1950
+    acquired: 1950-08-31
     method: purchase
     direct: true
     place: vienna

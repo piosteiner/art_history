@@ -1,0 +1,55 @@
+public_id: 102673
+title: Maiko
+title_status: common
+names:
+  - lang: ja
+    role: original
+    text: "{舞|まい}{妓|こ}"
+creator: kuroda-seiki
+created: 1893
+materials: [oil paint, canvas]
+dimensions: [80.4, 65.3]
+institution: tokyo-national-museum
+inventory_number: A-11258
+web_url: https://www.tnm.jp/modules/r_collection/index.php?controller=dtl&colid=A11258
+wikidata_id: Q20643510
+metadata:
+  sources: [Wikidata Q20643510 (retrieved 2026-10-28)]
+relationships:
+  - type: created_in
+    to: place/gion
+    sources:
+      - accessed: 2026-10-28
+        property: P1071
+        wikidata: Q20643510
+  - type: associated_with
+    to: movement/youga
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Kuroda_Maiko.jpg/1280px-Kuroda_Maiko.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kuroda_Maiko.jpg
+    license: Public domain
+    credit: Kuroda Seiki
+sources:
+  created:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q20643510
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q20643510
+  dimensions:
+    - accessed: 2026-10-28
+      property: P2048
+      wikidata: Q20643510
+  institution:
+    - accessed: 2026-10-28
+      property: P195
+      wikidata: Q20643510
+  title_status:
+    - accessed: 2026-10-28
+      wikidata: Q20643510
+  inventory_number:
+    - accessed: 2026-10-28
+      property: P217
+      wikidata: Q20643510

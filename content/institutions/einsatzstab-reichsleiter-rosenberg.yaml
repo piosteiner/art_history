@@ -1,2 +1,20 @@
 public_id: 100309
 name: Einsatzstab Reichsleiter Rosenberg
+founded: 1940
+dissolved: 1945
+wikidata_id: Q673751
+metadata:
+  sources: [Wikidata Q673751 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 10169759-4
+  lc: n95112083
+  viaf: "125650158"
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q673751
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q673751

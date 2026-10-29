@@ -1,0 +1,16 @@
+public_id: 103053
+name: Tokyo Prefecture
+kind: site
+location: [139.77, 35.68]
+wikidata_id: Q1189121
+metadata:
+  sources: [Wikidata Q1189121 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1189121
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1189121

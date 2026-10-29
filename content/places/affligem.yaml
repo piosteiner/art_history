@@ -1,0 +1,16 @@
+public_id: 103238
+name: Affligem
+kind: site
+location: [4.1176, 50.9033]
+wikidata_id: Q382860
+metadata:
+  sources: [Wikidata Q382860 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q382860
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q382860

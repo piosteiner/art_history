@@ -7,6 +7,51 @@ death: 1482
 wikidata_id: Q215251
 metadata:
   sources: [Wikidata Q215251 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/burgundian-netherlands
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q215251
+  - type: born_in
+    to: place/ghent
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q215251
+  - type: died_in
+    to: place/red-cloister
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q215251
+  - type: worked_in
+    to: place/ghent
+    period: 1467/1482
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q215251
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q215251
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c5/Wauters-Goes.jpg/1280px-Wauters-Goes.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wauters-Goes.jpg
+    license: Public domain
+    credit: Emile Wauters
+identifiers:
+  bnf: "133203141"
+  gnd: "118695908"
+  idref: "034653961"
+  lc: n83227123
+  rkd: "32366"
+  ulan: "500007457"
+  viaf: "22285865"
 sources:
   birth:
     - accessed: 2026-10-20

@@ -1,6 +1,7 @@
 public_id: 100150
 name: Hirshhorn Museum and Sculpture Garden
 names: [HMSG, Hirshhorn Museum]
+kind: museum
 founded: 1974
 place: washington-d-c
 location: [-77.02297, 38.88816]
@@ -15,10 +16,16 @@ images:
     license: Public domain
     credit: Gryffindor
 identifiers:
+  bnf: 12210429t
   gnd: 807186-X
+  idref: "033667756"
   lc: n78083445
   viaf: "134801272"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1620553
   place:
     - accessed: 2026-10-09
       property: P131

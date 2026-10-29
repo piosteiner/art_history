@@ -1,3 +1,17 @@
 public_id: 101406
 name: gouache paint
+names:
+  - lang: en
+    role: alternative
+    text: bodycolour
+  - lang: en
+    role: alternative
+    text: body color
+  - lang: de
+    role: translation
+    text: Deckfarbe
+  - lang: de
+    role: translation
+    text: Gouache
 category: material
+parent: paint

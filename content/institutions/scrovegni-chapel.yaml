@@ -1,11 +1,42 @@
 public_id: 102140
 name: Scrovegni Chapel
+kind: chapel
 founded: 1305
+place: padua
+location: [11.87954, 45.41182]
+address: Piazza Eremitani 8, 35121 Padova
+website_url: http://www.cappelladegliscrovegni.it
 wikidata_id: Q963954
 metadata:
   sources: [Wikidata Q963954 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/La_Cappella_degli_Scrovegni.JPG/1280px-La_Cappella_degli_Scrovegni.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:La_Cappella_degli_Scrovegni.JPG
+    license: CC BY-SA 3.0
+    credit: Andrea Piroddi
+identifiers:
+  gnd: 4075797-3
+  idref: "250212145"
+  lc: n87840423
+  viaf: "124429791"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q963954
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q963954
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q963954
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q963954
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q963954

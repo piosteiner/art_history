@@ -1,0 +1,38 @@
+public_id: 103059
+name: Enjō-ji Temple
+names:
+  - Enjō-ji
+  - lang: ja
+    role: translation
+    text: 円成寺
+  - lang: zh
+    role: translation
+    text: 圓成寺
+kind: temple
+place: nara
+location: [135.91528, 34.69583]
+address: 奈良県奈良市忍辱山町1273
+website_url: http://www.enjyouji.jp/
+wikidata_id: Q1088493
+metadata:
+  sources: [Wikidata Q1088493 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Enjoji_Nara14sb3200.jpg/1280px-Enjoji_Nara14sb3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Enjoji_Nara14sb3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "260256765"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1088493
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1088493
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1088493

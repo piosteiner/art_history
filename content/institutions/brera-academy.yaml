@@ -1,0 +1,40 @@
+public_id: 103262
+name: Brera Academy
+names: [Academy of Brera, Accademia di Belle Arti di Brera]
+kind: art academy
+founded: 1776
+place: milan
+location: [9.18889, 45.47222]
+address: Via Fiori Oscuri, 7, 20121, Milano
+website_url: http://www.accademiadibrera.milano.it/
+wikidata_id: Q338472
+metadata:
+  sources: [Wikidata Q338472 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/Pinacoteca_di_Brera_3_stitched.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pinacoteca_di_Brera_3_stitched.jpg
+    license: CC BY-SA 3.0
+    credit: Gryffindor
+identifiers:
+  bnf: 12325737v
+  gnd: 10058672-7
+  idref: "032175787"
+  lc: n79043275
+  viaf: "148353750"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q338472
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q338472
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q338472
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q338472

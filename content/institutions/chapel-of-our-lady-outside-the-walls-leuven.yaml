@@ -1,2 +1,57 @@
 public_id: 101261
+name_lang: en
 name: Chapel of Our Lady Outside the Walls, Leuven
+names:
+  - lang: nl
+    role: alternative
+    text: Kapel van Onze-Lieve-Vrouw-ginder-buiten
+  - lang: nl
+    role: alternative
+    text: Onze-Lieve-Vrouw-daer-buiten
+  - lang: nl
+    role: alternative
+    text: Onze-Lieve-Vrouw-in-de-Hollestraat
+  - lang: fr
+    role: alternative
+    text: Notre-Dame-hors-les-Murs
+  - lang: es
+    role: translation
+    text: Capilla de Nuestra Señora Extramuros de Lovaina
+kind: chapel
+founded: 1364
+dissolved: 1798
+place: leuven
+location: [4.713889, 50.873611]
+address: Tiensestraat (formerly Hollestraat), before the Tiensepoort, Leuven
+description_md: |-
+  Die Kapelle Onze-Lieve-Vrouw-ginder-buiten («Unsere Liebe Frau dort draußen») war die Kapelle der Großen Armbrustschützengilde von [[place/leuven|Löwen]]. Die Gilde gründete sie 1364 außerhalb der ersten Stadtmauer, an der Hollestraat, der heutigen Tiensestraat, kurz vor der Tiensepoort, einem Tor der zweiten Mauer.[[source/wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten]] Edward Van Even datiert den Bau auf 1373.[[source/van-even-1860-louvain-monumental|Tab. 61]] Jeder Schütze schwor der Gilde lebenslange Treue und vermachte der Kapelle nach seinem Tod Rüstung und Armbrust. Als Adlige der Stände von Brabant hier eine Ritterbruderschaft Unserer Lieben Frau der Schmerzen gründeten, wurde die Kapelle reich.[[source/wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten]]
+
+  ## Die Kreuzabnahme
+
+  Für den Hochaltar malte [[artist/rogier-van-der-weyden|Rogier van der Weyden]] vor 1443 [[artwork/the-descent-from-the-cross|die Kreuzabnahme]]. Zwei kleine Armbrüste im Maßwerk der oberen Ecken verweisen auf die Auftraggeber.[[source/prado-el-descendimiento|„La ocupación de los fundadores queda indicada por las dos pequeñas ballestas que cuelgan en la tracería de las dos esquinas mayores de la tabla.“]] Die älteste datierte Kopie, das Edelheere-Triptychon von 1443 in der Löwener Sint-Pieterskerk, zeigt, dass das Bild damals fertig war.[[source/prado-el-descendimiento]]
+
+  Um 1548 wollte der Kronprinz und spätere [[person/philip-ii-of-spain|Philipp II.]] das Bild. Die Gilde wehrte sich, gab es auf Vermittlung seiner Tante [[person/mary-of-hungary|Maria von Ungarn]] aber her[[source/wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten]] und erhielt dafür eine Kopie von Michiel Coxcie und eine neue Orgel;[[source/wikipedia-en-descent-from-the-cross-van-der-weyden]] die niederländische Wikipedia nennt zudem 500 Gulden.[[source/wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten]] 1549 hing das Original in der Kapelle von Marias Palast in Binche, später kam es nach Spanien.[[source/prado-el-descendimiento|„Comprado a la capilla lovaniense por María de Hungría, en 1549 colgaba en la capilla de su palacio en Binche.“]]
+
+  ## Der Georgsaltar
+
+  1493 schuf Jan II Borman für die Kapelle der Gilde einen geschnitzten Altar mit dem Martyrium des heiligen Georg, fünf Meter breit und 1,60 Meter hoch, signiert und datiert. Es ist das einzige signierte Werk Bormans, zu dem eine Abschrift des Auftrags erhalten ist. Seit 1848 gehört der Altar dem Art & History Museum in Brüssel.[[source/art-and-history-museum-saint-george-altarpiece]]
+
+  ## Abbruch
+
+  1798 hob die französische Verwaltung die Kapelle auf, verkaufte ihre Schätze und ließ sie abbrechen.[[source/wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten]][[source/prado-el-descendimiento|„vendida en 1798 y demolida poco después“]] An ihrer Stelle entstanden Wohnhäuser.[[source/wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten]]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/EVEN%281860%29_p374_Tab._61.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:EVEN(1860)_p374_Tab._61.jpg
+    license: Public domain
+    credit: Edward Van Even, Louvain monumental (1860), Tab. 61 — British Library
+    caption: Die Kapelle, gebaut 1373, abgebrochen 1798 (Van Even, Louvain monumental, 1860)
+sources:
+  kind:
+    - source: prado-el-descendimiento
+  founded:
+    - source: wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten
+  location:
+    - source: wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten
+  dissolved:
+    - source: wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten
+    - source: prado-el-descendimiento

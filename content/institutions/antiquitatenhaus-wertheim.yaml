@@ -1,6 +1,7 @@
 public_id: 101032
 name: Antiquitätenhaus Wertheim
-kind: antiquirary
+kind: antiques dealer
+founded: 1921
 place: berlin
 location: [13.37563, 52.50999]
 address: Berlin W9, Bellevuestrasse 7
@@ -15,6 +16,11 @@ sources:
     - url: https://digi.ub.uni-heidelberg.de/diglit/wertheim1930_10_01
       source: digi-ub-uni-heidelberg-de
       accessed: 2026-10-19
+  founded:
+    - url: https://sammlung-online.berlinischegalerie.de/en/collection/item/232324/
+      note: "„Bestand: 1921–1934“; opened 1921 as „A. Wertheim Antiquitätenhaus“, Bellevuestrasse 7–8"
+      source: sammlung-online-berlinischegalerie-de
+      accessed: 2026-10-28
   location:
     - url: https://digi.ub.uni-heidelberg.de/diglit/wertheim1930_10_01
       source: digi-ub-uni-heidelberg-de

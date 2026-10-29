@@ -1,0 +1,16 @@
+public_id: 103273
+name: Israel
+period: 1948-05-14/
+country_codes: [IL]
+wikidata_id: Q801
+metadata:
+  sources: [Wikidata Q801 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q801
+  country_codes:
+    - accessed: 2026-10-28
+      property: P297
+      wikidata: Q801

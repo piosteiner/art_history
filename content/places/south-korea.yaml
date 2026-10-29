@@ -1,0 +1,16 @@
+public_id: 103152
+name: South Korea
+kind: country
+location: [128, 36]
+wikidata_id: Q884
+metadata:
+  sources: [Wikidata Q884 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q884
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q884

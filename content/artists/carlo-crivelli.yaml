@@ -2,11 +2,45 @@ public_id: 102112
 name: Carlo Crivelli
 given_name: Carlo
 family_name: Crivelli
+names: [Carlo Giovanni Crivelli]
 birth: 1430/1435
 death: 1494-08-16/1495-09-16
 wikidata_id: Q348024
 metadata:
   sources: [Wikidata Q348024 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q348024
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q348024
+  - type: died_in
+    to: place/ascoli-piceno
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q348024
+  - type: associated_with
+    to: movement/gothic
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q348024
+identifiers:
+  bnf: 12269503m
+  gnd: "118872176"
+  idref: "031489834"
+  lc: n87894087
+  rkd: "19157"
+  ulan: "500005092"
+  viaf: "2743313"
 sources:
   birth:
     - accessed: 2026-10-20

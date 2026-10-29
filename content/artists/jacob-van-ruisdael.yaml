@@ -2,11 +2,64 @@ public_id: 101665
 name: Jacob van Ruisdael
 given_name: Jacob
 family_name: van Ruisdael
+names: [Jacob Isaakszoon van Ruisdael]
 birth: 1628
 death: 1682-03-10
 wikidata_id: Q213612
 metadata:
   sources: [Wikidata Q213612 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q213612
+  - type: born_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q213612
+  - type: died_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q213612
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q213612
+  - type: worked_in
+    to: place/bad-bentheim
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q213612
+  - type: associated_with
+    to: movement/baroque-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q213612
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Ruisdael_Jacob_KunsthalleHamburg.jpg/1280px-Ruisdael_Jacob_KunsthalleHamburg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ruisdael_Jacob_KunsthalleHamburg.jpg
+    license: CC BY-SA 3.0
+    credit: Evergreen68
+identifiers:
+  bnf: 11953866r
+  dome: "3804"
+  gnd: "118604082"
+  idref: "027515125"
+  kulturnav: 657dc9f7-4e35-48a2-b2a9-cedecd06f8ad
+  lc: n82062822
+  rkd: "68835"
+  ulan: "500027077"
+  viaf: "89550506"
 sources:
   birth:
     - accessed: 2026-10-20

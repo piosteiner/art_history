@@ -1,0 +1,16 @@
+public_id: 103329
+name: Liechtenstein
+kind: country
+location: [9.55389, 47.145]
+wikidata_id: Q347
+metadata:
+  sources: [Wikidata Q347 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q347
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q347

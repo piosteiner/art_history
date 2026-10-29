@@ -1,0 +1,44 @@
+public_id: 103162
+name: Arno Breker
+given_name: Arno
+family_name: Breker
+names:
+  - lang: ja
+    role: translation
+    text: アルノ・ブレーカー
+  - lang: zh
+    role: translation
+    text: 亚诺·布雷克
+  - lang: ko
+    role: translation
+    text: 아르노 브레커
+  - lang: ru
+    role: translation
+    text: Арно Брекер
+birth: 1900-07-19
+death: 1991-02-13
+wikidata_id: Q61055
+metadata:
+  sources: [Wikidata Q61055 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/61/Arno_Breker_Atelier_Duesseldorf_%281972%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arno_Breker_Atelier_Duesseldorf_(1972).jpg
+    license: CC BY-SA 2.5
+    credit: The original uploader was Jos43 at Dutch Wikipedia.
+identifiers:
+  bnf: 12177941t
+  gnd: "118514938"
+  idref: "030344891"
+  lc: n81108368
+  rkd: "131609"
+  ulan: "500096044"
+  viaf: "56583257"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q61055
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q61055

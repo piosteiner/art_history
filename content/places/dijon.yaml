@@ -1,0 +1,16 @@
+public_id: 103250
+name: Dijon
+kind: settlement
+location: [5.04194, 47.32306]
+wikidata_id: Q7003
+metadata:
+  sources: [Wikidata Q7003 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q7003
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q7003

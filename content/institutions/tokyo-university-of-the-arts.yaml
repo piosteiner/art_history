@@ -1,0 +1,44 @@
+public_id: 103123
+name: Tokyo University of the Arts
+kind: art academy
+founded: 1949-05-31
+place: tokyo
+location: [139.77269, 35.71958]
+address: 12-8 Ueno Park, Taito-ku, Tokyo 110-8714
+website_url: https://www.geidai.ac.jp/
+wikidata_id: Q1153515
+metadata:
+  sources: [Wikidata Q1153515 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/54/Tokyo_University_of_the_Arts.JPG/1280px-Tokyo_University_of_the_Arts.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Tokyo_University_of_the_Arts.JPG
+    license: CC BY-SA 3.0
+    credit: Tyoron2
+identifiers:
+  bnf: 13528622r
+  gnd: 129391-6
+  idref: "134512561"
+  lc: n81131665
+  ulan: "500262053"
+  viaf: "159488876"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1153515
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1153515
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1153515
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1153515
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1153515

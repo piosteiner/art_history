@@ -7,6 +7,84 @@ death: 1455-02-27
 wikidata_id: Q5664
 metadata:
   sources: [Wikidata Q5664 (retrieved 2026-10-19)]
+relationships:
+  - type: born_in
+    to: place/vicchio
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5664
+  - type: worked_in
+    to: place/cortona
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5664
+  - type: worked_in
+    to: place/fiesole
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5664
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5664
+  - type: worked_in
+    to: place/foligno
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5664
+  - type: worked_in
+    to: place/orvieto
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5664
+  - type: worked_in
+    to: place/perugia
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5664
+  - type: worked_in
+    to: place/rome
+    period: 1445
+    period_label: from 1445
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5664
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5664
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5664
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/41/Fra_Angelico_portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fra_Angelico_portrait.jpg
+    license: Public domain
+    credit: Luca Signorelli
+identifiers:
+  bnf: "119381778"
+  gnd: "118503081"
+  idref: "027312178"
+  kulturnav: 345e78ef-4884-497b-a7ff-5a81d07a5cf1
+  lc: n50083291
+  nlk: KAC202360366
+  rkd: "1856"
+  ulan: "500029319"
+  viaf: "88038345"
 sources:
   birth:
     - accessed: 2026-10-19

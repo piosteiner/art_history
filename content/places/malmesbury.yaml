@@ -1,0 +1,16 @@
+public_id: 103286
+name: Malmesbury
+kind: settlement
+location: [-2.0996, 51.5848]
+wikidata_id: Q570153
+metadata:
+  sources: [Wikidata Q570153 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q570153
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q570153

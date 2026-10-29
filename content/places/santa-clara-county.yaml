@@ -1,0 +1,16 @@
+public_id: 103346
+name: Santa Clara County
+kind: site
+location: [-121.97, 37.36]
+wikidata_id: Q110739
+metadata:
+  sources: [Wikidata Q110739 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q110739
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q110739

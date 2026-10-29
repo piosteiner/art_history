@@ -1,0 +1,16 @@
+public_id: 102929
+name: Messina
+kind: settlement
+location: [15.55417, 38.19361]
+wikidata_id: Q13666
+metadata:
+  sources: [Wikidata Q13666 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q13666
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q13666

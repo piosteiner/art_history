@@ -1,5 +1,6 @@
 public_id: 102085
 name: Cardinal Mazarin
+family_name: Mazarin
 names:
   - lang: it
     role: original
@@ -38,6 +39,13 @@ death: 1661-03-09
 wikidata_id: Q166056
 metadata:
   sources: [Wikidata Q166056 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q337579
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f2/Cardinal_Mazarin_%28Pierre_Mignard%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Cardinal_Mazarin_(Pierre_Mignard).jpg

@@ -1,0 +1,16 @@
+public_id: 102910
+name: Cortona
+kind: settlement
+location: [11.98806, 43.27556]
+wikidata_id: Q52080
+metadata:
+  sources: [Wikidata Q52080 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q52080
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q52080

@@ -8,20 +8,53 @@ wikidata_id: Q2173609
 metadata:
   sources: [Wikidata Q2173609 (retrieved 2026-10-13)]
 relationships:
+  - type: nationality
+    to: polity/hungary
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q2173609
+  - type: born_in
+    to: place/opava
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q2173609
+  - type: died_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q2173609
   - type: student_of
     to: artist/alfred-sisley
     sources:
       - accessed: 2026-10-13
         property: P802
         wikidata: Q175130
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q2173609
   - type: student_of
     to: artist/camille-pissarro
     sources:
       - accessed: 2026-10-18
         property: P802
         wikidata: Q134741
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q2173609
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7b/Rudolf_Quittner_1872-1910_1906.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rudolf_Quittner_1872-1910_1906.jpg
+    license: Public domain
+    credit: =Unknown authorUnknown author (The photographer is unknown and not mentioned in the source.)
 identifiers:
   dome: "6234"
+  gnd: "1027122035"
+  rkd: "229267"
+  ulan: "500191227"
+  viaf: "126575586"
 sources:
   birth:
     - accessed: 2026-10-13

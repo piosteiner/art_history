@@ -1,0 +1,16 @@
+public_id: 102920
+name: quai d'Anjou
+kind: site
+location: [2.35878, 48.8518]
+wikidata_id: Q3412667
+metadata:
+  sources: [Wikidata Q3412667 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3412667
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3412667

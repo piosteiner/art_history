@@ -1,0 +1,30 @@
+public_id: 103320
+name: Frederick Mont
+given_name: Frederick
+family_name: Mont
+kind: person
+birth: 1894
+death: 1994
+wikidata_id: Q33315010
+metadata:
+  sources: [Wikidata Q33315010 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/galerie-sanct-lucas
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q53678062
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q33315010
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q33315010
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q33315010

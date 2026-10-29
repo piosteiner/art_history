@@ -1,0 +1,11 @@
+public_id: 102551
+name: Kei school
+kind: movement
+wikidata_id: Q3079516
+metadata:
+  sources: [Wikidata Q3079516 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3079516

@@ -1,5 +1,7 @@
 public_id: 101340
 name: Adolf Hitler
+given_name: Adolf
+family_name: Hitler
 names:
   - lang: ja
     role: translation
@@ -16,7 +18,7 @@ names:
 kind: person
 occupations: [politician, Holocaust perpetrator, soldier, painter, political writer, military commander, writer]
 birth: 1889-04-20
-death: 30 April 1945
+death: 1945-04-30
 wikidata_id: Q352
 metadata:
   sources: [Wikidata Q352 (retrieved 2026-10-19)]

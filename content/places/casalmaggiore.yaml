@@ -1,0 +1,16 @@
+public_id: 103217
+name: Casalmaggiore
+kind: settlement
+location: [10.41472, 44.98583]
+wikidata_id: Q42139
+metadata:
+  sources: [Wikidata Q42139 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q42139
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q42139

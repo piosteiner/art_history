@@ -1,4 +1,38 @@
 public_id: 101028
 name: Gottfried Keller-Stiftung
+names: [Eidgenössische Gottfried Keller-Stiftung]
+kind: foundation
+founded: 1890
+place: bern
+location: [7.43619, 46.94243]
+address: Monbijoustrasse 45, 3011 Bern
+website_url: https://www.gottfried-keller-stiftung.ch/de
+wikidata_id: Q260102
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q260102 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/68/Lydia_Welti.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lydia_Welti.jpg
+    license: Public domain
+identifiers:
+  gnd: 17699-0
+  hls: "011909"
+  lc: n84057605
+  viaf: "155349755"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q260102
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q260102
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q260102
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q260102

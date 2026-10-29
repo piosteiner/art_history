@@ -27,8 +27,9 @@ names:
   - lang: ru
     role: translation
     text: Венский сецессион
+kind: art society
 founded: 1897-04-03
-place: austria
+place: vienna
 wikidata_id: Q208208
 metadata:
   sources: [Wikidata Q208208 (retrieved 2026-10-20)]
@@ -44,8 +45,12 @@ identifiers:
   lc: n80103753
   viaf: "133252020"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q208208
   place:
-    - accessed: 2026-10-20
+    - accessed: 2026-10-28
       property: P131
       wikidata: Q208208
   founded:

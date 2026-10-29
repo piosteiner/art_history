@@ -1,0 +1,60 @@
+public_id: 102636
+name: Kuroda Seiki
+given_name: Seiki
+family_name: Kuroda
+names:
+  - lang: ja
+    role: original
+    text: 黒田清輝
+birth: 1866-08-09
+death: 1924-07-15
+wikidata_id: Q910913
+metadata:
+  sources: [Wikidata Q910913 (retrieved 2026-10-28)]
+relationships:
+  - type: born_in
+    to: place/higashisengoku-cho
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q910913
+  - type: died_in
+    to: place/tokyo-city
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q910913
+  - type: associated_with
+    to: movement/pleinairisme
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q910913
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q910913
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/48/KurodaSeiki.gif
+    source_url: https://commons.wikimedia.org/wiki/File:KurodaSeiki.gif
+    license: Public domain
+    credit: The original uploader was Ser Amantio di Nicolao at English Wikipedia.
+identifiers:
+  bnf: 14527364r
+  gnd: "137363788"
+  idref: "124547710"
+  lc: n82139173
+  rkd: "301898"
+  ulan: "500124860"
+  viaf: "53042184"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q910913
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q910913

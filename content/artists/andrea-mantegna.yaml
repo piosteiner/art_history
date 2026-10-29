@@ -7,6 +7,93 @@ death: 1506-09-23
 wikidata_id: Q5681
 metadata:
   sources: [Wikidata Q5681 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q5681
+  - type: born_in
+    to: place/isola-mantegna
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5681
+  - type: died_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5681
+  - type: lived_in
+    to: place/casa-del-mantegna
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5681
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5681
+  - type: worked_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5681
+  - type: worked_in
+    to: place/pisa
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5681
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5681
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5681
+  - type: worked_in
+    to: place/verona
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5681
+  - type: influenced_by
+    to: artist/donatello
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q5681
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5681
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/00/Andrea_Mantegna_049_detail_possible_self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Mantegna_049_detail_possible_self-portrait.jpg
+    license: Public domain
+    credit: Andrea Mantegna
+identifiers:
+  bnf: "120459468"
+  gnd: "118577336"
+  idref: 02867216X
+  kulturnav: 4dde03c1-2c6a-498c-ae6f-1dd24c4d52b7
+  lc: n79040004
+  rkd: "52404"
+  ulan: "500004218"
+  viaf: "27084155"
 sources:
   birth:
     - accessed: 2026-10-20

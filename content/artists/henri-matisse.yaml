@@ -2,11 +2,180 @@ public_id: 102166
 name: Henri Matisse
 given_name: Henri
 family_name: Matisse
-birth: 31 December 1869
+names: [Henri Emile Benoit Matisse]
+birth: 1869-12-31
 death: 1954-11-03
 wikidata_id: Q5589
 metadata:
   sources: [Wikidata Q5589 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q5589
+  - type: born_in
+    to: place/le-cateau-cambresis
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5589
+  - type: died_in
+    to: place/nice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5589
+  - type: lived_in
+    to: place/bohain-en-vermandois
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5589
+  - type: lived_in
+    to: place/cavaliere-var
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5589
+  - type: lived_in
+    to: place/issy-les-moulineaux
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5589
+  - type: lived_in
+    to: place/nice
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5589
+  - type: lived_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5589
+  - type: lived_in
+    to: place/villa-le-reve
+    period: 1943/1949
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5589
+  - type: worked_in
+    to: place/collioure
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/issy-les-moulineaux
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/morocco
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/nice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/saint-quentin
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/saint-tropez
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: worked_in
+    to: place/vence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5589
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q5589
+  - type: associated_with
+    to: movement/divisionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5589
+  - type: associated_with
+    to: movement/fauvism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5589
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5589
+  - type: associated_with
+    to: movement/neo-impressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5589
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5589
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b1/Portrait_of_Henri_Matisse_1933_May_20.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Henri_Matisse_1933_May_20.jpg
+    license: Public domain
+    credit: Carl Van Vechten
+identifiers:
+  bnf: 11915136j
+  dome: "248"
+  gnd: "118578847"
+  idref: "027017303"
+  kulturnav: 69bfa782-446a-4a65-9891-0b5f01d7cb2e
+  lc: n79054729
+  nlk: KAC201619803
+  rkd: "53996"
+  ulan: "500017300"
+  viaf: "42630086"
 sources:
   birth:
     - accessed: 2026-10-20

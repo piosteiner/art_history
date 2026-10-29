@@ -1,4 +1,35 @@
 public_id: 100480
 name: Munich Central Collecting Point
 kind: collecting point
+founded: 1945-07
+dissolved: 1951
 place: munich
+location: [11.56662, 48.14521]
+wikidata_id: Q1053735
+metadata:
+  sources: [Wikidata Q1053735 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 2097838-8
+  idref: "177531622"
+  lc: nr94042552
+  ulan: "500454403"
+  viaf: "148464983"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1053735
+  founded:
+    - url: https://en.wikipedia.org/wiki/Munich_Central_Collecting_Point
+      note: Craig Hugh Smyth established it „in July 1945“; „These restitution activities at Munich ceased in 1951“ (responsibility handed to the German authorities in September 1949)
+      source: en-wikipedia-org
+      accessed: 2026-10-28
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1053735
+  dissolved:
+    - url: https://en.wikipedia.org/wiki/Munich_Central_Collecting_Point
+      note: Craig Hugh Smyth established it „in July 1945“; „These restitution activities at Munich ceased in 1951“ (responsibility handed to the German authorities in September 1949)
+      source: en-wikipedia-org
+      accessed: 2026-10-28

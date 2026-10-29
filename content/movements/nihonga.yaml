@@ -1,0 +1,17 @@
+public_id: 102737
+name: Nihonga
+names:
+  - Nihon-ga
+  - lang: ja
+    role: translation
+    text: "{日|に}{本|ほん}{画|が}"
+kind: period
+period: 1860/1869
+wikidata_id: Q1989975
+metadata:
+  sources: [Wikidata Q1989975 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q1989975

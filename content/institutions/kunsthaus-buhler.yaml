@@ -1,5 +1,16 @@
 public_id: 100600
 name: Kunsthaus Bühler
+names: [Kunsthaus Bühler Stuttgart, Bühler Art House]
 kind: gallery
+founded: 1905
 place: stuttgart
-description_md: Art dealer in Stuttgart (Dr. Hans-Peter Bühler).
+description_md: "Art dealer in Stuttgart (Dr. Hans-Peter Bühler)[[source/hamburger-kunsthalle-hk-5161|Provenienz: „Kunsthaus Bühler (Dr. Hans-Peter Bühler) Stuttgart, Dezember 1970 (Vermittlung für Hugo Oberwelland)“]]."
+website_url: https://www.buehler-art.de/home/
+wikidata_id: Q131819633
+metadata:
+  sources: [Wikidata Q131819633 (retrieved 2026-10-28)]
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q131819633

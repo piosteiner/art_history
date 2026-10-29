@@ -1,0 +1,22 @@
+public_id: 103301
+name: Royal Society of British Artists
+kind: art society
+founded: 1823
+place: city-of-westminster
+location: [-0.13025, 51.50674]
+wikidata_id: Q2157647
+metadata:
+  sources: [Wikidata Q2157647 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 5214167-6
+  lc: n50069636
+  viaf: "127525046"
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q2157647
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q2157647

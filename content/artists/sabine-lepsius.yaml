@@ -7,6 +7,44 @@ death: 1942-11-22
 wikidata_id: Q530383
 metadata:
   sources: [Wikidata Q530383 (retrieved 2026-10-27)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q530383
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q530383
+  - type: died_in
+    to: place/bayreuth
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q530383
+  - type: member_of
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q530383
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/1885_Lepsius_Selbstbildnis.jpg/1280px-1885_Lepsius_Selbstbildnis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1885_Lepsius_Selbstbildnis.jpg
+    license: Public domain
+    credit: anagoria
+identifiers:
+  dome: "489"
+  gnd: "119437929"
+  idref: "076415201"
+  lc: no2004033483
+  rkd: "49526"
+  ulan: "500086319"
+  viaf: "59894171"
 sources:
   birth:
     - accessed: 2026-10-27

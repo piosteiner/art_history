@@ -1,0 +1,58 @@
+public_id: 102761
+name: Taneji Yamazaki
+given_name: Taneji
+family_name: Yamazaki
+names:
+  - lang: ja
+    role: original
+    text: 山崎 種二
+kind: person
+occupations: [businessperson, investor, art collector, entrepreneur, stockbroker]
+birth: 1893-12-08
+death: 1983-08-10
+wikidata_id: Q11468177
+metadata:
+  sources: [Wikidata Q11468177 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/empire-of-japan
+    period: 1947
+    period_label: until 1947
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q11468177
+  - type: born_in
+    to: place/yoshii
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q11468177
+  - type: founded
+    to: institution/yamatane-museum-of-art
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q3329572
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6d/Yamazaki_Taneji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yamazaki_Taneji.jpg
+    license: Public domain
+    credit: 躍進群馬信交会
+identifiers:
+  gnd: 102573257X
+  lc: n84112703
+  viaf: "113772445"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q11468177
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q11468177
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q11468177

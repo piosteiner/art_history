@@ -1,0 +1,51 @@
+public_id: 103147
+name: Cantor Arts Center at Stanford University
+names:
+  - Cantor Arts Center
+  - Leland Stanford Junior Museum
+  - Iris & B. Gerald Cantor Center for Visual Arts
+  - Cantor Center for Visual Arts
+  - lang: ja
+    role: translation
+    text: アイリス&B・ジェラルド・カンター視覚芸術センター
+  - lang: zh
+    role: translation
+    text: 艾芮絲與B.杰拉德康托視覺藝術中心
+kind: museum
+founded: 1894
+place: stanford
+location: [-122.17084, 37.43298]
+website_url: https://museum.stanford.edu
+wikidata_id: Q1672708
+metadata:
+  sources: [Wikidata Q1672708 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Iris_%26_B._Gerald_Cantor_Center_for_Visual_Arts%2C_Stanford%2C_California_-_20060728.jpg/1280px-Iris_%26_B._Gerald_Cantor_Center_for_Visual_Arts%2C_Stanford%2C_California_-_20060728.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Iris_%26_B._Gerald_Cantor_Center_for_Visual_Arts,_Stanford,_California_-_20060728.jpg
+    license: CC BY-SA 3.0
+    credit: David Monniaux
+identifiers:
+  bnf: "145353216"
+  gnd: 10000124-5
+  idref: "079225527"
+  lc: n98017977
+  ulan: "500309169"
+  viaf: "150274167"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1672708
+  place:
+    - url: https://en.wikipedia.org/wiki/Cantor_Arts_Center
+      note: „an art museum on the campus of Stanford University in Stanford, California“ (Wikidata gives only the state)
+      source: en-wikipedia-org
+      accessed: 2026-10-28
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1672708
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1672708

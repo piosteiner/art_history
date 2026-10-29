@@ -1,0 +1,16 @@
+public_id: 103246
+name: Valladolid
+kind: site
+location: [-4.72856, 41.65198]
+wikidata_id: Q8356
+metadata:
+  sources: [Wikidata Q8356 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q8356
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q8356

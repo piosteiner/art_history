@@ -7,6 +7,83 @@ death: 1680-11-28
 wikidata_id: Q160538
 metadata:
   sources: [Wikidata Q160538 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q160538
+  - type: died_in
+    to: place/palazzi-bernini
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q160538
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q160538
+  - type: lived_in
+    to: place/palazzi-bernini
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q160538
+  - type: lived_in
+    to: place/house-of-pietro-and-gianlorenzo-bernini-rome
+    period: 1606/1642
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q160538
+  - type: worked_in
+    to: place/italy
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q160538
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q160538
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q160538
+  - type: worked_in
+    to: place/siena
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q160538
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q160538
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Gian_Lorenzo_Bernini%2C_self-portrait%2C_c1623.jpg/1280px-Gian_Lorenzo_Bernini%2C_self-portrait%2C_c1623.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gian_Lorenzo_Bernini,_self-portrait,_c1623.jpg
+    license: Public domain
+    credit: Gian Lorenzo Bernini
+identifiers:
+  bnf: "118915810"
+  gnd: "118509926"
+  idref: "026722992"
+  kulturnav: d21ccca0-4347-43ed-8e75-b00fc7288a05
+  lc: n79127068
+  nlk: KAC202305532
+  rkd: "7527"
+  ulan: "500032022"
+  viaf: "73850000"
 sources:
   birth:
     - accessed: 2026-10-20

@@ -1,0 +1,30 @@
+public_id: 103315
+name: Hortense Anda-Bührle
+given_name: Hortense
+family_name: Anda-Bührle
+kind: person
+birth: 1926-05-18
+death: 2014-05-16
+wikidata_id: Q1630202
+metadata:
+  sources: [Wikidata Q1630202 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/foundation-e-g-buhrle-collection
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q666331
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1630202
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q1630202
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q1630202

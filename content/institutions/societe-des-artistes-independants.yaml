@@ -1,10 +1,23 @@
 public_id: 100909
 name: Société des Artistes Indépendants
+kind: art society
 founded: 1884
+place: paris
+website_url: http://www.artistes-independants.fr/
 wikidata_id: Q1420385
 metadata:
   sources: [Wikidata Q1420385 (retrieved 2026-10-18)]
+identifiers:
+  bnf: 11878431f
+  gnd: 213343-X
+  idref: "026559684"
+  lc: n81028938
+  viaf: "149685834"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1420385
   founded:
     - accessed: 2026-10-18
       property: P571

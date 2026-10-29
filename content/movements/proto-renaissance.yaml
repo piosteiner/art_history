@@ -1,0 +1,16 @@
+public_id: 103045
+name: Proto-Renaissance
+kind: movement
+period: 1001/1100
+wikidata_id: Q979160
+metadata:
+  sources: [Wikidata Q979160 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q979160
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q979160

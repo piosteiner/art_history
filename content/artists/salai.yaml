@@ -40,6 +40,13 @@ death: 1524-01-29
 wikidata_id: Q954126
 metadata:
   sources: [Wikidata Q954126 (retrieved 2026-10-20)]
+relationships:
+  - type: student_of
+    to: artist/leonardo-da-vinci
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q762
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/db/Leonardo_Salai.JPG
     source_url: https://commons.wikimedia.org/wiki/File:Leonardo_Salai.JPG

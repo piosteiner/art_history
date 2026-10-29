@@ -1,0 +1,26 @@
+public_id: 103310
+name: Leinfelden-Echterdingen
+names:
+  - lang: ru
+    role: translation
+    text: Лайнфельден-Эхтердинген
+kind: settlement
+parent: germany
+country_code: DE
+location: [9.14278, 48.69278]
+wikidata_id: Q14905
+metadata:
+  sources: [Wikidata Q14905 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q14905
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q14905
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q14905

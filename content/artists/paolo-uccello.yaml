@@ -2,11 +2,75 @@ public_id: 101967
 name: Paolo Uccello
 given_name: Paolo
 family_name: Uccello
+names: [Paolo Di Dono Uccello]
 birth: 1397-06-15
 death: 1475-12-19
 wikidata_id: Q192488
 metadata:
   sources: [Wikidata Q192488 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/pratovecchio
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q192488
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q192488
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q192488
+  - type: worked_in
+    to: place/padua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q192488
+  - type: worked_in
+    to: place/urbino
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q192488
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q192488
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q192488
+  - type: associated_with
+    to: movement/renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q192488
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Cinq_ma%C3%AEtres_de_la_Renaissance_florentine_-_Uccello_%28Louvre%29.jpg/1280px-Cinq_ma%C3%AEtres_de_la_Renaissance_florentine_-_Uccello_%28Louvre%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cinq_ma%C3%AEtres_de_la_Renaissance_florentine_-_Uccello_(Louvre).jpg
+    license: Public domain
+    credit: Florentine School, Unknown Master, Italian (active late 15th century) ; généralement attribuée à Paolo Uccello
+identifiers:
+  bnf: 12047348s
+  gnd: "118763350"
+  idref: "028689178"
+  kulturnav: 59a666c5-45d8-40ed-bd3a-4efba95abd45
+  lc: n86140444
+  rkd: "78647"
+  ulan: "500003110"
+  viaf: "39395712"
 sources:
   birth:
     - accessed: 2026-10-20

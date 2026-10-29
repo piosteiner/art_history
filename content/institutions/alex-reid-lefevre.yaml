@@ -1,7 +1,9 @@
 public_id: 100423
 name: Alex Reid & Lefevre
 names: [The Lefevre Gallery, Lefevre Galleries, Alex Reid & Lefevre Ltd.]
+kind: museum
 founded: 1871
+dissolved: 2002
 place: city-of-westminster
 location: [-0.13656, 51.50684]
 address: 1a King Street, St James's, London
@@ -14,6 +16,14 @@ images:
     license: Public domain
     credit: AnonymousUnknown author
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q18347243
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q18347243
   address:
     - accessed: 2026-10-19
       property: P6375
@@ -25,4 +35,8 @@ sources:
   location:
     - accessed: 2026-10-19
       property: P625
+      wikidata: Q18347243
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
       wikidata: Q18347243

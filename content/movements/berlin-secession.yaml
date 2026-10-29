@@ -1,0 +1,16 @@
+public_id: 103113
+name: Berlin Secession
+kind: movement
+period: 1898-05-02
+wikidata_id: Q700347
+metadata:
+  sources: [Wikidata Q700347 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q700347
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q700347

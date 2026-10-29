@@ -3,16 +3,65 @@ name: Ambrogio Lorenzetti
 given_name: Ambrogio
 family_name: Lorenzetti
 birth: 1290
-death: 1348-06-09
+birth_label: c. 1290
+death: 9 August 1348–1349
+active: 1319/1348
+biography_md: |-
+  Ambrogio Lorenzetti war ein Maler aus Siena. Sein Geburtsdatum ist unbekannt; belegt ist er von 1319 bis 1348.[[source/becchis-2005-lorenzetti-ambrogio]] Er war der jüngere Bruder des Malers [[artist/pietro-lorenzetti|Pietro Lorenzetti]]: Unter den verlorenen Marienfresken an der Fassade des Spitals Santa Maria della Scala stand «Hoc opus fecit Petrus Laurentij et Ambrosius eius frater». Wahrscheinlich war Pietro auch sein erster Lehrer.[[source/becchis-2005-lorenzetti-ambrogio]]
+
+  ## Florenz
+
+  Sein erstes sicher datiertes Werk ist die Madonna von Vico l'Abate von 1319 (heute San Casciano Val di Pesa, Museo d'arte sacra), die sich schon mit der Florentiner Malerei Giottos auseinandersetzt; 1321 ist Lorenzetti in Florenz belegt. Zwischen etwa 1328 und 1330 trat er dort der Zunft der Ärzte und Apotheker bei, der Arte dei Medici e Speziali. Für San Procolo malte er ein Polyptychon, 1332 datiert, und eine Tafel mit Szenen aus dem Leben des heiligen Nikolaus, deren Reste heute in den [[institution/uffizi-gallery|Uffizien]] sind; in diesen kleinen Tafeln erscheinen zum ersten Mal die Stadt- und Küstenlandschaften, die zu seinem Kennzeichen wurden.[[source/becchis-2005-lorenzetti-ambrogio]]
+
+  ## Maler der Kommune
+
+  In den 1330er Jahren arbeitete er vor allem in Siena. Nachdem [[artist/simone-martini|Simone Martini]] die Stadt bis 1336 verlassen hatte, wurde Lorenzetti der offizielle Maler der Kommune und der einflussreichen Orden.[[source/becchis-2005-lorenzetti-ambrogio]] Aus diesen Jahren stammen die Fresken im Kapitelsaal und im Kreuzgang von San Francesco, ein Freskenzyklus in Sant'Agostino, von dem nur eine Maestà erhalten ist, die Maestà für die Augustiner in Massa Marittima und 1335, zusammen mit Pietro, die Fresken an der Fassade des Spitals.[[source/becchis-2005-lorenzetti-ambrogio]] Vom Februar 1338 bis zum Mai 1339 malte er im Palazzo Pubblico [[artwork/allegory-of-good-and-bad-government|die Allegorie und die Wirkungen des Guten und des Schlechten Regiments]], sein berühmtestes Werk.[[source/becchis-2005-lorenzetti-ambrogio]]
+
+  1342 vollendete er die Darbringung im Tempel für den Altar des heiligen Crescentius im Dom (heute in den Uffizien), um 1342 die Fresken der Kapelle von Montesiepi bei San Galgano, 1344 eine Verkündigung für das Amt der Gabella. Sein letztes bekanntes Werk war 1345 eine drehbare Weltkarte für den Palazzo Pubblico, nach der die Sala del Mappamondo heißt; erhalten ist von ihr nichts.[[source/becchis-2005-lorenzetti-ambrogio]] 1347 sprach er im Rat der Paciari, dessen Protokoll seine «sapientia verba» festhält.[[source/becchis-2005-lorenzetti-ambrogio]]
+
+  ## Tod
+
+  Am 9. August 1348, während der Pest, schrieb er sein Testament, eigenhändig und nicht auf Latein, sondern in gutem Volgare. 1349 waren er, seine Frau und seine drei Töchter tot; die Compagnia della Vergine Maria verkaufte seine Güter.[[source/becchis-2005-lorenzetti-ambrogio]] Ghiberti und Vasari beschrieben ihn als gebildeten Mann, der mehr wie ein Philosoph lebte als wie ein Künstler.[[source/becchis-2005-lorenzetti-ambrogio]]
 wikidata_id: Q211562
 metadata:
   sources: [Wikidata Q211562 (retrieved 2026-10-20)]
+relationships:
+  - type: died_in
+    to: place/siena
+    certainty: probable
+    sources:
+      - source: becchis-2005-lorenzetti-ambrogio
+  - type: worked_in
+    to: place/florence
+    period: 1321/1332
+    sources:
+      - source: becchis-2005-lorenzetti-ambrogio
+  - type: worked_in
+    to: place/siena
+    period: 1324/1348
+    sources:
+      - source: becchis-2005-lorenzetti-ambrogio
+  - type: student_of
+    to: artist/pietro-lorenzetti
+    certainty: probable
+    sources:
+      - source: becchis-2005-lorenzetti-ambrogio
+  - type: collaborated_with
+    to: artist/pietro-lorenzetti
+    period: 1335
+    sources:
+      - source: becchis-2005-lorenzetti-ambrogio
+  - type: sibling_of
+    to: artist/pietro-lorenzetti
+    sources:
+      - source: becchis-2005-lorenzetti-ambrogio
 sources:
   birth:
     - accessed: 2026-10-20
       property: P569
       wikidata: Q211562
+    - source: wikipedia-en-ambrogio-lorenzetti
   death:
-    - accessed: 2026-10-20
-      property: P570
-      wikidata: Q211562
+    - source: becchis-2005-lorenzetti-ambrogio
+  active:
+    - source: becchis-2005-lorenzetti-ambrogio

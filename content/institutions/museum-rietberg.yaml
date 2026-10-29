@@ -1,5 +1,6 @@
 public_id: 100117
 name: Museum Rietberg
+kind: museum
 founded: 1952
 place: zurich
 location: [8.53027, 47.35892]
@@ -17,7 +18,18 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Zuerich_Villa_Wesendonck.jpg
     license: CC BY-SA 3.0
     credit: Ikiwaner
+identifiers:
+  bnf: 12098094d
+  gnd: 2019229-0
+  idref: "029332001"
+  lc: n80023605
+  ulan: "500312265"
+  viaf: "139236878"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q668300
   place:
     - accessed: 2026-10-08
       property: P131

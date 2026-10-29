@@ -1,10 +1,13 @@
 public_id: 100807
 name: Trouville-sur-Mer
 kind: settlement
+country_code: FR
 location: [0.08167, 49.3675]
 wikidata_id: Q272320
 metadata:
   sources: [Wikidata Q272320 (retrieved 2026-10-18)]
+identifiers:
+  gnd: 4342422-3
 sources:
   kind:
     - accessed: 2026-10-18

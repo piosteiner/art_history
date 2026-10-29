@@ -1,0 +1,20 @@
+public_id: 103199
+title_lang: fr
+title: Porte de l'Enfer
+parent: the-gates-of-hell
+creator: auguste-rodin
+created: 1880/1917
+created_span: duration
+kind: sculpture
+materials: [plaster]
+dimensions: [635, 400, 94]
+institution: musee-d-orsay
+web_url: https://www.musee-orsay.fr/fr/oeuvres/porte-de-lenfer-15645
+description_md: Das Gipsmodell, nach dem Staatsauftrag von 1880 angekauft und seit 1986 als Depositum des Musée Rodin im Musée d'Orsay; ohne die Gruppe der Drei Schatten ist es 520 cm hoch, es wiegt 1715 kg.[[source/musee-orsay-porte-de-lenfer]]
+sources:
+  created:
+    - source: musee-orsay-porte-de-lenfer
+  dimensions:
+    - source: musee-orsay-porte-de-lenfer
+  institution:
+    - source: musee-orsay-porte-de-lenfer

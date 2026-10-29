@@ -1,0 +1,16 @@
+public_id: 103283
+name: Rheinfelden
+kind: site
+location: [7.79583, 47.55389]
+wikidata_id: Q269667
+metadata:
+  sources: [Wikidata Q269667 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q269667
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q269667

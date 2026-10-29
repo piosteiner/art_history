@@ -1,0 +1,30 @@
+public_id: 103322
+name: Lydia Welti-Escher
+given_name: Lydia
+family_name: Welti-Escher
+kind: person
+birth: 1858-07-10
+death: 1891-12-12
+wikidata_id: Q117524
+metadata:
+  sources: [Wikidata Q117524 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/gottfried-keller-stiftung
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q260102
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q117524
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q117524
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q117524

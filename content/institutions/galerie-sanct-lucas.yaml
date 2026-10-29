@@ -1,4 +1,20 @@
 public_id: 101030
 name: Galerie Sanct Lucas
+names: [Galerie Sanct Lucas, Galerie Sankt Lucas, "Galerie St. Lucas, Wien"]
+kind: gallery
+founded: 1919
+place: vienna
+website_url: https://sanctlucas.com/
+wikidata_id: Q53678062
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q53678062 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 2083504-8
+  lc: nr91017527
+  ulan: "500450661"
+  viaf: "151945708"
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q53678062

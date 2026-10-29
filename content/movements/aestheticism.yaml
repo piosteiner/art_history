@@ -1,0 +1,16 @@
+public_id: 103299
+name: Aestheticism
+kind: movement
+period: 1870/1879
+wikidata_id: Q256922
+metadata:
+  sources: [Wikidata Q256922 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q256922
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q256922

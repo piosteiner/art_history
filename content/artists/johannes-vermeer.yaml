@@ -2,11 +2,71 @@ public_id: 101301
 name: Johannes Vermeer
 given_name: Johannes
 family_name: Vermeer
+names: [Vander Meer de Delft, Jan Vermeer Delft]
 birth: 1632-10
 death: 1675-12-15
 wikidata_id: Q41264
 metadata:
   sources: [Wikidata Q41264 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q41264
+  - type: born_in
+    to: place/delft
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q41264
+  - type: died_in
+    to: place/delft
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q41264
+  - type: lived_in
+    to: place/delft
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q41264
+  - type: worked_in
+    to: place/delft
+    period: 1653/1675
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q41264
+  - type: associated_with
+    to: movement/baroque-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q41264
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q41264
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/46/Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cropped_version_of_Jan_Vermeer_van_Delft_002.jpg
+    license: Public domain
+    credit: Johannes Vermeer
+identifiers:
+  bnf: 11940023b
+  gnd: "118626590"
+  idref: "027336336"
+  kulturnav: 38475684-4786-4ef6-bd3c-ab11b02b6a2f
+  lc: n79006488
+  nlk: KAC201719233
+  rkd: "80476"
+  ulan: "500032927"
+  viaf: "51961439"
 sources:
   birth:
     - accessed: 2026-10-19

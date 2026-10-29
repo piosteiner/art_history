@@ -1,0 +1,16 @@
+public_id: 103052
+name: Cannaregio
+kind: site
+location: [12.327, 45.446]
+wikidata_id: Q52423
+metadata:
+  sources: [Wikidata Q52423 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q52423
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q52423

@@ -1,2 +1,28 @@
 public_id: 100304
 name: Durand-Ruel
+kind: gallery
+place: paris
+location: [2.29959, 48.87419]
+wikidata_id: Q15305978
+metadata:
+  sources: [Wikidata Q15305978 (retrieved 2026-10-28)]
+identifiers:
+  bnf: "122082546"
+  gnd: 1013368-9
+  idref: "030723876"
+  lc: n50058608
+  ulan: "500310300"
+  viaf: "153354503"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q15305978
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q15305978
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q15305978

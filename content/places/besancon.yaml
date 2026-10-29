@@ -1,0 +1,16 @@
+public_id: 103309
+name: Besançon
+kind: settlement
+location: [6.02139, 47.24222]
+wikidata_id: Q37776
+metadata:
+  sources: [Wikidata Q37776 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q37776
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q37776

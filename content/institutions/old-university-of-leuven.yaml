@@ -1,0 +1,34 @@
+public_id: 103249
+name: Old University of Leuven
+kind: university
+founded: 1425
+dissolved: 1797-11-09
+place: leuven
+location: [4.70064, 50.87786]
+wikidata_id: Q693380
+metadata:
+  sources: [Wikidata Q693380 (retrieved 2026-10-28)]
+identifiers:
+  lc: n50065435
+  viaf: "155864383"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q693380
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q693380
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q693380
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q693380
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q693380

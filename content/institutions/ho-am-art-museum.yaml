@@ -1,0 +1,44 @@
+public_id: 103155
+name: Ho-Am Art Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée d'art Ho-Am
+  - lang: ja
+    role: translation
+    text: 湖巌美術館
+  - lang: zh
+    role: translation
+    text: 湖巖美術館
+  - lang: ko
+    role: translation
+    text: 호암미술관
+kind: museum
+founded: 1982
+place: yongin-si
+location: [127.19156, 37.29446]
+wikidata_id: Q491279
+metadata:
+  sources: [Wikidata Q491279 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Hoammuseum.jpg/1280px-Hoammuseum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hoammuseum.jpg
+    license: CC BY-SA 4.0
+    credit: Jocelyndurrey This photo was taken with LG G3
+identifiers:
+  idref: "176719954"
+  lc: n84152181
+  viaf: "131401808"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q491279
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q491279
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q491279

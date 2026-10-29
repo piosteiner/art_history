@@ -2,12 +2,25 @@ public_id: 100223
 name: Charles Gleyre
 given_name: Charles
 family_name: Gleyre
+names: [Marc-Gabriel-Charles Gleyre]
 birth: 1806-05-02
 death: 1874-05-05
 wikidata_id: Q452119
 metadata:
   sources: [Wikidata Q452119 (retrieved 2026-10-13)]
 relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q452119
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q452119
   - type: born_in
     to: place/chevilly
     sources:
@@ -20,11 +33,35 @@ relationships:
       - accessed: 2026-10-13
         property: P20
         wikidata: Q452119
+  - type: lived_in
+    to: place/rue-du-bac
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q452119
   - type: worked_in
     to: place/paris
     sources:
       - accessed: 2026-10-13
         property: P937
+        wikidata: Q452119
+  - type: influenced_by
+    to: artist/jean-auguste-dominique-ingres
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q452119
+  - type: student_of
+    to: artist/jean-auguste-dominique-ingres
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q452119
+  - type: associated_with
+    to: movement/orientalist-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
         wikidata: Q452119
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/95/Gleyre_-_Self_portrait.jpg

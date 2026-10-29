@@ -62,6 +62,9 @@ relationships:
       - accessed: 2026-10-22
         property: P1066
         wikidata: Q39931
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q452119
   - type: studied_at
     to: institution/academie-suisse
     sources:

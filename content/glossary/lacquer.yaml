@@ -1,0 +1,18 @@
+public_id: 102907
+name: lacquer
+names:
+  - lang: ja
+    role: translation
+    text: "{漆|うるし}"
+  - lang: ja-Latn
+    role: romanization
+    text: urushi
+  - lang: de
+    role: translation
+    text: Lack
+  - lang: de
+    role: translation
+    text: Urushi-Lack
+category: material
+definition: "East Asian lacquer (Japanese urushi): the refined sap of the lacquer tree, applied in layers to seal, protect and decorate objects."
+description_md: In Japan the sap of the lacquer tree, *urushi*, refined over months[[source/wikipedia-en-japanese-lacquerware|“They learned to refine urushi (poison oak sap) – the process taking several months”]], is applied to seal and protect an object before it is decorated[[source/wikipedia-en-japanese-lacquerware|“Lacquer is applied to seal and protect the object, and then decoration is added”]] — on everything from Buddha statues to food boxes[[source/wikipedia-en-japanese-lacquerware|“lacquer has been used in urushi-e, prints, and on a wide variety of objects from Buddha statues to bento boxes for food”]].

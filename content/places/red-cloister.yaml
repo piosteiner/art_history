@@ -1,0 +1,16 @@
+public_id: 103050
+name: Red Cloister
+kind: site
+location: [4.44361, 50.81333]
+wikidata_id: Q2588334
+metadata:
+  sources: [Wikidata Q2588334 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2588334
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q2588334

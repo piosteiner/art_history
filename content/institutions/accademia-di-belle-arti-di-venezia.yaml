@@ -1,0 +1,41 @@
+public_id: 102934
+name: Accademia di Belle Arti di Venezia
+names: [Academy of Fine Arts of Venice]
+kind: art academy
+founded: 1750-09-24
+place: venice
+location: [12.3305, 45.4286]
+address: Dorsoduro, 423 (ex Ospedale degli Incurabili), 30123 Venezia
+website_url: http://www.accademiavenezia.it/
+wikidata_id: Q338505
+metadata:
+  sources: [Wikidata Q338505 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Venezia_-_Casa_degli_Incurabili.jpg/1280px-Venezia_-_Casa_degli_Incurabili.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Venezia_-_Casa_degli_Incurabili.jpg
+    license: CC BY-SA 4.0
+    credit: "This picture belongs to Xavier Caré. Please credit : Xavier Caré / Wikimedia Commons / CC-BY-SA. If you would like special permission to use, license, or purchase the image please contact me to negotiate terms. I'd appreciate if you could let me know about it or mail me ( xavier.carepm.me) if you want to use this picture out of the Wikimedia project scope."
+identifiers:
+  bnf: 15602590j
+  gnd: 132567-X
+  idref: "032069464"
+  lc: n2001006342
+  ulan: "500248662"
+  viaf: "150572005"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q338505
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q338505
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q338505
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q338505

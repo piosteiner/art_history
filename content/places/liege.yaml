@@ -1,0 +1,16 @@
+public_id: 103240
+name: Liège
+kind: settlement
+location: [5.57056, 50.63972]
+wikidata_id: Q3992
+metadata:
+  sources: [Wikidata Q3992 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3992
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3992

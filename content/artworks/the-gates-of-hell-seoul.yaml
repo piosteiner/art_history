@@ -1,0 +1,26 @@
+public_id: 103196
+title_lang: en
+title: The Gates of Hell
+parent: the-gates-of-hell
+part_number: "7"
+creator: auguste-rodin
+created: 1995/1998
+created_span: duration
+conceived: 1880/1917
+kind: sculpture
+materials: [bronze]
+institution: ho-am-art-museum
+description_md: 1995–1998 bei Coubertin für die Rodin Gallery im Samsung-Gebäude in Seoul gegossen.[[source/museo-soumaya-puerta-del-infierno|“y la Galería Rodin en el Edificio Samsung, de Seúl, en Corea del Sur, de 1995-1998”]] Seit die Galerie, zuletzt «Plateau», 2016 geschlossen wurde, ist der Guss im Ho-Am Art Museum eingelagert.[[source/wikipedia-en-the-gates-of-hell]]
+provenance:
+  - owner: institution/fonderie-de-coubertin
+    role: foundry
+    acquired: 1995/1998
+    method: creation
+    place: saint-remy-les-chevreuse
+    sources:
+      - source: museo-soumaya-puerta-del-infierno
+sources:
+  created:
+    - source: museo-soumaya-puerta-del-infierno
+  institution:
+    - source: wikipedia-en-the-gates-of-hell

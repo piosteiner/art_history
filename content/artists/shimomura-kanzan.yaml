@@ -1,0 +1,89 @@
+public_id: 102796
+name_lang: jp
+name: Shimomura Kanzan
+given_name: Kanzan
+family_name: Shimomura
+names:
+  - lang: ja
+    role: alternative
+    text: Seisaburō
+  - lang: jp
+    role: alternative
+    text: "{下|しも}{村|むら} {観|か}{山|ざん}"
+  - lang: jp
+    role: alternative
+    text: "{晴|せい}{三|さ}{郎|ぶろう}"
+birth: 1873-04-10
+death: 1930-05-10
+wikidata_id: Q2113306
+metadata:
+  sources: [Wikidata Q2113306 (retrieved 2026-10-28)]
+relationships:
+  - type: born_in
+    to: place/wakayama
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q2113306
+  - type: died_in
+    to: place/tokyo
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q2113306
+  - type: student_of
+    to: artist/hashimoto-gaho
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q2113306
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q3128092
+  - type: student_of
+    to: artist/kano-hogai
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q2113306
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q2384056
+  - type: studied_at
+    to: institution/tokyo-academy-of-fine-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q2113306
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q2113306
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/28/Shimomura_Kanzan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shimomura_Kanzan.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: "137006918"
+  idref: "234823666"
+  lc: n82057079
+  ulan: "500122610"
+  viaf: "72735237"
+sources:
+  birth:
+    - url: https://de.wikipedia.org/wiki/Shimomura_Kanzan
+      source: de-wikipedia-org
+      accessed: 2026-10-28
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q2113306
+  death:
+    - url: https://de.wikipedia.org/wiki/Shimomura_Kanzan
+      source: de-wikipedia-org
+      accessed: 2026-10-28
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q2113306

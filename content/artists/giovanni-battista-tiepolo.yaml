@@ -137,6 +137,12 @@ relationships:
       - accessed: 2026-10-15
         property: P135
         wikidata: Q186202
+  - type: founded
+    to: institution/accademia-di-belle-arti-di-venezia
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q338505
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/4e/Tiepolo%2C_Giovanni_Battista_-_Fresken_Treppenhaus_des_W%C3%BCrzburger_Residenzschlosses%2C_Szenen_zur_Apotheose_des_F%C3%BCrstbischofs%2C_Detail_Giovanni_Battista_Tiepolo_-_1750-1753.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Tiepolo,_Giovanni_Battista_-_Fresken_Treppenhaus_des_W%C3%BCrzburger_Residenzschlosses,_Szenen_zur_Apotheose_des_F%C3%BCrstbischofs,_Detail_Giovanni_Battista_Tiepolo_-_1750-1753.jpg

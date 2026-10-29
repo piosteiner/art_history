@@ -1,0 +1,38 @@
+public_id: 103154
+name: Yongin-si
+names:
+  - lang: ja
+    role: translation
+    text: 竜仁市
+  - lang: zh
+    role: translation
+    text: 龍仁市
+  - lang: ko
+    role: original
+    text: 용인시
+  - lang: fr
+    role: translation
+    text: Yongin
+  - lang: ru
+    role: translation
+    text: Йонъин
+kind: settlement
+parent: gyeonggi
+country_code: KR
+location: [127.20111, 37.23611]
+wikidata_id: Q18459
+metadata:
+  sources: [Wikidata Q18459 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q18459
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q18459
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q18459

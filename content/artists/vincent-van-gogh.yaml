@@ -5,10 +5,10 @@ family_name: van Gogh
 sort_name: Gogh, Vincent van
 birth: 1853-03-30
 death: 1890-07-29
-biography_md: |
-  Dutch painter whose roughly ten-year career produced some 860 oil paintings, most of them in his last two years.
+biography_md: |-
+  Dutch painter whose roughly ten-year career produced some 860 oil paintings, most of them in his last two years[[source/wikipedia-en-vincent-van-gogh|“In just over a decade he created about 2,100 artworks, including around 860 oil paintings, most of them in the last two years of his life”]].
   In Paris he discovered Impressionism and collected hundreds of Japanese woodblock prints; in Arles and
-  Saint-Rémy he developed the saturated colour and expressive brushwork that made him a founder of modern art.
+  Saint-Rémy he developed the saturated colour and expressive brushwork that made him a founder of modern art[[source/wikipedia-en-vincent-van-gogh|“while in Paris he collected hundreds of them” · “His paintings grew brighter in colour as he developed a style that became fully realised during his stay in Arles” · “bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art”]].
 wikidata_id: Q5582
 relationships:
   - type: born_in
@@ -52,7 +52,13 @@ relationships:
   - type: influenced_by
     to: artist/katsushika-hokusai
     certainty: probable
-    notes_md: Praised *The Great Wave* in a letter to Theo (1888).
+    notes_md: "In a letter to Theo of 8 September 1888 he took up Theo’s own words on *The Great Wave* — “these waves are claws” — and answered: “Hokusai makes you cry out the same thing”."
+    sources:
+      - url: https://vangoghletters.org/vg/letters/let676/letter.html
+        note: "To Theo van Gogh, Arles, Saturday, 8 September 1888: “Hokusai makes you cry out the same thing — but in his case with his lines, his drawing, since in your letter you say to yourself: these waves are claws, the boat is caught in them, you can feel it.”"
+        source: van-gogh-letters
+        locator: letter 676
+        accessed: 2026-10-28
   - type: influenced_by
     to: artist/utagawa-hiroshige
     period: 1887

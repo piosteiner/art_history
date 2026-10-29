@@ -1,2 +1,29 @@
 public_id: 100420
 name: Leicester Galleries
+kind: gallery
+founded: 1902
+place: london
+location: [-0.1232, 51.5181]
+wikidata_id: Q16996132
+metadata:
+  sources: [Wikidata Q16996132 (retrieved 2026-10-28)]
+identifiers:
+  ulan: "500301853"
+  viaf: "172481120"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q16996132
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q16996132
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q16996132
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q16996132

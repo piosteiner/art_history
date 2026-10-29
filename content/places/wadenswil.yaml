@@ -1,0 +1,16 @@
+public_id: 103275
+name: Wädenswil
+kind: site
+location: [8.67222, 47.23028]
+wikidata_id: Q69718
+metadata:
+  sources: [Wikidata Q69718 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q69718
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q69718

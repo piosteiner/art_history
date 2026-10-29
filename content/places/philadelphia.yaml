@@ -1,0 +1,44 @@
+public_id: 103066
+name: Philadelphia
+names:
+  - lang: ja
+    role: translation
+    text: フィラデルフィア
+  - lang: zh
+    role: translation
+    text: 费城;費城
+  - lang: ko
+    role: translation
+    text: 필라델피아
+  - lang: fr
+    role: translation
+    text: Philadelphie
+  - lang: it
+    role: translation
+    text: Filadelfia
+  - lang: ru
+    role: translation
+    text: Филадельфия
+  - lang: pt
+    role: translation
+    text: Filadélfia
+kind: settlement
+parent: united-states
+country_code: US
+location: [-75.16361, 39.95278]
+wikidata_id: Q1345
+metadata:
+  sources: [Wikidata Q1345 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1345
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1345
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1345

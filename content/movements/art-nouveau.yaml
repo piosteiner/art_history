@@ -1,5 +1,10 @@
 public_id: 100987
 name: Art Nouveau
+names:
+  - Art-Nouveau
+  - lang: de
+    role: translation
+    text: Jugendstil
 kind: style
 period: c. 1890–c. 1910
 wikidata_id: Q34636
@@ -10,9 +15,16 @@ relationships:
     to: place/europe
     period: c. 1890–c. 1910
     sources: ["Getty Art & Architecture Thesaurus, “Art Nouveau” (AAT 300021430): “flourished in Europe and the United States from about 1890 to 1910”", "Wikidata, Art Nouveau (Q34636): start time 1880s, end time 1910s"]
+identifiers:
+  gnd: 4028939-4
 sources:
   kind:
-    - accessed: 2026-10-18
+    - accessed: 2026-10-28
       property: P31
       wikidata: Q34636
-  period: ["Getty Art & Architecture Thesaurus, “Art Nouveau” (AAT 300021430): “flourished in Europe and the United States from about 1890 to 1910”", "Wikidata, Art Nouveau (Q34636): start time 1880s, end time 1910s"]
+  period:
+    - "Getty Art & Architecture Thesaurus, “Art Nouveau” (AAT 300021430): “flourished in Europe and the United States from about 1890 to 1910”"
+    - "Wikidata, Art Nouveau (Q34636): start time 1880s, end time 1910s"
+    - url: https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=nid%3D4028939-4
+      source: portal-dnb-de
+      accessed: 2026-10-28

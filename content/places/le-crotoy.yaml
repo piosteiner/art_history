@@ -1,0 +1,16 @@
+public_id: 103270
+name: Le Crotoy
+kind: settlement
+location: [1.625, 50.21583]
+wikidata_id: Q61816
+metadata:
+  sources: [Wikidata Q61816 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q61816
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q61816

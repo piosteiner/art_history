@@ -1,0 +1,16 @@
+public_id: 103129
+name: Bayreuth
+kind: site
+location: [11.57833, 49.94806]
+wikidata_id: Q3923
+metadata:
+  sources: [Wikidata Q3923 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3923
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3923

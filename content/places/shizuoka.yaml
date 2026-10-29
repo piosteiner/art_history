@@ -1,0 +1,16 @@
+public_id: 103148
+name: Shizuoka
+kind: settlement
+location: [138.3825, 34.97556]
+wikidata_id: Q174691
+metadata:
+  sources: [Wikidata Q174691 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q174691
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q174691

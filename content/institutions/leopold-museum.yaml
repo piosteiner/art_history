@@ -14,7 +14,17 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Wien_07_Leopold_Museum_a.jpg
     license: CC0
     credit: Gugerell
+identifiers:
+  bnf: "159090775"
+  gnd: 5337960-3
+  idref: "080181848"
+  lc: nr00025111
+  viaf: "124783227"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q59435
   place:
     - accessed: 2026-10-07
       property: P131

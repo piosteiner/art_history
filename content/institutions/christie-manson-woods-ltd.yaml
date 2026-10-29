@@ -1,2 +1,26 @@
 public_id: 100312
 name: Christie, Manson & Woods Ltd.
+kind: auction house
+founded: 1766
+place: london
+website_url: https://www.christies.com
+wikidata_id: Q503176
+metadata:
+  sources: [Wikidata Q503176 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 103357306X
+  lc: no95020474
+  viaf: "152888287"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q503176
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q503176
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q503176

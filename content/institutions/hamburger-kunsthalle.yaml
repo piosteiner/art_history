@@ -1,12 +1,41 @@
 public_id: 100499
 name: Hamburger Kunsthalle
+names: [Kunsthalle Hamburg]
+kind: museum
 founded: 1868
 place: hamburg
+location: [10.00306, 53.555]
+address: Glockengießerwall 5, 20095 Hamburg
+website_url: https://www.hamburger-kunsthalle.de/
 wikidata_id: Q169542
 metadata:
   sources: [Wikidata Q169542 (retrieved 2026-10-16)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d1/Hamburger-kunsthalle-alter-treppenaufgang.jpg/1280px-Hamburger-kunsthalle-alter-treppenaufgang.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hamburger-kunsthalle-alter-treppenaufgang.jpg
+    license: GFDL 1.2
+    credit: Daniela Kloth
+identifiers:
+  bnf: "118698516"
+  gnd: 2013051-X
+  idref: 02645310X
+  lc: n50021971
+  ulan: "500243484"
+  viaf: "140632142"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q169542
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q169542
   founded:
     - accessed: 2026-10-16
       property: P571
+      wikidata: Q169542
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q169542

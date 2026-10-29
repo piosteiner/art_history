@@ -1,0 +1,16 @@
+public_id: 102941
+name: La Tour-de-Peilz
+kind: site
+location: [6.86667, 46.45]
+wikidata_id: Q69721
+metadata:
+  sources: [Wikidata Q69721 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q69721
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q69721

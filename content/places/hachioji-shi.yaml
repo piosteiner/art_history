@@ -1,0 +1,16 @@
+public_id: 103064
+name: Hachiōji-shi
+kind: settlement
+location: [139.316, 35.66644]
+wikidata_id: Q208863
+metadata:
+  sources: [Wikidata Q208863 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q208863
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q208863

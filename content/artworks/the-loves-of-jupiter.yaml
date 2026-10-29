@@ -1,10 +1,27 @@
 public_id: 101309
 title: The Loves of Jupiter
+names:
+  - lang: fr
+    role: translation
+    text: Les Amours de Jupiter
+creator: antonio-da-correggio
 kind: series
 wikidata_id: Q118323285
 metadata:
   sources: [Wikidata Q118323285 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Antonio_Allegri%2C_called_Correggio_-_The_Abduction_of_Ganymede_-_Google_Art_Project.jpg/1280px-Antonio_Allegri%2C_called_Correggio_-_The_Abduction_of_Ganymede_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonio_Allegri,_called_Correggio_-_The_Abduction_of_Ganymede_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Antonio da Correggio
 sources:
+  names:
+    - accessed: 2026-10-28
+      wikidata: Q118323285
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q118323285
   title_status:
     - accessed: 2026-10-19
       wikidata: Q118323285

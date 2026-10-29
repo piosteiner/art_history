@@ -1,0 +1,18 @@
+public_id: 103000
+name: Maaseik
+kind: site
+location: [5.78556, 51.10194]
+wikidata_id: Q110989
+metadata:
+  sources: [Wikidata Q110989 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4321291-8
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q110989
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q110989

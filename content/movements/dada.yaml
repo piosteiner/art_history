@@ -1,0 +1,16 @@
+public_id: 103174
+name: Dada
+kind: movement
+period: 1910/1919
+wikidata_id: Q6034
+metadata:
+  sources: [Wikidata Q6034 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q6034
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q6034

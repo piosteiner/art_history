@@ -7,6 +7,89 @@ death: 1825-12-29
 wikidata_id: Q83155
 metadata:
   sources: [Wikidata Q83155 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q83155
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q83155
+  - type: died_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q83155
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q83155
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q83155
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q83155
+  - type: studied_at
+    to: institution/academie-de-saint-luc
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q83155
+  - type: studied_at
+    to: institution/academie-royale-de-peinture-et-de-sculpture
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q83155
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q83155
+  - type: studied_at
+    to: institution/university-of-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q83155
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q83155
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/David_Self_Portrait.jpg/1280px-David_Self_Portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:David_Self_Portrait.jpg
+    license: Public domain
+    credit: Jacques-Louis David
+identifiers:
+  bnf: "125243831"
+  dome: "2643"
+  gnd: "118523945"
+  idref: "034492771"
+  kulturnav: d4fa3e04-e6b2-4ea0-be1d-d67d48ef79e1
+  lc: n50035639
+  nlk: KAC201719241
+  rkd: "20163"
+  ulan: "500115221"
+  viaf: "66575297"
 sources:
   birth:
     - accessed: 2026-10-20

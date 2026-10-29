@@ -2,3 +2,28 @@ public_id: 101391
 name: Frederik Muller & Cie
 kind: auction house
 place: amsterdam
+location: [4.89517, 52.36791]
+address: Nieuwe Doelenstraat 16-18
+wikidata_id: Q18821838
+metadata:
+  sources: [Wikidata Q18821838 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/Amsterdam_-_Nieuwe_Doelenstraat_16d.jpg/1280px-Amsterdam_-_Nieuwe_Doelenstraat_16d.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Amsterdam_-_Nieuwe_Doelenstraat_16d.jpg
+    license: CC BY 3.0
+    credit: A. Bakker
+identifiers:
+  bnf: 13301993n
+  idref: "148613241"
+  lc: n83132153
+  ulan: "500439888"
+  viaf: "122861848"
+sources:
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q18821838
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q18821838

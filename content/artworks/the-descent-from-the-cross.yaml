@@ -46,7 +46,7 @@ inventory_number: P002825
 web_url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
 on_loan: true
 on_loan_since: 1936
-description_md: "Rogier van der Weyden’s Deposition, painted before 1443 for the chapel of Our Lady Outside the Walls in Leuven: Christ’s body lowered from the cross, the fainting Virgin echoing his pose, the figures set in a shallow gilded shrine. Mary of Hungary acquired it; it came to Spain and to El Escorial."
+description_md: "Rogier van der Weyden’s Deposition, painted before 1443[[source/prado-el-descendimiento|„La copia más antigua que puede fecharse, el Tríptico Edelheere de 1443 …, demuestra que ya estaba terminado en ese año“]] for the chapel of Our Lady Outside the Walls in Leuven[[source/prado-el-descendimiento|„El Descendimiento se pintó para la capilla de Nuestra Señora Extramuros de Lovaina“]]: Christ’s body lowered from the cross, the fainting Virgin echoing his pose[[source/prado-el-descendimiento|„A la izquierda, la Virgen se ha desvanecido y ha caído al suelo en una postura que repite la del cuerpo muerto de Cristo“]], the figures set in a shallow gilded shrine. Mary of Hungary acquired it; it came to Spain and to El Escorial[[source/prado-el-descendimiento|„Comprado a la capilla lovaniense por María de Hungría, en 1549 colgaba en la capilla de su palacio en Binche.“ · „Llevado al Escorial en 1566, permaneció allí hasta su traslado al Museo del Prado en 1939“]]."
 wikidata_id: Q568847
 metadata:
   sources: [Wikidata Q568847 (retrieved 2026-10-19)]
@@ -94,21 +94,34 @@ images:
     credit: Rogier van der Weyden
 provenance:
   - owner: institution/chapel-of-our-lady-outside-the-walls-leuven
+    acquired: before 1443
+    ended: 1548/1549
+    ended_label: c. 1548
+    method: commission
     place: leuven
+    label: for the high altar of the guild chapel of the Great Crossbowmen of Leuven
     sources:
       - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
         note: "“Capilla de Nuestra Señora Extramuros de Lovaina (Bélgica);” — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
         source: museo-del-prado-coleccion
         accessed: 2022-09-29
+      - source: prado-el-descendimiento
   - owner: person/mary-of-hungary
     further_places: [royal-palace-of-el-pardo]
+    acquired: 1548/1549
+    acquired_label: c. 1548
+    method: exchange
     place: binche-palace
     label: for the chapel of her palace at Binche; later sent to Spain, to the chapel of El Pardo
+    notes_md: Wanted by her nephew, the future Philip II. The Dutch Wikipedia names a price of 500 florins.
     sources:
       - url: https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7
         note: "“adquirido por María de Hungría, para la capilla del Palacio de Binche; posteriormente enviado a España, a la capilla de El Pardo;” — read in the Internet Archive’s copy of 2022-09-29: https://web.archive.org/web/20220929054241/https://www.museodelprado.es/coleccion/obra-de-arte/wd/856d822a-dd22-4425-bebd-920a1d416aa7"
         source: museo-del-prado-coleccion
         accessed: 2022-09-29
+      - source: wikipedia-en-descent-from-the-cross-van-der-weyden
+      - source: wikipedia-nl-kapel-onze-lieve-vrouw-ginder-buiten
+    exchanged_for_text: a copy by Michiel Coxcie and a new organ
   - owner: institution/spanish-royal-collection
     acquired: 1574 or earlier
     place: san-lorenzo-de-el-escorial

@@ -1,0 +1,16 @@
+public_id: 103267
+name: boulevard de Magenta
+kind: site
+location: [2.35722, 48.87472]
+wikidata_id: Q895077
+metadata:
+  sources: [Wikidata Q895077 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q895077
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q895077

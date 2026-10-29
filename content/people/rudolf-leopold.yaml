@@ -1,5 +1,7 @@
 public_id: 101485
 name: Rudolf Leopold
+given_name: Rudolf
+family_name: Leopold
 names:
   - Rudolph Leopold
   - lang: ja
@@ -18,6 +20,13 @@ death: 2010-06-29
 wikidata_id: Q78747
 metadata:
   sources: [Wikidata Q78747 (retrieved 2026-10-19)]
+relationships:
+  - type: founded
+    to: institution/leopold-museum
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q59435
 identifiers:
   bnf: 13167156k
   gnd: "118844253"

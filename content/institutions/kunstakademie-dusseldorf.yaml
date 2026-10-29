@@ -1,11 +1,40 @@
 public_id: 100848
 name: Kunstakademie Düsseldorf
+names: [Düsseldorf Art Academy, Staatliche Kunstakademie]
+kind: art academy
 founded: 1773
+place: dusseldorf
+location: [6.77365, 51.23054]
+website_url: http://www.kunstakademie-duesseldorf.de/
 wikidata_id: Q662355
 metadata:
   sources: [Wikidata Q662355 (retrieved 2026-10-18)]
+relationships:
+  - type: part_of
+    to: institution/dh-nrw
+    sources:
+      - accessed: 2026-10-28
+        property: P361
+        wikidata: Q662355
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Kunstakademie_in_Duesseldorf-Altstadt%2C_von_Nordwesten.jpg/1280px-Kunstakademie_in_Duesseldorf-Altstadt%2C_von_Nordwesten.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kunstakademie_in_Duesseldorf-Altstadt,_von_Nordwesten.jpg
+    license: CC BY 3.0
+    credit: Wiegels
+identifiers:
+  gnd: 2121796-8
+  lc: n82060134
+  viaf: "122466561"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q662355
   founded:
     - accessed: 2026-10-18
       property: P571
+      wikidata: Q662355
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q662355

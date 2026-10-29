@@ -1,0 +1,16 @@
+public_id: 103228
+name: Opava
+kind: site
+location: [17.90444, 49.93806]
+wikidata_id: Q156080
+metadata:
+  sources: [Wikidata Q156080 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q156080
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q156080

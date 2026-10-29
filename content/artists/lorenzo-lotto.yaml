@@ -7,6 +7,88 @@ death: 1556
 wikidata_id: Q310973
 metadata:
   sources: [Wikidata Q310973 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q310973
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q310973
+  - type: died_in
+    to: place/loreto
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q310973
+  - type: worked_in
+    to: place/ancona
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q310973
+  - type: worked_in
+    to: place/bergamo
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q310973
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q310973
+  - type: worked_in
+    to: place/treviso
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q310973
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q310973
+  - type: student_of
+    to: artist/giovanni-bellini
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q310973
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q310973
+  - type: associated_with
+    to: movement/mannerism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q310973
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Lotto_Lorenzo_%28attributed%29_presumably_self_portrait_31862-p.jpg/1280px-Lotto_Lorenzo_%28attributed%29_presumably_self_portrait_31862-p.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lotto_Lorenzo_(attributed)_presumably_self_portrait_31862-p.jpg
+    license: Public domain
+    credit: Attributed to Lorenzo Lotto
+identifiers:
+  bnf: 12072466d
+  dome: "3368"
+  gnd: "118780530"
+  idref: "029008190"
+  kulturnav: ed2fbc98-f7e0-45f0-92a9-d3a52ecd295d
+  lc: n50042418
+  rkd: "50989"
+  ulan: "500015631"
+  viaf: "22165049"
 sources:
   birth:
     - accessed: 2026-10-20

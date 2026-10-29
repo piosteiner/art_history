@@ -1,0 +1,87 @@
+public_id: 102947
+name: François-Édouard Picot
+given_name: François-Édouard
+family_name: Picot
+birth: 1786-10-17
+death: 1868-03-15
+wikidata_id: Q5233
+metadata:
+  sources: [Wikidata Q5233 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q5233
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5233
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5233
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5233
+  - type: student_of
+    to: artist/jacques-louis-david
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q83155
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q5233
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q5233
+  - type: studied_at
+    to: institution/french-academy-in-rome
+    period: 1813/1817
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q5233
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5233
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Fran%C3%A7ois-Edouard_Picot_BNF_Gallica.jpg/1280px-Fran%C3%A7ois-Edouard_Picot_BNF_Gallica.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois-Edouard_Picot_BNF_Gallica.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Picot%2C_Fran%C3%A7ois_Edouard.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Picot,_Fran%C3%A7ois_Edouard.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "149623166"
+  gnd: "117687111"
+  idref: "122581199"
+  rkd: "63340"
+  ulan: "500027989"
+  viaf: "34726702"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q5233
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q5233

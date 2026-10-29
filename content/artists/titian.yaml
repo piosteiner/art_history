@@ -1,10 +1,114 @@
 public_id: 101171
 name: Titian
+names:
+  - lang: it
+    role: original
+    text: Tiziano Vecellio
 birth: c. 1490
 death: 1576-09-06
 wikidata_id: Q47551
 metadata:
   sources: [Wikidata Q47551 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q47551
+  - type: born_in
+    to: place/pieve-di-cadore
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q47551
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q47551
+  - type: worked_in
+    to: place/augsburg
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q47551
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q47551
+  - type: worked_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q47551
+  - type: worked_in
+    to: place/padua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q47551
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q47551
+  - type: worked_in
+    to: place/rome
+    period: 1545/1546
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q47551
+  - type: student_of
+    to: artist/gentile-bellini
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q290407
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q47551
+  - type: student_of
+    to: artist/giovanni-bellini
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q17169
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q47551
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q47551
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q47551
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Vecellio_di_Gregorio_Tiziano_-_autoritratto.jpg/1280px-Vecellio_di_Gregorio_Tiziano_-_autoritratto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vecellio_di_Gregorio_Tiziano_-_autoritratto.jpg
+    license: Public domain
+    credit: Titian
+identifiers:
+  bnf: 11940043z
+  gnd: "118622994"
+  idref: "027336530"
+  kulturnav: 44d8a621-b96f-4d9e-8e5b-75c75480f317
+  lc: n79074519
+  rkd: "77655"
+  ulan: "500031075"
+  viaf: "109266837"
 sources:
   birth:
     - accessed: 2026-10-19

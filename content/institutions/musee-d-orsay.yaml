@@ -1,11 +1,39 @@
 public_id: 101834
 name: Musée d'Orsay
+kind: museum
 founded: 1986
+place: paris
+location: [2.32653, 48.85997]
+website_url: https://www.musee-orsay.fr
 wikidata_id: Q23402
 metadata:
   sources: [Wikidata Q23402 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Gare_d%27Orsay_%2849570190081%29.jpg/1280px-Gare_d%27Orsay_%2849570190081%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gare_d%27Orsay_(49570190081).jpg
+    license: CC BY-SA 2.0
+    credit: Cheng-en Cheng from Taichung City, Taiwan
+identifiers:
+  bnf: 11990767x
+  gnd: 667289-9
+  idref: "027980227"
+  lc: n84128587
+  ulan: "500310001"
+  viaf: "130307757"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q23402
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q23402
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q23402
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q23402

@@ -1,0 +1,16 @@
+public_id: 103230
+name: Leiden
+kind: settlement
+location: [4.49, 52.16]
+wikidata_id: Q43631
+metadata:
+  sources: [Wikidata Q43631 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q43631
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q43631

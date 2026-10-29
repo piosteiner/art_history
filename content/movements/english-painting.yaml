@@ -1,0 +1,11 @@
+public_id: 103288
+name: English painting
+kind: movement
+wikidata_id: Q107424419
+metadata:
+  sources: [Wikidata Q107424419 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q107424419

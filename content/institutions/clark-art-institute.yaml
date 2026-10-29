@@ -1,6 +1,7 @@
 public_id: 100152
 name: Clark Art Institute
 names: [Sterling & Francine Clark Art Institute, Sterling and Francine Clark Art Institute, The Clark, Clark Art Museum]
+kind: museum
 founded: 1955
 place: williamstown
 location: [-73.2136, 42.7078]
@@ -14,11 +15,17 @@ images:
     license: Public domain
     credit: Daderot
 identifiers:
+  bnf: 12210460z
   gnd: 1056275-8
+  idref: "035309199"
   lc: n78096939
   ulan: "500125194"
   viaf: "145164344"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1465805
   place:
     - accessed: 2026-10-09
       property: P131

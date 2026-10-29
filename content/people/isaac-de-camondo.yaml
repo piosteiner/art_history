@@ -1,5 +1,7 @@
 public_id: 101889
 name: Isaac de Camondo
+given_name: Isaac
+family_name: de Camondo
 names:
   - Isaac de, Count Camondo
   - Comte Isaac de Camondo
@@ -23,6 +25,13 @@ death: 1911-04-07
 wikidata_id: Q94319
 metadata:
   sources: [Wikidata Q94319 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: institution/societe-des-amis-du-louvre
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q3488087
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Isaac_de_Camondo_%281851-1911%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Isaac_de_Camondo_(1851-1911).jpg

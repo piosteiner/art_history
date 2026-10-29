@@ -1,0 +1,16 @@
+public_id: 102668
+name: Sakura
+kind: settlement
+location: [140.22394, 35.72347]
+wikidata_id: Q498011
+metadata:
+  sources: [Wikidata Q498011 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q498011
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q498011

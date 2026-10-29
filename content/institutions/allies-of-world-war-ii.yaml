@@ -1,5 +1,7 @@
 public_id: 102326
 name: Allies of World War II
+names: [Allies of the Second World War]
+kind: military alliance
 founded: 1939
 wikidata_id: Q329888
 metadata:
@@ -11,6 +13,11 @@ relationships:
       - accessed: 2026-10-24
         property: P710
         wikidata: Q362
+identifiers:
+  bnf: 11726114b
+  gnd: 4001297-9
+  lc: n50064285
+  viaf: "145953695"
 sources:
   founded:
     - accessed: 2026-10-24

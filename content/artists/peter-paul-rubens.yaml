@@ -7,6 +7,278 @@ death: 1640-05-30
 wikidata_id: Q5599
 metadata:
   sources: [Wikidata Q5599 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spanish-netherlands
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q5599
+  - type: born_in
+    to: place/siegen
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5599
+  - type: died_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5599
+  - type: lived_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5599
+  - type: lived_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5599
+  - type: lived_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5599
+  - type: lived_in
+    to: place/siegen
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q5599
+  - type: worked_in
+    to: place/affligem
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/alicante
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/breda
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/calais
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/delft
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/dover
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/elewijt
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/la-rochelle
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/liege
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/maastricht
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/san-lorenzo-de-el-escorial
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/valladolid
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/verona
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/cologne
+    period: 1578/1587
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/antwerp
+    period: 1590/1600-03-09
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: worked_in
+    to: place/mantua
+    period: 1600-07/1608-05-05
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5599
+  - type: influenced_by
+    to: artist/paolo-veronese
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q5599
+  - type: influenced_by
+    to: artist/pieter-brueghel-the-elder
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q5599
+  - type: studied_at
+    to: institution/old-university-of-leuven
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q5599
+  - type: studied_at
+    to: institution/university-of-cambridge
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q5599
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5599
+  - type: associated_with
+    to: movement/flemish-baroque-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5599
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg/1280px-Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sir_Peter_Paul_Rubens_-_Portrait_of_the_Artist_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Peter Paul Rubens
+identifiers:
+  bnf: 12149490h
+  dome: "3377"
+  gnd: 11860354X
+  idref: 02998551X
+  kulturnav: 56130060-4f7d-45cb-b5f9-1dd41a8951bd
+  lc: n79055561
+  nlk: KAC199623690
+  rkd: "68737"
+  ulan: "500002921"
+  viaf: "56647196"
 sources:
   birth:
     - accessed: 2026-10-19

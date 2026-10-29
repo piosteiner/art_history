@@ -2,18 +2,63 @@ public_id: 100743
 name: Yohanan Simon
 given_name: Yohanan
 family_name: Simon
+names: [Hans-Yohanan Simon]
 birth: 1905-11-03
 death: 1976-01-16
 wikidata_id: Q8054451
 metadata:
   sources: [Wikidata Q8054451 (retrieved 2026-10-18)]
 relationships:
+  - type: nationality
+    to: polity/israel
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q8054451
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q8054451
+  - type: died_in
+    to: place/tel-aviv
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q8054451
   - type: student_of
     to: artist/andre-derain
     sources:
       - accessed: 2026-10-18
         property: P802
         wikidata: Q156272
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q8054451
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q8054451
+  - type: associated_with
+    to: movement/ofakim-hadashim
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q8054451
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/50/Yohanan_Simon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yohanan_Simon.jpg
+    license: CC BY-SA 3.0
+    credit: סטנלי בטקין
+identifiers:
+  gnd: "123675316"
+  idref: "235162957"
+  lc: no2001097217
+  ulan: "500129407"
+  viaf: "18137558"
 sources:
   birth:
     - accessed: 2026-10-18

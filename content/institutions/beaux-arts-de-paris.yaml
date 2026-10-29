@@ -1,11 +1,32 @@
 public_id: 100213
 name: Beaux-Arts de Paris
+names: ["National School of Fine Arts (Paris, France)"]
+kind: art academy
 founded: 1797-04-20
+place: paris
+location: [2.33328, 48.85681]
+website_url: https://www.beauxartsparis.fr/en
 wikidata_id: Q273593
 metadata:
   sources: [Wikidata Q273593 (retrieved 2026-10-12)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Paris_6_-_ENSBA_01.jpg/1280px-Paris_6_-_ENSBA_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paris_6_-_ENSBA_01.jpg
+    license: CC BY-SA 3.0
+    credit: Selbymay
+identifiers:
+  bnf: 11866085k
+  gnd: 2070913-4
+  idref: "026408139"
+  lc: no2018130979
+  ulan: "500212030"
+  viaf: "148468807"
 sources:
   founded:
     - accessed: 2026-10-12
       property: P571
+      wikidata: Q273593
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q273593

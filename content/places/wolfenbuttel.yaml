@@ -1,0 +1,16 @@
+public_id: 102945
+name: Wolfenbüttel
+kind: site
+location: [10.53694, 52.16222]
+wikidata_id: Q4122
+metadata:
+  sources: [Wikidata Q4122 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q4122
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q4122

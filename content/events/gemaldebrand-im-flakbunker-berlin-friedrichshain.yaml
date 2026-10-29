@@ -6,17 +6,51 @@ names:
   - lang: de
     role: translation
     text: Feuer im Flakturm Friedrichshain und Verschwinden der dort aufbewahrten Gemälde
+  - lang: de
+    role: alternative
+    text: Brände im Leitturm des Flakbunkers Friedrichshain
 kind: Brand
 parent: world-war-ii
-period: 1945-05-06
-place: germany
+period: 1945-05-05/1945-05-18
+place: berlin
+location: [13.43711, 52.528]
 description_md: |-
-  Es sollen sich nach Kriegsende zwei Brände mit ungeklärter Ursache im Bunker ereignet haben, denen die dort verbliebenen Gemälde zum Opfer gefallen waren. (https://www.smb.museum/museen-einrichtungen/gemaeldegalerie/sammeln-forschen/forschung/verlorene-meisterwerke/)
+  Der Flakbunker im Volkspark Friedrichshain bestand aus zwei Türmen, einem Geschützturm und dem etwa 300 Meter entfernten Leitturm; gebaut wurden sie von April bis Oktober 1941.[[source/dehnel-2021-friedrichshain|S. 133–134, Anm. 7 und 13]] Mit dem Bunker am Zoo war er einer der wichtigsten Bergungsorte der Berliner Museen.[[source/dehnel-2021-friedrichshain|121]] Seit September 1941 lagerten die Staatlichen Museen im Leitturm Kunstwerke ein, bis September 1942 war die Einlagerung im Wesentlichen abgeschlossen.[[source/smb-madonna-rueckkehr]] Ein Raumplan vom 2. September 1941 teilt die drei Stockwerke unter Gemäldegalerie, Schlossmuseum, Skulpturenabteilung, Islamischer und Ostasiatischer Abteilung, Kupferstichkabinett und Antikenabteilung auf.[[source/dehnel-2021-friedrichshain|123]]
 
-  Wikipedia listet Gemälde, welche vermutlich verbrannten. [Wikipedia](https://de.wikipedia.org/wiki/Liste_der_im_Flakbunker_Berlin-Friedrichshain_vermutlich_verbrannten_Gem%C3%A4lde_der_Gem%C3%A4ldegalerie) Oder direkt über [Wikimedia](https://commons.wikimedia.org/wiki/Category:Paintings_lost_from_Kaiser-Friedrich-Museum?uselang=de)
+  Im März 1945 wurden die bedeutendsten Gemälde in Bergwerke nach Thüringen gebracht, wo amerikanische Truppen sie später bargen; am 7. April wurden die Transporte eingestellt.[[source/smb-madonna-rueckkehr]] Im Leitturm blieben 434 Gemälde zurück, vor allem großformatige, die nicht in die Förderkörbe der Schächte passten.[[source/smb-gemaeldegalerie-verlorene-meisterwerke]]
+
+  ## Die beiden Brände
+
+  Am 2. Mai 1945 wurde der Bunker kampflos der Roten Armee übergeben.[[source/smb-madonna-rueckkehr]] Was danach geschah, lässt sich aus Aussagen von Museumsmitarbeitern rekonstruieren: Am 5. Mai war der Raum im dritten Stock aufgebrochen, Zivilisten und sowjetische Soldaten plünderten. Am 6. Mai war das erste Stockwerk ausgebrannt. Am 7. Mai fand Generaldirektor Otto Kümmel den Turm unbewacht, dunkel und noch warm vor. Am 18. Mai meldeten Mitarbeiter, dass nun auch das zweite und dritte Stockwerk gebrannt hatten; Zivilisten trugen kleinere Kunstwerke hinaus.[[source/dehnel-2021-friedrichshain|123–124]] Es gab also zwei Brände, am 5./6. Mai und zwischen dem 14. und 18. Mai 1945.[[source/dehnel-2021-friedrichshain|124]]
+
+  Ihre Ursache ist bis heute ungeklärt.[[source/smb-gemaeldegalerie-verlorene-meisterwerke]] Sowjetische Berichte machten Deutsche verantwortlich und hielten fest, dass ausgerechnet die drei Räume mit den Museumsbeständen gebrannt hatten; ein sowjetischer Untersucher gab an, die Kisten seien mit Thermit angezündet worden. Weil Thermit nach einem Brand keine Spuren hinterlässt, wirft gerade diese Angabe die Frage auf, ob das Feuer nicht von sowjetischer Seite gelegt wurde.[[source/dehnel-2021-friedrichshain|S. 125, Anm. 20]]
+
+  ## Was verloren ging – und was nicht
+
+  Die Gemäldegalerie verlor im Krieg etwa 580 Werke, den größten Teil davon in diesen Bränden: allein zehn Bilder von Peter Paul Rubens, je fünf von Paolo Veronese und Anthonis van Dyck und drei von Caravaggio,[[source/smb-gemaeldegalerie-verlorene-meisterwerke]] unter ihnen [[artwork/san-matteo-e-langelo-prima-versione|die erste Fassung des Heiligen Matthäus mit dem Engel]]. Ein sowjetischer Bericht von Ende Mai 1945 nennt außerdem Werke von Signorelli, Fra Angelico, Daumier und Menzel, antikes Glas, Keramik und Bronzen sowie Skulpturen von Arnolfo di Cambio, Giovanni Pisano und Donatello.[[source/dehnel-2021-friedrichshain|125]]
+
+  Nicht alles verbrannte. Im Juli 1945 grub eine sowjetische Brigade auf kaum 40 Quadratmetern fast 2000 Objekte aus dem Schutt; Hunderte Kunstwerke aus dem Bunker kamen in die Sowjetunion.[[source/dehnel-2021-friedrichshain|S. 121, 125]] Ein Teil kehrte 1958 nach Berlin zurück, etwa der Caffarelli-Sarkophag und Arnolfo di Cambios schwer beschädigte *Dormitio Virginis*; anderes, darunter koptische Textilien, ist bis heute in Moskau.[[source/dehnel-2021-friedrichshain|127–131]] Kleine Gemälde wurden vor den Bränden fortgetragen und tauchten später im Handel auf, Aelbrecht Bouts' *Johannes der Täufer und der heilige Augustinus* 1946 und eine lombardische *Madonna mit dem Kinde* 2012; beide kehrten in die Gemäldegalerie zurück.[[source/dehnel-2021-friedrichshain|131]][[source/smb-madonna-rueckkehr]] Ob wirklich alle verschollenen Werke verbrannt sind, hält die Forschung deshalb für offen.[[source/dehnel-2021-friedrichshain|131–132]]
+
+  ## Danach
+
+  Die Rote Armee sprengte die Türme im Mai 1946, was nur teilweise gelang; die Reste wurden mit Trümmerschutt überdeckt und bilden heute den Großen und den Kleinen Bunkerberg.[[source/wikipedia-de-flakturm]] Von fast allen verlorenen Bildern haben sich die Glasnegative erhalten, die der Museumsfotograf Gustav Schwarz ab 1925 aufnahm; die Gemäldegalerie hat sie digitalisiert und online gestellt.[[source/smb-gemaeldegalerie-verlorene-meisterwerke]] Eine Liste der vermutlich verbrannten Gemälde führt Wikipedia.[[source/wikipedia-de-flakbunker-friedrichshain-gemaelde]]
 wikidata_id: Q110787858
 metadata:
   sources: [Wikidata Q110787858 (retrieved 2026-10-24)]
+relationships:
+  - type: concerns
+    to: institution/bode-museum-berlin
+    sources:
+      - source: dehnel-2021-friedrichshain
+        locator: "125"
+  - type: concerns
+    to: institution/gemaldegalerie-berlin
+    sources:
+      - source: smb-gemaeldegalerie-verlorene-meisterwerke
+  - type: concerns
+    to: artwork/san-matteo-e-langelo-prima-versione
+    sources:
+      - source: smb-gemaeldegalerie-verlorene-meisterwerke
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/4/44/Bundesarchiv_Bild_183-M1203-316%2C_Berlin%2C_gesprengter_Bunker_im_Friedrichshain.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original
     source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-M1203-316,_Berlin,_gesprengter_Bunker_im_Friedrichshain.jpg
@@ -25,10 +59,10 @@ images:
     caption: Bundesarchiv Bild 183-M1203-316, Berlin, gesprengter Bunker im Friedrichshain
 sources:
   place:
-    - accessed: 2026-10-24
-      property: P276
-      wikidata: Q110787858
+    - source: dehnel-2021-friedrichshain
+      locator: "121"
   period:
-    - accessed: 2026-10-24
-      property: P585
-      wikidata: Q110787858
+    - source: dehnel-2021-friedrichshain
+      locator: "124"
+  location:
+    - source: wikipedia-de-flakturm

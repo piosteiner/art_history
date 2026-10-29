@@ -2,13 +2,82 @@ public_id: 100194
 name: Giovanni Segantini
 given_name: Giovanni
 family_name: Segantini
+names: [Giovanni Battista Emanuele Maria Segatini]
 birth: 1858-01-15
 death: 1899-09-28
 wikidata_id: Q379300
 metadata:
   sources: [Wikidata Q379300 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/austria-hungary
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q379300
+  - type: nationality
+    to: polity/konigreich-italien
+    period: 1861-03-17
+    period_label: from 17 March 1861
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q379300
+  - type: born_in
+    to: place/arco
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q379300
+  - type: died_in
+    to: place/schafberg
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q379300
+  - type: studied_at
+    to: institution/brera-academy
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q379300
+  - type: associated_with
+    to: movement/pointillism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q379300
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q379300
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/27/Giovanni_Segantini_%281858-1899%29%2C_ritratto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giovanni_Segantini_(1858-1899),_ritratto.jpg
+    license: CC0
+    credit: Unknown authorUnknown author
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/45/Segantini_1878.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Segantini_1878.jpg
+    license: CC BY-SA 3.0
+    credit: unknown, upload by Adrian Michael
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Segantini_Selbstportrait1893.jpg/1280px-Segantini_Selbstportrait1893.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Segantini_Selbstportrait1893.jpg
+    license: Public domain
+    credit: Giovanni Segantini
 identifiers:
+  bnf: 14969494z
+  dodis: P25918
   dome: "349"
+  gnd: "118612700"
+  hls: "022102"
+  idref: "055296068"
+  lc: n83019469
+  rkd: "71781"
+  sikart: "4000079"
+  ulan: "500005029"
+  viaf: "10120651"
 sources:
   birth:
     - accessed: 2026-10-09

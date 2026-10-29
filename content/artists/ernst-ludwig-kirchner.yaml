@@ -2,11 +2,92 @@ public_id: 101473
 name: Ernst Ludwig Kirchner
 given_name: Ernst Ludwig
 family_name: Kirchner
+names: [Louis de Marsalle]
 birth: 1880-05-06
 death: 1938-06-15
 wikidata_id: Q229272
 metadata:
   sources: [Wikidata Q229272 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q229272
+  - type: born_in
+    to: place/aschaffenburg
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q229272
+  - type: died_in
+    to: place/davos-frauenkirch
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q229272
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q229272
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q229272
+  - type: worked_in
+    to: place/nuremberg
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q229272
+  - type: member_of
+    to: movement/berlin-secession
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q229272
+  - type: member_of
+    to: movement/die-brucke
+    period: 1905
+    period_label: from 1905
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q229272
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q229272
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Ernst_Ludwig_Kirchner_-_Selbstportr%C3%A4t_in_der_Atelierwohnung_in_Berlin-Friedenau_%281913-15%29.jpg/1280px-Ernst_Ludwig_Kirchner_-_Selbstportr%C3%A4t_in_der_Atelierwohnung_in_Berlin-Friedenau_%281913-15%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_-_Selbstportr%C3%A4t_in_der_Atelierwohnung_in_Berlin-Friedenau_(1913-15).jpg
+    license: Public domain
+    credit: Ernst Ludwig Kirchner
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Ernst_Ludwig_Kirchner_%28c._1910%29.jpeg/1280px-Ernst_Ludwig_Kirchner_%28c._1910%29.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Ernst_Ludwig_Kirchner_(c._1910).jpeg
+    license: Public domain
+    credit: Ernst Ludwig Kirchner
+identifiers:
+  bnf: 12169570k
+  dodis: P25648
+  dome: "183"
+  gnd: "118562398"
+  hls: "021959"
+  idref: 03023669X
+  kulturnav: ea3815e9-c49a-4494-9fc3-c68e7bee9edd
+  lc: n50048850
+  nlk: KAC202260830
+  rkd: "44474"
+  sikart: "4023403"
+  ulan: "500027704"
+  viaf: "9888581"
 sources:
   birth:
     - accessed: 2026-10-19

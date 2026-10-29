@@ -8,12 +8,58 @@ wikidata_id: Q327364
 metadata:
   sources: [Wikidata Q327364 (retrieved 2026-10-18)]
 relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q327364
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q327364
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q327364
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q327364
   - type: student_of
     to: artist/jan-brueghel-the-elder
     sources:
       - accessed: 2026-10-18
         property: P802
         wikidata: Q209050
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q327364
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q327364
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8a/Portret_Jacques_Fouquier%2C_RP-P-2004-73-16.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portret_Jacques_Fouquier,_RP-P-2004-73-16.jpg
+    license: CC0
+    credit: Rijksmuseum
+identifiers:
+  bnf: 14974085w
+  gnd: "128593873"
+  idref: "127254277"
+  kulturnav: 85a5b5e4-2ea0-4aa0-b057-0649ab2ca86e
+  rkd: "28792"
+  ulan: "500115143"
+  viaf: "284360"
 sources:
   birth:
     - accessed: 2026-10-18

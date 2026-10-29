@@ -1,6 +1,7 @@
 public_id: 100140
 name: Gilcrease Museum
 names: [Thomas Gilcrease Institute of American History and Art, Gilcrease - The Museum of the Americas]
+kind: museum
 founded: 1943
 place: tulsa
 location: [-96.0214, 36.1747]
@@ -14,7 +15,16 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Gilcrease_-_Gro%C3%9Fer_Saal_mit_Schlacht_von_Chapultepec.jpg
     license: CC BY-SA 3.0
     credit: Wolfgang Sauber
+identifiers:
+  gnd: 1021802-6
+  idref: 09844803X
+  lc: n79099279
+  viaf: "133150718"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q14708424
   place:
     - accessed: 2026-10-09
       property: P131

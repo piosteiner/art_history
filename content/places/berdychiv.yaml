@@ -1,0 +1,16 @@
+public_id: 102989
+name: Berdychiv
+kind: site
+location: [28.6, 49.89194]
+wikidata_id: Q158799
+metadata:
+  sources: [Wikidata Q158799 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q158799
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q158799

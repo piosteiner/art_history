@@ -1,6 +1,8 @@
 public_id: 100084
 name: Cincinnati Art Museum
+kind: museum
 founded: 1881
+place: cincinnati
 location: [-84.49694, 39.11389]
 address: 953 Eden Park Dr.
 website_url: https://www.cincinnatiartmuseum.org
@@ -12,7 +14,21 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Cincinnati_Art_Museum_2015.jpg
     license: CC BY-SA 2.0
     credit: 5chw4r7z on Flickr
+identifiers:
+  bnf: 12157677k
+  idref: "030090784"
+  lc: n79058412
+  ulan: "500284805"
+  viaf: "239984674"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2970522
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q2970522
   address:
     - accessed: 2026-10-06
       property: P6375

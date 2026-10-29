@@ -2,7 +2,7 @@ public_id: 100276
 name: Meindert Hobbema
 given_name: Meindert
 family_name: Hobbema
-birth: 31 October 1638
+birth: 1638-10-31
 death: 1709-12-07
 wikidata_id: Q336908
 metadata:
@@ -38,6 +38,12 @@ relationships:
       - url: https://data.bnf.fr/ark:/12148/cb149527837
         source: bnf
         accessed: 2026-10-18
+  - type: student_of
+    to: artist/jacob-van-ruisdael
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q213612
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Portret_van_Meindert_Hobbema%2C_RP-T-1940-528.jpg/1280px-Portret_van_Meindert_Hobbema%2C_RP-T-1940-528.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portret_van_Meindert_Hobbema,_RP-T-1940-528.jpg

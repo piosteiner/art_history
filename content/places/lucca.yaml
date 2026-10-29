@@ -1,0 +1,16 @@
+public_id: 103160
+name: Lucca
+kind: settlement
+location: [10.51667, 43.85]
+wikidata_id: Q13373
+metadata:
+  sources: [Wikidata Q13373 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q13373
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q13373

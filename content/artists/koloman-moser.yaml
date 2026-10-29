@@ -2,11 +2,76 @@ public_id: 101479
 name: Koloman Moser
 given_name: Koloman
 family_name: Moser
+names: [Kolo Moser]
 birth: 1868-03-30
 death: 1918-10-18
 wikidata_id: Q45055
 metadata:
   sources: [Wikidata Q45055 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/cisleithania
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q45055
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q45055
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q45055
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q45055
+  - type: influenced_by
+    to: artist/ferdinand-hodler
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q45055
+  - type: studied_at
+    to: institution/akademie-der-bildenden-kunste-wien
+    period: 1886/1892
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q45055
+  - type: member_of
+    to: institution/vienna-secession
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q45055
+  - type: founded
+    to: institution/vienna-secession
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q208208
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/79/Koloman_Moser.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Koloman_Moser.jpg
+    license: Public domain
+identifiers:
+  bnf: "124790400"
+  dome: "274"
+  gnd: "118737112"
+  idref: "027783987"
+  kulturnav: c3fc22b9-4936-4197-8406-49fe4ba31009
+  lc: n82047170
+  rkd: "57939"
+  ulan: "500030689"
+  viaf: "37018321"
 sources:
   birth:
     - accessed: 2026-10-19

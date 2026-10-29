@@ -1,0 +1,16 @@
+public_id: 103278
+name: Pieve di Cadore
+kind: settlement
+location: [12.3753, 46.42871]
+wikidata_id: Q41065
+metadata:
+  sources: [Wikidata Q41065 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q41065
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q41065

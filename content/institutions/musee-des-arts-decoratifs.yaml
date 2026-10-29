@@ -17,6 +17,7 @@ names:
   - lang: ru
     role: translation
     text: Музей декоративного искусства
+kind: museum
 founded: 1905-05-29
 place: paris
 location: [2.33372, 48.86303]

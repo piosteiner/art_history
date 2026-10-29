@@ -2,11 +2,95 @@ public_id: 101163
 name: Rogier van der Weyden
 given_name: Rogier
 family_name: van der Weyden
+names: [Rogier De La Pasture Weyden]
 birth: 1399/1400
 death: 1464-06-27
 wikidata_id: Q68631
 metadata:
   sources: [Wikidata Q68631 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/burgundian-netherlands
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q68631
+  - type: born_in
+    to: place/tournai
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q68631
+  - type: died_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q68631
+  - type: worked_in
+    to: place/ferrara
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q68631
+  - type: worked_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q68631
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q68631
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q68631
+  - type: worked_in
+    to: place/tournai
+    period: 1427/1432
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q68631
+  - type: worked_in
+    to: place/brussels
+    period: 1435/1464
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q68631
+  - type: worked_in
+    to: place/italy
+    period: 1450/1455
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q68631
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q68631
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Rogier_van_der_Weyden_by_Jan_Wierix%2C_1572.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rogier_van_der_Weyden_by_Jan_Wierix,_1572.jpg
+    license: Public domain
+    credit: Attributed to Johannes Wierix
+identifiers:
+  bnf: 12002852c
+  gnd: "118860143"
+  idref: "028133277"
+  lc: n50082131
+  rkd: "83963"
+  ulan: "500008384"
+  viaf: "100171627"
 sources:
   birth:
     - accessed: 2026-10-19

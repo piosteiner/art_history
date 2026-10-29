@@ -1,5 +1,7 @@
 public_id: 102022
 name: Scipione Borghese
+given_name: Scipione
+family_name: Borghese
 names:
   - Cardinal Scipione Borghese
   - Scipion Caffarelli Borghèse
@@ -37,6 +39,19 @@ death: 1633-10-02
 wikidata_id: Q452570
 metadata:
   sources: [Wikidata Q452570 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: institution/borghese-collection
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q683074
+  - type: founded
+    to: institution/galleria-borghese
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q841506
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Portrait_of_Cardinal_Scipione_Borghese_%28by_Ottavio_Leoni%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Cardinal_Scipione_Borghese_(by_Ottavio_Leoni).jpg

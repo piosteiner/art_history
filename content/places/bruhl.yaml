@@ -1,0 +1,16 @@
+public_id: 103168
+name: Brühl
+kind: settlement
+location: [6.9, 50.83333]
+wikidata_id: Q7036
+metadata:
+  sources: [Wikidata Q7036 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q7036
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q7036

@@ -1,0 +1,63 @@
+public_id: 103115
+name: Ernest Fenollosa
+given_name: Ernest
+family_name: Fenollosa
+names:
+  - Kanō Yeitan Masanobu Fenollosa
+  - Ernest Francisco Fenollosa
+  - Tei shin Fenollosa
+  - Ernest F. Fenollosa
+  - lang: ja
+    role: translation
+    text: アーネスト・フェノロサ
+  - lang: zh
+    role: translation
+    text: 恩尼斯特·費諾羅薩
+  - lang: ko
+    role: translation
+    text: 어니스트 페놀로사
+  - lang: ru
+    role: translation
+    text: Эрнест Феноллоза
+kind: person
+occupations: [professor, art historian, japanologist, translator, poet, philosopher, orientalist]
+birth: 1853-02-18
+death: 1908-09-21
+wikidata_id: Q933253
+metadata:
+  sources: [Wikidata Q933253 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/kangakai
+    sources:
+      - source: pickhardt-2012
+        locator: "32"
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Fenollosa.jpg/1280px-Fenollosa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fenollosa.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 12868407h
+  gnd: "119342626"
+  idref: "063242605"
+  lc: n50001186
+  ulan: "500230005"
+  viaf: "61675892"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q933253
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q933253
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q933253
+  occupations:
+    - accessed: 2026-10-28
+      property: P106
+      wikidata: Q933253

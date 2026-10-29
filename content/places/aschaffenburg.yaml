@@ -1,0 +1,16 @@
+public_id: 103110
+name: Aschaffenburg
+kind: site
+location: [9.14936, 49.97405]
+wikidata_id: Q3942
+metadata:
+  sources: [Wikidata Q3942 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3942
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3942

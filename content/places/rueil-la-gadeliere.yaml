@@ -1,0 +1,16 @@
+public_id: 103295
+name: Rueil-la-Gadelière
+kind: settlement
+location: [0.97639, 48.71472]
+wikidata_id: Q663912
+metadata:
+  sources: [Wikidata Q663912 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q663912
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q663912

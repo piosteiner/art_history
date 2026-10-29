@@ -6,16 +6,33 @@ names:
     text: Bayerische Staatsgemäldesammlungen
 kind: museum administration
 founded: 1799
+place: munich
 location: [11.57178, 48.14958]
-description_md: "The Bavarian state authority for paintings and sculpture: it owns the collections and runs the Alte Pinakothek, the Neue Pinakothek, the Sammlung Moderne Kunst in the Pinakothek der Moderne, the Museum Brandhorst, the Sammlung Schack and branch galleries across Bavaria."
+description_md: "The Bavarian state authority for paintings and sculpture: it owns the collections and runs the Alte Pinakothek, the Neue Pinakothek, the Sammlung Moderne Kunst in the Pinakothek der Moderne, the Museum Brandhorst, the Sammlung Schack and branch galleries across Bavaria[[source/wikipedia-de-bayerische-staatsgemaeldesammlungen|„Zu den Bayerischen Staatsgemäldesammlungen gehören folgende Museen und Sammlungen: in München: Alte Pinakothek, Neue Pinakothek, Sammlung Moderne Kunst in der Pinakothek der Moderne, Museum Brandhorst, Sammlung Schack und als Filialgalerien: in Ansbach … in Aschaffenburg … in Augsburg …“]]."
 website_url: https://www.pinakothek.de/
 wikidata_id: Q812285
 metadata:
   sources: [Wikidata Q812285 (retrieved 2026-10-18)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Direktion_der_Bayerischen_Staatsgem%C3%A4ldesammlungen_-_Schild_cut.jpg/1280px-Direktion_der_Bayerischen_Staatsgem%C3%A4ldesammlungen_-_Schild_cut.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Direktion_der_Bayerischen_Staatsgem%C3%A4ldesammlungen_-_Schild_cut.jpg
+    license: Public domain
+    credit: User:Mattes
+identifiers:
+  bnf: 11987013j
+  gnd: 2005380-0
+  idref: "027500365"
+  lc: n50061232
+  ulan: "500303280"
+  viaf: "149456767"
 sources:
   kind:
     - accessed: 2026-10-18
       property: P31
+      wikidata: Q812285
+  place:
+    - accessed: 2026-10-28
+      property: P131
       wikidata: Q812285
   founded:
     - accessed: 2026-10-18

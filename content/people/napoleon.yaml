@@ -41,6 +41,13 @@ death: 1821-05-05
 wikidata_id: Q517
 metadata:
   sources: [Wikidata Q517 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: institution/gallerie-dell-accademia-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q338330
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg/1280px-Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_The_Emperor_Napoleon_in_His_Study_at_the_Tuileries_-_Google_Art_Project.jpg

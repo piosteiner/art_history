@@ -1,3 +1,40 @@
 public_id: 100047
 name: Rokuharamitsu-ji
 names: [六波羅蜜寺]
+kind: temple
+founded: 963
+place: kyoto
+location: [135.77333, 34.99711]
+address: 京都府京都市東山区松原通大和大路東入二丁目轆轤町81-1
+website_url: https://www.rokuhara.or.jp/
+wikidata_id: Q1060771
+metadata:
+  sources: [Wikidata Q1060771 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/150124_Rokuharamitsu-ji_Kyoto_Japan01n.jpg/1280px-150124_Rokuharamitsu-ji_Kyoto_Japan01n.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:150124_Rokuharamitsu-ji_Kyoto_Japan01n.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  viaf: "257270156"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1060771
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1060771
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1060771
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1060771
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1060771

@@ -1,0 +1,16 @@
+public_id: 103285
+name: Edinburgh
+kind: settlement
+location: [-3.18917, 55.95333]
+wikidata_id: Q23436
+metadata:
+  sources: [Wikidata Q23436 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q23436
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q23436

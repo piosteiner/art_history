@@ -1,0 +1,11 @@
+public_id: 103265
+name: Pleinairisme
+kind: movement
+wikidata_id: Q2498493
+metadata:
+  sources: [Wikidata Q2498493 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2498493

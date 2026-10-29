@@ -29,7 +29,9 @@ names:
   - lang: ru
     role: translation
     text: Испанская инквизиция
+kind: tribunal
 founded: 1478
+dissolved: 1834
 wikidata_id: Q184725
 metadata:
   sources: [Wikidata Q184725 (retrieved 2026-10-19)]
@@ -41,4 +43,8 @@ sources:
   founded:
     - accessed: 2026-10-19
       property: P571
+      wikidata: Q184725
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
       wikidata: Q184725

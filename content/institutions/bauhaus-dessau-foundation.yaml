@@ -4,6 +4,7 @@ names:
   - lang: de
     role: translation
     text: Stiftung Bauhaus Dessau
+kind: museum
 founded: 1994
 place: dessau-ro-lau
 location: [12.22507, 51.8395]
@@ -16,10 +17,16 @@ images:
     license: CC BY-SA 3.0
     credit: Lelikron
 identifiers:
+  bnf: 16084427r
   gnd: 2153684-3
+  idref: "068728948"
   lc: nr96028066
   viaf: "136490649"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1441998
   place:
     - accessed: 2026-10-09
       property: P131

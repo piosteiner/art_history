@@ -1,0 +1,35 @@
+public_id: 103194
+title_lang: en
+title: The Gates of Hell
+parent: the-gates-of-hell
+part_number: "5"
+creator: auguste-rodin
+created: 1981
+conceived: 1880/1917
+kind: sculpture
+materials: [bronze]
+institution: cantor-arts-center
+inventory_number: "1985.86"
+web_url: https://museum.stanford.edu/node/904
+description_md: 1981 bei Coubertin im Wachsausschmelzverfahren gegossen, wie Rodin es bevorzugte; ein Geschenk der B. Gerald Cantor Collection am östlichen Ende des Rodin-Skulpturengartens der Stanford University.[[source/cantor-gates-of-hell-1985-86|“cast by the Coubertin Foundry in 1981” · “using the lost-wax process favored by Rodin” · “Gift of the B. Gerald Cantor Collection, 1985.86.” · “Visually anchoring the garden at its eastern end”]]
+provenance:
+  - owner: institution/fonderie-de-coubertin
+    role: foundry
+    acquired: 1981
+    method: creation
+    place: saint-remy-les-chevreuse
+    sources:
+      - source: cantor-gates-of-hell-1985-86
+  - owner: institution/cantor-arts-center
+    acquired: 1985
+    method: gift
+    label: Geschenk der B. Gerald Cantor Collection
+    sources:
+      - source: cantor-gates-of-hell-1985-86
+sources:
+  created:
+    - source: cantor-gates-of-hell-1985-86
+  institution:
+    - source: cantor-gates-of-hell-1985-86
+  inventory_number:
+    - source: cantor-gates-of-hell-1985-86

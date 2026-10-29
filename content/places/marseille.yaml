@@ -1,0 +1,16 @@
+public_id: 102923
+name: Marseille
+kind: settlement
+location: [5.37639, 43.29667]
+wikidata_id: Q23482
+metadata:
+  sources: [Wikidata Q23482 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q23482
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q23482

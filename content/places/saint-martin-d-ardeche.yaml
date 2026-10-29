@@ -1,0 +1,16 @@
+public_id: 103171
+name: Saint-Martin-d'Ardèche
+kind: settlement
+location: [4.56556, 44.30361]
+wikidata_id: Q334550
+metadata:
+  sources: [Wikidata Q334550 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q334550
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q334550

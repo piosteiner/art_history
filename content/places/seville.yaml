@@ -1,0 +1,18 @@
+public_id: 102993
+name: Seville
+kind: site
+location: [-5.995, 37.38861]
+wikidata_id: Q8717
+metadata:
+  sources: [Wikidata Q8717 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4054671-8
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q8717
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q8717

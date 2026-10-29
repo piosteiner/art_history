@@ -1,0 +1,11 @@
+public_id: 103047
+name: Trecento
+kind: movement
+wikidata_id: Q856643
+metadata:
+  sources: [Wikidata Q856643 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q856643

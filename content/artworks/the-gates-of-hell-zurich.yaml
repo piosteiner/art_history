@@ -1,0 +1,58 @@
+public_id: 103193
+title_lang: fr
+title: La Porte de l'enfer
+names:
+  - lang: de
+    role: translation
+    text: Das Höllentor
+    status: official
+parent: the-gates-of-hell
+part_number: "4"
+creator: auguste-rodin
+created: 1942/1947
+created_span: duration
+conceived: 1880/1917
+kind: sculpture
+materials: [bronze]
+dimensions: [680, 400, 85]
+institution: kunsthaus-zurich
+inventory_number: 1949/0022
+web_url: https://collection.kunsthaus.ch/de/collection/item/2070
+description_md: 'Der vierte Guss: 1942 bestellte [[artist/arno-breker|Arno Breker]] ihn bei Rudier für das «Führermuseum» in Linz und leistete Anzahlungen an das Musée Rodin und die Giesserei; ausgeliefert wurde er nie. 1947 kam er für eine Ausstellung der Rudier-Güsse nach Zürich, 1949 kaufte ihn [[person/emil-georg-buhrle|Emil Georg Bührle]] für das Kunsthaus. Das Kunsthaus stuft ihn als keine NS-Raubkunst ein.[[source/kunsthaus-zurich-1949-0022|“4. Guss (1942-1947)” · “1942 bestellt der deutsche Bildhauer Arno Breker bei der für ihn tätigen Pariser Giesserei Rudier für das «Führermuseum» in Linz den später am Kunsthaus Zürich vorliegenden 4. Guss.” · “Der Guss wurde jedoch nicht ausgeliefert und erst 1947 für die Ausstellung "Metallgüsse aus der Werkstatt von Eugène Rudier, Paris" (9. Juni – 23. Nov. 1947) nach Zürich geliefert” · “Provenienzstatus keine NS-Raubkunst”]]'
+provenance:
+  - owner: institution/fonderie-alexis-rudier
+    role: foundry
+    acquired: 1942/1947
+    method: creation
+    place: paris
+    label: Eugène Rudier, Malakoff-Paris
+    sources:
+      - source: kunsthaus-zurich-1949-0022
+  - owner: artist/arno-breker
+    role: event
+    acquired: 1942
+    method: commission
+    label: bestellt für das «Führermuseum» in Linz; Anzahlung von 2 000 000 FRF an das Musée Rodin, 1942–1948 1 000 000 FRF an Rudier; nicht ausgeliefert
+    sources:
+      - source: kunsthaus-zurich-1949-0022
+  - owner: person/emil-georg-buhrle
+    acquired: 1949
+    method: purchase
+    label: aus der Ausstellung «Metallgüsse aus der Werkstatt von Eugène Rudier, Paris», Kunsthaus Zürich 1947, Nr. 347
+    sources:
+      - source: kunsthaus-zurich-1949-0022
+  - owner: institution/kunsthaus-zurich
+    acquired: 1949
+    method: gift
+    label: Geschenk Emil Georg Bührle
+    sources:
+      - source: kunsthaus-zurich-1949-0022
+sources:
+  created:
+    - source: kunsthaus-zurich-1949-0022
+  dimensions:
+    - source: kunsthaus-zurich-1949-0022
+  institution:
+    - source: kunsthaus-zurich-1949-0022
+  inventory_number:
+    - source: kunsthaus-zurich-1949-0022

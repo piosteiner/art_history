@@ -8,14 +8,43 @@ wikidata_id: Q4492298
 metadata:
   sources: [Wikidata Q4492298 (retrieved 2026-10-18)]
 relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q4492298
+  - type: nationality
+    to: polity/soviet-union
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q4492298
+  - type: born_in
+    to: place/berdychiv
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q4492298
+  - type: died_in
+    to: place/odesa
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q4492298
   - type: student_of
     to: artist/pierre-bonnard
     sources:
       - accessed: 2026-10-18
         property: P802
         wikidata: Q26408
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q4492298
 identifiers:
   dome: "11993"
+  ulan: "500139556"
+  viaf: "3829150325579010090003"
 sources:
   birth:
     - accessed: 2026-10-18

@@ -1,0 +1,28 @@
+public_id: 103255
+name: École supérieure d'art et de design de Valenciennes
+kind: art academy
+founded: 1782-12-09
+place: valenciennes
+location: [3.50611, 50.34194]
+address: 132 Avenue du Faubourg de Cambrai, 59300 Valenciennes
+website_url: http://www.esad-valenciennes.fr
+wikidata_id: Q36387328
+metadata:
+  sources: [Wikidata Q36387328 (retrieved 2026-10-28)]
+identifiers:
+  bnf: 16955568s
+  idref: "032300409"
+  viaf: "132742905"
+sources:
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q36387328
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q36387328
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q36387328

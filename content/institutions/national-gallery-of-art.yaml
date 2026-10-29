@@ -1,6 +1,7 @@
 public_id: 100151
 name: National Gallery of Art
 names: [Mellon Gallery of Art, United States. National Gallery of Art]
+kind: museum
 founded: 1937-03-24
 place: washington-d-c
 location: [-77.02, 38.89139]
@@ -14,11 +15,17 @@ images:
     license: CC BY-SA 3.0
     credit: AgnosticPreachersKid
 identifiers:
+  bnf: "118666319"
   gnd: 1003319-1
+  idref: "026415127"
   lc: n79054426
   ulan: "500115983"
   viaf: "3064149198328574940008"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q214867
   place:
     - accessed: 2026-10-09
       property: P131

@@ -1,0 +1,64 @@
+public_id: 103140
+name: André Breton
+given_name: André
+family_name: Breton
+birth: 1896-02-19
+death: 1966-09-28
+wikidata_id: Q161955
+metadata:
+  sources: [Wikidata Q161955 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q161955
+  - type: born_in
+    to: place/tinchebray
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q161955
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q161955
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q161955
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q161955
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f2/Andr%C3%A9_Breton_-_photo_Henri_Manuel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Breton_-_photo_Henri_Manuel.jpg
+    license: Public domain
+    credit: Henri Manuel
+identifiers:
+  bnf: "118939509"
+  dodis: P58679
+  gnd: "118515187"
+  idref: "026751852"
+  lc: n80036675
+  nlk: KAC199603389
+  rkd: "12420"
+  ulan: "500125870"
+  viaf: "49222341"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q161955
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q161955

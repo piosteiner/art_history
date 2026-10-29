@@ -1,0 +1,16 @@
+public_id: 102972
+name: Lisbon
+kind: site
+location: [-9.13902, 38.70804]
+wikidata_id: Q597
+metadata:
+  sources: [Wikidata Q597 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q597
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q597

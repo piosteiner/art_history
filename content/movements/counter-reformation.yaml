@@ -1,0 +1,16 @@
+public_id: 102930
+name: Counter-Reformation
+kind: movement
+period: 1545
+wikidata_id: Q128168
+metadata:
+  sources: [Wikidata Q128168 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q128168
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q128168

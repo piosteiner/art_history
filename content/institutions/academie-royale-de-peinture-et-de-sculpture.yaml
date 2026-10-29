@@ -1,0 +1,30 @@
+public_id: 102949
+name: Académie royale de peinture et de sculpture
+kind: art academy
+founded: 1648-01-20
+dissolved: 1816
+place: paris
+location: [2.33694, 48.85722]
+wikidata_id: Q337579
+metadata:
+  sources: [Wikidata Q337579 (retrieved 2026-10-28)]
+identifiers:
+  bnf: "125297809"
+  gnd: 64695-7
+  idref: "027560899"
+  lc: n83010352
+  ulan: "500115631"
+  viaf: "145372564"
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q337579
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q337579
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q337579

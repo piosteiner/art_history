@@ -1,0 +1,11 @@
+public_id: 103136
+name: Belgian surrealism
+kind: movement
+wikidata_id: Q3505455
+metadata:
+  sources: [Wikidata Q3505455 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3505455

@@ -1,0 +1,16 @@
+public_id: 103170
+name: Seillans
+kind: settlement
+location: [6.64333, 43.63611]
+wikidata_id: Q817602
+metadata:
+  sources: [Wikidata Q817602 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q817602
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q817602

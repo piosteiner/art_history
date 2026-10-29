@@ -7,6 +7,81 @@ death: 1534-03-15
 wikidata_id: Q8457
 metadata:
   sources: [Wikidata Q8457 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/signoria-di-correggio
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q8457
+  - type: born_in
+    to: place/correggio
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q8457
+  - type: died_in
+    to: place/correggio
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q8457
+  - type: worked_in
+    to: place/albinea
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q8457
+  - type: worked_in
+    to: place/correggio
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q8457
+  - type: worked_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q8457
+  - type: worked_in
+    to: place/modena
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q8457
+  - type: worked_in
+    to: place/parma
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q8457
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q8457
+  - type: associated_with
+    to: movement/renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q8457
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fc/Antonio_Allegri_da_Correggio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonio_Allegri_da_Correggio.jpg
+    license: Public domain
+identifiers:
+  bnf: "140061860"
+  dome: "7185"
+  gnd: 11867692X
+  idref: "027395456"
+  kulturnav: 54d59d40-cf91-4164-b6c9-d2216a254886
+  lc: n80160167
+  rkd: "18481"
+  ulan: "500006208"
+  viaf: "97748522"
 sources:
   birth:
     - accessed: 2026-10-19

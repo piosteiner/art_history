@@ -1,6 +1,7 @@
 public_id: 100169
 name: Yale Center for British Art
 names: [YCBA]
+kind: museum
 founded: 1966
 place: new-haven
 location: [-72.93091, 41.30791]
@@ -14,11 +15,17 @@ images:
     license: Public domain
     credit: Sage Ross
 identifiers:
+  bnf: 12019036t
   gnd: 1056978-9
+  idref: "086008706"
   lc: n77005277
   ulan: "500303557"
   viaf: "155449049"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q6352575
   place:
     - accessed: 2026-10-09
       property: P131

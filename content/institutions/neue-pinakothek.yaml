@@ -2,9 +2,10 @@ public_id: 101007
 name: Neue Pinakothek
 kind: museum
 founded: 1853
+place: munich
 location: [11.57111, 48.14989]
 address: Barer Straße 29, 80799 München, Germany
-description_md: Closed for renovation since the end of 2018; a selection of its works is shown in the Alte Pinakothek and the Sammlung Schack meanwhile.
+description_md: Closed for renovation since January 2019; a selection of its works is shown in the Alte Pinakothek and the Sammlung Schack meanwhile[[source/wikipedia-de-neue-pinakothek|„… Januar 2019 ist das Gebäude für eine umfassende Generalsanierung bis voraussichtlich 2030 komplett geschlossen, eine Auswahl an Werken ist in dieser Zeit im Ostflügel der Alten Pinakothek und in der Sammlung Schack zu sehen“]].
 website_url: https://www.pinakothek.de/besuch/neue-pinakothek
 wikidata_id: Q170152
 metadata:
@@ -12,10 +13,26 @@ metadata:
 relationships:
   - type: part_of
     to: institution/bavarian-state-painting-collections
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Ausstellungsraum_Neue_Pinakothek.JPG/1280px-Ausstellungsraum_Neue_Pinakothek.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Ausstellungsraum_Neue_Pinakothek.JPG
+    license: CC BY 3.0
+    credit: Bärwinkel,Klaus
+identifiers:
+  bnf: "119872373"
+  gnd: 2020220-9
+  idref: "027327140"
+  lc: n50064521
+  ulan: "500303326"
+  viaf: "160813173"
 sources:
   kind:
     - accessed: 2026-10-18
       property: P31
+      wikidata: Q170152
+  place:
+    - accessed: 2026-10-28
+      property: P131
       wikidata: Q170152
   address:
     - accessed: 2026-10-18

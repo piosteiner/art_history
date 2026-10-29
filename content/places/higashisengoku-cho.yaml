@@ -1,0 +1,16 @@
+public_id: 103263
+name: Higashisengoku-chō
+kind: site
+location: [130.55328, 31.59197]
+wikidata_id: Q11526287
+metadata:
+  sources: [Wikidata Q11526287 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q11526287
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q11526287

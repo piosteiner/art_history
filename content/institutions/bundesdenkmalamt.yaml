@@ -5,7 +5,9 @@ names:
   - lang: ja
     role: translation
     text: オーストリア連邦文化財局
-founded: 31 December 1850
+kind: collection
+founded: 1850-12-31
+place: vienna
 website_url: http://www.bda.at/
 wikidata_id: Q876452
 metadata:
@@ -18,6 +20,14 @@ identifiers:
   ulan: "500457906"
   viaf: "127762370"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q876452
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q876452
   founded:
     - accessed: 2026-10-19
       property: P571

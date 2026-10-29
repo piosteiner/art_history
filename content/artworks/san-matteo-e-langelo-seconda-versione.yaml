@@ -20,18 +20,6 @@ names:
   - lang: es
     role: translation
     text: La inspiración de San Mateo
-  - lang: ja
-    role: translation
-    text: 聖マタイと天使 (カラヴァッジョ)
-  - lang: zh
-    role: translation
-    text: 圣玛窦的启示
-  - lang: ko
-    role: translation
-    text: 성 마태오의 영감
-  - lang: ru
-    role: translation
-    text: Святой Матфей и ангел
 parent: san-matteo-e-langelo
 part_number: "2"
 creator: caravaggio

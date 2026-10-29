@@ -1,0 +1,16 @@
+public_id: 102917
+name: Fermignano
+kind: settlement
+location: [12.64504, 43.67662]
+wikidata_id: Q190623
+metadata:
+  sources: [Wikidata Q190623 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q190623
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q190623

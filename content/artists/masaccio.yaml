@@ -1,10 +1,51 @@
 public_id: 102143
 name: Masaccio
+names: [Tommaso Di Giovanni Di Simone Guidi Masaccio]
 birth: 1401-12-30
 death: 1428
 wikidata_id: Q5811
 metadata:
   sources: [Wikidata Q5811 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/san-giovanni-valdarno
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5811
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5811
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5811
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5811
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Masaccio_Self_Portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Masaccio_Self_Portrait.jpg
+    license: Public domain
+    credit: Masaccio
+identifiers:
+  bnf: 11945583s
+  gnd: "118578618"
+  idref: "027407160"
+  kulturnav: 14a54817-7f8f-4f7e-ae63-4a9b3db56677
+  lc: n79006973
+  nlk: KAC202041560
+  rkd: "53068"
+  ulan: "500026649"
+  viaf: "7368513"
 sources:
   birth:
     - accessed: 2026-10-20

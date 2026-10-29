@@ -7,6 +7,77 @@ death: 1653
 wikidata_id: Q212657
 metadata:
   sources: [Wikidata Q212657 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q212657
+  - type: born_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q212657
+  - type: died_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q212657
+  - type: worked_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q212657
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q212657
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q212657
+  - type: worked_in
+    to: place/florence
+    period: 1610/1620
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q212657
+  - type: worked_in
+    to: place/rome
+    period: 1622/1626
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q212657
+  - type: associated_with
+    to: movement/caravaggisti
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q212657
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Artemisia_Gentileschi_Selfportrait_Martyr.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Artemisia_Gentileschi_Selfportrait_Martyr.jpg
+    license: Public domain
+    credit: Artemisia Gentileschi
+identifiers:
+  bnf: 12016677b
+  gnd: "118936794"
+  idref: 02830330X
+  kulturnav: 16638ea6-c85a-492b-98be-f9183bf26b50
+  lc: n87102497
+  rkd: "30922"
+  ulan: "500011658"
+  viaf: "309780277"
 sources:
   birth:
     - accessed: 2026-10-20

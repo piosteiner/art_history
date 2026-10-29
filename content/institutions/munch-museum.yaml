@@ -1,6 +1,7 @@
 public_id: 100110
 name: Munch Museum
 names: [Munchmuseet, MUNCH]
+kind: museum
 founded: 1963
 place: oslo
 location: [10.75531, 59.90575]
@@ -22,7 +23,18 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:MuncMuseet01.jpg
     license: CC BY 2.5
     credit: Frode Inge Helland
+identifiers:
+  bnf: 11991768h
+  gnd: 1006810-7
+  idref: "027992411"
+  lc: n79049353
+  ulan: "500304224"
+  viaf: "147381993"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q844926
   address:
     - accessed: 2026-10-08
       property: P6375

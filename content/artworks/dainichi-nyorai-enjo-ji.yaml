@@ -1,0 +1,37 @@
+public_id: 103069
+title: Dainichi Nyorai
+names:
+  - lang: ja
+    role: original
+    text: "{大日如来坐像|だいにちにょらいざぞう}"
+creator: unkei
+created: 1175/1176
+kind: statue
+materials: [hinoki wood]
+institution: enjo-ji
+web_url: http://www.enjyouji.jp/treasure/p1.html
+description_md: "Unkei's earliest extant work[[source/tnm-unkei-exhibition-2017|“his son and pupil Unkei produced his earliest extant work, Dainichi Nyorai (No. 4) for Enjoji temple in Nara”]]: the seated Dainichi Nyorai, about a metre high in the form of a bodhisattva, made under the direction of his father Kōkei. Its inscription is dated 1175; it took 326 days and carries Unkei's ornamental signature[[source/kobayashi-1954-unkei|“Statue of Dainichi-nyorai, Vairocana, or the esoteric Saka, at Enjo-ji Temple, Nara, dated 1175, which was made under the direction of his father” · “The statue is in the form of Bodhisattva about 1-metre high” · “it took 326 days for its completion” · “Also it bears his ornamental signature”]]."
+wikidata_id: Q5209488
+metadata:
+  sources: [Wikidata Q5209488 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Dainichi_Nyorai_Unkei_Enjoji_1.jpg/1280px-Dainichi_Nyorai_Unkei_Enjoji_1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dainichi_Nyorai_Unkei_Enjoji_1.jpg
+    license: Public domain
+    credit: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)
+sources:
+  names:
+    - accessed: 2026-10-28
+      wikidata: Q5209488
+  created:
+    - note: “dated 1175” · “it took 326 days for its completion”
+      source: kobayashi-1954-unkei
+      accessed: 2026-10-28
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q5209488
+  materials:
+    - accessed: 2026-10-28
+      property: P186
+      wikidata: Q5209488

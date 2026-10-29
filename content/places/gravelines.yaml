@@ -1,0 +1,16 @@
+public_id: 103269
+name: Gravelines
+kind: settlement
+location: [2.1275, 50.98639]
+wikidata_id: Q323399
+metadata:
+  sources: [Wikidata Q323399 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q323399
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q323399

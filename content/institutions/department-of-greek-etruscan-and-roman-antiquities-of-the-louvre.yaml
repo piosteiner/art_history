@@ -1,8 +1,35 @@
 public_id: 101686
 name: Department of Greek, Etruscan, and Roman Antiquities of the Louvre
+names:
+  - lang: de
+    role: translation
+    text: Griechische, etruskische und römische Altertümer im Louvre
+kind: department
+place: paris
+location: [2.33583, 48.86111]
 wikidata_id: Q3044747
 metadata:
   sources: [Wikidata Q3044747 (retrieved 2026-10-20)]
 relationships:
   - type: part_of
     to: institution/musee-du-louvre
+    sources:
+      - accessed: 2026-10-28
+        property: P361
+        wikidata: Q3044747
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Ar%C3%A8s_Borgh%C3%A8se_-_Mus%C3%A9e_du_Louvre_AGER_Ma_866_%3B_MR_65_%3B_N_819.jpg/1280px-Ar%C3%A8s_Borgh%C3%A8se_-_Mus%C3%A9e_du_Louvre_AGER_Ma_866_%3B_MR_65_%3B_N_819.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ar%C3%A8s_Borgh%C3%A8se_-_Mus%C3%A9e_du_Louvre_AGER_Ma_866_;_MR_65_;_N_819.jpg
+    license: CC0
+    credit: Shonagon
+identifiers:
+  bnf: "118775931"
+  gnd: 3017210-X
+  idref: "026549301"
+  lc: no92026837
+  viaf: "128504936"
+sources:
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3044747

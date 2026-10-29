@@ -7,6 +7,67 @@ death: 1882-02-12
 wikidata_id: Q223725
 metadata:
   sources: [Wikidata Q223725 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q223725
+  - type: died_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q223725
+  - type: studied_at
+    to: institution/accademia-di-belle-arti-di-venezia
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q223725
+  - type: studied_at
+    to: institution/accademia-di-san-luca
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q223725
+  - type: associated_with
+    to: movement/orientalism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q223725
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q223725
+  - type: associated_with
+    to: movement/troubadour-style
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q223725
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Autoritratto_a_57_anni_by_Francesco_Hayez.jpg/1280px-Autoritratto_a_57_anni_by_Francesco_Hayez.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autoritratto_a_57_anni_by_Francesco_Hayez.jpg
+    license: Public domain
+    credit: Francesco Hayez
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Francesco_Hayez_057.jpg/1280px-Francesco_Hayez_057.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_Hayez_057.jpg
+    license: Public domain
+    credit: Francesco Hayez
+identifiers:
+  bnf: 14968334k
+  dome: "8960"
+  gnd: "119262290"
+  idref: "035604069"
+  lc: n83140462
+  rkd: "252879"
+  ulan: "500019066"
+  viaf: "283001"
 sources:
   birth:
     - accessed: 2026-10-20

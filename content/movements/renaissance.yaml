@@ -2,7 +2,7 @@ public_id: 101085
 name: Renaissance
 kind: style
 period: late 14th century–16th century
-wikidata_id: Q1133779
+wikidata_id: Q4692
 metadata:
   sources: [Wikidata Q1133779 (retrieved 2026-10-18)]
 relationships:
@@ -14,5 +14,5 @@ sources:
   kind:
     - accessed: 2026-10-18
       property: P31
-      wikidata: Q1133779
+      wikidata: Q4692
   period: ["Getty Art & Architecture Thesaurus, “Renaissance” (AAT 300021140): “originated in Italy in the late 14th century, spread throughout Europe, and culminated in the 16th century”"]

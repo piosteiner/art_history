@@ -1,10 +1,53 @@
 public_id: 102110
 name: Guercino
+names:
+  - lang: it
+    role: original
+    text: Giovanni Francesco Barbieri
 birth: 1591-02-08
 death: 1666-12-22
 wikidata_id: Q334262
 metadata:
   sources: [Wikidata Q334262 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q334262
+  - type: born_in
+    to: place/cento
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q334262
+  - type: died_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q334262
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q334262
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Self-portrait_by_Guercino.jpg/1280px-Self-portrait_by_Guercino.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Self-portrait_by_Guercino.jpg
+    license: Public domain
+    credit: Guercino
+identifiers:
+  bnf: "120730207"
+  gnd: "118978128"
+  idref: "085850195"
+  kulturnav: 3c38725f-cafd-48fe-9486-ad13b03aab13
+  lc: n50082058
+  rkd: "34463"
+  ulan: "500021925"
+  viaf: "49248688"
 sources:
   birth:
     - accessed: 2026-10-20

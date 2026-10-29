@@ -1,0 +1,48 @@
+public_id: 103058
+name: Kōfuku-ji Temple
+names:
+  - Kōfuku-ji
+  - lang: ja
+    role: translation
+    text: 興福寺
+  - lang: ko
+    role: translation
+    text: 고후쿠지
+  - lang: ru
+    role: translation
+    text: Кофуку-дзи
+kind: temple
+founded: 710
+place: nara
+location: [135.8313, 34.68321]
+address: 奈良県奈良市登大路町48
+website_url: http://www.kohfukuji.com/
+wikidata_id: Q1070863
+metadata:
+  sources: [Wikidata Q1070863 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Kofukuji12st5s3200.jpg/1280px-Kofukuji12st5s3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kofukuji12st5s3200.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  gnd: "1177827948"
+  lc: n82010801
+  viaf: "133708062"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1070863
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1070863
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1070863
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1070863

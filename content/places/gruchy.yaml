@@ -1,0 +1,16 @@
+public_id: 103211
+name: Gruchy
+kind: settlement
+location: [-1.7917, 49.68135]
+wikidata_id: Q58507641
+metadata:
+  sources: [Wikidata Q58507641 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q58507641
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q58507641

@@ -1,0 +1,16 @@
+public_id: 102944
+name: Lutherstadt Wittenberg
+kind: site
+location: [12.6484, 51.8671]
+wikidata_id: Q6837
+metadata:
+  sources: [Wikidata Q6837 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q6837
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q6837

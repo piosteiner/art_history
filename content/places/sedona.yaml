@@ -1,0 +1,16 @@
+public_id: 103172
+name: Sedona
+kind: site
+location: [-111.78917, 34.86]
+wikidata_id: Q80041
+metadata:
+  sources: [Wikidata Q80041 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q80041
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q80041

@@ -1,0 +1,16 @@
+public_id: 102961
+name: Baroque painting
+kind: movement
+period: 1501/1600
+wikidata_id: Q808561
+metadata:
+  sources: [Wikidata Q808561 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q808561
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q808561

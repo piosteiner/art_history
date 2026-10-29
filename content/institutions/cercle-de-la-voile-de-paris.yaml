@@ -1,0 +1,14 @@
+public_id: 102936
+name: Cercle de la voile de Paris
+kind: club
+founded: 1858
+place: paris
+website_url: http://cercledelavoiledeparis.fr/
+wikidata_id: Q2946492
+metadata:
+  sources: [Wikidata Q2946492 (retrieved 2026-10-28)]
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q2946492

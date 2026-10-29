@@ -1,0 +1,44 @@
+public_id: 103231
+name: Rembrandt House Museum
+kind: museum
+founded: 1907
+place: amsterdam
+location: [4.90139, 52.36944]
+address: Jodenbreestraat 4
+website_url: https://www.rembrandthuis.nl/nl/
+wikidata_id: Q277316
+metadata:
+  sources: [Wikidata Q277316 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Rembrandshuis.jpg/1280px-Rembrandshuis.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rembrandshuis.jpg
+    license: CC BY-SA 3.0
+    credit: 14:43, 17 October 2006
+identifiers:
+  bnf: "121667456"
+  gnd: 235207-2
+  idref: "034768211"
+  lc: n85803562
+  ulan: "500270472"
+  viaf: "156527943"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q277316
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q277316
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q277316
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q277316
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q277316

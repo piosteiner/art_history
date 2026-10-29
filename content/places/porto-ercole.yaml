@@ -1,0 +1,16 @@
+public_id: 102925
+name: Porto Ercole
+kind: site
+location: [11.20361, 42.39389]
+wikidata_id: Q1394400
+metadata:
+  sources: [Wikidata Q1394400 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1394400
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1394400

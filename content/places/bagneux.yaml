@@ -1,0 +1,16 @@
+public_id: 103120
+name: Bagneux
+kind: settlement
+location: [2.3125, 48.79778]
+wikidata_id: Q161884
+metadata:
+  sources: [Wikidata Q161884 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q161884
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q161884

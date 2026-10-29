@@ -1,0 +1,16 @@
+public_id: 102970
+name: Arraiolos
+kind: site
+location: [-7.98433, 38.72292]
+wikidata_id: Q699141
+metadata:
+  sources: [Wikidata Q699141 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q699141
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q699141

@@ -1,5 +1,7 @@
 public_id: 101586
 name: Jean Dubuffet
+given_name: Jean
+family_name: Dubuffet
 names:
   - Louis-Léon Forget
   - Jandu Bufe
@@ -18,7 +20,7 @@ names:
   - lang: ru
     role: translation
     text: Жан Дюбюффе
-birth: 31 July 1901
+birth: 1901-07-31
 death: 1985-05-12
 wikidata_id: Q170076
 metadata:

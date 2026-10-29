@@ -1,0 +1,16 @@
+public_id: 103035
+name: Ferrara
+kind: settlement
+location: [11.6175, 44.83917]
+wikidata_id: Q13362
+metadata:
+  sources: [Wikidata Q13362 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q13362
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q13362

@@ -1,0 +1,39 @@
+public_id: 103137
+name: Royal Academy of Fine Arts of Brussels
+kind: art academy
+founded: 1711-09-30
+place: brussels
+location: [4.3477, 50.844]
+website_url: http://www.arba-esa.be
+wikidata_id: Q2822455
+metadata:
+  sources: [Wikidata Q2822455 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Acad%C3%A9mie_des_Beaux-Arts%2C_Rue_Du_Midi_144%2C_Bruxelles.jpg/1280px-Acad%C3%A9mie_des_Beaux-Arts%2C_Rue_Du_Midi_144%2C_Bruxelles.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Acad%C3%A9mie_des_Beaux-Arts,_Rue_Du_Midi_144,_Bruxelles.jpg
+    license: CC BY-SA 4.0
+    credit: Mélioratif
+identifiers:
+  bnf: 12133942c
+  gnd: 600674-7
+  idref: "029789249"
+  lc: n89622664
+  ulan: "500220362"
+  viaf: "148628010"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2822455
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q2822455
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q2822455
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q2822455

@@ -1,0 +1,16 @@
+public_id: 103229
+name: Hungary
+period: 1000/
+country_codes: [HU]
+wikidata_id: Q28
+metadata:
+  sources: [Wikidata Q28 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q28
+  country_codes:
+    - accessed: 2026-10-28
+      property: P297
+      wikidata: Q28

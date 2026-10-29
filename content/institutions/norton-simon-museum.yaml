@@ -1,6 +1,7 @@
 public_id: 100158
 name: Norton Simon Museum
 names: [Pasadena Art Museum, Pasadena Art Institute]
+kind: museum
 founded: 1942
 place: pasadena
 location: [-118.15916, 34.14623]
@@ -20,10 +21,15 @@ images:
     credit: Alexis Doine
 identifiers:
   gnd: 1080843-7
+  idref: "086055119"
   lc: n80125907
   ulan: "500310865"
   viaf: "146046274"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1752085
   place:
     - accessed: 2026-10-09
       property: P131

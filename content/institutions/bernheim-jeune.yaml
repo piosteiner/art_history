@@ -1,3 +1,39 @@
 public_id: 100303
 name: Bernheim-Jeune
+names: [Galerie Bernheim-Jeune, Bernheim-Jeune Art Gallery]
+kind: gallery
+founded: 1863
+dissolved: 2018/2019
+place: paris
+location: [2.31388, 48.87166]
+website_url: http://www.bernheim-jeune.com/
 wikidata_id: Q826482
+metadata:
+  sources: [Wikidata Q826482 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Gallerie_Bernheim-Jeune_avenue_Matignon_%C3%A0_Paris.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Gallerie_Bernheim-Jeune_avenue_Matignon_%C3%A0_Paris.JPG
+    license: CC BY-SA 3.0
+    credit: Erwmat
+identifiers:
+  bnf: 11876279d
+  gnd: 10063933-1
+  idref: "026532247"
+  lc: nr88006562
+  ulan: "500310062"
+  viaf: "156694905"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q826482
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q826482
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q826482
+  dissolved:
+    - source: the-art-newspaper-2019-bernheim-jeune-fine-art-society

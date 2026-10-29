@@ -23,11 +23,15 @@ institution: akademie-der-bildenden-kunste-wien
 inventory_number: GG-779
 web_url: https://collection.kunstsammlungenakademie.at/de/collection/item/1215/
 description_md: |-
-  A copy by the Viennese painter [[artist/karl-agricola]] of Rubens' [[artwork/boreas-entfuhrt-oreithya]], which hangs in the same collection (GG-626). Both came to the Academy of Fine Arts with the bequest of [[person/anton-franz-de-paula-graf-lamberg-sprinzenstein]] in 1822, so the copy was made while the original was in Lamberg's collection in Vienna. The Academy lists both artists on the copy: Agricola as the artist, Rubens with the attribution “Kopie nach” (copy after).
+  A copy by the Viennese painter [[artist/karl-agricola]] of Rubens' [[artwork/boreas-entfuhrt-oreithya]], which hangs in the same collection (GG-626). Both came to the Academy of Fine Arts with the bequest of [[person/anton-franz-de-paula-graf-lamberg-sprinzenstein]] in 1822[[source/akademie-gg-779-boreas-kopie-agricola|Erwerb: Legat, 1822, „Anton Franz de Paula Graf von Lamberg-Sprinzenstein“]][[source/akademie-gg-626-boreas-rubens|Erwerb: Legat, 1822, „Anton Franz de Paula Graf von Lamberg-Sprinzenstein“]], so the copy was made while the original was in Lamberg's collection in Vienna[[source/akademie-gg-779-boreas-kopie-agricola|Datierung „vor 1822“]]. The Academy lists both artists on the copy: Agricola as the artist, Rubens with the attribution “Kopie nach” (copy after).
 
-  Not signed (recto).
 
-  The copy is on canvas, not on an oak panel, and is smaller: 88 × 70 cm against the original's 146 × 140.5 cm. It is also an upright format rather than a nearly square one. Comparing the Academy's photographs, the copy shows the whole group, including the two putti at the lower edge that the original cuts off, with more cloud around them.
+
+  Not signed (recto)[[source/akademie-gg-779-boreas-kopie-agricola|„Signatur: nicht signiert (recto)“]].
+
+
+
+  The copy is on canvas, not on an oak panel, and is smaller: 88 × 70 cm against the original's 146 × 140.5 cm[[source/akademie-gg-779-boreas-kopie-agricola|„Öl auf Leinwand“ · „Bildmaß: 88.0 × 70.0 cm“]][[source/akademie-gg-626-boreas-rubens|„Öl auf Holz (Eiche)“ · „Bildmaß: 146.0 × 140.5 cm“]]. It is also an upright format rather than a nearly square one. Comparing the Academy's photographs, the copy shows the whole group, including the two putti at the lower edge that the original cuts off, with more cloud around them.
 relationships:
   - type: copy_after
     to: artwork/boreas-entfuhrt-oreithya

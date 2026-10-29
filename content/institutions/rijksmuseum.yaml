@@ -1,5 +1,6 @@
 public_id: 100113
 name: Rijksmuseum
+kind: museum
 founded: 1800
 place: amsterdam
 location: [4.88528, 52.36]
@@ -13,7 +14,18 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Rijksmuseum_in_Amsterdam.jpg
     license: CC BY-SA 3.0
     credit: Marco Almbauer
+identifiers:
+  bnf: "118670598"
+  gnd: 1009452-0
+  idref: "026420066"
+  lc: n79007489
+  ulan: "500246547"
+  viaf: "159624082"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q190804
   place:
     - accessed: 2026-10-08
       property: P131

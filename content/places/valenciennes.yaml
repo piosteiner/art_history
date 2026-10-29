@@ -1,0 +1,16 @@
+public_id: 103253
+name: Valenciennes
+kind: settlement
+location: [3.52333, 50.35806]
+wikidata_id: Q163795
+metadata:
+  sources: [Wikidata Q163795 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q163795
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q163795

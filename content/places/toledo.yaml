@@ -1,0 +1,16 @@
+public_id: 102965
+name: Toledo
+kind: site
+location: [-4.03333, 39.86667]
+wikidata_id: Q5836
+metadata:
+  sources: [Wikidata Q5836 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q5836
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q5836

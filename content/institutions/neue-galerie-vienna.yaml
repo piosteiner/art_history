@@ -5,5 +5,24 @@ names:
     role: original
     text: Neue Galerie
 kind: gallery
+founded: 1923
 place: vienna
-description_md: Art gallery in Vienna founded in 1923 by Otto Nirenstein ([[person/otto-kallir]]), who emigrated in 1938 and opened the [[institution/galerie-st-etienne]] in New York.
+location: [16.3758221, 48.207763]
+address: Grünangergasse 1, 1010 Wien
+description_md: Art gallery in Vienna founded in 1923 by Otto Nirenstein ([[person/otto-kallir]])[[source/wikipedia-de-otto-kallir|„Otto Kallir (geboren als Otto Nirenstein)“ · „1923 mit der „Neuen Galerie“ in Wien-Innere Stadt“]]. After the Anschluss in 1938 he had to emigrate, first to France, and in 1939 opened the [[institution/galerie-st-etienne]] in New York[[source/wikipedia-de-otto-kallir|„Da nach dem Anschluss Österreichs die Gefahr der Inhaftierung durch die Nationalsozialisten bestand, war Kallir … zur Emigration nach Frankreich gezwungen.“ · „musste er 1939 in die USA emigrieren, wo er im selben Jahr in New York ebenfalls die Galerie „St. Etienne“ … gründete“]].
+sources:
+  address:
+    - url: https://kallirresearch.org/faq/
+      note: „established in Vienna by Otto Kallir (1894–1978) in 1923“; 1938 taken over by Vita Künstler, returned to Kallir after the war, „continued under various directors until 1956“; premises in the Grünangergasse (no. 1, corner of Schulerstraße), today Galerie nächst St. Stephan
+      source: kallirresearch-org
+      accessed: 2026-10-28
+  founded:
+    - url: https://kallirresearch.org/faq/
+      note: „established in Vienna by Otto Kallir (1894–1978) in 1923“; 1938 taken over by Vita Künstler, returned to Kallir after the war, „continued under various directors until 1956“; premises in the Grünangergasse (no. 1, corner of Schulerstraße), today Galerie nächst St. Stephan
+      source: kallirresearch-org
+      accessed: 2026-10-28
+  location:
+    - url: https://kallirresearch.org/faq/
+      note: „established in Vienna by Otto Kallir (1894–1978) in 1923“; 1938 taken over by Vita Künstler, returned to Kallir after the war, „continued under various directors until 1956“; premises in the Grünangergasse (no. 1, corner of Schulerstraße), today Galerie nächst St. Stephan
+      source: kallirresearch-org
+      accessed: 2026-10-28

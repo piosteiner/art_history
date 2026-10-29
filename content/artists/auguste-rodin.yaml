@@ -2,11 +2,120 @@ public_id: 102309
 name: Auguste Rodin
 given_name: Auguste
 family_name: Rodin
+names: [François Auguste René Rodin]
 birth: 1840-11-12
 death: 1917-11-17
 wikidata_id: Q30755
 metadata:
   sources: [Wikidata Q30755 (retrieved 2026-10-24)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q30755
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q30755
+  - type: died_in
+    to: place/meudon
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q30755
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q30755
+  - type: worked_in
+    to: place/buenos-aires
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q30755
+  - type: worked_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q30755
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q30755
+  - type: worked_in
+    to: place/meudon
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q30755
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q30755
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q30755
+  - type: influenced_by
+    to: artist/jean-baptiste-carpeaux
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q30755
+  - type: influenced_by
+    to: artist/michelangelo
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q30755
+  - type: studied_at
+    to: institution/ecole-nationale-superieure-des-arts-decoratifs
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q30755
+  - type: associated_with
+    to: movement/modern-art
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q30755
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q30755
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/95/Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Auguste_Rodin_fotografato_da_Nadar_nel_1891.jpg
+    license: Public domain
+    credit: Nadar
+identifiers:
+  bnf: 11922352t
+  dodis: P25858
+  dome: "323"
+  gnd: "118601717"
+  idref: "027284751"
+  kulturnav: f8fcad3b-3c1c-4d2f-acdf-9cfccd6ac2c3
+  lc: n79090126
+  nlk: KAC199623298
+  rkd: "67514"
+  ulan: "500016619"
+  viaf: "36923874"
 sources:
   birth:
     - accessed: 2026-10-24

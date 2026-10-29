@@ -1,11 +1,44 @@
 public_id: 100996
 name: Royal Danish Academy of Fine Arts
+kind: art academy
 founded: 1754
+place: copenhagen
+location: [12.58722, 55.68028]
+address: Kongens Nytorv 1, 1050 København K
+website_url: https://www.kunstakademiet.dk/
 wikidata_id: Q1641001
 metadata:
   sources: [Wikidata Q1641001 (retrieved 2026-10-18)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Charlottenborg_Slot_%28Northwest_Face_-_01%29.jpg/1280px-Charlottenborg_Slot_%28Northwest_Face_-_01%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Charlottenborg_Slot_(Northwest_Face_-_01).jpg
+    license: CC BY-SA 4.0
+    credit: Doyle of London
+identifiers:
+  bnf: 15044367r
+  gnd: 16288179-4
+  idref: "114904510"
+  lc: n83120876
+  ulan: "500305749"
+  viaf: "7362449"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1641001
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1641001
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1641001
   founded:
     - accessed: 2026-10-18
       property: P571
+      wikidata: Q1641001
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q1641001

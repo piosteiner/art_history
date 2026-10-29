@@ -1,0 +1,66 @@
+public_id: 103259
+name: Christian Griepenkerl
+given_name: Christian
+family_name: Griepenkerl
+names: [Prof. Christian Griepenkerl]
+birth: 1839-03-17
+death: 1916-03-22
+wikidata_id: Q872469
+metadata:
+  sources: [Wikidata Q872469 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/cisleithania
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q872469
+  - type: nationality
+    to: polity/grand-duchy-of-oldenburg
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q872469
+  - type: born_in
+    to: place/oldenburg
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q872469
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q872469
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q872469
+  - type: studied_at
+    to: institution/akademie-der-bildenden-kunste-wien
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q872469
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/50/Christian_Griepenkerl.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Christian_Griepenkerl.jpg
+    license: Public domain
+    credit: "file: James Steakley; artwork: F. Würbel"
+identifiers:
+  gnd: "116834390"
+  rkd: "33782"
+  ulan: "500060920"
+  viaf: "64768061"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q872469
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q872469

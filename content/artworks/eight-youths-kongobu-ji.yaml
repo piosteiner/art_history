@@ -1,0 +1,32 @@
+public_id: 103076
+title: Eight Youths Attending Fudō Myōō
+names:
+  - lang: ja
+    role: original
+    text: "{金剛峯寺八大童子像|こんごうぶじはちだいどうじぞう}"
+creator: unkei
+created: 1198
+kind: statue
+institution: koyasan-reihokan
+description_md: "The eight youths attending Fudō Myōō, made for Kongōbu-ji on Mount Kōya for an aristocratic patron: coarse characters given intelligence and elegance, and brimming with life[[source/tnm-unkei-exhibition-2017|“Unkei also received commissions from various aristocratic families. His rendition of the Eight Youths Attending Fudo Myo’o (No. 18) for Kongobuji temple in Wakayama imbues this group of coarse characters with an aura of intelligence and elegance on the one hand, and a brimming sense of vitality on the other”]]."
+wikidata_id: Q107046225
+metadata:
+  sources: [Wikidata Q107046225 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/af/Eight_Attendants_I_Kongobuji.jpg/1280px-Eight_Attendants_I_Kongobuji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eight_Attendants_I_Kongobuji.jpg
+    license: Public domain
+    credit: Murayama Jungo
+sources:
+  created:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q107046225
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q107046225
+  institution:
+    - accessed: 2026-10-28
+      property: P195
+      wikidata: Q107046225

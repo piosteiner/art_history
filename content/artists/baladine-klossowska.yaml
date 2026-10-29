@@ -8,14 +8,51 @@ wikidata_id: Q3633193
 metadata:
   sources: [Wikidata Q3633193 (retrieved 2026-10-18)]
 relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q3633193
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q3633193
+  - type: born_in
+    to: place/wroc-aw
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q3633193
+  - type: died_in
+    to: place/bagneux
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q3633193
   - type: student_of
     to: artist/pierre-bonnard
     sources:
       - accessed: 2026-10-18
         property: P802
         wikidata: Q26408
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q3633193
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/Erich_Klossowski_Baladine_1920.jpg/1280px-Erich_Klossowski_Baladine_1920.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Erich_Klossowski_Baladine_1920.jpg
+    license: Public domain
+    credit: Erich Klossowski
 identifiers:
+  bnf: "122411004"
   dome: "872"
+  gnd: "119079062"
+  idref: "031136621"
+  lc: n85340847
+  viaf: "76371255"
 sources:
   birth:
     - accessed: 2026-10-18

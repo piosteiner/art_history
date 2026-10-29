@@ -1,0 +1,43 @@
+public_id: 103118
+name: University of Applied Arts Vienna
+kind: art academy
+founded: 1867
+place: vienna
+location: [16.38222, 48.20842]
+address: Stubenring 3
+website_url: https://www.dieangewandte.at/
+wikidata_id: Q877686
+metadata:
+  sources: [Wikidata Q877686 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/Angewandte.jpg/1280px-Angewandte.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Angewandte.jpg
+    license: CC BY-SA 3.0
+    credit: Maclemo
+identifiers:
+  bnf: 14479137n
+  gnd: 5299671-2
+  idref: "070149550"
+  lc: nr00021440
+  viaf: "137637703"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q877686
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q877686
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q877686
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q877686
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q877686

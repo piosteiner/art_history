@@ -1,0 +1,16 @@
+public_id: 103290
+name: Pratovecchio
+kind: site
+location: [11.72444, 43.78778]
+wikidata_id: Q52096
+metadata:
+  sources: [Wikidata Q52096 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q52096
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q52096

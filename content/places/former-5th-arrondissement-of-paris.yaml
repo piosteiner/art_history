@@ -1,0 +1,16 @@
+public_id: 103266
+name: former 5th arrondissement of Paris
+kind: site
+location: [2.35746, 48.87197]
+wikidata_id: Q2845756
+metadata:
+  sources: [Wikidata Q2845756 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2845756
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q2845756

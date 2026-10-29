@@ -1,5 +1,7 @@
 public_id: 101896
 name: Thomas Gold Appleton
+given_name: Thomas Gold
+family_name: Appleton
 names:
   - Thomas G. Appleton
   - T. G. Appleton
@@ -9,7 +11,7 @@ names:
     text: トマス・ゴールド・アップルトン
 kind: person
 occupations: [writer, painter, poet, art historian]
-birth: 31 March 1812
+birth: 1812-03-31
 death: 1884-04-17
 wikidata_id: Q7790099
 metadata:

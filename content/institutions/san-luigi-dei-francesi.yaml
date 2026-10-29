@@ -1,11 +1,57 @@
 public_id: 102150
 name: San Luigi dei Francesi
+kind: church
 founded: 1518
+place: rome
+location: [12.47467, 41.89958]
+address: piazza San Luigi de' Francesi - Roma
+website_url: http://www.saintlouis-rome.net
 wikidata_id: Q638283
 metadata:
   sources: [Wikidata Q638283 (retrieved 2026-10-20)]
+relationships:
+  - type: located_in
+    to: place/rome
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/San_Luigi_dei_Francesi_-_facciata.jpg/1280px-San_Luigi_dei_Francesi_-_facciata.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:San_Luigi_dei_Francesi_-_facciata.jpg
+    license: CC BY 4.0
+    credit: Labicanense
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/San_Luigi_dei_Francesi_%28Rome%29_-_Interior_HDR.jpg/1280px-San_Luigi_dei_Francesi_%28Rome%29_-_Interior_HDR.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:San_Luigi_dei_Francesi_(Rome)_-_Interior_HDR.jpg
+    license: CC BY-SA 4.0
+    credit: Livioandronico2013
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Chiesa_di_San_Luigi_dei_Francesi_09.jpg/1280px-Chiesa_di_San_Luigi_dei_Francesi_09.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Luigi_dei_Francesi_09.jpg
+    license: CC BY-SA 4.0
+    credit: Nicholas Gemini
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Chiesa_di_San_Luigi_dei_Francesi_03.jpg/1280px-Chiesa_di_San_Luigi_dei_Francesi_03.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Luigi_dei_Francesi_03.jpg
+    license: CC BY-SA 4.0
+    credit: Nicholas Gemini
+identifiers:
+  gnd: 4199094-8
+  idref: "204740940"
+  lc: n85154782
+  viaf: "123865914"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q638283
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q638283
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q638283
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q638283
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q638283

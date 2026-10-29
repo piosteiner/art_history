@@ -1,0 +1,14 @@
+public_id: 102036
+name: white marble
+names:
+  - lang: fr
+    role: translation
+    text: marbre blanc
+  - lang: it
+    role: translation
+    text: marmo bianco
+  - lang: de
+    role: translation
+    text: weisser Marmor
+category: material
+parent: marble

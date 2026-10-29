@@ -16,6 +16,13 @@ death: 1336
 wikidata_id: Q5379610
 metadata:
   sources: [Wikidata Q5379610 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: institution/scrovegni-chapel
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q963954
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/9/96/Giotto%2C_scrovegni%2C_enrico_scrovegni_dona_agli_angeli_una_riproduzione_della_cappella_degli_scrovegni_%281302%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Giotto,_scrovegni,_enrico_scrovegni_dona_agli_angeli_una_riproduzione_della_cappella_degli_scrovegni_(1302).jpg

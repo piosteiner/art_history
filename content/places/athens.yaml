@@ -1,0 +1,16 @@
+public_id: 103158
+name: Athens
+kind: settlement
+location: [23.72806, 37.98417]
+wikidata_id: Q1524
+metadata:
+  sources: [Wikidata Q1524 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1524
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1524

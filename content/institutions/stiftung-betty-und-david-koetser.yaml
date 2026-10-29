@@ -1,4 +1,18 @@
 public_id: 101049
 name: Stiftung Betty und David Koetser
+kind: foundation
+founded: 1986
+place: zurich
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+sources:
+  place:
+    - url: https://www.kunsthaus.ch/en/museum/ueber-uns/geschichte/
+      note: "1986: Betty and David M. Koetser gave their collection of Dutch, Italian Baroque and Venetian paintings to their foundation at the Kunsthaus"
+      source: kunsthaus-ch
+      accessed: 2026-10-28
+  founded:
+    - url: https://www.kunsthaus.ch/en/museum/ueber-uns/geschichte/
+      note: "1986: Betty and David M. Koetser gave their collection of Dutch, Italian Baroque and Venetian paintings to their foundation at the Kunsthaus"
+      source: kunsthaus-ch
+      accessed: 2026-10-28

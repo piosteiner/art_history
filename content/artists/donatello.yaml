@@ -1,0 +1,122 @@
+public_id: 103143
+name: Donatello
+names: [Donatello Donato, Donato di Niccolo di Betto Bardi]
+birth: c. 1386
+death: 1466-12-22
+wikidata_id: Q37562
+metadata:
+  sources: [Wikidata Q37562 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-florence
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q37562
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q37562
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q37562
+  - type: worked_in
+    to: place/ferrara
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/lucca
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/modena
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/padua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/pisa
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/prato
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: worked_in
+    to: place/siena
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q37562
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q37562
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Uffizi_Donatello.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Uffizi_Donatello.jpg
+    license: CC BY-SA 3.0
+    credit: Original uploader was Frieda (dillo a Ubi) at it.wikipedia
+identifiers:
+  bnf: "121028756"
+  gnd: "118526693"
+  idref: "029391415"
+  kulturnav: 4dbe3004-fd12-4ca8-bf03-ac5db9e3f381
+  lc: n50046696
+  rkd: "23664"
+  ulan: "500026022"
+  viaf: "22171330"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q37562
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q37562

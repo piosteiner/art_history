@@ -1,0 +1,55 @@
+public_id: 103145
+name: Rodin Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée Rodin
+  - lang: it
+    role: translation
+    text: Museo Rodin
+  - lang: ja
+    role: translation
+    text: ロダン美術館
+  - lang: zh
+    role: translation
+    text: 羅丹博物館
+  - lang: ko
+    role: translation
+    text: 로댕 미술관
+  - lang: ru
+    role: translation
+    text: Музей Родена
+kind: museum
+founded: 1929-11-29
+place: philadelphia
+location: [-75.17395, 39.96191]
+website_url: http://www.rodinmuseum.org/
+wikidata_id: Q1321619
+metadata:
+  sources: [Wikidata Q1321619 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Philly042107-009-RodinMuseum.jpg/1280px-Philly042107-009-RodinMuseum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Philly042107-009-RodinMuseum.jpg
+    license: CC BY 3.0
+    credit: Bobak Ha'Eri
+identifiers:
+  gnd: 1230247-8
+  lc: n86021607
+  viaf: "128732979"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1321619
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1321619
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1321619
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1321619

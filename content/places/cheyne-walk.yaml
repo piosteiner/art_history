@@ -1,0 +1,16 @@
+public_id: 103280
+name: Cheyne Walk
+kind: site
+location: [-0.1727, 51.4823]
+wikidata_id: Q5094624
+metadata:
+  sources: [Wikidata Q5094624 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q5094624
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q5094624

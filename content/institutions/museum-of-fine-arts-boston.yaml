@@ -1,6 +1,11 @@
 public_id: 100053
 name: Museum of Fine Arts Boston
 names: [MFA Boston, MFAB]
+kind: museum
+founded: 1870
+place: boston
+location: [-71.09417, 42.33944]
+address: Huntington Avenue 465
 website_url: http://www.mfa.org/
 wikidata_id: Q49133
 metadata:
@@ -10,3 +15,31 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:MFABoston1.jpg
     license: CC BY-SA 3.0
     credit: Martin~jawiki at Japanese Wikipedia
+identifiers:
+  bnf: 11866613c
+  gnd: 38524-4
+  idref: 06171447X
+  lc: n79058410
+  ulan: "500305147"
+  viaf: "151846308"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q49133
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q49133
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q49133
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q49133
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q49133

@@ -1,2 +1,13 @@
 public_id: 100045
 name: Kōshō
+death: 1237
+relationships:
+  - type: child_of
+    to: artist/unkei
+    sources:
+      - url: https://www.tnm.jp/modules/r_free_page/index.php?id=1861&lang=en
+        source: tnm-jp
+        accessed: 2026-10-28
+      - note: “Unkei had six sons, all of whom became Buddhist sculptors. Sculptures by Tankei, Koben, and Kosho survive to this day.”
+        source: tnm-unkei-exhibition-2017
+        accessed: 2026-10-28

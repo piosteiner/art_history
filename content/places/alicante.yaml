@@ -1,0 +1,16 @@
+public_id: 103245
+name: Alicante
+kind: settlement
+location: [-0.48306, 38.34528]
+wikidata_id: Q11959
+metadata:
+  sources: [Wikidata Q11959 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q11959
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q11959

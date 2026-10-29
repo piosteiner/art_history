@@ -1,0 +1,16 @@
+public_id: 102954
+name: Morocco
+kind: country
+location: [-6, 32]
+wikidata_id: Q1028
+metadata:
+  sources: [Wikidata Q1028 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1028
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1028

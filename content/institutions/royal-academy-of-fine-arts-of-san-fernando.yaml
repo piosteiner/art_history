@@ -1,11 +1,39 @@
 public_id: 100238
 name: Royal Academy of Fine Arts of San Fernando
+kind: art academy
 founded: 1752-04-12
+place: madrid
+location: [-3.7007, 40.4178]
+website_url: http://www.realacademiabellasartessanfernando.com/
 wikidata_id: Q1322403
 metadata:
   sources: [Wikidata Q1322403 (retrieved 2026-10-13)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Palacio_de_Goyeneche_-_Real_Academia_de_Bellas_Artes_de_San_Fernando.jpg/1280px-Palacio_de_Goyeneche_-_Real_Academia_de_Bellas_Artes_de_San_Fernando.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Palacio_de_Goyeneche_-_Real_Academia_de_Bellas_Artes_de_San_Fernando.jpg
+    license: CC BY-SA 3.0
+    credit: Carlos Delgado
+identifiers:
+  bnf: 11867010x
+  gnd: 1022484-1
+  idref: 03560381X
+  lc: n50065276
+  ulan: "500302420"
+  viaf: "159071588"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1322403
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1322403
   founded:
     - accessed: 2026-10-13
       property: P571
+      wikidata: Q1322403
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q1322403

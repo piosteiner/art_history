@@ -2,11 +2,101 @@ public_id: 101427
 name: Egon Schiele
 given_name: Egon
 family_name: Schiele
+names: [Egon Leo Adolf Ludwig Schiele]
 birth: 1890-06-12
-death: 31 October 1918
+death: 1918-10-31
 wikidata_id: Q44032
 metadata:
   sources: [Wikidata Q44032 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/cisleithania
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q44032
+  - type: born_in
+    to: place/tulln-an-der-donau
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q44032
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q44032
+  - type: worked_in
+    to: place/cesky-krumlov
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q44032
+  - type: worked_in
+    to: place/neulengbach
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q44032
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q44032
+  - type: influenced_by
+    to: artist/gustav-klimt
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q44032
+  - type: student_of
+    to: artist/christian-griepenkerl
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q44032
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q872469
+  - type: student_of
+    to: artist/gustav-klimt
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q34661
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q44032
+  - type: studied_at
+    to: institution/akademie-der-bildenden-kunste-wien
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q44032
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q44032
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Egon_Schiele_photo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_photo.jpg
+    license: Public domain
+    credit: unattributed
+identifiers:
+  bnf: 12012319c
+  dome: "343"
+  gnd: "118607499"
+  idref: "028248139"
+  kulturnav: 9886f521-4eca-44c6-a9fe-1d36059be853
+  lc: n50016083
+  nlk: KAC199624339
+  rkd: "70446"
+  ulan: "500002633"
+  viaf: "41850463"
 sources:
   birth:
     - accessed: 2026-10-19

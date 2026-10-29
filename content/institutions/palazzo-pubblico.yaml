@@ -1,5 +1,49 @@
 public_id: 102157
 name: Palazzo Pubblico
+names:
+  - lang: it
+    role: alternative
+    text: Palazzo Comunale di Siena
+kind: town hall
+founded: 1297/1310
+place: siena
+location: [11.331942, 43.318007]
+address: Piazza del Campo, Siena
+description_md: |-
+  Der Palazzo Pubblico an der Piazza del Campo war der Sitz der Regierung der Republik Siena. Geplant seit 1282, wurde er etwa zwischen 1297 und 1310 unter dem Governo dei Nove gebaut, der 1310 einzog; bis heute ist er Sitz der Stadtverwaltung.[[source/wikipedia-it-palazzo-pubblico-siena]] Die Torre del Mangia entstand 1325–1348, ihr Abschluss aus Travertin nach einem Entwurf Lippo Memmis; die Cappella di Piazza wurde 1352 als Dank für das Ende der Pest gebaut.[[source/wikipedia-it-palazzo-pubblico-siena]]
+
+  Die Säle gehören zu den wichtigsten Zeugnissen der sienesischen Malerei: in der Sala del Mappamondo Simone Martinis Maestà (1312–1315) und der ihm zugeschriebene Guidoriccio da Fogliano (1330); in der Sala dei Nove oder della Pace [[artwork/allegory-of-good-and-bad-government|Ambrogio Lorenzettis Allegorie und Wirkungen des Guten und Schlechten Regiments]] (1338–1339); in der Sala di Balia der Zyklus Spinello Aretinos und Parri Spinellis zu Papst Alexander III. (1407); in der Anticappella die Fresken Taddeo di Bartolos (um 1415).[[source/wikipedia-it-palazzo-pubblico-siena]] Seit den 1930er Jahren ist im ersten Stock das Museo Civico eingerichtet.[[source/wikipedia-it-palazzo-pubblico-siena]]
+website_url: http://www.comune.siena.it/La-Citta/Cultura/Chiese-e-Monumenti/Palazzo-Pubblico
 wikidata_id: Q1190961
 metadata:
   sources: [Wikidata Q1190961 (retrieved 2026-10-20)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7c/2000-05-17_Siena_05170009.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2000-05-17_Siena_05170009.jpg
+    license: CC BY-SA 3.0 de
+    credit: Eckhard Henkel
+    caption: Palazzo Pubblico an der Piazza del Campo, 2000
+identifiers:
+  gnd: 4107725-8
+  idref: "066979196"
+  lc: n79081513
+  viaf: "145999530"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1190961
+  place:
+    - source: wikipedia-it-palazzo-pubblico-siena
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1190961
+  address:
+    - source: wikipedia-it-palazzo-pubblico-siena
+  founded:
+    - source: wikipedia-it-palazzo-pubblico-siena
+  location:
+    - source: wikipedia-it-palazzo-pubblico-siena
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1190961

@@ -1,0 +1,54 @@
+public_id: 103192
+title_lang: ja
+title: 地獄の門
+names:
+  - lang: en
+    role: translation
+    text: The Gates of Hell
+    status: official
+parent: the-gates-of-hell
+part_number: "3"
+creator: auguste-rodin
+created: 1930/1933
+created_span: duration
+conceived: 1880/1917
+kind: sculpture
+materials: [bronze]
+dimensions: [540, 390, 100]
+institution: national-museum-of-western-art
+inventory_number: S.1959-0045
+web_url: https://collection.nmwa.go.jp/S.1959-0045.html
+description_md: Von [[person/kojiro-matsukata|Kōjirō Matsukata]] gekauft und 1930–1933 gegossen; 1944 beschlagnahmte der französische Staat den Guss, 1959 gab er ihn mit der Sammlung Matsukata an Japan zurück. Er steht im Vorhof des Museums.[[source/nmwa-s1959-0045|“1880-1890年頃/1917年（原型）、1930-1933年（鋳造）” · “松方幸次郎氏購入; 1944年フランス政府が接収; 1959年フランス政府より寄贈返還” · “前庭”]]
+provenance:
+  - owner: institution/fonderie-alexis-rudier
+    role: foundry
+    acquired: 1930/1933
+    method: creation
+    place: paris
+    sources:
+      - source: museo-soumaya-puerta-del-infierno
+  - owner: person/kojiro-matsukata
+    method: purchase
+    sources:
+      - source: nmwa-s1959-0045
+  - owner: place/france
+    acquired: 1944
+    method: confiscation
+    label: vom französischen Staat beschlagnahmt
+    sources:
+      - source: nmwa-s1959-0045
+  - owner: institution/national-museum-of-western-art
+    acquired: 1959
+    method: restitution
+    label: von der französischen Regierung als Schenkung zurückgegeben (寄贈返還)
+    sources:
+      - source: nmwa-s1959-0045
+sources:
+  created:
+    - source: nmwa-s1959-0045
+  dimensions:
+    - source: nmwa-s1959-0045
+  institution:
+    - source: nmwa-s1959-0045
+  inventory_number:
+    - source: nmwa-s1959-0045

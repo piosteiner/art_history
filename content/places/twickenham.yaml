@@ -1,0 +1,16 @@
+public_id: 103287
+name: Twickenham
+kind: site
+location: [-0.3369, 51.4486]
+wikidata_id: Q1143278
+metadata:
+  sources: [Wikidata Q1143278 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1143278
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1143278

@@ -1,5 +1,31 @@
 public_id: 101953
 name: Cleomenes
+names:
+  - lang: grc
+    role: original
+    text: Κλεομένης
+  - lang: en
+    role: alternative
+    text: Cleomenes son of Apollodorus
+  - lang: de
+    role: translation
+    text: Kleomenes
+  - lang: it
+    role: translation
+    text: Cleomene
+  - lang: fr
+    role: translation
+    text: Cléomène
+active: first half of the 1st century BCE
+biography_md: |-
+  Athenian sculptor, known from his signature on the base of the [[artwork/venus-de-medici]]: ΚΛΕΟΜΕΝΗΣ ΑΠΟΛΛΟΔΩΡΟΥ ΑΘΗΝΑΙΟΣ ΕΠΟΕΣΕΝ, “Cleomenes son of Apollodorus of Athens made it”[[source/uffizi-medici-venus|“The front side of the base bears the Greek inscription ΚΛΕΟΜΕΝΗΣ ΑΠΟΛΟΔΩΡΟΥ ΑΘΗΝΑΙΟΣ ΕΠΩΕΣΕΝ (Made by Cleomenes son of Apollodorus of Athens)”]]. The inscription in its present form is modern but repeats an ancient one[[source/treccani-eaa-kleomenes-1961|„L’iscrizione n. 1 è certamente moderna nella redazione attuale, ma ricalca, come già noto E. Q. Visconti, una originale“]]. According to the Uffizi the signed base and the trunk came from another, damaged statue of his and were fitted to the Venus after it was found in Rome in the 16th century — so the Venus is not his own work[[source/uffizi-medici-venus|“the choice was to use the base of another ancient statue and adapt it to the sculpture. This base was signed … Consequently, the base and trunk of the statue were obtained from the remains of Cleomenes’ work, which were adapted to the sinuous figure of the goddess”]]. Mansuelli had still ruled out, in 1961, that the inscription belonged to a base independent of the statue[[source/treccani-eaa-kleomenes-1961|„è da escludere anche l’ipotesi di S. Reinach, secondo cui l’iscrizione sarebbe stata su di una base indipendente dalla statua“]].
+
+  Several sculptors of this name signed works — the so-called Germanicus in the Louvre (Kleomenes son of Kleomenes), a statue in Piacenza, the altar with the Sacrifice of Iphigenia in the Uffizi — and Pliny names the *Thespiades* of a Kleomenes in the library of Asinius Pollio[[source/treccani-eaa-kleomenes-1961|the four signed works: „l’Afrodite Medici …, firmata da un K., figlio di Apollodoro, ateniese; il cosiddetto Germanico del Museo del Louvre …, firmato da un K., figlio di K.; una statua frammentaria del Museo Civico di Piacenza …; l’ara col sacrificio di Ifigenia della Galleria degli Uffizî“ · „Un passo di Plinio (Nat. hist., xxxvi, 33) elenca le Thespiades Cleomenis“]]: a family of Athenian (Neo-Attic) sculptors, active between the 2nd and 1st centuries BCE[[source/treccani-eaa-kleomenes-1961|„fa pensare ad una dinastia di artisti attici, la cui attività va distribuita nel tempo“]][[source/uffizi-medici-venus|“the genealogy of the Cleomeni, an important family of Neo-Attic sculptors active between the 2nd and 1st centuries B.C”]]. Mansuelli counts the son of Apollodorus as the first of them, a faithful copyist and probably the father of the sculptor of the Germanicus, which he dates to 50–40 BCE[[source/treccani-eaa-kleomenes-1961|„K. di Apollodoro è un copista, il quale annulla la propria personalità di fronte a quella del maestro“ · „pongono l’opera nel decennio 50-40 a. C. Se K. di Apollodoro è, come sembra verosimile, il padre di questo K., l’Afrodite Medici andrebbe spostata alla generazione precedente“ · „K. 1° (K. di Apollodoro); K. 2° (K. di K.); K. 3° (autore delle Thespiades …)“]] — so he was active about the first half of the 1st century BCE. Dates of his life are not known; the span 363–146 BCE found elsewhere joins him with the sculptor of the *Thespiades* and reasons from Praxiteles’ time to the sack of Corinth[[source/wikipedia-de-kleomenes-bildhauer-i|„So nimmt man an, dass Kleomenes zwischen 363 v. Chr., der Zeit des Praxiteles, und 146 v. Chr. gelebt hat“]].
 wikidata_id: Q1774130
 metadata:
   sources: [Wikidata Q1774130 (retrieved 2026-10-20)]
+sources:
+  active:
+    - note: „pongono l’opera nel decennio 50-40 a. C. Se K. di Apollodoro è, come sembra verosimile, il padre di questo K., l’Afrodite Medici andrebbe spostata alla generazione precedente“
+      source: treccani-eaa-kleomenes-1961
+      accessed: 2026-10-28

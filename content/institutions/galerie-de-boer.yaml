@@ -1,4 +1,30 @@
 public_id: 101048
 name: Galerie de Boer
+kind: gallery
+founded: 1922
+place: amsterdam
+location: [4.8940238, 52.3647799]
+address: Herengracht 512, 1017 CC Amsterdam
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+sources:
+  place:
+    - url: https://www.tefaf.com/fairs/exhibitors/boer
+      note: „Our gallery was founded in 1922 by Piet de Boer“ — the same firm as Kunsthandel P. de Boer
+      source: tefaf-com
+      accessed: 2026-10-28
+  address:
+    - url: https://www.tefaf.com/fairs/exhibitors/boer
+      note: „Our gallery was founded in 1922 by Piet de Boer“ — the same firm as Kunsthandel P. de Boer
+      source: tefaf-com
+      accessed: 2026-10-28
+  founded:
+    - url: https://www.tefaf.com/fairs/exhibitors/boer
+      note: „Our gallery was founded in 1922 by Piet de Boer“ — the same firm as Kunsthandel P. de Boer
+      source: tefaf-com
+      accessed: 2026-10-28
+  location:
+    - url: https://www.tefaf.com/fairs/exhibitors/boer
+      note: „Our gallery was founded in 1922 by Piet de Boer“ — the same firm as Kunsthandel P. de Boer
+      source: tefaf-com
+      accessed: 2026-10-28

@@ -1,4 +1,22 @@
 public_id: 100595
 name: Marburg Central Collecting Point
 kind: collecting point
+founded: 1945
+dissolved: 1946
 place: marburg
+wikidata_id: Q19295703
+metadata:
+  sources: [Wikidata Q19295703 (retrieved 2026-10-28)]
+identifiers:
+  gnd: "1135593000"
+  lc: nb2021007043
+  viaf: "2714149844947502960009"
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q19295703
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q19295703

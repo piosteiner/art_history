@@ -1,2 +1,30 @@
 public_id: 100429
 name: Newhouse Gallery
+kind: gallery
+founded: c. 1878
+dissolved: 1999
+place: new-york-city
+wikidata_id: Q78088174
+identifiers:
+  lc: n86812407
+  viaf: "267708773"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q78088174
+  place:
+    - url: https://research.frick.org/directory/detail/180
+      note: "Frick Archives Directory: Newhouse Galleries, 1878–1999 — started in St. Louis ca. 1878 as M. A. Newhouse & Son, later in New York (Old Master paintings)"
+      source: research-frick-org
+      accessed: 2026-10-28
+  founded:
+    - url: https://research.frick.org/directory/detail/180
+      note: "Frick Archives Directory: Newhouse Galleries, 1878–1999 — started in St. Louis ca. 1878 as M. A. Newhouse & Son, later in New York (Old Master paintings)"
+      source: research-frick-org
+      accessed: 2026-10-28
+  dissolved:
+    - url: https://research.frick.org/directory/detail/180
+      note: "Frick Archives Directory: Newhouse Galleries, 1878–1999 — started in St. Louis ca. 1878 as M. A. Newhouse & Son, later in New York (Old Master paintings)"
+      source: research-frick-org
+      accessed: 2026-10-28

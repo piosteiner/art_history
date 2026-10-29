@@ -1,0 +1,73 @@
+public_id: 102800
+name: Narashige Koide
+given_name: Narashige
+family_name: Koide
+names:
+  - lang: ja
+    role: original
+    text: 小出楢重
+birth: 1887-10-13
+death: 1931-02-13
+wikidata_id: Q3336023
+metadata:
+  sources: [Wikidata Q3336023 (retrieved 2026-10-28)]
+relationships:
+  - type: born_in
+    to: place/osaka
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q3336023
+  - type: died_in
+    to: place/ashiya
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q3336023
+  - type: worked_in
+    to: place/japan
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q3336023
+  - type: student_of
+    to: artist/shimomura-kanzan
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q2113306
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q3336023
+  - type: studied_at
+    to: institution/tokyo-university-of-the-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q3336023
+  - type: associated_with
+    to: movement/youga
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q3336023
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Koide_Narashige_-_Self-Portrait_with_a_Hat_-_Google_Art_Project.jpg/1280px-Koide_Narashige_-_Self-Portrait_with_a_Hat_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Koide_Narashige_-_Self-Portrait_with_a_Hat_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Narashige Koide
+identifiers:
+  gnd: "1014575354"
+  idref: "226218201"
+  lc: n81127638
+  ulan: "500123269"
+  viaf: "13641998"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q3336023
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q3336023

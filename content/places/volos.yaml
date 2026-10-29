@@ -1,0 +1,16 @@
+public_id: 103157
+name: Volos
+kind: settlement
+location: [22.9425, 39.36111]
+wikidata_id: Q200036
+metadata:
+  sources: [Wikidata Q200036 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q200036
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q200036

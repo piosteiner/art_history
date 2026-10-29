@@ -1,0 +1,42 @@
+public_id: 103164
+name: B. Gerald Cantor
+given_name: B. Gerald
+family_name: Cantor
+names:
+  - Bernard Gerald Cantor
+  - lang: fr
+    role: translation
+    text: Bernard Cantor
+  - lang: ja
+    role: translation
+    text: B・ジェラルド・カンター
+kind: person
+occupations: [collector, patron of the arts, art collector, investment banker]
+birth: 1916-12-17
+death: 1996-07-17
+wikidata_id: Q2897633
+metadata:
+  sources: [Wikidata Q2897633 (retrieved 2026-10-28)]
+identifiers:
+  bnf: 12002916s
+  gnd: 11921539X
+  lc: n50030854
+  rkd: "440450"
+  viaf: "89038024"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2897633
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q2897633
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q2897633
+  occupations:
+    - accessed: 2026-10-28
+      property: P106
+      wikidata: Q2897633

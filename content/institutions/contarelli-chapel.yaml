@@ -7,10 +7,11 @@ names:
   - lang: fr
     role: translation
     text: Chapelle Contarelli
+kind: chapel
 founded: 1600
 place: rome
 location: [12.47467, 41.89958]
-description_md: "A side chapel of [[institution/san-luigi-dei-francesi]] in Rome, founded with the bequest of Cardinal [[person/matthieu-cointerel]] (Matteo Contarelli, d. 1585). Caravaggio’s three paintings of Saint Matthew were made for it and still hang there: the [[artwork/ciclo-di-san-matteo]]."
+description_md: "A side chapel of [[institution/san-luigi-dei-francesi]] in Rome, founded with the bequest of Cardinal [[person/matthieu-cointerel]] (Matteo Contarelli, d. 1585). Caravaggio’s three paintings of Saint Matthew were made for it and still hang there: the [[artwork/ciclo-di-san-matteo]][[source/wikipedia-en-contarelli-chapel|“The decorative cycle began with the painting on the left side of the chapel” · “On the right side of the wall is the Martyrdom of St. Matthew”]][[source/smb-der-evangelist-matthaeus-caravaggio|„… hängt Caravaggios zweite Version desselben Themas noch heute über dem Altar der Cappella Contarelli“]]."
 wikidata_id: Q3657340
 metadata:
   sources: [Wikidata Q3657340 (retrieved 2026-10-27)]
@@ -21,8 +22,27 @@ relationships:
       - accessed: 2026-10-27
         property: P361
         wikidata: Q3657340
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/The_three_Caravaggio_paintings_in_the_Contarelli_Chapel_in_the_church_San_Luigi_dei_Francesi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_three_Caravaggio_paintings_in_the_Contarelli_Chapel_in_the_church_San_Luigi_dei_Francesi.jpg
+    license: CC BY-SA 4.0
+    credit: Lijil
+identifiers:
+  gnd: 7518276-2
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3657340
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q3657340
   founded:
     - accessed: 2026-10-27
       property: P571
+      wikidata: Q3657340
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q3657340

@@ -2,6 +2,7 @@ public_id: 100236
 name: Pablo Picasso
 given_name: Pablo
 family_name: Picasso
+names: [Pablo Diego José Francisco de Paula Juan Nepomuceno Crispín Crispiniano de la Santísima Trinidad María de los Remedios Alarcón y Herrera Ruiz Picasso]
 birth: 1881-10-25
 death: 1973-04-08
 wikidata_id: Q5593
@@ -19,6 +20,12 @@ relationships:
     sources:
       - accessed: 2026-10-13
         property: P20
+        wikidata: Q5593
+  - type: lived_in
+    to: place/rue-des-grands-augustins
+    sources:
+      - accessed: 2026-10-28
+        property: P551
         wikidata: Q5593
   - type: lived_in
     to: place/barcelona
@@ -42,15 +49,57 @@ relationships:
         property: P551
         wikidata: Q5593
   - type: worked_in
+    to: place/a-coruna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5593
+  - type: worked_in
+    to: place/aix-en-provence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5593
+  - type: worked_in
+    to: place/antibes
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5593
+  - type: worked_in
+    to: place/avignon
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5593
+  - type: worked_in
     to: place/barcelona
     sources:
       - accessed: 2026-10-13
         property: P937
         wikidata: Q5593
   - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5593
+  - type: worked_in
     to: place/paris
     sources:
       - accessed: 2026-10-13
+        property: P937
+        wikidata: Q5593
+  - type: worked_in
+    to: place/royan
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5593
+  - type: worked_in
+    to: place/schoorl
+    sources:
+      - accessed: 2026-10-28
         property: P937
         wikidata: Q5593
   - type: influenced_by

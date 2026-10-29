@@ -1,0 +1,16 @@
+public_id: 103179
+name: San Giovanni Valdarno
+kind: settlement
+location: [11.53278, 43.56444]
+wikidata_id: Q52097
+metadata:
+  sources: [Wikidata Q52097 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q52097
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q52097

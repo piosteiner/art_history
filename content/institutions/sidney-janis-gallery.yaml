@@ -1,4 +1,31 @@
 public_id: 101062
 name: Sidney Janis Gallery
+kind: gallery
+founded: 1948
+dissolved: 1999
+place: new-york-city
+wikidata_id: Q56555805
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q56555805 (retrieved 2026-10-28)]
+identifiers:
+  idref: "053437357"
+  lc: n80097579
+  ulan: "500303630"
+  viaf: "144330791"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q56555805
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q56555805
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q56555805
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q56555805

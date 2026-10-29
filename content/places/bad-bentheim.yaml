@@ -1,0 +1,16 @@
+public_id: 103252
+name: Bad Bentheim
+kind: site
+location: [7.15972, 52.30306]
+wikidata_id: Q574332
+metadata:
+  sources: [Wikidata Q574332 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q574332
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q574332

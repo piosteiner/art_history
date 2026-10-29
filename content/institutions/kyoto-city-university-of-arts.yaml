@@ -1,0 +1,42 @@
+public_id: 103277
+name: Kyoto City University of Arts
+kind: university
+founded: 1880
+place: kyoto
+location: [135.7634, 34.98636]
+address: 〒600-8601 京都市下京区下之町57番地1
+website_url: http://www.kcua.ac.jp/
+wikidata_id: Q749884
+metadata:
+  sources: [Wikidata Q749884 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Kyotogeidai_Logotype_2020_SVG_ver.svg/1280px-Kyotogeidai_Logotype_2020_SVG_ver.svg.png
+    source_url: https://commons.wikimedia.org/wiki/File:Kyotogeidai_Logotype_2020_SVG_ver.svg
+    license: Public domain
+    credit: 京都市立芸術大学（京都芸大）
+identifiers:
+  gnd: 10125567-6
+  idref: "183987373"
+  lc: n82151455
+  viaf: "134895343"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q749884
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q749884
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q749884
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q749884
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q749884

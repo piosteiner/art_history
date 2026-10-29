@@ -30,6 +30,7 @@ names:
   - lang: ru
     role: translation
     text: Лувр
+kind: museum
 founded: 1793-08-10
 place: paris
 location: [2.33583, 48.86111]

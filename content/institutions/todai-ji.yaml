@@ -1,0 +1,64 @@
+public_id: 103057
+name: Tōdai-ji Temple
+names:
+  - Tōdaiji temple
+  - Todaiji temple
+  - Great Eastern Temple
+  - Eastern Great Temple
+  - Tōdai-ji
+  - lang: nl
+    role: translation
+    text: Todai-ji
+  - lang: fr
+    role: translation
+    text: temple Tōdai
+  - lang: ja
+    role: translation
+    text: 東大寺
+  - lang: zh
+    role: translation
+    text: 东大寺
+  - lang: ko
+    role: translation
+    text: 도다이지
+  - lang: ru
+    role: translation
+    text: Тодай-дзи
+kind: temple
+founded: 752
+place: nara
+location: [135.83972, 34.68917]
+address: 406-1, Zōshi-chō, Nara-shi, Nara-ken 630-8587
+website_url: https://www.todaiji.or.jp/
+wikidata_id: Q460367
+metadata:
+  sources: [Wikidata Q460367 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Daibutsu-den_in_Todaiji_Nara02bs3200.jpg/1280px-Daibutsu-den_in_Todaiji_Nara02bs3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daibutsu-den_in_Todaiji_Nara02bs3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  bnf: 14458418j
+  gnd: 4570185-4
+  idref: "130993565"
+  lc: n81029658
+  ulan: "500303470"
+  viaf: "130192332"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q460367
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q460367
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q460367
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q460367

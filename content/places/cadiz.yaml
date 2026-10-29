@@ -1,0 +1,16 @@
+public_id: 103216
+name: Cádiz
+kind: site
+location: [-6.2975, 36.535]
+wikidata_id: Q15682
+metadata:
+  sources: [Wikidata Q15682 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q15682
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q15682

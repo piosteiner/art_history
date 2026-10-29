@@ -1,0 +1,11 @@
+public_id: 103237
+name: primitivism
+kind: movement
+wikidata_id: Q848365
+metadata:
+  sources: [Wikidata Q848365 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q848365

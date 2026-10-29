@@ -35,11 +35,18 @@ names:
     text: Филипп II
 kind: person
 occupations: [ruler]
-birth: 31 May 1527
+birth: 1527-05-31
 death: 1598-09-13
 wikidata_id: Q34417
 metadata:
   sources: [Wikidata Q34417 (retrieved 2026-10-19)]
+relationships:
+  - type: founded
+    to: institution/royal-monastery-of-san-lorenzo-de-el-escorial
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q28471
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg/1280px-Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Philip_II_of_Spain_by_Sofonisba_Anguissola_-_002b.jpg

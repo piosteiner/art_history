@@ -1,0 +1,16 @@
+public_id: 103227
+name: Ukraine
+period: 1991-08-24/
+country_codes: [UA]
+wikidata_id: Q212
+metadata:
+  sources: [Wikidata Q212 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q212
+  country_codes:
+    - accessed: 2026-10-28
+      property: P297
+      wikidata: Q212

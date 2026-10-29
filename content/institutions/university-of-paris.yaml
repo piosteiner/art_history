@@ -1,0 +1,42 @@
+public_id: 102950
+name: University of Paris
+kind: university
+founded: 1896
+dissolved: 1971-01-01
+place: paris
+location: [2.34361, 48.84861]
+wikidata_id: Q209842
+metadata:
+  sources: [Wikidata Q209842 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Universite_Paris_I_Pantheon-Sorbonne.jpg/1280px-Universite_Paris_I_Pantheon-Sorbonne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Universite_Paris_I_Pantheon-Sorbonne.jpg
+    license: Public domain
+    credit: Marie-Lan Nguyen
+identifiers:
+  bnf: 12163414c
+  gnd: 2025059-9
+  idref: "034526110"
+  lc: n79129805
+  viaf: "138100231"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q209842
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q209842
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q209842
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q209842
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q209842

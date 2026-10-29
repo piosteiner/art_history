@@ -1,0 +1,39 @@
+public_id: 103347
+name: Stanford
+names:
+  - Stanford, California
+  - Stanford, CA
+  - lang: ja
+    role: translation
+    text: スタンフォード
+  - lang: zh
+    role: translation
+    text: 斯坦福
+  - lang: ko
+    role: translation
+    text: 스탠퍼드
+  - lang: ru
+    role: translation
+    text: Стэнфорд
+kind: settlement
+parent: santa-clara-county
+country_code: US
+location: [-122.16608, 37.42411]
+wikidata_id: Q173813
+metadata:
+  sources: [Wikidata Q173813 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4056932-9
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q173813
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q173813
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q173813

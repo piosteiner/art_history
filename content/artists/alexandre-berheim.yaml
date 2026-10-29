@@ -1,0 +1,47 @@
+public_id: 103308
+name: Alexandre Berheim
+given_name: Alexandre
+family_name: Berheim
+names: [Alexandre Bernheim-Jeune]
+birth: 1839-04-04
+death: 1915-03-02
+wikidata_id: Q105605526
+metadata:
+  sources: [Wikidata Q105605526 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q105605526
+  - type: born_in
+    to: place/besancon
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q105605526
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q105605526
+  - type: founded
+    to: institution/bernheim-jeune
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q826482
+identifiers:
+  bnf: 17863371t
+  viaf: "14158125107514932813"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q105605526
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q105605526

@@ -5,7 +5,7 @@ family_name: Monet
 kind: person
 birth: 1878
 death: 1966
-description_md: Second son of [[artist/claude-monet]]; inherited his father's estate in 1926.
+description_md: "Second son of [[artist/claude-monet]][[source/wikipedia-fr-michel-monet|« Il est le second fils du peintre Claude Monet et de Camille Doncieux »]]; inherited his father's estate in 1926[[source/kunsthaus-le-bassin-aux-nympheas-le-soir-2599|Provenienz: „Claude Monet (*1840 Paris, +1926 Giverny) (Künstler/-in) 1926 – 1952, Michel Monet (*1878 Paris, +1966 Vernon), Sorel-Moussel (Eure-et-Loir), Nachlass“]]."
 relationships:
   - type: born_in
     to: place/paris

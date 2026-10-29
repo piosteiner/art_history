@@ -1,11 +1,47 @@
 public_id: 101955
 name: Galleria Palatina
+names: [Palatine Gallery]
+kind: museum
 founded: 1833
+place: florence
+location: [11.25, 43.7652]
+address: Piazza Pitti
+website_url: http://www.polomuseale.firenze.it/musei/
 wikidata_id: Q866498
 metadata:
   sources: [Wikidata Q866498 (retrieved 2026-10-20)]
+relationships:
+  - type: part_of
+    to: institution/palazzo-pitti
+    sources:
+      - accessed: 2026-10-28
+        property: P361
+        wikidata: Q866498
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Palazzo_Pitti_nel_tardo_pomeriggio.jpg/1280px-Palazzo_Pitti_nel_tardo_pomeriggio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Palazzo_Pitti_nel_tardo_pomeriggio.jpg
+    license: CC BY-SA 3.0
+    credit: Almaak
+identifiers:
+  bnf: "136217784"
+  gnd: 812653-7
+  idref: "027593045"
+  lc: n50003864
+  viaf: "131314471"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q866498
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q866498
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q866498
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q866498

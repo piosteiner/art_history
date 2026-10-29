@@ -2,11 +2,82 @@ public_id: 100248
 name: Maria Prymachenko
 given_name: Maria
 family_name: Prymachenko
+names:
+  - lang: uk
+    role: original
+    text: Марія Оксентіївна Примаченко
 birth: 1909-01-12
 death: 1997-08-18
 wikidata_id: Q2639482
 metadata:
   sources: [Wikidata Q2639482 (retrieved 2026-10-13)]
+relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q2639482
+  - type: nationality
+    to: polity/soviet-union
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q2639482
+  - type: nationality
+    to: polity/ukraine
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q2639482
+  - type: nationality
+    to: polity/ukrainian-people-s-republic
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q2639482
+  - type: nationality
+    to: polity/ukrainian-soviet-socialist-republic
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q2639482
+  - type: born_in
+    to: place/bolotnia
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q2639482
+  - type: died_in
+    to: place/bolotnia
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q2639482
+  - type: member_of
+    to: institution/artists-union-of-the-ussr
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q2639482
+  - type: associated_with
+    to: movement/naive-art
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q2639482
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/64/Coin_of_Ukraine_Prymachenko_r.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Coin_of_Ukraine_Prymachenko_r.jpg
+    license: Public domain
+    credit: National Bank of Ukraine
+identifiers:
+  gnd: "119141000"
+  idref: "180366742"
+  lc: n89663042
+  rkd: "327381"
+  ulan: "500627687"
+  viaf: "54951552"
 sources:
   birth:
     - accessed: 2026-10-13

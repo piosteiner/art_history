@@ -1,0 +1,32 @@
+public_id: 103224
+name: Artists' Union of the USSR
+names: [Artists' Union of the Soviet Union, Union of Artists of the Soviet Union]
+kind: art society
+founded: 1931-04-15
+dissolved: 1992-01
+place: moscow
+wikidata_id: Q4430596
+metadata:
+  sources: [Wikidata Q4430596 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 1010615-7
+  idref: "087695804"
+  lc: n83137046
+  viaf: "156455434"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q4430596
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q4430596
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q4430596
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q4430596

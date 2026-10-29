@@ -1,2 +1,22 @@
 public_id: 100426
 name: Malingue S.A.
+kind: gallery
+place: paris
+location: [2.314222, 48.8715825]
+address: 26 avenue Matignon, 75008 Paris
+sources:
+  place:
+    - url: https://usaartnews.com/news/paris-dealer-kamel-mennour-buys-galerie-malingue
+      note: founded by Daniel Malingue „more than five decades ago“; 26 Avenue Matignon — bought by Kamel Mennour (article of 19 March 2026)
+      source: usaartnews-com
+      accessed: 2026-10-28
+  address:
+    - url: https://usaartnews.com/news/paris-dealer-kamel-mennour-buys-galerie-malingue
+      note: founded by Daniel Malingue „more than five decades ago“; 26 Avenue Matignon — bought by Kamel Mennour (article of 19 March 2026)
+      source: usaartnews-com
+      accessed: 2026-10-28
+  location:
+    - url: https://usaartnews.com/news/paris-dealer-kamel-mennour-buys-galerie-malingue
+      note: founded by Daniel Malingue „more than five decades ago“; 26 Avenue Matignon — bought by Kamel Mennour (article of 19 March 2026)
+      source: usaartnews-com
+      accessed: 2026-10-28

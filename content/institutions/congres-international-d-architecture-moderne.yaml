@@ -1,11 +1,33 @@
 public_id: 100838
 name: Congrès International d'Architecture Moderne
+names:
+  - Congrès Internationaux d'Architecture Moderne
+  - CIAM
+  - lang: de
+    role: translation
+    text: Internationaler Kongress für Neues Bauen
+kind: art society
 founded: 1928-06
+dissolved: 1959
 wikidata_id: Q727738
 metadata:
   sources: [Wikidata Q727738 (retrieved 2026-10-18)]
+identifiers:
+  bnf: "144917891"
+  gnd: 137970-7
+  idref: "086058797"
+  lc: n79089248
+  viaf: "144549394"
 sources:
   founded:
     - accessed: 2026-10-18
       property: P571
+      wikidata: Q727738
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q727738
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
       wikidata: Q727738

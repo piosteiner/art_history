@@ -1,0 +1,16 @@
+public_id: 102959
+name: Blackfriars
+kind: site
+location: [-0.10417, 51.5125]
+wikidata_id: Q880829
+metadata:
+  sources: [Wikidata Q880829 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q880829
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q880829

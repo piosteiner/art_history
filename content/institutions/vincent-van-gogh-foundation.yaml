@@ -1,5 +1,12 @@
 public_id: 101107
 name: Vincent van Gogh Foundation
 kind: foundation
+place: amsterdam
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+sources:
+  place:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0115V1962
+      note: the (2nd) Vincent van Gogh Foundation, Amsterdam (agreement with the State, 21 July 1962); the 1st one was in Laren (1952)
+      source: van-gogh-museum-collection
+      accessed: 2026-10-28

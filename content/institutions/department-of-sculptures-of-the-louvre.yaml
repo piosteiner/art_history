@@ -1,8 +1,37 @@
 public_id: 101713
 name: Department of Sculptures of the Louvre
+names:
+  - lang: fr
+    role: alternative
+    text: département des sculptures du musée du Louvre
+  - lang: de
+    role: translation
+    text: Skulpturenabteilung im Louvre
+kind: department
+place: paris
+location: [2.33583, 48.86111]
 wikidata_id: Q3044772
 metadata:
   sources: [Wikidata Q3044772 (retrieved 2026-10-20)]
 relationships:
   - type: part_of
     to: institution/musee-du-louvre
+    sources:
+      - accessed: 2026-10-28
+        property: P361
+        wikidata: Q3044772
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Louvre_Grab.JPG/1280px-Louvre_Grab.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Louvre_Grab.JPG
+    license: CC BY-SA 3.0
+    credit: Anonymous (Burgundy)Unknown author
+identifiers:
+  bnf: 11865023s
+  idref: "026394715"
+  lc: n84185845
+  viaf: "134146864"
+sources:
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3044772

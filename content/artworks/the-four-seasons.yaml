@@ -1,10 +1,27 @@
 public_id: 101432
 title: The Four Seasons
+names:
+  - lang: de
+    role: translation
+    text: Die Jahreszeiten
+creator: pieter-brueghel-the-elder
 kind: series
 wikidata_id: Q110193278
 metadata:
   sources: [Wikidata Q110193278 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Pieter_Bruegel_the_Elder_-_Spring%2C_1565_-_Google_Art_Project.jpg/1280px-Pieter_Bruegel_the_Elder_-_Spring%2C_1565_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_Spring,_1565_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Pieter Brueghel the Elder
 sources:
+  names:
+    - accessed: 2026-10-28
+      wikidata: Q110193278
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q110193278
   title_status:
     - accessed: 2026-10-19
       wikidata: Q110193278

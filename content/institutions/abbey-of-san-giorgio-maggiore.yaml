@@ -9,6 +9,7 @@ names:
   - lang: it
     role: translation
     text: Abbazia di San Giorgio Maggiore
+kind: abbey
 founded: 1957
 place: venice
 location: [12.34333, 45.42917]
@@ -17,7 +18,16 @@ website_url: http://www.abbaziasangiorgio.it
 wikidata_id: Q116732887
 metadata:
   sources: [Wikidata Q116732887 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Dormitory_facade_San_Giorgio_Monastery.jpg/1280px-Dormitory_facade_San_Giorgio_Monastery.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dormitory_facade_San_Giorgio_Monastery.jpg
+    license: CC BY-SA 3.0
+    credit: This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but please mention me as the author and send me a message. This image is not in the public domain. Please respect the copyright protection. It may only be used according to the rules mentioned here. This specifically excludes use in social media, if applicable terms of the licenses listed here are not appropriate. Please do not upload an updated image here without consultation with the Author. The author would like to make corrections only at his own source. This ensures that the changes are preserved.Please if you think that any changes should be required, please inform the author.Otherwise you can upload a new image with a new name. Please use one of the templates derivative or extract.
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q116732887
   place:
     - accessed: 2026-10-20
       property: P131

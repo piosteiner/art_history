@@ -1,0 +1,39 @@
+public_id: 103191
+title_lang: fr
+title: La Porte de l'Enfer
+parent: the-gates-of-hell
+part_number: "2"
+creator: auguste-rodin
+created: 1926/1928
+created_span: duration
+conceived: 1880/1917
+kind: sculpture
+materials: [bronze]
+dimensions: [635, 400, 85]
+institution: musee-rodin
+inventory_number: S.01304
+web_url: https://collections.musee-rodin.fr/fr/document/la-porte-de-l-enfer/6385d6b005c32181005b44e0
+description_md: "Der Guss des Musée Rodin, 1926–1928 bei Alexis Rudier im Sandguss für die Sammlung des Museums gegossen; am rechten Pfeiler die Marke des Giessers.[[source/musee-rodin-s01304|“1926-1928, Date d'exécution” · “fonte au sable” · “fonte réalisée pour les collections du musée” · “sur le retour du pilastre droit : Alexis Rudier / Fondeur . Paris . (marque de fondeur)”]]"
+provenance:
+  - owner: institution/fonderie-alexis-rudier
+    role: foundry
+    acquired: 1926/1928
+    method: creation
+    place: paris
+    sources:
+      - source: musee-rodin-s01304
+  - owner: institution/musee-rodin
+    acquired: 1926/1929
+    method: commission
+    label: für die Sammlung des Museums gegossen
+    sources:
+      - source: musee-rodin-s01304
+sources:
+  created:
+    - source: musee-rodin-s01304
+  dimensions:
+    - source: musee-rodin-s01304
+  institution:
+    - source: musee-rodin-s01304
+  inventory_number:
+    - source: musee-rodin-s01304

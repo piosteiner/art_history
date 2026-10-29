@@ -1,0 +1,13 @@
+public_id: 102905
+name: poplar
+names:
+  - lang: de
+    role: translation
+    text: Pappel
+  - lang: it
+    role: translation
+    text: pioppo
+category: material
+parent: wood
+definition: Wood of the poplar tree — in Italy the usual wood for painted panels.
+description_md: In Italy panels for painting were usually of seasoned poplar, willow or linden[[source/wikipedia-en-panel-painting|“In Italy it was usually seasoned poplar, willow or linden”]]; Caravaggio still painted his *David with the Head of Goliath* in Vienna on a reused poplar panel[[source/wikipedia-en-panel-painting|“Caravaggio in his David with the Head of Goliath (Vienna), executed on a reused poplar panel”]].

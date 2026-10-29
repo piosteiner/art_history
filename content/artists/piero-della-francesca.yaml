@@ -7,6 +7,92 @@ death: 1492-10-21
 wikidata_id: Q5822
 metadata:
   sources: [Wikidata Q5822 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/sansepolcro
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5822
+  - type: died_in
+    to: place/sansepolcro
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5822
+  - type: worked_in
+    to: place/arezzo
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: worked_in
+    to: place/ferrara
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: worked_in
+    to: place/monterchi
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: worked_in
+    to: place/perugia
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: worked_in
+    to: place/rimini
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: worked_in
+    to: place/sansepolcro
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: worked_in
+    to: place/urbino
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5822
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5822
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fa/Resurrection_detail.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Resurrection_detail.JPG
+    license: Public domain
+identifiers:
+  bnf: 12060279h
+  gnd: "118524577"
+  idref: "028853210"
+  kulturnav: d054e8d3-70f5-4ca7-a3da-fa30865eb10c
+  lc: n50072224
+  rkd: "63396"
+  ulan: "500006339"
+  viaf: "41861623"
 sources:
   birth:
     - accessed: 2026-10-20

@@ -1,0 +1,16 @@
+public_id: 102951
+name: Saint-Maurice
+kind: settlement
+location: [2.43472, 48.81833]
+wikidata_id: Q274327
+metadata:
+  sources: [Wikidata Q274327 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q274327
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q274327

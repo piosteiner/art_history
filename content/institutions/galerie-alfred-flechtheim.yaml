@@ -1,2 +1,11 @@
 public_id: 100419
 name: Galerie Alfred Flechtheim
+kind: gallery
+wikidata_id: Q72967164
+identifiers:
+  gnd: 26327-8
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q72967164

@@ -1,0 +1,16 @@
+public_id: 103264
+name: Tokyo City
+kind: site
+location: [139.76472, 35.67667]
+wikidata_id: Q1207735
+metadata:
+  sources: [Wikidata Q1207735 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1207735
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1207735

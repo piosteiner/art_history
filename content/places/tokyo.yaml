@@ -1,0 +1,16 @@
+public_id: 102760
+name: Tokyo
+kind: settlement
+location: [139.69167, 35.68944]
+wikidata_id: Q1490
+metadata:
+  sources: [Wikidata Q1490 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1490
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1490

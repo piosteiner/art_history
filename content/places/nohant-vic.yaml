@@ -1,0 +1,16 @@
+public_id: 102953
+name: Nohant-Vic
+kind: settlement
+location: [1.96, 46.63861]
+wikidata_id: Q656447
+metadata:
+  sources: [Wikidata Q656447 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q656447
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q656447

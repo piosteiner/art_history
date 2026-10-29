@@ -1,10 +1,87 @@
 public_id: 101415
 name: Michelangelo
+names:
+  - lang: it
+    role: original
+    text: Michelangelo Buonarroti
 birth: 1475-03-15
 death: 1564-02-28
 wikidata_id: Q5592
 metadata:
   sources: [Wikidata Q5592 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-florence
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q5592
+  - type: born_in
+    to: place/caprese-michelangelo
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5592
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5592
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5592
+  - type: worked_in
+    to: place/florence
+    period: 1487/1494
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5592
+  - type: worked_in
+    to: place/bologna
+    period: 1494/1496
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5592
+  - type: worked_in
+    to: place/rome
+    period: 1496/1501
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5592
+  - type: studied_at
+    to: institution/university-of-florence
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q5592
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5592
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg/1280px-Michelangelo_Daniele_da_Volterra_%28dettaglio%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Michelangelo_Daniele_da_Volterra_(dettaglio).jpg
+    license: Public domain
+    credit: Attributed to Daniele da Volterra
+identifiers:
+  bnf: 11885845q
+  gnd: "118582143"
+  idref: "026650800"
+  kulturnav: 3dd01cf0-86c5-4fa2-9c40-b1cf2a71c344
+  lc: n80152368
+  nlk: KAC199618754
+  rkd: "55890"
+  ulan: "500010654"
+  viaf: "24585191"
 sources:
   birth:
     - accessed: 2026-10-19

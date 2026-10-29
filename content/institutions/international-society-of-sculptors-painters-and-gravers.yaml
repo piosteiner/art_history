@@ -1,0 +1,22 @@
+public_id: 103300
+name: International Society of Sculptors, Painters and Gravers
+kind: art society
+founded: 1897
+dissolved: 1925
+place: london
+wikidata_id: Q15694518
+metadata:
+  sources: [Wikidata Q15694518 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 5166831-2
+  lc: n79129628
+  viaf: "261151286"
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q15694518
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q15694518

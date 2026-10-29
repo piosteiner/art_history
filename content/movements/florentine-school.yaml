@@ -1,0 +1,16 @@
+public_id: 102915
+name: Florentine School
+kind: movement
+period: 1201/1300
+wikidata_id: Q3357314
+metadata:
+  sources: [Wikidata Q3357314 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3357314
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q3357314

@@ -1,8 +1,9 @@
 public_id: 100115
 name: Maria Lassnig Foundation
 names: [Maria Lassnig Stiftung]
+kind: foundation
 founded: 2015
-place: austria
+place: vienna
 website_url: https://www.marialassnig.org/
 wikidata_id: Q24718378
 metadata:
@@ -13,8 +14,12 @@ images:
     license: CC BY-SA 4.0
     credit: Georg Weckwerth
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q24718378
   place:
-    - accessed: 2026-10-08
+    - accessed: 2026-10-28
       property: P131
       wikidata: Q24718378
   founded:

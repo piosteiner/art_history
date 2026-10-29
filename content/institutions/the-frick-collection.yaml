@@ -1,5 +1,6 @@
 public_id: 100144
 name: The Frick Collection
+kind: museum
 founded: 1935
 place: new-york-city
 location: [-73.96722, 40.77111]
@@ -14,11 +15,17 @@ images:
     license: CC BY-SA 2.5
     credit: Aude
 identifiers:
+  bnf: "121670712"
   gnd: 1000952-8
+  idref: "030205794"
   lc: n80044956
   ulan: "500303594"
   viaf: "128866686"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q682827
   place:
     - accessed: 2026-10-09
       property: P131

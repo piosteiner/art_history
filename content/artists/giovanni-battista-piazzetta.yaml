@@ -2,11 +2,59 @@ public_id: 100400
 name: Giovanni Battista Piazzetta
 given_name: Giovanni Battista
 family_name: Piazzetta
+names: [Giambattista Piazzetta]
 birth: 1683-02-13
 death: 1754-04-28
 wikidata_id: Q282670
 metadata:
   sources: [Wikidata Q282670 (retrieved 2026-10-15)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q282670
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q282670
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q282670
+  - type: worked_in
+    to: place/venice
+    period: 1698/1703
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q282670
+  - type: worked_in
+    to: place/bologna
+    period: 1703/1711
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q282670
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Giambattista_Piazzetta%2C_Giambattista_Piazzetta.jpg/1280px-Giambattista_Piazzetta%2C_Giambattista_Piazzetta.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giambattista_Piazzetta,_Giambattista_Piazzetta.jpg
+    license: Public domain
+    credit: Giovanni Battista Piazzetta
+identifiers:
+  bnf: "119729368"
+  gnd: "118792032"
+  idref: "027754405"
+  kulturnav: a4eda1a5-e92a-4147-aefc-0b3e5148077a
+  lc: n83190325
+  rkd: "63253"
+  ulan: "500003532"
+  viaf: "109273119"
 sources:
   birth:
     - accessed: 2026-10-15

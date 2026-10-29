@@ -2,17 +2,180 @@ public_id: 101690
 name: Eugène Delacroix
 given_name: Eugène
 family_name: Delacroix
+names: [Ferdinand-Eugène-Victor Delacroix]
 birth: 1798-04-26
 death: 1863-08-13
 wikidata_id: Q33477
 metadata:
   sources: [Wikidata Q33477 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q33477
+  - type: born_in
+    to: place/saint-maurice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q33477
+      - url: https://rkd.nl/en/explore/artists/21569
+        source: rkd
+        accessed: 2026-10-28
+      - url: https://id.loc.gov/authorities/names/n79086855.html
+        source: lc
+        accessed: 2026-10-28
+      - url: https://data.bnf.fr/ark:/12148/cb118991616
+        source: bnf
+        accessed: 2026-10-28
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q33477
+      - url: https://d-nb.info/gnd/118524461
+        source: gnd
+        accessed: 2026-10-28
+      - url: https://rkd.nl/en/explore/artists/21569
+        source: rkd
+        accessed: 2026-10-28
+      - url: https://id.loc.gov/authorities/names/n79086855.html
+        source: lc
+        accessed: 2026-10-28
+      - url: https://data.bnf.fr/ark:/12148/cb118991616
+        source: bnf
+        accessed: 2026-10-28
+  - type: worked_in
+    to: place/algeciras
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q33477
+  - type: worked_in
+    to: place/algiers
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q33477
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q33477
+  - type: worked_in
+    to: place/morocco
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q33477
+  - type: worked_in
+    to: place/nohant-vic
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q33477
+  - type: worked_in
+    to: place/oran
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q33477
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q33477
+  - type: worked_in
+    to: place/seville
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q33477
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q33477
+  - type: studied_at
+    to: institution/lycee-louis-le-grand
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q33477
+  - type: studied_at
+    to: institution/lycee-pierre-corneille
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q33477
+  - type: member_of
+    to: institution/societe-nationale-des-beaux-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q33477
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q33477
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg/1280px-Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autoportrait_-_Eug%C3%A8ne_Delacroix_-_Mus%C3%A9e_du_Louvre_Peintures_RF_25.jpg
+    license: Public domain
+    credit: Eugène Delacroix
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e9/F%C3%A9lix_Nadar_1820-1910_portraits_Eug%C3%A8ne_Delacroix_restored.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:F%C3%A9lix_Nadar_1820-1910_portraits_Eug%C3%A8ne_Delacroix_restored.jpg
+    license: Public domain
+    credit: Nadar
+identifiers:
+  bnf: "118991616"
+  dome: "1325"
+  gnd: "118524461"
+  idref: "026818345"
+  kulturnav: ce66bcaa-7e43-4613-8165-052f5cd94da1
+  lc: n79086855
+  nlk: KAC199606841
+  rkd: "21569"
+  ulan: "500115509"
+  viaf: "7389086"
 sources:
   birth:
     - accessed: 2026-10-20
       property: P569
       wikidata: Q33477
+    - url: https://d-nb.info/gnd/118524461
+      source: gnd
+      accessed: 2026-10-28
+    - url: https://rkd.nl/en/explore/artists/21569
+      source: rkd
+      accessed: 2026-10-28
+    - url: https://id.loc.gov/authorities/names/n79086855.html
+      source: lc
+      accessed: 2026-10-28
+    - url: https://data.bnf.fr/ark:/12148/cb118991616
+      source: bnf
+      accessed: 2026-10-28
   death:
     - accessed: 2026-10-20
       property: P570
       wikidata: Q33477
+    - url: https://d-nb.info/gnd/118524461
+      source: gnd
+      accessed: 2026-10-28
+    - url: https://rkd.nl/en/explore/artists/21569
+      source: rkd
+      accessed: 2026-10-28
+    - url: https://id.loc.gov/authorities/names/n79086855.html
+      source: lc
+      accessed: 2026-10-28
+    - url: https://data.bnf.fr/ark:/12148/cb118991616
+      source: bnf
+      accessed: 2026-10-28

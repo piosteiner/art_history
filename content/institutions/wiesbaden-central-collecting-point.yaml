@@ -1,4 +1,18 @@
 public_id: 100596
 name: Wiesbaden Central Collecting Point
 kind: collecting point
+founded: 1945-08-20
+dissolved: 1951-08
 place: wiesbaden
+wikidata_id: Q104173013
+metadata:
+  sources: [Wikidata Q104173013 (retrieved 2026-10-28)]
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q104173013
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q104173013

@@ -1,0 +1,44 @@
+public_id: 103065
+name: Tokyo Fuji Art Museum
+names:
+  - lang: fr
+    role: translation
+    text: musée d'Art Fuji de Tokyo
+  - lang: ja
+    role: translation
+    text: 東京富士美術館
+  - lang: ko
+    role: translation
+    text: 도쿄 후지 미술관
+kind: museum
+founded: 1983
+place: hachioji-shi
+location: [139.32949, 35.68646]
+website_url: https://www.fujibi.or.jp/
+wikidata_id: Q1233913
+metadata:
+  sources: [Wikidata Q1233913 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/TokyoFujiArtMuseum2.jpg/1280px-TokyoFujiArtMuseum2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:TokyoFujiArtMuseum2.jpg
+    license: CC BY-SA 4.0
+    credit: Tanuki32
+identifiers:
+  bnf: 15661428v
+  gnd: 5026419-9
+  idref: "031555330"
+  lc: n88153751
+  viaf: "313412447"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1233913
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1233913
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1233913

@@ -1,0 +1,16 @@
+public_id: 102912
+name: Pesaro
+kind: settlement
+location: [12.9133, 43.91015]
+wikidata_id: Q13134
+metadata:
+  sources: [Wikidata Q13134 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q13134
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q13134

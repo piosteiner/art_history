@@ -1,2 +1,32 @@
 public_id: 100305
 name: Jacques Seligmann & Co., Inc.
+kind: gallery
+founded: 1880
+dissolved: 1978
+place: paris
+wikidata_id: Q3067376
+metadata:
+  sources: [Wikidata Q3067376 (retrieved 2026-10-28)]
+identifiers:
+  bnf: 13605997h
+  gnd: 5287229-4
+  idref: "055307892"
+  lc: nr96018096
+  viaf: "137276142"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3067376
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q3067376
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q3067376
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q3067376

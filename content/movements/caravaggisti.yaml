@@ -1,0 +1,11 @@
+public_id: 103038
+name: Caravaggisti
+kind: movement
+wikidata_id: Q62506
+metadata:
+  sources: [Wikidata Q62506 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q62506

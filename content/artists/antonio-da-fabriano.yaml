@@ -2,11 +2,31 @@ public_id: 101660
 name: Antonio da Fabriano
 given_name: Antonio
 family_name: da Fabriano
+names: [Antonio di Agostino di Ser Giovanni da Fabriano]
 birth: 1420
 death: 1490
 wikidata_id: Q3620356
 metadata:
   sources: [Wikidata Q3620356 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/fabriano
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q3620356
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Antonio_Da_Fabriano_-_St_Jerome_in_His_Study_-_WGA00769.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonio_Da_Fabriano_-_St_Jerome_in_His_Study_-_WGA00769.jpg
+    license: Public domain
+    credit: Antonio da Fabriano
+identifiers:
+  bnf: "135282261"
+  gnd: "120941724"
+  lc: nr99003335
+  rkd: "2114"
+  ulan: "500005586"
+  viaf: "1013145857941623020368"
 sources:
   birth:
     - accessed: 2026-10-20

@@ -1,0 +1,16 @@
+public_id: 102974
+name: Baiona
+kind: site
+location: [-8.85009, 42.11993]
+wikidata_id: Q748867
+metadata:
+  sources: [Wikidata Q748867 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q748867
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q748867

@@ -2,3 +2,11 @@ public_id: 100317
 name: Fritz Nathan
 given_name: Fritz
 family_name: Nathan
+wikidata_id: Q1418856
+relationships:
+  - type: founded
+    to: institution/kunsthandlung-fritz-und-peter-nathan
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q78161758

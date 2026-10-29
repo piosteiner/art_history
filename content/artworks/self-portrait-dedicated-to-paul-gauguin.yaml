@@ -84,7 +84,7 @@ provenance:
       - kind: ek
         number: "16554"
     acquired: 1938-03-27
-    ended: 30 June 1939
+    ended: 1939-06-30
     method: confiscation
     direct: true
     label: removed from the Neue Staatsgalerie as “degenerate art”; stored at Schloss Niederschönhausen from August 1938
@@ -94,8 +94,8 @@ provenance:
     numbers:
       - kind: lot
         number: "45"
-    acquired: 30 June 1939
-    ended: 30 June 1939
+    acquired: 1939-06-30
+    ended: 1939-06-30
     method: auction
     direct: true
     place: lucerne

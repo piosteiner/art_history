@@ -1,0 +1,20 @@
+public_id: 102765
+name: Yoroboshi
+names:
+  - lang: ja
+    role: original
+    text: "{弱法師|よろぼし}"
+  - lang: ja
+    role: alternative
+    text: "{弱法師|よろぼおし}"
+category: performing arts
+parent: noh
+definition: "Noh play by Kanze Motomasa: the blind outcast Shuntokumaru prays to the setting sun at Shitennō-ji and is found by his father."
+description_md: "A Noh play by Kanze Motomasa, set at Shitennō-ji in Osaka and drawn from the legend of Shuntokumaru[[source/wikipedia-ja-shuntokumaru|„俊徳丸伝説を下敷きにした能。四天王寺を舞台とする。観世元雅作“]]. Driven from home by his father Takayasu Michitoshi, who believed a slander, Shuntokumaru has gone blind with grief and lives as a beggar monk; for his stumbling gait people call him *yoroboshi*, the “staggering monk”[[source/wikipedia-ja-shuntokumaru|„俊徳丸は、人の讒言を信じた父・通俊により家から追放されてしまう。彼は悲しみのあまり盲目となってしまい、乞食坊主として暮らす事を余儀なくされる。盲目故のよろよろとした姿から、周囲からは弱法師と呼ばれていた“]]. On the day of the spring equinox he comes to the temple to pray towards the sun setting due west — its west gate was believed to face the eastern gate of the Pure Land[[source/wikipedia-ja-shuntokumaru|„陰暦2月彼岸の中日、真西に沈む夕日を拝むため、俊徳丸は四天王寺を訪れた。天王寺の西門は極楽浄土の東門と向かいあっていると信じられていたので、落日を拝む（日想観（じっそうかん））ことで極楽浄土に行けると信じられていたのだ“]]. In his prayer he believes he can see again, but stumbles into the crowd and knows it was an illusion; at nightfall his father, who has come to give alms in atonement, speaks to him and takes him home[[source/wikipedia-ja-shuntokumaru|„目が見えたと思ったのは、ただの錯覚だったのだ。“ · „日が暮れ、一人たたずむ彼に父の通俊が話しかける。…通俊はそれに追い付き、彼を家へと連れて帰るのだった“]]. Darker than the other versions of the legend, the play grants no cure[[source/wikipedia-ja-shuntokumaru|„他の俊徳丸伝説より悲劇性が高く、俊徳丸は祈っても視力が回復せず、回復したような錯覚に陥るだけである“]]. The title is commonly read *yorobōshi*; the play’s own text reads *yoroboshi*[[source/wikipedia-ja-shuntokumaru|„題名は普通「よろぼおし」と読むが、謡曲の本文中では「よろぼし」と読む（金春信高注釈『弱法師』）“]]. Shimomura Kanzan painted the scene at the setting sun on a pair of screens: [[artwork/scene-from-the-noh-play-yoroboshi]]."
+wikidata_id: Q28415884
+metadata:
+  sources: [Wikidata Q28415884 (retrieved 2026-10-28)]
+sources:
+  definition:
+    - accessed: 2026-10-28
+      wikidata: Q28415884

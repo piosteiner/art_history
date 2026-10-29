@@ -1,0 +1,72 @@
+public_id: 103146
+name: National Museum of Western Art
+names:
+  - Kokuritsu Seiyo Bijutsukan
+  - NMWA
+  - The National Museum of Western Art
+  - lang: fr
+    role: translation
+    text: musée national de l'Art occidental
+  - lang: de
+    role: translation
+    text: Nationalmuseum für westliche Kunst
+  - lang: it
+    role: translation
+    text: Museo nazionale d'arte occidentale
+  - lang: es
+    role: translation
+    text: Museo Nacional de Arte Occidental
+  - lang: ja
+    role: translation
+    text: 国立西洋美術館
+  - lang: zh
+    role: translation
+    text: 日本國立西洋美術館
+  - lang: ko
+    role: translation
+    text: 국립서양미술관
+  - lang: ru
+    role: translation
+    text: Национальный музей западного искусства
+kind: museum
+founded: 1959-04-01
+place: tokyo
+location: [139.77585, 35.71536]
+address: 7-7 Ueno-koen, Taito-ku
+website_url: https://www.nmwa.go.jp/
+wikidata_id: Q1362629
+metadata:
+  sources: [Wikidata Q1362629 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/National_museum_of_western_art05s3200.jpg/1280px-National_museum_of_western_art05s3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:National_museum_of_western_art05s3200.jpg
+    license: CC BY-SA 4.0
+    credit: 663highland
+identifiers:
+  bnf: 12205879g
+  gnd: 1056234-5
+  idref: "027608433"
+  lc: n81003243
+  ulan: "500309693"
+  viaf: "155685720"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1362629
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1362629
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1362629
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1362629
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1362629

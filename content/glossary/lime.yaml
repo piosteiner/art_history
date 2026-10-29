@@ -1,0 +1,19 @@
+public_id: 102906
+name: lime
+names:
+  - lang: en
+    role: alternative
+    text: linden
+  - lang: en
+    role: alternative
+    text: limewood
+  - lang: de
+    role: translation
+    text: Linde
+  - lang: de
+    role: translation
+    text: Lindenholz
+category: material
+parent: wood
+definition: Wood of the lime (linden) tree, used for painted panels, above all in southern Germany, and for carving.
+description_md: Used for painted panels in Italy beside poplar[[source/wikipedia-en-panel-painting|“In Italy it was usually seasoned poplar, willow or linden”]] and, in the Middle Ages, in the Upper Rhine and Bavaria; Albrecht Altdorfer liked it[[source/wikipedia-en-panel-painting|“In the Middle Ages, spruce and lime were used in the Upper Rhine and often in Bavaria” · “Lime was popular with Albrecht Altdorfer”]].

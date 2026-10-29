@@ -1,5 +1,7 @@
 public_id: 101878
 name: Frédéric Bazille
+given_name: Frédéric
+family_name: Bazille
 names:
   - Jean-Frédéric Bazille
   - Jean Frédéric Bazille
@@ -25,6 +27,13 @@ death: 1870-11-28
 wikidata_id: Q207298
 metadata:
   sources: [Wikidata Q207298 (retrieved 2026-10-20)]
+relationships:
+  - type: student_of
+    to: artist/charles-gleyre
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q452119
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Bazille%2C_Fr%C3%A9d%C3%A9ric%2C_album_Manet%2C_BNF_Gallica.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Bazille,_Fr%C3%A9d%C3%A9ric,_album_Manet,_BNF_Gallica.jpg

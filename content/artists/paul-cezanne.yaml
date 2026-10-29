@@ -7,13 +7,138 @@ death: 1906-10-22
 wikidata_id: Q35548
 metadata:
   sources: [Wikidata Q35548 (retrieved 2026-10-07)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q35548
+  - type: born_in
+    to: place/aix-en-provence
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q35548
+  - type: died_in
+    to: place/aix-en-provence
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q35548
+  - type: lived_in
+    to: place/gardanne
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q35548
+  - type: lived_in
+    to: place/quai-d-anjou
+    period: 1888/1890
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q35548
+  - type: worked_in
+    to: place/aix-en-provence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/auvers-sur-oise
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/chantilly
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/diller
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/fontainebleau
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/giverny
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/louveciennes
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/marseille
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: worked_in
+    to: place/pontoise
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q35548
+  - type: influenced_by
+    to: artist/eugene-delacroix
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q35548
+  - type: influenced_by
+    to: artist/gustave-courbet
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q35548
+  - type: studied_at
+    to: institution/academie-suisse
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q35548
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q35548
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/c4/Paul-Cezanne.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Paul-Cezanne.jpg
     license: Public domain
     credit: Unknown; Cézanne was born in 1839 and died in 1906
 identifiers:
+  bnf: "118958019"
   dome: "58"
+  gnd: "118519964"
+  idref: "026775093"
+  kulturnav: 59a933a1-e73d-4a2d-874e-a452cdb44a1e
+  lc: n79055446
+  nlk: KAC199638795
+  rkd: "16206"
+  ulan: "500004793"
+  viaf: "39374836"
 sources:
   birth:
     - accessed: 2026-10-07

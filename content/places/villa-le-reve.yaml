@@ -1,0 +1,16 @@
+public_id: 103204
+name: villa Le Rêve
+kind: site
+location: [7.11068, 43.7273]
+wikidata_id: Q122222531
+metadata:
+  sources: [Wikidata Q122222531 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q122222531
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q122222531

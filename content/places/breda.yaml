@@ -1,0 +1,16 @@
+public_id: 103243
+name: Breda
+kind: settlement
+location: [4.77583, 51.58889]
+wikidata_id: Q40844
+metadata:
+  sources: [Wikidata Q40844 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q40844
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q40844

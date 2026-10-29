@@ -1,0 +1,45 @@
+public_id: 103163
+name: Jules Mastbaum
+given_name: Jules
+family_name: Mastbaum
+names: [Jules E. Mastbaum, Jules Ephraim Mastbaum]
+kind: person
+occupations: [businessperson, theatre manager, philanthropist]
+birth: 1872-07-07
+death: 1926-12-08
+wikidata_id: Q18386164
+metadata:
+  sources: [Wikidata Q18386164 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/rodin-museum-philadelphia
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q1321619
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Jules_E._Mastbaum%2C_President%2C_Stanley_Co._of_America_%28cropped%29.jpg/1280px-Jules_E._Mastbaum%2C_President%2C_Stanley_Co._of_America_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jules_E._Mastbaum,_President,_Stanley_Co._of_America_(cropped).jpg
+    license: Public domain
+    credit: Unknown photographer
+identifiers:
+  gnd: "1393520499"
+  lc: n86021617
+  viaf: "65481781"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q18386164
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q18386164
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q18386164
+  occupations:
+    - accessed: 2026-10-28
+      property: P106
+      wikidata: Q18386164

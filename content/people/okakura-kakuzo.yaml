@@ -1,0 +1,71 @@
+public_id: 103116
+name: Okakura Kakuzō
+given_name: Kakuzō
+family_name: Okakura
+names:
+  - lang: ja
+    role: original
+    text: 岡倉 天心
+  - Tenshin Okakura
+  - Kakuzō Okakura
+  - Okakura Kakuzo
+  - Okakura Kakuzou
+  - OKAKURA Tenshin
+  - lang: ja
+    role: original
+    text: 岡倉天心
+  - lang: ko
+    role: translation
+    text: 오카쿠라 덴신
+  - lang: ru
+    role: translation
+    text: Окакура Какудзо
+kind: person
+occupations: [writer, art critic, curator, art historian]
+birth: 1863-12-14
+death: 1913-09-02
+wikidata_id: Q942995
+metadata:
+  sources: [Wikidata Q942995 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/kangakai
+    sources:
+      - source: pickhardt-2012
+        locator: "32"
+  - type: founded
+    to: institution/tokyo-academy-of-fine-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q3577924
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/80/Okakura_Kakuzo_Portrait_c1905.png
+    source_url: https://commons.wikimedia.org/wiki/File:Okakura_Kakuzo_Portrait_c1905.png
+    license: Public domain
+    credit: Unknown
+identifiers:
+  bnf: "119180616"
+  gnd: "115571566"
+  idref: "027051978"
+  lc: n81023171
+  nlk: KAC200003305
+  ulan: "500323398"
+  viaf: "99830297"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q942995
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q942995
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q942995
+  occupations:
+    - accessed: 2026-10-28
+      property: P106
+      wikidata: Q942995

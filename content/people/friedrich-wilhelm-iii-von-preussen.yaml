@@ -36,6 +36,13 @@ death: 1840-06-07
 wikidata_id: Q37134
 metadata:
   sources: [Wikidata Q37134 (retrieved 2026-10-27)]
+relationships:
+  - type: founded
+    to: institution/altes-museum
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q156722
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/02/Friedrich_Wilhelm_III_of_Prussia_-_Lawrence_1814-18.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Friedrich_Wilhelm_III_of_Prussia_-_Lawrence_1814-18.jpg

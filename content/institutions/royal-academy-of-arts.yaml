@@ -1,11 +1,44 @@
 public_id: 100811
 name: Royal Academy of Arts
+kind: museum
 founded: 1768
+place: city-of-westminster
+location: [-0.13944, 51.50917]
+address: Burlington House, London W1J 0BD
+website_url: https://www.royalacademy.org.uk
 wikidata_id: Q270920
 metadata:
   sources: [Wikidata Q270920 (retrieved 2026-10-18)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Burlington_House.jpg/1280px-Burlington_House.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Burlington_House.jpg
+    license: CC BY-SA 4.0
+    credit: Photograph by Mike Peel (www.mikepeel.net).
+identifiers:
+  bnf: 11867072g
+  gnd: 1023738-0
+  idref: "026420201"
+  lc: n80032672
+  ulan: "500115632"
+  viaf: "153543255"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q270920
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q270920
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q270920
   founded:
     - accessed: 2026-10-18
       property: P571
+      wikidata: Q270920
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q270920

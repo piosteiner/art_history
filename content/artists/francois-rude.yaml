@@ -7,6 +7,51 @@ death: 1855-11-03
 wikidata_id: Q346491
 metadata:
   sources: [Wikidata Q346491 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q346491
+  - type: born_in
+    to: place/dijon
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q346491
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q346491
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q346491
+  - type: studied_at
+    to: institution/beaux-arts-school-of-dijon
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q346491
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Sophie_Rude_-_Portrait_of_Francois_Rude.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sophie_Rude_-_Portrait_of_Francois_Rude.jpg
+    license: Public domain
+    credit: Sophie Rude (Sophie Fremiet) (1797-1867)
+identifiers:
+  bnf: 12652775t
+  gnd: "121067890"
+  idref: "027697614"
+  kulturnav: 4ff492e0-a800-4fca-a68f-b1cb26077270
+  lc: n88668714
+  rkd: "216984"
+  ulan: "500023467"
+  viaf: "41962039"
 sources:
   birth:
     - accessed: 2026-10-20

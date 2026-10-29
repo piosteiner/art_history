@@ -1,0 +1,16 @@
+public_id: 102969
+name: Sluis-Aardenburg
+kind: settlement
+location: [3.38791, 51.30937]
+wikidata_id: Q2071094
+metadata:
+  sources: [Wikidata Q2071094 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2071094
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q2071094

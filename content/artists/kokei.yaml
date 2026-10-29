@@ -1,0 +1,36 @@
+public_id: 102552
+name: Kōkei
+names:
+  - lang: ja
+    role: original
+    text: 康慶
+  - Koukei
+birth: 1101/1200
+death: 1201/1300
+wikidata_id: Q3078386
+metadata:
+  sources: [Wikidata Q3078386 (retrieved 2026-10-28)]
+relationships:
+  - type: associated_with
+    to: movement/kei-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q3078386
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b6/Gyoga_SixPatriarchs_Hosso_Kofukuji.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Gyoga_SixPatriarchs_Hosso_Kofukuji.JPG
+    license: Public domain
+    credit: "Kōkei, photo: ASUKAYEN"
+identifiers:
+  ulan: "500120994"
+  viaf: "96573750"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q3078386
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q3078386

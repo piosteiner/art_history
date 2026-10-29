@@ -1,0 +1,16 @@
+public_id: 103027
+name: Oran
+kind: settlement
+location: [-0.63306, 35.69694]
+wikidata_id: Q131818
+metadata:
+  sources: [Wikidata Q131818 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q131818
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q131818

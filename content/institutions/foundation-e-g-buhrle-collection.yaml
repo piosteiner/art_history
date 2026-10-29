@@ -1,13 +1,44 @@
 public_id: 100090
 name: Foundation E.G. Bührle Collection
+names:
+  - Sammlung E.G. Bührle
+  - lang: de
+    role: alternative
+    text: Sammlung Emil Bührle
 kind: foundation
 founded: 1960
 place: zurich
+location: [8.56176, 47.35305]
+address: Zollikerstrasse 172
+website_url: https://www.buehrle.ch
 wikidata_id: Q666331
 metadata:
   sources: [Wikidata Q666331 (retrieved 2026-10-07)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Sammlung_B%C3%BChrle.jpg/1280px-Sammlung_B%C3%BChrle.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sammlung_B%C3%BChrle.jpg
+    license: CC BY-SA 3.0
+    credit: Adrian Michael
+identifiers:
+  bnf: "122191729"
+  idref: "081677340"
+  lc: nr91003152
+  ulan: "500312279"
+  viaf: "144681477"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q666331
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q666331
   founded:
     - accessed: 2026-10-07
       property: P571
+      wikidata: Q666331
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q666331

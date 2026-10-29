@@ -3,12 +3,102 @@ name: Gustave Courbet
 given_name: Gustave
 family_name: Courbet
 birth: 1819-06-10
-death: 31 December 1877
+death: 1877-12-31
 wikidata_id: Q34618
 metadata:
   sources: [Wikidata Q34618 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q34618
+  - type: born_in
+    to: place/ornans
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q34618
+  - type: died_in
+    to: place/la-tour-de-peilz
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q34618
+  - type: worked_in
+    to: place/ornans
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q34618
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q34618
+  - type: influenced_by
+    to: artist/caravaggio
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q34618
+  - type: influenced_by
+    to: artist/diego-velazquez
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q34618
+  - type: influenced_by
+    to: artist/katsushika-hokusai
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q34618
+  - type: influenced_by
+    to: artist/peter-paul-rubens
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q34618
+  - type: influenced_by
+    to: artist/rembrandt
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q34618
+  - type: studied_at
+    to: institution/academie-suisse
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q34618
+  - type: associated_with
+    to: movement/french-realism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q34618
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Gustave_Courbet%2C_photograph_Atelier_Nadar%2C_c._1860s.jpg/1280px-Gustave_Courbet%2C_photograph_Atelier_Nadar%2C_c._1860s.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gustave_Courbet,_photograph_Atelier_Nadar,_c._1860s.jpg
+    license: Public domain
+    credit: Nadar
 identifiers:
+  bnf: "120519068"
+  dodis: P25475
   dome: "66"
+  gnd: "118522450"
+  hls: "022259"
+  idref: "028746074"
+  kulturnav: 805334f0-92aa-4f6c-9ed2-b831598c4cf1
+  lc: n80057228
+  nlk: KAC199605822
+  rkd: "18743"
+  sikart: "4023343"
+  ulan: "500010927"
+  viaf: "22160734"
 sources:
   birth:
     - accessed: 2026-10-09

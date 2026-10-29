@@ -1,5 +1,7 @@
 public_id: 101751
 name: Édouard Alphonse James de Rothschild
+given_name: Édouard Alphonse James
+family_name: de Rothschild
 names:
   - Edouard Alphonse James de Rothschild
   - lang: nl
@@ -17,7 +19,7 @@ names:
 kind: person
 occupations: [art collector, polo player, financier, banker]
 birth: 1868-02-24
-death: 30 June 1949
+death: 1949-06-30
 wikidata_id: Q2443913
 metadata:
   sources: [Wikidata Q2443913 (retrieved 2026-10-20)]

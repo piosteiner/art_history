@@ -1,0 +1,16 @@
+public_id: 103256
+name: Tulln an der Donau
+kind: site
+location: [16.05, 48.33333]
+wikidata_id: Q489810
+metadata:
+  sources: [Wikidata Q489810 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q489810
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q489810

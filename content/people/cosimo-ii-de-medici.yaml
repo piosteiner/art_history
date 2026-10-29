@@ -1,5 +1,7 @@
 public_id: 101923
 name: Cosimo II de' Medici
+given_name: Cosimo II de'
+family_name: Medici
 names:
   - Grand Duke of Tuscany Cosimo II
   - Grand Duke of Tuscany Cosimo II de' Medici
@@ -31,7 +33,7 @@ names:
 kind: person
 occupations: [politician, statesperson, Grand Duke]
 birth: 1590-05-12
-death: 28 February 1621
+death: 1621-02-28
 wikidata_id: Q312297
 metadata:
   sources: [Wikidata Q312297 (retrieved 2026-10-20)]

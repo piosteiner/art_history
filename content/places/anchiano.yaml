@@ -1,0 +1,16 @@
+public_id: 103293
+name: Anchiano
+kind: site
+location: [10.93813, 43.79917]
+wikidata_id: Q154184
+metadata:
+  sources: [Wikidata Q154184 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q154184
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q154184

@@ -1,0 +1,28 @@
+public_id: 103198
+title_lang: es
+title: La Puerta del Infierno
+names:
+  - lang: en
+    role: translation
+    text: The Gates of Hell
+parent: the-gates-of-hell
+part_number: "8"
+creator: auguste-rodin
+conceived: 1880/1917
+kind: sculpture
+materials: [bronze]
+dimensions: [618.5, 394, 124]
+institution: museo-soumaya
+web_url: https://artsandculture.google.com/asset/la-puerta-del-infierno-auguste-rodin/sgHhFZXhYRIc0g
+description_md: Der achte und letzte Guss, im Auftrag beim Musée Rodin im Wachsausschmelzverfahren und mit heller Patina gegossen; seit 2016 empfängt er die Besucher des Museo Soumaya. Das Gussjahr nennt das Museum nicht.[[source/museo-soumaya-puerta-del-infierno|“Por encargo al Museo Rodin de París, La puerta del Infierno de Museo Soumaya. Fundación Carlos Slim se fundió a la cera perdida y con una pátina clara” · “Es el octavo y último vaciado.” · “Desde 2016 es la pieza que recibe a los visitantes en el museo mexicano.”]]
+provenance:
+  - owner: institution/museo-soumaya
+    method: commission
+    label: im Auftrag beim Musée Rodin gegossen
+    sources:
+      - source: museo-soumaya-puerta-del-infierno
+sources:
+  dimensions:
+    - source: museo-soumaya-puerta-del-infierno
+  institution:
+    - source: museo-soumaya-puerta-del-infierno

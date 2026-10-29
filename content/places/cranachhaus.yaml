@@ -1,0 +1,16 @@
+public_id: 102943
+name: Cranachhaus
+kind: building
+location: [11.33034, 50.97937]
+wikidata_id: Q1138816
+metadata:
+  sources: [Wikidata Q1138816 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1138816
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1138816

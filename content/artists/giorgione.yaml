@@ -1,10 +1,83 @@
 public_id: 101305
 name: Giorgione
+names: [Giorgioni di Castelfranco]
 birth: 1478
 death: 1510
 wikidata_id: Q8459
 metadata:
   sources: [Wikidata Q8459 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q8459
+  - type: born_in
+    to: place/castelfranco-veneto
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q8459
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q8459
+  - type: worked_in
+    to: place/castelfranco-veneto
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q8459
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q8459
+  - type: student_of
+    to: artist/giovanni-bellini
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q17169
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q8459
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q8459
+  - type: associated_with
+    to: movement/renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q8459
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q8459
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Giorgione_059.jpg/1280px-Giorgione_059.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giorgione_059.jpg
+    license: Public domain
+    credit: Giorgione
+identifiers:
+  bnf: 11954736s
+  gnd: "118539469"
+  idref: "027525708"
+  kulturnav: ff802a49-e6c4-4167-9591-96103df34a9d
+  lc: n79029786
+  rkd: "31833"
+  ulan: "500028290"
+  viaf: "39385864"
 sources:
   birth:
     - accessed: 2026-10-19

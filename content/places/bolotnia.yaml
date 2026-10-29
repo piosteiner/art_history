@@ -1,0 +1,16 @@
+public_id: 103222
+name: Bolotnia
+kind: site
+location: [29.8775, 50.96361]
+wikidata_id: Q4090952
+metadata:
+  sources: [Wikidata Q4090952 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q4090952
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q4090952

@@ -1,0 +1,16 @@
+public_id: 103166
+name: Saint-Rémy-lès-Chevreuse
+kind: settlement
+location: [2.07194, 48.70583]
+wikidata_id: Q794124
+metadata:
+  sources: [Wikidata Q794124 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q794124
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q794124

@@ -1,2 +1,37 @@
 public_id: 100301
 name: Marlborough Fine Art Ltd.
+kind: gallery
+founded: 1946
+dissolved: 2024
+place: london
+location: [-0.14111, 51.5083]
+website_url: http://www.marlboroughlondon.com/
+wikidata_id: Q6771667
+metadata:
+  sources: [Wikidata Q6771667 (retrieved 2026-10-28)]
+identifiers:
+  idref: "026460246"
+  lc: n80039695
+  ulan: "500434822"
+  viaf: "149874636"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q6771667
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q6771667
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q6771667
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q6771667
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q6771667

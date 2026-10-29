@@ -1,5 +1,6 @@
 public_id: 100097
 name: Brooklyn Museum
+kind: museum
 founded: 1897
 place: new-york-city
 location: [-73.96363, 40.67121]
@@ -13,7 +14,18 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Brooklyn_Museum_June_2008_sunset_jeh.JPG
     license: Public domain
     credit: Jim.henderson
+identifiers:
+  bnf: 12003187b
+  gnd: 1023174-2
+  idref: "027670600"
+  lc: n79063288
+  ulan: "500304292"
+  viaf: "265104231"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q632682
   place:
     - accessed: 2026-10-07
       property: P131

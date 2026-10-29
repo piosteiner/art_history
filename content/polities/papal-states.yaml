@@ -1,0 +1,11 @@
+public_id: 102958
+name: Papal States
+period: 754/1870-09-20
+wikidata_id: Q170174
+metadata:
+  sources: [Wikidata Q170174 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q170174

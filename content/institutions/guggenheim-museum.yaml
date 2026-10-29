@@ -1,6 +1,7 @@
 public_id: 100092
 name: Solomon R. Guggenheim Museum
 names: [Guggenheim Museum, The Guggenheim, Guggenheim Museum New York]
+kind: museum
 founded: 1937
 place: new-york-city
 location: [-73.95889, 40.78306]
@@ -13,7 +14,18 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:NYC_-_Guggenheim_Museum.jpg
     license: CC BY 3.0
     credit: Jean-Christophe BENOIST
+identifiers:
+  bnf: 11878602d
+  gnd: 4075350-5
+  idref: "026561859"
+  lc: n79065486
+  ulan: "500303631"
+  viaf: "141479275"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q201469
   place:
     - accessed: 2026-10-07
       property: P131

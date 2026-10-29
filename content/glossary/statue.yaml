@@ -1,0 +1,8 @@
+public_id: 102496
+name: statue
+names:
+  - lang: de
+    role: translation
+    text: Statue
+category: object type
+parent: sculpture

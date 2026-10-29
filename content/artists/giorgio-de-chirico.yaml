@@ -1,0 +1,94 @@
+public_id: 103138
+name: Giorgio de Chirico
+given_name: Giorgio
+family_name: de Chirico
+names: [Giuseppe Maria Alberto Giorgio de Chirico]
+birth: 1888-07-10
+death: 1978-11-20
+wikidata_id: Q156622
+metadata:
+  sources: [Wikidata Q156622 (retrieved 2026-10-28)]
+relationships:
+  - type: born_in
+    to: place/volos
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q156622
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q156622
+  - type: worked_in
+    to: place/athens
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q156622
+  - type: worked_in
+    to: place/ferrara
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q156622
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q156622
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q156622
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q156622
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q156622
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q156622
+  - type: studied_at
+    to: institution/athens-school-of-fine-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q156622
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/Giorgio_de_Chirico_%28portrait%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giorgio_de_Chirico_(portrait).jpg
+    license: Public domain
+    credit: Carl Van Vechten
+identifiers:
+  bnf: 11898878m
+  dome: "76"
+  gnd: "118524208"
+  idref: "026814722"
+  lc: n79069950
+  rkd: "16695"
+  ulan: "500032635"
+  viaf: "104172730"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q156622
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q156622

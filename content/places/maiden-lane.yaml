@@ -1,0 +1,16 @@
+public_id: 103279
+name: Maiden Lane
+kind: site
+location: [-0.1229, 51.5107]
+wikidata_id: Q23041988
+metadata:
+  sources: [Wikidata Q23041988 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q23041988
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q23041988

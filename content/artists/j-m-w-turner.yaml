@@ -2,13 +2,286 @@ public_id: 100382
 name: J. M. W. Turner
 given_name: J. M. W.
 family_name: Turner
+names:
+  - lang: en
+    role: original
+    text: Joseph Mallord William Turner
 birth: 1775-04-23
 death: 1851-12-19
 wikidata_id: Q159758
 metadata:
   sources: [Wikidata Q159758 (retrieved 2026-10-15)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q159758
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q159758
+  - type: born_in
+    to: place/maiden-lane
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q159758
+  - type: died_in
+    to: place/cheyne-walk
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q159758
+  - type: worked_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/belgium
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/bristol
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/chester
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/constance
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/delft
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/dieppe
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/dordrecht
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/dresden
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/edinburgh
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/heidelberg
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/leiden
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/lucerne
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/lyon
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/malmesbury
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/prague
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/rheinfelden
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/rouen
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/turin
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/twickenham
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/utrecht
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q159758
+  - type: studied_at
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q159758
+  - type: member_of
+    to: institution/royal-academy-of-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q159758
+  - type: associated_with
+    to: movement/english-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q159758
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q159758
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9f/Joseph_Mallord_William_Turner_auto-retrato.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joseph_Mallord_William_Turner_auto-retrato.jpg
+    license: Public domain
+    credit: J. M. W. Turner
 identifiers:
+  bnf: "121510346"
   dome: "1808"
+  gnd: 11862475X
+  hls: "031018"
+  idref: "027332446"
+  kulturnav: fd3fe9b9-7f94-4a3a-81d8-816ef2ebd386
+  lc: n79060712
+  nlk: KAC199627992
+  rkd: "78519"
+  sikart: "9598989"
+  ulan: "500026846"
+  viaf: "100900492"
 sources:
   birth:
     - accessed: 2026-10-15

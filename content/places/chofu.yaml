@@ -1,0 +1,16 @@
+public_id: 103109
+name: Chōfu
+kind: site
+location: [130.99078, 33.99888]
+wikidata_id: Q11652977
+metadata:
+  sources: [Wikidata Q11652977 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q11652977
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q11652977

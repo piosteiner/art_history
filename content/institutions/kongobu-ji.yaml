@@ -1,0 +1,51 @@
+public_id: 103063
+name: Kongōbu-ji Temple
+names:
+  - Kongōbu-ji
+  - lang: fr
+    role: translation
+    text: temple Kongōbu
+  - lang: ja
+    role: translation
+    text: 金剛峯寺
+  - lang: ko
+    role: translation
+    text: 곤고부지
+  - lang: ru
+    role: translation
+    text: Конгобу-дзи
+kind: temple
+founded: 816
+place: koya
+location: [135.58409, 34.21408]
+address: 和歌山県伊都郡高野町高野山132
+website_url: https://www.koyasan.or.jp/
+wikidata_id: Q1203429
+metadata:
+  sources: [Wikidata Q1203429 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Kongobuji_Koyasan01n4272.jpg/1280px-Kongobuji_Koyasan01n4272.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kongobuji_Koyasan01n4272.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  idref: "221805761"
+  lc: n81139922
+  viaf: "153620550"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1203429
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1203429
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1203429
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1203429

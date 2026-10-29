@@ -1,0 +1,16 @@
+public_id: 103274
+name: former 4th arrondissement of Paris
+kind: site
+location: [2.34441, 48.85961]
+wikidata_id: Q2845755
+metadata:
+  sources: [Wikidata Q2845755 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2845755
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q2845755

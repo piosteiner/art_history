@@ -1,0 +1,16 @@
+public_id: 103132
+name: Lessines
+kind: site
+location: [3.83, 50.7117]
+wikidata_id: Q667790
+metadata:
+  sources: [Wikidata Q667790 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q667790
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q667790

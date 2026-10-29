@@ -1,3 +1,14 @@
 public_id: 101522
 name: gold leaf
+names:
+  - lang: ja
+    role: translation
+    text: "{金箔|きんぱく}"
+  - lang: ja-Latn
+    role: romanization
+    text: kinpaku
+  - lang: de
+    role: translation
+    text: Blattgold
 category: material
+parent: gold

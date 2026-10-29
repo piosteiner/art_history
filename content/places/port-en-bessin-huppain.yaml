@@ -1,0 +1,16 @@
+public_id: 103271
+name: Port-en-Bessin-Huppain
+kind: settlement
+location: [-0.75528, 49.34417]
+wikidata_id: Q987304
+metadata:
+  sources: [Wikidata Q987304 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q987304
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q987304

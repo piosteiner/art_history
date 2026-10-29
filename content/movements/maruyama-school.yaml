@@ -1,0 +1,11 @@
+public_id: 103178
+name: Maruyama school
+kind: movement
+wikidata_id: Q11394770
+metadata:
+  sources: [Wikidata Q11394770 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q11394770

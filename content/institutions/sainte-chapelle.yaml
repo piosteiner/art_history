@@ -14,6 +14,7 @@ names:
   - lang: ru
     role: translation
     text: Сент-Шапель
+kind: chapel
 founded: 1245
 place: paris
 location: [2.34503, 48.85537]
@@ -32,6 +33,10 @@ identifiers:
   ulan: "500310026"
   viaf: "312656055"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q193193
   place:
     - accessed: 2026-10-20
       property: P131

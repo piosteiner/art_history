@@ -1,0 +1,16 @@
+public_id: 102549
+name: Kansai region
+kind: site
+location: [135, 35]
+wikidata_id: Q164256
+metadata:
+  sources: [Wikidata Q164256 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q164256
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q164256

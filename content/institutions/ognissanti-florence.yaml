@@ -26,6 +26,7 @@ names:
   - lang: ru
     role: translation
     text: Церковь Всех святых
+kind: church
 founded: 1251
 place: florence
 location: [11.24598, 43.77251]

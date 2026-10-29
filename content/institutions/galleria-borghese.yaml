@@ -21,6 +21,7 @@ names:
   - lang: ru
     role: translation
     text: Галерея Боргезе
+kind: museum
 founded: 1903
 place: rome
 location: [12.49214, 41.91421]
@@ -41,6 +42,10 @@ identifiers:
   lc: n82047240
   viaf: "135862740"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q841506
   place:
     - accessed: 2026-10-20
       property: P131

@@ -44,6 +44,13 @@ death: 1270-09-01
 wikidata_id: Q346
 metadata:
   sources: [Wikidata Q346 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: institution/sainte-chapelle
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q193193
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/03/Saintlouis.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Saintlouis.jpg

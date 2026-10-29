@@ -7,6 +7,38 @@ death: 1514-04-21
 wikidata_id: Q7793
 metadata:
   sources: [Wikidata Q7793 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/fermignano
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q7793
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q7793
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q7793
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/35/Donato_Bramante.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Donato_Bramante.jpg
+    license: Public domain
+identifiers:
+  bnf: "137365696"
+  gnd: 11851427X
+  idref: 05351050X
+  kulturnav: ed211711-527b-42ea-af0e-d001aadb6e0e
+  lc: n50043001
+  rkd: "11973"
+  ulan: "500019098"
+  viaf: "79161779"
 sources:
   birth:
     - accessed: 2026-10-20

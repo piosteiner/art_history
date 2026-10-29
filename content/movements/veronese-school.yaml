@@ -1,0 +1,11 @@
+public_id: 103291
+name: Veronese school
+kind: movement
+wikidata_id: Q3578530
+metadata:
+  sources: [Wikidata Q3578530 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3578530

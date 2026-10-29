@@ -1,0 +1,30 @@
+public_id: 103317
+name: Georges Petit
+given_name: Georges
+family_name: Petit
+kind: person
+birth: 1856-03-11
+death: 1920-05-12
+wikidata_id: Q44139
+metadata:
+  sources: [Wikidata Q44139 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/galerie-georges-petit
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q18662018
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q44139
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q44139
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q44139

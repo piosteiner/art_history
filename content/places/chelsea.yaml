@@ -1,0 +1,16 @@
+public_id: 103298
+name: Chelsea
+kind: site
+location: [-0.1684, 51.4875]
+wikidata_id: Q743535
+metadata:
+  sources: [Wikidata Q743535 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q743535
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q743535

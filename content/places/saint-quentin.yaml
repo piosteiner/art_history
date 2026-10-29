@@ -1,0 +1,16 @@
+public_id: 103206
+name: Saint-Quentin
+kind: settlement
+location: [3.28556, 49.84778]
+wikidata_id: Q182744
+metadata:
+  sources: [Wikidata Q182744 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q182744
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q182744

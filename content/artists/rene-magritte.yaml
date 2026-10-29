@@ -2,11 +2,111 @@ public_id: 100131
 name: René Magritte
 given_name: René
 family_name: Magritte
+names:
+  - lang: fr
+    role: original
+    text: René François Ghislain Magritte
 birth: 1898-11-21
 death: 1967-08-15
 wikidata_id: Q7836
 metadata:
   sources: [Wikidata Q7836 (retrieved 2026-10-09)]
+relationships:
+  - type: born_in
+    to: place/lessines
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q7836
+  - type: died_in
+    to: place/schaerbeek
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q7836
+  - type: lived_in
+    to: place/rene-magritte-house
+    period: 1930/1954
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q7836
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7836
+  - type: worked_in
+    to: place/carcassonne
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7836
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7836
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7836
+  - type: influenced_by
+    to: artist/andre-breton
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q7836
+  - type: influenced_by
+    to: artist/giorgio-de-chirico
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q7836
+  - type: influenced_by
+    to: artist/hieronymus-bosch
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q7836
+  - type: influenced_by
+    to: artist/max-ernst
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q7836
+  - type: studied_at
+    to: institution/royal-academy-of-fine-arts-of-brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q7836
+  - type: associated_with
+    to: movement/belgian-surrealism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q7836
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Ren%C3%A9_Magritte_in_1961.jpg/1280px-Ren%C3%A9_Magritte_in_1961.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ren%C3%A9_Magritte_in_1961.jpg
+    license: CC0
+    credit: Unknown authorUnknown author Restored by Giovanni Cardinali
+identifiers:
+  bnf: "123735831"
+  dodis: P67086
+  gnd: "118576208"
+  idref: "032771304"
+  kulturnav: 43f34bff-8eea-4658-960d-cd38d20eb5b8
+  lc: n79086870
+  nlk: KAC199617471
+  rkd: "51983"
+  ulan: "500022967"
+  viaf: "69008939"
 sources:
   birth:
     - accessed: 2026-10-09

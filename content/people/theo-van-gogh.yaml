@@ -4,9 +4,9 @@ given_name: Theo
 family_name: van Gogh
 kind: person
 active: 1880/1890
-description_md: |
-  Art dealer in Paris (Goupil & Cie, later Boussod, Valadon & Cie) and Vincent's younger brother.
-  Supported Vincent financially for the whole of his career; their correspondence is the main source on his life.
+description_md: |-
+  Art dealer in Paris (Goupil & Cie, later Boussod, Valadon & Cie) and Vincent's younger brother[[source/wikipedia-en-theo-van-gogh-art-dealer|“a Dutch art dealer and a younger brother of Vincent van Gogh” · “By 1884, he was transferred to the Paris main office, which in 1884 took the name of Boussod, Valadon & Cie”]].
+  Supported Vincent financially for the whole of his career; their correspondence is the main source on his life[[source/wikipedia-en-theo-van-gogh-art-dealer|“Beginning in the winter of 1880–1881, he sent painting materials as well as monthly financial support to his brother Vincent”]][[source/wikipedia-en-vincent-van-gogh|“His younger brother Theo supported him financially, and the two kept up a long correspondence by letter”]].
 relationships:
   - type: born_in
     to: place/zundert

@@ -2,11 +2,50 @@ public_id: 102058
 name: Antonello da Messina
 given_name: Antonello
 family_name: da Messina
+names: [Antonello degli Antoni]
 birth: 1430
 death: 1479-02-23/1479-03-06
 wikidata_id: Q5594
 metadata:
   sources: [Wikidata Q5594 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-sicily
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q5594
+  - type: born_in
+    to: place/messina
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5594
+  - type: died_in
+    to: place/messina
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5594
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5594
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ed/Antonello_da_Messina_-_Portrait_of_a_Man_-_National_Gallery_London.jpg/1280px-Antonello_da_Messina_-_Portrait_of_a_Man_-_National_Gallery_London.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonello_da_Messina_-_Portrait_of_a_Man_-_National_Gallery_London.jpg
+    license: Public domain
+    credit: Antonello da Messina
+identifiers:
+  bnf: "119525133"
+  gnd: "118645374"
+  idref: "027498786"
+  lc: n82020229
+  rkd: "2093"
+  ulan: "500007324"
+  viaf: "14972227"
 sources:
   birth:
     - accessed: 2026-10-20

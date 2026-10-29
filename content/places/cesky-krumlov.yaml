@@ -1,0 +1,16 @@
+public_id: 103258
+name: Český Krumlov
+kind: site
+location: [14.31521, 48.81099]
+wikidata_id: Q188082
+metadata:
+  sources: [Wikidata Q188082 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q188082
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q188082

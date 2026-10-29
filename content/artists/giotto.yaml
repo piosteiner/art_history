@@ -1,10 +1,112 @@
 public_id: 101964
 name: Giotto
+names:
+  - lang: it
+    role: original
+    text: Giotto di Bondone
+  - Ambrogio di Bondone Giotto
 birth: 1267
 death: 1337-01-16
 wikidata_id: Q7814
 metadata:
   sources: [Wikidata Q7814 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-florence
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q7814
+  - type: born_in
+    to: place/vicchio
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q7814
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q7814
+  - type: worked_in
+    to: place/assisi
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7814
+  - type: worked_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7814
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7814
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7814
+  - type: worked_in
+    to: place/padua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7814
+  - type: worked_in
+    to: place/rimini
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7814
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q7814
+  - type: student_of
+    to: artist/cimabue
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q7814
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q15790
+  - type: associated_with
+    to: movement/gothic
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q7814
+  - type: associated_with
+    to: movement/proto-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q7814
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/74/Uffizi_Giotto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Uffizi_Giotto.jpg
+    license: CC BY-SA 3.0
+    credit: Original uploader was Frieda at it.wikipedia
+identifiers:
+  bnf: 11943568d
+  gnd: "118539477"
+  idref: "027381668"
+  kulturnav: 13844708-a2a3-4bda-9fea-af7a3f126cdf
+  lc: n81071909
+  nlk: KAC199610145
+  rkd: "31840"
+  ulan: "500010766"
+  viaf: "27073355"
 sources:
   birth:
     - accessed: 2026-10-20

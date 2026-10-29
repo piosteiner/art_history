@@ -1,4 +1,35 @@
 public_id: 100255
 name: Galerie Thannhauser
-place: berlin
+names: [Thannhauser Art Gallery, Moderne Galerie - Heinrich Thannhauser, Moderne Galerie Thannhauser]
+kind: gallery
+founded: 1909
+dissolved: 1937
+place: munich
 wikidata_id: Q7710610
+metadata:
+  sources: [Wikidata Q7710610 (retrieved 2026-10-28)]
+relationships:
+  - type: located_in
+    to: place/lucerne
+    period: 1919/1928
+    sources:
+      - source: wikipedia-en-thannhauser-galleries
+  - type: located_in
+    to: place/berlin
+    period: 1927/1937
+    sources:
+      - source: wikipedia-en-thannhauser-galleries
+identifiers:
+  gnd: "1167701313"
+  idref: "130471070"
+  viaf: "122210027"
+sources:
+  place:
+    - source: wikipedia-en-thannhauser-galleries
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q7710610
+    - source: wikipedia-en-thannhauser-galleries
+  dissolved:
+    - source: wikipedia-en-thannhauser-galleries

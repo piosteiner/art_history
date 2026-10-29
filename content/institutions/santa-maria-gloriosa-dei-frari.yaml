@@ -1,11 +1,36 @@
 public_id: 102159
 name: Santa Maria Gloriosa dei Frari
+kind: basilica
 founded: 1250
+place: venice
+location: [12.32649, 45.43693]
+website_url: http://www.basilicadeifrari.it
 wikidata_id: Q224961
 metadata:
   sources: [Wikidata Q224961 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Facade_of_Santa_Maria_Gloriosa_dei_Frari_%28Venice%29.jpg/1280px-Facade_of_Santa_Maria_Gloriosa_dei_Frari_%28Venice%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Facade_of_Santa_Maria_Gloriosa_dei_Frari_(Venice).jpg
+    license: CC BY-SA 4.0
+    credit: Didier Descouens
+identifiers:
+  gnd: 4259715-8
+  lc: n85072360
+  viaf: "142903649"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q224961
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q224961
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q224961
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q224961

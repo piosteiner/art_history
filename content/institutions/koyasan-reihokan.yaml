@@ -1,0 +1,35 @@
+public_id: 103075
+name: Koyasan Reihōkan
+names:
+  - lang: ja
+    role: translation
+    text: 高野山霊宝館
+kind: museum
+founded: 1920-09-30
+place: koya
+location: [135.58147, 34.21128]
+website_url: https://www.reihokan.or.jp/
+wikidata_id: Q11673069
+metadata:
+  sources: [Wikidata Q11673069 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Autumn_Koyasan_Reihokan02n3200.jpg/1280px-Autumn_Koyasan_Reihokan02n3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autumn_Koyasan_Reihokan02n3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  lc: n84210791
+  viaf: "154826241"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q11673069
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q11673069
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q11673069

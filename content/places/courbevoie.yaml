@@ -1,0 +1,16 @@
+public_id: 103254
+name: Courbevoie
+kind: settlement
+location: [2.25222, 48.89722]
+wikidata_id: Q189715
+metadata:
+  sources: [Wikidata Q189715 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q189715
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q189715

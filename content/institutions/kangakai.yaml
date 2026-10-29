@@ -1,0 +1,47 @@
+public_id: 103055
+name: Kangakai
+names:
+  - lang: ja
+    role: translation
+    text: 鑑画会
+  - lang: en
+    role: translation
+    text: Painting Appreciation Society
+kind: art society
+founded: 1884-02
+dissolved: 1887/1889
+place: tokyo
+description_md: |-
+  Der Kangakai (鑑画会, «Gesellschaft zur Betrachtung von Malerei») wurde im Februar 1884 in Tokio von [[person/ernest-fenollosa|Ernest Fenollosa]], [[person/okakura-kakuzo|Okakura Kakuzō]] und einer Gruppe japanischer Maler gegründet.[[source/pickhardt-2012|32]] Nach der japanischen Wikipedia waren es [[person/kuki-ryuichi|Kuki Ryūichi]], Okakura, Imaizumi Yūsaku und andere Beamte des Unterrichtsministeriums, die sich vom Ryūchikai (龍池会, gegründet 1878) trennten, wo Fenollosas Eintreten für eine Verbindung japanischer und westlicher Malerei zum Streit geführt hatte.[[source/wikipedia-ja-kangakai]]
+
+  Anfangs war der Kangakai ein monatliches Forum, in dem alte und zeitgenössische Werke besprochen wurden; Fenollosa begutachtete dort alte Kunst.[[source/pickhardt-2012|32]][[source/wikipedia-ja-kangakai]] Noch 1884 richtete sich die Gesellschaft neu aus, um lebende Maler zu fördern. Ihre erste große Ausstellung im Januar 1885 zeigte siebzig Bilder von zehn zeitgenössischen Malern; die zweite 1886 fand gute Kritiken und sah in dreieinhalb Tagen zweitausend Besucher.[[source/pickhardt-2012|32]] So wurde der Kangakai zum wichtigsten Forum der neotraditionellen japanischen Malerei.[[source/pickhardt-2012|33]]
+
+  ## Hōgai und Gahō
+
+  Auf den Ausstellungen des Kangakai lernten Fenollosa und Okakura [[artist/hashimoto-gaho|Hashimoto Gahō]] und [[artist/kano-hogai|Kanō Hōgai]] kennen, zwei in der Kobikichō-Linie der Kanō-Schule ausgebildete Maler, die seit der Meiji-Restauration in Not geraten waren. Ihre Bilder verbanden traditionelle Themen wie Landschaften und buddhistische Gestalten mit westlicher Schattierung und Perspektive und prägten die erste Generation der [[movement/nihonga|Nihonga]].[[source/pickhardt-2012|33]] Zu den 35 Malern, die beim Kangakai ausstellten, gehörten auch Ogata Gekkō, Watanabe Shōtei und der junge [[artist/shimomura-kanzan|Shimomura Kanzan]], ein Schüler Hōgais.[[source/wikipedia-ja-kangakai]][[source/wikipedia-ja-shimomura-kanzan]]
+
+  ## Programm und Ende
+
+  1887 unterschied Okakura in einer Rede vor dem Kangakai vier Wege für Japans Malerei; das bloße Festhalten am Alten, wie es die Konservativen des Ryūchikai vertraten, bedeute Stillstand.[[source/pickhardt-2012|35]] Fenollosa und Okakura gehörten 1886 zur Kommission, die eine staatliche Kunstschule vorbereitete.[[source/pickhardt-2012|39]] Mit der Gründung der [[institution/tokyo-academy-of-fine-arts|Kunstschule in Tokio]] 1887, die 1889 den Unterricht aufnahm, löste sich der Kangakai von selbst auf.[[source/wikipedia-ja-kangakai]] Gahō und Hōgai wurden an die Schule berufen, und der Kreis um Okakura, Fenollosa und Kuki gab ab Oktober 1889 die Zeitschrift *Kokka* heraus.[[source/pickhardt-2012|S. 41, 43]]
+
+  ## Weiterführende Literatur
+
+  - [[source/foxwell-2015]] — zu Hōgai, dem Kangakai und den Anfängen der Nihonga
+wikidata_id: Q11651353
+metadata:
+  sources: [Wikidata Q11651353 (retrieved 2026-10-28)]
+relationships:
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - source: pickhardt-2012
+        locator: "33"
+sources:
+  kind:
+    - source: pickhardt-2012
+      locator: "32"
+  founded:
+    - source: pickhardt-2012
+      locator: "32"
+  dissolved:
+    - source: wikipedia-ja-kangakai

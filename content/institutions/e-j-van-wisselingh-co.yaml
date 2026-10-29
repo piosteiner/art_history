@@ -1,2 +1,26 @@
 public_id: 100422
 name: E. J. van Wisselingh & Co.
+kind: gallery
+founded: 1838
+place: the-hague
+website_url: https://www.wisselingh.com/
+wikidata_id: Q28846440
+metadata:
+  sources: [Wikidata Q28846440 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Voorgevel_-_Amsterdam_-_20020549_-_RCE.jpg/1280px-Voorgevel_-_Amsterdam_-_20020549_-_RCE.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Voorgevel_-_Amsterdam_-_20020549_-_RCE.jpg
+    license: CC BY-SA 4.0
+    credit: Gerard Dukker
+identifiers:
+  lc: n85342730
+  viaf: "154443351"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q28846440
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q28846440

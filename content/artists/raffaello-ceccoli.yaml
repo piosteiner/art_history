@@ -1,0 +1,73 @@
+public_id: 103306
+name: Raffaello Ceccoli
+given_name: Raffaello
+family_name: Ceccoli
+names: [Raffaele Ceccoli]
+birth: c. 1800
+death: 1868
+wikidata_id: Q113947703
+metadata:
+  sources: [Wikidata Q113947703 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/konigreich-italien
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q113947703
+  - type: born_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q113947703
+  - type: born_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q113947703
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q113947703
+  - type: worked_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q113947703
+  - type: worked_in
+    to: place/athens
+    period: 1843/1852
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q113947703
+  - type: worked_in
+    to: place/greece
+    period: 1850
+    period_label: from 1850
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q113947703
+  - type: founded
+    to: institution/athens-school-of-fine-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q414014
+identifiers:
+  rkd: "489199"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q113947703
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q113947703

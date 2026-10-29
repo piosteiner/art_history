@@ -1,0 +1,16 @@
+public_id: 102964
+name: Fodele
+kind: settlement
+location: [24.95617, 35.38015]
+wikidata_id: Q1417399
+metadata:
+  sources: [Wikidata Q1417399 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1417399
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1417399

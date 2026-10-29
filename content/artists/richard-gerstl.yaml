@@ -7,6 +7,62 @@ death: 1908-11-04
 wikidata_id: Q129113
 metadata:
   sources: [Wikidata Q129113 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/austria-hungary
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q129113
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q129113
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q129113
+  - type: worked_in
+    to: place/gmunden
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q129113
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q129113
+  - type: studied_at
+    to: institution/akademie-der-bildenden-kunste-wien
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q129113
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q129113
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Richard_Gerstl_-_Selbstbildnis%2C_lachend_-_4035_-_%C3%96sterreichische_Galerie_Belvedere.jpg/1280px-Richard_Gerstl_-_Selbstbildnis%2C_lachend_-_4035_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Richard_Gerstl_-_Selbstbildnis,_lachend_-_4035_-_%C3%96sterreichische_Galerie_Belvedere.jpg
+    license: Public domain
+    credit: Richard Gerstl
+identifiers:
+  bnf: "136060409"
+  gnd: "119073226"
+  idref: "055308260"
+  lc: n84154154
+  rkd: "31169"
+  ulan: "500028160"
+  viaf: "67267822"
 sources:
   birth:
     - accessed: 2026-10-19

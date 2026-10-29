@@ -1,0 +1,42 @@
+public_id: 103190
+title_lang: en
+title: The Gates of Hell
+parent: the-gates-of-hell
+part_number: "1"
+creator: auguste-rodin
+created: 1926/1928
+created_span: duration
+conceived: 1880/1917
+kind: sculpture
+materials: [bronze]
+dimensions: [636.9, 401.3, 84.8]
+institution: rodin-museum-philadelphia
+inventory_number: F1929-7-128
+web_url: https://philamuseum.org/collection/object/103360
+description_md: Gegossen 1926–1928 von Alexis Rudier, Paris; ein Vermächtnis von [[person/jules-mastbaum|Jules E. Mastbaum]] von 1929, aufgestellt im Rodin Museum am Benjamin Franklin Parkway.[[source/pma-f1929-7-128|“Modeled 1880-1917; cast 1926-1928” · “Cast by the founder Alexis Rudier, Paris” · “Bequest of Jules E. Mastbaum, 1929” · “Rodin Museum, Parkway”]]
+provenance:
+  - owner: institution/fonderie-alexis-rudier
+    role: foundry
+    acquired: 1926/1928
+    method: creation
+    place: paris
+    sources:
+      - source: pma-f1929-7-128
+  - owner: person/jules-mastbaum
+    sources:
+      - source: pma-f1929-7-128
+  - owner: institution/rodin-museum-philadelphia
+    acquired: 1929
+    method: bequest
+    label: Vermächtnis von Jules E. Mastbaum
+    sources:
+      - source: pma-f1929-7-128
+sources:
+  created:
+    - source: pma-f1929-7-128
+  dimensions:
+    - source: pma-f1929-7-128
+  institution:
+    - source: pma-f1929-7-128
+  inventory_number:
+    - source: pma-f1929-7-128

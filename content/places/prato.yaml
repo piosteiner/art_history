@@ -1,0 +1,16 @@
+public_id: 103161
+name: Prato
+kind: settlement
+location: [11.09656, 43.88081]
+wikidata_id: Q13377
+metadata:
+  sources: [Wikidata Q13377 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q13377
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q13377

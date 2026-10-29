@@ -1,6 +1,14 @@
 public_id: 102325
 name: Axis Powers
+names:
+  - Rome–Berlin Axis
+  - Rome–Berlin–Tokyo Axis
+  - lang: de
+    role: translation
+    text: Achsenmächte
+kind: military alliance
 founded: 1940
+dissolved: 1945
 wikidata_id: Q43056
 metadata:
   sources: [Wikidata Q43056 (retrieved 2026-10-24)]
@@ -11,8 +19,28 @@ relationships:
       - accessed: 2026-10-24
         property: P710
         wikidata: Q362
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Celebration_of_the_Japan-Germany-Italy-Triparite-Pact_%281940%29_in_Tokio.jpg/1280px-Celebration_of_the_Japan-Germany-Italy-Triparite-Pact_%281940%29_in_Tokio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Celebration_of_the_Japan-Germany-Italy-Triparite-Pact_(1940)_in_Tokio.jpg
+    license: Public domain
+    credit: Unbekannter Fotograf (Foto vom 17. Dezember 1940)
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/73/1938_Naka_yoshi_sangoku.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:1938_Naka_yoshi_sangoku.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/51/Arthur_Szyk_1894-1951_The_new_order_1941_Caricatures_of_Goering_Italian_fascist_Hideki_Tojo_Anti-nazi_ati-fascist_drawing_illustration_Library_of_congress_No_known_copyright.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arthur_Szyk_1894-1951_The_new_order_1941_Caricatures_of_Goering_Italian_fascist_Hideki_Tojo_Anti-nazi_ati-fascist_drawing_illustration_Library_of_congress_No_known_copyright.jpg
+    license: Public domain
+    credit: Arthur Szyk
+identifiers:
+  bnf: 16189230g
+  gnd: 4141278-3
 sources:
   founded:
     - accessed: 2026-10-24
       property: P571
+      wikidata: Q43056
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
       wikidata: Q43056

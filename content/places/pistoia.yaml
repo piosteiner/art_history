@@ -1,0 +1,16 @@
+public_id: 103292
+name: Pistoia
+kind: settlement
+location: [10.91667, 43.93333]
+wikidata_id: Q13376
+metadata:
+  sources: [Wikidata Q13376 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q13376
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q13376

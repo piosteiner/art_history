@@ -1,2 +1,16 @@
 public_id: 100427
 name: Vereinigung Zürcher Kunstfreunde
+kind: association
+founded: 1917
+place: zurich
+sources:
+  place:
+    - url: https://www.kunsthaus.ch/en/museum/ueber-uns/geschichte/
+      note: after the Hodler exhibition of 1917 Alfred Rüetschi founded the Vereinigung Zürcher Kunstfreunde (HLS names J. W. Wartmann, 1916–1917)
+      source: kunsthaus-ch
+      accessed: 2026-10-28
+  founded:
+    - url: https://www.kunsthaus.ch/en/museum/ueber-uns/geschichte/
+      note: after the Hodler exhibition of 1917 Alfred Rüetschi founded the Vereinigung Zürcher Kunstfreunde (HLS names J. W. Wartmann, 1916–1917)
+      source: kunsthaus-ch
+      accessed: 2026-10-28

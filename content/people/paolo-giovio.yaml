@@ -1,5 +1,7 @@
 public_id: 102088
 name: Paolo Giovio
+given_name: Paolo
+family_name: Giovio
 names:
   - lang: fr
     role: translation
@@ -21,7 +23,7 @@ names:
     text: Паоло Джовио
 kind: person
 occupations: [historian, biographer, physician, museologist, humanist, Catholic bishop, art collector, bishop, writer]
-birth: 30 April 1483
+birth: 1483-04-30
 death: 1552-12-22
 wikidata_id: Q437543
 metadata:

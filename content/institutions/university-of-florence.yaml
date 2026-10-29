@@ -1,0 +1,39 @@
+public_id: 103210
+name: University of Florence
+kind: university
+founded: 1321
+place: florence
+location: [11.25951, 43.77777]
+website_url: https://www.unifi.it/
+wikidata_id: Q820887
+metadata:
+  sources: [Wikidata Q820887 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Rettorato_firenze%2C_aula_magna_02.JPG/1280px-Rettorato_firenze%2C_aula_magna_02.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Rettorato_firenze,_aula_magna_02.JPG
+    license: CC BY-SA 3.0
+    credit: sailko
+identifiers:
+  bnf: 11867944q
+  gnd: 41068-8
+  idref: "026430584"
+  lc: n80126239
+  ulan: "500244896"
+  viaf: "126686014"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q820887
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q820887
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q820887
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q820887

@@ -5,4 +5,24 @@ names:
     role: alternative
     text: Stiftung zur Förderung der Hamburgischen Kunstsammlungen
 kind: foundation
+founded: 1956
 place: hamburg
+location: [10.0030011, 53.5552936]
+address: Glockengießerwall 5, 20095 Hamburg
+website_url: https://hamburger-kunsthalle.de/en/stiftung-hamburger-kunstsammlungen
+sources:
+  address:
+    - url: https://hamburger-kunsthalle.de/en/stiftung-hamburger-kunstsammlungen
+      note: supports the Hamburger Kunsthalle and the Museum für Kunst und Gewerbe „since 1956“; a public-private partnership with the City of Hamburg; address at the Kunsthalle
+      source: hamburger-kunsthalle-de
+      accessed: 2026-10-28
+  founded:
+    - url: https://hamburger-kunsthalle.de/en/stiftung-hamburger-kunstsammlungen
+      note: supports the Hamburger Kunsthalle and the Museum für Kunst und Gewerbe „since 1956“; a public-private partnership with the City of Hamburg; address at the Kunsthalle
+      source: hamburger-kunsthalle-de
+      accessed: 2026-10-28
+  location:
+    - url: https://hamburger-kunsthalle.de/en/stiftung-hamburger-kunstsammlungen
+      note: supports the Hamburger Kunsthalle and the Museum für Kunst und Gewerbe „since 1956“; a public-private partnership with the City of Hamburg; address at the Kunsthalle
+      source: hamburger-kunsthalle-de
+      accessed: 2026-10-28

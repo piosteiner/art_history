@@ -1,0 +1,39 @@
+public_id: 102957
+name: Lycée Louis-le-Grand
+kind: school
+founded: 1965-05-01
+place: paris
+location: [2.34418, 48.84802]
+address: 123 rue Saint Jacques 75005 Paris
+website_url: https://www.louislegrand.fr/
+wikidata_id: Q1059546
+metadata:
+  sources: [Wikidata Q1059546 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/DSC_7111-lycee-louis-le-gra.jpg/1280px-DSC_7111-lycee-louis-le-gra.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:DSC_7111-lycee-louis-le-gra.jpg
+    license: CC BY-SA 3.0
+    credit: Pline
+identifiers:
+  bnf: 12194037s
+  gnd: 1901184-2
+  idref: "030547024"
+  lc: n50055333
+  viaf: "156855299"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1059546
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q1059546
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1059546
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1059546

@@ -1,0 +1,16 @@
+public_id: 102911
+name: Foligno
+kind: settlement
+location: [12.70328, 42.95576]
+wikidata_id: Q20436
+metadata:
+  sources: [Wikidata Q20436 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q20436
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q20436

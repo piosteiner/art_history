@@ -1,0 +1,46 @@
+public_id: 103149
+name: Shizuoka Prefectural Museum of Art
+names:
+  - lang: fr
+    role: translation
+    text: Musée préfectoral d'art de Shizuoka
+  - lang: ja
+    role: translation
+    text: 静岡県立美術館
+  - lang: zh
+    role: translation
+    text: 靜岡縣立美術館
+kind: museum
+founded: 1986-04-18
+place: shizuoka
+location: [138.446, 34.9918]
+address: 静岡県静岡市駿河区谷田53番2号
+website_url: https://spmoa.shizuoka.shizuoka.jp/
+wikidata_id: Q11663204
+metadata:
+  sources: [Wikidata Q11663204 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%AB%8B%E7%BE%8E%E8%A1%93%E9%A4%A8-15.JPG/1280px-%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%AB%8B%E7%BE%8E%E8%A1%93%E9%A4%A8-15.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:%E9%9D%99%E5%B2%A1%E7%9C%8C%E7%AB%8B%E7%BE%8E%E8%A1%93%E9%A4%A8-15.JPG
+    license: CC BY-SA 4.0
+    credit: 江戸村のとくぞう (Edomura no Tokuzo)
+identifiers:
+  lc: n87930798
+  viaf: "141636008"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q11663204
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q11663204
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q11663204
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q11663204

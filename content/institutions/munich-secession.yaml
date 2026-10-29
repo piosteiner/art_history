@@ -23,7 +23,9 @@ names:
   - lang: ru
     role: translation
     text: Мюнхенский сецессион
+kind: art society
 founded: 1892-04-04
+place: munich
 website_url: http://www.muenchenersecession.de/
 wikidata_id: Q24312
 metadata:
@@ -35,6 +37,14 @@ identifiers:
   ulan: "500329591"
   viaf: "134979012"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q24312
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q24312
   founded:
     - accessed: 2026-10-20
       property: P571

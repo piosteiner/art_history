@@ -1,3 +1,11 @@
 public_id: 102249
 name: oak
+names:
+  - lang: de
+    role: translation
+    text: Eiche
+  - lang: de
+    role: translation
+    text: Eichenholz
 category: material
+parent: wood

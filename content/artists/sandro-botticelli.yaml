@@ -2,11 +2,85 @@ public_id: 101662
 name: Sandro Botticelli
 given_name: Sandro
 family_name: Botticelli
+names: [Alessandro Botticelli]
 birth: c. 1445
 death: 1510-05-27
 wikidata_id: Q5669
 metadata:
   sources: [Wikidata Q5669 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5669
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5669
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5669
+  - type: worked_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5669
+  - type: worked_in
+    to: place/pisa
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5669
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5669
+  - type: student_of
+    to: artist/andrea-del-verrocchio
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q5669
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q183458
+  - type: associated_with
+    to: movement/early-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5669
+  - type: associated_with
+    to: movement/florentine-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5669
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/Sandro_Botticelli_Self-portrait_ca_1475.jpg/1280px-Sandro_Botticelli_Self-portrait_ca_1475.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sandro_Botticelli_Self-portrait_ca_1475.jpg
+    license: Public domain
+    credit: Sandro Botticelli
+identifiers:
+  bnf: "119585037"
+  gnd: "118514008"
+  idref: "031637531"
+  kulturnav: e2680051-d198-4108-9094-a77cb57402f8
+  lc: n79022942
+  nlk: KAC199603071
+  rkd: "11286"
+  ulan: "500015254"
+  viaf: "179145970098632250973"
 sources:
   birth:
     - accessed: 2026-10-20

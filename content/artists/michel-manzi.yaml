@@ -1,0 +1,58 @@
+public_id: 103318
+name: Michel Manzi
+given_name: Michel
+family_name: Manzi
+birth: 1849-09-28
+death: 1915-04-28
+wikidata_id: Q17522222
+metadata:
+  sources: [Wikidata Q17522222 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/france
+    period: 1887
+    period_label: from 1887
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q17522222
+  - type: born_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q17522222
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q17522222
+  - type: founded
+    to: institution/galerie-manzi-joyant
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q131618060
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/%28Albi%29_Michel_Manzi_-_Edgar_Degas_-_Mus%C3%A9e_d%27Orsay.jpg/1280px-%28Albi%29_Michel_Manzi_-_Edgar_Degas_-_Mus%C3%A9e_d%27Orsay.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Albi)_Michel_Manzi_-_Edgar_Degas_-_Mus%C3%A9e_d%27Orsay.jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  bnf: 13175069c
+  gnd: "122303881"
+  idref: "035221585"
+  lc: nr97045474
+  rkd: "116001"
+  ulan: "500197778"
+  viaf: "59962698"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q17522222
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q17522222

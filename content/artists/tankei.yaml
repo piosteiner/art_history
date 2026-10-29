@@ -1,0 +1,27 @@
+public_id: 103024
+name: Tankei
+names:
+  - lang: ja
+    role: original
+    text: "{湛慶|たんけい}"
+birth: 1173
+biography_md: Buddhist sculptor, the eldest son of [[artist/unkei]] and his successor at the head of the [[movement/kei-school]] until the middle of the 13th century; his best-known work is the seated Thousand-armed Kannon, the principal icon of the Sanjūsangendō of Rengeō-in in Kyoto[[source/tnm-unkei-exhibition-2017|“As Unkei’s successor, Tankei headed the Kei school of Buddhist sculpture until the middle of the 13th century. Several of his works are extant, including the seated image of the Thousand-Armed Kannon Bosatsu that serves as the principal icon of the Sanjusangendo hall of Rengeoin temple in Kyoto”]]. Born in 1173[[source/kobayashi-1954-unkei|“in 1173 was born his first son, Tankei”]].
+wikidata_id: Q2668015
+relationships:
+  - type: associated_with
+    to: movement/kei-school
+    sources:
+      - note: “As Unkei’s successor, Tankei headed the Kei school of Buddhist sculpture until the middle of the 13th century.”
+        source: tnm-unkei-exhibition-2017
+        accessed: 2026-10-28
+  - type: child_of
+    to: artist/unkei
+    sources:
+      - note: “Unkei had six sons, all of whom became Buddhist sculptors. Sculptures by Tankei, Koben, and Kosho survive to this day.”
+        source: tnm-unkei-exhibition-2017
+        accessed: 2026-10-28
+sources:
+  birth:
+    - note: “in 1173 was born his first son, Tankei”
+      source: kobayashi-1954-unkei
+      accessed: 2026-10-28

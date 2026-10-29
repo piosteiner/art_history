@@ -1,0 +1,16 @@
+public_id: 103200
+name: Le Cateau-Cambrésis
+kind: settlement
+location: [3.54111, 50.10528]
+wikidata_id: Q329103
+metadata:
+  sources: [Wikidata Q329103 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q329103
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q329103

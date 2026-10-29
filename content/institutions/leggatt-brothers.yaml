@@ -1,2 +1,22 @@
 public_id: 100313
 name: Leggatt Brothers
+kind: gallery
+founded: 1820
+dissolved: 1992
+place: london
+sources:
+  place:
+    - url: https://en.wikipedia.org/wiki/Hugh_Leggatt
+      note: „founded in 1820 by one of Leggatt's ancestors“
+      source: en-wikipedia-org
+      accessed: 2026-10-28
+  founded:
+    - url: https://en.wikipedia.org/wiki/Hugh_Leggatt
+      note: „founded in 1820 by one of Leggatt's ancestors“
+      source: en-wikipedia-org
+      accessed: 2026-10-28
+  dissolved:
+    - url: https://ronaldvarney.com/?p=421
+      note: Sir Hugh Leggatt closed the firm „after 172 years in business“, in the recession of the early 1990s
+      source: ronaldvarney-com
+      accessed: 2026-10-28

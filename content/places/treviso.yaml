@@ -1,0 +1,16 @@
+public_id: 103131
+name: Treviso
+kind: settlement
+location: [12.24556, 45.66583]
+wikidata_id: Q5475
+metadata:
+  sources: [Wikidata Q5475 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q5475
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q5475

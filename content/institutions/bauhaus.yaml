@@ -3,7 +3,9 @@ name: Bauhaus
 names: [Staatliches Bauhaus]
 kind: art school
 founded: 1919
-description_md: The school of art, design and architecture founded by Walter Gropius in Weimar in 1919. It moved to Dessau in 1925 — into the Bauhaus building there from December 1926 — and to Berlin in 1932, where it closed in 1933. The style it stands for is the movement [[movement/bauhaus|Bauhaus]].
+dissolved: 1933
+place: germany
+description_md: The school of art, design and architecture founded by Walter Gropius in Weimar in 1919[[source/wikipedia-de-bauhaus|„Das Staatliche Bauhaus … war eine 1919 von Walter Gropius in Weimar gegründete Kunstschule“]]. It moved to Dessau in 1925 — into the Bauhaus building there from December 1926 — and to Berlin in 1932, where it closed in 1933[[source/wikipedia-de-bauhaus|„1925 erfolgte der Umzug nach Dessau.“ · „Dezember 1926 wurde das neue, von Gropius entworfene Bauhausgebäude eingeweiht.“ · „1932 musste das Bauhaus nach Berlin umziehen; 1933 wurde es unter dem Druck der Nationalsozialisten geschlossen“]]. The style it stands for is the movement [[movement/bauhaus|Bauhaus]].
 wikidata_id: Q124354
 metadata:
   sources: [Wikidata Q124354 (retrieved 2026-10-18)]
@@ -19,12 +21,30 @@ relationships:
     period: 1932/1933
   - type: associated_with
     to: movement/bauhaus
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg/1280px-Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dessau_Bauhaus-Geb%C3%A4ude_asv2024-06_img1.jpg
+    license: FAL
+    credit: A.Savin
+identifiers:
+  bnf: 11943959j
+  idref: "031932746"
+  lc: n81023070
+  ulan: "500125058"
 sources:
   kind:
     - accessed: 2026-10-18
       property: P31
       wikidata: Q124354
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q124354
   founded:
     - accessed: 2026-10-18
       property: P571
+      wikidata: Q124354
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
       wikidata: Q124354

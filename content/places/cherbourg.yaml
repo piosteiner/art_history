@@ -1,0 +1,16 @@
+public_id: 103212
+name: Cherbourg
+kind: settlement
+location: [-1.6, 49.63333]
+wikidata_id: Q3667188
+metadata:
+  sources: [Wikidata Q3667188 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3667188
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3667188

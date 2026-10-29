@@ -1,3 +1,35 @@
 public_id: 100299
 name: Galerie Georges Petit
+names: [Georges Petit Paris, Georges Petit Gallery]
+kind: gallery
+founded: 1881
+dissolved: 1933
+place: paris
+location: [2.33714, 48.87505]
 wikidata_id: Q18662018
+metadata:
+  sources: [Wikidata Q18662018 (retrieved 2026-10-28)]
+identifiers:
+  bnf: 12163081d
+  gnd: 820047-6
+  idref: "030158079"
+  lc: n81060022
+  ulan: "500452140"
+  viaf: "236251675"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q18662018
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q18662018
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q18662018
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q18662018

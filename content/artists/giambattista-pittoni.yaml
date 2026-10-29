@@ -1,0 +1,82 @@
+public_id: 103305
+name: Giambattista Pittoni
+given_name: Giambattista
+family_name: Pittoni
+names: [Giovanni Battista Pittoni the Younger]
+birth: 1687-06-06
+death: 1767-11-06
+wikidata_id: Q982011
+metadata:
+  sources: [Wikidata Q982011 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q982011
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q982011
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q982011
+  - type: lived_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q982011
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q982011
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q982011
+  - type: associated_with
+    to: movement/rococo
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q982011
+  - type: founded
+    to: institution/accademia-di-belle-arti-di-venezia
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q338505
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/20/Giambattista_Pittoni%2C_portrait_from_Longhi_1762%2C_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Giambattista_Pittoni,_portrait_from_Longhi_1762,_cropped.jpg
+    license: Public domain
+    credit: Alessandro Longhi (1733 – 1813)
+identifiers:
+  bnf: 16851658m
+  gnd: "118792407"
+  idref: "164931287"
+  kulturnav: 06c8376b-86f0-4161-9456-a7a917f8a80d
+  lc: n80060793
+  rkd: "63733"
+  ulan: "500003150"
+  viaf: "25398706"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q982011
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q982011

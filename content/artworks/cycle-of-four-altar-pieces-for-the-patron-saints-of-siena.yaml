@@ -1,10 +1,23 @@
 public_id: 101960
 title: Cycle of four altar pieces for the patron saints of Siena
+names:
+  - lang: de
+    role: translation
+    text: Zyklus von vier Altarbildern für die Stadtpatrone von Siena
+created: 14th century
+created_span: uncertain
 kind: cycle
 wikidata_id: Q27870211
 metadata:
   sources: [Wikidata Q27870211 (retrieved 2026-10-20)]
 sources:
+  names:
+    - accessed: 2026-10-28
+      wikidata: Q27870211
+  created:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q27870211
   title_status:
     - accessed: 2026-10-20
       wikidata: Q27870211

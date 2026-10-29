@@ -1,0 +1,41 @@
+public_id: 102933
+name: Accademia di San Luca
+names: [Accademia Nazionale di San Luca, "Accademia di San Luca, Rome"]
+kind: museum
+founded: 1577
+place: rome
+location: [12.48359, 41.90166]
+address: Piazza dell'Accademia di San Luca, 77
+website_url: https://accademiasanluca.it/
+wikidata_id: Q338523
+metadata:
+  sources: [Wikidata Q338523 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Acc.San_Luca_Rop.jpg/1280px-Acc.San_Luca_Rop.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Acc.San_Luca_Rop.jpg
+    license: CC BY-SA 3.0
+    credit: Warburg
+identifiers:
+  bnf: 12174849k
+  gnd: 1000016-1
+  idref: "030659590"
+  lc: n93105433
+  ulan: "500115633"
+  viaf: "127343943"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q338523
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q338523
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q338523
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q338523

@@ -1,0 +1,64 @@
+public_id: 103067
+name: Philadelphia Museum of Art
+names:
+  - PA. Philadelphia Museum Philadelphia
+  - Philadelphia Museum
+  - PA, USA. Philadelphia Museum of Art Philadelphia
+  - Pennsylvania Museum and School of Industrial Art
+  - PA. Philadelphia Museum of Art Philadelphia
+  - PA Philadelphia USA. Philadelphia Museum of Art
+  - PMA
+  - Museum of Art, Philadelphia
+  - Pennsylvania Museum of Art
+  - Philadelphia Art Museum
+  - PhAM
+  - lang: nl
+    role: translation
+    text: Kunstmuseum van Philadelphia
+  - lang: es
+    role: translation
+    text: Museo de Arte de Filadelfia
+  - lang: ja
+    role: translation
+    text: フィラデルフィア美術館
+  - lang: zh
+    role: translation
+    text: 费城艺术博物馆
+  - lang: ko
+    role: translation
+    text: 필라델피아 미술관
+  - lang: ru
+    role: translation
+    text: Художественный музей Филадельфии
+kind: museum
+founded: 1876
+place: philadelphia
+location: [-75.18139, 39.96583]
+website_url: https://www.philamuseum.org/
+wikidata_id: Q510324
+metadata:
+  sources: [Wikidata Q510324 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Philadelphia_Museum_of_Art%2C_main_building.jpg/1280px-Philadelphia_Museum_of_Art%2C_main_building.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Philadelphia_Museum_of_Art,_main_building.jpg
+    license: Public domain
+identifiers:
+  bnf: "118668984"
+  gnd: 235279-5
+  idref: "026418142"
+  lc: n79005616
+  ulan: "500214534"
+  viaf: "137352121"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q510324
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q510324
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q510324

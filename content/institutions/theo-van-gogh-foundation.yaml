@@ -1,5 +1,12 @@
 public_id: 101108
 name: Theo van Gogh Foundation
 kind: foundation
+place: laren
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+sources:
+  place:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0115V1962
+      note: "Flowering Plum Orchard: transferred by the (1st) Vincent van Gogh Foundation to the Theo van Gogh Foundation, Laren, 28 December 1960"
+      source: van-gogh-museum-collection
+      accessed: 2026-10-28

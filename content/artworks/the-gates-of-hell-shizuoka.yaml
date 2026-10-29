@@ -1,0 +1,35 @@
+public_id: 103195
+title_lang: ja
+title: 地獄の門
+names:
+  - lang: en
+    role: translation
+    text: The Gates of Hell
+parent: the-gates-of-hell
+part_number: "6"
+creator: auguste-rodin
+created: 1992
+conceived: 1880/1917
+kind: sculpture
+materials: [bronze]
+institution: shizuoka-prefectural-museum-of-art
+description_md: Der sechste Guss, 1992 bei Coubertin im Auftrag des Musée Rodin für das Präfekturmuseum Shizuoka gegossen.[[source/getty-bronze-guidelines-video-17|“showing how the sixth edition of Auguste Rodin’s (French, 1840–1917) Doors of Hell was cast at Fonderie de Coubertin in 1992, as requested by Musée Rodin for the Shizuoka Prefectural Museum of Art, Japan”]]
+provenance:
+  - owner: institution/fonderie-de-coubertin
+    role: foundry
+    acquired: 1992
+    method: creation
+    place: saint-remy-les-chevreuse
+    label: im Auftrag des Musée Rodin
+    sources:
+      - source: getty-bronze-guidelines-video-17
+  - owner: institution/shizuoka-prefectural-museum-of-art
+    acquired: 1992
+    method: commission
+    sources:
+      - source: getty-bronze-guidelines-video-17
+sources:
+  created:
+    - source: getty-bronze-guidelines-video-17
+  institution:
+    - source: getty-bronze-guidelines-video-17

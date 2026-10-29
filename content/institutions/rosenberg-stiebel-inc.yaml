@@ -1,2 +1,13 @@
 public_id: 100302
 name: Rosenberg & Stiebel Inc.
+kind: gallery
+wikidata_id: Q67380808
+identifiers:
+  lc: n86143348
+  ulan: "500304331"
+  viaf: "147834805"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q67380808

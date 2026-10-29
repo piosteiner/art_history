@@ -1,0 +1,16 @@
+public_id: 102960
+name: Zaventem
+kind: site
+location: [4.46667, 50.88333]
+wikidata_id: Q28898
+metadata:
+  sources: [Wikidata Q28898 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q28898
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q28898

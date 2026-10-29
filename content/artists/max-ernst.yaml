@@ -1,0 +1,154 @@
+public_id: 103139
+name: Max Ernst
+given_name: Max
+family_name: Ernst
+birth: 1891-04-02
+death: 1976-04-01
+wikidata_id: Q154842
+metadata:
+  sources: [Wikidata Q154842 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q154842
+  - type: nationality
+    to: polity/cuba
+    period: 1948
+    period_label: until 1948
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q154842
+  - type: nationality
+    to: polity/united-states
+    period: 1949
+    period_label: from 1949
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q154842
+  - type: nationality
+    to: polity/france
+    period: 1958
+    period_label: from 1958
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q154842
+  - type: born_in
+    to: place/bruhl
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q154842
+  - type: died_in
+    to: place/7th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q154842
+  - type: worked_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/cologne
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/honolulu
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/saint-martin-d-ardeche
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/sedona
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/seillans
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: worked_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q154842
+  - type: associated_with
+    to: movement/dada
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q154842
+  - type: associated_with
+    to: movement/surrealism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q154842
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Max_Ernst_1968.jpg/1280px-Max_Ernst_1968.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Max_Ernst_1968.jpg
+    license: CC0
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "119018489"
+  dome: "104"
+  gnd: "118530895"
+  idref: "026852497"
+  kulturnav: 19a0eb0c-2d77-4ca6-b4b8-72dc7086cc23
+  lc: n79144795
+  rkd: "26545"
+  ulan: "500115729"
+  viaf: "24601103"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q154842
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q154842

@@ -1,2 +1,32 @@
 public_id: 100310
 name: Galerie Fischer
+kind: auction house
+founded: 1907
+place: lucerne
+website_url: http://www.fischerauktionen.ch
+wikidata_id: Q47001605
+metadata:
+  sources: [Wikidata Q47001605 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/39/Galerie_Fischer_1939_auction_catalogue.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Galerie_Fischer_1939_auction_catalogue.jpg
+    license: Public domain
+    credit: Galerie Fischer
+identifiers:
+  idref: "117573973"
+  lc: n83227232
+  ulan: "500302253"
+  viaf: "153648862"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q47001605
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q47001605
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q47001605

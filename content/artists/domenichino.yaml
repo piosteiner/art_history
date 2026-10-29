@@ -1,10 +1,52 @@
 public_id: 102055
 name: Domenichino
-birth: 31 October 1581
+names: [Domenico Zampieri]
+birth: 1581-10-31
 death: 1641-04-15
 wikidata_id: Q320118
 metadata:
   sources: [Wikidata Q320118 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/papal-states
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q320118
+  - type: born_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q320118
+  - type: died_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q320118
+  - type: member_of
+    to: institution/accademia-di-san-luca
+    period: 1614
+    period_label: from 1614
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q320118
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Dominique_zampieri_bm_116.jpg/1280px-Dominique_zampieri_bm_116.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dominique_zampieri_bm_116.jpg
+    license: Public domain
+    credit: Randon sc. 0dieuvre exc.
+identifiers:
+  bnf: "119663905"
+  gnd: "118638831"
+  idref: "027670937"
+  kulturnav: 0a2d5cd2-2bad-4416-86f3-071d097fb786
+  lc: n82028279
+  rkd: "23601"
+  ulan: "500018832"
+  viaf: "56618267"
 sources:
   birth:
     - accessed: 2026-10-20

@@ -1,0 +1,38 @@
+public_id: 103159
+name: Athens School of Fine Arts
+names:
+  - lang: fr
+    role: translation
+    text: École des beaux-arts d'Athènes
+  - lang: de
+    role: translation
+    text: Hochschule der Bildenden Künste Athen
+  - lang: it
+    role: translation
+    text: Accademia di Belle Arti di Atene
+kind: art academy
+founded: 1837-01-12
+place: athens
+location: [23.68818, 37.96201]
+website_url: http://www.asfa.gr
+wikidata_id: Q414014
+metadata:
+  sources: [Wikidata Q414014 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 2154424-4
+  idref: "145264386"
+  lc: nr94004075
+  viaf: "153012114"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q414014
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q414014
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q414014

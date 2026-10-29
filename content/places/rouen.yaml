@@ -1,0 +1,16 @@
+public_id: 103039
+name: Rouen
+kind: settlement
+location: [1.1025, 49.44306]
+wikidata_id: Q30974
+metadata:
+  sources: [Wikidata Q30974 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q30974
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q30974

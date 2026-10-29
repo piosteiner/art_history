@@ -1,5 +1,33 @@
 public_id: 101116
 name: Tate Gallery
 kind: museum
+founded: 1897
+place: city-of-westminster
+location: [-0.12779, 51.49106]
+website_url: http://www.tate.org.uk
+wikidata_id: Q430682
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q430682 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Tate_Britain_%285822081512%29_%282%29.jpg/1280px-Tate_Britain_%285822081512%29_%282%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tate_Britain_(5822081512)_(2).jpg
+    license: CC BY 2.0
+    credit: Tony Hisgett from Birmingham, UK
+identifiers:
+  gnd: 1003324-5
+  lc: n80046785
+  ulan: "500301641"
+  viaf: "155600523"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q430682
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q430682
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q430682

@@ -1,0 +1,29 @@
+public_id: 103062
+name: Kōya
+names:
+  - lang: ja
+    role: original
+    text: 高野町
+  - lang: ko
+    role: translation
+    text: 고야초
+kind: settlement
+parent: japan
+country_code: JP
+location: [135.58653, 34.21614]
+wikidata_id: Q1346907
+metadata:
+  sources: [Wikidata Q1346907 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1346907
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1346907
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1346907

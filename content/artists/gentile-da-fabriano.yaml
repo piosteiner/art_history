@@ -2,17 +2,88 @@ public_id: 102101
 name: Gentile da Fabriano
 given_name: Gentile
 family_name: da Fabriano
-birth: 1370
-death: 1427
+names: [Gentile di Niccolò di Massio da Fabriano]
+birth: c. 1370
+death: 1427-09
 wikidata_id: Q312393
 metadata:
   sources: [Wikidata Q312393 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/fabriano
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q312393
+      - url: https://rkd.nl/en/explore/artists/30920
+        source: rkd
+        accessed: 2026-10-28
+      - url: https://data.bnf.fr/ark:/12148/cb14965736n
+        source: bnf
+        accessed: 2026-10-28
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q312393
+      - url: https://rkd.nl/en/explore/artists/30920
+        source: rkd
+        accessed: 2026-10-28
+      - url: https://data.bnf.fr/ark:/12148/cb14965736n
+        source: bnf
+        accessed: 2026-10-28
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f2/056_le_vite%2C_gentile_da_fabriano.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:056_le_vite,_gentile_da_fabriano.jpg
+    license: Public domain
+    credit: Giorgio Vasari
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/52/GentileFabriano.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:GentileFabriano.JPG
+    license: Public domain
+    credit: Giorgio Vasari
+identifiers:
+  bnf: 14965736n
+  gnd: "118716832"
+  idref: "032526091"
+  lc: n82083520
+  nlk: KAC202341027
+  rkd: "30920"
+  ulan: "500017803"
+  viaf: "88701405"
 sources:
   birth:
     - accessed: 2026-10-20
       property: P569
       wikidata: Q312393
+    - url: https://d-nb.info/gnd/118716832
+      source: gnd
+      accessed: 2026-10-28
+    - url: https://data.bnf.fr/ark:/12148/cb14965736n
+      source: bnf
+      accessed: 2026-10-28
+    - url: https://lod.nl.go.kr/page/KAC202341027
+      source: nlk
+      accessed: 2026-10-28
+    - url: https://id.loc.gov/authorities/names/n82083520.html
+      source: lc
+      accessed: 2026-10-28
   death:
     - accessed: 2026-10-20
       property: P570
       wikidata: Q312393
+    - url: https://d-nb.info/gnd/118716832
+      source: gnd
+      accessed: 2026-10-28
+    - url: https://rkd.nl/en/explore/artists/30920
+      source: rkd
+      accessed: 2026-10-28
+    - url: https://id.loc.gov/authorities/names/n82083520.html
+      source: lc
+      accessed: 2026-10-28
+    - url: https://lod.nl.go.kr/page/KAC202341027
+      source: nlk
+      accessed: 2026-10-28
+    - url: https://data.bnf.fr/ark:/12148/cb14965736n
+      source: bnf
+      accessed: 2026-10-28

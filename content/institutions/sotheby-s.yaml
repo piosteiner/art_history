@@ -1,4 +1,35 @@
 public_id: 101067
 name: Sotheby's
+kind: auction house
+founded: 1744
+place: new-york-city
+location: [-73.95361, 40.76639]
+website_url: https://www.sothebys.com/
+wikidata_id: Q654762
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q654762 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Sotheby%27s_%2851921999492%29.jpg/1280px-Sotheby%27s_%2851921999492%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sotheby%27s_(51921999492).jpg
+    license: Public domain
+    credit: ajay_suresh
+identifiers:
+  bnf: "120449310"
+  gnd: 5010795-1
+  idref: "028659538"
+  lc: n84160976
+  ulan: "500304344"
+  viaf: "797145858160823022490"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q654762
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q654762
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q654762

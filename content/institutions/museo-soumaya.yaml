@@ -1,0 +1,50 @@
+public_id: 103151
+name: Museo Soumaya
+names:
+  - Soumaya Museum
+  - lang: fr
+    role: translation
+    text: musée Soumaya
+  - lang: ja
+    role: translation
+    text: ソウマヤ美術館
+  - lang: zh
+    role: translation
+    text: 索馬亞博物館
+  - lang: ko
+    role: translation
+    text: 소우마야 미술관
+  - lang: ru
+    role: translation
+    text: Музей Соумайя
+kind: museum network
+founded: 1994
+place: mexico-city
+location: [-99.20462, 19.44066]
+website_url: http://www.museosoumaya.org
+wikidata_id: Q2097646
+metadata:
+  sources: [Wikidata Q2097646 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Museo_Soumaya%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico%2C_2015-07-18%2C_DD_12.JPG/1280px-Museo_Soumaya%2C_Ciudad_de_M%C3%A9xico%2C_M%C3%A9xico%2C_2015-07-18%2C_DD_12.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Museo_Soumaya,_Ciudad_de_M%C3%A9xico,_M%C3%A9xico,_2015-07-18,_DD_12.JPG
+    license: CC BY-SA 4.0
+    credit: Diego Delso
+identifiers:
+  gnd: 16027932-X
+  idref: "124380026"
+  lc: n98013068
+  viaf: "135048064"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q2097646
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q2097646
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q2097646

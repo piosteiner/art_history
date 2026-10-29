@@ -1,4 +1,28 @@
 public_id: 101041
 name: Kunsthandlung Fritz und Peter Nathan
+kind: gallery
+founded: 1895
+dissolved: 2001
+place: zurich
+wikidata_id: Q78161758
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q78161758 (retrieved 2026-10-28)]
+identifiers:
+  ulan: "500440140"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q78161758
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q78161758
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q78161758
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q78161758

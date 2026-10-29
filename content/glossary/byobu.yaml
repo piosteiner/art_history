@@ -1,6 +1,13 @@
 public_id: 100073
 name: byōbu
-category: technique
+names:
+  - lang: en
+    role: translation
+    text: folding screen
+  - lang: de
+    role: translation
+    text: Stellschirm
+category: object type
 definition: Japanese folding screen
 wikidata_id: Q741226
 metadata:

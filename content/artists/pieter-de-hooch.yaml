@@ -2,11 +2,84 @@ public_id: 101657
 name: Pieter de Hooch
 given_name: Pieter
 family_name: de Hooch
+names: [Pieter de Hoogh, Peter De Hooge]
 birth: 1629-12-20
 death: 1684-03-24
 wikidata_id: Q314889
 metadata:
   sources: [Wikidata Q314889 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/dutch-republic
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q314889
+  - type: born_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q314889
+  - type: died_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q314889
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q314889
+  - type: worked_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q314889
+  - type: worked_in
+    to: place/delft
+    period: 1652/1654
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q314889
+  - type: worked_in
+    to: place/amsterdam
+    period: 1660/1679
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q314889
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q314889
+  - type: associated_with
+    to: movement/dutch-golden-age-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q314889
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Portrait_of_a_19-year-old_man%2C_possibly_a_self_portrait%2C_attributed_to_Pieter_de_Hooch.jpg/1280px-Portrait_of_a_19-year-old_man%2C_possibly_a_self_portrait%2C_attributed_to_Pieter_de_Hooch.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_a_19-year-old_man,_possibly_a_self_portrait,_attributed_to_Pieter_de_Hooch.jpg
+    license: Public domain
+    credit: Attributed to Pieter de Hooch
+identifiers:
+  bnf: 14969343s
+  dome: "3798"
+  gnd: "118774859"
+  idref: 03085864X
+  kulturnav: f49ccf79-71f9-4871-9491-5266e8bb53d1
+  lc: n80139466
+  rkd: "39452"
+  ulan: "500020229"
+  viaf: "100213381"
 sources:
   birth:
     - accessed: 2026-10-20

@@ -1,0 +1,16 @@
+public_id: 102990
+name: Odesa
+kind: settlement
+location: [30.7325, 46.48417]
+wikidata_id: Q1874
+metadata:
+  sources: [Wikidata Q1874 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1874
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1874

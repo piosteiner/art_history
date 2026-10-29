@@ -1,0 +1,16 @@
+public_id: 102918
+name: Aix-en-Provence
+kind: settlement
+location: [5.44556, 43.52778]
+wikidata_id: Q47465
+metadata:
+  sources: [Wikidata Q47465 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q47465
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q47465

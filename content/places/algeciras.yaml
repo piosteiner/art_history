@@ -1,0 +1,16 @@
+public_id: 102955
+name: Algeciras
+kind: site
+location: [-5.45389, 36.1275]
+wikidata_id: Q484552
+metadata:
+  sources: [Wikidata Q484552 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q484552
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q484552

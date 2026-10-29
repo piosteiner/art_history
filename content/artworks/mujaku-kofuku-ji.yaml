@@ -1,0 +1,35 @@
+public_id: 103073
+title: Mujaku (Asanga)
+names:
+  - lang: ja
+    role: original
+    text: "{木造無著菩薩立像|もくぞうむじゃくぼさつりゅうぞう}"
+  - lang: en
+    role: alternative
+    text: Statue of Muchaku
+parent: mujaku-and-seshin
+part_number: "1"
+creator: unkei
+kind: statue
+materials: [wood]
+institution: kofuku-ji
+wikidata_id: Q123197829
+metadata:
+  sources: [Wikidata Q123197829 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Muchaku_Hokuendo_Kofukuji_2.jpg/1280px-Muchaku_Hokuendo_Kofukuji_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Muchaku_Hokuendo_Kofukuji_2.jpg
+    license: Public domain
+    credit: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)
+sources:
+  names:
+    - accessed: 2026-10-28
+      wikidata: Q123197829
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q123197829
+  materials:
+    - accessed: 2026-10-28
+      property: P186
+      wikidata: Q123197829

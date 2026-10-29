@@ -1,0 +1,16 @@
+public_id: 102942
+name: Kronach
+kind: site
+location: [11.32806, 50.24111]
+wikidata_id: Q494537
+metadata:
+  sources: [Wikidata Q494537 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q494537
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q494537

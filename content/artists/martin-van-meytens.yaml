@@ -2,11 +2,45 @@ public_id: 101641
 name: Martin van Meytens
 given_name: Martin
 family_name: van Meytens
+names: ["Martin, the younger Mytens", Martin van Mijtens II]
 birth: 1695-06-24
 death: 1770-03-23
 wikidata_id: Q1082324
 metadata:
   sources: [Wikidata Q1082324 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/sweden
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q1082324
+  - type: born_in
+    to: place/stockholm
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q1082324
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q1082324
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/53/Meytens%2C_Martin_van_-_Self-portrait_-_1740s.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Meytens,_Martin_van_-_Self-portrait_-_1740s.jpg
+    license: Public domain
+    credit: Martin van Meytens
+identifiers:
+  bnf: 14915076x
+  gnd: "121987000"
+  idref: 09897307X
+  kulturnav: 1ff94cac-7fcf-4188-995e-2e725334d2ad
+  lc: no2015036625
+  rkd: "58696"
+  ulan: "500025098"
+  viaf: "52559379"
 sources:
   birth:
     - accessed: 2026-10-20

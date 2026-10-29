@@ -1,0 +1,16 @@
+public_id: 103296
+name: Tournai
+kind: site
+location: [3.38806, 50.60556]
+wikidata_id: Q173219
+metadata:
+  sources: [Wikidata Q173219 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q173219
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q173219

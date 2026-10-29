@@ -1,0 +1,16 @@
+public_id: 102937
+name: Correggio
+kind: settlement
+location: [10.78056, 44.77167]
+wikidata_id: Q111176
+metadata:
+  sources: [Wikidata Q111176 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q111176
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q111176

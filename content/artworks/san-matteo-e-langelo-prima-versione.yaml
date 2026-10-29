@@ -14,9 +14,6 @@ names:
   - lang: es
     role: translation
     text: San Mateo y el ángel
-  - lang: zh
-    role: translation
-    text: 圣玛窦和天使
 parent: san-matteo-e-langelo
 part_number: "1"
 creator: caravaggio

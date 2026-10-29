@@ -1,0 +1,16 @@
+public_id: 102939
+name: Modena
+kind: settlement
+location: [10.92572, 44.64582]
+wikidata_id: Q279
+metadata:
+  sources: [Wikidata Q279 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q279
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q279

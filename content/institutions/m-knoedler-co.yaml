@@ -1,2 +1,37 @@
 public_id: 100306
 name: M. Knoedler & Co.
+kind: gallery
+founded: 1848
+dissolved: 2011
+place: new-york-city
+wikidata_id: Q10288073
+metadata:
+  sources: [Wikidata Q10288073 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/de/Goupil_Broadway_woodcut.png
+    source_url: https://commons.wikimedia.org/wiki/File:Goupil_Broadway_woodcut.png
+    license: Public domain
+    credit: Henry Bricher (circa 1817 - ?)
+identifiers:
+  gnd: 16310869-9
+  idref: 03074749X
+  lc: n80032697
+  ulan: "500304270"
+  viaf: "158991711"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q10288073
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q10288073
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q10288073
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q10288073

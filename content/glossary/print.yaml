@@ -1,0 +1,15 @@
+public_id: 102908
+name: print
+names:
+  - lang: de
+    role: translation
+    text: Druckgrafik
+  - lang: de
+    role: translation
+    text: Druck
+  - lang: fr
+    role: translation
+    text: estampe
+category: object type
+definition: A work made by transferring ink from a matrix — a woodblock, a metal plate, a stone — to paper or another surface; usually in several impressions.
+description_md: "Prints are made by transferring ink from a matrix to paper or another material: metal plates for engraving and etching, stone for lithography, blocks of wood for woodcuts[[source/wikipedia-en-printmaking|“Prints are created by transferring ink from a matrix to a sheet of paper or other material, by a variety of techniques. Common types of matrices include: metal plates for engraving, etching and related intaglio printing techniques; stone, aluminum, or polymer for lithography; blocks of wood for woodcuts and wood engravings”]]."

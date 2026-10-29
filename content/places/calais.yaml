@@ -1,0 +1,16 @@
+public_id: 103241
+name: Calais
+kind: settlement
+location: [1.85556, 50.9475]
+wikidata_id: Q6454
+metadata:
+  sources: [Wikidata Q6454 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q6454
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q6454

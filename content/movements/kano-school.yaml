@@ -1,0 +1,16 @@
+public_id: 103054
+name: Kanō school
+kind: movement
+period: 1401/1500
+wikidata_id: Q252801
+metadata:
+  sources: [Wikidata Q252801 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q252801
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q252801

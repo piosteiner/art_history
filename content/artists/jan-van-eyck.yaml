@@ -7,6 +7,156 @@ death: 1441-06-09
 wikidata_id: Q102272
 metadata:
   sources: [Wikidata Q102272 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/southern-netherlands
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q102272
+  - type: born_in
+    to: place/maaseik
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q102272
+      - url: https://d-nb.info/gnd/118531557
+        source: gnd
+        accessed: 2026-10-28
+      - url: https://rkd.nl/en/explore/artists/26958
+        source: rkd
+        accessed: 2026-10-28
+      - url: https://id.loc.gov/authorities/names/n50048855.html
+        source: lc
+        accessed: 2026-10-28
+  - type: died_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q102272
+      - url: https://d-nb.info/gnd/118531557
+        source: gnd
+        accessed: 2026-10-28
+      - url: https://rkd.nl/en/explore/artists/26958
+        source: rkd
+        accessed: 2026-10-28
+      - url: https://id.loc.gov/authorities/names/n50048855.html
+        source: lc
+        accessed: 2026-10-28
+      - url: https://data.bnf.fr/ark:/12148/cb119389315
+        source: bnf
+        accessed: 2026-10-28
+  - type: worked_in
+    to: place/arraiolos
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/baiona
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/bruges
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/falmouth
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/freguesia-de-cascais
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/lisbon
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/plymouth
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/portalegre
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/sandwich
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/shoreham
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/sluis-aardenburg
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: worked_in
+    to: place/lille
+    period: 1425/1430
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q102272
+  - type: associated_with
+    to: movement/early-netherlandish-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q102272
+  - type: associated_with
+    to: movement/northern-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q102272
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Jan_van_Eyck_-_Portrait_of_a_Man_%28Self_Portrait%3F%29_1433.jpg/1280px-Jan_van_Eyck_-_Portrait_of_a_Man_%28Self_Portrait%3F%29_1433.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jan_van_Eyck_-_Portrait_of_a_Man_(Self_Portrait%3F)_1433.jpg
+    license: Public domain
+    credit: Jan van Eyck
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Van_Eyck_brothers_statue_in_Ghent.jpg/1280px-Van_Eyck_brothers_statue_in_Ghent.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Eyck_brothers_statue_in_Ghent.jpg
+    license: CC BY-SA 3.0
+    credit: Markus Koljonen (Dilaudid)
+identifiers:
+  bnf: "119389315"
+  gnd: "118531557"
+  idref: "027321770"
+  kulturnav: 219de056-33f9-4d4a-bfa9-83aad2b29b6f
+  lc: n50048855
+  nlk: KAC200902080
+  rkd: "26958"
+  ulan: "500116209"
+  viaf: "54156267"
 sources:
   birth:
     - accessed: 2026-10-20

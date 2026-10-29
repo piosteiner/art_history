@@ -7,6 +7,30 @@ death: 1730-11-10
 wikidata_id: Q1384461
 metadata:
   sources: [Wikidata Q1384461 (retrieved 2026-10-15)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q1384461
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q1384461
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q1384461
+identifiers:
+  gnd: "132690616"
+  rkd: "48477"
+  ulan: "500024255"
+  viaf: "18392230"
 sources:
   birth:
     - accessed: 2026-10-15

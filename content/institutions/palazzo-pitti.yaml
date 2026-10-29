@@ -1,0 +1,44 @@
+public_id: 103321
+name: Palazzo Pitti
+kind: museum
+founded: 1458
+place: florence
+location: [11.25001, 43.76515]
+address: Piazza de Pitti, 1, CP 50.125, Florencia, Toscana
+website_url: https://www.uffizi.it/palazzo-pitti
+wikidata_id: Q29286
+metadata:
+  sources: [Wikidata Q29286 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/Palazzo_Pitti_nel_tardo_pomeriggio.jpg/1280px-Palazzo_Pitti_nel_tardo_pomeriggio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Palazzo_Pitti_nel_tardo_pomeriggio.jpg
+    license: CC BY-SA 3.0
+    credit: Almaak
+identifiers:
+  bnf: 12128627n
+  gnd: 1094976-8
+  idref: "029723361"
+  lc: n79063216
+  ulan: "500304793"
+  viaf: "126657011"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q29286
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q29286
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q29286
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q29286
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q29286

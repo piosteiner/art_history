@@ -1,2 +1,23 @@
 public_id: 100432
 name: Galerie Eugène Druet
+kind: gallery
+founded: 1903
+place: paris
+wikidata_id: Q28910305
+metadata:
+  sources: [Wikidata Q28910305 (retrieved 2026-10-28)]
+identifiers:
+  viaf: "126204895"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q28910305
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q28910305
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q28910305

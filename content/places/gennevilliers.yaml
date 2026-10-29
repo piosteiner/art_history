@@ -1,0 +1,16 @@
+public_id: 102935
+name: Gennevilliers
+kind: settlement
+location: [2.29444, 48.92556]
+wikidata_id: Q221968
+metadata:
+  sources: [Wikidata Q221968 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q221968
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q221968

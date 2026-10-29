@@ -1,2 +1,28 @@
 public_id: 100424
 name: O'Hana Gallery
+kind: gallery
+founded: 1957
+dissolved: 1975-03
+place: london
+address: Carlos Place, Grosvenor Square, London W1
+sources:
+  place:
+    - url: https://www.artbiogs.co.uk/2/galleries/ohana-gallery
+      note: opened 1957 by Jacques (Jack) O'Hana (1899–1974), closed March 1975
+      source: artbiogs-co-uk
+      accessed: 2026-10-28
+  address:
+    - url: https://www.artbiogs.co.uk/2/galleries/ohana-gallery
+      note: opened 1957 by Jacques (Jack) O'Hana (1899–1974), closed March 1975
+      source: artbiogs-co-uk
+      accessed: 2026-10-28
+  founded:
+    - url: https://www.artbiogs.co.uk/2/galleries/ohana-gallery
+      note: opened 1957 by Jacques (Jack) O'Hana (1899–1974), closed March 1975
+      source: artbiogs-co-uk
+      accessed: 2026-10-28
+  dissolved:
+    - url: https://www.artbiogs.co.uk/2/galleries/ohana-gallery
+      note: opened 1957 by Jacques (Jack) O'Hana (1899–1974), closed March 1975
+      source: artbiogs-co-uk
+      accessed: 2026-10-28

@@ -1,0 +1,16 @@
+public_id: 103261
+name: Schafberg
+kind: site
+location: [9.91, 46.5085]
+wikidata_id: Q1326842
+metadata:
+  sources: [Wikidata Q1326842 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1326842
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1326842

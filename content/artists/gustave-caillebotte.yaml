@@ -7,6 +7,100 @@ death: 1894-02-21
 wikidata_id: Q295144
 metadata:
   sources: [Wikidata Q295144 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q295144
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q295144
+  - type: died_in
+    to: place/gennevilliers
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q295144
+  - type: worked_in
+    to: place/gennevilliers
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q295144
+  - type: worked_in
+    to: place/honfleur
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q295144
+  - type: worked_in
+    to: place/italy
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q295144
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q295144
+  - type: worked_in
+    to: place/norway
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q295144
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q295144
+  - type: worked_in
+    to: place/trouville-sur-mer
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q295144
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q295144
+  - type: member_of
+    to: institution/cercle-de-la-voile-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q295144
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q295144
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e5/Caillebotteautoportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caillebotteautoportrait.jpg
+    license: Public domain
+    credit: Gustave Caillebotte
+identifiers:
+  bnf: 11936054v
+  dome: "9672"
+  gnd: "118853600"
+  idref: "027285235"
+  lc: n81047695
+  nlk: KAC201840895
+  rkd: "14725"
+  ulan: "500011706"
+  viaf: "71399604"
 sources:
   birth:
     - accessed: 2026-10-20

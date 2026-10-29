@@ -46,6 +46,13 @@ death: 1584-07-10
 wikidata_id: Q78454
 metadata:
   sources: [Wikidata Q78454 (retrieved 2026-10-19)]
+relationships:
+  - type: founded
+    to: institution/leiden-university
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q156598
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/William_I%2C_Prince_of_Orange_by_Adriaen_Thomasz._Key_Rijksmuseum_Amsterdam_SK-A-3148.jpg/1280px-William_I%2C_Prince_of_Orange_by_Adriaen_Thomasz._Key_Rijksmuseum_Amsterdam_SK-A-3148.jpg
     source_url: https://commons.wikimedia.org/wiki/File:William_I,_Prince_of_Orange_by_Adriaen_Thomasz._Key_Rijksmuseum_Amsterdam_SK-A-3148.jpg

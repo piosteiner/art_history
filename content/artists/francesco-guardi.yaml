@@ -7,6 +7,51 @@ death: 1793-01-01
 wikidata_id: Q318769
 metadata:
   sources: [Wikidata Q318769 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q318769
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q318769
+  - type: died_in
+    to: place/cannaregio
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q318769
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q318769
+  - type: associated_with
+    to: movement/rococo
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q318769
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Ca%27_Rezzonico_-_Ritratto_di_Francesco_Guardi_1764_-_Pietro_Longhi.jpg/1280px-Ca%27_Rezzonico_-_Ritratto_di_Francesco_Guardi_1764_-_Pietro_Longhi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ca%27_Rezzonico_-_Ritratto_di_Francesco_Guardi_1764_-_Pietro_Longhi.jpg
+    license: Public domain
+    credit: Pietro Longhi
+identifiers:
+  bnf: 11960714q
+  gnd: "118543091"
+  idref: "027602559"
+  kulturnav: 23058d9e-8f98-456d-a079-830fbfa56111
+  lc: n50074509
+  rkd: "34398"
+  ulan: "500017409"
+  viaf: "27073465"
 sources:
   birth:
     - accessed: 2026-10-20

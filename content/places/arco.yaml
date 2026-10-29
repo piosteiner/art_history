@@ -1,0 +1,16 @@
+public_id: 103260
+name: Arco
+kind: settlement
+location: [10.88333, 45.91667]
+wikidata_id: Q138473
+metadata:
+  sources: [Wikidata Q138473 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q138473
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q138473

@@ -1,0 +1,95 @@
+public_id: 103235
+name: Jean-Baptiste Carpeaux
+given_name: Jean-Baptiste
+family_name: Carpeaux
+birth: 1827-05-11
+death: 1875-10-12
+wikidata_id: Q182791
+metadata:
+  sources: [Wikidata Q182791 (retrieved 2026-10-28)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q182791
+  - type: born_in
+    to: place/valenciennes
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q182791
+  - type: died_in
+    to: place/courbevoie
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q182791
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q182791
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q182791
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q182791
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q182791
+  - type: studied_at
+    to: institution/ecole-superieure-d-art-et-de-design-de-valenciennes
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q182791
+  - type: studied_at
+    to: institution/french-academy-in-rome
+    period: 1856/1859
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q182791
+  - type: associated_with
+    to: movement/romanticism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q182791
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Jean-Baptiste_Carpeaux_self-portrait_-_Fontaine_2000_p25.jpg/1280px-Jean-Baptiste_Carpeaux_self-portrait_-_Fontaine_2000_p25.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste_Carpeaux_self-portrait_-_Fontaine_2000_p25.jpg
+    license: Public domain
+    credit: Jean-Baptiste Carpeaux
+identifiers:
+  bnf: 11936065h
+  dome: "4006"
+  gnd: "118519212"
+  idref: "027285375"
+  kulturnav: d368b1c9-f457-4109-a976-98e2902fb687
+  lc: n50032484
+  rkd: "15507"
+  ulan: "500115348"
+  viaf: "39385758"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q182791
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q182791

@@ -1,10 +1,78 @@
 public_id: 101327
 name: Parmigianino
+names:
+  - lang: it
+    role: original
+    text: Francesco Parmigianino
+  - Girolamo Francesco Maria Mazzola
 birth: 1503-01-21
 death: 1540-09-03
 wikidata_id: Q9348
 metadata:
   sources: [Wikidata Q9348 (retrieved 2026-10-19)]
+relationships:
+  - type: born_in
+    to: place/parma
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q9348
+  - type: died_in
+    to: place/casalmaggiore
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q9348
+  - type: worked_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9348
+  - type: worked_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9348
+  - type: worked_in
+    to: place/parma
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9348
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9348
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q9348
+  - type: associated_with
+    to: movement/mannerism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q9348
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Parmigianino_Selfportrait.jpg/1280px-Parmigianino_Selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Parmigianino_Selfportrait.jpg
+    license: Public domain
+    credit: Parmigianino
+identifiers:
+  bnf: "119729170"
+  gnd: "118641484"
+  idref: "027754154"
+  kulturnav: 9aec98b7-fab7-4cde-a8d4-fb641d647277
+  lc: n79074516
+  rkd: "61878"
+  ulan: "500012615"
+  viaf: "17231857"
 sources:
   birth:
     - accessed: 2026-10-19

@@ -1,0 +1,16 @@
+public_id: 103213
+name: Le Havre
+kind: settlement
+location: [0.10806, 49.49417]
+wikidata_id: Q42810
+metadata:
+  sources: [Wikidata Q42810 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q42810
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q42810

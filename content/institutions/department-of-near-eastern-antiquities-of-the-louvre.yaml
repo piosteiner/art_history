@@ -1,8 +1,38 @@
 public_id: 101710
 name: Department of Near Eastern Antiquities of the Louvre
+names:
+  - lang: fr
+    role: alternative
+    text: département des antiquités orientales du musée du Louvre
+  - lang: de
+    role: translation
+    text: Orientalische Altertümer
+kind: department
+place: paris
+location: [2.33761, 48.86153]
 wikidata_id: Q3044751
 metadata:
   sources: [Wikidata Q3044751 (retrieved 2026-10-20)]
 relationships:
   - type: part_of
     to: institution/musee-du-louvre
+    sources:
+      - accessed: 2026-10-28
+        property: P361
+        wikidata: Q3044751
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Assyrian_monumental_bas-relief_-%2830626865213%29.jpg/1280px-Assyrian_monumental_bas-relief_-%2830626865213%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Assyrian_monumental_bas-relief_-(30626865213).jpg
+    license: CC BY 2.0
+    credit: Fred Romero from Paris, France
+identifiers:
+  bnf: "118650213"
+  gnd: 811230-7
+  idref: "026394693"
+  lc: n78019868
+  viaf: "135353348"
+sources:
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3044751

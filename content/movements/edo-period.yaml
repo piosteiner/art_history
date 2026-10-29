@@ -3,7 +3,7 @@ name: Edo period
 names: [Tokugawa period]
 kind: period
 period: 1600/1868
-description_md: Japan under the Tokugawa shogunate, with Edo (Tokyo) as its political centre.
+description_md: Japan under the Tokugawa shogunate, with Edo (Tokyo) as its political centre[[source/wikipedia-en-edo-period|“the period between 1600 or 1603 and 1868 in the history of Japan, when the country was under the rule of the Tokugawa shogunate”]][[source/wikipedia-en-ukiyo-e|“In 1603, the city of Edo (Tokyo) became the seat of the ruling Tokugawa shogunate”]].
 relationships:
   - type: active_in
     to: place/japan

@@ -1,4 +1,12 @@
 public_id: 101069
 name: Galerie Römer
+kind: gallery
+place: zurich
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18)]
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/multimedia/8/1488-en.pdf
+      note: "Hodler, Genfersee mit Mont-Blanc am frühen Morgen: bought 1992 by the Holenia Trust, Vaduz, from Galerie Römer, Zürich"
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-28

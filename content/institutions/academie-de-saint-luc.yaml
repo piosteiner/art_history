@@ -1,0 +1,28 @@
+public_id: 102948
+name: Académie de Saint-Luc
+kind: art academy
+founded: 1391
+dissolved: 1777
+place: paris
+wikidata_id: Q337486
+metadata:
+  sources: [Wikidata Q337486 (retrieved 2026-10-28)]
+identifiers:
+  bnf: 12407308d
+  gnd: 10060701-9
+  idref: "033180539"
+  lc: n84216354
+  viaf: "133576628"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q337486
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q337486
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q337486

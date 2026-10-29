@@ -1,4 +1,17 @@
 public_id: 100479
 name: Musées nationaux
 kind: museum administration
+dissolved: 2009
 place: paris
+wikidata_id: Q28064233
+metadata:
+  sources: [Wikidata Q28064233 (retrieved 2026-10-28)]
+identifiers:
+  idref: "027551148"
+  lc: n82080281
+  viaf: "157729592"
+sources:
+  dissolved:
+    - accessed: 2026-10-28
+      property: P576
+      wikidata: Q28064233

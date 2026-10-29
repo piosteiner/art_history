@@ -2,11 +2,73 @@ public_id: 101324
 name: Jacopo Tintoretto
 given_name: Jacopo
 family_name: Tintoretto
+names: [Jacopo di Giovanni Battista Robusti]
 birth: 1519
-death: 31 May 1594
+death: 1594-05-31
 wikidata_id: Q9319
 metadata:
   sources: [Wikidata Q9319 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q9319
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q9319
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q9319
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9319
+  - type: student_of
+    to: artist/titian
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q9319
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q47551
+  - type: associated_with
+    to: movement/mannerism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q9319
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q9319
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Tintoretto_-_Self-Portrait_as_a_Young_Man%2C_ca._1548%2C_CAI.103_%28cropped%29.jpg/1280px-Tintoretto_-_Self-Portrait_as_a_Young_Man%2C_ca._1548%2C_CAI.103_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tintoretto_-_Self-Portrait_as_a_Young_Man,_ca._1548,_CAI.103_(cropped).jpg
+    license: Public domain
+    credit: Jacopo Tintoretto
+identifiers:
+  bnf: 12073989p
+  dome: "3807"
+  gnd: "118622854"
+  idref: "027471780"
+  kulturnav: efcb3961-99c8-4413-9cc9-075d6d66cea3
+  lc: n50011866
+  rkd: "77607"
+  ulan: "500011407"
+  viaf: "95161574"
 sources:
   birth:
     - accessed: 2026-10-19

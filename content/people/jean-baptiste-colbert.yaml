@@ -1,0 +1,30 @@
+public_id: 103316
+name: Jean-Baptiste Colbert
+given_name: Jean-Baptiste
+family_name: Colbert
+kind: person
+birth: 1619-08-29
+death: 1683-09-06
+wikidata_id: Q188971
+metadata:
+  sources: [Wikidata Q188971 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/french-academy-in-rome
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q337494
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q188971
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q188971
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q188971

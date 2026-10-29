@@ -7,6 +7,38 @@ death: 1507-03-05
 wikidata_id: Q290407
 metadata:
   sources: [Wikidata Q290407 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q290407
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q290407
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q290407
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Bellini_selfportrait.jpg/1280px-Bellini_selfportrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bellini_selfportrait.jpg
+    license: Public domain
+    credit: Gentile Bellini
+identifiers:
+  bnf: 11952322h
+  gnd: "118655183"
+  idref: 02749649X
+  lc: n86007313
+  rkd: "6266"
+  ulan: "500026083"
+  viaf: "12275353"
 sources:
   birth:
     - accessed: 2026-10-20

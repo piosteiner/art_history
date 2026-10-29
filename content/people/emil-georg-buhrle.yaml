@@ -4,11 +4,18 @@ given_name: Emil Georg
 family_name: Bührle
 kind: person
 occupations: [art collector]
-birth: 31 August 1890
+birth: 1890-08-31
 death: 1956-11-28
 wikidata_id: Q96297
 metadata:
   sources: [Wikidata Q96297 (retrieved 2026-10-06)]
+relationships:
+  - type: founded
+    to: institution/foundation-e-g-buhrle-collection
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q666331
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/ETH-BIB_Emil_B%C3%BChrle_-_Ausschnitt_von_Com_X-H065-08-02_%28cropped%29.tif_2.jpg/1280px-ETH-BIB_Emil_B%C3%BChrle_-_Ausschnitt_von_Com_X-H065-08-02_%28cropped%29.tif_2.jpg
     source_url: https://commons.wikimedia.org/wiki/File:ETH-BIB_Emil_B%C3%BChrle_-_Ausschnitt_von_Com_X-H065-08-02_(cropped).tif_2.jpg

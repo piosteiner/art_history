@@ -1,11 +1,40 @@
 public_id: 102154
 name: Pio Monte della Misericordia
+kind: church
 founded: 1602
+place: naples
+location: [14.26043, 40.85187]
+address: Via dei Tribunali, 253 - Napoli
+website_url: http://www.piomontedellamisericordia.it
 wikidata_id: Q3737242
 metadata:
   sources: [Wikidata Q3737242 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/PioMonteMisericordiaNaples.jpg/1280px-PioMonteMisericordiaNaples.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:PioMonteMisericordiaNaples.jpg
+    license: CC BY-SA 3.0
+    credit: IlSistemone
+identifiers:
+  gnd: 4774614-2
+  viaf: "7091148574282324430001"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3737242
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q3737242
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q3737242
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q3737242
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q3737242

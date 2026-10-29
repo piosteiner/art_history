@@ -1,0 +1,16 @@
+public_id: 103117
+name: Baumgarten
+kind: site
+location: [16.2807, 48.1976]
+wikidata_id: Q687025
+metadata:
+  sources: [Wikidata Q687025 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q687025
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q687025

@@ -3,4 +3,38 @@ name: Van Gogh Museum
 kind: museum
 founded: 1973
 place: amsterdam
+location: [4.88111, 52.35833]
+address: Paulus Potterstraat 7
 website_url: https://www.vangoghmuseum.nl
+wikidata_id: Q224124
+metadata:
+  sources: [Wikidata Q224124 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Van_Gogh_Museum.jpg/1280px-Van_Gogh_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_Museum.jpg
+    license: CC BY 2.5
+    credit: Warrox
+identifiers:
+  bnf: "118664892"
+  gnd: 1035547-9
+  idref: 02641337X
+  lc: nr96012202
+  ulan: "500275558"
+  viaf: "157780694"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q224124
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q224124
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q224124
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q224124

@@ -2,13 +2,110 @@ public_id: 100745
 name: Georges Seurat
 given_name: Georges
 family_name: Seurat
+names:
+  - lang: fr
+    role: original
+    text: Georges-Pierre Seurat
 birth: 1859-12-02
 death: 1891-03-29
 wikidata_id: Q34013
 metadata:
   sources: [Wikidata Q34013 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q34013
+  - type: born_in
+    to: place/former-5th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q34013
+  - type: died_in
+    to: place/boulevard-de-magenta
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q34013
+  - type: worked_in
+    to: place/brest
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q34013
+  - type: worked_in
+    to: place/gravelines
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q34013
+  - type: worked_in
+    to: place/honfleur
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q34013
+  - type: worked_in
+    to: place/le-crotoy
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q34013
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q34013
+  - type: worked_in
+    to: place/port-en-bessin-huppain
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q34013
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q34013
+  - type: associated_with
+    to: movement/neo-impressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q34013
+  - type: associated_with
+    to: movement/pointillism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q34013
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q34013
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/14/Georges_Seurat_1888_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Seurat_1888_(cropped).jpg
+    license: Public domain
+    credit: Unidentified photographer
 identifiers:
+  bnf: "119245567"
   dome: "353"
+  gnd: "118613502"
+  idref: 02734293X
+  kulturnav: 12cf0fc6-caca-44d9-aad5-13edae9a4ef9
+  lc: n79129009
+  nlk: KAC199624912
+  rkd: "72100"
+  ulan: "500008873"
+  viaf: "24608076"
 sources:
   birth:
     - accessed: 2026-10-18

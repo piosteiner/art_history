@@ -1,0 +1,16 @@
+public_id: 103133
+name: Schaerbeek
+kind: site
+location: [4.37361, 50.8675]
+wikidata_id: Q12887
+metadata:
+  sources: [Wikidata Q12887 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q12887
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q12887

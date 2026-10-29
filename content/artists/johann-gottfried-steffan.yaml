@@ -7,6 +7,52 @@ death: 1905-06-16
 wikidata_id: Q682744
 metadata:
   sources: [Wikidata Q682744 (retrieved 2026-10-09)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q682744
+  - type: born_in
+    to: place/wadenswil
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q682744
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q682744
+  - type: worked_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q682744
+  - type: studied_at
+    to: institution/academy-of-fine-arts-munich
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q682744
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/91/Ig-steffan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ig-steffan.jpg
+    license: Public domain
+    credit: Johann Gottfried Steffan
+identifiers:
+  bnf: 10623573x
+  gnd: "117226033"
+  hls: "022107"
+  idref: "088835022"
+  lc: nr2006011942
+  rkd: "74891"
+  sikart: "4022953"
+  ulan: "500088084"
+  viaf: "13079482"
 sources:
   birth:
     - accessed: 2026-10-09

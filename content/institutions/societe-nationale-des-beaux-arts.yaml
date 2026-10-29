@@ -1,0 +1,28 @@
+public_id: 102956
+name: Société nationale des beaux-arts
+kind: art society
+founded: 1862
+place: paris
+website_url: http://www.salondesbeauxarts.com/
+wikidata_id: Q675016
+metadata:
+  sources: [Wikidata Q675016 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4c/SNBA_1890_Medal..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:SNBA_1890_Medal..jpg
+    license: Public domain
+    credit: Alexandre Charpentier (1856-1909)
+identifiers:
+  gnd: 118898-7
+  idref: "026424363"
+  lc: n80158421
+  viaf: "144894236"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q675016
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q675016

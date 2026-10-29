@@ -2,17 +2,152 @@ public_id: 101126
 name: Diego Velázquez
 given_name: Diego
 family_name: Velázquez
-birth: 1599
-death: 1660-08-06
+birth: 1599-06-06
+death: 1660-08-07
 wikidata_id: Q297
 metadata:
   sources: [Wikidata Q297 (retrieved 2026-10-19)]
+relationships:
+  - type: born_in
+    to: place/seville
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q297
+      - url: https://d-nb.info/gnd/118626426
+        source: gnd
+        accessed: 2026-10-28
+      - url: https://rkd.nl/en/explore/artists/79750
+        source: rkd
+        accessed: 2026-10-28
+      - url: https://id.loc.gov/authorities/names/n79063457.html
+        source: lc
+        accessed: 2026-10-28
+      - url: https://data.bnf.fr/ark:/12148/cb11935168k
+        source: bnf
+        accessed: 2026-10-28
+  - type: born_in
+    to: place/trouville-sur-mer
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q297
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q297
+      - url: https://d-nb.info/gnd/118626426
+        source: gnd
+        accessed: 2026-10-28
+      - url: https://rkd.nl/en/explore/artists/79750
+        source: rkd
+        accessed: 2026-10-28
+      - url: https://id.loc.gov/authorities/names/n79063457.html
+        source: lc
+        accessed: 2026-10-28
+      - url: https://data.bnf.fr/ark:/12148/cb11935168k
+        source: bnf
+        accessed: 2026-10-28
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q297
+  - type: worked_in
+    to: place/seville
+    period: 1611/1622
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q297
+  - type: worked_in
+    to: place/madrid
+    period: 1622/1660
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q297
+  - type: worked_in
+    to: place/rome
+    period: 1629/1630
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q297
+  - type: worked_in
+    to: place/naples
+    period: 1630/1631
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q297
+  - type: worked_in
+    to: place/italy
+    period: 1649/1651
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q297
+  - type: associated_with
+    to: movement/baroque
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q297
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6c/Diego_Vel%C3%A1zquez_Autorretrato_45_x_38_cm_-_Colecci%C3%B3n_Real_Academia_de_Bellas_Artes_de_San_Carlos_-_Museo_de_Bellas_Artes_de_Valencia.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_Autorretrato_45_x_38_cm_-_Colecci%C3%B3n_Real_Academia_de_Bellas_Artes_de_San_Carlos_-_Museo_de_Bellas_Artes_de_Valencia.jpg
+    license: Public domain
+    credit: Diego Velázquez
+identifiers:
+  bnf: 11935168k
+  gnd: "118626426"
+  idref: "027274020"
+  kulturnav: 7e8390f5-0602-4d58-afbe-8dae9baf06ed
+  lc: n79063457
+  nlk: KAC199628719
+  rkd: "79750"
+  ulan: "500016881"
+  viaf: "76324831"
 sources:
   birth:
     - accessed: 2026-10-19
       property: P569
       wikidata: Q297
+    - url: https://d-nb.info/gnd/118626426
+      source: gnd
+      accessed: 2026-10-28
+    - url: https://id.loc.gov/authorities/names/n79063457.html
+      source: lc
+      accessed: 2026-10-28
+    - url: https://kulturnav.org/7e8390f5-0602-4d58-afbe-8dae9baf06ed
+      source: kulturnav
+      accessed: 2026-10-28
+    - url: https://lod.nl.go.kr/page/KAC199628719
+      source: nlk
+      accessed: 2026-10-28
+    - url: https://rkd.nl/en/explore/artists/79750
+      source: rkd
+      accessed: 2026-10-28
+    - url: https://data.bnf.fr/ark:/12148/cb11935168k
+      source: bnf
+      accessed: 2026-10-28
   death:
     - accessed: 2026-10-19
       property: P570
       wikidata: Q297
+    - url: https://id.loc.gov/authorities/names/n79063457.html
+      source: lc
+      accessed: 2026-10-28
+    - url: https://kulturnav.org/7e8390f5-0602-4d58-afbe-8dae9baf06ed
+      source: kulturnav
+      accessed: 2026-10-28
+    - url: https://rkd.nl/en/explore/artists/79750
+      source: rkd
+      accessed: 2026-10-28
+    - url: https://data.bnf.fr/ark:/12148/cb11935168k
+      source: bnf
+      accessed: 2026-10-28

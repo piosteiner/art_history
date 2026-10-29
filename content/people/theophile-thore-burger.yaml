@@ -1,5 +1,7 @@
 public_id: 101775
 name: Théophile Thoré-Bürger
+given_name: Théophile
+family_name: Thoré-Bürger
 names:
   - lang: fr
     role: original
@@ -29,7 +31,7 @@ names:
 kind: person
 occupations: [journalist, art historian, art collector, art critic]
 birth: 1807-06-23
-death: 30 April 1869
+death: 1869-04-30
 wikidata_id: Q933765
 metadata:
   sources: [Wikidata Q933765 (retrieved 2026-10-20)]

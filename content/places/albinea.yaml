@@ -1,0 +1,16 @@
+public_id: 102938
+name: Albinea
+kind: settlement
+location: [10.6, 44.61667]
+wikidata_id: Q111096
+metadata:
+  sources: [Wikidata Q111096 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q111096
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q111096

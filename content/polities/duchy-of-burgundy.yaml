@@ -1,0 +1,11 @@
+public_id: 102916
+name: Duchy of Burgundy
+period: 880/1477
+wikidata_id: Q4712
+metadata:
+  sources: [Wikidata Q4712 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q4712

@@ -7,7 +7,9 @@ names:
   - lang: ru
     role: translation
     text: Доротеум
+kind: auction house
 founded: 1707
+place: vienna
 website_url: http://www.dorotheum.com/
 wikidata_id: Q668545
 metadata:
@@ -23,6 +25,14 @@ identifiers:
   lc: n83214362
   viaf: "143109720"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q668545
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q668545
   founded:
     - accessed: 2026-10-19
       property: P571

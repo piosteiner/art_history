@@ -1,0 +1,16 @@
+public_id: 102971
+name: Freguesia de Cascais
+kind: site
+location: [-9.42167, 38.69722]
+wikidata_id: Q512030
+metadata:
+  sources: [Wikidata Q512030 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q512030
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q512030

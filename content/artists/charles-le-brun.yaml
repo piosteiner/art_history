@@ -1,5 +1,7 @@
 public_id: 102198
 name: Charles Le Brun
+given_name: Charles
+family_name: Le Brun
 names:
   - Sharlʹ Le Bri︠u︡nʹ
   - Chevalier Charles Le Brun
@@ -52,6 +54,13 @@ death: 1690-02-12
 wikidata_id: Q271676
 metadata:
   sources: [Wikidata Q271676 (retrieved 2026-10-20)]
+relationships:
+  - type: founded
+    to: institution/french-academy-in-rome
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q337494
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/a/ab/Le_brun.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Le_brun.jpg

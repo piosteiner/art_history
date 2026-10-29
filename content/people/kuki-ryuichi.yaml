@@ -1,0 +1,56 @@
+public_id: 103119
+name: Kuki Ryūichi
+given_name: Ryūichi
+family_name: Kuki
+names:
+  - lang: ja
+    role: original
+    text: 九鬼隆一
+  - Kuki Ryuichi
+  - Kuki Ryuuichi
+  - Ryūichi Kuki
+  - Ryuichi Kuki
+  - lang: ko
+    role: translation
+    text: 구키 류이치
+  - lang: ru
+    role: translation
+    text: Рюити Куки
+kind: person
+occupations: [diplomat, politician]
+birth: 1850-09-12
+death: 1931-08-18
+wikidata_id: Q656068
+metadata:
+  sources: [Wikidata Q656068 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/kangakai
+    sources:
+      - source: wikipedia-ja-kangakai
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/KUKI_Ryuichi.jpg/1280px-KUKI_Ryuichi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:KUKI_Ryuichi.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  idref: "268849749"
+  lc: nr2005023753
+  viaf: "44257484"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q656068
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q656068
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q656068
+  occupations:
+    - accessed: 2026-10-28
+      property: P106
+      wikidata: Q656068

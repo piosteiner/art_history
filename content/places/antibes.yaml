@@ -1,0 +1,16 @@
+public_id: 103220
+name: Antibes
+kind: settlement
+location: [7.12306, 43.58]
+wikidata_id: Q126898
+metadata:
+  sources: [Wikidata Q126898 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q126898
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q126898

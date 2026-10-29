@@ -1,0 +1,38 @@
+public_id: 103232
+name: Leiden University
+kind: university
+founded: 1575-02-18
+place: leiden
+location: [4.48528, 52.15694]
+website_url: https://www.universiteitleiden.nl/
+wikidata_id: Q156598
+metadata:
+  sources: [Wikidata Q156598 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Leiden_-_Rapenburg_73.jpg/1280px-Leiden_-_Rapenburg_73.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leiden_-_Rapenburg_73.jpg
+    license: CC BY 3.0
+    credit: Rudolphous
+identifiers:
+  bnf: "118690185"
+  gnd: "1025656059"
+  idref: "027370208"
+  lc: n79058414
+  viaf: "427145676400905170004"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q156598
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q156598
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q156598
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q156598

@@ -1,0 +1,23 @@
+public_id: 103167
+name: fonderie de Coubertin
+kind: foundry
+founded: 1963
+place: saint-remy-les-chevreuse
+location: [2.06303, 48.70107]
+website_url: https://www.ateliers-st-jacques.com/
+wikidata_id: Q124171158
+metadata:
+  sources: [Wikidata Q124171158 (retrieved 2026-10-28)]
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q124171158
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q124171158
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q124171158

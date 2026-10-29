@@ -1,0 +1,16 @@
+public_id: 103177
+name: Sienese school
+kind: movement
+period: 1201/1300
+wikidata_id: Q1332178
+metadata:
+  sources: [Wikidata Q1332178 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1332178
+  period:
+    - accessed: 2026-10-28
+      property: P580
+      wikidata: Q1332178

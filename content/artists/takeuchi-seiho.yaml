@@ -1,0 +1,65 @@
+public_id: 102756
+name: Takeuchi Seihō
+given_name: Seihō
+family_name: Takeuchi
+names:
+  - lang: ja
+    role: original
+    text: 竹内栖鳳
+birth: 1864-12-20
+death: 1942-08-23
+wikidata_id: Q3514329
+metadata:
+  sources: [Wikidata Q3514329 (retrieved 2026-10-28)]
+relationships:
+  - type: born_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q3514329
+  - type: died_in
+    to: place/yugawara
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q3514329
+  - type: worked_in
+    to: place/japan
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q3514329
+  - type: studied_at
+    to: institution/kyoto-city-university-of-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q3514329
+  - type: associated_with
+    to: movement/nihonga
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q3514329
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/09/Takeuchi_Seiho_%281935%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Takeuchi_Seiho_(1935).jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "169463715"
+  gnd: "142270032"
+  idref: "182298671"
+  lc: n81032983
+  ulan: "500123272"
+  viaf: "96591386"
+sources:
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q3514329
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q3514329

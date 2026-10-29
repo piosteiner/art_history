@@ -1,0 +1,30 @@
+public_id: 103323
+name: Ivan Shuvalov
+given_name: Ivan
+family_name: Shuvalov
+kind: person
+birth: 1727-11-12
+death: 1797-11-26
+wikidata_id: Q659395
+metadata:
+  sources: [Wikidata Q659395 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/imperial-academy-of-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q628254
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q659395
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q659395
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q659395

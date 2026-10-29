@@ -1,0 +1,16 @@
+public_id: 103281
+name: Lyon
+kind: settlement
+location: [4.835, 45.7675]
+wikidata_id: Q456
+metadata:
+  sources: [Wikidata Q456 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q456
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q456

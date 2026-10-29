@@ -110,6 +110,12 @@ relationships:
       - accessed: 2026-10-15
         property: P737
         wikidata: Q296
+  - type: student_of
+    to: artist/charles-gleyre
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q452119
   - type: studied_at
     to: institution/beaux-arts-de-paris
     sources:

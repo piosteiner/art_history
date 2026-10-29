@@ -1,0 +1,16 @@
+public_id: 102928
+name: Syracuse
+kind: settlement
+location: [15.2875, 37.06917]
+wikidata_id: Q13670
+metadata:
+  sources: [Wikidata Q13670 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q13670
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q13670

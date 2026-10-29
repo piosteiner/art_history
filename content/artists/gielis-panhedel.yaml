@@ -8,12 +8,36 @@ wikidata_id: Q2060317
 metadata:
   sources: [Wikidata Q2060317 (retrieved 2026-10-18)]
 relationships:
+  - type: nationality
+    to: polity/habsburg-netherlands
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q2060317
+  - type: born_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q2060317
+  - type: worked_in
+    to: place/brussels
+    period: 1545/1546
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q2060317
   - type: student_of
     to: artist/hieronymus-bosch
     sources:
       - accessed: 2026-10-18
         property: P802
         wikidata: Q130531
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q2060317
+identifiers:
+  rkd: "351641"
 sources:
   birth:
     - accessed: 2026-10-18

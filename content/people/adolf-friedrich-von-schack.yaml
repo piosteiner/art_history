@@ -9,6 +9,13 @@ death: 1894-04-14
 wikidata_id: Q63876
 metadata:
   sources: [Wikidata Q63876 (retrieved 2026-10-18)]
+relationships:
+  - type: founded
+    to: institution/sammlung-schack
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q523652
 sources:
   kind:
     - accessed: 2026-10-18

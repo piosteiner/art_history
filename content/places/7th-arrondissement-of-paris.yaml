@@ -1,0 +1,16 @@
+public_id: 103169
+name: 7th arrondissement of Paris
+kind: site
+location: [2.31278, 48.85917]
+wikidata_id: Q259463
+metadata:
+  sources: [Wikidata Q259463 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q259463
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q259463

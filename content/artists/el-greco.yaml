@@ -1,10 +1,97 @@
 public_id: 101178
 name: El Greco
+names:
+  - lang: el
+    role: original
+    text: Δομήνικος Θεοτοκόπουλος
+  - Greco Domenicos Theotocopuli
 birth: 1541-10-01
 death: 1614-04-07
 wikidata_id: Q301
 metadata:
   sources: [Wikidata Q301 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/crown-of-castile
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q301
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q301
+  - type: born_in
+    to: place/fodele
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q301
+  - type: born_in
+    to: place/heraklion
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q301
+  - type: died_in
+    to: place/toledo
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q301
+  - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q301
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q301
+  - type: worked_in
+    to: place/toledo
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q301
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q301
+  - type: associated_with
+    to: movement/mannerism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q301
+  - type: associated_with
+    to: movement/spanish-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q301
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg/1280px-El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:El_Greco_-_Portrait_of_a_Man_-_WGA10554.jpg
+    license: Public domain
+    credit: El Greco
+identifiers:
+  bnf: 12033456h
+  dome: "3393"
+  gnd: "118722778"
+  idref: "028513568"
+  kulturnav: 9adfdaef-f989-4a29-8cc8-ccd539d47fd1
+  lc: n81070611
+  rkd: "33505"
+  ulan: "500010916"
+  viaf: "100215785"
 sources:
   birth:
     - accessed: 2026-10-19

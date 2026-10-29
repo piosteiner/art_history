@@ -7,7 +7,9 @@ names:
   - lang: zh
     role: translation
     text: 國家遺產局
+kind: government agency
 founded: 1940-03-07
+place: madrid
 website_url: http://www.patrimonionacional.es/
 wikidata_id: Q1891189
 metadata:
@@ -19,6 +21,10 @@ identifiers:
   lc: n80162741
   viaf: "155943525"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q1891189
   founded:
     - accessed: 2026-10-19
       property: P571

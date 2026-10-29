@@ -2,11 +2,103 @@ public_id: 101702
 name: Paolo Veronese
 given_name: Paolo
 family_name: Veronese
+names: [Paolo Caliati Veronese, Paolo Caliari il Veronese]
 birth: 1528
 death: 1588-04-19
 wikidata_id: Q9440
 metadata:
   sources: [Wikidata Q9440 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q9440
+  - type: born_in
+    to: place/verona
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q9440
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q9440
+  - type: worked_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9440
+  - type: worked_in
+    to: place/padua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9440
+  - type: worked_in
+    to: place/treviso
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9440
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9440
+  - type: worked_in
+    to: place/verona
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q9440
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q9440
+  - type: associated_with
+    to: movement/mannerism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q9440
+  - type: associated_with
+    to: movement/venetian-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q9440
+  - type: associated_with
+    to: movement/veronese-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q9440
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Paolo_Veronese_-_AUTORITRATTO_%282%29_-_Museo_dell%27Ermitage.jpg/1280px-Paolo_Veronese_-_AUTORITRATTO_%282%29_-_Museo_dell%27Ermitage.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paolo_Veronese_-_AUTORITRATTO_(2)_-_Museo_dell%27Ermitage.jpg
+    license: Public domain
+    credit: Paolo Veronese
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Paolo_Veronese%2C_1528-1588_-_Nationalmuseum_-_39582.tif/lossy-page1-1280px-Paolo_Veronese%2C_1528-1588_-_Nationalmuseum_-_39582.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paolo_Veronese,_1528-1588_-_Nationalmuseum_-_39582.tif
+    license: Public domain
+    credit: Workshop of Georg Engelhard Schröder
+identifiers:
+  bnf: 13949328b
+  gnd: "118626647"
+  idref: "027573370"
+  kulturnav: 816017ef-97e4-412c-849e-2b5a84f5ce69
+  lc: n79040166
+  rkd: "80585"
+  ulan: "500021218"
+  viaf: "95162605"
 sources:
   birth:
     - accessed: 2026-10-20

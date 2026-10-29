@@ -1,0 +1,41 @@
+public_id: 102757
+name: Yamatane Museum of Art
+names:
+  - lang: de
+    role: translation
+    text: Yamatane-Kunstmuseum
+  - lang: ja
+    role: translation
+    text: 山種美術館
+kind: museum
+founded: 1966
+place: tokyo
+location: [139.71364, 35.65317]
+website_url: https://www.yamatane-museum.jp/english/
+wikidata_id: Q3329572
+metadata:
+  sources: [Wikidata Q3329572 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Yamatane_Museum_of_Art_-_Tokyo%2C_Japan_-_DSC05555.jpg/1280px-Yamatane_Museum_of_Art_-_Tokyo%2C_Japan_-_DSC05555.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Yamatane_Museum_of_Art_-_Tokyo,_Japan_-_DSC05555.jpg
+    license: CC0
+    credit: Daderot
+identifiers:
+  gnd: 16315885-X
+  idref: "189517530"
+  lc: n81038484
+  ulan: "500309756"
+  viaf: "127559021"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q3329572
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q3329572
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3329572

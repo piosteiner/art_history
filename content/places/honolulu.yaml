@@ -1,0 +1,16 @@
+public_id: 103173
+name: Honolulu
+kind: settlement
+location: [-157.85722, 21.30472]
+wikidata_id: Q18094
+metadata:
+  sources: [Wikidata Q18094 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q18094
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q18094

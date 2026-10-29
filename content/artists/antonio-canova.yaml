@@ -7,6 +7,85 @@ death: 1822-10-13
 wikidata_id: Q5547
 metadata:
   sources: [Wikidata Q5547 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q5547
+  - type: born_in
+    to: place/possagno
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q5547
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q5547
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5547
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5547
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5547
+  - type: worked_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q5547
+  - type: studied_at
+    to: institution/accademia-di-belle-arti-di-venezia
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q5547
+  - type: member_of
+    to: institution/accademia-di-san-luca
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q5547
+  - type: associated_with
+    to: movement/neoclassicism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q5547
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6b/Antonio_Canova_Selfportrait_1792.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antonio_Canova_Selfportrait_1792.jpg
+    license: Public domain
+    credit: Antonio Canova
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Andrea_Appiani_%281754-1817%29_Ritratto_di_Antonio_Canova_%281802-1803%29.jpg/1280px-Andrea_Appiani_%281754-1817%29_Ritratto_di_Antonio_Canova_%281802-1803%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andrea_Appiani_(1754-1817)_Ritratto_di_Antonio_Canova_(1802-1803).jpg
+    license: Public domain
+    credit: Paolobon140
+identifiers:
+  bnf: "122039438"
+  gnd: "118518860"
+  idref: "027627926"
+  kulturnav: 76173733-34ea-4174-8b96-b6b41bbabfe3
+  lc: n79008257
+  rkd: "15139"
+  ulan: "500115339"
+  viaf: "36965536"
 sources:
   birth:
     - accessed: 2026-10-20

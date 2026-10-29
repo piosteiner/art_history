@@ -21,6 +21,7 @@ names:
   - lang: ru
     role: translation
     text: Галерея Академии (Венеция)
+kind: museum
 founded: 1750
 place: venice
 location: [12.32814, 45.43108]
@@ -39,6 +40,10 @@ identifiers:
   lc: n83215494
   viaf: "145358176"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q338330
   place:
     - accessed: 2026-10-20
       property: P131

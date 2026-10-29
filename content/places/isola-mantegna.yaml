@@ -1,0 +1,16 @@
+public_id: 103141
+name: Isola Mantegna
+kind: site
+location: [11.73245, 45.57044]
+wikidata_id: Q18498195
+metadata:
+  sources: [Wikidata Q18498195 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q18498195
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q18498195

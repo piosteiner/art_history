@@ -1,0 +1,16 @@
+public_id: 103282
+name: Constance
+kind: site
+location: [9.17528, 47.66333]
+wikidata_id: Q3834
+metadata:
+  sources: [Wikidata Q3834 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3834
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3834

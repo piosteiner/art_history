@@ -1,0 +1,16 @@
+public_id: 103294
+name: Clos Lucé
+kind: site
+location: [0.99204, 47.41024]
+wikidata_id: Q1122731
+metadata:
+  sources: [Wikidata Q1122731 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1122731
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1122731

@@ -1,0 +1,16 @@
+public_id: 102976
+name: Plymouth
+kind: settlement
+location: [-4.14222, 50.37139]
+wikidata_id: Q43382
+metadata:
+  sources: [Wikidata Q43382 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q43382
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q43382

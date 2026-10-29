@@ -7,9 +7,9 @@ names:
     role: translation
     text: Prussian Cultural Heritage Foundation
     status: official
-kind: Stiftung
+kind: foundation
 founded: 1957
-place: germany
+place: berlin
 location: [13.35517, 52.50671]
 description_md: Hat das Projekt [[source/galerie-das-20-jahrhunderts]] durchgeführt.
 website_url: https://www.preussischer-kulturbesitz.de/
@@ -21,7 +21,17 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Villa_von_der_Heydt_Berlin-Tiergarten.JPG
     license: CC BY-SA 3.0
     credit: Lienhard Schulz
+identifiers:
+  bnf: 11867508r
+  gnd: 35353-X
+  idref: "026425343"
+  lc: n80145342
+  viaf: "150237498"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q685171
   place:
     - accessed: 2026-10-09
       property: P131

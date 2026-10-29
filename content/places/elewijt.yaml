@@ -1,0 +1,16 @@
+public_id: 103239
+name: Elewijt
+kind: settlement
+location: [4.4969, 50.9603]
+wikidata_id: Q1990353
+metadata:
+  sources: [Wikidata Q1990353 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1990353
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1990353

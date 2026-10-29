@@ -7,8 +7,85 @@ death: 1875-01-20
 wikidata_id: Q148458
 metadata:
   sources: [Wikidata Q148458 (retrieved 2026-10-15)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q148458
+  - type: born_in
+    to: place/gruchy
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q148458
+  - type: died_in
+    to: place/barbizon
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q148458
+  - type: worked_in
+    to: place/barbizon
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q148458
+  - type: worked_in
+    to: place/cherbourg
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q148458
+  - type: worked_in
+    to: place/le-havre
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q148458
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q148458
+  - type: studied_at
+    to: institution/beaux-arts-de-paris
+    period: 1837-03-27/1839-05-18
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q148458
+  - type: member_of
+    to: movement/barbizon-school
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q148458
+  - type: associated_with
+    to: movement/french-realism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q148458
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Jean-FrancoisMillet%28Nadar%29.jpg/1280px-Jean-FrancoisMillet%28Nadar%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jean-FrancoisMillet(Nadar).jpg
+    license: Public domain
+    credit: Nadar
 identifiers:
+  bnf: 12450211c
+  dodis: P25768
   dome: "1340"
+  gnd: "118582550"
+  idref: "033657467"
+  kulturnav: 676098a5-19cd-44b8-a3a5-5f9a670030ec
+  lc: n50033212
+  nlk: KAC201620071
+  rkd: "132043"
+  ulan: "500012529"
+  viaf: "59179782"
 sources:
   birth:
     - accessed: 2026-10-15

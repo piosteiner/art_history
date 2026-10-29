@@ -2,6 +2,7 @@ public_id: 100102
 name: Alfred Sisley
 given_name: Alfred
 family_name: Sisley
+names: [Arthur Sisley]
 birth: 1839-10-30
 death: 1899-01-29
 wikidata_id: Q175130
@@ -21,6 +22,12 @@ relationships:
     sources:
       - accessed: 2026-10-12
         property: P27
+        wikidata: Q175130
+  - type: born_in
+    to: place/former-4th-arrondissement-of-paris
+    sources:
+      - accessed: 2026-10-28
+        property: P19
         wikidata: Q175130
   - type: born_in
     to: place/paris
@@ -63,6 +70,24 @@ relationships:
     sources:
       - accessed: 2026-10-12
         property: P937
+        wikidata: Q175130
+  - type: influenced_by
+    to: artist/gustave-courbet
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q175130
+  - type: influenced_by
+    to: artist/j-m-w-turner
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q175130
+  - type: influenced_by
+    to: artist/jean-baptiste-camille-corot
+    sources:
+      - accessed: 2026-10-28
+        property: P737
         wikidata: Q175130
   - type: student_of
     to: artist/charles-gleyre

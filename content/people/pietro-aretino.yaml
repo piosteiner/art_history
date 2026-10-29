@@ -1,5 +1,7 @@
 public_id: 101353
 name: Pietro Aretino
+given_name: Pietro
+family_name: Aretino
 names:
   - Piero Aretino
   - Pietro del Tura
@@ -25,7 +27,7 @@ kind: person
 occupations: [poet, playwright, journalist, writer, art historian, collector, art critic, satirist]
 birth: 1492-04-28/1492-04-29
 birth_label: c. April 1492
-death: 31 October 1556
+death: 1556-10-31
 wikidata_id: Q296272
 metadata:
   sources: [Wikidata Q296272 (retrieved 2026-10-19)]

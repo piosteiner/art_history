@@ -2,11 +2,87 @@ public_id: 101948
 name: Andrea del Verrocchio
 given_name: Andrea
 family_name: del Verrocchio
+names: [Andrea di Michele di Francesco Cioni Verrocchio, Andrea di Michele di Francesco Cioni]
 birth: c. 1435
 death: 1488-10-16
 wikidata_id: Q183458
 metadata:
   sources: [Wikidata Q183458 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-florence
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q183458
+  - type: born_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q183458
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q183458
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q183458
+  - type: worked_in
+    to: place/orvieto
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q183458
+  - type: worked_in
+    to: place/pistoia
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q183458
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q183458
+  - type: student_of
+    to: artist/donatello
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q183458
+  - type: associated_with
+    to: movement/italian-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q183458
+  - type: associated_with
+    to: movement/renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q183458
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8e/Andr%C3%A9_Verrochio.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andr%C3%A9_Verrochio.jpg
+    license: Public domain
+    credit: Nicolas de Larmessin
+identifiers:
+  bnf: "122401733"
+  gnd: "118768158"
+  idref: "031125476"
+  kulturnav: b42f1ca6-6310-4f26-a7dc-01fed93859ef
+  lc: n79063980
+  rkd: "80608"
+  ulan: "500003951"
+  viaf: "22937274"
 sources:
   birth:
     - accessed: 2026-10-20

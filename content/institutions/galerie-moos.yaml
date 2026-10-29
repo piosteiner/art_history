@@ -1,2 +1,38 @@
 public_id: 100431
 name: Galerie Moos
+kind: gallery
+founded: 1906
+place: geneva
+location: [6.1469, 46.20353]
+address: 13, rue du Marché 1204 Geneve
+wikidata_id: Q30332121
+metadata:
+  sources: [Wikidata Q30332121 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/7e/Galerie_moos_genf_gr.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Galerie_moos_genf_gr.jpg
+    license: Public domain
+    credit: M. Moos
+identifiers:
+  gnd: 16025840-6
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q30332121
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q30332121
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q30332121
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q30332121
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q30332121

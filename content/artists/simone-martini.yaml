@@ -2,11 +2,60 @@ public_id: 101959
 name: Simone Martini
 given_name: Simone
 family_name: Martini
+names: [Simone Memmi of Sienna]
 birth: 1284
 death: 1344-08-09
 wikidata_id: Q221043
 metadata:
   sources: [Wikidata Q221043 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/siena
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q221043
+  - type: died_in
+    to: place/avignon
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q221043
+  - type: student_of
+    to: artist/giotto
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q7814
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q221043
+  - type: associated_with
+    to: movement/international-gothic
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q221043
+  - type: associated_with
+    to: movement/sienese-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q221043
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Delle_vite_de%27_pi%C3%B9_eccellenti_pittori%2C_scultori%2C_et_architetti_%281648%29_%2814779198742%29.jpg/1280px-Delle_vite_de%27_pi%C3%B9_eccellenti_pittori%2C_scultori%2C_et_architetti_%281648%29_%2814779198742%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Delle_vite_de%27_pi%C3%B9_eccellenti_pittori,_scultori,_et_architetti_(1648)_(14779198742).jpg
+    license: Public domain
+    credit: Giorgio Vasari
+identifiers:
+  bnf: 12157227x
+  gnd: "118731394"
+  idref: "030084903"
+  kulturnav: a4324346-5b5f-4a0e-8879-4d97d823e6af
+  lc: n50066929
+  rkd: "53008"
+  ulan: "500399029"
+  viaf: "101100651"
 sources:
   birth:
     - accessed: 2026-10-20

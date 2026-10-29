@@ -1,0 +1,30 @@
+public_id: 103319
+name: Maurice Joyant
+given_name: Maurice
+family_name: Joyant
+kind: person
+birth: 1864-08-16
+death: 1930-11-06
+wikidata_id: Q52150368
+metadata:
+  sources: [Wikidata Q52150368 (retrieved 2026-10-28)]
+relationships:
+  - type: founded
+    to: institution/galerie-manzi-joyant
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q131618060
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q52150368
+  birth:
+    - accessed: 2026-10-28
+      property: P569
+      wikidata: Q52150368
+  death:
+    - accessed: 2026-10-28
+      property: P570
+      wikidata: Q52150368

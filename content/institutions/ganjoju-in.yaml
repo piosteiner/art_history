@@ -1,0 +1,40 @@
+public_id: 103061
+name: Ganjōju-in Temple
+names:
+  - Ganjōju-in
+  - lang: ja
+    role: translation
+    text: 願成就院
+kind: temple
+founded: 1189
+place: izunokuni
+location: [138.9399, 35.04568]
+address: 〒410-2122   静岡県伊豆の国市寺家83-1
+website_url: https://ganjoujuin.jp
+wikidata_id: Q11665155
+metadata:
+  sources: [Wikidata Q11665155 (retrieved 2026-10-28)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/6b/Ganjoujuin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ganjoujuin.jpg
+    license: CC BY-SA 3.0
+    credit: Fuyu at Japanese Wikipedia
+identifiers:
+  viaf: "255513374"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q11665155
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q11665155
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q11665155
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q11665155

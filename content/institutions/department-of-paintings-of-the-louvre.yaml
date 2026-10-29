@@ -1,8 +1,35 @@
 public_id: 101684
 name: Department of Paintings of the Louvre
+names:
+  - Louvre paintings department
+  - lang: de
+    role: translation
+    text: Gemäldeabteilung des Louvre
+kind: department
+place: paris
+location: [2.33583, 48.86111]
 wikidata_id: Q3044768
 metadata:
   sources: [Wikidata Q3044768 (retrieved 2026-10-20)]
 relationships:
   - type: part_of
     to: institution/musee-du-louvre
+    sources:
+      - accessed: 2026-10-28
+        property: P361
+        wikidata: Q3044768
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Two_children%2C_Musee_du_Louvre%2C_Paris_2014.jpg/1280px-Two_children%2C_Musee_du_Louvre%2C_Paris_2014.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Two_children,_Musee_du_Louvre,_Paris_2014.jpg
+    license: CC BY 2.0
+    credit: Dustin Gaffke
+identifiers:
+  bnf: 11865022f
+  idref: "026394707"
+  lc: n50055283
+  viaf: "122659936"
+sources:
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q3044768

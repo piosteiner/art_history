@@ -1,0 +1,16 @@
+public_id: 103037
+name: Rimini
+kind: settlement
+location: [12.56833, 44.05944]
+wikidata_id: Q13369
+metadata:
+  sources: [Wikidata Q13369 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q13369
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q13369

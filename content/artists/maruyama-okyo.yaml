@@ -1,10 +1,41 @@
 public_id: 100060
 name: Maruyama Ōkyo
+given_name: Ōkyo
+family_name: Maruyama
+names:
+  - lang: ja
+    role: original
+    text: 円山応挙
 birth: 1733-06-12
-death: 31 August 1795
+death: 1795-08-31
 wikidata_id: Q405444
 metadata:
   sources: [Wikidata Q405444 (retrieved 2026-10-05)]
+relationships:
+  - type: died_in
+    to: place/kyoto
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q405444
+  - type: associated_with
+    to: movement/maruyama-school
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q405444
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/dc/%E5%86%86%E5%B1%B1%E5%BF%9C%E6%8C%99_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E5%86%86%E5%B1%B1%E5%BF%9C%E6%8C%99_%E8%BF%91%E4%B8%96%E5%90%8D%E5%AE%B6%E8%82%96%E5%83%8F.jpg
+    license: Public domain
+    credit: 谷文晁
+identifiers:
+  bnf: 14913266p
+  gnd: "132597039"
+  idref: "112672515"
+  lc: n81102985
+  ulan: "500121290"
+  viaf: "23304761"
 sources:
   birth:
     - accessed: 2026-10-05

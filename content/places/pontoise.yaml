@@ -1,0 +1,16 @@
+public_id: 102924
+name: Pontoise
+kind: settlement
+location: [2.10083, 49.05083]
+wikidata_id: Q201352
+metadata:
+  sources: [Wikidata Q201352 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q201352
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q201352

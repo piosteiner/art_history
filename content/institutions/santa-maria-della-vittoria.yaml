@@ -1,11 +1,42 @@
 public_id: 102152
 name: Santa Maria della Vittoria
+kind: church
 founded: 1620
+place: rome
+location: [12.49434, 41.90466]
+address: Via XX Settembre, 17, 00187, Roma
+website_url: https://www.carmelitanicentroitalia.it/dove-siamo/conventi-della-provincia/s-maria-della-vittoria-roma/
 wikidata_id: Q863593
 metadata:
   sources: [Wikidata Q863593 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Santa_Maria_della_Vittoria_in_Rome_-_Front.jpg/1280px-Santa_Maria_della_Vittoria_in_Rome_-_Front.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Santa_Maria_della_Vittoria_in_Rome_-_Front.jpg
+    license: CC BY-SA 4.0
+    credit: Architas
+identifiers:
+  gnd: 4505884-2
+  idref: "235321303"
+  lc: no2001080501
+  viaf: "138705223"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q863593
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q863593
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q863593
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q863593
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q863593

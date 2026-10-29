@@ -1,0 +1,27 @@
+public_id: 103234
+name: École nationale supérieure des arts décoratifs
+names: [Ecole Nationale Supérieure des Arts Décoratifs]
+kind: school
+founded: 1877
+place: paris
+website_url: http://www.ensad.fr
+wikidata_id: Q1135990
+metadata:
+  sources: [Wikidata Q1135990 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Facade_5_rue_de_lecole_de_medecine_paris.jpg/1280px-Facade_5_rue_de_lecole_de_medecine_paris.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Facade_5_rue_de_lecole_de_medecine_paris.jpg
+    license: CC BY-SA 3.0
+    credit: NonOmnisMoriar
+identifiers:
+  bnf: 11863487n
+  gnd: 801217-9
+  idref: "026375214"
+  lc: n79030305
+  ulan: "500264307"
+  viaf: "169537658"
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q1135990

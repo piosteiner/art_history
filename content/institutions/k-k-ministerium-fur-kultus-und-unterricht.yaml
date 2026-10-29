@@ -1,7 +1,9 @@
 public_id: 101502
 name: K.k. Ministerium für Kultus und Unterricht
+kind: ministry
 founded: 1867
 dissolved: 1918
+place: vienna
 wikidata_id: Q117337577
 metadata:
   sources: [Wikidata Q117337577 (retrieved 2026-10-19)]
@@ -11,6 +13,14 @@ identifiers:
   lc: n81139268
   viaf: "129591283"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q117337577
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q117337577
   founded:
     - accessed: 2026-10-19
       property: P571

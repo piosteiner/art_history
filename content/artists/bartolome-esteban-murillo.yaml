@@ -7,6 +7,61 @@ death: 1682-04-03
 wikidata_id: Q192062
 metadata:
   sources: [Wikidata Q192062 (retrieved 2026-10-20)]
+relationships:
+  - type: born_in
+    to: place/seville
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q192062
+  - type: worked_in
+    to: place/cadiz
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q192062
+  - type: worked_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q192062
+  - type: worked_in
+    to: place/seville
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q192062
+  - type: influenced_by
+    to: artist/diego-velazquez
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q192062
+  - type: associated_with
+    to: movement/baroque-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q192062
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b4/Murillo_Self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Murillo_Self-portrait.jpg
+    license: Public domain
+    credit: Bartolomé Esteban Murillo
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Autorretrato_de_Murillo.jpg/1280px-Autorretrato_de_Murillo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Autorretrato_de_Murillo.jpg
+    license: Public domain
+    credit: Bartolomé Esteban Murillo
+identifiers:
+  bnf: 14952935x
+  gnd: 11858586X
+  idref: "027295184"
+  kulturnav: ef92104d-ecb3-4af3-b139-8e06a4b7fd2e
+  lc: n81068073
+  rkd: "58546"
+  ulan: "500007425"
+  viaf: "76584455"
 sources:
   birth:
     - accessed: 2026-10-20

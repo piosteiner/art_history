@@ -15,6 +15,7 @@ names:
   - lang: ru
     role: translation
     text: Музей в Люксембургском саду
+kind: museum
 founded: 1750
 place: paris
 location: [2.33403, 48.84861]

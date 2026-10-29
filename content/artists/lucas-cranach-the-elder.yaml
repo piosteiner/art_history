@@ -7,6 +7,88 @@ death: 1553-10-26
 wikidata_id: Q191748
 metadata:
   sources: [Wikidata Q191748 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q191748
+  - type: nationality
+    to: polity/holy-roman-empire
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q191748
+  - type: born_in
+    to: place/kronach
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q191748
+  - type: died_in
+    to: place/weimar
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q191748
+  - type: lived_in
+    to: place/cranachhaus
+    period: 1552/1553
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q191748
+  - type: worked_in
+    to: place/weimar
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q191748
+  - type: worked_in
+    to: place/wolfenbuttel
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q191748
+  - type: worked_in
+    to: place/vienna
+    period: 1501/1504
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q191748
+  - type: worked_in
+    to: place/lutherstadt-wittenberg
+    period: 1505
+    period_label: from 1505
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q191748
+  - type: associated_with
+    to: movement/german-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q191748
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Lucas_Cranach_d._%C3%84._063.jpg/1280px-Lucas_Cranach_d._%C3%84._063.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lucas_Cranach_d._%C3%84._063.jpg
+    license: Public domain
+    credit: Lucas Cranach the Younger
+identifiers:
+  bnf: 12176451h
+  dodis: P1543
+  dome: "3795"
+  gnd: "118522582"
+  idref: "028710010"
+  kulturnav: 7beec69e-af4a-47f6-aa43-d80bc456e2af
+  lc: n50020861
+  nlk: KAC201523250
+  rkd: "18978"
+  ulan: "500115364"
+  viaf: "49268177"
 sources:
   birth:
     - accessed: 2026-10-20

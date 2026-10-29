@@ -1,0 +1,38 @@
+public_id: 102759
+title_lang: ja
+title: Madaraneko
+names:
+  - lang: en
+    role: alternative
+    text: Tabby Cat
+  - lang: ja
+    role: translation
+    text: 班猫
+creator: takeuchi-seiho
+created: 1924
+institution: yamatane-museum-of-art
+web_url: https://www.yamatane-museum.jp/_assets/img/collection_04.webp
+wikidata_id: Q109365291
+metadata:
+  sources: [Wikidata Q109365291 (retrieved 2026-10-28)]
+relationships:
+  - type: associated_with
+    to: movement/nihonga
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Madaraneko_by_Takeuchi_Seiho.jpg/1280px-Madaraneko_by_Takeuchi_Seiho.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Madaraneko_by_Takeuchi_Seiho.jpg
+    license: Public domain
+    credit: Takeuchi Seihō
+sources:
+  created:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q109365291
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q109365291
+  institution:
+    - accessed: 2026-10-28
+      property: P195
+      wikidata: Q109365291

@@ -1,0 +1,11 @@
+public_id: 103108
+name: Troubadour style
+kind: movement
+wikidata_id: Q3501307
+metadata:
+  sources: [Wikidata Q3501307 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q3501307

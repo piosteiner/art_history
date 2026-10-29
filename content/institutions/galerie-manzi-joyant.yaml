@@ -1,4 +1,8 @@
 public_id: 101075
 name: Galerie Manzi-Joyant
+names: ["Manzi, Joyant & Co."]
+kind: gallery
+place: paris
+wikidata_id: Q131618060
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q131618060 (retrieved 2026-10-28)]

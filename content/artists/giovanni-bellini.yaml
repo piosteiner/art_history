@@ -7,6 +7,63 @@ death: 1516-12-09
 wikidata_id: Q17169
 metadata:
   sources: [Wikidata Q17169 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-venice
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q17169
+  - type: born_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q17169
+  - type: died_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q17169
+  - type: worked_in
+    to: place/padua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q17169
+  - type: worked_in
+    to: place/pesaro
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q17169
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q17169
+  - type: associated_with
+    to: movement/renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q17169
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Portr%C3%A6t_af_den_venezianske_maler_Giovanni_Bellini.jpg/1280px-Portr%C3%A6t_af_den_venezianske_maler_Giovanni_Bellini.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Portr%C3%A6t_af_den_venezianske_maler_Giovanni_Bellini.jpg
+    license: Public domain
+    credit: Titian
+identifiers:
+  bnf: 12130512m
+  gnd: "118508679"
+  idref: "029747732"
+  kulturnav: c446f86f-afa5-4e8d-ae5c-32c5ffd97b04
+  lc: n50007140
+  rkd: "6267"
+  ulan: "500019244"
+  viaf: "100161245"
 sources:
   birth:
     - accessed: 2026-10-20

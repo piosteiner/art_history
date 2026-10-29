@@ -132,7 +132,7 @@ provenance:
   - owner: person/gustav-rochlitz
     role: possessor
     acquired: 1942-03-10
-    ended: 31 July 1945
+    ended: 1945-07-31
     method: exchange
     direct: true
     label: exchanged by Göring for a Florentine tondo (inv. R 1529)
@@ -149,7 +149,7 @@ provenance:
   - owner: person/thomas-carr-howe
     co_owners: [person/lamont-moore]
     role: custodian
-    acquired: 31 July 1945
+    acquired: 1945-07-31
     ended: 1945-09-04
     method: confiscation
     direct: true

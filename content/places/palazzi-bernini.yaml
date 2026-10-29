@@ -1,0 +1,16 @@
+public_id: 102913
+name: Palazzi Bernini
+kind: building
+location: [12.48297, 41.90367]
+wikidata_id: Q56695227
+metadata:
+  sources: [Wikidata Q56695227 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q56695227
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q56695227

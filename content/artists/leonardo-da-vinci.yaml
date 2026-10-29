@@ -7,6 +7,126 @@ death: 1519-05-12
 wikidata_id: Q762
 metadata:
   sources: [Wikidata Q762 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/republic-of-florence
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q762
+  - type: born_in
+    to: place/anchiano
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q762
+  - type: died_in
+    to: place/clos-luce
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q762
+  - type: lived_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q762
+  - type: lived_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q762
+  - type: lived_in
+    to: place/florence
+    period: 1469/1482
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q762
+  - type: lived_in
+    to: place/milan
+    period: 1482/1500
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q762
+  - type: worked_in
+    to: place/amboise
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q762
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q762
+  - type: worked_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q762
+  - type: worked_in
+    to: place/milan
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q762
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q762
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q762
+  - type: student_of
+    to: artist/andrea-del-verrocchio
+    period: 1470/1477
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q183458
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q762
+  - type: associated_with
+    to: movement/high-renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q762
+  - type: associated_with
+    to: movement/renaissance
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q762
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Francesco_Melzi_-_Portrait_of_Leonardo.png/1280px-Francesco_Melzi_-_Portrait_of_Leonardo.png
+    source_url: https://commons.wikimedia.org/wiki/File:Francesco_Melzi_-_Portrait_of_Leonardo.png
+    license: Public domain
+    credit: Attributed to Francesco Melzi
+identifiers:
+  bnf: 11912491s
+  dodis: P46878
+  gnd: "118640445"
+  hls: "048803"
+  idref: "085975915"
+  kulturnav: ba0098eb-25b5-4c6a-8af7-2d7d884bf1fc
+  lc: n79034525
+  nlk: KAC199616385
+  rkd: "49450"
+  ulan: "500010879"
+  viaf: "24604287"
 sources:
   birth:
     - accessed: 2026-10-20

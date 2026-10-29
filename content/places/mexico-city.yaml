@@ -1,0 +1,16 @@
+public_id: 103150
+name: Mexico City
+kind: settlement
+location: [-99.13589, 19.35377]
+wikidata_id: Q1489
+metadata:
+  sources: [Wikidata Q1489 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1489
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1489

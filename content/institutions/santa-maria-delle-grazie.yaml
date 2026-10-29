@@ -1,11 +1,42 @@
 public_id: 102137
 name: Santa Maria delle Grazie
+kind: basilica
 founded: 1401/1500
+place: milan
+location: [9.17111, 45.46583]
+address: Piazza Santa Maria delle Grazie
+website_url: https://legraziemilano.it/
 wikidata_id: Q244952
 metadata:
   sources: [Wikidata Q244952 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/3048_-_Milano_-_S._Maria_delle_Grazie_-_Facciata_-_Foto_Giovanni_Dall%27Orto_-_6-Mar-2008.jpg/1280px-3048_-_Milano_-_S._Maria_delle_Grazie_-_Facciata_-_Foto_Giovanni_Dall%27Orto_-_6-Mar-2008.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:3048_-_Milano_-_S._Maria_delle_Grazie_-_Facciata_-_Foto_Giovanni_Dall%27Orto_-_6-Mar-2008.jpg
+    license: Attribution
+    credit: Giovanni Dall'Orto
+identifiers:
+  gnd: 4480089-7
+  idref: "122211022"
+  lc: n83312978
+  viaf: "307288822"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q244952
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q244952
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q244952
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q244952
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q244952

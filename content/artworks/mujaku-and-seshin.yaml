@@ -1,0 +1,36 @@
+public_id: 103072
+title: Mujaku and Seshin
+names:
+  - lang: ja
+    role: original
+    text: "{無著・世親像|むじゃく・せしんぞう}"
+  - lang: en
+    role: alternative
+    text: Statues of Mujaku and Seshin at Kofukuji
+parts_count: 2
+creator: unkei
+attribution_label: Unkei, as head of the workshop
+created: 1212
+kind: pair
+institution: kofuku-ji
+description_md: The standing statues of the Indian monks Mujaku (Asanga) and Seshin (Vasubandhu), completed in 1212 for the rebuilt Northern Round Hall (Hokuendō) of Kōfuku-ji[[source/tnm-unkei-exhibition-2017|“in 1212 (Kenryaku 2), he completed standing images of Mujaku Bosatsu and Seshin Bosatsu (No. 20) for the restored Northern Round Hall of Kohfukuji”]], each about six feet high, among the figures of the hall made from 1208 by Unkei with his six sons and his senior pupils[[source/kobayashi-1954-unkei|“In Dec. 1208, the erection of the statues of Hokuen-do, North Round Hall, of Kofuku-ji Temple, was commenced, in which he was enganged with his six sons” · “two standing statues of Mujaku and Seshin (each 6 feet high)”]]. Kobayashi saw Unkei here as the master in charge, without carving of his own[[source/kobayashi-1954-unkei|“Here we must notice that at this big construction work, he was the superintendant, and had no sculptural work of his own”]].
+wikidata_id: Q107046118
+metadata:
+  sources: [Wikidata Q107046118 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/91/Kofukuji_Monastery_Hosso_Patriarchs_of_Hokuendo_%28411%29.jpg/1280px-Kofukuji_Monastery_Hosso_Patriarchs_of_Hokuendo_%28411%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kofukuji_Monastery_Hosso_Patriarchs_of_Hokuendo_(411).jpg
+    license: Public domain
+    credit: Imperial Japanese Commission to the Panama-Pacific International Exposition
+sources:
+  names:
+    - accessed: 2026-10-28
+      wikidata: Q107046118
+  created:
+    - note: “in 1212 (Kenryaku 2), he completed standing images of Mujaku Bosatsu and Seshin Bosatsu (No. 20) for the restored Northern Round Hall of Kohfukuji”
+      source: tnm-unkei-exhibition-2017
+      accessed: 2026-10-28
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q107046118

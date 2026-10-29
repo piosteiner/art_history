@@ -1,0 +1,16 @@
+public_id: 102926
+name: Zagarolo
+kind: settlement
+location: [12.83333, 41.83333]
+wikidata_id: Q140255
+metadata:
+  sources: [Wikidata Q140255 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q140255
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q140255

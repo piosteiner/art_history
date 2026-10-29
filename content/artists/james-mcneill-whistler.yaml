@@ -2,11 +2,100 @@ public_id: 101842
 name: James McNeill Whistler
 given_name: James McNeill
 family_name: Whistler
+names: [James Abbot M'Neill Whistler]
 birth: 1834-07-10
 death: 1903-07-17
 wikidata_id: Q203643
 metadata:
   sources: [Wikidata Q203643 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q203643
+  - type: born_in
+    to: place/lowell
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q203643
+  - type: died_in
+    to: place/chelsea
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q203643
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q203643
+  - type: worked_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q203643
+  - type: student_of
+    to: artist/charles-gleyre
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q452119
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q203643
+  - type: studied_at
+    to: institution/imperial-academy-of-arts
+    sources:
+      - accessed: 2026-10-28
+        property: P69
+        wikidata: Q203643
+  - type: member_of
+    to: institution/royal-society-of-british-artists
+    period: 1885/1888
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q203643
+  - type: member_of
+    to: institution/international-society-of-sculptors-painters-and-gravers
+    period: 1898
+    period_label: from 1898
+    sources:
+      - accessed: 2026-10-28
+        property: P463
+        wikidata: Q203643
+  - type: associated_with
+    to: movement/aestheticism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q203643
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q203643
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/James_A._McNeill_Whistler%2C_half-length_portrait_LCCN2002736830_%28detail%29.jpg/1280px-James_A._McNeill_Whistler%2C_half-length_portrait_LCCN2002736830_%28detail%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:James_A._McNeill_Whistler,_half-length_portrait_LCCN2002736830_(detail).jpg
+    license: Public domain
+    credit: Miscellaneous Items in High Demand, PPOC, Library of Congress
+identifiers:
+  bnf: "121810413"
+  dome: "421"
+  gnd: "118632124"
+  idref: "027448509"
+  kulturnav: ea1881a2-0644-46c2-aa67-f6ea0650e7ad
+  lc: n79032293
+  rkd: "84027"
+  ulan: "500012432"
+  viaf: "46804212"
 sources:
   birth:
     - accessed: 2026-10-20

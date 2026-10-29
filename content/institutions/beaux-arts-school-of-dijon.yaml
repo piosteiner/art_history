@@ -1,0 +1,34 @@
+public_id: 103251
+name: Beaux-Arts School of Dijon
+names:
+  - lang: fr
+    role: alternative
+    text: École nationale supérieure d'art de Dijon
+kind: art academy
+founded: 1765
+place: dijon
+location: [5.03536, 47.32126]
+website_url: http://www.ensa-dijon.fr
+wikidata_id: Q15940576
+metadata:
+  sources: [Wikidata Q15940576 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e5/Palais_abbatial_Saint_Benigne_02.jpg/1280px-Palais_abbatial_Saint_Benigne_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Palais_abbatial_Saint_Benigne_02.jpg
+    license: CC BY-SA 4.0
+    credit: François de Dijon
+identifiers:
+  bnf: 11994907k
+  gnd: 2149252-9
+  idref: "028031873"
+  lc: no2014154260
+  viaf: "169296329"
+sources:
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q15940576
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q15940576

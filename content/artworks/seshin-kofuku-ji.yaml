@@ -1,0 +1,35 @@
+public_id: 103074
+title: Seshin (Vasubandhu)
+names:
+  - lang: ja
+    role: original
+    text: "{木造世親菩薩立像|もくぞうせしんぼさつりゅうぞう}"
+  - lang: en
+    role: alternative
+    text: Statue of Seshin
+parent: mujaku-and-seshin
+part_number: "2"
+creator: unkei
+kind: statue
+materials: [wood]
+institution: kofuku-ji
+wikidata_id: Q123197867
+metadata:
+  sources: [Wikidata Q123197867 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Seshin_%28Unkei%29_Hokuendo_Kofukuji.jpg/1280px-Seshin_%28Unkei%29_Hokuendo_Kofukuji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Seshin_(Unkei)_Hokuendo_Kofukuji.jpg
+    license: Public domain
+    credit: Nara National Museum 奈良帝室博物館 (Showa 8 - 1933)
+sources:
+  names:
+    - accessed: 2026-10-28
+      wikidata: Q123197867
+  creator:
+    - accessed: 2026-10-28
+      property: P170
+      wikidata: Q123197867
+  materials:
+    - accessed: 2026-10-28
+      property: P186
+      wikidata: Q123197867

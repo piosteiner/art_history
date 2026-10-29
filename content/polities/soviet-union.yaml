@@ -1,0 +1,16 @@
+public_id: 102992
+name: Soviet Union
+period: 1922-12-30/1991-12-26
+country_codes: [SU]
+wikidata_id: Q15180
+metadata:
+  sources: [Wikidata Q15180 (retrieved 2026-10-28)]
+sources:
+  period:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q15180
+  country_codes:
+    - accessed: 2026-10-28
+      property: P297
+      wikidata: Q15180

@@ -1,0 +1,35 @@
+public_id: 103060
+name: Izunokuni
+names:
+  - lang: ja
+    role: original
+    text: 伊豆の国市
+  - lang: zh
+    role: translation
+    text: 伊豆之國市
+  - lang: ko
+    role: translation
+    text: 이즈노쿠니시
+  - lang: ru
+    role: translation
+    text: Идзунокуни
+kind: settlement
+parent: japan
+country_code: JP
+location: [138.92886, 35.02772]
+wikidata_id: Q863758
+metadata:
+  sources: [Wikidata Q863758 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q863758
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q863758
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q863758

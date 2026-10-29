@@ -1,0 +1,52 @@
+public_id: 103144
+name: Musée Rodin
+names:
+  - Rodin Museum
+  - Musee Rodin
+  - lang: es
+    role: translation
+    text: Museo Rodin
+  - lang: ja
+    role: translation
+    text: ロダン美術館
+  - lang: zh
+    role: translation
+    text: 羅丹美術館
+  - lang: ko
+    role: translation
+    text: 로댕 미술관
+  - lang: ru
+    role: translation
+    text: Музей Родена
+kind: museum
+founded: 1916
+place: paris
+location: [2.31582, 48.85536]
+website_url: https://www.musee-rodin.fr
+wikidata_id: Q650519
+metadata:
+  sources: [Wikidata Q650519 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/L%27h%C3%B4tel_Biron_%28mus%C3%A9e_Rodin%29_%C3%A0_Paris%2C_13_juin_2021_01.jpg/1280px-L%27h%C3%B4tel_Biron_%28mus%C3%A9e_Rodin%29_%C3%A0_Paris%2C_13_juin_2021_01.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:L%27h%C3%B4tel_Biron_(mus%C3%A9e_Rodin)_%C3%A0_Paris,_13_juin_2021_01.jpg
+    license: CC BY 2.0
+    credit: Jean-Pierre Dalbéra
+identifiers:
+  bnf: 11877609k
+  gnd: 1017938-0
+  idref: "026549468"
+  lc: n50054666
+  viaf: "142651463"
+sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q650519
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q650519
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q650519

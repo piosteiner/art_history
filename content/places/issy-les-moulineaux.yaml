@@ -1,0 +1,16 @@
+public_id: 103203
+name: Issy-les-Moulineaux
+kind: settlement
+location: [2.26917, 48.82306]
+wikidata_id: Q135265
+metadata:
+  sources: [Wikidata Q135265 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q135265
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q135265

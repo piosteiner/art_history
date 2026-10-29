@@ -5,6 +5,7 @@ names:
   - lang: de
     role: alternative
     text: Altes Museum, Berlin
+kind: museum
 founded: 1830
 place: berlin
 location: [13.39889, 52.51944]
@@ -32,6 +33,10 @@ identifiers:
   ulan: "500221102"
   viaf: "123944052"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q156722
   place:
     - accessed: 2026-10-27
       property: P131

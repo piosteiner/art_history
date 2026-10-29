@@ -20,6 +20,8 @@ names:
   - lang: ru
     role: translation
     text: Посольство Франции в Ватикане
+kind: embassy
+place: rome
 address: Via Piave, 23
 website_url: https://va.diplomatie.gouv.fr/
 wikidata_id: Q2841796
@@ -43,6 +45,14 @@ identifiers:
   gnd: 4826210-9
   viaf: "1488145857086822921903"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q2841796
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q2841796
   address:
     - accessed: 2026-10-27
       property: P6375

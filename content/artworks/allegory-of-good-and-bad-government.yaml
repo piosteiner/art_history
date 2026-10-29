@@ -27,11 +27,38 @@ names:
     text: 好政府与坏政府的寓言
 creator: ambrogio-lorenzetti
 created: 1338-02/1339-05
-created_label: c. 1337
-created_span: uncertain
+created_span: duration
+kind: fresco
 dimensions: [200, 770]
+dimensions_note: Masse nach Wikidata; 770 cm entsprechen der Breite der Schmalwand, der ganze Saal misst etwa 7,7 × 14,4 m
 institution: palazzo-pubblico
 location: [11.33194, 43.31801]
+description_md: |-
+  Ambrogio Lorenzetti malte die Fresken für die Sala dei Nove, auch Sala della Pace, im [[institution/palazzo-pubblico|Palazzo Pubblico]] von Siena, den Saal des Governo dei Nove, der die Stadt regierte; Dokumente belegen seine Arbeit vom Februar 1338 bis zum Mai 1339.[[source/wikipedia-it-buon-governo]] Die Neun, eine der wichtigsten Magistraturen der Republik, waren von 1287 bis 1355 im Amt.[[source/finestre-sull-arte-2022-buongoverno]]
+
+  ## Ein Werk auf drei Wänden
+
+  Die Malereien bedecken drei Wände des etwa 7,7 × 14,4 Meter großen Saals; die vierte hat das einzige Fenster.[[source/wikipedia-en-allegory-of-good-and-bad-government]] Gegenüber dem Fenster, auf der Schmalwand, steht die Allegorie des Guten Regiments. Die Längswand rechts davon zeigt die Wirkungen des Guten Regiments in Stadt und Land als ein einziges, durchgehendes Bild; die gegenüberliegende Längswand Allegorie und Wirkungen des Schlechten Regiments.[[source/wikipedia-it-buon-governo]] Unter der Allegorie steht die unvollständige Signatur «Ambrosius Laurentii de Senis hic pinxit utrinque …», die vielleicht einmal auch das Jahr nannte.[[source/wikipedia-it-buon-governo]] Die heutigen Titel der einzelnen Teile sind moderne Bezeichnungen.[[source/wikipedia-en-allegory-of-good-and-bad-government]]
+
+  ## Die Allegorie des Guten Regiments
+
+  In der Mitte thront der Comune von Siena, mit der Wölfin und den Zwillingen zu seinen Füßen, umgeben von Pax, Magnanimitas und den Kardinaltugenden, über ihm die theologischen Tugenden. Links sitzt Iustitia unter der göttlichen Sapientia; unter ihr hält Concordia einen Hobel und reicht das Seil der Gerechtigkeit an 24 Bürger weiter.[[source/wikipedia-it-buon-governo]]
+
+  ## Die Wirkungen in Stadt und Land
+
+  In der Stadt arbeiten Läden und Bauleute, es gibt eine Schule, einen Tanz und eine Hochzeit; auf dem Land Feldarbeit, Jagd, Reisende und Handel. Darüber schwebt Securitas mit einem Gehenkten und einem Spruchband.[[source/wikipedia-it-buon-governo]]
+
+  ## Das Schlechte Regiment
+
+  Gegenüber thront die Tyrannei, über ihr schweben Avaritia, Superbia und Vanagloria, neben ihr sitzen Grausamkeit, Verrat, Betrug, Raserei, Zwietracht und Krieg; Iustitia liegt gefesselt am Boden, die Waagschalen umgestürzt. Die Stadt verfällt, es wird gemordet und Unschuldige werden verhaftet; auf dem Land ziehen Heere und brennen Höfe, darüber schwebt Timor.[[source/wikipedia-it-buon-governo]] Gerade dieser Teil ist in der unteren Zone am stärksten beschädigt.[[source/wikipedia-it-buon-governo]]
+
+  ## Zustand und Restaurierungen
+
+  Die ursprüngliche Ausstattung des Saals ist verloren, die Zugänge sind verändert; die Fresken haben Fehlstellen und oft unglückliche Ergänzungen. Schon im 14. Jahrhundert wurde der linke Rand der Stadtansicht neu gemalt, im 15. Jahrhundert der rechte Rand der Landschaft, wo die Inschrift «Talamone» hinzukam. Die letzte große Restaurierung fand Ende der 1980er Jahre statt.[[source/wikipedia-it-buon-governo]] 2022 begann eine neue Untersuchung und Konservierung durch die Stadt Siena mit der Universität Siena, dem Istituto di Fisica Applicata «Nello Carrara» des CNR und der Soprintendenza; Besucher können sie mit den Restauratoren vom Gerüst aus verfolgen.[[source/finestre-sull-arte-2022-buongoverno]]
+
+  ## Deutung
+
+  Was das Programm bedeutet, ist seit Jahrzehnten umstritten. Nicolai Rubinstein las es als Bild des Gemeinwohls, dem sich der Eigennutz unterordnet.[[source/rubinstein-1958]] Quentin Skinner widersprach: Die Bildsprache stamme aus vorhumanistischen Texten der italienischen Stadtrepubliken, und der thronende Alte verkörpere nicht das Gemeinwohl, sondern die Signoria der Kommune, die ihr eigener höchster Richter ist.[[source/skinner-1986]]
 wikidata_id: Q2401235
 metadata:
   sources: [Wikidata Q2401235 (retrieved 2026-10-20)]
@@ -40,6 +67,27 @@ images:
     source_url: https://commons.wikimedia.org/wiki/File:Sala_amb_frescos_d%27Ambrogio_Lorenzetti,_Palazzo_Pubblico_de_Siena.JPG
     license: CC BY-SA 3.0
     credit: Joanbanjo
+    caption: Die Sala dei Nove im Palazzo Pubblico mit Lorenzettis Fresken
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Ambrogio_Lorenzetti_-_Allegory_of_Good_Government_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ambrogio_Lorenzetti_-_Allegory_of_Good_Government_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Ambrogio Lorenzetti (Google Art Project)
+    caption: Allegorie des Guten Regiments, Schmalwand gegenüber dem Fenster
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/11/Ambrogio_Lorenzetti_-_Effects_of_Good_Government_in_the_city_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ambrogio_Lorenzetti_-_Effects_of_Good_Government_in_the_city_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Ambrogio Lorenzetti (Google Art Project)
+    caption: Wirkungen des Guten Regiments in der Stadt
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Ambrogio_Lorenzetti_-_Effects_of_Good_Government_in_the_countryside_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ambrogio_Lorenzetti_-_Effects_of_Good_Government_in_the_countryside_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Ambrogio Lorenzetti (Google Art Project)
+    caption: Wirkungen des Guten Regiments auf dem Land, mit Securitas
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5a/Allegory_of_the_Bad_Government_-_Palazzo_Pubblico_-_Siena_2016.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Allegory_of_the_Bad_Government_-_Palazzo_Pubblico_-_Siena_2016.jpg
+    license: CC BY-SA 4.0
+    credit: José Luiz
+    caption: Allegorie und Wirkungen des Schlechten Regiments, gegenüberliegende Längswand
 provenance:
   - owner_label: the Comune di Siena (Government of the Nine)
     acquired: 1338-02
@@ -61,9 +109,13 @@ provenance:
         source: wikipedia-it-buon-governo
         accessed: 2026-10-20
 sources:
+  kind:
+    - source: wikipedia-it-buon-governo
   names:
     - accessed: 2026-10-20
       wikidata: Q2401235
+  created:
+    - source: wikipedia-it-buon-governo
   creator:
     - accessed: 2026-10-20
       property: P170

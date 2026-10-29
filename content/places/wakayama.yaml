@@ -1,0 +1,16 @@
+public_id: 102797
+name: Wakayama
+kind: settlement
+location: [135.17075, 34.23036]
+wikidata_id: Q200747
+metadata:
+  sources: [Wikidata Q200747 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q200747
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q200747

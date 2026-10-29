@@ -1,5 +1,44 @@
 public_id: 101109
 name: Stedelijk Museum Amsterdam
 kind: museum
+founded: 1874
+place: amsterdam
+location: [4.87972, 52.35778]
+address: Museumplein 10
+website_url: https://www.stedelijk.nl/
+wikidata_id: Q924335
 metadata:
-  sources: [Wikidata null (retrieved 2026-10-18)]
+  sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q924335 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/61/De_nieuwe_vleugel_van_het_Stedelijk_Museum_Amsterdam.jpg/1280px-De_nieuwe_vleugel_van_het_Stedelijk_Museum_Amsterdam.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:De_nieuwe_vleugel_van_het_Stedelijk_Museum_Amsterdam.jpg
+    license: CC BY-SA 4.0
+    credit: John Lewis Marshall
+identifiers:
+  bnf: "118786221"
+  gnd: 1030247-5
+  idref: "075188295"
+  lc: n79058405
+  ulan: "500220995"
+  viaf: "125979197"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q924335
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q924335
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q924335
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q924335
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q924335

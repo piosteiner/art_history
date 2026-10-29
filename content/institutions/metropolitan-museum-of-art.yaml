@@ -4,4 +4,38 @@ names: [The Met]
 kind: museum
 founded: 1870
 place: new-york-city
+location: [-73.96333, 40.77944]
 website_url: https://www.metmuseum.org
+wikidata_id: Q160236
+metadata:
+  sources: [Wikidata Q160236 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg/1280px-Metropolitan_Museum_of_Art_%28The_Met%29_-_Central_Park%2C_NYC.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Metropolitan_Museum_of_Art_(The_Met)_-_Central_Park,_NYC.jpg
+    license: CC BY-SA 2.0
+    credit: Hugo Schneider
+identifiers:
+  bnf: "118704754"
+  gnd: 1008914-7
+  idref: "026460386"
+  kulturnav: b2d6d92f-8b23-4087-b1d8-3e46dabd7b29
+  lc: n79129629
+  ulan: "500125157"
+  viaf: "126238294"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q160236
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q160236
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q160236
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q160236

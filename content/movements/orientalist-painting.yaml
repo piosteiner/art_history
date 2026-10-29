@@ -1,0 +1,11 @@
+public_id: 103048
+name: Orientalist painting
+kind: movement
+wikidata_id: Q765606
+metadata:
+  sources: [Wikidata Q765606 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q765606

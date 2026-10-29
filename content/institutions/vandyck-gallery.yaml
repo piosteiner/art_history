@@ -1,2 +1,10 @@
 public_id: 100428
 name: Vandyck Gallery
+kind: gallery
+place: washington-d-c
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/en/collection/item/512958/
+      note: "Gauguin, Idylle à Tahiti: Vandyck Gallery, Washington, D.C., until 1925"
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-28

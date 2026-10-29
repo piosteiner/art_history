@@ -1,2 +1,15 @@
 public_id: 100314
 name: Galerie Georges Giroux
+kind: gallery
+place: brussels
+wikidata_id: Q1981549
+metadata:
+  sources: [Wikidata Q1981549 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Galerie_Georges_Giroux_1921.jpg/1280px-Galerie_Georges_Giroux_1921.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Galerie_Georges_Giroux_1921.jpg
+    license: CC BY 4.0
+    credit: JoJan
+identifiers:
+  lc: nr98043744
+  viaf: "143911240"

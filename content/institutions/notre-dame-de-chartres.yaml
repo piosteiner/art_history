@@ -1,11 +1,37 @@
 public_id: 102163
 name: Notre-Dame de Chartres
+kind: cathedral
 founded: 1145
+place: chartres
+location: [1.48778, 48.44778]
+website_url: http://www.cathedrale-chartres.org/
 wikidata_id: Q180274
 metadata:
   sources: [Wikidata Q180274 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Westfassade_Chartres.jpg/1280px-Westfassade_Chartres.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Westfassade_Chartres.jpg
+    license: Public domain
+    credit: BT
+identifiers:
+  gnd: 4069930-4
+  idref: "144085852"
+  lc: n50052168
+  viaf: "158348346"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q180274
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q180274
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q180274
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q180274

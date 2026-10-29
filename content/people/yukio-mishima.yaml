@@ -1,5 +1,7 @@
 public_id: 100096
 name: Yukio Mishima
+given_name: Yukio
+family_name: Mishima
 names:
   - lang: ja
     role: original
@@ -8,7 +10,7 @@ kind: person
 occupations: [writer, prose writer, novelist, playwright]
 birth: 1925-01-14
 death: 1970-11-25
-description_md: Mishima was a famous writer. He did embrace far right ideas one of which was that the Japanese people were losing their "national essence" [[kokutai]].
+description_md: Mishima was a famous writer. He did embrace far right ideas[[source/wikipedia-en-yukio-mishima|“From his mid-30s onwards, Mishima’s far-right ideology and reactionary beliefs became increasingly evident”]] one of which was that the Japanese people were losing their "national essence" [[kokutai]][[source/wikipedia-en-yukio-mishima|“worrying that by embracing these ideas the Japanese people would lose their "national essence" (kokutai) and distinctive cultural heritage”]].
 wikidata_id: Q134456
 metadata:
   sources: [Wikidata Q134456 (retrieved 2026-10-07)]

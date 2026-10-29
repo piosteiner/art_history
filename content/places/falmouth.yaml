@@ -1,0 +1,16 @@
+public_id: 102975
+name: Falmouth
+kind: settlement
+location: [-5.06667, 50.15]
+wikidata_id: Q478029
+metadata:
+  sources: [Wikidata Q478029 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q478029
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q478029

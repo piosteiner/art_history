@@ -76,6 +76,12 @@ relationships:
       - accessed: 2026-10-18
         property: P937
         wikidata: Q134741
+  - type: student_of
+    to: artist/francois-edouard-picot
+    sources:
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q5233
   - type: studied_at
     to: institution/academie-suisse
     period: 1859

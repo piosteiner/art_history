@@ -1,0 +1,39 @@
+public_id: 102693
+name: Tokyo National Museum
+kind: museum
+founded: 1872
+place: tokyo
+location: [139.77639, 35.71889]
+website_url: https://www.tnm.jp/
+wikidata_id: Q653433
+metadata:
+  sources: [Wikidata Q653433 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Tokyo_National_Museum%2C_Honkan_2010.jpg/1280px-Tokyo_National_Museum%2C_Honkan_2010.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tokyo_National_Museum,_Honkan_2010.jpg
+    license: CC BY-SA 3.0
+    credit: Wiiii
+identifiers:
+  bnf: 12448131f
+  gnd: 2044887-9
+  idref: "030175623"
+  lc: n81058763
+  ulan: "500309712"
+  viaf: "135962112"
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q653433
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q653433
+  founded:
+    - accessed: 2026-10-28
+      property: P571
+      wikidata: Q653433
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q653433

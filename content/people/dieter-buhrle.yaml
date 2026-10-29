@@ -3,3 +3,10 @@ name: Dieter Bührle
 given_name: Dieter
 family_name: Bührle
 wikidata_id: Q1221807
+relationships:
+  - type: founded
+    to: institution/foundation-e-g-buhrle-collection
+    sources:
+      - accessed: 2026-10-28
+        property: P112
+        wikidata: Q666331

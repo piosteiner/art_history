@@ -15,11 +15,17 @@ images:
     license: CC BY-SA 3.0
     credit: Roland zh
 identifiers:
+  bnf: 11870362h
   gnd: 2016862-7
+  idref: "026459043"
   lc: n80103756
   ulan: "500245760"
   viaf: "227051459"
 sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q685038
   place:
     - accessed: 2026-10-12
       property: P131

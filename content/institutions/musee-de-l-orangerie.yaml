@@ -1,11 +1,41 @@
 public_id: 102161
 name: Musée de l'Orangerie
+names: [Orangerie Museum]
+kind: museum
 founded: 1852
+place: paris
+location: [2.32254, 48.86385]
+address: Jardin des Tuileries, Place de la Concorde, 75001 Paris
+website_url: https://www.musee-orangerie.fr
 wikidata_id: Q726781
 metadata:
   sources: [Wikidata Q726781 (retrieved 2026-10-20)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/2011-12-Musee_de_lorangerie.jpg/1280px-2011-12-Musee_de_lorangerie.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2011-12-Musee_de_lorangerie.jpg
+    license: CC BY-SA 3.0
+    credit: Traktorminze
+identifiers:
+  bnf: "118649440"
+  gnd: 1013632-0
+  idref: "026393581"
+  lc: n50055347
+  ulan: "500310647"
+  viaf: "168318979"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q726781
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q726781
   founded:
     - accessed: 2026-10-20
       property: P571
+      wikidata: Q726781
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q726781

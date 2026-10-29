@@ -4,3 +4,22 @@ names: [Koninklijke Academie voor Schone Kunsten Antwerpen]
 kind: academy
 founded: 1663
 place: antwerp
+location: [4.4069, 51.2234]
+website_url: https://www.ap-arts.be/academie
+wikidata_id: Q2746779
+metadata:
+  sources: [Wikidata Q2746779 (retrieved 2026-10-28)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/AntwerpenAcademie.JPG/1280px-AntwerpenAcademie.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:AntwerpenAcademie.JPG
+    license: CC BY-SA 3.0
+    credit: No machine-readable author provided. Friedrich Tellberg assumed (based on copyright claims).
+identifiers:
+  gnd: 16289334-6
+  lc: n80131768
+  viaf: "125914871"
+sources:
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q2746779

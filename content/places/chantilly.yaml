@@ -1,0 +1,16 @@
+public_id: 102922
+name: Chantilly
+kind: settlement
+location: [2.46083, 49.18694]
+wikidata_id: Q126675
+metadata:
+  sources: [Wikidata Q126675 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q126675
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q126675

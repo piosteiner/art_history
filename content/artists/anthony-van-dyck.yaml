@@ -7,6 +7,178 @@ death: 1641-12-09
 wikidata_id: Q150679
 metadata:
   sources: [Wikidata Q150679 (retrieved 2026-10-20)]
+relationships:
+  - type: nationality
+    to: polity/spanish-netherlands
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q150679
+  - type: born_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q150679
+  - type: died_in
+    to: place/blackfriars
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q150679
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q150679
+  - type: worked_in
+    to: place/aix-en-provence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/antwerp
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/bologna
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/brussels
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/genoa
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/haarlem
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/mantua
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/marseille
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/naples
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/palermo
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/the-hague
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/venice
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/zaventem
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/london
+    period: 1632
+    period_label: from 1632
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: worked_in
+    to: place/blackfriars
+    period: 1641-11/1641-12-09
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q150679
+  - type: influenced_by
+    to: artist/peter-paul-rubens
+    sources:
+      - accessed: 2026-10-28
+        property: P737
+        wikidata: Q150679
+  - type: student_of
+    to: artist/peter-paul-rubens
+    sources:
+      - accessed: 2026-10-28
+        property: P1066
+        wikidata: Q150679
+      - accessed: 2026-10-28
+        property: P802
+        wikidata: Q5599
+  - type: associated_with
+    to: movement/baroque-painting
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q150679
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d9/Sir_Anthony_van_Dyck_-_Self-portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sir_Anthony_van_Dyck_-_Self-portrait.jpg
+    license: Public domain
+    credit: Anthony van Dyck
+identifiers:
+  bnf: "119466223"
+  dome: "3373"
+  gnd: "118528386"
+  idref: "035221941"
+  kulturnav: f27aaa3a-e331-4cce-85e6-ad63446f6608
+  lc: n50070302
+  rkd: "25230"
+  ulan: "500115190"
+  viaf: "17231738"
 sources:
   birth:
     - accessed: 2026-10-20

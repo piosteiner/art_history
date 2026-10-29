@@ -2,13 +2,80 @@ public_id: 100247
 name: Henri Rousseau
 given_name: Henri
 family_name: Rousseau
+names: [Henri Julien Felix Rousseau]
 birth: 1844-05-21
 death: 1910-09-02
 wikidata_id: Q156386
 metadata:
   sources: [Wikidata Q156386 (retrieved 2026-10-13)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-28
+        property: P27
+        wikidata: Q156386
+  - type: born_in
+    to: place/laval
+    sources:
+      - accessed: 2026-10-28
+        property: P19
+        wikidata: Q156386
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P20
+        wikidata: Q156386
+  - type: lived_in
+    to: place/laval
+    sources:
+      - accessed: 2026-10-28
+        property: P551
+        wikidata: Q156386
+  - type: worked_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-28
+        property: P937
+        wikidata: Q156386
+  - type: associated_with
+    to: movement/naive-art
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q156386
+  - type: associated_with
+    to: movement/post-impressionism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q156386
+  - type: associated_with
+    to: movement/primitivism
+    sources:
+      - accessed: 2026-10-28
+        property: P135
+        wikidata: Q156386
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/fc/Rousseau_Joyeux_Farceurs_Dornac_crop.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rousseau_Joyeux_Farceurs_Dornac_crop.jpg
+    license: Public domain
+    credit: Dornac
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Henri_Rousseau_-_Myself-_Portrait_%E2%80%93_Landscape_-_Google_Art_Project.jpg/1280px-Henri_Rousseau_-_Myself-_Portrait_%E2%80%93_Landscape_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Rousseau_-_Myself-_Portrait_%E2%80%93_Landscape_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Henri Rousseau
 identifiers:
+  bnf: 11922875v
   dome: "330"
+  gnd: "118603418"
+  idref: "027319598"
+  lc: n79126804
+  nlk: KAC199623613
+  rkd: "68557"
+  ulan: "500115462"
+  viaf: "14776193"
 sources:
   birth:
     - accessed: 2026-10-13

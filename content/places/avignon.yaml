@@ -1,0 +1,16 @@
+public_id: 103176
+name: Avignon
+kind: settlement
+location: [4.80833, 43.94861]
+wikidata_id: Q6397
+metadata:
+  sources: [Wikidata Q6397 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q6397
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q6397

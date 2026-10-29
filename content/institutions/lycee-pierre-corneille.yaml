@@ -1,11 +1,38 @@
 public_id: 100824
 name: Lycée Pierre-Corneille
+kind: school
 founded: 1593
+place: rouen
+location: [1.10021, 49.44531]
+address: 4 rue du Maulévrier 76044 Rouen
+website_url: https://corneille-rouen.lycee.ac-normandie.fr/
 wikidata_id: Q3268638
 metadata:
   sources: [Wikidata Q3268638 (retrieved 2026-10-18)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/cd/Le_Lyc%C3%A9e_Corneille_de_ROuen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Lyc%C3%A9e_Corneille_de_ROuen.jpg
+    license: CC BY-SA 3.0
+    credit: Sperreau2
+identifiers:
+  bnf: 11974737j
+  idref: "027777758"
+  lc: n88610887
+  viaf: "133311254"
 sources:
+  place:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q3268638
+  address:
+    - accessed: 2026-10-28
+      property: P6375
+      wikidata: Q3268638
   founded:
     - accessed: 2026-10-18
       property: P571
+      wikidata: Q3268638
+  location:
+    - accessed: 2026-10-28
+      property: P625
       wikidata: Q3268638
