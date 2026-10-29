@@ -1,7 +1,7 @@
 // The relationship picker (core.js pickerOptions): types with the same label are one choice — the target decides the
 // type ("depicts" a person → depicts_person, an artwork → depicts); A–Z; housed_at not offered. Depicted artworks and
 // events are depictions in the graph (routes/graph.js); depicted places stay map material.
-const { test, expect, sql, API } = require('./helpers');
+const { test, expect, sql, settled, API } = require('./helpers');
 
 const openForm = (page) => page.locator('details:has(> summary:has-text("+ Add relationship"))').evaluate((d) => { d.open = true; });
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
@@ -43,7 +43,8 @@ test('one "depicts" for people, places, artworks and events; options A–Z; hous
   await userA.click('form[action$="/relationships"] button:has-text("Add")');
   await expect(userA.locator('main')).toContainText('needs a place or an artwork or an event or a person or an artist');
 
-  // the graph: the depicted artwork is a depiction, like the portrait
+  // the graph: the depicted artwork is a depiction, like the portrait — read from graph_links, a moment behind (126)
+  await settled();
   const g = await api(request, '/graph/artworks/test-copy-picker?depth=1');
   const edges = g.edges.filter((e) => e.source === 'artwork/test-copy-picker').map((e) => `${e.type}:${e.category}→${e.target}`).sort();
   expect(edges).toEqual(['depicts:depiction→artwork/the-starry-night', 'depicts_person:depiction→artist/vincent-van-gogh']);
