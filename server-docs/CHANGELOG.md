@@ -18,6 +18,10 @@ Format: date — what — why — how to revert.
 - **Design:** the column stays the edited, audited and indexed copy (History, Revert, merge, import keep working; the
   trigram/full-text indexes can't reach into a join); the table gives each name an id for sources and a real range.
 - **Tests:** unit (names.test.js), e2e "a former name in context" (names.spec.js); `npm run perf` 35/35 in budget.
+- **Data:** Musées nationaux — Direction des musées nationaux (former, until 17 August 1945) and Direction des musées
+  de France (18 August 1945–2009), each with its context and cited (FranceArchives fonds 20144657, decree of 18 August
+  1945; fr.wikipedia Service des musées de France for 2009). The Renoir "La Petite Irène" (October 1939) now shows the
+  holder as "Musées nationaux (then Direction des musées nationaux)". 5,522 existing names became rows of entry_names.
   The first deploy stopped at relpicker.spec.js (the graph read before the derived links were written — now waits
   with `settled()`); production was not touched.
 - **Revert:** `git revert`; in the database `DROP TABLE entry_names CASCADE` + `ALTER TABLE citations DROP COLUMN
