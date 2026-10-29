@@ -9,6 +9,10 @@ Format: date — what — why — how to revert.
   category presence). `/v1/map/sites` returns the branches as further features of the institution at their place's
   marker (`branch: {place, period}`, from/to years from the period); the site draws them hollow on the museums layer,
   "branch in London 1744–" in the popup. E2E test branches.spec.js.
+- **Data:** 15 branches with a cited source each (Wikipedia): Sotheby's London 1744–, Paris 1967–, Los Angeles 1967–1982,
+  Hong Kong 1973–; Christie's New York 1977–, Beverly Hills 1997–, Paris 2002–; Durand-Ruel London 1870–, New York
+  1887–; Knoedler Paris 1895–, Pittsburgh 1897–, London 1908–; Wildenstein Paris 1875–, London 1925–, Buenos Aires
+  1929–. Parke-Bernet part of Sotheby's since 1964. Place Hong Kong created from Wikidata.
 - **Why:** owner, 2026-10-29 — Sotheby's and other firms with several locations; chosen over "one firm, the city on the
   provenance step only", as more traceable.
 - **Revert:** `git revert`; `DELETE FROM relationships WHERE relationship_type = 'branch_in'; DELETE FROM
