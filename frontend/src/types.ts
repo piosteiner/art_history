@@ -55,7 +55,7 @@ export interface Relationship {
   /** name_then: its former name in use during the relationship (API 152/159) — "lived in Tokyo (then Edo)". */
   /** polity_then: the state the place (an institution's city) belonged to at the start of the relationship (API 161). */
   /** qualifier: a place's words apart from others of its name (API 162) — "Cambridge (Massachusetts)". */
-  entity: { type: EntityType; slug: string; name: string; period?: DateRange | null; name_then?: NameThen | null; polity_then?: EntryRef | null; qualifier?: string | null };
+  entity: { type: EntityType; slug: string; name: string; period?: DateRange | null; name_then?: NameThen | null; polity_then?: PolityRef | null; qualifier?: string | null };
   period: DateRange | null;
   note: string | null;
   certainty: string | null;
@@ -97,6 +97,8 @@ export type EndBasis = 'recorded' | 'implied' | 'ongoing' | 'unknown' | 'point';
 
 /** An entry whose texts [[link]] this one (backlink). */
 export interface EntryRef { type: EntityType; slug: string; name: string }
+/** A polity named by a place's timeline or a relationship (API 161): always a polity, so no `type`. */
+export interface PolityRef { slug: string; public_id?: number | null; name: string }
 
 interface DetailBase {
   slug: string;
@@ -460,7 +462,7 @@ export interface Place extends DetailBase, Named {
   /** When it existed as such — a dissolved unit, a merged city (API 159); null = not known / still there. */
   existed?: DateRange | null;
   /** The states it belonged to over time (API 161), inherited from the places above (`via`), the nearest link winning. */
-  polities?: { polity: EntryRef; period: DateRange | null; via: { slug: string; name: string } | null }[];
+  polities?: { polity: PolityRef; period: DateRange | null; via: { slug: string; name: string } | null }[];
   /** The first-level division its point lies in — canton, Land, province, prefecture (Natural Earth; API 155). */
   within?: { code: string; name: string } | null;
   location: PointGeometry | null; area: unknown | null;
