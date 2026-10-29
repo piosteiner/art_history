@@ -15,6 +15,9 @@ Format: date — what — why — how to revert.
   the name ("Laszlo") are no pseudonyms, a single given name no birth name, a pseudonym in another script is the name
   itself, nicknames only in the offered languages; a birth name is "former" only when the family name changed
   (Paula Becker → Modersohn-Becker), the full baptismal name ("Oscar-Claude Monet") is an alternative.
+- **Data:** `fill-from-wikidata.js --name-kinds` on the 212 artists and 332 people with an item: 48 artists and 49
+  people got 126 names of a kind (birth 82, pseudonym 27, nickname 17), each cited W with its statement — e.g.
+  Caravaggio "Michelangelo Merisi", Rogier van der Weyden "Roger de le Pasture", Bosch "Jheronimus van Aken".
 - **Why:** owner, 2026-10-29 — birth names and aliases of artists in more detail (follows 152).
 - **Tests:** unit (names.test.js), e2e "a birth name" (names.spec.js), "a pseudonym from Wikidata" (wikidata.spec.js).
   The first deploy stopped at quality.spec / provenance.spec (the /quality page read before the worker had stored the
