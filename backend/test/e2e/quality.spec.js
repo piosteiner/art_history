@@ -4,6 +4,7 @@ const { test, expect, adminChange, sql, settled } = require('./helpers');
 
 test('a contradiction appears on /quality and on the entry; "Mark as OK" hides it until undone', async ({ userA }) => {
   adminChange("UPDATE artworks SET created = year_range(1895), created_label = '1895' WHERE slug = 'sunflowers-national-gallery'");
+  await settled();   // the finding comes from the derived-data worker (125) — busy when the whole suite runs
   await userA.goto('/quality?severity=error');
   const group = userA.locator('.qa-group', { hasText: 'Artwork dated outside its creator' });
   await expect(group).toContainText('created 1895, but Vincent van Gogh died 29 July 1890');

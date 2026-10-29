@@ -13,6 +13,8 @@ Format: date — what — why — how to revert.
   existing entries (also beside other names), each cited W with its statement.
 - **Why:** owner, 2026-10-29 — birth names and aliases of artists in more detail (follows 152).
 - **Tests:** unit (names.test.js), e2e "a birth name" (names.spec.js), "a pseudonym from Wikidata" (wikidata.spec.js).
+  The first deploy stopped at quality.spec / provenance.spec (the /quality page read before the worker had stored the
+  finding — both now wait with `settled()`); production was not touched.
 - **Revert:** `git revert`; in the database `ALTER TABLE entry_names DROP COLUMN kind` and 152's `names_valid()` /
   `entry_names_write()`.
 

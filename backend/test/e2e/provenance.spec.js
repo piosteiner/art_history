@@ -1,6 +1,6 @@
 // Provenance (migration 031): steps entered on the artwork page; periods computed (end recorded / implied / ongoing);
 // derived edges owned_by / kept_in / transferred_to in the graph, the map route, the owner's page and roles; checks.
-const { test, expect, sql, API, submitForm } = require('./helpers');
+const { test, expect, sql, settled, API, submitForm } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
@@ -115,6 +115,7 @@ test('reorder and remove steps; an undocumented change of owner across 1933–19
          (entity_id('artwork', 'test-bassin'), 1, entity_id('person', 'test-buhrle'), year_range(1948), '1948', 'purchase');
        INSERT INTO provenance (artwork_id, position, owner_institution_id, acquired, acquired_label, method, direct) VALUES
          (entity_id('artwork', 'test-bassin'), 2, entity_id('institution', 'test-kunsthaus'), year_range(1960), '1960', 'gift', true)`);
+  await settled();   // the finding comes from the derived-data worker (125)
   await userA.goto('/quality?check=provenance_gap_1933_1945');
   await expect(userA.locator('main')).toContainText('Test Emil Bührle: the change of owner (1948) is not documented as direct');
 
