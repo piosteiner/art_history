@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Places: the hierarchy (data, step C) + coast and boundary-code fallbacks (migration 156)
+- **What (156):** `boundary_at()` takes the nearest division within 10 km when no outline covers the point (Copenhagen,
+  Lisbon, Le Havre lay just off the simplified coastline); `place_country()` also reads a place's own boundary code
+  (Gerona ES-GI without a point).
+- **Data:** 13 country places got their ISO code (Italy, Spain, Greece, Russia, China …); 16 countries and 209
+  first-level divisions created from Natural Earth (English country names via ICU; a division named like its city gets
+  "-region" in its slug); 6 existing regions recognised and given their code (Yvelines, Doubs, Hauts-de-Seine …);
+  every city and region under its division, a division put between a place and its country, buildings/streets/sites
+  under the city within 5 km else their division, administrative units filed as "site" (provinces, arrondissements)
+  under their division. By hand, because the simplified outlines put them over the border: Boulogne-Billancourt and
+  Neuilly-sur-Seine (Hauts-de-Seine), Saint-Maurice and Vincennes (Val-de-Marne), Chatou (Yvelines); Seine-et-Oise
+  (dissolved 1968) under France. Places without a country 364 → 12 (→ fewer after 156), without parent 383 → 16.
+- **Revert:** History (source admin); 156: `git revert`.
+
 ### Places: country and division from the point (migration 155) — step 1 of the places plan
 - **What:** `places.within_code` (Natural Earth division/country under the point, trigger), `place_country()` uses it,
   API places `country_code` derived + `within`, site place pages "Region". Checks place_without_country,
