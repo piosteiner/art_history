@@ -18,6 +18,7 @@ const { pickedTarget } = require('./targets');
 const provenance = require('./provenance');
 const { fromStatement, periodOf } = require('../wikidata-time');
 const { parseFuzzyDate } = require('../fuzzy-date');
+const { fold } = require('../fold');
 
 const { memo } = require('./remember');
 
@@ -118,7 +119,8 @@ function coords(e) {
 // Other names, as form lines "text | lang | role, kind | period" (src/names.js):
 //   primary  English aliases (alternative) · native name P1559 and title P1476 (original, with their language) ·
 //            Revised Hepburn P2125 (ja-Latn, romanization) · names of a kind (153), with the time from their
-//            qualifiers (start P580 / end P582): birth name P1477 (former), pseudonym P742, nickname P1449, art name
+//            qualifiers (start P580 / end P582): birth name P1477 (former when the family name changed), pseudonym
+//            P742, nickname P1449, art name
 //            (gō) P1787
 //   other    labels in further languages (translation; "original" in the language of the title / native name)
 function altNames(e, main) {
@@ -131,14 +133,15 @@ function altNames(e, main) {
     list.push(line(text, lang, role));
   };
   const primary = [];
-  for (const [prop, kind, role] of NAME_KINDS) {
+  for (const [prop, kind] of NAME_KINDS) {
     for (const st of statements(e, prop)) {
       const v = st.mainsnak.datavalue.value;
       const text = typeof v === 'object' ? v.text : String(v);
-      if (!text || seen.has(text.toLowerCase())) continue;
+      const lang = typeof v === 'object' ? nameUtil.normLang(v.language) : null;
+      if (!text || seen.has(text.toLowerCase()) || !nameOfKindUseful(kind, text, lang, main)) continue;
       seen.add(text.toLowerCase());
       const when = periodOf(st);
-      primary.push(nameUtil.namesToLines([{ text, lang: typeof v === 'object' ? nameUtil.normLang(v.language) : null, role, kind,
+      primary.push(nameUtil.namesToLines([{ text, lang, role: birthRole(kind, text, main), kind,
         period_label: when ? when.label || when.value : null }]));
     }
   }
@@ -156,9 +159,32 @@ function altNames(e, main) {
 }
 
 // Names of a kind (153): Wikidata property → our kind and role; NAME_PROPS: kind → property (the citations of taken names)
-const NAME_KINDS = [['P1477', 'birth', 'former'], ['P742', 'pseudonym', 'alternative'], ['P1449', 'nickname', 'alternative'],
-  ['P1787', 'art_name', 'alternative']];
+const NAME_KINDS = [['P1477', 'birth'], ['P742', 'pseudonym'], ['P1449', 'nickname'], ['P1787', 'art_name']];
 const NAME_PROPS = Object.fromEntries(NAME_KINDS.map(([prop, kind]) => [kind, prop]));
+// Wikidata's names of a kind are uneven (seen 2026-10-29 on 544 artists and people): "pseudonyms" that are index forms
+// of the name itself ("Breton, André", "Calder, Sandy"), a single given name as the birth name ("Anthonio"), parts of
+// the name ("Laszlo"), the name in another script as a pseudonym ("Кристо"), nicknames translated into many languages.
+const LATIN = /[A-Za-zÀ-ɏ]/;
+const words = (x) => fold(String(x || '')).split(/[^\p{L}\p{N}]+/u).filter(Boolean);
+function nameOfKindUseful(kind, text, lang, main) {
+  if (/,/.test(text)) return false;                                         // "Surname, Given names": an index form
+  if (kind === 'birth') return words(text).length > 1;                      // a whole name, not "Anthonio"
+  if (kind === 'nickname' && lang && !LANGS.includes(lang.split('-')[0])) return false;  // the languages we offer
+  if (kind === 'pseudonym' || kind === 'art_name') {
+    if (LATIN.test(main || '') && !LATIN.test(text) && kind === 'pseudonym') return false;  // the name in another script
+    const own = new Set(words(main));
+    if (words(text).length === 1 && own.has(words(text)[0])) return false;  // a part of the name itself ("Laszlo")
+  }
+  return true;
+}
+// A birth name is "former" when the family name changed (Paula Becker → Modersohn-Becker); the full name someone was
+// baptised with ("Oscar-Claude Monet") is an alternative — and in another script we can't tell, so alternative too.
+function birthRole(kind, text, main) {
+  if (kind !== 'birth') return 'alternative';
+  if (!LATIN.test(text) || !LATIN.test(main || '')) return 'alternative';
+  const last = (x) => words(x).pop();
+  return words(main).includes(last(text)) ? 'alternative' : 'former';
+}
 
 // Quantities (height P2048, width P2049, depth P2610 / P5524) → centimetres
 const UNIT_CM = { Q174728: 1, Q174789: 0.1, Q11573: 100, Q218593: 2.54, Q3710: 30.48 };  // cm, mm, m, inch, foot

@@ -11,6 +11,10 @@ Format: date — what — why — how to revert.
   a row "Born as" (birth names), other kinds as a tag. Wikidata review: birth name P1477, pseudonym P742, nickname
   P1449, art name P1787, with the time from their qualifiers; `fill-from-wikidata.js --name-kinds` adds them to
   existing entries (also beside other names), each cited W with its statement.
+- **Filters** (after a dry run over 544 artists and people): index forms with a comma ("Breton, André") and parts of
+  the name ("Laszlo") are no pseudonyms, a single given name no birth name, a pseudonym in another script is the name
+  itself, nicknames only in the offered languages; a birth name is "former" only when the family name changed
+  (Paula Becker → Modersohn-Becker), the full baptismal name ("Oscar-Claude Monet") is an alternative.
 - **Why:** owner, 2026-10-29 — birth names and aliases of artists in more detail (follows 152).
 - **Tests:** unit (names.test.js), e2e "a birth name" (names.spec.js), "a pseudonym from Wikidata" (wikidata.spec.js).
   The first deploy stopped at quality.spec / provenance.spec (the /quality page read before the worker had stored the

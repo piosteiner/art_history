@@ -236,7 +236,8 @@ merge or conversion moves the names' sources along (`move_name_citations()`).
 The kind of name (153): `kind` in the column and in entry_names — birth, married, pseudonym, art_name (gō), religious,
 nickname, abbreviation; a fixed list like the roles (CHECK in `names_valid()` and on the column — an immutable check
 can't read a table). Written after the role in form lines ("former, birth"). The Wikidata review offers birth name
-P1477 (former), pseudonym P742, nickname P1449, art name P1787 with the time from their start/end qualifiers;
+P1477, pseudonym P742, nickname P1449, art name P1787 with the time from their start/end qualifiers (filtered:
+`nameOfKindUseful()`, a birth name is former only when the family name changed — `birthRole()`);
 `scripts/fill-from-wikidata.js --name-kinds` adds them to existing entries and cites each name with its statement. Functions called from index
 expressions are schema-qualified inside each other: since Postgres 17, index builds run with a restricted search_path.
 

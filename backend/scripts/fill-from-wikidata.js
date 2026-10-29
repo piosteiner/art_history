@@ -110,7 +110,11 @@ async function patiently(fn) {
     const hasImage = t.imageFk && (await adminPool.query(`SELECT 1 FROM images WHERE ${t.imageFk} = $1 LIMIT 1`, [row.id])).rows.length > 0;
     const { choices, keys } = await emptyOnly(slug, plan, hasImage);
     if (!keys.length) { console.log(`${doc.slug}: nothing to fill`); await pause(1500); continue; }
-    if (DRY) { console.log(`${doc.slug} (${doc.wikidata_id}) would fill: ${keys.join(', ')}`); await pause(1500); continue; }
+    if (DRY) {
+      const lines = [].concat(choices['alt.names'] || []);  // the names themselves, to be read before taking them
+      console.log(`${doc.slug} (${doc.wikidata_id}) would fill: ${keys.join(', ')}${NAME_KINDS && lines.length ? `\n    ${lines.join('\n    ')}` : ''}`);
+      await pause(1500); continue;
+    }
     const flagged = (await adminPool.query('SELECT * FROM auto_created WHERE entity_type = $1 AND entity_id = $2', [t.type, row.id])).rows[0];
     const result = await tx(user, (db) => wikidata.apply(db, t, entity, plan, choices, user.id));
     const taken = wikidata.withProvenance(result.form, ours, doc.wikidata_id);
