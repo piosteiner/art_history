@@ -293,7 +293,12 @@ const RELATIONSHIPS_SQL = `
                             'period', range_json(o.period, o.period_label),
                             -- its name then (152/159): a former name in use during the relationship ("lived in Tokyo (then Edo)")
                             'name_then', CASE WHEN r.period IS NOT NULL THEN (SELECT jsonb_build_object('text', ruby_plain(nt.text), 'lang', nt.lang,
-                              'period', range_json(nt.period, nt.period_label), 'note', nt.note) FROM name_then(o.type, o.id, r.period) nt WHERE nt.id IS NOT NULL) END) AS entity,
+                              'period', range_json(nt.period, nt.period_label), 'note', nt.note) FROM name_then(o.type, o.id, r.period) nt WHERE nt.id IS NOT NULL) END,
+                            -- the state it belonged to then (161): a place's, an institution's city's — at the start of the relationship
+                            'polity_then', CASE WHEN r.period IS NOT NULL AND o.type IN ('place', 'institution') THEN (
+                              SELECT jsonb_build_object('slug', pl.slug, 'public_id', pl.public_id, 'name', pl.name)
+                              FROM polities_at(CASE o.type WHEN 'place' THEN o.id ELSE (SELECT i.place_id FROM institutions i WHERE i.id = o.id) END, r.period) x
+                              JOIN polities pl ON pl.id = x.polity_id ORDER BY lower(x.period) NULLS FIRST LIMIT 1) END) AS entity,
          range_json(r.period, r.period_label) AS period,
          r.label AS note, r.certainty, r.notes_md,
          r.source <> 'relationship' AS derived, r.end_basis,  -- derived: the creator field or the provenance (031)
@@ -441,6 +446,19 @@ const EXTRAS = {
       FROM artworks w WHERE w.current_institution_id = $1 ORDER BY ${sortKey('artwork', 'w', 'title')}`, [id])).rows,
   }),
   place: async (id) => ({
+    // the states it belonged to over time (161), inherited from the places above it — the nearest link winning
+    polities: (await apiPool.query(`
+      SELECT jsonb_build_object('slug', pl.slug, 'public_id', pl.public_id, 'name', pl.name) AS polity,
+             -- the link's own label when the piece is all of it, else its years (a piece cut by a link further down)
+             range_json(t.period, CASE WHEN t.period = r.period THEN r.period_label
+               WHEN lower(t.period) IS NULL AND upper(t.period) IS NULL THEN NULL
+               WHEN lower(t.period) IS NULL THEN 'until ' || extract(year FROM upper(t.period) - 1)
+               WHEN upper(t.period) IS NULL THEN 'since ' || extract(year FROM lower(t.period))
+               ELSE extract(year FROM lower(t.period)) || '–' || extract(year FROM upper(t.period) - 1) END) AS period,
+             CASE WHEN t.via_place_id <> $1 THEN jsonb_build_object('slug', v.slug, 'name', v.name) END AS via
+      FROM polity_timeline($1) t JOIN polities pl ON pl.id = t.polity_id JOIN places v ON v.id = t.via_place_id
+      JOIN relationships r ON r.id = t.relationship_id
+      ORDER BY lower(t.period) NULLS FIRST`, [id])).rows,
     ancestors: (await apiPool.query(ancestorsSql('places'), [id])).rows,
     children: (await apiPool.query(`SELECT slug, name, kind FROM places WHERE parent_id = $1 ORDER BY ${natural('name')}`, [id])).rows,
     institutions: (await apiPool.query(`SELECT slug, name, kind FROM institutions t WHERE place_id = $1 ORDER BY ${sortKey('institution', 't')}`, [id])).rows,

@@ -60,3 +60,23 @@ test('a place in time: its former name on a dated relationship, its existence, a
     .toBe('visited Test Tokyo (1950), but Test Tokyo existed 1457–30 June 1943');
   sql("DELETE FROM places WHERE slug = 'test-tokyo-time'");
 });
+
+// 161: places in polities — inherited down the parents, a link further down winning for its time; a dated
+// relationship shows the state then; the place shows its timeline
+test('a place in polities: the timeline inherited with an exception, the state then on a relationship', async ({ request }) => {
+  sql(`INSERT INTO polities (slug, name, period) VALUES ('t-kingdom', 'T Kingdom', '[1800-01-01,1900-01-01)'), ('t-empire', 'T Empire', '[1871-01-01,1919-01-01)');
+       INSERT INTO places (slug, name, kind, location) VALUES ('t-land', 'T Land', 'country', ST_GeogFromText('POINT(2.2 46.2)'));
+       INSERT INTO places (slug, name, kind, parent_id, location) VALUES ('t-region', 'T Region', 'region', entity_id('place', 't-land'), ST_GeogFromText('POINT(2.2 46.2)'));
+       INSERT INTO places (slug, name, kind, parent_id, location) VALUES ('t-town', 'T Town', 'settlement', entity_id('place', 't-region'), ST_GeogFromText('POINT(2.2 46.2)'));
+       INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label) VALUES
+         ('place', entity_id('place', 't-land'), 'in_polity', 'polity', entity_id('polity', 't-kingdom'), '[1800-01-01,1900-01-01)', '1800–1899'),
+         ('place', entity_id('place', 't-region'), 'in_polity', 'polity', entity_id('polity', 't-empire'), '[1871-01-01,1919-01-01)', '1871–1918'),
+         ('artist', entity_id('artist', 'vincent-van-gogh'), 'visited', 'place', entity_id('place', 't-town'), '[1880-01-01,1881-01-01)', '1880')`);
+  await settled();
+  const town = await (await request.get(`${API}/places/t-town`, { headers: { Host: 'api.localhost' } })).json();
+  expect(town.polities.map((x) => [x.polity.slug, x.period.label, x.via && x.via.slug])).toEqual([
+    ['t-kingdom', '1800–1870', 't-land'], ['t-empire', '1871–1918', 't-region']]);
+  const vincent = await (await request.get(`${API}/artists/vincent-van-gogh`, { headers: { Host: 'api.localhost' } })).json();
+  expect(vincent.relationships.find((r) => r.entity.slug === 't-town').entity.polity_then).toEqual(expect.objectContaining({ slug: 't-empire' }));
+  sql("DELETE FROM places WHERE slug IN ('t-town', 't-region', 't-land'); DELETE FROM polities WHERE slug IN ('t-kingdom', 't-empire')");
+});

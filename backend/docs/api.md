@@ -151,6 +151,9 @@ links, ask once, show on hover. Cached 60 s like the rest of the API.
   (`/v1/map/presence`, `/v1/map/<type>/:slug`) then carry `institution: {slug, name}` and `place` = the city it is in;
   the point is the institution's own, else its city's. **Encounters:** same `institution` and overlapping periods =
   could have met there; only the same `place` = were in the same city at the same time.
+- Places: `polities` — the states it belonged to over time, `[{polity, period, via}]` (via = the place above it the link
+  comes from), 161. In `relationships`, `entity.polity_then`: the state a place (an institution's city) belonged to at
+  the start of the relationship.
 - Places: `existed` (when it existed as such, 159). In `relationships`, `entity.name_then`: the other entry's former name
   in use during the relationship ("lived in Tokyo (then Edo)").
 - Places: `kind` (settlement, district, street, building, site, natural, archaeological, region, country, continent —

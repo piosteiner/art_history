@@ -137,6 +137,13 @@ function eventStep(s: ProvenanceStep, bibliography?: Record<string, SourceHint>)
   </li>`;
 }
 
+/** "(then Edo, Tokugawa shogunate)": the place's name then (API 159) and the state it belonged to then (API 161). */
+function thenNote(r: Relationship): Html | string {
+  const n = r.entity.name_then; const p = r.entity.polity_then;
+  if (!n && !p) return '';
+  return html` <span class="muted name-then">(then ${n ? html`<span title="${n.note ?? `its name ${n.period?.label ?? 'then'}`}">${nameSpan(n.text, n.lang)}</span>` : ''}${n && p ? ', ' : ''}${p ? link('polity', p.slug, p.name) : ''})</span>`;
+}
+
 /** "Leo Stein", "A and B", "A, B and C" — linked where they have an entry. */
 function holders(s: ProvenanceStep): Html {
   const first = s.owner
@@ -309,7 +316,7 @@ export function relationshipSections(rels: Relationship[], pageType?: string, bi
     <h2>${heading(cat)}</h2>
     <ul class="rel-list">${groups.get(cat)!.sort(byDate).map((r) => html`<li>
       ${cat === r.type || (pageType === 'event' && cat === 'depiction') ? '' : html`<span class="rel-label">${r.label}</span>`}
-      ${link(r.entity.type, r.entity.slug, r.entity.name)}${r.entity.name_then ? html` <span class="muted name-then" title="${r.entity.name_then.note ?? `its name ${r.entity.name_then.period?.label ?? 'then'}`}">(then ${nameSpan(r.entity.name_then.text, r.entity.name_then.lang)})</span>` : ''}${role(r) ? html` <span class="rel-role">(${r.note})</span>` : ''}
+      ${link(r.entity.type, r.entity.slug, r.entity.name)}${thenNote(r)}${role(r) ? html` <span class="rel-role">(${r.note})</span>` : ''}
       ${r.period ? html`<span class="muted">${r.period.label}</span>` : ''}${impliedEnd(r.end_basis)}
       ${uncertain(r.certainty)}${cite(r.sources, bibliography)}
       ${r.note && !role(r) ? html`<div class="rel-note">${r.note}</div>` : ''}

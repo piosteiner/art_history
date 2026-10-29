@@ -96,6 +96,10 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
   Kinds of places (157): settlement, district (part of a city), street (street or square), building, site, natural,
   archaeological, region (any administrative unit), country, continent; `places.designation` (158) says what it is
   as a unit — "canton of Switzerland", "province of Italy" — from Wikidata P31, editable.
+  Places in polities (161): relationship `in_polity` (place → polity, dated) is inherited down the parents;
+  `polity_timeline(place)` walks up and gives each level's links only the time no level below covers (datemultirange
+  difference: Strasbourg — German Empire 1871–1918 from Bas-Rhin, France's regimes around it); `polities_at(place,
+  span)` = the pieces overlapping a span. `succeeded_by` (polity/place/institution → the same): who took its place.
   Places in time (159): `places.existed` (+ label) — when a unit existed (Seine-et-Oise 1790–1968, Tokyo City
   1889–1943); a renamed place stays one entry, its former names carry the time (152); check
   `place_used_outside_existence`.

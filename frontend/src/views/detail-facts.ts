@@ -199,6 +199,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         title: e.name, subtitle: [e.designation ?? e.kind, e.country_code].filter(Boolean).join(' · '), text: e.description_html, images: [],
         facts: [
           ['Existed', e.existed?.label ?? null],   // a dissolved unit, a merged city (API 159)
+          // the states it belonged to over time (API 161), each with its years; inherited ones say from where
+          ['Belonged to', e.polities?.length ? html`${e.polities.map((x, i) => html`${i ? ' · ' : ''}${link('polity', x.polity.slug, x.polity.name)}${x.period?.label ? html` <span class="muted">${x.period.label}</span>` : ''}`)}` : null],
           ['Part of', refs('place', [...e.ancestors].reverse())],
           // the division its point lies in (Natural Earth), when it isn't among the places it is part of already
           ['Region', e.within && !e.ancestors.some((a) => a.name === e.within!.name) ? e.within.name : null],

@@ -53,7 +53,8 @@ export interface Relationship {
   category: Category;
   is_physical_presence: boolean;
   /** name_then: its former name in use during the relationship (API 152/159) — "lived in Tokyo (then Edo)". */
-  entity: { type: EntityType; slug: string; name: string; period?: DateRange | null; name_then?: NameThen | null };
+  /** polity_then: the state the place (an institution's city) belonged to at the start of the relationship (API 161). */
+  entity: { type: EntityType; slug: string; name: string; period?: DateRange | null; name_then?: NameThen | null; polity_then?: EntryRef | null };
   period: DateRange | null;
   note: string | null;
   certainty: string | null;
@@ -454,6 +455,8 @@ export interface Place extends DetailBase, Named {
   designation?: string | null;
   /** When it existed as such — a dissolved unit, a merged city (API 159); null = not known / still there. */
   existed?: DateRange | null;
+  /** The states it belonged to over time (API 161), inherited from the places above (`via`), the nearest link winning. */
+  polities?: { polity: EntryRef; period: DateRange | null; via: { slug: string; name: string } | null }[];
   /** The first-level division its point lies in — canton, Land, province, prefecture (Natural Earth; API 155). */
   within?: { code: string; name: string } | null;
   location: PointGeometry | null; area: unknown | null;

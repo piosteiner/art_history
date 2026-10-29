@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Places in polities (migration 161) — step E of the places plan
+- **What:** relationship types `in_polity` (place → polity, "belonged to") and `succeeded_by`; `polity_timeline()`
+  (PL/pgSQL, datemultirange: a link further down wins for its time) and `polities_at()`; API place `polities`,
+  relationships' `entity.polity_then`; site: place row "Belonged to", relationships "(then Edo, Tokugawa shogunate)".
+  E2E place-within; perf 35/35.
+- **Why:** owner, 2026-10-29 — polities that existed only for a time, regions within countries.
+- **Revert:** `git revert`; `DELETE FROM relationships WHERE relationship_type IN ('in_polity', 'succeeded_by')`, the
+  two types and functions.
+
 ### Places in time: data (step D) + the name then in Latin script (migration 160)
 - **Data:** 66 former official names from Wikidata (P1448 with an end; only in a language of the place's country),
   each cited W — the revolutionary names of 1793–1814 (Lyon "Commune-Affranchie", Versailles "Berceau-de-la-Liberté",
