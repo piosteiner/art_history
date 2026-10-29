@@ -80,3 +80,29 @@ test('a place in polities: the timeline inherited with an exception, the state t
   expect(vincent.relationships.find((r) => r.entity.slug === 't-town').entity.polity_then).toEqual(expect.objectContaining({ slug: 't-empire' }));
   sql("DELETE FROM places WHERE slug IN ('t-town', 't-region', 't-land'); DELETE FROM polities WHERE slug IN ('t-kingdom', 't-empire')");
 });
+
+// 162: places of one name told apart — by the place they lie in, else their designation; a city in the province named
+// after it is no duplicate, nor are two places in two countries; the pickers show "In"
+test('places of one name: a qualifier each, no duplicate where one lies within the other', async ({ request }) => {
+  sql(`INSERT INTO places (slug, name, kind, location) VALUES ('t-shire', 'T Shire', 'region', ST_GeogFromText('POINT(0.12 52.2)')),
+         ('t-state', 'T State', 'region', ST_GeogFromText('POINT(-71.1 42.37)'));
+       INSERT INTO places (slug, name, kind, parent_id, location) VALUES
+         ('t-cam-1', 'T Cambridge', 'settlement', entity_id('place', 't-shire'), ST_GeogFromText('POINT(0.12 52.2)')),
+         ('t-cam-2', 'T Cambridge', 'settlement', entity_id('place', 't-state'), ST_GeogFromText('POINT(-71.1 42.37)'));
+       INSERT INTO places (slug, name, kind, designation, location) VALUES ('t-prov', 'T Ancona', 'region', 'province of Italy', ST_GeogFromText('POINT(13.5 43.6)'));
+       INSERT INTO places (slug, name, kind, designation, parent_id, location) VALUES
+         ('t-city', 'T Ancona', 'settlement', 'comune of Italy', entity_id('place', 't-prov'), ST_GeogFromText('POINT(13.51 43.61)'))`);
+  expect(sql("SELECT place_qualifier(entity_id('place', 't-cam-1')) || ' / ' || place_qualifier(entity_id('place', 't-cam-2'))")).toBe('T Shire / T State');
+  // the city's parent has its name: the designations tell them apart
+  expect(sql("SELECT place_qualifier(entity_id('place', 't-city')) || ' / ' || place_qualifier(entity_id('place', 't-prov'))")).toBe('comune of Italy / province of Italy');
+  expect(sql("SELECT place_qualifier(entity_id('place', 't-shire'))")).toBe('');
+  await settled();   // the duplicate keys are the worker's (125)
+  expect(sql("SELECT array_to_string(reasons, '; ') FROM duplicate_candidates('place', entity_id('place', 't-city'), -1000) WHERE slug = 't-prov'"))
+    .toMatch(/one lies within the other/);
+  expect(sql("SELECT count(*) FROM duplicate_candidates('place', entity_id('place', 't-city'))")).toBe('0');
+  expect(sql(`SELECT string_agg(label || ': ' || text, ' · ' ORDER BY position) FROM entry_search_fields WHERE type = 'place' AND id = entity_id('place', 't-city')`))
+    .toMatch(/^Kind: comune of Italy · In: T Ancona\b/);
+  const body = await (await request.get(`${API}/places/t-cam-2`, { headers: { Host: 'api.localhost' } })).json();
+  expect(body.qualifier).toBe('T State');
+  sql("DELETE FROM places WHERE slug IN ('t-cam-1', 't-cam-2', 't-city'); DELETE FROM places WHERE slug IN ('t-shire', 't-state', 't-prov')");
+});

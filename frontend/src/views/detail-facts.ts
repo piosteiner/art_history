@@ -196,7 +196,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
     case 'place':
       return {
         // what it is: the precise designation ("canton of Switzerland", API 158), else the kind
-        title: e.name, subtitle: [e.designation ?? e.kind, e.country_code].filter(Boolean).join(' · '), text: e.description_html, images: [],
+        // … and where places share its name, what sets this one apart (API 162): "municipal borough · in Cambridgeshire"
+        title: e.name, subtitle: [e.designation ?? e.kind, e.qualifier && ![e.designation, e.kind].includes(e.qualifier) ? `in ${e.qualifier}` : null, e.country_code].filter(Boolean).join(' · '), text: e.description_html, images: [],
         facts: [
           ['Existed', e.existed?.label ?? null],   // a dissolved unit, a merged city (API 159)
           // the states it belonged to over time (API 161), each with its years; inherited ones say from where

@@ -154,6 +154,8 @@ links, ask once, show on hover. Cached 60 s like the rest of the API.
 - Places: `polities` — the states it belonged to over time, `[{polity, period, via}]` (via = the place above it the link
   comes from), 161. In `relationships`, `entity.polity_then`: the state a place (an institution's city) belonged to at
   the start of the relationship.
+- Places: `qualifier` (list, detail, and `entity.qualifier` in relationships) — what sets it apart from places of the
+  same name ("Massachusetts", "district of Portugal"), null when its name is the only one (162).
 - Places: `existed` (when it existed as such, 159). In `relationships`, `entity.name_then`: the other entry's former name
   in use during the relationship ("lived in Tokyo (then Edo)").
 - Places: `kind` (settlement, district, street, building, site, natural, archaeological, region, country, continent —

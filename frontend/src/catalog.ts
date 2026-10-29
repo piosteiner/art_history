@@ -2,7 +2,7 @@
 // Each entry has a name and a meta line that are shown, labelled fields that are searchable but not shown
 // (type, birthplace, nationality …), and per sort option a value plus a section heading.
 import { countryName, countryText, creatorNames, displayName, html, personDates, polityText, ROLE_LABEL, type Html } from './html';
-import type { Country, DateRange, EntityType, ItemByPlural, NameEntry, Plural, PolityLink } from './types';
+import type { Country, DateRange, EntityType, ItemByPlural, NameEntry, Plural, PlaceItem, PolityLink } from './types';
 
 export interface SortValue {
   value: string | number | null; // null sorts last
@@ -202,6 +202,10 @@ interface TypeCatalog<P extends Plural> {
   build: (item: ItemByPlural[P]) => Built<ItemByPlural[P]>;
 }
 
+/** A place's qualifier unless the row says it already (its designation, kind or country). */
+const apart = (p: PlaceItem): string | null =>
+  p.qualifier && ![p.designation, p.kind, countryName(p.country_code)].includes(p.qualifier) ? p.qualifier : null;
+
 // Today's country (from the entry's place) and the polities it is linked to, for search and sort.
 const located = (e: { country: Country | null; polities: PolityLink[] }, rel: PolityLink['relationship']) => {
   const links = e.polities.filter((p) => p.relationship === rel);
@@ -308,7 +312,8 @@ const CATALOG: { [P in Plural]: TypeCatalog<P> } = {
       { id: 'kind', label: 'Kind' },
     ],
     build: (p) => ({
-      slug: p.slug, name: p.name, meta: [p.kind, countryName(p.country_code)].filter(Boolean).join(' · '), fields: [],
+      // what it is, and — where others share its name (API 162) — what sets it apart: "Cambridge: city · Massachusetts"
+      slug: p.slug, name: p.name, meta: [p.designation ?? p.kind, apart(p), countryName(p.country_code)].filter(Boolean).join(' · '), fields: [],
       sorts: { name: byName(p.name), country: byText(countryName(p.country_code), 'Country unknown'), kind: byText(p.kind, 'Other') },
     }),
   },

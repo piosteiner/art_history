@@ -96,6 +96,12 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
   Kinds of places (157): settlement, district (part of a city), street (street or square), building, site, natural,
   archaeological, region (any administrative unit), country, continent; `places.designation` (158) says what it is
   as a unit — "canton of Switzerland", "province of Italy" — from Wikidata P31, editable.
+  Places of one name (162): `place_qualifier(place)` = what sets it apart from the others of its (folded) name — the
+  place it lies in when each has a different one ("Cambridge (Massachusetts)" / "(Cambridgeshire)"), else the
+  designation, the kind, the country; null when the name is the only one (computed per request, index on
+  `f_unaccent(lower(name))`). The search fields show Kind (designation), In (the region) and Country in every picker.
+  The duplicate check (`dup_score()`) counts a place within the other (`place_ancestors()`), different countries and
+  different numbers in the names ("2nd" / "6th arrondissement") against a pair.
   Places in polities (161): relationship `in_polity` (place → polity, dated) is inherited down the parents;
   `polity_timeline(place)` walks up and gives each level's links only the time no level below covers (datemultirange
   difference: Strasbourg — German Empire 1871–1918 from Bas-Rhin, France's regimes around it); `polities_at(place,

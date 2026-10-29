@@ -54,7 +54,8 @@ export interface Relationship {
   is_physical_presence: boolean;
   /** name_then: its former name in use during the relationship (API 152/159) — "lived in Tokyo (then Edo)". */
   /** polity_then: the state the place (an institution's city) belonged to at the start of the relationship (API 161). */
-  entity: { type: EntityType; slug: string; name: string; period?: DateRange | null; name_then?: NameThen | null; polity_then?: EntryRef | null };
+  /** qualifier: a place's words apart from others of its name (API 162) — "Cambridge (Massachusetts)". */
+  entity: { type: EntityType; slug: string; name: string; period?: DateRange | null; name_then?: NameThen | null; polity_then?: EntryRef | null; qualifier?: string | null };
   period: DateRange | null;
   note: string | null;
   certainty: string | null;
@@ -233,7 +234,8 @@ export interface ArtworkItem extends Located, Titled {
   /** Materials, and every name of the type / material terms in every language, for searching (API migration 071). */
   materials?: string[]; term_names?: string[];
 }
-export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; country_code: string | null; location: PointGeometry | null }
+/** qualifier: what sets it apart from places of the same name — "Massachusetts", "district of Portugal" (API 162); null when its name is the only one. */
+export interface PlaceItem extends Named { slug: string; name: string; kind: string | null; designation?: string | null; qualifier?: string | null; country_code: string | null; location: PointGeometry | null }
 export interface MovementItem extends Named { slug: string; name: string; kind: string | null; period: DateRange | null }
 export interface InstitutionItem extends Located, Named {
   slug: string; name: string; kind: string | null; founded: DateRange | null; image_url: string | null;
@@ -453,6 +455,8 @@ export interface Place extends DetailBase, Named {
   name: string; alt_names: string[]; kind: string | null; country_code: string | null;
   /** What it is as a unit — "canton of Switzerland", "province of Italy" (API 158); `kind` the coarse kind. */
   designation?: string | null;
+  /** What sets it apart from places of the same name (API 162): its region, designation, kind or country; null = the only one. */
+  qualifier?: string | null;
   /** When it existed as such — a dissolved unit, a merged city (API 159); null = not known / still there. */
   existed?: DateRange | null;
   /** The states it belonged to over time (API 161), inherited from the places above (`via`), the nearest link winning. */

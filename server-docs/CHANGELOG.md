@@ -4,6 +4,38 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Places of one name told apart, cleanup (migration 162) — step F of the places plan
+- **What:** `place_qualifier()` (API `qualifier` on places and on relationship targets; site: list row, page subtitle
+  "in Cambridgeshire", relationships "Cambridge (Massachusetts)"); place search fields Kind = designation, In = region,
+  Country derived (pickers); `dup_score()` evidence for places (one within the other, different countries, different
+  numbers) — 51 of the 54 place duplicate pairs gone, the other 3 marked "not the same" (former/today's 7th
+  arrondissement, West/East Flanders, Alcázar/Royal Palace of Madrid). Data: 55 slugs readable (`milano` →
+  `metropolitan-city-of-milan`, `zurich-region` → `canton-of-zurich`, `cambridge-2` → `cambridge-england`, `limburg` →
+  `limburg-belgium` …; old slugs redirect, 041), 8 regions named as what they are ("Province of Antwerp", "Lisbon
+  District", "State of Rio de Janeiro"; the old name kept as an alternative), 12 places of the vague kind "site"
+  resolved (2 left: a cemetery, a park), 2 unused places deleted (Leinfelden-Echterdingen — a wrong seat of the CIAM,
+  corrected since —, Tipaza). E2E place-within, site test; perf 35/35.
+- **Why:** owner, 2026-10-29 (places plan F): the same name for two places must not leave readers guessing.
+- **Revert:** `git revert`; drop `place_qualifier`, `place_ancestors`, `places_name_key_idx`, restore `dup_score` and
+  `entry_search_fields` from 044/110 as patched since; the renames via the admin (old slugs redirect either way).
+
+### Gaps in the polity chains filled (data)
+- **What:** 41 polities more from Wikidata (152 now) (Swiss Confederation of the Act of Mediation and of the Restoration, Republic of
+  Geneva, Three Leagues, German Confederation, North German Confederation, Baden, Württemberg, Hanover, Hesse, Electorate
+  of Hesse, Nassau, Frankfurt (free city, grand duchy), Würzburg, Aschaffenburg, Bayreuth, Nuremberg, Hamburg, Berg,
+  Westphalia, Brunswick, Mecklenburg-Schwerin/-Strelitz, Anhalt-Dessau, Anhalt, Saxe-Weimar-Eisenach, Electorate of
+  Saxony, Swedish Pomerania, Crown of Aragon, Duchy of Ferrara, Italian Republic 1802–05, Roman Republic 1798–99,
+  Ligurian Republic, Lucca (principality, duchy), United Provinces of Central Italy, Kenmu Restoration, Azuchi–Momoyama,
+  Sovereign Principality of the United Netherlands); 254 `in_polity` links more (531) and 39 successions (85): Switzerland and each
+  canton (the Empire until it joined), German towns 1806–1871 with the Confederation of the Rhine / German / North
+  German Confederation beside their state, Catalonia and Alicante in the Crown of Aragon until 1716 (French 1812–14),
+  Japan 1333–36 and 1573–1603, the Netherlands 1813–15, Ferrara before 1598, Genoa 1797–1805, Lucca 1805–47, Emilia
+  1859–60; the Papal States split around the Roman Republic, Umbria (French 1809–14) and the Marches (Napoleonic
+  Italy 1808–14), the Bourbon Restoration around the Hundred Days. Left open: the transitions of 1813–1815 (Allied
+  administrations, no state of their own).
+- **Why:** owner, 2026-10-29 ("die Lücken").
+- **Revert:** delete the links by their audit entries (source admin, 2026-10-29) or by polity.
+
 ### Places in polities: data (step E)
 - **Polities:** 71 created from Wikidata (`from-wikidata.js polity`, new option `--different=` for the duplicate check:
   the July Monarchy is not the Bourbon Restoration) — the French regimes 987–today, Dutch, Belgian, German, Austrian,
