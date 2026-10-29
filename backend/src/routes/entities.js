@@ -166,7 +166,7 @@ const ENTITIES = {
     // country_code: its country today — by hand, else where its point lies, else its parent's (155); `within`: the
     // first-level division (canton, Land, province) its point lies in, from Natural Earth
     list: `t.kind, t.designation, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location`,
-    detail: `t.kind, t.designation, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location,
+    detail: `t.kind, t.designation, range_json(t.existed, t.existed_label) AS existed, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location,
              (SELECT jsonb_build_object('code', b.code, 'name', b.name) FROM boundaries b WHERE b.code = t.within_code AND b.level = 1) AS within,
              (SELECT ST_AsGeoJSON(g.outline)::jsonb FROM place_geo g WHERE g.id = t.id) AS area,
              (SELECT jsonb_build_object('location', CASE WHEN t.location IS NOT NULL THEN 'own' ELSE 'derived' END,
@@ -290,7 +290,10 @@ const RELATIONSHIPS_SQL = `
          CASE WHEN r.subject_type = $1 AND r.subject_id = $2 OR rt.is_symmetric THEN rt.label ELSE rt.inverse_label END AS label,
          ${edgeCategory('r', 'rt')} AS category, rt.is_physical_presence,
          jsonb_build_object('type', o.type, 'slug', o.slug, 'public_id', o.public_id, 'name', o.name,
-                            'period', range_json(o.period, o.period_label)) AS entity,
+                            'period', range_json(o.period, o.period_label),
+                            -- its name then (152/159): a former name in use during the relationship ("lived in Tokyo (then Edo)")
+                            'name_then', CASE WHEN r.period IS NOT NULL THEN (SELECT jsonb_build_object('text', ruby_plain(nt.text), 'lang', nt.lang,
+                              'period', range_json(nt.period, nt.period_label), 'note', nt.note) FROM name_then(o.type, o.id, r.period) nt WHERE nt.id IS NOT NULL) END) AS entity,
          range_json(r.period, r.period_label) AS period,
          r.label AS note, r.certainty, r.notes_md,
          r.source <> 'relationship' AS derived, r.end_basis,  -- derived: the creator field or the provenance (031)

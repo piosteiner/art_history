@@ -96,6 +96,9 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
   Kinds of places (157): settlement, district (part of a city), street (street or square), building, site, natural,
   archaeological, region (any administrative unit), country, continent; `places.designation` (158) says what it is
   as a unit — "canton of Switzerland", "province of Italy" — from Wikidata P31, editable.
+  Places in time (159): `places.existed` (+ label) — when a unit existed (Seine-et-Oise 1790–1968, Tokyo City
+  1889–1943); a renamed place stays one entry, its former names carry the time (152); check
+  `place_used_outside_existence`.
   A place's country and first-level division come from its point (155): `places.within_code` = the Natural Earth
   division (else country) whose outline covers it (trigger `places_within`, `boundary_at()` with ST_Covers);
   `place_country()` walks up the parents taking at each step a code by hand, else the one the point lies in. Checks

@@ -84,10 +84,15 @@ const timeline = () => cached('periods', async () => {
         UNION ALL
         SELECT up.movement_id, up.artist_id, p.parent_id, up.depth + 1 FROM up JOIN places p ON p.id = up.id WHERE p.parent_id IS NOT NULL AND up.depth < 20
       ),
+      -- each place's country once (not once per row of the chain above it — the chains got longer with the divisions, 155)
+      country AS (
+        SELECT x.place_id, place_country(x.place_id)->>'slug' AS slug FROM (SELECT DISTINCT place_id FROM stays WHERE place_id IS NOT NULL) x
+      ),
       lived AS (
         SELECT s.movement_id, s.artist_id,
-               array_remove(array_agg(DISTINCT pl.slug) || array_agg(DISTINCT place_country(s.place_id)->>'slug'), NULL) AS places
+               array_remove(array_agg(DISTINCT pl.slug) || array_agg(DISTINCT c.slug), NULL) AS places
         FROM stays s LEFT JOIN up ON (up.movement_id, up.artist_id) = (s.movement_id, s.artist_id) LEFT JOIN places pl ON pl.id = up.id
+        LEFT JOIN country c ON c.place_id = s.place_id
         GROUP BY s.movement_id, s.artist_id
       )
       SELECT ma.movement_id, a.slug, a.public_id, a.name, a.birth_label, a.death_label,

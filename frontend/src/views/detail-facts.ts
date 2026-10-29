@@ -198,6 +198,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         // what it is: the precise designation ("canton of Switzerland", API 158), else the kind
         title: e.name, subtitle: [e.designation ?? e.kind, e.country_code].filter(Boolean).join(' · '), text: e.description_html, images: [],
         facts: [
+          ['Existed', e.existed?.label ?? null],   // a dissolved unit, a merged city (API 159)
           ['Part of', refs('place', [...e.ancestors].reverse())],
           // the division its point lies in (Natural Earth), when it isn't among the places it is part of already
           ['Region', e.within && !e.ancestors.some((a) => a.name === e.within!.name) ? e.within.name : null],

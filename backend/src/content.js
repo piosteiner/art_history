@@ -19,7 +19,8 @@ const TYPES = [
   { type: 'place', folder: 'places', table: 'places', name: 'name', fields: {
     // kind: settlement, district, street, building, site, natural, archaeological, region, country, continent (157);
     // designation: what it is as a unit — "canton of Switzerland", "province of Italy" (158)
-    name: 'name', names: 'names', kind: 'text', designation: 'text', parent: 'parent', country_code: 'text', boundary_code: 'text',
+    // existed: when it existed as such — a dissolved unit, a merged city (159)
+    name: 'name', names: 'names', kind: 'text', designation: 'text', existed: 'period', parent: 'parent', country_code: 'text', boundary_code: 'text',
     location: 'point', area: 'area', description_md: 'md', wikidata_id: 'text', metadata: 'json' } },
   { type: 'movement', folder: 'movements', table: 'movements', name: 'name', fields: {
     name: 'name', names: 'names', kind: 'text', parent: 'parent', period: 'period',

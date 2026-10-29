@@ -309,7 +309,7 @@ export function relationshipSections(rels: Relationship[], pageType?: string, bi
     <h2>${heading(cat)}</h2>
     <ul class="rel-list">${groups.get(cat)!.sort(byDate).map((r) => html`<li>
       ${cat === r.type || (pageType === 'event' && cat === 'depiction') ? '' : html`<span class="rel-label">${r.label}</span>`}
-      ${link(r.entity.type, r.entity.slug, r.entity.name)}${role(r) ? html` <span class="rel-role">(${r.note})</span>` : ''}
+      ${link(r.entity.type, r.entity.slug, r.entity.name)}${r.entity.name_then ? html` <span class="muted name-then" title="${r.entity.name_then.note ?? `its name ${r.entity.name_then.period?.label ?? 'then'}`}">(then ${nameSpan(r.entity.name_then.text, r.entity.name_then.lang)})</span>` : ''}${role(r) ? html` <span class="rel-role">(${r.note})</span>` : ''}
       ${r.period ? html`<span class="muted">${r.period.label}</span>` : ''}${impliedEnd(r.end_basis)}
       ${uncertain(r.certainty)}${cite(r.sources, bibliography)}
       ${r.note && !role(r) ? html`<div class="rel-note">${r.note}</div>` : ''}

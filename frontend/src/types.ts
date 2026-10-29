@@ -52,7 +52,8 @@ export interface Relationship {
   label: string;
   category: Category;
   is_physical_presence: boolean;
-  entity: { type: EntityType; slug: string; name: string; period?: DateRange | null };
+  /** name_then: its former name in use during the relationship (API 152/159) — "lived in Tokyo (then Edo)". */
+  entity: { type: EntityType; slug: string; name: string; period?: DateRange | null; name_then?: NameThen | null };
   period: DateRange | null;
   note: string | null;
   certainty: string | null;
@@ -451,6 +452,8 @@ export interface Place extends DetailBase, Named {
   name: string; alt_names: string[]; kind: string | null; country_code: string | null;
   /** What it is as a unit — "canton of Switzerland", "province of Italy" (API 158); `kind` the coarse kind. */
   designation?: string | null;
+  /** When it existed as such — a dissolved unit, a merged city (API 159); null = not known / still there. */
+  existed?: DateRange | null;
   /** The first-level division its point lies in — canton, Land, province, prefecture (Natural Earth; API 155). */
   within?: { code: string; name: string } | null;
   location: PointGeometry | null; area: unknown | null;

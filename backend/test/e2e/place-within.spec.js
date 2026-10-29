@@ -41,3 +41,22 @@ test('a street with its designation: the new kinds and the designation field', a
   expect(body).toEqual(expect.objectContaining({ kind: 'street', designation: 'street in Paris', country_code: 'FR' }));
   sql("DELETE FROM places WHERE slug = 'test-rue-du-bac'");
 });
+
+// 159: a place in time — when it existed; a relationship shows the name it had then; one dated outside is reported
+test('a place in time: its former name on a dated relationship, its existence, a relationship outside it', async ({ request }) => {
+  sql(`INSERT INTO places (slug, name, kind, location, names, existed, existed_label) VALUES ('test-tokyo-time', 'Test Tokyo', 'settlement',
+         ST_GeogFromText('POINT(139.35 35.4)'), '[{"text": "Test Edo", "lang": "ja-Latn", "role": "former", "period": "(,1868-09-03)", "period_label": "until 2 September 1868"}]',
+         '[1457-01-01,1943-07-01)', '1457–30 June 1943');
+       INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id, period, period_label) VALUES
+         ('artist', entity_id('artist', 'katsushika-hokusai'), 'lived_in', 'place', entity_id('place', 'test-tokyo-time'), '[1830-01-01,1831-01-01)', '1830'),
+         ('artist', entity_id('artist', 'vincent-van-gogh'), 'visited', 'place', entity_id('place', 'test-tokyo-time'), '[1950-01-01,1951-01-01)', '1950')`);
+  await settled();
+  const hokusai = await (await request.get(`${API}/artists/katsushika-hokusai`, { headers: { Host: 'api.localhost' } })).json();
+  const rel = hokusai.relationships.find((r) => r.entity.slug === 'test-tokyo-time');
+  expect(rel.entity.name_then).toEqual(expect.objectContaining({ text: 'Test Edo' }));
+  const place = await (await request.get(`${API}/places/test-tokyo-time`, { headers: { Host: 'api.localhost' } })).json();
+  expect(place.existed).toEqual(expect.objectContaining({ label: '1457–30 June 1943', to_year: 1943 }));
+  expect(sql(`SELECT detail FROM quality_issues_live WHERE check_id = 'place_used_outside_existence' AND entity_id = entity_id('artist', 'vincent-van-gogh')`))
+    .toBe('visited Test Tokyo (1950), but Test Tokyo existed 1457–30 June 1943');
+  sql("DELETE FROM places WHERE slug = 'test-tokyo-time'");
+});

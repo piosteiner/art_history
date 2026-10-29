@@ -151,6 +151,8 @@ links, ask once, show on hover. Cached 60 s like the rest of the API.
   (`/v1/map/presence`, `/v1/map/<type>/:slug`) then carry `institution: {slug, name}` and `place` = the city it is in;
   the point is the institution's own, else its city's. **Encounters:** same `institution` and overlapping periods =
   could have met there; only the same `place` = were in the same city at the same time.
+- Places: `existed` (when it existed as such, 159). In `relationships`, `entity.name_then`: the other entry's former name
+  in use during the relationship ("lived in Tokyo (then Edo)").
 - Places: `kind` (settlement, district, street, building, site, natural, archaeological, region, country, continent —
   157) and `designation` ("canton of Switzerland", 158). `country_code` is the country today — by hand, else where the point lies, else the parent's (155); the
   detail has `within: {code, name}`, the first-level division (canton, Land, province) the point lies in.

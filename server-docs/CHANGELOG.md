@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Places in time (migration 159) — step D of the places plan
+- **What:** `places.existed` (+ label, GiST index), form field "Existed", API place `existed`, site row "Existed";
+  relationships carry `entity.name_then` (the former name in use during the relationship, via `name_then()`), the
+  site shows "(then Edo)"; check `place_used_outside_existence` (info). `/v1/periods`: each place's country computed
+  once (the longer chains since 155 made the artists' query 5.8 s on 10× data → 0.3 s). E2E place-within; perf 35/35.
+- **Why:** owner, 2026-10-29 — renamed places, dissolved units, places in time.
+- **Revert:** `git revert`; `ALTER TABLE places DROP COLUMN existed, DROP COLUMN existed_label`.
+
 ### Places: finer kinds and the designation (migrations 157, 158) — step B of the places plan
 - **What:** `place_kind` + continent, district, street, natural, archaeological (157); `places.designation` (158);
   checks "every place but a country" spare a continent; Wikidata `placeKind()` and the place finder know the new
