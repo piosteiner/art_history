@@ -163,8 +163,11 @@ const ENTITIES = {
     type: 'place', table: 'places', alt: 'alt_names', name: 'name', period: null,
     // location / area: what to draw — own point and outline, else derived (view place_geo, migration 032):
     // a country with only its code gets the Natural Earth outline and label point
-    list: `t.kind, t.country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location`,
-    detail: `t.kind, t.country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location,
+    // country_code: its country today — by hand, else where its point lies, else its parent's (155); `within`: the
+    // first-level division (canton, Land, province) its point lies in, from Natural Earth
+    list: `t.kind, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location`,
+    detail: `t.kind, place_country(t.id)->>'code' AS country_code, t.boundary_code, (SELECT ST_AsGeoJSON(g.marker)::jsonb FROM place_geo g WHERE g.id = t.id) AS location,
+             (SELECT jsonb_build_object('code', b.code, 'name', b.name) FROM boundaries b WHERE b.code = t.within_code AND b.level = 1) AS within,
              (SELECT ST_AsGeoJSON(g.outline)::jsonb FROM place_geo g WHERE g.id = t.id) AS area,
              (SELECT jsonb_build_object('location', CASE WHEN t.location IS NOT NULL THEN 'own' ELSE 'derived' END,
                                         'area', g.outline_source) FROM place_geo g WHERE g.id = t.id) AS geometry_source,

@@ -93,6 +93,10 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
 - Unique `NULLS NOT DISTINCT (subject, type, object, period)` — no exact duplicates; repeats with different periods are fine.
 - Current vs. history: `artworks.current_institution_id` / `institutions.place_id` hold where something is **now**;
   earlier holdings/locations are dated `housed_at` / `located_in` relationships (migration 005), needed only when it moved.
+  A place's country and first-level division come from its point (155): `places.within_code` = the Natural Earth
+  division (else country) whose outline covers it (trigger `places_within`, `boundary_at()` with ST_Covers);
+  `place_country()` walks up the parents taking at each step a code by hand, else the one the point lies in. Checks
+  `place_without_country`, `place_outside_country` (an exclave like Campione d'Italia: Mark as OK).
   Several places at once (154): `branch_in` — an institution's branches, offices, salerooms beside its seat, each with
   its period (Sotheby's: London since 1744, Paris since 1967 …); the place a city, or a building under it for the exact
   spot. The start map's museums layer shows them (`/v1/map/sites`, `branch`).

@@ -447,7 +447,10 @@ export interface ProvenanceAlternative {
 
 export interface Place extends DetailBase, Named {
   type: 'place';
+  /** country_code: its country today — by hand, else where its point lies, else its parent's (API 155). */
   name: string; alt_names: string[]; kind: string | null; country_code: string | null;
+  /** The first-level division its point lies in — canton, Land, province, prefecture (Natural Earth; API 155). */
+  within?: { code: string; name: string } | null;
   location: PointGeometry | null; area: unknown | null;
   description_html: string | null;
   ancestors: KindRef[]; children: KindRef[]; institutions: KindRef[];

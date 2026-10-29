@@ -151,6 +151,8 @@ links, ask once, show on hover. Cached 60 s like the rest of the API.
   (`/v1/map/presence`, `/v1/map/<type>/:slug`) then carry `institution: {slug, name}` and `place` = the city it is in;
   the point is the institution's own, else its city's. **Encounters:** same `institution` and overlapping periods =
   could have met there; only the same `place` = were in the same city at the same time.
+- Places: `country_code` is the country today — by hand, else where the point lies, else the parent's (155); the
+  detail has `within: {code, name}`, the first-level division (canton, Land, province) the point lies in.
 - `GET /v1/map/sites` — institutions and immovable artworks with an exact location of their own
   (`properties: {type, slug, name, kind, address, place}`). An institution's branches (154) come as further features of
   it at their place, with `branch: {place, period}` (`address` = the branch's label), `from_year`/`to_year` from the

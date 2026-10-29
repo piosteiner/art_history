@@ -198,6 +198,8 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         title: e.name, subtitle: [e.kind, e.country_code].filter(Boolean).join(' · '), text: e.description_html, images: [],
         facts: [
           ['Part of', refs('place', [...e.ancestors].reverse())],
+          // the division its point lies in (Natural Earth), when it isn't among the places it is part of already
+          ['Region', e.within && !e.ancestors.some((a) => a.name === e.within!.name) ? e.within.name : null],
           ['Includes', refs('place', e.children)],
           ['Institutions', refs('institution', e.institutions)],
           ['Coordinates', e.location ? `${e.location.coordinates[1].toFixed(4)}, ${e.location.coordinates[0].toFixed(4)}` : null],

@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Places: country and division from the point (migration 155) — step 1 of the places plan
+- **What:** `places.within_code` (Natural Earth division/country under the point, trigger), `place_country()` uses it,
+  API places `country_code` derived + `within`, site place pages "Region". Checks place_without_country,
+  place_outside_country (place_without_parent existed). E2E place-within.spec.js; perf 35/35.
+- **Why:** owner, 2026-10-29 — places to be reliable; 364 of 546 places had no country (no parent, no code).
+- **Revert:** `git revert`; `ALTER TABLE places DROP COLUMN within_code` (+ trigger, `boundary_at()`), 019's place_country().
+
 ### Statistics: the vocabulary of names
 - **What:** `/v1/stats/vocabulary` has `names: {roles, kinds}` (src/vocabulary.js, German explanations, counted in
   entry_names); the site's /statistik shows them as "Namen: Rollen und Arten" between relationships and provenance
