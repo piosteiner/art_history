@@ -15,7 +15,10 @@ Format: date — what — why — how to revert.
   under the city within 5 km else their division, administrative units filed as "site" (provinces, arrondissements)
   under their division. By hand, because the simplified outlines put them over the border: Boulogne-Billancourt and
   Neuilly-sur-Seine (Hauts-de-Seine), Saint-Maurice and Vincennes (Val-de-Marne), Chatou (Yvelines); Seine-et-Oise
-  (dissolved 1968) under France. Places without a country 364 → 12 (→ fewer after 156), without parent 383 → 16.
+  (dissolved 1968) under France; after 156 the coastal cities too (Lisbon → Lisboa, Copenhagen, Le Havre, Vlissingen),
+  regions with a code only under their country, French Polynesia under France, Argentina created. Places without a
+  country 364 → 4 (Europe and the three polities filed as countries: Galicia, Kingdom of Italy, Kingdom of the
+  Netherlands — step E), without a parent 383 → 1 (Europe — step B).
 - **Revert:** History (source admin); 156: `git revert`.
 
 ### Places: country and division from the point (migration 155) — step 1 of the places plan
