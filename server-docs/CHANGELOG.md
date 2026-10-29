@@ -9,6 +9,8 @@ Format: date — what — why — how to revert.
   relationships carry `entity.name_then` (the former name in use during the relationship, via `name_then()`), the
   site shows "(then Edo)"; check `place_used_outside_existence` (info). `/v1/periods`: each place's country computed
   once (the longer chains since 155 made the artists' query 5.8 s on 10× data → 0.3 s). E2E place-within; perf 35/35.
+- **Tests:** the first deploy stopped at series.spec (the entry page read before the worker had written graph_links —
+  now `settled()`; its works are cleaned up in afterAll, as a failure had left them for yaml-roundtrip to trip over).
 - **Why:** owner, 2026-10-29 — renamed places, dissolved units, places in time.
 - **Revert:** `git revert`; `ALTER TABLE places DROP COLUMN existed, DROP COLUMN existed_label`.
 

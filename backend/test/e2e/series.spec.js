@@ -1,6 +1,9 @@
 // Series and other wholes (migration 037): a whole with its numbered parts, new parts prefilled, existing artworks
 // added, order and neighbours, the loop guard, publishers, the public API.
-const { test, expect, sql, submitForm, API } = require('./helpers');
+const { test, expect, sql, submitForm, settled, API } = require('./helpers');
+
+// also when the test fails half-way: its works left behind would stop the YAML round trip (yaml-roundtrip.spec.js)
+test.afterAll(() => sql("DELETE FROM artworks WHERE slug IN ('print-twenty-one', 'thirty-six-views-test')"));
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
 
@@ -62,6 +65,7 @@ test('a series with numbered parts: new and existing parts, order, neighbours, m
   await userA.fill('#r-to', 'artwork/thirty-six-views-test');
   await userA.keyboard.press('Escape');
   await Promise.all([userA.waitForNavigation(), userA.click('form[action$="/relationships"] button:has-text("Add")')]);
+  await settled();   // the entry page reads graph_links, a moment behind (126)
   await userA.goto('/artworks/thirty-six-views-test');
   await expect(userA.locator('tr', { hasText: 'Theo van Gogh' })).toContainText('published by');
   sql("DELETE FROM artworks WHERE slug IN ('print-twenty-one', 'thirty-six-views-test')");
