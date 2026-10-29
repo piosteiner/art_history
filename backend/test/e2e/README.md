@@ -35,6 +35,7 @@ npx playwright show-trace test/e2e/.results/<…>/trace.zip   # what the browser
 | `as-of` | an entry as of a moment (fields, relationships, provenance), changes since, versions, deleted entries (089) |
 | `search-text` | full-text search: stems (EN/DE/FR), accents, phrases, exclusions, provenance steps, escaped highlights (087) |
 | `network` | shortest path, holders in a window, shared hands with depth and current holders (088) |
+| `colbase` | ColBase on Enrich: the work's record (not a photograph of it) gives web page, heritage designation (relationship, cited) and CC BY image (166) |
 | `spatial` | travel distance, encounters (same place / within km), clusters by zoom; prices: exclusion constraint, null value, currency codes (090/091) |
 | `sound-alike` | names that sound alike as possible duplicates, candidate pairs, live check, quality page (092/093) |
 | `editor-scopes` | row-level security: a scoped account writes only its collection's artworks and their provenance, admin message (094) |

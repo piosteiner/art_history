@@ -29,6 +29,7 @@ const CHECKS = {
   parent_suggestion: { title: 'Parent suggested from the map', fix: 'The place lies inside the outline of another place — set it as the parent.' },
   boundary_available: { title: 'Outline available', fix: 'Set the boundary code (ISO, e.g. JP or JP-13) — the outline and marker then come from Natural Earth.' },
   // places (155): the country and the first-level division come from the point (Natural Earth outlines)
+  designation_not_heritage: { title: 'Designation that is no heritage designation', fix: 'The relationship "designated" points at a glossary term of another category: pick a heritage designation (National Treasure (Japan), World Heritage Site …), or give that term the category "heritage designation" if it is one.' },
   place_without_country: { title: 'Place without a country', fix: 'Give it a point (map picker) — the country then follows from where it lies; or set its parent (the city of a building, the region of a city); a country code by hand only for special cases.' },
   place_used_outside_existence: { title: 'Place used when it didn’t exist', fix: 'The relationship is dated outside the time the place existed (its “Existed”): link the place of that time instead (Seine-et-Oise before 1968, its successor after), or correct the dates.' },
   place_outside_country: { title: 'Point outside its country', fix: 'The country code set by hand differs from where the point lies: correct the point or the code. An exclave or a border case (Campione d’Italia): Mark as OK.' },

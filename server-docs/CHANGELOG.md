@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Heritage designations (migrations 165/166) and ColBase on Enrich
+- **What:** glossary category `heritage designation` (165) with 7 terms (166: National Treasure, Important Cultural
+  Property, Important Art Object (Japan), World Heritage Site, Swiss cultural property of national significance,
+  Monument historique, under "heritage designation"; Wikidata items), relationship type `designated_as` (artwork /
+  institution / place → term, category `heritage`), check `designation_not_heritage`; site section "Protection
+  status". ColBase (Tokyo, Kyoto, Nara, Kyushu National Museums) through Japan Search (`f-db=cobas`) on the Enrich page
+  of artworks with a Japanese title (`src/admin/colbase.js`): the record that is the work gives its page, museum and
+  inventory number (only where ours is empty, pending citations to the new source `colbase`), its designation
+  (relationship, cited) and its CC BY image. E2E colbase.
+- **Note:** 165/166 and the first version of colbase.js went live with the 18:4x deploy of 167e09c (uncommitted files
+  in this checkout — the server runs from it); that version wrote `relationships.note` (no such column) — fixed here.
+- **Why:** owner, 2026-10-29 ("ja zu allem": a general heritage status, the ColBase comparison).
+- **Revert:** `git revert`; `DELETE FROM relationships WHERE relationship_type = 'designated_as'`, the type, the terms
+  (category stays — enum values can't be dropped).
+
 ### Roadmap "in Arbeit": search sections, artists by museum, hover images, search hits, wide pictures (migration 164)
 - **What:** artists' search fields "Works now in" / "Works formerly in" as tiers (164) and `collections` with counts in
   the artists list (API) — "Borghese" under Artists finds the artists with works there; section headings of a search

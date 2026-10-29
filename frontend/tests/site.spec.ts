@@ -2797,3 +2797,19 @@ test('a very wide picture (Monet’s Water Lilies) keeps a readable height and s
   await expect(box).toBeVisible();
   expect((await box.locator('img').boundingBox())!.height).toBeGreaterThan(400);
 });
+
+test('protection status (API 166): a designation as its own section of the relationships, linked to the glossary', async ({ page }) => {
+  await page.route(/\/v1\/artworks\/(100501|der-wanderer-uber-dem-nebelmeer)(\?.*)?$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.relationships = [...(body.relationships ?? []), { type: 'designated_as', direction: 'outgoing', label: 'designated', category: 'heritage',
+      is_physical_presence: false, entity: { type: 'term', slug: 'national-treasure-japan', name: 'National Treasure (Japan)' },
+      period: { label: 'since 1951', from: '1951-01-01', to: null, from_year: 1951, to_year: null }, note: null, certainty: 'attested', notes_html: null, sources: null }];
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/100501/der-wanderer-uber-dem-nebelmeer');
+  const group = page.locator('.rel-group', { has: page.getByRole('heading', { name: 'Protection status' }) });
+  await expect(group).toBeVisible();
+  await expect(group.locator('a[href="/glossary/national-treasure-japan"]')).toHaveText('National Treasure (Japan)');
+  await expect(group).toContainText('1951');
+});

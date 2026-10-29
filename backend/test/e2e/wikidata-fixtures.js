@@ -228,6 +228,15 @@ function handle(req, res) {
       online_media: { media: [{ type: 'Images', content: `https://ids.si.edu/${title.length}.jpg`, thumbnail: `https://ids.si.edu/${title.length}-t.jpg`, usage: { access } }] } } } });
     return json({ response: { rows: [row('Plum Estate, Kameido', 'CC0'), row('Restricted print', 'usage conditions apply')] } });
   }
+  // ColBase through Japan Search (src/admin/colbase.js): Kōrin's Wind and Thunder Gods, and a glass-plate photograph of it
+  if (url.pathname === '/jps/api/item/search/jps-cross' && p.get('f-db') === 'cobas') {
+    const cobas = (id, provider, extra) => ({ id, common: { title: '風神雷神図屏風', contentsRightsType: 'ccby', linkUrl: `https://colbase.example/${id}` },
+      'cobas-1-u': `https://colbase.example/${id}`, 'cobas-5-s': '風神雷神図屏風', 'cobas-19-s': provider, ...extra });
+    return json({ hit: 2, list: [
+      cobas('cobas-1', 'tnm', { 'cobas-2-s': 'A-11189-1', 'cobas-3-s': '重要文化財', 'cobas-30-s': 'Important Cultural Property', 'cobas-32-s': 'Wind God and Thunder God',
+        'cobas-34-s': 'By Ogata Kōrin', 'cobas-37-s': 'Edo period, 18th century', 'cobas-42-s': 'Tokyo National Museum', 'cobas-18-u': 'https://colbase.example/A-11189-1.jpg' }),
+      cobas('cobas-2', 'tobunken', { 'cobas-42-s': 'Tokyo National Research Institute for Cultural Properties' })] });
+  }
   if (url.pathname === '/jps/api/item/search/jps-cross') {
     const item = (id, rights) => ({ id, common: { title: '名所江戸百景 亀戸梅屋舗', titleYomi: 'めいしょえどひゃっけい かめいどうめやしき', contentsRightsType: rights,
       contentsUrl: [`https://colbase.example/${id}.jpg`], thumbnailUrl: [`https://colbase.example/${id}-t.jpg`], linkUrl: `https://colbase.example/items/${id}`,

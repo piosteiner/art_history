@@ -44,7 +44,8 @@ export interface PointGeometry {
 
 export type Category =
   | 'presence' | 'association' | 'influence' | 'education'
-  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication' | 'event' | 'family';
+  | 'collaboration' | 'membership' | 'patronage' | 'provenance' | 'polity' | 'depiction' | 'glossary' | 'architecture' | 'publication' | 'event' | 'family'
+  | 'heritage';  // heritage designations (API 166)
 
 export interface Relationship {
   type: string;
