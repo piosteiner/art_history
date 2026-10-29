@@ -68,7 +68,14 @@ async function find(db, t, ours) {
       OR EXISTS (SELECT 1 FROM jsonb_array_elements(names) n WHERE f_unaccent(lower(n->>'text')) = f_unaccent(lower($1))) LIMIT 1`, [h]);
     if (rows.length) holders[h] = rows[0];
   }
-  return { records, title, holders, ours: { web_url: ours['f.web_url'] || '', institution: ours['f.institution'] || '', inventory_number: ours['f.inventory_number'] || '' } };
+  const mine = { web_url: ours['f.web_url'] || '', institution: ours['f.institution'] || '', inventory_number: ours['f.inventory_number'] || '' };
+  // a title like 自画像 ("self-portrait") is many works': the record at our museum is this one; with another museum of
+  // ours, none is picked for us — with none, the only record of exactly this title
+  const atOurs = (r) => !!mine.institution && (holders[r.holder] || {}).slug === mine.institution;
+  records.sort((a, b) => Number(atOurs(b)) - Number(atOurs(a)));
+  const exact = records.filter((r) => squash(r.title) === squash(title));
+  const pick = records.find(atOurs) || (!mine.institution && exact.length === 1 ? exact[0] : null);
+  return { records, title, holders, ours: mine, pick: pick ? pick.id : null, elsewhere: !!mine.institution && !records.some(atOurs) };
 }
 
 // what a record can give us, each only where ours is empty (and the number only where the museum is ours)
@@ -90,11 +97,12 @@ function section(cb) {
   return html`<h2>ColBase (Japan's national museums)</h2>
     <p class="muted small">Records of the Tokyo, Kyoto, Nara and Kyushu National Museums with this title (through Japan Search). Pick the one that
       is this work: what it gives is taken only where ours is empty, with ColBase as the source.</p>
-    <div class="table-wrap"><table class="diff wd-table colbase-records"><tbody>${cb.records.map((r, i) => {
+    ${cb.elsewhere ? html`<p class="flash">None of these is at the museum this work is in — probably other works of the same title. Pick one only if it is this work.</p>` : ''}
+    <div class="table-wrap"><table class="diff wd-table colbase-records"><tbody>${cb.records.map((r) => {
       const o = offers(cb, r);
       const box = (k, label) => html`<label class="choice"><input type="checkbox" name="cb:${r.id}:${k}" value="take" checked> ${label}</label>`;
       return html`<tr>
-      <td><label class="choice"><input type="radio" name="cb:pick" value="${r.id}"${i === 0 && squash(r.title) === squash(cb.title) && cb.records.filter((x) => squash(x.title) === squash(cb.title)).length === 1 ? ' checked' : ''}>
+      <td><label class="choice"><input type="radio" name="cb:pick" value="${r.id}"${r.id === cb.pick ? ' checked' : ''}>
         <b>${r.title}</b></label>${r.titleEn ? html`<div class="muted small">${r.titleEn}</div>` : ''}
         <div class="small"><a href="${r.url}" target="_blank" rel="noopener">${r.holder || 'ColBase'}${r.number ? `, ${r.number}` : ''} ↗</a></div></td>
       <td class="small">${[r.by, r.date, r.format, r.material, r.dimensions].filter(Boolean).join(' · ')}
