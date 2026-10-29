@@ -2064,7 +2064,7 @@ test('artworks list: searching a museum lists what is there now first, then what
   await page.goto('/artworks');
   await page.fill('input.filter', 'prado');
   const headings = page.locator('.cards-heading');
-  await expect(headings).toHaveText(['Now in the collection 1', 'Formerly in the collection 1']);   // each with its size
+  await expect(headings).toHaveText([/^Now in the collection \d+$/, /^Formerly in the collection \d+$/]);   // each with its size (live data: how many varies)
   await expect(page.locator('.card').first()).toContainText('Now in: Museo del Prado');
 });
 

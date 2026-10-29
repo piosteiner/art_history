@@ -128,7 +128,7 @@ export interface SourceHint { siglum: string; citation: string }
 export interface EntryHint { type: EntityType; slug: string; name: string; subtitle: string | null; image_url: string | null; excerpt: string | null }
 
 export interface GlossaryHint { name: string; category: TermCategory; definition: string | null }
-export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'other';  // group of works: API 131, mounting: 133, performing arts: 145
+export type TermCategory = 'technique' | 'architecture' | 'material' | 'iconography' | 'style' | 'format' | 'object type' | 'group of works' | 'mounting' | 'performing arts' | 'heritage designation' | 'other';  // group of works: API 131, mounting: 133, performing arts: 145, heritage designation: 165
 
 // ---- countries and polities ---------------------------------------------------------------------
 
