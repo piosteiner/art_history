@@ -4,7 +4,8 @@
 // GET /v1/map/presence?from=&to=&types=   who was physically where, overlapping the window (timeline slider)
 // GET /v1/map/<plural>/:slug              one entity's places + its travel route (physical presence only);
 //                                         artworks also "provenance": the holders in the sources' order (below)
-// GET /v1/map/sites                       institutions and immovable artworks with an exact location of their own
+// GET /v1/map/sites                       institutions and immovable artworks with an exact location of their own;
+//                                         an institution's branches (154) too, at their place, with `branch`
 // GET /v1/map/events                      events: their area, spot or place (047)
 //
 // A location is a place, an institution (its own point, else its city's) or an immovable artwork (view site_geo,
@@ -328,13 +329,25 @@ router.get('/sites', async (req, res) => {
         'place', (SELECT jsonb_build_object('slug', c.slug, 'name', c.name) FROM places c WHERE c.id = x.place_id),
         -- when it existed, in years (106): from its founding (a building: its making), to its closing or destruction;
         -- null = not known / still there — the start map shows it in a time window only then
-        'from_year', extract(year FROM lower(x.since))::int, 'to_year', extract(year FROM upper(x.until) - 1)::int)) AS feature
+        'from_year', extract(year FROM lower(x.since))::int, 'to_year', extract(year FROM upper(x.until) - 1)::int,
+        'branch', x.branch)) AS feature
     FROM (
-      SELECT 'institution' AS type, i.slug, i.name, i.kind, i.address, i.location AS geom, i.place_id, i.founded AS since, i.dissolved AS until
+      SELECT 'institution' AS type, i.slug, i.name, i.kind, i.address, i.location AS geom, i.place_id, i.founded AS since, i.dissolved AS until,
+             NULL::jsonb AS branch
       FROM institutions i WHERE i.location IS NOT NULL
       UNION ALL
+      -- a branch (154): at its place's marker (a city, or a building with its own point), for its period — bounded by the
+      -- institution's own existence; its label is the branch's name or address
+      SELECT 'institution', i.slug, i.name, i.kind, r.label, g.marker, CASE WHEN c.kind IN ('building', 'site') THEN c.parent_id ELSE c.id END,
+             CASE WHEN lower(r.period) IS NOT NULL THEN daterange(lower(r.period), lower(r.period) + 1) ELSE i.founded END,
+             CASE WHEN upper(r.period) IS NOT NULL THEN daterange(upper(r.period) - 1, upper(r.period)) ELSE i.dissolved END,
+             jsonb_build_object('place', jsonb_build_object('slug', c.slug, 'name', c.name), 'period', range_json(r.period, r.period_label))
+      FROM relationships r JOIN institutions i ON i.id = r.subject_id JOIN places c ON c.id = r.object_id
+      JOIN place_geo g ON g.id = r.object_id
+      WHERE r.relationship_type = 'branch_in' AND r.subject_type = 'institution' AND g.marker IS NOT NULL
+      UNION ALL
       SELECT 'artwork', a.slug, a.title, a.kind, NULL, coalesce(a.area, a.location), entity_home_place('artwork', a.id), a.created,
-        CASE WHEN a.fate = 'destroyed' THEN a.fate_date END
+        CASE WHEN a.fate = 'destroyed' THEN a.fate_date END, NULL
       FROM artworks a WHERE a.location IS NOT NULL OR a.area IS NOT NULL
     ) x ORDER BY x.name COLLATE sort_natural`);
   res.json({ type: 'FeatureCollection', features: rows.map((r) => r.feature) });

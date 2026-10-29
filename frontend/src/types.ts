@@ -620,6 +620,8 @@ export interface SiteProps {
   type: 'institution' | 'artwork'; slug: string; name: string; kind: string | null; address: string | null; place: Ref | null;
   /** When it existed, in years (API 106): founded (a building: made) … dissolved (destroyed); null = not known / still there. */
   from_year?: number | null; to_year?: number | null;
+  /** A branch of the institution (API 154): at its place, for its period — the seat is the feature without `branch`. */
+  branch?: { place: Ref; period: DateRange | null } | null;
 }
 export interface SitesMap { type: 'FeatureCollection'; features: Feature<GeoJSON.Geometry, SiteProps>[] }
 

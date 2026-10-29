@@ -558,15 +558,19 @@ export function showSites(map: MapLibre, fc: SitesMap, visible = true) {
       map.addLayer({
         id: 'sites-points', type: 'circle', source: 'sites', filter: ['==', ['geometry-type'], 'Point'],
         paint: {
-          'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 3, 12, 7], 'circle-color': COLORS.site,
-          'circle-stroke-color': '#fff', 'circle-stroke-width': 1.5,
+          // a branch (API 154): hollow, in the colour of the seat
+          'circle-radius': ['interpolate', ['linear'], ['zoom'], 3, 3, 12, 7],
+          'circle-color': ['case', ['to-boolean', ['get', 'branch']], '#fff', COLORS.site],
+          'circle-stroke-color': ['case', ['to-boolean', ['get', 'branch']], COLORS.site, '#fff'], 'circle-stroke-width': ['case', ['to-boolean', ['get', 'branch']], 2, 1.5],
         },
       });
       popupOnClick(map, SITE_LAYERS, (features) => {
         const p = (features ?? [])[0]?.properties as unknown as SiteProps & { place: string };
         const place = prop<{ slug: string; name: string } | null>(p.place ?? null);
+        const branch = prop<SiteProps['branch']>(p.branch ?? null);
         return html`<div class="popup-row"><strong>${link(p.type, p.slug, p.name)}</strong> <span class="muted">${p.kind ?? (p.type === 'artwork' ? 'building or site' : 'institution')}</span>
-          ${p.address ? html`<div>${p.address}</div>` : ''}${place ? html`<div class="muted">${link('place', place.slug, place.name)}</div>` : ''}</div>`;
+          ${branch ? html`<div>branch in ${link('place', branch.place.slug, branch.place.name)}${branch.period ? html` <span class="muted">${branch.period.label}</span>` : ''}</div>` : ''}
+          ${p.address ? html`<div>${p.address}</div>` : ''}${place && !branch ? html`<div class="muted">${link('place', place.slug, place.name)}</div>` : ''}</div>`;
       }, ['places-circles', 'presence-circles', 'sel-presence', 'sel-association']);
     }
     for (const id of SITE_LAYERS) map.setLayoutProperty(id, 'visibility', visible ? 'visible' : 'none');

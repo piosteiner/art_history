@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-29
 
+### Branches: institutions in several cities at once (migration 154)
+- **What:** relationship type `branch_in` (institution → place, with period; "has a branch in" / "branch of",
+  category presence). `/v1/map/sites` returns the branches as further features of the institution at their place's
+  marker (`branch: {place, period}`, from/to years from the period); the site draws them hollow on the museums layer,
+  "branch in London 1744–" in the popup. E2E test branches.spec.js.
+- **Why:** owner, 2026-10-29 — Sotheby's and other firms with several locations; chosen over "one firm, the city on the
+  provenance step only", as more traceable.
+- **Revert:** `git revert`; `DELETE FROM relationships WHERE relationship_type = 'branch_in'; DELETE FROM
+  relationship_types WHERE code = 'branch_in'`.
+
 ### The kind of name: birth name, pseudonym, art name … (migration 153)
 - **What:** a name says what kind it is (`kind`: birth, married, pseudonym, art_name, religious, nickname,
   abbreviation) — in `names`, `entry_names.kind`, `names_valid()`. CMS: "kind of name" select per row (form line

@@ -93,6 +93,9 @@ Postgres FKs can't point at "a row in one of six tables", so triggers enforce it
 - Unique `NULLS NOT DISTINCT (subject, type, object, period)` — no exact duplicates; repeats with different periods are fine.
 - Current vs. history: `artworks.current_institution_id` / `institutions.place_id` hold where something is **now**;
   earlier holdings/locations are dated `housed_at` / `located_in` relationships (migration 005), needed only when it moved.
+  Several places at once (154): `branch_in` — an institution's branches, offices, salerooms beside its seat, each with
+  its period (Sotheby's: London since 1744, Paris since 1967 …); the place a city, or a building under it for the exact
+  spot. The start map's museums layer shows them (`/v1/map/sites`, `branch`).
 - Plain FKs (`creator_id`, `current_institution_id`, `place_id`, `parent_id`) are `ON DELETE RESTRICT`:
   curated data is never removed implicitly.
 

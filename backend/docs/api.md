@@ -152,7 +152,9 @@ links, ask once, show on hover. Cached 60 s like the rest of the API.
   the point is the institution's own, else its city's. **Encounters:** same `institution` and overlapping periods =
   could have met there; only the same `place` = were in the same city at the same time.
 - `GET /v1/map/sites` — institutions and immovable artworks with an exact location of their own
-  (`properties: {type, slug, name, kind, address, place}`).
+  (`properties: {type, slug, name, kind, address, place}`). An institution's branches (154) come as further features of
+  it at their place, with `branch: {place, period}` (`address` = the branch's label), `from_year`/`to_year` from the
+  branch's period; the seat has `branch: null`.
 
 ### Places: geometry
 `location` (GeoJSON Point) is where to put the marker and `area` (MultiPolygon or `null`) the outline — the place's
