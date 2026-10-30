@@ -18,8 +18,10 @@ Format: date — what — why — how to revert.
   Gregorian (30 May 1471 / 16 April 1528) with the authorities' Julian dates as labels; Velázquez died 6 August 1660
   (RKD, BnF: 7th — acknowledged); Weckmann c. 1450s – 16th century, active 1481–1527 (RKD's years were his
   documented activity); Baroque back to c. 1590–c. 1750 (a stale form had restored 1501–1759). Acknowledged: the
-  Beethoven Frieze and Madame Ingres (owners vs. places of loan), Die Beschneidung's oak. Open for the owner:
-  chanoyu's definition, La Berceuse (Stedelijk) 1888/1889; 31 place parents (Wikidata names a district between).
+  Beethoven Frieze and Madame Ingres (owners vs. places of loan), Die Beschneidung's oak. chanoyu's Mason definition
+  restored (a Wikidata definition had replaced it by mistake — owner) and the stray Wikidata citation removed;
+  La Berceuse (Stedelijk) 1889 cited to the museum's page (archived 2017), Wikidata's 1888 (from Commons)
+  acknowledged. Open: 31 place parents (Wikidata names a district between).
 - **Why:** owner, 2026-10-30. **Revert:** admin history per entry.
 
 ### Quality warnings resolved (migration 176 + data)

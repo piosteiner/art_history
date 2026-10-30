@@ -17,7 +17,7 @@ names:
     role: translation
     text: 다도
 category: other
-definition: ritual serving of tea in Japanese culture
+definition: "The tea ceremony: the ritual preparation and serving of powdered tea, with its own architecture, utensils and aesthetic of wabi."
 wikidata_id: Q202298
 metadata:
   sources: [Wikidata Q202298 (retrieved 2026-10-30)]
@@ -32,5 +32,3 @@ sources:
   definition:
     - source: history-of-japanese-art
       locator: pp. 230–231
-    - accessed: 2026-10-30
-      wikidata: Q202298
