@@ -2,4 +2,44 @@ public_id: 100338
 name: Alphonse Bellier
 given_name: Alphonse
 family_name: Bellier
+kind: person
+birth: 1886-07-21
+death: 1980-11-01
 wikidata_id: Q66826911
+metadata:
+  sources: [Wikidata Q66826911 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q66826911
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q66826911
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/94/Alphonse_Bellier_by_Charles-Auguste_Edelmann_mus%C3%A9e_Carnavalet.png
+    source_url: https://commons.wikimedia.org/wiki/File:Alphonse_Bellier_by_Charles-Auguste_Edelmann_mus%C3%A9e_Carnavalet.png
+    license: Public domain
+    credit: Charles Auguste Edelmann
+identifiers:
+  idref: "119220679"
+  lc: no2003025011
+  viaf: "255367713"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q66826911
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q66826911
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q66826911

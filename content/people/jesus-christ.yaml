@@ -8,6 +8,20 @@ death: 30-04-05
 wikidata_id: Q302
 metadata:
   sources: [Wikidata Q302 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Spas_vsederzhitel_sinay_%28cropped1%29.jpg/1280px-Spas_vsederzhitel_sinay_%28cropped1%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Spas_vsederzhitel_sinay_(cropped1).jpg
+    license: Public domain
+    credit: Unknown artist
+identifiers:
+  bnf: "119392246"
+  gnd: "118557513"
+  idref: "027325636"
+  kulturnav: 9ef47cdc-471d-4863-9c7e-0f78bdfc05fb
+  lc: n79084784
+  nlk: KAC200901348
+  ulan: "500344051"
+  viaf: "141145970137232251241"
 sources:
   kind:
     - accessed: 2026-10-19

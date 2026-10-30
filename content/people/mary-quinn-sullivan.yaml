@@ -9,12 +9,22 @@ wikidata_id: Q2777901
 metadata:
   sources: [Wikidata Q2777901 (retrieved 2026-10-09)]
 relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2777901
   - type: founded
     to: institution/museum-of-modern-art
     sources:
       - accessed: 2026-10-09
         property: P112
         wikidata: Q188740
+identifiers:
+  gnd: "1292595752"
+  lc: n2012030696
+  viaf: "249923454"
 sources:
   kind:
     - accessed: 2026-10-09

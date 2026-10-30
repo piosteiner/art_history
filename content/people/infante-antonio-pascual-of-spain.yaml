@@ -6,6 +6,27 @@ death: 1817-04-20
 wikidata_id: Q2630473
 metadata:
   sources: [Wikidata Q2630473 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2630473
+  - type: died_in
+    to: place/san-lorenzo-de-el-escorial
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q2630473
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Lopez_Porta%C3%B1a_-_Infante_Antonio_Pascual%2C_Prado.jpg/1280px-Lopez_Porta%C3%B1a_-_Infante_Antonio_Pascual%2C_Prado.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lopez_Porta%C3%B1a_-_Infante_Antonio_Pascual,_Prado.jpg
+    license: Public domain
+    credit: Vicente López Portaña
+identifiers:
+  gnd: "1338310577"
+  viaf: "5606152331610003260006"
 sources:
   kind:
     - accessed: 2026-10-19

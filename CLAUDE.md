@@ -78,7 +78,7 @@ public GitHub repo `piosteiner/art_history`, running on the production VPS (Info
   KulturNav, NLK (names offered), ArCo (works in Italy) on Enrich; SMK, DigitaltMuseum image search (060) built 2026-10-12 — DigitaltMuseum only with own `DIMU_KEY` (keys for museums only; "demo" is for testing).
   Sorting (061: `entry_sort_key()` drops leading articles of titles by language; ICU collation `sort_natural` — order with `COLLATE sort_natural`, helpers in `src/sortkey.js`) built 2026-10-13.
   Provenance roles (063: `holder_role`, `provenance_co_owners`, price, `held_by`, `commissioned` derived, view `provenance_chain` with implied artist/loan lines; one-sided fuzzy dates) built 2026-10-13.
-  Quality findings stored (058: table `quality_issues` refreshed after commits via LISTEN/NOTIFY; **checks live in the view `quality_issues_live` — change that one**) built 2026-10-12.
+  Quality: `no_relationships` counts derived links (177, `graph_links`) — provenance owners are connected. Quality findings stored (058: table `quality_issues` refreshed after commits via LISTEN/NOTIFY; **checks live in the view `quality_issues_live` — change that one**) built 2026-10-12.
   SIKART (057: portal links, "Find in SIKART…" by name, compare like the GND — `src/admin/sikart.js`, source `sikart`) built 2026-10-09.
   Wrong type: `type_doubt()`, Wikidata class check, `convert_entry()` + `entry_moves` redirects (055) built 2026-10-09.
   Given/family names (066: `split_person_name()` + trigger, `person_sort_key()`; people and artists sorted by family name, "Filed as" override) built 2026-10-14; frontend sorts by `sort_key` for every type since 2026-10-14.

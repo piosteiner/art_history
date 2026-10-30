@@ -2,4 +2,41 @@ public_id: 100260
 name: Walther Halvorsen
 given_name: Walther
 family_name: Halvorsen
+kind: person
+birth: 1887-03-01
+death: 1972-12-18
 wikidata_id: Q12010372
+metadata:
+  sources: [Wikidata Q12010372 (retrieved 2026-10-30)]
+relationships:
+  - type: born_in
+    to: place/oslo
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q12010372
+  - type: died_in
+    to: place/oslo
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q12010372
+identifiers:
+  gnd: "1244411655"
+  idref: "236637428"
+  kulturnav: c3e771b9-ec29-410b-8ba7-848f9e4ce919
+  lc: no2004078794
+  viaf: "594156253584908110001"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q12010372
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q12010372
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q12010372

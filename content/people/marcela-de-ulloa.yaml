@@ -8,6 +8,24 @@ death: 1669-01-13
 wikidata_id: Q11690831
 metadata:
   sources: [Wikidata Q11690831 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q11690831
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q11690831
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg/1280px-Las_Meninas%2C_by_Diego_Vel%C3%A1zquez%2C_from_Prado_in_Google_Earth.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Las_Meninas,_by_Diego_Vel%C3%A1zquez,_from_Prado_in_Google_Earth.jpg
+    license: Public domain
+    credit: Diego Velázquez
 sources:
   kind:
     - accessed: 2026-10-19

@@ -3,11 +3,42 @@ name: Georgette van Stolk
 given_name: Georgette
 family_name: van Stolk
 kind: person
+birth: 1867-08-06
+death: 1963-02-16
 wikidata_id: Q123861621
 metadata:
   sources: [Wikidata Q123861621 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q123861621
+  - type: born_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q123861621
+  - type: died_in
+    to: place/rotterdam
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q123861621
+identifiers:
+  rkd: "497040"
 sources:
   kind:
     - accessed: 2026-10-18
       property: P31
+      wikidata: Q123861621
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q123861621
+  death:
+    - accessed: 2026-10-30
+      property: P570
       wikidata: Q123861621

@@ -2,11 +2,53 @@ public_id: 100459
 name: Dieter Bührle
 given_name: Dieter
 family_name: Bührle
+kind: person
+birth: 1921-12-31
+death: 2012-11-09
 wikidata_id: Q1221807
+metadata:
+  sources: [Wikidata Q1221807 (retrieved 2026-10-30)]
 relationships:
+  - type: nationality
+    to: polity/german-reich
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q1221807
+  - type: nationality
+    to: polity/switzerland
+    period: 1937
+    period_label: from 1937
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q1221807
   - type: founded
     to: institution/foundation-e-g-buhrle-collection
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q666331
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/ETH-BIB-Oerlikon_B%C3%BChrle%2C_Direktor_Dieter_B%C3%BChrle-Com_L31-0463-0001-0001.tif/lossy-page1-1280px-ETH-BIB-Oerlikon_B%C3%BChrle%2C_Direktor_Dieter_B%C3%BChrle-Com_L31-0463-0001-0001.tif.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:ETH-BIB-Oerlikon_B%C3%BChrle,_Direktor_Dieter_B%C3%BChrle-Com_L31-0463-0001-0001.tif
+    license: CC BY-SA 4.0
+    credit: Patrick Lüthy, Comet Photo AG (Zürich)
+identifiers:
+  dodis: P19875
+  gnd: "118857630"
+  hls: "030947"
+  viaf: "59881586"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q1221807
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q1221807
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q1221807

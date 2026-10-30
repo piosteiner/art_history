@@ -2,4 +2,52 @@ public_id: 100263
 name: Oskar Homolka
 given_name: Oskar
 family_name: Homolka
+kind: person
+birth: 1898-08-12
+death: 1978-01-27
 wikidata_id: Q79044
+metadata:
+  sources: [Wikidata Q79044 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q79044
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q79044
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q79044
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4f/WP_Oskar_Homolka.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:WP_Oskar_Homolka.jpg
+    license: Public domain
+    credit: Anonymous photographer, not identified anywhere
+identifiers:
+  bnf: 13895306x
+  gnd: "116976586"
+  idref: "102143528"
+  lc: no91001440
+  viaf: "69115766"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q79044
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q79044
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q79044

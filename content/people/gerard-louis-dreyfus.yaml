@@ -11,6 +11,49 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q3124136
+  - Gerard Louis-Dreyfus
+  - William Louis-Dreyfus
+  - William Gérard C Louis-Dreyfus
+  - lang: zh
+    role: translation
+    text: 傑拉德·路易斯-德瑞弗斯
+  - lang: ru
+    role: translation
+    text: Жерар Дрейфус
+kind: person
+birth: 1932-06-21
+death: 2016-09-16
 wikidata_id: Q3124136
 metadata:
   sources: [Wikidata Q3124136 (retrieved 2026-10-29)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q3124136
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q3124136
+identifiers:
+  gnd: "1171241194"
+  idref: "235691070"
+  lc: no2015031954
+  viaf: "315182955"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q3124136
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q3124136
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q3124136

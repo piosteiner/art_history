@@ -8,6 +8,39 @@ death: 1934
 wikidata_id: Q286456
 metadata:
   sources: [Wikidata Q286456 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q286456
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q286456
+  - type: influenced_by
+    to: artist/paul-gauguin
+    sources:
+      - accessed: 2026-10-30
+        property: P737
+        wikidata: Q286456
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/9/9e/Schuffenecker_self_portrait.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schuffenecker_self_portrait.jpg
+    license: Public domain
+    credit: Émile Schuffenecker
+identifiers:
+  bnf: 12527491n
+  dome: "347"
+  gnd: "121455432"
+  idref: "034527567"
+  lc: n78062740
+  rkd: "71296"
+  ulan: "500013470"
+  viaf: "29642540"
 sources:
   kind:
     - accessed: 2026-10-18

@@ -7,6 +7,18 @@ death: 1684
 wikidata_id: Q23620497
 metadata:
   sources: [Wikidata Q23620497 (retrieved 2026-10-19)]
+relationships:
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q23620497
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Diego_Vel%C3%A1zquez_061.jpg/1280px-Diego_Vel%C3%A1zquez_061.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Diego_Vel%C3%A1zquez_061.jpg
+    license: Public domain
+    credit: Diego Velázquez
 sources:
   kind:
     - accessed: 2026-10-19

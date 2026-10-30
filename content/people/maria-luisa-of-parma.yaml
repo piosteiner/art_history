@@ -9,12 +9,83 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q229854
+  - María Josefa de Borbón
+  - María Luisa de Parma
+  - Luisa Maria Teresa Anna de Parma
+  - Doña María Luisa de Parma
+  - S. M. Doña María Luisa de Parma Reina de España
+  - Doña María Luisa de Parma Reina de España
+  - S. M. Doña María Luisa de Parma
+  - Reina de España Maria Luisa
+  - María Luisa Teresa de Parma Reina de España
+  - María Luisa de Parma Reina de España
+  - lang: nl
+    role: translation
+    text: Maria Louisa van Parma
+  - lang: fr
+    role: translation
+    text: Marie-Louise de Bourbon-Parme
+  - lang: de
+    role: translation
+    text: Maria Luise von Bourbon-Parma
+  - lang: it
+    role: translation
+    text: Maria Luisa di Borbone-Parma
+  - lang: ja
+    role: translation
+    text: マリア・ルイサ・デ・パルマ
+  - lang: zh
+    role: translation
+    text: 瑪麗亞·露薏莎
+  - lang: ko
+    role: translation
+    text: 파르마의 마리아 루이사
+  - lang: ru
+    role: translation
+    text: Мария Луиза Пармская
 kind: person
 birth: 1751-12-09
 death: 1819-01-02
 wikidata_id: Q229854
 metadata:
   sources: [Wikidata Q229854 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/duchy-of-parma-and-piacenza
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q229854
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q229854
+  - type: born_in
+    to: place/parma
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q229854
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q229854
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4c/Mar%C3%ADa_Luisa_de_Parma%2C_reina_de_Espa%C3%B1a.jpg/1280px-Mar%C3%ADa_Luisa_de_Parma%2C_reina_de_Espa%C3%B1a.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mar%C3%ADa_Luisa_de_Parma,_reina_de_Espa%C3%B1a.jpg
+    license: Public domain
+    credit: Francisco Goya
+identifiers:
+  bnf: "107091197"
+  gnd: "102835551"
+  idref: "077713052"
+  lc: n84160302
+  ulan: "500039233"
+  viaf: "12704026"
 sources:
   kind:
     - accessed: 2026-10-19

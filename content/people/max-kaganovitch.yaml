@@ -2,4 +2,40 @@ public_id: 100456
 name: Max Kaganovitch
 given_name: Max
 family_name: Kaganovitch
+kind: person
+birth: 1891-11-07
+death: 1978-03-30
 wikidata_id: Q59213853
+metadata:
+  sources: [Wikidata Q59213853 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    period: 1942
+    period_label: until 1942
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q59213853
+  - type: died_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q59213853
+identifiers:
+  idref: "235639486"
+  viaf: "3818156012380549700001"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q59213853
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q59213853
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q59213853

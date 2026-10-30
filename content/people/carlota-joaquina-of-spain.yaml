@@ -9,12 +9,61 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q233603
+  - lang: pt
+    role: original
+    text: Carlota Joaquina de Bourbon
+  - Charlotte Joachine de Bourbon
+  - infanta Carlota Joaquina de Borbón
+  - lang: nl
+    role: translation
+    text: Charlotte Joachime van Spanje
+  - lang: fr
+    role: translation
+    text: Charlotte-Joachime d'Espagne
+  - lang: de
+    role: translation
+    text: Charlotte Joachime von Spanien
+  - lang: it
+    role: translation
+    text: Carlotta Gioacchina di Borbone-Spagna
+  - lang: es
+    role: translation
+    text: Carlota Joaquina de Borbón
+  - lang: ja
+    role: translation
+    text: カルロッタ・ジョアキナ・デ・ボルボン
+  - lang: zh
+    role: translation
+    text: 西班牙的卡洛塔·若阿金娜
+  - lang: ko
+    role: translation
+    text: 스페인의 카를로타 조아키나
+  - lang: ru
+    role: translation
+    text: Карлота Жоакина
 kind: person
 birth: 1775-04-25
 death: 1830-01-07
 wikidata_id: Q233603
 metadata:
   sources: [Wikidata Q233603 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q233603
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Carlota_Joaquina_by_Taunay_1817.jpg/1280px-Carlota_Joaquina_by_Taunay_1817.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carlota_Joaquina_by_Taunay_1817.jpg
+    license: Public domain
+    credit: Nicolas-Antoine Taunay
+identifiers:
+  gnd: "118702343"
+  idref: "133687821"
+  lc: no95057573
+  viaf: "127422579"
 sources:
   kind:
     - accessed: 2026-10-19

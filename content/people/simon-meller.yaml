@@ -2,4 +2,46 @@ public_id: 100336
 name: Simon Meller
 given_name: Simon
 family_name: Meller
+kind: person
+birth: 1875-12-26
+death: 1949-03-09
 wikidata_id: Q15650453
+metadata:
+  sources: [Wikidata Q15650453 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/hungary
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q15650453
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q15650453
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c2/Rippl-R%C3%B3nai_J%C3%B3zsef_%281861-1927%29_Petrovics_Elek_%C3%A9s_Meller_Simon.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Rippl-R%C3%B3nai_J%C3%B3zsef_(1861-1927)_Petrovics_Elek_%C3%A9s_Meller_Simon.jpg
+    license: Public domain
+    credit: József Rippl-Rónai
+identifiers:
+  bnf: "127896631"
+  gnd: "116875380"
+  idref: "236316524"
+  lc: no89005907
+  viaf: "54527270"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q15650453
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q15650453
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q15650453

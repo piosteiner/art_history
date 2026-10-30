@@ -7,6 +7,17 @@ death: 1/100
 wikidata_id: Q63070
 metadata:
   sources: [Wikidata Q63070 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Philippe_de_Champaigne_-_The_Repentant_Magdalen_-_Google_Art_Project.jpg/1280px-Philippe_de_Champaigne_-_The_Repentant_Magdalen_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne_-_The_Repentant_Magdalen_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Philippe de Champaigne
+identifiers:
+  bnf: "120479609"
+  gnd: "118577840"
+  idref: "028696638"
+  lc: n79032992
+  viaf: "221986199"
 sources:
   kind:
     - accessed: 2026-10-19

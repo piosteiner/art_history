@@ -2,4 +2,39 @@ public_id: 100457
 name: Richard Semmel
 given_name: Richard
 family_name: Semmel
+kind: person
+birth: 1875-09-15
+death: 1950-12-02
 wikidata_id: Q20191393
+metadata:
+  sources: [Wikidata Q20191393 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q20191393
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q20191393
+identifiers:
+  gnd: "1205304835"
+  rkd: "459474"
+  viaf: "1668158309885106690007"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q20191393
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q20191393
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q20191393

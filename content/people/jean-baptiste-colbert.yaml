@@ -9,12 +9,38 @@ wikidata_id: Q188971
 metadata:
   sources: [Wikidata Q188971 (retrieved 2026-10-28)]
 relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q188971
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q188971
   - type: founded
     to: institution/french-academy-in-rome
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q337494
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Colbert1666.jpg/1280px-Colbert1666.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Colbert1666.jpg
+    license: Public domain
+    credit: Philippe de Champaigne
+identifiers:
+  bnf: 12428884j
+  dodis: P47114
+  gnd: "118521470"
+  idref: "027274527"
+  lc: n50031188
+  rkd: "259860"
+  ulan: "500257321"
+  viaf: "59175183"
 sources:
   kind:
     - accessed: 2026-10-28

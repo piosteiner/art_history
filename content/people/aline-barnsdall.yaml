@@ -2,4 +2,38 @@ public_id: 100453
 name: Aline Barnsdall
 given_name: Aline
 family_name: Barnsdall
+kind: person
+birth: 1882-04-01
+death: 1946-12-18
 wikidata_id: Q4726749
+metadata:
+  sources: [Wikidata Q4726749 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q4726749
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Aline_Barnsdall.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Aline_Barnsdall.jpg
+    license: Public domain
+    credit: Norman Karasick
+identifiers:
+  gnd: "119191628"
+  lc: n92031157
+  viaf: "54952658"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q4726749
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q4726749
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q4726749

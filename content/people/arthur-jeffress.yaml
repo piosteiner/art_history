@@ -2,4 +2,37 @@ public_id: 100442
 name: Arthur Jeffress
 given_name: Arthur
 family_name: Jeffress
+kind: person
+birth: 1905-11-21
+death: 1961-09-21
 wikidata_id: Q20811064
+metadata:
+  sources: [Wikidata Q20811064 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q20811064
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/31/Arthur_Jeffress_1920s.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Arthur_Jeffress_1920s.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: "174358881"
+  viaf: "196371353"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q20811064
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q20811064
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q20811064

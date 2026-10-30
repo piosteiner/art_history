@@ -9,12 +9,29 @@ wikidata_id: Q52150368
 metadata:
   sources: [Wikidata Q52150368 (retrieved 2026-10-28)]
 relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q52150368
   - type: founded
     to: institution/galerie-manzi-joyant
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q131618060
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d9/%28Albi%29_Monsieur_Maurice_Joyant_-_Toulouse-Lautrec_1900_MTL.207.jpg/1280px-%28Albi%29_Monsieur_Maurice_Joyant_-_Toulouse-Lautrec_1900_MTL.207.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:(Albi)_Monsieur_Maurice_Joyant_-_Toulouse-Lautrec_1900_MTL.207.jpg
+    license: Public domain
+    credit: Didier Descouens
+identifiers:
+  bnf: 16272275q
+  gnd: "1073385507"
+  idref: "161608647"
+  lc: no2004002258
+  viaf: "22665651"
 sources:
   kind:
     - accessed: 2026-10-28

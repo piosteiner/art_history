@@ -7,12 +7,48 @@ wikidata_id: Q36234
 metadata:
   sources: [Wikidata Q36234 (retrieved 2026-10-09)]
 relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q36234
+  - type: born_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q36234
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q36234
+  - type: lived_in
+    to: place/royal-palace-of-madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P551
+        wikidata: Q36234
   - type: founded
     to: institution/museo-del-prado
     sources:
       - accessed: 2026-10-09
         property: P112
         wikidata: Q160112
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Charles_III_of_Spain_high_resolution.jpg/1280px-Charles_III_of_Spain_high_resolution.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Charles_III_of_Spain_high_resolution.jpg
+    license: Public domain
+    credit: Anton Raphael Mengs
+identifiers:
+  bnf: "119389764"
+  gnd: "118925059"
+  idref: "027322394"
+  lc: n79065283
+  ulan: "500122380"
+  viaf: "100902917"
 sources:
   kind:
     - accessed: 2026-10-09

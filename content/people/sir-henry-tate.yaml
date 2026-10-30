@@ -7,12 +7,30 @@ wikidata_id: Q583615
 metadata:
   sources: [Wikidata Q583615 (retrieved 2026-10-29)]
 relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q583615
   - type: founded
     to: institution/tate-gallery
     sources:
       - accessed: 2026-10-29
         property: P112
         wikidata: Q430682
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/12/Hubert_von_Herkomer_%281849-1914%29_-_Sir_Henry_Tate_-_N03517_-_National_Gallery.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hubert_von_Herkomer_(1849-1914)_-_Sir_Henry_Tate_-_N03517_-_National_Gallery.jpg
+    license: Public domain
+    credit: Hubert von Herkomer
+identifiers:
+  gnd: "128938366"
+  idref: "257265791"
+  lc: no2004099800
+  nlk: KAC202301988
+  ulan: "500253903"
+  viaf: "65072399"
 sources:
   kind:
     - accessed: 2026-10-29

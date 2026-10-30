@@ -6,6 +6,30 @@ death: 1824-03-13
 wikidata_id: Q233587
 metadata:
   sources: [Wikidata Q233587 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q233587
+  - type: died_in
+    to: place/rome
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q233587
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ac/Maria_Luisa_of_Spain%2C_duchess_of_Lucca.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Maria_Luisa_of_Spain,_duchess_of_Lucca.jpg
+    license: Public domain
+    credit: Vincenzo Camuccini
+identifiers:
+  bnf: 14432595d
+  gnd: "122939131"
+  idref: "073411965"
+  lc: n2003038929
+  viaf: "51060628"
 sources:
   kind:
     - accessed: 2026-10-19

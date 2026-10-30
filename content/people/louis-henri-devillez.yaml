@@ -2,4 +2,34 @@ public_id: 100359
 name: Louis-Henri Devillez
 given_name: Louis-Henri
 family_name: Devillez
+kind: person
+birth: 1855-07-19
+death: 1941-02-02
 wikidata_id: Q18508471
+metadata:
+  sources: [Wikidata Q18508471 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/belgium
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q18508471
+identifiers:
+  gnd: "1050802934"
+  rkd: "331222"
+  ulan: "500134877"
+  viaf: "96647191"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q18508471
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q18508471
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q18508471

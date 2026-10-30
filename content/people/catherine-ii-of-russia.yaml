@@ -17,6 +17,49 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q36450
+  - Catharine II, the Great
+  - Catherine Romanova
+  - Ekaterina Alexeyevna of Russia
+  - Catherine II, Empress of Russia
+  - Sophie Friederike Auguste of Anhalt-Zerbst
+  - Sophie of Anhalt-Zerbst
+  - Catherine II, Czarina of Russia
+  - Catharine II.
+  - Catherine the Great
+  - Catherine Alexeievna Romanova
+  - Ekaterina II of Russia
+  - Ekaterina Alexeyevna Romanova
+  - Yekaterina Alekseyevna
+  - Empress Catherine II
+  - Catherine II
+  - Catharine II the Great
+  - lang: nl
+    role: translation
+    text: Catharina II van Rusland
+  - lang: fr
+    role: translation
+    text: Catherine II de Russie
+  - lang: de
+    role: translation
+    text: Katharina II.
+  - lang: it
+    role: translation
+    text: Caterina II di Russia
+  - lang: es
+    role: translation
+    text: Catalina II de Rusia
+  - lang: ja
+    role: translation
+    text: エカチェリーナ2世
+  - lang: zh
+    role: translation
+    text: 葉卡捷琳娜二世
+  - lang: ko
+    role: translation
+    text: 예카테리나 2세
+  - lang: ru
+    role: translation
+    text: Екатерина II
 kind: person
 birth: 1729-05-02
 death: 1796-11-17
@@ -24,12 +67,54 @@ wikidata_id: Q36450
 metadata:
   sources: [Wikidata Q36450 (retrieved 2026-10-22)]
 relationships:
+  - type: nationality
+    to: polity/kingdom-of-prussia
+    period: 1729/1745
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q36450
+  - type: nationality
+    to: polity/russian-empire
+    period: 1745
+    period_label: from 1745
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q36450
+  - type: died_in
+    to: place/saint-petersburg
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q36450
+  - type: lived_in
+    to: place/saint-petersburg
+    sources:
+      - accessed: 2026-10-30
+        property: P551
+        wikidata: Q36450
   - type: founded
     to: institution/hermitage-museum-st-petersburg
     sources:
       - accessed: 2026-10-22
         property: P112
         wikidata: Q132783
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/Catherine_II_after_Roslin%2C_Rokotov_%281780s%2C_Kunsthistorisches_Museum%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Catherine_II_after_Roslin,_Rokotov_(1780s,_Kunsthistorisches_Museum).jpg
+    license: Public domain
+    credit: After Alexander Roslin
+identifiers:
+  bnf: "120812555"
+  dodis: P46626
+  gnd: "118560565"
+  idref: "029120047"
+  lc: n80046091
+  nlk: KAC202127102
+  rkd: "440104"
+  ulan: "500257752"
+  viaf: "49493819"
 sources:
   kind:
     - accessed: 2026-10-22

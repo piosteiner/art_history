@@ -2,4 +2,49 @@ public_id: 100463
 name: Paul von Mendelssohn-Bartholdy
 given_name: Paul
 family_name: von Mendelssohn-Bartholdy
+kind: person
+birth: 1875-11-14
+death: 1935-05-10
 wikidata_id: Q2063433
+metadata:
+  sources: [Wikidata Q2063433 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2063433
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q2063433
+  - type: died_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q2063433
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Paul_v_Mendelssohn-Bartholdy_1909_M.L..jpg/1280px-Paul_v_Mendelssohn-Bartholdy_1909_M.L..jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_v_Mendelssohn-Bartholdy_1909_M.L..jpg
+    license: Public domain
+    credit: Max Liebermann
+identifiers:
+  gnd: "137020317"
+  viaf: "81268857"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q2063433
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q2063433
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q2063433

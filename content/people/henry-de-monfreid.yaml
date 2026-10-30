@@ -11,6 +11,49 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q911033
+  - lang: fr
+    role: original
+    text: Henri de Monfreid
+  - lang: ja
+    role: translation
+    text: アンリ・ド・モンフレイ
+  - lang: ru
+    role: translation
+    text: Анри де Монфрейд
+kind: person
+birth: 1879-11-14
+death: 1974-12-13
 wikidata_id: Q911033
 metadata:
   sources: [Wikidata Q911033 (retrieved 2026-10-29)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q911033
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/24/Henry_de_Monfreid_NYT_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_de_Monfreid_NYT_cropped.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  bnf: "119164954"
+  gnd: "118896148"
+  idref: "027034410"
+  lc: n50016833
+  viaf: "100205250"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q911033
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q911033
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q911033

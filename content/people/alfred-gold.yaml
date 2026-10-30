@@ -17,6 +17,56 @@ names:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q2645040
+  - Goldeck, Alwin
+  - lang: ru
+    role: translation
+    text: Альфред Голд
+kind: person
+birth: 1874-06-28
+death: 1958-10-24
 wikidata_id: Q2645040
 metadata:
   sources: [Wikidata Q2645040 (retrieved 2026-10-29)]
+relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2645040
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q2645040
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q2645040
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1b/Alfred_Gold%2C_Zeichnung_von_Moritz_Coschell_%281%29.png
+    source_url: https://commons.wikimedia.org/wiki/File:Alfred_Gold,_Zeichnung_von_Moritz_Coschell_(1).png
+    license: Public domain
+    credit: Moritz Coschell
+identifiers:
+  gnd: "116746777"
+  idref: "233905782"
+  lc: no2007094046
+  ulan: "500510715"
+  viaf: "24384954"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q2645040
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q2645040
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q2645040

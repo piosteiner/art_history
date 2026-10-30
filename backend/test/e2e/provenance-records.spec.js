@@ -3,7 +3,7 @@
 // page, in the number search, the API, the map's stops, the full-text search, the YAML snapshot and a quality check.
 const { execFileSync } = require('child_process');
 const path = require('path');
-const { test, expect, sql, API } = require('./helpers');
+const { test, expect, sql, settled, API } = require('./helpers');
 const env = require('./env');
 
 const api = async (request, p) => (await request.get(`${API}${p}`, { headers: { Host: 'api.localhost' } })).json();
@@ -114,7 +114,7 @@ test('an end known only as "or later" (105): the holder\'s period runs to its ea
   expect(sql(`SELECT period::text FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('[1650-01-01,1749-06-09)');
 });
 
-test('a holder whose end is unknown (176): a later record shows the holding lasted — unless the holder had died', () => {
+test('a holder whose end is unknown (176): a later record shows the holding lasted — unless the holder had died', async () => {
   // a collector from 1650, then the royal collection at an unknown date: the collector's end is unknown
   sql(`DELETE FROM people WHERE slug = 'test-records-collector';
        INSERT INTO people (slug, name, death, death_label) VALUES ('test-records-collector', 'Test Collector', year_range(1700), '1700');
@@ -124,6 +124,10 @@ test('a holder whose end is unknown (176): a later record shows the holding last
        INSERT INTO provenance_records (provenance_id, position, date, date_label, note) VALUES (${STEP()}, 0, year_range(1690), '1690', 'test')`);
   const findings = () => sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'provenance_record_outside' AND entity_id = ${W}`);
   try {
+    // a collector known only from the provenance is connected (177: the graph's derived links count)
+    await settled();
+    expect(sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'no_relationships' AND entity_type = 'person'
+      AND entity_id = entity_id('person', 'test-records-collector')`)).toBe('0');
     expect(sql(`SELECT end_basis FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('unknown');
     expect(findings()).toBe('0');
     // after the collector's death: not theirs

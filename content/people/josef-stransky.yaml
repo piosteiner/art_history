@@ -2,4 +2,46 @@ public_id: 100261
 name: Josef Stránský
 given_name: Josef
 family_name: Stránský
+kind: person
+birth: 1872-09-09
+death: 1936-03-06
 wikidata_id: Q2347963
+metadata:
+  sources: [Wikidata Q2347963 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2347963
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q2347963
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Jos._Stransky_LCCN2014686067.jpg/1280px-Jos._Stransky_LCCN2014686067.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jos._Stransky_LCCN2014686067.jpg
+    license: Public domain
+    credit: Bain News Service, publisher
+identifiers:
+  bnf: 10377385v
+  gnd: "117307149"
+  idref: "243382650"
+  lc: nr00013391
+  viaf: "15542884"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q2347963
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q2347963
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q2347963

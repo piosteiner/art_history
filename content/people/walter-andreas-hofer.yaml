@@ -2,4 +2,49 @@ public_id: 100343
 name: Walter Andreas Hofer
 given_name: Walter Andreas
 family_name: Hofer
+kind: person
+birth: 1893-02-10
+death: 1975-10-28
 wikidata_id: Q18602666
+metadata:
+  sources: [Wikidata Q18602666 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q18602666
+  - type: born_in
+    to: place/berlin
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q18602666
+  - type: died_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q18602666
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Walter_Andreas_Hofer.jpg/1280px-Walter_Andreas_Hofer.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Walter_Andreas_Hofer.jpg
+    license: Public domain
+    credit: U.S. Army Signal Corps
+identifiers:
+  gnd: "1250931401"
+  viaf: "610164422990020530006"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q18602666
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q18602666
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q18602666

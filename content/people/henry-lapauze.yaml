@@ -2,4 +2,52 @@ public_id: 100321
 name: Henry Lapauze
 given_name: Henry
 family_name: Lapauze
+kind: person
+birth: 1867-01-31
+death: 1925-04-09
 wikidata_id: Q18115370
+metadata:
+  sources: [Wikidata Q18115370 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q18115370
+  - type: born_in
+    to: place/montauban
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q18115370
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q18115370
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c5/Henry_Lapauze_-_Paul_Chabas.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henry_Lapauze_-_Paul_Chabas.jpg
+    license: Public domain
+    credit: Paul Émile Chabas
+identifiers:
+  bnf: "128862981"
+  gnd: "141619260"
+  idref: 03072144X
+  lc: n89628552
+  viaf: "39506409"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q18115370
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q18115370
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q18115370

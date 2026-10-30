@@ -2,11 +2,60 @@ public_id: 100317
 name: Fritz Nathan
 given_name: Fritz
 family_name: Nathan
+kind: person
+birth: 1895-06-30
+death: 1972-02-28
 wikidata_id: Q1418856
+metadata:
+  sources: [Wikidata Q1418856 (retrieved 2026-10-30)]
 relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q1418856
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q1418856
+  - type: born_in
+    to: place/munich
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q1418856
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q1418856
   - type: founded
     to: institution/kunsthandlung-fritz-und-peter-nathan
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q78161758
+identifiers:
+  dodis: P22469
+  gnd: "116884916"
+  hls: "027754"
+  idref: "097694398"
+  lc: n2006038767
+  viaf: "42600680"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q1418856
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q1418856
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q1418856

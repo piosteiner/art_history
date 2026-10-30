@@ -30,12 +30,66 @@ names:
       - accessed: 2026-10-29
         property: P1449
         wikidata: Q691402
+  - Felipe IV
+  - lang: nl
+    role: translation
+    text: Filips IV van Spanje
+  - lang: fr
+    role: translation
+    text: Philippe IV d'Espagne
+  - lang: de
+    role: translation
+    text: Philipp IV.
+  - lang: it
+    role: translation
+    text: Filippo IV di Spagna
+  - lang: es
+    role: translation
+    text: Felipe IV de España
+  - lang: ja
+    role: translation
+    text: フェリペ4世
+  - lang: zh
+    role: translation
+    text: 腓力四世
+  - lang: ko
+    role: translation
+    text: 펠리페 4세
+  - lang: ru
+    role: translation
+    text: Филипп IV
 kind: person
 birth: 1605-04-08
 death: 1665-09-17
 wikidata_id: Q691402
 metadata:
   sources: [Wikidata Q691402 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q691402
+  - type: lived_in
+    to: place/royal-alcazar-of-madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P551
+        wikidata: Q691402
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Philip_IV_of_Spain.jpg/1280px-Philip_IV_of_Spain.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Philip_IV_of_Spain.jpg
+    license: Public domain
+    credit: Diego Velázquez
+identifiers:
+  bnf: "121154782"
+  gnd: "118593870"
+  idref: "029375118"
+  lc: n81139456
+  rkd: "439029"
+  ulan: "500282775"
+  viaf: "42764"
 sources:
   kind:
     - accessed: 2026-10-19

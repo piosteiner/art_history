@@ -11,6 +11,45 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q3183961
+kind: person
+birth: 1859-07-10
+death: 1942-05-26
 wikidata_id: Q3183961
 metadata:
   sources: [Wikidata Q3183961 (retrieved 2026-10-29)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q3183961
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q3183961
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Jos_Hessel%2C_by_%C3%89douard_Vuillard.jpg/1280px-Jos_Hessel%2C_by_%C3%89douard_Vuillard.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jos_Hessel,_by_%C3%89douard_Vuillard.jpg
+    license: Public domain
+    credit: Édouard Vuillard
+identifiers:
+  bnf: "154365914"
+  idref: "141906200"
+  lc: no2018176762
+  viaf: "207278071"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q3183961
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q3183961
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q3183961

@@ -2,4 +2,22 @@ public_id: 100462
 name: Léon Paul Amédée Schuffenecker
 given_name: Léon Paul Amédée
 family_name: Schuffenecker
+kind: person
+birth: 1854
+death: 1936
 wikidata_id: Q28860082
+metadata:
+  sources: [Wikidata Q28860082 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q28860082
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q28860082
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q28860082

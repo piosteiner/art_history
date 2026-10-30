@@ -4,6 +4,23 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Quality warnings, second round (migration 177 + data)
+- **177:** `no_relationships` reads `graph_links` (stored + derived edges) instead of `relationships` — 528 of 571
+  entries "not connected to anything" were connected through provenance, building phases or as creators; 44 remain.
+  E2E `provenance-records` (a collector known only from the provenance), perf 35/35. Revert: patch `FROM graph_links r`
+  back to `FROM relationships r`.
+- **Auto-created places (363):** 26 designations added (from the items' Wikidata classes, in the wording of their
+  country's places); all 363 acknowledged as complete — Wikidata item, parent, designation (not for countries),
+  country, like the hand-made places. The `auto_created` rows stay (where each came from).
+- **Auto-created people with a Wikidata item (87):** `fill-from-wikidata.js person …` — dates, authority numbers,
+  places of birth/death, nationality (cited W). Still flagged for review (script rule).
+- **Possible duplicates (168 → 0):** none was one — 66 pairs with different Wikidata items, 17 sources of the same
+  title in different works ("Online-Sammlung" of five museums …), Louis/Louise Cahen d'Anvers, Udine city/province;
+  acknowledged "not the same" with the reason.
+- **Museum pages (78 → 50):** 28 `web_url` built from the items' museum IDs (Belvedere P5823, KHM P8960, Japan's
+  cultural-property database P4275) or the holder's official site (P856).
+- **Why:** owner, 2026-10-30. **Revert:** migration as above; data via the admin history; acks in `quality_acks`.
+
 ### Data: woodcut in the glossary; outdated citations gone through
 - **Woodcut:** "woodblock print" merged into "woodcut" (one term, "woodblock print" an English name; the old address
   redirects); chain print › relief print › woodcut › Japanese woodblock print (› nishiki-e, surimono) · Korean

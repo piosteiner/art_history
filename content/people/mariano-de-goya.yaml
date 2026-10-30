@@ -2,4 +2,40 @@ public_id: 100346
 name: Mariano de Goya
 given_name: Mariano
 family_name: de Goya
+kind: person
+birth: 1806-07-11
+death: 1874-01-07
 wikidata_id: Q43372141
+metadata:
+  sources: [Wikidata Q43372141 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q43372141
+  - type: born_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q43372141
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/FRANCISCO_GOYA_PORTRAIT_OF_MARIANO_GOYA%2C_THE_ARTIST%27S_GRANDSON.jpg/1280px-FRANCISCO_GOYA_PORTRAIT_OF_MARIANO_GOYA%2C_THE_ARTIST%27S_GRANDSON.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:FRANCISCO_GOYA_PORTRAIT_OF_MARIANO_GOYA,_THE_ARTIST%27S_GRANDSON.jpg
+    license: Public domain
+    credit: Francisco Goya
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q43372141
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q43372141
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q43372141

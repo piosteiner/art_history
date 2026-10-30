@@ -2,4 +2,47 @@ public_id: 100258
 name: Leo Stein
 given_name: Leo
 family_name: Stein
+kind: person
+birth: 1872-05-11
+death: 1947-07-29
 wikidata_id: Q260774
+metadata:
+  sources: [Wikidata Q260774 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q260774
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q260774
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c1/Leo_Stein.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leo_Stein.jpg
+    license: Public domain
+    credit: Carl Van Vechten
+identifiers:
+  bnf: 12571016c
+  gnd: "119365081"
+  idref: "139456015"
+  lc: n95044655
+  rkd: "232499"
+  viaf: "32115894"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q260774
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q260774
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q260774

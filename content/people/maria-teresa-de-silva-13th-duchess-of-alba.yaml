@@ -9,12 +9,75 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q260128
+  - duquesa de Alba María del Pilar Teresa Cayetana de Silva Alvarez de Toledo y Silva
+  - María del Pilar Teresa Cayetana de Silva Alvarez de Toledo Albe
+  - María del Pilar Teresa Cayetana de Silva Alvarez De Toledo
+  - María del Pilar Teresa Cayetana de Silva Alvarez de Toledo y Silva, duquesa de Alba
+  - María Teresa de Alba
+  - Maria del Pilar Teresa Cayetana de Silva Alvarez de Toledo
+  - duquesa de Alba Maria del Pilar Teresa Cayetana de Silva Alvarez de Toledo y Silva
+  - Maria del Pilar Teresa Cayetana de Silva Alvarez de Toledo Albe
+  - lang: nl
+    role: translation
+    text: María del Pilar Teresa Cayetana de Silva y Álvarez de Toledo
+  - lang: fr
+    role: translation
+    text: María Teresa de Silva
+  - lang: de
+    role: translation
+    text: Maria del Pilar Teresa Cayetana de Silva y Álvarez de Toledo
+  - lang: it
+    role: translation
+    text: Maria Teresa de Silva
+  - lang: es
+    role: translation
+    text: María del Pilar Teresa Cayetana de Silva y Álvarez de Toledo y Silva-Bazán
+  - lang: ja
+    role: translation
+    text: マリア・デ・シルバ・イ・アルバレス・デ・トレド
+  - lang: zh
+    role: translation
+    text: 瑪麗亞·特蕾莎·卡耶塔娜·德席爾瓦
+  - lang: ru
+    role: translation
+    text: Мария Каэтана де Сильва Альба
 kind: person
 birth: 1762-06-10
 death: 1802-07-23
 wikidata_id: Q260128
 metadata:
   sources: [Wikidata Q260128 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q260128
+  - type: born_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q260128
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q260128
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/ad/Duchess_of_Alba_by_Ducker.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Duchess_of_Alba_by_Ducker.jpg
+    license: Public domain
+    credit: José Alonso del Rivero Sacades / After Guillermo Ducker
+identifiers:
+  bnf: 14409025x
+  gnd: "120500310"
+  idref: "078199484"
+  lc: n81072387
+  ulan: "500337337"
+  viaf: "58368105"
 sources:
   kind:
     - accessed: 2026-10-19

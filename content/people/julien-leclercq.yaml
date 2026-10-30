@@ -8,6 +8,29 @@ death: 1901
 wikidata_id: Q3189563
 metadata:
   sources: [Wikidata Q3189563 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q3189563
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q3189563
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/71/Julien_Leclercq_%281865%E2%80%931901%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Julien_Leclercq_(1865%E2%80%931901).jpg
+    license: Public domain
+    credit: Daireaux
+identifiers:
+  bnf: 10403243d
+  gnd: 113893044X
+  idref: "161126979"
+  viaf: "283556804"
 sources:
   kind:
     - accessed: 2026-10-18

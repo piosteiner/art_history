@@ -7,12 +7,39 @@ wikidata_id: Q51056
 metadata:
   sources: [Wikidata Q51056 (retrieved 2026-10-21)]
 relationships:
+  - type: nationality
+    to: polity/austrian-empire
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q51056
+  - type: nationality
+    to: polity/cisleithania
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q51056
   - type: founded
     to: institution/kunsthistorisches-museum-wien
     sources:
       - accessed: 2026-10-21
         property: P112
         wikidata: Q95569
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Franz_Joseph_I_of_Austria.1910_%28cropped%29.jpg/1280px-Franz_Joseph_I_of_Austria.1910_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Franz_Joseph_I_of_Austria.1910_(cropped).jpg
+    license: Public domain
+    credit: Carl Pietzner
+identifiers:
+  bnf: 12239721g
+  dodis: P32402
+  gnd: "118535013"
+  idref: "027324583"
+  kulturnav: 546de9df-f2cd-4231-aaba-8d32d5a027e6
+  lc: n50025622
+  rkd: "286761"
+  ulan: "500339089"
+  viaf: "32787948"
 sources:
   kind:
     - accessed: 2026-10-21

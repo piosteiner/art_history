@@ -2,4 +2,54 @@ public_id: 100433
 name: Daniel de Monfreid
 given_name: Daniel
 family_name: de Monfreid
+kind: person
+birth: 1856-03-14
+death: 1929-11-26
 wikidata_id: Q517792
+metadata:
+  sources: [Wikidata Q517792 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q517792
+  - type: born_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q517792
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q517792
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1d/Daniel_Portrait_du_peintre.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Daniel_Portrait_du_peintre.jpg
+    license: Public domain
+    credit: George-Daniel de Monfreid
+identifiers:
+  bnf: 12395766w
+  gnd: "118980343"
+  idref: "075419858"
+  lc: n50006182
+  rkd: "56865"
+  ulan: "500010450"
+  viaf: "56694041"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q517792
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q517792
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q517792

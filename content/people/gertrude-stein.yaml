@@ -2,4 +2,49 @@ public_id: 100259
 name: Gertrude Stein
 given_name: Gertrude
 family_name: Stein
+kind: person
+birth: 1874-02-03
+death: 1946-07-27
 wikidata_id: Q188385
+metadata:
+  sources: [Wikidata Q188385 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q188385
+  - type: died_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q188385
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Gertrude_Stein_1934_%28facecrop%29.jpg/1280px-Gertrude_Stein_1934_%28facecrop%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gertrude_Stein_1934_(facecrop).jpg
+    license: Public domain
+    credit: Carl Van Vechten
+identifiers:
+  bnf: 11925479v
+  gnd: "118617257"
+  idref: "027147991"
+  lc: n79006977
+  nlk: KAC199626370
+  rkd: "254993"
+  ulan: "500273319"
+  viaf: "22149082"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q188385
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q188385
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q188385

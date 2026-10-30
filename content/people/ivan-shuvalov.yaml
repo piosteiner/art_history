@@ -9,12 +9,43 @@ wikidata_id: Q659395
 metadata:
   sources: [Wikidata Q659395 (retrieved 2026-10-28)]
 relationships:
+  - type: nationality
+    to: polity/russian-empire
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q659395
+  - type: born_in
+    to: place/moscow
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q659395
+  - type: died_in
+    to: place/saint-petersburg
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q659395
   - type: founded
     to: institution/imperial-academy-of-arts
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q628254
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/85/Ivan_Shuvalov_by_F.Rokotov_%281760%2C_Hermitage%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ivan_Shuvalov_by_F.Rokotov_(1760,_Hermitage).jpg
+    license: Public domain
+    credit: Fyodor Rokotov
+identifiers:
+  bnf: "179817800"
+  gnd: "121948900"
+  idref: "265708389"
+  lc: n99261905
+  rkd: "460269"
+  ulan: "500325984"
+  viaf: "16561484"
 sources:
   kind:
     - accessed: 2026-10-28

@@ -11,12 +11,69 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q2554450
+  - J. van Gogh-Bonger
+  - Johanna von Gogh-Bonger
+  - Jo Bonger
+  - Johanna Gesina van Gogh-Bonger
+  - Jo van Gogh
+  - Johanna Gesina Gogh-Bonger
+  - Johanna van Gogh- Bonger
+  - Johanna Gezina van Gogh-Bonger
+  - Frau J. Cohen Gosschalk Bonger
+  - Johanna Bonger
+  - lang: fr
+    role: translation
+    text: Johanna van Gogh
+  - lang: ja
+    role: translation
+    text: ヨハンナ・ファン・ゴッホ＝ボンゲル
+  - lang: zh
+    role: translation
+    text: 喬安娜·梵谷-伯格納
+  - lang: ko
+    role: translation
+    text: 요한나 반 고흐-봉허
+  - lang: ru
+    role: translation
+    text: Ван Гог-Бонгер, Йоханна
 kind: person
 birth: 1862-10-04
 death: 1925-09-02
 wikidata_id: Q2554450
 metadata:
   sources: [Wikidata Q2554450 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/kingdom-of-the-netherlands
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2554450
+  - type: born_in
+    to: place/amsterdam
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q2554450
+  - type: died_in
+    to: place/laren
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q2554450
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Jo_van_Gogh-Bonger%2C_by_Woodbury_and_Page.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Jo_van_Gogh-Bonger,_by_Woodbury_and_Page.jpg
+    license: Public domain
+    credit: Woodbury & Page
+identifiers:
+  bnf: "135996453"
+  gnd: "121380394"
+  idref: "055294170"
+  lc: n84084113
+  rkd: "350056"
+  ulan: "500073337"
+  viaf: "29703393"
 sources:
   kind:
     - accessed: 2026-10-18

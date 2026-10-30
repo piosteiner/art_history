@@ -6,6 +6,35 @@ death: 1803-05-27
 wikidata_id: Q444290
 metadata:
   sources: [Wikidata Q444290 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/duchy-of-parma-and-piacenza
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q444290
+  - type: nationality
+    to: polity/kingdom-of-etruria
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q444290
+  - type: died_in
+    to: place/florence
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q444290
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Luis_de_Etruria.jpg/1280px-Luis_de_Etruria.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Luis_de_Etruria.jpg
+    license: Public domain
+    credit: Francisco Goya
+identifiers:
+  gnd: "124327648"
+  lc: nr2001027652
+  ulan: "500354206"
+  viaf: "45232361"
 sources:
   kind:
     - accessed: 2026-10-19

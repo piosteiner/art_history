@@ -6,6 +6,31 @@ death: 1696-05-16
 wikidata_id: Q311469
 metadata:
   sources: [Wikidata Q311469 (retrieved 2026-10-19)]
+relationships:
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q311469
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q311469
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/86/Mariana_of_Austria_by_Vel%C3%A1zquez_%28c._1652%2C_Museo_del_Prado%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mariana_of_Austria_by_Vel%C3%A1zquez_(c._1652,_Museo_del_Prado).jpg
+    license: Public domain
+    credit: Diego Velázquez
+identifiers:
+  bnf: "146227326"
+  gnd: "118781863"
+  idref: "095309020"
+  lc: n98032592
+  ulan: "500354572"
+  viaf: "122242870"
 sources:
   kind:
     - accessed: 2026-10-19

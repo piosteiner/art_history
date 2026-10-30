@@ -6,6 +6,36 @@ death: 1673-03-12
 wikidata_id: Q158659
 metadata:
   sources: [Wikidata Q158659 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q158659
+  - type: born_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q158659
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q158659
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e1/Margarita_Teresa_of_Spain.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Margarita_Teresa_of_Spain.jpg
+    license: Public domain
+    credit: anonymous
+identifiers:
+  gnd: "118730991"
+  idref: 23737711X
+  lc: nr99026343
+  ulan: "500353753"
+  viaf: "8182642"
 sources:
   kind:
     - accessed: 2026-10-19

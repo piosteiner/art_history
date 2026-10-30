@@ -2,4 +2,48 @@ public_id: 100319
 name: Paul Rosenberg
 given_name: Paul
 family_name: Rosenberg
+kind: person
+birth: 1881-12-29
+death: 1959-06-29
 wikidata_id: Q560643
+metadata:
+  sources: [Wikidata Q560643 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q560643
+  - type: died_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q560643
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f6/Henri_Manuel_Syndicat_des_%C3%A9diteurs_d%E2%80%99art_1938.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_Manuel_Syndicat_des_%C3%A9diteurs_d%E2%80%99art_1938.jpg
+    license: Public domain
+    credit: Henri Manuel
+identifiers:
+  bnf: 16589157x
+  gnd: "130441597"
+  idref: "171820673"
+  lc: no2010170881
+  rkd: "453899"
+  ulan: "500372940"
+  viaf: "8493826"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q560643
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q560643
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q560643

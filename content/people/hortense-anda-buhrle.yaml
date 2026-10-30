@@ -11,6 +11,9 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q1630202
+  - Hortense Anda
+  - Hortense Anda-Buehrle
+  - Horty
 kind: person
 birth: 1926-05-18
 death: 2014-05-16
@@ -18,12 +21,45 @@ wikidata_id: Q1630202
 metadata:
   sources: [Wikidata Q1630202 (retrieved 2026-10-28)]
 relationships:
+  - type: nationality
+    to: polity/germany
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q1630202
+  - type: nationality
+    to: polity/switzerland
+    period: 1937
+    period_label: from 1937
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q1630202
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q1630202
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q1630202
   - type: founded
     to: institution/foundation-e-g-buhrle-collection
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q666331
+identifiers:
+  bnf: 14793142q
+  dodis: P24305
+  gnd: "133234746"
+  hls: "044016"
+  lc: nr91002671
+  viaf: "77498059"
 sources:
   kind:
     - accessed: 2026-10-28

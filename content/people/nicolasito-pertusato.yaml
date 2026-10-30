@@ -8,6 +8,24 @@ death: 1710-06-21
 wikidata_id: Q9049947
 metadata:
   sources: [Wikidata Q9049947 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q9049947
+  - type: born_in
+    to: place/alessandria
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q9049947
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1b/LasMeninas9.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:LasMeninas9.jpg
+    license: Public domain
+    credit: Diego Velázquez
 sources:
   kind:
     - accessed: 2026-10-19

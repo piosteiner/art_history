@@ -11,6 +11,63 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q459041
+  - Vollard
+  - Ambrose Vollard
+  - A. Vollard
+  - lang: ja
+    role: translation
+    text: アンブロワーズ・ヴォラール
+  - lang: zh
+    role: translation
+    text: 安布鲁瓦兹·沃拉尔
+  - lang: ko
+    role: translation
+    text: 앙브루아즈 볼라르
+  - lang: ru
+    role: translation
+    text: Амбруаз Воллар
+kind: person
+birth: 1866-07-03
+death: 1939-07-22
 wikidata_id: Q459041
 metadata:
   sources: [Wikidata Q459041 (retrieved 2026-10-29)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q459041
+  - type: died_in
+    to: place/versailles
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q459041
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/23/Ambroise_Vollard%2C_standing_in_front_of_Picasso%27s_Evocaci%C3%B3n._El_entierro_de_Casagemas.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ambroise_Vollard,_standing_in_front_of_Picasso%27s_Evocaci%C3%B3n._El_entierro_de_Casagemas.jpg
+    license: Public domain
+identifiers:
+  bnf: 12015538x
+  gnd: "118627775"
+  idref: "028289366"
+  lc: n79117986
+  nlk: KAC202094179
+  rkd: "207752"
+  ulan: "500327786"
+  viaf: "29545359"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q459041
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q459041
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q459041

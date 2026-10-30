@@ -8,6 +8,16 @@ death: 98
 wikidata_id: Q328804
 metadata:
   sources: [Wikidata Q328804 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Grandes_Heures_Anne_de_Bretagne_Saint_Jean.jpg/1280px-Grandes_Heures_Anne_de_Bretagne_Saint_Jean.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Grandes_Heures_Anne_de_Bretagne_Saint_Jean.jpg
+    license: Public domain
+    credit: Jean Bourdichon
+identifiers:
+  gnd: "118557815"
+  idref: "027562611"
+  lc: n79060715
+  viaf: "40648922"
 sources:
   kind:
     - accessed: 2026-10-19

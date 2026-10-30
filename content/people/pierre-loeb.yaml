@@ -2,4 +2,37 @@ public_id: 100337
 name: Pierre Loeb
 given_name: Pierre
 family_name: Loeb
+kind: person
+birth: 1897-09-24
+death: 1964-05-04
 wikidata_id: Q1699547
+metadata:
+  sources: [Wikidata Q1699547 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q1699547
+identifiers:
+  bnf: 13191849d
+  gnd: "143543091"
+  idref: 03547257X
+  lc: nr97037875
+  rkd: "331568"
+  ulan: "500321594"
+  viaf: "76457254"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q1699547
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q1699547
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q1699547

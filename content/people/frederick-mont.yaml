@@ -9,12 +9,36 @@ wikidata_id: Q33315010
 metadata:
   sources: [Wikidata Q33315010 (retrieved 2026-10-28)]
 relationships:
+  - type: nationality
+    to: polity/austria
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q33315010
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q33315010
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q33315010
   - type: founded
     to: institution/galerie-sanct-lucas
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q53678062
+identifiers:
+  gnd: "1225946360"
+  lc: no2007138555
+  rkd: "431910"
+  ulan: "500437571"
+  viaf: "139936107"
 sources:
   kind:
     - accessed: 2026-10-28

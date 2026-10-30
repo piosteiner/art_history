@@ -2,4 +2,55 @@ public_id: 100353
 name: Dawson Turner
 given_name: Dawson
 family_name: Turner
+kind: person
+birth: 1775-10-18
+death: 1858-06-20
 wikidata_id: Q2628753
+metadata:
+  sources: [Wikidata Q2628753 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2628753
+  - type: nationality
+    to: polity/kingdom-of-great-britain
+    period: 1801-01-01
+    period_label: until 1 January 1801
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2628753
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q2628753
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Dawson_Turner_%28BM_1837%2C0715.6%29.jpg/1280px-Dawson_Turner_%28BM_1837%2C0715.6%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dawson_Turner_(BM_1837,0715.6).jpg
+    license: Public domain
+    credit: "Print made by: Hannah Sarah Brightwen After: John Philip Davis Printed by: Graf & Soret"
+identifiers:
+  bnf: "136023556"
+  gnd: 11743891X
+  idref: "053513983"
+  lc: n88218854
+  ulan: "500327252"
+  viaf: "7560460"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q2628753
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q2628753
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q2628753

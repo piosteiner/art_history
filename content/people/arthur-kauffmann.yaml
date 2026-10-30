@@ -2,4 +2,36 @@ public_id: 100327
 name: Arthur Kauffmann
 given_name: Arthur
 family_name: Kauffmann
+kind: person
+birth: 1887-05-29
+death: 1943/1945
+death_label: c. 1940s
 wikidata_id: Q105355124
+metadata:
+  sources: [Wikidata Q105355124 (retrieved 2026-10-30)]
+relationships:
+  - type: born_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q105355124
+  - type: lived_in
+    to: place/frankfurt
+    sources:
+      - accessed: 2026-10-30
+        property: P551
+        wikidata: Q105355124
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q105355124
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q105355124
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q105355124

@@ -7,12 +7,29 @@ wikidata_id: Q11423154
 metadata:
   sources: [Wikidata Q11423154 (retrieved 2026-10-28)]
 relationships:
+  - type: nationality
+    to: polity/japan
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q11423154
+  - type: died_in
+    to: place/wakayama-prefecture
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q11423154
   - type: founded
     to: institution/koyasan-reihokan
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q11673069
+identifiers:
+  bnf: "119956206"
+  idref: "028040856"
+  lc: nr91004861
+  viaf: "41692434"
 sources:
   kind:
     - accessed: 2026-10-28

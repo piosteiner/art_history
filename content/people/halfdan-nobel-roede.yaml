@@ -2,4 +2,43 @@ public_id: 100461
 name: Halfdan Nobel Roede
 given_name: Halfdan Nobel
 family_name: Roede
+kind: person
+birth: 1877-11-04
+death: 1963-11-17
 wikidata_id: Q7710871
+metadata:
+  sources: [Wikidata Q7710871 (retrieved 2026-10-30)]
+relationships:
+  - type: born_in
+    to: place/oslo
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q7710871
+  - type: died_in
+    to: place/oslo
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q7710871
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1a/Halfdan_Nobel_Roede.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Halfdan_Nobel_Roede.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 125502688X
+  viaf: "15145971339632330266"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q7710871
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q7710871
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q7710871

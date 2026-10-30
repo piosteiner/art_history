@@ -9,12 +9,42 @@ wikidata_id: Q117524
 metadata:
   sources: [Wikidata Q117524 (retrieved 2026-10-28)]
 relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q117524
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q117524
+  - type: died_in
+    to: place/geneva
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q117524
   - type: founded
     to: institution/gottfried-keller-stiftung
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q260102
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Lydia_Welti_Escher.jpg/1280px-Lydia_Welti_Escher.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Lydia_Welti_Escher.jpg
+    license: Public domain
+    credit: unknown, Adrian Michael
+identifiers:
+  dodis: P26029
+  gnd: "119048663"
+  hls: "027786"
+  idref: "102442819"
+  lc: n87855333
+  viaf: "813462"
 sources:
   kind:
     - accessed: 2026-10-28

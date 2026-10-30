@@ -17,12 +17,69 @@ names:
       - accessed: 2026-10-29
         property: P1449
         wikidata: Q186256
+  - lang: es
+    role: original
+    text: Fernando VII
+  - Ferdinand the Desired
+  - The Felon King
+  - lang: nl
+    role: translation
+    text: Ferdinand VII van Spanje
+  - lang: fr
+    role: translation
+    text: Ferdinand VII d'Espagne
+  - lang: de
+    role: translation
+    text: Ferdinand VII.
+  - lang: it
+    role: translation
+    text: Ferdinando VII di Spagna
+  - lang: es
+    role: original
+    text: Fernando VII de España
+  - lang: ja
+    role: translation
+    text: フェルナンド7世
+  - lang: zh
+    role: translation
+    text: 斐迪南七世
+  - lang: ko
+    role: translation
+    text: 페르난도 7세
+  - lang: ru
+    role: translation
+    text: Фердинанд VII
 kind: person
 birth: 1784-10-14
 death: 1833-09-29
 wikidata_id: Q186256
 metadata:
   sources: [Wikidata Q186256 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q186256
+  - type: died_in
+    to: place/royal-palace-of-madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q186256
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/20/Fernando_VII_-_Vicente_L%C3%B3pez.jpg/1280px-Fernando_VII_-_Vicente_L%C3%B3pez.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fernando_VII_-_Vicente_L%C3%B3pez.jpg
+    license: Public domain
+    credit: Vicente López Portaña
+identifiers:
+  bnf: 12699052r
+  gnd: "119307421"
+  idref: "028694325"
+  lc: n80040243
+  ulan: "500122384"
+  viaf: "286447916"
 sources:
   kind:
     - accessed: 2026-10-19

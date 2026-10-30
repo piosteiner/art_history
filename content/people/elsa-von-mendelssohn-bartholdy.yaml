@@ -2,4 +2,32 @@ public_id: 100464
 name: Elsa von Mendelssohn-Bartholdy
 given_name: Elsa
 family_name: von Mendelssohn-Bartholdy
+kind: person
+birth: 1899
+death: 1986
 wikidata_id: Q94927156
+metadata:
+  sources: [Wikidata Q94927156 (retrieved 2026-10-30)]
+relationships:
+  - type: born_in
+    to: place/strasbourg
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q94927156
+identifiers:
+  gnd: "1072701197"
+  viaf: "316501768"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q94927156
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q94927156
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q94927156

@@ -9,12 +9,55 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q462892
+  - lang: nl
+    role: translation
+    text: Francisco de Paula van Bourbon
+  - lang: fr
+    role: translation
+    text: François de Paule de Bourbon
+  - lang: de
+    role: translation
+    text: Francisco de Paula de Borbón
+  - lang: it
+    role: translation
+    text: Francesco di Paola di Borbone-Spagna
+  - lang: es
+    role: translation
+    text: Francisco de Paula de Borbón y Borbón
+  - lang: ja
+    role: translation
+    text: フランシスコ・デ・パウラ・デ・ボルボーン
+  - lang: zh
+    role: translation
+    text: 弗朗西斯科·德·保拉親王
+  - lang: ko
+    role: translation
+    text: 프란시스코 데 파울라
+  - lang: ru
+    role: translation
+    text: Франсиско де Паула де Бурбон
 kind: person
 birth: 1794-03-10
 death: 1865-08-13
 wikidata_id: Q462892
 metadata:
   sources: [Wikidata Q462892 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q462892
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Infante_Francisco_de_Paula.jpg/1280px-Infante_Francisco_de_Paula.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Infante_Francisco_de_Paula.jpg
+    license: Public domain
+    credit: Infante Sebastian Gabriel of Spain
+identifiers:
+  gnd: "1161853499"
+  lc: no2018058925
+  viaf: "87497878"
 sources:
   kind:
     - accessed: 2026-10-19

@@ -2,4 +2,45 @@ public_id: 100446
 name: Walter Haefner
 given_name: Walter
 family_name: Haefner
+kind: person
+birth: 1910-09-13
+death: 2012-06-19
 wikidata_id: Q116842
+metadata:
+  sources: [Wikidata Q116842 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q116842
+  - type: born_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q116842
+  - type: died_in
+    to: place/zurich
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q116842
+identifiers:
+  gnd: "143050850"
+  hls: "042733"
+  viaf: "160831070"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q116842
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q116842
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q116842

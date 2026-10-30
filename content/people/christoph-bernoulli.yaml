@@ -2,4 +2,46 @@ public_id: 100361
 name: Christoph Bernoulli
 given_name: Christoph
 family_name: Bernoulli
+kind: person
+birth: 1897-10-02
+death: 1981-08-09
 wikidata_id: Q19822490
+metadata:
+  sources: [Wikidata Q19822490 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/switzerland
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q19822490
+  - type: born_in
+    to: place/basel
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q19822490
+  - type: died_in
+    to: place/rheinfelden
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q19822490
+identifiers:
+  gnd: "118509934"
+  idref: "152087265"
+  lc: nr2002045022
+  viaf: "100387862"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q19822490
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q19822490
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q19822490

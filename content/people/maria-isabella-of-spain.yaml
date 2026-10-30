@@ -6,6 +6,29 @@ death: 1848-09-13
 wikidata_id: Q233196
 metadata:
   sources: [Wikidata Q233196 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q233196
+  - type: born_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q233196
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Vicente_Lop%C3%A9z_Porta%C3%B1a_%281772-1850%29_-_Portret_van_de_koningin_van_de_twee_Sicili%C3%ABn_%281831%29_-_Madrid_Bellas_Artes_19-03-2010_11-30-09.jpg/1280px-Vicente_Lop%C3%A9z_Porta%C3%B1a_%281772-1850%29_-_Portret_van_de_koningin_van_de_twee_Sicili%C3%ABn_%281831%29_-_Madrid_Bellas_Artes_19-03-2010_11-30-09.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vicente_Lop%C3%A9z_Porta%C3%B1a_(1772-1850)_-_Portret_van_de_koningin_van_de_twee_Sicili%C3%ABn_(1831)_-_Madrid_Bellas_Artes_19-03-2010_11-30-09.jpg
+    license: Public domain
+    credit: Vicente López Portaña
+identifiers:
+  gnd: "137086547"
+  lc: n2010021457
+  rkd: "422194"
+  viaf: "81325828"
 sources:
   kind:
     - accessed: 2026-10-19

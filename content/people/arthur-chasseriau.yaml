@@ -11,6 +11,47 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q2865045
+  - Arthur Chasseriau
+kind: person
+birth: 1850-06-29
+death: 1934
 wikidata_id: Q2865045
 metadata:
   sources: [Wikidata Q2865045 (retrieved 2026-10-29)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q2865045
+  - type: born_in
+    to: place/algiers
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q2865045
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q2865045
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/84/Arthur_chasseriau.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Arthur_chasseriau.JPG
+    license: Public domain
+    credit: Henri d'Estienne
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q2865045
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q2865045
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q2865045

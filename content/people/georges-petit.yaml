@@ -9,12 +9,42 @@ wikidata_id: Q44139
 metadata:
   sources: [Wikidata Q44139 (retrieved 2026-10-28)]
 relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q44139
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q44139
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q44139
   - type: founded
     to: institution/galerie-georges-petit
     sources:
       - accessed: 2026-10-28
         property: P112
         wikidata: Q18662018
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Georges_Petit.png
+    source_url: https://commons.wikimedia.org/wiki/File:Georges_Petit.png
+    license: Public domain
+    credit: Unknown; possibly the subject, Georges Petit (1856 - 1920)
+identifiers:
+  bnf: "154368642"
+  gnd: "1098553977"
+  idref: 14070020X
+  rkd: "456342"
+  ulan: "500447929"
+  viaf: "160921120"
 sources:
   kind:
     - accessed: 2026-10-28

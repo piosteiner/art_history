@@ -16,12 +16,49 @@ names:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q195217
+  - Joesfa Tudó y Catalán, 1° Condesa de Castillo Fiel
+  - lang: ja
+    role: translation
+    text: ペピータ
+  - lang: zh
+    role: translation
+    text: 佩篳塔·杜朵
+  - lang: ru
+    role: translation
+    text: Хосефа де Тудо
 kind: person
 birth: 1779-05-19
 death: 1869-09-20
 wikidata_id: Q195217
 metadata:
   sources: [Wikidata Q195217 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q195217
+  - type: born_in
+    to: place/cadiz
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q195217
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q195217
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/69/Josefa_Tud%C3%B3_con_sus_hijos_Manuel_y_Luis_Godoy%2C_en_un_jard%C3%ADn.jpg/1280px-Josefa_Tud%C3%B3_con_sus_hijos_Manuel_y_Luis_Godoy%2C_en_un_jard%C3%ADn.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Josefa_Tud%C3%B3_con_sus_hijos_Manuel_y_Luis_Godoy,_en_un_jard%C3%ADn.jpg
+    license: CC BY-SA 4.0
+    credit: José de Madrazo y Agudo
+identifiers:
+  lc: nr2001000163
+  viaf: "54073377"
 sources:
   kind:
     - accessed: 2026-10-19

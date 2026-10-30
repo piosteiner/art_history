@@ -2,6 +2,48 @@ public_id: 100335
 name: Ferenc von Hatvany
 given_name: Ferenc
 family_name: von Hatvany
+kind: person
+birth: 1881-10-29
+death: 1958-02-07
 wikidata_id: Q324935
+metadata:
+  sources: [Wikidata Q324935 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/hungary
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q324935
+  - type: born_in
+    to: place/budapest
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q324935
+  - type: died_in
+    to: place/lausanne
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q324935
 identifiers:
   dome: "155"
+  gnd: "123636159"
+  idref: "273980262"
+  rkd: "27680"
+  ulan: "500093866"
+  viaf: "62459997"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q324935
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q324935
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q324935

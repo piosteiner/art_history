@@ -7,6 +7,18 @@ birth: 1637
 wikidata_id: Q9029918
 metadata:
   sources: [Wikidata Q9029918 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q9029918
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Meninas_detail.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Meninas_detail.jpg
+    license: Public domain
+    credit: Diego Velázquez
 sources:
   kind:
     - accessed: 2026-10-19

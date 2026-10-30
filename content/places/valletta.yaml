@@ -1,6 +1,7 @@
 public_id: 102927
 name: Valletta
 kind: settlement
+designation: capital of Malta
 parent: malta
 boundary_code: MT-60
 location: [14.5125, 35.89778]

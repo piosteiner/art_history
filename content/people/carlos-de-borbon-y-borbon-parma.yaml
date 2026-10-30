@@ -6,6 +6,25 @@ death: 1855-03-10
 wikidata_id: Q343621
 metadata:
   sources: [Wikidata Q343621 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q343621
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Carlos_Mar%C3%ADa_Isidro_de_Borb%C3%B3n%2C_por_Vicente_L%C3%B3pez.jpg/1280px-Carlos_Mar%C3%ADa_Isidro_de_Borb%C3%B3n%2C_por_Vicente_L%C3%B3pez.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carlos_Mar%C3%ADa_Isidro_de_Borb%C3%B3n,_por_Vicente_L%C3%B3pez.jpg
+    license: Public domain
+    credit: Vicente López Portaña
+identifiers:
+  bnf: 14621464r
+  gnd: "1019764481"
+  idref: "083309381"
+  lc: n2001026280
+  ulan: "500037226"
+  viaf: "120744459"
 sources:
   kind:
     - accessed: 2026-10-19

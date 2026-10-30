@@ -2,4 +2,45 @@ public_id: 100448
 name: Martin Fabiani
 given_name: Martin
 family_name: Fabiani
+kind: person
+birth: 1899-10-03
+death: 1989-06-11
 wikidata_id: Q100708933
+metadata:
+  sources: [Wikidata Q100708933 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q100708933
+  - type: died_in
+    to: place/neuilly-sur-seine
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q100708933
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a3/L%27entraineur%2C_Jean_Sens%2C_et_le_propri%C3%A9taire-%C3%A9leveur%2C_Martin_Fabiani.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:L%27entraineur,_Jean_Sens,_et_le_propri%C3%A9taire-%C3%A9leveur,_Martin_Fabiani.jpg
+    license: CC BY-SA 4.0
+    credit: Cuidadela
+identifiers:
+  bnf: 12604891s
+  idref: "244828164"
+  ulan: "500447269"
+  viaf: "2246149416749589730005"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q100708933
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q100708933
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q100708933

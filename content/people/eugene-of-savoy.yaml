@@ -7,12 +7,42 @@ wikidata_id: Q152428
 metadata:
   sources: [Wikidata Q152428 (retrieved 2026-10-23)]
 relationships:
+  - type: nationality
+    to: polity/duchy-of-savoy
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q152428
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q152428
+  - type: died_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q152428
   - type: founded
     to: institution/belvedere-wien
     sources:
       - accessed: 2026-10-23
         property: P112
         wikidata: Q303139
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/41/Godfrey_Kneller_Eugen_von_Savoyen_1712.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Godfrey_Kneller_Eugen_von_Savoyen_1712.jpg
+    license: Public domain
+    credit: Godfrey Kneller
+identifiers:
+  bnf: "119370512"
+  gnd: "118605941"
+  idref: "027297969"
+  lc: n81108980
+  rkd: "460528"
+  viaf: "64800019"
 sources:
   kind:
     - accessed: 2026-10-23

@@ -2,4 +2,39 @@ public_id: 100262
 name: Sam Salz
 given_name: Sam
 family_name: Salz
+kind: person
+birth: 1894-03-12
+death: 1981-03-21
 wikidata_id: Q19308411
+metadata:
+  sources: [Wikidata Q19308411 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q19308411
+  - type: died_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q19308411
+identifiers:
+  gnd: "1080271740"
+  ulan: "500372784"
+  viaf: "16145066419766590708"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q19308411
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q19308411
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q19308411

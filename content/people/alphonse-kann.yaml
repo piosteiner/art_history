@@ -2,4 +2,51 @@ public_id: 100341
 name: Alphonse Kann
 given_name: Alphonse
 family_name: Kann
+kind: person
+birth: 1870-03-14
+death: 1948-09-24
 wikidata_id: Q4735374
+metadata:
+  sources: [Wikidata Q4735374 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q4735374
+  - type: born_in
+    to: place/vienna
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q4735374
+  - type: died_in
+    to: place/london
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q4735374
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Alphonse_Kann_%281870-1948%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Alphonse_Kann_(1870-1948).jpg
+    license: CC0
+    credit: Sebastien93430
+identifiers:
+  dodis: P5790
+  gnd: "129374210"
+  idref: "195374940"
+  viaf: "70006976"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q4735374
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q4735374
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q4735374

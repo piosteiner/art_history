@@ -6,6 +6,27 @@ death: 1801-12-08
 wikidata_id: Q604419
 metadata:
   sources: [Wikidata Q604419 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q604419
+  - type: died_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q604419
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d8/Mengs_-_Infanta_Maria_Josefa.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mengs_-_Infanta_Maria_Josefa.jpg
+    license: Public domain
+    credit: Anton Raphael Mengs
+identifiers:
+  gnd: "1013629094"
+  viaf: "173555174"
 sources:
   kind:
     - accessed: 2026-10-19

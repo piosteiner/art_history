@@ -6,6 +6,36 @@ death: 1883-04-16
 wikidata_id: Q352200
 metadata:
   sources: [Wikidata Q352200 (retrieved 2026-10-19)]
+relationships:
+  - type: nationality
+    to: polity/spain
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q352200
+  - type: born_in
+    to: place/madrid
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q352200
+  - type: died_in
+    to: place/nice
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q352200
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Ritratto_di_Carlo_Ludovico_di_Borbone.jpg/1280px-Ritratto_di_Carlo_Ludovico_di_Borbone.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ritratto_di_Carlo_Ludovico_di_Borbone.jpg
+    license: Public domain
+    credit: Unidentified painter
+identifiers:
+  bnf: 15047538f
+  gnd: "123331749"
+  idref: "113418620"
+  lc: n87903100
+  viaf: "48296149"
 sources:
   kind:
     - accessed: 2026-10-19

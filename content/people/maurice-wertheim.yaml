@@ -8,6 +8,29 @@ death: 1950
 wikidata_id: Q1496426
 metadata:
   sources: [Wikidata Q1496426 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/united-states
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q1496426
+  - type: born_in
+    to: place/new-york-city
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q1496426
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/30/Maurice_Wertheim_1922.png
+    source_url: https://commons.wikimedia.org/wiki/File:Maurice_Wertheim_1922.png
+    license: Public domain
+    credit: Bankers Magazine
+identifiers:
+  gnd: "119319233"
+  idref: "175923167"
+  lc: n86149060
+  viaf: "77806658"
 sources:
   kind:
     - accessed: 2026-10-18

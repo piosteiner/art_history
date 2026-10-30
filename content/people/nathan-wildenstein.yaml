@@ -9,12 +9,34 @@ wikidata_id: Q12954454
 metadata:
   sources: [Wikidata Q12954454 (retrieved 2026-10-18)]
 relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q12954454
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q12954454
   - type: founded
     to: institution/wildenstein-co
     sources:
       - accessed: 2026-10-18
         property: P112
         wikidata: Q10288082
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Wildenstein.nathan.und.georges.1908.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wildenstein.nathan.und.georges.1908.jpg
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 13138905X
+  lc: nr00026701
+  ulan: "500355876"
+  viaf: "10977386"
 sources:
   kind:
     - accessed: 2026-10-18

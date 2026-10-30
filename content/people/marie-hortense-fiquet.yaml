@@ -8,6 +8,30 @@ death: 1922-05-03
 wikidata_id: Q463803
 metadata:
   sources: [Wikidata Q463803 (retrieved 2026-10-18)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q463803
+  - type: died_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q463803
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_in_Blue_-_Google_Art_Project.jpg/1280px-Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_in_Blue_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne_-_Madame_C%C3%A9zanne_in_Blue_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Paul Cézanne
+identifiers:
+  bnf: "155604033"
+  gnd: "130011436"
+  idref: "150608446"
+  lc: no2008112509
+  viaf: "57707563"
 sources:
   kind:
     - accessed: 2026-10-18
