@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: La Berceuse (Met) — the Met's full provenance
+- **What:** the Met's provenance as the owner read it in the browser: the sitter and Joseph Roulin, Arles and Marseilles
+  (1889–1900, a gift from the artist) → presumably through Henri Laget → Ambroise Vollard 1900 → Amédée Schuffenecker
+  (by 1905–1910) → Bernheim-Jeune 1910 → Léon Marseille → Galerie Tanner, Zurich → Rudolf Staechelin, Basel
+  (29 December 1917, 35,000 Swiss francs) → Rudolf Staechelin Foundation 1932 → Wildenstein (consigned 1967) →
+  Walter and Leonore Annenberg (4 October 1967) → the Met (jointly 1996, bequest 2002). New: Joseph Roulin, Rudolf
+  Staechelin, Rudolf Staechelin Foundation, Galerie Tanner, Galerie Léon Marseille.
+- **Why:** owner, 2026-10-30 (screenshot of the provenance tab).
+- **Revert:** the steps via the admin (history).
+
 ### Data: La Berceuse (Boston) — the MFA's full provenance
 - **What:** the MFA's provenance with its six notes, as the owner read it in the browser (the page shuts out automated
   reading): Theo van Gogh 1889 (custodian, letter 774) → Émile Bernard (Theo's gift on Vincent's behalf, letter 776;

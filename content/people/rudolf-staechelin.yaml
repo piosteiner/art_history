@@ -1,0 +1,38 @@
+public_id: 105066
+name: Rudolf Staechelin
+given_name: Rudolf
+family_name: Staechelin
+names:
+  - lang: ja
+    role: translation
+    text: ルドルフ・シュテヘリン
+kind: person
+occupations: [entrepreneur, art collector]
+birth: 1881-05-08
+death: 1946-01-03
+wikidata_id: Q19006298
+metadata:
+  sources: [Wikidata Q19006298 (retrieved 2026-10-30)]
+identifiers:
+  gnd: "119063999"
+  hls: "027772"
+  idref: 11161483X
+  lc: n83059609
+  viaf: "32798400"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q19006298
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q19006298
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q19006298
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q19006298

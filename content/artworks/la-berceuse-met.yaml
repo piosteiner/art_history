@@ -34,35 +34,133 @@ images:
     credit: Vincent van Gogh
 provenance:
   - owner: person/augustine-roulin
+    co_owners: [person/joseph-roulin]
+    further_places: [marseille]
     acquired: 1889
+    ended: 1900
     method: gift
-    label: given to her by the artist — the version she chose for herself
+    place: arles
+    label: the sitter and her husband — a gift from the artist; sold, presumably through Henri Laget, to Vollard
     sources:
       - url: https://vangoghletters.org/vg/letters/let776/notes.html
-        note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
+        note: "“The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script) · Van Gogh Letters, letter 776, notes: Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin"
         source: van-gogh-letters
         accessed: 2026-10-30
       - url: https://www.metmuseum.org/art/collection/search/437984
-        note: "The Met: “Of the five versions of Van Gogh’s portrait of Augustine Roulin, wife of his friend the postmaster of Arles, the present canvas is the one the sitter chose for herself.”"
+        note: "The Met: “Of the five versions of Van Gogh’s portrait of Augustine Roulin, wife of his friend the postmaster of Arles, the present canvas is the one the sitter chose for herself.” · The Met, provenance: “the sitter and her husband, Joseph Roulin, Arles, later Marseilles (1889–1900; gift from the artist; sold, presumably through Henri Laget, to Vollard)”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner_label: Henri Laget
+    role: agent
+    acquired: 1900
+    place: marseille
+    label: presumably the go-between
+    certainty: probable
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met: “The Walter H. and Leonore Annenberg Collection, Gift of Walter H. and Leonore Annenberg, 1996, Bequest of Walter H. Annenberg, 2002” · The Met, provenance: “sold, presumably through Henri Laget, to Vollard”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner: person/ambroise-vollard
+    role: dealer
+    acquired: 1900
+    method: purchase
+    place: paris
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met: “Gift of Walter H. and Leonore Annenberg, 1996, Bequest of Walter H. Annenberg, 2002” · The Met, provenance: “[Ambroise Vollard, Paris, in 1900]”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner: person/leon-paul-amedee-schuffenecker
+    acquired: 1905 or earlier
+    ended: 1910
+    label: Saint-Maur / Clamart
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met, provenance: “Amédée Schuffenecker, Saint-Maur/Clamart (by 1905; until 1910)”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner: institution/bernheim-jeune
+    role: dealer
+    acquired: 1910
+    place: paris
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met, provenance: “[Bernheim-Jeune, Paris, in 1910]”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner: institution/galerie-leon-marseille
+    role: dealer
+    place: paris
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met, provenance: “[Léon Marseille, Paris]”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner: institution/galerie-tanner
+    role: dealer
+    ended: 1917-12-29
+    place: zurich
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met, provenance: “[Galerie Tanner, Zurich, until 1917; sold on December 29 for 35,000 Swiss francs to Staechelin]”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner: person/rudolf-staechelin
+    acquired: 1917-12-29
+    ended: 1932
+    method: purchase
+    direct: true
+    place: basel
+    price:
+      amount: 35000
+      currency: CHF
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met, provenance: “sold on December 29 for 35,000 Swiss francs to Staechelin]; Rudolf Staechelin, Basel (1917–32; transferred in 1932 to Staechelin Foundation)”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner: institution/rudolf-staechelin-foundation
+    acquired: 1932
+    ended: 1967
+    method: transfer
+    direct: true
+    place: basel
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met, provenance: “Rudolf Staechelin Foundation, Basel (1932–67; consigned in 1967 to Wildenstein, Paris and New York; sold through Wildenstein on October 4 to Annenberg)”"
+        source: metmuseum-la-berceuse-1996-435
+        accessed: 2026-10-30
+  - owner: institution/wildenstein-co
+    role: agent
+    acquired: 1967
+    ended: 1967-10-04
+    place: new-york-city
+    label: consigned by the Staechelin Foundation, Paris and New York
+    sources:
+      - url: https://www.metmuseum.org/art/collection/search/437984
+        note: "The Met, provenance: “consigned in 1967 to Wildenstein, Paris and New York; sold through Wildenstein on October 4 to Annenberg”"
         source: metmuseum-la-berceuse-1996-435
         accessed: 2026-10-30
   - owner: person/walter-annenberg
     co_owners: [person/leonore-annenberg]
-    place: new-york-city
-    label: The Walter H. and Leonore Annenberg Collection
+    acquired: 1967-10-04
+    ended: 2002
+    method: purchase
+    label: Rancho Mirage, California; jointly with The Met from 1996
     sources:
       - url: https://www.metmuseum.org/art/collection/search/437984
-        note: "The Met: “The Walter H. and Leonore Annenberg Collection, Gift of Walter H. and Leonore Annenberg, 1996, Bequest of Walter H. Annenberg, 2002”"
+        note: "The Met, provenance: “Walter H. and Leonore Annenberg, Rancho Mirage, Calif. (1967–96; jointly with The Met, 1996–his d. 2002)”"
         source: metmuseum-la-berceuse-1996-435
         accessed: 2026-10-30
   - owner: institution/metropolitan-museum-of-art
     acquired: 1996/2002
     method: gift
     place: new-york-city
-    label: gift of Walter H. and Leonore Annenberg, 1996; bequest of Walter H. Annenberg, 2002
+    label: gift of Walter H. and Leonore Annenberg, 1996 (jointly owned with them); bequest of Walter H. Annenberg, 2002
     sources:
       - url: https://www.metmuseum.org/art/collection/search/437984
-        note: "The Met: “Gift of Walter H. and Leonore Annenberg, 1996, Bequest of Walter H. Annenberg, 2002”"
+        note: "The Met, provenance: “jointly with The Met, 1996–his d. 2002” · The Met, provenance: “The Walter H. and Leonore Annenberg Collection, Gift of Walter H. and Leonore Annenberg, 1996, Bequest of Walter H. Annenberg, 2002”"
         source: metmuseum-la-berceuse-1996-435
         accessed: 2026-10-30
 numbers:

@@ -1,0 +1,39 @@
+public_id: 105065
+name: Joseph Roulin
+given_name: Joseph
+family_name: Roulin
+kind: person
+occupations: [mail carrier, art collector]
+birth: 1841-04-04
+death: 1903
+wikidata_id: Q22338187
+metadata:
+  sources: [Wikidata Q22338187 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Vincent_van_Gogh_-_Portret_van_de_postbode_Joseph_Roulin.jpg/1280px-Vincent_van_Gogh_-_Portret_van_de_postbode_Joseph_Roulin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Portret_van_de_postbode_Joseph_Roulin.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+identifiers:
+  bnf: 16996658t
+  gnd: "118867008"
+  lc: n91111056
+  ulan: "500353279"
+  viaf: "59881765"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q22338187
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q22338187
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q22338187
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q22338187

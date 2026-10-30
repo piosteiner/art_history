@@ -1,0 +1,15 @@
+public_id: 105068
+name: Galerie Léon Marseille
+names:
+  - lang: de
+    role: original
+    text: Léon Marseille, Kunsthandlung, Paris
+kind: gallery
+wikidata_id: Q135091308
+metadata:
+  sources: [Wikidata Q135091308 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q135091308

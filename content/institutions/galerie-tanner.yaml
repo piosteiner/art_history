@@ -1,0 +1,29 @@
+public_id: 105067
+name: Galerie Tanner
+kind: gallery
+place: zurich
+location: [8.53848, 47.37174]
+address: Bahnhofstrasse 39/42 Zürich
+wikidata_id: Q47035109
+metadata:
+  sources: [Wikidata Q47035109 (retrieved 2026-10-30)]
+identifiers:
+  ulan: "500312247"
+  viaf: "172917926"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q47035109
+  place:
+    - accessed: 2026-10-30
+      property: P131
+      wikidata: Q47035109
+  address:
+    - accessed: 2026-10-30
+      property: P6375
+      wikidata: Q47035109
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q47035109
