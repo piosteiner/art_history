@@ -12,7 +12,7 @@ const express = require('express');
 const { adminPool } = require('../../db');
 const { html, raw } = require('../html');
 const { send, withTx, notFoundPage, friendly, history, historyTable, when } = require('../core');
-const { KINDS, STATUS, parseItems, itemsToText, renderItems } = require('../../changelog');
+const { KINDS, STATUS, parseItems, itemsToText, renderItems, sortItems } = require('../../changelog');
 
 const router = express.Router();
 const SITE = process.env.PUBLIC_SITE_URL || 'https://arthistory.piogino.ch';
@@ -125,7 +125,8 @@ function entryForm(e, { action, items = '', flash = null, preview = null, isNew 
     ${isNew ? '' : html`<p class="actions" style="margin-top:1.5rem"><a class="button danger" href="/changelog/${String(e.id)}/delete">Delete this entry…</a></p>`}
     ${past}` };
 }
-const previewOf = async (items) => {
+const previewOf = async (unsorted) => {
+  const items = sortItems(unsorted);  // as the site will show them (167)
   const htmls = await renderItems(adminPool, items.map((i) => i.text_md ?? i.text));
   const colors = new Map((await areaList(adminPool)).map((a) => [a.name, a.color]));
   return html`${items.map((i, n) => html`<li><span class="cl-kind cl-${i.kind}">${KINDS[i.kind]}</span>${i.area ? html` ${areaTag(i.area, colors)}` : ''} ${raw(htmls[n])}</li>`)}`;

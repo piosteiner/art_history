@@ -20,7 +20,8 @@ test('changelog: an entry with kinds, a draft until published, in the API and th
   await typeItems(userA, 'Neu: Suche über Sprachen hinweg mit [[artist/paul-gauguin|Gauguin]]\nbehoben: Treffer öffnen beim Fund\n  auch in der Provenienz\nOhne Art');
   await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Create")')]);
   await expect(userA).toHaveURL(/\/changelog\/\d+\/edit\?done=created/);
-  await expect(userA.locator('#cl-items')).toHaveValue('Neu: Suche über Sprachen hinweg mit [[artist/paul-gauguin|Gauguin]]\nBehoben: Treffer öffnen beim Fund\n  auch in der Provenienz\nNeu: Ohne Art');
+  // stored in the changelog's order (167): the two Neu first, then Behoben
+  await expect(userA.locator('#cl-items')).toHaveValue('Neu: Suche über Sprachen hinweg mit [[artist/paul-gauguin|Gauguin]]\nNeu: Ohne Art\nBehoben: Treffer öffnen beim Fund\n  auch in der Provenienz');
   await expect(userA.locator('.changelog-preview li')).toHaveCount(3);
   await expect(userA.locator('.changelog-preview a', { hasText: 'Gauguin' })).toBeVisible();
 
@@ -41,7 +42,7 @@ test('changelog: an entry with kinds, a draft until published, in the API and th
   const data = await api(request, '/changelog');
   expect(data.total).toBe(1);
   expect(data.data[0]).toMatchObject({ day: '2026-10-19', title: 'Patch: Suche' });
-  expect(data.data[0].items.map((i) => i.kind)).toEqual(['neu', 'behoben', 'neu']);
+  expect(data.data[0].items.map((i) => i.kind)).toEqual(['neu', 'neu', 'behoben']);
   expect(data.data[0].items[0].html).toContain('Gauguin</a>');
   expect(data.data[0].items[0].html).not.toContain('<p>');
   expect((await api(request, '/changelog?kind=behoben')).data[0].items.map((i) => i.label)).toEqual(['Behoben']);
@@ -260,4 +261,23 @@ test('changelog (137): "[" after the kind suggests the topics in their colours, 
   await userA.keyboard.type('Behoben [Zeitleis');
   await expect(list).toContainText(['Zeitleis']);
   await expect(userA.locator('.cm-tooltip-autocomplete')).toContainText('new topic');
+});
+
+test('the changelog sorts itself: by kind, then by roadmap topic, also when a done goal adds its line (167)', async ({ userA, request }) => {
+  sql(`INSERT INTO roadmap_areas (name, color) VALUES ('Karte', 'blue'), ('Suche', 'teal')`);
+  await userA.goto('/changelog');
+  await userA.click('a:has-text("+ New entry")');
+  await userA.fill('#cl-day', '2026-10-30');
+  await typeItems(userA, 'Technik: Server\nBehoben [Suche]: Treffer\nNeu: Ohne Thema\nNeu [Suche]: Vorschläge\nVerbessert [Karte]: Marker\nNeu [Karte]: Zeitleiste');
+  await Promise.all([userA.waitForNavigation(), userA.click('.changelog-form button:has-text("Create")')]);
+  await expect(userA.locator('#cl-items')).toHaveValue('Neu [Karte]: Zeitleiste\nNeu [Suche]: Vorschläge\nNeu: Ohne Thema\nVerbessert [Karte]: Marker\nBehoben [Suche]: Treffer\nTechnik: Server');
+  await expect(userA.locator('.changelog-preview li').first()).toContainText('Zeitleiste');
+  const id = sql("SELECT id FROM changelog_entries WHERE day = '2026-10-30'");
+  // a line added afterwards (as a done roadmap goal appends its own) takes its place at once
+  sql(`INSERT INTO changelog_items (entry_id, position, kind, text_md, area) VALUES (${id}, 99, 'neu', 'Suche im Changelog', 'Karte')`);
+  expect(sql(`SELECT string_agg(text_md, ' | ' ORDER BY position) FROM changelog_items WHERE entry_id = ${id}`))
+    .toBe('Zeitleiste | Suche im Changelog | Vorschläge | Ohne Thema | Marker | Treffer | Server');
+  sql(`UPDATE changelog_entries SET published = true WHERE id = ${id}`);
+  const items = (await api(request, '/changelog')).data.find((e) => e.day === '2026-10-30').items;
+  expect(items.map((i) => i.kind)).toEqual(['neu', 'neu', 'neu', 'neu', 'verbessert', 'behoben', 'technik']);
 });

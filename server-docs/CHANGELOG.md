@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Changelog sorts itself (migration 167)
+- **What:** `changelog_kind_rank(kind)` and two statement-level triggers (`changelog_sort_days()`, transition table
+  `new_rows`) renumber the items of every day touched: kind (Neu, Verbessert, Behoben, Inhalt, Technik), then roadmap
+  topic A–Z (natural collation; without a topic last), then as written. Works for the CMS field, roadmap goals marked
+  done and imports; all existing days sorted once. CMS preview sorted the same way (`sortItems()` in
+  `src/changelog.js`). Unit test, e2e test (also a line added afterwards), the old e2e expectations updated.
+- **Why:** owner: no more sorting the changelog by hand.
+- **Revert:** `DROP TRIGGER changelog_items_sorted_ins, changelog_items_sorted_upd ON changelog_items;
+  DROP FUNCTION changelog_sort_days(), changelog_kind_rank(text)` (the order stays as last sorted); `git revert`.
+
 ### Site: very wide pictures sharp, with an overview band
 - **What:** a very wide picture (> 2.5 : 1) is loaded in a rendition for the strip's full height (`wideSource()` in
   `frontend/src/html.ts`: Wikimedia's standard widths 960/1280/1920/3840 on upload. and thumb.wikimedia.org — 2560 or
