@@ -1,0 +1,16 @@
+public_id: 105339
+name: Gifu
+kind: settlement
+location: [136.75944, 35.42625]
+wikidata_id: Q45798
+metadata:
+  sources: [Wikidata Q45798 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q45798
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q45798

@@ -1,0 +1,16 @@
+public_id: 105323
+name: Kamakura
+kind: settlement
+location: [139.54722, 35.31917]
+wikidata_id: Q200267
+metadata:
+  sources: [Wikidata Q200267 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q200267
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q200267

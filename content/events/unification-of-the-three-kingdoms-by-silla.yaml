@@ -1,0 +1,23 @@
+public_id: 105375
+name: Unification of the Three Kingdoms by Silla
+names:
+  - lang: ko
+    role: original
+    text: 신라의 삼국 통일
+kind: unification
+period: 668
+place: gyeongju
+description_md: In 668, allied with Tang China, Silla brought most of the Korean peninsula under its rule after the fall of Baekje (660) and Goguryeo (668)[[source/portal-2000|p. 43]].
+relationships:
+  - type: concerns
+    to: movement/three-kingdoms-period-korea
+    notes_md: its end (668)
+  - type: concerns
+    to: movement/unified-silla-period
+    notes_md: its beginning (668)
+sources:
+  period:
+    - note: “Silla went on to unify the majority of the Korean peninsula in 668 and from 668 to 935 ruled as Unified Silla”
+      source: portal-2000
+      locator: p. 43
+      accessed: 2026-10-30

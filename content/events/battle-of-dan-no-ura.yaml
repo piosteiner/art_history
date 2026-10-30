@@ -1,0 +1,74 @@
+public_id: 105322
+name: Battle of Dan-no-ura
+names:
+  - lang: nl
+    role: translation
+    text: Zeeslag bij Dan-no-ura
+  - lang: fr
+    role: translation
+    text: bataille de Dan-no-ura
+  - lang: de
+    role: translation
+    text: Seeschlacht von Dan-no-ura
+  - lang: it
+    role: translation
+    text: battaglia di Dan-no-ura
+  - lang: es
+    role: translation
+    text: Batalla de Dan-no-ura
+  - lang: ja
+    role: translation
+    text: 壇ノ浦の戦い
+  - lang: zh
+    role: translation
+    text: 壇之浦之戰
+  - lang: ko
+    role: translation
+    text: 단노우라 전투
+  - lang: ru
+    role: translation
+    text: Битва при Данноура
+parent: genpei-war
+period: 1185-05-02
+place: shimonoseki
+location: [130.95664, 33.96508]
+description_md: "The sea battle in the strait of Shimonoseki in which the Minamoto destroyed the Taira — 25 April 1185 in the Julian calendar (2 May in the Gregorian, as stored here)[[source/wikipedia-en-kamakura-period|“1185: the rival Taira clan is defeated at sea at the Battle of Dan-no-ura”]]. After it Minamoto no Yoritomo won the right to appoint military governors and land stewards, the prevailing date for the end of the Heian and the beginning of the Kamakura period."
+wikidata_id: Q968676
+metadata:
+  sources: [Wikidata Q968676 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/heian-period
+    notes_md: its end in the prevailing reading (1185)
+  - type: concerns
+    to: movement/insei-period
+    notes_md: its end (1185)
+  - type: concerns
+    to: movement/kamakura-period
+    notes_md: its beginning in the prevailing reading (1185)
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/AntokuTennou_Engi.7%268_Dannoura_Kassen.jpg/1280px-AntokuTennou_Engi.7%268_Dannoura_Kassen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:AntokuTennou_Engi.7%268_Dannoura_Kassen.jpg
+    license: Public domain
+    credit: Tosa Mitsunobu
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q968676
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q968676
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q968676
+    - url: https://en.wikipedia.org/w/index.php?title=Kamakura_period&oldid=1376411716
+      note: "“1185: the rival Taira clan is defeated at sea at the Battle of Dan-no-ura by Yoritomo’s brother Minamoto no Yoshitsune”"
+      source: wikipedia-en-kamakura-period
+      accessed: 2026-10-30
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q968676

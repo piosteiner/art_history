@@ -1,0 +1,16 @@
+public_id: 105321
+name: Shimonoseki
+kind: settlement
+location: [130.94133, 33.95789]
+wikidata_id: Q203308
+metadata:
+  sources: [Wikidata Q203308 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q203308
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q203308

@@ -1,0 +1,11 @@
+public_id: 105340
+name: Sekigahara Campaign
+period: 1600-08-22
+wikidata_id: Q111730901
+metadata:
+  sources: [Wikidata Q111730901 (retrieved 2026-10-30)]
+sources:
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q111730901

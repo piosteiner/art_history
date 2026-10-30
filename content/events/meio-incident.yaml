@@ -1,0 +1,26 @@
+public_id: 105331
+name: Meiō incident
+names:
+  - lang: ja
+    role: translation
+    text: 明応の政変
+  - lang: zh
+    role: translation
+    text: 明應之變
+  - lang: ko
+    role: translation
+    text: 메이오 정변
+period: 1493-05-17
+description_md: The coup of 1493 in which the shōgun Ashikaga Yoshiki was deposed; around the capital the Sengoku period is counted from it[[source/wikipedia-ja-sengoku-jidai|畿内では明応2年（1493年）の明応の政変を戦国時代の始期とし]].
+wikidata_id: Q5365227
+metadata:
+  sources: [Wikidata Q5365227 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/sengoku-period
+    notes_md: its beginning around the capital (1493)
+sources:
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q5365227

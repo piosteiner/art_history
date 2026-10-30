@@ -1,0 +1,66 @@
+public_id: 105348
+name: 1923 Great Kantō Earthquake
+names:
+  - Tokyo Earthquake
+  - Kanto Earthquake
+  - Great Kanto Earthquake
+  - Great Tokyo Earthquake
+  - 1923 Great Kanto Earthquake
+  - 1923 Kanto Earthquake
+  - 1923 Tokyo Earthquake
+  - 1923 Great Tokyo Earthquake
+  - lang: nl
+    role: translation
+    text: aardbeving Kanto 1923
+  - lang: fr
+    role: translation
+    text: séisme de 1923 de Kantō
+  - lang: de
+    role: translation
+    text: Großes Kantō-Erdbeben 1923
+  - lang: it
+    role: translation
+    text: Grande terremoto del Kantō
+  - lang: es
+    role: translation
+    text: Gran terremoto de Kantō
+  - lang: ja
+    role: translation
+    text: 関東地震
+  - lang: zh
+    role: translation
+    text: 關東大地震
+  - lang: ko
+    role: translation
+    text: 간토 대지진
+  - lang: ru
+    role: translation
+    text: Великое землетрясение Канто
+period: 1923-09-01
+place: tokyo
+location: [139.135, 35.33]
+description_md: The earthquake of 1 September 1923 that destroyed much of Tokyo and Yokohama; Mason notes how the new steel-reinforced concrete buildings of Tokyo withstood it[[source/history-of-japanese-art|p. 348]].
+wikidata_id: Q274498
+metadata:
+  sources: [Wikidata Q274498 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/taisho-period
+    notes_md: its great disaster (1923)
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3a/Kanto-daishinsai.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kanto-daishinsai.jpg
+    license: Public domain
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q274498
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q274498
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q274498

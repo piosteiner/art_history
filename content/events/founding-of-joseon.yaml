@@ -1,0 +1,19 @@
+public_id: 105378
+name: Founding of Joseon
+kind: founding of a dynasty
+period: 1392
+place: kaesong
+description_md: Yi Seong-gye founded the Joseon dynasty in 1392 and made Seoul its capital[[source/portal-2000|p. 109]].
+relationships:
+  - type: concerns
+    to: movement/goryeo-period
+    notes_md: its end (1392)
+  - type: concerns
+    to: movement/joseon-period
+    notes_md: its beginning (1392)
+sources:
+  period:
+    - note: “Choson’s founder, Yi Song-gye, who established the capital in Seoul”
+      source: portal-2000
+      locator: p. 109
+      accessed: 2026-10-30

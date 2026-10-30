@@ -1,0 +1,21 @@
+public_id: 105371
+name: Kenmu Restoration
+names:
+  - lang: ja
+    role: original
+    text: "{建武の新政|けんむのしんせい}"
+kind: imperial restoration
+period: 1333/1336
+place: kyoto
+description_md: Emperor Go-Daigo's direct rule after the fall of the Kamakura shogunate, from 1333 until it collapsed in 1336 and he left for Yoshino[[source/wikipedia-ja-nanbokucho-jidai|1333年5月22日、建武の新政…1336年10月10日…建武政権は崩壊]].
+wikidata_id: Q826021
+relationships:
+  - type: concerns
+    to: movement/nanbokucho-period
+    notes_md: its first years (1333–1336); Mason begins the period with its collapse in 1336
+sources:
+  period:
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%8D%97%E5%8C%97%E6%9C%9D%E6%99%82%E4%BB%A3%20(%E6%97%A5%E6%9C%AC)&oldid=110922584
+      note: 「正慶2年/元弘3年（1333年）5月22日、建武の新政と呼ばれる後醍醐天皇による親政がはじまった」 · 「建武3年/延元元年（1336年）10月10日、後醍醐は尊氏に投降し、建武政権は崩壊した」
+      source: wikipedia-ja-nanbokucho-jidai
+      accessed: 2026-10-30

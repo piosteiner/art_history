@@ -1,0 +1,34 @@
+public_id: 105329
+name: Kyōtoku Incident
+names:
+  - lang: fr
+    role: translation
+    text: Incident de Kyōtoku
+  - lang: es
+    role: translation
+    text: Incidente de Kyōtoku
+  - lang: ja
+    role: translation
+    text: 享徳の乱
+  - lang: zh
+    role: translation
+    text: 享德之亂
+period: 1454
+place: japan
+description_md: The war that split the Kantō from 1455 between the Kantō kubō and the Uesugi; in the Kantō the Sengoku period is counted from it[[source/wikipedia-ja-sengoku-jidai|関東地方では、享徳3年（1455年）に勃発した享徳の乱によって…]].
+wikidata_id: Q6453098
+metadata:
+  sources: [Wikidata Q6453098 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/sengoku-period
+    notes_md: its beginning in the Kantō (1455)
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q6453098
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q6453098

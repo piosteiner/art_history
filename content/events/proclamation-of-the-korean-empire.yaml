@@ -1,0 +1,16 @@
+public_id: 105379
+name: Proclamation of the Korean Empire
+kind: proclamation
+period: 1897
+place: seoul
+description_md: In 1897 King Gojong moved into the Deoksu palace, close to the British, Russian and American legations, and proclaimed Korea an empire[[source/portal-2000|p. 167]].
+relationships:
+  - type: concerns
+    to: movement/korean-empire
+    notes_md: its beginning (1897)
+sources:
+  period:
+    - note: “Then in 1897 King Kojong moved into the Toksu palace … and proclaimed Korea an empire”
+      source: portal-2000
+      locator: p. 167
+      accessed: 2026-10-30

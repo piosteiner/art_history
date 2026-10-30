@@ -1,0 +1,63 @@
+public_id: 105357
+name: Japan–Korea Treaty of 1910
+names:
+  - lang: ja
+    role: original
+    text: 韓國倂合ニ關スル條約
+  - Japan–Korea Annexation Treaty
+  - lang: nl
+    role: translation
+    text: Japan-Korea Annexatieverdrag
+  - lang: fr
+    role: translation
+    text: traité d'annexion de la Corée
+  - lang: de
+    role: translation
+    text: Japan-Korea-Annexionsvertrag von 1910
+  - lang: it
+    role: translation
+    text: trattato di annessione nippo-coreano
+  - lang: es
+    role: translation
+    text: Tratado de anexión Japón-Corea
+  - lang: ja
+    role: original
+    text: 韓国併合ニ関スル条約
+  - lang: zh
+    role: translation
+    text: 日韩合并条约
+  - lang: ko
+    role: translation
+    text: 한일병합조약
+  - lang: ru
+    role: translation
+    text: Договор о присоединении Кореи к Японии
+period: 1910-08-22
+description_md: Japan's annexation of Korea in 1910; King Gojong had been forced to give up the throne to his son Sunjong[[source/portal-2000|p. 167]].
+wikidata_id: Q495558
+metadata:
+  sources: [Wikidata Q495558 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/japanese-colonial-period-korea
+    notes_md: its beginning (1910)
+  - type: concerns
+    to: movement/joseon-period
+    notes_md: its end (1910)
+  - type: concerns
+    to: movement/korean-empire
+    notes_md: its end (1910)
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Japan%E2%80%93Korea_Annexation_Treaty_2.jpg/1280px-Japan%E2%80%93Korea_Annexation_Treaty_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan%E2%80%93Korea_Annexation_Treaty_2.jpg
+    license: Public domain
+    credit: Empire of Japan, Korean Empire
+sources:
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q495558
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q495558

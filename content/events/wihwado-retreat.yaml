@@ -1,0 +1,33 @@
+public_id: 105351
+name: Wihwado Retreat
+names:
+  - Turning back the army from Wihwa Island
+  - lang: ja
+    role: translation
+    text: 威化島回軍
+  - lang: ko
+    role: translation
+    text: 위화도 회군
+period: 1388-06-11
+place: north-korea
+description_md: In 1388 the general Yi Seong-gye, ordered to invade the Liaodong peninsula held by Ming China, turned back at Wihwa island in the Amnok (Yalu) river to Kaesong and staged a coup d'état[[source/wikipedia-en-wihwado-retreat|“instead decided to turn back to Kaesong and stage a coup d'état”]]; four years later he founded the Joseon dynasty[[source/portal-2000|p. 109]].
+wikidata_id: Q488995
+metadata:
+  sources: [Wikidata Q488995 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/goryeo-period
+    notes_md: the beginning of its end (1388)
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q488995
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q488995
+    - url: https://en.wikipedia.org/w/index.php?title=Wihwado_Retreat&oldid=1370750813
+      note: “the 1388 episode in which General Yi Sŏng-gye of the Goryeo dynasty was ordered to march north with his army and invade the Liaodong Peninsula … but instead decided to turn back to Kaesong and stage a coup d'état”
+      source: wikipedia-en-wihwado-retreat
+      accessed: 2026-10-30

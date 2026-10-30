@@ -1,0 +1,16 @@
+public_id: 105332
+name: Makishima Castle
+kind: site
+location: [135.79789, 34.89908]
+wikidata_id: Q11541932
+metadata:
+  sources: [Wikidata Q11541932 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q11541932
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q11541932

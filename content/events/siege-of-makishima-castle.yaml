@@ -1,0 +1,37 @@
+public_id: 105333
+name: Siege of Makishima Castle
+names:
+  - lang: fr
+    role: translation
+    text: bataille du castel de Makishima
+  - lang: ja
+    role: translation
+    text: 槇島城の戦い
+  - lang: zh
+    role: translation
+    text: 槙島城之戰
+period: 1573-07
+place: makishima-castle
+description_md: "In 1573 Oda Nobunaga defeated the last Ashikaga shōgun, Yoshiaki, at Makishima castle and drove him from Kyoto: the Muromachi shogunate fell[[source/wikipedia-ja-azuchi-momoyama-jidai|義昭が京都から放逐されて室町幕府が事実上の滅亡に追い込まれた元亀4年（1573年）]]."
+wikidata_id: Q11120677
+metadata:
+  sources: [Wikidata Q11120677 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/momoyama-period
+    notes_md: its beginning (1573)
+  - type: concerns
+    to: movement/muromachi-period
+    notes_md: its end (1573)
+  - type: concerns
+    to: movement/sengoku-period
+    notes_md: its end in another reading (1573)
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q11120677
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q11120677

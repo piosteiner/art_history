@@ -1,0 +1,62 @@
+public_id: 105342
+name: Siege of Osaka
+names:
+  - lang: nl
+    role: translation
+    text: Beleg van Osaka
+  - lang: fr
+    role: translation
+    text: siège d'Osaka
+  - lang: de
+    role: translation
+    text: Belagerung von Ōsaka
+  - lang: it
+    role: translation
+    text: assedio di Osaka
+  - lang: es
+    role: translation
+    text: Sitio de Osaka
+  - lang: ja
+    role: translation
+    text: 大坂の陣
+  - lang: zh
+    role: translation
+    text: 大坂之役
+  - lang: ko
+    role: translation
+    text: 오사카 전투
+  - lang: ru
+    role: translation
+    text: Осакская кампания
+period: 1614-11-08/1615-06
+place: osaka
+location: [135.52, 34.64]
+description_md: The Tokugawa campaigns of 1614–1615 against the Toyotomi at Osaka castle, which ended the Toyotomi line; art history lets the Momoyama period run until then, and Mason and the Kyoto National Museum begin the Edo period with it[[source/wikipedia-ja-azuchi-momoyama-jidai|美術史では、慶長20年（1615年）の豊臣家滅亡までを…]].
+wikidata_id: Q475780
+metadata:
+  sources: [Wikidata Q475780 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/edo-period
+    notes_md: its beginning in Mason and at the Kyoto National Museum (1615)
+  - type: concerns
+    to: movement/momoyama-period
+    notes_md: its end in art history (1615)
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/2c/Caron1663.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Caron1663.jpg
+    license: Public domain
+    credit: New York Public Library
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q475780
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q475780
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q475780

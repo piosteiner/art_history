@@ -1,0 +1,63 @@
+public_id: 105346
+name: Meiji Restoration
+names:
+  - Meijiishin
+  - Goisshin
+  - Meiji reform
+  - Meiji revolution/renovation
+  - the Meiji Restoration
+  - lang: nl
+    role: translation
+    text: Meiji-restauratie
+  - lang: fr
+    role: translation
+    text: restauration de Meiji
+  - lang: de
+    role: translation
+    text: Meiji-Restauration
+  - lang: it
+    role: translation
+    text: rinnovamento Meiji
+  - lang: es
+    role: translation
+    text: Restauración Meiji
+  - lang: ja
+    role: translation
+    text: 明治維新
+  - lang: ko
+    role: translation
+    text: 메이지 유신
+  - lang: ru
+    role: translation
+    text: Реставрация Мэйдзи
+period: 1868/1889-02-11
+description_md: The restoration of imperial rule — proclaimed on 3 January 1868 — and the reforms that followed; the fall of Edo in the summer of 1868 ended the Tokugawa shogunate and the Meiji era was proclaimed[[source/wikipedia-en-meiji-era|“Imperial restoration occurred the next year on January 3, 1868”]].
+wikidata_id: Q8707
+metadata:
+  sources: [Wikidata Q8707 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/bakumatsu
+    notes_md: its end in Mason (1868)
+  - type: concerns
+    to: movement/edo-period
+    notes_md: its end (1868)
+  - type: concerns
+    to: movement/meiji-era
+    notes_md: its beginning
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/MeijiJoukyou.jpg/1280px-MeijiJoukyou.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MeijiJoukyou.jpg
+    license: Public domain
+    credit: Alfred Roussin
+identifiers:
+  gnd: 4257343-9
+sources:
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q8707
+    - url: https://en.wikipedia.org/w/index.php?title=Meiji_era&oldid=1382301514
+      note: “Imperial restoration occurred the next year on January 3, 1868, with the formation of the new government” · “The fall of Edo in the summer of 1868 marked the end of the Tokugawa shogunate, and a new era, Meiji, was proclaimed”
+      source: wikipedia-en-meiji-era
+      accessed: 2026-10-30

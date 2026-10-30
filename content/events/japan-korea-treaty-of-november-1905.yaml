@@ -1,0 +1,61 @@
+public_id: 105356
+name: Japan–Korea Treaty of November 1905
+names:
+  - lang: ja
+    role: original
+    text: 第二次日韓協約
+  - lang: ko
+    role: original
+    text: 을사조약
+  - Ulsa Five-Point Treaty
+  - Eulsa Treaty
+  - Eulsa Unwilling Treaty
+  - Japan–Korea Protectorate Treaty
+  - lang: nl
+    role: translation
+    text: Eulsaverdrag
+  - lang: fr
+    role: translation
+    text: traité d'Eulsa
+  - lang: de
+    role: translation
+    text: Japan-Korea-Protektoratsvertrag von 1905
+  - lang: it
+    role: translation
+    text: trattato dell'Eulsa
+  - lang: es
+    role: translation
+    text: Tratado de Eulsa
+  - lang: zh
+    role: translation
+    text: 乙巳條約
+  - lang: ru
+    role: translation
+    text: Японо-корейский договор о протекторате
+period: 1905-11-17
+place: seoul
+description_md: The treaty by which Japan made Korea a protectorate in 1905[[source/portal-2000|p. 167]].
+wikidata_id: Q233254
+metadata:
+  sources: [Wikidata Q233254 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/korean-empire
+    notes_md: a Japanese protectorate from 1905
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/34/Eulsa_retraction.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eulsa_retraction.jpg
+    license: Public domain
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q233254
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q233254
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q233254

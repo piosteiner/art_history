@@ -1,0 +1,56 @@
+public_id: 105336
+name: Siege of Odawara
+names:
+  - lang: nl
+    role: translation
+    text: Beleg van Odawara
+  - lang: fr
+    role: translation
+    text: siège d'Odawara (1590)
+  - lang: it
+    role: translation
+    text: assedio di Odawara
+  - lang: es
+    role: translation
+    text: Sitio de Odawara
+  - lang: ja
+    role: translation
+    text: 小田原征伐
+  - lang: zh
+    role: translation
+    text: 小田原之戰
+  - lang: ko
+    role: translation
+    text: 오다와라 정벌전
+period: 1590-05/1590-08-04
+place: odawara
+location: [139.1536, 35.2508]
+description_md: Toyotomi Hideyoshi's siege of the Hōjō at Odawara in 1590; in the Kantō the Sengoku period ends with it[[source/wikipedia-ja-sengoku-jidai|天正18年（1590年）の…小田原征伐によって戦国時代が終わった]].
+wikidata_id: Q2622890
+metadata:
+  sources: [Wikidata Q2622890 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/sengoku-period
+    notes_md: its end in the Kantō (1590)
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/34/OdawaraJo2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:OdawaraJo2.jpg
+    license: Public domain
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q2622890
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q2622890
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q2622890
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q2622890

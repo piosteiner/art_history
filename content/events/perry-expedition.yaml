@@ -1,0 +1,42 @@
+public_id: 105344
+name: Perry Expedition
+names:
+  - U.S. Naval Expedition to Japan 1853-1854
+  - lang: fr
+    role: translation
+    text: expédition de Perry
+  - lang: it
+    role: translation
+    text: spedizione Perry
+  - lang: ja
+    role: translation
+    text: 黒船来航
+  - lang: zh
+    role: translation
+    text: 黑船來航
+  - lang: ko
+    role: translation
+    text: 흑선 내항
+period: 1853/1854
+description_md: In 1853 Commodore Matthew Perry sailed into Uraga harbour at the mouth of Edo Bay with four warships and a letter from the President of the United States; the following year the shogunate formally ended its isolation[[source/history-of-japanese-art|p. 277]] — the usual beginning of the Bakumatsu[[source/wikipedia-en-bakumatsu|“Between 1853 and 1867 …”]].
+wikidata_id: Q7169780
+metadata:
+  sources: [Wikidata Q7169780 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/bakumatsu
+    notes_md: its usual beginning (1853)
+  - type: concerns
+    to: movement/edo-period
+    notes_md: its last years
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ce/Japanese_1854_print_Commodore_Perry.jpg/1280px-Japanese_1854_print_Commodore_Perry.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japanese_1854_print_Commodore_Perry.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+sources:
+  period:
+    - note: “Finally, in 1853, Commodore Matthew Perry sailed into Uraga harbor at the mouth of Edo Bay with four warships … The following year the government formally ended its isolationist policy”
+      source: history-of-japanese-art
+      locator: p. 277
+      accessed: 2026-10-30

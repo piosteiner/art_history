@@ -1,0 +1,64 @@
+public_id: 105353
+name: Japan–Korea Treaty of 1876
+names:
+  - Treaty of Ganghwa Island
+  - Ganghwa Island Treaty
+  - lang: nl
+    role: translation
+    text: Verdrag van Kanghwa
+  - lang: fr
+    role: translation
+    text: traité de Ganghwa
+  - lang: de
+    role: translation
+    text: Japanisch-Koreanischer Freundschaftsvertrag
+  - lang: it
+    role: translation
+    text: Trattato Giappone-Corea del 1876
+  - lang: es
+    role: translation
+    text: Tratado de Kanghwa
+  - lang: ja
+    role: translation
+    text: 日朝修好条規
+  - lang: zh
+    role: translation
+    text: 江华条约
+  - lang: ko
+    role: translation
+    text: 강화도 조약
+  - lang: ru
+    role: translation
+    text: Мирный договор на Канхвадо
+period: 1876-02-27
+place: ganghwa-island
+description_md: The Treaty of Ganghwa, Korea's first modern treaty, signed with Japan under foreign pressure; it opened Korea and was followed by treaties with the United States (1882) and European powers[[source/portal-2000|p. 12]].
+wikidata_id: Q623391
+metadata:
+  sources: [Wikidata Q623391 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/joseon-period
+    notes_md: the opening of Korea (1876)
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Japan_Korea_Treaty_of_Amity_26_February_1876.jpg/1280px-Japan_Korea_Treaty_of_Amity_26_February_1876.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japan_Korea_Treaty_of_Amity_26_February_1876.jpg
+    license: CC BY-SA 3.0
+    credit: World Imaging
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q623391
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q623391
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q623391
+    - note: “The opening of Korea to the West followed the Treaty of Kanghwa, signed with the Japanese in 1876. This was Korea’s first modern treaty, signed under foreign pressure”
+      source: portal-2000
+      locator: p. 12
+      accessed: 2026-10-30

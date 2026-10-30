@@ -1,0 +1,16 @@
+public_id: 105350
+name: North Korea
+kind: country
+location: [127, 40]
+wikidata_id: Q423
+metadata:
+  sources: [Wikidata Q423 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q423
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q423

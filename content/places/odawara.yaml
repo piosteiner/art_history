@@ -1,0 +1,16 @@
+public_id: 105334
+name: Odawara
+kind: settlement
+location: [139.15222, 35.26461]
+wikidata_id: Q267258
+metadata:
+  sources: [Wikidata Q267258 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q267258
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q267258

@@ -1,0 +1,16 @@
+public_id: 105316
+name: Itabuki Palace
+kind: building
+location: [135.82083, 34.47333]
+wikidata_id: Q11532703
+metadata:
+  sources: [Wikidata Q11532703 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q11532703
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q11532703

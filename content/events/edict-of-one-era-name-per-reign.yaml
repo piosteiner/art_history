@@ -1,0 +1,23 @@
+public_id: 105374
+name: Edict of one era name per reign
+names:
+  - lang: ja
+    role: original
+    text: "{一世一元の詔|いっせいいちげんのみことのり}"
+kind: edict
+period: 1868-10-23
+description_md: On 23 October 1868 the era was changed to Meiji with the edict that from now on each emperor should have a single era name — the end of the Edo period and beginning of the Meiji era[[source/wikipedia-ja-edo-jidai|1868年10月23日…「一世一元の詔」の発布]].
+wikidata_id: Q11352345
+relationships:
+  - type: concerns
+    to: movement/edo-period
+    notes_md: its end (23 October 1868)
+  - type: concerns
+    to: movement/meiji-era
+    notes_md: its beginning (23 October 1868)
+sources:
+  period:
+    - url: https://ja.wikipedia.org/w/index.php?title=%E6%B1%9F%E6%88%B8%E6%99%82%E4%BB%A3&oldid=111409767
+      note: 「1868年10月23日（慶応4年／明治元年9月8日）の「一世一元の詔」の発布（一世一元への移行）に伴い、慶応から明治に改元されるまで」
+      source: wikipedia-ja-edo-jidai
+      accessed: 2026-10-30

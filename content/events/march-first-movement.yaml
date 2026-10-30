@@ -1,0 +1,56 @@
+public_id: 105358
+name: March First Movement
+names:
+  - March First Popular Uprising
+  - 3.1 Uprising
+  - March 1st People's Rebellion
+  - Sam-il Movement
+  - Manse Movement
+  - Gimi Independence Movement
+  - Kimi Independence Movement
+  - March 1st Revolution
+  - March First Revolution
+  - March 1st Movement
+  - lang: fr
+    role: translation
+    text: mouvement du 1er mars
+  - lang: de
+    role: translation
+    text: Bewegung des ersten März
+  - lang: it
+    role: translation
+    text: Movimento del 1º marzo
+  - lang: es
+    role: translation
+    text: Día del movimiento de Independencia coreano
+  - lang: ja
+    role: translation
+    text: 三・一運動
+  - lang: zh
+    role: translation
+    text: 三一運動
+  - lang: ko
+    role: translation
+    text: 3·1 운동
+  - lang: ru
+    role: translation
+    text: Движение 1 марта
+period: 1919-03-01
+description_md: The independence movement of 1919 and the Declaration of Independence read in Pagoda Park in Seoul; it forced Japan into a policy of so-called enlightened administration[[source/portal-2000|p. 167]].
+wikidata_id: Q482525
+metadata:
+  sources: [Wikidata Q482525 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/japanese-colonial-period-korea
+    notes_md: "1919"
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/L%E2%80%99Ind%C3%A9pendance_de_la_Cor%C3%A9e_et_la_Paix-02.jpg/1280px-L%E2%80%99Ind%C3%A9pendance_de_la_Cor%C3%A9e_et_la_Paix-02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:L%E2%80%99Ind%C3%A9pendance_de_la_Cor%C3%A9e_et_la_Paix-02.jpg
+    license: Public domain
+    credit: Bureau d'information coréen
+sources:
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q482525

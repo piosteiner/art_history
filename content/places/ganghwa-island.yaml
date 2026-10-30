@@ -1,0 +1,16 @@
+public_id: 105352
+name: Ganghwa Island
+kind: settlement
+location: [126.44, 37.71]
+wikidata_id: Q494786
+metadata:
+  sources: [Wikidata Q494786 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q494786
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q494786

@@ -1,0 +1,28 @@
+public_id: 105328
+name: Meitoku Peace Accord
+names:
+  - unification of the Northern and Southern Courts
+  - reunification of the Northern and Southern Courts
+  - lang: ja
+    role: translation
+    text: 明徳の和約
+  - lang: zh
+    role: translation
+    text: 明德和約
+period: 1392-11-20
+description_md: In 1392 the Southern court handed the imperial regalia to the Northern and the two lines were reunited[[source/wikipedia-ja-nanbokucho-jidai|両朝が合一した…(1392年11月19日)]].
+wikidata_id: Q11087845
+metadata:
+  sources: [Wikidata Q11087845 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/muromachi-period
+    notes_md: its beginning in the narrower reading (1392)
+  - type: concerns
+    to: movement/nanbokucho-period
+    notes_md: its end (1392)
+sources:
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q11087845

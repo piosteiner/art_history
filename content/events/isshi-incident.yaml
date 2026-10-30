@@ -1,0 +1,59 @@
+public_id: 105317
+name: Isshi Incident
+names:
+  - lang: nl
+    role: translation
+    text: Isshi-incident
+  - lang: fr
+    role: translation
+    text: incident d'Isshi
+  - lang: de
+    role: translation
+    text: Isshi-Zwischenfall
+  - lang: it
+    role: translation
+    text: Incidente di Isshi
+  - lang: es
+    role: translation
+    text: Incidente Isshi
+  - lang: ja
+    role: translation
+    text: 乙巳の変
+  - lang: zh
+    role: translation
+    text: 乙巳之變
+  - lang: ko
+    role: translation
+    text: 을사의 변
+period: 645-07-13
+place: itabuki-palace
+location: [135.82101, 34.47337]
+description_md: The coup of 645 in which Prince Naka no Ōe and Nakatomi no Kamatari overthrew the main line of the Soga clan; it opened the Taika Reform. Mason ends the Asuka period and begins the Hakuhō period with it[[source/history-of-japanese-art|p. 10]].
+wikidata_id: Q1062771
+metadata:
+  sources: [Wikidata Q1062771 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/asuka-period
+    notes_md: its end in Mason (645)
+  - type: concerns
+    to: movement/hakuho-period
+    notes_md: its beginning (645)
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/32/Irukaansatsuzu.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Irukaansatsuzu.jpg
+    license: Public domain
+    credit: Gukei Sumiyoshi
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q1062771
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q1062771
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q1062771

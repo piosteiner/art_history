@@ -1,0 +1,36 @@
+public_id: 105315
+name: official introduction of Buddhism to Japan
+names:
+  - lang: ja
+    role: translation
+    text: 仏教公伝
+  - lang: zh
+    role: translation
+    text: 佛教公傳
+period: 538
+description_md: The gift of a Buddha image and sutras by King Seong of Paekche to the Japanese court — in 552 according to one tradition, in 538 according to another[[source/wikipedia-ja-asuka-jidai|552年…或いは538年…仏教が公伝]]. Mason begins the Asuka period with it[[source/history-of-japanese-art|p. 10]].
+wikidata_id: Q11377537
+metadata:
+  sources: [Wikidata Q11377537 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/asuka-period
+    notes_md: its beginning in Mason (552)
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/60/Shikishima-Kanasashi_Palace.JPG/1280px-Shikishima-Kanasashi_Palace.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Shikishima-Kanasashi_Palace.JPG
+    license: CC BY-SA 4.0
+    credit: アラツク
+sources:
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q11377537
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q11377537
+    - url: https://ja.wikipedia.org/w/index.php?title=%E9%A3%9B%E9%B3%A5%E6%99%82%E4%BB%A3&oldid=111420535
+      note: 「552年（欽明天皇13年)、或いは538年（宣化天皇3年）に、百済の聖王（聖明王）が、釈迦仏像や経論などを朝廷に贈り、仏教が公伝されると…」
+      source: wikipedia-ja-asuka-jidai
+      accessed: 2026-10-30

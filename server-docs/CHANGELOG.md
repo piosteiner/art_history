@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: turning points of the Japanese and Korean periods as events
+- **What:** 44 events — 29 from Wikidata (`scripts/from-wikidata.js event …`: Battle of Dan-no-ura, Siege of Kamakura,
+  Meitoku Peace Accord, Ōnin War, Sekigahara, Siege of Osaka, Taisei hōkan, Meiji Restoration, Japan–Korea treaties,
+  March First Movement, Korean War …) and 15 by hand where Wikidata has no event item (transfers of the capital to
+  Heijō-kyō and Heian-kyō, Shirakawa's abdication, Bunji sanction, Yoritomo and Ieyasu appointed shōgun, Nobunaga's
+  march on Kyoto, Kenmu Restoration, the edict of 1868, Silla's unification, founding of Goryeo and Joseon,
+  submission of Silla, proclamation of the Korean Empire). Each with a short sourced description (Mason, Portal,
+  Wikipedia) and 75 `concerns` links to the periods it opens or closes, with a note ("its end in the prevailing
+  reading (1185)"). New places Sekigahara, Kaesong, Gyeongju (and from Wikidata Shimonoseki, Kamakura, Odawara,
+  Seoul …). Removed what the import brought along: vague parents ("history of Japan", "origin and growth of
+  Mahayana", 天下統一, Cold War with a wrong date), place "Korea Strait" (Korean War → Korean Peninsula). Dates before
+  1582 are Gregorian as everywhere (Dan-no-ura: 25 April 1185 Julian named in the text).
+- **Why:** owner, 2026-10-30.
+- **Revert:** delete the events in the admin.
+
 ### Data: every period boundary with its reason, start and end
 - **What:** the "**Dates.**" paragraphs of all 44 Japanese and Korean periods rewritten so that every start and every
   end names its reason, for each reading (e.g. Heian's end: 1185 shugo/jitō vs 1192 shōgun; Kofun's end: late 6th c.

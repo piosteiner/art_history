@@ -1,0 +1,68 @@
+public_id: 105338
+name: Japanese invasions of Korea
+names:
+  - Imjin War
+  - lang: nl
+    role: translation
+    text: Japanse invasies van Korea
+  - lang: fr
+    role: translation
+    text: guerre d'Imjin
+  - lang: de
+    role: translation
+    text: Imjin-Krieg
+  - lang: it
+    role: translation
+    text: invasioni giapponesi della Corea
+  - lang: es
+    role: translation
+    text: Invasiones japonesas de Corea
+  - lang: ja
+    role: translation
+    text: 文禄・慶長の役
+  - lang: zh
+    role: translation
+    text: 萬曆朝鮮之役
+  - lang: ko
+    role: translation
+    text: 임진왜란
+  - lang: ru
+    role: translation
+    text: Имджинская война
+period: 1592-05-23/1598-12-16
+place: korean-peninsula
+description_md: Toyotomi Hideyoshi's two invasions of Korea, 1592 and 1597, which failed and devastated the country[[source/history-of-japanese-art|p. 292]]; historians divide the Joseon period into an early and a late half at them[[source/portal-2000|p. 109]]. Thousands of Korean prisoners, among them potters, were taken to Japan, where they founded the porcelain industry of Arita[[source/history-of-japanese-art|pp. 292–293]].
+wikidata_id: Q576338
+metadata:
+  sources: [Wikidata Q576338 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/joseon-period
+    notes_md: divides it into an early and a late half (1592/1597)
+  - type: concerns
+    to: movement/momoyama-period
+    notes_md: Hideyoshi’s campaigns
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ec/Siege-of-Busanjin-1592.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Siege-of-Busanjin-1592.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: 4730994-5
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q576338
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q576338
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q576338
+    - note: “Historians usually divide the five hundred years of the Choson dynasty (1392–1910) into an early and a late period, separated by the Japanese invasions of Korea under Hideyoshi in 1592 and 1597”
+      source: portal-2000
+      locator: p. 109
+      accessed: 2026-10-30

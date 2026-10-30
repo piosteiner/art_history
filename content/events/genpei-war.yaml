@@ -1,0 +1,63 @@
+public_id: 105320
+name: Genpei War
+names:
+  - Jishō-Juei War
+  - Gempei War
+  - lang: nl
+    role: translation
+    text: Genpei-oorlog
+  - lang: fr
+    role: translation
+    text: guerre de Genpei
+  - lang: de
+    role: translation
+    text: Gempei-Krieg
+  - lang: it
+    role: translation
+    text: guerra Genpei
+  - lang: es
+    role: translation
+    text: Guerras Genpei
+  - lang: ja
+    role: translation
+    text: 治承・寿永の乱
+  - lang: zh
+    role: translation
+    text: 源平合戰
+  - lang: ko
+    role: translation
+    text: 겐페이 전쟁
+  - lang: ru
+    role: translation
+    text: Война Тайра и Минамото
+period: 1180/1185
+place: japan
+description_md: The war between the Taira and the Minamoto clans, 1180–1185, which ended with the Taira's defeat at Dan-no-ura and brought Minamoto no Yoritomo to power[[source/wikipedia-en-kamakura-period|“after the conclusion of the Genpei War, which saw the struggle between the Taira and Minamoto clans”]].
+wikidata_id: Q737542
+metadata:
+  sources: [Wikidata Q737542 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/heian-period
+    notes_md: its last years
+  - type: concerns
+    to: movement/insei-period
+    notes_md: its last years
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Genpei_kassen.jpg/1280px-Genpei_kassen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Genpei_kassen.jpg
+    license: Public domain
+    credit: Motonobu Denkinobu (伝狩野元信)
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q737542
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q737542
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q737542

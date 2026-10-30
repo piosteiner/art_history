@@ -1,0 +1,51 @@
+public_id: 105355
+name: Eulmi Sabyeon
+names:
+  - Eulmi Incident
+  - lang: fr
+    role: translation
+    text: assassinat de l'impératrice Myeongseong
+  - lang: it
+    role: translation
+    text: Incidente di Eulmi
+  - lang: es
+    role: translation
+    text: asesinato de la emperatriz Myeongseong
+  - lang: ja
+    role: translation
+    text: 乙未事変
+  - lang: zh
+    role: translation
+    text: 乙未事变
+  - lang: ko
+    role: translation
+    text: 을미사변
+period: 1895-10-08
+place: seoul
+location: [126.97724, 37.58314]
+description_md: The murder of Queen Min (Empress Myeongseong) in 1895 on the order of the Japanese minister Miura Gorō, because of her links with Russia[[source/portal-2000|p. 167]].
+wikidata_id: Q623757
+metadata:
+  sources: [Wikidata Q623757 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/joseon-period
+    notes_md: its last years (1895)
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1c/Le_Journal_Illustr%C3%A9_L%60ASSASSINAT_DE_LA_REINE_COR%C3%89E_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Le_Journal_Illustr%C3%A9_L%60ASSASSINAT_DE_LA_REINE_COR%C3%89E_(cropped).jpg
+    license: Public domain
+    credit: Le Journal illustré
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q623757
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q623757
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q623757

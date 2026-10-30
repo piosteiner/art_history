@@ -1,0 +1,44 @@
+public_id: 105318
+name: Taika Reform
+names:
+  - lang: nl
+    role: translation
+    text: Taika-hervormingen
+  - lang: fr
+    role: translation
+    text: Réforme de Taika
+  - lang: de
+    role: translation
+    text: Taika-Reform
+  - lang: it
+    role: translation
+    text: editti di riforma di Taika
+  - lang: es
+    role: translation
+    text: Reforma Taika
+  - lang: ja
+    role: translation
+    text: 大化の改新
+  - lang: zh
+    role: translation
+    text: 大化改新
+  - lang: ko
+    role: translation
+    text: 다이카 개신
+  - lang: ru
+    role: translation
+    text: Реформы Тайка
+period: 645
+description_md: The reforms after the coup of 645 that built a centralised state on the Chinese model — the system later governments looked back to[[source/history-of-japanese-art|p. 101]].
+wikidata_id: Q570140
+metadata:
+  sources: [Wikidata Q570140 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/hakuho-period
+    notes_md: begins with the coup that opened it (645)
+sources:
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q570140

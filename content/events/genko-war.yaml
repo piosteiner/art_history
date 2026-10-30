@@ -1,0 +1,20 @@
+public_id: 105324
+name: Genkō War
+period: 1331/1333
+description_md: Emperor Go-Daigo's war against the Kamakura shogunate, from 1331 until the siege of Kamakura in 1333 ended the shogunate[[source/wikipedia-en-kamakura-period|“In the 1330s, the Southern court under Emperor Go-Daigo revolted and eventually led to the Siege of Kamakura in 1333 which ended the rule of the shogunate”]].
+wikidata_id: Q1432624
+metadata:
+  sources: [Wikidata Q1432624 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/kamakura-period
+    notes_md: its end (1331–1333)
+sources:
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q1432624
+    - url: https://en.wikipedia.org/w/index.php?title=Kamakura_period&oldid=1376411716
+      note: “In the 1330s, the Southern court under Emperor Go-Daigo revolted and eventually led to the Siege of Kamakura in 1333 which ended the rule of the shogunate”
+      source: wikipedia-en-kamakura-period
+      accessed: 2026-10-30

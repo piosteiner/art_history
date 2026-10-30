@@ -1,0 +1,65 @@
+public_id: 105330
+name: Ōnin War
+names:
+  - Onin War
+  - Onin no Ran
+  - Ōnin no Ran
+  - lang: nl
+    role: translation
+    text: Onin-oorlog
+  - lang: fr
+    role: translation
+    text: guerre d'Ōnin
+  - lang: de
+    role: translation
+    text: Ōnin-Krieg
+  - lang: it
+    role: translation
+    text: guerra Ōnin
+  - lang: es
+    role: translation
+    text: Guerra de Ōnin
+  - lang: ja
+    role: translation
+    text: 応仁の乱
+  - lang: zh
+    role: translation
+    text: 应仁之乱
+  - lang: ko
+    role: translation
+    text: 오닌의 난
+  - lang: ru
+    role: translation
+    text: Война годов Онин
+period: 1467/1477
+place: yamashiro-province
+location: [135.8006, 34.8819]
+description_md: The war of 1467–1477, fought largely in Kyoto, that broke the authority of the Ashikaga shogunate; the Sengoku period is usually counted from it[[source/wikipedia-ja-sengoku-jidai|応仁の乱（…1467年 - 1477年）から…]].
+wikidata_id: Q385676
+metadata:
+  sources: [Wikidata Q385676 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/muromachi-period
+    notes_md: its narrowest reading ends here
+  - type: concerns
+    to: movement/sengoku-period
+    notes_md: its usual beginning (1467)
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Onin-War-1467-1477-The-Battle-of-Onin-by-Utagawa-Yoshitora.png/1280px-Onin-War-1467-1477-The-Battle-of-Onin-by-Utagawa-Yoshitora.png
+    source_url: https://commons.wikimedia.org/wiki/File:Onin-War-1467-1477-The-Battle-of-Onin-by-Utagawa-Yoshitora.png
+    license: Public domain
+    credit: Utagawa Yoshitora
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q385676
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q385676
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q385676

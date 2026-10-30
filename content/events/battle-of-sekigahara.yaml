@@ -1,0 +1,67 @@
+public_id: 105341
+name: Battle of Sekigahara
+names:
+  - lang: nl
+    role: translation
+    text: Slag bij Sekigahara
+  - lang: fr
+    role: translation
+    text: bataille de Sekigahara
+  - lang: de
+    role: translation
+    text: Schlacht von Sekigahara
+  - lang: it
+    role: translation
+    text: battaglia di Sekigahara
+  - lang: es
+    role: translation
+    text: Batalla de Sekigahara
+  - lang: ja
+    role: translation
+    text: 関ヶ原の戦い
+  - lang: zh
+    role: translation
+    text: 關原之戰
+  - lang: ko
+    role: translation
+    text: 세키가하라 전투
+  - lang: ru
+    role: translation
+    text: Битва при Сэкигахаре
+parent: sekigahara-campaign
+period: 1600-10-21
+place: sekigahara
+location: [136.4616, 35.3705]
+description_md: Tokugawa Ieyasu's victory over his rivals in 1600; the Getty thesaurus begins the Edo period with it, and it is one of the ends given for the Azuchi-Momoyama period[[source/wikipedia-ja-azuchi-momoyama-jidai|関ヶ原の戦いで徳川家康が勝利した慶長5年（1600年）]].
+wikidata_id: Q234188
+metadata:
+  sources: [Wikidata Q234188 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/edo-period
+    notes_md: its beginning in the Getty thesaurus (1600)
+  - type: concerns
+    to: movement/momoyama-period
+    notes_md: one of its ends (1600)
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Sekigaharascreen.jpg/1280px-Sekigaharascreen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Sekigaharascreen.jpg
+    license: Public domain
+    credit: User LordAmeth on en.wikipediaCollection of The Town of Sekigahara Archive of History and Cultural Anthropology
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q234188
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q234188
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q234188
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q234188

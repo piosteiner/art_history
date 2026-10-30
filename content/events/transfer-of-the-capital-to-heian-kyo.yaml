@@ -1,0 +1,26 @@
+public_id: 105367
+name: Transfer of the capital to Heian-kyō
+names:
+  - lang: ja
+    role: original
+    text: "{平安京遷都|へいあんきょうせんと}"
+kind: transfer of the capital
+period: 794
+place: kyoto
+description_md: Emperor Kanmu moved the capital to Heian-kyō (Kyoto) in 794, ten years after leaving Nara for Nagaoka-kyō; Kyoto remained the capital until 1868[[source/wikipedia-en-nara-period|“… Nagaoka-kyō, in 784, before moving to Heian-kyō … in 794”]][[source/history-of-japanese-art|p. 100]].
+relationships:
+  - type: concerns
+    to: movement/early-heian-period
+    notes_md: its beginning (794)
+  - type: concerns
+    to: movement/heian-period
+    notes_md: its beginning (794)
+  - type: concerns
+    to: movement/nara-period
+    notes_md: its end (794)
+sources:
+  period:
+    - url: https://en.wikipedia.org/w/index.php?title=Nara_period&oldid=1382796629
+      note: “until Emperor Kanmu established a new capital, Nagaoka-kyō, in 784, before moving to Heian-kyō, modern Kyoto, a decade later in 794”
+      source: wikipedia-en-nara-period
+      accessed: 2026-10-30

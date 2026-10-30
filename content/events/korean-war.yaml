@@ -1,0 +1,56 @@
+public_id: 105362
+name: Korean War
+names:
+  - lang: nl
+    role: translation
+    text: Koreaanse Oorlog
+  - lang: fr
+    role: translation
+    text: guerre de Corée
+  - lang: de
+    role: translation
+    text: Koreakrieg
+  - lang: it
+    role: translation
+    text: guerra di Corea
+  - lang: es
+    role: translation
+    text: guerra de Corea
+  - lang: ja
+    role: translation
+    text: 朝鮮戦争
+  - lang: zh
+    role: translation
+    text: 朝鲜战争
+  - lang: ko
+    role: translation
+    text: 6·25 전쟁
+  - lang: ru
+    role: translation
+    text: Корейская война
+period: 1950-06-25/1953-07-27
+place: korean-peninsula
+description_md: North Korea's attack across the 38th parallel in June 1950 escalated into a war fought by United Nations troops from sixteen countries with the South, and from October 1950 by Chinese troops with the North; the armistice of 27 July 1953 is still in force[[source/portal-2000|p. 168]].
+wikidata_id: Q8663
+metadata:
+  sources: [Wikidata Q8663 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/ca/Korean_War_Montage_2.png
+    source_url: https://commons.wikimedia.org/wiki/File:Korean_War_Montage_2.png
+    license: Public domain
+    credit: All photographs are works of the United States federal government.
+identifiers:
+  gnd: 4032467-9
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q8663
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q8663
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q8663

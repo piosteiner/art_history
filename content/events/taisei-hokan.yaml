@@ -1,0 +1,49 @@
+public_id: 105345
+name: Taisei Hokan
+names:
+  - the restoration of imperial rule
+  - the restoration of government to the crown
+  - Taisê Hôkan
+  - Taisē Hōkan
+  - Taisēhōkan
+  - Taiseihoukan
+  - Taiseifoukan
+  - lang: ja
+    role: translation
+    text: 大政奉還
+  - lang: zh
+    role: translation
+    text: 大政奉还
+  - lang: ko
+    role: translation
+    text: 대정봉환
+  - lang: ru
+    role: translation
+    text: Возвращение государственной власти Императору
+period: 1867-11-09
+place: kyoto
+description_md: On 9 November 1867 the last shōgun, Tokugawa Yoshinobu, returned the government to the emperor[[source/wikipedia-ja-taisei-hokan|慶応3年10月14日（1867年11月9日）]]; the Nara National Museum ends the Edo period with it.
+wikidata_id: Q709528
+metadata:
+  sources: [Wikidata Q709528 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/bakumatsu
+    notes_md: its end in the usual reading (1867)
+  - type: concerns
+    to: movement/edo-period
+    notes_md: its end at the Nara National Museum (1867)
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e2/Taisei_H%C5%8Dkan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Taisei_H%C5%8Dkan.jpg
+    license: Public domain
+    credit: 邨田丹陵, Tanryō Murata
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q709528
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q709528

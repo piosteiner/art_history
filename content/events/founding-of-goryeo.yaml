@@ -1,0 +1,16 @@
+public_id: 105376
+name: Founding of Goryeo
+kind: founding of a dynasty
+period: 918
+place: kaesong
+description_md: Wang Geon founded the Goryeo dynasty in 918[[source/portal-2000|p. 79]].
+relationships:
+  - type: concerns
+    to: movement/goryeo-period
+    notes_md: its beginning (918)
+sources:
+  period:
+    - note: “The period of the Koryo dynasty (918–1392)” · “The founder of Koryo, Wang Kon”
+      source: portal-2000
+      locator: p. 79
+      accessed: 2026-10-30

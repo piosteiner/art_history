@@ -1,0 +1,50 @@
+public_id: 105325
+name: Siege of Kamakura
+names:
+  - lang: fr
+    role: translation
+    text: siège de Kamakura
+  - lang: it
+    role: translation
+    text: Assedio di Kamakura (1333)
+  - lang: es
+    role: translation
+    text: Asedio de Kamakura
+  - lang: ja
+    role: translation
+    text: 鎌倉の戦い
+  - lang: zh
+    role: translation
+    text: 鎌倉之戰 (元弘之亂)
+parent: genko-war
+period: 1333-07-13
+place: kamakura
+location: [139.55028, 35.31583]
+description_md: In 1333 the supporters of Emperor Go-Daigo took Kamakura and the shogunate fell[[source/wikipedia-en-kamakura-period|“the Siege of Kamakura in 1333 which ended the rule of the shogunate”]].
+wikidata_id: Q7510143
+metadata:
+  sources: [Wikidata Q7510143 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/kamakura-period
+    notes_md: its end (1333)
+  - type: concerns
+    to: movement/nanbokucho-period
+    notes_md: its beginning in the national institutions’ reading (1333)
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q7510143
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q7510143
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q7510143
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q7510143

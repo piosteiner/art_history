@@ -1,0 +1,64 @@
+public_id: 105343
+name: Great Fire of Meireki
+names:
+  - Furisode Fire
+  - lang: nl
+    role: translation
+    text: Grote brand van Meireki
+  - lang: fr
+    role: translation
+    text: grand incendie de Meireki
+  - lang: de
+    role: translation
+    text: Meireki-Großbrand
+  - lang: it
+    role: translation
+    text: Grande incendio di Meireki
+  - lang: es
+    role: translation
+    text: gran incendio de Meireki
+  - lang: ja
+    role: translation
+    text: 明暦の大火
+  - lang: zh
+    role: translation
+    text: 明曆大火
+  - lang: ko
+    role: translation
+    text: 메이레키 대화재
+  - lang: ru
+    role: translation
+    text: Великий пожар годов Мэйрэки
+period: 1657-03
+place: japan
+location: [139.7351, 35.7357]
+description_md: The fire of 1657 that destroyed much of Edo; it was rebuilt at once, with large open spaces planned against another such disaster[[source/history-of-japanese-art|p. 274]].
+wikidata_id: Q1336847
+metadata:
+  sources: [Wikidata Q1336847 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/edo-period
+    notes_md: Edo rebuilt after it
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Meireki_fire.JPG/1280px-Meireki_fire.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Meireki_fire.JPG
+    license: Public domain
+    credit: 田代幸春
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q1336847
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q1336847
+    - note: “In 1657, it suffered a disastrous fire, but rebuilding began immediately, and, with an eye to preventing another such disaster, large open spaces were planned within the new city”
+      source: history-of-japanese-art
+      locator: p. 274
+      accessed: 2026-10-30
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q1336847

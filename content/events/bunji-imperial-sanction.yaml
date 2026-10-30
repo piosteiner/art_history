@@ -1,0 +1,22 @@
+public_id: 105369
+name: Bunji imperial sanction
+names:
+  - lang: ja
+    role: original
+    text: "{文治の勅許|ぶんじのちょっきょ}"
+kind: imperial grant
+period: 1185-11
+description_md: In the eleventh month of 1185 the court allowed Minamoto no Yoritomo to appoint military governors (shugo) and land stewards (jitō) throughout the country — the prevailing date for the beginning of the Kamakura period[[source/wikipedia-ja-kamakura-jidai|1185年（文治元年） 11月、文治の勅許に基づき守護・地頭を設置]][[source/wikipedia-en-kamakura-period|“the prevailing theory was that the year was 1185”]].
+relationships:
+  - type: concerns
+    to: movement/heian-period
+    notes_md: its end in the prevailing reading (1185)
+  - type: concerns
+    to: movement/kamakura-period
+    notes_md: its beginning in the prevailing reading (1185)
+sources:
+  period:
+    - url: https://ja.wikipedia.org/w/index.php?title=%E9%8E%8C%E5%80%89%E6%99%82%E4%BB%A3&oldid=111136946
+      note: 「1185年（文治元年） 11月、文治の勅許に基づき守護・地頭を設置」 · 「守護・地頭設置権を認められた1185年説」
+      source: wikipedia-ja-kamakura-jidai
+      accessed: 2026-10-30

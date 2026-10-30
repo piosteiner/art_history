@@ -1,0 +1,16 @@
+public_id: 105354
+name: Seoul
+kind: settlement
+location: [126.99, 37.56]
+wikidata_id: Q8684
+metadata:
+  sources: [Wikidata Q8684 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q8684
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q8684

@@ -1,0 +1,66 @@
+public_id: 105359
+name: surrender of Japan
+names:
+  - the surrender of Japan
+  - lang: nl
+    role: translation
+    text: overgave van Japan
+  - lang: fr
+    role: translation
+    text: capitulation du Japon
+  - lang: de
+    role: translation
+    text: Kapitulation Japans
+  - lang: it
+    role: translation
+    text: resa del Giappone
+  - lang: es
+    role: translation
+    text: rendición de Japón
+  - lang: ja
+    role: translation
+    text: 日本の降伏
+  - lang: zh
+    role: translation
+    text: 日本投降
+  - lang: ko
+    role: translation
+    text: 일본의 항복
+  - lang: ru
+    role: translation
+    text: капитуляция Японии
+parent: world-war-ii
+period: 1945-09-02
+location: [139.76, 35.35472]
+description_md: Japan's surrender at the end of the Second World War; for Korea it meant a sudden, unexpected liberation, followed by the occupation of the north by Soviet and of the south by American troops[[source/portal-2000|p. 168]].
+wikidata_id: Q6540361
+metadata:
+  sources: [Wikidata Q6540361 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: movement/japanese-colonial-period-korea
+    notes_md: its end (1945)
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/88/Japanese_Surrender_at_Tokyo_Bay%2C_2_September_1945_A30427A.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Japanese_Surrender_at_Tokyo_Bay,_2_September_1945_A30427A.jpg
+    license: Public domain
+    credit: Cross W G (Sub Lt), Royal Navy official photographer
+identifiers:
+  gnd: 4254511-0
+sources:
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q6540361
+  period:
+    - accessed: 2026-10-30
+      property: P585
+      wikidata: Q6540361
+    - note: “Their sudden liberation from Japan in 1945 was unexpected and was followed by the occupation of the northern half of the country by Soviet troops and of the southern half by American troops”
+      source: portal-2000
+      locator: p. 168
+      accessed: 2026-10-30
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q6540361

@@ -1,0 +1,16 @@
+public_id: 105326
+name: Yamashiro Province
+kind: site
+location: [135.80056, 34.88194]
+wikidata_id: Q749276
+metadata:
+  sources: [Wikidata Q749276 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q749276
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q749276
