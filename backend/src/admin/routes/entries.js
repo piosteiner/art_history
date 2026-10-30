@@ -600,7 +600,7 @@ router.get('/:plural/:slug', async (req, res) => {
       })()}
       ${t.imageFk ? images.section({ t, e, images: imgs, licenseList: await images.licenses(adminPool) }) : ''}
       ${t.type === 'artwork' ? numbers.listSection({ e, numbers: nums, cites: await citations.forNumbers(adminPool, nums.map((n) => n.id)), recent }) : ''}
-      ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap, gaps: await provenance.coverage(adminPool, e.id),
+      ${t.type === 'artwork' ? provenance.section({ e, steps: provSteps, names: linkMap, gaps: await provenance.coverage(adminPool, e.id), fate: await provenance.fate(adminPool, e.id),
         alternatives: provAlternatives,
         cites: await citations.forProvenance(adminPool, [...provSteps.filter((s) => s.id).map((s) => s.id), ...[...provAlternatives.values()].flat().map((a) => a.id)]),
         marker: (c, target, back) => citations.marker(c, target, back, { recent }), back: `${here}#provenance` }) : ''}

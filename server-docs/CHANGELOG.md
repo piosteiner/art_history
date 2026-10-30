@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Migration 171 + CMS: the provenance table closes with the work's fate
+- **What:** function `fate_event(artwork_id)` (the event that `concerns` the work at its fate's date) — now used by the
+  API (`fate.event`, before an inline subquery) and the CMS. CMS artwork page (`src/admin/provenance.js` `fate()`,
+  `fateRow()`, `admin.css`): after the last step a line "Destroyed May 1945 — note · event — the end of its
+  provenance" closing the table with a red rule; lost dotted; partly destroyed after the step it happened under; a
+  hint when no event names the cause; the coverage bar reads the same. Tests: e2e `artwork-fate`; perf 35/35.
+- **Why:** owner, 2026-10-30 ("ja gerne auch im cms").
+- **Revert:** `DROP FUNCTION fate_event(bigint)` after reverting the API line; `git revert` for the CMS.
+
 ### API + site: the provenance closes with the work's fate
 - **What:** API `fate.event` (`src/routes/entities.js`): the event that `concerns` the work and overlaps the fate's
   date — its cause. Site (`frontend/src/views/detail-sections.ts` `fateItem`, `style.css`): after the last holder a

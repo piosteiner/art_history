@@ -505,16 +505,30 @@ async function coverage(db, artworkId) {
       FROM provenance_coverage($1) ORDER BY period`, [artworkId]);
   return rows;
 }
+// What became of it (103) and its cause (171), for the bar's end and the table's closing line; null while extant.
+async function fate(db, artworkId) {
+  const { rows } = await db.query(`SELECT fate::text AS status, fate_date_label AS date_label, lower(fate_date)::text AS from_date,
+      fate_note AS note, fate_event(id) AS event FROM artworks WHERE id = $1 AND fate IS NOT NULL`, [artworkId]);
+  return rows[0] || null;
+}
+const FATE_WORD = { destroyed: 'Destroyed', partly_destroyed: 'Partly destroyed', lost: 'Lost' };
+// The closing line: destroyed — the end of the provenance; lost — whereabouts unknown; partly destroyed — at its time
+function fateRow(f, slug) {
+  return html`<tbody class="fate fate-${f.status}"><tr><td></td><td></td><td colspan="6">
+    <b>${FATE_WORD[f.status]}</b>${f.date_label ? html` ${f.status === 'lost' ? 'since ' : ''}${f.date_label}` : ''}${f.note ? html` — ${f.note}` : ''}${f.event ? html` · <a href="/events/${f.event.slug}">${f.event.name}</a>` : ''}
+    <span class="muted small">${f.status === 'destroyed' ? '— the end of its provenance.' : f.status === 'lost' ? '— whereabouts unknown, it may still exist.' : '— the parts go on.'}</span>
+    ${f.event ? '' : html` <span class="muted small">(link an event that <i>concerns</i> the work at that date to name the cause)</span>`}
+    <a class="small" href="/artworks/${slug}/edit#f-fate">edit the fate</a></td></tr></tbody>`;
+}
 const ERA = ['1933-01-30', '1945-05-09'];
 const years = (g) => (g.from_year === g.to_year ? `${g.from_year}` : `${g.from_year}–${g.to_year}`);
 const duration = (days) => (days >= 365 ? `${Math.round(days / 365.25)} year${Math.round(days / 365.25) === 1 ? '' : 's'}` : `${Math.max(1, Math.round(days / 30.4))} months`);
 
 // A bar from the creation to today: documented (solid), presumed (hatched), gaps (open, red edge); 1933–1945 shaded.
 // A destroyed work's ends with its destruction (170): "destroyed May 1945" instead of "today".
-function coverageBar(segs, e = {}) {
+function coverageBar(segs, f = null) {
   if (!segs.length) return '';
-  const { fate, fate_date: when } = e.doc || {};
-  const end = fate === 'destroyed' ? `destroyed${when ? ` ${when}` : ''}` : 'today';
+  const end = f?.status === 'destroyed' ? `destroyed${f.date_label ? ` ${f.date_label}` : ''}` : 'today';
   const t = (d) => Date.parse(d);
   const [t0, t1] = [t(segs[0].from_date), t(segs[segs.length - 1].to_date)];
   const x = (d) => Math.max(0, Math.min(1000, ((t(d) - t0) / (t1 - t0)) * 1000));
@@ -556,11 +570,15 @@ function stepChoices(steps) {
   return steps.filter((s) => s.kind === 'step').map((s) => { n += 1; return { id: s.id, label: `${n}. ${s.owner_slug ? s.owner_entity_name : s.owner_label || s.label || ''} ${s.acquired_label || ''}`.trim() }; });
 }
 
-function section({ e, steps, names, cites = {}, marker = null, back = '', gaps = null, alternatives = new Map() }) {
+function section({ e, steps, names, cites = {}, marker = null, back = '', gaps = null, alternatives = new Map(), fate: f = null }) {
   const stored = steps.filter((s) => s.kind === 'step');
   let n = 0;
+  // the closing line after the last step; partly destroyed after the last step that began by then
+  const startOf = (s) => (/^[[(](\d{4}-\d\d-\d\d)/.exec(s.period || '') || [])[1] || '';
+  const fateAt = !f ? -1 : f.status !== 'partly_destroyed' || !f.from_date ? steps.length - 1
+    : steps.reduce((at, s, i) => (startOf(s) && startOf(s) <= f.from_date ? i : at), steps.length - 1);
   return html`<h2 id="provenance">Provenance</h2>
-    ${gaps && gaps.length ? coverageBar(gaps, e) : ''}
+    ${gaps && gaps.length ? coverageBar(gaps, f) : ''}
     ${steps.length ? html`<div class="table-wrap"><table class="provenance" data-sortable="/artworks/${e.slug}/provenance/order">${(gaps || []).filter((g) => g.kind === 'gap' && g.before_position === null).map(gapRow)}${steps.map((s, i) => {
       const implied = s.kind !== 'step';
       if (!implied) n += 1;
@@ -597,7 +615,7 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
           ${a.label ? html`<div class="muted small">${a.label}</div>` : ''}${a.notes_md ? html`<div class="md small">${raw(renderMarkdown(a.notes_md, { names }))}</div>` : ''}</td>
         <td>${marker ? marker(cites[a.id], { provenance: a.id, label: `another reading of step ${n}` }, back) : ''}</td>
         <td class="nowrap"><a href="/provenance/${a.id}/edit">edit</a></td></tr></tbody>`)}
-      ${(gaps || []).filter((g) => g.kind === 'gap' && (g.show_after ?? g.before_position) === s.position).map(gapRow)}`;
+      ${(gaps || []).filter((g) => g.kind === 'gap' && (g.show_after ?? g.before_position) === s.position).map(gapRow)}${i === fateAt ? fateRow(f, e.slug) : ''}`;
     })}</table></div>
       ${stored.length > 1 ? html`<p class="muted small">Drag ⠿ to change the order — the periods are recomputed.</p>` : ''}
       ${research(steps)}`
@@ -605,4 +623,4 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
     <details><summary><b>+ Add provenance step</b></summary>${form({ action: `/artworks/${e.slug}/provenance`, submit: 'Add', choices: stepChoices(steps) })}</details>`;
 }
 
-module.exports = { ProvenanceError, plannedMark, dayText, METHODS, ROLES, NUMBER_KINDS, saveExtras, coverage, coverageBar, readAlternatives, stepChoices, addCommission, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section, saveCoOwners, priceText };
+module.exports = { ProvenanceError, plannedMark, dayText, METHODS, ROLES, NUMBER_KINDS, saveExtras, coverage, coverageBar, fate, readAlternatives, stepChoices, addCommission, fromForm, byId, formValues, add, update, move, reorder, remove, read, form, section, saveCoOwners, priceText };

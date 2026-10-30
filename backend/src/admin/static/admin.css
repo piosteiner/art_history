@@ -480,6 +480,11 @@ figure.coverage i.cov-era { background: var(--err-bg); }
 .cov-warn { color: var(--err); }
 table.provenance tbody.gap td { padding-top: .35rem; padding-bottom: .35rem; background: var(--err-bg); }
 table.provenance tbody.gap td:first-child { border-left: 3px solid var(--err); }
+/* what became of it (103): destroyed closes the table with a heavy rule, lost / partly destroyed are marked lighter */
+table.provenance tbody.fate td { padding-top: .45rem; padding-bottom: .45rem; }
+table.provenance tbody.fate-destroyed td { border-bottom: 3px solid var(--err); }
+table.provenance tbody.fate-lost td { border-bottom: 2px dotted var(--err); }
+table.provenance tbody.fate b { color: var(--err); }
 /* "+ Create …" in the [[ suggestions: the type chooser (editor.js typeChooser) */
 .link-create { position: absolute; z-index: 1000; display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; max-width: 34rem;
   background: var(--panel); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; padding: .6rem .7rem;

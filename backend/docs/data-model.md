@@ -641,6 +641,8 @@ artwork page, `/quality/provenance-gaps`.
 A destroyed work's life ends with its destruction (170): `fate = 'destroyed'` → until `upper(fate_date)`, without a date
 until the last dated holding — no gap from then until today. `partly_destroyed` (parts survive) and `lost`
 (whereabouts unknown, not existence) run on until today. Bars (site and admin) say "destroyed 1945" instead of "today".
+`fate_event(artwork_id)` (171): the fate's cause — an event that `concerns` the work and overlaps `fate_date` — for the
+API's `fate.event` and the closing line of the provenance (site list, admin table).
 
 ## Provenance as it happened (migrations 083/084)
 - Role `possessor` (beside the chain): held without good title — seized, looted, stolen, received from those who took

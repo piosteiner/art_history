@@ -117,10 +117,7 @@ const ENTITIES = {
              CASE WHEN t.fate IS NOT NULL THEN jsonb_build_object('status', t.fate, 'label', CASE t.fate WHEN 'destroyed' THEN 'destroyed'
                WHEN 'partly_destroyed' THEN 'partly destroyed' ELSE 'lost' END,
                'date', range_json(t.fate_date, t.fate_date_label), 'note', t.fate_note,
-               -- its cause: an event that concerns the work, at the time of its fate (the fire in the flak tower)
-               'event', (SELECT jsonb_build_object('slug', ev.slug, 'name', ev.name) FROM relationships r JOIN events ev ON ev.id = r.subject_id
-                 WHERE r.relationship_type = 'concerns' AND r.subject_type = 'event' AND r.object_type = 'artwork' AND r.object_id = t.id
-                   AND ev.period && t.fate_date ORDER BY lower(ev.period) LIMIT 1)) END AS fate,
+               'event', fate_event(t.id)) END AS fate,  -- its cause: an event that concerns the work then (171)
              (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = t.kind_term_id) AS kind_term,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', g.slug, 'name', g.name) ORDER BY am.position), '[]')
                 FROM artwork_materials am JOIN glossary g ON g.id = am.term_id WHERE am.artwork_id = t.id) AS material_terms,
