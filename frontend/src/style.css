@@ -288,7 +288,8 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .coverage-axis { position: relative; display: flex; justify-content: space-between; font-size: .75rem; color: var(--muted); margin-top: .15rem; }
 .coverage-ns-label { position: absolute; top: 0; color: var(--prov-d); }
 .coverage figcaption { margin-top: .1rem; }
-.coverage-key { margin-left: .4rem; white-space: nowrap; }
+.coverage-key { margin-left: .4rem; }
+.coverage-key > span { white-space: nowrap; } /* wraps between the entries on a phone, never inside one */
 .coverage-key i { display: inline-block; width: 14px; height: 9px; margin: 0 .2rem 0 .5rem; vertical-align: baseline; border-radius: 2px; }
 .coverage-key .ns-key { background: color-mix(in srgb, var(--prov-d) 25%, transparent); }
 /* a gap between the steps of the list */

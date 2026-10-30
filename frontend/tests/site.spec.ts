@@ -1597,6 +1597,7 @@ test('provenance coverage (078): a bar from the creation until today, gap lines 
   await expect(gap).toHaveClass(/ns/);
   await expect(gap).toHaveAttribute('title', /Gap 1929–1946: no holder known \(after First Owner, before Second Owner\)\. Possibly: Maybe Owner/);
   await expect(bar.locator('.coverage-ns')).toHaveCount(1);
+  await expect(page.locator('.coverage-axis .coverage-ns-label')).toHaveText('1933–45'); // halfway along: room for it
   await expect(page.locator('.coverage figcaption')).toContainText('60% documented, gaps 18 years, 12 of them in 1933–1945');
   // the documented stretch from 1900 to 1928 starts about a third of the way along (1831 → 2026)
   const box = await bar.boundingBox();
@@ -1629,6 +1630,10 @@ test('provenance coverage (170): a destroyed work\'s bar ends with its destructi
   await expect(axis).toContainText('destroyed May 1945');
   await expect(axis).not.toContainText('today');
   await expect(page.locator('.provenance .coverage-bar')).toHaveAttribute('aria-label', /until it was destroyed May 1945/);
+  // 1933–1945 at the very end of the bar: shaded and in the key, but no label crowding the end label
+  await expect(page.locator('.provenance .coverage-ns')).toHaveCount(1);
+  await expect(axis.locator('.coverage-ns-label')).toHaveCount(0);
+  await expect(page.locator('.coverage .ns-key')).toHaveCount(1);
 });
 
 test('artwork map (078): a "?" with the years mid-segment, red in 1933–1945; the gaps listed under the map', async ({ page }) => {

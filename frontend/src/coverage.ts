@@ -52,6 +52,10 @@ export function coverageBar(cov: ProvenanceCoverage | null | undefined, fate?: A
   const ns = NS_TO > start && NS_FROM < end;
   const gaps = cov.segments.filter((s) => s.kind === 'gap');
   const endLabel = fate?.status === 'destroyed' ? `destroyed${fate.date ? ` ${years(fate.date)}` : ''}` : 'today';
+  // "1933–45" under the shading only with room beside the start year and the end label — a bar that ends in or soon
+  // after 1945 (a work destroyed then) or starts around 1933 keeps the shading and the key, not a label on the others
+  const nsAt = (Math.max(NS_FROM, start) - start) / (end - start);
+  const nsLabel = ns && nsAt >= 0.12 && nsAt <= (endLabel === 'today' ? 0.75 : 0.5);
   const summary = `${cov.documented_percent}% documented${cov.gap_years ? `, gaps ${Math.round(cov.gap_years)} years` : ''}${cov.gap_1933_1945_years ? `, ${Math.round(cov.gap_1933_1945_years)} of them in 1933–1945` : ''}`;
   return html`<figure class="coverage">
     <div class="coverage-bar" role="img" aria-label="Provenance coverage from ${String(cov.segments[0].period?.from_year ?? '')} until ${endLabel === 'today' ? 'today' : `it was ${endLabel}`}: ${summary}">
@@ -64,11 +68,11 @@ export function coverageBar(cov: ProvenanceCoverage | null | undefined, fate?: A
     </div>
     <div class="coverage-axis" aria-hidden="true">
       <span>${String(cov.segments[0].period?.from_year ?? '')}</span>
-      ${ns ? html`<span class="coverage-ns-label" style="left:${pct(NS_FROM)}">1933–45</span>` : ''}
+      ${nsLabel ? html`<span class="coverage-ns-label" style="left:${pct(NS_FROM)}">1933–45</span>` : ''}
       <span>${endLabel}</span>
     </div>
     <figcaption class="muted small">${summary}.
-      <span class="coverage-key"><i class="documented"></i>documented <i class="presumed"></i>presumed <i class="gap"></i>gap${ns ? html` <i class="ns-key"></i>1933–1945` : ''}</span>
+      <span class="coverage-key"><span><i class="documented"></i>documented</span> <span><i class="presumed"></i>presumed</span> <span><i class="gap"></i>gap</span>${ns ? html` <span><i class="ns-key"></i>1933–1945</span>` : ''}</span>
       ${gaps.length ? html`<span class="visually-hidden">${gaps.map((g) => `${segmentTitle(g)} `)}</span>` : ''}
     </figcaption>
   </figure>`;

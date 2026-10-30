@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Site: the 1933–45 label no longer crowds the end of the coverage bar
+- **What:** `frontend/src/coverage.ts` labels the shaded 1933–1945 stretch only when there is room beside the start
+  year and the end label (a bar ending in 1945 — a work destroyed then — keeps the shading and the key); the key
+  wraps between its entries on a phone instead of running out of the box.
+- **Why:** owner, 2026-10-30 (screenshot: "1933–45" over "today" on San Matteo e l'angelo, prima versione).
+- **Revert:** `git revert` of this commit.
+
 ### Migration 170: a destroyed work's provenance ends with its destruction
 - **What:** `provenance_coverage()` measures a destroyed work's life until its `fate_date` (without one, until the last
   dated holding) instead of until today; the destroyed works queued for the stored figures. Bars on the site
