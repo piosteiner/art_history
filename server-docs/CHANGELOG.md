@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Zug's accession cited (HLS + Wikipedia)
+- **What:** source `hls-zug-kanton` (HLS, Zug (Kanton) — read by the owner: "ab 1352", the year only) and
+  `wikipedia-en-zug` (the day, 27 June 1352) on Zug's two links (the Empire until, the Confederacy from 1352);
+  `attested`. Still `probable`: Alessandria, Neubrandenburg and Oldenburg in the Confederation of the Rhine.
+- **Why:** owner, 2026-10-30.
+- **Revert:** via the admin history.
+
 ### Data: more polity change dates from the German and Italian Wikipedia; site test fix
 - **What:** Pordenone Venetian only from 20 April 1508 (a Habsburg enclave before — not 1420), Pistoia under Florence
   from its surrender on 11 April 1306 (not 1401), Macerata in the Papal States from 1320; cited: Ulm Württemberg 1810,
