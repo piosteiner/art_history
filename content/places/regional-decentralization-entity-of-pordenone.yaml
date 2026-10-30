@@ -11,12 +11,18 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/republic-of-venice
-    period: 1420/1797-10-16
-    certainty: probable
-    notes_md: The date of the change is not yet checked against a source (2026-10-30).
+    period: 1508-04-20/1797-10-16
     sources:
       - accessed: 2026-10-29
         wikidata: Q4948
+      - url: https://de.wikipedia.org/wiki/Pordenone
+        note: “Im Jahre 1508 fiel Pordenone unter Kontrolle von Venedig.”
+        source: wikipedia-de-pordenone
+        accessed: 2026-10-30
+      - url: https://it.wikipedia.org/wiki/Pordenone
+        note: “Durante l'invasione veneziana del 1420 che portò all'annessione dello stato patriarcale di Aquileia alla repubblica di Venezia i possedimenti asburgici non verranno toccati.”
+        source: wikipedia-it-pordenone
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-monarchy
     period: 17 October 1797–30 April 1806

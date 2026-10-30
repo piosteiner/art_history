@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: more polity change dates from the German and Italian Wikipedia; site test fix
+- **What:** Pordenone Venetian only from 20 April 1508 (a Habsburg enclave before — not 1420), Pistoia under Florence
+  from its surrender on 11 April 1306 (not 1401), Macerata in the Papal States from 1320; cited: Ulm Württemberg 1810,
+  Oldenburg annexed early 1811, Bentheim Berg 1806 / France 1 January 1811. Still `probable`: Alessandria
+  (1395/1713/1720), Zug (1352), Neubrandenburg and Oldenburg in the Confederation of the Rhine (joining dates).
+  Site test "crossed paths": scrolls to the section's anchor first (it loads in view; the Van Gogh page grew) — the
+  Pages run of 50d0604 failed on it.
+- **Why:** owner, 2026-10-30.
+- **Revert:** via the admin history; `git revert` for the test.
+
 ### Data: polity change dates checked against sources
 - **What:** every `in_polity` boundary compared with Wikidata — the polity's own inception/dissolution, the place's
   country statements, the neighbouring polities at the place and above it — and the 81 dates left looked up in

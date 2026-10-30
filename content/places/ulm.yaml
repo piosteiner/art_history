@@ -23,11 +23,13 @@ relationships:
   - type: in_polity
     to: polity/kingdom-of-wurttemberg
     period: 1810-11-06/1918-11-06
-    certainty: probable
-    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q159631
+      - url: https://de.wikipedia.org/wiki/Ulm
+        note: “Damit war für Napoleon der Weg nach Osten frei für die Entscheidungsschlacht gegen die Russen und Österreicher bei Austerlitz. 1810 gelangte Ulm durch einen bayerisch-württembergischen Gebietsaustausch, der im entsprechenden Grenzvertrag geregelt war, vom Königreich Bayern an das Königreich Württemberg. ==== Grenz- und Provinzstadt im Königreich Württemberg (1810 bis 1918) ==== Für Ulm hatte der Übergang an Württemberg schwerwiegende und bis heute andauernde Folgen.”
+        source: wikipedia-de-ulm
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/german-confederation
     period: 1815-06-08/1866-08-23

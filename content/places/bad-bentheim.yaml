@@ -12,27 +12,33 @@ relationships:
   - type: in_polity
     to: polity/confederation-of-the-rhine
     period: 12 July 1806–31 December 1810
-    certainty: probable
-    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q154741
+      - url: https://de.wikipedia.org/wiki/Grafschaft_Bentheim
+        note: “In der Franzosenzeit wurde die Grafschaft 1804 zunächst Graf Ludwig Wilhelm von Bentheim-Steinfurt als Erbe Friedrich Karls übergeben. 1806 beraubte Napoleon Bonaparte durch die Rheinbundakte die Grafen aller Rechte; Bentheim gehörte bis 1811 zum Département Ems des Großherzogtums Berg im von ihm begründeten Rheinbund.”
+        source: wikipedia-de-grafschaft-bentheim
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/grand-duchy-of-berg
     period: 12 July 1806–31 December 1810
-    certainty: probable
-    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q249428
+      - url: https://de.wikipedia.org/wiki/Grafschaft_Bentheim
+        note: “In der Franzosenzeit wurde die Grafschaft 1804 zunächst Graf Ludwig Wilhelm von Bentheim-Steinfurt als Erbe Friedrich Karls übergeben. 1806 beraubte Napoleon Bonaparte durch die Rheinbundakte die Grafen aller Rechte; Bentheim gehörte bis 1811 zum Département Ems des Großherzogtums Berg im von ihm begründeten Rheinbund.”
+        source: wikipedia-de-grafschaft-bentheim
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1 January 1811–10 November 1813
-    certainty: probable
-    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q71084
+      - url: https://de.wikipedia.org/wiki/Grafschaft_Bentheim
+        note: "“Mit der Annexion des Königreichs Holland durch Frankreich 1810 änderte sich die Zugehörigkeit abermals: Mit Wirkung vom 1.”"
+        source: wikipedia-de-grafschaft-bentheim
+        accessed: 2026-10-30
 identifiers:
   gnd: 4005532-2
 sources:

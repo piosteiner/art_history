@@ -12,12 +12,14 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/papal-states
-    period: 15th century–14 February 1798
-    certainty: probable
-    notes_md: The date of the change is not yet checked against a source (2026-10-30).
+    period: 1320/1798-02-14
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://it.wikipedia.org/wiki/Storia_di_Macerata
+        note: “Nel 1320 la decisione di papa Giovanni XII di concedere a Macerata la sede vescovile comportò per la città sia un aumento della popolazione sia un aumento dell'importanza politica grazie alla fedeltà allo Stato Pontificio.”
+        source: wikipedia-it-storia-di-macerata
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/roman-republic-1798
     period: 1798-02-15/1799-09-29

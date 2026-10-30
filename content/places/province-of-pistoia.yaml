@@ -8,12 +8,14 @@ wikidata_id: Q16245
 relationships:
   - type: in_polity
     to: polity/republic-of-florence
-    period: 1401/1532-04-26
-    certainty: probable
-    notes_md: The date of the change is not yet checked against a source (2026-10-30).
+    period: 1306-04-11/1532-04-26
     sources:
       - accessed: 2026-10-29
         wikidata: Q148540
+      - url: https://it.wikipedia.org/wiki/Pistoia
+        note: “Tuttavia, dopo un assedio di undici mesi, l'11 aprile 1306, Pistoia si arrese ai nemici di sempre, i fiorentini e i lucchesi, perdendo così la sua autonomia.”
+        source: wikipedia-it-pistoia
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/duchy-of-florence
     period: 1532-04-27/1569-08-26
