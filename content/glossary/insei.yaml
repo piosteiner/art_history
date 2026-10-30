@@ -1,0 +1,15 @@
+public_id: 105465
+name: insei
+names:
+  - lang: ja
+    role: original
+    text: "{院政|いんせい}"
+  - lang: en
+    role: translation
+    text: cloistered rule
+category: other
+definition: Government by retired, cloistered emperors, begun by Emperor Shirakawa in 1086, which gave the late Heian period its name.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 102

@@ -1,0 +1,16 @@
+public_id: 105496
+name: togidashi-e
+names:
+  - lang: ja
+    role: original
+    text: "{研出蒔絵|とぎだしまきえ}"
+  - lang: en
+    role: translation
+    text: polished-out picture
+category: technique
+parent: lacquer
+definition: A lacquer technique in which the design is covered with further layers of lacquer and then polished back until it shows flush with the surface.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 302–303

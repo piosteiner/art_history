@@ -1,0 +1,15 @@
+public_id: 105451
+name: daimyō
+names:
+  - lang: ja
+    role: original
+    text: "{大名|だいみょう}"
+  - lang: en
+    role: translation
+    text: feudal lord
+category: other
+definition: A great territorial lord; under the Tokugawa some 250 daimyō governed their domains (han) under the shogunate.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 272

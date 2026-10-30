@@ -1,0 +1,15 @@
+public_id: 105471
+name: kyōyaki
+names:
+  - lang: ja
+    role: original
+    text: "{京焼|きょうやき}"
+  - lang: en
+    role: translation
+    text: Kyoto ware
+category: object type
+definition: "Kyoto ceramics of the Edo period: stoneware with delicate Japanese designs in bright overglaze enamels, made by named studio potters such as Ninsei and Kenzan."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 296–297

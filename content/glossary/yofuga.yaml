@@ -1,0 +1,15 @@
+public_id: 105502
+name: yōfūga
+names:
+  - lang: ja
+    role: original
+    text: "{洋風画|ようふうが}"
+  - lang: en
+    role: translation
+    text: Western-style painting
+category: style
+definition: Edo-period painting in the Western manner, with perspective and modelling in light and shade, learnt from Dutch books and prints; the forerunner of modern yōga.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 276–277, 317–318

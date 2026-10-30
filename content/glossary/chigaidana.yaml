@@ -1,0 +1,15 @@
+public_id: 105448
+name: chigaidana
+names:
+  - lang: ja
+    role: original
+    text: "{違い棚|ちがいだな}"
+  - lang: en
+    role: translation
+    text: staggered shelves
+category: architecture
+definition: Shelves set at different heights beside the tokonoma, part of the shoin interior.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 240–241

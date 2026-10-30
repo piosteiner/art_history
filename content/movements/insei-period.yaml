@@ -10,7 +10,7 @@ names:
 kind: period
 parent: heian-period
 period: 1086/1185
-description_md: "**Dates.** It begins in 1086, when Emperor Shirakawa abdicated and ruled on from his retirement — government by cloistered emperors (insei)[[source/history-of-japanese-art|p. 102]]. It ends with the Heian period in 1185, when Minamoto no Yoritomo, after Dan-no-ura, won the right to appoint military governors and land stewards[[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192 … Later, the prevailing theory was that the year was 1185”]]."
+description_md: "**Dates.** It begins in 1086, when Emperor Shirakawa abdicated and ruled on from his retirement — government by cloistered emperors ([[insei]])[[source/history-of-japanese-art|p. 102]]. It ends with the Heian period in 1185, when Minamoto no Yoritomo, after Dan-no-ura, won the right to appoint military governors and land stewards[[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192 … Later, the prevailing theory was that the year was 1185”]]."
 relationships:
   - type: active_in
     to: place/japan

@@ -1,0 +1,15 @@
+public_id: 105494
+name: tahōtō
+names:
+  - lang: ja
+    role: original
+    text: "{多宝塔|たほうとう}"
+  - lang: en
+    role: translation
+    text: treasure pagoda
+category: architecture
+definition: A two-storeyed pagoda with a round core under a square roof, typical of the esoteric Shingon and Tendai schools.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: Glossary, pp. 400–401

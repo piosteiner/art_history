@@ -1,0 +1,16 @@
+public_id: 105483
+name: raden
+names:
+  - lang: ja
+    role: original
+    text: "{螺鈿|らでん}"
+  - lang: en
+    role: translation
+    text: mother-of-pearl inlay
+category: technique
+parent: lacquer
+definition: Inlay of mother-of-pearl in lacquer; the craftsmen of the Ryūkyū islands were especially admired for it.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 302–303

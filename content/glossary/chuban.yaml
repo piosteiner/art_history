@@ -1,0 +1,16 @@
+public_id: 105450
+name: chūban
+names:
+  - lang: ja
+    role: original
+    text: "{中判|ちゅうばん}"
+  - lang: en
+    role: translation
+    text: medium size
+category: format
+parent: woodblock-print
+definition: A medium-sized woodblock print, about a quarter of the large sheet.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 282–283

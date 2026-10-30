@@ -1,0 +1,16 @@
+public_id: 105487
+name: shin hanga
+names:
+  - lang: ja
+    role: original
+    text: "{新版画|しんはんが}"
+  - lang: en
+    role: translation
+    text: new prints
+category: style
+parent: woodblock-print
+definition: Woodblock prints of the 1910s–1940s that renewed ukiyo-e themes in the old division of labour between designer, carver and printer, promoted by the publisher Watanabe Shōzaburō.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 382–383

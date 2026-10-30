@@ -1,0 +1,15 @@
+public_id: 105443
+name: bakufu
+names:
+  - lang: ja
+    role: original
+    text: "{幕府|ばくふ}"
+  - lang: en
+    role: translation
+    text: shogunate
+category: other
+definition: The military government led by the shōgun, first established by Minamoto no Yoritomo at Kamakura; it ruled Japan from 1185 to 1868.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: p. 272; Glossary, pp. 394–395

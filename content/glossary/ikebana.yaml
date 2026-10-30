@@ -1,0 +1,15 @@
+public_id: 105463
+name: ikebana
+names:
+  - lang: ja
+    role: original
+    text: "{生け花|いけばな}"
+  - lang: en
+    role: translation
+    text: flower arranging
+category: other
+definition: The art of arranging flowers, practised by men and women of all classes since the Muromachi period; bronze vases were its preferred vessels.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 302–303

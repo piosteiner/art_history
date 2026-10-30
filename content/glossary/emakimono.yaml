@@ -1,0 +1,15 @@
+public_id: 105454
+name: emakimono
+names:
+  - lang: ja
+    role: original
+    text: "{絵巻物|えまきもの}"
+  - lang: en
+    role: translation
+    text: illustrated handscroll
+category: format
+definition: A horizontal illustrated handscroll, unrolled from right to left, in which text and pictures tell a story; the great age of the form was the 12th and 13th centuries.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 114–117

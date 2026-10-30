@@ -1,0 +1,15 @@
+public_id: 105504
+name: zenga
+names:
+  - lang: ja
+    role: original
+    text: "{禅画|ぜんが}"
+  - lang: en
+    role: translation
+    text: Zen painting
+category: style
+definition: Ink paintings and calligraphy by Zen monks as an aid to meditation, often on a kōan, usually given as gifts; Hakuin Ekaku is its great master.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 324–325

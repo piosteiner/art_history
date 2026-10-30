@@ -1,0 +1,16 @@
+public_id: 105460
+name: hōshō
+names:
+  - lang: ja
+    role: original
+    text: "{奉書|ほうしょ}"
+  - lang: en
+    role: translation
+    text: hōshō paper
+category: material
+parent: japan-paper
+definition: A strong, absorbent paper made from the inner bark of the mulberry tree, favoured for woodblock prints because it stands up to many rubbings.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 282–283

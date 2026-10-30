@@ -1,0 +1,16 @@
+public_id: 105492
+name: sōsaku hanga
+names:
+  - lang: ja
+    role: original
+    text: "{創作版画|そうさくはんが}"
+  - lang: en
+    role: translation
+    text: creative prints
+category: style
+parent: woodblock-print
+definition: The 20th-century print movement in which the artist designs, carves and prints the work himself, as in European printmaking.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 382–383

@@ -1,0 +1,16 @@
+public_id: 105459
+name: hashira-e
+names:
+  - lang: ja
+    role: original
+    text: "{柱絵|はしらえ}"
+  - lang: en
+    role: translation
+    text: pillar picture
+category: format
+parent: woodblock-print
+definition: A very tall, narrow woodblock print, about 70 × 15 cm, made to hang on a pillar.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 282–283

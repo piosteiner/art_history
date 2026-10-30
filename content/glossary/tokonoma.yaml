@@ -1,0 +1,15 @@
+public_id: 105497
+name: tokonoma
+names:
+  - lang: ja
+    role: original
+    text: "{床の間|とこのま}"
+  - lang: en
+    role: translation
+    text: display alcove
+category: architecture
+definition: A raised alcove in a reception room for hanging a scroll and placing flowers or an object.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 240–241

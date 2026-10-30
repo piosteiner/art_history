@@ -1,0 +1,15 @@
+public_id: 105457
+name: haiga
+names:
+  - lang: ja
+    role: original
+    text: "{俳画|はいが}"
+  - lang: en
+    role: translation
+    text: haiku painting
+category: style
+definition: A sketchy painting that accompanies a haiku, made by the poet as a spontaneous response to the verse.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 332–333

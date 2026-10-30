@@ -1,0 +1,16 @@
+public_id: 105479
+name: nishiki-e
+names:
+  - lang: ja
+    role: original
+    text: "{錦絵|にしきえ}"
+  - lang: en
+    role: translation
+    text: brocade picture
+category: technique
+parent: woodblock-print
+definition: The full-colour woodblock print, with a separate block for each colour, first produced commercially in Edo in 1765–66 after the calendar prints of Suzuki Harunobu’s circle.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 280–281

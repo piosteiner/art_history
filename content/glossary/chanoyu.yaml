@@ -1,0 +1,15 @@
+public_id: 105447
+name: chanoyu
+names:
+  - lang: ja
+    role: original
+    text: "{茶の湯|ちゃのゆ}"
+  - lang: en
+    role: translation
+    text: tea ceremony
+category: other
+definition: "The tea ceremony: the ritual preparation and serving of powdered tea, with its own architecture, utensils and aesthetic of wabi."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 230–231

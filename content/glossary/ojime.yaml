@@ -1,0 +1,15 @@
+public_id: 105481
+name: ojime
+names:
+  - lang: ja
+    role: original
+    text: "{緒締|おじめ}"
+  - lang: en
+    role: translation
+    text: cord fastener
+category: object type
+definition: A bead on the cord of an inrō that holds its compartments closed.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 300–301

@@ -1,0 +1,15 @@
+public_id: 105490
+name: shoin-zukuri
+names:
+  - lang: ja
+    role: original
+    text: "{書院造|しょいんづくり}"
+  - lang: en
+    role: translation
+    text: shoin style
+category: architecture
+definition: The residential style of the warrior class from the late Muromachi period, built around the study (shoin) with tokonoma, staggered shelves, tatami floors and sliding doors — the basis of the traditional Japanese house.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 240–241

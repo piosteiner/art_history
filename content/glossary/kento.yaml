@@ -1,0 +1,16 @@
+public_id: 105467
+name: kentō
+names:
+  - lang: ja
+    role: original
+    text: "{見当|けんとう}"
+  - lang: en
+    role: translation
+    text: register mark
+category: technique
+parent: woodblock-print
+definition: The cuts at the edge of each woodblock that hold the paper in the same place for every colour block, so that the colours fall within the outlines.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 282–283

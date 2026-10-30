@@ -1,0 +1,15 @@
+public_id: 105476
+name: mokkotsu
+names:
+  - lang: ja
+    role: original
+    text: "{没骨|もっこつ}"
+  - lang: en
+    role: translation
+    text: boneless method
+category: technique
+definition: Painting without ink outlines, forms built from areas of colour or ink alone; of Chinese origin, used by Sōtatsu and Kōrin.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 314–315

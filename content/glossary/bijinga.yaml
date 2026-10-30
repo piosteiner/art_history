@@ -1,0 +1,15 @@
+public_id: 105445
+name: bijinga
+names:
+  - lang: ja
+    role: original
+    text: "{美人画|びじんが}"
+  - lang: en
+    role: translation
+    text: pictures of beautiful women
+category: iconography
+definition: Paintings and prints of beautiful women, above all courtesans; a main genre of ukiyo-e from the 17th century.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 278–279

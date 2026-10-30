@@ -1,0 +1,15 @@
+public_id: 105446
+name: bunjinga
+names:
+  - lang: ja
+    role: original
+    text: "{文人画|ぶんじんが}"
+  - lang: en
+    role: translation
+    text: literati painting
+category: style
+definition: Painting after the ideal of the Chinese scholar-amateurs, landscapes and the “four gentlemen” in ink and light colour; in Japan from the 18th century, also called nanga (“southern painting”).
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 326–327

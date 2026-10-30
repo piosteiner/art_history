@@ -1,0 +1,15 @@
+public_id: 105478
+name: netsuke
+names:
+  - lang: ja
+    role: original
+    text: "{根付|ねつけ}"
+  - lang: en
+    role: translation
+    text: toggle
+category: object type
+definition: A small carved toggle, classically of ivory or bone, at the end of the cord from which an inrō or pouch hung from the sash.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 300–301

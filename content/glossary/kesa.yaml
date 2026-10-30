@@ -1,0 +1,15 @@
+public_id: 105468
+name: kesa
+names:
+  - lang: ja
+    role: original
+    text: "{袈裟|けさ}"
+  - lang: en
+    role: translation
+    text: Buddhist robe
+category: object type
+definition: The patchwork robe of a Buddhist monk, in Japan often made of precious silks given to temples.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 310–311

@@ -1,0 +1,15 @@
+public_id: 105488
+name: shinden-zukuri
+names:
+  - lang: ja
+    role: original
+    text: "{寝殿造|しんでんづくり}"
+  - lang: en
+    role: translation
+    text: shinden style
+category: architecture
+definition: "The Heian-period mansion of the aristocracy: a main hall (shinden) facing south onto a garden with a pond, linked by corridors to side halls."
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 104–105

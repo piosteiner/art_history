@@ -1,0 +1,15 @@
+public_id: 105503
+name: yosegi-zukuri
+names:
+  - lang: ja
+    role: original
+    text: "{寄木造|よせぎづくり}"
+  - lang: en
+    role: translation
+    text: joined-block construction
+category: technique
+definition: Building a statue from several hollowed blocks of wood joined together, which allowed large, light figures and workshop production; perfected in the 11th century.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 134–135

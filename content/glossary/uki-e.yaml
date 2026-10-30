@@ -1,0 +1,15 @@
+public_id: 105499
+name: uki-e
+names:
+  - lang: ja
+    role: original
+    text: "{浮絵|うきえ}"
+  - lang: en
+    role: translation
+    text: perspective picture
+category: technique
+definition: A print or picture using Western one-point perspective, so that the view seems to “float” into depth.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 288–289

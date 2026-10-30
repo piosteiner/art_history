@@ -1,0 +1,15 @@
+public_id: 105452
+name: dogū
+names:
+  - lang: ja
+    role: original
+    text: "{土偶|どぐう}"
+  - lang: en
+    role: translation
+    text: clay figurine
+category: object type
+definition: Small clay figurines of the Jōmon period, mostly female, probably used in rituals of fertility and healing; many were broken on purpose.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 16–17

@@ -1,0 +1,15 @@
+public_id: 105470
+name: kōshibyō
+names:
+  - lang: ja
+    role: original
+    text: "{孔子廟|こうしびょう}"
+  - lang: en
+    role: translation
+    text: Confucian temple
+category: architecture
+definition: A temple for the worship of Confucius, built by the Tokugawa and the domains for their schools of Confucian learning.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 306–307

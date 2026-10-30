@@ -1,0 +1,15 @@
+public_id: 105482
+name: Ōtsu-e
+names:
+  - lang: ja
+    role: original
+    text: "{大津絵|おおつえ}"
+  - lang: en
+    role: translation
+    text: Ōtsu pictures
+category: style
+definition: Cheap, roughly painted folk pictures sold to travellers on the Tōkaidō, named after the town of Ōtsu; at first Buddhist icons, later also popular and satirical subjects.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 278–279

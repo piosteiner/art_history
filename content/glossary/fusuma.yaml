@@ -1,0 +1,15 @@
+public_id: 105455
+name: fusuma
+names:
+  - lang: ja
+    role: original
+    text: "{襖|ふすま}"
+  - lang: en
+    role: translation
+    text: sliding door
+category: architecture
+definition: Opaque sliding panels of paper over a wooden frame that divide the rooms of a Japanese house, often painted.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 228–229

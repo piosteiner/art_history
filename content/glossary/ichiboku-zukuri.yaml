@@ -1,0 +1,15 @@
+public_id: 105462
+name: ichiboku-zukuri
+names:
+  - lang: ja
+    role: original
+    text: "{一木造|いちぼくづくり}"
+  - lang: en
+    role: translation
+    text: single-block construction
+category: technique
+definition: Carving a statue — or at least its core — from a single block of wood; the usual method until the 10th century.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 132–133

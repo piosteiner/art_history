@@ -7,7 +7,7 @@ names:
 kind: military campaign
 period: 1568
 place: kyoto
-description_md: In 1568 Oda Nobunaga entered Kyoto with Ashikaga Yoshiaki, whom he made shōgun — the usual end of the Sengoku period, and one of the dates for the beginning of the Azuchi-Momoyama period[[source/wikipedia-ja-sengoku-jidai|織田信長の上洛（永禄11年、1568年）]][[source/wikipedia-ja-azuchi-momoyama-jidai|織田信長が足利義昭を奉じて京都に上洛した永禄11年（1568年）]].
+description_md: In 1568 Oda Nobunaga entered Kyoto with Ashikaga Yoshiaki, whom he made [[shogun]] — the usual end of the Sengoku period, and one of the dates for the beginning of the Azuchi-Momoyama period[[source/wikipedia-ja-sengoku-jidai|織田信長の上洛（永禄11年、1568年）]][[source/wikipedia-ja-azuchi-momoyama-jidai|織田信長が足利義昭を奉じて京都に上洛した永禄11年（1568年）]].
 relationships:
   - type: concerns
     to: movement/momoyama-period

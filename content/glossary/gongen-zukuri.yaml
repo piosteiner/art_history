@@ -1,0 +1,15 @@
+public_id: 105456
+name: gongen-zukuri
+names:
+  - lang: ja
+    role: original
+    text: "{権現造|ごんげんづくり}"
+  - lang: en
+    role: translation
+    text: mausoleum style
+category: architecture
+definition: A shrine plan in which worship hall and main hall are linked by a connecting room (ishi-no-ma), as at Ieyasu’s mausoleum, the Tōshōgū at Nikkō; named after his title Tōshō Daigongen.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 305–306

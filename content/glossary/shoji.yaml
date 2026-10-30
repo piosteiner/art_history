@@ -1,0 +1,15 @@
+public_id: 105491
+name: shōji
+names:
+  - lang: ja
+    role: original
+    text: "{障子|しょうじ}"
+  - lang: en
+    role: translation
+    text: paper screen
+category: architecture
+definition: A sliding door or window of translucent paper on a wooden lattice.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 232–233

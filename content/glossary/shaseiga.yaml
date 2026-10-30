@@ -1,0 +1,15 @@
+public_id: 105486
+name: shaseiga
+names:
+  - lang: ja
+    role: original
+    text: "{写生画|しゃせいが}"
+  - lang: en
+    role: translation
+    text: painting from life
+category: style
+definition: Painting based on direct observation and sketching from nature, as practised by Itō Jakuchū and the Maruyama–Shijō school.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 322–323

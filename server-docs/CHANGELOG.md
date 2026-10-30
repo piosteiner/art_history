@@ -4,6 +4,20 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: 62 glossary terms from Mason, History of Japanese Art
+- **What:** terms from Mason's glossary (pp. 394–403) and the chapters that introduce them, each with an own short
+  definition (no copied text), Japanese name with reading, English translation and the Mason page: prehistory
+  (haniwa, dogū), formats and styles (emakimono, kakemono, yamato-e, bunjinga, zenga, haiga, shaseiga, yōfūga, Ōtsu-e,
+  bijinga, moji-e), techniques (tarashikomi, mokkotsu, tsuketate, ichiboku-/yosegi-zukuri, natabori, maki-e,
+  togidashi-e, raden), prints (nishiki-e, surimono, uki-e, megane-e, shin hanga, sōsaku hanga, ōban, chūban, hosoban,
+  hashira-e, kentō, baren — under "woodblock print"; hōshō under "japan paper"), objects (inrō, netsuke, ojime, ema,
+  kesa, kyōyaki, raku), architecture (shinden-, shoin-, gongen-zukuri, fusuma, shōji, tokonoma, chigaidana, tahōtō,
+  kōshibyō), religion (raigō, mandala, kōan), and wabi, chanoyu, ikebana, bakufu, shōgun, daimyō, chōnin, insei.
+  Two artworks of type "hanging scroll" now link to "kakemono" (by its translation). The first mention of shōgun,
+  insei, bakufu, daimyō in 13 period/event texts links the term.
+- **Why:** owner, 2026-10-30.
+- **Revert:** delete the terms in the admin (the artworks' type falls back to text).
+
 ### Data: turning points of the Japanese and Korean periods as events
 - **What:** 44 events — 29 from Wikidata (`scripts/from-wikidata.js event …`: Battle of Dan-no-ura, Siege of Kamakura,
   Meitoku Peace Accord, Ōnin War, Sekigahara, Siege of Osaka, Taisei hōkan, Meiji Restoration, Japan–Korea treaties,

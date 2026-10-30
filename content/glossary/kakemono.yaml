@@ -1,0 +1,15 @@
+public_id: 105466
+name: kakemono
+names:
+  - lang: ja
+    role: original
+    text: "{掛物|かけもの}"
+  - lang: en
+    role: translation
+    text: hanging scroll
+category: format
+definition: A painting or calligraphy mounted as a vertical hanging scroll, rolled up when not displayed; in a house it is hung in the tokonoma.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 220–221

@@ -1,0 +1,15 @@
+public_id: 105477
+name: natabori
+names:
+  - lang: ja
+    role: original
+    text: "{鉈彫|なたぼり}"
+  - lang: en
+    role: translation
+    text: hatchet carving
+category: technique
+definition: Wood sculpture whose surface is left unfinished, so that the grain and the marks of the hatchet or chisel show; revived by the priest-sculptor Enkū.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 308–309

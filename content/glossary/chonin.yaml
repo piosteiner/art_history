@@ -1,0 +1,15 @@
+public_id: 105449
+name: chōnin
+names:
+  - lang: ja
+    role: original
+    text: "{町人|ちょうにん}"
+  - lang: en
+    role: translation
+    text: townspeople
+category: other
+definition: The townspeople — artisans and merchants — at the bottom of the Confucian order but, in the Edo period, the patrons of ukiyo-e, Kabuki and much of its art.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 272–273

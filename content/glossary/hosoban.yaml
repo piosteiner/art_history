@@ -1,0 +1,16 @@
+public_id: 105461
+name: hosoban
+names:
+  - lang: ja
+    role: original
+    text: "{細判|ほそばん}"
+  - lang: en
+    role: translation
+    text: narrow size
+category: format
+parent: woodblock-print
+definition: A narrow vertical woodblock print, about 35 × 15 cm, common for actor prints.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 282–283

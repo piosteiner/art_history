@@ -1,0 +1,15 @@
+public_id: 105485
+name: raku
+names:
+  - lang: ja
+    role: original
+    text: "{楽焼|らくやき}"
+  - lang: en
+    role: translation
+    text: raku ware
+category: object type
+definition: Hand-shaped, low-fired tea bowls and wares developed in the Momoyama period for the tea masters around Sen no Rikyū.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 296–297

@@ -2,7 +2,7 @@ public_id: 105373
 name: Appointment of Tokugawa Ieyasu as shōgun
 kind: appointment
 period: 1603-03-24
-description_md: Tokugawa Ieyasu was appointed shōgun on 24 March 1603 and established his shogunate at Edo[[source/history-of-japanese-art|p. 272]][[source/wikipedia-ja-edo-jidai|1603年3月24日…徳川家康が征夷大将軍に任命]] — the usual beginning of the Edo period and end of the Azuchi-Momoyama period.
+description_md: Tokugawa Ieyasu was appointed [[shogun]] on 24 March 1603 and established his shogunate at Edo[[source/history-of-japanese-art|p. 272]][[source/wikipedia-ja-edo-jidai|1603年3月24日…徳川家康が征夷大将軍に任命]] — the usual beginning of the Edo period and end of the Azuchi-Momoyama period.
 relationships:
   - type: concerns
     to: movement/edo-period

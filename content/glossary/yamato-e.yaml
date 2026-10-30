@@ -1,0 +1,15 @@
+public_id: 105501
+name: yamato-e
+names:
+  - lang: ja
+    role: original
+    text: "{大和絵|やまとえ}"
+  - lang: en
+    role: translation
+    text: Japanese-style painting
+category: style
+definition: Painting of Japanese subjects in a Japanese manner — bright mineral colours, courtly themes, the seasons — as opposed to painting in the Chinese manner (kara-e); it took shape in the Heian period.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 112–113, 144–145

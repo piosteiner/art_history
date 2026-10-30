@@ -1,0 +1,15 @@
+public_id: 105500
+name: wabi
+names:
+  - lang: ja
+    role: original
+    text: "{侘び|わび}"
+  - lang: en
+    role: translation
+    text: austere simplicity
+category: other
+definition: The aesthetic of simplicity, austerity and the beauty of the imperfect, central to the tea ceremony.
+sources:
+  definition:
+    - source: history-of-japanese-art
+      locator: pp. 212–213
