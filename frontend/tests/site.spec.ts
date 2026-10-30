@@ -657,9 +657,9 @@ test('start map: routes of the selection, a place lists what happened there', as
     const m = (window as unknown as { __maps?: { getSource(id: string): unknown; querySourceFeatures(id: string): unknown[] }[] }).__maps?.at(-1);
     return !!m?.getSource('ov-routes') && m.querySourceFeatures('ov-routes').length > 0; // drawn, not just added
   });
-  const routes = await page.evaluate(() => (window as unknown as { __maps: { querySourceFeatures(id: string): { properties: { name: string } }[] }[] }).__maps.at(-1)!
-    .querySourceFeatures('ov-routes').map((f) => f.properties.name));
-  expect(routes).toContain('Vincent van Gogh');
+  // polled: on a slow machine the first routes drawn may not be all of them yet (CI 2026-10-30)
+  await expect.poll(() => page.evaluate(() => (window as unknown as { __maps: { querySourceFeatures(id: string): { properties: { name: string } }[] }[] }).__maps.at(-1)!
+    .querySourceFeatures('ov-routes').map((f) => f.properties.name)), { timeout: 15000 }).toContain('Vincent van Gogh');
   await page.locator('.maplibregl-canvas').first().scrollIntoViewIfNeeded();
   const atRest = () => page.waitForFunction(() => {
     const m = (window as unknown as { __maps: { loaded(): boolean; isMoving(): boolean }[] }).__maps.at(-1)!;
