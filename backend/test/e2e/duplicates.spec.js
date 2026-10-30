@@ -59,6 +59,7 @@ test('"Untitled" is no evidence: other creator → created; same creator and dim
   await newUntitled('untitled-test-b', 'vincent-van-gogh');
   await expect(userA).toHaveURL(/\/artworks\/untitled-test-b\?done=created/);
   sql("DELETE FROM artworks WHERE slug = 'untitled-test-b'");
+  await settled();   // the worker re-reads the first "Untitled" after the other one came and went (failed once when not waited for)
   await newUntitled('untitled-test-b', 'katsushika-hokusai');
   await expect(userA.locator('.dup-confirm')).toContainText('same creator, same dimensions');
 });
