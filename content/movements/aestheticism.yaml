@@ -1,10 +1,26 @@
 public_id: 103299
 name: Aestheticism
+names:
+  - Aesthetic Movement
+  - lang: fr
+    role: translation
+    text: esthétisme
+  - lang: de
+    role: translation
+    text: Ästhetizismus
+  - lang: it
+    role: translation
+    text: estetismo
+  - lang: es
+    role: translation
+    text: esteticismo
 kind: movement
 period: 1870/1879
 wikidata_id: Q256922
 metadata:
   sources: [Wikidata Q256922 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4000629-3
 sources:
   kind:
     - accessed: 2026-10-28

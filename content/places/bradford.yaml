@@ -1,0 +1,24 @@
+public_id: 105611
+name: Bradford
+names: ["Bradford, Pennsylvania", "Bradford, PA"]
+kind: settlement
+designation: city in Pennsylvania
+parent: pennsylvania
+country_code: US
+location: [-78.64472, 41.95917]
+wikidata_id: Q662409
+metadata:
+  sources: [Wikidata Q662409 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q662409
+  parent:
+    - accessed: 2026-10-30
+      property: P131
+      wikidata: Q662409
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q662409

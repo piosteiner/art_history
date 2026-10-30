@@ -1,5 +1,9 @@
 public_id: 103041
 name: Austria–Hungary
+names:
+  - lang: de
+    role: translation
+    text: Österreich-Ungarn
 period: 1 March 1867–11 November 1918
 wikidata_id: Q28513
 metadata:

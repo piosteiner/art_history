@@ -69,6 +69,12 @@ relationships:
       - accessed: 2026-10-28
         property: P135
         wikidata: Q148458
+  - type: founded
+    to: movement/barbizon-school
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q143357
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Jean-FrancoisMillet%28Nadar%29.jpg/1280px-Jean-FrancoisMillet%28Nadar%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Jean-FrancoisMillet(Nadar).jpg

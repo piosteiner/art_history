@@ -1,5 +1,9 @@
 public_id: 103214
 name: Barbizon school
+names:
+  - lang: nl
+    role: translation
+    text: School van Barbizon
 kind: movement
 wikidata_id: Q143357
 metadata:

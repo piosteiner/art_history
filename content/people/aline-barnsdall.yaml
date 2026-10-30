@@ -2,7 +2,9 @@ public_id: 100453
 name: Aline Barnsdall
 given_name: Aline
 family_name: Barnsdall
+names: [Louise Aline Barnsdall]
 kind: person
+occupations: [heiress]
 birth: 1882-04-01
 death: 1946-12-18
 wikidata_id: Q4726749
@@ -14,6 +16,12 @@ relationships:
     sources:
       - accessed: 2026-10-30
         property: P27
+        wikidata: Q4726749
+  - type: born_in
+    to: place/bradford
+    sources:
+      - accessed: 2026-10-30
+        property: P19
         wikidata: Q4726749
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Aline_Barnsdall.jpg
@@ -36,4 +44,8 @@ sources:
   death:
     - accessed: 2026-10-30
       property: P570
+      wikidata: Q4726749
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
       wikidata: Q4726749

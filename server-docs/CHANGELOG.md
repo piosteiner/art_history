@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Schmalkaldic War placed; US places checked
+- **Schmalkaldic War** (created from Wikidata by the owner): the Holy Roman Empire is a polity, not a place (places are
+  geography, polities lie over them in time), so the event's place is Germany — fought on the Danube and in Saxony —
+  with `concerns` → Holy Roman Empire; period the whole war, 10 July 1546 – 23 May 1547 (Julian; stored Gregorian),
+  was Wikidata's point in time only; kind war. Cited Wikidata, Wikipedia.
+- **US:** all settlements already under their state (or county) since the hierarchy (2026-10-29); Bradford (Aline
+  Barnsdall's birthplace) moved from the country to Pennsylvania as a settlement; the 16 states designated "state of
+  the United States".
+- **Why:** owner, 2026-10-30. **Revert:** admin history.
+
 ### Quality warnings, second round (migration 177 + data)
 - **177:** `no_relationships` reads `graph_links` (stored + derived edges) instead of `relationships` — 528 of 571
   entries "not connected to anything" were connected through provenance, building phases or as creators; 44 remain.

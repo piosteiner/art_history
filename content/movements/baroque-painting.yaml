@@ -1,5 +1,21 @@
 public_id: 102961
 name: Baroque painting
+names:
+  - lang: nl
+    role: translation
+    text: barokke schilderkunst
+  - lang: fr
+    role: translation
+    text: peinture baroque
+  - lang: de
+    role: translation
+    text: barocke Malerei
+  - lang: it
+    role: translation
+    text: pittura barocca
+  - lang: es
+    role: translation
+    text: pintura del Barroco
 kind: movement
 period: 1501/1600
 wikidata_id: Q808561

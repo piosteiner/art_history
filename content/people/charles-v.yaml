@@ -48,6 +48,13 @@ death: 1558-10-01
 wikidata_id: Q32500
 metadata:
   sources: [Wikidata Q32500 (retrieved 2026-10-19)]
+relationships:
+  - type: participated_in
+    to: event/schmalkaldic-war
+    sources:
+      - accessed: 2026-10-30
+        property: P710
+        wikidata: Q168556
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg/1280px-Portrait_of_Charles_V%2C_Holy_Roman_Emperor%2C_seated_%281500%E2%80%931558%29%2C_formerly_attributed_to_Titian_%28Alte_Pinakothek%2C_Munich%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Portrait_of_Charles_V,_Holy_Roman_Emperor,_seated_(1500%E2%80%931558),_formerly_attributed_to_Titian_(Alte_Pinakothek,_Munich).jpg

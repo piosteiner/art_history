@@ -2,6 +2,10 @@ public_id: 101132
 name: Mari Bárbola
 given_name: Mari
 family_name: Bárbola
+names:
+  - lang: de
+    role: translation
+    text: Maria Bárbola
 kind: person
 birth: 1601/1700
 wikidata_id: Q11690939

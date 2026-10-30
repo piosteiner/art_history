@@ -1,5 +1,9 @@
 public_id: 102247
 name: Austrian Empire
+names:
+  - lang: de
+    role: translation
+    text: Kaisertum Österreich
 period: 1804-08-11/1867-06-08
 wikidata_id: Q131964
 metadata:

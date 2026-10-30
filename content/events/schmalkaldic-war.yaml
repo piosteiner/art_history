@@ -1,0 +1,43 @@
+public_id: 105612
+name_lang: de
+name: Schmalkaldischer Krieg
+names:
+  - lang: en
+    role: translation
+    text: Schmalkaldic War
+  - lang: es
+    role: translation
+    text: Guerra de Esmalcalda
+kind: war
+parent: european-wars-of-religion
+period: 1546-07-20/1547-06-02
+period_label: 10 July 1546 – 23 May 1547 (Julian calendar)
+place: germany
+wikidata_id: Q168556
+metadata:
+  sources: [Wikidata Q168556 (retrieved 2026-10-30)]
+relationships:
+  - type: concerns
+    to: polity/holy-roman-empire
+    notes_md: Fought within the territories of the Holy Roman Empire.
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Schmalkaldischer_Krieg_anagoria.JPG/1280px-Schmalkaldischer_Krieg_anagoria.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Schmalkaldischer_Krieg_anagoria.JPG
+    license: Public domain
+    credit: Unknown author
+identifiers:
+  gnd: 4179773-5
+sources:
+  place:
+    - note: “fought within the territories of the Holy Roman Empire” — the campaign on the Danube, then in Saxony
+      source: wikipedia-en-schmalkaldic-war
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q168556
+  period:
+    - accessed: 2026-10-30
+      property: P580
+      wikidata: Q168556
+    - note: “July 1546 – May 1547”
+      source: wikipedia-en-schmalkaldic-war

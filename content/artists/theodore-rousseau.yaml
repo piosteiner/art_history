@@ -1,0 +1,79 @@
+public_id: 105610
+name: Théodore Rousseau
+given_name: Théodore
+family_name: Rousseau
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Étienne Pierre Théodore Rousseau
+birth: 1812-04-15
+death: 1867-12-22
+wikidata_id: Q310025
+metadata:
+  sources: [Wikidata Q310025 (retrieved 2026-10-30)]
+relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-30
+        property: P27
+        wikidata: Q310025
+  - type: born_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-30
+        property: P19
+        wikidata: Q310025
+  - type: died_in
+    to: place/barbizon
+    sources:
+      - accessed: 2026-10-30
+        property: P20
+        wikidata: Q310025
+  - type: member_of
+    to: movement/barbizon-school
+    sources:
+      - accessed: 2026-10-30
+        property: P463
+        wikidata: Q310025
+  - type: associated_with
+    to: movement/barbizon-school
+    sources:
+      - accessed: 2026-10-30
+        property: P135
+        wikidata: Q310025
+  - type: founded
+    to: movement/barbizon-school
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q143357
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bb/Theodore_Rousseau.jpg/1280px-Theodore_Rousseau.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Theodore_Rousseau.jpg
+    license: Public domain
+    credit: Nadar
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/49/Buste_Th._Rousseau_n2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Buste_Th._Rousseau_n2.jpg
+    license: CC0
+    credit: Henri-Louis Levasseur (french, 1853-1934)
+identifiers:
+  bnf: 12141734x
+  dome: "3463"
+  gnd: "118603434"
+  idref: "029886546"
+  kulturnav: 7db024ed-ee4a-46a5-a095-e5df0e099eaa
+  lc: n88606756
+  rkd: "68566"
+  ulan: "500019946"
+  viaf: "17258812"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q310025
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q310025

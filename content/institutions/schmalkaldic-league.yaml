@@ -1,0 +1,32 @@
+public_id: 105614
+name: Schmalkaldic League
+names:
+  - lang: de
+    role: translation
+    text: Schmalkaldischer Bund
+kind: military alliance
+founded: 1531-03-09
+wikidata_id: Q155024
+metadata:
+  sources: [Wikidata Q155024 (retrieved 2026-10-30)]
+relationships:
+  - type: participated_in
+    to: event/schmalkaldic-war
+    sources:
+      - accessed: 2026-10-30
+        property: P710
+        wikidata: Q168556
+identifiers:
+  bnf: 11581413h
+  gnd: 4133026-2
+  idref: "106908626"
+  viaf: "127370119"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q155024
+  founded:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q155024

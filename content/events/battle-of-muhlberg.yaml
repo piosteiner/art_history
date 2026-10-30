@@ -1,11 +1,33 @@
 public_id: 101174
 name: Battle of Mühlberg
+names:
+  - Marina in the night
+  - lang: de
+    role: translation
+    text: Schlacht bei Mühlberg
+parent: schmalkaldic-war
 period: 1547-04-25
+place: germany
 location: [13.2167, 51.4331]
 wikidata_id: Q661327
 metadata:
   sources: [Wikidata Q661327 (retrieved 2026-10-19)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/ba/Schlacht_bei_M%C3%BChlberg_1547.jpg/1280px-Schlacht_bei_M%C3%BChlberg_1547.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schlacht_bei_M%C3%BChlberg_1547.jpg
+    license: Public domain
+    credit: LUIS DE AVILA Y ZUNIGA (c.1490 C. 1560)
+identifiers:
+  gnd: 4455679-2
 sources:
+  place:
+    - accessed: 2026-10-30
+      property: P276
+      wikidata: Q661327
+  parent:
+    - accessed: 2026-10-30
+      property: P361
+      wikidata: Q661327
   period:
     - accessed: 2026-10-19
       property: P585

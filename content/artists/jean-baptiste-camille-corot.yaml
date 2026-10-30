@@ -123,6 +123,12 @@ relationships:
       - accessed: 2026-10-18
         property: P135
         wikidata: Q148475
+  - type: founded
+    to: movement/barbizon-school
+    sources:
+      - accessed: 2026-10-30
+        property: P112
+        wikidata: Q143357
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Jean-Baptiste-Camille_Corot_c1850.png/1280px-Jean-Baptiste-Camille_Corot_c1850.png
     source_url: https://commons.wikimedia.org/wiki/File:Jean-Baptiste-Camille_Corot_c1850.png
