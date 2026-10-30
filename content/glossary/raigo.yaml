@@ -7,8 +7,26 @@ names:
   - lang: en
     role: translation
     text: welcoming descent
+  - lang: zh
+    role: translation
+    text: 接引图
+  - lang: ru
+    role: translation
+    text: Райго-дзу
 category: iconography
 definition: The descent of the Buddha Amida with his bodhisattvas to welcome the soul of a dying believer to his Pure Land; a theme of Heian and Kamakura painting.
+wikidata_id: Q2019420
+metadata:
+  sources: [Wikidata Q2019420 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/%E9%98%BF%E5%BC%A5%E9%99%80%E8%81%96%E8%A1%86%E6%9D%A5%E8%BF%8E%E5%9B%B3-Welcoming_Descent_of_Amida_and_Bodhisattvas_MET_DT5220.jpg/1280px-%E9%98%BF%E5%BC%A5%E9%99%80%E8%81%96%E8%A1%86%E6%9D%A5%E8%BF%8E%E5%9B%B3-Welcoming_Descent_of_Amida_and_Bodhisattvas_MET_DT5220.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E9%98%BF%E5%BC%A5%E9%99%80%E8%81%96%E8%A1%86%E6%9D%A5%E8%BF%8E%E5%9B%B3-Welcoming_Descent_of_Amida_and_Bodhisattvas_MET_DT5220.jpg
+    license: CC0
+    credit: Unknown author
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b5/The_Raig%C5%8D_of_the_Amida_Triad_and_the_Twenty-five_Bodhisattvas%2C_Honolulu_Museum_of_Art.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:The_Raig%C5%8D_of_the_Amida_Triad_and_the_Twenty-five_Bodhisattvas,_Honolulu_Museum_of_Art.jpg
+    license: CC0
+    credit: Hiart
 sources:
   definition:
     - source: history-of-japanese-art

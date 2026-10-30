@@ -11,6 +11,7 @@ names:
 creator: pieter-brueghel-the-elder
 attribution_label: after Pieter Bruegel the Elder (copy of the engraving of 1557)
 created: after 1619
+conceived: 1556
 kind: print
 medium: Kupferstich
 dimensions: [22, 29.6]
@@ -59,6 +60,10 @@ sources:
       note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger: Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt 22 x 29,6 cm, Platte 21,8 x 29,1 cm · DG1955/153 · 3. Zustand der Kopie“"
       source: albertina-sammlungen-online
       accessed: 2026-10-30
+  conceived:
+    - note: "Bruegel's design: the drawing „Die großen Fische fressen die kleinen“, dated 1556 (Albertina, inv. 7875); the print “P. Breugel inven:”"
+      source: albertina-sammlungen-online
+      locator: "7875"
   dimensions:
     - url: https://sammlungenonline.albertina.at/de/objects/122452/grandibus-exigui-sunt-pisces-piscibus-esca
       note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger: Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt 22 x 29,6 cm, Platte 21,8 x 29,1 cm · DG1955/153 · 3. Zustand der Kopie“"

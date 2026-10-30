@@ -7,8 +7,19 @@ names:
   - lang: en
     role: translation
     text: Zen painting
+  - lang: ru
+    role: translation
+    text: Дзэнга
 category: style
 definition: Ink paintings and calligraphy by Zen monks as an aid to meditation, often on a kōan, usually given as gifts; Hakuin Ekaku is its great master.
+wikidata_id: Q8069073
+metadata:
+  sources: [Wikidata Q8069073 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/Bodhidarma.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bodhidarma.jpg
+    license: Public domain
+    credit: Hakuin Ekaku
 sources:
   definition:
     - source: history-of-japanese-art

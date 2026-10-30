@@ -8,6 +8,7 @@ materials: [oil paint, canvas]
 dimensions: [73.3, 53.8]
 institution: van-gogh-museum
 web_url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
+on_loan: true
 relationships:
   - type: created_in
     to: place/paris
@@ -60,6 +61,14 @@ provenance:
     place: amsterdam
     label: on loan until the museum opened
     sources: ["Van Gogh Museum, Amsterdam, s0114V1962 (Bridge in the Rain (after Hiroshige)), provenance"]
+  - owner: institution/van-gogh-museum
+    role: custodian
+    acquired: 1973-06-02
+    method: transfer
+    notes_md: Permanent loan from the Vincent van Gogh Foundation, from the museum's opening.
+    sources:
+      - note: Van Gogh Museum, Amsterdam (Vincent van Gogh Foundation)
+        source: van-gogh-museum-collection
 sources:
   medium:
     - url: https://www.vangoghmuseum.nl/en/collection/s0114V1962

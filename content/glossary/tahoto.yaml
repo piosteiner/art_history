@@ -7,8 +7,25 @@ names:
   - lang: en
     role: translation
     text: treasure pagoda
+  - lang: zh
+    role: translation
+    text: 多寶塔
+  - lang: ko
+    role: translation
+    text: 다보탑
+  - lang: ru
+    role: translation
+    text: Тахото
 category: architecture
 definition: A two-storeyed pagoda with a round core under a square roof, typical of the esoteric Shingon and Tendai schools.
+wikidata_id: Q2451601
+metadata:
+  sources: [Wikidata Q2451601 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Ishiyamadera29n4272.jpg/1280px-Ishiyamadera29n4272.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ishiyamadera29n4272.jpg
+    license: CC BY 2.5
+    credit: 663highland
 sources:
   definition:
     - source: history-of-japanese-art

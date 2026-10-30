@@ -7,7 +7,30 @@ names:
   - lang: ja-Latn
     role: romanization
     text: Nō
+  - nō drama
+  - nō play
+  - lang: nl
+    role: translation
+    text: no-spel
+  - lang: zh
+    role: translation
+    text: 能剧
+  - lang: ko
+    role: translation
+    text: 노
+  - lang: ru
+    role: translation
+    text: но
 category: performing arts
 definition: Japanese masked dance-drama, given its form in the 14th century by Kan’ami and his son Zeami; the oldest major Japanese theatre still regularly performed.
 description_md: "Japan’s classical dance-drama, performed since the 14th century and the oldest of its major theatre arts still regularly played[[source/wikipedia-en-noh|“a major form of classical Japanese dance-drama that has been performed since the 14th century. It is Japan’s oldest major theater art that is still regularly performed today”]]. Kan’ami and his son Zeami gave it its present form in the Muromachi period[[source/wikipedia-en-noh|“Kan’ami Kiyotsugu and his son Zeami Motokiyo reinterpreted various traditional performing arts and completed Noh in a significantly different form from the traditional one”]]. Masks, costumes and stylised gestures carry the roles — ghosts, women, deities, demons[[source/wikipedia-en-noh|“Emotions are primarily conveyed by stylized conventional gestures while the iconic masks represent specific roles such as ghosts, women, deities, and demons”]]; comic kyōgen pieces are played between the Noh plays[[source/wikipedia-en-noh|“a full nōgaku program included several Noh plays with comedic kyōgen plays in between”]]. Inscribed by UNESCO as Nōgaku theatre in 2008[[source/wikipedia-en-noh|“Noh was inscribed in 2008 on the Representative List of the Intangible Cultural Heritage of Humanity by UNESCO as Nōgaku theatre”]]. A play: [[yoroboshi]]."
 wikidata_id: Q226887
+metadata:
+  sources: [Wikidata Q226887 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Noh_Performance_%28235951661%29.jpeg/1280px-Noh_Performance_%28235951661%29.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Noh_Performance_(235951661).jpeg
+    license: CC BY-SA 3.0
+    credit: Yoshiyuki Ito
+identifiers:
+  gnd: 4131488-8

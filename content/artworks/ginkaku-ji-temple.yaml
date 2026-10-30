@@ -7,8 +7,10 @@ names:
   - lang: ja
     role: translation
     text: 慈照寺
+attribution_label: Built for the shogun Ashikaga Yoshimasa; builders unknown
 created: 1465
 location: [135.79833, 35.02667]
+description_md: The retirement villa of Ashikaga Yoshimasa (1430–90), Yoshimitsu's grandson, in the Higashiyama (Eastern Hills) district of Kyoto, begun after the Ōnin War; later the temple Jishōji, nicknamed “Temple of the Silver Pavilion”. It is nothing like its so-called twin, the Kinkakuji[[source/history-of-japanese-art|pp. 170–171, 226–229]].
 wikidata_id: Q257473
 metadata:
   sources: [Wikidata Q257473 (retrieved 2026-10-24)]
@@ -20,6 +22,7 @@ images:
   - url: https://upload.wikimedia.org/wikipedia/commons/0/0b/GinkakujiTemple.jpg
     source_url: https://commons.wikimedia.org/wiki/File:GinkakujiTemple.jpg
     license: CC BY-SA 3.0
+    credit: Stéphane D'Alu, 2004
 identifiers:
   viaf: "158473397"
 sources:

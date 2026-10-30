@@ -7,8 +7,25 @@ names:
   - lang: en
     role: translation
     text: Japanese-style painting
+  - lang: zh
+    role: translation
+    text: 大和繪
+  - lang: ko
+    role: translation
+    text: 야마토에
+  - lang: ru
+    role: translation
+    text: Ямато-э
 category: style
 definition: Painting of Japanese subjects in a Japanese manner — bright mineral colours, courtly themes, the seasons — as opposed to painting in the Chinese manner (kara-e); it took shape in the Heian period.
+wikidata_id: Q597365
+metadata:
+  sources: [Wikidata Q597365 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Genji_emaki_azumaya.jpg/1280px-Genji_emaki_azumaya.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Genji_emaki_azumaya.jpg
+    license: Public domain
+    credit: Imperial court in Kyoto
 sources:
   definition:
     - source: history-of-japanese-art

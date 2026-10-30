@@ -1,6 +1,7 @@
 public_id: 100045
 name: Kōshō
 death: 1237
+active: early 13th century–1237
 relationships:
   - type: child_of
     to: artist/unkei
@@ -11,3 +12,8 @@ relationships:
       - note: “Unkei had six sons, all of whom became Buddhist sculptors. Sculptures by Tankei, Koben, and Kosho survive to this day.”
         source: tnm-unkei-exhibition-2017
         accessed: 2026-10-28
+sources:
+  active:
+    - note: one of Unkei's sons; the Priest Kūya, by Kōshō, early 13th century
+      source: history-of-japanese-art
+      locator: pp. 188–193

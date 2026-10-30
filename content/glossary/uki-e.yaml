@@ -7,8 +7,25 @@ names:
   - lang: en
     role: translation
     text: perspective picture
+  - lang: zh
+    role: translation
+    text: 浮繪
+  - lang: ko
+    role: translation
+    text: 우키에
+  - lang: ru
+    role: translation
+    text: Уки-э
 category: technique
 definition: A print or picture using Western one-point perspective, so that the view seems to “float” into depth.
+wikidata_id: Q3547879
+metadata:
+  sources: [Wikidata Q3547879 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Large_Perspective_Picture_of_Evening_Cool_by_Ryogoku_Bridge_by_Okumura_Masanobu.JPG/1280px-Large_Perspective_Picture_of_Evening_Cool_by_Ryogoku_Bridge_by_Okumura_Masanobu.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Large_Perspective_Picture_of_Evening_Cool_by_Ryogoku_Bridge_by_Okumura_Masanobu.JPG
+    license: Public domain
+    credit: Okumura Masanobu
 sources:
   definition:
     - source: history-of-japanese-art

@@ -7,8 +7,24 @@ names:
   - lang: en
     role: translation
     text: paper screen
+  - lang: ko
+    role: translation
+    text: 쇼지
+  - lang: ru
+    role: translation
+    text: Сёдзи
 category: architecture
 definition: A sliding door or window of translucent paper on a wooden lattice.
+wikidata_id: Q1069525
+metadata:
+  sources: [Wikidata Q1069525 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/150425_Ishitani_Residence_Chizu_Tottori_pref_Japan31n.jpg/1280px-150425_Ishitani_Residence_Chizu_Tottori_pref_Japan31n.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:150425_Ishitani_Residence_Chizu_Tottori_pref_Japan31n.jpg
+    license: CC BY 2.5
+    credit: 663highland
+identifiers:
+  gnd: 4769486-5
 sources:
   definition:
     - source: history-of-japanese-art

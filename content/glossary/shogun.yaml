@@ -4,8 +4,31 @@ names:
   - lang: ja
     role: original
     text: "{将軍|しょうぐん}"
+  - lang: ja
+    role: translation
+    text: 征夷大将軍
+  - lang: zh
+    role: translation
+    text: 征夷大將軍
+  - lang: ko
+    role: translation
+    text: 세이이타이쇼군
+  - lang: ru
+    role: translation
+    text: сёгун
 category: other
 definition: "Short for sei-i taishōgun, “barbarian-subduing great general”: the military ruler who headed the bakufu while the emperor reigned in name."
+description_md: military dictators of Japan, 1185–1868
+wikidata_id: Q131767
+metadata:
+  sources: [Wikidata Q131767 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Minamoto_no_Yoritomo.jpg/1280px-Minamoto_no_Yoritomo.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Minamoto_no_Yoritomo.jpg
+    license: Public domain
+    credit: Fujiwara no Takanobu
+identifiers:
+  gnd: 4322825-2
 sources:
   definition:
     - source: history-of-japanese-art

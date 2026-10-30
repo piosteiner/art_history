@@ -11,6 +11,7 @@ names:
     text: "{寫樂|しゃらく}"
   - Sharaku
 death: 1801
+active: 1794/1795
 biography_md: |-
   Sharaku had a very short period of production. He appeared in Spring 1794 and disappieared again after the New Year's performance 1795.[[source/history-of-japanese-art]], S. 286 
   Article from the Art Institute Chicago [Link](https://www.artic.edu/exhibitions/3198/masterworks-of-japanese-prints-toshusai-sharaku)
@@ -54,3 +55,7 @@ sources:
     - accessed: 2026-10-05
       property: P570
       wikidata: Q361174
+  active:
+    - note: Sharaku's prints of 1794; “his brief appearance as a printmaker in the 1790s”
+      source: history-of-japanese-art
+      locator: pp. 286–289

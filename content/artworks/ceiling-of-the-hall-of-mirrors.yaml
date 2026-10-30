@@ -13,7 +13,8 @@ location: [2.12033, 48.80483]
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/f/f1/Chateau_Versailles_Galerie_des_Glaces.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Chateau_Versailles_Galerie_des_Glaces.jpg
-    license: see Wikimedia Commons
+    license: CC BY-SA 3.0
+    credit: Myrabella (Wikimedia Commons), own work, 2011
 provenance:
   - owner: person/louis-xiv-of-france
     acquired: 1680

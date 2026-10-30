@@ -78,6 +78,13 @@ provenance:
         note: in the villa of Castello, with the Primavera
         place: florence
         document: Vasari, Vite (1550)
+  - owner_label: the Medici grand dukes
+    acquired: 1574-05-01
+    acquired_label: "1574"
+    method: inheritance
+    certainty: probable
+    notes_md: Cosimo I's successors as grand dukes, from his death; the inventory of the villa of Castello of 1598 lists the painting.
+    records:
       - date: "1598"
         note: the first mention in a villa inventory
         place: florence

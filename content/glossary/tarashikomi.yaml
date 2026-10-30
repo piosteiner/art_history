@@ -7,8 +7,27 @@ names:
   - lang: en
     role: translation
     text: dripping in
+  - lang: ru
+    role: translation
+    text: Тарасикоми
 category: technique
 definition: Dropping ink or colour into a still-wet layer so that the pigments run together in soft, mottled pools; associated with Sōtatsu and the Rinpa painters.
+wikidata_id: Q7685559
+metadata:
+  sources: [Wikidata Q7685559 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/5/5a/White_Prunus_Korin.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:White_Prunus_Korin.jpg
+    license: Public domain
+    credit: Ogata Korin (1658 - 1716)
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/3b/MatsushimaTarashikomi.png
+    source_url: https://commons.wikimedia.org/wiki/File:MatsushimaTarashikomi.png
+    license: Public domain
+    credit: Tawaraya Sōtatsu
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Hyakusui-Squirrel.jpg/1280px-Hyakusui-Squirrel.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hyakusui-Squirrel.jpg
+    license: Public domain
+    credit: Hirafuku Hyakusui (1877-1933)
 sources:
   definition:
     - source: history-of-japanese-art

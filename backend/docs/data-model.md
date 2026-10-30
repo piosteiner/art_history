@@ -204,6 +204,9 @@ The view `provenance_periods` computes the chain with **window functions** over 
 position`: `lead(acquired)` gives the next acquisition (the implied end), `lag()` the previous owner (for transfers and
 the gap check). `end_basis` records where each end comes from: `recorded` · `implied` · `ongoing` (the last owner is
 the current institution → open-ended range) · `unknown` (only the acquisition range — nothing invented).
+A provenance record (104) outside its step's period is a finding (`provenance_record_outside`); for a step whose end
+is `unknown` (176) only when it lies before the acquisition or after the holder's death — a later inventory just shows
+the holding lasted.
 
 The site stays focused on relationships: the view **`edges`** (replacing 029's `graph_edges`) is the stored
 relationships plus derived ones — the main creator, and per step `owned_by`, `kept_in` (presence → the artwork's map

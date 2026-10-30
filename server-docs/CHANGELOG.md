@@ -4,6 +4,28 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Quality warnings resolved (migration 176 + data)
+- **Errors (10 → 0):** polity successions — Nazi Germany from 30.1.1933 (Wikidata 15.3.), Bourbon Restoration from
+  6.4.1814 (Wikidata 1815), German Confederation from 8.6.1815 (Federal Act), Acts of Union 1 May 1707 Old Style =
+  12 May (Gregorian), Rheinbund succession on 1.8.1806 (secession, not the signing), surrender 8–9 May 1945,
+  Würzburg 1803 to the Electorate (Duchy of Bavaria), not the Kingdom; Grand Duchy of Würzburg → Kingdom of Bavaria
+  3.6.1814 new; Duchy of Oldenburg new (1774–1810) for Oldenburg 1806–11 — each cited (Wikipedia). Bruegel's Big Fish
+  copies: `conceived` 1556 (his drawing, Albertina 7875) — "designed 1556, printed after 1619".
+- **176:** `provenance_record_outside` for a step with an unknown end only when the record lies before the acquisition
+  or after the holder's death (e2e `provenance-records`); perf 35/35. Records moved to their holders: Vasari 1550 →
+  French royal collection, Medici 1516 → Lorenzo's heirs, Borghese "before 1633" → Scipione; Birth of Venus gets
+  "the Medici grand dukes" (from Cosimo I's death 1574) with the Castello inventory of 1598.
+- **Other warnings fixed:** Monet's Argenteuil 1871–1878 / Vétheuil autumn 1878–1881 (Wikipedia); Tankei d. 1256,
+  `active` for Kaikei, Kōben, Kōshō, Sharaku (Mason); attributions for 10 anonymous works (Hellenistic, Babylonian,
+  Palaeolithic, Romanesque, glaziers; Kinkakuji/Ginkakuji built for the Ashikaga — Mason pp. 226–229; Siena cycle);
+  Sainte-Chapelle windows: the crown (1270) and the State (2.11.1789) added; Bridge in the Rain on loan at the Van Gogh
+  Museum since 2.6.1973; credits for 26 images read from their Commons pages; 171 place-kind citations confirmed
+  (kinds read from the items' Wikidata classes on 29.10.).
+- **Checked and acknowledged (correct as they are):** Campione d'Italia (exclave), Bad Säckingen (border), Papeete and
+  French Polynesia, Hong Kong, Europe without country; five owners ≠ building (Padua, State, City of Paris);
+  Renoir's move year 1844; two living artists.
+- **Why:** owner, 2026-10-30. **Revert:** migration 176 (restore the condition); data via the admin history.
+
 ### Data: gesso completed, Heian-kyō merged into Kyoto
 - **Gesso** (auto-created from the Cenacolo's materials) is Wikidata Q1514256: definition, names (it/de/ja/ko), text on
   the traditional glue-chalk ground, Leonardo's ground on the refectory wall and Mason's use for gofun and the raised

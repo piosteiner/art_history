@@ -1,5 +1,5 @@
 public_id: 105487
-name: shin hanga
+name: shin-hanga
 names:
   - lang: ja
     role: original
@@ -7,9 +7,27 @@ names:
   - lang: en
     role: translation
     text: new prints
+  - shin hanga
+  - lang: zh
+    role: translation
+    text: 新版畫
+  - lang: ko
+    role: translation
+    text: 신판화
+  - lang: ru
+    role: translation
+    text: Син-ханга
 category: style
 parent: woodblock-print
 definition: Woodblock prints of the 1910s–1940s that renewed ukiyo-e themes in the old division of labour between designer, carver and printer, promoted by the publisher Watanabe Shōzaburō.
+wikidata_id: Q842183
+metadata:
+  sources: [Wikidata Q842183 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Hashiguchi_Goy%C5%8D%2C_Woman_after_bath%2C_1920.jpg/1280px-Hashiguchi_Goy%C5%8D%2C_Woman_after_bath%2C_1920.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hashiguchi_Goy%C5%8D,_Woman_after_bath,_1920.jpg
+    license: Public domain
+    credit: Goyō Hashiguchi
 sources:
   definition:
     - source: history-of-japanese-art

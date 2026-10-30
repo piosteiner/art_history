@@ -1,6 +1,6 @@
 public_id: 100841
 name: Nazi Germany
-period: 1933-03-15/1945-05-23
+period: 1933-01-30/1945-05-23
 wikidata_id: Q7318
 metadata:
   sources: [Wikidata Q7318 (retrieved 2026-10-18)]
@@ -10,9 +10,9 @@ relationships:
     period: 1945-04-27
   - type: succeeded_by
     to: polity/allied-occupied-germany
-    period: 1945-05-08
+    period: 8–9 May 1945
+    notes_md: The unconditional surrender came into force at 23:01 CET on 8 May 1945 (9 May in Moscow).
 sources:
   period:
-    - accessed: 2026-10-18
-      property: P571
-      wikidata: Q7318
+    - note: "“President Paul von Hindenburg reluctantly appointed Hitler Chancellor of Germany on 30 January 1933”; end: the Flensburg government arrested, 23 May 1945"
+      source: wikipedia-en-nazi-germany

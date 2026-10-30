@@ -5,13 +5,15 @@ names:
   - lang: en
     role: translation
     text: Hall of the Bulls (Lascaux)
+attribution_label: Unknown Palaeolithic painters (early Magdalenian)
 medium: peintures et gravures pariétales
 location: [1.17096, 45.05377]
 description_md: The great hall at the entrance of the Lascaux cave, with its aurochs, horses and deer. Most prehistorians date the paintings to the early Magdalenian, around 21,000 years cal BP — the dating of the cave's materials is debated.[[source/wikipedia-fr-lascaux|« La plupart des préhistoriens les attribuent néanmoins à la période du Magdalénien ancien, autour de 21 000 ans cal AP. »]]
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/1/1e/Lascaux_painting.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Lascaux_painting.jpg
-    license: see Wikimedia Commons
+    license: Public domain
+    credit: "Palaeolithic painters — photograph: Prof saxx (Wikimedia Commons)"
 provenance:
   - owner_label: the La Rochefoucauld-Montbel family (the Lascaux estate)
     ended: 1972

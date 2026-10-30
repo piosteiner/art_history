@@ -7,6 +7,7 @@ names:
 creator: pieter-brueghel-the-elder
 attribution_label: after Pieter Bruegel the Elder (a pasticcio)
 created: 1560/1600
+conceived: 1556
 kind: print
 medium: Kupferstich
 dimensions: [38, 50.1]
@@ -54,6 +55,10 @@ sources:
       note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Jan Tiel · 1560-1600 · Kupferstich · Blatt: 38 x 50,1 cm; Platte: 37 x 49,8 cm · DG1955/154 · Einziger Zustand Pasticcio“"
       source: albertina-sammlungen-online
       accessed: 2026-10-30
+  conceived:
+    - note: "Bruegel's design: the drawing „Die großen Fische fressen die kleinen“, dated 1556 (Albertina, inv. 7875); the print “P. Breugel inven:”"
+      source: albertina-sammlungen-online
+      locator: "7875"
   dimensions:
     - url: https://sammlungenonline.albertina.at/de/objects/122471/die-groen-fische-fressen-die-kleinen
       note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Jan Tiel · 1560-1600 · Kupferstich · Blatt: 38 x 50,1 cm; Platte: 37 x 49,8 cm · DG1955/154 · Einziger Zustand Pasticcio“"

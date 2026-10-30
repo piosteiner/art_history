@@ -82,12 +82,6 @@ provenance:
         note: il fut très probablement acquis par François Ier en 1518.
         source: louvre-collections
         accessed: 2026-10-20
-    records:
-      - kind: sighting
-        date: "1550"
-        note: « lequel ouvrage se trouve aujourd’hui chez le roi de France à Fontainebleau »
-        place: fontainebleau
-        document: Vasari, Vite (1550)
   - owner: institution/french-royal-collection
     further_places:
       - place: paris
@@ -103,6 +97,12 @@ provenance:
         note: En 1646, le tableau est présent dans le cabinet doré de la chambre d'Anne d'Autriche à Fontainebleau avant que Louis XIV décide de le ramener à Paris. En 1665-1666, il passe du palais du Louvre à la galerie des Ambassadeurs du palais des Tuileries. Louis XIV transfère le tableau dans la galerie du roi au château de Versailles dans les années 1690-1695.
         source: wikipedia-fr-joconde
         accessed: 2026-10-20
+    records:
+      - kind: sighting
+        date: "1550"
+        note: « lequel ouvrage se trouve aujourd’hui chez le roi de France à Fontainebleau »
+        place: fontainebleau
+        document: Vasari, Vite (1550)
   - owner: institution/musee-du-louvre
     further_places:
       - place: paris

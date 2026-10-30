@@ -60,6 +60,11 @@ provenance:
         note: Roma, collezione Scipione Borghese, 12 gennaio 1611 (Coliva 2010)
         source: galleria-borghese-collezione
         accessed: 2026-10-20
+    records:
+      - date: before 1633
+        place: rome
+        number: "186"
+        document: Borghese inventory
   - owner: institution/borghese-collection
     acquired: 1633
     ended: 1902
@@ -73,10 +78,6 @@ provenance:
         source: galleria-borghese-collezione
         accessed: 2026-10-20
     records:
-      - date: before 1633
-        place: rome
-        number: "186"
-        document: Borghese inventory
       - date: "1833"
         note: Inventario Fidecommissario Borghese 1833, p
         place: rome

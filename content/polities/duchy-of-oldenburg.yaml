@@ -1,0 +1,18 @@
+public_id: 105585
+name: Duchy of Oldenburg
+names:
+  - lang: de
+    role: original
+    text: Herzogtum Oldenburg
+period: 1774/1810
+description_md: A duchy from 1774 until its annexation by the French Empire in 1810; restored after Napoleon's fall and raised to a grand duchy in 1815[[source/wikipedia-en-duchy-of-oldenburg|“After annexation by the French Empire in 1810, the duchy was restored as a grand duchy in 1815.”]].
+wikidata_id: Q697084
+relationships:
+  - type: succeeded_by
+    to: polity/first-french-empire
+    period: 1811-02-28
+    notes_md: Annexed by the French Empire.
+sources:
+  period:
+    - note: “After annexation by the French Empire in 1810, the duchy was restored as a grand duchy in 1815.”
+      source: wikipedia-en-duchy-of-oldenburg

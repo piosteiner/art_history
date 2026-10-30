@@ -7,9 +7,27 @@ names:
   - lang: en
     role: translation
     text: brocade picture
+  - Edo-e
+  - lang: zh
+    role: translation
+    text: 錦繪
+  - lang: ko
+    role: translation
+    text: 니시키에
+  - lang: ru
+    role: translation
+    text: Нисики-э
 category: technique
 parent: woodblock-print
 definition: The full-colour woodblock print, with a separate block for each colour, first produced commercially in Edo in 1765–66 after the calendar prints of Suzuki Harunobu’s circle.
+wikidata_id: Q1683337
+metadata:
+  sources: [Wikidata Q1683337 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/34/Nishikie.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Nishikie.jpg
+    license: Public domain
+    credit: Suzuki Harunobu
 sources:
   definition:
     - source: history-of-japanese-art

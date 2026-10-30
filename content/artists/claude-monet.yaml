@@ -55,20 +55,24 @@ relationships:
         accessed: 2026-10-13
   - type: lived_in
     to: place/argenteuil
-    period: 1878
-    period_label: until 1878
+    period: 1871-01/1878-08
+    period_label: 1871–1878
     sources:
       - accessed: 2026-10-13
         property: P551
         wikidata: Q296
+      - note: “The family moved to Argenteuil in 1871” · “In the autumn of that year [1878], they moved to the village of Vétheuil”
+        source: wikipedia-en-claude-monet
   - type: lived_in
     to: place/vetheuil
-    period: 1878
-    period_label: from 1878
+    period: 1878-09/1881-11
+    period_label: autumn 1878–1881
     sources:
       - accessed: 2026-10-13
         property: P551
         wikidata: Q296
+      - note: “In the autumn of that year [1878], they moved to the village of Vétheuil where they shared a house with the family of Ernest Hoschedé”
+        source: wikipedia-en-claude-monet
   - type: lived_in
     to: place/villa-saint-louis
     period: 1881-12/1883-04

@@ -9,7 +9,7 @@ metadata:
   sources: [Wikidata Q2936 (retrieved 2026-10-28)]
 relationships:
   - type: in_polity
-    to: polity/grand-duchy-of-oldenburg
+    to: polity/duchy-of-oldenburg
     period: 1806-08-06/1811-02-27
     sources:
       - accessed: 2026-10-29

@@ -10,5 +10,31 @@ names:
   - lang: de
     role: translation
     text: weisser Marmor
+  - saccharoidal marble
+  - lang: nl
+    role: translation
+    text: wit marmer
+  - lang: de
+    role: translation
+    text: weißer Marmor
+  - lang: es
+    role: translation
+    text: mármol blanco
+  - lang: ru
+    role: translation
+    text: белый мрамор
 category: material
 parent: marble
+definition: rock formed by the alteration of white limestone or dolomite
+wikidata_id: Q117052968
+metadata:
+  sources: [Wikidata Q117052968 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/Statuarietto_White_Marble_%28Apuan_Marble_Formation%2C_Tertiary_metamorphism_of_Jurassic_limestones%3B_Carrara_region%2C_Italy%29_3_%2840899048665%29.jpg/1280px-Statuarietto_White_Marble_%28Apuan_Marble_Formation%2C_Tertiary_metamorphism_of_Jurassic_limestones%3B_Carrara_region%2C_Italy%29_3_%2840899048665%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Statuarietto_White_Marble_(Apuan_Marble_Formation,_Tertiary_metamorphism_of_Jurassic_limestones;_Carrara_region,_Italy)_3_(40899048665).jpg
+    license: CC BY 2.0
+    credit: James St. John
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q117052968

@@ -7,8 +7,25 @@ names:
   - lang: en
     role: translation
     text: toggle
+  - lang: ko
+    role: translation
+    text: 네쓰케
 category: object type
 definition: A small carved toggle, classically of ivory or bone, at the end of the cord from which an inrō or pouch hung from the sash.
+wikidata_id: Q543901
+metadata:
+  sources: [Wikidata Q543901 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/8c/Miyasaka_Hakuryu_II_-_Tigress_with_Two_Cubs_-_Walters_71909.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Miyasaka_Hakuryu_II_-_Tigress_with_Two_Cubs_-_Walters_71909.jpg
+    license: Public domain
+    credit: Miyasaka Hakuryu II (Japanese, active mid 19th century)
+  - url: https://upload.wikimedia.org/wikipedia/commons/8/85/Netsuke-p1030001.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Netsuke-p1030001.jpg
+    license: CC BY-SA 2.0 fr
+    credit: Rama
+identifiers:
+  gnd: 4125588-4
 sources:
   definition:
     - source: history-of-japanese-art

@@ -58,9 +58,6 @@ provenance:
       - date: "1503"
         place: florence
         document: Medici family inventory
-      - date: "1516"
-        place: florence
-        document: Medici family inventory
   - owner_label: the heirs of Lorenzo di Pierfrancesco de' Medici
     acquired: 1503
     method: inheritance
@@ -71,6 +68,10 @@ provenance:
         note: towards the end of the 15th century, it was to be found in the house in Via Larga (modern-day Via Cavour) that belonged to the heirs of Lorenzo di Pierfrancesco de’ Medici, cousin of Lorenzo the Magnificent. It was later moved to the Villa di Castello, where Giorgio Vasari (1550) describes it together with the Birth of Venus.
         source: uffizi-artworks
         accessed: 2026-10-20
+    records:
+      - date: "1516"
+        place: florence
+        document: Medici family inventory
   - owner_label: the Medici grand dukes (Guardaroba)
     place: florence
     label: by 1815 in the Medici Guardaroba

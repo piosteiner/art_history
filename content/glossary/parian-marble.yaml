@@ -1,4 +1,40 @@
 public_id: 101687
 name: Parian marble
+names:
+  - lychnites
+  - lang: fr
+    role: translation
+    text: marbre de Paros
+  - lang: de
+    role: translation
+    text: Parischer Marmor
+  - lang: it
+    role: translation
+    text: marmo pario
+  - lang: es
+    role: translation
+    text: mármol de Paros
+  - lang: ja
+    role: translation
+    text: パロス大理石
+  - lang: zh
+    role: translation
+    text: 帕里安大理石
+  - lang: ru
+    role: translation
+    text: паросский мрамор
 category: material
 parent: marble
+definition: fine-grained white marble quarried on Paros and used for sculpture
+wikidata_id: Q2052367
+metadata:
+  sources: [Wikidata Q2052367 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Paros_Venetian_Castle.JPG/1280px-Paros_Venetian_Castle.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Paros_Venetian_Castle.JPG
+    license: CC BY 3.0
+    credit: Muriel Pécastaing-Boissière
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q2052367

@@ -10,7 +10,8 @@ relationships:
     period: 1804-08-11
   - type: succeeded_by
     to: polity/confederation-of-the-rhine
-    period: 1806-07-12
+    period: 1806-08-01
+    notes_md: The Rheinbund Act was signed on 12 July 1806; on 1 August the members seceded from the Empire, which Francis II dissolved on 6 August.
 sources:
   period:
     - accessed: 2026-10-18

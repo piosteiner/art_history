@@ -7,5 +7,39 @@ names:
   - lang: de
     role: translation
     text: Eichenholz
+  - oak wood
+  - lang: nl
+    role: translation
+    text: eikenhout
+  - lang: fr
+    role: translation
+    text: bois de chêne
+  - lang: it
+    role: translation
+    text: legno di quercia
+  - lang: es
+    role: translation
+    text: madera de roble
+  - lang: ja
+    role: translation
+    text: オーク材
+  - lang: ru
+    role: translation
+    text: дуб
 category: material
 parent: wood
+definition: type of wood obtained from oak trees
+wikidata_id: Q2075708
+metadata:
+  sources: [Wikidata Q2075708 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Traubeneiche.JPG/1280px-Traubeneiche.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Traubeneiche.JPG
+    license: CC BY-SA 3.0
+    credit: Philipp Zinger (= user Das Ohr)
+identifiers:
+  gnd: 4389628-5
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q2075708

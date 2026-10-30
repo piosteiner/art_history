@@ -7,7 +7,39 @@ names:
   - lang: it
     role: translation
     text: pioppo
+  - poplar (wood)
+  - lang: nl
+    role: translation
+    text: populierenhout
+  - lang: fr
+    role: translation
+    text: bois de peuplier
+  - lang: de
+    role: translation
+    text: Pappelholz
+  - lang: it
+    role: translation
+    text: legno di pioppo
+  - lang: es
+    role: translation
+    text: madera de álamo
+  - lang: ja
+    role: translation
+    text: ポプラ板
+  - lang: ru
+    role: translation
+    text: осина
 category: material
 parent: wood
 definition: Wood of the poplar tree — in Italy the usual wood for painted panels.
 description_md: In Italy panels for painting were usually of seasoned poplar, willow or linden[[source/wikipedia-en-panel-painting|“In Italy it was usually seasoned poplar, willow or linden”]]; Caravaggio still painted his *David with the Head of Goliath* in Vienna on a reused poplar panel[[source/wikipedia-en-panel-painting|“Caravaggio in his David with the Head of Goliath (Vienna), executed on a reused poplar panel”]].
+wikidata_id: Q291034
+metadata:
+  sources: [Wikidata Q291034 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/65/Populierhout.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Populierhout.jpg
+    license: CC BY-SA 4.0
+    credit: Tim van de Staak
+identifiers:
+  gnd: 4203514-4

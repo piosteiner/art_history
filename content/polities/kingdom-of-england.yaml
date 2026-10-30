@@ -36,7 +36,9 @@ metadata:
 relationships:
   - type: succeeded_by
     to: polity/kingdom-of-great-britain
-    period: 1707-05-01
+    period: 1707-05-12
+    period_label: 1 May 1707 (Old Style)
+    notes_md: "England still used the Julian calendar: 1 May 1707 Old Style is 12 May 1707 in the Gregorian calendar."
 sources:
   period:
     - accessed: 2026-10-29

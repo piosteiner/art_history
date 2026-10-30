@@ -1,0 +1,32 @@
+public_id: 105589
+name: mandorla
+names:
+  - lang: fr
+    role: translation
+    text: mandorle
+  - lang: it
+    role: translation
+    text: Vesica piscis
+  - lang: ja
+    role: translation
+    text: マンドルラ
+  - lang: zh
+    role: translation
+    text: 神聖光輪
+  - lang: ru
+    role: translation
+    text: Мандорла
+category: technique
+definition: vesica piscis shaped aureola
+wikidata_id: Q1431666
+metadata:
+  sources: [Wikidata Q1431666 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Codex_Bruchsal_1_01v_cropped.jpg/1280px-Codex_Bruchsal_1_01v_cropped.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Codex_Bruchsal_1_01v_cropped.jpg
+    license: Public domain
+    credit: medieval
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q1431666

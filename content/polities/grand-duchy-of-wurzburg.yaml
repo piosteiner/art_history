@@ -29,6 +29,11 @@ period: 1806/1814
 wikidata_id: Q698089
 metadata:
   sources: [Wikidata Q698089 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-bavaria
+    period: 1814-06-03
+    notes_md: Through an Austrian-Bavarian treaty of 3 June 1814 Ferdinand lost his possessions to the Kingdom of Bavaria and the grand duchy was dissolved.
 sources:
   period:
     - accessed: 2026-10-29

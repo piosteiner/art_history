@@ -4,6 +4,7 @@ names:
   - lang: ja
     role: original
     text: "{康弁|こうべん}"
+active: 1215
 biography_md: "Buddhist sculptor, a son of [[artist/unkei]][[source/kobayashi-1954-unkei|“all the six of his sons worked in collaboration in the construction: Tankei, Koun, Koben, Kosho, Unga, Unjo”]]. His standing demon Ryūtōki at Kōfukuji shows his father's realism; he may have used a wrestler as his model[[source/tnm-unkei-exhibition-2017|“Unkei’s influence is more readily apparent in the standing image of the demon Ryutoki (No.35), whose realistically rendered musculature suggests that its sculptor, Koben, may well have used an actual wrestler as his model”]]."
 wikidata_id: Q11486256
 relationships:
@@ -13,3 +14,8 @@ relationships:
       - note: “Unkei had six sons, all of whom became Buddhist sculptors. Sculptures by Tankei, Koben, and Kosho survive to this day.”
         source: tnm-unkei-exhibition-2017
         accessed: 2026-10-28
+sources:
+  active:
+    - note: Tentōki and Ryūtōki, by Kōben, 1215 — commissioned by the monk Shōshō of Kōfukuji, completed in 1215 according to an inscription
+      source: history-of-japanese-art
+      locator: pp. 194–195

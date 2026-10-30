@@ -32,8 +32,9 @@ metadata:
   sources: [Wikidata Q13427044 (retrieved 2026-10-29)]
 relationships:
   - type: succeeded_by
-    to: polity/kingdom-of-bavaria
+    to: polity/duchy-of-bavaria
     period: 1803-02-25
+    notes_md: Secularized in 1803 and granted to the Electorate of Bavaria; Bavaria gave it up in the Peace of Pressburg (1805) for the Grand Duchy of Würzburg, which went to the Kingdom of Bavaria in 1814.
 sources:
   period:
     - accessed: 2026-10-29

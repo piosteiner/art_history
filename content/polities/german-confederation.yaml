@@ -28,7 +28,7 @@ names:
   - lang: ru
     role: translation
     text: Германский союз
-period: 1815-06-10/1866-08-24
+period: 1815-06-08/1866-08-24
 wikidata_id: Q151624
 metadata:
   sources: [Wikidata Q151624 (retrieved 2026-10-29)]
@@ -38,6 +38,5 @@ relationships:
     period: 1867-07-01
 sources:
   period:
-    - accessed: 2026-10-29
-      property: P571
-      wikidata: Q151624
+    - note: “established by the 20-article 9th Act of the Congress of Vienna on 8 June 1815”
+      source: wikipedia-en-german-confederation

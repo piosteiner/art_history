@@ -26,7 +26,7 @@ names:
   - lang: ru
     role: translation
     text: Реставрация Бурбонов
-period: 1815/1830-08-09
+period: 1814-04-06/1830-08-09
 wikidata_id: Q207162
 metadata:
   sources: [Wikidata Q207162 (retrieved 2026-10-29)]
@@ -39,6 +39,5 @@ relationships:
     period: 1830-08-09
 sources:
   period:
-    - accessed: 2026-10-29
-      property: P571
-      wikidata: Q207162
+    - note: “The first Bourbon Restoration lasted from 6 April 1814 to 20 March 1815” — interrupted by the Hundred Days, restored on 8 July 1815
+      source: wikipedia-en-bourbon-restoration-in-france

@@ -9,6 +9,7 @@ names:
   - lang: de
     role: translation
     text: Fenster der Sainte-Chapelle (Vincennes)
+attribution_label: Unknown Parisian glaziers
 created: c. 1243–1248
 created_span: uncertain
 institution: sainte-chapelle
@@ -35,6 +36,25 @@ provenance:
         note: La Sainte-Chapelle […] est une chapelle palatine édifiée sur l’île de la Cité, à Paris […] à la demande de saint Louis afin d’abriter la Sainte Couronne d’épines, un morceau de la Vraie Croix, ainsi que diverses autres reliques de la Passion qu’il avait acquises à partir de 1239.
         source: wikipedia-fr-sainte-chapelle
         accessed: 2026-10-20
+  - owner_label: the French crown
+    acquired: 1270-09-01
+    acquired_label: "1270"
+    method: inheritance
+    certainty: probable
+    notes_md: The royal chapel of the palace passed with the crown to Louis IX's successors; served by a college of canons until 1787.
+    sources:
+      - note: « Desservie par un collège de chanoines jusqu'en 1787, la Sainte-Chapelle a été fermée au culte vers 1790, puis vidée de tout son contenu »
+        source: wikipedia-fr-sainte-chapelle
+  - owner_label: French State
+    acquired: 1789-11-02
+    method: transfer
+    certainty: probable
+    notes_md: Church property placed at the disposal of the nation by the decree of 2 November 1789; the chapel was closed for worship about 1790 and emptied. Today owned by the State, managed by the Centre des monuments nationaux.
+    sources:
+      - note: « La confiscation s'appuie sur le décret du 2 novembre 1789. »
+        source: wikipedia-fr-bien-national
+      - note: « fermée au culte vers 1790, puis vidée de tout son contenu »
+        source: wikipedia-fr-sainte-chapelle
   - owner_label: archive depot of the Palais de Justice
     role: event
     acquired: 1797

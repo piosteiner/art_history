@@ -7,8 +7,25 @@ names:
   - lang: en
     role: translation
     text: shoin style
+  - lang: de
+    role: translation
+    text: Shoin-Stil
+  - lang: ko
+    role: translation
+    text: 쇼인즈쿠리
+  - lang: ru
+    role: translation
+    text: Сёин-дзукури
 category: architecture
 definition: The residential style of the warrior class from the late Muromachi period, built around the study (shoin) with tokonoma, staggered shelves, tatami floors and sliding doors — the basis of the traditional Japanese house.
+wikidata_id: Q2576209
+metadata:
+  sources: [Wikidata Q2576209 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Ginkakuji_Temple_Togudo_2009_059.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ginkakuji_Temple_Togudo_2009_059.jpg
+    license: CC BY-SA 3.0
+    credit: Dingy
 sources:
   definition:
     - source: history-of-japanese-art

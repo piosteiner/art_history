@@ -114,6 +114,29 @@ test('an end known only as "or later" (105): the holder\'s period runs to its ea
   expect(sql(`SELECT period::text FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('[1650-01-01,1749-06-09)');
 });
 
+test('a holder whose end is unknown (176): a later record shows the holding lasted — unless the holder had died', () => {
+  // a collector from 1650, then the royal collection at an unknown date: the collector's end is unknown
+  sql(`DELETE FROM people WHERE slug = 'test-records-collector';
+       INSERT INTO people (slug, name, death, death_label) VALUES ('test-records-collector', 'Test Collector', year_range(1700), '1700');
+       UPDATE provenance SET owner_institution_id = NULL, owner_person_id = entity_id('person', 'test-records-collector'),
+         ended = NULL, ended_label = NULL WHERE artwork_id = ${W};
+       INSERT INTO provenance (artwork_id, position, owner_institution_id, method) VALUES (${W}, 1, entity_id('institution', 'test-records-crown'), 'unknown');
+       INSERT INTO provenance_records (provenance_id, position, date, date_label, note) VALUES (${STEP()}, 0, year_range(1690), '1690', 'test')`);
+  const findings = () => sql(`SELECT count(*) FROM quality_issues_live WHERE check_id = 'provenance_record_outside' AND entity_id = ${W}`);
+  try {
+    expect(sql(`SELECT end_basis FROM provenance_periods WHERE artwork_id = ${W} AND position = 0`)).toBe('unknown');
+    expect(findings()).toBe('0');
+    // after the collector's death: not theirs
+    sql(`UPDATE provenance_records SET date = year_range(1710), date_label = '1710' WHERE provenance_id = ${STEP()}`);
+    expect(findings()).toBe('1');
+    // before the acquisition: not theirs either
+    sql(`UPDATE provenance_records SET date = year_range(1600), date_label = '1600' WHERE provenance_id = ${STEP()}`);
+    expect(findings()).toBe('1');
+  } finally {
+    sql(`DELETE FROM artworks WHERE slug = 'test-records-w'; DELETE FROM people WHERE slug = 'test-records-collector'`);
+  }
+});
+
 test('several artworks\' provenance at once (/v1/map/provenances): the same as each artwork\'s map', async ({ request }) => {
   const one = await api(request, '/map/artworks/test-records-w');
   const many = await api(request, '/map/provenances?artworks=test-records-w,the-starry-night,no-such-work');
