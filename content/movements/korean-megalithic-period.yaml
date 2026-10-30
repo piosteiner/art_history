@@ -1,0 +1,23 @@
+public_id: 105297
+name: Megalithic period (Korea)
+names:
+  - lang: en
+    role: alternative
+    text: Late Neolithic (Korea)
+kind: period
+parent: korean-neolithic
+period: -2000/-1000
+description_md: "**Dates.** The millennium of megaliths (dolmens), stone-cist graves and plain (mumun) pottery: Im Hyo-jae counts it as the Late Neolithic, Sarah Nelson as a Megalithic period of its own, because these signal a profound change in society[[source/portal-2000|pp. 28–29]]."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: -2000/-1000
+    sources:
+      - note: “Im Hyo-jae considers the period from 2000 to 1000 BC as the Late Neolithic, but Nelson calls this the Megalithic period, on the basis that the appearance of both megaliths and plain (mumun) pottery indicates a profound change in society” (p. 28)
+        source: portal-2000
+        locator: pp. 28–29
+sources:
+  period:
+    - note: “Im Hyo-jae considers the period from 2000 to 1000 BC as the Late Neolithic, but Nelson calls this the Megalithic period, on the basis that the appearance of both megaliths and plain (mumun) pottery indicates a profound change in society” (p. 28)
+      source: portal-2000
+      locator: pp. 28–29

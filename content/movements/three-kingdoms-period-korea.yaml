@@ -1,0 +1,25 @@
+public_id: 105303
+name: Three Kingdoms period (Korea)
+names:
+  - lang: ko
+    role: original
+    text: 삼국 시대
+  - lang: ko-Hani
+    role: alternative
+    text: 三國時代
+kind: period
+period: c. 300–668
+description_md: "**Dates.** Goguryeo in the north, Baekje in the southwest and Silla in the southeast — at first four, with the Gaya confederation, which Silla absorbed in 532. The old histories found the kingdoms in 57 BCE (Silla), 37 BCE (Goguryeo), 18 BCE (Baekje) and 42 CE (Gaya); modern scholarship, from archaeology and documents, starts the period around 300 CE and puts a Proto-Three Kingdoms period before it — still disputed. It ends in 668 with the unification of most of the peninsula under Silla[[source/portal-2000|p. 43]]."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: c. 300–668
+    sources:
+      - note: "“the Three Kingdoms period (c. AD 300–668)” · “Specific dates … have been traditionally assigned to the foundation of each of the Three Kingdoms: Koguryo in 37 BC, Paekche in 18 BC and Silla in 57 BC. The corresponding date for Kaya is AD 42. Modern scholarship … is moving towards a re-assessment of these dates … a Three Kingdoms period from c. AD 300 which ended in AD 668 in the unification of the peninsula under Silla. These issues remain controversial.”"
+        source: portal-2000
+        locator: p. 43
+sources:
+  period:
+    - note: "“the Three Kingdoms period (c. AD 300–668)” · “Specific dates … have been traditionally assigned to the foundation of each of the Three Kingdoms: Koguryo in 37 BC, Paekche in 18 BC and Silla in 57 BC. The corresponding date for Kaya is AD 42. Modern scholarship … is moving towards a re-assessment of these dates … a Three Kingdoms period from c. AD 300 which ended in AD 668 in the unification of the peninsula under Silla. These issues remain controversial.”"
+      source: portal-2000
+      locator: p. 43

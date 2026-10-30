@@ -1,0 +1,25 @@
+public_id: 105301
+name: Korean Palaeolithic
+names:
+  - lang: ko
+    role: original
+    text: 구석기 시대
+  - lang: ko-Hani
+    role: alternative
+    text: 舊石器時代
+kind: period
+period_label: before 10,000 BCE
+description_md: "**Dates.** Known from stone tools and cave sites; Portal names a Middle Palaeolithic (100,000–40,000 BCE) and a Middle–Upper Palaeolithic (40,000–10,000 BCE)[[source/portal-2000|pp. 23–24]]. Dates before 4713 BCE cannot be stored here, so the period has a label only."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period_label: before 10,000 BCE
+    sources:
+      - note: “Middle Palaeolithic (100,000–40,000 BC)” (p. 23) · “Middle-Upper Palaeolithic (40,000–10,000 BC)” (p. 24) · Acheulian-type hand-axes at Chongok-ri, found 1979–83 (p. 23)
+        source: portal-2000
+        locator: pp. 23–24
+sources:
+  period:
+    - note: “Middle Palaeolithic (100,000–40,000 BC)” (p. 23) · “Middle-Upper Palaeolithic (40,000–10,000 BC)” (p. 24) · Acheulian-type hand-axes at Chongok-ri, found 1979–83 (p. 23)
+      source: portal-2000
+      locator: pp. 23–24

@@ -1,0 +1,30 @@
+public_id: 105300
+name: Korean Neolithic
+names:
+  - lang: ko
+    role: original
+    text: 신석기 시대
+  - lang: ko-Hani
+    role: alternative
+    text: 新石器時代
+  - lang: en
+    role: alternative
+    text: Chulmun period
+kind: period
+period: -995 or earlier
+period_label: c. 6000–1000 BCE
+description_md: "**Dates.** In Korea the Neolithic is defined not by farming but by pottery, among people who still lived mainly by hunting and fishing; comb-pattern (chulmun) pottery spread across the peninsula from 4500–3500 BCE with the cultivation of millet[[source/portal-2000|pp. 24, 28]]. Its start lies before 4713 BCE, the first date that can be stored here, so it stays open."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: -995 or earlier
+    period_label: c. 6000–1000 BCE
+    sources:
+      - note: “the culture of the Neolithic period (c. 6000–1000 BC) is generally defined by the beginnings of an agricultural way of life, as in China, the Korean Neolithic is, rather, defined by the appearance of pottery” (p. 24) · chulmun pottery spreading “from 4500–3500 BC, together with the cultivation of millet” (p. 28)
+        source: portal-2000
+        locator: pp. 24, 28
+sources:
+  period:
+    - note: “the culture of the Neolithic period (c. 6000–1000 BC) is generally defined by the beginnings of an agricultural way of life, as in China, the Korean Neolithic is, rather, defined by the appearance of pottery” (p. 24) · chulmun pottery spreading “from 4500–3500 BC, together with the cultivation of millet” (p. 28)
+      source: portal-2000
+      locator: pp. 24, 28

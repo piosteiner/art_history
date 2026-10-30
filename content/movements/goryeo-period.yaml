@@ -1,0 +1,28 @@
+public_id: 105291
+name: Goryeo period
+names:
+  - lang: en
+    role: alternative
+    text: Koryŏ period
+  - lang: ko
+    role: original
+    text: 고려
+  - lang: ko-Hani
+    role: alternative
+    text: 高麗
+kind: period
+period: 918/1392
+description_md: "**Dates.** The years of the Goryeo dynasty, founded by Wang Geon in 918[[source/portal-2000|p. 79]]; its first years overlap with the end of Unified Silla."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: 918/1392
+    sources:
+      - note: “The period of the Koryo dynasty (918–1392) was a high point in the history and culture of Korea and it is from the name Koryo that Korea’s English name … derives”
+        source: portal-2000
+        locator: p. 79
+sources:
+  period:
+    - note: “The period of the Koryo dynasty (918–1392) was a high point in the history and culture of Korea and it is from the name Koryo that Korea’s English name … derives”
+      source: portal-2000
+      locator: p. 79

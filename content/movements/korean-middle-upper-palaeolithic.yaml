@@ -1,0 +1,18 @@
+public_id: 105299
+name: Middle–Upper Palaeolithic (Korea)
+kind: period
+parent: korean-palaeolithic
+period_label: 40,000–10,000 BCE
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period_label: 40,000–10,000 BCE
+    sources:
+      - note: “Sites such as Suyanggae … span the Middle-Upper Palaeolithic (40,000–10,000 BC)”
+        source: portal-2000
+        locator: p. 24
+sources:
+  period:
+    - note: “Sites such as Suyanggae … span the Middle-Upper Palaeolithic (40,000–10,000 BC)”
+      source: portal-2000
+      locator: p. 24

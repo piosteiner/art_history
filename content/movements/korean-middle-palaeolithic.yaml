@@ -1,0 +1,18 @@
+public_id: 105298
+name: Middle Palaeolithic (Korea)
+kind: period
+parent: korean-palaeolithic
+period_label: 100,000–40,000 BCE
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period_label: 100,000–40,000 BCE
+    sources:
+      - note: “Human remains have been found at Middle Palaeolithic (100,000–40,000 BC) sites such as Turubong in South Korea and Daehyundong near Pyongyang”
+        source: portal-2000
+        locator: p. 23
+sources:
+  period:
+    - note: “Human remains have been found at Middle Palaeolithic (100,000–40,000 BC) sites such as Turubong in South Korea and Daehyundong near Pyongyang”
+      source: portal-2000
+      locator: p. 23

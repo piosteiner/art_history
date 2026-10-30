@@ -1,0 +1,26 @@
+public_id: 105296
+name: Korean Empire
+names:
+  - lang: ko
+    role: original
+    text: 대한제국
+  - lang: ko-Hani
+    role: alternative
+    text: 大韓帝國
+kind: period
+parent: joseon-period
+period: 1897/1910
+description_md: "**Dates.** King Gojong proclaimed Korea an empire in 1897, after moving into the Deoksu palace; from 1905 it was a Japanese protectorate, and it ended with Japan's annexation in 1910[[source/portal-2000|p. 167]]."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: 1897/1910
+    sources:
+      - note: “Then in 1897 King Kojong moved into the Toksu palace … and proclaimed Korea an empire. However, by 1905 Japan had … established a protectorate … this was followed in 1910 by Korea’s colonization by Japan”
+        source: portal-2000
+        locator: p. 167
+sources:
+  period:
+    - note: “Then in 1897 King Kojong moved into the Toksu palace … and proclaimed Korea an empire. However, by 1905 Japan had … established a protectorate … this was followed in 1910 by Korea’s colonization by Japan”
+      source: portal-2000
+      locator: p. 167

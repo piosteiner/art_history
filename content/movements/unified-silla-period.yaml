@@ -1,0 +1,25 @@
+public_id: 105304
+name: Unified Silla period
+names:
+  - lang: ko
+    role: original
+    text: 통일 신라
+  - lang: ko-Hani
+    role: alternative
+    text: 統一新羅
+kind: period
+period: 668/935
+description_md: "**Dates.** From Silla's unification of most of the peninsula in 668 to its end in 935[[source/portal-2000|p. 43]]; in the north, Parhae (Balhae) ruled at the same time."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: 668/935
+    sources:
+      - note: “Silla went on to unify the majority of the Korean peninsula in 668 and from 668 to 935 ruled as Unified Silla”
+        source: portal-2000
+        locator: p. 43
+sources:
+  period:
+    - note: “Silla went on to unify the majority of the Korean peninsula in 668 and from 668 to 935 ruled as Unified Silla”
+      source: portal-2000
+      locator: p. 43

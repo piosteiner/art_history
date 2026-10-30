@@ -1,0 +1,28 @@
+public_id: 105302
+name: Proto-Three Kingdoms period
+names:
+  - lang: ko
+    role: original
+    text: 원삼국 시대
+  - lang: ko-Hani
+    role: alternative
+    text: 原三國時代
+  - lang: en
+    role: alternative
+    text: Later Iron Age (Korea)
+kind: period
+period: 1–c. 300
+description_md: "**Dates.** The first three centuries CE, the later Iron Age — a division modern scholarship sets in place of the traditional founding dates of the Three Kingdoms[[source/portal-2000|pp. 38, 43]]."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: 1–c. 300
+    sources:
+      - note: “the Later Iron Age or Proto-Three Kingdoms period (0–AD 300)” (p. 38) · “a Proto-Three Kingdoms period, covering the first three centuries of the modern era and overlapping with the later part of the Iron Age (0–c. AD 300)” (p. 43)
+        source: portal-2000
+        locator: pp. 38, 43
+sources:
+  period:
+    - note: “the Later Iron Age or Proto-Three Kingdoms period (0–AD 300)” (p. 38) · “a Proto-Three Kingdoms period, covering the first three centuries of the modern era and overlapping with the later part of the Iron Age (0–c. AD 300)” (p. 43)
+      source: portal-2000
+      locator: pp. 38, 43

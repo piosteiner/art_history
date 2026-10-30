@@ -1,0 +1,8 @@
+public_id: 105290
+name: Korean Peninsula
+names:
+  - lang: ko
+    role: original
+    text: 한반도
+kind: region
+location: [127.5, 38]

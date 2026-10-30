@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Korean periods after Portal, Korea: Art and Archaeology (2000)
+- **What:** source `portal-2000` (British Museum Press; the owner's scan of pp. 7–189 in `/home/ubuntu/books`, read by OCR
+  in a scratchpad venv — rapidocr, no system change), place `korean-peninsula`, 14 periods with page-cited dates, a
+  "**Dates.**" paragraph each, Korean names (hangul + hanja) and Portal's McCune–Reischauer spelling beside the Revised
+  Romanization: Palaeolithic (Middle, Middle–Upper; labels only, before 4713 BCE), Neolithic c. 6000–1000 BCE (open
+  start), Megalithic 2000–1000 BCE, Bronze Age 1000–c. 300 BCE, Early Iron Age 300–1 BCE, Proto-Three Kingdoms 1–c. 300,
+  Three Kingdoms c. 300–668 (traditional founding dates in the text), Unified Silla 668–935, Goryeo 918–1392, Joseon
+  1392–1910 (with the Korean Empire 1897–1910), Japanese colonial period 1910–1945. Round trip checked.
+- **Why:** owner, 2026-10-30.
+- **Revert:** delete the 14 movements, the place and the source in the admin.
+
 ### Data: Japanese periods on the official dates, with the reasons for every boundary
 - **What:** source `nabunken-style-manual-2022` (Nabunken, 英文スタイル・マニュアル 基礎編, 2022, appendix pp. 29–31 — the
   period tables of Nabunken and the Tokyo, Kyoto and Nara National Museums) cited on every Japanese period with all

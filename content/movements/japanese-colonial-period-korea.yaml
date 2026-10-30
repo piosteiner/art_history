@@ -1,0 +1,25 @@
+public_id: 105292
+name: Japanese colonial period (Korea)
+names:
+  - lang: ko
+    role: original
+    text: 일제강점기
+  - lang: ko-Hani
+    role: alternative
+    text: 日帝強占期
+kind: period
+period: 1910/1945
+description_md: "**Dates.** From Japan's annexation in 1910 to Korea's liberation in 1945, followed by the division at the 38th parallel[[source/portal-2000|pp. 167–168]]."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: 1910/1945
+    sources:
+      - note: “this was followed in 1910 by Korea’s colonization by Japan” (p. 167) · “Their sudden liberation from Japan in 1945 was unexpected” (p. 168)
+        source: portal-2000
+        locator: pp. 167–168
+sources:
+  period:
+    - note: “this was followed in 1910 by Korea’s colonization by Japan” (p. 167) · “Their sudden liberation from Japan in 1945 was unexpected” (p. 168)
+      source: portal-2000
+      locator: pp. 167–168

@@ -1,0 +1,25 @@
+public_id: 105294
+name: Korean Bronze Age
+names:
+  - lang: ko
+    role: original
+    text: 청동기 시대
+  - lang: ko-Hani
+    role: alternative
+    text: 靑銅器時代
+kind: period
+period: 1000 BCE–c. 300 BCE
+description_md: "**Dates.** Begins around 1000 BCE with the first bronzes made in Korea[[source/portal-2000|p. 29]]; it gives way to iron around 300 BCE."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: 1000 BCE–c. 300 BCE
+    sources:
+      - note: “the Bronze Age proper (1000 BC–c. 300 BC), which is generally thought to have begun around 1000 BC with the appearance of Korean-made bronzes”
+        source: portal-2000
+        locator: p. 29
+sources:
+  period:
+    - note: “the Bronze Age proper (1000 BC–c. 300 BC), which is generally thought to have begun around 1000 BC with the appearance of Korean-made bronzes”
+      source: portal-2000
+      locator: p. 29

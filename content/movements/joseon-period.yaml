@@ -1,0 +1,28 @@
+public_id: 105293
+name: Joseon period
+names:
+  - lang: en
+    role: alternative
+    text: Chosŏn period
+  - lang: ko
+    role: original
+    text: 조선
+  - lang: ko-Hani
+    role: alternative
+    text: 朝鮮
+kind: period
+period: 1392/1910
+description_md: "**Dates.** From Yi Seong-gye's founding of the dynasty, with Seoul as its capital, in 1392 to Japan's annexation of Korea in 1910. Historians divide it into an early and a late period at Hideyoshi's invasions of 1592 and 1597[[source/portal-2000|p. 109]]; for ceramics Chung Yang-mo distinguishes early (1392–1649), mid (1651–1751) and late Joseon (1752–1910)[[source/portal-2000|p. 139]]."
+relationships:
+  - type: active_in
+    to: place/korean-peninsula
+    period: 1392/1910
+    sources:
+      - note: "“Historians usually divide the five hundred years of the Choson dynasty (1392–1910) into an early and a late period, separated by the Japanese invasions of Korea under Hideyoshi in 1592 and 1597” (p. 109) · “Chung Yang-mo divides the ceramic history of the dynasty into three periods: the early Choson (1392–1649), the mid-Choson (1651–1751) and the late Choson (1752–1910)” (p. 139)"
+        source: portal-2000
+        locator: pp. 109, 139
+sources:
+  period:
+    - note: "“Historians usually divide the five hundred years of the Choson dynasty (1392–1910) into an early and a late period, separated by the Japanese invasions of Korea under Hideyoshi in 1592 and 1597” (p. 109) · “Chung Yang-mo divides the ceramic history of the dynasty into three periods: the early Choson (1392–1649), the mid-Choson (1651–1751) and the late Choson (1752–1910)” (p. 139)"
+      source: portal-2000
+      locator: pp. 109, 139
