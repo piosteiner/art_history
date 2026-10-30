@@ -24,6 +24,10 @@ relationships:
         note: “On 27 June 1352, both the town of Zug and the Aeusser Amt entered the Swiss Confederation, the latter being received on exactly the same terms as the town, and not, as was usual in the case of outer districts, as a subject land.”
         source: wikipedia-en-zug
         accessed: 2026-10-30
+      - note: “das Bündnis zwischen Zug und der Eidgenossenschaft vom 27. Juni 1352”
+        source: glauser-2002
+        locator: S. 103
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/old-swiss-confederacy
     period: 1352-06-27/1798-03-04
@@ -37,6 +41,10 @@ relationships:
       - url: https://en.wikipedia.org/wiki/Zug
         note: “On 27 June 1352, both the town of Zug and the Aeusser Amt entered the Swiss Confederation, the latter being received on exactly the same terms as the town, and not, as was usual in the case of outer districts, as a subject land.”
         source: wikipedia-en-zug
+        accessed: 2026-10-30
+      - note: “das Bündnis zwischen Zug und der Eidgenossenschaft vom 27. Juni 1352”
+        source: glauser-2002
+        locator: S. 103
         accessed: 2026-10-30
 sources:
   kind:
