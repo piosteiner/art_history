@@ -6,7 +6,7 @@ names:
     text: "{飛鳥時代|あすかじだい}"
 kind: period
 period: 552/645
-description_md: "**Dates.** Here after Mason: from 552, the official introduction of Buddhism from Paekche (another tradition gives 538), to the coup of 645 that opened the Taika Reform; the years to 710 are then the Hakuhō period of art history[[source/history-of-japanese-art|p. 10]][[source/wikipedia-ja-asuka-jidai|552年…或いは538年…仏教が公伝]]. The national institutions date Asuka 592/593–710 and have no Hakuhō period[[source/nabunken-style-manual-2022|pp. 29–31]]: 592 (Sushun 5, whose 12th month falls in 593 by the Western calendar), when the court was seated at Asuka, or 593, when Prince Shōtoku became regent, to 710, the move to Heijō-kyō[[source/wikipedia-ja-asuka-jidai|崇峻天皇5年（592年…）から和銅3年（710年）]]."
+description_md: "**Dates.** Here after Mason: it begins in 552 with the official introduction of Buddhism from Paekche (another tradition gives 538) and ends in 645 with the coup that opened the Taika Reform; the years to 710 are the Hakuhō period of art history[[source/history-of-japanese-art|p. 10]][[source/wikipedia-ja-asuka-jidai|552年…或いは538年…仏教が公伝]]. The national institutions date Asuka 592/593–710 and have no Hakuhō period[[source/nabunken-style-manual-2022|pp. 29–31]]: it begins in 592, when the court was seated at Asuka (Sushun 5 — its 12th month falls in 593 by the Western calendar), or in 593, when Prince Shōtoku became regent, and ends in 710 with the move of the capital to Heijō-kyō[[source/wikipedia-ja-asuka-jidai|崇峻天皇5年（592年…）から和銅3年（710年）]]."
 relationships:
   - type: active_in
     to: place/japan

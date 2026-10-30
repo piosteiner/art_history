@@ -5,11 +5,12 @@ names:
     role: original
     text: "{大正時代|たいしょうじだい}"
 kind: period
-period: 1912/1926
+period: 1912-07-30/1926-12-25
+description_md: "**Dates.** The reign of Emperor Taishō: from his accession on Emperor Meiji's death, 30 July 1912, to his own death on 25 December 1926[[source/wikipedia-en-taisho-era|“from July 30, 1912, to December 25, 1926, coinciding with the reign of Emperor Taishō”]][[source/nabunken-style-manual-2022|pp. 29–31]]. Mason's preface starts it in 1911, her chapter 7 in 1912."
 relationships:
   - type: active_in
     to: place/japan
-    period: 1912/1926
+    period: 1912-07-30/1926-12-25
     sources:
       - note: the preface has “Taisho period (1911–1926)” (p. 10), chapter 7 “Taishō (1912–26)” (p. 346) — 1912 kept
         source: history-of-japanese-art
@@ -23,4 +24,8 @@ sources:
       note: Nabunken 1912–1926 · Tokyo National Museum 1912–1926 · Kyoto National Museum 1912–1926 · Nara National Museum 1912–1926
       source: nabunken-style-manual-2022
       locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://en.wikipedia.org/w/index.php?title=Taish%C5%8D_era&oldid=1371890192
+      note: “a period in the history of Japan dating from July 30, 1912, to December 25, 1926, coinciding with the reign of Emperor Taishō”
+      source: wikipedia-en-taisho-era
       accessed: 2026-10-30

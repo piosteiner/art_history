@@ -12,7 +12,7 @@ names:
     text: 高麗
 kind: period
 period: 918/1392
-description_md: "**Dates.** The years of the Goryeo dynasty, founded by Wang Geon in 918[[source/portal-2000|p. 79]]; its first years overlap with the end of Unified Silla."
+description_md: "**Dates.** The years of the Goryeo dynasty: from its founding by Wang Geon in 918[[source/portal-2000|p. 79]] — its first years overlap with the end of Unified Silla, which submitted to it in 935[[source/wikipedia-en-unified-silla|935]] — to 1392, when Yi Seong-gye ended it and founded the Joseon dynasty[[source/portal-2000|p. 109]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

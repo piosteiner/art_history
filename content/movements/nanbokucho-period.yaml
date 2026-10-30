@@ -9,7 +9,7 @@ names:
     text: "{南北朝時代|なんぼくちょうじだい}"
 kind: period
 period: 1333/1392
-description_md: "**Dates.** Here from 1333, as the national institutions date it[[source/nabunken-style-manual-2022|pp. 29–31]]: the fall of the Kamakura shogunate and the beginning of Emperor Go-Daigo's Kenmu Restoration. Often it starts only in 1336 (Mason), when the Kenmu government collapsed and Go-Daigo, facing Ashikaga Takauji's emperor in Kyoto, set up his court at Yoshino — strictly on 23 January 1337. It ends on 19 November 1392, when the Southern court handed the regalia to the Northern and the two lines were reunited[[source/wikipedia-ja-nanbokucho-jidai|始期を…1333年とする場合もある]]."
+description_md: "**Dates.** Here from 1333, as the national institutions date it[[source/nabunken-style-manual-2022|pp. 29–31]]: the fall of the Kamakura shogunate and the beginning of Emperor Go-Daigo's Kenmu Restoration. Often it starts only in 1336 (Mason), when the Kenmu government collapsed and Go-Daigo, facing the emperor Ashikaga Takauji had set up in Kyoto, moved his court to Yoshino — strictly on 23 January 1337. It ends on 19 November 1392, when the Southern court handed the regalia to the Northern and the two lines were reunited[[source/wikipedia-ja-nanbokucho-jidai|始期を…1333年とする場合もある · 1392年11月19日]]."
 relationships:
   - type: active_in
     to: place/japan

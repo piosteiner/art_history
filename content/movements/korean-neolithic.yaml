@@ -13,7 +13,7 @@ names:
 kind: period
 period: -995 or earlier
 period_label: c. 6000–1000 BCE
-description_md: "**Dates.** In Korea the Neolithic is defined not by farming but by pottery, among people who still lived mainly by hunting and fishing; comb-pattern (chulmun) pottery spread across the peninsula from 4500–3500 BCE with the cultivation of millet[[source/portal-2000|pp. 24, 28]]. Its start lies before 4713 BCE, the first date that can be stored here, so it stays open."
+description_md: "**Dates.** In Korea the Neolithic is defined not by farming but by pottery, among people who still lived mainly by hunting and fishing: it begins about 6000 BCE (finds at Kosan-ri on Jeju, with pottery dated around 10,000 years ago, may belong to an earlier “palaeo-neolithic”); comb-pattern (chulmun) pottery spread across the peninsula from 4500–3500 BCE with the cultivation of millet[[source/portal-2000|pp. 24, 28]]. It ends about 1000 BCE with the first bronzes made in Korea[[source/portal-2000|p. 29]]. Its start lies before 4713 BCE, the first date that can be stored here, so it stays open."
 relationships:
   - type: active_in
     to: place/korean-peninsula

@@ -9,12 +9,12 @@ names:
     text: waning of the bakufu
 kind: period
 parent: edo-period
-period: until 1868
-description_md: The last years of the Tokugawa shogunate, under pressure from within and from the Western powers (Perry in 1853); Mason gives no first year, only the fall of the shogunate in 1868[[source/history-of-japanese-art|pp. 277–278]].
+period: 1853/1868
+description_md: "**Dates.** Usually counted from 1853, when Commodore Perry's warships forced Japan to give up its seclusion, to 1867, when the shogunate returned power to the emperor[[source/wikipedia-en-bakumatsu|“Between 1853 and 1867 …”]]; Mason names no first year and ends it with the fall of the shogunate in 1868[[source/history-of-japanese-art|p. 278]]."
 relationships:
   - type: active_in
     to: place/japan
-    period: until 1868
+    period: 1853/1868
     sources:
       - note: “a mood of discontent and uncertainty among the Japanese that is reflected in the arts of this period, which is known as the bakumatsu, (or waning of the bakufu) … before the fall of the Tokugawa shogunate in 1868”
         source: history-of-japanese-art
@@ -24,3 +24,7 @@ sources:
     - note: “a mood of discontent and uncertainty among the Japanese that is reflected in the arts of this period, which is known as the bakumatsu, (or waning of the bakufu) … before the fall of the Tokugawa shogunate in 1868”
       source: history-of-japanese-art
       locator: p. 278
+    - url: https://en.wikipedia.org/w/index.php?title=Bakumatsu&oldid=1369518456
+      note: “Between 1853 and 1867, under foreign diplomatic and military pressure, Japan ended its isolationist foreign policy known as sakoku and changed from a feudal Tokugawa shogunate to the modern empire of the Meiji government”
+      source: wikipedia-en-bakumatsu
+      accessed: 2026-10-30

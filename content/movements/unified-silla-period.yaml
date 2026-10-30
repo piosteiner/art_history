@@ -9,7 +9,7 @@ names:
     text: 統一新羅
 kind: period
 period: 668/935
-description_md: "**Dates.** From Silla's unification of most of the peninsula in 668 to its end in 935[[source/portal-2000|p. 43]]; in the north, Parhae (Balhae) ruled at the same time."
+description_md: "**Dates.** It begins in 668 with Silla's unification of most of the peninsula[[source/portal-2000|p. 43]] and ends in 935, when its last king, Gyeongsun, submitted to Wang Geon of Goryeo[[source/wikipedia-en-unified-silla|“submitted to Wang Geon of the emerging Goryeo in 935”]]; in the north, Balhae (Parhae) ruled at the same time."
 relationships:
   - type: active_in
     to: place/korean-peninsula
@@ -23,3 +23,7 @@ sources:
     - note: “Silla went on to unify the majority of the Korean peninsula in 668 and from 668 to 935 ruled as Unified Silla”
       source: portal-2000
       locator: p. 43
+    - url: https://en.wikipedia.org/w/index.php?title=Unified_Silla&oldid=1382665885
+      note: “Unified Silla lasted for 267 years until it fell to Goryeo in 935 during the reign of King Gyeongsun” · “Its last king, Gyeongsun, ruled over the state in name only and submitted to Wang Geon of the emerging Goryeo in 935”
+      source: wikipedia-en-unified-silla
+      accessed: 2026-10-30

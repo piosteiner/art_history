@@ -13,7 +13,7 @@ names:
 kind: period
 parent: muromachi-period
 period: c. 1480–1573
-description_md: "**Dates.** Mason gives c. 1480–1573. It is usually counted from the Ōnin War (1467–77) to Oda Nobunaga's entry into Kyoto in 1568, or to the end of the Muromachi shogunate in 1573; around the capital from the Meiō coup of 1493, in the Kantō from the Kyōtoku war of 1455 to the fall of Odawara in 1590[[source/wikipedia-ja-sengoku-jidai|応仁の乱…から織田信長の上洛（…1568年）まで]]. Nabunken: ca. 15th–16th century[[source/nabunken-style-manual-2022|pp. 29–31]]."
+description_md: "**Dates.** Mason gives c. 1480–1573 without naming events[[source/history-of-japanese-art|p. 273]]. Usually it begins with the Ōnin War (1467–77), which broke the shogunate's authority, and ends in 1568, when Oda Nobunaga entered Kyoto, or in 1573, when the Muromachi shogunate fell; around the capital it is counted from the Meiō coup of 1493, in the Kantō from the Kyōtoku war of 1455 to the fall of Odawara to Hideyoshi in 1590[[source/wikipedia-ja-sengoku-jidai|応仁の乱…から織田信長の上洛（…1568年）まで]]. Nabunken: ca. 15th–16th century[[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan

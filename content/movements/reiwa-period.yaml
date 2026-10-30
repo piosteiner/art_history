@@ -9,7 +9,7 @@ names:
     text: "{令和|れいわ}"
 kind: period
 period: since 1 May 2019
-description_md: "**Dates.** From 1 May 2019, the day after Emperor Akihito's abdication[[source/wikipedia-en-heisei-era|“until his abdication on 30 April 2019”]][[source/nabunken-style-manual-2022|pp. 29–31]]."
+description_md: "**Dates.** The reign of Emperor Naruhito: from 1 May 2019, the day after Emperor Akihito's abdication[[source/wikipedia-en-heisei-era|“until his abdication on 30 April 2019”]][[source/nabunken-style-manual-2022|pp. 29–31]]; ongoing."
 relationships:
   - type: active_in
     to: place/japan

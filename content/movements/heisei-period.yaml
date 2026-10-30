@@ -9,6 +9,7 @@ names:
     text: "{平成|へいせい}"
 kind: period
 period: 8 January 1989–30 April 2019
+description_md: "**Dates.** The reign of Emperor Akihito: from 8 January 1989, the day after his father's death, to his abdication on 30 April 2019[[source/wikipedia-en-heisei-era|“from 8 January 1989 until his abdication on 30 April 2019”]][[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -25,11 +26,12 @@ sources:
     - note: "The principal periods as used in this volume are: … “Heisei period (1989–present)” (written in 2005)"
       source: history-of-japanese-art
       locator: p. 10
-    - url: https://en.wikipedia.org/w/index.php?title=Heisei_era&oldid=1127616959
-      note: “the reign of Emperor Akihito from 8 January 1989 until his abdication on 30 April 2019”
-      source: wikipedia-en-heisei-era
     - url: https://sitereports.nabunken.go.jp/ja/article/26028
       note: Nabunken 1989–2019 · Tokyo National Museum 1989–2019 · Kyoto National Museum 1989–2019 · Nara National Museum 1989–2019
       source: nabunken-style-manual-2022
       locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://en.wikipedia.org/w/index.php?title=Heisei_era&oldid=1127616959
+      note: “the reign of Emperor Akihito from 8 January 1989 until his abdication on 30 April 2019” · “The Heisei era started on 8 January 1989, the day after the death of the Emperor Hirohito”
+      source: wikipedia-en-heisei-era
       accessed: 2026-10-30

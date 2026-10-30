@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: every period boundary with its reason, start and end
+- **What:** the "**Dates.**" paragraphs of all 44 Japanese and Korean periods rewritten so that every start and every
+  end names its reason, for each reading (e.g. Heian's end: 1185 shugo/jitō vs 1192 shōgun; Kofun's end: late 6th c.
+  keyhole tombs end vs 7th c. terminal tombs vs Mason's 710; Jōmon phases by pottery and way of life after Mason;
+  Korean periods after Portal). Exact dates from the sources: Taishō 30.7.1912–25.12.1926, Shōwa 25.12.1926–7.1.1989,
+  Kanbun 23.5.1661–30.10.1673, Genroku 23.10.1688–16.4.1704 (Mason: 1661–72, 1688–1703), Bakumatsu 1853–1868.
+  8 new Wikipedia sources (fixed revisions). Heian/Insei acknowledged as "not the same"; Muromachi, Edo, Meiji no
+  longer flagged as auto-created. Round trip checked.
+- **Why:** owner, 2026-10-30 — the end of a period needs its reason as much as the start.
+- **Revert:** via the admin history.
+
 ### Data: Korean periods after Portal, Korea: Art and Archaeology (2000)
 - **What:** source `portal-2000` (British Museum Press; the owner's scan of pp. 7–189 in `/home/ubuntu/books`, read by OCR
   in a scratchpad venv — rapidocr, no system change), place `korean-peninsula`, 14 periods with page-cited dates, a

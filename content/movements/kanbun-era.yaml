@@ -6,11 +6,12 @@ names:
     text: "{寛文|かんぶん}"
 kind: period
 parent: edo-period
-period: 1661/1672
+period: 1661-05-23/1673-10-30
+description_md: "**Dates.** An era name (nengō). It began on 23 May 1661, when the era was changed because of disasters, among them a fire in the imperial palace, and ended on 30 October 1673, when it was changed to Enpō[[source/wikipedia-ja-kanbun|内裏火災などの災異のため改元 · 延宝に改元]]; Mason gives 1661–72[[source/history-of-japanese-art|p. 278]]."
 relationships:
   - type: active_in
     to: place/japan
-    period: 1661/1672
+    period: 1661-05-23/1673-10-30
     sources:
       - note: “bijinga …, which became popular in the Kanbun era (1661–72)”
         source: history-of-japanese-art
@@ -20,3 +21,7 @@ sources:
     - note: “bijinga …, which became popular in the Kanbun era (1661–72)”
       source: history-of-japanese-art
       locator: p. 278
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%AF%9B%E6%96%87&oldid=105979996
+      note: 「万治4年4月25日（グレゴリオ暦1661年5月23日） 内裏火災などの災異のため改元」 · 「寛文13年9月21日（グレゴリオ暦1673年10月30日） 延宝に改元」
+      source: wikipedia-ja-kanbun
+      accessed: 2026-10-30

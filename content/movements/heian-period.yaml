@@ -6,7 +6,7 @@ names:
     text: "{平安時代|へいあんじだい}"
 kind: period
 period: 794/1185
-description_md: "**Dates.** From the move of the capital to Heian-kyō (Kyoto) in 794[[source/wikipedia-en-heian-period|“794: Emperor Kammu moves the capital to Heian-kyō”]]. Its end is the beginning of the Kamakura period: 1185 in most sources, 1192 at the Tokyo National Museum[[source/nabunken-style-manual-2022|pp. 29–31]] — see there."
+description_md: "**Dates.** It begins in 794 with Emperor Kanmu's move of the capital to Heian-kyō (Kyoto)[[source/wikipedia-en-heian-period|“794: Emperor Kammu moves the capital to Heian-kyō”]]. It ends with the rise of Minamoto no Yoritomo's government at Kamakura: in 1185, when, after the Taira were defeated at Dan-no-ura, he won the right to appoint military governors (shugo) and land stewards (jitō) — the prevailing date, used by Mason, Nabunken and the Kyoto and Nara museums; or in 1192, when he was appointed shōgun — the older date, still used by the Tokyo National Museum[[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192 … Later, the prevailing theory was that the year was 1185”]][[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan

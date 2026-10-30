@@ -7,6 +7,7 @@ names:
 kind: period
 parent: jomon-period
 period: c. 1000 BCE–c. 400 BCE
+description_md: "**Dates.** One of the six phases into which the Jōmon — too long to treat as one — is usually divided by the development of its pottery[[source/history-of-japanese-art|p. 14]]; its limits are changes in pottery and way of life, dated by radiocarbon, not events. From about 1000 BCE, when grains — rice among them — appear at its sites, to about 400 BCE, when the Yayoi culture with wet-rice farming takes over[[source/history-of-japanese-art|pp. 15, 20]]."
 relationships:
   - type: active_in
     to: place/japan

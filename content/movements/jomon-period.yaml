@@ -7,7 +7,7 @@ names:
 kind: period
 period: -395 or earlier
 period_label: c. 11,000–400 BCE
-description_md: "**Dates.** Both ends are archaeological, not events: the period begins with the first pottery and ends where wet-rice farming and metal tools of the Yayoi culture take over, so its dates move with new radiocarbon results — the start is now usually put at about 16,000 years ago[[source/wikipedia-ja-jomon-jidai|「始期に関しては一般的に1万6000±850年前と考えられている」]]. Mason gives c. 11,000–400 BCE; the national institutions differ: Nabunken ca. 14,000–800 BCE, the Tokyo National Museum ca. 11,000 BCE–5th century BCE, Kyoto and Nara before 10,000 BCE to about the 5th century BCE[[source/nabunken-style-manual-2022|pp. 29–31]]. Dates before 4713 BCE cannot be stored here, so the start stays open."
+description_md: "**Dates.** Both ends are archaeological, not events. It begins with the first pottery, now usually put about 16,000 years ago, and ends where the wet-rice farming and metal tools of the Yayoi culture take its place[[source/wikipedia-ja-jomon-jidai|始期…1万6000±850年前 · 終期…弥生文化の始まり]]. Mason gives c. 11,000–400 BCE[[source/history-of-japanese-art|p. 10]]; Nabunken ends it already about 800 BCE because it follows the earlier, radiocarbon start of the Yayoi period, while the Tokyo, Kyoto and Nara museums keep the older end in the 5th century BCE[[source/nabunken-style-manual-2022|pp. 29–31]]. Dates before 4713 BCE cannot be stored here, so the start stays open."
 relationships:
   - type: active_in
     to: place/japan

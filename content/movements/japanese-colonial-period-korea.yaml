@@ -9,7 +9,7 @@ names:
     text: 日帝強占期
 kind: period
 period: 1910/1945
-description_md: "**Dates.** From Japan's annexation in 1910 to Korea's liberation in 1945, followed by the division at the 38th parallel[[source/portal-2000|pp. 167–168]]."
+description_md: "**Dates.** It begins with Japan's annexation of Korea in 1910 and ends with Korea's liberation in 1945, at the end of the Second World War, which was followed by the division at the 38th parallel[[source/portal-2000|pp. 167–168]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

@@ -12,7 +12,7 @@ names:
     text: 朝鮮
 kind: period
 period: 1392/1910
-description_md: "**Dates.** From Yi Seong-gye's founding of the dynasty, with Seoul as its capital, in 1392 to Japan's annexation of Korea in 1910. Historians divide it into an early and a late period at Hideyoshi's invasions of 1592 and 1597[[source/portal-2000|p. 109]]; for ceramics Chung Yang-mo distinguishes early (1392–1649), mid (1651–1751) and late Joseon (1752–1910)[[source/portal-2000|p. 139]]."
+description_md: "**Dates.** It begins in 1392, when Yi Seong-gye founded the dynasty, with Seoul as its capital, and ends in 1910, when Japan annexed Korea[[source/portal-2000|pp. 109, 167]]. Historians divide it into an early and a late period at Hideyoshi's invasions of 1592 and 1597[[source/portal-2000|p. 109]]; for ceramics Chung Yang-mo distinguishes early (1392–1649), mid (1651–1751) and late Joseon (1752–1910)[[source/portal-2000|p. 139]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

@@ -6,7 +6,7 @@ names:
     text: "{弥生時代|やよいじだい}"
 kind: period
 period: c. 400 BCE–300
-description_md: "**Dates.** Begins with wet-rice farming arriving from the continent in northern Kyushu and ends in the 3rd century with the first keyhole-shaped tombs. The start was long put in the 5th century BCE (Mason: c. 400 BCE; the Tokyo, Kyoto and Nara museums); radiocarbon dates published by the National Museum of Japanese History in 2003 moved it back to about the 9th–8th century BCE[[source/wikipedia-ja-yayoi-jidai|「2003年に国立歴史民俗博物館が放射性炭素年代測定により…」]] — Nabunken follows them (ca. 8th century BCE)[[source/nabunken-style-manual-2022|pp. 29–31]]."
+description_md: "**Dates.** It begins when wet-rice farming arrived from the continent in northern Kyushu. That was long dated to the 5th century BCE (Mason: c. 400 BCE; the Tokyo, Kyoto and Nara museums); radiocarbon dates published by the National Museum of Japanese History in 2003 moved it back to about the 9th–8th century BCE[[source/wikipedia-ja-yayoi-jidai|「2003年に国立歴史民俗博物館が放射性炭素年代測定により…」]], and Nabunken follows them (ca. 8th century BCE)[[source/nabunken-style-manual-2022|pp. 29–31]]. It ends in the mid-3rd century, when the first large keyhole-shaped tombs mark the beginning of the Kofun period[[source/wikipedia-ja-yayoi-jidai|紀元後3世紀中頃まで]][[source/wikipedia-ja-kofun-jidai|「前方後円墳の出現を特徴とし…」]]."
 relationships:
   - type: active_in
     to: place/japan

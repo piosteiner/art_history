@@ -9,7 +9,7 @@ names:
     text: 三國時代
 kind: period
 period: c. 300–668
-description_md: "**Dates.** Goguryeo in the north, Baekje in the southwest and Silla in the southeast — at first four, with the Gaya confederation, which Silla absorbed in 532. The old histories found the kingdoms in 57 BCE (Silla), 37 BCE (Goguryeo), 18 BCE (Baekje) and 42 CE (Gaya); modern scholarship, from archaeology and documents, starts the period around 300 CE and puts a Proto-Three Kingdoms period before it — still disputed. It ends in 668 with the unification of most of the peninsula under Silla[[source/portal-2000|p. 43]]."
+description_md: "**Dates.** Goguryeo in the north, Baekje in the southwest and Silla in the southeast — at first four, with the Gaya confederation, which Silla absorbed in 532. Its start depends on the evidence: the old histories found the kingdoms in 57 BCE (Silla), 37 BCE (Goguryeo), 18 BCE (Baekje) and 42 CE (Gaya); modern scholarship, from archaeology and documents, starts the period about 300 CE, with a Proto-Three Kingdoms period before it — still disputed. It ends in 668, when Silla, allied with Tang China, unified most of the peninsula[[source/portal-2000|p. 43]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

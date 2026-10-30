@@ -8,6 +8,7 @@ kind: period
 parent: jomon-period
 period: -2495 or earlier
 period_label: c. 5000–2500 BCE
+description_md: "**Dates.** One of the six phases into which the Jōmon — too long to treat as one — is usually divided by the development of its pottery[[source/history-of-japanese-art|p. 14]]; its limits are changes in pottery and way of life, dated by radiocarbon, not events. It begins about 5000 BCE with settled villages of pit houses and ends about 2500 BCE, when these grow into the large, trading communities of the Middle Jōmon[[source/history-of-japanese-art|pp. 16, 18]]."
 relationships:
   - type: active_in
     to: place/japan

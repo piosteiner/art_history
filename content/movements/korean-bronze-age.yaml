@@ -9,7 +9,7 @@ names:
     text: 靑銅器時代
 kind: period
 period: 1000 BCE–c. 300 BCE
-description_md: "**Dates.** Begins around 1000 BCE with the first bronzes made in Korea[[source/portal-2000|p. 29]]; it gives way to iron around 300 BCE."
+description_md: "**Dates.** It begins around 1000 BCE with the first bronzes made in Korea[[source/portal-2000|p. 29]] and ends about 300 BCE, when iron takes over and the Early Iron Age begins[[source/portal-2000|p. 38]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

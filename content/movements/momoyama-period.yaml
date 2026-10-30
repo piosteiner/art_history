@@ -12,7 +12,7 @@ names:
     text: "{桃山時代|ももやまじだい}"
 kind: period
 period: 1573/1603
-description_md: "**Dates.** The time of Oda Nobunaga and Toyotomi Hideyoshi, named after their castles at Azuchi and Momoyama (Fushimi). Here 1573–1603, as Nabunken and the Tokyo and Nara museums date it[[source/nabunken-style-manual-2022|pp. 29–31]]: from Nobunaga's expulsion of the last Ashikaga shōgun to Tokugawa Ieyasu's appointment as shōgun. Other starts are 1568 (Nobunaga enters Kyoto) and 1576 (Azuchi castle begun), other ends 1598 (Hideyoshi's death) and 1600 (Sekigahara). Art history usually lets it run to 1615, the fall of the Toyotomi at Osaka — hence \"Momoyama period, 1573–1615\" at the Kyoto National Museum and in Mason[[source/wikipedia-ja-azuchi-momoyama-jidai|美術史では、慶長20年（1615年）の豊臣家滅亡までを…]]."
+description_md: "**Dates.** The time of Oda Nobunaga and Toyotomi Hideyoshi, named after their castles at Azuchi and Momoyama (Fushimi). Here 1573–1603, as Nabunken and the Tokyo and Nara museums date it[[source/nabunken-style-manual-2022|pp. 29–31]]: it begins when Nobunaga drove the last Ashikaga shōgun from Kyoto and ends when Tokugawa Ieyasu was appointed shōgun. Other starts are 1568 (Nobunaga enters Kyoto) and 1576 (Azuchi castle begun); other ends 1598 (Hideyoshi's death) and 1600 (Ieyasu's victory at Sekigahara). Art history usually lets it run to 1615, the fall of the Toyotomi at Osaka — hence “Momoyama period, 1573–1615” at the Kyoto National Museum and in Mason[[source/wikipedia-ja-azuchi-momoyama-jidai|美術史では、慶長20年（1615年）の豊臣家滅亡までを…]]."
 relationships:
   - type: active_in
     to: place/japan

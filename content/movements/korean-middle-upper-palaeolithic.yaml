@@ -3,6 +3,7 @@ name: Middle–Upper Palaeolithic (Korea)
 kind: period
 parent: korean-palaeolithic
 period_label: 40,000–10,000 BCE
+description_md: "**Dates.** A stage of stone-tool industries from about 40,000 BCE, with blade and microblade tools as at Suyanggae; it ends about 10,000 BCE with the Pleistocene — the grey deer and reindeer shown at Sokchang-ri died out as the climate grew warmer[[source/portal-2000|p. 24]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

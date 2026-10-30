@@ -3,6 +3,7 @@ name: Middle Palaeolithic (Korea)
 kind: period
 parent: korean-palaeolithic
 period_label: 100,000–40,000 BCE
+description_md: "**Dates.** A stage of stone-tool industries, not an event: Portal's 100,000–40,000 BCE frame the sites with human remains such as Turubong and Daehyundong[[source/portal-2000|p. 23]]; it is followed by the Middle–Upper Palaeolithic."
 relationships:
   - type: active_in
     to: place/korean-peninsula

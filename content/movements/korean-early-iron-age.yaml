@@ -9,7 +9,7 @@ names:
     text: 初期鐵器時代
 kind: period
 period: -300/-1
-description_md: "**Dates.** Portal's “300 BC–0”: there is no year 0, so it ends here with 1 BCE[[source/portal-2000|p. 38]]. Iron came with the Chinese commanderies in the north, but Choi Sung-rak sees an earlier, native iron industry in the south from the time of Wiman Chosŏn (194–108 BCE)[[source/portal-2000|pp. 38–40]]."
+description_md: "**Dates.** It begins about 300 BCE with iron, which came with the Chinese commanderies in the north — though Choi Sung-rak sees an earlier, native iron industry in the south from the time of Wiman Chosŏn (194–108 BCE)[[source/portal-2000|pp. 38–40]]. Its end at the beginning of the Common Era (Portal's “0”) is a convention dividing the Iron Age, not an event; there is no year 0, so it ends here with 1 BCE[[source/portal-2000|p. 38]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

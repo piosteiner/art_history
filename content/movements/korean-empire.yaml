@@ -10,7 +10,7 @@ names:
 kind: period
 parent: joseon-period
 period: 1897/1910
-description_md: "**Dates.** King Gojong proclaimed Korea an empire in 1897, after moving into the Deoksu palace; from 1905 it was a Japanese protectorate, and it ended with Japan's annexation in 1910[[source/portal-2000|p. 167]]."
+description_md: "**Dates.** It begins in 1897, when King Gojong, after moving into the Deoksu palace, proclaimed Korea an empire; from 1905 it was a Japanese protectorate, and it ends with Japan's annexation of Korea in 1910[[source/portal-2000|p. 167]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

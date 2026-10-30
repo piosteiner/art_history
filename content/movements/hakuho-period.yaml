@@ -6,7 +6,7 @@ names:
     text: "{白鳳時代|はくほうじだい}"
 kind: period
 period: 645/710
-description_md: "**Dates.** An art-historical division: from the Taika coup of 645 to the move to Heijō-kyō in 710, after Mason[[source/history-of-japanese-art|p. 10]]. The national institutions count these years to the Asuka period (592/593–710)[[source/nabunken-style-manual-2022|pp. 29–31]]."
+description_md: "**Dates.** An art-historical division after Mason: it begins with the coup of 645 that opened the Taika Reform and ends in 710 with the move of the capital to Heijō-kyō[[source/history-of-japanese-art|p. 10]]. The national institutions count these years to the Asuka period (592/593–710)[[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan

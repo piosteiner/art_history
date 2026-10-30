@@ -7,7 +7,7 @@ names:
 kind: period
 parent: korean-neolithic
 period: -2000/-1000
-description_md: "**Dates.** The millennium of megaliths (dolmens), stone-cist graves and plain (mumun) pottery: Im Hyo-jae counts it as the Late Neolithic, Sarah Nelson as a Megalithic period of its own, because these signal a profound change in society[[source/portal-2000|pp. 28–29]]."
+description_md: "**Dates.** It begins about 2000 BCE with dolmens and other megaliths, stone-cist graves and plain (mumun) pottery — for Im Hyo-jae the Late Neolithic, for Sarah Nelson a Megalithic period of its own, because these signal a profound change in society — and ends about 1000 BCE, when Korean-made bronzes begin the Bronze Age proper[[source/portal-2000|pp. 28–29]]."
 relationships:
   - type: active_in
     to: place/korean-peninsula

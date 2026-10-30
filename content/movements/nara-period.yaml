@@ -6,7 +6,7 @@ names:
     text: "{奈良時代|ならじだい}"
 kind: period
 period: 710/794
-description_md: "**Dates.** From Empress Genmei's move of the capital to Heijō-kyō (Nara) in 710 to Emperor Kanmu's move to Heian-kyō in 794 — the capital had already left for Nagaoka-kyō in 784[[source/wikipedia-en-nara-period|“Empress Genmei established the capital of Heijō-kyō”]]. All sources agree[[source/nabunken-style-manual-2022|pp. 29–31]]."
+description_md: "**Dates.** It begins in 710, when Empress Genmei moved the capital to Heijō-kyō (Nara), and ends in 794, when Emperor Kanmu moved it to Heian-kyō — after an interim at Nagaoka-kyō from 784[[source/wikipedia-en-nara-period|“Empress Genmei established the capital of Heijō-kyō”]]. All sources agree[[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan

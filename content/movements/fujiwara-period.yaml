@@ -10,6 +10,7 @@ names:
 kind: period
 parent: heian-period
 period: 951/1086
+description_md: "**Dates.** Mason's middle phase of the Heian period, named after the height of the Fujiwara regents' power[[source/history-of-japanese-art|p. 101]]. It begins in 951, for which she names no event (the Fujiwara had ruled as regents since 858), and ends in 1086, when Emperor Shirakawa abdicated and began to govern from retirement as a cloistered emperor[[source/history-of-japanese-art|pp. 101–102]]."
 relationships:
   - type: active_in
     to: place/japan

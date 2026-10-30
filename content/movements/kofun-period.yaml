@@ -6,10 +6,7 @@ names:
     text: "{古墳時代|こふんじだい}"
 kind: period
 period: 300/710
-description_md: |-
-  Defined by archaeology, after its burial mounds (kofun); it runs on through the first two historical periods, Asuka and Hakuhō[[source/history-of-japanese-art|p. 10]].
-
-  **Dates.** Named after the burial mounds (kofun), above all the keyhole-shaped ones; it begins with their appearance in the 3rd century[[source/wikipedia-ja-kofun-jidai|「前方後円墳に代表される古墳が盛んに造られた時代」]]. Its end is open because tombs went on being built into the Asuka period: the 6th century (Nabunken, Kyoto) or the 7th (Tokyo, Nara)[[source/nabunken-style-manual-2022|pp. 29–31]]; Mason lets it run to 710.
+description_md: "**Dates.** Named after its burial mounds (kofun); it begins in the 3rd century with the appearance of the great keyhole-shaped tombs[[source/wikipedia-ja-kofun-jidai|「前方後円墳の出現を特徴とし…」]]. Its end depends on which tombs count: the late 6th century, when keyhole-shaped tombs ceased to be built (Nabunken, Kyoto); the 7th century, to include the smaller “terminal” tombs built on into the Asuka period (Tokyo, Nara)[[source/nabunken-style-manual-2022|pp. 29–31]][[source/wikipedia-ja-shumatsuki-kofun|「6世紀末には前方後円墳築造の時代が終焉を迎える…」]]; or 710 (Mason), letting the archaeological period run on through the Asuka and Hakuhō periods until the move to Heijō-kyō[[source/history-of-japanese-art|p. 10]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -31,4 +28,12 @@ sources:
     - url: https://ja.wikipedia.org/w/index.php?title=%E5%8F%A4%E5%A2%B3%E6%99%82%E4%BB%A3&oldid=111452066
       note: 「前方後円墳に代表される古墳が盛んに造られた時代を指す」 · 「前方後円墳の出現を特徴とし…」
       source: wikipedia-ja-kofun-jidai
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E7%B5%82%E6%9C%AB%E6%9C%9F%E5%8F%A4%E5%A2%B3&oldid=99737344
+      note: 「終末期古墳は、古墳時代末から飛鳥時代にかけての7世紀頃の古墳を指す」 · 「6世紀末には前方後円墳築造の時代が終焉を迎えるという大きな変化があり、それ以降律令制に向かう段階で造営されたのが終末期古墳である」
+      source: wikipedia-ja-shumatsuki-kofun
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%89%8D%E6%96%B9%E5%BE%8C%E5%86%86%E5%A2%B3&oldid=111207476
+      note: 「主に日本列島で3世紀後期から7世紀初頭頃（畿内大王墓は6世紀中頃まで）にかけて築造され」
+      source: wikipedia-ja-zenpo-koenfun
       accessed: 2026-10-30

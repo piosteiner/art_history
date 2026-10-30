@@ -6,12 +6,12 @@ names:
     text: "{元禄|げんろく}"
 kind: period
 parent: edo-period
-period: 1688/1703
-description_md: An imperial reign era; Mason sees in it “the first great artistic flowering following the Momoyama period”[[source/history-of-japanese-art|p. 274]].
+period: 1688-10-23/1704-04-16
+description_md: "**Dates.** An era name (nengō). It began on 23 October 1688, chosen for the beginning of Emperor Higashiyama's reign, and ended on 16 April 1704, when it was changed to Hōei[[source/wikipedia-ja-genroku|東山天皇の代始のため改元 · 宝永に改元]]; Mason gives 1688–1703[[source/history-of-japanese-art|p. 274]]."
 relationships:
   - type: active_in
     to: place/japan
-    period: 1688/1703
+    period: 1688-10-23/1704-04-16
     sources:
       - note: “the imperial reign era known as Genroku (1688–1703)”
         source: history-of-japanese-art
@@ -21,3 +21,7 @@ sources:
     - note: “the imperial reign era known as Genroku (1688–1703)”
       source: history-of-japanese-art
       locator: p. 274
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%85%83%E7%A6%84&oldid=111480120
+      note: 「貞享5年9月30日（グレゴリオ暦1688年10月23日） 東山天皇の代始のため改元」 · 「元禄17年3月13日（グレゴリオ暦1704年4月16日） 宝永に改元」
+      source: wikipedia-ja-genroku
+      accessed: 2026-10-30

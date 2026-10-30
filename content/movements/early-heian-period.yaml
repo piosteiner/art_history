@@ -7,6 +7,7 @@ names:
 kind: period
 parent: heian-period
 period: 794/951
+description_md: "**Dates.** It begins in 794 with the move of the capital to Heian-kyō. Mason ends it in 951 without naming an event for that year: the following phase is defined by the height of the Fujiwara regents' influence, not by a single date[[source/history-of-japanese-art|pp. 10, 101]]."
 relationships:
   - type: active_in
     to: place/japan

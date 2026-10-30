@@ -9,7 +9,7 @@ names:
     text: 舊石器時代
 kind: period
 period_label: before 10,000 BCE
-description_md: "**Dates.** Known from stone tools and cave sites; Portal names a Middle Palaeolithic (100,000–40,000 BCE) and a Middle–Upper Palaeolithic (40,000–10,000 BCE)[[source/portal-2000|pp. 23–24]]. Dates before 4713 BCE cannot be stored here, so the period has a label only."
+description_md: "**Dates.** It begins with the first humans and their stone tools — Homo erectus may have arrived from China about 500,000 years ago, and North Korean archaeologists date the Komunmoru cave to about 400,000 years ago, though the earliest dates are problematic[[source/portal-2000|p. 23]]. It ends around 10,000 BCE with the end of the Ice Age; whether a Mesolithic (10,000–?6000 BCE), a “palaeo-neolithic” or a gap in settlement followed before the Neolithic is disputed[[source/portal-2000|p. 24]]. Dates before 4713 BCE cannot be stored here, so the period has a label only."
 relationships:
   - type: active_in
     to: place/korean-peninsula
