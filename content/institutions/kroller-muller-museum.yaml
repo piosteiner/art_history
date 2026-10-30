@@ -1,0 +1,77 @@
+public_id: 104988
+name: Kröller-Müller Museum
+names:
+  - Kroller-Muller Museum
+  - Otterlo. Rijksmuseum Kröller-Müller
+  - Rijksmuseum Kröller-Müller
+  - Kröller-Müllermuseum
+  - Netherlands. Rijksmuseum Kröller-Müller
+  - KMM
+  - Kröller Müller Museum
+  - Museum Kröller-Müller
+  - Museum Kröller-Müller in Otterlo
+  - Museum Kröller-Müller Otterlo
+  - Museum Kröller-Müller (Otterlo)
+  - Museum Kröller Müller in Otterlo
+  - Museum Kröller Müller Otterlo
+  - Museum Kröller Müller (Otterlo)
+  - lang: fr
+    role: translation
+    text: musée Kröller-Müller
+  - lang: it
+    role: translation
+    text: Museo Kröller-Müller
+  - lang: ja
+    role: translation
+    text: クレラー・ミュラー美術館
+  - lang: zh
+    role: translation
+    text: 克勒勒-米勒博物館
+  - lang: ko
+    role: translation
+    text: 크뢸러 뮐러 미술관
+  - lang: ru
+    role: translation
+    text: Музей Крёллер-Мюллер
+kind: museum
+founded: 1938-07-13
+place: ede
+location: [5.81694, 52.09583]
+address: Houtkampweg 6
+website_url: http://krollermuller.nl
+wikidata_id: Q1051928
+metadata:
+  sources: [Wikidata Q1051928 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a5/Entrance_Kr%C3%B6ller-M%C3%BCller_Museum.JPG/1280px-Entrance_Kr%C3%B6ller-M%C3%BCller_Museum.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Entrance_Kr%C3%B6ller-M%C3%BCller_Museum.JPG
+    license: Public domain
+    credit: Gerardus
+identifiers:
+  bnf: 11878106d
+  gnd: 2029939-4
+  idref: "134541073"
+  lc: n79049137
+  ulan: "500235923"
+  viaf: "151626939"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q1051928
+  place:
+    - accessed: 2026-10-30
+      property: P131
+      wikidata: Q1051928
+  address:
+    - accessed: 2026-10-30
+      property: P6375
+      wikidata: Q1051928
+  founded:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q1051928
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q1051928

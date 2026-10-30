@@ -1,0 +1,59 @@
+public_id: 104989
+name: Helene Kröller-Müller
+given_name: Helene
+family_name: Kröller-Müller
+names:
+  - Helene Müller
+  - Helene Emma Laura Juliane Müller
+  - Helene Emma Laura Juliane Kröller-Müller
+  - Frau Anthony George Kröller
+  - Frau A. G. Kröller
+  - lang: ja
+    role: translation
+    text: ヘレーネ・クレラー＝ミュラー
+  - lang: zh
+    role: translation
+    text: 海倫·克勒勒-米勒
+  - lang: ko
+    role: translation
+    text: 헬레네 크뢸러 뮐러
+  - lang: ru
+    role: translation
+    text: Хелена Мюллер
+kind: person
+occupations: [art collector, philanthropist, painter]
+birth: 1869-02-11
+death: 1939-12-14
+wikidata_id: Q451774
+metadata:
+  sources: [Wikidata Q451774 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b2/Helene_M%C3%BCller_and_Anton_Kr%C3%B6ller_%28cropped%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Helene_M%C3%BCller_and_Anton_Kr%C3%B6ller_(cropped).jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 15692154f
+  gnd: "118724584"
+  idref: "083294732"
+  lc: no99007128
+  rkd: "341183"
+  ulan: "500240807"
+  viaf: "62343661"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q451774
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q451774
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q451774
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q451774

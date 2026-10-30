@@ -1,0 +1,41 @@
+public_id: 104998
+title: La Berceuse
+names:
+  - lang: fr
+    role: translation
+    text: La Berceuse (Van Gogh)
+  - lang: ja
+    role: translation
+    text: ルーラン夫人ゆりかごを揺らす女
+creator: vincent-van-gogh
+created: 1888-12/1889-03
+created_span: uncertain
+wikidata_id: Q24036676
+metadata:
+  sources:
+    - Wikidata Q24036676 (retrieved 2026-10-30)
+sources:
+  names:
+    - accessed: 2026-10-30
+      wikidata: Q24036676
+  created:
+    - wikidata: Q24036676
+      property: P571
+      accessed: 2026-10-30
+    - url: https://www.krollermuller.nl/en/collection/vincent-van-gogh-la-berceuse-portrait-of-madame-roulin-km-109-725
+      source: kroller-muller-la-berceuse-km-109-725
+      accessed: 2026-10-30
+      note: "Kröller-Müller Museum: “December 1888 - January 1889” (the first version)"
+  creator:
+    - accessed: 2026-10-30
+      property: P170
+      wikidata: Q24036676
+kind: versions
+parts_count: 5
+description_md: Van Gogh painted Augustine Roulin, the wife of his friend the postman Joseph Roulin, as “La Berceuse” — seated, holding the cord of a cradle out of view — five times between December 1888 and March 1889[[source/kroller-muller-la-berceuse-km-109-725|“In Arles, Van Gogh befriended the postmaster Joseph Roulin and his wife Augustine. He painted portraits of them and their three children.”]][[source/metmuseum-la-berceuse-1996-435|“Of the five versions of Van Gogh’s portrait of Augustine Roulin, wife of his friend the postmaster of Arles, the present canvas is the one the sitter chose for herself.”]]. The first, now in the [[artwork/la-berceuse-kroller-muller|Kröller-Müller Museum]], he began before his breakdown in December 1888; he gave one version to Madame Roulin herself, now in the [[artwork/la-berceuse-met|Metropolitan Museum]], and sent the other four to his brother Theo[[source/van-gogh-letters|letter 776, notes]]. The others are in [[artwork/la-berceuse-chicago|Chicago]], [[artwork/la-berceuse-boston|Boston]] and the [[artwork/la-berceuse-stedelijk|Stedelijk Museum]] in Amsterdam.
+relationships:
+  - type: depicts_person
+    to: person/augustine-roulin
+  - type: created_in
+    to: place/arles
+    period: 1888-12/1889-03

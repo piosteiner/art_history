@@ -1,0 +1,42 @@
+public_id: 104950
+name: Andreas Schlüter
+given_name: Andreas
+family_name: Schlüter
+names:
+  - Andreas Schluter
+  - Andreas Schlütter
+  - Andrzej Schlüter
+  - lang: zh
+    role: translation
+    text: 安德烈亚斯·施吕特
+  - lang: ru
+    role: translation
+    text: Андреас Шлютер
+birth: c. 1660
+death: 1714
+wikidata_id: Q500465
+metadata:
+  sources: [Wikidata Q500465 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Andreas_Schl%C3%BCter_%28Architekt%29.jpg/1280px-Andreas_Schl%C3%BCter_%28Architekt%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Andreas_Schl%C3%BCter_(Architekt).jpg
+    license: CC BY 3.0
+    credit: James Steakley
+identifiers:
+  bnf: 14591600b
+  gnd: 11860841X
+  idref: "076450139"
+  kulturnav: a35a6caa-ccd5-4de6-8dbd-c2b98988881f
+  lc: n86048374
+  rkd: "70647"
+  ulan: "500002876"
+  viaf: "77108640"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q500465
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q500465

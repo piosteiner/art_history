@@ -1,0 +1,157 @@
+public_id: 105010
+title_lang: en
+title: Madame Roulin Rocking the Cradle (La berceuse)
+names:
+  - La Berceuse
+  - lang: nl
+    role: translation
+    text: La Berceuse (Augustine Roulin)
+parent: la-berceuse
+part_number: "3"
+creator: vincent-van-gogh
+created: "1889"
+kind: oil painting
+medium: Oil on canvas
+materials:
+  - oil paint
+  - canvas
+dimensions:
+  - 92.7
+  - 73.8
+institution: art-institute-of-chicago
+inventory_number: "1926.200"
+web_url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+wikidata_id: Q20265518
+metadata:
+  sources:
+    - Wikidata Q20265518 (retrieved 2026-10-30)
+relationships:
+  - type: depicts_person
+    to: person/augustine-roulin
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Vincent_van_Gogh_-_Madame_Roulin_Rocking_the_Cradle_%28La_berceuse%29_-_1926.200_-_Art_Institute_of_Chicago.jpg/1280px-Vincent_van_Gogh_-_Madame_Roulin_Rocking_the_Cradle_%28La_berceuse%29_-_1926.200_-_Art_Institute_of_Chicago.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Madame_Roulin_Rocking_the_Cradle_(La_berceuse)_-_1926.200_-_Art_Institute_of_Chicago.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: person/theo-van-gogh
+    acquired: 1889-05
+    method: gift
+    label: sent to his brother with the other versions
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+        source: artic-la-berceuse-1926-200
+        accessed: 2026-10-30
+        note: "Art Institute of Chicago, provenance: “The artist; sent to his brother, Theo van Gogh (died 1891) [Letter 767 Vincent van Gogh to Theo van Gogh, May 2, 1889].”"
+      - url: https://vangoghletters.org/vg/letters/let776/notes.html
+        source: van-gogh-letters
+        accessed: 2026-10-30
+        note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
+  - owner: artist/paul-gauguin
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+        source: artic-la-berceuse-1926-200
+        accessed: 2026-10-30
+        note: "Art Institute of Chicago, provenance: “Paul Gauguin, Paris [this and the following according to La Faille 1928, no. 506]”"
+  - owner: person/auguste-pellerin
+    place: paris
+    sources:
+      - url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+        source: artic-la-berceuse-1926-200
+        accessed: 2026-10-30
+        note: "Art Institute of Chicago, provenance: “Auguste Pellerin Collection (died 1929), Paris”"
+  - owner: person/eugene-blot
+    role: dealer
+    place: paris
+    label: Galerie de l’Art E. Blot
+    sources:
+      - url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+        source: artic-la-berceuse-1926-200
+        accessed: 2026-10-30
+        note: "Art Institute of Chicago, provenance: “Galerie de l’Art E. Blot, Paris [Paris 1909]”"
+  - owner: person/leon-paul-amedee-schuffenecker
+    label: Saint-Maur
+    sources:
+      - url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+        source: artic-la-berceuse-1926-200
+        accessed: 2026-10-30
+        note: "Art Institute of Chicago, provenance: “Amédée Schuffenecker (1854-1936), Saint-Maur, Paris”"
+  - owner: person/marcel-bernheim
+    role: dealer
+    place: paris
+    label: Galerie de l’Art Marcel Bernheim
+    sources:
+      - url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+        source: artic-la-berceuse-1926-200
+        accessed: 2026-10-30
+        note: "Art Institute of Chicago, provenance: “Galerie de l’Art Marcel Bernheim, Paris”"
+  - owner: person/frederic-clay-bartlett
+    acquired: by 1923
+    place: chicago
+    label: by at least 1923
+    sources:
+      - url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+        source: artic-la-berceuse-1926-200
+        accessed: 2026-10-30
+        note: "Art Institute of Chicago, provenance: “Frederic Clay Bartlett (died 1953), Chicago by at least 1923 [Bulletin of The Art Institute of Chicago 1923, cover ill.]”"
+  - owner: institution/art-institute-of-chicago
+    acquired: "1926"
+    method: gift
+    direct: true
+    place: chicago
+    label: Helen Birch Bartlett Memorial Collection
+    sources:
+      - url: https://www.artic.edu/artworks/27949/madame-roulin-rocking-the-cradle-la-berceuse
+        source: artic-la-berceuse-1926-200
+        accessed: 2026-10-30
+        note: "Art Institute of Chicago, provenance: “given to the Art Institute of Chicago, 1926.”"
+numbers:
+  - number: F506
+    source: de-la-faille-1970
+    sources:
+      - wikidata: Q20265518
+        property: P528
+        accessed: 2026-10-30
+        note: "Wikidata: catalog code F506"
+  - number: JH1670
+    source: hulsker-1996
+    sources:
+      - wikidata: Q20265518
+        property: P528
+        accessed: 2026-10-30
+        note: "Wikidata: catalog code JH1670"
+sources:
+  names:
+    - accessed: 2026-10-30
+      wikidata: Q20265518
+  parent:
+    - url: https://vangoghletters.org/vg/letters/let776/notes.html
+      source: van-gogh-letters
+      accessed: 2026-10-30
+      note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
+  created:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q20265518
+  creator:
+    - accessed: 2026-10-30
+      property: P170
+      wikidata: Q20265518
+  materials:
+    - accessed: 2026-10-30
+      property: P186
+      wikidata: Q20265518
+  dimensions:
+    - accessed: 2026-10-30
+      property: P2048
+      wikidata: Q20265518
+  institution:
+    - accessed: 2026-10-30
+      property: P195
+      wikidata: Q20265518
+  inventory_number:
+    - accessed: 2026-10-30
+      property: P217
+      wikidata: Q20265518

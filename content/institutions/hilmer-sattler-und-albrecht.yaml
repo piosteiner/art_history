@@ -1,0 +1,23 @@
+public_id: 104970
+name: Hilmer & Sattler und Albrecht
+names:
+  - lang: zh
+    role: translation
+    text: 希尔默与萨特勒及阿布雷希特
+founded: 1974
+place: munich
+website_url: http://www.h-s-a.de/index.php#/start
+wikidata_id: Q1618868
+metadata:
+  sources: [Wikidata Q1618868 (retrieved 2026-10-30)]
+identifiers:
+  gnd: 2114729-2
+sources:
+  place:
+    - accessed: 2026-10-30
+      property: P131
+      wikidata: Q1618868
+  founded:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q1618868

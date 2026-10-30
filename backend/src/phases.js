@@ -93,10 +93,17 @@ async function save(db, artworkId, phase, id = null) {
   return phaseId;
 }
 
+function periodDoc(ph) {
+  if (!ph.period) return { period: ph.period_label || null };
+  const d = require('./content').dateToDoc(ph.period, ph.period_label, true);
+  return { period: d.value, ...(d.label ? { period_label: d.label } : {}) };
+}
 // the phases in doc shape (YAML export): period as written, people as {who, role, patron}
 async function docs(db, artworkId) {
   return (await read(db, artworkId)).map((ph) => Object.fromEntries(Object.entries({
-    kind: ph.kind, title: ph.title, part: ph.part, period: ph.period_label || null, notes_md: ph.notes_md,
+    // the period as the other dates of the YAML: a text that parses back to the same range, the label beside it when
+    // it is free wording ("after 1648, until 1688" doesn't parse — before, the export wrote it and the import failed)
+    kind: ph.kind, title: ph.title, part: ph.part, ...periodDoc(ph), notes_md: ph.notes_md,
     people: ph.people.length ? ph.people.map((p) => Object.fromEntries(Object.entries({ who: `${p.type}/${p.slug}`, role: p.role, patron: p.patron || null })
       .filter(([, v]) => v !== null))) : null,
   }).filter(([, v]) => v !== null)));

@@ -26,10 +26,16 @@ names:
     text: Сумрачный день
 creator: pieter-brueghel-the-elder
 created: 1565
-materials: [oil paint, panel]
+created_label: datiert
+kind: painting
+materials: [oil paint, panel, oak]
 dimensions: [118, 163]
+other_dimensions:
+  - cm: [136, 180, 13]
+    part: frame
 institution: kunsthistorisches-museum-wien
-inventory_number: GG_1837
+inventory_number: Gemäldegalerie, 1837
+web_url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
 wikidata_id: Q698219
 metadata:
   sources: [Wikidata Q698219 (retrieved 2026-10-19)]
@@ -112,30 +118,53 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
+  kind:
+    - url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
+      source: khm-125-jahre
+      accessed: 2026-10-30
   names:
     - accessed: 2026-10-19
       wikidata: Q698219
   created:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P571
       wikidata: Q698219
+    - url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
+      source: khm-125-jahre
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q698219
+    - url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
+      source: khm-125-jahre
+      accessed: 2026-10-30
   materials:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P186
       wikidata: Q698219
   dimensions:
     - accessed: 2026-10-19
       property: P2048
       wikidata: Q698219
+    - url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
+      source: khm-125-jahre
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q698219
+    - url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
+      source: khm-125-jahre
+      accessed: 2026-10-30
+  title_status:
+    - url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
+      source: khm-125-jahre
+      accessed: 2026-10-30
   inventory_number:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P217
       wikidata: Q698219
+    - url: https://www.khm.at/kunstwerke/duesterer-tag-vorfruehling-325
+      source: khm-125-jahre
+      accessed: 2026-10-30

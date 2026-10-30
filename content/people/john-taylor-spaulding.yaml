@@ -1,0 +1,36 @@
+public_id: 104993
+name: John Taylor Spaulding
+given_name: John Taylor
+family_name: Spaulding
+names: [John Spaulding, John T. Spaulding]
+kind: person
+occupations: [art collector, philanthropist]
+birth: 1870
+death: 1948
+wikidata_id: Q78158846
+metadata:
+  sources: [Wikidata Q78158846 (retrieved 2026-10-30)]
+identifiers:
+  bnf: 16209341x
+  gnd: "134200314"
+  idref: "086807641"
+  lc: no2008059252
+  ulan: "500244710"
+  viaf: "57825251"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q78158846
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q78158846
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q78158846
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q78158846

@@ -1,0 +1,69 @@
+public_id: 104967
+name: Frederick I of Prussia
+names:
+  - lang: de
+    role: original
+    text: Friedrich I.
+  - Frederick III
+  - Friedrich I von Preußen
+  - Frederick I
+  - lang: nl
+    role: translation
+    text: Frederik I van Pruisen
+  - lang: fr
+    role: translation
+    text: Frédéric Ier de Prusse
+  - lang: it
+    role: translation
+    text: Federico I di Prussia
+  - lang: es
+    role: translation
+    text: Federico I de Prusia
+  - lang: ja
+    role: translation
+    text: フリードリヒ1世
+  - lang: zh
+    role: translation
+    text: 腓特烈一世
+  - lang: ko
+    role: translation
+    text: 프리드리히 1세
+  - lang: ru
+    role: translation
+    text: Фридрих I Прусский
+kind: person
+occupations: [politician]
+birth: 1657-07-11
+death: 1713-02-25
+wikidata_id: Q151826
+metadata:
+  sources: [Wikidata Q151826 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Antoine_Pesne%3B_Frederik_I_von_Preu%C3%9Fen.jpg/1280px-Antoine_Pesne%3B_Frederik_I_von_Preu%C3%9Fen.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Antoine_Pesne;_Frederik_I_von_Preu%C3%9Fen.jpg
+    license: Public domain
+    credit: Antoine Pesne
+identifiers:
+  bnf: "119967979"
+  gnd: "118535730"
+  idref: "028056582"
+  lc: n84200655
+  rkd: "482840"
+  viaf: "45094002"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q151826
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q151826
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q151826
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q151826

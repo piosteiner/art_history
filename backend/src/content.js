@@ -198,8 +198,10 @@ function toRow(doc, fields) {
         if (v !== null && !SLUG.test(v)) throw new Error('must be a slug');
         refs.push({ col: REF_COLUMNS[key], type: kind.slice(4), slug: v });
       } else {
-        if (v !== null && typeof v !== 'string') throw new Error('must be text');
-        put(key, v);
+        // a number where text is kept (parts_count 7 as the export writes an integer column; inventory 1926.200
+        // unquoted) is read as its text
+        if (v !== null && typeof v !== 'string' && typeof v !== 'number') throw new Error('must be text');
+        put(key, v === null ? null : String(v));
       }
     } catch (err) {
       errors.push(`${key}: ${err.message}`);

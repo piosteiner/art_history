@@ -1,0 +1,14 @@
+public_id: 104961
+name: Andreas Hoferick
+given_name: Andreas
+family_name: Hoferick
+names: [Andreas Artur Hoferick]
+birth: 1959-08-22
+wikidata_id: Q98776035
+metadata:
+  sources: [Wikidata Q98776035 (retrieved 2026-10-30)]
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q98776035

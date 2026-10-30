@@ -1,0 +1,45 @@
+public_id: 104952
+name: Friedrich August Stüler
+given_name: Friedrich August
+family_name: Stüler
+names:
+  - lang: es
+    role: translation
+    text: Frederico Augusto Stüler
+  - lang: ja
+    role: translation
+    text: フリードリヒ・オーギュスト・シュテューラー
+  - lang: zh
+    role: translation
+    text: 弗里德里希·奥古斯特·施蒂勒
+  - lang: ru
+    role: translation
+    text: Фридрих Август Штюлер
+birth: 1800-01-28
+death: 1865-03-18
+wikidata_id: Q61256
+metadata:
+  sources: [Wikidata Q61256 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/2/22/August_Stueler.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:August_Stueler.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: "131694577"
+  gnd: "118619667"
+  idref: "035135603"
+  kulturnav: dbf51836-53c4-44b8-8a77-5965536366dd
+  lc: n88083091
+  rkd: "315844"
+  ulan: "500027949"
+  viaf: "74646104"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q61256
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q61256

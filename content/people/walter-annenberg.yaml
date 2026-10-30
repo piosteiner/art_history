@@ -1,0 +1,53 @@
+public_id: 104991
+name: Walter Annenberg
+given_name: Walter
+family_name: Annenberg
+names:
+  - Walter H. Annenberg
+  - Walter Hubert Annenberg
+  - lang: ja
+    role: translation
+    text: ウォルター・アンネンバーグ
+  - lang: zh
+    role: translation
+    text: 沃爾特·安納伯格
+  - lang: ru
+    role: translation
+    text: Уолтер Анненберг
+kind: person
+occupations: [art collector, diplomat, publisher, businessperson, ambassador]
+birth: 1908-03-13
+death: 2002-10-01
+wikidata_id: Q1750541
+metadata:
+  sources: [Wikidata Q1750541 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Walter_Annenberg_1981.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Walter_Annenberg_1981.jpg
+    license: Public domain
+    credit: Mary Anne Fackelman
+identifiers:
+  bnf: "119608082"
+  gnd: "118927272"
+  idref: "082023913"
+  lc: n50021099
+  rkd: "440427"
+  ulan: "500445590"
+  viaf: "57413680"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q1750541
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q1750541
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q1750541
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q1750541

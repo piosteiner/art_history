@@ -1,0 +1,11 @@
+public_id: 104984
+kind: web
+name: "e-Museum: National Treasures & Important Cultural Properties of the National Institutes for Cultural Heritage"
+names:
+  - lang: ja
+    role: original
+    text: e国宝
+container: National Institutes for Cultural Heritage (NICH), Japan
+url: https://emuseum.nich.go.jp/
+siglum: e-Museum
+reliability: institution

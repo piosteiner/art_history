@@ -1,0 +1,77 @@
+public_id: 104966
+name: Frederick William of Brandenburg
+names:
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Der  Untadeliche
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: Le Grand Électeur
+  - lang: de
+    role: original
+    text: Friedrich Wilhelm von Brandenburg
+  - Friedrich Wilhelm
+  - Great Elector
+  - Frederick William
+  - lang: nl
+    role: translation
+    text: Frederik Willem I van Brandenburg
+  - lang: fr
+    role: translation
+    text: Frédéric-Guillaume Ier
+  - lang: it
+    role: translation
+    text: Federico Guglielmo I di Brandeburgo
+  - lang: es
+    role: translation
+    text: Federico Guillermo I de Brandeburgo
+  - lang: ja
+    role: translation
+    text: フリードリヒ・ヴィルヘルム
+  - lang: zh
+    role: translation
+    text: 腓特烈·威廉
+  - lang: ko
+    role: translation
+    text: 프리드리히 빌헬름 1세
+  - lang: ru
+    role: translation
+    text: Фридрих Вильгельм I
+kind: person
+occupations: [aristocrat, art collector, territorial lord]
+birth: 1620-02-16
+death: 1688-04-29
+wikidata_id: Q152727
+metadata:
+  sources: [Wikidata Q152727 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/31/Frans_Luycx_-_Frederick_William%2C_Elector_of_Brandenburg%2C_at_three-quarter-length.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Frans_Luycx_-_Frederick_William,_Elector_of_Brandenburg,_at_three-quarter-length.jpg
+    license: Public domain
+    credit: Frans Luycx
+identifiers:
+  bnf: 12519319x
+  gnd: 11853596X
+  idref: "034437045"
+  lc: n81052570
+  rkd: "469614"
+  viaf: "67256875"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q152727
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q152727
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q152727
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q152727

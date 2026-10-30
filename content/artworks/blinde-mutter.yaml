@@ -1,17 +1,31 @@
 public_id: 101470
-title: Blind Mother, or The Mother
+title: Blinde Mutter
 names:
   - lang: de
     role: translation
     text: Die blinde Mutter
+  - lang: en
+    role: translation
+    text: Blind Mother, or The Mother
 creator: egon-schiele
 created: 1914
+kind: oil painting
+medium: Öl auf Leinwand
 materials: [oil paint, canvas]
 dimensions: [99, 120]
 institution: leopold-museum
+inventory_number: "483"
+web_url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
 wikidata_id: Q134067801
 metadata:
   sources: [Wikidata Q134067801 (retrieved 2026-10-19)]
+relationships:
+  - type: associated_with
+    to: movement/expressionism
+    sources:
+      - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+        source: leopold-museum-online-sammlung
+        accessed: 2026-10-30
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a9/Egon_Schiele_-_Die_blinde_Mutter.jpg/1280px-Egon_Schiele_-_Die_blinde_Mutter.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Egon_Schiele_-_Die_blinde_Mutter.jpg
@@ -73,14 +87,24 @@ sources:
   names:
     - accessed: 2026-10-19
       wikidata: Q134067801
+  medium:
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   created:
     - accessed: 2026-10-19
       property: P571
       wikidata: Q134067801
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q134067801
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   materials:
     - accessed: 2026-10-19
       property: P186
@@ -89,7 +113,21 @@ sources:
     - accessed: 2026-10-19
       property: P2048
       wikidata: Q134067801
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q134067801
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
+  title_status:
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
+  inventory_number:
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/2-blinde-mutter/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30

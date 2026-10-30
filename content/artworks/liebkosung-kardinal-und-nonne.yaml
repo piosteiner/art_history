@@ -1,19 +1,25 @@
 public_id: 101467
-title_lang: en
-title: Cardinal and Nun (Caress)
+title_lang: de
+title: „Liebkosung“ (Kardinal und Nonne)
 names:
   - lang: de
-    role: translation
+    role: alternative
     text: Kardinal und Nonne („Liebkosung”)
   - lang: ru
     role: translation
     text: Кардинал и монахиня
+  - lang: en
+    role: translation
+    text: Cardinal and Nun (Caress)
 creator: egon-schiele
 created: 1912
+kind: oil painting
+medium: Öl auf Leinwand
 materials: [canvas, oil paint]
 dimensions: [70, 80.5]
 institution: leopold-museum
-inventory_number: LM 455
+inventory_number: "455"
+web_url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
 wikidata_id: Q28797682
 metadata:
   sources: [Wikidata Q28797682 (retrieved 2026-10-19)]
@@ -112,14 +118,24 @@ sources:
   names:
     - accessed: 2026-10-19
       wikidata: Q28797682
+  medium:
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   created:
     - accessed: 2026-10-19
       property: P571
       wikidata: Q28797682
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q28797682
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   materials:
     - accessed: 2026-10-19
       property: P186
@@ -128,11 +144,24 @@ sources:
     - accessed: 2026-10-19
       property: P2048
       wikidata: Q28797682
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q28797682
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
+  title_status:
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   inventory_number:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P217
       wikidata: Q28797682
+    - url: https://onlinecollection.leopoldmuseum.org/objekt/529-liebkosung-kardinal-und-nonne/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30

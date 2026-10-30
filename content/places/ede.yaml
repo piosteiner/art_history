@@ -1,0 +1,16 @@
+public_id: 104987
+name: Ede
+kind: settlement
+location: [5.66667, 52.05]
+wikidata_id: Q26555
+metadata:
+  sources: [Wikidata Q26555 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q26555
+  location:
+    - accessed: 2026-10-30
+      property: P625
+      wikidata: Q26555

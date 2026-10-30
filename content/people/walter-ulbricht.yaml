@@ -1,0 +1,57 @@
+public_id: 104969
+name: Walter Ulbricht
+given_name: Walter
+family_name: Ulbricht
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Walter Ernst Paul Ulbricht
+  - lang: ja
+    role: translation
+    text: ヴァルター・ウルブリヒト
+  - lang: zh
+    role: translation
+    text: 瓦爾特·烏布利希
+  - lang: ko
+    role: translation
+    text: 발터 울브리히트
+  - lang: ru
+    role: translation
+    text: Вальтер Ульбрихт
+kind: person
+occupations: [politician, resistance fighter, communist, joiner]
+birth: 1893-06-30
+death: 1973-08-01
+wikidata_id: Q2628
+metadata:
+  sources: [Wikidata Q2628 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/1/1f/Bundesarchiv_Bild_183-J1231-1002-002_Walter_Ulbricht%2C_Neujahrsansprache.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_183-J1231-1002-002_Walter_Ulbricht,_Neujahrsansprache.jpg
+    license: CC BY-SA 3.0 de
+    credit: Hans-Joachim Spremberg
+identifiers:
+  bnf: "120776932"
+  dodis: P2597
+  gnd: "118625179"
+  idref: "027786714"
+  lc: n80036630
+  viaf: "36942645"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q2628
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q2628
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q2628
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q2628

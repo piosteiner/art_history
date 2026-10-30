@@ -1,0 +1,28 @@
+public_id: 104955
+name: Konrad Krebs
+given_name: Konrad
+family_name: Krebs
+names: [Conrad Krebs, Contz Krebs, Cuntz Krebs]
+birth: 1492
+death: 1540-09-01
+wikidata_id: Q108738
+metadata:
+  sources: [Wikidata Q108738 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/7/72/Cranach-Conrad-Krebs-Reims.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Cranach-Conrad-Krebs-Reims.jpg
+    license: Public domain
+    credit: Lucas Cranach the Elder
+identifiers:
+  gnd: "129307467"
+  ulan: "500090417"
+  viaf: "25679290"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q108738
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q108738

@@ -1,0 +1,11 @@
+public_id: 104982
+kind: web
+name: Japan Search
+names:
+  - lang: ja
+    role: original
+    text: ジャパンサーチ
+container: National Diet Library, Japan
+url: https://jpsearch.go.jp/
+siglum: Japan Search
+reliability: database

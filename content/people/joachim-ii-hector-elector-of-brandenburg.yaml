@@ -1,0 +1,70 @@
+public_id: 104964
+name: Joachim II Hector, Elector of Brandenburg
+names:
+  - lang: de
+    role: original
+    text: Joachim II. Hector
+  - Joachim II Hektor
+  - Joachim II of Brandenburg
+  - Joachim of Brandenburg
+  - Joachim Brandenburg
+  - Joachim II
+  - lang: nl
+    role: translation
+    text: Joachim II Hector van Brandenburg
+  - lang: fr
+    role: translation
+    text: Joachim II Hector
+  - lang: de
+    role: original
+    text: Joachim II.
+  - lang: it
+    role: translation
+    text: Gioacchino II di Brandeburgo
+  - lang: es
+    role: translation
+    text: Joaquín II de Brandeburgo
+  - lang: ja
+    role: translation
+    text: ヨアヒム2世
+  - lang: zh
+    role: translation
+    text: 约阿希姆二世
+  - lang: ru
+    role: translation
+    text: Иоахим II Гектор
+kind: person
+occupations: [aristocrat]
+birth: 1505-01-23
+death: 1571-01-13
+wikidata_id: Q506527
+metadata:
+  sources: [Wikidata Q506527 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Joachim_II_of_Brandenburg_by_Lucas_Cranach_the_Younger.jpg/1280px-Joachim_II_of_Brandenburg_by_Lucas_Cranach_the_Younger.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Joachim_II_of_Brandenburg_by_Lucas_Cranach_the_Younger.jpg
+    license: Public domain
+    credit: Lucas Cranach the Younger
+identifiers:
+  bnf: 10701429f
+  gnd: "118557556"
+  idref: "155507958"
+  lc: no2007104086
+  viaf: "13099234"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q506527
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q506527
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q506527
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q506527

@@ -1,0 +1,67 @@
+public_id: 104965
+name: John George, Elector of Brandenburg
+names:
+  - lang: de
+    role: original
+    text: Johann Georg von Brandenburg
+  - John George of Brandenburg
+  - lang: nl
+    role: translation
+    text: Johan George van Brandenburg
+  - lang: fr
+    role: translation
+    text: Jean II Georges
+  - lang: de
+    role: original
+    text: Johann Georg
+  - lang: it
+    role: translation
+    text: Giovanni Giorgio di Brandeburgo
+  - lang: es
+    role: translation
+    text: Juan Jorge de Brandeburgo
+  - lang: ja
+    role: translation
+    text: ヨハン・ゲオルク
+  - lang: zh
+    role: translation
+    text: 约翰·乔治
+  - lang: ko
+    role: translation
+    text: 요한 게오르크
+  - lang: ru
+    role: translation
+    text: Иоганн Георг
+kind: person
+occupations: [Catholic priest, Catholic bishop]
+birth: 1525-09-21
+death: 1598-01-18
+wikidata_id: Q505918
+metadata:
+  sources: [Wikidata Q505918 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c4/JohannGeorg1564.JPG/1280px-JohannGeorg1564.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:JohannGeorg1564.JPG
+    license: Public domain
+    credit: Lucas Cranach the Younger
+identifiers:
+  gnd: "102111588"
+  idref: "240451996"
+  viaf: "15152774"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q505918
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q505918
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q505918
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q505918

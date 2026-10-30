@@ -1,0 +1,112 @@
+public_id: 105007
+title_lang: en
+title: Augustine Roulin (Rocking a Cradle)
+names:
+  - lang: nl
+    role: original
+    text: Augustine Roulin (La berceuse)
+  - Portrait of Madame Roulin
+  - lang: en
+    role: original
+    text: La Berceuse
+parent: la-berceuse
+part_number: "5"
+creator: vincent-van-gogh
+created: "1889"
+kind: oil painting
+medium: Oil on canvas
+materials:
+  - oil paint
+  - canvas
+dimensions:
+  - 91
+  - 72
+institution: stedelijk-museum-amsterdam
+inventory_number: A 965
+web_url: https://www.stedelijk.nl/en/collection/962-vincent-van-gogh-augustine-roulin-(la-berceuse)
+wikidata_id: Q18689442
+metadata:
+  sources:
+    - Wikidata Q18689442 (retrieved 2026-10-30)
+relationships:
+  - type: depicts_person
+    to: person/augustine-roulin
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Vincent_van_Gogh_-_La_berceuse_%28Portret_van_Madame_Roulin%29_-_Google_Art_Project.jpg/1280px-Vincent_van_Gogh_-_La_berceuse_%28Portret_van_Madame_Roulin%29_-_Google_Art_Project.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_La_berceuse_(Portret_van_Madame_Roulin)_-_Google_Art_Project.jpg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: person/theo-van-gogh
+    acquired: 1889-05
+    method: gift
+    label: sent to his brother with the other versions
+    place: paris
+    sources:
+      - url: https://vangoghletters.org/vg/letters/let776/notes.html
+        source: van-gogh-letters
+        accessed: 2026-10-30
+        note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
+  - owner: person/vincent-willem-van-gogh
+    place: laren
+    label: ir. V.W. van Gogh, Laren — Theo’s son
+    sources:
+      - &a1
+        url: https://www.stedelijk.nl/en/collection/962-vincent-van-gogh-augustine-roulin-(la-berceuse)
+        source: stedelijk-augustine-roulin-a-965
+        accessed: 2026-10-30
+        note: "Stedelijk Museum Amsterdam, credit line: “gift of ir. V.W. van Gogh, Laren (NL)” (read in a web search’s summary of the page)"
+  - owner: institution/stedelijk-museum-amsterdam
+    method: gift
+    place: amsterdam
+    label: gift of ir. V.W. van Gogh, Laren
+    sources:
+      - *a1
+numbers:
+  - number: F507
+    source: de-la-faille-1970
+    sources:
+      - wikidata: Q18689442
+        property: P528
+        accessed: 2026-10-30
+        note: "Wikidata: catalog code F507"
+  - number: JH1672
+    source: hulsker-1996
+    sources:
+      - wikidata: Q18689442
+        property: P528
+        accessed: 2026-10-30
+        note: "Wikidata: catalog code JH1672"
+sources:
+  names:
+    - accessed: 2026-10-30
+      wikidata: Q18689442
+  parent:
+    - url: https://vangoghletters.org/vg/letters/let776/notes.html
+      source: van-gogh-letters
+      accessed: 2026-10-30
+      note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
+  created:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q18689442
+  creator:
+    - accessed: 2026-10-30
+      property: P170
+      wikidata: Q18689442
+  materials:
+    - accessed: 2026-10-30
+      property: P186
+      wikidata: Q18689442
+  dimensions:
+    - accessed: 2026-10-30
+      property: P2048
+      wikidata: Q18689442
+  institution:
+    - accessed: 2026-10-30
+      property: P195
+      wikidata: Q18689442
+  inventory_number:
+    - accessed: 2026-10-30
+      property: P217
+      wikidata: Q18689442

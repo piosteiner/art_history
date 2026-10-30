@@ -1,5 +1,5 @@
 public_id: 101411
-title: Big Fish Eat Little Fish
+title: Die großen Fische fressen die kleinen-1556
 names:
   - lang: nl
     role: translation
@@ -7,9 +7,9 @@ names:
   - lang: fr
     role: translation
     text: Les gros poissons mangent les petits
-  - lang: de
+  - lang: en
     role: translation
-    text: Die großen Fische fressen die kleinen
+    text: Big Fish Eat Little Fish
   - lang: it
     role: translation
     text: I pesci grandi mangiano i pesci piccoli
@@ -21,9 +21,16 @@ names:
     text: Большие рыбы поедают малых
 creator: pieter-brueghel-the-elder
 created: 1556
+kind: drawing
+medium: Feder und Pinsel in Grau und Schwarz
 materials: [ink]
+dimensions: [21.6, 30.7]
+other_dimensions:
+  - cm: [52.1, 43.5, 2.4]
+    part: frame
 institution: albertina
 inventory_number: "7875"
+web_url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
 wikidata_id: Q698510
 metadata:
   sources: [Wikidata Q698510 (retrieved 2026-10-19)]
@@ -119,26 +126,58 @@ provenance:
         source: aeiou-albertina
         accessed: 2026-10-19
 sources:
+  kind:
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   names:
     - accessed: 2026-10-19
       wikidata: Q698510
+  medium:
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   created:
     - accessed: 2026-10-19
       property: P571
       wikidata: Q698510
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q698510
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   materials:
     - accessed: 2026-10-19
       property: P186
       wikidata: Q698510
+  dimensions:
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q698510
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  title_status:
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   inventory_number:
     - accessed: 2026-10-19
       property: P217
       wikidata: Q698510
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  other_dimensions:
+    - url: https://sammlungenonline.albertina.at/de/objects/28754/die-groen-fische-fressen-die-kleinen
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30

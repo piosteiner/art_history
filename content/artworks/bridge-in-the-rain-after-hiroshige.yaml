@@ -1,11 +1,13 @@
 public_id: 100005
 title: Bridge in the Rain (after Hiroshige)
 creator: vincent-van-gogh
-created: 1887
-kind: painting
+created: 1887-10/1887-11
+kind: oil painting
 medium: Oil on canvas
+materials: [oil paint, canvas]
+dimensions: [73.3, 53.8]
 institution: van-gogh-museum
-on_loan: true
+web_url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
 relationships:
   - type: created_in
     to: place/paris
@@ -58,3 +60,28 @@ provenance:
     place: amsterdam
     label: on loan until the museum opened
     sources: ["Van Gogh Museum, Amsterdam, s0114V1962 (Bridge in the Rain (after Hiroshige)), provenance"]
+sources:
+  medium:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
+      source: van-gogh-museum-collection
+      accessed: 2026-10-30
+  created:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
+      source: van-gogh-museum-collection
+      accessed: 2026-10-30
+  creator:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
+      source: van-gogh-museum-collection
+      accessed: 2026-10-30
+  dimensions:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
+      source: van-gogh-museum-collection
+      accessed: 2026-10-30
+  institution:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
+      source: van-gogh-museum-collection
+      accessed: 2026-10-30
+  title_status:
+    - url: https://www.vangoghmuseum.nl/en/collection/s0114V1962
+      source: van-gogh-museum-collection
+      accessed: 2026-10-30

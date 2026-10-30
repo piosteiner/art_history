@@ -1,0 +1,27 @@
+public_id: 104953
+name: Franco Stella
+given_name: Franco
+family_name: Stella
+names:
+  - Francesco Stella
+  - lang: zh
+    role: translation
+    text: 佛朗哥·斯泰拉
+  - lang: ru
+    role: translation
+    text: Франко Стелла
+birth: 1943-04-24
+wikidata_id: Q13455339
+metadata:
+  sources: [Wikidata Q13455339 (retrieved 2026-10-30)]
+identifiers:
+  gnd: "124659802"
+  idref: "151484074"
+  lc: n87130355
+  ulan: "500065870"
+  viaf: "96134422"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q13455339

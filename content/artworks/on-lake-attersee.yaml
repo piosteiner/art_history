@@ -13,7 +13,7 @@ medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [80.2, 80.2, 2.1]
 institution: leopold-museum
-inventory_number: LM 4148
+inventory_number: "4148"
 web_url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
 wikidata_id: Q19912809
 metadata:
@@ -136,7 +136,7 @@ sources:
       source: leopold-museum-online-sammlung
       accessed: 2026-10-21
   names:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       wikidata: Q19912809
   medium:
     - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
@@ -165,11 +165,17 @@ sources:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q19912809
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30
   title_status:
     - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
       source: leopold-museum-online-sammlung
-      accessed: 2026-10-27
+      accessed: 2026-10-30
   inventory_number:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P217
       wikidata: Q19912809
+    - url: https://onlinecollection.leopoldmuseum.org/en/object/4328-on-lake-attersee/
+      source: leopold-museum-online-sammlung
+      accessed: 2026-10-30

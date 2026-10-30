@@ -1,0 +1,33 @@
+public_id: 104996
+name: Louis Eugène Blot
+given_name: Louis Eugène
+family_name: Blot
+names: [Eugène Blot]
+kind: person
+occupations: [brazier, art dealer, art collector, founder]
+birth: 1857-04-22
+death: 1938-09-06
+wikidata_id: Q111022344
+metadata:
+  sources: [Wikidata Q111022344 (retrieved 2026-10-30)]
+identifiers:
+  bnf: 10843823z
+  gnd: "1323121773"
+  viaf: "316492330"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q111022344
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q111022344
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q111022344
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q111022344

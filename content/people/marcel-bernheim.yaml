@@ -1,0 +1,28 @@
+public_id: 104997
+name: Marcel Bernheim
+given_name: Marcel
+family_name: Bernheim
+kind: person
+occupations: [art dealer]
+birth: 19th century
+death: 20th century
+wikidata_id: Q106452379
+metadata:
+  sources: [Wikidata Q106452379 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q106452379
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q106452379
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q106452379
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q106452379

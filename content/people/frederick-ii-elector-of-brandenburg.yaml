@@ -1,0 +1,65 @@
+public_id: 104963
+name: Frederick II, Elector of Brandenburg
+names:
+  - lang: de
+    role: original
+    text: Friedrich II von Brandenburg
+  - Frederick II of Brandenburg
+  - the Iron
+  - Irontooth
+  - Friedrich II
+  - lang: nl
+    role: translation
+    text: Frederik II van Brandenburg
+  - lang: fr
+    role: translation
+    text: Frédéric II
+  - lang: de
+    role: original
+    text: Friedrich II.
+  - lang: it
+    role: translation
+    text: Federico II di Brandeburgo
+  - lang: es
+    role: translation
+    text: Federico II de Brandeburgo
+  - lang: ja
+    role: translation
+    text: フリードリヒ2世
+  - lang: zh
+    role: translation
+    text: 腓特烈二世 (勃兰登堡)
+  - lang: ru
+    role: translation
+    text: Фридрих II Железный Зуб
+kind: person
+occupations: [ruler]
+birth: 1413-11-28
+death: 1471-02-19
+wikidata_id: Q701736
+metadata:
+  sources: [Wikidata Q701736 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/4b/Friedrich_II_300f.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Friedrich_II_300f.jpg
+    license: Public domain
+identifiers:
+  gnd: 11853565X
+  viaf: "22932880"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q701736
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q701736
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q701736
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q701736

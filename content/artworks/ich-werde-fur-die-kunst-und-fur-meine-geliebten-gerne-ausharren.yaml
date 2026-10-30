@@ -1,19 +1,19 @@
 public_id: 101429
 title_lang: de
-title: Ich werde für die Kunst und meine Geliebten gerne ausharren - 25-4-1912
+title: '"Ich werde für die Kunst und für meine Geliebten gerne ausharren!"'
 names:
   - lang: en
-    role: original
-    text: I Will Gladly Endure for Art and My Loved Ones, 1912
-  - lang: en
-    role: original
+    role: translation
     text: I Will Gladly Endure for Art and My Loved Ones
 creator: egon-schiele
-created: 1912
-materials: [pencil, paper, watercolor paint]
+created: 1912-04-25
+kind: drawing
+medium: Bleistift, Pinsel, Aquarell auf Japanpapier, grundiert
+materials: [pencil, paper, watercolor paint, japan paper]
 dimensions: [47.9, 31.9]
 institution: albertina
 inventory_number: "31027"
+web_url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
 wikidata_id: Q18684943
 metadata:
   sources: [Wikidata Q18684943 (retrieved 2026-10-19)]
@@ -42,30 +42,57 @@ provenance:
         source: albertina-sammlungen-online
         accessed: 2026-10-19
 sources:
+  kind:
+    - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   names:
     - accessed: 2026-10-19
       wikidata: Q18684943
+  medium:
+    - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   created:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P571
       wikidata: Q18684943
+    - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q18684943
+    - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   materials:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P186
       wikidata: Q18684943
   dimensions:
     - accessed: 2026-10-19
       property: P2048
       wikidata: Q18684943
+    - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q18684943
+    - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  title_status:
+    - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
   inventory_number:
     - accessed: 2026-10-19
       property: P217
       wikidata: Q18684943
+    - url: https://sammlungenonline.albertina.at/de/objects/3079/ich-werde-fur-die-kunst-und-fur-meine-geliebten-gerne-ausha
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30

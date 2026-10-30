@@ -1,0 +1,47 @@
+public_id: 104951
+name: Johann Friedrich Eosander von Göthe
+given_name: Johann Friedrich Eosander
+family_name: von Göthe
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Johann Friedrich Nilsson Eosander
+  - Freiherr von Goethe
+  - Johann Friedrich Eosander
+  - Johann Friedrich Göthe
+  - Freiherr Von Goethe Eosander
+  - lang: zh
+    role: translation
+    text: 約翰·弗里德里希·伊桑德·馮·哥德
+  - lang: ru
+    role: translation
+    text: Иоганн Фридрих Эозандер фон Гёте
+birth: 1669
+death: 1728-05-22
+wikidata_id: Q880660
+metadata:
+  sources: [Wikidata Q880660 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fd/Eosander_von_G%C3%B6the.jpg/1280px-Eosander_von_G%C3%B6the.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Eosander_von_G%C3%B6the.jpg
+    license: Public domain
+    credit: Johann Georg Wolfgang / After Antoine Pesne
+identifiers:
+  bnf: "165375596"
+  gnd: 11868499X
+  idref: "069235236"
+  kulturnav: 0c8445c4-5dad-47d7-98bc-4e5c90dc0e3b
+  lc: no2002073595
+  rkd: "26422"
+  ulan: "500017189"
+  viaf: "95786687"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q880660
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q880660

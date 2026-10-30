@@ -7,12 +7,14 @@ names:
     text: "Les Nymphéas : Les Deux Saules"
 creator: claude-monet
 created: 1914/1926
-created_label: c. 20th century
 created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [200, 1700]
 institution: musee-de-l-orangerie
 inventory_number: INV 20104
+web_url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
 location: [2.32254, 48.86385]
 wikidata_id: Q28797624
 metadata:
@@ -55,30 +57,60 @@ provenance:
         source: wikipedia-fr-nympheas-orangerie
         accessed: 2026-10-20
 sources:
+  kind:
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30
   names:
     - accessed: 2026-10-20
       wikidata: Q28797624
+  medium:
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30
   created:
-    - accessed: 2026-10-20
+    - accessed: 2026-10-30
       property: P571
       wikidata: Q28797624
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q28797624
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30
   materials:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q28797624
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30
   dimensions:
     - accessed: 2026-10-20
       property: P2048
       wikidata: Q28797624
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q28797624
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30
+  title_status:
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30
   inventory_number:
     - accessed: 2026-10-20
       property: P217
       wikidata: Q28797624
+    - url: https://www.musee-orangerie.fr/fr/oeuvres/les-deux-saules-196306
+      source: musee-orangerie-fr
+      accessed: 2026-10-30

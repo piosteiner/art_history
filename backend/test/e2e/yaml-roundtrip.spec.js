@@ -14,6 +14,11 @@ const run = (script, dir, args = []) => execFileSync('node', [script, ...args],
 test('the export imports again: public numbers as numbers, an older quoted one accepted, nothing changed', () => {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'arthistory-roundtrip-'));
   sql("UPDATE artworks SET inventory_number = 'RT 1' WHERE current_institution_id IS NOT NULL AND id = (SELECT min(id) FROM artworks WHERE current_institution_id IS NOT NULL)");
+  // a whole's number of parts (an integer column: written as a number) and a building phase dated in free words
+  // ("after 1648, until 1688" doesn't parse back — the export writes the range and the words beside it), 2026-10-30
+  sql(`UPDATE artworks SET parts_count = 3 WHERE slug = 'the-starry-night';
+       INSERT INTO artwork_phases (artwork_id, position, kind, title, period, period_label)
+       VALUES (entity_id('artwork', 'the-starry-night'), 1, 'construction', 'RT phase', '[1648-01-01,1689-01-01)', 'after 1648, until 1688')`);
   try {
     run('scripts/export.js', dir);
     const file = path.join(dir, 'artists', 'vincent-van-gogh.yaml');
@@ -25,7 +30,7 @@ test('the export imports again: public numbers as numbers, an older quoted one a
     expect(out).toMatch(/unchanged/);
     expect(out).not.toMatch(/^ *\d+ [a-z ]+ (inserted|updated)$/m);
   } finally {
-    sql("UPDATE artworks SET inventory_number = NULL WHERE inventory_number = 'RT 1'");
+    sql("UPDATE artworks SET inventory_number = NULL WHERE inventory_number = 'RT 1'; UPDATE artworks SET parts_count = NULL WHERE slug = 'the-starry-night'; DELETE FROM artwork_phases WHERE title = 'RT phase'");
     fs.rmSync(dir, { recursive: true, force: true });
   }
 });

@@ -1,6 +1,6 @@
 public_id: 101307
-title_lang: en
-title: Children’s Games
+title_lang: de
+title: Kinderspiele
 names:
   - Bruegel, Pieter, approximately 1525-1569. Children's games
   - Children at play
@@ -33,10 +33,19 @@ names:
     text: Детские игры
 creator: pieter-brueghel-the-elder
 created: 1560
-materials: [oil paint, panel]
+created_label: datiert
+kind: painting
+medium: Oil on wood
+materials: [oil paint, panel, oak]
 dimensions: [118, 161]
+other_dimensions:
+  - cm: [116.4, 160.3, 1.2]
+    part: Bildmass
+  - cm: [138, 182, 8]
+    part: frame
 institution: kunsthistorisches-museum-wien
-inventory_number: GG_1017
+inventory_number: Gemäldegalerie, 1017
+web_url: https://www.khm.at/kunstwerke/kinderspiele-321
 wikidata_id: Q697332
 metadata:
   sources: [Wikidata Q697332 (retrieved 2026-10-19)]
@@ -72,30 +81,53 @@ provenance:
 identifiers:
   gnd: 4509804-9
 sources:
+  kind:
+    - url: https://www.khm.at/kunstwerke/kinderspiele-321
+      source: khm-125-jahre
+      accessed: 2026-10-30
   names:
     - accessed: 2026-10-19
       wikidata: Q697332
   created:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P571
       wikidata: Q697332
+    - url: https://www.khm.at/kunstwerke/kinderspiele-321
+      source: khm-125-jahre
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q697332
+    - url: https://www.khm.at/kunstwerke/kinderspiele-321
+      source: khm-125-jahre
+      accessed: 2026-10-30
   materials:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P186
       wikidata: Q697332
   dimensions:
     - accessed: 2026-10-19
       property: P2048
       wikidata: Q697332
+    - url: https://www.khm.at/kunstwerke/kinderspiele-321
+      source: khm-125-jahre
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q697332
+    - url: https://www.khm.at/kunstwerke/kinderspiele-321
+      source: khm-125-jahre
+      accessed: 2026-10-30
+  title_status:
+    - url: https://www.khm.at/kunstwerke/kinderspiele-321
+      source: khm-125-jahre
+      accessed: 2026-10-30
   inventory_number:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P217
       wikidata: Q697332
+    - url: https://www.khm.at/kunstwerke/kinderspiele-321
+      source: khm-125-jahre
+      accessed: 2026-10-30

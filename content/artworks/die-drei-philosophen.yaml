@@ -3,10 +3,10 @@ title_lang: de
 title: Die drei Philosophen
 names:
   - lang: en
-    role: original
+    role: translation
     text: Three Philosophers
   - lang: en
-    role: original
+    role: translation
     text: The Three Philosophers
   - lang: nl
     role: translation
@@ -33,13 +33,20 @@ names:
     role: translation
     text: Три философа
 creator: giorgione
-created: 1500/1509
-created_label: 1500s
+created: 1508/1509
 created_span: uncertain
+kind: painting
 materials: [oil paint, canvas]
-dimensions: [125.5, 146.2]
+dimensions: [125.5, 146.2, 3.5]
+dimensions_note: Bildmass links stark beschnitten
+other_dimensions:
+  - cm: [156.5, 177, 7.5]
+    part: frame without glass
+  - cm: [156.5, 177, 9.5]
+    part: frame with glass
 institution: kunsthistorisches-museum-wien
-inventory_number: GG_111
+inventory_number: Gemäldegalerie, 111
+web_url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
 wikidata_id: Q877191
 metadata:
   sources: [Wikidata Q877191 (retrieved 2026-10-19)]
@@ -114,30 +121,50 @@ identifiers:
   gnd: 4387271-2
   viaf: "183010887"
 sources:
+  kind:
+    - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+      source: khm-125-jahre
+      accessed: 2026-10-30
   names:
     - accessed: 2026-10-19
       wikidata: Q877191
   created:
-    - accessed: 2026-10-19
-      property: P571
-      wikidata: Q877191
+    - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+      source: khm-125-jahre
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q877191
+    - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+      source: khm-125-jahre
+      accessed: 2026-10-30
   materials:
     - accessed: 2026-10-19
       property: P186
       wikidata: Q877191
   dimensions:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P2048
       wikidata: Q877191
+    - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+      source: khm-125-jahre
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q877191
+    - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+      source: khm-125-jahre
+      accessed: 2026-10-30
+  title_status:
+    - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+      source: khm-125-jahre
+      accessed: 2026-10-30
   inventory_number:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P217
       wikidata: Q877191
+    - url: https://www.khm.at/kunstwerke/die-drei-philosophen-823
+      source: khm-125-jahre
+      accessed: 2026-10-30

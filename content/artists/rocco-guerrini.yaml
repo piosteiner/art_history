@@ -1,0 +1,43 @@
+public_id: 104957
+name: Rocco Guerrini
+given_name: Rocco
+family_name: Guerrini
+names:
+  - Rochus Quirinus Graf zu Lynar
+  - Rochus zu Lynar
+  - Rochus Quirinus Linar
+  - Rochus Querini, Graf zu Lynar
+  - Guerini, Rochus Linar
+  - Graf zu Linar
+  - Guerini, Rochus Lynar
+  - Rochus Guerini
+  - Rochus Quirinus Lynar
+  - Rochus Quirinus, Graf zu Lynar
+  - Graf zu Lynar
+  - Rochus Quirinus, Graf zu Linar
+  - lang: nl
+    role: translation
+    text: Rochus Quirinus zu Lynar
+birth: 1525-12-24
+death: 1596-12-22
+wikidata_id: Q1344511
+metadata:
+  sources: [Wikidata Q1344511 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Rochus_zu_Lynar_1.JPG/1280px-Rochus_zu_Lynar_1.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Rochus_zu_Lynar_1.JPG
+    license: Public domain
+    credit: Brücke-Osteuropa
+identifiers:
+  gnd: "118575554"
+  ulan: "500083749"
+  viaf: "96284009"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q1344511
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q1344511

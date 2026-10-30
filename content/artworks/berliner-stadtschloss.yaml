@@ -5,29 +5,208 @@ names:
   - lang: de
     role: translation
     text: Berliner Schloss
-created: 1451
-location: [13.40278, 52.5175]
+attribution_label: Andreas Schlüter, Johann Friedrich Eosander and others; rebuilt by Franco Stella
+created: 1443/1718
+created_span: duration
+web_url: https://www.humboldtforum.org/de/architektur/
+location:
+  - 13.40278
+  - 52.5175
+description_md: |-
+  The residence of the Hohenzollern in Berlin — electors of Brandenburg, from 1701 kings in Prussia, from 1871 German emperors[[source/wikipedia-de-berliner-schloss|„Es war ursprünglich die Hauptresidenz der Kurfürsten von Brandenburg aus dem Haus Hohenzollern, die 1701 zu preußischen Königen und 1871 zu deutschen Kaisern aufstiegen“]]. Begun in 1443 as a fortified castle, rebuilt in the 16th century as a Renaissance palace and from 1698 as a Baroque royal residence: “The palace was built from 1698 to 1718 after designs by the architects Andreas Schlüter and Johann Friedrich von Eosander”, one of the most important secular Baroque buildings north of the Alps[[source/humboldt-forum-architektur|„Das Schloss entstand von 1698 bis 1718 nach Entwürfen der Architekten Andreas Schlüter und Johann Friedrich von Eosander. Es galt als einer der bedeutendsten profanen Barockbauten nördlich der Alpen“]]. Its dome was added in 1845–1853.
+
+  Burnt out in 1945 and blown up in 1950, it was rebuilt from 2013 as the Humboldt Forum, which “repeats large parts of the facades” and joins them with modern parts[[source/humboldt-forum-architektur|„Architektonisch wiederholt das Humboldt Forum große Teile der Fassaden des 1945 zerstörten und 1950 gesprengten Berliner Schlosses und verbindet sie mit modernen Bauteilen“]]: reconstructed are the three Baroque outer facades with the dome and the three Baroque facades of the Schlüterhof[[source/humboldt-forum-architektur|„Rekonstruiert wurden die drei barocken Außenfassaden samt Kuppel und die drei barocken Fassaden des Schlüterhofes“]]; the east facade, the passage through the building and the interiors are new, by Franco Stella[[source/humboldt-forum-architektur|„Die moderne Architektur der Ostfassade …“ · „Mit der „Passage“, einem Fußgängerdurchgang quer durch das Gebäude, macht Stella das Humboldt Forum und seine Innenhöfe zu neuen öffentlichen Orten Berlins“]]. Who built which part, and when: see the building history.
 wikidata_id: Q170119
 metadata:
-  sources: [Wikidata Q170119 (retrieved 2026-10-27)]
+  sources:
+    - Wikidata Q170119 (retrieved 2026-10-27)
 relationships:
   - type: created_in
     to: place/berlin
     period: 1451
 images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Berliner_Stadtschloss%2C_September_2022-L1000099.jpg/1280px-Berliner_Stadtschloss%2C_September_2022-L1000099.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Berliner_Stadtschloss,_September_2022-L1000099.jpg
+    license: CC BY-SA 4.0
+    credit: Frank Schulenburg
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/32/Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg/1280px-Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Berlin-Mitte-Ehemaliges_Berliner_Schloss-ZI-0136-06-Th176311.jpg
     license: Public domain
     credit: Königlich Preußische Messbildanstalt
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Reconstruction_of_Berlin_Palace_in_05_2015_02.jpg/1280px-Reconstruction_of_Berlin_Palace_in_05_2015_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Reconstruction_of_Berlin_Palace_in_05_2015_02.jpg
+    license: CC0
+    credit: Perituss
+phases:
+  - kind: construction
+    title: First castle
+    period: 31 July 1443–1451
+    notes_md: Elector Frederick II laid the foundation stone on 31 July 1443; the castle was finished in 1451[[source/wikipedia-de-berliner-schloss|„Friedrich II. legte am 31. Juli 1443 („wurde der Erste stein gelegt am newen Sloss zu Cöln“) den Grundstein für den ersten Schlossbau, der 1451 fertiggestellt war“]] — a fortified castle and citadel against the towns of Berlin and Cölln[[source/wikipedia-de-berliner-schloss|„Der Bau der Jahre 1443–1451 war eine befestigte Burg und Zitadelle gegen die Städte Berlin und Kölln“]]. The late Gothic Erasmus Chapel was added in 1465[[source/wikipedia-de-berliner-schloss|„Im Jahr 1465 wurde die Schlossanlage um die bedeutende spätgotische Erasmuskapelle ergänzt“]].
+    people:
+      - who: person/frederick-ii-elector-of-brandenburg
+        role: laid the foundation stone
+        patron: true
+  - kind: construction
+    title: Renaissance palace
+    period: 1537/1571
+    period_label: from 1537
+    notes_md: "From 1537 the castle was razed and an unfortified residence built on its foundations[[source/wikipedia-de-berliner-schloss|„Beim Schlossneubau ab 1537 wurde das zitadellenartige Berlin-Cöllner Burgschloss geschleift, um auf seinen Grundmauern ein unbefestigtes Wohnschloss zu errichten“]]: Elector Joachim II had a Renaissance building erected after the model of the palace at Torgau, whose architect Konrad Krebs supplied the plans, carried out by his pupil Caspar Theiss[[source/wikipedia-de-berliner-schloss|„Kurfürst Joachim II. ließ im 16. Jahrhundert die spätmittelalterliche Anlage weitgehend abtragen und an ihrer Stelle einen Renaissancebau nach dem Vorbild des Schlosses in Torgau errichten. Dessen Architekt Konrad Krebs lieferte die Pläne, die sein Schüler Caspar Theiss verwirklichte“]]. (Dated here to Joachim II’s reign, which ended in 1571; the source gives only the beginning.)"
+    people:
+      - who: person/joachim-ii-hector-elector-of-brandenburg
+        patron: true
+      - who: artist/konrad-krebs
+        role: plans
+      - who: artist/kaspar-theiss
+        role: executed the plans
+  - kind: extension
+    title: West wing and court pharmacy
+    part: west wing closing the courtyard; court pharmacy to the north
+    period: late 16th century
+    notes_md: Towards the end of the 16th century Elector John George had his court architect Rochus Graf zu Lynar build the west wing, closing the courtyard, and the court pharmacy adjoining it to the north (founded by Electress Katharina in 1598, newly fitted out in 1605)[[source/wikipedia-de-berliner-schloss|„Gegen Ende des 16. Jahrhunderts veranlasste Kurfürst Johann Georg durch den Hofbaumeister Rochus Graf zu Lynar den Bau des Westflügels und Hofabschluss sowie die nördlich anschließende, 1598 durch die Kurfürstin Katharina gestiftete und 1605 neu eingerichtete Hof-Apotheke“]].
+    people:
+      - who: person/john-george-elector-of-brandenburg
+        patron: true
+      - who: artist/rocco-guerrini
+        role: court architect (Rochus Graf zu Lynar)
+  - kind: restoration
+    title: Restored after the Thirty Years’ War; gallery wing
+    part: gallery wing on the Spree
+    period: 1648/1688
+    period_label: after 1648, until 1688
+    notes_md: The Great Elector had the palace, much decayed after the Thirty Years’ War, restored; late in his reign came rooms such as the Kugelkammer and the Brunswick Gallery, built into the gallery wing on the Spree carried out by Johann Arnold Nering[[source/wikipedia-de-berliner-schloss|„Kurfürst Friedrich Wilhelm, der Große Kurfürst, ließ das nach dem Dreißigjährigen Krieg ziemlich verfallene Schloss wieder herrichten. In der Spätzeit seiner Herrschaft entstanden bedeutende Innenräume wie die Kugelkammer oder die Braunschweigische Galerie. Letztere wurde in den durch Johann Arnold Nering ausgeführten Galerietrakt an der Spree eingebaut“]].
+    people:
+      - who: person/frederick-william-of-brandenburg
+        patron: true
+      - who: artist/johann-arnold-nering
+        role: gallery wing
+  - kind: alteration
+    title: Baroque royal residence (Schlüter)
+    part: wings on the Lustgarten and the town (Schlossplatz), Schlüterhof; Portal I
+    period: 1698/1706
+    notes_md: "The palace was built from 1698 to 1718 after designs by Andreas Schlüter and Johann Friedrich von Eosander[[source/humboldt-forum-architektur|„Das Schloss entstand von 1698 bis 1718 nach Entwürfen der Architekten Andreas Schlüter und Johann Friedrich von Eosander“]]. Under Elector Frederick III (King Frederick I from 1701) it became a royal residence; Schlüter was appointed palace architect in 1699[[source/wikipedia-de-berliner-schloss|„Unter Kurfürst Friedrich III. (ab 1701: König Friedrich I. in Preußen) kam es zum Ausbau des Schlosses zur Königsresidenz. Nach Arnold Nering und Martin Grünberg erhielt Andreas Schlüter 1699 die Stelle als Bauleiter am Zeughaus und wurde noch im gleichen Jahr zum Schlossbaumeister ernannt“]]. His intended four-wing layout was not reached: only the wings on the Lustgarten and the town and those around the court later named after him were finished; the facade on the Schlossplatz followed the Palazzo Madama in Rome, with the colossal Portal I added[[source/wikipedia-de-berliner-schloss|„Zu der von ihm beabsichtigten Vierflügelanlage kam es nicht. Unter Schlüter konnten nur die Flügel zum Lustgarten und zur Stadt sowie um den später nach ihm benannten Schlüterhof fertiggestellt werden. Vorbild der Gestaltung des Baus zum Schlossplatz war die Fassade des Palazzo Madama in Rom, die Schlüter um das monumentale Kolossalportal I ergänzte“]]. When the Mint Tower he was raising had to be taken down for want of foundations, he was replaced as court architect in 1706 but stayed court sculptor[[source/wikipedia-de-berliner-schloss|„Schließlich musste der unfertige Turm aus statischen Gründen aufwendig abgetragen werden, und Schlüter wurde 1706 als Hofbaumeister abgelöst, blieb aber als Hofbildhauer im Amt“]]."
+    people:
+      - who: person/frederick-i-of-prussia
+        role: commissioned it (Elector Frederick III, from 1701 King Frederick I)
+        patron: true
+      - who: artist/andreas-schluter
+        role: palace architect from 1699
+  - kind: extension
+    title: Extension to the west (Eosander)
+    part: Eosanderhof, Eosanderportal (west portal)
+    period: 1706/1713
+    notes_md: Schlüter’s rival Johann Friedrich Eosander took over his post with a new plan to extend the palace, carried out only in part, mainly around the later Eosanderhof and the Eosanderportal (west portal)[[source/wikipedia-de-berliner-schloss|„Schlüters Posten übernahm sein Konkurrent Johann Friedrich Eosander, der einen neuen Erweiterungsplan für das Schloss vorlegte. Der Plan konnte nur zum Teil ausgeführt werden, hauptsächlich rund um den späteren Eosanderhof und das Eosanderportal (Westportal)“]]. The work ended with the king’s death in 1713.
+    people:
+      - who: person/frederick-i-of-prussia
+        patron: true
+      - who: artist/johann-friedrich-eosander-von-gothe
+        role: court architect from 1706
+  - kind: completion
+    title: Completed in a simpler form
+    period: 1713/1728
+    period_label: from 1713
+    notes_md: Frederick William I had Schlüter’s less important pupil Martin Heinrich Böhme complete the outside in a simplified form, but the state rooms, as far as begun, were richly fitted out; a small domed tower for the chapel’s bells was added on the south corner[[source/wikipedia-de-berliner-schloss|„Er ließ das Schloss vom weniger bedeutenden Schüler Schlüters, Martin Heinrich Böhme, äußerlich in vereinfachter Form vollenden, die Repräsentationsräume aber, soweit damit begonnen worden war, prunkvoll ausstatten. Auf die Südecke kam ein kleiner Kuppelturm für das Geläut der Schlosskapelle hinzu“]]. The White Hall was finished in 1728[[source/wikipedia-de-berliner-schloss|„Der wichtigste Teil der Paradekammern war der Weiße Saal, der seit seiner Fertigstellung 1728 stets zur Repräsentation genutzt wurde“]].
+    people:
+      - who: person/friedrich-wilhelm-i-of-prussia
+        patron: true
+      - who: artist/martin-heinrich-bohme
+        role: architect
+  - kind: alteration
+    title: Apartment of the crown prince (Schinkel)
+    part: from the middle of the east wing to Portal I
+    period: 1824/1828
+    notes_md: The apartment of Frederick William IV, a masterpiece of German Neoclassicism, was built in 1824–1828 after plans by Karl Friedrich Schinkel[[source/wikipedia-de-berliner-schloss|„Die Wohnung Friedrich Wilhelms IV. gehörte ebenfalls zu den Meisterwerken des deutschen Klassizismus. Erbaut in den Jahren 1824–1828 nach Plänen von Karl Friedrich Schinkel, reichte sie von der Mitte des Ostflügels bis Portal I (Elisabethportal) des Schlossplatzflügels“]].
+    people:
+      - who: artist/karl-friedrich-schinkel
+        role: architect
+  - kind: extension
+    title: Dome
+    part: dome over the Eosanderportal, with the palace chapel
+    period: 1845/1853
+    notes_md: Friedrich August Stüler and his site manager Albert Dietrich Schadow built the 70 m dome with its octagonal drum in 1845–1853; the design went back to Frederick William IV and had been revised by Karl Friedrich Schinkel[[source/wikipedia-de-berliner-schloss|„Der Architekt Friedrich August Stüler und sein Bauleiter Albert Dietrich Schadow errichteten in den Jahren 1845–1853 die Kuppel mit oktogonalem, pilastergeschmücktem Tambour. Der Entwurf dazu ging auf Friedrich Wilhelm IV. zurück; vor seiner endgültigen Realisierung wurde er von dem klassizistischen Baumeister Karl Friedrich Schinkel überarbeitet“]]. The palace chapel in it was consecrated in January 1854[[source/wikipedia-de-berliner-schloss|„Der … Kuppelbau beherbergte die Schlosskapelle, die im Januar 1854 geweiht wurde“]].
+    people:
+      - who: person/friedrich-wilhelm-iv-von-preussen
+        role: design
+        patron: true
+      - who: artist/karl-friedrich-schinkel
+        role: revised the design
+      - who: artist/friedrich-august-stuler
+        role: architect
+      - who: artist/albert-dietrich-schadow
+        role: site manager
+  - kind: alteration
+    title: Wilhelm II’s residence; White Hall remodelled
+    part: White Hall; living rooms; clock turret on the north-west corner
+    period: 1888/1914
+    notes_md: "Wilhelm II, on the throne from 1888, made the palace his residence: modernised, with living rooms for his family and the White Hall fundamentally remodelled after plans by the court architect Ernst von Ihne; a gallery around the Eosanderhof stopped with the outbreak of war in 1914[[source/wikipedia-de-berliner-schloss|„Nachdem Wilhelm II. 1888 den Thron bestiegen hatte, wählte er das Schloss zu seinem Wohnsitz. Zu diesem Zweck ließ er es technisch modernisieren, Wohnräume für seine Familie einrichten und den Weißen Saal nach Plänen des Hofarchitekten Ernst von Ihne grundlegend umgestalten. Auf Kosten des Eosanderhofs sollte eine Galerie seinen Besuchern erlauben, im gesamten zweiten Stock zu zirkulieren. Der Bau kam infolge des Kriegsausbruchs 1914 zum Erliegen“]]; the White Hall’s remodelling dates from 1902[[source/wikipedia-de-berliner-schloss|„wurde er auf Veranlassung des Kaisers im Laufe des Jahres 1902 durch Ernst von Ihne erneut maßgeblich umgestaltet“]]."
+    people:
+      - who: person/wilhelm-ii
+        patron: true
+      - who: artist/ernst-von-ihne
+        role: court architect
+  - kind: damage
+    title: Burnt out
+    period: 1945-02-03
+    notes_md: In the Allied air raid of 3 February 1945 the palace burnt out except for the north-west wing; artillery damaged the Schlossplatz facade at the end of April. The outer walls with their sculpture, the load-bearing walls and most main staircases survived[[source/wikipedia-de-berliner-schloss|„Während des Zweiten Weltkriegs brannte das Schloss bei dem schweren alliierten Luftangriff vom 3. Februar 1945 auf das Berliner Stadtzentrum bis auf den Nordwestflügel aus. … Weitere Schäden an der Schlossplatzfassade entstanden Ende April während der Schlacht um Berlin durch Artilleriebeschuss. Erhalten blieben die Außenmauern mitsamt dem plastischen Schmuck, die tragenden Wände und größtenteils die Haupttreppenhäuser“]]; exhibitions were still shown in the White Hall in 1946–1948[[source/wikipedia-de-berliner-schloss|„Teile des Gebäudes blieben allerdings intakt, sodass von 1946 bis 1948 noch vier Ausstellungen vor allem im Weißen Saal gezeigt werden konnten“]].
+  - kind: demolition
+    title: Blown up
+    period: 1950-09-07/1950-12-30
+    notes_md: Walter Ulbricht announced the demolition at the SED’s third party congress on 23 July 1950[[source/wikipedia-de-berliner-schloss|„Auf dem III. Parteitag der SED gab am 23. Juli 1950 Walter Ulbricht, der neue Generalsekretär des ZK (Zentralkomitee) der SED, den bevorstehenden Abriss des Schlosses bekannt“]]. The blasting began on 7 September 1950, the day after the People’s Chamber’s decision, and ended, amid protests, with the Eosanderportal on 30 December 1950[[source/wikipedia-de-berliner-schloss|„Am 7. September 1950, dem Tag nach dem Volkskammerbeschluss, begannen die abschnittsweisen Sprengungen des Schlosses. … Von erfolglosen Protesten begleitet, endeten sie am 30. Dezember 1950 mit der Niederlegung des Eosanderportals“]]; by 1 May 1951 the site was cleared[[source/wikipedia-de-berliner-schloss|„Bis zur Feier am 1. Mai 1951 war das Schlossareal abgeräumt, eingeebnet und mit rotem Ziegelsplitt bedeckt“]]. Some 2,000 sculptures and architectural parts were salvaged[[source/wikipedia-de-berliner-schloss|„Ohne ausreichende Planung hatte ein wissenschaftliches Aktiv beim Abriss des Schlosses etwa 2000 künstlerisch wertvolle plastische Arbeiten und Architekturteile geborgen“]]; Portal IV was built into the Staatsratsgebäude in 1963[[source/wikipedia-de-berliner-schloss|„Das 1963 an seinem südlichen Rand errichtete Staatsratsgebäude erhielt als Eingang das geborgene Portal IV“]].
+    people:
+      - who: person/walter-ulbricht
+        role: announced the demolition (23 July 1950)
+  - kind: other
+    title: Marx-Engels-Platz and Palast der Republik
+    part: the site
+    period: 1951/2008
+    notes_md: The site became the Marx-Engels-Platz; the Palast der Republik was built on its eastern part in 1973–1976[[source/wikipedia-de-berliner-schloss|„Infolge dieser Planungen entstand 1973 bis 1976 auf dem östlichen Schlossgelände der Palast der Republik“]] and demolished in 2006–2008, after its asbestos removal in 1997–2002[[source/wikipedia-de-berliner-schloss|„Von 1997 bis 2002 erfolgte die Asbestsanierung und 2006–2008 schließlich der Abriss des Palastes der Republik“]].
+  - kind: reconstruction
+    title: Rebuilt as the Humboldt Forum
+    part: "reconstructed: three Baroque outer facades with the dome, three facades of the Schlüterhof; new: east facade, passage, interiors"
+    period: 2012/2020-11
+    notes_md: |-
+      In summer 2002 the Bundestag decided on the partial reconstruction as the Humboldt Forum: a modern centre for museums, knowledge and encounter behind the reconstructed Baroque facades[[source/humboldt-forum-architektur|„Im Sommer 2002 beschloss der Deutsche Bundestag die Teilrekonstruktion des Berliner Schlosses als Humboldt Forum. … Hinter den rekonstruierten barocken Außenfassaden des Berliner Schlosses (einschließlich der barocken Fassaden im Schlüterhof) sollte ein modernes Museums-, Wissens- und Begegnungszentrum entstehen“]]. Franco Stella won the international competition of 2008[[source/humboldt-forum-architektur|„Der italienische Architekt Prof. Franco Stella gewann 2008 in einem internationalen Architekturwettbewerb um den Wiederaufbau des Berliner Schlosses als Humboldt Forum den 1. Preis“]] — for the new parts, the interiors and the modern facades; the reconstruction of three facades and three sides of the Schlüterhof was planned by Stuhlemmer Architekten, from photographs rectified with the TU Berlin, that of the dome with its cross by Hilmer Sattler Architekten[[source/wikipedia-de-berliner-schloss|„Aus dem internationalen Realisierungswettbewerb 2008 ging der italienische Architekt Franco Stella als Sieger für die neu zu entwerfenden Baukörper, Innenräume und modernen Fassaden im Mittelteil, Schlossforum und an der Ostseite hervor. Die Rekonstruktionsplanung für drei der vier Fassaden … wurde von Stuhlemmer Architekten erstellt. … Die Rekonstruktionsplanung für die Kuppel mit Kreuz erfolgte durch Hilmer Sattler Architekten“]]. The builder-owner is the Stiftung Humboldt Forum im Berliner Schloss[[source/wikipedia-de-stiftung-humboldt-forum|„Sie ist Bauherrin, Eigentümerin und Betreiberin des Humboldt Forums im Berliner Schloss“]].
+
+      Federal President Joachim Gauck laid the foundation stone on 12 June 2013; the topping-out followed on 12 June 2015[[source/wikipedia-de-berliner-schloss|„Bereits am 12. Juni 2013 legte Bundespräsident Joachim Gauck den Grundstein. Genau zwei Jahre später, am 12. Juni 2015, wurde das Richtfest für den vollendeten Rohbau des Schlosses samt Dachstuhl gefeiert“]]. The lantern of the dome, reconstructed from historical photographs and designs by Andreas Hoferick, was set on 29 May 2020[[source/wikipedia-de-berliner-schloss|„Am 29. Mai 2020 wurde die nach historischen Fotos und Entwürfen von Andreas Hoferick rekonstruierte Laterne der Schlosskuppel aufgesetzt“]]. Building began in 2012 and was finished in November 2020, at a cost of €677 million[[source/wikipedia-de-berliner-schloss|„Die Gesamtkosten für das Bauprojekt beliefen sich auf 677 Millionen Euro. Der Baubeginn erfolgte im Jahr 2012, die Fertigstellung im November 2020“]]; the opening on 17 December 2020 was virtual, the real one in 2021[[source/wikipedia-de-berliner-schloss|„Die für September 2020 geplante Eröffnung des Humboldt Forums erfolgte am 17. Dezember 2020 zunächst symbolisch virtuell, die eigentliche Eröffnung wurde aufgrund der COVID-Maßnahmen auf 2021 verschoben“]]. Some 45,000 donors gave €105 million for the Baroque facades[[source/wikipedia-de-berliner-schloss|„Für die Rekonstruktion der Barockfassaden spendeten etwa 45.000 Bürger aus Berlin, dem übrigen Deutschland und der ganzen Welt insgesamt 105 Millionen Euro“]]. Not rebuilt: the two side domes over the west facade, the old castle on the Spree, and (for now) the interiors[[source/wikipedia-de-berliner-schloss|„Nicht rekonstruiert wurden die zwei flankierenden Nebenkuppeln über der Westfassade und die historische Burganlage an der Spree. Auch die Innenräume werden vorerst nicht wiederhergestellt“]].
+    people:
+      - who: institution/berlin-palace-humboldtforum-foundation
+        role: builder-owner
+        patron: true
+      - who: artist/franco-stella
+        role: architect (competition 2008)
+      - who: institution/stuhlemmer-architekten
+        role: reconstruction planning of the facades
+      - who: institution/hilmer-sattler-und-albrecht
+        role: reconstruction planning of the dome (as Hilmer Sattler Architekten)
+      - who: artist/andreas-hoferick
+        role: lantern of the dome
+  - kind: completion
+    title: Facade sculpture completed
+    part: cartouche over the Eosanderportal, balustrade figures
+    period: 2023-04/2025-06-24
+    notes_md: The copy of Otto Lessing’s great coat-of-arms cartouche was set over the Eosanderportal in early April 2023[[source/wikipedia-de-berliner-schloss|„Anfang April 2023 kam die über vier Tonnen schwere Nachbildung der Großen Wappenkartusche von Otto Lessing an ihren Platz über dem Eosanderportal“]]; with the last of the 19 balustrade figures on 24 June 2025 the reconstruction of the historical facade was complete[[source/wikipedia-de-berliner-schloss|„Am 24. Juni 2025 wurden die letzten der insgesamt 19 Figuren aufgestellt, womit die Rekonstruktion der historischen Schlossfassade vollendet wurde“]].
 identifiers:
   gnd: 4137109-4
   viaf: "237754894"
 sources:
   created:
-    - accessed: 2026-10-27
-      property: P571
-      wikidata: Q170119
+    - note: „Friedrich II. legte am 31. Juli 1443 … den Grundstein für den ersten Schlossbau“ (begun 1443)
+      source: wikipedia-de-berliner-schloss
+      accessed: 2026-10-30
+    - note: „Das Schloss entstand von 1698 bis 1718 nach Entwürfen der Architekten Andreas Schlüter und Johann Friedrich von Eosander.“ (until 1718)
+      source: humboldt-forum-architektur
+      accessed: 2026-10-30
   location:
     - accessed: 2026-10-27
       property: P625
       wikidata: Q170119
+  created_span:
+    - note: „Auch wenn das Äußere vor der Zerstörung und auch jetzt nach dem Wiederaufbau als ein einheitlicher Bau erscheint, so setzte er sich über mehrere Jahrhunderte mit bemerkenswerter Konsequenz fort.“
+      source: wikipedia-de-berliner-schloss
+      accessed: 2026-10-30
+    - note: „Das Schloss entstand von 1698 bis 1718 nach Entwürfen der Architekten Andreas Schlüter und Johann Friedrich von Eosander.“
+      source: humboldt-forum-architektur
+      accessed: 2026-10-30
+  attribution_label:
+    - note: „nach Entwürfen der Architekten Andreas Schlüter und Johann Friedrich von Eosander“ · „Mit der Neuinterpretation durch den italienischen Architekten Franco Stella …“
+      source: humboldt-forum-architektur
+      accessed: 2026-10-30

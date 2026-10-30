@@ -1,0 +1,25 @@
+public_id: 104954
+name: Martin Heinrich Böhme
+given_name: Martin Heinrich
+family_name: Böhme
+names:
+  - lang: ru
+    role: translation
+    text: Мартин Генрих Бёме
+birth: 1676
+death: 1725-05-21
+wikidata_id: Q1300376
+metadata:
+  sources: [Wikidata Q1300376 (retrieved 2026-10-30)]
+identifiers:
+  gnd: "135552362"
+  viaf: "57832677"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q1300376
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q1300376

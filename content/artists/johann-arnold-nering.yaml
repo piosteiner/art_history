@@ -1,0 +1,33 @@
+public_id: 104958
+name: Johann Arnold Nering
+given_name: Johann Arnold
+family_name: Nering
+names:
+  - lang: zh
+    role: translation
+    text: 约翰·阿诺尔德·内林
+  - lang: ru
+    role: translation
+    text: Иоганн Арнольд Неринг
+birth: 1659-01-13
+death: 1695-10-21
+wikidata_id: Q286441
+metadata:
+  sources: [Wikidata Q286441 (retrieved 2026-10-30)]
+identifiers:
+  bnf: 11995745t
+  gnd: "123088542"
+  kulturnav: 42c52200-82f5-4645-8b4b-63c0bbf86047
+  lc: n86112429
+  rkd: "314426"
+  ulan: "500062925"
+  viaf: "5831398"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q286441
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q286441

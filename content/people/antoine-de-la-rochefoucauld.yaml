@@ -1,0 +1,46 @@
+public_id: 104994
+name: Antoine de La Rochefoucauld
+given_name: Antoine
+family_name: de La Rochefoucauld
+names:
+  - Antoine Dela Rochefoucauld
+  - lang: nl
+    role: translation
+    text: Count Antoine de La Rochefoucauld
+  - lang: ru
+    role: translation
+    text: Антуан де Ларошфуко
+kind: person
+occupations: [art collector, painter]
+birth: 1862-10-10
+death: 1960-09-08
+wikidata_id: Q5176637
+metadata:
+  sources: [Wikidata Q5176637 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/c/c7/Antoine_de_La_Rochefoucauld_by_Schuffenecker_1886.png
+    source_url: https://commons.wikimedia.org/wiki/File:Antoine_de_La_Rochefoucauld_by_Schuffenecker_1886.png
+    license: Public domain
+    credit: Émile Schuffenecker
+identifiers:
+  gnd: "1228631697"
+  rkd: "67469"
+  ulan: "500082193"
+  viaf: "96270776"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q5176637
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q5176637
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q5176637
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q5176637

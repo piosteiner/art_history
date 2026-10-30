@@ -9,18 +9,21 @@ names:
     role: translation
     text: Avenue dans le parc de Schloss Kammer
   - lang: de
-    role: original
+    role: alternative
     text: Allee vor Schloss Kammer
-  - lang: ru
+  - lang: en
     role: translation
-    text: Аллея к замку Каммер
+    text: Avenue to Schloss Kammer
+    status: official
 creator: gustav-klimt
-created: 1910s
-created_span: uncertain
+created: 1912
+kind: oil painting
+medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [110, 110]
 institution: belvedere-wien
 inventory_number: "2892"
+web_url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
 wikidata_id: Q19912810
 metadata:
   sources: [Wikidata Q19912810 (retrieved 2026-10-20)]
@@ -81,14 +84,17 @@ sources:
   names:
     - accessed: 2026-10-20
       wikidata: Q19912810
-  created:
-    - accessed: 2026-10-20
-      property: P571
-      wikidata: Q19912810
+  medium:
+    - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q19912810
+    - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   materials:
     - accessed: 2026-10-20
       property: P186
@@ -97,11 +103,24 @@ sources:
     - accessed: 2026-10-20
       property: P2048
       wikidata: Q19912810
+    - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q19912810
+    - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
+  title_status:
+    - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   inventory_number:
     - accessed: 2026-10-20
       property: P217
       wikidata: Q19912810
+    - url: https://sammlung.belvedere.at/objects/8691/allee-zum-schloss-kammer
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30

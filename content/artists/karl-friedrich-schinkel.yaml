@@ -1,0 +1,49 @@
+public_id: 104962
+name: Karl Friedrich Schinkel
+given_name: Karl Friedrich
+family_name: Schinkel
+names:
+  - Carl Friedrich Schinkel
+  - K. F. Schinkel
+  - Karl Fr. Schinkel
+  - C. F. Schinkel
+  - lang: ja
+    role: translation
+    text: カルル・フリードリッヒ・シンケル
+  - lang: zh
+    role: translation
+    text: 卡爾·弗里德里希·申克爾
+  - lang: ko
+    role: translation
+    text: 카를 프리드리히 싱켈
+  - lang: ru
+    role: translation
+    text: Карл Фридрих Шинкель
+birth: 1781-03-13
+death: 1841-10-09
+wikidata_id: Q151759
+metadata:
+  sources: [Wikidata Q151759 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Schinkel1.jpg/1280px-Schinkel1.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Schinkel1.jpg
+    license: Public domain
+    credit: Carl Joseph Begas
+identifiers:
+  bnf: 12352169q
+  gnd: "118607782"
+  idref: "032504500"
+  kulturnav: 3aba3520-4b6e-48fb-b46d-2eb509c51c0a
+  lc: n81068088
+  rkd: "70548"
+  ulan: "500028174"
+  viaf: "17298593"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q151759
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q151759

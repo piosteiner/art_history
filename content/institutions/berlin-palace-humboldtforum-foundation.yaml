@@ -1,0 +1,33 @@
+public_id: 104971
+name: Berlin Palace–Humboldtforum Foundation
+names:
+  - lang: de
+    role: translation
+    text: Stiftung Berliner Schloss – Humboldtforum
+  - lang: es
+    role: translation
+    text: Fundación Palacio de Berlín–Foro Humboldt
+kind: foundation
+founded: 2009
+place: berlin
+website_url: http://www.sbs-humboldtforum.de/en
+wikidata_id: Q2348891
+metadata:
+  sources: [Wikidata Q2348891 (retrieved 2026-10-30)]
+identifiers:
+  gnd: "1226257313"
+  lc: nb2013007473
+  viaf: "160545442"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q2348891
+  place:
+    - accessed: 2026-10-30
+      property: P131
+      wikidata: Q2348891
+  founded:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q2348891

@@ -1,0 +1,49 @@
+public_id: 104995
+name: Georges Wildenstein
+given_name: Georges
+family_name: Wildenstein
+names:
+  - Georges-Lazare Wildenstein
+  - lang: ja
+    role: translation
+    text: ジョルジュ・ウィルデンシュタイン
+  - lang: ru
+    role: translation
+    text: Жорж Вильденштейн
+kind: person
+occupations: [art historian, editor, art collector, art dealer, art critic]
+birth: 1892-03-16
+death: 1963-06-11
+wikidata_id: Q215626
+metadata:
+  sources: [Wikidata Q215626 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/d2/Wildenstein.nathan.und.georges.1908.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Wildenstein.nathan.und.georges.1908.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  bnf: 12276730j
+  gnd: "136446582"
+  idref: "027412849"
+  lc: no96065801
+  rkd: "444971"
+  ulan: "500329787"
+  viaf: "71450945"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q215626
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q215626
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q215626
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q215626

@@ -1,0 +1,50 @@
+public_id: 104992
+name: Leonore Annenberg
+given_name: Leonore
+family_name: Annenberg
+names:
+  - kind: birth
+    lang: en
+    role: former
+    text: Leonore Cohn
+  - Leonore Cohn Annenberg
+  - Lee Annenberg
+  - lang: ja
+    role: translation
+    text: リアノー・アネンバーグ
+  - lang: zh
+    role: translation
+    text: 莉奧諾·安納伯格
+kind: person
+occupations: [diplomat, socialite, politician, art collector]
+birth: 1918-02-20
+death: 2009-03-12
+wikidata_id: Q3830643
+metadata:
+  sources: [Wikidata Q3830643 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/b/b8/Leonore_Annenberg.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Leonore_Annenberg.jpg
+    license: CC BY-SA 2.0
+    credit: Annenberg School for Communication at the University of Southern California, Los Angeles, California
+identifiers:
+  gnd: "1069308447"
+  rkd: "440424"
+  viaf: "315524114"
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q3830643
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q3830643
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q3830643
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q3830643

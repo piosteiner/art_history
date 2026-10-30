@@ -1,0 +1,158 @@
+public_id: 105002
+title_lang: en
+title: "Lullaby: Madame Augustine Roulin Rocking a Cradle (La Berceuse)"
+names:
+  - lang: de
+    role: translation
+    text: Porträt der Augustine Roulin (La Berceuse)
+parent: la-berceuse
+part_number: "4"
+creator: vincent-van-gogh
+created: "1889"
+kind: oil painting
+medium: Oil on canvas
+materials:
+  - oil paint
+  - canvas
+dimensions:
+  - 92.7
+  - 72.7
+institution: museum-of-fine-arts-boston
+inventory_number: "48.548"
+web_url: https://collections.mfa.org/objects/33277
+wikidata_id: Q20630411
+metadata:
+  sources:
+    - Wikidata Q20630411 (retrieved 2026-10-30)
+relationships:
+  - type: depicts_person
+    to: person/augustine-roulin
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Van_Gogh_-_La_Berceuse_%28Augustine_Roulin%293.jpeg/1280px-Van_Gogh_-_La_Berceuse_%28Augustine_Roulin%293.jpeg
+    source_url: https://commons.wikimedia.org/wiki/File:Van_Gogh_-_La_Berceuse_(Augustine_Roulin)3.jpeg
+    license: Public domain
+    credit: Vincent van Gogh
+provenance:
+  - owner: person/theo-van-gogh
+    acquired: 1889-05
+    method: gift
+    label: sent to his brother with the other versions
+    place: paris
+    sources:
+      - url: https://vangoghletters.org/vg/letters/let776/notes.html
+        source: van-gogh-letters
+        accessed: 2026-10-30
+        note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
+      - url: https://collections.mfa.org/objects/33277
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): from the artist to his brother Theo in 1889"
+  - owner_label: Julien Tanguy, Paris
+    certainty: possible
+    place: paris
+    label: according to De la Faille
+    sources:
+      - url: https://vangoghletters.org/vg/letters/let776/notes.html
+        source: van-gogh-letters
+        accessed: 2026-10-30
+        note: "Van Gogh Letters, notes (read in a web search): De la Faille gives the provenance of F 508 / JH 1671 as Julien Tanguy"
+  - owner: person/antoine-de-la-rochefoucauld
+    place: paris
+    label: Count Antoine de La Rochefoucauld; sold to Paul Rosenberg before 1928
+    sources:
+      - url: https://collections.mfa.org/objects/33277
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): sold by the Count de la Rochefoucauld to Paul Rosenberg (dealer; b. 1881 – d. 1959), Paris and New York before 1928"
+  - owner: person/paul-rosenberg
+    role: dealer
+    co_owners:
+      - person/georges-wildenstein
+    acquired: before 1928
+    ended: "1928"
+    method: purchase
+    place: paris
+    sources:
+      - url: https://collections.mfa.org/objects/33277
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): in 1928 Rosenberg and Georges Wildenstein sold it to John Taylor Spaulding"
+  - owner: person/john-taylor-spaulding
+    acquired: "1928"
+    ended: "1948"
+    method: purchase
+    direct: true
+    place: boston
+    label: paid to Wildenstein and Rosenberg in instalments, 1928–1933
+    sources:
+      - url: https://collections.mfa.org/objects/33277
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): John Spaulding made separate payments for the painting to Wildenstein and Rosenberg from 1928 to 1933"
+      - wikidata: Q20630411
+        property: P127
+        accessed: 2026-10-30
+        note: "Wikidata: owned by John Taylor Spaulding, end 1948"
+  - owner: institution/museum-of-fine-arts-boston
+    acquired: "1948"
+    method: bequest
+    direct: true
+    place: boston
+    label: bequest of John T. Spaulding
+    sources:
+      - url: https://collections.mfa.org/objects/33277
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): Spaulding’s bequest to the MFA, 1948"
+      - wikidata: Q20630411
+        property: P127
+        accessed: 2026-10-30
+        note: "Wikidata: owned by the Museum of Fine Arts, Boston, start 3 June 1948"
+numbers:
+  - number: F508
+    source: de-la-faille-1970
+    sources:
+      - wikidata: Q20630411
+        property: P528
+        accessed: 2026-10-30
+        note: "Wikidata: catalog code F508"
+  - number: JH1671
+    source: hulsker-1996
+    sources:
+      - wikidata: Q20630411
+        property: P528
+        accessed: 2026-10-30
+        note: "Wikidata: catalog code JH1671"
+sources:
+  names:
+    - accessed: 2026-10-30
+      wikidata: Q20630411
+  created:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q20630411
+  creator:
+    - accessed: 2026-10-30
+      property: P170
+      wikidata: Q20630411
+  materials:
+    - accessed: 2026-10-30
+      property: P186
+      wikidata: Q20630411
+  dimensions:
+    - accessed: 2026-10-30
+      property: P2048
+      wikidata: Q20630411
+  institution:
+    - accessed: 2026-10-30
+      property: P195
+      wikidata: Q20630411
+  inventory_number:
+    - accessed: 2026-10-30
+      property: P217
+      wikidata: Q20630411
+  parent:
+    - url: https://vangoghletters.org/vg/letters/let776/notes.html
+      source: van-gogh-letters
+      accessed: 2026-10-30
+      note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)

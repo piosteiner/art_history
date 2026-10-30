@@ -1,0 +1,30 @@
+public_id: 104959
+name: Albert Dietrich Schadow
+given_name: Albert Dietrich
+family_name: Schadow
+names:
+  - lang: ru
+    role: translation
+    text: Альберт Дитрих Шадов
+birth: 1797-05-02
+death: 1869-09-05
+wikidata_id: Q103319
+metadata:
+  sources: [Wikidata Q103319 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/d/df/Albert_Dietr_Schadow_Foto_um_1860_Archiv_Nikolskoe.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Albert_Dietr_Schadow_Foto_um_1860_Archiv_Nikolskoe.jpg
+    license: Public domain
+    credit: Unknown authorUnknown author
+identifiers:
+  gnd: "118871129"
+  viaf: "3268632"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q103319
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q103319

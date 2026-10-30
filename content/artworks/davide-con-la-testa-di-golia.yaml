@@ -11,6 +11,7 @@ names:
   - lang: de
     role: translation
     text: David mit dem Haupt des Goliath
+    status: official
   - lang: es
     role: translation
     text: David con la cabeza de Goliat
@@ -21,11 +22,17 @@ names:
     role: translation
     text: Давид с головой Голиафа
 creator: caravaggio
-created: 1607
-materials: [oil on panel, poplar panel]
-dimensions: [91, 116]
+created: c. 1600–1601
+created_span: uncertain
+kind: painting
+materials: [oil on panel, poplar panel, poplar]
+dimensions: [91.2, 116.2, 2.5]
+other_dimensions:
+  - cm: [113, 138.5, 9]
+    part: frame
 institution: kunsthistorisches-museum-wien
-inventory_number: GG_125
+inventory_number: Gemäldegalerie, 125
+web_url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
 wikidata_id: Q2721037
 metadata:
   sources: [Wikidata Q2721037 (retrieved 2026-10-19)]
@@ -71,30 +78,51 @@ provenance:
         source: khm-125-jahre
         accessed: 2026-10-19
 sources:
+  kind:
+    - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+      source: khm-125-jahre
+      accessed: 2026-10-30
   names:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       wikidata: Q2721037
   created:
-    - accessed: 2026-10-19
-      property: P571
-      wikidata: Q2721037
+    - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+      source: khm-125-jahre
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-19
       property: P170
       wikidata: Q2721037
+    - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+      source: khm-125-jahre
+      accessed: 2026-10-30
   materials:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P186
       wikidata: Q2721037
   dimensions:
-    - accessed: 2026-10-19
-      property: P2048
-      wikidata: Q2721037
+    - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+      source: khm-125-jahre
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-19
       property: P195
       wikidata: Q2721037
+    - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+      source: khm-125-jahre
+      accessed: 2026-10-30
+  title_status:
+    - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+      source: khm-125-jahre
+      accessed: 2026-10-30
   inventory_number:
-    - accessed: 2026-10-19
+    - accessed: 2026-10-30
       property: P217
       wikidata: Q2721037
+    - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+      source: khm-125-jahre
+      accessed: 2026-10-30
+  other_dimensions:
+    - url: https://www.khm.at/kunstwerke/david-mit-dem-haupt-des-goliath-426
+      source: khm-125-jahre
+      accessed: 2026-10-30

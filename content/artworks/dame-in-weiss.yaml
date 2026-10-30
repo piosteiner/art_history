@@ -12,9 +12,13 @@ creator: gustav-klimt
 created: 1917/1918
 created_label: c. 1910s
 created_span: uncertain
+kind: oil painting
+medium: Oil on canvas
+materials: [oil paint, canvas]
 dimensions: [70, 70]
 institution: belvedere-wien
 inventory_number: "4286"
+web_url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
 wikidata_id: Q28002620
 metadata:
   sources: [Wikidata Q28002620 (retrieved 2026-10-20)]
@@ -84,23 +88,46 @@ sources:
   names:
     - accessed: 2026-10-20
       wikidata: Q28002620
+  medium:
+    - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   created:
     - accessed: 2026-10-20
       property: P571
       wikidata: Q28002620
+    - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-20
       property: P170
       wikidata: Q28002620
+    - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   dimensions:
     - accessed: 2026-10-20
       property: P2048
       wikidata: Q28002620
+    - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-20
       property: P195
       wikidata: Q28002620
+    - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
+  title_status:
+    - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30
   inventory_number:
     - accessed: 2026-10-20
       property: P217
       wikidata: Q28002620
+    - url: https://sammlung.belvedere.at/objects/3080/dame-in-wei
+      source: belvedere-sammlung-online
+      accessed: 2026-10-30

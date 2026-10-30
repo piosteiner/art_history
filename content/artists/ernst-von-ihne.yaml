@@ -1,0 +1,43 @@
+public_id: 104960
+name: Ernst von Ihne
+given_name: Ernst
+family_name: von Ihne
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Ernst Eberhard von Ihne
+  - Ernst Eberhard Ihne
+  - lang: ja
+    role: translation
+    text: エルンスト・フォン・イーネ
+  - lang: zh
+    role: translation
+    text: 恩斯特·馮·因娜
+  - lang: ru
+    role: translation
+    text: Эрнст фон Ине
+birth: 1848-05-23
+death: 1917-04-21
+wikidata_id: Q315281
+metadata:
+  sources: [Wikidata Q315281 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/4/47/Bundesarchiv_Bild_146-2007-0038%2C_Ernst_v._Ihne.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bundesarchiv_Bild_146-2007-0038,_Ernst_v._Ihne.jpg
+    license: CC BY-SA 3.0 de
+    credit: UnknownUnknown
+identifiers:
+  gnd: "119531143"
+  lc: nr00018508
+  ulan: "500227190"
+  viaf: "59896174"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q315281
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q315281

@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Van Gogh's La Berceuse, five versions with their provenance; two import fixes
+- **What:** the group "La Berceuse" (versions, 5 parts, December 1888–March 1889) and its five versions from Wikidata
+  (Kröller-Müller Museum, Metropolitan Museum, Art Institute of Chicago, MFA Boston, Stedelijk Museum), each with the
+  museum's page, F/JH numbers, Augustine Roulin as the sitter and its provenance (23 steps: Theo van Gogh 1889 per
+  the Van Gogh Letters' notes; Chicago complete from the Art Institute's API; Boston from the MFA's record as a web
+  search gave it — the page shuts out automated reading; the Met's provenance not readable (HTTP 429) — only the
+  sitter and the Annenbergs). New: Kröller-Müller Museum, Helene Kröller-Müller, Augustine Roulin, Walter and Leonore
+  Annenberg, John Taylor Spaulding, Antoine de La Rochefoucauld, Georges Wildenstein, Eugène Blot, Marcel Bernheim;
+  five museum pages as sources. Imported from their files alone (`CONTENT_DIR`), not the whole snapshot.
+- **Fixes:** the import read a number in a text field (`parts_count: 7`, as the export writes an integer column) as an
+  error, and a building phase dated in free words ("after 1648, until 1688") was exported in a form it can't read —
+  the export now writes the range and the words as `period_label` (`src/phases.js`), the import takes numbers as
+  text (`src/content.js`). E2E yaml-roundtrip extended.
+- **Why:** owner, 2026-10-30 (La Berceuse, named in the documentation); the snapshot no longer imported.
+- **Revert:** `git revert`; the entries via the admin.
+
 ### Cultural Heritage Online on Enrich; Japanese sources in the bibliography
 - **What:** `src/admin/colbase.js` serves two Japan Search databases with one code path: ColBase (`cobas`) and
   Cultural Heritage Online (`bunka`, the Agency for Cultural Affairs' 文化遺産オンライン — every designated cultural

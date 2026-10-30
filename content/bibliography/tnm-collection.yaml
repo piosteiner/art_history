@@ -1,0 +1,11 @@
+public_id: 104986
+kind: web
+name: "Tokyo National Museum: Collection Database"
+names:
+  - lang: ja
+    role: original
+    text: 東京国立博物館 収蔵品データベース
+container: Tokyo National Museum
+url: https://www.tnm.jp/modules/r_collection/?controller=top
+siglum: TNM
+reliability: institution

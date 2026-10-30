@@ -1,0 +1,34 @@
+public_id: 104956
+name: Kaspar Theiss
+given_name: Kaspar
+family_name: Theiss
+names:
+  - Caspar Theiss
+  - Kaspar Theyss
+  - Caspar Theyß
+  - Kaspar Theiß
+  - Kaspar Theyß
+  - Caspar Theiß
+  - Caspar Theyss
+  - Kaspar Thisius
+  - lang: zh
+    role: translation
+    text: 卡斯帕·泰斯
+birth: 1510
+death: 1550
+wikidata_id: Q1048047
+metadata:
+  sources: [Wikidata Q1048047 (retrieved 2026-10-30)]
+identifiers:
+  gnd: "138612455"
+  ulan: "500063410"
+  viaf: "96113685"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q1048047
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q1048047
