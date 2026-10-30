@@ -1,0 +1,18 @@
+public_id: 105050
+name: Jan Tiel
+given_name: Jan
+family_name: Tiel
+kind: person
+occupations: [publisher, printmaker]
+wikidata_id: Q125521495
+metadata:
+  sources: [Wikidata Q125521495 (retrieved 2026-10-30)]
+sources:
+  kind:
+    - accessed: 2026-10-30
+      property: P31
+      wikidata: Q125521495
+  occupations:
+    - accessed: 2026-10-30
+      property: P106
+      wikidata: Q125521495

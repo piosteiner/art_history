@@ -1,0 +1,63 @@
+public_id: 105049
+name: Claes Janszoon Visscher II
+given_name: Claes Janszoon, II
+family_name: Visscher
+names:
+  - Claes Jansz. Visscher
+  - Nicolaes Visscher
+  - Cl. Jansz. Visscher
+  - Nikolaus Joannis Visscher
+  - Claes Jansz. II Visscher
+  - Nicolas Visscher
+  - Claes Visscher
+  - N. I. Piscatorem
+  - Claes Jansz., de jonghe Visscher
+  - Nicolaus Visscher
+  - Claes Jansz., the younger Visscher
+  - Claes Jansz. Visscher the Younger
+  - Nicolas Jansz. II Visscher
+  - Claes Jansz Visscher
+  - Claez Jansz, le jeune Visscher
+  - N. J. Piscator
+  - Nic. Jo. Piscator
+  - Nicolas Ianzon Visscher
+  - Nicolas, the younger Visscher
+  - Claes Van Visscher
+  - Janssonius
+  - Jan Claes Visscher
+  - Claes Jansz Visscher the Younger
+  - C. J. Visscher
+  - Claes Janszoon Visscher
+  - Naar de uitgave van Claes Jansz. Visscher
+  - Claes Jansz. Visscher d.y.
+  - J.C. Visser
+  - lang: ja
+    role: translation
+    text: クラース・ヤンスゾーン・フィスヘル
+  - lang: ru
+    role: translation
+    text: Пискаторы
+birth: 1586/1587
+birth_label: c. 1580s
+death: 1652-06-19
+wikidata_id: Q1094674
+metadata:
+  sources: [Wikidata Q1094674 (retrieved 2026-10-30)]
+identifiers:
+  bnf: 13750964j
+  gnd: "104114614"
+  idref: "146743415"
+  kulturnav: 3d8b8d3b-687e-4e9f-89f9-b5ae34bde456
+  lc: n80024100
+  rkd: "81246"
+  ulan: "500015243"
+  viaf: "19860086"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q1094674
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q1094674

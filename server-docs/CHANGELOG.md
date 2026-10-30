@@ -4,6 +4,19 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Bruegel's Big Fish Eat Little Fish — the Albertina's five prints beside the drawing
+- **What:** the Albertina holds one drawing (1556, inv. 7875, already ours) and five prints, now entered with their
+  sheet sizes, states, inscriptions and pages: Pieter van der Heyden's engraving after it, published by Hieronymus
+  Cock 1557 (1st state, "Hieronymus.Bos. / inuentor", DG1955/116); a copy of it, 1st state published by Hendrik
+  Hondius the Elder (DG1957/326) and 3rd state by Claes Jansz Visscher (two impressions, DG1955/153, DG1957/328,
+  "P. Breugel inven:"); Jan Tiel's larger pasticcio (1560–1600, DG1955/154). `copy_after` the drawing / the 1557
+  engraving; the publisher as a provenance step (role publisher), then the Albertina. New: Pieter van der Heyden,
+  Hieronymus Cock, Hendrik Hondius the Elder, Claes Jansz Visscher (artists), Jan Tiel (person). No second drawing is
+  known outside the Albertina (Wikipedia, pubhist, the Albertina); impressions of the 1557 engraving are in many
+  print rooms (the Met, 338694, and others) — not entered.
+- **Why:** owner's roadmap item 65 ("Die grossen Fische fressen die kleinen"), 2026-10-30.
+- **Revert:** delete the five artworks via the admin.
+
 ### Data: Van Gogh's La Berceuse, five versions with their provenance; two import fixes
 - **What:** the group "La Berceuse" (versions, 5 parts, December 1888–March 1889) and its five versions from Wikidata
   (Kröller-Müller Museum, Metropolitan Museum, Art Institute of Chicago, MFA Boston, Stedelijk Museum), each with the

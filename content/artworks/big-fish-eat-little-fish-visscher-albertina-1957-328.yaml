@@ -1,0 +1,72 @@
+public_id: 105059
+title: Die großen Fische fressen die kleinen
+names:
+  - lang: en
+    role: translation
+    text: Big Fish Eat Little Fish
+creator: pieter-brueghel-the-elder
+attribution_label: after Pieter Bruegel the Elder (copy of the engraving of 1557)
+created: after 1619
+kind: print
+medium: Kupferstich
+dimensions: [21.9, 29]
+institution: albertina
+inventory_number: DG1957/328
+web_url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+description_md: A second impression of the copy's third state, published by Claes Jansz Visscher — "CJ Visscher / excud." lower left, "P. Breugel inven:" lower right[[source/albertina-sammlungen-online|DG1957/328]].
+relationships:
+  - type: copy_after
+    to: artwork/big-fish-eat-little-fish-van-der-heyden-1557-albertina
+provenance:
+  - owner: artist/claes-jansz-visscher
+    role: publisher
+    place: amsterdam
+    sources:
+      - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+        note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+        source: albertina-sammlungen-online
+        accessed: 2026-10-30
+  - owner: institution/albertina
+    place: vienna
+    label: the print collection (DG = Druckgraphik)
+    sources:
+      - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+        note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+        source: albertina-sammlungen-online
+        accessed: 2026-10-30
+sources:
+  kind:
+    - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  medium:
+    - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  created:
+    - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  creator:
+    - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  dimensions:
+    - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  institution:
+    - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  inventory_number:
+    - url: https://sammlungenonline.albertina.at/de/objects/328904/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in Claes Jansz Visscher · nach 1619 · Kupferstich · Blatt: 21,9 x 29 cm · DG1957/328 · 3. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30

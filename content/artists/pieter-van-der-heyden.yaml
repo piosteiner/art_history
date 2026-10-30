@@ -1,0 +1,60 @@
+public_id: 105046
+name: Pieter van der Heyden
+given_name: Pieter
+family_name: van der Heyden
+names:
+  - Pieter Verheyden
+  - Petrus Ameringius
+  - Petrus Mercinus
+  - Petrus Miricenys
+  - Miricinus Heyden
+  - Petrus Mericinus
+  - Pieter Verheyden Heyden
+  - Miriginus Heyden
+  - Miricenys Heyden
+  - Petrus Miricinus
+  - Petrus A Merica Heyden
+  - Mericinus Heyden
+  - Pieter Heyden
+  - Petrus Miriginus
+  - Petrus Myricenis
+  - Petrus a Merige
+  - Petrus Merecinus
+  - Ameringius Heyden
+  - Petrus Miricenis
+  - Myricenis Heyden
+  - Petrus a Merica
+  - Peter Verheyden
+  - Petrus Merecynus
+  - Petrus Ameringus
+  - Pieter van der Heijden
+  - Pieter Verheijden
+  - Peter van der Heyden
+  - lang: ja
+    role: translation
+    text: ピーテル・ファン・デル・ヘイデン
+  - lang: ru
+    role: translation
+    text: Ван дер Хейден, Питер
+birth: c. 1530
+death: 1572
+wikidata_id: Q2094287
+metadata:
+  sources: [Wikidata Q2094287 (retrieved 2026-10-30)]
+identifiers:
+  bnf: 14966612m
+  gnd: "129174327"
+  kulturnav: 661c1df6-ec84-4ccb-885a-72a21e6152c6
+  lc: no2010041362
+  rkd: "38237"
+  ulan: "500029457"
+  viaf: "317274999"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q2094287
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q2094287

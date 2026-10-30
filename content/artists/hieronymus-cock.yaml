@@ -1,0 +1,61 @@
+public_id: 105047
+name: Hieronymus Cock
+given_name: Hieronymus
+family_name: Cock
+names:
+  - Hieronymo Koeck
+  - Jérôme Cock
+  - Hieronymo Kock
+  - Jeronimus Cock
+  - Hieronymus Coccius
+  - Hieronymus Cock Wellens
+  - Jeronimus Kock
+  - Hieryonymus Kock
+  - Hieronymous Cock
+  - Girolamo Cock
+  - Hieronymus Wellens de Cock
+  - Hieronimus Cock
+  - Jérôme Cocq
+  - Jérôme Kock
+  - Hieronymus Kock
+  - Hieronymus Kock Wellens
+  - Jéròme Cock
+  - Jerome Cock
+  - Jerome Cocq
+  - Jerome Kock
+  - H. Cock
+  - Jerôme Cock
+  - lang: ja
+    role: translation
+    text: ヒエロニムス・コック
+  - lang: ru
+    role: translation
+    text: Иероним Кок
+birth: 1518
+death: 1570-10-30
+wikidata_id: Q640361
+metadata:
+  sources: [Wikidata Q640361 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/6/60/Hieronymus_Cock.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Hieronymus_Cock.jpg
+    license: Public domain
+    credit: Johannes Wierix
+identifiers:
+  bnf: 11972820m
+  gnd: "122823583"
+  idref: 14410539X
+  kulturnav: 98aedc68-ba8f-41d5-ac14-e764470bb96a
+  lc: n85307905
+  rkd: "17404"
+  ulan: "500005618"
+  viaf: "76325072"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q640361
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q640361

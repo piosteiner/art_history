@@ -1,0 +1,50 @@
+public_id: 105048
+name: Hendrik Hondius I
+given_name: Hendrik, I
+family_name: Hondius
+names:
+  - Hendrik, the elder Hondius
+  - Hendrik, I Hondius
+  - Hendrlk I Hondius
+  - Heyn de Hont
+  - Hendrik Hondius
+  - Hendrick Hondius (I)
+  - Hendrik Hondius (I)
+  - Hendrick Hondius
+  - Henricus Hondius
+  - Henricus Hondius (I)
+  - hendrik hondius d. a.
+  - lang: de
+    role: translation
+    text: Hendrik Hondius der Ältere
+  - lang: ru
+    role: translation
+    text: Гендрик Гондиус I
+birth: 1573-06-09
+death: 1650-10-29
+wikidata_id: Q926814
+metadata:
+  sources: [Wikidata Q926814 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Hendrick_Hondius.png/1280px-Hendrick_Hondius.png
+    source_url: https://commons.wikimedia.org/wiki/File:Hendrick_Hondius.png
+    license: Public domain
+    credit: Hendrik Hondius I
+identifiers:
+  bnf: 12501466k
+  gnd: "119441969"
+  idref: 03423876X
+  kulturnav: 93b5a326-912f-4f6c-95c9-18639f96aa6f
+  lc: n50028994
+  rkd: "39407"
+  ulan: "500006788"
+  viaf: "66148995768959750881"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q926814
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q926814

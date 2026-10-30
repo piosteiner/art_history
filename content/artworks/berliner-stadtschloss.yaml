@@ -9,17 +9,14 @@ attribution_label: Andreas Schlüter, Johann Friedrich Eosander and others; rebu
 created: 1443/1718
 created_span: duration
 web_url: https://www.humboldtforum.org/de/architektur/
-location:
-  - 13.40278
-  - 52.5175
+location: [13.40278, 52.5175]
 description_md: |-
   The residence of the Hohenzollern in Berlin — electors of Brandenburg, from 1701 kings in Prussia, from 1871 German emperors[[source/wikipedia-de-berliner-schloss|„Es war ursprünglich die Hauptresidenz der Kurfürsten von Brandenburg aus dem Haus Hohenzollern, die 1701 zu preußischen Königen und 1871 zu deutschen Kaisern aufstiegen“]]. Begun in 1443 as a fortified castle, rebuilt in the 16th century as a Renaissance palace and from 1698 as a Baroque royal residence: “The palace was built from 1698 to 1718 after designs by the architects Andreas Schlüter and Johann Friedrich von Eosander”, one of the most important secular Baroque buildings north of the Alps[[source/humboldt-forum-architektur|„Das Schloss entstand von 1698 bis 1718 nach Entwürfen der Architekten Andreas Schlüter und Johann Friedrich von Eosander. Es galt als einer der bedeutendsten profanen Barockbauten nördlich der Alpen“]]. Its dome was added in 1845–1853.
 
   Burnt out in 1945 and blown up in 1950, it was rebuilt from 2013 as the Humboldt Forum, which “repeats large parts of the facades” and joins them with modern parts[[source/humboldt-forum-architektur|„Architektonisch wiederholt das Humboldt Forum große Teile der Fassaden des 1945 zerstörten und 1950 gesprengten Berliner Schlosses und verbindet sie mit modernen Bauteilen“]]: reconstructed are the three Baroque outer facades with the dome and the three Baroque facades of the Schlüterhof[[source/humboldt-forum-architektur|„Rekonstruiert wurden die drei barocken Außenfassaden samt Kuppel und die drei barocken Fassaden des Schlüterhofes“]]; the east facade, the passage through the building and the interiors are new, by Franco Stella[[source/humboldt-forum-architektur|„Die moderne Architektur der Ostfassade …“ · „Mit der „Passage“, einem Fußgängerdurchgang quer durch das Gebäude, macht Stella das Humboldt Forum und seine Innenhöfe zu neuen öffentlichen Orten Berlins“]]. Who built which part, and when: see the building history.
 wikidata_id: Q170119
 metadata:
-  sources:
-    - Wikidata Q170119 (retrieved 2026-10-27)
+  sources: [Wikidata Q170119 (retrieved 2026-10-27)]
 relationships:
   - type: created_in
     to: place/berlin

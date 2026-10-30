@@ -13,19 +13,14 @@ creator: vincent-van-gogh
 created: 1888-12/1889-01
 kind: oil painting
 medium: Oil on canvas
-materials:
-  - oil paint
-  - canvas
-dimensions:
-  - 92
-  - 73
+materials: [oil paint, canvas]
+dimensions: [92, 73]
 institution: kroller-muller-museum
 inventory_number: KM 109.725
 web_url: https://www.krollermuller.nl/en/collection/vincent-van-gogh-la-berceuse-portrait-of-madame-roulin-km-109-725
 wikidata_id: Q3820656
 metadata:
-  sources:
-    - Wikidata Q3820656 (retrieved 2026-10-30)
+  sources: [Wikidata Q3820656 (retrieved 2026-10-30)]
 relationships:
   - type: depicts_person
     to: person/augustine-roulin
@@ -38,19 +33,19 @@ provenance:
   - owner: person/theo-van-gogh
     acquired: 1889-05
     method: gift
-    label: sent to his brother with the other versions
     place: paris
+    label: sent to his brother with the other versions
     sources:
       - url: https://vangoghletters.org/vg/letters/let776/notes.html
+        note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
         source: van-gogh-letters
         accessed: 2026-10-30
-        note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
   - owner: person/helene-kroller-muller
     sources:
-      - wikidata: Q3820656
-        property: P127
+      - note: "Wikidata: owned by Helene Kröller-Müller, point in time 1912 (lent to the Sonderbund exhibition, Cologne, 1912)"
         accessed: 2026-10-30
-        note: "Wikidata: owned by Helene Kröller-Müller, point in time 1912 (lent to the Sonderbund exhibition, Cologne, 1912)"
+        property: P127
+        wikidata: Q3820656
     records:
       - kind: exhibition
         date: "1912"
@@ -60,38 +55,44 @@ provenance:
     place: ede
     sources:
       - url: https://www.krollermuller.nl/en/collection/vincent-van-gogh-la-berceuse-portrait-of-madame-roulin-km-109-725
+        note: "Kröller-Müller Museum: “La Berceuse (portret van Madame Roulin)”, KM 109.725 — in the collection"
         source: kroller-muller-la-berceuse-km-109-725
         accessed: 2026-10-30
-        note: "Kröller-Müller Museum: “La Berceuse (portret van Madame Roulin)”, KM 109.725 — in the collection"
 numbers:
   - number: F504
     source: de-la-faille-1970
     sources:
-      - wikidata: Q3820656
-        property: P528
+      - note: "Wikidata: catalog code F504"
         accessed: 2026-10-30
-        note: "Wikidata: catalog code F504"
+        property: P528
+        wikidata: Q3820656
   - number: JH1655
     source: hulsker-1996
     sources:
-      - wikidata: Q3820656
-        property: P528
+      - note: "Wikidata: catalog code JH1655"
         accessed: 2026-10-30
-        note: "Wikidata: catalog code JH1655"
+        property: P528
+        wikidata: Q3820656
 sources:
   names:
     - accessed: 2026-10-30
       wikidata: Q3820656
   parent:
+    - accessed: 2026-10-30
+      property: P179
+      wikidata: Q3820656
     - url: https://vangoghletters.org/vg/letters/let776/notes.html
+      note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
       source: van-gogh-letters
       accessed: 2026-10-30
-      note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
   created:
+    - accessed: 2026-10-30
+      property: P571
+      wikidata: Q3820656
     - url: https://www.krollermuller.nl/en/collection/vincent-van-gogh-la-berceuse-portrait-of-madame-roulin-km-109-725
+      note: "Kröller-Müller Museum: “Date December 1888 - January 1889”"
       source: kroller-muller-la-berceuse-km-109-725
       accessed: 2026-10-30
-      note: "Kröller-Müller Museum: “Date December 1888 - January 1889”"
   creator:
     - accessed: 2026-10-30
       property: P170

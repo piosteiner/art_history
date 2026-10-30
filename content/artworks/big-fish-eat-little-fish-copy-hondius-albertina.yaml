@@ -1,0 +1,71 @@
+public_id: 105056
+title: Die großen Fische fressen die kleinen
+names:
+  - lang: en
+    role: translation
+    text: Big Fish Eat Little Fish
+creator: pieter-brueghel-the-elder
+attribution_label: after Pieter Bruegel the Elder (copy of the engraving of 1557)
+created: after 1557
+kind: print
+medium: Kupferstich
+dimensions: [20.9, 29.2]
+institution: albertina
+inventory_number: DG1957/326
+web_url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+description_md: A copy of the engraving of 1557, in its first state, published by Hendrik Hondius the Elder — "Hh. excud." lower left, still "H. Bos inv." lower right[[source/albertina-sammlungen-online|DG1957/326]].
+relationships:
+  - type: copy_after
+    to: artwork/big-fish-eat-little-fish-van-der-heyden-1557-albertina
+provenance:
+  - owner: artist/hendrik-hondius-the-elder
+    role: publisher
+    sources:
+      - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+        note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+        source: albertina-sammlungen-online
+        accessed: 2026-10-30
+  - owner: institution/albertina
+    place: vienna
+    label: the print collection (DG = Druckgraphik)
+    sources:
+      - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+        note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+        source: albertina-sammlungen-online
+        accessed: 2026-10-30
+sources:
+  kind:
+    - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  medium:
+    - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  created:
+    - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  creator:
+    - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  dimensions:
+    - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  institution:
+    - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
+  inventory_number:
+    - url: https://sammlungenonline.albertina.at/de/objects/328903/die-groen-fische-fressen-die-kleinen
+      note: "Albertina, Sammlungen Online: „Nach Pieter Bruegel d. Ä. · Verleger:in: Hendrik Hondius der Ältere · nach 1557 · Kupferstich · Blatt: 20,9 x 29,2 cm · DG1957/326 · 1. Zustand der Kopie“"
+      source: albertina-sammlungen-online
+      accessed: 2026-10-30
