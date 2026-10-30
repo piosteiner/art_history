@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Glauser 2002 linked to E-Periodica
+- **What:** source `glauser-2002`: `url` = the E-Periodica page (from the owner), the DOI moved to its own field `doi`;
+  Zug's three citations link the E-Periodica page too.
+- **Why:** owner, 2026-10-30.
+- **Revert:** via the admin history (bibliography `glauser-2002`, citations).
+
 ### Data: Wanderer über dem Nebelmeer after Bauer/Haug (transfer 3, 2024)
 - **What:** the article (PDF from the owner) cited on 17 provenance steps, the date and the provenance status with
   page locators. Added: the 1938 opinions as records under Luz (6 July shown to Jähnig, 16 July Jähnig, 4 Aug Jähnig to
