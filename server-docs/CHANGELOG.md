@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Export ↔ import made equal again; `import --diff`; designations for three Japanese works
+- **What:** `npm run import -- --dry-run --diff` lists, field by field, what an import would change (the audit rows of
+  its rolled-back transaction). Found and fixed: a source's note that itself contains " · " was appended again on
+  every import (301 citations would have doubled — `src/citations-io.js`); an alternative name with a kind (pseudonym,
+  birth name …) was exported as a plain string and lost its kind (`src/content.js`); a date in free words that parses
+  to the same range ("between 1746 and 1749") was exported as its words and came back labelled "1746–1749"
+  (`dateToDoc`). Left as it is: the import numbers further numbers and images from 0 where the admin left gaps — the
+  same order. Data: two `located_in` periods got their labels. E2E yaml-roundtrip extended.
+  ColBase / Cultural Heritage Online: the Agency lists the national museums' works under the National Institutes
+  for Cultural Heritage — taken as the museum for a work in one of them. Applied: Maiko and Yoroboshi (Tokyo National
+  Museum) Important Cultural Property since 1968 / 1967, the Dainichi Nyorai of Enjō-ji Important Cultural Property
+  since 1920 and National Treasure since 1993, each cited.
+- **Why:** owner, 2026-10-30 (open points 7 and 8).
+- **Revert:** `git revert`; the designations via the admin.
+
 ### Data: La Berceuse (Met) — the Met's full provenance
 - **What:** the Met's provenance as the owner read it in the browser: the sitter and Joseph Roulin, Arles and Marseilles
   (1889–1900, a gift from the artist) → presumably through Henri Laget → Ambroise Vollard 1900 → Amédée Schuffenecker

@@ -30,7 +30,8 @@ async function importCitations(db, target, list) {
     if (sourceId !== null) {
       const { rows: [had] } = await db.query(`SELECT id, locator, note, url FROM citations WHERE ${where} AND source_id = $${key.length + 1}`, [...key, sourceId]);
       if (had) {
-        const join = (old, add, sep) => (!add || (old || '').split(sep).includes(add) ? old : old ? `${old}${sep}${add}` : add);
+        // already there (the whole passage — a note may itself contain the separator: "Öl auf Leinwand · B 58/0")
+        const join = (old, add, sep) => (!add || (old || '') === add || (old || '').split(sep).includes(add) || (old || '').includes(`${sep}${add}`) || (old || '').startsWith(`${add}${sep}`) ? old : old ? `${old}${sep}${add}` : add);
         const note = join(had.note, v.note, ' · ');
         const locator = join(had.locator, v.locator, '; ');
         if (note !== had.note || locator !== had.locator || (!had.url && v.url)) {

@@ -351,7 +351,12 @@ function dateToDoc(range, label, openEnd) {
     try { if (label === parseFuzzyDate(text, { openEnd }).label) return { value: text, label: null }; } catch { /* "…/" without openEnd */ }
   }
   // … else written as "13th century" ("late 13th century", "1880s", "26 March 1952 or later"): the label is the text
-  try { if (label && parseFuzzyDate(label, { openEnd }).range.replace(/"/g, '') === String(range).replace(/"/g, '')) return { value: label, label: null }; } catch { /* not such a text */ }
+  // (only when it reads back as itself: "between 1746 and 1749" parses to the same range but is labelled "1746–1749",
+  // so it stays the label beside the value)
+  try {
+    const back = label && parseFuzzyDate(label, { openEnd });
+    if (back && back.range.replace(/"/g, '') === String(range).replace(/"/g, '') && back.label === label) return { value: label, label: null };
+  } catch { /* not such a text */ }
   return { value, label };
 }
 
@@ -388,7 +393,8 @@ function rowToDoc(row, t) {
     }
     if (kind === 'name' && row[`${key}_lang`]) doc[`${key}_lang`] = row[`${key}_lang`];
     // names: a plain alternative stays a plain string in YAML (as the old lists were)
-    if (kind === 'names') v = Array.isArray(v) && v.length ? v.map((n) => (n.role === 'alternative' && !n.lang ? n.text : n)) : null;
+    // (only when that is all it is: a kind, a status, a period or a note keep it a mapping — before, the kind was lost)
+    if (kind === 'names') v = Array.isArray(v) && v.length ? v.map((n) => (n.role === 'alternative' && Object.keys(n).every((k) => k === 'text' || k === 'role') ? n.text : n)) : null;
     if ((kind === 'text[]' || kind === 'dimsets') && Array.isArray(v) && !v.length) v = null;
     if (kind === 'json' && v && !Object.keys(v).length) v = null;
     if (kind === 'bool' && !v) v = null;

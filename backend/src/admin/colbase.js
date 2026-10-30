@@ -27,6 +27,7 @@ const DESIGNATION = { 'National Treasure': 'national-treasure-japan', 'Important
   'Important Art Object': 'important-art-object-japan' };
 const TERM_LABEL = { 'national-treasure-japan': 'National Treasure', 'important-cultural-property-japan': 'Important Cultural Property',
   'important-art-object-japan': 'Important Art Object' };
+const NATIONAL_MUSEUMS = ['tokyo-national-museum', 'kyoto-national-museum', 'nara-national-museum', 'kyushu-national-museum'];
 const DATE_FIELD = { 重文指定年月日: 'important-cultural-property-japan', 国宝指定年月日: 'national-treasure-japan' };
 
 // a Japan Search item → the record ({…, designations: [{term, since}]}); null when it isn't a work's record
@@ -115,6 +116,11 @@ async function find(db, t, ours, code = 'colbase') {
     if (rows.length) holders[h] = rows[0];
   }
   const mine = { web_url: ours['f.web_url'] || '', institution: ours['f.institution'] || '', inventory_number: ours['f.inventory_number'] || '' };
+  // the Agency lists the national museums' works under the body that owns them, the National Institutes for Cultural
+  // Heritage (独立行政法人国立文化財機構): for a work in one of the four museums, that is its holder
+  if (NATIONAL_MUSEUMS.includes(mine.institution)) {
+    for (const r of records) if (/国立文化財機構|National Institutes for Cultural Heritage/.test(r.holder || '')) holders[r.holder] = { slug: mine.institution, name: r.holder };
+  }
   // a title like 自画像 ("self-portrait") is many works': the record at our museum is this one; with another museum of
   // ours, none is picked for us — with none, the only record of exactly this title
   const atOurs = (r) => !!mine.institution && (holders[r.holder] || {}).slug === mine.institution;

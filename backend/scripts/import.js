@@ -6,6 +6,7 @@
 //   npm run import:dev              # arthistory_dev
 //   npm run import -- --dry-run     # validate + report, then roll back
 //   npm run import -- --verbose     # also name every entry inserted or updated
+//   npm run import -- --dry-run --diff   # and show, field by field, what an update would change (from audit_log)
 //   npm run import -- --prune       # also delete relationships (and images, provenance steps) of content entities that are no longer in the YAML
 //
 // Layout: content/<folder>/<slug>.yaml — one entity per file, the file name is its slug.
@@ -24,6 +25,7 @@ const CONTENT_DIR = process.env.CONTENT_DIR || path.join(__dirname, '..', '..', 
 const DRY_RUN = process.argv.includes('--dry-run');
 const PRUNE = process.argv.includes('--prune');
 const VERBOSE = process.argv.includes('--verbose');  // also name every entry inserted or updated
+const DIFF = process.argv.includes('--diff');  // with --dry-run: the changed fields of every updated row
 
 // Collect every problem instead of stopping at the first one.
 const errors = [];
@@ -529,6 +531,16 @@ async function main() {
     if (errors.length) {
       await client.query('ROLLBACK');
     } else if (DRY_RUN) {
+      // what an update would change: the history rows this transaction wrote (audit trigger, 006), field by field
+      if (DIFF) {
+        const { rows: diffs } = await client.query(`
+          SELECT a.table_name, a.row_id, k AS field, a.old_row -> k AS was, a.new_row -> k AS would_be
+          FROM audit_log a, jsonb_object_keys(a.new_row) k
+          WHERE a.txid = pg_current_xact_id() AND a.action = 'update' AND k NOT IN ('updated_at', 'search_vector')
+            AND a.old_row -> k IS DISTINCT FROM a.new_row -> k
+          ORDER BY a.table_name, a.row_id, k`);
+        for (const d of diffs) console.log(`  diff ${d.table_name} #${d.row_id} ${d.field}: ${JSON.stringify(d.was)} → ${JSON.stringify(d.would_be)}`);
+      }
       await client.query('ROLLBACK');
     } else {
       await client.query('COMMIT');
