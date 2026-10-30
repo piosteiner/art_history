@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Migration 175: stolen and forgery marks
+- **What:** `artwork_stolen(aid)` — a work is "stolen" while its last `theft` provenance step has no end (derived, not
+  stored; API `stolen` with a link to the step). `artworks.authenticity` disputed / forgery + `authenticity_date`,
+  `_date_label`, `_note` (constraint: details only with a status; citable field `authenticity`). Relationship type
+  `passed_off_as` (artwork → artist: the forger is the creator, this names whom the work imitates). CMS group
+  "Disputed or forged…" on the artwork form, YAML fields, site tags under the title and rows in the facts. e2e
+  `authenticity.spec.js`, YAML round trip, site test; perf 35/35.
+- **Why:** owner, 2026-10-30 — recent art heists; a forgery mark kept as an option (Beltracchi) without needing it.
+- **Revert:** drop `artwork_stolen`, the `passed_off_as` type (no rows yet), the four columns + constraint, the
+  citable field and type `artwork_authenticity`; revert the code commit.
+
 ### Migrations 173/174, schools, Korea checked, Mediaeval period and Occupation, three entries completed
 - **173:** a lost work's provenance ends with its loss, like a destroyed work's (`provenance_coverage`); bars "lost
   1945", closing line "whereabouts unknown since; the provenance ends here until it reappears". e2e + site test.

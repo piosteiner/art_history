@@ -64,6 +64,7 @@ const TYPES = [
     title: 'name', title_status: 'text', names: 'names', parent: 'parent', part_number: 'text', parts_count: 'text', creator: 'ref:artist', attribution_label: 'text', created: 'date',
     created_span: 'text',  // what the span of "created" means: duration (worked on throughout) or uncertain (135)
     completion: 'text', completion_date: 'date', completion_note: 'text',  // unfinished / completed by another hand, when, why (172)
+    authenticity: 'text', authenticity_date: 'date', authenticity_note: 'text',  // disputed / forgery, when, why (175)
     conceived: 'date',  // when the design, block or model was made — a print pulled, a bronze cast later (074)
     kind: 'text', medium: 'text', materials: 'text[]', dimensions: 'dimensions', dimensions_note: 'text',
     other_dimensions: 'dimsets',

@@ -327,6 +327,8 @@ export interface Artwork extends DetailBase, Located, Titled {
   /** What became of it (API 103): destroyed / partly destroyed / lost, when and how; null while extant. */
   fate?: ArtworkFate | null;
   completion?: ArtworkCompletion | null;
+  authenticity?: ArtworkAuthenticity | null;
+  stolen?: ArtworkStolen | null;
   /** What the span of `created` means (API 135): `duration` = worked on over that time, `uncertain` = made at some point
    * in it; null = not stated. */
   created_span?: 'duration' | 'uncertain' | null;
@@ -364,6 +366,11 @@ export interface ProvenanceCoverage {
 export type ProvenanceCategory = 'A' | 'B' | 'C' | 'D';
 export interface ProvenanceStatus { category: ProvenanceCategory; code: string; label: string; note: string | null }
 /** What became of an artwork (API 103): null while extant as far as known; `note`: how, in the source's words. */
+/** Doubts about it (API 175): attribution disputed, or a forgery; null when none are known. */
+export interface ArtworkAuthenticity { status: 'disputed' | 'forgery'; label: string; date: DateRange | null; note: string | null }
+/** An open theft in its provenance (API 175): the theft step not recovered; null when none. */
+export interface ArtworkStolen { date: DateRange | null; note: string | null; provenance_id: number }
+
 /** Whether it was finished (API 172): left unfinished, or finished by another hand; null when finished as far as known. */
 export interface ArtworkCompletion { status: 'unfinished' | 'completed_by_another'; label: string; date: DateRange | null; note: string | null }
 

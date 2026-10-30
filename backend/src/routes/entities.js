@@ -123,6 +123,11 @@ const ENTITIES = {
              CASE WHEN t.completion IS NOT NULL THEN jsonb_build_object('status', t.completion, 'label', CASE t.completion
                WHEN 'unfinished' THEN 'unfinished' ELSE 'finished by another hand' END,
                'date', range_json(t.completion_date, t.completion_date_label), 'note', t.completion_note) END AS completion,
+             -- doubts about it (175): disputed or forgery; and an open theft in its provenance (not recovered)
+             CASE WHEN t.authenticity IS NOT NULL THEN jsonb_build_object('status', t.authenticity, 'label', CASE t.authenticity
+               WHEN 'disputed' THEN 'attribution disputed' ELSE 'forgery' END,
+               'date', range_json(t.authenticity_date, t.authenticity_date_label), 'note', t.authenticity_note) END AS authenticity,
+             artwork_stolen(t.id) AS stolen,
              (SELECT jsonb_build_object('slug', g.slug, 'name', g.name) FROM glossary g WHERE g.id = t.kind_term_id) AS kind_term,
              (SELECT coalesce(jsonb_agg(jsonb_build_object('slug', g.slug, 'name', g.name) ORDER BY am.position), '[]')
                 FROM artwork_materials am JOIN glossary g ON g.id = am.term_id WHERE am.artwork_id = t.id) AS material_terms,

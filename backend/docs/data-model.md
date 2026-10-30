@@ -647,6 +647,12 @@ citable) — Klimt's Amalie Zuckerkandl and Adam und Eva unfinished at his death
 `fate` partly_destroyed without a date ("fragmentary", not placed in the provenance list).
 `fate_event(artwork_id)` (171): the fate's cause — an event that `concerns` the work and overlaps `fate_date` — for the
 API's `fate.event` and the closing line of the provenance (site list, admin table).
+Stolen and authenticity (175): **stolen** is not stored — `artwork_stolen(artwork_id)` reads the last provenance step
+with role `theft` that has no end (`ended IS NULL`, not an `alternative_to`) → `{date, note, provenance_id}`; once the
+step gets its end (recovered), the mark goes. A theft never recovered for decades is `fate` lost. **Authenticity** is
+stored: `authenticity` disputed (attribution doubted) / forgery (made to deceive) + `authenticity_date` (when doubted or
+exposed), `_label`, `_note`, citable. A forgery's creator is the forger (`created_by`); whom it imitates is the
+relationship `passed_off_as` (artwork → artist, category association).
 
 ## Provenance as it happened (migrations 083/084)
 - Role `possessor` (beside the chain): held without good title — seized, looted, stolen, received from those who took

@@ -1674,6 +1674,20 @@ test('provenance: a destroyed work\'s list ends with its destruction and the eve
   await expect(items.last()).toContainText('Second Owner');
 });
 
+test('a forgery and a stolen work say so under the title and in the facts (175)', async ({ page }) => {
+  await patch(page, GREAT_WAVE, (b) => {
+    b.authenticity = { status: 'forgery', label: 'forgery', date: { ...span('2010-01-01', '2010-12-31'), label: '2010' }, note: 'exposed by pigment analysis' };
+    b.stolen = { date: { ...span('2025-10-19', '2025-10-19'), label: '19 October 2025' }, note: 'taken from the gallery', provenance_id: 1 };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const facts = page.locator('.facts');
+  await expect(facts.locator('.tag-forgery')).toHaveText('forgery');
+  await expect(facts).toContainText('exposed by pigment analysis');
+  await expect(facts.locator('.tag-stolen')).toHaveText('stolen');
+  await expect(facts).toContainText('19 October 2025');
+  await expect(page.locator('p.subtitle')).toContainText('forgery');
+});
+
 test('completion (172): an unfinished work says so in the facts, under the title and at the artist\'s step; undated fragments stay off the rail', async ({ page }) => {
   const artist = { type: 'artist', slug: 'katsushika-hokusai', name: 'Katsushika Hokusai' };
   await patch(page, GREAT_WAVE, (b) => {

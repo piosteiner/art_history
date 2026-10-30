@@ -332,6 +332,11 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
 - `completion` (detail, 172): `{status, label, date, note}` or `null` (finished as far as known). `status`: `unfinished`
   (left so — the artist's death, abandoned) · `completed_by_another` (finished by another hand, who: a `co_creator`);
   `date` when it stopped / was finished. Independent of `fate`: Klimt's last portraits are unfinished and whole.
+- `authenticity` (detail, 175): `{status, label, date, note}` or `null` (no doubts known). `status`: `disputed`
+  (attribution doubted) · `forgery` (made to deceive; the forger is the creator, whom it imitates in the relationship
+  `passed_off_as`).
+- `stolen` (detail, 175): `{date, note, provenance_id}` or `null` — derived from a `theft` step without an end; gone once
+  the step ends (recovered).
 - `fate` (detail): `{status, label, date, note, event}` or `null` (extant as far as known). `status`: `destroyed` ·
   `partly_destroyed` (fragments survive — `label` "fragmentary" when undated: losses at an unknown time, 172) · `lost` (whereabouts unknown, also stolen and never recovered); `date` a
   date object or null; `note` how and why, in the source's words. Lists have `fate` (the status or null). Show it

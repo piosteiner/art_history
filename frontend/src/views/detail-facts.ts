@@ -30,6 +30,19 @@ function completionFact(e: Artwork): Html | null {
   return html`<span class="tag tag-completion">${c.label}</span>${c.date ? ` ${c.date.label}` : ''}${c.note ? html` — ${c.note}` : ''}`;
 }
 
+/** "forgery · 2010 — exposed by pigment analysis" / "attribution disputed" (API 175); null when no doubts are known. */
+function authenticityFact(e: Artwork): Html | null {
+  const a = e.authenticity;
+  if (!a) return null;
+  return html`<span class="tag tag-authenticity tag-${a.status}">${a.label}</span>${a.date ? ` ${a.date.label}` : ''}${a.note ? html` — ${a.note}` : ''}`;
+}
+/** "stolen · 19 October 2025 — from the Galerie d'Apollon", linked to its provenance step (API 175). */
+function stolenFact(e: Artwork): Html | null {
+  const st = e.stolen;
+  if (!st) return null;
+  return html`<span class="tag tag-stolen">stolen</span>${st.date ? ` ${st.date.label}` : ''}${st.note ? html` — ${st.note}` : ''} · <a href="#provenance-${String(st.provenance_id)}">in the provenance</a>`;
+}
+
 // a span of years (API 135): worked on over the whole time, or made at some point in it — said only where the label
 // itself doesn't ("c. 1882", "1880s" say it already)
 function spanNote(e: Artwork): string {
@@ -192,12 +205,15 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
         title: displayName(e).text, // an official translation preferred, an own one in [brackets]
         // destroyed or lost (API 103): said at once, under the title — "…, c. 1817 · destroyed 1945"
         subtitle: [[...byline, e.created?.label].filter(Boolean).join(', '), e.completion?.status === 'unfinished' ? 'unfinished' : null,
+          e.authenticity ? e.authenticity.label : null, e.stolen ? ['stolen', e.stolen.date?.label].filter(Boolean).join(' ') : null,
           e.fate ? [e.fate.label, e.fate.date?.label].filter(Boolean).join(' ') : null].filter(Boolean).join(' · '),
         text: e.description_html, images: e.images,
         facts: [
           [creatorsOf(e).length > 1 ? 'Artists' : 'Artist', creatorsFact(e)],
           ['Date', dateFact(e)],
           ['Completion', completionFact(e)],
+          ['Authenticity', authenticityFact(e)],
+          ['Stolen', stolenFact(e)],
           ['Fate', fateFact(e)],
           // glossary terms (API 071): linked to their entries, which explain them and carry the translations
           ['Type', e.kind_term ? link('term', e.kind_term.slug, e.kind ?? e.kind_term.name) : e.kind],
@@ -335,7 +351,7 @@ const NAMES_FACT: Record<string, string[]> = { names: ['Also known as'] };
 const FIELD_FACT: Partial<Record<EntityType, Record<string, string[]>>> = {
   artist: { birth: ['Born'], death: ['Died'] },
   artwork: { creator: ['Artist', 'Artists'], attribution_label: ['Artist', 'Artists'], created: ['Date'], conceived: ['Date'], kind: ['Type'], medium: ['Medium'], materials: ['Materials'],
-    dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'], fate: ['Fate'], completion: ['Completion'] },
+    dimensions: ['Dimensions'], institution: ['Collection'], on_loan: ['Collection'], inventory_number: ['Inventory no.'], fate: ['Fate'], completion: ['Completion'], authenticity: ['Authenticity'] },
   institution: { founded: ['Founded'], dissolved: ['Closed'], address: ['Address', 'Location'], location: ['Address', 'Location'], place: ['Location'] },
   person: { birth: ['Born', 'Active'], death: ['Died'], kind: ['Kind'], occupations: ['Occupations'] },
   place: { parent: ['Part of'], location: ['Coordinates'] },

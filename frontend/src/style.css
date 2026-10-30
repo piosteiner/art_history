@@ -309,6 +309,11 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 /* what became of an artwork (API 103): destroyed / partly destroyed / lost */
 .tag-fate { color: var(--surface); background: var(--text); border-color: var(--text); text-transform: none; }
 .tag-completion { border-style: dashed; text-transform: none; } /* unfinished (API 172): a dashed outline, the work itself is whole */
+/* doubts and theft (API 175): a forgery in red, a disputed attribution outlined, stolen dark like a fate */
+.tag-authenticity, .tag-stolen { text-transform: none; }
+.tag-forgery { color: var(--surface); background: var(--prov-d); border-color: var(--prov-d); }
+.tag-disputed { border-style: dashed; color: var(--prov-d); border-color: currentColor; }
+.tag-stolen { color: var(--surface); background: var(--text); border-color: var(--text); }
 .gap-list li.ns { color: var(--prov-d); }
 /* a gap on the map: "? 1934–1946" mid-segment */
 .prov-gap { font: 600 11px/1 var(--sans); padding: 3px 5px; border-radius: 9px; background: var(--surface); color: var(--muted);
