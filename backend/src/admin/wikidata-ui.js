@@ -48,6 +48,7 @@ function fieldRow(r, t) {
   const pre = r.declined ? 'keep' : r.status === 'empty' ? 'take' : 'later';
   const radio = (value, label) => html`<label class="choice"><input type="radio" name="take.${r.key}" value="${value}"${pre === value ? ' checked' : ''}> ${label}</label>`;
   const extra = r.status === 'more-precise' ? html`<div class="muted small">yours is more precise (within Wikidata's range)</div>`
+    : r.status === 'start-only' ? html`<div class="muted small">yours has only the start — Wikidata adds the end</div>`
     : r.kind === 'point' && r.km !== null ? html`<div class="muted small">${r.km} km apart</div>` : '';
   return html`<tr class="wd-${r.status}"><th>${name}</th><td>${fmt(r.ours)}</td><td>${r.display}${extra}</td>
     <td>${radio('take', "take Wikidata's")} ${radio('keep', r.ours ? 'keep mine' : 'leave empty')} ${radio('later', 'decide later')}${note}</td></tr>`;

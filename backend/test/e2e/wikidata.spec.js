@@ -235,3 +235,19 @@ test('a pseudonym from Wikidata: offered as "alternative, pseudonym" with "from 
   await Promise.all([userA.waitForNavigation(), userA.click('.search-hit a:has-text("Claude Monet")')]);
   await expect(userA.locator('input[name="alt.names"][value="Test Pseudonym Monet |  | alternative, pseudonym | from 1860"]')).toBeVisible();
 });
+
+test('a period of only its first day is not "more precise" than Wikidata\'s span: the end is missing', async ({ userA }) => {
+  sql(`DELETE FROM movements WHERE slug = 'test-secession';
+       INSERT INTO movements (slug, name, wikidata_id, period, period_label) VALUES ('test-secession', 'Test Secession', 'Q180', '[1898-05-02,1898-05-03)', '2 May 1898')`);
+  try {
+    await userA.goto('/movements/test-secession/wikidata');
+    const period = row(userA, 'Period');
+    await expect(period).toHaveClass(/wd-start-only/);
+    await expect(period).toContainText('yours has only the start — Wikidata adds the end');
+    await expect(period).not.toContainText('more precise');
+    // a period with both ends inside Wikidata's span stays "more precise"
+    sql(`UPDATE movements SET period = '[1898-06-01,1934-01-01)', period_label = 'June 1898–1933' WHERE slug = 'test-secession'`);
+    await userA.goto('/movements/test-secession/wikidata');
+    await expect(row(userA, 'Period')).toContainText('yours is more precise');
+  } finally { sql("DELETE FROM movements WHERE slug = 'test-secession'"); }
+});

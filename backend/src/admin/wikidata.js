@@ -324,7 +324,7 @@ function fieldsFor(t, e) {
     if (!statements(e, 'P569').length && !statements(e, 'P570').length) {
       const fl = firstTime(e, 'P1317');
       const start = fl || firstTime(e, 'P2031'); const end = fl || firstTime(e, 'P2032');
-      if (start) f.active = { kind: 'date', value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: fl ? fl.label || null : null };
+      if (start) f.active = { kind: 'date', start: start.value, value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: fl ? fl.label || null : null };
     }
   }
   if (t.type === 'person') {
@@ -333,7 +333,7 @@ function fieldsFor(t, e) {
       text('kind', 'person');
     } else {  // a family, an order, a guild: when it was active
       const start = firstTime(e, 'P571', 'P2031'); const end = firstTime(e, 'P576', 'P2032');
-      if (start) f.active = { kind: 'date', value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: null };
+      if (start) f.active = { kind: 'date', start: start.value, value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: null };
     }
     // occupations (P106): the items' names, offered one by one like materials
     const occ = itemIds(e, 'P106');
@@ -351,7 +351,7 @@ function fieldsFor(t, e) {
   if (t.type === 'polity') {
     // existed: inception/dissolution (P571/P576) or start/end time (P580/P582); ISO code (P297) only for modern states
     const start = firstTime(e, 'P571', 'P580'); const end = firstTime(e, 'P576', 'P582');
-    if (start) f.period = { kind: 'date', value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: null };  // no end = still exists
+    if (start) f.period = { kind: 'date', start: start.value, value: `${start.value.split('/')[0]}/${end ? end.value.split('/').pop() : ''}`, label: null };  // no end = still exists
     text('country_codes', firstString(e, 'P297'));
   }
   if (t.type === 'term') text('definition', e.descriptions && e.descriptions.en && e.descriptions.en.value);
@@ -372,7 +372,7 @@ function fieldsFor(t, e) {
   }
   if (t.type === 'movement') {
     const start = firstTime(e, 'P580', 'P571'); const end = firstTime(e, 'P582', 'P576');
-    if (start) f.period = { kind: 'date', value: end ? `${start.value.split('/')[0]}/${end.value.split('/').pop()}` : start.value, label: null };
+    if (start) f.period = { kind: 'date', start: start.value, value: end ? `${start.value.split('/')[0]}/${end.value.split('/').pop()}` : start.value, label: null };
     ref('parent', 'movement', 'P361');
   }
   if (t.type === 'event') {
@@ -380,7 +380,7 @@ function fieldsFor(t, e) {
     // resolved upwards to the settlement like an institution's place; the spot itself (P625); part of (P361)
     const at = firstTime(e, 'P585');
     const start = at || firstTime(e, 'P580', 'P571'); const end = at ? null : firstTime(e, 'P582', 'P576');
-    if (start) f.period = { kind: 'date', value: end ? `${start.value.split('/')[0]}/${end.value.split('/').pop()}` : start.value, label: null };
+    if (start) f.period = { kind: 'date', start: start.value, value: end ? `${start.value.split('/')[0]}/${end.value.split('/').pop()}` : start.value, label: null };
     const where = itemIds(e, 'P276').length ? itemIds(e, 'P276') : itemIds(e, 'P131');
     if (where.length) f.place = { kind: 'ref', ref: { type: 'place', qid: where[0] }, p131: where };
     const c = coords(e);
@@ -639,7 +639,11 @@ async function compare(db, t, qid, ours, entity) {
     }
     const display = w.kind === 'date' ? `${w.label || parseFuzzyDate(w.value, { openEnd: true }).label} (${w.value})`
       : w.collectionQid ? `${value} — in the collection of ${labelOf(others[w.collectionQid]) || w.collectionQid}` : value;
-    rows.push({ ...scalarRow(key, oursVal, display, w.kind === 'date' ? { value: w.value, label: w.label } : w.value, declined(key, w.value)), kind: w.kind });
+    const row = { ...scalarRow(key, oursVal, display, w.kind === 'date' ? { value: w.value, label: w.label } : w.value, declined(key, w.value)), kind: w.kind };
+    // a span from Wikidata's start and end: ours inside its start only (a founding day for the period) lacks the end —
+    // not more precise
+    if (w.start && w.value !== w.start && row.status === 'more-precise' && dateRelation(oursVal, w.start)) row.status = 'start-only';
+    rows.push(row);
   }
 
   // Images: every P18 "image" statement (an artwork's views, an artist's portrait, an institution's building), each

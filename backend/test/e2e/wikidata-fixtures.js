@@ -30,6 +30,9 @@ const ENTITIES = {
     claims: { P31: [stmt(item('Q484170'))], P625: [stmt({ latitude: 51.1, longitude: 5.78, globe: 'http://www.wikidata.org/entity/Q2' })] } },
   Q162: { id: 'Q162', labels: labels('Testliege'), descriptions: { en: { value: 'city' } },
     claims: { P31: [stmt(item('Q484170'))], P625: [stmt({ latitude: 50.64, longitude: 5.57, globe: 'http://www.wikidata.org/entity/Q2' })] } },
+  // a movement founded on a day and ended in a year (as the Berlin Secession, 2 May 1898 – 1933)
+  Q180: { id: 'Q180', labels: labels('Test Secession'), descriptions: { en: { value: 'artists\' association' } },
+    claims: { P31: [stmt(item('Q968159'))], P571: [stmt(time('+1898-05-02T00:00:00Z', 11))], P576: [stmt(time('+1933-00-00T00:00:00Z', 9))] } },
   Q102: { id: 'Q102', labels: labels('Impressionism'), descriptions: { en: { value: 'art movement' } }, claims: { P31: [stmt(item('Q968159'))] } },
   Q103: { id: 'Q103', labels: labels('Charles Gleyre'), descriptions: { en: { value: 'Swiss painter' } },
     claims: { P31: [stmt(item('Q5'))], P569: [stmt(time('+1806-05-02T00:00:00Z', 11))] } },

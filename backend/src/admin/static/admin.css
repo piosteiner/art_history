@@ -208,7 +208,7 @@ mark { background: color-mix(in srgb, var(--accent) 28%, transparent); color: in
 
 /* Wikidata comparison (src/admin/wikidata-ui.js) */
 .wd-table tr.wd-same td, .wd-table tr.wd-same th { opacity: .55; }
-.wd-table tr.wd-differs, .wd-table tr.wd-more-precise { background: color-mix(in srgb, var(--accent) 6%, transparent); }
+.wd-table tr.wd-differs, .wd-table tr.wd-more-precise, .wd-table tr.wd-start-only { background: color-mix(in srgb, var(--accent) 6%, transparent); }
 .wd-table tr.wd-declined { opacity: .7; }
 .wd-table .choice { display: inline-block; margin: 0 .8rem .15rem 0; }
 .wd-table input[type=checkbox], .wd-table input[type=radio], .wd-image input { width: auto; margin-right: .25rem; }

@@ -4,6 +4,13 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### CMS: Wikidata comparison — a period of only its first day is "start only", not "more precise"
+- **What:** a span from Wikidata's start and end (period, active) carries its start (`start` in `fieldsFor`); ours lying
+  within that start alone (Berlin Secession: "2 May 1898" against "2 May 1898–1933") gets the status `start-only` —
+  "yours has only the start — Wikidata adds the end" — instead of "yours is more precise". Spans without an end and
+  single dates unchanged. Fixture Q180 + e2e `wikidata.spec`.
+- **Why:** owner, 2026-10-30. **Revert:** `git revert`.
+
 ### Data: Schmalkaldic War placed; US places checked
 - **Schmalkaldic War** (created from Wikidata by the owner): the Holy Roman Empire is a polity, not a place (places are
   geography, polities lie over them in time), so the event's place is Germany — fought on the Danube and in Saxony —
