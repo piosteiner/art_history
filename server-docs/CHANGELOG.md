@@ -4,6 +4,18 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Roadmap topics in an order of their own; the changelog follows it (migration 168)
+- **What:** `roadmap_areas.section` (internal) and `position` (by hand); view `roadmap_areas_ordered` (rank: by hand,
+  else section, then name); `changelog_renumber()` sorts a day's items by kind, then that rank (167's trigger uses it),
+  a statement-level trigger on `roadmap_areas` re-sorts every day when a topic is moved, renamed or given another
+  section. CMS /roadmap → Topics: section column (suggestions from the others), drag handles (`POST
+  /roadmap/areas/order`), "Sort by section and name again" (`/roadmap/areas/reset-order`), "Ordered by hand." note;
+  the editor's preview with the topics' rank. API `/v1/changelog` `topics` in this order (the site's chips). Unit
+  test, e2e test; two older tests' column numbers updated.
+- **Why:** owner: sort the topics in the CMS, by section and name unless dragged; the changelog to follow.
+- **Revert:** `DROP TRIGGER roadmap_areas_changelog_order ON roadmap_areas; DROP VIEW roadmap_areas_ordered;` the
+  columns, and 167's `changelog_sort_days()`; `git revert`.
+
 ### Changelog sorts itself (migration 167)
 - **What:** `changelog_kind_rank(kind)` and two statement-level triggers (`changelog_sort_days()`, transition table
   `new_rows`) renumber the items of every day touched: kind (Neu, Verbessert, Behoben, Inhalt, Technik), then roadmap

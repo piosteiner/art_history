@@ -126,9 +126,10 @@ function entryForm(e, { action, items = '', flash = null, preview = null, isNew 
     ${past}` };
 }
 const previewOf = async (unsorted) => {
-  const items = sortItems(unsorted);  // as the site will show them (167)
+  const areas = await areaList(adminPool);
+  const items = sortItems(unsorted, new Map(areas.map((a) => [a.name, a.rank])));  // as the site will show them (167, 168)
   const htmls = await renderItems(adminPool, items.map((i) => i.text_md ?? i.text));
-  const colors = new Map((await areaList(adminPool)).map((a) => [a.name, a.color]));
+  const colors = new Map(areas.map((a) => [a.name, a.color]));
   return html`${items.map((i, n) => html`<li><span class="cl-kind cl-${i.kind}">${KINDS[i.kind]}</span>${i.area ? html` ${areaTag(i.area, colors)}` : ''} ${raw(htmls[n])}</li>`)}`;
 };
 
@@ -341,10 +342,11 @@ router.post('/changelog/restore/:auditId', async (req, res) => {
 // style.css). An item's area references the name (ON UPDATE CASCADE): a rename reaches every item.
 const PALETTE = { blue: 'Blau', teal: 'Petrol', purple: 'Violett', pink: 'Rosa', red: 'Rot', brown: 'Braun', olive: 'Oliv', indigo: 'Indigo', cyan: 'Cyan', slate: 'Schiefer' };
 // n: roadmap items, bullets: changelog bullets (137) with the topic
-const areaList = async (db) => (await db.query(`SELECT a.id, a.name, a.color,
+// in their order (168, view roadmap_areas_ordered): by hand, else by section and name; manual = some were dragged
+const areaList = async (db) => (await db.query(`SELECT a.id, a.name, a.color, a.section, a.position, o.rank,
     (SELECT count(*) FROM roadmap_items r WHERE r.area = a.name)::int AS n,
     (SELECT count(*) FROM changelog_items i WHERE i.area = a.name)::int AS bullets
-  FROM roadmap_areas a ORDER BY a.name COLLATE sort_natural`)).rows;
+  FROM roadmap_areas a JOIN roadmap_areas_ordered o ON o.name = a.name ORDER BY o.rank`)).rows;
 // a topic typed in an item's form that doesn't exist yet: created with the palette's next colour
 async function ensureArea(db, name) {
   if (!name) return;
@@ -384,6 +386,7 @@ router.get('/roadmap', async (req, res) => {
     FROM roadmap_items r ORDER BY r.position, r.id`);
   const gone = await deleted('roadmap_items');
   const areas = await areaList(adminPool);
+  const manualOrder = areas.some((a) => a.position !== null);
   const colors = new Map(areas.map((a) => [a.name, a.color]));
   const days = await doneDays(adminPool);
   const draft = await draftOf(req.user, 'roadmap/new', '');
@@ -416,13 +419,21 @@ router.get('/roadmap', async (req, res) => {
     <p class="muted small">The bubbles on the roadmap's items and the changelog's bullets (<code>Neu [Topic]: …</code>), each
       with its colour. Renaming a topic renames it everywhere; a topic nothing uses can be deleted. A new topic typed into an
       item's form or a bullet is added here with the next colour.</p>
-    <div class="table-wrap"><table class="roadmap-areas"><thead><tr><th>Topic</th><th>Items</th><th>Bullets</th><th>Name</th><th>Colour</th><th></th></tr></thead><tbody>
-      ${areas.map((a) => html`<tr><td>${areaTag(a.name, colors)}</td><td>${String(a.n)}</td><td>${String(a.bullets)}</td>
+    <p class="muted small">Order: by section, then by name — or as you drag them (⠿). The changelog's bullets follow it
+      within each kind. The section is for you only; it isn't shown on the site.${manualOrder ? html` <span class="topic-order-manual">Ordered by hand.</span>` : ''}</p>
+    ${manualOrder ? html`<form method="post" action="/roadmap/areas/reset-order" class="inline"><button class="secondary small">Sort by section and name again</button></form>` : ''}
+    <div class="table-wrap"><table class="roadmap-areas" data-sortable="/roadmap/areas/order"><thead><tr><th></th><th>Topic</th><th>Section</th><th>Items</th><th>Bullets</th><th>Name</th><th>Colour</th><th></th></tr></thead>
+      ${areas.map((a) => html`<tbody class="sort-item" data-sort-id="${String(a.id)}"><tr>
+        <td class="drag-cell"><button type="button" class="drag-handle" title="Drag to reorder (or focus and use ↑ ↓)" aria-label="Move ${a.name}">⠿</button></td>
+        <td>${areaTag(a.name, colors)}</td>
+        <td><input form="rm-area-${String(a.id)}" name="section" value="${a.section || ''}" aria-label="Section of ${a.name}" placeholder="—" list="rm-sections" style="width:9rem"></td>
+        <td>${String(a.n)}</td><td>${String(a.bullets)}</td>
         <td><input form="rm-area-${String(a.id)}" name="name" value="${a.name}" required aria-label="Name of ${a.name}" style="width:12rem"></td>
         <td><select form="rm-area-${String(a.id)}" name="color" aria-label="Colour of ${a.name}">${Object.entries(PALETTE).map(([k, l]) => html`<option value="${k}"${k === a.color ? ' selected' : ''}>${l}</option>`)}</select></td>
         <td><form id="rm-area-${String(a.id)}" method="post" action="/roadmap/areas/${String(a.id)}" class="inline"><button class="secondary small">Save</button></form>
-          ${a.n || a.bullets ? '' : html`<form method="post" action="/roadmap/areas/${String(a.id)}/delete" class="inline" data-confirm="Delete the topic “${a.name}”?"><button class="link">delete</button></form>`}</td></tr>`)}
-    </tbody></table></div>
+          ${a.n || a.bullets ? '' : html`<form method="post" action="/roadmap/areas/${String(a.id)}/delete" class="inline" data-confirm="Delete the topic “${a.name}”?"><button class="link">delete</button></form>`}</td></tr></tbody>`)}
+    </table></div>
+    <datalist id="rm-sections">${[...new Set(areas.map((a) => a.section).filter(Boolean))].map((x) => html`<option value="${x}">`)}</datalist>
     <h2 id="done-days">Done items on the site</h2>
     <form method="post" action="/roadmap/settings" class="form inline-form">
       <label>A done item stays on the site's roadmap for <input name="done_days" type="number" min="0" max="365" step="1" value="${String(days)}" style="width:5rem" aria-label="Days"> days after its done date</label>
@@ -437,14 +448,27 @@ router.get('/roadmap', async (req, res) => {
 router.get('/roadmap/topics.json', async (req, res) => {
   res.json((await areaList(adminPool)).map((a) => ({ name: a.name, color: a.color })));
 });
+// drag order of the topics (editor/sortable.js, 168): ids in the new order → position 10, 20, 30 … for all of them
+router.post('/roadmap/areas/order', async (req, res) => {
+  const ids = String(req.body.ids || '').split(',').filter(idOk);
+  await withTx(req.user, (db) => db.query(`UPDATE roadmap_areas a SET position = o.n * 10
+    FROM unnest($1::bigint[]) WITH ORDINALITY AS o(id, n) WHERE a.id = o.id AND a.position IS DISTINCT FROM o.n * 10`, [ids]));
+  res.status(204).end();
+});
+// back to the automatic order: by section, then by name
+router.post('/roadmap/areas/reset-order', async (req, res) => {
+  await withTx(req.user, (db) => db.query('UPDATE roadmap_areas SET position = NULL WHERE position IS NOT NULL'));
+  res.redirect(303, '/roadmap?done=saved#topics');
+});
 router.post('/roadmap/areas/:id', async (req, res) => {
   if (!idOk(req.params.id)) return notFoundPage(req, res);
   const name = String(req.body.name || '').trim();
   const color = PALETTE[req.body.color] ? req.body.color : null;
+  const section = String(req.body.section ?? '').trim().replace(/\s+/g, ' ') || null;  // 168: for internal reference
   if (!name || !color) return res.redirect(303, '/roadmap#topics');
   try {
-    await withTx(req.user, (db) => db.query(`UPDATE roadmap_areas SET name = $2, color = $3 WHERE id = $1 AND (name, color) IS DISTINCT FROM ($2, $3)`,
-      [req.params.id, name, color]));
+    await withTx(req.user, (db) => db.query(`UPDATE roadmap_areas SET name = $2, color = $3, section = $4 WHERE id = $1
+      AND (name, color, section) IS DISTINCT FROM ($2, $3, $4)`, [req.params.id, name, color, section]));
   } catch (err) {
     if (err.code !== '23505') throw err;   // the name of another topic: nothing changed
     return res.redirect(303, '/roadmap?done=area-exists#topics');

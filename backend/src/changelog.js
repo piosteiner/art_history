@@ -39,12 +39,16 @@ async function renderItems(db, texts) {
   });
 }
 
-// The order the changelog keeps (migration 167, changelog_sort_days()): by kind as in KINDS, then by roadmap topic (A–Z,
-// natural; without a topic last), then as written — for the editor's preview, so it shows what the site will.
+// The order the changelog keeps (migrations 167/168, changelog_renumber()): by kind as in KINDS, then by the roadmap
+// topics' order (topicRank: name → rank from roadmap_areas_ordered; a topic not in it — typed, not yet saved — by
+// name after those), without a topic last, then as written — for the editor's preview, so it shows what the site will.
 const RANK = Object.fromEntries(Object.keys(KINDS).map((k, i) => [k, i]));
-const sortItems = (items) => items.map((it, n) => ({ it, n })).sort((a, b) => (RANK[a.it.kind] - RANK[b.it.kind])
-  || (!a.it.area - !b.it.area)
-  || (a.it.area && b.it.area ? a.it.area.localeCompare(b.it.area, 'de', { numeric: true, sensitivity: 'base' }) : 0)
-  || a.n - b.n).map((x) => x.it);
+const sortItems = (items, topicRank = new Map()) => {
+  const rank = (a) => (topicRank.has(a) ? topicRank.get(a) : Infinity);
+  return items.map((it, n) => ({ it, n })).sort((a, b) => (RANK[a.it.kind] - RANK[b.it.kind])
+    || (!a.it.area - !b.it.area)
+    || (a.it.area && b.it.area ? (rank(a.it.area) - rank(b.it.area) || 0) || a.it.area.localeCompare(b.it.area, 'de', { numeric: true, sensitivity: 'base' }) : 0)
+    || a.n - b.n).map((x) => x.it);
+};
 
 module.exports = { KINDS, STATUS, parseItems, itemsToText, renderItems, sortItems };

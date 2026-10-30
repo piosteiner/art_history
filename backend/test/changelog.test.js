@@ -39,3 +39,10 @@ test('sortItems: kind first (Neu … Technik), then topic A–Z (none last), the
   ];
   assert.deepEqual(sortItems(items).map((i) => i.text), ['e', 'g', 'd', 'b', 'f', 'c', 'a']);
 });
+
+test('sortItems with the topics\' order (168): their rank, not their name; a topic not in the list after those', () => {
+  const { sortItems } = require('../src/changelog');
+  const items = [{ kind: 'neu', area: 'Karte', text: 'a' }, { kind: 'neu', area: 'Suche', text: 'b' }, { kind: 'neu', area: 'Neu getippt', text: 'c' },
+    { kind: 'neu', area: null, text: 'd' }, { kind: 'behoben', area: 'Karte', text: 'e' }];
+  assert.deepEqual(sortItems(items, new Map([['Suche', 1], ['Karte', 2]])).map((i) => i.text), ['b', 'a', 'c', 'd', 'e']);
+});

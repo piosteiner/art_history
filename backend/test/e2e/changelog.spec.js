@@ -175,7 +175,7 @@ test('roadmap (136): topics with colours (new ones created, renamed on every ite
   await expect(card.locator('.tag.area')).toHaveText('Kartografie');
   await expect(card).toContainText('added 1. Okt. 2026');
   const row = userA.locator('table.roadmap-areas tr', { hasText: 'Kartografie' });
-  await expect(row.locator('td').nth(1)).toHaveText('1');
+  await expect(row.locator('td').nth(3)).toHaveText('1');   // (drag handle, topic, section, items …)
   // a colour of its own on the tag
   const color = await card.locator('.tag.area').evaluate((t) => getComputedStyle(t).color);
   expect(color).not.toBe(await userA.locator('body').evaluate((b) => getComputedStyle(b).color));
@@ -225,7 +225,7 @@ test('changelog (137): a bullet\'s topic in brackets — the roadmap\'s list and
   // "Suche" was new: added to the topics with a colour, counted as a bullet
   expect(sql("SELECT count(*) FROM roadmap_areas WHERE name = 'Suche'")).toBe('1');
   await userA.goto('/roadmap');
-  await expect(userA.locator('table.roadmap-areas tr', { hasText: 'Suche' }).locator('td').nth(2)).toHaveText('1');
+  await expect(userA.locator('table.roadmap-areas tr', { hasText: 'Suche' }).locator('td').nth(4)).toHaveText('1');   // bullets
   await expect(userA.locator('table.roadmap-areas tr', { hasText: 'Suche' }).locator('button:has-text("delete")')).toHaveCount(0);   // in use
 
   // the API: topic and colour per bullet, the topics in use, a filter by topic
@@ -280,4 +280,44 @@ test('the changelog sorts itself: by kind, then by roadmap topic, also when a do
   sql(`UPDATE changelog_entries SET published = true WHERE id = ${id}`);
   const items = (await api(request, '/changelog')).data.find((e) => e.day === '2026-10-30').items;
   expect(items.map((i) => i.kind)).toEqual(['neu', 'neu', 'neu', 'neu', 'verbessert', 'behoben', 'technik']);
+});
+
+test('topics in order (168): by section, then name; by hand with drag and drop; back again — the changelog follows', async ({ userA, request }) => {
+  sql(`INSERT INTO roadmap_areas (name, color) VALUES ('Karte', 'blue'), ('Suche', 'teal'), ('Admin', 'red')`);
+  sql(`INSERT INTO changelog_entries (day, published) VALUES ('2026-10-30', true)`);
+  const id = sql(`SELECT id FROM changelog_entries WHERE day = '2026-10-30'`);
+  sql(`INSERT INTO changelog_items (entry_id, position, kind, text_md, area) VALUES (${id}, 0, 'neu', 'Liste', 'Admin'),
+         (${id}, 1, 'neu', 'Zeitleiste', 'Karte'), (${id}, 2, 'neu', 'Treffer', 'Suche')`);
+  const bullets = () => sql(`SELECT string_agg(text_md, ' | ' ORDER BY position) FROM changelog_items WHERE entry_id = ${id}`);
+  const topicRows = (page) => page.locator('table.roadmap-areas tbody .tag.area');
+  expect(bullets()).toBe('Liste | Zeitleiste | Treffer');                         // A–Z without sections
+
+  // sections: "Website" for Karte and Suche, "CMS" for Admin → CMS first
+  await userA.goto('/roadmap#topics');
+  for (const [name, section] of [['Admin', 'CMS'], ['Karte', 'Website'], ['Suche', 'Website']]) {
+    const row = userA.locator('table.roadmap-areas tbody', { has: userA.locator(`input[name=name][value="${name}"]`) });
+    await row.locator('input[name=section]').fill(section);
+    await Promise.all([userA.waitForNavigation(), row.locator('button:has-text("Save")').click()]);
+  }
+  await expect(topicRows(userA)).toHaveText(['Admin', 'Karte', 'Suche']);
+  sql("UPDATE roadmap_areas SET section = 'Zuletzt' WHERE name = 'Admin'");      // another section: Website before Zuletzt
+  expect(bullets()).toBe('Zeitleiste | Treffer | Liste');
+  await userA.goto('/roadmap#topics');
+  await expect(topicRows(userA)).toHaveText(['Karte', 'Suche', 'Admin']);
+  await expect(userA.locator('.topic-order-manual')).toHaveCount(0);
+
+  // by hand (what the drag handles post): Suche, Admin, Karte
+  const idOf = (n) => sql(`SELECT id FROM roadmap_areas WHERE name = '${n}'`);
+  const res = await userA.request.post(`${BASE}/roadmap/areas/order`, { form: { ids: [idOf('Suche'), idOf('Admin'), idOf('Karte')].join(',') }, headers: { Origin: BASE } });
+  expect(res.status()).toBe(204);
+  expect(bullets()).toBe('Treffer | Liste | Zeitleiste');
+  await userA.reload();                                                           // (the same address: goto wouldn't load it)
+  await expect(topicRows(userA)).toHaveText(['Suche', 'Admin', 'Karte']);
+  await expect(userA.locator('.topic-order-manual')).toBeVisible();
+  expect((await api(request, '/changelog')).topics.map((t) => t.name)).toEqual(['Suche', 'Admin', 'Karte']);  // the site's chips
+
+  // back to section and name
+  await Promise.all([userA.waitForNavigation(), userA.click('button:has-text("Sort by section and name again")')]);
+  await expect(topicRows(userA)).toHaveText(['Karte', 'Suche', 'Admin']);
+  expect(bullets()).toBe('Zeitleiste | Treffer | Liste');
 });

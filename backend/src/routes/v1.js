@@ -259,8 +259,8 @@ router.get('/changelog', async (req, res) => {
   const offset = Math.max(parseInt(req.query.offset, 10) || 0, 0);
   // the topics of published bullets, for the site's chips (name, colour, how many bullets)
   const { rows: topics } = await apiPool.query(`SELECT a.name, a.color, count(*)::int AS n
-    FROM changelog_items i JOIN changelog_entries e ON e.id = i.entry_id AND e.published JOIN roadmap_areas a ON a.name = i.area
-    GROUP BY a.name, a.color ORDER BY a.name COLLATE sort_natural`);
+    FROM changelog_items i JOIN changelog_entries e ON e.id = i.entry_id AND e.published JOIN roadmap_areas_ordered a ON a.name = i.area
+    GROUP BY a.name, a.color, a.rank ORDER BY a.rank`);  // in the roadmap's order (168)
   res.json({ ...await changelogEntries({ kind, topic, limit, offset }), topics });
 });
 router.get('/changelog/feed.xml', async (req, res) => {

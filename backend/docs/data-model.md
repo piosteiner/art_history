@@ -764,7 +764,11 @@ German (de-CH), as the site shows them. `changelog_entries` (day, title optional
 with `changelog_items` (entry_id, position — unique per entry, deferrable —, kind `neu` / `verbessert` / `behoben` /
 `inhalt` / `technik`, text_md, roadmap_item_id → the roadmap item it completes). The order is kept by the database (167):
 after every insert or update the day's items are renumbered — kind (`changelog_kind_rank()`), then topic A–Z (without
-topic last), then as written — by statement-level triggers with a transition table (`changelog_sort_days()`). `roadmap_items` (title, area, notes_md,
+topic last), then as written — by statement-level triggers with a transition table (`changelog_sort_days()`).
+Topics in order (168): `roadmap_areas.section` (internal) and `position` (by hand, null = automatic); the view
+`roadmap_areas_ordered (name, rank)` = by hand, else section, then name; the changelog sorts by that rank
+(`changelog_renumber()`), and a topic moved, renamed or given another section re-sorts every day (trigger on
+`roadmap_areas`). CMS /roadmap → Topics: section column, drag handles, "Sort by section and name again". `roadmap_items` (title, area, notes_md,
 status `jetzt` / `naechstes` / `spaeter` / `erledigt`, position in its column, done_on — CHECK: set exactly when the
 status is `erledigt` —, published). All three audited. In the CMS an entry's bullets are one line each, "Neu: …"
 (`parseItems()` / `itemsToText()` in `src/changelog.js`); marking a roadmap item done writes a bullet into today's entry
