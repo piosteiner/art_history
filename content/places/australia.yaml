@@ -1,0 +1,18 @@
+public_id: 103370
+name: Australia
+kind: country
+country_code: AU
+boundary_code: AU
+location: [133, -25]
+wikidata_id: Q408
+metadata:
+  sources: [Wikidata Q408 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q408
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q408

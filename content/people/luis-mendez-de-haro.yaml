@@ -18,6 +18,14 @@ names:
   - lang: ru
     role: translation
     text: Луис де Аро и Гусман
+  - kind: birth
+    lang: es
+    role: former
+    text: Luis de Haro y Guzmán
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q924894
 kind: person
 occupations: [politician, military personnel, diplomat]
 birth: 1598-02-17

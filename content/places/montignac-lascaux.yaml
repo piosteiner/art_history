@@ -10,7 +10,16 @@ names:
   - lang: ru
     role: translation
     text: Монтиньяк
+  - lang: fr
+    role: former
+    text: Montignac
+    period: until 28 February 2020
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q495749
 kind: settlement
+designation: commune of France
 parent: canton-of-montignac
 country_code: FR
 location: [1.16139, 45.06639]

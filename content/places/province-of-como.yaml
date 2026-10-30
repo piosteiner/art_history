@@ -1,10 +1,57 @@
 public_id: 101509
 name: Province of Como
-kind: site
+names: [Como]
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-CO
 location: [9.08333, 45.81667]
 wikidata_id: Q16161
 metadata:
   sources: [Wikidata Q16161 (retrieved 2026-10-19)]
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-milan
+    period: 1395-05-19/1797-06-28
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153529
+  - type: in_polity
+    to: polity/cisalpine-republic
+    period: 1797-06-29/1802-01-24
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q213353
+  - type: in_polity
+    to: polity/italian-republic-napoleonic
+    period: 1802-01-26/1805-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q723118
+  - type: in_polity
+    to: polity/kingdom-of-italy-napoleonic
+    period: 1805-03-17/1814-04-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q223936
+  - type: in_polity
+    to: polity/austrian-empire
+    period: 1814-04-28/1815-04-06
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q131964
+  - type: in_polity
+    to: polity/kingdom-of-lombardy-venetia
+    period: 1815-04-07/1859-07-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q209857
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1859-07-12/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303
 sources:
   kind:
     - accessed: 2026-10-19

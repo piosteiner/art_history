@@ -1,0 +1,39 @@
+public_id: 104916
+name: Grand Duchy of Berg
+names:
+  - lang: nl
+    role: translation
+    text: Groothertogdom Berg
+  - lang: fr
+    role: translation
+    text: grand-duché de Berg
+  - lang: de
+    role: translation
+    text: Großherzogtum Berg
+  - lang: it
+    role: translation
+    text: Granducato di Berg
+  - lang: es
+    role: translation
+    text: Gran Ducado de Berg
+  - lang: ja
+    role: translation
+    text: ベルク大公国
+  - lang: zh
+    role: translation
+    text: 贝尔格大公国
+  - lang: ko
+    role: translation
+    text: 베르크 대공국
+  - lang: ru
+    role: translation
+    text: Великое герцогство Берг
+period: 1806/1813
+wikidata_id: Q249428
+metadata:
+  sources: [Wikidata Q249428 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q249428

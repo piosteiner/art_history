@@ -1,6 +1,8 @@
 public_id: 100146
 name: West Overton
-kind: site
+kind: settlement
+designation: historic district
+parent: pennsylvania
 location: [-79.56639, 40.11639]
 wikidata_id: Q4019088
 metadata:

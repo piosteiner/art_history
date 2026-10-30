@@ -2,6 +2,15 @@ public_id: 101692
 name: Théodore Géricault
 given_name: Théodore
 family_name: Géricault
+names:
+  - kind: birth
+    lang: da
+    role: alternative
+    text: Jean-Louis André Théodore Géricault
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q184212
 birth: 1791-09-26
 death: 1824-01-26
 wikidata_id: Q184212

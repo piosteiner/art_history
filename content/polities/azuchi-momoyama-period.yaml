@@ -1,0 +1,43 @@
+public_id: 104892
+name: Azuchi-Momoyama period
+names:
+  - Azuchi–Momoyama period
+  - Momoyama period
+  - Azuchi-Momoyama
+  - lang: nl
+    role: translation
+    text: Azuchi-Momoyamaperiode
+  - lang: fr
+    role: translation
+    text: époque Azuchi Momoyama
+  - lang: de
+    role: translation
+    text: Azuchi-Momoyama-Zeit
+  - lang: it
+    role: translation
+    text: Periodo Azuchi-Momoyama
+  - lang: es
+    role: translation
+    text: Período Azuchi-Momoyama
+  - lang: ja
+    role: translation
+    text: 安土桃山時代
+  - lang: ko
+    role: translation
+    text: 아즈치모모야마 시대
+  - lang: ru
+    role: translation
+    text: Период Адзути-Момояма
+period: 1568/1600
+wikidata_id: Q319531
+metadata:
+  sources: [Wikidata Q319531 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/tokugawa-shogunate
+    period: 1603-03-24
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q319531

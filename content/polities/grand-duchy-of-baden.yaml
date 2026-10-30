@@ -1,0 +1,40 @@
+public_id: 104893
+name: Grand Duchy of Baden
+names:
+  - the Grand-Duchy of Baden
+  - lang: nl
+    role: translation
+    text: Groothertogdom Baden
+  - lang: fr
+    role: translation
+    text: grand-duché de Bade
+  - lang: de
+    role: translation
+    text: Großherzogtum Baden
+  - lang: it
+    role: translation
+    text: Granducato di Baden
+  - lang: es
+    role: translation
+    text: Gran Ducado de Baden
+  - lang: ja
+    role: translation
+    text: バーデン大公国
+  - lang: zh
+    role: translation
+    text: 巴登大公國
+  - lang: ko
+    role: translation
+    text: 바덴 대공국
+  - lang: ru
+    role: translation
+    text: Великое герцогство Баден
+period: 12 July 1806–1918
+wikidata_id: Q186320
+metadata:
+  sources: [Wikidata Q186320 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q186320

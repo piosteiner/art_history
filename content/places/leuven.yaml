@@ -23,7 +23,8 @@ names:
     role: translation
     text: Лёвен
 kind: settlement
-parent: belgium
+designation: Belgian municipality with the title of city
+parent: flemish-brabant
 country_code: BE
 location: [4.70444, 50.8775]
 wikidata_id: Q118958

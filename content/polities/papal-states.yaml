@@ -4,6 +4,10 @@ period: 754/1870-09-20
 wikidata_id: Q170174
 metadata:
   sources: [Wikidata Q170174 (retrieved 2026-10-28)]
+relationships:
+  - type: succeeded_by
+    to: polity/roman-republic-1798
+    period: 1798-02-15
 sources:
   period:
     - accessed: 2026-10-28

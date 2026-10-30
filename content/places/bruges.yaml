@@ -23,6 +23,7 @@ names:
     role: translation
     text: Брюгге
 kind: settlement
+designation: municipality of Belgium
 parent: arrondissement-of-bruges
 country_code: BE
 location: [3.22417, 51.20889]

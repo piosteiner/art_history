@@ -35,6 +35,14 @@ names:
   - lang: ru
     role: translation
     text: Климент VII
+  - kind: birth
+    lang: it
+    role: former
+    text: Giulio Zanobi di Giuliano de' Medici
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q83159
 kind: person
 occupations: [Catholic priest, transitional deacon]
 birth: 1478-06-04

@@ -1,6 +1,8 @@
 public_id: 102939
 name: Modena
 kind: settlement
+designation: comune of Italy
+parent: province-of-modena
 location: [10.92572, 44.64582]
 wikidata_id: Q279
 metadata:

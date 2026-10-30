@@ -19,6 +19,19 @@ names:
   - lang: ru
     role: translation
     text: Курт Швиттерс
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Kurt Hermann Eduard Karl Julius Schwitters
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q155158
+  - text: Kurt Merz Schwitters
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q155158
 birth: 1887-06-20
 death: 1948-01-08
 wikidata_id: Q155158

@@ -1,6 +1,8 @@
 public_id: 103268
 name: Brest
 kind: settlement
+designation: commune of France
+parent: finistere
 location: [-4.48611, 48.39056]
 wikidata_id: Q12193
 metadata:

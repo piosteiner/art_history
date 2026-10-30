@@ -11,6 +11,7 @@ names:
     role: translation
     text: Муассак
 kind: settlement
+designation: commune of France
 parent: tarn-et-garonne
 country_code: FR
 location: [1.08528, 44.10472]

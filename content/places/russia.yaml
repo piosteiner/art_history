@@ -1,6 +1,8 @@
 public_id: 100985
 name: Russia
 kind: country
+country_code: RU
+boundary_code: RU
 location: [94.25, 66.41667]
 wikidata_id: Q159
 metadata:

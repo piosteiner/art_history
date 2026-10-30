@@ -33,6 +33,14 @@ names:
   - lang: ru
     role: translation
     text: Карл Австрийский
+  - kind: birth
+    lang: de
+    role: former
+    text: Carl Ludwig Johann Joseph Laurentius von Österreich pp
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q84201
 kind: person
 occupations: [military officer, military personnel]
 birth: 1771-09-05

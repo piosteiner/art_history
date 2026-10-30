@@ -1,6 +1,9 @@
 public_id: 102938
 name: Albinea
 kind: settlement
+designation: comune of Italy
+parent: province-of-reggio-emilia
+country_code: IT
 location: [10.6, 44.61667]
 wikidata_id: Q111096
 metadata:
@@ -9,6 +12,10 @@ sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q111096
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q111096
   location:
     - accessed: 2026-10-28

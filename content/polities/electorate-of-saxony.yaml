@@ -1,0 +1,48 @@
+public_id: 104920
+name: Electorate of Saxony
+names:
+  - lang: la
+    role: original
+    text: Saxonia Electoralis
+  - lang: de
+    role: original
+    text: Kurfürstentum Sachsen
+  - Upper Saxony
+  - Saxony
+  - lang: nl
+    role: translation
+    text: Keurvorstendom Saksen
+  - lang: fr
+    role: translation
+    text: électorat de Saxe
+  - lang: it
+    role: translation
+    text: Principato Elettorale di Sassonia
+  - lang: es
+    role: translation
+    text: Electorado de Sajonia
+  - lang: ja
+    role: translation
+    text: ザクセン選帝侯領
+  - lang: zh
+    role: translation
+    text: 薩克森選侯國
+  - lang: ko
+    role: translation
+    text: 작센 선제후국
+  - lang: ru
+    role: translation
+    text: курфюршество Саксония
+period: 1356/1806-12-19
+wikidata_id: Q156199
+metadata:
+  sources: [Wikidata Q156199 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-saxony
+    period: 1806-12-20
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q156199

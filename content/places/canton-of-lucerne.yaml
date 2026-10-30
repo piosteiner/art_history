@@ -1,0 +1,20 @@
+public_id: 104720
+name: Canton of Lucerne
+kind: region
+designation: canton of Switzerland
+parent: switzerland
+boundary_code: CH-LU
+wikidata_id: Q12121
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 962/1332-11-06
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/old-swiss-confederacy
+    period: 1332-11-07/1798-03-04
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q435583

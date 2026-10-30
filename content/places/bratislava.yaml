@@ -14,6 +14,7 @@ names:
     role: translation
     text: Братислава
 kind: settlement
+designation: municipality of Slovakia
 parent: bratislava-region
 country_code: SK
 location: [17.10931, 48.1517]

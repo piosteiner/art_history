@@ -1,0 +1,43 @@
+public_id: 104838
+name: Confederation of the Rhine
+names:
+  - lang: nl
+    role: translation
+    text: Rijnbond
+  - lang: fr
+    role: translation
+    text: Confédération du Rhin
+  - lang: de
+    role: translation
+    text: Rheinbund
+  - lang: it
+    role: translation
+    text: Confederazione del Reno
+  - lang: es
+    role: translation
+    text: Confederación del Rin
+  - lang: ja
+    role: translation
+    text: ライン同盟
+  - lang: zh
+    role: translation
+    text: 萊茵邦聯
+  - lang: ko
+    role: translation
+    text: 라인 동맹
+  - lang: ru
+    role: translation
+    text: Рейнский союз
+period: 1 August 1806–11 December 1813
+wikidata_id: Q154741
+metadata:
+  sources: [Wikidata Q154741 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/german-confederation
+    period: 1815-06-08
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q154741

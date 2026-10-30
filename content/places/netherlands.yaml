@@ -5,3 +5,52 @@ country_code: NL
 boundary_code: NL
 location: [5.2913, 52.1326]
 wikidata_id: Q55
+relationships:
+  - type: in_polity
+    to: polity/burgundian-netherlands
+    period: 1384/1481
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q157109
+  - type: in_polity
+    to: polity/habsburg-netherlands
+    period: 1482/1581-08-04
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1031430
+  - type: in_polity
+    to: polity/dutch-republic
+    period: 1581-08-05/1795-01-18
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170072
+  - type: in_polity
+    to: polity/batavian-republic
+    period: 1795-01-19/1806-06-04
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q188553
+  - type: in_polity
+    to: polity/kingdom-of-holland
+    period: 1806-06-05/1810-07-08
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q212278
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1810-07-09/1813-12-01
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/sovereign-principality-of-the-united-netherlands
+    period: 1813-12-02/1815-03-15
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q774783
+  - type: in_polity
+    to: polity/kingdom-of-the-netherlands
+    period: 1815-03-16/
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q29999

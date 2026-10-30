@@ -1,6 +1,8 @@
 public_id: 100474
 name: Kealakekua Bay
-kind: site
+kind: natural
+designation: bay
+parent: hawaii
 location: [-155.92857, 19.47509]
 wikidata_id: Q2879655
 metadata:

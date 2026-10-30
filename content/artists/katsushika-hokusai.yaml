@@ -8,13 +8,13 @@ biography_md: Japanese ukiyo-e painter and printmaker, best known for the series
 wikidata_id: Q5586
 relationships:
   - type: born_in
-    to: place/edo
+    to: place/tokyo
     period: 1760
   - type: died_in
-    to: place/edo
+    to: place/tokyo
     period: 1849
   - type: lived_in
-    to: place/edo
+    to: place/tokyo
   - type: associated_with
     to: movement/ukiyo-e
 identifiers:

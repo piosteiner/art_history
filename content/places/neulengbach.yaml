@@ -1,6 +1,8 @@
 public_id: 103257
 name: Neulengbach
-kind: site
+kind: settlement
+designation: municipality of Austria
+parent: niederosterreich
 location: [15.90972, 48.20028]
 wikidata_id: Q700307
 metadata:

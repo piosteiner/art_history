@@ -1,6 +1,8 @@
 public_id: 103254
 name: Courbevoie
 kind: settlement
+designation: commune of France
+parent: hauts-de-seine
 location: [2.25222, 48.89722]
 wikidata_id: Q189715
 metadata:

@@ -1,5 +1,30 @@
 public_id: 100479
 name: Musées nationaux
+names:
+  - lang: fr
+    role: former
+    text: Direction des musées nationaux
+    period: until 17 August 1945
+    note: the directorate of the national museums; made the Direction des musées de France by the decree of 18 August 1945
+    sources:
+      - url: https://francearchives.gouv.fr/article/87249764
+        note: "Archives nationales, fonds 20144657: by the decree of 18 August 1945 the former direction des Musées nationaux became a central administration, the Direction des musées de France"
+        source: francearchives
+        accessed: 2026-10-29
+  - lang: fr
+    role: alternative
+    text: Direction des musées de France
+    period: 18 August 1945–2009
+    note: the same directorate from 1945; merged into the Direction générale des patrimoines in 2009 (since then the Service des musées de France)
+    sources:
+      - url: https://francearchives.gouv.fr/article/87249764
+        note: "Archives nationales, fonds 20144657: Direction des musées de France since the decree of 18 August 1945"
+        source: francearchives
+        accessed: 2026-10-29
+      - url: https://fr.wikipedia.org/wiki/Service_des_mus%C3%A9es_de_France
+        note: „Le service des Musées de France, qui succède en 2009 à la direction des Musées de France (DMF)“
+        source: fr-wikipedia-org
+        accessed: 2026-10-29
 kind: museum administration
 dissolved: 2009
 place: paris

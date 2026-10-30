@@ -19,7 +19,7 @@ relationships:
         property: P19
         wikidata: Q910913
   - type: died_in
-    to: place/tokyo-city
+    to: place/tokyo
     sources:
       - accessed: 2026-10-28
         property: P20

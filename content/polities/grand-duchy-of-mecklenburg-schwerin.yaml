@@ -1,0 +1,41 @@
+public_id: 104906
+name: Grand Duchy of Mecklenburg-Schwerin
+names:
+  - Mecklenburg-Schwerin
+  - Duchy of Mecklenburg-Schwerin
+  - lang: nl
+    role: translation
+    text: Groothertogdom Mecklenburg-Schwerin
+  - lang: fr
+    role: translation
+    text: grand-duché de Mecklembourg-Schwerin
+  - lang: de
+    role: translation
+    text: Großherzogtum Mecklenburg-Schwerin
+  - lang: it
+    role: translation
+    text: Ducato di Meclemburgo-Schwerin
+  - lang: es
+    role: translation
+    text: Mecklemburgo-Schwerin
+  - lang: ja
+    role: translation
+    text: メクレンブルク＝シュヴェリーン
+  - lang: zh
+    role: translation
+    text: 梅克倫堡-什未林大公國
+  - lang: ko
+    role: translation
+    text: 메클렌부르크슈베린 대공국
+  - lang: ru
+    role: translation
+    text: Мекленбург-Шверин
+period: 1815/1918
+wikidata_id: Q158445
+metadata:
+  sources: [Wikidata Q158445 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q158445

@@ -11,6 +11,14 @@ names:
   - lang: ru
     role: translation
     text: Арман-Жан де Виньеро дю Плесси Ришельё
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Armand-Jean de Vignerot
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q2861881
 kind: person
 occupations: [military personnel]
 birth: 1629-10-03

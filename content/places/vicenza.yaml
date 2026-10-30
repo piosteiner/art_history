@@ -1,6 +1,8 @@
 public_id: 100406
 name: Vicenza
 kind: settlement
+designation: comune of Italy
+parent: province-of-vicenza
 location: [11.55, 45.55]
 wikidata_id: Q6537
 metadata:

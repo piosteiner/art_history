@@ -2,7 +2,16 @@ public_id: 100198
 name: Jan Brueghel the Elder
 given_name: Jan, the Elder
 family_name: Brueghel
-names: [Jan Brueghel (I)]
+names:
+  - Jan Brueghel (I)
+  - kind: nickname
+    lang: nl
+    role: alternative
+    text: de Fluwelen Brueghel
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q209050
 birth: 1568
 death: 1625-01-13
 wikidata_id: Q209050

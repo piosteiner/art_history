@@ -1,6 +1,17 @@
 public_id: 102953
 name: Nohant-Vic
+names:
+  - lang: fr
+    role: former
+    text: Vic-la-Montagne
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q656447
 kind: settlement
+designation: commune of France
+parent: indre
 location: [1.96, 46.63861]
 wikidata_id: Q656447
 metadata:

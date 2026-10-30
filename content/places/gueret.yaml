@@ -14,7 +14,8 @@ names:
     role: translation
     text: Гере
 kind: settlement
-parent: france
+designation: commune of France
+parent: creuse
 country_code: FR
 location: [1.86833, 46.17056]
 wikidata_id: Q188511

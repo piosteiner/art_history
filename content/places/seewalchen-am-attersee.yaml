@@ -7,8 +7,9 @@ names:
   - lang: ru
     role: translation
     text: Зеевальхен-ам-Аттерзее
-kind: site
-parent: austria
+kind: settlement
+designation: municipality of Austria
+parent: oberosterreich
 country_code: AT
 location: [13.58361, 47.95028]
 wikidata_id: Q876227

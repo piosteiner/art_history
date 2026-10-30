@@ -1,6 +1,17 @@
 public_id: 100882
 name: Montauban
+names:
+  - lang: fr
+    role: former
+    text: Rive-Civique
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q172593
 kind: settlement
+designation: commune of France
+parent: tarn-et-garonne
 location: [1.355, 44.01722]
 wikidata_id: Q172593
 metadata:

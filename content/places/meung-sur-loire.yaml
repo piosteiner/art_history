@@ -1,6 +1,8 @@
 public_id: 100884
 name: Meung-sur-Loire
 kind: settlement
+designation: commune of France
+parent: loiret
 location: [1.69833, 47.82861]
 wikidata_id: Q658776
 metadata:

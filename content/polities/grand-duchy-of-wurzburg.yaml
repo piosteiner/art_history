@@ -1,0 +1,36 @@
+public_id: 104911
+name: Grand Duchy of Würzburg
+names:
+  - lang: nl
+    role: translation
+    text: Groothertogdom Würzburg
+  - lang: fr
+    role: translation
+    text: grand-duché de Wurtzbourg
+  - lang: de
+    role: translation
+    text: Großherzogtum Würzburg
+  - lang: it
+    role: translation
+    text: Granducato di Würzburg
+  - lang: es
+    role: translation
+    text: Gran Ducado de Wurzburgo
+  - lang: ja
+    role: translation
+    text: ヴュルツブルク大公国
+  - lang: zh
+    role: translation
+    text: 維爾茨堡大公
+  - lang: ru
+    role: translation
+    text: Великое герцогство Вюрцбург
+period: 1806/1814
+wikidata_id: Q698089
+metadata:
+  sources: [Wikidata Q698089 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q698089

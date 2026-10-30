@@ -1,0 +1,26 @@
+public_id: 104785
+name: Bas-Rhin
+kind: region
+designation: department of France
+parent: france
+boundary_code: FR-67
+wikidata_id: Q12717
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 962/1648-10-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/german-empire
+    period: 1871-05-10/1918-11-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q43287
+  - type: in_polity
+    to: polity/nazi-germany
+    period: 1940-06-22/1944-11-22
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q7318

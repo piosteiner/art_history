@@ -1,6 +1,8 @@
 public_id: 100230
 name: Palais Bourbon
-kind: site
+kind: building
+designation: palace
+parent: paris
 location: [2.31868, 48.86207]
 wikidata_id: Q936633
 metadata:

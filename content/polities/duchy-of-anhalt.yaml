@@ -1,0 +1,40 @@
+public_id: 104929
+name: Duchy of Anhalt
+names:
+  - Anhalt
+  - lang: nl
+    role: translation
+    text: Hertogdom Anhalt
+  - lang: fr
+    role: translation
+    text: duché d'Anhalt
+  - lang: de
+    role: translation
+    text: Herzogtum Anhalt
+  - lang: it
+    role: translation
+    text: Ducato di Anhalt
+  - lang: es
+    role: translation
+    text: Ducado de Anhalt
+  - lang: ja
+    role: translation
+    text: アンハルト公国
+  - lang: zh
+    role: translation
+    text: 安哈尔特公国
+  - lang: ko
+    role: translation
+    text: 안할트 공국
+  - lang: ru
+    role: translation
+    text: Герцогство Ангальт
+period: 1863/1918
+wikidata_id: Q16550783
+metadata:
+  sources: [Wikidata Q16550783 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q16550783

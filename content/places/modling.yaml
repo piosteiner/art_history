@@ -14,8 +14,9 @@ names:
   - lang: ru
     role: translation
     text: Мёдлинг
-kind: site
-parent: austria
+kind: settlement
+designation: municipality of Austria
+parent: niederosterreich
 country_code: AT
 location: [16.28306, 48.08556]
 wikidata_id: Q277965

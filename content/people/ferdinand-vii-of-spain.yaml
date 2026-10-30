@@ -1,5 +1,22 @@
 public_id: 101158
 name: Ferdinand VII of Spain
+names:
+  - kind: nickname
+    lang: es
+    role: alternative
+    text: el rey felón
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q186256
+  - kind: nickname
+    lang: es
+    role: alternative
+    text: el deseado
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q186256
 kind: person
 birth: 1784-10-14
 death: 1833-09-29

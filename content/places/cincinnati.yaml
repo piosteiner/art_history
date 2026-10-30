@@ -13,8 +13,17 @@ names:
   - lang: ru
     role: translation
     text: Цинциннати
+  - lang: en
+    role: former
+    text: Losantiville
+    period: 1788–4 January 1790
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q43196
 kind: settlement
-parent: united-states
+designation: county seat
+parent: ohio
 country_code: US
 location: [-84.5125, 39.1]
 wikidata_id: Q43196

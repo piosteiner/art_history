@@ -1,6 +1,8 @@
 public_id: 100905
 name: Overschie
 kind: settlement
+designation: municipality of the Netherlands
+parent: zuid-holland
 location: [4.42944, 51.935]
 wikidata_id: Q2389241
 metadata:

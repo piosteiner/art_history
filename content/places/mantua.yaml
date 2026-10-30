@@ -14,7 +14,8 @@ names:
     role: translation
     text: Мантуя
 kind: settlement
-parent: mantova
+designation: comune of Italy
+parent: province-of-mantua
 country_code: IT
 location: [10.79111, 45.15639]
 wikidata_id: Q6247

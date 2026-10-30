@@ -1,6 +1,8 @@
 public_id: 102929
 name: Messina
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-messina
 location: [15.55417, 38.19361]
 wikidata_id: Q13666
 metadata:

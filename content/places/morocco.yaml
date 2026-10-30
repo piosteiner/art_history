@@ -1,6 +1,8 @@
 public_id: 102954
 name: Morocco
 kind: country
+country_code: MA
+boundary_code: MA
 location: [-6, 32]
 wikidata_id: Q1028
 metadata:

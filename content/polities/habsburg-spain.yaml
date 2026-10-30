@@ -1,0 +1,41 @@
+public_id: 104867
+name: Habsburg Spain
+names:
+  - Monarchy of Spain
+  - Spain under the Habsburgs
+  - The Spanish Habsburgs
+  - Spanish Habsburg
+  - lang: fr
+    role: translation
+    text: maison de Habsbourg en Espagne
+  - lang: it
+    role: translation
+    text: Spagna degli Asburgo
+  - lang: es
+    role: translation
+    text: Casa de Austria
+  - lang: ja
+    role: translation
+    text: スペイン・ハプスブルク朝
+  - lang: zh
+    role: translation
+    text: 西班牙哈布斯堡王朝
+  - lang: ko
+    role: translation
+    text: 스페인 합스부르크
+  - lang: ru
+    role: translation
+    text: Габсбургская Испания
+period: 1516/1700
+wikidata_id: Q600093
+metadata:
+  sources: [Wikidata Q600093 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-spain
+    period: 1700-11-01
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q600093

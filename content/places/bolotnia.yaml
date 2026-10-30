@@ -1,6 +1,8 @@
 public_id: 103222
 name: Bolotnia
-kind: site
+kind: settlement
+designation: village of Ukraine
+parent: kiev
 location: [29.8775, 50.96361]
 wikidata_id: Q4090952
 metadata:

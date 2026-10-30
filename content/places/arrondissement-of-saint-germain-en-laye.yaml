@@ -1,6 +1,8 @@
 public_id: 101728
 name: arrondissement of Saint-Germain-en-Laye
-kind: site
+kind: region
+designation: arrondissement of France
+parent: yvelines
 location: [2.08333, 48.90194]
 wikidata_id: Q212673
 metadata:

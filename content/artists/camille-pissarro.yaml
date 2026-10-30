@@ -2,7 +2,17 @@ public_id: 100268
 name: Camille Pissarro
 given_name: Camille
 family_name: Pissarro
-names: [Camille Jacob Pissaro, Jacob-Abraham-Camille Pissarro]
+names:
+  - Camille Jacob Pissaro
+  - Jacob-Abraham-Camille Pissarro
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jacob Abraham Camille Pissarro
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q134741
 birth: 1830-07-10
 death: 1903-11-13
 wikidata_id: Q134741

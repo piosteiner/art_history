@@ -1,5 +1,14 @@
 public_id: 101155
 name: Infante Francisco de Paula of Spain
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Francisco de Paula Antonio de Borbón y Borbón-Parma
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q462892
 kind: person
 birth: 1794-03-10
 death: 1865-08-13

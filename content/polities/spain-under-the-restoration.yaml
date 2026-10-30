@@ -1,0 +1,46 @@
+public_id: 104870
+name: Spain under the Restoration
+names:
+  - Restoration
+  - Bourbon Restoration
+  - Second Bourbon Restoration
+  - Kingdom of Spain
+  - Spain
+  - Restoration (Spain)
+  - lang: nl
+    role: translation
+    text: Koninkrijk Spanje
+  - lang: fr
+    role: translation
+    text: Restauration bourbonienne en Espagne
+  - lang: it
+    role: translation
+    text: Restaurazione borbonica in Spagna
+  - lang: es
+    role: translation
+    text: Restauración borbónica en España
+  - lang: ja
+    role: translation
+    text: スペイン王政復古
+  - lang: zh
+    role: translation
+    text: 西班牙王國 (1874年–1931年)
+  - lang: ko
+    role: translation
+    text: 스페인 왕정복고
+  - lang: ru
+    role: translation
+    text: Королевство Испания
+period: 1874/1931
+wikidata_id: Q1044536
+metadata:
+  sources: [Wikidata Q1044536 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/second-spanish-republic
+    period: 1931-04-14
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1044536

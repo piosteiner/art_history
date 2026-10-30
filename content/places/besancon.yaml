@@ -1,6 +1,8 @@
 public_id: 103309
 name: Besançon
 kind: settlement
+designation: commune of France
+parent: doubs
 location: [6.02139, 47.24222]
 wikidata_id: Q37776
 metadata:

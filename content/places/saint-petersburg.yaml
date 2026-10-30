@@ -1,7 +1,36 @@
 public_id: 102246
 name: Saint Petersburg
-names: [Petrograd]
+names:
+  - Petrograd
+  - City of St. Petersburg
+  - lang: ru
+    role: former
+    text: Ленинград
+    period: 26 January 1924–6 September 1991
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q656
+  - lang: ru
+    role: former
+    text: Санкт-Петербург
+    period: 27 May 1703–12 September 1914
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q656
+  - lang: ru
+    role: former
+    text: Петроград
+    period: 13 September 1914–25 January 1924
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q656
 kind: settlement
+designation: federal city of Russia
+parent: russia
+boundary_code: RU-SPE
 location: [30.31667, 59.95]
 wikidata_id: Q656
 metadata:

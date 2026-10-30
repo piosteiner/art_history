@@ -14,6 +14,7 @@ names:
     role: translation
     text: Лувесьен
 kind: settlement
+designation: commune of France
 parent: arrondissement-of-saint-germain-en-laye
 country_code: FR
 location: [2.11639, 48.86028]

@@ -4,6 +4,10 @@ period: 1005/1797-06-14
 wikidata_id: Q174306
 metadata:
   sources: [Wikidata Q174306 (retrieved 2026-10-12)]
+relationships:
+  - type: succeeded_by
+    to: polity/ligurian-republic
+    period: 1797-06-14
 sources:
   period:
     - accessed: 2026-10-12

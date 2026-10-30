@@ -1,6 +1,8 @@
 public_id: 103261
 name: Schafberg
-kind: site
+kind: natural
+designation: mountain
+parent: graubunden
 location: [9.91, 46.5085]
 wikidata_id: Q1326842
 metadata:

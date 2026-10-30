@@ -1,0 +1,16 @@
+public_id: 104672
+name: Seine-Maritime
+names:
+  - lang: fr
+    role: former
+    text: Seine-Inférieure
+    period: until 17 January 1955
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q12758
+kind: region
+designation: department of France
+parent: france
+boundary_code: FR-76
+wikidata_id: Q12758

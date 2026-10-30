@@ -1,0 +1,21 @@
+public_id: 104937
+name: Berg General Governorate
+names:
+  - lang: fr
+    role: translation
+    text: Gouvernement général de Berg
+  - lang: de
+    role: translation
+    text: Generalgouvernement Berg
+  - lang: ru
+    role: translation
+    text: Генерал-губернаторство Берг
+period: 1813-11-25/1815-06-15
+wikidata_id: Q1501799
+metadata:
+  sources: [Wikidata Q1501799 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1501799

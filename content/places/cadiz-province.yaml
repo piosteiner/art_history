@@ -1,0 +1,27 @@
+public_id: 103361
+name: Cádiz Province
+names: [Cádiz]
+kind: region
+designation: province of Spain
+parent: spain
+boundary_code: ES-CA
+location: [-5.75, 36.5]
+wikidata_id: Q81978
+metadata:
+  sources: [Wikidata Q81978 (retrieved 2026-10-29)]
+relationships:
+  - type: in_polity
+    to: polity/crown-of-castile
+    period: 1230/1515
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q217196
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q81978
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q81978

@@ -1,7 +1,8 @@
 public_id: 100373
 name: Saint-Germain-en-Laye
 kind: settlement
-parent: france
+designation: commune of France
+parent: yvelines
 country_code: FR
 location: [2.09056, 48.89639]
 wikidata_id: Q60847808

@@ -2,6 +2,15 @@ public_id: 100809
 name: Baladine Klossowska
 given_name: Baladine
 family_name: Klossowska
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Elisabeth Dorothea Spiro
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q3633193
 birth: 1881-10-21
 death: 1969-09-11
 wikidata_id: Q3633193

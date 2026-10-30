@@ -1,6 +1,8 @@
 public_id: 100233
 name: Vétheuil
 kind: settlement
+designation: commune of France
+parent: val-d-oise
 location: [1.70306, 49.06389]
 wikidata_id: Q920444
 metadata:

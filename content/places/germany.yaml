@@ -3,3 +3,47 @@ name: Germany
 kind: country
 country_code: DE
 boundary_code: DE
+wikidata_id: Q183
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 962/1806-08-05
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/german-empire
+    period: 1871-01-18/1918-11-08
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q43287
+  - type: in_polity
+    to: polity/weimar-republic
+    period: 1918-11-09/1933-01-29
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q41304
+  - type: in_polity
+    to: polity/nazi-germany
+    period: 1933-01-30/1945-05-07
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q7318
+  - type: in_polity
+    to: polity/allied-occupied-germany
+    period: 1945-05-08/1949-05-22
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2415901
+  - type: in_polity
+    to: polity/west-germany
+    period: 1949-05-23/1990-10-02
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q713750
+  - type: in_polity
+    to: polity/germany
+    period: 1990-10-03/
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q183

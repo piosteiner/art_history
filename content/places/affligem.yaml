@@ -1,14 +1,23 @@
 public_id: 103238
 name: Affligem
-kind: site
+kind: settlement
+designation: municipality of Belgium
+parent: flemish-brabant
+country_code: BE
 location: [4.1176, 50.9033]
 wikidata_id: Q382860
 metadata:
   sources: [Wikidata Q382860 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4676743-5
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q382860
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q382860
   location:
     - accessed: 2026-10-28

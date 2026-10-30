@@ -1,0 +1,50 @@
+public_id: 104688
+name: Province of Pesaro and Urbino
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-PU
+wikidata_id: Q16241
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-urbino
+    period: 1443-05-04/1631-04-22
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q649202
+  - type: in_polity
+    to: polity/papal-states
+    period: 1631-04-23/1798-02-14
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/roman-republic-1798
+    period: 1798-02-15/1799-09-29
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q175881
+  - type: in_polity
+    to: polity/papal-states
+    period: 1799-09-30/1808-04-01
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/kingdom-of-italy-napoleonic
+    period: 1808-04-02/1814-04-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q223936
+  - type: in_polity
+    to: polity/papal-states
+    period: 1815-06-09/1860-11-03
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-11-04/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

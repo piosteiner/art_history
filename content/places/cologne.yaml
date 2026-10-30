@@ -26,12 +26,38 @@ names:
     role: translation
     text: Colónia
 kind: settlement
-parent: germany
+designation: urban district of North Rhine-Westphalia
+parent: nordrhein-westfalen
 country_code: DE
 location: [6.95778, 50.94222]
 wikidata_id: Q365
 metadata:
   sources: [Wikidata Q365 (retrieved 2026-10-15)]
+relationships:
+  - type: in_polity
+    to: polity/french-first-republic
+    period: 1794-10-06/1804-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q58296
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1804-05-18/1814-01-13
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/lower-rhine-general-governorate
+    period: 1814-02-02/1814-06-15
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1501805
+  - type: in_polity
+    to: polity/lower-and-middle-rhine-general-governorate
+    period: 1814-06-16/1815-06-08
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1422350
 sources:
   kind:
     - accessed: 2026-10-15

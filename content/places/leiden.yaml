@@ -1,6 +1,8 @@
 public_id: 103230
 name: Leiden
 kind: settlement
+designation: municipality of the Netherlands
+parent: zuid-holland
 location: [4.49, 52.16]
 wikidata_id: Q43631
 metadata:

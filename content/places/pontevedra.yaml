@@ -1,0 +1,14 @@
+public_id: 104612
+name: Pontevedra Province
+kind: region
+designation: province of Spain
+parent: spain
+boundary_code: ES-PO
+wikidata_id: Q95086
+relationships:
+  - type: in_polity
+    to: polity/crown-of-castile
+    period: 1230/1515
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q217196

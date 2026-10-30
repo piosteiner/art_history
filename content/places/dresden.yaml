@@ -1,6 +1,8 @@
 public_id: 100992
 name: Dresden
 kind: settlement
+designation: urban municipality in Germany
+parent: sachsen
 location: [13.73814, 51.04933]
 wikidata_id: Q1731
 metadata:

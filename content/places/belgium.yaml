@@ -5,3 +5,58 @@ country_code: BE
 boundary_code: BE
 location: [4.4699, 50.5039]
 wikidata_id: Q31
+relationships:
+  - type: in_polity
+    to: polity/burgundian-netherlands
+    period: 1384/1481
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q157109
+  - type: in_polity
+    to: polity/habsburg-netherlands
+    period: 1482/1580
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1031430
+  - type: in_polity
+    to: polity/spanish-netherlands
+    period: 1581/1713
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q622783
+  - type: in_polity
+    to: polity/austrian-netherlands
+    period: 1714–30 September 1795
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q700283
+  - type: in_polity
+    to: polity/french-first-republic
+    period: 1 October 1795–17 May 1804
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q58296
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1804-05-18/1814-05-29
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/provisional-government-of-belgium
+    period: 1814-05-30/1815-03-15
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2536329
+  - type: in_polity
+    to: polity/united-kingdom-of-the-netherlands
+    period: 1815-03-16/1830-10-03
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q15864
+  - type: in_polity
+    to: polity/belgium
+    period: 1830-10-04/
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q31

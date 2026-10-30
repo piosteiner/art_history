@@ -1,0 +1,47 @@
+public_id: 104835
+name: East Germany
+names:
+  - GDR
+  - DDR
+  - Deutsche Demokratische Republik
+  - Communist Germany
+  - Socialist Germany
+  - German Democratic Republic
+  - lang: nl
+    role: translation
+    text: Duitse Democratische Republiek
+  - lang: fr
+    role: translation
+    text: République démocratique allemande
+  - lang: it
+    role: translation
+    text: Repubblica Democratica Tedesca
+  - lang: es
+    role: translation
+    text: Alemania Oriental
+  - lang: ja
+    role: translation
+    text: ドイツ民主共和国
+  - lang: zh
+    role: translation
+    text: 東德
+  - lang: ko
+    role: translation
+    text: 동독
+  - lang: ru
+    role: translation
+    text: ГДР
+period: 1949-10-07/1990-10-03
+country_codes: [DD]
+wikidata_id: Q16957
+metadata:
+  sources: [Wikidata Q16957 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q16957
+  country_codes:
+    - accessed: 2026-10-29
+      property: P297
+      wikidata: Q16957

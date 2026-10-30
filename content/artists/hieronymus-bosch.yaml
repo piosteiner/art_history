@@ -2,6 +2,15 @@ public_id: 100237
 name: Hieronymus Bosch
 given_name: Hieronymus
 family_name: Bosch
+names:
+  - kind: birth
+    lang: nl
+    role: former
+    text: Jheronimus van Aken
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q130531
 birth: c. 1450
 death: 1516-08-09
 wikidata_id: Q130531

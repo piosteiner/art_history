@@ -1,6 +1,8 @@
 public_id: 103132
 name: Lessines
-kind: site
+kind: settlement
+designation: Belgian municipality with the title of city
+parent: hainaut
 location: [3.83, 50.7117]
 wikidata_id: Q667790
 metadata:

@@ -17,6 +17,7 @@ names:
     role: translation
     text: Бристоль
 kind: settlement
+designation: city of United Kingdom
 parent: city-of-bristol
 country_code: GB
 location: [-2.5975, 51.45361]

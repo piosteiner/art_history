@@ -1,6 +1,8 @@
 public_id: 100742
 name: Rome
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-rome
 location: [12.48278, 41.89306]
 wikidata_id: Q220
 metadata:

@@ -1,6 +1,8 @@
 public_id: 103236
 name: Laval
 kind: settlement
+designation: commune of France
+parent: mayenne
 location: [-0.77, 48.07278]
 wikidata_id: Q184154
 metadata:

@@ -1,6 +1,15 @@
 public_id: 101018
 name: Wilhelm II
-names: ["Wilhelm II, German Emperor and King of Prussia"]
+names:
+  - Wilhelm II, German Emperor and King of Prussia
+  - kind: birth
+    lang: de
+    role: former
+    text: Friedrich Wilhelm Viktor Albert von Preußen
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q2677
 kind: person
 occupations: [German Emperor]
 birth: 1859-01-27

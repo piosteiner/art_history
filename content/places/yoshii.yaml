@@ -1,6 +1,8 @@
 public_id: 102762
 name: Yoshii
-kind: site
+kind: settlement
+designation: dissolved municipality of Japan
+parent: gunma
 location: [138.98894, 36.25417]
 wikidata_id: Q994765
 metadata:

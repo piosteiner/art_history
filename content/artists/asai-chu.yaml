@@ -9,7 +9,7 @@ metadata:
   sources: [Wikidata Q720550 (retrieved 2026-10-05)]
 relationships:
   - type: born_in
-    to: place/edo
+    to: place/tokyo
     sources:
       - accessed: 2026-10-13
         property: P19

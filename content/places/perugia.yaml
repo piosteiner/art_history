@@ -1,6 +1,8 @@
 public_id: 100894
 name: Perugia
 kind: settlement
+designation: comune of Italy
+parent: province-of-perugia
 location: [12.38855, 43.11192]
 wikidata_id: Q3437
 metadata:

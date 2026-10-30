@@ -14,7 +14,8 @@ names:
     role: translation
     text: San Galo
 kind: settlement
-parent: switzerland
+designation: municipality of Switzerland
+parent: sankt-gallen
 country_code: CH
 location: [9.37722, 47.42333]
 wikidata_id: Q25607

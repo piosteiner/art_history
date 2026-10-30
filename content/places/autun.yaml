@@ -16,6 +16,7 @@ names:
     role: translation
     text: Отён
 kind: settlement
+designation: commune of France
 parent: arrondissement-of-autun
 country_code: FR
 location: [4.29861, 46.95111]

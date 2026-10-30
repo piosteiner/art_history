@@ -1,10 +1,45 @@
 public_id: 102015
 name: Metropolitan City of Rome
-kind: site
+names: [Roma]
+kind: region
+designation: metropolitan city of Italy
+parent: italy
+boundary_code: IT-RM
 location: [12.48278, 41.89306]
 wikidata_id: Q18288160
 metadata:
   sources: [Wikidata Q18288160 (retrieved 2026-10-20)]
+relationships:
+  - type: in_polity
+    to: polity/papal-states
+    period: 754/1798-02-14
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/roman-republic-1798
+    period: 1798-02-15/1799-09-29
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q175881
+  - type: in_polity
+    to: polity/papal-states
+    period: 1799-09-30/1809-05-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1809-05-17/1814-05-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/papal-states
+    period: 1814-05-24/1870-09-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
 sources:
   kind:
     - accessed: 2026-10-20

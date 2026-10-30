@@ -1,6 +1,8 @@
 public_id: 103287
 name: Twickenham
-kind: site
+kind: district
+designation: area of London
+parent: richmond-upon-thames
 location: [-0.3369, 51.4486]
 wikidata_id: Q1143278
 metadata:

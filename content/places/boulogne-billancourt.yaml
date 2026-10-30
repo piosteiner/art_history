@@ -1,6 +1,17 @@
 public_id: 100685
 name: Boulogne-Billancourt
+names:
+  - lang: fr
+    role: former
+    text: Boulogne
+    period: 1790–21 November 1925
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q172455
 kind: settlement
+designation: commune of France
+parent: hauts-de-seine
 location: [2.24139, 48.83528]
 wikidata_id: Q172455
 metadata:

@@ -1,6 +1,17 @@
 public_id: 100740
 name: Collioure
+names:
+  - lang: fr
+    role: former
+    text: Fort-du-Rocher
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q254829
 kind: settlement
+designation: commune of France
+parent: pyrenees-orientales
 location: [3.08083, 42.52556]
 wikidata_id: Q254829
 metadata:

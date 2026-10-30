@@ -1,6 +1,8 @@
 public_id: 102177
 name: arrondissement of Chartres
-kind: site
+kind: region
+designation: arrondissement of France
+parent: eure-et-loir
 location: [1.48333, 48.45]
 wikidata_id: Q700901
 metadata:

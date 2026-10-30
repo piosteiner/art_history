@@ -1,10 +1,19 @@
 public_id: 100952
 name: Galicia
-kind: country
+kind: region
+designation: autonomous community of Spain
+parent: spain
 location: [-7.9, 42.8]
 wikidata_id: Q3908
 metadata:
   sources: [Wikidata Q3908 (retrieved 2026-10-18)]
+relationships:
+  - type: in_polity
+    to: polity/crown-of-castile
+    period: 1230/1515
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q217196
 sources:
   kind:
     - accessed: 2026-10-18

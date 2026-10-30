@@ -14,6 +14,7 @@ names:
     role: translation
     text: Ченто
 kind: settlement
+designation: comune of Italy
 parent: province-of-ferrara
 country_code: IT
 location: [11.28333, 44.73333]

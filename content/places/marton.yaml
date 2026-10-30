@@ -1,6 +1,8 @@
 public_id: 100473
 name: Marton
-kind: site
+kind: district
+designation: suburb
+parent: middlesbrough
 location: [-1.2124, 54.5406]
 wikidata_id: Q441541
 metadata:

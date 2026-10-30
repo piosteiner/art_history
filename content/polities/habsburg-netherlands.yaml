@@ -4,6 +4,13 @@ period: 1482/1797
 wikidata_id: Q1031430
 metadata:
   sources: [Wikidata Q1031430 (retrieved 2026-10-09)]
+relationships:
+  - type: succeeded_by
+    to: polity/spanish-netherlands
+    period: 1581
+  - type: succeeded_by
+    to: polity/dutch-republic
+    period: 1581-08-05
 sources:
   period:
     - accessed: 2026-10-09

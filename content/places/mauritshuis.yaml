@@ -1,6 +1,8 @@
 public_id: 100241
 name: Mauritshuis
-kind: site
+kind: building
+designation: art museum
+parent: the-hague
 location: [4.31431, 52.08039]
 wikidata_id: Q221092
 metadata:

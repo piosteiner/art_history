@@ -1,6 +1,8 @@
 public_id: 103135
 name: Carcassonne
 kind: settlement
+designation: commune of France
+parent: aude
 location: [2.35139, 43.21583]
 wikidata_id: Q6582
 metadata:

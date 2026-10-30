@@ -1,0 +1,39 @@
+public_id: 104887
+name: Duchy of Urbino
+names:
+  - lang: nl
+    role: translation
+    text: Hertogdom Urbino
+  - lang: fr
+    role: translation
+    text: duché d'Urbino
+  - lang: de
+    role: translation
+    text: Herzogtum Urbino
+  - lang: it
+    role: translation
+    text: Ducato di Urbino
+  - lang: es
+    role: translation
+    text: Ducado de Urbino
+  - lang: ja
+    role: translation
+    text: ウルビーノ公国
+  - lang: zh
+    role: translation
+    text: 烏爾比諾公國
+  - lang: ko
+    role: translation
+    text: 우르비노 공국
+  - lang: ru
+    role: translation
+    text: герцогство Урбино
+period: 1443-05-04/1631-04-23
+wikidata_id: Q649202
+metadata:
+  sources: [Wikidata Q649202 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q649202

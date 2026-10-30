@@ -1,0 +1,39 @@
+public_id: 104889
+name: Duchy of Florence
+names:
+  - lang: nl
+    role: translation
+    text: Hertogdom Florence
+  - lang: fr
+    role: translation
+    text: duché de Florence
+  - lang: de
+    role: translation
+    text: Herzogtum Florenz
+  - lang: it
+    role: translation
+    text: Ducato di Firenze
+  - lang: es
+    role: translation
+    text: Ducado de Florencia
+  - lang: ja
+    role: translation
+    text: フィレンツェ公国
+  - lang: zh
+    role: translation
+    text: 佛羅倫斯公國
+  - lang: ko
+    role: translation
+    text: 피렌체 공국
+  - lang: ru
+    role: translation
+    text: Флорентийское герцогство
+period: 1532/1569
+wikidata_id: Q2252973
+metadata:
+  sources: [Wikidata Q2252973 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q2252973

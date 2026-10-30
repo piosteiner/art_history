@@ -4,6 +4,10 @@ period: 1 January 1801–12 April 1927
 wikidata_id: Q174193
 metadata:
   sources: [Wikidata Q174193 (retrieved 2026-10-12)]
+relationships:
+  - type: succeeded_by
+    to: polity/united-kingdom
+    period: 1922-12-06
 sources:
   period:
     - accessed: 2026-10-12

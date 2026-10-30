@@ -1,6 +1,8 @@
 public_id: 100901
 name: Haarlem
 kind: settlement
+designation: municipality of the Netherlands
+parent: north-holland
 location: [4.63556, 52.38139]
 wikidata_id: Q9920
 metadata:

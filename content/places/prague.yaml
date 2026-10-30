@@ -1,6 +1,9 @@
 public_id: 100977
 name: Prague
 kind: settlement
+designation: district of the Czech Republic
+parent: czechia
+boundary_code: CZ-PR
 location: [14.42139, 50.0875]
 wikidata_id: Q1085
 metadata:

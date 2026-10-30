@@ -1,0 +1,44 @@
+public_id: 104846
+name: Helvetic Republic
+names:
+  - Helvetia
+  - lang: nl
+    role: translation
+    text: Helvetische Republiek
+  - lang: fr
+    role: translation
+    text: République helvétique
+  - lang: de
+    role: translation
+    text: Helvetische Republik
+  - lang: it
+    role: translation
+    text: Repubblica Elvetica
+  - lang: es
+    role: translation
+    text: República Helvética
+  - lang: ja
+    role: translation
+    text: ヘルヴェティア共和国
+  - lang: zh
+    role: translation
+    text: 海尔维第共和国
+  - lang: ko
+    role: translation
+    text: 헬베티아 공화국
+  - lang: ru
+    role: translation
+    text: Гельветическая республика
+period: 1798-04-12/1803-02-19
+wikidata_id: Q206696
+metadata:
+  sources: [Wikidata Q206696 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/swiss-confederation-mediation
+    period: 1803-02-19
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q206696

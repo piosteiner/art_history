@@ -1,0 +1,40 @@
+public_id: 104837
+name: Kingdom of Saxony
+names:
+  - lang: de
+    role: original
+    text: Königreich Sachsen
+  - Saxony
+  - lang: nl
+    role: translation
+    text: Koninkrijk Saksen
+  - lang: fr
+    role: translation
+    text: royaume de Saxe
+  - lang: it
+    role: translation
+    text: Regno di Sassonia
+  - lang: es
+    role: translation
+    text: Reino de Sajonia
+  - lang: ja
+    role: translation
+    text: ザクセン王国
+  - lang: zh
+    role: translation
+    text: 萨克森王国
+  - lang: ko
+    role: translation
+    text: 작센 왕국
+  - lang: ru
+    role: translation
+    text: Королевство Саксония
+period: 1806-12-20/1918-11-11
+wikidata_id: Q153015
+metadata:
+  sources: [Wikidata Q153015 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q153015

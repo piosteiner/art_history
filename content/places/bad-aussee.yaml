@@ -10,8 +10,9 @@ names:
   - lang: ru
     role: translation
     text: Бад-Аусзе
-kind: site
-parent: austria
+kind: settlement
+designation: municipality of Austria
+parent: steiermark
 country_code: AT
 location: [13.78278, 47.61]
 wikidata_id: Q251065

@@ -3,6 +3,15 @@ name: Vincent van Gogh
 given_name: Vincent
 family_name: van Gogh
 sort_name: Gogh, Vincent van
+names:
+  - kind: birth
+    lang: nl
+    role: alternative
+    text: Vincent Willem Van Gogh
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5582
 birth: 1853-03-30
 death: 1890-07-29
 biography_md: |-
@@ -10,6 +19,8 @@ biography_md: |-
   In Paris he discovered Impressionism and collected hundreds of Japanese woodblock prints; in Arles and
   Saint-Rémy he developed the saturated colour and expressive brushwork that made him a founder of modern art[[source/wikipedia-en-vincent-van-gogh|“while in Paris he collected hundreds of them” · “His paintings grew brighter in colour as he developed a style that became fully realised during his stay in Arles” · “bold colours and dramatic, impulsive and expressive brushwork that contributed to the foundations of modern art”]].
 wikidata_id: Q5582
+metadata:
+  sources: [Wikidata Q5582 (retrieved 2026-10-29)]
 relationships:
   - type: born_in
     to: place/zundert
@@ -73,3 +84,12 @@ relationships:
 identifiers:
   dome: "401"
   gnd: "118540416"
+sources:
+  birth:
+    - accessed: 2026-10-29
+      property: P569
+      wikidata: Q5582
+  death:
+    - accessed: 2026-10-29
+      property: P570
+      wikidata: Q5582

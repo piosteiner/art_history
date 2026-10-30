@@ -1,10 +1,37 @@
 public_id: 100936
 name: Ulm
 kind: settlement
+designation: City district in Baden-Württemberg
+parent: baden-wurttemberg
 location: [9.99111, 48.39861]
 wikidata_id: Q3012
 metadata:
   sources: [Wikidata Q3012 (retrieved 2026-10-18)]
+relationships:
+  - type: in_polity
+    to: polity/kingdom-of-bavaria
+    period: 1 January 1806–5 November 1810
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154195
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1806-07-12/1813-11-02
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/kingdom-of-wurttemberg
+    period: 1810-11-06/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q159631
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
 sources:
   kind:
     - accessed: 2026-10-18

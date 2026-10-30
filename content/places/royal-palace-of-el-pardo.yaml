@@ -27,6 +27,7 @@ names:
     role: translation
     text: Эль-Пардо
 kind: building
+designation: museum
 parent: madrid
 country_code: ES
 location: [-3.77506, 40.52129]

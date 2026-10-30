@@ -1,5 +1,14 @@
 public_id: 101159
 name: Maria Luisa of Parma
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Luisa María Teresa Ana
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q229854
 kind: person
 birth: 1751-12-09
 death: 1819-01-02

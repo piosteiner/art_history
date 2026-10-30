@@ -24,6 +24,14 @@ names:
   - lang: ru
     role: translation
     text: Мари Жанна Дюбарри
+  - kind: birth
+    lang: fr
+    role: former
+    text: Jeanne Bécu
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q230677
 kind: person
 occupations: [royal mistress, courtesan, art collector, modiste, salesperson, opera singer]
 birth: 1743-08-19

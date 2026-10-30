@@ -1,10 +1,27 @@
 public_id: 101910
 name: Metropolitan City of Palermo
-kind: site
+names: [Palermo]
+kind: region
+designation: metropolitan city of Italy
+parent: italy
+boundary_code: IT-PA
 location: [13.36139, 38.11556]
 wikidata_id: Q20795016
 metadata:
   sources: [Wikidata Q20795016 (retrieved 2026-10-20)]
+relationships:
+  - type: in_polity
+    to: polity/kingdom-of-sicily
+    period: 1130/1816-12-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q188586
+  - type: in_polity
+    to: polity/kingdom-of-the-two-sicilies
+    period: 1816-12-12/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q180393
 sources:
   kind:
     - accessed: 2026-10-20

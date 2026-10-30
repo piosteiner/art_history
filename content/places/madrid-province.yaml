@@ -1,0 +1,14 @@
+public_id: 104640
+name: Madrid Province
+kind: region
+designation: province of Spain
+parent: spain
+boundary_code: ES-M
+wikidata_id: Q24004405
+relationships:
+  - type: in_polity
+    to: polity/crown-of-castile
+    period: 1230/1515
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q217196

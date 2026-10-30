@@ -1,6 +1,7 @@
 public_id: 103111
 name: Davos Frauenkirch
-kind: site
+kind: settlement
+parent: graubunden
 location: [9.79944, 46.7689]
 wikidata_id: Q1178310
 metadata:

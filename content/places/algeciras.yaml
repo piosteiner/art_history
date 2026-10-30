@@ -1,14 +1,23 @@
 public_id: 102955
 name: Algeciras
-kind: site
+kind: settlement
+designation: municipality of Spain
+parent: cadiz-province
+country_code: ES
 location: [-5.45389, 36.1275]
 wikidata_id: Q484552
 metadata:
   sources: [Wikidata Q484552 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4084945-4
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q484552
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q484552
   location:
     - accessed: 2026-10-28

@@ -1,6 +1,8 @@
 public_id: 103205
 name: Cavalière (Var)
 kind: settlement
+designation: village
+parent: var
 location: [6.42611, 43.15194]
 wikidata_id: Q140984047
 metadata:

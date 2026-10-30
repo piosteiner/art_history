@@ -1,6 +1,8 @@
 public_id: 102927
 name: Valletta
 kind: settlement
+parent: malta
+boundary_code: MT-60
 location: [14.5125, 35.89778]
 wikidata_id: Q23800
 metadata:

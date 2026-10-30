@@ -34,6 +34,14 @@ names:
   - lang: ru
     role: translation
     text: Наполеон I
+  - kind: birth
+    lang: it
+    role: former
+    text: Napoleone di Buonaparte
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q517
 kind: person
 occupations: [politician, art collector, emperor, sovereign, militant, military leader, army officer]
 birth: 1769-08-15

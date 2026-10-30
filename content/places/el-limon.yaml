@@ -1,6 +1,8 @@
 public_id: 100812
 name: El Limón
-kind: site
+kind: district
+designation: municipal district
+parent: samana
 location: [-69.43082, 19.29229]
 wikidata_id: Q3306488
 metadata:

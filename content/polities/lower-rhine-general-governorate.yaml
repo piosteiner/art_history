@@ -1,0 +1,22 @@
+public_id: 104938
+name: Lower Rhine General Governorate
+names:
+  - lang: de
+    role: translation
+    text: Generalgouvernement Niederrhein
+  - lang: ru
+    role: translation
+    text: Генерал-губернаторство Нижний Рейн
+period: 1814–1814
+wikidata_id: Q1501805
+metadata:
+  sources: [Wikidata Q1501805 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/lower-and-middle-rhine-general-governorate
+    period: 1814-06-16
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1501805

@@ -1,6 +1,8 @@
 public_id: 103173
 name: Honolulu
 kind: settlement
+designation: county seat
+parent: hawaii
 location: [-157.85722, 21.30472]
 wikidata_id: Q18094
 metadata:

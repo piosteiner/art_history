@@ -1,6 +1,8 @@
 public_id: 100405
 name: Verona
 kind: settlement
+designation: comune of Italy
+parent: province-of-verona
 location: [10.99278, 45.43861]
 wikidata_id: Q2028
 metadata:

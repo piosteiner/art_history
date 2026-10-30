@@ -1,0 +1,18 @@
+public_id: 103358
+name: Barcelonès
+kind: region
+designation: comarca of Catalonia
+parent: barcelona-province
+location: [2.16083, 41.40444]
+wikidata_id: Q15348
+metadata:
+  sources: [Wikidata Q15348 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q15348
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q15348

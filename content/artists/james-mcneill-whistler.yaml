@@ -2,7 +2,16 @@ public_id: 101842
 name: James McNeill Whistler
 given_name: James McNeill
 family_name: Whistler
-names: [James Abbot M'Neill Whistler]
+names:
+  - James Abbot M'Neill Whistler
+  - kind: birth
+    lang: en
+    role: alternative
+    text: James Abbot McNeill Whistler
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q203643
 birth: 1834-07-10
 death: 1903-07-17
 wikidata_id: Q203643

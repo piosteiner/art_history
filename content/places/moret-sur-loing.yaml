@@ -1,6 +1,8 @@
 public_id: 100216
 name: Moret-sur-Loing
 kind: settlement
+designation: commune of France
+parent: seine-et-marne
 location: [2.815, 48.3744]
 wikidata_id: Q839537
 metadata:

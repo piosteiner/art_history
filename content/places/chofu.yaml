@@ -1,6 +1,8 @@
 public_id: 103109
 name: Chōfu
-kind: site
+kind: district
+designation: jōkamachi
+parent: yamaguchi
 location: [130.99078, 33.99888]
 wikidata_id: Q11652977
 metadata:

@@ -1,0 +1,43 @@
+public_id: 104900
+name: Duchy of Ferrara
+names:
+  - lang: nl
+    role: translation
+    text: Hertogdom Ferrara
+  - lang: fr
+    role: translation
+    text: duché de Ferrare
+  - lang: de
+    role: translation
+    text: Herzogtum Ferrara
+  - lang: it
+    role: translation
+    text: Ducato di Ferrara
+  - lang: es
+    role: translation
+    text: Ducado de Ferrara
+  - lang: ja
+    role: translation
+    text: フェラーラ侯国
+  - lang: zh
+    role: translation
+    text: 費拉拉公國
+  - lang: ko
+    role: translation
+    text: 페라라 공국
+  - lang: ru
+    role: translation
+    text: герцогство Феррара
+period: 1264/1597
+wikidata_id: Q693570
+metadata:
+  sources: [Wikidata Q693570 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/papal-states
+    period: 1598-01-28
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q693570

@@ -2,7 +2,17 @@ public_id: 101702
 name: Paolo Veronese
 given_name: Paolo
 family_name: Veronese
-names: [Paolo Caliati Veronese, Paolo Caliari il Veronese]
+names:
+  - Paolo Caliati Veronese
+  - Paolo Caliari il Veronese
+  - kind: birth
+    lang: it
+    role: former
+    text: Paolo Caliari
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q9440
 birth: 1528
 death: 1588-04-19
 wikidata_id: Q9440

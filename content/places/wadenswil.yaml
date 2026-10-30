@@ -1,6 +1,8 @@
 public_id: 103275
 name: Wädenswil
-kind: site
+kind: settlement
+designation: municipality of Switzerland
+parent: canton-of-zurich
 location: [8.67222, 47.23028]
 wikidata_id: Q69718
 metadata:

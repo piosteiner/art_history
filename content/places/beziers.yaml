@@ -14,7 +14,8 @@ names:
     role: translation
     text: Безье
 kind: settlement
-parent: france
+designation: commune of France
+parent: herault
 country_code: FR
 location: [3.21611, 43.34333]
 wikidata_id: Q174019

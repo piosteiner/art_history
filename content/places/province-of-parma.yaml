@@ -1,10 +1,33 @@
 public_id: 101906
 name: Province of Parma
-kind: site
+names: [Parma]
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-PR
 location: [10.33119, 44.79506]
 wikidata_id: Q16228
 metadata:
   sources: [Wikidata Q16228 (retrieved 2026-10-20)]
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-parma-and-piacenza
+    period: 1545-09-16/1859-06-08
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q165040
+  - type: in_polity
+    to: polity/united-provinces-of-central-italy
+    period: 1859-12-08/1860-03-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2268597
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-03-18/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303
 sources:
   kind:
     - accessed: 2026-10-20

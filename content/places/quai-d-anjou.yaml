@@ -1,6 +1,8 @@
 public_id: 102920
 name: quai d'Anjou
-kind: site
+kind: street
+designation: riverfront
+parent: paris
 location: [2.35878, 48.8518]
 wikidata_id: Q3412667
 metadata:

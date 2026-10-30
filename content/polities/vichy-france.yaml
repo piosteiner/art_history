@@ -1,0 +1,45 @@
+public_id: 104823
+name: Vichy France
+names:
+  - Vichy government
+  - Vichy regime
+  - lang: nl
+    role: translation
+    text: Vichy-Frankrijk
+  - lang: fr
+    role: translation
+    text: régime de Vichy
+  - lang: de
+    role: translation
+    text: Vichy-Regime
+  - lang: it
+    role: translation
+    text: Governo di Vichy
+  - lang: es
+    role: translation
+    text: Francia de Vichy
+  - lang: ja
+    role: translation
+    text: ヴィシー政権
+  - lang: zh
+    role: translation
+    text: 維希法國
+  - lang: ko
+    role: translation
+    text: 비시 프랑스
+  - lang: ru
+    role: translation
+    text: Режим Виши
+period: 1940-07-10/1944-08-29
+wikidata_id: Q69808
+metadata:
+  sources: [Wikidata Q69808 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/provisional-government-of-the-french-republic
+    period: 1944-08-29
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q69808

@@ -1,0 +1,43 @@
+public_id: 104824
+name: Provisional Government of the French Republic
+names:
+  - lang: nl
+    role: translation
+    text: Voorlopige Regering van de Franse Republiek
+  - lang: fr
+    role: translation
+    text: Gouvernement provisoire de la République française
+  - lang: de
+    role: translation
+    text: Provisorische Regierung der Französischen Republik
+  - lang: it
+    role: translation
+    text: Governo provvisorio della Repubblica francese
+  - lang: es
+    role: translation
+    text: Gobierno provisional de la República francesa
+  - lang: ja
+    role: translation
+    text: フランス共和国臨時政府
+  - lang: zh
+    role: translation
+    text: 法蘭西共和國臨時政府
+  - lang: ko
+    role: translation
+    text: 프랑스 공화국 임시정부
+  - lang: ru
+    role: translation
+    text: Временное правительство Французской республики
+period: 1944-06-03/1946-10-27
+wikidata_id: Q783684
+metadata:
+  sources: [Wikidata Q783684 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/french-fourth-republic
+    period: 1946-10-27
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q783684

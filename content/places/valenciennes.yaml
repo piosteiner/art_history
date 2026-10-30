@@ -1,6 +1,8 @@
 public_id: 103253
 name: Valenciennes
 kind: settlement
+designation: commune of France
+parent: nord
 location: [3.52333, 50.35806]
 wikidata_id: Q163795
 metadata:

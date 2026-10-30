@@ -1,6 +1,7 @@
 public_id: 100902
 name: Zaltbommel
 kind: settlement
+parent: gelderland
 location: [5.247, 51.81231]
 wikidata_id: Q73462
 metadata:

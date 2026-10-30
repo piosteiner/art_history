@@ -1,6 +1,7 @@
 public_id: 100120
 name: San Antonio
 kind: settlement
+designation: county seat
 parent: bexar-county
 country_code: US
 location: [-98.49389, 29.425]

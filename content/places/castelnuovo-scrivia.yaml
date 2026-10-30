@@ -1,6 +1,8 @@
 public_id: 101241
 name: Castelnuovo Scrivia
 kind: settlement
+designation: comune of Italy
+parent: alessandria
 location: [8.88222, 44.98139]
 wikidata_id: Q17338
 metadata:

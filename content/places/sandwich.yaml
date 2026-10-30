@@ -1,6 +1,7 @@
 public_id: 102977
 name: Sandwich
 kind: settlement
+parent: kent
 location: [1.33889, 51.27472]
 wikidata_id: Q26163
 metadata:

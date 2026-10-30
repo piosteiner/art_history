@@ -1,6 +1,17 @@
 public_id: 103241
 name: Calais
+names:
+  - lang: fr
+    role: former
+    text: Dampierre-les-Dunes
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q6454
 kind: settlement
+designation: commune of France
+parent: pas-de-calais
 location: [1.85556, 50.9475]
 wikidata_id: Q6454
 metadata:

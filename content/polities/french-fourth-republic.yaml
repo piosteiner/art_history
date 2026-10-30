@@ -1,0 +1,43 @@
+public_id: 104825
+name: French Fourth Republic
+names:
+  - lang: nl
+    role: translation
+    text: Vierde Franse Republiek
+  - lang: fr
+    role: translation
+    text: Quatrième République
+  - lang: de
+    role: translation
+    text: Vierte Französische Republik
+  - lang: it
+    role: translation
+    text: Quarta Repubblica francese
+  - lang: es
+    role: translation
+    text: Cuarta República francesa
+  - lang: ja
+    role: translation
+    text: フランス第四共和政
+  - lang: zh
+    role: translation
+    text: 法蘭西第四共和國
+  - lang: ko
+    role: translation
+    text: 프랑스 제4공화국
+  - lang: ru
+    role: translation
+    text: Четвёртая французская республика
+period: 1946/1958-10-04
+wikidata_id: Q69829
+metadata:
+  sources: [Wikidata Q69829 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/french-fifth-republic
+    period: 1958-10-04
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q69829

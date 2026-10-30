@@ -1,0 +1,43 @@
+public_id: 104932
+name: Duchy of Lucca
+names:
+  - lang: nl
+    role: translation
+    text: Hertogdom Lucca
+  - lang: fr
+    role: translation
+    text: duché de Lucques
+  - lang: de
+    role: translation
+    text: Herzogtum Lucca
+  - lang: it
+    role: translation
+    text: Ducato di Lucca
+  - lang: es
+    role: translation
+    text: Ducado de Lucca
+  - lang: ja
+    role: translation
+    text: ルッカ公国
+  - lang: zh
+    role: translation
+    text: 盧卡公國
+  - lang: ko
+    role: translation
+    text: 루카 공국
+  - lang: ru
+    role: translation
+    text: Герцогство Лукка
+period: 1815/1847-10-05
+wikidata_id: Q158290
+metadata:
+  sources: [Wikidata Q158290 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/grand-duchy-of-tuscany
+    period: 1847-10-11
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q158290

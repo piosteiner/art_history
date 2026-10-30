@@ -1,14 +1,31 @@
 public_id: 103158
 name: Athens
+names:
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: City of the Violet Crown
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: The Classic City
 kind: settlement
+parent: athens-municipality
+country_code: GR
 location: [23.72806, 37.98417]
 wikidata_id: Q1524
 metadata:
   sources: [Wikidata Q1524 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4003366-1
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q1524
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q1524
   location:
     - accessed: 2026-10-28

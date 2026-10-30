@@ -8,6 +8,7 @@ names:
     role: translation
     text: Фрепийон
 kind: settlement
+designation: commune of France
 parent: seine-et-oise
 country_code: FR
 location: [2.205, 49.05167]

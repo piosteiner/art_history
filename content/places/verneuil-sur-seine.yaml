@@ -8,7 +8,8 @@ names:
     role: translation
     text: 塞纳河畔韦尔讷伊
 kind: settlement
-parent: france
+designation: commune of France
+parent: yvelines
 country_code: FR
 location: [1.97389, 48.97972]
 wikidata_id: Q642326

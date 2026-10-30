@@ -1,6 +1,8 @@
 public_id: 100827
 name: New Orleans
 kind: settlement
+designation: consolidated city-county
+parent: louisiana
 location: [-90.07833, 29.97611]
 wikidata_id: Q34404
 metadata:

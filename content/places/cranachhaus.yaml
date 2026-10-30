@@ -1,6 +1,8 @@
 public_id: 102943
 name: Cranachhaus
 kind: building
+designation: building
+parent: thuringen
 location: [11.33034, 50.97937]
 wikidata_id: Q1138816
 metadata:

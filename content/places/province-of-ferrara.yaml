@@ -1,10 +1,63 @@
 public_id: 102067
 name: Province of Ferrara
-kind: site
+names: [Ferrara]
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-FE
 location: [11.63278, 44.845]
 wikidata_id: Q16168
 metadata:
   sources: [Wikidata Q16168 (retrieved 2026-10-20)]
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-ferrara
+    period: 1264/1598-01-27
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q693570
+  - type: in_polity
+    to: polity/papal-states
+    period: 1598-01-28/1797-06-28
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/cisalpine-republic
+    period: 1797-06-29/1802-01-24
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q213353
+  - type: in_polity
+    to: polity/italian-republic-napoleonic
+    period: 1802-01-26/1805-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q723118
+  - type: in_polity
+    to: polity/kingdom-of-italy-napoleonic
+    period: 1805-03-17/1814-04-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q223936
+  - type: in_polity
+    to: polity/papal-states
+    period: 1815-06-09/1859-06-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/united-provinces-of-central-italy
+    period: 1859-12-08/1860-03-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2268597
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-03-18/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303
 sources:
   kind:
     - accessed: 2026-10-20

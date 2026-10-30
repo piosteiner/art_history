@@ -1,14 +1,36 @@
 public_id: 102424
 name: Bad Harzburg
-kind: site
+kind: settlement
+designation: urban municipality in Germany
+parent: goslar-district
+country_code: DE
 location: [10.56167, 51.88278]
 wikidata_id: Q522459
 metadata:
   sources: [Wikidata Q522459 (retrieved 2026-10-27)]
+relationships:
+  - type: in_polity
+    to: polity/kingdom-of-westphalia
+    period: 1807-08-18/1813-10-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153943
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1807-12-07/1813-10-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+identifiers:
+  gnd: 4023569-5
 sources:
   kind:
     - accessed: 2026-10-27
       property: P31
+      wikidata: Q522459
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q522459
   location:
     - accessed: 2026-10-27

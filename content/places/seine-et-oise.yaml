@@ -1,6 +1,9 @@
 public_id: 101724
 name: Seine-et-Oise
 kind: region
+designation: department of France
+existed: 1790-03-04/1968-01-01
+parent: france
 location: [2.13333, 48.8]
 wikidata_id: Q979470
 metadata:

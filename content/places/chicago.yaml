@@ -1,7 +1,8 @@
 public_id: 102261
 name: Chicago
 kind: settlement
-parent: united-states
+designation: city of Illinois
+parent: illinois
 location: [-87.62778, 41.88194]
 wikidata_id: Q1297
 metadata:

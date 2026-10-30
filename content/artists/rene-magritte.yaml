@@ -6,6 +6,11 @@ names:
   - lang: fr
     role: original
     text: René François Ghislain Magritte
+  - text: Emair
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q7836
 birth: 1898-11-21
 death: 1967-08-15
 wikidata_id: Q7836

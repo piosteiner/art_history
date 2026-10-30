@@ -1,5 +1,19 @@
 public_id: 101140
 name: Josefa de Tudó, 1st Countess of Castillo Fiel
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Josefa Petra Francisca de Paula de Tudó y Catalán
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q195217
+  - text: Pepita Tudó
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q195217
 kind: person
 birth: 1779-05-19
 death: 1869-09-20

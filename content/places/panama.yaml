@@ -1,0 +1,18 @@
+public_id: 103369
+name: Panama
+kind: country
+country_code: PA
+boundary_code: PA
+location: [-80.36667, 8.61667]
+wikidata_id: Q804
+metadata:
+  sources: [Wikidata Q804 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q804
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q804

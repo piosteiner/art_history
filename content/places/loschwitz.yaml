@@ -1,6 +1,8 @@
 public_id: 100994
 name: Loschwitz
-kind: site
+kind: district
+designation: former municipality
+parent: sachsen
 location: [13.82167, 51.06361]
 wikidata_id: Q8939
 metadata:

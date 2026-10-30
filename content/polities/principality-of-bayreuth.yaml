@@ -1,0 +1,40 @@
+public_id: 104913
+name: Principality of Bayreuth
+names:
+  - lang: nl
+    role: translation
+    text: Bayreuth
+  - lang: fr
+    role: translation
+    text: Principauté de Bayreuth
+  - lang: de
+    role: translation
+    text: Fürstentum Bayreuth
+  - lang: it
+    role: translation
+    text: Principato di Bayreuth
+  - lang: es
+    role: translation
+    text: Principado de Bayreuth
+  - lang: ja
+    role: translation
+    text: バイロイト侯領
+  - lang: zh
+    role: translation
+    text: 拜罗伊特侯爵
+  - lang: ru
+    role: translation
+    text: Байрейт
+period: 1486–30 June 1810
+wikidata_id: Q34762
+metadata:
+  sources: [Wikidata Q34762 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-prussia
+    period: 1792-01-28
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q34762

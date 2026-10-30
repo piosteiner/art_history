@@ -1,6 +1,8 @@
 public_id: 103346
 name: Santa Clara County
-kind: site
+kind: region
+designation: charter county of California
+parent: california
 location: [-121.97, 37.36]
 wikidata_id: Q110739
 metadata:

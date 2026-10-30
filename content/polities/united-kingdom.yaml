@@ -1,0 +1,52 @@
+public_id: 104866
+name: United Kingdom
+names:
+  - United Kingdom of Great Britain and Northern Ireland
+  - U K
+  - G B
+  - Great Britain
+  - Great Britain and Northern Ireland
+  - the United Kingdom of Great Britain and Northern Ireland
+  - the UK
+  - the United Kingdom
+  - lang: nl
+    role: translation
+    text: Verenigd Koninkrijk
+  - lang: fr
+    role: translation
+    text: Royaume-Uni
+  - lang: de
+    role: translation
+    text: Vereinigtes Königreich
+  - lang: it
+    role: translation
+    text: Regno Unito
+  - lang: es
+    role: translation
+    text: Reino Unido
+  - lang: ja
+    role: translation
+    text: イギリス
+  - lang: zh
+    role: translation
+    text: 英国
+  - lang: ko
+    role: translation
+    text: 영국
+  - lang: ru
+    role: translation
+    text: Великобритания
+period: 1921-12-06/
+country_codes: [GB]
+wikidata_id: Q145
+metadata:
+  sources: [Wikidata Q145 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q145
+  country_codes:
+    - accessed: 2026-10-29
+      property: P297
+      wikidata: Q145

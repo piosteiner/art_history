@@ -1,0 +1,38 @@
+public_id: 104921
+name: Free Imperial City of Nuremberg
+names:
+  - Imperial City of Nuremberg
+  - lang: nl
+    role: translation
+    text: Rijksstad Neurenberg
+  - lang: fr
+    role: translation
+    text: cité libre impériale de Nuremberg
+  - lang: de
+    role: translation
+    text: Reichsstadt Nürnberg
+  - lang: it
+    role: translation
+    text: Città libera imperiale di Norimberga
+  - lang: es
+    role: translation
+    text: ciudad imperial libre de Núremberg
+  - lang: ja
+    role: translation
+    text: 帝国自由都市ライヒシュタット
+  - lang: ru
+    role: translation
+    text: Свободный имперский город Нюрнберг
+period: 1201/1806
+wikidata_id: Q117020
+metadata:
+  sources: [Wikidata Q117020 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-bavaria
+    period: 1806-09-15
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q117020

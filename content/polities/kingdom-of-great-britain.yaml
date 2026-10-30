@@ -4,6 +4,10 @@ period: 1707-05-12/1801-01-01
 wikidata_id: Q161885
 metadata:
   sources: [Wikidata Q161885 (retrieved 2026-10-28)]
+relationships:
+  - type: succeeded_by
+    to: polity/united-kingdom-of-great-britain-and-ireland
+    period: 1801-01-01
 sources:
   period:
     - accessed: 2026-10-28

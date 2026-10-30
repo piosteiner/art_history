@@ -14,7 +14,8 @@ names:
     role: translation
     text: Lucerna
 kind: settlement
-parent: switzerland
+designation: municipality of Switzerland
+parent: canton-of-lucerne
 country_code: CH
 location: [8.3059, 47.0523]
 wikidata_id: Q4191

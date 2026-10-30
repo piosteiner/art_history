@@ -32,7 +32,8 @@ names:
     role: translation
     text: Veneza
 kind: settlement
-parent: venezia
+designation: comune of Italy
+parent: metropolitan-city-of-venice
 country_code: IT
 location: [12.33194, 45.43972]
 wikidata_id: Q641

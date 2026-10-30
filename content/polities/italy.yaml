@@ -1,0 +1,43 @@
+public_id: 104849
+name: Italy
+names:
+  - Italian Republic
+  - Republic of Italy
+  - lang: nl
+    role: translation
+    text: Italië
+  - lang: fr
+    role: translation
+    text: Italie
+  - lang: de
+    role: translation
+    text: Italien
+  - lang: it
+    role: translation
+    text: Italia
+  - lang: ja
+    role: translation
+    text: イタリア
+  - lang: zh
+    role: translation
+    text: 意大利
+  - lang: ko
+    role: translation
+    text: 이탈리아
+  - lang: ru
+    role: translation
+    text: Италия
+period: 1946-06-18/
+country_codes: [IT]
+wikidata_id: Q38
+metadata:
+  sources: [Wikidata Q38 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q38
+  country_codes:
+    - accessed: 2026-10-29
+      property: P297
+      wikidata: Q38

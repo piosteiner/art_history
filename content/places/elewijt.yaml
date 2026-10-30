@@ -1,6 +1,8 @@
 public_id: 103239
 name: Elewijt
 kind: settlement
+designation: village
+parent: flemish-brabant
 location: [4.4969, 50.9603]
 wikidata_id: Q1990353
 metadata:

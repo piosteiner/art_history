@@ -1,10 +1,43 @@
 public_id: 101278
 name: Mainz
 kind: settlement
+designation: urban municipality in Germany
+parent: rheinland-pfalz
 location: [8.27361, 49.99944]
 wikidata_id: Q1720
 metadata:
   sources: [Wikidata Q1720 (retrieved 2026-10-19)]
+relationships:
+  - type: in_polity
+    to: polity/french-first-republic
+    period: 1797-12-30/1804-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q58296
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1804-05-18/1814-05-03
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/middle-rhine-general-governorate
+    period: 1814-05-04/1814-06-15
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1501803
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1816-06-30/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/grand-duchy-of-hesse
+    period: 1816-06-30/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q20135
 sources:
   kind:
     - accessed: 2026-10-19

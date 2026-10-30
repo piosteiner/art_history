@@ -1,6 +1,8 @@
 public_id: 102294
 name: Limoges
 kind: settlement
+designation: commune of France
+parent: haute-vienne
 location: [1.26167, 45.83444]
 wikidata_id: Q45656
 metadata:

@@ -19,6 +19,7 @@ names:
     role: translation
     text: Падуя
 kind: settlement
+designation: comune of Italy
 parent: province-of-padua
 country_code: IT
 location: [11.87333, 45.40778]

@@ -14,7 +14,8 @@ names:
     role: translation
     text: Мадрид
 kind: settlement
-parent: spain
+designation: municipality of Spain
+parent: madrid-province
 country_code: ES
 location: [-3.70333, 40.41694]
 wikidata_id: Q2807

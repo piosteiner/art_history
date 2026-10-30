@@ -1,0 +1,26 @@
+public_id: 104673
+name: Canton of the Grisons
+kind: region
+designation: canton of Switzerland
+parent: switzerland
+boundary_code: CH-GR
+wikidata_id: Q11925
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 962/1367-01-28
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/three-leagues
+    period: 1367-01-29/1799-04-20
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q672685
+  - type: in_polity
+    to: polity/helvetic-republic
+    period: 1799-04-21/1803-02-18
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q206696

@@ -1,6 +1,8 @@
 public_id: 103034
 name: Sansepolcro
 kind: settlement
+designation: comune of Italy
+parent: province-of-arezzo
 location: [12.14389, 43.57556]
 wikidata_id: Q52098
 metadata:

@@ -1,0 +1,19 @@
+public_id: 103366
+name: Martinique
+kind: region
+designation: overseas department and region of France
+parent: france
+boundary_code: FR-MQ
+location: [-61.015, 14.65]
+wikidata_id: Q17054
+metadata:
+  sources: [Wikidata Q17054 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q17054
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q17054

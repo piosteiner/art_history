@@ -1,6 +1,8 @@
 public_id: 100975
 name: Gamleby
-kind: site
+kind: settlement
+designation: urban area in Sweden
+parent: kalmar
 location: [16.40293, 57.89533]
 wikidata_id: Q2670538
 metadata:

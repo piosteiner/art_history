@@ -1,6 +1,7 @@
 public_id: 100163
 name: Boston
 kind: settlement
+designation: county seat
 parent: suffolk-county
 country_code: US
 location: [-71.05778, 42.36028]

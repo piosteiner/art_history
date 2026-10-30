@@ -1,6 +1,8 @@
 public_id: 103050
 name: Red Cloister
-kind: site
+kind: building
+designation: secularized convent
+parent: brussels-capital-region
 location: [4.44361, 50.81333]
 wikidata_id: Q2588334
 metadata:

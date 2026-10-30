@@ -1,14 +1,23 @@
 public_id: 102946
 name: Ascoli Piceno
 kind: settlement
+designation: comune of Italy
+parent: province-of-ascoli-piceno
+country_code: IT
 location: [13.57528, 42.85472]
 wikidata_id: Q6624
 metadata:
   sources: [Wikidata Q6624 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4086023-1
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q6624
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q6624
   location:
     - accessed: 2026-10-28

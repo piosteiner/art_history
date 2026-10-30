@@ -1,6 +1,8 @@
 public_id: 103166
 name: Saint-Rémy-lès-Chevreuse
 kind: settlement
+designation: commune of France
+parent: yvelines
 location: [2.07194, 48.70583]
 wikidata_id: Q794124
 metadata:

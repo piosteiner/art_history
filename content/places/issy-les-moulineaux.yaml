@@ -1,6 +1,25 @@
 public_id: 103203
 name: Issy-les-Moulineaux
+names:
+  - lang: fr
+    role: former
+    text: Issy
+    period: until 28 July 1893
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q135265
+  - lang: fr
+    role: former
+    text: L'Union
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q135265
 kind: settlement
+designation: commune of France
+parent: hauts-de-seine
 location: [2.26917, 48.82306]
 wikidata_id: Q135265
 metadata:

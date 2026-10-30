@@ -1,0 +1,46 @@
+public_id: 104816
+name: French First Republic
+names:
+  - First Republic
+  - First French Republic
+  - French Republic
+  - lang: nl
+    role: translation
+    text: Eerste Franse Republiek
+  - lang: fr
+    role: translation
+    text: Première République française
+  - lang: de
+    role: translation
+    text: Erste Französische Republik
+  - lang: it
+    role: translation
+    text: Prima Repubblica francese
+  - lang: es
+    role: translation
+    text: Primera República Francesa
+  - lang: ja
+    role: translation
+    text: フランス第一共和政
+  - lang: zh
+    role: translation
+    text: 法兰西第一共和国
+  - lang: ko
+    role: translation
+    text: 프랑스 제1공화국
+  - lang: ru
+    role: translation
+    text: Первая Французская республика
+period: 1792-09-21/1804-05-18
+wikidata_id: Q58296
+metadata:
+  sources: [Wikidata Q58296 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/first-french-empire
+    period: 1804-05-18
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q58296

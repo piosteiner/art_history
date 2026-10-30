@@ -1,6 +1,8 @@
 public_id: 102797
 name: Wakayama
 kind: settlement
+designation: core city of Japan
+parent: wakayama-prefecture
 location: [135.17075, 34.23036]
 wikidata_id: Q200747
 metadata:

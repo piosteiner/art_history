@@ -1,0 +1,19 @@
+public_id: 104786
+name: Free Municipal Consortium of Syracuse
+kind: region
+parent: italy
+boundary_code: IT-SR
+wikidata_id: Q25510290
+relationships:
+  - type: in_polity
+    to: polity/kingdom-of-sicily
+    period: 1130/1816-12-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q188586
+  - type: in_polity
+    to: polity/kingdom-of-the-two-sicilies
+    period: 1816-12-12/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q180393

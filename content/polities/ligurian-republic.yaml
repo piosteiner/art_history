@@ -1,0 +1,41 @@
+public_id: 104930
+name: Ligurian Republic
+names:
+  - Repubblica Ligure
+  - lang: nl
+    role: translation
+    text: Ligurische Republiek
+  - lang: fr
+    role: translation
+    text: République ligurienne
+  - lang: de
+    role: translation
+    text: Ligurische Republik
+  - lang: es
+    role: translation
+    text: República Ligur
+  - lang: ja
+    role: translation
+    text: リーグレ共和国
+  - lang: zh
+    role: translation
+    text: 利古里亞共和國
+  - lang: ko
+    role: translation
+    text: 리구레 공화국
+  - lang: ru
+    role: translation
+    text: Лигурийская республика
+period: 1797-06-14/1805-06-04
+wikidata_id: Q659312
+metadata:
+  sources: [Wikidata Q659312 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/first-french-empire
+    period: 1805-06-04
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q659312

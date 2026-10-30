@@ -1,6 +1,8 @@
 public_id: 101908
 name: Arrondissement of Bruges
-kind: site
+kind: region
+designation: arrondissements of Belgium
+parent: west-flanders
 location: [3.2, 51.2]
 wikidata_id: Q91045
 metadata:

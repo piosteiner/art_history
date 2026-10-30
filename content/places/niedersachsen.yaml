@@ -1,0 +1,38 @@
+public_id: 104610
+name: Lower Saxony
+kind: region
+designation: federated state of Germany
+parent: germany
+boundary_code: DE-NI
+wikidata_id: Q1197
+relationships:
+  - type: in_polity
+    to: polity/electorate-of-hanover
+    period: 1813-11-04/1814-10-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q706018
+  - type: in_polity
+    to: polity/kingdom-of-hanover
+    period: 1814-10-12/1866-09-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q164079
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/kingdom-of-prussia
+    period: 1866-09-20/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q27306
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981

@@ -1,0 +1,20 @@
+public_id: 104942
+name: Provisional Government of Belgium (1814-1815)
+names:
+  - lang: nl
+    role: translation
+    text: Voorlopige regering van België
+  - lang: fr
+    role: translation
+    text: Gouvernement provisoire de Belgique (1814–1815)
+  - lang: es
+    role: translation
+    text: Gobierno provisional de Belgica (1814-1815)
+period: 1814/1815-03-16
+wikidata_id: Q2536329
+metadata:
+  sources: [Wikidata Q2536329 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/united-kingdom-of-the-netherlands
+    period: 1815-03-16

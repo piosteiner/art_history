@@ -1,6 +1,16 @@
 public_id: 103143
 name: Donatello
-names: [Donatello Donato, Donato di Niccolo di Betto Bardi]
+names:
+  - Donatello Donato
+  - Donato di Niccolo di Betto Bardi
+  - kind: birth
+    lang: it
+    role: former
+    text: Donato di Niccolò di Betto Bardi
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q37562
 birth: c. 1386
 death: 1466-12-22
 wikidata_id: Q37562

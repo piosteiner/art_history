@@ -1,6 +1,8 @@
 public_id: 103267
 name: boulevard de Magenta
-kind: site
+kind: street
+designation: boulevard
+parent: paris
 location: [2.35722, 48.87472]
 wikidata_id: Q895077
 metadata:

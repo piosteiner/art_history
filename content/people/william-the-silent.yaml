@@ -1,5 +1,7 @@
 public_id: 101208
 name: William the Silent
+given_name: William the
+family_name: Silent
 names:
   - lang: nl
     role: original
@@ -39,6 +41,16 @@ names:
   - lang: ru
     role: translation
     text: Вильгельм I Молчаливый
+  - text: el Taciturno
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q78454
+  - text: le Taciturne
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q78454
 kind: person
 occupations: [politician, military leader]
 birth: 1533-05-04

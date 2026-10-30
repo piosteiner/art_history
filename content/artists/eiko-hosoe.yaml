@@ -2,7 +2,16 @@ public_id: 100054
 name: Eikō Hosoe
 given_name: Eikō
 family_name: Hosoe
-names: [細江英公]
+names:
+  - 細江英公
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 細江 敏廣
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q2564831
 birth: 1933-03-18
 death: 2024-09-16
 wikidata_id: Q2564831

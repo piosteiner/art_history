@@ -1,10 +1,61 @@
 public_id: 102944
 name: Lutherstadt Wittenberg
-kind: site
+kind: settlement
+designation: urban municipality in Germany
+parent: sachsen-anhalt
 location: [12.6484, 51.8671]
 wikidata_id: Q6837
 metadata:
   sources: [Wikidata Q6837 (retrieved 2026-10-28)]
+relationships:
+  - type: in_polity
+    to: polity/electorate-of-saxony
+    period: 1356/1806-12-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q156199
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 1356/1806-08-05
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1806-12-11/1813-10-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/kingdom-of-saxony
+    period: 1806-12-20/1815-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153015
+  - type: in_polity
+    to: polity/saxony-general-governorate
+    period: 1814-01-13/1815-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1501808
+  - type: in_polity
+    to: polity/kingdom-of-prussia
+    period: 1815-05-18/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q27306
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981
 sources:
   kind:
     - accessed: 2026-10-28

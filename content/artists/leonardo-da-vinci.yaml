@@ -2,6 +2,15 @@ public_id: 101683
 name: Leonardo da Vinci
 given_name: Leonardo
 family_name: da Vinci
+names:
+  - kind: birth
+    lang: it
+    role: alternative
+    text: Leonardo di ser Piero da Vinci
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q762
 birth: 1452-04-24
 death: 1519-05-12
 wikidata_id: Q762

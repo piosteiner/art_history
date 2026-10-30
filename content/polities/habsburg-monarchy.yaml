@@ -1,0 +1,41 @@
+public_id: 104839
+name: Habsburg monarchy
+names:
+  - Habsburg Empire
+  - Monarchia Austriaca
+  - lang: nl
+    role: translation
+    text: Habsburgse monarchie
+  - lang: fr
+    role: translation
+    text: Monarchie de Habsbourg
+  - lang: de
+    role: translation
+    text: Habsburgermonarchie
+  - lang: it
+    role: translation
+    text: Monarchia asburgica
+  - lang: es
+    role: translation
+    text: Monarquía Habsburgo
+  - lang: ja
+    role: translation
+    text: ハプスブルク君主国
+  - lang: zh
+    role: translation
+    text: 哈布斯堡君主國
+  - lang: ko
+    role: translation
+    text: 합스부르크 제국
+  - lang: ru
+    role: translation
+    text: Габсбургская монархия
+period: 1526-09-08/1918-11-12
+wikidata_id: Q153136
+metadata:
+  sources: [Wikidata Q153136 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q153136

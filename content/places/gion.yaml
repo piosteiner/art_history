@@ -1,6 +1,8 @@
 public_id: 102694
 name: Gion
-kind: site
+kind: district
+designation: neighborhood
+parent: kyoto
 location: [135.77505, 35.00349]
 wikidata_id: Q926312
 metadata:

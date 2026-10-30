@@ -1,5 +1,14 @@
 public_id: 101314
 name: Caravaggio
+names:
+  - kind: birth
+    lang: it
+    role: former
+    text: Michelangelo Merisi
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q42207
 birth: 1571-10-09
 death: 1610-07-18
 wikidata_id: Q42207

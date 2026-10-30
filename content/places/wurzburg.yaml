@@ -1,10 +1,55 @@
 public_id: 100402
 name: Würzburg
 kind: settlement
+designation: urban district of Bavaria
+parent: bayern
 location: [9.92944, 49.79444]
 wikidata_id: Q2999
 metadata:
   sources: [Wikidata Q2999 (retrieved 2026-10-15)]
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 1168/1806-08-05
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/prince-bishopric-of-wurzburg
+    period: 1168/1803-02-24
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q13427044
+  - type: in_polity
+    to: polity/kingdom-of-bavaria
+    period: 25 February 1803–31 January 1806
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154195
+  - type: in_polity
+    to: polity/grand-duchy-of-wurzburg
+    period: 1 February 1806–25 June 1814
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q698089
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1806-09-25/1813-11-04
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/kingdom-of-bavaria
+    period: 1814-06-26/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154195
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
 sources:
   kind:
     - accessed: 2026-10-15

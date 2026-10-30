@@ -10,6 +10,8 @@ names:
     role: original
     text: Genova
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-genoa
 location: [8.93389, 44.40722]
 wikidata_id: Q1449
 metadata:

@@ -4,6 +4,10 @@ period: 1868-01-03/1947-05-03
 wikidata_id: Q188712
 metadata:
   sources: [Wikidata Q188712 (retrieved 2026-10-28)]
+relationships:
+  - type: succeeded_by
+    to: polity/japan
+    period: 1947-05-03
 sources:
   period:
     - accessed: 2026-10-28

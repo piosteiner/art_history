@@ -1,0 +1,45 @@
+public_id: 104832
+name: Belgium
+names:
+  - Kingdom of Belgium
+  - lang: nl
+    role: translation
+    text: België
+  - lang: fr
+    role: translation
+    text: Belgique
+  - lang: de
+    role: translation
+    text: Belgien
+  - lang: it
+    role: translation
+    text: Belgio
+  - lang: es
+    role: translation
+    text: Bélgica
+  - lang: ja
+    role: translation
+    text: ベルギー
+  - lang: zh
+    role: translation
+    text: 比利時
+  - lang: ko
+    role: translation
+    text: 벨기에
+  - lang: ru
+    role: translation
+    text: Бельгия
+period: 1830-10-04/
+country_codes: [BE]
+wikidata_id: Q31
+metadata:
+  sources: [Wikidata Q31 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q31
+  country_codes:
+    - accessed: 2026-10-29
+      property: P297
+      wikidata: Q31

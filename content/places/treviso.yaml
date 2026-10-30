@@ -1,6 +1,8 @@
 public_id: 103131
 name: Treviso
 kind: settlement
+designation: comune of Italy
+parent: province-of-treviso
 location: [12.24556, 45.66583]
 wikidata_id: Q5475
 metadata:

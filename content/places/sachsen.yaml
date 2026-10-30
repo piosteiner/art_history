@@ -1,0 +1,56 @@
+public_id: 104680
+name: Saxony
+kind: region
+designation: federated state of Germany
+parent: germany
+boundary_code: DE-SN
+wikidata_id: Q1202
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 962/1806-08-05
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/electorate-of-saxony
+    period: 1356/1806-12-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q156199
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1806-12-11/1813-10-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/kingdom-of-saxony
+    period: 1806-12-20/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153015
+  - type: in_polity
+    to: polity/saxony-general-governorate
+    period: 1813-10-21/1815-06-07
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1501808
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981
+  - type: in_polity
+    to: polity/east-germany
+    period: 1949-10-07/1990-10-02
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q16957

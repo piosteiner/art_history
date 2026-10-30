@@ -1,5 +1,14 @@
 public_id: 101139
 name: María Teresa de Silva, 13th Duchess of Alba
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: María del Pilar Teresa Cayetana de Silva-Álvarez de Toledo y Silva-Bazán
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q260128
 kind: person
 birth: 1762-06-10
 death: 1802-07-23

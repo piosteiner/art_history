@@ -1,6 +1,8 @@
 public_id: 103160
 name: Lucca
 kind: settlement
+designation: comune of Italy
+parent: province-of-lucca
 location: [10.51667, 43.85]
 wikidata_id: Q13373
 metadata:

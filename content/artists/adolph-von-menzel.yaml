@@ -2,7 +2,17 @@ public_id: 102420
 name: Adolph von Menzel
 given_name: Adolph
 family_name: von Menzel
-names: [Adolf Friedrich Erdmann Menzel, Adolf Menzel]
+names:
+  - Adolf Friedrich Erdmann Menzel
+  - Adolf Menzel
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Adolph Friedrich Erdmann von Menzel
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q164961
 birth: 1815-12-08
 death: 1905-02-09
 wikidata_id: Q164961

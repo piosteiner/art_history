@@ -1,0 +1,37 @@
+public_id: 104860
+name: Ashikaga shogunate
+names:
+  - Ashikaga bakufu
+  - Muromachi shogunate
+  - Muromachi bakufu
+  - lang: nl
+    role: translation
+    text: Ashikaga-shogunaat
+  - lang: fr
+    role: translation
+    text: shogunat Ashikaga
+  - lang: it
+    role: translation
+    text: Shogunato Ashikaga
+  - lang: ja
+    role: translation
+    text: 室町幕府
+  - lang: ko
+    role: translation
+    text: 무로마치 막부
+  - lang: ru
+    role: translation
+    text: Сёгунат Муромати
+period: 1336-06-15/1573-09-04
+wikidata_id: Q1154406
+metadata:
+  sources: [Wikidata Q1154406 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/azuchi-momoyama-period
+    period: 1573-09-04
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1154406

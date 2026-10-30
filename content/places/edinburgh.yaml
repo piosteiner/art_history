@@ -1,6 +1,8 @@
 public_id: 103285
 name: Edinburgh
 kind: settlement
+designation: Scottish county of city
+parent: city-of-edinburgh
 location: [-3.18917, 55.95333]
 wikidata_id: Q23436
 metadata:

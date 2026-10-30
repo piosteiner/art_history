@@ -1,0 +1,14 @@
+public_id: 104601
+name: Vaucluse
+kind: region
+designation: department of France
+parent: france
+boundary_code: FR-84
+wikidata_id: Q12792
+relationships:
+  - type: in_polity
+    to: polity/papal-states
+    period: 1348/1791-09-13
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174

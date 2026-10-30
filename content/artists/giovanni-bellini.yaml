@@ -2,6 +2,12 @@ public_id: 102105
 name: Giovanni Bellini
 given_name: Giovanni
 family_name: Bellini
+names:
+  - text: Giambellino
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q17169
 birth: c. 1430
 death: 1516-12-09
 wikidata_id: Q17169

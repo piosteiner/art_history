@@ -29,7 +29,8 @@ names:
     role: translation
     text: Genebra
 kind: settlement
-parent: switzerland
+designation: municipality of Switzerland
+parent: geneve
 country_code: CH
 location: [6.15, 46.2]
 wikidata_id: Q71

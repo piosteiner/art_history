@@ -1,0 +1,38 @@
+public_id: 104903
+name: Grand Duchy of Hesse
+names:
+  - Hesse-Darmstadt
+  - Großherzogtum Hessen
+  - Hesse
+  - Grand Duchy of Hesse and by Rhine
+  - Hesse and by Rhine
+  - lang: nl
+    role: translation
+    text: Groothertogdom Hessen
+  - lang: fr
+    role: translation
+    text: grand-duché de Hesse
+  - lang: it
+    role: translation
+    text: Granducato d'Assia
+  - lang: ja
+    role: translation
+    text: ヘッセン大公国
+  - lang: zh
+    role: translation
+    text: 黑森-达姆施塔特
+  - lang: ko
+    role: translation
+    text: 헤센 대공국
+  - lang: ru
+    role: translation
+    text: Великое герцогство Гессен
+period: 1806/1918
+wikidata_id: Q20135
+metadata:
+  sources: [Wikidata Q20135 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q20135

@@ -1,6 +1,8 @@
 public_id: 101391
 name: Frederik Muller & Cie
+names: [Frederik Muller & Co.]
 kind: auction house
+founded: 1876
 place: amsterdam
 location: [4.89517, 52.36791]
 address: Nieuwe Doelenstraat 16-18
@@ -19,10 +21,20 @@ identifiers:
   ulan: "500439888"
   viaf: "122861848"
 sources:
+  place:
+    - url: https://en.wikipedia.org/wiki/Frederik_Muller
+      note: "1876: with F. Adama van Scheltema to the Nieuwe Doelenstraat 16–18, where they opened the auction house (Muller's bookshop dates from 1843)"
+      source: en-wikipedia-org
+      accessed: 2026-10-28
   address:
     - accessed: 2026-10-28
       property: P6375
       wikidata: Q18821838
+  founded:
+    - url: https://en.wikipedia.org/wiki/Frederik_Muller
+      note: "1876: with F. Adama van Scheltema to the Nieuwe Doelenstraat 16–18, where they opened the auction house (Muller's bookshop dates from 1843)"
+      source: en-wikipedia-org
+      accessed: 2026-10-28
   location:
     - accessed: 2026-10-28
       property: P625

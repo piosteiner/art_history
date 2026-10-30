@@ -2,7 +2,16 @@ public_id: 100191
 name: Félix Vallotton
 given_name: Félix
 family_name: Vallotton
-names: [Félix-Emile-Jean Vallotton]
+names:
+  - Félix-Emile-Jean Vallotton
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Félix Édouard Vallotton
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q123740
 birth: 1865-12-28
 death: 1925-12-29
 wikidata_id: Q123740
@@ -60,19 +69,19 @@ relationships:
         property: P937
         wikidata: Q123740
   - type: worked_in
-    to: place/kingdom-of-italy
-    sources:
-      - accessed: 2026-10-18
-        property: P937
-        wikidata: Q123740
-  - type: worked_in
-    to: place/kingdom-of-the-netherlands
+    to: place/italy
     sources:
       - accessed: 2026-10-18
         property: P937
         wikidata: Q123740
   - type: worked_in
     to: place/lausanne
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q123740
+  - type: worked_in
+    to: place/netherlands
     sources:
       - accessed: 2026-10-18
         property: P937

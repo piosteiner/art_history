@@ -1,10 +1,51 @@
 public_id: 102065
 name: Province of Macerata
-kind: site
+names: [Macerata]
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-MC
 location: [13.4533, 43.30025]
 wikidata_id: Q16203
 metadata:
   sources: [Wikidata Q16203 (retrieved 2026-10-20)]
+relationships:
+  - type: in_polity
+    to: polity/papal-states
+    period: 1540/1798-02-14
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/roman-republic-1798
+    period: 1798-02-15/1799-09-29
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q175881
+  - type: in_polity
+    to: polity/papal-states
+    period: 1799-09-30/1808-04-01
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/kingdom-of-italy-napoleonic
+    period: 1808-04-02/1814-04-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q223936
+  - type: in_polity
+    to: polity/papal-states
+    period: 1815-06-09/1860-11-03
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-11-04/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303
 sources:
   kind:
     - accessed: 2026-10-20

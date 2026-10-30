@@ -1,6 +1,8 @@
 public_id: 103170
 name: Seillans
 kind: settlement
+designation: commune of France
+parent: var
 location: [6.64333, 43.63611]
 wikidata_id: Q817602
 metadata:

@@ -1,6 +1,8 @@
 public_id: 103035
 name: Ferrara
 kind: settlement
+designation: comune of Italy
+parent: province-of-ferrara
 location: [11.6175, 44.83917]
 wikidata_id: Q13362
 metadata:

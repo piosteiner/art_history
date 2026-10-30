@@ -1,6 +1,8 @@
 public_id: 100885
 name: Toulouse
 kind: settlement
+designation: commune of France
+parent: haute-garonne
 location: [1.44333, 43.60444]
 wikidata_id: Q7880
 metadata:

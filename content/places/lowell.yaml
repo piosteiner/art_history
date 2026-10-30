@@ -1,6 +1,8 @@
 public_id: 103297
 name: Lowell
 kind: settlement
+designation: county seat
+parent: massachusetts
 location: [-71.31472, 42.63944]
 wikidata_id: Q49162
 metadata:

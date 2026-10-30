@@ -1,6 +1,8 @@
 public_id: 103219
 name: Royan
 kind: settlement
+designation: commune of France
+parent: france
 location: [-1.04306, 45.62306]
 wikidata_id: Q81909
 metadata:

@@ -1,10 +1,37 @@
 public_id: 103168
 name: Brühl
 kind: settlement
+designation: medium-sized district town
+parent: nordrhein-westfalen
 location: [6.9, 50.83333]
 wikidata_id: Q7036
 metadata:
   sources: [Wikidata Q7036 (retrieved 2026-10-28)]
+relationships:
+  - type: in_polity
+    to: polity/french-first-republic
+    period: 1794-10-06/1804-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q58296
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1804-05-18/1814-01-13
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/lower-rhine-general-governorate
+    period: 1814-02-02/1814-06-15
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1501805
+  - type: in_polity
+    to: polity/lower-and-middle-rhine-general-governorate
+    period: 1814-06-16/1815-06-08
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1422350
 sources:
   kind:
     - accessed: 2026-10-28

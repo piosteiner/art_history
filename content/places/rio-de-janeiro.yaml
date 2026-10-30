@@ -1,6 +1,8 @@
 public_id: 100900
 name: Rio de Janeiro
 kind: settlement
+designation: municipality of Brazil
+parent: state-of-rio-de-janeiro
 location: [-43.20556, -22.91111]
 wikidata_id: Q8678
 metadata:

@@ -1,0 +1,37 @@
+public_id: 104853
+name: Kingdom of Naples
+names:
+  - Regno di Napoli
+  - lang: nl
+    role: translation
+    text: Koninkrijk Napels
+  - lang: fr
+    role: translation
+    text: royaume de Naples
+  - lang: de
+    role: translation
+    text: Königreich Neapel
+  - lang: es
+    role: translation
+    text: Reino de Nápoles
+  - lang: ja
+    role: translation
+    text: ナポリ王国
+  - lang: zh
+    role: translation
+    text: 那不勒斯王国
+  - lang: ko
+    role: translation
+    text: 나폴리 왕국
+  - lang: ru
+    role: translation
+    text: Неаполитанское королевство
+period: 1282-04-06/1816-12-12
+wikidata_id: Q173065
+metadata:
+  sources: [Wikidata Q173065 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q173065

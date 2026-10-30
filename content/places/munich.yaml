@@ -26,7 +26,8 @@ names:
     role: translation
     text: Munique
 kind: settlement
-parent: germany
+designation: urban municipality in Germany
+parent: bayern
 country_code: DE
 location: [11.575, 48.1375]
 wikidata_id: Q1726

@@ -14,13 +14,13 @@ metadata:
   sources: [Wikidata Q3128092 (retrieved 2026-10-28)]
 relationships:
   - type: born_in
-    to: place/edo
+    to: place/tokyo
     sources:
       - accessed: 2026-10-28
         property: P19
         wikidata: Q3128092
   - type: died_in
-    to: place/tokyo-prefecture
+    to: place/tokyo
     sources:
       - accessed: 2026-10-28
         property: P20

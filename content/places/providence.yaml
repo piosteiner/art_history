@@ -1,6 +1,8 @@
 public_id: 101122
 name: Providence
 kind: settlement
+designation: county seat
+parent: rhode-island
 location: [-71.41283, 41.82399]
 wikidata_id: Q18383
 metadata:

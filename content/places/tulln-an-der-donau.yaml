@@ -1,6 +1,8 @@
 public_id: 103256
 name: Tulln an der Donau
-kind: site
+kind: settlement
+designation: municipality of Austria
+parent: niederosterreich
 location: [16.05, 48.33333]
 wikidata_id: Q489810
 metadata:

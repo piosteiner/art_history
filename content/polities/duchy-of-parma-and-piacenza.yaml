@@ -1,0 +1,41 @@
+public_id: 104855
+name: Duchy of Parma and Piacenza
+names:
+  - Duchy of Parma
+  - Ducato di Parma
+  - lang: nl
+    role: translation
+    text: Hertogdom Parma en Piacenza
+  - lang: fr
+    role: translation
+    text: duché de Parme et Plaisance
+  - lang: de
+    role: translation
+    text: Herzogtum Parma
+  - lang: it
+    role: translation
+    text: Ducato di Parma e Piacenza
+  - lang: es
+    role: translation
+    text: Ducado de Parma
+  - lang: ja
+    role: translation
+    text: パルマ・エ・ピアチェンツァ公国
+  - lang: zh
+    role: translation
+    text: 帕爾馬公國
+  - lang: ko
+    role: translation
+    text: 파르마 피아첸차 공국
+  - lang: ru
+    role: translation
+    text: Пармское герцогство
+period: 1545-09-26/1859-06-09
+wikidata_id: Q165040
+metadata:
+  sources: [Wikidata Q165040 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q165040

@@ -1,10 +1,45 @@
 public_id: 102070
 name: Metropolitan City of Turin
-kind: site
+names: [Turin]
+kind: region
+designation: metropolitan city of Italy
+parent: italy
+boundary_code: IT-TO
 location: [7.7, 45.0667]
 wikidata_id: Q18288162
 metadata:
   sources: [Wikidata Q18288162 (retrieved 2026-10-20)]
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-savoy
+    period: 1416/1720-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q426025
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1720-08-24/1802-09-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303
+  - type: in_polity
+    to: polity/french-first-republic
+    period: 1802-09-11/1804-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q58296
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1804-05-18/1814-05-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1814-05-20/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303
 sources:
   kind:
     - accessed: 2026-10-20

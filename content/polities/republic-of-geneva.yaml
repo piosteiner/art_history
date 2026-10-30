@@ -1,0 +1,43 @@
+public_id: 104898
+name: Republic of Geneva
+names:
+  - République de Genève
+  - Geneva
+  - Genève
+  - lang: nl
+    role: translation
+    text: Republiek van Genève
+  - lang: de
+    role: translation
+    text: Republik Genf
+  - lang: it
+    role: translation
+    text: Repubblica di Ginevra
+  - lang: es
+    role: translation
+    text: República de Ginebra
+  - lang: ja
+    role: translation
+    text: ジュネーヴ共和国
+  - lang: zh
+    role: translation
+    text: 日內瓦共和國
+  - lang: ko
+    role: translation
+    text: 제네바 공화국
+  - lang: ru
+    role: translation
+    text: Республика Женева
+period: 1534/1815-05-19
+wikidata_id: Q23366230
+metadata:
+  sources: [Wikidata Q23366230 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/french-first-republic
+    period: 1798-04-26
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q23366230

@@ -1,6 +1,8 @@
 public_id: 100403
 name: Bergamo
 kind: settlement
+designation: comune of Italy
+parent: province-of-bergamo
 location: [9.67, 45.695]
 wikidata_id: Q628
 metadata:

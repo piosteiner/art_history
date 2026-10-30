@@ -1,6 +1,8 @@
 public_id: 100030
 name: French Polynesia
 kind: region
+parent: france
 country_code: PF
 location: [-149.4068, -17.6797]
 description_md: French overseas collectivity in the South Pacific (Tahiti, Marquesas Islands …)[[source/wikipedia-en-french-polynesia|“an overseas collectivity of France” · “121 geographically dispersed islands and atolls stretching over more than 2,000 kilometres (1,200 mi) in the South Pacific Ocean”]].
+wikidata_id: Q30971

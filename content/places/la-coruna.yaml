@@ -1,5 +1,15 @@
 public_id: 100953
 name: La Coruña
 kind: region
+designation: province of Spain
+parent: spain
 country_code: ES
 boundary_code: ES-C
+wikidata_id: Q82119
+relationships:
+  - type: in_polity
+    to: polity/crown-of-castile
+    period: 1230/1515
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q217196

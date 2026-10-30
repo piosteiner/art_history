@@ -1,6 +1,8 @@
 public_id: 103258
 name: Český Krumlov
-kind: site
+kind: settlement
+designation: Czech municipality with expanded powers
+parent: jihocesky
 location: [14.31521, 48.81099]
 wikidata_id: Q188082
 metadata:

@@ -1,0 +1,50 @@
+public_id: 104812
+name: Province of Grosseto
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-GR
+wikidata_id: Q16185
+relationships:
+  - type: in_polity
+    to: polity/republic-of-siena
+    period: 1125/1555-04-20
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q736727
+  - type: in_polity
+    to: polity/duchy-of-florence
+    period: 1557-07-19/1569-08-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2252973
+  - type: in_polity
+    to: polity/grand-duchy-of-tuscany
+    period: 1569-08-27/1801-03-20
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154849
+  - type: in_polity
+    to: polity/kingdom-of-etruria
+    period: 1801-03-21/1807-12-09
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q223793
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 10 December 1807–30 April 1814
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/grand-duchy-of-tuscany
+    period: 1 May 1814–21 March 1860
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154849
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-03-22/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

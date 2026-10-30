@@ -1,0 +1,36 @@
+public_id: 104917
+name: Swedish Pomerania
+names:
+  - lang: nl
+    role: translation
+    text: Zweeds-Pommeren
+  - lang: fr
+    role: translation
+    text: Poméranie suédoise
+  - lang: de
+    role: translation
+    text: Schwedisch-Pommern
+  - lang: it
+    role: translation
+    text: Pomerania svedese
+  - lang: es
+    role: translation
+    text: Pomerania Sueca
+  - lang: ja
+    role: translation
+    text: スウェーデン領ポメラニア
+  - lang: zh
+    role: translation
+    text: 瑞屬波美拉尼亞
+  - lang: ru
+    role: translation
+    text: Шведская Померания
+period: 1648/1815
+wikidata_id: Q682318
+metadata:
+  sources: [Wikidata Q682318 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q682318

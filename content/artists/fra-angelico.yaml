@@ -2,6 +2,15 @@ public_id: 101185
 name: Fra Angelico
 given_name: Fra
 family_name: Angelico
+names:
+  - kind: birth
+    lang: it
+    role: former
+    text: Guido di Pietro
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5664
 birth: 1395/1400
 death: 1455-02-27
 wikidata_id: Q5664

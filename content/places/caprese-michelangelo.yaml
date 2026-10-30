@@ -1,6 +1,8 @@
 public_id: 103209
 name: Caprese Michelangelo
 kind: settlement
+designation: comune of Italy
+parent: province-of-arezzo
 location: [11.98583, 43.64083]
 wikidata_id: Q52069
 metadata:

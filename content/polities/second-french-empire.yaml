@@ -1,0 +1,45 @@
+public_id: 104821
+name: Second French Empire
+names:
+  - Second Empire, 1852-1870
+  - 1852-1870
+  - lang: nl
+    role: translation
+    text: Tweede Franse Keizerrijk
+  - lang: fr
+    role: translation
+    text: Second Empire
+  - lang: de
+    role: translation
+    text: Zweites Kaiserreich
+  - lang: it
+    role: translation
+    text: Secondo Impero francese
+  - lang: es
+    role: translation
+    text: Segundo Imperio francés
+  - lang: ja
+    role: translation
+    text: フランス第二帝政
+  - lang: zh
+    role: translation
+    text: 法蘭西第二帝國
+  - lang: ko
+    role: translation
+    text: 프랑스 제2제국
+  - lang: ru
+    role: translation
+    text: Вторая французская империя
+period: 1852-12-02/1870-09-04
+wikidata_id: Q71092
+metadata:
+  sources: [Wikidata Q71092 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/french-third-republic
+    period: 1870-09-04
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q71092

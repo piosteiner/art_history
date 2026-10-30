@@ -1,6 +1,8 @@
 public_id: 100890
 name: Urbino
 kind: settlement
+designation: comune of Italy
+parent: pesaro-e-urbino
 location: [12.6372, 43.72524]
 wikidata_id: Q2759
 metadata:

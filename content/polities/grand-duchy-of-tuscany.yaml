@@ -1,0 +1,42 @@
+public_id: 104850
+name: Grand Duchy of Tuscany
+names:
+  - lang: it
+    role: original
+    text: Granducato di Toscana
+  - lang: la
+    role: original
+    text: Magnus Ducatus Etrurıae
+  - lang: nl
+    role: translation
+    text: Groothertogdom Toscane
+  - lang: fr
+    role: translation
+    text: grand-duché de Toscane
+  - lang: de
+    role: translation
+    text: Großherzogtum Toskana
+  - lang: es
+    role: translation
+    text: Gran Ducado de Toscana
+  - lang: ja
+    role: translation
+    text: トスカーナ大公国
+  - lang: zh
+    role: translation
+    text: 托斯卡纳大公国
+  - lang: ko
+    role: translation
+    text: 토스카나 대공국
+  - lang: ru
+    role: translation
+    text: Великое герцогство Тосканское
+period: 6 September 1569–1860
+wikidata_id: Q154849
+metadata:
+  sources: [Wikidata Q154849 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q154849

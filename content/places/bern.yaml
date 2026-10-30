@@ -20,7 +20,8 @@ names:
     role: translation
     text: Берн
 kind: settlement
-parent: switzerland
+designation: municipality of Switzerland
+parent: canton-of-berne
 country_code: CH
 location: [7.44743, 46.94798]
 wikidata_id: Q70

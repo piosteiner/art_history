@@ -23,6 +23,7 @@ names:
     role: translation
     text: Зальцбург
 kind: settlement
+designation: statutory city of Austria
 parent: state-of-salzburg
 country_code: AT
 location: [13.045, 47.8]

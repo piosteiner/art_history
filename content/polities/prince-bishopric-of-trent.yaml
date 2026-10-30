@@ -1,0 +1,40 @@
+public_id: 104888
+name: Prince-Bishopric of Trent
+names:
+  - Bishopric of Trent
+  - lang: nl
+    role: translation
+    text: Prinsbisdom Trente
+  - lang: fr
+    role: translation
+    text: principauté épiscopale de Trente
+  - lang: de
+    role: translation
+    text: Hochstift Trient
+  - lang: it
+    role: translation
+    text: Principato vescovile di Trento
+  - lang: es
+    role: translation
+    text: principado episcopal de Trento
+  - lang: ja
+    role: translation
+    text: トレント司教領
+  - lang: zh
+    role: translation
+    text: 特倫托采邑主教區
+  - lang: ko
+    role: translation
+    text: 트렌토 주교후국
+  - lang: ru
+    role: translation
+    text: Трентское епископство
+period: 1027/1803
+wikidata_id: Q1231403
+metadata:
+  sources: [Wikidata Q1231403 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1231403

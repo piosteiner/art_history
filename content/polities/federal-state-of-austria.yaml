@@ -1,0 +1,44 @@
+public_id: 104842
+name: Federal State of Austria
+names:
+  - Ständestaat
+  - lang: nl
+    role: translation
+    text: Standenstaat
+  - lang: fr
+    role: translation
+    text: État fédéral d'Autriche
+  - lang: de
+    role: translation
+    text: Bundesstaat Österreich
+  - lang: it
+    role: translation
+    text: Stato federale d'Austria
+  - lang: es
+    role: translation
+    text: Estado Federal de Austria
+  - lang: ja
+    role: translation
+    text: オーストリア連邦国
+  - lang: zh
+    role: translation
+    text: 奧地利聯邦國
+  - lang: ko
+    role: translation
+    text: 오스트리아 연방국
+  - lang: ru
+    role: translation
+    text: Федеративное государство Австрия
+period: 1 May 1934–13 March 1938
+wikidata_id: Q176495
+metadata:
+  sources: [Wikidata Q176495 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/nazi-germany
+    period: 1938-03-13
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q176495

@@ -1,6 +1,24 @@
 public_id: 100242
 name: Tel Aviv
+names:
+  - lang: he
+    role: former
+    text: אחוזת בית
+    period: 1909–21 May 1910
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q33935
+  - lang: he
+    role: former
+    text: תל-אביב
+    period: 21 May 1910–6 October 1949
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q33935
 kind: settlement
+parent: tel-aviv-district
 location: [34.78, 32.08]
 wikidata_id: Q33935
 metadata:

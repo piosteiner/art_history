@@ -47,7 +47,7 @@ provenance:
   - owner: person/ludovico-iii-gonzaga
     acquired: 1465
     method: commission
-    place: mantova
+    place: province-of-mantua
     label: commissioned from his court painter (since 1460) for his audience chamber and state bedroom in the castle of San Giorgio
     sources:
       - url: https://it.wikipedia.org/wiki/Camera_degli_Sposi
@@ -57,7 +57,7 @@ provenance:
   - owner_label: the earthquake of 2012
     role: event
     acquired: 2012-05
-    place: mantova
+    place: province-of-mantua
     label: the Emilia earthquake reopened an old crack in the Court scene and loosened painted plaster; reopened on 2 April 2015
     sources:
       - url: https://it.wikipedia.org/wiki/Camera_degli_Sposi
@@ -65,7 +65,7 @@ provenance:
         source: wikipedia-it-camera-degli-sposi
         accessed: 2026-10-20
   - owner: institution/palazzo-ducale-mantua
-    place: mantova
+    place: province-of-mantua
     sources:
       - url: https://it.wikipedia.org/wiki/Camera_degli_Sposi
         note: il 2 aprile 2015 la Camera Picta ha riaperto i suoi tesori ai turisti, con l'inaugurazione da parte del ministro dei beni

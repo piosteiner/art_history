@@ -1,0 +1,26 @@
+public_id: 104604
+name: Bavaria
+kind: region
+designation: federated state of Germany
+parent: germany
+boundary_code: DE-BY
+wikidata_id: Q980
+relationships:
+  - type: in_polity
+    to: polity/kingdom-of-bavaria
+    period: 1 January 1806–17 January 1871
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154195
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1806-07-12/1813-10-07
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624

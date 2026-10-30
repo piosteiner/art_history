@@ -1,0 +1,16 @@
+public_id: 104714
+name: Charente-Maritime
+names:
+  - lang: fr
+    role: former
+    text: Charente-Inférieure
+    period: 4 March 1790–3 September 1941
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q3278
+kind: region
+designation: department of France
+parent: france
+boundary_code: FR-17
+wikidata_id: Q3278

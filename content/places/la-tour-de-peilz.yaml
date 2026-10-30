@@ -1,6 +1,8 @@
 public_id: 102941
 name: La Tour-de-Peilz
-kind: site
+kind: settlement
+designation: municipality of Switzerland
+parent: clarens
 location: [6.86667, 46.45]
 wikidata_id: Q69721
 metadata:

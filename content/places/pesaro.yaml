@@ -1,6 +1,8 @@
 public_id: 102912
 name: Pesaro
 kind: settlement
+designation: comune of Italy
+parent: pesaro-e-urbino
 location: [12.9133, 43.91015]
 wikidata_id: Q13134
 metadata:

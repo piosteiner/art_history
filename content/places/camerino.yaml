@@ -11,6 +11,7 @@ names:
     role: translation
     text: Камерино
 kind: settlement
+designation: comune of Italy
 parent: province-of-macerata
 country_code: IT
 location: [13.06667, 43.13333]

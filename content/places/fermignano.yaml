@@ -1,6 +1,8 @@
 public_id: 102917
 name: Fermignano
 kind: settlement
+designation: comune of Italy
+parent: pesaro-e-urbino
 location: [12.64504, 43.67662]
 wikidata_id: Q190623
 metadata:

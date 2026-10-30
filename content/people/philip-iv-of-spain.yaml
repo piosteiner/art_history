@@ -1,5 +1,29 @@
 public_id: 101128
 name: Philip IV of Spain
+names:
+  - text: O Grande
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q691402
+  - text: O Rei Planeta
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q691402
+  - text: O Opresor
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q691402
+  - kind: nickname
+    lang: es
+    role: alternative
+    text: el Rey Planeta
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q691402
 kind: person
 birth: 1605-04-08
 death: 1665-09-17

@@ -1,6 +1,8 @@
 public_id: 103042
 name: Castelfranco Veneto
 kind: settlement
+designation: comune of Italy
+parent: province-of-treviso
 location: [11.93333, 45.66667]
 wikidata_id: Q29352
 metadata:

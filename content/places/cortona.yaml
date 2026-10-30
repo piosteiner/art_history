@@ -1,6 +1,8 @@
 public_id: 102910
 name: Cortona
 kind: settlement
+designation: comune of Italy
+parent: province-of-arezzo
 location: [11.98806, 43.27556]
 wikidata_id: Q52080
 metadata:

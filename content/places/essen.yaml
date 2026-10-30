@@ -14,7 +14,8 @@ names:
     role: translation
     text: Эссен
 kind: settlement
-parent: germany
+designation: urban municipality in Germany
+parent: nordrhein-westfalen
 country_code: DE
 location: [7.01306, 51.45083]
 wikidata_id: Q2066

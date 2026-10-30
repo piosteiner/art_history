@@ -1,0 +1,39 @@
+public_id: 104877
+name: Austria
+names:
+  - Republic of Austria
+  - lang: nl
+    role: translation
+    text: Oostenrijk
+  - lang: fr
+    role: translation
+    text: Autriche
+  - lang: de
+    role: translation
+    text: Österreich
+  - lang: ja
+    role: translation
+    text: オーストリア
+  - lang: zh
+    role: translation
+    text: 奧地利
+  - lang: ko
+    role: translation
+    text: 오스트리아
+  - lang: ru
+    role: translation
+    text: Австрия
+period: 1918-11-12/
+country_codes: [AT]
+wikidata_id: Q40
+metadata:
+  sources: [Wikidata Q40 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q40
+  country_codes:
+    - accessed: 2026-10-29
+      property: P297
+      wikidata: Q40

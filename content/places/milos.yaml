@@ -19,7 +19,8 @@ names:
   - lang: ru
     role: translation
     text: Милос
-kind: site
+kind: natural
+designation: island
 parent: milos-municipality
 country_code: GR
 location: [24.4325, 36.6875]

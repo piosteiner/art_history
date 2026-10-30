@@ -1,6 +1,9 @@
 public_id: 100898
 name: former 10th arrondissement of Paris
-kind: site
+kind: district
+designation: former arrondissement of Paris
+existed: 11 October 1795–1860
+parent: paris
 location: [2.32937, 48.85267]
 wikidata_id: Q2845749
 metadata:

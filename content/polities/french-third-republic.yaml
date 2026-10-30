@@ -1,0 +1,50 @@
+public_id: 104822
+name: French Third Republic
+names:
+  - La Troisième République
+  - La IIIe République
+  - La Troisieme Republique
+  - La IIIe Republique
+  - Third Republic of France
+  - French Republic
+  - Third French Republic
+  - lang: nl
+    role: translation
+    text: Derde Franse Republiek
+  - lang: fr
+    role: translation
+    text: Troisième République française
+  - lang: de
+    role: translation
+    text: Dritte Französische Republik
+  - lang: it
+    role: translation
+    text: Terza Repubblica francese
+  - lang: es
+    role: translation
+    text: Tercera República Francesa
+  - lang: ja
+    role: translation
+    text: フランス第三共和政
+  - lang: zh
+    role: translation
+    text: 法兰西第三共和国
+  - lang: ko
+    role: translation
+    text: 프랑스 제3공화국
+  - lang: ru
+    role: translation
+    text: Третья французская республика
+period: 1870-09-04/1940-07-10
+wikidata_id: Q70802
+metadata:
+  sources: [Wikidata Q70802 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/vichy-france
+    period: 1940-07-10
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q70802

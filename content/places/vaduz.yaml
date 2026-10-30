@@ -15,8 +15,10 @@ names:
     role: translation
     text: Вадуц
 kind: settlement
+designation: municipality of Liechtenstein
 parent: liechtenstein
 country_code: LI
+boundary_code: LI-11
 location: [9.52222, 47.14056]
 wikidata_id: Q1844
 metadata:

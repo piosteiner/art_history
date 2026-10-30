@@ -1,6 +1,8 @@
 public_id: 102919
 name: Gardanne
 kind: settlement
+designation: commune of France
+parent: bouches-du-rhone
 location: [5.47611, 43.45444]
 wikidata_id: Q318085
 metadata:

@@ -23,12 +23,45 @@ names:
     role: translation
     text: Гамбург
 kind: settlement
+designation: Unitary municipality in Germany
 parent: germany
 country_code: DE
+boundary_code: DE-HH
 location: [10, 53.55]
 wikidata_id: Q1055
 metadata:
   sources: [Wikidata Q1055 (retrieved 2026-10-17)]
+relationships:
+  - type: in_polity
+    to: polity/free-imperial-city-of-hamburg
+    period: 1189/1806-08-05
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2614104
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 1189/1806-08-05
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1 January 1811–30 May 1814
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981
 sources:
   kind:
     - accessed: 2026-10-17

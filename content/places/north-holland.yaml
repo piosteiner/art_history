@@ -1,6 +1,10 @@
 public_id: 103331
 name: North Holland
-kind: site
+names: [Noord-Holland]
+kind: region
+designation: province of the Netherlands
+parent: netherlands
+boundary_code: NL-NH
 location: [4.83333, 52.66667]
 wikidata_id: Q701
 metadata:

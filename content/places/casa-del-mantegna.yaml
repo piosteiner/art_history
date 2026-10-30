@@ -1,6 +1,8 @@
 public_id: 103142
 name: Casa del Mantegna
-kind: site
+kind: building
+designation: residential building
+parent: mantua
 location: [10.78791, 45.15135]
 wikidata_id: Q3279459
 metadata:

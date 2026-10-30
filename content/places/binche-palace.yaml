@@ -13,7 +13,8 @@ names:
   - lang: ja
     role: translation
     text: バンシュ宮殿
-kind: site
+kind: building
+designation: palace
 parent: binche
 country_code: BE
 location: [4.16486, 50.40806]

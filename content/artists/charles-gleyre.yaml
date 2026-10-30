@@ -2,7 +2,16 @@ public_id: 100223
 name: Charles Gleyre
 given_name: Charles
 family_name: Gleyre
-names: [Marc-Gabriel-Charles Gleyre]
+names:
+  - Marc-Gabriel-Charles Gleyre
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: Le peintre poète
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q452119
 birth: 1806-05-02
 death: 1874-05-05
 wikidata_id: Q452119

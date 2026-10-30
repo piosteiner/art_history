@@ -1,0 +1,15 @@
+public_id: 104943
+name: heritage designation
+names:
+  - lang: de
+    role: translation
+    text: Schutzstatus
+  - lang: fr
+    role: translation
+    text: protection patrimoniale
+  - lang: ja
+    role: translation
+    text: "{文化財|ぶんかざい}"
+category: heritage designation
+definition: Protection a state or an international body gives a work, a building or a place — it is registered, may not be exported or altered without leave.
+wikidata_id: Q2065736

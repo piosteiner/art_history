@@ -21,6 +21,7 @@ names:
     role: translation
     text: Цуг
 kind: settlement
+designation: municipality of Switzerland
 parent: canton-of-zug
 country_code: CH
 location: [8.51694, 47.16806]

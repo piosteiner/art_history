@@ -1,6 +1,8 @@
 public_id: 100149
 name: Washington, D.C.
 kind: settlement
+designation: federal capital
+parent: district-of-columbia
 location: [-77.03667, 38.895]
 wikidata_id: Q61
 metadata:

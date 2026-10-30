@@ -1,0 +1,32 @@
+public_id: 104697
+name: Canton of Geneva
+kind: region
+designation: canton of Switzerland
+parent: switzerland
+boundary_code: CH-GE
+wikidata_id: Q11917
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 1032/1533
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/republic-of-geneva
+    period: 1534/1798-04-25
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q23366230
+  - type: in_polity
+    to: polity/french-first-republic
+    period: 1798-04-26/1804-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q58296
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1804-05-18/1813-12-30
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084

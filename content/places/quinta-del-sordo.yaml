@@ -13,7 +13,8 @@ names:
   - lang: ru
     role: translation
     text: Дом Глухого
-kind: site
+kind: building
+designation: quinta
 parent: madrid
 country_code: ES
 location: [-3.72599, 40.41147]

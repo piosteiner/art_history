@@ -1,14 +1,22 @@
 public_id: 102952
 name: Algiers
 kind: settlement
+parent: algiers-province
+country_code: DZ
 location: [3.05861, 36.77639]
 wikidata_id: Q3561
 metadata:
   sources: [Wikidata Q3561 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4084955-7
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q3561
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q3561
   location:
     - accessed: 2026-10-28

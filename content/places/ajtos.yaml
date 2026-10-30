@@ -1,6 +1,8 @@
 public_id: 101297
 name: Ajtós
-kind: site
+kind: settlement
+parent: bekes
+country_code: HU
 location: [21.267, 46.658]
 wikidata_id: Q554803
 metadata:
@@ -9,6 +11,10 @@ sources:
   kind:
     - accessed: 2026-10-19
       property: P31
+      wikidata: Q554803
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q554803
   location:
     - accessed: 2026-10-19

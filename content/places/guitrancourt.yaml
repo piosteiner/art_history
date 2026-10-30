@@ -5,6 +5,7 @@ names:
     role: translation
     text: 吉特朗库尔
 kind: settlement
+designation: commune of France
 parent: yvelines
 country_code: FR
 location: [1.77694, 49.00861]

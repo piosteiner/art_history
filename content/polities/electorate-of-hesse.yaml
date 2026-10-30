@@ -1,0 +1,45 @@
+public_id: 104904
+name: Electorate of Hesse
+names:
+  - Hesse-Kassel
+  - Hesse-Cassel
+  - lang: nl
+    role: translation
+    text: Keurvorstendom Hessen
+  - lang: fr
+    role: translation
+    text: Électorat de Hesse
+  - lang: de
+    role: translation
+    text: Kurfürstentum Hessen
+  - lang: it
+    role: translation
+    text: Elettorato d'Assia
+  - lang: es
+    role: translation
+    text: Electorado de Hesse
+  - lang: ja
+    role: translation
+    text: ヘッセン選帝侯国（ヘッセン＝カッセル）
+  - lang: zh
+    role: translation
+    text: 黑森选侯国
+  - lang: ko
+    role: translation
+    text: 헤센 선제후국
+  - lang: ru
+    role: translation
+    text: Курфюршество Гессен
+period: 1814/1866-08
+wikidata_id: Q529605
+metadata:
+  sources: [Wikidata Q529605 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-prussia
+    period: 1866-10-08
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q529605

@@ -1,6 +1,8 @@
 public_id: 102926
 name: Zagarolo
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-rome
 location: [12.83333, 41.83333]
 wikidata_id: Q140255
 metadata:

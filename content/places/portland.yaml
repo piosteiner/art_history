@@ -1,6 +1,8 @@
 public_id: 100681
 name: Portland
 kind: settlement
+designation: county seat
+parent: oregon
 location: [-122.67917, 45.515]
 wikidata_id: Q6106
 metadata:

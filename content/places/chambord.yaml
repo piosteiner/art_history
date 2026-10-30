@@ -1,7 +1,17 @@
 public_id: 100489
 name: Chambord
+names:
+  - lang: fr
+    role: former
+    text: Bordchamp
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q628532
 kind: settlement
-parent: france
+designation: commune of France
+parent: loir-et-cher
 country_code: FR
 location: [1.51917, 47.61306]
 wikidata_id: Q628532

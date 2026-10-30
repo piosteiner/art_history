@@ -20,7 +20,8 @@ names:
   - lang: ru
     role: translation
     text: замок Амбрас
-kind: site
+kind: building
+designation: art museum
 parent: innsbruck
 country_code: AT
 location: [11.43472, 47.25667]

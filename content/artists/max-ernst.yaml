@@ -2,6 +2,15 @@ public_id: 103139
 name: Max Ernst
 given_name: Max
 family_name: Ernst
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Maximilian Maria Ernst
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q154842
 birth: 1891-04-02
 death: 1976-04-01
 wikidata_id: Q154842

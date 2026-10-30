@@ -1,0 +1,14 @@
+public_id: 104799
+name: Valladolid Province
+kind: region
+designation: province of Spain
+parent: spain
+boundary_code: ES-VA
+wikidata_id: Q71097
+relationships:
+  - type: in_polity
+    to: polity/crown-of-castile
+    period: 1230/1515
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q217196

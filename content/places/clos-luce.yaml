@@ -1,6 +1,8 @@
 public_id: 103294
 name: Clos Lucé
-kind: site
+kind: building
+designation: château
+parent: amboise
 location: [0.99204, 47.41024]
 wikidata_id: Q1122731
 metadata:

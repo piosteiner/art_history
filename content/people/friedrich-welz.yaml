@@ -7,6 +7,14 @@ names:
   - lang: ru
     role: translation
     text: Фридрих Вельц
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Friedrich Maximilian Welz
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q1462781
 kind: person
 occupations: [publisher, art collector, art dealer, merchant, collector]
 birth: 1903-11-02

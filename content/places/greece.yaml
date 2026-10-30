@@ -1,6 +1,8 @@
 public_id: 103307
 name: Greece
 kind: country
+country_code: GR
+boundary_code: GR
 location: [23, 38.5]
 wikidata_id: Q41
 metadata:

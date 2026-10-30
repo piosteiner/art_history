@@ -1,14 +1,23 @@
 public_id: 103043
 name: Assisi
 kind: settlement
+designation: comune of Italy
+parent: province-of-perugia
+country_code: IT
 location: [12.615, 43.07081]
 wikidata_id: Q20103
 metadata:
   sources: [Wikidata Q20103 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4003260-7
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q20103
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q20103
   location:
     - accessed: 2026-10-28

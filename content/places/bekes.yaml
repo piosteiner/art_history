@@ -1,0 +1,24 @@
+public_id: 104583
+name: Békés County
+names:
+  - lang: hu
+    role: former
+    text: Békés megye
+    period: until 31 December 2022
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q191616
+  - lang: hu
+    role: former
+    text: Békés vármegye
+    period: 1 January 2023–30 September 2026
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q191616
+kind: region
+designation: county of Hungary
+parent: hungary
+boundary_code: HU-BE
+wikidata_id: Q191616

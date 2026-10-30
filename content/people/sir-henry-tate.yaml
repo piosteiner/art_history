@@ -1,0 +1,28 @@
+public_id: 103349
+name: Sir Henry Tate
+kind: person
+birth: 1819-03-11
+death: 1899-12-05
+wikidata_id: Q583615
+metadata:
+  sources: [Wikidata Q583615 (retrieved 2026-10-29)]
+relationships:
+  - type: founded
+    to: institution/tate-gallery
+    sources:
+      - accessed: 2026-10-29
+        property: P112
+        wikidata: Q430682
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q583615
+  birth:
+    - accessed: 2026-10-29
+      property: P569
+      wikidata: Q583615
+  death:
+    - accessed: 2026-10-29
+      property: P570
+      wikidata: Q583615

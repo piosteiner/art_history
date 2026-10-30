@@ -1,6 +1,8 @@
 public_id: 102973
 name: Portalegre
-kind: site
+kind: settlement
+designation: municipality of Portugal
+parent: portalegre-district
 location: [-7.41667, 39.31667]
 wikidata_id: Q622819
 metadata:

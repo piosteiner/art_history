@@ -1,6 +1,33 @@
 public_id: 103206
 name: Saint-Quentin
+names:
+  - lang: fr
+    role: former
+    text: Somme-Libre
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q182744
+  - lang: fr
+    role: former
+    text: Égalité-sur-Somme
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q182744
+  - lang: fr
+    role: former
+    text: Linon-sur-Somme
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q182744
 kind: settlement
+designation: commune of France
+parent: aisne
 location: [3.28556, 49.84778]
 wikidata_id: Q182744
 metadata:

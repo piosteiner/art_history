@@ -1,6 +1,8 @@
 public_id: 100252
 name: Mas Notre-Dame-de-Vie de Mougins
-kind: site
+kind: building
+designation: mas
+parent: le-cannet
 location: [7.00506, 43.59488]
 wikidata_id: Q28528515
 metadata:

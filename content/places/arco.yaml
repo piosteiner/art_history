@@ -1,6 +1,8 @@
 public_id: 103260
 name: Arco
 kind: settlement
+designation: comune of Italy
+parent: trento
 location: [10.88333, 45.91667]
 wikidata_id: Q138473
 metadata:

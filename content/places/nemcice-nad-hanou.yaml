@@ -1,6 +1,8 @@
 public_id: 102245
 name: Němčice nad Hanou
-kind: site
+kind: settlement
+designation: municipality with town privileges in the Czech Republic
+parent: olomoucky
 location: [17.20599, 49.34183]
 wikidata_id: Q2007259
 metadata:

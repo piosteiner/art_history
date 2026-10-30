@@ -31,6 +31,14 @@ names:
   - lang: ru
     role: translation
     text: Фридрих Австрийский Тешенский
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Friedrich Maria Albrecht Wilhelm Karl von Österreich-Teschen
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q446711
 kind: person
 occupations: [ruler, military personnel, politician, aristocrat, Generalfeldmarschall]
 birth: 1856-06-04

@@ -11,7 +11,8 @@ names:
     role: translation
     text: Ареццо
 kind: settlement
-parent: italy
+designation: comune of Italy
+parent: province-of-arezzo
 country_code: IT
 location: [11.87806, 43.46306]
 wikidata_id: Q13378

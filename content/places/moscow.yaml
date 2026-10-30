@@ -1,6 +1,8 @@
 public_id: 100137
 name: Moscow
 kind: settlement
+designation: federal city of Russia
+parent: moscow-oblast
 location: [37.6175, 55.75056]
 wikidata_id: Q649
 metadata:

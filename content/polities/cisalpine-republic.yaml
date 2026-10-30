@@ -1,0 +1,43 @@
+public_id: 104857
+name: Cisalpine Republic
+names:
+  - lang: nl
+    role: translation
+    text: Cisalpijnse Republiek
+  - lang: fr
+    role: translation
+    text: République cisalpine
+  - lang: de
+    role: translation
+    text: Cisalpinische Republik
+  - lang: it
+    role: translation
+    text: Repubblica Cisalpina
+  - lang: es
+    role: translation
+    text: República Cisalpina
+  - lang: ja
+    role: translation
+    text: チザルピーナ共和国
+  - lang: zh
+    role: translation
+    text: 奇薩爾皮尼共和國
+  - lang: ko
+    role: translation
+    text: 치살피나 공화국
+  - lang: ru
+    role: translation
+    text: Цизальпинская республика
+period: 1797-06-29/1802-01-25
+wikidata_id: Q213353
+metadata:
+  sources: [Wikidata Q213353 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/italian-republic-napoleonic
+    period: 1802-01-26
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q213353

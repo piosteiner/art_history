@@ -1,6 +1,8 @@
 public_id: 100804
 name: Le Cannet
 kind: settlement
+designation: commune of France
+parent: alpes-maritimes
 location: [7.01861, 43.57611]
 wikidata_id: Q207967
 metadata:

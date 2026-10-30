@@ -1,6 +1,8 @@
 public_id: 103049
 name: Ghent
 kind: settlement
+designation: Belgian municipality with the title of city
+parent: east-flanders
 location: [3.72528, 51.05361]
 wikidata_id: Q1296
 metadata:

@@ -1,0 +1,18 @@
+public_id: 103368
+name: Céret
+kind: settlement
+designation: commune of France
+parent: pyrenees-orientales
+location: [2.75139, 42.48806]
+wikidata_id: Q6643
+metadata:
+  sources: [Wikidata Q6643 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q6643
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q6643

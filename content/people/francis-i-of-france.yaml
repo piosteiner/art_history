@@ -32,6 +32,30 @@ names:
   - lang: ru
     role: translation
     text: Франциск I
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: le Père et Restaurateur des Lettres
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q129857
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: François du Grand Nez
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q129857
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: le Roi-Chevalier
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q129857
 kind: person
 occupations: [politician, art collector, patron of the arts, monarch, literary scholar]
 birth: 1494-09-21

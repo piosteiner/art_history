@@ -1,0 +1,39 @@
+public_id: 104868
+name: Kingdom of Spain
+names:
+  - Spain
+  - Bourbon Spain
+  - lang: nl
+    role: translation
+    text: Koninkrijk Spanje
+  - lang: fr
+    role: translation
+    text: royaume d'Espagne
+  - lang: de
+    role: translation
+    text: Königreich Spanien
+  - lang: it
+    role: translation
+    text: Regno di Spagna
+  - lang: es
+    role: translation
+    text: Reino de España (1700-1873)
+  - lang: ja
+    role: translation
+    text: スペイン王国
+  - lang: ru
+    role: translation
+    text: Королевство Испания
+period: 1700/1873-02-11
+wikidata_id: Q3399982
+metadata:
+  sources: [Wikidata Q3399982 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/first-spanish-republic
+    period: 1873-02-11
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q3399982

@@ -2,7 +2,16 @@ public_id: 102309
 name: Auguste Rodin
 given_name: Auguste
 family_name: Rodin
-names: [François Auguste René Rodin]
+names:
+  - François Auguste René Rodin
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: René François Auguste Rodin
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q30755
 birth: 1840-11-12
 death: 1917-11-17
 wikidata_id: Q30755

@@ -1,0 +1,39 @@
+public_id: 104884
+name: Republic of Siena
+names:
+  - lang: nl
+    role: translation
+    text: Republiek Siena
+  - lang: fr
+    role: translation
+    text: République de Sienne
+  - lang: de
+    role: translation
+    text: Republik Siena
+  - lang: it
+    role: translation
+    text: Repubblica di Siena
+  - lang: es
+    role: translation
+    text: República de Siena
+  - lang: ja
+    role: translation
+    text: シエーナ共和国
+  - lang: zh
+    role: translation
+    text: 錫耶納共和國
+  - lang: ko
+    role: translation
+    text: 시에나 공화국
+  - lang: ru
+    role: translation
+    text: Сиенская республика
+period: 1125/1555
+wikidata_id: Q736727
+metadata:
+  sources: [Wikidata Q736727 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q736727

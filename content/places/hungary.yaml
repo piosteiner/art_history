@@ -1,5 +1,15 @@
 public_id: 100370
 name: Hungary
+names:
+  - lang: hu
+    role: former
+    text: Magyar Köztársaság
+    period: 23 October 1989–1 January 2012
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q28
 kind: country
 country_code: HU
 boundary_code: HU
+wikidata_id: Q28

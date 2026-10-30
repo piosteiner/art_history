@@ -1,0 +1,18 @@
+public_id: 103363
+name: Fatu-Hiva
+kind: settlement
+designation: commune of French Polynesia
+parent: french-polynesia
+location: [-138.64722, -10.49111]
+wikidata_id: Q1398288
+metadata:
+  sources: [Wikidata Q1398288 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q1398288
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q1398288

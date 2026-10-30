@@ -17,7 +17,7 @@ metadata:
   sources: [Wikidata Q5826309 (retrieved 2026-10-07)]
 relationships:
   - type: created_in
-    to: place/edo
+    to: place/tokyo
     period: 1857
   - type: depicts
     to: place/sumida-river

@@ -1,0 +1,43 @@
+public_id: 104831
+name: Austrian Netherlands
+names:
+  - lang: nl
+    role: translation
+    text: Oostenrijkse Nederlanden
+  - lang: fr
+    role: translation
+    text: Pays-Bas autrichiens
+  - lang: de
+    role: translation
+    text: Österreichische Niederlande
+  - lang: it
+    role: translation
+    text: Paesi Bassi austriaci
+  - lang: es
+    role: translation
+    text: Países Bajos Austríacos
+  - lang: ja
+    role: translation
+    text: オーストリア領ネーデルラント
+  - lang: zh
+    role: translation
+    text: 奧屬尼德蘭
+  - lang: ko
+    role: translation
+    text: 오스트리아령 네덜란드
+  - lang: ru
+    role: translation
+    text: Австрийские Нидерланды
+period: 1714/1797
+wikidata_id: Q700283
+metadata:
+  sources: [Wikidata Q700283 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/french-first-republic
+    period: 1795-10-01
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q700283

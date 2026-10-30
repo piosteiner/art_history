@@ -1,6 +1,8 @@
 public_id: 100889
 name: Siena
 kind: settlement
+designation: comune of Italy
+parent: province-of-siena
 location: [11.33139, 43.31833]
 wikidata_id: Q2751
 metadata:

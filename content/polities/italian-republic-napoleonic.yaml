@@ -1,0 +1,43 @@
+public_id: 104901
+name: Italian Republic (Napoleonic)
+names:
+  - Repubblica Italiana
+  - Napoleonic Republic of Italy
+  - Republic of Italy
+  - lang: nl
+    role: translation
+    text: Italiaanse Republiek
+  - lang: fr
+    role: translation
+    text: République italienne
+  - lang: de
+    role: translation
+    text: Italienische Republik
+  - lang: es
+    role: translation
+    text: República Italiana
+  - lang: ja
+    role: translation
+    text: イタリア共和国
+  - lang: zh
+    role: translation
+    text: 義大利共和國
+  - lang: ko
+    role: translation
+    text: 이탈리아 공화국
+  - lang: ru
+    role: translation
+    text: Итальянская республика
+period: 26 January 1802–1805
+wikidata_id: Q723118
+metadata:
+  sources: [Wikidata Q723118 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-italy-napoleonic
+    period: 1805-03-17
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q723118

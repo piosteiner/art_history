@@ -1,6 +1,8 @@
 public_id: 103216
 name: Cádiz
-kind: site
+kind: settlement
+designation: municipality of Spain
+parent: cadiz-province
 location: [-6.2975, 36.535]
 wikidata_id: Q15682
 metadata:

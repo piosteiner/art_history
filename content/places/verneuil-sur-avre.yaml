@@ -1,6 +1,8 @@
 public_id: 100235
 name: Verneuil-sur-Avre
 kind: settlement
+designation: commune of France
+parent: eure
 location: [0.92778, 48.73889]
 wikidata_id: Q317271
 metadata:

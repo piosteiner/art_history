@@ -1,6 +1,8 @@
 public_id: 102921
 name: Diller
-kind: site
+kind: settlement
+designation: village in the United States
+parent: nebraska
 location: [-96.93778, 40.10861]
 wikidata_id: Q2387781
 metadata:

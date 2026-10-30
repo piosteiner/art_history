@@ -1,6 +1,8 @@
 public_id: 100820
 name: Naples
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-naples
 location: [14.24861, 40.83583]
 wikidata_id: Q2634
 metadata:

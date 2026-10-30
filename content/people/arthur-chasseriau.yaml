@@ -2,4 +2,15 @@ public_id: 100316
 name: Arthur Chassériau
 given_name: Arthur
 family_name: Chassériau
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Arthur Nedjma Chassériau
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q2865045
 wikidata_id: Q2865045
+metadata:
+  sources: [Wikidata Q2865045 (retrieved 2026-10-29)]

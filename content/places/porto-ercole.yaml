@@ -1,6 +1,8 @@
 public_id: 102925
 name: Porto Ercole
-kind: site
+kind: district
+designation: frazione
+parent: grosseto
 location: [11.20361, 42.39389]
 wikidata_id: Q1394400
 metadata:

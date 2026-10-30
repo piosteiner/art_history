@@ -1,6 +1,8 @@
 public_id: 100245
 name: Delft
 kind: settlement
+designation: municipality of the Netherlands
+parent: zuid-holland
 location: [4.35917, 52.01167]
 wikidata_id: Q690
 metadata:

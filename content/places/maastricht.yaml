@@ -1,6 +1,8 @@
 public_id: 103244
 name: Maastricht
 kind: settlement
+designation: municipality seat
+parent: limburg-netherlands
 location: [5.68333, 50.86667]
 wikidata_id: Q1309
 metadata:

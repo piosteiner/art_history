@@ -2,4 +2,15 @@ public_id: 100435
 name: Henry de Monfreid
 given_name: Henry
 family_name: de Monfreid
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Henri Léon Romain de Monfreid
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q911033
 wikidata_id: Q911033
+metadata:
+  sources: [Wikidata Q911033 (retrieved 2026-10-29)]

@@ -2,7 +2,21 @@ public_id: 100236
 name: Pablo Picasso
 given_name: Pablo
 family_name: Picasso
-names: [Pablo Diego José Francisco de Paula Juan Nepomuceno Crispín Crispiniano de la Santísima Trinidad María de los Remedios Alarcón y Herrera Ruiz Picasso]
+names:
+  - Pablo Diego José Francisco de Paula Juan Nepomuceno Crispín Crispiniano de la Santísima Trinidad María de los Remedios Alarcón y Herrera Ruiz Picasso
+  - kind: birth
+    lang: es
+    role: alternative
+    text: Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5593
+  - text: Pau de Gósol
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q5593
 birth: 1881-10-25
 death: 1973-04-08
 wikidata_id: Q5593

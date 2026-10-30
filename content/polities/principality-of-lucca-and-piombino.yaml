@@ -1,0 +1,36 @@
+public_id: 104931
+name: Principality of Lucca and Piombino
+names:
+  - lang: nl
+    role: translation
+    text: Vorstendom Lucca en Piombino
+  - lang: fr
+    role: translation
+    text: Principauté de Lucques et Piombino
+  - lang: it
+    role: translation
+    text: Principato di Lucca e Piombino
+  - lang: es
+    role: translation
+    text: Principado de Lucca y Piombino
+  - lang: ja
+    role: translation
+    text: ルッカ・エ・ピオンビーノ公国
+  - lang: zh
+    role: translation
+    text: 卢卡和皮奥恩比诺公国
+  - lang: ko
+    role: translation
+    text: 루카피옴비노 공국
+  - lang: ru
+    role: translation
+    text: Княжество Лукка и Пьомбино
+period: 1805/1814
+wikidata_id: Q1995553
+metadata:
+  sources: [Wikidata Q1995553 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1995553

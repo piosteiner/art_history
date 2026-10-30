@@ -1,0 +1,28 @@
+public_id: 104919
+name: Anhalt-Dessau
+names:
+  - lang: nl
+    role: translation
+    text: Vorstendom Anhalt-Dessau
+  - lang: ja
+    role: translation
+    text: アンハルト＝デッサウ公国
+  - lang: zh
+    role: translation
+    text: 安哈尔特-德绍
+  - lang: ru
+    role: translation
+    text: Ангальт-Дессау
+period: 1396/1853
+wikidata_id: Q278874
+metadata:
+  sources: [Wikidata Q278874 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/duchy-of-anhalt
+    period: 1863-05-22
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q278874

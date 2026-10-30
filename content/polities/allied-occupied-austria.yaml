@@ -1,0 +1,43 @@
+public_id: 104843
+name: Allied-occupied Austria
+names:
+  - lang: nl
+    role: translation
+    text: Geallieerde bezettingszones in Oostenrijk
+  - lang: fr
+    role: translation
+    text: Autriche sous occupation alliée
+  - lang: de
+    role: translation
+    text: besetztes Nachkriegsösterreich
+  - lang: it
+    role: translation
+    text: occupazione alleata dell'Austria
+  - lang: es
+    role: translation
+    text: ocupación aliada de Austria
+  - lang: ja
+    role: translation
+    text: 連合軍軍政期
+  - lang: zh
+    role: translation
+    text: 同盟國軍事佔領奧地利
+  - lang: ko
+    role: translation
+    text: 연합군 점령하 오스트리아
+  - lang: ru
+    role: translation
+    text: оккупированная союзниками Австрия
+period: 1945/1955
+wikidata_id: Q596239
+metadata:
+  sources: [Wikidata Q596239 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/austria
+    period: 1955-07-27
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q596239

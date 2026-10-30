@@ -1,0 +1,40 @@
+public_id: 104908
+name: Duchy of Saxe-Weimar-Eisenach
+names:
+  - Grand Duchy of Saxe-Weimar-Eisenach
+  - lang: nl
+    role: translation
+    text: Hertogdom Saksen-Weimar-Eisenach
+  - lang: fr
+    role: translation
+    text: grand-duché de Saxe-Weimar-Eisenach
+  - lang: de
+    role: translation
+    text: Herzogtum Sachsen-Weimar-Eisenach
+  - lang: it
+    role: translation
+    text: Sassonia-Weimar-Eisenach
+  - lang: es
+    role: translation
+    text: Ducado de Sajonia-Weimar-Eisenach
+  - lang: ja
+    role: translation
+    text: ザクセン＝ヴァイマル＝アイゼナハ大公国
+  - lang: zh
+    role: translation
+    text: 萨克森-魏玛-艾森纳赫
+  - lang: ko
+    role: translation
+    text: 작센바이마르아이제나흐 대공국
+  - lang: ru
+    role: translation
+    text: Саксен-Веймар-Эйзенах
+period: 1809/1918
+wikidata_id: Q155570
+metadata:
+  sources: [Wikidata Q155570 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q155570

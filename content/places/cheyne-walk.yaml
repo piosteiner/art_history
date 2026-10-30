@@ -1,6 +1,8 @@
 public_id: 103280
 name: Cheyne Walk
-kind: site
+kind: street
+designation: street
+parent: kensington-and-chelsea
 location: [-0.1727, 51.4823]
 wikidata_id: Q5094624
 metadata:

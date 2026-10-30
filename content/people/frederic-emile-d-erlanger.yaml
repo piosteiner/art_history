@@ -13,6 +13,14 @@ names:
   - lang: ja
     role: translation
     text: エルランジェ商会
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Friedrich Emil Erlanger
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q827152
 kind: person
 occupations: [banker]
 birth: 1832-06-19

@@ -23,7 +23,8 @@ names:
     role: translation
     text: Basileia
 kind: settlement
-parent: switzerland
+designation: municipality of Switzerland
+parent: basel-stadt
 country_code: CH
 location: [7.59056, 47.56056]
 wikidata_id: Q78

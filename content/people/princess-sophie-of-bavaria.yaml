@@ -30,6 +30,14 @@ names:
   - lang: ru
     role: translation
     text: София Баварская
+  - kind: birth
+    lang: de
+    role: former
+    text: Sophie Friederike Dorothea Wilhelmine von Bayern
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q57653
 kind: person
 occupations: [politician]
 birth: 1805-01-27

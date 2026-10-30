@@ -1,6 +1,8 @@
 public_id: 100122
 name: Bexar County
-kind: site
+kind: region
+designation: county of Texas
+parent: texas
 location: [-98.52, 29.45]
 wikidata_id: Q16861
 metadata:

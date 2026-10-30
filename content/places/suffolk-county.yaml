@@ -1,6 +1,8 @@
 public_id: 100941
 name: Suffolk County
-kind: site
+kind: region
+designation: county of Massachusetts
+parent: massachusetts
 location: [-71.07349, 42.33495]
 wikidata_id: Q54072
 metadata:

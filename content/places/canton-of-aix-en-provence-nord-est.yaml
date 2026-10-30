@@ -1,0 +1,19 @@
+public_id: 103359
+name: canton of Aix-en-Provence-Nord-Est
+kind: region
+designation: canton of France
+existed: until 21 March 2015
+parent: bouches-du-rhone
+location: [5.45389, 43.53111]
+wikidata_id: Q1533801
+metadata:
+  sources: [Wikidata Q1533801 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q1533801
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q1533801

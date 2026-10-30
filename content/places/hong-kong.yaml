@@ -1,0 +1,43 @@
+public_id: 103375
+name: Hong Kong
+names:
+  - HKSAR
+  - Hong Kong SAR
+  - Hong Kong, China
+  - Hong Kong SAR, China
+  - Hong Kong Special Administrative Region
+  - Hongkong
+  - Hong Kong Special Administrative Region of the People's Republic of China
+  - lang: ja
+    role: translation
+    text: 香港
+  - lang: ko
+    role: translation
+    text: 홍콩
+  - lang: ru
+    role: translation
+    text: Гонконг
+kind: settlement
+designation: special administrative region of China
+parent: people-s-republic-of-china
+country_code: CN
+location: [114.15861, 22.27833]
+wikidata_id: Q8646
+metadata:
+  sources: [Wikidata Q8646 (retrieved 2026-10-29)]
+identifiers:
+  gnd: 4025822-1
+  hls: "003406"
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q8646
+  parent:
+    - accessed: 2026-10-29
+      property: P131
+      wikidata: Q8646
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q8646

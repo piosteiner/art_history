@@ -1,6 +1,8 @@
 public_id: 101866
 name: Gooise Meren
 kind: settlement
+designation: municipality of the Netherlands
+parent: north-holland
 location: [5.16667, 52.28333]
 wikidata_id: Q18335889
 metadata:

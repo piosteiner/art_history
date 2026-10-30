@@ -33,6 +33,14 @@ names:
   - lang: ru
     role: translation
     text: Филипп II
+  - kind: nickname
+    lang: es
+    role: alternative
+    text: El prudente
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q34417
 kind: person
 occupations: [ruler]
 birth: 1527-05-31

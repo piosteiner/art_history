@@ -2,6 +2,23 @@ public_id: 100133
 name: Salvador Dalí
 given_name: Salvador
 family_name: Dalí
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Salvador Domingo Felipe Jacinto Dalí i Domènech
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5577
+  - kind: birth
+    lang: es
+    role: former
+    text: Salvador Felipe Jacinto Dalí i Domènech
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5577
 birth: 1904-05-11
 death: 1989-01-23
 wikidata_id: Q5577

@@ -1,14 +1,24 @@
 public_id: 102974
 name: Baiona
-kind: site
+names: [Bayona]
+kind: settlement
+designation: municipality of Galicia
+parent: pontevedra
+country_code: ES
 location: [-8.85009, 42.11993]
 wikidata_id: Q748867
 metadata:
   sources: [Wikidata Q748867 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4456863-0
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q748867
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q748867
   location:
     - accessed: 2026-10-28

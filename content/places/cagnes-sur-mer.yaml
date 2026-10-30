@@ -1,6 +1,17 @@
 public_id: 102295
 name: Cagnes-sur-Mer
+names:
+  - lang: fr
+    role: former
+    text: Cagnes
+    period: until 19 December 1922
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q193832
 kind: settlement
+designation: commune of France
+parent: alpes-maritimes
 location: [7.14833, 43.66361]
 wikidata_id: Q193832
 metadata:

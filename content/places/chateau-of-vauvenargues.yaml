@@ -1,6 +1,8 @@
 public_id: 100253
 name: Château of Vauvenargues
-kind: site
+kind: building
+designation: castle
+parent: bouches-du-rhone
 location: [5.60389, 43.55389]
 wikidata_id: Q2970932
 metadata:

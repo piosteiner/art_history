@@ -1,6 +1,8 @@
 public_id: 100956
 name: Bedford Square
-kind: site
+kind: street
+designation: garden square
+parent: camden
 location: [-0.13011, 51.51891]
 wikidata_id: Q2893581
 metadata:

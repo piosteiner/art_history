@@ -1,6 +1,17 @@
 public_id: 103056
 name: Nara
+names:
+  - lang: ja
+    role: former
+    text: 奈良町
+    period: 1 April 1889–1 February 1898
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q169134
 kind: settlement
+designation: city of Japan
+parent: nara-prefecture
 location: [135.80478, 34.685]
 wikidata_id: Q169134
 metadata:

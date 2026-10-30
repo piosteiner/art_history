@@ -6,6 +6,14 @@ names:
   - lang: ja
     role: original
     text: 三島 由紀夫
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 平岡 公威
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q134456
 kind: person
 occupations: [writer, prose writer, novelist, playwright]
 birth: 1925-01-14

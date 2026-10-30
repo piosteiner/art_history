@@ -1,6 +1,8 @@
 public_id: 102911
 name: Foligno
 kind: settlement
+designation: comune of Italy
+parent: province-of-perugia
 location: [12.70328, 42.95576]
 wikidata_id: Q20436
 metadata:

@@ -1,6 +1,8 @@
 public_id: 102978
 name: Shoreham
 kind: settlement
+designation: village
+parent: kent
 location: [0.17329, 51.33242]
 wikidata_id: Q2257157
 metadata:

@@ -1,10 +1,25 @@
 public_id: 100205
 name: Italy
 kind: country
+country_code: IT
+boundary_code: IT
 location: [12.5, 42.5]
 wikidata_id: Q38
 metadata:
   sources: [Wikidata Q38 (retrieved 2026-10-09)]
+relationships:
+  - type: in_polity
+    to: polity/konigreich-italien
+    period: 1861-03-17/1946-06-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q172579
+  - type: in_polity
+    to: polity/italy
+    period: 1946-06-18/
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q38
 sources:
   kind:
     - accessed: 2026-10-09

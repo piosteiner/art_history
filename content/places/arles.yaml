@@ -1,7 +1,8 @@
 public_id: 100024
 name: Arles
 kind: settlement
-parent: france
+designation: commune of France
+parent: bouches-du-rhone
 country_code: FR
 location: [4.6278, 43.6768]
 wikidata_id: Q48292

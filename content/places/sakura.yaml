@@ -1,6 +1,8 @@
 public_id: 102668
 name: Sakura
 kind: settlement
+designation: city of Japan
+parent: chiba
 location: [140.22394, 35.72347]
 wikidata_id: Q498011
 metadata:

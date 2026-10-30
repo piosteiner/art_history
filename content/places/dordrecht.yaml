@@ -1,6 +1,8 @@
 public_id: 100821
 name: Dordrecht
 kind: settlement
+designation: municipality of the Netherlands
+parent: zuid-holland
 location: [4.67833, 51.79583]
 wikidata_id: Q26421
 metadata:

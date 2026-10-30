@@ -1,0 +1,45 @@
+public_id: 104826
+name: French Fifth Republic
+names:
+  - Fifth French Republic
+  - Fifth Republic
+  - 5th Republic
+  - 5th French Republic
+  - French 5th Republic
+  - French Republic
+  - lang: nl
+    role: translation
+    text: Vijfde Franse Republiek
+  - lang: fr
+    role: translation
+    text: Cinquième République française
+  - lang: de
+    role: translation
+    text: Fünfte Französische Republik
+  - lang: it
+    role: translation
+    text: Quinta Repubblica francese
+  - lang: es
+    role: translation
+    text: Quinta República Francesa
+  - lang: ja
+    role: translation
+    text: フランス第五共和政
+  - lang: zh
+    role: translation
+    text: 法蘭西第五共和國
+  - lang: ko
+    role: translation
+    text: 프랑스 제5공화국
+  - lang: ru
+    role: translation
+    text: Пятая французская республика
+period: 1958-10-04/
+wikidata_id: Q200686
+metadata:
+  sources: [Wikidata Q200686 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q200686

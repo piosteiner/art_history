@@ -1,6 +1,8 @@
 public_id: 100982
 name: Lausanne
 kind: settlement
+designation: municipality of Switzerland
+parent: vaud
 location: [6.63333, 46.53333]
 wikidata_id: Q807
 metadata:

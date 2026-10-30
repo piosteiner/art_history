@@ -1,6 +1,8 @@
 public_id: 100983
 name: Deauville
 kind: settlement
+designation: commune of France
+parent: calvados
 location: [0.07444, 49.35917]
 wikidata_id: Q209021
 metadata:

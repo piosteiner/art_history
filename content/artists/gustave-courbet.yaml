@@ -2,6 +2,15 @@ public_id: 100189
 name: Gustave Courbet
 given_name: Gustave
 family_name: Courbet
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jean Désiré Gustave Courbet
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q34618
 birth: 1819-06-10
 death: 1877-12-31
 wikidata_id: Q34618

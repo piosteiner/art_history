@@ -1,0 +1,44 @@
+public_id: 104882
+name: allied-occupied Germany
+names:
+  - German Reich
+  - lang: nl
+    role: translation
+    text: geallieerde bezettingszones in Duitsland
+  - lang: fr
+    role: translation
+    text: Allemagne occupée
+  - lang: de
+    role: translation
+    text: Deutschland 1945 bis 1949
+  - lang: it
+    role: translation
+    text: zone di occupazione della Germania
+  - lang: es
+    role: translation
+    text: ocupación aliada en Alemania
+  - lang: ja
+    role: translation
+    text: 連合軍軍政期
+  - lang: zh
+    role: translation
+    text: 同盟國軍事占領德國
+  - lang: ko
+    role: translation
+    text: 연합군의 독일 점령 지역
+  - lang: ru
+    role: translation
+    text: Германия в 1945—1949 годах
+period: 1945-05-09/1949-05-23
+wikidata_id: Q2415901
+metadata:
+  sources: [Wikidata Q2415901 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/west-germany
+    period: 1949-05-23
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q2415901

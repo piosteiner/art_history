@@ -17,6 +17,7 @@ names:
     role: translation
     text: Кампионе-д’Италия
 kind: settlement
+designation: comune of Italy
 parent: province-of-como
 country_code: IT
 location: [8.97083, 45.97083]

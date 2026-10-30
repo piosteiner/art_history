@@ -20,7 +20,8 @@ names:
     role: translation
     text: Quioto
 kind: settlement
-parent: japan
+designation: city of Japan
+parent: kyoto-prefecture
 country_code: JP
 location: [135.76811, 35.01161]
 wikidata_id: Q34600

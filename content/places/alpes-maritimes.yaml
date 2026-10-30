@@ -1,0 +1,38 @@
+public_id: 104593
+name: Alpes-Maritimes
+kind: region
+designation: department of France
+parent: france
+boundary_code: FR-06
+wikidata_id: Q3139
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-savoy
+    period: 1416/1720-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q426025
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1720-08-24/1793-01-30
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303
+  - type: in_polity
+    to: polity/french-first-republic
+    period: 1793-01-31/1804-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q58296
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1804-05-18/1814-05-29
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1814-05-30/1860-06-13
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

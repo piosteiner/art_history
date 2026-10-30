@@ -1,6 +1,8 @@
 public_id: 102964
 name: Fodele
 kind: settlement
+designation: village
+parent: kriti
 location: [24.95617, 35.38015]
 wikidata_id: Q1417399
 metadata:

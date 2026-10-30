@@ -1,6 +1,7 @@
 public_id: 100874
 name: Copenhagen
 kind: settlement
+parent: hovedstaden
 location: [12.56889, 55.67611]
 wikidata_id: Q1748
 metadata:

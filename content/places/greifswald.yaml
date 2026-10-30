@@ -1,10 +1,43 @@
 public_id: 100991
 name: Greifswald
-kind: site
+kind: settlement
+designation: urban municipality in Germany
+parent: mecklenburg-vorpommern
 location: [13.38333, 54.08333]
 wikidata_id: Q4098
 metadata:
   sources: [Wikidata Q4098 (retrieved 2026-10-18)]
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 1648-10-24/1806-08-05
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/swedish-pomerania
+    period: 1648-10-24/1815-10-22
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q682318
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/kingdom-of-prussia
+    period: 1815-10-23/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q27306
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981
 sources:
   kind:
     - accessed: 2026-10-18

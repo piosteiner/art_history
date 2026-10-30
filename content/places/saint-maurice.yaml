@@ -1,6 +1,33 @@
 public_id: 102951
 name: Saint-Maurice
+names:
+  - lang: fr
+    role: former
+    text: Charenton-Saint-Maurice
+    period: 1790–24 December 1842
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q274327
+  - lang: fr
+    role: former
+    text: Montgravier
+    period: 1790–1790
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q274327
+  - lang: fr
+    role: former
+    text: Charenton-Républicain
+    period: 1790–1790
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q274327
 kind: settlement
+designation: commune of France
+parent: val-de-marne
 location: [2.43472, 48.81833]
 wikidata_id: Q274327
 metadata:

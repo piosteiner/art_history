@@ -1,0 +1,17 @@
+public_id: 103364
+name: Frederiksberg
+kind: settlement
+parent: hovedstaden
+location: [12.5327, 55.6779]
+wikidata_id: Q30096
+metadata:
+  sources: [Wikidata Q30096 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q30096
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q30096

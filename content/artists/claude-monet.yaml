@@ -2,6 +2,15 @@ public_id: 100049
 name: Claude Monet
 given_name: Claude
 family_name: Monet
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Oscar-Claude Monet
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q296
 birth: 1840-11-14
 death: 1926-12-05
 wikidata_id: Q296

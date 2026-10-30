@@ -1,6 +1,7 @@
 public_id: 102990
 name: Odesa
 kind: settlement
+parent: odessa
 location: [30.7325, 46.48417]
 wikidata_id: Q1874
 metadata:

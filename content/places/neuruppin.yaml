@@ -1,6 +1,8 @@
 public_id: 100107
 name: Neuruppin
-kind: site
+kind: settlement
+designation: medium-sized district town
+parent: brandenburg
 location: [12.8, 52.92222]
 wikidata_id: Q16085
 metadata:

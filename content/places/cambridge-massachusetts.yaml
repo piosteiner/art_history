@@ -1,0 +1,18 @@
+public_id: 100835
+name: Cambridge
+kind: settlement
+designation: city in Massachusetts
+parent: massachusetts
+location: [-71.10611, 42.375]
+wikidata_id: Q49111
+metadata:
+  sources: [Wikidata Q49111 (retrieved 2026-10-18)]
+sources:
+  kind:
+    - accessed: 2026-10-18
+      property: P31
+      wikidata: Q49111
+  location:
+    - accessed: 2026-10-18
+      property: P625
+      wikidata: Q49111

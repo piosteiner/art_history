@@ -2,4 +2,31 @@ public_id: 100344
 name: Hermann Göring
 given_name: Hermann
 family_name: Göring
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Hermann Wilhelm Göring
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q47906
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Der Eiserne
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q47906
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Lametta-Hermann
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q47906
 wikidata_id: Q47906
+metadata:
+  sources: [Wikidata Q47906 (retrieved 2026-10-29)]

@@ -1,6 +1,8 @@
 public_id: 103039
 name: Rouen
 kind: settlement
+designation: commune of France
+parent: seine-maritime
 location: [1.1025, 49.44306]
 wikidata_id: Q30974
 metadata:

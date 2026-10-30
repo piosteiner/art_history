@@ -25,7 +25,9 @@ names:
   - lang: ru
     role: translation
     text: Мадридский Алькасар
-kind: site
+kind: building
+designation: alcázar
+existed: 900/1734-12-24
 parent: madrid
 country_code: ES
 location: [-3.71417, 40.4181]

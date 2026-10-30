@@ -1,6 +1,8 @@
 public_id: 101277
 name: Colmar
 kind: settlement
+designation: commune of France
+parent: haute-rhin
 location: [7.355, 48.08111]
 wikidata_id: Q130994
 metadata:

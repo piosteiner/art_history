@@ -1,6 +1,6 @@
 public_id: 101274
 name_lang: de
-name: Königreich Italien
+name: Kingdom of Italy
 names:
   - lang: de
     role: translation
@@ -13,6 +13,10 @@ period: 1861-03-17/1946-06-18
 wikidata_id: Q172579
 metadata:
   sources: [Wikidata Q172579 (retrieved 2026-10-19)]
+relationships:
+  - type: succeeded_by
+    to: polity/italy
+    period: 1946-06-18
 sources:
   period:
     - accessed: 2026-10-19

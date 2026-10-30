@@ -1,6 +1,8 @@
 public_id: 103000
 name: Maaseik
-kind: site
+kind: settlement
+designation: Belgian municipality with the title of city
+parent: limburg-belgium
 location: [5.78556, 51.10194]
 wikidata_id: Q110989
 metadata:

@@ -1,14 +1,28 @@
 public_id: 100254
 name: Barcelona
+names:
+  - kind: nickname
+    lang: es
+    role: alternative
+    text: Ciudad Condal
 kind: settlement
+designation: municipality of Catalonia
+parent: barcelones
+country_code: ES
 location: [2.17694, 41.3825]
 wikidata_id: Q1492
 metadata:
   sources: [Wikidata Q1492 (retrieved 2026-10-13)]
+identifiers:
+  gnd: 4004503-1
 sources:
   kind:
     - accessed: 2026-10-13
       property: P31
+      wikidata: Q1492
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q1492
   location:
     - accessed: 2026-10-13

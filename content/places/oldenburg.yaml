@@ -1,10 +1,49 @@
 public_id: 103303
 name: Oldenburg
 kind: settlement
+designation: independent city of Germany
+parent: niedersachsen
 location: [8.21389, 53.14389]
 wikidata_id: Q2936
 metadata:
   sources: [Wikidata Q2936 (retrieved 2026-10-28)]
+relationships:
+  - type: in_polity
+    to: polity/grand-duchy-of-oldenburg
+    period: 1806-08-06/1811-02-27
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q693669
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1808-10-14/1810-12-13
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1811-02-28/1813-11-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/grand-duchy-of-oldenburg
+    period: 1813-11-27/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q693669
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981
 sources:
   kind:
     - accessed: 2026-10-28

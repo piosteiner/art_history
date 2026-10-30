@@ -13,8 +13,17 @@ names:
   - lang: ru
     role: translation
     text: Мёдон
+  - lang: fr
+    role: former
+    text: Rabelais
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q234735
 kind: settlement
-parent: france
+designation: commune of France
+parent: hauts-de-seine
 country_code: FR
 location: [2.24028, 48.8075]
 wikidata_id: Q234735

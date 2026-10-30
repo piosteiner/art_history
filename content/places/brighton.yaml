@@ -17,7 +17,7 @@ names:
   - lang: ru
     role: translation
     text: Брайтон
-kind: site
+kind: settlement
 parent: brighton-and-hove
 country_code: GB
 location: [-0.1375, 50.82083]

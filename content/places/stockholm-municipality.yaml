@@ -1,6 +1,8 @@
 public_id: 102013
 name: Stockholm Municipality
-kind: site
+kind: region
+designation: municipality of Sweden
+parent: stockholm-county
 location: [18.05472, 59.3275]
 wikidata_id: Q506250
 metadata:

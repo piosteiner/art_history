@@ -1,6 +1,8 @@
 public_id: 103179
 name: San Giovanni Valdarno
 kind: settlement
+designation: comune of Italy
+parent: province-of-arezzo
 location: [11.53278, 43.56444]
 wikidata_id: Q52097
 metadata:

@@ -6,6 +6,14 @@ names:
   - lang: it
     role: translation
     text: Ritratto di Sonja Knips
+  - kind: birth
+    lang: de-AT
+    role: former
+    text: Sophia Amalia Maria Potier des Echelles
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q61061297
 kind: person
 occupations: [patron of the arts]
 birth: 1873-12-02

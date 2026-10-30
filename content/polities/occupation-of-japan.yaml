@@ -1,0 +1,43 @@
+public_id: 104862
+name: Occupation of Japan
+names:
+  - Allied occupation of Japan
+  - Occupied Japan
+  - American occupation of Japan
+  - the Occupation of Japan
+  - lang: nl
+    role: translation
+    text: bezetting van Japan
+  - lang: fr
+    role: translation
+    text: occupation du Japon
+  - lang: de
+    role: translation
+    text: Besatzungszeit in Japan
+  - lang: it
+    role: translation
+    text: Occupazione del Giappone
+  - lang: es
+    role: translation
+    text: Ocupación de Japón
+  - lang: ja
+    role: translation
+    text: 連合国軍占領下の日本
+  - lang: zh
+    role: translation
+    text: 同盟國軍事佔領日本
+  - lang: ko
+    role: translation
+    text: 연합군 점령하 일본
+  - lang: ru
+    role: translation
+    text: оккупация Японии
+period: 1945/1952-04-28
+wikidata_id: Q696251
+metadata:
+  sources: [Wikidata Q696251 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q696251

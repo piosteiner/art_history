@@ -3,17 +3,69 @@ name: Paul Gauguin
 given_name: Paul
 family_name: Gauguin
 sort_name: Gauguin, Paul
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Eugène Henri Paul Gauguin
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q37693
 birth: 1848-06-07
 death: 1903-05-08
 biography_md: French painter, former stockbroker. Leading figure of the Pont-Aven school and Synthetism; spent nine weeks with Van Gogh in Arles in 1888 and his later years in Tahiti and the Marquesas Islands in French Polynesia[[source/wikipedia-en-paul-gauguin|“Initially working as a stockbroker” · “His painting later evolved towards Synthetism” · “In 1888, at Theo’s instigation, Gauguin and Vincent spent nine weeks painting together at Vincent’s Yellow House in Arles” · “Gauguin’s later years in Tahiti and the Marquesas Islands were marked by health problems and financial struggles”]][[source/wikipedia-en-post-impressionism|“encompasses Les Nabis, Neo-Impressionism, Symbolism, Cloisonnism, the Pont-Aven School, and Synthetism”]].
 wikidata_id: Q37693
+metadata:
+  sources: [Wikidata Q37693 (retrieved 2026-10-29)]
 relationships:
+  - type: nationality
+    to: polity/france
+    sources:
+      - accessed: 2026-10-29
+        property: P27
+        wikidata: Q37693
   - type: born_in
     to: place/paris
     period: 1848-06-07
+    sources:
+      - accessed: 2026-10-29
+        property: P19
+        wikidata: Q37693
+  - type: died_in
+    to: place/fatu-hiva
+    sources:
+      - accessed: 2026-10-29
+        property: P20
+        wikidata: Q37693
   - type: died_in
     to: place/atuona
     period: 1903-05-08
+    sources:
+      - accessed: 2026-10-29
+        property: P20
+        wikidata: Q37693
+  - type: lived_in
+    to: place/paris
+    sources:
+      - accessed: 2026-10-29
+        property: P551
+        wikidata: Q37693
+  - type: lived_in
+    to: place/frederiksberg
+    period: 1884/1885-04
+    sources:
+      - accessed: 2026-10-29
+        property: P551
+        wikidata: Q37693
+  - type: lived_in
+    to: place/n-rregade
+    period: 1885-04
+    period_label: from April 1885
+    sources:
+      - accessed: 2026-10-29
+        property: P551
+        wikidata: Q37693
   - type: lived_in
     to: place/arles
     period: 1888-10-23/1888-12-25
@@ -21,24 +73,199 @@ relationships:
   - type: lived_in
     to: place/tahiti
     period: 1891/1893
+    sources:
+      - accessed: 2026-10-29
+        property: P551
+        wikidata: Q37693
   - type: lived_in
     to: place/tahiti
     period: 1895/1901
   - type: lived_in
     to: place/atuona
     period: 1901/1903-05-08
+  - type: worked_in
+    to: place/arles
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/australia
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/ceret
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/copenhagen
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/french-polynesia
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/marquesas-islands
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/martinique
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/panama
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/paris
+    period: 1870/1891
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/pont-aven
+    period: 1886/1891
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
+  - type: worked_in
+    to: place/tahiti
+    period: 1891/1901
+    sources:
+      - accessed: 2026-10-29
+        property: P937
+        wikidata: Q37693
   - type: visited
     to: place/pont-aven
     period: 1886
+  - type: influenced_by
+    to: artist/camille-pissarro
+    sources:
+      - accessed: 2026-10-29
+        property: P737
+        wikidata: Q37693
+  - type: influenced_by
+    to: artist/claude-monet
+    sources:
+      - accessed: 2026-10-29
+        property: P737
+        wikidata: Q37693
+  - type: influenced_by
+    to: artist/edgar-degas
+    sources:
+      - accessed: 2026-10-29
+        property: P737
+        wikidata: Q37693
+  - type: influenced_by
+    to: artist/eugene-delacroix
+    sources:
+      - accessed: 2026-10-29
+        property: P737
+        wikidata: Q37693
+  - type: influenced_by
+    to: artist/katsushika-hokusai
+    sources:
+      - accessed: 2026-10-29
+        property: P737
+        wikidata: Q37693
+  - type: influenced_by
+    to: artist/paul-cezanne
+    sources:
+      - accessed: 2026-10-29
+        property: P737
+        wikidata: Q37693
   - type: student_of
     to: artist/camille-pissarro
     sources:
       - accessed: 2026-10-18
         property: P802
         wikidata: Q134741
+      - accessed: 2026-10-29
+        property: P1066
+        wikidata: Q37693
   - type: contemporary_of
     to: artist/vincent-van-gogh
   - type: associated_with
+    to: movement/cloisonnism
+    sources:
+      - accessed: 2026-10-29
+        property: P135
+        wikidata: Q37693
+  - type: associated_with
+    to: movement/impressionism
+    sources:
+      - accessed: 2026-10-29
+        property: P135
+        wikidata: Q37693
+  - type: associated_with
+    to: movement/pont-aven-school
+    sources:
+      - accessed: 2026-10-29
+        property: P135
+        wikidata: Q37693
+  - type: associated_with
     to: movement/post-impressionism
+    sources:
+      - accessed: 2026-10-29
+        property: P135
+        wikidata: Q37693
+  - type: associated_with
+    to: movement/primitivism
+    sources:
+      - accessed: 2026-10-29
+        property: P135
+        wikidata: Q37693
+  - type: associated_with
+    to: movement/symbolism
+    sources:
+      - accessed: 2026-10-29
+        property: P135
+        wikidata: Q37693
+  - type: associated_with
+    to: movement/synthetism
+    sources:
+      - accessed: 2026-10-29
+        property: P135
+        wikidata: Q37693
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Paul_Gauguin_1891.png/1280px-Paul_Gauguin_1891.png
+    source_url: https://commons.wikimedia.org/wiki/File:Paul_Gauguin_1891.png
+    license: Public domain
+    credit: Louis-Maurice Boutet de Monvel
 identifiers:
+  bnf: 11904339p
   dome: "132"
+  gnd: "118537822"
+  idref: "026884348"
+  kulturnav: 0aad7b1b-de3b-4590-af54-de43a1a20c42
+  lc: n79055546
+  nlk: KAC201615564
+  rkd: "30451"
+  ulan: "500011421"
+  viaf: "27064953"
+sources:
+  birth:
+    - accessed: 2026-10-29
+      property: P569
+      wikidata: Q37693
+  death:
+    - accessed: 2026-10-29
+      property: P570
+      wikidata: Q37693

@@ -1,6 +1,8 @@
 public_id: 100231
 name: Villa Saint-Louis
-kind: site
+kind: building
+designation: villa
+parent: chambourcy
 location: [2.03488, 48.93138]
 wikidata_id: Q99407923
 metadata:

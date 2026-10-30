@@ -17,6 +17,7 @@ names:
     role: translation
     text: Комо
 kind: settlement
+designation: comune of Italy
 parent: province-of-como
 country_code: IT
 location: [9.08614, 45.81025]

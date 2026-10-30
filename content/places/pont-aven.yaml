@@ -1,6 +1,8 @@
 public_id: 100037
 name: Pont-Aven
 kind: settlement
-parent: france
+designation: commune of France
+parent: finistere
 country_code: FR
 location: [-3.747, 47.8553]
+wikidata_id: Q238377

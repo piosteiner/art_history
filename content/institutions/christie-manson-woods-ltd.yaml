@@ -7,6 +7,32 @@ website_url: https://www.christies.com
 wikidata_id: Q503176
 metadata:
   sources: [Wikidata Q503176 (retrieved 2026-10-28)]
+relationships:
+  - type: branch_in
+    to: place/new-york-city
+    period: 1977/
+    label: Park Avenue (Delmonico's Hotel), from 1997 Rockefeller Center
+    sources:
+      - url: https://en.wikipedia.org/wiki/Christie%27s
+        note: „In 1977 … the company opened its first international branch on Park Avenue in New York City“; 1997 a lease in Rockefeller Center
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/beverly-hills
+    period: 1997/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Christie%27s
+        note: „Christie's opened a Beverly Hills saleroom in 1997“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/paris
+    period: 2002/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Christie%27s
+        note: „In 2002, Christie's France held its first auction in Paris“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
 identifiers:
   gnd: 103357306X
   lc: no95020474

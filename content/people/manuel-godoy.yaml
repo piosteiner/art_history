@@ -24,6 +24,14 @@ names:
   - lang: ru
     role: translation
     text: Мануэль Годой
+  - kind: birth
+    lang: es
+    role: former
+    text: Manuel Godoy y Álvarez de Faria Ríos
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q316110
 kind: person
 occupations: [military personnel, politician, military officer, head of government]
 birth: 1767-05-12

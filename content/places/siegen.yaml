@@ -8,12 +8,32 @@ names:
     role: translation
     text: Зиген
 kind: settlement
-parent: germany
+designation: large district town
+parent: nordrhein-westfalen
 country_code: DE
 location: [8.01667, 50.87556]
 wikidata_id: Q3167
 metadata:
   sources: [Wikidata Q3167 (retrieved 2026-10-17)]
+relationships:
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1806-07-12/1813-11-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/grand-duchy-of-berg
+    period: 1806-07-12/1813-11-09
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q249428
+  - type: in_polity
+    to: polity/berg-general-governorate
+    period: 1813-11-25/1815-06-08
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1501799
 sources:
   kind:
     - accessed: 2026-10-17

@@ -1,0 +1,44 @@
+public_id: 104749
+name: province of Terni
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-TR
+wikidata_id: Q16286
+relationships:
+  - type: in_polity
+    to: polity/papal-states
+    period: 1540/1798-02-14
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/roman-republic-1798
+    period: 1798-02-15/1799-09-29
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q175881
+  - type: in_polity
+    to: polity/papal-states
+    period: 1799-09-30/1809-05-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1809-05-17/1814-05-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/papal-states
+    period: 1814-05-24/1860-11-03
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-11-04/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

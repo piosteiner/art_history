@@ -1,0 +1,36 @@
+public_id: 103345
+name: Cambridge
+names:
+  - lang: ja
+    role: translation
+    text: ケンブリッジ
+  - lang: zh
+    role: translation
+    text: 剑桥
+  - lang: ko
+    role: translation
+    text: 케임브리지
+  - lang: ru
+    role: translation
+    text: Кембридж
+kind: settlement
+designation: municipal borough
+parent: cambridgeshire
+country_code: GB
+location: [0.12823, 52.19714]
+wikidata_id: Q21713103
+metadata:
+  sources: [Wikidata Q21713103 (retrieved 2026-10-28)]
+sources:
+  kind:
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q21713103
+  parent:
+    - accessed: 2026-10-28
+      property: P131
+      wikidata: Q21713103
+  location:
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q21713103

@@ -1,6 +1,17 @@
 public_id: 103263
 name: Higashisengoku-chō
-kind: site
+names:
+  - lang: ja
+    role: former
+    text: 東千石馬場町
+    period: until 1899
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q11526287
+kind: district
+designation: chōchō
+parent: kagoshima
 location: [130.55328, 31.59197]
 wikidata_id: Q11526287
 metadata:

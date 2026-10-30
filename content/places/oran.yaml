@@ -1,6 +1,8 @@
 public_id: 103027
 name: Oran
 kind: settlement
+designation: commune of Algeria
+parent: oran-province
 location: [-0.63306, 35.69694]
 wikidata_id: Q131818
 metadata:

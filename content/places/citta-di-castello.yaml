@@ -15,6 +15,7 @@ names:
     role: translation
     text: Читта-ди-Кастелло
 kind: settlement
+designation: comune of Italy
 parent: province-of-perugia
 country_code: IT
 location: [12.23821, 43.45705]

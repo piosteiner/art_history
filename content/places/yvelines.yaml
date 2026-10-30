@@ -1,6 +1,9 @@
 public_id: 101868
 name: Yvelines
 kind: region
+designation: department of France
+parent: france
+boundary_code: FR-78
 location: [1.91667, 48.83333]
 wikidata_id: Q12820
 metadata:

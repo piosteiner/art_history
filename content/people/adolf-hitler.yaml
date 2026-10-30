@@ -15,6 +15,30 @@ names:
   - lang: ru
     role: translation
     text: Адольф Гитлер
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Böhmischer Gefreiter
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q352
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Onkel Wolf
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q352
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Wolf
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q352
 kind: person
 occupations: [politician, Holocaust perpetrator, soldier, painter, political writer, military commander, writer]
 birth: 1889-04-20

@@ -1,6 +1,8 @@
 public_id: 102993
 name: Seville
-kind: site
+kind: settlement
+designation: municipality of Spain
+parent: sevilla
 location: [-5.995, 37.38861]
 wikidata_id: Q8717
 metadata:

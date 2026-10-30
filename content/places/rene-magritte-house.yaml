@@ -1,6 +1,8 @@
 public_id: 103134
 name: René Magritte House
-kind: site
+kind: building
+designation: terrace house
+parent: brussels
 location: [4.33583, 50.87689]
 wikidata_id: Q1718294
 metadata:

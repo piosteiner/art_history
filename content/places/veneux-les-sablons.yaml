@@ -1,6 +1,8 @@
 public_id: 100228
 name: Veneux-les-Sablons
 kind: settlement
+designation: commune of France
+parent: seine-et-marne
 location: [2.79278, 48.37778]
 wikidata_id: Q1454790
 metadata:

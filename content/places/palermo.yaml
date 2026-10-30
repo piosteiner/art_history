@@ -18,6 +18,7 @@ names:
     role: translation
     text: Палермо
 kind: settlement
+designation: comune of Italy
 parent: metropolitan-city-of-palermo
 country_code: IT
 location: [13.36126, 38.11566]

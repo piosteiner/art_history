@@ -1,6 +1,17 @@
 public_id: 103269
 name: Gravelines
+names:
+  - lang: fr
+    role: former
+    text: Port-d'Aa
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q323399
 kind: settlement
+designation: commune of France
+parent: nord
 location: [2.1275, 50.98639]
 wikidata_id: Q323399
 metadata:

@@ -11,6 +11,7 @@ names:
     role: translation
     text: Ришелье
 kind: settlement
+designation: commune of France
 parent: canton-of-richelieu
 country_code: FR
 location: [0.32361, 47.01417]

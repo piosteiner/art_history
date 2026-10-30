@@ -1,14 +1,32 @@
 public_id: 103122
 name: Ashiya
-kind: site
+names:
+  - lang: ja
+    role: former
+    text: 精道村
+    period: 1 April 1889–10 November 1940
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q725514
+kind: settlement
+designation: city of Japan
+parent: hyogo
+country_code: JP
 location: [135.30411, 34.727]
 wikidata_id: Q725514
 metadata:
   sources: [Wikidata Q725514 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4245534-0
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q725514
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q725514
   location:
     - accessed: 2026-10-28

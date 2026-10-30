@@ -20,7 +20,8 @@ names:
   - lang: ru
     role: translation
     text: Самотраки
-kind: site
+kind: natural
+designation: island
 parent: samothraki-municipality
 country_code: GR
 location: [25.5875, 40.45]

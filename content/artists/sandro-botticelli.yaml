@@ -2,7 +2,16 @@ public_id: 101662
 name: Sandro Botticelli
 given_name: Sandro
 family_name: Botticelli
-names: [Alessandro Botticelli]
+names:
+  - Alessandro Botticelli
+  - kind: birth
+    lang: it
+    role: former
+    text: Alessandro di Mariano di Vanni Filipepi
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5669
 birth: c. 1445
 death: 1510-05-27
 wikidata_id: Q5669

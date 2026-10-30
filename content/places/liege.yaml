@@ -1,6 +1,8 @@
 public_id: 103240
 name: Liège
 kind: settlement
+designation: Belgian municipality with the title of city
+parent: province-of-liege
 location: [5.57056, 50.63972]
 wikidata_id: Q3992
 metadata:

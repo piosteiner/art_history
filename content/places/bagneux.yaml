@@ -1,14 +1,23 @@
 public_id: 103120
 name: Bagneux
 kind: settlement
+designation: commune of France
+parent: hauts-de-seine
+country_code: FR
 location: [2.3125, 48.79778]
 wikidata_id: Q161884
 metadata:
   sources: [Wikidata Q161884 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4398887-8
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q161884
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q161884
   location:
     - accessed: 2026-10-28

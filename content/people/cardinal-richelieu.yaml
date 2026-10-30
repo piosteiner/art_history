@@ -35,6 +35,14 @@ names:
   - lang: ru
     role: translation
     text: кардинал Ришельё
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: L’Éminence rouge
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q26702
 kind: person
 occupations: [politician, diplomat, art collector, writer, Catholic bishop, Catholic priest, minister]
 birth: 1585-09-09

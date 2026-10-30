@@ -1,6 +1,8 @@
 public_id: 102928
 name: Syracuse
 kind: settlement
+designation: comune of Italy
+parent: siracusa
 location: [15.2875, 37.06917]
 wikidata_id: Q13670
 metadata:

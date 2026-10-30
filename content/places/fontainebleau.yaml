@@ -16,6 +16,7 @@ names:
     role: translation
     text: Фонтенбло
 kind: settlement
+designation: commune of France
 parent: seine-et-marne
 country_code: FR
 location: [2.70167, 48.40889]

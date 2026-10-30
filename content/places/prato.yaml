@@ -1,6 +1,8 @@
 public_id: 103161
 name: Prato
 kind: settlement
+designation: comune of Italy
+parent: province-of-prato
 location: [11.09656, 43.88081]
 wikidata_id: Q13377
 metadata:

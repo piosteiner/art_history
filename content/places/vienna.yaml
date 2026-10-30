@@ -25,9 +25,19 @@ names:
   - lang: ru
     role: translation
     text: Вена
+  - lang: de-AT
+    role: former
+    text: Groß-Wien
+    period: 15 October 1938–1954
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q1741
 kind: settlement
+designation: federal state of Austria
 parent: austria
 country_code: AT
+boundary_code: AT-9
 location: [16.3725, 48.20833]
 wikidata_id: Q1741
 metadata:

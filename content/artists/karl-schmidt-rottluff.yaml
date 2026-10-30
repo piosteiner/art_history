@@ -22,6 +22,14 @@ names:
   - lang: ru
     role: translation
     text: Карл Шмидт-Ротлуф
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Karl Schmidt
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q161143
 birth: 1884-12-01
 death: 1976-08-10
 wikidata_id: Q161143

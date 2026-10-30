@@ -1,7 +1,8 @@
 public_id: 100043
 name: Utrecht
 kind: settlement
-parent: netherlands
+designation: municipality of the Netherlands
+parent: province-of-utrecht
 country_code: NL
 location: [5.1214, 52.0907]
 wikidata_id: Q803

@@ -1,6 +1,8 @@
 public_id: 100907
 name: Volendam
 kind: settlement
+designation: village
+parent: north-holland
 location: [5.0675, 52.49944]
 wikidata_id: Q903595
 metadata:

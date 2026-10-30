@@ -4,6 +4,13 @@ period: 1933-03-15/1945-05-23
 wikidata_id: Q7318
 metadata:
   sources: [Wikidata Q7318 (retrieved 2026-10-18)]
+relationships:
+  - type: succeeded_by
+    to: polity/allied-occupied-austria
+    period: 1945-04-27
+  - type: succeeded_by
+    to: polity/allied-occupied-germany
+    period: 1945-05-08
 sources:
   period:
     - accessed: 2026-10-18

@@ -1,6 +1,8 @@
 public_id: 103245
 name: Alicante
 kind: settlement
+designation: municipality of Spain
+parent: province-of-alicante
 location: [-0.48306, 38.34528]
 wikidata_id: Q11959
 metadata:

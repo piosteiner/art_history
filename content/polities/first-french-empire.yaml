@@ -1,0 +1,56 @@
+public_id: 104817
+name: First French Empire
+names:
+  - Greater French Empire
+  - Napoleonic Empire
+  - French Empire
+  - Napoleonic France
+  - French First Empire
+  - The 1st French Empire
+  - 1st French Empire
+  - lang: nl
+    role: translation
+    text: Eerste Franse Keizerrijk
+  - lang: fr
+    role: translation
+    text: Premier Empire français
+  - lang: de
+    role: translation
+    text: Erstes Kaiserreich
+  - lang: it
+    role: translation
+    text: Primo Impero francese
+  - lang: es
+    role: translation
+    text: Primer Imperio francés
+  - lang: ja
+    role: translation
+    text: フランス第一帝政
+  - lang: zh
+    role: translation
+    text: 法兰西第一帝国
+  - lang: ko
+    role: translation
+    text: 프랑스 제1제국
+  - lang: ru
+    role: translation
+    text: Первая французская империя
+period: 1804-05-18/1815-07-07
+wikidata_id: Q71084
+metadata:
+  sources: [Wikidata Q71084 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/sovereign-principality-of-the-united-netherlands
+    period: 1813-12-02
+  - type: succeeded_by
+    to: polity/bourbon-restoration-in-france
+    period: 1814-04-06
+  - type: succeeded_by
+    to: polity/bourbon-restoration-in-france
+    period: 1815-07-08
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q71084

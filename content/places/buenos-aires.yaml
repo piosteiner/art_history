@@ -1,6 +1,11 @@
 public_id: 100667
 name: Buenos Aires
+names: [Ciudad de Buenos Aires]
 kind: region
+designation: federal capital
+parent: argentina
+country_code: AR
+boundary_code: AR-C
 location: [-58.38194, -34.59972]
 wikidata_id: Q1486
 metadata:

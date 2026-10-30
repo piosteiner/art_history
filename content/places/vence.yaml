@@ -17,7 +17,8 @@ names:
     role: translation
     text: Ванс
 kind: settlement
-parent: france
+designation: commune of France
+parent: alpes-maritimes
 country_code: FR
 location: [7.11186, 43.72247]
 wikidata_id: Q192368

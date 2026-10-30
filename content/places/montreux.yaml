@@ -5,7 +5,8 @@ names:
     role: translation
     text: Монтрё
 kind: settlement
-parent: switzerland
+designation: municipality of Switzerland
+parent: vaud
 country_code: CH
 location: [6.9125, 46.435]
 wikidata_id: Q69354

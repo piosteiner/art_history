@@ -1,0 +1,44 @@
+public_id: 104840
+name: Republic of German-Austria
+names:
+  - German-Austria
+  - lang: nl
+    role: translation
+    text: Republiek Duits-Oostenrijk
+  - lang: fr
+    role: translation
+    text: République d'Autriche allemande
+  - lang: de
+    role: translation
+    text: Deutschösterreich
+  - lang: it
+    role: translation
+    text: Repubblica dell'Austria tedesca
+  - lang: es
+    role: translation
+    text: Austria alemana
+  - lang: ja
+    role: translation
+    text: ドイツ＝オーストリア共和国
+  - lang: zh
+    role: translation
+    text: 德意志奧地利共和國
+  - lang: ko
+    role: translation
+    text: 독일계 오스트리아
+  - lang: ru
+    role: translation
+    text: Германская Австрия
+period: 1918-11-12/1919-09-10
+wikidata_id: Q268970
+metadata:
+  sources: [Wikidata Q268970 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/first-republic-of-austria
+    period: 1919-10-21
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q268970

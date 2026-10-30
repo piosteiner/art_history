@@ -13,9 +13,26 @@ names:
   - lang: ru
     role: translation
     text: Осло
+  - lang: nb
+    role: former
+    text: Christiania
+    period: 1624–31 December 1924
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q585
+  - lang: nb
+    role: former
+    text: Kristiania
+    period: 1877–31 December 1924
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q585
 kind: settlement
 parent: norway
 country_code: NO
+boundary_code: NO-03
 location: [10.73889, 59.91333]
 wikidata_id: Q585
 metadata:

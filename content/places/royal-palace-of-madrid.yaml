@@ -28,6 +28,7 @@ names:
     role: translation
     text: Королевский дворец в Мадриде
 kind: building
+designation: official residence
 parent: madrid
 country_code: ES
 location: [-3.71431, 40.41796]

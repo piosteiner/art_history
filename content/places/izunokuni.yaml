@@ -14,7 +14,8 @@ names:
     role: translation
     text: Идзунокуни
 kind: settlement
-parent: japan
+designation: city of Japan
+parent: shizuoka-prefecture
 country_code: JP
 location: [138.92886, 35.02772]
 wikidata_id: Q863758

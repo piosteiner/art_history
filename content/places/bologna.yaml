@@ -1,6 +1,8 @@
 public_id: 101280
 name: Bologna
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-bologna
 location: [11.34278, 44.49389]
 wikidata_id: Q1891
 metadata:

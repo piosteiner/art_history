@@ -4,3 +4,11 @@ kind: country
 country_code: US
 boundary_code: US
 location: [-98.5795, 39.8283]
+wikidata_id: Q30
+relationships:
+  - type: in_polity
+    to: polity/united-states
+    period: 1776-07-04/
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q30

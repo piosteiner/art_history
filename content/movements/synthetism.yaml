@@ -1,0 +1,11 @@
+public_id: 103372
+name: synthetism
+kind: movement
+wikidata_id: Q847847
+metadata:
+  sources: [Wikidata Q847847 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q847847

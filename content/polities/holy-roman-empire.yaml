@@ -4,6 +4,13 @@ period: 962-02-07/1806-08-06
 wikidata_id: Q12548
 metadata:
   sources: [Wikidata Q12548 (retrieved 2026-10-18)]
+relationships:
+  - type: succeeded_by
+    to: polity/austrian-empire
+    period: 1804-08-11
+  - type: succeeded_by
+    to: polity/confederation-of-the-rhine
+    period: 1806-07-12
 sources:
   period:
     - accessed: 2026-10-18

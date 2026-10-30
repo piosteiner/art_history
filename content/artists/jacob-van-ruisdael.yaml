@@ -2,7 +2,16 @@ public_id: 101665
 name: Jacob van Ruisdael
 given_name: Jacob
 family_name: van Ruisdael
-names: [Jacob Isaakszoon van Ruisdael]
+names:
+  - Jacob Isaakszoon van Ruisdael
+  - kind: birth
+    lang: nl
+    role: alternative
+    text: Jacob Isaackszoon Van Ruisdael
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q213612
 birth: 1628
 death: 1682-03-10
 wikidata_id: Q213612

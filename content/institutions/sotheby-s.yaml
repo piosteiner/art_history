@@ -8,6 +8,40 @@ website_url: https://www.sothebys.com/
 wikidata_id: Q654762
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q654762 (retrieved 2026-10-28)]
+relationships:
+  - type: branch_in
+    to: place/london
+    period: 1744-03-11/
+    label: 34–35 New Bond Street (since 1917)
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sotheby%27s
+        note: „established on 11 March 1744 in London“; „In 1917, Sotheby's relocated from 13 Wellington Street to 34–35 New Bond Street, which remains as its London base“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/los-angeles
+    period: 1967/1982
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sotheby%27s
+        note: offices opened 1967; „In 1982 … its Los Angeles galleries were sold and West Coast auctions moved to New York“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/paris
+    period: 1967/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sotheby%27s
+        note: „Sotheby's opened offices in Paris and Los Angeles in 1967“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/hong-kong
+    period: 1973/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sotheby%27s
+        note: „became the first auction house to operate in Hong Kong in 1973“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Sotheby%27s_%2851921999492%29.jpg/1280px-Sotheby%27s_%2851921999492%29.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Sotheby%27s_(51921999492).jpg

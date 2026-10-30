@@ -1,6 +1,8 @@
 public_id: 100906
 name: Vlissingen
 kind: settlement
+designation: municipality of the Netherlands
+parent: zeeland
 location: [3.58333, 51.45]
 wikidata_id: Q10084
 metadata:

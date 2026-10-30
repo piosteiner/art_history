@@ -1,6 +1,7 @@
 public_id: 100899
 name: 8th arrondissement of Paris
-kind: site
+kind: district
+designation: municipal arrondissement of France
 parent: paris
 country_code: FR
 location: [2.31111, 48.87417]

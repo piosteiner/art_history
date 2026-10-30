@@ -14,6 +14,14 @@ names:
   - lang: ru
     role: translation
     text: Сюзанна Мане
+  - kind: birth
+    lang: nl
+    role: former
+    text: Suzanne Leenhoff
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q524534
 kind: person
 occupations: [pianist, model, collector]
 birth: 1829-10-30

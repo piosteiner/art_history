@@ -14,6 +14,7 @@ names:
     role: translation
     text: Амбуаз
 kind: settlement
+designation: commune of France
 parent: indre-et-loire
 country_code: FR
 location: [0.9825, 47.41139]

@@ -1,0 +1,16 @@
+public_id: 104944
+name: National Treasure (Japan)
+names:
+  - lang: ja
+    role: translation
+    text: "{国宝|こくほう}"
+  - lang: de
+    role: translation
+    text: Nationalschatz Japans
+  - lang: fr
+    role: translation
+    text: trésor national du Japon
+category: heritage designation
+parent: heritage-designation
+definition: "The highest designation of Japan’s Agency for Cultural Affairs for tangible cultural property: Important Cultural Properties of outstanding value (kokuhō)."
+wikidata_id: Q1139795

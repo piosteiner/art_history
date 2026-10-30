@@ -1,0 +1,13 @@
+public_id: 104949
+name: Monument historique (France)
+names:
+  - lang: de
+    role: translation
+    text: Monument historique
+  - lang: fr
+    role: translation
+    text: monument historique
+category: heritage designation
+parent: heritage-designation
+definition: A building, object or site protected by the French state, "classé" or "inscrit".
+wikidata_id: Q916475

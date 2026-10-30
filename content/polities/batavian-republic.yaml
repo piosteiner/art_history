@@ -1,0 +1,46 @@
+public_id: 104827
+name: Batavian Republic
+names:
+  - Batavian Commonwealth
+  - French occupation of the Netherlands
+  - French occupation of the Dutch Republic
+  - lang: nl
+    role: translation
+    text: Bataafse Republiek
+  - lang: fr
+    role: translation
+    text: République batave
+  - lang: de
+    role: translation
+    text: Batavische Republik
+  - lang: it
+    role: translation
+    text: Repubblica Batava
+  - lang: es
+    role: translation
+    text: República Bátava
+  - lang: ja
+    role: translation
+    text: バタヴィア共和国
+  - lang: zh
+    role: translation
+    text: 巴達維亞共和國
+  - lang: ko
+    role: translation
+    text: 바타비아 공화국
+  - lang: ru
+    role: translation
+    text: Батавская республика
+period: 1795-01-19/1806-06-05
+wikidata_id: Q188553
+metadata:
+  sources: [Wikidata Q188553 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-holland
+    period: 1806-06-05
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q188553

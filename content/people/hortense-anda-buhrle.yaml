@@ -2,6 +2,15 @@ public_id: 103315
 name: Hortense Anda-Bührle
 given_name: Hortense
 family_name: Anda-Bührle
+names:
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Hortense Bührle
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q1630202
 kind: person
 birth: 1926-05-18
 death: 2014-05-16

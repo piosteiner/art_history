@@ -13,6 +13,14 @@ names:
   - lang: ru
     role: translation
     text: Луиза Поммери
+  - kind: birth
+    lang: fr
+    role: former
+    text: Jeanne Alexandrine Louise Mélin
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q3175961
 kind: person
 occupations: [businessperson]
 birth: 1819-04-13

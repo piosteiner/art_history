@@ -1,6 +1,8 @@
 public_id: 100887
 name: Orvieto
 kind: settlement
+designation: comune of Italy
+parent: terni
 location: [12.10827, 42.7182]
 wikidata_id: Q541
 metadata:

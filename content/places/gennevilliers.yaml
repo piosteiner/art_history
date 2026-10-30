@@ -1,6 +1,8 @@
 public_id: 102935
 name: Gennevilliers
 kind: settlement
+designation: commune of France
+parent: hauts-de-seine
 location: [2.29444, 48.92556]
 wikidata_id: Q221968
 metadata:

@@ -1,0 +1,31 @@
+public_id: 103356
+name: Goslar district
+kind: region
+designation: district of Lower Saxony
+parent: niedersachsen
+location: [10.42111, 51.91056]
+wikidata_id: Q6040
+metadata:
+  sources: [Wikidata Q6040 (retrieved 2026-10-29)]
+relationships:
+  - type: in_polity
+    to: polity/kingdom-of-westphalia
+    period: 1807-08-18/1813-10-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153943
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1807-12-07/1813-10-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q6040
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q6040

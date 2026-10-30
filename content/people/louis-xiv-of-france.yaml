@@ -36,6 +36,14 @@ names:
   - lang: ru
     role: translation
     text: Людовик XIV
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: le Roi Soleil
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q7742
 kind: person
 occupations: [politician, art collector, actor, monarch, statesperson]
 birth: 1638-09-05

@@ -1,6 +1,8 @@
 public_id: 103228
 name: Opava
-kind: site
+kind: settlement
+designation: statutory city in the Czech Republic
+parent: moravskoslezsky
 location: [17.90444, 49.93806]
 wikidata_id: Q156080
 metadata:

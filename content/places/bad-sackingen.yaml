@@ -11,6 +11,7 @@ names:
     role: translation
     text: Бад-Зекинген
 kind: settlement
+designation: urban municipality in Germany
 parent: waldshut
 country_code: DE
 location: [7.94722, 47.55333]

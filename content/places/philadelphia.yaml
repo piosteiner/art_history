@@ -23,7 +23,8 @@ names:
     role: translation
     text: Filadélfia
 kind: settlement
-parent: united-states
+designation: county seat
+parent: pennsylvania
 country_code: US
 location: [-75.16361, 39.95278]
 wikidata_id: Q1345

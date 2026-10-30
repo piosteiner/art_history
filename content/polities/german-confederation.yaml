@@ -1,0 +1,43 @@
+public_id: 104896
+name: German Confederation
+names:
+  - lang: nl
+    role: translation
+    text: Duitse Bond
+  - lang: fr
+    role: translation
+    text: Confédération germanique
+  - lang: de
+    role: translation
+    text: Deutscher Bund
+  - lang: it
+    role: translation
+    text: Confederazione germanica
+  - lang: es
+    role: translation
+    text: Confederación Germánica
+  - lang: ja
+    role: translation
+    text: ドイツ連邦
+  - lang: zh
+    role: translation
+    text: 德意志邦聯
+  - lang: ko
+    role: translation
+    text: 독일 연방
+  - lang: ru
+    role: translation
+    text: Германский союз
+period: 1815-06-10/1866-08-24
+wikidata_id: Q151624
+metadata:
+  sources: [Wikidata Q151624 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/north-german-confederation
+    period: 1867-07-01
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q151624

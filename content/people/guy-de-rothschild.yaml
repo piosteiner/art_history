@@ -9,6 +9,14 @@ names:
   - lang: ru
     role: translation
     text: Ги де Ротшильд
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Guy Édouard Alphonse Paul de Rothschild
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q1379005
 kind: person
 occupations: [art collector, banker, collector]
 birth: 1909-05-21

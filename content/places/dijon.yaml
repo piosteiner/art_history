@@ -1,6 +1,8 @@
 public_id: 103250
 name: Dijon
 kind: settlement
+designation: commune of France
+parent: cote-d-or
 location: [5.04194, 47.32306]
 wikidata_id: Q7003
 metadata:

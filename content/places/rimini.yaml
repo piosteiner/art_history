@@ -1,6 +1,8 @@
 public_id: 103037
 name: Rimini
 kind: settlement
+designation: comune of Italy
+parent: province-of-rimini
 location: [12.56833, 44.05944]
 wikidata_id: Q13369
 metadata:

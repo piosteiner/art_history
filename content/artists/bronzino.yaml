@@ -1,5 +1,14 @@
 public_id: 102096
 name: Bronzino
+names:
+  - kind: birth
+    lang: it
+    role: former
+    text: Agnolo di Cosimo di Mariano
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q7803
 birth: 1503-11-27
 death: 1572-12-03
 wikidata_id: Q7803

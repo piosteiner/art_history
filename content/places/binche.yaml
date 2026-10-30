@@ -1,6 +1,8 @@
 public_id: 101195
 name: Binche
-kind: site
+kind: settlement
+designation: municipality of Belgium
+parent: hainaut
 location: [4.16516, 50.4103]
 wikidata_id: Q95121
 metadata:

@@ -7,6 +7,14 @@ names:
   - lang: ru
     role: translation
     text: Лодоис Мартен дю Тирак де Марселлю
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Marie-Louis Jean André Charles de Martin du Tyrac vicomte de Marcellus
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q3257799
 kind: person
 occupations: [philologist, diplomat, traveler, hellenist]
 birth: 1795-01-19

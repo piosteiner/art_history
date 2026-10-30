@@ -1,7 +1,57 @@
 public_id: 100031
 name: Japan
 kind: country
+designation: island country
 country_code: JP
 boundary_code: JP
 location: [138.2529, 36.2048]
 wikidata_id: Q17
+relationships:
+  - type: in_polity
+    to: polity/kamakura-shogunate
+    period: 1185/1333-07-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q736839
+  - type: in_polity
+    to: polity/kenmu-restoration
+    period: 1333-07-25/1336-10-18
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q826021
+  - type: in_polity
+    to: polity/ashikaga-shogunate
+    period: 1336/1573-09-03
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1154406
+  - type: in_polity
+    to: polity/azuchi-momoyama-period
+    period: 1573-09-04/1603-03-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q319531
+  - type: in_polity
+    to: polity/tokugawa-shogunate
+    period: 1603-03-24/1868-01-02
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q205662
+  - type: in_polity
+    to: polity/empire-of-japan
+    period: 1868-01-03/1947-05-02
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q188712
+  - type: in_polity
+    to: polity/occupation-of-japan
+    period: 1945-09-02/1952-04-28
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q696251
+  - type: in_polity
+    to: polity/japan
+    period: 1947-05-03/
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q17

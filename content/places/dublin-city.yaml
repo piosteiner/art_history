@@ -1,6 +1,8 @@
 public_id: 101722
 name: Dublin City
-kind: site
+kind: region
+designation: county of Ireland
+parent: dublin
 location: [-6.24922, 53.35512]
 wikidata_id: Q4169280
 metadata:

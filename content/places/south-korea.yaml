@@ -1,6 +1,8 @@
 public_id: 103152
 name: South Korea
 kind: country
+country_code: KR
+boundary_code: KR
 location: [128, 36]
 wikidata_id: Q884
 metadata:

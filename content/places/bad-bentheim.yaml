@@ -1,14 +1,42 @@
 public_id: 103252
 name: Bad Bentheim
-kind: site
+kind: settlement
+designation: urban municipality in Germany
+parent: niedersachsen
+country_code: DE
 location: [7.15972, 52.30306]
 wikidata_id: Q574332
 metadata:
   sources: [Wikidata Q574332 (retrieved 2026-10-28)]
+relationships:
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 12 July 1806–31 December 1810
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/grand-duchy-of-berg
+    period: 12 July 1806–31 December 1810
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q249428
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1 January 1811–10 November 1813
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+identifiers:
+  gnd: 4005532-2
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q574332
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q574332
   location:
     - accessed: 2026-10-28

@@ -1,0 +1,44 @@
+public_id: 104847
+name: Kingdom of Italy (Holy Roman Empire)
+names:
+  - Regnum Italiae
+  - Regnum Italicum
+  - Italian Kingdom
+  - Italy
+  - Regnum Italicorum
+  - lang: nl
+    role: translation
+    text: Koninkrijk Italië
+  - lang: fr
+    role: translation
+    text: Royaume d'Italie
+  - lang: de
+    role: translation
+    text: Königreich Italien (Heiliges Römisches Reich)
+  - lang: it
+    role: translation
+    text: Regno d'Italia
+  - lang: es
+    role: translation
+    text: Reino de Italia
+  - lang: ja
+    role: translation
+    text: イタリア王国
+  - lang: zh
+    role: translation
+    text: 意大利王国
+  - lang: ko
+    role: translation
+    text: 이탈리아 왕국
+  - lang: ru
+    role: translation
+    text: Королевство Италия
+period: 961/1806-08-06
+wikidata_id: Q838931
+metadata:
+  sources: [Wikidata Q838931 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q838931

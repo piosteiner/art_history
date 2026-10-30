@@ -14,8 +14,9 @@ names:
   - lang: ru
     role: translation
     text: Давос
-kind: site
-parent: switzerland
+kind: settlement
+designation: municipality of Switzerland
+parent: graubunden
 country_code: CH
 location: [9.83983, 46.80906]
 wikidata_id: Q68097

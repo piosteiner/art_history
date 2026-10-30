@@ -2,6 +2,15 @@ public_id: 101962
 name: Piero della Francesca
 given_name: Piero
 family_name: della Francesca
+names:
+  - kind: birth
+    lang: it
+    role: former
+    text: Piero di Benedetto dei Franceschi
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5822
 birth: 1415
 death: 1492-10-21
 wikidata_id: Q5822

@@ -1,0 +1,46 @@
+public_id: 104902
+name: Roman Republic (1798–1799)
+names:
+  - Repubblica Romana
+  - Prima Repubblica romana
+  - Roman Republic (1798-1799)
+  - Repubblica romana (1798-1799)
+  - Republica romana (1798-1799)
+  - République romaine (1798-1799)
+  - lang: nl
+    role: translation
+    text: Romeinse Republiek
+  - lang: fr
+    role: translation
+    text: République romaine
+  - lang: de
+    role: translation
+    text: Römische Republik
+  - lang: es
+    role: translation
+    text: República Romana
+  - lang: ja
+    role: translation
+    text: ローマ共和国
+  - lang: zh
+    role: translation
+    text: 罗马共和国
+  - lang: ko
+    role: translation
+    text: 로마 공화국
+  - lang: ru
+    role: translation
+    text: Римская республика
+period: 15 February 1798–30 September 1799
+wikidata_id: Q175881
+metadata:
+  sources: [Wikidata Q175881 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/papal-states
+    period: 1799-09-30
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q175881

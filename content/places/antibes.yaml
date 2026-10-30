@@ -1,6 +1,8 @@
 public_id: 103220
 name: Antibes
 kind: settlement
+designation: commune of France
+parent: alpes-maritimes
 location: [7.12306, 43.58]
 wikidata_id: Q126898
 metadata:

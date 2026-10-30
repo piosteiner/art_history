@@ -6,8 +6,9 @@ names:
   - lang: fr
     role: translation
     text: Massif des Alpilles
-kind: site
-parent: france
+kind: natural
+designation: mountain range
+parent: bouches-du-rhone
 country_code: FR
 location: [4.83306, 43.75]
 wikidata_id: Q2107098

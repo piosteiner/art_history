@@ -7,6 +7,31 @@ place: new-york-city
 wikidata_id: Q10288082
 metadata:
   sources: [Wikidata Q10288082 (retrieved 2026-10-18)]
+relationships:
+  - type: branch_in
+    to: place/paris
+    period: 1875/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Wildenstein_%26_Company
+        note: „founded in Paris during the 1870s by … Nathan Wildenstein“ — the firm's origin; New York (1903) is its seat here
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/london
+    period: 1925/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Wildenstein_%26_Company
+        note: „In 1925, the gallery opened a branch in London and, in 1929, another in Buenos Aires“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/buenos-aires
+    period: 1929/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Wildenstein_%26_Company
+        note: „In 1925, the gallery opened a branch in London and, in 1929, another in Buenos Aires“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/c/ce/Gimpel_%26_Wildenstein%2C_1907.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Gimpel_%26_Wildenstein,_1907.jpg

@@ -1,6 +1,8 @@
 public_id: 100815
 name: Rue du Bac
-kind: site
+kind: street
+designation: street
+parent: paris
 location: [2.32639, 48.85639]
 wikidata_id: Q1470209
 metadata:

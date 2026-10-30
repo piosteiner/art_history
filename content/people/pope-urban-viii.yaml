@@ -33,6 +33,14 @@ names:
   - lang: ru
     role: translation
     text: Урбан VIII
+  - kind: birth
+    lang: it
+    role: former
+    text: Maffeo Virginio Romolo Barberini
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q131579
 kind: person
 occupations: [Catholic priest, patron of the arts, writer, Catholic bishop, jurist]
 birth: 1568-04-15

@@ -1,5 +1,8 @@
 public_id: 103153
 name: Gyeonggi
 kind: region
+designation: province of South Korea
+parent: south-korea
 country_code: KR
 boundary_code: KR-41
+wikidata_id: Q20937

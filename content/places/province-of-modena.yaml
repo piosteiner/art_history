@@ -1,0 +1,26 @@
+public_id: 104736
+name: Province of Modena
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-MO
+wikidata_id: Q16209
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-modena-and-reggio
+    period: 1452/1859-06-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q252580
+  - type: in_polity
+    to: polity/united-provinces-of-central-italy
+    period: 1859-12-08/1860-03-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2268597
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-03-18/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

@@ -1,6 +1,7 @@
 public_id: 100903
 name: 2nd arrondissement of Paris
-kind: site
+kind: district
+designation: municipal arrondissement of France
 parent: paris
 country_code: FR
 location: [2.34047, 48.86688]

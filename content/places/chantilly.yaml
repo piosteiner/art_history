@@ -1,6 +1,17 @@
 public_id: 102922
 name: Chantilly
+names:
+  - lang: fr
+    role: former
+    text: Champ-Libre
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q126675
 kind: settlement
+designation: commune of France
+parent: oise
 location: [2.46083, 49.18694]
 wikidata_id: Q126675
 metadata:

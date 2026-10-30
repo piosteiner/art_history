@@ -19,6 +19,11 @@ names:
   - lang: ru
     role: translation
     text: Жанна Батиста д’Альбер де Люинь
+  - text: comtesse de Verrue
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q293356
 kind: person
 occupations: [art collector, salonnière]
 birth: 1670-01-18

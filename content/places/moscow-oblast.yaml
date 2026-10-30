@@ -1,0 +1,16 @@
+public_id: 104738
+name: Moscow Oblast
+names:
+  - lang: ru
+    role: former
+    text: Центрально-Промышленная область
+    period: 14 January 1929–2 June 1929
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q1697
+kind: region
+designation: oblast of Russia
+parent: russia
+boundary_code: RU-MOS
+wikidata_id: Q1697

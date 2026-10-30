@@ -1,0 +1,41 @@
+public_id: 104922
+name: Prince-Bishopric of Würzburg
+names:
+  - Bishopric of Würzburg
+  - lang: nl
+    role: translation
+    text: Prinsbisdom Würzburg
+  - lang: fr
+    role: translation
+    text: principauté épiscopale de Wurtzbourg
+  - lang: de
+    role: translation
+    text: Hochstift Würzburg
+  - lang: it
+    role: translation
+    text: vescovato di Würzburg
+  - lang: es
+    role: translation
+    text: principado episcopal de Wurzburgo
+  - lang: ja
+    role: translation
+    text: ヴュルツブルク司教領
+  - lang: zh
+    role: translation
+    text: 维尔茨堡主教区
+  - lang: ru
+    role: translation
+    text: Вюрцбургское княжество-епископство
+period: 1168/1803
+wikidata_id: Q13427044
+metadata:
+  sources: [Wikidata Q13427044 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-bavaria
+    period: 1803-02-25
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q13427044

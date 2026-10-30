@@ -7,6 +7,31 @@ place: new-york-city
 wikidata_id: Q10288073
 metadata:
   sources: [Wikidata Q10288073 (retrieved 2026-10-28)]
+relationships:
+  - type: branch_in
+    to: place/paris
+    period: 1895/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Knoedler
+        note: „Knoedler opened branches in Paris (1895), Pittsburgh (1897), and London (1908)“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/pittsburgh
+    period: 1897/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Knoedler
+        note: „Knoedler opened branches in Paris (1895), Pittsburgh (1897), and London (1908)“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/london
+    period: 1908/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Knoedler
+        note: „Knoedler opened branches in Paris (1895), Pittsburgh (1897), and London (1908)“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
 images:
   - url: https://upload.wikimedia.org/wikipedia/commons/d/de/Goupil_Broadway_woodcut.png
     source_url: https://commons.wikimedia.org/wiki/File:Goupil_Broadway_woodcut.png

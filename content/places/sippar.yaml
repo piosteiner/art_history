@@ -15,7 +15,9 @@ names:
   - lang: ru
     role: translation
     text: Сиппар
-kind: site
+kind: archaeological
+designation: archaeological site
+parent: babil
 country_code: IQ
 location: [44.25215, 33.05883]
 wikidata_id: Q619707

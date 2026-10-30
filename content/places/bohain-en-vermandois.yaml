@@ -1,6 +1,17 @@
 public_id: 103202
 name: Bohain-en-Vermandois
+names:
+  - lang: fr
+    role: former
+    text: Bohain
+    period: until 8 June 1956
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q271329
 kind: settlement
+designation: commune of France
+parent: aisne
 location: [3.45472, 49.98639]
 wikidata_id: Q271329
 metadata:

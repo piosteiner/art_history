@@ -1,6 +1,8 @@
 public_id: 100829
 name: Venezuela
 kind: country
+country_code: VE
+boundary_code: VE
 location: [-67, 8]
 wikidata_id: Q717
 metadata:

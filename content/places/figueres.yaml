@@ -1,6 +1,8 @@
 public_id: 100240
 name: Figueres
-kind: site
+kind: settlement
+designation: municipality of Catalonia
+parent: gerona
 location: [2.95, 42.26667]
 wikidata_id: Q6839
 metadata:

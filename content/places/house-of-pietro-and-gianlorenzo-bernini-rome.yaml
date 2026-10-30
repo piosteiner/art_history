@@ -1,6 +1,8 @@
 public_id: 102914
 name: House of Pietro and Gianlorenzo Bernini (Rome)
 kind: building
+designation: house
+parent: rome
 location: [12.49744, 41.89753]
 wikidata_id: Q60345990
 metadata:

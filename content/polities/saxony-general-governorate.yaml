@@ -1,0 +1,13 @@
+public_id: 104936
+name: Saxony General Governorate
+names:
+  - lang: de
+    role: translation
+    text: Generalgouvernement Sachsen
+  - lang: ru
+    role: translation
+    text: Генерал-губернаторство Саксония
+period: 1813/1815
+wikidata_id: Q1501808
+metadata:
+  sources: [Wikidata Q1501808 (retrieved 2026-10-29)]

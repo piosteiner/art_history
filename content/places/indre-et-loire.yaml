@@ -1,6 +1,9 @@
 public_id: 101716
 name: Indre-et-Loire
 kind: region
+designation: department of France
+parent: france
+boundary_code: FR-37
 location: [0.66667, 47.25]
 wikidata_id: Q12556
 metadata:

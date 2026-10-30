@@ -1,6 +1,17 @@
 public_id: 100172
 name: Pittsburgh
+names:
+  - lang: en
+    role: former
+    text: Pittsburg
+    period: 1891–19 July 1911
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q1342
 kind: settlement
+designation: county seat
+parent: pennsylvania
 location: [-80, 40.44167]
 wikidata_id: Q1342
 metadata:

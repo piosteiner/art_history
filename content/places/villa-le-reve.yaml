@@ -1,6 +1,8 @@
 public_id: 103204
 name: villa Le Rêve
-kind: site
+kind: building
+designation: villa
+parent: vence
 location: [7.11068, 43.7273]
 wikidata_id: Q122222531
 metadata:

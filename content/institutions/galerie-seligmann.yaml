@@ -1,3 +1,20 @@
 public_id: 100315
 name: Galerie Seligmann
 kind: gallery
+place: paris
+address: Place Vendôme, Paris
+sources:
+  place:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      note: "Manet, Le Grand Duc: „Galerie Seligmann (Galerie), Paris“, by 10 June 1954 — Dr. Heyligers (Museum Boymans) to Walter Drack, 11 July 1955: the painting was „bei der Galerie Seligmann, Place Vendôme, Paris“. After the split of 1912 the Place Vendôme gallery was Arnold Seligmann's (Arnold Seligmann & Cie); Jacques moved to the rue de la Paix"
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-29
+  address:
+    - url: https://collection.kunsthaus.ch/de/collection/item/707967/
+      note: "Manet, Le Grand Duc: „Galerie Seligmann (Galerie), Paris“, by 10 June 1954 — Dr. Heyligers (Museum Boymans) to Walter Drack, 11 July 1955: the painting was „bei der Galerie Seligmann, Place Vendôme, Paris“. After the split of 1912 the Place Vendôme gallery was Arnold Seligmann's (Arnold Seligmann & Cie); Jacques moved to the rue de la Paix"
+      source: kunsthaus-zurich-sammlung-online
+      accessed: 2026-10-29
+    - url: https://en.wikipedia.org/wiki/Jacques_Seligmann_%26_Company
+      note: "1912: a lawsuit split the firm; Arnold kept the Place Vendôme venue (Arnold Seligmann & Co.), Jacques moved to 9 rue de la Paix"
+      source: en-wikipedia-org
+      accessed: 2026-10-29

@@ -1,0 +1,41 @@
+public_id: 104914
+name: Duchy of Nassau
+names:
+  - Herzogtum Nassau
+  - lang: nl
+    role: translation
+    text: Hertogdom Nassau
+  - lang: fr
+    role: translation
+    text: duché de Nassau
+  - lang: it
+    role: translation
+    text: Ducato di Nassau
+  - lang: es
+    role: translation
+    text: Ducado de Nassau
+  - lang: ja
+    role: translation
+    text: ナッサウ公国
+  - lang: zh
+    role: translation
+    text: 拿騷
+  - lang: ko
+    role: translation
+    text: 나사우 백작령
+  - lang: ru
+    role: translation
+    text: Нассау
+period: 1806/1866
+wikidata_id: Q836680
+metadata:
+  sources: [Wikidata Q836680 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-prussia
+    period: 1866-10-08
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q836680

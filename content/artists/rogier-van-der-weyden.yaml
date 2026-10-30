@@ -2,7 +2,16 @@ public_id: 101163
 name: Rogier van der Weyden
 given_name: Rogier
 family_name: van der Weyden
-names: [Rogier De La Pasture Weyden]
+names:
+  - Rogier De La Pasture Weyden
+  - kind: birth
+    lang: fr
+    role: former
+    text: Roger de le Pasture
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q68631
 birth: 1399/1400
 death: 1464-06-27
 wikidata_id: Q68631

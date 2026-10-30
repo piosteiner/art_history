@@ -1,6 +1,8 @@
 public_id: 101732
 name: Milos Municipality
-kind: site
+kind: settlement
+designation: municipality of Greece
+parent: notio-aigaio
 location: [24.50667, 36.70917]
 wikidata_id: Q20379354
 metadata:

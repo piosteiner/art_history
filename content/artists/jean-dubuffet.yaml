@@ -20,6 +20,21 @@ names:
   - lang: ru
     role: translation
     text: Жан Дюбюффе
+  - text: Jan du qu
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q170076
+  - text: J. Dubufe
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q170076
+  - text: Louis-Léon Bendy
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q170076
 birth: 1901-07-31
 death: 1985-05-12
 wikidata_id: Q170076

@@ -1,6 +1,8 @@
 public_id: 102989
 name: Berdychiv
-kind: site
+kind: settlement
+designation: city of regional significance of Ukraine
+parent: zhytomyr
 location: [28.6, 49.89194]
 wikidata_id: Q158799
 metadata:

@@ -1,0 +1,13 @@
+public_id: 104946
+name: Important Art Object (Japan)
+names:
+  - lang: ja
+    role: translation
+    text: "{重要美術品|じゅうようびじゅつひん}"
+  - lang: de
+    role: translation
+    text: Wichtiges Kunstobjekt (Japan)
+category: heritage designation
+parent: heritage-designation
+definition: The pre-war designation of 1933–1950 (jūyō bijutsuhin) for works not to leave Japan; kept for objects not designated since.
+wikidata_id: Q11644862

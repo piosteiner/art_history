@@ -1,6 +1,9 @@
 public_id: 101870
 name: Doubs
 kind: region
+designation: department of France
+parent: france
+boundary_code: FR-25
 location: [6.41667, 47.16667]
 wikidata_id: Q3361
 metadata:

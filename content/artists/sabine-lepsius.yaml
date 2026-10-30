@@ -2,6 +2,15 @@ public_id: 102445
 name: Sabine Lepsius
 given_name: Sabine
 family_name: Lepsius
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Sabine Graef
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q530383
 birth: 1864-01-15
 death: 1942-11-22
 wikidata_id: Q530383

@@ -1,0 +1,14 @@
+public_id: 104694
+name: Baden-Württemberg
+kind: region
+designation: federated state of Germany
+parent: germany
+boundary_code: DE-BW
+wikidata_id: Q985
+relationships:
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624

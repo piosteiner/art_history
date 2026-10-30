@@ -1,6 +1,8 @@
 public_id: 103156
 name: Tinchebray
 kind: settlement
+designation: commune of France
+parent: orne
 location: [-0.7331, 48.7636]
 wikidata_id: Q1115228
 metadata:

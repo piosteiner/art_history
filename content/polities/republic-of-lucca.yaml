@@ -1,0 +1,43 @@
+public_id: 104886
+name: Republic of Lucca
+names:
+  - lang: nl
+    role: translation
+    text: Republiek Lucca
+  - lang: fr
+    role: translation
+    text: République de Lucques
+  - lang: de
+    role: translation
+    text: Lucchesische Republik
+  - lang: it
+    role: translation
+    text: Repubblica di Lucca
+  - lang: es
+    role: translation
+    text: República de Lucca
+  - lang: ja
+    role: translation
+    text: ルッカ共和国
+  - lang: zh
+    role: translation
+    text: 盧卡共和國
+  - lang: ko
+    role: translation
+    text: 루카 공화국
+  - lang: ru
+    role: translation
+    text: Республика Лукка
+period: 1160/1805-06-22
+wikidata_id: Q1235720
+metadata:
+  sources: [Wikidata Q1235720 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/principality-of-lucca-and-piombino
+    period: 1805-06-23
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1235720

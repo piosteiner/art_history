@@ -1,6 +1,8 @@
 public_id: 102969
 name: Sluis-Aardenburg
 kind: settlement
+designation: municipality of the Netherlands
+parent: zeeland
 location: [3.38791, 51.30937]
 wikidata_id: Q2071094
 metadata:

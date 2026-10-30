@@ -1,6 +1,8 @@
 public_id: 103292
 name: Pistoia
 kind: settlement
+designation: comune of Italy
+parent: province-of-pistoia
 location: [10.91667, 43.93333]
 wikidata_id: Q13376
 metadata:

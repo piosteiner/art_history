@@ -1,6 +1,10 @@
 public_id: 101368
 name: Bratislava Region
-kind: site
+names: [Bratislavský]
+kind: region
+designation: region of Slovakia
+parent: slovakia
+boundary_code: SK-BL
 location: [17.10972, 48.14389]
 wikidata_id: Q183498
 metadata:

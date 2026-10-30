@@ -1,6 +1,8 @@
 public_id: 102960
 name: Zaventem
-kind: site
+kind: settlement
+designation: municipality of Belgium
+parent: flemish-brabant
 location: [4.46667, 50.88333]
 wikidata_id: Q28898
 metadata:

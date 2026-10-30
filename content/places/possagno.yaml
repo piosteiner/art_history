@@ -1,6 +1,8 @@
 public_id: 102932
 name: Possagno
 kind: settlement
+designation: comune of Italy
+parent: province-of-treviso
 location: [11.88333, 45.85]
 wikidata_id: Q29369
 metadata:

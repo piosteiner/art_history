@@ -17,6 +17,7 @@ names:
     role: translation
     text: Парма
 kind: settlement
+designation: comune of Italy
 parent: province-of-parma
 country_code: IT
 location: [10.328, 44.80147]

@@ -1,0 +1,25 @@
+public_id: 104935
+name: Electorate of Hesse (1803–1807)
+names:
+  - lang: fr
+    role: translation
+    text: électorat de Hesse
+  - lang: de
+    role: translation
+    text: Kurfürstentum Hessen
+  - lang: es
+    role: translation
+    text: electorado de Hesse
+period: 1803/1807
+wikidata_id: Q100594799
+metadata:
+  sources: [Wikidata Q100594799 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-westphalia
+    period: 1807-08-18
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q100594799

@@ -4,6 +4,14 @@ names:
   - lang: it
     role: original
     text: Michelangelo Buonarroti
+  - kind: birth
+    lang: it
+    role: former
+    text: Michelangelo di Lodovico Buonarroti Simoni
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5592
 birth: 1475-03-15
 death: 1564-02-28
 wikidata_id: Q5592

@@ -2,4 +2,15 @@ public_id: 100349
 name: Marcel Nicolle
 given_name: Marcel
 family_name: Nicolle
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Marcel Marie Léonce Nicolle
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q3289258
 wikidata_id: Q3289258
+metadata:
+  sources: [Wikidata Q3289258 (retrieved 2026-10-29)]

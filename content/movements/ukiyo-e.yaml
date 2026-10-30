@@ -10,7 +10,7 @@ description_md: |-
 wikidata_id: Q185905
 relationships:
   - type: active_in
-    to: place/edo
+    to: place/tokyo
   - type: active_in
     to: place/japan
     period: 17th–19th century

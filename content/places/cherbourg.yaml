@@ -1,6 +1,8 @@
 public_id: 103212
 name: Cherbourg
 kind: settlement
+designation: commune of France
+parent: manche
 location: [-1.6, 49.63333]
 wikidata_id: Q3667188
 metadata:

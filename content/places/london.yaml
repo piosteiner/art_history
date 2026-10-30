@@ -1,7 +1,7 @@
 public_id: 100032
 name: London
 kind: settlement
-parent: united-kingdom
+parent: city-of-westminster
 country_code: GB
 location: [-0.1278, 51.5074]
 wikidata_id: Q84

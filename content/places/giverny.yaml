@@ -1,7 +1,8 @@
 public_id: 100208
 name: Giverny
 kind: settlement
-parent: france
+designation: commune of France
+parent: eure
 country_code: FR
 location: [1.52917, 49.07611]
 wikidata_id: Q165061

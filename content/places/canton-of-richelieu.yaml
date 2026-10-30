@@ -1,6 +1,9 @@
 public_id: 101734
 name: canton of Richelieu
-kind: site
+kind: region
+designation: canton of France
+existed: until 21 March 2015
+parent: indre-et-loire
 location: [0.37295, 47.02421]
 wikidata_id: Q1151256
 metadata:

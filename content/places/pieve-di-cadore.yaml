@@ -1,6 +1,8 @@
 public_id: 103278
 name: Pieve di Cadore
 kind: settlement
+designation: comune of Italy
+parent: belluno
 location: [12.3753, 46.42871]
 wikidata_id: Q41065
 metadata:

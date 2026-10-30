@@ -1,6 +1,7 @@
 public_id: 100828
 name: Charlotte Amalie
-kind: site
+kind: settlement
+parent: u-s-virgin-islands
 location: [-64.95, 18.35]
 wikidata_id: Q51681
 metadata:

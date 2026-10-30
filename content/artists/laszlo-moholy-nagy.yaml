@@ -34,6 +34,19 @@ names:
   - lang: ru
     role: translation
     text: Ласло Мохой-Надь
+  - kind: birth
+    lang: hu
+    role: alternative
+    text: Weisz László
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q160448
+  - text: de Nagy
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q160448
 birth: 1895-07-20
 death: 1946-11-24
 wikidata_id: Q160448

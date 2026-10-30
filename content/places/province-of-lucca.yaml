@@ -1,0 +1,38 @@
+public_id: 104719
+name: Province of Lucca
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-LU
+wikidata_id: Q16202
+relationships:
+  - type: in_polity
+    to: polity/republic-of-lucca
+    period: 1160/1805-06-21
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1235720
+  - type: in_polity
+    to: polity/principality-of-lucca-and-piombino
+    period: 1805-06-23/1814-03-14
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q1995553
+  - type: in_polity
+    to: polity/duchy-of-lucca
+    period: 1815-06-09/1847-10-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q158290
+  - type: in_polity
+    to: polity/grand-duchy-of-tuscany
+    period: 1847-10-11/1860-03-21
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154849
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-03-22/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

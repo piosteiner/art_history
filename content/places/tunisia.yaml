@@ -1,6 +1,8 @@
 public_id: 100808
 name: Tunisia
 kind: country
+country_code: TN
+boundary_code: TN
 location: [10, 34]
 wikidata_id: Q948
 metadata:

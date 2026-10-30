@@ -19,13 +19,13 @@ metadata:
   sources: [Wikidata Q361174 (retrieved 2026-10-05)]
 relationships:
   - type: worked_in
-    to: place/edo
+    to: place/japan
     sources:
       - accessed: 2026-10-18
         property: P937
         wikidata: Q361174
   - type: worked_in
-    to: place/japan
+    to: place/tokyo
     sources:
       - accessed: 2026-10-18
         property: P937

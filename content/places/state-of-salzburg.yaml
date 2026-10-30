@@ -1,6 +1,10 @@
 public_id: 101504
 name: State of Salzburg
-kind: site
+names: [Salzburg]
+kind: region
+designation: federal state of Austria
+parent: austria
+boundary_code: AT-5
 location: [13.22, 47.42]
 wikidata_id: Q43325
 metadata:

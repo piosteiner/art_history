@@ -1,7 +1,25 @@
 public_id: 100038
 name: Saint-Rémy-de-Provence
+names:
+  - lang: fr
+    role: former
+    text: Saint-Rémy
+    period: until 12 April 1953
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q221507
+  - lang: fr
+    role: former
+    text: Glanum
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q221507
 kind: settlement
-parent: france
+designation: commune of France
+parent: bouches-du-rhone
 country_code: FR
 location: [4.8317, 43.789]
 wikidata_id: Q221507

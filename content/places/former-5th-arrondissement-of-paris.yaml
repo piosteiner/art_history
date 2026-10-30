@@ -1,6 +1,9 @@
 public_id: 103266
 name: former 5th arrondissement of Paris
-kind: site
+kind: district
+designation: former arrondissement of Paris
+existed: 11 October 1795–1860
+parent: paris
 location: [2.35746, 48.87197]
 wikidata_id: Q2845756
 metadata:

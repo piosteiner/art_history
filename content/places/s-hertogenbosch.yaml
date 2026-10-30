@@ -5,6 +5,7 @@ names:
     role: translation
     text: Herzogenbusch
 kind: settlement
+parent: noord-brabant
 location: [5.31667, 51.7]
 wikidata_id: Q2766547
 metadata:

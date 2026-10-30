@@ -1,0 +1,44 @@
+public_id: 104879
+name: Second Spanish Republic
+names:
+  - Spain
+  - lang: nl
+    role: translation
+    text: Tweede Spaanse Republiek
+  - lang: fr
+    role: translation
+    text: Seconde République espagnole
+  - lang: de
+    role: translation
+    text: Zweite Spanische Republik
+  - lang: it
+    role: translation
+    text: seconda Repubblica Spagnola
+  - lang: es
+    role: translation
+    text: Segunda República Española
+  - lang: ja
+    role: translation
+    text: スペイン第二共和政
+  - lang: zh
+    role: translation
+    text: 西班牙第二共和国
+  - lang: ko
+    role: translation
+    text: 스페인 제2공화국
+  - lang: ru
+    role: translation
+    text: Вторая испанская республика
+period: 1931-04-14/1939-04-01
+wikidata_id: Q178038
+metadata:
+  sources: [Wikidata Q178038 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/francoist-spain
+    period: 1939-04-01
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q178038

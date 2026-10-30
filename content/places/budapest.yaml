@@ -10,6 +10,7 @@ names:
 kind: settlement
 parent: hungary
 country_code: HU
+boundary_code: HU-BU
 location: [19.04083, 47.49833]
 wikidata_id: Q1781
 metadata:

@@ -1,6 +1,8 @@
 public_id: 100738
 name: Garches
 kind: settlement
+designation: commune of France
+parent: hauts-de-seine
 location: [2.18694, 48.84556]
 wikidata_id: Q246199
 metadata:

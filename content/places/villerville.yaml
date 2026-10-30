@@ -1,6 +1,8 @@
 public_id: 100984
 name: Villerville
 kind: settlement
+designation: commune of France
+parent: calvados
 location: [0.12861, 49.40083]
 wikidata_id: Q862217
 metadata:

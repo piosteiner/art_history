@@ -1,5 +1,14 @@
 public_id: 101156
 name: Carlota Joaquina of Spain
+names:
+  - kind: birth
+    lang: es
+    role: former
+    text: Carlota Joaquima d'Espanya
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q233603
 kind: person
 birth: 1775-04-25
 death: 1830-01-07

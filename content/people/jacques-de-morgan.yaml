@@ -14,6 +14,19 @@ names:
   - lang: ru
     role: translation
     text: Жак де Морган
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jacques Jean Marie de Morgan
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q541964
+  - text: Karagueuz Effendi
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q541964
 kind: person
 occupations: [anthropologist, archaeologist, engineer, geologist, mining engineer, Egyptologist, numismatist, civil engineer, biologist]
 birth: 1857-06-03

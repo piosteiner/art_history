@@ -1,6 +1,8 @@
 public_id: 100251
 name: Málaga
 kind: settlement
+designation: municipality of Spain
+parent: spain
 location: [-4.41667, 36.71667]
 wikidata_id: Q8851
 metadata:

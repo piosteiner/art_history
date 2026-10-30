@@ -1,10 +1,37 @@
 public_id: 100993
 name: Neubrandenburg
 kind: settlement
+designation: urban municipality in Germany
+parent: mecklenburg-vorpommern
 location: [13.26083, 53.55694]
 wikidata_id: Q3958
 metadata:
   sources: [Wikidata Q3958 (retrieved 2026-10-18)]
+relationships:
+  - type: in_polity
+    to: polity/grand-duchy-of-mecklenburg-strelitz
+    period: 1806-08-06/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q161215
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1808-02-22/1813-03-14
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981
 sources:
   kind:
     - accessed: 2026-10-18

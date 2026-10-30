@@ -1,6 +1,17 @@
 public_id: 100832
 name: La Roche-Guyon
+names:
+  - lang: fr
+    role: former
+    text: Roche-sur-Seine
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q837592
 kind: settlement
+designation: commune of France
+parent: val-d-oise
 location: [1.62944, 49.08167]
 wikidata_id: Q837592
 metadata:

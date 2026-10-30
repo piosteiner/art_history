@@ -1,6 +1,8 @@
 public_id: 100211
 name: Florence
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-florence
 location: [11.25417, 43.77139]
 wikidata_id: Q2044
 metadata:

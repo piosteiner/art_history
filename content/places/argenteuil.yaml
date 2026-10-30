@@ -1,6 +1,8 @@
 public_id: 100232
 name: Argenteuil
 kind: settlement
+designation: commune of France
+parent: val-d-oise
 location: [2.24889, 48.94778]
 wikidata_id: Q181946
 metadata:

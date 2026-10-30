@@ -14,6 +14,7 @@ names:
     role: translation
     text: Порденоне
 kind: settlement
+designation: comune of Italy
 parent: regional-decentralization-entity-of-pordenone
 country_code: IT
 location: [12.6563, 45.9626]

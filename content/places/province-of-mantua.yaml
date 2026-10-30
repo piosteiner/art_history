@@ -1,10 +1,52 @@
 public_id: 101730
 name: Province of Mantua
-kind: site
+names: [Mantova]
+kind: region
+designation: province of Italy
+parent: italy
+country_code: IT
+boundary_code: IT-MN
 location: [10.8, 45.16667]
 wikidata_id: Q16204
 metadata:
   sources: [Wikidata Q16204 (retrieved 2026-10-20)]
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-mantua
+    period: 1530-04-04/1797-10-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q766501
+  - type: in_polity
+    to: polity/cisalpine-republic
+    period: 1797-10-17/1802-01-24
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q213353
+  - type: in_polity
+    to: polity/italian-republic-napoleonic
+    period: 1802-01-26/1805-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q723118
+  - type: in_polity
+    to: polity/kingdom-of-italy-napoleonic
+    period: 1805-03-17/1814-04-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q223936
+  - type: in_polity
+    to: polity/austrian-empire
+    period: 1814-04-28/1815-04-06
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q131964
+  - type: in_polity
+    to: polity/kingdom-of-lombardy-venetia
+    period: 1815-04-07/1866-10-18
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q209857
 sources:
   kind:
     - accessed: 2026-10-20

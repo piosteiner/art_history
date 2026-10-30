@@ -1,5 +1,22 @@
 public_id: 102306
 name: Catherine II of Russia
+names:
+  - kind: birth
+    lang: de
+    role: former
+    text: Sophie Friederike Auguste von Anhalt-Zerbst
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q36450
+  - kind: birth
+    lang: de
+    role: former
+    text: Sophie Auguste Friederike von Anhalt-Zerbst-Dornburg
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q36450
 kind: person
 birth: 1729-05-02
 death: 1796-11-17

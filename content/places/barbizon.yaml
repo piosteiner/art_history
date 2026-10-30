@@ -1,14 +1,23 @@
 public_id: 100817
 name: Barbizon
 kind: settlement
+designation: commune of France
+parent: seine-et-marne
+country_code: FR
 location: [2.605, 48.44583]
 wikidata_id: Q256175
 metadata:
   sources: [Wikidata Q256175 (retrieved 2026-10-18)]
+identifiers:
+  gnd: 4004499-3
 sources:
   kind:
     - accessed: 2026-10-18
       property: P31
+      wikidata: Q256175
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q256175
   location:
     - accessed: 2026-10-18

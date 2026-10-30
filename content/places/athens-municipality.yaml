@@ -1,0 +1,18 @@
+public_id: 103353
+name: Athens Municipality
+kind: region
+designation: municipality of Greece
+parent: attiki
+location: [23.73604, 37.98888]
+wikidata_id: Q1224979
+metadata:
+  sources: [Wikidata Q1224979 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q1224979
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q1224979

@@ -11,6 +11,7 @@ names:
     role: translation
     text: Орнан
 kind: settlement
+designation: commune of France
 parent: doubs
 country_code: FR
 location: [6.14306, 47.10528]

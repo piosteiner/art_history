@@ -1,6 +1,8 @@
 public_id: 100843
 name: Fiesole
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-florence
 location: [11.3, 43.8]
 wikidata_id: Q82670
 metadata:

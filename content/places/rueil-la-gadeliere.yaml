@@ -1,6 +1,8 @@
 public_id: 103295
 name: Rueil-la-Gadelière
 kind: settlement
+designation: commune of France
+parent: eure
 location: [0.97639, 48.71472]
 wikidata_id: Q663912
 metadata:

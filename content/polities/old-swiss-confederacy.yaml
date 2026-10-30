@@ -1,0 +1,45 @@
+public_id: 104845
+name: Old Swiss Confederacy
+names:
+  - Swiss Confederation
+  - Switzerland
+  - lang: nl
+    role: translation
+    text: Oude Eedgenootschap
+  - lang: fr
+    role: translation
+    text: ancienne Confédération suisse
+  - lang: de
+    role: translation
+    text: Alte Eidgenossenschaft
+  - lang: it
+    role: translation
+    text: Vecchia Confederazione
+  - lang: es
+    role: translation
+    text: Antigua Confederación Suiza
+  - lang: ja
+    role: translation
+    text: 原スイス誓約同盟
+  - lang: zh
+    role: translation
+    text: 舊瑞士邦聯
+  - lang: ko
+    role: translation
+    text: 스위스 서약동맹
+  - lang: ru
+    role: translation
+    text: Швейцарский союз
+period: 1291-08/1798-03-05
+wikidata_id: Q435583
+metadata:
+  sources: [Wikidata Q435583 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/helvetic-republic
+    period: 1798-04-12
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q435583

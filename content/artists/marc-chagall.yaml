@@ -31,6 +31,22 @@ names:
   - lang: ko
     role: translation
     text: 마르크 샤갈
+  - kind: birth
+    lang: ru
+    role: alternative
+    text: Моисей Хацкелевич Шагал
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q93284
+  - kind: birth
+    lang: be
+    role: alternative
+    text: Мойша Захаравіч Шагалаў
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q93284
 birth: 1887-07-06
 death: 1985-03-28
 wikidata_id: Q93284

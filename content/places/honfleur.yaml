@@ -1,6 +1,8 @@
 public_id: 100819
 name: Honfleur
 kind: settlement
+designation: commune of France
+parent: calvados
 location: [0.23306, 49.41889]
 wikidata_id: Q231720
 metadata:

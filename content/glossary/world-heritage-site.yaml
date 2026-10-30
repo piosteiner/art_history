@@ -1,0 +1,16 @@
+public_id: 104947
+name: World Heritage Site
+names:
+  - lang: de
+    role: translation
+    text: UNESCO-Welterbe
+  - lang: fr
+    role: translation
+    text: patrimoine mondial
+  - lang: ja
+    role: translation
+    text: "{世界遺産|せかいいさん}"
+category: heritage designation
+parent: heritage-designation
+definition: A place inscribed on UNESCO’s World Heritage List for its outstanding universal value.
+wikidata_id: Q9259

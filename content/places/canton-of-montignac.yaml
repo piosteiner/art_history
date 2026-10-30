@@ -1,6 +1,9 @@
 public_id: 102179
 name: canton of Montignac
-kind: site
+kind: region
+designation: canton of France
+existed: until 21 March 2015
+parent: dordogne
 location: [1.12591, 45.04643]
 wikidata_id: Q1726321
 metadata:

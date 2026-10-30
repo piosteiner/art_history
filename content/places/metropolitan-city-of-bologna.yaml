@@ -1,0 +1,50 @@
+public_id: 104629
+name: Metropolitan City of Bologna
+kind: region
+designation: metropolitan city of Italy
+parent: italy
+boundary_code: IT-BO
+wikidata_id: Q18288145
+relationships:
+  - type: in_polity
+    to: polity/papal-states
+    period: 1506-11-10/1797-06-28
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/cisalpine-republic
+    period: 1797-06-29/1802-01-24
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q213353
+  - type: in_polity
+    to: polity/italian-republic-napoleonic
+    period: 1802-01-26/1805-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q723118
+  - type: in_polity
+    to: polity/kingdom-of-italy-napoleonic
+    period: 1805-03-17/1814-04-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q223936
+  - type: in_polity
+    to: polity/papal-states
+    period: 1815-06-09/1859-06-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q170174
+  - type: in_polity
+    to: polity/united-provinces-of-central-italy
+    period: 1859-12-08/1860-03-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2268597
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1860-03-18/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

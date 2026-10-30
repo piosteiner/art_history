@@ -1,0 +1,18 @@
+public_id: 103367
+name: Marquesas Islands
+kind: natural
+designation: archipelago
+parent: french-polynesia
+location: [-139.6, -8.9]
+wikidata_id: Q172697
+metadata:
+  sources: [Wikidata Q172697 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q172697
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q172697

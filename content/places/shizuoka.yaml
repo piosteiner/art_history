@@ -1,6 +1,8 @@
 public_id: 103148
 name: Shizuoka
 kind: settlement
+designation: city of Japan
+parent: shizuoka-prefecture
 location: [138.3825, 34.97556]
 wikidata_id: Q174691
 metadata:

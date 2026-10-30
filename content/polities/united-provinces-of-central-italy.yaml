@@ -1,0 +1,43 @@
+public_id: 104933
+name: United Provinces of Central Italy
+names:
+  - lang: nl
+    role: translation
+    text: Verenigde Provincies van Centraal-Italië
+  - lang: fr
+    role: translation
+    text: Provinces-Unies d'Italie centrale
+  - lang: de
+    role: translation
+    text: Vereinigte Provinzen von Mittelitalien
+  - lang: it
+    role: translation
+    text: Province Unite del Centro Italia
+  - lang: es
+    role: translation
+    text: Provincias Unidas de Italia Central
+  - lang: ja
+    role: translation
+    text: 中央統合諸州
+  - lang: zh
+    role: translation
+    text: 中意大利聯合省
+  - lang: ko
+    role: translation
+    text: 중앙이탈리아 연방
+  - lang: ru
+    role: translation
+    text: Объединённые провинции Центральной Италии
+period: 1859-12-08/1860-03-22
+wikidata_id: Q2268597
+metadata:
+  sources: [Wikidata Q2268597 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-sardinia
+    period: 1860-03-18
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q2268597

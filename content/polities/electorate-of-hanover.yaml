@@ -1,0 +1,44 @@
+public_id: 104934
+name: Electorate of Hanover
+names:
+  - Electorate of Brunswick-Lüneburg
+  - lang: nl
+    role: translation
+    text: Keurvorstendom Hannover
+  - lang: fr
+    role: translation
+    text: électorat de Brunswick-Lunebourg
+  - lang: de
+    role: translation
+    text: Kurfürstentum Braunschweig-Lüneburg
+  - lang: it
+    role: translation
+    text: Elettorato di Hannover
+  - lang: es
+    role: translation
+    text: Electorado de Brunswick-Luneburgo
+  - lang: ja
+    role: translation
+    text: ブラウンシュヴァイク＝リューネブルク選帝侯国
+  - lang: zh
+    role: translation
+    text: 不倫瑞克-呂訥堡公爵
+  - lang: ko
+    role: translation
+    text: 브라운슈바이크뤼네부르크 선제후국
+  - lang: ru
+    role: translation
+    text: Брауншвейг-Люнебург
+period: 1692/1814
+wikidata_id: Q706018
+metadata:
+  sources: [Wikidata Q706018 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-hanover
+    period: 1814-10-12
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q706018

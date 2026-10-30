@@ -1,0 +1,22 @@
+public_id: 104939
+name: Middle Rhine General Governorate
+names:
+  - lang: de
+    role: translation
+    text: Generalgouvernement Mittelrhein
+  - lang: ru
+    role: translation
+    text: Генерал-губернаторство Средний Рейн
+period: 2 February 1814–1815
+wikidata_id: Q1501803
+metadata:
+  sources: [Wikidata Q1501803 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/lower-and-middle-rhine-general-governorate
+    period: 1814-06-16
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1501803

@@ -1,6 +1,8 @@
 public_id: 103296
 name: Tournai
-kind: site
+kind: settlement
+designation: municipality of Belgium
+parent: hainaut
 location: [3.38806, 50.60556]
 wikidata_id: Q173219
 metadata:

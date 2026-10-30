@@ -1,7 +1,8 @@
 public_id: 100492
 name: Clarens
 kind: settlement
-parent: switzerland
+designation: village
+parent: vaud
 country_code: CH
 location: [6.894, 46.442]
 wikidata_id: Q178508

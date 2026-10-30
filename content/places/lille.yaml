@@ -1,6 +1,8 @@
 public_id: 102968
 name: Lille
 kind: settlement
+designation: commune of France
+parent: nord
 location: [3.0575, 50.63194]
 wikidata_id: Q648
 metadata:

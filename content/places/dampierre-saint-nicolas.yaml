@@ -1,6 +1,17 @@
 public_id: 100883
 name: Dampierre-Saint-Nicolas
+names:
+  - lang: fr
+    role: former
+    text: Dampierre
+    period: until 22 January 1903
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q644640
 kind: settlement
+designation: commune of France
+parent: seine-maritime
 location: [1.2, 49.85944]
 wikidata_id: Q644640
 metadata:

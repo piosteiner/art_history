@@ -1,6 +1,8 @@
 public_id: 103298
 name: Chelsea
-kind: site
+kind: district
+designation: civil parish
+parent: kensington-and-chelsea
 location: [-0.1684, 51.4875]
 wikidata_id: Q743535
 metadata:

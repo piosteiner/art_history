@@ -1,0 +1,45 @@
+public_id: 104820
+name: French Second Republic
+names:
+  - Second Republic
+  - Second Republic of France
+  - lang: nl
+    role: translation
+    text: Tweede Franse Republiek
+  - lang: fr
+    role: translation
+    text: Deuxième République
+  - lang: de
+    role: translation
+    text: Zweite Französische Republik
+  - lang: it
+    role: translation
+    text: Seconda Repubblica francese
+  - lang: es
+    role: translation
+    text: Segunda República francesa
+  - lang: ja
+    role: translation
+    text: フランス第二共和政
+  - lang: zh
+    role: translation
+    text: 法蘭西第二共和國
+  - lang: ko
+    role: translation
+    text: 프랑스 제2공화국
+  - lang: ru
+    role: translation
+    text: Вторая французская республика
+period: 1848-02-24/1852-12-02
+wikidata_id: Q58326
+metadata:
+  sources: [Wikidata Q58326 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/second-french-empire
+    period: 1852-12-02
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q58326

@@ -1,6 +1,8 @@
 public_id: 100737
 name: Chatou
 kind: settlement
+designation: commune of France
+parent: yvelines
 location: [2.15694, 48.89056]
 wikidata_id: Q240752
 metadata:

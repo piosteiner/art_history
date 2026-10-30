@@ -24,6 +24,7 @@ names:
     role: translation
     text: Турин
 kind: settlement
+designation: comune of Italy
 parent: metropolitan-city-of-turin
 country_code: IT
 location: [7.67611, 45.07917]

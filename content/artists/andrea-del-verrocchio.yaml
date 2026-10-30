@@ -2,7 +2,17 @@ public_id: 101948
 name: Andrea del Verrocchio
 given_name: Andrea
 family_name: del Verrocchio
-names: [Andrea di Michele di Francesco Cioni Verrocchio, Andrea di Michele di Francesco Cioni]
+names:
+  - Andrea di Michele di Francesco Cioni Verrocchio
+  - Andrea di Michele di Francesco Cioni
+  - kind: birth
+    lang: it
+    role: former
+    text: Andrea di Michele Cioni
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q183458
 birth: c. 1435
 death: 1488-10-16
 wikidata_id: Q183458

@@ -54,7 +54,7 @@ provenance:
     acquired: c. 1483
     ended: 1506
     method: creation
-    place: mantova
+    place: province-of-mantua
     label: probably for the artist's own devotion; found in his studio when he died in 1506
     sources:
       - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
@@ -65,7 +65,7 @@ provenance:
     acquired: 1506
     ended: 1507
     method: inheritance
-    place: mantova
+    place: province-of-mantua
     sources:
       - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
         note: venduto dal figlio Ludovico al cardinale Sigismondo Gonzaga
@@ -75,7 +75,7 @@ provenance:
     acquired: 1507
     method: purchase
     direct: true
-    place: mantova
+    place: province-of-mantua
     label: bought from Ludovico Mantegna; in the inventory of the Gonzaga, lords of Mantua, in 1627
     sources:
       - url: https://pinacotecabrera.org/collezioni/collezione-on-line/cristo-morto-nel-sepolcro-e-tre-dolenti/
@@ -88,7 +88,7 @@ provenance:
         accessed: 2026-10-20
     records:
       - date: "1627"
-        place: mantova
+        place: province-of-mantua
         document: Gonzaga inventory
         certainty: probable
   - owner: person/charles-i-of-england

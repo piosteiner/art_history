@@ -1,0 +1,39 @@
+public_id: 104912
+name: Grand Duchy of Frankfurt
+names:
+  - lang: nl
+    role: translation
+    text: Groothertogdom Frankfurt
+  - lang: fr
+    role: translation
+    text: grand-duché de Francfort
+  - lang: de
+    role: translation
+    text: Großherzogtum Frankfurt
+  - lang: it
+    role: translation
+    text: Granducato di Francoforte
+  - lang: es
+    role: translation
+    text: Gran Ducado de Fráncfort
+  - lang: ja
+    role: translation
+    text: フランクフルト大公国
+  - lang: zh
+    role: translation
+    text: 法兰克福大公国
+  - lang: ko
+    role: translation
+    text: 프랑크푸르트 대공국
+  - lang: ru
+    role: translation
+    text: Великое герцогство Франкфурт
+period: 1810/1813
+wikidata_id: Q704312
+metadata:
+  sources: [Wikidata Q704312 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q704312

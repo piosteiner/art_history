@@ -1,0 +1,45 @@
+public_id: 104872
+name: Francoist Spain
+names:
+  - Nationalist Spain
+  - Spanish State
+  - lang: nl
+    role: translation
+    text: Spaanse Staat
+  - lang: fr
+    role: translation
+    text: Espagne franquiste
+  - lang: de
+    role: translation
+    text: Franco-Diktatur
+  - lang: it
+    role: translation
+    text: Spagna franchista
+  - lang: es
+    role: translation
+    text: España franquista
+  - lang: ja
+    role: translation
+    text: フランコ体制下のスペイン
+  - lang: zh
+    role: translation
+    text: 佛朗哥时期
+  - lang: ko
+    role: translation
+    text: 프랑코 정권
+  - lang: ru
+    role: translation
+    text: Франкистская Испания
+period: 1 April 1939–20 November 1975
+wikidata_id: Q13474305
+metadata:
+  sources: [Wikidata Q13474305 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/spain
+    period: 1975-11-20
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q13474305

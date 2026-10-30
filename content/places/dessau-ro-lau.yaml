@@ -5,12 +5,44 @@ names:
     role: translation
     text: デッサウ=ロスラウ
 kind: settlement
-parent: germany
+designation: independent city of Saxony-Anhalt
+parent: sachsen-anhalt
 country_code: DE
 location: [12.23333, 51.83333]
 wikidata_id: Q3828
 metadata:
   sources: [Wikidata Q3828 (retrieved 2026-10-09)]
+relationships:
+  - type: in_polity
+    to: polity/anhalt-dessau
+    period: 1806-08-06/1863-05-21
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q278874
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1807-04-18/1813-11-04
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/duchy-of-anhalt
+    period: 1863-05-22/1871-01-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q16550783
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981
 sources:
   kind:
     - accessed: 2026-10-09

@@ -7,8 +7,17 @@ names:
   - lang: ko
     role: translation
     text: 고야초
+  - lang: ja
+    role: former
+    text: 高野村
+    period: 1 April 1889–1 November 1928
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q1346907
 kind: settlement
-parent: japan
+designation: town of Japan
+parent: wakayama-prefecture
 country_code: JP
 location: [135.58653, 34.21614]
 wikidata_id: Q1346907

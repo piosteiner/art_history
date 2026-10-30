@@ -1,6 +1,8 @@
 public_id: 103293
 name: Anchiano
-kind: site
+kind: district
+designation: frazione
+parent: metropolitan-city-of-florence
 location: [10.93813, 43.79917]
 wikidata_id: Q154184
 metadata:

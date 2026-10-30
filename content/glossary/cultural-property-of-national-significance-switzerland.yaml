@@ -1,0 +1,13 @@
+public_id: 104948
+name: Cultural property of national significance (Switzerland)
+names:
+  - lang: de
+    role: translation
+    text: Kulturgut von nationaler Bedeutung
+  - lang: fr
+    role: translation
+    text: bien culturel d’importance nationale
+category: heritage designation
+parent: heritage-designation
+definition: An A object of the Swiss Inventory of Cultural Property of National and Regional Significance (KGS inventory).
+wikidata_id: Q869941

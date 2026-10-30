@@ -2,4 +2,15 @@ public_id: 100445
 name: Gérard Louis-Dreyfus
 given_name: Gérard
 family_name: Louis-Dreyfus
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Gérard Charles Louis-Dreyfus
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q3124136
 wikidata_id: Q3124136
+metadata:
+  sources: [Wikidata Q3124136 (retrieved 2026-10-29)]

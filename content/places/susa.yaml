@@ -19,7 +19,8 @@ names:
   - lang: ru
     role: translation
     text: Сузы
-kind: site
+kind: archaeological
+designation: archaeological site
 parent: shush
 country_code: IR
 location: [48.25611, 32.18944]

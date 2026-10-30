@@ -1,0 +1,26 @@
+public_id: 104671
+name: Thuringia
+kind: region
+designation: federated state of Germany
+parent: germany
+boundary_code: DE-TH
+wikidata_id: Q1205
+relationships:
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/north-german-confederation
+    period: 1 July 1867–31 December 1870
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q150981
+  - type: in_polity
+    to: polity/east-germany
+    period: 1949-10-07/1990-10-02
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q16957

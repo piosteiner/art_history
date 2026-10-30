@@ -1,6 +1,8 @@
 public_id: 103141
 name: Isola Mantegna
-kind: site
+kind: district
+designation: frazione
+parent: province-of-padua
 location: [11.73245, 45.57044]
 wikidata_id: Q18498195
 metadata:

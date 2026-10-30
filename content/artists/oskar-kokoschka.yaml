@@ -2,22 +2,7 @@ public_id: 101579
 name: Oskar Kokoschka
 given_name: Oskar
 family_name: Kokoschka
-names:
-  - Oscar Kokoschka
-  - O. Kokoschka
-  - kokoschka
-  - lang: ja
-    role: translation
-    text: オスカー・ココシュカ
-  - lang: zh
-    role: translation
-    text: 奥斯卡·柯克西卡
-  - lang: ko
-    role: translation
-    text: 오스카르 코코슈카
-  - lang: ru
-    role: translation
-    text: Оскар Кокошка
+names: [Oscar Kokoschka, O. Kokoschka, Kokoschka]
 birth: 1886-03-01
 death: 1980-02-22
 wikidata_id: Q154260

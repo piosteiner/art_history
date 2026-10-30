@@ -1,6 +1,8 @@
 public_id: 103329
 name: Liechtenstein
 kind: country
+country_code: LI
+boundary_code: LI
 location: [9.55389, 47.145]
 wikidata_id: Q347
 metadata:

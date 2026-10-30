@@ -1,6 +1,8 @@
 public_id: 102970
 name: Arraiolos
-kind: site
+kind: settlement
+designation: municipality of Portugal
+parent: evora
 location: [-7.98433, 38.72292]
 wikidata_id: Q699141
 metadata:

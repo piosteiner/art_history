@@ -2,6 +2,15 @@ public_id: 101126
 name: Diego Velázquez
 given_name: Diego
 family_name: Velázquez
+names:
+  - kind: birth
+    lang: es
+    role: alternative
+    text: Diego Rodríguez de Silva y Velázquez
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q297
 birth: 1599-06-06
 death: 1660-08-07
 wikidata_id: Q297

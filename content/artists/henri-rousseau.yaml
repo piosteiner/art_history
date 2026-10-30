@@ -2,7 +2,23 @@ public_id: 100247
 name: Henri Rousseau
 given_name: Henri
 family_name: Rousseau
-names: [Henri Julien Felix Rousseau]
+names:
+  - Henri Julien Felix Rousseau
+  - text: Le Douanier Rousseau
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q156386
+  - text: Le Douanier
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q156386
+  - text: Celník
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q156386
 birth: 1844-05-21
 death: 1910-09-02
 wikidata_id: Q156386

@@ -2,6 +2,23 @@ public_id: 103140
 name: André Breton
 given_name: André
 family_name: Breton
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: André Robert Breton
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q161955
+  - kind: nickname
+    lang: es
+    role: alternative
+    text: Le pape du surréalisme
+    sources:
+      - accessed: 2026-10-29
+        property: P1449
+        wikidata: Q161955
 birth: 1896-02-19
 death: 1966-09-28
 wikidata_id: Q161955

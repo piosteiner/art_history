@@ -1,6 +1,10 @@
 public_id: 100227
 name: Seine-et-Marne
+names: [Seien-et-Marne]
 kind: region
+designation: department of France
+parent: france
+boundary_code: FR-77
 location: [3, 48.6]
 wikidata_id: Q12753
 metadata:

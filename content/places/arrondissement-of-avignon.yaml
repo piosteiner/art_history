@@ -1,0 +1,18 @@
+public_id: 103355
+name: arrondissement of Avignon
+kind: region
+designation: arrondissement of France
+parent: vaucluse
+location: [4.83333, 44.08333]
+wikidata_id: Q700549
+metadata:
+  sources: [Wikidata Q700549 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q700549
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q700549

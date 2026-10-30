@@ -5,7 +5,8 @@ names:
     role: translation
     text: Устер
 kind: settlement
-parent: switzerland
+designation: municipality of Switzerland
+parent: canton-of-zurich
 country_code: CH
 location: [8.71917, 47.34917]
 wikidata_id: Q64032

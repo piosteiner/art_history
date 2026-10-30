@@ -6,6 +6,24 @@ location: [2.29959, 48.87419]
 wikidata_id: Q15305978
 metadata:
   sources: [Wikidata Q15305978 (retrieved 2026-10-28)]
+relationships:
+  - type: branch_in
+    to: place/london
+    period: 1870-12/
+    label: 168 New Bond Street
+    sources:
+      - url: https://en.wikipedia.org/wiki/Paul_Durand-Ruel
+        note: „In December 1870, he opened … his new London gallery at 168 New Bond Street“ (the Society of French Artists' exhibitions); when it closed is not stated
+        source: en-wikipedia-org
+        accessed: 2026-10-29
+  - type: branch_in
+    to: place/new-york-city
+    period: 1887/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Paul_Durand-Ruel
+        note: „Durand-Ruel opened his first permanent gallery in the United States in 1887“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
 identifiers:
   bnf: "122082546"
   gnd: 1013368-9

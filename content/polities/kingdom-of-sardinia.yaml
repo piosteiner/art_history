@@ -1,0 +1,36 @@
+public_id: 104852
+name: Kingdom of Sardinia
+names:
+  - lang: fr
+    role: translation
+    text: royaume de Sardaigne
+  - lang: de
+    role: translation
+    text: Königreich Sardinien (1720-1861)
+  - lang: it
+    role: translation
+    text: Regno di Sardegna (1848-1861)
+  - lang: es
+    role: translation
+    text: Reino de Cerdeña-Piamonte
+  - lang: ja
+    role: translation
+    text: サルデーニャ王国
+  - lang: zh
+    role: translation
+    text: 撒丁王国
+  - lang: ko
+    role: translation
+    text: 피에몬테-사르데냐
+  - lang: ru
+    role: translation
+    text: Сардинское королевство
+period: 1720-08-24/1861-03-17
+wikidata_id: Q2577303
+metadata:
+  sources: [Wikidata Q2577303 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q2577303

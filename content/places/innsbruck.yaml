@@ -1,6 +1,8 @@
 public_id: 101279
 name: Innsbruck
 kind: settlement
+designation: statutory city of Austria
+parent: tirol
 location: [11.39333, 47.26833]
 wikidata_id: Q1735
 metadata:

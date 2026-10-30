@@ -1,6 +1,8 @@
 public_id: 101276
 name: Strasbourg
 kind: settlement
+designation: commune of France
+parent: bas-rhin
 location: [7.75222, 48.57333]
 wikidata_id: Q6602
 metadata:

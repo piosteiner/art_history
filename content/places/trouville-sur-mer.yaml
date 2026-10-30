@@ -1,6 +1,8 @@
 public_id: 100807
 name: Trouville-sur-Mer
 kind: settlement
+designation: commune of France
+parent: calvados
 country_code: FR
 location: [0.08167, 49.3675]
 wikidata_id: Q272320

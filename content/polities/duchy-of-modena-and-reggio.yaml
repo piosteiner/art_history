@@ -1,0 +1,39 @@
+public_id: 104856
+name: Duchy of Modena and Reggio
+names:
+  - lang: nl
+    role: translation
+    text: Hertogdom Modena en Reggio
+  - lang: fr
+    role: translation
+    text: duché de Modène et Reggio
+  - lang: de
+    role: translation
+    text: Herzogtum Modena
+  - lang: it
+    role: translation
+    text: Ducato di Modena e Reggio
+  - lang: es
+    role: translation
+    text: Ducado de Módena
+  - lang: ja
+    role: translation
+    text: モデナ＝レッジョ公国
+  - lang: zh
+    role: translation
+    text: 摩德納和雷焦公國
+  - lang: ko
+    role: translation
+    text: 모데나 레조 공국
+  - lang: ru
+    role: translation
+    text: Моденское герцогство
+period: 1452/1859
+wikidata_id: Q252580
+metadata:
+  sources: [Wikidata Q252580 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q252580

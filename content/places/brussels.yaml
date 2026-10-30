@@ -29,7 +29,8 @@ names:
     role: translation
     text: Bruxelas
 kind: settlement
-parent: belgium
+designation: municipality of Belgium
+parent: brussels-capital-region
 country_code: BE
 location: [4.35167, 50.84667]
 wikidata_id: Q239

@@ -1,0 +1,44 @@
+public_id: 104651
+name: Province of Alessandria
+kind: region
+designation: province of Italy
+parent: italy
+boundary_code: IT-AL
+wikidata_id: Q15097
+relationships:
+  - type: in_polity
+    to: polity/duchy-of-milan
+    period: 1395-05-19/1713-04-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153529
+  - type: in_polity
+    to: polity/duchy-of-savoy
+    period: 1713-04-11/1720-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q426025
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1720-08-24/1802-09-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303
+  - type: in_polity
+    to: polity/french-first-republic
+    period: 1802-09-11/1804-05-17
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q58296
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1804-05-18/1814-05-19
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1814-05-20/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

@@ -13,9 +13,12 @@ names:
   - lang: ru
     role: translation
     text: Вестминстер
+  - Westminster
 kind: settlement
+designation: London borough
 parent: united-kingdom
 country_code: GB
+boundary_code: GB-WSM
 location: [-0.13722, 51.4975]
 wikidata_id: Q179351
 metadata:

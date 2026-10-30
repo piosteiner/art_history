@@ -1,14 +1,24 @@
 public_id: 103176
 name: Avignon
 kind: settlement
+designation: commune of France
+parent: arrondissement-of-avignon
+country_code: FR
 location: [4.80833, 43.94861]
 wikidata_id: Q6397
 metadata:
   sources: [Wikidata Q6397 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4004019-7
+  hls: "006582"
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q6397
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q6397
   location:
     - accessed: 2026-10-28

@@ -1,6 +1,17 @@
 public_id: 103276
 name: Yugawara
-kind: site
+names:
+  - lang: ja
+    role: former
+    text: 土肥村
+    period: 1 April 1889–1 July 1926
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q532346
+kind: settlement
+designation: town of Japan
+parent: kanagawa
 location: [139.10831, 35.14789]
 wikidata_id: Q532346
 metadata:

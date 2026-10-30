@@ -1,6 +1,8 @@
 public_id: 103290
 name: Pratovecchio
-kind: site
+kind: district
+designation: abolished municipality in Italy
+parent: province-of-arezzo
 location: [11.72444, 43.78778]
 wikidata_id: Q52096
 metadata:

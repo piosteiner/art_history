@@ -1,0 +1,42 @@
+public_id: 104875
+name: July Monarchy
+names:
+  - lang: fr
+    role: original
+    text: Royaume de France
+  - Kingdom of France
+  - Monarchie de Juillet
+  - lang: nl
+    role: translation
+    text: Julimonarchie
+  - lang: it
+    role: translation
+    text: Monarchia di Luglio
+  - lang: es
+    role: translation
+    text: Monarquía de Julio
+  - lang: ja
+    role: translation
+    text: 7月王政
+  - lang: zh
+    role: translation
+    text: 七月王朝
+  - lang: ko
+    role: translation
+    text: 7월 왕정
+  - lang: ru
+    role: translation
+    text: Июльская монархия
+period: 1830/1848-02-24
+wikidata_id: Q58202
+metadata:
+  sources: [Wikidata Q58202 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/french-second-republic
+    period: 1848-02-24
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q58202

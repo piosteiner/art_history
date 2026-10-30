@@ -1,0 +1,32 @@
+public_id: 104698
+name: Metropolitan City of Genoa
+kind: region
+designation: metropolitan city of Italy
+parent: italy
+boundary_code: IT-GE
+wikidata_id: Q18288152
+relationships:
+  - type: in_polity
+    to: polity/republic-of-genoa
+    period: 1005/1797-06-13
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q174306
+  - type: in_polity
+    to: polity/ligurian-republic
+    period: 1797-06-14/1805-06-03
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q659312
+  - type: in_polity
+    to: polity/first-french-empire
+    period: 1805-06-04/1815-01-02
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q71084
+  - type: in_polity
+    to: polity/kingdom-of-sardinia
+    period: 1815-01-03/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q2577303

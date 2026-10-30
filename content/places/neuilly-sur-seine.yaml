@@ -1,6 +1,17 @@
 public_id: 100138
 name: Neuilly-sur-Seine
+names:
+  - lang: fr
+    role: former
+    text: Neuilly
+    period: until 1 May 1897
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q48958
 kind: settlement
+designation: commune of France
+parent: hauts-de-seine
 location: [2.2675, 48.88722]
 wikidata_id: Q48958
 metadata:

@@ -1,0 +1,62 @@
+public_id: 104863
+name: Japan
+names:
+  - kind: nickname
+    lang: ru
+    role: alternative
+    text: Страна Восходящего Солнца
+  - kind: nickname
+    lang: en
+    role: alternative
+    text: The Land of the Rising Sun
+  - kind: nickname
+    lang: de
+    role: alternative
+    text: Land der aufgehenden Sonne
+  - kind: nickname
+    lang: ja
+    role: alternative
+    text: 日出る国
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: Pays du Soleil levant
+  - State of Japan
+  - Land of the Rising Sun
+  - Nippon-koku
+  - Nihon-koku
+  - Iapan
+  - Iapon
+  - Land of Rising Sun
+  - lang: fr
+    role: translation
+    text: Japon
+  - lang: it
+    role: translation
+    text: Giappone
+  - lang: es
+    role: translation
+    text: Japón
+  - lang: ja
+    role: translation
+    text: 日本
+  - lang: ko
+    role: translation
+    text: 일본
+  - lang: ru
+    role: translation
+    text: Япония
+period: 1947-05-03/
+country_codes: [JP]
+wikidata_id: Q17
+metadata:
+  sources: [Wikidata Q17 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q17
+  country_codes:
+    - accessed: 2026-10-29
+      property: P297
+      wikidata: Q17

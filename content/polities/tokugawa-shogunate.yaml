@@ -1,0 +1,43 @@
+public_id: 104861
+name: Tokugawa shogunate
+names:
+  - Shogunate of Japan
+  - Japan
+  - Edo Japan
+  - lang: nl
+    role: translation
+    text: Tokugawa-shogunaat
+  - lang: fr
+    role: translation
+    text: shogunat Tokugawa
+  - lang: de
+    role: translation
+    text: Tokugawa-Shōgunat
+  - lang: it
+    role: translation
+    text: Shogunato Tokugawa
+  - lang: ja
+    role: translation
+    text: 江戸幕府
+  - lang: zh
+    role: translation
+    text: 江户幕府
+  - lang: ko
+    role: translation
+    text: 에도 막부
+  - lang: ru
+    role: translation
+    text: Сёгунат Токугава
+period: 1603-03-24/1867-11-09
+wikidata_id: Q205662
+metadata:
+  sources: [Wikidata Q205662 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/empire-of-japan
+    period: 1868-01-03
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q205662

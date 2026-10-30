@@ -2,4 +2,15 @@ public_id: 100257
 name: Ambroise Vollard
 given_name: Ambroise
 family_name: Vollard
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Henri Louis Ambroise Vollard
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q459041
 wikidata_id: Q459041
+metadata:
+  sources: [Wikidata Q459041 (retrieved 2026-10-29)]

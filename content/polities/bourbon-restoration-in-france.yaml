@@ -1,0 +1,44 @@
+public_id: 104818
+name: Bourbon Restoration in France
+names:
+  - Kingdom of France
+  - lang: nl
+    role: translation
+    text: Restauratie
+  - lang: fr
+    role: translation
+    text: Restauration
+  - lang: it
+    role: translation
+    text: Restaurazione francese
+  - lang: es
+    role: translation
+    text: Restauración borbónica en Francia
+  - lang: ja
+    role: translation
+    text: フランス復古王政
+  - lang: zh
+    role: translation
+    text: 波旁复辟
+  - lang: ko
+    role: translation
+    text: 부르봉 왕정복고
+  - lang: ru
+    role: translation
+    text: Реставрация Бурбонов
+period: 1815/1830-08-09
+wikidata_id: Q207162
+metadata:
+  sources: [Wikidata Q207162 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/first-french-empire
+    period: 1815-03-20
+  - type: succeeded_by
+    to: polity/july-monarchy
+    period: 1830-08-09
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q207162

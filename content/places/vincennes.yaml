@@ -14,7 +14,8 @@ names:
     role: translation
     text: Венсен
 kind: settlement
-parent: france
+designation: commune of France
+parent: val-de-marne
 country_code: FR
 location: [2.43917, 48.84778]
 wikidata_id: Q193819

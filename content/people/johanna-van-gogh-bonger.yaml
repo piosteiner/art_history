@@ -2,6 +2,15 @@ public_id: 101105
 name: Johanna van Gogh-Bonger
 given_name: Johanna
 family_name: van Gogh-Bonger
+names:
+  - kind: birth
+    lang: nl
+    role: alternative
+    text: Johanna Gezina Bonger
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q2554450
 kind: person
 birth: 1862-10-04
 death: 1925-09-02

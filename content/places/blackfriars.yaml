@@ -1,6 +1,8 @@
 public_id: 102959
 name: Blackfriars
-kind: site
+kind: district
+designation: area of London
+parent: camden
 location: [-0.10417, 51.5125]
 wikidata_id: Q880829
 metadata:

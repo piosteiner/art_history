@@ -1,0 +1,11 @@
+public_id: 103373
+name: cloisonnism
+kind: movement
+wikidata_id: Q889525
+metadata:
+  sources: [Wikidata Q889525 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q889525

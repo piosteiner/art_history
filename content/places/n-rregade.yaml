@@ -1,0 +1,18 @@
+public_id: 103365
+name: Nørregade
+kind: street
+designation: street
+parent: copenhagen
+location: [12.57125, 55.68029]
+wikidata_id: Q12329712
+metadata:
+  sources: [Wikidata Q12329712 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q12329712
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q12329712

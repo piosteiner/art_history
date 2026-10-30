@@ -1,0 +1,18 @@
+public_id: 103354
+name: Swabia
+kind: region
+designation: regional district in Bavaria
+parent: bayern
+location: [10.5, 48.5]
+wikidata_id: Q10557
+metadata:
+  sources: [Wikidata Q10557 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q10557
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q10557

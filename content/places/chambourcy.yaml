@@ -1,6 +1,8 @@
 public_id: 100739
 name: Chambourcy
 kind: settlement
+designation: commune of France
+parent: yvelines
 location: [2.04028, 48.90611]
 wikidata_id: Q275699
 metadata:

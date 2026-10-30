@@ -2,7 +2,16 @@ public_id: 100274
 name: Édouard Vuillard
 given_name: Édouard
 family_name: Vuillard
-names: [Edouard Vuilliard]
+names:
+  - Edouard Vuilliard
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Jean Édouard Vuillard
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q239394
 birth: 1868-11-11
 death: 1940-06-21
 wikidata_id: Q239394
@@ -52,19 +61,19 @@ relationships:
         source: bnf
         accessed: 2026-10-18
   - type: worked_in
-    to: place/kingdom-of-italy
-    sources:
-      - accessed: 2026-10-18
-        property: P937
-        wikidata: Q239394
-  - type: worked_in
-    to: place/kingdom-of-the-netherlands
+    to: place/italy
     sources:
       - accessed: 2026-10-18
         property: P937
         wikidata: Q239394
   - type: worked_in
     to: place/london
+    sources:
+      - accessed: 2026-10-18
+        property: P937
+        wikidata: Q239394
+  - type: worked_in
+    to: place/netherlands
     sources:
       - accessed: 2026-10-18
         property: P937

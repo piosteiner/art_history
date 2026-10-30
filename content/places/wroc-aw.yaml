@@ -1,6 +1,7 @@
 public_id: 102423
 name: Wrocław
 kind: settlement
+parent: lower-silesian
 location: [17.0325, 51.11]
 wikidata_id: Q1799
 metadata:

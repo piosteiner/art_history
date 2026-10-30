@@ -1,0 +1,20 @@
+public_id: 104796
+name: Canton of Zurich
+kind: region
+designation: canton of Switzerland
+parent: switzerland
+boundary_code: CH-ZH
+wikidata_id: Q11943
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 962–30 April 1351
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/old-swiss-confederacy
+    period: 1 May 1351–4 March 1798
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q435583

@@ -17,6 +17,14 @@ names:
   - lang: ru
     role: translation
     text: Андре Массон
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: André Aimé Masson
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q312529
 birth: 1896-01-04
 death: 1987-10-28
 wikidata_id: Q312529

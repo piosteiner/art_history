@@ -1,0 +1,43 @@
+public_id: 104905
+name: Free City of Frankfurt
+names:
+  - lang: nl
+    role: translation
+    text: Vrije Stad Frankfurt
+  - lang: fr
+    role: translation
+    text: Ville libre de Francfort
+  - lang: de
+    role: translation
+    text: Freie Stadt Frankfurt
+  - lang: it
+    role: translation
+    text: Libera città di Francoforte
+  - lang: es
+    role: translation
+    text: Ciudad Libre de Fráncfort
+  - lang: ja
+    role: translation
+    text: 自由都市フランクフルト
+  - lang: zh
+    role: translation
+    text: 法蘭克福自由市
+  - lang: ko
+    role: translation
+    text: 프랑크푸르트 자유시
+  - lang: ru
+    role: translation
+    text: Вольный город Франкфурт
+period: 1372/1866-10-08
+wikidata_id: Q704300
+metadata:
+  sources: [Wikidata Q704300 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-prussia
+    period: 1866-10-08
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q704300

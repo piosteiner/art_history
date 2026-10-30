@@ -1,6 +1,8 @@
 public_id: 102965
 name: Toledo
-kind: site
+kind: settlement
+designation: municipality of Spain
+parent: toledo-province
 location: [-4.03333, 39.86667]
 wikidata_id: Q5836
 metadata:

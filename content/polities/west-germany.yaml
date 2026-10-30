@@ -1,0 +1,48 @@
+public_id: 104834
+name: West Germany
+names:
+  - West-Deutschland
+  - BR Dtld.
+  - Federal Republic of Germany (1949–1990)
+  - Bonn Republic
+  - Second German Republic
+  - lang: nl
+    role: translation
+    text: Bondsrepubliek Duitsland
+  - lang: fr
+    role: translation
+    text: Allemagne de l'Ouest
+  - lang: de
+    role: translation
+    text: Bundesrepublik Deutschland bis 1990
+  - lang: it
+    role: translation
+    text: Germania Ovest
+  - lang: es
+    role: translation
+    text: Alemania Occidental
+  - lang: ja
+    role: translation
+    text: 西ドイツ
+  - lang: zh
+    role: translation
+    text: 西德
+  - lang: ko
+    role: translation
+    text: 서독
+  - lang: ru
+    role: translation
+    text: ФРГ
+period: 1949-05-23/1990-10-03
+wikidata_id: Q713750
+metadata:
+  sources: [Wikidata Q713750 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/germany
+    period: 1990-10-03
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q713750

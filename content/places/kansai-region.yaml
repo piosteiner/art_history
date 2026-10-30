@@ -1,6 +1,8 @@
 public_id: 102549
 name: Kansai region
-kind: site
+kind: region
+designation: region of Japan
+parent: hyogo
 location: [135, 35]
 wikidata_id: Q164256
 metadata:

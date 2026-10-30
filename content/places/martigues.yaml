@@ -1,6 +1,8 @@
 public_id: 100741
 name: Martigues
 kind: settlement
+designation: commune of France
+parent: bouches-du-rhone
 location: [5.0475, 43.40528]
 wikidata_id: Q237516
 metadata:

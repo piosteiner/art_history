@@ -1,6 +1,17 @@
 public_id: 100806
 name: Saint-Tropez
+names:
+  - lang: fr
+    role: former
+    text: Héraclée
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q1813
 kind: settlement
+designation: commune of France
+parent: france
 location: [6.63861, 43.26972]
 wikidata_id: Q1813
 metadata:

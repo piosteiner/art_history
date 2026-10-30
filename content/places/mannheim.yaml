@@ -20,6 +20,7 @@ names:
     role: translation
     text: Мангейм
 kind: settlement
+designation: urban municipality in Germany
 parent: karlsruhe-government-region
 country_code: DE
 location: [8.46611, 49.48778]

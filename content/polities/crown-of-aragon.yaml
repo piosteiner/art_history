@@ -1,0 +1,46 @@
+public_id: 104910
+name: Crown of Aragon
+names:
+  - Casal d'Aragó
+  - Aragon
+  - Catalan-Aragonese Crown
+  - lang: nl
+    role: translation
+    text: Kroon van Aragón
+  - lang: fr
+    role: translation
+    text: couronne d'Aragon
+  - lang: de
+    role: translation
+    text: Krone Aragon
+  - lang: it
+    role: translation
+    text: Corona d'Aragona
+  - lang: es
+    role: translation
+    text: Corona de Aragón
+  - lang: ja
+    role: translation
+    text: アラゴン連合王国
+  - lang: zh
+    role: translation
+    text: 阿拉贡联合王国
+  - lang: ko
+    role: translation
+    text: 아라곤 연합왕국
+  - lang: ru
+    role: translation
+    text: Арагонская корона
+period: 13 August 1162–1715
+wikidata_id: Q204920
+metadata:
+  sources: [Wikidata Q204920 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/kingdom-of-spain
+    period: 1716-01-16
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q204920

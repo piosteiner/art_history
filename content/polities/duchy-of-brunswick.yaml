@@ -1,0 +1,42 @@
+public_id: 104918
+name: Duchy of Brunswick
+names:
+  - Brunswick
+  - Duchy of Braunschweig
+  - Braunschweig
+  - lang: nl
+    role: translation
+    text: Hertogdom Brunswijk
+  - lang: fr
+    role: translation
+    text: duché de Brunswick
+  - lang: de
+    role: translation
+    text: Herzogtum Braunschweig
+  - lang: it
+    role: translation
+    text: Ducato di Brunswick
+  - lang: es
+    role: translation
+    text: Ducado de Brunswick
+  - lang: ja
+    role: translation
+    text: ブラウンシュヴァイク公国
+  - lang: zh
+    role: translation
+    text: 不伦瑞克公国
+  - lang: ko
+    role: translation
+    text: 브라운슈바이크 공국
+  - lang: ru
+    role: translation
+    text: Герцогство Брауншвейг
+period: 1815/1918
+wikidata_id: Q326029
+metadata:
+  sources: [Wikidata Q326029 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q326029

@@ -1,6 +1,8 @@
 public_id: 100215
 name: cemetery of Moret-sur-Loing
 kind: site
+designation: cemetery
+parent: moret-sur-loing
 location: [2.80611, 48.36786]
 wikidata_id: Q96178796
 metadata:

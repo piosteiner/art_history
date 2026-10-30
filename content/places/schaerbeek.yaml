@@ -1,6 +1,8 @@
 public_id: 103133
 name: Schaerbeek
-kind: site
+kind: settlement
+designation: municipality of Belgium
+parent: brussels
 location: [4.37361, 50.8675]
 wikidata_id: Q12887
 metadata:

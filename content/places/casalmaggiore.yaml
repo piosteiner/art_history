@@ -1,6 +1,8 @@
 public_id: 103217
 name: Casalmaggiore
 kind: settlement
+designation: comune of Italy
+parent: cremona
 location: [10.41472, 44.98583]
 wikidata_id: Q42139
 metadata:

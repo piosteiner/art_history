@@ -1,0 +1,43 @@
+public_id: 104897
+name: North German Confederation
+names:
+  - lang: nl
+    role: translation
+    text: Noord-Duitse Bond
+  - lang: fr
+    role: translation
+    text: Confédération de l'Allemagne du Nord
+  - lang: de
+    role: translation
+    text: Norddeutscher Bund
+  - lang: it
+    role: translation
+    text: Confederazione Tedesca del Nord
+  - lang: es
+    role: translation
+    text: Confederación Alemana del Norte
+  - lang: ja
+    role: translation
+    text: 北ドイツ連邦
+  - lang: zh
+    role: translation
+    text: 北德意志邦聯
+  - lang: ko
+    role: translation
+    text: 북독일 연방
+  - lang: ru
+    role: translation
+    text: Северогерманский союз
+period: 1 July 1867–31 December 1870
+wikidata_id: Q150981
+metadata:
+  sources: [Wikidata Q150981 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/german-empire
+    period: 1871-01-01
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q150981

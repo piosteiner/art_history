@@ -23,6 +23,14 @@ names:
   - lang: ru
     role: translation
     text: Виктор Вазарели
+  - kind: birth
+    lang: hu
+    role: former
+    text: Vásárhelyi Győző
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q154448
 birth: 1906-04-09
 death: 1997-03-15
 wikidata_id: Q154448

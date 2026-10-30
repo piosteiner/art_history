@@ -1,0 +1,18 @@
+public_id: 103374
+name: People's Republic of China
+kind: country
+country_code: CN
+boundary_code: CN
+location: [103.45194, 35.84472]
+wikidata_id: Q148
+metadata:
+  sources: [Wikidata Q148 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q148
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q148

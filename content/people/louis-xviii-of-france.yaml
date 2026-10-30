@@ -29,6 +29,16 @@ names:
   - lang: ru
     role: translation
     text: Людовик XVIII
+  - text: Comte de Provence
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q7750
+  - text: Comte de Lille
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q7750
 kind: person
 occupations: [politician]
 birth: 1755-11-17

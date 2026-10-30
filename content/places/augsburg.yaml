@@ -1,14 +1,25 @@
 public_id: 101173
 name: Augsburg
+names: [Kreisfreie Stadt Augsburg, Mixed Imperial City of Augsburg]
 kind: settlement
+designation: urban district of Bavaria
+parent: swabia
+country_code: DE
 location: [10.89778, 48.36889]
 wikidata_id: Q2749
 metadata:
   sources: [Wikidata Q2749 (retrieved 2026-10-19)]
+identifiers:
+  gnd: 4003614-5
+  hls: "006581"
 sources:
   kind:
     - accessed: 2026-10-19
       property: P31
+      wikidata: Q2749
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q2749
   location:
     - accessed: 2026-10-19

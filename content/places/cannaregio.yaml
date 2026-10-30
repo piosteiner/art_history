@@ -1,6 +1,8 @@
 public_id: 103052
 name: Cannaregio
-kind: site
+kind: district
+designation: neighborhood
+parent: venice
 location: [12.327, 45.446]
 wikidata_id: Q52423
 metadata:

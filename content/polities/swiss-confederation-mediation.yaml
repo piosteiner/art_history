@@ -1,0 +1,44 @@
+public_id: 104926
+name_lang: en
+name: Swiss Confederation (Act of Mediation)
+names:
+  - lang: nl
+    role: translation
+    text: Mediationsakte
+  - lang: fr
+    role: translation
+    text: Acte de médiation
+  - lang: de
+    role: translation
+    text: Mediation
+  - lang: it
+    role: translation
+    text: Atto di Mediazione
+  - lang: es
+    role: translation
+    text: Acta de Mediación
+  - lang: ja
+    role: translation
+    text: 調停者
+  - lang: zh
+    role: translation
+    text: 调停时期
+  - lang: ko
+    role: translation
+    text: 중재법 (1803년)
+  - lang: ru
+    role: translation
+    text: Акт посредничества
+period: 19 February 1803–1813
+wikidata_id: Q666909
+metadata:
+  sources: [Wikidata Q666909 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/swiss-confederation-restoration
+    period: 1814-04-06
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q666909

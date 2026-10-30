@@ -1,0 +1,40 @@
+public_id: 104890
+name: Duchy of Savoy
+names:
+  - Savoy
+  - lang: nl
+    role: translation
+    text: Hertogdom Savoye
+  - lang: fr
+    role: translation
+    text: duché de Savoie
+  - lang: de
+    role: translation
+    text: Herzogtum Savoyen
+  - lang: it
+    role: translation
+    text: Ducato di Savoia
+  - lang: es
+    role: translation
+    text: Ducado de Saboya
+  - lang: ja
+    role: translation
+    text: サヴォイア公国
+  - lang: zh
+    role: translation
+    text: 萨伏依公国
+  - lang: ko
+    role: translation
+    text: 사보이아 공국
+  - lang: ru
+    role: translation
+    text: Савойское герцогство
+period: 1416/1860-04-23
+wikidata_id: Q426025
+metadata:
+  sources: [Wikidata Q426025 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q426025

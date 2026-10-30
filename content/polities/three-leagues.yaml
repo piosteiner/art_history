@@ -1,0 +1,40 @@
+public_id: 104899
+name: Three Leagues
+names:
+  - lang: fr
+    role: translation
+    text: Trois Ligues
+  - lang: de
+    role: translation
+    text: Drei Bünde
+  - lang: it
+    role: translation
+    text: Repubblica delle Tre Leghe
+  - lang: es
+    role: translation
+    text: Tres Ligas
+  - lang: ja
+    role: translation
+    text: 三同盟
+  - lang: zh
+    role: translation
+    text: 三同盟自由州
+  - lang: ko
+    role: translation
+    text: 삼동맹
+  - lang: ru
+    role: translation
+    text: Три Лиги
+period: 1524/1798
+wikidata_id: Q672685
+metadata:
+  sources: [Wikidata Q672685 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/helvetic-republic
+    period: 1799-04-21
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q672685

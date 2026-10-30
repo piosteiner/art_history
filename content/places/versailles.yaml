@@ -19,8 +19,17 @@ names:
   - lang: pt
     role: translation
     text: Versalhes
+  - lang: fr
+    role: former
+    text: Berceau-de-la-Liberté
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q621
 kind: settlement
-parent: france
+designation: commune of France
+parent: yvelines
 country_code: FR
 location: [2.135, 48.805]
 wikidata_id: Q621

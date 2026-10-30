@@ -1,0 +1,18 @@
+public_id: 104941
+name: Frankfurt General Governorate
+names:
+  - lang: de
+    role: translation
+    text: Generalgouvernement Frankfurt
+  - lang: ru
+    role: translation
+    text: Генерал-губернаторство Франкфурт
+period: 1813/1815
+wikidata_id: Q1501802
+metadata:
+  sources: [Wikidata Q1501802 (retrieved 2026-10-29)]
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q1501802

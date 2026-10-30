@@ -27,7 +27,8 @@ names:
     role: translation
     text: Ла Гранха
 kind: building
-parent: spain
+designation: museum
+parent: segovia
 country_code: ES
 location: [-4.00458, 40.8975]
 wikidata_id: Q1540732

@@ -1,6 +1,8 @@
 public_id: 101739
 name: Shush
-kind: site
+kind: settlement
+designation: city of Iran
+parent: khuzestan
 location: [48.24361, 32.19417]
 wikidata_id: Q4168823
 metadata:

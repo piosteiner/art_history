@@ -25,7 +25,7 @@ metadata:
   sources: [Wikidata Q252485 (retrieved 2026-10-01)]
 relationships:
   - type: created_in
-    to: place/edo
+    to: place/tokyo
     period: 1830/1832
   - type: associated_with
     to: movement/ukiyo-e

@@ -4,3 +4,35 @@ kind: country
 country_code: CH
 boundary_code: CH
 location: [8.2275, 46.8182]
+wikidata_id: Q39
+relationships:
+  - type: in_polity
+    to: polity/old-swiss-confederacy
+    period: 1 August 1291–4 March 1798
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q435583
+  - type: in_polity
+    to: polity/helvetic-republic
+    period: 1798-04-12/1803-02-18
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q206696
+  - type: in_polity
+    to: polity/swiss-confederation-mediation
+    period: 1803-02-19/1813-12-28
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q666909
+  - type: in_polity
+    to: polity/swiss-confederation-restoration
+    period: 1814-04-06/1848-09-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q568452
+  - type: in_polity
+    to: polity/switzerland
+    period: 1848-09-12/
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q39

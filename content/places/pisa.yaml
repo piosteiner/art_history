@@ -1,6 +1,8 @@
 public_id: 101124
 name: Pisa
 kind: settlement
+designation: comune of Italy
+parent: province-of-pisa
 location: [10.4, 43.71667]
 wikidata_id: Q13375
 metadata:

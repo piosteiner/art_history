@@ -1,6 +1,8 @@
 public_id: 101718
 name: arrondissement of Autun
-kind: site
+kind: region
+designation: arrondissement of France
+parent: saone-et-loire
 location: [4.25, 46.91667]
 wikidata_id: Q662088
 metadata:

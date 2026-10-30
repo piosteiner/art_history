@@ -1,6 +1,8 @@
 public_id: 103246
 name: Valladolid
-kind: site
+kind: settlement
+designation: municipality of Spain
+parent: valladolid-province
 location: [-4.72856, 41.65198]
 wikidata_id: Q8356
 metadata:

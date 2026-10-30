@@ -1,6 +1,8 @@
 public_id: 102937
 name: Correggio
 kind: settlement
+designation: comune of Italy
+parent: province-of-reggio-emilia
 location: [10.78056, 44.77167]
 wikidata_id: Q111176
 metadata:

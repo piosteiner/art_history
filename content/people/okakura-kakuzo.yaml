@@ -20,6 +20,14 @@ names:
   - lang: ru
     role: translation
     text: Окакура Какудзо
+  - kind: birth
+    lang: ja
+    role: alternative
+    text: 岡倉 角蔵
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q942995
 kind: person
 occupations: [writer, art critic, curator, art historian]
 birth: 1863-12-14

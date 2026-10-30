@@ -1,6 +1,8 @@
 public_id: 103201
 name: Nice
 kind: settlement
+designation: commune of France
+parent: alpes-maritimes
 location: [7.26833, 43.70194]
 wikidata_id: Q33959
 metadata:

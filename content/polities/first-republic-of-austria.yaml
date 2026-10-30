@@ -1,0 +1,47 @@
+public_id: 104841
+name: First Republic of Austria
+names:
+  - Republik Österreich
+  - First Austrian Republic
+  - Republic of Austria
+  - Erste österreichische Republik
+  - lang: nl
+    role: translation
+    text: Eerste Oostenrijkse Republiek
+  - lang: fr
+    role: translation
+    text: Première République d'Autriche
+  - lang: de
+    role: translation
+    text: Erste Republik
+  - lang: it
+    role: translation
+    text: Prima repubblica austriaca
+  - lang: es
+    role: translation
+    text: Primera República de Austria
+  - lang: ja
+    role: translation
+    text: オーストリア第一共和国
+  - lang: zh
+    role: translation
+    text: 奥地利第一共和国
+  - lang: ko
+    role: translation
+    text: 오스트리아 제1공화국
+  - lang: ru
+    role: translation
+    text: Первая Австрийская Республика
+period: 1919-10-21/1934-05-01
+wikidata_id: Q518101
+metadata:
+  sources: [Wikidata Q518101 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/federal-state-of-austria
+    period: 1934-05-01
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q518101

@@ -1,0 +1,43 @@
+public_id: 104869
+name: First Spanish Republic
+names:
+  - lang: nl
+    role: translation
+    text: Eerste Spaanse Republiek
+  - lang: fr
+    role: translation
+    text: Première République espagnole
+  - lang: de
+    role: translation
+    text: Erste Spanische Republik
+  - lang: it
+    role: translation
+    text: Prima repubblica spagnola
+  - lang: es
+    role: translation
+    text: Primera República española
+  - lang: ja
+    role: translation
+    text: スペイン第一共和政
+  - lang: zh
+    role: translation
+    text: 西班牙第一共和國
+  - lang: ko
+    role: translation
+    text: 스페인 제1공화국
+  - lang: ru
+    role: translation
+    text: Первая Испанская Республика
+period: 1873-02-11/1874-12-29
+wikidata_id: Q497777
+metadata:
+  sources: [Wikidata Q497777 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/spain-under-the-restoration
+    period: 1874-12-29
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q497777

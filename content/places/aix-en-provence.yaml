@@ -1,14 +1,36 @@
 public_id: 102918
 name: Aix-en-Provence
+names:
+  - kind: nickname
+    lang: fr
+    role: alternative
+    text: Florence provençale
+  - lang: fr
+    role: former
+    text: Aix
+    period: until 2 February 1932
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q47465
 kind: settlement
+designation: commune of France
+parent: canton-of-aix-en-provence-nord-est
+country_code: FR
 location: [5.44556, 43.52778]
 wikidata_id: Q47465
 metadata:
   sources: [Wikidata Q47465 (retrieved 2026-10-28)]
+identifiers:
+  gnd: 4000860-5
 sources:
   kind:
     - accessed: 2026-10-28
       property: P31
+      wikidata: Q47465
+  parent:
+    - accessed: 2026-10-29
+      property: P131
       wikidata: Q47465
   location:
     - accessed: 2026-10-28

@@ -1,6 +1,8 @@
 public_id: 100818
 name: Dieppe
 kind: settlement
+designation: commune of France
+parent: seine-maritime
 location: [1.075, 49.925]
 wikidata_id: Q183557
 metadata:

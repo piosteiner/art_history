@@ -1,6 +1,7 @@
 public_id: 100171
 name: New Haven
 kind: settlement
+parent: connecticut
 location: [-72.925, 41.30833]
 wikidata_id: Q49145
 metadata:

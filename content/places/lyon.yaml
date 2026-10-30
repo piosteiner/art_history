@@ -1,6 +1,17 @@
 public_id: 103281
 name: Lyon
+names:
+  - lang: fr
+    role: former
+    text: Commune-Affranchie
+    period: 16 October 1793–8 July 1814
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q456
 kind: settlement
+designation: commune of France with specific status
+parent: rhone
 location: [4.835, 45.7675]
 wikidata_id: Q456
 metadata:

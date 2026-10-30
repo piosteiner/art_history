@@ -1,6 +1,8 @@
 public_id: 102942
 name: Kronach
-kind: site
+kind: settlement
+designation: urban municipality in Germany
+parent: bayern
 location: [11.32806, 50.24111]
 wikidata_id: Q494537
 metadata:

@@ -1,7 +1,8 @@
 public_id: 101260
 name: Sabbioneta
 kind: settlement
-parent: mantova
+designation: comune of Italy
+parent: province-of-mantua
 country_code: IT
 location: [10.48972, 44.99917]
 wikidata_id: Q43014

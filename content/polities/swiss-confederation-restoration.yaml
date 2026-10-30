@@ -1,0 +1,41 @@
+public_id: 104927
+name_lang: en
+name: Swiss Confederation (Restoration)
+names:
+  - lang: nl
+    role: translation
+    text: Confederatie van de XXII kantons
+  - lang: fr
+    role: translation
+    text: Confédération des XXII cantons
+  - lang: de
+    role: translation
+    text: Restauration
+  - lang: it
+    role: translation
+    text: Confederazione Svizzera (1815-1848)
+  - lang: es
+    role: translation
+    text: Restauración y Regeneración en Suiza
+  - lang: zh
+    role: translation
+    text: 瑞士復興時期
+  - lang: ko
+    role: translation
+    text: 스위스의 복고와 재생
+  - lang: ru
+    role: translation
+    text: Реставрация в Швейцарии
+period: 1814-04-06/1848-09-12
+wikidata_id: Q568452
+metadata:
+  sources: [Wikidata Q568452 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/switzerland
+    period: 1848-09-12
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q568452

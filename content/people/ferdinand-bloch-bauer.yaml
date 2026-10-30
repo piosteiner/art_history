@@ -9,6 +9,14 @@ names:
   - lang: ru
     role: translation
     text: Фердинанд Блох-Бауэр
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Ferdinand Bloch
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q1280247
 kind: person
 occupations: [art collector, industrialist, sugar refiner]
 birth: 1864-07-16

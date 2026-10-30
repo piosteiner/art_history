@@ -1,0 +1,44 @@
+public_id: 104924
+name: Sovereign Principality of the United Netherlands
+names:
+  - Soeverein Vorstendom der Verenigde Nederlanden
+  - Principauté Souveraine des Pays-Bas Unis
+  - Principaute Souveraine des Pays-Bas Unis
+  - Netherlands
+  - lang: fr
+    role: translation
+    text: Pays-Bas unis
+  - lang: de
+    role: translation
+    text: Souveränes Fürstentum der Vereinigten Niederlande
+  - lang: it
+    role: translation
+    text: Principato dei Paesi Bassi Uniti
+  - lang: es
+    role: translation
+    text: Soberano Principado de los Países Bajos Unidos
+  - lang: ja
+    role: translation
+    text: ネーデルラント公国
+  - lang: zh
+    role: translation
+    text: 聯合尼德蘭主權公國
+  - lang: ko
+    role: translation
+    text: 연합 네덜란드 주권공국
+  - lang: ru
+    role: translation
+    text: Суверенное княжество Объединённых Нидерландов
+period: 1813-11-21/1815-03-16
+wikidata_id: Q774783
+metadata:
+  sources: [Wikidata Q774783 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/united-kingdom-of-the-netherlands
+    period: 1815-03-16
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q774783

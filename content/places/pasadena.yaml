@@ -1,6 +1,8 @@
 public_id: 100157
 name: Pasadena
 kind: settlement
+designation: city of California
+parent: california
 location: [-118.14389, 34.1475]
 wikidata_id: Q485176
 metadata:

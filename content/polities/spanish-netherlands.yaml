@@ -4,6 +4,10 @@ period: 1581/1714
 wikidata_id: Q622783
 metadata:
   sources: [Wikidata Q622783 (retrieved 2026-10-28)]
+relationships:
+  - type: succeeded_by
+    to: polity/austrian-netherlands
+    period: 1714
 sources:
   period:
     - accessed: 2026-10-28

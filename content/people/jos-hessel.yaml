@@ -2,4 +2,15 @@ public_id: 100451
 name: Jos Hessel
 given_name: Jos
 family_name: Hessel
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Joseph Hessel
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q3183961
 wikidata_id: Q3183961
+metadata:
+  sources: [Wikidata Q3183961 (retrieved 2026-10-29)]

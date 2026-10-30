@@ -1,6 +1,8 @@
 public_id: 100978
 name: Spa
-kind: site
+kind: settlement
+designation: municipality of Belgium
+parent: province-of-liege
 location: [5.86221, 50.49228]
 wikidata_id: Q39865
 metadata:

@@ -1,6 +1,8 @@
 public_id: 103211
 name: Gruchy
 kind: settlement
+designation: village
+parent: manche
 location: [-1.7917, 49.68135]
 wikidata_id: Q58507641
 metadata:

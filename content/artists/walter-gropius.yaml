@@ -2,7 +2,16 @@ public_id: 100834
 name: Walter Gropius
 given_name: Walter
 family_name: Gropius
-names: [Georg Walter Adolf Gropius]
+names:
+  - Georg Walter Adolf Gropius
+  - kind: birth
+    lang: de
+    role: alternative
+    text: Walter Adolf Georg Gropius
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q61071
 birth: 1883-05-18
 death: 1969-07-05
 wikidata_id: Q61071
@@ -46,7 +55,7 @@ relationships:
         property: P20
         wikidata: Q61071
   - type: lived_in
-    to: place/cambridge
+    to: place/cambridge-massachusetts
     sources:
       - accessed: 2026-10-18
         property: P551

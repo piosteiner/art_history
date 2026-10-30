@@ -1,6 +1,17 @@
 public_id: 103064
 name: Hachiōji-shi
+names:
+  - lang: ja
+    role: former
+    text: 八王子町
+    period: 1 April 1889–1 September 1917
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q208863
 kind: settlement
+designation: city of Japan
+parent: tokyo
 location: [139.316, 35.66644]
 wikidata_id: Q208863
 metadata:

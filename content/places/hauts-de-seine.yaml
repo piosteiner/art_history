@@ -1,0 +1,19 @@
+public_id: 103357
+name: Hauts-de-Seine
+kind: region
+designation: department of France
+parent: france
+boundary_code: FR-92
+location: [2.2, 48.83333]
+wikidata_id: Q12543
+metadata:
+  sources: [Wikidata Q12543 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q12543
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q12543

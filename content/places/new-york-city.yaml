@@ -1,7 +1,17 @@
 public_id: 100034
 name: New York City
+names:
+  - lang: en
+    role: former
+    text: Fort Neu-Amsterdam
+    period: 1624–1664
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q60
 kind: settlement
-parent: united-states
+designation: city in the state of New York
+parent: new-york
 country_code: US
 location: [-74.006, 40.7128]
 wikidata_id: Q60

@@ -1,0 +1,26 @@
+public_id: 104644
+name: Canton of Ticino
+kind: region
+designation: canton of Switzerland
+parent: switzerland
+boundary_code: CH-TI
+wikidata_id: Q12724
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 962/1395-05-18
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/duchy-of-milan
+    period: 19 May 1395–1511
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153529
+  - type: in_polity
+    to: polity/old-swiss-confederacy
+    period: 1512/1798-03-04
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q435583

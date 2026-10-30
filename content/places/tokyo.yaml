@@ -1,6 +1,30 @@
 public_id: 102760
 name: Tokyo
+names:
+  - lang: ja
+    role: former
+    text: 江戸
+    period: until 3 September 1868
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q1490
+  - role: former
+    text: Edo
+    period: until 3 September 1868
+    note: renamed Tokyo (Eastern Capital) in 1868
+  - role: former
+    text: Tokyo Prefecture
+    period: 3 September 1868–30 June 1943
+    note: the prefecture, merged with Tokyo City into today's Tokyo Metropolis in 1943
+  - role: former
+    text: Tokyo City
+    period: 1 May 1889–30 June 1943
+    note: the city of the central wards within the prefecture, dissolved in 1943
 kind: settlement
+designation: prefecture of Japan
+parent: japan
+boundary_code: JP-13
 location: [139.69167, 35.68944]
 wikidata_id: Q1490
 metadata:
@@ -10,7 +34,19 @@ sources:
     - accessed: 2026-10-28
       property: P31
       wikidata: Q1490
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1189121
+    - accessed: 2026-10-28
+      property: P31
+      wikidata: Q1207735
   location:
     - accessed: 2026-10-28
       property: P625
       wikidata: Q1490
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1189121
+    - accessed: 2026-10-28
+      property: P625
+      wikidata: Q1207735

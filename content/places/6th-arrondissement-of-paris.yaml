@@ -1,6 +1,7 @@
 public_id: 100904
 name: 6th arrondissement of Paris
-kind: site
+kind: district
+designation: municipal arrondissement of France
 parent: paris
 country_code: FR
 location: [2.33223, 48.85053]

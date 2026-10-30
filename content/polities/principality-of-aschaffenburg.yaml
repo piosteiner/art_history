@@ -1,0 +1,40 @@
+public_id: 104928
+name: Principality of Aschaffenburg
+names:
+  - lang: nl
+    role: translation
+    text: Vorstendom Aschaffenburg
+  - lang: fr
+    role: translation
+    text: Principauté d'Aschaffenbourg
+  - lang: de
+    role: translation
+    text: Fürstentum Aschaffenburg
+  - lang: it
+    role: translation
+    text: Principato di Aschaffenburg
+  - lang: es
+    role: translation
+    text: Principado de Aschaffenburg
+  - lang: ja
+    role: translation
+    text: アシャッフェンブルク侯領
+  - lang: zh
+    role: translation
+    text: 阿沙芬堡親王國
+  - lang: ru
+    role: translation
+    text: Ашаффенбург
+period: 1803/1810
+wikidata_id: Q569202
+metadata:
+  sources: [Wikidata Q569202 (retrieved 2026-10-29)]
+relationships:
+  - type: succeeded_by
+    to: polity/grand-duchy-of-frankfurt
+    period: 1810-02-16
+sources:
+  period:
+    - accessed: 2026-10-29
+      property: P571
+      wikidata: Q569202

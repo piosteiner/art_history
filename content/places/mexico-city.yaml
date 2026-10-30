@@ -1,6 +1,10 @@
 public_id: 103150
 name: Mexico City
+names: [Distrito Federal]
 kind: settlement
+designation: federal capital
+parent: mexico
+boundary_code: MX-DIF
 location: [-99.13589, 19.35377]
 wikidata_id: Q1489
 metadata:

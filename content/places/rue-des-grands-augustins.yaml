@@ -1,6 +1,8 @@
 public_id: 103218
 name: rue des Grands-Augustins
-kind: site
+kind: street
+designation: street
+parent: paris
 location: [2.33944, 48.855]
 wikidata_id: Q3451841
 metadata:

@@ -8,6 +8,15 @@ address: 30 East 57th Street
 wikidata_id: Q15435609
 metadata:
   sources: [Wikidata null (retrieved 2026-10-18), Wikidata Q15435609 (retrieved 2026-10-28)]
+relationships:
+  - type: part_of
+    to: institution/sotheby-s
+    period: 1964/
+    sources:
+      - url: https://en.wikipedia.org/wiki/Sotheby%27s
+        note: „In 1964, Sotheby's purchased Parke-Bernet, the largest auctioneer of fine art in the United States at the time.“
+        source: en-wikipedia-org
+        accessed: 2026-10-29
 identifiers:
   bnf: 14521531w
   gnd: 2017360-X

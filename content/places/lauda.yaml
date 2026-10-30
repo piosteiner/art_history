@@ -1,7 +1,8 @@
 public_id: 102452
 name: Lauda
 names: [Lauda (Lauda-Königshofen)]
-kind: site
+kind: district
+designation: Ortsteil
 parent: lauda-konigshofen
 country_code: DE
 location: [9.70674, 49.56605]

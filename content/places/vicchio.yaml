@@ -1,6 +1,8 @@
 public_id: 102909
 name: Vicchio
 kind: settlement
+designation: comune of Italy
+parent: metropolitan-city-of-florence
 location: [11.46667, 43.93333]
 wikidata_id: Q82880
 metadata:

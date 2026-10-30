@@ -1,0 +1,16 @@
+public_id: 104945
+name: Important Cultural Property (Japan)
+names:
+  - lang: ja
+    role: translation
+    text: "{重要文化財|じゅうようぶんかざい}"
+  - lang: de
+    role: translation
+    text: Wichtiges Kulturgut Japans
+  - lang: fr
+    role: translation
+    text: bien culturel important du Japon
+category: heritage designation
+parent: heritage-designation
+definition: A tangible cultural property of particular importance, designated by Japan’s Agency for Cultural Affairs (jūyō bunkazai).
+wikidata_id: Q1188622

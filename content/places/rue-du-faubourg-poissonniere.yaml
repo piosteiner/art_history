@@ -1,6 +1,8 @@
 public_id: 100816
 name: rue du Faubourg-Poissonnière
-kind: site
+kind: street
+designation: street
+parent: paris
 location: [2.34852, 48.8763]
 wikidata_id: Q3452298
 metadata:

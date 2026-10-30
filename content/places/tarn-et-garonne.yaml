@@ -1,6 +1,9 @@
 public_id: 102181
 name: Tarn-et-Garonne
 kind: region
+designation: department of France
+parent: france
+boundary_code: FR-82
 location: [1.33333, 44]
 wikidata_id: Q12779
 metadata:

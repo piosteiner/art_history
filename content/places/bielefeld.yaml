@@ -11,12 +11,38 @@ names:
     role: translation
     text: Билефельд
 kind: settlement
-parent: germany
+designation: urban district of North Rhine-Westphalia
+parent: nordrhein-westfalen
 country_code: DE
 location: [8.53333, 52.01667]
 wikidata_id: Q2112
 metadata:
   sources: [Wikidata Q2112 (retrieved 2026-10-17)]
+relationships:
+  - type: in_polity
+    to: polity/kingdom-of-prussia
+    period: 1806-08-06/1807-07-08
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q27306
+  - type: in_polity
+    to: polity/kingdom-of-westphalia
+    period: 1807-08-18/1813-10-25
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153943
+  - type: in_polity
+    to: polity/confederation-of-the-rhine
+    period: 1807-12-07/1813-10-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q154741
+  - type: in_polity
+    to: polity/kingdom-of-prussia
+    period: 1813-11/1815-06-08
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q27306
 sources:
   kind:
     - accessed: 2026-10-17

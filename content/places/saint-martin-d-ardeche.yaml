@@ -1,6 +1,8 @@
 public_id: 103171
 name: Saint-Martin-d'Ardèche
 kind: settlement
+designation: commune of France
+parent: gard
 location: [4.56556, 44.30361]
 wikidata_id: Q334550
 metadata:

@@ -1,6 +1,8 @@
 public_id: 100244
 name: Manhattan
-kind: site
+kind: district
+designation: borough of New York City
+parent: new-york-city
 location: [-73.99417, 40.72833]
 wikidata_id: Q11299
 metadata:

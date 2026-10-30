@@ -1,0 +1,20 @@
+public_id: 104739
+name: Metropolitan City of Naples
+kind: region
+designation: metropolitan city of Italy
+parent: italy
+boundary_code: IT-NA
+wikidata_id: Q18241891
+relationships:
+  - type: in_polity
+    to: polity/kingdom-of-naples
+    period: 1282/1816-12-11
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q173065
+  - type: in_polity
+    to: polity/kingdom-of-the-two-sicilies
+    period: 1816-12-12/1861-03-16
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q180393

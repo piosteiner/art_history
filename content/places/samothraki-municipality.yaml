@@ -1,6 +1,8 @@
 public_id: 101736
 name: Samothraki Municipality
-kind: site
+kind: settlement
+designation: municipality of Greece
+parent: anatoliki-makedonia-kai-thraki
 location: [25.58474, 40.45405]
 wikidata_id: Q25162031
 metadata:

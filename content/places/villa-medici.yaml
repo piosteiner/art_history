@@ -19,7 +19,8 @@ names:
   - lang: ru
     role: translation
     text: Вилла Медичи
-kind: site
+kind: building
+designation: villa
 parent: rome
 country_code: IT
 location: [12.48252, 41.90827]

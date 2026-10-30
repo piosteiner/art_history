@@ -8,7 +8,7 @@ medium: Woodblock print, ink and colour on paper
 description_md: From *One Hundred Famous Views of Edo*.
 relationships:
   - type: created_in
-    to: place/edo
+    to: place/tokyo
     period: 1857
   - type: associated_with
     to: movement/ukiyo-e

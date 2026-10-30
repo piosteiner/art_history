@@ -1,0 +1,20 @@
+public_id: 103362
+name: Algiers Province
+names: [Alger]
+kind: region
+designation: province of Algeria
+parent: algeria
+boundary_code: DZ-16
+location: [3.00703, 36.69842]
+wikidata_id: Q141026
+metadata:
+  sources: [Wikidata Q141026 (retrieved 2026-10-29)]
+sources:
+  kind:
+    - accessed: 2026-10-29
+      property: P31
+      wikidata: Q141026
+  location:
+    - accessed: 2026-10-29
+      property: P625
+      wikidata: Q141026

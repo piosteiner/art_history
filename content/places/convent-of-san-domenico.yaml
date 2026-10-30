@@ -1,6 +1,8 @@
 public_id: 100844
 name: convent of San Domenico
 kind: building
+designation: museum
+parent: fiesole
 location: [11.28533, 43.80115]
 wikidata_id: Q474122
 metadata:

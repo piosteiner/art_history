@@ -4,3 +4,70 @@ kind: country
 country_code: AT
 boundary_code: AT
 wikidata_id: Q40
+relationships:
+  - type: in_polity
+    to: polity/holy-roman-empire
+    period: 962/1804-08-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q12548
+  - type: in_polity
+    to: polity/habsburg-monarchy
+    period: 1526-09-08/1804-08-10
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q153136
+  - type: in_polity
+    to: polity/austrian-empire
+    period: 11 August 1804–28 February 1867
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q131964
+  - type: in_polity
+    to: polity/german-confederation
+    period: 1815-06-08/1866-08-23
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q151624
+  - type: in_polity
+    to: polity/cisleithania
+    period: 1 March 1867–11 November 1918
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q533534
+  - type: in_polity
+    to: polity/republic-of-german-austria
+    period: 1918-11-12/1919-10-20
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q268970
+  - type: in_polity
+    to: polity/first-republic-of-austria
+    period: 21 October 1919–30 April 1934
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q518101
+  - type: in_polity
+    to: polity/federal-state-of-austria
+    period: 1 May 1934–12 March 1938
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q176495
+  - type: in_polity
+    to: polity/nazi-germany
+    period: 1938-03-13/1945-04-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q7318
+  - type: in_polity
+    to: polity/allied-occupied-austria
+    period: 1945-04-27/1955-07-26
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q596239
+  - type: in_polity
+    to: polity/austria
+    period: 1955-07-27/
+    sources:
+      - accessed: 2026-10-29
+        wikidata: Q40

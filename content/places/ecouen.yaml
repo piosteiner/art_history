@@ -13,6 +13,7 @@ names:
     role: translation
     text: Экуан
 kind: settlement
+designation: commune of France
 parent: seine-et-oise
 country_code: FR
 location: [2.38111, 49.01861]

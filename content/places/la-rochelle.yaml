@@ -1,6 +1,8 @@
 public_id: 103242
 name: La Rochelle
 kind: settlement
+designation: commune of France
+parent: charente-maritime
 location: [-1.15139, 46.15944]
 wikidata_id: Q82185
 metadata:

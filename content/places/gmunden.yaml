@@ -1,6 +1,8 @@
 public_id: 103040
 name: Gmunden
 kind: settlement
+designation: municipality of Austria
+parent: oberosterreich
 location: [13.79944, 47.91806]
 wikidata_id: Q430449
 metadata:

@@ -1,7 +1,17 @@
 public_id: 100026
 name: Auvers-sur-Oise
+names:
+  - lang: fr
+    role: former
+    text: Auvers
+    period: until 24 May 1843
+    sources:
+      - accessed: 2026-10-29
+        property: P1448
+        wikidata: Q212406
 kind: settlement
-parent: france
+designation: commune of France
+parent: val-d-oise
 country_code: FR
 location: [2.1703, 49.0717]
 wikidata_id: Q212406

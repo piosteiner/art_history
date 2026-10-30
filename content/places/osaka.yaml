@@ -1,6 +1,8 @@
 public_id: 103121
 name: Osaka
-kind: site
+kind: settlement
+designation: city of Japan
+parent: osaka-prefecture
 location: [135.50211, 34.69375]
 wikidata_id: Q35765
 metadata:

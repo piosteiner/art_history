@@ -1,6 +1,8 @@
 public_id: 103283
 name: Rheinfelden
-kind: site
+kind: settlement
+designation: municipality of Switzerland
+parent: aargau
 location: [7.79583, 47.55389]
 wikidata_id: Q269667
 metadata:

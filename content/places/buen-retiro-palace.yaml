@@ -19,7 +19,8 @@ names:
   - lang: ru
     role: translation
     text: Буэн-Ретиро
-kind: site
+kind: building
+designation: destroyed building or structure
 parent: madrid
 country_code: ES
 location: [-3.68169, 40.41368]

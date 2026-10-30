@@ -2,7 +2,16 @@ public_id: 102058
 name: Antonello da Messina
 given_name: Antonello
 family_name: da Messina
-names: [Antonello degli Antoni]
+names:
+  - Antonello degli Antoni
+  - kind: birth
+    lang: it
+    role: former
+    text: Antonello di Giovanni di Antonio
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q5594
 birth: 1430
 death: 1479-02-23/1479-03-06
 wikidata_id: Q5594

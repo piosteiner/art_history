@@ -1,6 +1,8 @@
 public_id: 103130
 name: Loreto
 kind: settlement
+designation: comune of Italy
+parent: province-of-ancona
 location: [13.60743, 43.4403]
 wikidata_id: Q124110
 metadata:

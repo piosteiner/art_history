@@ -1,6 +1,7 @@
 public_id: 100886
 name: Ancona
 kind: settlement
+designation: comune of Italy
 parent: province-of-ancona
 country_code: IT
 location: [13.51667, 43.61667]

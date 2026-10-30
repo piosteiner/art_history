@@ -1,6 +1,8 @@
 public_id: 100139
 name: Tulsa
 kind: settlement
+designation: county seat
+parent: oklahoma
 location: [-95.93722, 36.13139]
 wikidata_id: Q44989
 metadata:

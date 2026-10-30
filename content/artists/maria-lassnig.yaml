@@ -2,6 +2,15 @@ public_id: 100116
 name: Maria Lassnig
 given_name: Maria
 family_name: Lassnig
+names:
+  - kind: birth
+    lang: mul
+    role: former
+    text: Maria Eleonore Gregorz
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q538534
 birth: 1919-09-08
 death: 2014-05-06
 wikidata_id: Q538534

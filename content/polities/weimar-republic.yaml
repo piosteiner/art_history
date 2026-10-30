@@ -4,6 +4,10 @@ period: 9 November 1918–1933
 wikidata_id: Q41304
 metadata:
   sources: [Wikidata Q41304 (retrieved 2026-10-18)]
+relationships:
+  - type: succeeded_by
+    to: polity/nazi-germany
+    period: 1933-01-30
 sources:
   period:
     - accessed: 2026-10-18

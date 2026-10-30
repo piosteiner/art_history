@@ -1,6 +1,8 @@
 public_id: 100098
 name: Sumida River
-kind: site
+kind: natural
+designation: river
+parent: tokyo
 location: [139.80722, 35.71861]
 wikidata_id: Q222149
 metadata:

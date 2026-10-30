@@ -1,6 +1,8 @@
 public_id: 100229
 name: Chevilly
-kind: site
+kind: settlement
+designation: municipality of Switzerland
+parent: vaud
 location: [6.48333, 46.65]
 wikidata_id: Q52785
 metadata:

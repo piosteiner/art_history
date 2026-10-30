@@ -2,7 +2,8 @@ public_id: 100023
 name: Antwerp
 names: [Antwerpen, Anvers]
 kind: settlement
-parent: belgium
+designation: municipality of Belgium
+parent: province-of-antwerp
 country_code: BE
 location: [4.4025, 51.2194]
 wikidata_id: Q12892

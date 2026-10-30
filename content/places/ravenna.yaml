@@ -1,6 +1,8 @@
 public_id: 100888
 name: Ravenna
 kind: settlement
+designation: comune of Italy
+parent: province-of-ravenna
 location: [12.20167, 44.41611]
 wikidata_id: Q13364
 metadata:

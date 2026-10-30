@@ -28,6 +28,24 @@ names:
   - lang: ru
     role: translation
     text: Теофиль Тор-Бюргер
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Étienne Joseph Théophile Thoré
+    sources:
+      - accessed: 2026-10-29
+        property: P1477
+        wikidata: Q933765
+  - text: William Bürger
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q933765
+  - text: Jacques Van Damme
+    sources:
+      - accessed: 2026-10-29
+        property: P742
+        wikidata: Q933765
 kind: person
 occupations: [journalist, art historian, art collector, art critic]
 birth: 1807-06-23
