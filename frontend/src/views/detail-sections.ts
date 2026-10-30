@@ -172,7 +172,8 @@ export const lastRecordedStep = (steps: ProvenanceStep[] | undefined) => steps?.
  * new owner. The 1933–1945 status (A–D) stands above the list, also when there are no steps.
  */
 export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>,
-  status?: ProvenanceStatus | null, statusSources?: Citation[], coverage?: ProvenanceCoverage | null, fate?: ArtworkFate | null): Html | null {
+  status?: ProvenanceStatus | null, statusSources?: Citation[], coverage?: ProvenanceCoverage | null, fate?: ArtworkFate | null,
+  fateSources?: Citation[]): Html | null {
   const recorded = steps.some((s) => !s.implied); // the computed lines alone are no provenance
   if (!recorded && !status) return null;
   // gaps (API 078) go after the step they follow — the last one dated before them, which may be an agent's (an unsold
@@ -181,13 +182,16 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
   const after = (g: (typeof gaps)[number]) => g.show_after ?? g.before_position;
   const gapsAfter = (position: number | null) => gaps.filter((g) => after(g) === position).map(gapLine);
   const known = new Set(steps.map((s) => s.position));
+  // what became of it closes the list (destroyed, lost); partly destroyed stands at its time, the parts' history goes on
+  const fateAfter = !fate ? -1 : fate.status !== 'partly_destroyed' || !fate.date?.from ? steps.length - 1
+    : steps.reduce((at, s, i) => ((s.period?.from ?? s.period?.to ?? '') <= fate.date!.from! ? i : at), steps.length - 1);
   const leading = gaps.filter((g) => after(g) === null || !known.has(after(g)!)).map(gapLine);
   return html`<section class="provenance" id="provenance">
     <h2>Provenance</h2>
     ${status ? statusLine(status, statusSources, bibliography) : ''}
     ${recorded ? coverageBar(coverage, fate) ?? '' : ''}
     ${recorded ? html`<p class="muted small">Holders in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between. Indented: held alongside the owner (an agent, a deposit, a loan), not owned; in red: held without title (seized, looted, stolen) — the owner's period runs on until the restitution. A bullet: an event, not a holder. In italics: not recorded, but following from the creation or the loan.</p>
-    <ol class="provenance-list">${leading}${steps.map((s, i) => html`${stepItem(s, i)}${gapsAfter(s.position)}`)}</ol>` : ''}
+    <ol class="provenance-list">${leading}${steps.map((s, i) => html`${stepItem(s, i)}${gapsAfter(s.position)}${i === fateAfter ? fateItem(fate!, fateSources, bibliography) : ''}`)}</ol>` : ''}
   </section>`;
 
   function stepItem(s: ProvenanceStep, i: number): Html {
@@ -222,6 +226,22 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
       ${(s.alternatives ?? []).map((a) => alternative(a, bibliography))}
     </li>`;
   }
+}
+
+/**
+ * The end of the line: "Destroyed May 1945 — presumably burnt in the flak tower · Gemäldebrand im Flakbunker …".
+ * Destroyed: the rail stops at a bar, nothing follows. Lost: the rail runs out dotted (it may still exist).
+ * Partly destroyed: a mark on the rail at its time, the steps after it go on (the surviving parts).
+ */
+function fateItem(f: ArtworkFate, sources: Citation[] | undefined, bibliography?: Record<string, SourceHint>): Html {
+  const word = { destroyed: 'Destroyed', partly_destroyed: 'Partly destroyed', lost: 'Lost' }[f.status];
+  const how = [f.note ? html`${f.note}` : null, f.event ? link('event', f.event.slug, f.event.name) : null].filter((x): x is Html => !!x);
+  return html`<li class="provenance-step provenance-fate fate-${f.status.replace('_', '-')}">
+    <div class="provenance-owner"><b>${word}</b>${f.date ? html` <span class="muted">${f.status === 'lost' ? 'since ' : ''}${f.date.label ?? ''}</span>` : ''}${cite(sources, bibliography)}</div>
+    ${how.length ? html`<div class="provenance-how">${how.map((h, j) => html`${j ? ' · ' : ''}${h}`)}</div>` : ''}
+    ${f.status === 'destroyed' ? html`<div class="provenance-fate-end muted small">The end of its provenance.</div>` : ''}
+    ${f.status === 'lost' ? html`<div class="provenance-fate-end muted small">Whereabouts unknown — it may still exist.</div>` : ''}
+  </li>`;
 }
 
 /** "Gap 1934–1946 — no holder known · possibly …" between the steps; marked when it touches 1933–1945. */

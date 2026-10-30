@@ -3,7 +3,8 @@
 const { test, expect, sql, API, submitForm } = require('./helpers');
 
 const api = async (request, path) => (await request.get(`${API}${path}`, { headers: { Host: 'api.localhost' } })).json();
-const cleanup = () => sql(`DELETE FROM artworks WHERE slug = 'test-fate-work'; DELETE FROM live_docs WHERE entity_type = 'artwork'`);
+const cleanup = () => sql(`DELETE FROM artworks WHERE slug = 'test-fate-work'; DELETE FROM events WHERE slug IN ('test-fate-fire', 'test-fate-war');
+  DELETE FROM live_docs WHERE entity_type = 'artwork'`);
 test.beforeEach(() => {
   cleanup();
   sql(`INSERT INTO artworks (slug, title) VALUES ('test-fate-work', 'Test Fate Work')`);
@@ -30,4 +31,15 @@ test('fate: destroyed with a date and a note, in the detail and the list; a note
   await userA.goto('/artworks/test-fate-work');
   await expect(userA.locator('dd', { hasText: 'destroyed' }).first()).toBeVisible();
   expect(() => sql(`UPDATE artworks SET fate = NULL WHERE slug = 'test-fate-work'`)).toThrow(/artworks_fate_details/);
+});
+
+test('fate: its cause is the event that concerns the work at that time, not another one (closing step on the site)', async ({ request }) => {
+  sql(`UPDATE artworks SET fate = 'destroyed', fate_date = '[1945-05-01,1945-06-01)', fate_date_label = 'May 1945' WHERE slug = 'test-fate-work';
+       INSERT INTO events (slug, name, period, period_label) VALUES ('test-fate-fire', 'Test Fire', '[1945-05-05,1945-05-19)', '5–18 May 1945'),
+         ('test-fate-war', 'Test Earlier Event', '[1939-09-01,1939-09-02)', '1 September 1939');
+       INSERT INTO relationships (subject_type, subject_id, relationship_type, object_type, object_id)
+       SELECT 'event', id, 'concerns', 'artwork', entity_id('artwork', 'test-fate-work') FROM events WHERE slug IN ('test-fate-fire', 'test-fate-war')`);
+  expect((await api(request, '/artworks/test-fate-work')).fate.event).toEqual({ slug: 'test-fate-fire', name: 'Test Fire' });
+  sql(`DELETE FROM events WHERE slug = 'test-fate-fire'`);
+  expect((await api(request, '/artworks/test-fate-work')).fate.event).toBeNull();
 });

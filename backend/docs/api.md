@@ -329,11 +329,12 @@ with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km ove
   museums linked to what the map shows, events in the time window or the chosen entries' span).
 
 ### Fate (artworks, 103)
-- `fate` (detail): `{status, label, date, note}` or `null` (extant as far as known). `status`: `destroyed` ·
+- `fate` (detail): `{status, label, date, note, event}` or `null` (extant as far as known). `status`: `destroyed` ·
   `partly_destroyed` (fragments survive) · `lost` (whereabouts unknown, also stolen and never recovered); `date` a
   date object or null; `note` how and why, in the source's words. Lists have `fate` (the status or null). Show it
   prominently ("Destroyed 1945 — burnt in the Friedrichshain flak tower"); the provenance's last holder is then the
-  last known one, not today's.
+  last known one, not today's. `event` `{slug, name}` or null: its cause — an event that `concerns` the work and whose
+  period overlaps the fate's date (the fire in the Friedrichshain flak tower); the site closes the provenance with it.
 
 ### Building history (artworks, 169)
 - `phases` (detail): a building's (or any work's) history in order — `[{kind, title, part, period, notes_html, people}]`.

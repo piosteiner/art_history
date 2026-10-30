@@ -1615,6 +1615,36 @@ test('provenance coverage (078): a bar from the creation until today, gap lines 
   await expect(items.nth(3).locator('.provenance-gap')).toHaveText('handover not documented');
 });
 
+test('provenance: a destroyed work\'s list ends with its destruction and the event that caused it; partly destroyed stands at its time', async ({ page }) => {
+  const person = (slug: string, name: string) => ({ type: 'person', slug, name });
+  const steps = [
+    step(0, person('first-owner', 'First Owner'), { kind: 'step', in_chain: true, direct: true, period: year(1900, 1930), end_basis: 'recorded' }),
+    step(1, person('second-owner', 'Second Owner'), { kind: 'step', in_chain: true, direct: true, period: year(1930, 1945), end_basis: 'recorded' }),
+  ];
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = steps;
+    b.fate = { status: 'destroyed', label: 'destroyed', date: { ...span('1945-05-01', '1945-05-31'), label: 'May 1945' }, note: 'burnt in a fire',
+      event: { slug: 'test-fire', name: 'Test Fire' } };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const last = page.locator('.provenance-list > li').last();
+  await expect(last).toHaveClass(/provenance-fate fate-destroyed/);
+  await expect(last).toContainText('Destroyed May 1945');
+  await expect(last).toContainText('burnt in a fire');
+  await expect(last.locator('a[href*="test-fire"]')).toHaveText('Test Fire');
+  await expect(last).toContainText('The end of its provenance.');
+
+  await patch(page, GREAT_WAVE, (b) => {
+    b.provenance = steps;
+    b.provenance_coverage = null;
+    b.fate = { status: 'partly_destroyed', label: 'partly destroyed', date: { ...span('1923-09-01', '1923-09-01'), label: '1 September 1923' }, note: null };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const items = page.locator('.provenance-list > li.provenance-step');
+  await expect(items.nth(1)).toHaveClass(/fate-partly-destroyed/); // after the owner it happened under, before the next
+  await expect(items.last()).toContainText('Second Owner');
+});
+
 test('provenance coverage (170): a destroyed work\'s bar ends with its destruction, not today', async ({ page }) => {
   const person = (slug: string, name: string) => ({ type: 'person', slug, name });
   await patch(page, GREAT_WAVE, (b) => {

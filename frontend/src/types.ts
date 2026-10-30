@@ -363,7 +363,8 @@ export interface ProvenanceCoverage {
 export type ProvenanceCategory = 'A' | 'B' | 'C' | 'D';
 export interface ProvenanceStatus { category: ProvenanceCategory; code: string; label: string; note: string | null }
 /** What became of an artwork (API 103): null while extant as far as known; `note`: how, in the source's words. */
-export interface ArtworkFate { status: 'destroyed' | 'partly_destroyed' | 'lost'; label: string; date: DateRange | null; note: string | null }
+/** What became of it (API 103); `event`: its cause — an event that concerns the work at that time (API, 2026-10-30). */
+export interface ArtworkFate { status: 'destroyed' | 'partly_destroyed' | 'lost'; label: string; date: DateRange | null; note: string | null; event?: { slug: string; name: string } | null }
 
 /** "18" at the Foundation E.G. Bührle Collection, "658" in Rewald's catalogue raisonné … */
 export interface ArtworkNumber { number: string; label: string | null; institution: Ref | null; source: Ref | null; sources?: Citation[] }

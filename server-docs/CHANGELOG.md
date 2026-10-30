@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### API + site: the provenance closes with the work's fate
+- **What:** API `fate.event` (`src/routes/entities.js`): the event that `concerns` the work and overlaps the fate's
+  date — its cause. Site (`frontend/src/views/detail-sections.ts` `fateItem`, `style.css`): after the last holder a
+  closing step "Destroyed May 1945 — note · event", the rail ending at a bar ("The end of its provenance."); lost:
+  the rail runs out dotted ("Whereabouts unknown — it may still exist"); partly destroyed: a ring at its time, the
+  steps after it go on. Tests: e2e `artwork-fate`, site test.
+- **Why:** owner, 2026-10-30 — the line of a destroyed work looked open-ended.
+- **Revert:** `git revert`; no schema change.
+
 ### Site: the 1933–45 label no longer crowds the end of the coverage bar
 - **What:** `frontend/src/coverage.ts` labels the shaded 1933–1945 stretch only when there is room beside the start
   year and the end label (a bar ending in 1945 — a work destroyed then — keeps the shading and the key); the key
