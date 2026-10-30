@@ -6,6 +6,7 @@ names:
     text: "{白鳳時代|はくほうじだい}"
 kind: period
 period: 645/710
+description_md: "**Dates.** An art-historical division: from the Taika coup of 645 to the move to Heijō-kyō in 710, after Mason[[source/history-of-japanese-art|p. 10]]. The national institutions count these years to the Asuka period (592/593–710)[[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -19,3 +20,8 @@ sources:
     - note: "The principal periods as used in this volume are: … “Hakuho period (645–710)”"
       source: history-of-japanese-art
       locator: p. 10
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: "not used by the national institutions: their Asuka period runs 592/593–710"
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30

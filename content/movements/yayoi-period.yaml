@@ -6,6 +6,7 @@ names:
     text: "{弥生時代|やよいじだい}"
 kind: period
 period: c. 400 BCE–300
+description_md: "**Dates.** Begins with wet-rice farming arriving from the continent in northern Kyushu and ends in the 3rd century with the first keyhole-shaped tombs. The start was long put in the 5th century BCE (Mason: c. 400 BCE; the Tokyo, Kyoto and Nara museums); radiocarbon dates published by the National Museum of Japanese History in 2003 moved it back to about the 9th–8th century BCE[[source/wikipedia-ja-yayoi-jidai|「2003年に国立歴史民俗博物館が放射性炭素年代測定により…」]] — Nabunken follows them (ca. 8th century BCE)[[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -19,3 +20,12 @@ sources:
     - note: "The principal periods as used in this volume are: … “Yayoi period (c. 400 B.C.E.–C.E. 300)” (p. 10)"
       source: history-of-japanese-art
       locator: pp. 10, 22
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken ca. 8th century BCE–3rd century CE · Tokyo National Museum ca. 5th century BCE–3rd century CE · Kyoto National Museum ca. 5th century BCE–ca. 3rd century CE · Nara National Museum 5th/3rd century BCE–ca. 3rd century CE
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%BC%A5%E7%94%9F%E6%99%82%E4%BB%A3&oldid=111474213
+      note: 「2003年に国立歴史民俗博物館が放射性炭素年代測定により行った弥生土器付着の炭化物の測定結果を発表した」 · 「紀元前9-8世紀ごろに、大陸から北部九州へと伝来した水稲耕作技術」 · 「年代としては紀元前800年前後から紀元後3世紀中頃までにあたる」
+      source: wikipedia-ja-yayoi-jidai
+      accessed: 2026-10-30

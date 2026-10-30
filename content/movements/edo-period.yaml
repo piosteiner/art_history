@@ -2,12 +2,15 @@ public_id: 100018
 name: Edo period
 names: [Tokugawa period]
 kind: period
-period: 1600/1868
-description_md: Japan under the Tokugawa shogunate, with Edo (Tokyo) as its political centre[[source/wikipedia-en-edo-period|“the period between 1600 or 1603 and 1868 in the history of Japan, when the country was under the rule of the Tokugawa shogunate”]][[source/wikipedia-en-ukiyo-e|“In 1603, the city of Edo (Tokyo) became the seat of the ruling Tokugawa shogunate”]].
+period: 1603/1868
+description_md: |-
+  Japan under the Tokugawa shogunate, with Edo (Tokyo) as its political centre[[source/wikipedia-en-edo-period|“the period between 1600 or 1603 and 1868 in the history of Japan, when the country was under the rule of the Tokugawa shogunate”]][[source/wikipedia-en-ukiyo-e|“In 1603, the city of Edo (Tokyo) became the seat of the ruling Tokugawa shogunate”]].
+
+  **Dates.** Here 1603–1868, the usual dates and those of Nabunken and the Tokyo National Museum[[source/nabunken-style-manual-2022|pp. 29–31]]: from Tokugawa Ieyasu's appointment as shōgun on 24 March 1603 to the change of era to Meiji on 23 October 1868[[source/wikipedia-ja-edo-jidai|1603年3月24日…から、1868年10月23日…]]. Other readings: 1600, the battle of Sekigahara (the Getty thesaurus); 1615, the fall of the Toyotomi at Osaka (Mason, the Kyoto National Museum); and an end in 1867, when the last shōgun Yoshinobu returned power to the emperor on 9 November (Taisei hōkan; the Nara National Museum)[[source/wikipedia-ja-taisei-hokan|慶応3年10月14日（1867年11月9日）]].
 relationships:
   - type: active_in
     to: place/japan
-    period: 1600/1868
+    period: 1603/1868
     sources:
       - "Getty Art & Architecture Thesaurus, “Edo (Japanese period)” (AAT 300106643): “the period and style that developed from the unification of Japan in 1600 until the end of the shogunal dynasty in 1868”"
       - "Wikidata, Edo period (Q184963): start time 1603, end time 1868"
@@ -21,3 +24,16 @@ sources:
     - note: "Mason dates it 1615–1868 (the shogunate from 1603): “Edo or Tokugawa period (1615–1868)” (p. 10) · “Edo is therefore the name of the period (1615–1868), although it is also often referred to as the Tokugawa period” (p. 272)"
       source: history-of-japanese-art
       locator: pp. 10, 272
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken 1603–1868 · Tokyo National Museum 1603–1868 · Kyoto National Museum 1615–1868 · Nara National Museum 1603–1867
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E6%B1%9F%E6%88%B8%E6%99%82%E4%BB%A3&oldid=111409767
+      note: 「江戸時代の期間は、一般的には1603年3月24日（慶長8年2月12日）に徳川家康が征夷大将軍に任命されて江戸…に幕府を樹立してから、1868年10月23日（慶応4年／明治元年9月8日）の「一世一元の詔」の発布…に伴い、慶応から明治に改元されるまでの265年間である」
+      source: wikipedia-ja-edo-jidai
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%A4%A7%E6%94%BF%E5%A5%89%E9%82%84&oldid=111409798
+      note: 「大政奉還は、慶応3年10月14日（1867年11月9日）に…徳川慶喜が政権返上を明治天皇へ奏上し、翌15日（1867年11月10日）に天皇が奏上を勅許した出来事」
+      source: wikipedia-ja-taisei-hokan
+      accessed: 2026-10-30

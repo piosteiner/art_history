@@ -4,6 +4,21 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Japanese periods on the official dates, with the reasons for every boundary
+- **What:** source `nabunken-style-manual-2022` (Nabunken, 英文スタイル・マニュアル 基礎編, 2022, appendix pp. 29–31 — the
+  period tables of Nabunken and the Tokyo, Kyoto and Nara National Museums) cited on every Japanese period with all
+  four institutions' dates in the note. Changed to the official majority: Muromachi 1392–1573 (was 1338), Edo
+  1603–1868 (was 1600), Azuchi-Momoyama 1573–1603 (renamed, was Momoyama 1573–1615), Nanbokuchō 1333–1392 (was 1336);
+  new Reiwa period (from 1 May 2019). Every period got a "**Dates.**" paragraph: why it starts and ends where it does
+  and why other sources differ (Kamakura 1183/1185/1192, Muromachi 1336/1338/1392, Edo 1600/1603/1615 and 1867/1868,
+  Yayoi radiocarbon 2003 …), cited from 15 new Wikipedia sources (fixed revisions, ja/en). Citations written in SQL
+  today got their `cited_value` (else "outdated"); Getty/Wikidata/Mason readings on the changed periods marked current
+  (their dates are in the text and notes).
+- **Code:** `formatFuzzyDate()` writes an open-start BCE bound as a year ("-395 or earlier"), since BCE dates exist only
+  as years — the export of Jōmon didn't import again; test in `test/fuzzy-date.test.js`.
+- **Why:** owner, 2026-10-30 — check official Japanese sources before deciding, and say why each boundary is where it is.
+- **Revert:** dates via the admin history; `git revert` for the code.
+
 ### Data: all of Mason's periods (preface p. 10 and table of contents)
 - **What:** from the whole book (PDFs in `/home/ubuntu/books`), 16 more periods, page-cited, Japanese names,
   `active_in` Japan: Jōmon with Incipient, Initial, Early, Middle, Late, Final; Yayoi, Kofun, Asuka, Hakuhō; Early Heian,

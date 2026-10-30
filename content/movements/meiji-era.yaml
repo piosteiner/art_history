@@ -2,6 +2,7 @@ public_id: 101097
 name: Meiji era
 kind: period
 period: 1868-10-23/1912-07-30
+description_md: "**Dates.** From the change of era on 23 October 1868 to Emperor Meiji's death on 30 July 1912[[source/wikipedia-en-meiji-era|“from October 23, 1868, to July 30, 1912”]]. All the institutions agree[[source/nabunken-style-manual-2022|pp. 29–31]]; Mason's preface has 1911, her chapter 7 1912."
 wikidata_id: Q3125096
 metadata:
   sources: [Wikidata Q3125096 (retrieved 2026-10-18)]
@@ -26,3 +27,12 @@ sources:
     - note: "Mason’s preface: “Meiji period (1868–1911)”, “Emperor Meiji (r. 1868–1911)” (p. 10); chapter 7: “emperor Meiji (r. 1867–1912)” (p. 343) — the book disagrees with itself"
       source: history-of-japanese-art
       locator: pp. 10, 343
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken 1868–1912 · Tokyo National Museum 1868–1912 · Kyoto National Museum 1868–1912 · Nara National Museum 1868–1912
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://en.wikipedia.org/w/index.php?title=Meiji_era&oldid=1382301514
+      note: “The Meiji era … extended from October 23, 1868, to July 30, 1912”
+      source: wikipedia-en-meiji-era
+      accessed: 2026-10-30

@@ -6,6 +6,7 @@ names:
     text: "{鎌倉時代|かまくらじだい}"
 kind: period
 period: 1185/1333
+description_md: "**Dates.** The start depends on which step of Minamoto no Yoritomo's rise counts: 1185, when he won the right to appoint military governors (shugo) and land stewards (jitō) after the Taira were defeated at Dan-no-ura — the prevailing view; 1192, his appointment as shōgun — the older view, still used by the Tokyo National Museum; or 1183, the court's recognition of his rule over the east[[source/wikipedia-ja-kamakura-jidai|1183年説、1185年説、1192年説]][[source/wikipedia-en-kamakura-period|“In the past, the most popular theory was that the year was 1192”]][[source/nabunken-style-manual-2022|pp. 29–31]]. It ends in 1333 with the fall of Kamakura and of the shogunate."
 relationships:
   - type: active_in
     to: place/japan
@@ -19,3 +20,16 @@ sources:
     - note: “Kamakura period (1185–1333)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
       source: history-of-japanese-art
       locator: pp. 10, 309
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken 1185–1333 · Tokyo National Museum 1192–1333 · Kyoto National Museum 1185–1333 · Nara National Museum 1185–1333
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E9%8E%8C%E5%80%89%E6%99%82%E4%BB%A3&oldid=111136946
+      note: 「東国支配権の承認を得た1183年説、守護・地頭設置権を認められた1185年説、源頼朝が征夷大将軍に就任した1192年説等が有力である」
+      source: wikipedia-ja-kamakura-jidai
+      accessed: 2026-10-30
+    - url: https://en.wikipedia.org/w/index.php?title=Kamakura_period&oldid=1376411716
+      note: “In the past, the most popular theory was that the year was 1192, when Minamoto no Yoritomo was appointed Seii Taishōgun” · “Later, the prevailing theory was that the year was 1185, when Yoritomo established the Shugo … and the Jitō” · “the Siege of Kamakura in 1333 which ended the rule of the shogunate”
+      source: wikipedia-en-kamakura-period
+      accessed: 2026-10-30

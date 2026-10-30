@@ -322,9 +322,14 @@ function pointText(p, precision) {
 
 function formatFuzzyDate(range, { coarseStart = false } = {}) {
   if (range === null || range === undefined) return null;
-  // known only from above: "… or earlier" (the day before the exclusive upper bound)
+  // known only from above: "… or earlier" (the day before the exclusive upper bound) — a BCE bound as the year before
+  // it, since BCE dates exist only as years ("-395 or earlier", Jōmon "c. 11,000–400 BCE", 2026-10-30)
   const below = /^\(,([^,]+)\)$/.exec(String(range));
-  if (below) return `${pointText(dayBefore(parseBound(below[1])), DAY)} or earlier`;
+  if (below) {
+    const hi = parseBound(below[1]);
+    if (/BC/.test(below[1]) && hi.mo === 1 && hi.d === 1) return `${pointText({ y: prevYear(hi.y), mo: 12, d: 31 }, YEAR)} or earlier`;
+    return `${pointText(dayBefore(hi), DAY)} or earlier`;
+  }
   const m = /^\[([^,]+),([^,]*)\)$/.exec(String(range));
   if (!m) throw new Error(`unsupported daterange "${range}"`);
   const lo = parseBound(m[1]);

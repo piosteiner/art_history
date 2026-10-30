@@ -6,7 +6,10 @@ names:
     text: "{古墳時代|こふんじだい}"
 kind: period
 period: 300/710
-description_md: Defined by archaeology, after its burial mounds (kofun); it runs on through the first two historical periods, Asuka and Hakuhō[[source/history-of-japanese-art|p. 10]].
+description_md: |-
+  Defined by archaeology, after its burial mounds (kofun); it runs on through the first two historical periods, Asuka and Hakuhō[[source/history-of-japanese-art|p. 10]].
+
+  **Dates.** Named after the burial mounds (kofun), above all the keyhole-shaped ones; it begins with their appearance in the 3rd century[[source/wikipedia-ja-kofun-jidai|「前方後円墳に代表される古墳が盛んに造られた時代」]]. Its end is open because tombs went on being built into the Asuka period: the 6th century (Nabunken, Kyoto) or the 7th (Tokyo, Nara)[[source/nabunken-style-manual-2022|pp. 29–31]]; Mason lets it run to 710.
 relationships:
   - type: active_in
     to: place/japan
@@ -20,3 +23,12 @@ sources:
     - note: "The principal periods as used in this volume are: … “Kofun period (300–710)” · “The archaeologically defined Kofun period extends through the first two historical periods of the Asuka and Hakuho” (p. 10)"
       source: history-of-japanese-art
       locator: pp. 10, 29
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken ca. 3rd–6th century · Tokyo National Museum ca. 3rd–7th century · Kyoto National Museum ca. 3rd–6th century · Nara National Museum ca. 3rd–7th century
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%8F%A4%E5%A2%B3%E6%99%82%E4%BB%A3&oldid=111452066
+      note: 「前方後円墳に代表される古墳が盛んに造られた時代を指す」 · 「前方後円墳の出現を特徴とし…」
+      source: wikipedia-ja-kofun-jidai
+      accessed: 2026-10-30

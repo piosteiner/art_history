@@ -6,6 +6,7 @@ names:
     text: "{飛鳥時代|あすかじだい}"
 kind: period
 period: 552/645
+description_md: "**Dates.** Here after Mason: from 552, the official introduction of Buddhism from Paekche (another tradition gives 538), to the coup of 645 that opened the Taika Reform; the years to 710 are then the Hakuhō period of art history[[source/history-of-japanese-art|p. 10]][[source/wikipedia-ja-asuka-jidai|552年…或いは538年…仏教が公伝]]. The national institutions date Asuka 592/593–710 and have no Hakuhō period[[source/nabunken-style-manual-2022|pp. 29–31]]: 592 (Sushun 5, whose 12th month falls in 593 by the Western calendar), when the court was seated at Asuka, or 593, when Prince Shōtoku became regent, to 710, the move to Heijō-kyō[[source/wikipedia-ja-asuka-jidai|崇峻天皇5年（592年…）から和銅3年（710年）]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -19,3 +20,12 @@ sources:
     - note: "The principal periods as used in this volume are: … “Asuka period (552–645)” (p. 10)"
       source: history-of-japanese-art
       locator: pp. 10, 70
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken 592–710 · Tokyo National Museum 593–710 · Kyoto National Museum 592–710 · Nara National Museum 592–710
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E9%A3%9B%E9%B3%A5%E6%99%82%E4%BB%A3&oldid=111420535
+      note: 「広義には、難波宮や飛鳥に宮都が置かれていた崇峻天皇5年（592年（ただし旧暦12月8日なので、西暦に換算すると593年））から和銅3年（710年）にかけての118年間を指す」 · 「552年（欽明天皇13年)、或いは538年（宣化天皇3年）に…仏教が公伝され」
+      source: wikipedia-ja-asuka-jidai
+      accessed: 2026-10-30

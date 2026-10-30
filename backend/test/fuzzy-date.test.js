@@ -129,6 +129,10 @@ test('dates known from one side, and written-out dates (063, provenance)', () =>
   assert.deepStrictEqual(p('before 1928'), ['(,1928-01-01)', 'before 1928']);
   assert.deepStrictEqual(p('1901/28 October 1904'), ['[1901-01-01,1904-10-29)', '1901–28 October 1904']);
   assert.strictEqual(formatFuzzyDate('(,1904-10-29)'), '1904-10-28 or earlier');
+  // a BCE bound as a year — BCE dates exist only as years (Jōmon, "c. 11,000–400 BCE", 2026-10-30); CE ones stay days
+  assert.strictEqual(formatFuzzyDate('(,0394-01-01 BC)'), '-395 or earlier');
+  assert.strictEqual(p('-395 or earlier')[0], '(,0394-01-01 BC)');
+  assert.strictEqual(formatFuzzyDate('(,1958-01-01)'), '1957-12-31 or earlier');
 });
 
 test('forms provenance sources write: between … and …, Roman months, German numeric dates (077)', () => {

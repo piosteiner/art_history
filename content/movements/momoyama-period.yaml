@@ -1,15 +1,22 @@
 public_id: 105218
-name: Momoyama period
+name: Azuchi-Momoyama period
 names:
+  - lang: en
+    role: alternative
+    text: Momoyama period
   - lang: ja
     role: original
+    text: "{安土桃山時代|あづちももやまじだい}"
+  - lang: ja
+    role: alternative
     text: "{桃山時代|ももやまじだい}"
 kind: period
-period: 1573/1615
+period: 1573/1603
+description_md: "**Dates.** The time of Oda Nobunaga and Toyotomi Hideyoshi, named after their castles at Azuchi and Momoyama (Fushimi). Here 1573–1603, as Nabunken and the Tokyo and Nara museums date it[[source/nabunken-style-manual-2022|pp. 29–31]]: from Nobunaga's expulsion of the last Ashikaga shōgun to Tokugawa Ieyasu's appointment as shōgun. Other starts are 1568 (Nobunaga enters Kyoto) and 1576 (Azuchi castle begun), other ends 1598 (Hideyoshi's death) and 1600 (Sekigahara). Art history usually lets it run to 1615, the fall of the Toyotomi at Osaka — hence \"Momoyama period, 1573–1615\" at the Kyoto National Museum and in Mason[[source/wikipedia-ja-azuchi-momoyama-jidai|美術史では、慶長20年（1615年）の豊臣家滅亡までを…]]."
 relationships:
   - type: active_in
     to: place/japan
-    period: 1573/1615
+    period: 1573/1603
     sources:
       - note: “Momoyama period (1573–1615)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273)
         source: history-of-japanese-art
@@ -19,3 +26,12 @@ sources:
     - note: “Momoyama period (1573–1615)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273)
       source: history-of-japanese-art
       locator: pp. 10, 273, 352
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: "Nabunken, Tokyo and Nara National Museum: “Azuchi-Momoyama period (1573–1603)” · Kyoto National Museum: “Momoyama period (1573–1615)”"
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%AE%89%E5%9C%9F%E6%A1%83%E5%B1%B1%E6%99%82%E4%BB%A3&oldid=111432156
+      note: 「始期は、織田信長が足利義昭を奉じて京都に上洛した永禄11年（1568年）、義昭が京都から放逐されて室町幕府が事実上の滅亡に追い込まれた元亀4年（1573年）、安土城の建設が始まった天正4年（1576年）とする考えもある」 · 「終期は、豊臣秀吉が死去した慶長3年（1598年）、関ヶ原の戦いで徳川家康が勝利した慶長5年（1600年）、家康が…征夷大将軍に任じられ江戸幕府を開いた慶長8年（1603年）などがある」 · 「美術史では、慶長20年（1615年）の豊臣家滅亡までを安土桃山時代と称するのが一般的」
+      source: wikipedia-ja-azuchi-momoyama-jidai
+      accessed: 2026-10-30

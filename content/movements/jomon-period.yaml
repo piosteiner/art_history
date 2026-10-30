@@ -5,12 +5,13 @@ names:
     role: original
     text: "{縄文時代|じょうもんじだい}"
 kind: period
-period: -395-12-31 or earlier
+period: -395 or earlier
 period_label: c. 11,000–400 BCE
+description_md: "**Dates.** Both ends are archaeological, not events: the period begins with the first pottery and ends where wet-rice farming and metal tools of the Yayoi culture take over, so its dates move with new radiocarbon results — the start is now usually put at about 16,000 years ago[[source/wikipedia-ja-jomon-jidai|「始期に関しては一般的に1万6000±850年前と考えられている」]]. Mason gives c. 11,000–400 BCE; the national institutions differ: Nabunken ca. 14,000–800 BCE, the Tokyo National Museum ca. 11,000 BCE–5th century BCE, Kyoto and Nara before 10,000 BCE to about the 5th century BCE[[source/nabunken-style-manual-2022|pp. 29–31]]. Dates before 4713 BCE cannot be stored here, so the start stays open."
 relationships:
   - type: active_in
     to: place/japan
-    period: -395-12-31 or earlier
+    period: -395 or earlier
     period_label: c. 11,000–400 BCE
     sources:
       - note: "The principal periods as used in this volume are: … “Jomon period (c. 11,000–400 B.C.E.)” (p. 10)"
@@ -21,3 +22,12 @@ sources:
     - note: "The principal periods as used in this volume are: … “Jomon period (c. 11,000–400 B.C.E.)” (p. 10)"
       source: history-of-japanese-art
       locator: pp. 10, 14
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken ca. 14,000–800 BCE · Tokyo National Museum ca. 11,000 BCE–5th century BCE · Kyoto National Museum pre-10,000 BCE–ca. 5th century BCE · Nara National Museum pre-10,000–ca. 5th/3rd century BCE
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E7%B8%84%E6%96%87%E6%99%82%E4%BB%A3&oldid=111474420
+      note: 「始期に関しては一般的に1万6000±850年前と考えられている」 · 「終期については、定型的な水田稲作や金属器の使用を特徴とする弥生文化の始まりによって取って代わられたと大まかに考えられている」
+      source: wikipedia-ja-jomon-jidai
+      accessed: 2026-10-30

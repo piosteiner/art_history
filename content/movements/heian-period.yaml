@@ -6,6 +6,7 @@ names:
     text: "{平安時代|へいあんじだい}"
 kind: period
 period: 794/1185
+description_md: "**Dates.** From the move of the capital to Heian-kyō (Kyoto) in 794[[source/wikipedia-en-heian-period|“794: Emperor Kammu moves the capital to Heian-kyō”]]. Its end is the beginning of the Kamakura period: 1185 in most sources, 1192 at the Tokyo National Museum[[source/nabunken-style-manual-2022|pp. 29–31]] — see there."
 relationships:
   - type: active_in
     to: place/japan
@@ -19,3 +20,12 @@ sources:
     - note: “Heian period (794–1185)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
       source: history-of-japanese-art
       locator: pp. 10, 275, 309
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken 794–1185 · Tokyo National Museum 794–1192 · Kyoto National Museum 794–1185 · Nara National Museum 794–1185
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://en.wikipedia.org/w/index.php?title=Heian_period&oldid=1382669915
+      note: "“running from 794 to 1185” · “794: Emperor Kammu moves the capital to Heian-kyō (Kyōto)”"
+      source: wikipedia-en-heian-period
+      accessed: 2026-10-30

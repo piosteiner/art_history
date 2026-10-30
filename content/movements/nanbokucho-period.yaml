@@ -8,11 +8,12 @@ names:
     role: original
     text: "{南北朝時代|なんぼくちょうじだい}"
 kind: period
-period: 1336/1392
+period: 1333/1392
+description_md: "**Dates.** Here from 1333, as the national institutions date it[[source/nabunken-style-manual-2022|pp. 29–31]]: the fall of the Kamakura shogunate and the beginning of Emperor Go-Daigo's Kenmu Restoration. Often it starts only in 1336 (Mason), when the Kenmu government collapsed and Go-Daigo, facing Ashikaga Takauji's emperor in Kyoto, set up his court at Yoshino — strictly on 23 January 1337. It ends on 19 November 1392, when the Southern court handed the regalia to the Northern and the two lines were reunited[[source/wikipedia-ja-nanbokucho-jidai|始期を…1333年とする場合もある]]."
 relationships:
   - type: active_in
     to: place/japan
-    period: 1336/1392
+    period: 1333/1392
     sources:
       - note: "The principal periods as used in this volume are: … “Nambokucho period (1336–1392)”"
         source: history-of-japanese-art
@@ -22,3 +23,12 @@ sources:
     - note: "The principal periods as used in this volume are: … “Nambokucho period (1336–1392)”"
       source: history-of-japanese-art
       locator: p. 10
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: Nabunken 1333–1392 · Tokyo National Museum 1333–1392 · Kyoto National Museum 1333–1392 · Nara National Museum 1333–1392
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E5%8D%97%E5%8C%97%E6%9C%9D%E6%99%82%E4%BB%A3_(%E6%97%A5%E6%9C%AC)&oldid=110922584
+      note: 「始期は…後醍醐天皇（南朝・大覚寺統）が吉野行宮に遷った建武3年/延元元年12月21日(1337年1月23日)、終期は…両朝が合一した明徳3年/元中9年閏10月5日(1392年11月19日)である」 · 「始期を建武の新政の始まりである1333年とする場合もある」
+      source: wikipedia-ja-nanbokucho-jidai
+      accessed: 2026-10-30

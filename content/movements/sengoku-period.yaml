@@ -13,6 +13,7 @@ names:
 kind: period
 parent: muromachi-period
 period: c. 1480–1573
+description_md: "**Dates.** Mason gives c. 1480–1573. It is usually counted from the Ōnin War (1467–77) to Oda Nobunaga's entry into Kyoto in 1568, or to the end of the Muromachi shogunate in 1573; around the capital from the Meiō coup of 1493, in the Kantō from the Kyōtoku war of 1455 to the fall of Odawara in 1590[[source/wikipedia-ja-sengoku-jidai|応仁の乱…から織田信長の上洛（…1568年）まで]]. Nabunken: ca. 15th–16th century[[source/nabunken-style-manual-2022|pp. 29–31]]."
 relationships:
   - type: active_in
     to: place/japan
@@ -26,3 +27,12 @@ sources:
     - note: “the Sengoku Jidai (Age of the Country at War; c. 1480–1573)”
       source: history-of-japanese-art
       locator: p. 273
+    - url: https://sitereports.nabunken.go.jp/ja/article/26028
+      note: "Nabunken: “Warring States period (ca. 15th–16th century)”; not in the museums’ tables"
+      source: nabunken-style-manual-2022
+      locator: pp. 29–31
+      accessed: 2026-10-30
+    - url: https://ja.wikipedia.org/w/index.php?title=%E6%88%A6%E5%9B%BD%E6%99%82%E4%BB%A3_(%E6%97%A5%E6%9C%AC)&oldid=110706052
+      note: 「戦国時代は、一般的に15世紀後半から16世紀後半、応仁の乱（…1467年 - 1477年）から織田信長の上洛（永禄11年、1568年）までの期間とされている」 · 「室町幕府が滅亡した天正元年（1573年）を下限とする見解などがある」 · 「畿内では明応2年（1493年）の明応の政変を戦国時代の始期とし」 · 「関東地方では、享徳3年（1455年）に勃発した享徳の乱によって…天正18年（1590年）の…小田原征伐によって戦国時代が終わった」
+      source: wikipedia-ja-sengoku-jidai
+      accessed: 2026-10-30
