@@ -1,6 +1,7 @@
 public_id: 105007
 title_lang: en
 title: Augustine Roulin (Rocking a Cradle)
+title_status: official
 names:
   - lang: nl
     role: original
@@ -17,6 +18,9 @@ kind: oil painting
 medium: Oil on canvas
 materials: [oil paint, canvas]
 dimensions: [91, 72]
+other_dimensions:
+  - cm: [111, 91, 9]
+    part: frame
 institution: stedelijk-museum-amsterdam
 inventory_number: A 965
 web_url: https://www.stedelijk.nl/en/collection/962-vincent-van-gogh-augustine-roulin-(la-berceuse)
@@ -92,6 +96,8 @@ sources:
       wikidata: Q18689442
     - note: „Augustine Roulin (La berceuse), 1889“ (the museum's page, archived 22 November 2017)
       source: stedelijk-la-berceuse-a965
+    - note: "Production date: 1889"
+      source: stedelijk-collection-a965
   creator:
     - accessed: 2026-10-30
       property: P170
@@ -108,7 +114,13 @@ sources:
     - accessed: 2026-10-30
       property: P195
       wikidata: Q18689442
+  title_status:
+    - note: "Translated title: Augustine Roulin (Rocking a Cradle)"
+      source: stedelijk-collection-a965
   inventory_number:
     - accessed: 2026-10-30
       property: P217
       wikidata: Q18689442
+  other_dimensions:
+    - note: "Dimensions: 111 × 91 × 9 cm — the only measurement given; with its depth, the framed picture"
+      source: stedelijk-collection-a965

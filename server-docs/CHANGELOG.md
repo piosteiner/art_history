@@ -21,7 +21,8 @@ Format: date — what — why — how to revert.
   Beethoven Frieze and Madame Ingres (owners vs. places of loan), Die Beschneidung's oak. chanoyu's Mason definition
   restored (a Wikidata definition had replaced it by mistake — owner) and the stray Wikidata citation removed;
   La Berceuse (Stedelijk) 1889 cited to the museum's page (archived 2017), Wikidata's 1888 (from Commons)
-  acknowledged. Open: 31 place parents (Wikidata names a district between).
+  acknowledged; the current Stedelijk page (owner's screenshot) cited for 1889, the official English title
+  "Augustine Roulin (Rocking a Cradle)" and its 111 × 91 × 9 cm as the framed size (canvas 91 × 72 cm). Open: 31 place parents (Wikidata names a district between).
 - **Why:** owner, 2026-10-30. **Revert:** admin history per entry.
 
 ### Quality warnings resolved (migration 176 + data)
