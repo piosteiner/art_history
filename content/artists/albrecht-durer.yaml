@@ -2,8 +2,10 @@ public_id: 101180
 name: Albrecht Dürer
 given_name: Albrecht
 family_name: Dürer
-birth: 1471-05-21
-death: 1528-04-06
+birth: 1471-05-30
+birth_label: 21 May 1471 (Julian calendar)
+death: 1528-04-16
+death_label: 6 April 1528 (Julian calendar)
 wikidata_id: Q5580
 metadata:
   sources: [Wikidata Q5580 (retrieved 2026-10-19)]

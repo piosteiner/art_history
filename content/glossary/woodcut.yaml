@@ -1,4 +1,51 @@
 public_id: 101000
 name: woodcut
+names:
+  - lang: en
+    role: alternative
+    text: woodblock print
+    note: the usual English word for East Asian prints
+  - lang: en
+    role: alternative
+    text: xylography
+  - lang: de
+    role: translation
+    text: Holzschnitt
+  - lang: de
+    role: alternative
+    text: Holzschnittdruck
+  - lang: fr
+    role: translation
+    text: gravure sur bois
+  - lang: it
+    role: translation
+    text: xilografia
+  - lang: ja
+    role: translation
+    text: 木版画
+  - lang: ko
+    role: translation
+    text: 목판화
+  - lang: zh
+    role: translation
+    text: 木刻
 category: object type
-parent: print
+parent: relief-print
+definition: "A print from a block of wood cut along the grain: what is not to print is cut away, and the raised lines and areas are inked and printed — in a press or by rubbing the back of the paper. In East Asia, where it began, usually called woodblock printing."
+description_md: |-
+  The oldest printing technique. It began in China — silk printed with flowers in three colours survives from the Han dynasty[[source/wikipedia-en-woodcut|“The earliest woodblock printed fragments to survive are from China, from the Han dynasty (before 220), and are of silk printed with flowers in three colours.”]] — and the oldest printed text that survives is a Dharani sutra from the Sŏkkat'ap pagoda of Pulguksa in Gyeongju, from before 751[[source/portal-2000|p. 67]]. In English “woodcut” is mostly said of European prints and “woodblock print” of East Asian ones, for the same technique[[source/wikipedia-en-woodcut|“The older East Asian technique is usually called woodblock printing”]]; German knows only *Holzschnitt*.
+
+  In Europe and in East Asia alike the artist usually only designed the print, and specialist block-cutters (*Formschneider*) carved it[[source/wikipedia-en-woodcut|“In both Europe and East Asia, traditionally the artist only designed the woodcut, and the block-carving was left to specialist craftsmen, called formschneider or block-cutters”]]. Beyond that the craft differs from region to region — in materials, inks, printing and purpose — so it has narrower terms of its own:
+
+  - [[japanese-woodblock-print]] — water-based pigments, rubbed by hand with the baren, from the 1760s in many colours (nishiki-e);
+  - [[korean-woodblock-print]] — above all texts: the Buddhist canon of the Tripitaka Koreana;
+  - [[chiaroscuro-woodcut]] — the European colour woodcut from tone blocks, from 1508.
+
+  Not to be confused with [[wood-engraving]], cut into the end grain of a hard wood with a burin.
+wikidata_id: Q18219090
+sources:
+  definition:
+    - note: “The block is cut along the wood grain (unlike wood engraving, where the block is cut in the end-grain).” · “The older East Asian technique is usually called woodblock printing”
+      source: wikipedia-en-woodcut
+    - accessed: 2026-10-30
+      wikidata: Q18219090

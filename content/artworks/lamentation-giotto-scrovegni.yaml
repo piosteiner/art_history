@@ -81,6 +81,10 @@ provenance:
         source: wikipedia-it-cappella-scrovegni
         accessed: 2026-10-20
 sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2067212
   names:
     - accessed: 2026-10-20
       wikidata: Q2067212
@@ -91,10 +95,6 @@ sources:
   location:
     - accessed: 2026-10-20
       property: P625
-      wikidata: Q2067212
-  materials:
-    - accessed: 2026-10-20
-      property: P186
       wikidata: Q2067212
   dimensions:
     - accessed: 2026-10-20

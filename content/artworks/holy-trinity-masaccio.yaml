@@ -86,6 +86,10 @@ provenance:
 identifiers:
   viaf: "178338732"
 sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q977200
   names:
     - accessed: 2026-10-20
       wikidata: Q977200
@@ -96,10 +100,6 @@ sources:
   location:
     - accessed: 2026-10-20
       property: P625
-      wikidata: Q977200
-  materials:
-    - accessed: 2026-10-20
-      property: P186
       wikidata: Q977200
   dimensions:
     - accessed: 2026-10-20

@@ -10,8 +10,10 @@ names:
   - lang: es
     role: translation
     text: Nicolaus Weckmann
-birth: 1481
-death: 1526
+birth: 1450/1455
+birth_label: c. 1450s
+death: 16th century
+active: 1481/1527
 wikidata_id: Q1990482
 metadata:
   sources: [Wikidata Q1990482 (retrieved 2026-10-18)]
@@ -61,13 +63,10 @@ sources:
     - accessed: 2026-10-18
       property: P569
       wikidata: Q1990482
-    - url: https://rkd.nl/en/explore/artists/114578
-      source: rkd
-      accessed: 2026-10-18
   death:
     - accessed: 2026-10-18
       property: P570
       wikidata: Q1990482
-    - url: https://rkd.nl/en/explore/artists/114578
-      source: rkd
-      accessed: 2026-10-18
+  active:
+    - note: „der archivalischen Nachrichten zufolge in der Zeit von 1481 bis 1527 in Ulm aktiv war“
+      source: wikipedia-de-niklaus-weckmann

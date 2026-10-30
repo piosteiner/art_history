@@ -1,0 +1,28 @@
+public_id: 105603
+name: Japanese woodblock print
+names:
+  - lang: ja
+    role: original
+    text: "{伝統木版画|でんとうもくはんが}"
+  - role: romanization
+    text: mokuhanga
+  - lang: de
+    role: translation
+    text: japanischer Holzschnitt
+  - lang: fr
+    role: translation
+    text: estampe japonaise
+category: object type
+parent: woodcut
+definition: "The woodblock print of Japan as made from the 17th century: designed by an artist, carved and printed by craftsmen with water-based ink on strong mulberry paper, rubbed by hand — from the 1760s in many colours, one block for each."
+description_md: |-
+  The great print artists were designers: they drew the images, which the printer's workmen then carved into a wooden block, inked and printed on paper[[source/history-of-japanese-art|pp. 280–281]]. The design, transferred to a thin, semi-transparent paper, was pasted face down on the block — for traditional prints usually cherry wood — and the surface cut away to leave raised lines and areas; the printer inked them, laid a sheet over them and rubbed its back with a [[baren]]. Early prints used black ink only; by the 1760s up to twenty colours could be printed, a separate block for each, aligned on the black outlines by the [[kento]] cut into the edge of every block. The paper had to be strong and absorbent — traditionally hōsho, from the inner bark of the mulberry ([[japan-paper]]) — and its stock sizes named the formats: [[oban]] (large, about 38 × 26 cm), [[chuban]] (medium), [[hosoban]] (narrow) and the tall [[hashira-e]] “pillar print”[[source/history-of-japanese-art|pp. 282–283]].
+
+  Its forms: [[nishiki-e]], the full-colour print, first made for the New Year calendars of Suzuki Harunobu's circle[[source/history-of-japanese-art|pp. 280–281]], and [[surimono]], privately commissioned editions[[source/history-of-japanese-art|pp. 290–293]]. In the 20th century [[shin-hanga]] kept the old division of labour, while the artists of [[sosaku-hanga]] carved and printed their own blocks[[source/wikipedia-en-woodcut|“In Japan, this movement was called sōsaku-hanga (創作版画, creative prints), as opposed to shin-hanga (新版画, new prints), a movement that retained traditional methods.”]].
+wikidata_id: Q1192525
+sources:
+  definition:
+    - note: "pp. 280–283: “the great woodblock print artists are, in fact, designers of the images” · “Woodblock Printing” — cherry-wood blocks, the baren, a separate block for each colour, kentō, hōsho paper"
+      source: history-of-japanese-art
+    - accessed: 2026-10-30
+      wikidata: Q1192525

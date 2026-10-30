@@ -17,8 +17,11 @@ names:
   - lang: ru
     role: translation
     text: Нисики-э
-category: technique
-parent: woodblock-print
+  - lang: de
+    role: translation
+    text: japanischer Farbholzschnitt
+category: object type
+parent: japanese-woodblock-print
 definition: The full-colour woodblock print, with a separate block for each colour, first produced commercially in Edo in 1765–66 after the calendar prints of Suzuki Harunobu’s circle.
 wikidata_id: Q1683337
 metadata:

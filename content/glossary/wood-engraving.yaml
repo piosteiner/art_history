@@ -1,0 +1,20 @@
+public_id: 105606
+name: wood engraving
+names:
+  - lang: de
+    role: translation
+    text: Holzstich
+  - lang: fr
+    role: translation
+    text: gravure sur bois de bout
+category: object type
+parent: relief-print
+definition: A relief print cut into the end grain of a hard wood with an engraver’s burin, which allows very fine lines; developed by Thomas Bewick at the end of the 18th century.
+description_md: Functionally a kind of woodcut, printed in relief with little pressure[[source/wikipedia-en-wood-engraving|“Functionally a variety of woodcut, it uses relief printing”]], but Thomas Bewick, at the end of the 18th century, cut it with an engraver's burin instead of knives, into the end grain of the wood instead of the softer side grain[[source/wikipedia-en-wood-engraving|“rather than using woodcarving tools such as knives, Bewick used an engraver's burin” · “wood engraving traditionally uses the wood's end grain—while the older technique used the softer side grain”]]. See [[woodcut]].
+wikidata_id: Q22669664
+sources:
+  definition:
+    - note: “Thomas Bewick developed the wood engraving technique in Great Britain at the end of the 18th century.” · “wood engraving traditionally uses the wood’s end grain—while the older technique used the softer side grain”
+      source: wikipedia-en-wood-engraving
+    - accessed: 2026-10-30
+      wikidata: Q22669664

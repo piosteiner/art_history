@@ -1,0 +1,26 @@
+public_id: 105605
+name: chiaroscuro woodcut
+names:
+  - lang: de
+    role: translation
+    text: Helldunkelschnitt
+  - lang: de
+    role: alternative
+    text: Clair-obscur-Holzschnitt
+  - lang: fr
+    role: translation
+    text: camaïeu
+  - lang: it
+    role: translation
+    text: chiaroscuro
+category: object type
+parent: woodcut
+definition: The European colour woodcut of the 16th century, printed from a key block for the lines and one or more tone blocks.
+description_md: "European woodcuts with coloured blocks were invented in Germany in 1508: the chiaroscuro woodcut conceived for two blocks was probably first made by Lucas Cranach the Elder in 1508 or 1509, swiftly followed by Hans Burgkmair[[source/wikipedia-en-woodcut|“the true chiaroscuro woodcut conceived for two blocks was probably first invented by Lucas Cranach the Elder in Germany in 1508 or 1509 … swiftly followed by Hans Burgkmair”]]."
+wikidata_id: Q111983342
+sources:
+  definition:
+    - note: “European woodcut prints with coloured blocks were invented in Germany in 1508, and are known as chiaroscuro woodcuts”
+      source: wikipedia-en-woodcut
+    - accessed: 2026-10-30
+      wikidata: Q111983342

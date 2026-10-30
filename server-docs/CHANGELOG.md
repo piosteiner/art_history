@@ -4,6 +4,24 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: woodcut in the glossary; outdated citations gone through
+- **Woodcut:** "woodblock print" merged into "woodcut" (one term, "woodblock print" an English name; the old address
+  redirects); chain print › relief print › woodcut › Japanese woodblock print (› nishiki-e, surimono) · Korean
+  woodblock print · chiaroscuro woodcut, and wood engraving beside woodcut — each with definition, names, Wikidata
+  (product items: Q99890706, Q18219090, Q1192525, Q124936907, Q111983342, Q22669664, Q2094039), texts after Mason
+  (pp. 280–283, 290–293) and Portal (pp. 67, 74, 80), Wikipedia for Europe. Techniques, styles and formats (baren,
+  kentō, shin-hanga, sōsaku hanga, ōban, chūban, hosoban, hashira-e) out of the chain (broader = "is a kind of"),
+  linked from the Japanese text. Hokusai's Great Wave and two Hiroshige prints: nishiki-e. Owner's decisions 1–3.
+- **Citations (102 + 31 parents):** 101 marked current (more precise dates, normalised materials/kinds, names with
+  roles, the museums' own titles, Dürer's authorities); 6 removed (Prado "painting" on groups, CIAM and Tokyo points,
+  Breda's "site"); Wikidata's "fresco" moved from materials to kind on three frescoes. Data fixed: Dürer stored
+  Gregorian (30 May 1471 / 16 April 1528) with the authorities' Julian dates as labels; Velázquez died 6 August 1660
+  (RKD, BnF: 7th — acknowledged); Weckmann c. 1450s – 16th century, active 1481–1527 (RKD's years were his
+  documented activity); Baroque back to c. 1590–c. 1750 (a stale form had restored 1501–1759). Acknowledged: the
+  Beethoven Frieze and Madame Ingres (owners vs. places of loan), Die Beschneidung's oak. Open for the owner:
+  chanoyu's definition, La Berceuse (Stedelijk) 1888/1889; 31 place parents (Wikidata names a district between).
+- **Why:** owner, 2026-10-30. **Revert:** admin history per entry.
+
 ### Quality warnings resolved (migration 176 + data)
 - **Errors (10 → 0):** polity successions — Nazi Germany from 30.1.1933 (Wikidata 15.3.), Bourbon Restoration from
   6.4.1814 (Wikidata 1815), German Confederation from 8.6.1815 (Federal Act), Acts of Union 1 May 1707 Old Style =

@@ -1,0 +1,23 @@
+public_id: 105601
+name: relief print
+names:
+  - lang: de
+    role: translation
+    text: Hochdruck
+  - lang: fr
+    role: translation
+    text: gravure en relief
+  - lang: en
+    role: alternative
+    text: relief printing
+category: object type
+parent: print
+definition: A print from a matrix whose raised surface carries the ink — the parts that are not to print are cut away; printed with little pressure. Woodcut, wood engraving and linocut are relief prints.
+description_md: "The opposite of intaglio (engraving, etching), where the ink lies in the grooves: in a relief print it lies on what is left standing, so it is enough to ink the block and bring it into firm, even contact with the paper[[source/wikipedia-en-woodcut|“As a relief method, it is only necessary to ink the block and bring it into firm and even contact with the paper or cloth”]]. See [[woodcut]] and [[wood-engraving]]."
+wikidata_id: Q99890706
+sources:
+  definition:
+    - note: “Compared to intaglio techniques like etching and engraving, only low pressure is required to print.”
+      source: wikipedia-en-woodcut
+    - accessed: 2026-10-30
+      wikidata: Q99890706

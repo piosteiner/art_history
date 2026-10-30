@@ -75,6 +75,10 @@ identifiers:
   gnd: 4342560-4
   viaf: "212051623"
 sources:
+  kind:
+    - accessed: 2026-10-20
+      property: P186
+      wikidata: Q2529899
   names:
     - accessed: 2026-10-20
       wikidata: Q2529899
@@ -85,10 +89,6 @@ sources:
   location:
     - accessed: 2026-10-20
       property: P625
-      wikidata: Q2529899
-  materials:
-    - accessed: 2026-10-20
-      property: P186
       wikidata: Q2529899
   institution:
     - accessed: 2026-10-20

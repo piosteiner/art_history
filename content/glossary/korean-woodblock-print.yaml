@@ -1,0 +1,22 @@
+public_id: 105604
+name: Korean woodblock print
+names:
+  - lang: ko
+    role: original
+    text: 목판 인쇄
+  - role: romanization
+    text: mokpan inswae
+  - lang: de
+    role: translation
+    text: koreanischer Holzdruck
+category: object type
+parent: woodcut
+definition: Woodblock printing in Korea, above all of texts — Buddhist scriptures from the Silla period on, the whole canon twice under Goryeo.
+description_md: "The oldest surviving woodblock print anywhere is a copy of the Dharani sutra, found in the Sŏkkat'ap pagoda of Pulguksa in Gyeongju and older than the pagoda, built in 751[[source/portal-2000|pp. 67, 74]]. Under Goryeo the whole Buddhist canon was carved twice, partly as a prayer for protection against invaders: when the first blocks were destroyed in the Mongol invasions, a new edition was cut on [[place/ganghwa-island]] and completed in 1251 — the 80,000 blocks of the Tripitaka Koreana, now at Haeinsa, thought the finest of some twenty East Asian editions for its accuracy, calligraphy and carving. The blocks are magnolia wood, soaked and boiled in salt water and dried for years in the shade[[source/portal-2000|p. 80]]."
+wikidata_id: Q124936907
+sources:
+  definition:
+    - note: "p. 67: “the world’s oldest extant example of woodblock printing is a copy of the Dharani sutra … dating to before its construction in 751” · p. 80: the Tripitaka Koreana, completed in 1251"
+      source: portal-2000
+    - accessed: 2026-10-30
+      wikidata: Q124936907
