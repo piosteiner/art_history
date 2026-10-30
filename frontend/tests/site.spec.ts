@@ -120,6 +120,33 @@ test('several images: the first large, the others as thumbnails that show it lar
   await expect(gallery.locator('.gallery-thumb').nth(1)).toHaveAttribute('aria-current', 'true');
 });
 
+test('enlarged portrait: the frame is the screen — zoomed in, the picture grows into the whole width, not a strip', async ({ page }) => {
+  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
+    body: '<svg xmlns="http://www.w3.org/2000/svg" width="500" height="1500"><rect width="500" height="1500" fill="#3a6"/></svg>' }));
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  await page.click('.figure img');
+  const stage = page.locator('dialog.lightbox[open] .lightbox-stage');
+  const img = stage.locator('img');
+  await expect.poll(async () => (await img.boundingBox())?.height ?? 0).toBeGreaterThan(200);
+  const frame = (await stage.boundingBox())!;
+  const fit = (await img.boundingBox())!;
+  expect(fit.width).toBeLessThan(frame.width / 2); // a narrow portrait, centred in a wide frame
+  expect(Math.abs(fit.x + fit.width / 2 - (frame.x + frame.width / 2))).toBeLessThan(2);
+  await stage.dblclick({ position: { x: frame.width / 2, y: frame.height / 2 } });
+  // a double click: as wide as the frame, not a zoomed strip
+  await expect.poll(async () => (await img.evaluate((el) => el.getBoundingClientRect().width))).toBeGreaterThan(frame.width * 0.95);
+  // a click beside the fitted picture closes; the end of a drag doesn't
+  await stage.dblclick({ position: { x: frame.width / 2, y: frame.height / 2 } });
+  await expect.poll(async () => (await img.boundingBox())!.width).toBeLessThan(frame.width / 2);
+  await page.mouse.move(frame.x + 10, frame.y + frame.height / 2);
+  await page.mouse.down();
+  await page.mouse.move(frame.x + 60, frame.y + frame.height / 2, { steps: 4 });
+  await page.mouse.up();
+  await expect(page.locator('dialog.lightbox[open]')).toHaveCount(1);
+  await page.mouse.click(frame.x + 10, frame.y + frame.height / 2);
+  await expect(page.locator('dialog.lightbox')).toHaveCount(0);
+});
+
 test('enlarged image: the wheel zooms towards the pointer, dragging moves it, a click beside it closes', async ({ page }) => {
   // our own picture instead of Wikimedia's (a picture with a known size: throttled or placeholder images have none to zoom)
   await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
@@ -151,7 +178,9 @@ test('enlarged image: the wheel zooms towards the pointer, dragging moves it, a 
   // never off its edges, never below fit
   for (let i = 0; i < 6; i++) await page.mouse.wheel(0, 400);
   await expect.poll(async () => (await view()).s).toBe(1);
-  expect((await view()).x).toBe(0);
+  // at fit, centred in the screen-sized frame
+  const centred = await img.evaluate((el) => (el.parentElement!.clientWidth - el.offsetWidth) / 2);
+  expect(Math.abs((await view()).x - centred)).toBeLessThan(1);
   // double click zooms, again fits; a click beside the image closes
   await stage.dblclick();
   await expect.poll(async () => (await view()).s).toBeGreaterThan(2);

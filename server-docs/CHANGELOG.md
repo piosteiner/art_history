@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Site: the enlarged picture zooms in a frame the size of the screen
+- **What:** `frontend/src/style.css` — `.lightbox-stage` is 96vw × 86vh for every picture (before: as wide as the fitted
+  picture, a narrow strip for portraits); `src/zoom.ts` — a double click fills the frame (a portrait: its width), at
+  least 2.5×, and the farthest zoom follows; `src/html.ts` — a click beside the visible picture closes, the end of a
+  drag doesn't. Site tests: a portrait, the zoom test centred at fit.
+- **Why:** owner, 2026-10-30 (Adam und Eva: zooming stayed a narrow strip).
+- **Revert:** `git revert` of this commit.
+
 ### Data: Klimt's last portraits unfinished, the Nike fragmentary
 - **What:** `completion = unfinished` (1918, at Klimt's death) on Amalie Zuckerkandl (cited: Wikipedia de, new source
   `wikipedia-de-bildnis-der-amalie-zuckerkandl`, oldid 269158937) and Adam und Eva (Belvedere, Sammlung online, as

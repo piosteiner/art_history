@@ -261,14 +261,15 @@ export function wireLightbox(root: Element) {
       const wide = !!img.closest('.figure.wide') && ratio > 0;
       const stripH = Math.min(innerHeight * 0.8, 900);
       const fitH = (innerWidth * 0.96) / ratio;   // style.css: .lightbox-wide img 96vw wide
-      const near = wide ? Math.max(2.5, stripH / fitH) : 2.5;
-      dialog.className = wide ? 'lightbox lightbox-wide' : 'lightbox';   // a frame the screen's height to grow into
+      const near = wide ? Math.max(2.5, stripH / fitH) : undefined;   // others: filling the frame (zoom.ts)
+      dialog.className = wide ? 'lightbox lightbox-wide' : 'lightbox';   // the strip's rendition, the screen's width
       const caption = img.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
       // the caption was built by figure() above from escaped values, so reusing its markup is safe
       dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close">×</button>
         <figure><div class="lightbox-stage"><img src="${escape(wide ? wideSource(img.dataset.full!, ratio, stripH) : img.dataset.full!)}" alt="${escape(img.alt)}"${img.hasAttribute('crossorigin') ? ' crossorigin="anonymous"' : ' referrerpolicy="no-referrer"'} draggable="false"></div>
         <figcaption>${caption}<span class="lightbox-hint">Scroll or pinch to zoom · drag to move${wide ? ' · Shift + scroll: sideways' : ''} · double-click: fit / zoom</span></figcaption></figure>`;
-      // the image zooms and pans (zoom.ts); a click beside it closes, as does Escape or ×
+      // the image zooms and pans (zoom.ts) in a frame the size of the screen; a click beside the picture closes (not the
+      // end of a drag), as does Escape or ×
       const large = dialog.querySelector('img')!;
       retryImage(large);
       // (not when what we have is itself a Wikimedia thumbnail: the 3840 rendition is sharper than a stored 1280 one)
@@ -280,8 +281,15 @@ export function wireLightbox(root: Element) {
         original.src = img.dataset.full!;
       }
       const unzoom = zoomable(dialog.querySelector<HTMLElement>('.lightbox-stage')!, large, { near });
+      let down = { x: 0, y: 0 };
+      dialog.addEventListener('pointerdown', (e) => { down = { x: e.clientX, y: e.clientY }; });
       dialog.addEventListener('click', (e) => {
-        if (!(e.target as Element).closest('figcaption a, .lightbox-stage')) dialog.close();
+        if (Math.hypot(e.clientX - down.x, e.clientY - down.y) > 5) return; // it was a drag
+        // the picture as drawn (zoomed and moved), as far as the frame shows it
+        const [p, f] = [large.getBoundingClientRect(), large.parentElement!.getBoundingClientRect()];
+        const onPicture = e.clientX >= Math.max(p.left, f.left) && e.clientX <= Math.min(p.right, f.right)
+          && e.clientY >= Math.max(p.top, f.top) && e.clientY <= Math.min(p.bottom, f.bottom);
+        if (!onPicture && !(e.target as Element).closest('figcaption a')) dialog.close();
       });
       dialog.addEventListener('close', () => {
         unzoom();

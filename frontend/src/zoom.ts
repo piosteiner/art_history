@@ -1,5 +1,5 @@
 // Zoom and pan for the enlarged image (the lightbox): the wheel zooms smoothly towards the pointer, dragging moves the
-// enlarged image, two fingers pinch, a double click toggles between fit and 2.5×, + / − / 0 on the keyboard; a sideways
+// enlarged image, two fingers pinch, a double click toggles between fit and filling the frame (at least 2.5×), + / − / 0 on the keyboard; a sideways
 // wheel (trackpad, Shift + wheel) moves it sideways once zoomed. The image stays inside its frame: it can't be dragged
 // off its edges or shrunk below fit.
 
@@ -10,10 +10,14 @@ interface View { s: number; x: number; y: number }
 
 /**
  * Makes `img` zoomable inside `stage` (which clips it). Returns a function that removes the listeners.
- * `near`: the zoom a double click goes to (a very wide picture: the height it has in the strip), `max` = 8 × that.
+ * `near`: the zoom a double click goes to — by default the frame's whole width or height, whichever the picture
+ * leaves empty (a portrait: its width), at least 2.5×; a very wide picture: the height it has in the strip.
+ * The farthest zoom is 8 × the larger of that and 2.5.
  */
-export function zoomable(stage: HTMLElement, img: HTMLImageElement, { near = 2.5 } = {}): () => void {
-  const max = MAX * Math.max(1, near / 2.5);
+export function zoomable(stage: HTMLElement, img: HTMLImageElement, { near }: { near?: number } = {}): () => void {
+  const fill = () => Math.max(2.5, Math.max(stage.clientWidth / (img.offsetWidth || 1), stage.clientHeight / (img.offsetHeight || 1)) || 2.5);
+  const nearest = () => near ?? fill();
+  const maxOf = () => MAX * Math.max(1, nearest() / 2.5);
   const now: View = { s: 1, x: 0, y: 0 }; // what is drawn
   const goal: View = { s: 1, x: 0, y: 0 }; // where it is heading
   const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -26,7 +30,7 @@ export function zoomable(stage: HTMLElement, img: HTMLImageElement, { near = 2.5
    */
   function clamp(v: View) {
     const { w, h } = size();
-    v.s = Math.min(max, Math.max(1, v.s));
+    v.s = Math.min(maxOf(), Math.max(1, v.s));
     const fit = (pos: number, frame: number, length: number) =>
       (length <= frame ? (frame - length) / 2 : Math.min(0, Math.max(frame - length, pos)));
     v.x = fit(v.x, w, (img.offsetWidth || w) * v.s);
@@ -53,7 +57,7 @@ export function zoomable(stage: HTMLElement, img: HTMLImageElement, { near = 2.5
   };
   /** Zoom the goal to `s`, keeping the point (px, py) of the stage where it is. */
   function zoomTo(s: number, px: number, py: number) {
-    const k = Math.min(max, Math.max(1, s)) / goal.s;
+    const k = Math.min(maxOf(), Math.max(1, s)) / goal.s;
     goal.x = px - (px - goal.x) * k;
     goal.y = py - (py - goal.y) * k;
     goal.s *= k;
@@ -114,7 +118,7 @@ export function zoomable(stage: HTMLElement, img: HTMLImageElement, { near = 2.5
     if (pointers.size < 2) pinch = null;
     stage.classList.remove('dragging');
   };
-  const onDouble = (e: MouseEvent) => zoomTo(goal.s > 1.001 ? 1 : near, ...local(e));
+  const onDouble = (e: MouseEvent) => zoomTo(goal.s > 1.001 ? 1 : nearest(), ...local(e));
   const onKey = (e: KeyboardEvent) => {
     const { w, h } = size();
     if (e.key === '+' || e.key === '=') zoomTo(goal.s * 1.5, w / 2, h / 2);
