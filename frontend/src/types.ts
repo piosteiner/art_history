@@ -322,6 +322,8 @@ export interface Artwork extends DetailBase, Located, Titled {
   on_loan?: boolean; on_loan_since?: DateRange | null;
   /** The 1933–1945 provenance status (API 074), null when not assessed; `note`: the source's own wording. */
   provenance_status?: ProvenanceStatus | null;
+  /** API 169: the building history — phases in order (optional: older answers lack it). */
+  phases?: Phase[];
   /** What became of it (API 103): destroyed / partly destroyed / lost, when and how; null while extant. */
   fate?: ArtworkFate | null;
   /** What the span of `created` means (API 135): `duration` = worked on over that time, `uncertain` = made at some point
@@ -793,4 +795,11 @@ export interface PeriodArtist {
 export interface Periods {
   lanes: { slug: string; name: string; public_id: number | null }[];
   periods: Period[];
+}
+
+/** One phase of a work's building history (API 169). */
+export type PhaseKind = 'construction' | 'extension' | 'alteration' | 'completion' | 'restoration' | 'damage' | 'destruction' | 'demolition' | 'reconstruction' | 'other';
+export interface Phase {
+  kind: PhaseKind; title: string; part: string | null; period: DateRange | null; notes_html: string | null;
+  people: { type: 'artist' | 'person' | 'institution'; slug: string; name: string; public_id: number | null; role: string | null; patron: boolean }[];
 }

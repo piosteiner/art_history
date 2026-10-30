@@ -353,6 +353,30 @@ test('provenance map: the first and last placed stop are marked; a destroyed wor
   await expect(page.locator('.prov-end')).toHaveAttribute('data-cap', 'last known place');
 });
 
+test('building history (API 169): phases in order with their dates, kind, parts, who took part and the text', async ({ page }) => {
+  await page.route(/\/v1\/artworks\/(100501|der-wanderer-uber-dem-nebelmeer)(\?.*)?$/, async (route) => {
+    const res = await route.fetch();
+    const body = await res.json();
+    body.phases = [
+      { kind: 'construction', title: 'First castle', part: null, notes_html: '<p>Begun with a <em>foundation stone</em>.</p>',
+        period: { label: '1443–1451', from: '1443-01-01', to: '1451-12-31', from_year: 1443, to_year: 1451 },
+        people: [{ type: 'person', slug: 'test-elector', name: 'Test Elector', public_id: null, role: null, patron: true }] },
+      { kind: 'reconstruction', title: 'Rebuilt', part: 'three facades', notes_html: null, period: null,
+        people: [{ type: 'artist', slug: 'test-architect', name: 'Test Architect', public_id: null, role: 'architect', patron: false }] }];
+    await route.fulfill({ response: res, json: body });
+  });
+  await page.goto('/artworks/100501/der-wanderer-uber-dem-nebelmeer');
+  const items = page.locator('#building-history .phase');
+  await expect(items).toHaveCount(2);
+  await expect(items.nth(0)).toContainText('1443–1451');
+  await expect(items.nth(0)).toContainText('Test Elector (patron)');
+  await expect(items.nth(0).locator('em')).toHaveText('foundation stone');
+  await expect(items.nth(1)).toContainText('Reconstruction');
+  await expect(items.nth(1)).toContainText('three facades');
+  await expect(items.nth(1).locator('a:has-text("Test Architect")')).toHaveAttribute('href', /\/artists\/test-architect/);
+  await expect(items.nth(1)).toContainText('(architect)');
+});
+
 test('provenance map: a work back where it started — one marker says both, "start · today"', async ({ page }) => {
   await page.route(/\/v1\/map\/artworks\/[^/?]+(\?.*)?$/, async (route) => {
     const res = await route.fetch();

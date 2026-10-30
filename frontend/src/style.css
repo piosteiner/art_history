@@ -1045,3 +1045,14 @@ body.fb-picking, body.fb-picking * { cursor: crosshair !important; }
 /* a page opened from the CMS: the elements the feedback is about (outlined only — nothing that could move them) */
 .fb-target { outline: 3px solid #d4237a !important; outline-offset: 3px; }
 @media print { .fb-fab, .fb-panel { display: none; } }
+
+/* a building's history (API 169): phases as a timeline — the date in its own column, a line down the left */
+.phase-list { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line, #ddd); }
+.phase { display: grid; grid-template-columns: 9.5rem 1fr; gap: .25rem 1rem; padding: .55rem 0 .55rem 1rem; position: relative; }
+.phase::before { content: ""; position: absolute; left: -6px; top: .95rem; width: 10px; height: 10px; border-radius: 50%; background: var(--accent); }
+.phase-damage::before, .phase-destruction::before, .phase-demolition::before { background: var(--muted); }
+.phase-when { color: var(--muted); font-variant-numeric: tabular-nums; }
+.phase-people { margin-top: .2rem; }
+.phase-text { margin-top: .3rem; }
+.phase-text p { margin: .3rem 0; }
+@media (max-width: 560px) { .phase { grid-template-columns: 1fr; } }

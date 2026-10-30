@@ -1,9 +1,9 @@
 // Detail pages: the fact rows per type (dates, makers, collection, numbers …), their source markers, the work's web page.
 import {
-  countryLink, countryName, creatorsOf, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, type Html,
+  countryLink, countryName, creatorsOf, dateLabel, displayName, personDates, personWhat, ROLE_LABEL, otherNames, html, link, polityWithToday, trusted, type Html,
 } from '../html';
 import type {
-  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, PolityLink, Term,
+  Artwork, Citation, CreatorRef, EntityType, ArtworkSummary, Country, Dimensions, Entity, Image, KindRef, PartDimensions, Phase, PolityLink, Term,
 } from '../types';
 import { partsGrid } from '../series';
 import { STATUS_LABEL } from '../catalog';
@@ -67,6 +67,20 @@ const refs = (type: Parameters<typeof link>[0], items: KindRef[]) =>
 const narrowerTerms = (terms: Term['narrower']) => (terms.length
   ? html`<section class="narrower-terms"><h2>Narrower terms</h2><ul class="plain-list">${terms.map((t) =>
     html`<li>${link('term', t.slug, t.name)}${t.definition ? html` <span class="muted">— ${t.definition}</span>` : ''}</li>`)}</ul></section>`
+  : null);
+
+// a building's history (API 169): its phases in order — when, what, which parts, who (role, patron), the text
+const PHASE_LABEL: Record<Phase['kind'], string> = {
+  construction: 'Construction', extension: 'Extension', alteration: 'Rebuilding', completion: 'Completion', restoration: 'Restoration',
+  damage: 'Damage', destruction: 'Destruction', demolition: 'Demolition', reconstruction: 'Reconstruction', other: '',
+};
+const phasesSection = (phases: Phase[]) => (phases.length
+  ? html`<section class="phases" id="building-history"><h2>Building history</h2><ol class="phase-list">${phases.map((p) => html`<li class="phase phase-${p.kind}">
+      <div class="phase-when">${p.period ? p.period.label : ''}</div>
+      <div class="phase-what"><b>${p.title}</b>${PHASE_LABEL[p.kind] ? html` <span class="tag">${PHASE_LABEL[p.kind]}</span>` : ''}
+        ${p.part ? html`<div class="muted small">${p.part}</div>` : ''}
+        ${p.people.length ? html`<div class="phase-people">${p.people.map((w, i) => html`${i ? ' · ' : ''}${link(w.type, w.slug, w.name)}${w.role || w.patron ? html` <span class="muted">(${[w.role, w.patron && !w.role ? 'patron' : null].filter(Boolean).join(', ')})</span>` : ''}`)}</div>` : ''}
+        ${p.notes_html ? html`<div class="prose phase-text">${trusted(p.notes_html)}</div>` : ''}</div></li>`)}</ol></section>`
   : null);
 
 const artworkList = (works: ArtworkSummary[], withCreator: boolean) => html`<ul class="plain-list">${works.map((w) => html`<li>
@@ -190,7 +204,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ...numberFacts(e),
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
-        extra: [partsGrid(e), provenanceSection(e.provenance ?? [], e.bibliography, e.provenance_status, e.sources?.provenance_status, e.provenance_coverage)].filter((x): x is Html => !!x),
+        extra: [partsGrid(e), phasesSection(e.phases ?? []), provenanceSection(e.provenance ?? [], e.bibliography, e.provenance_status, e.sources?.provenance_status, e.provenance_coverage)].filter((x): x is Html => !!x),
       };
     }
     case 'place':
