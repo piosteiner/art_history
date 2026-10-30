@@ -1,7 +1,7 @@
 // src/admin/images.js thumbUrl: Wikimedia thumbnails at the width a page needs (standard widths only)
 const test = require('node:test');
 const assert = require('node:assert/strict');
-const { thumbUrl } = require('../src/admin/images');
+const { thumbUrl, metaText } = require('../src/admin/images');
 
 test('a stored 1280 px Commons thumbnail → the width asked for, on either Wikimedia host', () => {
   const u = 'https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Apollo.jpg/1280px-Apollo.jpg';
@@ -11,4 +11,13 @@ test('a stored 1280 px Commons thumbnail → the width asked for, on either Wiki
 test('an original Commons file → its thumbnail; other hosts unchanged', () => {
   assert.equal(thumbUrl('https://upload.wikimedia.org/wikipedia/commons/a/ab/Apollo.jpg', 250), 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Apollo.jpg/250px-Apollo.jpg');
   assert.equal(thumbUrl('https://collection.kunstsammlungenakademie.at/multimedia/4/x.large.jpg', 330), 'https://collection.kunstsammlungenakademie.at/multimedia/4/x.large.jpg');
+});
+
+test('Commons credits: the hidden half of "unknown author" dropped, block elements kept apart', () => {
+  assert.equal(metaText('Unknown author<span style="display: none;">Unknown author</span>'), 'Unknown author');
+  assert.equal(metaText('<span class="fn">Anonymous</span><span style="display:none">Unknown author</span>'), 'Anonymous');
+  assert.equal(metaText('<div>User LordAmeth on en.wikipedia</div><div>Collection of the Town of Sekigahara</div>'),
+    'User LordAmeth on en.wikipedia Collection of the Town of Sekigahara');
+  assert.equal(metaText('<a href="//commons.wikimedia.org/wiki/User:Fg2">Fg2</a>&nbsp;&amp; others'), 'Fg2 & others');
+  assert.equal(metaText(null), '');
 });

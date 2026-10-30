@@ -7,9 +7,20 @@ names:
   - lang: en
     role: translation
     text: pillar picture
+  - hashira kakushi
+  - hashira-kake
+  - pillar print
 category: format
 parent: woodblock-print
 definition: A very tall, narrow woodblock print, about 70 × 15 cm, made to hang on a pillar.
+wikidata_id: Q11534039
+metadata:
+  sources: [Wikidata Q11534039 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e3/MET_DP146883.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:MET_DP146883.jpg
+    license: CC0
+    credit: Okumura Masanobu
 sources:
   definition:
     - source: history-of-japanese-art

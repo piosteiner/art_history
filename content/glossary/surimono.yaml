@@ -10,6 +10,11 @@ names:
 category: object type
 parent: woodblock-print
 definition: A privately commissioned, finely printed woodblock print in a small edition, often with poems, used for announcements and New Year greetings.
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Ry%C5%ABry%C5%ABkyo_Shinsai_Surimono_1810s.jpg/1280px-Ry%C5%ABry%C5%ABkyo_Shinsai_Surimono_1810s.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ry%C5%ABry%C5%ABkyo_Shinsai_Surimono_1810s.jpg
+    license: Public domain
+    credit: Ryūryūkyo Shinsai
 sources:
   definition:
     - source: history-of-japanese-art

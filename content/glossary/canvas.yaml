@@ -5,4 +5,25 @@ names:
   - lang: de
     role: translation
     text: Leinwand
+  - lang: zh
+    role: translation
+    text: 画布
+  - lang: ko
+    role: translation
+    text: 캔버스
 category: material
+definition: painting surface made of extremely heavy-duty plain-woven fabric
+wikidata_id: Q12321255
+metadata:
+  sources: [Wikidata Q12321255 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/3D_Schildersdoek.JPG/1280px-3D_Schildersdoek.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:3D_Schildersdoek.JPG
+    license: CC BY-SA 3.0
+    credit: Janvdee
+identifiers:
+  gnd: 4167249-5
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q12321255

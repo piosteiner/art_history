@@ -1,0 +1,22 @@
+public_id: 105522
+name: chashitsu
+names:
+  - Japanese tea houses
+  - Japanese tea room
+  - lang: ja
+    role: translation
+    text: 茶室
+category: technique
+definition: Japanese tea house
+wikidata_id: Q946790
+metadata:
+  sources: [Wikidata Q946790 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/ed/Urakuen_Joan.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Urakuen_Joan.jpg
+    license: Public domain
+    credit: Lombroso
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q946790

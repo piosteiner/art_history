@@ -1,7 +1,20 @@
 public_id: 105352
 name: Ganghwa Island
-kind: settlement
+names:
+  - lang: ko
+    role: original
+    text: 강화도
+  - lang: ko-Hani
+    role: alternative
+    text: 江華島
+  - role: alternative
+    text: Kanghwa
+    note: McCune–Reischauer
+kind: natural
+designation: island of South Korea
+parent: south-korea
 location: [126.44, 37.71]
+description_md: Island at the mouth of the Han River west of Seoul, today Ganghwa County of Incheon. A northern “table” dolmen of the early Bronze Age stands on it[[source/portal-2000|p. 30]]. When the Mongols invaded, the Goryeo military government moved the capital here in 1232, exploiting the Mongols' fear of the sea; the court lived on in comfort while the peasantry suffered[[source/portal-2000|p. 78]], and on the island a new edition of the Buddhist scriptures was carved, the 80,000 woodblocks of the Tripitaka Koreana completed in 1251[[source/portal-2000|p. 80]]. Palace site and Goryeo walls survive[[source/wikipedia-ko-ganghwado|도읍을 강화도로 천도했을 때의 왕궁터와 고려시대의 성곽이 아직까지 남아 있다]]. In 1876 the Treaty of Ganghwa, Korea's first modern treaty, signed under Japanese pressure, opened the country ([[event/japan-korea-treaty-of-1876]])[[source/portal-2000|p. 12]].
 wikidata_id: Q494786
 metadata:
   sources: [Wikidata Q494786 (retrieved 2026-10-30)]

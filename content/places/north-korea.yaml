@@ -1,6 +1,20 @@
 public_id: 105350
 name: North Korea
+names:
+  - lang: ko
+    role: original
+    text: 조선민주주의인민공화국
+  - lang: en
+    role: alternative
+    text: Democratic People's Republic of Korea
+  - kind: abbreviation
+    lang: en
+    role: alternative
+    text: DPRK
 kind: country
+designation: sovereign state
+existed: 1948-09-09/
+boundary_code: KP
 location: [127, 40]
 wikidata_id: Q423
 metadata:

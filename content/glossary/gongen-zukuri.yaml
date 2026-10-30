@@ -9,6 +9,11 @@ names:
     text: mausoleum style
 category: architecture
 definition: A shrine plan in which worship hall and main hall are linked by a connecting room (ishi-no-ma), as at Ieyasu’s mausoleum, the Tōshōgū at Nikkō; named after his title Tōshō Daigongen.
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/af/Gongen_Zukuri.png
+    source_url: https://commons.wikimedia.org/wiki/File:Gongen_Zukuri.png
+    license: Public domain
+    credit: user:Hiroyuki0904
 sources:
   definition:
     - source: history-of-japanese-art

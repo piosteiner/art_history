@@ -1,3 +1,21 @@
 public_id: 103068
 name: hinoki wood
+names:
+  - Chamaecyparis obtusa wood
+  - lang: ja
+    role: translation
+    text: 檜材
 category: material
+definition: wood of Chamaecyparis obtusa
+wikidata_id: Q136765174
+metadata:
+  sources: [Wikidata Q136765174 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0c/%E7%9F%B3%E4%BA%95%E5%AE%B6%E4%BD%8F%E5%AE%85%E3%81%AE%E5%BA%8A%E6%9D%BF.jpg/1280px-%E7%9F%B3%E4%BA%95%E5%AE%B6%E4%BD%8F%E5%AE%85%E3%81%AE%E5%BA%8A%E6%9D%BF.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:%E7%9F%B3%E4%BA%95%E5%AE%B6%E4%BD%8F%E5%AE%85%E3%81%AE%E5%BA%8A%E6%9D%BF.jpg
+    license: CC BY-SA 4.0
+    credit: 北アルプス天然水
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q136765174

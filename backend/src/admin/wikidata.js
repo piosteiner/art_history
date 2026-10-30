@@ -78,7 +78,7 @@ async function search(q) {
 }
 
 const MAX_IMAGES = 12;  // P18 statements offered per item (each costs one Commons request)
-const stripTags = (s) => String(s || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+const { metaText: stripTags } = require('./images');
 async function commonsImage(file) {
   const url = `${COMMONS}/w/api.php?${new URLSearchParams({ action: 'query', titles: `File:${file}`, prop: 'imageinfo',
     iiprop: 'extmetadata|url', iiurlwidth: '1280', format: 'json' })}`;

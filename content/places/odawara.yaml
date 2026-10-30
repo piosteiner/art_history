@@ -1,7 +1,22 @@
 public_id: 105334
 name: Odawara
+names:
+  - lang: ja
+    role: original
+    text: 小田原市
+  - lang: ko
+    role: translation
+    text: 오다와라시
+  - lang: ja
+    role: former
+    text: 小田原町
+    period: until 19 December 1940
+    note: the town, merged into the city in 1940
 kind: settlement
+designation: city of Japan
+parent: kanagawa
 location: [139.15222, 35.26461]
+description_md: Castle town of the Later Hōjō, who ruled the Kantō from here for five generations until Toyotomi Hideyoshi took it in 1590 ([[event/siege-of-odawara]]); in the Edo period the castle town of the Odawara domain and a post station on the Tōkaidō[[source/wikipedia-ja-odawara-shi|戦国時代には後北条氏の城下町として栄えた … 江戸時代には小田原藩の城下町、東海道小田原宿の宿場町として盛えた]].
 wikidata_id: Q267258
 metadata:
   sources: [Wikidata Q267258 (retrieved 2026-10-30)]

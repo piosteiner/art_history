@@ -9,6 +9,15 @@ names:
     text: haiku painting
 category: style
 definition: A sketchy painting that accompanies a haiku, made by the poet as a spontaneous response to the verse.
+wikidata_id: Q3136512
+metadata:
+  sources: [Wikidata Q3136512 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/f/ff/Basho_by_Kinkoku_c1820.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Basho_by_Kinkoku_c1820.jpg
+    license: Public domain
+identifiers:
+  gnd: 4158770-4
 sources:
   definition:
     - source: history-of-japanese-art

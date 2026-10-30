@@ -4,6 +4,22 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: the ten places auto-created today completed; Commons credits repaired
+- **Places:** Kamakura, Odawara (→ Kanagawa), Shimonoseki (→ Yamaguchi), Itabuki Palace (→ Nara Prefecture, existed
+  643–655), Makishima Castle, Yamashiro Province (→ Kyoto Prefecture; province, 7th century–1868), Seoul, Ganghwa Island
+  (→ South Korea), North Korea (boundary KP, since 9.9.1948) — parents, names in the original language, former names
+  with dates (Hanseong 1395–1910, Gyeongseong 1910–46; Akamagaseki until 1902; 山背国 until 794; the towns before
+  their cities), designations, descriptions cited from Mason and Portal first, Japanese/Korean Wikipedia for the rest
+  (9 new sources). Wihwa Island new (the 1388 retreat's place instead of all of North Korea; Wikidata's P276 there is
+  Kaesong — citation replaced by the article). Gifu (city, unused since the battle moved to Sekigahara) deleted;
+  Gifu Prefecture new as Sekigahara's parent, Sekigahara with its former names. "To complete" flags cleared.
+- **Image credits:** Commons' "unknown author" template carries a hidden copy of its text, and block elements were
+  glued ("…en.wikipediaCollection of…"): `metaText()` in `src/admin/images.js` (shared by `imagesearch.js` and
+  `wikidata.js`, unit test) drops hidden spans and keeps blocks apart. 68 stored credits re-read from Commons and fixed
+  where still the old reading; Wolfgang Moroder's two usage notices shortened to his name. Credits + captions for the
+  Odawara, Kantō earthquake and 1905 letter images (owner's open point).
+- **Why:** owner, 2026-10-30. **Revert:** admin history per entry; code commit.
+
 ### Migration 175: stolen and forgery marks
 - **What:** `artwork_stolen(aid)` — a work is "stolen" while its last `theft` provenance step has no end (derived, not
   stored; API `stolen` with a link to the step). `artworks.authenticity` disputed / forgery + `authenticity_date`,

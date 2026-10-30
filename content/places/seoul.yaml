@@ -1,7 +1,35 @@
 public_id: 105354
 name: Seoul
+names:
+  - lang: ko
+    role: original
+    text: 서울특별시
+  - lang: ja
+    role: translation
+    text: ソウル特別市
+  - lang: ko
+    role: former
+    text: 한성부
+    period: 1395–30 September 1910
+    note: 漢城府; also called Hanyang (漢陽)
+  - role: former
+    text: Hanseong
+    period: 1395–30 September 1910
+    note: capital of Joseon and of the Korean Empire, also called Hanyang
+  - lang: ko
+    role: former
+    text: 경성부
+    period: 1 October 1910–14 August 1946
+    note: 京城府
+  - role: former
+    text: Gyeongseong
+    period: 1 October 1910–14 August 1946
+    note: Japanese Keijō (京城), capital of Korea under Japanese rule
 kind: settlement
+designation: special city of South Korea
+parent: south-korea
 location: [126.99, 37.56]
+description_md: "Capital of Korea since Yi Seong-gye, the founder of Joseon, established it there[[source/portal-2000|p. 107]]: he moved the court from Kaegyeong to Hanyang in 1394 and renamed the city Hanseong in 1395[[source/wikipedia-ko-history-of-seoul|1394년 한양부(漢陽府)로 수도를 천도해서 1395년 이름을 한성부(漢城府)로 바꿨다]]. Its walls were built at the beginning of the dynasty; the South Gate (Namdaemun), first built 1395–98 and rebuilt in 1447, is its oldest wooden building[[source/portal-2000|p. 115]]. With the annexation of 1910 it became Gyeongseong (Japanese Keijō), a city of Gyeonggi province; it was renamed Seoul on 15 August 1946 and Seoul Special City in 1949[[source/wikipedia-ko-history-of-seoul|1946년 8월 15일 : 경기도 경성부를 서울시로 개칭하였다 · 1949년 8월 15일 : 서울특별자유시에서 서울특별시로 개칭]]."
 wikidata_id: Q8684
 metadata:
   sources: [Wikidata Q8684 (retrieved 2026-10-30)]

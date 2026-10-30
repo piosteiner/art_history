@@ -57,13 +57,13 @@ async function getJson(url, headers = {}) {
   if (!res.ok) throw new Error(`${new URL(url).host} answered ${res.status}`);
   return res.json();
 }
-const stripTags = (s) => String(s || '').replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+const { metaText: stripTags } = require('./images');
 const clean = (u) => (u ? u.split('?')[0] : u);
 
 // → [{ url, thumb, source_url, license, credit, title, by }]
 // Commons' object name carries hidden QuickStatements of its labels (<span style="display:none">label QS:Lde,"…"</span>)
-// — left out, also when they come without the span
-const objectName = (v) => stripTags(String(v || '').replace(/<span[^>]*display:\s*none[^>]*>[\s\S]*?<\/span>/gi, ''))
+// — the span goes in stripTags, the statements also when they come without it
+const objectName = (v) => stripTags(v)
   .replace(/\b(?:label|title) QS:[^,"]*,(?:[a-z-]+:)?"[^"]*"/g, '').replace(/\s+/g, ' ').trim();
 
 async function commons(q) {

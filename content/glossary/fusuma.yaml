@@ -9,6 +9,21 @@ names:
     text: sliding door
 category: architecture
 definition: Opaque sliding panels of paper over a wooden frame that divide the rooms of a Japanese house, often painted.
+description_md: |-
+  vertical rectangular panels that slide from side to side to redefine spaces within a room or act as doors; typically 90 cm wide, 180 cm tall, 2–3 cm thick; made of a wooden lattice and a layer of paper or cloth on both sides
+  [[fusuma-e]]
+wikidata_id: Q1069573
+metadata:
+  sources: [Wikidata Q1069573 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Old_okada_house05_800.jpg/1280px-Old_okada_house05_800.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Old_okada_house05_800.jpg
+    license: CC BY 2.5
+    credit: 663highland
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Entokuin_Kyoto11s3200.jpg/1280px-Entokuin_Kyoto11s3200.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Entokuin_Kyoto11s3200.jpg
+    license: CC BY 2.5
+    credit: 663highland
 sources:
   definition:
     - source: history-of-japanese-art

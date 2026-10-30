@@ -1,0 +1,12 @@
+public_id: 105551
+name: Gifu Prefecture
+names:
+  - lang: ja
+    role: original
+    text: 岐阜県
+kind: region
+designation: prefecture of Japan
+parent: japan
+boundary_code: JP-21
+location: [136.72222, 35.39111]
+wikidata_id: Q131277

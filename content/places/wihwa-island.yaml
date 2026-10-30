@@ -1,0 +1,15 @@
+public_id: 105552
+name: Wihwa Island
+names:
+  - lang: ko
+    role: original
+    text: 위화도
+  - lang: ko-Hani
+    role: alternative
+    text: 威化島
+kind: natural
+designation: river island in the Yalu
+parent: north-korea
+location: [124.446, 40.137]
+description_md: River island in the Yalu (Amnok) on the border with China, today in North Korea. Here in 1388 General Yi Seong-gye, sent against the Ming, turned his army back south and seized control[[source/portal-2000|p. 78]] — the first step towards the founding of Joseon in 1392 ([[event/wihwado-retreat]])[[source/wikipedia-en-wihwa-island|Yi Songgye decided, in 1388, to turn back his army southward to Kaesong in the first of a series of revolts that eventually led to the establishment of the Yi Dynasty]].
+wikidata_id: Q706605

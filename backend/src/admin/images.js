@@ -105,4 +105,11 @@ function section({ t, e, images, licenseList }) {
       <p class="muted small">Tip: "Wikidata…" offers an item's Commons images with license and credit filled in.</p></details>`;
 }
 
-module.exports = { thumbUrl, ImageError, fromForm, byId, add, update, move, licenses, form, section };
+// Commons extmetadata (Artist, LicenseShortName) as text: hidden spans dropped — the "unknown author" template repeats its
+// text in one — and block elements kept apart ("User X on en.wikipedia" / "Collection of …")
+const metaText = (s) => String(s || '')
+  .replace(/<(\w+)[^>]*display:\s*none[^>]*>[\s\S]*?<\/\1>/gi, '')
+  .replace(/<\/?(br|div|p|li|tr|td|th)\b[^>]*>/gi, ' ').replace(/<[^>]*>/g, '')
+  .replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/\s+/g, ' ').trim();
+
+module.exports = { thumbUrl, metaText, ImageError, fromForm, byId, add, update, move, licenses, form, section };

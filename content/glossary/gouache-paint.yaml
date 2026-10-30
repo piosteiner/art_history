@@ -13,5 +13,24 @@ names:
   - lang: de
     role: translation
     text: Gouache
+  - opaque watercolor paint
+  - lang: it
+    role: translation
+    text: guazzo
 category: material
 parent: paint
+definition: type of paint
+wikidata_id: Q204330
+metadata:
+  sources: [Wikidata Q204330 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gouache.jpg/1280px-Gouache.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Gouache.jpg
+    license: CC BY-SA 3.0
+    credit: Jeff Dahl
+identifiers:
+  gnd: 4071972-8
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q204330

@@ -9,6 +9,22 @@ names:
     text: staggered shelves
 category: architecture
 definition: Shelves set at different heights beside the tokonoma, part of the shoin interior.
+wikidata_id: Q56293463
+metadata:
+  sources: [Wikidata Q56293463 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Kannonin_Tottori16s4470.jpg/1280px-Kannonin_Tottori16s4470.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kannonin_Tottori16s4470.jpg
+    license: CC BY 2.5
+    credit: 663highland
+  - url: https://upload.wikimedia.org/wikipedia/commons/3/36/Beauty_Playing_the_Koto_Zither-by_Suzuki_Harunobu-Tokyo_National_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Beauty_Playing_the_Koto_Zither-by_Suzuki_Harunobu-Tokyo_National_Museum.jpg
+    license: CC BY 4.0
+    credit: 鈴木春信（東京国立博物館所蔵）
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Tokonoma_%28%E5%BA%8A%E3%81%AE%E9%96%93%29.jpg/1280px-Tokonoma_%28%E5%BA%8A%E3%81%AE%E9%96%93%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tokonoma_(%E5%BA%8A%E3%81%AE%E9%96%93).jpg
+    license: CC BY-SA 3.0
+    credit: Javier Biedma Ruiz
 sources:
   definition:
     - source: history-of-japanese-art

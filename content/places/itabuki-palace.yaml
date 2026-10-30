@@ -1,7 +1,20 @@
 public_id: 105316
 name: Itabuki Palace
+names:
+  - lang: ja
+    role: original
+    text: 板蓋宮
+  - lang: ja
+    role: alternative
+    text: 飛鳥板蓋宮
+  - role: romanization
+    text: Asuka Itabuki-no-miya
 kind: building
+designation: imperial palace (site)
+existed: 643/655
+parent: nara-prefecture
 location: [135.82083, 34.47333]
+description_md: The palace of Empress Kōgyoku in Asuka — “the palace with the board roof” —, built from 642 and occupied in 643. In 645 Soga no Iruka was killed there in the coup of the Isshi incident ([[event/isshi-incident]]) and the empress abdicated; in 655 she was enthroned there a second time, as Empress Saimei, and at the end of that year the palace burnt down[[source/wikipedia-ja-itabukinomiya|643年（皇極天皇2年）4月、遷る … 板蓋宮は、645年7月10日 … クーデター（乙巳の変）の舞台となった … この年の末に板蓋宮は火災に遭い、焼失した]]. It is placed at the Asuka palace site at Oka, Asuka village, where part of it is preserved as the historic site “Den-Asuka Itabuki-no-miya ato”[[source/wikipedia-ja-itabukinomiya|奈良県明日香村岡にある飛鳥京跡にあったと伝えられている]].
 wikidata_id: Q11532703
 metadata:
   sources: [Wikidata Q11532703 (retrieved 2026-10-30)]

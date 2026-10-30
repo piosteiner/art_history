@@ -9,6 +9,11 @@ names:
     text: votive painting
 category: object type
 definition: A painting on a wooden board given to a shrine or temple as an offering — originally a picture of a horse.
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Ema_at_Kamado-jinja.jpg/1280px-Ema_at_Kamado-jinja.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Ema_at_Kamado-jinja.jpg
+    license: CC BY-SA 4.0
+    credit: Naokijp
 sources:
   definition:
     - source: history-of-japanese-art

@@ -1,7 +1,22 @@
 public_id: 105323
 name: Kamakura
+names:
+  - lang: ja
+    role: original
+    text: 鎌倉市
+  - lang: ko
+    role: translation
+    text: 가마쿠라시
+  - lang: ja
+    role: former
+    text: 鎌倉町
+    period: until 2 November 1939
+    note: the town, merged with Koshigoe into the city in 1939
 kind: settlement
+designation: city of Japan
+parent: kanagawa
 location: [139.54722, 35.31917]
+description_md: Minamoto no Yoritomo made Kamakura the centre of his government instead of the imperial capital, and obliged his vassals to reside with him there[[source/history-of-japanese-art|pp. 166–169]]. It gave its name to the Kamakura period and stayed the shogunate's seat until its fall in 1333 ([[event/siege-of-kamakura]])[[source/wikipedia-ja-kamakura-shi|鎌倉幕府が置かれ政権の要の地となり、日本史の時代区分でもある「鎌倉時代」の由来にもなった]].
 wikidata_id: Q200267
 metadata:
   sources: [Wikidata Q200267 (retrieved 2026-10-30)]

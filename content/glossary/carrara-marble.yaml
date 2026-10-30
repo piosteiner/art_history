@@ -1,4 +1,30 @@
 public_id: 102034
 name: Carrara marble
+names:
+  - lang: nl
+    role: translation
+    text: Carrara-marmer
+  - lang: fr
+    role: translation
+    text: marbre de Carrare
+  - lang: de
+    role: translation
+    text: Carrara-Marmor
+  - lang: it
+    role: translation
+    text: marmo di Carrara
 category: material
 parent: marble
+definition: type of white or blue-grey veined marble from the Apuan Alps (Italy), popular for use in sculpture and building decor
+wikidata_id: Q40088
+metadata:
+  sources: [Wikidata Q40088 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Carrara_marble_CD.jpg/1280px-Carrara_marble_CD.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Carrara_marble_CD.jpg
+    license: CC BY-SA 4.0
+    credit: Lysippos
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q40088

@@ -1,7 +1,22 @@
 public_id: 105326
 name: Yamashiro Province
-kind: site
+names:
+  - lang: ja
+    role: original
+    text: 山城国
+  - role: romanization
+    text: Yamashiro no kuni
+  - lang: ja
+    role: former
+    text: 山背国
+    period: until 794
+    note: also 山代; renamed 山城 by Emperor Kanmu when he named Heian-kyō
+kind: region
+designation: province of Japan
+existed: 7th century–1868
+parent: kyoto-prefecture
 location: [135.80056, 34.88194]
+description_md: "The province around the capital: set up in the 7th century as 山背 (also written 山代), renamed 山城 — “mountain castle” — by Emperor Kanmu in 794 when he named Heian-kyō, for the hills and rivers that made it a natural fortress[[source/wikipedia-ja-yamashiro-no-kuni|延暦13年11月8日（794年12月4日）の平安京命名の際に、桓武天皇が … 「山城国」に改称した]]. It covered the south of today's Kyoto Prefecture — most of the city of Kyoto, Uji and the land towards Nara — and was replaced by the prefecture in 1868. The Ōnin War was fought in it ([[event/onin-war]])."
 wikidata_id: Q749276
 metadata:
   sources: [Wikidata Q749276 (retrieved 2026-10-30)]

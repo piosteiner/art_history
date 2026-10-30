@@ -7,8 +7,19 @@ names:
   - lang: en
     role: translation
     text: clay figurine
+  - lang: ko
+    role: translation
+    text: 토우
 category: object type
 definition: Small clay figurines of the Jōmon period, mostly female, probably used in rituals of fertility and healing; many were broken on purpose.
+wikidata_id: Q602082
+metadata:
+  sources: [Wikidata Q602082 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Dogu_Miyagi_1000_BCE_400_BCE.jpg/1280px-Dogu_Miyagi_1000_BCE_400_BCE.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Dogu_Miyagi_1000_BCE_400_BCE.jpg
+    license: CC BY-SA 3.0
+    credit: World Imaging
 sources:
   definition:
     - source: history-of-japanese-art

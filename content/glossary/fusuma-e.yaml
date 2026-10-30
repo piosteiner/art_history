@@ -1,0 +1,25 @@
+public_id: 105530
+name: fusuma-e
+names:
+  - lang: ja
+    role: translation
+    text: 襖絵
+category: technique
+definition: picture drawn on a Japanese fusuma sliding door
+description_md: "[[fusuma]]"
+wikidata_id: Q126456658
+metadata:
+  sources: [Wikidata Q126456658 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Chishakuin_in_2013-5-3_No%2C10.JPG/1280px-Chishakuin_in_2013-5-3_No%2C10.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Chishakuin_in_2013-5-3_No,10.JPG
+    license: CC BY-SA 3.0
+    credit: Mti
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Shiroshoin_Nishi_Honganji.jpg/1280px-Shiroshoin_Nishi_Honganji.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Shiroshoin_Nishi_Honganji.jpg
+    license: CC BY-SA 2.0
+    credit: Hideyuki KAMON from Takarazuka / ???, Hyogo / ???, Japan / ??
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q126456658

@@ -1,0 +1,21 @@
+public_id: 105554
+name: Ishi-no-ma-zukuri
+names:
+  - Ishinoma-zukuri
+  - lang: ja
+    role: translation
+    text: 権現造
+category: technique
+definition: architectural style of Shintoist shrine
+wikidata_id: Q3155268
+metadata:
+  sources: [Wikidata Q3155268 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/59/Kunosan_Toshogu5.jpg/1280px-Kunosan_Toshogu5.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Kunosan_Toshogu5.jpg
+    license: CC BY-SA 4.0
+    credit: 江戸村のとくぞう
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q3155268

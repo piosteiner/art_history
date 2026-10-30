@@ -10,6 +10,10 @@ names:
 category: format
 parent: woodblock-print
 definition: A medium-sized woodblock print, about a quarter of the large sheet.
+description_md: Japanese print of a standard size, about 28 by 20 centimeters (11 by 8 inches)
+wikidata_id: Q68679574
+metadata:
+  sources: [Wikidata Q68679574 (retrieved 2026-10-30)]
 sources:
   definition:
     - source: history-of-japanese-art

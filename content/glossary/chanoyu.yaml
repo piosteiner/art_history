@@ -7,9 +7,30 @@ names:
   - lang: en
     role: translation
     text: tea ceremony
+  - lang: de
+    role: translation
+    text: Japanische Teezeremonie
+  - lang: ja
+    role: translation
+    text: 茶道
+  - lang: ko
+    role: translation
+    text: 다도
 category: other
-definition: "The tea ceremony: the ritual preparation and serving of powdered tea, with its own architecture, utensils and aesthetic of wabi."
+definition: ritual serving of tea in Japanese culture
+wikidata_id: Q202298
+metadata:
+  sources: [Wikidata Q202298 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/a/a7/Tea_ceremony_performing_2.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Tea_ceremony_performing_2.jpg
+    license: CC BY-SA 3.0
+    credit: Photograph taken by Stephane D'Alu (en:User:Sdalu) in April 2004
+identifiers:
+  gnd: 4199821-2
 sources:
   definition:
     - source: history-of-japanese-art
       locator: pp. 230–231
+    - accessed: 2026-10-30
+      wikidata: Q202298

@@ -1,3 +1,28 @@
 public_id: 103189
 name: bronze
+names:
+  - lang: ja
+    role: translation
+    text: 青銅
+  - lang: zh
+    role: translation
+    text: 青铜
+  - lang: ko
+    role: translation
+    text: 청동
 category: material
+definition: alloy of copper and tin
+wikidata_id: Q34095
+metadata:
+  sources: [Wikidata Q34095 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0e/Assorted_bronze_castings.JPG
+    source_url: https://commons.wikimedia.org/wiki/File:Assorted_bronze_castings.JPG
+    license: Public domain
+    credit: No machine-readable author provided. Gaius Cornelius assumed (based on copyright claims).
+identifiers:
+  gnd: 4146667-6
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q34095

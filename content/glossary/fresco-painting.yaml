@@ -1,0 +1,22 @@
+public_id: 105528
+name: fresco painting
+category: technique
+definition: technique of mural painting executed upon freshly laid lime plaster
+wikidata_id: Q134194
+metadata:
+  sources: [Wikidata Q134194 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/0/0e/Fra_Angelico_-_The_Annunciation_-_WGA00555.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Fra_Angelico_-_The_Annunciation_-_WGA00555.jpg
+    license: Public domain
+    credit: Fra Angelico
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/2024_Klasztor_franciszkan%C3%B3w_w_K%C5%82odzku%2C_refektarz_%284%29.jpg/1280px-2024_Klasztor_franciszkan%C3%B3w_w_K%C5%82odzku%2C_refektarz_%284%29.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:2024_Klasztor_franciszkan%C3%B3w_w_K%C5%82odzku,_refektarz_(4).jpg
+    license: CC BY-SA 4.0
+    credit: Jacek Halicki
+identifiers:
+  gnd: 4071463-9
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q134194

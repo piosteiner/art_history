@@ -2,3 +2,17 @@ public_id: 102141
 name: fresco
 category: technique
 parent: painting
+definition: artwork produced via the fresco painting technique
+description_md: "[[fresco-painting]]"
+wikidata_id: Q22669139
+metadata:
+  sources: [Wikidata Q22669139 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Crucifixion-Pietro_lorenzetti_fresco_san_frncesco_assisi.jpg/1280px-Crucifixion-Pietro_lorenzetti_fresco_san_frncesco_assisi.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Crucifixion-Pietro_lorenzetti_fresco_san_frncesco_assisi.jpg
+    license: Public domain
+    credit: Pietro Lorenzetti
+sources:
+  definition:
+    - accessed: 2026-10-30
+      wikidata: Q22669139

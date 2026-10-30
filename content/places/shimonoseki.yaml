@@ -1,7 +1,26 @@
 public_id: 105321
 name: Shimonoseki
+names:
+  - lang: ja
+    role: original
+    text: 下関市
+  - lang: ko
+    role: translation
+    text: 시모노세키시
+  - lang: ja
+    role: former
+    text: 赤間関
+    period: until 31 May 1902
+    note: also 赤馬関, shortened to 馬関 (Bakan); the city 赤間関市 from 1 April 1889
+  - role: former
+    text: Akamagaseki
+    period: until 31 May 1902
+    note: the port's name since the Kamakura period (first recorded in 1185), also Bakan; renamed Shimonoseki on 1 June 1902
 kind: settlement
+designation: city of Japan
+parent: yamaguchi
 location: [130.94133, 33.95789]
+description_md: Port at the western end of Honshu on the strait to Kyushu. Off its coast, at Dannoura, the fleet of Minamoto Yoshitsune decisively defeated the Taira in 1185[[source/history-of-japanese-art|pp. 166–167]] ([[event/battle-of-dan-no-ura]]). The port was long called Akamagaseki — a name first recorded in 1185, shortened to Bakan — and the city took the name Shimonoseki in 1902[[source/wikipedia-ja-shimonoseki-shi|下関港周辺は、古くは「赤間関」…と呼ばれており … 1902年6月1日に現在の市名である『下関市』に改名した]].
 wikidata_id: Q203308
 metadata:
   sources: [Wikidata Q203308 (retrieved 2026-10-30)]

@@ -1,7 +1,16 @@
 public_id: 105332
 name: Makishima Castle
+names:
+  - lang: ja
+    role: original
+    text: 槇島城
+  - role: romanization
+    text: Makishima-jō
 kind: site
+designation: Japanese castle (site)
+parent: kyoto-prefecture
 location: [135.79789, 34.89908]
+description_md: Castle of the Makishima clan near Uji, on an island in the former Ogura pond. In July 1573 the last Ashikaga shogun, Yoshiaki, rose against Oda Nobunaga and shut himself in here; Nobunaga besieged it and forced him out ([[event/siege-of-makishima-castle]])[[source/wikipedia-ja-makishima-jo|元亀4年（1573年）7月3日、時の公方・足利義昭は織田信長に対して兵を挙げ … 槇島城へ籠城した]] — the Ashikaga left Kyoto for good[[source/history-of-japanese-art|pp. 170–171]]. Once Fushimi castle was built it lost its use and was abandoned; nothing remains but a stone marker[[source/wikipedia-ja-makishima-jo|伏見城築城後はその戦略的価値を低下させ、廃城となった … 現在は完全に失われており、石碑を残すのみである]].
 wikidata_id: Q11541932
 metadata:
   sources: [Wikidata Q11541932 (retrieved 2026-10-30)]

@@ -9,6 +9,15 @@ names:
     text: pictures of beautiful women
 category: iconography
 definition: Paintings and prints of beautiful women, above all courtesans; a main genre of ukiyo-e from the 17th century.
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Bijinga_mir%C3%A1ndose_al_espejo%2C_British_Museum.jpg/1280px-Bijinga_mir%C3%A1ndose_al_espejo%2C_British_Museum.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bijinga_mir%C3%A1ndose_al_espejo,_British_Museum.jpg
+    license: CC BY-SA 4.0
+    credit: Jl FilpoC
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Bijinga_by_Yamakawa_Sh%C5%ABh%C5%8D_02.jpg/1280px-Bijinga_by_Yamakawa_Sh%C5%ABh%C5%8D_02.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Bijinga_by_Yamakawa_Sh%C5%ABh%C5%8D_02.jpg
+    license: Public domain
+    credit: Yamakawa Shūhō（1898-1944）
 sources:
   definition:
     - source: history-of-japanese-art

@@ -9,6 +9,20 @@ names:
     text: feudal lord
 category: other
 definition: A great territorial lord; under the Tokugawa some 250 daimyō governed their domains (han) under the shogunate.
+wikidata_id: Q61982
+metadata:
+  sources: [Wikidata Q61982 (retrieved 2026-10-30)]
+images:
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Mori_Terumoto.jpg/1280px-Mori_Terumoto.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Mori_Terumoto.jpg
+    license: Public domain
+    credit: Unknown author
+  - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Map_Japan_Genki1-en.svg/1280px-Map_Japan_Genki1-en.svg.png
+    source_url: https://commons.wikimedia.org/wiki/File:Map_Japan_Genki1-en.svg
+    license: CC BY-SA 4.0
+    credit: Ro4444
+identifiers:
+  gnd: 4252219-5
 sources:
   definition:
     - source: history-of-japanese-art

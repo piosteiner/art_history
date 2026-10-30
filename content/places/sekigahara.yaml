@@ -1,4 +1,20 @@
 public_id: 105363
 name: Sekigahara
+names:
+  - lang: ja
+    role: original
+    text: 関ケ原町
+  - lang: ja
+    role: former
+    text: 関ケ原村
+    period: 1 July 1889–31 March 1897
+  - lang: ja
+    role: former
+    text: 関原村
+    period: 1 April 1897–31 March 1928
 kind: settlement
+designation: town of Japan
+parent: gifu-prefecture
 location: [136.4672, 35.3653]
+description_md: Town at the pass between the Mino plain and Lake Biwa, on the road from the east to Kyoto. Here in 1600 the rivalry after Hideyoshi's death came to a head and Tokugawa Ieyasu won a victory ([[event/battle-of-sekigahara]])[[source/history-of-japanese-art|pp. 236–237]].
+wikidata_id: Q427600
