@@ -12,7 +12,9 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/papal-states
-    period: 1540/1798-02-14
+    period: 15th century–14 February 1798
+    certainty: probable
+    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
@@ -28,24 +30,40 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://en.wikipedia.org/wiki/Marche
+        note: “The Napoleonic period saw the short-lived Republic of Ancona, in 1797–98; the merging of the region with the Roman Republic in 1798–99, and with the Kingdom of Italy from 1808 to 1813; and the short occupation by Joachim Murat in 1815.”
+        source: wikipedia-en-marche
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/kingdom-of-italy-napoleonic
     period: 1808-04-02/1814-04-19
     sources:
       - accessed: 2026-10-29
         wikidata: Q223936
+      - url: https://en.wikipedia.org/wiki/Marche
+        note: “The Napoleonic period saw the short-lived Republic of Ancona, in 1797–98; the merging of the region with the Roman Republic in 1798–99, and with the Kingdom of Italy from 1808 to 1813; and the short occupation by Joachim Murat in 1815.”
+        source: wikipedia-en-marche
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/papal-states
     period: 1815-06-09/1860-11-03
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://en.wikipedia.org/wiki/Papal_States
+        note: “By 1860, much of the Papal States' territory had been conquered by the Kingdom of Sardinia and was incorporated into the Kingdom of Italy in 1861, except Lazio, which remained under the pope's control.”
+        source: wikipedia-en-papal-states
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/kingdom-of-sardinia
     period: 1860-11-04/1861-03-16
     sources:
       - accessed: 2026-10-29
         wikidata: Q2577303
+      - url: https://en.wikipedia.org/wiki/Papal_States
+        note: “By 1860, much of the Papal States' territory had been conquered by the Kingdom of Sardinia and was incorporated into the Kingdom of Italy in 1861, except Lazio, which remained under the pope's control.”
+        source: wikipedia-en-papal-states
+        accessed: 2026-10-30
 sources:
   kind:
     - accessed: 2026-10-20

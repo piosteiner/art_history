@@ -22,6 +22,17 @@ description_md: "A pair of six-fold screens[[source/tnm-a-10508-yoroboshi|â€ž6æ›
 relationships:
   - type: associated_with
     to: movement/nihonga
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    period: 1967-06-15/
+    notes_md: Tokyo National Museum
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/tnm/A-10508
+        source: colbase
+        accessed: 2026-10-30
+      - url: https://online.bunka.go.jp/db/heritages/detail/205639
+        source: bunka-online
+        accessed: 2026-10-30
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/0/09/Shimomura_Bettelm%C3%B6nch.jpg/1280px-Shimomura_Bettelm%C3%B6nch.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Shimomura_Bettelm%C3%B6nch.jpg

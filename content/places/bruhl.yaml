@@ -14,6 +14,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q58296
+      - url: https://en.wikipedia.org/wiki/Cologne
+        note: “Prior to World War II, the city had undergone occupations by the French (1794–1815) and the British (1918–1926) and was part of Prussia beginning in 1815.”
+        source: wikipedia-en-cologne
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1804-05-18/1814-01-13

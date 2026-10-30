@@ -16,7 +16,7 @@ web_url: https://sammlungenonline.albertina.at/de/objects/121894/die-groen-fisch
 description_md: The engraving after Bruegel's drawing of 1556, published by Hieronymus Cock in Antwerp in 1557, in its first state. It names Hieronymus Bosch as its inventor — "Hieronymus.Bos. / inuentor" lower left, "COCK . EXCV . 1557" lower right; under the Latin verse "GRANDIBVS EXIGVI SVNT PISCES PISCIBVS ESCA"[[source/albertina-sammlungen-online|DG1955/116]].
 relationships:
   - type: copy_after
-    to: artwork/die-grossen-fische-fressen-die-kleinen-1556
+    to: artwork/die-grossen-fische-fressen-die-kleinen
 provenance:
   - owner: artist/hieronymus-cock
     role: publisher

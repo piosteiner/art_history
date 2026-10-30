@@ -8,10 +8,22 @@ wikidata_id: Q81949
 relationships:
   - type: in_polity
     to: polity/crown-of-aragon
-    period: 1164/1716-01-15
+    period: 1162/1716-01-15
     sources:
       - accessed: 2026-10-29
         wikidata: Q204920
+      - url: https://en.wikipedia.org/wiki/Crown_of_Aragon
+        note: “Petronilla's father King Ramiro, "The Monk" (reigned 1134–1137) who was raised in the Monastery of Saint Pons de Thomières, Viscounty of Béziers as a Benedictine monk was the youngest of three brothers.”
+        source: wikipedia-en-crown-of-aragon
+        accessed: 2026-10-30
+      - url: https://en.wikipedia.org/wiki/Nueva_Planta_decrees
+        note: '“The Nueva Planta decrees (Spanish: Decretos de Nueva Planta, Catalan: Decrets de Nova Planta, English: "Decrees of the New Plant") were a number of decrees signed between 1707 and 1716 by Philip V, the first Bourbon King of Spain, during and shortly after the end of the War of the Spanish Succession by the Treaty of Utrecht.”'
+        source: wikipedia-en-nueva-planta-decrees
+        accessed: 2026-10-30
+      - url: https://en.wikipedia.org/wiki/County_of_Barcelona
+        note: “In 1162, the County of Barcelona entered into a personal union with the Kingdom of Aragon.”
+        source: wikipedia-en-county-of-barcelona
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-spain
     period: 1516–31 October 1700
@@ -24,9 +36,17 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q3399982
+      - url: https://en.wikipedia.org/wiki/Nueva_Planta_decrees
+        note: '“The Nueva Planta decrees (Spanish: Decretos de Nueva Planta, Catalan: Decrets de Nova Planta, English: "Decrees of the New Plant") were a number of decrees signed between 1707 and 1716 by Philip V, the first Bourbon King of Spain, during and shortly after the end of the War of the Spanish Succession by the Treaty of Utrecht.”'
+        source: wikipedia-en-nueva-planta-decrees
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1812-01-26/1814-05-27
     sources:
       - accessed: 2026-10-29
         wikidata: Q71084
+      - url: https://en.wikipedia.org/wiki/Catalonia
+        note: “Between 1812 and 1814, Catalonia was annexed to France.”
+        source: wikipedia-en-catalonia
+        accessed: 2026-10-30

@@ -42,7 +42,9 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q160448
-  - text: de Nagy
+  - kind: pseudonym
+    role: alternative
+    text: de Nagy
     sources:
       - accessed: 2026-10-29
         property: P742

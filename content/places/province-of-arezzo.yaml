@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q148540
+      - url: https://en.wikipedia.org/wiki/Arezzo
+        note: “The commune of Arezzo threw off the control of its bishop in 1098 and functioned as an independent city-state until 1384.”
+        source: wikipedia-en-arezzo
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/duchy-of-florence
     period: 1532-04-27/1569-08-26

@@ -8,10 +8,14 @@ wikidata_id: Q16286
 relationships:
   - type: in_polity
     to: polity/papal-states
-    period: 1540/1798-02-14
+    period: 1564/1798-02-14
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://it.wikipedia.org/wiki/Terni
+        note: “Entrò definitivamente nello Stato Pontificio nel 1564.”
+        source: wikipedia-it-terni
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/roman-republic-1798
     period: 1798-02-15/1799-09-29
@@ -24,21 +28,37 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://en.wikipedia.org/wiki/Papal_States
+        note: “Approximately 13 months later on 17 May 1809, the remainder of the Papal States (including Rome) was annexed to the First French Empire, forming the départements of Tibre and Trasimène.”
+        source: wikipedia-en-papal-states
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1809-05-17/1814-05-23
     sources:
       - accessed: 2026-10-29
         wikidata: Q71084
+      - url: https://en.wikipedia.org/wiki/Papal_States
+        note: “Approximately 13 months later on 17 May 1809, the remainder of the Papal States (including Rome) was annexed to the First French Empire, forming the départements of Tibre and Trasimène.”
+        source: wikipedia-en-papal-states
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/papal-states
     period: 1814-05-24/1860-11-03
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://en.wikipedia.org/wiki/Papal_States
+        note: “By 1860, much of the Papal States' territory had been conquered by the Kingdom of Sardinia and was incorporated into the Kingdom of Italy in 1861, except Lazio, which remained under the pope's control.”
+        source: wikipedia-en-papal-states
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/kingdom-of-sardinia
     period: 1860-11-04/1861-03-16
     sources:
       - accessed: 2026-10-29
         wikidata: Q2577303
+      - url: https://en.wikipedia.org/wiki/Papal_States
+        note: “By 1860, much of the Papal States' territory had been conquered by the Kingdom of Sardinia and was incorporated into the Kingdom of Italy in 1861, except Lazio, which remained under the pope's control.”
+        source: wikipedia-en-papal-states
+        accessed: 2026-10-30

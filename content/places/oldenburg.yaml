@@ -11,24 +11,30 @@ relationships:
   - type: in_polity
     to: polity/grand-duchy-of-oldenburg
     period: 1806-08-06/1811-02-27
+    certainty: probable
+    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q693669
   - type: in_polity
     to: polity/confederation-of-the-rhine
     period: 1808-10-14/1810-12-13
+    certainty: probable
+    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q154741
   - type: in_polity
     to: polity/first-french-empire
     period: 1811-02-28/1813-11-26
+    certainty: probable
+    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q71084
   - type: in_polity
     to: polity/grand-duchy-of-oldenburg
-    period: 1813-11-27/1871-01-17
+    period: 1813-11-27/1918-11-11
     sources:
       - accessed: 2026-10-29
         wikidata: Q693669
@@ -44,6 +50,13 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q150981
+  - type: in_polity
+    to: polity/german-empire
+    period: 1871-01-18/1918-11-08
+    notes_md: A member state of the German Empire beside its own state (2026-10-30).
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q43287
 sources:
   kind:
     - accessed: 2026-10-28

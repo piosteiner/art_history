@@ -4,17 +4,23 @@ given_name: Henri
 family_name: Rousseau
 names:
   - Henri Julien Felix Rousseau
-  - text: Le Douanier Rousseau
+  - kind: pseudonym
+    role: alternative
+    text: Le Douanier Rousseau
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q156386
-  - text: Le Douanier
+  - kind: pseudonym
+    role: alternative
+    text: Le Douanier
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q156386
-  - text: Celník
+  - kind: pseudonym
+    role: alternative
+    text: Celník
     sources:
       - accessed: 2026-10-29
         property: P742

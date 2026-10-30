@@ -22,12 +22,20 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q2577303
+      - url: https://en.wikipedia.org/wiki/Piedmont
+        note: “It fell under full French control in 1801, and France annexed it in September 1802.”
+        source: wikipedia-en-piedmont
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/french-first-republic
     period: 1802-09-11/1804-05-17
     sources:
       - accessed: 2026-10-29
         wikidata: Q58296
+      - url: https://en.wikipedia.org/wiki/Piedmont
+        note: “It fell under full French control in 1801, and France annexed it in September 1802.”
+        source: wikipedia-en-piedmont
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1804-05-18/1814-05-19

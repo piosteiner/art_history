@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
+      - url: https://en.wikipedia.org/wiki/Peace_of_Westphalia
+        note: “France and Sweden were recognised as guarantors of the imperial constitution with a right to intercede. === Territorial adjustments === France retained the bishoprics of Metz, Toul, and Verdun near Lorraine, received the cities of the Décapole in Alsace (except for Strasbourg, the Bishopric of Strasbourg, and Mulhouse) and the city of Pignerol near the Spanish Duchy of Milan.”
+        source: wikipedia-en-peace-of-westphalia
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/german-empire
     period: 1871-05-10/1918-11-10
@@ -24,3 +28,7 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q7318
+      - url: https://en.wikipedia.org/wiki/Alsace
+        note: “Alsace was returned to France in 1919, but was reincorporated into Germany in 1940.”
+        source: wikipedia-en-alsace
+        accessed: 2026-10-30

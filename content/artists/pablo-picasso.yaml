@@ -12,7 +12,9 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q5593
-  - text: Pau de Gósol
+  - kind: pseudonym
+    role: alternative
+    text: Pau de Gósol
     sources:
       - accessed: 2026-10-29
         property: P742

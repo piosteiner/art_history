@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q4948
+      - url: https://en.wikipedia.org/wiki/Vicenza
+        note: “Vicenza came under the rule of the Republic of Venice in 1404, and its subsequent history is that of Venice.”
+        source: wikipedia-en-vicenza
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-monarchy
     period: 17 October 1797–30 April 1806

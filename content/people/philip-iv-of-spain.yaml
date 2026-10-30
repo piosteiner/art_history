@@ -1,17 +1,23 @@
 public_id: 101128
 name: Philip IV of Spain
 names:
-  - text: O Grande
+  - kind: pseudonym
+    role: alternative
+    text: O Grande
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q691402
-  - text: O Rei Planeta
+  - kind: pseudonym
+    role: alternative
+    text: O Rei Planeta
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q691402
-  - text: O Opresor
+  - kind: pseudonym
+    role: alternative
+    text: O Opresor
     sources:
       - accessed: 2026-10-29
         property: P742

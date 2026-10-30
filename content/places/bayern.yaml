@@ -8,7 +8,7 @@ wikidata_id: Q980
 relationships:
   - type: in_polity
     to: polity/kingdom-of-bavaria
-    period: 1 January 1806–17 January 1871
+    period: 1 January 1806–9 November 1918
     sources:
       - accessed: 2026-10-29
         wikidata: Q154195
@@ -24,3 +24,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q151624
+  - type: in_polity
+    to: polity/german-empire
+    period: 1871-01-18/1918-11-08
+    notes_md: A member state of the German Empire beside its own state (2026-10-30).
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q43287

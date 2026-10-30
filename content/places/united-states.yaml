@@ -12,3 +12,7 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q30
+      - url: https://en.wikipedia.org/wiki/United_States_Declaration_of_Independence
+        note: “On July 4, 1776, it was adopted unanimously by the Second Continental Congress, who were convened at the Pennsylvania State House, later renamed Independence Hall, in Philadelphia.”
+        source: wikipedia-en-united-states-declaration-of-independence
+        accessed: 2026-10-30

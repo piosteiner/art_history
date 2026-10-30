@@ -41,12 +41,16 @@ names:
   - lang: ru
     role: translation
     text: Вильгельм I Молчаливый
-  - text: el Taciturno
+  - kind: pseudonym
+    role: alternative
+    text: el Taciturno
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q78454
-  - text: le Taciturne
+  - kind: pseudonym
+    role: alternative
+    text: le Taciturne
     sources:
       - accessed: 2026-10-29
         property: P742

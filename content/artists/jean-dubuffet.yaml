@@ -20,17 +20,23 @@ names:
   - lang: ru
     role: translation
     text: Жан Дюбюффе
-  - text: Jan du qu
+  - kind: pseudonym
+    role: alternative
+    text: Jan du qu
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q170076
-  - text: J. Dubufe
+  - kind: pseudonym
+    role: alternative
+    text: J. Dubufe
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q170076
-  - text: Louis-Léon Bendy
+  - kind: pseudonym
+    role: alternative
+    text: Louis-Léon Bendy
     sources:
       - accessed: 2026-10-29
         property: P742

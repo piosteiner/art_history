@@ -12,9 +12,17 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
+      - url: https://en.wikipedia.org/wiki/Thurgau
+        note: “The Old Swiss Confederacy, allied with ten freed bailiwicks of the former Toggenburg, seized the lands of the Thurgau from the Habsburgs in 1460, and it became a subject territory of seven Swiss cantons (Zurich, Lucerne, Uri, Schwyz, Unterwalden, Zug and Glarus).”
+        source: wikipedia-en-thurgau
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/old-swiss-confederacy
     period: 1460/1798-03-04
     sources:
       - accessed: 2026-10-29
         wikidata: Q435583
+      - url: https://en.wikipedia.org/wiki/Thurgau
+        note: “The Old Swiss Confederacy, allied with ten freed bailiwicks of the former Toggenburg, seized the lands of the Thurgau from the Habsburgs in 1460, and it became a subject territory of seven Swiss cantons (Zurich, Lucerne, Uri, Schwyz, Unterwalden, Zug and Glarus).”
+        source: wikipedia-en-thurgau
+        accessed: 2026-10-30

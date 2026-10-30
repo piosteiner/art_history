@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: polity change dates checked against sources
+- **What:** every `in_polity` boundary compared with Wikidata — the polity's own inception/dissolution, the place's
+  country statements, the neighbouring polities at the place and above it — and the 81 dates left looked up in
+  Wikipedia (the HLS refuses automated reading): 124 citations of the passage that gives the date (new sources
+  `wikipedia-<lang>-…`), 113 links `attested` again. Corrected from the passages: Ancona Papal from 1532 (not 1540),
+  Ascoli Piceno 1502, Terni 1564, Macerata from the 15th century, Alicante Castilian from 1247, Barcelona/Girona in
+  the Crown of Aragon from 1162. Still `probable` (no passage found): 15 links at Alessandria, Bad Bentheim, Zug,
+  Neubrandenburg, Oldenburg, Macerata, Pistoia, Pordenone, Ulm.
+- **Why:** owner, 2026-10-30 (HLS, Treccani, Wikipedia as sources).
+- **Revert:** the citations and periods via the admin history.
+
 ### Search hits: wholes as wholes; German states until 1918; unchecked polity dates marked
 - **What:** `/v1/search` and `/v1/search/text` send for artworks `institution` (where it is now) and for a whole
   (series, versions, cycle — 131) `group: {kind, parts, parts_count, held_by}`, with a part's picture when the whole has

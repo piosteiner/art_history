@@ -13,3 +13,7 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q217196
+      - url: https://en.wikipedia.org/wiki/Crown_of_Castile
+        note: “Charles I was King of Aragon, Majorca, Valencia, and Sicily, and Count of Barcelona, Roussillon and Cerdagne, as well as King of Castile and León, 1516–1556.”
+        source: wikipedia-en-crown-of-castile
+        accessed: 2026-10-30

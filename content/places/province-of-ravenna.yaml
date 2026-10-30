@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://en.wikipedia.org/wiki/Ravenna
+        note: “Ravenna was then ruled by Venice until 1509, when the region was invaded in the course of the War of the League of Cambrai.”
+        source: wikipedia-en-ravenna
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/cisalpine-republic
     period: 1797-06-29/1802-01-24

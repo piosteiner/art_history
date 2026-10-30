@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q4948
+      - url: https://en.wikipedia.org/wiki/Verona
+        note: “After a period of Cararrese rule, Verona submitted to Venice (1405).”
+        source: wikipedia-en-verona
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-monarchy
     period: 17 October 1797–30 April 1806

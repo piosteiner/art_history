@@ -4,12 +4,16 @@ names:
   - lang: it
     role: original
     text: Giovanni Francesco Barbieri
-  - text: Il Guercino
+  - kind: pseudonym
+    role: alternative
+    text: Il Guercino
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q334262
-  - text: Guerchin
+  - kind: pseudonym
+    role: alternative
+    text: Guerchin
     sources:
       - accessed: 2026-10-29
         property: P742

@@ -24,6 +24,17 @@ relationships:
         wikidata: Q20643510
   - type: associated_with
     to: movement/youga
+  - type: designated_as
+    to: term/important-cultural-property-japan
+    period: 1968-04-25/
+    notes_md: Tokyo National Museum
+    sources:
+      - url: https://colbase.nich.go.jp/collection_items/tnm/A-11258
+        source: colbase
+        accessed: 2026-10-30
+      - url: https://online.bunka.go.jp/db/heritages/detail/199380
+        source: bunka-online
+        accessed: 2026-10-30
 images:
   - url: https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Kuroda_Maiko.jpg/1280px-Kuroda_Maiko.jpg
     source_url: https://commons.wikimedia.org/wiki/File:Kuroda_Maiko.jpg

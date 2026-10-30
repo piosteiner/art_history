@@ -12,9 +12,17 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
+      - url: https://en.wikipedia.org/wiki/Basel
+        note: “Basel was the seat of a Prince-Bishopric starting in the 11th century, and joined the Swiss Confederacy in 1501.”
+        source: wikipedia-en-basel
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/old-swiss-confederacy
     period: 1501-07-13/1798-03-04
     sources:
       - accessed: 2026-10-29
         wikidata: Q435583
+      - url: https://en.wikipedia.org/wiki/Basel
+        note: “Basel was the seat of a Prince-Bishopric starting in the 11th century, and joined the Swiss Confederacy in 1501.”
+        source: wikipedia-en-basel
+        accessed: 2026-10-30

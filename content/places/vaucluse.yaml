@@ -12,3 +12,7 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://en.wikipedia.org/wiki/Avignon
+        note: “Between 1309 and 1377, during the Avignon Papacy, seven successive popes resided in Avignon and in 1348 Pope Clement VI bought the town from Joanna I of Naples.”
+        source: wikipedia-en-avignon
+        accessed: 2026-10-30

@@ -30,7 +30,8 @@ images:
 provenance:
   - owner: person/ambroise-vollard
     role: dealer
-    acquired: between 1901 and 28 October 1904
+    acquired: 1901-01/1904-10-28
+    acquired_label: between 1901 and 28 October 1904
     ended: 1904-10-28
     method: purchase
     direct: true

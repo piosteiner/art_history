@@ -28,12 +28,20 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://en.wikipedia.org/wiki/Papal_States
+        note: “Approximately 13 months later on 17 May 1809, the remainder of the Papal States (including Rome) was annexed to the First French Empire, forming the départements of Tibre and Trasimène.”
+        source: wikipedia-en-papal-states
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1809-05-17/1814-05-23
     sources:
       - accessed: 2026-10-29
         wikidata: Q71084
+      - url: https://en.wikipedia.org/wiki/Papal_States
+        note: “Approximately 13 months later on 17 May 1809, the remainder of the Papal States (including Rome) was annexed to the First French Empire, forming the départements of Tibre and Trasimène.”
+        source: wikipedia-en-papal-states
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/papal-states
     period: 1814-05-24/1870-09-19

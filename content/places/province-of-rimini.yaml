@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q170174
+      - url: https://en.wikipedia.org/wiki/Rimini
+        note: “Despite interruptions, his family held authority until 1528.”
+        source: wikipedia-en-rimini
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/cisalpine-republic
     period: 1797-06-29/1802-01-24

@@ -46,12 +46,28 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q209857
+      - url: https://en.wikipedia.org/wiki/Armistice_of_Villafranca
+        note: “The Armistice of Villafranca, concluded by Napoleon III of France and Franz Joseph I of Austria on July 11, 1859, set the stage for the end of the Second Italian War of Independence.”
+        source: wikipedia-en-armistice-of-villafranca
+        accessed: 2026-10-30
+      - url: https://en.wikipedia.org/wiki/Second_Italian_War_of_Independence
+        note: “The Austrians were defeated at the Battle of Magenta on 4 June and pushed back to Lombardy, where the Franco-Sardinian victory at the Battle of Solferino on 24 June resulted in the end of the war and the signing of the Armistice of Villafranca on 12 July.”
+        source: wikipedia-en-second-italian-war-of-independence
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/kingdom-of-sardinia
     period: 1859-07-12/1861-03-16
     sources:
       - accessed: 2026-10-29
         wikidata: Q2577303
+      - url: https://en.wikipedia.org/wiki/Armistice_of_Villafranca
+        note: “The Armistice of Villafranca, concluded by Napoleon III of France and Franz Joseph I of Austria on July 11, 1859, set the stage for the end of the Second Italian War of Independence.”
+        source: wikipedia-en-armistice-of-villafranca
+        accessed: 2026-10-30
+      - url: https://en.wikipedia.org/wiki/Second_Italian_War_of_Independence
+        note: “The Austrians were defeated at the Battle of Magenta on 4 June and pushed back to Lombardy, where the Franco-Sardinian victory at the Battle of Solferino on 24 June resulted in the end of the war and the signing of the Armistice of Villafranca on 12 July.”
+        source: wikipedia-en-second-italian-war-of-independence
+        accessed: 2026-10-30
 sources:
   kind:
     - accessed: 2026-10-19

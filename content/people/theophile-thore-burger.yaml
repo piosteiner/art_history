@@ -36,12 +36,16 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q933765
-  - text: William Bürger
+  - kind: pseudonym
+    role: alternative
+    text: William Bürger
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q933765
-  - text: Jacques Van Damme
+  - kind: pseudonym
+    role: alternative
+    text: Jacques Van Damme
     sources:
       - accessed: 2026-10-29
         property: P742

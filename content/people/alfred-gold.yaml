@@ -3,12 +3,16 @@ name: Alfred Gold
 given_name: Alfred
 family_name: Gold
 names:
-  - text: Alwin Goldeck
+  - kind: pseudonym
+    role: alternative
+    text: Alwin Goldeck
     sources:
       - accessed: 2026-10-29
         property: P742
         wikidata: Q2645040
-  - text: Fin de Siécle
+  - kind: pseudonym
+    role: alternative
+    text: Fin de Siécle
     sources:
       - accessed: 2026-10-29
         property: P742

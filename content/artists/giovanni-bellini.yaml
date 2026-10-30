@@ -3,7 +3,9 @@ name: Giovanni Bellini
 given_name: Giovanni
 family_name: Bellini
 names:
-  - text: Giambellino
+  - kind: pseudonym
+    role: alternative
+    text: Giambellino
     sources:
       - accessed: 2026-10-29
         property: P742

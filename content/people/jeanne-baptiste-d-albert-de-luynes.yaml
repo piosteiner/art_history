@@ -19,7 +19,9 @@ names:
   - lang: ru
     role: translation
     text: Жанна Батиста д’Альбер де Люинь
-  - text: comtesse de Verrue
+  - kind: pseudonym
+    role: alternative
+    text: comtesse de Verrue
     sources:
       - accessed: 2026-10-29
         property: P742

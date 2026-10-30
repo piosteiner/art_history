@@ -13,6 +13,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q736839
+      - url: https://en.wikipedia.org/wiki/Kamakura_shogunate
+        note: "“The Kamakura shogunate (Japanese: 鎌倉幕府, Hepburn: Kamakura bakufu) was the feudal military government of Japan during the Kamakura period from 1185 to 1333.”"
+        source: wikipedia-en-kamakura-shogunate
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/kenmu-restoration
     period: 1333-07-25/1336-10-18

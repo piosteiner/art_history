@@ -12,18 +12,34 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
+      - url: https://en.wikipedia.org/wiki/Republic_of_Geneva
+        note: “From its declaration of independence in 1534 until its annexation by revolutionary France in 1798, Geneva evolved into a prosperous hub of trade, finance, watchmaking, and publishing, while maintaining a distinctive identity as both a fortified “Protestant Rome” and a cosmopolitan republic.”
+        source: wikipedia-en-republic-of-geneva
+        accessed: 2026-10-30
+      - url: https://en.wikipedia.org/wiki/Kingdom_of_Burgundy
+        note: “In 933, Rudolph's son and heir Rudolph II acquired Lower Burgundy and merged the two kingdoms into a single Kingdom of Burgundy. == Kingdom of Burgundy-Arles (after 933) == The Kingdom of Burgundy existed independently until 1032, even though the reality of its monarchs' power did not extend much beyond the region of Lake Geneva.”
+        source: wikipedia-en-kingdom-of-burgundy
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/republic-of-geneva
     period: 1534/1798-04-25
     sources:
       - accessed: 2026-10-29
         wikidata: Q23366230
+      - url: https://en.wikipedia.org/wiki/Republic_of_Geneva
+        note: “From its declaration of independence in 1534 until its annexation by revolutionary France in 1798, Geneva evolved into a prosperous hub of trade, finance, watchmaking, and publishing, while maintaining a distinctive identity as both a fortified “Protestant Rome” and a cosmopolitan republic.”
+        source: wikipedia-en-republic-of-geneva
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/french-first-republic
     period: 1798-04-26/1804-05-17
     sources:
       - accessed: 2026-10-29
         wikidata: Q58296
+      - url: https://en.wikipedia.org/wiki/Republic_of_Geneva
+        note: “From its declaration of independence in 1534 until its annexation by revolutionary France in 1798, Geneva evolved into a prosperous hub of trade, finance, watchmaking, and publishing, while maintaining a distinctive identity as both a fortified “Protestant Rome” and a cosmopolitan republic.”
+        source: wikipedia-en-republic-of-geneva
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1804-05-18/1813-12-30

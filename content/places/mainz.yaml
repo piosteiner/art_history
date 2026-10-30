@@ -14,6 +14,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q58296
+      - url: https://en.wikipedia.org/wiki/Mainz
+        note: “In 1797, the French returned.”
+        source: wikipedia-en-mainz
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1804-05-18/1814-05-03
@@ -34,10 +38,17 @@ relationships:
         wikidata: Q151624
   - type: in_polity
     to: polity/grand-duchy-of-hesse
-    period: 1816-06-30/1871-01-17
+    period: 30 June 1816–1918
     sources:
       - accessed: 2026-10-29
         wikidata: Q20135
+  - type: in_polity
+    to: polity/german-empire
+    period: 1871-01-18/1918-11-08
+    notes_md: A member state of the German Empire beside its own state (2026-10-30).
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q43287
 sources:
   kind:
     - accessed: 2026-10-19

@@ -6,7 +6,9 @@ names:
   - lang: fr
     role: original
     text: René François Ghislain Magritte
-  - text: Emair
+  - kind: pseudonym
+    role: alternative
+    text: Emair
     sources:
       - accessed: 2026-10-29
         property: P742

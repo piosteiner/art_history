@@ -22,7 +22,9 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q541964
-  - text: Karagueuz Effendi
+  - kind: pseudonym
+    role: alternative
+    text: Karagueuz Effendi
     sources:
       - accessed: 2026-10-29
         property: P742

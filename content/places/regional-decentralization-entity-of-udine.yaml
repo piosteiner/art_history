@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q4948
+      - url: https://en.wikipedia.org/wiki/Patria_del_Friuli
+        note: “In 1420, the Republic of Venice acquired and consequently annexed the territory, thus depriving the Patriarch of Aquileia of his temporal powers.”
+        source: wikipedia-en-patria-del-friuli
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-monarchy
     period: 17 October 1797–30 April 1806

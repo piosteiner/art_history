@@ -12,12 +12,20 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
+      - url: https://en.wikipedia.org/wiki/League_of_God%27s_House
+        note: "“The League of God's House (German: Gotteshausbund, Italian: Lega Caddea, Romansh: ) was formed in what is now Switzerland on 29 January 1367, to resist the rising power of the Bishopric of Chur and the House of Habsburg.”"
+        source: wikipedia-en-league-of-god-s-house
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/three-leagues
     period: 1367-01-29/1799-04-20
     sources:
       - accessed: 2026-10-29
         wikidata: Q672685
+      - url: https://en.wikipedia.org/wiki/League_of_God%27s_House
+        note: "“The League of God's House (German: Gotteshausbund, Italian: Lega Caddea, Romansh: ) was formed in what is now Switzerland on 29 January 1367, to resist the rising power of the Bishopric of Chur and the House of Habsburg.”"
+        source: wikipedia-en-league-of-god-s-house
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/helvetic-republic
     period: 1799-04-21/1803-02-18

@@ -30,12 +30,20 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q700283
+      - url: https://en.wikipedia.org/wiki/Austrian_Netherlands
+        note: “It lasted until Revolutionary France annexed the territory after the Battle of Sprimont in 1794 and the Peace of Basel in 1795.”
+        source: wikipedia-en-austrian-netherlands
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/french-first-republic
     period: 1 October 1795–17 May 1804
     sources:
       - accessed: 2026-10-29
         wikidata: Q58296
+      - url: https://en.wikipedia.org/wiki/Austrian_Netherlands
+        note: “It lasted until Revolutionary France annexed the territory after the Battle of Sprimont in 1794 and the Peace of Basel in 1795.”
+        source: wikipedia-en-austrian-netherlands
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1804-05-18/1814-05-29

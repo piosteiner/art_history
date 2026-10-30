@@ -20,12 +20,20 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q34762
+      - url: https://en.wikipedia.org/wiki/Principality_of_Bayreuth
+        note: “On 2 December 1791, Charles Alexander signed a treaty with King Frederick William II of Prussia, whereby he ceded his principalities to the Prussian state against a lifelong annuity.”
+        source: wikipedia-en-principality-of-bayreuth
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/kingdom-of-prussia
     period: 1792-01-28/1806-10-13
     sources:
       - accessed: 2026-10-29
         wikidata: Q27306
+      - url: https://en.wikipedia.org/wiki/Principality_of_Bayreuth
+        note: “On 2 December 1791, Charles Alexander signed a treaty with King Frederick William II of Prussia, whereby he ceded his principalities to the Prussian state against a lifelong annuity.”
+        source: wikipedia-en-principality-of-bayreuth
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1806-10-14/1810-06-29
@@ -34,7 +42,7 @@ relationships:
         wikidata: Q71084
   - type: in_polity
     to: polity/kingdom-of-bavaria
-    period: 1810-06-30/1871-01-17
+    period: 1810-06-30/1918-11-09
     sources:
       - accessed: 2026-10-29
         wikidata: Q154195
@@ -44,6 +52,13 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q151624
+  - type: in_polity
+    to: polity/german-empire
+    period: 1871-01-18/1918-11-08
+    notes_md: A member state of the German Empire beside its own state (2026-10-30).
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q43287
 sources:
   kind:
     - accessed: 2026-10-28

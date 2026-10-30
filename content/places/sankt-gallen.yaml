@@ -12,9 +12,17 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
+      - url: https://en.wikipedia.org/wiki/Abbey_of_Saint_Gall
+        note: “The abbot became an ally of several members of the Swiss Confederation (Zürich, Lucerne, Schwyz and Glarus) in 1451, while Appenzell and St.”
+        source: wikipedia-en-abbey-of-saint-gall
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/old-swiss-confederacy
     period: 1451/1798-03-04
     sources:
       - accessed: 2026-10-29
         wikidata: Q435583
+      - url: https://en.wikipedia.org/wiki/Abbey_of_Saint_Gall
+        note: “The abbot became an ally of several members of the Swiss Confederation (Zürich, Lucerne, Schwyz and Glarus) in 1451, while Appenzell and St.”
+        source: wikipedia-en-abbey-of-saint-gall
+        accessed: 2026-10-30

@@ -12,9 +12,17 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
+      - url: https://en.wikipedia.org/wiki/Canton_of_Zurich
+        note: “Zurich joined the Swiss Confederacy in 1351.”
+        source: wikipedia-en-canton-of-zurich
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/old-swiss-confederacy
     period: 1 May 1351–4 March 1798
     sources:
       - accessed: 2026-10-29
         wikidata: Q435583
+      - url: https://en.wikipedia.org/wiki/Canton_of_Zurich
+        note: “Zurich joined the Swiss Confederacy in 1351.”
+        source: wikipedia-en-canton-of-zurich
+        accessed: 2026-10-30

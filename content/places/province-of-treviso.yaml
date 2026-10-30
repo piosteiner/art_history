@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q4948
+      - url: https://it.wikipedia.org/wiki/Treviso
+        note: “La città venne infatti occupata per circa un decennio anche dagli Scaligeri (1329-1339), e nel 1339 si diede spontaneamente alla Serenissima, andandone a costituire il primo possedimento in terraferma.”
+        source: wikipedia-it-treviso
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-monarchy
     period: 17 October 1797–30 April 1806

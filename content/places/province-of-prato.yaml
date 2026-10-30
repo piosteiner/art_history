@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q148540
+      - url: https://en.wikipedia.org/wiki/Prato
+        note: “However, on 23 February 1351 Joanna I of Naples sold the city to the Republic of Florence in exchange for 17,500 golden florins.”
+        source: wikipedia-en-prato
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/duchy-of-florence
     period: 1532-04-27/1569-08-26

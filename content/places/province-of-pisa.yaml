@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q148540
+      - url: https://en.wikipedia.org/wiki/Republic_of_Pisa
+        note: “It lost its independence to Florence in 1406.”
+        source: wikipedia-en-republic-of-pisa
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/duchy-of-florence
     period: 1532-04-27/1569-08-26

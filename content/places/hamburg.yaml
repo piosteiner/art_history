@@ -38,12 +38,20 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q2614104
+      - url: https://en.wikipedia.org/wiki/Hamburg
+        note: “A major turning point came in 1189 when Frederick Barbarossa granted Hamburg the status of a Free Imperial City.”
+        source: wikipedia-en-hamburg
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/holy-roman-empire
     period: 1189/1806-08-05
     sources:
       - accessed: 2026-10-29
         wikidata: Q12548
+      - url: https://en.wikipedia.org/wiki/Hamburg
+        note: “A major turning point came in 1189 when Frederick Barbarossa granted Hamburg the status of a Free Imperial City.”
+        source: wikipedia-en-hamburg
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/first-french-empire
     period: 1 January 1811–30 May 1814

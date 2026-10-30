@@ -16,6 +16,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q4948
+      - url: https://en.wikipedia.org/wiki/Padua
+        note: “From then till 1405, nine members of the Carraresi family, including Ubertino, Jacopo II, and Francesco il Vecchio, succeeded one another as lords of the city, with the exception of a brief period of Scaligeri overlordship between 1328 and 1337 and two years (1388–1390) when Giangaleazzo Visconti held the town.”
+        source: wikipedia-en-padua
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-monarchy
     period: 17 October 1797–30 April 1806

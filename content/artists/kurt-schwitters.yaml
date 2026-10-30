@@ -27,7 +27,9 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q155158
-  - text: Kurt Merz Schwitters
+  - kind: pseudonym
+    role: alternative
+    text: Kurt Merz Schwitters
     sources:
       - accessed: 2026-10-29
         property: P742

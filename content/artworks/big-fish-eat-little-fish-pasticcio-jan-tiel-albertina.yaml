@@ -16,7 +16,7 @@ web_url: https://sammlungenonline.albertina.at/de/objects/122471/die-groen-fisch
 description_md: A pasticcio — a larger print in a single state that recombines Bruegel's composition — published by Jan Tiel ("Ian Tiel excudit .")[[source/albertina-sammlungen-online|DG1955/154]].
 relationships:
   - type: copy_after
-    to: artwork/die-grossen-fische-fressen-die-kleinen-1556
+    to: artwork/die-grossen-fische-fressen-die-kleinen
 provenance:
   - owner: person/jan-tiel
     role: publisher

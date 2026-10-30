@@ -30,7 +30,7 @@ metadata:
 relationships:
   - type: in_polity
     to: polity/kingdom-of-wurttemberg
-    period: 1 January 1806–17 January 1871
+    period: 1 January 1806–6 November 1918
     sources:
       - accessed: 2026-10-29
         wikidata: Q159631
@@ -46,6 +46,13 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q151624
+  - type: in_polity
+    to: polity/german-empire
+    period: 1871-01-18/1918-11-08
+    notes_md: A member state of the German Empire beside its own state (2026-10-30).
+    sources:
+      - accessed: 2026-10-30
+        wikidata: Q43287
 sources:
   kind:
     - accessed: 2026-10-17

@@ -12,6 +12,8 @@ relationships:
   - type: in_polity
     to: polity/republic-of-venice
     period: 1420/1797-10-16
+    certainty: probable
+    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q4948

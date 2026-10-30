@@ -9,7 +9,9 @@ names:
       - accessed: 2026-10-29
         property: P1477
         wikidata: Q195217
-  - text: Pepita Tudó
+  - kind: pseudonym
+    role: alternative
+    text: Pepita Tudó
     sources:
       - accessed: 2026-10-29
         property: P742

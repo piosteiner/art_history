@@ -9,6 +9,8 @@ relationships:
   - type: in_polity
     to: polity/republic-of-florence
     period: 1401/1532-04-26
+    certainty: probable
+    notes_md: The date of the change is not yet checked against a source (2026-10-30).
     sources:
       - accessed: 2026-10-29
         wikidata: Q148540

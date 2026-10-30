@@ -12,6 +12,10 @@ relationships:
     sources:
       - accessed: 2026-10-29
         wikidata: Q4948
+      - url: https://en.wikipedia.org/wiki/Belluno
+        note: “After having long contended the nearby territory with Treviso, in the end Belluno gave itself to the Republic of Venice during the War of Padua (1404).”
+        source: wikipedia-en-belluno
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-monarchy
     period: 17 October 1797–30 April 1806

@@ -8,16 +8,24 @@ wikidata_id: Q54936
 relationships:
   - type: in_polity
     to: polity/crown-of-castile
-    period: 1248/1295
+    period: 1247/1295
     sources:
       - accessed: 2026-10-29
         wikidata: Q217196
+      - url: https://en.wikipedia.org/wiki/Alicante
+        note: “Alicante was conquered again in 1247 for the Castilian king Alfonso X, but later was recovered to the Crown of Aragon in 1296 with King James II of Aragon.”
+        source: wikipedia-en-alicante
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/crown-of-aragon
     period: 1296/1716-01-15
     sources:
       - accessed: 2026-10-29
         wikidata: Q204920
+      - url: https://en.wikipedia.org/wiki/Alicante
+        note: “Alicante was conquered again in 1247 for the Castilian king Alfonso X, but later was recovered to the Crown of Aragon in 1296 with King James II of Aragon.”
+        source: wikipedia-en-alicante
+        accessed: 2026-10-30
   - type: in_polity
     to: polity/habsburg-spain
     period: 1516–31 October 1700
