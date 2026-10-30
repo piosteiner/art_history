@@ -11,11 +11,11 @@ relationships:
     to: place/japan
     period: 1926/1989
     sources:
-      - note: “the Shōwa (1926–89) period”
+      - note: “Showa period (1926–1989)” (p. 10) · “the Shōwa (1926–89) period” (p. 346)
         source: history-of-japanese-art
-        locator: p. 346
+        locator: pp. 10, 346
 sources:
   period:
-    - note: “the Shōwa (1926–89) period”
+    - note: “Showa period (1926–1989)” (p. 10) · “the Shōwa (1926–89) period” (p. 346)
       source: history-of-japanese-art
-      locator: p. 346
+      locator: pp. 10, 346

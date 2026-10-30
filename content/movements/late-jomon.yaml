@@ -1,0 +1,22 @@
+public_id: 105252
+name: Late Jōmon
+names:
+  - lang: ja
+    role: original
+    text: "{縄文時代後期|じょうもんじだいこうき}"
+kind: period
+parent: jomon-period
+period: c. 1500 BCE–c. 1000 BCE
+relationships:
+  - type: active_in
+    to: place/japan
+    period: c. 1500 BCE–c. 1000 BCE
+    sources:
+      - note: “Late (c. 1500–1000 B.C.E.) and Final Jōmon (c. 1000–400 B.C.E.) phases”
+        source: history-of-japanese-art
+        locator: p. 20
+sources:
+  period:
+    - note: “Late (c. 1500–1000 B.C.E.) and Final Jōmon (c. 1000–400 B.C.E.) phases”
+      source: history-of-japanese-art
+      locator: p. 20

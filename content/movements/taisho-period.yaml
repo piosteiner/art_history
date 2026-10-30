@@ -11,11 +11,11 @@ relationships:
     to: place/japan
     period: 1912/1926
     sources:
-      - note: “the succeeding Taishō (1912–26) period and early years of the Shōwa (1926–89) period”
+      - note: the preface has “Taisho period (1911–1926)” (p. 10), chapter 7 “Taishō (1912–26)” (p. 346) — 1912 kept
         source: history-of-japanese-art
-        locator: p. 346
+        locator: pp. 10, 346
 sources:
   period:
-    - note: “the succeeding Taishō (1912–26) period and early years of the Shōwa (1926–89) period”
+    - note: the preface has “Taisho period (1911–1926)” (p. 10), chapter 7 “Taishō (1912–26)” (p. 346) — 1912 kept
       source: history-of-japanese-art
-      locator: p. 346
+      locator: pp. 10, 346

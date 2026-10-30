@@ -11,11 +11,11 @@ relationships:
     to: place/japan
     period: 1573/1615
     sources:
-      - note: “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273) · “the Momoyama period (1573–1615)” (p. 352)
+      - note: “Momoyama period (1573–1615)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273)
         source: history-of-japanese-art
-        locator: pp. 273, 352
+        locator: pp. 10, 273, 352
 sources:
   period:
-    - note: “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273) · “the Momoyama period (1573–1615)” (p. 352)
+    - note: “Momoyama period (1573–1615)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273)
       source: history-of-japanese-art
-      locator: pp. 273, 352
+      locator: pp. 10, 273, 352

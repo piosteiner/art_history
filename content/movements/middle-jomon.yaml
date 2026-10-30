@@ -1,0 +1,22 @@
+public_id: 105253
+name: Middle Jōmon
+names:
+  - lang: ja
+    role: original
+    text: "{縄文時代中期|じょうもんじだいちゅうき}"
+kind: period
+parent: jomon-period
+period: c. 2500 BCE–c. 1500 BCE
+relationships:
+  - type: active_in
+    to: place/japan
+    period: c. 2500 BCE–c. 1500 BCE
+    sources:
+      - note: “Middle Jōmon (c. 2500–1500 B.C.E.) phase”
+        source: history-of-japanese-art
+        locator: p. 18
+sources:
+  period:
+    - note: “Middle Jōmon (c. 2500–1500 B.C.E.) phase”
+      source: history-of-japanese-art
+      locator: p. 18

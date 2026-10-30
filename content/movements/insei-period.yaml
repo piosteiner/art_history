@@ -1,0 +1,25 @@
+public_id: 105249
+name: Insei period
+names:
+  - lang: en
+    role: alternative
+    text: Late Heian period
+  - lang: ja
+    role: original
+    text: "{院政期|いんせいき}"
+kind: period
+parent: heian-period
+period: 1086/1185
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1086/1185
+    sources:
+      - note: "The principal periods as used in this volume are: … “Late Heian or Insei (1086–1185)” (p. 10)"
+        source: history-of-japanese-art
+        locator: pp. 10, 101
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Late Heian or Insei (1086–1185)” (p. 10)"
+      source: history-of-japanese-art
+      locator: pp. 10, 101

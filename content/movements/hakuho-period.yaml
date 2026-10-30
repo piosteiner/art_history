@@ -1,0 +1,21 @@
+public_id: 105245
+name: Hakuhō period
+names:
+  - lang: ja
+    role: original
+    text: "{白鳳時代|はくほうじだい}"
+kind: period
+period: 645/710
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 645/710
+    sources:
+      - note: "The principal periods as used in this volume are: … “Hakuho period (645–710)”"
+        source: history-of-japanese-art
+        locator: p. 10
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Hakuho period (645–710)”"
+      source: history-of-japanese-art
+      locator: p. 10

@@ -1,0 +1,24 @@
+public_id: 105242
+name: Early Jōmon
+names:
+  - lang: ja
+    role: original
+    text: "{縄文時代前期|じょうもんじだいぜんき}"
+kind: period
+parent: jomon-period
+period: -2495-12-31 or earlier
+period_label: c. 5000–2500 BCE
+relationships:
+  - type: active_in
+    to: place/japan
+    period: -2495-12-31 or earlier
+    period_label: c. 5000–2500 BCE
+    sources:
+      - note: “Early Jōmon (c. 5000–2500 B.C.E.) phase”
+        source: history-of-japanese-art
+        locator: p. 16
+sources:
+  period:
+    - note: “Early Jōmon (c. 5000–2500 B.C.E.) phase”
+      source: history-of-japanese-art
+      locator: p. 16

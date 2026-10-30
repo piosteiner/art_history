@@ -1,0 +1,22 @@
+public_id: 105247
+name: Incipient Jōmon
+names:
+  - lang: ja
+    role: original
+    text: "{縄文時代草創期|じょうもんじだいそうそうき}"
+kind: period
+parent: jomon-period
+period_label: c. 11,000–8000 BCE
+relationships:
+  - type: active_in
+    to: place/japan
+    period_label: c. 11,000–8000 BCE
+    sources:
+      - note: “Incipient (c. 11,000–8,000 B.C.E.) and Initial Jōmon (c. 8000–5000 B.C.E.) phases”
+        source: history-of-japanese-art
+        locator: p. 15
+sources:
+  period:
+    - note: “Incipient (c. 11,000–8,000 B.C.E.) and Initial Jōmon (c. 8000–5000 B.C.E.) phases”
+      source: history-of-japanese-art
+      locator: p. 15

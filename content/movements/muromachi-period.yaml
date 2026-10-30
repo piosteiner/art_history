@@ -1,5 +1,9 @@
 public_id: 101096
 name: Muromachi period
+names:
+  - lang: en
+    role: alternative
+    text: Ashikaga period
 kind: period
 period: 1338/1573
 wikidata_id: Q334845
@@ -12,9 +16,9 @@ relationships:
     sources:
       - "Getty Art & Architecture Thesaurus, “Muromachi” (AAT 300018561): “the Japanese period and style of art that developed during the rise of the Asikaga shogunate (1338-1573)”"
       - "Wikidata, Muromachi period (Q334845): start time 1336, end time 1573"
-      - note: "Mason dates it 1392–1573: “Muromachi (1392–1573) and Momoyama (1573–1615) periods”"
+      - note: "Mason dates it 1392–1573, after the Nanbokuchō period (1336–1392): “Muromachi or Ashikaga period (1392–1573)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273)"
         source: history-of-japanese-art
-        locator: p. 273
+        locator: pp. 10, 273
 sources:
   kind:
     - accessed: 2026-10-18
@@ -23,6 +27,6 @@ sources:
   period:
     - "Getty Art & Architecture Thesaurus, “Muromachi” (AAT 300018561): “the Japanese period and style of art that developed during the rise of the Asikaga shogunate (1338-1573)”"
     - "Wikidata, Muromachi period (Q334845): start time 1336, end time 1573"
-    - note: "Mason dates it 1392–1573: “Muromachi (1392–1573) and Momoyama (1573–1615) periods”"
+    - note: "Mason dates it 1392–1573, after the Nanbokuchō period (1336–1392): “Muromachi or Ashikaga period (1392–1573)” (p. 10) · “Muromachi (1392–1573) and Momoyama (1573–1615) periods” (p. 273)"
       source: history-of-japanese-art
-      locator: p. 273
+      locator: pp. 10, 273

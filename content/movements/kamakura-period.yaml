@@ -11,11 +11,11 @@ relationships:
     to: place/japan
     period: 1185/1333
     sources:
-      - note: “Buddhist sculpture of the Heian (794–1185) and Kamakura (1185–1333) periods”
+      - note: “Kamakura period (1185–1333)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
         source: history-of-japanese-art
-        locator: p. 309
+        locator: pp. 10, 309
 sources:
   period:
-    - note: “Buddhist sculpture of the Heian (794–1185) and Kamakura (1185–1333) periods”
+    - note: “Kamakura period (1185–1333)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
       source: history-of-japanese-art
-      locator: p. 309
+      locator: pp. 10, 309

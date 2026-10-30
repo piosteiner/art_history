@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: all of Mason's periods (preface p. 10 and table of contents)
+- **What:** from the whole book (PDFs in `/home/ubuntu/books`), 16 more periods, page-cited, Japanese names,
+  `active_in` Japan: Jōmon with Incipient, Initial, Early, Middle, Late, Final; Yayoi, Kofun, Asuka, Hakuhō; Early Heian,
+  Fujiwara, Insei (in Heian); Nanbokuchō; Heisei (end 30 April 2019 from Wikipedia, new source
+  `wikipedia-en-heisei-era`). Dates before 4713 BCE (Postgres' first date) as labels with an open start: Jōmon
+  "c. 11,000–400 BCE", Early Jōmon; Incipient and Initial Jōmon label only. The nine entered earlier cite the preface
+  too; Muromachi got the name "Ashikaga period". Mason disagrees with herself on Meiji/Taishō (1911 vs 1912) — in
+  the notes. Export/import round trip checked.
+- **Why:** owner, 2026-10-30.
+- **Revert:** delete the 16 movements in the admin; restore the citations via the admin history.
+
 ### Server: private folder for source books
 - **What:** `/home/ubuntu/books` (700, outside the repo) — PDFs of books the owner reads with Claude (e.g. Mason, History
   of Japanese Art). Not in git, not in the backups.

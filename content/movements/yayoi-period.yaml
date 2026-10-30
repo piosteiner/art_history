@@ -1,0 +1,21 @@
+public_id: 105255
+name: Yayoi period
+names:
+  - lang: ja
+    role: original
+    text: "{弥生時代|やよいじだい}"
+kind: period
+period: c. 400 BCE–300
+relationships:
+  - type: active_in
+    to: place/japan
+    period: c. 400 BCE–300
+    sources:
+      - note: "The principal periods as used in this volume are: … “Yayoi period (c. 400 B.C.E.–C.E. 300)” (p. 10)"
+        source: history-of-japanese-art
+        locator: pp. 10, 22
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Yayoi period (c. 400 B.C.E.–C.E. 300)” (p. 10)"
+      source: history-of-japanese-art
+      locator: pp. 10, 22

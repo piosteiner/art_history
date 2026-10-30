@@ -1,0 +1,30 @@
+public_id: 105246
+name: Heisei period
+names:
+  - lang: en
+    role: alternative
+    text: Heisei era
+  - lang: ja
+    role: original
+    text: "{平成|へいせい}"
+kind: period
+period: 8 January 1989–30 April 2019
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 8 January 1989–30 April 2019
+    sources:
+      - note: "The principal periods as used in this volume are: … “Heisei period (1989–present)” (written in 2005)"
+        source: history-of-japanese-art
+        locator: p. 10
+      - url: https://en.wikipedia.org/w/index.php?title=Heisei_era&oldid=1127616959
+        note: “the reign of Emperor Akihito from 8 January 1989 until his abdication on 30 April 2019”
+        source: wikipedia-en-heisei-era
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Heisei period (1989–present)” (written in 2005)"
+      source: history-of-japanese-art
+      locator: p. 10
+    - url: https://en.wikipedia.org/w/index.php?title=Heisei_era&oldid=1127616959
+      note: “the reign of Emperor Akihito from 8 January 1989 until his abdication on 30 April 2019”
+      source: wikipedia-en-heisei-era

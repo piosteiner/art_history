@@ -11,11 +11,11 @@ relationships:
     to: place/japan
     period: 710/794
     sources:
-      - note: “the Nara (710–94) and Heian (794–1185) periods” (p. 275) · “the Nara period (710–94)” (p. 356)
+      - note: “Nara period (710–794)” (p. 10) · “the Nara (710–94) and Heian (794–1185) periods” (p. 275)
         source: history-of-japanese-art
-        locator: pp. 275, 356
+        locator: pp. 10, 275, 356
 sources:
   period:
-    - note: “the Nara (710–94) and Heian (794–1185) periods” (p. 275) · “the Nara period (710–94)” (p. 356)
+    - note: “Nara period (710–794)” (p. 10) · “the Nara (710–94) and Heian (794–1185) periods” (p. 275)
       source: history-of-japanese-art
-      locator: pp. 275, 356
+      locator: pp. 10, 275, 356

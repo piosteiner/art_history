@@ -1,0 +1,23 @@
+public_id: 105250
+name: Jōmon period
+names:
+  - lang: ja
+    role: original
+    text: "{縄文時代|じょうもんじだい}"
+kind: period
+period: -395-12-31 or earlier
+period_label: c. 11,000–400 BCE
+relationships:
+  - type: active_in
+    to: place/japan
+    period: -395-12-31 or earlier
+    period_label: c. 11,000–400 BCE
+    sources:
+      - note: "The principal periods as used in this volume are: … “Jomon period (c. 11,000–400 B.C.E.)” (p. 10)"
+        source: history-of-japanese-art
+        locator: pp. 10, 14
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Jomon period (c. 11,000–400 B.C.E.)” (p. 10)"
+      source: history-of-japanese-art
+      locator: pp. 10, 14

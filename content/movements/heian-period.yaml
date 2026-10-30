@@ -11,11 +11,11 @@ relationships:
     to: place/japan
     period: 794/1185
     sources:
-      - note: “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
+      - note: “Heian period (794–1185)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
         source: history-of-japanese-art
-        locator: pp. 275, 309
+        locator: pp. 10, 275, 309
 sources:
   period:
-    - note: “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
+    - note: “Heian period (794–1185)” (p. 10) · “Heian (794–1185) and Kamakura (1185–1333) periods” (p. 309)
       source: history-of-japanese-art
-      locator: pp. 275, 309
+      locator: pp. 10, 275, 309

@@ -1,0 +1,22 @@
+public_id: 105251
+name: Kofun period
+names:
+  - lang: ja
+    role: original
+    text: "{古墳時代|こふんじだい}"
+kind: period
+period: 300/710
+description_md: Defined by archaeology, after its burial mounds (kofun); it runs on through the first two historical periods, Asuka and Hakuhō[[source/history-of-japanese-art|p. 10]].
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 300/710
+    sources:
+      - note: "The principal periods as used in this volume are: … “Kofun period (300–710)” · “The archaeologically defined Kofun period extends through the first two historical periods of the Asuka and Hakuho” (p. 10)"
+        source: history-of-japanese-art
+        locator: pp. 10, 29
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Kofun period (300–710)” · “The archaeologically defined Kofun period extends through the first two historical periods of the Asuka and Hakuho” (p. 10)"
+      source: history-of-japanese-art
+      locator: pp. 10, 29

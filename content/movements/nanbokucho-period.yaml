@@ -1,0 +1,24 @@
+public_id: 105254
+name: Nanbokuchō period
+names:
+  - lang: en
+    role: alternative
+    text: Nambokucho period
+  - lang: ja
+    role: original
+    text: "{南北朝時代|なんぼくちょうじだい}"
+kind: period
+period: 1336/1392
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 1336/1392
+    sources:
+      - note: "The principal periods as used in this volume are: … “Nambokucho period (1336–1392)”"
+        source: history-of-japanese-art
+        locator: p. 10
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Nambokucho period (1336–1392)”"
+      source: history-of-japanese-art
+      locator: p. 10

@@ -1,0 +1,22 @@
+public_id: 105241
+name: Early Heian period
+names:
+  - lang: ja
+    role: original
+    text: "{平安時代前期|へいあんじだいぜんき}"
+kind: period
+parent: heian-period
+period: 794/951
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 794/951
+    sources:
+      - note: "The principal periods as used in this volume are: … “Early Heian (794–951)” (p. 10)"
+        source: history-of-japanese-art
+        locator: pp. 10, 101
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Early Heian (794–951)” (p. 10)"
+      source: history-of-japanese-art
+      locator: pp. 10, 101

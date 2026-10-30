@@ -1,0 +1,21 @@
+public_id: 105240
+name: Asuka period
+names:
+  - lang: ja
+    role: original
+    text: "{飛鳥時代|あすかじだい}"
+kind: period
+period: 552/645
+relationships:
+  - type: active_in
+    to: place/japan
+    period: 552/645
+    sources:
+      - note: "The principal periods as used in this volume are: … “Asuka period (552–645)” (p. 10)"
+        source: history-of-japanese-art
+        locator: pp. 10, 70
+sources:
+  period:
+    - note: "The principal periods as used in this volume are: … “Asuka period (552–645)” (p. 10)"
+      source: history-of-japanese-art
+      locator: pp. 10, 70
