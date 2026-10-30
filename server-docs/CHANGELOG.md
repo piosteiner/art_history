@@ -4,6 +4,14 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: Klimt's last portraits unfinished, the Nike fragmentary
+- **What:** `completion = unfinished` (1918, at Klimt's death) on Amalie Zuckerkandl (cited: Wikipedia de, new source
+  `wikipedia-de-bildnis-der-amalie-zuckerkandl`, oldid 269158937) and Adam und Eva (Belvedere, Sammlung online, as
+  already cited for its span); Nike of Samothrace `fate = partly_destroyed` without a date, "head and arms lost"
+  (Wikipedia fr).
+- **Why:** owner, 2026-10-30.
+- **Revert:** via the admin history.
+
 ### Migration 172: whether a work was finished
 - **What:** `artworks.completion` (enum `artwork_completion`: unfinished · completed_by_another) + `completion_date`,
   `completion_note`, constraint `artworks_completion_details`, citable field `completion`. CMS: group "Unfinished, or

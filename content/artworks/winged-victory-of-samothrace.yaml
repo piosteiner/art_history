@@ -42,6 +42,8 @@ dimensions: [245]
 institution: department-of-greek-etruscan-and-roman-antiquities-of-the-louvre
 inventory_number: Ma 2369
 web_url: http://www.louvre.fr/oeuvre-notices/victoire-de-samothrace
+fate: partly_destroyed
+fate_note: head and arms lost
 wikidata_id: Q216402
 metadata:
   sources: [Wikidata Q216402 (retrieved 2026-10-20)]
@@ -99,6 +101,11 @@ identifiers:
   gnd: 4202608-8
   viaf: "190487421"
 sources:
+  fate:
+    - url: https://fr.wikipedia.org/wiki/Victoire_de_Samothrace
+      note: "“une statue représentant la déesse Niké (la Victoire), dont il manque la tête et les bras” · “1891 : Champoiseau retourne une troisième fois à Samothrace pour essayer de retrouver la tête de la Victoire, sans succès.”"
+      source: wikipedia-fr-victoire-de-samothrace
+      accessed: 2026-10-30
   names:
     - accessed: 2026-10-20
       wikidata: Q216402

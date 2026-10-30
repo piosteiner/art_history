@@ -20,6 +20,9 @@ names:
 creator: gustav-klimt
 created: 1916/1918
 created_span: duration
+completion: unfinished
+completion_date: 1918
+completion_note: unfinished at the artist's death
 kind: oil painting
 medium: Oil on canvas
 materials: [oil paint, canvas]
@@ -113,6 +116,11 @@ sources:
       property: P186
       wikidata: Q28002799
     - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      source: belvedere-sammlung-online
+      accessed: 2026-10-23
+  completion:
+    - url: https://sammlung.belvedere.at/objects/3196/adam-und-eva
+      note: “1916–1918, Öl auf Leinwand (unvollendet)” — “In einem seiner letzten Werke, das infolge seines Todes unvollendet geblieben ist …” (read in the Internet Archive’s copy of 2026-05-17; the site refuses this server)
       source: belvedere-sammlung-online
       accessed: 2026-10-23
   dimensions:

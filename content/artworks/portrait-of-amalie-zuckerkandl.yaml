@@ -27,6 +27,9 @@ creator: gustav-klimt
 created: 1913/1914
 created_label: possibly still in 1917
 created_span: uncertain
+completion: unfinished
+completion_date: 1918
+completion_note: unfinished at the artist's death (stroke in January, died 6 February 1918)
 kind: oil painting
 medium: Oil on canvas
 materials: [oil paint, canvas]
@@ -126,6 +129,11 @@ sources:
     - accessed: 2026-10-20
       property: P186
       wikidata: Q28007512
+  completion:
+    - url: https://de.wikipedia.org/w/index.php?title=Bildnis_der_Amalie_Zuckerkandl&oldid=269158937
+      note: "“Das Gemälde blieb unvollendet: Klimt erlitt Anfang 1918 einen Schlaganfall und starb vier Wochen später”"
+      source: wikipedia-de-bildnis-der-amalie-zuckerkandl
+      accessed: 2026-10-30
   dimensions:
     - accessed: 2026-10-20
       property: P2048
