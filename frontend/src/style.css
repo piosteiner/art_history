@@ -199,6 +199,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .gallery .figure:first-child:last-child img { max-height: 520px; }
 .gallery-multi { flex-direction: column; gap: .5rem; }
 .gallery-multi .figure img { max-height: 520px; }
+.gallery-item { max-width: 100%; min-width: 0; }  /* a very wide picture scrolls inside the column, not under the map */
 .gallery-thumbs { display: flex; flex-wrap: wrap; gap: .4rem; }
 .gallery-thumb { padding: 0; border: 2px solid transparent; border-radius: 5px; background: none; cursor: pointer; line-height: 0; }
 .gallery-thumb img { height: 64px; width: auto; max-width: 110px; object-fit: cover; border-radius: 3px; background: var(--line); }
@@ -217,6 +218,7 @@ main { max-width: 1200px; margin: 0 auto; padding: 1rem 16px 4rem; }
 .wide-window { position: absolute; top: -2px; bottom: -2px; border: 2px solid var(--accent, #b4462b); border-radius: 3px;
   box-shadow: 0 0 0 9999px rgb(0 0 0 / .25); pointer-events: none; }
 .wide-overview { overflow: hidden; }
+.figure.wide:not(.scrolls) .wide-overview { display: none; }  /* the whole picture is in view: no band repeating it */
 /* a very tall one (a hanging scroll): more height than the usual frame */
 .gallery .figure.tall img, .figure.tall img { max-height: min(80vh, 900px); }
 .figure figcaption { font-size: .78rem; color: var(--muted); margin-top: .3rem; max-width: 500px; }
@@ -474,8 +476,8 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .lightbox-stage.zoomed { cursor: grab; }
 .lightbox-stage.zoomed.dragging { cursor: grabbing; }
 .lightbox img { display: block; max-width: 96vw; max-height: 86vh; transform-origin: 0 0; will-change: transform; }
-.lightbox-wide .lightbox-stage { width: 96vw; overflow-x: auto; touch-action: pan-x; cursor: auto; }
-.lightbox-wide img { max-width: none; height: min(80vh, 900px); max-height: none; width: auto; transform: none; }
+.lightbox-wide .lightbox-stage { width: 96vw; height: 86vh; }
+.lightbox-wide img { width: 96vw; height: auto; max-width: none; max-height: none; }
 .lightbox-hint { display: block; color: #aaa; font-size: .75rem; margin-top: .2rem; }
 .lightbox figcaption { color: #ddd; font-size: .85rem; text-align: center; margin-top: .5rem; }
 .lightbox figcaption a { color: #ddd; }

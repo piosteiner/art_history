@@ -4,6 +4,16 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Site: very wide pictures enlarged like the others; no longer under the map among several images
+- **What:** the lightbox opens a very wide picture whole, in a frame the screen's height (`.lightbox-wide`); zooming
+  makes it grow to the strip's height (a double click goes there), Shift + wheel / a sideways wheel moves it sideways,
+  zooming goes on 8× beyond; the sharp rendition first, a Commons original once loaded (not when the stored image is
+  itself a thumbnail). `zoom.ts`: `near` option, an image smaller than its frame stays centred, sideways wheel pans.
+  Among several images (`.gallery-multi`) a wide picture keeps to its column (`.gallery-item` min-width 0) — Le Bassin
+  aux nymphéas, le soir ran under the map — and the overview band is hidden while the strip doesn't scroll. Site tests.
+- **Why:** owner: the enlarged Two Willows should start whole and zoom; Le Bassin … le soir "completely messed up".
+- **Revert:** `git revert`.
+
 ### Building history: someone in several phases is one line
 - **What:** API details merge the derived edges of one person/artist/institution with one work from several phases
   (`mergePhaseEdges()` in `src/routes/entities.js`): one relationship, the phases' labels joined with "; ", the period

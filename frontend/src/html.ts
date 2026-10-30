@@ -254,18 +254,32 @@ export function wireLightbox(root: Element) {
   root.querySelectorAll<HTMLImageElement>('.figure img[data-full]').forEach((img) => {
     img.addEventListener('click', () => {
       const dialog = document.createElement('dialog');
-      // a very wide picture (watchImageShapes) is shown at the height of the screen and scrolled sideways, not
-      // shrunk to a strip to zoom into
-      const wide = !!img.closest('.figure.wide');
-      dialog.className = wide ? 'lightbox lightbox-wide' : 'lightbox';
+      // a very wide picture (watchImageShapes, owner 2026-10-30): opens whole like any other; zoomed in, it reaches the
+      // height it has in the strip (a double click goes there), moves sideways, and zooms on as close as the others —
+      // shown first in the strip's sharp rendition, the original once it has loaded
+      const ratio = img.naturalWidth / img.naturalHeight;
+      const wide = !!img.closest('.figure.wide') && ratio > 0;
+      const stripH = Math.min(innerHeight * 0.8, 900);
+      const fitH = (innerWidth * 0.96) / ratio;   // style.css: .lightbox-wide img 96vw wide
+      const near = wide ? Math.max(2.5, stripH / fitH) : 2.5;
+      dialog.className = wide ? 'lightbox lightbox-wide' : 'lightbox';   // a frame the screen's height to grow into
       const caption = img.closest('figure')?.querySelector('figcaption')?.innerHTML ?? '';
       // the caption was built by figure() above from escaped values, so reusing its markup is safe
       dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close">×</button>
-        <figure><div class="lightbox-stage"><img src="${escape(wide ? wideSource(img.dataset.full!, img.naturalWidth / img.naturalHeight, Math.min(innerHeight * 0.8, 900)) : img.dataset.full!)}" alt="${escape(img.alt)}"${img.hasAttribute('crossorigin') ? ' crossorigin="anonymous"' : ' referrerpolicy="no-referrer"'} draggable="false"></div>
-        <figcaption>${caption}<span class="lightbox-hint">${wide ? 'Scroll sideways for the whole picture' : 'Scroll or pinch to zoom · drag to move · double-click: fit / zoom'}</span></figcaption></figure>`;
+        <figure><div class="lightbox-stage"><img src="${escape(wide ? wideSource(img.dataset.full!, ratio, stripH) : img.dataset.full!)}" alt="${escape(img.alt)}"${img.hasAttribute('crossorigin') ? ' crossorigin="anonymous"' : ' referrerpolicy="no-referrer"'} draggable="false"></div>
+        <figcaption>${caption}<span class="lightbox-hint">Scroll or pinch to zoom · drag to move${wide ? ' · Shift + scroll: sideways' : ''} · double-click: fit / zoom</span></figcaption></figure>`;
       // the image zooms and pans (zoom.ts); a click beside it closes, as does Escape or ×
-      retryImage(dialog.querySelector('img')!);
-      const unzoom = wide ? () => {} : zoomable(dialog.querySelector<HTMLElement>('.lightbox-stage')!, dialog.querySelector('img')!);
+      const large = dialog.querySelector('img')!;
+      retryImage(large);
+      // (not when what we have is itself a Wikimedia thumbnail: the 3840 rendition is sharper than a stored 1280 one)
+      if (wide && large.getAttribute('src') !== img.dataset.full && !/\/thumb\//.test(img.dataset.full!)) {
+        const original = new Image();
+        if (img.hasAttribute('crossorigin')) original.crossOrigin = 'anonymous';
+        else original.referrerPolicy = 'no-referrer';
+        original.addEventListener('load', () => { if (dialog.open) large.src = original.src; }, { once: true });
+        original.src = img.dataset.full!;
+      }
+      const unzoom = zoomable(dialog.querySelector<HTMLElement>('.lightbox-stage')!, large, { near });
       dialog.addEventListener('click', (e) => {
         if (!(e.target as Element).closest('figcaption a, .lightbox-stage')) dialog.close();
       });

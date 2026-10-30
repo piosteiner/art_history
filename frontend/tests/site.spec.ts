@@ -2830,11 +2830,47 @@ test('a very wide picture (Monet’s Water Lilies): readable height, sharp rendi
   await page.mouse.click(b.x + b.width - 3, b.y + b.height / 2);
   await expect.poll(() => fig.locator('.figure-frame').evaluate((f) => f.scrollLeft)).toBeGreaterThan(500);
   await expect.poll(async () => (await fig.locator('.wide-window').boundingBox())!.x).toBeGreaterThan(b.x + b.width / 2);
+  // enlarged (owner 2026-10-30): the whole picture first; a double click goes to the strip's height, Shift + wheel
+  // moves sideways, the wheel zooms on beyond it; the original replaces the sharp rendition once loaded
   await strip.click();
-  const box = page.locator('dialog.lightbox-wide');
+  const box = page.locator('dialog.lightbox');
   await expect(box).toBeVisible();
-  expect((await box.locator('img').boundingBox())!.height).toBeGreaterThan(400);
-  expect(await box.locator('img').getAttribute('src')).toMatch(/\/(1920|3840)px-/);   // the enlarged one sharp as well
+  const large = box.locator('.lightbox-stage img');
+  const whole = (await large.boundingBox())!;
+  expect(whole.width).toBeGreaterThan(page.viewportSize()!.width * 0.9);   // all of it across the screen
+  const scale = () => large.evaluate((i) => new DOMMatrix(getComputedStyle(i).transform).a);
+  const shiftX = () => large.evaluate((i) => new DOMMatrix(getComputedStyle(i).transform).e);
+  await page.mouse.dblclick(whole.x + 20, whole.y + whole.height / 2);
+  await expect.poll(scale).toBeGreaterThan(2.5);   // 1700 × 200 on a 1280 screen: the strip is ~5× the fit height
+  let near = 0;
+  await expect.poll(async () => { const was = near; near = await scale(); return Math.abs(near - was); }).toBeLessThan(0.001);   // settled
+  const x0 = await shiftX();
+  await page.keyboard.down('Shift');
+  await page.mouse.wheel(0, 400);
+  await page.keyboard.up('Shift');
+  await expect.poll(shiftX).toBeLessThan(x0 - 100);   // moved sideways, not zoomed
+  expect(await scale()).toBeCloseTo(near, 1);
+  await page.mouse.move(whole.x + whole.width / 2, whole.y + whole.height / 2);
+  await page.mouse.wheel(0, -600);
+  await expect.poll(scale).toBeGreaterThan(near * 1.5);   // closer than the strip
+  expect(await large.getAttribute('src')).toMatch(/\/3840px-/);   // stored as a 1280 thumbnail: the 3840 rendition stays
+});
+
+test('a very wide picture among several images keeps to its column, beside the map', async ({ page }) => {
+  await page.route(/wikimedia\.org/, (r) => r.fulfill({ contentType: 'image/svg+xml', headers: { 'Access-Control-Allow-Origin': '*' },
+    body: '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400"><rect width="1200" height="400" fill="#36a"/></svg>' }));
+  await page.goto('/artworks/100080/le-bassin-aux-nympheas-le-soir');   // three images, the first 3 : 1
+  const fig = page.locator('.gallery-multi .figure').first();
+  await expect(fig).toHaveClass(/\bwide\b/);
+  const main = (await page.locator('.detail-main').boundingBox())!;
+  const f = (await fig.boundingBox())!;
+  expect(f.x + f.width).toBeLessThanOrEqual(main.x + main.width + 1);   // not under the map beside it
+  await expect(fig).toHaveClass(/\bscrolls\b/);
+  await expect(fig.locator('.wide-overview')).toBeVisible();
+  // enlarged: an original on Commons replaces the sharp rendition once it has loaded
+  await fig.locator('.figure-frame img').click();
+  await expect.poll(() => page.locator('dialog.lightbox .lightbox-stage img').getAttribute('src'))
+    .toBe('https://upload.wikimedia.org/wikipedia/commons/8/87/Claude_Monet_-_Le_Bassin_aux_nymph%C3%A9as%2C_le_soir_-_1952-0064_-_Kunsthaus_Z%C3%BCrich.jpg');
 });
 
 test('protection status (API 166): a designation as its own section of the relationships, linked to the glossary', async ({ page }) => {
