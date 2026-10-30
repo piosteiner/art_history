@@ -4,6 +4,12 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Server: private folder for source books
+- **What:** `/home/ubuntu/books` (700, outside the repo) — PDFs of books the owner reads with Claude (e.g. Mason, History
+  of Japanese Art). Not in git, not in the backups.
+- **Why:** owner, 2026-10-30 — uploads in the chat get lost; books under copyright must not reach the public repo.
+- **Revert:** `rm -r /home/ubuntu/books`.
+
 ### Data: Japanese periods after Mason, History of Japanese Art (ch. 6–7)
 - **What:** from the owner's PDF of Mason (2nd ed. 2005), pp. 272–391, new periods with her dates, page-cited, Japanese
   names, `active_in` Japan: Nara 710–794, Heian 794–1185, Kamakura 1185–1333, Sengoku c. 1480–1573 (in Muromachi),
