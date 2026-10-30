@@ -762,7 +762,9 @@ example, question, todo).
 ## Changelog and roadmap (migration 118)
 German (de-CH), as the site shows them. `changelog_entries` (day, title optional, published — drafts stay off the site)
 with `changelog_items` (entry_id, position — unique per entry, deferrable —, kind `neu` / `verbessert` / `behoben` /
-`inhalt` / `technik`, text_md, roadmap_item_id → the roadmap item it completes). `roadmap_items` (title, area, notes_md,
+`inhalt` / `technik`, text_md, roadmap_item_id → the roadmap item it completes). The order is kept by the database (167):
+after every insert or update the day's items are renumbered — kind (`changelog_kind_rank()`), then topic A–Z (without
+topic last), then as written — by statement-level triggers with a transition table (`changelog_sort_days()`). `roadmap_items` (title, area, notes_md,
 status `jetzt` / `naechstes` / `spaeter` / `erledigt`, position in its column, done_on — CHECK: set exactly when the
 status is `erledigt` —, published). All three audited. In the CMS an entry's bullets are one line each, "Neu: …"
 (`parseItems()` / `itemsToText()` in `src/changelog.js`); marking a roadmap item done writes a bullet into today's entry
