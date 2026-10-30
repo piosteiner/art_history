@@ -4,6 +4,17 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Data: La Berceuse (Boston) — the MFA's full provenance
+- **What:** the MFA's provenance with its six notes, as the owner read it in the browser (the page shuts out automated
+  reading): Theo van Gogh 1889 (custodian, letter 774) → Émile Bernard (Theo's gift on Vincent's behalf, letter 776;
+  lent to the retrospective at Le Barc de Boutteville, April 1892) → consigned to Julien-François Tanguy, sold by him
+  for 600 francs before his death on 6 February 1894 → Count Antoine de La Rochefoucauld by 1905 (lent to the Salon
+  des Indépendants, 24 March–30 April 1905) → Paul Rosenberg → Rosenberg and Georges Wildenstein jointly, 1928 →
+  John Taylor Spaulding 1928 (paid 1928–1933) → MFA, 3 June 1948. New: Émile Bernard (artist), Julien-François
+  Tanguy. The Met's version: its overview text as description; its provenance tab still to be read.
+- **Why:** owner, 2026-10-30 (screenshots of both pages).
+- **Revert:** the steps via the admin (history).
+
 ### Data: Bruegel's Big Fish Eat Little Fish — the Albertina's five prints beside the drawing
 - **What:** the Albertina holds one drawing (1556, inv. 7875, already ours) and five prints, now entered with their
   sheet sizes, states, inscriptions and pages: Pieter van der Heyden's engraving after it, published by Hieronymus

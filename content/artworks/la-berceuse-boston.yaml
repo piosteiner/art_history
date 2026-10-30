@@ -16,6 +16,7 @@ dimensions: [92.7, 72.7]
 institution: museum-of-fine-arts-boston
 inventory_number: "48.548"
 web_url: https://collections.mfa.org/objects/33277
+description_md: Van Gogh painted Augustine Roulin, the wife of the postal worker Joseph Roulin, holding the rope of a cradle beyond the frame, and inscribed the title lower right[[source/mfa-lullaby-la-berceuse-48-548|“The rope in her hands leads to a cradle beyond the confines of the frame. At right, the painter inscribed the title ‘La Berceuse,’ which means both ‘lullaby’ and ‘she who rocks the cradle.’”]]. He wished to see it “in the cabin of a boat”, where fishermen would feel rocked and remember their own lullabies[[source/mfa-lullaby-la-berceuse-48-548|“writing to his brother that he would like to see this painting ‘in the cabin of a boat’ where fishermen in ‘their melancholy isolation, exposed to all the dangers, alone on the sad sea…would experience a feeling of being rocked, reminding them of their own lullabies.’”]]. He sent it to Theo and had him give it to Émile Bernard.
 wikidata_id: Q20630411
 metadata:
   sources: [Wikidata Q20630411 (retrieved 2026-10-30)]
@@ -29,79 +30,122 @@ images:
     credit: Vincent van Gogh
 provenance:
   - owner: person/theo-van-gogh
-    acquired: 1889-05
+    role: custodian
+    acquired: 1889
     method: gift
     place: paris
-    label: sent to his brother with the other versions
+    label: consigned by the artist to his brother
     sources:
       - url: https://vangoghletters.org/vg/letters/let776/notes.html
         note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
         source: van-gogh-letters
         accessed: 2026-10-30
       - url: https://collections.mfa.org/objects/33277
-        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): from the artist to his brother Theo in 1889"
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): from the artist to his brother Theo in 1889 · MFA Boston, provenance: “1889, consigned by the artist to his brother, Theo van Gogh (b. 1857 – d. 1891), Paris [see note 1]” · MFA Boston, provenance: “[1] In a May 21, 1889 letter (no. 774), Theo Van Gogh acknowledged his receipt of a group of paintings from Vincent Van Gogh. According to Leo Jansen, Hans Luijten, Nienke Bakker (eds.), Vincent van Gogh - The Letters. … this consignment contained four portraits of Madame Augustine Roulin, including this painting.”"
         source: mfa-lullaby-la-berceuse-48-548
         accessed: 2026-10-30
-  - owner_label: Julien Tanguy, Paris
+  - owner: artist/emile-bernard
+    acquired: 1889
+    method: gift
     place: paris
-    label: according to De la Faille
-    certainty: possible
+    label: gift of Theo van Gogh on behalf of the artist
     sources:
       - url: https://vangoghletters.org/vg/letters/let776/notes.html
         note: "Van Gogh Letters, notes (read in a web search): De la Faille gives the provenance of F 508 / JH 1671 as Julien Tanguy"
         source: van-gogh-letters
         accessed: 2026-10-30
+      - url: https://collections.mfa.org/objects/33277
+        note: "MFA Boston, provenance: “1889, gift of Theo van Gogh on behalf of the artist to Émile Bernard (b. 1868 – d. 1941), Paris [see note 2]” · MFA Boston, provenance: “[2] In a letter dated about May 23, 1889 (no. 776), Vincent Van Gogh instructed Theo van Gogh to give the painting to Émile Bernard.”"
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
+    records:
+      - kind: exhibition
+        date: 1892-04
+        note: lent by Émile Bernard, who organised it
+        place: paris
+        document: Van Gogh retrospective, Galerie Le Barc de Boutteville
+  - owner: person/julien-francois-tanguy
+    role: agent
+    acquired: 1892/1894-02-06
+    place: paris
+    label: consigned by Émile Bernard; sold by Tanguy for 600 francs
+    price:
+      amount: 600
+      currency: AFRF
+    sources:
+      - url: https://collections.mfa.org/objects/33277
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): sold by the Count de la Rochefoucauld to Paul Rosenberg (dealer; b. 1881 – d. 1959), Paris and New York before 1928 · MFA Boston, provenance: “between 1892-1894, consigned by Émile Bernard to Julien-François Tanguy (dealer; b. 1825 – d. 1894), Paris; by 1894, sold by Julien-François Tanguy for 600 francs [see note 3]” · MFA Boston, provenance: “[3] In a letter dated after September 8, 1894, Émile Bernard told his mother that he had consigned the painting to Julien-François Tanguy, who had sold it (Neil McWilliam, ed., Émile Bernard: Les Lettres d’un Artiste (1884-1941), Dijon, 2012, p. 338). … Julien-François Tanguy died on February 6, 1894, so the painting had to have been consigned to and sold by Tanguy prior to that date.”"
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
   - owner: person/antoine-de-la-rochefoucauld
+    acquired: 1905 or earlier
     place: paris
-    label: Count Antoine de La Rochefoucauld; sold to Paul Rosenberg before 1928
+    label: Count Antoine de la Rochefoucauld
     sources:
       - url: https://collections.mfa.org/objects/33277
-        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): sold by the Count de la Rochefoucauld to Paul Rosenberg (dealer; b. 1881 – d. 1959), Paris and New York before 1928"
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): in 1928 Rosenberg and Georges Wildenstein sold it to John Taylor Spaulding · MFA Boston, provenance: “By 1905, Count Antoine de la Rochefoucauld (b. 1862 – d. 1959), Paris [see note 4]” · MFA Boston, provenance: “[4] Count Antoine de la Rochefoucauld lent the painting to a Van Gogh Retrospective held at the Salon des Indépendants, Paris, from March 24 to April 30, 1905.”"
         source: mfa-lullaby-la-berceuse-48-548
         accessed: 2026-10-30
+    records:
+      - kind: exhibition
+        date: 24 March–30 April 1905
+        note: lent by him
+        place: paris
+        document: Van Gogh retrospective, Salon des Indépendants
   - owner: person/paul-rosenberg
-    co_owners: [person/georges-wildenstein]
     role: dealer
+    further_places: [new-york-city]
     acquired: before 1928
-    ended: 1928
     method: purchase
     place: paris
     sources:
       - url: https://collections.mfa.org/objects/33277
-        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): in 1928 Rosenberg and Georges Wildenstein sold it to John Taylor Spaulding"
-        source: mfa-lullaby-la-berceuse-48-548
-        accessed: 2026-10-30
-  - owner: person/john-taylor-spaulding
-    acquired: 1928
-    ended: 1948
-    method: purchase
-    direct: true
-    place: boston
-    label: paid to Wildenstein and Rosenberg in instalments, 1928–1933
-    sources:
-      - url: https://collections.mfa.org/objects/33277
-        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): John Spaulding made separate payments for the painting to Wildenstein and Rosenberg from 1928 to 1933"
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): John Spaulding made separate payments for the painting to Wildenstein and Rosenberg from 1928 to 1933 · MFA Boston, provenance: “before 1928, sold by the Count de la Rochefoucauld to Paul Rosenberg (dealer; b. 1881 – d. 1959), Paris and New York [see note 5]” · MFA Boston, provenance: “[5] In an oral account given to MFA curator William George Constable in 1948, Paul Rosenberg said he bought the painting from Rochefoucauld.”"
         source: mfa-lullaby-la-berceuse-48-548
         accessed: 2026-10-30
       - note: "Wikidata: owned by John Taylor Spaulding, end 1948"
         accessed: 2026-10-30
         property: P127
         wikidata: Q20630411
-  - owner: institution/museum-of-fine-arts-boston
-    acquired: 1948
-    method: bequest
-    direct: true
-    place: boston
-    label: bequest of John T. Spaulding
+  - owner: person/paul-rosenberg
+    co_owners: [person/georges-wildenstein]
+    role: dealer
+    acquired: 1928
+    ended: 1928
+    place: new-york-city
+    label: owned jointly with Georges Wildenstein
     sources:
       - url: https://collections.mfa.org/objects/33277
-        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): Spaulding’s bequest to the MFA, 1948"
+        note: "MFA Boston, provenance (as summarised in a web search, 2026-10-30; to be checked): Spaulding’s bequest to the MFA, 1948 · MFA Boston, provenance: “1928, owned jointly by Paul Rosenberg and Georges Wildenstein (dealer; b. 1892 – d. 1963), Paris and New York” · MFA Boston, provenance: “[6] Until 1932, Georges Wildenstein and Paul Rosenberg were business partners, sharing the same building for their New York Galleries at 647 Fifth Avenue.”"
         source: mfa-lullaby-la-berceuse-48-548
         accessed: 2026-10-30
       - note: "Wikidata: owned by the Museum of Fine Arts, Boston, start 3 June 1948"
         accessed: 2026-10-30
         property: P127
         wikidata: Q20630411
+  - owner: person/john-taylor-spaulding
+    acquired: 1928
+    ended: 1948
+    method: purchase
+    direct: true
+    place: boston
+    label: paid to Wildenstein and Rosenberg separately, 1928–1933
+    sources:
+      - url: https://collections.mfa.org/objects/33277
+        note: "MFA Boston, provenance: “1928, sold by Paul Rosenberg and Georges Wildenstein to John Taylor Spaulding (b. 1870 – d. 1948), Boston [see note 6]” · MFA Boston, provenance: “John Spaulding made separate payments for the painting to Wildenstein and Rosenberg from 1928 to 1933.”"
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
+  - owner: institution/museum-of-fine-arts-boston
+    acquired: 1948-06-03
+    method: bequest
+    direct: true
+    place: boston
+    label: bequest of John Taylor Spaulding
+    sources:
+      - url: https://collections.mfa.org/objects/33277
+        note: "MFA Boston, provenance: “1948, bequest of John Taylor Spaulding to the MFA. (Accession Date: June 3, 1948)”"
+        source: mfa-lullaby-la-berceuse-48-548
+        accessed: 2026-10-30
 numbers:
   - number: F508
     source: de-la-faille-1970
@@ -121,6 +165,10 @@ sources:
   names:
     - accessed: 2026-10-30
       wikidata: Q20630411
+  medium:
+    - url: https://collections.mfa.org/objects/33277
+      source: mfa-lullaby-la-berceuse-48-548
+      accessed: 2026-10-30
   parent:
     - url: https://vangoghletters.org/vg/letters/let776/notes.html
       note: “The consignment must have contained all four versions of Augustine Roulin (‘La berceuse’), namely F 504 / JH 1655, F 506 / JH 1670, F 507 / JH 1672 and F 508 / JH 1671 (Vincent had given the fifth painting, F 505 / JH 1669, to Madame Roulin).” — letter 776, notes (read in a web search; the edition loads its notes by script)
@@ -130,10 +178,16 @@ sources:
     - accessed: 2026-10-30
       property: P571
       wikidata: Q20630411
+    - url: https://collections.mfa.org/objects/33277
+      source: mfa-lullaby-la-berceuse-48-548
+      accessed: 2026-10-30
   creator:
     - accessed: 2026-10-30
       property: P170
       wikidata: Q20630411
+    - url: https://collections.mfa.org/objects/33277
+      source: mfa-lullaby-la-berceuse-48-548
+      accessed: 2026-10-30
   materials:
     - accessed: 2026-10-30
       property: P186
@@ -142,11 +196,24 @@ sources:
     - accessed: 2026-10-30
       property: P2048
       wikidata: Q20630411
+    - url: https://collections.mfa.org/objects/33277
+      source: mfa-lullaby-la-berceuse-48-548
+      accessed: 2026-10-30
   institution:
     - accessed: 2026-10-30
       property: P195
       wikidata: Q20630411
+    - url: https://collections.mfa.org/objects/33277
+      source: mfa-lullaby-la-berceuse-48-548
+      accessed: 2026-10-30
+  title_status:
+    - url: https://collections.mfa.org/objects/33277
+      source: mfa-lullaby-la-berceuse-48-548
+      accessed: 2026-10-30
   inventory_number:
     - accessed: 2026-10-30
       property: P217
       wikidata: Q20630411
+    - url: https://collections.mfa.org/objects/33277
+      source: mfa-lullaby-la-berceuse-48-548
+      accessed: 2026-10-30

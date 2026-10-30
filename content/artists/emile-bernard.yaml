@@ -1,0 +1,66 @@
+public_id: 105062
+name: Émile Bernard
+given_name: Émile
+family_name: Bernard
+names:
+  - kind: birth
+    lang: fr
+    role: alternative
+    text: Émile Henri Bernard
+  - Emile Bernard
+  - Jean Dorsal
+  - Jean Dorsal (ps.)
+  - Henri Lebreton
+  - Henri Lebreton (ps.)
+  - Lepeseur (ps.)
+  - Monguerre (ps.)
+  - Ludovic Nemo
+  - Ludovic Nemo (ps.)
+  - Violette Sainte-Forêt
+  - Violette Sainte-Forêt (ps.)
+  - un témoin (ps.)
+  - Ed Wezzan
+  - Ed Wezzan (ps.)
+  - Nemo
+  - Violette Sainte-Foret
+  - Bernard
+  - lang: ja
+    role: translation
+    text: エミール・ベルナール
+  - lang: zh
+    role: translation
+    text: 埃米尔·贝尔纳
+  - lang: ko
+    role: translation
+    text: 에밀 베르나르
+  - lang: ru
+    role: translation
+    text: Эмиль Бернар
+birth: 1868-04-28
+death: 1941-04-16
+wikidata_id: Q264193
+metadata:
+  sources: [Wikidata Q264193 (retrieved 2026-10-30)]
+images:
+  - url: https://upload.wikimedia.org/wikipedia/commons/e/e4/Henri_de_Toulouse-Lautrec_-_Portrait_de_%C3%89mile_Bernard.jpg
+    source_url: https://commons.wikimedia.org/wiki/File:Henri_de_Toulouse-Lautrec_-_Portrait_de_%C3%89mile_Bernard.jpg
+    license: Public domain
+    credit: Henri de Toulouse-Lautrec
+identifiers:
+  bnf: 12088410f
+  dome: "30"
+  gnd: "118924648"
+  idref: "029209900"
+  lc: n83022722
+  rkd: "7433"
+  ulan: "500012925"
+  viaf: "76343073"
+sources:
+  birth:
+    - accessed: 2026-10-30
+      property: P569
+      wikidata: Q264193
+  death:
+    - accessed: 2026-10-30
+      property: P570
+      wikidata: Q264193
