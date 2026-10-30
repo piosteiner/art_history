@@ -315,7 +315,11 @@ Table `glossary` (entity type `term`; `entity_table('term')` = glossary): name f
 (enum `term_category` — a fixed list, extended with `ALTER TYPE … ADD VALUE`), `definition` (≤ 500 characters),
 `description_md`; images (a fourth arm `glossary_id` of the exclusive arc); `related_term` (symmetric). Broader terms
 (145): `parent_id` → the wider term (Yoroboshi → Noh), one or none, like places and movements — `no_parent_cycle()` keeps
-chains from looping; a second fixed level of categories was decided against (a term's place in a hierarchy is a
+chains from looping. A broader term means "is a kind of" (owner, 2026-10-30): techniques, styles and formats
+(baren, shin-hanga, ōban) don't hang under an object type — the type's text links them. Regional traditions are
+narrower terms where the craft differs (woodcut › Japanese / Korean woodblock print, chiaroscuro woodcut); one term per
+concept even where Wikidata splits process and product (the product's item is the term's). A second fixed level of
+categories was decided against (a term's place in a hierarchy is a
 relation, not a drawer; category `performing arts` for genres, plays and stage things). YAML/admin key `parent`, API
 `broader`/`narrower`. 146: `glossary_with_narrower(id)` (recursive CTE downwards); `artwork_term_names()` adds the broader
 terms of a work's linked type and materials (not of those found only by text in the medium); `derived_touch(…, 'termtree.id')`
@@ -491,7 +495,11 @@ entry being saved, who, when) until it is next published or marked complete; the
 issue_key, detail`. The date checks are range operators — `&&` overlap, `<<` entirely before, `>>` entirely after,
 `*` intersection — so fuzzy dates only count as a contradiction when they cannot overlap at all. Place outlines use
 PostGIS `ST_Covers(parent.area, child.location)`; duplicates `similarity()` from pg_trgm. Findings confirmed as correct
-go into `quality_acks (check_id, issue_key)` and are filtered out with a `LEFT JOIN … WHERE a.check_id IS NULL`.
+go into `quality_acks (check_id, issue_key)` and are filtered out with a `LEFT JOIN … WHERE a.check_id IS NULL`. An acknowledgement
+carries its reason in `note` ("checked: …", "not the same: …") — the Quality page shows it. `no_relationships` (177)
+counts every link the graph shows (`graph_links`: stored relationships + derived edges — provenance, building phases,
+creators), not only `relationships`; `provenance_record_outside` (176) for a step with an unknown end only before the
+acquisition or after the holder's death.
 
 **Stored result (058), kept up to date incrementally (125).** Pages read the table `quality_issues` (same columns),
 never the view (all checks take seconds, more as the data grows). How it stays current:

@@ -58,6 +58,11 @@ Check: `sudo fail2ban-client status arthistory-admin` · unban: `sudo fail2ban-c
 Never in any git repo. Art history project: `~/.config/arthistory/*.env` + `backup-passphrase` (700/600). See CHANGELOG 2026-09-23 "Secrets policy".
 Admin panel: WebSocket `/live` (presence, drafts) proxied by nginx with Upgrade headers. One login — app users in the `admin_users` table (scrypt); the password lives in the owner's password manager only.
 
+## Source books (private)
+`/home/ubuntu/books` (700, outside the repo; since 2026-10-30): PDFs of the owner's books, read with Claude and cited
+before Wikipedia — Mason, *History of Japanese Art* (chapters + front/back matter), Portal, *Korea: Art and
+Archaeology* (scan, OCR). Under copyright: never into the repo or a public page; not in the backups.
+
 ## API keys for outside data (open to-do)
 Sources of the admin panel's image search that need a key of our own — without it the source is not offered
 (`src/admin/imagesearch.js`). Keys go into `~/.config/arthistory/backend.env` (never into the repo), then
