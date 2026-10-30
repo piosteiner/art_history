@@ -204,7 +204,7 @@ export function factsFor(e: Entity): { title: string; subtitle: string; facts: F
           ...numberFacts(e),
           ['Also known as', otherNames(e, (n) => cite(n.sources, e.bibliography))],
         ],
-        extra: [partsGrid(e), phasesSection(e.phases ?? []), provenanceSection(e.provenance ?? [], e.bibliography, e.provenance_status, e.sources?.provenance_status, e.provenance_coverage)].filter((x): x is Html => !!x),
+        extra: [partsGrid(e), phasesSection(e.phases ?? []), provenanceSection(e.provenance ?? [], e.bibliography, e.provenance_status, e.sources?.provenance_status, e.provenance_coverage, e.fate)].filter((x): x is Html => !!x),
       };
     }
     case 'place':

@@ -1,8 +1,9 @@
-// Provenance coverage (API 078): where an artwork's provenance is silent. A bar from the creation until today —
+// Provenance coverage (API 078): where an artwork's provenance is silent. A bar from the creation until today (a
+// destroyed work's until its destruction, API 170) —
 // documented solid, presumed hatched, gaps open with a red edge, 1933–1945 shaded — and the wording of a gap, shared
 // by the provenance list, the bar and the map.
 import { html, type Html } from './html';
-import type { CoverageSegment, ProvenanceCoverage, ProvenanceGap, Stretch } from './types';
+import type { ArtworkFate, CoverageSegment, ProvenanceCoverage, ProvenanceGap, Stretch } from './types';
 
 // 30 January 1933 – 8 May 1945, as the API counts it (`in_1933_1945`)
 const NS_FROM = Date.UTC(1933, 0, 30);
@@ -37,9 +38,11 @@ const time = (iso: string | null | undefined) => (iso ? Date.parse(`${iso}T00:00
 
 /**
  * The bar above the provenance: the stretches from the creation until today in proportion, 1933–1945 shaded behind.
- * Null without a recorded provenance (then it would be one long gap, which the list says better).
+ * A destroyed work's ends with its destruction (API 170: nothing is held after it) — "destroyed 1945" instead of
+ * "today"; partly destroyed and lost works run on until today. Null without a recorded provenance (then it would be
+ * one long gap, which the list says better).
  */
-export function coverageBar(cov: ProvenanceCoverage | null | undefined): Html | null {
+export function coverageBar(cov: ProvenanceCoverage | null | undefined, fate?: ArtworkFate | null): Html | null {
   if (!cov?.has_provenance || !cov.segments.length) return null;
   const start = time(cov.segments[0].period?.from);
   const end = time(cov.segments.at(-1)!.period?.to);
@@ -48,9 +51,10 @@ export function coverageBar(cov: ProvenanceCoverage | null | undefined): Html | 
   const width = (a: number, b: number) => `${(((Math.min(b, end) - Math.max(a, start)) / (end - start)) * 100).toFixed(3)}%`;
   const ns = NS_TO > start && NS_FROM < end;
   const gaps = cov.segments.filter((s) => s.kind === 'gap');
+  const endLabel = fate?.status === 'destroyed' ? `destroyed${fate.date ? ` ${years(fate.date)}` : ''}` : 'today';
   const summary = `${cov.documented_percent}% documented${cov.gap_years ? `, gaps ${Math.round(cov.gap_years)} years` : ''}${cov.gap_1933_1945_years ? `, ${Math.round(cov.gap_1933_1945_years)} of them in 1933–1945` : ''}`;
   return html`<figure class="coverage">
-    <div class="coverage-bar" role="img" aria-label="Provenance coverage from ${String(cov.segments[0].period?.from_year ?? '')} until today: ${summary}">
+    <div class="coverage-bar" role="img" aria-label="Provenance coverage from ${String(cov.segments[0].period?.from_year ?? '')} until ${endLabel === 'today' ? 'today' : `it was ${endLabel}`}: ${summary}">
       ${ns ? html`<span class="coverage-ns" style="left:${pct(NS_FROM)};width:${width(NS_FROM, NS_TO)}" title="30 January 1933 – 8 May 1945"></span>` : ''}
       ${cov.segments.map((s) => {
         const [a, b] = [time(s.period?.from), time(s.period?.to)];
@@ -61,7 +65,7 @@ export function coverageBar(cov: ProvenanceCoverage | null | undefined): Html | 
     <div class="coverage-axis" aria-hidden="true">
       <span>${String(cov.segments[0].period?.from_year ?? '')}</span>
       ${ns ? html`<span class="coverage-ns-label" style="left:${pct(NS_FROM)}">1933–45</span>` : ''}
-      <span>today</span>
+      <span>${endLabel}</span>
     </div>
     <figcaption class="muted small">${summary}.
       <span class="coverage-key"><i class="documented"></i>documented <i class="presumed"></i>presumed <i class="gap"></i>gap${ns ? html` <i class="ns-key"></i>1933–1945` : ''}</span>

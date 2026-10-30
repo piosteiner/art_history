@@ -638,6 +638,9 @@ life (creation → today) minus documented minus presumed = the gaps, with multi
 `unnest`); each gap with the holders before/after and the undated candidates — and `provenance_completeness` (days
 documented / presumed / gap, gap days in 1933–1945, documented %, has_provenance). Admin: bar + gap lines on the
 artwork page, `/quality/provenance-gaps`.
+A destroyed work's life ends with its destruction (170): `fate = 'destroyed'` → until `upper(fate_date)`, without a date
+until the last dated holding — no gap from then until today. `partly_destroyed` (parts survive) and `lost`
+(whereabouts unknown, not existence) run on until today. Bars (site and admin) say "destroyed 1945" instead of "today".
 
 ## Provenance as it happened (migrations 083/084)
 - Role `possessor` (beside the chain): held without good title — seized, looted, stolen, received from those who took

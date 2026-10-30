@@ -4,7 +4,7 @@ import { compareUrl, crossedLine, encounterLine } from '../crossings';
 import { encounterKeys, findEncounters, fromApi, type Encounter } from '../encounters';
 import { creatorsOf, impliedEnd, html, link, nameSpan, render, trusted, TYPE_LABEL, type Html } from '../html';
 import type {
-  Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceRecord, ProvenanceStatus, ProvenanceStep, Relationship,
+  ArtworkFate, Citation, SourceHint, Category, CoverageSegment, Entity, EntityType, EntryRef, Inference, Price, ProvenanceAlternative, ProvenanceCoverage, ProvenanceRecord, ProvenanceStatus, ProvenanceStep, Relationship,
 } from '../types';
 import { cite } from '../cite';
 import { coverageBar, gapSides, gapText } from '../coverage';
@@ -172,7 +172,7 @@ export const lastRecordedStep = (steps: ProvenanceStep[] | undefined) => steps?.
  * new owner. The 1933–1945 status (A–D) stands above the list, also when there are no steps.
  */
 export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record<string, SourceHint>,
-  status?: ProvenanceStatus | null, statusSources?: Citation[], coverage?: ProvenanceCoverage | null): Html | null {
+  status?: ProvenanceStatus | null, statusSources?: Citation[], coverage?: ProvenanceCoverage | null, fate?: ArtworkFate | null): Html | null {
   const recorded = steps.some((s) => !s.implied); // the computed lines alone are no provenance
   if (!recorded && !status) return null;
   // gaps (API 078) go after the step they follow — the last one dated before them, which may be an agent's (an unsold
@@ -185,7 +185,7 @@ export function provenanceSection(steps: ProvenanceStep[], bibliography?: Record
   return html`<section class="provenance" id="provenance">
     <h2>Provenance</h2>
     ${status ? statusLine(status, statusSources, bibliography) : ''}
-    ${recorded ? coverageBar(coverage) ?? '' : ''}
+    ${recorded ? coverageBar(coverage, fate) ?? '' : ''}
     ${recorded ? html`<p class="muted small">Holders in order, as the sources record them. A dashed line: the handover isn't documented, there may have been owners in between. Indented: held alongside the owner (an agent, a deposit, a loan), not owned; in red: held without title (seized, looted, stolen) — the owner's period runs on until the restitution. A bullet: an event, not a holder. In italics: not recorded, but following from the creation or the loan.</p>
     <ol class="provenance-list">${leading}${steps.map((s, i) => html`${stepItem(s, i)}${gapsAfter(s.position)}`)}</ol>` : ''}
   </section>`;

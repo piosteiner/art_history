@@ -288,7 +288,7 @@ map's provenance, in the chain's order; geodesic, km), `legs` = moves between di
 with a place of `steps`. `null` without two placed stops. Say "≈ 20,700 km over 17 of 20 steps".
 
 ### Provenance coverage — where the provenance is silent (artworks, 078)
-- `provenance_coverage` (detail) or `null`: the time from the creation until today as stretches
+- `provenance_coverage` (detail) or `null`: the time from the creation until today (a destroyed work's: until its destruction, 170) as stretches
   `segments: [{kind, period, in_1933_1945, before, after, candidates, before_position, after_position, show_after}]`, in order —
   `kind` **documented** (someone demonstrably held it: a recorded period, or until the next acquisition when that
   handover is documented as direct; documented custody — a deposit, a loan — counts too), **presumed** (a holder is

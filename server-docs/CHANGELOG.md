@@ -4,6 +4,15 @@ Format: date — what — why — how to revert.
 
 ## 2026-10-30
 
+### Migration 170: a destroyed work's provenance ends with its destruction
+- **What:** `provenance_coverage()` measures a destroyed work's life until its `fate_date` (without one, until the last
+  dated holding) instead of until today; the destroyed works queued for the stored figures. Bars on the site
+  (`frontend/src/coverage.ts`) and in the admin (`src/admin/provenance.js`) end "destroyed May 1945" instead of
+  "today". `partly_destroyed` and `lost` unchanged (until today). San Matteo e l'angelo (prima versione): the gap
+  1945–2026 is gone, documented 27 % → 33 %. Tests: e2e `provenance-coverage` + site test; `npm run perf` 35/35.
+- **Why:** owner, 2026-10-30 — after a destruction only whether parts survive matters, not a provenance until today.
+- **Revert:** a migration restoring the function of 095 (`life` until `current_date + 1`); revert the two bars.
+
 ### Data: Glauser 2002 linked to E-Periodica
 - **What:** source `glauser-2002`: `url` = the E-Periodica page (from the owner), the DOI moved to its own field `doi`;
   Zug's three citations link the E-Periodica page too.

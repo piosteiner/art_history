@@ -1614,6 +1614,23 @@ test('provenance coverage (078): a bar from the creation until today, gap lines 
   await expect(items.nth(3).locator('.provenance-gap')).toHaveText('handover not documented');
 });
 
+test('provenance coverage (170): a destroyed work\'s bar ends with its destruction, not today', async ({ page }) => {
+  const person = (slug: string, name: string) => ({ type: 'person', slug, name });
+  await patch(page, GREAT_WAVE, (b) => {
+    b.fate = { status: 'destroyed', label: 'destroyed', date: { ...span('1945-05-01', '1945-05-31'), label: 'May 1945' }, note: null };
+    b.provenance = [step(0, person('first-owner', 'First Owner'), { kind: 'step', in_chain: true, direct: true, period: year(1900, 1945), end_basis: 'recorded' })];
+    b.provenance_coverage = {
+      documented_percent: 80, has_provenance: true, gap_years: 0, gap_1933_1945_years: 0,
+      segments: [seg('presumed', '1831-01-01', '1899-12-31'), seg('documented', '1900-01-01', '1945-05-31')],
+    };
+  });
+  await page.goto('/artworks/the-great-wave-off-kanagawa');
+  const axis = page.locator('.provenance .coverage-axis');
+  await expect(axis).toContainText('destroyed May 1945');
+  await expect(axis).not.toContainText('today');
+  await expect(page.locator('.provenance .coverage-bar')).toHaveAttribute('aria-label', /until it was destroyed May 1945/);
+});
+
 test('artwork map (078): a "?" with the years mid-segment, red in 1933–1945; the gaps listed under the map', async ({ page }) => {
   const g = { period: span('1934-01-02', '1946-12-30'), in_1933_1945: true, before: 'Alfred Gold', after: 'Arthur Byron', candidates: ['Arthur Jeffress'] };
   await patch(page, /\/v1\/map\/artworks\/heiliger-sebastian$/, (b) => {

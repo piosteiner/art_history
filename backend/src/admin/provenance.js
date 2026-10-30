@@ -510,8 +510,11 @@ const years = (g) => (g.from_year === g.to_year ? `${g.from_year}` : `${g.from_y
 const duration = (days) => (days >= 365 ? `${Math.round(days / 365.25)} year${Math.round(days / 365.25) === 1 ? '' : 's'}` : `${Math.max(1, Math.round(days / 30.4))} months`);
 
 // A bar from the creation to today: documented (solid), presumed (hatched), gaps (open, red edge); 1933–1945 shaded.
-function coverageBar(segs) {
+// A destroyed work's ends with its destruction (170): "destroyed May 1945" instead of "today".
+function coverageBar(segs, e = {}) {
   if (!segs.length) return '';
+  const { fate, fate_date: when } = e.doc || {};
+  const end = fate === 'destroyed' ? `destroyed${when ? ` ${when}` : ''}` : 'today';
   const t = (d) => Date.parse(d);
   const [t0, t1] = [t(segs[0].from_date), t(segs[segs.length - 1].to_date)];
   const x = (d) => Math.max(0, Math.min(1000, ((t(d) - t0) / (t1 - t0)) * 1000));
@@ -519,7 +522,7 @@ function coverageBar(segs) {
   const total = segs.reduce((n, g) => n + g.days, 0);
   const eraGap = segs.filter((g) => g.kind === 'gap' && g.in_1933_1945);
   return html`<figure class="coverage">
-    <svg viewBox="0 0 1000 28" preserveAspectRatio="none" role="img" aria-label="Provenance coverage from ${segs[0].from_year} to today">
+    <svg viewBox="0 0 1000 28" preserveAspectRatio="none" role="img" aria-label="Provenance coverage from ${segs[0].from_year} to ${end === 'today' ? 'today' : `when it was ${end}`}">
       <defs><pattern id="cov-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="3" height="6" class="cov-presumed"></rect></pattern></defs>
       ${t(ERA[1]) > t0 ? html`<rect class="cov-era" x="${x(ERA[0])}" y="0" width="${x(ERA[1]) - x(ERA[0])}" height="28"><title>1933–1945</title></rect>` : ''}
       ${segs.map((g) => html`<rect class="cov-${g.kind === 'presumed' ? 'presumed-seg' : g.kind}" x="${x(g.from_date)}" y="6" width="${Math.max(1, x(g.to_date) - x(g.from_date))}" height="16"
@@ -527,7 +530,7 @@ function coverageBar(segs) {
     </svg>
     <figcaption class="small"><span>${segs[0].from_year}</span> <span class="muted">— ${Math.round((100 * documented) / total)}% documented ·
       ${segs.filter((g) => g.kind === 'gap').length} gap${segs.filter((g) => g.kind === 'gap').length === 1 ? '' : 's'}${eraGap.length ? html` · <b class="cov-warn">${eraGap.length} touching 1933–1945</b>` : ''} —</span>
-      <span>today</span>
+      <span>${end}</span>
       <span class="cov-legend muted"><i class="cov-documented"></i> documented <i class="cov-presumed-key"></i> presumed <i class="cov-gap"></i> no holder known <i class="cov-era"></i> 1933–1945</span></figcaption>
   </figure>`;
 }
@@ -557,7 +560,7 @@ function section({ e, steps, names, cites = {}, marker = null, back = '', gaps =
   const stored = steps.filter((s) => s.kind === 'step');
   let n = 0;
   return html`<h2 id="provenance">Provenance</h2>
-    ${gaps && gaps.length ? coverageBar(gaps) : ''}
+    ${gaps && gaps.length ? coverageBar(gaps, e) : ''}
     ${steps.length ? html`<div class="table-wrap"><table class="provenance" data-sortable="/artworks/${e.slug}/provenance/order">${(gaps || []).filter((g) => g.kind === 'gap' && g.before_position === null).map(gapRow)}${steps.map((s, i) => {
       const implied = s.kind !== 'step';
       if (!implied) n += 1;
